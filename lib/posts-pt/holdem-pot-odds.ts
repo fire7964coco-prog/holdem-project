@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -54,7 +54,7 @@ Esse número de "quantas vezes você precisa ganhar" é o ponto central. Receber
 Some o pote final | Pote atual + a aposta + o seu call. Exemplo: pote de $100 + aposta de $50 + seu call de $50 = $200
 Divida seu call por esse pote final | $50 ÷ $200 = 0,25
 Essa é a sua equity necessária | Você precisa ganhar pelo menos 25% das vezes para pagar com lucro
-Compare com a sua equity real | Flush draw ≈ 35% de fechar com duas cartas por vir e sem mais apostas → 35% supera 25% → ==g:pague==
+Compare com a sua equity real | Flush draw com 9 outs limpos ≈ 35% de fechar com duas cartas por vir e sem mais apostas → 35% supera 25% → ==g:pague==
 :::
 
 É isso. **Equity necessária = seu call ÷ o pote final.** Se a sua chance real de ganhar for maior que esse número, pagar dá lucro no longo prazo — mesmo quando você vai perder a mão mais vezes do que ganhar.
@@ -202,7 +202,7 @@ O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — 
 
 **Q. Como calcular pot odds rápido?**
 
-A. Divida o valor que você precisa pagar pelo pote total *depois* do seu call. Pagar $50 num pote de $150 é 50 ÷ 200 = 25% — essa é a equity que você precisa. Se a sua chance de ganhar supera esse número, pague.
+A. Divida o valor que você precisa pagar pelo pote total *depois* do seu call. Pagar $50 num pote de $150 é 50 ÷ 200 = 25% — essa é a equity que você precisa. Se a sua chance de ganhar — contada só sobre as cartas que este call deixa você ver — supera esse número, pague.
 
 **Q. Você conta o seu call nas pot odds?**
 
@@ -214,7 +214,7 @@ A. O pote é cada ficha que já está no meio mais qualquer aposta feita na stre
 
 **Q. O que é uma boa razão de pot odds?**
 
-A. Quanto maior, melhor — você adoraria estar "recebendo 5 para 1" (precisando de só 16,7%). Mas "boa" é relativo à sua mão: receber 2 para 1 (precisando de 33%) é aceitável com um flush draw só quando você já vai ver as duas cartas (all-in ou sem mais apostas, 35%); não fecha se o call compra uma carta só (19,1% do flop, 19,6% do turn); e é péssimo com um gutshot. Sempre compare o preço com a sua equity.
+A. Quanto maior, melhor — você adoraria estar "recebendo 5 para 1" (precisando de só 16,7%). Mas "boa" é relativo à sua mão: receber 2 para 1 (precisando de 33%) é aceitável com um flush draw limpo só quando você já vai ver as duas cartas (all-in ou sem mais apostas, 35%); não fecha se o call compra uma carta só (19,1% do flop, 19,6% do turn); e é péssimo com um gutshot. Sempre compare o preço com a sua equity.
 
 **Q. Como converter pot odds de razão para porcentagem?**
 

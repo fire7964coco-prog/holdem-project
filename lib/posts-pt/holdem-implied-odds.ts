@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -57,7 +57,7 @@ Diz se o call se paga hoje | Diz se o call compensa ao longo da mão inteira
 Funciona até contra um all-in | Vale zero contra um all-in (no heads-up — não há mais apostas)
 :::
 
-A regra prática: **comece pelas pot odds.** Se a sua equity já bate o preço, pague — sem precisar de história nenhuma. Se o seu projeto *fica só um pouco abaixo* do preço, é aí que as odds implícitas viram o critério de desempate. E se o seu projeto fica longe demais do preço, as odds implícitas normalmente também não conseguem salvá-lo.
+A regra prática: **comece pelas pot odds.** Se a sua equity já bate o preço — contando só as cartas que este call paga —, pague; sem precisar de história nenhuma. Se o seu projeto *fica só um pouco abaixo* do preço, é aí que as odds implícitas viram o critério de desempate. E se o seu projeto fica longe demais do preço, as odds implícitas normalmente também não conseguem salvá-lo.
 
 ---
 
@@ -87,7 +87,7 @@ Você tem ==b:A♥ K♥== num board ==Q♥ 7♥ 2♣ 3♠== — o nut flush draw
 - **Pot odds primeiro:** você está recebendo 150 para 50, ou 3 para 1, então precisa de **25%** de equity. Seu flush acerta no river só ==r:19,6%== das vezes (9 outs ÷ 46 cartas não vistas — contamos de propósito só os outs de flush; emparelhar o ás ou o rei não garante que você esteja na frente, então as overcards não são outs limpos). 19,6% é menos que 25%, então o preço imediato manda ==r:foldar.==
 - **Agora as odds implícitas:** x = (call ÷ hit%) − (pote + call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:cerca de $55.== Esse é o extra que você precisa ganhar no river quando o seu flush entra.
 
-Então a pergunta não é "devo pagar $50?" É "**quando cai uma carta de copas, consigo ganhar pelo menos $55 a mais?**" Contra um adversário com stack profundo que vai pagar uma aposta no river com top pair, isso é fácil — você paga. Contra alguém com $40 atrás, ou alguém que trava no instante em que uma terceira copas cai na mesa, você não consegue — então você folda. (Contra um set é ainda mais difícil: o 2♥ e o 3♥ pareiam a mesa e podem completar o full house do set, o que deixa 7 outs limpos e um x de cerca de $129.)
+Então a pergunta não é "devo pagar $50?" É "**quando cai uma carta de copas, consigo ganhar pelo menos $55 a mais?**" Contra um adversário com stack profundo que vai pagar uma aposta no river com top pair, isso é fácil — você paga. Contra alguém com $40 atrás, ou alguém que trava no instante em que uma terceira copas cai na mesa, você não consegue — então você folda. (Contra um set é ainda mais difícil: o 2♥ e o 3♥ pareiam a mesa e podem completar o full house do set, o que deixa 7 outs limpos — 7 ÷ 44, já que as duas cartas do set também saem do baralho — e um x de cerca de $114.)
 
 :::note
 O mesmo call de $50, decisões opostas — e as cartas nunca mudaram. O que mudou foi quanto dinheiro sobra para ganhar. Isso é odds implícitas em uma frase.
@@ -124,9 +124,9 @@ Como você erra ==r:sete vezes em cada oito==, a matemática é brutal a não se
 
 Aqui vai a explicação honesta que a maioria dos artigos pula:
 
-- **O empate puro é 7,5 para 1.** Num mundo de fantasia em que você ganha o stack *inteiro* do adversário toda vez que flopa um set, você só precisaria de cerca de 7,5× atrás.
+- **O empate puro é 7,5 para 1.** Num mundo de fantasia em que você recebe o pagamento completo toda vez que flopa um set, o pote mais o que você ganha depois só precisa somar cerca de 7,5× o seu call.
 - **A vida real exige 15–20×.** Você nem sempre vai ganhar o stack inteiro, às vezes vai flopar um set e *mesmo assim perder* (set contra set, ou o adversário completa uma mão maior), e a posição importa. O colchão extra compensa essas perdas.
-- Então ==b:7,5 para 1 é o piso teórico; 15–20× é a regra prática.== Não confunda os dois — usar o número 7,5 como seu guia de mesa real é um leak lento.
+- Então ==b:7,5 para 1 é o piso teórico de pagamento; stacks de 15–20× o seu call são a regra prática.== Não confunda os dois — usar o número 7,5 como seu guia de mesa real é um leak lento.
 
 A matemática exata de flopar um set e todo outro número de "odds de flopar X" vivem em [odds de projetos](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); a conclusão aqui é que pares pequenos são ouro quando os stacks são profundos e lixo quando são curtos — o par não mudou, as odds implícitas mudaram.
 
@@ -184,7 +184,7 @@ A. Odds implícitas são as fichas extras que você espera ganhar nas próximas 
 
 **Q. Como se calculam as odds implícitas?**
 
-A. Use: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atual + seu call). Pagar $50 com um flush draw que acerta 19,6% das vezes (do turn para o river) significa 50 ÷ 0,196 = $255, menos os $200 já em jogo (o pote de $150 mais seu call de $50) = cerca de $55. Se você consegue realisticamente ganhar $55 a mais quando acerta, o call é lucrativo. Note que é sempre uma estimativa, já que as apostas futuras não são garantidas.
+A. Use: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atual + seu call). Pagar $50 com um flush draw que acerta 19,6% das vezes (do turn para o river) significa 50 ÷ 0,196 = $255, menos os $200 já em jogo (o pote de $150 mais seu call de $50) = cerca de $55. Se você consegue realisticamente ganhar $55 a mais quando acerta — e o flush que você faz é a melhor mão —, o call é lucrativo. Note que é sempre uma estimativa, já que as apostas futuras não são garantidas.
 
 **Q. Qual é a diferença entre pot odds e odds implícitas?**
 
@@ -192,7 +192,7 @@ A. A diferença entre pot odds e odds implícitas é a certeza: o pote atual e o
 
 **Q. Quando você deve usar as odds implícitas?**
 
-A. Comece pelas pot odds. Se a sua equity já supera o preço imediato, é só pagar — não precisa de odds implícitas. Recorra a elas quando o seu projeto fica abaixo daquele preço e os stacks atrás são fundos o bastante para que acertar renda mais que o x da fórmula — quanto mais longe do preço o projeto fica, maior o x. O ideal é um projeto forte, disfarçado ou de nuts, contra um adversário que paga. Se os stacks atrás não cobrem o x — um adversário em heads-up que está all-in ou com stack curto, por exemplo —, as odds implícitas não salvam o call.
+A. Comece pelas pot odds. Se a sua equity já supera o preço imediato — medida sobre as cartas que este call paga —, é só pagar; não precisa de odds implícitas. Recorra a elas quando o seu projeto fica abaixo daquele preço e os stacks atrás são fundos o bastante para que acertar renda mais que o x da fórmula — quanto mais longe do preço o projeto fica, maior o x. O ideal é um projeto forte, disfarçado ou de nuts, contra um adversário que paga. Se os stacks atrás não cobrem o x — um adversário em heads-up que está all-in ou com stack curto, por exemplo —, as odds implícitas não salvam o call.
 
 **Q. O que são reverse implied odds?**
 
@@ -208,7 +208,7 @@ A. Não — no heads-up, quando o adversário está all-in não há mais rodadas
 
 **Q. Como as odds implícitas funcionam no set mining?**
 
-A. Você flopa um set com um par na mão só 11,8% das vezes (cerca de 7,5 para 1 contra), então precisa de um pagamento grande nas vezes que acerta. O empate teórico é mais ou menos 7,5× o seu call em stacks, mas a diretriz prática é 15–20× — o colchão extra cobre as vezes que você erra, não recebe ação, ou perde com um set.
+A. Você flopa um set com um par na mão só 11,8% das vezes (cerca de 7,5 para 1 contra), então precisa de um pagamento grande nas vezes que acerta. O empate teórico é um pagamento total (o pote mais o que você ganha depois) de mais ou menos 7,5× o seu call, mas a diretriz prática é ter stacks de 15–20× o seu call — o colchão extra cobre as vezes que você erra, não recebe ação, ou perde com um set.
 
 **Q. Você tem odds implícitas com um flush draw?**
 

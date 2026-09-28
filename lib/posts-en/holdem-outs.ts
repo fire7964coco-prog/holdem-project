@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -27,7 +27,7 @@ That habit is called counting **outs** — [poker's real answer to "counting car
 :::stripe
 9 | Outs in a flush draw
 8 | Outs in an open-ended straight draw
-×4 / ×2 | Multiply outs on the flop / turn for your %
+×4 / ×2 | Multiply outs on the flop (both cards to come) / turn for a rough %
 :::
 
 ---
@@ -173,10 +173,10 @@ Three situations to train your eye for:
 :::card
 ♠ | The non-nut flush | Holding 8♠7♠ on K♠9♠2♣, you have 9 spade "outs" — but if a spade comes and an opponent was drawing to the same flush with a higher spade, you make a flush and still lose. Discount your outs when you're not drawing to the nut flush
 🂮 | The paired board | A flush draw on a board like J♥8♥8♣ looks like 9 clean outs, but the board is already paired — a made full house may be waiting, so some of your flushes are dead on arrival
-🃁 | Overcards into strength | Two overcards (A-K on Q-8-3) count as 6 outs on paper, but if a big raise screams a set or two pair, pairing your ace often isn't good — count 3, maybe 4, not 6
+🃁 | Overcards into strength | Two overcards (A-K on Q-8-3) count as 6 outs on paper, but if a big raise screams a set or two pair, pairing your ace often isn't good — count 3 at most, not 6, and none at all once you are sure of the set or two pair
 :::
 
-You rarely know the exact discount, and that's fine. The move is directional: when the board or the action tells you an out might not win, shave the count *down* before you convert. A player who counts 9 outs on a paired board and calls the pot is paying full price for a draw that's quietly worth six. Reading which outs are clean is a board-texture skill — build it with [how to read the board](/en/blog/holdem-reading-the-board).
+You rarely know the exact discount, and that's fine. The move is directional: when the board or the action tells you an out might not win, shave the count *down* before you convert. A player who counts 9 outs on a paired board and calls the pot is paying full price for a draw that's quietly worth less than that. Reading which outs are clean is a board-texture skill — build it with [how to read the board](/en/blog/holdem-reading-the-board).
 
 ---
 
@@ -193,7 +193,7 @@ A. Outs are the cards remaining in the deck that improve your hand into a likely
 
 **Q. What does 9 outs mean in poker?**
 
-A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop — a two-card number that assumes no more betting comes at you — or 19.1% on the single turn card. The rule holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick percentage.
+A. It means nine cards left in the deck can complete your hand — most often a flush draw (13 of a suit minus the 4 you can see). Nine outs works out to about 35% to hit by the river from the flop — a two-card number that assumes no more betting comes at you — or 19.1% on the single turn card. The logic holds for any count: more outs means a higher chance to hit, and multiplying your outs by 4 on the flop (or 2 on the turn) gives a quick, approximate percentage (×4 runs high on big draws: 15 outs are 54%, not 60%).
 
 **Q. How do you count outs in poker?**
 
@@ -217,7 +217,7 @@ A. Cards that complete your hand but can still lose — a flush card when a bigg
 
 **Q. How many outs is a flush draw plus a straight draw?**
 
-A. 15, not 17. A flush draw is 9 outs and an open-ended straight is 8, but two of the straight cards are also your suit and are already counted in the flush — so you subtract the overlap. Fifteen outs is a favorite to hit by the river (about 54%) — but only when you'll see both cards; if a turn bet is still coming, it's the one-card 32% that prices your call.
+A. 15, not 17. A flush draw is 9 outs and an open-ended straight is 8, but two of the straight cards are also your suit and are already counted in the flush — so you subtract the overlap. Fifteen outs is a favorite to hit by the river (about 54%) — but only when you'll see both cards; if a turn bet is still coming, it's the one-card 32% that prices your call — and only outs that actually win count toward either number.
 
 **Q. Do you count your opponent's cards when counting outs?**
 

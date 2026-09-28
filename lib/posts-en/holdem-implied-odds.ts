@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -56,7 +56,7 @@ Tells you if the call pays for itself today | Tells you if the call pays off acr
 Works even against an all-in | Worth zero against an all-in (heads-up — no more betting)
 :::
 
-The practical rule: **start with pot odds.** If your equity already beats the price, call — no story needed. If your draw *just misses* the price, that's when implied odds become the tie-breaker. And if your draw misses the price by a mile, implied odds usually can't save it either.
+The practical rule: **start with pot odds.** If your equity already beats the price — counting only the cards this call pays for — call; no story needed. If your draw *just misses* the price, that's when implied odds become the tie-breaker. And if your draw misses the price by a mile, implied odds usually can't save it either.
 
 ---
 
@@ -86,7 +86,7 @@ You hold ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣ 3♠== board — the nut flush dr
 - **Pot odds first:** you're getting 150-to-50, or 3-to-1, so you need **25%** equity. Your flush hits on the river just ==r:19.6%== of the time (9 outs ÷ 46 unseen cards — we count flush outs only; pairing the ace or king is not enough to be sure you are ahead, so the overcards are not clean outs). 19.6% is less than 25%, so the immediate price says ==r:fold.==
 - **Now the implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:about $55.== That's the extra you must win on the river when your flush lands.
 
-So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair, that's easy — you call. Against someone with $40 left behind, or someone who shuts down the moment a third heart hits the board, you can't — so you fold. (Against a set it's harder still: the 2♥ and 3♥ pair the board and can fill up the set, leaving 7 clean outs and an x of about $129.)
+So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair, that's easy — you call. Against someone with $40 left behind, or someone who shuts down the moment a third heart hits the board, you can't — so you fold. (Against a set it's harder still: the 2♥ and 3♥ pair the board and can fill up the set, leaving 7 clean outs — 7 ÷ 44 once the set's two cards are out of the deck as well — and an x of about $114.)
 
 :::note
 Same $50 call, opposite decisions — and the cards never changed. What changed is how much money is left to win. That's implied odds in one sentence.
@@ -123,9 +123,9 @@ Because you miss ==r:seven times out of eight==, the math is brutal unless the p
 
 Here's the honest breakdown most articles skip:
 
-- **The pure break-even is 7.5-to-1.** In a fantasy where you win your opponent's *entire* stack every time you flop a set, you'd only need about 7.5× behind.
+- **The pure break-even is 7.5-to-1.** In a fantasy where you get paid in full every time you flop a set, the pot plus what you win afterward only has to add up to about 7.5× your call.
 - **Real life demands 15–20×.** You won't always get the whole stack, you'll sometimes flop a set and *still lose* (set-over-set, or they fill a bigger hand), and position matters. The extra cushion covers those leaks.
-- So ==b:7.5-to-1 is the theoretical floor; 15–20× is the practical rule.== Don't confuse the two — using the 7.5 number as your real-table guide is a slow leak.
+- So ==b:7.5-to-1 is the theoretical payoff floor; stacks of 15–20× your call are the practical rule.== Don't confuse the two — using the 7.5 number as your real-table guide is a slow leak.
 
 The exact flop-a-set math and every other "odds of flopping X" number live in [drawing odds](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); the takeaway here is that small pairs are gold when stacks are deep and trash when they're short — the pair didn't change, the implied odds did.
 
@@ -183,7 +183,7 @@ A. Implied odds are the extra chips you expect to win on later streets if your d
 
 **Q. How do you calculate implied odds?**
 
-A. Use: extra needed = (your call ÷ your hit chance) − (the current pot + your call). Calling $50 on the turn with a flush draw that hits 19.6% of the time on the river (9 ÷ 46) means 50 ÷ 0.196 = $255, minus the $200 already in play (the $150 pot plus your $50 call) = about $55. If you can realistically win $55 more when you hit, the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
+A. Use: extra needed = (your call ÷ your hit chance) − (the current pot + your call). Calling $50 on the turn with a flush draw that hits 19.6% of the time on the river (9 ÷ 46) means 50 ÷ 0.196 = $255, minus the $200 already in play (the $150 pot plus your $50 call) = about $55. If you can realistically win $55 more when you hit — and the flush you make is the best hand — the call is profitable. Note it's always an estimate, since future betting isn't guaranteed.
 
 **Q. What is the difference between pot odds and implied odds?**
 
@@ -191,7 +191,7 @@ A. The difference between pot odds and implied odds is certainty: the present po
 
 **Q. When should you use implied odds?**
 
-A. Start with pot odds. If your equity already beats the immediate price, just call — no implied odds needed. Reach for implied odds when your draw misses that price and the stacks behind are deep enough that hitting wins you more than the x from the formula — the further the draw misses, the bigger x gets. Ideally that's a strong, disguised, or nut draw against an opponent who'll pay off. If the stacks behind can't cover x — a heads-up opponent who is all-in or short-stacked, for example — implied odds can't rescue the call.
+A. Start with pot odds. If your equity already beats the immediate price — measured over the cards this call pays for — just call; no implied odds needed. Reach for implied odds when your draw misses that price and the stacks behind are deep enough that hitting wins you more than the x from the formula — the further the draw misses, the bigger x gets. Ideally that's a strong, disguised, or nut draw against an opponent who'll pay off. If the stacks behind can't cover x — a heads-up opponent who is all-in or short-stacked, for example — implied odds can't rescue the call.
 
 **Q. What are reverse implied odds?**
 
@@ -207,7 +207,7 @@ A. No — heads-up, when your opponent is all-in there are no more betting round
 
 **Q. How do implied odds work in set mining?**
 
-A. You flop a set with a pocket pair only 11.8% of the time (about 7.5-to-1 against), so you need a big payoff on the times you hit. The theoretical break-even is roughly 7.5× your call in stacks, but the practical guideline is 15–20× — the extra cushion covers the times you miss, get no action, or lose with a set.
+A. You flop a set with a pocket pair only 11.8% of the time (about 7.5-to-1 against), so you need a big payoff on the times you hit. The theoretical break-even is a total payoff (the pot plus what you win afterward) of roughly 7.5× your call, but the practical guideline is stacks of 15–20× your call — the extra cushion covers the times you miss, get no action, or lose with a set.
 
 **Q. Do you have implied odds with a flush draw?**
 

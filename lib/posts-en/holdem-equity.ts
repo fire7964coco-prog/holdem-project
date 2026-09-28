@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -75,7 +75,7 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 
 </div>
 
-Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:not a 50/50== — the pair is a modest favorite, around 57/43 offsuit (a touch tighter, ~54/46, when the AK is suited). And the phrase "coin flip" really only fits a low pair against two bigger cards (22 vs AK), where it's genuinely close.
+Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:not a 50/50== — the pair is a modest favorite, around 57/43 offsuit (a touch tighter, ~54/46, when the AK is suited). Players call any pair-against-overcards race a "coin flip", but only a low pair against two bigger cards (22 vs AK) is genuinely close to 50/50.
 
 ---
 
@@ -140,20 +140,20 @@ This is the single most important idea most beginner guides leave out, and it's 
 
 This is why preflop all-in equities matter so much: AA all-in against KK banks its full ==82%== — no realization tax, no fold equity, just the raw number playing out. It's also why a "coin flip" (22 vs AK at ~52/48) is a genuine near-tossup all-in, even though the same two hands played postflop would diverge wildly based on the board and who has position.
 
-An all-in with no betting left is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says — which is both its appeal and its danger.
+An all-in with no betting left is the cleanest spot in poker where, with cards still to come, the pie is sliced exactly as the math says — which is both its appeal and its danger.
 
 ---
 
 ## Multiway Equity: Why Your Big Hand Shrinks Against a Crowd
 
-**Your equity drops fast in multiway pots, because the same 100% pie now gets split among more hands.** Pocket aces are around 85% heads-up, but against three opponents that slides to ==r:~64%==, and against four to ~56% — still the best hand, but no longer the crush it feels like. Three-way, equity *averages* 33% by definition, because three players divide one pot.
+**Your equity drops fast in multiway pots, because the same 100% pie now gets split among more hands.** Preflop against random hands, pocket aces are around 85% heads-up, but against three opponents that slides to ==r:~64%==, and against four to ~56% — still the best hand, but no longer the crush it feels like. Three-way, equity *averages* 33% by definition, because three players divide one pot.
 
-![Infographic of a Q♣ 9♥ 5♦ 3♠ J♦ board showing how each extra player in the pot cuts every hand's equity](/images/holdem-equity-multiway.webp "The more players still in the pot, the smaller everyone's slice — even pocket aces")
+![Infographic of a Q♣ 9♥ 5♦ 3♠ J♦ board showing how each extra player in the pot shrinks the average share of equity](/images/holdem-equity-multiway.webp "The more players still in the pot, the smaller the average slice — even pocket aces lose ground")
 
 Two things get worse multiway, not just your raw share:
 
 - **Fold equity collapses.** To win a pot with a bet, now *everyone* has to fold — much less likely with three opponents than one. Bluffs and thin semi-bluffs lose value fast.
-- **Realization drops.** More players left to act means more ways to get outdrawn or bet off your hand, so you realize even less of an already-smaller slice.
+- **Realization drops.** More players left to act means more bets and raises that can push you off your hand before showdown, so you realize even less of an already-smaller slice.
 
 The practical takeaway: hands that want a multiway pot are the ones that make the nuts (sets, suited aces for the nut flush), not big pairs that play best heads-up. When the field is large, tighten toward hands whose equity holds up when the pie is cut five ways.
 
@@ -211,11 +211,11 @@ A. Equity realization is how much of your raw equity you actually collect: reali
 
 **Q. What is all-in equity?**
 
-A. All-in equity is simply your raw equity — your share of the pot, splits counted pro rata — when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the one spot where, with cards still to come, "equity equals pot share" is literally true.
+A. All-in equity is simply your raw equity — your share of the pot, splits counted pro rata — when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the clearest case where, with cards still to come, "equity equals pot share" is literally true.
 
 **Q. Why does my equity drop in multiway pots?**
 
-A. Because the same 100% pot is now split among more hands — pocket aces at ~85% heads-up fall to ~64% against three opponents and ~56% against four opponents. Multiway also cuts your fold equity (everyone has to fold, not just one player) and your realization (more players means more ways to get outdrawn), so both your raw share and what you keep of it shrink.
+A. Because the same 100% pot is now split among more hands — preflop against random hands, pocket aces at ~85% heads-up fall to ~64% against three opponents and ~56% against four opponents. Multiway also cuts your fold equity (everyone has to fold, not just one player) and your realization (more players means more bets that can push you off the hand before showdown), so both your raw share and what you keep of it shrink.
 
 **Q. What is EV (expected value) in poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya apabila draw anda hit. Ia membolehkan anda call draw dengan untung walaupun pot odds semata-mata kata fold — tetapi hanya jika stack cukup dalam dan lawan anda memang akan bayar.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
+  updated: "2026-09-28",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -87,7 +87,7 @@ Anda memegang ==b:A♥ K♥== pada board ==Q♥ 7♥ 2♣ 3♠== — nut flush d
 - **Pot odds dahulu:** anda mendapat 150 lawan 50, atau 3:1, jadi anda perlu **25%** equity. Flush anda kena di river hanya ==r:19.6%== daripada masa (9 outs ÷ 46 kad yang belum kelihatan — kita kira outs flush sahaja; berpasangan dengan as atau king tidak cukup untuk memastikan anda di depan, jadi overcard bukan outs bersih). 19.6% kurang daripada 25%, jadi harga serta-merta kata ==r:fold.==
 - **Sekarang implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:lebih kurang $55.== Itulah tambahan yang mesti anda menang di river apabila flush anda jatuh.
 
-Jadi soalannya bukan "patutkah saya call $50?" Ia "**apabila heart kena, bolehkah saya menang sekurang-kurangnya $55 lagi?**" Menentang lawan dengan stack dalam yang akan membayar bet river dengan top pair, itu mudah — anda call. Menentang seseorang yang tinggal $40 di belakang, atau seseorang yang tidak lagi bet atau membayar sebaik heart ketiga jatuh di board, anda tidak boleh — jadi anda fold. (Menentang set lebih sukar lagi: 2♥ dan 3♥ membuat board berpasangan dan boleh melengkapkan full house bagi set itu, meninggalkan 7 outs bersih dan x lebih kurang $129.)
+Jadi soalannya bukan "patutkah saya call $50?" Ia "**apabila heart kena, bolehkah saya menang sekurang-kurangnya $55 lagi?**" Menentang lawan dengan stack dalam yang akan membayar bet river dengan top pair, itu mudah — anda call. Menentang seseorang yang tinggal $40 di belakang, atau seseorang yang tidak lagi bet atau membayar sebaik heart ketiga jatuh di board, anda tidak boleh — jadi anda fold. (Menentang set lebih sukar lagi: 2♥ dan 3♥ membuat board berpasangan dan boleh melengkapkan full house bagi set itu, meninggalkan 7 outs bersih — 7 ÷ 44, kerana dua kad set itu juga sudah keluar dari dek — dan x lebih kurang $114.)
 
 :::note
 Call $50 yang sama, keputusan yang bertentangan — dan kadnya tidak pernah berubah. Yang berubah ialah berapa banyak wang yang tinggal untuk dimenangi. Itulah implied odds dalam satu ayat.

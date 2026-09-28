@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -135,7 +135,7 @@ The button is the best seat in poker. ==g:You act last on the flop, turn, and ri
 - **Suited connectors (T9s, 98s, 87s)** — cheap, high-implied-odds hands
 - **Weaker broadway offsuit (KTo, QJo)** — only in late position, never early
 
-Key rule: ==these speculative hands need position to be profitable==. If a UTG player raises in front of you, most of them go straight into the muck — you'd be paying a raise to play a speculative hand against a strong range, and the cheap flop they need is gone.
+Key rule: ==as opening hands, these speculative hands need position to be profitable==. And if a UTG player raises in front of you, most of them go straight into the muck — you'd be paying a raise to play a speculative hand against a strong range, and the cheap flop they need is gone.
 
 ---
 
@@ -172,7 +172,7 @@ One scope note: this is about what percentage of your *range* to play, not about
 
 I keep solver outputs open when I study, and I still hand every beginner a simplified chart first. These are two different tools, and knowing which one to use is worth more than either chart alone.
 
-**GTO preflop charts** come from solvers (PioSOLVER, GTO Wizard and friends). They're theoretically unexploitable — and they're also full of mixed frequencies: open this hand 25% of the time, fold it 75%, 3-bet this combo but only with these suits. **Beginner charts** — like the one on this page — compress all of that into one clear action per hand.
+**GTO preflop charts** come from solvers (PioSOLVER, GTO Wizard and friends). They're built to be as close to unexploitable as possible — and they're also full of mixed frequencies: open this hand 25% of the time, fold it 75%, 3-bet this combo but only with these suits. **Beginner charts** — like the one on this page — compress all of that into one clear action per hand.
 
 :::compare
 GTO Preflop Charts | Simplified Beginner Chart
@@ -210,7 +210,7 @@ The ==r:most expensive mistake beginners make is calling raises with weak aces==
 
 Charts only work if they're in front of you when it matters. For home games and study sessions, we made the whole thing printable:
 
-**[Download the free printable poker starting hands chart (PDF)](/downloads/poker-starting-hands-chart.pdf)** — one page: the full 9-max opening chart plus the one-line 6-max adjustment, cheat-sheet format. Print it, or keep it open on your phone between hands.
+**[Download the free printable poker starting hands chart (PDF)](/downloads/poker-starting-hands-chart.pdf)** — one page: the 9-max opening chart by position plus the one-line 6-max adjustment, cheat-sheet format. Print it, or keep it open on your phone between hands.
 
 Then use it literally, every hand, for your first 20+ sessions:
 
@@ -253,11 +253,11 @@ Got all three? Try the full [10-question poker hand quiz](/en/quiz) — best fiv
 
 **Q. What is the best starting hand in poker?**
 
-A. Pocket aces (AA) is the best starting hand in poker. Preflop, aces win roughly 85% of the time against one random hand. Always raise and re-raise with aces — the goal is to build a big pot as the statistical favorite.
+A. Pocket aces (AA) is the best starting hand in poker. Preflop, aces win roughly 85% of the time against one random hand. As your default, raise and re-raise with aces — the goal is to build a big pot as the statistical favorite.
 
 **Q. What are good starting hands in poker?**
 
-A. Good starting hands in poker are premium pairs (AA–TT), big aces (AK, AQ), and strong suited broadways (KQs, AJs) — the core of the ~15–20% of dealt hands a solid beginner plays (these premium groups alone are only about 5% of all starting hands). Speculative hands like small pairs and suited connectors are only good from late position.
+A. Good starting hands in poker are premium pairs (AA–TT), big aces (AK, AQ), and strong suited broadways (KQs, AJs) — the core of the ~15–20% of dealt hands a solid beginner plays (these premium groups alone are only about 5% of all starting hands). Speculative hands like small pairs and suited connectors play best from late position.
 
 **Q. How many starting hands are there in poker?**
 
@@ -269,11 +269,11 @@ A. The 7-2 rule is a house side game, not an official poker rule: if a player wi
 
 **Q. What is the worst starting hand in poker?**
 
-A. 7-2 offsuit is widely considered the worst starting hand in poker. The cards are too far apart to make a straight together, too low to win unimproved, and even hitting a pair leaves you with a weak hand and a bad kicker.
+A. 7-2 offsuit is widely considered the worst starting hand in poker. The cards are too far apart to make a straight together, too low to win often without improving, and even hitting a pair leaves you with a weak hand and a bad kicker.
 
 **Q. Should beginners use GTO preflop charts?**
 
-A. Not at first. GTO preflop charts use mixed frequencies designed to be unexploitable against strong opponents — overkill in beginner games, where a simplified raise-or-fold chart earns more. Learn the simple chart until it's automatic, then add GTO charts when you study or move up online.
+A. Not at first. GTO preflop charts use mixed frequencies designed to be hard to exploit even for strong opponents — overkill in beginner games, where a simplified raise-or-fold chart earns more. Learn the simple chart until it's automatic, then add GTO charts when you study or move up online.
 
 **Q. Does being suited really matter?**
 

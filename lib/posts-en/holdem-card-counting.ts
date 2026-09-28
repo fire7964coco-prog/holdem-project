@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -44,11 +44,11 @@ If you're picturing a running high-low count from the movies, drop it — it die
 
 ## Why Blackjack Card Counting Doesn't Work in Poker
 
-**Blackjack counting only works because a shoe is played down over many hands while you try to beat a fixed-rules dealer — poker breaks all three of those conditions.** Here's exactly why the method doesn't transfer:
+**Blackjack counting works because a shoe is played down over many hands while you try to beat a fixed-rules dealer — poker breaks all three of those conditions.** Here's exactly why the method doesn't transfer:
 
 :::card
-🔀 | The deck resets every hand | Blackjack counting needs a shoe dealt down over dozens of hands so information accumulates. Poker reshuffles every single hand, so nothing carries over — each hand starts from a full, random deck
-🙈 | Too few cards are exposed | Every player's hole cards are face down. You see your own two cards, the shared board and whatever gets shown down — a handful of cards — never enough to track the deck's composition
+🔀 | The deck resets every hand | Blackjack counting feeds on a shoe dealt down over many hands, where information accumulates. Poker reshuffles every single hand, so nothing carries over — each hand starts from a full, random deck
+🙈 | Too few cards are exposed | Every player's hole cards are face down. You see your own two cards, the shared board and whatever gets shown down — a handful of cards — enough to count outs for the hand in front of you, never enough for a blackjack-style running count
 👥 | You play opponents, not the house | There's no fixed dealer to gain an edge over. A "deck rich in high cards" means nothing when pocket aces are premium regardless — you win by having a better hand or making a better decision, not by a favorable count
 :::
 
@@ -126,7 +126,7 @@ In Hold'em the only cards dealt face-up are the five shared community cards — 
 :::steps
 Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or both the turn and the river are free), otherwise ×2 for the next card alone. Call when that chance — clean outs only — beats the price, or implied odds cover the gap
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
-Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have — but glimpsed by accident only: deliberately trying to see another player's cards is not part of this method — accidental exposure only
+Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. A card you have seen is out of the deck (it can't come on the board, and no other player can be holding it) — but glimpsed by accident only: deliberately trying to see another player's cards is not part of this method — accidental exposure only
 :::
 
 Do this for a few sessions and it becomes automatic — you'll be "counting cards" every hand, just the poker way. The next step is turning those counts into calls and folds with [pot odds](/en/blog/holdem-pot-odds), the math that tells you whether your outs are worth the price.

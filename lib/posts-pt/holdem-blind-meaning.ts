@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "O que são os blinds no poker? Small blind e big blind explicados de forma simples",
   seoTitle: "Pagar sem ver as cartas? — O que são os blinds no poker",
   desc: "Dois jogadores pagam antes de qualquer carta sair — por quê? O que são small blind e big blind, quem paga, valores, big blind ante e a regra do heads-up.",
-  tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
+  tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele (no heads-up, o próprio botão paga o small blind); o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -24,7 +24,7 @@ Os blinds são ==o motor que mantém o poker andando== — a primeira parte das 
 ---
 
 > **Resposta rápida**
-> Blind é uma **aposta obrigatória** paga antes de qualquer carta ser distribuída. O **small blind (SB)** fica imediatamente à esquerda do botão do dealer; o **big blind (BB)** fica à esquerda do small blind. O big blind normalmente é o **dobro** do small blind e funciona como a unidade padrão de aposta da mesa.
+> Blind é uma **aposta obrigatória** paga antes de qualquer carta ser distribuída. O **small blind (SB)** fica imediatamente à esquerda do botão do dealer; o **big blind (BB)** fica à esquerda do small blind (no jogo heads-up, quem paga o small blind é o botão). O big blind normalmente é o **dobro** do small blind e funciona como a unidade padrão de aposta da mesa.
 
 ---
 
@@ -42,7 +42,7 @@ Os blinds são ==o motor que mantém o poker andando== — a primeira parte das 
 
 Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão normal: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer. (Duas exceções comuns: o botão morto, que pode deixar uma mão sem small blind, e o heads-up, em que o próprio botão paga o small blind — veja mais abaixo.)
 
-Por que obrigar alguém a pagar? Para manter o jogo vivo. ==r:Sem blinds, todo mundo poderia foldar e esperar eternamente por mãos premium==; os potes ficariam vazios, blefar não teria sentido e o jogo travaria. ==g:Duas apostas obrigatórias em cada mão garantem que sempre exista algo pelo que brigar.==
+Por que obrigar alguém a pagar? Para manter o jogo vivo. ==r:Sem blinds ou alguma outra aposta obrigatória, todo mundo poderia foldar e esperar eternamente por mãos premium==; os potes ficariam vazios, blefar não teria sentido e o jogo travaria. ==g:Duas apostas obrigatórias em cada mão garantem que sempre exista algo pelo que brigar.==
 
 ---
 
@@ -50,13 +50,13 @@ Por que obrigar alguém a pagar? Para manter o jogo vivo. ==r:Sem blinds, todo m
 
 O **small blind (SB)** é a menor das duas apostas obrigatórias, paga pelo jogador sentado **imediatamente à esquerda do botão do dealer**. Normalmente é **metade do big blind** — em uma mesa $1/$2, o small blind é $1.
 
-Também é, famosamente, o assento mais traiçoeiro da mesa: você pagou meia aposta com uma mão aleatória e, do flop em diante, age **primeiro** em todas as streets, com a menor quantidade de informação. É por isso que o small blind dá prejuízo no longo prazo para praticamente todo mundo — ali o objetivo é perder *menos*, não ganhar.
+Também é, famosamente, o assento mais traiçoeiro da mesa: você pagou meia aposta com uma mão aleatória e, do flop em diante, age **primeiro** em todas as streets, com a menor quantidade de informação (o heads-up é a única exceção: ali o small blind é o botão e age por último). É por isso que o small blind dá prejuízo no longo prazo para praticamente todo mundo — ali o objetivo é perder *menos*, não ganhar.
 
 ---
 
 ## O que é o big blind?
 
-O **big blind (BB)** é a **aposta base completa**, paga pelo jogador imediatamente **à esquerda do small blind**. Em uma mesa $1/$2, o big blind é $2. Se ninguém aumentar antes do flop, o big blind ganha uma regalia especial — a **"option"**: pode [dar check](/pt/blog/holdem-betting-actions) e ver o flop de graça.
+O **big blind (BB)** é a **aposta base completa**, paga pelo jogador imediatamente **à esquerda do small blind**. Em uma mesa $1/$2, o big blind é $2. Se ninguém aumentar nem postar straddle antes do flop, o big blind ganha uma regalia especial — a **"option"**: pode [dar check](/pt/blog/holdem-betting-actions) e ver o flop de graça.
 
 Não é à toa que tanta gente pesquisa "big blind" sozinho: ele não é só um assento, é a ==**régua de medida** do jogo inteiro==.
 
@@ -78,7 +78,7 @@ Entenda o big blind, e toda a conversa numérica do jogo — tamanhos de raise, 
 
 ## Regras do small blind e do big blind: quem paga, e quando
 
-Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e, na rotação normal, ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. O que acontece depois depende do formato: num cash game você paga os blinds perdidos quando voltar, espera o big blind chegar até o seu assento ou — nas salas que permitem — volta a entrar como live straddle no UTG; num torneio os blinds e antes saem do seu stack, esteja você sentado ou não.
+Os dois blinds são pagos **antes da distribuição das cartas**, e, na rotação normal, o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. O que acontece depois depende do formato: num cash game você paga os blinds perdidos quando voltar, espera o big blind chegar até o seu assento ou — nas salas que permitem — volta a entrar como live straddle no UTG; num torneio os blinds e antes saem do seu stack, esteja você sentado ou não.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -87,13 +87,13 @@ Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do 
 | Ordem pré-flop | Age em penúltimo | Age **por último** (a "option") |
 | Ordem pós-flop | Age **primeiro** (uma desvantagem) | Age em segundo |
 
-> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de [posições no poker explicadas](/pt/blog/holdem-positions).
+> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. Duas coisas mudam esta tabela: no heads-up, o botão é o small blind e age por último depois do flop; e um live straddle, onde a sala permite, faz a ação pré-flop começar à esquerda de quem postou o straddle, que passa a agir por último. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de [posições no poker explicadas](/pt/blog/holdem-positions).
 
 ---
 
 ## De quanto são os blinds? Stakes em cash games e torneios
 
-Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e big blind de $2; o small blind é o número menor, o big blind é o maior.
+Nos jogos de no-limit e pot-limit, os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e big blind de $2; o small blind é o número menor, o big blind é o maior. (Uma mesa de limit leva o nome dos seus dois tamanhos de aposta — num jogo 4-8 limit a aposta mínima é $4; regra 104 das WSOP Live Action Rules.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -110,7 +110,7 @@ Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e 
 
 </div>
 
-- **Cash game:** os blinds ficam ==g:**fixos**==. Sente em uma mesa $1/$2 e ela é $1/$2 até você sair. (Para uma comparação mais profunda, veja [torneios vs cash games](/pt/blog/holdem-tournament-vs-cash-game).)
+- **Cash game:** os blinds ficam ==g:**fixos**== — nenhum relógio os aumenta. Uma mesa $1/$2 continua $1/$2, a não ser que a mesa e a sala combinem mudar os stakes. (Para uma comparação mais profunda, veja [torneios vs cash games](/pt/blog/holdem-tournament-vs-cash-game).)
 - **Torneio:** os blinds ==r:**sobem** no relógio== (ex.: 25/50 → 50/100 → 100/200), então a pressão cresce conforme a noite avança. Níveis de blinds, o clock e as folhas de estrutura são assunto de [como funcionam os torneios de poker](/pt/blog/holdem-tournament).
 
 ---
@@ -141,8 +141,8 @@ Ao sentar em um cash game ao vivo, normalmente você não joga de graça: na mai
 
 É nos blinds que eu mais vejo iniciante sangrar fichas sem perceber — não em um pote grande, mas um pouquinho a cada volta do botão. Dois hábitos nos blinds resolvem a maior parte disso — e um terceiro movimento, da posição final, recupera parte do que sai:
 
-- **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um leak que custa fichas continuamente.
-- **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".
+- **Small blind: simplifique.** Numa mesa de três ou mais jogadores você é o penúltimo no pré-flop mas o **primeiro a agir** depois do flop — por isso a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um leak que custa fichas continuamente.
+- **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pagar custa menos para você do que para qualquer outro assento e você pode defender com um range mais largo. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call em si. Na prática você precisa de um pouco mais que isso: fora de posição, com apostas ainda por vir, você não vai conseguir realizar toda a sua equity. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".
 - **Posição final: o roubo.** Quando todo mundo folda até o botão ou o cutoff, um aumento cujo objetivo é levar só os dois blinds é um **roubo de blinds (blind steal)** — e re-aumentar de volta é um **re-steal**. Tamanhos de steal, ranges por assento e quão largo defender são tópicos de estratégia, cobertos a fundo no [guia de jogo em posição vs fora de posição](/pt/blog/holdem-position-play).
 
 ---
@@ -160,7 +160,7 @@ A. Blinds são apostas obrigatórias que garantem que sempre haja dinheiro no po
 
 **Q. Quem age primeiro: o big blind ou o small blind?**
 
-A. Antes do flop, o small blind age em penúltimo e o big blind por último. Depois do flop, a ordem se inverte: o small blind age primeiro e o big blind em segundo, antes do resto da mesa.
+A. Antes do flop, o small blind age em penúltimo e o big blind por último. Depois do flop, a ordem se inverte: o small blind age primeiro e o big blind em segundo, antes do resto da mesa. (O heads-up é a exceção: o small blind está no botão, então age primeiro no pré-flop e por último depois do flop.)
 
 **Q. O small blind é sempre exatamente metade do big blind?**
 
@@ -168,7 +168,7 @@ A. Normalmente sim, mas nem sempre — algumas estruturas (como $1/$3 ou $2/$5) 
 
 **Q. Se ninguém aumentar, o big blind pode só dar check?**
 
-A. Sim — é a "option" do big blind. Se todo mundo apenas pagar, o big blind pode dar check e ver o flop de graça, ou aumentar se tiver uma mão forte.
+A. Sim — é a "option" do big blind. Se todo mundo apenas pagar o big blind — sem raise e sem straddle —, o big blind pode dar check e ver o flop de graça, ou aumentar se tiver uma mão forte.
 
 **Q. Dá para foldar depois de pagar o blind?**
 
@@ -190,7 +190,7 @@ A. Não exatamente — "os blinds" se refere ao small blind e ao big blind junto
 
 ## O que levar desta leitura
 
-1. Blinds são **apostas obrigatórias antes da distribuição**: small blind à esquerda do botão, big blind à esquerda dele, BB normalmente o dobro do SB.
+1. Blinds são **apostas obrigatórias antes da distribuição**: small blind à esquerda do botão (no heads-up: no botão), big blind à esquerda dele, BB normalmente o dobro do SB.
 2. O **big blind é a unidade da mesa** — raises, stacks e a pressão do torneio são todos medidos em BBs.
 3. Jogue os blinds com cuidado: **aumente ou folde no small blind**, **defenda o big blind com as pot odds** e estude os roubos de posição final quando todos foldarem até você.
 

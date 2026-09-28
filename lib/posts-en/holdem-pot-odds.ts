@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -53,7 +53,7 @@ That "how often you need to win" number is the whole point. Getting 3-to-1 means
 Add up the final pot | Current pot + the bet + your call. Example: $100 pot + $50 bet + your $50 call = $200
 Divide your call by that final pot | $50 ÷ $200 = 0.25
 That's your required equity | You need to win at least 25% of the time to call profitably
-Compare it to your actual equity | Flush draw ≈ 35% to hit with two cards to come and no more betting → 35% beats 25% → ==g:call==
+Compare it to your actual equity | Flush draw with 9 clean outs ≈ 35% to hit with two cards to come and no more betting → 35% beats 25% → ==g:call==
 :::
 
 That's it. **Required equity = your call ÷ the final pot.** If your real chance of winning is bigger than that number, calling makes money in the long run — even when you'll lose the hand more often than not.
@@ -201,7 +201,7 @@ Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-si
 
 **Q. How do you calculate pot odds quickly?**
 
-A. Divide the amount you must call by the total pot *after* your call. Calling $50 into a $150 pot is 50 ÷ 200 = 25% — that's the equity you need. If your chance of winning beats it, call.
+A. Divide the amount you must call by the total pot *after* your call. Calling $50 into a $150 pot is 50 ÷ 200 = 25% — that's the equity you need. If your chance of winning — counted only over the cards this call lets you see — beats it, call.
 
 **Q. Do you count your call in the pot odds?**
 
@@ -213,7 +213,7 @@ A. The pot is every chip already in the middle plus any bets made on the current
 
 **Q. What are good pot odds in poker?**
 
-A. The higher the better — you'd love to be "getting 5-to-1" (needing just 16.7%). But "good" is relative to your hand: getting 2-to-1 (needing 33%) works with a flush draw only when you're already going to see both cards (all-in, or no more betting — 35%); it doesn't clear the price if the call buys just one card (19.1% from the flop, 19.6% from the turn); and it's terrible with a gutshot. Always compare the price to your equity.
+A. The higher the better — you'd love to be "getting 5-to-1" (needing just 16.7%). But "good" is relative to your hand: getting 2-to-1 (needing 33%) works with a clean flush draw only when you're already going to see both cards (all-in, or no more betting — 35%); it doesn't clear the price if the call buys just one card (19.1% from the flop, 19.6% from the turn); and it's terrible with a gutshot. Always compare the price to your equity.
 
 **Q. How do you convert pot odds from a ratio to a percentage?**
 
@@ -241,7 +241,7 @@ A. Exactly your pot odds as a percentage: call ÷ final pot. Against a half-pot 
 
 **Q. Should your equity be higher or lower than your pot odds?**
 
-A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is your expected share of the pot. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
+A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is your expected share of the pot. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your clean flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
 
 ---
 

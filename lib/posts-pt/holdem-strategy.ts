@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo em vez de dar open-limp, continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -127,7 +127,7 @@ Agressão ganha potes. **Disciplina mantém stacks.** A decisão que separa joga
 
 Aqui vai um exemplo concreto de uma mão que joguei. Aumentei ==A♣K♣== e peguei um pagador. O flop veio ==2♥ 7♦ 9♠== — miss total. Tenho ás alto, sem par, sem projeto. Disparo um c-bet (Decisão 4, em posição, board seco), e meu adversário me dá check-**raise**. Nesse ponto a matemática é simples: tenho a melhor carta alta possível e mais nada, e um check-raise nesse board quase nunca é um blefe em stakes baixas. Então eu foldo o ás alto e perco o mínimo. Dois anos antes eu teria "só pagado para ver" — e pagado uma trinca de noves toda vez.
 
-A regra geral: **[quando a história que seu adversário está contando bate a mão que você de fato tem](/pt/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), e você não tem odds para melhorar, largue.** Foldar uma mão boa mas vencida parece perder. Na verdade é o hábito mais lucrativo do jogo. Quando você *de fato* tem um projeto, a decisão de foldar ou pagar se resume a [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — o preço que você está pegando versus a chance de acertar.
+A regra geral: **[quando a história que seu adversário está contando bate a mão que você de fato tem](/pt/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), e você não tem odds para melhorar, largue.** Foldar uma mão boa mas vencida parece perder. Na verdade é o hábito mais lucrativo do jogo. Quando você *de fato* tem um projeto, a decisão de foldar ou pagar se resume a [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — o preço que você está pegando versus a chance de acertar uma mão que ganha.
 
 ---
 
@@ -135,7 +135,7 @@ A regra geral: **[quando a história que seu adversário está contando bate a m
 
 Você não precisa ser matemático, mas dois números sustentam metade das suas decisões.
 
-**Pot odds** te dizem se um call é lucrativo: compare o preço do call com o tamanho do pote, depois com a sua chance de acertar. Se o pote te oferece 4 para 1 e seu projeto fecha cerca de 1 em 5, pagar fica mais ou menos no empate; melhor que isso, é lucro. Esse é o motor por trás de todo spot de "eu persigo esse projeto?" — e o [guia de pot odds](/pt/blog/holdem-pot-odds) transforma isso numa leitura de tabela de 10 segundos.
+**Pot odds** te dizem se um call é lucrativo: compare o preço do call com o tamanho do pote, depois com a sua chance de acertar uma carta vencedora. Se o pote te oferece 4 para 1 e seu projeto fecha e ganha cerca de 1 em 5, pagar fica mais ou menos no empate; melhor que isso, é lucro. Esse é o motor por trás de todo spot de "eu persigo esse projeto?" — e o [guia de pot odds](/pt/blog/holdem-pot-odds) transforma isso numa leitura de tabela de 10 segundos.
 
 **Odds de set-mining** explicam por que pares pequenos são especulativos. Pague um aumento com um par de cincos na esperança de flopar um set (ou melhor) e você vai conectar só cerca de **11,8% das vezes, mais ou menos 1 em 8,5.** Quando funciona é lindo: flopar ==5♣ K♠ 2♦== com ==5♠5♦== e você tem uma trinca escondida que estaca um overpair. Mas como você erra ~88% dos flops, set-mining só é lucrativo quando os stacks efetivos são profundos o bastante para te pagar quando você acerta — um guia grosseiro é **pelo menos ~15–20× o tamanho do call.** Stacks curtos? Aquele call especulativo vira um leak. A [tabela completa de odds e probabilidade](/pt/blog/holdem-probability) tem todo número que você um dia vai precisar.
 
@@ -181,7 +181,7 @@ TAG funciona porque ataca os dois maiores leaks de iniciante de uma vez — joga
 |:---|:---|:---|
 | **Linear (merged)** | Um bloco sólido das melhores mãos, sem buracos | Aberturas padrão; 3-bets contra opens fracos — e do small blind |
 | **Polarizado** | Só mãos muito fortes + blefes — nada no meio | 3-bets do big blind; apostas grandes no river e c-bets grandes em board molhado |
-| **Capado** | Um range sem as mãos mais fortes possíveis | Quem só paga (as premium teriam aumentado) |
+| **Capado** | Um range sem as mãos mais fortes possíveis | Quem só paga (as premium normalmente teriam aumentado) |
 | **Vantagem de range** | Não é um formato — é qual range conecta melhor com um board específico | A base de toda decisão de [c-bet](/pt/blog/holdem-continuation-bet) |
 
 Montar o *seu* range por posição é o trabalho da [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart); pensar no range *do adversário* é o que separa jogar as próprias cartas de jogar poker de verdade. E para ver ranges completos calculados spot a spot, o [solver do site](/pt/solver) mostra a grade 13×13 inteira, direto no navegador.
@@ -197,7 +197,7 @@ Montar o *seu* range por posição é o trabalho da [tabela de mãos iniciais](/
 
 **Q. Qual a melhor estratégia para Texas Hold'em?**
 
-A. Jogue um estilo tight-aggressive construído em torno de cinco decisões que se repetem: escolha mãos com base na sua posição, folde a maior parte do que te dão (cerca de 80% no pré-flop), entre nos potes aumentando em vez de dar limp, dê continuation bet no flop quando tiver a iniciativa, e faça folds disciplinados quando estiver vencido. Essa combinação bate quase todo jogo casual sem nenhuma teoria avançada.
+A. Jogue um estilo tight-aggressive construído em torno de cinco decisões que se repetem: escolha mãos com base na sua posição, folde a maior parte do que te dão (cerca de 80% no pré-flop), entre nos potes aumentando em vez de dar limp, dê continuation bet no flop quando tiver a iniciativa e o board e os adversários permitirem, e faça folds disciplinados quando estiver vencido. Essa combinação bate quase todo jogo casual sem nenhuma teoria avançada.
 
 **Q. Qual a melhor estratégia de poker para iniciantes?**
 
@@ -217,7 +217,7 @@ A. Aposte quando você tem uma mão que vale a pena construir um pote, ou um bom
 
 **Q. Quando você deve blefar no poker?**
 
-A. Blefe quando a história é crível e seu adversário de fato consegue foldar — não só porque você errou. Os melhores blefes vêm com backup: um projeto (um semi-blefe) que ainda pode ganhar se pago, em posição, contra um adversário, num board que favorece o seu range. Blefar contra vários pagadores ou jogadores que nunca foldam é só tocar fogo no dinheiro.
+A. Blefe quando a história é crível e seu adversário de fato consegue foldar — não só porque você errou. Os melhores blefes vêm com backup: um projeto (um semi-blefe) que ainda pode ganhar se pago, em posição, contra um adversário, num board que favorece o seu range. Um blefe puro contra vários pagadores ou jogadores que nunca foldam é só tocar fogo no dinheiro.
 
 **Q. Quando você deve dar 3-bet?**
 
@@ -237,7 +237,7 @@ A. Os dois — mas a habilidade vence com o tempo. Uma mão isolada carrega um c
 
 **Q. O que é estratégia GTO no poker?**
 
-A. GTO (Game Theory Optimal) é o jogo teoricamente perfeito que um solver calcula — ninguém consegue explorá-lo, mas ele vive de frequências mistas difíceis de executar. Para o iniciante, a ordem certa é dominar o framework tight-aggressive desta página primeiro e tratar GTO como ferramenta de estudo depois: os [spots já calculados do solver](/pt/solver) deixam você conferir a resposta sem instalar nada.
+A. GTO (Game Theory Optimal) é o jogo teoricamente perfeito que um solver calcula — no heads-up, ninguém consegue explorá-lo, mas ele vive de frequências mistas difíceis de executar. Para o iniciante, a ordem certa é dominar o framework tight-aggressive desta página primeiro e tratar GTO como ferramenta de estudo depois: os [spots já calculados do solver](/pt/solver) deixam você conferir a resposta sem instalar nada.
 
 **Q. O que significa tight-aggressive (TAG)?**
 

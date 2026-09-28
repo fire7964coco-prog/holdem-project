@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -116,7 +116,7 @@ The completion figure splits by street, which matters the moment there's betting
 - **Flop → turn (one card):** 9 ÷ 47 = 19.1%.
 - **Turn → river (one card):** 9 ÷ 46 = 19.6%.
 
-A **backdoor** (runner-runner) flush — you flop just *one* extra card of your suit and need both the turn and river to be your suit — comes in around 4.2%, worth roughly one extra out of equity. Not a reason to call, but a real tiebreaker on close spots. To turn any of these into a call-or-fold, run the number through [how to calculate pot odds](/en/blog/holdem-pot-odds).
+A **backdoor** (runner-runner) flush — you flop just *one* extra card of your suit and need both the turn and river to be your suit — comes in around 4.2% — about what one extra out adds to your chance of hitting. Not a reason to call, but a real tiebreaker on close spots. To turn any of these into a call-or-fold, run the number through [how to calculate pot odds](/en/blog/holdem-pot-odds).
 
 ---
 
@@ -130,7 +130,7 @@ A **backdoor** (runner-runner) flush — you flop just *one* extra card of your 
 Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight only 1.3%** of the time (76-to-1) — rarer than most players assume. That figure holds for 54s through JTs, the connectors that can fill a straight from either end; hands at the edge of the deck have fewer runs, down to 0.33% for A-K. Far more often you flop a **draw**:
 
 - **Open-ended straight draw (OESD):** ~10% of flops with connectors. Eight outs, completes **31.5%** by the river — 1 − C(39,2)/C(47,2) — or 17% from flop to turn.
-- **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% from flop to turn. Half the equity of an open-ender, which is why the same connectors play so differently depending on the flop.
+- **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% from flop to turn. About half as likely to complete as an open-ender, which is why the same connectors play so differently depending on the flop.
 
 Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big draw," both roughly a third to hit by the river. That's the shortcut worth internalizing: a normal big draw is about ==**one in three**== to complete by the river, and it drops to about one in five to six on a single street.
 

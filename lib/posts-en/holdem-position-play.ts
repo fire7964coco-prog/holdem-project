@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -66,8 +66,8 @@ Here's what acting first actually costs:
 :::compare
 Out of position (act first) | In position (act last)
 Bet into the unknown — they may raise, call, or fold, and you find out after your money is in | See their check, bet, or fold before deciding anything
-Can't take a free card — check, and they can bet you off your draw | Check behind whenever you want to see the next card free
-Pot size runs away from you — you can't stop them betting when you want a cheap showdown | You decide whether the hand goes to another street
+Can't take a free card on your own — check, and they can bet you off your draw | Check behind when it's checked to you and see the next card free
+Pot size runs away from you — you can't stop them betting when you want a cheap showdown | When it's checked to you, you decide whether more money goes in on this street
 Your range gets read — check-calling lines are transparent over time | Your checks and bets stay ambiguous because they act blind
 :::
 
@@ -143,7 +143,7 @@ The open limp fails on three counts from UTG:
 2. **It caps your perceived range** — observant players attack limpers relentlessly, and you'll face raises you can't comfortably continue against.
 3. **It wins nothing preflop.** A raise can take the blinds outright; a limp never does.
 
-There's a narrow exception in very passive live games — limping behind other limpers with small pairs and suited connectors to see a cheap multiway flop — but *open*-limping UTG is a leak in essentially every lineup. The full argument, including when limping behind is actually fine, is in the [limping guide](/en/blog/holdem-limping).
+There's a narrow exception in very passive live games — limping behind other limpers with small pairs and suited connectors to see a cheap multiway flop — but *open*-limping UTG is a leak in essentially every lineup at normal stack depths. The full argument, including when limping behind is actually fine, is in the [limping guide](/en/blog/holdem-limping).
 
 ---
 
@@ -250,7 +250,7 @@ For the mechanics of the blinds themselves — why they exist and how the forced
 
 **Q. What does out of position mean in poker?**
 
-A. Out of position (OOP) means you must act before your opponent on the postflop streets — flop, turn, and river. You commit chips without knowing what they'll do, can't take free cards, and struggle to control the pot size. The blinds are OOP against every non-blind seat (and the small blind is OOP against the big blind too); the button is never OOP against anyone.
+A. Out of position (OOP) means you must act before your opponent on the postflop streets — flop, turn, and river. You commit chips without knowing what they'll do, can't take a free card on your own, and struggle to control the pot size. The blinds are OOP against every non-blind seat (and the small blind is OOP against the big blind too — except heads-up, where the small blind is the button); the button is never OOP against anyone.
 
 **Q. Who acts first — the small blind or the big blind?**
 
@@ -266,11 +266,11 @@ A. The button. It's the only seat guaranteed to act last on every postflop stree
 
 **Q. What is the weakest position in poker?**
 
-A. Two answers, depending on the question. The small blind is the structurally worst seat to play a hand from — first to act on every postflop street. The big blind loses the most raw chips per 100 hands, simply because it posts a full forced blind every orbit; even perfect play only reduces that loss. Among non-blind seats, UTG is weakest: first preflop, tightest range, usually OOP after the flop.
+A. Two answers, depending on the question. The small blind is the structurally worst seat to play a hand from — at a table of three or more, first to act on every postflop street. The big blind loses the most raw chips per 100 hands, simply because it posts a full forced blind every orbit; even perfect play only reduces that loss. Among non-blind seats, UTG is weakest: first preflop, tightest range, usually OOP after the flop.
 
 **Q. Is the small blind an early position?**
 
-A. No — the small blind is a blind, not an "early position" seat. Early-position players (UTG and the seats beside it) open tight because the whole table acts behind them — and postflop they at least act *after* the blinds. The small blind is actually the worst seat to play from: it posts half a blind and then acts first on every postflop street. Don't treat it like early position — facing a raise, the modern default from the small blind is to 3-bet or fold, almost never flat-call; when it's folded to you, raise most of the time.
+A. No — the small blind is a blind, not an "early position" seat. Early-position players (UTG and the seats beside it) open tight because the whole table acts behind them — and postflop they at least act *after* the blinds. The small blind is actually the worst seat to play from: it posts half a blind and then, at any table of three or more, acts first on every postflop street. Don't treat it like early position — facing a raise, the modern default from the small blind is to 3-bet or fold, almost never flat-call; when it's folded to you, raise most of the time.
 
 **Q. Is it better to limp or raise from UTG?**
 

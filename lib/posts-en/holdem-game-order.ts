@@ -12,10 +12,10 @@ export const POST: Post = {
   //   ⚠ 제목 교체가 안전한 이유: 이 URL은 GSC 노출 0이라 **끊길 CTR 측정이 없다**(판단 대기 #5 조건).
   seoTitle: "Who Bets First in Texas Hold'em? — The Order of Play",
   desc: "Whose turn is it — and who bets first? The full Texas Hold'em order of play: blinds, preflop, flop, turn, river, showdown, and who acts first on every street.",
-  tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
+  tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with up to four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -49,7 +49,7 @@ The core rule is simple: you make your **best five-card hand** out of your **two
 
 Before any cards come out, two things set the table: the **dealer button** and the **blinds**.
 
-The **dealer button (the "button," marked D)** is a round disc that marks who is "on the deal" for that hand. Even with a house dealer, the button decides the betting order, and it moves one seat clockwise after every hand.
+The **dealer button (the "button," marked D)** is a round disc that marks who is "on the deal" for that hand. Even with a house dealer, the button decides the betting order, and it normally moves one seat clockwise after every hand (the dead-button rule is the exception).
 
 The **blinds** are forced bets posted before the cards are dealt. Without them, everyone could just check and fold for free; ==g:the blinds put money in the middle and give players a reason to compete==. (New to them? See exactly [how the small and big blind work](/en/blog/holdem-blind-meaning).)
 
@@ -61,6 +61,8 @@ The **blinds** are forced bets posted before the cards are dealt. Without them, 
 | Big Blind (BB) | Second seat left of the button | 2,000 |
 
 </div>
+
+With only two players the button posts the small blind itself — the setup used in the full-hand walkthrough below.
 
 The blinds aren't just an entry fee — ==they're the starting point of position and strategy==.
 
@@ -100,7 +102,7 @@ Now you can read a real five-card hand: your two hole cards plus the three on th
 
 ![Infographic of the three streets in Texas Hold'em — a K♥ 7♦ 2♣ flop, the 9♠ turn, and the Q♥ river](/images/blog-holdem-card-stages.webp "The streets: three cards on the flop, then one on the turn and one on the river")
 
-The flop also unlocks a new option: the **check**. If no one has bet yet, you can check to pass the action without putting in chips. But if an opponent bets after you check, you'll have to call, raise, or fold.
+From the flop on, the **check** is open to everyone (preflop, only a player whose own blind or straddle is the live bet can check). If no one has bet yet, you can check to pass the action without putting in chips. But if an opponent bets after you check, you'll have to call, raise, or fold.
 
 ---
 
@@ -143,7 +145,7 @@ Showdown rules:
 - Each player makes their **best five-card hand** from their two hole cards and the five community cards.
 - You don't have to use both hole cards — you can use one, or even play the board (zero) if that's your best five.
 - The player who made the last aggressive action (bet or raise) shows first; if the river was checked through, the first active player to the left of the button shows first.
-- A losing player may simply **muck** (fold without showing) — except in a tournament all-in: once a player is all-in and betting is complete, every hand is turned face up (TDA 2024 Rule 16 · WSOP Tournament Rule 70).
+- A losing player can usually just **muck** (fold without showing). Two tournament exceptions: once a player is all-in and betting is complete, every hand is turned face up (TDA 2024 Rule 16 · WSOP Tournament Rule 70); and a river bettor who was called must show if the caller — still holding or having tabled their own cards — asks to see the hand (TDA 2024 Rule 18-B).
 - Equal hands **split the pot** ("chop") evenly.
 
 Who has to show first, when you can muck, and the etiquette around slow-rolling are covered in full in the [showdown rules](/en/blog/holdem-showdown-rules).
@@ -170,6 +172,8 @@ Who has to show first, when you can muck, and the etiquette around slow-rolling 
 The memory trick: ==**before the flop, look left of the big blind; after the flop, look left of the button.**== The button acts last on every postflop street, which is exactly why it's the most profitable seat — see [poker positions: UTG to button](/en/blog/holdem-positions).
 
 ==g:**Heads-up (2 players) is the exception:**== the button posts the *small* blind and acts **first** preflop, but **last** on the flop, turn, and river. That is the order used in the full-hand walkthrough below.
+
+One more wrinkle, in cash games that allow it: a **live straddle** moves the preflop start to the straddler's left, and the straddler — not the big blind — acts last before the flop (WSOP Live Action Rule 165). After the flop the order is the usual one.
 
 ---
 
@@ -266,7 +270,7 @@ Here is every action available at the table — the part beginners mix up most.
 | Bet | Make the first wager of a round | When no one has bet yet |
 | Raise | Increase over the current bet | When there's a bet to you |
 | Re-raise (3-bet) | Raise over a raise | When there's a raise to you |
-| All-in | Push all your chips in | Any street — in turn, as a bet, a call, or a raise |
+| All-in | Push all your chips in | Any street — in turn, as whichever of a bet, a call, or a raise is open to you |
 
 </div>
 
@@ -278,7 +282,7 @@ For a deeper decision guide on when to use each move — with a check-call-raise
 
 ## The 10 Poker Hand Rankings You Must Know
 
-To win at showdown, you need to instantly know which hand beats which. This is the **hand ranking** order.
+To win at showdown, you need to instantly know which hand beats which. This is the **hand ranking** order. (The Frequency column counts how often each hand is your best five out of seven cards — which is why high card turns up less often than two pair.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -353,7 +357,7 @@ A. Post blinds → deal two hole cards → preflop betting → reveal the flop (
 
 **Q. Who goes first in poker?**
 
-A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it. (Heads-up flips this — see the next question.)
+A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind (or, once they have folded, the next live player to the button's left) opens every round after it. (Heads-up flips this — see the next question.)
 
 **Q. Who bets first after the flop?**
 
@@ -361,7 +365,7 @@ A. The first live player to the left of the button — at a full table that is t
 
 **Q. Who shows their cards first at showdown?**
 
-A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can muck instead of showing — unless someone is all-in in a tournament, where every hand gets tabled (TDA 2024 Rule 16).
+A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can usually muck instead of showing. Two tournament exceptions: when someone is all-in, every hand gets tabled (TDA 2024 Rule 16); and a river bettor who was called must show if the caller asks to see the hand (TDA 2024 Rule 18-B).
 
 **Q. What's the difference between preflop and the flop?**
 
@@ -381,21 +385,21 @@ A. Pot odds are the ratio of the current pot size to the amount you must call. I
 
 **Q. When should I go all-in?**
 
-A. All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched. When stacks differ, this creates side pots — see [all-in rules and side pots](/en/blog/holdem-all-in-rules).
+A. All-in means betting every chip you have. Use it with a very strong hand (the nuts), or as a bluff to fold out opponents. Once you're all-in you can't bet again, but you remain eligible for the portion of the pot you matched. When stacks differ and two or more players keep betting past your all-in, this creates side pots — see [all-in rules and side pots](/en/blog/holdem-all-in-rules).
 
 **Q. How many betting rounds are there in a hand?**
 
-A. Four: preflop, flop, turn, and river. The blinds are forced bets, and the showdown has no betting.
+A. Up to four: preflop, flop, turn, and river. A hand that ends early — everyone folds to one player, or players are all-in with nobody left to bet against — has fewer. The blinds are forced bets, and the showdown has no betting.
 
 **Q. Why does the dealer burn a card, and how many are burned?**
 
-A. Before dealing the flop, the turn, and the river, the dealer discards the top card of the deck face-down — the "burn card." That's three burn cards in a hand, one before each community-card street. Burning protects the game: if the top card were marked or accidentally exposed, a player could gain information about what's coming, so it's removed from play first.
+A. Before dealing the flop, the turn, and the river, the dealer discards the top card of the deck face-down — the "burn card." That's three burn cards in a hand that goes all the way to the river, one before each community-card street. Burning protects the game: if the top card were marked or accidentally exposed, a player could gain information about what's coming, so it's removed from play first.
 
 ---
 
 ## The 3 Things to Remember
 
-1. ==**The order:**== blinds → preflop → flop (3) → turn (1) → river (1) → showdown, with ==four betting rounds==.
+1. ==**The order:**== blinds → preflop → flop (3) → turn (1) → river (1) → showdown, with ==up to four betting rounds==.
 2. ==**The reads:**== on every street, judge both what you have now and what you can still make — and watch the whole board, not just your own hand.
 3. ==g:**The discipline:**== fold most hands preflop, respect position, and only bet big when your story makes sense.
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "What Are Blinds in Poker? Small Blind vs Big Blind, Explained Simply",
   seoTitle: "Chips In Before Cards? — Small Blind vs Big Blind in Poker",
   desc: "Two players pay before a card is dealt — why? What the small blind and big blind are, who posts them, SB vs BB amounts, the big blind ante, and heads-up rules.",
-  tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
+  tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left (heads-up, the button itself posts the small blind); the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-22",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -23,7 +23,7 @@ Blinds are ==the engine that keeps poker moving== — the first piece of the [ru
 ---
 
 > **Quick answer**
-> A blind is a **forced bet** posted before any cards are dealt. The **small blind (SB)** sits directly left of the dealer button; the **big blind (BB)** is to the small blind's left. The big blind is usually **double** the small blind and acts as the table's standard betting unit.
+> A blind is a **forced bet** posted before any cards are dealt. The **small blind (SB)** sits directly left of the dealer button; the **big blind (BB)** is to the small blind's left (in heads-up play the button posts the small blind). The big blind is usually **double** the small blind and acts as the table's standard betting unit.
 
 ---
 
@@ -41,7 +41,7 @@ Blinds are ==the engine that keeps poker moving== — the first piece of the [ru
 
 A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. Two players post them on every normal hand: the small blind and the big blind, the two seats immediately left of the dealer button. (Two common exceptions: a dead button, which can leave the small blind unposted for a hand, and heads-up play, where the button itself posts the small blind — see below.)
 
-Why force anyone to pay? To keep the game alive. ==r:Without blinds, every player could fold and wait endlessly for premium hands==; pots would be empty, bluffing would be pointless, and the game would stall. ==g:Two forced bets every hand guarantee there's always something to fight for.==
+Why force anyone to pay? To keep the game alive. ==r:Without blinds or some other forced bet, every player could fold and wait endlessly for premium hands==; pots would be empty, bluffing would be pointless, and the game would stall. ==g:Two forced bets every hand guarantee there's always something to fight for.==
 
 ---
 
@@ -49,13 +49,13 @@ Why force anyone to pay? To keep the game alive. ==r:Without blinds, every playe
 
 The **small blind (SB)** is the smaller of the two forced bets, posted by the player sitting **directly left of the dealer button**. It's usually **half the big blind** — in a $1/$2 game, the small blind is $1.
 
-It's also famously the trickiest seat at the table: you've paid half a bet with a random hand, and from the flop onward you act **first** on every street, with the least information. That's why the small blind loses money long-term for virtually everyone — the goal is to lose *less* there, not to win.
+It's also famously the trickiest seat at the table: you've paid half a bet with a random hand, and from the flop onward you act **first** on every street, with the least information (heads-up is the one exception: there the small blind is the button and acts last). That's why the small blind loses money long-term for virtually everyone — the goal is to lose *less* there, not to win.
 
 ---
 
 ## What Is the Big Blind?
 
-The **big blind (BB)** is the **full base bet**, posted by the player immediately **left of the small blind**. In a $1/$2 game, the big blind is $2. If nobody raises before the flop, the big blind gets a special perk — the **"option"** to [check](/en/blog/holdem-betting-actions) and see the flop for free.
+The **big blind (BB)** is the **full base bet**, posted by the player immediately **left of the small blind**. In a $1/$2 game, the big blind is $2. If nobody raises or straddles before the flop, the big blind gets a special perk — the **"option"** to [check](/en/blog/holdem-betting-actions) and see the flop for free.
 
 Searchers look up "big blind" on its own for a reason: it's not just a seat, it's the ==**measuring stick** for the entire game==.
 
@@ -77,7 +77,7 @@ Understand the big blind and the game's number-talk — raise sizes, stack depth
 
 ## Small Blind and Big Blind Rules: Who Posts Them, and When
 
-Both blinds are posted **before the deal**, and the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and, in normal rotation, ==everyone pays both blinds once per orbit==. Step away and what happens next depends on the format: in a cash game you post the blinds you missed when you return, wait for the big blind to reach you again, or — where the house allows it — take the under-the-gun live straddle instead; in a tournament the blinds and antes come out of your stack whether you are in your seat or not.
+Both blinds are posted **before the deal**, and in normal rotation the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and ==everyone pays both blinds once per orbit==. Step away and what happens next depends on the format: in a cash game you post the blinds you missed when you return, wait for the big blind to reach you again, or — where the house allows it — take the under-the-gun live straddle instead; in a tournament the blinds and antes come out of your stack whether you are in your seat or not.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -86,13 +86,13 @@ Both blinds are posted **before the deal**, and the dealer button moves one seat
 | Preflop order | Acts second-to-last | Acts **last** (the "option") |
 | Postflop order | Acts **first** (a disadvantage) | Acts second |
 
-> **Note:** before the flop, action starts with the player left of the big blind and the BB acts last — they see everyone else's decision first. From the flop onward the order resets and the blinds act early. The street-by-street sequence is mapped out in [the order of play in Texas Hold'em](/en/blog/holdem-game-order), and every seat name around the button is covered in [poker positions explained](/en/blog/holdem-positions).
+> **Note:** before the flop, action starts with the player left of the big blind and the BB acts last — they see everyone else's decision first. From the flop onward the order resets and the blinds act early. Two things change this table: heads-up, the button is the small blind and acts last after the flop; and a live straddle, where the room allows one, starts the preflop action to its own left and takes over the last-to-act spot. The street-by-street sequence is mapped out in [the order of play in Texas Hold'em](/en/blog/holdem-game-order), and every seat name around the button is covered in [poker positions explained](/en/blog/holdem-positions).
 
 ---
 
 ## How Big Are the Blinds? Stakes in Cash Games and Tournaments
 
-Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big blind; the small blind is the smaller number, the big blind the larger.
+In no-limit and pot-limit games, stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big blind; the small blind is the smaller number, the big blind the larger. (A fixed-limit table is named after its two bet sizes instead — in a 4-8 limit game the minimum bet is $4; WSOP Live Action Rule 104.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -109,7 +109,7 @@ Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big
 
 </div>
 
-- **Cash game:** blinds stay ==g:**fixed**==. Sit in a $1/$2 game and it's $1/$2 until you leave. (For a deeper comparison, see [tournaments vs cash games](/en/blog/holdem-tournament-vs-cash-game).)
+- **Cash game:** blinds stay ==g:**fixed**== — no clock raises them. A $1/$2 game stays $1/$2 unless the table and the room agree to change the stakes. (For a deeper comparison, see [tournaments vs cash games](/en/blog/holdem-tournament-vs-cash-game).)
 - **Tournament:** blinds ==r:**rise** on a timer== (e.g. 25/50 → 50/100 → 100/200), so the pressure builds as the night goes on. Blind levels, the clock, and structure sheets are covered in [how poker tournaments work](/en/blog/holdem-tournament).
 
 ---
@@ -140,8 +140,8 @@ Sit down at a live cash game and you usually can't play for free: most rooms hav
 
 The blinds are where I watch beginners quietly bleed the most chips — not in one big pot, but a little every orbit. Two habits in the blinds fix most of it — and one late-position move wins some of it back:
 
-- **Small blind: keep it simple.** Second-to-last preflop but **first to act** after the flop, the clean beginner approach is **raise or fold**, not call. Limping and getting played back at out of position is a steady chip leak — the small blind is the seat I see new players lose from most over a full session.
-- **Big blind: defend with the odds.** You've already posted one full bet, so you can profitably call raises wider than any other seat. Facing a 2.5 BB open (with the small blind folding), you call 1.5 BB into a 4 BB pot — about 2.7-to-1, meaning roughly 27% equity breaks even on the call. That math is [pot odds](/en/blog/holdem-pot-odds), and it's why "big blind defense" exists.
+- **Small blind: keep it simple.** At a table of three or more you are second-to-last preflop but **first to act** after the flop, so the clean beginner approach is **raise or fold**, not call. Limping and getting played back at out of position is a steady chip leak — the small blind is the seat I see new players lose from most over a full session.
+- **Big blind: defend with the odds.** You've already posted one full bet, so a call costs you less than it costs any other seat and you can defend wider. Facing a 2.5 BB open (with the small blind folding), you call 1.5 BB into a 4 BB pot — about 2.7-to-1, meaning roughly 27% equity breaks even on the call itself. In practice you need somewhat more than that: out of position, with betting still to come, you won't get to realize all of your equity. That math is [pot odds](/en/blog/holdem-pot-odds), and it's why "big blind defense" exists.
 - **Late position: the steal.** When everyone folds to the button or cutoff, a raise aimed at winning just the two blinds is a **blind steal** — and re-raising back is a **re-steal**. Steal sizes, ranges by seat, and how wide to defend are strategy topics, covered in depth in the [in position vs out of position strategy guide](/en/blog/holdem-position-play).
 
 ---
@@ -159,7 +159,7 @@ A. Blinds are forced bets that guarantee there is always money in the pot, which
 
 **Q. Does the big blind or small blind go first?**
 
-A. Before the flop, the small blind acts second-to-last and the big blind acts last. After the flop, the order flips: the small blind acts first and the big blind second, before the rest of the table.
+A. Before the flop, the small blind acts second-to-last and the big blind acts last. After the flop, the order flips: the small blind acts first and the big blind second, before the rest of the table. (Heads-up is the exception: the small blind is on the button, so it acts first preflop and last after the flop.)
 
 **Q. Is the small blind always exactly half the big blind?**
 
@@ -167,7 +167,7 @@ A. Usually, but not always — some structures (like $1/$3 or $2/$5) don't split
 
 **Q. If no one raises, can the big blind just check?**
 
-A. Yes — that's the big blind's "option." If everyone only calls, the big blind can check and see the flop for free, or raise if they have a strong hand.
+A. Yes — that's the big blind's "option." If everyone only calls the big blind — no raise and no straddle — the big blind can check and see the flop for free, or raise if they have a strong hand.
 
 **Q. Can you fold after posting a blind?**
 
@@ -189,7 +189,7 @@ A. Not quite — "the blinds" refers to both the small and big blind together, w
 
 ## The Takeaways
 
-1. Blinds are **forced bets before the deal**: small blind left of the button, big blind to its left, BB usually double the SB.
+1. Blinds are **forced bets before the deal**: small blind left of the button (heads-up: on the button), big blind to its left, BB usually double the SB.
 2. The **big blind is the table's unit** — raises, stacks, and tournament pressure are all measured in BBs.
 3. Play the blinds carefully: **raise-or-fold the small blind**, **defend the big blind with pot odds**, and study steals from late position when it folds to you.
 

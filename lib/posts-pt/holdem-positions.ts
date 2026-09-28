@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posições no poker: nome de cada assento e o mapa",
   seoTitle: "Seu assento muda de nome toda mão — posições no poker",
   desc: "Os nomes andam com o button, não com as cadeiras. Cada posição do poker — UTG, hijack, cutoff, button — mais o mapa 6-max e quem age primeiro.",
-  tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas normalmente andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
+  tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas normalmente andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último (no heads-up, o button é o small blind: primeiro a agir no pré-flop, último no pós-flop). Os números de assento físicos nunca mudam; as posições sim.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ Mesma mão. Resultado completamente diferente. A única coisa que mudou foi o me
 ---
 
 > **Resposta rápida**
-> Posições no poker são os ==assentos nomeados medidos a partir do dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — e elas ==normalmente andam um assento no sentido horário toda mão== conforme o button anda. No pré-flop, o UTG age primeiro e o big blind por último. No pós-flop, o small blind age primeiro e o button por último.
+> Posições no poker são os ==assentos nomeados medidos a partir do dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — e elas ==normalmente andam um assento no sentido horário toda mão== conforme o button anda. No pré-flop, o UTG age primeiro e o big blind por último. No pós-flop, o small blind age primeiro e o button por último. (No heads-up, o button é o small blind: primeiro a agir no pré-flop, último no pós-flop.)
 
 ---
 
@@ -60,7 +60,7 @@ Aqui está o mapa completo de posições 9-max — o nome de cada assento, a abr
 
 Repare na inversão: ==os blinds agem por último no pré-flop mas primeiro no pós-flop==, enquanto o button age por último em toda street pós-flop. Essa ordem — e não as cartas — é o que torna alguns assentos estruturalmente melhores do que outros.
 
-> **Nota de mesa ao vivo:** o button é um disco físico que anda um assento no sentido horário a cada mão. "UTG" é quem quer que esteja sentado três assentos à esquerda do button naquele momento — não uma cadeira fixa.
+> **Nota de mesa ao vivo:** o button é um disco físico que normalmente anda um assento no sentido horário a cada mão. "UTG" é quem quer que esteja sentado três assentos à esquerda do button naquele momento — não uma cadeira fixa.
 
 ---
 
@@ -124,7 +124,7 @@ Os nomes não têm origem oficial documentada — a gíria do poker raramente te
 - **Hijack:** o cutoff e o button são os assentos clássicos de roubar blind. Quando o jogador um assento antes aumenta primeiro, ele ==**"sequestra" o steal**== que os assentos tardios estavam esperando fazer — então o próprio assento herdou o nome.
 - **Lojack:** veio depois, como uma ==brincadeira em cima de "hijack"== — o assento um degrau "mais baixo" na hierarquia. Quase todas as versões apontam também para um eco da marca antifurto LoJack: um hijack, um degrau abaixo.
 
-Trate os dois como folclore de mesa, não como etimologia. O que não é folclore: o hijack e o lojack são nomes reais e padrão que você vai ver em todo mapa de range moderno e site de treino, e é por isso que vale saber de cor.
+Trate os dois como folclore de mesa, não como etimologia. O que não é folclore: o hijack e o lojack são nomes reais e padrão que você vai ver na maioria dos mapas de range modernos e sites de treino, e é por isso que vale saber de cor.
 
 ---
 

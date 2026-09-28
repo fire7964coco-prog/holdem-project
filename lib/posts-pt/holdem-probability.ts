@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -109,7 +109,7 @@ Então, da próxima vez que alguém disser "eu nunca pego ases", está mais ou m
 
 </div>
 
-Para set mining, ==7,5 para 1 é o retorno teórico de equilíbrio, não uma regra de stack suficiente==: pressupõe que toda trinca ganha e é paga. Na prática, a referência usual de 15–20× o stack efetivo deixa margem para o valor que não vem e para as trincas que perdem; mesmo isso é uma heurística, não um call automático. É essa a ponte para [pot odds](#pot-odds), logo abaixo. Para a derivação completa de cada linha aqui — mais a regra de stack do set mining e a divisão entre flush feito, projeto e completo — veja o mergulho fundo em [drawing odds e as odds de flopar cada mão](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Para set mining, ==7,5 para 1 é o retorno teórico de equilíbrio, não uma regra de stack suficiente==: pressupõe que toda trinca ganha e é paga. Na prática, a referência usual — stacks efetivos de 15–20× o call — deixa margem para o valor que não vem e para as trincas que perdem; mesmo isso é uma heurística, não um call automático. É essa a ponte para [pot odds](#pot-odds), logo abaixo. Para a derivação completa de cada linha aqui — mais a regra de stack do set mining e a divisão entre flush feito, projeto e completo — veja o mergulho fundo em [drawing odds e as odds de flopar cada mão](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -173,11 +173,11 @@ No turn (1 carta por vir) | Multiplique outs × 2 → sua % aproximada de acerta
 Pote depois da aposta | $100 + $50 = $150
 Seu call | $50 para ganhar $150 (pote final $200)
 Pot odds | 50 ÷ 200 = 25% — você precisa de pelo menos 25% de equity
-Sua equity | Projeto de flush ≈ 35% até o river (regra do 4) — o número pressupõe que você vê ==as duas== cartas
+Sua equity | Projeto de flush com 9 outs limpos ≈ 35% até o river (regra do 4) — o número pressupõe que você vê ==as duas== cartas
 Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucrativo
 :::
 
-É esse o momento em que todos os números compensam — mas **use o número da street que você está pagando**. Se as duas cartas vêm (você está all-in, ou o turn passa sem mais aposta), seus **35%** superam o preço de **25%** e dar call ganha dinheiro no longo prazo mesmo que você vá perder a mão na maioria das vezes. Se o vilão vai apostar de novo no turn, este call só compra a carta do turn — do flop isso dá ==9 ÷ 47 = 19,1%==, *abaixo* do preço — e aí o projeto precisa das [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), o dinheiro que você ganha nas streets depois de acertar, para cobrir essa diferença. Gastar o número do ×4 numa decisão de uma carta só é a forma mais comum de o iniciante superestimar um projeto. Para o método completo e o resumão de bet sizing, veja [como calcular pot odds](/pt/blog/holdem-pot-odds).
+É esse o momento em que todos os números compensam — mas **use o número da street que você está pagando**. Se as duas cartas vêm (você está all-in, ou o turn passa sem mais aposta), os **35%** de um projeto limpo superam o preço de **25%** e dar call ganha dinheiro no longo prazo mesmo que você vá perder a mão na maioria das vezes. Se o vilão vai apostar de novo no turn, este call só compra a carta do turn — do flop isso dá ==9 ÷ 47 = 19,1%==, *abaixo* do preço — e aí o projeto precisa das [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), o dinheiro que você ganha nas streets depois de acertar, para cobrir essa diferença. Gastar o número do ×4 numa decisão de uma carta só é a forma mais comum de o iniciante superestimar um projeto. Para o método completo e o resumão de bet sizing, veja [como calcular pot odds](/pt/blog/holdem-pot-odds).
 
 ---
 
@@ -236,7 +236,7 @@ A. Se você flopa um projeto de flush (nove outs), você o completa cerca de 35%
 
 **Q. Quais são as odds de flopar uma trinca?**
 
-A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão. As odds equivalentes de 7,5 para 1 descrevem erros contra acertos, não uma profundidade de stack recomendada. Um call de set mining também precisa de pagamento futuro realista; a referência prática de 15–20× deixa margem para trincas que não recebem ação ou que perdem.
+A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão. As odds equivalentes de 7,5 para 1 descrevem erros contra acertos, não uma profundidade de stack recomendada. Um call de set mining também precisa de pagamento futuro realista; a referência prática de stacks de 15–20× o call deixa margem para trincas que não recebem ação ou que perdem.
 
 **Q. Quais são as odds de flopar um royal flush?**
 
@@ -256,7 +256,7 @@ A. 0,168% até o river — 1 em 595 mãos. Com um par na mão, você flopa a qua
 
 **Q. Qual é a probabilidade de uma sequência no poker?**
 
-A. 4,62% até o river — cerca de 1 em 22 mãos. Com conectores você flopa uma sequência *feita* só 1,3% das vezes, mas flopa um projeto aberto perto de 10% — e esse projeto completa 31,5% até o river. Em cinco cartas distribuídas, a sequência sai 0,392%.
+A. 4,62% até o river — cerca de 1 em 22 mãos. Com conectores do meio do baralho, como 8-7, você flopa uma sequência *feita* só 1,3% das vezes, mas flopa um projeto aberto perto de 10% — e esse projeto completa 31,5% até o river. Em cinco cartas distribuídas, a sequência sai 0,392%.
 
 **Q. Qual é a probabilidade de um full house no poker?**
 
@@ -276,7 +276,7 @@ A. Não há um número fixo único — depende de quantos adversários seguram p
 
 **Q. Qual é a mão vencedora mais comum no poker?**
 
-A. Um par, seguido de dois pares. Como todo mundo divide as mesmas cinco cartas comunitárias, a maioria dos potes de Texas Hold'em é decidida por um único par e seu kicker — flushes, sequências e full houses ganham bem menos do que os iniciantes imaginam. A frequência completa de cada resultado está na tabela lá em cima.
+A. Um par, seguido de dois pares. Como todo mundo divide as mesmas cinco cartas comunitárias, a maioria dos potes de Texas Hold'em é decidida por um único par e seu kicker — flushes, sequências e full houses ganham bem menos do que os iniciantes imaginam. A frequência com que cada mão aparece em sete cartas — que não é a mesma coisa que a frequência com que ela ganha o pote — está na tabela lá em cima.
 
 **Q. Com que frequência a melhor mão ganha no poker?**
 

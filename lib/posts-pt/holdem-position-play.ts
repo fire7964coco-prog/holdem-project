@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -67,8 +67,8 @@ Veja o que agir primeiro realmente custa:
 :::compare
 Out of position (age primeiro) | In position (age por último)
 Aposta no escuro — ele pode aumentar, pagar ou foldar, e você só descobre depois do seu dinheiro já ter entrado | Vê o check, a aposta ou o fold dele antes de decidir qualquer coisa
-Não consegue pegar uma carta grátis — dê check e ele te tira do seu projeto com uma aposta | Dá check atrás sempre que quiser ver a próxima carta de graça
-O tamanho do pote foge do seu controle — você não consegue impedir ele de apostar quando você queria um showdown barato | Você decide se a mão vai para mais uma street
+Não consegue pegar uma carta grátis por conta própria — dê check e ele te tira do seu projeto com uma aposta | Dá check atrás quando te dão check e vê a próxima carta de graça
+O tamanho do pote foge do seu controle — você não consegue impedir ele de apostar quando você queria um showdown barato | Quando te dão check, você decide se entra mais dinheiro nesta street
 Seu range é lido — linhas de check-call ficam transparentes com o tempo | Seus checks e apostas ficam ambíguos porque ele age no escuro
 :::
 
@@ -144,7 +144,7 @@ O open limp falha em três frentes no UTG:
 2. **Limita o seu range percebido** — jogadores atentos atacam limpers sem dó, e você vai enfrentar aumentos contra os quais não dá para continuar confortável.
 3. **Não ganha nada no pré-flop.** Um aumento pode levar os blinds de cara; um limp nunca leva.
 
-Existe uma exceção estreita em jogos ao vivo bem passivos — limpar atrás de outros limpers com pares pequenos e suited connectors para ver um flop multiway barato — mas *abrir* com limp no UTG é um leak em basicamente qualquer mesa. O argumento completo, incluindo quando limpar atrás é de fato tranquilo, está no [guia de limping](/pt/blog/holdem-limping).
+Existe uma exceção estreita em jogos ao vivo bem passivos — limpar atrás de outros limpers com pares pequenos e suited connectors para ver um flop multiway barato — mas *abrir* com limp no UTG é um leak em basicamente qualquer mesa com stacks de profundidade normal. O argumento completo, incluindo quando limpar atrás é de fato tranquilo, está no [guia de limping](/pt/blog/holdem-limping).
 
 ---
 
@@ -238,7 +238,7 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 **O 6-max comprime o mapa.** Com três cadeiras de early removidas, o primeiro a agir no 6-max enfrenta só cinco adversários — então ==**o UTG de 6-max joga como o lojack de full ring, abrindo em torno de ~17%**== em vez dos ~13% do UTG de full ring. As cadeiras finais continuam com o mesmo número de jogadores atrás, então os ranges delas quase não mudam — mas você senta nelas com mais frequência, os roubos são mais comuns e os 3-bets ficam mais frequentes no geral. O leak mais comum ao trocar de formato é carregar o aperto do 9-max para o 6-max — você acaba foldando até sumir da mesa.
 
-**Torneios mantêm a mesma mecânica com apostas diferentes em cada decisão.** Em cash games, vantagens posicionais se acumulam com calma ao longo de horas e os rebuys permitem repor as fichas perdidas com esses leaks. Em torneios, stacks encolhendo mudam a textura: abaixo de ~15 big blinds, o jogo colapsa para push/fold, onde a nuance posicional importa menos, enquanto em 20–30 BB o roubo de late position vira o motor da sobrevivência — até que o ICM da bolha torne alguns roubos matematicamente corretos em suicídio de torneio. A comparação completa está no [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
+**Torneios mantêm a mesma mecânica com apostas diferentes em cada decisão.** Em cash games, vantagens posicionais se acumulam com calma ao longo de horas e os rebuys permitem repor as fichas perdidas com esses leaks. Em torneios, stacks encolhendo mudam a textura: abaixo de ~15 big blinds, o jogo vai se aproximando do push/fold, onde a nuance posicional importa menos, enquanto em 20–30 BB o roubo de late position vira o motor da sobrevivência — até que o ICM da bolha torne alguns roubos matematicamente corretos em suicídio de torneio. A comparação completa está no [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -251,7 +251,7 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 **Q. O que significa out of position no poker?**
 
-A. Out of position (OOP) significa que você precisa agir antes do seu adversário nas streets pós-flop — flop, turn e river. Você compromete fichas sem saber o que ele vai fazer, não consegue pegar cartas grátis e sofre para controlar o tamanho do pote. Os blinds ficam OOP contra toda cadeira que não é blind (entre os dois, o small blind age primeiro — então o big blind na verdade tem posição sobre o small blind); o button nunca fica OOP contra ninguém.
+A. Out of position (OOP) significa que você precisa agir antes do seu adversário nas streets pós-flop — flop, turn e river. Você compromete fichas sem saber o que ele vai fazer, não consegue pegar cartas grátis por conta própria e sofre para controlar o tamanho do pote. Os blinds ficam OOP contra toda cadeira que não é blind (entre os dois, o small blind age primeiro — então o big blind na verdade tem posição sobre o small blind, exceto no heads-up, onde o small blind é o button e age por último); o button nunca fica OOP contra ninguém.
 
 **Q. Quem age primeiro — o small blind ou o big blind?**
 
@@ -267,11 +267,11 @@ A. O button. É a única cadeira garantida a agir por último em toda street pó
 
 **Q. Qual a posição mais fraca no poker?**
 
-A. Duas respostas, dependendo da pergunta. O small blind é a cadeira estruturalmente pior para se jogar uma mão — primeiro a agir em toda street pós-flop. O big blind perde mais fichas brutas por 100 mãos, simplesmente porque posta um blind forçado inteiro em toda órbita; mesmo o jogo perfeito só reduz essa perda. Entre as cadeiras que não são blind, o UTG é a mais fraca: primeiro no pré-flop, range mais apertado, geralmente OOP depois do flop.
+A. Duas respostas, dependendo da pergunta. O small blind é a cadeira estruturalmente pior para se jogar uma mão — numa mesa de três ou mais jogadores, primeiro a agir em toda street pós-flop. O big blind perde mais fichas brutas por 100 mãos, simplesmente porque posta um blind forçado inteiro em toda órbita; mesmo o jogo perfeito só reduz essa perda. Entre as cadeiras que não são blind, o UTG é a mais fraca: primeiro no pré-flop, range mais apertado, geralmente OOP depois do flop.
 
 **Q. O small blind é uma posição inicial?**
 
-A. Não — o small blind é um blind, não uma cadeira de "posição inicial". Os jogadores de posição inicial (UTG e as cadeiras ao lado dele) abrem apertado porque a mesa inteira age atrás — e no pós-flop eles pelo menos agem *depois* dos blinds. O small blind é na verdade a pior cadeira para se jogar uma mão: posta metade de um blind e depois age primeiro em toda street pós-flop. Não trate como posição inicial — diante de um aumento, o padrão moderno do small blind é dar 3-bet ou foldar, quase nunca só pagar; quando foldam até você, aumente na maioria das vezes.
+A. Não — o small blind é um blind, não uma cadeira de "posição inicial". Os jogadores de posição inicial (UTG e as cadeiras ao lado dele) abrem apertado porque a mesa inteira age atrás — e no pós-flop eles pelo menos agem *depois* dos blinds. O small blind é na verdade a pior cadeira para se jogar uma mão: posta metade de um blind e depois, em qualquer mesa de três ou mais jogadores, age primeiro em toda street pós-flop. Não trate como posição inicial — diante de um aumento, o padrão moderno do small blind é dar 3-bet ou foldar, quase nunca só pagar; quando foldam até você, aumente na maioria das vezes.
 
 **Q. É melhor limpar ou aumentar do UTG?**
 

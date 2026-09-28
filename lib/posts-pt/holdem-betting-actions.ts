@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Ações de aposta no Texas Hold'em: check, call, raise e fold",
   seoTitle: "Check, pagar ou foldar? — Ações de aposta e regras do raise",
   desc: "Chegou a sua vez e deu branco? Entenda o que são check, call, raise e fold no poker, como funciona a regra do min-raise e quantas vezes dá para reaumentar.",
-  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
+  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à última aposta ou raise completo) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -39,7 +39,7 @@ O Texas Hold'em tem só ==5 ações de aposta==, mas as regras em volta delas (q
 :::stripe
 5 | ações de aposta: check, apostar, pagar, aumentar, foldar
 1 BB | aposta mínima de abertura no No-Limit Hold'em
-= último raise | tamanho mínimo do reaumento (regra do incremento)
+= último raise completo | tamanho mínimo do reaumento (regra do incremento)
 Sem teto | de reaumentos no No-Limit — dá para aumentar até alguém ir all-in
 :::
 
@@ -53,7 +53,7 @@ Toda decisão que você toma numa mesa de poker é uma destas cinco:
 | Check | Só quando não há aposta viva à sua frente (pré-flop: como big blind, ou como o jogador que postou um straddle vivo) | Grátis — você passa a vez sem colocar fichas |
 | Call | Depois que alguém apostou ou aumentou | Você iguala exatamente a aposta atual |
 | Bet | Primeira aposta da rodada | O valor que você escolher (mínimo = 1 big blind) |
-| Raise | Depois que alguém apostou | Pelo menos o tamanho da aposta ou do raise anterior por cima |
+| Raise | Depois que alguém apostou | Pelo menos o tamanho da última aposta ou raise completo por cima |
 
 Ir de ==all-in== não é uma sexta ação separada — é uma aposta, um call ou um raise com todas as fichas que você ainda tem. Falamos disso mais abaixo.
 
@@ -86,7 +86,7 @@ Para o quadro completo de quem age quando, street por street, veja a [ordem de j
 
 ## O que é call no poker? (Check vs call)
 
-Dar call (pagar) significa ==igualar exatamente a aposta atual== para continuar na mão. Alguém aposta $10, você paga $10 — nem mais, nem menos.
+Dar call (pagar) significa ==igualar exatamente a aposta atual== para continuar na mão. Alguém aposta $10, você paga $10 — nem mais, nem menos. (Se sobraram menos de $10, você ainda pode pagar: vai de all-in pelo que tem.)
 
 Check vs call é a confusão mais comum de iniciante, então aqui vai a separação limpa:
 
@@ -117,7 +117,7 @@ Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a 
 No No-Limit Hold'em (o formato que você vai jogar em praticamente todo lugar):
 
 - **Aposta mínima**: 1 big blind
-- **Raise mínimo (o min-raise)**: pelo menos ==o tamanho da aposta ou do raise anterior== por cima
+- **Raise mínimo (o min-raise)**: pelo menos ==o tamanho da última aposta ou raise completo== por cima
 - **Máximo**: seu stack inteiro — é esse o "no limit"
 
 Dois exemplos na prática:
@@ -127,7 +127,7 @@ Dois exemplos na prática:
 | Flop | Jogador aposta $6 | $6 a mais → $12 no total |
 | Pré-flop (blinds $1/$2) | Jogador aumenta para $6 (um raise de $4 sobre o blind de $2) | $4 a mais → $10 no total |
 
-O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou raise, não o big blind. No pré-flop, o big blind conta como aposta de abertura — por isso o menor open-raise possível é para 2 big blinds.
+O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou raise completo, não o big blind. ("Completo" faz diferença quando alguém vai de all-in por menos que um raise: depois de uma aposta de $10 e um all-in de $14, o incremento a igualar continua sendo $10, então o menor raise é para $24.) No pré-flop, o big blind conta como aposta de abertura — por isso o menor open-raise possível é para 2 big blinds.
 
 Duas regras do poker ao vivo que vêm junto com o raise:
 
@@ -144,7 +144,7 @@ No **No-Limit Hold'em: não existe teto**. Você pode aumentar, levar um reaumen
 
 Dois limites continuam valendo:
 
-- Cada reaumento precisa respeitar a ==regra do incremento do min-raise== acima
+- Cada reaumento precisa respeitar a ==regra do incremento do min-raise== acima — a única exceção é o all-in, que pode ser por menos
 - ==r:Você não pode aumentar a própria aposta.== Se você aposta e todo mundo só paga, a rodada acaba — você só volta a aumentar se alguém aumentar *você* primeiro
 
 Nos jogos de **Fixed-Limit** cada rodada é capada (pote "capado"). As regras de torneio da WSOP põem o teto em ==uma aposta mais quatro raises== (regra 100.b) — e a exceção funciona ao contrário do que quase todo mundo espera: ==r:o teto continua de pé mesmo que restem só dois jogadores na mão==. Ele só cai quando o **torneio inteiro** fica heads-up. No cash valem as regras da casa, então pergunte ao dealer.
@@ -153,7 +153,7 @@ Nos jogos de **Fixed-Limit** cada rodada é capada (pote "capado"). As regras de
 
 ## O que significa ir de all-in?
 
-All-in significa apostar ==todas as fichas que você ainda tem==. Dá para fazer isso a qualquer momento em que a ação estiver com você — como aposta, call ou raise.
+All-in significa apostar ==todas as fichas que você ainda tem==. Dá para fazer isso na sua vez como aposta, call ou raise — o que estiver aberto para você naquele momento.
 
 Se o seu all-in for *menor* que a aposta atual, você não está foldado: você simplesmente disputa um ==pote principal== limitado à sua contribuição, enquanto as fichas extras dos stacks maiores formam um ==pote paralelo== que você não pode ganhar. (Se alguém está ainda mais curto que você, você continua disputando o pote paralelo que ele não alcança — cada all-in limita só a própria camada.) E um all-in *menor que um min-raise completo* em geral não reabre a ação de raise para quem já agiu — uma regra sutil que surpreende até os regulares.
 
@@ -179,7 +179,7 @@ Jogo um home game ao vivo de apostas baixas toda semana, e os mesmos erros de a�
 
 ### Erro 1 — Pagar quando dava para dar check
 
-Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1== teria transformado isso num check. Quando a street está sem aposta, dê check e veja a carta de graça.
+Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1== teria transformado isso num check. Quando a street está sem aposta, dê check — se ninguém apostar depois de você, você vê a próxima carta de graça.
 
 ### Erro 2 — "Eu pago... aliás, aumento!"
 
@@ -208,11 +208,11 @@ A. Sim — se alguém apostar depois do seu check, você pode aumentar quando a 
 
 **Q. Pode aumentar a própria aposta?**
 
-A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. Você só volta a aumentar se outro jogador aumentar você primeiro, o que reabre a ação.
+A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. Você só volta a aumentar se outro jogador fizer primeiro um aumento completo sobre você — isso reabre a ação; um all-in por menos que um aumento completo, não.
 
 **Q. Quantas vezes pode aumentar no Texas Hold'em?**
 
-A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até alguém ficar all-in, desde que cada raise respeite o incremento mínimo. No Fixed-Limit, as regras de torneio da WSOP limitam a rodada a uma aposta mais quatro raises (regra 100.b), e esse teto vale mesmo com só dois jogadores restantes na mão.
+A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até alguém ficar all-in, desde que cada raise respeite o incremento mínimo (um all-in pode ser por menos). No Fixed-Limit, as regras de torneio da WSOP limitam a rodada a uma aposta mais quatro raises (regra 100.b), e esse teto vale mesmo com só dois jogadores restantes na mão — ele só cai quando o torneio inteiro fica heads-up.
 
 **Q. Pode foldar fora da sua vez?**
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Como jogar Texas Hold'em: a ordem do jogo, dos blinds ao showdown",
   seoTitle: "Não sabe quando é sua vez? — Ordem do jogo no Texas Hold'em",
   desc: "Trava sem saber de quem é a vez no poker? A ordem completa da mão de Texas Hold'em — pré-flop, flop, turn, river e showdown — com exemplo real passo a passo.",
-  tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
+  tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com até quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -42,7 +42,7 @@ A regra central é simples: você forma sua **melhor mão de cinco cartas** comb
 
 Antes de qualquer carta sair, duas coisas organizam a mesa: o **botão do dealer** e os **blinds**.
 
-O **botão do dealer (o "button", marcado com D)** é um disco redondo que indica quem "dá as cartas" naquela mão. Mesmo com um dealer profissional na mesa, é o botão que define a ordem das apostas, e ele avança uma cadeira no sentido horário a cada mão.
+O **botão do dealer (o "button", marcado com D)** é um disco redondo que indica quem "dá as cartas" naquela mão. Mesmo com um dealer profissional na mesa, é o botão que define a ordem das apostas, e normalmente ele avança uma cadeira no sentido horário a cada mão (a regra do botão morto é a exceção).
 
 Os **blinds** são apostas obrigatórias postadas antes de as cartas serem distribuídas. Sem eles, todo mundo poderia dar check e foldar de graça; ==g:os blinds colocam fichas no meio e dão aos jogadores um motivo para brigar pelo pote==. (Primeira vez ouvindo falar? Veja exatamente [como funcionam o small blind e o big blind](/pt/blog/holdem-blind-meaning).)
 
@@ -54,6 +54,8 @@ Os **blinds** são apostas obrigatórias postadas antes de as cartas serem distr
 | Big Blind (BB) | Segunda cadeira à esquerda do botão | 2.000 |
 
 </div>
+
+Com só dois jogadores, o próprio botão posta o small blind — é essa a configuração da mão completa que vamos acompanhar mais abaixo.
 
 Os blinds não são só uma taxa de entrada — ==eles são o ponto de partida da posição e da estratégia==.
 
@@ -93,7 +95,7 @@ Agora você já consegue ler uma mão real de cinco cartas: suas duas cartas fec
 
 ![Infográfico das três streets do Texas Hold'em — flop K♥ 7♦ 2♣, turn 9♠, river Q♥](/images/blog-holdem-card-stages.webp "As streets: três cartas no flop, depois uma no turn e uma no river")
 
-O flop também libera uma opção nova: o **check**. Se ninguém apostou ainda, você pode dar check e passar a ação sem colocar fichas. Mas se um adversário apostar depois do seu check, você terá que pagar, aumentar ou foldar.
+Do flop em diante, o **check** fica aberto para todo mundo (no pré-flop, só pode dar check quem tem o próprio blind ou straddle como aposta viva). Se ninguém apostou ainda, você pode dar check e passar a ação sem colocar fichas. Mas se um adversário apostar depois do seu check, você terá que pagar, aumentar ou foldar.
 
 ---
 
@@ -136,7 +138,7 @@ Regras do showdown:
 - Cada jogador forma sua **melhor mão de cinco cartas** com as duas cartas fechadas e as cinco comunitárias.
 - Você não é obrigado a usar as duas cartas da mão — pode usar uma só, ou até jogar só com a mesa (zero), se essa for sua melhor combinação.
 - Quem fez a última ação agressiva (aposta ou aumento) mostra primeiro; no river com checks, mostra primeiro o **primeiro jogador ativo** à esquerda do botão.
-- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar) — exceto num all-in de torneio: quando um jogador está all-in e a ação terminou, todas as mãos são viradas para cima (regra 16 da TDA, edição de 2024 · regra 70 do regulamento de torneios da WSOP).
+- Quem perdeu normalmente pode só dar **muck** (foldar sem mostrar). Há duas exceções de torneio: quando um jogador está all-in e a ação terminou, todas as mãos são viradas para cima (regra 16 da TDA, edição de 2024 · regra 70 do regulamento de torneios da WSOP); e quem apostou no river e foi pago precisa mostrar se quem pagou — ainda com as próprias cartas na mão ou já abertas na mesa — pedir para ver a mão (regra 18-B da TDA, edição de 2024).
 - Mãos idênticas **dividem o pote** ("chop") em partes iguais.
 
 Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em torno do slow roll estão explicados por completo nas [regras do showdown](/pt/blog/holdem-showdown-rules).
@@ -161,6 +163,8 @@ Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em 
 O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa; veja [posições no poker: do UTG ao botão](/pt/blog/holdem-positions).
 
 ==g:**Heads-up (2 jogadores) é a exceção:**== o botão posta o *small* blind e age **primeiro** no pré-flop, mas **por último** no flop, no turn e no river. É essa a ordem usada na mão completa que vamos acompanhar logo abaixo.
+
+Mais um detalhe, nos cash games que permitem: um **live straddle** leva o começo da ação pré-flop para a esquerda de quem postou o straddle, e é ele — não o big blind — quem age por último antes do flop (regra 165 das WSOP Live Action Rules). Depois do flop, a ordem é a de sempre.
 
 ---
 
@@ -257,7 +261,7 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 | Bet | Faz a primeira aposta da rodada | Quando ninguém apostou ainda |
 | Raise | Aumenta por cima da aposta atual | Quando há uma aposta para você |
 | Re-raise (3-bet) | Aumenta por cima de um aumento | Quando há um aumento para você |
-| All-in | Empurra todas as suas fichas | Em qualquer street — na sua vez, como aposta, call ou aumento |
+| All-in | Empurra todas as suas fichas | Em qualquer street — na sua vez, como aposta, call ou aumento, o que estiver aberto para você |
 
 </div>
 
@@ -269,7 +273,7 @@ Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma
 
 ## As 10 mãos de poker que você precisa saber
 
-Para vencer no showdown, você precisa saber na hora qual mão ganha de qual. Esta é a ordem do **ranking de mãos**.
+Para vencer no showdown, você precisa saber na hora qual mão ganha de qual. Esta é a ordem do **ranking de mãos**. (A coluna Frequência conta com que frequência cada mão é a sua melhor de cinco entre sete cartas — por isso a carta alta aparece menos que dois pares.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -344,7 +348,7 @@ A. Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop
 
 **Q. Quem age primeiro no poker?**
 
-A. Depende de qual "primeiro" você quer dizer, e é exatamente por isso que a pergunta confunde. Três momentos diferentes disputam a palavra numa mesma mão: o primeiro a *postar* (o small blind), o primeiro a *agir* no pré-flop (o UTG, logo à esquerda do big blind) e o primeiro a agir depois que o flop abre (de volta ao small blind). Ou seja, a resposta muda no meio da mão — o UTG abre a rodada pré-flop, e o small blind abre todas as rodadas seguintes. (No heads-up isso se inverte — veja a pergunta seguinte.)
+A. Depende de qual "primeiro" você quer dizer, e é exatamente por isso que a pergunta confunde. Três momentos diferentes disputam a palavra numa mesma mão: o primeiro a *postar* (o small blind), o primeiro a *agir* no pré-flop (o UTG, logo à esquerda do big blind) e o primeiro a agir depois que o flop abre (de volta ao small blind). Ou seja, a resposta muda no meio da mão — o UTG abre a rodada pré-flop, e o small blind (ou, se ele já foldou, o próximo jogador ativo à esquerda do botão) abre todas as rodadas seguintes. (No heads-up isso se inverte — veja a pergunta seguinte.)
 
 **Q. Quem aposta primeiro depois do flop?**
 
@@ -352,7 +356,7 @@ A. O primeiro jogador ainda na mão à esquerda do botão — numa mesa cheia, o
 
 **Q. Quem mostra as cartas primeiro no showdown?**
 
-A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar — a menos que alguém esteja all-in num torneio, quando todas as mãos são mostradas (regra 16 da TDA, edição de 2024).
+A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido normalmente pode dar muck em vez de mostrar. Há duas exceções de torneio: quando alguém está all-in, todas as mãos são mostradas (regra 16 da TDA, edição de 2024); e quem apostou no river e foi pago precisa mostrar se quem pagou pedir para ver a mão (regra 18-B da TDA, edição de 2024).
 
 **Q. Qual é a diferença entre pré-flop e flop?**
 
@@ -372,29 +376,29 @@ A. Pot odds são a relação entre o tamanho atual do pote e o valor que você p
 
 **Q. Quando devo ir de all-in?**
 
-A. All-in significa apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para fazer os adversários foldarem. Depois do all-in você não pode mais apostar, mas continua concorrendo à parte do pote que igualou. Quando os stacks são diferentes, isso cria potes paralelos — veja as [regras do all-in e o pote paralelo](/pt/blog/holdem-all-in-rules).
+A. All-in significa apostar todas as suas fichas. Use com uma mão muito forte (os nuts) ou como blefe para fazer os adversários foldarem. Depois do all-in você não pode mais apostar, mas continua concorrendo à parte do pote que igualou. Quando os stacks são diferentes e dois ou mais jogadores continuam apostando além do seu all-in, isso cria potes paralelos — veja as [regras do all-in e o pote paralelo](/pt/blog/holdem-all-in-rules).
 
 **Q. Quantas rodadas de apostas há em uma mão?**
 
-A. Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias, e no showdown não há apostas.
+A. Até quatro: pré-flop, flop, turn e river. Uma mão que termina antes — todo mundo folda para um jogador, ou há jogadores all-in e não sobra ninguém contra quem apostar — tem menos. Os blinds são apostas obrigatórias, e no showdown não há apostas.
 
 **Q. O que são flop, turn e river no poker?**
 
-A. São as três aberturas de cartas comunitárias: o flop revela três cartas de uma vez, o turn (fourth street) adiciona a quarta e o river (fifth street) traz a quinta e última. Depois de cada uma acontece uma rodada de apostas — somando o pré-flop, uma mão tem quatro rodadas no total.
+A. São as três aberturas de cartas comunitárias: o flop revela três cartas de uma vez, o turn (fourth street) adiciona a quarta e o river (fifth street) traz a quinta e última. Depois de cada uma vem uma rodada de apostas — a não ser que haja jogadores all-in e não sobre ninguém contra quem apostar, quando as cartas restantes são abertas sem mais apostas. Somando o pré-flop, uma mão tem até quatro rodadas.
 
 **Q. Quais são as regras do dealer no poker?**
 
-A. O dealer embaralha, distribui uma carta por vez em sentido horário começando à esquerda do botão, queima uma carta antes de cada street comunitária e conduz a ação — anuncia apostas, monta os potes e lê as mãos no showdown. No jogo em casa, o botão de dealer gira a cada mão; no clube, um profissional dá as cartas, mas o botão continua definindo a ordem de ação.
+A. O dealer embaralha, distribui uma carta por vez em sentido horário começando à esquerda do botão, queima uma carta antes de cada street comunitária e conduz a ação — anuncia apostas, monta os potes e lê as mãos no showdown. No jogo em casa, o botão de dealer normalmente gira a cada mão; no clube, um profissional dá as cartas, mas o botão continua definindo a ordem de ação.
 
 **Q. Por que o dealer queima uma carta, e quantas são queimadas?**
 
-A. Antes de abrir o flop, o turn e o river, o dealer descarta a carta do topo do baralho virada para baixo — a "burn card". São três cartas queimadas por mão, uma antes de cada street comunitária. Queimar protege o jogo: se a carta do topo estivesse marcada ou tivesse sido exposta por acidente, um jogador poderia saber o que vem por aí — por isso ela sai de jogo primeiro. É uma das regras que o dealer segue à risca em qualquer clube.
+A. Antes de abrir o flop, o turn e o river, o dealer descarta a carta do topo do baralho virada para baixo — a "burn card". São três cartas queimadas numa mão que vai até o river, uma antes de cada street comunitária. Queimar protege o jogo: se a carta do topo estivesse marcada ou tivesse sido exposta por acidente, um jogador poderia saber o que vem por aí — por isso ela sai de jogo primeiro. É uma das regras que o dealer segue à risca em qualquer clube.
 
 ---
 
 ## As 3 coisas para lembrar
 
-1. ==**A ordem:**== blinds → pré-flop → flop (3) → turn (1) → river (1) → showdown, com ==quatro rodadas de apostas==.
+1. ==**A ordem:**== blinds → pré-flop → flop (3) → turn (1) → river (1) → showdown, com ==até quatro rodadas de apostas==.
 2. ==**A leitura:**== em cada street, avalie o que você já tem e o que ainda pode fechar — e olhe a mesa inteira, não só a sua mão.
 3. ==g:**A disciplina:**== folde a maioria das mãos no pré-flop, respeite a posição e só aposte grande quando a sua história fizer sentido.
 

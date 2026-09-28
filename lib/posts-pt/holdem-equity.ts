@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 
 </div>
 
-Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) ==r:não é um 50/50== — o par é um favorito modesto, algo como 57/43 offsuit (um pouco mais apertado, ~54/46, quando o AK é suited). E a expressão "coin flip" só serve mesmo para um par baixo contra duas cartas maiores (22 vs AK), onde é genuinamente equilibrado.
+Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) ==r:não é um 50/50== — o par é um favorito modesto, algo como 57/43 offsuit (um pouco mais apertado, ~54/46, quando o AK é suited). Os jogadores chamam qualquer disputa de par contra overcards de "coin flip", mas só um par baixo contra duas cartas maiores (22 vs AK) fica genuinamente perto de 50/50.
 
 ---
 
@@ -84,7 +84,7 @@ Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) =
 
 **Pague quando sua equity for maior que suas pot odds — essa única comparação decide quase todo call no poker.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
 
-Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta, do flop para o turn (9 ÷ 47 = 19,1%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
+Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush limpo com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta, do flop para o turn (9 ÷ 47 = 19,1%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
 
 Mas aqui está o detalhe que quase todo guia pula: **"sua equity é igual à sua fatia do pote" só é verdade quando não há mais apostas.** No momento em que mais dinheiro pode entrar em streets seguintes, 35% brutos não se traduzem automaticamente em 35% do pote final — você pode ser expulso do seu projeto, ou pagar quando acerta o segundo melhor. Essa diferença é exatamente onde entram as [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (dinheiro que você vai ganhar depois) e a realização de equity (abaixo). Equity é onde a matemática *começa*, não onde ela termina.
 
@@ -141,20 +141,20 @@ Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de
 
 É por isso que as equities de all-in pré-flop importam tanto: AA all-in contra KK embolsa seus ==82%== inteiros — sem imposto de realização, sem fold equity, só o número bruto se desenrolando. É também por isso que um "coin flip" (22 vs AK a ~52/48) é um verdadeiro cara-ou-coroa no all-in, mesmo que as mesmas duas mãos jogadas no pós-flop divergissem muito conforme a mesa e quem tem posição.
 
-Um all-in sem mais apostas possíveis é o único ponto do poker onde, com cartas ainda por vir, a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
+Um all-in sem mais apostas possíveis é o ponto mais limpo do poker onde, com cartas ainda por vir, a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
 
 ---
 
 ## Equity multiway: por que sua mão grande encolhe contra uma multidão
 
-**Sua equity cai rápido em potes multiway, porque a mesma pizza de 100% agora é dividida entre mais mãos.** Um par de ases fica em torno de 85% heads-up, mas contra três adversários isso cai para ==r:~64%==, e contra quatro para ~56% — ainda a melhor mão, mas não mais o esmagamento que parece. Em três mãos, a equity *média* é de 33% por definição, porque três jogadores dividem um pote.
+**Sua equity cai rápido em potes multiway, porque a mesma pizza de 100% agora é dividida entre mais mãos.** Pré-flop, contra mãos aleatórias, um par de ases fica em torno de 85% heads-up, mas contra três adversários isso cai para ==r:~64%==, e contra quatro para ~56% — ainda a melhor mão, mas não mais o esmagamento que parece. Em três mãos, a equity *média* é de 33% por definição, porque três jogadores dividem um pote.
 
-![Infográfico de um board Q♣ 9♥ 5♦ 3♠ J♦ mostrando como cada jogador extra no pote corta a equity de todas as mãos](/images/holdem-equity-multiway.webp "Quanto mais jogadores ainda no pote, menor a fatia de cada um — até um par de ases")
+![Infográfico de um board Q♣ 9♥ 5♦ 3♠ J♦ mostrando como cada jogador extra no pote encolhe a fatia média de equity](/images/holdem-equity-multiway.webp "Quanto mais jogadores ainda no pote, menor a fatia média — até um par de ases perde terreno")
 
 Duas coisas pioram multiway, não só sua fatia bruta:
 
 - **A fold equity desaba.** Para ganhar um pote com uma aposta, agora *todo mundo* tem que foldar — muito menos provável com três adversários do que com um. Blefes e semi-blefes finos perdem valor rápido.
-- **A realização cai.** Mais jogadores para agir significa mais formas de tomar um outdraw ou ser expulso da sua mão, então você realiza ainda menos de uma fatia já menor.
+- **A realização cai.** Mais jogadores para agir significa mais apostas e aumentos que podem te tirar da sua mão antes do showdown, então você realiza ainda menos de uma fatia já menor.
 
 A lição prática: mãos que querem um pote multiway são as que fazem os nuts (trincas, suited aces para o nut flush), não pares grandes que jogam melhor heads-up. Quando o campo é grande, dê preferência a mãos cuja equity se sustenta quando a pizza é cortada em cinco.
 
@@ -212,11 +212,11 @@ A. Realização de equity é quanto da sua equity bruta você de fato coleta: eq
 
 **Q. O que é equity no all-in?**
 
-A. Equity no all-in é simplesmente sua equity bruta — sua fatia do pote, com os empates proporcionais — quando nenhuma aposta a mais pode acontecer. Como não há decisões futuras, você realiza 100% dela, então a equity bruta vira a fatia exata do pote que você coleta ao longo do tempo. É o único ponto onde, com cartas ainda por vir, "equity é igual à fatia do pote" é literalmente verdade.
+A. Equity no all-in é simplesmente sua equity bruta — sua fatia do pote, com os empates proporcionais — quando nenhuma aposta a mais pode acontecer. Como não há decisões futuras, você realiza 100% dela, então a equity bruta vira a fatia exata do pote que você coleta ao longo do tempo. É o caso mais claro em que, com cartas ainda por vir, "equity é igual à fatia do pote" é literalmente verdade.
 
 **Q. Por que minha equity cai em potes multiway?**
 
-A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de ases a ~85% heads-up cai para ~64% contra três adversários e ~56% contra quatro adversários. Multiway também corta sua fold equity (todo mundo tem que foldar, não só um jogador) e sua realização (mais jogadores significam mais formas de tomar outdraw), então tanto sua fatia bruta quanto o que você fica dela encolhem.
+A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — pré-flop, contra mãos aleatórias, um par de ases a ~85% heads-up cai para ~64% contra três adversários e ~56% contra quatro adversários. Multiway também corta sua fold equity (todo mundo tem que foldar, não só um jogador) e sua realização (mais jogadores significam mais apostas que podem te tirar da mão antes do showdown), então tanto sua fatia bruta quanto o que você fica dela encolhem.
 
 **Q. O que é EV (valor esperado) no poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -124,7 +124,7 @@ Most guides tell you "3x in position, 4x out of position" and move on. Here's th
 
 The math is deliberately visible because it's where beginners leak: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Two rules that override the multipliers:
 
-- **Never 3-bet tiny out of position.** A small OOP 3-bet lays your opponent a great price to call and outplay you with position — the exact thing you're trying to avoid. Use the full 4x+.
+- **At normal stack depths, never 3-bet tiny out of position.** A small OOP 3-bet lays your opponent a great price to call and outplay you with position — the exact thing you're trying to avoid. Use the full 4x+.
 - **Sizing isn't a law.** Size *down* against players who over-fold (you're bluffing cheaper) and size *up* and go pure-value against calling stations who never fold. Rake and stack depth shift it too.
 
 In tournaments with shallow stacks, the whole calculus changes: at roughly **10–25 big blinds**, many hands become a **3-bet all-in (a "shove")** rather than a small re-raise, because there isn't room to raise-and-fold. Shift from min-3-betting toward jamming as you get short — though against strong fields, keep some small non-all-in 3-bets in the mix.
@@ -153,7 +153,7 @@ The big takeaway: **flatting is legitimate in position** — modern solvers keep
 
 ## The Squeeze Play: 3-Betting a Raiser *and* a Caller
 
-![Three players' chip stacks pushed toward the middle of the green felt as one player slides a larger re-raise forward, squeezing an open-raiser and a caller](/images/holdem-3bet-squeeze.webp "A squeeze punishes an open-raiser and a flat-caller at once — the extra dead money makes even a light 3-bet profitable")
+![Three players' chip stacks pushed toward the middle of the green felt as one player slides a larger re-raise forward, squeezing an open-raiser and a caller](/images/holdem-3bet-squeeze.webp "A squeeze punishes an open-raiser and a flat-caller at once — the extra dead money raises the payoff of even a light 3-bet")
 
 A **squeeze play** is a 3-bet made after there's already been an open-raise *and* at least one caller. It's called a squeeze because you put both opponents in a vice: the original raiser now has to worry about the caller behind, and the caller — who just showed a hand not strong enough to re-raise — rarely wants to continue against your aggression.
 
@@ -175,13 +175,13 @@ Here's the half of 3-betting that almost every article skips: **you'll be on the
 - **Call** — with hands that flop well and have the equity or position to continue: pocket pairs looking to set-mine, suited broadways, and strong hands that don't want to bloat the pot into a 4-bet war.
 - **Fold** — everything else. Most of your opening range should simply give up to a 3-bet; that's normal, not weakness.
 
-How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit by bluffing any two cards. It's ==pot ÷ (pot + bet)== — where *pot* is what's in the middle before the 3-bet and *bet* is what the 3-bettor is **adding** (from a blind, that's the raise minus the chips already posted) — which against typical 3-bet sizes lands around **a third of your range** in a vacuum (a 3x 3-bet from the button: 4.5bb pot ÷ (4.5bb + 9bb) ≈ 33%). But here's the exploit that wins money at real tables. It reads cleanest from the other chair, so swap seats for the table below: the stat below is how often **they** fold when **you** 3-bet them.
+How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit automatically by bluffing any two cards (the formula treats a bluff as having no equity when called). It's ==pot ÷ (pot + bet)== — where *pot* is what's in the middle before the 3-bet and *bet* is what the 3-bettor is **adding** (from a blind, that's the raise minus the chips already posted) — which against typical 3-bet sizes lands around **a third of your range** in a vacuum (a 3x 3-bet from the button: 4.5bb pot ÷ (4.5bb + 9bb) ≈ 33%). But here's the exploit that wins money at real tables. It reads cleanest from the other chair, so swap seats for the table below: the stat below is how often **they** fold when **you** 3-bet them.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Villain's fold-to-3-bet stat | What it tells you | Your adjustment |
 |:---:|:---|:---|
-| **~35% (rarely folds)** | A calling station — they call with almost anything, so a bluff rarely gets enough folds to profit | 3-bet them **for value only**, stop bluffing, and value-bet relentlessly |
+| **~35% (rarely folds)** | Most often a calling station — they continue with almost anything, so a bluff rarely gets enough folds to profit | 3-bet them **for value only**, stop bluffing, and value-bet relentlessly |
 | **~55% (balanced)** | A thinking regular | Play close to GTO — mix value and blocker bluffs |
 | **~70%+ (folds too much)** | An exploitable nit | 3-bet them **light far more often** — they hand you the pot |
 
@@ -239,7 +239,7 @@ A. Because the name counts bets in the sequence, not raises. The big blind is a 
 
 **Q. What is the difference between a 3-bet and a 4-bet?**
 
-A. A 3-bet is the first re-raise (over an open-raise); a 4-bet is the next re-raise, made over a 3-bet. So the ladder goes: open-raise (2nd bet) → 3-bet (3rd bet) → 4-bet (4th bet) → 5-bet (usually all-in). A 4-bet represents a very strong, polarized range.
+A. A 3-bet is the first re-raise (over an open-raise); a 4-bet is the next re-raise, made over a 3-bet. So the ladder goes: open-raise (2nd bet) → 3-bet (3rd bet) → 4-bet (4th bet) → 5-bet (usually all-in). A 4-bet represents a very strong range — often polarized between premiums and a few bluffs.
 
 **Q. What hands should you 4-bet with, and how much?**
 
@@ -267,7 +267,7 @@ A. A linear (merged) range is one solid block of your best hands — used agains
 
 **Q. How much should you 3-bet?**
 
-A. Around 3x the open in position and 4–4.5x out of position. So against a 3 big blind open, make it about 9bb in position or 12bb out of position. Add roughly one extra open-raise per caller when squeezing. Don't 3-bet small out of position — it gives your opponent a cheap, easy call in position.
+A. Around 3x the open in position and 4–4.5x out of position. So against a 3 big blind open, make it about 9bb in position or 12bb out of position. Add roughly one extra open-raise per caller when squeezing. At normal stack depths, don't 3-bet small out of position — it gives your opponent a cheap, easy call in position.
 
 **Q. What is a good 3-bet percentage?**
 
@@ -275,7 +275,7 @@ A. For a solid player, an overall 3-bet frequency around 6–10% is healthy, wit
 
 **Q. What is a squeeze play?**
 
-A. A squeeze is a 3-bet made after an open-raise and at least one caller. The extra dead money in the pot makes it profitable, and it pressures both opponents at once — the raiser and the capped flat-caller. Size squeezes bigger than a normal 3-bet, adding about one extra open-raise for each caller.
+A. A squeeze is a 3-bet made after an open-raise and at least one caller. The extra dead money in the pot raises the reward when a squeeze works, and the play pressures both opponents at once — the raiser and the capped flat-caller. Size squeezes bigger than a normal 3-bet, adding about one extra open-raise for each caller.
 
 **Q. How do you respond to a 3-bet?**
 
@@ -295,7 +295,7 @@ A. As stacks get short — roughly 10–25 big blinds — many hands play best a
 
 1. **A 3-bet is the first pre-flop re-raise** — third bet in the sequence, because the blind counts as bet one.
 2. **Build two ranges:** a value core (QQ+, AK) you want called, and suited blocker bluffs (A5s and friends) chosen for blockers and playability.
-3. **Size it ~3x in position, ~4x out** — and never small out of position.
+3. **Size it ~3x in position, ~4x out** — and, at normal stack depths, not small out of position.
 4. **Match shape to spot:** linear vs wide/weak opens (and from the small blind when facing a raise), polarized vs tight opens and from the big blind.
 5. **Facing a 3-bet, most hands fold** — 4-bet premiums, call the playable ones, and fold more than "balanced" against opponents who never bluff.
 6. **Then the flop arrives.** A 3-bet pot plays nothing like a single-raised one — on this article's numbers (3bb open, 9bb 3-bet, 100bb deep) the pot is roughly 2.6× bigger (19.5bb vs the 7.5bb a heads-up flat would build; a larger out-of-position 3-bet pushes it toward 3.5×) and the SPR drops to about 4.7. The three-bettor still often bets its [entire range on the flop](/en/blog/3bet-pot-cbet) — because of the shape of its range, not because the stack is shallow.

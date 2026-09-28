@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is rarer: across all seven cards to the river, 3.03% versus 4.62% for the straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -77,7 +77,7 @@ A straight only needs five ranks in a row, and ==**the suits don't matter**==. T
 
 ## 3 Board Spots That Still Fool Players
 
-![Board showing 8♥ 7♥ 6♥ 5♠ A♣ — three hearts on board means a flush is live even if you hold a straight](/images/holdem-flush-vs-straight-board.webp "Three suited cards on board — flush draw live against your straight")
+![Board showing 8♥ 7♥ 6♥ 5♠ A♣ — three hearts on board means a flush is live even if you hold a straight](/images/holdem-flush-vs-straight-board.webp "Three suited cards on board — a flush is possible against your straight")
 
 Knowing the rule isn't the same as reading it live — that skill is exactly what [reading the board](/en/blog/holdem-reading-the-board) trains. These are the three spots where the mistake actually happens.
 
@@ -168,7 +168,7 @@ If your straight uses some cards and your flush uses others, you don't add them 
 
 ## Are Poker Hands Ranked Differently in Short Deck?
 
-Yes — Short Deck (6+) Hold'em is the one common format that reorders these hands. In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The principle never changes: ==the rarer hand wins==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
+Yes — Short Deck (6+) Hold'em is the one common format that reorders these hands. In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The logic is the same as with the full deck: of those two hands, ==the rarer one ranks higher==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
 
 ---
 

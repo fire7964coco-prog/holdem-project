@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -28,7 +28,7 @@ Esse hábito se chama contar **outs** — [a verdadeira resposta do poker para "
 :::stripe
 9 | Outs num projeto de flush
 8 | Outs num projeto aberto de sequência
-×4 / ×2 | Multiplique os outs no flop / turn para sua %
+×4 / ×2 | Multiplique os outs no flop (duas cartas por vir) / turn para uma % aproximada
 :::
 
 ---
@@ -174,10 +174,10 @@ Três situações para treinar seu olho:
 :::card
 ♠ | O flush que não é nut | Com 8♠7♠ em K♠9♠2♣, você tem 9 "outs" de espadas — mas se vier uma espada e um adversário estiver no mesmo projeto de flush com uma espada mais alta, você faz flush e ainda perde. Desconte seus outs quando você não está com projeto do nut flush
 🂮 | O board pareado | Um projeto de flush num board tipo J♥8♥8♣ parece 9 outs limpos, mas o board já está pareado — um full house feito pode estar esperando, então algumas das suas cartas de flush já nascem mortas
-🃁 | Overcards contra força | Duas overcards (A-K em Q-8-3) contam como 6 outs no papel, mas se um aumento grande grita trinca ou dois pares, parear seu ás muitas vezes não é bom — conte 3, talvez 4, não 6
+🃁 | Overcards contra força | Duas overcards (A-K em Q-8-3) contam como 6 outs no papel, mas se um aumento grande grita trinca ou dois pares, parear seu ás muitas vezes não é bom — conte no máximo 3, não 6, e nenhum quando você tiver certeza da trinca ou dos dois pares
 :::
 
-Você raramente sabe o desconto exato, e tudo bem. O movimento é direcional: quando a mesa ou a ação te diz que um out pode não vencer, corte a contagem *para baixo* antes de converter. Um jogador que conta 9 outs numa mesa pareada e paga uma aposta do tamanho do pote está pagando preço cheio por um projeto que na verdade vale seis. Ler quais outs são limpos é uma habilidade de textura de mesa — construa-a com [como ler a mesa](/pt/blog/holdem-reading-the-board).
+Você raramente sabe o desconto exato, e tudo bem. O movimento é direcional: quando a mesa ou a ação te diz que um out pode não vencer, corte a contagem *para baixo* antes de converter. Um jogador que conta 9 outs numa mesa pareada e paga uma aposta do tamanho do pote está pagando preço cheio por um projeto que na verdade vale menos que isso. Ler quais outs são limpos é uma habilidade de textura de mesa — construa-a com [como ler a mesa](/pt/blog/holdem-reading-the-board).
 
 ---
 
@@ -194,7 +194,7 @@ A. Outs são as cartas que restam no baralho e melhoram sua mão para uma prová
 
 **Q. O que significa ter 9 outs no poker?**
 
-A. Significa que nove cartas ainda no baralho completam a sua mão — na maioria das vezes um projeto de flush (as 13 cartas de um naipe menos as 4 que você já vê). Nove outs dão cerca de 35% de chance de acertar até o river a partir do flop — um número de duas cartas, que pressupõe que não vem mais aposta — ou 19,1% na carta única do turn. A regra vale para qualquer contagem: mais outs significam mais chance de acertar, e multiplicar seus outs por 4 no flop (ou por 2 no turn) dá a porcentagem na hora.
+A. Significa que nove cartas ainda no baralho completam a sua mão — na maioria das vezes um projeto de flush (as 13 cartas de um naipe menos as 4 que você já vê). Nove outs dão cerca de 35% de chance de acertar até o river a partir do flop — um número de duas cartas, que pressupõe que não vem mais aposta — ou 19,1% na carta única do turn. A lógica vale para qualquer contagem: mais outs significam mais chance de acertar, e multiplicar seus outs por 4 no flop (ou por 2 no turn) dá uma porcentagem aproximada na hora (o ×4 exagera em projetos grandes: 15 outs dão 54%, não 60%).
 
 **Q. Como se conta outs no poker?**
 
@@ -218,7 +218,7 @@ A. Cartas que completam sua mão mas ainda podem perder — uma carta de flush q
 
 **Q. Quantos outs tem um projeto de flush mais um projeto de sequência?**
 
-A. 15, não 17. Um projeto de flush são 9 outs e um projeto aberto de sequência são 8, mas duas das cartas de sequência também são do seu naipe e já estão contadas no flush — então você subtrai a sobreposição. Quinze outs é favorito para acertar até o river (cerca de 54%), mas só se você for ver as duas cartas; se ainda vier uma aposta no turn, quem precifica seu call é o número de uma carta, 32%.
+A. 15, não 17. Um projeto de flush são 9 outs e um projeto aberto de sequência são 8, mas duas das cartas de sequência também são do seu naipe e já estão contadas no flush — então você subtrai a sobreposição. Quinze outs é favorito para acertar até o river (cerca de 54%), mas só se você for ver as duas cartas; se ainda vier uma aposta no turn, quem precifica seu call é o número de uma carta, 32% — e só os outs que realmente vencem entram em qualquer um dos dois números.
 
 **Q. Você conta as cartas do adversário ao contar outs?**
 

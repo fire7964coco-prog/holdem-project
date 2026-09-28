@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em Betting Actions: Check, Call, Raise, Fold",
   seoTitle: "Check, Call or Fold? — Poker Betting Actions & Raise Rules",
   desc: "Action's on you and your mind goes blank? Learn what a check, call, raise and fold mean in poker, the min-raise rule, and how many times you can re-raise.",
-  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
+  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the last full bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -37,7 +37,7 @@ Texas Hold'em has only ==5 betting actions==, but the rules around them (when ch
 :::stripe
 5 | betting actions: check, bet, call, raise, fold
 1 BB | minimum opening bet in No-Limit Hold'em
-= last raise | minimum re-raise size (the increment rule)
+= last full raise | minimum re-raise size (the increment rule)
 No cap | on re-raises in No-Limit — you can raise until someone is all-in
 :::
 
@@ -51,7 +51,7 @@ Every single decision you make at a poker table is one of these five:
 | Check | Only when there is no live bet in front of you (preflop: as the big blind, or as the player who posted a live straddle) | Free — you pass without adding chips |
 | Call | After someone has bet or raised | You match the current bet exactly |
 | Bet | First wager of the round | Your chosen amount (minimum = 1 big blind) |
-| Raise | After someone has bet | At least the size of the previous bet or raise on top |
+| Raise | After someone has bet | At least the size of the last full bet or raise on top |
 
 Going ==all-in== is not a separate sixth action — it's a bet, call, or raise for every chip you have left. More on that below.
 
@@ -84,7 +84,7 @@ For the full street-by-street picture of who acts when, see the [Texas Hold'em o
 
 ## What Is a Call in Poker? (Check vs Call)
 
-A call means you ==match the current bet exactly== to stay in the hand. Someone bets $10, you call $10 — no more, no less.
+A call means you ==match the current bet exactly== to stay in the hand. Someone bets $10, you call $10 — no more, no less. (With fewer than $10 left you can still call: you go all-in for what you have.)
 
 Check vs call is the single most common beginner mix-up, so here's the clean split:
 
@@ -115,7 +115,7 @@ One rule of live etiquette: don't fold ==out of turn==. Wait until the action re
 In No-Limit Hold'em (the format you'll almost always play):
 
 - **Minimum bet**: 1 big blind
-- **Minimum raise (the min-raise)**: at least ==the size of the previous bet or raise== added on top
+- **Minimum raise (the min-raise)**: at least ==the size of the last full bet or raise== added on top
 - **Maximum**: your entire stack — that's the "no limit"
 
 Two worked examples:
@@ -125,7 +125,7 @@ Two worked examples:
 | Flop | Player bets $6 | $6 more → $12 total |
 | Preflop (blinds $1/$2) | Player raises to $6 (a raise of $4 over the $2 blind) | $4 more → $10 total |
 
-The key insight: the min-raise matches the ==increment== of the last bet or raise, not the big blind. Preflop, the big blind counts as the opening bet, which is why the smallest open-raise is to 2 big blinds.
+The key insight: the min-raise matches the ==increment== of the last full bet or raise, not the big blind. ("Full" matters once someone is all-in for less than a raise: after a $10 bet and a $14 all-in, the increment to match is still $10, so the smallest raise is to $24.) Preflop, the big blind counts as the opening bet, which is why the smallest open-raise is to 2 big blinds.
 
 Two live-poker rules that come with raising:
 
@@ -142,7 +142,7 @@ In **No-Limit Hold'em: there is no cap**. You can raise, get re-raised, and rais
 
 Two boundaries still apply:
 
-- Each re-raise must meet the ==min-raise increment rule== above
+- Each re-raise must meet the ==min-raise increment rule== above — the one exception is an all-in, which may be for less
 - ==r:You cannot raise your own bet.== If you bet and everyone just calls, the round ends — you only get to raise again if someone raises *you* first
 
 In **Fixed-Limit** games every round is capped (a "capped" pot). The WSOP tournament rules set the cap at ==one bet plus four raises== (Rule 100.b) — and the exception runs the other way from what most people expect: ==r:the cap stays in place even when only two players are left in the hand==. It lifts only once the **entire tournament** is heads-up. Cash games run on their own house rules, so ask the dealer.
@@ -151,7 +151,7 @@ In **Fixed-Limit** games every round is capped (a "capped" pot). The WSOP tourna
 
 ## What Does Going All-In Mean?
 
-All-in means betting ==every chip you have left==. You can do it any time the action is on you — as a bet, a call, or a raise.
+All-in means betting ==every chip you have left==. You can do it on your turn as a bet, a call, or a raise — whichever of those is open to you at that point.
 
 If your all-in is *smaller* than the current bet, you're not folded: you simply compete for a ==main pot== capped at your contribution, while the extra chips from bigger stacks form a ==side pot== you can't win. (If someone is even shorter than you, you still play for the side pot they can't reach — each all-in caps only its own layer.) And an all-in that's *less than a full min-raise* generally does not reopen raising for players who already acted — a subtle rule that surprises even regulars.
 
@@ -177,7 +177,7 @@ I play a weekly low-stakes live game, and the same action errors repeat like clo
 
 ### Mistake 1 — Calling when you could check
 
-First to act on the flop, nobody has bet, and a newer player pushes chips in **silently**, "to call." There's nothing to call: under ==WSOP Rule 90.a== a bet is made by declaration *or* by pushing out chips — he just bet without meaning to. Had he *said* "call," ==Rule 90.b.1== would have made it a check instead. When the street is unopened, check and see the card for free.
+First to act on the flop, nobody has bet, and a newer player pushes chips in **silently**, "to call." There's nothing to call: under ==WSOP Rule 90.a== a bet is made by declaration *or* by pushing out chips — he just bet without meaning to. Had he *said* "call," ==Rule 90.b.1== would have made it a check instead. When the street is unopened, check — if nobody bets behind you, you see the next card for free.
 
 ### Mistake 2 — "I call... actually, raise!"
 
@@ -206,11 +206,11 @@ A. Yes — if someone bets after your check, you may raise when the action retur
 
 **Q. Can you raise your own bet?**
 
-A. No. If you bet and opponents only call, you cannot add more — the betting round ends. You can only raise again if another player raises you first, which reopens the action.
+A. No. If you bet and opponents only call, you cannot add more — the betting round ends. You can only raise again if another player puts in a full raise over you first — that reopens the action; an all-in for less than a full raise does not.
 
 **Q. How many times can you raise in Texas Hold'em?**
 
-A. In No-Limit there is no cap on the number of raises — re-raising can continue until a player is all-in, as long as each raise meets the minimum increment. The WSOP tournament rules cap a Fixed-Limit round at one bet plus four raises (Rule 100.b), and that cap holds even when the hand is down to two players.
+A. In No-Limit there is no cap on the number of raises — re-raising can continue until a player is all-in, as long as each raise meets the minimum increment (an all-in may be for less). The WSOP tournament rules cap a Fixed-Limit round at one bet plus four raises (Rule 100.b), and that cap holds even when the hand is down to two players — it lifts only once the whole tournament is heads-up.
 
 **Q. Can you fold out of turn?**
 

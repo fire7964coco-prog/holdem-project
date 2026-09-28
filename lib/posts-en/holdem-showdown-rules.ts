@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -40,7 +40,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 |--------------------|-----------------|
 | Someone bet or raised on the river | ==The last player to bet or raise== shows first — unless it was an all-in in a tournament (see below) |
 | Everyone checked the river | First active player left of the dealer button shows first |
-| All-in on earlier street (no river betting) | Tournament: every hand tabled without delay once all betting is complete (TDA 2024 Rule 16). Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
+| All-in on an earlier street (betting ended before the river) | Tournament: every hand tabled without delay once all betting is complete (TDA 2024 Rule 16). Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
 
 </div>
 
@@ -60,13 +60,13 @@ Once the last aggressor shows their hand, the other players can either:
 
 ==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. That request — asking the dealer to turn up a mucked hand — is the **"I want to see that hand"** rule. In tournaments ==TDA 2024 Rule 18== draws it tightly: anyone who no longer holds cards at showdown, or who mucked face-down, forfeits the right to ask. The right is inalienable only for a player who called the river bet and either tabled or retained their cards, and only for the ==last aggressor's== hand — the one they paid to see. Everything else is at the tournament director's discretion. Cash games run on house rules, and they are not automatically looser: under the WSOP Live Action rules a request to see an unexposed hand needs suspected collusion **and** a floor person present (==Live Action Rule 147==). (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
 
-Practical rule: ==as the last aggressor you turn your cards over — even on a bluff that got called.== Mucking face-down is the caller's option, taken after seeing the bettor's hand. Muck fast as the bettor and you lose twice: in a tournament the caller who paid to see it can demand your hand anyway (==TDA 2024 Rule 18==) — in a WSOP cash game they cannot, absent suspected collusion and a floor person (Live Action Rule 147) — and because cards speak, plenty of pots have been thrown away by players whose ace-high was actually ahead.
+Practical rule: ==as the last aggressor, turn your cards over — even on a bluff that got called.== The caller then shows or mucks after seeing your hand. As the bettor you may muck instead of showing and give up the pot, but muck fast and you lose twice: in a tournament the caller who paid to see it can demand your hand anyway (==TDA 2024 Rule 18==) — in a WSOP cash game they cannot, absent suspected collusion and a floor person (Live Action Rule 147) — and because cards speak, plenty of pots have been thrown away by players whose ace-high was actually ahead.
 
 ---
 
 ## Showdown Order When Everyone Checked the River
 
-If nobody bet on the river (everyone checked), the showdown starts from the **first active player left of the dealer button** and proceeds clockwise.
+If nobody bet on the river (everyone checked) and no one is all-in, the showdown starts from the **first active player left of the dealer button** and proceeds clockwise.
 
 Example: Button, small blind, and big blind see the river. SB checks, BB checks, Button checks. Showdown starts from the SB (first active player left of the button). SB can show or muck. Then BB. Then the button last.
 
@@ -84,7 +84,7 @@ In a **tournament**, when a player goes all-in and there's no more betting possi
 |----------------|---------------|
 | Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand tabled without delay once all betting is complete. Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
 | All-in bet on the river gets called | Cash: the all-in bettor shows first as last aggressor. Tournament: no show-first order at all — under TDA 2024 Rule 16 every hand goes up at once and ==r:nobody may muck here== |
-| Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
+| Multiple all-ins creating multiple side pots | Each pot resolved separately. Tournament: every involved hand is tabled. Cash: to win any part of a pot a player must show their cards (WSOP Live Action Rule 143) |
 
 </div>
 
@@ -112,7 +112,7 @@ Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You 
 
 Slow rolling is ==deliberately taking a long time to show a very strong hand when you know you've won==.
 
-You have the nuts. The opponent shows a strong hand. You pause, pretend to think, peek at your cards slowly, make everyone wait — then flip the winner. Technically legal. Universally disliked.
+You have the nuts. The opponent shows a strong hand. You pause, pretend to think, peek at your cards slowly, make everyone wait — then flip the winner. No rule bans it by name, but it is not protected either: taunting an opponent through theatrics (WSOP Tournament Rule 47) and persistent delay of the game (TDA 2024 Rule 70) can both draw a penalty. And it is universally disliked.
 
 ![Slow rolling in poker — other players frustrated as one player deliberately delays showing winning hand](/images/holdem-showdown-slow-roll.webp)
 
@@ -163,7 +163,7 @@ At showdown — once all betting is complete — there's no rule against flippin
 
 **Q. Who shows cards first at poker showdown?**
 
-A. The last player to make an aggressive action (bet or raise) on the final betting round must show first. If the final round was checked through by all players, the first active player to the left of the dealer button shows first, and the action proceeds clockwise.
+A. When nobody is all-in, the last player to make an aggressive action (bet or raise) on the final betting round must show first. If the final round was checked through by all players, the first active player to the left of the dealer button shows first, and the action proceeds clockwise. All-in pots follow their own rule — see the all-in question below.
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
@@ -171,11 +171,11 @@ A. Yes — if you were the last bettor or raiser on the river, you must show fir
 
 **Q. Can you muck at showdown without showing?**
 
-A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exceptions are tournament rules: if you made the last bet on the river and got called, the caller who paid to see your hand can demand it (TDA 2024 Rule 18-B — in a WSOP cash game they can't, absent suspected collusion), and once a player is all-in and all betting action is complete, every hand in the main and side pots must be tabled — nobody may muck (TDA 2024 Rule 16). Never muck before the dealer reads both hands if there's any uncertainty about who won.
+A. Yes — but mucking gives up the pot, so do it only when you are sure you lost. Once the winner's hand is shown, losing players can muck face-down. The exceptions are tournament rules: if you made the last bet on the river and got called, the caller who paid to see your hand can demand it, provided they still hold or have tabled their own cards (TDA 2024 Rule 18-B — in a WSOP cash game they can't, absent suspected collusion), and once a player is all-in and all betting action is complete, every hand in the main and side pots must be tabled — nobody may muck (TDA 2024 Rule 16). Never muck before the dealer reads both hands if there's any uncertainty about who won.
 
 **Q. What is slow rolling in poker and why is it bad?**
 
-A. Slow rolling is deliberately delaying showing a winning hand you already know is the best. It's legal but universally disliked because it's seen as deliberately humiliating the opponent. If you hold the nuts or a clear winner, flip your cards immediately. The speed of your show says a lot about your character at the table.
+A. Slow rolling is deliberately delaying showing a winning hand you already know is the best. No rule bans it by name, but it is universally disliked because it's seen as deliberately humiliating the opponent — and taunting or persistent delay of the game can be penalized (WSOP Tournament Rule 47 · TDA 2024 Rule 70). If you hold the nuts or a clear winner, flip your cards immediately. The speed of your show says a lot about your character at the table.
 
 **Q. In an all-in situation, who shows their cards first?**
 

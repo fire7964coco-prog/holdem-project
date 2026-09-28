@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -88,7 +88,7 @@ That's my 8-8-8-A-K hand: my J♠ 10♥ and his 5♣ 2♦ both played the board'
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
-**And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is dead even when it would have chopped — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
+**And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is normally dead even when it would have chopped (only a hand that is still clearly identifiable can be retrieved, and only at the floor's discretion; WSOP Tournament Rule 109) — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
 
 :::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar for a call — and a low one for a fold: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three**, and on a river where the board can still be beaten, that is the normal case.]:::
 
@@ -104,7 +104,7 @@ These are the misconceptions behind most "wait, why is it a split?!" arguments.
 ==r:A spade flush does **not** beat a heart flush.== Texas Hold'em has no suit ranking — ==identical ranks split, full stop==. (This trips up players coming from games that *do* rank suits.)
 
 ### ❌ "My hole cards are higher, so I win"
-Board 9♠ 8♦ 7♣ 6♥ 5♠ — a made straight. You hold A♠ K♦; your opponent holds 2♣ 3♥. ==r:**Split.**== Both of you play the board's 9-8-7-6-5, because ==r:your big hole cards never enter the best five==. A high hole card only matters when it actually plays as a kicker — [what a kicker is and when it plays](/en/blog/holdem-kicker) draws that line precisely.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ — a made straight. You hold A♠ K♦; your opponent holds 2♣ 3♥. ==r:**Split.**== Both of you play the board's 9-8-7-6-5, because ==r:your big hole cards never enter the best five==. A high hole card only matters when it actually plays, as part of the hand itself or as a kicker — [what a kicker is and when it plays](/en/blog/holdem-kicker) draws that line precisely.
 
 ### ❌ "I used both my cards and they used one"
 ==r:How many hole cards you use is irrelevant.== The only thing that counts is the strongest five of seven. ==g:If both players land on the same best five, it's a chop no matter how you got there.==
@@ -188,7 +188,7 @@ A. Yes. If three or more players all hold the identical best five-card hand, the
 
 **Q. How are split pots handled when someone is all-in?**
 
-A. The pot breaks into a main pot and side pots; each is awarded or chopped separately based on the best hand among the players eligible for that specific pot.
+A. When players are all-in for different amounts and others keep betting, the pot breaks into a main pot and one or more side pots; each is awarded or chopped separately based on the best hand among the players eligible for that specific pot.
 
 **Q. How do you calculate a side pot?**
 

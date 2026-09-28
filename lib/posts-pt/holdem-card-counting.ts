@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -45,11 +45,11 @@ Se você está imaginando um running count de altas e baixas como nos filmes, es
 
 ## Por que a contagem de cartas do blackjack não funciona no poker
 
-**A contagem de blackjack só funciona porque um shoe vai sendo jogado ao longo de muitas mãos enquanto você tenta vencer um dealer de regras fixas — o poker quebra as três condições.** Eis exatamente por que o método não se aplica:
+**A contagem de blackjack funciona porque um shoe vai sendo jogado ao longo de muitas mãos enquanto você tenta vencer um dealer de regras fixas — o poker quebra as três condições.** Eis exatamente por que o método não se aplica:
 
 :::card
-🔀 | O baralho reinicia toda mão | A contagem de blackjack precisa de um shoe jogado ao longo de dezenas de mãos para a informação se acumular. O poker reembaralha a cada mão, então nada é carregado adiante — cada mão começa de um baralho cheio e aleatório
-🙈 | Poucas cartas ficam expostas | As hole cards de cada jogador ficam viradas para baixo. Você vê as suas duas cartas, o board compartilhado e o que for mostrado no showdown — um punhado de cartas — nunca o suficiente para rastrear a composição do baralho
+🔀 | O baralho reinicia toda mão | A contagem de blackjack se alimenta de um shoe jogado ao longo de muitas mãos, em que a informação se acumula. O poker reembaralha a cada mão, então nada é carregado adiante — cada mão começa de um baralho cheio e aleatório
+🙈 | Poucas cartas ficam expostas | As hole cards de cada jogador ficam viradas para baixo. Você vê as suas duas cartas, o board compartilhado e o que for mostrado no showdown — um punhado de cartas — o suficiente para contar outs na mão que você está jogando, nunca o suficiente para um running count no estilo do blackjack
 👥 | Você joga contra adversários, não contra a casa | Não há um dealer fixo do qual ganhar vantagem. Um "baralho rico em cartas altas" não significa nada quando um par de ases é premium de qualquer jeito — você ganha tendo uma mão melhor ou tomando uma decisão melhor, não por uma contagem favorável
 :::
 
@@ -127,7 +127,7 @@ No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cart
 :::steps
 Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance — só outs limpos — vencer o preço, ou quando as implied odds cobrirem a diferença
 Pergunte o que a sua mão bloqueia | Antes de blefar, veja se você tem uma carta que torna a mão de call mais forte dele impossível ou menos provável
-Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter — mas só enxergadas por acaso: tentar deliberadamente ver as cartas de outro jogador não faz parte deste método — só exposição acidental
+Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Uma carta que você já viu está fora do baralho (não pode sair no board, e nenhum outro jogador pode estar com ela) — mas só vale a carta vista por acaso: tentar deliberadamente ver as cartas de outro jogador não faz parte deste método — só exposição acidental
 :::
 
 Faça isso por algumas sessões e vira automático — você vai estar "contando cartas" em toda mão, só que à maneira do poker. O próximo passo é transformar essas contagens em calls e folds com [pot odds](/pt/blog/holdem-pot-odds), a matemática que te diz se os seus outs valem o preço.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -117,7 +117,7 @@ O número de completar se divide por street, e isso importa no instante em que a
 - **Flop → turn (uma carta):** 9 ÷ 47 = 19,1%.
 - **Turn → river (uma carta):** 9 ÷ 46 = 19,6%.
 
-Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do seu naipe e precisa que tanto o turn quanto o river sejam do seu naipe — sai por volta de 4,2%, valendo mais ou menos um out extra de equity. Não é motivo pra pagar, mas um desempate real em spots apertados. Pra transformar qualquer um desses num call-ou-fold, passe o número por [como calcular pot odds](/pt/blog/holdem-pot-odds).
+Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do seu naipe e precisa que tanto o turn quanto o river sejam do seu naipe — sai por volta de 4,2% — mais ou menos o que um out extra soma à sua chance de acertar. Não é motivo pra pagar, mas um desempate real em spots apertados. Pra transformar qualquer um desses num call-ou-fold, passe o número por [como calcular pot odds](/pt/blog/holdem-pot-odds).
 
 ---
 
@@ -131,7 +131,7 @@ Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do s
 Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Esse número vale de 54s até JTs, os conectores que fecham sequência pelas duas pontas; mãos na borda do baralho entram em menos sequências, caindo até 0,33% no A-K. Bem mais frequente é flopar um **projeto**:
 
 - **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% do flop pro turn.
-- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% do flop pro turn. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
+- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% do flop pro turn. Completa mais ou menos a metade das vezes que um open-ended completa, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
 
 Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em cinco ou seis numa street só.
 

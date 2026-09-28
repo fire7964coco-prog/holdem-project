@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -245,7 +245,7 @@ A. No. You make the best five-card hand from any combination of your two hole ca
 
 **Q. What does "playing the board" mean in Texas Hold'em?**
 
-A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP tournament Rule 75==, TDA 2024 Rule 19) — push them into the muck unseen and you get nothing.
+A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP tournament Rule 75==, TDA 2024 Rule 19) — push them into the muck unseen and you normally get nothing (the floor may retrieve a hand only while it is still clearly identifiable; WSOP Tournament Rule 109).
 
 **Q. Can the board be the best hand for everyone?**
 

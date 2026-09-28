@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -87,7 +87,7 @@ Du hältst ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣ 3♠== Board – den Nut-F
 - **Zuerst die Pot Odds:** Du bekommst 150:50, also 3:1, du brauchst also **25%** Equity. Dein Flush trifft am River nur in ==r:19,6%== der Fälle (9 Outs ÷ 46 ungesehene Karten – wir zählen bewusst nur die Flush-Outs; dein Ass oder deinen König zu paaren reicht nicht sicher zum Sieg, die Overcards sind also keine sauberen Outs). 19,6% ist weniger als 25%, der sofortige Preis sagt also ==r:Fold.==
 - **Jetzt die Implied Odds:** x = (Call ÷ Trefferquote) − (Pot + Call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:etwa $55.== Das ist das Extra, das du am River gewinnen musst, wenn dein Flush ankommt.
 
-Die Frage lautet also nicht „sollte ich $50 callen?“ Sie lautet: „**wenn ein Herz trifft, kann ich mindestens $55 mehr gewinnen?**“ Gegen einen tiefen Gegner, der eine River-Bet mit Top Pair auszahlt, ist das leicht – du callst. Gegen jemanden mit nur noch $40 hinter sich, oder gegen jemanden, der dichtmacht, sobald ein drittes Herz aufs Board kommt, kannst du nicht – also foldest du. (Gegen ein Set ist es noch schwerer: 2♥ und 3♥ paaren das Board und können das Set zum Full House auffüllen – es bleiben 7 saubere Outs und ein x von etwa $129.)
+Die Frage lautet also nicht „sollte ich $50 callen?“ Sie lautet: „**wenn ein Herz trifft, kann ich mindestens $55 mehr gewinnen?**“ Gegen einen tiefen Gegner, der eine River-Bet mit Top Pair auszahlt, ist das leicht – du callst. Gegen jemanden mit nur noch $40 hinter sich, oder gegen jemanden, der dichtmacht, sobald ein drittes Herz aufs Board kommt, kannst du nicht – also foldest du. (Gegen ein Set ist es noch schwerer: 2♥ und 3♥ paaren das Board und können das Set zum Full House auffüllen – es bleiben 7 saubere Outs – 7 ÷ 44, weil auch die zwei Karten des Sets aus dem Deck fehlen – und ein x von etwa $114.)
 
 :::note
 Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich nie geändert. Was sich änderte, ist, wie viel Geld noch zu gewinnen ist. Das sind Implied Odds in einem Satz.

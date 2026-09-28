@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. A carta alta usa 4 kickers, um par 3, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -116,7 +116,7 @@ O board é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás
 - Você tem ==b:2♣ 3♦==. Suas melhores cinco são a sequência da mesa; o 2 e o 3 não somam nada.
 - Seu adversário tem ==b:4♥ 5♦==. Mesma história — a sequência da mesa também é a melhor cinco dele.
 
-Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote== — mas só se virarem as cartas para cima; quem dá muck não leva nada, nem aqui (regra 19 da TDA, edição de 2024). Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — e é o único ponto em que uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
+Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote== — mas só se virarem as cartas para cima; quem dá muck normalmente não leva nada, nem aqui (regra 19 da TDA, edição de 2024). Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — um ponto em que até uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
 
 ---
 
@@ -188,7 +188,7 @@ A. Depende da mão: quatro para a carta alta (as cinco comparadas em ordem), tr�
 
 **Q. O que é um bom kicker no poker?**
 
-A. Um alto — um kicker ás ou rei é forte, enquanto um kicker baixo como um nove te deixa "dominado". É por isso que AK e AQ são muito melhores que A9 ou A5: quando todo mundo pareia o ás, o maior kicker leva o pote.
+A. Um alto — um kicker ás ou rei é forte, enquanto um kicker baixo como um nove te deixa "dominado". É por isso que AK e AQ são muito melhores que A9 ou A5: quando dois jogadores pareiam o ás e não fazem nada melhor que isso, o maior kicker leva o pote.
 
 **Q. O que é um "kicker ás" (ou "kicker rei")?**
 

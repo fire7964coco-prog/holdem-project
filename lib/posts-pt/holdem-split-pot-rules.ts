@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -89,7 +89,7 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
-**E a parte que mais importa na mesa: sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck está morta mesmo que fosse dividir o pote — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
+**E a parte que mais importa na mesa: sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck normalmente está morta mesmo que fosse dividir o pote (só dá para recuperar uma mão que ainda seja claramente identificável, e a critério do floor; regra 109 das regras de torneio da WSOP) — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
 
 :::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta a sua parte de tudo que já estava no pote (metade em heads-up) — dar fold entrega essa parte de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta para o call — e baixa para o fold: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo, e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
 
@@ -105,7 +105,7 @@ Estes são os mal-entendidos por trás da maioria das discussões de "espera, po
 ==r:Um flush de espadas **não** ganha de um flush de copas.== O Texas Hold'em não tem hierarquia de naipe — ==valores idênticos dividem, ponto final==. (Isso pega quem vem de jogos que *realmente* rankeiam naipes.)
 
 ### ❌ "Minhas cartas fechadas são mais altas, então eu ganho"
-Board 9♠ 8♦ 7♣ 6♥ 5♠ — uma sequência formada. Você tem A♠ K♦; seu adversário tem 2♣ 3♥. ==r:**Divide.**== Os dois jogam o 9-8-7-6-5 da mesa, porque ==r:suas cartas fechadas grandes nunca entram nas melhores cinco==. Uma carta fechada alta só importa quando de fato joga como kicker — [o que é um kicker e quando ele joga](/pt/blog/holdem-kicker) traça essa linha com precisão.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ — uma sequência formada. Você tem A♠ K♦; seu adversário tem 2♣ 3♥. ==r:**Divide.**== Os dois jogam o 9-8-7-6-5 da mesa, porque ==r:suas cartas fechadas grandes nunca entram nas melhores cinco==. Uma carta fechada alta só importa quando de fato joga, como parte da própria mão ou como kicker — [o que é um kicker e quando ele joga](/pt/blog/holdem-kicker) traça essa linha com precisão.
 
 ### ❌ "Eu usei minhas duas cartas e ele usou uma"
 ==r:Quantas cartas fechadas você usa é irrelevante.== A única coisa que conta são as cinco mais fortes entre sete. ==g:Se os dois jogadores chegam às mesmas melhores cinco, é chop, não importa como você chegou lá.==
@@ -189,7 +189,7 @@ A. Sim. Se três ou mais jogadores têm a mesma melhor mão de cinco cartas, o p
 
 **Q. Como os potes divididos são tratados quando alguém está all-in?**
 
-A. O pote se quebra em um pote principal e potes paralelos; cada um é entregue ou chopado separadamente, com base na melhor mão entre os jogadores elegíveis para aquele pote específico.
+A. Quando há jogadores all-in por valores diferentes e os outros continuam apostando, o pote se quebra em um pote principal e um ou mais potes paralelos; cada um é entregue ou chopado separadamente, com base na melhor mão entre os jogadores elegíveis para aquele pote específico.
 
 **Q. Como se calcula um pote paralelo?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -87,7 +87,7 @@ Anda pegang ==b:A♥ K♥== di board ==Q♥ 7♥ 2♣ 3♠== — nut flush draw,
 - **Pot odds dulu:** Anda mendapat 150:50, atau 3:1, jadi Anda butuh equity **25%**. Flush Anda jadi di river hanya ==r:19,6%== dari waktu (9 outs ÷ 46 kartu tak terlihat — kami sengaja menghitung hanya outs flush; memasangkan ace atau king belum tentu cukup untuk menang, jadi overcard bukan out bersih). 19,6% kurang dari 25%, jadi harga langsung bilang ==r:fold.==
 - **Sekarang implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:sekitar $55.== Itulah ekstra yang harus Anda menangkan di river saat flush Anda mendarat.
 
-Jadi pertanyaannya bukan "haruskah saya call $50?" Melainkan "**saat sebuah hati jadi, bisakah saya menang setidaknya $55 lebih?**" Melawan lawan berstack dalam yang akan membayar taruhan river dengan top pair, itu mudah — Anda call. Melawan seseorang yang hanya punya sisa $40, atau seseorang yang langsung berhenti begitu hati ketiga muncul di board, Anda tak bisa — jadi Anda fold. (Melawan set lebih sulit lagi: 2♥ dan 3♥ memasangkan board dan bisa membuat set itu jadi full house, menyisakan 7 outs bersih dan x sekitar $129.)
+Jadi pertanyaannya bukan "haruskah saya call $50?" Melainkan "**saat sebuah hati jadi, bisakah saya menang setidaknya $55 lebih?**" Melawan lawan berstack dalam yang akan membayar taruhan river dengan top pair, itu mudah — Anda call. Melawan seseorang yang hanya punya sisa $40, atau seseorang yang langsung berhenti begitu hati ketiga muncul di board, Anda tak bisa — jadi Anda fold. (Melawan set lebih sulit lagi: 2♥ dan 3♥ memasangkan board dan bisa membuat set itu jadi full house, menyisakan 7 outs bersih — 7 ÷ 44, karena dua kartu set itu juga sudah keluar dari dek — dan x sekitar $114.)
 
 :::note
 Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Yang berubah adalah berapa banyak uang yang tersisa untuk dimenangkan. Itulah implied odds dalam satu kalimat.

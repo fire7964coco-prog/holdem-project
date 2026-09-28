@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -78,7 +78,7 @@ Uma sequência só precisa de cinco valores em ordem, e ==**os naipes não impor
 
 ## 3 mesas que ainda enganam os jogadores
 
-![Board mostrando 8♥ 7♥ 6♥ 5♠ A♣ — três copas no board significam que um flush está vivo mesmo que você tenha uma sequência](/images/holdem-flush-vs-straight-board.webp "Três cartas do mesmo naipe no board — draw de flush vivo contra a sua sequência")
+![Board mostrando 8♥ 7♥ 6♥ 5♠ A♣ — três copas no board significam que um flush está vivo mesmo que você tenha uma sequência](/images/holdem-flush-vs-straight-board.webp "Três cartas do mesmo naipe no board — um flush é possível contra a sua sequência")
 
 Saber a regra não é o mesmo que lê-la ao vivo — é exatamente essa habilidade que [ler a mesa](/pt/blog/holdem-reading-the-board) treina. Estas são as três situações em que o erro realmente acontece.
 
@@ -169,7 +169,7 @@ Se sua sequência usa umas cartas e seu flush usa outras, você não soma as dua
 
 ## A única exceção real: Short Deck
 
-No **Short Deck (6+) Hold'em**, os 2 até os 5 são retirados do baralho. Com menos cartas, um flush fica *mais difícil* de fechar do que um full house — então, nesse formato, o ranking muda e um ==r:**flush ganha de um full house**==. O princípio nunca muda: ==a mão mais rara ganha==. Só o baralho mudou. No Texas Hold'em padrão, com o baralho completo de 52 cartas, ==g:um flush ganha da sequência e perde para o full house, todas as vezes==.
+No **Short Deck (6+) Hold'em**, os 2 até os 5 são retirados do baralho. Com menos cartas, um flush fica *mais difícil* de fechar do que um full house — então, nesse formato, o ranking muda e um ==r:**flush ganha de um full house**==. A lógica é a mesma do baralho completo: entre essas duas mãos, ==a mais rara fica acima==. Só o baralho mudou. No Texas Hold'em padrão, com o baralho completo de 52 cartas, ==g:um flush ganha da sequência e perde para o full house, todas as vezes==.
 
 ---
 

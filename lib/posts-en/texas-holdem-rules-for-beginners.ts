@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "How to Play Texas Hold'em for Beginners — Rules, Chips, Hands, and First Strategy",
   seoTitle: "How to Play Texas Hold'em for Beginners — Rules & Cheat Sheet",
   desc: "Never played before? How to play Texas Hold'em step by step — blinds, chip setup, hand rankings, and a printable cheat sheet even dummies can follow.",
-  tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
+  tldr: "Texas Hold'em gives each player 2 hole cards and 5 shared community cards. There are up to four betting rounds, and the best 5-card poker hand wins at showdown — unless everyone else folds first.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -45,7 +45,7 @@ Everything below comes from actually running the game — kitchen tables, home g
 
 Key facts:
 - You can use both hole cards, one, or even zero — whichever makes the best hand
-- The dealer button rotates every hand, so blinds and action order shift each round
+- The dealer button normally moves one seat after each hand, so the blinds and the action order move with it
 - You win without showdown if everyone else folds at any point
 
 ---
@@ -54,7 +54,7 @@ Key facts:
 
 The basic rules of Texas Hold'em are simple once you see the table in order.
 
-Every hand starts with a dealer button. The two players to the left of the button post forced bets called the **small blind** and **big blind** — if those feel confusing, see [what blinds are and how the small and big blind work](/en/blog/holdem-blind-meaning). Then every player receives two cards face down. These are your hole cards.
+Every hand starts with a dealer button. The two players to the left of the button post forced bets called the **small blind** and **big blind** (with only two players, the button itself posts the small blind) — if those feel confusing, see [what blinds are and how the small and big blind work](/en/blog/holdem-blind-meaning). Then every player receives two cards face down. These are your hole cards.
 
 After that, the dealer reveals five shared cards in the middle of the table:
 
@@ -97,7 +97,7 @@ This article gives you the **beginner version of the flow** so you can sit down 
 | 5 | Flop, turn, river | Community cards come 3, then 1, then 1 |
 | 6 | Showdown | Remaining players compare the best 5-card hand |
 
-For your first session, the key idea is simple: ==**every time a new street appears, another betting round happens.**==
+For your first session, the key idea is simple: ==**every time a new street appears, another betting round happens**== — unless players are all-in and nobody is left to bet against; then the remaining cards are simply dealt out.
 
 ![Top-down infographic of a Texas Hold'em table before the flop — each player holds two hidden cards and the board is still empty](/images/rules-step2-preflop.webp "How to play Texas Hold'em step by step — preflop action after blinds")
 
@@ -113,7 +113,7 @@ Texas Hold'em works with anywhere from **2 to 10 players** at one table. You do 
 |--------:|------------------|----------------|
 | 2 | Heads-up | Fast and aggressive; blinds are reversed (see below) |
 | 3–6 | Short-handed (6-max) | Most common online; more hands are playable |
-| 7–10 | Full ring (9-max) | Classic home/casino game; play tighter, more folding |
+| 7–10 | Full ring (9-max or 10-max) | Classic home/casino game; play tighter, more folding |
 
 For a first home game, **4 to 6 players** is the sweet spot — enough action to learn, few enough that hands move quickly.
 
@@ -275,7 +275,7 @@ Good beginner starting hands include:
 
 | Tier | Hands | When to play |
 |------|-------|--------------|
-| 🟥 **Premium — always raise** | AA, KK, QQ, JJ, AKs, AKo | Every position, every stack |
+| 🟥 **Premium — always raise** | AA, KK, QQ, JJ, AKs, AKo | Every position, every stack — raise first in, re-raise over a single raise |
 | 🟧 **Strong — usually raise** | TT, 99, AQs, AQo, AJs, KQs | Most positions; tighter from UTG |
 | 🟦 **Playable — position matters** | 88, 77, ATs, AJo, KJs, QJs, JTs | Prefer late position (CO, BTN) |
 | ⬜ **Fold by default** | Everything else as a beginner | Especially from early position |
@@ -420,11 +420,11 @@ A. The simplest version: each player gets 2 private cards. Five shared cards are
 
 **Q. Texas Hold'em rules for dummies — what do the blinds mean?**
 
-A. The two players to the left of the dealer button must post forced bets before cards are dealt. The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand (or go all-in for less, if that is their whole stack).
+A. The two players to the left of the dealer button must post forced bets before cards are dealt (with only two players, the button posts the small blind itself). The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand (or go all-in for less, if that is their whole stack).
 
 **Q. What is the quick version of Texas Hold'em rules?**
 
-A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. Total: four betting rounds, five community cards, one winner — or a split pot, if the best five cards are exactly equal.
+A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. A full hand has four betting rounds and five community cards, and the best five-card hand takes the pot — or splits it, if the best five cards are exactly equal.
 
 **Q. How many players do you need to play Texas Hold'em?**
 
@@ -444,7 +444,7 @@ A. A single hand at a live table usually takes about 30 seconds to 2 minutes, th
 
 Texas Hold'em is easier to learn when you separate rules from strategy.
 
-First, ==learn the flow==: blinds, two hole cards, five community cards, four betting rounds, and best five-card hand. ==g:Then learn position, starting hands, and basic pot decisions.==
+First, ==learn the flow==: blinds, two hole cards, five community cards, up to four betting rounds, and best five-card hand. ==g:Then learn position, starting hands, and basic pot decisions.==
 
 For your next step, review [Texas Hold'em hand rankings](/en/blog/holdem-hand-rankings), practice with the [starting hand chart](/en/hand-chart), and use the [poker odds calculator](/en/calculator) when you want to understand why a call is profitable or not.
 

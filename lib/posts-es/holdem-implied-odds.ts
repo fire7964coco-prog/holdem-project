@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -87,7 +87,7 @@ Tienes ==b:A♥ K♥== en una mesa ==Q♥ 7♥ 2♣ 3♠== — el proyecto de co
 - **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas — contamos solo los outs de color a propósito; emparejar el as o el rey no basta para estar seguro de ir por delante, así que las sobrecartas no son outs limpios). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
 - **Ahora las odds implícitas:** x = (call ÷ % de ligar) − (bote + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:unos $55.== Ese es el extra que debes ganar en el river cuando tu color caiga.
 
-Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair, es fácil — pagas. Contra alguien con $40 detrás, o contra alguien que se frena en cuanto cae un tercer corazón en la mesa, no puedes — así que foldeas. (Contra un set es aún más difícil: el 2♥ y el 3♥ emparejan la mesa y pueden darle full al set, lo que te deja 7 outs limpios y una x de unos $129.)
+Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair, es fácil — pagas. Contra alguien con $40 detrás, o contra alguien que se frena en cuanto cae un tercer corazón en la mesa, no puedes — así que foldeas. (Contra un set es aún más difícil: el 2♥ y el 3♥ emparejan la mesa y pueden darle full al set, lo que te deja 7 outs limpios — 7 ÷ 44, porque las dos cartas del set también salen de la baraja — y una x de unos $114.)
 
 :::note
 El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo que cambió es cuánto dinero queda por ganar. Eso son las odds implícitas en una frase.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -139,7 +139,7 @@ O button é o melhor assento do poker. ==g:Você age por último no flop, no tur
 - **Suited connectors (T9s, 98s, 87s)** — mãos baratas de altas implied odds
 - **Broadway offsuit mais fraco (KTo, QJo)** — só em posição tardia, nunca cedo
 
-Regra-chave: ==essas mãos especulativas precisam de posição pra dar lucro==. Se um jogador do UTG aumenta na sua frente, a maioria delas vai direto pro muck — você estaria pagando um raise pra jogar uma mão especulativa contra um range forte, e o flop barato de que ela precisa já não existe.
+Regra-chave: ==como mãos de abertura, essas mãos especulativas precisam de posição pra dar lucro==. E se um jogador do UTG aumenta na sua frente, a maioria delas vai direto pro muck — você estaria pagando um raise pra jogar uma mão especulativa contra um range forte, e o flop barato de que ela precisa já não existe.
 
 ---
 
@@ -176,7 +176,7 @@ Uma ressalva de escopo: isto é sobre que porcentagem do seu *range* jogar, não
 
 Eu mantenho os outputs do solver abertos quando estudo, e ainda assim entrego pra todo iniciante uma tabela simplificada primeiro. São duas ferramentas diferentes, e saber qual usar vale mais do que qualquer uma das tabelas sozinha.
 
-**As tabelas GTO de pré-flop** vêm de solvers (PioSOLVER, GTO Wizard e companhia). São teoricamente inexploráveis — e também estão cheias de frequências mistas: abra esta mão 25% das vezes, folde 75%, dê 3-bet neste combo mas só com estes naipes. **As tabelas de iniciante** — como a desta página — comprimem tudo isso em uma ação clara por mão.
+**As tabelas GTO de pré-flop** vêm de solvers (PioSOLVER, GTO Wizard e companhia). São construídas pra chegar o mais perto possível de inexploráveis — e também estão cheias de frequências mistas: abra esta mão 25% das vezes, folde 75%, dê 3-bet neste combo mas só com estes naipes. **As tabelas de iniciante** — como a desta página — comprimem tudo isso em uma ação clara por mão.
 
 :::compare
 Tabelas GTO de pré-flop | Tabela de iniciante simplificada
@@ -214,7 +214,7 @@ O ==r:erro mais caro que iniciantes cometem é pagar aumentos com ases fracos== 
 
 Tabelas só funcionam se estiverem na sua frente na hora que importa. Pra jogos caseiros e sessões de estudo, deixamos tudo pronto pra imprimir:
 
-**[Baixe o range de mãos do poker em PDF — tabela gratuita pra imprimir](/downloads/poker-starting-hands-chart.pdf)** — uma página com o range de abertura 9-max completo mais a regra de ajuste pro 6-max, formato de resumo (em inglês). Imprima, ou mantenha a tabela aberta no celular entre as mãos.
+**[Baixe o range de mãos do poker em PDF — tabela gratuita pra imprimir](/downloads/poker-starting-hands-chart.pdf)** — uma página com o range de abertura 9-max por posição mais a regra de ajuste pro 6-max, formato de resumo (em inglês). Imprima, ou mantenha a tabela aberta no celular entre as mãos.
 
 Então use ela literalmente, toda mão, nas suas primeiras 20+ sessões:
 
@@ -257,11 +257,11 @@ Acertou os três? A grade completa por assento está na aba **Tabelas pré-flop*
 
 **Q. Qual é a melhor mão inicial do poker?**
 
-A. Pocket ases (AA) é a melhor mão inicial do poker. No pré-flop, os ases vencem cerca de 85% das vezes contra uma mão aleatória. Sempre aumente e re-aumente com ases — o objetivo é crescer um pote grande sendo o favorito estatístico.
+A. Pocket ases (AA) é a melhor mão inicial do poker. No pré-flop, os ases vencem cerca de 85% das vezes contra uma mão aleatória. Como padrão, aumente e re-aumente com ases — o objetivo é crescer um pote grande sendo o favorito estatístico.
 
 **Q. Quais são as boas mãos iniciais do poker?**
 
-A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — o núcleo dos ~15–20% das mãos recebidas que um iniciante sólido joga (essas mãos sozinhas são só cerca de 5% de todas as mãos iniciais). Mãos especulativas como pares pequenos e suited connectors só são boas de posição tardia.
+A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — o núcleo dos ~15–20% das mãos recebidas que um iniciante sólido joga (essas mãos sozinhas são só cerca de 5% de todas as mãos iniciais). Mãos especulativas como pares pequenos e suited connectors rendem mais de posição tardia.
 
 **Q. Quantas mãos iniciais existem no poker?**
 
@@ -273,11 +273,11 @@ A. A regra do 7-2 é um jogo paralelo da mesa, não uma regra oficial do poker: 
 
 **Q. Qual é a pior mão inicial do poker?**
 
-A. 7-2 offsuit é amplamente considerada a pior mão inicial do poker. As cartas estão distantes demais pra formarem uma sequência juntas, baixas demais pra vencer sem melhorar, e mesmo acertar um par te deixa com uma mão fraca e um kicker ruim.
+A. 7-2 offsuit é amplamente considerada a pior mão inicial do poker. As cartas estão distantes demais pra formarem uma sequência juntas, baixas demais pra vencer com frequência sem melhorar, e mesmo acertar um par te deixa com uma mão fraca e um kicker ruim.
 
 **Q. Iniciantes deveriam usar tabelas GTO de pré-flop?**
 
-A. Não de cara. As tabelas GTO de pré-flop usam frequências mistas feitas pra serem inexploráveis contra adversários fortes — exagero em jogos de iniciante, onde uma tabela simplificada de aumentar-ou-foldar rende mais. Aprenda a tabela simples até que fique automática, e depois adicione as tabelas GTO quando estudar ou subir de nível no online.
+A. Não de cara. As tabelas GTO de pré-flop usam frequências mistas feitas pra serem difíceis de explorar mesmo por adversários fortes — exagero em jogos de iniciante, onde uma tabela simplificada de aumentar-ou-foldar rende mais. Aprenda a tabela simples até que fique automática, e depois adicione as tabelas GTO quando estudar ou subir de nível no online.
 
 **Q. Ser suited faz diferença de verdade?**
 

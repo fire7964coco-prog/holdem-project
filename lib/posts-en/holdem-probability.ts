@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -108,7 +108,7 @@ So the next time someone says "I never get aces," they're roughly right — you'
 
 </div>
 
-For set mining, ==7.5 to 1 is a theoretical break-even payoff, not a sufficient stack rule==: it assumes every hit wins and gets paid. In practice, the usual 15–20× effective-stack guideline allows for missed value and losing sets; even that is a heuristic, not an automatic call. That's the bridge to [pot odds](#pot-odds), below. For the full derivation of every row here — plus the set-mining stack rule and the made-vs-draw-vs-complete flush split — see the deep dive on [drawing odds and the odds of flopping each hand](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+For set mining, ==7.5 to 1 is a theoretical break-even payoff, not a sufficient stack rule==: it assumes every hit wins and gets paid. In practice, the usual guideline — effective stacks of 15–20× the call — allows for missed value and losing sets; even that is a heuristic, not an automatic call. That's the bridge to [pot odds](#pot-odds), below. For the full derivation of every row here — plus the set-mining stack rule and the made-vs-draw-vs-complete flush split — see the deep dive on [drawing odds and the odds of flopping each hand](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -172,11 +172,11 @@ That's the shortcut: clean outs → the multiplier for the cards you'll see → 
 Pot after the bet | $100 + $50 = $150
 Your call | $50 to win $150 (final pot $200)
 Pot odds | 50 ÷ 200 = 25% — you need at least 25% equity
-Your equity | Flush draw ≈ 35% by the river — the Rule of 4 number, which assumes you see ==both== cards
+Your equity | Flush draw with 9 clean outs ≈ 35% by the river — the Rule of 4 number, which assumes you see ==both== cards
 Decision | With both cards to come: 35% > 25% → a clearly profitable ==g:call==
 :::
 
-That's the moment all the numbers pay off — but **match the number to the street you're paying for**. When both cards are coming (you're all-in, or the turn checks through), your **35%** beats the **25%** price and calling wins money in the long run even though you'll lose the hand more often than not. When your opponent will fire again on the turn, this call only buys you the turn card — from the flop that's ==9 ÷ 47 = 19.1%==, *below* the price — and the draw then needs [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), the money you win on the streets after you hit, to cover the gap. Spending the ×4 number on a one-card decision is the most common way beginners overrate a draw. For the full method and the bet-size cheat sheet, see [how to calculate pot odds](/en/blog/holdem-pot-odds).
+That's the moment all the numbers pay off — but **match the number to the street you're paying for**. When both cards are coming (you're all-in, or the turn checks through), a clean draw's **35%** beats the **25%** price and calling wins money in the long run even though you'll lose the hand more often than not. When your opponent will fire again on the turn, this call only buys you the turn card — from the flop that's ==9 ÷ 47 = 19.1%==, *below* the price — and the draw then needs [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), the money you win on the streets after you hit, to cover the gap. Spending the ×4 number on a one-card decision is the most common way beginners overrate a draw. For the full method and the bet-size cheat sheet, see [how to calculate pot odds](/en/blog/holdem-pot-odds).
 
 ---
 
@@ -243,7 +243,7 @@ A. If you flop a flush draw (nine outs), you'll complete it about 35% of the tim
 
 **Q. What are the odds of flopping a set?**
 
-A. About 11.8%, or roughly 1 in 8.5, when you hold a pocket pair. The equivalent 7.5-to-1 odds describe misses versus hits, not a recommended stack depth. A set-mining call also needs realistic future payment; the practical 15–20× guideline leaves room for sets that get no action or lose.
+A. About 11.8%, or roughly 1 in 8.5, when you hold a pocket pair. The equivalent 7.5-to-1 odds describe misses versus hits, not a recommended stack depth. A set-mining call also needs realistic future payment; the practical guideline — effective stacks of 15–20× the call — leaves room for sets that get no action or lose.
 
 **Q. What are the odds of flopping a royal flush?**
 
@@ -267,7 +267,7 @@ A. There's no single fixed number — it depends on how many opponents hold pock
 
 **Q. What's the most common winning hand in poker?**
 
-A. One pair, followed by two pair. Because every player shares the five community cards, most Texas Hold'em pots are decided by a single pair and its kicker — flushes, straights, and full houses win far less often than beginners expect. The full frequency of each result is in the chart above.
+A. One pair, followed by two pair. Because every player shares the five community cards, most Texas Hold'em pots are decided by a single pair and its kicker — flushes, straights, and full houses win far less often than beginners expect. How often each hand shows up over seven cards — which is not the same as how often it wins the pot — is in the chart above.
 
 **Q. How often does the best hand win in poker?**
 

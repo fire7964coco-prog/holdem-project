@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Poker Positions: Every Seat Name & Chart",
   seoTitle: "Your Seat Changes Names Every Hand — Poker Positions Chart",
   desc: "The names move with the button, not the chairs. Every poker position name — UTG, hijack, cutoff, button — plus seat numbers, 6-max map, and who acts first.",
-  tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they normally move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
+  tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they normally move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last (heads-up the button is the small blind: first to act preflop, last postflop). Physical seat numbers never move; positions do.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -33,7 +33,7 @@ Same hand. Completely different result. The only thing that changed was my seat 
 ---
 
 > **Quick answer**
-> Poker positions are the ==named seats measured from the dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — and they ==normally move one seat clockwise every hand== as the button moves. Preflop, UTG acts first and the big blind acts last. Postflop, the small blind acts first and the button acts last.
+> Poker positions are the ==named seats measured from the dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — and they ==normally move one seat clockwise every hand== as the button moves. Preflop, UTG acts first and the big blind acts last. Postflop, the small blind acts first and the button acts last. (Heads-up, the button is the small blind: first to act preflop, last postflop.)
 
 ---
 
@@ -59,7 +59,7 @@ Here is the full 9-max positions chart — every seat name, its abbreviation, it
 
 Notice the flip: ==the blinds act last preflop but first postflop==, while the button acts last on every postflop street. That ordering — not the cards — is what makes some seats structurally better than others.
 
-> **Live table note:** the button is a physical disc that moves one seat clockwise each hand. "UTG" is whoever sits three seats left of the button at that moment — not a fixed chair.
+> **Live table note:** the button is a physical disc that normally moves one seat clockwise each hand. "UTG" is whoever sits three seats left of the button at that moment — not a fixed chair.
 
 ---
 
@@ -123,7 +123,7 @@ The names have no documented official origin — poker slang rarely does — but
 - **Hijack:** the cutoff and button are the classic blind-stealing seats. When the player one seat earlier raises first, they ==**"hijack" the steal**== the late seats were waiting to make — so the seat itself picked up the name.
 - **Lojack:** came later, as a ==playful riff on "hijack"== — the seat one step "lower" in the pecking order. Most tellings also hear an echo of the LoJack anti-theft brand: a hijack, one notch down.
 
-Treat both as table lore rather than etymology. What's not lore: the hijack and lojack are real, standard names you'll see in every modern range chart and training site, which is why they're worth knowing cold.
+Treat both as table lore rather than etymology. What's not lore: the hijack and lojack are real, standard names you'll see on most modern range charts and training sites, which is why they're worth knowing cold.
 
 ---
 

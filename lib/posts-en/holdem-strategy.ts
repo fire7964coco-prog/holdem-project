@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold rather than open-limp, do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -126,7 +126,7 @@ Aggression wins pots. **Discipline keeps stacks.** The decision that separates b
 
 Here's a concrete one from a hand I played. I raised ==A♣K♣== and got one caller. The flop came ==2♥ 7♦ 9♠== — a total miss. I have ace-high, no pair, no draw. I fire a c-bet (Decision 4, in position, dry board), and my opponent check-**raises** me. At that point the math is simple: I have the best possible high card and nothing else, and a check-raise on that board is almost never a bluff at low stakes. So I fold ace-high and lose the minimum. Two years earlier I'd have "just called to see" — and paid off a set of nines every time.
 
-The general rule: **[when the story your opponent is telling beats the hand you actually hold](/en/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), and you don't have the odds to draw out, let it go.** Folding a good-but-beaten hand feels like losing. It's actually the single most profitable habit in the game. When you *do* have a draw, the fold-or-call decision comes down to [pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — the price you're getting versus the chance you hit.
+The general rule: **[when the story your opponent is telling beats the hand you actually hold](/en/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), and you don't have the odds to draw out, let it go.** Folding a good-but-beaten hand feels like losing. It's actually the single most profitable habit in the game. When you *do* have a draw, the fold-or-call decision comes down to [pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — the price you're getting versus the chance you hit a hand that wins.
 
 ---
 
@@ -134,7 +134,7 @@ The general rule: **[when the story your opponent is telling beats the hand you 
 
 You don't need to be a mathematician, but two numbers underpin half your decisions.
 
-**Pot odds** tell you whether a call is profitable: compare the price of the call to the size of the pot, then to your chance of hitting. If the pot lays you 4-to-1 and your draw hits about 1-in-5, calling is roughly break-even; better than that, it's a profit. This is the engine behind every "do I chase this draw?" spot — and the [pot odds guide](/en/blog/holdem-pot-odds) turns it into a 10-second table read.
+**Pot odds** tell you whether a call is profitable: compare the price of the call to the size of the pot, then to your chance of hitting a winning card. If the pot lays you 4-to-1 and your draw comes in and wins about 1-in-5, calling is roughly break-even; better than that, it's a profit. This is the engine behind every "do I chase this draw?" spot — and the [pot odds guide](/en/blog/holdem-pot-odds) turns it into a 10-second table read.
 
 **Set-mining odds** explain why small pairs are speculative. Call a raise with pocket fives hoping to flop a set — three-of-a-kind — and you'll connect only about **11.8% of the time, roughly 1 in 8.5.** When it works it's gorgeous: flop ==5♣ K♠ 2♦== holding ==5♠5♦== and you've got a hidden set that stacks an overpair. But because you miss ~88% of flops, set-mining is only profitable when the effective stacks are deep enough to pay you off when you hit — a rough guide is **at least ~15–20× the size of the call.** Shallow stacks? That speculative call becomes a leak. The full [odds and probability chart](/en/blog/holdem-probability) has every number you'll ever need.
 
@@ -181,7 +181,7 @@ TAG works because it attacks the two biggest beginner leaks at once — playing 
 
 **Q. What is the best strategy for Texas Hold'em?**
 
-A. Play a tight-aggressive style built around five repeating decisions: choose hands based on your position, fold most of what you're dealt (around 80% preflop), enter pots by raising rather than limping, continuation-bet the flop when you have initiative, and make disciplined folds when you're beaten. That combination beats almost every casual game without any advanced theory.
+A. Play a tight-aggressive style built around five repeating decisions: choose hands based on your position, fold most of what you're dealt (around 80% preflop), enter pots by raising rather than limping, continuation-bet the flop when you have initiative and the board and opponents allow it, and make disciplined folds when you're beaten. That combination beats almost every casual game without any advanced theory.
 
 **Q. What is the best poker strategy for beginners?**
 
@@ -201,7 +201,7 @@ A. Bet when you have a hand worth building a pot with, or a good bluffing spot w
 
 **Q. When should you bluff in poker?**
 
-A. Bluff when the story is believable and your opponent can actually fold — not just because you missed. The best bluffs come with backup: a draw (a semi-bluff) that can still win if called, in position, against one opponent, on a board that favors your range. Bluffing into multiple callers or players who never fold is just lighting money on fire.
+A. Bluff when the story is believable and your opponent can actually fold — not just because you missed. The best bluffs come with backup: a draw (a semi-bluff) that can still win if called, in position, against one opponent, on a board that favors your range. A pure bluff into multiple callers or players who never fold is just lighting money on fire.
 
 **Q. When should you 3-bet?**
 
@@ -229,7 +229,7 @@ A. Both — but skill wins over time. Any single hand carries a big luck element
 
 **Q. What is GTO poker?**
 
-A. GTO (Game Theory Optimal) is a mathematically balanced strategy that can't be exploited — you mix bluffs and value bets in ratios that leave opponents no profitable counter. It's the theoretical ideal that solvers compute, but at low stakes you make more money playing *exploitative* poker: deviating from GTO to punish specific leaks (players who over-fold or call too much). Start with tight-aggressive, learn to exploit, and treat GTO as the reference point — not the day-one goal.
+A. GTO (Game Theory Optimal) is a mathematically balanced strategy that, heads-up, can't be exploited — you mix bluffs and value bets in ratios that leave opponents no profitable counter. It's the theoretical ideal that solvers compute, but at low stakes you make more money playing *exploitative* poker: deviating from GTO to punish specific leaks (players who over-fold or call too much). Start with tight-aggressive, learn to exploit, and treat GTO as the reference point — not the day-one goal.
 
 **Q. How do you get better at poker?**
 
