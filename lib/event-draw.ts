@@ -1,20 +1,21 @@
+import { createHash } from "node:crypto";
 import type { SupabaseClient } from "@supabase/supabase-js";
 
 /**
  * 비트코인 블록 해시(64자리 hex) → 1~45 번호 6개 결정론적 추출.
- * 8자리씩 잘라 (n % 45) + 1, 중복 제외. 누구나 블록 탐색기로 검증 가능.
+ * 누구나 블록 탐색기의 해시로 재현·검증할 수 있다:
+ *   i = 0, 1, 2, … 에 대해 SHA-256("<blockHash>:<i>")의 앞 8자리(hex) → (n % 45) + 1, 중복은 건너뛴다.
+ *
+ * ⚠ 블록 해시를 그대로 자르면 안 된다 — 작업증명 때문에 앞 19자리 안팎이 항상 0이라
+ *   첫 조각이 늘 0 → 번호 1이 매 회차 당첨번호에 들어갔다(2026-W28~W39 9회 전부).
+ *   조각도 6개뿐이라 중복이 나면 무한 루프에 빠질 수 있었다. (2026-09-28 수정)
  */
 export function deriveNumbers(blockHash: string): number[] {
   const numbers: number[] = [];
-  let idx = 0;
-  while (numbers.length < 6 && idx + 8 <= blockHash.length) {
-    const chunk = parseInt(blockHash.slice(idx, idx + 8), 16);
-    const num = (chunk % 45) + 1;
+  for (let i = 0; numbers.length < 6; i++) {
+    const digest = createHash("sha256").update(`${blockHash}:${i}`).digest("hex");
+    const num = (parseInt(digest.slice(0, 8), 16) % 45) + 1;
     if (!numbers.includes(num)) numbers.push(num);
-    idx += 8;
-    if (idx + 8 > blockHash.length && numbers.length < 6) {
-      idx = idx % 8;
-    }
   }
   return numbers.sort((a, b) => a - b);
 }
