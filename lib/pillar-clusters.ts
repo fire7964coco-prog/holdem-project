@@ -337,6 +337,7 @@ export const JA_CLUSTERS: PillarCluster[] = [
       { slug: "japan-poker-tournaments-guide", label: "国内大会ガイド", group: "ライブイベント" },
       { slug: "jopt-osaka-02-2026-guide", label: "JOPT大阪 2026 #02", group: "ライブイベント" },
       { slug: "korea-poker-trip-gop-wpt-seoul-2026", label: "仁川 GOP・WPT Seoul", group: "ライブイベント" },
+      { slug: "apt-championship-taipei-2026-guide", label: "APT Championship 台北", group: "ライブイベント" },
     ],
   },
   {

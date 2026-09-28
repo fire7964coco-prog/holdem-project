@@ -642,6 +642,7 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 - ME: **USD 10,000 freezeout / USD 5,000,000 GTD / 11.23~27** (시리즈 페이지는 `TWD 165,000,000 GTD`)
 - ⚠️ **시작일 11/12 vs 11/13**: 11/12는 `#1000 [Event 0] Asia Gaming Industry Championship`, `"restricted to casino employees and poker industry persons only"` → **일반 참가자 기준 11/13 개막**
 - 베뉴: **Red Space 多元商務空間 + Asia Poker Arena 병용**
+- 🆕 **2026-09-28 라이브 재실측**(Playwright · 정본 = `docs/tournament-factsheets/2026-11-apt-championship-taipei.md`): 헤더 「13 Nov to 29 Nov」「209 EVENTS」 · 일정표 직접 집계 209 = #1~#186(결번 0) + #1000~#1022 · 새틀 26 / 트로피 183 → **06-10 기사의 210은 낡은 값** · 베뉴는 Key Info 「All tournaments will take place at the brand-new Red Space」(APA 병용 문구는 04-29 기사) · ME #1014 = USD 10,000(PP 9,600 + fee 400 · 스태핑 3%) · 스택 50,000 · **Day 1은 11/23 한 번** · 등록 마감 11/24 13:45(Day 2 레벨 10) · 상위 3석은 **2027** 챔피언십 시트(일정표 라벨 «2026»은 오기) · 2026 메인 시트 17석(#75·#85 = 기사의 #76·#86) · 참가 18세+ · JOPT 협찬 #133(TWD 10,000 · 11/25)
 
 ### TMT 20 — ★ 한국인 우승 + 개런티 오해 정정
 - ME **9,094 엔트리**(TMT 역대 최다) / 상금풀 **NTD 66,786,336** / 바이인 NT$9,000

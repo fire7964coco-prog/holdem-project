@@ -2372,7 +2372,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (609편) -->
+  <!-- 다국어 블로그 포스트 (610편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing</loc>
@@ -3536,6 +3536,13 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/ace-paired-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/ace-paired-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/ace-paired-board-strategy" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/ja/blog/apt-championship-taipei-2026-guide</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>

@@ -311,7 +311,7 @@ GOP仁川IIとWPT Seoulについて、==r:国別の参加者数はまだあり�
 
 ==r:これはAPTという別のツアーの数字です。==GOPやWPT Seoulでも同じ割合になるとは限りません。ただ、仁川の会場に日本から多くのプレイヤーが足を運んでいること、そして結果も出していることは、この記録から分かります。詳しくは[APT仁川2026の結果](/ja/blog/apt-incheon-2026-guide)にまとめてあります。
 
-国内の大会と比べたいときは、[国内ポーカー大会の参加方法と費用](/ja/blog/japan-poker-tournaments-guide)へ。同じ時期の10月29日〜11月3日には、大阪で[JOPT 2026 大阪 #02](/ja/blog/jopt-osaka-02-2026-guide)が開かれます。
+国内の大会と比べたいときは、[国内ポーカー大会の参加方法と費用](/ja/blog/japan-poker-tournaments-guide)へ。同じ時期の10月29日〜11月3日には、大阪で[JOPT 2026 大阪 #02](/ja/blog/jopt-osaka-02-2026-guide)が開かれます。11月後半に台北まで足をのばすなら、[APT Championship 台北2026](/ja/blog/apt-championship-taipei-2026-guide)が11月13日〜29日です。
 
 :::readnext[あわせて読みたい]
 /ja/blog/apt-incheon-2026-guide | APT仁川2026結果 — ファイナル9名中5名が日本人 | /images/apt-incheon-2026-guide-hero.webp

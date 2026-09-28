@@ -45,6 +45,7 @@ import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as japanPokerTournamentsGuide } from "./japan-poker-tournaments-guide";
 import { POST as joptOsaka022026Guide } from "./jopt-osaka-02-2026-guide";
 import { POST as koreaPokerTripGopWptSeoul2026 } from "./korea-poker-trip-gop-wpt-seoul-2026";
+import { POST as aptChampionshipTaipei2026Guide } from "./apt-championship-taipei-2026-guide";
 import { POST as aHighBoardCbet } from "./a-high-board-cbet";
 import { POST as kHighBoardCbet } from "./k-high-board-cbet";
 import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
@@ -109,6 +110,7 @@ export const JA_POSTS: Post[] = [
   // ★ ja 固有記事 — 나라별 대회 트랙(ja 먼저) 2026-09-28 신설 2편
   joptOsaka022026Guide,
   koreaPokerTripGopWptSeoul2026,
+  aptChampionshipTaipei2026Guide,
   wptAustralia2026Guide,
   aptIncheon2026Guide,
   eptBarcelona2026Guide,
