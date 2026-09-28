@@ -38,7 +38,7 @@ function tournamentFields(src, id) {
   const next = src.indexOf("\n    id: \"", at + 5);
   const block = src.slice(at, next < 0 ? undefined : next);
   const f = (k) => (block.match(new RegExp(`\\n\\s*${k}: "([^"]*)"`)) || [])[1] ?? null;
-  return { startDate: f("startDate"), endDate: f("endDate"), blogLink: f("blogLink") };
+  return { startDate: f("startDate"), endDate: f("endDate"), blogLink: f("blogLink"), venue: f("venue"), location: f("location") };
 }
 
 /** 포스트 원문(한 글) — lib/posts/<slug>.ts 또는 lib/posts.ts 안의 블록 */
@@ -51,6 +51,8 @@ function postSource(slug) {
   const next = legacy.indexOf("\n  slug: \"", at + 5);
   return { file: "lib/posts.ts", text: legacy.slice(at, next < 0 ? undefined : next) };
 }
+
+const CASINO_VENUE = /casino|카지노|inspire|인스파이어|paradise|파라다이스|신화월드|jeju shinhwa|landing/i;
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -65,6 +67,8 @@ function audit() {
     const f = tournamentFields(tsrc, t.id);
     if (!f) { red.push(`[대회] ${t.id}: lib/tournaments.ts 에 없음`); continue; }
     if (!f.startDate || !f.endDate) red.push(`[대회] ${t.id}: startDate/endDate 없음`);
+    // 🔴 외국인 전용 카지노 대회는 이벤트 대상이 아니다(사장님 09-28) — 장소에 카지노 표지가 있으면 막는다
+    if (CASINO_VENUE.test(`${f.venue ?? ""} ${f.location ?? ""}`)) red.push(`[대회] ${t.id}: 장소(${f.venue} / ${f.location})가 카지노 — 참여 이벤트 대상 불가(participation-config 주석)`);
     const post = postSource(t.slug);
     if (!post) { red.push(`[대회] ${t.id}: 글 ${t.slug} 없음`); continue; }
     if (!/layout:\s*"tournament-guide"/.test(post.text)) red.push(`[대회] ${t.slug}: layout 이 tournament-guide 가 아님(바가 붙지 않는다)`);

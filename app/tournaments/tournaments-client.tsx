@@ -24,6 +24,8 @@ const KR_2026 = TOURNAMENTS.filter((t) => t.country === "KR" && (t.startDate ?? 
  */
 import { buildDigest, buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
 import type { EventGuideCard } from "@/lib/active-event-guides";
+import { REVIEW_TOURNAMENTS, REVIEW_EVENT, entryDeadline, koMonthDay } from "@/lib/participation-config";
+import { BoardParticipation } from "@/components/participation/tournament-participation";
 import { DEFAULT_SCHEDULE_FILTERS, readScheduleFilters, scheduleFilterHref, matchesSchedule, orderSchedule, scheduleMonths, type ScheduleFilters, type ScheduleStatus } from "@/lib/tournament-filters";
 
 function ScheduleUrlObserver({ sync }: { sync: () => void }) {
@@ -597,6 +599,13 @@ function ScheduleSection({
                 </Link>
               )}
             </div>
+            {/* 참여 장치(2026-09-28) — 가이드 글의 참가 바와 같은 대회 id·같은 숫자. 대상은 lib/participation-config.ts */}
+            {(() => {
+              const rt = REVIEW_TOURNAMENTS.find((x) => x.id === t.id);
+              return rt && t.startDate && t.endDate
+                ? <BoardParticipation p={{ tournamentId: rt.id, label: rt.label, slug: rt.slug, startDate: t.startDate, endDate: t.endDate }} />
+                : null;
+            })()}
           </motion.div>
         ))}
       </div>
@@ -752,6 +761,23 @@ export default function Tournaments({
           </div>
           </details>
         </motion.div>
+
+        {/* 대회 후기 이벤트 안내 — 응모 마감 전인 대상 대회가 있을 때만(빌드 기준일 · 매일 리빌드). 문구는 설정값에서 */}
+        {(() => {
+          const open = REVIEW_TOURNAMENTS.map((rt) => ({ rt, t: TOURNAMENTS.find((x) => x.id === rt.id) }))
+            .filter(({ t }) => t?.endDate && todayISO <= entryDeadline(t.endDate));
+          if (!open.length) return null;
+          return (
+            <Link href="/blog/holdem-community-event-guide"
+              className="mb-6 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-primary/30 bg-card px-4 py-3 text-sm hover:border-primary/60 transition-colors">
+              <span className="font-bold text-foreground">🎁 대회 후기 이벤트</span>
+              <span className="text-muted-foreground">
+                {open.map(({ rt, t }) => `${rt.label}(후기 ${koMonthDay(entryDeadline(t!.endDate!))}까지)`).join(" · ")} 다녀와서 후기를 쓰면 추첨 {REVIEW_EVENT.drawWinners}명 {REVIEW_EVENT.prizeDraw} · 베스트 {REVIEW_EVENT.bestWinners}명 {REVIEW_EVENT.prizeBest}
+              </span>
+              <span className="ml-auto text-xs font-bold text-primary-ink">자세히 →</span>
+            </Link>
+          );
+        })()}
 
         {/* 2026 대회 일정표 */}
         <ScheduleSection todayISO={todayISO} blogLinks={blogLinks} />

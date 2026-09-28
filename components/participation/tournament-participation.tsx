@@ -378,3 +378,62 @@ export function ReviewsSection({ p, state }: { p: ParticipationProps; state: Ret
     </section>
   );
 }
+
+/**
+ * 대회 보드(/tournaments) 카드용 한 줄 — 가이드 글의 바와 같은 대회 id·같은 숫자를 쓴다(2026-09-28).
+ * 대회 전/중 = 참가 예정 수 + [나도 참가] · 대회 후 = 후기 수 + 가이드 «참가자 후기»로 가는 링크.
+ * DB를 못 읽으면 아무것도 그리지 않는다(카드 높이만 조금 줄어든다 — 카드 목록 맨 아래 줄이라 밀림이 없다).
+ */
+export function BoardParticipation({ p }: { p: ParticipationProps }) {
+  const state = useTournamentParticipation(p);
+  const { data, reload, phase } = state;
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+  const ready = data && data.available ? data : null;
+  if (!ready) return null;
+
+  const chip = "inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold transition-colors";
+  if (phase === "after") {
+    return (
+      <div className="flex flex-wrap items-center gap-2 text-[11px]">
+        <span className="font-semibold text-foreground">
+          {ready.reviewCount >= MIN_VISIBLE_COUNT ? <>⭐ 참가자 후기 {ready.reviewCount}개</> : <>⭐ 참가자 후기를 모으는 중</>}
+        </span>
+        <Link href={`/blog/${p.slug}#${REVIEWS_ANCHOR}`} className={`${chip} bg-primary text-primary-foreground hover:opacity-90`}>
+          {ready.myReview ? "내 후기 보기 →" : "후기 쓰기 →"}
+        </Link>
+        {ready.entryWindowOpen && <span className="text-muted-foreground">🎁 후기 이벤트 {koMonthDay(ready.entryDeadline)}까지</span>}
+      </div>
+    );
+  }
+
+  async function onToggle() {
+    if (!ready || busy) return;
+    setBusy(true);
+    setErr(null);
+    const r = await toggleAttendance(p.tournamentId, !ready.iAttend);
+    if (!r.ok) setErr(r.error ?? "저장하지 못했습니다.");
+    await reload();
+    setBusy(false);
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-2 text-[11px]">
+      <span className="font-semibold text-foreground">
+        {ready.attendCount >= MIN_VISIBLE_COUNT ? <>🙋 참가 예정 {ready.attendCount}명</> : <>🙋 가시나요?</>}
+      </span>
+      {ready.isLoggedIn ? (
+        <button type="button" onClick={onToggle} disabled={busy} aria-pressed={ready.iAttend}
+          className={`${chip} ${ready.iAttend ? "border border-primary/40 text-primary-ink" : "bg-primary text-primary-foreground hover:opacity-90"} disabled:opacity-50`}>
+          {ready.iAttend ? "✓ 참가 예정 (취소)" : "나도 참가"}
+        </button>
+      ) : (
+        <Link href={loginHref(`/tournaments?attend=1#tournament-${p.tournamentId}`)} className={`${chip} bg-primary text-primary-foreground hover:opacity-90`}>
+          나도 참가
+        </Link>
+      )}
+      <span className="text-muted-foreground">🎁 다녀와서 후기 쓰면 기프트콘 추첨</span>
+      {err && <span role="alert" className="basis-full text-destructive">{err}</span>}
+    </div>
+  );
+}

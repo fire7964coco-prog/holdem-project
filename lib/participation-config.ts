@@ -17,11 +17,14 @@ export type ReviewTournament = {
   slug: string;
 };
 
-/** 파일럿 = KO 대회 가이드 3편 (사장님 09-28 승인) */
+/**
+ * 파일럿 = KO 대회 가이드 (사장님 09-28 승인).
+ * 🔴 대상은 «그 언어 독자가 실제로 참가할 수 있는 대회»만 — 외국인 전용 카지노 대회는 넣지 않는다.
+ *    09-28 첫 배포 때 WPT 서울(인스파이어)·GOP 인천 II(파라다이스 시티)를 넣었다가 같은 날 뺐다(사장님 결정):
+ *    한국 국적자 대부분이 참가할 수 없고, 경품이 카지노 방문 후기에 걸리는 모양이 된다.
+ */
 export const REVIEW_TOURNAMENTS: ReviewTournament[] = [
   { id: "apl-seoul-winter-circuit-1", label: "APL 서울 2026", slug: "apl-seoul-2026-guide" },
-  { id: "wpt-seoul", label: "WPT 서울 2026", slug: "wpt-seoul-2026-guide" },
-  { id: "gop-incheon-2", label: "GOP 인천 2026 II", slug: "gop-incheon-2026-ii-guide" },
 ];
 
 export function reviewTournamentById(id: string): ReviewTournament | undefined {
@@ -32,12 +35,12 @@ export function reviewTournamentBySlug(slug: string): ReviewTournament | undefin
   return REVIEW_TOURNAMENTS.find((t) => t.slug === slug);
 }
 
-/** 대회 후기 이벤트 (사장님 09-28 승인: 대회당 추첨 3명 × 1만 원 + 베스트 1명 × 5만 원) */
+/** 대회 후기 이벤트 (사장님 09-28 승인: 대회당 추첨 3명 × 3만 원 + 베스트 1명 × 5만 원 · 추첨 금액 1만→3만 같은 날 변경) */
 export const REVIEW_EVENT = {
   /** 응모 기간 = 대회 종료 다음날 ~ 종료일 + entryDays (KST, 마지막 날 23:59까지) */
   entryDays: 14,
   drawWinners: 3,
-  prizeDraw: "기프트콘 1만 원",
+  prizeDraw: "기프트콘 3만 원",
   bestWinners: 1,
   prizeBest: "기프트콘 5만 원",
   /** 추첨 = 응모 마감 뒤 첫 일요일 19:00 KST (기존 주간 크론과 같은 시각) */
