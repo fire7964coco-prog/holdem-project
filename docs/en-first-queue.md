@@ -161,26 +161,17 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ — cooler 인접 2는 MA-180 ⓒ «본체 진행 · 한정절 자리와 겹치면 한 커밋» → L-2a에서 | — |
 | **L-5 de 고유**(MA-182 ① · 6자리: outs FAQ «zu treffen» · limping Kurze Antwort · cooler Kurze Antwort 3문장 · position-play «schlechteste Sitz» · c-bet «Immer dann» · card-counting #24) | ⏸ 채택 — cooler 3문장은 L-2a와 한 커밋 · 나머지는 de 로케일 회차(EN 무관 · 같은 글 정답 자리 참조) | 6 |
 
-### 2-M. 우편함 수신분 — 검수장 PT 재판정 보고 MA-215 · 217~225 (2026-09-27~28 · 회신 MB-108 · 🔴 판정 미착수)
+### 2-M. 우편함 수신분 — 검수장 PT 재판정 보고 MA-215 · 217~225 (판정 09-28 · 회신 MB-110)
 
-> 검수장이 PT 33편을 레인·본부·교차 3단으로 재판정 중이다(09-28 기준 **25/33편 · 3,009행 승인 · 지적 누계 181행**). 남은 8편(strategy 2 · tournament · glossary) 보고가 더 온다.
-> 🔴 **한 회차로 묶는다**: 지적 대부분이 «EN 동형 확인»이라 **EN-먼저** 판정이다. 보고가 다 도착한 뒤 클러스터 순(rules → rankings → odds → strategy)으로 EN을 먼저 재고 PT·타 로케일 사본을 센다(메모리 «완료 전에 사본을 세라»).
-> 보고서 위치 = `~/Downloads/홀덤검수/reports/검수-본부-pt-*.md`. UNV(근거 미확보)는 지적이 아니다 — 판정 대상에서 뺀다.
+> 판정표 정본 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md`(잣대 §0 · 행별 처리 §1~4 · 렌즈 §5).
+> 🔴 잣대: 검수장의 «블록마다 한정»을 그대로 받지 않는다 — 단독 추출 단위(tldr · 직답 · FAQ 답 · 표)와 명시 전칭어만 고치고, 초보 기본값으로 라벨된 전략 조언은 두었다.
 
-| MA | 범위 | 지적(W/R) | 상태 |
-|---|---|---|---|
-| MA-215 | beginners 1편(파일럿) | W4 · R5 = 9행(#92 외 8행 EN 동형) | ⏸ |
-| MA-217 | all-in-rules · betting-actions | 27행 / 14묶음 | ⏸ |
-| MA-218 | blind-meaning · game-order · showdown | 51행 / 24묶음(game-order #90·#118은 PT 고유 FAQ) | ⏸ |
-| MA-219 | hand-rankings · kicker · tiebreak | kicker #38 R · #68 W = 2행 | ⏸ |
-| MA-220 | split-pot · reading-the-board · flush-vs-straight | W5 · R2 = 7곳 / 6묶음 | ⏸ |
-| MA-221 | probability · pot-odds · implied-odds | W3 · R13 = 16행 / 8묶음 | ⏸ |
-| MA-222 | outs · drawing-odds | R7 = 7행 / 6묶음 | ⏸ |
-| MA-223 | equity · card-counting | W9 · R7 = 16행 / 10묶음 | ⏸ |
-| MA-224 | strategy · starting-hands-chart · positions | W7 · R12 = 19행 / 12묶음 | ⏸ |
-| MA-225 | position-play · 3bet · limping | W11 · R16 = 27행 / 12묶음 | ⏸ |
-
-🪶 MA-210(착수 공지) · 212(중간 보고) · 213(작업그림 공유) · 211·214·216(ACK)은 요청 0 — MB-108에서 ACK.
+| 묶음 | 상태 | 규모 |
+|---|---|---|
+| **M-1 EN + PT 판정·정정**(도착분 25편 · 181행) | ✅ `6164c748` — 채택 166 · 기각 10 · PT만 정정 5 · implied-odds `$114` 7로케일 동반 | EN 23 · PT 23 |
+| **M-2 로케일 전파** | ▶ **다음 회차**(Opus · 레인) — 분모 = `check:drift` 핵심 드리프트(ar 6 · de·es·id·ja·zh·zh-hant 각 23) · 꼬리는 §13급만(이번엔 `$114`뿐이고 이미 반영) · 패킷 = `git diff 7dbdbf40..6164c748 -- lib/posts-en` | 핵심 144편 |
+| **M-3 남은 8편**(strategy 2 · tournament · glossary) | ⏸ 검수장 보고 도착 대기 → M-1과 같은 방식 | — |
+| **M-4 남긴 것** | 🪶 판정표 §5 «남긴 것» 4항(probability «most common winning hand» 1차 자료 부재 · betting-actions 사이드팟 사본 · position-play 본문 3곳 · 길어진 FAQ 2개) — 자동 착수 대상 아님 | 4 |
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
