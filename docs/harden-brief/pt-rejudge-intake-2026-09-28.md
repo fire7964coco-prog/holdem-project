@@ -240,3 +240,35 @@
 
 EN 순 diff를 패킷으로 — 동기 로케일은 전량 대조, 지연 로케일은 사실 앵커만(`settled-decisions` §1-C). PT는 이번 커밋에 동반했다.
 패킷 원천 = 이번 커밋의 `git diff <직전 해시>..<이번 해시> -- lib/posts-en`. PT 전용 자리(beginners #92 · game-order #90·#118 · strategy #95 · probability #74·#75)는 다른 로케일에 같은 고유 문장이 있는지 **자리별 표로** 확인한다(`settled-decisions` §3-O).
+
+## 8. M-2 로케일 전파 결과 (`25fe6027` · 2026-09-28)
+
+- 분모 144(de·es·id·ja·zh·zh-hant 각 23 + ar 6) · 회차 전 동기 144/144 → 전량 대조 · `updated`·`masterUpdated` 09-28. 레인 7 → 사본 스윕 5 → 렌즈 3종 → CJK 수정 레인.
+- PT 전용 자리 판정: probability #74(커넥터 1.3%) = ja·zh 박스 적용 · game-order #90(버튼 «보통») = zh 고유 FAQ 적용 · #118(각 공개 뒤 베팅) = zh-hant 절 캡슐 · zh beginners 박스·FAQ 적용 · 나머지 로케일 «자리 없음».
+- 🪶 **사본 스윕이 핵심이었다**: 1차 레인은 «EN 대응 자리»만 고쳐서, 로케일 고유 직답 박스·캡션·FAQ에 같은 과잉 명제가 남았다(zh는 1차에서 스스로 19자리 · 2차에서 zh-hant 11 · ja 27 · es 13 · de 8 · id 1 · ar 2). 다음 전파 회차 브리프에 «사본 스윕»을 1차 단계로 넣어라.
+- 렌즈: 유형1(사실·규칙) 0 · 유형2 3(zh-hant 올인 박스 NL/PL 누락 → 이웃 규칙과 모순 · «失去優勢» 과잉 · NL만 표기) · 파손·어색 ~25 전건 반영. ja 문단 2개가 EN과 다른 위치에 삽입돼 지시어(«この表»·«もうひとつ»)가 헛돌았다 — 위치 이동은 낱말 대조 게이트가 못 잡는다.
+- 🟠 check:mirror-pair zh↔zh-hant all-in 갈림 +1 = zh-hant «第 210、211 條» 표기를 게이트가 못 읽음 + 154 FAQ는 zh-hant에 원래 없음(구조 차이) — 결함 아님.
+
+### 8-1. 🪶 EN-먼저 후보 (사본 스윕이 «EN에도 같은 문장»이라 보류한 자리 · 자동 착수 대상 아님)
+
+EN이 한 자리만 한정하고 **같은 EN 글의 다른 자리는 단정으로 남은** 경우다. 로케일은 EN-먼저 원칙으로 따라 두었다. §5 «남긴 것»과 겹치는 축은 표시.
+
+| EN 글 | 자리(EN 줄 · 09-28 기준) | 남은 단정 | 같은 글에서 한정된 자리 |
+|---|---|---|---|
+| betting-actions | 113 캡션 · 146 · 156 · 188 | «last bet or raise»(full 없음) · «someone raises you» · 초과분=사이드팟 · BB 체크(스트래들 없음) | FAQ «full raise» · 본문 «last full» 5곳 (156은 §5와 같은 축) |
+| kicker | 194 FAQ · 198 FAQ | «board pairs everyone's ace → biggest kicker» · 보드 플레이 split(홀카드 공개 조건 없음) | 191 FAQ «two players pair… nothing better» — **같은 글 FAQ끼리 자기모순** |
+| showdown-rules | 170 FAQ · 49 · 141 · 55 | «you must show first when called» | 본문 «as bettor you may muck and give up the pot» — **충돌** |
+| position-play | 113 · 116 · 224 · 297 | SB «first to act on every postflop street» | FAQ 2곳 «three or more» (§5 X1 보류와 같은 축) |
+| beginners | 41·42 · 245 · 333 · 395 · 419 | «bet again» · SB 매 스트리트 · cheat sheet 4 라운드 · FAQ «bet after each stage» | tldr·본문 «up to four · unless all-in» |
+| starting-hands-chart | 65 · 81·103 | «always raise and often re-raise» · 버튼 항상 마지막 | AA FAQ «As your default» (§5 기각 문장과 같은 축 — MA-179 ① OK 판정 있음) |
+| strategy | 82 | «Always raise: big pairs and A-K» | chart FAQ «As your default» |
+| 3bet | 42 · 128 · 212 | 4-bet «Very strong or polarized» · «never fold» · OOP 소형 3벳 실수(스택 깊이 없음) | FAQ «often polarized» · 표 «Most often» · 본문 «normal stack depth» |
+| split-pot / all-in | split 126·215 · all-in 47·212 | «someone all-in → side pots» · 사이드팟=큰 스택 칩 | FAQ «others keep betting» · «two or more» (§5 betting-actions 사본과 같은 축) |
+| game-order | 53/54 | 블라인드 없으면 공짜 체크(«or other forced bet» 없음) | blind-meaning «or some other forced bet» |
+| positions | 60·93·97·147·162·221·225·233 | 버튼 매 핸드 · 항상 마지막 | beginners·game-order «normally» |
+| pot-odds / probability | pot 59·133 · prob 176 · prob 274 | «35% > 25% → easy call»(clean 없음) · AA «85% heads-up»(랜덤 핸드 대비 없음) | 윗행 «clean» · equity 글 한정 |
+| flush-vs-straight | 56 · 72 (+ probability 312 카드) | «rarer always wins» | 숏덱 문단만 완화 |
+| drawing-odds | 128 캡션 | «open-ender worth double a gutshot» | 본문 «half as likely» |
+| implied-odds | 본문(ja 73·84 대응) | 추가 금액을 따면 콜 이익(«완성=최강» 조건 없음) | FAQ 조건부 |
+
+우선순위 제안(스윕 3개 레인 공통): **kicker 194 · showdown 170 · betting-actions 113 캡션**(같은 글 안 자기모순·충돌) → 나머지는 §1-D 루프 경계를 보며 판단.
