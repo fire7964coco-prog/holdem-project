@@ -161,6 +161,27 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ — cooler 인접 2는 MA-180 ⓒ «본체 진행 · 한정절 자리와 겹치면 한 커밋» → L-2a에서 | — |
 | **L-5 de 고유**(MA-182 ① · 6자리: outs FAQ «zu treffen» · limping Kurze Antwort · cooler Kurze Antwort 3문장 · position-play «schlechteste Sitz» · c-bet «Immer dann» · card-counting #24) | ⏸ 채택 — cooler 3문장은 L-2a와 한 커밋 · 나머지는 de 로케일 회차(EN 무관 · 같은 글 정답 자리 참조) | 6 |
 
+### 2-M. 우편함 수신분 — 검수장 PT 재판정 보고 MA-215 · 217~225 (2026-09-27~28 · 회신 MB-108 · 🔴 판정 미착수)
+
+> 검수장이 PT 33편을 레인·본부·교차 3단으로 재판정 중이다(09-28 기준 **25/33편 · 3,009행 승인 · 지적 누계 181행**). 남은 8편(strategy 2 · tournament · glossary) 보고가 더 온다.
+> 🔴 **한 회차로 묶는다**: 지적 대부분이 «EN 동형 확인»이라 **EN-먼저** 판정이다. 보고가 다 도착한 뒤 클러스터 순(rules → rankings → odds → strategy)으로 EN을 먼저 재고 PT·타 로케일 사본을 센다(메모리 «완료 전에 사본을 세라»).
+> 보고서 위치 = `~/Downloads/홀덤검수/reports/검수-본부-pt-*.md`. UNV(근거 미확보)는 지적이 아니다 — 판정 대상에서 뺀다.
+
+| MA | 범위 | 지적(W/R) | 상태 |
+|---|---|---|---|
+| MA-215 | beginners 1편(파일럿) | W4 · R5 = 9행(#92 외 8행 EN 동형) | ⏸ |
+| MA-217 | all-in-rules · betting-actions | 27행 / 14묶음 | ⏸ |
+| MA-218 | blind-meaning · game-order · showdown | 51행 / 24묶음(game-order #90·#118은 PT 고유 FAQ) | ⏸ |
+| MA-219 | hand-rankings · kicker · tiebreak | kicker #38 R · #68 W = 2행 | ⏸ |
+| MA-220 | split-pot · reading-the-board · flush-vs-straight | W5 · R2 = 7곳 / 6묶음 | ⏸ |
+| MA-221 | probability · pot-odds · implied-odds | W3 · R13 = 16행 / 8묶음 | ⏸ |
+| MA-222 | outs · drawing-odds | R7 = 7행 / 6묶음 | ⏸ |
+| MA-223 | equity · card-counting | W9 · R7 = 16행 / 10묶음 | ⏸ |
+| MA-224 | strategy · starting-hands-chart · positions | W7 · R12 = 19행 / 12묶음 | ⏸ |
+| MA-225 | position-play · 3bet · limping | W11 · R16 = 27행 / 12묶음 | ⏸ |
+
+🪶 MA-210(착수 공지) · 212(중간 보고) · 213(작업그림 공유) · 211·214·216(ACK)은 요청 0 — MB-108에서 ACK.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

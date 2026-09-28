@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "韓国と日本は時差0時間、サマータイムもないので、土曜に着いて日曜の朝に走れます。海外マラソンで前泊1泊で済むのは韓国くらいです。韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。2026年に外国人がエントリーできるのはJTBCのみです(RUNNET受付は9/4で終了・worldsmarathons枠は同サイトで受付状況を要確認)。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-10",
+  updated: "2026-09-28",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14分",
@@ -282,6 +282,7 @@ export const POST: Post = {
 - **会場:** パラダイスシティ・カジノ、仁川(ICNターミナル1から無料シャトル)
 - **情報:** [pokerdiscover.com](https://pokerdiscover.com/series/gods-of-poker-gop-incheon-the-labyrinth-trail-incheon-30-oct-08-nov-2026)
 - 日程とバイインは主催者ページで公開済み(10/30〜11/8・メインイベント ₩1,430,000) — 参加予定の種目は開始時刻・登録締切を個別に確認
+- フライトの日程・サテライト・同じ期間に開かれるWPT Seoulとの組み合わせは[11月の韓国ポーカー大会 — パラダイスシティのGOPとWPT Seoul](/ja/blog/korea-poker-trip-gop-wpt-seoul-2026)にまとめています
 
 ---
 

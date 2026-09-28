@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#F2EEE3;
+}
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { font-size:36px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.gold { color:#C9A227; } .green { color:#39FF6A; } .red { color:#FF7A6B; }
+.hdr .sub { color:#C9A227; font-size:15px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+.foot { position:absolute; bottom:60px; left:70px; width:1060px; border-radius:14px; padding:14px 24px; background:rgba(255,255,255,.05); text-align:center; font-size:16px; font-weight:700; }
+.foot b { color:#C9A227; font-weight:900; }
+
+.cards { position:absolute; top:168px; left:70px; width:1060px; display:flex; gap:22px; }
+.c { flex:1; border-radius:18px; padding:26px 22px 26px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); text-align:center; }
+.c.warn { border-color:rgba(255,122,107,.55); }
+.c.ok { border-color:rgba(57,255,106,.5); }
+.c .k { color:#C9A227; font-size:17px; font-weight:900; letter-spacing:.04em; }
+.c .n { font-size:34px; font-weight:900; line-height:1.2; margin-top:26px; }
+.c .n small { display:block; font-size:22px; font-weight:800; margin-top:4px; }
+.c .u { opacity:.62; font-size:13px; font-weight:700; margin-top:18px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="hdr">
+    <h1>JOPT 2026 <span class="gold">大阪 #02</span></h1>
+    <div class="sub">2026.10.29(木) – 11.03(火・祝) ・ 堂島リバーフォーラム</div>
+  </div>
+  <div class="cards">
+    <div class="c warn">
+      <div class="k">メインイベント</div>
+      <div class="n">3 Tickets<small>+ &#165;8,000</small></div>
+      <div class="u">現金だけでは入れない<br>スタートチップ 50,000</div>
+    </div>
+    <div class="c ok">
+      <div class="k">サイドイベント</div>
+      <div class="n green">&#165;8,800<small>〜 &#165;300,000</small></div>
+      <div class="u">事前エントリー不要<br>会場で当日参加</div>
+    </div>
+    <div class="c">
+      <div class="k">メインの Day 1</div>
+      <div class="n">4回<small>10.29 〜 10.31</small></div>
+      <div class="u">最後は 10.31(土) 11:00<br>Day 1D Turbo</div>
+    </div>
+  </div>
+  <div class="foot">2026年9月から、メインの<b>ダイレクトバイイン(現金での直接参加)は終了</b></div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

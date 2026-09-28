@@ -97,6 +97,11 @@ Triton 제주 II 이벤트 수를 WebFetch가 한 번은 "16개", 다른 번은 
 | 바이인 범위 | **KRW 300,000 ~ 8,000,000** | A |
 | 온라인 새틀 | ⚠️ **없음(2026-07-29 기준)** — WPT Global 새틀라이트 가이드에 Seoul 미포함(캄보디아·브라티슬라바·더블린만). **"온라인으로 딸 수 있다"고 쓰지 말 것** | B |
 
+> 🔴 **2026-09-28 갱신 — 위 표의 두 행은 낡았다.** 정본 = `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §B + `2026-11-ja-korea-trip-gop-wpt.md` §7.
+> ① **이벤트 수 = 45**(wptseoul.com 「11日間・45イベント」 · 일본어 가이드 PDF 09-16판 일정표 #1~#45). 46은 7월 보도자료 값(협회 09-14 보도자료도 46을 그대로 쓴다 — 인용 금지).
+> ② **온라인 새틀 있음**: WPT Global $1.10 → $8.80 → $88 → $1,500 패키지(8/9~10/25). 🔴 단 **WPT Global 약관의 Excluded Territories에 Japan이 있다**(09-28 원문) → ja 글은 «운영사 약관이 일본을 対象外로 둔다»는 사실과 함께만 안내.
+> ③ WPT 공식 이벤트 페이지(09-28 열림): 「WPT Seoul is not considered an official event of the World Poker Tour and players will not accrue WPT Player-of-the-Year points」 · 「special event presented by Khartes」.
+
 **원문 인용 (작성자 직접 확인)**
 - `"「WPT® Seoul」を2026年10月30日（金）から11月9日（月）まで開催"`
 - `"大会期間中は全46イベントを11日間にわたり開催"`
@@ -475,6 +480,7 @@ Top of Poker(「Event **Result**」= 과거만) · poker-vertex(투어가 아니
 | 이벤트별 바이인 | ~~미공개 (2026-07-30)~~ → 🆕 **공개 (2026-09-27 · `/osaka/` 이벤트 표)**: ME Day 1A~1D 「3 Tickets + ¥8,000 / 50,000 Chips」 · 사이드 ¥8,800(NLH Lucky 8's)~¥300,000(NLH Platinum) · 표 81행. 상세 = `docs/tournament-factsheets/2026-10-jopt-osaka-02.md` | A |
 | 🔴 판정 규칙 예외 | 위 «두 곳» 규칙과 달리 **`events…/2026-osaka-02`는 09-27에도 404인데 도시 페이지 표에 금액이 올라왔다.** → «서브도메인 404 = 미공개»로 판정하지 말고 **도시 페이지 표도 같이 연다** | A |
 | 🆕 메인 현금 참가 | **불가** — 「JOPT 2026 Sapporo #02 (2026年9月18日～)以降「Main Event」および…ダイレクトバイイン(DBI)でのエントリー受付を終了します。」(`/jopt-satellite-ticket/` 2026-09-10) · 2027 Tokyo #01부터 새 「JOPT Main Event 参加権利」(「金銭的な額面や割引機能はありません」) | A |
+| 🆕 09-28 재확인 | 표 81행 = 메인 Day 1 4 + Day 2 이상 3 + 회장 새틀 8 + Employees 1 + 비(非)¥ 행 3(Heads-up 「-」·Bullet 「1 Ticket + ¥10,000」·Gladiator 「Qualifier」) + **현금 금액 행 62**(¥15,000 이하 31) · Players Guide 링크 4개 `href` null · Online Day 1 미공지 · ja 전용 글 `jopt-osaka-02-2026-guide` 발행. 상세 = 사실 시트 §7 | A |
 | 결제 | 現金(JPY)／カード／電子マネー／POKERWEB COIN／USDT **など** | A |
 | 사이드이벤트 | 「会場で**施設利用料とドリンクチケット代**を支払う」·사전등록 불요 | A |
 | 최종일 | **11/3 = 문화의 날**(공휴일) | A |

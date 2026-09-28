@@ -40,9 +40,17 @@ export function resolveBlogLinks(locale: GuideLocale): Record<string, string> {
 
   const out: Record<string, string> = {};
   for (const t of TOURNAMENTS) {
-    if (!t.blogLink) continue;
-    const slug = t.blogLink.replace(/^\/blog\//, "");
-    if (have.has(slug)) out[t.id] = `${prefix}/${slug}`;
+    // 로케일 전용 글(ja 고유 글 등)이 있으면 먼저 본다. 없거나 미발행이면 공용 blogLink로 내려간다.
+    const candidates = [t.blogLinkByLocale?.[locale], t.blogLink].filter(
+      (v): v is string => Boolean(v),
+    );
+    for (const link of candidates) {
+      const slug = link.replace(/^\/blog\//, "");
+      if (have.has(slug)) {
+        out[t.id] = `${prefix}/${slug}`;
+        break;
+      }
+    }
   }
   return out;
 }

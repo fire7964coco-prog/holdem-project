@@ -53,3 +53,50 @@
 - ja `korea-poker-marathon-2026` = 마라톤 여행 의도(§韓国のポーカートーナメント · §パラダイスシティ・カジノ에 GOP 요약) → 새 글은 **대회 참가 가이드** 의도. 서로 링크, 새 글이 «パラダイスシティ ポーカー 大会» 대회 의도를 받는다.
 - ja `apt-incheon-2026-guide`(파라다이스시티·일본인 성적) · `japan-poker-tournaments-guide`(국내 대안 · WPT TOKYO 보류 반영 여부 판단) · `/ja/tournaments`.
 - KO 3편(`wpt-seoul-2026-guide` · `gop-incheon-2026-ii-guide`)은 KO 전용 — hreflang 짝 아님(ja 고유 글).
+
+## 7. 2026-09-28 집필 전 재확인 · 발행 (Fable · 본체)
+
+> 발행 글 = `lib/posts-ja/korea-poker-trip-gop-wpt-seoul-2026.ts`. 사장님 09-28 판정: **WPT Global 온라인 예선 «안내해»**.
+
+### 7-1. 🔴🔴 WPT Global — 운영사 약관이 일본을 «Excluded Territories»에 올려 두었다
+
+| 항목 | 축어 | 출처 (열람 09-28) |
+|---|---|---|
+| 프로모션 약관 | 「Not available if you are accessing WPT® Global or any participating platform from a restricted country. See list of Excluded Countries HERE.」(HERE → `/terms-and-conditions`) | wptglobal.com/poker/promotions/wpt-seoul-2026 |
+| 제외 지역 목록 | 「The Excluded Territories are as follows: Alberta, Afghanistan, … Italy, **Japan**, Latvia, … 」 「You are prohibited from using the Services from any of the Excluded Territories.」 | wptglobal.com/terms-and-conditions |
+| 🔴 기존 문서 정정 | `docs/market-profile/ja.md` B-4/B-5의 «WPT Global ✅ 명시적 허용국(A)»(07-28)은 **더 이상 맞지 않는다** → 같은 날 정정 | — |
+| 글 처리 | 사장님 지시대로 예선 구조($1.10 → $8.80 → $88 → $1,500 · 기간 · KYC 11/1 · 호텔 10/28)는 **안내**하되, «운영사 약관이 일본을 이용 대상 밖으로 둔다»는 사실을 같은 절 첫 문단에 적었다. 법 해설 0 · 가입 CTA 0 · 우회 비권장 한 줄 | posting.mdc 합법성 규율 |
+| 패키지 호텔 | 「4 nights at Brown Dot Hotel Airport New Town (first 30 winners only)」 · 「Stay dates from November 4–8, 2026.」 · 「must confirm their intention to use it by 28 October, 2026」 | 같은 약관 |
+| 사전 등록 | 「visiting members.inspire-vip.jp/member-pre-registration/wpt」 (일본 도메인) | 같은 약관 |
+
+### 7-2. 바우처 · POKERSTATION (협회 보도자료 2건 추가 발견)
+
+| 항목 | 축어 | 출처 |
+|---|---|---|
+| 09-07 | 제목 「WPT ASIAの公式アプリとしてポーカーステーションが採用決定！」 부제 「それに伴いバウチャー提供を開始！！（2026年9月10日開始）」 · 「会場では特に事前の申請は不要でPOKERSTATIONのバウチャー画面（チケット画面）を提示するだけです。日本と連携するスタッフが多数常駐しておりますので、日本語での受付も可能です。」 · 「WPT ASIA Voucherについても、日本国内で他国に先駆けて先行販売を開始」 | prtimes.jp/main/html/rd/p/000000013.000133461.html |
+| 09-14 | 제목 「WPTSeoulがINSPIREエンターテイメントリゾートで開催！…（約1億2,000万円）」 「※1ウォン＝0.12 円（2026年8月25日時点）」 · 「大会においての利用方法は近日中にお知らせいたします」 · 「※上限に達し次第通常通常価格に戻ります」 · 🔴 본문 「全46イベント」는 낡은 값(공식 사이트·가이드 = 45) | prtimes.jp/main/html/rd/p/000000008.000133461.html |
+| 미공개 유지 | 바우처를 어느 이벤트에 몇 장까지 쓰는지 · 구 티켓을 앱에 반영하는 방법 = 두 보도자료에 없음. `/ja/faq`는 09-28 200으로 열렸으나 3문항(일정·등록·비자)뿐 — 바우처 언급 0 | — |
+
+### 7-3. WPT 서울 — 일본어 가이드 PDF(2026-09-16판 · 19쪽)로 재확인
+
+- `wptseoul.com/documents/wpt-seoul-player-guide-ja.pdf` — 🪶 `pdftotext`는 일본어 글리프를 잃는다(숫자·영문만 남음) → **PNG 렌더 육안**으로 확인.
+- #27: 「1,575,000KRW + 175,000KRW。プライズプールの3%はスタッフフィー」 · 「レイトレジストレーションはレベル10開始時まで」 · 「リエントリーは無制限」 · 「Day 1A/1B/1C：40分ブラインド、インザマネーまでプレイ。Day 2＆3：60分ブラインド」 · 「エントリー8名につき1名（約12.5%）」 · 「原則9MAX…インザマネー決定後は可能な限り早く8MAX」 · 각주 「優勝賞金には、プライズプールから拠出される2026年ワールドチャンピオンシップ参加権（$10,400・譲渡可）」
+- WYS at 50K Milestone(₩400,000): 11/1 20:30(**석 수 표기 없음** · 「SEAT GTD」) · 11/3 20:30 **2** · 11/4 13:00 **10** · 11/4 20:30 **3** · 11/5 20:30 **3** · 11/6 20:30 **5**
+- 일정표 #1~#45 · 최저 ₩300,000(#4·#14·#16) · 최고 ₩8,000,000(#29) — KO 시트 §B와 일치 ✅
+- WPT 공식 이벤트 페이지(09-28 200으로 열림): 「This is a special event presented by Khartes. Please note that WPT Seoul is not considered an official event of the World Poker Tour and players will not accrue WPT Player-of-the-Year points.」
+- ja player-info: 호텔 King ₩220,000/₩374,000 · Twin ₩253,000/₩407,000 · 그룹 코드 3285 · 「参加費はすべて韓国ウォン（KRW）…銀行振込はご利用いただけませんが、会場内には両替所やATM」 · DK Tour 「合計2,350米ドル」(연락처는 여전히 자리표시자 `+82 999 999 999` → 연락처 인용 금지)
+- ja affiliate: 통화 오표기 「¥6.60 Step → ¥66 Satellite → ¥600 Qualifier → ¥10,000 package」 **잔존** → 글에 «円として読まないで» 주의문으로 반영
+
+### 7-4. GOP 인천 II · 교통
+
+- 시리즈 페이지 100행 파싱: 번호 #0~#76 결번 0 · 헤더 「73 Total Events」 · 최저 ₩330,000(#5·9·14·19·21·38·45·53·59·67) · 최고 ₩14,700,000(#34 Demigods Challenge 11/3) — KO 시트 §C와 일치 ✅
+- #32 플라이트 레벨: A·B·C 40분 · **D 30분 · E 20분**(18:00) · Day 2·Final 60분 · 등록 마감 A~C 6:15 PM · D 5:00 PM · E 10:30 PM
+- 파라다이스시티 셔틀: T1 1층 3C 20분 간격 05:10~23:10 · T2 1층 4A 60분 간격 05:30~23:30 ✅
+- 인스파이어 셔틀(ja 페이지): T1 1층 2C·14C 8:00AM~10:20PM(평일 60분·주말 30분) · T2 1층 8A 7:30AM~10:50PM(60분) · 정원 40명 선착순 · 🆕 弘大・明洞 노선(2026-06-01~ · 인스파이어 발 9:30·13:30·17:30)
+- 인스파이어 일본 사무소: 東京 03-5545-5858 · 大阪 06-6484-8771 · 福岡 092-292-3575 · 名古屋 052-890-9711(ja casino 페이지)
+
+### 7-5. 엔 환산 · 범위 판단
+
+- 기준 = **1ウォン=0.12円**(09-14 보도자료 환산과 동일 · 09-28 시장 환율 0.116 · 1달러 157엔) → 글 전체 «目安»로 통일.
+- §5 AJPC サムライサーキット 12월: 1차 출처를 열지 않았다 → **글에 언급하지 않음**.
+- APT 기록(37.8% · FT 5/9)은 «APTという別のツアーの数字»라고 본문에 명시(층 혼동 방지).

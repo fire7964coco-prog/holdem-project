@@ -54,6 +54,12 @@ export interface Tournament {
   highlight?: boolean;
   /** 우리 블로그 상세 가이드 */
   blogLink?: string;
+  /**
+   * 로케일 전용 가이드 slug(언어 고유 글). 있으면 그 로케일에서는 `blogLink`보다 먼저 본다.
+   * 예: ja 고유 글이 KO 가이드와 slug가 다른 경우(hreflang 짝이 아닌 글).
+   * 값은 blogLink와 같은 "/blog/<slug>" 형태. 존재 검사는 resolveBlogLinks가 한다.
+   */
+  blogLinkByLocale?: Partial<Record<string, string>>;
 
   /**
    * ★ 독자에게 링크할 URL.
@@ -760,6 +766,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
     note: "같은 기간 영종도에서 WPT Seoul도 동시 개최 (베뉴 다름)",
     blogLink: "/blog/gop-incheon-2026-ii-guide",
+    blogLinkByLocale: { ja: "/blog/korea-poker-trip-gop-wpt-seoul-2026" },
     /**
      * 🔴 sourceUrl을 `/series/incheon-2026-ii` → `/series`로 바꿨다(2026-08-31).
      *   그 URL은 **`/news/gods-of-poker-incheon`으로 리다이렉트**되는데 그 기사(1/4 게시)에는
@@ -790,6 +797,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "45개 이벤트 · 메인 11/5~9 (₩175만, 10억 GTD) · 70테이블 신설 포커룸",
     highlight: true,
     blogLink: "/blog/wpt-seoul-2026-guide",
+    blogLinkByLocale: { ja: "/blog/korea-poker-trip-gop-wpt-seoul-2026" },
     // 🔴 2026-09-23 이벤트 수 46 → 45: wptseoul.com 「11 days, 45 events」·선수 가이드 두 판·일정표 번호 #1~#45 결번 0.
     //    46은 7월 보도자료 값(docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md §B).
     // ⚠️ worldpokertour.com은 Cloudflare 403이라 독자도 못 열 수 있음
@@ -972,10 +980,10 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "¥8,800~¥300,000",
     emoji: "🇯🇵",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
-    blogLink: "/blog/japan-poker-tournaments-guide",
+    blogLink: "/blog/jopt-osaka-02-2026-guide", // 2026-09-28 ja 전용 가이드 신설(그 전엔 국내 3투어 허브)
     sourceUrl: "https://japanopenpoker.com/osaka/",
     sourceTier: "A",
-    verifiedAt: "2026-09-27",
+    verifiedAt: "2026-09-28",
   },
   {
     id: "jopt-tokyo-2027-1",

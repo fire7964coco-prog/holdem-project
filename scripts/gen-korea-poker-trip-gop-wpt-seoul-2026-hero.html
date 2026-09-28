@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#F2EEE3;
+}
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { font-size:36px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.gold { color:#C9A227; } .green { color:#39FF6A; } .red { color:#FF7A6B; }
+.hdr .sub { color:#C9A227; font-size:15px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+.foot { position:absolute; bottom:60px; left:70px; width:1060px; border-radius:14px; padding:14px 24px; background:rgba(255,255,255,.05); text-align:center; font-size:16px; font-weight:700; }
+.foot b { color:#C9A227; font-weight:900; }
+
+.cards { position:absolute; top:156px; left:70px; width:1060px; display:flex; gap:26px; }
+.c { flex:1; border-radius:18px; padding:24px 26px 20px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); }
+.c .nm { color:#C9A227; font-size:26px; font-weight:900; }
+.c .vn { font-size:15px; font-weight:800; opacity:.8; margin-top:6px; }
+.c .rows { margin-top:14px; }
+.c .r { display:flex; justify-content:space-between; align-items:baseline; padding:11px 0; border-top:1px solid rgba(242,238,227,.09); }
+.c .r .k { opacity:.6; font-size:14px; font-weight:700; }
+.c .r .v { font-size:17px; font-weight:800; text-align:right; }
+.c .r .v.big { font-size:26px; font-weight:900; color:#39FF6A; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="hdr">
+    <h1>11月の仁川で <span class="gold">2つの大会</span>が重なる</h1>
+    <div class="sub">2026年10月30日 開幕 ・ どちらも仁川空港のある永宗島</div>
+  </div>
+  <div class="cards">
+    <div class="c">
+      <div class="nm">GOP仁川 II</div>
+      <div class="vn">パラダイスシティ ・ 10.30 – 11.08</div>
+      <div class="rows">
+        <div class="r"><span class="k">メインの参加費</span><span class="v big">&#8361;1,430,000</span></div>
+        <div class="r"><span class="k">円の目安</span><span class="v">約17.2万円</span></div>
+        <div class="r"><span class="k">メインの保証</span><span class="v">6億ウォン</span></div>
+        <div class="r"><span class="k">メインの Day 1</span><span class="v">11.03 – 11.06</span></div>
+      </div>
+    </div>
+    <div class="c">
+      <div class="nm">WPT Seoul</div>
+      <div class="vn">インスパイア ・ 10.30 – 11.09</div>
+      <div class="rows">
+        <div class="r"><span class="k">メインの参加費</span><span class="v big">&#8361;1,750,000</span></div>
+        <div class="r"><span class="k">円の目安</span><span class="v">約21万円</span></div>
+        <div class="r"><span class="k">メインの保証</span><span class="v">10億ウォン</span></div>
+        <div class="r"><span class="k">メインの Day 1</span><span class="v">11.05 – 11.07</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">円は <b>1ウォン=0.12円</b> の目安 ・ 支払いはウォン建て</div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

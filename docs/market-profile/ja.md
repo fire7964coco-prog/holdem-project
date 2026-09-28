@@ -96,7 +96,7 @@
 | 필요한 1차 출처 | 刑法 第185条(賭博)·第186条(常習賭博および賭博場開張等図利), 警察庁 자료 | |
 | **Natural8** | ✅ (GGNetwork APAC 스킨, 일본 시장 대상) | **A** |
 | **GGPoker** | ✅ **일본어 UI 제공** | **A** |
-| **WPT Global** | ✅ **명시적 허용국** | **A** |
+| **WPT Global** | 🔴 **이용 대상 밖(2026-09-28 정정)** — 운영사 약관 `wptglobal.com/terms-and-conditions`의 「The Excluded Territories are as follows: … Italy, **Japan**, Latvia …」 「You are prohibited from using the Services from any of the Excluded Territories.」 · 07-28의 «✅ 명시적 허용국»은 더 이상 맞지 않는다. 글에는 «운영사 약관이 일본을 対象外로 둔다»는 사실로만(법 해설 금지) | **S** |
 | **PokerStars** | ✅ (.com 글로벌) | **A** |
 
 > **글쓰기 지침**: 일본 독자에게 실무 질문은 "합법이냐"가 아니라 **"어디서 시트를 딸 수 있느냐"**다. 법은 FAQ 하나로 짧게, 부정형 결론 금지.

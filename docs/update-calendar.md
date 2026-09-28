@@ -428,11 +428,19 @@
 
 ## 10월
 
-### 🆕 ★★ 10/1 (목) · 10/2~10/6 — ja 대회 글 2편 D-28 시한 (등재 2026-09-27 · 나라별 대회 트랙 재개)
-- **A 오사카 #02**(개막 10/29) D-28 = **10/1** · 사실 시트 `docs/tournament-factsheets/2026-10-jopt-osaka-02.md`
-- **B 한국 원정 GOP 인천 II + WPT 서울**(페스티벌 10/30 · 메인 Day 1 11/3·11/5) D-28 = **10/2~10/6** · 시트 `2026-11-ja-korea-trip-gop-wpt.md`
-- 넘기면 정본 게이트(`native-tournament-posting-workflow.md` §2-2) D-8~27 = «일정·관전 중심으로 축소». 집필 = Fable(사장님 09-27).
-- 후보 전체 = `docs/tournament-factsheets/2026-q4-ja-candidates.md`
+### ✅ 10/1 (목) · 10/2~10/6 — ja 대회 글 2편 D-28 시한 → **2026-09-28 두 편 발행** (`jopt-osaka-02-2026-guide` · `korea-poker-trip-gop-wpt-seoul-2026`)
+- 사실 시트 §7(09-28 재확인) = `docs/tournament-factsheets/2026-10-jopt-osaka-02.md` · `2026-11-ja-korea-trip-gop-wpt.md` · 남은 후보 C~F = `2026-q4-ja-candidates.md`
+
+### 🆕 ★ 10/초~10/중 — ja 신규 2편 «미발표 → 공개» 추적 (등재 2026-09-28)
+- **오사카 #02 Players Guide 공개** → 글의 受付締切(note·FAQ·이미지 `jopt-osaka-02-2026-main-flights` 하단 문구) · プライズ総額 절 갱신. 확인 = `japanopenpoker.com/osaka/` Players Guide 링크 `href`(09-28엔 null) + `events.japanopenpoker.com/2026-osaka-02`
+- **오사카 #02 Online Day 1 공지** → 「オンライン Day 1はあるのか」 절 · FAQ · まとめ. 확인 = 공식 WP 게시물 검색 「Online Day 1」
+- **WPT 서울 바우처 이용 방법 공지**(협회 09-14 «近日中») → 「WPT TOKYOのチケットはどうなる?」 절 note. 확인 = prtimes company_id 133461 · wptseoul.com/ja
+- 새틀 캘린더 스냅샷(글의 «大阪 #02向け 16件・3店舗» 표 · 東京 #03向け 35件 = 09-28 값)은 아래 «10/중 재측정» 때 같이 본다 — API `categories`로 대회별 분리해서 셀 것
+
+### 🆕 ★ 10/31 (토) 11:00 · 11/5~11/7 — ja 신규 2편 «마지막 입구» (등재 2026-09-28)
+- **10/31 11:00** 오사카 #02 Day 1D Turbo = 메인 마지막 Day 1(사이드는 11/3까지 유효)
+- **11/5 19:00** GOP 메인행 마지막 새틀(#53 Last Chance) · **11/6 18:00** GOP Flight E · **11/6 20:30** WPT 서울 마지막 WYS 새틀 · **11/7 18:00** WPT 서울 Day 1D
+- 지난 뒤에도 글이 거짓이 되지는 않게 날짜를 명시해 뒀다 — 전환은 아래 종료 회차에 묶는다
 
 ### 🆕 10/11 (일) · 10/12 (월) — ja `japan-poker-tournaments-guide` «다음 대회» 만료 2건 (등재 2026-09-27)
 - **10/11 GO TOKUSHIMA 종료** → NIPPON SERIES 절 note 「GO NAGASAKIの次は GO TOKUSHIMA…その次はまだ」가 과거가 된다 → 다음 대회 공지 확인(`nippon-series.jp`) · 개최 실적 표에 편입
@@ -440,7 +448,7 @@
 - 한 회차로 묶는다(10/12 이후).
 
 ### 🆕 10/25 (일) — WPT 서울 온라인 예선 종료 · 10/26 제휴 새틀 기간 종료 (등재 2026-09-27)
-- **대상**: ja 한국 원정 글(발행했다면) + KO `wpt-seoul-2026-guide` — 예선 안내 문장을 과거형으로
+- **대상**: ja `korea-poker-trip-gop-wpt-seoul-2026`(09-28 발행 · 「オンライン予選は日本から使えるのか」 절의 :::steps) + KO `wpt-seoul-2026-guide` — 예선 안내 문장을 과거형으로
 - 근거: wptseoul.com/ja/affiliate 「2026年8月9日〜10月26日」 · WPT Global 퀄리파이어 일요일 ~10/25(KO 시트 §B)
 
 ### ✅ 10/초 — JOPT 오사카 #02 바이인 표 공개 확인 → **09-27 공개 확인·반영**(`/osaka/` 이벤트 표 · ja 기존 글 `6ef03433` · 보드 `ff9b4a94` · 스파인 §3-2). 아래는 07-30 원문(취소된 글 기준 · 새 글은 위 10/1 항목)
@@ -469,8 +477,9 @@
 
 ## 11월
 
-### 11/3 (화) — JOPT 오사카 #02 종료
-- 🔴 **대상 파일이 없다**: `lib/posts-ja/jopt-osaka-2026-guide.ts`는 `3d41c61`(2026-07-30)에서 **발행 취소**됐다(적대적 검수 치명적 사실오류 6건). 이 항목을 살리려면 **글을 새로 쓰는 판단이 먼저**다. 원래 대상
+### 11/3 (화) — JOPT 오사카 #02 종료 · 11/8·11/9 — GOP 인천 II·WPT 서울 종료 (ja 신규 2편)
+- ✅ **대상 파일이 생겼다(2026-09-28)**: `lib/posts-ja/jopt-osaka-02-2026-guide.ts` · `lib/posts-ja/korea-poker-trip-gop-wpt-seoul-2026.ts` — 결과 아카이브 전환은 리드·先に結論·要点 stripe·まとめ **4곳 동시**(apt-incheon «반쪽 전환» 사고). 일본 선수 성적은 1차 출처 확인분만.
+- 🪶 (옛 메모 · 07-30 취소분 기준) **대상 파일이 없다**: `lib/posts-ja/jopt-osaka-2026-guide.ts`는 `3d41c61`(2026-07-30)에서 **발행 취소**됐다(적대적 검수 치명적 사실오류 6건). 이 항목을 살리려면 **글을 새로 쓰는 판단이 먼저**다. 원래 대상
 - **할 일**: 결과 아카이브 전환 (엔트리 수·우승자)
 - ★ **오사카 #01(3월)은 공식 결과가 부존재**했다(afterreport 404). 이번에도 안 나올 수 있으니
   **나오지 않으면 "공표되지 않았다"고 쓴다.** 추측 금지
