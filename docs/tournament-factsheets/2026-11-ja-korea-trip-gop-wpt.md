@@ -65,7 +65,7 @@
 | 프로모션 약관 | 「Not available if you are accessing WPT® Global or any participating platform from a restricted country. See list of Excluded Countries HERE.」(HERE → `/terms-and-conditions`) | wptglobal.com/poker/promotions/wpt-seoul-2026 |
 | 제외 지역 목록 | 「The Excluded Territories are as follows: Alberta, Afghanistan, … Italy, **Japan**, Latvia, … 」 「You are prohibited from using the Services from any of the Excluded Territories.」 | wptglobal.com/terms-and-conditions |
 | 🔴 기존 문서 정정 | `docs/market-profile/ja.md` B-4/B-5의 «WPT Global ✅ 명시적 허용국(A)»(07-28)은 **더 이상 맞지 않는다** → 같은 날 정정 | — |
-| 글 처리 | 사장님 지시대로 예선 구조($1.10 → $8.80 → $88 → $1,500 · 기간 · KYC 11/1 · 호텔 10/28)는 **안내**하되, «운영사 약관이 일본을 이용 대상 밖으로 둔다»는 사실을 같은 절 첫 문단에 적었다. 법 해설 0 · 가입 CTA 0 · 우회 비권장 한 줄 | posting.mdc 합법성 규율 |
+| 글 처리 | 사장님 지시대로 예선 구조($1.10 → $8.80 → $88 → $1,500 · 기간 · KYC 11/1 · 호텔 10/28)는 **안내**하되, «운영사 약관이 일본을 이용 대상 밖으로 둔다»는 사실을 같은 절 첫 문단에 적었다. 법 해설 0 · 가입 CTA 0 · 우회 비권장 한 줄. ✅ **사장님 확정(09-28): «제외 문구 넣었으면 됐어» — 이 문면으로 종결 · 재론하지 않는다** | posting.mdc 합법성 규율 |
 | 패키지 호텔 | 「4 nights at Brown Dot Hotel Airport New Town (first 30 winners only)」 · 「Stay dates from November 4–8, 2026.」 · 「must confirm their intention to use it by 28 October, 2026」 | 같은 약관 |
 | 사전 등록 | 「visiting members.inspire-vip.jp/member-pre-registration/wpt」 (일본 도메인) | 같은 약관 |
 

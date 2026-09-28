@@ -46,7 +46,6 @@
 ## F. 나라별 대회 트랙 재개 — ja 먼저 (사장님 09-27 · 플레이북 §00 개정)
 
 - ✅ **ja 신규 2편 발행**(09-28 · MB-108 · WORKLOG 09-28 (1)): `jopt-osaka-02-2026-guide` · `korea-poker-trip-gop-wpt-seoul-2026`. 사실 정본 = 각 사실 시트 §7(09-28 재확인).
-- 🔴 **사장님 확인 1건**: «WPT Global 온라인 예선 안내해» 지시대로 예선 구조는 안내했으나, **WPT Global 약관의 Excluded Territories에 Japan이 있다**(09-28 원문) → 글은 «운영사 약관이 일본을 対象外로 둔다»를 함께 적었다. 이 절을 빼거나 표현을 바꾸려면 말씀 주시면 그 절만 고친다(시트 `2026-11-ja-korea-trip-gop-wpt.md` §7-1).
 - ▶ **두 글의 후속 갱신은 전부 캘린더에**(`docs/update-calendar.md` 10월 «미발표 → 공개 추적» · «마지막 입구» · 11월 종료 회차): 오사카 Players Guide(受付締切·プライズ総額) · 오사카 Online Day 1 공지 · WPT 서울 바우처 이용 방법 공지 · 10/25 온라인 예선 종료 · 11/3·11/8·11/9 결과 아카이브(4곳 동시).
 - 남은 후보 C APT 타이베이(D-28 10/15~26) · D JOPT 2027 도쿄#01(11/26) · E WPT WC · F SPADIE — 캘린더 등재 · 지시 대기. `lib/tournaments.ts` 어긋남 4건(후보 문서 §4)은 별도 회차.
 - 🪶 보드 링크: 로케일 고유 글은 `blogLinkByLocale`(`lib/tournaments.ts` · 해석 = `lib/tournaments-blog-links.ts`)에 건다 — KO 가이드와 슬러그가 다른 ja 글을 대회 카드에 띄우는 자리.
