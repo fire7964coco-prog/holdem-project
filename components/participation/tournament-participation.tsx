@@ -384,6 +384,15 @@ export function ReviewsSection({ p, state }: { p: ParticipationProps; state: Ret
  * 대회 전/중 = 참가 예정 수 + [나도 참가] · 대회 후 = 후기 수 + 가이드 «참가자 후기»로 가는 링크.
  * DB를 못 읽으면 아무것도 그리지 않는다(카드 높이만 조금 줄어든다 — 카드 목록 맨 아래 줄이라 밀림이 없다).
  */
+/** [나도 참가]를 가리키는 깜빡이는 파랑 네온 화살표 — 스타일은 globals.css .neon-arrow */
+function NeonArrow() {
+  return (
+    <svg className="neon-arrow shrink-0" width="22" height="16" viewBox="0 0 22 16" aria-hidden="true">
+      <path d="M1 8h15M11 2l7 6-7 6" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function BoardParticipation({ p }: { p: ParticipationProps }) {
   const state = useTournamentParticipation(p);
   const { data, reload, phase } = state;
@@ -422,6 +431,7 @@ export function BoardParticipation({ p }: { p: ParticipationProps }) {
       <span className="font-semibold text-foreground">
         {ready.attendCount >= MIN_VISIBLE_COUNT ? <>🙋 참가 예정 {ready.attendCount}명</> : <>🙋 가시나요?</>}
       </span>
+      {!ready.iAttend && <NeonArrow />}
       {ready.isLoggedIn ? (
         <button type="button" onClick={onToggle} disabled={busy} aria-pressed={ready.iAttend}
           className={`${chip} ${ready.iAttend ? "border border-primary/40 text-primary-ink" : "bg-primary text-primary-foreground hover:opacity-90"} disabled:opacity-50`}>

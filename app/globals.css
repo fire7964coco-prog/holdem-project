@@ -465,6 +465,25 @@
   }
 }
 
+/* ── [나도 참가] 옆 네온 화살표 (대회 보드 · 사장님 09-29) ──
+   굵은 파랑 네온 + 선을 따라 붙는 진한 블러(drop-shadow 3겹). opacity만 움직여 합성 레이어에서 끝난다.
+   ★무한 반복 금지(위 calc-glow 주석 — Lighthouse 안정 판정) → 1.1초 × 24회(약 26초) 뒤 켜진 채 멈춘다.
+   reduced-motion은 전역 규칙이 1회로 줄여 켜진 상태로 남는다. */
+@keyframes neon-arrow-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.12; }
+}
+.neon-arrow {
+  color: #1463ff;
+  /* 블러는 선을 따라 붙게 반경을 짧게(1·2.5·4px) — 12px는 덩어리로 번졌다(사장님 09-29) */
+  filter:
+    drop-shadow(0 0 1px #8cc4ff)
+    drop-shadow(0 0 2.5px #1a6bff)
+    drop-shadow(0 0 4px #1a6bff);
+  animation: neon-arrow-blink 1.1s ease-in-out 24;
+  will-change: opacity;
+}
+
 /* ── 배지 (NEW · HOT · TIP 등) ──────────────────── */
 .badge-gold {
   display: inline-flex;
