@@ -80,10 +80,14 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
   fr: ["/fr/blog", "/fr/calculator", "/fr/solver"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
-  //      ⚠ **`/id/tournaments`는 없다.** 없는 라우트를 넣지 마라.
-  id: ["/id/blog", "/id/calculator", "/id/solver"],
+  // ★2026-09-29 `/id/tournaments` 신설(해외 원정 캘린더 · 회차 1 id·ms·vi).
+  id: ["/id/blog", "/id/calculator", "/id/solver", "/id/tournaments"],
   // ms — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
-  ms: ["/ms/calculator", "/ms/solver"],
+  // ★2026-09-29 `/ms/tournaments` 신설.
+  ms: ["/ms/calculator", "/ms/solver", "/ms/tournaments"],
+  // vi — ★2026-09-29 `/vi/tournaments` 신설. vi의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
+  //      ⚠ vi에는 solver·calculator가 **없다** — 넣지 마라.
+  vi: ["/vi/tournaments"],
   // hi — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   hi: ["/hi/calculator", "/hi/solver"],
 };

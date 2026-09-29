@@ -1,3 +1,13 @@
+## 2026-09-29 (9) — /tournaments 로케일 신설 회차 1: id · ms · vi
+
+- 사장님 09-29 승인분(핸드오프 ▶▶). de 방식: `app/{id,ms,vi}/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·PAREN·CITY(vi)·COUNTRY_NAME·NAME_OVERRIDE·SCHEMA_DESC·MONTH·RANGE_DASH · NOTE는 비움(배지 미표시) · hreflang 한 곳 + sitemap `TOURNAMENT_LOCALES` · hub-routes(vi는 첫 HubPage) · side-rail(id «Turnamen»·ms «Tournament» = 필라 라벨 축어 · vi «Giải poker» = h1 핵심명) · 게이트 BOARD_LOCALES 9로케일.
+- 검색 형태(DataForSEO 월 볼륨): id «poker tournament» 90·«turnamen poker» 50 · ms «poker tournament»=«tournament poker» 90·«kejohanan poker» 없음 · vi «poker tournament» 210·«giải poker» 70. 규모 작음 — 목적은 해당 언어 글의 대회 링크 착지점.
+- 취지 = 해외 원정 캘린더: HOME_COUNTRY id·ms = PH·KH·VN·KR·TW·JP / vi = VN 먼저. FAQ·로컬 블록 사실은 보드 행(`lib/tournaments.ts`)과 한국 카지노 입장 사실 시트(`2026-10-kr-apl-wpt-gop.md` INSPIRE·Paradise City 축어)만 사용 · 합법성·세금·비자 미기재. id·vi는 천 단위 마침표 함수(`localizeThousands`).
+- 🔴 같이 고친 기존 결함(전 로케일): ① `clamp()` — 진행중 대회가 한 건도 안 들어가면 절째 제거(de·es desc가 «Läuft gerade: 8th Holdem»으로 잘려 나가고 있었다) ② 물결표 정규식 — `NT$`·`R$`·`TWD` 범위가 전 로케일에서 «~» 그대로였다 ③ `tmt-19` BRAND_LOCKED 누락 — ja·zh·zh-hant·es에서 «台湾 Millions Tournament».
+- 아스트라 교차 검수(read-only 스크래치 · 3로케일 편집자 페르소나) 16건 → 채택 13(«세 가지 빼고 전부 열림» 단정에 APL SEAT 전용 추가 · 로컬 블록 입장 조건을 INSPIRE·Paradise City로 한정(LES A는 시트 밖) · 새틀라이트 빈도 단정 완화 · heroLead 직역투 3 · vi «vé suất»→«vé tham dự») · 기각 3(WSOP 상금 = de와 같은 의도적 생략 · APT 공개일 «13 November» 신규 날짜는 원문 미확인이라 미기재).
+- 날짜 문장 만료 → 캘린더 11월 절(10/19·11/29·12/21).
+- 게이트: check:tournaments-i18n 🔴0(9로케일 · 셀프 9/9) · build 73+612 · static 81 · hreflang 0 · meta-lang 0 · 390/1440 화면(overflow 0).
+
 ## 2026-09-29 (8) — /tournaments 보드 WWP Series 5 카드 편입
 
 - 사장님 지시(«넣어줘»). `lib/tournaments.ts` `wwp-series-5` 신설(9/24~10/11 · Win Win Poker · 메인 NT$6,000 / 10M GTD · zh-hant 일정 모음 글 링크) + note 5로케일(en·ja·zh·zh-hant·es).

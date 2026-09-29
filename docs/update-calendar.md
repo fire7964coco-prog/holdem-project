@@ -518,6 +518,12 @@
 - 후보 D(ja 전용 글) 시한 · 기존 ja 글 FAQ 「必要な権利の数は…まだ公開されていません」 갱신 자리
 - 확인: `japanopenpoker.com/events/` · `events.japanopenpoker.com/2027-tokyo-01`(200/404) + **도시 페이지 표도 같이**(스파인 §3-2 판정 규칙 예외 — 오사카 #02는 서브도메인 404인데 도시 표에 금액이 떴다)
 
+### 🆕 10/19 · 11/29 · 12/21 — id·ms·vi `/tournaments` 보드 FAQ·로컬 블록의 날짜 문장 만료 (신설 2026-09-29)
+- **대상**: `lib/tournaments-i18n.ts` `const id`·`const ms`·`const vi`의 faqs[0]·localBlocks[0]·[1] (보드 카드 자체는 날짜로 자동 전환 — 이 문장들만 정적이다)
+- 10/19 APPT Manila Championship 종료 → «8–19 Oktober 2026» 문장을 과거형 또는 다음 마닐라 시리즈로 · 11/29 APT Championships 종료 → «Musim gugur ini / Musim luruh ini / Mùa thu này» 블록 교체 · 12/21 Manila December Special 종료 → 마닐라 블록 교체
+- vi faqs[0]의 USOP Vietnam 과거형은 그 행(`usop-vietnam-2`)이 보드에 남아 있는 동안만 맞다
+- 🔴 사실은 `lib/tournaments.ts` 행에서만 가져온다(외부 추측 금지) · 교체 뒤 `check:tournaments-i18n` · build
+
 ### 11/13~29 — APT 챔피언십 타이베이
 - **대상**: `apt-incheon-2026-guide` (전 언어) — 「そのシートで行ける場所」 절
 - **할 일**: APTC 결과가 나오면 인천 글의 시트 가치 서술을 갱신

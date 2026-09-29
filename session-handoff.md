@@ -5,7 +5,8 @@
 
 ## ▶▶ 다음 세션 (09-29 갱신)
 
-- ▶▶ **`/tournaments` 로케일 신설 — 사장님 09-29 승인 · 새 세션 첫 작업.** 현재 = ko + `TOURNAMENT_LOCALES`(`lib/tournaments-hreflang.ts`) en·ja·zh·zh-hant·es·de. 취지 = 자국 대회가 없어도 «해외 대회 캘린더». **de 방식**: `app/<l>/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·CITY·VENUE·PAREN·SCHEMA_DESC·MONTH·COUNTRY_NAME·RANGE_DASH · **NOTE(카드 설명)는 비워 둔다**(미등재 = 배지 미표시 · 설계) · hreflang 한 곳 + `scripts/generate-sitemap.mjs` `TOURNAMENT_LOCALES` 동시 갱신.
+- ✅ **회차 1 id·ms·vi 배포**(WORKLOG 09-29 (9)) · 날짜 문장 만료 = 캘린더 11월 절. ▶ 다음 = **회차 2 pt·tr·hi·ar** (사장님 지시 시 · 방식은 회차 1 커밋 그대로 · pt는 hub-routes·side-rail에 «/pt/tournaments 없다» 경고 주석이 있으니 같이 고친다).
+- ▶▶ **`/tournaments` 로케일 신설 — 사장님 09-29 승인.** 현재 = ko + `TOURNAMENT_LOCALES`(`lib/tournaments-hreflang.ts`) en·ja·zh·zh-hant·es·de. 취지 = 자국 대회가 없어도 «해외 대회 캘린더». **de 방식**: `app/<l>/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·CITY·VENUE·PAREN·SCHEMA_DESC·MONTH·COUNTRY_NAME·RANGE_DASH · **NOTE(카드 설명)는 비워 둔다**(미등재 = 배지 미표시 · 설계) · hreflang 한 곳 + `scripts/generate-sitemap.mjs` `TOURNAMENT_LOCALES` 동시 갱신.
   | 회차 | 로케일 | 비고 |
   |---|---|---|
   | 1 | id · ms · vi | 아시아 원정 수요(보드 적합도 높음) |

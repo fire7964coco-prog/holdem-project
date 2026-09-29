@@ -22,14 +22,17 @@ function clamp(text: string, max: number): string {
   // ★ 진행중 목록이 이름 중간에서 잘리면("7th Holdem") SERP에 깨져 보인다.
   //    쉼표·중점 기준으로 마지막 온전한 항목까지만 남긴다.
   const lastItem = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("、"), cut.lastIndexOf("・"));
-  const head = text.slice(0, max).search(/(Running now|開催中|进行中|進行中|En curso|진행중)/);
+  const head = text.slice(0, max).search(/(Running now|開催中|进行中|進行中|En curso|Läuft gerade|Sedang berlangsung|Đang diễn ra|진행중)/);
   if (head >= 0 && lastItem > head) return cut.slice(0, lastItem).trimEnd().replace(/[,、·・]+$/, "") + ".";
+  // 🔴 2026-09-29: 진행중 대회가 «한 건도 온전히» 안 들어가면 절을 통째로 뺀다.
+  //    쉼표가 없으니 위 분기를 못 타고 공백 자르기로 떨어져 de·es가 «Läuft gerade: 8th Holdem»으로 나가고 있었다.
+  if (head >= 0) return cut.slice(0, head).trimEnd();
   const sp = cut.lastIndexOf(" ");
   // 잘린 자리에 남는 나열 부호(", "·"·"、")를 떼어낸다 — "…WSOP 2026,"으로 끝나면 지저분하다
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
-export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de";
+export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi";
 
 export interface BoardStrings {
   /** <html lang> 및 og:locale용 */
@@ -744,7 +747,294 @@ const de: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de };
+/* ────────────────────────────────────────────────────────────
+   id · ms · vi — 2026-09-29 신설 (사장님 승인 · 회차 1).
+   취지 = 자국에 큰 대회가 없어도 «해외 원정 캘린더». 그래서 FAQ·로컬 블록은
+   «가장 가까운 원정지»(필리핀·캄보디아·한국·대만)를 축으로 쓴다.
+
+   🔴 사실은 전부 이 보드의 데이터(lib/tournaments.ts) 또는 이미 원문 확인된
+      사실 시트에서만 가져왔다 — 한국 카지노 입장 자격은
+      docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md(INSPIRE·Paradise City 원문 축어).
+   🔴 합법성·세금·비자는 쓰지 않는다(메모리 legality-ban-scope · 원문 확인 안 됨).
+   ★ 검색 형태 (DataForSEO 2026-09-29 · Google Ads 월 볼륨):
+     id  «poker tournament» 90 · «turnamen poker» 50 → h1은 현지어, desc에 영어형 병기
+     ms  «poker tournament» = «tournament poker» 90 · «kejohanan poker» 없음 → 영어 차용어 그대로
+         (ms 블로그·필라 라벨도 «Tournament»)
+     vi  «poker tournament» 210 · «giải poker» 70 · «giải đấu poker» 20 → h1은 «giải poker», 제목 폴백에 영어형
+   ⚠ 이 규모는 작다. 목적은 헤드텀 순위가 아니라 id·ms·vi 글의 대회 링크가 한국어 보드로 떨어지지 않게 하는 것.
+   ──────────────────────────────────────────────────────────── */
+const id: BoardStrings = {
+  htmlLang: "id",
+  ogLocale: "id_ID",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Turnamen Poker 2026 — ${next} mulai ${mmdd}`;
+    return next && hooked.length <= 52 ? hooked : "Jadwal Turnamen Poker 2026";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `Semua turnamen poker live besar 2026 dalam satu tabel: tanggal, buy-in, dan sumber resmi setiap poker tournament. Per ${todayDot}. ${ongoing}`,
+      158,
+    ),
+
+  h1: "Jadwal Turnamen Poker 2026",
+  heroLead:
+    "Informasi setiap turnamen di daftar ini kami periksa langsung di situs penyelenggara, dan setiap kartu menautkan sumbernya. Status diperbarui otomatis berdasarkan tanggal turnamen. Jadwal bisa berubah — kalau ragu, halaman resmi yang berlaku.",
+  asOf: (dot) => `Data per ${dot}`,
+
+  filterAll: "Semua",
+  filterUpcoming: "Akan datang",
+  filterOngoing: "Sedang berlangsung",
+  filterEnded: "Selesai",
+
+  filterAllCountries: "Semua negara",
+  // ★ 인도네시아 대회는 이 보드에 없다 — 칩 = 가장 가까운 원정지(HOME_COUNTRY.id).
+  homeCountryNames: {
+    PH: "Filipina", KH: "Kamboja", VN: "Vietnam", KR: "Korea Selatan", TW: "Taiwan", JP: "Jepang",
+  },
+
+  colDates: "Tanggal",
+  colBuyin: "Buy-in",
+  colVenue: "Lokasi",
+
+  status: { upcoming: "Akan datang", ongoing: "Sedang berlangsung", ended: "Selesai" },
+  yearRound: "Sepanjang tahun",
+  datesTba: "Tanggal belum diumumkan",
+  officialSite: "Situs resmi",
+  guideLink: "Panduan lengkap",
+  buyinUnlisted: "Belum diumumkan",
+
+  countsLine: (total, countries) => `${total} turnamen · ${countries} negara`,
+  sourceNote:
+    "Jika halaman penyelenggara sendiri masih menampilkan informasi tahun lalu, kami memilih tidak menautkannya daripada mengirim Anda ke sana.",
+  emptyState: "Belum ada turnamen yang cocok dengan filter ini.",
+  koLink: "Jadwal versi Korea →",
+
+  faqHeading: "Pertanyaan yang sering diajukan",
+  faqs: [
+    {
+      q: "Turnamen poker besar mana yang paling dekat dari Indonesia?",
+      a: "Tidak ada seri internasional di tabel ini yang digelar di Indonesia. Yang paling dekat ada di Asia Tenggara: Manila, tempat Okada Manila menggelar APPT Manila Championship (8–19 Oktober 2026) dan seri Manila Megastack, serta Phnom Penh, tempat WPT Cambodia Championship 2027 berlangsung di NagaWorld (27 Januari–1 Februari 2027). Korea Selatan dan Taiwan punya kalender terpadat di Asia pada papan ini. Pakai filter negara di atas untuk menyaringnya.",
+    },
+    {
+      q: "Apakah pemain asing bisa ikut turnamen di Korea?",
+      a: "Untuk seri besar di kasino, pemain asing justru sasarannya. INSPIRE di Incheon menyebut dirinya kasino khusus warga asing, dan Paradise City menulis syarat masuknya: warga asing berusia 19 tahun ke atas yang membawa paspor. Jadi yang Anda bawa adalah paspor asli. Dua pengecualian di papan ini: APL Seoul hanya menerima pemegang tiket kursi (seat), dan Holdem Masters hanya lewat undangan.",
+    },
+    {
+      q: "Apakah semua turnamen di sini bisa diikuti siapa saja?",
+      a: "Sebagian besar ya, tetapi tidak semua. Triton Super High Roller Series berbasis rekomendasi — tidak ada satelit, dan uang saja tidak cukup untuk mendapat kursi. Holdem Masters di Korea hanya lewat tiket undangan, tanpa jalur buy-in tunai. APT Championships dibuka dengan satu hari khusus kalangan industri sebelum jadwal publik dimulai. Ada juga event yang hanya menerima tiket, misalnya APL Seoul (hanya tiket kursi/seat) — syarat seperti ini tertulis di kartunya.",
+    },
+    {
+      q: "Berapa biaya buy-in?",
+      a: "Rentangnya lebar, dan paling lebar di dalam satu seri yang sama. Main Event tur besar sering bernilai ribuan dolar, sementara seri yang sama punya side event dengan buy-in jauh lebih kecil — karena itu banyak kartu menampilkan rentang, bukan satu angka. Setiap kartu menampilkan buy-in yang diumumkan penyelenggara sendiri. Jika kosong, penyelenggara belum mengumumkannya: kami tidak menebak.",
+    },
+    {
+      q: "Bagaimana cara masuk Main Event besar dengan modal kecil?",
+      a: "Lewat satelit. Banyak seri besar menyediakan kualifikasi dengan buy-in jauh lebih kecil dari Main Event. Detailnya ada di jadwal seri itu sendiri, bukan di ikhtisar tahunan seperti papan ini — karena itu setiap kartu di sini langsung menautkan halaman resmi.",
+    },
+  ],
+
+  localHeading: "Sebelum Anda berangkat",
+  localBlocks: [
+    {
+      title: "Manila: beberapa seri di satu resor",
+      body: "Okada Manila di Parañaque menggelar APPT Manila Championship (8–19 Oktober 2026), lalu Manila Megastack 25 (27 November–7 Desember) dan Manila December Special (8–21 Desember). Kalau hanya bisa terbang sekali, di sinilah jadwal paling rapat di Asia Tenggara pada papan ini.",
+    },
+    {
+      title: "Korea dan Taiwan: kalender terpadat di Asia",
+      body: "Musim gugur ini Korea punya APT Jeju, GOP Incheon II dan WPT Seoul, sedangkan Taipei punya Taiwan Millions Tournament Championship dan APT Championships. Untuk WPT Seoul (INSPIRE) dan GOP Incheon II (Paradise City), kasinonya ditujukan untuk warga asing pemegang paspor — lihat FAQ di bawah.",
+    },
+    {
+      title: "Buy-in tampil dalam mata uang penyelenggara",
+      body: "Angkanya persis seperti yang diumumkan: peso Filipina (₱), dolar Taiwan (NT$), won Korea (₩), dolar AS ($). Kami tidak mengonversinya ke rupiah karena kurs berubah setiap hari — hitung dengan kurs pada hari Anda membayar.",
+    },
+  ],
+};
+
+/**
+ * ms — 말레이시아. «tournament»는 영어 차용어 그대로(위 볼륨 메모).
+ * ⚠ 겐팅은 이 보드에 없다 — 말레이시아에 큰 시리즈가 있는 것처럼 쓰지 마라.
+ */
+const ms: BoardStrings = {
+  htmlLang: "ms",
+  ogLocale: "ms_MY",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Poker Tournament 2026 — ${next} bermula ${mmdd}`;
+    return next && hooked.length <= 52 ? hooked : "Jadual Poker Tournament 2026";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `Semua poker tournament live utama 2026 dalam satu jadual: tarikh, buy-in dan sumber rasmi bagi setiap tournament. Setakat ${todayDot}. ${ongoing}`,
+      158,
+    ),
+
+  h1: "Jadual Poker Tournament 2026",
+  heroLead:
+    "Maklumat setiap tournament dalam senarai ini kami semak terus di laman penganjur, dan setiap kad memautkan sumber tersebut. Status dikemas kini secara automatik mengikut tarikh tournament. Jadual boleh berubah — jika ragu, halaman rasmi yang menjadi rujukan.",
+  asOf: (dot) => `Setakat ${dot}`,
+
+  filterAll: "Semua",
+  filterUpcoming: "Akan datang",
+  filterOngoing: "Sedang berlangsung",
+  filterEnded: "Tamat",
+
+  filterAllCountries: "Semua negara",
+  homeCountryNames: {
+    PH: "Filipina", KH: "Kemboja", VN: "Vietnam", KR: "Korea Selatan", TW: "Taiwan", JP: "Jepun",
+  },
+
+  colDates: "Tarikh",
+  colBuyin: "Buy-in",
+  colVenue: "Lokasi",
+
+  status: { upcoming: "Akan datang", ongoing: "Sedang berlangsung", ended: "Tamat" },
+  yearRound: "Sepanjang tahun",
+  datesTba: "Tarikh belum diumumkan",
+  officialSite: "Laman rasmi",
+  guideLink: "Panduan penuh",
+  buyinUnlisted: "Belum diumumkan",
+
+  countsLine: (total, countries) => `${total} tournament · ${countries} negara`,
+  sourceNote:
+    "Jika halaman penganjur sendiri masih memaparkan maklumat tahun lepas, kami memilih untuk tidak memautkannya daripada menghantar anda ke sana.",
+  emptyState: "Tiada tournament yang sepadan dengan penapis ini buat masa ini.",
+  koLink: "Jadual versi Korea →",
+
+  faqHeading: "Soalan lazim",
+  faqs: [
+    {
+      q: "Poker tournament besar mana yang paling dekat dari Malaysia?",
+      a: "Tiada siri antarabangsa dalam jadual ini yang diadakan di Malaysia. Yang paling dekat berada di Asia Tenggara: Manila, tempat Okada Manila menganjurkan APPT Manila Championship (8–19 Oktober 2026) dan siri Manila Megastack, serta Phnom Penh, tempat WPT Cambodia Championship 2027 berlangsung di NagaWorld (27 Januari–1 Februari 2027). Korea Selatan dan Taiwan mempunyai kalendar paling padat di Asia pada papan ini. Gunakan penapis negara di atas.",
+    },
+    {
+      q: "Bolehkah pemain asing menyertai tournament di Korea?",
+      a: "Untuk siri besar di kasino, pemain asing memang sasarannya. INSPIRE di Incheon menggelarkan dirinya kasino khas untuk warga asing, dan Paradise City menulis syarat masuknya: warga asing berumur 19 tahun ke atas yang membawa pasport. Jadi yang anda perlukan ialah pasport asli. Dua pengecualian pada papan ini: APL Seoul hanya menerima pemegang tiket tempat duduk (seat), dan Holdem Masters hanya melalui jemputan.",
+    },
+    {
+      q: "Bolehkah sesiapa sahaja mendaftar untuk semua tournament di sini?",
+      a: "Kebanyakannya ya, tetapi bukan semua. Triton Super High Roller Series berasaskan cadangan — tiada satelit, dan wang sahaja tidak cukup untuk mendapat tempat. Holdem Masters di Korea hanya melalui tiket jemputan, tanpa laluan buy-in tunai. APT Championships dibuka dengan satu hari khas untuk kalangan industri sebelum jadual awam bermula. Ada juga event yang hanya menerima tiket, contohnya APL Seoul (hanya tiket tempat duduk/seat) — syarat sebegini tertulis pada kadnya.",
+    },
+    {
+      q: "Berapakah kos buy-in?",
+      a: "Julatnya luas, dan paling luas dalam siri yang sama. Main Event jelajah besar selalunya bernilai ribuan dolar, manakala siri yang sama ada side event dengan buy-in jauh lebih kecil — sebab itu banyak kad menunjukkan julat, bukan satu angka. Setiap kad memaparkan buy-in yang diumumkan oleh penganjur sendiri. Jika kosong, penganjur belum mengumumkannya: kami tidak meneka.",
+    },
+    {
+      q: "Bagaimana hendak masuk Main Event besar dengan modal kecil?",
+      a: "Melalui satelit. Banyak siri besar menawarkan kelayakan dengan buy-in jauh lebih rendah daripada Main Event. Butirannya ada dalam jadual siri itu sendiri, bukan dalam ringkasan tahunan seperti papan ini — sebab itu setiap kad di sini terus memautkan halaman rasmi.",
+    },
+  ],
+
+  localHeading: "Sebelum anda berlepas",
+  localBlocks: [
+    {
+      title: "Manila: beberapa siri di satu resort",
+      body: "Okada Manila di Parañaque menganjurkan APPT Manila Championship (8–19 Oktober 2026), diikuti Manila Megastack 25 (27 November–7 Disember) dan Manila December Special (8–21 Disember). Jika hanya boleh terbang sekali, di sinilah jadual paling padat di Asia Tenggara pada papan ini.",
+    },
+    {
+      title: "Korea dan Taiwan: kalendar paling padat di Asia",
+      body: "Musim luruh ini Korea ada APT Jeju, GOP Incheon II dan WPT Seoul, manakala Taipei ada Taiwan Millions Tournament Championship dan APT Championships. Bagi WPT Seoul (INSPIRE) dan GOP Incheon II (Paradise City), kasinonya dikhaskan untuk warga asing yang memegang pasport — lihat soalan lazim di bawah.",
+    },
+    {
+      title: "Buy-in dipaparkan dalam mata wang penganjur",
+      body: "Angkanya tepat seperti yang diumumkan: peso Filipina (₱), dolar Taiwan (NT$), won Korea (₩), dolar AS ($). Kami tidak menukarnya kepada ringgit kerana kadar tukaran berubah setiap hari — kira dengan kadar pada hari anda membayar.",
+    },
+  ],
+};
+
+/**
+ * vi — 베트남. 이 보드의 VN 대회는 USOP Vietnam(하롱) 1건뿐이고 09-09에 끝났다.
+ * ⚠ 베트남 국민의 카지노 출입 규정은 쓰지 않는다(원문 미확인 · 합법성 축).
+ * ⚠ FAQ의 USOP 과거형은 그 행이 보드에 남아 있는 동안만 맞다 — 행을 지우면 여기도 고친다.
+ */
+const vi: BoardStrings = {
+  htmlLang: "vi",
+  ogLocale: "vi_VN",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Giải poker 2026 — ${next} từ ${mmdd}`;
+    return next && hooked.length <= 50 ? hooked : "Lịch giải poker 2026 — Poker Tournament";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `Tất cả giải poker live lớn năm 2026 trong một bảng: lịch thi đấu, buy-in và nguồn chính thức của từng poker tournament. Cập nhật ${todayDot}. ${ongoing}`,
+      158,
+    ),
+
+  h1: "Lịch giải poker 2026",
+  heroLead:
+    "Chúng tôi kiểm tra thông tin từng giải trực tiếp trên trang của nhà tổ chức; mỗi thẻ đều có liên kết đến nguồn đó. Trạng thái tự động cập nhật theo ngày thi đấu. Lịch có thể thay đổi — khi nghi ngờ, trang chính thức luôn là căn cứ.",
+  asOf: (dot) => `Cập nhật ${dot}`,
+
+  filterAll: "Tất cả",
+  filterUpcoming: "Sắp diễn ra",
+  filterOngoing: "Đang diễn ra",
+  filterEnded: "Đã kết thúc",
+
+  filterAllCountries: "Tất cả quốc gia",
+  homeCountryNames: {
+    VN: "Việt Nam", KH: "Campuchia", PH: "Philippines", KR: "Hàn Quốc", TW: "Đài Loan", JP: "Nhật Bản",
+  },
+
+  colDates: "Thời gian",
+  colBuyin: "Buy-in",
+  colVenue: "Địa điểm",
+
+  status: { upcoming: "Sắp diễn ra", ongoing: "Đang diễn ra", ended: "Đã kết thúc" },
+  yearRound: "Quanh năm",
+  datesTba: "Chưa công bố ngày",
+  officialSite: "Trang chính thức",
+  guideLink: "Hướng dẫn chi tiết",
+  buyinUnlisted: "Chưa công bố",
+
+  countsLine: (total, countries) => `${total} giải · ${countries} quốc gia`,
+  sourceNote:
+    "Nếu chính trang của nhà tổ chức vẫn còn hiển thị thông tin năm trước, chúng tôi chọn không gắn liên kết thay vì đưa bạn tới đó.",
+  emptyState: "Hiện chưa có giải nào khớp với bộ lọc này.",
+  koLink: "Lịch bản tiếng Hàn →",
+
+  faqHeading: "Câu hỏi thường gặp",
+  faqs: [
+    {
+      q: "Giải poker lớn nào gần Việt Nam nhất?",
+      a: "Giải duy nhất tại Việt Nam trên bảng này là USOP Vietnam ở vịnh Hạ Long (27/8–9/9/2026), đã kết thúc. Gần nhất tiếp theo là Phnom Penh, nơi WPT Cambodia Championship 2027 diễn ra tại NagaWorld (27/1–1/2/2027), và Manila, nơi Okada Manila tổ chức APPT Manila Championship (8–19/10/2026) cùng chuỗi Manila Megastack. Hàn Quốc và Đài Loan có lịch dày nhất châu Á trên bảng này. Dùng bộ lọc quốc gia ở trên để lọc.",
+    },
+    {
+      q: "Người nước ngoài có chơi được giải ở Hàn Quốc không?",
+      a: "Với các chuỗi giải lớn trong casino, người nước ngoài chính là đối tượng. INSPIRE ở Incheon tự giới thiệu là casino dành riêng cho người nước ngoài, còn Paradise City ghi rõ điều kiện vào cửa: người nước ngoài từ 19 tuổi trở lên có hộ chiếu. Vì vậy thứ bạn cần mang là hộ chiếu bản gốc. Hai ngoại lệ trên bảng này: APL Seoul chỉ nhận người có vé tham dự (seat), còn Holdem Masters chỉ dành cho khách được mời.",
+    },
+    {
+      q: "Có phải ai cũng đăng ký được mọi giải ở đây?",
+      a: "Phần lớn là có, nhưng không phải tất cả. Triton Super High Roller Series hoạt động theo giới thiệu — không có vệ tinh, và chỉ có tiền thì không mua được suất. Holdem Masters của Hàn Quốc chỉ nhận vé mời, không có đường buy-in bằng tiền mặt. APT Championships mở màn bằng một ngày chỉ dành cho người trong ngành trước khi lịch công khai bắt đầu. Cũng có giải chỉ nhận người có vé, ví dụ APL Seoul (chỉ nhận vé tham dự/seat) — điều kiện này được ghi ngay trên thẻ giải.",
+    },
+    {
+      q: "Buy-in tốn bao nhiêu?",
+      a: "Biên độ rất rộng, và rộng nhất ngay trong cùng một chuỗi giải. Main Event của một tour lớn thường ở mức hàng nghìn đô la, trong khi cùng chuỗi đó có các side event với buy-in nhỏ hơn nhiều — vì vậy nhiều thẻ hiển thị một khoảng chứ không phải một con số. Mỗi thẻ ghi buy-in do chính nhà tổ chức công bố. Chỗ nào để trống là nhà tổ chức chưa công bố: chúng tôi không ước đoán.",
+    },
+    {
+      q: "Làm sao vào Main Event lớn với số vốn nhỏ?",
+      a: "Qua vệ tinh (satellite). Nhiều chuỗi giải lớn có vòng loại với buy-in thấp hơn nhiều so với Main Event. Chi tiết nằm trong lịch của chính chuỗi giải chứ không nằm trong bảng tổng hợp cả năm như trang này — vì vậy mỗi thẻ ở đây dẫn thẳng tới trang chính thức.",
+    },
+  ],
+
+  localHeading: "Trước khi lên đường",
+  localBlocks: [
+    {
+      title: "Manila: nhiều chuỗi giải trong một khu nghỉ dưỡng",
+      body: "Okada Manila ở Parañaque tổ chức APPT Manila Championship (8–19/10/2026), tiếp theo là Manila Megastack 25 (27/11–7/12) và Manila December Special (8–21/12). Nếu chỉ bay được một lần, đây là nơi có lịch dày nhất Đông Nam Á trên bảng này.",
+    },
+    {
+      title: "Hàn Quốc và Đài Loan: lịch dày nhất châu Á",
+      body: "Mùa thu này Hàn Quốc có APT Jeju, GOP Incheon II và WPT Seoul, còn Đài Bắc có Taiwan Millions Tournament Championship và APT Championships. Với WPT Seoul (INSPIRE) và GOP Incheon II (Paradise City), casino dành cho người nước ngoài có hộ chiếu — xem phần câu hỏi bên dưới.",
+    },
+    {
+      title: "Buy-in hiển thị theo đơn vị tiền của nhà tổ chức",
+      body: "Con số giữ nguyên như được công bố: peso Philippines (₱), đô la Đài Loan (NT$), won Hàn Quốc (₩), đô la Mỹ ($). Chúng tôi không quy đổi sang tiền đồng vì tỷ giá thay đổi mỗi ngày — hãy tính theo tỷ giá vào ngày bạn thanh toán.",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi };
 
 /**
  * 대회명 현지 표기.
@@ -774,6 +1064,9 @@ function nameMaps(
   if (locale === "zh-hant") return [CITY_HANT, PAREN_HANT];
   if (locale === "es") return [CITY_ES, PAREN_ES];
   if (locale === "de") return [CITY_DE, PAREN_DE];
+  if (locale === "id") return [{}, PAREN_ID];
+  if (locale === "ms") return [{}, PAREN_MS];
+  if (locale === "vi") return [CITY_VI, PAREN_VI];
   return null;
 }
 
@@ -804,13 +1097,21 @@ const COUNTRY_NAME: Partial<Record<BoardLocale, Record<string, string>>> = {
     "North Cyprus": "Chipre del Norte", Korea: "Corea", Canada: "Canadá",
     Taiwan: "Taiwán",
   },
+  // id·ms — 철자가 실제로 갈리는 것만. Korea·Vietnam·Australia·Taiwan·Montenegro는 그대로가 맞다
+  id: { "North Cyprus": "Siprus Utara", Canada: "Kanada" },
+  ms: { "North Cyprus": "Cyprus Utara", Canada: "Kanada" },
+  vi: {
+    "North Cyprus": "Bắc Síp", Korea: "Hàn Quốc", Vietnam: "Việt Nam",
+    Australia: "Úc", Taiwan: "Đài Loan",
+  },
 };
 
 /**
  * 대회명 자체가 브랜드라서 지명을 건드리면 안 되는 대회.
  * `Taiwan Millions Tournament`의 Taiwan은 개최지 표시가 아니라 대회 이름의 일부다.
  */
-const BRAND_LOCKED = new Set(["tmt-20", "tmt-championship"]);
+// 🔴 2026-09-29: tmt-19가 빠져 있어 ja·zh·zh-hant·es·vi에서 «台湾 Millions Tournament»처럼 브랜드가 쪼개지고 있었다.
+const BRAND_LOCKED = new Set(["tmt-19", "tmt-20", "tmt-championship"]);
 
 /**
  * 지명이 안 들어간 대회명은 위 치환이 걸리지 않는다("57th WSOP 2026", "7th Holdem Masters").
@@ -833,6 +1134,22 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "cap-6-iguazu": "CAP Leg 6 — Puerto Iguazú",
     "cap-7-buenosaires": "CAP Leg 7 — Buenos Aires",
     "cap-8-rosario": "CAP Leg 8 — Rosario",
+  },
+  // id·ms·vi — 서수만 현지형으로. 브랜드(WSOP·Holdem Masters)는 라틴 유지.
+  id: {
+    "holdem-masters-7": "Holdem Masters ke-7",
+    "holdem-masters-8": "Holdem Masters ke-8",
+    "wsop-2026": "WSOP ke-57 2026",
+  },
+  ms: {
+    "holdem-masters-7": "Holdem Masters ke-7",
+    "holdem-masters-8": "Holdem Masters ke-8",
+    "wsop-2026": "WSOP ke-57 2026",
+  },
+  vi: {
+    "holdem-masters-7": "Holdem Masters lần thứ 7",
+    "holdem-masters-8": "Holdem Masters lần thứ 8",
+    "wsop-2026": "WSOP 2026 (lần thứ 57)",
   },
   es: {
     "holdem-masters-7": "7.º Holdem Masters",
@@ -1505,6 +1822,163 @@ const SCHEMA_DESC_DE: Record<string, string> = {
     "Manila-Stop 2026 der PokerStars APPT im Okada Manila, mit ₱132 Mio. Gesamtgarantie.",
 };
 
+/* ────────────────────────────────────────────────────────────
+   id · ms · vi 값 사전 (2026-09-29 신설).
+   ★ 수치는 §13대로 언어 불변 — 단위 표기만 현지식:
+     id ₩1,5 juta · ribu (마침표 천 단위 · 쉼표 소수점)
+     ms ₩1.5 juta · ribu (영어식 표기가 현지 표준)
+     vi ₩1,5 triệu · nghìn (마침표 천 단위 · 쉼표 소수점)
+   ★ 키 = lib/tournaments.ts의 한국어 값 그대로. 새 한국어 값이 생기면 check:tournaments-i18n이 🔴로 잡는다.
+   ──────────────────────────────────────────────────────────── */
+const FIELD_ID: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (dikelola King's Casino Prague)",
+  "공식 미기재": "Belum diumumkan",
+  "미정 (공식 미기재)": "Belum ditentukan (belum diumumkan)",
+  "미발표": "Belum diumumkan",
+  "다양": "Tergantung event",
+  "무료": "Gratis",
+  "새틀라이트 티켓 전용": "Hanya dengan tiket satelit",
+  "참가권(SEAT) 전용": "Hanya dengan tiket kursi (seat)",
+  "초대권 전용": "Hanya dengan undangan",
+  "초대권 전용 (현금 바이인 없음)": "Hanya dengan undangan (tanpa buy-in tunai)",
+  "메인 ₩150만": "Main Event ₩1,5 juta",
+  "메인 ₩220만": "Main Event ₩2,2 juta",
+  "메인 ₩230만": "Main Event ₩2,3 juta",
+  "메인 ₩250만": "Main Event ₩2,5 juta",
+  "메인 ₩270만": "Main Event ₩2,7 juta",
+  "₩30만~₩800만": "₩300 ribu–₩8 juta",
+  "₩5만~₩1,000만": "₩50 ribu–₩10 juta",
+  "₩90만~": "mulai ₩900 ribu",
+  "~₩700만 (하이롤러)": "hingga ₩7 juta (high roller)",
+  "€5,300 (메인)": "€5.300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120.000",
+  "(ME 파이널 8/3~5)": "(final table Main Event 3–5 Agu)",
+  "(온라인 새틀 7/10~9/10)": "(satelit online 10 Jul–10 Sep)",
+  "2026.12 예정 (날짜 미발표)": "Desember 2026 (tanggal belum diumumkan)",
+  "€1,100~": "mulai €1.100",
+};
+
+const FIELD_MS: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (dikendalikan oleh King's Casino Prague)",
+  "공식 미기재": "Belum diumumkan",
+  "미정 (공식 미기재)": "Belum ditetapkan (belum diumumkan)",
+  "미발표": "Belum diumumkan",
+  "다양": "Bergantung pada event",
+  "무료": "Percuma",
+  "새틀라이트 티켓 전용": "Hanya dengan tiket satelit",
+  "참가권(SEAT) 전용": "Hanya dengan tiket tempat duduk (seat)",
+  "초대권 전용": "Hanya dengan jemputan",
+  "초대권 전용 (현금 바이인 없음)": "Hanya dengan jemputan (tiada buy-in tunai)",
+  "메인 ₩150만": "Main Event ₩1.5 juta",
+  "메인 ₩220만": "Main Event ₩2.2 juta",
+  "메인 ₩230만": "Main Event ₩2.3 juta",
+  "메인 ₩250만": "Main Event ₩2.5 juta",
+  "메인 ₩270만": "Main Event ₩2.7 juta",
+  "₩30만~₩800만": "₩300 ribu–₩8 juta",
+  "₩5만~₩1,000만": "₩50 ribu–₩10 juta",
+  "₩90만~": "dari ₩900 ribu",
+  "~₩700만 (하이롤러)": "sehingga ₩7 juta (high roller)",
+  "€5,300 (메인)": "€5,300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120,000",
+  "(ME 파이널 8/3~5)": "(meja akhir Main Event 3–5 Ogo)",
+  "(온라인 새틀 7/10~9/10)": "(satelit dalam talian 10 Jul–10 Sep)",
+  "2026.12 예정 (날짜 미발표)": "Disember 2026 (tarikh belum diumumkan)",
+  "€1,100~": "dari €1,100",
+};
+
+const FIELD_VI: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (do King's Casino Prague vận hành)",
+  "공식 미기재": "Chưa công bố",
+  "미정 (공식 미기재)": "Chưa xác định (chưa công bố)",
+  "미발표": "Chưa công bố",
+  "다양": "Tùy event",
+  "무료": "Miễn phí",
+  "새틀라이트 티켓 전용": "Chỉ với vé vệ tinh",
+  "참가권(SEAT) 전용": "Chỉ dành cho người có vé tham dự (seat)",
+  "초대권 전용": "Chỉ với vé mời",
+  "초대권 전용 (현금 바이인 없음)": "Chỉ với vé mời (không có buy-in bằng tiền mặt)",
+  "메인 ₩150만": "Main Event ₩1,5 triệu",
+  "메인 ₩220만": "Main Event ₩2,2 triệu",
+  "메인 ₩230만": "Main Event ₩2,3 triệu",
+  "메인 ₩250만": "Main Event ₩2,5 triệu",
+  "메인 ₩270만": "Main Event ₩2,7 triệu",
+  "₩30만~₩800만": "₩300 nghìn–₩8 triệu",
+  "₩5만~₩1,000만": "₩50 nghìn–₩10 triệu",
+  "₩90만~": "từ ₩900 nghìn",
+  "~₩700만 (하이롤러)": "đến ₩7 triệu (high roller)",
+  "€5,300 (메인)": "€5.300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120.000",
+  "(ME 파이널 8/3~5)": "(bàn chung kết Main Event 3–5/8)",
+  "(온라인 새틀 7/10~9/10)": "(vệ tinh online 10/7–10/9)",
+  "2026.12 예정 (날짜 미발표)": "Tháng 12/2026 (chưa công bố ngày)",
+  "€1,100~": "từ €1.100",
+};
+
+const PAREN_ID: Record<string, string> = {
+  "(Fall)": "(Musim Gugur)", "(July)": "(Juli)", "(August)": "(Agustus)",
+  "(November)": "(November)", "(December)": "(Desember)", "(Ha Long Bay)": "(Teluk Ha Long)",
+};
+const PAREN_MS: Record<string, string> = {
+  "(Fall)": "(Musim Luruh)", "(July)": "(Julai)", "(August)": "(Ogos)",
+  "(November)": "(November)", "(December)": "(Disember)", "(Ha Long Bay)": "(Teluk Ha Long)",
+};
+const PAREN_VI: Record<string, string> = {
+  "(Fall)": "(Mùa thu)", "(July)": "(Tháng 7)", "(August)": "(Tháng 8)",
+  "(November)": "(Tháng 11)", "(December)": "(Tháng 12)", "(Ha Long Bay)": "(Vịnh Hạ Long)",
+};
+/** vi 도시 — 베트남어 표기가 영어와 «다른 것만». 나머지 지명은 라틴 그대로가 현지 관행이다. */
+const CITY_VI: Record<string, string> = {
+  "Ha Long": "Hạ Long",
+};
+
+/** 대회 설명(구조화 데이터) — 수치는 원문 그대로(§13). WSOP 상금풀은 de와 같은 이유로 뺀다. */
+const SCHEMA_DESC_ID: Record<string, string> = {
+  "holdem-masters-7": "Disponsori WPL, diselenggarakan WeLive bersama YAJASU. Garansi ₩1,5 miliar; hanya dengan tiket undangan.",
+  "wsop-2026": "Seri poker terbesar di dunia. 100 bracelet dari 26 Mei hingga 15 Juli; Main Event diikuti 9.208 entri, dengan final table 3–5 Agustus disiarkan ESPN.",
+  "kpc-king-july": "Festival 17 hari di LES A Casino, Pulau Jeju. Garansi ₩2 miliar untuk seluruh seri, dengan ₩1,1 miliar GTD di Main Event King Poker Cup.",
+  "apt-incheon": "Seri Incheon 2026 dari Asian Poker Tour, tur terbesar di Asia. Di Paradise City, dengan garansi total lebih dari ₩4 miliar dan ₩1,5 miliar GTD di Main Event.",
+  "holdem-masters-8": "Holdem Masters ke-8 dan yang terbesar sejauh ini: garansi ₩2 miliar, dengan ₩1,8 miliar GTD di Main Event.",
+  "appt-korea": "Seri Korea 2026 dari PokerStars APPT di Paradise City Incheon, dengan garansi ₩1 miliar di Main Event.",
+  "triton-jeju-2": "Triton Super High Roller Series kedua tahun ini di Jeju: 14 turnamen high roller dengan buy-in $15.000 hingga $200.000.",
+  "apt-jeju-fall": "Seri musim gugur 2026 Asian Poker Tour di Jeju: 135 event dengan garansi ₩2,2 miliar di Main Event.",
+  "wpt-seoul": "Event pertama World Poker Tour di INSPIRE Entertainment Resort: 45 event dengan garansi ₩1 miliar di Main Event.",
+  "appt-manila": "Seri Manila 2026 dari PokerStars APPT di Okada Manila, dengan garansi total ₱132 juta.",
+};
+const SCHEMA_DESC_MS: Record<string, string> = {
+  "holdem-masters-7": "Ditaja WPL, dianjurkan WeLive bersama YAJASU. Jaminan ₩1.5 bilion; hanya dengan tiket jemputan.",
+  "wsop-2026": "Siri poker terbesar di dunia. 100 bracelet dari 26 Mei hingga 15 Julai; Main Event menarik 9,208 penyertaan, dengan meja akhir 3–5 Ogos disiarkan ESPN.",
+  "kpc-king-july": "Festival 17 hari di LES A Casino, Pulau Jeju. Jaminan ₩2 bilion untuk keseluruhan siri, dengan ₩1.1 bilion GTD dalam Main Event King Poker Cup.",
+  "apt-incheon": "Persinggahan Incheon 2026 Asian Poker Tour, jelajah terbesar di Asia. Di Paradise City, dengan jaminan keseluruhan melebihi ₩4 bilion dan ₩1.5 bilion GTD dalam Main Event.",
+  "holdem-masters-8": "Holdem Masters ke-8 dan yang terbesar setakat ini: jaminan ₩2 bilion, dengan ₩1.8 bilion GTD dalam Main Event.",
+  "appt-korea": "Persinggahan Korea 2026 PokerStars APPT di Paradise City Incheon, dengan jaminan ₩1 bilion dalam Main Event.",
+  "triton-jeju-2": "Triton Super High Roller Series kedua tahun ini di Jeju: 14 tournament high roller dengan buy-in $15,000 hingga $200,000.",
+  "apt-jeju-fall": "Persinggahan musim luruh 2026 Asian Poker Tour di Jeju: 135 event dengan jaminan ₩2.2 bilion dalam Main Event.",
+  "wpt-seoul": "Event pertama World Poker Tour di INSPIRE Entertainment Resort: 45 event dengan jaminan ₩1 bilion dalam Main Event.",
+  "appt-manila": "Persinggahan Manila 2026 PokerStars APPT di Okada Manila, dengan jaminan keseluruhan ₱132 juta.",
+};
+const SCHEMA_DESC_VI: Record<string, string> = {
+  "holdem-masters-7": "Do WPL tài trợ, WeLive tổ chức cùng YAJASU. Bảo đảm ₩1,5 tỷ; chỉ tham gia bằng vé mời.",
+  "wsop-2026": "Chuỗi giải poker lớn nhất thế giới. 100 bracelet từ 26/5 đến 15/7; Main Event có 9.208 lượt tham gia, bàn chung kết 3–5/8 được ESPN phát sóng.",
+  "kpc-king-july": "Lễ hội 17 ngày tại LES A Casino trên đảo Jeju. Bảo đảm ₩2 tỷ cho cả chuỗi, trong đó ₩1,1 tỷ GTD ở Main Event King Poker Cup.",
+  "apt-incheon": "Chặng Incheon 2026 của Asian Poker Tour, tour lớn nhất châu Á. Tại Paradise City, tổng bảo đảm hơn ₩4 tỷ và ₩1,5 tỷ GTD ở Main Event.",
+  "holdem-masters-8": "Holdem Masters lần thứ 8 và lớn nhất từ trước tới nay: bảo đảm ₩2 tỷ, trong đó ₩1,8 tỷ GTD ở Main Event.",
+  "appt-korea": "Chặng Hàn Quốc 2026 của PokerStars APPT tại Paradise City Incheon, bảo đảm ₩1 tỷ ở Main Event.",
+  "triton-jeju-2": "Triton Super High Roller Series lần thứ hai trong năm tại Jeju: 14 giải high roller với buy-in từ $15.000 đến $200.000.",
+  "apt-jeju-fall": "Chặng mùa thu 2026 của Asian Poker Tour tại Jeju: 135 event, bảo đảm ₩2,2 tỷ ở Main Event.",
+  "wpt-seoul": "Sự kiện đầu tiên của World Poker Tour tại INSPIRE Entertainment Resort: 45 event, bảo đảm ₩1 tỷ ở Main Event.",
+  "appt-manila": "Chặng Manila 2026 của PokerStars APPT tại Okada Manila, tổng bảo đảm ₱132 triệu.",
+};
+
+/** 월 축약 id·ms — 현지 달력 축약(Mei·Agu·Okt·Des / Mac·Ogo·Dis) */
+const MONTH_ID = ["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"];
+const MONTH_MS = ["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogo","Sep","Okt","Nov","Dis"];
+
 /** 월 배지 de — "Mai–Aug." (독일어 월 축약은 마침표를 쓴다) */
 const MONTH_DE = ["Jan.","Feb.","März","Apr.","Mai","Juni","Juli","Aug.","Sept.","Okt.","Nov.","Dez."];
 
@@ -1981,8 +2455,13 @@ const NOTE_DE: Record<string, string> = {
   "pokermania-xl-velden": "Main Event €200+30, der größte Stack kommt weiter · Day 1A–1E in Velden plus ein Starttag am 27. September im Casino Graz · €50.000 GTD · Min-Cash €500 · Mega Satellite ab €30+6",
 };
 
+/**
+ * id·ms·vi 배지 — **비워 둔다**(2026-09-29 신설 회차 설계). 미등재 = 배지 미표시.
+ * ⚠ 한국어·영어로 폴백시키지 말 것. 이 독자에게 의미 있는 배지가 생기면 그때 채운다.
+ */
 const NOTES: Record<BoardLocale, Record<string, string>> = {
   en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
+  id: {}, ms: {}, vi: {},
 };
 
 /** 없으면 undefined — 보드가 배지를 아예 안 그린다(한국어 폴백 금지) */
@@ -1996,6 +2475,7 @@ export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "zh-hant") return CITY_HANT[city] ?? city;
   if (locale === "es") return CITY_ES[city] ?? city;
   if (locale === "de") return CITY_DE[city] ?? city;
+  if (locale === "vi") return CITY_VI[city] ?? city;
   return city;
 }
 
@@ -2021,11 +2501,25 @@ const CITY_DE: Record<string, string> = {
  * 숫자 양옆에 붙은 물결표만 건드린다 — "초대권 전용" 같은 문장은 손대지 않는다.
  */
 const RANGE_DASH: Record<BoardLocale, string> = {
-  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜",
+  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–",
 };
 
+/**
+ * id·vi는 천 단위 구분이 마침표다(1.000.000). 사전에 없는 라틴 값("NT$1,000~NT$25,000")이
+ * 쉼표 그대로 나가면 "1,000"이 «1.0»으로 읽힌다 — de는 이걸 값마다 사전으로 막았지만
+ * 값이 늘 때마다 새어서, 신설 로케일은 함수로 한 번에 바꾼다. 3자리 묶음 쉼표만 건드린다.
+ * ms는 영어식(1,000)이 현지 표기라 대상이 아니다.
+ */
+const DOT_THOUSANDS = new Set<BoardLocale>(["id", "vi"]);
+function localizeThousands(v: string, locale: BoardLocale): string {
+  if (!DOT_THOUSANDS.has(locale)) return v;
+  return v.replace(/\d{1,3}(?:,\d{3})+/g, (m) => m.replace(/,/g, "."));
+}
+
 function localizeRangeTilde(v: string, locale: BoardLocale): string {
-  return v.replace(/([\d\w])\s*~\s*([\d$€£¥₩₱₫])/g, `$1${RANGE_DASH[locale]}$2`);
+  // 🔴 2026-09-29: 오른쪽에 A-Z 추가 — «NT$2,500~NT$330,000»·«R$500~R$25,000»·«TWD 2,100~TWD 77,000»이
+  //    통화 기호 앞 글자(N·R·T) 때문에 전 로케일에서 물결표 그대로 나가고 있었다.
+  return v.replace(/([\d\w])\s*~\s*([\dA-Z$€£¥₩₱₫])/g, `$1${RANGE_DASH[locale]}$2`);
 }
 
 /** 데이터 필드 값을 로케일 표기로. 사전에 없으면 원문 그대로(물결표만 정규화) */
@@ -2038,8 +2532,12 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
     : locale === "zh-hant" ? VENUE_HANT[value] ?? FIELD_HANT[value]
     : locale === "es" ? VENUE_ES[value] ?? FIELD_ES[value]
     : locale === "de" ? VENUE_DE[value] ?? FIELD_DE[value]
+    // CJK 회장명의 라틴 표기는 언어와 무관하다 — VENUE_DE를 그대로 쓴다(es·de와 같은 값)
+    : locale === "id" ? VENUE_DE[value] ?? FIELD_ID[value]
+    : locale === "ms" ? VENUE_DE[value] ?? FIELD_MS[value]
+    : locale === "vi" ? VENUE_DE[value] ?? FIELD_VI[value]
     : undefined;
-  return hit ?? localizeRangeTilde(value, locale);
+  return hit ?? localizeThousands(localizeRangeTilde(value, locale), locale);
 }
 
 /** 대회 설명(구조화 데이터용) 로케일 판. 원문 수치는 그대로 옮긴다 — §13 언어 불변 */
@@ -2108,6 +2606,13 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "de") {
     return sm === em ? MONTH_DE[sm - 1] : `${MONTH_DE[sm - 1]}–${MONTH_DE[em - 1]}`;
   }
+  if (locale === "id" || locale === "ms") {
+    const M = locale === "id" ? MONTH_ID : MONTH_MS;
+    return sm === em ? M[sm - 1] : `${M[sm - 1]}–${M[em - 1]}`;
+  }
+  if (locale === "vi") {
+    return sm === em ? `Tháng ${sm}` : `Tháng ${sm}–${em}`;
+  }
   return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
 }
 
@@ -2158,6 +2663,20 @@ function formatRange(a: Ymd, b: Ymd, locale: BoardLocale): string {
     if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
     return `${a.d}.–${b.d}. ${MONTH_DE[a.m - 1]} ${a.y}`;
   }
+  /** id·ms — es와 같은 「일 월 연도」, 월 축약은 현지형(Okt·Des / Ogo·Dis). */
+  if (locale === "id" || locale === "ms") {
+    const MN = locale === "id" ? MONTH_ID : MONTH_MS;
+    const M = (x: Ymd) => `${x.d} ${MN[x.m - 1]}`;
+    if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
+    if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    return `${a.d}–${b.d} ${MN[a.m - 1]} ${a.y}`;
+  }
+  /** vi — 「일/월/연도」가 현지 표준(8–19/10/2026). 월 이름 축약을 쓰지 않는다. */
+  if (locale === "vi") {
+    if (a.y !== b.y) return `${a.d}/${a.m}/${a.y}–${b.d}/${b.m}/${b.y}`;
+    if (a.m !== b.m) return `${a.d}/${a.m}–${b.d}/${b.m}/${a.y}`;
+    return `${a.d}–${b.d}/${a.m}/${a.y}`;
+  }
   // ja·zh·zh-hant — 점 표기 유지, 범위 기호만 전각 물결표
   const p = (n: number) => String(n).padStart(2, "0");
   return a.y === b.y
@@ -2205,7 +2724,13 @@ export function buildLocaleSchemas(
                 ? SCHEMA_DESC_ES[t.id]
                 : locale === "de"
                   ? SCHEMA_DESC_DE[t.id]
-                  : undefined) ??
+                  : locale === "id"
+                    ? SCHEMA_DESC_ID[t.id]
+                    : locale === "ms"
+                      ? SCHEMA_DESC_MS[t.id]
+                      : locale === "vi"
+                        ? SCHEMA_DESC_VI[t.id]
+                        : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
@@ -2269,4 +2794,11 @@ export const HOME_COUNTRY: Record<BoardLocale, string[]> = {
    * 지리적 자국이 아니라 «이 독자가 실제로 갈 곳» 기준으로 정렬한다.
    */
   de: ["DE", "AT", "CH", "CZ"],
+  /**
+   * id·ms·vi — 자국 개최가 없거나(id·ms) 1건뿐(vi)이다. «이 독자가 실제로 갈 곳» 기준으로
+   * 동남아 원정지(PH·KH·VN)를 앞에, 보드에서 아시아 일정이 가장 촘촘한 KR·TW·JP를 뒤에 둔다.
+   */
+  id: ["PH", "KH", "VN", "KR", "TW", "JP"],
+  ms: ["PH", "KH", "VN", "KR", "TW", "JP"],
+  vi: ["VN", "KH", "PH", "KR", "TW", "JP"],
 };
