@@ -626,8 +626,8 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 | Harbour Poker Cup II | 09.30~10.04 | 예정 | `hpc.poker` 라이브 확인 — ME `NT$6M GTD` / 베뉴 `Asia Poker Arena, TAIPEI` |
 | **TMT Championship 2026** | **10.16~10.26** | 예정 | 🆕 09-29 확정: 공식 35이벤트 · 시리즈 GTD NT$48M+ · **메인 #50 NT$35,000 / NT$30M GTD** · Day 1 10/22~24 6플라이트 · 정본 = `docs/tournament-factsheets/2026-10-tmtc.md` · zh-hant 가이드 `tmt-championship-2026-guide` |
 | **APT Championship Taipei** | **11.13~11.29** | 예정 | ★아래 |
-| APC Taipei IV | **12.02~12.13** | ⚠ 확인 필요 | 🔴 **09-29 CTP 공식 목록에서 사라짐**(APC III 취소 때와 같은 패턴) — 취소 여부 1차 확인 전 보드 유지 · (somuchpoker 12.09~20은 오류) |
-| OLA Poker Tour Taipei | 12.16~12.21 | 예정 | 기보유 (⚠ CTP 목록 라벨이 `Taipei 2025`인데 날짜는 2026 — 라벨 오기) |
+| ~~APC Taipei IV~~ | ~~12.02~12.13~~ | ❌ **취소** | 🔴 **2026-09-29 보드에서 삭제.** CTP 공식 목록(Upcoming·Archive 전수, Playwright)에 없음 — 그 목록은 종료분(APC II)을 남긴다 · somuchpoker 대회 페이지 축어 `[CANCELLED] APC Taipei IV 2026`(Updated 2026.09.23) · 주최 취소 공지 원문은 없음(III 때와 동일). **되살리지 마라** |
+| OLA Poker Tour Taipei | 12.16~12.21 | 예정 | 기보유 (⚠ CTP 목록 라벨이 `Taipei 2025`인데 날짜는 2026 — 라벨 오기) · 09-29 주최 원문으로 바이인·note 갱신: OLA 뉴스 07-15 «TWD16.6M in guaranteed prize pools» · 메인 TWD22,000 / 10M GTD · Day 1 ×5(12/18~20) · 일정표 `olapokertour.com/series/ola-poker-tour-2026-taipei/` · ⚠ 뉴스 «A total of 30 events» vs 일정표 최대 번호 #32(세는 단위 다름 — 번호로 센 숫자 쓰지 말 것) |
 
 ### APT Taipei 2026 — 이벤트 수 논쟁 해소
 - 사전 발표 **172개**(새틀 포함) → 사후 공식 리캡 **`"161 trophy events and 4 satellites"` = 165개**

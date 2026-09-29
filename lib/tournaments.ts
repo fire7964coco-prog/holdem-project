@@ -1537,7 +1537,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
      * APC는 자체 공식 사이트가 없다. 그래서 개최 베뉴인 CTP의 공식 페스티벌 목록이 정본이고
      * (`ctpclub.app/en/festivals`에 `Asia Poker Championship: Taipei II 2026 May 05 — May 10, 2026`),
      * 베뉴 표기 `CTP Asia Poker Arena / Taiwan, Taipei City`는 CTP가 링크하는 somuchpoker에서 확인했다.
-     * ★ 바이인은 CTP 목록에 없다 → `공식 미기재`. 같은 시리즈 `apc-taipei-4`와 동일한 취급이다.
+     * ★ 바이인은 CTP 목록에 없다 → `공식 미기재`. (같은 시리즈 IV는 09-29 취소 판정·삭제 — 아래 주석.)
      */
     id: "apc-taipei-2",
     name: "Asia Poker Championship Taipei II",
@@ -1723,24 +1723,18 @@ const RAW_TOURNAMENTS: Tournament[] = [
     sourceTier: "A",
     verifiedAt: "2026-09-29",
   },
-  {
-    id: "apc-taipei-4",
-    name: "Asia Poker Championship Taipei IV 2026",
-    nameEn: "Asia Poker Championship Taipei IV 2026",
-    type: "international",
-    startDate: "2026-12-02",
-    endDate: "2026-12-13",
-    location: "대만 타이베이 (CTP Asia Poker Arena)",
-    city: "Taipei",
-    country: "TW",
-    venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
-    emoji: "🇹🇼",
-    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    sourceUrl: "https://ctpclub.app/en/festivals",
-    sourceTier: "A",
-    verifiedAt: "2026-07-29",
-  },
+  /**
+   * ❌ apc-taipei-4 (Asia Poker Championship Taipei IV · 2026-12-02~12-13) — 2026-09-29 삭제.
+   *
+   * **취소된 대회다. 되살리지 마라.** (APC Taipei III 취소와 같은 패턴 · 같은 판정법)
+   *  - 1차: `ctpclub.app/en/festivals`(주최 클럽 CTP) 09-29 Playwright 전수 — Upcoming 6건·Archive 어디에도 없다.
+   *    이 목록은 종료 대회를 지우지 않는다(APC Taipei II 5월분이 Archive에 그대로 있다)
+   *    → «지나가서 빠진 것»이 아니라 «편성에서 빠진 것»이다.
+   *  - 2차 축어: somuchpoker 대회 페이지 제목 `[CANCELLED] APC Taipei IV 2026`(Updated 2026.09.23) ·
+   *    APC 투어 페이지 2026 일정에도 `[CANCELLED] APC Taipei IV 2026`.
+   *    (주최측 취소 공지 원문은 찾지 못했다 — III 때도 없었다.)
+   *  - 기록: docs/tournament-spine.md APC 행.
+   */
   {
     id: "ola-poker-tour-taipei",
     name: "OLA Poker Tour: Taipei",
@@ -1752,14 +1746,17 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Taipei",
     country: "TW",
     venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
+    buyin: "NT$3,000~NT$55,000",
     emoji: "🇹🇼",
     color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    // ⚠️ 공식 목록의 명칭이 "OLA Poker Tour: Taipei 2025"인데 날짜는 2026년이다(주최측 표기 오류로 보임)
-    note: "공식 목록 명칭에 연도가 2025로 표기돼 있으나 일정은 2026년",
-    sourceUrl: "https://ctpclub.app/en/festivals",
+    note: "시리즈 보장 NT$16.6M · 메인 NT$22,000 / NT$10,000,000 GTD (Day 1 12/18~20)",
+    // ⚠️ CTP 목록 명칭은 "OLA Poker Tour: Taipei 2025"인데 날짜는 2026년(주최측 표기 오류로 보임).
+    // 2026-09-29 주최 OLA 공식 원문으로 갱신: 뉴스 07-15 «TWD16.6M in guaranteed prize pools» ·
+    //   «TWD10,000,000 guaranteed prize pool for just a TWD22,000 buy-in» · «five Day 1s between 18 – 20 Dec» ·
+    //   «Tournament buy-ins range from TWD3K to 55K»(위성 TWD1,200·2,400은 제외된 범위).
+    sourceUrl: "https://olapokertour.com/series/ola-poker-tour-2026-taipei/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-29",
   },
 
   /* ── 🇨🇾 북키프로스 Merit — 하이롤러 씬의 유럽 거점 ────────── */

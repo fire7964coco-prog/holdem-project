@@ -6,7 +6,9 @@
 ## ▶▶ 다음 세션 (09-29 갱신)
 
 - ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
-- ▶ 대만 다음 후보(사장님 지시 대기 · 09-29 서치): **OLA Poker Tour Taipei 12/16~21**(볼륨 작음 · SERP 미실측) · APT Championship은 공식 독식이라 제외. 🔴 **APC Taipei IV(12/2~13)가 CTP 목록에서 사라짐** — 1차 확인 후 보드 처리(스파인 표기).
+- ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).
+- ▶ 대만 다음 후보 **OLA Poker Tour Taipei 12/16~21** — 서치 끝, **쓸지는 사장님 판단 대기**(WORKLOG 09-29 (3)): 원문은 충분 · 수요 작음(zh-TW 대회 달 170 = TMTC의 ~1/3.5) · SERP 웹 기사 0. 쓴다면 발행 적기 = 11월 중순(대회 달 수요 몰림) · 사실 시트부터. APT Championship은 공식 독식이라 제외.
+- 🟡 우편함 S-027(솔버→본체 · MB-115·116 회신 · 요청 3) 미처리 — 다음 세션에서 판정·회신.
 - ⏸ **KO GOP 제주 2026 가이드는 보류**(사장님 09-29 «이거 말고 대만걸로»). 재개 시: LES A 외국인 전용이라 내국인 참가 불가가 글의 첫 관문(`apt-jeju-2026-fall-guide`·`gop-incheon-2026-ii-guide` 처리 방식) · KO 수요 볼륨부터 확인.
 - ja는 추가 후보 D·E·F 보류(아래 F절).
 

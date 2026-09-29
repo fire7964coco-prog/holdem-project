@@ -1,3 +1,10 @@
+## 2026-09-29 (3) — APC Taipei IV 취소 판정·보드 삭제 · OLA Taipei 원문 갱신·글 후보 서치
+
+- 사장님: APC Taipei IV가 CTP 목록에서 사라진 것 원문 확인 → OLA Poker Tour Taipei zh-hant 글 가치 서치.
+- APC IV = **취소**. 1차 CTP `ctpclub.app/en/festivals` Playwright 전수(Upcoming 6 · Archive에 APC II 5월분은 남아 있고 IV는 어디에도 없음) + 2차 somuchpoker 대회 페이지 축어 `[CANCELLED] APC Taipei IV 2026`(Updated 2026.09.23)·APC 투어 페이지·2026 캘린더 동일. 주최 취소 공지 원문 없음(III 때와 같음). pokercalendar.asia는 미갱신(05-21 게시분). → 보드 `apc-taipei-4` 삭제(III 선례대로 주석 남김) · 스파인·TMTC 시트 표기.
+- OLA 보드 카드: 바이인 «공식 미기재» → NT$3,000~NT$55,000 · note(16.6M · 메인 22K/10M · Day 1 12/18~20) · sourceUrl을 OLA 일정표로 · KO+en·ja·zh·zh-hant·es note 5곳.
+- OLA 글 서치(결론은 사장님 판단): 주최 원문 풍부(뉴스 07-15 · 일정표 전량 · 2025 결과 497 엔트리·佐々木誠二 우승 · 공식 리캡 01-19). 수요는 작다 — DFS zh-TW «ola poker» 연 10/월, 작년 대회 달(2025-12)만 170(TMTC 작년 10월 590의 약 1/3.5) · 한자 표기 키워드는 볼륨 없음. SERP zh-TW mobile «ola poker» 1위 pokeroffer(체코편 zh-hant) · 나머지 IG·FB·YT·공식 영문 → **대만 2026편 웹 기사 0**. ja도 «ola poker» 40(12월). ⚠ 원문 자기모순: 공식 리캡 4위 «TWD 625,000» vs 결과표 661,000 · 뉴스 «30 events» vs 일정표 #32. ⚠ 예치 프로모션 «not available to Taiwan nationals».
+
 ## 2026-09-29 (2) — zh-hant 대만 대회 글 1편: TMTC 2026 가이드
 
 - 사장님: KO GOP 제주 대신 대만 대회로 → 후보 서치(CTP 공식 목록 Playwright · DFS 볼륨·SERP). TMTC 10/16~26 = SERP에 웹 기사 0(전부 소셜) · 작년 10월 «TMTC» 590 → 1순위. APT Championship은 공식 9/10 독식이라 제외.
