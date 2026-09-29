@@ -5,6 +5,13 @@
 
 ## ▶▶ 다음 세션 (09-29 갱신)
 
+- ▶▶ **`/tournaments` 로케일 신설 — 사장님 09-29 승인 · 새 세션 첫 작업.** 현재 = ko + `TOURNAMENT_LOCALES`(`lib/tournaments-hreflang.ts`) en·ja·zh·zh-hant·es·de. 취지 = 자국 대회가 없어도 «해외 대회 캘린더». **de 방식**: `app/<l>/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·CITY·VENUE·PAREN·SCHEMA_DESC·MONTH·COUNTRY_NAME·RANGE_DASH · **NOTE(카드 설명)는 비워 둔다**(미등재 = 배지 미표시 · 설계) · hreflang 한 곳 + `scripts/generate-sitemap.mjs` `TOURNAMENT_LOCALES` 동시 갱신.
+  | 회차 | 로케일 | 비고 |
+  |---|---|---|
+  | 1 | id · ms · vi | 아시아 원정 수요(보드 적합도 높음) |
+  | 2 | pt · tr · hi · ar | ar = RTL 모바일 screen-review |
+  게이트 = check:tournaments-i18n 🔴0 · build · 라이브 · MB 통지. 모델 = Opus 전파 + 로케일별 교차 검수 1회. 🪶 앞으로 새 카드의 buyin·venue는 통화 표기·공식 라틴 표기로 쓴다(한국어 값은 전 로케일 FIELD 등재를 강제한다).
+
 - ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
 - ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).
 - ⛔ **OLA Poker Tour Taipei 글은 안 쓴다**(사장님 09-29 «검색이 너무 없다» · zh-TW 평소 월 10·대회 달 170). 보드 카드만 유지. APT Championship은 공식 독식이라 제외.
