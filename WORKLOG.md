@@ -1,3 +1,9 @@
+## 2026-09-29 (7) — taiwan-poker-tournaments-guide 아스트라 교차 검수 반영
+
+- 사장님 지시: 아스트라로 검수(페르소나·서치 강화). 이 세션에서 Codex CLI `gpt-6-astra`를 **read-only 샌드박스 + 스크래치 사본**으로 실행(ChatGPT 계정 인증 · 별도 API 과금 없음). 대만 현지 매체 편집자 페르소나 · 1차 원문 직접 열람·축어·직접 계수 규율.
+- 보고 8건 → 채택 7(APT Day 2 등록 2레벨 · OLA 범위 문장 삭제 · MGM Day 2 11/2·출처 표시 · WPT 플레이어 카드·사전 등록 · GOP KHold’em 등록 · 히어로 HPC 날짜 · TMT 21 추측 문장 삭제) · 기각 1(ZSOP 종료일 — 공식 홈 «3 - 15 SEPT» vs CTP «Sep 14» 원문 불일치). 전건 본체가 원문 재확인. 판정 = 사실 시트 §5.
+- 게이트: audit:hard zh-hant 59/59 🔴0 · check:images · build 73+612.
+
 ## 2026-09-29 (6) — zh-hant 대만 대회 일정 모음 글 발행: taiwan-poker-tournaments-guide
 
 - 사실 시트 §3 미조사 6항목 원문으로 채움(`docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md` §3·§4): WWP S5 수첩(Google Drive 이미지 PDF → 렌더 판독 · 메인 #23 NT$6,000 / 10M) · CTP 11th 중문 일정표(이미지 · 메인 = 10/11 單日 NT$8,000 / 2M · 마지막 날 10/15) · TMT 21 미발표(Archive로 1·7월 패턴) · PSC·ZSOP·GOP 대만 Q4 없음 · HPC II 메인 6M · K-ETA 면제 2026-12-31(K-ETA 공지 + 駐韓國台北代表部) · 마카오 MGM(B티어 SOMUCHPOKER).

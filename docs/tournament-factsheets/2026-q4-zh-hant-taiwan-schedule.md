@@ -99,3 +99,16 @@
 
 - 채택 5: «9 月前» → «9 月底前»(GOP 9/27·ZSOP 9/15) · GOP 제주 «외국인 전용» 삭제(시트에 베뉴 없음) · 용어 3(«一天內打完» · «不做推測» · 시각 표기).
 - 기각 4(원문 근거 있음 · 시트에 축어 보강): ① HPC 무료 위성 = 일정 «EVENT #1 … 9/30 11:30 … 10% 主賽事 免費衛星賽 保底五張門票» · «EVENT #5 10/1 11:30 … Freeroll Satellite GTD 5 seats»(ctpclub.app/en/festivals/hpc-2026-ii) ② HPC 베뉴 = `docs/tournament-spine.md` Harbour Poker Cup II 행 «hpc.poker 라이브 확인 — 베뉴 Asia Poker Arena, TAIPEI» ③ «TMTC PASS 單日錦標賽» = 중문 일정표 «11th NLH 單日錦標賽 GTD:NT$400,000 TMTC PASS» ④ CTP 사전 회원 등록 = TMTC 시트(`2026-10-tmtc.md`)의 CTP «Register as Player» 안내.
+
+## 5. 아스트라(GPT-6 Astra · Codex read-only) 교차 검수 판정 — 09-29
+
+보고 8건(🔴2·🟠5·🟡1) → **채택 7 · 기각 1**. 채택분은 본체가 원문을 다시 열어 확인(Playwright 09-29).
+- 채택 ① APT 메인 Day 2 «(Reg Open for 2 Levels)» 11/24 «Reg Closes 1:45 PM» → «錯過 11/23 就沒有第二次機會» 삭제(ja 시트 §2에 이미 있던 조건).
+- 채택 ③ OLA 범위 «TWD3K to 55K»(07-15 뉴스)는 현 일정표와 불일치 — 위성 «TWD1,200» · #756 «Big O High Roller» «Buy-in: TWD72,000 + 8,000» «Cap: 16 players» «Admission: Reserve only.» → 본문 범위 문장 삭제. 🔴 §2-B의 «buy-ins range from TWD3K to 55K»는 «뉴스 당시 값»으로만 읽을 것.
+- 채택 ④ MGM(SOMUCHPOKER 일정표) Day 1A~1E 10/30~11/1 + «2026-11-02 (Monday)» Day 2 → 본문 «五個 Day 1 … Day 2 在 11/2» · desc «官方公告與賽事報導» · 히어로 하단 «澳門 MGM 依 SOMUCHPOKER 報導». 주최 static.mgm.mo는 405(미확보 유지).
+- 채택 ⑤ WPT player-info «Every player needs a valid passport to register a player's card at Inspire Hotel & Casino» · «Before entering the INSPIRE Casino entrance, all guests must complete the registration form below.»
+- 채택 ⑥ GOP 약관 «Players must comply with KHold’em registration and tracking procedures for all GOP events.»
+- 채택 ⑦ 히어로 HPC «9/30–» → «9/30–10/4».
+- 채택 ⑧ TMT 21 «很可能落在 2027 年初» 삭제(추측 금지와 자기모순).
+- **기각 ②** ZSOP 종료일 «9/14»: ZSOP 공식 홈 «3 - 15 SEPT, 2026»(09-29 재확인) vs CTP 목록 «Sep 03 — Sep 14» = **원문끼리 불일치**. 본문은 «9 月底前»이라 무관 — 시트 §3-1c «9/3~15»는 ZSOP 원문 값으로 유지.
+- 참고: 아스트라는 WWP 수첩(Google Drive)을 샌드박스 승인 문제로 못 열었다 — 본체는 09-29 PDF 원본을 렌더해 판독(§3-1a·b).
