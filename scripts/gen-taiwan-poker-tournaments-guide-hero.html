@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage { position:relative; width:1200px; height:675px; overflow:hidden;
+  background: linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Microsoft JhengHei","PingFang TC","Noto Sans TC",-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:#F2EEE3; }
+h1 { position:absolute; top:30px; width:100%; text-align:center; font-size:34px; font-weight:800; }
+h1 span { color:#C9A227; }
+.months { position:absolute; top:100px; left:170px; width:990px; display:grid; grid-template-columns:repeat(3,1fr); }
+.m { text-align:center; font-size:18px; font-weight:800; padding:8px 0; border-left:1px solid rgba(255,255,255,.12); color:#C9A227; }
+.lbl { position:absolute; left:40px; width:120px; font-size:16px; font-weight:800; opacity:.8; }
+.track { position:absolute; left:170px; width:990px; height:44px; }
+.bar { position:absolute; height:44px; border-radius:10px; padding:4px 10px; font-size:14px; font-weight:800; line-height:1.25; white-space:nowrap; overflow:hidden;
+  background:rgba(8,20,15,.85); border:1px solid rgba(57,255,106,.45); }
+.bar em { font-style:normal; display:block; font-size:12px; font-weight:700; opacity:.8; }
+.bar.main { background:rgba(201,162,39,.16); border-color:#C9A227; color:#F6E7B0; }
+.bar.ov { border-color:rgba(120,170,255,.55); }
+.grid { position:absolute; top:140px; left:170px; width:990px; height:420px; display:grid; grid-template-columns:repeat(3,1fr); pointer-events:none; }
+.grid div { border-left:1px dashed rgba(255,255,255,.08); }
+.sep { position:absolute; left:40px; width:1120px; top:398px; border-top:1px solid rgba(255,255,255,.15); }
+.note { position:absolute; bottom:40px; left:40px; width:1120px; text-align:center; font-size:14px; font-weight:700; opacity:.7; }
+.wordmark { position:absolute; right:44px; bottom:14px; color:#C9A227; font-size:15px; font-weight:800; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <h1>台灣德州撲克比賽 <span>2026 第四季賽程</span></h1>
+  <div class="months"><div class="m">10 月</div><div class="m">11 月</div><div class="m">12 月</div></div>
+  <div class="grid"><div></div><div></div><div></div></div>
+  <!-- scale: Oct 1 = 0, 92 days = 990px → 10.76px/day. Sep 24 = -7 -->
+  <div class="lbl" style="top:156px">台北<br>10 月</div>
+  <div class="track" style="top:150px">
+    <div class="bar" style="left:0;width:118px">WWP S5<em>9/24–10/11</em></div>
+    <div class="bar" style="left:56px;width:105px;top:52px">CTP 11 週年<em>10/5 起</em></div>
+    <div class="bar main" style="left:161px;width:119px">TMTC<em>10/16–10/26</em></div>
+    <div class="bar" style="left:0;width:52px;top:52px;padding:4px 5px;font-size:12px">HPC<em style="font-size:10px">9/30–<br></em></div>
+  </div>
+  <div class="lbl" style="top:278px">台北<br>11–12 月</div>
+  <div class="track" style="top:272px">
+    <div class="bar main" style="left:463px;width:183px">APT Championship<em>11/13–11/29</em></div>
+    <div class="bar" style="left:806px;width:96px">OLA 台北<em>12/16–12/21</em></div>
+  </div>
+  <div class="sep"></div>
+  <div class="lbl" style="top:420px">出國<br>比賽</div>
+  <div class="track" style="top:414px">
+    <div class="bar ov" style="left:237px;width:118px">澳門 MGM<em>10/23–11/2</em></div>
+    <div class="bar ov" style="left:312px;width:118px;top:52px">WPT 首爾<em>10/30–11/9</em></div>
+    <div class="bar ov" style="left:312px;width:107px;top:104px">GOP 仁川<em>10/30–11/8</em></div>
+    <div class="bar ov" style="left:689px;width:107px">GOP 濟州<em>12/4–12/13</em></div>
+  </div>
+  <div class="note">依各主辦官方公告整理（2026 年 9 月 29 日查詢）・ 以官方最新公告為準</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

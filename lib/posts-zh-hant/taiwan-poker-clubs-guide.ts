@@ -183,7 +183,7 @@ export const POST: Post = {
 
 這類系列賽的買入跨度非常大。以 TMT 20 為例，官方公告的買入範圍是 **NT$200 到 NT$150,000**——同一個系列賽裡，有讓新手練手的低買入賽事，也有主賽事等級的。
 
-各賽事的實際日期與買入會變動，出發前建議先確認最新賽程。我們的[賽事行事曆](/zh-hant/tournaments)有整理亞洲主要賽事的日期與官方連結。
+各賽事的實際日期與買入會變動，出發前建議先確認最新賽程。我們的[賽事行事曆](/zh-hant/tournaments)有整理亞洲主要賽事的日期與官方連結。2026 年第四季台北有哪些系列賽、主賽買入各多少，整理在[台灣德州撲克比賽賽程](/zh-hant/blog/taiwan-poker-tournaments-guide)。
 
 :::readnext[延伸閱讀]
 /zh-hant/blog/holdem-tournament | 德州撲克錦標賽怎麼打 | /images/holdem-tournament-hero.webp

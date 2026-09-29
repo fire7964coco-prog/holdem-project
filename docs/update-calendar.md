@@ -436,6 +436,14 @@
 
 ## 10월
 
+### 🆕 ★ 10/4 · 10/11 · 10/16~26 · 11/29 · 12/21 — zh-hant `taiwan-poker-tournaments-guide` 일정 모음 갱신 (발행 2026-09-29)
+- **10/4** 港撲盃 종료 · **10/11** WWP S5·CTP 11週年 메인 종료 → 10월 절·총표·stripe «10 月 4 個系列賽» 과거형 · 결과 한 줄(원문)
+- **10/16~10/26** TMTC → TMTC 글 결과 전환과 같은 회차에 이 글 TMTC 절도
+- **TMT 21 공식 발표 시**(CTP festivals Upcoming) → «未公布» 5곳(stripe·H2·快速解答·FAQ·tldr) 동시 갱신
+- **11/29** APT 종료 · **12/21** OLA 종료 → 2027 Q1 판으로 개편 여부 판단(사장님)
+- 🪶 K-ETA 면제 2026-12-31 만료 → 12월에 연장 공지 확인(출국 절·FAQ) · 마카오 MGM은 B티어(SOMUCHPOKER) — 주최 원문 공개 시 교체
+- 사실 정본 = `docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md`
+
 ### 🆕 ★ 10/1 · 10/16 · 10/24 · 10/26 — zh-hant `tmt-championship-2026-guide` 훅 만료 (발행 2026-09-29)
 - **10/1** 온라인 위성(《富百世．德州撲克》) 종료 → 본문 衛星賽 표·快速解答의 온라인 행을 과거형으로
 - **10/16** 얼리버드 패키지 창구(M1 «Registration is open until October 16 at 23:59») → 禮包 절 과거형

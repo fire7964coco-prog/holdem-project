@@ -751,6 +751,7 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
       { slug: "wpt-australia-2026-guide", label: "WPT Australia 2026", group: "Live Events" },
       { slug: "ept-barcelona-2026-guide", label: "EPT Barcelona 2026", group: "Live Events" },
       { slug: "tmt-championship-2026-guide", label: "TMTC 2026", group: "Live Events" },
+      { slug: "taiwan-poker-tournaments-guide", label: "台灣比賽賽程", group: "Live Events" },
     ],
   },
   {

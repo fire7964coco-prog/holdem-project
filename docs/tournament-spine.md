@@ -624,6 +624,7 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 | ZSOP The Final Horse | **09.03~09.14** | 예정 | 🔴 **정정(2026-08-31): 09.04 → 09.03.** 주최사 헤더 `3 - 15 SEPT, 2026` + 스케줄 첫 앵커 `SEP 3, 2026`. **옛 메모 「somuchpoker 09.03은 오류」가 거꾸로였다.** ⚠ 헤더는 15인데 스케줄 앵커는 SEP 3~14뿐이고 9/14가 `Main Event Final Day` → **엔트리 열거를 채택해 종료일 09.14 유지** |
 | GOP Taipei II (The Trial of Wisdom) | 09.18~09.27 | 예정 | |
 | Harbour Poker Cup II | 09.30~10.04 | 예정 | `hpc.poker` 라이브 확인 — ME `NT$6M GTD` / 베뉴 `Asia Poker Arena, TAIPEI` |
+| CTP 11th Anniversary | 10.05~10.15 | 예정 | 🆕 09-29 보드 편입(A) · 메인 «11th週年主賽 - 單日保底200萬» 10/11 NT$8,000 / NT$2M GTD · 🔴 CTP 목록 «Oct 05 — Oct 16» vs 공식 중문 일정표(이미지 media.ctpclub.app/LINE_ALBUM_11th_260925_2.jpg) 마지막 날 10/15 → 일정표 채택 · 정본 = docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md §2-A·§3-5 · zh-hant 일정 모음 글 taiwan-poker-tournaments-guide |
 | **TMT Championship 2026** | **10.16~10.26** | 예정 | 🆕 09-29 확정: 공식 35이벤트 · 시리즈 GTD NT$48M+ · **메인 #50 NT$35,000 / NT$30M GTD** · Day 1 10/22~24 6플라이트 · 정본 = `docs/tournament-factsheets/2026-10-tmtc.md` · zh-hant 가이드 `tmt-championship-2026-guide` |
 | **APT Championship Taipei** | **11.13~11.29** | 예정 | ★아래 |
 | ~~APC Taipei IV~~ | ~~12.02~12.13~~ | ❌ **취소** | 🔴 **2026-09-29 보드에서 삭제.** CTP 공식 목록(Upcoming·Archive 전수, Playwright)에 없음 — 그 목록은 종료분(APC II)을 남긴다 · somuchpoker 대회 페이지 축어 `[CANCELLED] APC Taipei IV 2026`(Updated 2026.09.23) · 주최 취소 공지 원문은 없음(III 때와 동일). **되살리지 마라** |

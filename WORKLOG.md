@@ -1,3 +1,9 @@
+## 2026-09-29 (6) — zh-hant 대만 대회 일정 모음 글 발행: taiwan-poker-tournaments-guide
+
+- 사실 시트 §3 미조사 6항목 원문으로 채움(`docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md` §3·§4): WWP S5 수첩(Google Drive 이미지 PDF → 렌더 판독 · 메인 #23 NT$6,000 / 10M) · CTP 11th 중문 일정표(이미지 · 메인 = 10/11 單日 NT$8,000 / 2M · 마지막 날 10/15) · TMT 21 미발표(Archive로 1·7월 패턴) · PSC·ZSOP·GOP 대만 Q4 없음 · HPC II 메인 6M · K-ETA 면제 2026-12-31(K-ETA 공지 + 駐韓國台北代表部) · 마카오 MGM(B티어 SOMUCHPOKER).
+- 신규 `lib/posts-zh-hant/taiwan-poker-tournaments-guide.ts`(zh-hant 고유) + 인포그래픽 2장(히어로 Q4 타임라인 · 메인 바이인 사다리 · HTML→Playwright q82). 배선: index · pillar-clusters · 역링크 2(clubs-guide · TMTC FAQ) · 보드 `ctp-11th-anniversary` 신설(+5로케일 note) · HPC·OLA blogLinkByLocale · 스파인 · 캘린더.
+- 게이트: audit:hard --locale=zh-hant 59/59 🔴0 · check:images · image-reuse 🔴0 · tournaments-i18n 🔴0 · build 73+612. 네이티브 렌즈 1회 9건 → 채택 5 · 기각 4(원문 근거를 시트 §4에 축어 보강).
+
 ## 2026-09-29 (5) — zh-hant 대만 대회 일정 모음 글 착수: 사실 시트 1차
 
 - 사장님: «다른 대회는 없나» → 개별 대회명 zh-TW 볼륨 전부 0~10(CTP 11th·港撲盃·OLA·WPT 서울·GOP·APPT·Megastack·WPT 캄보디아·TMT 21) · 일반어 «德州撲克 比賽» 210 · «錦標賽» 90 · «澳門 德州撲克» 110 · «jopt» 90. SERP «德州撲克 比賽» = CTP 소셜·pokerchain·블로그 → 분기 일정 글 없음. 일정 모음 글 제안 → 사장님 «진행하자».

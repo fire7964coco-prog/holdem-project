@@ -51,6 +51,7 @@ import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 // ── 대만 로컬 (zh-hant 전용 · EN 마스터 없음, 2026-08-31) ──
 import { POST as taiwanPokerClubsGuide } from "./taiwan-poker-clubs-guide";
 import { POST as tmtChampionship2026Guide } from "./tmt-championship-2026-guide";
+import { POST as taiwanPokerTournamentsGuide } from "./taiwan-poker-tournaments-guide";
 // GTO 솔버 시리즈 13편 (2026-09-03 · 번역+5필드 · 순서 = lib/gto-series.ts)
 import { POST as aHighBoardCbet } from "./a-high-board-cbet";
 import { POST as kHighBoardCbet } from "./k-high-board-cbet";
@@ -134,6 +135,7 @@ export const ZH_HANT_POSTS: Post[] = [
   // ── 대만 로케일 고유 글 (2026-08-31) ──
   taiwanPokerClubsGuide,
   tmtChampionship2026Guide,
+  taiwanPokerTournamentsGuide,
   // ── GTO 솔버 시리즈 13편 (2026-09-03 · 번역+5필드 · 순서 = lib/gto-series.ts) ──
   aHighBoardCbet,
   kHighBoardCbet,

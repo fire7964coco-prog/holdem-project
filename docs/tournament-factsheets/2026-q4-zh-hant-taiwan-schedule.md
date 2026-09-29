@@ -1,4 +1,4 @@
-# 台灣德州撲克比賽 賽程 2026 Q4~2027 — zh-hant 일정 모음 글 사실 시트 (🟡 작성 중)
+# 台灣德州撲克比賽 賽程 2026 Q4~2027 — zh-hant 일정 모음 글 사실 시트 (✅ 시트 완료 09-29)
 
 > 착수 2026-09-29 (사장님 «좋은 아이디어네!! 진행하자» — OLA 단일 글 보류 뒤 대안). **이번 회차 = 사실 시트까지.** 본문 작성은 다음 세션.
 > 원칙: 1차 출처(주최) → 공신력 매체 순 · 축어 + URL + 열람일. 🔴 본문 숫자는 이 시트(와 여기서 링크한 기존 시트)에 있는 것만.
@@ -77,11 +77,25 @@
 - 🔴 대만 독자 주의: 예치 프로모션 «The Deposit promotion is not available to Taiwan nationals.»
 - ⚠ «A total of 30 events» vs 일정표 최대 번호 #32 → 이벤트 수 쓰지 않음.
 
-## 3. 🟡 미조사 — 다음 세션에서 먼저 (본문 착수 전 필수)
+## 3. ✅ 조사 완료 (09-29 2회차 · Playwright/원문 · 열람 전건 09-29)
 
-1. **CTP 밖 대만 주최 Q4 대회** — ✅ WWP S5 확인(§2-C · 賽事手冊 열람 남음). 그 밖 — pokerchain에 있던 Win Win Poker(WWP SERIES) · Red Space(APT 4월 회장) · Dream Room 등 협회의 10~12월·1월 대회. 각 공식 FB/사이트 원문. 없으면 «CTP 계열만»이라고 범위를 밝힌다.
-2. **TMT 21(2027년 1월?)** — 공식 발표 여부. 없으면 «미발표»로만(날짜 추측 금지 · TMT 19 = 26-01-22~02-09, TMT 17 = 25-01-02~01-20은 S1 Archive 축어로 «例年 1月» 근거 가능).
-3. **해외 원정(대만인 기준)**: ① 한국 WPT 서울·GOP 인천·GOP 제주 — 외국인 전용 카지노라 **대만인은 참가 가능**(KO 글과 반대 관문) · 대만인 무비자 입국(K-ETA 면제 여부 등) 1차 출처 ② JOPT(도쿄 #03 10/8~12 · 오사카 #02 10/29~11/3 · 도쿄 2027 #01) — 외국인 참가 조건 ③ 마카오(«澳門 德州撲克» 110) — Q4 대회 존재 여부부터 ④ 필리핀 APPT 마닐라·Megastack — 수요 10이라 한 줄 이하.
-4. **APT Championship 대만인 관점** — ja 시트는 일본인 관점. 회장 = **Red Space 多元商務空間**(ja 시트 축어 · S7 중문 페이지도 «賽事地點 Red Space 多元商務空間») — CTP 회장 아님, 본문에서 구분. 회장·메인 바이인·일정만 재사용, «대만 거주자 제한» 유무 원문 확인.
-5. **CTP 11th CN Schedule PDF** 열람(중문 명칭 «11週年» 공식 표기 확인 — zh-hant 본문 용어).
-6. 키워드: «德州撲克 比賽» 자동완성·PAA 수집(H2·FAQ 문구) · 훅 만료일(10/5·10/16·11/12·12/16) → 캘린더.
+| # | 항목 | 결과 · 축어 | 출처 |
+|---|---|---|---|
+| 3-1a | **WWP S5 수첩**(중문 PDF 40쪽 · 09-10판 · 이미지 PDF라 렌더 후 판독) | 표지 «WWP SERIES 5 · 2026，9/24 - 10/11» «賽事保證獎池 NT$ 23,300,000 GTD»(«內含前哨戰保證獎池») · **#23 主賽 10/4 ~ 10/11 · BUY-IN 6,000 · NT$ 10,000,000 GTD** · 주요 #1 迷你主賽 9/24~9/28 3,000 / 3M · #16 神秘賞金賽 10/1~10/4 5,000 / 3M · #17 VOLTEX 冠軍賽 10/1~10/3 15,000 / 3M · #26 大師賽 10/5~10/7 9,000 / 1M · #33 超級豪客賽 10/8~10/9 25,000 / 1M · #40 封關賽 10/11 5,000 / 1M · 주소 «台北市中山區中山北路二段112號B1» | 공식 사이트 «賽事手冊» 링크(wwp.pse.is/9kq98x) → Google Drive «WWP S5 - 賽事手冊 (中文).pdf» p.2 |
+| 3-1b | WWP 主賽 상세(p.14) | 날짜 탭 «10/4(日)｜10/7(三)｜10/8(四)｜10/9(五)｜10/10(六)｜10/11(日)» · «Buy-In：6,000 (5,100+900)｜Starting Stack：25,000» «Level 1：60min｜From Level 2：30min» · «Break 15 min / 報名截止»(레벨 5 뒤) · «ITM：15% (向上取整)» «Day2：10% (向上取整)» · «[重複晉級獎勵] 晉級第二次：NT$ 30,000 + ITM 獎勵圈 / 晉級第三次：NT$ 80,000 + ITM 獎勵圈» | 같은 PDF p.14 · 🔴 어느 날이 Day 1/Day 2/결승인지는 이 쪽에 없음 → 글은 «10/4~10/11» 수준만 |
+| 3-1c | CTP 밖 다른 주최 | **Players Series(PSC)** 최근 = PSC IV 8/19~31 CONCLUDED, 예정 없음 · **ZSOP** The Final Horse 9/3~15 CONCLUDED, 예정 없음 · **GOP** 예정 = 인천 10/30~11/8 · 제주 12/4~13(대만 없음) → 대만 Q4 = CTP 목록 + WWP S5가 전부(09-29 기준) | playersseries.com/series · zodiacseriesofpoker.com · godsofpoker.com |
+| 3-1d | **Harbour Poker Cup II**(9/30~10/4 · 발행 9/29라 «곧 개막») | «港撲盃 主賽事 HPC Main Event - NT 6,000,000 GTD» · Day 1/A 9/30 12:30 NT$8,000 (7,120+880) · Day 1/B 9/30 17:00 NT$14,000 (12,460+1,540) · 무료 위성 «10% 主賽事 免費衛星賽 保底五張門票» → 글: «主賽保證 NT$600 萬、Day 1 買入依場次不同» | ctpclub.app/en/festivals/hpc-2026-ii |
+| 3-2 | **TMT 21** | CTP Upcoming 6건에 **없음 = 미발표**. Archive 축어: «TMT 17 Jan 02 — Jan 20, 2025» · «TMT 18 Jul 10 — Jul 28, 2025» · «TMT 19 Jan 22 — Feb 09, 2026» · «TMT 20 Jul 08 — Aug 03, 2026» → 글: «往年 1 月與 7 月各一屆，TMT 21 官方尚未公布» | ctpclub.app/en/festivals |
+| 3-3a | 한국 입국(대만 여권) | 駐韓國台北代表部 축어 «國人持有效護照可免簽入境韓國90日。» «續宣布延長現行免申請「韓國電子旅行許可」（K-ETA)政策至2026年12月31日。» «目前韓國落實電子入境卡及紙本入境卡併行» · K-ETA 공식 공지(2025-12-23) «K-ETA 한시 면제 연장 기간: 2026. 1. 1.(목) ~ 2026. 12. 31.(목) (KST)» | roc-taiwan.org/kr/post/6045.html · k-eta.go.kr 공지 |
+| 3-3b | 한국 대회 = 외국인 전용 카지노 → 대만인 참가 가능 | WPT 서울 10/30~11/9 인스파이어 · 메인 ₩1,750,000 / ₩10억 GTD · GOP 인천 10/30~11/8 파라다이스 시티 · 메인 ₩1,430,000 / ₩6억 GTD · 입장 = 여권 소지 만 19세 이상 외국인 · GOP 제주 12/4~13 | KO 시트 2026-10-kr-apl-wpt-gop.md(09-23) · godsofpoker.com(09-29) |
+| 3-3c | JOPT | 오사카 #02 10/29~11/3 · 🔴 메인은 DBI 폐지(티켓 전용) → 글에는 한 줄 | ja 시트 2026-10-jopt-osaka-02.md |
+| 3-3d | **마카오** | MGM Poker Championship 2026 «at MGM Cotai from October 23 to November 2» · «HKD 14 million … in total guaranteed prize pools» · 메인 «HKD 12,000 … buy-in and a massive HKD 9,000,000 … guarantee» «runs from October 30 to November 1, with five starting flights» — 🟡 B티어(SOMUCHPOKER 09-06 · 주최 원문 미확보) → 글에는 출처 명시 한 단락 | somuchpoker.com/news/mgm-poker-championship-macau-2026-14m-guarantee |
+| 3-3e | 필리핀 | 수요 10 → 글에서 제외 | — |
+| 3-4 | APT Championship 대만인 관점 | 공식 Key Info «Participants must be at least 18 years old» · 회장 Red Space · 메인 USD 10,000 · Day 1 11/23 한 번 · National Cup TWD 16,000(11/13~15) · Micro Main TWD 16,000(11/19~21) — «대만 거주자 제한» 문구 없음 | ja 시트 §1~3 |
+| 3-5 | **CTP 11th 중문 일정표**(이미지 · «CN Schedule PDF» 링크 = media.ctpclub.app/LINE_ALBUM_11th_260925_2.jpg) | «11th週年主賽 - 單日保底200萬 · 11th NLH GTD:NT$2,000,000» 10/11 14:00 «$8,000(6,800+1,200)» 스택 25,000 · 25min · «LV12@19:40» → **메인은 단일 Day(單日)** · 킥오프 «開幕單日百萬賽» 10/5 · «TMTC主賽衛星賽 Satellite to TMTC Main» $1,500 10/13·14·15 · «主賽衛星賽 保證送出5張主賽門票» $1,000 · 일정표 마지막 날 = **10/15**(목록의 10/16과 불일치 → 글은 «10/5 起»로만) · 각주 «賽事#1-15 總獎池提撥4%行政費用» | 이미지 판독(09-29) |
+| 3-6 | 키워드 | 자동완성 추가 수집 생략 — §0 DFS 값으로 H2 구성. 훅 만료일 → 캘린더 | — |
+
+## 4. 적대 렌즈(네이티브 1회 · 09-29) 판정 — 시트 보강
+
+- 채택 5: «9 月前» → «9 月底前»(GOP 9/27·ZSOP 9/15) · GOP 제주 «외국인 전용» 삭제(시트에 베뉴 없음) · 용어 3(«一天內打完» · «不做推測» · 시각 표기).
+- 기각 4(원문 근거 있음 · 시트에 축어 보강): ① HPC 무료 위성 = 일정 «EVENT #1 … 9/30 11:30 … 10% 主賽事 免費衛星賽 保底五張門票» · «EVENT #5 10/1 11:30 … Freeroll Satellite GTD 5 seats»(ctpclub.app/en/festivals/hpc-2026-ii) ② HPC 베뉴 = `docs/tournament-spine.md` Harbour Poker Cup II 행 «hpc.poker 라이브 확인 — 베뉴 Asia Poker Arena, TAIPEI» ③ «TMTC PASS 單日錦標賽» = 중문 일정표 «11th NLH 單日錦標賽 GTD:NT$400,000 TMTC PASS» ④ CTP 사전 회원 등록 = TMTC 시트(`2026-10-tmtc.md`)의 CTP «Register as Player» 안내.

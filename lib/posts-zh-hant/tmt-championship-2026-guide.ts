@@ -207,7 +207,7 @@ A. 會，而且官方特別點名高額賽事。官方預告寫到國際玩家�
 
 **Q. 台灣有德州撲克大賽嗎？**
 
-A. 有，而且不少。光是 CTP 官網在 2026 年第四季就列出 TMTC、APT Championship、OLA Poker Tour 等多個系列賽，大多在台北舉行。完整日期整理在我們的[賽事行事曆](/zh-hant/tournaments)。
+A. 有，而且不少。光是 CTP 官網在 2026 年第四季就列出 TMTC、APT Championship、OLA Poker Tour 等多個系列賽，大多在台北舉行。第四季各系列賽的日期與主賽買入，整理在[台灣德州撲克比賽賽程](/zh-hant/blog/taiwan-poker-tournaments-guide)。
 
 ---
 

@@ -1697,9 +1697,33 @@ const RAW_TOURNAMENTS: Tournament[] = [
     emoji: "🇹🇼",
     color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
     note: "메인이벤트 NT$6,000,000 GTD — Day 1 진출률 10%·17.5%·25% 세 갈래",
+    blogLinkByLocale: { "zh-hant": "/blog/taiwan-poker-tournaments-guide" },
     sourceUrl: "https://hpc.poker/",
     sourceTier: "A",
     verifiedAt: "2026-09-03",
+  },
+  {
+    // 2026-09-29 추가 — 사실 정본 docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md §2-A·§3-5.
+    //   🔴 종료일: CTP 목록은 «Oct 05 — Oct 16», 공식 중문 일정표(이미지)는 10/15가 마지막 날 → 일정표를 따른다.
+    //   메인 = «11th週年主賽 - 單日保底200萬» 10/11 단일 Day · NT$8,000(6,800+1,200).
+    id: "ctp-11th-anniversary",
+    name: "CTP 11th Anniversary",
+    nameEn: "CTP 11th Anniversary",
+    type: "international",
+    startDate: "2026-10-05",
+    endDate: "2026-10-15",
+    location: "대만 타이베이 (CTP Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "CTP Asia Poker Arena",
+    buyin: "NT$600~NT$8,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "메인 NT$8,000 / NT$2,000,000 GTD (10/11 단일 Day) · TMTC PASS·TMTC 메인 위성 편성",
+    blogLinkByLocale: { "zh-hant": "/blog/taiwan-poker-tournaments-guide" },
+    sourceUrl: "https://ctpclub.app/en/festivals/ctp-11th-anniversary",
+    sourceTier: "A",
+    verifiedAt: "2026-09-29",
   },
   {
     id: "tmt-championship",
@@ -1754,6 +1778,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     // 2026-09-29 주최 OLA 공식 원문으로 갱신: 뉴스 07-15 «TWD16.6M in guaranteed prize pools» ·
     //   «TWD10,000,000 guaranteed prize pool for just a TWD22,000 buy-in» · «five Day 1s between 18 – 20 Dec» ·
     //   «Tournament buy-ins range from TWD3K to 55K»(위성 TWD1,200·2,400은 제외된 범위).
+    blogLinkByLocale: { "zh-hant": "/blog/taiwan-poker-tournaments-guide" },
     sourceUrl: "https://olapokertour.com/series/ola-poker-tour-2026-taipei/",
     sourceTier: "A",
     verifiedAt: "2026-09-29",
