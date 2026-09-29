@@ -1712,13 +1712,16 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Taipei",
     country: "TW",
     venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
+    buyin: "NT$1,200~NT$150,000",
     emoji: "🇹🇼",
     color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    note: "NTD 30,000,000 GTD (귀속 대상 공식 미기재)",
-    sourceUrl: "https://ctpclub.app/en/festivals",
+    note: "공식 35개 이벤트 · 시리즈 보장 NT$48,000,000+ · 메인 NT$35,000 / NT$30,000,000 GTD (Day 1 10/22~24)",
+    blogLinkByLocale: { "zh-hant": "/blog/tmt-championship-2026-guide" },
+    // 2026-09-29 note 정정: 30M GTD의 귀속 = 메인 #50(공식 일정표·08-28 공지 축어).
+    //   사실 정본 = docs/tournament-factsheets/2026-10-tmtc.md
+    sourceUrl: "https://ctpclub.app/en/festivals/tmt-championship-2026",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-29",
   },
   {
     id: "apc-taipei-4",

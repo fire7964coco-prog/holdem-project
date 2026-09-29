@@ -436,6 +436,12 @@
 
 ## 10월
 
+### 🆕 ★ 10/1 · 10/16 · 10/24 · 10/26 — zh-hant `tmt-championship-2026-guide` 훅 만료 (발행 2026-09-29)
+- **10/1** 온라인 위성(《富百世．德州撲克》) 종료 → 본문 衛星賽 표·快速解答의 온라인 행을 과거형으로
+- **10/16** 얼리버드 패키지 창구(M1 «Registration is open until October 16 at 23:59») → 禮包 절 과거형
+- **10/24** 마지막 Day 1 · 현장 위성 끝 → 참가 안내 → 관전·결과 대기
+- **10/26 이후** 결과 아카이브 전환 — 리드·快速解答·FAQ·tldr **4곳 동시**(플레이북 §00-A 6) · 우승자·엔트리는 CTP Results 탭 원문으로 · 사실 정본 = `docs/tournament-factsheets/2026-10-tmtc.md`
+
 ### ✅ 10/1 (목) · 10/2~10/6 — ja 대회 글 2편 D-28 시한 → **2026-09-28 두 편 발행** (`jopt-osaka-02-2026-guide` · `korea-poker-trip-gop-wpt-seoul-2026`)
 - 사실 시트 §7(09-28 재확인) = `docs/tournament-factsheets/2026-10-jopt-osaka-02.md` · `2026-11-ja-korea-trip-gop-wpt.md` · 남은 후보 C~F = `2026-q4-ja-candidates.md`
 

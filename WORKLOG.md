@@ -1,3 +1,11 @@
+## 2026-09-29 (2) — zh-hant 대만 대회 글 1편: TMTC 2026 가이드
+
+- 사장님: KO GOP 제주 대신 대만 대회로 → 후보 서치(CTP 공식 목록 Playwright · DFS 볼륨·SERP). TMTC 10/16~26 = SERP에 웹 기사 0(전부 소셜) · 작년 10월 «TMTC» 590 → 1순위. APT Championship은 공식 9/10 독식이라 제외.
+- 사실 시트 신설 `docs/tournament-factsheets/2026-10-tmtc.md`(공식 CTP 일정표 11일치·공지·PDF·APA + SOMUCHPOKER·ETtoday 축어). 공식 자료 간 불일치 1건 판정: 8/28 공지 «Mystery Bounty 15K/4M» → 9월 3건(일정표·PDF·SOMUCHPOKER) «Target Stack 12K/3M» 채택.
+- 신규 `lib/posts-zh-hant/tmt-championship-2026-guide.ts`(zh-hant 고유 · EN/KO 마스터 없음) + 인포그래픽 2장(HTML→Playwright q82). 배선: index · pillar-clusters(zh-hant) · 보드 `tmt-championship` blogLinkByLocale·note(30M = 메인 귀속 확정)·buyin + 5로케일 note · 스파인 · 캘린더 10/1·10/16·10/24·10/26.
+- 게이트: audit:hard 🔴0 · check:images · image-reuse 🔴0 · intl-links · build 73+611. 네이티브 적대 렌즈 1회 → 시트 밖 주장 4건은 원문 축어를 시트에 보강, 혼잡 조언·첫 快速解答·槓桿 등 반영.
+- 별건 발견: **APC Taipei IV(12/2~13)가 CTP 공식 목록에서 사라짐** — 취소 확인 전 보드 유지(스파인 표기). MB-119.
+
 ## 2026-09-29 (1) — 대회 보드 [나도 참가] 옆 네온 화살표
 
 - 사장님: 버튼이 눈에 안 띈다 → 깜빡이는 굵은 파랑 네온 화살표 + 진한 블러. 2차 지시로 블러를 선 따라 붙게(12px 덩어리 → 1·2.5·4px 3겹).

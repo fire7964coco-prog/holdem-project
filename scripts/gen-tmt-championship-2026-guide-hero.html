@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Microsoft JhengHei","PingFang TC","Noto Sans TC",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:#F2EEE3;
+}
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { font-size:38px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:17px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+.foot { position:absolute; bottom:60px; left:70px; width:1060px; border-radius:14px; padding:14px 24px; background:rgba(255,255,255,.05); text-align:center; font-size:16px; font-weight:700; }
+.foot b { color:#C9A227; font-weight:900; }
+.cards { position:absolute; top:150px; left:70px; width:1060px; display:flex; gap:22px; }
+.row2 { position:absolute; top:348px; left:70px; width:1060px; display:flex; gap:22px; }
+.c { flex:1; border-radius:18px; padding:22px 22px 18px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); }
+.c .k { font-size:15px; font-weight:800; opacity:.65; }
+.c .v { font-size:32px; font-weight:900; color:#C9A227; margin-top:8px; }
+.c .v.g { color:#39FF6A; }
+.c .s { font-size:15px; font-weight:700; opacity:.8; margin-top:8px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>TMT Championship <span class="gold">2026</span></h1>
+    <div class="sub">2026.10.16 – 10.26 ・ 台北 Asia Poker Arena</div>
+  </div>
+  <div class="cards">
+    <div class="c"><div class="k">主賽事買入</div><div class="v">NT$35,000</div><div class="s">31,500 + 3,500</div></div>
+    <div class="c"><div class="k">主賽事保證獎池</div><div class="v">NT$3,000 萬</div><div class="s">GTD NT$30,000,000</div></div>
+    <div class="c"><div class="k">主賽事 Day 1</div><div class="v">10.22 – 10.24</div><div class="s">三天共六個場次</div></div>
+  </div>
+  <div class="row2">
+    <div class="c"><div class="k">官方公布賽事</div><div class="v g">35 項</div><div class="s">為期 11 天</div></div>
+    <div class="c"><div class="k">系列賽總保證</div><div class="v g">NT$4,800 萬+</div><div class="s">約 US$150 萬（官方換算）</div></div>
+    <div class="c"><div class="k">2025 主賽事</div><div class="v g">1,076 人次</div><div class="s">冠軍獎金 NT$5,000,000</div></div>
+  </div>
+  <div class="foot">資料：<b>CTP 官方賽程與公告</b>（2026 年 9 月 29 日查詢）・ 以官方最新公告為準</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>
