@@ -7,7 +7,8 @@
 
 - ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
 - ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).
-- ⛔ **OLA Poker Tour Taipei 글은 안 쓴다**(사장님 09-29 «검색이 너무 없다» · zh-TW 평소 월 10·대회 달 170). 보드 카드만 유지. 대만 다음 후보 없음 — 지시 대기. APT Championship은 공식 독식이라 제외.
+- ⛔ **OLA Poker Tour Taipei 글은 안 쓴다**(사장님 09-29 «검색이 너무 없다» · zh-TW 평소 월 10·대회 달 170). 보드 카드만 유지. APT Championship은 공식 독식이라 제외.
+- ▶▶ **다음 세션 첫 작업 = zh-hant 대만 대회 일정 모음 글**(사장님 09-29 «진행하자»): «德州撲克 比賽»(월 210 · SERP에 분기 일정 글 없음)을 노리는 ja `japan-poker-tournaments-guide`형 글. 사실 시트 `docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md` — §0 수요·§2 CTP 11th·OLA 원문 완료, **§3 미조사 6항목을 먼저 채운 뒤 한 번에 작성**. 🪶 보드에 CTP 11th Anniversary(10/5~16) 카드가 없다 — 이 회차에 같이 추가.
 - ✅ S-027 회신 = MB-121(보드 유형 정의·보고 싶은 값 = `docs/reply-to-solver-2026-09-29.md` · 팩트시트 4곳 정정). ▶ 대기: 솔버 `집계_srp-btn-bb.json`(R1 검증 뒤 · 날짜 약속 없음) → 오면 C벳 필라 보드 유형별 표 회차. 🔴 레인지 출처 문구는 R1 결과 전까지 글에 금지.
 - ⏸ **KO GOP 제주 2026 가이드는 보류**(사장님 09-29 «이거 말고 대만걸로»). 재개 시: LES A 외국인 전용이라 내국인 참가 불가가 글의 첫 관문(`apt-jeju-2026-fall-guide`·`gop-incheon-2026-ii-guide` 처리 방식) · KO 수요 볼륨부터 확인.
 - ja는 추가 후보 D·E·F 보류(아래 F절).

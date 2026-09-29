@@ -1,3 +1,8 @@
+## 2026-09-29 (5) — zh-hant 대만 대회 일정 모음 글 착수: 사실 시트 1차
+
+- 사장님: «다른 대회는 없나» → 개별 대회명 zh-TW 볼륨 전부 0~10(CTP 11th·港撲盃·OLA·WPT 서울·GOP·APPT·Megastack·WPT 캄보디아·TMT 21) · 일반어 «德州撲克 比賽» 210 · «錦標賽» 90 · «澳門 德州撲克» 110 · «jopt» 90. SERP «德州撲克 比賽» = CTP 소셜·pokerchain·블로그 → 분기 일정 글 없음. 일정 모음 글 제안 → 사장님 «진행하자».
+- 작업 한도(90분) 안에서 사실 시트까지만: `docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md` — CTP 11th Anniversary 일정표 전량(메인 #10 NT$8,000/2M GTD 10/11 · TMTC Pass 위성 · 원문 이상치 4건 기록) · OLA 원문 · pokerchain(과거 4건뿐). 미조사 6항목(CTP 밖 주최 · TMT 21 · 해외 원정 대만인 조건 · APT 대만인 관점 · CN PDF · PAA) = 다음 세션.
+
 ## 2026-09-29 (4) — 우편함: 솔버 S-027 회신(MB-121)
 
 - 우편함 점검: 우리 몫 = MA-212·213(MB-108에서 «MA-210~225 수신 ACK» 처리 완료 — 요청 0) · **S-027**(솔버 · 요청 3).
