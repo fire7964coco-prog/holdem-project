@@ -8,7 +8,7 @@
 - ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
 - ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).
 - ⛔ **OLA Poker Tour Taipei 글은 안 쓴다**(사장님 09-29 «검색이 너무 없다» · zh-TW 평소 월 10·대회 달 170). 보드 카드만 유지. APT Championship은 공식 독식이라 제외.
-- ✅ **zh-hant 대만 대회 일정 모음 글 발행 + 아스트라 교차 검수 반영** — `taiwan-poker-tournaments-guide`(WORKLOG 09-29 (6)·(7) · MB-122·123 · 라이브 확인 · 보드 `ctp-11th-anniversary` 신설). 판정 = 사실 시트 §4·§5. 갱신 시한 = 캘린더 10월 첫 절(10/4·10/11·TMT 21 발표·K-ETA 12/31). 🪶 «아스트라로 검수» = 본체에서 `codex exec` read-only 서브(메모리 astra-subreview). ▶ 다음 = 사장님 지시 대기(🪶 WWP S5 보드 카드 후보 · 마카오 MGM 주최 원문 확보 시 B→A 교체).
+- ✅ **zh-hant 대만 대회 일정 모음 글 발행 + 아스트라 교차 검수 반영** — `taiwan-poker-tournaments-guide`(WORKLOG 09-29 (6)·(7) · MB-122·123 · 라이브 확인 · 보드 `ctp-11th-anniversary` 신설). 판정 = 사실 시트 §4·§5. 갱신 시한 = 캘린더 10월 첫 절(10/4·10/11·TMT 21 발표·K-ETA 12/31). 🪶 «아스트라로 검수» = 본체에서 `codex exec` read-only 서브(메모리 astra-subreview). ✅ WWP S5 보드 카드 `wwp-series-5` 편입(WORKLOG 09-29 (8) · MB-124 · 10/11 종료 뒤 결과·과거형은 모음 글 캘린더 회차와 같이). ▶ 다음 = 사장님 지시 대기(🪶 마카오 MGM 주최 원문 확보 시 B→A 교체).
 - ✅ S-027 회신 = MB-121(보드 유형 정의·보고 싶은 값 = `docs/reply-to-solver-2026-09-29.md` · 팩트시트 4곳 정정). ▶ 대기: 솔버 `집계_srp-btn-bb.json`(R1 검증 뒤 · 날짜 약속 없음) → 오면 C벳 필라 보드 유형별 표 회차. 🔴 레인지 출처 문구는 R1 결과 전까지 글에 금지.
 - ⏸ **KO GOP 제주 2026 가이드는 보류**(사장님 09-29 «이거 말고 대만걸로»). 재개 시: LES A 외국인 전용이라 내국인 참가 불가가 글의 첫 관문(`apt-jeju-2026-fall-guide`·`gop-incheon-2026-ii-guide` 처리 방식) · KO 수요 볼륨부터 확인.
 - ja는 추가 후보 D·E·F 보류(아래 F절).

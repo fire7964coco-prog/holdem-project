@@ -1,3 +1,9 @@
+## 2026-09-29 (8) — /tournaments 보드 WWP Series 5 카드 편입
+
+- 사장님 지시(«넣어줘»). `lib/tournaments.ts` `wwp-series-5` 신설(9/24~10/11 · Win Win Poker · 메인 NT$6,000 / 10M GTD · zh-hant 일정 모음 글 링크) + note 5로케일(en·ja·zh·zh-hant·es).
+- 바이인 범위 NT$1,000~25,000 = 수첩 PDF 일정표 p.3~12 전 날짜 렌더 판독(사실 시트 §2-C). 스파인 행 추가.
+- 게이트: check:tournaments-i18n 🔴0 · check:tournament-numbers 0 · build 73+612 · 빌드 산출 KO·en·zh-hant 보드 노출 확인.
+
 ## 2026-09-29 (7) — taiwan-poker-tournaments-guide 아스트라 교차 검수 반영
 
 - 사장님 지시: 아스트라로 검수(페르소나·서치 강화). 이 세션에서 Codex CLI `gpt-6-astra`를 **read-only 샌드박스 + 스크래치 사본**으로 실행(ChatGPT 계정 인증 · 별도 API 과금 없음). 대만 현지 매체 편집자 페르소나 · 1차 원문 직접 열람·축어·직접 계수 규율.

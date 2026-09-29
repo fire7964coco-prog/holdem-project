@@ -1667,6 +1667,31 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-08-31",
   },
   {
+    // 2026-09-29 추가(사장님 지시) — 사실 정본 docs/tournament-factsheets/2026-q4-zh-hant-taiwan-schedule.md §2-C·§3-1a·b.
+    //   원문 = 공식 사이트 «賽事手冊» → WWP S5 - 賽事手冊 (中文).pdf(09-10판 · 이미지 PDF 렌더 판독).
+    //   바이인 범위 = 수첩 p.3~12 일정표(9/24~10/11 전 날짜) 전수: 최소 1,000(#3·#5 快！狠！準！賽) ·
+    //   최대 25,000(#33 超級豪客賽). Final Day 행(«-»)은 바이인이 아니다.
+    //   CTP 밖 주최(Win Win Poker) · 회장 = 台北市中山區中山北路二段112號B1.
+    id: "wwp-series-5",
+    name: "WWP Series 5",
+    nameEn: "WWP Series 5",
+    type: "international",
+    startDate: "2026-09-24",
+    endDate: "2026-10-11",
+    location: "대만 타이베이 (Win Win Poker)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Win Win Poker",
+    buyin: "NT$1,000~NT$25,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "메인 NT$6,000 / NT$10,000,000 GTD (10/4~10/11) · 시리즈 보장 NT$23,300,000 (사전 이벤트 포함)",
+    blogLinkByLocale: { "zh-hant": "/blog/taiwan-poker-tournaments-guide" },
+    sourceUrl: "https://winwinpoker.com.tw/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-29",
+  },
+  {
     /**
      * ★ 2026-08-31 갱신 — 「공식 미기재」였는데 **주최사 공식에 전부 공개돼 있었다.**
      *   07-29엔 CTP 목록(`ctpclub.app/en/festivals`)만 근거였다. 주최사 공식은 **`hpc.poker`**이고
