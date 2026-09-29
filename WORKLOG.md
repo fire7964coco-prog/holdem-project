@@ -1,3 +1,13 @@
+## 2026-09-29 (10) — /tournaments 로케일 회차 2 전반: pt · tr (hi·ar은 다음 실행)
+
+- 같은 실행 이어서(사장님 «이어서 진행»). 작업 한도 마감(21:49) 때문에 hi·ar(RTL 화면 검수 필요)은 분리.
+- 회차 1과 같은 구성: `app/{pt,tr}/tournaments` · i18n pt·tr(FIELD·PAREN·CITY·COUNTRY·NAME_OVERRIDE·SCHEMA_DESC·MONTH · 천 단위 마침표) · hreflang·sitemap·게이트 11로케일 · hub-routes(tr 첫 HubPage) · side-rail(pt «Torneios» = 필라 라벨 · tr «Turnuvalar» = h1 핵심명) · pt/hub-routes·side-rail의 «/pt/tournaments 없다» 경고 갱신.
+- 검색 형태(DataForSEO): pt(BR) «torneio(s) de poker» 320 · tr «poker turnuvası/turnuvaları» 110 · «poker tournament» 40.
+- 축: pt = BSOP(Winter·Floripa·Millions·Summer 2027) + CAP(부에노스아이레스·로사리오) · tr = 북키프로스(WPT Prime Cyprus · Triton ONE · Triton SHR). 사실은 보드 행에서만. tr 블록의 «Triton 추천제» 문장은 북키프로스 행에 근거가 없어 작성 단계에서 뺐다.
+- 아스트라 교차 검수 5건 → 채택 4(pt «남부 거주자에게 가장 가까운 국제 시리즈» 삭제 — BSOP Floripa가 남부라 모호 · tr 접미사 «Prestige'de»·«Cyprus'ın» · «satellite'ler»→«çevrim içi eleme turnuvaları») · 기각 1(tr «튀르키예에 가장 가까운» — 보드 개최국 중 키프로스가 최근접인 건 지리 사실이고 검색 의도 질문).
+- 게이트: check:tournaments-i18n 🔴0(11로케일) · build 73+612 · hreflang 0 · meta-lang 0.
+- 날짜 문장 만료 → 캘린더 11월 절(회차 1 항목에 합침).
+
 ## 2026-09-29 (9) — /tournaments 로케일 신설 회차 1: id · ms · vi
 
 - 사장님 09-29 승인분(핸드오프 ▶▶). de 방식: `app/{id,ms,vi}/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·PAREN·CITY(vi)·COUNTRY_NAME·NAME_OVERRIDE·SCHEMA_DESC·MONTH·RANGE_DASH · NOTE는 비움(배지 미표시) · hreflang 한 곳 + sitemap `TOURNAMENT_LOCALES` · hub-routes(vi는 첫 HubPage) · side-rail(id «Turnamen»·ms «Tournament» = 필라 라벨 축어 · vi «Giải poker» = h1 핵심명) · 게이트 BOARD_LOCALES 9로케일.

@@ -64,8 +64,12 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      ⚠ `/es/hand-chart`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
   es: ["/es/blog", "/es/calculator", "/es/solver", "/es/tournaments"],
   // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
-  //      ⚠ **pt는 es보다 가진 것이 적다** — **`/pt/tournaments`는 없다**(es에는 있다). 없는 라우트를 넣지 마라.
-  pt: ["/pt/blog", "/pt/calculator", "/pt/solver"],
+  //      ⚠ 없는 라우트를 넣지 마라(`/pt/tournaments`는 2026-09-29에 생겼다 — 아래).
+  // ★2026-09-29 `/pt/tournaments` 신설(로케일 회차 2) — 위 «없다» 경고는 이 날부로 해제.
+  pt: ["/pt/blog", "/pt/calculator", "/pt/solver", "/pt/tournaments"],
+  // tr — ★2026-09-29 `/tr/tournaments` 신설. tr의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
+  //      ⚠ tr에는 solver·calculator가 **없다** — 넣지 마라.
+  tr: ["/tr/tournaments"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).

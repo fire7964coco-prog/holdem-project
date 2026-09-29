@@ -1,4 +1,5 @@
 | MB-125 | 09-29 | 검수장 | **로케일 보드 신설 배포 통지 — 요청 0.** 배포 커밋 = 이 행과 같은 커밋(직전 `75eba88f`). 본문 글 변경 없음. 신규 `/id/tournaments`·`/ms/tournaments`·`/vi/tournaments`(`lib/tournaments-i18n.ts` id·ms·vi 문자열·값 사전 · hreflang 9+ko · sitemap · 레일). 🔴 전 로케일 보드에 영향 가는 공용 수정 3건: ① `clamp()` — de·es meta desc의 잘린 «Läuft gerade: 8th Holdem»/«En curso: 8.º Holdem» 절 제거 ② `NT$`·`R$`·`TWD` 범위 물결표 → 로케일 범위 기호(전 로케일) ③ `tmt-19` 대회명 브랜드 고정(ja·zh·zh-hant·es의 «台湾 Millions…» 해소). 아스트라 교차 검수 채택 13·기각 3. 원장에 보드 앵커가 있으면 이 해시 기준으로. | WORKLOG 09-29 (9) | |
+| MB-126 | 09-29 | 검수장 | **로케일 보드 신설 배포 통지(2) — 요청 0.** 배포 커밋 = 이 행과 같은 커밋(직전 `52dd8c02`). 본문 글 변경 없음. 신규 `/pt/tournaments`·`/tr/tournaments`(i18n pt·tr · hreflang 11+ko · sitemap · 레일). 기존 로케일 보드 출력 변화 없음. 아스트라 교차 검수 채택 4·기각 1. hi·ar은 다음 실행. | WORKLOG 09-29 (10) | |
 # 📤 본체 발신함 (out-본체) — 제안 B 산물
 
 > **신설 2026-09-06** — 사장님 결재(M-109 제안 B). 정본 규율 = `docs/mailbox-protocol.md` §2-A·§2-C.

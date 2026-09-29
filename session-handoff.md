@@ -5,7 +5,7 @@
 
 ## ▶▶ 다음 세션 (09-29 갱신)
 
-- ✅ **회차 1 id·ms·vi 배포**(WORKLOG 09-29 (9)) · 날짜 문장 만료 = 캘린더 11월 절. ▶ 다음 = **회차 2 pt·tr·hi·ar** (사장님 지시 시 · 방식은 회차 1 커밋 그대로 · pt는 hub-routes·side-rail에 «/pt/tournaments 없다» 경고 주석이 있으니 같이 고친다).
+- ✅ **회차 1 id·ms·vi**(WORKLOG 09-29 (9)) · ✅ **회차 2 전반 pt·tr**(09-29 (10)) · 날짜 문장 만료 = 캘린더 11월 절. ▶ 다음 = **회차 2 후반 hi·ar** (사장님 «이어서 진행» 승인분 — 새 실행 첫 작업 · 방식은 pt·tr 커밋 그대로 · hi는 hub-routes에 이미 항목 있음(calculator·solver) · ar은 hub-routes·side-rail 항목 없음 + **RTL 모바일 screen-review** 필수 · 교차 검수 1회).
 - ▶▶ **`/tournaments` 로케일 신설 — 사장님 09-29 승인.** 현재 = ko + `TOURNAMENT_LOCALES`(`lib/tournaments-hreflang.ts`) en·ja·zh·zh-hant·es·de. 취지 = 자국 대회가 없어도 «해외 대회 캘린더». **de 방식**: `app/<l>/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·CITY·VENUE·PAREN·SCHEMA_DESC·MONTH·COUNTRY_NAME·RANGE_DASH · **NOTE(카드 설명)는 비워 둔다**(미등재 = 배지 미표시 · 설계) · hreflang 한 곳 + `scripts/generate-sitemap.mjs` `TOURNAMENT_LOCALES` 동시 갱신.
   | 회차 | 로케일 | 비고 |
   |---|---|---|

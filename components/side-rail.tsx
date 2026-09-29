@@ -153,13 +153,25 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    *   (`<title>` = "HoldemMaster GTO Solver — Solver de poker GTO grátis no navegador").
    *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 「`solver`를 `poker`와 붙여 쓴다」는
    *      규율(뱅크 §1-B-①. 브라질에서 단독 `solver`는 엑셀이다)과 **층이 다르다.**
-   *   ⚠ **`/pt/tournaments`는 없다** — es 항목을 그대로 복사하지 마라.
+   *   ⚠ es 항목을 그대로 복사하지 마라 — `/pt/tournaments`는 2026-09-29에 생겼고 아래에 따로 넣었다.
    */
   pt: [
     { href: "/pt/blog",   icon: "📚", label: "Blog" },
     { href: "/pt/solver", icon: "🧠", label: "Solver GTO" },
     // ★2026-09-17 `/pt/calculator` 신설. 라벨 = 제목 「Calculadora de probabilidades de poker — …」에서 딴 단축형.
     { href: "/pt/calculator", icon: "🧮", label: "Calculadora de poker" },
+    // ★2026-09-29 `/pt/tournaments` 신설. 라벨 = PT_CLUSTERS tournament pillarLabel 축어(lib/pillar-clusters.ts).
+    { href: "/pt/tournaments", icon: "🏆", label: "Torneios" },
+  ],
+  /**
+   * tr — ★2026-09-29 `/tr/tournaments` 신설(tr 첫 허브). 라벨:
+   *   - "Blog"       = CHROME.tr.blogLabel (lib/intl.ts)
+   *   - "Turnuvalar" = BOARD_STRINGS.tr h1 «Poker turnuvaları 2026»의 핵심명(tr엔 필라 클러스터가 없다)
+   *   ⚠ tr에는 solver·calculator가 없다 — 넣지 마라.
+   */
+  tr: [
+    { href: "/tr/blog",        icon: "📚", label: "Blog" },
+    { href: "/tr/tournaments", icon: "🏆", label: "Turnuvalar" },
   ],
   /**
    * de — 2026-08-10 신설. 라벨은 ja·es와 같은 규칙으로 **검증된 값에서 축어 복사**:
@@ -287,7 +299,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 // id — BOARD_STRINGS에 id가 없다(id에 tournaments 페이지 자체가 없음). fr처럼 en으로 떨어뜨리면
 //      인도네시아어 화면에 영어가 섞인다 → 우리 id 코퍼스 42편이 쓰는 표준어 "Panduan"을 쓴다
 //      (title 2편 포함 다수 실측 · 2026-09-05). 새로 번역한 것이 아니라 코퍼스에서 딴 값이다.
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", hi: CHROME.hi.contentHeading };
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**
