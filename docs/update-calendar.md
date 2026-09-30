@@ -51,6 +51,13 @@
 - 볼륨(DFS id 09-24): urutan kartu poker tertinggi 1,600(8월 2,900) · tingkatan kartu poker 390 · rumus poker 390. 근거 = `docs/locale-intentional-diffs.md` 2026-09-24 행.
 - 재기 = `npm run gsc:page -- id/blog/<slug> --days 28`. 좋아졌으면 같은 방식(검색어 표현 일치)을 다른 로케일에 쓸지 판단, 아니면 권위 문제로 닫는다.
 
+### 10/21경 — ja flush-vs-straight 쿼리 맞춤 · ko 「포커 홀덤 차이」 2차 조치 (배포 2026-09-30)
+
+- ja 기준선(GSC 08-31~09-27): `/ja/blog/holdem-flush-vs-straight` «どっちが強い» 변형 6쿼리 합 177노출 · 클릭 0 · r8.0~9.8. 🪶 DFS 라이브(09-30)는 3쿼리 중 2개 20위 밖 · 1개 14위로 GSC 평균과 어긋났다 — 판독은 GSC 쿼리별로. 편차 등재 = `docs/locale-intentional-diffs.md` 09-30 행.
+- ko 기준선·조치 = `docs/keyword-bank/ko-longtail-absorb.md` «2차 조치(09-30)» 행. 09-23 조치와 합산 판독. seoTitle은 안 바꿨다 — 그때도 r9 이하면 제목 꼬리에 「포커 홀덤 차이」를 넣을지 판단(「7포커/세븐포커 홀덤 차이」 r3.7~4.6 동반 확인).
+- 재기 = `npm run gsc:page -- ja/blog/holdem-flush-vs-straight --days 28` · `npm run gsc:page -- blog/holdem-vs-7poker-hand-rankings --days 28`.
+- 「버블구간」(r2.8 · 70노출 · 0클릭)은 조치 없음 판정(09-30 SERP 실측: 오가닉 2위 · AI 개요 1번 출처 = 제로클릭 구조). 다음 28일 창에서 노출 200+인데 0클릭이면 기기별 CTR로 재판정.
+
 ### 10/21경 — ko 동크벳 «뜻» 보강 · 포지션 필라 제목 (배포 2026-09-26 · `settled-decisions` §1-E)
 
 - 기준선(GSC 45일 08-09~09-23): `donk-bet-strategy` 218노출/2클릭 r8.9 · 「동크벳」 88 r9.3 · 「동크벳 뜻」 31 r10.3 · 「리드벳」 0. `position-is-everything-in-holdem` 294노출/10클릭 CTR 3.4% r11.0 · 「홀덤 포지션」 r26.

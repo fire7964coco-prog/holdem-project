@@ -43,6 +43,7 @@
 
 | 날짜 | 글 | 차이 | 판정 근거 |
 |---|---|---|---|
+| 2026-09-30 | ja `holdem-flush-vs-straight` | **FAQ가 ja 9문(EN 8문)** — 첫 문항 「ストレートとフラッシュ、どっちが強いですか?」가 ja 전용. tldr 첫 문장·«先に結論»·첫 H2 직답이 「強いのはフラッシュです／フラッシュのほうが強い」 어형(EN은 «Yes — a flush beats a straight») | ✅ ja 쿼리 맞춤(GSC 08-31~09-27: «どっちが強い» 변형 6쿼리 177노출 · r8.0~9.8 · 클릭 0). «どっち» 질문에 «はい»로 답하던 번역 흔적을 고친 것이고 수치는 전부 기존 값. `masterUpdated`는 09-28 그대로(EN 대조 회차 아님 · 09-24 id 선례와 같은 처리). EN 대조 때 드리프트로 되돌리지 마라 · WORKLOG 09-30 (4) |
 | 2026-09-11 | de `holdem-strategy` | FAQ 「nobody folds to a call」 문장이 de에 없다(de는 「Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern」) | ✅ `git log -S`로 **fc404ca8(de 전용 회차)의 의도적 문안** 확인(2차 교열 렌즈). EN-먼저 J#4는 **기각·원문 복원**됐으므로 전파할 델타가 없다 → `masterUpdated`만 09-11로 올렸다(«이미 갖고 있더라» 케이스). 🔴 드리프트로 다시 집지 마라 |
 | 2026-08-12 | `holdem-implied-odds` | 「리버에서도 implied odds가 성립하나」 **FAQ가 de에만 있다** | ✅ 실측: 8 로케일 중 de만 보유(다른 7편엔 문항 자체가 없다). 인계서는 이걸 «미러 결함»으로 적어 뒀으나 **옮길 대상이 없었다** |
 | 2026-08-12 | `holdem-hand-rankings` | 「Pokerblatt·Pokerhand는 같은 뜻」 **용어 동일시 문장은 de 전용** | ✅ 실측: de 키워드 배치용 문장. 12 로케일에 대응 문장 없음 |
