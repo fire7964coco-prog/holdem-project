@@ -174,6 +174,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **M-3 남은 8편**(strategy 2 · tournament · glossary) | ⏸ 검수장 보고 도착 대기 → M-1과 같은 방식 | — |
 | **M-4 남긴 것** | 🪶 판정표 §5 «남긴 것» 4항(probability «most common winning hand» 1차 자료 부재 · betting-actions 사이드팟 사본 · position-play 본문 3곳 · 길어진 FAQ 2개) — 자동 착수 대상 아님 | 4 |
 
+### 2-N. 09-30 보고서 보완 2(질문↔답 어형 스윕)가 올린 것 (본체 · ①EN 원문 · 1건 · 자동 착수 금지)
+
+| # | 글 | 자리 | 문제 | 제안 | 전파 |
+|---|---|---|---|---|---|
+| N-1 | `holdem-flush-vs-straight` | EN 129행 H2 «Flush vs Flush, Straight vs Straight — Who Wins the Tie?» 직후 131행 «Yes, one flush can absolutely be higher than another.» | «누가 이기나» 질문에 «Yes,»로 답한다(H2만 질문형으로 바뀌고 답 문장이 옛 형태로 남은 것). 사실 오류 아님 — 직답 어형 문제 | «Yes, » 제거 또는 «The higher cards win — » 로 시작 | id·es·pt·de·ms 132행(EN과 같은 형태 · H2 바로 밑). ja 144 · zh 179 · zh-hant 146은 앞에 직답 블록이 있어 영향이 작다(같이 맞추면 됨). 수치·핸드 무변경 |
+
+🪶 스윕 범위·방법 = WORKLOG 09-30 (6). EN 746문항 중 이 1건뿐이라 단독 전파 회차를 열 값어치는 아니다 — 이 글의 다음 EN-먼저 회차에 얹는다.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
