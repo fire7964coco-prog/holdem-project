@@ -22,7 +22,8 @@ if (!folders.length) {
 }
 
 // lib/intl.ts SECONDARY_LOCALES 와 동기화
-const LOCALES = new Set(['en', 'ja', 'es', 'zh', 'ar', 'pt', 'id', 'ms', 'vi', 'hi', 'de', 'tr',
+// 2026-09-30: 'zh-hant' 누락으로 /zh-hant/ 가 ko 로 합산되고 있었다(28일 982노출·21클릭).
+const LOCALES = new Set(['en', 'ja', 'es', 'zh', 'zh-hant', 'ar', 'pt', 'id', 'ms', 'vi', 'hi', 'de', 'tr',
   'fr', 'ru', 'it', 'pl', 'th', 'fa', 'sw', 'bn', 'ro', 'fil', 'uk', 'he']);
 
 function readLines(p) {

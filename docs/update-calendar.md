@@ -25,6 +25,7 @@
 
 ### 10/14 이후 — 홈·/blog·/tournaments·/solver 배치 변경 4주 비교
 - **배경**: 09-16에 GA4·GSC 28일 분석으로 홈 피드·/blog 순서와 관문 4곳 추천 블록을 재배치했다(순서 정본 `lib/featured-order.ts`).
+- 🔴 **기기 판독은 `node scripts/ga-device.mjs --days 28`(09-30부터 보정 기본)로.** 모바일 홈 38.3% 같은 옛 기준선은 원값 표에서 나왔다 — 같은 잣대로 다시 뽑아 비교한다. «격차는 신규에서만» 전제는 09-30에 폐기(WORKLOG 09-30 (5)): 재방문에도 격차 23.4p. `/solver`·`/hand-chart` 재방문 모바일(57% · 39%)도 같이 본다.
 - **볼 것**: 같은 28일 창(`ga-fetch --pages --days 28` + `gsc-fetch`)으로 홈·/blog·/tournaments·/solver 참여율과 S·A 티어 글 세션을 기준선과 비교.
 - **기준선**: `docs/post-placement-analysis-2026-09-16.md` §2 표(창 2026-08-17~09-13) · 검증 기록 `docs/post-placement-verification-2026-09-16.md`
 - **함께**: 10/5(WPL 제8회)·10/7(APT 제주) 종료 뒤 `EVENT_UNTIL`이 자동 강등했는지 홈 상단 육안 확인.

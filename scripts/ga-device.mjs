@@ -10,6 +10,14 @@
  * «구조 탓인지 / 특정 글 탓인지 / 의도 탓인지»가 갈린다.
  *
  * 🔴 창은 28일이 기본 ([[analytics-window-28days]]).
+ *
+ * 🔴 보정 2종이 기본이다 (2026-09-30 · analytics-snapshot.mjs와 같은 규칙):
+ *   ① landingPage="(not set)" 제외 — 30분 무활동 뒤 재개된 «두 번째 조각»(참여 0)이다.
+ *      이 조각은 **전부 «재방문»으로 분류되고 데스크톱에 몰린다**(09-01~28: 데스크톱 160 · 모바일 46).
+ *      안 빼면 데스크톱 재방문 참여율이 82% → 52%로 눌려 «재방문은 격차가 없다»로 읽힌다.
+ *      실제로 08-17·09-16·09-23 진단이 세 번 그렇게 읽었다(3개 창 원값 격차 −10.2p · −0.4p · −2.2p
+ *      ↔ 보정 8.1p · 15.7p · 23.4p). --raw 로 옛 동작을 재현할 수 있다.
+ *   ② 창 끝 = 2일 전 — 어제는 GA 집계가 안 끝난 날이다(참여율 3%대로 찍힌다).
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -36,7 +44,9 @@ const di = args.indexOf('--days');
 const DAYS = di >= 0 && args[di + 1] ? parseInt(args[di + 1], 10) : 28;
 const mi = args.indexOf('--min');
 const MIN = mi >= 0 && args[mi + 1] ? parseInt(args[mi + 1], 10) : 8;
-const START = `${DAYS}daysAgo`;
+const RAW = args.includes('--raw');
+const START = RAW ? `${DAYS}daysAgo` : `${DAYS + 1}daysAgo`;
+const END = RAW ? 'yesterday' : '2daysAgo';
 
 const PROP = process.env.GA_PROPERTY_ID;
 if (!PROP) { console.error('✖ GA_PROPERTY_ID 미설정 (.env.local)'); process.exit(1); }
@@ -50,15 +60,17 @@ const ga = google.analyticsdata({ version: 'v1beta', auth });
 const dur = (s) => { s = Math.round(+s || 0); return `${Math.floor(s / 60)}m${String(s % 60).padStart(2, '0')}s`; };
 const pct = (x) => `${((+x || 0) * 100).toFixed(1)}%`;
 
-const ORGANIC = {
+const ORGANIC_ALL = {
   filter: { fieldName: 'sessionDefaultChannelGroup', stringFilter: { value: 'Organic Search' } },
 };
+const NOT_SET = { filter: { fieldName: 'landingPage', stringFilter: { value: '(not set)' } } };
+const ORGANIC = RAW ? ORGANIC_ALL : { andGroup: { expressions: [ORGANIC_ALL, { notExpression: NOT_SET }] } };
 
 async function run(dimensions, metrics, opts = {}) {
   const res = await ga.properties.runReport({
     property: `properties/${PROP}`,
     requestBody: {
-      dateRanges: [{ startDate: START, endDate: 'yesterday' }],
+      dateRanges: [{ startDate: START, endDate: END }],
       dimensions: dimensions.map((name) => ({ name })),
       metrics: metrics.map((name) => ({ name })),
       orderBys: [{ metric: { metricName: opts.sort || metrics[0] }, desc: true }],
@@ -76,6 +88,12 @@ async function main() {
   console.log(`\n${'='.repeat(92)}`);
   console.log(`GA4 ${PROP} · 최근 ${DAYS}일 · Organic Search 한정 · 기기별 참여 격차`);
   console.log('='.repeat(92));
+  if (RAW) {
+    console.log('⚠ --raw: 보정 없음((not set) 랜딩 포함 · 어제까지). 재방문 행은 데스크톱이 낮게 나온다 — 판정에 쓰지 마라.');
+  } else {
+    const ns = await run(['deviceCategory'], ['sessions'], { filter: { andGroup: { expressions: [ORGANIC_ALL, NOT_SET] } } });
+    console.log(`보정: 창 ${START}~${END} · (not set) 랜딩 제외 — ${ns.map((r) => `${r.d[0]} ${r.m[0]}`).join(' · ') || '0'}세션(전부 재방문으로 분류되는 조각)`);
+  }
 
   // 1) 기기별 총계
   console.log('\n── ① 기기별 총계 (세션 / 참여율 / 세션당참여시간 / 세션당페이지 / 이탈) ──');
