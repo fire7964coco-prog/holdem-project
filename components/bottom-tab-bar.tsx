@@ -105,6 +105,8 @@ const TAB_LABELS: Record<string, Record<BottomTabKey, string>> = {
   hi: { home: "फ़ीड", blog: "ब्लॉग", chat: "चैट", event: "इवेंट", profile: "प्रोफ़ाइल" },
   vi: { home: "Bảng tin", blog: "Blog", chat: "Trò chuyện", event: "Sự kiện", profile: "Hồ sơ" },
   tr: { home: "Akış", blog: "Blog", chat: "Sohbet", event: "Etkinlik", profile: "Profil" },
+  // ar — 2026-09-30 `/ar/tournaments`(ar 첫 허브)와 함께. blog = CHROME.ar.blogLabel 축어.
+  ar: { home: "المنشورات", blog: "المدوّنة", chat: "الدردشة", event: "الفعالية", profile: "حسابي" },
 };
 
 export function tabLabels(locale?: string | null): Record<BottomTabKey, string> {

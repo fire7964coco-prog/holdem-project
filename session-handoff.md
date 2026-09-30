@@ -1,17 +1,12 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-29 (zh-hant 일정 모음 글 + 아스트라 검수 · MB-122·123) · 그 전 2026-09-28 (참여 장치 배포 · 작업 한도 90분·20분) · 그 전 09-28 (방향 논의 · 추첨 버그 수정 · MB-115) · 그 전 09-28 (ja APT Championship 台北 글 · MB-114) · 그 전 09-28 (M-2 로케일 전파 144파일 · MB-112) · 그 전 09-28 (검수장 PT 보고 181행 판정·배포 · MB-110) · 그 전 09-28 (ja 대회 글 2편 발행 · MB-108) · 그 전 2026-09-27 (MA-206 요청 2건 · MB-106) · 그 전 09-27 (L-2i · MB-101) · 그 전 09-26 (L-2h · MB-097) · 그 전 09-26 (L-2g 로케일 전파 · L-2 종결) · 이전 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-09-30 (/hi·/ar 토너먼트 보드 · 로케일 신설 계획 완료 · MB-127) · 그 전 2026-09-29 (zh-hant 일정 모음 글 + 아스트라 검수 · MB-122·123) · 그 전 2026-09-28 (참여 장치 배포 · 작업 한도 90분·20분) · 그 전 09-28 (방향 논의 · 추첨 버그 수정 · MB-115) · 그 전 09-28 (ja APT Championship 台北 글 · MB-114) · 그 전 09-28 (M-2 로케일 전파 144파일 · MB-112) · 그 전 09-28 (검수장 PT 보고 181행 판정·배포 · MB-110) · 그 전 09-28 (ja 대회 글 2편 발행 · MB-108) · 그 전 2026-09-27 (MA-206 요청 2건 · MB-106) · 그 전 09-27 (L-2i · MB-101) · 그 전 09-26 (L-2h · MB-097) · 그 전 09-26 (L-2g 로케일 전파 · L-2 종결) · 이전 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶ 다음 세션 (09-29 갱신)
 
-- ✅ **회차 1 id·ms·vi**(WORKLOG 09-29 (9)) · ✅ **회차 2 전반 pt·tr**(09-29 (10)) · 날짜 문장 만료 = 캘린더 11월 절. ▶ 다음 = **회차 2 후반 hi·ar** (사장님 «이어서 진행» 승인분 — 새 실행 첫 작업 · 방식은 pt·tr 커밋 그대로 · hi는 hub-routes에 이미 항목 있음(calculator·solver) · ar은 hub-routes·side-rail 항목 없음 + **RTL 모바일 screen-review** 필수 · 교차 검수 1회).
-- ▶▶ **`/tournaments` 로케일 신설 — 사장님 09-29 승인.** 현재 = ko + `TOURNAMENT_LOCALES`(`lib/tournaments-hreflang.ts`) en·ja·zh·zh-hant·es·de. 취지 = 자국 대회가 없어도 «해외 대회 캘린더». **de 방식**: `app/<l>/tournaments/page.tsx` + `lib/tournaments-i18n.ts` BoardStrings·FIELD·CITY·VENUE·PAREN·SCHEMA_DESC·MONTH·COUNTRY_NAME·RANGE_DASH · **NOTE(카드 설명)는 비워 둔다**(미등재 = 배지 미표시 · 설계) · hreflang 한 곳 + `scripts/generate-sitemap.mjs` `TOURNAMENT_LOCALES` 동시 갱신.
-  | 회차 | 로케일 | 비고 |
-  |---|---|---|
-  | 1 | id · ms · vi | 아시아 원정 수요(보드 적합도 높음) |
-  | 2 | pt · tr · hi · ar | ar = RTL 모바일 screen-review |
-  게이트 = check:tournaments-i18n 🔴0 · build · 라이브 · MB 통지. 모델 = Opus 전파 + 로케일별 교차 검수 1회. 🪶 앞으로 새 카드의 buyin·venue는 통화 표기·공식 라틴 표기로 쓴다(한국어 값은 전 로케일 FIELD 등재를 강제한다).
+- ✅ **`/tournaments` 로케일 신설 계획 완료**(09-29 승인분 · 회차 1 id·ms·vi → 회차 2 pt·tr → **hi·ar 09-30** · WORKLOG 09-30 (1) · MB-127). 보드 = ko + 13로케일. 날짜 문장 만료 = 캘린더 11월 절. 🪶 앞으로 새 카드의 buyin·venue는 통화 표기·공식 라틴 표기로 쓴다(한국어 값은 13로케일 FIELD 등재를 강제한다) · 새 행에 schemaDescription을 달면 hi·ar `SCHEMA_DESC_*`에도 등재.
+- 🪶 **판정 대기(자동 착수 금지)**: 허브 셸 문구(«Log in»·«Write Post»·«Trending this week»·«Community languages»)가 **tr·vi·ar 보드에서 영어로 나온다** — `lib/hub-i18n.ts` MAP에 세 로케일이 없다(하단 탭 라벨은 있음). 그 사전엔 추첨 이벤트 카드 문구도 같이 들어 있어, 언어별 이벤트 설계(아래 09-28 절)와 같이 정할지 사장님 판단 필요.
 
 - ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
 - ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).

@@ -21,9 +21,9 @@ function clamp(text: string, max: number): string {
   const cut = text.slice(0, max);
   // ★ 진행중 목록이 이름 중간에서 잘리면("7th Holdem") SERP에 깨져 보인다.
   //    쉼표·중점 기준으로 마지막 온전한 항목까지만 남긴다.
-  const lastItem = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("、"), cut.lastIndexOf("・"));
-  const head = text.slice(0, max).search(/(Running now|開催中|进行中|進行中|En curso|Läuft gerade|Sedang berlangsung|Đang diễn ra|Acontecendo agora|Devam eden|진행중)/);
-  if (head >= 0 && lastItem > head) return cut.slice(0, lastItem).trimEnd().replace(/[,、·・]+$/, "") + ".";
+  const lastItem = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("، "), cut.lastIndexOf("、"), cut.lastIndexOf("・"));
+  const head = text.slice(0, max).search(/(Running now|開催中|进行中|進行中|En curso|Läuft gerade|Sedang berlangsung|Đang diễn ra|Acontecendo agora|Devam eden|अभी जारी|تُقام الآن|진행중)/);
+  if (head >= 0 && lastItem > head) return cut.slice(0, lastItem).trimEnd().replace(/[,،、·・]+$/, "") + ".";
   // 🔴 2026-09-29: 진행중 대회가 «한 건도 온전히» 안 들어가면 절을 통째로 뺀다.
   //    쉼표가 없으니 위 분기를 못 타고 공백 자르기로 떨어져 de·es가 «Läuft gerade: 8th Holdem»으로 나가고 있었다.
   if (head >= 0) return cut.slice(0, head).trimEnd();
@@ -32,7 +32,7 @@ function clamp(text: string, max: number): string {
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
-export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr";
+export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr" | "hi" | "ar";
 
 export interface BoardStrings {
   /** <html lang> 및 og:locale용 */
@@ -1206,7 +1206,199 @@ const tr: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr };
+/* ────────────────────────────────────────────────────────────
+   hi · ar — 2026-09-30 신설 (회차 2 후반).
+   ★ 검색 형태 (DataForSEO 2026-09-30 · Google Ads 월 볼륨):
+     hi(IN) «poker tournament» = «poker tournaments» 390 · «poker tournament(s) in india» 320 ·
+            «poker tournament schedule» 90 · «पोकर टूर्नामेंट» 값 없음
+            → 핵심명은 라틴 «poker tournaments»(hi 핵심명 영어 유지 규칙 09-16), 본문은 코퍼스형 «टूर्नामेंट».
+            ⚠ «in india» 수요는 이 보드가 못 받는다 — 인도 개최 행이 없다. 있는 것처럼 쓰지 마라.
+     ar     이집트·사우디·모로코 모두 «بطولة بوكر»·«بطولات البوكر» 10 · «poker tournament» 10
+            → h1은 ar 코퍼스 최다형 «بطولات البوكر». 규모는 매우 작다 — 목적은 ar 글의 대회 링크 착지점.
+   ★ 축: hi = id·ms와 같은 아시아 원정 캘린더(Manila·Phnom Penh·KR·TW) · ar = tr과 같은 북키프로스 축.
+   ★ 용어: hi buy-in·satellite·Main Event는 라틴(코퍼스 buy-in 24회) · ar «باي-إن»(코퍼스 22회).
+   ★ ar 숫자는 서양 숫자(코퍼스에 아랍-인도 숫자 0건) · 월은 يناير…ديسمبر 계열.
+   🔴 사실은 lib/tournaments.ts 행 + 한국 카지노 입장 사실 시트(2026-10-kr-apl-wpt-gop.md)에서만.
+      인도·아랍권의 합법성·세금·비자는 쓰지 않는다.
+   ──────────────────────────────────────────────────────────── */
+const hi: BoardStrings = {
+  htmlLang: "hi",
+  ogLocale: "hi_IN",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Poker tournaments 2026 — ${next}, ${mmdd} से`;
+    return next && hooked.length <= 55 ? hooked : "Poker tournaments 2026 — पूरा कैलेंडर";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `2026 के बड़े live poker tournaments एक तालिका में: तारीख़ें, buy-in और हर टूर्नामेंट का आधिकारिक स्रोत। ${todayDot} तक अपडेट। ${ongoing}`,
+      158,
+    ),
+
+  h1: "Poker tournaments 2026 — पूरा कैलेंडर",
+  heroLead:
+    "इस सूची के हर टूर्नामेंट की जानकारी हमने सीधे आयोजक की साइट से जाँची है, और हर कार्ड अपने स्रोत से जुड़ा है। स्थिति तारीख़ों के हिसाब से अपने-आप बदलती है। कार्यक्रम बदल सकते हैं — शक हो तो आधिकारिक पेज ही मान्य है।",
+  asOf: (dot) => `${dot} तक अपडेट`,
+
+  filterAll: "सभी",
+  filterUpcoming: "आने वाले",
+  filterOngoing: "अभी जारी",
+  filterEnded: "समाप्त",
+
+  filterAllCountries: "सभी देश",
+  // ★ 인도 대회는 이 보드에 없다 — 칩 = 아시아 원정지(HOME_COUNTRY.hi).
+  homeCountryNames: {
+    VN: "वियतनाम", KH: "कंबोडिया", PH: "फ़िलीपींस", KR: "दक्षिण कोरिया", TW: "ताइवान", JP: "जापान",
+  },
+
+  colDates: "तारीख़",
+  colBuyin: "Buy-in",
+  colVenue: "स्थान",
+
+  status: { upcoming: "आने वाला", ongoing: "अभी जारी", ended: "समाप्त" },
+  yearRound: "पूरे साल",
+  datesTba: "तारीख़ घोषित नहीं",
+  officialSite: "आधिकारिक साइट",
+  guideLink: "पूरी गाइड",
+  buyinUnlisted: "घोषित नहीं",
+
+  countsLine: (total, countries) => `${total} टूर्नामेंट · ${countries} देश`,
+  sourceNote:
+    "जहाँ आयोजक का अपना पेज अब भी पिछले साल की जानकारी दिखा रहा था, वहाँ हमने आपको उस पेज पर भेजने के बजाय लिंक न देना चुना।",
+  emptyState: "फ़िलहाल इस फ़िल्टर से मेल खाता कोई टूर्नामेंट नहीं है।",
+  koLink: "कोरियाई कैलेंडर →",
+
+  faqHeading: "अक्सर पूछे जाने वाले सवाल",
+  faqs: [
+    {
+      q: "भारत से जाने वाले खिलाड़ियों के लिए एशिया में कौन-से बड़े poker tournaments हैं?",
+      a: "इस तालिका में भारत में होने वाली कोई अंतरराष्ट्रीय सीरीज़ नहीं है। एशिया में आगे के बड़े पड़ाव ये हैं: Manila, जहाँ Okada Manila में APPT Manila Championship (8–19 अक्टूबर 2026) और Manila Megastack सीरीज़ होती हैं; और Phnom Penh, जहाँ NagaWorld में WPT Cambodia Championship 2027 (27 जनवरी–1 फ़रवरी 2027) होगी। इस बोर्ड पर एशिया में सबसे ज़्यादा टूर्नामेंट दक्षिण कोरिया और ताइवान में हैं। इन्हें छाँटने के लिए ऊपर का देश फ़िल्टर इस्तेमाल करें।",
+    },
+    {
+      q: "क्या विदेशी खिलाड़ी कोरिया के टूर्नामेंट में खेल सकते हैं?",
+      a: "कैसीनो में होने वाली बड़ी सीरीज़ विदेशी खिलाड़ियों को ध्यान में रखकर ही चलती हैं। Incheon का INSPIRE ख़ुद को सिर्फ़ विदेशियों के लिए बना कैसीनो बताता है, और Paradise City ने प्रवेश की शर्त लिखी है: 19 साल या उससे बड़े विदेशी नागरिक, पासपोर्ट के साथ। इसलिए अपना मूल पासपोर्ट साथ रखें। इस बोर्ड पर दो अपवाद हैं: APL Seoul में सिर्फ़ सीट (seat) टिकट वाले खेल सकते हैं, और Holdem Masters सिर्फ़ निमंत्रण से है।",
+    },
+    {
+      q: "क्या यहाँ के हर टूर्नामेंट में कोई भी खेल सकता है?",
+      a: "ज़्यादातर में हाँ, पर सब में नहीं। Triton Super High Roller Series सिफ़ारिश के आधार पर चलती है — satellite नहीं होते, और सिर्फ़ पैसे से सीट नहीं मिलती। कोरिया का Holdem Masters सिर्फ़ निमंत्रण टिकट से है, नकद buy-in का कोई रास्ता नहीं है। APT Championships का पहला दिन इंडस्ट्री के लोगों के लिए है; आम कार्यक्रम उसके बाद शुरू होता है। कुछ इवेंट सिर्फ़ टिकट लेते हैं, जैसे APL Seoul (सिर्फ़ सीट/seat टिकट) — ऐसी शर्तें कार्ड पर लिखी होती हैं।",
+    },
+    {
+      q: "Buy-in कितना होता है?",
+      a: "दायरा बड़ा है, और सबसे बड़ा एक ही सीरीज़ के अंदर होता है। किसी बड़े टूर का Main Event अक्सर हज़ारों डॉलर का होता है, जबकि उसी सीरीज़ में काफ़ी छोटे buy-in वाले side event भी होते हैं — इसीलिए कई कार्ड एक संख्या के बजाय दायरा दिखाते हैं। हर कार्ड वही buy-in दिखाता है जो आयोजक ने ख़ुद घोषित किया है, मूल मुद्रा में। जहाँ ख़ाली है, वहाँ आयोजक ने अभी घोषणा नहीं की है: हम अंदाज़ा नहीं लगाते।",
+    },
+    {
+      q: "कम पैसों में बड़े Main Event में कैसे पहुँचें?",
+      a: "Satellite के ज़रिए। कई बड़ी सीरीज़ Main Event से काफ़ी छोटे buy-in वाले क्वालिफ़ायर कराती हैं। ब्योरा उस सीरीज़ के अपने शेड्यूल में मिलता है, इस तरह की सालाना झलक में नहीं — इसीलिए यहाँ का हर कार्ड सीधे आधिकारिक पेज से जुड़ा है।",
+    },
+  ],
+
+  localHeading: "निकलने से पहले",
+  localBlocks: [
+    {
+      title: "Manila: एक ही रिज़ॉर्ट में कई सीरीज़",
+      body: "Parañaque का Okada Manila पहले APPT Manila Championship (8–19 अक्टूबर 2026), फिर Manila Megastack 25 (27 नवंबर–7 दिसंबर) और Manila December Special (8–21 दिसंबर) की मेज़बानी करता है। एक ही यात्रा में ज़्यादा खेलना हो तो इस बोर्ड पर दक्षिण-पूर्व एशिया में सबसे ज़्यादा टूर्नामेंट यहीं मिलेंगे।",
+    },
+    {
+      title: "कोरिया और ताइवान: एशिया में सबसे ज़्यादा टूर्नामेंट",
+      body: "अक्टूबर–नवंबर में कोरिया में APT Jeju, GOP Incheon II और WPT Seoul हैं, जबकि Taipei में Taiwan Millions Tournament Championship और APT Championships। WPT Seoul (INSPIRE) और GOP Incheon II (Paradise City) के कैसीनो पासपोर्ट वाले विदेशी नागरिकों के लिए हैं — नीचे FAQ देखें।",
+    },
+    {
+      title: "Buy-in आयोजक की मुद्रा में",
+      body: "रक़म ठीक वैसी दिखती है जैसी घोषित हुई: फ़िलीपीन पेसो (₱), ताइवान डॉलर (NT$), कोरियाई वॉन (₩), अमेरिकी डॉलर ($)। हम इन्हें रुपये में नहीं बदलते क्योंकि विनिमय दर रोज़ बदलती है — जिस दिन भुगतान करें, उसी दिन की दर से हिसाब लगाएँ। वॉन की बड़ी रक़म लाख-करोड़ में लिखी है (₩15 लाख = ₩1,500,000)।",
+    },
+  ],
+};
+
+/**
+ * ar — RTL. 카드의 이름·날짜·바이인·장소는 보드가 <bdi>로 격리한다(components/tournament-board.tsx) —
+ * 라틴 대회명 끝의 괄호·따옴표가 반대쪽으로 튀는 것을 막는다. 본문 속 금액 범위는 «من … إلى …»로 쓴다
+ * (대시 범위 «$25,000–$150,000»은 RTL 문단에서 두 숫자의 시각 순서가 뒤집혀 보인다).
+ * ⚠ 아랍권 개최 행은 이 보드에 없다 — 있는 것처럼 쓰지 마라.
+ */
+const ar: BoardStrings = {
+  htmlLang: "ar",
+  ogLocale: "ar_AR",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `بطولات البوكر 2026 — ${next} تبدأ ${mmdd}`;
+    return next && hooked.length <= 55 ? hooked : "بطولات البوكر 2026 — الجدول الكامل";
+  },
+  metaDescription: (todayDot, ongoing) =>
+    clamp(
+      `أهم بطولات البوكر الحيّة لعام 2026 في جدول واحد: التواريخ والباي-إن والمصدر الرسمي لكل بطولة. آخر تحديث ${todayDot}. ${ongoing}`,
+      158,
+    ),
+
+  h1: "بطولات البوكر 2026 — الجدول الكامل",
+  heroLead:
+    "راجعنا معلومات كل بطولة في هذه القائمة مباشرةً من موقع الجهة المنظِّمة، وكل بطاقة ترتبط بمصدرها. تتغيّر الحالة تلقائيًا بحسب التواريخ. البرامج قد تتغيّر — وعند الشك فالمرجع هو الصفحة الرسمية.",
+  asOf: (dot) => `آخر تحديث ${dot}`,
+
+  filterAll: "الكل",
+  filterUpcoming: "قادمة",
+  filterOngoing: "جارية الآن",
+  filterEnded: "منتهية",
+
+  filterAllCountries: "كل الدول",
+  // ★ CY = 이 보드의 CY 행은 전부 북키프로스(Kyrenia·Çatalköy)다.
+  homeCountryNames: { CY: "قبرص", MT: "مالطا", ES: "إسبانيا", FR: "فرنسا" },
+
+  colDates: "التاريخ",
+  colBuyin: "الباي-إن",
+  colVenue: "المكان",
+
+  status: { upcoming: "قادمة", ongoing: "جارية الآن", ended: "انتهت" },
+  yearRound: "طوال العام",
+  datesTba: "لم يُعلن التاريخ بعد",
+  officialSite: "الموقع الرسمي",
+  guideLink: "الدليل الكامل",
+  buyinUnlisted: "غير معلن",
+
+  // 라벨형 — 아랍어 수-명사 일치(3~10 복수 · 11~99 단수…)를 숫자마다 굴절시키지 않기 위해서다(아스트라 09-30)
+  countsLine: (total, countries) => `عدد البطولات: ${total} · عدد الدول: ${countries}`,
+  sourceNote:
+    "إذا كانت صفحة المنظِّم نفسها ما زالت تعرض معلومات العام الماضي، فضّلنا ألّا نضع الرابط على أن نرسلك إليها.",
+  emptyState: "لا توجد حاليًا بطولات تطابق هذا الفلتر.",
+  koLink: "الجدول باللغة الكورية ←",
+
+  faqHeading: "الأسئلة الشائعة",
+  faqs: [
+    {
+      q: "أين تُقام أقرب بطولات البوكر الكبرى إلى الشرق الأوسط؟",
+      a: "أقرب السلاسل في هذا الجدول تُقام في شمال قبرص: WPT Prime Cyprus Championship (من 15 إلى 19 أكتوبر 2026، فندق Chamada Prestige Hotel & Spa في Çatalköy)، ثم Triton ONE North Cyprus (من 5 إلى 15 نوفمبر، فندق Merit Royal Diamond في Kyrenia)، ثم Triton Super High Roller Series North Cyprus (من 15 إلى 30 نوفمبر، في الفندق نفسه). استخدم فلتر «قبرص» في الأعلى لعرضها وحدها.",
+    },
+    {
+      q: "هل يستطيع أي لاعب المشاركة في كل البطولات المدرجة هنا؟",
+      a: "في معظمها نعم، لكن ليس في كلها. سلسلة Triton Super High Roller Series تعمل بنظام التزكية — لا توجد بطولات تأهيلية (ساتلايت)، والمال وحده لا يضمن مقعدًا. بطولة Holdem Masters في كوريا بالدعوة فقط، ولا يوجد فيها باي-إن نقدي. بطولة APT Championships تبدأ بيوم مخصّص لأهل القطاع قبل انطلاق البرنامج المفتوح للجمهور. وبعض الفعاليات لا تقبل إلا التذاكر، مثل APL Seoul (بتذكرة مقعد/seat فقط) — وهذه الشروط مكتوبة على البطاقة.",
+    },
+    {
+      q: "كم يبلغ الباي-إن؟",
+      a: "النطاق واسع، وأوسع ما يكون داخل السلسلة الواحدة. الحدث الرئيسي (Main Event) في جولة كبرى يكلّف غالبًا آلاف الدولارات، بينما تضم السلسلة نفسها أحداثًا جانبية بباي-إن أقل بكثير — ولهذا تعرض بطاقات كثيرة نطاقًا لا رقمًا واحدًا. كل بطاقة تعرض الباي-إن كما أعلنه المنظِّم نفسه وبعملته الأصلية. وإن كانت الخانة فارغة فالمنظِّم لم يعلنه بعد: نحن لا نخمّن.",
+    },
+    {
+      q: "كيف تدخل حدثًا رئيسيًا كبيرًا بمبلغ صغير؟",
+      a: "عبر البطولات التأهيلية (الساتلايت). كثير من السلاسل الكبرى تنظّم بطولات تأهيلية بباي-إن أقل بكثير من باي-إن الحدث الرئيسي. التفاصيل موجودة في برنامج السلسلة نفسها لا في ملخّص سنوي كهذا — ولهذا تقودك كل بطاقة مباشرةً إلى الصفحة الرسمية.",
+    },
+  ],
+
+  localHeading: "قبل أن تسافر",
+  localBlocks: [
+    {
+      title: "شمال قبرص: ثلاث سلاسل في الخريف",
+      body: "تُقام WPT Prime Cyprus Championship من 15 إلى 19 أكتوبر 2026 في Chamada Prestige في Çatalköy، ثم Triton ONE North Cyprus من 5 إلى 15 نوفمبر، وبعدها Triton Super High Roller Series North Cyprus من 15 إلى 30 نوفمبر في Merit Royal Diamond في Kyrenia. هذا هو البرنامج الأقرب إلى الشرق الأوسط في هذا الجدول.",
+    },
+    {
+      title: "جزيرة واحدة وميزانيتان مختلفتان",
+      body: "الباي-إن في WPT Prime Cyprus Championship هو $1,100، أما في Triton SHR North Cyprus فيتراوح من $25,000 إلى $150,000. اختر السلسلة بحسب الباي-إن المكتوب على البطاقة.",
+    },
+    {
+      title: "الباي-إن بعملة المنظِّم",
+      body: "تظهر المبالغ كما أُعلنت تمامًا: الدولار الأمريكي ($)، اليورو (€)، الوون الكوري (₩). لا نحوّلها إلى عملتك المحلية لأن سعر الصرف يتغيّر كل يوم — احسبها بسعر اليوم الذي ستدفع فيه.",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr, hi, ar };
 
 /**
  * 대회명 현지 표기.
@@ -1241,6 +1433,9 @@ function nameMaps(
   if (locale === "vi") return [CITY_VI, PAREN_VI];
   if (locale === "pt") return [CITY_PT, PAREN_PT];
   if (locale === "tr") return [CITY_TR, PAREN_TR];
+  // hi·ar — 지명·국가명은 라틴 그대로(브랜드 검색형 유지 · 음역을 지어내지 않는다). 괄호 속 계절·월만 바꾼다.
+  if (locale === "hi") return [{}, PAREN_HI];
+  if (locale === "ar") return [{}, PAREN_AR];
   return null;
 }
 
@@ -1342,6 +1537,17 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "holdem-masters-7": "7. Holdem Masters",
     "holdem-masters-8": "8. Holdem Masters",
     "wsop-2026": "57. WSOP 2026",
+  },
+  hi: {
+    "holdem-masters-7": "7वाँ Holdem Masters",
+    "holdem-masters-8": "8वाँ Holdem Masters",
+    "wsop-2026": "57वाँ WSOP 2026",
+  },
+  // ar — 브랜드를 앞에 둔다(카드 제목은 <bdi>로 격리돼 첫 강문자 방향을 따른다 → 라틴 시작 = LTR로 읽힌다).
+  ar: {
+    "holdem-masters-7": "Holdem Masters — النسخة 7",
+    "holdem-masters-8": "Holdem Masters — النسخة 8",
+    "wsop-2026": "WSOP 2026 — النسخة 57",
   },
   es: {
     "holdem-masters-7": "7.º Holdem Masters",
@@ -2269,6 +2475,94 @@ const SCHEMA_DESC_TR: Record<string, string> = {
   "wpt-seoul": "World Poker Tour'un INSPIRE Entertainment Resort'taki ilk etkinliği: 45 etkinlik, Main Event'te ₩1 milyar garanti.",
   "appt-manila": "PokerStars APPT'nin 2026 Manila ayağı, Okada Manila'da; toplam ₱132 milyon garanti.",
 };
+/* hi · ar 값 사전 (2026-09-30 · 회차 2 후반). 둘 다 천 단위 쉼표 그대로(DOT_THOUSANDS 대상 아님).
+   KRW 단위: hi 는 인도식 लाख(10만)·करोड़(1,000만) — 만 단위 값이 그대로 맞물린다
+     (150만 = 15 लाख · 1,000만 = 1 करोड़ · 10억 = 100 करोड़) / ar ألف·مليون·مليار. 수치는 §13 불변. */
+const FIELD_HI: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (संचालन: King's Casino Prague)",
+  "공식 미기재": "घोषित नहीं",
+  "미정 (공식 미기재)": "तय नहीं (घोषित नहीं)",
+  "미발표": "घोषित नहीं",
+  "다양": "इवेंट के अनुसार अलग",
+  "무료": "मुफ़्त",
+  "새틀라이트 티켓 전용": "सिर्फ़ satellite टिकट से",
+  "참가권(SEAT) 전용": "सिर्फ़ सीट (seat) टिकट से",
+  "초대권 전용": "सिर्फ़ निमंत्रण से",
+  "초대권 전용 (현금 바이인 없음)": "सिर्फ़ निमंत्रण से (नकद buy-in नहीं)",
+  "메인 ₩150만": "Main Event ₩15 लाख",
+  "메인 ₩220만": "Main Event ₩22 लाख",
+  "메인 ₩230만": "Main Event ₩23 लाख",
+  "메인 ₩250만": "Main Event ₩25 लाख",
+  "메인 ₩270만": "Main Event ₩27 लाख",
+  "₩30만~₩800만": "₩3 लाख–₩80 लाख",
+  "₩5만~₩1,000만": "₩50 हज़ार–₩1 करोड़",
+  "₩90만~": "₩9 लाख से",
+  "~₩700만 (하이롤러)": "₩70 लाख तक (high roller)",
+  "€5,300 (메인)": "€5,300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120,000",
+  "(ME 파이널 8/3~5)": "(Main Event फ़ाइनल टेबल 3–5 अगस्त)",
+  "(온라인 새틀 7/10~9/10)": "(online satellite 10 जुलाई–10 सितंबर)",
+  "2026.12 예정 (날짜 미발표)": "दिसंबर 2026 (तारीख़ें घोषित नहीं)",
+  "€1,100~": "€1,100 से",
+};
+
+const FIELD_AR: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (بإدارة King's Casino Prague)",
+  "공식 미기재": "غير معلن",
+  "미정 (공식 미기재)": "لم يُحدَّد (غير معلن)",
+  "미발표": "غير معلن",
+  "다양": "يختلف حسب الحدث",
+  "무료": "مجانًا",
+  "새틀라이트 티켓 전용": "بتذكرة ساتلايت فقط",
+  "참가권(SEAT) 전용": "بتذكرة مقعد (seat) فقط",
+  "초대권 전용": "بالدعوة فقط",
+  "초대권 전용 (현금 바이인 없음)": "بالدعوة فقط (لا باي-إن نقدي)",
+  "메인 ₩150만": "الحدث الرئيسي ₩1.5 مليون",
+  "메인 ₩220만": "الحدث الرئيسي ₩2.2 مليون",
+  "메인 ₩230만": "الحدث الرئيسي ₩2.3 مليون",
+  "메인 ₩250만": "الحدث الرئيسي ₩2.5 مليون",
+  "메인 ₩270만": "الحدث الرئيسي ₩2.7 مليون",
+  "₩30만~₩800만": "من ₩300 ألف إلى ₩8 ملايين",
+  "₩5만~₩1,000만": "من ₩50 ألف إلى ₩10 ملايين",
+  "₩90만~": "ابتداءً من ₩900 ألف",
+  "~₩700만 (하이롤러)": "حتى ₩7 ملايين (هاي رولر)",
+  "€5,300 (메인)": "€5,300 (الحدث الرئيسي)",
+  "프리롤~NT$120,000": "من فريرول إلى NT$120,000",
+  "(ME 파이널 8/3~5)": "(الطاولة النهائية للحدث الرئيسي من 3 إلى 5 أغسطس)",
+  "(온라인 새틀 7/10~9/10)": "(ساتلايت أونلاين 10 يوليو – 10 سبتمبر)",
+  "2026.12 예정 (날짜 미발표)": "ديسمبر 2026 (لم يُعلن التاريخ)",
+  "€1,100~": "ابتداءً من €1,100",
+};
+
+const PAREN_HI: Record<string, string> = {
+  "(Fall)": "(शरद)", "(July)": "(जुलाई)", "(August)": "(अगस्त)",
+  "(November)": "(नवंबर)", "(December)": "(दिसंबर)", "(Ha Long Bay)": "(हा लॉन्ग बे)",
+};
+const PAREN_AR: Record<string, string> = {
+  "(Fall)": "(الخريف)", "(July)": "(يوليو)", "(August)": "(أغسطس)",
+  "(November)": "(نوفمبر)", "(December)": "(ديسمبر)", "(Ha Long Bay)": "(خليج ها لونغ)",
+};
+
+/* 스키마 설명 — «아직 끝나지 않은» 행만 Event 스키마로 나간다(buildLocaleSchemas).
+   2026-09-30 기준 schemaDescription을 가진 미종료 행은 이 셋뿐이라 셋만 등재한다.
+   🔴 새 행에 schemaDescription을 달면 여기도 등재하라 — 없으면 한국어 원문이 그대로 나간다. */
+const SCHEMA_DESC_HI: Record<string, string> = {
+  "holdem-masters-8": "8वाँ Holdem Masters, अब तक का सबसे बड़ा: कुल ₩200 करोड़ गारंटी, Main Event में ₩180 करोड़ GTD।",
+  "apt-jeju-fall": "Asian Poker Tour का 2026 का Jeju पड़ाव (शरद): 135 इवेंट, Main Event में ₩220 करोड़ गारंटी।",
+  "wpt-seoul": "INSPIRE Entertainment Resort में World Poker Tour का पहला आयोजन: 45 इवेंट, Main Event में ₩100 करोड़ गारंटी।",
+};
+const SCHEMA_DESC_AR: Record<string, string> = {
+  "holdem-masters-8": "النسخة الثامنة من Holdem Masters وهي الأكبر حتى الآن: ضمان إجمالي ₩2 مليار، منها ₩1.8 مليار GTD للحدث الرئيسي.",
+  "apt-jeju-fall": "محطة Jeju الخريفية لعام 2026 من Asian Poker Tour: 135 حدثًا، وضمان ₩2.2 مليار للحدث الرئيسي.",
+  "wpt-seoul": "أول بطولة لـ World Poker Tour في INSPIRE Entertainment Resort: 45 حدثًا، وضمان ₩1 مليار للحدث الرئيسي.",
+};
+const MONTH_HI = ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"];
+const MONTH_AR = ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
+
 const MONTH_PT = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const MONTH_TR = ["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];
 
@@ -2758,7 +3052,7 @@ const NOTE_DE: Record<string, string> = {
  */
 const NOTES: Record<BoardLocale, Record<string, string>> = {
   en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
-  id: {}, ms: {}, vi: {}, pt: {}, tr: {},
+  id: {}, ms: {}, vi: {}, pt: {}, tr: {}, hi: {}, ar: {},
 };
 
 /** 없으면 undefined — 보드가 배지를 아예 안 그린다(한국어 폴백 금지) */
@@ -2800,7 +3094,7 @@ const CITY_DE: Record<string, string> = {
  * 숫자 양옆에 붙은 물결표만 건드린다 — "초대권 전용" 같은 문장은 손대지 않는다.
  */
 const RANGE_DASH: Record<BoardLocale, string> = {
-  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–",
+  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–", hi: "–", ar: "–",
 };
 
 /**
@@ -2837,6 +3131,8 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
     : locale === "vi" ? VENUE_DE[value] ?? FIELD_VI[value]
     : locale === "pt" ? VENUE_DE[value] ?? FIELD_PT[value]
     : locale === "tr" ? VENUE_DE[value] ?? FIELD_TR[value]
+    : locale === "hi" ? VENUE_DE[value] ?? FIELD_HI[value]
+    : locale === "ar" ? VENUE_DE[value] ?? FIELD_AR[value]
     : undefined;
   return hit ?? localizeThousands(localizeRangeTilde(value, locale), locale);
 }
@@ -2914,6 +3210,11 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "vi") {
     return sm === em ? `Tháng ${sm}` : `Tháng ${sm}–${em}`;
   }
+  // hi·ar — 월 이름에 통용 축약형이 없다. 온전한 이름을 쓴다.
+  if (locale === "hi" || locale === "ar") {
+    const M = locale === "hi" ? MONTH_HI : MONTH_AR;
+    return sm === em ? M[sm - 1] : `${M[sm - 1]}–${M[em - 1]}`;
+  }
   return sm === em ? `${sm}月` : `${sm}〜${em}月`;   // ja·zh·zh-hant 공통
 }
 
@@ -2971,6 +3272,16 @@ function formatRange(a: Ymd, b: Ymd, locale: BoardLocale): string {
     const M = (x: Ymd) => `${x.d} ${MN[x.m - 1]}`;
     if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
     if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    return `${a.d}–${b.d} ${MN[a.m - 1]} ${a.y}`;
+  }
+  /** hi·ar — 「일 월 연도」, 월은 온전한 이름(15–19 अक्टूबर 2026 · 15–19 أكتوبر 2026). 숫자는 서양 숫자(ar 코퍼스 실측: 아랍-인도 숫자 0건). */
+  if (locale === "hi" || locale === "ar") {
+    const MN = locale === "hi" ? MONTH_HI : MONTH_AR;
+    const M = (x: Ymd) => `${x.d} ${MN[x.m - 1]}`;
+    if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
+    if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    // ar 같은 달 — «16–22 مارس»는 RTL에서 «22–16»으로 보인다(화면 실측 09-30). «من 16 إلى 22 مارس 2026»로 푼다.
+    if (locale === "ar") return `من ${a.d} إلى ${b.d} ${MN[a.m - 1]} ${a.y}`;
     return `${a.d}–${b.d} ${MN[a.m - 1]} ${a.y}`;
   }
   /** vi — 「일/월/연도」가 현지 표준(8–19/10/2026). 월 이름 축약을 쓰지 않는다. */
@@ -3036,7 +3347,11 @@ export function buildLocaleSchemas(
                           ? SCHEMA_DESC_PT[t.id]
                           : locale === "tr"
                             ? SCHEMA_DESC_TR[t.id]
-                            : undefined) ??
+                            : locale === "hi"
+                              ? SCHEMA_DESC_HI[t.id]
+                              : locale === "ar"
+                                ? SCHEMA_DESC_AR[t.id]
+                                : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
@@ -3111,4 +3426,8 @@ export const HOME_COUNTRY: Record<BoardLocale, string[]> = {
   pt: ["BR", "AR", "ES"],
   // tr — 보드의 CY 행은 전부 북키프로스(Girne·Çatalköy). 튀르키예 개최분은 보드에 없다.
   tr: ["CY", "CZ", "ME"],
+  // hi — 인도 개최분은 보드에 없다. id·ms와 같은 아시아 원정지 묶음(동남아 먼저, 일정이 촘촘한 KR·TW·JP 뒤).
+  hi: ["VN", "KH", "PH", "KR", "TW", "JP"],
+  // ar — 아랍권 개최분은 보드에 없다. 지중해 축: 북키프로스(CY 행 전부 Kyrenia·Çatalköy) 먼저, 몰타·스페인·프랑스.
+  ar: ["CY", "MT", "ES", "FR"],
 };

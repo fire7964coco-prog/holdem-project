@@ -1,3 +1,15 @@
+## 2026-09-30 (1) — /tournaments 로케일 회차 2 후반: hi · ar (로케일 신설 계획 완료)
+
+- 사장님 «1순위 작업하자 · 디테일하게» 지시. 실행 14:09~ (한도 90분 안). pt·tr 커밋과 같은 구성: `app/{hi,ar}/tournaments` · i18n hi·ar(BoardStrings · FIELD · PAREN · NAME_OVERRIDE · SCHEMA_DESC · MONTH) · hreflang·sitemap·게이트 13로케일 · hub-routes(ar 첫 HubPage) · side-rail(hi «टूर्नामेंट» · ar «البطولات») · 하단 탭 라벨 ar 신설.
+- 검색 형태(DataForSEO 09-30): hi(IN) «poker tournament(s)» 390 · «… in india» 320 · «पोकर टूर्नामेंट» 값 없음 → h1은 라틴 «Poker tournaments 2026»(hi 핵심명 영어 유지) · ar(이집트·사우디·모로코) «بطولات البوكر»·«poker tournament» 각 10 → 목적은 착지점.
+- 축: hi = id·ms와 같은 아시아 원정 캘린더(Manila·Phnom Penh·KR·TW · HOME VN·KH·PH·KR·TW·JP · 한국 카지노 입장 FAQ는 사실 시트 축어) · ar = tr과 같은 북키프로스 축(HOME CY·MT·ES·FR). 인도·아랍권 개최 행은 보드에 없다 — 그렇게 적거나 침묵. 합법성·세금·비자 미기재.
+- 표기 결정: 대회명·장소·도시는 두 로케일 모두 라틴 유지(음역 미창작) · hi KRW = 인도식 लाख/करोड़(150만 = 15 लाख · 1,000만 = 1 करोड़) · ar = ألف/مليون/مليار · 서양 숫자(ar 코퍼스 아랍-인도 숫자 0건) · 천 단위 쉼표 그대로 · SCHEMA_DESC는 미종료 3행만(나머지는 스키마로 안 나간다).
+- 🔴 RTL 화면 실측(screen-review · 390·1440 · 가로 넘침 0)으로 고친 것: ① 카드 이름·날짜·바이인·장소를 ar에서만 `<bdi>`로 격리(`components/tournament-board.tsx` Iso — 라틴 이름 끝 괄호·따옴표 튐, 금액 범위 뒤집힘 방지 · LTR 11로케일 DOM 불변 확인 bdi 0) ② 같은 달 날짜 «16–22 مارس»가 «22–16»으로 보여 «من 16 إلى 22 مارس 2026»로 ③ 빵부스러기·가이드 링크 화살표 `rtl:rotate-180` ④ 하단 탭이 영어 폴백 → ar 라벨.
+- 아스트라 교차 검수(read-only 스크래치 · hi·ar 편집자 페르소나) 6건 → 채택 6(hi «विदेशी खिलाड़ियों के लिए ही» 배타 단정 완화 — Paradise City는 해외 영주권 한국인도 허용 · hi APT industry day 직역투 · hi «घना कैलेंडर» 3자리 → 개수 표현 · ar countsLine 수-명사 일치 → 라벨형 · ar «نظرة سنوية»→«ملخّص سنوي» · ar dateNote 범위는 화면 실측에서 이미 수정). «미검증» 표시분 중 ar «중동에 가장 가까운» = 보드 개최국 중 키프로스가 최근접이라는 지리 사실로 유지(tr과 같은 판정). 원화 환산 9건 전부 일치 확인.
+- 게이트: check:tournaments-i18n 🔴0(13로케일 · 셀프 9/9) · build 73+612 · hreflang 0 · meta-lang 0 · 디렉티브 0.
+- 남긴 것: 허브 셸 문구(Log in·Write Post·Trending·Community languages)가 tr·vi·ar에서 영어 폴백(`lib/hub-i18n.ts` MAP 미등재 · 이벤트 카드 문구와 한 사전이라 사장님 판정 대기 — 핸드오프).
+- 날짜 문장 만료 → 캘린더 11월 절(hi·ar 행 추가).
+
 ## 2026-09-29 (10) — /tournaments 로케일 회차 2 전반: pt · tr (hi·ar은 다음 실행)
 
 - 같은 실행 이어서(사장님 «이어서 진행»). 작업 한도 마감(21:49) 때문에 hi·ar(RTL 화면 검수 필요)은 분리.

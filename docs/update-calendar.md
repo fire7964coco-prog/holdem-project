@@ -522,6 +522,7 @@
 - **대상**: `lib/tournaments-i18n.ts` `const id`·`const ms`·`const vi`의 faqs[0]·localBlocks[0]·[1] (보드 카드 자체는 날짜로 자동 전환 — 이 문장들만 정적이다)
 - 10/19 APPT Manila Championship 종료 → «8–19 Oktober 2026» 문장을 과거형 또는 다음 마닐라 시리즈로 · 11/29 APT Championships 종료 → «Musim gugur ini / Musim luruh ini / Mùa thu này» 블록 교체 · 12/21 Manila December Special 종료 → 마닐라 블록 교체
 - **pt·tr(회차 2 · 같은 날)**: 10/11 CAP 부에노스아이레스 종료(pt localBlocks[1]) · 10/19 WPT Prime Cyprus 종료(tr faqs[0]·localBlocks[0]·[1]) · 11/28 BSOP Millions 종료(pt faqs[0]·localBlocks[0] — 바이인 공개되면 «ainda não tinha sido divulgado» 문장도) · 11/30 Triton SHR North Cyprus 종료(tr) · 12/20 CAP 로사리오 종료(pt)
+- **hi·ar(회차 2 후반 · 2026-09-30)**: 10/19 APPT Manila Championship 종료(hi faqs[0]·localBlocks[0]) · 10/19 WPT Prime Cyprus 종료(ar faqs[0]·localBlocks[0]·[1]) · 11/29 APT Championships 종료(hi localBlocks[1] «अक्टूबर–नवंबर में» 블록 교체) · 11/30 Triton SHR North Cyprus 종료(ar 전 블록) · 12/21 Manila December Special 종료(hi localBlocks[0]) · 2027-02-01 WPT Cambodia Championship 종료(hi faqs[0]) · hi·ar `SCHEMA_DESC_*`는 미종료 3행만 등재 — 새 행에 schemaDescription을 달면 같이 등재
 - vi faqs[0]의 USOP Vietnam 과거형은 그 행(`usop-vietnam-2`)이 보드에 남아 있는 동안만 맞다
 - 🔴 사실은 `lib/tournaments.ts` 행에서만 가져온다(외부 추측 금지) · 교체 뒤 `check:tournaments-i18n` · build
 

@@ -350,7 +350,7 @@ export default function HubShell({
                 </Link>
               </li>
               <li aria-hidden="true" className="opacity-50">
-                <ChevronRight className="w-3 h-3" />
+                <ChevronRight className="w-3 h-3 rtl:rotate-180" />
               </li>
               <li className="min-w-0 max-w-full truncate font-semibold" style={{ color: INK }} aria-current="page">
                 {title}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { Calendar, MapPin, ExternalLink, Star, ChevronRight } from "lucide-react";
 import { TOURNAMENTS, computeStatus, isHighlighted, type TournamentStatus } from "@/lib/tournaments";
@@ -27,6 +27,17 @@ import { SITE } from "@/lib/site";
  * framer-motion을 쓰지 않는다 — 카드가 100개를 넘는 페이지에서
  * 순차 딜레이 애니메이션은 LCP를 실제보다 크게 밀어 올린다.
  */
+
+/**
+ * RTL(ar) 전용 방향 격리 — 카드의 이름·날짜·바이인·장소는 대부분 라틴·숫자다.
+ * RTL 문단에 그대로 두면 끝의 괄호·따옴표가 반대쪽으로 튀고(«(Triton Jeju 2026 (ONE + SHR»),
+ * 숫자 범위(«$25,000–$150,000»)는 두 숫자의 시각 순서가 뒤집힌다.
+ * <bdi>는 내용의 첫 강문자로 방향을 정하고(숫자뿐이면 LTR) 주변과 격리한다. 인라인이라 블록 정렬은 RTL 그대로다.
+ * ★ LTR 로케일에는 아무것도 감싸지 않는다 — 기존 11개 보드의 산출 DOM을 바꾸지 않기 위해서다.
+ */
+function Iso({ rtl, children }: { rtl: boolean; children: ReactNode }) {
+  return rtl ? <bdi>{children}</bdi> : <Fragment>{children}</Fragment>;
+}
 
 type Filter = "all" | TournamentStatus;
 /** "all" 또는 ISO 국가코드(t.country). */
@@ -58,6 +69,7 @@ export default function TournamentBoard({
   const [country, setCountry] = useState<CountryFilter>("all");
 
   if (!s) return null;
+  const rtl = locale === "ar";
 
   const home = HOME_COUNTRY[locale];
   // 자국 개최 대회를 위로. 그 안에서는 원래 순서(시작일 오름차순)를 유지한다.
@@ -194,7 +206,7 @@ export default function TournamentBoard({
                         {localizedMonthBadge(t, locale)}
                       </span>
                       <h2 className="text-sm font-bold text-foreground leading-snug">
-                        {localizedName(t, locale)}
+                        <Iso rtl={rtl}>{localizedName(t, locale)}</Iso>
                       </h2>
                     </div>
                   </div>
@@ -217,7 +229,7 @@ export default function TournamentBoard({
                       {s.colDates}
                     </div>
                     <div className="font-semibold text-foreground">
-                      {localizedDateRange(t, locale) || s.yearRound}
+                      <Iso rtl={rtl}>{localizedDateRange(t, locale) || s.yearRound}</Iso>
                     </div>
                   </div>
                   <div className="bg-background/50 rounded-lg p-2">
@@ -225,7 +237,7 @@ export default function TournamentBoard({
                       {s.colBuyin}
                     </div>
                     <div className="font-semibold text-foreground">
-                      {localizeField(t.buyin, locale)}
+                      <Iso rtl={rtl}>{localizeField(t.buyin, locale)}</Iso>
                     </div>
                   </div>
                   <div className="bg-background/50 rounded-lg p-2 col-span-2">
@@ -234,7 +246,7 @@ export default function TournamentBoard({
                     </div>
                     <div className="font-semibold text-foreground flex items-center gap-1">
                       <MapPin className="w-3 h-3 flex-shrink-0" aria-hidden />
-                      {localizeField(t.venue, locale)}, {localizeCity(t.city, locale)}
+                      <Iso rtl={rtl}>{localizeField(t.venue, locale)}, {localizeCity(t.city, locale)}</Iso>
                     </div>
                   </div>
                 </div>
@@ -266,7 +278,7 @@ export default function TournamentBoard({
                       href={blogLinks[t.id]}
                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary font-bold hover:bg-primary/25 transition-colors"
                     >
-                      📖 {s.guideLink} <ChevronRight className="w-3 h-3" aria-hidden />
+                      📖 {s.guideLink} <ChevronRight className="w-3 h-3 rtl:rotate-180" aria-hidden />
                     </Link>
                   )}
                 </div>

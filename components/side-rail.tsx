@@ -283,6 +283,18 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/hi/solver", icon: "🧠", label: "GTO सॉल्वर" },
     // ★2026-09-17 `/hi/calculator` 신설. 핵심명은 영어 유지(사장님 규칙 09-16) · 라벨 = hi 코퍼스 앵커 「poker odds कैलकुलेटर」의 단축형.
     { href: "/hi/calculator", icon: "🧮", label: "Odds कैलकुलेटर" },
+    // ★2026-09-30 `/hi/tournaments` 신설. 라벨 = BOARD_STRINGS.hi countsLine·본문이 쓰는 코퍼스형 «टूर्नामेंट»(hi 글 32회).
+    { href: "/hi/tournaments", icon: "🏆", label: "टूर्नामेंट" },
+  ],
+  /**
+   * ar — ★2026-09-30 `/ar/tournaments` 신설(ar 첫 허브 · RTL). 라벨:
+   *   - "المدوّنة"  = CHROME.ar.blogLabel (lib/intl.ts)
+   *   - "البطولات" = BOARD_STRINGS.ar h1 «بطولات البوكر 2026»의 핵심명(ar 코퍼스 70회 · ar엔 필라 클러스터가 없다)
+   *   ⚠ ar에는 solver·calculator가 없다 — 넣지 마라.
+   */
+  ar: [
+    { href: "/ar/blog",        icon: "📚", label: CHROME.ar.blogLabel },
+    { href: "/ar/tournaments", icon: "🏆", label: "البطولات" },
   ],
 };
 
@@ -299,7 +311,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 // id — BOARD_STRINGS에 id가 없다(id에 tournaments 페이지 자체가 없음). fr처럼 en으로 떨어뜨리면
 //      인도네시아어 화면에 영어가 섞인다 → 우리 id 코퍼스 42편이 쓰는 표준어 "Panduan"을 쓴다
 //      (title 2편 포함 다수 실측 · 2026-09-05). 새로 번역한 것이 아니라 코퍼스에서 딴 값이다.
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading };
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading, ar: CHROME.ar.contentHeading };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**
