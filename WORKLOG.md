@@ -1,3 +1,11 @@
+## 2026-09-30 (2) — WPT 오스트레일리아 결과 아카이브 회차: 사실 시트 선행분만 (작성은 #24 게시 뒤)
+
+- 사장님 «E절 회차 진행» 지시(실행 14:39~ · Fable). starpoker.com.au `/results` 실측(Playwright DOM · 필터 id 13356 · Load more 끝까지): **31/36 게시** · 미게시 #24 Championship(최종일 9/30 시드니 진행 중)·#33~36.
+- 시트 §4 신설: 31개 이벤트 Entry Fee·Entrants·Prize pool·입상 수·1~3위(축어) + 산수 차액 열. Prime = 1,038 엔트리 · $1,346,900 · 우승 Cooper Feltham $187,793 / High Roller = 72 · $669,000 · Adam Kharman $197,252.
+- §4-1 주의 자리: #32·#12 엔트리×피 ≠ 풀(엔트리 인용 금지) · #19 1위<2위 · #9 종목 표기 불일치 · #22 차액 $15,000(좌석 차감과 같은 액수 — 이벤트 페이지 축어 확보 전엔 단정 금지).
+- 결정: 핵심인 Championship 결과가 없어 **글은 안 건드림**(결정 B = 한 번에). 본문 변경 0 → MB 없음. 다음 = #24 게시 확인 → §4 재수집 → EN → 7로케일.
+- 🪶 node -e 안에 백틱을 넣어 셸이 깨짐(메모리 backticks-break-shell-strings 재발) → .mjs 파일로.
+
 ## 2026-09-30 (1) — /tournaments 로케일 회차 2 후반: hi · ar (로케일 신설 계획 완료)
 
 - 사장님 «1순위 작업하자 · 디테일하게» 지시. 실행 14:09~ (한도 90분 안). pt·tr 커밋과 같은 구성: `app/{hi,ar}/tournaments` · i18n hi·ar(BoardStrings · FIELD · PAREN · NAME_OVERRIDE · SCHEMA_DESC · MONTH) · hreflang·sitemap·게이트 13로케일 · hub-routes(ar 첫 HubPage) · side-rail(hi «टूर्नामेंट» · ar «البطولات») · 하단 탭 라벨 ar 신설.
