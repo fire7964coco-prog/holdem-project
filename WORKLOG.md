@@ -1,3 +1,12 @@
+## 2026-10-01 (2) — `wpt-australia-2026-guide` 결과 아카이브 전환 (8로케일 · EN-먼저 · MB-130) + 캘린더 10월 첫 절 확인
+
+- 같은 실행(11:35~ · 한도 13:05). EN = Fable, 7로케일 = Opus 서브 4(ja / zh·zh-hant / es·pt / de·id). 사실 정본 = `docs/tournament-factsheets/2026-09-wpt-australia.md` §4(10-01 11:41 KST 재수집 36/36).
+- **넣은 사실(결과 페이지 원문만)**: #24 Championship = Alexander A. Thompson AUD $450,900 · 527 엔트리 · 풀 $2,424,200 · 66명 입상 · 1~9위 표 / #14 Prime = Cooper Feltham $187,793 · 1,038 엔트리 · 풀 $1,346,900 / #22 High Roller = Adam Kharman $197,252 · 72 엔트리 · 풀 $669,000 / 36개 게시 풀 합계 $7,601,710(산수 · 글의 사전 추정 «AUD $10M+»에 못 미쳤다고 명시).
+- **전환 자리**: title·seoTitle·desc·tldr · 리드 · «2026 edition is over» note · Quick Answer · 결과 H2 신설(표 2 + 출처 note) · 30초 표(«Confirmed» → «Actual») · Prime vs Championship 표(추정 필드 → 실측) · 위성 절 과거형($290 창구 만료 항목을 같은 회차에 처리) · 일정 note · 역대 우승 표 2026 행 + «사상 최대 예상» 문장을 실측으로(Championship 600 → 527 · 성장은 Prime 쪽) · 좌석·9장 티켓 문단 · 예산 note · FAQ(우승자 문항 신설 + 3문 과거형) · Sources 절 신설.
+- **쓰지 않은 것(시트 §4-1)**: 국적·딜 여부 · 풀 차액의 원인 · «좌석 차감이 결과에 보인다» · #12·#32 엔트리 수. 생중계 행은 «개최 전 발표»로만(실제 송출 여부 미확인 — 서브가 «예정대로»로 쓴 것을 헤드가 고쳤다).
+- 🪶 남긴 것(기존 결함 · 이번 범위 밖 · 판정 대기): pt 30초 표 2025 칸 «~20 eventos»(EN «32 numbered events») · pt 비자 절 AUD $200 ↔ 표 $250 자기모순 · id 송금 박스 «개인별 발급» 문장이 바로 위 «공개 시트»와 모순 · 형제 글 `holdem-tournament` 78행 «WPT Australia 2026 runs its Championship Event on 60-minute levels»(EN + 로케일 · 시제만).
+- **캘린더 10월 첫 절(글 수정 0)**: TMTC 온라인 위성은 10/1 당일까지라 과거형 전환은 10/2 이후 · 오사카 Players Guide 링크 4개 href null · Online Day 1 오사카 게시물 없음 · WPT 서울 바우처 공지 없음(prtimes 최신 09-14) · CTP Upcoming에 TMT 21 없음. 확인 시각·근거 = `docs/update-calendar.md` 해당 절 🪶.
+
 ## 2026-10-01 (1) — 검수장 델타 재검증 MA-231·233·235·238·240 판정·이행 (EN 7자리 → 9로케일 · PDF 3문구 · MB-129)
 
 - 사장님 «(핸드오프 후보) 4번 빼고 중요 순서로 진행». 실행 11:35~ (한도 13:05 · Fable 판정·EN, 로케일 전파 = Opus 서브 4 — pt·es / de·id / zh·zh-hant / ja·ar·ms). 사용량 지표는 이 세션에서 관측 불가.

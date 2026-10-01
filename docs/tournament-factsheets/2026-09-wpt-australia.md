@@ -106,6 +106,7 @@ URL: `https://www.starpoker.com.au/sites/default/files/2026-09/In%20festivl%20sa
 ### 4-2. 남은 것 (작성 착수 조건)
 
 - ✅ **#24 Championship · #33~36 게시 확인(10-01)** — 착수 조건 충족. 위 표에 편입.
+- 🪶 **36개 Prize pool 합계 = $7,601,710**(10-01 재수집분 산수 · 상위 = #24 $2,424,200 · #14 $1,346,900 · #22 $669,000 · #1 $441,000 · #30 $342,000). Prize pool은 Entry Fee(어드민 뺀 편입분) 기준이라 «바이인 총액»이 아니다 — 글에는 «결과 페이지에 게시된 상금 풀의 합»으로만 쓴다. Entrants 합계는 #12·#32 오기 의심 때문에 인용 금지.
 - 🪶 #24 차액 0(527 × $4,600 = $2,424,200) — Championship 페이지의 «좌석 $15,000을 prize pool에서 차감» 문구와 결과 수치의 관계는 페이지에 설명이 없다 → 글에 «차감이 결과에 보인다/안 보인다»를 쓰지 않는다. 1위 $450,900에 좌석이 포함인지도 결과 페이지에는 표기 없음(Championship 페이지 축어 «as part of the first-place prize»만 인용 가능).
 - 🪶 #34 PLO 1위 $78,857 · 2위 $73,856(차이가 작다 · 딜 여부 표기 없음) → 금액 서열 해석 금지.
 - 재수집 = 같은 URL(`/results?field_series_venue_target_id=All&field_tournament_ref_target_id_entityreference_filter=13356`)에서 «Load more»를 끝까지 누른 뒤 `table tbody tr`의 innerText를 파싱(헤더 행 + 상세 행 쌍). 헤더 36개가 되는지 센다.
