@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16 मिनट",
   emoji: "🏆",
+  image: "/images/holdem-tournament-vs-cash-hero.webp",
+  imageAlt: "Cash game और poker tournament की आमने-सामने तुलना वाला इन्फोग्राफ़िक — चिप की कीमत, blind संरचना और आप कब उठ सकते हैं",
   tags: [
     "poker tournament या cash game",
     "cash game poker",

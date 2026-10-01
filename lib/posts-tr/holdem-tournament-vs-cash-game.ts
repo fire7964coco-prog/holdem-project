@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16 dk",
   emoji: "🏆",
+  image: "/images/holdem-tournament-vs-cash-hero.webp",
+  imageAlt: "Cash game ile poker turnuvasını yan yana karşılaştıran infografik — fiş değeri, blind yapısı ve masadan ne zaman kalkabileceğin",
   tags: [
     "poker turnuvası mı cash game mi",
     "cash game poker",

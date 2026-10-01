@@ -1,3 +1,9 @@
+## 2026-10-01 (5) — hi·ar·tr·vi 히어로 누락 8사본 연결 (MB-134)
+
+- 사장님 지적: `/hi/blog/holdem-hand-rankings`에 히어로가 없다. 원인 = 이미지 부재가 아니라 **`image`·`imageAlt` 필드 누락**(hi·ar·tr·vi 번역 첫 커밋부터). 전수 스캔 결과 같은 4로케일의 `holdem-tournament-vs-cash-game`도 동일 → 8사본. 다른 글·다른 로케일은 0.
+- 처리: EN과 같은 기존 히어로 파일 연결 + 각 사본 용어에 맞춘 로케일 alt(ar «الفلاش الملكي·البستوني·زر الموزع» · vi «Thùng Phá Sảnh Hoàng Gia·bích» · tr «maça·dağıtıcı butonu»). 새 이미지 생성 없음 · 본문 무변경 · 플래그(keepImagesInBody·hideSummaryImageSlot)는 원래 전 로케일 동일.
+- 확인: 빌드 성공 · 빌드 HTML에 히어로 img `fetchPriority="high"` + og:image 히어로 · check:image-reuse 🔴 0(🟠 7은 수정 전과 동일).
+
 ## 2026-10-01 (4) — 검수장 MA-245(MA-229 새 대회 글 1회차 부분 결과) 판정·반영 — ja 오사카 · zh-hant TMTC (MB-133)
 
 - 실행 12:4x~ · 판정·편집 = Opus 5.5 본체 단독(서브 없음). 원문은 본체가 직접 다시 열었다(Playwright innerText · PDF는 PyMuPDF 렌더 — Poppler는 CJK 글꼴 누락으로 판독 불가).

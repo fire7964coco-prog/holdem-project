@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16 دقيقة",
   emoji: "🏆",
+  image: "/images/holdem-tournament-vs-cash-hero.webp",
+  imageAlt: "إنفوغرافيك يقارن جنبًا إلى جنب بين الكاش جيم وبطولات البوكر — قيمة الرقائق وهيكل البلايند ومتى يمكنك المغادرة",
   tags: [
     "بطولات البوكر",
     "كاش جيم بوكر",

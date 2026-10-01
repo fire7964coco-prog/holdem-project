@@ -12,6 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16 phút",
   emoji: "🏆",
+  image: "/images/holdem-tournament-vs-cash-hero.webp",
+  imageAlt: "Infographic so sánh song song Cash Game và Poker Tournament — giá trị chip, cấu trúc blind và khi nào bạn có thể rời bàn",
   tags: [
     "poker tournament hay cash game",
     "cash game poker",

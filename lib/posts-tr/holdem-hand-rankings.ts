@@ -14,6 +14,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 dk",
   emoji: "🃏",
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Royal Flush — poker masasında maça 10 J Q K A, fiş yığınları ve dağıtıcı butonuyla",
   tags: ["poker elleri", "poker el sıralaması", "poker kart sırası", "texas holdem elleri", "pokerde hangi el kazanır", "kicker poker", "beraberlik kuralları poker", "en iyi poker elleri"],
   content: `
 River'da head-up'sın. Flush'ını yaptın, en iyisinin bu olduğundan eminsin — sonra krupiye potu karşı tarafa itiyor. Board eşlenmişti, rakibinde full house vardı ve bunun geleceğini hiç görmedin.

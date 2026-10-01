@@ -14,6 +14,8 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Thùng Phá Sảnh Hoàng Gia — 10 J Q K A chất bích trên bàn poker cùng các chồng chip và nút dealer",
   tags: ["tay bài poker", "thứ hạng bài poker", "thứ tự bài poker", "tay bài texas holdem", "bài nào thắng trong poker", "kicker poker", "luật hòa bài poker", "tay bài poker mạnh nhất"],
   content: `
 Bạn đang đấu tay đôi ở vòng river. Bạn đã ăn Thùng (flush), chắc chắn đây là tay mạnh nhất — rồi dealer đẩy pot về phía bên kia. Bàn đã có đôi, đối thủ cầm Cù Lũ (full house), và bạn hoàn toàn không lường trước.
