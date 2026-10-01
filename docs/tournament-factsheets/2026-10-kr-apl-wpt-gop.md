@@ -51,7 +51,7 @@
 | 항목 | 값 | 출처 · 축어 |
 |---|---|---|
 | 일정·장소 | 10/30~11/8 · 파라다이스 시티 | godsofpoker.com/series/incheon-2026-ii 「GOP INCHEON 2026 II THE LABYRINTH TRAIL OCT 30-NOV 8, 2026 Paradise City」(08-31엔 리다이렉트였으나 09-23 정상) |
-| 이벤트 수 | 헤더 「73 Total Events」 · 일정표 번호 #1~#76 결번 0 + #0(인플루언서 팀 프리롤) → 🔴 둘 다 병기, 한쪽 단정 금지 | 같은 페이지 |
+| 이벤트 수 | 헤더 「73 Total Events」 · 일정표 번호 #1~#76 결번 0 + #0(인플루언서 팀 프리롤) → ~~둘 다 병기~~ 🆕 **10-01 재열람: 헤더 「76 Total Events」로 일치** · 메인 Flight A 「RAKE FREE!!」 ₩1,300,000 · Fee 0(POKERFORS) · B~E ₩1,430,000 (MA-249) | 같은 페이지 |
 | 메인 #32 | ₩1,430,000(상금풀 1,300,000 + fee 130,000) · ₩600,000,000 GTD · 스택 120,000 · Flight A 11/3 · B 11/4 · C 11/5 · D·E 11/6(E 18:00) · Day2 11/7 · Final 11/8 · 「Each starting flight plays down to approximately 13.5% of the field」 · 상금풀 4% 스태프 | 메인 이벤트 페이지 |
 | 바이인 범위 | ₩330,000(#5·9·14·19·21·38·45·53·59·67) ~ ₩14,700,000(#34 Demigods Challenge 11/3) | 일정 JSON |
 | 주요 | #1 GOP Olympians ₩440,000·₩4천만 GTD(10/30) · #3 Titan Stack HR ₩5.5M · #18 GOP HR ₩6.6M · #43 Super HR ₩10.6M · #65 Mini Main ₩770,000(11/7~8) · 여성 Aphrodite's ₩330,000(#9·19·59·67) | 일정 |

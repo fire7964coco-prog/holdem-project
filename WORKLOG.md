@@ -1,3 +1,9 @@
+## 2026-10-01 (8) — MA-248·249 회신 · 대회 글 3편 사실 정정 (MB-137)
+
+- 검수장 MA-229 2회차 대안 5건 → 원문 직접 재열람(WPT ja 가이드 PDF p2·p9 · 인스파이어 셔틀 PDF p4~6 · GOP 시리즈·Flight A 직접 GET) 후 전부 채택.
+- ja `jopt-osaka-02-2026-guide` 중앙값 ¥5,000 → ¥4,500 · ja `korea-poker-trip-gop-wpt-seoul-2026` Day 1D 20분·HU 30분 / GOP 76 이벤트·Flight A 수수료 면제 1,300,000 / 셔틀 공항 발 시각 / 11/8 충돌 명시 · 🆕 KO `gop-incheon-2026-ii-guide` 같은 사본(73→76 · Flight A).
+- 게이트: audit:hard ja 60/60 🔴 0 · KO gop 🔴 0 · check:images ✅ · 빌드 74 blog posts. 🪶 `audit:hard --slug`는 로케일 글을 못 잡는다(F0) — 로케일은 `--locale=ja`.
+
 ## 2026-10-01 (7) — 솔버 S-028 회신 (MB-136) · TMTC 온라인 위성 과거형 보류
 
 - 사장님 지시(«오늘(10/2) TMTC 온라인 위성 과거형 3곳 · S-028 회신»). 🔴 시계 확인 결과 **오늘은 10-01**(로컬 14:25 KST · google Date 헤더 05:25 GMT · 직전 커밋도 10-01) → TMTC는 캘린더 판정(«至 10 月 1 日止» 당일은 진행 중) 그대로 **보류**, 10/2 이후 첫 회차로.
