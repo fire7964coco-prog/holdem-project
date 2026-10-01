@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 </div>
 
-Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs. AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Spieler nennen jedes Rennen Paar gegen Overcards einen „Coinflip“, aber nur ein niedriges Paar gegen zwei größere Karten (22 vs. AK) liegt wirklich nahe an 50/50.
+Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs. AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Spieler nennen jedes Rennen Paar gegen Overcards einen „Coinflip“, aber ein niedriges Paar gegen zwei größere Karten, etwa 22 vs. AK, liegt wirklich nahe an 50/50.
 
 ---
 

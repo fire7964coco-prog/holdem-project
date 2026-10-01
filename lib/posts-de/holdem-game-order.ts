@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit bis zu vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -356,7 +356,7 @@ A. Der erste noch aktive Spieler links vom Button – am vollen Tisch ist das de
 
 **Q. Wer zeigt im Showdown seine Karten zuerst?**
 
-A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf in der Regel stattdessen mucken. Zwei Ausnahmen im Turnier: Ist jemand All-in, wird jede Hand offen hingelegt (TDA-2024-Regel 16); und wer am River gesetzt hat und gecallt wurde, muss zeigen, wenn der Caller die Hand sehen will (TDA-2024-Regel 18-B).
+A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf in der Regel stattdessen mucken. Zwei Ausnahmen im Turnier: Ist jemand All-in, wird jede Hand offen hingelegt (TDA-2024-Regel 16); und wer am River gesetzt hat und gecallt wurde, muss zeigen, wenn der Caller – der seine Karten noch hält oder schon aufgedeckt hat – die Hand sehen will (TDA-2024-Regel 18-B).
 
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 

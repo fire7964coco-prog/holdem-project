@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la última apuesta o subida completa) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -207,7 +207,7 @@ A. Sí — si alguien apuesta después de tu check, puedes subir cuando la acci�
 
 **Q. ¿Puedes subir tu propia apuesta?**
 
-A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. Solo puedes volver a subir si otro jugador te hace primero una subida completa — eso reabre la acción; un all-in por menos de una subida completa no.
+A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. Solo puedes volver a subir si la acción vuelve a ti frente a al menos una subida completa sobre tu apuesta — ya la haga un solo jugador o la sumen varios all-ins cortos; un único all-in por menos de una subida completa no reabre la acción.
 
 **Q. ¿Cuántas veces se puede subir en Texas Hold'em?**
 

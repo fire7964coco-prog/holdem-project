@@ -1,3 +1,15 @@
+## 2026-10-01 (1) — 검수장 델타 재검증 MA-231·233·235·238·240 판정·이행 (EN 7자리 → 9로케일 · PDF 3문구 · MB-129)
+
+- 사장님 «(핸드오프 후보) 4번 빼고 중요 순서로 진행». 실행 11:35~ (한도 13:05 · Fable 판정·EN, 로케일 전파 = Opus 서브 4 — pt·es / de·id / zh·zh-hant / ja·ar·ms). 사용량 지표는 이 세션에서 관측 불가.
+- **판정: 요청 5건 전부 채택.** 1차 출처 직접 확인 — TDA 2024 47-A «(or cumulative multiple short all-ins)» · 18-B «provided the caller tabled or retains his or her cards»(검수장 발췌) · WSOP Tournament Rule 72 «refuses to show their hand and intentionally mucks … will receive a penalty»(`docs/sources/wsop-2026-tournament-rules.txt`).
+- **EN 7자리**(6편): betting-actions FAQ(«돌아왔을 때 마주한 금액» 기준 · 숏 올인 합산 포함) · showdown 본문 «may usually muck … WSOP tournaments are the exception (Rule 72)» + 같은 글 FAQ «you show first when called; your only way out is to muck…»(본체 추가 — 본문과 FAQ가 반대 답이 되지 않게) · beginners FAQ «(with a side pot, each pot is awarded separately)» · game-order FAQ 18-B 전제 삽입구 · kicker FAQ «when two players pair their ace and make nothing better» · equity «only» 삭제.
+- **전파**: pt·es·de·id·zh·zh-hant·ja·ar 43편 + ms 4편(betting FAQ · beginners 괄호 · kicker 2자리 · equity). 해당 문장 없음 = pt kicker · es/zh/zh-hant/ja game-order · ja kicker → `masterUpdated`만. ms showdown·game-order는 옛 문형이라 해당 없음.
+- **로케일 고유 6자리(MA-240)**: zh all-in 꼬리 절 삭제(TDA 44) · zh/zh-hant 快速回答·快速解答에 표 칸 문안 · zh-hant beginners tldr «獲勝» · zh-hant blind-meaning 快速解答 NL/PL 한정 · zh-hant showdown 새 문장을 快速解答와 같은 방향으로(«亮牌才是常規 … 但那不是你的權利»).
+  - 🪶 서브가 처음엔 «多數牌局只是容忍»(빈도 단정 · 내 지시문의 "tolerated in most games"가 원인)로 썼다 → 헤드가 빈도어를 빼고 다시 썼다. 한정을 넣을 때 검증 못 할 빈도어를 새로 만들지 않는다.
+- **PDF**(`poker-starting-hands-chart.pdf`): «Almost always raise/re-raise…» · «Mostly late position; …» · «Fold preflop — these cost chips every session»(본문 표 문안) → 재생성 · 1쪽 · 문구 육안 확인 · `check-pdf-page` 🔴 0.
+- 게이트: `audit:hard --locale` 10로케일 🔴 0 · `npm run build` 성공(73 blog + 612 intl) · `check:drift` 핵심 0. 남긴 것 = `docs/en-first-queue.md` §2-O O-5.
+- **WPT 오스트레일리아**: `/results` 재수집(11:41 KST · 헤더 36/36 · #14·#32 재대조 일치) → 사실 시트 §4에 #24·#33~36 편입. #24 Championship = Alexander a. Thompson $450,900 · 527 엔트리 · 상금 풀 $2,424,200. 글 전환은 아직 안 했다(착수 조건만 충족).
+
 ## 2026-09-30 (8) — 보고서 보완 4·5: 「3벳」 SERP 실측 · EN equity 노출 급증 원인 (수정 0 · 보완 전부 종결)
 
 - 사장님 «남은 거 이어서». 실행 16:27~ (Fable). 글·코드 변경 0 → MB 없음.

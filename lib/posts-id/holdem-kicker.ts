@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -192,7 +192,7 @@ A. Yang tinggi — kicker ace atau king itu kuat, sedangkan kicker rendah sepert
 
 **Q. Apa itu ace kicker (atau king kicker)?**
 
-A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat yang ada, sehingga "top pair, ace kicker" memenangkan hampir semua showdown pair-sama. King kicker adalah yang terbaik berikutnya. Persis inilah kenapa A-K dan A-Q menang atas ace lemah seperti A-9: saat meja memasangkan ace semua orang, kicker terbesar yang mengambil pot.
+A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat yang ada, sehingga "top pair, ace kicker" memenangkan hampir semua showdown pair-sama. King kicker adalah yang terbaik berikutnya. Persis inilah kenapa A-K dan A-Q menang atas ace lemah seperti A-9: saat dua pemain memasangkan ace-nya dan tak membentuk apa pun yang lebih baik, kicker terbesar yang mengambil pot.
 
 **Q. Apa arti "playing the board"?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -75,7 +75,7 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 
 </div>
 
-Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:not a 50/50== — the pair is a modest favorite, around 57/43 offsuit (a touch tighter, ~54/46, when the AK is suited). Players call any pair-against-overcards race a "coin flip", but only a low pair against two bigger cards (22 vs AK) is genuinely close to 50/50.
+Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:not a 50/50== — the pair is a modest favorite, around 57/43 offsuit (a touch tighter, ~54/46, when the AK is suited). Players call any pair-against-overcards race a "coin flip", but a low pair against two bigger cards, like 22 vs AK, is genuinely close to 50/50.
 
 ---
 

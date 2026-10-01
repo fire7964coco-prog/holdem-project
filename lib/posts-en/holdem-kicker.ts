@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -191,7 +191,7 @@ A. A high one — an ace or king kicker is strong, while a low kicker like a nin
 
 **Q. What is an ace kicker (or a king kicker)?**
 
-A. An ace kicker means your highest side card is an ace — the strongest kicker there is, so "top pair, ace kicker" wins almost every same-pair showdown. A king kicker is the next best. It's exactly why A-K and A-Q beat a weak ace like A-9: when the board pairs everyone's ace, the biggest kicker takes the pot.
+A. An ace kicker means your highest side card is an ace — the strongest kicker there is, so "top pair, ace kicker" wins almost every same-pair showdown. A king kicker is the next best. It's exactly why A-K and A-Q beat a weak ace like A-9: when two players pair their ace and make nothing better, the biggest kicker takes the pot.
 
 **Q. What does "playing the board" mean?**
 

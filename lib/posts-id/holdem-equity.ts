@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa 
 
 </div>
 
-Dua hal yang menjebak orang di sini. Pair melawan dua overcard (QQ vs AK) ==r:bukan 50/50== — pair adalah favorit tipis, sekitar 57/43 offsuit (sedikit lebih ketat, ~54/46, saat AK suited). Pemain menyebut setiap adu pair melawan overcard sebagai "coin flip", tapi hanya pair rendah melawan dua kartu lebih besar (22 vs AK) yang benar-benar mendekati 50/50.
+Dua hal yang menjebak orang di sini. Pair melawan dua overcard (QQ vs AK) ==r:bukan 50/50== — pair adalah favorit tipis, sekitar 57/43 offsuit (sedikit lebih ketat, ~54/46, saat AK suited). Pemain menyebut setiap adu pair melawan overcard sebagai "coin flip", tapi pair rendah melawan dua kartu lebih besar, seperti 22 vs AK, benar-benar mendekati 50/50.
 
 ---
 

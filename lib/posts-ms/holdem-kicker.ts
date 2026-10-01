@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila board berpasangan dengan As.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-01",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -188,11 +188,11 @@ A. Bergantung pada tangan: tangan high card menggunakan empat kicker (kelima-lim
 
 **Q. Apakah kicker yang bagus dalam poker?**
 
-A. Kicker yang tinggi — kicker As atau K adalah kuat, manakala kicker rendah seperti 9 menyebabkan anda "didominasi". Itulah sebabnya AK dan AQ jauh lebih baik daripada A9 atau A5: apabila semua orang berpasangan dengan As mereka, kicker terbesar memenangi pot.
+A. Kicker yang tinggi — kicker As atau K adalah kuat, manakala kicker rendah seperti 9 menyebabkan anda "didominasi". Itulah sebabnya AK dan AQ jauh lebih baik daripada A9 atau A5: apabila dua pemain berpasangan dengan As mereka dan tidak membuat apa-apa yang lebih baik, kicker terbesar memenangi pot.
 
 **Q. Apa itu kicker As (atau kicker K)?**
 
-A. Kicker As (ace kicker) bermakna kad sampingan tertinggi anda ialah As — kicker paling kuat yang wujud, jadi "top pair, kicker As" memenangi hampir setiap showdown pair yang sama. Kicker K (king kicker) ialah yang terbaik seterusnya. Itulah sebabnya A-K dan A-Q mengalahkan As yang lemah seperti A-9: apabila board berpasangan dengan As semua orang, kicker terbesar mengambil pot.
+A. Kicker As (ace kicker) bermakna kad sampingan tertinggi anda ialah As — kicker paling kuat yang wujud, jadi "top pair, kicker As" memenangi hampir setiap showdown pair yang sama. Kicker K (king kicker) ialah yang terbaik seterusnya. Itulah sebabnya A-K dan A-Q mengalahkan As yang lemah seperti A-9: apabila dua pemain berpasangan dengan As mereka dan tidak membuat apa-apa yang lebih baik, kicker terbesar mengambil pot.
 
 **Q. Apa maksud "playing the board"?**
 

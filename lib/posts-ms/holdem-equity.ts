@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
+  updated: "2026-10-01",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -76,7 +76,7 @@ Itulah sebab utama equity penting: ia menukar soalan "adakah saya di depan?" men
 
 </div>
 
-Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favourite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Dan istilah "coin flip" sebenarnya hanya sesuai untuk pair rendah menentang dua kad lebih besar (22 vs AK), di mana ia benar-benar rapat.
+Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favourite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Dan istilah "coin flip" sebenarnya sesuai untuk pair rendah menentang dua kad lebih besar, seperti 22 vs AK, di mana ia benar-benar rapat.
 
 ---
 

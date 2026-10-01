@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En torneos, sin all-in, enseña primero el último agresor del river; si todos pasan, empieza el primer jugador activo a la izquierda del botón. Con all-in, todas las manos restantes se muestran en cuanto terminan las apuestas. Quien pagó en el river y conserva o ya mostró sus cartas puede pedir ver la mano del último agresor. En cash, la sala fija las reglas para mostrar y hacer muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -61,7 +61,7 @@ Una vez que el último agresor enseña su mano, el resto de jugadores puede:
 
 ==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 18 de la TDA 2024 la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo. En cash mandan las reglas de la casa, y no son automáticamente más laxas: con las WSOP Live Action Rules, pedir ver una mano que no se ha expuesto exige sospecha de colusión **y** la presencia de un floor (==regla 147 de las Live Action Rules==). (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
 
-Regla práctica: ==como último agresor, da la vuelta a tus cartas — también con el farol pagado.== El que pagó enseña o tira después de ver tu mano. Como apostador puedes tirar en lugar de enseñar y renunciar al bote, pero si tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA 2024==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
+Regla práctica: ==como último agresor, da la vuelta a tus cartas — también con el farol pagado.== El que pagó enseña o tira después de ver tu mano. Como apostador normalmente puedes tirar en lugar de enseñar y renunciar al bote; la excepción son los torneos de las WSOP, donde se penaliza a quien se niega a enseñar y tira sus cartas a propósito (==regla 72 del reglamento de torneos de la WSOP==). Pero si tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA 2024==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
 
 ---
 
@@ -176,7 +176,7 @@ A. Cuando nadie está all-in, el último jugador que hizo una acción agresiva (
 
 **Q. ¿Tienes que enseñar tus cartas si te pagan en el showdown?**
 
-A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in en torneo: por la regla 16 de la TDA 2024 el que paga también tiene que enseñar. Y en torneo el derecho garantizado a pedir es de quien **pagó la apuesta del river** — siempre que haya enseñado o aún conserve sus cartas — y cubre únicamente la mano del último agresor, la que pagó por ver (==regla 18 de la TDA 2024==). Quien tiró sus cartas boca abajo ya no puede pedir nada, y cualquier otra petición queda a criterio del director — lo que no equivale a una negativa automática (==regla 18-B de la TDA 2024==). En cash mandan las reglas de la casa: con las WSOP Live Action Rules hace falta sospecha de colusión y un floor presente (regla 147).
+A. Sí — si fuiste el último en apostar o subir en el river, enseñas primero cuando te pagan; tu única salida es tirar las cartas y renunciar al bote, algo que los torneos de las WSOP penalizan (regla 72 del reglamento de torneos de la WSOP). Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in en torneo: por la regla 16 de la TDA 2024 el que paga también tiene que enseñar. Y en torneo el derecho garantizado a pedir es de quien **pagó la apuesta del river** — siempre que haya enseñado o aún conserve sus cartas — y cubre únicamente la mano del último agresor, la que pagó por ver (==regla 18 de la TDA 2024==). Quien tiró sus cartas boca abajo ya no puede pedir nada, y cualquier otra petición queda a criterio del director — lo que no equivale a una negativa automática (==regla 18-B de la TDA 2024==). En cash mandan las reglas de la casa: con las WSOP Live Action Rules hace falta sospecha de colusión y un floor presente (regla 147).
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 

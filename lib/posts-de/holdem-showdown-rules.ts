@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -61,7 +61,7 @@ Sobald der letzte Aggressor seine Hand gezeigt hat, können die übrigen Spieler
 
 ==r:Aber es gibt eine wichtige Ausnahme:== Wurde deine River-Bet gecallt, hat der Caller den vollen Preis bezahlt, um deine Hand zu sehen – er kann den Dealer bitten, eine schon gemuckte Hand aufzudecken. Das ist die **„I want to see that hand“-Regel**. Im Turnier zieht ==TDA-2024-Regel 18== ihre Grenzen eng: Wer am Showdown keine Karten mehr hält oder verdeckt gemuckt hat, verliert das Recht, eine fremde Hand einzufordern. Unantastbar ist der Anspruch nur für den, der die River-Bet gecallt und seine Karten getablet oder behalten hat – und auch dann nur auf die Hand des ==letzten Aggressors==, also auf die Hand, für die er bezahlt hat. Über alles Weitere entscheidet der Turnierleiter. Cashgames laufen nach Hausregeln und sind nicht automatisch lockerer: Nach den WSOP Live Action Rules setzt die Bitte, eine nicht aufgedeckte Hand zu sehen, einen Verdacht auf Absprachen **und** die Anwesenheit eines Floormans voraus (==Live Action Rule 147==). (Nicht zu verwechseln mit „show one, show all“: Die besagt, dass jeder am Tisch deine Karten sehen darf, wenn du sie freiwillig einem einzelnen Spieler zeigst.)
 
-Praktische Faustregel: ==Als letzter Aggressor drehst du um – auch den gecallten Bluff.== Der **Caller** zeigt oder muckt, nachdem er deine Hand gesehen hat. Als Setzer darfst du statt zu zeigen mucken und gibst damit den Pot auf – muckst du aber schnell, verlierst du doppelt: Im Turnier kann der Caller, der dafür bezahlt hat, deine Hand ohnehin einfordern (==TDA-2024-Regel 18==) – im WSOP-Cashgame kann er das nicht, solange kein Absprache-Verdacht und kein Floorman da sind (Live Action Rule 147) –, und weil „cards speak“ gilt, ist schon mancher Pot weggeworfen worden, dessen Ass-hoch am Ende vorne lag.
+Praktische Faustregel: ==Als letzter Aggressor drehst du um – auch den gecallten Bluff.== Der **Caller** zeigt oder muckt, nachdem er deine Hand gesehen hat. Als Setzer darfst du in der Regel statt zu zeigen mucken und gibst damit den Pot auf; die Ausnahme sind WSOP-Turniere, wo ein Spieler, der das Zeigen verweigert und absichtlich muckt, bestraft wird (==WSOP Tournament Rule 72==). Muckst du aber schnell, verlierst du doppelt: Im Turnier kann der Caller, der dafür bezahlt hat, deine Hand ohnehin einfordern (==TDA-2024-Regel 18==) – im WSOP-Cashgame kann er das nicht, solange kein Absprache-Verdacht und kein Floorman da sind (Live Action Rule 147) –, und weil „cards speak“ gilt, ist schon mancher Pot weggeworfen worden, dessen Ass-hoch am Ende vorne lag.
 
 ---
 
@@ -168,7 +168,7 @@ A. Ist niemand All-in, muss der Spieler, der in der letzten Setzrunde die letzte
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
-A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss im Turnier nach ==TDA-2024-Regel 16== auch der Caller tablen. Allerdings steht im Turnier nach ==TDA-2024-Regel 18== das garantierte Recht, eine Hand zu sehen, dem zu, der **die River-Bet gecallt hat** – sofern er seine Karten getablet hat oder noch hält –, und es gilt allein der Hand des letzten Aggressors, der Hand, die er bezahlt hat. Wer verdeckt gemuckt hat, darf gar nicht mehr fragen, und jeder andere Wunsch liegt im Ermessen des Turnierdirektors – abgelehnt ist er damit nicht automatisch (==TDA-2024-Regel 18-B==). In Cashgames gelten die Hausregeln; nach den WSOP Live Action Rules braucht es dafür einen Absprache-Verdacht und einen Floorman (Live Action Rule 147).
+A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, zeigst du nach dem Call zuerst; der einzige Ausweg ist, zu mucken und den Pot aufzugeben, was WSOP-Turniere bestrafen (WSOP Tournament Rule 72). Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss im Turnier nach ==TDA-2024-Regel 16== auch der Caller tablen. Allerdings steht im Turnier nach ==TDA-2024-Regel 18== das garantierte Recht, eine Hand zu sehen, dem zu, der **die River-Bet gecallt hat** – sofern er seine Karten getablet hat oder noch hält –, und es gilt allein der Hand des letzten Aggressors, der Hand, die er bezahlt hat. Wer verdeckt gemuckt hat, darf gar nicht mehr fragen, und jeder andere Wunsch liegt im Ermessen des Turnierdirektors – abgelehnt ist er damit nicht automatisch (==TDA-2024-Regel 18-B==). In Cashgames gelten die Hausregeln; nach den WSOP Live Action Rules braucht es dafür einen Absprache-Verdacht und einen Floorman (Live Action Rule 147).
 
 **Q. Muss ich allen meine Karten zeigen, wenn ich sie einem Spieler zeige?**
 

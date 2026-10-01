@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan paling banyak empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -356,7 +356,7 @@ A. Pemain aktif pertama di kiri button — di meja penuh itu adalah small blind.
 
 **Q. Siapa yang membuka kartu duluan saat showdown?**
 
-A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah biasanya boleh **muck** alih-alih memperlihatkan kartunya. Ada dua pengecualian di turnamen: saat ada yang all-in, semua hand dibuka (TDA 2024 Rule 16); dan pemain yang bet di river lalu di-call wajib membuka kartunya kalau si pemanggil meminta melihatnya (TDA 2024 Rule 18-B).
+A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah biasanya boleh **muck** alih-alih memperlihatkan kartunya. Ada dua pengecualian di turnamen: saat ada yang all-in, semua hand dibuka (TDA 2024 Rule 16); dan pemain yang bet di river lalu di-call wajib membuka kartunya kalau si pemanggil — yang masih memegang atau sudah membuka kartunya sendiri — meminta melihatnya (TDA 2024 Rule 18-B).
 
 **Q. Apa bedanya preflop dan flop?**
 

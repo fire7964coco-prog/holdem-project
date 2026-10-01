@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -187,7 +187,7 @@ A. Nein, er kann auch eine Gemeinschaftskarte sein. Poker bildet immer die beste
 
 **Q. Was ist ein Ass-Kicker (oder ein König-Kicker)?**
 
-A. Ein Ass-Kicker heißt, deine höchste Beikarte ist ein Ass – der stärkste Kicker, den es gibt. „Top Pair mit Ass-Kicker“ gewinnt darum fast jeden Showdown gegen dasselbe Paar; der König-Kicker ist der nächstbeste. Genau deshalb schlagen A-K und A-Q ein schwaches Ass wie A-9, sobald das Board allen ihr Ass pairt.
+A. Ein Ass-Kicker heißt, deine höchste Beikarte ist ein Ass – der stärkste Kicker, den es gibt. „Top Pair mit Ass-Kicker“ gewinnt darum fast jeden Showdown gegen dasselbe Paar; der König-Kicker ist der nächstbeste. Genau deshalb schlagen A-K und A-Q ein schwaches Ass wie A-9, wenn zwei Spieler ihr Ass pairen und nichts Besseres machen.
 
 **Q. Wie viele Kicker sind in einer Pokerhand?**
 

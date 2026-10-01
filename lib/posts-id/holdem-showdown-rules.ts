@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -61,7 +61,7 @@ Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 
 ==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Aturan **"I want to see that hand"** inilah yang memungkinkan ia meminta dealer membuka hand yang sudah di-muck. Di turnamen, ==TDA 2024 Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen. Cash game mengikuti house rule, dan itu tidak otomatis lebih longgar: menurut WSOP Live Action Rules, permintaan melihat hand yang belum terbuka menuntut adanya dugaan kolusi **dan** kehadiran floor person (==Live Action Rule 147==). (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
-Aturan praktisnya: ==sebagai agresor terakhir, buka kartu Anda — termasuk gertakan yang di-call.== Pemain yang call lalu membuka atau muck setelah melihat hand Anda. Sebagai pembuat bet, Anda boleh muck alih-alih membuka dan menyerahkan pot, tapi kalau buru-buru muck, Anda rugi dua kali: di turnamen, pemain yang call dan sudah membayar untuk melihatnya tetap boleh meminta hand Anda (==TDA 2024 Rule 18==) — di cash game WSOP ia tidak boleh, kecuali ada dugaan kolusi dan floor person hadir (Live Action Rule 147) — dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
+Aturan praktisnya: ==sebagai agresor terakhir, buka kartu Anda — termasuk gertakan yang di-call.== Pemain yang call lalu membuka atau muck setelah melihat hand Anda. Sebagai pembuat bet, Anda biasanya boleh muck alih-alih membuka dan menyerahkan pot; pengecualiannya turnamen WSOP, di mana pemain yang menolak membuka kartu dan sengaja muck dikenai penalti (==WSOP Tournament Rule 72==). Tapi kalau buru-buru muck, Anda rugi dua kali: di turnamen, pemain yang call dan sudah membayar untuk melihatnya tetap boleh meminta hand Anda (==TDA 2024 Rule 18==) — di cash game WSOP ia tidak boleh, kecuali ada dugaan kolusi dan floor person hadir (Live Action Rule 147) — dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
 
 ---
 
@@ -168,7 +168,7 @@ A. Kalau tidak ada yang all-in, pemain terakhir yang melakukan aksi agresif (bet
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 
-A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Pengecualiannya all-in di turnamen: menurut TDA 2024 Rule 16 pemain yang call pun wajib membuka kartunya. Dan di turnamen, hak yang dijamin untuk meminta ada pada pemain yang **call bet river** — asalkan ia sudah membuka atau masih memegang kartunya — dan hanya mencakup hand agresor terakhir, hand yang ia bayar untuk dilihat (==TDA 2024 Rule 18==). Pemain yang sudah muck menghadap ke bawah tidak berhak meminta apa pun, dan permintaan lainnya ditentukan oleh tournament director — yang bukan berarti otomatis ditolak (==TDA 2024 Rule 18-B==). Di cash game berlaku house rule: menurut WSOP Live Action Rules perlu dugaan kolusi dan floor person yang hadir (Rule 147).
+A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda membuka duluan saat di-call; satu-satunya jalan keluar adalah muck dan menyerahkan pot, dan itu dikenai penalti di turnamen WSOP (WSOP Tournament Rule 72). Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Pengecualiannya all-in di turnamen: menurut TDA 2024 Rule 16 pemain yang call pun wajib membuka kartunya. Dan di turnamen, hak yang dijamin untuk meminta ada pada pemain yang **call bet river** — asalkan ia sudah membuka atau masih memegang kartunya — dan hanya mencakup hand agresor terakhir, hand yang ia bayar untuk dilihat (==TDA 2024 Rule 18==). Pemain yang sudah muck menghadap ke bawah tidak berhak meminta apa pun, dan permintaan lainnya ditentukan oleh tournament director — yang bukan berarti otomatis ditolak (==TDA 2024 Rule 18-B==). Di cash game berlaku house rule: menurut WSOP Live Action Rules perlu dugaan kolusi dan floor person yang hadir (Rule 147).
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 

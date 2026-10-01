@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards and 5 shared community cards. There are up to four betting rounds, and the best 5-card poker hand wins at showdown — unless everyone else folds first.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -424,7 +424,7 @@ A. The two players to the left of the dealer button must post forced bets before
 
 **Q. What is the quick version of Texas Hold'em rules?**
 
-A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. A full hand has four betting rounds and five community cards, and the best five-card hand takes the pot — or splits it, if the best five cards are exactly equal.
+A. Post blinds → deal 2 hole cards → preflop betting → reveal 3 community cards (flop) + betting → reveal 1 card (turn) + betting → reveal 1 card (river) + betting → best hand wins. A full hand has four betting rounds and five community cards, and the best five-card hand takes the pot — or splits it, if the best five cards are exactly equal (with a side pot, each pot is awarded separately).
 
 **Q. How many players do you need to play Texas Hold'em?**
 

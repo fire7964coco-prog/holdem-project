@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht der letzten vollen Bet oder dem letzten vollen Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -210,7 +210,7 @@ A. Ja – setzt jemand nach deinem Check, darfst du raisen, wenn die Action zu d
 
 **Q. Darf man seinen eigenen Einsatz raisen?**
 
-A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Erneut raisen darfst du nur, wenn ein anderer Spieler zuerst einen vollen Raise über dich legt – das eröffnet die Action wieder; ein All-in unterhalb eines vollen Raises tut das nicht.
+A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Erneut raisen darfst du nur, wenn die Action zu dir zurückkommt und du mindestens einem vollen Raise über deine Bet gegenüberstehst – egal, ob ein Spieler ihn gemacht hat oder mehrere kurze All-ins zusammen darauf kommen; ein einzelnes All-in unterhalb eines vollen Raises eröffnet die Action nicht wieder.
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 

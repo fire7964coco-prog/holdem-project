@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 
 </div>
 
-Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas (QQ vs AK) ==r:no es un 50/50== — la pareja es una favorita modesta, en torno a 57/43 offsuit (un pelín más ajustado, ~54/46, cuando el AK va suited). Los jugadores llaman "coin flip" a cualquier carrera de pareja contra sobrecartas, pero solo una pareja baja contra dos cartas mayores (22 vs AK) está genuinamente cerca del 50/50.
+Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas (QQ vs AK) ==r:no es un 50/50== — la pareja es una favorita modesta, en torno a 57/43 offsuit (un pelín más ajustado, ~54/46, cuando el AK va suited). Los jugadores llaman "coin flip" a cualquier carrera de pareja contra sobrecartas, pero una pareja baja contra dos cartas mayores, como 22 vs AK, está genuinamente cerca del 50/50.
 
 ---
 

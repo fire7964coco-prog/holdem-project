@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com até quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -356,7 +356,7 @@ A. O primeiro jogador ainda na mão à esquerda do botão — numa mesa cheia, o
 
 **Q. Quem mostra as cartas primeiro no showdown?**
 
-A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido normalmente pode dar muck em vez de mostrar. Há duas exceções de torneio: quando alguém está all-in, todas as mãos são mostradas (regra 16 da TDA, edição de 2024); e quem apostou no river e foi pago precisa mostrar se quem pagou pedir para ver a mão (regra 18-B da TDA, edição de 2024).
+A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido normalmente pode dar muck em vez de mostrar. Há duas exceções de torneio: quando alguém está all-in, todas as mãos são mostradas (regra 16 da TDA, edição de 2024); e quem apostou no river e foi pago precisa mostrar se quem pagou — ainda com as próprias cartas na mão ou já abertas na mesa — pedir para ver a mão (regra 18-B da TDA, edição de 2024).
 
 **Q. Qual é a diferença entre pré-flop e flop?**
 

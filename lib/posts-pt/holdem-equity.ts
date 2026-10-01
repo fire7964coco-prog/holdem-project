@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 
 </div>
 
-Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) ==r:não é um 50/50== — o par é um favorito modesto, algo como 57/43 offsuit (um pouco mais apertado, ~54/46, quando o AK é suited). Os jogadores chamam qualquer disputa de par contra overcards de "coin flip", mas só um par baixo contra duas cartas maiores (22 vs AK) fica genuinamente perto de 50/50.
+Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) ==r:não é um 50/50== — o par é um favorito modesto, algo como 57/43 offsuit (um pouco mais apertado, ~54/46, quando o AK é suited). Os jogadores chamam qualquer disputa de par contra overcards de "coin flip", mas um par baixo contra duas cartas maiores, como 22 vs AK, fica genuinamente perto de 50/50.
 
 ---
 

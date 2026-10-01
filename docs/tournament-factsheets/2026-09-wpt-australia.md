@@ -45,9 +45,9 @@ URL: `https://www.starpoker.com.au/sites/default/files/2026-09/In%20festivl%20sa
 - «Tournament registration opens 1 hour before the start of the event.»
 - 🪶 이 페이지는 현재 «Unlimited re-entry»다 — 글 FAQ의 «WPT 페이지는 once per flight»와 대조가 필요하다(WPT.com 쪽 페이지는 이번에 안 열었다).
 
-## 4. 개별 결과 전수 (열람 2026-09-30 14:50 KST · `/results` 필터 «WPT Australia 2026» id 13356 · Load more 끝까지 · Playwright DOM 파싱)
+## 4. 개별 결과 전수 (열람 2026-09-30 14:50 KST · **재수집 2026-10-01 11:41 KST = 36/36** · `/results` 필터 «WPT Australia 2026» id 13356 · Load more 끝까지 · Playwright DOM 파싱)
 
-- 게시 **31/36** · 미게시 = #24 · #33 · #34 · #35 · #36 (#24 Championship Final Day는 9/30 11:30am 시드니 시작 — 열람 시점 진행 중).
+- 게시 **36/36**(10-01 재수집 · 헤더 36개 · 빠진 번호 없음 · 기존 #14·#32 값 재대조 일치). 09-30 열람 때는 31/36(#24·#33~36 미게시)이었다.
 - 값은 페이지 축어(Entry Fee = 어드민 뺀 상금 편입분). 목록 행 Total Prize와 상세 Prize pool 일치는 파싱 때 전건 대조. 이름 표기(소문자·이니셜·«Witheld Name»)도 원문 그대로.
 - «차액» = Entry Fee × Entrants − Prize pool (산수 · 원인 표기는 페이지에 없다).
 
@@ -84,6 +84,13 @@ URL: `https://www.starpoker.com.au/sites/default/files/2026-09/In%20festivl%20sa
 | 30 | Mini-Championship Final Day | Mon, 28 Sep 2026 12:30pm | NLH | $1,800 | 190 | $342,000 | 0 | 25 | Jarrod Thatcher $78,945 | Shiwan Mahmud $52,505 | Cadeyrn Barthelson $38,006 |
 | 31 | $600 Wave Rider | Mon, 28 Sep 2026 10:30am | NLH | $525 | 50 | $26,250 | 0 | 8 | Joshua Baraba $8,584 | Leonardo Speciale $5,722 | Kemal Husain $3,815 |
 | 32 | $1,250 Down Under Dominator Final Day | Tue, 29 Sep 2026 12:15pm | NLH | $1,100 | 190 | $195,800 | $13,200 | 24 | Sam hsien-yi Chi $46,031 | Farhad Mohajerani $30,574 | Hussein Salman $22,383 |
+| 24 | Championship Event Final Day | Wed, 30 Sep 2026 11:30am | NLH | $4,600 | 527 | $2,424,200 | 0 | 66 | Alexander a. Thompson $450,900 | Filip Radic $290,000 | Pranav Bhatt $214,000 |
+| 33 | WPT World Champs Prime Warm Up Tournament Final Day | Wed, 30 Sep 2026 11:45am | NLH | $1,000 | 112 | $112,000 | 0 | 16 | Musang Kim $28,778 | Sarah Bilney $19,229 | Aleksei Gatsko $13,342 |
+| 34 | $5K Australian PLO Championship Final Day | Wed, 30 Sep 2026 12:15pm | PLO | $4,600 | 65 | $299,000 | 0 | 10 | Thomas d Lee $78,857 | Daniel Laidlaw $73,856 | Jiaxu Chen $40,724 |
+| 35 | The Ultimate Freeze | Wed, 30 Sep 2026 1:30pm | NLH | $1,400 | 72 | $100,800 | 0 | 12 | Ling Liu $29,720 | Anthony Chan $19,813 | Dongwen Liu $13,432 |
+| 36 | Sydney Finale | Wed, 30 Sep 2026 3:30pm | NLH | $600 | 95 | $57,000 | 0 | 14 | Christopheros Winters $15,597 | Ian Logan $10,402 | Unensaikhan Bolovson $7,072 |
+
+🪶 #24·#33~36 = 2026-10-01 11:41 KST 재수집분(표는 번호순이 아니라 «09-30분 + 10-01분» 순). #24 Championship 4~9위: Jack Sweet $159,000 · Tingjia Huang $119,000 · Ryan Henry $89,000 · Jun Wang $68,000 · Michael Zhang $53,500 · Joshua Mcswiney $46,000.
 
 ### 4-1. 글에 쓰기 전 주의 (원문 자기모순·판정 필요 자리)
 
@@ -98,7 +105,8 @@ URL: `https://www.starpoker.com.au/sites/default/files/2026-09/In%20festivl%20sa
 
 ### 4-2. 남은 것 (작성 착수 조건)
 
-- **#24 Championship** 결과(우승자·엔트리·상금 풀·1위 상금) — 회차의 핵심. 게시 전에는 작성하지 않는다(사장님 09-27 결정 B = 한 번에).
-- #33 Warm Up · #34 PLO Championship · #35 Ultimate Freeze · #36 Sydney Finale.
+- ✅ **#24 Championship · #33~36 게시 확인(10-01)** — 착수 조건 충족. 위 표에 편입.
+- 🪶 #24 차액 0(527 × $4,600 = $2,424,200) — Championship 페이지의 «좌석 $15,000을 prize pool에서 차감» 문구와 결과 수치의 관계는 페이지에 설명이 없다 → 글에 «차감이 결과에 보인다/안 보인다»를 쓰지 않는다. 1위 $450,900에 좌석이 포함인지도 결과 페이지에는 표기 없음(Championship 페이지 축어 «as part of the first-place prize»만 인용 가능).
+- 🪶 #34 PLO 1위 $78,857 · 2위 $73,856(차이가 작다 · 딜 여부 표기 없음) → 금액 서열 해석 금지.
 - 재수집 = 같은 URL(`/results?field_series_venue_target_id=All&field_tournament_ref_target_id_entityreference_filter=13356`)에서 «Load more»를 끝까지 누른 뒤 `table tbody tr`의 innerText를 파싱(헤더 행 + 상세 행 쌍). 헤더 36개가 되는지 센다.
 - 선택: WPT.com 쪽 Championship 페이지 re-entry 문구(«once per flight») 재열람 — 종료 뒤엔 과거형 한 줄로 줄일 자리라 필수 아님.

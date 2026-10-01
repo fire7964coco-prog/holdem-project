@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en hasta cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -430,7 +430,7 @@ A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas o
 
 **Q. ¿Cuál es la versión rápida de las reglas del Texas Hold'em?**
 
-A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. Una mano completa tiene cuatro rondas de apuestas y cinco cartas comunitarias, y la mejor mano de cinco cartas se lleva el bote — o lo reparte, si las mejores cinco cartas son exactamente iguales.
+A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. Una mano completa tiene cuatro rondas de apuestas y cinco cartas comunitarias, y la mejor mano de cinco cartas se lleva el bote — o lo reparte, si las mejores cinco cartas son exactamente iguales (si hay side pot, cada bote se adjudica por separado).
 
 **Q. ¿Cuántos jugadores se necesitan para jugar al Texas Hold'em?**
 

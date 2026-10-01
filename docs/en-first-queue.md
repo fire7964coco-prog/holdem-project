@@ -182,6 +182,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 🪶 스윕 범위·방법 = WORKLOG 09-30 (6). EN 746문항 중 이 1건뿐이라 단독 전파 회차를 열 값어치는 아니다 — 이 글의 다음 EN-먼저 회차에 얹는다.
 
+### 2-O. 우편함 수신분 — 검수장 델타 재검증 MA-231 · 233 · 235 · 238 · 240 (판정·배포 2026-10-01 · 회신 MB-129)
+
+> 판정: 요청 5건 전부 채택(1차 출처 직접 확인 — TDA 2024 47-A · 18-B = 검수장 `facts/sources/wsop-2026-rules-발췌.md`, WSOP Tournament Rule 72 = `docs/sources/wsop-2026-tournament-rules.txt`). 경위 = WORKLOG 10-01 (1).
+
+| 묶음 | 상태 | 규모 |
+|---|---|---|
+| **O-1 EN 7자리**(betting-actions FAQ 누적 숏 올인 · showdown 본문 + FAQ = WSOP 72 한정 · beginners FAQ 사이드팟 괄호 · game-order FAQ 18-B 전제 · kicker FAQ 한정절 · equity «only» 삭제) | ✅ 배포 | EN 6편 |
+| **O-2 로케일 전파**(pt·es·de·id·zh·zh-hant·ja·ar + ms 4편) | ✅ 같은 커밋 — 해당 문장 없는 6편(pt kicker · es/zh/zh-hant/ja game-order · ja kicker)은 `masterUpdated`만 | 47편 + 6편 |
+| **O-3 로케일 고유 6자리**(MA-240 · zh all-in 2 · zh-hant all-in·beginners tldr·blind-meaning·showdown) | ✅ 같은 커밋 | zh 1편 · zh-hant 4편 |
+| **O-4 PDF 3문구**(`poker-starting-hands-chart.pdf` · 원본 `scripts/starting-hands-chart-print.html`) | ✅ 본문 표 문안으로 맞춤 · 재생성 · 1쪽 육안 확인 | 1 |
+| **O-5 남긴 것** | 🪶 자동 착수 대상 아님 — ① zh-hant beginners FAQ «至少加到 50» 올인 예외 없음(MA-240 ⓒ) ② ms beginners FAQ «satu pemenang»(옛 EN 문형 · ms 정정 회차에) ③ MA-238 ⓖ: 3bet 212 표 칸 «full 4x+ out of position» 스택 한정 · limping FAQ 괄호 «Facing a raise» · chart «hands 1–5 … always raise» ④ MA-235 ⓕ: implied 본문·말미 «realistically win that much more → profitable» · pot-odds 133 «flush draw (35%) is a clear call» ⑤ MA-231: betting-actions 113 캡션 «every raise must add at least…»(본문 «last full»과 자기모순 · M-5와 같은 자리) | 5 |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

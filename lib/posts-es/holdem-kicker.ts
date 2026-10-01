@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -192,7 +192,7 @@ A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo 
 
 **Q. ¿Qué es un kicker de as (o un kicker de rey)?**
 
-A. Un kicker de as significa que tu carta lateral más alta es un as — el kicker más fuerte que hay, así que "pareja máxima, kicker de as" gana casi todos los showdowns con la misma pareja. Un kicker de rey es el siguiente mejor. Es exactamente por lo que A-K y A-Q ganan a un as flojo como A-9: cuando la mesa empareja el as de todos, el kicker más grande se lleva el bote.
+A. Un kicker de as significa que tu carta lateral más alta es un as — el kicker más fuerte que hay, así que "pareja máxima, kicker de as" gana casi todos los showdowns con la misma pareja. Un kicker de rey es el siguiente mejor. Es exactamente por lo que A-K y A-Q ganan a un as flojo como A-9: cuando dos jugadores emparejan su as y no hacen nada mejor, el kicker más grande se lleva el bote.
 
 **Q. ¿Qué significa "jugar la mesa"?**
 

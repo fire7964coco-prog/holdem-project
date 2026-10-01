@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with up to four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -365,7 +365,7 @@ A. The first live player to the left of the button — at a full table that is t
 
 **Q. Who shows their cards first at showdown?**
 
-A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can usually muck instead of showing. Two tournament exceptions: when someone is all-in, every hand gets tabled (TDA 2024 Rule 16); and a river bettor who was called must show if the caller asks to see the hand (TDA 2024 Rule 18-B).
+A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can usually muck instead of showing. Two tournament exceptions: when someone is all-in, every hand gets tabled (TDA 2024 Rule 16); and a river bettor who was called must show if the caller — still holding or having tabled their own cards — asks to see the hand (TDA 2024 Rule 18-B).
 
 **Q. What's the difference between preflop and the flop?**
 

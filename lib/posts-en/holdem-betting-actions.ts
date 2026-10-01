@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the last full bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -206,7 +206,7 @@ A. Yes — if someone bets after your check, you may raise when the action retur
 
 **Q. Can you raise your own bet?**
 
-A. No. If you bet and opponents only call, you cannot add more — the betting round ends. You can only raise again if another player puts in a full raise over you first — that reopens the action; an all-in for less than a full raise does not.
+A. No. If you bet and opponents only call, you cannot add more — the betting round ends. You can raise again only if the action comes back to you facing at least a full raise over your bet — whether one player made it or several short all-ins add up to it; a single all-in for less than a full raise does not reopen the action.
 
 **Q. How many times can you raise in Texas Hold'em?**
 
