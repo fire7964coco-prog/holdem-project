@@ -1725,7 +1725,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
-  <!-- 블로그 포스트 (73편) -->
+  <!-- 블로그 포스트 (74편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/3bet-pot-bet-sizing</loc>
@@ -1839,8 +1839,18 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/blog/apt-championship-taipei-2026-guide</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-championship-taipei-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/apt-championship-taipei-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/apt-championship-taipei-2026-guide" />
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/blog/apt-incheon-2026-guide</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-incheon-2026-guide" />
@@ -1857,7 +1867,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/apt-jeju-2026-fall-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -3746,6 +3756,9 @@
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/apt-championship-taipei-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/apt-championship-taipei-2026-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/ja/blog/apt-championship-taipei-2026-guide" />
   </url>
 
   <url>

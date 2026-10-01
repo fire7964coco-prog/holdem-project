@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,"Segoe UI",sans-serif;
+  color:#F2EEE3;
+}
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { font-size:36px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:15px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+.foot { position:absolute; bottom:60px; left:70px; width:1060px; border-radius:14px; padding:14px 24px; background:rgba(255,255,255,.05); text-align:center; font-size:16px; font-weight:700; }
+.foot b { color:#C9A227; font-weight:900; }
+.cols { position:absolute; top:140px; left:70px; width:1060px; display:flex; gap:20px; }
+.c { flex:1; border-radius:18px; padding:18px 20px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); }
+.c .nm { color:#C9A227; font-size:20px; font-weight:900; }
+.c .vn { font-size:13px; font-weight:800; opacity:.7; margin-top:4px; }
+.it { margin-top:10px; border-radius:10px; padding:10px 12px; background:rgba(255,255,255,.05); }
+.it .k { font-size:14px; font-weight:800; }
+.it .k small { display:block; font-size:12px; font-weight:700; opacity:.6; margin-top:3px; }
+.it .v { font-size:18px; font-weight:900; margin-top:4px; }
+.it .v small { font-size:12px; font-weight:700; opacity:.65; margin-left:6px; }
+.it.g .v { color:#39FF6A; }
+.arrow { text-align:center; color:#C9A227; font-size:16px; font-weight:900; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>메인 시트로 가는 <span class="gold">3가지 길</span></h1>
+    <div class="sub">APT 챔피언십 타이베이 2026 · 메인 바이인 $10,000 (약 1,356만원)</div>
+  </div>
+  <div class="cols">
+    <div class="c">
+      <div class="nm">① 현장 위성 → 메인</div>
+      <div class="vn">메인 직전 11.19 – 11.23</div>
+      <div class="it g"><div class="k">Step 1<small>11.21 – 11.22 · 4번</small></div><div class="v">$350<small>약 47만원</small></div></div>
+      <div class="arrow">▼</div>
+      <div class="it"><div class="k">Step 2 · 직행 위성<small>11.19 · 11.22 · 11.23</small></div><div class="v">$1,700<small>약 230만원</small></div></div>
+    </div>
+    <div class="c">
+      <div class="nm">② 챔피언십 이벤트 우승</div>
+      <div class="vn">우승 부상 = 메인 시트</div>
+      <div class="it g"><div class="k">National Cup<small>11.13 – 11.15</small></div><div class="v">TWD 16,000<small>약 68만원</small></div></div>
+      <div class="it g"><div class="k">Micro Main<small>11.19 – 11.21</small></div><div class="v">TWD 16,000<small>약 68만원</small></div></div>
+    </div>
+    <div class="c">
+      <div class="nm">③ 메인 바로 등록</div>
+      <div class="vn">프리즈아웃 · 재진입 없음</div>
+      <div class="it"><div class="k">Day 1<small>11.23 (월) 11:00 · 한 번뿐</small></div><div class="v">$10,000</div></div>
+      <div class="it"><div class="k">등록 마감<small>Day 2 레벨 10 뒤 휴식 끝</small></div><div class="v">11.24 13:45</div></div>
+    </div>
+  </div>
+  <div class="foot">원화는 <b>10월 1일 매매기준율</b> 기준 어림값 · 위성에서 딴 시트는 현금화·양도 불가</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

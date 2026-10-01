@@ -1,4 +1,5 @@
 import type { Post } from "../posts";
+import { POST as aptChampionshipTaipei2026Guide } from "./apt-championship-taipei-2026-guide";
 import { POST as aplSeoul2026Guide } from "./apl-seoul-2026-guide";
 import { POST as wptSeoul2026Guide } from "./wpt-seoul-2026-guide";
 import { POST as gopIncheon2026IiGuide } from "./gop-incheon-2026-ii-guide";
@@ -54,6 +55,7 @@ import { POST as blindBattleCbet } from "./blind-battle-cbet";
 import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
 import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 export const NEW_POSTS: Post[] = [
+  aptChampionshipTaipei2026Guide,
   aplSeoul2026Guide,
   wptSeoul2026Guide,
   gopIncheon2026IiGuide,

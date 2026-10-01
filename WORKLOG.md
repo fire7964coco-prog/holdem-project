@@ -1,3 +1,13 @@
+## 2026-10-01 (6) — KO 신규 발행 `apt-championship-taipei-2026-guide` (MB-135)
+
+- 사장님 지시(«1순위 KO APT 챔피언십 타이베이 참가 가이드 작성»). 판정·집필 = Opus 5.5 본체 · 적대 렌즈 3종(사실·한국 독자/교열·SEO) = 서브 병렬.
+- 수요(DFS ko 10-01): «apt taipei» 50(대회 달 70~170) · «대만 홀덤» 50 · «대만 홀덤 대회» 40 · «apt 홀덤» 30 · «apt 대만» 20 → 묶음 월 ~200. 리드타임 D-42.
+- 사실: 시트 §1~§9 오늘 재열람 변동 0(일정표 258행 → 209 · 결번 0 · 새틀 26 · 트로피 ≤TWD 10K 92) + **§11 KO 신설**: 대만 외교부 무비자 90일(Republic of Korea · 여권 6개월) · TWAC «7 days before arrival»·무료 · 2025 메인 한국 53엔트리(7.9% · 3위) · 한국 우승 2건(Ultra Stack Gyeongbyeong Lee · Micro Main Min Ho Cho) · 김포–송산(TSA 운항표) · 원화 = 서울외국환중개 10/1(USD 1,355.70 · TWD 42.51). 🔴 Natural8 프로모가 한국 IP에서 «services are unavailable» → 온라인 예선 안내 안 함. 🪶 파서 함정: 일정표 비이벤트 행(APT Pickleball TWD 1.6K)이 #52 칸에 섞여 «최저가 1.6K» 오판 직전 — 원문 행으로 확인.
+- 글: 같은 슬러그 ja와 별개(ja 미열람 집필) · KO 이미지 2장(`-ko-hero`·`-ko-routes` · HTML→q82 · 육안 확인) · 보드 `apt-championship` 카드에 `blogLink` · 역링크 apt-jeju·apt-incheon(+ incheon «온라인 위성» → «현장 위성» 정정 2곳 · updated 10-01).
+- 렌즈 반영: 사실 오류 0 · 범위 축소(«한국 우승 두 번» → 챔피언십 이벤트) · TWAC «3일 전» 연혁 삭제(오늘 원문에 없음) · 등록 마감 «레벨 10 뒤 휴식 끝» · 🔴 «플라이트마다 14% 입상» 오역 → «14%가 파이널 데이로 진출, 상금은 파이널 데이만»(원문 «plays to 14% ITM» + «must make the Final Day in order to cash») · 시트 주는 챔피언십 이벤트 «두 개» → «네 개» · seoTitle/desc/본문에 «대만»·«APT 타이베이» · FAQ 7번째(봄 APT 타이베이와 구분).
+- 게이트: audit:hard 🔴 0(3편) · FAQ 스키마 7 · check:images ✅ · image-reuse 🔴 0 · 빌드 74 blog posts.
+- 문서: market-profile/ko 대만 C→S · Natural8 «재확인 필요» · 캘린더 KO 훅 만료 절 신설.
+
 ## 2026-10-01 (5) — hi·ar·tr·vi 히어로 누락 8사본 연결 (MB-134)
 
 - 사장님 지적: `/hi/blog/holdem-hand-rankings`에 히어로가 없다. 원인 = 이미지 부재가 아니라 **`image`·`imageAlt` 필드 누락**(hi·ar·tr·vi 번역 첫 커밋부터). 전수 스캔 결과 같은 4로케일의 `holdem-tournament-vs-cash-game`도 동일 → 8사본. 다른 글·다른 로케일은 0.

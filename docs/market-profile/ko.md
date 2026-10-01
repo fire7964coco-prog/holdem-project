@@ -23,7 +23,7 @@
 | 🇺🇸 **미국** | **ESTA** 필수 | **2년 유효** (여권 만료가 먼저면 그때까지) | **$40.27** (2026-01-01부터) — 신청 처리비 $4.00 + 승인 수수료 $36.27 | **A** | 07-28 |
 | 🇪🇺 **셍겐 (체코·프랑스·모나코·스페인·벨기에·이탈리아)** | 현재 **무비자 90일**. ★ **ETIAS는 2026년 4분기 전면 시행 예정 — 아직 시행 전** | 180일 중 90일 | ETIAS 시행 시 별도 | **A** | [주한 프랑스대사관](https://kr.diplomatie.gouv.fr/ko/aller-en-europe) · 07-28 |
 | 🇨🇾 **북키프로스** | 특수 — 아래 별도 항목 | | | **B** | 07-28 |
-| 🇹🇼 대만 | 무비자 | ⏳ 90일로 알려져 있으나 **1차 출처 미확인** | 무료 | **C** | 재확인 필요 |
+| 🇹🇼 **대만** | 무비자 + **온라인 입국카드(TWAC)** | **90일**. 여권 잔여 **6개월 이상**(입국일 기준). TWAC는 도착 **7일 전부터** 제출(2025-10 도입 당시 3일 → 확대) | 무료 | **S** | [대만 외교부 영사국](https://www.boca.gov.tw/cp-149-4486-7785a-2.html)(페이지 갱신 2026-07-17) · [twac.immigration.gov.tw](https://twac.immigration.gov.tw/) · 10-01 |
 | 🇵🇭 필리핀 | 무비자 | ⚠️ **출처 충돌** — 필리핀 관광부는 **30일**, 외교부 자료는 **21일** | 무료 | **C** | 재확인 필수 |
 | 🇲🇦 모로코 / 🇲🇽 멕시코 / 🇧🇷 브라질 / 🇲🇪 몬테네그로 / 🇨🇦 캐나다 / 🇲🇴 마카오 | ⏳ 미조사 | | | — | |
 
@@ -101,7 +101,7 @@ Merit Poker 시리즈(Onyx, EAPT, **NOIR $6M GTD**, Triton One Northern Cyprus 1
 
 | 사업자 | 가부 | 비고 |
 |---|---|---|
-| **Natural8** (GGNetwork APAC 스킨) | ✅ | APT 공식 새틀라이트 파트너. Country Exclusives는 **거주지가 아니라 국적** 기준 |
+| **Natural8** (GGNetwork APAC 스킨) | ⚠️ **재확인 필요** | APT 공식 새틀라이트 파트너. Country Exclusives는 **거주지가 아니라 국적** 기준. 🔴 2026-10-01 한국 IP로 APT 챔피언십 프로모 페이지를 열면 「We are sorry, but our services are unavailable in the country you are in.」 → KO 글에서 온라인 예선을 경로로 안내하지 않는다(`apt-championship-taipei-2026-guide`·`apt-incheon` 정정). 기존 KO 글의 Natural8 안내(apt-jeju·apt-incheon STEP 절)는 별도 판정 대상 |
 | **GGPoker** 본체 | ✅ | |
 | ★ **WPT Global** | ✅ **명시적 허용국** | ★ **WPT Seoul(10.30~11.09)** 온라인 경로. **Triton 제주 II**도 "by WPT Global" |
 | **PokerStars** | ✅ (.com 글로벌 풀, 몰타 라이선스) | APPT 코리아 주최사 |
@@ -137,7 +137,7 @@ Merit Poker 시리즈(Onyx, EAPT, **NOIR $6M GTD**, Triton One Northern Cyprus 1
 | # | 항목 | 왜 |
 |---|---|---|
 | 1 | **필리핀 무비자 21일 vs 30일** | 출처 충돌. APPT Manila·GOP Manila·Megastack에 직결 |
-| 2 | **대만 무비자 90일 1차 출처** | APT Taipei·GOP Taipei·APT 챔피언십에 직결 (연 4회) |
+| 2 | ✅ 대만 무비자 90일 1차 출처 — **2026-10-01 확보**(B-1 표) | — |
 | 3 | **B-2 통화·결제 전체** | 해외 바이인 지불 방법·외화 반출 신고·상금 반입 |
 | 4 | **B-6 검색 형태소** | 페이지 카피 설계의 근거 |
 | 5 | ETIAS 시행일 확정 | EPT 프라하(12월)와 겹침 |

@@ -101,6 +101,23 @@
 - 최저 TWD 3,300(#6·#13 National Cup 새틀) · 트로피 이벤트 최저 TWD 3,500(Women's Event·Hyper Turbo Home Games 등) · 최고 USD 50,000(#1013 Superstar).
 - 주요 챔피언십(기사·상세 대조): Mystery Bounty #1002 TWD 35,000(GTD 15M) · Ultra Stack #1003 TWD 25,000(GTD 25M) · Natural8 Cup #1007 USD 3,300(GTD USD 1M) · Trip Saver #1022 TWD 50,000(GTD 5M).
 
+## 11. 🆕 KO 독자용 (2026-10-01 · Opus 본체 · KO `apt-championship-taipei-2026-guide`)
+
+> 열람일 = **2026-10-01** 전건(Playwright innerText · 원본 scratchpad `aptc/`). §1~§3 재열람 결과 **변동 0**: 헤더 209·17 DAYS·Red Space · 일정표 258행 → 고유 번호 209(#1~#186 결번 0 + #1000~#1022) · 새틀 26 · ME 상세(USD 10K · 스택 50,000 · 75분 · 3석=2027 · Day 1 8레벨 · FT 평균 30BB 보장) · Step 1 #86 「USD 350」「worth USD 1,700 each」· Step 2 #101 「USD 1.7K」「worth USD 10,000 each」· Micro Main 「14% ITM」·우승 1석(2026) · Key Info(18세+ · 「Foreign citizens: Valid foreign passport」 · 전자담배·IQOS 반입 금지 · 「Buy-Ins and Payouts — Please inquire with registrations@apt.poker」).
+
+| 항목 | 축어 | 출처 |
+|---|---|---|
+| 🇰🇷 무비자 | 「Nationals of the following countries are eligible for the visa-exemption program, with a duration of stay of up to 90 days: … Republic of Korea …」(별표 없음) · Requirements 「A passport with remaining validity of at least six months as of the date of entry」 · 페이지 「Updated：2026-07-17」 | boca.gov.tw/cp-149-4486-7785a-2.html → market-profile/ko B-1 대만 **C → S 승격** |
+| 입국카드(TWAC) | 「Submission is Free.」「Complete and submit within 7 days before arrival.」 · 「© 2026, National Immigration Agency … Last updated on July 29, 2026.」 · 🔴 2025-09 공지의 «3일 전부터»는 **낡은 값**(7일로 확대) | twac.immigration.gov.tw |
+| 2025 메인 국가별 | 「South Korea was the third best represented region, with 53 entries making up just under eight percent (7.9%)」 (1위 대만 90 · 2위 일본 66 · 671 entries · 47 countries and regions) | news/nishant-sharma-makes-history-with-twd-37-m-usd-1-1-m-apt-championship-main-event-win (2025-11-28) |
+| 2025 한국 우승 ① | 「South Korea's Gyeongbyeong Lee emerged victorious to claim TWD 6,917,200 (~USD 223,135) and an APT Championship Main Event seat」 — Ultra Stack Championship 2025 · 1,867 entries(1,042 unique) | news/apt-championship-2026-the-preview |
+| 2025 한국 우승 ② | 「South Korea's Min Ho Cho emerged victorious to capture the title and TWD 1,149,680 (~USD 36,850)」 — Micro Main 2025 · 750 entries(465 unique) | 같은 곳 |
+| 한글 이름 | 1차 출처 없음 → **로마자 그대로** | — |
+| 김포–송산 | 송산공항 공식 «今日航班(國際)» 10/1: 「CI260 金浦GMP」「ZE888 金浦GMP」(출발편) → 정기편 존재만 씀(편수·운임·소요시간 X) | tsa.gov.tw/flights/international/today |
+| 인천–타오위안 | 타오위안 공식 출발편 페이지가 JS 렌더 실패 → **노선 언급만, 수치 X** | — |
+| 원화 기준점 | 서울외국환중개 「2026년 10월 01일」 매매기준율 USD **1,355.70** · TWD **42.51** → USD 10,000 ≈ 1,356만 원 · USD 350 ≈ 47만 원 · USD 1,700 ≈ 230만 원 · TWD 16,000 ≈ 68만 원 · TWD 35,000 ≈ 149만 원 · TWD 3,500 ≈ 15만 원(전부 «약» · 기준일 명시) | smbs.biz/ExRate/TodayExRate.jsp |
+| Natural8 | 10/1 한국 IP 열람 시 페이지 상단 「We are sorry, but our services are unavailable in the country you are in.」 → 🔴 **KO 글에서 온라인 예선을 경로로 안내하지 않는다**(market-profile/ko B-5 «✅»와 충돌 · 그 표 재확인 필요). 「Journey to APT Championship 2026」 일정: 10/4 $1,100(5×$12,000 패키지) · 10/11 $1,100(5×$10,000 티켓) — 글에 안 씀 | natural8.com/en/poker/tournaments/journey-to-apt-championship-2026 |
+
 ## 10. 쓰지 않는 것
 
 - 항공편 편수·운임·소요시간 · 호텔 일반 요금(공식은 HR 얼리버드 패키지만 · 기한 10/12) · 한자 선수명 · APT 타이베이 2026(봄) 일본인 성적(1차 출처 미열람 — light-three는 2차) · Natural8 가입 안내 · 대만 법 제도 해설.

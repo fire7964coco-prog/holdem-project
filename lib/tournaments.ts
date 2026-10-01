@@ -830,6 +830,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     //    07-29의 TWD 165M은 그날의 환산액이었다 — **USD 개런티가 정본이고 TWD 환산은 변한다.** TWD 숫자를 박으면 또 낡는다.
     note: "210개 트로피 이벤트 · 메인 #14 TWD 311.9K / USD 5,000,000 GTD(약 TWD 155M · 페이지 환산) (11/23~) · 11/12는 업계 관계자 전용, 일반 참가자는 11/13부터",
     sourceUrl: "https://www.theasianpokertour.com/series/apt-championship-taipei-2026",
+    blogLink: "/blog/apt-championship-taipei-2026-guide", // 2026-10-01 KO 가이드 신설(ja는 같은 슬러그의 별개 글)
     blogLinkByLocale: { ja: "/blog/apt-championship-taipei-2026-guide" },
     sourceTier: "A",
     verifiedAt: "2026-09-03",

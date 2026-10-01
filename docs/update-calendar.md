@@ -483,6 +483,14 @@
 - 공식 일정표 재확인(이벤트 수 209 · 번호) — 발표마다 바뀌었다(사실 시트 머리 🔴)
 - 사실 정본 = `docs/tournament-factsheets/2026-11-apt-championship-taipei.md`
 
+### 🆕 ★ 11/13 · 11/24 13:45 · 11/29 — KO `apt-championship-taipei-2026-guide` 훅이 죽는 날 (등재 2026-10-01)
+- KO는 ja와 **같은 슬러그의 별개 글**(파일 `lib/posts/` · 이미지 `-ko-hero`·`-ko-routes`). ja 회차와 같이 처리하되 문면은 따로 본다
+- **11/13 개막** → 리드·바로 답의 «열립니다» 시제는 그대로 둬도 거짓은 아님(날짜 명시). 개막 뒤 일정 변경 공지만 확인
+- **11/21~11/23** 현장 위성 · **11/24 13:45** 메인 등록 마감 → 날짜가 박혀 있어 거짓은 안 된다. 종료 회차에 묶는다
+- **11/29 종료** → 결과 아카이브 전환(리드·바로 답·핵심 요약 stripe·tldr **4곳 동시** + 히어로 카드 재렌더 `scripts/gen-apt-championship-taipei-2026-ko-hero.html`) · 메인 국가별 엔트리(한국 수)·한국인 입상은 APT 공식 결과 기사로만 · `apt-incheon`·`apt-jeju`의 «타이베이 가는 법» 링크 문장도 과거형
+- 원화 어림(10/1 매매기준율 USD 1,355.70)은 본문에 기준일이 박혀 있어 거짓은 안 된다 — 결과 전환 때 같이 손볼지 판단
+- 사실 정본 = `docs/tournament-factsheets/2026-11-apt-championship-taipei.md` §11
+
 ### 🆕 10/11 (일) · 10/12 (월) — ja `japan-poker-tournaments-guide` «다음 대회» 만료 2건 (등재 2026-09-27)
 - **10/11 GO TOKUSHIMA 종료** → NIPPON SERIES 절 note 「GO NAGASAKIの次は GO TOKUSHIMA…その次はまだ」가 과거가 된다 → 다음 대회 공지 확인(`nippon-series.jp`) · 개최 실적 표에 편입
 - **10/12 JOPT 東京#03 종료** → FAQ 「次の東京開催は2026年10月8日〜12日」 · 日程 표 · «공개 레그 = 東京#03·大阪#02» 문장이 낡는다 → 다음 東京 = 2027 東京#01(12/24 · 参加権利 첫 레그)로
