@@ -1,3 +1,10 @@
+## 2026-10-01 (4) — 검수장 MA-245(MA-229 새 대회 글 1회차 부분 결과) 판정·반영 — ja 오사카 · zh-hant TMTC (MB-133)
+
+- 실행 12:4x~ · 판정·편집 = Opus 5.5 본체 단독(서브 없음). 원문은 본체가 직접 다시 열었다(Playwright innerText · PDF는 PyMuPDF 렌더 — Poppler는 CJK 글꼴 누락으로 판독 불가).
+- **채택 4/4**: ① `jopt-osaka-02-2026-guide` Online Day 1 = 10/17·18·24·25 각 19:00 · «ファイナルチケット3枚＋SILVER以上の会員プラン» · 통과 → 10/31 Day 2(JOPT Games 10월 공지 9/26 게시) — 절·표·FAQ·まとめ·출처 + 도쿄 #03 비교행에도 SILVER ② 같은 글 «サイドは当日そのまま» → «現金の参加費で入る枠» 범위 축소 + Bullet(1 Ticket + ¥10,000)·Gladiator(Qualifier) 예외 ③ `tmt-championship-2026-guide` Mini Main NT$12,000 → **15,000**(웹·PDF p2 일치) — 🔴 본문 일정 인포그래픽에도 박혀 있어 `gen-tmt-championship-2026-schedule.html` 수정 → render-gen-final 재렌더·육안 확인 ④ 웹↔PDF 충돌(D조 10/24 vs 10/23 · Day2/Final 40 vs 50/60) = 날짜 안 고르고 병기 + note. 🆕 PDF p3는 10/23·10/24 둘 다 «D Turbo»(F 없음)라 두 판 모두 결함 — 검수장 보고에 없던 것.
+- 🔴 교훈: 캘린더의 «오사카 Online Day 1» 확인(오늘 11:56)은 WP 검색 «Online Day 1»만 봐서 `/games/` 소식(9/26 게시)을 놓쳤다 → 캘린더 확인 경로 정정. TMTC 시트의 Mini Main 12,000은 S2(08-28 예고) 값 — PDF(09-22)는 발행 전부터 15,000이었다(옮겨 적기 출처 확인 불가).
+- 게이트: audit:hard ja 60/60 · zh-hant 59/59 🔴 0 · check:images 🔴 0 · check:image-reuse 🔴 0 · 빌드 성공(818). 나머지 3편 무변경.
+
 ## 2026-10-01 (3) — 다음 세션 회차: WPT 기존 결함 4 + O-5 + M-5 판정 (EN-먼저 → 핵심 8 + ms · MB-131 착수 · MB-132 배포)
 
 - 실행 12:28~ (한도 13:58). 판정·EN = Opus 5.5 본체, 전파 = Opus 서브 4레인(de·es·pt / id·ms·ar / ja·zh·zh-hant / probability 8로케일).

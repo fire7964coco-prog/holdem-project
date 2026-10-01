@@ -84,4 +84,13 @@
 | 룰 페이지 | 「Update at 2026.09.09」 · 「各トーナメント（各フライト）に計4回までエントリー（リエントリー3-cap制）」 · 새틀 제외 | — |
 | 회장 이력 | events 페이지: 2024 #01·#02 · 2025 #01·#02 · 2026 #01·#02 전부 Dojima River Forum · 2023 #01 = Namba SKY’O | «2024年以降はすべて堂島» |
 
-**발행 뒤 갱신 트리거**(캘린더 등재): Players Guide 공개(受付締切·프라이즈 총액) · Online Day 1 공지 · 10/31 11:00 마지막 Day 1 · 11/03 종료 → 결과 아카이브.
+**발행 뒤 갱신 트리거**(캘린더 등재): Players Guide 공개(受付締切·프라이즈 총액) · ~~Online Day 1 공지~~(10-01 반영 ↓) · 10/31 11:00 마지막 Day 1 · 11/03 종료 → 결과 아카이브.
+
+## §8. 10-01 갱신 (검수장 MA-245 ①② · 본체가 원문 직접 대조)
+
+| 항목 | 값 | 축어 · 출처 (10-01 Playwright 추출) |
+|---|---|---|
+| Online Day 1 (오사카) | 10/17·18·24·25 각 19:00 JST · JOPT Games FINAL STAGE · 통과 → 10/31 Main Day 2 | JOPT Games 소식 「【2026年10月】JOPT Gamesから挑戦できる国内・海外トーナメント8大会」(2026/09/26) https://japanopenpoker.com/games/jopt-games-october-2026-schedule/ — 「10.17 Sat. / 10.18 Sun.」「10.24 Sat. / 10.25 Sun.」「各日 19:00〜」「Online Day 1の通過者はMain Event Day 2へ進出」 |
+| 참가 조건 (오사카·도쿄 #03 동일) | ファイナルチケット3枚 ＋ SILVER以上の会員プラン | 같은 페이지 「ENTRY / 参加条件」 — 🔴 §7의 도쿄 «Final Ticket ×3»에는 SILVER가 빠져 있었다(글 표도 같이 정정) |
+| 현금만으로 못 들어가는 사이드 | NLH Bullet 「1 Ticket + ¥10,000 / 50,000 Chips」 · NLH Gladiator 「Qualifier / 30,000 Chips」 | `/osaka/` 표 · 62/31 계수(현금 사이드)는 그대로 유효 — 글의 tldr·先に結論·FAQ «サイドは当日そのまま» 범위를 «現金の参加費で入る枠»으로 좁힘 |
+| 🔴 확인 경로 교훈 | WP 게시물 검색 「Online Day 1」은 `/games/` 소식을 잡지 못한다 → 10-01 11:56 확인이 «미공개»로 오판 | JOPT Games 공개는 `japanopenpoker.com/games/news/` |

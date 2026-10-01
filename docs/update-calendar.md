@@ -458,17 +458,17 @@
   - 🪶 10-01 판정: **오늘은 안 바꾼다** — M2 축어 «至 10 月 1 日止»라 10/1 당일은 아직 진행 중이다(과거형으로 쓰면 하루 동안 거짓). 글은 이미 «10/1 就結束，看到這篇時可能已經來不及»로 날짜를 박아 둬 거짓이 아니다 → **10/2 이후 첫 회차에** 표 행·快速解答·그 문장 3곳을 과거형으로(10/4 港撲盃 종료분과 묶어도 된다)
 - **10/16** 얼리버드 패키지 창구(M1 «Registration is open until October 16 at 23:59») → 禮包 절 과거형
 - **10/24** 마지막 Day 1 · 현장 위성 끝 → 참가 안내 → 관전·결과 대기
-- **10/26 이후** 결과 아카이브 전환 — 리드·快速解答·FAQ·tldr **4곳 동시**(플레이북 §00-A 6) · 우승자·엔트리는 CTP Results 탭 원문으로 · 사실 정본 = `docs/tournament-factsheets/2026-10-tmtc.md`
+- **10/26 이후** 결과 아카이브 전환 — 리드·快速解答·FAQ·tldr **4곳 동시**(플레이북 §00-A 6) · 우승자·엔트리는 CTP Results 탭 원문으로 · 사실 정본 = `docs/tournament-factsheets/2026-10-tmtc.md` · 🆕 같은 회차에 **Turbo Flight D 날짜(웹 10/24 vs PDF 10/23) · Day2/Final 레벨(40 vs 50/60)** 병기 note를 Results 탭 실제 값으로 정리(MA-245 ④ · 시트 §2)
 
 ### ✅ 10/1 (목) · 10/2~10/6 — ja 대회 글 2편 D-28 시한 → **2026-09-28 두 편 발행** (`jopt-osaka-02-2026-guide` · `korea-poker-trip-gop-wpt-seoul-2026`)
 - 사실 시트 §7(09-28 재확인) = `docs/tournament-factsheets/2026-10-jopt-osaka-02.md` · `2026-11-ja-korea-trip-gop-wpt.md` · 남은 후보 C~F = `2026-q4-ja-candidates.md`
 
 ### 🆕 ★ 10/초~10/중 — ja 신규 2편 «미발표 → 공개» 추적 (등재 2026-09-28)
 - **오사카 #02 Players Guide 공개** → 글의 受付締切(note·FAQ·이미지 `jopt-osaka-02-2026-main-flights` 하단 문구) · プライズ総額 절 갱신. 확인 = `japanopenpoker.com/osaka/` Players Guide 링크 `href`(09-28엔 null) + `events.japanopenpoker.com/2026-osaka-02`
-- **오사카 #02 Online Day 1 공지** → 「オンライン Day 1はあるのか」 절 · FAQ · まとめ. 확인 = 공식 WP 게시물 검색 「Online Day 1」
+- ✅ **오사카 #02 Online Day 1 = 반영 완료(10-01 · MA-245 ①)** — 공지는 9/26에 **JOPT Games 소식**(`japanopenpoker.com/games/jopt-games-october-2026-schedule/`)으로 나와 있었다: 10/17·18·24·25 각 19:00 · ファイナルチケット3枚＋SILVER以上 · 통과 → 10/31 Day 2. 🔴 **확인 경로 정정**: WP 게시물 검색 「Online Day 1」은 `/games/` 소식을 못 잡는다(10-01 11:56 확인이 이걸로 «미공개»라 오판). JOPT Games 관련 공개는 `japanopenpoker.com/games/news/`를 본다
 - **WPT 서울 바우처 이용 방법 공지**(협회 09-14 «近日中») → 「WPT TOKYOのチケットはどうなる?」 절 note. 확인 = prtimes company_id 133461 · wptseoul.com/ja
 - 새틀 캘린더 스냅샷(글의 «大阪 #02向け 16件・3店舗» 표 · 東京 #03向け 35件 = 09-28 값)은 아래 «10/중 재측정» 때 같이 본다 — API `categories`로 대회별 분리해서 셀 것
-- 🪶 **10-01 11:56 KST 확인 = 셋 다 미공개 그대로(글 수정 0)**: `/osaka/` Players Guide 링크 4개(JP·KR·EN·CN) `href` 전부 null · 「Online Day 1」 검색 결과는 Sapporo(08-30)·Tokyo #03(08-21) 게시물뿐(오사카 없음) · prtimes 133461 최신 = 09-14 WPT Seoul 보도자료(바우처 공지 없음 · wptseoul.com/ja는 본문 추출에서 해당어 0 — 렌더 여부 미확인이라 근거로 안 쓴다). 다음 확인 = 10/중 재측정 때.
+- 🪶 **10-01 11:56 KST 확인 = Players Guide·바우처 공지는 미공개 그대로**(Online Day 1은 위 ✅ — 이 확인의 «오사카 없음»은 검색 경로 탓 오판): `/osaka/` Players Guide 링크 4개(JP·KR·EN·CN) `href` 전부 null · prtimes 133461 최신 = 09-14 WPT Seoul 보도자료(바우처 공지 없음 · wptseoul.com/ja는 본문 추출에서 해당어 0 — 렌더 여부 미확인이라 근거로 안 쓴다). 다음 확인 = 10/중 재측정 때.
 
 ### 🆕 ★ 10/31 (토) 11:00 · 11/5~11/7 — ja 신규 2편 «마지막 입구» (등재 2026-09-28)
 - **10/31 11:00** 오사카 #02 Day 1D Turbo = 메인 마지막 Day 1(사이드는 11/3까지 유효)
