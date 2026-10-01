@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Menjelang river, anda membentuk one pair dalam 43.8% tangan, two pair 23.5%, flush 3.0% dan full house 2.6%. Royal flush pula muncul hanya sekali dalam kira-kira 31,000 tangan — itu asas 7 kad Texas Hold'em, bukan 5 kad.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 minit",
   emoji: "🎲",
@@ -274,7 +274,7 @@ A. One pair, diikuti two pair. Kerana setiap pemain berkongsi lima kad komuniti,
 
 **Q. Berapa kerap tangan terbaik menang dalam poker?**
 
-A. Kurang kerap daripada yang anda sangka sebelum river. Malah pocket aces — starting hand terbaik — hanya menang lebih kurang 85% daripada masa secara heads-up, dan jauh kurang menentang meja penuh. Menjelang river, lima kad terbaik menang secara takrifan; kejutan berlaku lebih awal, apabila made hand dipintas oleh draw yang masih hidup.
+A. Kurang kerap daripada yang anda sangka sebelum river. Malah pocket aces — starting hand terbaik — hanya menang lebih kurang 85% daripada masa secara heads-up menentang tangan rawak, dan jauh kurang menentang meja penuh. Menjelang river, lima kad terbaik menang secara takrifan; kejutan berlaku lebih awal, apabila made hand dipintas oleh draw yang masih hidup.
 
 **Q. Berapa kerap anda hit flop dalam poker?**
 

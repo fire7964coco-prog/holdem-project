@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -63,7 +63,7 @@ Aturan praktisnya: **mulai dari pot odds.** Jika equity Anda sudah mengalahkan h
 
 ## Cara Menghitung Implied Odds
 
-**Untuk menghitung implied odds, cari tahu berapa banyak ekstra yang Anda butuhkan saat jadi, dengan: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda).** Jika Anda realistis bisa menang sebanyak itu di street berikutnya, call-nya menguntungkan.
+**Untuk menghitung implied odds, cari tahu berapa banyak ekstra yang Anda butuhkan saat jadi, dengan: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda).** Jika Anda realistis bisa menang sebanyak itu di street berikutnya — dan tangan Anda masih yang terbaik saat sampai di sana — call-nya menguntungkan.
 
 Ditulis rapi, dengan ==g:x== sebagai uang ekstra yang harus Anda menangkan saat jadi:
 
@@ -222,7 +222,7 @@ A. Implied odds semuanya tentang uang yang tersisa untuk dimenangkan, dan stack 
 
 ## 3 Hal yang Harus Diingat
 
-1. **Rumusnya:** ekstra dibutuhkan = (call ÷ hit%) − (pot saat ini + call). Jika Anda realistis bisa menang lebih dari itu nanti, call-nya bagus bahkan saat pot odds bilang fold.
+1. **Rumusnya:** ekstra dibutuhkan = (call ÷ hit%) − (pot saat ini + call). Jika Anda realistis bisa menang lebih dari itu nanti dengan tangan yang masih terbaik, call-nya bagus bahkan saat pot odds bilang fold.
 2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol di heads-up, dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
 3. **Cermin gelapnya:** reverse implied odds menghukum draw non-nut. Sebuah draw ke nuts bernilai jauh lebih besar daripada draw yang sama ke terbaik kedua.
 

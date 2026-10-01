@@ -96,7 +96,7 @@ O festival de 2026 voltou pro ==**The Star Sydney**== e estreou um **formato de 
 | Championship 2 | ==**WPT Australia AUD $5.000**== | AUD $5.500 |
 | Prize Pool do Championship | ==g:AUD $2.424.200== (527 entradas) | AUD $3.000.000 (600 entradas) |
 | Campeão do Championship | ==**Alexander A. Thompson**== (AUD $450.900) | Alan Pham (AUD $558.211) |
-| Eventos | ==**36 eventos**== (AUD $7.601.710 em prize pools publicados) | ~20 eventos |
+| Eventos | ==**36 eventos**== (AUD $7.601.710 em prize pools publicados) | 32 eventos numerados + satellites |
 | Livestream | Ambas as finais (anunciado antes do festival) | Só o main event |
 | Assento World Championship | ==g:Assento de $15.000 (avaliação do organizador), descontado do prize pool== | +US $10.400 |
 
@@ -331,7 +331,7 @@ A maioria dos visitantes internacionais precisa de um **ETA (Electronic Travel A
 
 </div>
 
-⚠️ **Brasileiro:** você não se enquadra no ETA nem no eVisitor — é a Visitor Visa (subclass 600), AUD $200, com prazo de dias a semanas. Comece cedo.
+⚠️ **Brasileiro:** você não se enquadra no ETA nem no eVisitor — é a Visitor Visa (subclass 600), a partir de AUD $250, com prazo de dias a semanas. Comece cedo.
 
 ==r:Solicite antes de comprar as passagens.== O eVisitor/ETA costuma sair na hora pra quem se enquadra; a Visitor Visa (subclass 600) leva de dias a semanas — solicite com folga. Confira os requisitos do seu passaporte específico em [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au).
 

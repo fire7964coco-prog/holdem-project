@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -130,7 +130,7 @@ Even a massive **2×-pot overbet only asks for 40% equity**. You almost never ne
 
 </div>
 
-Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: with two cards to come, a flush draw (35%) is a clear call — but on a *single* card from the flop (9 ÷ 47), that same draw is only 19.1%, which **doesn't** meet the price on its own. That gap is exactly where implied odds come in.
+Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: if the bet puts you all-in so you see both cards, a flush draw (35%) is a clear call — but on a *single* card from the flop (9 ÷ 47), that same draw is only 19.1%, which **doesn't** meet the price on its own. That gap is exactly where implied odds come in.
 
 ---
 

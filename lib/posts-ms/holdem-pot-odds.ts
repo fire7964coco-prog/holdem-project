@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk kira pot odds, bahagikan jumlah yang anda perlu call dengan jumlah pot selepas call anda. Call $50 ke dalam pot $150 = 50 ÷ 200 = 25% — jadi anda perlu sekurang-kurangnya 25% equity supaya call itu menguntungkan.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 minit",
   emoji: "🧮",
@@ -131,7 +131,7 @@ Malah **overbet 2× pot yang besar hanya meminta 40% equity**. Anda hampir tidak
 
 </div>
 
-Bacalah bersama jadual saiz bet di atas. Menghadapi ==bet separuh pot (perlu 25%)==: dengan dua kad lagi, flush draw (35%) ialah call yang jelas — tetapi dengan *satu* kad sahaja dari flop (9 ÷ 47), draw yang sama hanya 19.1%, dan itu **tidak** memenuhi harga dengan sendirinya. Jurang itulah tempat implied odds masuk.
+Bacalah bersama jadual saiz bet di atas. Menghadapi ==bet separuh pot (perlu 25%)==: jika bet itu membuatkan anda all-in sehingga anda melihat kedua-dua kad, flush draw (35%) ialah call yang jelas — tetapi dengan *satu* kad sahaja dari flop (9 ÷ 47), draw yang sama hanya 19.1%, dan itu **tidak** memenuhi harga dengan sendirinya. Jurang itulah tempat implied odds masuk.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -210,7 +210,7 @@ Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cut
 
 | O erro | Por que te custa | A correção |
 |:---|:---|:---|
-| **3-bet pequeno demais OOP** | Oferece um ótimo preço para pagar — eles realizam equity in position contra você | Use o 4x+ completo out of position |
+| **3-bet pequeno demais OOP** | Oferece um ótimo preço para pagar — eles realizam equity in position contra você | Com stacks de profundidade normal, use o 4x+ completo out of position |
 | **Só dar 3-bet por valor** | Você fica de cara aberta; bons jogadores foldam tudo menos coolers | Adicione blefes de bloqueio suited (A5s) |
 | **Nunca blefar de 3-bet** | Deixa dinheiro na mesa vs steals abertos; seus flats ficam fracos demais | Balanceie valor com alguns 3-bets light |
 | **3-bet merged vs um nit** | Seu "valor" está dominado pelo range só-premium dele | Vá polarizado ou simplesmente folde vs um nit de verdade |

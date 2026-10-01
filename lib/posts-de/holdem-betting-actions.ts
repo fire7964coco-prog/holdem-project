@@ -112,7 +112,7 @@ Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die A
 
 ## Was ist ein Min-Raise? Bet- und Raise-Regeln im Texas Hold'em
 
-![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von €6 verlangt einen Raise auf mindestens €12, und ein Preflop-Raise auf €6 verlangt einen Min-Re-Raise auf €10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – jeder Raise muss mindestens die Größe der letzten Bet oder des letzten Raises obendrauf legen")
+![Infografik zur Min-Raise-Regel beim Poker: Eine Bet von €6 verlangt einen Raise auf mindestens €12, und ein Preflop-Raise auf €6 verlangt einen Min-Re-Raise auf €10](/images/holdem-betting-actions-min-raise.webp "Die Min-Raise-Regel – ein Raise muss mindestens die Größe der letzten vollen Bet oder des letzten vollen Raises obendrauf legen; kleiner darf nur ein All-in sein")
 
 Im No-Limit Hold'em (dem Format, das du fast immer spielen wirst):
 

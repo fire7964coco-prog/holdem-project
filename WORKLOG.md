@@ -1,3 +1,11 @@
+## 2026-10-01 (3) — 다음 세션 회차: WPT 기존 결함 4 + O-5 + M-5 판정 (EN-먼저 → 핵심 8 + ms · MB-131 착수 · MB-132 배포)
+
+- 실행 12:28~ (한도 13:58). 판정·EN = Opus 5.5 본체, 전파 = Opus 서브 4레인(de·es·pt / id·ms·ar / ja·zh·zh-hant / probability 8로케일).
+- **묶음 1 WPT**: ① pt 30초 표 2025 칸 «~20 eventos» → «32 eventos numerados + satellites»(.wpt-check/2025.txt에서 Event 1~32 다시 셈 · 빠진 번호 0) ② pt 비자 절 AUD $200 → «a partir de AUD $250»(immi.homeaffairs.gov.au visitor-600 원문 «From AUD250.00» · 10-01 헤드리스 차단이라 headed Chrome으로 열람) ③ id 송금 박스의 EN에 없는 낡은 문장(«diterbitkan atas nama Anda») 삭제 ④ holdem-tournament «WPT Australia 2026 runs» 과거형 = en·de·es·pt·ja(zh·zh-hant·id·ms는 시제 표지 없음 → masterUpdated만).
+- **묶음 2·3 판정** = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8-2. 채택: betting-actions 113 캡션 · 3bet 212 표 칸 · chart 65 «almost always» · implied 직답·요약 «best hand» · pot-odds 133 «all-in so you see both cards» · probability 274 «against a random hand» · zh-hant beginners 올인 괄호 · ms beginners EN 문형. 기각: limping 괄호 · strategy 82 · probability 176 · drawing-odds 캡션 · game-order 54. 🪶 보류: flush-vs-straight «rarer always wins»(7장 빈도 반례 · 문장 재구성 필요). 미판정 이월 = §8-2 마지막 행.
+- 사본 스윕 추가분: ms betting-actions 6자리·3bet 2·chart FAQ·implied FAQ(EN에 이미 있던 한정이 ms에 안 와 있던 옛 드리프트) · zh·zh-hant chart 박스 «几乎/幾乎» · ja·zh pot-odds 박스 · zh probability 2번째 사본.
+- 게이트: audit:hard 10로케일 × 7슬러그 + tournament·wpt 6로케일 🔴 0 · check:drift 핵심 0 · 빌드 성공.
+
 ## 2026-10-01 (2) — `wpt-australia-2026-guide` 결과 아카이브 전환 (8로케일 · EN-먼저 · MB-130) + 캘린더 10월 첫 절 확인
 
 - 같은 실행(11:35~ · 한도 13:05). EN = Fable, 7로케일 = Opus 서브 4(ja / zh·zh-hant / es·pt / de·id). 사실 정본 = `docs/tournament-factsheets/2026-09-wpt-australia.md` §4(10-01 11:41 KST 재수집 36/36).

@@ -272,3 +272,23 @@ EN이 한 자리만 한정하고 **같은 EN 글의 다른 자리는 단정으�
 | implied-odds | 본문(ja 73·84 대응) | 추가 금액을 따면 콜 이익(«완성=최강» 조건 없음) | FAQ 조건부 |
 
 우선순위 제안(스윕 3개 레인 공통): **kicker 194 · showdown 170 · betting-actions 113 캡션**(같은 글 안 자기모순·충돌) → 나머지는 §1-D 루프 경계를 보며 판단.
+
+### 8-2. 10-01 판정 (§8-1 + `en-first-queue` §2-O O-5 · 잣대 = §0 · 판정 Opus 5.5 본체 · 전파 Opus 서브 4레인)
+
+| 자리 | 판정 | 처리 |
+|---|---|---|
+| kicker 194 · showdown 170 | 10-01 MB-129에서 이미 닫힘 | — |
+| betting-actions 113 캡션 «every raise must add at least the last bet or raise» | **채택 W** — 본문 «last full»과 자기모순 · 숏 올인 반례 | EN «a raise must add at least the size of the last full bet or raise; only an all-in can be smaller» → 핵심 8 + ms |
+| 3bet 212 표 칸 «full 4x+ OOP» | **채택 S** — 같은 글 127행 «At normal stack depths» 한정을 표 칸에 | «At normal stack depths, use the full 4x+ out of position» |
+| starting-hands-chart 65 «hands 1–5 always raise» | **채택 W** — 같은 글 48행·PDF «almost always»와 맞춤 | «almost always raise» |
+| implied-odds 65 직답 · 224 요약 | **채택 S/D** — FAQ 186의 «best hand» 조건을 직답·요약에 | 직답 «— and your hand is still best when it gets there —» · 요약 «with what is still the best hand». 76행(같은 절 공식 한 줄)은 직답이 덮는다 |
+| pot-odds 133 «flush draw (35%) clear call» | **채택 D** — 반팟 베팅 한 번에 두 장을 보는 건 올인일 때뿐 | «if the bet puts you all-in so you see both cards» |
+| probability 274 FAQ «AA ≈85% heads-up» | **채택 S** — 랜덤 핸드 상대 수치 | «heads-up against a random hand» |
+| limping FAQ 괄호 «Facing a raise … 3-bet or fold» | 기각 — 이미 «by default» | — |
+| strategy 82 «Always raise: AA–TT, AK» | 기각 X2 — «starter rule of thumb» 라벨 목록 | — |
+| probability 176 steps «both cards to come» | 기각 — 바로 윗칸 «assumes you see both cards» | — |
+| drawing-odds 128 캡션 «worth double» | 기각 — 8 vs 4 아웃, 실제 1.9~2배(근사) · 본문 «half as likely» | — |
+| game-order 54 «블라인드 없으면 공짜 체크» | 기각 X1 | — |
+| flush-vs-straight 56·72 «rarer always wins» | 🪶 **보류(판정 필요)** — 5장 빈도 기준으로는 맞지만 7장 빈도에선 하이카드(17.4%)가 원페어(43.8%)보다 드문데 진다. 고치려면 «5장 빈도 기준» 문장 재구성이라 단독 회차로 | 다음 회차 |
+| zh-hant beginners FAQ «至少加到 50» · ms beginners «satu pemenang» | **채택** (로케일 고유) | 올인 예외 괄호 · EN 문형으로 교체 |
+| 미판정 이월 | betting-actions 146·156·188 · position-play · beginners · chart 81·103 · 3bet 42·128 · split/all-in · positions · pot-odds 59 | §1-D 루프 경계 — 대부분 X1형 예상. 사장님 지시 시 |

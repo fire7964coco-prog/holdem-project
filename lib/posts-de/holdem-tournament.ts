@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -82,7 +82,7 @@ Jedes Turnier veröffentlicht seine Struktur in einem **Structure Sheet**: Start
 ## Wie funktioniert die Blind-Struktur im Pokerturnier?
 
 > **Kurze Antwort**
-> Die Blinds stehen nicht fest, sondern werden auf einer Uhr angehoben – live meist alle 20–40 Minuten (bei Flaggschiff-Main-Events 60 Minuten oder mehr – das Championship Event der WPT Australia 2026 läuft auf 60-Minuten-Leveln, an den späteren Tagen auf 90), online deutlich kürzer. Deshalb misst du deinen Stack nie in Chips, sondern in Big Blinds: Dieselben 10.000 Chips sind auf Level 1 ein bequemer Stack und acht Level später ein Notfall. Diese Uhr erzwingt am Ende jede wichtige Entscheidung.
+> Die Blinds stehen nicht fest, sondern werden auf einer Uhr angehoben – live meist alle 20–40 Minuten (bei Flaggschiff-Main-Events 60 Minuten oder mehr – das Championship Event der WPT Australia 2026 lief auf 60-Minuten-Leveln, an den späteren Tagen auf 90), online deutlich kürzer. Deshalb misst du deinen Stack nie in Chips, sondern in Big Blinds: Dieselben 10.000 Chips sind auf Level 1 ein bequemer Stack und acht Level später ein Notfall. Diese Uhr erzwingt am Ende jede wichtige Entscheidung.
 
 Genau das lassen die meisten Anfänger-Guides aus, und es ist das wichtigste mechanische Konzept in Turnieren.
 

@@ -427,7 +427,7 @@ A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum 
 
 **Q. Apakah versi pantas peraturan Texas Hold'em?**
 
-A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Jumlah: empat pusingan pertaruhan, lima kad komuniti, satu pemenang — atau pot dikongsi, kalau lima kad terbaik betul-betul sama (jika ada side pot, setiap pot diberikan secara berasingan).
+A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Satu tangan penuh ada empat pusingan pertaruhan dan lima kad komuniti, dan tangan lima kad terbaik memenangi pot — atau pot dikongsi, kalau lima kad terbaik betul-betul sama (jika ada side pot, setiap pot diberikan secara berasingan).
 
 **Q. Berapa ramai pemain diperlukan untuk main Texas Hold'em?**
 

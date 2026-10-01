@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -280,7 +280,7 @@ A. Um par, seguido de dois pares. Como todo mundo divide as mesmas cinco cartas 
 
 **Q. Com que frequência a melhor mão ganha no poker?**
 
-A. Menos do que você imagina, se contar antes do river. Até um par de ases — a melhor mão inicial — ganha só cerca de 85% das vezes em heads-up, e bem menos contra uma mesa cheia. No river, as melhores cinco cartas ganham por definição; as viradas acontecem antes, quando uma mão feita é ultrapassada por um projeto vivo.
+A. Menos do que você imagina, se contar antes do river. Até um par de ases — a melhor mão inicial — ganha só cerca de 85% das vezes em heads-up contra uma mão aleatória, e bem menos contra uma mesa cheia. No river, as melhores cinco cartas ganham por definição; as viradas acontecem antes, quando uma mão feita é ultrapassada por um projeto vivo.
 
 **Q. Quais são as odds de ter os nuts?**
 

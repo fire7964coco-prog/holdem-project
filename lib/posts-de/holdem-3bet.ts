@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -231,7 +231,7 @@ Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der
 
 | Der Fehler | Warum er dich kostet | Der Fix |
 |:---|:---|:---|
-| **Zu klein 3-betten OOP** | Gibt einen tollen Preis zum Callen – sie realisieren Equity in Position gegen dich | Nutze die vollen 4x+ out of Position |
+| **Zu klein 3-betten OOP** | Gibt einen tollen Preis zum Callen – sie realisieren Equity in Position gegen dich | Bei normaler Stack-Tiefe: nutze die vollen 4x+ out of Position |
 | **Immer nur Value 3-betten** | Du wirst face-up; gute Spieler folden alles außer Coolern | Füge suited Blocker-Bluffs (A5s) hinzu |
 | **Nie 3-Bet-Bluffen** | Lässt Geld liegen vs. weite Steals; deine Flats werden zu schwach | Balanciere Value mit ein paar Light-3-Bets |
 | **Merged 3-betten vs. einen Nit** | Deine „Value“ ist von ihrer premium-only Range dominiert | Geh polarisiert oder folde einfach vs. einen echten Nit |

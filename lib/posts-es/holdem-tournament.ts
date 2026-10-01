@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-24",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -76,7 +76,7 @@ Todo torneo publica su estructura en una **hoja de estructura**: stack inicial, 
 
 Esto es lo que la mayoría de guías para principiantes se salta, y es el concepto mecánico más importante de los torneos.
 
-**Las ciegas empiezan pequeñas y suben con un reloj — normalmente cada 20-40 minutos en eventos en vivo, y 60 minutos o más en los Main Events estrella** (el Championship Event del WPT Australia 2026 corre niveles de 60 minutos, que se estiran a 90 en los días finales).
+**Las ciegas empiezan pequeñas y suben con un reloj — normalmente cada 20-40 minutos en eventos en vivo, y 60 minutos o más en los Main Events estrella** (el Championship Event del WPT Australia 2026 corrió niveles de 60 minutos, que se estiraron a 90 en los días finales).
 
 | Nivel | Ciegas | Antes | Tu stack de 10k = |
 |:---|:---:|:---:|:---|

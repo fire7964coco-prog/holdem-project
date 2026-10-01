@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -131,7 +131,7 @@ Até um enorme **overbet de 2× o pote pede só 40% de equity**. Você quase nun
 
 </div>
 
-Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta a partir do flop (9 ÷ 47), esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
+Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: se a aposta te deixa all-in e você vê as duas cartas, um flush draw (35%) é um call claro — mas numa *única* carta a partir do flop (9 ÷ 47), esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
 
 ---
 

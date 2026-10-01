@@ -110,7 +110,7 @@ One rule of live etiquette: don't fold ==out of turn==. Wait until the action re
 
 ## What Is a Min-Raise? Texas Hold'em Bet & Raise Rules
 
-![Infographic showing the poker min-raise rule: a $6 bet requires a raise to at least $12, and a preflop raise to $6 requires a min re-raise to $10](/images/holdem-betting-actions-min-raise.webp "The min-raise rule — every raise must add at least the size of the last bet or raise")
+![Infographic showing the poker min-raise rule: a $6 bet requires a raise to at least $12, and a preflop raise to $6 requires a min re-raise to $10](/images/holdem-betting-actions-min-raise.webp "The min-raise rule — a raise must add at least the size of the last full bet or raise; only an all-in can be smaller")
 
 In No-Limit Hold'em (the format you'll almost always play):
 

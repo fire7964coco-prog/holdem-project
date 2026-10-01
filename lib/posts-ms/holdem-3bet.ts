@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet ialah re-raise pertama sebelum flop — bet ketiga selepas big blind dan open-raise. Value 3-bet dengan QQ+ dan AK, tambah beberapa bluff blocker suited seperti A5s; saiz kira-kira 3x open in position dan 4x out of position, dengan kekerapan keseluruhan sekitar 6–10%. Bila kena 3-bet: 4-bet tangan premium, call tangan yang main baik, fold selebihnya.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 minit",
   emoji: "♦️",
@@ -125,7 +125,7 @@ Saiz standard ialah kira-kira 3x open in position dan 4–4.5x out of position �
 
 Matematiknya sengaja ditunjukkan kerana di sinilah pemula bocor: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Dua peraturan yang mengatasi pengganda ini:
 
-- **Jangan sekali-kali 3-bet kecil out of position.** 3-bet OOP yang kecil memberi lawan harga yang bagus untuk call dan mengalahkan anda dengan posisi — perkara yang anda cuba elakkan. Gunakan 4x+ penuh.
+- **Pada kedalaman stack biasa, jangan sekali-kali 3-bet kecil out of position.** 3-bet OOP yang kecil memberi lawan harga yang bagus untuk call dan mengalahkan anda dengan posisi — perkara yang anda cuba elakkan. Gunakan 4x+ penuh.
 - **Saiz bukan undang-undang.** Kecilkan saiz terhadap pemain yang terlalu kerap fold (bluff anda jadi lebih murah) dan besarkan saiz serta main value tulen terhadap calling station yang tidak pernah fold. Rake dan kedalaman stack juga mengubahnya.
 
 Dalam tournament dengan stack cetek, seluruh kiraan berubah: pada kira-kira **10–25 big blinds**, banyak tangan menjadi **3-bet all-in (satu "shove")** dan bukannya re-raise kecil, kerana tiada ruang untuk raise lalu fold. Beralih daripada min-3-bet ke arah jam apabila stack semakin pendek — namun terhadap barisan pemain yang kuat, kekalkan sedikit 3-bet kecil bukan all-in dalam campuran.
@@ -212,7 +212,7 @@ Enam kesilapan 3-bet paling biasa ialah 3-bet terlalu kecil OOP, hanya 3-bet val
 
 | Kesilapan | Mengapa ia merugikan anda | Pembetulan |
 |:---|:---|:---|
-| **3-bet terlalu kecil OOP** | Memberi harga bagus untuk call — mereka merealisasikan equity in position terhadap anda | Gunakan 4x+ penuh out of position |
+| **3-bet terlalu kecil OOP** | Memberi harga bagus untuk call — mereka merealisasikan equity in position terhadap anda | Pada kedalaman stack biasa, gunakan 4x+ penuh out of position |
 | **Hanya 3-bet value** | Anda menjadi terbuka (face-up); pemain bagus fold semua kecuali cooler | Tambah bluff blocker suited (A5s) |
 | **Langsung tidak bluff 3-bet** | Meninggalkan wang di meja terhadap steal luas; flat call anda menjadi terlalu lemah | Imbangkan value dengan beberapa 3-bet ringan |
 | **3-bet merged terhadap nit** | "Value" anda didominasi oleh range mereka yang premium sahaja | Beralih ke terpolarisasi atau fold sahaja terhadap nit tulen |
@@ -300,7 +300,7 @@ Seluruh artikel ini boleh diringkaskan kepada enam peraturan — daripada defini
 
 1. **3-bet ialah re-raise pertama preflop** — bet ketiga dalam urutan, kerana blind dikira sebagai bet pertama.
 2. **Bina dua range:** teras value (QQ+, AK) yang anda mahu di-call, dan bluff blocker suited (A5s dan sekutunya) yang dipilih kerana blocker dan playability.
-3. **Saiz ~3x in position, ~4x out of position** — dan jangan sekali-kali kecil out of position.
+3. **Saiz ~3x in position, ~4x out of position** — dan, pada kedalaman stack biasa, jangan kecil out of position.
 4. **Padankan bentuk dengan spot:** linear terhadap open luas/lemah (dan dari small blind apabila berdepan raise), terpolarisasi terhadap open ketat dan dari big blind.
 5. **Apabila kena 3-bet, kebanyakan tangan fold** — 4-bet premium, call yang boleh dimainkan, dan fold lebih daripada "seimbang" terhadap lawan yang tidak pernah bluff.
 6. **Kemudian flop tiba.** Pot 3-bet dimainkan langsung tidak seperti pot single-raised — mengikut angka artikel ini (open 3bb, 3-bet 9bb, stack 100bb) pot itu kira-kira 2.6× lebih besar (19.5bb berbanding 7.5bb yang akan dibina oleh flat call heads-up; 3-bet out of position yang lebih besar menolaknya ke arah 3.5×) dan SPR jatuh kepada kira-kira 4.7. Pemain 3-bet masih sering bet [seluruh range-nya di flop](/ms/blog/3bet-pot-cbet) — kerana bentuk range-nya, bukan kerana stack-nya cetek.

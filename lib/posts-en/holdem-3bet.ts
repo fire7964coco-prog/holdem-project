@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -209,7 +209,7 @@ Now flip it: if I'd 3-bet a **light** hand like A5s there and the cutoff had **4
 
 | The mistake | Why it costs you | The fix |
 |:---|:---|:---|
-| **3-betting too small OOP** | Lays a great price to call — they realize equity in position against you | Use the full 4x+ out of position |
+| **3-betting too small OOP** | Lays a great price to call — they realize equity in position against you | At normal stack depths, use the full 4x+ out of position |
 | **Only ever 3-betting value** | You become face-up; good players fold everything but coolers | Add suited blocker bluffs (A5s) |
 | **Never 3-bet bluffing at all** | Leaves money on the table vs wide steals; your flats get too weak | Balance value with a few light 3-bets |
 | **3-betting merged vs a nit** | Your "value" is dominated by their premium-only range | Go polarized or just fold vs a true nit |

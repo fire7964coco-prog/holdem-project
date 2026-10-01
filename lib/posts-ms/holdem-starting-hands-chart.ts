@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button. Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🂡",
@@ -65,7 +65,7 @@ Sepuluh tangan permulaan terbaik dalam poker, mengikut susunan, ialah AA, KK, QQ
 
 ![Empat tangan permulaan premium Texas Hold'em — pocket aces, pocket kings, pocket queens dan ace-king suited — bercahaya keemasan di atas felt hijau gelap](/images/holdem-starting-hands-premium.webp "Tahap premium — tangan yang boleh anda raise dari mana-mana posisi")
 
-==g:Dengan tangan 1–5 (pocket pair), sentiasa raise dan selalunya re-raise sebelum flop untuk membina pot.== Dengan AK dan AQ, matlamatnya ialah bermain heads-up, di mana kad besar anda mempunyai equity maksimum. Angka yang patut dihafal: ==AK tidak pernah lebih berpeluang menang menentang pocket pair, tetapi menentang 22–QQ ia tidak pernah jauh ketinggalan== — "race" klasik. AK offsuit mempunyai kira-kira 46–47% menentang 22–44, kira-kira 45% menentang 55–99, dan kira-kira 43% menentang TT–QQ; AK suited menambah kira-kira 2.5–3 mata pada setiap satu (AKs menentang 22, pada kira-kira 50%, ialah yang paling hampir dengan coin flip sebenar). Menentang KK dan AA jurangnya jauh lebih luas — tetapi menentang setiap pasangan di bawahnya, raise dan re-raise dengan AK kekal betul.
+==g:Dengan tangan 1–5 (pocket pair), hampir sentiasa raise dan selalunya re-raise sebelum flop untuk membina pot.== Dengan AK dan AQ, matlamatnya ialah bermain heads-up, di mana kad besar anda mempunyai equity maksimum. Angka yang patut dihafal: ==AK tidak pernah lebih berpeluang menang menentang pocket pair, tetapi menentang 22–QQ ia tidak pernah jauh ketinggalan== — "race" klasik. AK offsuit mempunyai kira-kira 46–47% menentang 22–44, kira-kira 45% menentang 55–99, dan kira-kira 43% menentang TT–QQ; AK suited menambah kira-kira 2.5–3 mata pada setiap satu (AKs menentang 22, pada kira-kira 50%, ialah yang paling hampir dengan coin flip sebenar). Menentang KK dan AA jurangnya jauh lebih luas — tetapi menentang setiap pasangan di bawahnya, raise dan re-raise dengan AK kekal betul.
 
 Pocket rockets, cowboys, big slick — jika slang meja ini baharu bagi anda, [glosari poker](/ms/blog/holdem-glossary) menerangkan setiap nama jolokan tangan. Dan jika anda masih keliru tentang apa yang menang ke atas apa apabila board keluar, semak dahulu [susunan kad poker](/ms/blog/holdem-hand-rankings).
 
@@ -258,7 +258,7 @@ Betul ketiga-tiganya? Cuba [kuiz tangan poker 10 soalan (bahasa Inggeris)](/en/q
 
 **Q. Apakah tangan permulaan terbaik dalam poker?**
 
-A. Pocket aces (AA) ialah tangan permulaan terbaik dalam poker. Sebelum flop, AA menang kira-kira 85% masa menentang satu tangan rawak. Sentiasa raise dan re-raise dengan AA — matlamatnya ialah membina pot besar sebagai pihak yang secara statistik lebih berpeluang menang.
+A. Pocket aces (AA) ialah tangan permulaan terbaik dalam poker. Sebelum flop, AA menang kira-kira 85% masa menentang satu tangan rawak. Sebagai pilihan lalai, raise dan re-raise dengan AA — matlamatnya ialah membina pot besar sebagai pihak yang secara statistik lebih berpeluang menang.
 
 **Q. Apakah tangan permulaan yang baik dalam poker?**
 

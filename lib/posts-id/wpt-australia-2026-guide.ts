@@ -296,7 +296,6 @@ Untuk buy-in di atas AUD $5.000 (atau untuk menghindari logistik penarikan haria
 <strong>The Star Sydney — Tentang Transfer Bank</strong><br/>
 ⚠️ Gabung Star Club <strong>lebih dulu</strong>. Berita transfernya adalah <strong>Member ID dan nama belakang</strong> Anda, jadi tanpa nomor anggota Anda tidak bisa mengirim dana dengan benar.<br/>
 Detail rekeningnya <strong>dipublikasikan di Funds Management Sheet resmi</strong> di starpoker.com.au — bukan diterbitkan individual per tamu. Ambil detailnya hanya dari lembar itu, jangan pernah dari nomor rekening yang dikirim orang lain.<br/>
-Sebelum terbang, hubungi Star Poker atau kasir (cage) The Star Sydney (via starpoker.com.au atau Guest Service Desk) untuk meminta detail transfer terkini yang <strong>diterbitkan atas nama Anda</strong>.<br/>
 Perkiraan: rekening NAB, <strong>hanya rekening bank pribadi</strong> (bukan Wise/Revolut/pihak ketiga), dan beberapa hari kerja untuk masuk.
 </div>
 

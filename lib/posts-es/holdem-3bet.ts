@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -210,7 +210,7 @@ Ahora dale la vuelta: si hubiera hecho un 3-bet con una mano **light** como A5s 
 
 | El error | Por qué te cuesta | El arreglo |
 |:---|:---|:---|
-| **3-betear demasiado pequeño OOP** | Da un gran precio para igualar — realizan equity en posición contra ti | Usa el 4x+ completo fuera de posición |
+| **3-betear demasiado pequeño OOP** | Da un gran precio para igualar — realizan equity en posición contra ti | Con profundidades de stack normales, usa el 4x+ completo fuera de posición |
 | **3-betear solo valor y nada más** | Te vuelves boca arriba; los buenos jugadores foldean todo menos coolers | Añade faroles con bloqueadores del mismo palo (A5s) |
 | **No 3-betear de farol nunca** | Dejas dinero sobre la mesa vs robos amplios; tus flats quedan demasiado débiles | Balancea el valor con unos pocos 3-bets light |
 | **3-betear merged vs un nit** | Tu "valor" está dominado por su rango solo-premium | Ve polarizado o simplemente foldea vs un nit de verdad |

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya apabila draw anda hit. Ia membolehkan anda call draw dengan untung walaupun pot odds semata-mata kata fold — tetapi hanya jika stack cukup dalam dan lawan anda memang akan bayar.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "💰",
@@ -63,7 +63,7 @@ Peraturan praktikalnya: **mulakan dengan pot odds.** Jika equity anda sudah meng
 
 ## Bagaimana Cara Kira Implied Odds? Formula Mudah
 
-**Untuk kira implied odds, tentukan berapa banyak tambahan yang anda perlu menang apabila kena, menggunakan: tambahan diperlukan = (call anda ÷ peluang anda kena) − (pot semasa + call anda).** Jika anda secara realistik boleh menang sebanyak itu lagi di street seterusnya, call itu menguntungkan.
+**Untuk kira implied odds, tentukan berapa banyak tambahan yang anda perlu menang apabila kena, menggunakan: tambahan diperlukan = (call anda ÷ peluang anda kena) − (pot semasa + call anda).** Jika anda secara realistik boleh menang sebanyak itu lagi di street seterusnya — dan tangan anda masih yang terbaik apabila sampai ke situ — call itu menguntungkan.
 
 Ditulis dengan kemas, dengan ==g:x== sebagai wang tambahan yang mesti anda menang apabila lengkap:
 
@@ -184,7 +184,7 @@ A. Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya 
 
 **Q. Bagaimana cara kira implied odds?**
 
-A. Gunakan: tambahan diperlukan = (call anda ÷ peluang anda kena) − (pot semasa + call anda). Call $50 di turn dengan flush draw yang kena 19.6% daripada masa di river (9 ÷ 46) bermakna 50 ÷ 0.196 = $255, tolak $200 yang sudah dalam permainan (pot $150 ditambah call $50 anda) = lebih kurang $55. Jika anda secara realistik boleh menang $55 lagi apabila kena, call itu menguntungkan. Ingat ia sentiasa anggaran, kerana pertaruhan masa depan tidak terjamin.
+A. Gunakan: tambahan diperlukan = (call anda ÷ peluang anda kena) − (pot semasa + call anda). Call $50 di turn dengan flush draw yang kena 19.6% daripada masa di river (9 ÷ 46) bermakna 50 ÷ 0.196 = $255, tolak $200 yang sudah dalam permainan (pot $150 ditambah call $50 anda) = lebih kurang $55. Jika anda secara realistik boleh menang $55 lagi apabila kena — dan flush yang anda buat ialah tangan terbaik — call itu menguntungkan. Ingat ia sentiasa anggaran, kerana pertaruhan masa depan tidak terjamin.
 
 **Q. Apa beza pot odds dengan implied odds?**
 
@@ -222,7 +222,7 @@ A. Implied odds bergantung sepenuhnya pada wang yang tinggal untuk dimenangi, da
 
 ## 3 Perkara yang Wajib Anda Ingat
 
-1. **Formula:** tambahan diperlukan = (call ÷ hit%) − (pot semasa + call). Jika anda secara realistik boleh menang lebih daripada itu kemudian, call itu bagus walaupun pot odds kata fold.
+1. **Formula:** tambahan diperlukan = (call ÷ hit%) − (pot semasa + call). Jika anda secara realistik boleh menang lebih daripada itu kemudian dengan tangan yang masih terbaik, call itu bagus walaupun pot odds kata fold.
 2. **Semakan realiti:** implied odds ialah anggaran yang hidup atas stack dalam dan lawan yang membayar. Menentang all-in ia sifar secara heads-up, dan menentang stack pendek hanya tinggal sedikit — kembali kepada pot odds.
 3. **Cermin gelap:** reverse implied odds menghukum draw bukan nut. Draw ke nuts jauh lebih bernilai daripada draw yang sama ke tangan kedua terbaik.
 

@@ -192,7 +192,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **O-2 로케일 전파**(pt·es·de·id·zh·zh-hant·ja·ar + ms 4편) | ✅ 같은 커밋 — 해당 문장 없는 6편(pt kicker · es/zh/zh-hant/ja game-order · ja kicker)은 `masterUpdated`만 | 47편 + 6편 |
 | **O-3 로케일 고유 6자리**(MA-240 · zh all-in 2 · zh-hant all-in·beginners tldr·blind-meaning·showdown) | ✅ 같은 커밋 | zh 1편 · zh-hant 4편 |
 | **O-4 PDF 3문구**(`poker-starting-hands-chart.pdf` · 원본 `scripts/starting-hands-chart-print.html`) | ✅ 본문 표 문안으로 맞춤 · 재생성 · 1쪽 육안 확인 | 1 |
-| **O-5 남긴 것** | 🪶 자동 착수 대상 아님 — ① zh-hant beginners FAQ «至少加到 50» 올인 예외 없음(MA-240 ⓒ) ② ms beginners FAQ «satu pemenang»(옛 EN 문형 · ms 정정 회차에) ③ MA-238 ⓖ: 3bet 212 표 칸 «full 4x+ out of position» 스택 한정 · limping FAQ 괄호 «Facing a raise» · chart «hands 1–5 … always raise» ④ MA-235 ⓕ: implied 본문·말미 «realistically win that much more → profitable» · pot-odds 133 «flush draw (35%) is a clear call» ⑤ MA-231: betting-actions 113 캡션 «every raise must add at least…»(본문 «last full»과 자기모순 · M-5와 같은 자리) | 5 |
+| **O-5** | ✅ 10-01 판정·배포(MB-132) — 채택 ①②③(limping 괄호만 기각 · 이미 «by default»)④⑤ · 판정표 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8-2 | 5 |
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

@@ -112,7 +112,7 @@ Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a 
 
 ## O que é min-raise? Regras de aposta e raise no Texas Hold'em
 
-![Infográfico mostrando a regra do min-raise no poker: uma aposta de $6 exige um raise para pelo menos $12, e um raise pré-flop para $6 exige um reaumento mínimo para $10](/images/holdem-betting-actions-min-raise.webp "A regra do min-raise — todo raise precisa adicionar pelo menos o tamanho da última aposta ou raise")
+![Infográfico mostrando a regra do min-raise no poker: uma aposta de $6 exige um raise para pelo menos $12, e um raise pré-flop para $6 exige um reaumento mínimo para $10](/images/holdem-betting-actions-min-raise.webp "A regra do min-raise — um raise precisa adicionar pelo menos o tamanho da última aposta ou raise completo; só um all-in pode ser menor")
 
 No No-Limit Hold'em (o formato que você vai jogar em praticamente todo lugar):
 

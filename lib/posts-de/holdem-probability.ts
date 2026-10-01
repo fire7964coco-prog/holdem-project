@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -268,7 +268,7 @@ A. Ein Paar, danach zwei Paare. Weil sich alle Spieler die fünf Gemeinschaftska
 
 **Q. Wie oft gewinnt am Ende wirklich die beste Hand?**
 
-A. Seltener, als du vor dem River denkst. Selbst Pocket-Asse – die beste Starthand – gewinnen im Heads-up nur etwa 85% der Fälle, gegen einen vollen Tisch deutlich weniger. Am River gewinnen die besten fünf Karten per Definition; die Überraschungen passieren früher, wenn eine fertige Hand von einem lebenden Draw eingeholt wird.
+A. Seltener, als du vor dem River denkst. Selbst Pocket-Asse – die beste Starthand – gewinnen im Heads-up gegen eine zufällige Hand nur etwa 85% der Fälle, gegen einen vollen Tisch deutlich weniger. Am River gewinnen die besten fünf Karten per Definition; die Überraschungen passieren früher, wenn eine fertige Hand von einem lebenden Draw eingeholt wird.
 
 **Q. Wie oft trifft man den Flop überhaupt?**
 

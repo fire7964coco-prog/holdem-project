@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -210,7 +210,7 @@ Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana
 
 | Kesalahannya | Kenapa ia merugikan Anda | Perbaikannya |
 |:---|:---|:---|
-| **3-betting terlalu kecil OOP** | Memberi harga bagus untuk call — mereka merealisasikan equity in position melawan Anda | Pakai 4x+ penuh out of position |
+| **3-betting terlalu kecil OOP** | Memberi harga bagus untuk call — mereka merealisasikan equity in position melawan Anda | Pada kedalaman stack normal, pakai 4x+ penuh out of position |
 | **Hanya pernah 3-betting value** | Anda menjadi face-up; pemain bagus fold segalanya kecuali cooler | Tambahkan bluff blocker suited (A5s) |
 | **Tak pernah bluff-3-bet sama sekali** | Meninggalkan uang di meja vs steal lebar; flat Anda jadi terlalu lemah | Seimbangkan value dengan beberapa light 3-bet |
 | **3-betting merged vs nit** | "Value" Anda terdominasi oleh range mereka yang hanya premium | Jadikan polarized atau cukup fold vs nit sejati |

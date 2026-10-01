@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -131,7 +131,7 @@ Bahkan **overbet 2× pot yang masif hanya meminta 40% equity**. Anda hampir tak 
 
 </div>
 
-Bandingkan dengan tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah pot (butuh 25%)==: dengan dua kartu tersisa, flush draw (35%) adalah call jelas — tapi pada *satu* kartu dari flop (9 ÷ 47), draw yang sama itu hanya 19,1%, yang **tidak** memenuhi harganya sendiri. Di celah itulah implied odds berperan.
+Bandingkan dengan tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah pot (butuh 25%)==: jika taruhan itu membuat Anda all-in sehingga Anda melihat kedua kartu, flush draw (35%) adalah call jelas — tapi pada *satu* kartu dari flop (9 ÷ 47), draw yang sama itu hanya 19,1%, yang **tidak** memenuhi harganya sendiri. Di celah itulah implied odds berperan.
 
 ---
 

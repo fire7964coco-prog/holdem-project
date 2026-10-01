@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -63,7 +63,7 @@ Inilah starting hand terbaik di poker — tangan yang hampir selalu harus Anda r
 
 ![Empat starting hand premium Texas Hold'em — pocket aces, pocket kings, pocket queens, dan ace-king suited — bercahaya emas di felt hijau tua](/images/holdem-starting-hands-premium.webp "Tier premium — tangan yang bisa Anda raise dari posisi mana pun")
 
-==g:Dengan tangan 1–5 (pocket pair), selalu raise dan sering re-raise preflop untuk membangun pot.== Dengan AK dan AQ, tujuannya adalah masuk heads-up di mana kartu besar Anda punya equity maksimal. Angka yang layak dihafal: ==AK tidak pernah unggul melawan pocket pair, tapi melawan 22–QQ juga tidak pernah tertinggal jauh== — inilah "race" klasik. Offsuit, AK punya sekitar 46–47% melawan 22–44, sekitar 45% melawan 55–99, dan sekitar 43% melawan TT–QQ; suited menambah kira-kira 2,5–3 poin pada tiap angka (AKs melawan 22, sekitar 50%, adalah yang paling mendekati coin flip sejati). Melawan KK dan AA selisihnya jauh lebih besar — tapi melawan semua pair di bawahnya, raise dan re-raise dengan AK tetap benar.
+==g:Dengan tangan 1–5 (pocket pair), hampir selalu raise dan sering re-raise preflop untuk membangun pot.== Dengan AK dan AQ, tujuannya adalah masuk heads-up di mana kartu besar Anda punya equity maksimal. Angka yang layak dihafal: ==AK tidak pernah unggul melawan pocket pair, tapi melawan 22–QQ juga tidak pernah tertinggal jauh== — inilah "race" klasik. Offsuit, AK punya sekitar 46–47% melawan 22–44, sekitar 45% melawan 55–99, dan sekitar 43% melawan TT–QQ; suited menambah kira-kira 2,5–3 poin pada tiap angka (AKs melawan 22, sekitar 50%, adalah yang paling mendekati coin flip sejati). Melawan KK dan AA selisihnya jauh lebih besar — tapi melawan semua pair di bawahnya, raise dan re-raise dengan AK tetap benar.
 
 Pocket rockets, cowboys, big slick — jika slang meja ini baru bagi Anda, [glosarium poker](/id/blog/holdem-glossary) mencakup setiap julukan tangan. Dan jika Anda masih samar soal apa mengalahkan apa saat board keluar, tinjau dulu [peringkat tangan poker](/id/blog/holdem-hand-rankings).
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -278,7 +278,7 @@ A. One pair, disusul two pair. Karena semua pemain berbagi lima kartu bersama, k
 
 **Q. Seberapa sering tangan terbaik menang di poker?**
 
-A. Lebih jarang dari dugaan Anda sebelum river. Bahkan pocket aces — tangan awal terbaik — hanya menang sekitar 85% dari waktu heads-up, dan jauh lebih rendah melawan satu meja penuh. Hingga river lima kartu terbaik menang menurut definisi; kejutannya terjadi lebih awal, saat tangan jadi disusul oleh draw yang masih hidup.
+A. Lebih jarang dari dugaan Anda sebelum river. Bahkan pocket aces — tangan awal terbaik — hanya menang sekitar 85% dari waktu heads-up melawan tangan acak, dan jauh lebih rendah melawan satu meja penuh. Hingga river lima kartu terbaik menang menurut definisi; kejutannya terjadi lebih awal, saat tangan jadi disusul oleh draw yang masih hidup.
 
 **Q. Seberapa sering Anda hit flop di poker?**
 

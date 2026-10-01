@@ -111,7 +111,7 @@ Satu aturan etika di poker live: jangan fold ==di luar giliran==. Tunggu sampai 
 
 ## Apa Itu Min-Raise? Aturan Bet & Raise di Texas Hold'em
 
-![Infografik aturan min-raise poker: bet $6 mewajibkan raise minimal ke $12, dan raise preflop ke $6 mewajibkan re-raise minimum ke $10](/images/holdem-betting-actions-min-raise.webp "Aturan min-raise — setiap raise wajib menambah minimal sebesar bet atau raise terakhir")
+![Infografik aturan min-raise poker: bet $6 mewajibkan raise minimal ke $12, dan raise preflop ke $6 mewajibkan re-raise minimum ke $10](/images/holdem-betting-actions-min-raise.webp "Aturan min-raise — raise wajib menambah minimal sebesar bet atau raise penuh terakhir; hanya all-in yang boleh lebih kecil")
 
 Di No-Limit Hold'em (format yang hampir selalu Anda mainkan):
 

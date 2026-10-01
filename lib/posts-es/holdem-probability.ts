@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -284,7 +284,7 @@ A. La pareja, seguida de la doble pareja. Como todos los jugadores comparten las
 
 **Q. ¿Con qué frecuencia gana la mejor mano en el póker?**
 
-A. Menos de lo que crees antes del river. Incluso la pareja de ases — la mejor mano inicial — gana solo alrededor del 85% de las veces mano a mano, y mucho menos contra una mesa llena. Para el river, las mejores cinco cartas ganan por definición; las sorpresas pasan antes, cuando una mano hecha es superada por un proyecto vivo.
+A. Menos de lo que crees antes del river. Incluso la pareja de ases — la mejor mano inicial — gana solo alrededor del 85% de las veces mano a mano contra una mano aleatoria, y mucho menos contra una mesa llena. Para el river, las mejores cinco cartas ganan por definición; las sorpresas pasan antes, cuando una mano hecha es superada por un proyecto vivo.
 
 **Q. ¿Con qué frecuencia ligas en el flop?**
 

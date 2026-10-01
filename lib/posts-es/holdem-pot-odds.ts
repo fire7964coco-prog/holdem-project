@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -131,7 +131,7 @@ Incluso un enorme **overbet de 2× el bote solo pide un 40% de equity**. Casi nu
 
 </div>
 
-Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: con dos cartas por venir, un proyecto de color (35%) es un call claro — pero con una *sola* carta desde el flop (9 ÷ 47), ese mismo proyecto es solo el 19.1%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
+Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: si la apuesta te deja all-in y ves las dos cartas, un proyecto de color (35%) es un call claro — pero con una *sola* carta desde el flop (9 ÷ 47), ese mismo proyecto es solo el 19.1%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
 
 ---
 

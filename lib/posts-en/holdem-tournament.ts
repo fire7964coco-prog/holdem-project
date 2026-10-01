@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-24",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -75,7 +75,7 @@ Every tournament publishes its structure in a **structure sheet**: starting stac
 
 This is what most beginner guides skip, and it's the most important mechanical concept in tournaments.
 
-**Blinds start small and increase on a timer — usually every 20–40 minutes in live events, and 60 minutes or more in flagship Main Events** (WPT Australia 2026 runs its Championship Event on 60-minute levels, stretching to 90 on the later days).
+**Blinds start small and increase on a timer — usually every 20–40 minutes in live events, and 60 minutes or more in flagship Main Events** (WPT Australia 2026 ran its Championship Event on 60-minute levels, stretching to 90 on the later days).
 
 | Level | Blinds | Antes | Your 10k stack = |
 |:---|:---:|:---:|:---|

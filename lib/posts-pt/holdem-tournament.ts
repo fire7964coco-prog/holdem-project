@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -76,7 +76,7 @@ Todo torneio publica sua estrutura numa **structure sheet**: stack inicial, nív
 
 Isto é o que a maioria dos guias pra iniciante pula, e é o conceito mecânico mais importante dos torneios.
 
-**Os blinds começam pequenos e sobem num relógio — normalmente a cada 20–40 minutos em eventos ao vivo, e 60 minutos ou mais nos Main Events de destaque** (o Championship Event do WPT Australia 2026 roda níveis de 60 minutos, que esticam para 90 nos dias finais).
+**Os blinds começam pequenos e sobem num relógio — normalmente a cada 20–40 minutos em eventos ao vivo, e 60 minutos ou mais nos Main Events de destaque** (o Championship Event do WPT Australia 2026 rodou níveis de 60 minutos, que esticaram para 90 nos dias finais).
 
 | Nível | Blinds | Antes | Seu stack de 10k = |
 |:---|:---:|:---:|:---|

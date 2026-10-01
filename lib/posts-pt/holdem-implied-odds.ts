@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -63,7 +63,7 @@ A regra prática: **comece pelas pot odds.** Se a sua equity já bate o preço �
 
 ## Como calcular odds implícitas
 
-**Para calcular odds implícitas, descubra quanto extra você precisa ganhar quando acerta, usando: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atual + seu call).** Se você consegue realisticamente ganhar tudo isso a mais nas próximas streets, o call é lucrativo.
+**Para calcular odds implícitas, descubra quanto extra você precisa ganhar quando acerta, usando: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atual + seu call).** Se você consegue realisticamente ganhar tudo isso a mais nas próximas streets — e a sua mão ainda é a melhor quando chega lá —, o call é lucrativo.
 
 Escrito de forma limpa, com ==g:x== sendo o dinheiro extra que você precisa ganhar quando completa:
 
@@ -222,7 +222,7 @@ A. As odds implícitas têm tudo a ver com o dinheiro que sobra para ganhar, e s
 
 ## As 3 coisas para lembrar
 
-1. **A fórmula:** extra necessário = (call ÷ hit%) − (pote atual + call). Se você consegue realisticamente ganhar mais que isso depois, o call é bom mesmo quando as pot odds mandam foldar.
+1. **A fórmula:** extra necessário = (call ÷ hit%) − (pote atual + call). Se você consegue realisticamente ganhar mais que isso depois com o que ainda é a melhor mão, o call é bom mesmo quando as pot odds mandam foldar.
 2. **O teste de realidade:** odds implícitas são uma estimativa que vive de stacks profundos e um adversário que paga. Contra um all-in elas são zero no heads-up, e contra um stack curto sobra muito pouco — volte para as pot odds.
 3. **O reverso da moeda:** as reverse implied odds punem projetos que não são para os nuts. Um projeto para os nuts vale muito mais que o mesmo projeto para a segunda melhor mão.
 

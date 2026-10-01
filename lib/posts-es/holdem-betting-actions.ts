@@ -111,7 +111,7 @@ Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la a
 
 ## ¿Qué es el min-raise? Reglas de apuesta y subida en Texas Hold'em
 
-![Infografía de la regla del min-raise en el póker: una apuesta de $6 exige subir como mínimo a $12, y una subida preflop a $6 exige una resubida mínima a $10](/images/holdem-betting-actions-min-raise.webp "La regla del min-raise — toda subida debe añadir al menos el tamaño de la última apuesta o subida")
+![Infografía de la regla del min-raise en el póker: una apuesta de $6 exige subir como mínimo a $12, y una subida preflop a $6 exige una resubida mínima a $10](/images/holdem-betting-actions-min-raise.webp "La regla del min-raise — una subida debe añadir al menos el tamaño de la última apuesta o subida completa; solo un all-in puede ser menor")
 
 En No-Limit Hold'em (el formato que jugarás casi siempre):
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Aksi Pertaruhan Texas Hold'em: Cek, Call, Raise, Fold",
   seoTitle: "Cek, Call atau Fold? — Aksi Pertaruhan Poker & Peraturan Raise",
   desc: "Giliran anda tiba dan fikiran terus kosong? Ketahui maksud cek, call, raise dan fold dalam poker, peraturan min-raise, dan berapa kali anda boleh re-raise.",
-  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
+  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise penuh sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-10-01",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "9 minit",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Texas Hold'em hanya ada ==5 aksi pertaruhan==, tetapi peraturan di sekelilingnya
 :::stripe
 5 | aksi pertaruhan: cek, bertaruh, call, raise, fold
 1 BB | pertaruhan pembuka minimum dalam No-Limit Hold'em
-= raise terakhir | saiz minimum re-raise (peraturan inkremen)
+= raise penuh terakhir | saiz minimum re-raise (peraturan inkremen)
 Tiada had | re-raise dalam No-Limit — anda boleh raise sehingga seseorang all-in
 :::
 
@@ -52,7 +52,7 @@ Setiap keputusan yang anda buat di meja poker adalah salah satu daripada lima in
 | Cek | Hanya apabila tiada pertaruhan aktif di hadapan anda (praflop: sebagai big blind, atau sebagai pemain yang meletakkan straddle hidup) | Percuma — anda lepas giliran tanpa menambah cip |
 | Call | Selepas seseorang bertaruh atau raise | Anda samai pertaruhan semasa dengan tepat |
 | Bertaruh (bet) | Pertaruhan pertama dalam pusingan | Jumlah pilihan anda (minimum = 1 big blind) |
-| Raise | Selepas seseorang bertaruh | Sekurang-kurangnya sebesar pertaruhan atau raise sebelumnya, ditambah di atasnya |
+| Raise | Selepas seseorang bertaruh | Sekurang-kurangnya sebesar pertaruhan atau raise penuh sebelumnya, ditambah di atasnya |
 
 ==All-in== bukan aksi keenam yang berasingan — ia adalah bertaruh, call atau raise dengan semua cip yang anda ada. Kita bincangkan lebih lanjut di bawah.
 
@@ -113,12 +113,12 @@ Satu adab poker live: jangan fold ==di luar giliran==. Tunggu sehingga aksi samp
 
 ## Apa Itu Min-Raise? Peraturan Bertaruh & Raise Texas Hold'em
 
-![Infografik peraturan min-raise poker: pertaruhan $6 memerlukan raise kepada sekurang-kurangnya $12, dan raise pre-flop kepada $6 memerlukan re-raise minimum kepada $10](/images/holdem-betting-actions-min-raise.webp "Peraturan min-raise — setiap raise mesti menambah sekurang-kurangnya sebesar pertaruhan atau raise terakhir")
+![Infografik peraturan min-raise poker: pertaruhan $6 memerlukan raise kepada sekurang-kurangnya $12, dan raise pre-flop kepada $6 memerlukan re-raise minimum kepada $10](/images/holdem-betting-actions-min-raise.webp "Peraturan min-raise — raise mesti menambah sekurang-kurangnya sebesar pertaruhan atau raise penuh terakhir; hanya all-in boleh lebih kecil")
 
 Dalam No-Limit Hold'em (format yang hampir selalu anda mainkan):
 
 - **Pertaruhan minimum**: 1 big blind
-- **Raise minimum (min-raise)**: sekurang-kurangnya ==sebesar pertaruhan atau raise sebelumnya== ditambah di atasnya
+- **Raise minimum (min-raise)**: sekurang-kurangnya ==sebesar pertaruhan atau raise penuh sebelumnya== ditambah di atasnya
 - **Maksimum**: keseluruhan stack anda — itulah maksud "no limit"
 
 Dua contoh pengiraan:
@@ -128,7 +128,7 @@ Dua contoh pengiraan:
 | Flop | Pemain bertaruh $6 | Tambah $6 → $12 jumlahnya |
 | Pre-flop (blind $1/$2) | Pemain raise kepada $6 (kenaikan $4 di atas blind $2) | Tambah $4 → $10 jumlahnya |
 
-Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise terakhir, bukan big blind. Pada pre-flop, big blind dikira sebagai pertaruhan pembuka — sebab itulah open-raise terkecil ialah kepada 2 big blind.
+Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise penuh terakhir, bukan big blind. (Perkataan "penuh" penting apabila seseorang all-in kurang daripada satu raise: selepas pertaruhan $10 dan all-in $14, inkremen yang perlu disamai kekal $10, jadi raise terkecil ialah kepada $24.) Pada pre-flop, big blind dikira sebagai pertaruhan pembuka — sebab itulah open-raise terkecil ialah kepada 2 big blind.
 
 Dua peraturan poker live yang datang bersama raise:
 
@@ -145,7 +145,7 @@ Dalam **No-Limit Hold'em: tiada had**. Anda boleh raise, kena re-raise, dan rais
 
 Dua sempadan masih terpakai:
 
-- Setiap re-raise mesti memenuhi ==peraturan inkremen min-raise== di atas
+- Setiap re-raise mesti memenuhi ==peraturan inkremen min-raise== di atas — satu-satunya pengecualian ialah all-in, yang boleh kurang daripada itu
 - ==r:Anda tidak boleh raise pertaruhan anda sendiri.== Jika anda bertaruh dan semua orang hanya call, pusingan tamat — anda hanya boleh raise semula jika ada orang raise *anda* dahulu
 
 Dalam permainan **Fixed-Limit**, setiap pusingan ada had (pot "capped"). Peraturan kejohanan WSOP meletakkan had itu pada ==satu pertaruhan tambah empat raise== (Rule 100.b) — dan pengecualiannya berjalan terbalik daripada sangkaan kebanyakan orang: ==r:had itu kekal walaupun tinggal dua pemain sahaja dalam tangan itu==. Ia hanya terbuka apabila **seluruh kejohanan** tinggal dua orang. Dalam cash game peraturan rumah yang berkuasa, jadi tanya pengedar.
@@ -213,7 +213,7 @@ A. Tidak boleh. Jika anda bertaruh dan lawan hanya call, anda tidak boleh menamb
 
 **Q. Berapa kali boleh raise dalam Texas Hold'em?**
 
-A. Dalam No-Limit tiada had bilangan raise — re-raise boleh berterusan sehingga seorang pemain all-in, asalkan setiap raise memenuhi inkremen minimum. Dalam Fixed-Limit, peraturan kejohanan WSOP mengehadkan satu pusingan kepada satu pertaruhan tambah empat raise (Rule 100.b), dan had itu kekal walaupun tinggal dua pemain dalam tangan itu.
+A. Dalam No-Limit tiada had bilangan raise — re-raise boleh berterusan sehingga seorang pemain all-in, asalkan setiap raise memenuhi inkremen minimum (all-in boleh kurang daripada itu). Dalam Fixed-Limit, peraturan kejohanan WSOP mengehadkan satu pusingan kepada satu pertaruhan tambah empat raise (Rule 100.b), dan had itu kekal walaupun tinggal dua pemain dalam tangan itu.
 
 **Q. Boleh fold di luar giliran?**
 

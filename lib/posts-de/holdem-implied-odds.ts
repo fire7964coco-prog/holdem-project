@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -63,7 +63,7 @@ Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis 
 
 ## Wie berechnest du Implied Odds?
 
-**Um Implied Odds zu berechnen, ermittle, wie viel extra du gewinnen musst, wenn du triffst, mit: extra nötig = (dein Call ÷ deine Trefferquote) − (der aktuelle Pot + dein Call).** Wenn du realistisch so viel mehr auf späteren Streets gewinnen kannst, ist der Call profitabel.
+**Um Implied Odds zu berechnen, ermittle, wie viel extra du gewinnen musst, wenn du triffst, mit: extra nötig = (dein Call ÷ deine Trefferquote) − (der aktuelle Pot + dein Call).** Wenn du realistisch so viel mehr auf späteren Streets gewinnen kannst – und deine Hand dann immer noch die beste ist –, ist der Call profitabel.
 
 Sauber geschrieben, mit ==g:x== als dem zusätzlichen Geld, das du gewinnen musst, wenn du komplettierst:
 
@@ -230,7 +230,7 @@ A. Bei Implied Odds geht es nur um das Geld, das noch zu gewinnen ist, und tiefe
 
 ## Die 3 Dinge, die du dir merken solltest
 
-1. **Die Formel:** extra nötig = (Call ÷ Trefferquote) − (aktueller Pot + Call). Wenn du realistisch mehr als das später gewinnen kannst, ist der Call gut, selbst wenn die Pot Odds Fold sagen.
+1. **Die Formel:** extra nötig = (Call ÷ Trefferquote) − (aktueller Pot + Call). Wenn du realistisch mehr als das später gewinnen kannst – mit einer Hand, die dann immer noch die beste ist –, ist der Call gut, selbst wenn die Pot Odds Fold sagen.
 2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie heads-up null, und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
 3. **Der dunkle Spiegel:** Reverse Implied Odds bestrafen Non-Nut-Draws. Ein Draw zu den Nuts ist weit mehr wert als derselbe Draw zur zweitbesten Hand.
 

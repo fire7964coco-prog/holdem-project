@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -62,7 +62,7 @@ The practical rule: **start with pot odds.** If your equity already beats the pr
 
 ## How to Calculate Implied Odds
 
-**To calculate implied odds, figure out how much extra you need to win when you hit, using: extra needed = (your call ÷ your hit chance) − (the current pot + your call).** If you can realistically win that much more on later streets, the call is profitable.
+**To calculate implied odds, figure out how much extra you need to win when you hit, using: extra needed = (your call ÷ your hit chance) − (the current pot + your call).** If you can realistically win that much more on later streets — and your hand is still best when it gets there — the call is profitable.
 
 Written cleanly, with ==g:x== as the extra money you must win when you complete:
 
@@ -221,7 +221,7 @@ A. Implied odds are all about the money left to win, and deep stacks mean more o
 
 ## The 3 Things to Remember
 
-1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later, the call is good even when pot odds say fold.
+1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later with what is still the best hand, the call is good even when pot odds say fold.
 2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero heads-up, and against a short stack there's very little left — fall back on pot odds.
 3. **The dark mirror:** reverse implied odds punish non-nut draws. A draw to the nuts is worth far more than the same draw to second best.
 

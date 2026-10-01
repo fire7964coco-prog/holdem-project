@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -271,7 +271,7 @@ A. One pair, followed by two pair. Because every player shares the five communit
 
 **Q. How often does the best hand win in poker?**
 
-A. Less often than you'd think before the river. Even pocket aces — the best starting hand — win only about 85% of the time heads-up, and much less against a full table. By the river the best five cards win by definition; the upsets happen earlier, when a made hand gets outdrawn by a live draw.
+A. Less often than you'd think before the river. Even pocket aces — the best starting hand — win only about 85% of the time heads-up against a random hand, and much less against a full table. By the river the best five cards win by definition; the upsets happen earlier, when a made hand gets outdrawn by a live draw.
 
 **Q. How often do you hit the flop in poker?**
 

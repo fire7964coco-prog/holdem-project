@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-01",
+  masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -63,7 +63,7 @@ La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el prec
 
 ## Cómo calcular las odds implícitas
 
-**Para calcular las odds implícitas, averigua cuánto extra necesitas ganar cuando ligues, usando: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call).** Si de forma realista puedes ganar eso de más en las calles siguientes, el call es rentable.
+**Para calcular las odds implícitas, averigua cuánto extra necesitas ganar cuando ligues, usando: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call).** Si de forma realista puedes ganar eso de más en las calles siguientes — y tu mano sigue siendo la mejor cuando llegas ahí —, el call es rentable.
 
 Escrito limpio, con ==g:x== como el dinero extra que debes ganar cuando completas:
 
@@ -222,7 +222,7 @@ A. Las odds implícitas van todas del dinero que queda por ganar, y los stacks p
 
 ## Las 3 cosas que debes recordar
 
-1. **La fórmula:** extra necesario = (call ÷ % de ligar) − (bote actual + call). Si de forma realista puedes ganar más que eso después, el call es bueno incluso cuando las pot odds dicen fold.
+1. **La fórmula:** extra necesario = (call ÷ % de ligar) − (bote actual + call). Si de forma realista puedes ganar más que eso después con la que sigue siendo la mejor mano, el call es bueno incluso cuando las pot odds dicen fold.
 2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in son cero mano a mano, y contra un stack corto queda muy poco — vuelve a las pot odds.
 3. **El espejo oscuro:** las reverse implied odds castigan los proyectos que no son al nut. Un proyecto al nut vale mucho más que el mismo proyecto a una mano segunda mejor.
 
