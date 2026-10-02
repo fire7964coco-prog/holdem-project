@@ -1,3 +1,12 @@
+## 2026-10-02 (16) — MA-267 판정 회차 · 3묶음 전부 채택·배포 (MB-152)
+
+- 사장님 «MA-267 판정 회차 진행해». Opus 5.5 본체(판정·원문 대조·치환) + Opus 서브 렌즈 1(TD + 언어별 교열 · 결함 0 · 선택 제안 3 중 2 반영). 근거 = 검수장 `reports/2026-10/검수-MB129-132-rules-로케일-2026-10-02.md`.
+- 원문: TDA 공식 사이트 접속 거부(ECONNREFUSED) → 검수장 보존 TDA 2024 공식 PDF(SHA256 056105f8…)를 pdftotext로 축어 대조. §47-A «In no-limit and pot limit … will not reopen» · §47-B «In limit, at least 50% of a full bet or raise is required to re-open» · §17-A «spontaneously tabled or discarded» · §18-A/B.
+- ① 채택 — betting-actions FAQ «Can you raise your own bet?» **EN 먼저 + 9로케일**(pt·de·es·zh·zh-hant·ja·id·ms·ar): 재개 조건을 NL/PL로 한정하고 FL 문장 추가(«50% 이상 올인이면 재개 · TDA 2024 Rule 47-B»). 검수장 지적 4로케일 + EN/PT 동형 후보 + 같은 문면 ja·id·ms·ar까지 10사본. 비핵심 15로케일(bn·fa·fil·fr·he·hi·it·pl·ro·ru·sw·th·tr·uk·vi)은 옛 단순 문구(«다른 사람이 먼저 레이즈해야»)라 범위 밖 → 🪶.
+- ② 채택 — zh-hant showdown 快速解答: «하는 쪽엔 처음부터 없는 선택지» 단정 삭제 → 보통 먼저 공개 · 포기 머크 가능 · 카드를 보유/공개한 콜러의 요구권(TDA 18) · WSOP 72 제재로 구분(같은 글 본문 72행·EN 59~63행과 일치). 지시어 «這個權利» → «這個選擇»(렌즈).
+- ③ 채택 — zh-hant blind-meaning FAQ: SB/BB 표기를 NL/PL로 한정 + FL은 두 베팅액으로 이름 붙음(본문 100·102행과 일치).
+- `updated` 10-02(12파일) · betting 로케일 `masterUpdated` 10-02. 게이트: check:de-style 회차 전과 동일(기존 D4 «ein Bet» L136 1건 · 내가 만든 D7 퍼센트 혼재는 «50%»로 정정) · faq-schema·drift·cjk·hangul 해당 글 경보 0 · audit:hard = KO 슬러그 아님(F0 미검사) · build ✅(74 + intl 628).
+
 ## 2026-10-02 (15) — §2-P EN 먼저 → 9로케일 전파 (MB-151 · MA-272 ACK)
 
 - 사장님 «en-first-queue §2-P EN 먼저 고치고 로케일 전파해». Opus 5.5 본체(EN·판정·게이트) + Opus 서브 9레인 병렬(로케일당 1 · 공통 브리프 scratchpad). 우편함 검수장→본체 MA-272(착수 공지 · 요청 0) → MB-151로 ACK.

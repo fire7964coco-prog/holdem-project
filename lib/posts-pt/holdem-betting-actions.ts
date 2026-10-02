@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à última aposta ou raise completo) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -208,7 +208,7 @@ A. Sim — se alguém apostar depois do seu check, você pode aumentar quando a 
 
 **Q. Pode aumentar a própria aposta?**
 
-A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. Você só volta a aumentar se a ação voltar até você diante de pelo menos um aumento completo sobre a sua aposta — seja de um único jogador, seja de vários all-ins curtos que somados chegam a isso; um único all-in por menos que um aumento completo não reabre a ação.
+A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. No No-Limit e no Pot-Limit, você só volta a aumentar se a ação voltar até você diante de pelo menos um aumento completo sobre a sua aposta — seja de um único jogador, seja de vários all-ins curtos que somados chegam a isso; um único all-in por menos que um aumento completo não reabre a ação. No Fixed-Limit a régua é mais baixa: um all-in de pelo menos 50% de uma aposta ou aumento completo já reabre a ação (TDA 2024, regra 47-B).
 
 **Q. Quantas vezes pode aumentar no Texas Hold'em?**
 

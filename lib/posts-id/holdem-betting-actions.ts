@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise penuh terakhir), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -207,7 +207,7 @@ A. Bisa — kalau ada yang bertaruh setelah Anda check, Anda boleh raise saat gi
 
 **Q. Bisakah Anda me-raise taruhan Anda sendiri?**
 
-A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Anda hanya bisa raise lagi kalau aksi kembali ke Anda dan Anda menghadapi setidaknya satu raise penuh di atas bet Anda — entah dibuat oleh satu pemain atau terkumpul dari beberapa all-in pendek; satu all-in yang kurang dari satu raise penuh tidak membuka kembali aksi.
+A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Di No-Limit dan Pot-Limit, Anda hanya bisa raise lagi kalau aksi kembali ke Anda dan Anda menghadapi setidaknya satu raise penuh di atas bet Anda — entah dibuat oleh satu pemain atau terkumpul dari beberapa all-in pendek; satu all-in yang kurang dari satu raise penuh tidak membuka kembali aksi. Di Fixed-Limit ambangnya lebih rendah: all-in senilai minimal 50% dari satu bet atau raise penuh sudah membuka kembali aksi (TDA 2024 Rule 47-B).
 
 **Q. Berapa kali boleh raise di Texas Hold'em?**
 

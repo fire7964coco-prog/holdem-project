@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise penuh sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 minit",
   emoji: "🃏",
@@ -209,7 +209,7 @@ A. Boleh — jika seseorang bertaruh selepas anda cek, anda boleh raise apabila 
 
 **Q. Boleh raise pertaruhan sendiri?**
 
-A. Tidak boleh. Jika anda bertaruh dan lawan hanya call, anda tidak boleh menambah lagi — pusingan pertaruhan tamat. Anda hanya boleh raise semula jika aksi kembali kepada anda dengan sekurang-kurangnya satu raise penuh di atas pertaruhan anda — sama ada dibuat oleh seorang pemain atau terkumpul daripada beberapa all-in pendek; satu all-in yang kurang daripada raise penuh tidak membuka semula aksi.
+A. Tidak boleh. Jika anda bertaruh dan lawan hanya call, anda tidak boleh menambah lagi — pusingan pertaruhan tamat. Dalam No-Limit dan Pot-Limit, anda hanya boleh raise semula jika aksi kembali kepada anda dengan sekurang-kurangnya satu raise penuh di atas pertaruhan anda — sama ada dibuat oleh seorang pemain atau terkumpul daripada beberapa all-in pendek; satu all-in yang kurang daripada raise penuh tidak membuka semula aksi. Dalam Fixed-Limit ambangnya lebih rendah: all-in sekurang-kurangnya 50% daripada satu pertaruhan atau raise penuh sudah membuka semula aksi (TDA 2024 Rule 47-B).
 
 **Q. Berapa kali boleh raise dalam Texas Hold'em?**
 
