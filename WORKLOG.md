@@ -1,3 +1,13 @@
+## 2026-10-02 (12) — de GTO 예제 13편 ③ 배치 B ⑤~⑧ 저작 (배포 없음)
+
+- 사장님 «핸드오프 최상단 de GTO 배치 B 진행해». 17:33 착수 · Opus 5.5 본체(헤드) + Opus 서브 4레인 병렬(편당 1레인 · 새 파일 1개만). 우편함 검수장→본체 미처리 0.
+- 장면 ⑤⑥⑦ 렌더(`make-gto-spot-scenes --lang=de srp-monotone srp-paired srp-low-rainbow` · 각 34KB) → ⑧ 견본 포함 4장 Read 확인(Q♠9♠2♠ · 6♣6♦3♥ · 6♠5♥2♦ · A♦K♠2♥ 22,5/89 = 원문 계약 §3).
+- 산출 `lib/posts-de/` monotone-board-strategy(desc 157) · paired-board-strategy(141) · low-board-check-raise(150) · 3bet-pot-cbet(137). 구조 EN과 동일 + 장면 1.
+- 헤드 정정 3: ⑦ FAQ 질문 «Ist ein Check-Raise unhöflich?» → «erlaubt – und ist er unhöflich?»(답이 허용 여부를 그대로 말해 질문·답 어긋남 · EN 질문 복원) · ② CTA «GTO-Solver» → «Poker-Solver»(8편 통일) · 🔴 **원문 계약 §5·브리프 §3 정정: «4,06»은 ⑦ EN 본문에 있다**(264행 «==7.3 ÷ 1.8 = 4.06==» — 계약이 «본문에 없음»으로 잘못 적음 · 레인이 발견 · DE는 보존).
+- 게이트(index·DE_CLUSTERS 임시 등록 · A+B 8편): check-gto-numbers 일치 27 + 🔴1 = ⑧ 7,6(ko «7.6~9.2%» 앞 숫자 미검사 · de는 브리프대로 양끝 % → 값은 계약 §4 ⑧과 같음 · 결함 아님) · check-gto-structure 8/8 ✔ · check-de-style GTO 8/8 0건(D5 미판정 1 = ⑤ L188 «prüfst» 동사 · OK) · audit:hard --locale=de 🔴0(새 4편 카드 문단 16 미판정 → 손 검산 OK: ⑤ 너트 8콤보·Q♥J♦ vs AQ/KQ 16 · ⑥ 6-6-6-A-3 · 6 보유 시 쿼즈 소멸 4→3 · ⑦ 셋·65s · ⑧ K♥K♦ 잔여 KK) · check:images 이상 없음 · image-reuse 🔴0.
+- 🪶 함정: 임시 등록 스크립트가 index.ts CRLF 때문에 앵커를 못 찾고 **조용히 무변경** → check-de-style D0 8건으로 발견. 앵커 존재를 throw로 확인하게 재작성.
+- 🔴 index·check-de-style 등록 되돌림 · 글 4 + 장면 3 + 문서 2 + ② 1줄만 커밋. EN 유래 의심·레인 보강 = 핸드오프 배치 C 절 🪶(마감 렌즈 몫).
+
 ## 2026-10-02 (11) — de GTO 예제 13편 ② 배치 A ①~④ 저작 (배포 없음 · MB-149 = MA-267 ACK)
 
 - 사장님 «핸드오프 최상단 de GTO 배치 A(①~④) 진행해». Opus 5.5 본체(헤드) + Opus 서브 4레인 병렬(편당 1레인 · 새 파일 1개만 쓰기 · 커밋 금지). 우편함: 검수장→본체 MA-267 1건(→ MB-149 ACK · 핸드오프 G절 등재).

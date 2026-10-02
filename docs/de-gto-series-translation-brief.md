@@ -40,7 +40,7 @@
 - 고지를 범위째 보존: 플랍 첫 결정만 · 후속 반응 없음 · 해석 vs 계산 결과 · 화면 반올림 · Rake 미반영 · 가정이 바뀌면 전략도 바뀜 · ⑦의 별도 재솔브.
 - EN의 근사 표현은 근사로: about → etwa/rund, almost → fast, this configuration → in dieser Konfiguration. 표본을 보편 규칙으로, 결과를 EV·수익 약속으로 바꾸지 않는다.
 - Equity · EV · EQR · Fold Equity를 구분한다. **EQR이 높다고 EV가 높은 것이 아니다**(⑨가 반례). 빈도 차이는 **Prozentpunkte**이지 상대 %가 아니다.
-- 🔴 EN 본문에 없는 값(BTN 62,9% · «4,06배» · 재솔브 root Check 98,0%)은 spec·주석에만 있다 — **본문 문장으로 추가하지 않는다**(원문 계약 §5).
+- 🔴 EN 본문에 없는 값(BTN 62,9% · 재솔브 root Check 98,0%)은 spec·주석에만 있다 — **본문 문장으로 추가하지 않는다**(원문 계약 §5). «4,06»은 ⑦ EN 본문 레이즈 사이즈 절에 **있으므로** 보존한다(10-02 배치 B 정정).
 - ⑩: EN 제목 «Three Combos Hit…»를 따르되 본문에서 **보드와 페어가 된 A5s 3콤보**와 **기존 포켓 오버페어 36콤보**를 반드시 구분한다(«Range hat das Board komplett verfehlt» 금지 — 원문 계약 §6).
 
 ## 4. 독일어 표기와 고정 용어

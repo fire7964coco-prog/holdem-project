@@ -165,7 +165,7 @@ Der gängige Rat lautet, dass A-High-Hände mit Showdown Value zurückchecken so
 
 ## Prüf es selbst nach
 
-Öffne den [kostenlosen GTO-Solver](/de/solver), geh zu **Lernspots** und wähle **Trockenes K-High-Board** → **⚡ Ergebnisse ansehen** – dieser Bildschirm erscheint ohne Wartezeit. Stell danach die Auswahl **Spieler:** auf **IP (BTN (Open-Raiser))** – die Tabelle zur Range-Zusammensetzung oben ist direkt aus diesem Panel abgelesen, und der Vergleich beider Seiten ist der schnellste Weg zu sehen, warum eine von ihnen nicht betten kann.
+Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Trockenes K-High-Board** → **⚡ Ergebnisse ansehen** – dieser Bildschirm erscheint ohne Wartezeit. Stell danach die Auswahl **Spieler:** auf **IP (BTN (Open-Raiser))** – die Tabelle zur Range-Zusammensetzung oben ist direkt aus diesem Panel abgelesen, und der Vergleich beider Seiten ist der schnellste Weg zu sehen, warum eine von ihnen nicht betten kann.
 
 Wenn du den Spot trainieren statt nur lesen willst, öffne den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus, du wählst eine Aktion, und er benotet die Entscheidung in verlorenen Big Blinds. Kostenlos, nichts zu installieren, kein Konto.
 
