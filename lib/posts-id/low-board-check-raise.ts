@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada 6♠5♥2♦, BB check 96,8% dan lead 3,2%, meski equity 48,3% adalah yang tertinggi kedua dari tujuh contoh BTN vs BB. Hanya 4-3 yang membentuk straight, dan hand itu tidak ada dalam kedua range. Kedua pemain sama-sama memiliki set, sehingga BB tidak unggul di puncak range. Dalam perhitungan lanjutan yang terpisah, BB check-raise 14,9% saat menghadapi bet 1,8bb, menggunakan set, two pair, dan banyak straight draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "11 mnt",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-id.webp",
@@ -255,7 +255,7 @@ A. Check-raise diizinkan di hampir semua kasino dan permainan online standar; ha
 
 **Q. Apakah frekuensi ini cocok untuk permainan saya?**
 
-A. Jadikan acuan untuk kondisi yang sebanding: heads-up, 100bb, open BTN 2,5bb, range pertahanan standar, tanpa rake. Contoh ini hanya menawarkan bet 33%, sehingga solver tidak dapat memilih ukuran lebih besar. Menambah ukuran akan mengubah frekuensi. Prinsip membaca posisi, puncak range, dan draw tetap berguna, tetapi hasil persisnya perlu dihitung dengan input baru.
+A. Jadikan acuan untuk kondisi yang sebanding: heads-up, 100bb, open BTN 2,5bb, range pertahanan standar, tanpa rake. Contoh ini hanya menawarkan bet 33%, sehingga solver tidak dapat memilih ukuran lebih besar. Dengan dua ukuran, frekuensinya mungkin bergeser; hanya versi satu ukuran yang dihitung di sini. Prinsip membaca posisi, puncak range, dan draw tetap berguna, tetapi hasil persisnya perlu dihitung dengan input baru.
 `.trim(),
 };
 

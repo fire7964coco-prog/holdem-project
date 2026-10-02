@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Depois da abertura do small blind e do call do big blind, o flop K♥T♦6♠ recebe aposta em 67,4% e check em 32,6%. Nos sete potes com um único aumento anteriores da série, o jogador fora de posição apostava só 0,1%–23,7%. Duas coisas mudaram: agora ele é quem abriu o pote, não quem pagou, e o board favorece seu range. Juntas, elas levam sua realização de equity a 103,1%, mesmo fora de posição.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-pt.webp",
@@ -48,7 +48,7 @@ Resultado | SB aposta **67,4%** — primeiro pote com um único aumento da séri
 | SPR | **16,2** | 17,7 | 4,0 |
 | Tamanhos de aposta | Cerca de um terço do pote, **um único tamanho** | Cerca de um terço e três quartos (⑦ tem só um) | Cerca de um terço e dois terços |
 | Rake | Não considerado | Não considerado | Não considerado |
-| Data da consulta | 2026-08-08 (resultado do exemplo de estudo) | 2026-08-08 | 2026-08-08 |
+| Data da consulta | 2026-08-08 (resultado do exemplo de estudo) | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 | ⑧⑨ 2026-08-20 · ⑩ 2026-08-08 |
 
 O pote de 6bb é ==3 do SB mais 3 do BB==. Os dois blinds participam da mão, então não existe um blind de outro jogador que foldou para acrescentar. O stack efetivo é ==100 − 3 = 97bb==. Nas comparações, BTN é o botão; IP indica o jogador em posição.
 
@@ -159,7 +159,7 @@ Os sets apontam na mesma direção. Três pares na mão formam set neste flop �
 | EV (bb) | 3,42 | 2,58 |
 | **EQR (realização de equity)** | **103,1%** | 96,1% |
 
-O pote é de 6bb, então a parcela bruta do small blind vale ==6 × 55,3% = 3,32bb==, enquanto o EV efetivo é 3,42bb. Assim, ==3,42 ÷ 3,32 ≈ 103,1%==.
+O pote é de 6bb, então a parcela bruta do small blind vale ==6 × 55,3% = 3,318bb==, enquanto o EV efetivo é 3,42bb. Assim, ==3,42 ÷ 3,318 ≈ 103,1%==.
 
 Selecionando sete exemplos da série e ordenando pela EQR:
 

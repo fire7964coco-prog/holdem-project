@@ -26,11 +26,11 @@ export const POST: Post = {
   title: "Dos ases en el flop y la apuesta salta al 80%",
   seoTitle: "Trips y blockers en un board con A pareado: apuesta el 80%",
   desc: "Un flop pareado recibe un 3% de apuesta y otro un 80.1%. En A-A-6 el as es del que subió — y los trips que te ganan faltan en el rango del que paga.",
-  tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop A♠A♥6♦ recibe una apuesta el 80.1% de las veces (79.6% a un tercio del bote, 0.5% a tres cuartos, check 19.8%). Es lo contrario del 3.0% que se vio en el board pareado 6♣6♦3♥ — y lo que los separó no es que el board viniera pareado, sino de quién era la carta que formó esa pareja. Las manos que hacen trips con un as van 88 combos contra 66, y 16 de esos combos, A-K y A-Q, faltan por completo en el rango con el que se paga.",
+  tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop A♠A♥6♦ recibe una apuesta el 80.1% de las veces (79.6% a un tercio del bote, 0.5% a tres cuartos, check 19.8%). Es lo contrario del 3.0% que se vio en el board pareado 6♣6♦3♥ — y lo que los separó no es tanto que el board viniera pareado como qué carta formó la pareja y a qué rango le encaja (junto con el board cambiaron también los asientos y los rangos). Las manos que hacen trips con un as van 88 combos contra 66, y 16 de esos combos, A-K y A-Q, faltan por completo en el rango con el que se paga.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🅰️",
@@ -60,7 +60,7 @@ Resultado | La SB apuesta el **80.1%** — frente al 3.0% del board pareado 6-6-
 :::
 
 > **Respuesta rápida**
-> En el board pareado A-A-6 la primera acción de la ciega pequeña es **apostar 80.1%, hacer check 19.8%** (79.6% de eso a un tercio del bote). Es lo contrario del 3.0% de 6-6-3, y lo que los separó **no es que el board viniera pareado, sino de quién era la carta que formó esa pareja.** Las manos que hacen trips con un as van **88 combos contra 66**, y de esos, **A-K y A-Q — 16 combos — no existen en el rango con el que paga la ciega grande.** Hicieron 3-bet con ellas antes del flop.
+> En el board pareado A-A-6 la primera acción de la ciega pequeña es **apostar 80.1%, hacer check 19.8%** (79.6% de eso a un tercio del bote). Es lo contrario del 3.0% de 6-6-3, y lo que los separó **no es tanto que el board viniera pareado como qué carta formó la pareja y a qué rango le encaja** — junto con el board cambiaron también los asientos y los rangos. Las manos que hacen trips con un as van **88 combos contra 66**, y de esos, **A-K y A-Q — 16 combos — no existen en el rango con el que paga la ciega grande.** Hicieron 3-bet con ellas antes del flop.
 
 ## ¿En qué condiciones salieron estos números?
 

@@ -27,8 +27,8 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop 7♦6♦5♣ recibe una apuesta apenas el 9.6% de las veces y un check el 90.4%. Bote, stack, SPR, tamaño de apuesta y los dos rangos son idénticos al spot anterior — solo cambiaron las tres cartas del board, y la apuesta pasó del 67.4% al 9.6%. La ventaja de rango que se ganó preflop era una ventaja en cartas altas, y un board bajo y conectado la borra de golpe. La equity se invierte, 49.6% contra 50.4%, y la realización fuera de posición baja al 85.3%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🪜",
@@ -236,7 +236,7 @@ A. Porque un rango está concentrado en cartas concretas. El rango de apertura d
 
 A. Casi siempre check. El solver pasa el 90.4% a check en 7♦6♦5♣. Incluso el 9.6% que apuesta está repartido en capa fina entre **88, un sobrepar que además es proyecto a dos puntas** (39.5% por media de clase, lo más alto de aquí), top pair (A7s, K7s) y un cuatro del mismo palo que hace dos puntas (K4s, Q4s). Pero esto no es lo mismo que rendirse — con las manos de valor fino, hacer check vale más o menos lo mismo que apostar (a menos de 0.03bb), y lo que pasa después del check, calls y check-raises incluidos, no está en este solve.
 
-**Q. La ciega pequeña tiene tres veces más sobrepares. ¿Por qué la apuesta es solo del 9.6%?**
+**Q. La ciega pequeña tiene tres veces y media más sobrepares (42 combos contra 12). ¿Por qué la apuesta es solo del 9.6%?**
 
 A. Porque el rival tiene mucho que le gana a un sobrepar en este board: 42 combos entre sets, dobles parejas y escaleras, más 24.9% de proyectos a dos puntas y 23.8% de gutshots. Incluso los 60 combos de top pair que ahora van por detrás llevan cartas que le dan la vuelta para el river. Un sobrepar aquí es "voy delante ahora, difícil meter fichas más de una vez". ⚠ No busques la razón en el SPR de 16.2 — un bote de 6bb, un stack de 97bb y un SPR de 16.2 son **las mismas constantes** en los boards [K-10-6](/es/blog/blind-battle-cbet) y [A-A-6](/es/blog/ace-paired-board-strategy), donde esa misma ciega pequeña apuesta 67.4% y 80.1%. Lo que produjo el 9.6% no es el stack; son tres cartas del board.
 

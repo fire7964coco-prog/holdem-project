@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, big blind check 88,8%, bet kecil 8,0%, dan bet besar hanya 3,2%. Flush sudah terbentuk dengan dua sekop, sehingga bet besar cenderung menyaring lawan ke hand yang lebih kuat. Delapan combo nut flush rata-rata check 69,9%; flush selain nuts bahkan check 81,4%. Angka ini menggambarkan keputusan pertama BB, bukan frekuensi bet BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-id.webp",
@@ -120,7 +120,7 @@ Equity hanya turun dari 97,7% menjadi 94,0%, tetapi EQR turun ke 197,0%. **Besar
 
 **BB: 7,1% dibandingkan 5,7% milik BTN.** Namun, perbandingan flush draw berbalik.
 
-![Perbandingan kategori hand big blind dan button pada flop tiga sekop](/images/gto-srp-monotone-ranges-id.webp "Q♠9♠2♠ · BB lebih banyak memiliki flush jadi; BTN lebih banyak memiliki flush draw dan Ace-High")
+![Perbandingan kategori hand big blind dan button pada flop tiga sekop](/images/gto-srp-monotone-ranges-id.webp "Q♠9♠2♠ · BB lebih banyak memiliki flush jadi; BTN lebih banyak memiliki overpair dan Ace-High")
 
 | Kategori | BB (OOP) | BTN (IP) |
 |---|---|---|

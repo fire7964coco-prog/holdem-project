@@ -95,7 +95,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -114,7 +114,7 @@ The flop is **6♣ 6♦ 3♥** — low cards, and a pair among them. It looks li
 
 Hold TT there and your equity is **76.0%**. The same TT is around 54–57% against AK preflop, so this flop is *better* for it than the usual flip. Hold A9 and you have nothing — but four-fifths of your opponent's range has nothing more than the board's pair either, so folding it right away throws away the pot.
 
-**A board nobody hit is really a contest over whose high cards are better.** The [ace-high](/en/blog/a-high-board-cbet) and [king-high](/en/blog/k-high-board-cbet) flops were fights over who connected; this one is a fight between two ranges that mostly did not. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
+**A board nobody hit is really a contest over whose high cards are better.** The [ace-high](/en/blog/a-high-board-cbet) and [king-high](/en/blog/k-high-board-cbet) flops were fights over who connected; this one is a fight between two ranges that mostly did not. Every solver figure below comes from HoldemMaster's [free GTO solver](/en/solver); probabilities such as the 17.2% chance of a paired flop are plain combinatorics.
 
 
 :::stripe
@@ -125,7 +125,7 @@ Result | BB checks 97.0% — while holding more trips
 :::
 
 > **Quick answer**
-> Check almost everything, and defend far wider than feels right. Holding a six is not a reason to lead — leading only folds out what you already beat, so the sixes stay in the checking range, and the big blind checks **97.0%** here. The hands that genuinely gain on this flop are the pocket pairs above a six, and the ones to stop folding are ace-high and the better king-high hands.
+> Check almost everything, and do not fold just because you missed the board. Holding a six is not a reason to lead — leading only folds out what you already beat, so the sixes stay in the checking range, and the big blind checks **97.0%** here. The hands that genuinely gain on this flop are the pocket pairs above a six, and ace-high should not be an automatic fold against a single small bet — exactly how wide the optimal defense goes is not something this study spot shows.
 
 ## What conditions produced these numbers?
 
@@ -145,7 +145,7 @@ The button opens to 2.5bb, the big blind calls, and everyone else folds — two 
 
 **A set is a pocket pair that matches one board card; trips is one card in your hand matching a pair on the board.** They are the same ranking — three of a kind, filed together in the [hand rankings](/en/blog/holdem-hand-rankings) — but they play completely differently.
 
-Every other single-raised flop in this series produced sets (the one other paired board, A♠A♥6♦, comes later in the blind-battle group): on A-7-2 the big blind needed 77 or 22 in hand. Here the board brings its own pair, so **any single six makes trips**, and only 66 in the pocket makes quads.
+On every unpaired flop in this series, three of a kind means a set (the one other paired board, A♠A♥6♦, comes later in the blind-battle group): on A-7-2 the big blind needed 77 or 22 in hand. Here the board brings its own pair, so **any single six makes trips**, and only 66 in the pocket makes quads.
 
 | Your hand on 6♣6♦3♥ | You have |
 |---|---|
@@ -309,7 +309,7 @@ Open the [free GTO solver](/en/solver), then go to **Study Spots → Paired Boar
 
 What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in this series (second is the button's 88 in the [3-bet pot on a low board](/en/blog/3bet-pot-low-board) at **346.0%**; on the big blind's side the runner-up is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
 
-Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
+Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
 ## FAQ
 

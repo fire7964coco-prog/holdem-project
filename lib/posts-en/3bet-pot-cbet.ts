@@ -92,7 +92,7 @@ export const POST: Post = {
   tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets its whole range: checking rounds to 0.0%, and no combo out of 63 checks even 0.1% of the time. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -202,11 +202,11 @@ Run the same three bets in a single-raised pot and you have spent ==3.67 + 8.56 
 
 ## Why is the smaller size used more often?
 
-**Because of the shape of the range, not the depth of the stack.** All 63 combos here are a pair or better, so **the bottom of the range is gone entirely** and it never splits into "nuts or nothing." With no air to pair up with the large size, the whole range gets pushed toward the small one — which is why 57.8% of it goes out at a third of the pot. ("Condensed" is the usual label for a range with no bottom *and* no top; it does not fit here, because this range owns the top of the board outright — all six combos of sets.)
+**Because of the shape of the range, not the depth of the stack.** All 63 combos here are a pair or better, so **the bottom of the range is gone entirely** and it never splits into "nuts or nothing." With no air to pair up with the large size, the whole range gets pushed toward the small one — which is why 57.8% of it goes out at a third of the pot. ("Condensed" is the usual label for a range with no bottom *and* no top; it does not fit here, because this range owns the top of the board outright — both top sets, AA and KK, all six combos.)
 
 A-K-2 rainbow gives almost nothing to draw to, so there is no need to charge a draw either. Between the two, the range shape is what does the work.
 
-⚠ **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and [8-5-2](/en/blog/3bet-pot-low-board) at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
+⚠ **"Shallow stacks mean small bets" is not it.** Two later spots in this series sit at exactly the same SPR of 4.0 and fire the *large* size almost always — Q-T-7 at **98.4%** and [8-5-2](/en/blog/3bet-pot-low-board) at **97.8%** — for two different reasons. Q-T-7 is a wet board, so a big bet is what puts a price on the draws. 8-5-2 is dry like this one, but its range splits into overpairs and ace-high with almost nothing between, and a polarized shape bets big. Same stack depth, opposite sizing, and neither reason is the depth.
 
 **And the large size is not "the strong hands' share" either.** Count the combos that can get a whole stack in — sets, two pair and top pair — and you get ==6 + 9 + 21 = 36 combos, 57.1%==, which is more than the 42.2% that bets large.
 
@@ -232,7 +232,7 @@ Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ 
 
 ⚠ **In this spot, though, the premise behind MDF stands on weak ground.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** A range with no unpaired hand in it leaves little of the pure bluffing MDF assumes, so the lean is toward folding **more**, not less. ⚠ Two qualifications keep that honest: ① "0% no-made-hand" is not "0% bluffs" — a weak underpair in the betting range can be doing the work of a bluff or a protection bet; ② the button's response node is not in this solve, so the actual optimal defense frequency cannot be confirmed here. So do not read the 41.5% as "therefore continue with middle pocket pairs." Whether the small size even prices those 60 combos in is doubtful: against the big blind's whole range only QQ and JJ hold more than the 19.8% it asks for, while 99 down to 33 sit at 7.6–9.2%. Either way, the reason for the size is the **shape of the range** from the previous section; this is a side effect.
 
-:::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, the pure-bluff assumption breaks and the figure is only a rough guide. In practice also weigh how well a hand holds up on later streets.]:::
+:::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, the pure-bluff assumption stands on weak ground and the figure is only a rough guide. In practice also weigh how well a hand holds up on later streets.]:::
 
 ## Why is the EQR 109.6% when the big blind is out of position?
 
@@ -270,7 +270,7 @@ Open the [free GTO solver](/en/solver), then go to **Study Spots → Ace-High Bo
 
 Check the header first: **Pot 22.5bb · Stack 89bb**. Seeing those instead of the 5.5bb and 97.5bb of the earlier spots is this whole article in a single glance. Then look for the row that is not there: the Hands panel lists only **five** categories for the big blind, and the missing one is "No made hand". Above it, in the action strip, the check chip reads **0.0% / 0.0 combos**.
 
-Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
+Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
 ## FAQ
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-02",
   readTime: "10 मिनट",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-hi.webp",

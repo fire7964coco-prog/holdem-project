@@ -27,8 +27,8 @@ export const POST: Post = {
   tldr: "Tras un 3-bet de la ciega grande y un call del botón, el flop 8♦5♣2♠ recibe una apuesta de dos tercios del bote el 97.8% de las veces. Lo raro: de los 83 combos de la ciega grande, exactamente tres ligaron pareja con este board — los A5s — y ni 88 ni 55 ni 22 están en el rango. La apuesta entra igual porque el rango se parte en 36 combos de sobrepares y 40 combos de A-high casi sin nada en medio — solo los tres A5s. Una forma polarizada apuesta grande.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎲",
@@ -128,7 +128,7 @@ Y los 40 combos de A-high **ganan en cuanto el rival foldea.** El 58.3% del rang
 
 **Porque 88, 55 y 22 no entran en un rango de 3-bet, y sí entran en un rango que paga.** Este es el primer spot de la serie donde la parte alta del board pertenece por completo al jugador en posición.
 
-![Infografía de composición de rangos que compara las clases de mano de la ciega grande y del botón en un board 8-5-2 en bote de 3-bet](/images/gto-3bp-low-ranges-es.webp "8-5-2 en un bote de 3-bet · reparto por categorías — el trío solo del lado del botón, los sobrepares casi el doble para la ciega grande")
+![Infografía de composición de rangos que compara las clases de mano de la ciega grande y del botón en un board 8-5-2 en bote de 3-bet](/images/gto-3bp-low-ranges-es.webp "8-5-2 en un bote de 3-bet · reparto por categorías — el trío solo del lado del botón, claramente más sobrepares para la ciega grande (36 combos contra 24)")
 
 | Categoría | BB (3-bettor) | BTN (caller) |
 |---|---|---|
@@ -187,7 +187,7 @@ Busca la **fila de "Trío" que falta** en el panel de Manos. Después cambia el 
 
 **Q. ¿Hay que cbetear A-K en un board bajo dentro de un bote de 3-bet?**
 
-A. Sí. En 8-5-2 A-K no tiene pareja ni proyecto inmediato (solo proyectos backdoor — una rueda runner-runner, más un color backdoor en los tres combos del mismo palo), y aun así el solver mete todo el rango en el tamaño grande el 97.8% de las veces. La razón es que el rango de la ciega grande está **polarizado — sobrepares o A-high, partido casi por la mitad** — y cuando el medio está vacío el tamaño sube, con todo el rango usándolo. Que el 58.3% del rango rival no ligara pareja ayuda, pero no lo leas como "el 58.3% foldea"; el nodo de respuesta no está en este solve.
+A. Sí. En 8-5-2 A-K no tiene pareja ni proyecto inmediato (solo proyectos backdoor — una rueda runner-runner, más un color backdoor en los tres combos del mismo palo), y aun así el solver mete el 97.8% del rango en el tamaño grande. La razón es que el rango de la ciega grande está **polarizado — sobrepares o A-high, partido casi por la mitad** — y cuando el medio está vacío el tamaño sube, con casi todo el rango usándolo. Que el 58.3% del rango rival no ligara pareja ayuda, pero no lo leas como "el 58.3% foldea"; el nodo de respuesta no está en este solve.
 
 **Q. ¿Qué significa un rango polarizado?**
 

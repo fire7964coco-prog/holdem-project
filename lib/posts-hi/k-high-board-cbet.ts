@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "BTN के open और BB के call के बाद K♠8♦3♣ पर BB अपनी range का 99.8% check करता है, A-high के 98.2% से भी ज्यादा। BB के पास overpair नहीं है क्योंकि AA preflop 3-bet करता है। EQR का अंतर भी बड़ा है: 80.7% बनाम 116.7%।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "9 मिनट",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-hi.webp",
@@ -143,7 +143,7 @@ Backdoors फिर भी हैं। तालिका का **backdoor flu
 ## टेबल पर इससे क्या बदलना चाहिए?
 
 - **Heads-up raise call करने के बाद इस dry K-high flop पर lead को विकल्प न मानें।** King होने पर भी। A-high की range-check वजह यहाँ और मजबूत है। लेकिन शर्त सिर्फ बोर्ड की शक्ल नहीं, **आपकी range की बनावट** है। जहाँ range का सबसे मजबूत हिस्सा विरोधी से ज्यादा हो, BB lead कर सकता है। इसका उलटा उदाहरण [9-8-7 flop](/hi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-hi.webp") है, जहाँ BB **23.7%** lead करता है।
-- **Check का मतलब check-fold नहीं।** छोटी C-bet के सामने BB काफी wide जारी रह सकता है—हर king, eights, underpairs और backdoor वाला ace-high। Top pair से call की योजना है; check-raises मुख्यतः 88, 33 और two pair से आते हैं।
+- **Check का मतलब check-fold नहीं।** छोटी C-bet के सामने BB काफी wide जारी रह सकता है—हर king, eights, underpairs और backdoor वाला ace-high। Top pair से call की योजना है; स्वाभाविक check-raise उम्मीदवार 88, 33 और two pair हैं (C-bet पर जवाब इस solve में शामिल नहीं है)।
 - **BTN पर AQ और AJ को एक तय action में न बाँधें।** छोटी bet और check-back दोनों की वजह है। विरोधी overcards वास्तव में fold करता है या नहीं, उसके अनुसार मिश्रण बदलें।
 - **Balanced विरोधी के check को कमजोरी न पढ़ें।** Checking range में 88 और 33 के sets तथा 12.7% top pair अभी भी हैं। Low stakes पर अक्सर उलटा मिलता है, क्योंकि कई खिलाड़ी मजबूत हैंड lead कर देते हैं। इसलिए value bet जारी रखें और कभी मिलने वाले check-raise की कीमत को स्वीकार करें।
 

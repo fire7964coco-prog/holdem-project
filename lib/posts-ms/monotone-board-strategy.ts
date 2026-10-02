@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, BB check 88.8%, bet kecil 8.0% dan bet besar hanya 3.2%. Apabila tiga kad flop sama suit, bet besar tanpa flush semakin menumpukan tangan yang call kepada flush. Nut flush pun check 69.9% secara purata; flush bukan nuts lebih kerap check, iaitu 81.4%. Angka tindakan ini ialah keputusan pertama BB, bukan strategi tindakan susulan BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-ms.webp",
@@ -118,7 +118,7 @@ Equity berubah sedikit sahaja — 94% berbanding 97.7% — tetapi EQR jatuh kepa
 
 **BB — 7.1% berbanding 5.7%.** Namun, arah kelebihan bagi flush *draw* terbalik.
 
-![Carta komposisi range BB dan BTN pada board tiga spade, dengan perbandingan flush, pair dan kad tinggi](/images/gto-srp-monotone-ranges-ms.webp "Q♠9♠2♠ · flush yang sudah terbentuk memihak BB; flush draw dan Ace-High memihak BTN")
+![Carta komposisi range BB dan BTN pada board tiga spade, dengan perbandingan flush, pair dan kad tinggi](/images/gto-srp-monotone-ranges-ms.webp "Q♠9♠2♠ · flush yang sudah terbentuk memihak BB; overpair dan Ace-High memihak BTN")
 
 | Kategori | BB (OOP) | BTN (IP) |
 |---|---|---|

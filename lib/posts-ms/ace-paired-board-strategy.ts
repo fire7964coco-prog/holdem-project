@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "Dua Ace, Bet Meningkat ke 80.1%",
   seoTitle: "Dua Ace, Bet 80.1% — Poker GTO Board Berpasangan AA6",
   desc: "Board 663 menghasilkan bet 3.0%, tetapi AA6 mencapai 80.1%. Bandingkan trips, kicker dan seluruh range untuk memahami c-bet SB.",
-  tldr: "Selepas SB open dan BB call, flop A♠A♥6♦ menghasilkan bet 80.1%: 79.6% pada satu pertiga pot dan 0.5% pada tiga perempat, dengan check 19.8%. Pada 6♣6♦3♥, bet hanya 3.0%. Perbezaannya ialah rank yang berpasangan dan hubungan seluruh range dengan board. Trips ace berjumlah 88 kombo pada SB berbanding 66 pada BB; AK dan AQ, 16 kombo, langsung tiada dalam range call BB.",
+  tldr: "Selepas SB open dan BB call, flop A♠A♥6♦ menghasilkan bet 80.1%: 79.6% pada satu pertiga pot dan 0.5% pada tiga perempat, dengan check 19.8%. Pada 6♣6♦3♥, bet hanya 3.0%. Perbezaannya bukan sangat kerana board berpasangan, tetapi rank mana yang berpasangan dan range siapa yang sesuai dengannya (kedudukan dan range turut berubah bersama board). Trips ace berjumlah 88 kombo pada SB berbanding 66 pada BB; AK dan AQ, 16 kombo, langsung tiada dalam range call BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-ms.webp",
@@ -32,7 +32,7 @@ Hasil | SB bet **80.1%** — berbanding 3.0% pada board berpasangan 663
 :::
 
 > **Jawapan ringkas**
-> Pada AA6, tindakan pertama SB ialah **bet 80.1%, check 19.8%**, dengan 79.6% pada satu pertiga pot. Ia jauh berbeza daripada bet 3.0% pada 663. Yang penting ialah **rank siapa yang berpasangan dan bagaimana seluruh range terjejas**. Trips ace berjumlah **88 kombo berbanding 66**. **AK dan AQ, 16 kombo**, langsung tiada dalam range call BB kerana tangan itu melakukan 3-bet sebelum flop dalam tetapan ini.
+> Pada AA6, tindakan pertama SB ialah **bet 80.1%, check 19.8%**, dengan 79.6% pada satu pertiga pot. Ia jauh berbeza daripada bet 3.0% pada 663. Yang membezakannya bukan sangat board yang berpasangan, tetapi **rank mana yang berpasangan dan range siapa yang sesuai dengannya** — kedudukan dan range juga berubah bersama board. Trips ace berjumlah **88 kombo berbanding 66**. **AK dan AQ, 16 kombo**, langsung tiada dalam range call BB kerana tangan itu melakukan 3-bet sebelum flop dalam tetapan ini.
 
 ## Apakah syarat yang menghasilkan angka ini?
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop K♥T♦6♠ menghasilkan bet 67,4% dan check 32,6% untuk SB. Pada tujuh single-raised pot sebelumnya, pemain tanpa posisi hanya bet 0,1%–23,7%. Ada dua perubahan: pemain OOP kini adalah raiser, dan board mendukung range-nya. Keduanya membuat realisasi equity SB mencapai 103,1%, meskipun ia bertindak lebih dulu.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-id.webp",
@@ -47,7 +47,7 @@ Hasil | SB bet **67,4%** — single-raised pot pertama dalam seri dengan mayorit
 | SPR | **16,2** | 17,7 | 4,0 |
 | Bet size | Sekitar sepertiga pot, **hanya satu ukuran** | Sekitar sepertiga dan tiga perempat (⑦ satu ukuran) | Sekitar sepertiga dan dua pertiga |
 | Rake | Tidak dimodelkan | Tidak dimodelkan | Tidak dimodelkan |
-| Tanggal pengamatan | 2026-08-08 (hasil spot belajar) | 2026-08-08 | 2026-08-08 |
+| Tanggal pengamatan | 2026-08-08 (hasil spot belajar) | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 | ⑧⑨ 2026-08-20 · ⑩ 2026-08-08 |
 
 Pot 6bb berasal dari ==3 milik SB ditambah 3 milik BB==. Kedua blind ikut bermain, sehingga tidak ada blind dari pemain yang fold di luar hitungan tersebut. Stack efektifnya ==100 − 3 = 97bb==.
 
@@ -158,7 +158,7 @@ Set menunjukkan arah yang sama. K-K, T-T, dan 6-6 masing-masing membentuk set. *
 | EV (bb) | 3,42 | 2,58 |
 | **EQR (realisasi equity)** | **103,1%** | 96,1% |
 
-Pot berjumlah 6bb. Bagian berdasarkan equity SB adalah ==6 × 55,3% = 3,32bb==, sementara EV-nya 3,42bb. Perbandingannya ==3,42 ÷ 3,32 ≈ 103,1%==.
+Pot berjumlah 6bb. Bagian berdasarkan equity SB adalah ==6 × 55,3% = 3,318bb==, sementara EV-nya 3,42bb. Perbandingannya ==3,42 ÷ 3,318 ≈ 103,1%==.
 
 Berikut tujuh contoh dari seri, diurutkan menurut EQR OOP.
 

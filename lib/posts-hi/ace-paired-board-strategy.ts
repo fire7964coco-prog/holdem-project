@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "दो Ace आते ही bet 80.1% क्यों?",
   seoTitle: "AA6 पर trips और 80.1% bet — पोकर GTO रणनीति",
   desc: "6-6-3 पर सिर्फ़ 3% bet, मगर A-A-6 पर 80.1%। SB की पूरी range की बढ़त, BB के गायब AK–AQ और trips के छोटे bets का GTO हिसाब देखें।",
-  tldr: "SB के open और BB के call के बाद A♠A♥6♦ पर कुल bet 80.1% है: एक-तिहाई pot 79.6%, तीन-चौथाई 0.5% और check 19.8%। 6♣6♦3♥ के paired बोर्ड पर bet सिर्फ़ 3.0% था। अंतर उस rank और दोनों की पूरी range के संबंध में है। Ace से trips बनाने वाले कॉम्बो SB में 88 और BB में 66 हैं; AK और AQ के 16 कॉम्बो BB की calling range में बिल्कुल नहीं हैं।",
+  tldr: "SB के open और BB के call के बाद A♠A♥6♦ पर कुल bet 80.1% है: एक-तिहाई pot 79.6%, तीन-चौथाई 0.5% और check 19.8%। 6♣6♦3♥ के paired बोर्ड पर bet सिर्फ़ 3.0% था। अंतर बोर्ड के pair होने से कम, उस rank और दोनों की पूरी range के संबंध से ज़्यादा है (बोर्ड के साथ सीटें और ranges भी बदलीं)। Ace से trips बनाने वाले कॉम्बो SB में 88 और BB में 66 हैं; AK और AQ के 16 कॉम्बो BB की calling range में बिल्कुल नहीं हैं।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 मिनट",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-hi.webp",
@@ -31,7 +31,7 @@ Pot · stack | Pot 6 bb · प्रभावी stack 97 bb · SPR 16.2
 :::
 
 > **सीधा जवाब**
-> A-A-6 paired बोर्ड पर SB का पहला action **bet 80.1%, check 19.8%** है; इसमें 79.6% एक-तिहाई pot का bet है। 6-6-3 पर 3.0% का उलटा नतीजा इसलिए आया कि **कौन-सा rank pair हुआ और वह किसकी range में है**, यह बदला। Ace से trips बनाने वाले हैंड **88 बनाम 66 कॉम्बो** हैं। इनमें **AK और AQ के 16 कॉम्बो BB की calling range में हैं ही नहीं**: वे preflop 3-bet में जाते हैं।
+> A-A-6 paired बोर्ड पर SB का पहला action **bet 80.1%, check 19.8%** है; इसमें 79.6% एक-तिहाई pot का bet है। 6-6-3 पर 3.0% का यह उलटा नतीजा बोर्ड के pair होने से कम, और इस पर ज़्यादा टिका है कि **कौन-सा rank pair हुआ और वह किसकी range में बैठता है** — बोर्ड के साथ सीटें और ranges भी बदलीं। Ace से trips बनाने वाले हैंड **88 बनाम 66 कॉम्बो** हैं। इनमें **AK और AQ के 16 कॉम्बो BB की calling range में हैं ही नहीं**: वे preflop 3-bet में जाते हैं।
 
 ## इन परिणामों की शर्तें क्या हैं?
 

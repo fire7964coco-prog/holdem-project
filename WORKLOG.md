@@ -1,3 +1,11 @@
+## 2026-10-02 (15) — §2-P EN 먼저 → 9로케일 전파 (MB-151 · MA-272 ACK)
+
+- 사장님 «en-first-queue §2-P EN 먼저 고치고 로케일 전파해». Opus 5.5 본체(EN·판정·게이트) + Opus 서브 9레인 병렬(로케일당 1 · 공통 브리프 scratchpad). 우편함 검수장→본체 MA-272(착수 공지 · 요청 0) → MB-151로 ACK.
+- EN 11편(de 견본 cc44dfe4 대조 · 치환표 스크립트로 1회씩 일치 검사): P-1 BTN c-bet 빈도 한정 · P-2 체크레이즈 «후보»+미계산 · P-3 트레이너 «grades in bb lost» → «shows how many bb it costs»(5편) · P-4 monotone 캡션 overpairs · P-5 paired «unpaired flop = set»·17.2% 조합 · P-6 바로 답 MDF 단정 삭제 · P-7 low-board 5자리 · P-8 3bet-cbet 3자리 · P-10 캡션 36/24·FAQ «97.8% of the range» · P-11 3.318·Checked 칸별 날짜 · P-12 3.5배 · P-13 «which card paired and whose range it fits». P-9는 EN 관용 유지(3bet-pot-bet-sizing 무변경).
+- 로케일 본문 정정: ko 7 · ja 12(P-9 «9ハイ» → K♥J♥・9♥8♥) · es 11 · pt 8 · zh 11 · zh-hant 11 · id 7 · hi 7 · ms 4. 그 밖은 재구성이 이미 결함 회피 → `masterUpdated`만 10-02(브리프가 «안 올림»으로 잘못 적어 drift 🔴가 났고 헤드가 §1-C대로 18파일 일괄 정정). de 11편 `masterUpdated` 10-02.
+- 게이트: audit:hard EN 🔴0 · 로케일 각 레인 🔴0(ko blind-battle-connected H1 1 = HEAD 동일 · 기존) · check:gto 일치 546 🔴13(HEAD 동일 · ko «A~B%» 미검사 기존) · check-gto-structure 9로케일 0 · check:drift 핵심 0 · build ✅(74 + intl 628).
+- 남긴 6건 = `en-first-queue` §2-P 🪶.
+
 ## 2026-10-02 (14) — de GTO 예제 13편 ⑤ 마감 · 발행
 
 - 사장님 «핸드오프 최상단 de GTO 마감 진행해». Opus 5.5 본체 + 서브 렌즈 5(수치 ①~⑦ · 수치 ⑧~⑬ · 독일어 네이티브 · SEO+플레이어 · 2차 교열=diff). 우편함 검수장→본체 미처리 0.

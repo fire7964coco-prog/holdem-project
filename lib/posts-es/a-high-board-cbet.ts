@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En A♥7♦2♣, después de una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 98.2% de su rango — top pair, doble pareja y sets incluidos. La equity está casi igualada, 45.1% contra 54.9%; lo que separa a los dos asientos es la realización de equity, 84.0% fuera de posición contra 113.1% en posición.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🅰️",
@@ -90,7 +90,7 @@ De 464 combos, unos ocho apuestan — 1.9% entre los dos tamaños, redondeado. E
 
 Porque el bote se gana más fácil haciendo check que apostando. Liderar con una pareja, fuera de posición y contra el jugador que tomó la iniciativa preflop, es la forma cara de jugar una mano con la que te conformas con llegar al showdown.
 
-Hay tres cosas en contra del lead. Primera, la **realización de equity**: los números de más abajo muestran a la ciega grande cobrando el 84.0% de su equity y al botón el 113.1%. Construir un bote más grande fuera de posición hace que esa diferencia cueste más, no menos. Segunda, el botón cbetea este flop con frecuencia alta — **hacer check mantiene sus faroles dentro del bote**, mientras que liderar les deja retirarse sin pagar nada. Tercera, el rango de la ciega grande está capado: sin AA, AK ni AQ dentro, un lead invita a subidas de los ases fuertes, y la mayor parte del rango de la ciega grande no puede continuar contra ellas — solo 24 combos aguantan una subida (los sets de 77 y 22, las dobles parejas A7 y A2). (Aquí no hay ningún nodo de subida resuelto.)
+Hay tres cosas en contra del lead. Primera, la **realización de equity**: los números de más abajo muestran a la ciega grande cobrando el 84.0% de su equity y al botón el 113.1%. Construir un bote más grande fuera de posición hace que esa diferencia cueste más, no menos. Segunda, el botón suele cbetear a menudo un flop como este (una frecuencia que este cálculo no da) — **hacer check mantiene sus faroles dentro del bote**, mientras que liderar les deja retirarse sin pagar nada. Tercera, el rango de la ciega grande está capado: sin AA, AK ni AQ dentro, un lead invita a subidas de los ases fuertes, y la mayor parte del rango de la ciega grande no puede continuar contra ellas — solo 24 combos aguantan una subida (los sets de 77 y 22, las dobles parejas A7 y A2). (Aquí no hay ningún nodo de subida resuelto.)
 
 Lo que un lead **no** hace es sacar del bote manos mejores. El rango de apertura del botón conserva todos los ases hasta A2, más los underpairs y los sietes, así que muchas manos peores pagarían — ese no es el problema. El problema es el bote que estás construyendo para ganarlo.
 
@@ -148,7 +148,7 @@ La regla general se extiende con una condición: **el lado que tiene la ventaja 
 ## ¿Qué cambia en la mesa?
 
 - **Si pagaste una subida mano a mano, quítate de la cabeza apostar de salida en un flop seco A-high.** Top pair incluido. Liderar construye un bote que después tienes que jugar fuera de posición con una pareja — que es exactamente la diferencia de 84% contra 113% de arriba. (Los botes limpeados y la guerra de ciegas son otra estructura y no son lo que cubre este spot.)
-- **Hacer check no es check-fold.** Aquí es donde se lee mal el número. Frente a la c-bet pequeña del botón, la ciega grande continúa muy ancha — todos los ases, casi todos los sietes, los underpairs, K-high con un backdoor. **A9 es check-call**, normalmente también en el turn. Los check-raises salen sobre todo de 77, 22, A7 y A2, más unos pocos faroles con backdoor.
+- **Hacer check no es check-fold.** Aquí es donde se lee mal el número. Frente a la c-bet pequeña del botón, la ciega grande continúa muy ancha — todos los ases, casi todos los sietes, los underpairs, K-high con un backdoor. **A9 es check-call**, normalmente también en el turn. Los candidatos naturales al check-raise son 77, 22, A7 y A2, más unos pocos faroles con backdoor — aunque este cálculo no cubre la respuesta de la ciega grande a la c-bet.
 - **En el botón, apuesta pequeño y ancho contra rivales que se retiran.** Contra un jugador que nunca se retira, ajusta en dos direcciones: menos faroles, porque no van a foldear apuestes lo que apuestes — sobre todo en turn y river, donde el segundo y el tercer barril son pérdida pura — y apuestas de valor más grandes con **top pair o mejor**. A9 con su kicker flojo no es una mano para subir el tamaño; es una mano que simplemente no dispara tres veces.
 - **Contra un rival equilibrado, un check aquí no es debilidad** — el rango que hace check contiene sets (77, 22) y doble pareja (A7, A2), así que apretar demasiado se estrella contra un check-raise. En límites bajos suele pasar lo contrario: mucha gente lidera sin más sus manos fuertes, así que su check sí es débil. Sigue apostando por valor y trata el check-raise como un costo ocasional, no como una razón para frenar.
 

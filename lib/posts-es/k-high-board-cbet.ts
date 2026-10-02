@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En K♠8♦3♣, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 99.8% de su rango — un range check todavía más puro que el 98.2% de un flop A-high. Lo causan dos cosas: aquí la ciega grande no tiene ningún sobrepar, porque AA hace 3-bet preflop, y la realización de equity se reparte 80.7% contra 116.7%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "👑",
@@ -168,7 +168,7 @@ El consejo habitual dice que las manos A-high con valor de showdown deberían ha
 ## ¿Qué cambia en la mesa?
 
 - **Si pagaste una subida mano a mano en un flop seco K-high, apostar de salida no es una opción.** Ni siquiera con un rey. La lógica del range check del flop A-high se aplica aquí con más fuerza, no con menos. Aun así, la condición es la **forma de tu rango**, no la del board — donde la parte alta de tu rango es más gruesa que la suya, la ciega grande sí lidera. El contraejemplo es el [flop 9-8-7](/es/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-es.webp"), donde la ciega grande lidera el **23.7%** de las veces.
-- **Hacer check no es check-fold.** Frente a la c-bet pequeña, la ciega grande continúa ancha — todos los reyes, los ochos, los underpairs, A-high con backdoor. El top pair es un call, y los check-raises salen sobre todo de 88, 33 y las dobles parejas.
+- **Hacer check no es check-fold.** Frente a la c-bet pequeña, la ciega grande continúa ancha — todos los reyes, los ochos, los underpairs, A-high con backdoor. El top pair es un call; los candidatos naturales al check-raise son 88, 33 y las dobles parejas (este cálculo no cubre la respuesta a la c-bet).
 - **En el botón, no les des a AQ y AJ un trato fijo.** Apostar pequeño y hacer check back son las dos defendibles; ajusta la mezcla según si ese rival de verdad se retira con sobrecartas.
 - **No leas el check como debilidad — contra un rival equilibrado.** Ese rango que hace check todavía tiene los sets (88, 33) y un 12.7% de top pair. En límites bajos suele ser al revés, porque mucha gente lidera sin más sus manos fuertes, así que sigue apostando por valor y trata el check-raise como un costo ocasional.
 
@@ -181,7 +181,7 @@ El consejo habitual dice que las manos A-high con valor de showdown deberían ha
 
 Abre el [solver GTO gratuito](/es/solver), ve a **Spots de estudio → Board seco K-high → [⚡ Ver resultados]**, y esta pantalla aparece sin esperas. Después cambia el selector de jugador a **IP (BTN (open-raiser))** — la tabla de composición de rango de más arriba se lee directamente de ese panel, y comparar los dos lados es la forma más rápida de ver por qué uno de ellos no puede apostar.
 
-Para entrenar el spot en vez de leerlo, abre el **Entrenador GTO** en la barra lateral: te reparte una mano con los pesos reales del rango, eliges una acción y te califica la elección en ciegas grandes perdidas. Gratis, sin nada que instalar y sin cuenta.
+Para entrenar el spot en vez de leerlo, abre el **Entrenador GTO** en la barra lateral: te reparte una mano con los pesos reales del rango, eliges una acción y te muestra cuántas ciegas grandes te cuesta esa elección. Gratis, sin nada que instalar y sin cuenta.
 
 ## Preguntas frecuentes
 

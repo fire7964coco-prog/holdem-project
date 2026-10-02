@@ -104,10 +104,10 @@ export const POST: Post = {
   seoTitle: "Zero Straights Here — When to Check-Raise in Poker",
   // 156자 (디코딩 기준 · EN 하드리밋 160)
   desc: "On 6-5-2 exactly one hand makes a straight and neither player holds it. So the big blind checks 96.8% — and saves all of its aggression for the check-raise.",
-  tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, almost all of it draws.",
+  tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, mostly with draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -198,7 +198,7 @@ And 4-3 is in neither range. **The solver's category panel has no "Straight" row
 
 **The big blind wins the pairs and loses everything above them.** It holds more top pair, more second pair and more weak pairs than the button; sets and two pair are dead level; and its overpairs run at barely half the button's. Nearly three quarters of both ranges has no pair at all — which is what makes this an overcard fight rather than a value fight, and why the hand that wins it is usually still being drawn to.
 
-![Range composition on a low rainbow board, the big blind ahead on pairs and the button ahead on overpairs](/images/gto-srp-low-rainbow-ranges-en.webp "6♠5♥2♦ · what the check-raise is actually made of")
+![Range composition on a low rainbow board, the big blind ahead on pairs and the button ahead on overpairs](/images/gto-srp-low-rainbow-ranges-en.webp "6♠5♥2♦ · range composition — the big blind ahead on pairs, the button ahead on overpairs")
 
 | Category | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -283,7 +283,7 @@ We read all 487 rows of the per-hand table rather than the first screen of it. S
 | J4s · Q4s | Gutshot to the three and nothing else | 67–90% |
 | 54s | Second pair and a gutshot | 74–75% |
 
-Read the second column downward and the pattern is impossible to miss. **Below two pair, every hand in the raise holds a straight draw** — the two that also have a pair (64s and 54s) are raising with the draw attached, not with the pair:
+Read the second column downward and the pattern is impossible to miss. **Below two pair, every hand at the top of this list holds a straight draw** — the two that also have a pair (64s and 54s) are raising with the draw attached, not with the pair:
 
 - **98s** holds 5-6-8-9 and needs the ==7==.
 - **87s** holds 5-6-7-8 and takes the ==4 or the 9== — the only open-ender **in this range**. ⚠ Not the only one the board allows: **74 makes 4-5-6-7** and waits on the 3 or the 8, a textbook open-ender, and 84 is a double gutshot with the same eight outs. The 0.8% in the draw table means this solver's ranges have no 74 suited, not that the board has one open-ender.
@@ -336,7 +336,7 @@ The thing to look for is what is *not* there: **scroll the category panel and fi
 
 To reach the check-raise numbers you have to go one step further, because the study spot is flop-only. Hit **Solve this spot yourself**, keep the tree it loads, and run it. When it finishes, click **Check** and then **Bet** on the top strip.
 
-Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
+Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
 ## FAQ
 
@@ -354,7 +354,7 @@ A. Because the top of a range decides who bets first, not its average. On 9-8-7 
 
 **Q. Which hands should you check-raise on 6-5-2?**
 
-A. All nine set combos (66, 55, 22), both combos of 65 suited, and then straight draws: 98s for the gutshot to the seven, 87s for the open-ender, and J4s, Q4s, 54s and 64s for the gutshot to the three. Not one of them was picked for a high card — the raise is built on draws, top to bottom.
+A. All nine set combos (66, 55, 22), both combos of 65 suited, and then straight draws: 98s for the gutshot to the seven, 87s for the open-ender, and J4s, Q4s, 54s and 64s for the gutshot to the three. Not one of them was picked for a high card — beyond the sets and 65 suited, the raise leans mainly on draws.
 
 **Q. Is a check-raise allowed, and is it rude?**
 
@@ -362,7 +362,7 @@ A. Allowed in almost every casino and in standard online games — only a privat
 
 **Q. Do these numbers hold at my stake?**
 
-A. Treat the frequencies on this page as a baseline for the matching conditions: heads-up, 100bb, a 2.5bb button open with standard defending ranges, no rake. One detail is specific to this example — this spot was solved with a single 33% bet size, so the solver never gets to choose a bigger one. Give the solver two sizes and the frequencies shift, though the underlying reason for checking does not.
+A. Treat the frequencies on this page as a baseline for the matching conditions: heads-up, 100bb, a 2.5bb button open with standard defending ranges, no rake. One detail is specific to this example — this spot was solved with a single 33% bet size, so the solver never gets to choose a bigger one. With two sizes the frequencies may shift — only the single-size version is solved here.
 `.trim(),
 };
 

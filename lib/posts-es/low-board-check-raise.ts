@@ -27,11 +27,11 @@ export const POST: Post = {
   seoTitle: "Cero escaleras en 6-5-2 — cuándo hacer check-raise",
   // 153자
   desc: "En 6-5-2 exactamente una mano hace escalera y ninguno de los dos la tiene. Por eso la ciega grande hace check el 96.8% y guarda todo para el check-raise.",
-  tldr: "En el flop bajo y rainbow 6♠5♥2♦ la ciega grande hace check el 96.8% y apuesta primero apenas el 3.2% — aunque su 48.3% de equity es el segundo más alto de los siete spots en los que defiende. Aquí solo una mano hace escalera, 4-3, y no está en ninguno de los dos rangos. Nadie tiene la parte alta, así que nadie apuesta primero fuera de posición. La acción llega después: al resolver de nuevo el mismo árbol para ver más allá del flop, la ciega grande hace check-raise a una apuesta de 1.8bb el 14.9% de las veces, casi todo con proyectos.",
+  tldr: "En el flop bajo y rainbow 6♠5♥2♦ la ciega grande hace check el 96.8% y apuesta primero apenas el 3.2% — aunque su 48.3% de equity es el segundo más alto de los siete spots en los que defiende. Aquí solo una mano hace escalera, 4-3, y no está en ninguno de los dos rangos. Nadie tiene la parte alta, así que nadie apuesta primero fuera de posición. La acción llega después: al resolver de nuevo el mismo árbol para ver más allá del flop, la ciega grande hace check-raise a una apuesta de 1.8bb el 14.9% de las veces, sobre todo con proyectos.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🌊",
@@ -123,7 +123,7 @@ Y 4-3 no está en ninguno de los dos rangos. **El panel de categorías del solve
 
 **La ciega grande gana las parejas y pierde todo lo que está por encima de ellas.** Tiene más top pair, más segunda pareja y más parejas débiles que el botón; los sets y la doble pareja están empatados; y sus sobrepares (overpairs) son apenas la mitad que los del botón. Casi tres cuartas partes de los dos rangos no tienen ninguna pareja — que es lo que convierte esto en una pelea de sobrecartas y no en una pelea de valor, y por lo que la mano que la gana suele seguir siendo un proyecto.
 
-![Composición de rango en un board bajo y rainbow: la ciega grande por delante en parejas y el botón por delante en sobrepares](/images/gto-srp-low-rainbow-ranges-es.webp "6♠5♥2♦ · de qué está hecho realmente el check-raise")
+![Composición de rango en un board bajo y rainbow: la ciega grande por delante en parejas y el botón por delante en sobrepares](/images/gto-srp-low-rainbow-ranges-es.webp "6♠5♥2♦ · composición de rangos — la ciega grande por delante en parejas, el botón por delante en sobrepares")
 
 | Categoría | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -208,7 +208,7 @@ Leímos las 487 filas de la tabla por mano, no la primera pantalla. Ordenada por
 | J4s · Q4s | Gutshot al tres y nada más | 67–90% |
 | 54s | Segunda pareja y un gutshot | 74–75% |
 
-Lee la segunda columna hacia abajo y el patrón es imposible de no ver. **Por debajo de la doble pareja, todas las manos del raise llevan un proyecto de escalera** — las dos que además tienen pareja (64s y 54s) suben con el proyecto pegado, no con la pareja:
+Lee la segunda columna hacia abajo y el patrón es imposible de no ver. **Por debajo de la doble pareja, todas las manos de la parte alta de esta lista llevan un proyecto de escalera** — las dos que además tienen pareja (64s y 54s) suben con el proyecto pegado, no con la pareja:
 
 - **98s** tiene 5-6-8-9 y necesita el ==7==.
 - **87s** tiene 5-6-7-8 y le sirve el ==4 o el 9== — el único proyecto a dos puntas **de este rango**. ⚠ No el único que permite el board: **74 hace 4-5-6-7** y espera el 3 o el 8, un proyecto a dos puntas de manual, y 84 es un doble gutshot con los mismos ocho outs. El 0.8% de la tabla de proyectos significa que los rangos de este solver no tienen 74s, no que el board tenga un solo proyecto a dos puntas.
@@ -261,7 +261,7 @@ Lo que hay que buscar es lo que *no* está: **recorre el panel de categorías y 
 
 Para llegar a los números del check-raise tienes que dar un paso más, porque el spot de estudio es solo de flop. Haz clic en **Resolver este spot tú mismo**, deja el árbol que carga y córrelo. Cuando termine, haz clic en **Check** y luego en **Bet** en la tira de arriba.
 
-Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y califica tu acción en ciegas grandes perdidas. Gratis, sin instalar nada, sin cuenta.
+Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin instalar nada, sin cuenta.
 
 ## Preguntas frecuentes
 
@@ -279,7 +279,7 @@ A. Porque quien apuesta primero lo decide la parte alta del rango, no su promedi
 
 **Q. ¿Con qué manos hay que hacer check-raise en 6-5-2?**
 
-A. Con los nueve combos de set (66, 55, 22), con los dos combos de 65 suited, y después con proyectos de escalera: 98s por el gutshot al siete, 87s por el proyecto a dos puntas, y J4s, Q4s, 54s y 64s por el gutshot al tres. Ninguna de ellas fue elegida por una carta alta — el raise está construido sobre proyectos, de arriba abajo.
+A. Con los nueve combos de set (66, 55, 22), con los dos combos de 65 suited, y después con proyectos de escalera: 98s por el gutshot al siete, 87s por el proyecto a dos puntas, y J4s, Q4s, 54s y 64s por el gutshot al tres. Ninguna de ellas fue elegida por una carta alta — más allá de los sets y de 65 suited, el raise se apoya sobre todo en proyectos.
 
 **Q. ¿El check-raise está permitido, y es de mala educación?**
 
@@ -287,7 +287,7 @@ A. Está permitido en casi todos los casinos y en las partidas online estándar 
 
 **Q. ¿Estos números aplican a mi nivel?**
 
-A. Trata las frecuencias de esta página como referencia para las condiciones que coinciden: mano a mano, 100bb, apertura del botón a 2.5bb con rangos de defensa estándar, sin rake. Un detalle es específico de este ejemplo — este spot se resolvió con un solo tamaño de apuesta del 33%, así que el solver nunca llega a elegir uno más grande. Dale dos tamaños y las frecuencias se reparten distinto, aunque la razón de fondo para hacer check no cambia.
+A. Trata las frecuencias de esta página como referencia para las condiciones que coinciden: mano a mano, 100bb, apertura del botón a 2.5bb con rangos de defensa estándar, sin rake. Un detalle es específico de este ejemplo — este spot se resolvió con un solo tamaño de apuesta del 33%, así que el solver nunca llega a elegir uno más grande. Con dos tamaños las frecuencias podrían cambiar — aquí solo está resuelta la versión de un único tamaño.
 `.trim(),
 };
 

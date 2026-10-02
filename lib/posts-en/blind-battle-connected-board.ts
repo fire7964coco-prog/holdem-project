@@ -91,7 +91,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in high cards, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-en.webp",
@@ -298,7 +298,7 @@ A. Because a range is concentrated in particular cards. The small blind's openin
 
 A. Mostly you check. The solver passes 90.4% into a check on 7♦6♦5♣. Even the 9.6% that bets is spread thinly across **8-8, an overpair that is also an open-ender** (39.5% by class average, the highest here), top pair (A-7s, K-7s) and a suited four making an open-ender (K-4s, Q-4s). But this is not the same as giving up — for the thin value hands, checking is worth about as much as betting (within 0.03bb), and what happens after the check, calls and check-raises included, is not in this solve.
 
-**Q. The small blind has three times as many overpairs. Why is the bet only 9.6%?**
+**Q. The small blind has three and a half times as many overpairs (42 combos to 12). Why is the bet only 9.6%?**
 
 A. Because the opponent holds plenty that beats an overpair on this board: 42 combos of sets, two pairs and straights, plus 24.9% open-enders and 23.8% gutshots. Even the 60 combos of top pair currently behind hold cards that flip it by the river. An overpair here is "ahead now, hard to put in more than once." ⚠ Do not look for the reason in the SPR of 16.2 — a 6bb pot, a 97bb stack and an SPR of 16.2 are **the same constants** on the [K-T-6](/en/blog/blind-battle-cbet) and [A-A-6](/en/blog/ace-paired-board-strategy) boards, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is three board cards.
 

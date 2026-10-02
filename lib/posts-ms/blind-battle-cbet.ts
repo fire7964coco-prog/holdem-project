@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop K♥T♦6♠ menghasilkan bet 67.4% dan check 32.6%. Dalam tujuh pot single-raised terdahulu, pemain OOP hanya bet 0.1% hingga 23.7%. Dua perkara berubah: OOP kini raiser, dan board sesuai dengan rangenya. Gabungan itu membawa realisasi equity OOP kepada 103.1%. Peranan sahaja tidak cukup; SB yang sama hanya bet 9.6% pada 765.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-ms.webp",
@@ -48,7 +48,7 @@ Hasil | SB bet **67.4%** — contoh single-raised pertama dengan majoriti range 
 | SPR | **16.2** | 17.7 | 4.0 |
 | Saiz bet | Kira-kira satu pertiga pot, **satu saiz sahaja** | Kira-kira satu pertiga dan tiga perempat (⑦ satu sahaja) | Kira-kira satu pertiga dan dua pertiga |
 | Rake | Tidak dimodelkan | Tidak dimodelkan | Tidak dimodelkan |
-| Tarikh semakan | 2026-08-08 (hasil spot belajar) | 2026-08-08 | 2026-08-08 |
+| Tarikh semakan | 2026-08-08 (hasil spot belajar) | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 | ⑧⑨ 2026-08-20 · ⑩ 2026-08-08 |
 
 Pot 6 bb ialah ==3 daripada SB + 3 daripada BB==. Kedua-dua blind berada dalam pot, jadi tiada blind tambahan daripada pemain yang fold. Stack efektif ialah ==100 − 3 = 97 bb==.
 
@@ -157,7 +157,7 @@ Set menyokong penjelasan sama. KK, TT dan 66 masing-masing menghasilkan tiga kom
 | EV (bb) | 3.42 | 2.58 |
 | **EQR (realisasi equity)** | **103.1%** | 96.1% |
 
-Pot 6 bb memberikan bahagian mentah SB ==6 × 55.3% = 3.32 bb==, sementara EV ialah 3.42 bb. Maka ==3.42 ÷ 3.32 ≈ 103.1%==.
+Pot 6 bb memberikan bahagian mentah SB ==6 × 55.3% = 3.318 bb==, sementara EV ialah 3.42 bb. Maka ==3.42 ÷ 3.318 ≈ 103.1%==.
 
 Berikut tujuh contoh terpilih, disusun mengikut EQR OOP:
 

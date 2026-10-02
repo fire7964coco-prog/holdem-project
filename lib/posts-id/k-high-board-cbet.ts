@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop K-high", "range check", "check-back range", "delayed c-bet", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "9 mnt",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-id.webp",
@@ -144,7 +144,7 @@ Saran umum untuk check back dengan ace-high yang memiliki nilai showdown hanya *
 ## Apa yang berubah saat Anda bermain?
 
 - **Setelah call raise heads-up di flop kering K-high ini, singkirkan lead dari strategi dasar Anda.** Termasuk saat memegang K. Alasan range check dari flop A-high berlaku lebih kuat di sini. Syaratnya tetap **komposisi range**, bukan tekstur board semata. Jika bagian kuat range Anda lebih banyak daripada lawan, big blind bisa lead. Contohnya [flop 9-8-7](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp"), tempat big blind lead **23,7%**.
-- **Check tidak berarti check-fold.** Melawan c-bet kecil, big blind dapat bertahan dengan range luas: semua K, pair delapan, underpair, serta ace-high dengan backdoor. Top pair dapat call, sedangkan kandidat check-raise terutama 88, 33, dan two pair.
+- **Check tidak berarti check-fold.** Melawan c-bet kecil, big blind dapat bertahan dengan range luas: semua K, pair delapan, underpair, serta ace-high dengan backdoor. Top pair dapat call, sedangkan kandidat check-raise yang wajar adalah 88, 33, dan two pair (respons terhadap c-bet tidak dihitung dalam perhitungan ini).
 - **Di button, jangan tetapkan satu aksi untuk AQ dan AJ.** Bet kecil dan check back sama-sama dapat dipertimbangkan. Sesuaikan campurannya dengan kecenderungan lawan untuk fold overcard.
 - **Melawan pemain seimbang, jangan menganggap check sebagai kelemahan.** Range check masih memuat set 88 dan 33 serta top pair 12,7%. Di taruhan rendah, banyak pemain justru lead dengan hand kuat, sehingga check mereka lebih lemah. Terus lakukan value bet terhadap pola tersebut dan terima check-raise sesekali sebagai bagian dari risiko.
 

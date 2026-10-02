@@ -54,7 +54,7 @@ export const POST: Post = {
   tldr: "On Q♠9♠2♠, where all three flop cards share a suit, the big blind checks 88.8%, bets small 8.0% and bets big just 3.2%. The large size almost vanishes because the nuts are fixed: a made flush gets called by small bets anyway, and the bigger you bet without a flush, the more your callers narrow down to flushes. Even the nut flush checks 69.9% on average — and non-nut flushes check more, at 81.4%.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-en.webp",
@@ -171,7 +171,7 @@ Equity barely moves — 94% against 97.7% — but EQR falls to 197%. **You win l
 
 **The big blind — 7.1% against 5.7%.** But flush *draws* run the other way.
 
-![Range composition infographic comparing the big blind and button hand categories on a monotone spade board](/images/gto-srp-monotone-ranges-en.webp "Q♠9♠2♠ · category split — made flushes favor the big blind, flush draws and ace-high favor the button")
+![Range composition infographic comparing the big blind and button hand categories on a monotone spade board](/images/gto-srp-monotone-ranges-en.webp "Q♠9♠2♠ · category split — made flushes favor the big blind, overpairs and ace-high favor the button")
 
 | Category | BB (OOP) | BTN (IP) |
 |---|---|---|

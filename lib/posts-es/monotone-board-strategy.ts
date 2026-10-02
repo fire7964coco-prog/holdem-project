@@ -28,8 +28,8 @@ export const POST: Post = {
   tldr: "En Q♠9♠2♠, donde las tres cartas del flop comparten palo, la ciega grande hace check el 88.8%, apuesta pequeño el 8.0% y grande apenas el 3.2%. El tamaño grande casi se evapora porque las nuts quedan fijadas: un color hecho ya recibe call de una apuesta pequeña, y cuanto más grande apuestas sin color, más se estrecha a colores el rango que te paga. Incluso el color máximo hace check el 69.9% de media — y los colores que no son máximos hacen check todavía más, un 81.4%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠️",
@@ -146,7 +146,7 @@ La equity apenas se mueve — 94% frente a 97.7% — pero el EQR cae al 197%. **
 
 **La ciega grande — 7.1% frente a 5.7%.** Pero los *proyectos* de color van al revés.
 
-![Infografía de composición de rango que compara las categorías de mano de la ciega grande y el botón en un board monotone de picas](/images/gto-srp-monotone-ranges-es.webp "Q♠9♠2♠ · reparto por categorías — los colores hechos favorecen a la ciega grande; los proyectos de color y el A-high, al botón")
+![Infografía de composición de rango que compara las categorías de mano de la ciega grande y el botón en un board monotone de picas](/images/gto-srp-monotone-ranges-es.webp "Q♠9♠2♠ · reparto por categorías — los colores hechos favorecen a la ciega grande; los sobrepares y el A-high, al botón")
 
 | Categoría | BB (OOP) | BTN (IP) |
 |---|---|---|

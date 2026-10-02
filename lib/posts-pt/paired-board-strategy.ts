@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "No flop baixo pareado 6♣6♦3♥, o big blind dá check em 97,0%. O curioso é que tem mais trincas que o botão: 26 combos com um seis contra 20. Ainda assim, dá check porque apenas 18,4% do seu range tem algo além do par do board; os outros 81,6% disputam o pote com cartas altas, terreno em que o botão leva vantagem. Os pares de mão acima do seis ganham valor: TT tem 76,0% de equity neste spot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-pt.webp",
@@ -22,7 +22,7 @@ O flop é **6♣ 6♦ 3♥**: cartas baixas, duas delas do mesmo valor. Parece u
 
 Com TT, sua equity é **76,0%**. Esse mesmo TT tem cerca de 54–57% contra AK antes do flop, então este flop é *melhor* para ele que o conhecido coin flip. Com A9, você não acertou nada, mas quatro quintos do range adversário também não têm nada além do par do board. Foldar imediatamente abre mão da disputa pelo pote.
 
-**Um board que ninguém acertou vira uma disputa para ver quem tem as melhores cartas altas.** Os flops com [ás alto](/pt/blog/a-high-board-cbet) e [rei alto](/pt/blog/k-high-board-cbet) giravam em torno de quem acertou alguma coisa. Aqui, a disputa ocorre entre dois ranges que, em sua maioria, não acertaram. Todos os números abaixo vêm do [solver de poker gratuito](/pt/solver) do HoldemMaster.
+**Um board que ninguém acertou vira uma disputa para ver quem tem as melhores cartas altas.** Os flops com [ás alto](/pt/blog/a-high-board-cbet) e [rei alto](/pt/blog/k-high-board-cbet) giravam em torno de quem acertou alguma coisa. Aqui, a disputa ocorre entre dois ranges que, em sua maioria, não acertaram. Todos os números de solver abaixo vêm do [solver de poker gratuito](/pt/solver) do HoldemMaster; probabilidades como os 17,2% de chance de um flop pareado são combinatória simples.
 
 :::stripe
 Spot | Botão (BTN) abre 2,5bb → big blind (BB) paga (heads-up)
@@ -32,7 +32,7 @@ Resultado | BB dá check em 97,0%, mesmo tendo mais trincas
 :::
 
 > **Resposta rápida**
-> Dê check com quase tudo e defenda mais mãos do que parece natural. Ter um seis não é motivo para sair apostando: a aposta tende a fazer mãos que você já vence foldarem, então os seis permanecem no range de check. O big blind dá check em **97,0%** neste spot. Os pares de mão acima do seis ganham valor; A-high e os melhores K-high merecem mais defesa.
+> Dê check com quase tudo e não folde só porque não acertou o board. Ter um seis não é motivo para sair apostando: a aposta tende a fazer mãos que você já vence foldarem, então os seis permanecem no range de check. O big blind dá check em **97,0%** neste spot. Os pares de mão acima do seis ganham valor, e A-high não deveria ser um fold automático contra uma única aposta pequena — até onde vai exatamente a defesa ideal, este exemplo não mostra.
 
 ## Quais condições produziram esses números?
 
@@ -52,7 +52,7 @@ O botão abre para 2,5bb, o big blind paga e os demais foldam: dois jogadores, p
 
 **Set é uma trinca feita com um par na mão e uma carta do board; trips usa uma carta da mão e o par do board.** As duas têm a mesma classificação, trinca, na [hierarquia das mãos](/pt/blog/holdem-hand-rankings), mas a situação estratégica muda bastante.
 
-Todos os outros flops de potes com um único aumento pré-flop nesta série formavam sets. O outro board pareado, A♠A♥6♦, aparece depois, no grupo entre os blinds. No A-7-2, o big blind precisava ter 77 ou 22 na mão. Aqui, o board traz seu próprio par: **qualquer seis na mão forma trips**, e 66 forma quadra.
+Em todos os flops sem par desta série, uma trinca significa set. O outro board pareado, A♠A♥6♦, aparece depois, no grupo entre os blinds. No A-7-2, o big blind precisava ter 77 ou 22 na mão. Aqui, o board traz seu próprio par: **qualquer seis na mão forma trips**, e 66 forma quadra.
 
 | Sua mão no 6♣6♦3♥ | O que você tem |
 |---|---|
@@ -216,7 +216,7 @@ Abra o [solver de poker gratuito](/pt/solver), entre em **Spots de estudo** e es
 
 Procure **a única linha de 6♠6♥** na tabela de mãos: a única quadra permitida neste board. Sua EQR de **359,7%** é a maior da série; a segunda é a do 88 do botão no [pote 3-betado em board baixo](/pt/blog/3bet-pot-low-board), com **346,0%**. Do lado do big blind, a segunda é a de 6♥6♣ no [flop baixo rainbow](/pt/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-pt.webp"), com **318,9%**. Compare com as três linhas de 33 logo abaixo para ver como poucos combos ocupam o topo de um board pareado.
 
-Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e avalia a perda de EV da sua decisão em big blinds. É gratuito, sem instalação e sem conta.
+Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e mostra quantos big blinds sua decisão custa. É gratuito, sem instalação e sem conta.
 
 ## Perguntas frequentes
 

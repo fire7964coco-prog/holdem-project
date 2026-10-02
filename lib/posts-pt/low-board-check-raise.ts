@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "6-5-2: preparando o check-raise",
   seoTitle: "Check-raise no flop 6-5-2: por que começar com check",
   desc: "No 6-5-2, o BB dá check em 96,8%. Veja como sets e draws compõem o check-raise numa resolução separada, com as decisões seguintes.",
-  tldr: "No flop baixo rainbow 6♠5♥2♦, o big blind dá check em 96,8% e sai apostando em apenas 3,2%, embora sua equity de 48,3% seja a segunda maior dos sete spots em que ele defende. Só 4-3 forma sequência neste flop, e nenhum dos ranges contém essa mão. Nenhum dos ranges tem vantagem no topo, então o BB quase nunca sai apostando fora de posição. A agressividade aparece depois: numa resolução separada da mesma árvore, que permite consultar as decisões seguintes, o BB dá check-raise contra 1,8bb em 14,9%, num range de aumento formado quase todo por draws.",
+  tldr: "No flop baixo rainbow 6♠5♥2♦, o big blind dá check em 96,8% e sai apostando em apenas 3,2%, embora sua equity de 48,3% seja a segunda maior dos sete spots em que ele defende. Só 4-3 forma sequência neste flop, e nenhum dos ranges contém essa mão. Nenhum dos ranges tem vantagem no topo, então o BB quase nunca sai apostando fora de posição. A agressividade aparece depois: numa resolução separada da mesma árvore, que permite consultar as decisões seguintes, o BB dá check-raise contra 1,8bb em 14,9%, num range de aumento formado sobretudo por draws.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-pt.webp",
@@ -93,7 +93,7 @@ E 4-3 não está em nenhum dos ranges. **O painel de categorias nem tem a linha 
 
 **O big blind tem mais pares ligados ao board, mas perde força acima deles.** Há mais top pair, segundo par e pares fracos no BB; sets e dois pares empatam; os overpairs ficam pouco acima da metade da frequência do botão. Quase três quartos dos dois ranges não têm par algum. Isso transforma o spot numa disputa de overcards e draws, em que a mão vencedora muitas vezes ainda vai se formar. O BB joga fora de posição (OOP), e o BTN, em posição (IP).
 
-![Composição dos ranges no 6♠5♥2♦: big blind com mais pares ligados ao board e botão com mais overpairs](/images/gto-srp-low-rainbow-ranges-pt.webp "6♠5♥2♦ · as mãos que sustentam o check-raise")
+![Composição dos ranges no 6♠5♥2♦: big blind com mais pares ligados ao board e botão com mais overpairs](/images/gto-srp-low-rainbow-ranges-pt.webp "6♠5♥2♦ · composição dos ranges — o BB à frente em pares, o BTN à frente em overpairs")
 
 | Categoria | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -231,7 +231,7 @@ Observe o que *não* aparece: **role o painel de categorias e confira a ausênci
 
 Para chegar aos números de check-raise, é preciso ir além, pois o exemplo pré-calculado termina na primeira decisão do flop. Clique em **Resolver este spot você mesmo**, mantenha a árvore carregada e execute o cálculo. Quando terminar, clique em **Check** e depois em **Bet** na faixa superior.
 
-Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e avalia a perda de EV da sua decisão em big blinds. É gratuito, sem instalação e sem conta.
+Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e mostra quantos big blinds sua decisão custa. É gratuito, sem instalação e sem conta.
 
 ## Perguntas frequentes
 
@@ -257,7 +257,7 @@ A. É permitido em quase todos os cassinos e nos jogos online padrão — só um
 
 **Q. Esses números valem para o limite em que jogo?**
 
-A. Use as frequências como referência quando as condições coincidirem: heads-up, 100bb, abertura de 2,5bb do botão com ranges padrão de defesa e sem rake. Um detalhe é específico deste exemplo: só foi permitido o tamanho de 33% do pote, então o solver não pôde escolher uma aposta maior. Oferecer dois tamanhos muda as frequências, embora o motivo central para começar com check permaneça.
+A. Use as frequências como referência quando as condições coincidirem: heads-up, 100bb, abertura de 2,5bb do botão com ranges padrão de defesa e sem rake. Um detalhe é específico deste exemplo: só foi permitido o tamanho de 33% do pote, então o solver não pôde escolher uma aposta maior. Com dois tamanhos, as frequências podem mudar — só a versão com um único tamanho foi resolvida aqui.
 `.trim(),
 };
 

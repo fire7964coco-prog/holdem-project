@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En Q♠J♦10♠, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 99.9% — aunque el 68.4% de su rango lleve proyecto. La causa es la ventaja de nuts: escaleras 10.5% contra 7.1%, sets 2.0% contra 0.7%, sobrepares 2.6% contra 0%. La realización de equity se reparte 77.9% contra 119.4%, la mayor diferencia de los tres flops de seco a húmedo vistos hasta aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎴",
@@ -181,7 +181,7 @@ Eso es lo contrario de la receta del board seco. Allí, pequeño y frecuente fun
 
 - **Llevar proyecto no es razón para liderar desde la ciega grande.** Aquí los dos jugadores tienen más o menos los mismos proyectos, así que un proyecto no es ventaja — liderar con uno se estrella contra las manos hechas que solo tiene tu rival.
 - **No juegues el top pair a tres calles de valor en Q-J-10.** El 21.0% de su rango ya va por delante y casi todo el resto te persigue con proyecto. Pagar hasta el final le gana a apostar contra eso.
-- **Recuerda qué hay dentro de ese check.** El 99.9% de la ciega grande contiene 32 combos de escalera (K9, 98) y 27 combos de doble pareja. Esas manos no hacen check por débiles — **el botón cbetea este board con frecuencia alta, así que devolverle la acción rinde más que liderar contra él**, y además evita que el rango que hace check se quede solo en aire. Así que no leas el check como nada ni descartes un check-raise. ⚠ Cuál es la *frecuencia* de ese check-raise, este cálculo no lo puede decir: el spot de estudio se detiene en **la primera acción del flop**, y todo lo que va después necesita "Resolver este spot tú mismo".
+- **Recuerda qué hay dentro de ese check.** El 99.9% de la ciega grande contiene 32 combos de escalera (K9, 98) y 27 combos de doble pareja. Esas manos no hacen check por débiles — **frente a las c-bets del botón, devolverle la acción rinde más que liderar contra él** (con qué frecuencia cbetea aquí el botón no está en este spot de estudio), y además evita que el rango que hace check se quede solo en aire. Así que no leas el check como nada ni descartes un check-raise. ⚠ Cuál es la *frecuencia* de ese check-raise, este cálculo no lo puede decir: el spot de estudio se detiene en **la primera acción del flop**, y todo lo que va después necesita "Resolver este spot tú mismo".
 - **Contra rivales que nunca se retiran con proyecto, sube el tamaño en lugar de apostar más a menudo.** Comprar folds es lo que falla aquí; cobrarles a los proyectos es lo que funciona.
 
 :::readnext[Sigue leyendo]
@@ -195,7 +195,7 @@ Abre el [solver GTO gratuito](/es/solver), ve a **Spots de estudio → Broadway 
 
 En este spot, lee el **panel de Proyectos de la derecha** — los proyectos a dos puntas y los gutshots juntos pasan del 60%, la primera vez en esta serie. Después cambia el selector de jugador a **IP (BTN (open-raiser))** y mira la fila Escalera, 10.5%: de esa única fila sale el artículo entero.
 
-Para entrenarlo en vez de leerlo, abre el **Entrenador GTO** en la barra lateral: reparte manos con los pesos reales del rango y califica tu acción en ciegas grandes perdidas. Gratis, sin nada que instalar y sin cuenta.
+Para entrenarlo en vez de leerlo, abre el **Entrenador GTO** en la barra lateral: reparte manos con los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin nada que instalar y sin cuenta.
 
 ## Preguntas frecuentes
 

@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No K♠8♦3♣, depois de uma abertura do botão e um call do big blind, o big blind dá check com 99,8% do range, ainda mais do que os 98,2% no flop com ás alto. Dois fatores explicam isso: o big blind não tem overpair, porque AA dá 3-bet pré-flop, e a realização de equity fica em 80,7% contra 116,7%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-pt.webp",
@@ -145,7 +145,7 @@ Restam os backdoors. O **backdoor flush** contado na tabela precisa que o turn *
 ## O que muda na prática?
 
 - **Depois de pagar uma abertura em heads-up, sair apostando num flop seco com rei alto não é uma opção relevante.** Nem com um rei. A lógica do check com todo o range no flop com ás alto vale ainda mais aqui. Mas a condição é a **composição do seu range**, não apenas a textura do board: quando seu range concentra mais mãos muito fortes do que o adversário, o big blind pode sair apostando. O contraexemplo é o [flop 9-8-7](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp"), em que o big blind aposta primeiro em **23,7%** das vezes.
-- **Dar check não é jogar de check-fold.** Contra a c-bet pequena, o big blind continua com um range amplo: todos os reis, os pares de oito, os underpairs e A-high com backdoor. Top pair paga, e os check-raises vêm principalmente de 88, 33 e dois pares.
+- **Dar check não é jogar de check-fold.** Contra a c-bet pequena, o big blind continua com um range amplo: todos os reis, os pares de oito, os underpairs e A-high com backdoor. Top pair paga; os candidatos naturais ao check-raise são 88, 33 e dois pares (este cálculo não cobre a resposta à c-bet).
 - **No botão, não dê sempre o mesmo tratamento a AQ e AJ.** Tanto apostar pequeno quanto dar check atrás faz sentido. Ajuste a mistura conforme a disposição do adversário para foldar overcards.
 - **Contra um adversário equilibrado, não leia o check como fraqueza.** Esse range de check ainda tem sets, 88 e 33, e 12,7% de top pair. Nos limites baixos, o contrário costuma acontecer, porque vários jogadores saem apostando com suas mãos fortes. Continue apostando por valor e aceite o check-raise como um custo ocasional.
 
@@ -158,7 +158,7 @@ Restam os backdoors. O **backdoor flush** contado na tabela precisa que o turn *
 
 Abra o [solver de poker gratuito](/pt/solver), entre em **Spots de estudo → Board seco K-high → ⚡ Ver resultados** e a tela aparece na hora. Depois, no seletor de jogador, escolha **IP (BTN (open-raiser))**. A tabela de composição de range acima vem diretamente desse painel. Comparar os dois lados é a maneira mais rápida de entender por que um deles não consegue sair apostando.
 
-Para praticar o spot, abra o **Treinador GTO** na barra lateral. Ele distribui uma mão usando os pesos reais do range, você escolhe uma ação e recebe a avaliação em big blinds perdidos. É gratuito, sem instalação e sem conta.
+Para praticar o spot, abra o **Treinador GTO** na barra lateral. Ele distribui uma mão usando os pesos reais do range, você escolhe uma ação e vê quantos big blinds essa escolha custa. É gratuito, sem instalação e sem conta.
 
 ## Perguntas frequentes
 

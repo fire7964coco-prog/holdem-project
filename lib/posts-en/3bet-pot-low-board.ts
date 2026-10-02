@@ -70,7 +70,7 @@ export const POST: Post = {
   tldr: "After a big blind three-bet and a button call, the flop 8♦5♣2♠ gets a two-thirds-pot bet 97.8% of the time. The odd part: of the big blind's 83 combos, exactly three paired this board — the A5s — and none of 88, 55 or 22 is in the range at all. The bet goes anyway because the range splits into 36 combos of overpairs and 40 combos of ace-high with almost nothing in between — only the three A5s. A polarized shape bets big.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-en.webp",
@@ -169,7 +169,7 @@ And the 40 ace-high combos **win as soon as the opponent folds.** 58.3% of the b
 
 **Because 88, 55 and 22 are not in a three-betting range, and they are in a calling range.** This is the first spot in the series where the top of the board belongs entirely to the in-position player.
 
-![Range composition infographic comparing the big blind and button hand categories on an 8-5-2 board in a three-bet pot](/images/gto-3bp-low-ranges-en.webp "8-5-2 in a three-bet pot · category split — trips only on the button, overpairs nearly double for the big blind")
+![Range composition infographic comparing the big blind and button hand categories on an 8-5-2 board in a three-bet pot](/images/gto-3bp-low-ranges-en.webp "8-5-2 in a three-bet pot · category split — trips only on the button, clearly more overpairs for the big blind (36 combos to 24)")
 
 | Category | BB (three-bettor) | BTN (caller) |
 |---|---|---|
@@ -228,7 +228,7 @@ Look for the **missing "Set/Trips" row** in the hand panel. Then switch the play
 
 **Q. Should you c-bet A-K on a low board in a three-bet pot?**
 
-A. Yes. On 8-5-2 A-K has no pair and no immediate draw (only backdoor draws — a runner-runner wheel, plus a backdoor flush for three suited combos), yet the solver puts the whole range into the large size 97.8% of the time. The reason is that the big blind's range is **polarized — overpairs or ace-high, split roughly in half** — and when the middle is empty the size goes up, with the entire range using it. That 58.3% of the opponent's range failed to pair helps, but do not read it as "58.3% folds"; the response node is not in this solve.
+A. Yes. On 8-5-2 A-K has no pair and no immediate draw (only backdoor draws — a runner-runner wheel, plus a backdoor flush for three suited combos), yet the solver puts 97.8% of the range into the large size. The reason is that the big blind's range is **polarized — overpairs or ace-high, split roughly in half** — and when the middle is empty the size goes up, with almost the entire range using it. That 58.3% of the opponent's range failed to pair helps, but do not read it as "58.3% folds"; the response node is not in this solve.
 
 **Q. What does a polarized range mean?**
 

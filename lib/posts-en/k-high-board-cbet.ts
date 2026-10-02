@@ -49,7 +49,7 @@ export const POST: Post = {
   tldr: "On K♠8♦3♣ after a button open and a big blind call, the big blind checks 99.8% of its range — an even purer range check than the 98.2% on an ace-high flop. Two things cause it: the big blind holds no overpair here, because AA three-bets preflop, and equity realization splits 80.7% against 116.7%.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-en.webp",
@@ -192,7 +192,7 @@ The common advice is that ace-high hands with showdown value should check back. 
 ## What changes at the table?
 
 - **Having called a raise heads-up on a dry king-high flop, leading is not a candidate.** Even with a king. The range-check logic from the ace-high flop applies more strongly here, not less. The condition is the **shape of your range**, not the shape of the board, though — where the top of your range is thicker than theirs, the big blind does lead. The counterexample is the [9-8-7 flop](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads **23.7%** of the time.
-- **Checking is not check-folding.** Facing the small c-bet, the big blind continues wide — every king, the eights, the underpairs, ace-high with a backdoor. Top pair is a call, and the check-raises come mostly from 88, 33 and the two pairs.
+- **Checking is not check-folding.** Facing the small c-bet, the big blind continues wide — every king, the eights, the underpairs, ace-high with a backdoor. Top pair is a call; the natural check-raise candidates are 88, 33 and the two pairs (this solve does not cover the response to the c-bet).
 - **On the button, do not give AQ and AJ one fixed treatment.** Betting small and checking back are both defensible; adjust the mix based on whether this opponent actually folds overcards.
 - **Do not read the check as weakness — against a balanced opponent.** That checking range still holds the sets (88, 33) and 12.7% top pair. At low stakes the reverse is often true, because many players simply lead their strong hands, so keep value betting and treat the check-raise as an occasional cost.
 
@@ -205,7 +205,7 @@ The common advice is that ace-high hands with showdown value should check back. 
 
 Open the [free GTO solver](/en/solver), go to **Study Spots → Dry King-High Board → [⚡ View results]**, and this screen appears with no waiting. Then switch the player selector to **IP (BTN)** — the range-composition table above is read straight off that panel, and comparing the two sides is the fastest way to see why one of them cannot bet.
 
-To drill the spot instead of reading it, open the **GTO Trainer** in the sidebar: it deals you a hand from the real range weights, you pick an action, and it grades the choice in big blinds lost. Free, nothing to install, no account.
+To drill the spot instead of reading it, open the **GTO Trainer** in the sidebar: it deals you a hand from the real range weights, you pick an action, and it shows how many big blinds that choice costs. Free, nothing to install, no account.
 
 ## FAQ
 

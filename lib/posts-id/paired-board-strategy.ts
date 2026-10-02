@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada 6♣6♦3♥, big blind check 97,0% meski memiliki 26 combo trips, lebih banyak daripada 20 milik button. Trips hanya sebagian kecil range: 18,4% range BB memiliki hand di atas pair bawaan board, sementara 81,6% sisanya mengandalkan high card. Pocket pair yang lebih tinggi dari enam menjadi kuat; TT memiliki equity 76,0% dalam contoh ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-id.webp",
@@ -22,7 +22,7 @@ Flop **6♣ 6♦ 3♥** terlihat tidak mengenai siapa pun: semuanya kartu rendah
 
 Namun, TT memiliki **equity 76,0%** melawan range lawan pada contoh ini. Sebagai pembanding, TT melawan AK preflop biasanya berada di sekitar 54–57%, tergantung suit. Perbandingan itu memakai lawan berbeda, tetapi menunjukkan betapa nyamannya TT menghadapi range di flop ini. A9 belum membuat pair dari kartu sendiri, tetapi sekitar empat perlima range lawan juga hanya memakai pair di board. Jangan langsung menganggap A9 harus dibuang.
 
-**Ketika sebagian besar range tidak mengenai flop, kualitas high card tetap berperan.** Pada flop [A-high](/id/blog/a-high-board-cbet) dan [K-high](/id/blog/k-high-board-cbet), pertanyaannya siapa yang terhubung dengan board. Di sini, sebagian besar kedua range sama-sama meleset. Semua angka berikut berasal dari [solver GTO gratis](/id/solver) HoldemMaster.
+**Ketika sebagian besar range tidak mengenai flop, kualitas high card tetap berperan.** Pada flop [A-high](/id/blog/a-high-board-cbet) dan [K-high](/id/blog/k-high-board-cbet), pertanyaannya siapa yang terhubung dengan board. Di sini, sebagian besar kedua range sama-sama meleset. Semua angka solver berikut berasal dari [solver GTO gratis](/id/solver) HoldemMaster; peluang seperti 17,2% untuk flop berpasangan adalah hitungan kombinatorika biasa.
 
 :::stripe
 Spot | BTN open 2,5bb → BB call (heads-up)
@@ -52,7 +52,7 @@ BTN open 2,5bb, BB call, dan pemain lain fold. Hasilnya heads-up dengan pot 5,5b
 
 **Set terbentuk ketika pocket pair mengenai satu kartu board; trips terbentuk ketika satu kartu di tangan cocok dengan pair di board.** Keduanya termasuk three of a kind dalam [urutan hand poker](/id/blog/holdem-hand-rankings), tetapi konteks strateginya berbeda.
 
-Flop single-raised pot lain dalam seri ini menghasilkan set. Board berpasangan A♠A♥6♦ muncul belakangan, dalam kelompok blind vs blind. Pada A-7-2, BB memerlukan 77 atau 22 untuk membuat set. Pada 6-6-3, **satu kartu enam sudah membentuk trips**; justru pocket 66 menjadi quads.
+Pada setiap flop tanpa pasangan dalam seri ini, three of a kind berarti set. Board berpasangan A♠A♥6♦ muncul belakangan, dalam kelompok blind vs blind. Pada A-7-2, BB memerlukan 77 atau 22 untuk membuat set. Pada 6-6-3, **satu kartu enam sudah membentuk trips**; justru pocket 66 menjadi quads.
 
 | Hand Anda pada 6♣6♦3♥ | Hasilnya |
 |---|---|

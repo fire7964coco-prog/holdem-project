@@ -32,8 +32,8 @@ export const POST: Post = {
   tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta su rango entero: el check redondea a 0.0%, y ninguno de los 63 combos hace check ni siquiera el 0.1% de las veces. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🔥",
@@ -144,11 +144,11 @@ Corre esas mismas tres apuestas en un bote de subida simple y habrás gastado ==
 
 ## ¿Por qué se usa más el tamaño pequeño?
 
-**Por la forma del rango, no por la profundidad del stack.** Los 63 combos de aquí son pareja o mejor, así que **la parte de abajo del rango desapareció por completo** y nunca se parte en "nuts o nada". Sin aire que acompañe al tamaño grande, todo el rango se empuja hacia el pequeño — por eso el 57.8% sale a un tercio del bote. ("Condensado" es la etiqueta habitual para un rango sin parte de abajo *ni* parte de arriba; aquí no encaja, porque este rango es dueño de la parte alta del board sin discusión — los seis combos de set.)
+**Por la forma del rango, no por la profundidad del stack.** Los 63 combos de aquí son pareja o mejor, así que **la parte de abajo del rango desapareció por completo** y nunca se parte en "nuts o nada". Sin aire que acompañe al tamaño grande, todo el rango se empuja hacia el pequeño — por eso el 57.8% sale a un tercio del bote. ("Condensado" es la etiqueta habitual para un rango sin parte de abajo *ni* parte de arriba; aquí no encaja, porque este rango es dueño de la parte alta del board sin discusión — los dos sets más altos, AA y KK, los seis combos.)
 
 A-K-2 rainbow casi no da nada a lo que proyectar, así que tampoco hace falta cobrarle un precio a los proyectos. Entre las dos cosas, la forma del rango es la que hace el trabajo.
 
-⚠ **"Stacks cortos significan apuestas pequeñas" no es la explicación.** Dos spots posteriores de esta serie están exactamente en el mismo SPR de 4.0 y disparan el tamaño *grande* casi siempre — Q-10-7 con un **98.4%** y [8-5-2](/es/blog/3bet-pot-low-board) con un **97.8%** — por dos razones distintas. Q-10-7 es un board húmedo, así que una apuesta grande es lo que le pone precio a los proyectos. 8-5-2 es seco como este, pero su rango se parte en sobrepares (overpairs) y A-high sin nada en medio, y una forma polarizada apuesta grande. La misma profundidad de stack, el tamaño opuesto, y ninguna de las dos razones es la profundidad.
+⚠ **"Stacks cortos significan apuestas pequeñas" no es la explicación.** Dos spots posteriores de esta serie están exactamente en el mismo SPR de 4.0 y disparan el tamaño *grande* casi siempre — Q-10-7 con un **98.4%** y [8-5-2](/es/blog/3bet-pot-low-board) con un **97.8%** — por dos razones distintas. Q-10-7 es un board húmedo, así que una apuesta grande es lo que le pone precio a los proyectos. 8-5-2 es seco como este, pero su rango se parte en sobrepares (overpairs) y A-high casi sin nada en medio, y una forma polarizada apuesta grande. La misma profundidad de stack, el tamaño opuesto, y ninguna de las dos razones es la profundidad.
 
 **Y el tamaño grande tampoco es "la parte que les toca a las manos fuertes".** Cuenta los combos que pueden meter un stack entero — sets, doble pareja y top pair — y te salen ==6 + 9 + 21 = 36 combos, el 57.1%==, que es más que el 42.2% que apuesta grande.
 
@@ -174,7 +174,7 @@ Ante 7.4bb a un bote de 22.5bb, negarle beneficio a un farol puro exige aproxima
 
 ⚠ **En este spot, sin embargo, la premisa detrás de la MDF pisa terreno débil.** La MDF es la frecuencia que deja indiferente a un **farol puro con equity cero** — y el rango que apuesta de la ciega grande contiene **0.0% de sin jugada, ni un solo combo.** Un rango sin manos sin pareja deja poco del farol puro que la MDF supone, así que la inclinación es a foldear **más**, no menos. ⚠ Dos matices mantienen eso honesto: ① "0% de sin jugada" no es "0% de faroles" — un underpair débil dentro del rango que apuesta puede estar haciendo el trabajo de un farol o de una apuesta de protección; ② el nodo de respuesta del botón no está en este solve, así que la frecuencia de defensa óptima real no se puede confirmar aquí. Así que no leas el 41.5% como "entonces hay que continuar con pares servidos medianos". Que el tamaño pequeño siquiera les dé precio a esos 60 combos es dudoso: contra todo el rango de la ciega grande solo QQ y JJ superan el 19.8% que pide, mientras que de 99 a 33 se quedan en 7.6–9.2%. En cualquier caso, la razón del tamaño es la **forma del rango** de la sección anterior; esto es un efecto colateral.
 
-:::note[⚠ La MDF simplifica la apuesta a un farol puro. Solo significa algo cuando el rival de verdad tiene faroles — donde el rango que apuesta es pareja o mejor de arriba abajo, como aquí, el supuesto del farol puro se rompe y la cifra es apenas una guía aproximada. En la práctica pesa también qué tan bien aguanta una mano en las calles siguientes.]:::
+:::note[⚠ La MDF simplifica la apuesta a un farol puro. Solo significa algo cuando el rival de verdad tiene faroles — donde el rango que apuesta es pareja o mejor de arriba abajo, como aquí, el supuesto del farol puro pisa terreno débil y la cifra es apenas una guía aproximada. En la práctica pesa también qué tan bien aguanta una mano en las calles siguientes.]:::
 
 ## ¿Por qué el EQR es 109.6% si la ciega grande (BB) está fuera de posición?
 
@@ -212,7 +212,7 @@ Abre el [solver GTO gratuito](/es/solver) y ve a **Spots de estudio → Board A-
 
 Mira primero la cabecera: **Bote 22.5 bb · Stack 89 bb**. Ver eso en lugar de los 5.5bb y 97.5bb de los spots anteriores es este artículo entero de un vistazo. Después busca la fila que no está: el panel Manos lista solo **cinco** categorías para la ciega grande, y la que falta es "Sin jugada". Encima, en la tira de acciones, la ficha de Check marca **0.0% / 0.0 combos**.
 
-Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y califica tu acción en ciegas grandes perdidas. Gratis, sin instalar nada, sin cuenta.
+Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin instalar nada, sin cuenta.
 
 ## Preguntas frecuentes
 

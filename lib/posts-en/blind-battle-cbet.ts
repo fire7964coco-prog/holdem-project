@@ -93,7 +93,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the K♥T♦6♠ flop gets a bet 67.4% of the time and a check 32.6%. In the seven single-raised pots earlier in this series the out-of-position player bet only 0.1% to 23.7% — and two things changed, not one. Here the out-of-position player is the raiser rather than the caller, and the board favors that range. Together they push the out-of-position equity realization to 103.1%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-en.webp",
@@ -138,7 +138,7 @@ Result | SB bets **67.4%** — the first single-raised pot where the out-of-posi
 | SPR | **16.2** | 17.7 | 4.0 |
 | Bet sizes | About a third of the pot, **one size only** | About a third and three quarters (⑦ has one) | About a third and two thirds |
 | Rake | Not modeled | Not modeled | Not modeled |
-| Checked | 2026-08-08 (study spot result) | 2026-08-08 | 2026-08-08 |
+| Checked | 2026-08-08 (study spot result) | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 | ⑧⑨ 2026-08-20 · ⑩ 2026-08-08 |
 
 The 6bb pot is ==the SB's 3 plus the BB's 3==. Both blinds are already in the hand, so there is no dead blind on the side. The effective stack is ==100 − 3 = 97bb==.
 
@@ -249,7 +249,7 @@ Sets point the same way. Three pocket pairs make a set on this board — K-K, T-
 | EV (bb) | 3.42 | 2.58 |
 | **EQR (equity realization)** | **103.1%** | 96.1% |
 
-The pot is 6bb, so the small blind's share is ==6 × 55.3% = 3.32bb== while the actual EV is 3.42bb. That is ==3.42 ÷ 3.32 ≈ 103.1%==.
+The pot is 6bb, so the small blind's share is ==6 × 55.3% = 3.318bb== while the actual EV is 3.42bb. That is ==3.42 ÷ 3.318 ≈ 103.1%==.
 
 Pick seven spots from the series and rank them by EQR:
 

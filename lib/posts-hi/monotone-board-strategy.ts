@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Q♠9♠2♠ के monotone flop पर BB 88.8% check, 8.0% छोटी bet और सिर्फ 3.2% बड़ी bet करता है। बने हुए Flush को छोटी bet पर भी call मिल सकता है; Flush के बिना bet बढ़ाएँ तो call करने वाली range में Flush का हिस्सा बढ़ता है। Nut Flush औसतन 69.9% और दूसरे Flush 81.4% check करते हैं।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 मिनट",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-hi.webp",
@@ -117,7 +117,7 @@ Equity में बहुत बड़ा फर्क नहीं — 97.7% �
 
 **BB के पास — 7.1%, जबकि BTN के पास 5.7%।** मगर Flush draw का पलड़ा दूसरी ओर है।
 
-![Monotone spade बोर्ड पर BB और BTN की हैंड श्रेणियों की तुलना](/images/gto-srp-monotone-ranges-hi.webp "Q♠9♠2♠ · बने Flush में BB आगे है; Flush draw और A-high में BTN")
+![Monotone spade बोर्ड पर BB और BTN की हैंड श्रेणियों की तुलना](/images/gto-srp-monotone-ranges-hi.webp "Q♠9♠2♠ · बने Flush में BB आगे है; Overpair और A-high में BTN")
 
 | श्रेणी | BB (OOP) | BTN (IP) |
 |---|---|---|

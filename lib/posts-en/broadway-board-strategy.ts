@@ -53,7 +53,7 @@ export const POST: Post = {
   tldr: "On Q♠J♦T♠ after a button open and a big blind call, the big blind checks 99.9% — even though 68.4% of its range holds a draw. The cause is nut advantage: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. Equity realization splits 77.9% against 119.4%, the widest gap of the three dry-to-wet flops so far.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-26",
+  updated: "2026-10-02",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-en.webp",
@@ -209,7 +209,7 @@ That is the opposite of the dry-board recipe. There, small and frequent worked b
 
 - **Holding a draw is not a reason to lead from the big blind.** Both players have roughly the same draws here, so a draw is not an edge — leading with one runs into the made hands that only your opponent has.
 - **Do not play top pair for three streets of value on Q-J-T.** 21.0% of their range is already ahead and most of the rest is drawing at you. Calling down beats betting into it.
-- **Remember what is inside that check.** The big blind's 99.9% contains 32 combos of straights (K9, 98) and 27 combos of two pair. Those hands are not checking because they are weak — **the button c-bets this board at a high frequency, so passing the action back earns more than leading into it does**, and it keeps the checking range from collapsing into air. So do not read the check as nothing and rule out a check-raise. ⚠ What the *frequency* of that check-raise is, this solve cannot say: the study spot stops at **the flop's first action**, and everything past it needs "Solve this spot yourself."
+- **Remember what is inside that check.** The big blind's 99.9% contains 32 combos of straights (K9, 98) and 27 combos of two pair. Those hands are not checking because they are weak — **against the button's c-bets, passing the action back earns more than leading into it does** (how often the button c-bets here is not in this study spot), and it keeps the checking range from collapsing into air. So do not read the check as nothing and rule out a check-raise. ⚠ What the *frequency* of that check-raise is, this solve cannot say: the study spot stops at **the flop's first action**, and everything past it needs "Solve this spot yourself."
 - **Against opponents who never fold draws, size up rather than bet more often.** Buying folds is what fails here; charging draws is what works.
 
 :::readnext[Keep reading]
@@ -223,7 +223,7 @@ Open the [free GTO solver](/en/solver), go to **Study Spots → Connected Broadw
 
 On this spot, read the **Draws panel on the right** — open-enders and gutshots together clear 60%, the first time in this series. Then switch the player selector to **IP (BTN)** and look at Straight 10.5%: that single row is where the whole article comes from.
 
-To drill it instead of reading it, open the **GTO Trainer** in the sidebar: it deals hands from the real range weights and grades your action in big blinds lost. Free, nothing to install, no account.
+To drill it instead of reading it, open the **GTO Trainer** in the sidebar: it deals hands from the real range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
 ## FAQ
 

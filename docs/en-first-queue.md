@@ -194,9 +194,12 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **O-4 PDF 3문구**(`poker-starting-hands-chart.pdf` · 원본 `scripts/starting-hands-chart-print.html`) | ✅ 본문 표 문안으로 맞춤 · 재생성 · 1쪽 육안 확인 | 1 |
 | **O-5** | ✅ 10-01 판정·배포(MB-132) — 채택 ①②③(limping 괄호만 기각 · 이미 «by default»)④⑤ · 판정표 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8-2 | 5 |
 
-### 2-P. de GTO 13편 마감 렌즈가 올린 것 (2026-10-02 · 전부 ①EN 원문 유래 · **de에서만 고쳤다** · 자동 착수 금지)
+### 2-P. de GTO 13편 마감 렌즈가 올린 것 (2026-10-02 · 전부 ①EN 원문 유래) — ✅ 10-02 (15) EN + 9로케일 전파 완료 (MB-151)
 
-> de 마감 렌즈 4종(수치 ①~⑦ · 수치 ⑧~⑬ · 네이티브 · SEO+플레이어)이 EN 마스터에서 온 문장을 찾았다. de는 그 자리에서 고쳤다(경위 WORKLOG 10-02 (14)). **EN과 이미 발행된 로케일 9개(ja·es·pt·zh·zh-hant·id·hi·ms·ko 해당분)는 그대로다** — 고치려면 EN 먼저 → 로케일 전파 회차(사장님 지시 시). de 문안이 수정 견본이다(`lib/posts-de/<slug>.ts`).
+> ✅ **10-02 (15) 종결**: EN 11편(P-9는 EN 관용 유지 → 3bet-pot-bet-sizing 무변경) → 9로케일 본문 정정 = ko 7 · ja 12(ja만 P-9 «9ハイ» → 핸드 표기) · es 11 · pt 8 · zh 11 · zh-hant 11 · id 7 · hi 7 · ms 4. 나머지는 로케일 재구성이 이미 결함을 피해 «이미 정상» 판정 → `masterUpdated`만 10-02(대조 완료 표시 · §1-C). de 11편도 `masterUpdated` 10-02. 경위 WORKLOG 10-02 (15).
+> 🪶 남긴 것(자동 착수 금지): ① P-3 계열 «grades your action by EV lost»(EN·각 로케일 `3bet-pot-bet-sizing` 트레이너 문장 — 이번 표에 없던 자리) ② es·zh·zh-hant·ko 등 «K-high·9-high flush draws» 관용 직역(오역은 아님 · 모호) ③ ko 형제 글 GTO 조건표 확인일이 전부 2026-08-08(EN은 08-19·08-20) ④ ko `low-board-check-raise` H2 직답 «거의 전부 스트레이트 드로우»·FAQ «달라집니다» 단정형 ⑤ ms `paired` 바로 답 «K-high»·디펜스 폭 단서 없음 ⑥ ko `blind-battle-connected-board` audit H1 🔴 1(콤보 나열 오탐 추정 · HEAD에서도 동일).
+>
+> (원래 문구) de 마감 렌즈 4종(수치 ①~⑦ · 수치 ⑧~⑬ · 네이티브 · SEO+플레이어)이 EN 마스터에서 온 문장을 찾았다. de는 그 자리에서 고쳤다(경위 WORKLOG 10-02 (14)). de 문안이 수정 견본이다(`lib/posts-de/<slug>.ts`).
 
 | # | 글 | EN 자리 | 문제 | de 처리 |
 |---|---|---|---|---|

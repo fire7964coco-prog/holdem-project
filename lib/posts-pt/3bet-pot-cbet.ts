@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "No A♦K♠2♥ em pote de 3-bet, o big blind aposta com o range inteiro: o check arredonda para 0,0%, e nenhum dos 63 combos dá check nem em 0,1% das vezes. Nos sete spots anteriores, o padrão era dar check entre 76,2% e 99,9%. A principal mudança está na ação pré-flop: o BB deu 3-bet em vez de pagar e mantém as mãos do topo neste flop, enquanto AA e KK do botão saíram do range de call por darem 4-bet. Com SPR de 4,0, há menos espaço para adiar a construção do pote.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-pt.webp",
@@ -142,7 +142,7 @@ Contra 7,4bb em 22,5bb, impedir lucro automático de um blefe puro exigiria cont
 
 ⚠ **Neste spot, porém, a premissa da MDF tem base fraca.** Ela encontra a frequência que torna indiferente um **blefe puro com equity zero**. O range de aposta do BB tem **0,0% na categoria Sem mão feita: nenhum combo**. Um range sem nenhuma mão sem par deixa pouco do blefe puro que a MDF pressupõe, e a interpretação aponta para foldar **mais**, não menos. ⚠ Duas ressalvas são essenciais: ① “0% sem mão feita” não significa “0% blefes”; um underpair fraco pode apostar como blefe ou por proteção. ② A resposta do botão não está disponível nesta resolução, então não é possível confirmar a frequência ideal de defesa. Não leia os 41,5% como “logo, preciso continuar com pares médios”. É duvidoso até que o tamanho pequeno dê preço a esses 60 combos: contra o range inteiro do BB, só QQ e JJ têm mais que os 19,8% exigidos, enquanto 99 até 33 ficam entre 7,6% e 9,2%. De todo modo, a razão principal do tamanho continua sendo o **formato do range**, discutido antes; esse preço é uma consequência.
 
-:::note[⚠ A MDF simplifica a aposta como um blefe puro. Sua aplicação depende da presença de blefes; quando todo o range tem par ou melhor, como aqui, a hipótese de blefe puro com equity zero deixa de descrever a situação. O número é apenas uma referência aproximada. Na prática, considere também quanto a mão resiste às apostas nas streets seguintes.]:::
+:::note[⚠ A MDF simplifica a aposta como um blefe puro. Sua aplicação depende da presença de blefes; quando todo o range tem par ou melhor, como aqui, a hipótese de blefe puro com equity zero tem base fraca. O número é apenas uma referência aproximada. Na prática, considere também quanto a mão resiste às apostas nas streets seguintes.]:::
 
 ## Por que a EQR do BB chega a 109,6% fora de posição?
 
@@ -180,7 +180,7 @@ Abra o [solver de poker gratuito](/pt/solver), entre em **Spots de estudo** e es
 
 Confira primeiro o cabeçalho: **Pote 22,5bb · Stack 89bb**. Esses valores, em vez dos 5,5bb e 97,5bb dos spots anteriores, resumem a mudança de contexto. Depois, procure a categoria ausente: o painel **Mãos** mostra apenas **cinco** categorias para o BB; falta “Sem mão feita”. Acima, na faixa de ações, o marcador de check mostra **0,0% / 0,0 combos**.
 
-Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e avalia a perda de EV da sua decisão em big blinds. É gratuito, sem instalação e sem conta.
+Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e mostra quantos big blinds sua decisão custa. É gratuito, sem instalação e sem conta.
 
 ## Perguntas frequentes
 

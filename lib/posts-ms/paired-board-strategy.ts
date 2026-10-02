@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-ms.webp",
@@ -22,7 +22,7 @@ Flop ialah **6♣ 6♦ 3♥** — kad rendah, dengan satu pair pada board (kad k
 
 Jika anda memegang TT, equity anda ialah **76.0%**. TT yang sama mempunyai sekitar 54–57% apabila berdepan AK preflop, jadi flop ini *lebih baik* untuknya daripada situasi flip biasa. Dengan A9 pula, anda tidak membentuk pair melalui kad sendiri — tetapi empat perlima range lawan juga tidak mempunyai apa-apa melebihi pair pada board. Terus fold menyerahkan peluang memenangi pot.
 
-**Board yang jarang mengenai sesiapa sebenarnya menguji siapa mempunyai kad tinggi yang lebih baik.** Flop [A-high](/ms/blog/a-high-board-cbet) dan [K-high](/ms/blog/k-high-board-cbet) membandingkan siapa mengenai board; kali ini dua range (julat tangan) yang kebanyakannya tidak mengenai board saling berhadapan. Semua angka di bawah datang daripada [solver GTO percuma](/ms/solver) HoldemMaster.
+**Board yang jarang mengenai sesiapa sebenarnya menguji siapa mempunyai kad tinggi yang lebih baik.** Flop [A-high](/ms/blog/a-high-board-cbet) dan [K-high](/ms/blog/k-high-board-cbet) membandingkan siapa mengenai board; kali ini dua range (julat tangan) yang kebanyakannya tidak mengenai board saling berhadapan. Semua angka solver di bawah datang daripada [solver GTO percuma](/ms/solver) HoldemMaster; kebarangkalian seperti peluang 17.2% untuk flop berpasangan pula hanya kombinatorik biasa.
 
 :::stripe
 Spot | BTN open 2.5 bb → BB call (heads-up)
@@ -52,7 +52,7 @@ BTN open kepada 2.5 bb, BB call dan pemain lain fold: dua pemain, pot 5.5 bb, ba
 
 **Set menggunakan pocket pair yang sepadan dengan satu kad board; trips menggunakan satu kad tangan yang sepadan dengan pair pada board.** Kedua-duanya mempunyai kedudukan yang sama — three of a kind dalam [ranking tangan](/ms/blog/holdem-hand-rankings) — tetapi keadaan strateginya sangat berbeza.
 
-Flop lain dalam kumpulan single-raised pot siri ini menghasilkan set. (Satu lagi board berpasangan, A♠A♥6♦, muncul kemudian dalam kumpulan blind lawan blind.) Pada A-7-2, BB memerlukan 77 atau 22. Di sini board sendiri sudah mempunyai pair, jadi **satu enam sahaja menghasilkan trips**, manakala pocket 66 menghasilkan quads.
+Pada setiap flop tanpa pair dalam siri ini, three of a kind bermaksud set. (Satu lagi board berpasangan, A♠A♥6♦, muncul kemudian dalam kumpulan blind lawan blind.) Pada A-7-2, BB memerlukan 77 atau 22. Di sini board sendiri sudah mempunyai pair, jadi **satu enam sahaja menghasilkan trips**, manakala pocket 66 menghasilkan quads.
 
 | Tangan anda pada 6♣6♦3♥ | Hasilnya |
 |---|---|

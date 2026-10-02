@@ -26,8 +26,8 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop K♥10♦6♠ recibe una apuesta el 67.4% de las veces y un check el 32.6%. En los siete botes de subida simple anteriores de esta serie el jugador fuera de posición apostaba solo entre 0.1% y 23.7% — y cambiaron dos cosas, no una. Aquí el jugador fuera de posición es el que subió y no el que pagó, y el board le viene bien a ese rango. Juntas, llevan la realización de equity fuera de posición al 103.1%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "⚔️",
@@ -73,7 +73,7 @@ Resultado | La SB apuesta el **67.4%** — el primer bote de subida simple en el
 | SPR | **16.2** | 17.7 | 4.0 |
 | Tamaños de apuesta | Un tercio del bote, **un solo tamaño** | Un tercio y tres cuartos (⑦ tiene uno) | Un tercio y dos tercios |
 | Rake | No modelado | No modelado | No modelado |
-| Comprobado | 2026-08-08 (resultado del spot de estudio) | 2026-08-08 | 2026-08-08 |
+| Comprobado | 2026-08-08 (resultado del spot de estudio) | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 | ⑧⑨ 2026-08-20 · ⑩ 2026-08-08 |
 
 El bote de 6bb es ==los 3 de la SB más los 3 de la BB==. Las dos ciegas ya están dentro de la mano, así que no hay ciega muerta aparte. El stack efectivo es ==100 − 3 = 97bb==.
 
@@ -184,7 +184,7 @@ Los sets apuntan en la misma dirección. Tres pares servidos hacen set en este b
 | EV (bb) | 3.42 | 2.58 |
 | **EQR (realización de equity)** | **103.1%** | 96.1% |
 
-El bote es de 6bb, así que la parte de la ciega pequeña es ==6 × 55.3% = 3.32bb== mientras que el EV real es 3.42bb. Eso da ==3.42 ÷ 3.32 ≈ 103.1%==.
+El bote es de 6bb, así que la parte de la ciega pequeña es ==6 × 55.3% = 3.318bb== mientras que el EV real es 3.42bb. Eso da ==3.42 ÷ 3.318 ≈ 103.1%==.
 
 Toma siete spots de la serie y ordénalos por EQR:
 

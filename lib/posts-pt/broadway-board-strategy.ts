@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No Q♠J♦T♠, depois de uma abertura do botão e um call do big blind, o big blind dá check em 99,9%, embora 68,4% do seu range tenha draw. O botão tem vantagem de nuts: sequências em 10,5% contra 7,1%, sets em 2,0% contra 0,7% e overpairs em 2,6% contra 0%. A realização de equity fica em 77,9% contra 119,4%, a maior diferença entre os três flops apresentados até aqui.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-pt.webp",
@@ -160,7 +160,7 @@ O que amplia a diferença não é o número de draws, mas **qual range concentra
 
 - **Ter um draw não é motivo para sair apostando do big blind.** Os dois jogadores têm proporções parecidas de draws, então possuir um draw não cria vantagem por si só. Sair apostando com ele encontra as mãos prontas que só o adversário tem.
 - **Não tente extrair três streets de valor com top pair no Q-J-T.** Já há 21,0% do range adversário à frente, e boa parte do restante tem draw contra você. Começar pagando tende a ser melhor do que apostar de frente contra esse range.
-- **Lembre-se do que existe dentro desse check.** Os 99,9% do big blind incluem 32 combos de sequências, K9 e 98, e 27 combos de dois pares. Essas mãos não dão check por fraqueza: **o botão faz c-bet com frequência alta neste board, então passar a ação pode render mais do que sair apostando**, além de evitar que o range de check fique só com mãos sem nada. Portanto, não interprete o check como ausência de força nem descarte um check-raise. ⚠ A *frequência* desse check-raise não pode ser determinada nesta resolução: o exemplo para **na primeira ação do flop**. Tudo o que vem depois exige "Resolver este spot você mesmo".
+- **Lembre-se do que existe dentro desse check.** Os 99,9% do big blind incluem 32 combos de sequências, K9 e 98, e 27 combos de dois pares. Essas mãos não dão check por fraqueza: **contra as c-bets do botão, passar a ação pode render mais do que sair apostando** (a frequência com que o botão faz c-bet aqui não está neste exemplo), além de evitar que o range de check fique só com mãos sem nada. Portanto, não interprete o check como ausência de força nem descarte um check-raise. ⚠ A *frequência* desse check-raise não pode ser determinada nesta resolução: o exemplo para **na primeira ação do flop**. Tudo o que vem depois exige "Resolver este spot você mesmo".
 - **Contra quem nunca folda draws, aumente o tamanho em vez de apostar mais vezes.** Tentar comprar folds é o que falha aqui; cobrar dos draws é o que funciona.
 
 :::readnext[Continue lendo]
@@ -174,7 +174,7 @@ Abra o [solver de poker gratuito](/pt/solver), entre em **Spots de estudo → Bo
 
 Neste spot, observe o **painel Draws à direita**: OESD, os draws de sequência de duas pontas, e gutshots somam mais de 60%, pela primeira vez nesta série. Depois, no seletor de jogador, escolha **IP (BTN (open-raiser))** e veja a linha Straight, com 10,5%. Essa linha sustenta toda a explicação.
 
-Para praticar, abra o **Treinador GTO** na barra lateral. Ele distribui mãos usando os pesos reais do range e avalia sua ação em big blinds perdidos. É gratuito, sem instalação e sem conta.
+Para praticar, abra o **Treinador GTO** na barra lateral. Ele distribui mãos usando os pesos reais do range e mostra quantos big blinds sua ação custa. É gratuito, sem instalação e sem conta.
 
 ## Perguntas frequentes
 

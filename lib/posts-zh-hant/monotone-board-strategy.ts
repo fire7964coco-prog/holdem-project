@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "在 Q♠9♠2♠ 這種三張同花色的翻牌上，大盲位過牌 88.8%、打小注 8.0%，打大注只有 3.2%。大尺寸幾乎消失，是因為堅果被鎖死了：成牌同花打小注一樣有人跟，而你沒有同花卻下得越大，跟你的人就越集中在同花。連堅果同花平均都過牌 69.9%——非堅果的同花還更多，達 81.4%。",
   category: "strategy",
   date: "2026-09-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 分鐘",
   emoji: "♠️",
@@ -142,7 +142,7 @@ export const POST: Post = {
 
 **大盲位——7.1% 對 5.7%。** 但同花*聽牌*是反過來的。
 
-![範圍構成資訊圖：單色黑桃牌面上大盲位與按鈕位的牌型類別比較](/images/gto-srp-monotone-ranges-zh-hant.webp "Q♠9♠2♠ · 類別分布——成牌同花偏向大盲位，同花聽牌和 A 高牌偏向按鈕位")
+![範圍構成資訊圖：單色黑桃牌面上大盲位與按鈕位的牌型類別比較](/images/gto-srp-monotone-ranges-zh-hant.webp "Q♠9♠2♠ · 類別分布——成牌同花偏向大盲位，超對和 A 高牌偏向按鈕位")
 
 | 類別 | BB（OOP） | BTN（IP） |
 |---|---|---|

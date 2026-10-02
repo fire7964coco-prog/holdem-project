@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["nut advantage", "range advantage", "flop Broadway", "two-tone board", "draw", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-id.webp",
@@ -159,7 +159,7 @@ Di board kering, bet kecil dan sering berguna untuk membuat hand kosong fold. Di
 
 - **Memiliki draw belum cukup menjadi alasan untuk lead dari big blind.** Kedua pihak memiliki jumlah draw yang hampir sama. Draw Anda tidak memberi keunggulan tersendiri, sementara lead dapat menghadapi hand jadi kuat yang hanya dimiliki lawan.
 - **Jangan memaksakan tiga street value dengan top pair di Q-J-T.** Sebanyak 21,0% range lawan sudah unggul dan banyak hand lainnya masih memiliki draw. Mengontrol pot melalui check dan call lebih masuk akal daripada terus membesarkannya dengan satu pair.
-- **Ingat isi range check itu.** Frekuensi check big blind sebesar 99,9% mencakup 32 combo straight K9 dan 98 serta 27 combo two pair. Hand ini check bukan karena lemah. Ketika button sering c-bet, **memberinya kesempatan bet dapat menghasilkan lebih banyak nilai daripada lead**, sekaligus menjaga range check tetap kuat. Karena itu, check tidak meniadakan kemungkinan check-raise. Frekuensi check-raise belum dihitung dalam hasil ini: Spot belajar berhenti pada **aksi pertama flop**, dan lanjutan aksinya memerlukan **Hitung sendiri spot ini**.
+- **Ingat isi range check itu.** Frekuensi check big blind sebesar 99,9% mencakup 32 combo straight K9 dan 98 serta 27 combo two pair. Hand ini check bukan karena lemah. Melawan c-bet button, **memberinya kesempatan bet dapat menghasilkan lebih banyak nilai daripada lead** (seberapa sering button c-bet di sini tidak tercakup dalam Spot belajar ini), sekaligus menjaga range check tetap kuat. Karena itu, check tidak meniadakan kemungkinan check-raise. Frekuensi check-raise belum dihitung dalam hasil ini: Spot belajar berhenti pada **aksi pertama flop**, dan lanjutan aksinya memerlukan **Hitung sendiri spot ini**.
 - **Melawan pemain yang tidak pernah fold draw, perbesar sizing alih-alih sekadar menambah frekuensi bet.** Sulit mendapat fold dari mereka, tetapi Anda dapat menarik pembayaran lebih besar dari draw.
 
 :::readnext[Lanjut membaca]
@@ -173,7 +173,7 @@ Buka [solver GTO gratis](/id/solver), lalu pilih **Spot belajar → Board Broadw
 
 Di spot ini, perhatikan **panel Draw di kanan**. OESD dan gutshot bersama-sama melewati 60%, pertama kali dalam seri ini. Lalu ganti pemain menjadi **IP (BTN (opener))** dan lihat Straight 10,5%. Baris itu menjadi dasar pembahasan perbedaan hand terkuat dalam artikel ini.
 
-Untuk berlatih, buka **Trainer GTO** di sidebar. Hand dibagikan sesuai bobot range sebenarnya, dan keputusan Anda dinilai dalam big blind yang hilang. Gratis, tanpa instalasi dan tanpa akun.
+Untuk berlatih, buka **Trainer GTO** di sidebar. Hand dibagikan sesuai bobot range sebenarnya, dan Anda melihat berapa big blind yang hilang karena keputusan Anda. Gratis, tanpa instalasi dan tanpa akun.
 
 ## Pertanyaan umum
 

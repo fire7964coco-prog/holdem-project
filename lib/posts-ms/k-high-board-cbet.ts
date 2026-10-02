@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-02",
   readTime: "9 minit",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-ms.webp",

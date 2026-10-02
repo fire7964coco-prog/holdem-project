@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "6♠5♥2♦ पर BB 96.8% check और 3.2% lead करता है, जबकि equity 48.3% है। Straight सिर्फ 43 से बनेगा और वह किसी range में नहीं है; दोनों के पास बराबर Sets हैं। इसलिए BB को सबसे ऊँचे हैंडों में अलग बढ़त नहीं मिलती। 2026-08-20 के अलग solve में, BTN की 1.8 bb bet के बाद BB 14.9% check-raise करता है। इस प्रतिक्रिया को पहले से गणना किए root परिणाम से अलग पढ़ें।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "11 मिनट",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-hi.webp",
@@ -92,7 +92,7 @@ BTN 2.5 bb तक open, BB call, बाकी सभी fold। दो खिल
 
 **बोर्ड से एक pair बनाने में BB आगे है; Overpair में पीछे।** उसके पास Top Pair, Second Pair और कमजोर pairs अधिक हैं। Sets और Two Pair बराबर हैं, जबकि Overpairs BTN के लगभग आधे हैं। दोनों ranges का करीब तीन-चौथाई हिस्सा बिना pair है, इसलिए यह सिर्फ बने हुए value hands की लड़ाई नहीं; overcards और आगे सुधारने वाले हैंड भी अहम हैं।
 
-![Low rainbow board पर BB के अधिक छोटे pairs और BTN के अधिक Overpairs की तुलना](/images/gto-srp-low-rainbow-ranges-hi.webp "6♠5♥2♦ · check-raise बनाने वाली range को समझें")
+![Low rainbow board पर BB के अधिक छोटे pairs और BTN के अधिक Overpairs की तुलना](/images/gto-srp-low-rainbow-ranges-hi.webp "6♠5♥2♦ · range की बनावट — pairs में BB आगे, Overpairs में BTN आगे")
 
 | श्रेणी | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -256,7 +256,7 @@ A. लगभग हर casino और सामान्य online games मे�
 
 **Q. क्या यही frequencies मेरे stakes पर भी लागू होंगी?**
 
-A. समान शर्तों में शुरुआती संदर्भ मानें: heads-up, 100 bb, BTN का 2.5 bb open, यही defending ranges और rake के बिना। इस उदाहरण का विशेष प्रतिबंध है कि सिर्फ 33% bet size दी गई थी; सॉल्वर बड़ी size चुन ही नहीं सकता था। दो sizes देंगे तो frequencies बदल सकती हैं, भले ऊपर की range-आधारित वजहें उपयोगी रहें।
+A. समान शर्तों में शुरुआती संदर्भ मानें: heads-up, 100 bb, BTN का 2.5 bb open, यही defending ranges और rake के बिना। इस उदाहरण का विशेष प्रतिबंध है कि सिर्फ 33% bet size दी गई थी; सॉल्वर बड़ी size चुन ही नहीं सकता था। दो sizes के साथ frequencies बदल सकती हैं — यहाँ सिर्फ एक size वाला संस्करण solve किया गया है।
 `.trim(),
 };
 

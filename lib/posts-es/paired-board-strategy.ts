@@ -27,8 +27,8 @@ export const POST: Post = {
   tldr: "En el board pareado bajo 6♣6♦3♥ la ciega grande hace check el 97.0%. Lo raro es que tiene más trips que el botón: 26 combos con un seis contra 20. Hace check igual, porque solo el 18.4% de su rango tiene algo más allá de la pareja del board, y el otro 81.6% es una pelea de cartas altas que gana el botón. Lo que sí gana valor es cualquier par servido por encima del seis — TT tiene un 76.0% de equity aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "👯",
@@ -48,7 +48,7 @@ El flop es **6♣ 6♦ 3♥** — cartas bajas, y una pareja entre ellas. Parece
 
 Ten TT ahí y tu equity es del **76.0%**. Ese mismo TT va al 54–57% contra AK preflop, así que este flop es *mejor* para él que el cara o cruz de siempre. Ten A9 y no tienes nada — pero cuatro quintas partes del rango de tu rival tampoco tienen nada más que la pareja del board, así que foldear de inmediato es regalar el bote.
 
-**Un board que no ligó nadie es en realidad una pelea por quién tiene mejores cartas altas.** Los flops [con as](/es/blog/a-high-board-cbet) y [con rey](/es/blog/k-high-board-cbet) eran peleas por quién conectó; este es una pelea entre dos rangos que en su mayoría no conectaron. Todas las cifras de abajo salen del [solver GTO gratuito](/es/solver) de HoldemMaster.
+**Un board que no ligó nadie es en realidad una pelea por quién tiene mejores cartas altas.** Los flops [con as](/es/blog/a-high-board-cbet) y [con rey](/es/blog/k-high-board-cbet) eran peleas por quién conectó; este es una pelea entre dos rangos que en su mayoría no conectaron. Todas las cifras de solver de abajo salen del [solver GTO gratuito](/es/solver) de HoldemMaster; probabilidades como el 17.2% de que el flop venga pareado son pura combinatoria.
 
 
 :::stripe
@@ -59,7 +59,7 @@ Resultado | La BB hace check el 97.0% — teniendo más trips
 :::
 
 > **Respuesta rápida**
-> Haz check con casi todo, y defiende mucho más ancho de lo que se siente correcto. Tener un seis no es motivo para apostar primero — apostar solo hace foldear a lo que ya le ganas, así que los seises se quedan en el rango que hace check, y la ciega grande hace check el **97.0%** aquí. Las manos que de verdad ganan en este flop son los pares servidos por encima del seis, y las que hay que dejar de foldear son el A-high y los mejores K-high.
+> Haz check con casi todo, y no foldees solo porque no ligaste el board. Tener un seis no es motivo para apostar primero — apostar solo hace foldear a lo que ya le ganas, así que los seises se quedan en el rango que hace check, y la ciega grande hace check el **97.0%** aquí. Las manos que de verdad ganan en este flop son los pares servidos por encima del seis, y el A-high no debería ser un fold automático ante una sola apuesta pequeña — hasta dónde llega exactamente la defensa óptima es algo que este spot de estudio no muestra.
 
 ## ¿En qué condiciones salieron estos números?
 
@@ -79,7 +79,7 @@ El botón abre a 2.5bb, la ciega grande paga y el resto foldea — dos jugadores
 
 **Un set es un par servido que liga con una carta del board; hay trips cuando una carta de tu mano liga con la pareja que ya está en la mesa.** Son la misma jugada — trío (en México, tercia), archivados juntos en la [jerarquía de manos](/es/blog/holdem-hand-rankings) — pero se juegan de forma completamente distinta.
 
-Todos los demás flops de bote de subida simple (single raised pot) de esta serie producían sets (el otro board pareado, A♠A♥6♦, llega después en el grupo de guerra de ciegas): en A-7-2 la ciega grande necesitaba 77 o 22 en la mano. Aquí el board trae su propia pareja, así que **cualquier seis suelto hace trips**, y solo 66 en la mano hace quads.
+En todos los flops sin pareja de esta serie, un trío significa un set (el otro board pareado, A♠A♥6♦, llega después en el grupo de guerra de ciegas): en A-7-2 la ciega grande necesitaba 77 o 22 en la mano. Aquí el board trae su propia pareja, así que **cualquier seis suelto hace trips**, y solo 66 en la mano hace quads.
 
 | Tu mano en 6♣6♦3♥ | Tienes |
 |---|---|
@@ -243,7 +243,7 @@ Abre el [solver GTO gratuito](/es/solver) y ve a **Spots de estudio → Board pa
 
 Lo que hay que buscar es **la única fila de 6♠6♥** en la tabla por mano — los únicos quads que este board permite y, con su **359.7%**, la realización de equity más alta de toda esta serie (la segunda es el 88 del botón en el [bote de 3-bet con board bajo](/es/blog/3bet-pot-low-board) con **346.0%**; del lado de la ciega grande, la siguiente es 6♥6♣ en el [flop bajo y rainbow](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") con **318.9%**). Compárala con las tres filas de 33 justo debajo y verás qué pocos combos contiene de verdad la cima de un board pareado.
 
-Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y califica tu acción en ciegas grandes perdidas. Gratis, sin instalar nada, sin cuenta.
+Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin instalar nada, sin cuenta.
 
 ## Preguntas frecuentes
 

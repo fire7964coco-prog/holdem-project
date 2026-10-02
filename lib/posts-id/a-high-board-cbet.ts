@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop A-high", "dry board", "range advantage", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "9 mnt",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-id.webp",
@@ -66,7 +66,7 @@ Dari 464 combo, hanya sekitar delapan combo yang bet: total 1,9% dari kedua ukur
 
 Karena check memberi cara yang lebih baik untuk memperebutkan pot. Lead dengan satu pair, saat harus beraksi lebih dulu melawan raiser preflop, membuat Anda membayar lebih mahal untuk memainkan hand yang sebenarnya senang mencapai showdown.
 
-Ada tiga hal yang menghambat lead. Pertama, **realisasi equity**: angka di bawah menunjukkan big blind merealisasikan 84,0% equity-nya, sedangkan button 113,1%. Membesarkan pot tanpa posisi memperbesar dampak selisih tersebut. Kedua, button biasanya sering c-bet di flop ini. **Check mempertahankan bluff-nya di dalam pot**, sementara lead memberinya kesempatan fold tanpa menambah uang. Ketiga, range big blind dibatasi di bagian teratas: tanpa AA, AK, atau AQ, lead membuka peluang raise dari As kuat, dan sebagian besar range big blind tidak bisa melanjutkan melawannya. Hanya 24 combo yang sanggup menghadapi raise: set 77 dan 22, serta two pair A7 dan A2. (Node raise tidak dihitung dalam contoh ini.)
+Ada tiga hal yang menghambat lead. Pertama, **realisasi equity**: angka di bawah menunjukkan big blind merealisasikan 84,0% equity-nya, sedangkan button 113,1%. Membesarkan pot tanpa posisi memperbesar dampak selisih tersebut. Kedua, button biasanya sering c-bet di flop seperti ini (frekuensinya tidak tersedia dalam perhitungan ini). **Check mempertahankan bluff-nya di dalam pot**, sementara lead memberinya kesempatan fold tanpa menambah uang. Ketiga, range big blind dibatasi di bagian teratas: tanpa AA, AK, atau AQ, lead membuka peluang raise dari As kuat, dan sebagian besar range big blind tidak bisa melanjutkan melawannya. Hanya 24 combo yang sanggup menghadapi raise: set 77 dan 22, serta two pair A7 dan A2. (Node raise tidak dihitung dalam contoh ini.)
 
 Lead juga tidak membuat hand yang lebih baik fold. Range open button memuat semua As hingga A2, ditambah underpair dan pair tujuh. Jadi, ada banyak hand lebih lemah yang dapat call. Persoalannya bukan ketiadaan caller yang lebih lemah, melainkan besarnya pot yang Anda bangun untuk melawan mereka.
 
@@ -124,7 +124,7 @@ Patokan umum ini memiliki satu syarat: **pihak dengan range advantage, tanpa nut
 ## Apa yang berubah saat Anda bermain?
 
 - **Setelah call raise dalam pot heads-up, gunakan check sebagai patokan di flop kering A-high.** Ini juga berlaku untuk top pair. Lead membangun pot yang harus Anda mainkan tanpa posisi dengan satu pair; dampaknya terlihat pada selisih realisasi 84% berbanding 113% di atas. Pot limp dan pertarungan antarkedua blind memiliki struktur berbeda dan tidak dicakup spot ini.
-- **Check tidak berarti check-fold.** Inilah kesalahan membaca angka yang paling mudah terjadi. Menghadapi c-bet kecil button, big blind dapat melanjutkan dengan range luas: semua As, sebagian besar pair tujuh, underpair, dan king-high dengan backdoor. **A9 adalah kandidat check-call**, biasanya juga berlanjut di turn. Kandidat check-raise terutama 77, 22, A7, dan A2, ditambah beberapa bluff dengan backdoor.
+- **Check tidak berarti check-fold.** Inilah kesalahan membaca angka yang paling mudah terjadi. Menghadapi c-bet kecil button, big blind dapat melanjutkan dengan range luas: semua As, sebagian besar pair tujuh, underpair, dan king-high dengan backdoor. **A9 adalah kandidat check-call**, biasanya juga berlanjut di turn. Kandidat check-raise yang wajar adalah 77, 22, A7, dan A2, ditambah beberapa bluff dengan backdoor — meski respons big blind terhadap c-bet tidak dihitung dalam perhitungan ini.
 - **Di button, bet kecil dengan range luas melawan pemain yang bisa fold.** Melawan pemain yang tidak pernah fold, kurangi bluff dan perbesar value bet dengan **top pair atau lebih baik**. Bluff lanjutan di turn dan river khususnya kehilangan nilai jika lawan tetap tidak fold. A9 dengan kicker lemah bukan kandidat untuk membesarkan sizing; hand ini juga tidak perlu bet tiga street.
 - **Melawan pemain seimbang, check di sini tidak menunjukkan kelemahan.** Range check masih memuat set 77 dan 22 serta two pair A7 dan A2, sehingga tekanan berlebihan bisa menghadapi check-raise. Di taruhan rendah, banyak pemain justru lead dengan hand kuat, sehingga range check mereka memang lemah. Terus lakukan value bet terhadap pola itu; kemungkinan check-raise sesekali bukan alasan untuk selalu menahan diri.
 

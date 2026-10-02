@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "No Q♠9♠2♠, com as três cartas do flop do mesmo naipe, o big blind dá check em 88,8%, aposta pequeno em 8,0% e aposta grande em apenas 3,2%. O tamanho grande quase desaparece porque o topo está concentrado nos flushes: um flush pronto já recebe calls de apostas pequenas, e apostar mais sem flush concentra os calls adversários em flushes. Até o nut flush dá check em 69,9% na média; os flushes abaixo dele dão ainda mais check, em 81,4%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-pt.webp",
@@ -118,7 +118,7 @@ A equity muda pouco, de 97,7% para 94%, mas a EQR cai para 197%. **Você ganha m
 
 **O big blind: 7,1% contra 5,7%.** Mas, nos *draws* de flush, a vantagem se inverte. O BB joga fora de posição (OOP); o BTN, em posição (IP).
 
-![Composição dos ranges do big blind e do botão por categoria de mão no board Q♠9♠2♠](/images/gto-srp-monotone-ranges-pt.webp "Q♠9♠2♠ · distribuição por categoria — o BB tem mais flushes prontos; o BTN, mais flush draws e A-high")
+![Composição dos ranges do big blind e do botão por categoria de mão no board Q♠9♠2♠](/images/gto-srp-monotone-ranges-pt.webp "Q♠9♠2♠ · distribuição por categoria — o BB tem mais flushes prontos; o BTN, mais overpairs e A-high")
 
 | Categoria | BB (OOP) | BTN (IP) |
 |---|---|---|

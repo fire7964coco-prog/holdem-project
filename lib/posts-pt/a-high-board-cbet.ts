@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No A♥7♦2♣, depois de uma abertura do botão e um call do big blind, o big blind dá check com 98,2% do range, incluindo top pair, dois pares e sets. A equity fica próxima: 45,1% contra 54,9%. A grande diferença está na realização de equity: 84,0% fora de posição contra 113,1% em posição.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   readTime: "9 min",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-pt.webp",
@@ -67,7 +67,7 @@ Dos 464 combos, cerca de oito apostam: 1,9% somando os dois tamanhos, com arredo
 
 Porque é mais fácil ganhar esse pote começando com check. Sair apostando com um par, fora de posição e contra quem tomou a iniciativa pré-flop é uma forma cara de jogar uma mão com a qual você gostaria de chegar ao showdown.
 
-Três fatores pesam contra o lead. Primeiro, a **realização de equity**: os números abaixo mostram o big blind realizando 84,0% da sua equity, contra 113,1% do botão. Aumentar o pote fora de posição faz essa diferença custar mais. Segundo, o botão faz c-bet com frequência alta neste flop: **o check mantém os blefes dele no pote**, enquanto o lead permite que essas mãos foldem sem colocar mais fichas. Terceiro, o range do big blind é limitado no topo: sem AA, AK ou AQ, uma aposta inicial abre espaço para raises dos ases fortes, e a maior parte do range do big blind não consegue continuar contra eles — só 24 combos aguentam um raise (os sets 77 e 22 e os dois pares A7 e A2). (Nenhum nó de raise foi resolvido aqui.)
+Três fatores pesam contra o lead. Primeiro, a **realização de equity**: os números abaixo mostram o big blind realizando 84,0% da sua equity, contra 113,1% do botão. Aumentar o pote fora de posição faz essa diferença custar mais. Segundo, o botão costuma fazer c-bet com frequência num flop como este (uma frequência que este cálculo não fornece): **o check mantém os blefes dele no pote**, enquanto o lead permite que essas mãos foldem sem colocar mais fichas. Terceiro, o range do big blind é limitado no topo: sem AA, AK ou AQ, uma aposta inicial abre espaço para raises dos ases fortes, e a maior parte do range do big blind não consegue continuar contra eles — só 24 combos aguentam um raise (os sets 77 e 22 e os dois pares A7 e A2). (Nenhum nó de raise foi resolvido aqui.)
 
 O que um lead **não** faz é tirar mãos melhores do pote. O range de abertura do botão contém todos os ases até A2, além de underpairs e pares de sete. Portanto, várias mãos piores pagariam. Esse não é o problema. O problema é o tamanho do pote que você constrói para tentar ganhá-lo.
 
@@ -125,7 +125,7 @@ A regra prática se estende a outros boards com uma condição: **o lado com van
 ## O que muda na prática?
 
 - **Depois de pagar uma abertura em heads-up, deixe de lado a ideia de sair apostando num flop seco com ás alto.** Inclusive com top pair. O lead constrói um pote que você terá de jogar fora de posição com um par: é justamente a diferença de 84% contra 113% mostrada acima. Potes de limp e disputas entre os blinds têm outra estrutura e estão fora deste spot.
-- **Dar check não é jogar de check-fold.** É aqui que a frequência costuma ser mal interpretada. Contra a c-bet pequena do botão, o big blind continua com um range amplo: todos os ases, a maioria dos pares de sete, os underpairs e K-high com backdoor. **A9 é uma mão para check-call**, normalmente também no turn. Os check-raises vêm principalmente de 77, 22, A7 e A2, além de alguns blefes com backdoor.
+- **Dar check não é jogar de check-fold.** É aqui que a frequência costuma ser mal interpretada. Contra a c-bet pequena do botão, o big blind continua com um range amplo: todos os ases, a maioria dos pares de sete, os underpairs e K-high com backdoor. **A9 é uma mão para check-call**, normalmente também no turn. Os candidatos naturais ao check-raise são 77, 22, A7 e A2, além de alguns blefes com backdoor — embora este cálculo não cubra a resposta do big blind à c-bet.
 - **No botão, aposte pequeno com um range amplo contra quem folda.** Contra quem nunca folda, ajuste em duas direções: menos blefes, porque esse jogador não vai desistir seja qual for a aposta, especialmente no turn e no river, onde o segundo e o terceiro disparos só geram perda; e apostas maiores por valor com **top pair ou melhor**. A9, com seu kicker fraco, não é uma mão para aumentar o tamanho: é uma mão com a qual você simplesmente não aposta nas três streets.
 - **Contra um adversário equilibrado, check aqui não significa fraqueza.** O range de check contém sets, 77 e 22, e dois pares, A7 e A2. Pressionar demais pode encontrar um check-raise. Nos limites baixos, muitas vezes acontece o contrário: vários jogadores saem apostando com as mãos fortes, então o check realmente indica fraqueza. Continue apostando por valor e encare o check-raise como um custo ocasional, não como motivo para frear.
 
