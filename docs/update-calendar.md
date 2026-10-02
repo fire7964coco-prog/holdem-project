@@ -53,8 +53,9 @@
 - **11/27 20:00 = 훅이 죽는 날**(마지막 Day 1 Turbo) → 참가 방법 문장 과거형
 - **11/30 Final Day 뒤**: 결과 아카이브 전환(리드·Kurze Antwort·Fazit·FAQ **4곳 동시** · 공식 대회 페이지/보도자료로 엔트리·상금·우승자) · GPM 비교 절도 GPM 결과로(kings-resort.com/poker/results/2026-11) · 같은 날 «CAPT 시즌 종료» 항목(아래 11/30)과 함께
 
-### 🆕 11/4 · 12/4 21:20 · 12/9 11:50 · 12/13 이후 — de EPT Prag 2026 글 (미발행 · 사실 시트 `docs/tournament-factsheets/2026-12-ept-prague.md` · 등재 2026-10-02)
-- **11/4 = D-28 = «참가 방법» 글 발행 마감**(이 날 지나면 일정·관전형으로 축소). 같은 시기 «DE Stars Account 온라인 등록 개시(rund vier Wochen vorher)» — 개시일은 공식 미기재
+### 🆕 11/4 · 12/4 21:20 · 12/9 11:50 · 12/13 이후 — de `ept-prague-2026-guide` (발행 2026-10-02 (7) · 사실 시트 `docs/tournament-factsheets/2026-12-ept-prague.md`)
+- ✅ D-28(11/4) 전 발행 완료. **11월 초**: «DE Stars Account 온라인 등록(rund vier Wochen vorher)» 실제 개시 확인 → 열렸으면 본문 «Anfang November» 문장을 확정형으로 · 일정표·바이인 재열람(€1.100·€3.250/3.200 상충 해소 여부)
+- 🪶 경쟁 신호: King's·pokerfirma가 €1.650→€1.100으로 고치면 리드의 «einige deutschsprachige Übersichten zeigen ihn noch» 문장 정리
 - 12/4 21:20 = PS Open ME 마지막 플라이트(1/F) 레지 마감 · **12/9 11:50 = EPT ME 레지 마감 = 훅이 죽는 날** → 참가 방법 문장 과거형
 - 12/13 Final 뒤: 결과 아카이브 전환(4곳 동시 · 엔트리·상금은 공식/PokerNews 원문)
 

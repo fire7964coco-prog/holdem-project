@@ -884,7 +884,9 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "듀얼 페스티벌 — PokerStars Open ME €1,100 (12/2~7) → EPT ME €5,300 (12/7~13) · Cup €825 · HR €10,300",
     sourceUrl: "https://www.pokerstarslive.com/ept/prague/",
     sourceTier: "A",
-    verifiedAt: "2026-09-03",
+    verifiedAt: "2026-10-02",
+    // de 고유 글(2026-10-02 · 사실 정본 docs/tournament-factsheets/2026-12-ept-prague.md) — 공용 blogLink는 달지 않는다(pt bsop 선례)
+    blogLinkByLocale: { de: "/blog/ept-prague-2026-guide" },
   },
   {
     id: "gop-jeju",

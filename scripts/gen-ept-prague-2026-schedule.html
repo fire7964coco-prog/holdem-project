@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage { position:relative; width:1200px; height:675px; overflow:hidden;
+  background: radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%), linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:#F2EEE3; }
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { font-size:40px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.gold { color:#C9A227; } .green { color:#39FF6A; } .red { color:#FF6B6B; }
+.hdr .sub { color:#C9A227; font-size:16px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+.foot { position:absolute; bottom:60px; left:70px; width:1060px; border-radius:14px; padding:14px 24px; background:rgba(255,255,255,.05); text-align:center; font-size:17px; font-weight:700; }
+.foot b { color:#C9A227; font-weight:900; }
+.cards { position:absolute; top:170px; left:70px; width:1060px; display:flex; gap:22px; }
+.c { flex:1; border-radius:18px; padding:26px 22px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); text-align:center; }
+.c.ok { border-color:rgba(57,255,106,.5); }
+.c .k { color:#C9A227; font-size:17px; font-weight:900; letter-spacing:.04em; text-transform:uppercase; }
+.c .n { font-size:38px; font-weight:900; line-height:1.2; margin-top:24px; }
+.c .n small { display:block; font-size:21px; font-weight:800; margin-top:4px; }
+.c .u { opacity:.65; font-size:14px; font-weight:700; margin-top:18px; line-height:1.6; }
+s { opacity:.55; text-decoration-thickness:3px; text-decoration-color:#FF6B6B; }
+
+.grid { position:absolute; top:150px; left:60px; width:1080px; }
+.row { display:flex; align-items:center; height:56px; }
+.lab { width:300px; font-size:17px; font-weight:800; line-height:1.2; }
+.lab small { display:block; color:#C9A227; font-size:15px; font-weight:800; }
+.track { position:relative; flex:1; height:56px; }
+.days { display:flex; margin-left:300px; height:46px; }
+.d { flex:1; text-align:center; font-size:14px; font-weight:800; color:#C9A227; line-height:1.25; }
+.d span { display:block; color:#F2EEE3; opacity:.6; font-size:12px; }
+.bar { position:absolute; top:12px; height:32px; border-radius:8px; background:rgba(201,162,39,.30); border:1px solid rgba(201,162,39,.7); font-size:14px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+.bar.g { background:rgba(57,255,106,.18); border-color:rgba(57,255,106,.7); }
+.vl { position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,.06); }
+.note { position:absolute; bottom:58px; left:60px; width:1080px; font-size:14px; font-weight:700; opacity:.7; text-align:center; }
+</style></head><body><div class="stage">
+  <div class="hdr"><h1>EPT Prag 2026 – <span class="gold">Key Dates</span></h1>
+  <div class="sub">DIE SECHS GROSSEN TURNIERE IM ÜBERBLICK</div></div>
+  <div class="grid">
+    <div class="days">
+      <div class="d">2.<span>Mi</span></div><div class="d">3.<span>Do</span></div><div class="d">4.<span>Fr</span></div><div class="d">5.<span>Sa</span></div><div class="d">6.<span>So</span></div><div class="d">7.<span>Mo</span></div><div class="d">8.<span>Di</span></div><div class="d">9.<span>Mi</span></div><div class="d">10.<span>Do</span></div><div class="d">11.<span>Fr</span></div><div class="d">12.<span>Sa</span></div><div class="d">13.<span>So</span></div>
+    </div>
+    <div class="row"><div class="lab">PokerStars Open Main Event<small>€1.100</small></div><div class="track"><div class="bar g" style="left:0%;width:50%">2.–7.12.</div></div></div>
+    <div class="row"><div class="lab">PokerStars Cup<small>€825</small></div><div class="track"><div class="bar g" style="left:25%;width:16.66%">5.–6.12.</div></div></div>
+    <div class="row"><div class="lab">PokerStars High Roller<small>€2.200</small></div><div class="track"><div class="bar g" style="left:33.33%;width:25%">6.–8.12.</div></div></div>
+    <div class="row"><div class="lab">EPT Main Event<small>€5.300</small></div><div class="track"><div class="bar" style="left:41.66%;width:58.34%">7.–13.12.</div></div></div>
+    <div class="row"><div class="lab">EPT Mystery Bounty<small>€3.250*</small></div><div class="track"><div class="bar" style="left:58.33%;width:25%">9.–11.12.</div></div></div>
+    <div class="row"><div class="lab">EPT High Roller<small>€10.300</small></div><div class="track"><div class="bar" style="left:75%;width:25%">11.–13.12.</div></div></div>
+  </div>
+  <div class="note">Grün = PokerStars Open · Gold = EPT · *laut Turnierplan; die Key-Dates-Übersicht nennt €3.200</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div></body></html>

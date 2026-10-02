@@ -274,6 +274,8 @@ Das **King's Resort in Rozvadov** liegt direkt hinter der bayerischen Grenze, re
 
 ==g:Merke dir den Namen nicht als Ortsangabe: „German Poker Days“ und „German Poker Masters“ heißen deutsch, werden aber in Tschechien ausgerichtet.==
 
+Der zweite tschechische Termin im Dezember liegt nicht in Rozvadov, sondern in Prag: Die **EPT Prag** läuft vom 2. bis 13. Dezember 2026 im Hilton Hotel Prague, das PokerStars Open Main Event kostet dort €1.100, das EPT Main Event €5.300. Flights, Satellites und den Online-Buy-in mit deutschem Stars Account erklärt unser [Guide zur EPT Prag 2026](/de/blog/ept-prague-2026-guide).
+
 ### Österreich und Schweiz
 
 In Österreich läuft Turnierpoker in den Casinos Austria. Ihre eigene Tour heißt **CAPT**. Bis Jahresende stehen fünf Stationen an:

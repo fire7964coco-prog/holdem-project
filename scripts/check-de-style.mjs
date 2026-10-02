@@ -71,7 +71,7 @@ export const DE_CLUSTERS = {
     'wpt-australia-2026-guide', 'korea-poker-marathon-2026',
   ],
   // de 전용 로컬 가이드 (다른 언어에 대응 slug 없음 — 2026-08-15 신설)
-  Lokal: ['poker-turnier-muenchen', 'capt-million-baden-2026-guide'],
+  Lokal: ['poker-turnier-muenchen', 'capt-million-baden-2026-guide', 'ept-prague-2026-guide'],
   기타: ['holdem-card-counting'],
 };
 

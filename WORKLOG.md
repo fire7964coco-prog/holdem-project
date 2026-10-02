@@ -1,3 +1,12 @@
+## 2026-10-02 (7) — de 고유 대회 글 1편 `ept-prague-2026-guide` 발행 (MB-145 · MB-146)
+
+- 핸드오프 순서표 2번(de EPT Prag · D-61 · 마감 11/4). 사실 = 10-02 (6) 시트 그대로(재조사 0) + §7 교통만 서브 조사 1(bahn.de 구간 페이지·ÖBB·edalnice cenik·hilton·DPP 축어 · DB 요약 페이지 «ca. 5/6 Stunden» 상충 → 구간 페이지 값만). 실행 15:34~ · Opus 5.5 본체 집필 + 서브 2(교통·표현 조사 / 독일어 현지 기자 적대 검수).
+- 글: 훅 «€1.100 statt €1.650»(경쟁 페이지 실명 없이) · Kurze Antwort · H2 10(질문형 8) · 표 10 · steps 1 · FAQ 6(H2 비중복 · «kings casino prague hilton» 자동완성 반영) · 출처 8줄 · 이미지 3(hero·schedule 간트·buyin · HTML→render-gen-final q82 · 움라우트 육안). 경험담 = 일반화 관찰 3(마지막 플라이트 «noch einen Schuss» · 첫날 등록 줄 · 레이어 옷).
+- 자체 점검 9건 정정(«letzter Stopp des Jahres»·위성 Late Reg 단정 등 시트 밖 문장 삭제 · 13~15%×1.224 = 159~184 · 재엔트리 산수) → 적대 검수 6건 채택(«Drei Regeln» 개수 · «sechs Starttage»→Flights · Day 2 레벨 해석 · Fazit 마감 21:20 · Barcelona 링크 과장 · H2/FAQ 키워드) · 숫자 오류 0.
+- 배선: `lib/posts-de/index.ts` · check-de-style `Lokal` · 보드 `ept-prague` blogLinkByLocale.de·verifiedAt 10-02 · de 필라 `holdem-tournament` Tschechien 절 역링크 1문장 · 스파인 1행 · 캘린더 EPT 절(발행 표시·11월 초 온라인 등록 확인) · 사실 시트 §7.
+- 게이트: audit:hard de 새 글 0err(핸드 예시 없음 = §13 대상 0) · check:de-style 새 글 0err(D2 링크 제목 «€5,300» → «€5.300») · check:images · image-reuse 🔴 0 · image-dims · build ✓(615 intl) · 렌더 HTML 히어로 1·fetchPriority high·FAQPage 6·lang de.
+- 우편함: MA-263(요청 1 · showdown-rules FAQ 무공개 예외) → MB-146 ACK·G절 등재.
+
 ## 2026-10-02 (6) — 순서표 재편: ja JOPT 도쿄 #01 건너뜀 · 순서 2 = de EPT Prag 선정 + 사실 시트 (집필은 다음 세션)
 
 - 순서 1 ja JOPT 2027 도쿄 #01: 보류 사유(参加権利 수) 재확인 = **여전히 미공개**(티켓 공지 dateModified 09-10 · 이벤트 목록 날짜만 · events 서브도메인·/2027tokyo01/ 404 · 도쿄 페이지 2026 #01 표 · RSS 최근 10건 2027 0) → 건너뜀(`14cc318a`). 재확인 = 캘린더 11/26.

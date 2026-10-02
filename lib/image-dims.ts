@@ -4,8 +4,8 @@
  * 본문 이미지의 실제 픽셀 치수. `lib/render-markdown.ts` 가 `<img width height>` 에 그대로 박아
  * 브라우저가 **정확한 자리를 미리 예약**하게 한다(CLS). 한 값으로 고정하면 안 되는 이유와
  * 실측 근거는 `scripts/gen-image-dims.mjs` 머리글에 있다.
- * 최다 규격: 1200x675 458장 · 1200x845 69장 · 1200x849 52장
- * 생성 대상 726장 (public/images)
+ * 최다 규격: 1200x675 461장 · 1200x845 69장 · 1200x849 52장
+ * 생성 대상 729장 (public/images)
  */
 export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/7poker-vs-holdem-card-deal-card.webp": [820, 478],
@@ -104,6 +104,9 @@ export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/ept-barcelona-2026-guide-portolimpic.webp": [1200, 675],
   "/images/ept-barcelona-2026-guide-powerpath.webp": [1200, 675],
   "/images/ept-barcelona-2026-tournament-floor.webp": [1200, 800],
+  "/images/ept-prague-2026-buyin.webp": [1200, 675],
+  "/images/ept-prague-2026-guide-hero.webp": [1200, 675],
+  "/images/ept-prague-2026-schedule.webp": [1200, 675],
   "/images/flush-draw-probability-visual.webp": [1200, 675],
   "/images/flush-vs-straight-c3-realplay.webp": [1200, 675],
   "/images/flush-vs-straight-c4-tiebreak.webp": [1200, 675],

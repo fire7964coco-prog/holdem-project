@@ -90,7 +90,12 @@
 ## §7 교통·숙박
 
 - 공식: 공항 PRG 도심 12km(§1) · «Experience the wonder of Prague with discounted PokerStars Travel accommodation.»(할인 숙소 안내 — 요금 미기재)
-- 독일→프라하 철도·버스·자동차(체코 고속도로 비넷) = **미확보.** 쓰려면 DB/ČD·edalnice.cz 원문으로 집필 회차에 확인(값·소요시간을 기억으로 쓰지 마라)
+- ✅ **집필 회차(10-02 (7)) 확보 — 서브 조사 · Exa 전문 축어**:
+  - 철도(bahn.de 구간 페이지): Dresden→Prag «schnellste Verbindung … 2 Stunden und 5 Minuten» · 직행 «bis zu 7» / Berlin «3 Stunden und 47 Minuten» · «bis zu 9 direkten Verbindungen» (Stand 2026-09-12) / München «5 Stunden und 37 Minuten» · «bis zu 7» (ALX). ⚠ 같은 DB의 /strecke/prag 요약 «Berlin ca. 5 Stunden · München ca. 6 Stunden»과 상충 → 구간 페이지 값만 «schnellste Verbindung»으로 씀. 베를린 직행 일부는 **Praha-Holešovice** 종착
+  - ÖBB: «Alle zwei Stunden fährt der schnelle Railjet von Wien direkt in die tschechische Hauptstadt.» — 소요시간 미기재(4:01은 2024 보도자료 → 안 씀)
+  - 비넷(edalnice.cz/cenik «Platnost ceníku: od 1. 1. 2026» · Standardní palivo): 10일 300 Kč · 30일 480 Kč · 연간 2 570 Kč · DE 페이지 «Die tschechische Polizei und die Zollverwaltung erkennen gemäß dem Kfz-Kennzeichen …»
+  - Hilton 주차 «880 Kč per day or 70 Kč per hour» · «Václav Havel Airport is a 30-minute drive» (hilton.com) · DPP «Airport Express … A ticket costs CZK 200» · «T-Bus 59 … Nádraží Veleslavín station on Metro A»
+  - ❌ 미확보: Hilton 최근 메트로역(Florenc) · Wien–Prag 2026 소요시간
 - 통화: 체코 코루나(CZK)지만 대회 바이인은 유로 표기(§2) — 환율 환산 금지
 
 ## §8 자기모순·함정
