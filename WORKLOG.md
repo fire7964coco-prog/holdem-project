@@ -1,3 +1,14 @@
+## 2026-10-02 (11) — de GTO 예제 13편 ② 배치 A ①~④ 저작 (배포 없음 · MB-149 = MA-267 ACK)
+
+- 사장님 «핸드오프 최상단 de GTO 배치 A(①~④) 진행해». Opus 5.5 본체(헤드) + Opus 서브 4레인 병렬(편당 1레인 · 새 파일 1개만 쓰기 · 커밋 금지). 우편함: 검수장→본체 MA-267 1건(→ MB-149 ACK · 핸드오프 G절 등재).
+- 장면 이미지 ②③④ 렌더(`make-gto-spot-scenes --lang=de srp-dry-king srp-broadway srp-middle-connected` · 각 34KB) → 3장 Read 확인(보드 K♠8♦3♣ · Q♠J♦T♠ · 9♥8♥7♣ = EN · 좌석·팟 5,5·스택 97,5·BB 먼저).
+- 산출 `lib/posts-de/` a-high-board-cbet(desc 158) · k-high-board-cbet(149) · broadway-board-strategy(153) · donk-bet-strategy(159). 구조 EN과 동일(H2·링크·FAQ·dir·하이라이트·표 행) + 장면 1.
+- 헤드 통일: ① «Geprüft»·출처 날짜 ISO → 독일식 19.08.2026(②③④와 맞춤) · ①②③ 태그를 코퍼스식 소문자 검색어로 + 필라 소유 태그 제거(① equity realisierung·gto solver · ② Delayed C-Bet — 키워드 팩 §4). «GTO-Trainer» = 앱 nav 축어 확인(`app/de/solver/solver-client.tsx` 88행).
+- 게이트(index·DE_CLUSTERS 임시 등록 상태): check-gto-numbers 일치 27 · 🔴1 = ③ 23,7(EN 게이트도 동일 🔴 — EN 09-26 ④ 비교 FAQ, ko 미반영 · 보존) · check-gto-structure 4/4 ✔ · check-de-style GTO 4/4 0건 · audit:hard --locale=de 49/49 🔴0(① ④ 카드 문단 미판정 → 손 검산: A9 탑페어·AK/AQ/AJ/AT에 키커 패 · A7 = A-A-7-7-2 · A♥K♥ 9♥8♥7♣ 넛 FD — OK) · check:images·image-reuse 새 이미지 관련 0.
+- 🔴 index·check-de-style 등록은 되돌리고 **글 4 + 장면 3만 커밋**(미등록 = 라이브 아님). 이유: main은 다른 회차가 수시로 push → 일부 등록 상태로 나가면 ⑤~⑬ 링크 404. 절차는 핸드오프 배치 B 절.
+- 🪶 함정: audit:hard는 `--locale=de` 없으면 KO `lib/posts/` 파일을 읽는다 · de에서는 `--slug` 무시(전편 실행). 셸 인라인 node -e 안 백틱이 명령 치환으로 실행됨(부작용 0 확인 · 핸드오프 checkout 복구 후 따옴표 heredoc 파일로 재작성 — 메모리 backticks-break-shell-strings 재발).
+- EN 유래 의심 5건·레인 보강 자리 = 핸드오프 배치 B 절 🪶(마감 렌즈 몫).
+
 ## 2026-10-02 (10) — de GTO 예제 13편 ① 준비 회차 (MB-148 착수 공지)
 
 - 사장님 10-02 «de GTO 13편 준비 회차 진행해» → 계획표 승인. 16:49 착수 · Opus 5.5 본체 + 서브 2(원문 계약 · 키워드 팩 — 둘 다 Opus, 병렬). 우편함 검수장→본체 미처리 0.
