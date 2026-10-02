@@ -116,11 +116,11 @@ function extractContent(src) {
   return src.slice(i + 10, j < 0 ? undefined : j);
 }
 
-/** PT and ID prose use decimal commas. Normalize only for numeric comparison;
+/** PT, ID and DE prose use decimal commas (DE added 2026-10-02 · translation-terms-de §3). Normalize only for numeric comparison;
  * keep the source and all other locales unchanged. Includes the first endpoint
  * of percentage ranges, so the coverage warning still sees hidden values. */
 function normalizeNumericText(text, locale) {
-  if (!["pt", "id"].includes(locale)) return text;
+  if (!["pt", "id", "de"].includes(locale)) return text;
   return text.replace(/(?<![\d.,])(\d+(?:\.\d{3})*),(\d+)/g,
     (_, integer, fraction) => `${integer.replace(/\./g, "")}.${fraction}`);
 }
@@ -375,6 +375,17 @@ function selftest() {
       const pt = normalizeNumericText("0,3%p\n:::readnext\n/pt/blog/x | 99,8%\n:::\n45,1%", "pt");
       const values = pctSet(pt);
       return values.size === 1 && values.has("45.1");
+    }],
+    ["DE decimal commas, grouped thousands and readnext/%p exclusions match PT", () => {
+      const de = normalizeNumericText("EQ 45,1% · EQR 84,0% · 1.084,0% · 0,3%p\n:::readnext\n/de/blog/x | 99,8%\n:::", "de");
+      const values = pctSet(de);
+      const grouped = normalizeNumericText("1.084,0%", "de");
+      return values.has("45.1") && values.has("84.0") && !values.has("99.8") && !values.has("0.3") &&
+        has(grouped, "1084.0") && !has(grouped, "84.0");
+    }],
+    ["DE percentage range keeps its coverage warning", () => {
+      const de = normalizeNumericText("73,4–75,2%", "de");
+      return hiddenRanges(de).length === 1 && pctSet(de).has("75.2");
     }],
     ["other locales keep their original numeric text", () => normalizeNumericText("1,326 · 45.1%", "en") === "1,326 · 45.1%"],
     ["정본 값이 있으면 has=true", () => has("equity 45.1% and EQR 84.0%", 45.1) === true],

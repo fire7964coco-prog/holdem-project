@@ -79,6 +79,10 @@ const L10N = {
         back: '← वापस', spots: 'अभ्यास स्पॉट', view: '⚡ परिणाम देखें',
         noDraw: 'Draw नहीं', combos: 'combos', hands: 'हैंड', draws: 'Draws',
         all: 'सभी', summary: 'सारांश', barWidth: 'बार की चौड़ाई:' }, // 2026-09-15 라이브 HI DOM 축어 · 결과 숫자는 소수점
+  de: { url: 'https://solver.holdemmaster.com/?lang=de',
+        back: '← Zurück', spots: 'Lernspots ⚡', view: '⚡ Ergebnisse ansehen',
+        noDraw: 'Kein Draw', combos: 'Combos', hands: 'Hände', draws: 'Draws',
+        all: 'Alle', summary: 'Übersicht', barWidth: 'Balkenbreite:' }, // 2026-10-02 라이브 DE DOM 축어 · 결과 숫자도 소수 쉼표 · spots는 홈 «Lernspots ansehen»과 갈리게 ⚡까지
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',

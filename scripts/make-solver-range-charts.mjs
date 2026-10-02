@@ -44,6 +44,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Equity realization (EQR)' }, // HI 랜딩 용례 유지 · 세부 분류명은 2026-09-15 라이브 HI UI
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
+  de: { title: 'Range-Zusammensetzung', source: 'Berechnet mit dem GTO-Solver von HoldemMaster · ohne Rake',
+        equity: 'Equity', eqr: 'Equity-Realisierung' }, // 2026-10-02 · «Equity-Realisierung» = de 코퍼스 다수형(16회) · 세부 분류명은 라이브 DE UI
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
         equity: '勝率 (EQ)', eqr: '勝率實現 (EQR)' },   // 2026-09-03 · 앱 번체 축어(解算器 · 勝率實現) — 간체 求解器/权益实现과 다르다
 };
@@ -57,8 +59,8 @@ const num = (s) => {
   if (!/^\d+(?:\.\d+)?$/.test(value) || !Number.isFinite(Number(value))) throw new Error(`잘못된 백분율: ${s}`);
   return Number(value);
 };
-const commaDecimal = ['pt', 'id'].includes(LANG);
-const stackedHeading = ['pt', 'id', 'ms', 'hi'].includes(LANG);
+const commaDecimal = ['pt', 'id', 'de'].includes(LANG);
+const stackedHeading = ['pt', 'id', 'ms', 'hi', 'de'].includes(LANG);
 const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
 
 /** Partial spot sets are valid, but every selected spot must supply both chart panels. */

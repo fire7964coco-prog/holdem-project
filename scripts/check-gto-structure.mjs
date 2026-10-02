@@ -49,6 +49,8 @@ function selectSlugs(argv, knownSlugs) {
   return knownSlugs.filter((s) => requested.includes(s));
 }
 
+// 스팟 장면 이미지(scripts/make-gto-spot-scenes.mjs)를 쓰는 로케일 — 2026-10-02 de 시범. 전파하면 여기에 더한다.
+const SCENE_LOCALES = ['de'];
 /** 로케일별 규칙 — 앵커·라벨·문자 집합. 없는 로케일은 구조 계수만 본다. */
 const RULES = {
   hi: {
@@ -71,6 +73,13 @@ const RULES = {
     readnext: /:::readnext\[(?!Lanjut membaca\])/,
     readTime: /readTime: "\d+ mnt"/,
     extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)']],
+  },
+  // 2026-10-02 de 시범: 라벨은 기존 de 코퍼스 다수형(Kurze Antwort 146 · Weiterlesen 45 · "N Min." 45)
+  de: {
+    quick: /> \*\*Kurze Antwort\*\*/,
+    readnext: /:::readnext\[(?!Weiterlesen\])/,
+    readTime: /readTime: "\d+ Min\."/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'], [/(?<![\d.,])\d+\.\d\s*%/, '마침표 소수 퍼센트(→콤마)']],
   },
   pt: {
     quick: /> \*\*Resposta rápida\*\*/,
@@ -169,7 +178,9 @@ const counts = (c, loc) => ({
   faq: (c.match(/\*\*Q\. /g) || []).length,
   dir: (c.match(/^:::[a-z]+/gm) || []).length,
   dirs: (c.match(/^:::[a-z]+/gm) || []).join(','),
-  img: (c.match(/!\[/g) || []).length,
+  // 스팟 장면(-scene-<loc>.webp)은 EN에 없는 de 시범 자리(locale-intentional-diffs)라 img 비교에서 빼고 따로 센다
+  img: (c.match(/!\[/g) || []).length - (c.match(/!\[[^\]]*\]\(\/images\/gto-[a-z0-9-]+-scene-[a-z-]+\.webp/g) || []).length,
+  scene: (c.match(/!\[[^\]]*\]\(\/images\/gto-[a-z0-9-]+-scene-[a-z-]+\.webp/g) || []).length,
   // Same single-line delimiters as render-markdown.ts; a formula may contain a single equals sign.
   hl: (c.match(/==.+?==/g) || []).length,
   tableRows: (c.match(/^\|/gm) || []).length,
@@ -252,6 +263,15 @@ if (args.includes('--selftest')) {
     }],
     ['Link titles do not become part of the destination', () =>
       counts('[A](/ms/solver) [B](/ms/blog/holdem-game-order "thumb:/images/test.webp")', 'ms').linkTargets === 'blog/holdem-game-order,solver'],
+    ['Scene image is excluded from img parity and counted on its own axis', () => {
+      const c = counts('![a](/images/gto-srp-dry-ace-scene-de.webp)\n![b](/images/gto-srp-dry-ace-ranges-de.webp)', 'de');
+      return c.img === 1 && c.scene === 1 && counts('![b](/images/gto-srp-dry-ace-ranges-en.webp)', 'en').scene === 0;
+    }],
+    ['DE labels: Kurze Antwort · Weiterlesen · N Min. · dot-decimal percent flagged', () =>
+      RULES.de.quick.test('> **Kurze Antwort**') && !RULES.de.readnext.test(':::readnext[Weiterlesen]') &&
+      RULES.de.readnext.test(':::readnext[Read next]') && RULES.de.readTime.test('readTime: "9 Min."') &&
+      RULES.de.extra.at(-1)[0].test('Check 98.2%') && !RULES.de.extra.at(-1)[0].test('Check 98,2%') &&
+      !RULES.de.extra.at(-1)[0].test('Pot 5,5bb')],
     ['Highlights count formulas with equals and approximation signs equally', () =>
       counts('==2 + 3 = 5== and ==g:5 / 9 ≈ 56%==', 'ms').hl === 2 &&
       counts('==2 + 3 ≈ 5== and ==g:5 / 9 = 56%==', 'en').hl === 2],
@@ -309,6 +329,8 @@ for (const slug of selected) {
   if (z.dirs !== e.dirs) issues.push(`dirs differ en=${e.dirs} ${LOCALE}=${z.dirs}`);
   const bt = (ls.match(/`/g) || []).length - 2; if (bt !== 0) issues.push(`backticks ${bt}`);
   if (/-en\.webp/.test(ls)) issues.push('-en.webp 잔존');
+  if (SCENE_LOCALES.includes(LOCALE) && z.scene !== 1) issues.push(`스팟 장면 이미지 ${z.scene}장(→ 정확히 1장 · gto-<key>-scene-${LOCALE}.webp)`);
+  if (!SCENE_LOCALES.includes(LOCALE) && z.scene) issues.push('스팟 장면 이미지는 아직 de 시범 전용');
   if (!new RegExp(`-oop-${LOCALE}\\.webp`).test(ls)) issues.push(`image -oop-${LOCALE}.webp 아님`);
   if (new RegExp(`!\\[[^\\]]*\\]\\(/images/gto-[a-z0-9-]+-oop-${LOCALE}\\.webp`).test(lc)) issues.push('content에 히어로(oop) 마크다운 있음');
   const desc = (ls.match(/desc: "([^"]*)"/) || [])[1] || ''; if (desc.length > 160 || desc.length < 60) issues.push(`desc ${desc.length}`);

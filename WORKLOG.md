@@ -1,3 +1,15 @@
+## 2026-10-02 (10) — de GTO 예제 13편 ① 준비 회차 (MB-148 착수 공지)
+
+- 사장님 10-02 «de GTO 13편 준비 회차 진행해» → 계획표 승인. 16:49 착수 · Opus 5.5 본체 + 서브 2(원문 계약 · 키워드 팩 — 둘 다 Opus, 병렬). 우편함 검수장→본체 미처리 0.
+- 사장님 지시 2건: «이미지는 독자의 이해를 돕는 목적 — 솔버 캡처나 보드 테이블 장면이 필요하면 말하라 · 유튜브 폴더 소스 써도 된다» / «앱 장면은 영상에서 캡처 가능, 유튜브 폴더나 나에게 요청» → 메모리 `image-sources-youtube-folder` 신설. **스팟 장면 이미지 de 시범 승인(«1번으로 하자»)** = EN 대비 본문 이미지 +1을 의도적 편차로.
+- 앱 de 재캡처 13/13(라이브 DOM 축어: `Lernspots ⚡ Sofort`·`⚡ Ergebnisse ansehen`·`← Zurück`·`Übersicht`·`Balkenbreite:` — 08-24판과 달라짐) · 첫 액션 13/13 = spec §4-B · 솔버 이미지 26장 q82(히어로 73~103KB · 차트 26~34KB · check:images 경보 0) · 대표 3장 Read 확인. 축어 = `docs/solver-app-verbatim-de-2026-10-02.md`(앱 설명문 ①④⑥⑦ 폐기 인과 표 포함).
+- 신설 `scripts/make-gto-spot-scenes.mjs`(유튜브 폴더 kit-v1 테이블·카드 SVG·칩 + HTML 글자 레이어 → Playwright → q82) · 견본 ①⑧⑬ 3장 Read 확인(카드·좌석·팟·스택). ⑧~⑩ 프리플랍 줄은 EN에 BTN 오픈 크기가 없어 «BTN eröffnet»만. 🪶 함정 2: about:blank `setContent`로 file:// 부품을 읽으면 Windows에서 node가 출력 없이 0xC0000409/exit 127로 죽는다 → 임시 HTML 파일로 `goto` · sharp는 브라우저 닫은 뒤 동적 import.
+- 🔴 유튜브 폴더 `gtozero-first-analysis` A♥7♦2♣ 캡처는 **다른 트리**(체크 70,8%)라 시리즈에 못 쓴다고 판정.
+- 게이트: `capture-solver-spots` L10N de · `make-solver-range-charts` de(콤마·2줄 제목 · «Equity-Realisierung» 코퍼스 16회) · `check-gto-numbers` de 콤마 정규화(셀프 40/40) · `check-gto-structure` RULES.de(Kurze Antwort·Weiterlesen·«N Min.»·마침표 소수 % 결함) + `SCENE_LOCALES`(장면은 img 비교 제외·scene=1 축) 셀프 26/26. 기존 로케일 🔴 수는 HEAD 게이트와 동일(pt1·id2·ms11·hi2 = 기존 드리프트 · 핸드오프 🪶).
+- 서브 산출: `docs/de-gto-source-contract.md`(HEAD `7db19780` 재측정 · 계수기를 PT 시점 `33acbaa1`로 13/13 재현 검증 · 09-15 이후 구조 변경 3편 ⑥⑬ 링크+1 · ⑨ 하이라이트+1 · masterUpdated 전부 09-26 · §3 수치 불일치 0 · EN 본문에 없는 62.9%·4.06배·98.0% 추가 금지) · `docs/keyword-bank/de-gto-series.md`(DFS·라쿠 DE/AT · 축 키워드 전부 10~30 · 독일어 조어형 null · SERP에 보드별 솔버 독일어 페이지 0 · title 13 고정안 · 카니발 주의 4).
+- 본체 판정: 키워드 팩 제목 13개 EN 대조(③ 68% · ⑩ «3 Combos» = EN 제목 그대로 — ⑩ 본문은 overpair 36 구분 조건) · bb 표기 = `5,5bb`(코퍼스 63:21 · EN·앱과 같음) 확정.
+- 브리프 `docs/de-gto-series-translation-brief.md`: du·용어표·단서 독일어 고정문·CTA·배치 A/B/C·배치마다 index 등록+`DE_CLUSTERS.GTO`(check-de-style이 등록 글만 읽음)·장면 이미지 절.
+- 본문·lib 변경 0(미참조 de 이미지 29장 · 문서 4 · 스크립트 5). 빌드 불요. MB-148 = 착수 공지.
 ## 2026-10-02 (8) — 검수장 MA-259·261·263 판정 회차 · 4건 전부 채택·배포 (MB-147)
 
 - 사장님 10-02 지시(핸드오프 최상단 표). Opus 5.5 본체 단독(판정·수정 · 서브 0). 공식 원문 전건 본체 재열람(Playwright DOM · curl+pdftotext).
