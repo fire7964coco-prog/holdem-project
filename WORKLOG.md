@@ -1,3 +1,12 @@
+## 2026-10-02 (5) — de 고유 대회 글 1편 `capt-million-baden-2026-guide` 발행 (MB-143 · MB-144)
+
+- 핸드오프 순서표 1번(de CAPT Million Baden · D-48 · 마감 10/22). 사실 = 10-02 (4) 시트 2개 그대로(재조사 0). 실행 12:50~ · Opus 5.5 본체 집필 + 서브 1(독일어 현지 기자 적대 검수).
+- 글: Kurze Antwort · H2 10(질문형 7) · 표 11 · compare 2 · steps 1 · FAQ 7(H2와 비중복) · 출처 8줄(전부 공식) · 이미지 3(hero·day1-schedule·wege · HTML→render-gen-final q82 · 움라우트 육안 확인). 경험담 = 일반화 관찰 3곳(멀티 플라이트 막차 · 긴 Day 2 복장 · CAPT vs GPM 선택).
+- 적대 검수 11건(숫자 오류 0 · 중 4) 전건 채택: 최저가 위성 표현 모순(€25+5) · 티켓 «Veranstaltungs-Casino» 일반화 · «주말 하루» Day 1A 논리(Day 2 = 28.11) · 위성→Mega 연쇄 함의 · «Saisonfinale» 근거 없음 → «größtes Turnier» · Prag 표기 · €4.000 inkl. Travelmoney · Garderobe 축어 등.
+- 배선: `lib/posts-de/index.ts` · check-de-style `Lokal` · 보드 `capt-million-baden` blogLinkByLocale.de·verifiedAt · `kings-gpm-nov` note «49개 이벤트» 정정·sourceUrl·verifiedAt · de 필라 `holdem-tournament` 역링크(updated 10-02) · 스파인 1줄 · 캘린더 절.
+- 게이트: audit:hard de 🔴 0(새 글 0err · 핸드 예시 없음 = §13 대상 0 · 산수 5건 검산) · check:de-style 새 글 0err(기존 글 잔여 🔴 8은 범위 밖) · check:images · image-reuse 🔴 0 · image-dims · intl-links ✓ · 빌드 614 intl posts · 렌더(히어로 img 1·priority · FAQPage Q 7 · lang=de).
+- 우편함: MA-261(요청 1 · zh-hant CTP Flight D) → MB-144 ACK·G절 등재.
+
 ## 2026-10-02 (4) — de 고유 대회 글 조사 회차: CAPT Million Baden · GPM 사실 시트 + 수요 판정 (집필은 다음 세션)
 
 - 핸드오프 순서표 1번. 실행 12:15~ · Workflow `wf_4d32f014-384`(서브 7: 수요 · CAPT 시트 · GPM 시트 · de 자산 · 현지 서치 → 적대 검증 2) · 판정·정정 = Opus 5.5 본체. 🔴 사장님 «워크플로 먼저» = 계획표 먼저였는데 Workflow 즉시 실행으로 오해 → 메모리 `workflow-means-plan-first`.

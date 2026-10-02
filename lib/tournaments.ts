@@ -3095,11 +3095,13 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "€35~€600",
     emoji: "🇩🇪",
     color: "bg-amber-500/15 text-amber-400 border-amber-500/30",
-    note: "메인 €285 / €1,000,000 GTD · 49개 이벤트",
+    // 🔴 2026-10-02 재실측(docs/tournament-factsheets/2026-11-german-poker-masters-rozvadov.md): 공식 «50 Tournaments in total» =
+    //    일정 «행» 수(Day 2·Final 포함, 1행은 King's Casino Prague의 Day 1). 옛 note «49개 이벤트»는 틀림 — «이벤트 수»로 쓰지 마라.
+    note: "메인 €285 / €1,000,000 GTD · 일정 50행(프라하 Day 1 1회 포함)",
     highlight: true,
-    sourceUrl: "https://kings-resort.com/poker",
+    sourceUrl: "https://kings-resort.com/poker/festival/german-poker-masters-1million-294",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-10-02",
   },
   {
     id: "kings-gpd-dec",
@@ -3310,7 +3312,9 @@ const RAW_TOURNAMENTS: Tournament[] = [
     highlight: true,
     sourceUrl: "https://www.casinos.at/en/casinos/baden/games/poker/capt-million",
     sourceTier: "A",
-    verifiedAt: "2026-09-04",
+    verifiedAt: "2026-10-02",
+    // de 고유 글(2026-10-02 · 사실 정본 docs/tournament-factsheets/2026-11-capt-million-baden.md) — 공용 blogLink는 달지 않는다(pt bsop 선례)
+    blogLinkByLocale: { de: "/blog/capt-million-baden-2026-guide" },
   },
 
   // ── 스위스 — Grand Casino Luzern (PCSM) ──

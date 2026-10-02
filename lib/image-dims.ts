@@ -4,8 +4,8 @@
  * 본문 이미지의 실제 픽셀 치수. `lib/render-markdown.ts` 가 `<img width height>` 에 그대로 박아
  * 브라우저가 **정확한 자리를 미리 예약**하게 한다(CLS). 한 값으로 고정하면 안 되는 이유와
  * 실측 근거는 `scripts/gen-image-dims.mjs` 머리글에 있다.
- * 최다 규격: 1200x675 455장 · 1200x845 69장 · 1200x849 52장
- * 생성 대상 723장 (public/images)
+ * 최다 규격: 1200x675 458장 · 1200x845 69장 · 1200x849 52장
+ * 생성 대상 726장 (public/images)
  */
 export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/7poker-vs-holdem-card-deal-card.webp": [820, 478],
@@ -87,6 +87,9 @@ export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/bsop-millions-2026-buyins.webp": [1200, 675],
   "/images/bsop-millions-2026-guide-hero.webp": [1200, 675],
   "/images/bsop-millions-2026-main-event-flights.webp": [1200, 675],
+  "/images/capt-million-baden-2026-day1-schedule.webp": [1200, 675],
+  "/images/capt-million-baden-2026-guide-hero.webp": [1200, 675],
+  "/images/capt-million-baden-2026-wege.webp": [1200, 675],
   "/images/como-entrar-al-wsop-hero.webp": [1200, 675],
   "/images/confusing-c1-flush-card.webp": [820, 444],
   "/images/confusing-c2-fourofkind-card.webp": [820, 448],

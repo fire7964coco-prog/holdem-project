@@ -42,6 +42,7 @@ import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 import { POST as pokerTurnierMuenchen } from "./poker-turnier-muenchen";
+import { POST as captMillionBaden2026Guide } from "./capt-million-baden-2026-guide";
 
 /**
  * 독일어(de) 블로그 포스트.
@@ -97,6 +98,7 @@ export const DE_POSTS: Post[] = [
   holdemBadBeat,
   // 로컬 가이드 (de 전용 — 다른 언어에 대응 slug 없음)
   pokerTurnierMuenchen,
+  captMillionBaden2026Guide,
   // 단독
   holdemCardCounting,
   // 기타

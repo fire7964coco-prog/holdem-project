@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-10-01",
+  updated: "2026-10-02",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -288,7 +288,7 @@ In Österreich läuft Turnierpoker in den Casinos Austria. Ihre eigene Tour hei�
 
 Das teuerste Turnier in Seefeld ist übrigens nicht das Main Event, sondern das **NLH Unicorn Seefeld** (€1.000 + 100, 07./08.10.).
 
-Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000 garantiert** das größte Event der Tour – bei einem der niedrigsten Buy-ins.
+Die **CAPT Million in Baden** schließt die Saison ab und ist mit **€1.000.000 garantiert** das größte Event der Tour – bei einem der niedrigsten Buy-ins. Alle Day 1, die Starttage in den anderen Casinos und den Weg über Satellites haben wir im [Guide zur CAPT Million 2026](/de/blog/capt-million-baden-2026-guide) zusammengefasst.
 
 ⚠ **Nicht verwechseln:** Das Casino Baden der CAPT liegt bei Wien. Das **Grand Casino Baden in der Schweiz** ist ein anderes Haus – und dort fand am 31. Mai 2026 zum letzten Mal ein Turnier statt, während des Umbaus werden keine angeboten. Gespielt wird in der Schweiz stattdessen im **Grand Casino Luzern**, dessen Poker Circle Swiss Masters im Dezember mit der Championship Week endet (Main Event CHF 800 + 80).
 
