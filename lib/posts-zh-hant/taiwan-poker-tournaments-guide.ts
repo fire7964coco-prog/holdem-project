@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "2026 年第四季台灣的德州撲克比賽集中在台北：10 月有 WWP S5（主賽 NT$6,000）、港撲盃、CTP 11 週年（主賽 NT$8,000）與 TMTC（主賽 NT$35,000），11 月 13 日起是 APT Championship，12 月 16 日至 21 日是 OLA Poker Tour 台北站。下一屆 TMT 官方尚未公布日期。",
   category: "tournament",
   date: "2026-09-29",
-  updated: "2026-09-29",
+  updated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 分鐘",
   emoji: "🗓️",
@@ -172,7 +172,7 @@ CTP 官網列表寫的是 11/12 開始，但 11/12 那一場是只限娛樂場�
 |---|---|---|---|---|
 | MGM Poker Championship | 10/23 – 11/2 | 澳門 MGM Cotai | HKD 12,000 | HKD 9,000,000 |
 | WPT 首爾 | 10/30 – 11/9 | 仁川 INSPIRE | ₩1,750,000 | ₩10 億 |
-| GOP 仁川 | 10/30 – 11/8 | 仁川 Paradise City | ₩1,430,000 | ₩6 億 |
+| GOP 仁川 | 10/30 – 11/8 | 仁川 Paradise City | ₩1,430,000<br/>（11/3 Flight A 免手續費：₩1,300,000） | ₩6 億 |
 | GOP 濟州 | 12/4 – 12/13 | 濟州 | — | — |
 
 **韓國有個台灣玩家容易想反的地方。** 韓國本地人不能進這些場館打比賽，但外國人可以——Paradise City 的規定是持護照、年滿 19 歲的外國人。所以對台灣玩家來說，韓國的大型比賽反而是開放的。報名手續也要先知道：WPT 首爾官方說明須持有效護照在 INSPIRE 辦理玩家卡，並建議抵達前先填好官網的入場登錄表；GOP 官方則規定所有賽事都須完成 KHold’em 的登錄程序。WPT 首爾主賽的冠軍獎金還包含一張 2026 WPT 世界冠軍賽（US$10,400）的參賽權。
@@ -181,7 +181,7 @@ CTP 官網列表寫的是 11/12 開始，但 11/12 那一場是只限娛樂場�
 
 澳門的 MGM Poker Championship 資料來自 SOMUCHPOKER 的報導（2026 年 9 月 6 日）：10/23 至 11/2 在 MGM Cotai 舉行，系列保證 HKD 1,400 萬，主賽的五個 Day 1 場次排在 10/30 至 11/1，Day 2 在 11/2。主辦官方的完整賽程公布後，請以官方為準。
 
-日本的 JOPT 也是台灣玩家會搜尋的比賽（大阪站 10/29 至 11/3）。但 JOPT 主賽已經不接受直接買入，必須先透過衛星賽取得門票，對不住在日本的玩家門檻較高。
+日本的 JOPT 也是台灣玩家會搜尋的比賽（大阪站 10/29 至 11/3）。但 JOPT 主賽從 9 月起已經不接受現場直接買入：現場的 Main Day 1 要用指定的參賽票，參賽票主要在日本各地撲克室的衛星賽取得。官方另有一條路：JOPT Games App 的 Online Day 1（大阪站為 10/17、10/18、10/24、10/25），晉級者直接進現場的 Main Day 2，條件是 3 張 Final Ticket（官方電商每張 ¥30,000）加上 SILVER 以上的會員方案。App 與電商在台灣能否使用、票券的使用條件，請以官方規定為準；對不住在日本的玩家來說，門檻仍然較高。
 
 ---
 
@@ -254,7 +254,8 @@ A. 大部分時候說的是同一件事：付一次買入、拿固定籌碼、�
 - APT Championship 台北 2026 官方賽程：[theasianpokertour.com](https://www.theasianpokertour.com/zh-tw/series/apt-championship-taipei-2026/events)
 - OLA Poker Tour 台北 2026 官方公告：[olapokertour.com](https://olapokertour.com/news/ola-poker-tour-taipei-2026/)
 - WPT 首爾官方 FAQ：[wptseoul.com](https://wptseoul.com/faq)
-- Gods of Poker 官方系列賽：[godsofpoker.com](https://godsofpoker.com/)
+- Gods of Poker 官方系列賽：[godsofpoker.com](https://godsofpoker.com/)（仁川主賽 Flight A 免手續費價格於 10 月 2 日核對）
+- JOPT Games 官方「チケット入手方法」與 10 月 Online Day 1 賽程（2026 年 10 月 2 日核對）：[japanopenpoker.com](https://japanopenpoker.com/games/jopt-games-october-2026-schedule/)
 - Paradise City 外國人入場規定：[p-city.com](https://www.p-city.com/front/notice/detail?N_SEQ=5301)
 - 駐韓國台北代表部「簽證及入境須知」：[roc-taiwan.org](https://www.roc-taiwan.org/kr/post/6045.html)
 - 韓國法務部 K-ETA 暫時免申請延長公告（2025 年 12 月 23 日）：[k-eta.go.kr](https://www.k-eta.go.kr/)

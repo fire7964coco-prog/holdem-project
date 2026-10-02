@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Em torneios, sem all-in, o último agressor do river mostra primeiro; se todos deram check, começa o primeiro jogador ativo à esquerda do botão. Com all-in, todas as mãos restantes devem ser abertas assim que as apostas terminam. Quem pagou no river e mantém ou já abriu suas cartas pode pedir para ver a mão do último agressor. No cash, as regras da casa definem a abertura e o muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-02",
+  masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -169,7 +169,7 @@ A. Quando ninguém está all-in, o último jogador que fez uma ação agressiva 
 
 **Q. Sou obrigado a mostrar as cartas se pagarem minha aposta no showdown?**
 
-A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago; a única saída é dar muck e abrir mão do pote, o que os torneios da WSOP punem (regra 72 do regulamento de torneios da WSOP). Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in em torneio: pela regra 16 da TDA (edição de 2024) quem pagou também precisa mostrar. E em torneio o direito garantido de pedir é de quem **pagou a aposta do river** — desde que tenha mostrado ou ainda segure as cartas — e cobre apenas a mão do último agressor, a mão que ele pagou para ver (==regra 18 da TDA, edição de 2024==). Quem deu muck virado para baixo não pode mais pedir nada, e qualquer outro pedido fica a critério do diretor — o que não equivale a uma recusa automática (==regra 18-B da TDA, edição de 2024==). No cash valem as regras da casa: pelas WSOP Live Action Rules é preciso suspeita de conluio e um floor presente (regra 147).
+A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago; a única saída é dar muck e abrir mão do pote, o que os torneios da WSOP punem (regra 72 do regulamento de torneios da WSOP). Só num caso você não precisa mostrar nada: se quem pagou dá muck virado para baixo primeiro e não sobra nenhuma outra mão viva, a sua leva o pote sem ser mostrada (==regra 17-B da TDA, edição de 2024==; a regra 72 da WSOP também entrega o pote à única mão viva restante). Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in em torneio: pela regra 16 da TDA (edição de 2024) quem pagou também precisa mostrar. E em torneio o direito garantido de pedir é de quem **pagou a aposta do river** — desde que tenha mostrado ou ainda segure as cartas — e cobre apenas a mão do último agressor, a mão que ele pagou para ver (==regra 18 da TDA, edição de 2024==). Quem deu muck virado para baixo não pode mais pedir nada, e qualquer outro pedido fica a critério do diretor — o que não equivale a uma recusa automática (==regra 18-B da TDA, edição de 2024==). No cash valem as regras da casa: pelas WSOP Live Action Rules é preciso suspeita de conluio e um floor presente (regra 147).
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-01",
+  updated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -167,7 +167,7 @@ A. When nobody is all-in, the last player to make an aggressive action (bet or r
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
-A. Yes — if you were the last bettor or raiser on the river, you show first when called; your only way out is to muck and give up the pot, which WSOP tournaments penalize (WSOP Tournament Rule 72). If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA 2024 Rule 16== the caller has to table as well. And in tournaments the guaranteed right to ask belongs to whoever **called the river bet** — provided they tabled or still hold their cards — and it covers only the last aggressor's hand, the one they paid to see (==TDA 2024 Rule 18==). A player who mucked face-down has no right to ask at all, and every other request is at the director's discretion.
+A. Yes — if you were the last bettor or raiser on the river, you show first when called; your only way out is to muck and give up the pot, which WSOP tournaments penalize (WSOP Tournament Rule 72). One case needs no showing at all: if the caller mucks face down first and no other live hand remains, yours wins the pot unshown (==TDA 2024 Rule 17-B==; WSOP Rule 72 likewise awards the pot to the only live hand remaining). If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA 2024 Rule 16== the caller has to table as well. And in tournaments the guaranteed right to ask belongs to whoever **called the river bet** — provided they tabled or still hold their cards — and it covers only the last aggressor's hand, the one they paid to see (==TDA 2024 Rule 18==). A player who mucked face-down has no right to ask at all, and every other request is at the director's discretion.
 
 **Q. Can you muck at showdown without showing?**
 

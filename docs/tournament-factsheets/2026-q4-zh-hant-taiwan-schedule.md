@@ -112,3 +112,12 @@
 - 채택 ⑧ TMT 21 «很可能落在 2027 年初» 삭제(추측 금지와 자기모순).
 - **기각 ②** ZSOP 종료일 «9/14»: ZSOP 공식 홈 «3 - 15 SEPT, 2026»(09-29 재확인) vs CTP 목록 «Sep 03 — Sep 14» = **원문끼리 불일치**. 본문은 «9 月底前»이라 무관 — 시트 §3-1c «9/3~15»는 ZSOP 원문 값으로 유지.
 - 참고: 아스트라는 WWP 수첩(Google Drive)을 샌드박스 승인 문제로 못 열었다 — 본체는 09-29 PDF 원본을 렌더해 판독(§3-1a·b).
+
+## 6. 검수장 MA-259 판정 — 10-02 (본체 원문 재열람 · 2건 채택)
+
+| # | 지적 | 판정 | 본체 직접 열람(10-02 · Playwright DOM) | 글 반영 |
+|---|---|---|---|---|
+| T1 | 3-3b GOP 인천 메인 ₩1,430,000 단일값 → 11/3 Flight A 면제가 누락 | **채택** | `godsofpoker.com/event/6a2f7822-…` 제목 «GOP Main Event - Flight A - RAKE FREE!!» · November 3, 2026 · «Total Buy-in: ₩ 1,300,000» · «Play Flight A Rake Free - Sponsored by POKERFORS» (KO·ja 형제 글 10-01 반영값과 동일) | 한국 표 바이인 칸에 «（11/3 Flight A 免手續費：₩1,300,000）» · 출처 줄에 10/2 핵대 |
+| T2 | 3-3c JOPT «必須先透過衛星賽取得門票» 배타 단정 | **채택** | `japanopenpoker.com/games/ticket/` «入手方法② ECサイトで購入 … ファイナルチケット 30,000円 ※価格はすべて税込» · `/games/jopt-games-october-2026-schedule/` «FINAL STAGE｜ONLINE DAY 1 · 10.17 Sat. / 10.18 Sun. · 10.24 Sat. / 10.25 Sun. 各日 19:00〜» «Online Day 1の通過者はMain Event Day 2へ進出» «ファイナルチケット3枚 ＋ SILVER以上の会員プラン» | 현장 Main Day 1 = 지정 참가권(주로 일본 각지 衛星賽) / 별도 경로 = App Online Day 1 → Main Day 2(Final Ticket 3장·전자상거래 장당 ¥30,000 + SILVER 이상) · 대만에서 App·EC 이용 가능 여부는 보장하지 않음(«請以官方規定為準») · 출처 줄 추가 |
+
+- 🪶 파생 관찰(자동 착수 금지): ja `jopt-osaka-02-2026-guide` FAQ L275 «こちらもファイナルチケット3枚＋SILVER以上の会員プランが条件で、現金だけでは入れません» — Final Ticket이 EC에서 현금 구매 가능하므로 «現金だけでは入れません»은 회원 플랜 요건을 뜻한다면 맞지만 오독 여지. 검수장 ja 원장 판정과 대조 후 결정.

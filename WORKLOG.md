@@ -1,3 +1,13 @@
+## 2026-10-02 (8) — 검수장 MA-259·261·263 판정 회차 · 4건 전부 채택·배포 (MB-147)
+
+- 사장님 10-02 지시(핸드오프 최상단 표). Opus 5.5 본체 단독(판정·수정 · 서브 0). 공식 원문 전건 본체 재열람(Playwright DOM · curl+pdftotext).
+- **MA-259 T1**(zh-hant `taiwan-poker-tournaments-guide`) 채택: GOP 인천 표에 «11/3 Flight A 免手續費：₩1,300,000»(godsofpoker 이벤트 페이지 «RAKE FREE!!»·«₩ 1,300,000» 10-02 열람).
+- **MA-259 T2** 채택: JOPT «必須先透過衛星賽» 배타 단정 → 현장 Main Day 1(지정 참가권) / App Online Day 1 → Main Day 2(Final Ticket 3장·EC 장당 ¥30,000 + SILVER) 두 경로 구분 · 대만 이용 가능 여부 미보장. `updated` 10-02 · 출처 2줄.
+- **MA-261** 채택 — 🔴 핸드오프는 대상을 `taiwan-poker-tournaments-guide`로 적었지만 실제 대상은 `tmt-championship-2026-guide`(검수장 TMTC 원장 79행). CTP 웹 10-02 = Turbo D 10/23 18:30 · F 10/24 · Day 2 50분 · Final 60분 → 9/22 PDF(Last-Modified 불변)와 일치. 남은 차이 = PDF가 10/24를 «D»로 표기 하나. 표 단일값화 · note를 경위형으로 교체 · tip 재작성 · 도입 문장 · 출처 줄. 정정 공지 없음(Updates 탭 08-28 1건) 확인. 이미지(schedule.webp)는 플라이트별 날짜 없음 → 무변경.
+- **MA-263** 채택: WSOP 2026 Tournament Rules A §72 축어 «unless there are no other live hands at which point the pot can be awarded to the only live hand remaining» · TDA 2024 §17-B «The last player with live cards wins and is not required to table the cards»(공식 Dropbox PDF pdftotext). `holdem-showdown-rules` FAQ «유일한 출구 = 머크·팟 포기» 뒤에 «콜러가 먼저 머크하고 다른 라이브 핸드가 없으면 무공개 수여» 1문장 — **사본 9개 전부**(en·pt·es·de·id·ar·ja·zh·zh-hant · 앵커 1회 매치 확인). KO 글 없음 · 나머지 16로케일은 배타 명제 없음(fr은 이미 «모두 폴드면 무공개 승»). `updated`·`masterUpdated` 10-02.
+- 게이트: audit 9로케일 🔴 0(🟠 es1·de1·zh1·zh-hant4 = 수정 전과 동일) · `--schema` FAQ 불일치 0 · 미러 드리프트 핵심 0 · build 성공(74 + 615 intl).
+- 사실 시트: `2026-10-tmtc.md` §2 10-02 절 · `2026-q4-zh-hant-taiwan-schedule.md` §6(MA-259 판정표 + 🪶 ja 오사카 FAQ «現金だけでは入れません» 오독 여지 — 자동 착수 금지).
+
 ## 2026-10-02 (7) — de 고유 대회 글 1편 `ept-prague-2026-guide` 발행 (MB-145 · MB-146)
 
 - 핸드오프 순서표 2번(de EPT Prag · D-61 · 마감 11/4). 사실 = 10-02 (6) 시트 그대로(재조사 0) + §7 교통만 서브 조사 1(bahn.de 구간 페이지·ÖBB·edalnice cenik·hilton·DPP 축어 · DB 요약 페이지 «ca. 5/6 Stunden» 상충 → 구간 페이지 값만). 실행 15:34~ · Opus 5.5 본체 집필 + 서브 2(교통·표현 조사 / 독일어 현지 기자 적대 검수).
