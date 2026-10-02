@@ -1,3 +1,12 @@
+## 2026-10-02 (6) — 순서표 재편: ja JOPT 도쿄 #01 건너뜀 · 순서 2 = de EPT Prag 선정 + 사실 시트 (집필은 다음 세션)
+
+- 순서 1 ja JOPT 2027 도쿄 #01: 보류 사유(参加権利 수) 재확인 = **여전히 미공개**(티켓 공지 dateModified 09-10 · 이벤트 목록 날짜만 · events 서브도메인·/2027tokyo01/ 404 · 도쿄 페이지 2026 #01 표 · RSS 최근 10건 2027 0) → 건너뜀(`14cc318a`). 재확인 = 캘린더 11/26.
+- 순서 2 수요(DFS 10-02): de EPT Prag DE «ept prag» 110(25-12 480)·«ept prague» 50(210) · AT 30·20 / es 무르시아 대회명 null(베뉴 «odiseo poker» 390 평탄) / AR 로사리오 «circuito argentino de poker» 260·«cap rosario» 110 → **EPT Prag 선정.** 뱅크 `docs/keyword-bank/de-tournament.md` §6.
+- 사실 시트 신설 `docs/tournament-factsheets/2026-12-ept-prague.md`: 공식 일정표 Playwright 120행 전수 + 공식 XML 피드(9/20 생성 · 수수료 내역·규정 축어) + 바이인 방법 페이지(«COM/EU/DE/UK/FR Stars Account» 온라인 등록 «around four weeks before») + 2025 실적(PokerNews: ME 1,224 entries · PS Open €1,650 3,024).
+- 🔴 판정: DE SERP 2위 King's Resort·5위 pokerfirma의 «PS Open €1.650 / HR €2.700» = **2025 값 잔존**(공식 en·de·피드 €1,000+€100 = €1,100 · hochgepokert 09-06 «bisherigen Buy-in von €1.650»). 공식 내부 상충 1건: Mystery Bounty Key Dates €3,200 ↔ 일정표·피드 €3,250.
+- 🪶 도구 함정: 레포 Playwright .mjs 출력을 `| head`로 파이프하면 빈 출력·exit 127이 난다 → 파일로 리다이렉트해서 읽었다.
+- 본문·lib 변경 0 · 빌드 불요 · MB 불요(문서만). 우편함 검수장→본체 미처리 0.
+
 ## 2026-10-02 (5) — de 고유 대회 글 1편 `capt-million-baden-2026-guide` 발행 (MB-143 · MB-144)
 
 - 핸드오프 순서표 1번(de CAPT Million Baden · D-48 · 마감 10/22). 사실 = 10-02 (4) 시트 2개 그대로(재조사 0). 실행 12:50~ · Opus 5.5 본체 집필 + 서브 1(독일어 현지 기자 적대 검수).

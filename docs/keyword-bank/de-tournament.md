@@ -125,3 +125,25 @@ AT 월별(묶음 6종 합): 25-09 540 · 25-10 690 · **25-11 2,420** · 25-12 7
 ## 다음 후보 (같은 뱅크에 이어 적는다)
 
 - CAPT 다음 스톱(2027 시즌) — 스톱명+연도 패턴이 Seefeld(2월)·Linz/Innsbruck(3월)·Salzburg(4월)·Velden(5월)·Graz(9월)로 반복. 전부 AT location으로 잴 것.
+
+## 6. EPT Prag 2026 (추가 2026-10-02 · 핸드오프 순서표 2 선정 실측)
+
+> 같은 방법(`google_ads/search_volume/live` · language 생략 · location 별도 · 창 2025-09~2026-08). 사실 시트 = `docs/tournament-factsheets/2026-12-ept-prague.md`.
+
+| 키워드 | DE | AT | 메모 |
+|---|---|---|---|
+| ept prag | **110** · 25-12:**480** · 25-11:210 | 30 · 25-11·12:90 | 독일어 표기형이 영어형보다 2배 |
+| ept prague | 50 · 25-12:210 | 20 · 25-12:90 | |
+| prag poker | 50 · 26-03:110 | 20 | 평탄(대회 무관 수요 섞임) |
+| poker prag | 40 · 26-03:90 | 10 | |
+| pokerstars prag | 10 | 10 | |
+| kings casino prague | (미측정) | 140 · 26-03:260 | 베뉴 브랜드 |
+| ept | — | 140 | |
+| european poker tour | — | 40 | |
+| ept prague 2025 · ept prague 2026 · ept prag 2025 · ept prag 2026 · pokerstars open prague | null | — | 연도형은 최저 버킷 미만. SERP는 존재 |
+
+→ 대회 달(12월)에 DE «ept prag»+«ept prague» 합 **~690**. CAPT Million(AT 피크 2,420)보다 작지만 **DE 쪽 대회명 수요로는 GPM(40)의 10배 이상.**
+
+**같은 날 다른 후보 비교**(순서표 2 · 근거로만 보존):
+- es(ES 2724) partypoker 무르시아: «partypoker tour murcia»·«partypoker murcia»·«party poker murcia»·«partypoker tour» = null · «odiseo poker» 390(평탄) · «torneo poker odiseo» 170 · «casino odiseo» 170 · «torneo poker murcia» 70 · «poker murcia» 70 → 대회명 수요 없음(베뉴 수요는 상시형)
+- es(AR 2032) CAP 로사리오: «circuito argentino de poker» 260(26-03:480) · «cap poker» 170 · «cap rosario» 110 · «city center poker» 320 · «city center rosario poker» 40 · «torneo poker rosario» 10 · «circuito argentino de poker rosario» 10 → 투어 일반명 수요. 로사리오 스톱 고유 수요는 작다. 보드 바이인 «공식 미기재»(07-29 확인) — 데이터 공급 재확인 필요
