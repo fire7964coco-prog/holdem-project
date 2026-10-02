@@ -64,3 +64,27 @@
 - `torneo poker barcelona casino` — vol- SD3
 - `torneo poker alicante casino` — vol- SD3
 - `torneo poker casino bcn` — vol- SD3
+
+---
+
+## 🪶 보류 아이디어 — Casino Odiseo 무르시아 «카지노 상시 글» (2026-10-02 · 사장님 «메모해놔 나중에 쓰자»)
+
+**발단**: partypoker Tour 무르시아(11/30~12/6 · Casino Odiseo · 보드 `pp-murcia`) 대회 글을 검토하다 대회명 검색이 0이라 방향 전환.
+**DataForSEO google_ads search_volume · ES(2724) · es · 2025-09~2026-08 평균**:
+
+| 키워드 | 월 | 추이 |
+|---|---|---|
+| casino odiseo murcia | 390 | 320~480 안정 |
+| casino odiseo | 170 | 110~210 |
+| torneo poker odiseo | 170 | 90~210 |
+| casino murcia poker | 170 | 110~210 |
+| torneo poker murcia · poker murcia | 70 · 70 | |
+| odiseo murcia poker | 70 | 2025-10만 110 |
+| torneos de poker en españa | 50 | |
+| partypoker españa | 30 | |
+| partypoker tour murcia · partypoker murcia · partypoker tour | 값 없음 | |
+
+**구상**: 대회 가이드가 아니라 «Casino Odiseo 무르시아에서 포커 치기» 상시 글 — 포커룸 위치·영업·입장 조건 · 정기 토너먼트/캐시 · 연중 큰 대회(partypoker Tour를 한 절로) · 첫 방문 안내. 대회 D-28 마감 없음.
+**착수 전 선행**: 공식 원문으로 쓸 거리 확인(정기 토너먼트 일정 공개 여부 · 입장 규정) → 얇으면 접는다. SERP top10 확인(카지노 공식·경쟁 페이지).
+
+**같은 날 비교 — CAP 로사리오(AR 2032)**: circuito argentino de poker 260 · cap poker 170 · cap rosario 110(2025-10 260 · 원인 미확인) · city center rosario poker 40 · poker rosario 30 · torneo (de) poker rosario 10 → 대회 글 단독은 약함. 쓴다면 CAP 서킷 글에 로사리오 절.

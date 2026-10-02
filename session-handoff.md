@@ -11,7 +11,7 @@
 | 순서 | 언어 | 대회 (보드 id) | 일정 | D-28 마감(이 날 지나면 «참가 방법» 글 불가 → 일정·관전형으로 축소) |
 |---|---|---|---|---|
 | 1 | **ja** | JOPT 2027 도쿄 #01 (`jopt-tokyo-2027-1`) — ⏸ **10-02 재확인 = 여전히 미공개 → 건너뜀**(티켓 공지 dateModified 09-10 그대로 · 이벤트 목록에 날짜만·상세 링크 없음 · `events.japanopenpoker.com/2027-tokyo-01`·`/2027tokyo01/` 404 · 도쿄 도시 페이지는 아직 2026 #01 표). 재확인은 캘린더 11/26 절 | 12/24~1/3 | 11/26 |
-| 3 ▶ **다음 세션 = 재판단** | es 등 | partypoker 무르시아 (11/30 · D-28 **11/2**) · CAP 로사리오 (12/12 · 11/14) — 수요 약함(뱅크 §6 비교: 무르시아 대회명 null · 로사리오 «cap rosario» 110). 쓸지·건너뛸지 사장님 판단 먼저 | — | — |
+| 3 | es | ⏸ **보류(사장님 10-02 «메모해놔 나중에 쓰자»)**: 무르시아는 대회 글 대신 **Casino Odiseo 상시 글**로 전환 구상(casino odiseo murcia 390 · torneo poker odiseo 170 · 대회명 0) · CAP 로사리오는 대회 글 단독 약함(cap rosario 110) — 수치·구상 = `docs/keyword-bank/es-local-tournaments.md` 끝 «보류 아이디어» 절. 마감 압박 없음 | — | — |
 
 - ✅ de EPT Prag = 10-02 (7) 발행(`ept-prague-2026-guide` · MB-145 · 후속 = 캘린더 «de ept-prague» 절: 11월 초 온라인 등록 개시 확인 · 12/9 훅 · 12/13 결과 전환).
 - ✅ de CAPT Million Baden = 10-02 발행(`capt-million-baden-2026-guide` · MB-143 · GPM은 글 안 비교 H2 · 후속 시한은 캘린더 «de capt» 절 · de 대회 뱅크 = `docs/keyword-bank/de-tournament.md`). 
