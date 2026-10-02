@@ -16,7 +16,7 @@ export const POST: Post = {
   title: "6-5-2: Erst checken, dann Check-Raise",
   seoTitle: "Check-Raise am Flop 6-5-2: Warum der BB erst checkt",
   desc: "Auf 6-5-2 macht genau eine Hand eine Straße, und keiner hält sie. Deshalb checkt der Big Blind 96,8% – und spart seine Aggression für den Check-Raise.",
-  tldr: "Auf dem niedrigen Rainbow-Flop 6♠5♥2♦ checkt der Big Blind 96,8% und spielt nur 3,2% an – obwohl seine Equity von 48,3% die zweithöchste der sieben Spots ist, in denen er verteidigt. Nur eine Hand macht hier eine Straße, 4-3, und keine der beiden Ranges hält sie. Niemand hat die stärksten Hände für sich, also spielt niemand out of position an. Die Action kommt später: Rechnet man denselben Spielbaum separat über den Flop hinaus, check-raist der Big Blind eine Bet von 1,8bb in 14,9% der Fälle, fast alles davon Draws.",
+  tldr: "Auf dem niedrigen Rainbow-Flop 6♠5♥2♦ checkt der Big Blind 96,8% und spielt nur 3,2% an – obwohl seine Equity von 48,3% die zweithöchste der sieben Spots ist, in denen er verteidigt. Nur eine Hand macht hier eine Straße, 4-3, und keine der beiden Ranges hält sie. Niemand hat die stärksten Hände für sich, also spielt niemand out of position an. Die Action kommt später: Rechnet man denselben Spielbaum separat über den Flop hinaus, check-raist der Big Blind eine Bet von 1,8bb in 14,9% der Fälle, zum größten Teil Draws.",
   category: "strategy",
   date: "2026-10-02",
   updated: "2026-10-02",
@@ -114,7 +114,7 @@ Und 4-3 ist in keiner der beiden Ranges. **Im Kategorien-Panel des Poker-Solvers
 
 **Der Big Blind gewinnt bei den Paaren und verliert alles darüber.** Er hält mehr Top Pair, mehr Second Pair und mehr schwache Paare als der Button; Sets und Zwei Paare liegen exakt gleichauf; und seine Overpairs erreichen kaum die Hälfte der Overpairs des Buttons. Fast drei Viertel beider Ranges haben gar kein Paar – deshalb ist das hier ein Kampf um Overcards statt um Value, und deshalb wird die Hand, die ihn gewinnt, meist noch von einem Draw gejagt.
 
-![Range-Zusammensetzung auf einem niedrigen Rainbow-Board: Der Big Blind liegt bei den Paaren vorn, der Button bei den Overpairs](/images/gto-srp-low-rainbow-ranges-de.webp "6♠5♥2♦ · woraus der Check-Raise tatsächlich besteht")
+![Range-Zusammensetzung auf einem niedrigen Rainbow-Board: Der Big Blind liegt bei den Paaren vorn, der Button bei den Overpairs](/images/gto-srp-low-rainbow-ranges-de.webp "6♠5♥2♦ · Range-Zusammensetzung – der Big Blind vorn bei den Paaren, der Button bei den Overpairs")
 
 | Kategorie | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -199,7 +199,7 @@ Wir haben alle 487 Zeilen der Detailtabelle gelesen, nicht nur den ersten Bildsc
 | J4s · Q4s | Gutshot auf die Drei und sonst nichts | 67%–90% |
 | 54s | Second Pair und Gutshot | 74%–75% |
 
-Lies die zweite Spalte von oben nach unten, und das Muster ist nicht zu übersehen. **Unterhalb von Zwei Paaren hält jede Hand im Raise einen Straßendraw** – die beiden, die zusätzlich ein Paar haben (64s und 54s), raisen wegen des Draws, nicht wegen des Paares:
+Lies die zweite Spalte von oben nach unten, und das Muster ist nicht zu übersehen. **Unterhalb von Zwei Paaren hält jede dieser Hände an der Spitze der Liste einen Straßendraw** – die beiden, die zusätzlich ein Paar haben (64s und 54s), raisen wegen des Draws, nicht wegen des Paares:
 
 - **98s** hält 5-6-8-9 und braucht die ==7==.
 - **87s** hält 5-6-7-8 und nimmt ==die 4 oder die 9== – der einzige beidseitige Straßendraw (OESD) **in dieser Range**. ⚠ Nicht der einzige, den das Board zulässt: **74 macht 4-5-6-7** und wartet auf die 3 oder die 8, ein OESD wie aus dem Lehrbuch, und 84 ist ein doppelter Gutshot mit denselben acht Outs. Die 0,8% in der Draw-Tabelle bedeuten, dass die Ranges dieses Poker-Solvers kein 74 suited enthalten – nicht, dass das Board nur einen OESD hat.
@@ -252,7 +252,7 @@ Achte auf das, was *fehlt*: **Scroll durch das Panel „Hände“ und such die f
 
 Für die Check-Raise-Zahlen musst du einen Schritt weiter gehen, denn der Lernspot zeigt nur den Flop. Klick auf **Diesen Spot selbst berechnen**, behalte den Spielbaum, den er lädt, und rechne ihn durch. Wenn die Berechnung fertig ist, klick in der oberen Leiste auf **Check** und dann auf **Bet**.
 
-Öffne danach den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und bewertet deine Aktion in verlorenen Big Blinds. Kostenlos, nichts zu installieren, kein Konto.
+Öffne danach den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und zeigt dir, wie viele Big Blinds deine Aktion kostet. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 ## FAQ
 
@@ -270,7 +270,7 @@ A. Weil die Spitze einer Range entscheidet, wer zuerst bettet, nicht ihr Durchsc
 
 **Q. Mit welchen Händen check-raist du auf 6-5-2?**
 
-A. Mit allen neun Set-Combos (66, 55, 22), beiden Combos von 65 suited und danach mit Straßendraws: 98s für den Gutshot auf die Sieben, 87s für den OESD sowie J4s, Q4s, 54s und 64s für den Gutshot auf die Drei. Keine davon wurde wegen einer hohen Karte gewählt – der Raise ist von oben bis unten auf Draws gebaut.
+A. Mit allen neun Set-Combos (66, 55, 22), beiden Combos von 65 suited und danach mit Straßendraws: 98s für den Gutshot auf die Sieben, 87s für den OESD sowie J4s, Q4s, 54s und 64s für den Gutshot auf die Drei. Keine davon wurde wegen einer hohen Karte gewählt – neben den Sets und 65 suited stützt sich der Raise vor allem auf Draws.
 
 **Q. Ist ein Check-Raise erlaubt – und ist er unhöflich?**
 
@@ -278,7 +278,7 @@ A. Erlaubt ist er in fast jedem Casino und in normalen Onlinespielen – nur ein
 
 **Q. Gelten diese Zahlen auch bei meinem Limit?**
 
-A. Nimm die Frequenzen auf dieser Seite als Ausgangspunkt für passende Bedingungen: heads-up, 100bb, ein Button-Open auf 2,5bb mit Standard-Verteidigungsranges, ohne Rake. Ein Detail gilt nur für dieses Beispiel – der Spot wurde mit einer einzigen Bet Size von 33% berechnet, der Poker-Solver kann also nie eine größere wählen. Gib ihm zwei Sizes, und die Frequenzen verschieben sich, auch wenn der eigentliche Grund für den Check derselbe bleibt.
+A. Nimm die Frequenzen auf dieser Seite als Ausgangspunkt für passende Bedingungen: heads-up, 100bb, ein Button-Open auf 2,5bb mit Standard-Verteidigungsranges, ohne Rake. Ein Detail gilt nur für dieses Beispiel – der Spot wurde mit einer einzigen Bet Size von 33% berechnet, der Poker-Solver kann also nie eine größere wählen. Mit zwei Sizes können sich die Frequenzen verschieben – berechnet ist hier nur die Variante mit einer Size.
 `.trim(),
 };
 

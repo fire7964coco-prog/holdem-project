@@ -233,29 +233,29 @@ const SPOT_GROUPS = [
     items: [
       // 🔴 M-046 P-2와 같은 유형을 «신설 시점에» 회피 — 앱 ①은 「BB 체크 다음 BTN이 넓게
       //    작은 C벳을 친다」고 말하는데 화면은 BB 첫 액션에서 멈춘다. 화면값(체크 98,2%)으로.
-      { board: "A♥7♦2♣", name: "Trockenes A-High-Board", note: "Der Lehrbuch-Spot für den Range-Vorteil – das Ass trifft die Range des Openers voll, und die BB checkt zu 98,2%" },
-      { board: "K♠8♦3♣", name: "Trockenes K-High-Board", note: "Vergleiche es mit dem A-High-Board: K-High begünstigt den BTN ebenfalls, aber die Checks nehmen etwas zu. Weißt du, warum?" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Trockenes A-High-Board", note: "Der Lehrbuch-Spot für den Range-Vorteil – das Ass trifft die Range des Openers voll, und die BB checkt zu 98,2%" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Trockenes K-High-Board", note: "Vergleiche es mit dem A-High-Board: K-High begünstigt den BTN ebenfalls, aber die Checks nehmen etwas zu. Weißt du, warum?" },
       // 🟢 앱 de 축어가 이미 정정본이다. 다만 「in jedem der 13 Spots」의 편 수 하드코딩만
       //    「der Serie」로 갈았다(RP-08 · M-046 P-1과 같은 처방).
-      { board: "Q♠J♦T♠", name: "Verbundenes Broadway-Board, Two-Tone", note: "Ein Board, das beide Ranges zu treffen scheint. Doch die BB realisiert hier weniger Equity als in jedem anderen Spot der Serie – 77,9% gegen 119,4% beim BTN – und checkt zu 99,9%" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Verbundenes Broadway-Board, Two-Tone", note: "Ein Board, das beide Ranges zu treffen scheint. Doch die BB realisiert hier weniger Equity als in jedem anderen Spot der Serie – 77,9% gegen 119,4% beim BTN – und checkt zu 99,9%" },
       // 🔴🔴 RP-01 계열 + RP-02 정정 — 앱 de는 아직 «Die klassische Textur für den Caller.
       //    Die C-Bet-Frequenz des BTN bricht ein»이다(8개 언어 전건 · 5langs 축어 문서 §0).
       //    ▸ 「콜러 우위」는 시리즈가 이름까지 대며 폐기한 명제다(KO ④: 「레인지 우위가 BB로
       //      넘어간 것은 아니다 — 48.5% 대 51.5%」 · EN ④ FAQ 「→ No.」).
       //    ▸ 「BTN C벳 빈도」는 화면에서 확인 불가다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. 앱 문구로 되돌리지 마라.
-      { board: "9♥8♥7♣", name: "Verbundenes Middle-Board, Two-Tone", note: "Das einzige Single-Raised-Board, auf dem die BB wirklich vorangeht: Sie setzt in 23,7% der Fälle zuerst (der Range-Vorteil bleibt trotzdem beim BTN – die BB hält 48,5% Equity gegen 51,5%)" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Verbundenes Middle-Board, Two-Tone", note: "Das einzige Single-Raised-Board, auf dem die BB wirklich vorangeht: Sie setzt in 23,7% der Fälle zuerst (der Range-Vorteil bleibt trotzdem beim BTN – die BB hält 48,5% Equity gegen 51,5%)" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «seltener werden» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
       //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
       //    이 note는 «앱 축어» 선언 지위라 앱이 바뀌면 같이 바뀐다.
-      { board: "Q♠9♠2♠", name: "Monotones Board (eine Farbe)", note: "Sieh, warum große Bets seltener werden und kleine Bets und Checks übernehmen – selbst ein fertiger Flush checkt hier oft" },
-      { board: "6♣6♦3♥", name: "Gepaartes Board", note: "Niemand trifft dieses Board, also steigt die Bluff-Frequenz. Finde in der Detailtabelle heraus, welche Hände als Bluff betten" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Monotones Board (eine Farbe)", note: "Sieh, warum große Bets seltener werden und kleine Bets und Checks übernehmen – selbst ein fertiger Flush checkt hier oft" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Gepaartes Board", note: "Niemand trifft dieses Board, also steigt die Bluff-Frequenz. Finde in der Detailtabelle heraus, welche Hände als Bluff betten" },
       // 🔴 M-045 RP-19 정정 — 앱 de는 아직 「die BB check-raist … oft. Verfolge die obere
       //    Leiste über eine Bet hinaus」다(빈도 단언 + 조작 지시 — 화면은 BB 첫 액션에서 멈춘다).
       //    KO ⑦ 239줄: 「BB의 체크레이즈 빈도가 그 화면에는 없습니다」. §4-B ⑦ = 체크 96,8 · 벳 3,2뿐.
-      { board: "6♠5♥2♦", name: "Niedriges Rainbow-Board", note: "Ein Overcard-Krieg. Der Spot, an dem du studierst, wie ein Check-Raise gebaut wird – auf dem Bildschirm ist die erste Aktion der BB: 96,8% Check, 3,2% Bet" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Niedriges Rainbow-Board", note: "Ein Overcard-Krieg. Der Spot, an dem du studierst, wie ein Check-Raise gebaut wird – auf dem Bildschirm ist die erste Aktion der BB: 96,8% Check, 3,2% Bet" },
     ],
   },
   {
@@ -266,16 +266,16 @@ const SPOT_GROUPS = [
       //    Range unter Druck»다. 시리즈 ⑧이 그 인과를 폐기했다: 「SPR이 똑같이 4.0인 ⑨는
       //    큰 사이즈 98.4%, ⑩은 97.8%다. 사이즈를 정하는 것은 스택 깊이가 아니라 레인지의
       //    모양이다」(`lib/posts/3bet-pot-cbet.ts` 반박 문단). 앱 문구로 되돌리지 마라.
-      { board: "A♦K♠2♥", name: "A-High-Board, Vorteil für den 3-Bettor", note: "Der bestmögliche Flop für die 3-Bet-Range, die voll mit AK, AA und KK ist. Dass eine kleine Bet die ganze Range unter Druck setzt, liegt an der Form dieser Range – nicht am niedrigen SPR" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "A-High-Board, Vorteil für den 3-Bettor", note: "Der bestmögliche Flop für die 3-Bet-Range, die voll mit AK, AA und KK ist. Dass eine kleine Bet die ganze Range unter Druck setzt, liegt an der Form dieser Range – nicht am niedrigen SPR" },
       // 🟢 앱 de 축어가 이미 정정본이다(98,4 · 0,8).
       // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %만 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이고 벳 합계는 99.1(작은 사이즈 0.7 포함)이라
       //    98,4와 0,8을 나란히 두면 독자가 뺄셈으로 0,8%p를 잃는다. en 문안이 정본.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다(§4-B 주의).
-      { board: "Q♥T♥7♠", name: "Dynamisches Two-Tone-Board", note: "Ein 3-Bet-Pot auf einem Board, das auch dem Caller liegt – und trotzdem bremst der 3-Bettor nicht: 98,4% der Range feuert mit derselben Zwei-Drittel-Size" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Dynamisches Two-Tone-Board", note: "Ein 3-Bet-Pot auf einem Board, das auch dem Caller liegt – und trotzdem bremst der 3-Bettor nicht: 98,4% der Range feuert mit derselben Zwei-Drittel-Size" },
       // 🟢 앱 de ⑩은 «weitgehend verfehlt» 완화형이라 결함은 아니나(RP-17은 «통째로»형이 결함),
       //    랜딩은 다른 다섯 랜딩과 같은 **수치 정본**으로 간다 — KO ⑩ 표 실측 **탑 페어 0%**
       //    (8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.
-      { board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
     ],
   },
   {
@@ -283,14 +283,14 @@ const SPOT_GROUPS = [
     cond: "OOP: SB (Open-Raiser) · IP: BB (Caller) · Pot 6bb · Stack 97bb",
     items: [
       // 🟢 앱 축어. RP-18 감시 조건(빈도 수치가 붙으면 폐기 명제) 미충족 — 수치를 붙이지 마라.
-      { board: "K♥T♦6♠", name: "K-High mit einer Zehn", note: "Im Blind vs Blind sind die Ranges weit, beide kommen also schwach zum Flop. Vergleiche die Frequenzen mit dem trockenen K-High-Board aus BTN vs BB" },
-      { board: "7♦6♦5♣", name: "Verbundenes Low-Board, Two-Tone", note: "Zwei weite Ranges treffen auf einem extrem verbundenen Board aufeinander: Zwei Paare, Straßen und Draws überall – hier glänzt das Panel Hände / Draws" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "K-High mit einer Zehn", note: "Im Blind vs Blind sind die Ranges weit, beide kommen also schwach zum Flop. Vergleiche die Frequenzen mit dem trockenen K-High-Board aus BTN vs BB" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Verbundenes Low-Board, Two-Tone", note: "Zwei weite Ranges treffen auf einem extrem verbundenen Board aufeinander: Zwei Paare, Straßen und Draws überall – hier glänzt das Panel Hände / Draws" },
       // 🟢 앱 de 축어가 이미 정정본이다(88 대 66 · 80,1).
       //    🪶 용어는 앱 축어(«Drillinge»)가 아니라 **코퍼스 정본**을 따랐다 — `de/holdem-glossary` 315줄
       //       «Trips ist eine Hole Card, die zu einem Paar passt, das schon auf dem Board liegt» ·
       //       `holdem-hand-rankings` 388줄이 Set/Trips를 갈라 정의한다(M-034 「코퍼스 정본 먼저」).
       //       «88 gegen 66»은 포켓페어로 오독될 수 있어 Kombinationen을 붙였다(네이티브 렌즈 D-1).
-      { board: "A♠A♥6♦", name: "Board mit gepaartem Ass", note: "Zwei Asse auf dem Board. Trips sind nicht selten – der SB hält einfach mehr davon (88 Kombinationen, die BB nur 66), also bettet der SB 80,1%" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board mit gepaartem Ass", note: "Zwei Asse auf dem Board. Trips sind nicht selten – der SB hält einfach mehr davon (88 Kombinationen, die BB nur 66), also bettet der SB 80,1%" },
     ],
   },
 ];

@@ -24,7 +24,7 @@ export const POST: Post = {
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-de.webp",
   imageAlt: "Ergebnis des HoldemMaster-GTO-Solvers für den trockenen A-High-Flop A♥7♦2♣: Das 13×13-Raster des Big Blinds ist fast vollständig grün für Check",
-  tags: ["a-7-2 flop", "trockenes board poker", "a-high board", "top pair checken", "range vorteil poker", "gto", "poker"],
+  tags: ["a-7-2 flop", "trockenes board poker", "a-high board", "top pair checken", "gto", "poker"],
   content: `
 Der Flop kommt **A♥ 7♦ 2♣**, Rainbow. Du sitzt im Big Blind (BB) mit A9 – Top Pair. Anspielen fühlt sich selbstverständlich an. Ist es nicht.
 
@@ -61,7 +61,7 @@ Der Pot beträgt 5,5bb, weil zum Open des Buttons über 2,5bb und zum Call des B
 
 ## Wie oft wird auf einem trockenen A-High-Board gesetzt – und von wem?
 
-Das hängt ganz davon ab, auf welchem Platz du sitzt. Für den Preflop-Raiser liegt die Antwort auf einem so trockenen Board heads-up in Position bei rund **70–100% mit kleiner Size** – der Guide zur [Continuation Bet](/de/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") schlüsselt das nach Board-Typ auf. Für den Spieler, der gecallt hat, lautet die Antwort **praktisch null**.
+Das hängt ganz davon ab, auf welchem Platz du sitzt. Für den Preflop-Raiser liegt die Antwort auf einem so trockenen Board heads-up in Position bei rund **70%–100% mit kleiner Size** – der Guide zur [Continuation Bet](/de/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") schlüsselt das nach Board-Typ auf. Für den Spieler, der gecallt hat, lautet die Antwort **praktisch null**.
 
 Genau genommen hat der Caller gar keine C-Bet – der Begriff meint, dass der Preflop-Raiser den Flop bettet; die Version des Big Blinds ist also ein **Lead** (auch Donk Bet genannt). Aber genau diese Zahl suchen die meisten, die auf dieser Seite der Hand landen, und hier ist sie:
 
@@ -77,7 +77,7 @@ Von 464 Combos betten etwa acht – über beide Sizes gerundet 1,9%. In der Prax
 
 Weil sich der Pot mit einem Check leichter gewinnen lässt als mit einer Bet. Mit einem Paar out of position (OOP) gegen den Spieler anzuspielen, der preflop die Initiative übernommen hat, ist der teure Weg, eine Hand zu spielen, mit der du gern zum Showdown gehst.
 
-Drei Dinge sprechen gegen einen Lead. Erstens die **Equity-Realisierung**: Die Zahlen unten zeigen, dass der Big Blind 84,0% seiner Equity einfährt und der Button 113,1%. Wer out of position einen größeren Pot baut, macht diese Lücke teurer, nicht billiger. Zweitens c-bettet der Button diesen Flop mit hoher Frequenz – **ein Check hält seine Bluffs im Pot**, während ein Lead sie folden und leer ausgehen lässt. Drittens ist die Range des Big Blinds gedeckelt: Ohne AA, AK oder AQ lädt ein Lead zu Raises starker Asse ein, und der Großteil der Big-Blind-Range kann dagegen nicht weitermachen – nur 24 Combos halten einen Raise aus (die Sets 77 und 22, die Zwei Paare A7 und A2). (Ein Raise-Knoten ist hier nicht berechnet.)
+Drei Dinge sprechen gegen einen Lead. Erstens die **Equity-Realisierung**: Die Zahlen unten zeigen, dass der Big Blind 84,0% seiner Equity einfährt und der Button 113,1%. Wer out of position einen größeren Pot baut, macht diese Lücke teurer, nicht billiger. Zweitens c-bettet der Button auf so einem Flop typischerweise oft (eine Frequenz, die diese Berechnung nicht liefert) – **ein Check hält seine Bluffs im Pot**, während ein Lead sie folden und leer ausgehen lässt. Drittens ist die Range des Big Blinds gedeckelt: Ohne AA, AK oder AQ lädt ein Lead zu Raises starker Asse ein, und der Großteil der Big-Blind-Range kann dagegen nicht weitermachen – nur 24 Combos halten einen Raise aus (die Sets 77 und 22, die Zwei Paare A7 und A2). (Ein Raise-Knoten ist hier nicht berechnet.)
 
 Was ein Lead **nicht** tut: bessere Hände zum Folden bringen. Die Opening-Range des Buttons enthält jedes Ass bis hinunter zu A2, dazu Underpairs und Siebener – schlechtere Hände, die callen würden, gibt es also reichlich; das ist nicht das Problem. Das Problem ist der Pot, den du dafür aufbaust.
 
@@ -130,12 +130,12 @@ Gegen einen Tisch, der alles callt, ist „alles klein betten“ nicht mehr grat
 
 Die Faustregel lässt sich mit einer Bedingung verallgemeinern: **Die Seite mit dem Range-Vorteil – und ohne klaren Nut Advantage (Vorteil bei den stärksten Händen) – bettet klein und oft.** Auf Boards, auf denen ein Spieler auch die Nuts besitzt, geht die Size stattdessen nach oben. Wie sich das über die Board-Typen verändert, steht in der [C-Bet-Strategie](/de/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
-:::note[Der Lernspot rechnet nur die erste Aktion am Flop vor – die genaue C-Bet-Frequenz des Buttons gehört deshalb nicht zu den Zahlen auf dieser Seite. Um sie zu bekommen, öffne „Diesen Spot selbst berechnen“ und rechne den Baum durch.]:::
+:::note[Der Lernspot berechnet nur die erste Aktion am Flop vor – die genaue C-Bet-Frequenz des Buttons gehört deshalb nicht zu den Zahlen auf dieser Seite. Um sie zu bekommen, öffne „Diesen Spot selbst berechnen“ und rechne den Baum durch.]:::
 
 ## Was ändert sich am Tisch?
 
 - **Hast du heads-up einen Raise gecallt, vergiss den Lead auf einem trockenen A-High-Flop.** Top Pair eingeschlossen. Ein Lead baut einen Pot, den du dann out of position mit einem Paar spielen musst – genau die Lücke von 84% gegen 113% von oben. (Gelimpte Pots und Blind vs. Blind sind eine andere Struktur und nicht das, was dieser Spot abdeckt.)
-- **Checken ist nicht Check-Fold.** Genau hier wird die Zahl falsch gelesen. Gegen die kleine C-Bet des Buttons macht der Big Blind sehr breit weiter – jedes Ass, die meisten Siebener, die Underpairs, K-High mit Backdoor. **A9 ist ein Check-Call**, meist auch noch am Turn. Die Check-Raises kommen vor allem von 77, 22, A7 und A2, dazu ein paar Backdoor-Bluffs.
+- **Checken ist nicht Check-Fold.** Genau hier wird die Zahl falsch gelesen. Gegen die kleine C-Bet des Buttons macht der Big Blind sehr breit weiter – jedes Ass, die meisten Siebener, die Underpairs, K-High mit Backdoor. **A9 ist ein Check-Call**, meist auch noch am Turn. Für Check-Raises bieten sich vor allem 77, 22, A7 und A2 an, dazu ein paar Backdoor-Bluffs – die Reaktion des Big Blinds liefert diese Berechnung allerdings nicht.
 - **Am Button: gegen Gegner, die folden, klein und breit betten.** Gegen einen Spieler, der nie foldet, passt du in zwei Richtungen an: weniger Bluffs, weil er nicht foldet, egal was du bettest – besonders am Turn und River, wo zweite und dritte Barrels reiner Verlust sind – und größere Value Bets mit **Top Pair oder besser**. A9 mit seinem schwachen Kicker ist keine Hand, mit der du die Size erhöhst; es ist eine Hand, mit der du einfach nicht dreimal feuerst.
 - **Gegen einen ausgeglichenen Gegner ist ein Check hier keine Schwäche** – die Checking-Range enthält Sets (77, 22) und Zwei Paare (A7, A2), wer zu hart drückt, läuft also in einen Check-Raise. Auf niedrigen Limits ist es oft umgekehrt: Viele Spieler spielen ihre starken Hände einfach an, ihr Check ist also wirklich schwach. Bette weiter auf Value; behandle den Check-Raise als gelegentliche Kosten, nicht als Grund, langsamer zu werden.
 
@@ -146,7 +146,7 @@ Die Faustregel lässt sich mit einer Bedingung verallgemeinern: **Die Seite mit 
 
 ## Prüf es selbst nach
 
-Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Trockenes A-High-Board** → **⚡ Ergebnisse ansehen** – genau dieser Bildschirm erscheint ohne Wartezeit. Stell die Auswahl **Spieler** zwischen OOP und IP um, um beide Ranges zu vergleichen, und sortiere die Detailtabelle nach einer beliebigen Spalte, um die Hände zu finden, die betten. Die Lernspots rechnen **nur die erste Aktion am Flop** vor – um dich durch Turn und River zu klicken oder eine Range zu ändern und zuzusehen, wie sich die Frequenzen bewegen, nimm **Diesen Spot selbst berechnen** und rechne den Baum durch.
+Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Trockenes A-High-Board** → **⚡ Ergebnisse ansehen** – genau dieser Bildschirm erscheint ohne Wartezeit. Stell die Auswahl **Spieler** zwischen OOP und IP um, um beide Ranges zu vergleichen, und sortiere die Detailtabelle nach einer beliebigen Spalte, um die Hände zu finden, die betten. Die Lernspots berechnen **nur die erste Aktion am Flop** vor – um dich durch Turn und River zu klicken oder eine Range zu ändern und zuzusehen, wie sich die Frequenzen bewegen, nimm **Diesen Spot selbst berechnen** und rechne den Baum durch.
 
 Willst du denselben Spot trainieren, statt ihn nur zu lesen, öffne den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand aus der echten Range aus, du wählst eine Aktion, und er zeigt dir, wie viele Big Blinds dich diese Entscheidung gekostet hat. Er ist kostenlos, ohne Installation und ohne Konto.
 

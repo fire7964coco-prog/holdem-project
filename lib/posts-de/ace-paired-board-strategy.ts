@@ -16,7 +16,7 @@ export const POST: Post = {
   title: "A-A-6: Die C-Bet steigt auf 80,1%",
   seoTitle: "A-A-6-Flop: Warum der Small Blind 80,1% bettet",
   desc: "Ein gepaarter Flop wird zu 3% gebettet, ein anderer zu 80,1%. Auf A-A-6 gehört das Ass dem Raiser – und die Trips, die dich schlagen, fehlen beim Caller.",
-  tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds wird der Flop A♠A♥6♦ in 80,1% der Fälle gebettet (79,6% mit einem Drittel des Pots, 0,5% mit drei Vierteln, Check 19,8%). Das ist die Umkehrung der 3,0%, die der Big Blind als Caller gegen den Button auf dem gepaarten Board 6♣6♦3♥ bettete – und getrennt hat die beiden nicht, dass das Board gepaart ist, sondern wessen Karte sich gepaart hat. Hände, die mit einem Ass Trips machen, stehen bei 88 Combos gegen 66, und 16 dieser Combos, A-K und A-Q, fehlen in der Calling-Range komplett.",
+  tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds bettet der Small Blind den Flop A♠A♥6♦ in 80,1% der Fälle (79,6% mit einem Drittel des Pots, 0,5% mit drei Vierteln, Check 19,8%). Das ist die Umkehrung der 3,0%, die der Big Blind als Caller gegen den Button auf dem gepaarten Board 6♣6♦3♥ bettete – und den Unterschied macht weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt (neben dem Board haben sich auch Sitz und Ranges geändert). Hände, die mit einem Ass Trips machen, stehen bei 88 Combos gegen 66, und 16 dieser Combos, A-K und A-Q, fehlen in der Calling-Range komplett.",
   category: "strategy",
   date: "2026-10-02",
   updated: "2026-10-02",
@@ -26,7 +26,7 @@ export const POST: Post = {
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-de.webp",
   imageAlt: "Ergebnis des GTO-Solvers von HoldemMaster auf dem Flop A♠A♥6♦: Das Raster des Small Blinds ist fast vollständig orange für die Bet",
-  tags: ["a-a-6 flop", "trips poker", "was sind trips im poker", "board mit gepaartem ass", "blind vs blind a-a-6", "bluff frequenz poker", "gto", "poker"],
+  tags: ["a-a-6 flop", "board mit gepaartem ass", "blind vs blind a-a-6", "gto", "poker"],
   content: `
 Oft hört man, auf gepaarten Boards werde nicht gebettet. Auf dem [gepaarten Board 6-6-3](/de/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-de.webp") weiter vorn in dieser Serie bettete der Spieler, der zuerst handelt – dort der Big Blind als Caller gegen den Button –, nur **3,0%**.
 
@@ -43,7 +43,7 @@ Ergebnis | SB bettet **80,1%** – gegen 3,0% auf dem gepaarten Board 6-6-3
 :::
 
 > **Kurze Antwort**
-> Auf dem gepaarten Board A-A-6 ist die erste Aktion des Small Blinds **Bet 80,1%, Check 19,8%** (79,6% der Range mit einem Drittel des Pots). Das ist die Umkehrung der 3,0% auf 6-6-3, und getrennt hat die beiden **nicht, dass das Board gepaart ist, sondern wessen Karte sich gepaart hat.** Hände, die mit einem Ass Trips machen, stehen bei **88 Combos gegen 66**, und davon **gibt es A-K und A-Q – 16 Combos – in der Calling-Range des Big Blinds überhaupt nicht.** Sie wurden vor dem Flop ge-3-bettet.
+> Auf dem gepaarten Board A-A-6 ist die erste Aktion des Small Blinds **Bet 80,1%, Check 19,8%** (79,6% der Range mit einem Drittel des Pots). Das ist die Umkehrung der 3,0% auf 6-6-3, und den Unterschied macht **weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt** – neben dem Board haben sich auch Sitz und Ranges geändert. Hände, die mit einem Ass Trips machen, stehen bei **88 Combos gegen 66**, und davon **gibt es A-K und A-Q – 16 Combos – in der Calling-Range des Big Blinds überhaupt nicht.** Sie wurden vor dem Flop ge-3-bettet.
 
 ## Unter welchen Bedingungen entstanden diese Zahlen?
 
@@ -102,7 +102,7 @@ Stellt man die Serie nebeneinander, sieht man, wo dieser Spot landet.
 | | 6♣6♦3♥ (⑥) | A♠A♥6♦ (⑬) |
 |---|---|---|
 | Wer handelt zuerst | BB – der Caller | **SB – der Open-Raiser** |
-| Anteil Trips | BB 5,3% gegen BTN 4,0% – **der Spieler, der zuerst bettet, hat mehr** | SB 17,5% gegen BB 13,1% – der Spieler, der zuerst bettet, hat mehr |
+| Anteil Trips | BB 5,3% gegen BTN 4,0% – **der Spieler, der zuerst handelt, hat mehr** | SB 17,5% gegen BB 13,1% – der Spieler, der zuerst handelt, hat mehr |
 | Equity OOP | 47,2% | **56,2%** |
 | EQR OOP | 83,7% | **104,1%** |
 | Bet-Frequenz OOP | **3,0%** | **80,1%** |
@@ -162,7 +162,7 @@ Dieser Spot ist anders. Die Range des Small Blinds verläuft **kontinuierlich** 
 
 ## Welche Hände machen die 19,8% Checks aus?
 
-**Nicht eine Klasse, die geschlossen zurückgehalten wird, sondern ein Stück aus jeder.** Live gemessen am 21.08.2026 checken die Pocket Pairs **K-K 72,4%, Q-Q 66,2%, J-J 42,0% und T-T 21,6%** – K-K und Q-Q tendieren also zum Check, aber **T-T bettet schon 78%.** Die 99,8 checkenden Combos lassen sich auch nicht als „mittlere Stärke“ zusammenfassen: **Verfehlte Hände sind mit etwa 44% die größte Gruppe**, danach K-High mit etwa 27%, Zwei Paare mit etwa 17% und Trips mit etwa 11%. Am dichtesten sammelt sich das Grün in **offsuited Broadways** wie Q-9o, Q-Jo, Q-To und J-9o. Die Zellen mit einem Ass und 6-6 sind überwiegend orange.
+**Nicht eine Klasse, die geschlossen zurückgehalten wird, sondern ein Stück aus jeder.** Live gemessen am 21.08.2026 checken die Pocket Pairs **K-K 72,4%, Q-Q 66,2%, J-J 42,0% und T-T 21,6%** – K-K und Q-Q tendieren also zum Check, aber **T-T bettet schon 78%.** Die 99,8 checkenden Combos lassen sich auch nicht als „mittlere Stärke“ zusammenfassen: **Verfehlte Hände sind mit etwa 44% die größte Gruppe**, danach K-High mit etwa 27%, Zwei Paare mit etwa 17% und Trips mit etwa 11%. Am dichtesten sammelt sich das Grün in **offsuit Händen mit zwei hohen Karten** wie Q-9o, Q-Jo, Q-To und J-9o. Die Zellen mit einem Ass und 6-6 sind überwiegend orange.
 
 Der Grund liegt darin, **wer dich callt.** K-K macht mit den Assen des Boards Zwei Paare, aber **mit einer Bet ist damit wenig Wert zu holen.** ⚠ Übersetz das nicht in „die schlechteren Hände folden und nur bessere Trips callen“ – **die eigene Tabelle dieses Artikels widerlegt das.** Die 78 Combos Zwei Paare des Big Blinds sind sieben Ränge Pocket Pairs (42) plus Sechs-x (36), **alle unter K-K**, und seine 92 Combos K-High liegen ebenfalls darunter; gegen eine Bet über ein Drittel des Pots folden diese 170 Combos (33,7% der Range) nicht alle. Die Trips und Full Houses, die K-K schlagen, kommen dagegen auf **75 Combos (14,9%) – weniger.** Der Wert ist nicht deshalb dünn, weil die schwachen Hände alle folden, sondern weil **dieser breite Teil zwar callt, dir aber nicht in einen großen Pot folgt** – Zwei Paare und K-High erkennen ohne große Mühe, dass sie hinter K-K liegen, und je größer du bettest, desto mehr bleiben nur Trips übrig. ⚠ Zur Klarstellung: **Ein weiteres Ass auf Turn oder River dreht K-K nicht um** – mit A-A-A-6 auf dem Board wird K-K zu einem *Full House, Asse über Könige* (A-A-A-K-K), und nichts in diesen 170 Combos schlägt das. Ein Check lässt dagegen Raum für die 260 verfehlten Combos des Big Blinds zu bluffen, und dann verdient ein Call sein Geld – **unter der Annahme, dass der Gegner Bluffs beimischt.** ⚠ Wie oft der Big Blind nach einem Check tatsächlich blufft, steht nicht in dieser Berechnung (der Lernspot endet bei der ersten Aktion am Flop); es ist eine Interpretation, abgeleitet aus der Range-Zusammensetzung.
 
@@ -171,7 +171,7 @@ Der Grund liegt darin, **wer dich callt.** K-K macht mit den Assen des Boards Zw
 ## Was ändert sich am Tisch?
 
 - **Mach aus „gepaartes Board heißt Check“ keine Regel.** Auf 6-6-3 sind es 3,0%, auf A-A-6 80,1%. Der Test ist nicht, ob das Board gepaart ist, und **auch nicht, wie viele Combos dieses Rangs du hältst** – auf 6-6-3 hielt der Big Blind die Sechsen dichter (5,3% gegen 4,0%) und bettete trotzdem nur 3,0%. Der Test ist, **ob deine Range *als Ganzes* besser ist als seine.** Die Bet erreichte hier 80%, weil Spitze und Rest **in dieselbe Richtung** kippten.
-- **Mit zwei Assen draußen halte dein Ass nicht für wertlos.** Wenn der Gegner A-K und A-Q 3-bettet, neigt sich das Kicker-Duell schon zu deinen Gunsten. **Das setzt allerdings voraus, dass er 3-bettet** – gegen einen Tisch, der mit A-K und A-Q immer nur callt, bricht die Prämisse zusammen; bette Trips mit schwachem Kicker also, aber halte dich aus einem großen Raise-Krieg heraus.
+- **Mit zwei Assen auf dem Board halte dein Ass nicht für wertlos.** Wenn der Gegner A-K und A-Q 3-bettet, neigt sich das Kicker-Duell schon zu deinen Gunsten. **Das setzt allerdings voraus, dass er 3-bettet** – gegen einen Tisch, der mit A-K und A-Q immer nur callt, bricht die Prämisse zusammen; bette Trips mit schwachem Kicker also, aber halte dich aus einem großen Raise-Krieg heraus.
 - **Kleine Size, hohe Frequenz.** Wenn die Range kontinuierlich verläuft, ist es besser, breit mit einem Drittel des Pots zu betten. Die große Size ist das Werkzeug für [eine Range, die in stark und schwach zerfällt](/de/blog/3bet-pot-low-board) – wobei selbst innerhalb der 3-Bet-Pots der Grund auf [einem Board voller Draws](/de/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-de.webp") ein anderer ist: Dort soll eine große Bet den Gegner bei einem schlechten Preis halten. **Beachte auch, dass 80,1% eine Heads-up-Berechnung sind** – ist mehr als ein Gegner noch dabei, kürze die Bets mit den verfehlten Händen deutlich und konzentriere dich auf Trips und Zwei Paare.
 - **Bette K-K und Q-Q nicht, „weil sie stark sind“.** Auf diesem Board finden sie kaum einen Call von etwas Schlechterem. Besser ist es, zu checken und die Bluffs des Gegners zu fangen. ⚠ Das ist **ein Urteil, abgeleitet aus der Range-Zusammensetzung**, kein Wert, den diese Serie gemessen hat – der Lernspot zeigt nur die Frequenz der ersten Aktion am Flop, und für diesen Spot gibt es keinen Knoten nach einem Check (der einzige Check-dann-Bet-Knoten der Serie ist die Neuberechnung am [niedrigen Rainbow-Board](/de/blog/low-board-check-raise)). **Außerdem setzt es voraus, dass der Gegner Bluffs beimischt** – gegen jemanden, der fast nie blufft, ist eine Bet nach deinem Check meist ein Ass, und Folden ist besser, als dich festzubeißen.
 
@@ -184,7 +184,7 @@ Der Grund liegt darin, **wer dich callt.** K-K macht mit den Assen des Boards Zw
 
 Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Board mit gepaartem Ass** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste: Er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
 
-**Klick dich im Wechsel mit dem gepaarten Board 6-6-3 durch.** Beides sind gepaarte Boards, und die Matrizen haben entgegengesetzte Farben. Arbeite die Lernspots einmal durch, und es bleibt eine Erkenntnis: Schau zuerst nicht darauf, **was für ein Board** es ist, sondern darauf, **an wessen Range dieses Board andockt**. Kostenlos, nichts zu installieren, kein Konto.
+**Klick dich im Wechsel mit dem gepaarten Board 6-6-3 durch.** Beides sind gepaarte Boards, und die Matrizen haben entgegengesetzte Farben. Arbeite die Lernspots einmal durch, und es bleibt eine Erkenntnis: Schau zuerst nicht darauf, **was für ein Board** es ist, sondern darauf, **an wessen Range dieses Board andockt**. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 **Q. Was sind Trips im Poker, und worin unterscheiden sie sich von einem Set?**
 
@@ -194,7 +194,7 @@ A. Trips entstehen, wenn das Board zwei Karten desselben Rangs zeigt und du eine
 
 A. Hand für Hand gesehen ja. Aber in GTO heißt Bluffen nicht „mit dieser Hand täusche ich“, sondern **„wie viel Prozent Bluffs stecken in meiner Range“.** Der Solver vergibt kein Bluff-Label an eine Hand; er legt **für jede Hand eine Frequenz** fest, und die Bet-Frequenz der Range ist einfach der Durchschnitt dieser Frequenzen über ihre Combos. Wenn 51,5% der gegnerischen Range verfehlt haben, findet eine kleine Bet reichlich, worauf sie drücken kann, und wenn sie diese Hände nicht zum Folden bringt, kassieren die 88 Combos Trips des Small Blinds. Wert und Bluff gehen mit derselben Size raus, also kann der Gegner sie nicht unterscheiden.
 
-**Q. Wie wahrscheinlich hält der Gegner auf einem Board wie A-A-6 ein Ass?**
+**Q. Wie wahrscheinlich ist es, dass der Gegner auf einem Board wie A-A-6 ein Ass hält?**
 
 A. In diesem Spot sind es **72 der 505 Combos des Big Blinds (14,3%)** – 66 Combos Trips plus die 6 Combos A-6, die ein Full House machen. Mit A♠ und A♥ auf dem Board bleiben nur zwei Asse übrig, also ist es weniger, als es sich anfühlt. Der Small Blind hält dagegen **95 Combos (18,9%)**: 88 Trips, 6 A-6 und 1 A-A. Dasselbe Board gibt unterschiedliche Antworten, je nachdem, wer vor dem Flop angegriffen hat.
 

@@ -73,6 +73,22 @@ export const DE_CLUSTERS = {
   // de 전용 로컬 가이드 (다른 언어에 대응 slug 없음 — 2026-08-15 신설)
   Lokal: ['poker-turnier-muenchen', 'capt-million-baden-2026-guide', 'ept-prague-2026-guide'],
   기타: ['holdem-card-counting'],
+  // GTO 솔버 예제 해설 13편 (2026-10-02)
+  GTO: [
+    'a-high-board-cbet',
+    'k-high-board-cbet',
+    'broadway-board-strategy',
+    'donk-bet-strategy',
+    'monotone-board-strategy',
+    'paired-board-strategy',
+    'low-board-check-raise',
+    '3bet-pot-cbet',
+    '3bet-pot-bet-sizing',
+    '3bet-pot-low-board',
+    'blind-battle-cbet',
+    'blind-battle-connected-board',
+    'ace-paired-board-strategy',
+  ],
 };
 
 /* ────────────────────────────────────────────────────────────────

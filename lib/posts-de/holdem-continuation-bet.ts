@@ -61,6 +61,8 @@ Das Entscheidende, was moderne Strategie tatsächlich sagt, weil man es leicht f
 
 Das Konzept dahinter ist der ==Range Advantage==: wessen Gesamt-Range auf diesem konkreten Flop stärker ist. Als Preflop-Raiser hältst du mehr hohe Karten und Overpairs, also **gehören hohe, trockene Boards dir** – und Boards voller mittlerer verbundener Karten gehören dem Spieler, der gecallt hat. Beherrsche diese eine Idee, und du bist jedem „einfach c-betten“-Spieler am Tisch voraus.
 
+Und der Range Advantage ist nicht die ganze Geschichte – kommt die Position dazu, wird der Effekt extrem. Auf A-7-2 Rainbow checkt der Caller laut Poker-Solver 98,2% seiner Range, Top Pair eingeschlossen – seine Range-Equity liegt mit 45,1% zu 54,9% nur moderat hinten, doch out of Position wird aus diesem Rückstand ein fast vollständiger Check. Die ganze Auswertung findest du unter [Top Pair und trotzdem Check](/de/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-de.webp").
+
 ---
 
 ## Welche Flops solltest du c-betten? Es geht um die Board-Textur
@@ -128,6 +130,8 @@ Setz echte Zahlen dahinter. Sagen wir, der Pot ist ==$30== am Flop:
 - Eine **Zwei-Drittel-Pot**-C-Bet sind ==$20== – deine Größe für wet Boards, um die Draws abzukassieren.
 
 In **Turnieren** tendiere eine Spur kleiner: Die kleine Size bleibt ein Drittel, die große ist aber häufiger **halber Pot** als zwei Drittel – weil dein Stack kostbar ist und du nicht nachladen kannst. Was auch immer du wählst, binde die Größe ans Board, nicht an Gewohnheit.
+
+Wie weit trägt die Faustregel „groß auf wet Boards“ wirklich? Gibt man dem Poker-Solver auf Q♥T♥7♠ im 3-Bet-Pot zwei Sizes, legt er [98,4% seiner Range in die Zwei-Drittel-Bet](/de/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-de.webp") – und der Grund ist ein Preis, den du ausrechnen kannst, kein Gefühl.
 
 ---
 

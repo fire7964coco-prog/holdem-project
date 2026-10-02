@@ -29,7 +29,6 @@ export const POST: Post = {
   tags: [
     "monotoner flop",
     "monotones board poker",
-    "monotone board poker",
     "monotoner flop strategie",
     "nut flush",
     "q-9-2 flop",
@@ -141,7 +140,7 @@ Die Equity bewegt sich kaum – 94% gegen 97,7% –, aber die EQR fällt auf 197
 
 **Der Big Blind – 7,1% gegen 5,7%.** Bei den *Flushdraws* ist es aber umgekehrt.
 
-![Infografik zur Range-Zusammensetzung: Handkategorien von Big Blind und Button auf dem monotonen Pik-Board Q♠9♠2♠, grüne und goldene Balken nebeneinander](/images/gto-srp-monotone-ranges-de.webp "Q♠9♠2♠ · Kategorien im Vergleich – fertige Flushes liegen beim Big Blind, Flushdraws und A-High beim Button")
+![Infografik zur Range-Zusammensetzung: Handkategorien von Big Blind und Button auf dem monotonen Pik-Board Q♠9♠2♠, grüne und goldene Balken nebeneinander](/images/gto-srp-monotone-ranges-de.webp "Q♠9♠2♠ · Kategorien im Vergleich – fertige Flushes liegen beim Big Blind, Overpairs und A-High beim Button")
 
 Out of position (OOP) ist der Big Blind, der zuerst handelt; in Position (IP) ist der Button.
 
@@ -187,7 +186,7 @@ Die Lücke von 18,4 Prozentpunkten ist die zweitkleinste **der sieben Single Rai
 
 - **Auf einem monotonen Board ist die große Bet von vornherein selten.** In der Theorie fällt die große Size des Big Blinds hier auf **3,2%**. ⚠ Mach daraus nicht direkt „also folde ich ein Paar gegen eine große Bet“. Die 3,2% sind, wie oft der Big Blind **anspielt**; wenn du derjenige bist, der einer Bet *gegenübersteht*, sind die Sizing-Frequenzen des Buttons in dieser Berechnung gar nicht enthalten. Schau dir auch die Spalte des Buttons an: Fertige Flushes sind 5,7%, Draws mit einem Pik dagegen **29,2%**, mehr als fünfmal so viele – wer eine große Bet als „Flush“ liest, foldet sich gegen Semi-Bluffs heraus. Das Erste, was du prüfst, wenn eine große Bet kommt: ob **deine eigene Hand das A♠ hält.**
 - **Treib einen kleinen Flush nicht über drei große Streets.** Der Poker-Solver checkt Flushes unterhalb der Nuts in 81,4% der Fälle (Nuts: 69,9%). Hol dir Value mit kleinen Bets und behandle einen großen Raise als A♠, bis das Gegenteil bewiesen ist.
-- **Das A♠ befördert eine Hand zum Bluff-Kandidaten.** Ein Bluff, bei dem du weißt, dass dein Gegner den Nut Flush nicht halten kann, ist eine andere Bet als einer ins Blaue.
+- **Das A♠ befördert eine Hand zum Bluff-Kandidaten.** Ein Bluff, bei dem du weißt, dass dein Gegner den Nut Flush nicht halten kann, ist etwas anderes als ein Bluff ins Blaue.
 - **Gegen einen Gegner, der nie ein Paar foldet, hör auf, Fallen zu stellen.** Die 69,9% Check setzen voraus, dass der andere Spieler bettet, wenn du zu ihm checkst; callt er nur, bette deine Flushes und nimm das Geld.
 
 :::readnext[Weiterlesen]
@@ -201,7 +200,7 @@ Die Lücke von 18,4 Prozentpunkten ist die zweitkleinste **der sieben Single Rai
 
 Bei diesem Spot ist die Detailtabelle unten die ganze Lektion – **scroll sie bis zum Ende.** Du siehst, warum sich A♠J♠ und A♠4♠ um 30 Prozentpunkte in der Check-Frequenz unterscheiden und wie dieselbe Dame zu zwei verschiedenen Händen wird, je nachdem, ob ein Pik dabei ist.
 
-Öffne danach den **GTO-Trainer** in der Seitenleiste und lass dir auf diesem Board einen Flush austeilen: Eine Aktion zu wählen und die EV-Kosten zu sehen, überzeugt schneller als jede Tabelle. Kostenlos, nichts zu installieren, kein Konto.
+Öffne danach den **GTO-Trainer** in der Seitenleiste und lass dir auf diesem Board einen Flush austeilen: Eine Aktion zu wählen und die EV-Kosten zu sehen, überzeugt schneller als jede Tabelle. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 ## FAQ
 
@@ -211,7 +210,7 @@ A. Ein Flop, auf dem alle drei Karten dieselbe Farbe haben, etwa Q♠ 9♠ 2♠.
 
 **Q. Solltest du einen fertigen Flush auf einem monotonen Board immer betten?**
 
-A. Nein. In dieser Berechnung checken die acht Nut-Flush-Combos zwischen 52,7% und 84,2%, im Schnitt 69,9%, und Flushes unterhalb der Nuts checken 81,4%. Eine große Bet bringt die meisten Paare und High Cards zum Folden – und eine Hand mit einem Pik, die doch mitgeht, kann nie einen höheren Flush machen und braucht Runner-Runner-Hilfe wie ein Full House, um zu gewinnen –, deshalb gewinnt es insgesamt mehr, zu checken, eine Bet zu provozieren und über Turn und River einzusammeln.
+A. Nein. In dieser Berechnung checken die acht Nut-Flush-Combos zwischen 52,7% und 84,2%, im Schnitt 69,9%, und Flushes unterhalb der Nuts checken 81,4%. Eine große Bet bringt die meisten Paare und High Cards zum Folden – und eine Hand mit einem Pik, die doch mitgeht, kann nie einen höheren Flush machen und braucht Runner-Runner-Hilfe wie ein Full House, um zu gewinnen –, deshalb bringt es insgesamt mehr, zu checken, eine Bet zu provozieren und über Turn und River einzusammeln.
 
 **Q. Warum hat der Big Blind mehr Flushes als der Button?**
 

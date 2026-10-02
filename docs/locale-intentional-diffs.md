@@ -33,6 +33,10 @@
 
 ## 판정 로그
 
+2026-10-02 DE GTO 신규 등록: **DE 미발행에 따른 GTO 역링크 면제를 해소**했다(2026-08-19·08-26·08-27·09-08 행의 de 부분 · 시리즈 미발행인 다른 로케일의 판정은 그대로). DE index에 13편을 등록하고 `/de/solver` 랜딩 13링크를 걸었으며, holdem-continuation-bet의 ① A-high(98,2%)·⑨ 3bet sizing(98,4%) 두 문단, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 de 문맥으로 재저작해 열었다(링크 수 EN = de: 14·18·12 실측). 과거 부재 기록은 이력으로 유지한다.
+
+2026-10-02 ✅ **DE GTO 13편 본문 이미지 = EN + 1(스팟 장면)** — de 전용 시범(사장님 10-02 승인 «1번으로 하자»). 각 편 첫 조건표 바로 위에 `gto-<key>-scene-de.webp` 1장(좌석·플랍·팟·스택·선행동자, 결과 수치 없음). 구조 게이트는 장면을 img 비교에서 빼고 별도 축(scene = 정확히 1장 · `SCENE_LOCALES = ['de']`)으로 센다. EN·다른 로케일로의 전파는 반응을 본 뒤 판단 — 그 전까지 다른 로케일에 장면이 없는 것은 드리프트가 아니다. 근거 `docs/de-gto-series-translation-brief.md` §7 · `docs/de-gto-source-contract.md` §8.
+
 2026-09-15 HI GTO 신규 등록: HI index에 해설13편과 랜딩13링크를 등록하고 기존 입문3편에 역링크4개를 연결했다. 별도 HI c-bet·equity·implied-odds·position-play·pot-odds·3bet 전문 글이 없어 EN 본문의 해당 링크26자리는 **현재 HI solver 또는 실제 입문 글**로 연결하고, 앵커도 그 목적지에서 제공하는 범위로 한정한다. source slug+기존 target별 예외이며 설명·링크 수·중복 횟수를 줄이는 면제가 아니다. readnext는 실제 블로그2장을 유지한다. 입력 계약은 `docs/hi-gto-source-contract.md`, 최종 검수·공개 상태는 `docs/hi-gto-publication-review-2026-09-15.md`를 따른다.
 
 2026-09-15 MS GTO 신규 등록: MS index에 해설13편을 등록하고 랜딩13링크와 기존 입문3편의 역링크4개를 연결했다. MS에는 별도의 c-bet·equity·implied-odds·position-play·pot-odds·3bet 전문 글이 없으므로, EN 본문의 해당 링크26자리는 **현재 MS solver 또는 실제 입문 글**로 연결하고 앵커의 약속도 목적지 범위로 한정한다. 본문 설명을 지우는 면제가 아니며, source slug+기존 target별로만 허용한다. readnext는 별도 실제 블로그2장을 유지한다. 등록·링크 대조 근거와 공개 발행 상태는 `docs/ms-gto-source-contract.md` 및 `docs/ms-gto-publication-review-2026-09-15.md`에 둔다.

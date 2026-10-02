@@ -18,7 +18,7 @@ export const POST: Post = {
   title: "K-T-6: C-Bet im Blind vs. Blind",
   seoTitle: "Blind vs. Blind auf K-T-6: Der Small Blind bettet 67,4%",
   desc: "Blind vs. Blind auf K-T-6 handelt der Small Blind ohne Position zuerst – und bettet 67,4%. So zieht ein Range-Vorteil die Equity-Realisierung über 100%.",
-  tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds wird auf dem Flop K♥T♦6♠ in 67,4% der Fälle gebettet und in 32,6% gecheckt. In den sieben Single Raised Pots weiter vorne in dieser Serie bettete der Spieler out of position nur 0,1% bis 23,7% – und geändert haben sich zwei Dinge, nicht eines. Hier ist der Spieler out of position der Raiser statt der Caller, und das Board begünstigt seine Range. Zusammen heben sie die Equity-Realisierung out of position auf 103,1%.",
+  tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds bettet der Small Blind auf dem Flop K♥T♦6♠ in 67,4% der Fälle und checkt in 32,6%. In den sieben Single Raised Pots weiter vorne in dieser Serie bettete der Spieler out of position nur 0,1% bis 23,7% – und geändert haben sich zwei Dinge, nicht eines. Hier ist der Spieler out of position der Raiser statt der Caller, und das Board begünstigt seine Range. Zusammen heben sie die Equity-Realisierung out of position auf 103,1%.",
   category: "strategy",
   date: "2026-10-02",
   updated: "2026-10-02",
@@ -28,9 +28,9 @@ export const POST: Post = {
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-de.webp",
   imageAlt: "Ergebnis des GTO-Solvers von HoldemMaster für Blind vs. Blind auf dem Rainbow-Flop K♥T♦6♠: Die Range des Small Blinds, der größte Teil des Rasters ist orange für die Bet eingefärbt",
-  tags: ["k-t-6 flop", "blind vs blind poker", "c-bet blind vs blind", "small blind open raise", "gto", "poker"],
+  tags: ["k-t-6 flop", "blind vs blind poker", "c-bet blind vs blind", "sb vs bb flop", "gto", "poker"],
   content: `
-In den sieben Single Raised Pots weiter vorne in dieser Serie wiederholte sich immer wieder eine Regel: **Wer zuerst handelt, checkt.** Am häufigsten bettete der Spieler out of position (OOP), also ohne Position, auf dem [verbundenen 9-8-7-Board](/de/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-de.webp") – mit 23,7% –, und die anderen sechs kamen auf höchstens 11,2%. Die einzige Ausnahme war ein 3-Bet-Pot.
+In den sieben Single Raised Pots weiter vorne in dieser Serie wiederholte sich immer wieder eine Regel: **Wer zuerst handelt, checkt.** Am häufigsten bettete der Spieler out of position (OOP), also ohne Position, auf dem [verbundenen 9-8-7-Board](/de/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-de.webp") – mit 23,7% –, und die anderen sechs kamen auf höchstens 11,2%. Die einzigen Ausnahmen waren die 3-Bet-Pots.
 
 Das hier ist kein 3-Bet-Pot. Es ist eine ganz normale Hand: Der Small Blind (SB) eröffnet auf 3bb, der Big Blind (BB) callt. Und **der Spieler, der zuerst handelt, bettet 67,4%.**
 
@@ -63,7 +63,7 @@ Ergebnis | SB bettet **67,4%** – der erste Single Raised Pot, in dem der Spiel
 | SPR | **16,2** | 17,7 | 4,0 |
 | Bet Sizes | Etwa ein Drittel des Pots, **nur eine Size** | Etwa ein Drittel und drei Viertel (⑦ hatte nur eine) | Etwa ein Drittel und zwei Drittel |
 | Rake | Nicht berücksichtigt | Nicht berücksichtigt | Nicht berücksichtigt |
-| Geprüft | 08.08.2026 (Ergebnis des Lernspots) | 08.08.2026 | 08.08.2026 |
+| Geprüft | 08.08.2026 (Ergebnis des Lernspots) | ①–④ 19.08.2026 · ⑤–⑦ 20.08.2026 | ⑧⑨ 20.08.2026 · ⑩ 08.08.2026 |
 
 Die 6bb im Pot sind ==die 3 des SB plus die 3 des BB==. Beide Blinds sind schon in der Hand, also liegt kein toter Blind daneben. Der effektive Stack ist ==100 − 3 = 97bb==.
 
@@ -95,7 +95,7 @@ Neben den Rest der Serie gestellt, ist der Abstand offensichtlich.
 
 ## Warum setzt der Small Blind auf K-T-6 zuerst – ohne Position?
 
-**Weil das der Sitz ist, an dem der Preflop-Aggressor auch am Flop zuerst handelt.** ⚠ In dieser Serie kommt jede Mehrheits-Lead – ein Anspielen mit mehr als der Hälfte der Range – von diesem Sitz, aber der Sitz garantiert nichts, und auch ein Caller kann einen Teil der Zeit anspielen (23,7% bei ④). Dieselbe Struktur ergibt **9,6%** [bei ⑫](/de/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-de.webp") und **80,1%** [bei ⑬](/de/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-de.webp"). Der Sitz öffnet die Tür; das Board entscheidet, wie weit du hindurchgehst.
+**Weil das der Sitz ist, an dem der Preflop-Aggressor auch am Flop zuerst handelt.** ⚠ In dieser Serie kommt jede Bet-Frequenz über 50% von einem Sitz, an dem der Preflop-Aggressor zuerst handelt, aber der Sitz garantiert nichts, und auch ein Caller kann einen Teil der Zeit anspielen (23,7% bei ④). Dieselbe Struktur ergibt **9,6%** [bei ⑫](/de/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-de.webp") und **80,1%** [bei ⑬](/de/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-de.webp"). Der Sitz öffnet die Tür; das Board entscheidet, wie weit du hindurchgehst.
 
 In einer normalen Hand fallen diese beiden auseinander. Wenn der Button (BTN) eröffnet und der Big Blind callt, **ist der Aggressor der Button, aber zuerst handelt der Big Blind.** Daraus entsteht die Struktur „erst Check, dann Continuation Bet (C-Bet)“, und genau so sahen ① bis ⑦ alle aus.
 
@@ -174,7 +174,7 @@ Die Sets zeigen in dieselbe Richtung. Drei Pocket Pairs machen auf diesem Board 
 | EV (bb) | 3,42 | 2,58 |
 | **Equity-Realisierung (EQR)** | **103,1%** | 96,1% |
 
-Der Pot ist 6bb groß, also beträgt der Anteil des Small Blinds ==6 × 55,3% = 3,32bb==, während sein tatsächlicher EV bei 3,42bb liegt. Das ergibt ==3,42 ÷ 3,32 ≈ 103,1%==.
+Der Pot ist 6bb groß, also beträgt der Anteil des Small Blinds ==6 × 55,3% = 3,318bb==, während sein tatsächlicher EV bei 3,42bb liegt. Das ergibt ==3,42 ÷ 3,318 ≈ 103,1%==.
 
 Nimm sieben Spots aus der Serie und ordne sie nach EQR:
 
@@ -211,7 +211,7 @@ Die 96,1% des Big Blinds sind die andere Seite derselben Geschichte. **Position 
 
 Jede Zahl hier findest du wieder: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **K-High mit einer Zehn** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
 
-Schau zuerst auf die Spielerbeschriftung oben: **„OOP (SB (Open-Raiser))“**. Sobald du siehst, dass sie sich vom „OOP (BB (Caller))“ der früheren Spots unterscheidet, ist sofort klar, was dieser Artikel mit „die Rolle hat sich geändert“ meint. Kostenlos, nichts zu installieren, kein Konto.
+Schau zuerst auf die Spielerbeschriftung oben: **„OOP (SB (Open-Raiser))“**. Sobald du siehst, dass sie sich vom „OOP (BB (Caller))“ der früheren Spots unterscheidet, ist sofort klar, was dieser Artikel mit „die Rolle hat sich geändert“ meint. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 **Q. Sollte der Small Blind Blind vs. Blind immer c-betten?**
 

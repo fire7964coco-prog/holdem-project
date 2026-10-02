@@ -183,6 +183,24 @@ const GTO_SERIES_I18N: Record<string, { pillarLabel: string; nodes: ClusterNode[
       { slug: "ace-paired-board-strategy", label: "⑬ Board dengan dua Ace", group: "Blind vs Blind — SB vs BB (range luas)" },
     ],
   },
+  "de": {
+    pillarLabel: "GTO-Solver",
+    nodes: [
+      { slug: "a-high-board-cbet", label: "① Trockenes A-High-Board", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "k-high-board-cbet", label: "② Trockenes K-High-Board", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "broadway-board-strategy", label: "③ Verbundenes Broadway-Board, Two-Tone", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "donk-bet-strategy", label: "④ Verbundenes Middle-Board, Two-Tone", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "monotone-board-strategy", label: "⑤ Monotones Board (eine Farbe)", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "paired-board-strategy", label: "⑥ Gepaartes Board", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "low-board-check-raise", label: "⑦ Niedriges Rainbow-Board", group: "Single Raised Pot – BTN vs BB (Grundlagen)" },
+      { slug: "3bet-pot-cbet", label: "⑧ A-High-Board, Vorteil für den 3-Bettor", group: "3-Bet-Pot – BB 3-bettet, BTN callt (niedriger SPR)" },
+      { slug: "3bet-pot-bet-sizing", label: "⑨ Dynamisches Two-Tone-Board", group: "3-Bet-Pot – BB 3-bettet, BTN callt (niedriger SPR)" },
+      { slug: "3bet-pot-low-board", label: "⑩ Niedriges, trockenes Board", group: "3-Bet-Pot – BB 3-bettet, BTN callt (niedriger SPR)" },
+      { slug: "blind-battle-cbet", label: "⑪ K-High mit einer Zehn", group: "Blind vs Blind – SB vs BB (weite Ranges)" },
+      { slug: "blind-battle-connected-board", label: "⑫ Verbundenes Low-Board, Two-Tone", group: "Blind vs Blind – SB vs BB (weite Ranges)" },
+      { slug: "ace-paired-board-strategy", label: "⑬ Board mit gepaartem Ass", group: "Blind vs Blind – SB vs BB (weite Ranges)" },
+    ],
+  },
 };
 
 /** 그 로케일의 GTO 솔버 필라. 시리즈 번역본이 없는 로케일(de·fr 등)은 null — 러닝맵에 404 링크를 만들지 않는다. */

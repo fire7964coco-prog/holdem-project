@@ -194,6 +194,26 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | **O-4 PDF 3문구**(`poker-starting-hands-chart.pdf` · 원본 `scripts/starting-hands-chart-print.html`) | ✅ 본문 표 문안으로 맞춤 · 재생성 · 1쪽 육안 확인 | 1 |
 | **O-5** | ✅ 10-01 판정·배포(MB-132) — 채택 ①②③(limping 괄호만 기각 · 이미 «by default»)④⑤ · 판정표 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8-2 | 5 |
 
+### 2-P. de GTO 13편 마감 렌즈가 올린 것 (2026-10-02 · 전부 ①EN 원문 유래 · **de에서만 고쳤다** · 자동 착수 금지)
+
+> de 마감 렌즈 4종(수치 ①~⑦ · 수치 ⑧~⑬ · 네이티브 · SEO+플레이어)이 EN 마스터에서 온 문장을 찾았다. de는 그 자리에서 고쳤다(경위 WORKLOG 10-02 (14)). **EN과 이미 발행된 로케일 9개(ja·es·pt·zh·zh-hant·id·hi·ms·ko 해당분)는 그대로다** — 고치려면 EN 먼저 → 로케일 전파 회차(사장님 지시 시). de 문안이 수정 견본이다(`lib/posts-de/<slug>.ts`).
+
+| # | 글 | EN 자리 | 문제 | de 처리 |
+|---|---|---|---|---|
+| P-1 | ① a-high · ③ broadway | «the button c-bets this board at a high frequency» | BTN c-bet 빈도는 이 솔브에 없다(같은 글 note가 부정) · Q-J-T는 방향도 의심 | «(diese Frequenz liefert diese Berechnung nicht)» 한정 |
+| P-2 | ① · ② | «The check-raises come mostly from 77, 22, A7, A2» / «88, 33 and the two pairs» | 체크레이즈 노드 미계산인데 단정 | «bieten sich … an – … liefert diese Berechnung nicht» |
+| P-3 | ②③⑥⑦⑧ | 트레이너 «grades … in big blinds lost» | 앱은 값만 bb, 등급은 팟 대비(`app/de/solver/faq.ts`) | «zeigt dir, wie viele Big Blinds … kostet» |
+| P-4 | ⑤ monotone | ranges 캡션 «flush draws … favor the button» | 차트에 Draws 패널 없음 | «Overpairs und A-High beim Button» |
+| P-5 | ⑥ paired | «Every other single-raised flop … produced sets» · «Every figure below comes from … solver» | BvB도 SRP · 17,2% 등은 조합 산수 | «ungepaarter Flop» · «Jede Solver-Zahl …; 17,2% … Kombinatorik» |
+| P-6 | ⑥ | Kurze Antwort «defend much wider than feels right … stop folding A-high and the better K-high» | 본문은 MDF 위/아래 판정 불가 · «also musst du mehr verteidigen» 금지라 함 | «nicht automatisch folden – … zeigt dieser Lernspot nicht» |
+| P-7 | ⑦ low-board | ranges 캡션 «what the check-raise is actually made of» · tldr «almost all of it draws» · «Below two pair, every hand in the raise holds a straight draw» · FAQ «raise is built on draws from top to bottom» · FAQ «Give the solver two sizes … reason does not» | 전체 레인지 차트 · <1/4 made · 상위 7행 한정 · 두 사이즈 미계산 | 각각 한정 |
+| P-8 | ⑧ 3bet-cbet | «overpairs and ace-high with nothing between» · «owns the top outright – all six set combos» · MDF note «assumption breaks» | ⑩ A5s 3콤보 · BTN 22 셋 3콤보 · 본문은 «weak ground» | «fast nichts» · «beide oberen Sets, AA und KK» · «gerät ins Wanken» |
+| P-9 | ⑨ 3bet-sizing | «nine-high flush draws» | de 직역이 «Neun als höchster Karte»가 되어 틀렸다(Q♥ 보드) — EN 관용은 그대로 둬도 됨 | 핸드 표기 K♥J♥ · 9♥8♥ |
+| P-10 | ⑩ 3bet-low | ranges 캡션 «overpairs nearly double» · FAQ «whole range … 97.8%» | 2,6배(%)·1,5배(콤보) · 체크 2,0% | «36 gegen 24 Combos» · «97,8% der Range» |
+| P-11 | ⑪ bvb-cbet | «3.42 ÷ 3.32 ≈ 103.1%» · 조건표 Checked ①–⑦·⑧–⑩ = 2026-08-08 | 식대로면 103,0 · 각 글 실제 19.08/20.08/08.08 | «3,318bb» · 칸별 실제 날짜 |
+| P-12 | ⑫ bvb-connected | FAQ «three times as many overpairs» vs 본문 «three and a half» | 42/12 = 3,5 | «dreieinhalbmal (42 gegen 12 Combos)» |
+| P-13 | ⑬ ace-paired | tldr·바로 답 «what split them was not that the board paired but whose card paired» | 자리·레인지도 바뀐 비교(본문 ⚠ 단서와 어긋남) | «weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt – neben dem Board haben sich auch Sitz und Ranges geändert» |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

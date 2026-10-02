@@ -1,3 +1,13 @@
+## 2026-10-02 (14) — de GTO 예제 13편 ⑤ 마감 · 발행
+
+- 사장님 «핸드오프 최상단 de GTO 마감 진행해». Opus 5.5 본체 + 서브 렌즈 5(수치 ①~⑦ · 수치 ⑧~⑬ · 독일어 네이티브 · SEO+플레이어 · 2차 교열=diff). 우편함 검수장→본체 미처리 0.
+- 등록: `lib/posts-de/index.ts` 13편 · `scripts/check-de-style.mjs` GTO 클러스터 · `lib/gto-series-i18n.ts` de 노드(라벨 = de 랜딩 SPOT_GROUPS 축어) + `lib/pillar-clusters.ts` `solverOf("de")` · `app/de/solver/solver-client.tsx` 13항목 slug · `lib/image-dims.ts` 재생성(de 39장 누락이었다 — 안 하면 build:vercel 실패).
+- 필라 역링크 4자리(원문 계약 §7-A): continuation-bet ①(98,2%)·⑨(98,4%) 문단 de 재저작 · position-play ⑦ · 3bet ⑧ → 링크 수 EN = de(14·18·12). `locale-intentional-diffs` 2행(de 면제 해소 · 장면 이미지 EN+1).
+- 렌즈 판정·반영(번역 오류로 생긴 수치·카드·자리 결함은 ⑨ 1건뿐): ⑨ «Neun als höchster Karte»(Q♥ 보드라 Q-high) → 핸드 표기. EN 유래 13묶음 de에서 한정·정정 → `en-first-queue` §2-P. 네이티브 ~25자리(hinter sich checkt · mehr der stärksten Hände · häufigste Klasse · offsuited · brechen 자동사 · FAQ 비문 2 · ⑪⑫⑬ tldr 주어 · Mehrheits-Lead 폐기 등) · 정형 통일(트레이너 문장 · «Prüf es selbst nach» · 범위 양끝 % · «ohne Konto nutzbar» 12편). 태그 카니발 정리 7(⑬ trips 2·bluff frequenz · ⑤ 중복 · ⑨ overbet · ⑩ 3-bet-pot · ⑪ small blind open raise · ① range vorteil).
+- 2차 교열(diff 렌즈) 반영: 편집 유래 ⑬ tldr·바로 답 논지 모순(«wessen Range das Paar trifft» → «welche Karte sich gepaart hat und zu wessen Range sie passt») · ③ «aus der Ergebnis» 격 · ⑨ 플러시드로 한정 복원 · 필라 «Gang» → «Faustregel» · ⑦ FAQ 자기모순 · ⑥ 바로 답 첫 문장(본문 «also musst du mehr verteidigen» 금지와 충돌) · ⑩ «fast die ganze Range» 잔여 · 문체 4. 재게이트 전부 동일·build 재통과.
+- 기각·보류: ⑪ C6 362,1(앱 축어 유지) · ⑨ C1 32콤보(산술 맞음) · Geprüft 행 형식 통일(출처 표기 차이라 보류) · seoTitle ④ «23,7% setzt»(desc가 해소 · 낮음) · ⑩~⑬ FAQ H2 없음(EN 구조 · 원문 계약) · 저확신 문체 제안 다수.
+- 게이트: check-gto-numbers de 일치 88 + 🔴3(ko «A~B%» 앞 숫자 미검사 · 기존) · structure 13/13 · check-de-style GTO 13/13 0 · audit:hard --locale=de 🔴0 · check:images 이상 없음 · image-reuse 🔴0 · check:gto:selftest 40/40 · build ✅(intl 628).
+
 ## 2026-10-02 (13) — de GTO 예제 13편 ④ 배치 C ⑨~⑬ 저작 (배포 없음)
 
 - 사장님 «핸드오프 최상단 de GTO 배치 C 진행해». 17:47 착수 · Opus 5.5 본체(헤드) + Opus 서브 5레인 병렬(편당 1레인 · 새 파일 1개만 · 공통 지시서 scratchpad). 우편함 검수장→본체 미처리 0.

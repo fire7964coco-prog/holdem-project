@@ -601,6 +601,8 @@ export const DE_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad Beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-10-02 de 발행. 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("de"),
 ];
 
 export const ZH_CLUSTERS: PillarCluster[] = [

@@ -106,7 +106,7 @@ Die Zählung der Hände passt exakt zum Solver. Der Big Blind hat 88 und 33 mit 
 | A-High | 27,0% | **30,0%** |
 | Keine Made Hand | **35,4%** | 28,3% |
 
-Lies die Tabelle von oben nach unten. **Jede Kategorie an der Spitze der Range – Sets, Overpairs, Top Pair – gehört dem Button, und die schwächste, keine Made Hand, wiegt beim Big Blind 7,1 Prozentpunkte mehr.** Vorne liegt der Big Blind bei Zwei Paaren, Second Pair und Weak Pair. **Zwei Paare sind auf diesem Board die zweitbeste Kategorie**, noch vor einem Overpair, und der Big Blind hat doppelt so viel davon – aber 0,8% von 474 Combos sind **vier Hände.** Sie tragen die Range nicht, weil es davon so gut wie nichts gibt, nicht weil sie schwach wären. Die anderen beiden sind tatsächlich nur Mittelmaß. Mit einer so geformten Range zuerst zu betten heißt: Deine schwache Hälfte bezahlt ihre starke Hälfte aus.
+Lies die Tabelle von oben nach unten. **Jede Kategorie an der Spitze der Range – Sets, Overpairs, Top Pair – gehört dem Button, und die schwächste, keine Made Hand, wiegt beim Big Blind 7,1 Prozentpunkte mehr.** Vorne liegt der Big Blind bei Zwei Paaren, Second Pair und Weak Pair. **Zwei Paare sind auf diesem Board die zweitbeste Kategorie**, noch vor einem Overpair, und der Big Blind hat doppelt so viel davon – aber 0,8% von 474 Combos sind **vier Hände.** Sie tragen die Range nicht, weil es davon so gut wie nichts gibt, nicht weil sie schwach wären. Die anderen beiden sind tatsächlich nur Mittelmaß. Mit einer so geformten Range zuerst zu betten heißt: Deine schwache Hälfte bezahlt die starke Hälfte des Gegners aus.
 
 ## Warum ist fast ein Drittel beider Ranges A-High?
 
@@ -154,7 +154,7 @@ Der gängige Rat lautet, dass A-High-Hände mit Showdown Value zurückchecken so
 ## Was ändert sich am Tisch?
 
 - **Hast du heads-up einen Raise gecallt und kommt ein trockener K-High-Flop, ist Anspielen keine Option.** Auch nicht mit einem König. Die Range-Check-Logik vom A-High-Flop gilt hier stärker, nicht schwächer. Die Bedingung ist aber die **Form deiner Range**, nicht die Form des Boards – wo die Spitze deiner Range dicker ist als die des Gegners, spielt der Big Blind sehr wohl an. Das Gegenbeispiel ist der [9-8-7-Flop](/de/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-de.webp"), auf dem der Big Blind in **23,7%** der Fälle anspielt.
-- **Checken ist nicht Check-Fold.** Gegen die kleine C-Bet geht der Big Blind weit mit – jeder König, die Achten, die Underpairs, A-High mit Backdoor. Top Pair ist ein Call, und die Check-Raises kommen vor allem von 88, 33 und den Zwei Paaren.
+- **Checken ist nicht Check-Fold.** Gegen die kleine C-Bet geht der Big Blind weit mit – jeder König, die Achten, die Underpairs, A-High mit Backdoor. Top Pair ist ein Call; für Check-Raises bieten sich vor allem 88, 33 und die Zwei Paare an (die Reaktion auf die C-Bet liefert diese Berechnung nicht).
 - **Gib AQ und AJ am Button keine feste Behandlung.** Klein betten und zurückchecken sind beide vertretbar; passe den Mix daran an, ob dieser Gegner Overcards tatsächlich foldet.
 - **Lies den Check nicht als Schwäche – gegen einen ausgeglichenen Gegner.** Diese Check-Range enthält immer noch die Sets (88, 33) und 12,7% Top Pair. Bei niedrigen Limits ist oft das Gegenteil wahr, weil viele Spieler ihre starken Hände einfach anspielen – also bette weiter auf Value und betrachte den Check-Raise als gelegentliche Kosten.
 
@@ -167,7 +167,7 @@ Der gängige Rat lautet, dass A-High-Hände mit Showdown Value zurückchecken so
 
 Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Trockenes K-High-Board** → **⚡ Ergebnisse ansehen** – dieser Bildschirm erscheint ohne Wartezeit. Stell danach die Auswahl **Spieler:** auf **IP (BTN (Open-Raiser))** – die Tabelle zur Range-Zusammensetzung oben ist direkt aus diesem Panel abgelesen, und der Vergleich beider Seiten ist der schnellste Weg zu sehen, warum eine von ihnen nicht betten kann.
 
-Wenn du den Spot trainieren statt nur lesen willst, öffne den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus, du wählst eine Aktion, und er benotet die Entscheidung in verlorenen Big Blinds. Kostenlos, nichts zu installieren, kein Konto.
+Wenn du den Spot trainieren statt nur lesen willst, öffne den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus, du wählst eine Aktion, und er zeigt dir, wie viele Big Blinds dich diese Entscheidung kostet. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 ## FAQ
 

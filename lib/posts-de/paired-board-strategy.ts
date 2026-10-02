@@ -30,9 +30,9 @@ export const POST: Post = {
   content: `
 Der Flop kommt **6♣ 6♦ 3♥** – niedrige Karten, und darunter ein Paar. Es sieht aus wie ein Board, das niemand getroffen hat.
 
-Hältst du dort TT, liegt deine Equity bei **76,0%**. Dasselbe TT hat preflop gegen AK rund 54–57%, dieser Flop ist für TT also *besser* als der übliche Coinflip. Hältst du A9, hast du nichts – aber vier Fünftel der Range deines Gegners haben auch nichts außer dem Paar des Boards, und wer sofort foldet, wirft den Pot weg.
+Hältst du dort TT, liegt deine Equity bei **76,0%**. Dasselbe TT hat preflop gegen AK rund 54%–57%, dieser Flop ist für TT also *besser* als der übliche Coinflip. Hältst du A9, hast du nichts – aber vier Fünftel der Range deines Gegners haben auch nichts außer dem Paar des Boards, und wer sofort foldet, wirft den Pot weg.
 
-**Ein Board, das niemand getroffen hat, ist in Wahrheit ein Duell darum, wessen hohe Karten besser sind.** Auf dem [A-High-Flop](/de/blog/a-high-board-cbet) und dem [K-High-Flop](/de/blog/k-high-board-cbet) ging es darum, wer getroffen hat; hier kämpfen zwei Ranges gegeneinander, die größtenteils nicht getroffen haben. Jede Zahl unten stammt aus dem [kostenlosen GTO-Solver](/de/solver) von HoldemMaster.
+**Ein Board, das niemand getroffen hat, ist in Wahrheit ein Duell darum, wessen hohe Karten besser sind.** Auf dem [A-High-Flop](/de/blog/a-high-board-cbet) und dem [K-High-Flop](/de/blog/k-high-board-cbet) ging es darum, wer getroffen hat; hier kämpfen zwei Ranges gegeneinander, die größtenteils nicht getroffen haben. Jede Solver-Zahl unten stammt aus dem [kostenlosen GTO-Solver](/de/solver) von HoldemMaster; Wahrscheinlichkeiten wie die 17,2% für einen gepaarten Flop sind reine Kombinatorik.
 
 
 :::stripe
@@ -43,7 +43,7 @@ Ergebnis | BB checkt 97,0% – obwohl er mehr Trips hält
 :::
 
 > **Kurze Antwort**
-> Checke fast alles – und verteidige deutlich weiter, als es sich richtig anfühlt. Eine Sechs auf der Hand ist kein Grund anzuspielen: Ein Lead bringt nur Hände zum Folden, die du ohnehin schlägst, also bleiben die Sechsen in der Checking-Range, und der Big Blind checkt hier **97,0%**. Wirklich an Wert gewinnen auf diesem Flop die Pocket Pairs über einer Sechs, und aufhören zu folden solltest du mit A-High und den besseren K-High-Händen.
+> Checke fast alles – und folde nicht vorschnell, nur weil du das Board verfehlt hast. Eine Sechs auf der Hand ist kein Grund anzuspielen: Ein Lead bringt nur Hände zum Folden, die du ohnehin schlägst, also bleiben die Sechsen in der Checking-Range, und der Big Blind checkt hier **97,0%**. Wirklich an Wert gewinnen auf diesem Flop die Pocket Pairs über einer Sechs, und A-High solltest du gegen eine einzelne kleine Bet nicht automatisch folden – wie weit die optimale Verteidigung genau reicht, zeigt dieser Lernspot nicht.
 
 ## Unter welchen Bedingungen entstanden diese Zahlen?
 
@@ -65,7 +65,7 @@ Der Button (BTN) eröffnet auf 2,5bb, der Big Blind (BB) callt, alle anderen fol
 
 **Ein Set ist ein Pocket Pair, das zu einer Boardkarte passt; Trips sind eine Karte auf deiner Hand, die zu einem Paar auf dem Board passt.** Beides ist derselbe Rang – ein Drilling (Three of a Kind), in der [Reihenfolge der Pokerhände](/de/blog/holdem-hand-rankings) unter einem Eintrag geführt –, aber die beiden spielen sich völlig unterschiedlich.
 
-Jeder andere Single-Raised-Flop dieser Serie hat Sets hervorgebracht (das einzige andere gepaarte Board, A♠A♥6♦, kommt später in der Blind-vs.-Blind-Gruppe): Auf A-7-2 brauchte der Big Blind 77 oder 22 auf der Hand. Hier bringt das Board sein eigenes Paar mit, also **macht jede einzelne Sechs Trips**, und nur 66 als Pocket Pair macht einen Vierling.
+Auf jedem ungepaarten Flop dieser Serie ist ein Drilling ein Set (das einzige andere gepaarte Board, A♠A♥6♦, kommt später in der Blind-vs.-Blind-Gruppe): Auf A-7-2 brauchte der Big Blind 77 oder 22 auf der Hand. Hier bringt das Board sein eigenes Paar mit, also **macht jede einzelne Sechs Trips**, und nur 66 als Pocket Pair macht einen Vierling.
 
 | Deine Hand auf 6♣6♦3♥ | Was du hast |
 |---|---|
@@ -156,7 +156,7 @@ Die Lücke von **30,8 Prozentpunkten** entspricht fast genau den 29,1 Punkten de
 
 **TT mit 76,0% ist die Spitze der Big-Blind-Range**, sobald du die Sechsen, 33 und 66 beiseitelässt – denn JJ und besser werden preflop ge-3-bettet und sehen diesen Flop nie.
 
-**Aber nach unten bricht es ein.** 44 realisiert genau seinen Equity-Anteil – EQR 100,5% – und macht trotzdem 3,42bb gegenüber dem Range-Durchschnitt von 2,17bb, ist also keine Grenzhand. 22 ist die Hand, die bricht: 50,4% Equity, EQR 66,0%, 1,83bb.
+**Aber nach unten bricht es ein.** 44 realisiert genau seinen Equity-Anteil – EQR 100,5% – und macht trotzdem 3,42bb gegenüber dem Range-Durchschnitt von 2,17bb, ist also keine Grenzhand. 22 ist die Hand, bei der es kippt: 50,4% Equity, EQR 66,0%, 1,83bb.
 
 **Die Trennlinie ist die Drei, nicht die Sechs.** 55 und 44 liegen beide unter der Sechs und realisieren trotzdem ihren vollen Anteil. Eine Zwei liegt unter *beiden* Rängen des Boards, also verliert 22 gegen 33, gegen jede Hand mit einer Drei, und eine zweite Drei am Turn oder River entwertet es (Counterfeit), sodass du nur noch das Board spielst – auf 6-6-3-3-K ist 22 bloß das Zwei-Paar des Boards (nur eine Zwei auf der anderen Street rettet es). Die Regel, die wirklich hält, lautet nicht „kleine Paare sind auf niedrigen Boards in Ordnung“, sondern **„jedes Paar über der Drei ist in Ordnung – nur die Zweien brechen ein.“**
 
@@ -213,7 +213,7 @@ Wofür diese Rechnung also taugt, ist nicht „triff die 75%“, sondern **„fo
 
 ## Was ändert sich am Tisch?
 
-- **Unterschätze mittlere Pocket Pairs auf niedrigen gepaarten Boards nicht.** 77 bis TT haben hier 68–76% Equity, die Spitze der Calling-Range. Aber der Boden ist real: 44 und 55 schlagen immer noch den Range-Durchschnitt, während 22 nur zwei Drittel dessen behält, was seine Equity wert ist, weil es unter beiden Rängen des Boards liegt.
+- **Unterschätze mittlere Pocket Pairs auf niedrigen gepaarten Boards nicht.** 77 bis TT haben hier 68%–76% Equity, die Spitze der Calling-Range. Aber der Boden ist real: 44 und 55 schlagen immer noch den Range-Durchschnitt, während 22 nur zwei Drittel dessen behält, was seine Equity wert ist, weil es unter beiden Rängen des Boards liegt.
 - **Gefloppte Trips sind kein Grund anzuspielen.** Die Sechsen spielen in 6,8% der Fälle an – öfter als jede Hand mit Zwei Paaren oder nur einer hohen Karte, nur seltener als die 33-Full-Houses (8,8%) und die einzige Vierling-Combo (9,6%) – und sie checken trotzdem in neun von zehn Fällen. Ein Lead bringt nur die Hände zum Folden, die du ohnehin schlägst; ein Check lässt diese Hände das Geld selbst in den Pot bringen und lässt dir einen Check-Raise oder einen Call-down offen. ⚠ Was diese Berechnung dir nicht sagen kann, ist, *wie viel* mehr die Check-Raise-Linie einbringt: Der Lernspot rechnet **nur die erste Aktion am Flop** vor, die C-Bet-Frequenz des Buttons und ein EV für den Check-Raise existieren darin schlicht nicht.
 - **Folde A-High nicht gegen eine einzige kleine Bet.** 79,7% der Range des Buttons haben ebenfalls nichts über das Paar des Boards hinaus – A-High 31,9%, K-High 15,1% und keine Made Hand 32,7%.
 - **Dein Kicker entscheidet die Hand.** Nur drei Combos schlagen Trips direkt – die drei Full Houses mit 33. (Ein Vierling fällt weg: Sobald du selbst eine Sechs hältst, kann es 6♠6♥ nicht geben, aus den vier Combos des Full-House-Abschnitts werden von deinem Platz aus also drei.) Und selbst das gilt nur, wenn dein Kicker ein Ass ist. Der zweite Kicker ist durch die 3 des Boards festgelegt, die eine Karte neben deiner Sechs ist also die ganze Hand: Mit 76s dominieren dich A6, K6, Q6 und 86 des Buttons allesamt. Trips mit schwachem Kicker sind ein Bluffcatcher, keine Hand, mit der du einen Pot aufbaust.
@@ -229,7 +229,7 @@ Wofür diese Rechnung also taugt, ist nicht „triff die 75%“, sondern **„fo
 
 Achte auf **die einzelne Zeile 6♠6♥** in der Detailtabelle – der einzige Vierling, den dieses Board zulässt, und mit **359,7%** die höchste Equity-Realisierung der ganzen Serie (an zweiter Stelle steht das 88 des Buttons im [3-Bet-Pot auf einem niedrigen Board](/de/blog/3bet-pot-low-board) mit **346,0%**; auf der Seite des Big Blinds folgt 6♥6♣ auf dem [niedrigen Rainbow-Flop](/de/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-de.webp") mit **318,9%**). Vergleiche sie mit den drei 33-Zeilen direkt darunter, und du siehst, wie wenige Combos die absolute Spitze eines gepaarten Boards tatsächlich enthält.
 
-Öffne danach den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und benotet deine Aktion in verlorenen Big Blinds. Kostenlos, nichts zu installieren, kein Konto.
+Öffne danach den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und zeigt dir, wie viele Big Blinds deine Aktion kostet. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 ## FAQ
 
@@ -251,7 +251,7 @@ A. Eine Schätzung, wie oft du weitermachen musst, damit ein reiner Bluff keinen
 
 **Q. Wie oft kommt ein gepaarter Flop?**
 
-A. In etwa **17,2%** der Fälle – ungefähr jeder sechste Flop. Die drei Flopkarten verfehlen sich nur, wenn die zweite Karte den Rang der ersten meidet und die dritte beide: ==(48 ÷ 51) × (44 ÷ 50) = 82,8%==, der Rest ist gepaart oder mehr. Ein gepaartes Board ist also keine Kuriosität, bei der du es dir leisten kannst, keinen Plan zu haben – du sitzt in jeder Session in einem. (Das *häufigere* Ereignis ist es allerdings nicht: Eine ungepaarte Hand verfehlt den Flop komplett in ==(44 ÷ 50) × (43 ÷ 49) × (42 ÷ 48) = 67,6%== der Fälle, paart sich also in **32,4%** – eher doppelt so oft, wie sich das Board paart.)
+A. In etwa **17,2%** der Fälle – ungefähr jeder sechste Flop. Die drei Flopkarten verfehlen sich nur, wenn die zweite Karte den Rang der ersten meidet und die dritte beide: ==(48 ÷ 51) × (44 ÷ 50) = 82,8%==, der Rest ist gepaart oder mehr. Ein gepaartes Board ist also keine Kuriosität, bei der du es dir leisten kannst, keinen Plan zu haben – du sitzt in jeder Session in einem. (Das *häufigere* Ereignis ist es allerdings nicht: Eine ungepaarte Hand verfehlt den Flop komplett in ==(44 ÷ 50) × (43 ÷ 49) × (42 ÷ 48) = 67,6%== der Fälle, paart sich also in **32,4%** – fast doppelt so oft, wie sich das Board paart.)
 
 **Q. Gelten diese Zahlen bei meinem Limit?**
 

@@ -15,7 +15,7 @@ export const POST: Post = {
   title: "7-6-5: Die C-Bet fällt auf 9,6%",
   seoTitle: "Blind vs. Blind auf 7-6-5: Warum die C-Bet auf 9,6% fällt",
   desc: "Nur drei Karten sind anders. Auf 7-6-5 bettet der Small Blind, der ein Board vorher 67,4% bettete, nur noch 9,6% – Board-Textur im Poker in Reinform.",
-  tldr: "Nach einem Open-Raise des Small Blinds und einem Call des Big Blinds wird auf dem Flop 7♦6♦5♣ nur in 9,6% der Fälle gesetzt und in 90,4% gecheckt. Pot, Stack, SPR, Bet Size und beide Ranges sind identisch mit dem vorherigen Spot – nur die drei Boardkarten haben sich geändert, und die Bet ist von 67,4% auf 9,6% eingebrochen. Der Range-Vorteil aus dem Preflop war ein Vorteil bei hohen Karten, und ein niedriges, verbundenes Board löscht ihn komplett aus. Die Equity kippt auf 49,6% gegen 50,4%, und die Realisierung out of position fällt auf 85,3%.",
+  tldr: "Nach einem Open-Raise des Small Blinds und einem Call des Big Blinds setzt der Small Blind auf dem Flop 7♦6♦5♣ nur in 9,6% der Fälle und checkt in 90,4%. Pot, Stack, SPR, Bet Size und beide Ranges sind identisch mit dem vorherigen Spot – nur die drei Boardkarten haben sich geändert, und die Bet ist von 67,4% auf 9,6% eingebrochen. Der Range-Vorteil aus dem Preflop war ein Vorteil bei hohen Karten, und ein niedriges, verbundenes Board löscht ihn komplett aus. Die Equity des Small Blinds kippt auf 49,6% gegen 50,4%, und seine Realisierung out of position fällt auf 85,3%.",
   category: "strategy",
   date: "2026-10-02",
   updated: "2026-10-02",
@@ -99,7 +99,7 @@ Ordnet man das in die Serie ein, sieht man, wo dieser Spot steht.
 | A♠A♥6♦ Blind vs. Blind (⑬) | SB – Open-Raiser | 80,1% |
 | A♦K♠2♥ · Q♥T♥7♠ · 8♦5♣2♠ (⑧⑨⑩) | BB – 3-Bettor | 98%–100% |
 
-**Die „Rolle“ allein erklärt diese Tabelle nicht.** Derselbe Open-Raiser taucht bei 67,4% und bei 9,6% auf. Wenn der vorherige Spot sagte „Ändere die Rolle, und der Standard ändert sich“, dann ist dieser hier der Nachsatz: **Das Board nimmt diesen Standard wieder zurück.**
+**Die „Rolle“ allein erklärt diese Tabelle nicht.** Derselbe Open-Raiser taucht bei 67,4% und bei 9,6% auf. Sagte der vorherige Spot „Wenn sich die Rolle ändert, ändert sich der Standard“, dann ist dieser hier der Nachsatz: **Das Board nimmt diesen Standard wieder zurück.**
 
 ## Warum werden aus 67,4% nur 9,6%, wenn sich nur der Flop ändert?
 
@@ -196,7 +196,7 @@ Ordnet man die EQR out of position von **sechs ausgewählten Spots** von niedrig
 
 Drei Arten von Zellen tragen einen sichtbar dickeren Streifen. (Die Frequenzen unten sind Combo-Durchschnitte der jeweiligen Handklasse, gezählt am 21.08.2026, indem die Live-Tabelle pro Hand bis ganz unten gelesen wurde.)
 
-- **8-8 – bettet 39,5%, die häufigste Klasse der Range.** Auf 7-6-5 ist ein Achterpaar **gleichzeitig ein Overpair und ein OESD** (8-7-6-5 wird mit einer Vier oder einer Neun fertig). Wert und Draw in einer Hand, also gibt es zwei Gründe zu betten. Gemessen liegt die Equity bei 73,4%–75,2% und die EQR bei 133%–138%.
+- **8-8 – bettet 39,5%, die Klasse mit der höchsten Bet-Frequenz.** Auf 7-6-5 ist ein Achterpaar **gleichzeitig ein Overpair und ein OESD** (8-7-6-5 wird mit einer Vier oder einer Neun fertig). Wert und Draw in einer Hand, also gibt es zwei Gründe zu betten. Gemessen liegt die Equity bei 73,4%–75,2% und die EQR bei 133%–138%.
 - **A-7 suited und K-7 suited** – Top Pair mit einer Sieben. Sie werden nicht wegen ihrer Stärke gewählt, sondern weil **dünner Value mit einem Ass- oder König-Blocker kommt** (ein A-High oder K-High weniger in der Range des Gegners). Top Pair liegt auf diesem Board sogar hinten, 39 Combos gegen 60.
 - **K-4 suited und Q-4 suited** – eine Vier in derselben Farbe. Nimm zu 7-6-5 eine Vier dazu, und du hältst ==4-5-6-7==, einen OESD, der mit einer Drei oder einer Acht fertig wird. Im Klassendurchschnitt sind das 30,9% für Q-4s und 27,1% für K-4s, aber **als einzelne Combos kommen Q♠4♠ und Q♥4♥ auf 54,7%, den höchsten Wert im ganzen Spot.**
 
@@ -209,7 +209,7 @@ Die 9,6% entstehen, indem ein wenig Value mit ein paar Draws gemischt wird. Das 
 - **Mach aus „Es ist Blind vs. Blind, also bette ich“ keine Regel.** Die 67,4% des vorherigen Spots und die 9,6% hier hat das Board getrennt, nicht der Platz. Selbst wenn du aus dem Small Blind eröffnet hast: Sobald der Flop niedrig und verbunden kommt – 5, 6, 7, 8 –, ist die Initiative in dieser Hand schon auf die andere Seite des Tisches gewandert.
 - **Nimm ein Overpair nicht als Grund, einen großen Pot aufzubauen.** Die 42 Overpair-Combos des Small Blinds sind dreieinhalbmal so viele wie beim Big Blind, aber auf einem Board, auf dem der Gegner 42 Combos hält, die sie schon schlagen, ist das keine Hand für zwei oder drei Barrels. Das ist kein Argument gegen eine einzelne kleine Bet – der Punkt ist, **es nicht als Hand zu behandeln, mit der du den Stack reinstellst**. ⚠ Es heißt auch nicht „folde, sobald ein Raise kommt“. Die Range des Gegners enthält 24,9% OESDs, 23,8% Gutshots und 3,7% Combo Draws, ein Raise am Flop kann also nicht nur Value sein, und ein Overpair gegen den Raise eines drawlastigen Gegners automatisch wegzuwerfen, ist selbst eine ausnutzbare Gewohnheit. **Den Stack nicht reinzustellen und zu folden, sind zwei verschiedene Dinge.** Und den Knoten Bet-dann-Raise gibt es in dieser Berechnung nicht, daraus kommt also keine Frequenz. Diese Serie landet immer wieder bei derselben Schlussfolgerung: [Ein verbundenes Board stutzt den Vorteil des Preflop-Aggressors](/de/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-de.webp").
 - **Halte A-High nicht für Stärke.** Ein Viertel der Range des Small Blinds ist A-High, und auf diesem Board kann das meiste davon nur ein Paar treffen (A4 und A8 bekommen einen OESD dazu, die A♦x♦-Hände einen Flushdraw). Wenn die Draws des Gegners ankommen, sind es meist Straßen – der Unterschied liegt nicht in der Chance, sich zu verbessern, sondern darin, **was die Verbesserung wert ist**. Die Equity von 49,6% ist das Ergebnis.
-- **Leg vorher fest, was du nach dem Check machst.** Wenn du 90,4% in einen Check geschickt hast, ist die nächste echte Frage, womit du gegen die Bet des Gegners callst und womit du [check-raist](/de/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-de.webp"). ⚠ **Diese Antwort steht nicht in dieser Berechnung** – der Lernspot rechnet nur die **erste Aktion am Flop**, die Knoten nach einem Check (die Bet-Frequenz des Big Blinds, der Check-Raise des Small Blinds) existieren also schlicht nicht. Willst du einen Spot, in dem ein Check-Raise tatsächlich berechnet wurde, ist das niedrige Rainbow-Board der einzige in der Serie mit neu berechneten Frequenzen – **allerdings ist der Platz ein anderer** (dort ist der Big Blind der Caller gegen einen Button).
+- **Leg vorher fest, was du nach dem Check machst.** Wenn du 90,4% in einen Check geschickt hast, ist die nächste echte Frage, womit du gegen die Bet des Gegners callst und womit du [check-raist](/de/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-de.webp"). ⚠ **Diese Antwort steht nicht in dieser Berechnung** – der Lernspot rechnet nur die **erste Aktion am Flop**, die Knoten nach einem Check (die Bet-Frequenz des Big Blinds, der Check-Raise des Small Blinds) existieren also schlicht nicht. Willst du einen Spot, in dem ein Check-Raise tatsächlich berechnet wurde, ist das niedrige Rainbow-Board das einzige in der Serie mit neu berechneten Frequenzen – **allerdings ist der Platz ein anderer** (dort ist der Big Blind der Caller gegen einen Button).
 
 :::readnext[Weiterlesen]
 /de/blog/blind-battle-cbet | K-T-6: C-Bet im Blind vs. Blind | /images/gto-sb-king-mid-oop-de.webp
@@ -220,7 +220,7 @@ Die 9,6% entstehen, indem ein wenig Value mit ein paar Draws gemischt wird. Das 
 
 Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Verbundenes Low-Board, Two-Tone** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
 
-**Klick zwischen diesem Spot und „K-High mit einer Zehn“ hin und her**, dem vorherigen Spot. Die Spielerauswahl zeigt bei beiden „OOP (SB (Open-Raiser))“, Pot und Stack sind identisch – und die Matrix wechselt komplett die Farbe. Kürzer zeigt nichts in dieser Serie, was ein Board tatsächlich bewirkt. Kostenlos, nichts zu installieren, kein Konto.
+**Klick zwischen diesem Spot und „K-High mit einer Zehn“ hin und her**, dem vorherigen Spot. Die Spielerauswahl zeigt bei beiden „OOP (SB (Open-Raiser))“, Pot und Stack sind identisch – und die Matrix wechselt komplett die Farbe. Kürzer zeigt nichts in dieser Serie, was ein Board tatsächlich bewirkt. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 **Q. Warum ändert dieselbe Range von Board zu Board ihren Wert?**
 
@@ -230,7 +230,7 @@ A. Weil sich eine Range auf bestimmte Karten konzentriert. Die Opening-Range des
 
 A. Meistens checkst du. Der Solver schickt auf 7♦6♦5♣ 90,4% in einen Check. Selbst die 9,6%, die betten, verteilen sich dünn auf **8-8, ein Overpair, das zugleich ein OESD ist** (39,5% im Klassendurchschnitt, der höchste Wert hier), auf Top Pair (A-7s, K-7s) und auf eine Vier in derselben Farbe, die einen OESD macht (K-4s, Q-4s). Aufgeben ist das aber nicht – bei den dünnen Value-Händen ist der Check ungefähr so viel wert wie die Bet (innerhalb von 0,03bb), und was nach dem Check passiert, Calls und Check-Raises eingeschlossen, ist nicht Teil dieser Berechnung.
 
-**Q. Der Small Blind hat dreimal so viele Overpairs. Warum bettet er nur 9,6%?**
+**Q. Der Small Blind hat dreieinhalbmal so viele Overpairs (42 gegen 12 Combos). Warum bettet er nur 9,6%?**
 
 A. Weil der Gegner auf diesem Board vieles hält, was ein Overpair schlägt: 42 Combos aus Sets, Zwei Paaren und Straßen, dazu 24,9% OESDs und 23,8% Gutshots. Selbst die 60 Combos Top Pair, die gerade hinten liegen, halten Karten, die das bis zum River umdrehen. Ein Overpair heißt hier „jetzt vorne, aber kaum mehr als einmal Geld reinzubringen“. ⚠ Such den Grund nicht in der SPR von 16,2 – ein Pot von 6bb, ein Stack von 97bb und eine SPR von 16,2 sind **dieselben Konstanten** auf den Boards [K-T-6](/de/blog/blind-battle-cbet) und [A-A-6](/de/blog/ace-paired-board-strategy), wo derselbe Small Blind 67,4% und 80,1% bettet. Was die 9,6% erzeugt hat, ist nicht der Stack, sondern drei Boardkarten.
 

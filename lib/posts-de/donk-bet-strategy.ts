@@ -37,7 +37,7 @@ Eine der ersten Regeln, die du im Poker lernst: **Check zum Raiser.** Wer preflo
 
 Die letzten drei Spots zeigten diese Regel in ihrer folgsamsten Form. Auf dem [A-High-Flop](/de/blog/a-high-board-cbet), dem [K-High-Flop](/de/blog/k-high-board-cbet) und dem [Broadway-Flop](/de/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-de.webp") lag der Anteil, mit dem der Big Blind selbst bettete, jedes Mal unter 2% – auf K-8-3 und Q-J-T bei 0,2% oder weniger, praktisch null.
 
-Auf **9♥ 8♥ 7♣** sind es **23,7%**. Hier bricht die Regel.
+Auf **9♥ 8♥ 7♣** sind es **23,7%**. Hier gilt die Regel nicht mehr.
 
 Eine Bet des Spielers, der preflop nur gecallt hat – hier der Big Blind (BB) gegen den Open-Raise des Buttons (BTN) –, heißt **Donk Bet**: von „Donkey“ (Esel), was schon verrät, wie man sie lange gesehen hat. Man nennt sie auch **Lead**. Poker-Solver nehmen sie auf bestimmten Boards in die Strategie auf, und dies ist das deutlichste Beispiel unter den Lernspots.
 
@@ -167,7 +167,7 @@ Damit das passiert, haben sich zwei Dinge geändert.
 
 **Zweitens: Die Stärke des Buttons sitzt an verwundbaren Stellen.** Die einzigen zwei Kategorien, in denen er vorn liegt, sind Overpairs (6,4%) und A-High (30,5%) – und eine davon ist gar keine Stärke. Der Großteil dieses A-High hat hier kein Paar – und wo es einen Draw hat, hat der Big Blind auch einen, sodass sich die Draws aufheben, statt eine Seite zu begünstigen. Die Overpairs sind aus dem Grund im nächsten Abschnitt zerbrechlich. Der Vorsprung des Big Blinds dagegen steckt in Händen, die **schon fertig** sind.
 
-Eine Donk Bet wird nicht allein durch die durchschnittliche Stärke richtig, sondern dann, wenn **du mehr der stärksten Hände hältst und dein Gegner nicht selbstbewusst betten kann.** Beide Bedingungen scheinen hier erfüllt: Der Big Blind hat mehr Straßen (24 Combos gegen 20, während die Nut-Straße J-T bei beiden 16 Combos hat), und mit 30,5% A-High in seiner Range würde sich der Button schwertun, breit zu feuern – eine Lesart aus der Range-Zusammensetzung, denn der eigene Bet-Knoten des Buttons ist in dieser Berechnung nicht enthalten. Genau diesen freien Raum besetzt die Donk Bet.
+Eine Donk Bet wird nicht allein durch die durchschnittliche Stärke richtig, sondern dann, wenn **du mehr von den stärksten Händen hältst und dein Gegner nicht selbstbewusst betten kann.** Beide Bedingungen scheinen hier erfüllt: Der Big Blind hat mehr Straßen (24 Combos gegen 20, während die Nut-Straße J-T bei beiden 16 Combos hat), und mit 30,5% A-High in seiner Range würde sich der Button schwertun, breit zu feuern – eine Lesart aus der Range-Zusammensetzung, denn der eigene Bet-Knoten des Buttons ist in dieser Berechnung nicht enthalten. Genau diesen freien Raum besetzt die Donk Bet.
 
 ## Warum sind die Overpairs des Buttons verwundbar?
 
@@ -202,11 +202,11 @@ Verpasste **offsuit** High Cards wie AKo und AQo sind Standard-Check-backs: Sie 
 
 ## Was ändert sich am Tisch?
 
-- **Donk Bets gibt es auf verbundenen Middle-Boards nach einem weiten Open aus später Position.** Das monotone Board im nächsten Spot hat ebenfalls rund 11%, während trockene A-High- und K-High-Flops praktisch bei null liegen. ⚠ Das einzige verbundene Middle-Board, das diese Serie tatsächlich berechnet, ist allerdings 9-8-7, und die Bedingung ist nicht die Textur allein, sondern **welche Range darauf mehr der stärksten Hände hält.** Der Beweis steckt in der Serie selbst: Der [6-5-2-Flop](/de/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-de.webp") ist derselbe Single Raised Pot Button gegen Big Blind, und dort spielt der Big Blind nur **3,2%** an, weil die einzige Hand, die eine Straße macht, 4-3 ist und keine der beiden Ranges sie hält. Niedrig und verbunden allein erzeugt keine Donk Bet.
+- **Donk Bets gibt es auf verbundenen Middle-Boards nach einem weiten Open aus später Position.** Das monotone Board im nächsten Spot hat ebenfalls rund 11%, während trockene A-High- und K-High-Flops praktisch bei null liegen. ⚠ Das einzige verbundene Middle-Board, das diese Serie tatsächlich berechnet, ist allerdings 9-8-7, und die Bedingung ist nicht die Textur allein, sondern **welche Range darauf mehr von den stärksten Händen hält.** Der Beweis steckt in der Serie selbst: Der [6-5-2-Flop](/de/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-de.webp") ist derselbe Single Raised Pot Button gegen Big Blind, und dort spielt der Big Blind nur **3,2%** an, weil die einzige Hand, die eine Straße macht, 4-3 ist und keine der beiden Ranges sie hält. Niedrig und verbunden allein erzeugt keine Donk Bet.
 - **Du checkst trotzdem drei Viertel der Zeit.** Wenn du anspielst: klein, und mit mehr als nur deinen besten Händen – eine Range, die nur mit Straßen anspielt, wird sofort gelesen, also gehören Top Pair und Draws in dieselbe Size. Behalte aber die Summe im Blick: **Die gesamte Donk Bet beträgt 23,7%, davon 16,8 in der kleinen Size.** Wird daraus „jeden Draw anspielen“, wird es die halbe Range und kehrt die Strategie um. Die anderen 76,2% checken.
-- **Am Button: Widersteh auf dieser Textur der C-Bet.** Mehr als die Hälfte deiner Range hat kein Paar, und die Overpairs wollen einen kontrollierten Pot statt eines großen.
+- **Am Button: Sei auf dieser Textur zurückhaltend mit der C-Bet.** Die Check-Range des Big Blinds enthält noch Straßen und Top Pair, und deine Overpairs wollen einen kontrollierten Pot statt eines großen.
 - **Gegen einen Gegner, der viel zu oft c-bettet, kann Checken mehr wert sein als Anspielen** – und dann mit den Straßen und Top Pairs check-**raisen**, statt nur zu check-callen. Ihn deine starken Hände für dich betten zu lassen, ist mehr wert, als die Initiative zu übernehmen, aber nur, wenn du ihn danach dafür zahlen lässt.
-- **Lies es auch andersherum.** Gegen einen Spieler, der auf wet Boards hinter sich checkt, ist Anspielen mehr wert, als die Zahl des Poker-Solvers nahelegt: Checken verschenkt dort schlicht die Street.
+- **Lies es auch andersherum.** Gegen einen Spieler, der auf nassen Boards gern zurückcheckt, ist Anspielen mehr wert, als die Zahl des Poker-Solvers nahelegt: Checken verschenkt dort schlicht die Street.
 
 :::readnext[Weiterlesen]
 /de/blog/broadway-board-strategy | Q-J-T: Draws allein reichen nicht | /images/gto-srp-broadway-oop-de.webp
@@ -219,7 +219,7 @@ Verpasste **offsuit** High Cards wie AKo und AQo sind Standard-Check-backs: Sie 
 
 Am besten studierst du diesen Spot **direkt neben einem trockenen Board.** Öffne zuerst „Trockenes K-High-Board“ und sieh dir ein Raster an, das in einem einzigen Grün liegt, dann komm hierher zurück und sieh zu, wie Orange und Pink darin auftauchen. Dieselben Spieler, dieselben Ranges – drei Karten haben die Strategie verändert.
 
-Öffne danach den **GTO-Trainer** in der Seitenleiste und lass dir genau die Donk Bet austeilen, über die du gerade gelesen hast – er gibt dir eine zufällige Hand aus den echten Range-Gewichten und sagt dir in Big Blinds, was die falsche Wahl gekostet hat. Kostenlos, nichts zu installieren, kein Konto.
+Öffne danach den **GTO-Trainer** in der Seitenleiste und lass dir genau die Donk Bet austeilen, über die du gerade gelesen hast – er gibt dir eine zufällige Hand aus den echten Range-Gewichten und sagt dir in Big Blinds, was die falsche Wahl gekostet hat. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 ## FAQ
 
@@ -237,7 +237,7 @@ A. Nein. Die Equity steht 48,5% zu 51,5% und die Equity-Realisierung 93,2% zu 10
 
 **Q. Wann solltest du im Poker checken statt anzuspielen?**
 
-A. Drei Viertel der Zeit, sogar auf diesem Flop – 76,2% der Range des Big Blinds checken. Checke, wenn deine Range nicht mehr der fertigen Hände hält, also auf jedem trockenen A-High- oder K-High-Board, und checke, wenn dein Gegner ohnehin zu oft bettet: Ihn feuern zu lassen ist mehr wert, als ihm die Initiative abzunehmen. Anspielen ist die Ausnahme, kein Upgrade.
+A. Drei Viertel der Zeit, sogar auf diesem Flop – 76,2% der Range des Big Blinds checken. Checke, wenn deine Range nicht mehr fertige Hände hält als die des Gegners, also auf jedem trockenen A-High- oder K-High-Board, und checke, wenn dein Gegner ohnehin zu oft bettet: Ihn feuern zu lassen ist mehr wert, als ihm die Initiative abzunehmen. Anspielen ist die Ausnahme, kein Upgrade.
 
 **Q. Was passiert, wenn ich anspiele und geraist werde?**
 

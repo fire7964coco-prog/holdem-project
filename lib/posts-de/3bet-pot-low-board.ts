@@ -9,7 +9,7 @@ import type { Post } from "../posts";
  * Grenzen: nur erste Flop-Entscheidung des BB · kein Knoten für die Reaktion des BTN oder einen Raise · ohne Rake.
  * 97,8% = Frequenz der großen Size (2/3 Pot), nicht die Summe aller Bets.
  * Mit dem Board gepaart: nur A5s (3 Combos) · die 36 Overpairs sind davon getrennt.
- * Bildunterschrift der Range-Grafik: «fast doppelt so viele Overpairs» folgt EN «nearly double» (nicht neu bewertet).
+ * Bildunterschrift der Range-Grafik: EN «nearly double» ersetzt: 43,4%/16,7% = 2,6× und 36/24 Combos = 1,5× – beides nicht «fast doppelt» (Lens 10-02).
  * Abweichung zu EN: ein Szenenbild (scene-de) vor der ersten Bedingungstabelle (de-Pilot).
  * date/updated vorläufig – der Abschluss-Lauf setzt das echte de-Veröffentlichungsdatum.
  */
@@ -28,7 +28,7 @@ export const POST: Post = {
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-de.webp",
   imageAlt: "Ergebnis des GTO-Solvers von HoldemMaster für den Rainbow-Flop 8♦5♣2♠ im 3-Bet-Pot: Das Raster des Big Blinds ist fast vollständig in der Farbe der großen Bet eingefärbt",
-  tags: ["8-5-2 flop", "niedriges board im 3-bet-pot", "overpair poker", "polarisierte range poker", "3-bet-pot", "gto", "poker"],
+  tags: ["8-5-2 flop", "niedriges board im 3-bet-pot", "overpair poker", "polarisierte range poker", "gto", "poker"],
   content: `
 Der Flop kommt **8♦ 5♣ 2♠**. Du hast vor dem Flop ge-3-bettet, das Board ist so trocken, wie es nur geht, und du hältst A-K. Kein Paar, und nichts Besseres als Backdoor-Draws. **Genau hier fühlt sich ein Check selbstverständlich an.**
 
@@ -75,7 +75,7 @@ Die 22,5bb im Pot sind ==11 aus der 3-Bet + 11 aus dem Call + 0,5 des gefoldeten
 | Check | 2,0% | 1,7 |
 | Bet 7,4bb (33% vom Pot) | 0,3% | 0,2 |
 
-Hier wird es seltsam. **[Q-T-7](/de/blog/3bet-pot-bet-sizing), voller Draws, und dieses Board, das fast keine hat, nutzen dieselbe Size in fast derselben Frequenz.** Im vorigen Spot sollte die große Size den Draws des Gegners einen Preis setzen. Hier gibt es keine Draws, die man zur Kasse bitten könnte. **Der Grund ist ein anderer, das Ergebnis nicht.**
+Hier wird es seltsam. **[Q-T-7](/de/blog/3bet-pot-bet-sizing), voller Draws, und dieses Board, das fast keine hat, nutzen dieselbe Size mit fast derselben Frequenz.** Im vorigen Spot sollte die große Size den Draws des Gegners einen Preis setzen. Hier gibt es keine Draws, die man zur Kasse bitten könnte. **Der Grund ist ein anderer, das Ergebnis nicht.**
 
 ## Haben wirklich nur drei Combos mit dem Board gepaart – und wo sind die Overpairs?
 
@@ -117,7 +117,7 @@ Und die 40 A-High-Combos **gewinnen, sobald der Gegner foldet.** 58,3% der Butto
 
 **Weil 88, 55 und 22 in keiner 3-Bet-Range stehen, wohl aber in einer Calling-Range.** Das ist der erste Spot der Serie, in dem die Spitze des Boards komplett dem Spieler in Position gehört.
 
-![Infografik zur Range-Zusammensetzung auf 8-5-2 im 3-Bet-Pot: Die Handkategorien von Big Blind und Button im Vergleich](/images/gto-3bp-low-ranges-de.webp "8-5-2 im 3-Bet-Pot · Verteilung der Kategorien – Sets nur beim Button, fast doppelt so viele Overpairs beim Big Blind")
+![Infografik zur Range-Zusammensetzung auf 8-5-2 im 3-Bet-Pot: Die Handkategorien von Big Blind und Button im Vergleich](/images/gto-3bp-low-ranges-de.webp "8-5-2 im 3-Bet-Pot · Verteilung der Kategorien – Sets nur beim Button, deutlich mehr Overpairs beim Big Blind (36 gegen 24 Combos)")
 
 | Kategorie | BB (3-Bettor) | BTN (Caller) |
 |---|---|---|
@@ -133,7 +133,7 @@ Die neun Combos des Buttons sind 88, 55 und 22, je drei – von jedem Rang liegt
 
 **Diese Form zählt am Tisch.** Alle Sets liegen auf der anderen Seite, und der Big Blind hat nichts darüber – seine Overpairs sind hier also nicht die Nuts.
 
-⚠ Mach daraus nicht „wenn ein Raise zurückkommt, schlägt das Overpair nichts“. Zwei Gründe. Erstens ist **der Knoten für die Reaktion auf einen Raise in dieser Berechnung nicht enthalten** – der Lernspot endet bei der ersten Aktion am Flop. Zweitens stimmt es ohnehin nicht: Um gegen eine Range Bet mit 97,8% zu raisen, brauchst du Bluffs zwischen dem Value (neun Set-Combos), und **AA und KK schlagen alles in dieser Raising-Range außer diesen neun Combos.**
+⚠ Mach daraus nicht „wenn ein Raise zurückkommt, schlägt das Overpair nichts“. Zwei Gründe. Erstens ist **der Knoten für die Reaktion auf einen Raise in dieser Berechnung nicht enthalten** – der Lernspot endet bei der ersten Aktion am Flop. Zweitens stimmt es ohnehin nicht: Um gegen eine Range Bet mit 97,8% zu raisen, brauchst du Bluffs neben dem Value (neun Set-Combos), und **AA und KK schlagen alles in dieser Raising-Range außer diesen neun Combos.**
 
 ## Warum realisiert der Caller hier mehr Equity als in den beiden Spots davor?
 
@@ -172,11 +172,11 @@ Der Grund ist, wo die Sets liegen. **Der Button ist der einzige Spieler, der ein
 
 Jede Zahl hier findest du so: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Niedriges, trockenes Board** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
 
-Such im Panel **Hände** nach der **fehlenden Zeile „Set/Drilling“**. Stell dann **Spieler** auf **IP (BTN (Caller))**, und sie erscheint mit 6,3%. Diese eine Zeile erzählt die ganze Geschichte, wem die Spitze dieses Boards gehört. Kostenlos, nichts zu installieren, kein Konto.
+Such im Panel **Hände** nach der **fehlenden Zeile „Set/Drilling“**. Stell dann **Spieler** auf **IP (BTN (Caller))**, und sie erscheint mit 6,3%. Diese eine Zeile erzählt die ganze Geschichte, wem die Spitze dieses Boards gehört. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
 **Q. Solltest du im 3-Bet-Pot auf einem niedrigen Board mit A-K eine Continuation Bet (C-Bet) spielen?**
 
-A. Ja. Auf 8-5-2 hat A-K kein Paar und keinen direkten Draw (nur Backdoor-Draws – ein Runner-Runner-Wheel, dazu ein Backdoor-Flushdraw für die drei suited Combos), und trotzdem setzt der Solver die ganze Range in 97,8% der Fälle mit der großen Size. Der Grund: Die Range des Big Blinds ist **polarisiert – Overpairs oder A-High, ungefähr halb und halb** –, und wenn die Mitte leer ist, steigt die Size, und die ganze Range nutzt sie. Dass 58,3% der gegnerischen Range kein Paar gemacht haben, hilft, aber lies das nicht als „58,3% folden“; der Reaktionsknoten ist in dieser Berechnung nicht enthalten.
+A. Ja. Auf 8-5-2 hat A-K kein Paar und keinen direkten Draw (nur Backdoor-Draws – ein Runner-Runner-Wheel, dazu ein Backdoor-Flushdraw für die drei suited Combos), und trotzdem setzt der Solver 97,8% der Range mit der großen Size. Der Grund: Die Range des Big Blinds ist **polarisiert – Overpairs oder A-High, ungefähr halb und halb** –, und wenn die Mitte leer ist, steigt die Size, und fast die ganze Range nutzt sie. Dass 58,3% der gegnerischen Range kein Paar gemacht haben, hilft, aber lies das nicht als „58,3% folden“; der Reaktionsknoten ist in dieser Berechnung nicht enthalten.
 
 **Q. Was bedeutet eine polarisierte Range?**
 
