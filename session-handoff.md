@@ -6,7 +6,7 @@
 ## ▶▶▶▶▶▶ 다음 세션 = de GTO 예제 13편 전파 착수 (사장님 10-02 «다음 세션에서 de만 작업하자»)
 
 - 실측 10-02: GTO 13편(슬러그 목록 = `docs/gto-solver-series-spec.md` 표 ①~⑬) 보유 = ko·en·ja·zh·zh-hant·es·pt·id·ms·hi **13/13** · **de·ar·vi·tr 0/13**. 이번엔 **de만**(ar·vi·tr은 사장님 판단 전 착수 금지). 근거: 09-15 계획 «GTO 13편 → pt·de» 중 de 미이행 · `settled-decisions` §1-E(목적 = 검색 유입이 아니라 솔버 증거·필라 연결).
-- 🔴 첫 세션 = **준비만**(계획표를 먼저 올려 승인 → 실행 · 메모리 workflow-means-plan-first). pt 선례를 그대로 복제: 브리프 `docs/pt-gto-series-translation-brief.md` · 소스 계약 `docs/pt-gto-source-contract.md` · 키워드 팩 `docs/keyword-bank/pt-gto-series.md` · 앱 축어 `docs/solver-app-verbatim-pt-*.md` → **de판 4종 신설**(de 솔버 키워드 = `docs/keyword-bank/de-gto-solver.md` · 용어 = `docs/translation-terms-de.md` · de 문체 게이트 check-de-style).
+- 🔴 첫 세션 = **준비만**(계획표를 먼저 올려 승인 → 실행 · 메모리 workflow-means-plan-first). pt 선례를 그대로 복제: 브리프 `docs/pt-gto-series-translation-brief.md` · 소스 계약 `docs/pt-gto-source-contract.md` · 키워드 팩 `docs/keyword-bank/pt-gto-series.md` · 앱 축어 `docs/solver-app-verbatim-pt-*.md` · de 앱 축어는 `docs/solver-app-verbatim-5langs-2026-08-24.md`에 있으나 08-24판이라 pt처럼 재캡처 필요 → **de판 4종 신설**(de 솔버 키워드 = `docs/keyword-bank/de-gto-solver.md` · 용어 = `docs/translation-terms-de.md` · de 문체 게이트 check-de-style).
 - 산출물 범위: `lib/posts-de/<slug>.ts` 13 · 이미지 `gto-<key>-oop-de.webp`·`gto-<key>-ranges-de.webp`(앱 de 캡처) · `lib/posts-de/index.ts` · `lib/gto-series-i18n.ts` de 노드 · de 필라 역링크(`docs/locale-intentional-diffs.md` GTO 역링크 행 확인).
 - 세션 모양(WORKLOG «표준형 5세션»): ① 준비 Opus → ②③④ 저작(배치 = 세션) → ⑤ 마감(렌즈 4종 · 2차 교열 · `check:gto` · audit:hard --locale=de · build · 배포 1회 · MB). 기계 게이트는 배치마다.
 
