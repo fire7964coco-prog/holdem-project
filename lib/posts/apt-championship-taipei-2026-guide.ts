@@ -20,7 +20,7 @@ export const POST: Post = {
   tldr: "APT 챔피언십 타이베이 2026은 11월 13일부터 29일까지 타이베이 Red Space에서 열리는 17일짜리 대만 홀덤 대회 시리즈로, 공식 일정표에 이벤트 209개가 있습니다. 메인이벤트는 바이인 1만 달러(약 1,356만 원)·보장 500만 달러의 프리즈아웃이고 Day 1은 11월 23일 한 번뿐입니다. 한국 여권은 무비자 90일이라, 국내 APT와 달리 한국 국적자도 그대로 참가할 수 있습니다.",
   category: "토너먼트",
   date: "2026-10-01",
-  updated: "2026-10-01",
+  updated: "2026-10-02",
   readTime: "11분",
   emoji: "👑",
   layout: "tournament-guide",
@@ -77,7 +77,7 @@ $350 | 메인행 현장 위성 최저
 
 ### 한국 플레이어는 실제로 많이 가나요?
 
-**네, 많이 갑니다. 2025년 메인에서 한국은 참가 국가 3위였습니다.** APT 결과 기사에 따르면 47개 국가·지역에서 671엔트리가 들어왔고, 대만 90엔트리(13.4%), 일본 66엔트리(9.8%) 다음이 **한국 53엔트리(7.9%)**였습니다.
+**네, 많이 갑니다. 2025년 메인에서 한국은 참가 국가 3위였습니다.** APT 결과 기사에 따르면 671엔트리 가운데 대만 90엔트리(13.4%), 일본 66엔트리(9.8%) 다음이 **한국 53엔트리(7.9%)**였습니다.
 
 챔피언십 이벤트에서는 한국 선수 우승이 두 번 나왔습니다. **울트라 스택 챔피언십**에서 Gyeongbyeong Lee가 1,867엔트리 필드에서 우승해 TWD 6,917,200과 메인 시트를 가져갔고, **마이크로 메인**에서는 Min Ho Cho가 750엔트리 중 우승해 TWD 1,149,680을 받았습니다(이름은 공식 기사의 영문 표기 그대로 옮겼습니다).
 
@@ -207,17 +207,18 @@ Mini Main은 메인과 날짜가 겹쳐서, 메인에서 일찍 떨어진 사람
 
 ## 대만 입국은 어떻게 준비하나요?
 
-**비자는 필요 없고, 도착 전 7일 안에 온라인 입국카드(TWAC)를 내면 됩니다.** 한국 여권은 무비자 90일이고, 입국일 기준 여권 유효기간이 6개월 이상 남아 있어야 합니다. 준비물은 세 가지입니다.
+**비자는 필요 없고, 도착 전 7일 안에 온라인 입국카드(TWAC)를 내면 됩니다.** 한국 여권은 무비자 90일이고, 입국일 기준 여권 유효기간이 6개월 이상 남아 있어야 하고, **예약이 확정된 귀국 항공권**(또는 제3국행 항공권과 그 나라 비자)도 무비자 입국 요건입니다. 준비물은 네 가지입니다.
 
 :::steps
 여권 확인 | 입국일 기준 잔여 유효기간 6개월 이상 (대만 외교부 무비자 요건)
 온라인 입국카드 | twac.immigration.gov.tw — 대만 도착 7일 전부터 제출 · 무료
+귀국 항공권 | 예약이 확정된 귀국편(또는 제3국행) — 대만 외교부 무비자 요건
 대회 등록 | 현장 등록 데스크에서 여권으로 등록 · 바이인·지급 문의는 registrations@apt.poker
 :::
 
 **입국카드 제출은 무료입니다.** 대만 이민서 TWAC 사이트는 「Submission is Free.」, 「Complete and submit within 7 days before arrival.」이라고 안내합니다. 검색하면 비슷한 이름의 대행 사이트가 나오니, 주소가 twac.immigration.gov.tw인지 확인하고 내세요.
 
-**전자담배는 아예 가져가지 마세요.** APT Key Info는 「VAPING & IQOS ARE ILLEGAL IN TAIWAN」이라고 크게 적어 두었고, 대회장 건물 안 흡연은 즉시 실격 사유입니다. 흡연은 건물 밖 지정 구역에서만 됩니다.
+**전자담배는 아예 가져가지 마세요.** APT Key Info는 대만에서 전자담배·베이프의 소지와 사용이 법으로 금지돼 있다고 크게 적어 두었습니다. **아이코스 같은 궐련형 전자담배도 한국에서 산 것은 가져갈 수 없습니다.** 대만에는 위생복리부 심사를 통과한 가열담배가 팔리지만, 타이베이 세관은 「대만 국내 면세점에서 산 심사 통과 제품」만 반입할 수 있다며 해외에서 산 가열담배는 들고 오지 말라고 안내합니다. 대회장 건물 안 흡연은 즉시 실격 사유입니다. 흡연은 건물 밖 지정 구역에서만 됩니다.
 
 ---
 
@@ -300,8 +301,9 @@ A. 아닙니다. 같은 도시에서 열리지만 4~5월 APT 타이베이와 11�
 - APT 이벤트 상세 — 메인이벤트 #1014(바이인 구성·스택·레벨·2027 시트) · Step 1 #86 · Step 2 #101 · Micro Main #1008
 - [APT Championship 2026: The Preview](https://www.theasianpokertour.com/news/apt-championship-2026-the-preview) — 2026 메인 시트 17석, 2025 울트라 스택·마이크로 메인·Step 2 기록
 - [Nishant Sharma Makes History… APT Championship Main Event Win](https://www.theasianpokertour.com/news/nishant-sharma-makes-history-with-twd-37-m-usd-1-1-m-apt-championship-main-event-win)(2025-11-28) — 671엔트리, 국가별 엔트리, 우승자의 Step 2 위성 경로
-- [대만 외교부 영사사무국 — 무비자 입국](https://www.boca.gov.tw/cp-149-4486-7785a-2.html) — Republic of Korea 90일, 여권 잔여 6개월
+- [대만 외교부 영사사무국 — 무비자 입국](https://www.boca.gov.tw/cp-149-4486-7785a-2.html) — Republic of Korea 90일, 여권 잔여 6개월, 확정된 귀국 항공권
 - [대만 이민서 TW Arrival Card](https://twac.immigration.gov.tw/) — 도착 7일 전 제출, 무료
+- [타이베이 세관 — 해외 구입 가열담배 반입 안내](https://web.customs.gov.tw/taipei/singlehtml/83?cntId=e864a2ab2aac44199bbf436a930b95e2) · [대만 국민건강서 — 가열담배 심사 결과](https://www.hpa.gov.tw/EngPages/Detail.aspx?nodeid=1054&pid=19405)(2026-10-02 확인)
 - [송산공항 국제선 운항 정보](https://www.tsa.gov.tw/flights/international/today) · 타이베이 MRT 공식 시각표(松山機場역) · [Red Space 소개](https://www.redspace.tw/about)
 - [서울외국환중개 매매기준율](http://www.smbs.biz/ExRate/TodayExRate.jsp)(2026-10-01) — 원화 어림 기준
 

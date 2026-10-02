@@ -121,3 +121,13 @@
 ## 10. 쓰지 않는 것
 
 - 항공편 편수·운임·소요시간 · 호텔 일반 요금(공식은 HR 얼리버드 패키지만 · 기한 10/12) · 한자 선수명 · APT 타이베이 2026(봄) 일본인 성적(1차 출처 미열람 — light-three는 2차) · Natural8 가입 안내 · 대만 법 제도 해설.
+
+## 12. 🆕 MA-253 정정 (2026-10-02 · 본체 원문 재열람 · curl HTML/CSV 축어)
+
+| 항목 | 원문 축어 (열람 10-02) | 글 반영 |
+|---|---|---|
+| TWAC 입력 시작 | 이민서 2026-07-15 「由原本抵達臺灣前3天內，放寬為抵臺前7天內即可上網填報」 ([NIA](https://www.immigration.gov.tw/5385/7229/7238/415735/cp_news)) — 🔴 §6 «3日前»(대표처 2025-09-30)은 **낡은 값** | ja 3자리 → «7日前から» · ko는 이미 7일 |
+| 무비자 요건 | BOCA 「A confirmed return air/sea ticket or air/sea ticket and a visa for the next destination, and a confirmed seat reservation for departure flight.」 | ja tldr·본문·표·FAQ·まとめ / ko 본문·steps·출처 |
+| 2025 메인 국가 수 | 기사 「671 entry field of players from 47 different countries and regions」 ↔ 기사가 연결한 공식 CSV = 번호 1~47 중 **31번 누락 · 국가 46행** · 합계 671 → 🔴 **국가 총수는 쓰지 않는다**(1차 출처 자기모순) · 671·대만 90·일본 66·한국 53은 양쪽 일치 | ja 도입 · ko L80에서 «47» 삭제 |
+| 가열담배 | HPA 2025-09-19 「eight HTPs … have passed review and will take effect on October 11, 2025」 · 타이베이 세관 「目前旅客僅得攜帶自國內免稅商店購買、且經衛福部審查通過之加熱菸入境，臺北關提醒旅客勿自國外購買加熱菸攜帶入境」 → APT Key Info «IQOS ARE ILLEGAL»(§1)은 현행 제도와 어긋나는 낡은 일괄 문구 | ja·ko: 전자담배·베이프 = APT 인용 유지 · IQOS = «해외 구입품 반입 불가»로 분리 |
+| 메인 결승 | 일정표 Main Event Freezeout Day 3 25 Nov · Day 4 26 Nov · Final Day 27 Nov | ja «メイン中心» 여행안에 «勝ち残れば27日まで» |
