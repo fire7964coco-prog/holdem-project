@@ -1,3 +1,12 @@
+## 2026-10-02 (4) — de 고유 대회 글 조사 회차: CAPT Million Baden · GPM 사실 시트 + 수요 판정 (집필은 다음 세션)
+
+- 핸드오프 순서표 1번. 실행 12:15~ · Workflow `wf_4d32f014-384`(서브 7: 수요 · CAPT 시트 · GPM 시트 · de 자산 · 현지 서치 → 적대 검증 2) · 판정·정정 = Opus 5.5 본체. 🔴 사장님 «워크플로 먼저» = 계획표 먼저였는데 Workflow 즉시 실행으로 오해 → 메모리 `workflow-means-plan-first`.
+- 수요(DFS 2276·2040·2756 · 10-02): CAPT Million 대회명 AT 430(2025-11 = 2,420) · Casino Baden 포커 AT 1,550 · GPM 대회명 DE 40 · King's 베뉴 DE 780. 🔴 오스트리아 대회를 Germany로만 재면 과소(casino baden poker DE 20 vs AT 1,300). 뱅크 신설 `docs/keyword-bank/de-tournament.md`.
+- **판정 = CAPT 단독 1편 · GPM은 그 글 안 비교 H2 하나**(GPM 단독·묶음 수요 없음 · «pokerturnier november 2026» null).
+- 사실 시트 2 신설: `docs/tournament-factsheets/2026-11-capt-million-baden.md`(casinos.at 403 → r.jina.ai 축어 · 캘린더 177행·바덴 상세 32건 전수) · `…/2026-11-german-poker-masters-rozvadov.md`(kings-resort.com curl·Playwright·__NUXT__). 적대 검증 반영: GPM 2025 Final Day 페이지 «404» 판정 오류 → 200·화면 축어(3914 Entries · 우승 Artur Wasek · 상위 5명 DEAL) · 리엔트리 2회에서 Flip and Go 제외 · CAPT 11/23 Mega 레지 마감 상충(10 vs 12 → 글에 안 씀) · «Day 1 Level 10»은 바덴 한정 · Bregenz 이메일 사전 신청. 집필 메모 `docs/tournament-factsheets/2026-11-capt-de-writing-prep.md`.
+- 보드 `kings-gpm-nov` «49개 이벤트» 틀림(공식 «50 Tournaments» = 일정 행, 1행 프라하) → 집필 회차에 정정. 본문·lib 변경 0 · 빌드 불요.
+- 우편함: MA-259(요청 2) → MB-141 ACK·G절 등재 · S-030 → MB-142 ACK·등재.
+
 ## 2026-10-02 (3) — pt 고유 대회 글 1편 `bsop-millions-2026-guide` 발행 (MB-140)
 
 - 핸드오프 순서표 1번(pt BSOP Millions · D-42). 사실 시트 `docs/tournament-factsheets/2026-11-bsop-millions.md` — bsop.com.br 원문 Playwright 추출(그리드 #1~#103 누락 0 · Millions 페이지 FAQ 아코디언 textContent · 공식 기사 6 · 갤러리 2025 Main · 인스타 리엔트리 공지). 🔴 자기모순 1건 = BSOP Championship 바이인(그리드 R$ 25.000 vs 기사 R$ 15.000) → 병기 note. 2026 Main 개런티 미발표(2025 = R$ 10M GTD)라 안 씀.
