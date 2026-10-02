@@ -1,3 +1,12 @@
+## 2026-10-02 (13) — de GTO 예제 13편 ④ 배치 C ⑨~⑬ 저작 (배포 없음)
+
+- 사장님 «핸드오프 최상단 de GTO 배치 C 진행해». 17:47 착수 · Opus 5.5 본체(헤드) + Opus 서브 5레인 병렬(편당 1레인 · 새 파일 1개만 · 공통 지시서 scratchpad). 우편함 검수장→본체 미처리 0.
+- 장면 ⑨⑩⑪⑫ 렌더(`make-gto-spot-scenes --lang=de 3bp-dynamic 3bp-low sb-king-mid sb-connected` · 각 33~34KB) → ⑬ 견본 포함 5장 Read 확인(Q♥T♥7♠ · 8♦5♣2♠ 22,5/89 BB 먼저 · K♥T♦6♠ · 7♦6♦5♣ · A♠A♥6♦ 6/97 SB 먼저 = 원문 계약 §3·§8).
+- 산출 `lib/posts-de/` 3bet-pot-bet-sizing(desc 158 · seoTitle 59) · 3bet-pot-low-board(157) · blind-battle-cbet(152) · blind-battle-connected-board(149) · ace-paired-board-strategy(153). 구조 EN과 동일 + 장면 1. ⑩~⑬ 기록 문장 = de 랜딩 축어(`app/de/solver/solver-client.tsx` 708–710 «Lernspots und täglichen Aufgaben»).
+- 헤드 정정 2: ⑨ 표 빈 칸 em dash 5 → en dash(check-de-style D12) · ⑫ 도입의 ⑪ 맺음 문장 인용 «Platz» → ⑪ 실제 문장 «Sitz».
+- 게이트(13편 동시 임시 등록): check-gto-numbers 일치 88 + 🔴3 = ③ 23,7 · ⑧ 7,6 · ⑨ 37,6·95,9(전부 ko «A~B%» 앞 숫자 미검사·선례 · 결함 아님) · check-gto-structure 13/13 ✔ · check-de-style GTO 13/13 0건(D2 미판정 ⑫ 2,976bb · ⑬ 3,372bb = 소수 OK) · audit:hard --locale=de 🔴0(배치 C 카드 문단 22 손 검산: ⑨ 15아웃=8+9−2 · 12아웃=4+9−1 · 19,8%=7,4÷37,3 · 28,5%=14,9÷52,3 · ⑩ 오버페어 99–AA 36·A5s 3 · ⑫ 8-8 OESD 4/9 · ⑬ AK8+AQ8+AJo6=22 · A-6 6 → 94 · A-A-A-K-K · 트립스 비율 4쌍 — OK) · check:images 이상 없음(폭<750 기존 15장) · image-reuse 🔴0.
+- 🔴 index·check-de-style 등록 되돌림 · 글 5 + 장면 4 + 핸드오프만 커밋. EN 유래 의심·레인 보강 = 핸드오프 de GTO 절 🪶(마감 렌즈 몫). 다음 = ⑤ 마감(새 세션).
+
 ## 2026-10-02 (12) — de GTO 예제 13편 ③ 배치 B ⑤~⑧ 저작 (배포 없음)
 
 - 사장님 «핸드오프 최상단 de GTO 배치 B 진행해». 17:33 착수 · Opus 5.5 본체(헤드) + Opus 서브 4레인 병렬(편당 1레인 · 새 파일 1개만). 우편함 검수장→본체 미처리 0.
