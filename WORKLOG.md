@@ -1,3 +1,11 @@
+## 2026-10-02 (3) — pt 고유 대회 글 1편 `bsop-millions-2026-guide` 발행 (MB-140)
+
+- 핸드오프 순서표 1번(pt BSOP Millions · D-42). 사실 시트 `docs/tournament-factsheets/2026-11-bsop-millions.md` — bsop.com.br 원문 Playwright 추출(그리드 #1~#103 누락 0 · Millions 페이지 FAQ 아코디언 textContent · 공식 기사 6 · 갤러리 2025 Main · 인스타 리엔트리 공지). 🔴 자기모순 1건 = BSOP Championship 바이인(그리드 R$ 25.000 vs 기사 R$ 15.000) → 병기 note. 2026 Main 개런티 미발표(2025 = R$ 10M GTD)라 안 씀.
+- 수요(DFS location 2076): bsop millions 720(2025-11 4.400) · bsop sao paulo 390 · SERP top 9에 제3자 가이드 0 → 뱅크 신설 `docs/keyword-bank/pt-tournament.md`.
+- 글: Resposta rápida · H2 8(질문형) · 표 7 · steps · FAQ 7 · 출처 12줄(전부 공식) · 이미지 3(HTML→render-gen-final q82 · 육안 철자 확인). 렌즈 2종: 네이티브 8건 채택(« » → 따옴표 · «10 Day 1» · WhatsApp 표기 등) · 사실 대조 105항목 오류 0 · 표현 4건+출처 2줄 채택.
+- 배선: 보드 `bsop-millions` blogLinkByLocale.pt · buyin «R$200~R$500,000» · verifiedAt 10-02 · 스파인 1줄 · pt 필라 `holdem-tournament` 역링크(updated 10-02) · 캘린더 11/12·11/15·11/20·11/23.
+- 게이트: audit:hard pt 56/56 🔴 0(핸드 예시 없음 = §13 대상 0) · check:images · image-reuse 🔴 0 · intl-links ✓ · image-dims 재생성 · 빌드 613 intl posts · 렌더(히어로 1 · 본문 이미지 2 · FAQPage Q 7 · 한글 누수 0).
+
 ## 2026-10-02 (2) — zh-hant TMTC 온라인 위성 과거형 (MB-139)
 
 - 캘린더 «10/2 이후 첫 회차» 시한. 시계 확인 10-02 11:26 KST(google Date 02:26 GMT). 근거 = 시트 M2 «至 10 月 1 日止».

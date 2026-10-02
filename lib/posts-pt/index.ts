@@ -33,6 +33,7 @@ import { POST as aptIncheon2026Guide } from "./apt-incheon-2026-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
+import { POST as bsopMillions2026Guide } from "./bsop-millions-2026-guide";
 import { POST as holdemGlossary } from "./holdem-glossary";
 import { POST as holdemStraddle } from "./holdem-straddle";
 import { POST as holdemRake } from "./holdem-rake";
@@ -100,6 +101,7 @@ export const PT_POSTS: Post[] = [
   koreaPokerMarathon2026,
   wptAustralia2026Guide,
   eptBarcelona2026Guide,
+  bsopMillions2026Guide,
   // Glossary 필라 (6/6)
   holdemGlossary,
   holdemStraddle,

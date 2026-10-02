@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-10-01",
+  updated: "2026-10-02",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -167,7 +167,7 @@ Em vez de gastar $10.000, você disputa um torneio de $500 contra outros 19 joga
 
 ## Como entrar num torneio de poker — 3 formas
 
-Há três caminhos: **buy-in direto no balcão**, **pré-registro online** e **vaga via satellite** — o passo a passo de cada um vem abaixo. No Brasil, o circuito ao vivo mais conhecido é o **BSOP (Brazilian Series of Poker)**, que roda etapas ao longo do ano em resorts e centros de convenções — e o fluxo de registro é o mesmo de uma etapa da WSOP ou do APT: documento, buy-in, seat card.
+Há três caminhos: **buy-in direto no balcão**, **pré-registro online** e **vaga via satellite** — o passo a passo de cada um vem abaixo. No Brasil, o circuito ao vivo mais conhecido é o **BSOP (Brazilian Series of Poker)** — a etapa de novembro, o [BSOP Millions 2026](/pt/blog/bsop-millions-2026-guide), tem guia próprio com grade, buy-ins e satélites — que roda etapas ao longo do ano em resorts e centros de convenções — e o fluxo de registro é o mesmo de uma etapa da WSOP ou do APT: documento, buy-in, seat card.
 
 ### Opção A: buy-in direto no cassino (mais fácil)
 1. Ache o balcão de registro da poker room (ou o balcão de torneios em eventos maiores)

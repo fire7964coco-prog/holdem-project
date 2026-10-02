@@ -690,6 +690,7 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 - ★★ **LAPT는 공식 캘린더에 없다.** `pokerstarslive.com/lapt/` **404**. 단 **"영구 폐지"라는 문구는 공식 어디에도 없으므로 단정 금지** — "캘린더 부재"로만 기록
 - ⚠️ **"LAPT 2026 몬테비데오" 헛소문의 진원 = 방치된 `lapt.info`(©2023)의 2023시즌 잔재.** 그 시기 몬테비데오 실재 대회는 **WSOP Circuit**(별개 주최) — 혼동 주의
 - **BSOP 2026(20주년, 6개 etapa)**: Summer 01.23~31 / São Paulo 03.18~**24** / Rio Quente 04.30~05.05 / **BSOP Winter 07.21~30(진행중)** / **Floripa 09.04~08** / Millions 11.13~28
+  - 🆕 **BSOP Millions 2026 (2026-10-02 열람)**: 13~28/11 · Complexo WTC(WTC Sheraton) · 그리드 #1~#103 · R$ 200~R$ 500.000 · Main Event #26 R$ 5.000 · 40.000 · Dia 1A~1J(16~20/11 12h·20h) · Final 23/11 · 2025 Main 2.659 inscritos · R$ 10.643.800 — 정본 `docs/tournament-factsheets/2026-11-bsop-millions.md`
   - ⚠️ **"Winter Millions"는 2025년 명칭. 2026년은 "BSOP Winter"**
   - ⚠️ **10월 스테이지는 "소멸"이 아니라 "미발표"** — 공식 발표문에 `"a divulgação da etapa que ocorrerá em outubro"`
   - ⚠️ 그리드의 `40.000`은 **개런티가 아니라 스타팅 스택**
