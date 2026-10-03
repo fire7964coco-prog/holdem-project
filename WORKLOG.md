@@ -1,3 +1,10 @@
+## 2026-10-03 (1) — 허브 셸 tr·vi·ar 사전 등재 (MB-154)
+
+- 사장님 «진행하자»(핸드오프 09-29 🪶 «허브 셸 문구가 tr·vi·ar 보드에서 영어» 해소). 사장님 질문 «Log in은 그냥 두는 게 낫지 않나» → 현지 표준 UI 표기(Giriş yap·Đăng nhập·تسجيل الدخول)이고 다른 10로케일은 이미 번역 상태라 빠진 것으로 판정.
+- `lib/hub-i18n.ts` MAP에 VI·TR·AR 추가. vi·tr = `community-client.tsx` LABELS 축어 복사(eventBadge만 event+comingSoon 조합 · tr은 단수 «Etkinlik»). ar = LABELS.ar 없음 → hi·fr처럼 신규 번역 · RTL이라 화살표 «←».
+- 이벤트 카드 4키는 지금 비-KO에서 숨김(`EVENT_OPERATION.acceptingEntries`)이라 화면 노출 = login·write·trending·languages.
+- 검증: build ✅(74 + intl 628) · 로컬 `next start` HTML grep — ar·tr·vi `/tournaments`에 영어 셸 문구 0 · screen-review ar 1440 RTL 배치 정상.
+
 ## 2026-10-02 (17) — MA-273 판정 회차 · 3묶음 전부 채택·배포 (MB-153)
 
 - 사장님 «우편함 확인» → MA-273(rankings·odds·PDF 재검증 · 요청 3묶음) → «진행해». Opus 5.5 본체 + Opus 서브 렌즈 1(포커 + zh-CN/zh-TW 교열 · 권장 2 반영). 근거 = 검수장 `reports/2026-10/검수-MB129-132-rankings-odds-PDF-2026-10-02.md`.

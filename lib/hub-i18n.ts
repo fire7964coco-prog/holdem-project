@@ -228,7 +228,55 @@ const HI: HubLabels = {
   languages: "🌐 समुदाय की भाषाएँ",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI };
+/**
+ * ★2026-10-03 신설 — `/vi/tournaments` 보드 셸이 영어로 떨어지던 것을 막는다. 값은
+ *   `app/community/community-client.tsx`의 `LABELS.vi`에서 **축어 그대로** 옮겼다
+ *   (login/writePost/trendingTitle/eventTitle/eventDesc/eventDrawSchedule/eventButton/communityLang 대조).
+ *   eventBadge는 LABELS에 키가 없어 다른 로케일과 같은 틀로 LABELS.vi의 event·comingSoon을 이었다.
+ */
+const VI: HubLabels = {
+  login: "Đăng nhập",
+  write: "✏️ Viết bài",
+  trending: "🔥 Xu hướng tuần này",
+  eventBadge: "🎰 Sự kiện · Sắp ra mắt",
+  eventTitle: "Chọn 6 số\nNhận thẻ quà tặng!",
+  eventDesc: "3 khớp → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Mỗi Chủ nhật 7 tối KST\nQuay thưởng tự động via Bitcoin block hash",
+  eventButton: "Xem sự kiện →",
+  languages: "🌐 Ngôn ngữ cộng đồng",
+};
+
+/** ★2026-10-03 신설 — vi와 같은 경위. `LABELS.tr` 축어 복사 · eventBadge = event 단수형 + comingSoon. */
+const TR: HubLabels = {
+  login: "Giriş yap",
+  write: "✏️ Yaz",
+  trending: "🔥 Bu Haftanın Trendleri",
+  eventBadge: "🎰 Etkinlik · Yakında",
+  eventTitle: "6 Numara Seç\nHediye Kartı Kazan!",
+  eventDesc: "3 eşleşme → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Her Pazar 19:00 KST\nBitcoin block hash ile otomatik çekiliş",
+  eventButton: "Etkinliği gör →",
+  languages: "🌐 Topluluk Dilleri",
+};
+
+/**
+ * ★2026-10-03 신설 — `/ar/tournaments` 보드 셸용. community-client.tsx에 LABELS.ar이 없어
+ *   hi·fr처럼 허브 문구만 번역했다(현지 사이트 표준 UI 표기). 금액·시각은 공통 값 그대로.
+ *   RTL이라 화살표는 «←»로 뒤집었다(«→»는 미러링되지 않아 거꾸로 가리킨다).
+ */
+const AR: HubLabels = {
+  login: "تسجيل الدخول",
+  write: "✏️ اكتب منشورًا",
+  trending: "🔥 الأكثر رواجًا هذا الأسبوع",
+  eventBadge: "🎰 فعالية · قريبًا",
+  eventTitle: "اختر 6 أرقام\nواربح بطاقات هدايا!",
+  eventDesc: "3 تطابقات ← $30 · 4 ← $200\n5 ← $1,000",
+  eventSchedule: "🔗 كل أحد الساعة 7 مساءً KST\nسحب تلقائي عبر هاش كتلة Bitcoin",
+  eventButton: "عرض الفعالية ←",
+  languages: "🌐 لغات المجتمع",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
