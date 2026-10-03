@@ -1,3 +1,12 @@
+## 2026-10-03 (5) — es 고유 상시 글 1편 `casino-odiseo-murcia-poker` 발행 (MB-155 · MB-156)
+
+- 핸드오프 최상단(사실 시트 §9 3번 집필). 사실 = 시트 그대로(재조사 0) + DFS 자동완성 ES 1회(«casino odiseo murcia horario·como llegar·torneos casino odiseo» → H2·FAQ). Opus 5.5 본체 집필 + Opus 서브 1(스페인 현지 포커 기자 적대 검수).
+- 글: Respuesta rápida · H2 9(질문형 8) · 표 10 · steps 2 · FAQ 7 · 출처 8줄(전부 공식) · 이미지 2(hero·festivales-2026 · HTML→render-gen-final q82 · 철자 육안). ⛔ 시트 금지 항목(입장료·복장·트램·현장 구매·Queen·888 스택/GTD·Solo clasificados·rake 단위) 미기재. 경험담 = 일반화 관찰(첫 방문 때 보는 것 · 17:30 전 도착 · 월 캘린더 확인).
+- 자체 점검 13건(Speedy 10월 근거 없음 · «domingos 17:00» 반례(10/25 18:00) · «se llena» 무근거 등) → 적대 검수 15건 중 14 채택(🔴 «festival 주만 빠짐» ↔ 10/27 Satélite 888 자기모순 · «media hora» 창작 · «más fichas» 비교 무근거 · «Todo pasa por la app» 현장 구매 함의 · intransferible 과해석 · Mensual «dos días» vs 3행 표) · 1 기각(«partypoker Tour» = 보드 sourceUrl 근거). 숫자·요일 오류 0.
+- 배선: `lib/posts-es/index.ts` · 보드 `pp-murcia` blogLinkByLocale.es·verifiedAt 10-03(venue «Casino Odiseo Murcia» = 검색어라 유지 · 13로케일 사전 무변경) · es 필라 `holdem-tournament` 역링크 · 캘린더 slug 확정.
+- 게이트: audit:hard es 0err · check:images · image-reuse 🔴 0 · intl-links ✓ · meta ✓(🟠 마지막 문장 숫자 = de 형제와 같음) · build ✓(74 + intl 629) · 렌더 HTML 히어로 img 1·fetchPriority high·FAQPage Q 7·lang es.
+- 우편함: MA-278~281(요청 0 · 재검증 깨끗) → MB-155 ACK · S-031(솔버 집계 파일 도착) → MB-156 ACK · C벳 필라 표 회차 대기열 등재.
+
 ## 2026-10-03 (4) — 무르시아 상시 글 사실 시트 §7 10항목 판정 = 시트 완료 (문서만)
 
 - 공식 원문(Playwright Europe/Madrid · 팝업은 클릭으로 열어 수집 · 캐시 표 이미지 4장은 Read 육안 판독)으로 §7 1~10 채움: 입장(condiciones-legales 축어 · 서류 표) · 영업시간(팝업 «CASINO 11–05 · MESAS 일~목 16–03 / 금·토·전야 16–04») · 캐시 NLH 0,5-1~5-10 · PLO 5-5·10-20 «A PARTIR DE LAS 17:30H» · Sit & Go · Crazy Tuesday 블라인드표 · 정기성(Finalizados: CT 9/15·22·29 화 · Mensual 9/18·10/23) · 888 상세 · partypoker 12/4~6 전수 · 교통·호텔 팝업 · 캐시 리그 · 앱 계정.

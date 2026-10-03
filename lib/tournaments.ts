@@ -2279,7 +2279,9 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "메인 €500 / €100,000 GTD (12/3~6) · 스페인 최종 스톱",
     sourceUrl: "https://www.partypoker.com/en/poker/p/party-poker-tour-2026/murcia",
     sourceTier: "A",
-    verifiedAt: "2026-09-04",
+    verifiedAt: "2026-10-03",
+    // es 고유 상시 글(2026-10-03 · 사실 정본 docs/tournament-factsheets/2026-murcia-orenes-standing.md §5·§7-7 — ME 445+55·12/3~6 대조 ✓) — 공용 blogLink는 달지 않는다
+    blogLinkByLocale: { es: "/blog/casino-odiseo-murcia-poker" },
   },
   {
     id: "pp-london-dec",

@@ -67,6 +67,8 @@ import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as pokerCasinoPrimeraVez } from "./poker-casino-primera-vez";
 import { POST as propinaDealerPoker } from "./propina-dealer-poker";
 import { POST as cuantoDineroLlevarPoker } from "./cuanto-dinero-llevar-poker";
+// es-ES 고유 상시 글 (2026-10-03 · 사실 정본 docs/tournament-factsheets/2026-murcia-orenes-standing.md)
+import { POST as casinoOdiseoMurciaPoker } from "./casino-odiseo-murcia-poker";
 
 /**
  * 스페인어(es) 블로그 포스트.
@@ -143,6 +145,8 @@ export const ES_POSTS: Post[] = [
   pokerCasinoPrimeraVez,
   propinaDealerPoker,
   cuantoDineroLlevarPoker,
+  // es-ES 고유 상시 글 (스페인 독자 · 다른 언어 대응본 없음)
+  casinoOdiseoMurciaPoker,
 ];
 
 export function getEsPost(slug: string): Post | undefined {

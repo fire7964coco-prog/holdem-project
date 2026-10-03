@@ -34,8 +34,8 @@
 - **글**: `apl-seoul-2026-guide` · 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §A
 - **볼 것**: acepokerleague.com 이벤트 DB(series_id=31)·제휴파트너 목록 — ① 장소 상세 주소 ② 티켓 가격·티켓→SEAT 교환 비율 ③ 레이트 등록 마감·페이아웃 ④ 제휴 매장 수(59 → ?) ⑤ 11월·12월 대회 날짜. 공지되면 시트 → 글 순서로 고치고 «미공개» 문구를 지운다.
 
-### 매월 25일경 + 10/19 · 11/9 · 11/30 · 12/7 — es 무르시아 Casino Odiseo 상시 글 (집필 중 · 2026-10-03 등재)
-- **글**: es 상시 글(slug 발행 때 확정 — 여기 고쳐 적는다) · 정본 `docs/tournament-factsheets/2026-murcia-orenes-standing.md`
+### 매월 25일경 + 10/19 · 11/9 · 11/30 · 12/7 — es 무르시아 Casino Odiseo 상시 글 (✅ 10-03 발행 · 2026-10-03 등재)
+- **글**: es `casino-odiseo-murcia-poker`(10-03 발행 · 보드 `pp-murcia` es 링크) · 정본 `docs/tournament-factsheets/2026-murcia-orenes-standing.md`
 - **매월 25일경**: 공식 «CALENDARIO PÓKER <다음 달>» 게시 확인(게시 선례 = 전월 24·26일) → 정기 토너먼트 표(Crazy Tuesday·Mensual Odiseo 등) 날짜·바이인 갱신. 캐시 스테이크 이미지(`cash-pantallas-4.webp`·`oferta-6-1.png`)도 다시 판독.
 - **스톱 종료 다음 날 과거형 전환**: VPT 10/19 · 888 Noche 11/9 · Queen Poker Series 11/30 · partypoker 12/7 · 연말 = 2027 «paradas» 공지 확인(공식 /paradas-de-poker-2026/ 후속 페이지).
 - 유지 못 하면: 월별 날짜를 빼고 «정기 포맷(요일·바이인)»만 남긴다(시트 §0).

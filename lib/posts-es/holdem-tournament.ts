@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-10-01",
+  updated: "2026-10-03",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -189,7 +189,7 @@ La mayoría de grandes festivales en vivo te dejan registrarte online por adelan
 
 **El registro suele abrir 1-3 horas antes del inicio del torneo.** Para grandes festivales, regístrate el día anterior online para asegurar tu asiento.
 
-¿Juegas en Asia? Consulta la [guía del APT Incheon 2026](/es/blog/apt-incheon-2026-guide) para ver el calendario, los buy-ins y el flujo de registro de un festival real.
+¿Juegas en Asia? Consulta la [guía del APT Incheon 2026](/es/blog/apt-incheon-2026-guide) para ver el calendario, los buy-ins y el flujo de registro de un festival real. ¿Juegas en España? En la [guía del Casino Odiseo de Murcia](/es/blog/casino-odiseo-murcia-poker) tienes una sala real con torneos semanales desde €30, su app de inscripción online y diez festivales en 2026.
 
 ---
 

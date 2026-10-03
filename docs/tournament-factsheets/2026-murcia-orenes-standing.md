@@ -1,6 +1,6 @@
 # 무르시아 Orenes Gran Casino(«Casino Odiseo») 상시 글 — 사실 시트 **초안** (es 고유 글 후보)
 
-> 열람일 = **2026-10-03**. 상태 = **사실 시트 완료**(10-03 2회차 §7 10항목 판정 · ⛔ 표시 = 공식 원문 없어 글에서 뺄 것) · 갱신 주기 `docs/update-calendar.md` 등재 → **다음 = 집필**(§9 3번부터).
+> 열람일 = **2026-10-03**. 상태 = **사실 시트 완료**(10-03 2회차 §7 10항목 판정 · ⛔ 표시 = 공식 원문 없어 글에서 뺄 것) · 갱신 주기 `docs/update-calendar.md` 등재 → ✅ **10-03 발행** `casino-odiseo-murcia-poker`(WORKLOG 10-03 (5)) · 이후는 캘린더 갱신 회차만.
 > 보드 id = `pp-murcia`(partypoker 스톱 카드 — 상시 글과 별개). 대상 언어 = **es**(ES 수요 — §6).
 > 🔴 이 시트에 없는 숫자는 글에 쓰지 않는다. 갱신 시 열람일을 바꾸고 바뀐 행을 표시한다.
 > **방법론**: 레포 Playwright(`domcontentloaded` + 4초 대기 · `document.body.innerText`) 축어 수집. 요약 도구 미사용.
@@ -149,5 +149,5 @@ https://orenesgrancasino.com/party-poker/ (부분 수집 · 원본 scrape-2 — 
 
 1. ✅ §7 1→10 채움(10-03 2회차). ⛔ 항목(입장료·복장·트램 상세·현장 구매·Queen 상세·888 스택/GTD)은 글에서 뺀다.
 2. ✅ 갱신 주기 `docs/update-calendar.md` 등재(10-03).
-3. 집필 = `docs/native-tournament-posting-workflow.md` + `.cursor/rules/posting.mdc` + es 브리프(`docs/es-brief-tournament.md`) · es 스페인 독자(플레이어 컨셉 — 메모리 es-site-concept). 키워드 = §0.
-4. 게이트·빌드 → 렌즈(현지 기자 적대 검수) → 배포 → MB 통지 · `pp-murcia` 카드 blogLinkByLocale.es 연결 판정.
+3. ✅ 10-03 집필·발행(`casino-odiseo-murcia-poker`). 집필 기준 = `docs/native-tournament-posting-workflow.md` + `.cursor/rules/posting.mdc` + es 브리프(`docs/es-brief-tournament.md`) · es 스페인 독자(플레이어 컨셉 — 메모리 es-site-concept). 키워드 = §0.
+4. ✅ 10-03 게이트·빌드 → 렌즈(현지 기자 적대 검수) → 배포 → MB 통지 · `pp-murcia` 카드 blogLinkByLocale.es 연결 판정.
