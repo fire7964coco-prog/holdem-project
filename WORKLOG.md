@@ -1,3 +1,10 @@
+## 2026-10-03 (4) — 무르시아 상시 글 사실 시트 §7 10항목 판정 = 시트 완료 (문서만)
+
+- 공식 원문(Playwright Europe/Madrid · 팝업은 클릭으로 열어 수집 · 캐시 표 이미지 4장은 Read 육안 판독)으로 §7 1~10 채움: 입장(condiciones-legales 축어 · 서류 표) · 영업시간(팝업 «CASINO 11–05 · MESAS 일~목 16–03 / 금·토·전야 16–04») · 캐시 NLH 0,5-1~5-10 · PLO 5-5·10-20 «A PARTIR DE LAS 17:30H» · Sit & Go · Crazy Tuesday 블라인드표 · 정기성(Finalizados: CT 9/15·22·29 화 · Mensual 9/18·10/23) · 888 상세 · partypoker 12/4~6 전수 · 교통·호텔 팝업 · 캐시 리그 · 앱 계정.
+- 🔴 888 공식 페이지 **자기모순**(본문 ME 스택 30.000 ↔ 카드 1B~1E 50K) → 스택·GTD 쓰지 않기로. Queen Poker Series 상세 페이지 없음 → 표 한 줄만. 입장료·복장·트램 상세·현장 구매 = 원문 없음 → 글에서 뺀다.
+- 함정: 메뉴 «TABLA DE CIEGAS» 둘 다 **캐시 스테이크 이미지**였다(토너먼트 구조 아님). 앱 Finalizados 목록은 이름 라벨이 레코드 «앞»에 붙는다 — 짝을 밀려 읽으면 날짜가 틀린다.
+- 갱신 주기 `docs/update-calendar.md` 등재(매월 25일경 + 스톱 종료 다음 날). 수집 원본 `Temp/murcia-orenes/r3/`. 본문·lib 변경 0 · 빌드·MB 불요.
+
 ## 2026-10-03 (3) — 무르시아 상시 글 사실 시트 초안 신설 (문서만)
 
 - 사장님 «서치 내용·미확인 부분·할 일과 방향을 새 세션에서도 잃지 말고». `docs/tournament-factsheets/2026-murcia-orenes-standing.md` 신설: 방향·기본·연간 스톱 10·10월 정기 토너먼트(Madrid 시각)·VPT·partypoker 핵심 행·SERP·미확인 10항목·함정·다음 절차. 수집 원본을 세션 밖 폴더(`Temp/murcia-orenes/`)로 보존. 핸드오프 최상단을 시트 링크로 교체.

@@ -34,6 +34,12 @@
 - **글**: `apl-seoul-2026-guide` · 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §A
 - **볼 것**: acepokerleague.com 이벤트 DB(series_id=31)·제휴파트너 목록 — ① 장소 상세 주소 ② 티켓 가격·티켓→SEAT 교환 비율 ③ 레이트 등록 마감·페이아웃 ④ 제휴 매장 수(59 → ?) ⑤ 11월·12월 대회 날짜. 공지되면 시트 → 글 순서로 고치고 «미공개» 문구를 지운다.
 
+### 매월 25일경 + 10/19 · 11/9 · 11/30 · 12/7 — es 무르시아 Casino Odiseo 상시 글 (집필 중 · 2026-10-03 등재)
+- **글**: es 상시 글(slug 발행 때 확정 — 여기 고쳐 적는다) · 정본 `docs/tournament-factsheets/2026-murcia-orenes-standing.md`
+- **매월 25일경**: 공식 «CALENDARIO PÓKER <다음 달>» 게시 확인(게시 선례 = 전월 24·26일) → 정기 토너먼트 표(Crazy Tuesday·Mensual Odiseo 등) 날짜·바이인 갱신. 캐시 스테이크 이미지(`cash-pantallas-4.webp`·`oferta-6-1.png`)도 다시 판독.
+- **스톱 종료 다음 날 과거형 전환**: VPT 10/19 · 888 Noche 11/9 · Queen Poker Series 11/30 · partypoker 12/7 · 연말 = 2027 «paradas» 공지 확인(공식 /paradas-de-poker-2026/ 후속 페이지).
+- 유지 못 하면: 월별 날짜를 빼고 «정기 포맷(요일·바이인)»만 남긴다(시트 §0).
+
 ### 10/25 · 11/8 · 11/9 이후 — 가이드 3편 결과 아카이브 전환
 - APL 서울(10/25 종료) · GOP 인천 II(11/8) · WPT 서울(11/9) — 선례 `apt-incheon-2026-guide`처럼 우승자·엔트리·상금풀을 1차 출처로 확인해 훅을 «결과»로 전환. WPT 온라인 예선 절(10/25 마감)은 종료 후 과거형으로.
 - WPT: 10/25 이후 온라인 퀄리파이어 종료 문구 반영.

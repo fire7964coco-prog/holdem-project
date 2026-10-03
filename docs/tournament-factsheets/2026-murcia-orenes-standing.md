@@ -1,6 +1,6 @@
 # 무르시아 Orenes Gran Casino(«Casino Odiseo») 상시 글 — 사실 시트 **초안** (es 고유 글 후보)
 
-> 열람일 = **2026-10-03**. 상태 = **선행 확인 끝 · 사실 시트 미완**(§7 미확인 항목을 채워야 집필 가능).
+> 열람일 = **2026-10-03**. 상태 = **사실 시트 완료**(10-03 2회차 §7 10항목 판정 · ⛔ 표시 = 공식 원문 없어 글에서 뺄 것) · 갱신 주기 `docs/update-calendar.md` 등재 → **다음 = 집필**(§9 3번부터).
 > 보드 id = `pp-murcia`(partypoker 스톱 카드 — 상시 글과 별개). 대상 언어 = **es**(ES 수요 — §6).
 > 🔴 이 시트에 없는 숫자는 글에 쓰지 않는다. 갱신 시 열람일을 바꾸고 바뀐 행을 표시한다.
 > **방법론**: 레포 Playwright(`domcontentloaded` + 4초 대기 · `document.body.innerText`) 축어 수집. 요약 도구 미사용.
@@ -22,7 +22,7 @@
 | 정식 명칭 | «Bienvenido a ORENES GRAN CASINO MURCIA» | https://orenesgrancasino.com/casino/murcia/ |
 | 주소 | «Avda. Juan de Borbón, 224 · Centro de Ocio ODISEO · 30110 Churra, Murcia» · 전화 «649 222 222» | 같은 페이지 하단 |
 | 포커 앱 주소 표기 | «Avenida Don Juan de Borbón, 224, Murcia» | https://poker.orenesgrancasino.com/casino/odiseo |
-| 고객센터 | «Todos los días 09:00h a 00:00h · 968 38 21 53» — 🔴 **카지노 영업시간이 아니라 고객센터 시간**일 수 있다(§7) | 공식 하위 페이지 하단 공통 |
+| 고객센터 | «Todos los días 09:00h a 00:00h · 968 38 21 53» — 🔴 **«ATENCIÓN AL CLIENTE» 블록 = 고객센터 시간으로 확정**(영업시간은 §7-2) | 공식 하위 페이지 하단 공통 |
 | 연령 | 사이트 진입 «Para acceder a este sitio, debes ser mayor de 18 años.» — 🔴 웹사이트 연령 게이트. **입장 규정 원문은 아직**(§7) | 공통 |
 | 포커 메뉴 | «PÓKER · Cash · NEW EDITION · TABLA DE CIEGAS · SIT & GO · TABLA DE CIEGAS» · «RESERVA TU HUECO EN LA MESA · RESERVA ONLINE» · WhatsApp 공식 채널 | /casino/murcia/ |
 | 여행 | «HOTELES CON CONVENIO — Disfruta de las tarifas especiales en alojamientos seleccionados.» · «CÓMO LLEGAR — Estamos bien conectados con tren, tranvía y aeropuerto.» — 상세 페이지 미열람(§7) | /casino/murcia/ |
@@ -63,7 +63,7 @@ https://orenesgrancasino.com/paradas-de-poker-2026/ — «Hemos confirmado las p
 
 - 🔴 Mensual «Día 1B … Solo clasificados»의 뜻(1A 통과자만인지 위성 통과자인지) **미해석** — 상세 «La entrada que está a la venta es la de Día 1A. Los días marcados como «Solo clasificados» no venden entradas: los juegan quienes pasan de los días anteriores.» 축어만 인용하고 해석 문장은 쓰지 않는다.
 - 사다리 구조(축어 근거): Crazy Tuesday 상품에 «Entrada mensual · 110 €»와 «1/2 M.E. 888» → 주간 → 월간 → 888 메인 좌석. 글에서는 이 축어 범위 안에서만 설명.
-- 블라인드 구조(«Niveles»)·레이트레그는 앱 상세에 탭으로만 있음 — 미수집(§7).
+- 블라인드 구조(«Niveles»)·레이트레그 → §7-4에서 수집 완료(Crazy Tuesday).
 
 ## §4 Vamos Poker Tour (10/12~18 · D-9 → 상시 글에서는 §2 표의 한 행 + 과거형 대비)
 
@@ -88,18 +88,55 @@ https://orenesgrancasino.com/party-poker/ (부분 수집 · 원본 scrape-2 — 
   - «casino murcia poker»: Hendon CNP 2026 · lacomunidadpoker Queen(구판) · eldesmarque CNP 2025 · poker-red SPF · gamingintelligence CEP · X VPT · poker10 CNP 2025 · lacomunidadpoker 888 · mundodeportivo 2012 · gamingintelligence 2022
 - 판정: 독립 종합 가이드 0. 경쟁 = 공식 단편 + 낡은 뉴스.
 
-## §7 🔴 아직 확인 못 한 것 (집필 전 필수 · 위에서부터)
+## §7 ✅ 확인 결과 (10-03 2회차 · 열람일 2026-10-03 · Playwright `Europe/Madrid` · 원본 `…/murcia-orenes/r3/`)
 
-1. **입장 규정**: 신분증(DNI/NIE/여권) 필요 여부 · Registro General de Interdicciones de Acceso al Juego(출입 금지 명단) 조회 · 입장료 유무 · 복장 — 공식 «Condiciones legales»·FAQ·«SERVICIOS» 메뉴에서 축어. 없으면 무르시아 주 규정 원문(1차)만.
-2. **카지노·포커룸 영업시간**: /casino/murcia/ 하단 «HORARIOS — Consultar horarios» 링크 대상 열람. §1 고객센터 시간과 혼동 금지.
-3. **캐시 게임**: 스테이크·게임 종류 — 이미지 `https://orenesgrancasino.com/wp-content/uploads/info-web-vertical-cash-poker-1.webp`를 받아 Read로 육안 판독 · 앱 «lista de espera / reservas» 이용 방법.
-4. **블라인드표·Sit & Go**: 메뉴 «TABLA DE CIEGAS» 두 개 대상 열람(정기 토너먼트 구조 근거).
-5. **정기 포맷의 «정기성»**: 10월 1개월분만 봤다 → `/calendario-poker-septiembre-4/`·`-agosto-2/`(본문이 이미지일 가능성 — 9월 페이지 innerText에 일정 텍스트 없음) 이미지 판독 또는 앱 «Finalizados 15» 목록으로 Crazy Tuesday=매주 화요일·Mensual=매월인지 확인. 확인 전엔 «10월에는»으로만 쓴다.
-6. **888 Noches(11/2~8)·Queen Poker Series(11/26~29) 상세**: 공식 페이지(«888 NOCHE DE PÓKER – EL FESTIVAL LLEGA A MURCIA» 뉴스) 바이인·GTD.
-7. **partypoker 12/4 이후 행** 마저(scrape-2 잘림 아님 — 출력에서 끊어 봤을 뿐, 원본 파일 재확인).
-8. **교통·호텔 제휴** 상세 페이지(«CÓMO LLEGAR»·«HOTELES CON CONVENIO» 링크 대상) — 트램·공항 축어.
-9. **리그(«BOTE LIGA»)** 규정 — 쓸지 판단 후.
-10. **Poker Manager 앱 계정**: 온라인 구매에 등록 필요 여부(«Inicia sesión o regístrate para comprar tu entrada online» 축어 확보) · 현장 구매 가능 여부.
+> 판정 규칙: «공식 원문 없음» 항목은 글에서 뺀다. 아래 ⛔ 표시가 그것이다.
+
+**1. 입장 규정** — https://orenesgrancasino.com/condiciones-legales/ (🔴 그룹 공통 페이지 · 무르시아 전용 아님 — 글에선 «Orenes Gran Casino의 법적 조건»으로 인용)
+- 축어: «La entrada al casino está prohibida a menores de dieciocho años. Las personas inscritas en el registro de prohibidos en el registro de interdicciones del juego no podrán acceder al casino ni participar en el torneo. Para acceder al casino o realizar transacciones económicas en la caja es obligatorio presentar el pasaporte o DNI de países comunitarios.»
+- 서류 표 축어: «Ciudadanos españoles DNI · Ciudadanos extranjeros residentes en España Tarjeta de residencia · Ciudadanos de la Unión Europea IDE o pasaporte (documentos originales) · Ciudadanos no pertenecientes a la Unión Europea Pasaporte (documento original)»
+- 대회 조건 축어: «Solo se devolverá el importe de las inscripciones en caso de anulación del evento. El pago de los premios del torneo de cuantía elevada se hará mediante transferencia bancaria. El ticket de inscripción es personal e intransferible.»
+- 무르시아 이미지 하단(캐시 리그 포스터) 축어: «PROHIBIDA LA ENTRADA A MENORES DE 18 AÑOS. IMPRESCINDIBLE DNI.»
+- ⛔ 입장료·복장: 공식 원문 없음 → 글에서 뺀다.
+
+**2. 영업시간** — /casino/murcia/ «Consultar horarios» 팝업(Elementor id 36898) 축어:
+«CASINO — De lunes a domingo de 11:00h a 05:00h · SLOTS — De lunes a domingo de 11:00h a 05:00h · MESAS — De domingo a jueves de 16:00h a 03:00h · Viernes, sábados y vísperas de festivos de 16:00h a 04:00h»
+- 🔴 «MESAS»가 포커 테이블을 포함하는지 원문에 없다 → «mesas de juego» 시간으로만 인용. 포커 캐시 시작은 3번 «A PARTIR DE LAS 17:30H»가 근거.
+- §1 «Todos los días 09:00h a 00:00h · 968 38 21 53» = **«ATENCIÓN AL CLIENTE»** 블록으로 확정(영업시간 아님).
+
+**3. 캐시 게임** — 메뉴 링크 대상 이미지 4장 육안 판독(Read):
+- `cash-pantallas-4.webp`(첫 «TABLA DE CIEGAS»): «TEXAS HOLD'EM · TODOS LOS DÍAS · A PARTIR DE LAS 17:30H» 표 — CIEGAS / MÍN / MÁX / RAKE: «1€-3€ · 100€ · 600€ · 10€» · «2€-5€ · 200€ · 2.000€ · 15€» · «5€-10€ · 500€ · NO MÁX. · 20€» · «NEW 0,5-1€ · 50€ · 150€ · 10€»
+- `oferta-6-1.png`(둘째 «TABLA DE CIEGAS»): «POT LIMIT OMAHA · TODOS LOS DÍAS · A PARTIR DE LAS 17:30H» — «5€-5€ · 200€ · 2.000€ · 15€» · «10€-20€ · 500€ · NO MÁX. · 20€»
+- 🔴 RAKE 열의 단위(핸드당 상한·시간당 등)는 원문에 없다 → 숫자만 표로, 해석 문장 금지. 전화 «Nº TLF. 665 35 60 50»(= WhatsApp «ESCRÍBENOS» wa.me/665356050).
+- 앱 /casino/odiseo/cash 축어: «LISTA DE ESPERA MESAS DE CASH» · 열람 시점 «No hay mesas activas ni programadas en este momento»(오전 열람 — 17:30 이전). 홈페이지 «RESERVA TU HUECO EN LA MESA · RESERVA ONLINE».
+
+**4. 블라인드표·Sit & Go**
+- 메뉴 «TABLA DE CIEGAS» 두 개 = **캐시 스테이크 표**(3번)였다. 토너먼트 구조가 아님.
+- `cash-pantallas-5.webp`(«SIT & GO»): «DISPONIBLE LOS DÍAS SIN TORNEO · RESERVA ANTICIPADA · MÍNIMO 6 JUGADORES · 10€/H CADA JUGADOR»
+- 토너먼트 구조(Crazy Tuesday 10/6 앱 상세 «Niveles» 탭 «Estructura de Ciegas»): Nv1 «100 / 100 · Ante 100 · 25' · 18:00» → Nv8 «700 / 1.4K · 25'» → «Cena 60' 21:40» → Nv9부터 «20'» … Nv28 «500K / 1M · 05:45». 휴식 «Descanso 20' (19:40)»·«10'»·«15'». 공식 /torneos/ 카드 축어: «BUY IN + FEE 25€ + 5€ · STACK INICIAL 20K · NIVELES 25'/20' · PUNTUALIDAD 2.5K (NIVEL 1) · REENTRY 8 NIVELES · AÑADIDO 1/2 M.E. 888».
+
+**5. 정기성** — 앱 «Finalizados 15» 목록(라벨이 레코드 앞에 오는 구조 — 이름↔날짜 짝을 맞춰 읽음):
+- Crazy Tuesday: «mar, 15 sept • 18:00» · «mar, 22 sept • 18:00» · «mar, 29 sept • 18:00»(각 30 €) + 예정 10/6 · 10/20. **10/13은 VPT 주간이라 없음.** → 글: «los martes a las 18:00 (salvo semanas de festival)» — 🔴 «salvo…»는 관찰 기반이므로 «en septiembre y octubre de 2026 se jugó/juega…»로 날짜를 박아 쓴다.
+- Mensual Odiseo: «vie, 18 sept • 18:00 · 110 €» + 예정 «vie, 23 oct». → 2개월 관찰. «mensual»은 이름 그대로 인용, 매월 셋째·넷째 금요일 같은 규칙은 쓰지 않는다.
+- Mystery Bounty: «jue, 24 sept • 18:00 · 70 €» + 예정 «jue, 8 oct».
+- 그 밖 9월 관찰: Speedy(dom 27 sept 17:00 · 30 €) · Speedy Pineapple(sáb 19 sept · 30 €) · KO Progresivo(jue 1 oct 18:00 · 60 €) · DealerEM·PBLF 행사 이벤트.
+- 🔴 목록의 «0 / 119» 같은 숫자는 의미 미표기 → 쓰지 않는다.
+- 월 캘린더 게시일: «CALENDARIO PÓKER OCTUBRE 24 SEPTIEMBRE 2026» · «SEPTIEMBRE 26 AGOSTO 2026» → **다음 달 캘린더는 전월 말 1주 전후 게시**(갱신 주기 근거).
+
+**6. 888 Noche de Póker (11/2~8)** — https://orenesgrancasino.com/888/ 축어:
+- «Del 2 al 8 de noviembre, el Orenes Gran Casino Murcia – Odiseo acogerá … el Gran Final de 888 Noche de Póker – El Festival» · «entre 300 y 400 clasificados online garantizados»
+- «El gran atractivo del festival será el Main Event, con un buy-in de 400 + 40 €, stack inicial de 30.000 puntos y niveles de 45 minutos.» · Día 1A mié 4 nov 16:30 · 1B jue 5 16:00 · 1C vie 6 16:00 · 1E Turbo sáb 7 12:00 · Día 2 sáb 7 17:00 · Día 3 Final dom 8 15:00 · «satélites del Main Event, con un buy-in de 88 + 10 €» · «High Roller, con un buy-in de 800 + 88 €» · «Mystery Bounty … 100 + 100 + 20 €»
+- 🔴 **1차 출처 자기모순**: 본문은 ME 스택 «30.000», 같은 페이지 일정 카드는 Día 1A «30K»·1B/1C/1E «50K». → **스택은 쓰지 않는다.** GTD도 페이지에 없음 → 쓰지 않는다. (본문 «Closer» 언급 ↔ 카드 목록엔 없음 — 이벤트 이름 나열 금지, ME·HR만.)
+- **Queen Poker Series (11/26~29)**: paradas 페이지 링크 목록에 상세 페이지 **없음** → ⛔ §2 표의 한 행(이름·기간)만.
+
+**7. partypoker 12/4 이후** — https://orenesgrancasino.com/party-poker/ 전수 확인: ME 1B vie 4 dic 14:00 · 1C Turbo vie 4 21:00 (25′) · 1D Hyper sáb 5 12:00 (15′) · ME Día 2 sáb 5 18:00 «SE JUEGA HASTA LA MESA FINAL» · **ME Mesa final dom 6 dic 15:00** · Mystery Bounty «115€ + 100€ + 35€» 1A sáb 5 15:00 / 1B Turbo 21:00 / 1C Hyper dom 6 11:00 / Día 2 dom 6 16:00 · «HIGH ROLLER NLH 7-MAX · 900€ + 100€ · 40K» dom 6 16:00 · «LAST CHANCE NLH DOUBLE BOARD 85€ + 15€» dom 6 18:00. 보드 note «12/3~6» ✓.
+
+**8. 교통·호텔** — 팝업 축어(id 35779·35806·35752): «CÓMO LLEGAR — AEROPUERTO DE ALICANTE · AEROPUERTO DE MURCIA · ESTACIÓN DE BUS · ESTACIÓN DE TREN · ESTACIÓN DE CARTAGENA (각 «UBICACIÓN» 지도 링크) · TRANSPORTE PRIVADO 649 22 22 22» · «HOTELES CON CONVENIO — RINCÓN DE PEPE · HOTEL JC1 · HOTEL B&B · HOTEL NELVA · EL CHURRA · CONSULTA EN EL NÚMERO 690 74 53 65» · 페이지 문구 «Estamos bien conectados con tren, tranvía y aeropuerto.»
+- ⛔ 트램 노선·정류장명·소요 시간: 공식 원문 없음 → 쓰지 않는다(«tranvía»는 위 축어로만).
+
+**9. 리그** — `info-web-vertical-cash-poker-1.webp` 판독: «PÓKER Cash league 5º EDICIÓN · ACUMULA HORAS EN NUESTRAS MESAS DE CASH Y GANA UNA ENTRADA PARA EL TORNEO VIP · MÍNIMO 25H ACUMULADAS · CADA HORA EXTRA SUPERIOR A LAS 25H, SE ACUMULAN +100 PUNTOS PARA EL TORNEO. · SE SACARÁ 1€ POR FLOP DESTINO A LA MANO DE LA SEMANA Y LA LIGA · EL 10% DEL PRIZE POOL SE DESTINARÁ A LOS 3 PRIMEROS CLASIFICADOS DEL RANKING. (50% 30% 20%)» + 앱 «BOTE LIGA - TORNEO 20 NOVIEMBRE 2026 · 4069€» (🔴 금액은 열람일 값 — 글엔 금액 대신 «bote acumulado que se juega en un torneo el 20 de noviembre»).
+
+**10. 앱 계정** — 상세 축어 «Iniciar sesión y comprar · Crear cuenta · Inicia sesión o regístrate para comprar tu entrada online» → 온라인 구매 = 계정 필요. /register 축어: «Casino * · Nombre completo * · Email * · DNI / NIE (recomendado) — Si ya tienes ficha de jugador en el casino, introduce tu documento para vincular tu cuenta automáticamente. · Confirmo que soy mayor de 18 años *». ⛔ 현장 구매 가능 여부: 원문 없음 → «también en caja» 같은 문장 금지.
 
 ## §8 함정 (이번에 밟은 것)
 
@@ -110,7 +147,7 @@ https://orenesgrancasino.com/party-poker/ (부분 수집 · 원본 scrape-2 — 
 
 ## §9 다음 세션 절차
 
-1. 이 시트 §7을 1→10 순서로 채운다(Playwright · 축어 + URL + 열람일). 한 항목이라도 «공식 원문 없음»이면 그 절은 글에서 뺀다 — 추측 금지.
-2. 갱신 주기를 `docs/update-calendar.md`에 등재(§0).
+1. ✅ §7 1→10 채움(10-03 2회차). ⛔ 항목(입장료·복장·트램 상세·현장 구매·Queen 상세·888 스택/GTD)은 글에서 뺀다.
+2. ✅ 갱신 주기 `docs/update-calendar.md` 등재(10-03).
 3. 집필 = `docs/native-tournament-posting-workflow.md` + `.cursor/rules/posting.mdc` + es 브리프(`docs/es-brief-tournament.md`) · es 스페인 독자(플레이어 컨셉 — 메모리 es-site-concept). 키워드 = §0.
 4. 게이트·빌드 → 렌즈(현지 기자 적대 검수) → 배포 → MB 통지 · `pp-murcia` 카드 blogLinkByLocale.es 연결 판정.
