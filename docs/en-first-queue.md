@@ -217,6 +217,28 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | P-12 | ⑫ bvb-connected | FAQ «three times as many overpairs» vs 본문 «three and a half» | 42/12 = 3,5 | «dreieinhalbmal (42 gegen 12 Combos)» |
 | P-13 | ⑬ ace-paired | tldr·바로 답 «what split them was not that the board paired but whose card paired» | 자리·레인지도 바뀐 비교(본문 ⚠ 단서와 어긋남) | «weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt – neben dem Board haben sich auch Sitz und Ranges geändert» |
 
+### 2-Q. 우편함 수신분 — 검수장 PT ④·JA ④ 결과의 EN-먼저 요청 (MA-285 · 289 · 291 · 295 · 301 · 등재 2026-10-04 · 회신 MB-162)
+
+> 🔴 **다음 실행의 배치**(사장님 10-04 «① JA 고유 먼저 → ② EN-먼저»). JA 고유분은 10-04 배포(MB-162). 아래는 **EN을 먼저 고친 뒤 PT·JA·나머지 로케일 사본까지 전파**. 착수 전 각 자리의 로케일 사본 수를 grep으로 센다. 문안 근거·1차 출처는 각 MA 행과 검수장 보고서(`../홀덤검수/reports/검수-pt-회차4-*` · `검수-ja-회차4-*`).
+
+| # | MA | 글 | EN 자리 | 요지 |
+|---|---|---|---|---|
+| Q-1 | 285-1 | when-to-fold | L117 «the worst case possible»(A♥K♥ 세트 예제 · 9로케일 동형) | 45조합 중 A♥K♥ 34.44%는 **최고값**(최저 3♥4♥ 32.42%) → «o pior caso» 삭제 또는 «어떤 메이드 플러시 상대로도 ~32–34%» |
+| Q-2 | 285-2 | continuation-bet | 실수표 L198 «You can't realize equity acting first» | 전칭 → «as much equity»(본문 L139·FAQ와 정렬) |
+| Q-3 | 289-1 | bad-beat | Mabuchi 주석 L134 «the chips only went in after the last card fell» | 프리플랍·턴 투입 시점엔 Mabuchi 우세 → 삭제 또는 «큰 칩(올인)은 리버 뒤» 한정 |
+| Q-4 | 289-2 | glossary | String bet L83 «some rulebooks (WSOP) accept a bare "raise"» | WSOP 문서 내부에서 갈림 → WSOP 귀속 삭제·«금액을 먼저 말하거나 한 동작» |
+| Q-5 | 291-1 | straddle | 표 sleeper «Last to act: No» L80 · «Position it never buys» L90 | 모두 폴드 시 프리플랍 마지막 액션 → FAQ7 강도(«doesn't grant position the way a live straddle does»)로 |
+| Q-6 | 291-2 | rake | FAQ10 L180 live/online 전칭 | 본문 «tends to»·«usually» 한정을 FAQ로(캡 반례 WSOP B 31 $6 ↔ Natural8 $10) |
+| Q-7 | 291-3 | straddle | L63 «That single fact is why…» | «one of the reasons»(같은 글 «Three reasons») |
+| Q-8 | 291-4 | fish | 유형표 Nit L86 «never bluffs | Fold to his raises» · Calling station L88 «never raises/folds» | «almost never/rarely» · «Fold to most of his raises» |
+| Q-9 | 295-4 | beginners | FAQ «A full hand has four betting rounds» | 올인 뒤 4회 미만 → 본문 «up to four»·올인 한정을 FAQ로 |
+| Q-10 | 301-2ⓐ | kicker | FAQ «Only a higher straight beats a lower one.» | 플러시 이상도 이김 → «Among straights, only a higher straight…» 류 (ES·DE 동형) |
+| Q-11 | 301-2ⓑ | kicker | FAQ «board cards higher than your hole cards → shared kicker» | 기준이 자기 손패뿐 → note «both players'» 문면으로 |
+| Q-12 | 301-2ⓒ | tiebreak | FAQ «there is one place suits are used» | WSOP B 150·151 · TDA 2026 Rule 11 부록 → «one place in deciding a pot» 류 한정 |
+| Q-13 | 사장님 결정 10-04 | showdown · beginners(+8로케일) | 슬로롤 «No rule bans it by name» | 🔴 **사장님 결재: 대회 규정(TDA·WSOP)으로 한정** — «TDA·WSOP 대회 규정에는 이름까지 박아 금지하는 조항이 없다» 류. 반례 = Royal Queens Poker Group Code of Conduct §4 B(MA-295 통지 1 · MA-299 통지 1) |
+
+🪶 같은 MA의 통지(라벨 OK 유지 · 자동 착수 금지): MA-289 통지 1(cooler 2분법 «강한 패끼리» 조건) · MA-297 통지 1(재오픈 «already acted»에 «not facing a full raise» 조건 — EN L8) · MA-299 통지 2·3(showdown «in any cash game» WSOP 범위 · Rule 58 binding fold · 18-B last aggressor · B 143 예외) · MA-301 통지 1·2(EN 동형 8자리) · MA-291 통지 1·2(PT 고유 2 — PT 손질 때).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

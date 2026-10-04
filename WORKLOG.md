@@ -1,3 +1,26 @@
+## 2026-10-04 (5) — 우편함 밀린 MA 처리 1/2: JA 고유 정정 21자리 배포 · EN-먼저 13건 등재 (MB-162)
+
+- 대상 MA-295·297·299·301의 JA 고유 요청(beginners 3 · all-in 4 · betting 4 · blind 3 · game-order 3 · showdown 1 · hand-rankings 2 · tiebreak 3). 교열·룰 렌즈 1종(diff) 지적 8건 반영(오드칩 「左回り」 방향 오독 · 스트래들 시 BB 체크 불가 · 프리롤 권유 삭제 등).
+- 게이트: audit:hard --locale=ja 60편 🔴 0 · check:stamp 0 · 빌드 exit 0. updated 10-04(masterUpdated 불변 — JA 고유).
+- EN-먼저 13건 = docs/en-first-queue.md §2-Q(MA-285·289·291·295-4·301-2 + 슬로롤 사장님 결재 «대회 규정(TDA·WSOP)으로 한정»).
+- 🔴 솔버 후기창 미배포 커밋 7개를 브랜치 solver-reviews-code1로 옮기고(사장님 허락) main = origin/main + 문서 + 이번 정정으로 재구성 · 후기창은 10/7 solver_open 판독 뒤 브랜치에서 합친다.
+
+## 2026-10-04 (4) — S-035 반영(MB-160) · Supabase redirect www 누락 발견·추가(MB-161)
+
+- S-035 회신 반영 `a86f3837`: 사전 fr «tu»·id «Anda» 정정(랜딩 실측 근거) · 확인 뒤 이름 바꾸기 POST nickname · has_usage 서버 판정(trainer_attempts) · trainer_attempts created_at 트리거(MB-159 약속분 누락 보충).
+- 🔴 Supabase Auth Redirect URLs에 **www가 없었다**(`holdemmaster.com/**`만) — 사장님 11:20 `https://www.holdemmaster.com/**` 추가. 그 전 소셜 로그인은 복귀가 Site URL(홈)로 떨어졌을 것(기존 커뮤니티 로그인 포함). MB-160의 «이미 www로 돌아온다» 추정은 틀려 MB-161로 정정.
+- SQL 실행: 1차 실패(트리거 함수 `$`가 JS replace로 `## 2026-10-04 (4) — S-035 반영(MB-160) · Supabase redirect www 누락 발견·추가(MB-161)
+
+- S-035 회신 반영 `a86f3837`: 사전 fr «tu»·id «Anda» 정정(랜딩 실측 근거) · 확인 뒤 이름 바꾸기 POST nickname · has_usage 서버 판정(trainer_attempts) · trainer_attempts created_at 트리거(MB-159 약속분 누락 보충).
+- 🔴 Supabase Auth Redirect URLs에 **www가 없었다**(`holdemmaster.com/**`만) — 사장님 11:20 `https://www.holdemmaster.com/**` 추가. 그 전 소셜 로그인은 복귀가 Site URL(홈)로 떨어졌을 것(기존 커뮤니티 로그인 포함). MB-160의 «이미 www로 돌아온다» 추정은 틀려  하나가 됨 — 내 실수) → `9cbd532d` 수정 → 성공. anon 검증 = 테이블 5 존재 · 뷰 401 · 쓰기 RLS 거부 · 버킷 존재.
+
+## 2026-10-04 (3) — 솔버 후기창 코드 1 (미배포 · 로컬 커밋만)
+
+- 설계 §10-2 그대로 구현 · 파일 지도 = `docs/solver-review-design.md` §7-3. SQL `supabase/solver-reviews.sql`(테이블 5 + 공개 뷰 anon 회수 + Storage 버킷 `review-avatars`) · 검사 한 벌 `lib/solver-feedback-server.ts` · 랜딩 액션 `app/solver-feedback/actions.ts` · 앱 API `/api/solver-feedback`(CORS 솔버 도메인 · Bearer 검증) · 블록 `components/solver-reviews/`(서버 읽기 = 쿠키 없음 + 태그 캐시 → 12개 랜딩 ○ 정적 유지) · 12언어 문구 `lib/solver-reviews-i18n.ts` · 12개 랜딩 FAQ 바로 위 슬롯 · `/admin` «솔버 후기·질문» 탭(숨김 3사유·답글·이미지 숨김 · 삭제 없음) · 캐릭터 12종 webp · 닉네임 사칭 금지어(커뮤니티 updateNickname도 공용) · 개인정보처리방침 항목·보관 추가.
+- 게이트 `check:solver-feedback` 🔴 0 · 셀프테스트 10/10 · `--build`는 로컬 `.env.local` 서비스 키 주석 처리라 🔴 12(정상 — 키 없으면 잡는다는 증거) · 빌드 exit 0 · check:images 이상 없음(아바타 12장은 폭<750군 · 장당 4~7KB).
+- screen-review(개발 전용 표본 `SOLVER_REVIEWS_FIXTURE`): 390·1440 넘침 0·콘솔 오류 0. 고친 것 = «전체 후기 보기» 화살표 이중 · 입력 후에도 남던 오류 문구. 쓰기 흐름 = 별(선택) → 한 줄 → 남기기 → 구글/카카오/이메일(초안 기기 보관 확인).
+- 🔴 남은 것: 사장님 SQL 실행 → 실제 DB로 쓰기·숨김·답글·이미지 올리기 시험 → 10/7 판독 뒤 배포(개인정보처리방침 UPDATED를 배포일로) · Vercel 빌드 env에 서비스 키 있는지 빌드 로그 경고로 확인.
+
 ## 2026-10-04 (2) — 솔버 후기창 솔버 요청 발송 (MB-159) · 세션 마감
 
 - `docs/reply-to-solver-2026-10-04.md`: 요청 ① 앱 안 자리·폼(→ 본체 /api/solver-feedback · Bearer JWT) ② 공유 링크 본체 경유 /s/<id>(서버 디코드 · 디코드 함수 목록 요청) ③ PWA 요약 한 줄 · 통지 trainer_attempts.created_at 강제 트리거 · 질문 Auth redirect 두 도메인 · 1회 한 줄 곤란 화면. 본체 API 라이브(10/7 판독 뒤) 전 출시 금지 명시.
