@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở showdown của một giải đấu không có all-in, người chủ động cuối ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút Dealer lật trước. Khi có all-in, mọi tay bài còn sống phải lật ngay sau khi toàn bộ cược kết thúc. Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối. Cash game áp dụng luật nhà về lật và muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -113,7 +113,7 @@ Tình huống thật: bạn cầm J♥ 10♥ trên board Q♥ 9♥ 8♥ 2♣ 5�
 
 Slow roll là ==cố tình kéo dài thời gian lật một tay bài rất mạnh khi bạn biết chắc mình đã thắng==.
 
-Bạn cầm nuts (tay bài mạnh nhất có thể). Đối thủ lật một tay bài mạnh. Bạn ngừng lại, giả vờ suy nghĩ, nhìn bài thật chậm, bắt cả bàn chờ — rồi mới lật tay bài thắng. Về luật thì hợp lệ. Nhưng cả thế giới poker đều ghét.
+Bạn cầm nuts (tay bài mạnh nhất có thể). Đối thủ lật một tay bài mạnh. Bạn ngừng lại, giả vờ suy nghĩ, nhìn bài thật chậm, bắt cả bàn chờ — rồi mới lật tay bài thắng. Luật giải đấu của TDA và WSOP không có điều nào cấm đích danh hành vi này. Nhưng cả thế giới poker đều ghét.
 
 ![Slow roll trong poker — những người chơi khác bực bội khi một người cố tình trì hoãn lật tay bài thắng](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Ngoài nghĩa vụ lật bài khi all-in trong giải đấu, tay bài thua c
 
 **Q. Slow roll trong poker là gì và vì sao bị ghét?**
 
-A. Slow roll là cố tình trì hoãn lật một tay bài thắng mà bạn đã biết chắc là mạnh nhất. Nó hợp lệ nhưng bị cả cộng đồng ghét vì bị xem là cố tình làm nhục đối thủ. Nếu bạn cầm nuts hoặc tay bài thắng rõ ràng, hãy lật ngay. Tốc độ lật bài nói lên rất nhiều về con người bạn ở bàn poker.
+A. Slow roll là cố tình trì hoãn lật một tay bài thắng mà bạn đã biết chắc là mạnh nhất. Luật giải đấu của TDA và WSOP không cấm đích danh nó, nhưng nó bị cả cộng đồng ghét vì bị xem là cố tình làm nhục đối thủ. Nếu bạn cầm nuts hoặc tay bài thắng rõ ràng, hãy lật ngay. Tốc độ lật bài nói lên rất nhiều về con người bạn ở bàn poker.
 
 **Q. Trong tình huống all-in, ai lật bài trước?**
 

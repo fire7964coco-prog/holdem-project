@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En tournoi sans tapis, le dernier agresseur de la rivière montre en premier ; si tous ont checké, c'est le premier joueur actif à gauche du bouton. Avec un tapis, toutes les mains restantes doivent être révélées dès la fin des enchères. Celui qui a payé la rivière et gardé ou étalé ses cartes peut demander la main du dernier agresseur. En cash, montrer ou jeter dépend des règles de la maison.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Situation réelle : tu as J♥ 10♥ sur un tableau Q♥ 9♥ 8♥ 2♣ 5♦. Tu
 
 Le slow roll, c'est ==prendre exprès tout son temps pour montrer une main très forte alors qu'on sait déjà qu'on a gagné==.
 
-Tu as les nuts. L'adversaire montre une main forte. Tu marques une pause, tu fais semblant de réfléchir, tu regardes tes cartes lentement, tu fais attendre tout le monde — et là tu retournes la gagnante. Techniquement légal. Universellement détesté.
+Tu as les nuts. L'adversaire montre une main forte. Tu marques une pause, tu fais semblant de réfléchir, tu regardes tes cartes lentement, tu fais attendre tout le monde — et là tu retournes la gagnante. Aucune règle des règlements de tournoi TDA et WSOP ne l'interdit nommément. Universellement détesté.
 
 ![Slow roll au poker — les autres joueurs exaspérés pendant qu'un joueur retarde volontairement de montrer sa main gagnante](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Hors de l'obligation de révéler un all-in en tournoi, une main perdante peu
 
 **Q. C'est quoi un slow roll au poker et pourquoi c'est mal vu ?**
 
-A. Le slow roll consiste à retarder exprès la révélation d'une main gagnante que tu sais déjà être la meilleure. C'est légal, mais universellement détesté, car c'est perçu comme humilier volontairement l'adversaire. Si tu tiens les nuts ou une gagnante évidente, retourne tes cartes immédiatement. La vitesse à laquelle tu montres en dit long sur toi à la table.
+A. Le slow roll consiste à retarder exprès la révélation d'une main gagnante que tu sais déjà être la meilleure. Les règlements de tournoi TDA et WSOP ne l'interdisent pas nommément, mais c'est universellement détesté, car c'est perçu comme humilier volontairement l'adversaire. Si tu tiens les nuts ou une gagnante évidente, retourne tes cartes immédiatement. La vitesse à laquelle tu montres en dit long sur toi à la table.
 
 **Q. Dans une situation d'all-in, qui montre ses cartes en premier ?**
 

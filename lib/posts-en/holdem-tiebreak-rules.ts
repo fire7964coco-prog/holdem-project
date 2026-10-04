@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -229,7 +229,7 @@ A. The higher straight flush wins, decided by its top card — a queen-high stra
 
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
-A. No — but there is one place suits are used at a Hold'em table, and it is not the pot. In cash games, and under most card-room house rules, each player draws a card to decide where the dealer button starts, and if two draws tie on rank the suit order settles it. (WSOP tournaments skip the opening draw: ==Tournament Rule 85== starts the button at the first stack to the dealer's right and holds a draw for the button only with three, two and one tables left.) Either way that picks a *seat*, never a hand. Apart from the button draw — which the WSOP rulebook's glossary settles by "rank and suit" — the only suit order in the tournament rulebook belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
+A. No — suits never decide a pot. Where they do show up at a Hold'em table is in card draws that settle a seat. The best-known is the button draw: in cash games, and under most card-room house rules, each player draws a card to decide where the dealer button starts, and if two draws tie on rank the suit order settles it. (WSOP tournaments skip the opening draw: ==Tournament Rule 85== starts the button at the first stack to the dealer's right and holds a draw for the button only with three, two and one tables left.) Tournament directors also seat players from a broken table by dealing each one a card, the TDA example giving the first seat to the ==highest playing card by suit==. Either way that picks a *seat*, never a hand. Among the WSOP rulebook's hand rules, the only suit order belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
 
 **Q. What happens if both players have the exact same hand?**
 

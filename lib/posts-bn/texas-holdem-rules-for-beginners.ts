@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমে প্রতিটি খেলোয়াড় 2টি hole কার্ড পান, 5টি community কার্ড ব্যবহার হয়, আর চারটি betting রাউন্ডের পর সেরা 5-কার্ড হ্যান্ড জেতে।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. dealer button-এর বাঁ দিকের দুজন খেলোয�
 
 **Q. টেক্সাস হোল্ডেমের নিয়মের ঝটপট ভার্সন কী?**
 
-A. blinds দিন → 2টি hole কার্ড বিলি করুন → preflop betting → 3 community কার্ড (flop) খুলুন + betting → 1 কার্ড (turn) খুলুন + betting → 1 কার্ড (river) খুলুন + betting → সেরা হ্যান্ড জেতে। মোট: চার betting রাউন্ড, পাঁচ community কার্ড, একজন বিজয়ী — বা ভাগ হওয়া pot, যদি সেরা পাঁচ কার্ড হুবহু সমান হয়।
+A. blinds দিন → 2টি hole কার্ড বিলি করুন → preflop betting → 3 community কার্ড (flop) খুলুন + betting → 1 কার্ড (turn) খুলুন + betting → 1 কার্ড (river) খুলুন + betting → সেরা হ্যান্ড জেতে। মোট: সর্বোচ্চ চার betting রাউন্ড (বাকি সবাই fold করলে বা খেলোয়াড়েরা all-in হলে কম), সর্বোচ্চ পাঁচ community কার্ড, একজন বিজয়ী — বা ভাগ হওয়া pot, যদি সেরা পাঁচ কার্ড হুবহু সমান হয়।
 
 **Q. টেক্সাস হোল্ডেম খেলতে কতজন খেলোয়াড় লাগে?**
 

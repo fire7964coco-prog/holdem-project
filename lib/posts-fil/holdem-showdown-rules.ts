@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa non-all-in tournament showdown, last river aggressor ang unang magpapakita; kapag nag-check through ang river, unang active player sa kaliwa ng button. Kapag may all-in at tapos na ang betting, lahat ng live hand ay dapat i-table. Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand ng last aggressor. House rule ang masusunod sa cash game.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Real na sitwasyon: hawak mo ang J♥ 10♥ sa board na Q♥ 9♥ 8♥ 2♣ 5♦.
 
 Ang slow rolling ay ==sinadyang pagtagal bago ipakita ang napakalakas na hand kahit alam mong panalo ka na==.
 
-Hawak mo ang nuts. Nagpakita ang kalaban ng malakas na hand. Nag-pause ka, nagkunwaring nag-iisip, dahan-dahang sinilip ang cards mo, pinaghintay ang lahat — tapos ibinukas ang panalo. Technically legal. Universally kinamumuhian.
+Hawak mo ang nuts. Nagpakita ang kalaban ng malakas na hand. Nag-pause ka, nagkunwaring nag-iisip, dahan-dahang sinilip ang cards mo, pinaghintay ang lahat — tapos ibinukas ang panalo. Walang rule sa tournament rulebooks ng TDA at WSOP na nagbabawal dito sa pangalan. Universally kinamumuhian.
 
 ![Slow rolling sa poker — inis ang ibang players habang sinasadyang inaantala ng isang player ang pagpapakita ng winning hand](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Sa non-all-in showdown, puwedeng mag-muck kung tiyak na talo, pero maaaring m
 
 **Q. Ano ang slow rolling sa poker at bakit ito masama?**
 
-A. Ang slow rolling ay sinadyang pag-antala sa pagpapakita ng winning hand na alam mo nang pinakamalakas. Legal ito pero universally kinamumuhian dahil tinitingnan itong sinadyang paghihiya sa kalaban. Kung hawak mo ang nuts o malinaw na panalo, ibukas mo ang cards mo agad. Ang bilis ng pagpapakita mo ay malaki ang sinasabi tungkol sa ugali mo sa mesa.
+A. Ang slow rolling ay sinadyang pag-antala sa pagpapakita ng winning hand na alam mo nang pinakamalakas. Hindi ito ipinagbabawal sa pangalan ng tournament rulebooks ng TDA at WSOP, pero universally kinamumuhian dahil tinitingnan itong sinadyang paghihiya sa kalaban. Kung hawak mo ang nuts o malinaw na panalo, ibukas mo ang cards mo agad. Ang bilis ng pagpapakita mo ay malaki ang sinasabi tungkol sa ugali mo sa mesa.
 
 **Q. Sa all-in situation, sino ang unang magpapakita ng cards?**
 

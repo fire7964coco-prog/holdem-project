@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Wachezaji wawili walio upande wa kushoto wa dealer button lazima waweke dau l
 
 **Q. Toleo la haraka la sheria za Texas Hold'em ni lipi?**
 
-A. Weka blinds → gawa karata 2 za mkononi → kuweka dau ya preflop → funua karata 3 za pamoja (flop) + kuweka dau → funua karata 1 (turn) + kuweka dau → funua karata 1 (river) + kuweka dau → mkono bora unashinda. Jumla: raundi nne za kuweka dau, karata tano za pamoja, mshindi mmoja — au pot iliyogawanywa, kama karata tano bora zinafanana kabisa.
+A. Weka blinds → gawa karata 2 za mkononi → kuweka dau ya preflop → funua karata 3 za pamoja (flop) + kuweka dau → funua karata 1 (turn) + kuweka dau → funua karata 1 (river) + kuweka dau → mkono bora unashinda. Jumla: hadi raundi nne za kuweka dau (chache zaidi ikiwa wengine wote wame-fold au wachezaji wako all-in), hadi karata tano za pamoja, mshindi mmoja — au pot iliyogawanywa, kama karata tano bora zinafanana kabisa.
 
 **Q. Unahitaji wachezaji wangapi kucheza Texas Hold'em?**
 

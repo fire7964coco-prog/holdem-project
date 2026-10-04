@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -84,9 +84,9 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 | **Fish** | Jogador fraco e perdedor (termo guarda-chuva) | Frouxo, passivo, não dá fold | Value bet fino, não blefe |
 | **Shark** | Jogador forte e vencedor | Tight-agressivo, adaptável | Evite — escolha mesas mais moles |
 | **Whale** | Um fish *rico* que perde **alto** | Muito frouxo, stakes altos, não liga | Igual a um fish, recompensa maior |
-| **Nit** | Extremamente tight, avesso a risco | Só mãos premium, nunca blefa | Dê fold aos raises dele; roube os blinds |
+| **Nit** | Extremamente tight, avesso a risco | Só mãos premium, raramente blefa | Dê fold à maioria dos raises dele; roube os blinds |
 | **Donkey (donk)** | Fish que faz jogadas especialmente *ruins* | Ilógico, joga spew | Igual a um fish — deixe ele se enforcar sozinho |
-| **Calling station** | Pagador passivo em excesso | Paga qualquer coisa, nunca aumenta/folda | Value bet sem parar, nunca blefe |
+| **Calling station** | Pagador passivo em excesso | Paga quase qualquer coisa, raramente aumenta ou folda | Value bet sem parar, nunca blefe |
 | **Reg** | Um "regular" de um stake | Varia — nem sempre um vencedor | Leia cada um individualmente |
 | **Grinder** | Pro/semipro jogando alto volume | Sólido, constante, baixa variância | Evite; ache o jogador recreativo |
 | **TAG** | Um estilo que muitos jogadores vencedores usam (tight-agressivo) | Range estreito, mas aposta e aumenta forte | Normalmente não é fish — respeite as apostas dele |

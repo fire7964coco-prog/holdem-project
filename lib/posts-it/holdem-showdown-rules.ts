@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In torneo, senza all-in, mostra per primo l'ultimo aggressore del river; dopo un giro di check, il primo giocatore attivo a sinistra del bottone. Con un all-in, tutte le mani rimaste si mostrano subito al termine delle puntate. Chi ha pagato al river e conservato o mostrato le proprie carte può chiedere la mano dell'ultimo aggressore. Nel cash, mostrare e fare muck dipendono dalle regole della casa.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Situazione reale: hai J♥ 10♥ su un board Q♥ 9♥ 8♥ 2♣ 5♦. Hai una s
 
 Lo slow roll è ==prendersi apposta tanto tempo per mostrare una mano molto forte quando sai già di aver vinto==.
 
-Hai le nuts. L'avversario mostra una mano forte. Tu fai una pausa, fingi di pensare, guardi le tue carte lentamente, fai aspettare tutti — e poi giri la vincente. Tecnicamente legale. Universalmente odiato.
+Hai le nuts. L'avversario mostra una mano forte. Tu fai una pausa, fingi di pensare, guardi le tue carte lentamente, fai aspettare tutti — e poi giri la vincente. Nessuna norma dei regolamenti di torneo TDA e WSOP lo vieta per nome. Universalmente odiato.
 
 ![Slow roll nel poker — gli altri giocatori spazientiti mentre un giocatore ritarda apposta a mostrare la mano vincente](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Fuori dall'obbligo di mostrare con un all-in in torneo, una mano perdente pu�
 
 **Q. Cos'è lo slow roll nel poker e perché è visto male?**
 
-A. Lo slow roll è ritardare apposta a mostrare una mano vincente che già sai essere la migliore. È legale, ma universalmente odiato, perché viene visto come umiliare l'avversario di proposito. Se hai le nuts o una vincente chiara, gira le carte subito. La velocità con cui mostri dice molto di te al tavolo.
+A. Lo slow roll è ritardare apposta a mostrare una mano vincente che già sai essere la migliore. I regolamenti di torneo TDA e WSOP non lo vietano per nome, ma è universalmente odiato, perché viene visto come umiliare l'avversario di proposito. Se hai le nuts o una vincente chiara, gira le carte subito. La velocità con cui mostri dice molto di te al tavolo.
 
 **Q. In una situazione di all-in, chi mostra per primo?**
 

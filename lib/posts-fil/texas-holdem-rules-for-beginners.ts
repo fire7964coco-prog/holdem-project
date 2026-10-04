@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Ang dalawang players sa kaliwa ng dealer button ay dapat maglagay ng forced b
 
 **Q. Ano ang quick version ng Texas Hold'em rules?**
 
-A. Ilagay ang blinds → magdeal ng 2 hole cards → preflop betting → bunyagin ang 3 community cards (flop) + betting → bunyagin ang 1 card (turn) + betting → bunyagin ang 1 card (river) + betting → panalo ang pinakamagandang hand. Total: apat na betting rounds, limang community cards, isang panalo — o hating pot, kung eksaktong pareho ang pinakamagandang limang baraha.
+A. Ilagay ang blinds → magdeal ng 2 hole cards → preflop betting → bunyagin ang 3 community cards (flop) + betting → bunyagin ang 1 card (turn) + betting → bunyagin ang 1 card (river) + betting → panalo ang pinakamagandang hand. Total: hanggang apat na betting rounds (mas kaunti kapag nag-fold na ang lahat ng iba o all-in na ang mga player), hanggang limang community cards, isang panalo — o hating pot, kung eksaktong pareho ang pinakamagandang limang baraha.
 
 **Q. Ilang players ang kailangan para maglaro ng Texas Hold'em?**
 

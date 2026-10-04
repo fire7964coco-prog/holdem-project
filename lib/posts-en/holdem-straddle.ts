@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action preflop and the option to raise, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -60,7 +60,7 @@ Blinds decide | The small and big blinds act in turn, facing the $4 price
 The straddler acts LAST | If no one raised, the straddler can check their option or raise — the last word before the flop
 :::
 
-That "last action preflop" is what the straddler is paying for. But note the catch: for a **UTG straddle, the last-action privilege is preflop only.** Once the flop comes, the betting order snaps back to normal — the small blind acts first, and the straddler is back in an early, out-of-position seat with a bloated pot. That single fact is why UTG straddling is so often a money-loser: you pay double to be last for one street, then play the next three streets out of position.
+That "last action preflop" is what the straddler is paying for. But note the catch: for a **UTG straddle, the last-action privilege is preflop only.** Once the flop comes, the betting order snaps back to normal — the small blind acts first, and the straddler is back in an early, out-of-position seat with a bloated pot. That is one of the main reasons UTG straddling is so often a money-loser: you pay double to be last for one street, then play the next three streets out of position.
 
 ---
 
@@ -77,7 +77,7 @@ Not all straddles are the same — and the differences are all about **where the
 | **UTG (standard)** | Under the gun | Left of straddler | Preflop only | Yes |
 | **Mississippi** | Any seat (often button/CO) | Left of straddler | Preflop — postflop only from the button* | Yes |
 | **Button** | The button | Small blind | Pre + postflop | Yes |
-| **Sleeper** | A non-UTG seat | Normal (UTG) | No | House rules |
+| **Sleeper** | A non-UTG seat | Normal (UTG) | Preflop, only if folded to it | House rules |
 | **Re-straddle** | Left of a straddler (some rooms allow any seat) | Left of re-straddler | Preflop only | Yes |
 
 </div>
@@ -87,7 +87,7 @@ Not all straddles are the same — and the differences are all about **where the
 - **UTG straddle** — the classic. Posted under the gun, last action preflop only. The most common and the weakest, positionally.
 - **Mississippi straddle** — can be posted from **any position**, most powerfully from the button or cutoff. Action starts to the straddler's left, so a button Mississippi straddle adds the **last word preflop** to the postflop position the button already has — the one straddle with a real positional case. Not allowed everywhere.
 - **Button straddle** — a Mississippi-style straddle specifically from the button; the button keeps last action all the way down. Exact flow (where the small blind fits) varies by room — confirm with the dealer.
-- **Sleeper straddle** — a blind from a non-UTG seat that stays "asleep": it's **inactive unless the action folds all the way to it**. Position it never buys; whether it gains the option to raise as a live blind once it "wakes up" is house-rules territory. Rare, and almost never seen online.
+- **Sleeper straddle** — a blind from a non-UTG seat that stays "asleep": it's **inactive unless the action folds all the way to it**. It doesn't buy position the way a live straddle does; whether it gains the option to raise as a live blind once it "wakes up" is house-rules territory. Rare, and almost never seen online.
 - **Re-straddle (double straddle)** — a player to the left can straddle *over* a straddle, for a minimum of double the previous one ($4 → $8 → $16). Whether it's allowed, and from which seats, is pure house rules.
 
 ⚠️ Every one of these is **house-rules dependent.** When in doubt, ask the floor before you toss chips out — the mechanics genuinely differ from room to room.

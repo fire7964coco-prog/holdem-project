@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -160,7 +160,7 @@ A. Tidak. Flush memakai kelima kartu, jadi tak ada kicker terpisah. Saat dua flu
 
 **Q. Apakah straight punya kicker?**
 
-A. Tidak. Straight adalah lima kartu berurutan, jadi ia sudah lengkap. Kalau dua pemain membentuk straight yang sama, mereka membagi pot — kartu tertutup ekstra tak berpengaruh. Hanya straight lebih tinggi yang mengalahkan yang lebih rendah.
+A. Tidak. Straight adalah lima kartu berurutan, jadi ia sudah lengkap. Kalau dua pemain membentuk straight yang sama, mereka membagi pot — kartu tertutup ekstra tak berpengaruh. Di antara sesama straight, hanya straight lebih tinggi yang mengalahkan yang lebih rendah — meski flush atau yang lebih tinggi mengalahkan semuanya.
 
 **Q. Apakah full house punya kicker?**
 
@@ -180,7 +180,7 @@ A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pe
 
 **Q. Apakah kicker harus dari kartu tertutup Anda?**
 
-A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbaik dari tujuh kartu, jadi kalau kartu board lebih tinggi dari kartu tertutup Anda, kartu board itulah yang jadi kicker bersama dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.
+A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbaik dari tujuh kartu, jadi kalau kartu samping tertinggi adalah kartu board yang lebih tinggi dari kartu tertutup kedua pemain, kartu itulah yang jadi kicker bersama bagi keduanya dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 

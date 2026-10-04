@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
@@ -84,9 +84,9 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 | **Fish** | Pemain lemah yang kalah (istilah payung) | Loose, pasif, tak bisa fold | Value-bet tipis, jangan bluff |
 | **Shark** | Pemain kuat yang menang | Tight-aggressive, adaptif | Hindari — pilih meja yang lebih empuk |
 | **Whale** | Fish *kaya* yang kalah **besar** | Sangat loose, stakes tinggi, tak peduli | Sama seperti fish, imbalan lebih tinggi |
-| **Nit** | Sangat tight, menghindari risiko | Hanya tangan premium, tak pernah bluff | Fold ke raise mereka; curi blind |
+| **Nit** | Sangat tight, menghindari risiko | Hanya tangan premium, jarang bluff | Fold ke sebagian besar raise mereka; curi blind |
 | **Donkey (donk)** | Fish yang membuat langkah *sangat buruk* | Tak logis, spew | Sama seperti fish — biarkan mereka menggali kuburannya sendiri |
-| **Calling station** | Over-caller yang pasif | Call apa saja, tak pernah raise/fold | Value-bet tanpa henti, jangan pernah bluff |
+| **Calling station** | Over-caller yang pasif | Call hampir apa saja, jarang raise atau fold | Value-bet tanpa henti, jangan pernah bluff |
 | **Reg** | "Regular" di sebuah stake | Beragam — tak selalu pemenang | Baca mereka satu per satu |
 | **Grinder** | Pro/semi-pro bervolume tinggi | Solid, stabil, variance rendah | Hindari; cari pemain rekreasional |
 | **TAG** | Gaya yang dipakai banyak pemain pemenang (tight-aggressive) | Range sempit, tapi di-bet dan di-raise keras | Biasanya bukan fish — hormati taruhan mereka |

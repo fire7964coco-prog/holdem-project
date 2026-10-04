@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -84,9 +84,9 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 | **Fish (pez)** | Jugador débil y perdedor (término paraguas) | Suelto, pasivo, no sabe foldear | Apuesta a valor fino, no farolees |
 | **Shark (tiburón)** | Jugador fuerte y ganador | Tight-agresivo, adaptable | Evítalo — busca mesas más blandas |
 | **Ballena (whale)** | Un fish *rico* que pierde **a lo grande** | Muy suelto, altos límites, le da igual | Igual que un fish, mayor recompensa |
-| **Nit (roca)** | Extremadamente tight, aversión al riesgo | Solo manos premium, nunca farolea | Foldea a sus subidas; róbale las ciegas |
+| **Nit (roca)** | Extremadamente tight, aversión al riesgo | Solo manos premium, rara vez farolea | Foldea a la mayoría de sus subidas; róbale las ciegas |
 | **Donk (donkey)** | Fish que hace jugadas especialmente *malas* | Ilógico, descontrolado (spew) | Igual que un fish — deja que se cuelgue solo |
-| **Calling station** | Igualador pasivo compulsivo | Iguala cualquier cosa, nunca sube/foldea | Apuesta a valor sin fin, nunca farolees |
+| **Calling station** | Igualador pasivo compulsivo | Iguala casi cualquier cosa, rara vez sube o foldea | Apuesta a valor sin fin, nunca farolees |
 | **Reg / regular** | Un "habitual" de un límite | Varía — no siempre es ganador | Léelo caso por caso |
 | **Grinder** | Pro/semipro de alto volumen | Sólido, constante, baja varianza | Evítalo; busca al recreativo |
 | **TAG** | Un estilo que usan muchos jugadores ganadores (tight-agresivo) | Rango estrecho, pero lo apuesta y lo sube fuerte | Normalmente no es fish — respeta sus apuestas |

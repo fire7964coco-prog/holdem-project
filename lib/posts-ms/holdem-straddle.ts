@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Straddle ialah bet blind pilihan — biasanya dua kali ganda big blind — yang dipasang sebelum kad diedar. Ia memberi straddler tindakan terakhir preflop dan pilihan untuk raise, sekali gus menggandakan stakes. Dalam hampir setiap kes ia permainan -EV, dan di luar cash game ia hampir tidak pernah dibenarkan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -61,7 +61,7 @@ Blind membuat keputusan | Small blind dan big blind bertindak mengikut giliran, 
 Straddler bertindak TERAKHIR | Jika tiada sesiapa raise, straddler boleh check option mereka atau raise — kata putus terakhir sebelum flop
 :::
 
-"Tindakan terakhir preflop" itulah yang dibayar oleh straddler. Tetapi perhatikan perangkapnya: untuk **straddle UTG, keistimewaan bertindak terakhir hanya untuk preflop.** Sebaik sahaja flop keluar, giliran pertaruhan kembali seperti biasa — small blind bertindak dahulu, dan straddler kembali ke kerusi awal yang out of position dengan pot yang sudah membengkak. Fakta tunggal itulah sebabnya straddle UTG begitu kerap menyebabkan kerugian: anda bayar dua kali ganda untuk menjadi terakhir bagi satu street, kemudian bermain tiga street seterusnya out of position.
+"Tindakan terakhir preflop" itulah yang dibayar oleh straddler. Tetapi perhatikan perangkapnya: untuk **straddle UTG, keistimewaan bertindak terakhir hanya untuk preflop.** Sebaik sahaja flop keluar, giliran pertaruhan kembali seperti biasa — small blind bertindak dahulu, dan straddler kembali ke kerusi awal yang out of position dengan pot yang sudah membengkak. Itulah salah satu sebab utama straddle UTG begitu kerap menyebabkan kerugian: anda bayar dua kali ganda untuk menjadi terakhir bagi satu street, kemudian bermain tiga street seterusnya out of position.
 
 ---
 
@@ -78,7 +78,7 @@ Tidak semua straddle sama — dan perbezaannya berkisar pada **di mana aksi berm
 | **UTG (standard)** | Under the gun | Kiri straddler | Preflop sahaja | Ya |
 | **Mississippi** | Mana-mana kerusi (selalunya button/CO) | Kiri straddler | Preflop — postflop hanya dari button* | Ya |
 | **Button** | Button | Small blind | Pre + postflop | Ya |
-| **Sleeper** | Kerusi bukan UTG | Biasa (UTG) | Tidak | Peraturan rumah |
+| **Sleeper** | Kerusi bukan UTG | Biasa (UTG) | Preflop, hanya jika aksi fold sampai kepadanya | Peraturan rumah |
 | **Re-straddle** | Kiri straddler (sesetengah bilik kad benarkan mana-mana kerusi) | Kiri re-straddler | Preflop sahaja | Ya |
 
 </div>
@@ -88,7 +88,7 @@ Tidak semua straddle sama — dan perbezaannya berkisar pada **di mana aksi berm
 - **UTG straddle** — yang klasik. Dipasang di under the gun, tindakan terakhir untuk preflop sahaja. Paling biasa dan paling lemah dari segi posisi.
 - **Mississippi straddle** — boleh dipasang dari **mana-mana posisi**, paling berkuasa dari button atau cutoff. Aksi bermula di kiri straddler, jadi Mississippi straddle di button menambah **kata putus terakhir preflop** kepada posisi postflop yang memang sudah dimiliki button — satu-satunya straddle yang ada hujah posisi sebenar. Tidak dibenarkan di semua tempat.
 - **Button straddle** — straddle gaya Mississippi yang khusus dari button; button kekal bertindak terakhir sehingga ke hujung. Aliran tepatnya (di mana small blind masuk) berbeza mengikut bilik kad — sahkan dengan pengedar.
-- **Sleeper straddle** — blind dari kerusi bukan UTG yang kekal "tidur": ia **tidak aktif melainkan aksi fold sampai kepadanya**. Posisi tidak pernah dibelinya; sama ada ia mendapat pilihan untuk raise sebagai live blind apabila ia "bangun" bergantung pada peraturan rumah. Jarang ditemui, dan hampir tidak pernah dilihat dalam talian.
+- **Sleeper straddle** — blind dari kerusi bukan UTG yang kekal "tidur": ia **tidak aktif melainkan aksi fold sampai kepadanya**. Ia tidak membeli posisi seperti straddle yang live; sama ada ia mendapat pilihan untuk raise sebagai live blind apabila ia "bangun" bergantung pada peraturan rumah. Jarang ditemui, dan hampir tidak pernah dilihat dalam talian.
 - **Re-straddle (double straddle)** — pemain di sebelah kiri boleh buat straddle *di atas* straddle, sekurang-kurangnya dua kali ganda yang sebelumnya ($4 → $8 → $16). Sama ada ia dibenarkan, dan dari kerusi mana, sepenuhnya ikut peraturan rumah.
 
 ⚠️ Setiap satu daripadanya **bergantung pada peraturan rumah.** Jika ragu-ragu, tanya floor (penyelia bilik kad) sebelum anda melempar cip — mekanismenya memang berbeza dari satu bilik kad ke bilik kad yang lain.

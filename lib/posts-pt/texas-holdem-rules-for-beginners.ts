@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas e divide 5 cartas comunitárias. São até quatro rodadas de apostas, e a melhor mão de 5 cartas ganha no showdown — a não ser que todos os outros foldem antes.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -434,7 +434,7 @@ A. Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obri
 
 **Q. Qual é a versão rápida das regras do Texas Hold'em?**
 
-A. Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Uma mão completa tem quatro rodadas de apostas e cinco cartas comunitárias, e a melhor mão de cinco cartas leva o pote — ou divide, se as melhores cinco cartas forem exatamente iguais (havendo pote paralelo, cada pote é decidido separadamente).
+A. Blinds → 2 cartas fechadas → apostas pré-flop → 3 cartas comunitárias (flop) + apostas → 1 carta (turn) + apostas → 1 carta (river) + apostas → a melhor mão ganha. Uma mão completa tem até quatro rodadas de apostas (menos, se todos os outros foldarem ou se os jogadores estiverem all-in) e até cinco cartas comunitárias, e a melhor mão de cinco cartas leva o pote — ou divide, se as melhores cinco cartas forem exatamente iguais (havendo pote paralelo, cada pote é decidido separadamente).
 
 **Q. Quantos jogadores são necessários para jogar Texas Hold'em?**
 

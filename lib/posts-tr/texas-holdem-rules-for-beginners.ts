@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -419,7 +419,7 @@ Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorun
 
 ### Texas Hold'em kurallarının hızlı sürümü nedir?
 
-Blindleri koy → 2 hole kart dağıt → preflop bahsi → 3 ortak kart aç (flop) + bahis → 1 kart aç (turn) + bahis → 1 kart aç (river) + bahis → en iyi el kazanır. Toplam: dört bahis turu, beş ortak kart, tek kazanan — ya da en iyi beş kart tamamen aynıysa paylaşılan pot.
+Blindleri koy → 2 hole kart dağıt → preflop bahsi → 3 ortak kart aç (flop) + bahis → 1 kart aç (turn) + bahis → 1 kart aç (river) + bahis → en iyi el kazanır. Toplam: en fazla dört bahis turu (diğer herkes fold ederse ya da oyuncular all-in olursa daha az), en fazla beş ortak kart, tek kazanan — ya da en iyi beş kart tamamen aynıysa paylaşılan pot.
 
 ### Texas Hold'em oynamak için kaç kişi gerekir?
 

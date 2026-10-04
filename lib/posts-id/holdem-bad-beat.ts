@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler dalam arti ketat, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi aliran bad beat yang terus-menerus biasanya berarti lawan memasukkan uang saat tertinggal — jenis permainan yang memang Anda cari.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -132,7 +132,7 @@ Satu catatan penting: **setiap kasino dan situs poker menetapkan kualifikasi dan
 
 Jika Anda ingin merasa lebih baik soal bad beat Anda sendiri, ingatlah bahwa yang terburuk terjadi di panggung terbesar. Yang paling legendaris terjadi di **2008 World Series of Poker Main Event**, di mana **Motoyuki Mabuchi** mengubah pocket aces-nya menjadi **four of a kind — quad aces**, sebuah tangan yang hanya bisa dikalahkan oleh straight flush — dan *tetap kalah*. Di board A♥ 9♣ Q♦ 10♦, **Justin Phillips** (memegang K♦ J♦) sudah membuat straight ace-high — Broadway, A-K-Q-J-10 — di turn, unggul atas set aces milik Mabuchi. River **A♦** melengkapi quads Mabuchi sementara, di kartu yang sama persis, mengubah straight Phillips menjadi **royal flush** — 10‑J‑Q‑K‑A diamond. Aksi di river, seperti dilaporkan PokerNews: Mabuchi check, Phillips bertaruh, Mabuchi berseru "gamble!" dan mendorong seluruh stack-nya, dan Phillips call seketika. Satu kartu yang membuat four aces adalah satu kartu yang bisa mengalahkannya.
 
-*Menurut ambang di atas, secara teknis ini bahkan bukan bad beat — Phillips sudah unggul sejak turn, dan chip yang kita lihat masuk baru masuk setelah kartu terakhir jatuh, jadi tak ada yang men-suckout siapa pun. Tapi poker mengenangnya sebagai bad beat paling terkenal yang pernah ada, dan nama itulah yang melekat.*
+*Menurut ambang di atas, secara teknis ini bahkan bukan bad beat — Phillips sudah unggul sejak turn dan tetap unggul di river, jadi tak ada yang men-suckout siapa pun. Tapi poker mengenangnya sebagai bad beat paling terkenal yang pernah ada, dan nama itulah yang melekat.*
 
 Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four aces* — tangan yang bisa Anda mainkan seumur hidup tanpa pernah kalah — dikalahkan oleh straight flush, satu-satunya kategori tangan yang mengungguli four of a kind. Layak disimpan di saku Anda lain kali aces Anda dihancurkan: seburuk apa pun dek memperlakukan Anda, seseorang pernah kalah dengan quad aces.
 

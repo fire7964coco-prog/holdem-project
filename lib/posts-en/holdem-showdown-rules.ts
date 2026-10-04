@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-02",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -112,7 +112,7 @@ Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You 
 
 Slow rolling is ==deliberately taking a long time to show a very strong hand when you know you've won==.
 
-You have the nuts. The opponent shows a strong hand. You pause, pretend to think, peek at your cards slowly, make everyone wait — then flip the winner. No rule bans it by name, but it is not protected either: taunting an opponent through theatrics (WSOP Tournament Rule 47) and persistent delay of the game (TDA 2024 Rule 70) can both draw a penalty. And it is universally disliked.
+You have the nuts. The opponent shows a strong hand. You pause, pretend to think, peek at your cards slowly, make everyone wait — then flip the winner. The TDA and WSOP tournament rulebooks have no rule that bans it by name, but it is not protected either: taunting an opponent through theatrics (WSOP Tournament Rule 47) and persistent delay of the game (TDA 2024 Rule 70) can both draw a penalty. And it is universally disliked.
 
 ![Slow rolling in poker — other players frustrated as one player deliberately delays showing winning hand](/images/holdem-showdown-slow-roll.webp)
 
@@ -175,7 +175,7 @@ A. Yes — but mucking gives up the pot, so do it only when you are sure you los
 
 **Q. What is slow rolling in poker and why is it bad?**
 
-A. Slow rolling is deliberately delaying showing a winning hand you already know is the best. No rule bans it by name, but it is universally disliked because it's seen as deliberately humiliating the opponent — and taunting or persistent delay of the game can be penalized (WSOP Tournament Rule 47 · TDA 2024 Rule 70). If you hold the nuts or a clear winner, flip your cards immediately. The speed of your show says a lot about your character at the table.
+A. Slow rolling is deliberately delaying showing a winning hand you already know is the best. The TDA and WSOP tournament rulebooks don't ban it by name, but it is universally disliked because it's seen as deliberately humiliating the opponent — and taunting or persistent delay of the game can be penalized (WSOP Tournament Rule 47 · TDA 2024 Rule 70). If you hold the nuts or a clear winner, flip your cards immediately. The speed of your show says a lot about your character at the table.
 
 **Q. In an all-in situation, who shows their cards first?**
 

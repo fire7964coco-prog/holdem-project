@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam showdown kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu; jika semua pemain cek di river, pemain aktif pertama di kiri butang. Apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor. Cash game mengikut house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -113,7 +113,7 @@ Situasi sebenar: anda pegang J♥ 10♥ pada board Q♥ 9♥ 8♥ 2♣ 5♦. And
 
 Slow roll ialah ==sengaja mengambil masa yang lama untuk menunjukkan tangan yang sangat kuat sedangkan anda sudah tahu anda menang==.
 
-Anda pegang nuts. Lawan menunjukkan tangan yang kuat. Anda berhenti sekejap, berpura-pura berfikir, mengintai kad anda perlahan-lahan, membuat semua orang menunggu — kemudian barulah buka kad pemenang. Secara teknikal sah. Secara universal dibenci.
+Anda pegang nuts. Lawan menunjukkan tangan yang kuat. Anda berhenti sekejap, berpura-pura berfikir, mengintai kad anda perlahan-lahan, membuat semua orang menunggu — kemudian barulah buka kad pemenang. Peraturan kejohanan TDA dan WSOP tiada peruntukan yang melarangnya dengan menyebut namanya. Tetapi ia dibenci secara universal.
 
 ![Slow roll dalam poker — pemain lain geram apabila seorang pemain sengaja melengahkan menunjukkan tangan pemenang](/images/holdem-showdown-slow-roll.webp)
 
@@ -176,7 +176,7 @@ A. Dalam showdown bukan all-in, anda boleh muck jika jelas kalah. Pengecualianny
 
 **Q. Apa itu slow roll dalam poker dan kenapa ia buruk?**
 
-A. Slow roll ialah sengaja melengahkan menunjukkan tangan pemenang yang anda sudah tahu terbaik. Ia sah tetapi dibenci secara universal kerana dilihat sebagai sengaja menghina lawan. Jika anda pegang nuts atau pemenang yang jelas, buka kad anda serta-merta. Kelajuan anda membuka kad banyak menggambarkan perwatakan anda di meja.
+A. Slow roll ialah sengaja melengahkan menunjukkan tangan pemenang yang anda sudah tahu terbaik. Peraturan kejohanan TDA dan WSOP tidak melarangnya dengan menyebut namanya, tetapi ia dibenci secara universal kerana dilihat sebagai sengaja menghina lawan. Jika anda pegang nuts atau pemenang yang jelas, buka kad anda serta-merta. Kelajuan anda membuka kad banyak menggambarkan perwatakan anda di meja.
 
 **Q. Dalam situasi all-in, siapa yang tunjuk kad dulu?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -83,9 +83,9 @@ No single sign is proof — even good players limp occasionally or chase a big d
 | **Fish** | Weak, losing player (umbrella term) | Loose, passive, can't fold | Value-bet thin, don't bluff |
 | **Shark** | Strong, winning player | Tight-aggressive, adaptive | Avoid — pick softer tables |
 | **Whale** | A *rich* fish who loses **big** | Very loose, high stakes, doesn't care | Same as a fish, higher reward |
-| **Nit** | Extremely tight, risk-averse | Only premium hands, never bluffs | Fold to their raises; steal blinds |
+| **Nit** | Extremely tight, risk-averse | Only premium hands, rarely bluffs | Fold to most of their raises; steal blinds |
 | **Donkey (donk)** | Fish who makes especially *bad* plays | Illogical, spew-y | Same as a fish — let them hang themselves |
-| **Calling station** | Passive over-caller | Calls anything, never raises/folds | Value-bet endlessly, never bluff |
+| **Calling station** | Passive over-caller | Calls almost anything, rarely raises or folds | Value-bet endlessly, never bluff |
 | **Reg** | A "regular" at a stake | Varies — not always a winner | Read them individually |
 | **Grinder** | Pro/semi-pro playing high volume | Solid, steady, low variance | Avoid; find the recreational player |
 | **TAG** | A style many winning players use (tight-aggressive) | Narrow range, but bets and raises it hard | Usually not a fish — respect their bets |

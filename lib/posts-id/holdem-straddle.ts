@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir di preflop bagi si straddler dan opsi untuk raise, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -61,7 +61,7 @@ Blind memutuskan | Small blind dan big blind beraksi bergiliran, menghadapi harg
 Si straddler beraksi TERAKHIR | Jika tak ada yang raise, si straddler bisa check opsinya atau raise — hak bicara terakhir sebelum flop
 :::
 
-"Aksi terakhir preflop" itulah yang dibayar si straddler. Tapi perhatikan jebakannya: untuk **UTG straddle, hak aksi terakhir hanya berlaku preflop.** Begitu flop keluar, urutan taruhan kembali normal — small blind beraksi lebih dulu, dan si straddler kembali ke kursi awal yang out-of-position dengan pot yang menggembung. Fakta tunggal itulah kenapa UTG straddle begitu sering merugi: Anda membayar dobel untuk menjadi yang terakhir di satu street, lalu bermain tiga street berikutnya out of position.
+"Aksi terakhir preflop" itulah yang dibayar si straddler. Tapi perhatikan jebakannya: untuk **UTG straddle, hak aksi terakhir hanya berlaku preflop.** Begitu flop keluar, urutan taruhan kembali normal — small blind beraksi lebih dulu, dan si straddler kembali ke kursi awal yang out-of-position dengan pot yang menggembung. Itulah salah satu alasan utama kenapa UTG straddle begitu sering merugi: Anda membayar dobel untuk menjadi yang terakhir di satu street, lalu bermain tiga street berikutnya out of position.
 
 ---
 
@@ -78,7 +78,7 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 | **UTG (standar)** | Under the gun | Kiri si straddler | Preflop saja | Ya |
 | **Mississippi** | Kursi mana pun (sering button/CO) | Kiri si straddler | Preflop — postflop hanya dari button* | Ya |
 | **Button** | Button | Small blind | Pre + postflop | Ya |
-| **Sleeper** | Kursi non-UTG | Normal (UTG) | Tidak | Aturan rumah |
+| **Sleeper** | Kursi non-UTG | Normal (UTG) | Preflop, hanya jika aksi fold sampai ke sana | Aturan rumah |
 | **Re-straddle** | Kiri seorang straddler (sebagian ruangan mengizinkan kursi mana pun) | Kiri si re-straddler | Preflop saja | Ya |
 
 </div>
@@ -88,7 +88,7 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 - **UTG straddle** — yang klasik. Dipasang di under the gun, aksi terakhir hanya preflop. Paling umum dan, secara posisi, paling lemah.
 - **Mississippi straddle** — bisa dipasang dari **posisi mana pun**, paling kuat dari button atau cutoff. Aksi dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle menambahkan **kata terakhir di preflop** pada posisi postflop yang memang sudah dimiliki button — satu-satunya straddle dengan alasan posisi yang nyata. Tak diizinkan di semua tempat.
 - **Button straddle** — straddle gaya Mississippi khusus dari button; button mempertahankan aksi terakhir sepanjang jalan. Alur persisnya (di mana small blind masuk) berbeda per ruangan — pastikan dengan dealer.
-- **Sleeper straddle** — sebuah blind dari kursi non-UTG yang tetap "tidur": ia **tidak aktif kecuali aksi fold sampai ke sana**. Sleeper straddle tak pernah membeli posisi; apakah opsi untuk raise ikut hidup begitu blind-nya "terbangun" adalah wilayah aturan rumah. Langka, dan hampir tak pernah terlihat online.
+- **Sleeper straddle** — sebuah blind dari kursi non-UTG yang tetap "tidur": ia **tidak aktif kecuali aksi fold sampai ke sana**. Sleeper straddle tidak membeli posisi seperti straddle hidup; apakah opsi untuk raise ikut hidup begitu blind-nya "terbangun" adalah wilayah aturan rumah. Langka, dan hampir tak pernah terlihat online.
 - **Re-straddle (double straddle)** — pemain di kiri bisa straddle *di atas* sebuah straddle, minimal dua kali lipat dari yang sebelumnya ($4 → $8 → $16). Apakah diizinkan, dan dari kursi mana, murni aturan rumah.
 
 ⚠️ Setiap satu dari ini **tergantung aturan rumah.** Jika ragu, tanya floor sebelum melempar chip — mekanismenya benar-benar berbeda dari ruangan ke ruangan.

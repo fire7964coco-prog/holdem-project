@@ -217,27 +217,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | P-12 | ⑫ bvb-connected | FAQ «three times as many overpairs» vs 본문 «three and a half» | 42/12 = 3,5 | «dreieinhalbmal (42 gegen 12 Combos)» |
 | P-13 | ⑬ ace-paired | tldr·바로 답 «what split them was not that the board paired but whose card paired» | 자리·레인지도 바뀐 비교(본문 ⚠ 단서와 어긋남) | «weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt – neben dem Board haben sich auch Sitz und Ranges geändert» |
 
-### 2-Q. 우편함 수신분 — 검수장 PT ④·JA ④ 결과의 EN-먼저 요청 (MA-285 · 289 · 291 · 295 · 301 · 등재 2026-10-04 · 회신 MB-162)
+### 2-Q. 우편함 수신분 잔여 — 13건은 ✅ 10-04 (6) 배포로 닫혔다 (MB-163) · 아래는 그때 나온 «남긴 것»
 
-> 🔴 **다음 실행의 배치**(사장님 10-04 «① JA 고유 먼저 → ② EN-먼저»). JA 고유분은 10-04 배포(MB-162). 아래는 **EN을 먼저 고친 뒤 PT·JA·나머지 로케일 사본까지 전파**. 착수 전 각 자리의 로케일 사본 수를 grep으로 센다. 문안 근거·1차 출처는 각 MA 행과 검수장 보고서(`../홀덤검수/reports/검수-pt-회차4-*` · `검수-ja-회차4-*`).
+> 13건(MA-285·289·291·295-4·301-2 + 슬로롤 사장님 결재)은 EN → 24로케일 전파 완료. 경위 = WORKLOG 10-04 (6). 아래는 **자동 착수 금지** — 해당 로케일 손질 때 같이 본다.
 
-| # | MA | 글 | EN 자리 | 요지 |
-|---|---|---|---|---|
-| Q-1 | 285-1 | when-to-fold | L117 «the worst case possible»(A♥K♥ 세트 예제 · 9로케일 동형) | 45조합 중 A♥K♥ 34.44%는 **최고값**(최저 3♥4♥ 32.42%) → «o pior caso» 삭제 또는 «어떤 메이드 플러시 상대로도 ~32–34%» |
-| Q-2 | 285-2 | continuation-bet | 실수표 L198 «You can't realize equity acting first» | 전칭 → «as much equity»(본문 L139·FAQ와 정렬) |
-| Q-3 | 289-1 | bad-beat | Mabuchi 주석 L134 «the chips only went in after the last card fell» | 프리플랍·턴 투입 시점엔 Mabuchi 우세 → 삭제 또는 «큰 칩(올인)은 리버 뒤» 한정 |
-| Q-4 | 289-2 | glossary | String bet L83 «some rulebooks (WSOP) accept a bare "raise"» | WSOP 문서 내부에서 갈림 → WSOP 귀속 삭제·«금액을 먼저 말하거나 한 동작» |
-| Q-5 | 291-1 | straddle | 표 sleeper «Last to act: No» L80 · «Position it never buys» L90 | 모두 폴드 시 프리플랍 마지막 액션 → FAQ7 강도(«doesn't grant position the way a live straddle does»)로 |
-| Q-6 | 291-2 | rake | FAQ10 L180 live/online 전칭 | 본문 «tends to»·«usually» 한정을 FAQ로(캡 반례 WSOP B 31 $6 ↔ Natural8 $10) |
-| Q-7 | 291-3 | straddle | L63 «That single fact is why…» | «one of the reasons»(같은 글 «Three reasons») |
-| Q-8 | 291-4 | fish | 유형표 Nit L86 «never bluffs | Fold to his raises» · Calling station L88 «never raises/folds» | «almost never/rarely» · «Fold to most of his raises» |
-| Q-9 | 295-4 | beginners | FAQ «A full hand has four betting rounds» | 올인 뒤 4회 미만 → 본문 «up to four»·올인 한정을 FAQ로 |
-| Q-10 | 301-2ⓐ | kicker | FAQ «Only a higher straight beats a lower one.» | 플러시 이상도 이김 → «Among straights, only a higher straight…» 류 (ES·DE 동형) |
-| Q-11 | 301-2ⓑ | kicker | FAQ «board cards higher than your hole cards → shared kicker» | 기준이 자기 손패뿐 → note «both players'» 문면으로 |
-| Q-12 | 301-2ⓒ | tiebreak | FAQ «there is one place suits are used» | WSOP B 150·151 · TDA 2026 Rule 11 부록 → «one place in deciding a pot» 류 한정 |
-| Q-13 | 사장님 결정 10-04 | showdown · beginners(+8로케일) | 슬로롤 «No rule bans it by name» | 🔴 **사장님 결재: 대회 규정(TDA·WSOP)으로 한정** — «TDA·WSOP 대회 규정에는 이름까지 박아 금지하는 조항이 없다» 류. 반례 = Royal Queens Poker Group Code of Conduct §4 B(MA-295 통지 1 · MA-299 통지 1) |
-
-🪶 같은 MA의 통지(라벨 OK 유지 · 자동 착수 금지): MA-289 통지 1(cooler 2분법 «강한 패끼리» 조건) · MA-297 통지 1(재오픈 «already acted»에 «not facing a full raise» 조건 — EN L8) · MA-299 통지 2·3(showdown «in any cash game» WSOP 범위 · Rule 58 binding fold · 18-B last aggressor · B 143 예외) · MA-301 통지 1·2(EN 동형 8자리) · MA-291 통지 1·2(PT 고유 2 — PT 손질 때).
+- 🟠 **꼬리 15로케일(bn·fa·fil·fr·he·hi·it·pl·ro·ru·sw·th·tr·uk·vi) + ms `holdem-showdown-rules` = 옛 판**: EN 슬로롤 단락의 «보호받지도 못한다 — WSOP Tournament Rule 47(도발)·TDA 2024 Rule 70(반복 지연)으로 벌칙 가능» 문장이 없다(그 자리에 «기술적으로 합법»이 있던 것을 이번에 «TDA·WSOP 대회 규정에 이름까지 박은 금지 조항은 없다»로만 한정). 그래서 이 16파일 `masterUpdated`는 올리지 않았다(꼬리 드리프트로 남김).
+- 🪶 꼬리 로케일 `texas-holdem-rules-for-beginners` tldr·결론의 «베팅 라운드 4번» 무조건형 — ms만 «sehingga empat»로 고쳤고 나머지 15로케일 tldr·결론은 미확인(FAQ만 고침).
+- 🪶 zh `holdem-fish` 읽기 신호표(L94) «跟注站：什么都跟、几乎不加注» — EN 해당 표는 안 바뀌어 그대로 둠.
+- 🪶 같은 MA의 통지(라벨 OK 유지): MA-289 통지 1(cooler 2분법 «강한 패끼리» 조건) · MA-297 통지 1(재오픈 «already acted»에 «not facing a full raise» 조건 — EN L8) · MA-299 통지 2·3(showdown «in any cash game» WSOP 범위 · Rule 58 binding fold · 18-B last aggressor · B 143 예외) · MA-301 통지 1·2(EN 동형 8자리) · MA-291 통지 1·2(PT 고유 2 — PT 손질 때).
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

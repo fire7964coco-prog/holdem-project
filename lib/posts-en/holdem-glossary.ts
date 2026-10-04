@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -80,7 +80,7 @@ Everything you can physically do on your turn. If you're brand new, start with t
 | **Bluff / Semi-bluff** | A bluff bets a weak hand to fold out better; a semi-bluff does it with a draw that can still improve. |
 | **Check-raise** | Check, then raise after an opponent bets — a strong, deceptive line (legal in modern rooms). |
 | **Min-raise** | The smallest legal raise. |
-| **String bet** | An undeclared reach-back for more chips — only the first motion counts (usually ruled a call). Declaring the full raise amount first makes split motions legal; some rulebooks (WSOP) accept a bare "raise," while TDA rules want the amount stated or pushed in one motion. |
+| **String bet** | An undeclared reach-back for more chips — only the first motion counts (usually ruled a call). Declaring the raise first makes split motions legal — the safe habit is to state the amount before reaching for chips, or to push the whole raise in one motion. |
 | **Jam / Shove** | To move all-in. |
 | **Snap call** | An instant, no-hesitation call. |
 | **Hero call** | Calling with a weak hand because you've read the opponent as bluffing. |

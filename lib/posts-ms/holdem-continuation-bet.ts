@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) ialah bet pada flop oleh pemain yang raise preflop. Jangan c-bet setiap flop: bet board tinggi dan kering (K-7-2) dengan saiz kecil dan kerap, check board rendah yang bersambung (7-6-5). Saiz kira-kira satu pertiga pot di board kering, dua pertiga atau lebih di board basah; jauh kurang dalam pot multiway.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 minit",
@@ -198,7 +198,7 @@ Raise preflop yang sama, flop bertentangan, langkah betul yang bertentangan. Itu
 | **C-bet setiap flop secara autopilot** | Mengabaikan bahawa banyak board memihak kepada pemain yang call | Baca tekstur dahulu |
 | **Bet besar dengan range yang luas** | Range luas mahukan saiz kecil, bukan besar | Kecil di board kering, besar hanya apabila terpolarisasi |
 | **C-bet ringan dalam pot multiway** | Fold equity runtuh apabila pemain bertambah | Value & draw sahaja menentang 2+ |
-| **C-bet OOP terlalu kerap** | Anda tidak dapat merealisasikan equity apabila bertindak dahulu | Lebih banyak check, bina range check |
+| **C-bet OOP terlalu kerap** | Anda tidak dapat merealisasikan equity sebanyak itu apabila bertindak dahulu | Lebih banyak check, bina range check |
 | **Bet ke board yang mengenai mereka** | 7‑6‑5 menghentam range mereka, bukan range anda | Lebih banyak check; bet besar dan selektif apabila bet |
 | **Barreling "sekali terus berhenti"** | C-bet flop, sentiasa lepaskan turn = mudah di-float | Ada rancangan turn sebelum menembak |
 | **Triple barrel tanpa equity** | Bluff habis satu stack tanpa outs atau blocker | Bluff dengan equity sandaran atau blocker yang baik |

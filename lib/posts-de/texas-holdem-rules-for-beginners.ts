@@ -8,13 +8,13 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten, die sich alle teilen. Es gibt bis zu vier Setzrunden, und im Showdown gewinnt die beste Fünf-Karten-Hand – es sei denn, alle anderen folden vorher.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-01",
+  updated: "2026-10-04",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
   //    Q5-a는 판정식 «편집 전 masterUpdated ≥ 편집 전 EN updated»를 만족해 올렸다(09-11 ≥ 09-11).
   //    🔴 되돌리려면 EN 07-12~현재 델타를 먼저 실측하라 — 주석만 보고 되돌리지 마라.
-  masterUpdated: "2026-10-01",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -434,7 +434,7 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 **Q. Wie spielt man Texas Hold'em Schritt für Schritt?**
 
-A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Eine vollständige Hand hat vier Setzrunden und fünf Gemeinschaftskarten, und die beste Fünf-Karten-Hand gewinnt den Pot – oder teilt ihn, wenn die besten fünf Karten exakt gleich sind (bei einem Side Pot wird jeder Pot separat vergeben).
+A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Eine vollständige Hand hat bis zu vier Setzrunden (weniger, sobald alle anderen folden oder alle Spieler all-in sind) und bis zu fünf Gemeinschaftskarten, und die beste Fünf-Karten-Hand gewinnt den Pot – oder teilt ihn, wenn die besten fünf Karten exakt gleich sind (bei einem Side Pot wird jeder Pot separat vergeben).
 
 **Q. Wer fängt beim Texas Hold'em an?**
 

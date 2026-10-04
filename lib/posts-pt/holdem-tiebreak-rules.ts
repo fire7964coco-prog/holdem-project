@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -228,7 +228,7 @@ A. Ganha o straight flush mais alto, decidido pela carta de topo — um straight
 
 **Q. Os naipes desempatam alguma vez no Texas Hold'em?**
 
-A. Não — mas existe um lugar numa mesa de Hold'em em que os naipes são usados, e não é o pote. Nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio inicial: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só faz um sorteio do botão quando restam três, duas e uma mesa.) De um jeito ou de outro, isso escolhe um assento, nunca uma mão. Fora o sorteio do botão — que o glossário do regulamento da WSOP resolve por "valor e naipe" —, a única ordem de naipes do regulamento de torneios pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
+A. Não — os naipes nunca decidem um pote. Onde eles aparecem numa mesa de Hold'em é nos sorteios de carta que definem um assento. O mais conhecido é o sorteio do botão: nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio inicial: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só faz um sorteio do botão quando restam três, duas e uma mesa.) Os diretores de torneio também redistribuem os jogadores de uma mesa desfeita dando uma carta a cada um, e o exemplo da TDA dá o primeiro assento à ==carta mais alta, contando o naipe==. De um jeito ou de outro, isso escolhe um assento, nunca uma mão. Entre as regras de mão do regulamento da WSOP, a única ordem de naipes pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
 
 **Q. O que acontece se os dois jogadores têm exatamente a mesma mão?**
 

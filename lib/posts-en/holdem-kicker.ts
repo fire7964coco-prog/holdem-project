@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-01",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -159,7 +159,7 @@ A. No. A flush uses all five cards, so there's no separate kicker. When two flus
 
 **Q. Does a straight have a kicker?**
 
-A. No. A straight is five consecutive cards, so it's already complete. If two players make the same straight, they split the pot — extra hole cards don't matter. Only a higher straight beats a lower one.
+A. No. A straight is five consecutive cards, so it's already complete. If two players make the same straight, they split the pot — extra hole cards don't matter. Among straights, only a higher straight beats a lower one — though any flush or better beats them all.
 
 **Q. Does a full house have a kicker?**
 
@@ -179,7 +179,7 @@ A. Yes — two pair uses one kicker. If you hold K♥ Q♦ and your opponent hol
 
 **Q. Does the kicker have to be in your hand?**
 
-A. No. A kicker can be a community card. Poker always makes the best five cards out of seven, so if a board card outranks your hole card, that board card becomes the shared kicker and the next card decides. Your hole card only plays as a kicker when it's higher than the board cards it would replace.
+A. No. A kicker can be a community card. Poker always makes the best five cards out of seven, so if the highest side card is a board card that outranks both players' hole cards, it becomes the shared kicker for both and the next card decides. Your hole card only plays as a kicker when it's higher than the board cards it would replace.
 
 **Q. How many kickers are in a poker hand?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -92,9 +92,9 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 | **Fish** | Schwacher, verlierender Spieler (Oberbegriff) | Loose, passiv, kann nicht folden | Dünn auf Value betten, nicht bluffen |
 | **Shark** | Starker, gewinnender Spieler | Tight-aggressiv, anpassungsfähig | Meiden – such dir weichere Tische |
 | **Whale** | Ein *reicher* Fish, der **groß** verliert | Sehr loose, hohe Stakes, ist ihm egal | Wie ein Fish, höhere Belohnung |
-| **Nit** | Extrem tight, risikoscheu | Nur Premiumhände, bluffen nie | Ohne sehr starke Hand auf ihre Aggression folden; ihre Blinds stehlen |
+| **Nit** | Extrem tight, risikoscheu | Nur Premiumhände, bluffen fast nie | Ohne sehr starke Hand auf ihre Aggression folden; ihre Blinds stehlen |
 | **Donkey (Donk)** | Fish, der besonders *schlechte* Plays macht | Unlogisch, spewy | Wie ein Fish – lass sie sich selbst aufhängen |
-| **Calling Station** | Passiver Over-Caller | Callt alles, raist/foldet nie | Endlos auf Value betten, nie bluffen |
+| **Calling Station** | Passiver Over-Caller | Callt fast alles, raist und foldet kaum | Endlos auf Value betten, nie bluffen |
 | **Reg** | Ein „Regular“ an einer Stake | Wechselnd – nicht immer ein Gewinner | Lies sie individuell |
 | **Grinder** | Pro/Semi-Pro mit hohem Volumen | Solide, konstant, geringe Varianz | Meiden; find den Freizeitspieler |
 | **TAG** | Ein Stil, den viele gewinnende Spieler nutzen (tight-aggressiv) | Enge Range, die er hart bettet und raist | Meist kein Fish: seine großen Rivers nicht bezahlen – aber seine engen Ranges angreifen (Blinds stehlen, öfter in Position spielen) |

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Cei doi jucători din stânga butonului de dealer trebuie să pună pariuri o
 
 **Q. Care e versiunea rapidă a regulilor de Texas Hold'em?**
 
-A. Pui blind-urile → împarți 2 cărți din mână → pariere preflop → întorci 3 cărți comune (flop) + pariere → întorci 1 carte (turn) + pariere → întorci 1 carte (river) + pariere → câștigă cea mai bună mână. Total: patru runde de pariere, cinci cărți comune, un câștigător — sau un pot împărțit, dacă cele mai bune cinci cărți sunt exact la fel.
+A. Pui blind-urile → împarți 2 cărți din mână → pariere preflop → întorci 3 cărți comune (flop) + pariere → întorci 1 carte (turn) + pariere → întorci 1 carte (river) + pariere → câștigă cea mai bună mână. Total: până la patru runde de pariere (mai puține dacă toți ceilalți dau fold sau jucătorii sunt all-in), până la cinci cărți comune, un câștigător — sau un pot împărțit, dacă cele mai bune cinci cărți sunt exact la fel.
 
 **Q. De câți jucători ai nevoie ca să joci Texas Hold'em?**
 

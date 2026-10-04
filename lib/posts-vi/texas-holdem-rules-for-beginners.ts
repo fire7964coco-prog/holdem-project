@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -419,7 +419,7 @@ A. Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc 
 
 **Q. Phiên bản rút gọn của luật Texas Hold'em là gì?**
 
-A. Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: bốn vòng cược, năm lá bài chung, một người thắng — hoặc chia pot, nếu năm lá bài tốt nhất giống hệt nhau.
+A. Đặt mù → chia 2 lá bài tẩy → cược preflop → lật 3 lá bài chung (flop) + cược → lật 1 lá (turn) + cược → lật 1 lá (river) + cược → tay bài mạnh nhất thắng. Tổng cộng: tối đa bốn vòng cược (ít hơn nếu mọi người khác đều fold hoặc người chơi đã all-in), tối đa năm lá bài chung, một người thắng — hoặc chia pot, nếu năm lá bài tốt nhất giống hệt nhau.
 
 **Q. Cần bao nhiêu người để chơi Texas Hold'em?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -194,7 +194,7 @@ Misma subida preflop, flops opuestos, jugadas correctas opuestas. Esa es toda la
 | **Cbetear cada flop en piloto automático** | Ignora que muchos boards favorecen a quien pagó | Lee la textura primero |
 | **Apostar grande con un rango amplio** | Los rangos amplios quieren tamaño pequeño, no grande | Pequeño en seco, grande solo cuando polarizas |
 | **Cbetear de farol en multiway** | El fold equity se derrumba con más jugadores | Solo valor y proyectos contra 2+ |
-| **Cbetear OOP demasiado a menudo** | No puedes realizar equity actuando primero | Pasa más, construye un rango de check |
+| **Cbetear OOP demasiado a menudo** | No puedes realizar tanta equity actuando primero | Pasa más, construye un rango de check |
 | **Apostar contra un board que les ligó** | 7‑6‑5 machacó su rango, no el tuyo | Pasa más; cuando apuestes, grande y selectivo |
 | **Barrel de "uno y listo"** | C-bet en el flop, siempre te rindes en el turn = fácil de flotar | Ten un plan de turn antes de disparar |
 | **Triple barrel sin equity** | Farolear un stack sin outs ni bloqueadores | Farolea con equity de respaldo o buenos bloqueadores |

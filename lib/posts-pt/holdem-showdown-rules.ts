@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Em torneios, sem all-in, o último agressor do river mostra primeiro; se todos deram check, começa o primeiro jogador ativo à esquerda do botão. Com all-in, todas as mãos restantes devem ser abertas assim que as apostas terminam. Quem pagou no river e mantém ou já abriu suas cartas pode pedir para ver a mão do último agressor. No cash, as regras da casa definem a abertura e o muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -114,7 +114,7 @@ Situação real: você tem J♥ 10♥ em um board Q♥ 9♥ 8♥ 2♣ 5♦. Voc�
 
 Slow roll é ==demorar de propósito para mostrar uma mão muito forte quando você já sabe que ganhou==.
 
-Você tem os nuts. O adversário mostra uma mão forte. Você pausa, finge pensar, olha as cartas devagar, faz todo mundo esperar — e então vira a mão vencedora. Nenhuma regra proíbe isso pelo nome, mas também não é uma jogada protegida: provocar o adversário com encenação (regra 47 do regulamento de torneios da WSOP) e atrasar o jogo de forma persistente (regra 70 da TDA, edição de 2024) podem render punição. E é universalmente odiado.
+Você tem os nuts. O adversário mostra uma mão forte. Você pausa, finge pensar, olha as cartas devagar, faz todo mundo esperar — e então vira a mão vencedora. Os regulamentos de torneio da TDA e da WSOP não têm nenhuma regra que proíba isso pelo nome, mas também não é uma jogada protegida: provocar o adversário com encenação (regra 47 do regulamento de torneios da WSOP) e atrasar o jogo de forma persistente (regra 70 da TDA, edição de 2024) podem render punição. E é universalmente odiado.
 
 ![Slow roll no poker — jogadores irritados enquanto um deles demora de propósito para mostrar a mão vencedora](/images/holdem-showdown-slow-roll.webp)
 
@@ -177,7 +177,7 @@ A. Sim — mas dar muck é abrir mão do pote, então faça isso só quando tive
 
 **Q. O que é slow roll no poker e por que é tão malvisto?**
 
-A. Slow roll é atrasar de propósito a exibição de uma mão vencedora que você já sabe ser a melhor. Nenhuma regra proíbe isso pelo nome, mas é universalmente odiado, porque é visto como humilhar o adversário de propósito — e provocação ou atraso persistente do jogo podem ser punidos (regra 47 do regulamento de torneios da WSOP · regra 70 da TDA, edição de 2024). Se você tem os nuts ou uma vitória clara, vire as cartas imediatamente. A velocidade com que você mostra diz muito sobre o seu caráter na mesa.
+A. Slow roll é atrasar de propósito a exibição de uma mão vencedora que você já sabe ser a melhor. Os regulamentos de torneio da TDA e da WSOP não o proíbem pelo nome, mas é universalmente odiado, porque é visto como humilhar o adversário de propósito — e provocação ou atraso persistente do jogo podem ser punidos (regra 47 do regulamento de torneios da WSOP · regra 70 da TDA, edição de 2024). Se você tem os nuts ou uma vitória clara, vire as cartas imediatamente. A velocidade com que você mostra diz muito sobre o seu caráter na mesa.
 
 **Q. Em um all-in, quem mostra as cartas primeiro?**
 

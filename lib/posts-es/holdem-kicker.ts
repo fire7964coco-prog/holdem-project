@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -160,7 +160,7 @@ A. No. Un color usa las cinco cartas, así que no hay un kicker aparte. Cuando c
 
 **Q. ¿La escalera tiene kicker?**
 
-A. No. Una escalera son cinco cartas consecutivas, así que ya está completa. Si dos jugadores hacen la misma escalera, se dividen el bote — las cartas propias extra no importan. Solo una escalera más alta gana a una más baja.
+A. No. Una escalera son cinco cartas consecutivas, así que ya está completa. Si dos jugadores hacen la misma escalera, se dividen el bote — las cartas propias extra no importan. Entre escaleras, solo una más alta gana a una más baja — aunque cualquier color o mano superior les gana a todas.
 
 **Q. ¿El full tiene kicker?**
 
@@ -180,7 +180,7 @@ A. Sí — la doble pareja usa un kicker. Si tienes K♥ Q♦ y tu rival tiene J
 
 **Q. ¿El kicker tiene que estar en tu mano?**
 
-A. No. Un kicker puede ser una carta comunitaria. El póker siempre forma las mejores cinco cartas de siete, así que si una carta de la mesa supera a tu carta propia, esa carta de la mesa se convierte en el kicker compartido y decide la siguiente carta. Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.
+A. No. Un kicker puede ser una carta comunitaria. El póker siempre forma las mejores cinco cartas de siete, así que si la carta lateral más alta es una carta de la mesa que supera a las cartas propias de ambos jugadores, se convierte en el kicker compartido de los dos y decide la siguiente carta. Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.
 
 **Q. ¿Cuántos kickers hay en una mano de póker?**
 

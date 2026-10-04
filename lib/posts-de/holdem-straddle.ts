@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -65,7 +65,7 @@ Die Blinds entscheiden | Small Blind und Big Blind handeln der Reihe nach, dem �
 Der Straddler handelt ZULETZT | Wenn niemand geraist hat, kann der Straddler seine Option checken oder raisen – das letzte Wort vor dem Flop
 :::
 
-Diese „letzte Action preflop“ ist es, wofür der Straddler bezahlt. Aber merk dir den Haken: Bei einem **UTG-Straddle gilt das Recht auf die letzte Action nur preflop.** Sobald der Flop kommt, springt die Setzreihenfolge zurück auf normal – der Small Blind handelt zuerst, und der Straddler sitzt wieder auf einem frühen, out-of-position-Platz mit einem aufgeblähten Pot. Genau diese eine Tatsache ist der Grund, warum UTG-Straddeln so oft ein Verlustgeschäft ist: Du zahlst das Doppelte, um für eine Street zuletzt zu handeln, und spielst dann die nächsten drei Streets out of position.
+Diese „letzte Action preflop“ ist es, wofür der Straddler bezahlt. Aber merk dir den Haken: Bei einem **UTG-Straddle gilt das Recht auf die letzte Action nur preflop.** Sobald der Flop kommt, springt die Setzreihenfolge zurück auf normal – der Small Blind handelt zuerst, und der Straddler sitzt wieder auf einem frühen, out-of-position-Platz mit einem aufgeblähten Pot. Das ist einer der Hauptgründe, warum UTG-Straddeln so oft ein Verlustgeschäft ist: Du zahlst das Doppelte, um für eine Street zuletzt zu handeln, und spielst dann die nächsten drei Streets out of position.
 
 ---
 
@@ -85,7 +85,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 | **UTG (Standard)** | Under the Gun | Links vom Straddler | Nur preflop | Ja |
 | **Mississippi** | Jeder Platz (oft Button/CO) | Links vom Straddler | Preflop – postflop nur vom Button* | Ja |
 | **Button** | Der Button | Small Blind | Pre + postflop | Ja |
-| **Sleeper** | Ein Nicht-UTG-Platz | Normal (UTG) | Nein | Hausregelsache |
+| **Sleeper** | Ein Nicht-UTG-Platz | Normal (UTG) | Preflop, nur wenn bis zu ihm durchgefoldet wird | Hausregelsache |
 | **Re-Straddle** | Links von einem Straddler (manche Räume erlauben jeden Platz) | Links vom Re-Straddler | Nur preflop | Ja |
 
 </div>
@@ -95,7 +95,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 - **UTG-Straddle** – der Klassiker. Unter der Pistole gesetzt, letzte Action nur preflop. Der häufigste und positionell der schwächste.
 - **Mississippi-Straddle** – kann von **jeder Position** gesetzt werden, am stärksten vom Button oder Cutoff. Die Action beginnt links vom Straddler, also fügt ein Button-Mississippi-Straddle der Postflop-Position, die der Button ohnehin hat, das **letzte Wort preflop** hinzu – der einzige Straddle mit einem echten positionellen Argument. Nicht überall erlaubt.
 - **Button-Straddle** – ein Straddle im Mississippi-Stil speziell vom Button; der Button behält die letzte Action bis zum Ende. Der genaue Ablauf (wo der Small Blind hineinpasst) variiert je nach Room – kläre es mit dem Dealer.
-- **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, ist er ein Live-Blind – Position bringt er trotzdem nie; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
+- **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, ist er ein Live-Blind – Position kauft er aber nicht so, wie es ein Live-Straddle tut; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
 - **Re-Straddle (Double Straddle)** – ein Spieler links kann *über* einen Straddle straddeln, mindestens für das Doppelte des vorherigen (€4 → €8 → €16). Ob es erlaubt ist und von welchen Plätzen, ist reine Hausregelsache.
 
 ⚠️ Jeder einzelne davon ist **hausregelabhängig.** Im Zweifel frag den Floor, bevor du Chips rauswirfst – die Mechanik unterscheidet sich wirklich von Room zu Room.

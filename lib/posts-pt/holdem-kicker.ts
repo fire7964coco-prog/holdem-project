@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. A carta alta usa 4 kickers, um par 3, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -160,7 +160,7 @@ A. Não. Um flush usa as cinco cartas, então não há kicker separado. Quando d
 
 **Q. A sequência tem kicker?**
 
-A. Não. Uma sequência é cinco cartas consecutivas, então já está completa. Se dois jogadores fazem a mesma sequência, dividem o pote — cartas de mão extras não importam. Só uma sequência mais alta ganha de uma mais baixa.
+A. Não. Uma sequência é cinco cartas consecutivas, então já está completa. Se dois jogadores fazem a mesma sequência, dividem o pote — cartas de mão extras não importam. Entre sequências, só uma mais alta ganha de uma mais baixa — embora qualquer flush ou mão superior ganhe de todas elas.
 
 **Q. O full house tem kicker?**
 
@@ -180,7 +180,7 @@ A. Sim — dois pares usam um kicker. Se você tem K♥ Q♦ e seu adversário t
 
 **Q. O kicker precisa estar na sua mão?**
 
-A. Não. Um kicker pode ser uma carta comunitária. O poker sempre monta as melhores cinco entre sete, então se uma carta do board supera sua carta da mão, é ela que preenche o espaço de kicker — para os dois jogadores — e a próxima carta decide. Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.
+A. Não. Um kicker pode ser uma carta comunitária. O poker sempre monta as melhores cinco entre sete, então se a carta lateral mais alta é uma carta do board que supera as cartas da mão dos dois jogadores, é ela que preenche o espaço de kicker — para os dois — e a próxima carta decide. Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.
 
 **Q. Quantos kickers há em uma mão de poker?**
 

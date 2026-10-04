@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika showdown ya tournament isiyo all-in, last river aggressor anaonyesha kwanza; river iki-checkiwa na wote, mchezaji active wa kwanza kushoto kwa button. Mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja. River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono wa last aggressor. Cash game hufuata house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Hali halisi: unashikilia J♥ 10♥ kwenye bodi ya Q♥ 9♥ 8♥ 2♣ 5♦. Una
 
 Slow rolling ni ==kuchukua muda mrefu kwa makusudi kuonyesha mkono wenye nguvu sana wakati unajua tayari umeshinda==.
 
-Una nuts. Mpinzani anaonyesha mkono wenye nguvu. Wewe unasita, unajifanya kufikiri, unachungulia karata zako polepole, unafanya kila mtu asubiri — kisha unageuza mshindi. Kisheria inaruhusiwa. Kila mahali inachukiwa.
+Una nuts. Mpinzani anaonyesha mkono wenye nguvu. Wewe unasita, unajifanya kufikiri, unachungulia karata zako polepole, unafanya kila mtu asubiri — kisha unageuza mshindi. Hakuna kanuni katika vitabu vya sheria za tournament za TDA na WSOP inayoikataza kwa jina. Kila mahali inachukiwa.
 
 ![Slow rolling katika poker — wachezaji wengine wamekereka huku mchezaji mmoja akichelewesha kwa makusudi kuonyesha mkono ulioshinda](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Kwenye showdown isiyo all-in, unaweza ku-muck kama umeshindwa wazi, lakini hu
 
 **Q. Slow rolling katika poker ni nini na kwa nini ni jambo baya?**
 
-A. Slow rolling ni kuchelewesha kwa makusudi kuonyesha mkono ulioshinda ambao tayari unajua ndio bora. Kisheria inaruhusiwa lakini kila mahali inachukiwa kwa sababu inaonekana kama kumdhalilisha mpinzani kwa makusudi. Kama una nuts au mshindi wa wazi, geuza karata zako mara moja. Kasi ya kuonyesha kwako inasema mengi kuhusu tabia yako mezani.
+A. Slow rolling ni kuchelewesha kwa makusudi kuonyesha mkono ulioshinda ambao tayari unajua ndio bora. Vitabu vya sheria za tournament za TDA na WSOP haviikatazi kwa jina, lakini kila mahali inachukiwa kwa sababu inaonekana kama kumdhalilisha mpinzani kwa makusudi. Kama una nuts au mshindi wa wazi, geuza karata zako mara moja. Kasi ya kuonyesha kwako inasema mengi kuhusu tabia yako mezani.
 
 **Q. Katika hali ya all-in, nani anaonyesha karata zake kwanza?**
 

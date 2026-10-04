@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "'Fish' ialah slang poker untuk pemain lemah yang sentiasa kalah — pemain yang lebih kuat ('shark') mengaut untung daripadanya. Fish bermain terlalu banyak tangan, terlalu kerap call dan tak reti fold; pepatah terkenal mengingatkan, kalau anda tak nampak fish di meja, andalah fish itu. Inilah bacaan paling penting dalam permainan: cari fish, atau jadi fish.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -84,9 +84,9 @@ Tiada satu tanda pun yang menjadi bukti — pemain yang bagus pun sekali-sekala 
 | **Fish** | Pemain lemah yang kalah (istilah umum) | Longgar, pasif, tak boleh fold | Value-bet nipis, jangan bluff |
 | **Shark** | Pemain kuat yang menang | Tight-aggressive, pandai menyesuaikan diri | Elakkan — pilih meja yang lebih mudah |
 | **Whale** | Fish yang *kaya* dan kalah **besar** | Sangat longgar, stakes tinggi, tak kisah | Sama seperti fish, ganjaran lebih tinggi |
-| **Nit** | Sangat ketat, takut risiko | Hanya tangan premium, tak pernah bluff | Fold kepada raise mereka; curi blind |
+| **Nit** | Sangat ketat, takut risiko | Hanya tangan premium, jarang bluff | Fold kepada kebanyakan raise mereka; curi blind |
 | **Donkey (donk)** | Fish yang membuat langkah amat *teruk* | Tidak logik, suka membazir cip (spew) | Sama seperti fish — biar mereka menjerat diri sendiri |
-| **Calling station** | Pemain pasif yang terlalu kerap call | Call apa sahaja, tak pernah raise/fold | Value-bet tanpa henti, jangan sekali-kali bluff |
+| **Calling station** | Pemain pasif yang terlalu kerap call | Call hampir apa sahaja, jarang raise atau fold | Value-bet tanpa henti, jangan sekali-kali bluff |
 | **Reg** | Pemain "regular" (tetap) di sesuatu stakes | Berbeza-beza — tidak semestinya menang | Baca mereka seorang demi seorang |
 | **Grinder** | Pro/separa pro yang bermain dalam volum tinggi | Mantap, stabil, variance rendah | Elakkan; cari pemain rekreasi |
 | **TAG** | Gaya yang digunakan ramai pemain yang menang (tight-aggressive) | Range sempit, tetapi bet dan raise dengan keras | Biasanya bukan fish — hormati bet mereka |

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -81,7 +81,7 @@ Segala hal yang bisa Anda lakukan secara fisik pada giliran Anda. Jika Anda bena
 | **Bluff / Semi-bluff** | Bluff bertaruh tangan lemah untuk memaksa tangan lebih baik fold; semi-bluff melakukannya dengan draw yang masih bisa membaik. |
 | **Check-raise** | Check, lalu raise setelah lawan bertaruh — garis kuat dan menipu (legal di room modern). |
 | **Min-raise** | Raise legal terkecil. |
-| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mendeklarasikan jumlah raise penuh lebih dulu membuat gerakan bertahap menjadi sah; sebagian buku aturan (WSOP) menerima ucapan "raise" saja, sementara aturan TDA meminta jumlahnya disebutkan atau didorong dalam satu gerakan. |
+| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mendeklarasikan raise lebih dulu membuat gerakan bertahap menjadi sah — kebiasaan yang aman adalah menyebut jumlahnya sebelum meraih chip, atau mendorong seluruh raise dalam satu gerakan. |
 | **Jam / Shove** | Bergerak all-in. |
 | **Snap call** | Call instan tanpa ragu. |
 | **Hero call** | Call dengan tangan lemah karena Anda membaca lawan sedang bluff. |

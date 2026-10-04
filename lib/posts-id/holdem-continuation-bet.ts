@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "15 mnt",
   emoji: "🔥",
@@ -196,7 +196,7 @@ Raise preflop sama, flop berlawanan, langkah tepat berlawanan. Itu seluruh pelaj
 | **C-bet tiap flop dengan autopilot** | Mengabaikan bahwa banyak board menguntungkan caller | Baca texture-nya dulu |
 | **Bertaruh besar dengan range lebar** | Range lebar ingin sizing kecil, bukan besar | Kecil di kering, besar hanya saat terpolarisasi |
 | **C-bet ringan di multiway** | Fold equity runtuh dengan lebih banyak pemain | Hanya value & draw vs 2+ |
-| **C-bet OOP terlalu sering** | Anda tak bisa merealisasikan equity saat beraksi lebih dulu | Check lebih banyak, bangun checking range |
+| **C-bet OOP terlalu sering** | Anda tak bisa merealisasikan equity sebanyak itu saat beraksi lebih dulu | Check lebih banyak, bangun checking range |
 | **Bertaruh ke board yang mengenai mereka** | 7‑6‑5 menghantam range mereka, bukan Anda | Check lebih banyak; saat bertaruh, besar dan selektif |
 | **Barreling "sekali-lalu-berhenti"** | C-bet flop, selalu menyerah di turn = mudah di-float | Punya rencana turn sebelum menembak |
 | **Triple-barrel tanpa equity** | Bluff habis-habisan tanpa out atau blocker | Bluff dengan equity cadangan atau blocker bagus |

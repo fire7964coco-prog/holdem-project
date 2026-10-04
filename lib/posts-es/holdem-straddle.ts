@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción preflop y la opción de subir, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -61,7 +61,7 @@ Deciden las ciegas | La ciega pequeña y la grande actúan por turno, enfrentán
 El que straddlea actúa el ÚLTIMO | Si nadie subió, quien puso el straddle puede pasar su opción o subir — la última palabra antes del flop
 :::
 
-Esa "última acción preflop" es lo que está pagando el que pone el straddle. Pero fíjate en la trampa: para un **straddle UTG, el privilegio de la última acción es solo en preflop.** En cuanto llega el flop, el orden de apuestas vuelve a la normalidad — la ciega pequeña actúa primero, y quien puso el straddle vuelve a un asiento temprano y fuera de posición con un bote inflado. Ese único hecho es la razón por la que el straddle UTG hace perder dinero tan a menudo: pagas el doble por ser el último durante una calle, y luego juegas las tres calles siguientes fuera de posición.
+Esa "última acción preflop" es lo que está pagando el que pone el straddle. Pero fíjate en la trampa: para un **straddle UTG, el privilegio de la última acción es solo en preflop.** En cuanto llega el flop, el orden de apuestas vuelve a la normalidad — la ciega pequeña actúa primero, y quien puso el straddle vuelve a un asiento temprano y fuera de posición con un bote inflado. Esa es una de las principales razones por las que el straddle UTG hace perder dinero tan a menudo: pagas el doble por ser el último durante una calle, y luego juegas las tres calles siguientes fuera de posición.
 
 ---
 
@@ -78,7 +78,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 | **UTG (estándar)** | En UTG | A la izquierda del que straddlea | Solo preflop | Sí |
 | **Mississippi** | Cualquier asiento (a menudo botón/CO) | A la izquierda del que straddlea | Preflop — postflop solo desde el botón* | Sí |
 | **Button** | El botón | Ciega pequeña | Pre + postflop | Sí |
-| **Sleeper** | Un asiento que no es UTG | Normal (UTG) | No | Regla de la casa |
+| **Sleeper** | Un asiento que no es UTG | Normal (UTG) | Preflop, solo si se foldea hasta él | Regla de la casa |
 | **Re-straddle** | A la izquierda de un straddle (algunas salas permiten cualquier asiento) | A la izquierda del re-straddle | Solo preflop | Sí |
 
 </div>
@@ -88,7 +88,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 - **Straddle UTG** — el clásico. Se pone en UTG, última acción solo en preflop. El más común y el más débil en cuanto a posición.
 - **Mississippi straddle** — se puede poner desde **cualquier posición**, con más fuerza desde el botón o el cutoff. La acción empieza a la izquierda del que lo pone, así que un Mississippi straddle desde el botón añade la **última palabra en preflop** a la posición postflop que el botón ya tenía — el único straddle con un argumento posicional real. No está permitido en todas partes.
 - **Button straddle** — un straddle estilo Mississippi específicamente desde el botón; el botón conserva la última acción hasta el final. El flujo exacto (dónde encaja la ciega pequeña) varía según la sala — confírmalo con el repartidor.
-- **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**. Nunca compra posición; que al "despertar" gane la opción de subir como ciega viva depende de las reglas de la casa. Rara, y casi nunca se ve online.
+- **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**. No compra posición como lo hace un straddle vivo; que al "despertar" gane la opción de subir como ciega viva depende de las reglas de la casa. Rara, y casi nunca se ve online.
 - **Re-straddle (doble straddle)** — un jugador a la izquierda puede straddlear *por encima* de un straddle, por un mínimo del doble del anterior ($4 → $8 → $16). Si está permitido, y desde qué asientos, es pura regla de la casa.
 
 ⚠️ Cada uno de estos **depende de las reglas de la casa.** Ante la duda, pregunta al floor antes de soltar fichas — la mecánica cambia de verdad de una sala a otra.

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Cara Main Texas Hold'em untuk Pemula — Peraturan, Cip, Kedudukan Tangan & Strategi Pertama",
   seoTitle: "Cara Main Poker Texas Hold'em untuk Pemula — Peraturan & Cip",
   desc: "Tak pernah main poker? Belajar cara main Texas Hold'em langkah demi langkah — blinds, susunan cip, kedudukan tangan dan helaian rujukan mudah untuk pemula.",
-  tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
+  tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas sehingga empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-01",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -427,7 +427,7 @@ A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum 
 
 **Q. Apakah versi pantas peraturan Texas Hold'em?**
 
-A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Satu tangan penuh ada empat pusingan pertaruhan dan lima kad komuniti, dan tangan lima kad terbaik memenangi pot — atau pot dikongsi, kalau lima kad terbaik betul-betul sama (jika ada side pot, setiap pot diberikan secara berasingan).
+A. Letak blinds → edar 2 kad pemula → pertaruhan pre-flop → buka 3 kad komuniti (flop) + pertaruhan → buka 1 kad (turn) + pertaruhan → buka 1 kad (river) + pertaruhan → tangan terbaik menang. Satu tangan penuh ada sehingga empat pusingan pertaruhan (kurang jika semua pemain lain fold atau pemain sudah all in) dan sehingga lima kad komuniti, dan tangan lima kad terbaik memenangi pot — atau pot dikongsi, kalau lima kad terbaik betul-betul sama (jika ada side pot, setiap pot diberikan secara berasingan).
 
 **Q. Berapa ramai pemain diperlukan untuk main Texas Hold'em?**
 
@@ -447,7 +447,7 @@ A. Di meja live, satu tangan biasanya mengambil masa kira-kira 30 saat hingga 2 
 
 Texas Hold'em lebih mudah dipelajari bila anda asingkan peraturan daripada strategi.
 
-Pertama, ==belajar alirannya==: blinds, dua kad pemula, lima kad komuniti, empat pusingan pertaruhan, dan tangan lima kad terbaik. ==g:Kemudian belajar posisi, tangan permulaan dan keputusan pot asas.==
+Pertama, ==belajar alirannya==: blinds, dua kad pemula, lima kad komuniti, sehingga empat pusingan pertaruhan, dan tangan lima kad terbaik. ==g:Kemudian belajar posisi, tangan permulaan dan keputusan pot asas.==
 
 Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings), berlatih dengan [carta tangan permulaan](/en/hand-chart), dan guna [kalkulator odds poker](/ms/calculator) bila anda mahu faham kenapa sesuatu call itu menguntungkan atau tidak.
 

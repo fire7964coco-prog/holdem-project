@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in olmayan bir turnuva showdown'ında river'ın son agresörü önce gösterir; river check geçildiyse butonun solundaki ilk aktif oyuncu başlar. Bir oyuncu all-in olduğunda, tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen açılır. River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir. Cash oyununda gösterme ve muck ev kuralına bağlıdır.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -113,7 +113,7 @@ Gerçek durum: elinde **J♥ 10♥** var, board **Q♥ 9♥ 8♥ 2♣ 5♦**. K�
 
 Slow roll, ==kazandığını bildiğin çok güçlü bir eli göstermeyi bilerek uzatmaktır==.
 
-Elinde nuts var. Rakip güçlü bir el gösteriyor. Sen duraklıyorsun, düşünüyormuş gibi yapıyorsun, kartlarına yavaşça bakıyorsun, herkesi bekletiyorsun — sonra kazananı çeviriyorsun. Teknik olarak yasal. Herkesçe nefret edilen bir hareket.
+Elinde nuts var. Rakip güçlü bir el gösteriyor. Sen duraklıyorsun, düşünüyormuş gibi yapıyorsun, kartlarına yavaşça bakıyorsun, herkesi bekletiyorsun — sonra kazananı çeviriyorsun. TDA ve WSOP turnuva kural kitaplarında onu adıyla yasaklayan bir kural yok. Herkesçe nefret edilen bir hareket.
 
 ![Pokerde slow roll — bir oyuncu kazanan eli göstermeyi bilerek geciktirirken diğer oyuncuların sinirlenmesi](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Turnuvadaki all-in açma zorunluluğu dışında kaybeden el, izin verilen el
 
 **Q. Pokerde slow roll nedir ve neden kötü?**
 
-A. Slow roll, en iyisi olduğunu zaten bildiğin kazanan bir eli göstermeyi bilerek geciktirmektir. Yasaldır ama herkesçe nefret edilir, çünkü rakibi kasten aşağılamak gibi görülür. Elinde nuts ya da net bir kazanan varsa, kartlarını hemen çevir. Kartını ne hızla gösterdiğin, masadaki karakterin hakkında çok şey söyler.
+A. Slow roll, en iyisi olduğunu zaten bildiğin kazanan bir eli göstermeyi bilerek geciktirmektir. TDA ve WSOP turnuva kural kitapları onu adıyla yasaklamaz ama herkesçe nefret edilir, çünkü rakibi kasten aşağılamak gibi görülür. Elinde nuts ya da net bir kazanan varsa, kartlarını hemen çevir. Kartını ne hızla gösterdiğin, masadaki karakterin hakkında çok şey söyler.
 
 **Q. All-in durumunda kartları önce kim gösterir?**
 

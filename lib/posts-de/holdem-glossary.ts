@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -85,7 +85,7 @@ Die genaue Reihenfolge, in der sie am Tisch fallen, steht in der [Reihenfolge de
 | **Bluff / Semi-Bluff** | Ein Bluff bettet eine schwache Hand, um bessere zum Folden zu bewegen; ein Semi-Bluff tut das mit einem Draw, der sich noch verbessern kann. |
 | **Check-Raise** | Checken, dann raisen, nachdem ein Gegner bettet – eine starke, täuschende Linie (in modernen Cardrooms erlaubt). |
 | **Min-Raise** | Der kleinste legale Raise. |
-| **String Bet** | Ein nicht angesagter Einsatz in mehreren Bewegungen. Es gilt nur der Betrag der **ersten Bewegung** – meist ist das ein Call. Vermeidbar, indem du vorher den vollen Raise-Betrag ansagst; manche Regelwerke (WSOP) akzeptieren ein bloßes „Raise“, die TDA-Regeln wollen den Betrag angesagt oder in einer Bewegung reingeschoben sehen. |
+| **String Bet** | Ein nicht angesagter Einsatz in mehreren Bewegungen. Es gilt nur der Betrag der **ersten Bewegung** – meist ist das ein Call. Wer den Raise vorher ansagt, darf ihn in mehreren Bewegungen setzen – die sichere Gewohnheit ist, den Betrag zu nennen, bevor du zu den Chips greifst, oder den ganzen Raise in einer Bewegung reinzuschieben. |
 | **Jam / Shove** | All-in gehen. |
 | **Snap Call** | Ein sofortiger Call ohne jedes Zögern. |
 | **Hero Call** | Mit einer schwachen Hand callen, weil du den Gegner als Bluffer gelesen hast. |

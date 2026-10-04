@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -195,7 +195,7 @@ Same preflop raise, opposite flops, opposite correct plays. That's the whole les
 | **C-betting every flop on autopilot** | Ignores that many boards favor the caller | Read the texture first |
 | **Betting big with a wide range** | Wide ranges want small sizing, not big | Small on dry, big only when polarized |
 | **C-betting light multiway** | Fold equity collapses with more players | Value & draws only vs 2+ |
-| **C-betting OOP too often** | You can't realize equity acting first | Check more, build a checking range |
+| **C-betting OOP too often** | You can't realize as much equity acting first | Check more, build a checking range |
 | **Betting into a board that hit them** | 7‑6‑5 smashed their range, not yours | Check more; bet big and selectively when you do |
 | **"One-and-done" barreling** | C-bet flop, always give up turn = easy to float | Have a turn plan before you fire |
 | **Triple-barreling with no equity** | Bluffing off a stack with no outs or blockers | Bluff with backup equity or good blockers |

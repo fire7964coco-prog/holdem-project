@@ -1,3 +1,10 @@
+## 2026-10-04 (6) — 우편함 밀린 MA 처리 2/2: §2-Q EN-먼저 13건 → 24로케일 전파 배포 (MB-163)
+
+- EN 11편 13자리: when-to-fold «worst case» 삭제(45조합 직접 계산 — A♥K♥ 34.44%는 최고값 · 최저 3♥4♥ 32.42%) · c-bet 실수표 «as much» · bad-beat Mabuchi 주석 «칩은 리버 뒤» 삭제 · glossary String bet WSOP 귀속 삭제 · straddle sleeper 표·본문·«one of the main reasons» · rake FAQ 한정+캡 반례 · fish 표 never→rarely · beginners FAQ «up to four» · kicker FAQ 2(스트레이트 vs 플러시 이상 · «both players'») · tiebreak FAQ 무늬 = 자리 추첨(TDA 2019 부록 Rule 10 «highest playing card by suit» 원문 확인 · WSOP 2026 PDF 대조) · showdown 슬로롤 «TDA·WSOP 대회 규정» 한정(사장님 결재).
+- 전파: 서브 4레인(pt·es / ja·zh·zh-hant / de·id·ms / 꼬리 16로케일 Q-9·Q-13) · 130파일. 본체 추가 = de bad-beat 본문 «Erst danach ging das Geld in die Mitte» 삭제(Q-3 동형) · ms beginners tldr·결론 «sehingga empat» · ms showdown «sah» 한정. 레인이 같이 고친 동형 = ja·zh straddle 바로 답 · zh·zh-hant tiebreak 본문 괄호 · ja·zh·zh-hant showdown 바로 답 · ja beginners 슬로롤 2자리.
+- `updated` 10-04(실제 고친 파일만) · `masterUpdated` 10-04 = 핵심 8로케일만(꼬리 16로케일은 showdown Rule 47·70 단락 등 옛 판이라 안 올림 · 잔여는 queue §2-Q).
+- 게이트: audit:hard EN 56 + 24로케일 전부 🔴 0(🟠는 zh-hant 등 대회 글 표 대조 — 무관) · FAQ 스키마 소스=산출물 · 핵심 드리프트 0 · 빌드 exit 0(74 + 629).
+
 ## 2026-10-04 (5) — 우편함 밀린 MA 처리 1/2: JA 고유 정정 21자리 배포 · EN-먼저 13건 등재 (MB-162)
 
 - 대상 MA-295·297·299·301의 JA 고유 요청(beginners 3 · all-in 4 · betting 4 · blind 3 · game-order 3 · showdown 1 · hand-rankings 2 · tiebreak 3). 교열·룰 렌즈 1종(diff) 지적 8건 반영(오드칩 「左回り」 방향 오독 · 스트래들 시 BB 체크 불가 · 프리롤 권유 삭제 등).

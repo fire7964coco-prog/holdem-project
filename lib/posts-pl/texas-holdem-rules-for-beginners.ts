@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -418,7 +418,7 @@ A. Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zak
 
 **Q. Jaka jest szybka wersja zasad Texas Hold'em?**
 
-A. Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: cztery rundy licytacji, pięć kart wspólnych, jeden zwycięzca — albo podzielona pula, jeśli najlepsze pięć kart jest dokładnie takie samo.
+A. Wyłóż blindy → rozdaj 2 karty własne → licytacja preflop → odkryj 3 karty wspólne (flop) + licytacja → odkryj 1 kartę (turn) + licytacja → odkryj 1 kartę (river) + licytacja → wygrywa najlepszy układ. Razem: do czterech rund licytacji (mniej, gdy wszyscy pozostali spasują albo gracze są all-in), do pięciu kart wspólnych, jeden zwycięzca — albo podzielona pula, jeśli najlepsze pięć kart jest dokładnie takie samo.
 
 **Q. Ilu graczy potrzeba, żeby zagrać w Texas Hold'em?**
 

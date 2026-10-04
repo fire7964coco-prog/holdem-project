@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -418,7 +418,7 @@ A. I due giocatori alla sinistra del bottone del mazziere devono mettere puntate
 
 **Q. Qual è la versione rapida delle regole del Texas Hold'em?**
 
-A. Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: quattro giri di puntate, cinque carte comuni, un vincitore — o un piatto diviso, se le migliori cinque carte sono esattamente uguali.
+A. Metti i bui → dai 2 carte personali → puntate preflop → scopri 3 carte comuni (flop) + puntate → scopri 1 carta (turn) + puntate → scopri 1 carta (river) + puntate → vince la mano migliore. In totale: fino a quattro giri di puntate (meno se tutti gli altri passano o i giocatori sono all-in), fino a cinque carte comuni, un vincitore — o un piatto diviso, se le migliori cinque carte sono esattamente uguali.
 
 **Q. Quanti giocatori servono per giocare a Texas Hold'em?**
 

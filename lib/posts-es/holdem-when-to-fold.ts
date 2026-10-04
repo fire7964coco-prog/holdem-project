@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -115,7 +115,7 @@ Foldear basura es fácil. Foldear una *buena* mano — top pair, un sobrepar, in
 
 </div>
 
-La fila del trío es la que necesita que le pongas calle, porque soltarlo demasiado pronto cuesta más que soltarlo demasiado tarde. Ten 9♠9♣ en un flop 9♥5♥2♥ contra un color hecho A♥K♥ — el peor caso posible — y el trío todavía gana el ==34%== de las veces: liga la casa con los siete outs evidentes (el nueve restante, tres cincos, tres doses) *y* además siempre que el turn y el river se emparejen entre sí. En el flop eso se paga — no porque la siguiente carta por sí sola llegue lo bastante a menudo (siete outs son alrededor del 16%, por debajo del precio de la mayoría de apuestas), sino porque cuando la mesa se empareja te llevas todo lo que un color va a pagar, y foldear tríos en el flop cuesta mucho más a la larga que las apuestas que te ahorras. Solo cuando el proyecto ya ha entrado se aplica la fila de arriba.
+La fila del trío es la que necesita que le pongas calle, porque soltarlo demasiado pronto cuesta más que soltarlo demasiado tarde. Ten 9♠9♣ en un flop 9♥5♥2♥ contra un color hecho A♥K♥ y el trío todavía gana el ==34%== de las veces — y ningún color hecho lo deja muy por debajo de eso (el suelo ronda el 32%, contra 3♥4♥ con sus outs de escalera de color): liga la casa con los siete outs evidentes (el nueve restante, tres cincos, tres doses) *y* además siempre que el turn y el river se emparejen entre sí. En el flop eso se paga — no porque la siguiente carta por sí sola llegue lo bastante a menudo (siete outs son alrededor del 16%, por debajo del precio de la mayoría de apuestas), sino porque cuando la mesa se empareja te llevas todo lo que un color va a pagar, y foldear tríos en el flop cuesta mucho más a la larga que las apuestas que te ahorras. Solo cuando el proyecto ya ha entrado se aplica la fila de arriba.
 
 El reflejo contrario también importa, porque **foldear puede ser una fuga en sí misma.** Un *buen* laydown suelta una mano batida ante una línea que tiene sentido. Un *mal* laydown foldea la mejor mano ante una carta de miedo por temor — y si lo haces a menudo, contra rivales que piensan te farolearán sin descanso. El objetivo no es foldear más ni foldear menos; es foldear *cuando la evidencia está ahí.*
 

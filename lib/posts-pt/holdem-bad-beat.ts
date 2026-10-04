@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler no sentido estrito, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas uma sequência constante de bad beats normalmente significa que os adversários estão colocando dinheiro atrás — o tipo de jogo em que você quer estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -132,7 +132,7 @@ Uma ressalva importante: **cada clube, cassino ou site de poker define seu próp
 
 Se você quer se sentir melhor com as suas próprias batidas, lembre que as piores acontecem nos maiores palcos. A mais lendária ocorreu no **Main Event da World Series of Poker de 2008**, onde **Motoyuki Mabuchi** transformou seu par de ases em **quadra — quadra de ases**, uma mão que só um straight flush bate — e *ainda assim perdeu*. Num board de A♥ 9♣ Q♦ 10♦, **Justin Phillips** (que tinha K♦ J♦) já tinha feito no turn uma sequência de ás — a Broadway, A-K-Q-J-10 —, na frente da trinca de ases de Mabuchi. O river **A♦** completou a quadra de Mabuchi enquanto, na mesmíssima carta, transformava a sequência de Phillips num **royal flush** — o 10‑J‑Q‑K‑A de ouros. A ação no river, como a PokerNews reportou: Mabuchi deu check, Phillips apostou, Mabuchi anunciou "gamble!" e foi de all-in, e Phillips pagou na hora. A única carta que completou a quadra de ases foi a única que podia batê-la.
 
-*Pela régua lá de cima, isso tecnicamente nem é um bad beat — Phillips já estava na frente no turn, e as fichas que vimos entrar entraram depois da última carta, então ninguém deu suckout. Mas o poker guarda essa mão como o bad beat mais famoso já distribuído, e o nome pegou.*
+*Pela régua lá de cima, isso tecnicamente nem é um bad beat — Phillips já estava na frente no turn e continuou na frente no river, então ninguém deu suckout. Mas o poker guarda essa mão como o bad beat mais famoso já distribuído, e o nome pegou.*
 
 Esse é o teto da dor de bad beat: não um favorito de 80% caindo, mas *quatro ases* — uma mão que você pode jogar a vida inteira sem nunca perder — batida por um straight flush, a única categoria de mão que a supera. Vale guardar isso no bolso na próxima vez que seus ases forem quebrados: por pior que o baralho tenha te tratado, alguém já perdeu com quadra de ases.
 

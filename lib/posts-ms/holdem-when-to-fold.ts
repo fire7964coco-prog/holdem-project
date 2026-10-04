@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fold ialah kemahiran paling dipandang rendah: hasil terburuk fold ialah sifar, sedangkan call yang kalah membocorkan cip. Pemain mantap fold sekitar 75–85% tangan preflop, melepaskan draw yang tak cukup pot odds, dan melepaskan tangan kuat apabila corak lawan pasif jelas menunjukkan value. Cip yang sudah dalam pot bukan milik anda lagi.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -115,7 +115,7 @@ Fold tangan sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, m
 
 </div>
 
-Baris set itulah yang perlu dinamakan street-nya, kerana fold terlalu awal lebih mahal daripada fold terlalu lewat. Pegang 9♠9♣ pada flop 9♥5♥2♥ menentang flush A♥K♥ yang sudah jadi — kes terburuk yang mungkin anda hadapi — dan set itu masih menang ==34%== masa: ia fill up dengan tujuh out yang jelas (kad 9 yang terakhir, tiga kad 5, tiga kad 2) *dan* setiap kali turn dan river berpasangan sesama sendiri. Di flop itu ialah call — bukan kerana kad seterusnya sahaja cukup kerap kena (tujuh out kira-kira 16%, kurang daripada kebanyakan harga bet), tetapi kerana apabila board berpasangan anda memenangi segala yang sanggup dibayar oleh flush, dan fold set di flop merugikan jauh lebih banyak dalam jangka panjang berbanding bet yang anda jimatkan. Hanya selepas draw itu menjadi barulah baris di atas terpakai.
+Baris set itulah yang perlu dinamakan street-nya, kerana fold terlalu awal lebih mahal daripada fold terlalu lewat. Pegang 9♠9♣ pada flop 9♥5♥2♥ menentang flush A♥K♥ yang sudah jadi dan set itu masih menang ==34%== masa — dan tiada flush yang sudah jadi menekannya jauh di bawah angka itu (paling rendah kira-kira 32%, menentang 3♥4♥ dengan out straight flush-nya): ia fill up dengan tujuh out yang jelas (kad 9 yang terakhir, tiga kad 5, tiga kad 2) *dan* setiap kali turn dan river berpasangan sesama sendiri. Di flop itu ialah call — bukan kerana kad seterusnya sahaja cukup kerap kena (tujuh out kira-kira 16%, kurang daripada kebanyakan harga bet), tetapi kerana apabila board berpasangan anda memenangi segala yang sanggup dibayar oleh flush, dan fold set di flop merugikan jauh lebih banyak dalam jangka panjang berbanding bet yang anda jimatkan. Hanya selepas draw itu menjadi barulah baris di atas terpakai.
 
 Imej cerminnya juga penting, kerana **fold boleh menjadi leak tersendiri.** Laydown yang *baik* melepaskan tangan yang sudah kalah kepada corak yang masuk akal. Laydown yang *buruk* fold tangan terbaik kepada kad menakutkan kerana takut — dan jika anda kerap melakukannya, lawan yang berfikir akan bluff anda tanpa henti. Matlamatnya bukan fold lebih banyak atau fold lebih sedikit; matlamatnya ialah fold *apabila buktinya ada.*
 

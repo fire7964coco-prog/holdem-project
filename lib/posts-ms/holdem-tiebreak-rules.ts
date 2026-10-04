@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Seri dipecahkan mengikut urutan tetap: kedudukan tangan dahulu, kemudian kad yang membentuk tangan itu, kemudian kicker dari tertinggi ke terendah. Pair sama — kicker pertama yang lebih tinggi menang; lima kad yang serupa — pot dibahagi. Suit tidak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -230,7 +230,7 @@ A. Straight flush yang lebih tinggi menang, ditentukan oleh kad teratasnya — s
 
 **Q. Adakah suit pernah memecahkan seri dalam Texas Hold'em?**
 
-A. Tidak — tetapi ada satu tempat suit digunakan di meja Hold'em, dan ia bukan pot. Dalam cash game, dan di bawah kebanyakan peraturan rumah bilik kad, setiap pemain mencabut satu kad untuk menentukan di mana butang pengedar bermula, dan jika dua cabutan seri pada nilai, susunan suit yang menyelesaikannya. (Kejohanan WSOP tidak membuat cabutan pembukaan: ==Peraturan Kejohanan 85== memulakan butang pada stack pertama di sebelah kanan pengedar dan hanya mengadakan cabutan untuk butang apabila tinggal tiga, dua dan satu meja.) Walau apa pun, itu memilih *tempat duduk*, bukan tangan. Selain cabutan butang — yang diselesaikan oleh glosari buku peraturan WSOP dengan "rank and suit" (nilai dan suit) — satu-satunya susunan suit dalam buku peraturan kejohanan itu milik stud dan razz. Jika dua lima kad terbaik sepadan nilai demi nilai, pot dibahagi tanpa mengira suit.
+A. Tidak — suit tidak pernah menentukan pot. Di meja Hold'em, suit hanya muncul dalam cabutan kad untuk menentukan tempat duduk. Yang paling dikenali ialah cabutan butang: dalam cash game, dan di bawah kebanyakan peraturan rumah bilik kad, setiap pemain mencabut satu kad untuk menentukan di mana butang pengedar bermula, dan jika dua cabutan seri pada nilai, susunan suit yang menyelesaikannya. (Kejohanan WSOP tidak membuat cabutan pembukaan: ==Peraturan Kejohanan 85== memulakan butang pada stack pertama di sebelah kanan pengedar dan hanya mengadakan cabutan untuk butang apabila tinggal tiga, dua dan satu meja.) Pengarah kejohanan juga menempatkan semula pemain dari meja yang dibubarkan dengan mengedarkan satu kad kepada setiap pemain, dan contoh TDA memberikan tempat duduk pertama kepada ==kad tertinggi mengikut suit==. Walau apa pun, itu memilih *tempat duduk*, bukan tangan. Antara peraturan tangan dalam buku peraturan WSOP, satu-satunya susunan suit milik stud dan razz. Jika dua lima kad terbaik sepadan nilai demi nilai, pot dibahagi tanpa mengira suit.
 
 **Q. Apa berlaku jika kedua-dua pemain ada tangan yang betul-betul sama?**
 

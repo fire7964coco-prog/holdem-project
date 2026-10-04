@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de la mayoría de botes por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -190,7 +190,7 @@ A. De forma significativa — sobre todo en límites bajos, donde el tope no baj
 
 **Q. ¿Es más alto el rake en póker online o en vivo?**
 
-A. El rake en vivo es un porcentaje más alto con un tope mayor, pero juegas muchas menos manos por hora. El rake online es un porcentaje más bajo con un tope menor, pero jugar a varias mesas hace que lo pagues en muchas más manos — así que un grinder de volumen puede pagar más rake por hora online. Juzga el rake por la tasa multiplicada por la frecuencia, no solo por la tasa.
+A. El rake en vivo tiende a ser un porcentaje más alto, normalmente con un tope mayor, pero juegas muchas menos manos por hora. El rake online suele ser un porcentaje más bajo con un tope menor — los topes varían según la sala y los límites, y algunos topes online superan a los de en vivo —, pero jugar a varias mesas hace que lo pagues en muchas más manos — así que un grinder de volumen puede pagar más rake por hora online. Juzga el rake por la tasa multiplicada por la frecuencia, no solo por la tasa.
 
 ---
 

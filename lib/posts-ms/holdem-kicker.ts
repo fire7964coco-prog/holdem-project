@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila board berpasangan dengan As.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-01",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -160,7 +160,7 @@ A. Tidak. Flush menggunakan kelima-lima kad, jadi tiada kicker berasingan. Apabi
 
 **Q. Adakah straight ada kicker?**
 
-A. Tidak. Straight ialah lima kad berturutan, jadi ia sudah lengkap. Jika dua pemain membentuk straight yang sama, mereka membahagi pot — hole card tambahan tidak penting. Hanya straight yang lebih tinggi mengalahkan straight yang lebih rendah.
+A. Tidak. Straight ialah lima kad berturutan, jadi ia sudah lengkap. Jika dua pemain membentuk straight yang sama, mereka membahagi pot — hole card tambahan tidak penting. Sesama straight, hanya straight yang lebih tinggi mengalahkan straight yang lebih rendah — namun flush atau tangan yang lebih tinggi mengalahkan kesemuanya.
 
 **Q. Adakah full house ada kicker?**
 
@@ -180,7 +180,7 @@ A. Ya — two pair menggunakan satu kicker. Jika anda memegang K♥ Q♦ dan law
 
 **Q. Adakah kicker mesti berada dalam tangan anda?**
 
-A. Tidak. Kicker boleh jadi kad komuniti. Poker sentiasa membentuk lima kad terbaik daripada tujuh, jadi jika kad board mengatasi hole card anda, kad board itu menjadi kicker yang dikongsi dan kad seterusnya yang menentukan. Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.
+A. Tidak. Kicker boleh jadi kad komuniti. Poker sentiasa membentuk lima kad terbaik daripada tujuh, jadi jika kad sampingan tertinggi ialah kad board yang mengatasi hole card kedua-dua pemain, kad itu menjadi kicker yang dikongsi oleh mereka berdua dan kad seterusnya yang menentukan. Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 

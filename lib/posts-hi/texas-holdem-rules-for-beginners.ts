@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम में हर खिलाड़ी को 2 hole कार्ड मिलते हैं, 5 community कार्ड इस्तेमाल होते हैं, और चार betting राउंड के बाद सबसे अच्छा 5-कार्ड हैंड जीतता है।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -421,7 +421,7 @@ A. dealer button के बाईं ओर बैठे दो खिलाड�
 
 **Q. टेक्सस होल्डम के नियमों का झटपट वर्शन क्या है?**
 
-A. blinds लगाएँ → 2 hole कार्ड बाँटें → preflop betting → 3 community कार्ड (flop) खोलें + betting → 1 कार्ड (turn) खोलें + betting → 1 कार्ड (river) खोलें + betting → सबसे अच्छा हैंड जीतता है। कुल: चार betting राउंड, पाँच community कार्ड, एक विजेता — या बँटा हुआ pot, अगर बेहतरीन पाँच कार्ड बिल्कुल बराबर हों।
+A. blinds लगाएँ → 2 hole कार्ड बाँटें → preflop betting → 3 community कार्ड (flop) खोलें + betting → 1 कार्ड (turn) खोलें + betting → 1 कार्ड (river) खोलें + betting → सबसे अच्छा हैंड जीतता है। कुल: ज़्यादा से ज़्यादा चार betting राउंड (बाकी सब fold कर दें या खिलाड़ी all-in हों तो कम), ज़्यादा से ज़्यादा पाँच community कार्ड, एक विजेता — या बँटा हुआ pot, अगर बेहतरीन पाँच कार्ड बिल्कुल बराबर हों।
 
 **Q. टेक्सस होल्डम खेलने के लिए कितने खिलाड़ी चाहिए?**
 

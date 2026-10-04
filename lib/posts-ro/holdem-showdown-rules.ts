@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "În turneu, fără all-in, arată primul ultimul agresor de la river; dacă toți dau check, începe primul jucător activ din stânga butonului. Cu un all-in, toate mâinile rămase se arată imediat după încheierea pariurilor. Cine a plătit la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor. La cash, arătarea cărților și muck-ul depind de regulile casei.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Situație reală: ai J♥ 10♥ pe un board Q♥ 9♥ 8♥ 2♣ 5♦. Ai o chint
 
 Slow roll-ul înseamnă ==să-ți iei intenționat mult timp ca să arăți o mână foarte puternică atunci când știi deja că ai câștigat==.
 
-Ai nuts-ul. Adversarul arată o mână puternică. Tu faci o pauză, te prefaci că te gândești, îți privești cărțile pe îndelete, îi faci pe toți să aștepte — și apoi întorci mâna câștigătoare. Tehnic legal. Universal detestat.
+Ai nuts-ul. Adversarul arată o mână puternică. Tu faci o pauză, te prefaci că te gândești, îți privești cărțile pe îndelete, îi faci pe toți să aștepte — și apoi întorci mâna câștigătoare. Nicio regulă din regulamentele de turneu TDA și WSOP nu îl interzice pe nume. Universal detestat.
 
 ![Slow roll în poker — ceilalți jucători enervați în timp ce un jucător întârzie intenționat să arate mâna câștigătoare](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. În afara obligației de a arăta la un all-in de turneu, o mână pierzătoa
 
 **Q. Ce este slow roll-ul în poker și de ce e văzut prost?**
 
-A. Slow roll-ul înseamnă să întârzii intenționat să arăți o mână câștigătoare despre care știi deja că e cea mai bună. E legal, dar universal detestat, pentru că e văzut ca o umilire deliberată a adversarului. Dacă ai nuts-ul sau o mână clar câștigătoare, întoarce-ți cărțile imediat. Viteza cu care arăți spune multe despre tine la masă.
+A. Slow roll-ul înseamnă să întârzii intenționat să arăți o mână câștigătoare despre care știi deja că e cea mai bună. Regulamentele de turneu TDA și WSOP nu îl interzic pe nume, dar e universal detestat, pentru că e văzut ca o umilire deliberată a adversarului. Dacă ai nuts-ul sau o mână clar câștigătoare, întoarce-ți cărțile imediat. Viteza cu care arăți spune multe despre tine la masă.
 
 **Q. Într-o situație de all-in, cine arată cărțile primul?**
 

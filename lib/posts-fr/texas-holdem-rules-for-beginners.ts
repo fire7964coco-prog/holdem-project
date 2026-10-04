@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -419,7 +419,7 @@ A. Les deux joueurs à gauche du bouton du donneur doivent poser des mises oblig
 
 **Q. Quelle est la version express des règles du Texas Hold'em ?**
 
-A. Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : quatre tours d'enchères, cinq cartes communes, un vainqueur — ou un pot partagé, si les cinq meilleures cartes sont exactement identiques.
+A. Poser les blindes → distribuer 2 cartes fermées → enchères pré-flop → révéler 3 cartes communes (flop) + enchères → révéler 1 carte (tournant) + enchères → révéler 1 carte (rivière) + enchères → la meilleure main gagne. Au total : jusqu'à quatre tours d'enchères (moins si tous les autres se couchent ou si les joueurs sont à tapis), jusqu'à cinq cartes communes, un vainqueur — ou un pot partagé, si les cinq meilleures cartes sont exactement identiques.
 
 **Q. Combien de joueurs faut-il pour jouer au Texas Hold'em ?**
 

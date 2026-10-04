@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação no pré-flop e a opção de aumentar, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -61,7 +61,7 @@ Os blinds decidem | O small e o big blind agem na sua vez, encarando o preço de
 O straddler age POR ÚLTIMO | Se ninguém aumentou, o straddler pode dar check na sua opção ou aumentar — a última palavra antes do flop
 :::
 
-Essa "última ação no pré-flop" é o que o straddler está pagando. Mas repare na pegadinha: pra um **straddle UTG, o privilégio da última ação é só no pré-flop.** Assim que o flop vem, a ordem de aposta volta ao normal — o small blind age primeiro, e o straddler está de volta a uma posição inicial, fora de posição, com um pote inchado. Esse único fato é a razão de o straddle UTG tão frequentemente ser um perdedor de dinheiro: você paga o dobro pra ser o último por uma street, e depois joga as três streets seguintes fora de posição.
+Essa "última ação no pré-flop" é o que o straddler está pagando. Mas repare na pegadinha: pra um **straddle UTG, o privilégio da última ação é só no pré-flop.** Assim que o flop vem, a ordem de aposta volta ao normal — o small blind age primeiro, e o straddler está de volta a uma posição inicial, fora de posição, com um pote inchado. Esse é um dos principais motivos de o straddle UTG tão frequentemente ser um perdedor de dinheiro: você paga o dobro pra ser o último por uma street, e depois joga as três streets seguintes fora de posição.
 
 ---
 
@@ -78,7 +78,7 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 | **UTG (padrão)** | Under the gun | À esquerda do straddler | Só pré-flop | Sim |
 | **Mississippi** | Qualquer cadeira (muitas vezes button/CO) | À esquerda do straddler | Pré-flop — pós-flop só a partir do button* | Sim |
 | **Button** | O button | Small blind | Pré + pós-flop | Sim |
-| **Sleeper** | Uma cadeira que não é UTG | Normal (UTG) | Não | Regra da casa |
+| **Sleeper** | Uma cadeira que não é UTG | Normal (UTG) | Pré-flop, só se foldarem até ele | Regra da casa |
 | **Re-straddle** | À esquerda de um straddler (algumas salas permitem qualquer cadeira) | À esquerda do re-straddler | Só pré-flop | Sim |
 
 </div>
@@ -88,7 +88,7 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 - **Straddle UTG** — o clássico. Postado under the gun, última ação só no pré-flop. O mais comum e o mais fraco, em termos de posição.
 - **Mississippi straddle** — pode ser postado de **qualquer posição**, com mais força a partir do button ou cutoff. A action começa à esquerda do straddler, então um Mississippi straddle no button acrescenta a **última palavra no pré-flop** à posição pós-flop que o button já tem — o único straddle com um argumento posicional de verdade. Não é permitido em toda parte.
 - **Button straddle** — um straddle no estilo Mississippi especificamente a partir do button; o button mantém a última ação até o fim. O fluxo exato (onde o small blind se encaixa) varia por sala — confirme com o dealer.
-- **Sleeper straddle** — um blind de uma cadeira que não é UTG e que fica "dormindo": é **inativo a menos que a action folde toda de volta até ele**. Posição ele nunca compra; se, ao "acordar", ele ganha a opção de aumentar como um blind vivo, é regra da casa. Raro, e quase nunca visto online.
+- **Sleeper straddle** — um blind de uma cadeira que não é UTG e que fica "dormindo": é **inativo a menos que a action folde toda de volta até ele**. Ele não compra posição do jeito que um straddle vivo compra; se, ao "acordar", ele ganha a opção de aumentar como um blind vivo, é regra da casa. Raro, e quase nunca visto online.
 - **Re-straddle (double straddle)** — um jogador à esquerda pode dar straddle *por cima* de um straddle, por no mínimo o dobro do anterior ($4 → $8 → $16). Se é permitido, e de quais cadeiras, é pura regra da casa.
 
 ⚠️ Cada um desses depende das **regras da casa.** Na dúvida, pergunte ao floor antes de jogar fichas — a mecânica realmente muda de sala pra sala.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -115,7 +115,7 @@ Foldar lixo é fácil. Foldar uma *boa* mão — top pair, um overpair, até um 
 
 </div>
 
-A linha do set é a que precisa ter a street nomeada, porque largá-lo cedo demais custa mais do que largá-lo tarde demais. Segure 9♠9♣ num flop 9♥5♥2♥ contra um flush feito A♥K♥ — o pior caso possível — e o set ainda vence ==34%== das vezes: ele fecha nos sete outs evidentes (o nove restante, três cincos, três dois) *e* também sempre que o turn e o river formam par entre si. No flop isso é call — não porque a próxima carta sozinha chegue com frequência suficiente (sete outs dão cerca de 16%, abaixo do preço da maioria das apostas), mas porque, quando o board pareia, você leva tudo o que um flush é capaz de pagar, e foldar sets no flop custa muito mais no longo prazo do que as apostas que você economiza. Só no river, depois de mais uma street de agressão, é que a linha acima vale.
+A linha do set é a que precisa ter a street nomeada, porque largá-lo cedo demais custa mais do que largá-lo tarde demais. Segure 9♠9♣ num flop 9♥5♥2♥ contra um flush feito A♥K♥ e o set ainda vence ==34%== das vezes — e nenhum flush feito o deixa muito abaixo disso (o piso fica em cerca de 32%, contra 3♥4♥ com seus outs de straight flush): ele fecha nos sete outs evidentes (o nove restante, três cincos, três dois) *e* também sempre que o turn e o river formam par entre si. No flop isso é call — não porque a próxima carta sozinha chegue com frequência suficiente (sete outs dão cerca de 16%, abaixo do preço da maioria das apostas), mas porque, quando o board pareia, você leva tudo o que um flush é capaz de pagar, e foldar sets no flop custa muito mais no longo prazo do que as apostas que você economiza. Só no river, depois de mais uma street de agressão, é que a linha acima vale.
 
 O outro lado da moeda também importa, porque **foldar pode ser um leak por si só.** Uma *boa* laydown larga uma mão batida contra uma linha que faz sentido. Uma *má* laydown folda a melhor mão para uma carta assustadora por medo — e se você faz isso com frequência, adversários pensantes vão te blefar sem parar. O objetivo não é foldar mais ou foldar menos; é foldar *quando a evidência está lá.*
 

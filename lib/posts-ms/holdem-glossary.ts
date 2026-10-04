@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosari ringkas istilah poker yang benar-benar muncul dalam permainan Texas Hold'em, disusun ikut cara anda menemuinya: aksi pertaruhan, posisi, tangan dan board, jenis pemain, wang serta situasi di meja. Mulakan dengan istilah yang paling sering keliru (check vs call, set vs trips, cooler vs bad beat), kemudian semak ikut kategori. Istilah yang ada panduan lebih mendalam dipautkan terus ke artikelnya.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-04",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -81,7 +81,7 @@ Poker ada perbendaharaan katanya sendiri, dan menguasainya memberi dua kelebihan
 | **Bluff / Semi-bluff** | Bluff bertaruh dengan tangan lemah untuk memaksa tangan yang lebih baik fold; semi-bluff melakukannya dengan draw yang masih boleh bertambah baik. |
 | **Check-raise** | Check, kemudian raise selepas lawan bet — langkah yang kuat dan mengelirukan (dibenarkan di bilik kad moden). |
 | **Min-raise** | Raise paling kecil yang dibenarkan. |
-| **String bet** | Tangan yang berpatah balik untuk mengambil lebih banyak cip tanpa sebarang pengisytiharan — hanya gerakan pertama dikira (biasanya diputuskan sebagai call). Mengisytiharkan jumlah raise penuh terlebih dahulu menjadikan gerakan berperingkat sah; sesetengah buku peraturan (WSOP) menerima sebutan "raise" sahaja, manakala peraturan TDA mahu jumlahnya dinyatakan atau ditolak masuk dalam satu gerakan. |
+| **String bet** | Tangan yang berpatah balik untuk mengambil lebih banyak cip tanpa sebarang pengisytiharan — hanya gerakan pertama dikira (biasanya diputuskan sebagai call). Mengisytiharkan raise terlebih dahulu menjadikan gerakan berperingkat sah — tabiat yang selamat ialah menyebut jumlahnya sebelum mencapai cip, atau menolak masuk keseluruhan raise dalam satu gerakan. |
 | **Jam / Shove** | Pergi all-in. |
 | **Snap call** | Call serta-merta, tanpa teragak-agak. |
 | **Hero call** | Call dengan tangan lemah kerana anda membaca lawan sedang bluff. |

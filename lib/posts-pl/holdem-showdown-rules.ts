@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W turnieju bez all-ina pierwszy pokazuje ostatni agresor rivera; po samych czekach zaczyna pierwszy aktywny gracz na lewo od buttona. Przy all-inie wszystkie pozostałe ręce trzeba odsłonić natychmiast po zakończeniu licytacji. Kto sprawdził na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora. W cashu pokazywanie i muckowanie zależą od zasad pokoju.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-04",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -113,7 +113,7 @@ Realna sytuacja: trzymasz J♥ 10♥ na stole Q♥ 9♥ 8♥ 2♣ 5♦. Masz Pok
 
 Slow roll to ==celowe zwlekanie z pokazaniem bardzo silnego układu, kiedy już wiesz, że wygrałeś==.
 
-Masz nutsa. Rywal pokazuje silny układ. Ty robisz pauzę, udajesz, że się zastanawiasz, powoli zerkasz na swoje karty, każesz wszystkim czekać — a potem odkrywasz zwycięski układ. Technicznie legalne. Powszechnie znienawidzone.
+Masz nutsa. Rywal pokazuje silny układ. Ty robisz pauzę, udajesz, że się zastanawiasz, powoli zerkasz na swoje karty, każesz wszystkim czekać — a potem odkrywasz zwycięski układ. Żaden przepis w regulaminach turniejowych TDA i WSOP nie zakazuje go z nazwy. Powszechnie znienawidzone.
 
 ![Slow roll w pokerze — reszta graczy jest sfrustrowana, gdy jeden gracz celowo zwleka z pokazaniem wygrywającego układu](/images/holdem-showdown-slow-roll.webp)
 
@@ -174,7 +174,7 @@ A. Poza obowiązkowym odkrywaniem przy all-inie w turnieju przegrywającą ręk�
 
 **Q. Czym jest slow roll w pokerze i dlaczego jest źle widziany?**
 
-A. Slow roll to celowe zwlekanie z pokazaniem wygrywającego układu, o którym już wiesz, że jest najlepszy. Jest legalny, ale powszechnie znienawidzony, bo odbierany jest jako celowe upokarzanie rywala. Jeśli masz nutsa albo wyraźnego zwycięzcę, odkryj karty natychmiast. To, jak szybko odkrywasz, wiele mówi o twoim charakterze przy stole.
+A. Slow roll to celowe zwlekanie z pokazaniem wygrywającego układu, o którym już wiesz, że jest najlepszy. Regulaminy turniejowe TDA i WSOP nie zakazują go z nazwy, ale jest powszechnie znienawidzony, bo odbierany jest jako celowe upokarzanie rywala. Jeśli masz nutsa albo wyraźnego zwycięzcę, odkryj karty natychmiast. To, jak szybko odkrywasz, wiele mówi o twoim charakterze przy stole.
 
 **Q. W sytuacji all-in kto pokazuje karty pierwszy?**
 

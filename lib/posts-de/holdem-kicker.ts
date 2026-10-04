@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -163,7 +163,7 @@ A. Nein. Ein Flush nutzt alle fünf Karten, also gibt es keinen separaten Kicker
 
 **Q. Hat eine Straße einen Kicker?**
 
-A. Nein. Eine Straße besteht aus fünf aufeinanderfolgenden Karten, also ist sie bereits vollständig. Wenn zwei Spieler dieselbe Straße machen, teilen sie den Pot – zusätzliche Hole Cards zählen nicht. Nur eine höhere Straße schlägt eine niedrigere.
+A. Nein. Eine Straße besteht aus fünf aufeinanderfolgenden Karten, also ist sie bereits vollständig. Wenn zwei Spieler dieselbe Straße machen, teilen sie den Pot – zusätzliche Hole Cards zählen nicht. Unter Straßen schlägt nur eine höhere eine niedrigere – jeder Flush oder Besseres schlägt sie allerdings alle.
 
 **Q. Hat ein Full House einen Kicker?**
 
@@ -183,7 +183,7 @@ A. Ja, genau einen. Hältst du K♥ Q♦ und dein Gegner J♠ Q♥ auf einem Boa
 
 **Q. Muss der Kicker auf deiner eigenen Hand liegen?**
 
-A. Nein, er kann auch eine Gemeinschaftskarte sein. Poker bildet immer die besten fünf aus sieben – überragt eine Board-Karte deine Hole Card, rutscht die Board-Karte in den Kicker-Slot und beide Spieler teilen sie sich. Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.
+A. Nein, er kann auch eine Gemeinschaftskarte sein. Poker bildet immer die besten fünf aus sieben – ist die höchste Beikarte eine Board-Karte, die die Hole Cards beider Spieler überragt, wird sie zum gemeinsamen Kicker für beide, und die nächste Karte entscheidet. Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.
 
 **Q. Was ist ein Ass-Kicker (oder ein König-Kicker)?**
 

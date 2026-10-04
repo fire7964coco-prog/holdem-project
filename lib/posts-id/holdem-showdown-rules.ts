@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -113,7 +113,7 @@ Situasi nyata: Anda pegang J♥ 10♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Anda pu
 
 Slow roll adalah ==sengaja berlama-lama membuka hand yang sangat kuat padahal Anda sudah tahu menang==.
 
-Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Tak ada aturan yang melarangnya secara eksplisit, tapi ia juga tidak dilindungi: mengejek lawan lewat sandiwara (WSOP Tournament Rule 47) dan menunda permainan terus-menerus (TDA 2024 Rule 70) sama-sama bisa berujung penalti. Dan ia dibenci semua orang.
+Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Buku aturan turnamen TDA dan WSOP tidak punya aturan yang melarangnya secara eksplisit dengan menyebut namanya, tapi ia juga tidak dilindungi: mengejek lawan lewat sandiwara (WSOP Tournament Rule 47) dan menunda permainan terus-menerus (TDA 2024 Rule 70) sama-sama bisa berujung penalti. Dan ia dibenci semua orang.
 
 ![Slow roll dalam poker — pemain lain frustrasi karena satu pemain sengaja menunda membuka hand pemenang](/images/holdem-showdown-slow-roll.webp)
 
@@ -176,7 +176,7 @@ A. Boleh — tapi muck berarti menyerahkan pot, jadi lakukan hanya kalau Anda ya
 
 **Q. Apa itu slow roll dalam poker dan kenapa buruk?**
 
-A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu paling kuat. Tak ada aturan yang melarangnya secara eksplisit, tapi ia dibenci secara universal karena dianggap sengaja mempermalukan lawan — dan mengejek atau menunda permainan terus-menerus bisa dikenai penalti (WSOP Tournament Rule 47 · TDA 2024 Rule 70). Kalau Anda pegang nuts atau pemenang yang jelas, langsung buka kartu Anda. Kecepatan Anda membuka kartu berbicara banyak tentang karakter Anda di meja.
+A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu paling kuat. Buku aturan turnamen TDA dan WSOP tidak melarangnya secara eksplisit dengan menyebut namanya, tapi ia dibenci secara universal karena dianggap sengaja mempermalukan lawan — dan mengejek atau menunda permainan terus-menerus bisa dikenai penalti (WSOP Tournament Rule 47 · TDA 2024 Rule 70). Kalau Anda pegang nuts atau pemenang yang jelas, langsung buka kartu Anda. Kecepatan Anda membuka kartu berbicara banyak tentang karakter Anda di meja.
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 

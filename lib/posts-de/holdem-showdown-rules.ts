@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -113,7 +113,7 @@ Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5
 
 Slow Rolling heißt, ==sich absichtlich viel Zeit zu lassen, eine sehr starke Hand zu zeigen, obwohl man weiß, dass man gewonnen hat==.
 
-Du hast die Nuts. Der Gegner zeigt eine starke Hand. Du machst eine Pause, tust so, als würdest du nachdenken, schaust langsam auf deine Karten, lässt alle warten – und drehst dann den Gewinner um. Keine Regel verbietet es ausdrücklich, geschützt ist es aber auch nicht: Einen Gegner mit Theater zu verhöhnen (WSOP Tournament Rule 47) und das Spiel anhaltend zu verzögern (TDA-2024-Regel 70) können beide eine Strafe nach sich ziehen. Und überall verhasst ist es sowieso.
+Du hast die Nuts. Der Gegner zeigt eine starke Hand. Du machst eine Pause, tust so, als würdest du nachdenken, schaust langsam auf deine Karten, lässt alle warten – und drehst dann den Gewinner um. Die Turnierregelwerke von TDA und WSOP haben keine Regel, die es ausdrücklich beim Namen verbietet, geschützt ist es aber auch nicht: Einen Gegner mit Theater zu verhöhnen (WSOP Tournament Rule 47) und das Spiel anhaltend zu verzögern (TDA-2024-Regel 70) können beide eine Strafe nach sich ziehen. Und überall verhasst ist es sowieso.
 
 ![Slow Rolling beim Poker – die anderen Spieler sind frustriert, weil ein Spieler das Zeigen der Gewinnerhand absichtlich hinauszögert](/images/holdem-showdown-slow-roll.webp)
 
@@ -176,7 +176,7 @@ A. Ja – das ist die Regel „show one, show all“, die in praktisch jedem Car
 
 **Q. Ist Slow Rolling beim Poker verboten?**
 
-A. Nein – keine Regel verbietet es ausdrücklich, aber es ist überall verhasst. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es gilt als grober Verstoß gegen die Etikette, weil es als bewusste Demütigung des Gegners gilt – und Verhöhnen oder anhaltendes Verzögern des Spiels kann bestraft werden (WSOP Tournament Rule 47 · TDA-2024-Regel 70). Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
+A. Nein – die Turnierregelwerke von TDA und WSOP verbieten es nicht ausdrücklich beim Namen, aber es ist überall verhasst. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es gilt als grober Verstoß gegen die Etikette, weil es als bewusste Demütigung des Gegners gilt – und Verhöhnen oder anhaltendes Verzögern des Spiels kann bestraft werden (WSOP Tournament Rule 47 · TDA-2024-Regel 70). Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
 
 **Q. Werden die Karten beim All-in sofort aufgedeckt?**
 

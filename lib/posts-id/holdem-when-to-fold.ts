@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -115,7 +115,7 @@ Fold sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, bahkan s
 
 </div>
 
-Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ — kasus terburuk yang bisa Anda hadapi — dan set itu masih menang ==34%== dari waktu: ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call — bukan karena kartu berikutnya saja sudah cukup sering mendarat (tujuh out sekitar 16%, di bawah harga kebanyakan taruhan), melainkan karena saat board berpasangan Anda memenangkan seluruh yang akan dibayar sebuah flush, dan mem-fold set di flop jauh lebih mahal dalam jangka panjang ketimbang taruhan yang Anda hemat. Baru setelah drawnya sampai, baris di atas berlaku.
+Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ dan set itu masih menang ==34%== dari waktu — dan tak ada flush jadi yang menekannya jauh di bawah itu (batas bawahnya sekitar 32%, melawan 3♥4♥ dengan out straight flush-nya): ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call — bukan karena kartu berikutnya saja sudah cukup sering mendarat (tujuh out sekitar 16%, di bawah harga kebanyakan taruhan), melainkan karena saat board berpasangan Anda memenangkan seluruh yang akan dibayar sebuah flush, dan mem-fold set di flop jauh lebih mahal dalam jangka panjang ketimbang taruhan yang Anda hemat. Baru setelah drawnya sampai, baris di atas berlaku.
 
 Cermin baliknya juga penting, karena **fold bisa jadi kebocoran tersendiri.** Laydown *bagus* melepas tangan kalah ke line yang masuk akal. Laydown *buruk* fold tangan terbaik ke scare card karena takut — dan jika Anda sering melakukannya, lawan yang berpikir akan bluff Anda tanpa henti. Tujuannya bukan fold lebih banyak atau lebih sedikit; melainkan fold *saat buktinya ada.*
 

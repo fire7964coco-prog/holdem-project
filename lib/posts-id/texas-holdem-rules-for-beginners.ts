@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards dan ada 5 kartu bersama di tengah meja. Ada paling banyak empat ronde taruhan, dan tangan poker 5 kartu terbaik menang di showdown — kecuali semua pemain lain fold lebih dulu.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-04",
+  masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -428,7 +428,7 @@ A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagik
 
 **Q. Apa versi cepat aturan Texas Hold'em?**
 
-A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Satu hand lengkap punya empat ronde taruhan dan lima kartu bersama, dan tangan lima kartu terbaik mengambil pot — atau membaginya, kalau lima kartu terbaiknya persis sama (kalau ada side pot, setiap pot diberikan terpisah).
+A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Satu hand lengkap punya paling banyak empat ronde taruhan (lebih sedikit begitu semua pemain lain fold atau para pemain sudah all-in) dan paling banyak lima kartu bersama, dan tangan lima kartu terbaik mengambil pot — atau membaginya, kalau lima kartu terbaiknya persis sama (kalau ada side pot, setiap pot diberikan terpisah).
 
 **Q. Berapa pemain yang dibutuhkan untuk main Texas Hold'em?**
 
