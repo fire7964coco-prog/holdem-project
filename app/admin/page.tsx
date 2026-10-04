@@ -73,6 +73,20 @@ export default async function AdminPage() {
     Promise.all(POLLS.map((p) => Promise.all(p.options.map((_, i) =>
       count(db, "poll_votes", (q: any) => q.eq("poll_id", p.id).eq("option_idx", i)))))),
   ]);
+  // ── 솔버 후기창(2026-10-04) — 테이블이 없으면 에러 → 탭이 «SQL 실행 필요»를 보인다.
+  const [sfRes, sfReplies, sfHelpful, sfProfiles] = await Promise.all([
+    db.from("solver_feedback")
+      .select("id, user_id, locale, kind, body, downside, rating, device, source, auth_provider, status, hidden_reason, review_requested_at, created_at, profiles(nickname, avatar_url)")
+      .order("created_at", { ascending: false }).limit(500),
+    db.from("solver_feedback_replies").select("feedback_id, body"),
+    db.from("solver_feedback_helpful").select("feedback_id").limit(20000),
+    db.from("solver_review_profiles").select("user_id, avatar_kind, avatar_char, avatar_path, avatar_hidden_reason"),
+  ]);
+  const sfReplyMap = new Map<string, string>((sfReplies.data ?? []).map((r: any) => [r.feedback_id, r.body]));
+  const sfHelpfulCount = new Map<string, number>();
+  for (const h of sfHelpful.data ?? []) sfHelpfulCount.set((h as any).feedback_id, (sfHelpfulCount.get((h as any).feedback_id) ?? 0) + 1);
+  const sfProfileMap = new Map<string, any>((sfProfiles.data ?? []).map((r: any) => [r.user_id, r]));
+
   const winnerIds = [...new Set((reviewDrawsRes.data ?? []).flatMap((d: any) => d.winner_ids ?? []))];
   const winnerRes = winnerIds.length
     ? await db.from("tournament_reviews").select("id, user_id, profiles(nickname)").in("id", winnerIds)
@@ -110,6 +124,18 @@ export default async function AdminPage() {
       currentEventId={eventId}
       entryCount={entriesRes.count ?? 0}
       draws={drawsRes.data ?? []}
+      solverFeedback={{
+        tableError: sfRes.error?.message ?? null,
+        supabaseUrl: (process.env.NEXT_PUBLIC_SUPABASE_URL ?? "").replace(/\/$/, ""),
+        rows: (sfRes.data ?? []).map((r: any) => {
+          const p = Array.isArray(r.profiles) ? r.profiles[0] : r.profiles;
+          return {
+            ...r, profiles: undefined, nickname: p?.nickname ?? null, profileAvatar: p?.avatar_url ?? null,
+            email: emailMap.get(r.user_id)?.email ?? null, reply: sfReplyMap.get(r.id) ?? null,
+            helpful: sfHelpfulCount.get(r.id) ?? 0, rp: sfProfileMap.get(r.user_id) ?? null,
+          };
+        }),
+      }}
       participation={{
         tableError: reviewsRes.error?.message ?? null,
         tournaments: REVIEW_TOURNAMENTS.map((t, i) => {

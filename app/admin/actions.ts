@@ -5,6 +5,8 @@ import { requireAdmin } from "@/lib/admin";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { performDraw } from "@/lib/event-draw";
 import { performReviewDraw } from "@/lib/review-event";
+import { HIDDEN_REASONS, REPLY_BODY_MAX, SOLVER_FEEDBACK_LOCALES, isSolverFeedbackLocale } from "@/lib/solver-feedback-config";
+import { invalidateSolverFeedback } from "@/lib/solver-feedback-server";
 
 const BADGES = ["winner", "hot", "top", "participant"] as const;
 
@@ -202,6 +204,60 @@ export async function deleteReviewDraw(tournamentId: string) {
   if (error) return { error };
   const { error: e } = await db.from("review_event_draws").delete().eq("tournament_id", tournamentId);
   if (e) return { error: e.message };
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+// ── 솔버 후기창: 숨김 3사유 · 운영자 답글 · 프로필 이미지 숨김 (2026-10-04 · docs/solver-review-design.md §3-2) ──
+// 🔴 삭제 액션은 만들지 않는다 — 숨김 사유는 링크·욕설·광고 셋뿐(DB 제약과 같은 값).
+
+/** 후기·질문 숨김(사유 필수) / 복구(reason=null) */
+export async function setSolverFeedbackHidden(id: string, reason: string | null) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(id)) return { error: "id 형식 오류" };
+  if (reason !== null && !(HIDDEN_REASONS as readonly string[]).includes(reason)) return { error: "숨김 사유는 링크·욕설·광고뿐입니다" };
+  const fields = reason === null
+    ? { status: "public", hidden_reason: null, review_requested_at: null }
+    : { status: "hidden", hidden_reason: reason };
+  const { data, error: e } = await db.from("solver_feedback").update(fields).eq("id", id).select("locale");
+  if (e) return { error: e.message };
+  const loc = (data ?? [])[0]?.locale;
+  if (isSolverFeedbackLocale(loc)) invalidateSolverFeedback(loc);
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+/** 운영자 답글 저장(빈 값이면 삭제) — 출시일·기능 약속 금지(사실 시트 §4) */
+export async function setSolverFeedbackReply(id: string, body: string) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(id)) return { error: "id 형식 오류" };
+  const text = String(body ?? "").replace(/\r\n/g, "\n").trim();
+  if ([...text].length > REPLY_BODY_MAX) return { error: `답글은 ${REPLY_BODY_MAX}자까지` };
+  const { data: row, error: rErr } = await db.from("solver_feedback").select("locale").eq("id", id).maybeSingle();
+  if (rErr || !row) return { error: rErr?.message ?? "글을 찾지 못했습니다" };
+  const { error: e } = text
+    ? await db.from("solver_feedback_replies").upsert(
+        { feedback_id: id, body: text, updated_at: new Date().toISOString() },
+        { onConflict: "feedback_id" },
+      )
+    : await db.from("solver_feedback_replies").delete().eq("feedback_id", id);
+  if (e) return { error: e.message };
+  if (isSolverFeedbackLocale((row as any).locale)) invalidateSolverFeedback((row as any).locale);
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+/** 프로필 이미지 숨김(사유 필수) / 복구 — 숨기면 이니셜 원형으로 돌아가고 후기 글은 그대로 */
+export async function setSolverAvatarHidden(userId: string, reason: string | null) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(userId)) return { error: "id 형식 오류" };
+  if (reason !== null && !(HIDDEN_REASONS as readonly string[]).includes(reason)) return { error: "숨김 사유는 링크·욕설·광고뿐입니다" };
+  const { error: e } = await db.from("solver_review_profiles").update({ avatar_hidden_reason: reason, updated_at: new Date().toISOString() }).eq("user_id", userId);
+  if (e) return { error: e.message };
+  for (const l of SOLVER_FEEDBACK_LOCALES) invalidateSolverFeedback(l);
   revalidatePath("/admin");
   return { success: true };
 }

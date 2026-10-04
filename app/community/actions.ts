@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { nicknameProblem, normalizeNickname } from "@/lib/solver-feedback-config";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { getCurrentEventId, getEventState, EVENT_CONDITION } from "@/lib/event-config";
@@ -217,9 +218,13 @@ export async function updateNickname(formData: FormData) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { error: "로그인이 필요합니다." };
 
-  const nickname = String(formData.get("nickname") || "").trim().slice(0, 20);
+  const nickname = normalizeNickname(String(formData.get("nickname") || "")).slice(0, 20);
   if (!nickname) return { error: "닉네임을 입력해주세요." };
-  if (nickname.length < 2) return { error: "닉네임은 2자 이상이어야 합니다." };
+  // 솔버 후기창과 같은 검사(lib/solver-feedback-config.ts · 2026-10-04) — 길이 + 주소·이메일 + 운영자·공식 사칭 금지어
+  const problem = nicknameProblem(nickname);
+  if (problem === "short") return { error: "닉네임은 2자 이상이어야 합니다." };
+  if (problem === "link") return { error: "닉네임에 주소·이메일은 쓸 수 없습니다." };
+  if (problem === "impersonation") return { error: "운영자·공식으로 보이는 닉네임은 쓸 수 없습니다." };
 
   const { error } = await supabase
     .from("profiles")

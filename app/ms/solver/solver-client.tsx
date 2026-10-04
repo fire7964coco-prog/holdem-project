@@ -155,7 +155,7 @@ function Table({ head, rows }: { head: string[]; rows: (string | React.ReactNode
   );
 }
 
-export default function SolverClientMs() {
+export default function SolverClientMs({ reviews }: { reviews?: React.ReactNode } = {}) {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16">
       <section className="mt-6">
@@ -521,6 +521,9 @@ export default function SolverClientMs() {
           </li>
         </ul>
       </section>
+
+      {/* ── 써 본 사람들(솔버 후기창 · FAQ 바로 위 · docs/solver-review-design.md §2-3) ── */}
+      {reviews}
 
       <section className="mt-12">
         <h2 className="text-xl font-bold">FAQ — soalan lazim</h2>

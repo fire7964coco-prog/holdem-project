@@ -15,6 +15,8 @@
     "check:gto:selftest": "node scripts/check-gto-numbers.mjs --selftest",
     "check:participation": "node scripts/check-participation.mjs",
     "check:participation:selftest": "node scripts/check-participation.mjs --selftest",
+    "check:solver-feedback": "tsx scripts/check-solver-feedback.ts",
+    "check:solver-feedback:selftest": "tsx scripts/check-solver-feedback.ts --selftest",
     "audit:hard:selftest": "node scripts/audit-hardening.mjs --selftest",
     "check:de-style": "node scripts/check-de-style.mjs",
     "check:de-style:selftest": "node scripts/check-de-style.mjs --selftest",

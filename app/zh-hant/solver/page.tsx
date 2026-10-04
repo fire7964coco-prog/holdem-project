@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import SolverClientZhHant from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ_ZH_HANT } from "./faq";
 
 /**
@@ -169,7 +170,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HubPage title="GTO 解算器" locale="zh-hant">
-        <SolverClientZhHant />
+        <SolverClientZhHant reviews={<SolverReviews locale="zh-hant" />} />
       </HubPage>
     </>
   );

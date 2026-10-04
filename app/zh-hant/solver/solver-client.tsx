@@ -354,7 +354,7 @@ function Table({ head, rows }: { head: string[]; rows: (string | React.ReactNode
   );
 }
 
-export default function SolverClientZhHant() {
+export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactNode } = {}) {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16">
       {/* ── 히어로 + 직답 + CTA ───────────────────────────────────────── */}
@@ -762,6 +762,9 @@ export default function SolverClientZhHant() {
           </li>
         </ul>
       </section>
+
+      {/* ── 써 본 사람들(솔버 후기창 · FAQ 바로 위 · docs/solver-review-design.md §2-3) ── */}
+      {reviews}
 
       {/* ── FAQ — 常見問題 블록(번체 관습: 질문은 여기 격리) ─────────── */}
       {/*

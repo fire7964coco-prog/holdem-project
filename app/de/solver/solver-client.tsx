@@ -363,7 +363,7 @@ function Table({ head, rows }: { head: string[]; rows: (string | React.ReactNode
   );
 }
 
-export default function SolverClientDe() {
+export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode } = {}) {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16">
       {/* ── 히어로 + 직답 + CTA ───────────────────────────────────────── */}
@@ -886,6 +886,9 @@ export default function SolverClientDe() {
           </li>
         </ul>
       </section>
+
+      {/* ── 써 본 사람들(솔버 후기창 · FAQ 바로 위 · docs/solver-review-design.md §2-3) ── */}
+      {reviews}
 
       {/* ── FAQ ──────────────────────────────────────────────────────── */}
       {/*

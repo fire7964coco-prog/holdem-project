@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { OG_IMAGE } from "@/lib/page-metadata";
 import SolverClientEn from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ_EN } from "./faq";
 
 /**
@@ -137,7 +138,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HubPage title="GTO Solver" locale="en">
-        <SolverClientEn />
+        <SolverClientEn reviews={<SolverReviews locale="en" />} />
       </HubPage>
     </>
   );

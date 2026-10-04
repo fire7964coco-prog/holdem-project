@@ -202,6 +202,28 @@ RLS on · 정책 0 · 쓰기는 본체 서버 코드만(09-28 규칙). 공개 �
 - 앱(다른 도메인) = 본체 **`/api/solver-feedback`** — CORS는 `solver.holdemmaster.com`만 · `Authorization: Bearer <Supabase JWT>` 서버 검증 · 같은 TS 검사 함수. (앱이 Supabase에 직접 쓰는 RPC 안은 기각 — 검사가 두 벌로 갈라진다.)
 - 공유 링크 = 본체 `/api/spot-share`(로그인 불필요 · IP 해시 속도 제한 · 솔버 `spot-share.ts`의 디코드·검증 로직 이식 · 실패면 저장 거부).
 
+### 7-3. 코드 1 구현 지도 (2026-10-04 · 🔴 배포는 10/7 `solver_open` 판독 뒤)
+
+| 무엇 | 파일 |
+|---|---|
+| SQL(사장님 SQL Editor 실행 · 배포보다 먼저) | `supabase/solver-reviews.sql` — 테이블 5(spot_shares·solver_feedback·replies·helpful·solver_review_profiles) + 공개 뷰(anon 권한 회수) + Storage 공개 버킷 `review-avatars` |
+| 설정(값 정본 · import 없음) | `lib/solver-feedback-config.ts` — 12로케일·경로 매핑·길이·숨김 3사유·링크 규칙·사칭 금지어·캐릭터 id |
+| 검사·저장 한 벌 | `lib/solver-feedback-server.ts` — 랜딩 액션과 앱 API가 같은 함수를 부른다 · 오류는 코드로 반환 |
+| 랜딩 서버 액션 | `app/solver-feedback/actions.ts` — 쓰기·삭제·재검토 요청·도움됐어요·닉네임·프로필 이미지(캐릭터·올리기·가져오기) |
+| 앱 API | `app/api/solver-feedback/route.ts` — GET `?locale=` 내 상태 · POST 쓰기 · CORS = 솔버 도메인 · Bearer = Supabase access token(서버가 `auth.getUser`로 검증) |
+| 블록 | `components/solver-reviews/` — 서버 컴포넌트(태그 캐시 읽기 · SSG 유지) + 클라이언트(폼·로그인·도움됐어요·이미지 고르기) · 문구 `lib/solver-reviews-i18n.ts` |
+| 랜딩 12개 | 각 `page.tsx`에 `reviews={<SolverReviews locale=… />}` 한 줄 + 각 `solver-client.tsx` FAQ 바로 위 `{reviews}` 슬롯 |
+| 관리자 | `/admin` «솔버 후기·질문» 탭(`app/admin/solver-feedback-admin.tsx`) — 숨김 3사유·다시 공개·답글·이미지 숨김 · 삭제 버튼 없음 |
+| 캐릭터 12종 | `scripts/gen-review-avatars.mjs` → `public/images/review-avatar-*.webp`(SVG → webp q82 · 글자 없음) |
+| 게이트 | `npm run check:solver-feedback`(+`-- --build`) · 셀프테스트 `check:solver-feedback:selftest` 10/10 |
+
+- 갱신 = 쓰기마다 `revalidateTag('solver-feedback')` + 그 언어 랜딩 `revalidatePath`(이름·사진 변경은 12개 전부) · 매일 재빌드 크론은 그대로.
+- 닉네임 검사 공용화: 커뮤니티 `updateNickname`도 같은 `nicknameProblem`(길이·주소·사칭 금지어)을 쓴다.
+- 🪶 커뮤니티 현황(§3-1 «현황만 확인»): 피드·글 상세·프로필은 **가입 때 들어간 구글·카카오 사진(`profiles.avatar_url`)을 기본으로 보여 준다**(`community-client.tsx`·`app/post/[id]`). 후기창은 «가져오기»를 눌러야 켜진다 — 둘이 다르다. 맞출지는 사장님 판단.
+- 🔴 운영 절차: 회원 탈퇴(문의 처리)로 계정을 지울 때 Storage `review-avatars/u/<user_id>/` 폴더도 지운다 — DB는 연쇄 삭제되지만 Storage 파일은 자동으로 안 지워진다(개인정보처리방침 «탈퇴 시 함께 삭제»의 이행 수단).
+- 🔴 개인정보처리방침 `UPDATED`는 배포일로 바꾼다(지금 값 = 10-04 · 코드 주석).
+- 랜딩 쓰기의 `has_usage`는 늘 false다(트레이너 기록은 솔버 도메인 기기 저장소 — 앱 API만 보낼 수 있다).
+
 ## 8. 솔버 측 요청 (초안 — 발송 대기)
 
 | # | 요청 | 본체가 넘길 것 |

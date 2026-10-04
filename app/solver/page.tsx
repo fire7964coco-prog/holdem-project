@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import SolverClient from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ } from "./faq";
 
 // "GTO 솔버" 키워드는 기존 필라/포스트가 소유하지 않음(작성 시점 확인) → 이 페이지가 인덱스 대상.
@@ -139,7 +140,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HubPage title="GTO 솔버">
-        <SolverClient />
+        <SolverClient reviews={<SolverReviews locale="ko" />} />
       </HubPage>
     </>
   );

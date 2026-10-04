@@ -8,6 +8,7 @@ import {
   runDrawTest, deleteDraw,
 } from "./actions";
 import ParticipationAdmin from "./participation-admin";
+import SolverFeedbackAdmin from "./solver-feedback-admin";
 
 // 사이트 톤(다크+골드)
 const BG = "#12100c";
@@ -19,7 +20,7 @@ const GOLD = "#c9a227";
 const RED = "#c0392b";
 const FONT = "var(--font-inter), sans-serif";
 
-const TABS = ["대시보드", "회원", "모더레이션", "팝업", "이벤트", "후기·투표"] as const;
+const TABS = ["대시보드", "회원", "모더레이션", "팝업", "이벤트", "후기·투표", "솔버 후기·질문"] as const;
 type Tab = (typeof TABS)[number];
 
 const BADGES = ["", "winner", "hot", "top", "participant"];
@@ -44,6 +45,7 @@ export default function AdminClient(props: {
   entryCount: number;
   draws: any[];
   participation: any;
+  solverFeedback: any;
 }) {
   const [tab, setTab] = useState<Tab>("대시보드");
   const router = useRouter();
@@ -96,6 +98,7 @@ export default function AdminClient(props: {
         {tab === "팝업" && <Popups popups={props.popups} run={run} />}
         {tab === "이벤트" && <EventPanel eventId={props.currentEventId} entryCount={props.entryCount} draws={props.draws} run={run} pending={pending} />}
         {tab === "후기·투표" && <ParticipationAdmin data={props.participation} run={run} pending={pending} />}
+        {tab === "솔버 후기·질문" && <SolverFeedbackAdmin data={props.solverFeedback} run={run} pending={pending} />}
       </main>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import SolverClientId from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ_ID } from "./faq";
 
 /**
@@ -160,7 +161,7 @@ export default function Page() {
           ✅ `lib/hub-i18n.ts`의 id 블록은 **2026-09-05 ③ 마감이 등록했다**(`LABELS.id` 축어 복사).
           🔴 없으면 셸·사이드바가 통째로 영어로 떨어진다 — pt에서 실제로 걸린 자리다. */}
       <HubPage title="Solver GTO" locale="id">
-        <SolverClientId />
+        <SolverClientId reviews={<SolverReviews locale="id" />} />
       </HubPage>
     </>
   );

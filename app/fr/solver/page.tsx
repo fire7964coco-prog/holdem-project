@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import SolverClientFr from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ_FR } from "./faq";
 
 /**
@@ -161,7 +162,7 @@ export default function Page() {
       {/* 🪶 허브 타이틀 «Solver GTO» = 앱 fr title의 «Solver et trainer GTO»에서 딴 라벨
           (라벨은 «검색 축»이 아니라 «메뉴 이름» — 어순 규율과 층이 다르다). */}
       <HubPage title="Solver GTO" locale="fr">
-        <SolverClientFr />
+        <SolverClientFr reviews={<SolverReviews locale="fr" />} />
       </HubPage>
     </>
   );

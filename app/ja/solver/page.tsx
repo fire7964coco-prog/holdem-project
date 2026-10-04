@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import SolverClientJa from "./solver-client";
 import HubPage from "@/components/hub-page";
+import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ_JA } from "./faq";
 
 /**
@@ -160,7 +161,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HubPage title="GTOソルバー" locale="ja">
-        <SolverClientJa />
+        <SolverClientJa reviews={<SolverReviews locale="ja" />} />
       </HubPage>
     </>
   );
