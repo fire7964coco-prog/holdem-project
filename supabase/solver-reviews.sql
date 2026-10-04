@@ -126,7 +126,21 @@ where f.status = 'public';
 
 revoke all on public.solver_feedback_public from anon, authenticated;
 
--- 7) 프로필 이미지 올리기 — 공개 버킷. 쓰기는 서버(service role)만 한다:
+-- 7) 트레이너 기록 시각 고정 — «솔버 사용 기록 있음» 표시(문턱 아님)의 근거(MB-159 통지 1 · 솔버 S-035 «앱은 created_at 을 안 넣는다» 확인).
+--    지금은 default now() 뿐이라 insert 때 값을 넣으면 덮어쓸 수 있다 → 서버 시각으로 강제한다.
+create or replace function public.trainer_attempts_force_created_at()
+returns trigger language plpgsql as $
+begin
+  new.created_at := now();
+  return new;
+end;
+$;
+drop trigger if exists trainer_attempts_force_created_at on public.trainer_attempts;
+create trigger trainer_attempts_force_created_at
+  before insert on public.trainer_attempts
+  for each row execute function public.trainer_attempts_force_created_at();
+
+-- 8) 프로필 이미지 올리기 — 공개 버킷. 쓰기는 서버(service role)만 한다:
 --    서버가 정사각 256px webp 로 다시 인코딩(EXIF·위치정보 제거)한 파일만 올라간다.
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 values ('review-avatars', 'review-avatars', true, 262144, array['image/webp'])

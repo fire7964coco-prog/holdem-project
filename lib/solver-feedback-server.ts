@@ -4,7 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { isAdminEmail } from "@/lib/admin";
 import {
   AVATAR_BUCKET, FEATURED_MAX, FEEDBACK_BODY_MAX, FEEDBACK_BODY_MIN, FEEDBACK_DOWNSIDE_MAX, LINK_PATTERN,
-  MIN_RATINGS_FOR_AVERAGE, QUESTIONS_PER_10MIN, SAVES_PER_10MIN, isSolverFeedbackLocale, nicknameProblem,
+  MIN_RATINGS_FOR_AVERAGE, QUESTIONS_PER_10MIN, SAVES_PER_10MIN, SOLVER_FEEDBACK_LOCALES, isSolverFeedbackLocale, nicknameProblem,
   normalizeNickname, solverLandingPath, type Device, type FeedbackKind, type HiddenReason, type SolverFeedbackLocale,
 } from "@/lib/solver-feedback-config";
 
@@ -262,6 +262,7 @@ export type FeedbackInput = {
   rating?: number | null;
   /** 이름 확인 — 첫 후기 때 «○○ 으로 남깁니다»를 본 뒤 보낸 값(바꿨으면 새 이름) */
   nickname?: string | null;
+  /** 받기는 하지만 쓰지 않는다 — 사용 기록은 서버가 trainer_attempts 로 판정한다 */
   hasUsage?: boolean;
 };
 
@@ -363,7 +364,19 @@ export async function saveFeedback(args: {
         if (err) return { ok: false, error: err };
       }
       if (!(await confirmNickname(db, user.id))) return { ok: false, error: "unavailable" };
+    } else if (typeof args.input.nickname === "string") {
+      // 확인을 마친 계정도 같은 POST 의 nickname 으로 이름을 바꿀 수 있다(앱 [바꾸기] · S-035 ⓓ · 별도 API 없음).
+      const wanted = normalizeNickname(args.input.nickname);
+      if (wanted && wanted !== String((profRes.data as any).nickname ?? "")) {
+        const r = await setNickname(db, user.id, wanted);
+        if (!r.ok) return r;
+        for (const l of SOLVER_FEEDBACK_LOCALES) if (l !== value.locale) invalidateSolverFeedback(l);
+      }
     }
+
+    // «솔버 사용 기록 있음» = 이 계정의 트레이너 기록(trainer_attempts)이 하나라도 있는가 — 서버가 직접 본다(클라이언트 주장 안 믿음).
+    const { count: usageCount } = await db.from("trainer_attempts").select("id", { count: "exact", head: true }).eq("user_id", user.id).limit(1);
+    const hasUsage = (usageCount ?? 0) > 0;
 
     // 속도 제한
     const since = new Date(Date.now() - 10 * 60_000).toISOString();
@@ -389,7 +402,7 @@ export async function saveFeedback(args: {
       if (existing) {
         // 수정 — 숨김 상태는 그대로 둔다(고쳐서 숨김을 푸는 길을 만들지 않는다 · 재검토 요청으로만)
         const { error } = await db.from("solver_feedback")
-          .update({ ...base, has_usage: (existing as any).has_usage || !!args.input.hasUsage })
+          .update({ ...base, has_usage: (existing as any).has_usage || hasUsage })
           .eq("id", (existing as any).id).eq("user_id", user.id);
         if (error) return { ok: false, error: error.code === "23514" ? "link" : "unavailable" };
         invalidateSolverFeedback(value.locale);
@@ -403,7 +416,7 @@ export async function saveFeedback(args: {
       locale: value.locale,
       kind: value.kind,
       source: args.source,
-      has_usage: !!args.input.hasUsage,
+      has_usage: hasUsage,
     }).select("id").single();
     if (error) {
       if (error.code === "23505") return { ok: false, error: "rate" };

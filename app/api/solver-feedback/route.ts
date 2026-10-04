@@ -12,6 +12,7 @@ import { readMyFeedbackState, saveFeedback, type FeedbackInput } from "@/lib/sol
  *
  * GET  ?locale=xx         → 내 상태(내 후기·이름 확인 필요 여부·이름) — 다시 쓰면 기존 후기 수정 화면으로
  * POST { locale, kind, body, downside?, rating?, nickname?, hasUsage? } → { ok, error? }
+ *      nickname = 첫 후기 땐 이름 확인 · 확인 뒤엔 값이 다르면 이름 바꾸기(커뮤니티와 같은 profiles.nickname)
  *      error 코드는 lib/solver-feedback-server.ts FeedbackError (화면 문구는 앱이 12언어로 갖는다)
  */
 
