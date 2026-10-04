@@ -1,3 +1,10 @@
+## 2026-10-04 (7) — 우편함 MA-303 판정(JA ④ 4-2 부분2) · JA 고유 2자리 정정 · EN-먼저 등재 (MB-164)
+
+- 판정: 요청 1(JA 고유) 채택 · 요청 2 ⓐⓑ(EN-먼저) 채택 · 통지 ①은 R-3·R-4ⓐ 채택(소)·나머지 보류 · 통지 ② 4랭크 표기 채택·flush «唯一» 보류 · 통지 ③ OK. 근거 = EN·JA 원문 직접 대조(split L126·FAQ L189 / reading L180~190).
+- 정정(ja 2편 · updated 10-04 · masterUpdated 불변): split-pot 결론 상자 «オールインした額がプレイヤーごとに異なり、ほかのプレイヤーがその上にベットを続けると»(같은 글 FAQ 문면) · reading-the-board 4단계 «A-A に続く 10-7-5 という後ろの3枚».
+- EN-먼저 R-1~R-6 = `docs/en-first-queue.md` §2-R(이행은 다음 회차 · 자동 착수 금지). JA 본문 L145·너츠 상자는 EN 정정 뒤 전파.
+- 게이트: audit:hard --locale=ja 60편 🔴 0 · 핵심 드리프트 0 · 빌드 exit 0. MA-304(4-3 odds 7편 착수 공지)는 ACK만 — 그 7편은 이번에 안 건드림.
+
 ## 2026-10-04 (6) — 우편함 밀린 MA 처리 2/2: §2-Q EN-먼저 13건 → 24로케일 전파 배포 (MB-163)
 
 - EN 11편 13자리: when-to-fold «worst case» 삭제(45조합 직접 계산 — A♥K♥ 34.44%는 최고값 · 최저 3♥4♥ 32.42%) · c-bet 실수표 «as much» · bad-beat Mabuchi 주석 «칩은 리버 뒤» 삭제 · glossary String bet WSOP 귀속 삭제 · straddle sleeper 표·본문·«one of the main reasons» · rake FAQ 한정+캡 반례 · fish 표 never→rarely · beginners FAQ «up to four» · kicker FAQ 2(스트레이트 vs 플러시 이상 · «both players'») · tiebreak FAQ 무늬 = 자리 추첨(TDA 2019 부록 Rule 10 «highest playing card by suit» 원문 확인 · WSOP 2026 PDF 대조) · showdown 슬로롤 «TDA·WSOP 대회 규정» 한정(사장님 결재).

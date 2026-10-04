@@ -226,6 +226,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 zh `holdem-fish` 읽기 신호표(L94) «跟注站：什么都跟、几乎不加注» — EN 해당 표는 안 바뀌어 그대로 둠.
 - 🪶 같은 MA의 통지(라벨 OK 유지): MA-289 통지 1(cooler 2분법 «강한 패끼리» 조건) · MA-297 통지 1(재오픈 «already acted»에 «not facing a full raise» 조건 — EN L8) · MA-299 통지 2·3(showdown «in any cash game» WSOP 범위 · Rule 58 binding fold · 18-B last aggressor · B 143 예외) · MA-301 통지 1·2(EN 동형 8자리) · MA-291 통지 1·2(PT 고유 2 — PT 손질 때).
 
+### 2-R. 우편함 수신분 — MA-303 JA ④ 4-2 부분2 (split-pot · reading-the-board · flush-vs-straight) · 판정 2026-10-04 (7) · 회신 MB-164
+
+> JA 고유 요청 1(split 결론 상자) + 통지 중 JA 고유 1(reading 4랭크 표기)은 ✅ 10-04 (7) 정정. 아래 EN-먼저는 **판정 = 채택**, 이행은 **다음 회차**(EN 정정 → 24로케일 전파 · 자동 착수 금지 — 사장님 지시로 연다).
+
+| # | 글 | EN 자리 | 판정 | 고칠 방향 |
+|---|---|---|---|---|
+| R-1 | split-pot-rules | 본문 L126 «When someone is all-in, the chips form a main pot … plus one or more side pots» | 채택 — 헤즈업 올인 콜(100 vs 300 → 200 반환)·나머지가 콜만 하고 더 안 걸면 사이드팟 없음. 괄호는 자격자 설명이지 형성 조건이 아님 | 같은 글 FAQ «When players are all-in for different amounts and others keep betting» 조건절로 · ja는 결론 상자만 먼저 고침(본문 L145는 EN 뒤 전파) |
+| R-2 | reading-the-board | 너츠 절 3질문(Flush possible? / Board paired? / Best straight?) + «Running this 3-question check on every river» | 채택 — SF 점검 없음(J♠10♠9♠ 보드 너츠 = K♠Q♠ SF). 09-08 «JA 고유» 분류는 정정(EN 동일 결함 · JA 결론 상자 L206도 같이) | 1번 질문에 «플러시가 가능하면 그 무늬 3장이 스트레이트 거리 안인지 = SF 가능?» 한 줄 · 결론 문장 «3 questions» 유지 가능 |
+| 🪶 R-3 | flush-vs-straight | FAQ «a higher flush (better top card)» · JA 상자 L116·FAQ L219 | 채택(소) — 맨 윗장이 같으면 둘째 장 이하 비교(같은 글 FAQ7 정답) | «(compared card by card from the top)» |
+| 🪶 R-4 | reading-the-board | ⓐ 보드 스트레이트 FAQ «If no one can go higher …» — 바로 앞에 플러시 예외를 말해 놓고 «아무도 더 높이 못 가면 스플릿»으로 닫음 ⓑ 표 행 5·FAQ «a card of that suit higher than the board's lowest one improves it» — 보드 자체가 SF면 거짓 | 채택(소)·보류(극소) | ⓐ «If no one goes higher (and no one makes a flush)» · ⓑ 다음 손질 때 같이 |
+| 🪶 R-5 | reading-the-board | TDA 2024 Rule 22 «until the next hand begins» | 보류 — 휴식 중 1분 예외 생략(오류 아님) | — |
+| 🪶 R-6 | split-pot-rules | «the last odd chip» 단수 | 보류 — 3인 2칩은 바로 아래 문장이 설명 | — |
+
+- 🪶 JA 고유 남김: flush 제목 «唯一の本当の例外:ショートデッキ»·상자 «順番が変わるのはショートデッキだけ» — EN «one common format»의 «common» 누락(UNV · 다른 변형 규칙 존재 가능). H2 바꾸면 앵커가 바뀌므로 JA 손질 회차에.
+- ℹ TDA 2026 v1.1 번호 이동(12·13-A·19·22 → 13·14-A·20·24) — 본문은 «2024年版» 명시라 현행 OK. 전 로케일 TDA 판 갱신 회차가 열리면 같이.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
