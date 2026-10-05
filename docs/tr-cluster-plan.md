@@ -6,6 +6,7 @@
 
 - «시간이 날 때마다 한 언어씩, 클러스터 완결로 늘린다 — 클러스터를 줄이는 한이 있더라도.» 첫 언어 = **tr**.
 - «전체 구도는 메인 언어랑 똑같이 하고 포스팅 숫자만 좀 줄이자.» → 필라 축·GTO·도구·대회 = 메인과 같은 판, 축마다 글 수만 줄인다.
+- «차트 도구들이 포스팅보다 클릭이 많아서 카니발이면 거기로 몰아야 한다.» → §3 소유표에서 차트·계산은 도구가 주인.
 - «차트나 계산기 같은 도구가 메인에서 성과가 좋아 카니발 안 걸리게 몰아주고 있다 → tr도 차트·계산기·토너먼트 페이지를 같이 넣자, 신경 써서.»
 - «GTO도 넣어야지.» → `settled-decisions` §1-E의 «ar·vi·tr 시리즈는 사장님 판단 전 착수 금지»가 tr에 한해 해제됨(편수는 아래 4편).
 
@@ -23,14 +24,14 @@
 
 → 수요는 입문·족보에 몰려 있다. 전략·GTO는 거의 0 — GTO 4편은 §1-E대로 «검색 유입 글»이 아니라 «솔버 증거 자료»로 둔다.
 
-## 2. 구도 — 메인과 같은 축, 글 수만 축소 (목표 21편 + 도구 3 + 대회 보드)
+## 2. 구도 — 메인과 같은 축, 글 수만 축소 (목표 20편 + 도구 3 + 대회 보드)
 
 | 축 | 메인(예: ms) | tr 글 | 상태 |
 |---|---|---|---|
 | 규칙 | 8+ | rules-for-beginners(필라) · game-order · betting-actions · blind-meaning · all-in-rules · showdown-rules · **tiebreak-rules**(키커·스플릿 흡수) | 6 있음 · 1 신규 |
 | 족보 | 3+ | hand-rankings(필라) | 있음 |
 | 확률·오즈 | 7+ | **pot-odds**(필라) · **probability** | 2 신규 |
-| 전략 | 10+ | **strategy**(필라) · **positions** · **starting-hands-chart** · **continuation-bet**(솔버 표 흡수 자리) | 4 신규 |
+| 전략 | 10+ | **strategy**(필라) · **positions** · **continuation-bet**(솔버 표 흡수 자리) — starting-hands-chart 글은 **쓰지 않는다**(차트 도구가 주인 · §3) | 3 신규 |
 | 대회 | 4+ | tournament-vs-cash-game · **holdem-tournament**(필라) | 1 있음 · 1 신규 |
 | 용어 | 1 | **glossary** | 1 신규 |
 | GTO 솔버 | 13 | **donk-bet-strategy · monotone-board-strategy · broadway-board-strategy · a-high-board-cbet** | 4 신규 |
@@ -45,8 +46,10 @@
 |---|---|---|
 | poker nasıl oynanır · kuralları · texas holdem | `rules-for-beginners` | game-order는 «el sırası» 롱테일만 |
 | poker elleri · el/kart sıralaması · kombinasyonları · kartları | `hand-rankings` | 다른 글은 앵커 링크만 · 족보 도구 페이지 만들지 않음 |
-| başlangıç elleri (차트) | **메인 정본을 따른다**: EN은 `starting-hands-chart` 글이 소유 + `/en/hand-chart` noindex·follow · ko는 08-08에 도구 해제(글이 못 이겨서). tr은 신설이라 **글 소유 + 도구 noindex·follow**로 시작하고 4주 뒤 GSC로 재판정 (`seo-tool-vs-blog-cannibalization` 절차) |
-| pot oranı · hesaplama | `pot-odds` 글 = 개념 · `/tr/calculator` = 계산 의도 | 서로 제목 헤드텀을 나누지 않는다 |
+| başlangıç elleri · el tablosu (차트) | **`/tr/hand-chart`(색인)** | starting-hands-chart 글 안 씀 → 카니발 원천 제거. 차트 페이지에 설명·FAQ를 넣어 글 역할까지 |
+| pot oranı hesaplama · olasılık hesaplama | **`/tr/calculator`** | `pot-odds`·`probability` 글 = «pot oranı nedir» 개념 의도만 · 제목에 «hesaplama/hesaplayıcı» 헤드텀을 쓰지 않는다 |
+
+🔴 **도구 몰아주기 근거 (사장님 10-05 · GSC 28일 09-05~10-02 · [page] 단일 차원)**: ko `/hand-chart` 106클릭(7.1위) vs `/blog/holdem-starting-hands-chart` 상위권 밖 · `/tournaments` 564 · `/solver` 82 · `/calculator` 11 vs `pot-odds-calculation` 2·`probability` 4. 예외 = 족보(ko `/hands` noindex · 필라가 이기는 중 — `seo-tool-vs-blog-cannibalization`). 🪶 단 로케일에서는 미증명(`/en/hand-chart` noindex라 시험 안 됨 · `/ja/calculator`·`/es/calculator` 미색인 · `/en/solver` 4클릭) → tr은 «근거 있는 베팅». 회차 2 배포 4주 뒤 `/tr/hand-chart`·`/tr/calculator` 노출·클릭과 색인을 재측정한다.
 | poker turnuvası · kıbrıs poker · merit poker | `/tr/tournaments` | `holdem-tournament` 글 = «토너먼트 구조·전략» 의도 |
 | gto poker · poker solver | `/tr/solver` 랜딩 | GTO 4편은 남의 헤드텀을 빌려 붙이지 않는다(§1-E) |
 
@@ -57,7 +60,7 @@
 | 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) | — | ⏳ |
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(EN 446행 클라이언트를 사전 구조로 바꾼 뒤 tr 사전 — tr이 두 번째 로케일) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
 | 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament | 회차 2(계산기 링크 자리) | ⏳ |
-| 4 | 신규 전략 4편: strategy · positions · starting-hands-chart · continuation-bet | 회차 2(차트 링크 자리) | ⏳ |
+| 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
 | 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔴 **솔버 앱에 터키어 UI가 없다**(12개 언어: ko en ja es pt de zh zh-hant fr id ms hi) → 솔버 측에 tr 추가 요청(MB) 회신 전엔 랜딩 CTA가 영어 앱으로 떨어진다. 요청 발송 여부 = 사장님 판단 | ⏳ |
 | 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
 
