@@ -353,6 +353,24 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 용어 사전 회차 2 렌즈 잔여(10-05 (11) · 자동 착수 금지): **EN-먼저** glossary 글 Equity «Your percentage share of the pot right now» — «based on your chance to win» 한정 없음(«팟에 넣은 칩 비율» 오독 · `/en/glossary` 도구 desc는 이미 있음) → EN 글 + 로케일 글 사본(로케일 **도구** 사전 5개는 정정 끝) · EN 도구 Ante에 BB 앤티 미언급(hi 사전 상속 · ja·zh 글은 언급) · C-bet 정의 순환(de·es·id·ms 글) · zh·zh-hant Fold «主张/主張» → «权利» · de Set/Trips aka «Drilling» 중복 · id Backdoor «dua kartu berurutan».
 - 🪶 straddle «アンダー・ザ・ガン» 표기 통일(«アンダーザガン» 9회 · MA-325·326) — 통일 커밋 때 검수장에 통지.
 
+### 2-X. 우편함 수신분 — MA-330 (ID ④ 4-1 rules 부분1 · showdown·blind·betting) · 판정·이행 2026-10-06 (2) · MB-179
+
+> 판정 = 요청 1(EN-먼저 5)·요청 2(ID 고유 1) 전부 **채택·이행**(기각 0). 근거 = 검수장 원문 판독(TDA 2024 Rule 16 Illustration Ex.2·3 · WSOP Live Action 159·165). 전파 = EN → 9로케일(ar·de·es·id·ja·ms·pt·zh·zh-hant · 드리프트 게이트 핵심 + ms). ▶ 검수장 재판정 대기.
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| X-1 | showdown | 표 «리버 벳/레이즈 → 마지막 공격자 · 토너먼트 올인이면 예외» | 예외를 «핸드에 올인 있으면(리버·앞 스트리트) 베팅 끝나는 대로 전원 공개»로 넓힘(ms는 행이 이미 «비올인 토너먼트» 한정 → 불변) |
+| X-2 | showdown | 표 «리버 전원 체크 → 버튼 왼쪽 먼저» | «핸드에 올인 없을 때 · 토너먼트 앞 스트리트 올인이면 전원 공개» 한정 |
+| X-3 | blind | FAQ «프리플랍 SB 끝에서 둘째 · BB 마지막» | «스트래들 없을 때» + «라이브 스트래들은 프리플랍 마지막 · 버튼이 스트래들하면 SB 먼저»(zh-hant는 해당 FAQ 없음) |
+| X-4 | blind | 전략 «3인 이상이면 SB 프리플랍 끝에서 둘째» | «(스트래들 없으면)» |
+| X-5 | betting | FAQ «프리플랍 체크 가능 조건» | «모두가 맞춰야 하는 온전한 라이브 벳 · 스트래들 없으면 BB, 있으면 스트래들러 · SB 절반 벳 불가 · 스트래들 팟 BB는 콜·레이즈·폴드» |
+| X-6 | id betting | 실수 2 string bet 괄호 | «dengan kembali ke stack Anda di tengah jalan» 복원(ID 고유) |
+
+- 🪶 통지 1(판단 쟁점 · 자동 착수 금지): string bet 정의 «without announcing "raise" first (Rule 103)» = WSOP A 103 축어라 유지 · «raise와 금액을 먼저 말하라» 보강(TDA 42 · A 94.b · B 178 금액 선언 기준) 여부는 사장님 판단 · 접두 없는 «Rule 103» 표기(B에서 다른 조항) 정리 후보.
+- 🪶 통지 2(EN 동형 후보 · EN 손질 때): showdown 올인 표 캐시 «must show (Live Action Rule 143)» ↔ 조문 단서 «unless that participant has the only remaining live hand» · betting 사이드팟 «excess chips form a side pot»(헤즈업 미콜분은 반환) · «until someone is all-in»(올인 뒤 나머지끼리 레이즈 가능) · blind «BB defense = Call raise»(3벳 포함) · SB raise-or-fold 결론의 토너먼트 일반화.
+- 🪶 통지 3(ID 현지화 · MA-329 계열): blind 캐시 스테이크·바이인 블록에 인도네시아 한정 없음 — 현지화 손질 때.
+- 🪶 꼬리 15로케일(bn fa fil fr he hi it pl ro ru sw th tr uk vi) 같은 3편 = 이번 미전파(§2-Q 잔여와 같은 옛 판 부채 · 자동 착수 금지). ms blind 노트에 «라이브 스트래들이 마지막 자리» 문장 없음(뒤처짐).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

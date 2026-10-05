@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise penuh terakhir), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -182,7 +182,7 @@ Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia
 
 ### Kesalahan 2 — "Saya call... eh, raise!"
 
-"Saya call... eh, raise!" Tidak bisa. Di poker live, aksi Anda terkunci begitu Anda mengucapkannya — menurut ==Rule 90.d==, deklarasi lisan pada giliran Anda bersifat mengikat. (Ini bukan string bet; string bet adalah mendorong chip dalam beberapa gerakan seperti di FAQ. Hasilnya sama saja: kata pertama yang berlaku.) Sudah tak terhitung berapa kali saya melihat dealer memutuskan ini sebagai flat call di tengah kalimat. Ucapkan "raise" *dulu*, baru gerakkan chip.
+"Saya call... eh, raise!" Tidak bisa. Di poker live, aksi Anda terkunci begitu Anda mengucapkannya — menurut ==Rule 90.d==, deklarasi lisan pada giliran Anda bersifat mengikat. (Ini bukan string bet; string bet adalah mendorong chip dalam beberapa gerakan dengan kembali ke stack Anda di tengah jalan, seperti di FAQ. Hasilnya sama saja: kata pertama yang berlaku.) Sudah tak terhitung berapa kali saya melihat dealer memutuskan ini sebagai flat call di tengah kalimat. Ucapkan "raise" *dulu*, baru gerakkan chip.
 
 ### Kesalahan 3 — Big blind membuang flop gratis
 
@@ -219,7 +219,7 @@ A. Sebaiknya jangan. Aksi harus berjalan berurutan searah jarum jam, dan fold di
 
 **Q. Bisakah check saat preflop?**
 
-A. Hanya kalau taruhan yang Anda pasang sendiri adalah taruhan hidup dan tidak ada yang raise — biasanya big blind, tapi juga live straddle (WSOP Live Action Rules 159 · 165): taruhan yang Anda pasang itu dihitung sebagai taruhan pembuka Anda, jadi Anda boleh check dan melihat flop gratis. Setiap posisi yang taruhannya sendiri bukan taruhan hidup wajib call, raise, atau fold saat preflop.
+A. Hanya kalau taruhan yang Anda pasang sendiri adalah taruhan hidup penuh yang wajib disamai semua pemain lain dan tidak ada yang raise — biasanya big blind kalau tidak ada yang straddle, atau pemain live straddle kalau ada (WSOP Live Action Rules 159 · 165): taruhan yang Anda pasang itu dihitung sebagai taruhan pembuka Anda, jadi Anda boleh check dan melihat flop gratis. Setengah taruhan small blind tidak pernah memenuhi syarat ini, dan di pot yang di-straddle, big blind hanyalah pemain lain yang menghadapi taruhan — setiap posisi yang taruhannya sendiri bukan taruhan hidup itu wajib call, raise, atau fold saat preflop.
 
 **Q. Bisakah raise setelah ada yang all-in?**
 

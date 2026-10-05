@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -39,8 +39,8 @@ Die Regel hängt davon ab, wie die letzte Setzrunde geendet hat (den kompletten 
 
 | Aktion auf der letzten Street | Wer zeigt zuerst |
 |--------------------|-----------------|
-| Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst – außer es war ein All-in im Turnier (siehe unten) |
-| Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst |
+| Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst – im Turnier aber gilt: Ist jemand in der Hand All-in (am River oder auf einer früheren Street), wird jede Hand offen hingelegt, sobald das Setzen abgeschlossen ist (siehe unten) |
+| Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst – sofern niemand in der Hand All-in ist; gab es im Turnier auf einer früheren Street ein All-in, wird stattdessen jede Hand offen hingelegt |
 | All-in auf einer früheren Street (das Setzen endete vor dem River) | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-2024-Regel 16). Cashgame: Gibt es einen Side Pot, zeigen dessen Spieler zuerst; und in einem No-Limit-Spiel dreht der Spieler, der All-in gegangen ist, zuerst um (Live Action Rule 149) |
 
 </div>

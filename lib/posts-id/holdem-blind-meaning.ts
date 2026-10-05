@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi (di heads-up, tombol itu sendiri yang memasang Small Blind); Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -141,7 +141,7 @@ Kalau Anda duduk di cash game live, biasanya Anda tidak bisa langsung main grati
 
 Kursi blind adalah tempat saya paling sering melihat pemula kehilangan chip secara diam-diam — bukan dalam satu pot besar, tapi sedikit demi sedikit di setiap orbit. Dua kebiasaan di kursi blind memperbaiki sebagian besarnya — ditambah satu pola dari posisi akhir yang perlu Anda kenali:
 
-- **Small Blind: jangan ribet.** Di meja tiga orang atau lebih, Anda kedua dari terakhir di preflop tapi **bertindak pertama** setelah flop, jadi pendekatan bersih untuk pemula adalah **raise atau fold**, bukan call. Limp lalu diserang balik saat out of position bikin chip bocor terus-terusan.
+- **Small Blind: jangan ribet.** Di meja tiga orang atau lebih (dan tanpa straddle), Anda kedua dari terakhir di preflop tapi **bertindak pertama** setelah flop, jadi pendekatan bersih untuk pemula adalah **raise atau fold**, bukan call. Limp lalu diserang balik saat out of position bikin chip bocor terus-terusan.
 - **Big Blind: bertahan dengan odds.** Anda sudah memasang satu taruhan penuh, jadi call lebih murah bagi Anda dibanding kursi mana pun dan Anda bisa bertahan lebih lebar. Menghadapi open 2,5 BB (dengan Small Blind fold), Anda call 1,5 BB untuk pot 4 BB — sekitar 2,7:1, artinya kira-kira 27% equity sudah impas untuk call itu sendiri. Dalam praktik Anda butuh sedikit lebih dari itu: out of position, dengan taruhan yang masih akan datang, Anda tak akan bisa merealisasikan seluruh equity Anda. Hitungan itu namanya [pot odds](/id/blog/holdem-pot-odds), dan itulah kenapa "big blind defense" ada.
 - **Posisi akhir: steal.** Ketika semua fold sampai ke button atau cutoff, raise yang cuma mengincar dua blind disebut **blind steal** — dan raise balik untuk melawannya disebut **re-steal**. Ukuran steal, range per kursi, dan seberapa lebar bertahan adalah topik strategi, dibahas mendalam di [panduan strategi in position vs out of position](/id/blog/holdem-position-play).
 
@@ -160,7 +160,7 @@ A. Blinds adalah taruhan wajib yang menjamin selalu ada uang di pot, sehingga ti
 
 **Q. Siapa yang bertindak duluan, Big Blind atau Small Blind?**
 
-A. Sebelum flop, Small Blind bertindak kedua dari terakhir dan Big Blind paling akhir. Setelah flop, urutannya terbalik: Small Blind bertindak pertama dan Big Blind kedua, sebelum sisa meja. (Heads-up adalah pengecualian: Small Blind ada di tombol, jadi ia bertindak pertama sebelum flop dan terakhir setelah flop.)
+A. Sebelum flop, kalau tidak ada straddle, Small Blind bertindak kedua dari terakhir dan Big Blind paling akhir (live straddle bertindak paling akhir di preflop sebagai gantinya, dan saat button memasang straddle, Small Blind bertindak pertama). Setelah flop, urutannya terbalik: Small Blind bertindak pertama dan Big Blind kedua, sebelum sisa meja. (Heads-up adalah pengecualian: Small Blind ada di tombol, jadi ia bertindak pertama sebelum flop dan terakhir setelah flop.)
 
 **Q. Apakah Small Blind selalu tepat setengah dari Big Blind?**
 

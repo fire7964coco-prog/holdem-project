@@ -1,3 +1,10 @@
+## 2026-10-06 (2) — 우편함 MA-330 판정·이행: ID rules 3편 → EN-먼저 5자리 + ID 고유 1 (MB-179)
+
+- 판정: 요청 1·2 전부 채택(기각 0). EN 3편(showdown·blind·betting) 5자리 → 9로케일(ar·de·es·id·ja·ms·pt·zh·zh-hant) 전파 · 서브 3레인(ar·de·es / ja·zh·zh-hant / id·ms·pt · 레인별 scratchpad 하위 폴더로 스크립트 충돌 방지). 대기열 = `en-first-queue` §2-X.
+- 동형·부수: zh-hant betting 원문 «自己的盲注…已經是目前活注»(SB 절반 벳도 해당처럼 읽힘) 같이 정정 · de betting «ein Bet» → «eine Bet»(de-style 기존 🔴 해소) · ms showdown 1행은 이미 비올인 한정이라 불변 · zh-hant blind는 해당 FAQ 없음(masterUpdated 10-01 → 10-06 = 내용 동기 판정).
+- 렌즈(교열+TD · diff 10로케일): 높음 0 · 중간 1 반영(«버튼 스트래들 허용되는 곳» → «버튼이 스트래들하면» 10로케일) · 경미 2 반영(ms 대소문자 · ja «ほかの全員»·«通常は»).
+- 게이트: audit:hard 10로케일 🔴 0 · 핵심 드리프트 0 · de-style 3편 0 · 빌드 exit 0(74 + 629).
+
 ## 2026-10-06 (1) — §2-W ② EN-먼저 W-21~W-31 이행: EN 8편 정정 → 8로케일 전파 (MB-178)
 
 - 판정: 11항목 전부 채택(기각 0 · W-27 확신 낮음도 문면 재확인 뒤 채택 — 본문 L134 «리버 올인은 필립스 앞선 상태» 판정과 FAQ가 어긋나 있었다). W-30은 GTO Wizard 원문 직접 열람(10-06) → 축어 2개 인용 + 레이크 이유를 GTO Wizard 귀속에서 분리. W-31 = 사장님 결재 RISKY(MA-327) 방향: yes 가지에 레인지·가격 근거 조건 + 쿨러 «강한 손끼리 충돌» + «가격 맞춰 콜한 드로가 빗나간 건 둘 다 아님 — 분산». 추가: when-to-fold tldr «every time»도 W-21과 같은 명제라 EN + 7로케일 동시 정정.

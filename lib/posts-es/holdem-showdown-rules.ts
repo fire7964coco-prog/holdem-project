@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En torneos, sin all-in, enseña primero el último agresor del river; si todos pasan, empieza el primer jugador activo a la izquierda del botón. Con all-in, todas las manos restantes se muestran en cuanto terminan las apuestas. Quien pagó en el river y conserva o ya mostró sus cartas puede pedir ver la mano del último agresor. En cash, la sala fija las reglas para mostrar y hacer muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -39,8 +39,8 @@ La regla depende de cómo terminó la última ronda de apuestas (para la secuenc
 
 | Acción en la última calle | Quién enseña primero |
 |--------------------|-----------------|
-| Alguien apostó o subió en el river | ==El último jugador que apostó o subió== enseña primero — salvo que fuera un all-in en torneo (ver abajo) |
-| Todos pasaron en el river | El primer jugador activo a la izquierda del botón enseña primero |
+| Alguien apostó o subió en el river | ==El último jugador que apostó o subió== enseña primero — pero en torneo, si alguien de la mano está all-in (en el river o en una calle anterior), todas las manos se muestran boca arriba en cuanto terminan las apuestas (ver abajo) |
+| Todos pasaron en el river | El primer jugador activo a la izquierda del botón enseña primero — si nadie de la mano está all-in; en torneo, si hubo un all-in en una calle anterior, todas las manos se muestran boca arriba |
 | All-in en una calle anterior (las apuestas terminaron antes del river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA 2024). Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) |
 
 </div>

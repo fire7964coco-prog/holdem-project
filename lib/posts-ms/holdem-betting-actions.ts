@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise penuh sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 minit",
   emoji: "🃏",
@@ -221,7 +221,7 @@ A. Tak patut. Aksi mesti bergerak mengikut arah jam secara teratur, dan fold di 
 
 **Q. Boleh cek pada pre-flop?**
 
-A. Hanya jika taruhan wajib yang anda letakkan sendiri ialah pertaruhan hidup dan tiada sesiapa raise — biasanya big blind, tetapi juga straddle hidup (WSOP Live Action Rules 159 · 165): taruhan itu dikira sebagai pertaruhan pembuka anda, jadi anda boleh cek untuk melihat flop secara percuma. Setiap posisi yang tidak meletakkan pertaruhan hidup sendiri mesti call, raise atau fold pada pre-flop.
+A. Hanya jika taruhan wajib yang anda letakkan sendiri ialah pertaruhan hidup penuh yang mesti disamai oleh semua pemain lain dan tiada sesiapa raise — biasanya big blind jika tiada sesiapa straddle, atau pemain straddle hidup jika ada (WSOP Live Action Rules 159 · 165): taruhan itu dikira sebagai pertaruhan pembuka anda, jadi anda boleh cek untuk melihat flop secara percuma. Separuh pertaruhan small blind tidak pernah layak, dan dalam pot yang di-straddle, big blind hanyalah seorang lagi pemain yang berdepan pertaruhan — setiap posisi yang tidak meletakkan pertaruhan hidup itu sendiri mesti call, raise atau fold pada pre-flop.
 
 **Q. Boleh raise selepas seseorang all-in?**
 

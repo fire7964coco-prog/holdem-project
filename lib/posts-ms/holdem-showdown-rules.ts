@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam showdown kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu; jika semua pemain cek di river, pemain aktif pertama di kiri butang. Apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor. Cash game mengikut house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -40,7 +40,7 @@ Peraturannya bergantung pada bagaimana pusingan pertaruhan terakhir berakhir (un
 | Aksi di street terakhir | Siapa buka dulu |
 |--------------------|-----------------|
 | Kejohanan bukan all-in; ada pemain bertaruh atau raise di river | ==Pemain terakhir yang bertaruh atau raise== buka dulu |
-| Semua pemain cek di river | Pemain aktif pertama di kiri butang pengedar buka dulu |
+| Semua pemain cek di river | Pemain aktif pertama di kiri butang pengedar buka dulu — jika tiada all-in dalam tangan; dalam kejohanan, all-in pada street lebih awal bermaksud semua tangan yang masih hidup ditunjukkan |
 | Kejohanan; ada all-in dan semua pertaruhan selesai | Semua tangan yang masih hidup segera ditunjukkan sebelum runout diteruskan; tiada muck. Cash game: jika ada side pot, pemain side pot menunjukkan dahulu; dan dalam No-Limit, pemain yang all-in membuka kad dahulu (WSOP 2026 B149) |
 
 </div>

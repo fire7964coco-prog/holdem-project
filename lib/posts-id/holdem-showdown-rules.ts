@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -39,8 +39,8 @@ Aturannya tergantung bagaimana ronde taruhan terakhir berakhir (untuk urutan len
 
 | Aksi di street terakhir | Siapa yang buka duluan |
 |--------------------|-----------------|
-| Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan — kecuali itu all-in di turnamen (lihat di bawah) |
-| Semua orang check di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
+| Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan — tapi di turnamen, kalau ada pemain di hand itu yang all-in (di river atau di street sebelumnya), semua hand dibuka begitu seluruh aksi taruhan selesai (lihat di bawah) |
+| Semua orang check di river | Pemain aktif pertama di kiri tombol dealer buka duluan — kalau tidak ada all-in di hand itu; di turnamen, all-in di street sebelumnya berarti semua hand dibuka |
 | All-in di street sebelumnya (taruhan berakhir sebelum river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA 2024 Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain yang all-in membuka duluan (Live Action Rule 149) |
 
 </div>

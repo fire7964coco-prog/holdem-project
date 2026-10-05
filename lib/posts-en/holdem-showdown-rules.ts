@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -38,8 +38,8 @@ The rule depends on how the final betting round ended (for the full street-by-st
 
 | Final street action | Who shows first |
 |--------------------|-----------------|
-| Someone bet or raised on the river | ==The last player to bet or raise== shows first — unless it was an all-in in a tournament (see below) |
-| Everyone checked the river | First active player left of the dealer button shows first |
+| Someone bet or raised on the river | ==The last player to bet or raise== shows first — but in a tournament, if anyone in the hand is all-in (on the river or an earlier street), every hand goes face up once betting is complete (see below) |
+| Everyone checked the river | First active player left of the dealer button shows first — with no all-in in the hand; in a tournament, an earlier all-in means every hand goes face up instead |
 | All-in on an earlier street (betting ended before the river) | Tournament: every hand tabled without delay once all betting is complete (TDA 2024 Rule 16). Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
 
 </div>

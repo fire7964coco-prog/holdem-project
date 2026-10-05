@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds ialah pertaruhan wajib yang dibayar sebelum kad diedar. Small Blind duduk di sebelah kiri butang pengedar dan Big Blind di sebelah kirinya pula; Big Blind — biasanya dua kali ganda Small Blind — ialah unit pertaruhan meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-27",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 minit",
@@ -141,7 +141,7 @@ Duduk di meja cash game live dan biasanya anda tak boleh main secara percuma: ke
 
 Blinds ialah tempat saya paling kerap melihat pemain baharu kehilangan cip secara senyap — bukan dalam satu pot besar, tetapi sedikit demi sedikit setiap pusingan meja. Dua tabiat di blinds membetulkan kebanyakannya — dan satu langkah dari posisi lewat memenangi sebahagiannya semula:
 
-- **Small Blind: pastikan ringkas.** Kedua terakhir pre-flop tetapi **bertindak dahulu** selepas flop, pendekatan bersih untuk pemain baru ialah **raise atau fold**, bukan call. Limp dan kena serang balik di luar posisi ialah kebocoran cip yang berterusan — Small Blind ialah tempat duduk yang paling kerap saya lihat pemain baharu rugi sepanjang satu sesi penuh.
+- **Small Blind: pastikan ringkas.** Kedua terakhir pre-flop (jika tiada straddle) tetapi **bertindak dahulu** selepas flop, pendekatan bersih untuk pemain baru ialah **raise atau fold**, bukan call. Limp dan kena serang balik di luar posisi ialah kebocoran cip yang berterusan — Small Blind ialah tempat duduk yang paling kerap saya lihat pemain baharu rugi sepanjang satu sesi penuh.
 - **Big Blind: pertahan dengan pot odds.** Anda sudah membayar satu pertaruhan penuh, jadi anda boleh call raise dengan julat lebih luas daripada mana-mana tempat duduk lain secara berbaloi. Berdepan open 2.5 BB (dengan Small Blind fold), anda call 1.5 BB untuk pot 4 BB — lebih kurang 2.7:1, bermakna sekitar 27% equity sudah cukup untuk pulang modal pada call itu. Kiraan itulah [pot odds](/ms/blog/holdem-pot-odds), dan sebab itulah wujudnya "pertahanan Big Blind".
 - **Posisi lewat: steal.** Apabila semua orang fold sehingga ke butang atau cutoff, raise yang bertujuan memenangi dua blinds sahaja ialah **blind steal** — dan raise semula sebagai balasan ialah **re-steal**. Saiz steal, julat mengikut tempat duduk dan sejauh mana perlu bertahan adalah topik strategi, yang dibincangkan mendalam dalam [panduan strategi in position vs out of position](/ms/blog/holdem-position-play).
 
@@ -160,7 +160,7 @@ A. Blinds ialah pertaruhan wajib yang menjamin sentiasa ada wang dalam pot, yang
 
 **Q. Big Blind atau Small Blind yang bertindak dahulu?**
 
-A. Sebelum flop, Small Blind bertindak kedua terakhir dan Big Blind bertindak terakhir. Selepas flop, susunannya terbalik: Small Blind bertindak dahulu dan Big Blind kedua, sebelum pemain lain di meja.
+A. Sebelum flop, jika tiada straddle, Small Blind bertindak kedua terakhir dan Big Blind bertindak terakhir (straddle hidup pula bertindak terakhir pre-flop, dan apabila button membuat straddle, Small Blind bertindak dahulu). Selepas flop, susunannya terbalik: Small Blind bertindak dahulu dan Big Blind kedua, sebelum pemain lain di meja.
 
 **Q. Adakah Small Blind sentiasa tepat separuh daripada Big Blind?**
 

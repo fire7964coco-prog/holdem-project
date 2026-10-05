@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda (en heads-up, el propio botón pone la ciega pequeña); la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -141,7 +141,7 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: en la mayo
 
 Las ciegas son el sitio donde veo a los principiantes sangrar fichas en silencio — no en un bote enorme, sino un poquito cada órbita. Dos hábitos en las ciegas arreglan casi todo — y un tercer movimiento, desde posición tardía, recupera parte de lo que se va:
 
-- **Ciega pequeña: sin complicarte.** En una mesa de tres o más jugadores habla penúltima preflop pero es la **primera en hablar** tras el flop, así que el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
+- **Ciega pequeña: sin complicarte.** En una mesa de tres o más jugadores (y sin straddle) habla penúltima preflop pero es la **primera en hablar** tras el flop, así que el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
 - **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que pagar te cuesta menos que desde cualquier otro asiento y puedes defender con más manos. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call en sí ya sale a cuenta. En la práctica necesitas algo más: fuera de posición, con apuestas aún por venir, no llegarás a realizar toda tu equity. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
 - **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en [la guía de jugar en posición vs fuera de posición](/es/blog/holdem-position-play).
 
@@ -160,7 +160,7 @@ A. Las ciegas son apuestas obligatorias que garantizan que siempre haya dinero e
 
 **Q. ¿Quién habla primero, la ciega grande o la pequeña?**
 
-A. Antes del flop, la ciega pequeña habla penúltima y la ciega grande la última. Tras el flop, el orden se invierte: la ciega pequeña habla primera y la grande segunda, antes que el resto de la mesa. (Heads-up es la excepción: la ciega pequeña está en el botón, así que habla primero preflop y la última tras el flop.)
+A. Antes del flop, sin straddle, la ciega pequeña habla penúltima y la ciega grande la última (con un straddle vivo, quien habla el último preflop es el jugador del straddle, y cuando el botón hace straddle, la ciega pequeña habla primero). Tras el flop, el orden se invierte: la ciega pequeña habla primera y la grande segunda, antes que el resto de la mesa. (Heads-up es la excepción: la ciega pequeña está en el botón, así que habla primero preflop y la última tras el flop.)
 
 **Q. ¿La ciega pequeña es siempre exactamente la mitad de la grande?**
 

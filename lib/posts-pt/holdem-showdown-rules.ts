@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Em torneios, sem all-in, o último agressor do river mostra primeiro; se todos deram check, começa o primeiro jogador ativo à esquerda do botão. Com all-in, todas as mãos restantes devem ser abertas assim que as apostas terminam. Quem pagou no river e mantém ou já abriu suas cartas pode pedir para ver a mão do último agressor. No cash, as regras da casa definem a abertura e o muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -40,8 +40,8 @@ A regra depende de como a última rodada de apostas terminou (para a sequência 
 
 | Ação na última street | Quem mostra primeiro |
 |--------------------|-----------------|
-| Alguém apostou ou aumentou no river | ==O último jogador que apostou ou aumentou== mostra primeiro — a não ser que tenha sido um all-in em torneio (ver abaixo) |
-| Todos deram check no river | O primeiro jogador ativo à esquerda do botão mostra primeiro |
+| Alguém apostou ou aumentou no river | ==O último jogador que apostou ou aumentou== mostra primeiro — mas, em torneio, se alguém na mão estiver all-in (no river ou numa street anterior), todas as mãos são viradas para cima assim que toda a ação de apostas termina (ver abaixo) |
+| Todos deram check no river | O primeiro jogador ativo à esquerda do botão mostra primeiro — quando ninguém na mão está all-in; em torneio, um all-in numa street anterior faz todas as mãos serem viradas para cima |
 | All-in em street anterior (as apostas terminaram antes do river) | Torneio: todas as mãos viradas para cima sem demora assim que toda a ação de apostas terminou (regra 16 da TDA, edição de 2024). Cash: havendo pote paralelo, os jogadores dele mostram primeiro; e, num jogo de no-limit, quem foi de all-in vira primeiro (regra 149 das Live Action Rules) |
 
 </div>

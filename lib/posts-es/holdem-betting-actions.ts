@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la última apuesta o subida completa) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -219,7 +219,7 @@ A. No deberías. La acción debe avanzar en orden, en el sentido de las agujas d
 
 **Q. ¿Se puede pasar en el preflop?**
 
-A. Solo si tu propia ciega o straddle es la apuesta viva y nadie ha subido — normalmente la ciega grande, pero también un straddle vivo (reglas 159 y 165 del reglamento Live Action de la WSOP): esa apuesta cuenta como tu apertura, así que puedes pasar y ver el flop gratis. Cualquier posición cuya propia apuesta no sea la apuesta viva debe igualar, subir o retirarse en el preflop.
+A. Solo si tu propia ciega o straddle es la apuesta viva completa que todos los demás tienen que igualar y nadie ha subido — normalmente la ciega grande cuando nadie ha puesto straddle, o el jugador del straddle vivo cuando alguien lo ha puesto (reglas 159 y 165 del reglamento Live Action de la WSOP): esa apuesta cuenta como tu apertura, así que puedes pasar y ver el flop gratis. La media apuesta de la ciega pequeña nunca cuenta, y en un bote con straddle la ciega grande es un jugador más que tiene una apuesta por delante: cualquier posición cuya propia apuesta no sea esa apuesta viva debe igualar, subir o retirarse en el preflop.
 
 **Q. ¿Se puede subir después de un all-in?**
 

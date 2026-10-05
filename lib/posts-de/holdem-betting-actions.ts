@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht der letzten vollen Bet oder dem letzten vollen Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -133,7 +133,7 @@ Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der l
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
-1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: ein Bet oder Raise in mehreren Bewegungen, bei denen du zwischendurch auf deinen eigenen Stack zurückgreifst, **ohne** vorher „Raise“ anzusagen – oder eine täuschende Geste, die Action außer der Reihe provozieren soll (==Rule 103==).
+1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: eine Bet oder ein Raise in mehreren Bewegungen, bei denen du zwischendurch auf deinen eigenen Stack zurückgreifst, **ohne** vorher „Raise“ anzusagen – oder eine täuschende Geste, die Action außer der Reihe provozieren soll (==Rule 103==).
 2. **Eine Bewegung.** Wenn du nichts ansagst, müssen deine Chips in einer einzigen Vorwärtsbewegung in den Pot.
 
 Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde – das gehört in die [Strategie-Säule zum Texas Hold'em](/de/blog/holdem-strategy).
@@ -226,7 +226,7 @@ A. Reden ja – über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln
 
 **Q. Darf man Preflop checken?**
 
-A. Nur wenn dein eigener Post die aktive Bet ist und niemand erhöht hat – normalerweise der Big Blind, aber auch ein Live Straddle (WSOP Live Action Rules 159 · 165): Der Post gilt als deine Eröffnungsbet, darum darfst du checken und den Flop gratis sehen. Jede Position, deren eigener Post nicht die aktive Bet ist, muss Preflop callen, raisen oder folden.
+A. Nur wenn dein eigener Post die volle aktive Bet ist, die alle anderen mitgehen müssen, und niemand erhöht hat – normalerweise der Big Blind, wenn niemand gestraddelt hat, oder der Live-Straddler, wenn jemand gestraddelt hat (WSOP Live Action Rules 159 · 165): Der Post gilt als deine Eröffnungsbet, darum darfst du checken und den Flop gratis sehen. Der halbe Einsatz des Small Blinds zählt dafür nie, und in einem gestraddelten Pot ist der Big Blind einfach ein weiterer Spieler, der vor einer Bet steht – jede Position, deren eigener Post nicht diese aktive Bet ist, muss Preflop callen, raisen oder folden.
 
 **Q. Darf man raisen, nachdem jemand All-in gegangen ist?**
 
