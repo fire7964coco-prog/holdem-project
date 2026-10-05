@@ -19,7 +19,7 @@
 /** 시한 글: 대회 종료일(KST, 포함). 이 날까지 최상단, 다음 날부터 5번으로 강등 */
 export const EVENT_UNTIL: Record<string, string> = {
   "apt-jeju-2026-fall-guide": "2026-10-07",
-  "holdem-masters-7th-guide": "2026-10-05", // 본문의 제8회 절이 10/5까지 진행
+  "holdem-masters-7th-guide": "2026-12-13", // 본문의 제9회 절이 12/13 FINAL까지 진행 (10-05 갱신)
 };
 
 /** S 티어 — 전환 경로 순 */

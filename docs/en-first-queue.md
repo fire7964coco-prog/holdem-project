@@ -260,6 +260,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지만(자동 착수 금지): «オールインにコールしたとき» 베팅 종료 보장(pot-odds tip·outs tip · TDA 2026 Rule 17 부록 예2 멀티웨이 — 09-26 L-2d 잣대로는 OK) · probability 표 «ツーペア 2.0%»(두 홀카드 모두 페어 한정 · 전체 4.04%) · equity «エクイティは自分の手とボードから決まります»(상대 레인지 누락) · card-counting JA «「追い出される」問題は…起きない»(EN e6e6aa9b 교체 JA 미이행 · UNV).
 - 🪶 JA 고유 남김: drawing FAQ 질문 «フラッシュまであと4枚» · implied 셋 비율 7.5/8/7 세 숫자 · outs 상자 «8を超えると出しすぎ» ↔ 본문 7 · drawing 배수 지침 JA만 UNV(형제 통일 후보). JA 손질 회차에.
+- 🪶 MA-315 통지 2건(10-05 · MB-167 전/후 결과 · 결함 아님 · 자동 착수 금지): ① S-2 턴 «19.6% is all I have»(EN pot-odds L191 동형 · 8로케일) — 셋 상대 실제는 2♥·3♥가 보드 페어라 7/44 = 15.9% · 투페어 18.2~20.5% → 19.6%는 상한(오차는 폴드 쪽 · 결론 불변 · 검수장 라벨 OK). 손댄다면 «at best» 한정어 1개 ② card-counting 예외 열거 밖 — TDA 2024 RP-4 3) 떨어진 스텁이 머크와 섞이면 함께 셔플 → 엿본 폴드 카드가 돌아올 수 있음(사고 2중 · 라벨 OK 유지). S-7 «premature board card» 예외 옆에 둘째 예외로 넣을지는 EN-먼저 묶음 회차에서 판정. UNV 5(zh·zh-hant «主要是» · ja «セットやツーペアが中心» · id «yang biasa jam» · pt «muitas vezes … me paga pesado»)는 EN «Against the sets and two pair that jam»보다 강한 로케일 문면 — 같은 회차 후보.
 
 ### 2-T. 우편함 수신분 — MA-309 JA ④ 4-4 strategy 부분1 (strategy · starting-hands-chart · positions · position-play) · 판정 2026-10-05 · 회신 MB-168
 

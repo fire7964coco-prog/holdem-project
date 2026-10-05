@@ -28,7 +28,13 @@
 - 🔴 **기기 판독은 `node scripts/ga-device.mjs --days 28`(09-30부터 보정 기본)로.** 모바일 홈 38.3% 같은 옛 기준선은 원값 표에서 나왔다 — 같은 잣대로 다시 뽑아 비교한다. «격차는 신규에서만» 전제는 09-30에 폐기(WORKLOG 09-30 (5)): 재방문에도 격차 23.4p. `/solver`·`/hand-chart` 재방문 모바일(57% · 39%)도 같이 본다.
 - **볼 것**: 같은 28일 창(`ga-fetch --pages --days 28` + `gsc-fetch`)으로 홈·/blog·/tournaments·/solver 참여율과 S·A 티어 글 세션을 기준선과 비교.
 - **기준선**: `docs/post-placement-analysis-2026-09-16.md` §2 표(창 2026-08-17~09-13) · 검증 기록 `docs/post-placement-verification-2026-09-16.md`
-- **함께**: 10/5(WPL 제8회)·10/7(APT 제주) 종료 뒤 `EVENT_UNTIL`이 자동 강등했는지 홈 상단 육안 확인.
+- **함께**: 10/7(APT 제주) 종료 뒤 `EVENT_UNTIL`이 자동 강등했는지 홈 상단 육안 확인. 🔴 홈·/blog는 **빌드 시점 날짜**로 정렬한다(revalidate 없음) → 10/8 이후 **첫 배포 뒤**에 본다. 마스터스 글은 10-05에 9회 갱신으로 `EVENT_UNTIL` 12-13 연장.
+
+### 🆕 ★ 10/11 · 11/14 · 12/6 · 12/13 이후 — `holdem-masters-7th-guide` 제9회 훅 (갱신 2026-10-05)
+- **원본**: [제9회 페이지](https://wpl.winjoygame.com/holdem-masters-9) · [대회 가이드 PDF](https://static.winjoygame.com/wpl/v1/files/9th_HoldemMasters.pdf)(한글 텍스트 추출 불가 → pdftoppm 렌더 후 Read)
+- **제8회 결과**: 10-05 15:30 KST 확인 시 `/holdem-masters/hall-8` 없음(결승 당일). 명예의 전당에 올라오면 결과 상자·FAQ 1번·출처 «결과 게시 대기» 3곳에 우승자·상금 반영. 🪶 10/12경 1차 재확인
+- **10/11** A1 시작 · **11/14** A플라이트 끝(본문 «A플라이트 노린다면 10월 안에» 문장 만료) · **12/6** 새틀라이트 끝 = seoTitle «지금 들어가도 된다» 훅이 죽는 날 → 제10회 공개 여부 확인 · **12/13** FINAL → 결과 아카이브(제9회 결과는 `hall-9`)
+- 🪶 대회 보드: `lib/tournaments.ts`에 `holdem-masters-9` 카드 없음(8회 카드는 10/5 종료로 지난 대회로 넘어감). 신설 시 13로케일 사전(`lib/tournaments-i18n.ts` 이름·설명·한 줄 등) 동시 등재 — 별도 회차
 
 ### 10/9 · 10/20경 — APL 서울 가이드 미공개 항목 재확인 (발행 2026-09-23)
 - **글**: `apl-seoul-2026-guide` · 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §A
@@ -137,7 +143,7 @@
   `lib/tournaments.ts`가 20억을 `schemaDescription`으로 내보내고 있어 `9feca6d`에서 정정했다
 - ⚠️ 공식 페이지 **상단 요약값이 틀려 있다**("2/9~3/29", "총 10억") — 템플릿 잔재.
   **아래 일정표가 정답**이다. 제7회 페이지도 같은 오류가 있었고 **8/6 시점에도 그대로다**
-- **10/5 종료 후 할 일**: 결과 아카이브 전환 (우승자·최종 순위)
+- **10/5 종료 후 할 일**: 결과 아카이브 전환 (우승자·최종 순위) → 🔁 10-05 글을 제9회로 갱신하며 «결과 게시 대기»로 처리 · 결과 반영은 10월 절 «제9회 훅» 항목으로 이관
 
 ### 8/2 (일) — JOPT 후쿠오카 #01 종료
 - **할 일**: 우리 글 없음. 단 **JOPT 첫 후쿠오카 개최 결과**는 자산이 됨
@@ -472,7 +478,7 @@
 ## 10월
 
 ### 🆕 ★ 10/4 · 10/11 · 10/16~26 · 11/29 · 12/21 — zh-hant `taiwan-poker-tournaments-guide` 일정 모음 갱신 (발행 2026-09-29)
-- **10/4** 港撲盃 종료 · **10/11** WWP S5·CTP 11週年 메인 종료 → 10월 절·총표·stripe «10 月 4 個系列賽» 과거형 · 결과 한 줄(원문)
+- ✅ **10/4** 港撲盃 종료 → 10-05 H3·문단 과거형(updated 10-05). 🪶 CTP Results 탭 «No data available»(10-05) → 게시되면 주전 우승·엔트리 한 줄(원문) · **10/11** WWP S5·CTP 11週年 메인 종료 → 10월 절·총표·stripe «10 月 4 個系列賽» 과거형 · 결과 한 줄(원문)
 - **10/16~10/26** TMTC → TMTC 글 결과 전환과 같은 회차에 이 글 TMTC 절도
 - **TMT 21 공식 발표 시**(CTP festivals Upcoming) → «未公布» 5곳(stripe·H2·快速解答·FAQ·tldr) 동시 갱신
   - 🪶 10-01 11:57 KST 확인: Upcoming 6건 그대로(Gods of Poker · Harbour Poker Cup · CTP 11th Anniversary · TMTC · APT Championship · OLA) — **TMT 21 없음 = 미발표 유지**(글 수정 0)

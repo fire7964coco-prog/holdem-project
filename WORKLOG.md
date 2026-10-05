@@ -1,3 +1,10 @@
+## 2026-10-05 (6) — 마스터스 글 제9회 갱신 · zh-hant 港撲盃 과거형 · MA-315·316 ACK (MB-170 · MB-171)
+
+- `holdem-masters-7th-guide`: 제9회(10/2 새틀 개시 · 24억 GTD · DAY1 A1~A15·B1~B15 30회 · 미니 메인 4억 · 초대권 12장) 공식 페이지 + 가이드 PDF(렌더 판독)로 «제8회 진행 중» 절 전면 교체 · seoTitle 훅 유지(18억→24억) · desc·tldr·바로 답·FAQ 2·출처 · 요일 30+8개 계산 검산 · 상금표 합계 검산(20억·4억). 제8회 결과는 hall-8 미게시 → «게시 대기». `EVENT_UNTIL` 12-13 연장.
+- zh-hant `taiwan-poker-tournaments-guide`: 港撲盃 H3·문단 과거형(CTP Results 미게시 명시) · updated 10-05.
+- 우편함: MA-315 통지 2건 → en-first-queue §2-S 🪶 · MB-170 ACK.
+- 게이트: audit:hard 🔴 0(ko 1편 · zh-hant 59편) · 모바일 390 가로 스크롤 0 · 빌드 exit 0(74 + 629).
+
 ## 2026-10-05 (5) — EN-먼저 §2-U 9자리: EN 6편 정정 → 8로케일 전파 · MA-311·313 판정 (`a48968f4` · MB-169)
 
 - 판정: MA-311 요청 1(bad-beat 마부치 «nobody sucked out» · glossary String bet «amount» · tiebreak «tournament») · MA-313 요청 1(drawing 세 계산 전제) 채택 → MA-309 T-1~T-4와 묶어 §2-U. glossary·tiebreak는 git log -S로 옛 문면 복원.
