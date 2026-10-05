@@ -1,3 +1,10 @@
+## 2026-10-05 (5) — EN-먼저 §2-U 9자리: EN 6편 정정 → 8로케일 전파 · MA-311·313 판정 (`a48968f4` · MB-169)
+
+- 판정: MA-311 요청 1(bad-beat 마부치 «nobody sucked out» · glossary String bet «amount» · tiebreak «tournament») · MA-313 요청 1(drawing 세 계산 전제) 채택 → MA-309 T-1~T-4와 묶어 §2-U. glossary·tiebreak는 git log -S로 옛 문면 복원.
+- 전파: 서브 3레인(pt·es / ja·zh·zh-hant / de·id·ms) · 46파일. 동형 = ja·zh·zh-hant bad-beat 결론 상자 · ja drawing 상자 · ja 체크레이즈 «唯一» 2회 · zh-hant FAQ 2. zh·zh-hant drawing은 해당 문면 없음.
+- 🔴 사고 1: pt·es 레인이 비교용으로 main 워크트리에서 git stash → pop(다른 레인 미커밋분까지 잠시 치움). 충돌 없이 복구 · 파일 52개·레인별 표지 문구 전수 grep으로 유실 0 확인. 다음 브리프에 «git stash·checkout 금지» 명시.
+- 게이트: audit:hard 9로케일 🔴 0 · 핵심 드리프트 0 · check:stamp 0(커밋 후) · 빌드 exit 0(74 + 629).
+
 ## 2026-10-05 (4) — 우편함 MA-309 판정(JA ④ 4-4 strategy 부분1) · JA 고유 14자리 정정 · EN-먼저 §2-T 등재 (`3f2c9a41` · MB-168)
 
 - 판정: 요청 1(JA 고유 14) 전부 채택 · 요청 2(EN-먼저 4) 채택·이행은 다음 회차(queue §2-T) · 통지 1·2 = §2-T 🪶. 근거 = 검수장 원장 RISKY 행 + EN·JA 같은 글 본문 대조(본문에 이미 있는 한정을 상자로 복원하는 방향).
