@@ -242,6 +242,23 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 JA 고유 남김: flush 제목 «唯一の本当の例外:ショートデッキ»·상자 «順番が変わるのはショートデッキだけ» — EN «one common format»의 «common» 누락(UNV · 다른 변형 규칙 존재 가능). H2 바꾸면 앵커가 바뀌므로 JA 손질 회차에.
 - ℹ TDA 2026 v1.1 번호 이동(12·13-A·19·22 → 13·14-A·20·24) — 본문은 «2024年版» 명시라 현행 OK. 전 로케일 TDA 판 갱신 회차가 열리면 같이.
 
+### 2-S. 우편함 수신분 — MA-305 JA ④ 4-3 odds 7편 · 판정 2026-10-05 · 회신 MB-166
+
+> JA 고유 요청 1(20건 · 결론 상자 조건 누락 중심) + 같은 클래스 JA 고유 probability FAQ #108은 ✅ 10-05 정정. 아래 EN-먼저 7은 **판정 = 채택**, 이행은 **다음 회차**(EN 정정 → 24로케일 전파 · 자동 착수 금지 — 사장님 지시로 연다). 근거 = 검수장 `reports/검수-ja-회차4-3-odds-2026-10-04/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ja/holdem-*.md`.
+
+| # | 글 | EN 자리 | 판정 | 고칠 방향 |
+|---|---|---|---|---|
+| S-1 | pot-odds | 실전 핸드 L189 «With two cards to come I'm at ~35%» | 채택 — 플롭 비올인 콜은 2장 보장 아님(JA 같은 글 L128 «オールインになり2枚とも見られるなら»가 옳은 문면 · EN 대응 자리 확인 후 그 표현으로) | «If I'd see both cards I'd be at ~35%; this call only buys the turn (19.1%)» 방향 |
+| S-2 | pot-odds | 턴 L191 «Correct fold» | 채택(확신 낮음) — 오버카드 사유는 09-08 이행됨 · 남은 결함 = 레인지 미지정 경계 스팟(가중 33.52% vs 필요 33.33%) | 레인지를 명시(«against a set or a better ace») 또는 «Fold — the price is right at the edge» |
+| S-3 | pot-odds | FAQ L244 «fold when it's lower» | 채택 — 같은 글 임플라이드 예외와 모순 | «… or when implied odds can't close the gap» · probability FAQ(JA는 10-05 고침)와 잣대 통일 |
+| S-4 | equity | L139 «you're all-in or have called an all-in heads-up» | 채택(확신 낮음) — 자기 올인만으로 타인 베팅 종료 아님(멀티웨이 사이드팟) · 형제 EN #24·DE·ES·PT는 09-26 L-2d 잣대 OK였음 → 그 잣대 재검 | «you're all-in heads-up» 또는 «no one who can still bet» 조건으로 |
+| S-5 | equity | FAQ L194 «The rule is simple — call when equity > pot odds» | 채택(확신 낮음) — 추가 베팅·실현율 미고려 일반 규칙화 · S-3과 같은 클래스 | «… when no more betting follows; otherwise adjust for realization and implied odds» |
+| S-6 | drawing-odds | L179 «exactly the aces-vs-aces cooler that empties a stack» | 채택 — AA 대 AA는 무승부 95.65%(각자 승 2.17%) · 1/136 확률은 맞음 | «cooler» 결과 서술 삭제 · «usually just a chop» 쪽으로 |
+| S-7 | card-counting | 표 L129 «it can't come on the board» | 채택(확신 낮음) — TDA 2024 RP-5: 조기 노출 보드 카드는 스텁에 섞여 재등장 가능 · EN #72·ES #64 OK와 갈림 | «(unless it was a premature board card reshuffled into the stub)» 한정 |
+
+- 🪶 통지만(자동 착수 금지): «オールインにコールしたとき» 베팅 종료 보장(pot-odds tip·outs tip · TDA 2026 Rule 17 부록 예2 멀티웨이 — 09-26 L-2d 잣대로는 OK) · probability 표 «ツーペア 2.0%»(두 홀카드 모두 페어 한정 · 전체 4.04%) · equity «エクイティは自分の手とボードから決まります»(상대 레인지 누락) · card-counting JA «「追い出される」問題は…起きない»(EN e6e6aa9b 교체 JA 미이행 · UNV).
+- 🪶 JA 고유 남김: drawing FAQ 질문 «フラッシュまであと4枚» · implied 셋 비율 7.5/8/7 세 숫자 · outs 상자 «8を超えると出しすぎ» ↔ 본문 7 · drawing 배수 지침 JA만 UNV(형제 통일 후보). JA 손질 회차에.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
