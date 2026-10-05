@@ -81,13 +81,6 @@
   </url>
 
   <url>
-    <loc>https://www.holdemmaster.com/hands</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://www.holdemmaster.com/glossary</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -440,14 +433,14 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en/hand-chart</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/en/glossary</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

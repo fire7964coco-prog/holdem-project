@@ -65,10 +65,9 @@ const STATIC_ROUTES = [
    *   사장님 판단 — 실측된 성과를 가설에 걸지 않는다. **재론하려면 새 근거를 가져올 것.**
    */
   /**
-   * ★2026-10-05 `/hands` 색인 재개시 (사장님 결정) — 위 08-13 주석은 그날 판단으로 보존. 근거 = `app/hands/page.tsx` robots 주석.
-   *   `/rules/texas-holdem`은 noindex 유지(«홀덤 룰»에 /rules 허브·holdem-rules 글이 이미 있어 셋이 나눠 먹는다 — 통합 판단 별건).
+   * ⚠ 2026-10-05 `/hands`를 다시 하루 열었다가 같은 날 되돌렸다 — 근거 오판(평균 순위 vs 검색어 순위 혼동).
+   *   상세 = `app/hands/page.tsx` robots 주석. `/rules/texas-holdem`도 noindex 유지(«홀덤 룰» 3중 — 통합 판단 별건).
    */
-  { path: "/hands", priority: "0.8", changefreq: "monthly" },
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },
