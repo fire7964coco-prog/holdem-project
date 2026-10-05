@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards dan ada 5 kartu bersama di tengah meja. Ada paling banyak empat ronde taruhan, dan tangan poker 5 kartu terbaik menang di showdown — kecuali semua pemain lain fold lebih dulu.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-05",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -181,7 +181,7 @@ Jawabannya tergantung apakah Anda main dengan uang sungguhan atau baru latihan.
 
 Kalau masih belajar, pakai chip mainan dulu. Tujuannya memahami urutan permainan, bukan menciptakan tekanan.
 
-Kalau Anda main cash game kecil di rumah, pilih buy-in yang semua orang rela kehilangannya. Struktur umum untuk pemula:
+Kalau Anda main cash game kecil di rumah, pilih buy-in yang semua orang rela kehilangannya. Catatan: di Indonesia, poker dengan taruhan uang tidak tersedia secara resmi, jadi tabel di bawah ini adalah patokan umum untuk home game di luar negeri. Di dalam negeri, mainlah dengan chip mainan. Struktur umum untuk pemula:
 
 | Level blind | Buy-in pemula | Catatan |
 |:---|:---:|:---|
@@ -408,7 +408,7 @@ A. Untuk home game pemula, beri setiap pemain chip senilai sekitar 200 dan pakai
 
 **Q. Berapa uang yang dipakai untuk mulai main Texas Hold'em?**
 
-A. Untuk belajar, mulailah dengan chip mainan. Untuk home game uang sungguhan skala kecil, pakai buy-in yang semua orang rela kehilangannya, misalnya $2 sampai $5 dengan blind $0,01/$0,02.
+A. Untuk belajar, mulailah dengan chip mainan. Untuk home game uang sungguhan skala kecil di luar negeri, pakai buy-in yang semua orang rela kehilangannya, misalnya $2 sampai $5 dengan blind $0,01/$0,02. Di Indonesia, main dengan chip mainan saja.
 
 **Q. Apakah ada straight kecil di Texas Hold'em?**
 
