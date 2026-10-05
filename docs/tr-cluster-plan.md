@@ -75,7 +75,7 @@
 | 1. 실측 | 8편 `audit:hard --slug`(커버리지까지) · 글별 내부링크 표(첫 링크가 필라인가 · tr에 없는 글로 가는 링크 · 고아 글) · §1 실측어가 H2/FAQ/seoTitle에 있는지 대조표 · `/tr/blog` 허브·`/tr/tournaments` 화면 확인(screen-review · 영어 노출·얇은 본문이 미색인 원인인지) | 결함 목록(사실 오류 / 번역 누락 / 링크 / SEO 분류) |
 | 2. 고리 | 모든 글 → 필라 `texas-holdem-rules-for-beginners` 첫 내부링크 · 필라 → 7편 전부 · 족보 쿼리 앵커는 `hand-rankings`로만(§3 소유표) · 대회 글 ↔ `/tr/tournaments` · readnext/썸네일 | 링크 고리 완성 |
 | 3. 흡수 | §1 실측어를 주인 글에만: rules-for-beginners = «poker nasıl oynanır»(5.400)·«poker kuralları»·«texas holdem»·«poker nedir» · hand-rankings = «poker elleri»(2.900)·«el/kart sıralaması»·«kombinasyonları»·«kartları» · blind-meaning = «blind nedir» · all-in-rules = «all in nedir» · showdown = «split pot»/«kicker»(tiebreak 신규 전까지 임시) · 질문형 H2 + 직답 40~75단어 · CTR 훅은 살리고 키워드만 보강(§17) | 수정 diff |
-| 4. 검수 | 손댄 핸드·수치 §13 검산 · 렌즈(터키어 네이티브 교열 · §13 · SEO/카니발) 병렬 → 반영 → 2차 교열 · 아스트라 교차(read-only) | 판정표 |
+| 4. 검수 | 손댄 핸드·수치 §13 검산 · Claude 렌즈(터키어 네이티브 교열 · §13 · SEO/카니발) **+ 아스트라를 같은 시점에 병렬**(사장님 10-06 «다른 모델이면 검수 시 좋다 · 토큰 많다» — 마감 뒤 덧붙이기 아님 · 8편을 묶음으로 나눠 여러 개 띄워도 됨 · 메모리 `astra-subreview-from-main-session`) → 본체가 원문 재확인해 채택/기각 → 반영 → 2차 교열도 렌즈+아스트라 | 판정표(Claude·아스트라 출처 구분) |
 | 5. 마감 | `npm run build` · push · MB 1행(커밋·8 slug·tr) · `npm run indexnow -- --since <당일>` · 사장님께 **수동 색인 요청 URL 7개** 목록 전달 · 이 표 상태 칸·WORKLOG·핸드오프 갱신 | 배포 |
 
 - 🔴 범위 밖(이번에 안 함): 신규 글·도구(회차 2~) · 합법성·`online poker`·`poker oyna` 의도 · 도구 링크 중 tr판이 아직 없는 calculator·hand-chart는 회차 2 뒤에 건다(지금 EN 도구로 걸지 않는다).
