@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blind, kartlar dağıtılmadan önce koyulan zorunlu bahistir. Small blind (SB) dağıtıcı butonunun hemen solunda, big blind (BB) ise onun solunda oturur; big blind — genelde small blind'ın iki katı — masanın bahis birimidir.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-06",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Hayatımda oynadığım ilk canlı poker elinde, daha tek bir kart bile görmeden krupiye önümdeki çuhaya vurdu: "Small blind, lütfen." Donup kaldım — para mı? *Ne* için? Aradan on iki yıl ve binlerce saat geçti, hâlâ neredeyse her seansta yeni birinin tam o anda donup kaldığını görüyorum.
 
-Blind'lar ==pokeri hareket halinde tutan motordur== — [Texas Hold'em kurallarının](/tr/blog/texas-holdem-rules-for-beginners) sana gerçekten çipe mal olan ilk parçası. Bir kez oturunca, oyundaki tüm sayı diline ("2BB raise", "20BB stack") anlam kazanır. İşte hepsi tek bir hızlı okumada.
+Blind'lar ==pokeri hareket halinde tutan motordur== — [Texas Hold'em kurallarının](/tr/blog/texas-holdem-rules-for-beginners) sana gerçekten çipe mal olan ilk parçası. Bir kez oturunca, oyundaki tüm sayı dili ("2BB raise", "20BB stack") anlam kazanır. İşte hepsi tek bir hızlı okumada.
 
 ---
 
@@ -50,7 +50,7 @@ Peki neden birini para koymaya zorlamak? Oyunun ölmemesi için. ==r:Blind olmas
 
 **Small blind (SB)**, iki zorunlu bahsin küçük olanıdır ve **dağıtıcı butonunun tam solunda** oturan oyuncu tarafından koyulur. Genelde **big blind'ın yarısıdır** — $1/$2 bir masada small blind $1'dır.
 
-Aynı zamanda haklı bir üne sahip: masanın en zorlu koltuğu. Rastgele bir elle yarım bahis koymuşsundur ve flop'tan itibaren her caddede **ilk** sen konuşursun, üstelik en az bilgiyle. Small blind bu yüzden neredeyse herkes için uzun vadede para kaybeder — buradaki amaç kazanmak değil, *daha az* kaybetmektir.
+Aynı zamanda haklı bir üne sahip: masanın en zorlu koltuğu. Rastgele bir elle yarım bahis koymuşsundur ve flop'tan itibaren her sokakta **ilk** sen konuşursun, üstelik en az bilgiyle. Small blind bu yüzden neredeyse herkes için uzun vadede para kaybeder — buradaki amaç kazanmak değil, *daha az* kaybetmektir.
 
 ---
 
@@ -87,7 +87,7 @@ Her iki blind da **dağıtımdan önce** koyulur ve dağıtıcı butonu her elde
 | Preflop sırası | Sondan bir önce konuşur | **Son** konuşur (the "opsiyon") |
 | Postflop sırası | **İlk** konuşur (dezavantaj) | İkinci konuşur |
 
-> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Cadde cadde tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise poker pozisyonları rehberinde ele alınıyor.
+> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Sokak sokak tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise poker pozisyonları rehberinde ele alınıyor.
 
 ---
 
@@ -111,7 +111,7 @@ Seviyeler **SB/BB** olarak yazılır. "$1/$2" bir masa $1 small blind ve $2 big 
 </div>
 
 - **Cash game:** blind'lar ==g:**sabit**== kalır. $1/$2 bir masaya oturursun, kalkana kadar $1/$2'dir. (Daha derin bir karşılaştırma için [turnuva mı cash game mi](/tr/blog/holdem-tournament-vs-cash-game) yazısına bak.)
-- **Turnuva:** blind'lar ==r:bir saatle **yükselir**== (örn. 25/50 → 50/100 → 100/200), yani gece ilerledikçe baskı artar. Blind seviyeleri, saat ve yapı çizelgeleri poker turnuvalarının nasıl işlediği rehberinde anlatılıyor.
+- **Turnuva:** blind'lar ==r:belirli aralıklarla **yükselir**== (örn. 25/50 → 50/100 → 100/200), yani gece ilerledikçe baskı artar. Blind seviyeleri, saat ve yapı çizelgeleri poker turnuvalarının nasıl işlediği rehberinde anlatılıyor.
 
 ---
 
@@ -125,7 +125,7 @@ Cash oyunlarında göreceğin bir başka zorunlu bahis akrabası daha var: **str
 
 ## Heads-up pokerde blind'ları kim koyar?
 
-Sadece iki oyuncu kaldığında (ya da bir heads-up maçında) alışılmış kural ==r:tersine döner==. **Dağıtıcı butonu small blind'ı koyar** ve flop'tan önce ==**ilk**== konuşur; diğer oyuncu big blind'ı koyar ve preflop ==**son**== konuşur — sonra da her sonraki caddede ilk. Butonun blind ödediği tek durum budur ve neredeyse herkesi ilk seferinde şaşırtır.
+Sadece iki oyuncu kaldığında (ya da bir heads-up maçında) alışılmış kural ==r:tersine döner==. **Dağıtıcı butonu small blind'ı koyar** ve flop'tan önce ==**ilk**== konuşur; diğer oyuncu big blind'ı koyar ve preflop ==**son**== konuşur — sonra da her sonraki sokakta ilk. Butonun blind ödediği tek durum budur ve neredeyse herkesi ilk seferinde şaşırtır.
 
 ---
 

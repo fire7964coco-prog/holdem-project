@@ -3,12 +3,12 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-hand-rankings",
   title: "Texas Hold'em'de poker el sıralaması — en güçlüden en zayıfa, olasılıklarla",
-  seoTitle: "Kazandın sandın ama potu mu kaybettin? — Poker elleri",
-  desc: "Flush yaptın ama yine de potu mu kaybettin? En güçlüden en zayıfa 10 poker eli, her birinin gerçek olasılığı ve kicker ile beraberliklerin kazananı belirlemesi.",
+  seoTitle: "Kazandın sandın, potu mu kaybettin? — Poker elleri sıralaması",
+  desc: "Flush yaptın ama potu mu kaybettin? En güçlüden en zayıfa 10 poker eli, gerçek olasılıkları ve beraberlikte kicker ile potu kimin aldığı.",
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
+  updated: "2026-10-06",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -18,15 +18,18 @@ export const POST: Post = {
   imageAlt: "Royal Flush — poker masasında maça 10 J Q K A, fiş yığınları ve dağıtıcı butonuyla",
   tags: ["poker elleri", "poker el sıralaması", "poker kart sırası", "texas holdem elleri", "pokerde hangi el kazanır", "kicker poker", "beraberlik kuralları poker", "en iyi poker elleri"],
   content: `
-River'da head-up'sın. Flush'ını yaptın, en iyisinin bu olduğundan eminsin — sonra krupiye potu karşı tarafa itiyor. Board eşlenmişti, rakibinde full house vardı ve bunun geleceğini hiç görmedin.
+River'da tek rakibin kaldı. Flush'ını yaptın, en iyi elin bu olduğundan eminsin — sonra krupiye potu karşı tarafa itiyor. Board eşlenmişti, rakibinde full house vardı ve bunu hiç beklemiyordun.
 
 "Kazandığımı sanmıştım" anlarının neredeyse hepsi aynı şeye dayanır: **poker el sıralamasını** yeterince hızlı okuyamamak. Sıralama beş dakikada öğrenilir. Asıl zor olan, onu canlı, baskı altında, eşlenmiş veya bağlantılı bir board'da okumaktır — ve bunu kimse pek iyi anlatmaz.
 
-Bu rehber ikisini de çözüyor. Gerçek olasılıklarla tam sıralamayı, tüm beraberlik kurallarını, "en iyi beş kartını bul" alıştırması için üç gerçek board sorusunu ve herhangi bir board'u okumak için 1 saniyelik bir rutini bulacaksın.
+Masaya hiç oturmadıysan önce [Texas Hold'em kurallarına](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") bir göz at; bu rehber oradan devam ediyor. Sıralamayı ezberlemek de baskı altında okumak da burada: Gerçek olasılıklarla tam sıralamayı, tüm beraberlik kurallarını, "en iyi beş kartını bul" alıştırması için üç gerçek board sorusunu ve herhangi bir board'u okumak için 1 saniyelik bir rutini bulacaksın.
 
 ---
 
-## Poker el sıralaması: tam liste
+## Poker elleri nelerdir? Tam el sıralaması
+
+> **Kısa cevap**
+> Texas Hold'em'de 10 poker eli vardır. En güçlüden en zayıfa: **Royal Floş (Royal Flush), Sıralı Floş (Straight Flush), Kare, Full (Full House), Floş (Flush), Kent, Üçlü, İki Çift, Çift ve Yüksek Kart**. Yedi kartın (2 elindeki + 5 ortak) içinden en iyi beşini seçersin; sıralama, beş kartlık kombinasyonun ne kadar nadir olduğuna dayanır.
 
 Buradan başla. İşte Texas Hold'em'de her eli river'a kadar yapma olasılığıyla birlikte, en güçlüden en zayıfa kadar tüm sıralama.
 
@@ -50,7 +53,7 @@ Buradan başla. İşte Texas Hold'em'de her eli river'a kadar yapma olasılığ�
 
 ---
 
-## Kart gücü: 30 saniyede temel
+## Poker kart sıralaması: 30 saniyede temel
 
 Ellerden önce kart gücüne ihtiyacın var. Sadece iki şey.
 
@@ -66,7 +69,7 @@ Standart Texas Hold'em'de **hiçbir tür diğerini yenmez**. Maça kupayı yenme
 
 ---
 
-## 10 poker eli açıklaması
+## 10 poker kombinasyonu tek tek
 
 ### #1 — Royal Flush
 
@@ -101,7 +104,7 @@ Onu yalnızca daha yüksek bir straight flush veya royal flush yener. En düşü
 **Önce üçlüyü** karşılaştır: QQQ55, JJJ99'u yener çünkü kızlar valeleri geçer, çiftin büyüklüğü ne olursa olsun. Çift yalnızca üçlü berabere kalırsa karşılaştırılır.
 
 > **En yaygın "cooler"**
-> Board her eşlendiğinde, bir flush ya da kent'e bel bağlamadan önce full house ara. "En yüksek flush'ım full house'a yenildi" Hold'em'in en sık görülen bad beat'idir.
+> Board her eşlendiğinde, bir flush ya da kente bel bağlamadan önce full house ara. "En yüksek flush'ım full house'a yenildi" Hold'em'in en sık görülen bad beat'idir.
 
 ### #5 — Flush
 
@@ -151,7 +154,7 @@ Set daha çok çip kazandırır çünkü kimse onu görmez.
 
 **K♠ K♦ 9♥ 6♣ 2♠** — aynı değerden iki kart.
 
-Hold'em'in en yaygın tamamlanmış eli. Aynı iki çift kicker ile belirlenir: **çiftin değeri → kicker 1 → kicker 2 → kicker 3**, yüksekten düşüğe. "Aynı el" yenilgilerinin çoğu burada olur: kicker'ına dikkat et.
+Hold'em'in en yaygın tamamlanmış eli. Aynı değerde iki çift karşılaşırsa kicker belirler: **çiftin değeri → kicker 1 → kicker 2 → kicker 3**, yüksekten düşüğe. "Aynı el" yenilgilerinin çoğu burada olur: kicker'ına dikkat et.
 
 ### #10 — High Card (Yüksek Kart)
 
@@ -170,9 +173,11 @@ Showdown'da en yüksek kart kazanır, sonra bir sonraki, ve beşi boyunca böyle
 Gerçek potları belirleyen kısım budur — ve çoğu tablonun atladığı kısım. İki oyuncuda **aynı el türü** olduğunda tam olarak şu sırayı izle:
 
 1. **El türünü karşılaştır.** Flush her zaman kenti yener, full house her zaman flush'ı yener, vesaire.
-2. **Eli oluşturan kartları karşılaştır.** As çifti papaz çiftini yener; As'lı flush vale'li flush'ı yener.
+2. **Eli oluşturan kartları karşılaştır.** As çifti papaz çiftini yener; As'lı flush valeli flush'ı yener.
 3. **Kicker'ları karşılaştır.** Tamamlanmış el berabere kalırsa, kalan kartlar yüksekten başlayarak teker teker belirler.
 4. **Hâlâ aynı mı? Pot bölünür.** Türler asla beraberlik bozmaz.
+
+Kartları kimin önce açacağı ve muck kuralları ayrı bir konu — onu [showdown kuralları](/tr/blog/holdem-showdown-rules) yazısında anlattım.
 
 Sağdaki rozet, **kicker'ın eli belirlemekte kullanılıp kullanılmadığını** gösterir.
 
@@ -211,7 +216,7 @@ Elinde **Q♥ Q♦** var. En iyi elin ne?
 
 Elinde **6♥ 2♣** var. Board'da dört kupa var.
 
-→ 6♥ beşinci kupa, bu yüzden "flush" diye düşünüyorsun. Ama sıraya bak: **10♥ 9♥ 8♥ 7♥ 6♥** beş *ardışık* kupa — yani **onlu tepeli bir straight flush**, el #2. Sadece flush sanmadan önce flush kartlarının bağlı olup olmadığını her zaman kontrol et.
+→ 6♥ beşinci kupa, bu yüzden "flush" diye düşünüyorsun. Ama sıraya bak: **10♥ 9♥ 8♥ 7♥ 6♥** beş *ardışık* kupa — yani **10'a kadar uzanan bir straight flush (sıralı floş)**, el #2. Sadece flush sanmadan önce flush kartlarının bağlı olup olmadığını her zaman kontrol et.
 
 ### Soru 3 — Paylaşmak gerektiğinde
 
@@ -286,7 +291,20 @@ Sıralama neredeyse tüm poker varyantlarında aynıdır, birkaç önemli farkla
 
 ---
 
+:::readnext[Okumaya devam et]
+/tr/blog/holdem-showdown-rules | Showdown ve muck kuralları | /images/holdem-showdown-rules-hero.webp
+/tr/blog/holdem-game-order | Oyun sırası | /images/blog-holdem-game-flow.webp
+:::
+
 ## Sıkça sorulan sorular
+
+**Q. Poker elleri nelerdir, sıralaması nasıl?**
+
+A. En güçlüden en zayıfa 10 el: Royal Floş, Sıralı Floş, Kare, Full, Floş, Kent, Üçlü, İki Çift, Çift, Yüksek Kart. Aynı kombinasyonda önce eli oluşturan kartlar, sonra kicker karşılaştırılır; türlerin değeri yoktur.
+
+**Q. Poker kart sıralaması nasıldır?**
+
+A. Yüksekten düşüğe A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2. As hem en yüksek (A-K-Q-J-10) hem en düşük (A-2-3-4-5) kentte oynayabilir. Maça, kupa, karo ve sinek arasında üstünlük yoktur.
 
 **Q. Pokerde flush kenti yener mi?**
 
@@ -298,7 +316,7 @@ A. Evet. Full house (#4), flush (#5) ve kenti yener. Yalnızca daha yüksek bir 
 
 **Q. Kicker nedir?**
 
-A. Kicker, tamamlanmış elinin parçası olmayan ama beraberliği bozan bir karttır. Aynı iki çiftte en yüksek yan kart (kicker) kazanır. En iyi kicker As'tır.
+A. Kicker, tamamlanmış elinin parçası olmayan ama beraberliği bozan bir karttır. İki oyuncuda aynı çift varsa en yüksek yan kart (kicker) kazanır. En iyi kicker As'tır.
 
 **Q. İki oyuncuda aynı el olabilir mi?**
 
@@ -328,6 +346,6 @@ A. Evet. Üçlü #7, iki çift #8, yani üçlü kazanır. İki çift yalnızca �
 2. **Tuzak:** flush (#5) kenti (#6) yener — ve her eşlenmiş board ikisini de yenen bir full house gizleyebilir.
 3. **Gerçek:** potların çoğu çift veya yüksek kartla kazanılır, yani kicker'ın sandığından değerlidir.
 
-Sıralamayı bir öğleden sonrada öğren, kafa karıştıran kapışmaları çalış ve her board'da "türler → kentler → çiftler" taramasını yap. Bunu yap, bir daha asla potu yanlış tarafa itmeyeceksin.
+Sıralamayı bir öğleden sonrada öğren, kafa karıştıran kapışmaları çalış ve her board'da "türler → kentler → çiftler" taramasını yap. Bunu yap, bir daha asla potu yanlış tarafa itmeyeceksin. Bir elin preflop'tan river'a nasıl aktığını görmek istersen [Texas Hold'em oyun sırası](/tr/blog/holdem-game-order) yazısıyla devam et.
 `.trim(),
 };

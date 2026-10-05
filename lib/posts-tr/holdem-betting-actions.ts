@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de 5 bahis hareketi var: check (bedavaya pas), bet (turu açmak), call (bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-07",
+  updated: "2026-10-06",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",
@@ -126,14 +126,14 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 | Flop | Oyuncu $6 koyar | $6 daha → toplam $12 |
 | Preflop (blindler $1/$2) | Oyuncu $6'ya yükseltir ($2 blind üzerine $4'lük yükseltme) | $4 daha → toplam $10 |
 
-İşin özü: min-raise, big blind'e değil, son bahsin ya da yükseltmenin ==artışına== eşittir. Preflop'ta big blind açılış bahsi sayılır — en küçük açılış yükseltmesi bu yüzden 2 big blind'edir.
+İşin özü: min-raise, big blind'e değil, son **tam** bahsin ya da yükseltmenin ==artışına== eşittir. ("Tam" kelimesi biri bir raise'den az all-in olduğunda önem kazanır: $10 bahis ve ardından $14 all-in gelirse eşlenecek artış hâlâ $10'dur, yani en küçük raise toplam $24'e çıkmaktır.) Preflop'ta big blind açılış bahsi sayılır — en küçük açılış yükseltmesi bu yüzden 2 big blind'edir.
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
 1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==Kural 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
-*Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o, Texas Hold'em stratejisinde yaşar.
+*Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu Texas Hold'em stratejisine girer.
 
 ---
 
@@ -152,7 +152,7 @@ Yine de iki sınır geçerli:
 
 ## All-in gitmek ne demek?
 
-All-in demek, ==kalan tüm çiplerini== yatırmak demektir. Sıra sende olduğu her an yapabilirsin — bet, call ya da raise olarak.
+All-in demek, ==kalan tüm çiplerini== yatırmak demektir. Sıra sana geldiğinde yapabilirsin — o anda sana açık olan bet, call ya da raise olarak.
 
 All-in'in mevcut bahisten *küçükse* elden çıkmış olmazsın: sadece katkına göre sınırlanmış bir ==ana pot== için yarışırsın; büyük stack'lerin fazla çipleri ise kazanamayacağın bir ==yan pot (side pot)== oluşturur. Ve *tam bir min-raise'den az* olan bir all-in, çoğunlukla önceden oynamış oyuncular için yükseltmeyi yeniden açmaz — düzenli oyuncuları bile şaşırtan ince bir kural.
 
@@ -227,7 +227,7 @@ A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareke
 
 **Q. Pokerde string bet nedir?**
 
-A. Çipleri birden fazla hareketle koymak ya da "call" deyip sonra "raise" demeden yükseltme eklemek. Krupiyeler string bet'i orijinal miktarın call'u sayar. Hareketini sözle ilan et ya da tüm çipleri tek hareketle koy.
+A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (Kural 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir. ("Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı sözlü beyan kuralıdır: ilk söz geçerli.) Hareketini sözle ilan et ya da tüm çipleri tek hareketle koy.
 
 **Q. Pokerde limp ne demek?**
 

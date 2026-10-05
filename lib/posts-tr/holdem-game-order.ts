@@ -2,20 +2,20 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-game-order",
-  title: "Texas Hold'em nasıl oynanır: blind'dan showdown'a elin sırası",
+  title: "Texas Hold'em oyun sırası: blind'dan showdown'a bir el nasıl ilerler",
   seoTitle: "Sıra kimde, ne zaman bahis? — Hold'em el sırası",
   desc: "Hold'em'de sıra sana gelince donup mu kalıyorsun? İşte elin tam sırası — preflop, flop, turn, river, showdown — gerçek bir el üzerinden adım adım.",
   tldr: "Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, toplam 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-06",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Texas Hold'em el sırası şeması — blind, preflop, flop, turn, river, showdown; altı aşamanın tamamı",
-  tags: ["texas holdem nasıl oynanır", "texas holdem kuralları", "poker el sırası", "preflop flop turn river", "poker bahis turları", "pokerde sıra kimde", "bir poker eli nasıl işler", "poker showdown"],
+  tags: ["texas holdem oyun sırası", "poker el akışı", "poker el sırası", "preflop flop turn river", "poker bahis turları", "pokerde sıra kimde", "bir poker eli nasıl işler", "poker showdown"],
   content: `
 İlk kez Texas Hold'em oynamak için oturan hemen herkes aynı şeyi sorar: ==r:*"Dur… şimdi sıra kimde ve çiplerimi ne zaman koyacağım?"*== Kartların dağıtılacağını biliyorsun. Bilmediğin şey, ne zaman bahis yapacağın, bir sonraki kartların ne zaman geleceği ve kazananın gerçekte nasıl belirlendiği.
 
@@ -51,7 +51,7 @@ Tek bir kart bile açılmadan önce masayı düzenleyen iki şey vardır: **dağ
 | Blind | Konum | Örnek |
 |:---|:---|:---:|
 | Small blind (SB) | Butonun hemen solundaki koltuk | 1.000 |
-| Big blind (BB) | Butonun iki sol koltuğu | 2.000 |
+| Big blind (BB) | Butonun iki koltuk solu | 2.000 |
 
 </div>
 
@@ -75,8 +75,8 @@ Aksiyon big blind'ın solundan başlar ve saat yönünde ilerler. Sıra sana gel
 ### Yeni başlayanlar için sağlam başlangıç elleri
 
 - **Premium:** A♠A♥ (As çifti), K♠K♥, Q♠Q♥, J♠J♥
-- **Güçlü:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Duruma bağlı:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Güçlü:** A♠K♥ ("Big Slick"), A♠Q♥, 10♠10♥, 9♠9♥
+- **Duruma bağlı:** A♠J♥, 8♠8♥, K♠Q♥, K♠J♥
 
 Bunlardan hangilerini gerçekten açabileceğin koltuğuna bağlıdır. Pozisyona göre ayrılmış 169 elin tam başlangıç eli tablosu ayrı bir konudur.
 
@@ -101,7 +101,7 @@ Flop, yeni bir seçeneği de açar: **check (kontrol)**. Henüz kimse bahis yapm
 
 Flop bahis turundan sonra bir ortak kart daha eklenir: **turn**. Artık masada dört kart var.
 
-Turn, stratejik olarak ağır bir sokaktır (street):
+Turn, stratejik kararların ağırlaştığı sokaktır (street):
 
 - Kent ya da floş çekişin tamamlandı mı?
 - Rakibin preflop ve flop hamleleri, el aralığı (range) hakkında ne söylüyor?
@@ -134,9 +134,9 @@ River bahsinden sonra hâlâ iki ya da daha fazla oyuncu kaldıysa el **showdown
 Showdown kuralları:
 
 - Her oyuncu iki hole kart ve beş ortak karttan **en iyi beş kartlık eli** oluşturur.
-- İki hole kartını da kullanmak zorunda değilsin — biri, hatta hiçbiri (board oynamak) bile olur, eğer en iyi beşlin oysa.
+- İki hole kartını da kullanmak zorunda değilsin — yalnızca birini ya da hiçbirini (board oynamak) kullanabilirsin, en iyi beş kartın böyle çıkıyorsa.
 - Son agresif hamleyi (bahis ya da yükseltme) yapan oyuncu önce açar; river check ile geçildiyse butonun solundaki ilk aktif oyuncu önce açar.
-- Kaybeden oyuncu kartlarını göstermeden atabilir (**muck**).
+- Kaybeden oyuncu genelde kartlarını göstermeden atabilir (**muck**). Turnuvada iki istisna var: bir oyuncu all-in olup bahis tamamlandıysa tüm eller açılır (TDA 2024 Kural 16); ve river'da call edilen bahisçi, kendi kartlarını hâlâ tutan ya da açmış olan call eden oyuncu isterse elini göstermek zorundadır (TDA 2024 Kural 18-B).
 - Eşit güçteki eller potu **bölüşür** (split / "chop").
 
 Kimin önce göstereceği, ne zaman muck yapabileceğin ve slow-roll âdâbı [showdown kuralları](/tr/blog/holdem-showdown-rules) yazısında tümüyle anlatılıyor.
@@ -257,7 +257,7 @@ Ders: ==r:river A'nın elini iki çift yaptığında bu kazanan bir el *gibi his
 | Bet (bahis) | Turun ilk bahsini yap | Henüz kimse bahis yapmamışken |
 | Raise (yükselt) | Mevcut bahsin üzerine çık | Önünde bahis varken |
 | Re-raise (3-bet) | Bir yükseltişin üzerine yükselt | Önünde yükseltiş varken |
-| All-in | Tüm çiplerini ortaya koy | Her zaman |
+| All-in | Tüm çiplerini ortaya koy | Her sokakta — sıra sendeyken, o an açık olan bet, call ya da raise olarak |
 
 </div>
 
@@ -267,7 +267,7 @@ Her hamleyi ne zaman kullanacağına dair daha derin bir karar rehberi — check
 
 ---
 
-## Bilmen gereken 10 poker el sıralaması
+## Showdown'da hangi el kazanır? Kısa liste
 
 Showdown'da kazanmak için hangi elin hangisini yendiğini anında bilmen gerekir. İşte **el sıralaması (hand ranking)**.
 
@@ -327,7 +327,7 @@ Elin sırası kafanda oturunca, sıra gerçekten oynamakta.
 - **Bir el sıralaması kopya kâğıdı yap** — on eli bir kâğıda yaz ve sık gördüğün bir yere as.
 - **En küçük bahisle başla** — hataların ne kadar ucuzsa, o kadar hızlı öğrenirsin.
 
-Texas Hold'em otuz dakikada öğrenilir ama bir ömür boyu ustalaşılır. Yine de bugün öğrendiğin temel, masaya oturmak için fazlasıyla yeterli. Tarihçesi ve resmi kuralları için [Texas hold 'em Vikipedi maddesi](https://tr.wikipedia.org/wiki/Texas_hold_%27em) sağlam bir kaynaktır.
+Texas Hold'em otuz dakikada öğrenilir, ama ustalaşmak bir ömür sürer. Yine de bugün öğrendiğin temel, masaya oturmak için fazlasıyla yeterli. Tarihçesi ve resmi kuralları için [Texas hold 'em Vikipedi maddesi](https://tr.wikipedia.org/wiki/Texas_hold_%27em) sağlam bir kaynaktır.
 
 ---
 

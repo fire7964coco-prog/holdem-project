@@ -57,7 +57,7 @@
 
 | 회차 | 내용 | 선행 조건 | 상태 |
 |---|---|---|---|
-| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ⏳ 계획 승인(10-06) · 다음 세션 착수 |
+| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ✅ 10-06 (5) 배포(WORKLOG · MB-182) — 남긴 것 = §4-1 아래 «회차 1 결과» |
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
 | 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ⏳ |
 | 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
@@ -80,6 +80,9 @@
 
 - 🔴 범위 밖(이번에 안 함): 신규 글·도구(회차 2~) · 합법성·`online poker`·`poker oyna` 의도 · 도구 링크 중 tr판이 아직 없는 calculator·hand-chart는 회차 2 뒤에 건다(지금 EN 도구로 걸지 않는다).
 - 판단 갈림이 나오면(예: 실측어를 seoTitle에 넣으면 기존 훅이 죽는 자리) 그 자리만 표로 올리고 나머지는 진행.
+
+**회차 1 결과 (10-06 (5))** — 8편 전부 첫 내부링크 = 필라 · hand-rankings 내부링크 0 → 4 + readnext · 필라 FAQ `###` → Q./A.(FAQ 스키마 0 → 13문항) · 실측어 흡수(필라 seoTitle «Poker nasıl oynanır?» · «Poker nedir?» H2 · hand-rankings «Poker elleri nelerdir?» 직답 · showdown «Split pot nedir?» H2) · game-order H1·tags에서 필라 헤드텀 반납 · 렌즈 + 아스트라 병렬(1·2차) → **아스트라가 EN-먼저 규칙 정정 미전파 11자리 발견**(all-in 5 · betting 3 · game-order 3 · 필라 2-4 법칙·팟 분배) → EN 문면대로 채택.
+- 🪶 남긴 것(자동 착수 금지): ① **«pas» 용어 갈림** — betting-actions는 check(«bedavaya pas»), 나머지·용어집은 fold. 터키 앱 관습(Pas=check?) 확인 뒤 용어집 결정 → 일괄 ② tr 꼬리 드리프트 나머지(EN 문안·GEO 개선분 · `check:drift --tail`) ③ tournament-vs-cash «fiş»(18회) vs 클러스터 «çip» ④ 필라 FAQ «$0,01/$0,02 실제 돈 홈게임» 권유 — JA MA-299·ID MA-331 선례(«돈 안 거는 게임»)와 같은 판단 필요 ⑤ 화면 점검: `/tr/blog` 허브 hreflang 없음(`lib/intl-blog-index.tsx:21` · 25로케일 공통) · `/tournaments` x-default 없음(`lib/tournaments-hreflang.ts`) — 색인 차단 원인은 아님(본문·robots·canonical 정상) ⑦ 🔴 **규칙급 정정이 꼬리 로케일에 안 간 실례** — 드리프트 정책(«§13급만 25로케일»)과 달리 all-in·민레이즈·muck·2-4 법칙 정정이 tr에 없었다 → 다른 꼬리 로케일(hi·vi·ms·fr·it…)도 같은 자리가 낡았을 가능성. 판정·전파는 사장님 지시로 ⑥ kicker 검색어 소유는 실제로 hand-rankings(표·FAQ)가 갖고 showdown은 위임 — §3 표 갱신은 tiebreak 신규(회차 3) 때.
 
 ## 5. 지킬 것
 

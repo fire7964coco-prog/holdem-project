@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cash game'de fişler gerçek parayı temsil eder ve blind'lar genellikle sabittir. Turnuvada fişler turnuva hayatındır; blind'lar yükselir ve kazanç, bitirdiğin sıraya bağlıdır.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-06-11",
+  updated: "2026-10-06",
   hideSummaryImageSlot: true,
   readTime: "16 dk",
   emoji: "🏆",
@@ -29,7 +29,7 @@ Neredeyse her yeni Hold'em oyuncusu bir noktada aynı soruyu sorar:
 
 *"==Cash game== mi oynayayım, yoksa ==turnuvalara== mı gireyim?"*
 
-Dışarıdan bakınca aynı oyun gibi görünür. Yine iki kapalı kart alırsın, masaya beş ortak kart açılır ve preflop'tan river'a kadar dört bahis turu oynanır. Ama stratejik olarak neredeyse iki ayrı dünyadır. Cash game'de fişlerin paradır. Turnuvada fişlerin turnuva hayatındır.
+Dışarıdan bakınca aynı oyun gibi görünür — [Texas Hold'em kuralları](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") birebir aynıdır. Yine iki kapalı kart alırsın, masaya beş ortak kart açılır ve preflop'tan river'a kadar dört bahis turu oynanır. Ama stratejik olarak neredeyse iki ayrı dünyadır. Cash game'de fişlerin paradır. Turnuvada fişlerin turnuva hayatındır.
 
 Bu rehber, ==poker turnuvası ile cash game farkını== yeni başlayanların gerçekten ihtiyaç duyduğu şekilde anlatır: fiş değeri, blind yapısı, zaman, varyans, bankroll, ICM, stack derinliği ve hangi formatla başlaman gerektiği.
 
@@ -91,7 +91,7 @@ Toplam fişlerin %10'undan %20'sine çıkarsan para kazanma şansın artar, ama 
 
 ## Sabit blind mı, yükselen blind mı?
 
-$1/$2 cash game'de blind'lar $1/$2 kalır. Bir saat sonra da aynı, üç saat sonra da aynı. Daha iyi spot bekleyebilir, gerekirse yeniden yükleme yapabilir ve deep stack oynamaya devam edebilirsin.
+[Small blind ve big blind](/tr/blog/holdem-blind-meaning) her iki formatta da aynı mantıkla konur; fark, tutarların değişip değişmediğindedir. $1/$2 cash game'de blind'lar $1/$2 kalır. Bir saat sonra da aynı, üç saat sonra da aynı. Daha iyi spot bekleyebilir, gerekirse yeniden yükleme yapabilir ve deep stack oynamaya devam edebilirsin.
 
 Turnuvada blind'lar seviyelere göre yükselir. Başta 100BB olan stack, tek bir el kaybetmeden ilerleyen saatlerde 25BB olabilir. Sonra 12BB'ye düşebilir. Bir noktadan sonra beklemek bile pahalı hale gelir.
 
@@ -154,7 +154,7 @@ Turnuvalarda birçok oyuncu **50-100+ buy-in** kullanır; büyük alanlı MTT'le
 | Küçük Sit & Go | 40-60 buy-in | Ödeme varyansı daha yüksek |
 | Büyük MTT | 100+ buy-in | Uzun cash'siz dönemler normal |
 
-Bankroll sadece para meselesi değildir. Karar kaliteni korur. Under-rolled olduğunda her all-in kişisel gelir ve iyi stratejinin yerini korku alır.
+Bankroll sadece para meselesi değildir. Karar kaliteni korur. Bankroll'un oynadığın limite yetmiyorsa her all-in seni gereğinden fazla gerer ve kararlarını strateji yerine korku yönlendirmeye başlar.
 
 ---
 
@@ -194,9 +194,9 @@ Turnuvalar deep başlar ama çoğu zaman short-stack pokerine dönüşür. 25BB,
 
 ## Yeni başlayan önce hangisini oynamalı?
 
-Çoğu yeni oyuncu için **cash game daha iyi ilk sınıftır**.
+Çoğu yeni oyuncu için **cash game, temelleri öğrenmeye daha elverişlidir**.
 
-Cash game kolay olduğu için değil. Kolay değildir. Ama daha temiz tekrar verir. Blind'lar aynı kalır, stack'ler daha derindir ve call, raise veya value bet kararını ICM, pay jump ve blind baskısıyla aynı anda çözmeden inceleyebilirsin.
+Cash game kolay olduğu için değil. Kolay değildir. Ama benzer koşullarda aynı kararı tekrar tekrar verip hatalarını görmeni sağlar. Blind'lar aynı kalır, stack'ler daha derindir ve call, raise veya value bet kararını ICM, pay jump ve blind baskısıyla aynı anda çözmeden inceleyebilirsin.
 
 Turnuvalar yine de iyidir; özellikle rekabeti seviyor ve varyansı kaldırabiliyorsan. Sadece tek bir deep run'ı tüm stratejinin doğru olduğuna kanıt sanma.
 
@@ -225,9 +225,14 @@ Bir poker odasında ya da yerel etkinlikte oturmadan önce formatı sor. Aynı m
 | Ödül yapısı nasıl? | Bubble ve ICM kararlarını etkiler |
 | Etkinlik genelde ne kadar sürer? | Zaman baskısı hatalarını önler |
 
-Yapıyı açıklayamıyorsan henüz buy-in yapma. Önce sor, sonra oyna.
+Yapıyı açıklayamıyorsan henüz buy-in yapma. Önce sor, sonra oyna. Yakındaki ve büyük serilerin tarihlerini, buy-in'lerini ve yerlerini [poker turnuvaları takvimimizde](/tr/tournaments) topluyoruz.
 
 ---
+
+:::readnext[Okumaya devam et]
+/tr/blog/holdem-all-in-rules | All-in kuralları ve yan potlar | /images/holdem-all-in-rules-hero.webp
+/tr/blog/holdem-blind-meaning | Small blind ve big blind | /images/holdem-blind-meaning-hero.webp
+:::
 
 ## FAQ
 

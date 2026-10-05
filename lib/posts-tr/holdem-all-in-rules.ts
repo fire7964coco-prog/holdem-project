@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em all-in kuralları: yan potlar, yeniden yükseltme ve showdown",
   seoTitle: "All-in gittin ama ne kazanırsın? — All-in ve yan pot kuralları",
   desc: "Tüm çiplerini ortaya sürdün ve krupiye çipleri iki yığına ayırıyor. Texas Hold'em all-in kuralları: table stakes, ana pot, yan pot ve showdown.",
-  tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); büyük stack'lerin fazladan koyduğu çipler dokunamayacağın bir yan pot oluşturur. Tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.",
+  tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-06",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -25,13 +25,13 @@ export const POST: Post = {
   content: `
 Çipin azaldı. Hepsini ortaya sürüyorsun. Arkandaki oyuncu görüyor. Üçüncü bir oyuncu yeniden yükseltiyor. Krupiye çipleri iki yığına ayırmaya başlıyor.
 
-Ve senin ne olduğuna dair hiçbir fikrin yok.
+Ve sen masada neler olduğunu hiç anlamıyorsun.
 
 Ben o masada oturdum. Canlı bir cash oyununda ilk kez all-in gittiğimde hâlâ bir şey kazanıp kazanamayacağımı, diğer oyuncunun yeniden yükseltip yükseltemeyeceğini, hatta hangi çip yığınının benim olduğunu bile bilmiyordum. Kimse anlatmadı.
 
 ==Bu rehber her durumu kapsıyor: ana pot, yan pot, kimin yeniden yükseltebileceği ve showdown sırası.== Krupiye stack'leri saymaya başlayınca donup kalma devri bitti. (Temel bahis akışı hâlâ kafanda oturmadıysa, [yeni başlayanlar için kurallar rehberi](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") her şeyi sıfırdan anlatıyor.)
 
-## Texas Hold'em'de "all-in" ne demek?
+## All-in nedir? Texas Hold'em'de all-in gitmek ne demek?
 
 All-in gitmek, önünde duran tüm çipleri ortaya sürmek demektir. Bir kez sürdükten sonra daha fazla çip ekleyemezsin — ve seni kimse pas geçmeye zorlayamaz.
 
@@ -49,7 +49,7 @@ Temel, **table stakes** kuralıdır: sadece elin başladığında masada olan ç
 
 </div>
 
-==g:All-in olduğun anda kalan tüm ortak kartları görmen garanti altındadır.== Kimse seni blöfle elden düşüremez. Kartların river'a kadar canlı kalır.
+==g:All-in olup call edildiğinde kalan tüm ortak kartları görmen garanti altındadır.== Kimse seni blöfle elden düşüremez. Kartların river'a kadar canlı kalır.
 
 ---
 
@@ -63,13 +63,13 @@ Temel, **table stakes** kuralıdır: sadece elin başladığında masada olan ç
 
 ![Texas Hold'em all-in showdown — K♠ 10♣ 7♦ 4♥ 2♣ board'u ve çiplerin etiketli ana pot ile yan pota ayrılmış hali](/images/holdem-all-in-declare.webp)
 
-==r:Hiçbir şey demeden tek bir çipi öne itme — krupiye onu sadece o çipin değeri kadar sayar, tüm stack'in olarak değil.== Her zaman yüksek sesle "all-in" de ya da tüm stack'ini tek seferde ortaya sür.
+==r:Hiçbir şey demeden tek bir büyük çipi öne itip bunun all-in sayılmasını bekleme — önünde bir bahis varsa krupiye onu call sayar; bahis yoksa yalnızca o çipin değeri kadar bir bahis sayar.== Her zaman yüksek sesle "all-in" de ya da tüm stack'ini tek seferde ortaya sür.
 
 ---
 
-## Poker'de yan potlar nasıl işler? (All-in oyuncu neden sınırlanır)
+## Pokerde yan potlar nasıl işler? (All-in oyuncu neden sınırlanır)
 
-All-in oyuncu, sadece kendi koyduğu miktarı ve potta kalan diğer her oyuncunun gördüğü aynı miktarı kazanabilir. Bunun üzerinde bahis yapılan tüm çipler, o parayı koyan oyunculara özel bir **yan pot** oluşturur.
+All-in oyuncu, sadece kendi koyduğu miktarı ve pota çip koyan diğer her oyuncudan en fazla aynı miktarı kazanabilir — sonradan fold eden oyuncunun koyduğu çipler de buna dahil, çünkü pota giren çip potta kalır. Bunun üzerinde bahis yapılan çipler, o parayı koyan oyunculara özel bir **yan pot** oluşturur — ama yalnızca en az iki oyuncu bu fazlalığı koyduysa. Sınırın üstünde tek bir oyuncu varsa yan pot için yarışacak kimse yoktur; fazlalık karşılanmamış bahis olarak doğrudan ona iade edilir.
 
 ![Texas Hold'em all-in sonrası yan pot — krupiye çipleri ana pot ile yan pota ayırırken A Oyuncusu sınırlanmış durumda](/images/holdem-all-in-side-pot.webp)
 
@@ -119,7 +119,7 @@ Kural şu: ==her yan pot, bir sonraki en küçük stack'e kadarki farkı × onu 
 
 **Kural:** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, o turda zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.
 
-![Poker'de all-in sonrası yeniden yükseltme kuralı — tam bir yükseltmeden az kalan kısa bir all-in, bu yüzden zaten aksiyon almış olan A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
+![Pokerde all-in sonrası yeniden yükseltme kuralı — tam bir yükseltmeden az kalan kısa bir all-in, bu yüzden zaten aksiyon almış olan A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
 
 **Örnek:**
 
@@ -192,9 +192,9 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 
 Bahis kapandığında ve bir oyuncu all-in olduğunda, showdown'da olanlar şöyledir:
 
-1. **Kartlar yüzü açık çevrilir.** Turnuvada bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir; WSOP 2026 B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river herkesçe check geçildiyse button'ın solundaki ilk aktif oyuncu başlar. Ayrıntılar [showdown kurallarında](/tr/blog/holdem-showdown-rules).
+1. **Kartlar yüzü açık çevrilir.** Turnuvada bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir; WSOP 2026 B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river herkesçe check geçildiyse butonun solundaki ilk aktif oyuncu başlar. Ayrıntılar [showdown kurallarında](/tr/blog/holdem-showdown-rules).
 2. **Yan potlar önce dağıtılır.** Krupiye en son oluşturulan yan potu ilk çözer, sonra geriye doğru ana pota kadar ilerler.
-3. **Kartlar konuşur.** En iyi el, hak kazandığı her potu kazanır — oyuncular ne dediklerini söylerse söylesin.
+3. **Kartlar konuşur.** En iyi el, hak kazandığı her potu kazanır — oyuncular ne derse desin.
 4. **Birden fazla kazanan olabilir.** A Oyuncusu ana potu, B Oyuncusu yan potu kazanabilir. Kimse "kendi" potunu kazandı diye her şeyi almaz.
 
 ==g:Bir oyuncu ana potu kazanıp yan potu kaybedebilir. Her iki sonuç da geçerlidir.==
@@ -236,7 +236,7 @@ All-in, masadaki en güçlü hamledir. Rakipleri ya hep ya hiç kararına zorlar
 
 **Q. Big blind'dan az bir miktara all-in gidilebilir mi?**
 
-A. Evet. Big blind'dan az çipin varsa, sıra sana geldiğinde elindeki neyse otomatik olarak onunla all-in olursun. Diğerleri yine tam big blind'ı öder — senin koyduğunu aşan her miktar bir yan pota gider.
+A. Evet. Ödemen gereken blind tüm stack'inden büyükse kalan çiplerini koyar ve onunla all-in olursun (WSOP Live Action Kural 154). Diğerleri yine tam big blind'ı öder — senin koyduğunu aşan miktar aralarında bir yan pot oluşturur ya da fazlalığı tek bir oyuncu koyduysa karşılanmamış bahis olarak ona geri döner.
 
 **Q. All-in'i kazanıp yan potu kaybedersen ne olur?**
 
@@ -248,7 +248,7 @@ A. Turnuvada evet—bir oyuncu all-in olduğunda ve tüm bahis tamamlandığınd
 
 **Q. Poker all-in'inde "run it twice" yapılabilir mi?**
 
-A. Kalan ortak kartları iki kez dağıtıp potu bölmek (run it twice), all-in sonrası iki oyuncu da kabul ederse birçok cash oyununda serbesttir. Turnuvalarda genellikle izin verilmez. Kalan kartlar açılmadan önce anlaşılması gerekir.
+A. Kalan ortak kartları iki kez dağıtıp potu bölmek (run it twice), biri all-in olup bekleyen bahis aksiyonu kalmadığında potta kalan herkes kabul ederse — sadece ikiniz değil — birçok cash oyununda serbesttir (WSOP Live Action Kural 210 ve 211). Turnuvalarda genellikle izin verilmez. Kalan kartlar açılmadan önce anlaşılması gerekir.
 
 **Q. "Table stakes" kuralı tam olarak nedir?**
 

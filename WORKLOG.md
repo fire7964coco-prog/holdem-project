@@ -1,3 +1,14 @@
+## 2026-10-06 (5) — tr 회차 1: 기존 8편 다듬기 (링크 고리 · 실측어 흡수 · 규칙 정정 11자리) (MB-182)
+
+- 계획 = `docs/tr-cluster-plan.md` §4-1(사장님 10-06 승인). 결과·남긴 것 = 같은 문서 «회차 1 결과».
+- 실측: audit:hard tr 8편 🔴 0(전후 동일) · 꼬리 드리프트 7 + 추적불가 1(tournament-vs-cash). 링크 표: hand-rankings 본문 내부링크 **0**·readnext 없음 · tournament-vs-cash 필라 링크 없음 · showdown 첫 링크가 필라 아님 · 필라 FAQ가 «###» 형식이라 **FAQ 스키마 0문항**. 화면(서브 · Playwright 라이브): `/tr/blog`·`/tr/tournaments` robots·canonical·서버 렌더 정상 — 미색인 원인이 화면 쪽은 아님(허브 hreflang 없음은 25로케일 공통 · 범위 밖).
+- 고리: 7편 첫 내부링크 = 필라 · hand-rankings 링크 4 + readnext · tournament-vs-cash 필라·blind·`/tr/tournaments` 링크 + readnext · 필라 → showdown 인라인.
+- 흡수: 필라 seoTitle «Poker nasıl oynanır? Texas Hold'em kuralları, sıfırdan» · desc · H2 «Poker nedir?»(직답) · «Poker kuralları» · «Poker nasıl oynanır?» · FAQ 13(스키마 13문항 확인) / hand-rankings seoTitle «… Poker elleri sıralaması» · «Poker elleri nelerdir?» + Kısa cevap · «Poker kart sıralaması» · «10 poker kombinasyonu» · FAQ +2 / showdown «Split pot nedir?» H2 + FAQ / all-in «All-in nedir?» / game-order H1·tags 필라 헤드텀 반납 · «el sıralaması» H2 → «Showdown'da hangi el kazanır?».
+- 검수(1·2차 Claude 렌즈 + 아스트라 병렬 · 사장님 10-06 tr 한정 지시): Claude = §13 결함 0 · 교열 다수 채택(hile → kopya kâğıdı · cadde → sokak · 격어미 · 아포스트로피 · «Aynı iki çift» 모호). **아스트라 = EN에서 이미 고친 규칙이 tr에 미전파된 11자리** — all-in(콜된 뒤에만 보드 보장 · 말없이 낸 큰 칩 = 콜 · 폴드한 칩도 팟 · 단독 초과분 반환 · BB 미만 스택 = Rule 154 한정 · run it twice 전원 동의) · betting(민레이즈 «마지막 full» + $10→$14→$24 · all-in은 열린 액션만 · string bet FAQ 본문 모순) · game-order(토너먼트 올인 muck 예외 TDA 16·18-B · All-in «Her zaman» · 99/AJo 분류가 EN과 반대) · 필라(×4 조건 + 9÷47≈%19 · 팟 분배 문장). 전부 EN 문면대로 채택. all-in tldr도 EN(MA-331 누적 예외 포함)으로 맞춤. 2차: 아스트라 «문제없음» · Claude 경미 6 반영.
+- 스탬프: updated 10-06(8편) · masterUpdated는 손대지 않음(전수 동기화 아님).
+- 게이트: audit:hard tr 🔴 0 · FAQ 스키마 소스=산출물 · 빌드 exit 0(74 + 629).
+- 🪶 남긴 것 = 계획 문서 «회차 1 결과» ①~⑦ — 🔴 ⑦ 규칙급 정정이 다른 꼬리 로케일에도 안 갔을 가능성.
+
 ## 2026-10-06 (4) — 우편함 MA-331 판정·이행: all-in tldr 누적 예외(EN → 9로케일) + ID game-order 소액 권유 교체 (MB-181)
 
 - 판정: 요청 1·2 전부 채택(기각 0). ① EN all-in tldr «짧은 올인은 재오픈 안 함»에 TDA 47-A 누적 예외(«several short all-ins add up to at least a full raise over what that player has already put in») — 본문 Advanced Case·Mistake 2는 이미 명시, tldr만 누락. ar·de·es·id·ja·ms·pt·zh·zh-hant 전파(ja tldr도 누락 상태였다). ② ID game-order «Mulai dari taruhan paling kecil» → «Mulai dari permainan tanpa taruhan uang»(JA MA-299 선례). 대기열 = `en-first-queue` §2-Y.

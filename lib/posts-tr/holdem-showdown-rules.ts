@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in olmayan bir turnuva showdown'ında river'ın son agresörü önce gösterir; river check geçildiyse butonun solundaki ilk aktif oyuncu başlar. Bir oyuncu all-in olduğunda, tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen açılır. River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir. Cash oyununda gösterme ve muck ev kuralına bağlıdır.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -29,7 +29,7 @@ Kimse kıpırdamıyor.
 
 Krupiye bir ona bir sana bakıyor. Masadaki diğerleri iç çekiyor.
 
-==İşte bu kilitlenme neredeyse her canlı masada yaşanır== — çünkü çoğu yeni oyuncu kartı gerçekte kimin önce açması gerektiğini hiç öğrenmemiştir. Bu rehber showdown'ın tüm hallerini kapsıyor: normal eller, check'le geçilen river'lar, all-in'ler ve slow roll yaparsan neden seansın geri kalanında ters ters bakılacağın.
+==İşte bu kilitlenme neredeyse her canlı masada yaşanır== — çünkü çoğu yeni oyuncu kartı gerçekte kimin önce açması gerektiğini hiç öğrenmemiştir. Oyunun temellerinde hâlâ yeniysen önce [Texas Hold'em kurallarına](/tr/blog/texas-holdem-rules-for-beginners) göz at. Bu rehber showdown'ın tüm hallerini kapsıyor: normal eller, check'le geçilen river'lar, all-in'ler ve slow roll yaparsan seansın geri kalanında sana neden ters ters bakılacağı.
 
 ## Showdown'da kartları önce kim göstermek zorunda?
 
@@ -40,7 +40,7 @@ Kural, son bahis turunun nasıl bittiğine bağlı (buraya kadar gelen sokak sok
 | Son sokaktaki aksiyon | Önce kim gösterir |
 |--------------------|-----------------|
 | All-in olmayan turnuvada river'da biri bahis yaptı ya da yükseltti | ==Son bahis yapan ya da yükselten oyuncu== önce gösterir |
-| River'da herkes check dedi | Buton'un solundaki ilk aktif oyuncu önce gösterir |
+| River'da herkes check dedi | Butonun solundaki ilk aktif oyuncu önce gösterir |
 | Önceki bir sokakta all-in (river'da bahis yok) | Turnuvada, tüm bahis aksiyonu tamamlanınca kalan bütün eller ortak kartlar açılmadan hemen gösterilir; cash oyununda ev kuralı geçerlidir |
 
 </div>
@@ -67,9 +67,9 @@ Pratik kural: ==All-in olmayan turnuvada river'ın son agresörü önce gösteri
 
 ## River'da herkes check dediğinde showdown sırası
 
-River'da kimse bahis yapmadıysa (herkes check dedi), showdown **buton'un solundaki ilk aktif oyuncudan** başlar ve saat yönünde ilerler.
+River'da kimse bahis yapmadıysa (herkes check dedi), showdown **butonun solundaki ilk aktif oyuncudan** başlar ve saat yönünde ilerler.
 
-Örnek: Buton, small blind ve big blind river'ı görüyor. SB check, BB check, Buton check. Showdown SB'den başlar (buton'un solundaki ilk aktif oyuncu). SB gösterebilir ya da muck yapabilir. Sonra BB. En son da buton.
+Örnek: Buton, small blind ve big blind river'ı görüyor. SB check, BB check, Buton check. Showdown SB'den başlar (butonun solundaki ilk aktif oyuncu). SB gösterebilir ya da muck yapabilir. Sonra BB. En son da buton.
 
 ==g:Bu durumda buton en son gösterir== — ki bu aslında bir avantaj. Buton, kartlarını çevirip çevirmeyeceğine karar vermeden önce birinin kendisini yenip yenmediğini görebilir.
 
@@ -91,7 +91,7 @@ Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında
 
 Bir ince nokta: **yan pot**, ana pottan önce dağıtılır. Bu **ödeme sırası**, turnuvadaki açılışı geciktirmez: tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen gösterilir (TDA 2024 Kural 16 ve eki). Yan potta bahis sürüyorsa bu açma zorunluluğu henüz başlamaz. WSOP cash oyununda ise B149, yan pot oyuncularının yalnızca ana potta olanlardan önce göstermesini ister.
 
-Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak; bölünen potlar içinse split pot ve chop kurallarına.
+Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak; bölünen potlar içinse aşağıdaki split pot bölümüne.
 
 ---
 
@@ -106,6 +106,14 @@ Bir oyuncu elini yanlış okuyup "çiftim var" derse ama aslında kenti varsa �
 Kaybettiğini sanıp kazanan bir eli göstermeden muck edersen ==r:potu kaybedebilirsin==. Yüzü kapalı duran kartlar otomatik olarak ölü değildir: %100 tanımlanabilir ve geri alınabilir durumdaysa masaya açılabilir. Krupiye eli muck'a ittiğinde ya da el artık tanımlanıp geri alınamadığında ölür (TDA 2024 Kural 14). Yine de buna güvenme. Kaybettiğinden %100 emin değilsen, muck etmeden önce krupiyenin elini okumasına izin ver.
 
 Gerçek durum: elinde **J♥ 10♥** var, board **Q♥ 9♥ 8♥ 2♣ 5♦**. Kız yüksek bir straight flush'ın var (kupa Q-J-10-9-8). Rakip **K♣ Q♦** gösteriyor (bir kız çifti). Farkla kazanırsın. Sırf onun kızını gördün diye muck yapma.
+
+---
+
+## Split pot nedir? Kicker kazananı nasıl belirler?
+
+**Split pot, showdown'da iki ya da daha fazla oyuncunun en iyi beş kartı değer olarak birebir aynı olduğunda potun eşit bölünmesidir.** Önce kombinasyon (el sıralamasındaki yeri), sonra eli oluşturan kartlar, sonra kicker (yan kart) karşılaştırılır; ancak beşi de aynıysa pot bölünür. Türlerin (maça, kupa, karo, sinek) değeri yoktur, yani "benim floşum maça" diye beraberlik bozulmaz.
+
+Kicker'ın hangi ellerde sayıldığını ve beraberlik sırasını [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberindeki tabloda tek tek gösterdim.
 
 ---
 
@@ -183,6 +191,10 @@ A. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığı
 **Q. Pokerde "cards speak" ne demek?**
 
 A. Cards speak, oyuncunun ilanına değil masaya açılan kartlara göre en iyi elin kazandığı anlamına gelir; yanlış ilan edilen el de kazanabilir. Yüzü kapalı duran kartlar otomatik olarak ölü değildir: %100 tanımlanabilir ve geri alınabilir durumdaysa masaya açılabilir. Krupiye eli muck'a ittiğinde ya da el artık tanımlanıp geri alınamadığında ölür (TDA 2024 Kural 14). Elini doğrulamadan muck etme.
+
+**Q. Split pot nedir?**
+
+A. İki ya da daha fazla oyuncunun en iyi beş kartı değer olarak aynıysa pot eşit bölünür. Önce kombinasyon, sonra eli oluşturan kartlar, sonra kicker karşılaştırılır; türler (maça, kupa…) beraberlik bozmaz.
 
 **Q. Showdown olmadan kazanırsan kartlarını göstermek zorunda mısın?**
 
