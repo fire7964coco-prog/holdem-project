@@ -1,0 +1,69 @@
+# tr(튀르키예) 클러스터 완결 계획 — 2026-10-05 사장님 결정
+
+> 정본. 핸드오프에는 링크만 둔다. 회차가 끝나면 아래 표의 상태 칸만 고친다.
+
+## 0. 결정 (사장님 10-05 축어 요지)
+
+- «시간이 날 때마다 한 언어씩, 클러스터 완결로 늘린다 — 클러스터를 줄이는 한이 있더라도.» 첫 언어 = **tr**.
+- «전체 구도는 메인 언어랑 똑같이 하고 포스팅 숫자만 좀 줄이자.» → 필라 축·GTO·도구·대회 = 메인과 같은 판, 축마다 글 수만 줄인다.
+- «차트나 계산기 같은 도구가 메인에서 성과가 좋아 카니발 안 걸리게 몰아주고 있다 → tr도 차트·계산기·토너먼트 페이지를 같이 넣자, 신경 써서.»
+- «GTO도 넣어야지.» → `settled-decisions` §1-E의 «ar·vi·tr 시리즈는 사장님 판단 전 착수 금지»가 tr에 한해 해제됨(편수는 아래 4편).
+
+## 1. 검색 수요 실측 (DataForSEO · 튀르키예 2792 · tr · 2026-10-05 · 월 검색량)
+
+| 묶음 | 검색어 |
+|---|---|
+| 하는 법·입문 | poker nasıl oynanır **5.400** · texas holdem 1.600 · poker oyunu 1.600 · poker kuralları 590 · poker nedir 320 · holdem 260 · texas holdem kuralları 20 |
+| 족보 | poker elleri **2.900** · poker el sıralaması 880 · poker kart sıralaması 880 · poker kartları 880 · poker sıralaması 390 · poker kombinasyonları 260 · poker el değerleri 30 |
+| 용어 | poker terimleri 260 · blind nedir 70 · all in nedir 10 · poker kicker 10 · split pot 10 |
+| 대회 | poker turnuvası 110 · merit poker 90 · kıbrıs poker 30 · kıbrıs poker turnuvası 30 |
+| 전략·GTO | poker taktikleri 50 · gto poker 30 · poker blöf 10 · poker solver 10 · poker olasılıkları 10 · poker hesaplayıcı 10 |
+| ⛔ 대상 아님 | poker 12.100(헤드텀) · poker oyna 2.400 · online poker 590 (돈 걸고 하기 의도 — 튀르키예 도박 규제 · 합법성 축 열지 않음) · omaha poker 110 |
+| 데이터 없음 | pot oranı · poker stratejisi · poker başlangıç elleri · poker pozisyonları · 3bet nedir · poker rake nedir · floş kent hangisi büyük |
+
+→ 수요는 입문·족보에 몰려 있다. 전략·GTO는 거의 0 — GTO 4편은 §1-E대로 «검색 유입 글»이 아니라 «솔버 증거 자료»로 둔다.
+
+## 2. 구도 — 메인과 같은 축, 글 수만 축소 (목표 21편 + 도구 3 + 대회 보드)
+
+| 축 | 메인(예: ms) | tr 글 | 상태 |
+|---|---|---|---|
+| 규칙 | 8+ | rules-for-beginners(필라) · game-order · betting-actions · blind-meaning · all-in-rules · showdown-rules · **tiebreak-rules**(키커·스플릿 흡수) | 6 있음 · 1 신규 |
+| 족보 | 3+ | hand-rankings(필라) | 있음 |
+| 확률·오즈 | 7+ | **pot-odds**(필라) · **probability** | 2 신규 |
+| 전략 | 10+ | **strategy**(필라) · **positions** · **starting-hands-chart** · **continuation-bet**(솔버 표 흡수 자리) | 4 신규 |
+| 대회 | 4+ | tournament-vs-cash-game · **holdem-tournament**(필라) | 1 있음 · 1 신규 |
+| 용어 | 1 | **glossary** | 1 신규 |
+| GTO 솔버 | 13 | **donk-bet-strategy · monotone-board-strategy · broadway-board-strategy · a-high-board-cbet** | 4 신규 |
+| 도구 | calculator · solver · tournaments | **`/tr/calculator`** · **`/tr/hand-chart`** · **`/tr/solver`** · `/tr/tournaments`(있음) | 3 신규 |
+
+- GTO 4편 선정 근거: ko 45일 노출 상위 3(donk 218 · monotone 58 · broadway 30 — §1-E 실측) + C벳 기본형 1.
+- slug는 전부 EN과 같다(hreflang). 번역 = EN 마스터 → 현지 재저작(`translate-pillar` 스킬 · `docs/translation-terms-tr.md`).
+
+## 3. 카니발 소유표 — 검색어 하나 = 페이지 하나
+
+| 검색어 | 주인 | 나머지 페이지의 역할 |
+|---|---|---|
+| poker nasıl oynanır · kuralları · texas holdem | `rules-for-beginners` | game-order는 «el sırası» 롱테일만 |
+| poker elleri · el/kart sıralaması · kombinasyonları · kartları | `hand-rankings` | 다른 글은 앵커 링크만 · 족보 도구 페이지 만들지 않음 |
+| başlangıç elleri (차트) | **메인 정본을 따른다**: EN은 `starting-hands-chart` 글이 소유 + `/en/hand-chart` noindex·follow · ko는 08-08에 도구 해제(글이 못 이겨서). tr은 신설이라 **글 소유 + 도구 noindex·follow**로 시작하고 4주 뒤 GSC로 재판정 (`seo-tool-vs-blog-cannibalization` 절차) |
+| pot oranı · hesaplama | `pot-odds` 글 = 개념 · `/tr/calculator` = 계산 의도 | 서로 제목 헤드텀을 나누지 않는다 |
+| poker turnuvası · kıbrıs poker · merit poker | `/tr/tournaments` | `holdem-tournament` 글 = «토너먼트 구조·전략» 의도 |
+| gto poker · poker solver | `/tr/solver` 랜딩 | GTO 4편은 남의 헤드텀을 빌려 붙이지 않는다(§1-E) |
+
+## 4. 회차 (한 세션 한 회차 · 끝나면 상태 칸 갱신)
+
+| 회차 | 내용 | 선행 조건 | 상태 |
+|---|---|---|---|
+| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) | — | ⏳ |
+| 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(EN 446행 클라이언트를 사전 구조로 바꾼 뒤 tr 사전 — tr이 두 번째 로케일) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
+| 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament | 회차 2(계산기 링크 자리) | ⏳ |
+| 4 | 신규 전략 4편: strategy · positions · starting-hands-chart · continuation-bet | 회차 2(차트 링크 자리) | ⏳ |
+| 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔴 **솔버 앱에 터키어 UI가 없다**(12개 언어: ko en ja es pt de zh zh-hant fr id ms hi) → 솔버 측에 tr 추가 요청(MB) 회신 전엔 랜딩 CTA가 영어 앱으로 떨어진다. 요청 발송 여부 = 사장님 판단 | ⏳ |
+| 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
+
+## 5. 지킬 것
+
+- 숫자 터키식(`1.326` · `2,5`) · 족보 터키어 고유명(Kent · Floş · Kare) · 특수문자(ı İ ş ğ ç ö ü) — `docs/translation-terms-tr.md`.
+- 합법성 축을 열지 않는다 · `/ranking`(온라인 포커 사이트 순위) tr판은 만들지 않는다.
+- 솔버 프리플랍 차트는 «계산값이 아니라 공개 자료 합의 레인지»(`docs/solver-factsheet.md`) — 차트 글·도구에 «솔버 계산»이라 쓰지 않는다.
+- 다음 언어를 열기 전에 tr 색인율 재측정: `node scripts/gsc-index-audit.mjs --prefix /tr/`.

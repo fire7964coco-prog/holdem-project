@@ -1,3 +1,8 @@
+## 2026-10-05 (8) — GSC 색인 전수 · tr 클러스터 완결 계획 확정
+
+- GSC URL Inspection 전수(사이트맵 822): 색인 582 · 미색인 240(발견 152 · 모름 46 · 복제 23 · 크롤X 19). 복제 19건은 구글 canonical이 외부 도박 사이트(747live.bet 등) — 08월 EN 2편과 같은 유형, 그 2편은 재색인 요청 뒤 정상화 확인. 언어별 색인율 ko 94 · en 88 · ja 85 · 메인 63~72 · hi·tr 36~38 · it·he 13~25%. 목록 = `docs/gsc-tracking/not-indexed-2026-10-05.md`.
+- 사장님 결정: 한 언어씩 클러스터 완결(글 수는 줄여도 됨) · 첫 언어 tr · 메인과 같은 구도(GTO·도구·대회 포함). 튀르키예 검색량 40어 실측(DataForSEO). 계획 정본 = `docs/tr-cluster-plan.md`. 메모리 multilang-expansion 갱신.
+
 ## 2026-10-05 (7) — `holdem-masters-9` 대회 보드 카드 신설 · MA-317·319 ACK (MB-172)
 
 - `lib/tournaments.ts`: 9회 카드(8회 형식 · 10/2~12/13 · 야자수 서울센터 · 초대권 전용 · note «총상금 24억 GTD (WPL 메인 20억 + 미니 메인 4억) · DAY1 30회 10/11~12/9 · FINAL 12/13» · blogLink `/blog/holdem-masters-7th-guide` · source = 제9회 공식 페이지 · verifiedAt 10-05). 값 정본 = 10-05 (6) 글 갱신분(같은 날 공식 페이지 + 가이드 PDF 판독).
