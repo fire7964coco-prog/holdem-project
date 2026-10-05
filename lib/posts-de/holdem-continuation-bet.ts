@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippt es zu fast immer), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 Min.",
   emoji: "🔥",
@@ -129,7 +129,7 @@ Setz echte Zahlen dahinter. Sagen wir, der Pot ist ==$30== am Flop:
 - Eine **Ein-Drittel-Pot**-C-Bet sind ==$10== – deine Range-Bet für trockene Boards.
 - Eine **Zwei-Drittel-Pot**-C-Bet sind ==$20== – deine Größe für wet Boards, um die Draws abzukassieren.
 
-In **Turnieren** tendiere eine Spur kleiner: Die kleine Size bleibt ein Drittel, die große ist aber häufiger **halber Pot** als zwei Drittel – weil dein Stack kostbar ist und du nicht nachladen kannst. Was auch immer du wählst, binde die Größe ans Board, nicht an Gewohnheit.
+In **Turnieren** tendiere eine Spur kleiner: Die kleine Size bleibt ein Drittel, die große ist aber häufiger **halber Pot** als zwei Drittel – weil dein Stack kostbar ist – im Freezeout kannst du nicht nachladen, und selbst ein Re-Entry kostet ein neues Buy-in. Was auch immer du wählst, binde die Größe ans Board, nicht an Gewohnheit.
 
 Wie weit trägt die Faustregel „groß auf wet Boards“ wirklich? Gibt man dem Poker-Solver auf Q♥T♥7♠ im 3-Bet-Pot zwei Sizes, legt er [98,4% seiner Range in die Zwei-Drittel-Bet](/de/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-de.webp") – und der Grund ist ein Preis, den du ausrechnen kannst, kein Gefühl.
 
@@ -223,7 +223,7 @@ Jeder dieser Fehler führt zur selben Wurzel zurück: **auf Autopilot c-betten, 
 
 **Q. Was ist eine Continuation Bet im Poker?**
 
-A. Eine Continuation Bet, oder C-Bet, ist ein Einsatz am Flop von dem Spieler, der vor dem Flop geraist hat. Du „setzt“ die Stärke fort, die du preflop gezeigt hast. Du musst den Flop nicht getroffen haben, um zu c-betten – weil eine Hand den Flop etwa zwei Drittel der Zeit verfehlt, gewinnt eine gut gewählte C-Bet oft den Pot, wenn dein Gegner nichts hat.
+A. Eine Continuation Bet, oder C-Bet, ist ein Einsatz am Flop vom letzten Spieler, der vor dem Flop geraist hat – dem Preflop-Aggressor, wozu auch ein 3-Better zählt. Du „setzt“ die Stärke fort, die du preflop gezeigt hast. Du musst den Flop nicht getroffen haben, um zu c-betten – weil eine Hand den Flop etwa zwei Drittel der Zeit verfehlt, gewinnt eine gut gewählte C-Bet oft den Pot, wenn dein Gegner nichts hat.
 
 **Q. Warum heißt es Continuation Bet?**
 

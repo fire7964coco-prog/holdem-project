@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — sebuah limp tak bisa memenangkan blind tanpa perlawanan, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan turnamen short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -91,7 +91,7 @@ Di sinilah dogma-nya berlebihan. Limping *tidak* selalu salah — jawaban jujur 
 
 | Spot | Kenapa limping wajar di sini |
 |:---|:---|
-| **Menyelesaikan small blind (pot tanpa raise)** | Belum ada yang raise, uang Anda sudah setengah masuk dan hanya big blind yang beraksi di belakang Anda — aturan raise-atau-fold runtuh saat ada diskon. Menghadapi raise, ceritanya lain: secara default, 3-bet atau fold. |
+| **Menyelesaikan small blind (pot tanpa raise)** | Belum ada yang raise, uang Anda biasanya sudah setengah masuk dan hanya big blind yang beraksi di belakang Anda — aturan raise-atau-fold runtuh saat ada diskon. Menghadapi raise, ceritanya lain: secara default, 3-bet atau fold. |
 | **Over-limping tangan spekulatif** | Di belakang limper lain dengan pair kecil atau suited connector, Anda mendapat odds bagus untuk flop monster di pot multiway. |
 | **Live taruhan kecil yang sangat pasif** | Jika lawan hanya raise dengan monster dan tak pernah menghukum limper, Anda bisa melihat flop murah dengan tangan spekulatif dan merealisasikan equity. |
 | **Posisi akhir dengan stack pendek (turnamen)** | Di stack turnamen yang pendek — jauh di bawah 100bb sebuah cash game standar — solver modern mengembangkan range open-limping button, di mana raise sedikit untungnya dan limping memangkas biaya Anda. |
@@ -161,11 +161,11 @@ A. Limp-reraise adalah saat Anda limp, lawan raise di belakang Anda, lalu Anda m
 
 **Q. Haruskah Anda pernah open-limp preflop?**
 
-A. Nyaris tak pernah di cash game normal. Jika sebuah tangan cukup bagus untuk dimainkan, ia biasanya cukup bagus untuk di-raise; jika tidak, fold. Pengecualian langka adalah permainan live yang sangat pasif di mana Anda tak akan dihukum, dan beberapa spot turnamen di posisi akhir dengan stack pendek yang diidentifikasi solver. Sebagai default, raise atau fold dan lewati open-limp.
+A. Nyaris tak pernah di cash game normal. Jika sebuah tangan cukup bagus untuk dimainkan, ia biasanya cukup bagus untuk di-raise; jika tidak, fold. Pengecualian langka adalah menyelesaikan small blind di pot yang belum di-raise, permainan live yang sangat pasif di mana Anda tak akan dihukum, dan beberapa spot turnamen di posisi akhir dengan stack pendek yang diidentifikasi solver. Sebagai default, raise atau fold dan lewati open-limp.
 
 **Q. Apakah boleh limp di small blind?**
 
-A. Sering, ya — di pot yang belum di-raise, menyelesaikan small blind adalah salah satu limp yang paling bisa dibela. Uang Anda sudah setengah masuk, hanya big blind yang bisa beraksi di belakang Anda, dan Anda mendapat harga, jadi logika raise-atau-fold biasa tak berlaku dengan cara yang sama. Apakah Anda menyelesaikan blind, raise, atau fold tergantung pada tangan Anda dan kecenderungan big blind, tapi limping di sini jauh lebih kecil kekeliruannya dibanding open-limp di posisi lain. (Menghadapi raise, default small blind adalah 3-bet atau fold — hampir tak pernah flat-call.)
+A. Sering, ya — di pot yang belum di-raise, menyelesaikan small blind adalah salah satu limp yang paling bisa dibela. Uang Anda biasanya sudah setengah masuk, hanya big blind yang bisa beraksi di belakang Anda, dan Anda mendapat harga, jadi logika raise-atau-fold biasa tak berlaku dengan cara yang sama. Apakah Anda menyelesaikan blind, raise, atau fold tergantung pada tangan Anda dan kecenderungan big blind, tapi limping di sini jauh lebih kecil kekeliruannya dibanding open-limp di posisi lain. (Menghadapi raise, default small blind adalah 3-bet atau fold — hampir tak pernah flat-call.)
 
 **Q. Apa perbedaan antara limper dan calling station?**
 

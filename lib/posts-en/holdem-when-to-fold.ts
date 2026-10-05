@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "When to Fold in Poker: The Skill That Quietly Wins the Most",
   seoTitle: "Why You Can't Lay Down a Good Hand — When to Fold in Poker",
   desc: "Folding is the most underrated winning skill. When to fold preflop and on every street, the pot-odds threshold, and how to lay down a big hand without tilting.",
-  tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
+  tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips over time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 The most expensive hand of my first year wasn't one I lost — it was one I refused to lose. I flopped top two pair, a passive old-timer raised me on a paired river, and every alarm bell said *he has a full house.* I called anyway. I told myself I "couldn't fold after putting that much in." He tabled the boat, and I drove home replaying the exact moment I knew and called regardless. That night I learned the truth every winning player eventually accepts: ==the fold is the most powerful move in poker, and the hardest to make.==
 
-**Folding — mucking your hand instead of calling or raising — is the single most under-rated skill in the game.** It has no highlight reel and no dopamine hit, but a fold's worst-case outcome is exactly *zero*, while a bad call loses money every single time. This is the complete guide to *when to fold*: before the flop, on every street after it, the exact math that decides close spots, how to lay down a genuinely good hand, and how to beat the psychology that makes folding feel impossible. It's the discipline that anchors a winning [Texas Hold'em strategy](/en/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp").
+**Folding — mucking your hand instead of calling or raising — is the single most under-rated skill in the game.** It has no highlight reel and no dopamine hit, but a fold's worst-case outcome is exactly *zero*, while a bad call loses money over time — not on every hand, but in the long run. This is the complete guide to *when to fold*: before the flop, on every street after it, the exact math that decides close spots, how to lay down a genuinely good hand, and how to beat the psychology that makes folding feel impossible. It's the discipline that anchors a winning [Texas Hold'em strategy](/en/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp").
 
 ---
 
@@ -128,7 +128,7 @@ Here's the secret the strategy charts don't tell you: **most bad calls aren't re
 
 **Sunk cost — "I've already put so much in."** This is the big one. The chips you bet earlier are *no longer yours* — they belong to the pot. Every decision is independent, judged only on what happens *from here.* "I'm pot-committed because I've invested so much" is the sunk-cost fallacy in a poker chair. (Real pot-commitment exists, but it comes from the *current* price relative to a big pot — not from what you spent three streets ago.)
 
-**Ego — "I have to know if he's bluffing."** Calling to satisfy curiosity, or to avoid the sting of *maybe* being bluffed, is paying the maximum for information you don't need. You will get bluffed sometimes. That's fine — a fold button that's *never* wrong means you're folding far too much and getting bluffed out of pot after pot. Manage your decisions, not your ego.
+**Ego — "I have to know if he's bluffing."** Calling to satisfy curiosity, or to avoid the sting of *maybe* being bluffed, is paying the maximum for information you don't need. You will get bluffed sometimes. That's fine — if your folds are *never* wrong, you aren't folding enough: you're paying off value bet after value bet just to make sure nobody ever bluffs you. Manage your decisions, not your ego.
 
 **Fear — folding the best hand to a scare card.** The opposite failure: so afraid of being beaten that you release winners. The fix for both poles is the same phrase — ==fold out of math, not out of fear.== Fold because the price is wrong or the story is value, not because you "have a bad feeling."
 
@@ -196,7 +196,7 @@ Notice both poles are here: fold *more* against the value-heavy players who neve
 
 **Q. When should you fold in poker?**
 
-A. Fold whenever calling or raising loses money in the long run: when your hand is too weak preflop, when you miss the flop and face aggression on a board that fits your opponent's range, when a draw doesn't meet its pot odds, and when a value-heavy line beats the hand you hold. A fold's worst outcome is zero, so folding a losing spot always beats calling it.
+A. Fold whenever calling or raising loses money in the long run: when your hand is too weak preflop, when you miss the flop and face aggression on a board that fits your opponent's range, when a draw doesn't meet its pot odds, and when a value-heavy line beats the hand you hold. A fold's worst outcome is zero, so when calling loses money at the price you're getting, folding always beats it — being behind alone isn't enough, because a good enough price can make calling a hand that's usually behind correct.
 
 **Q. Do you lose money when you fold in poker?**
 
@@ -228,7 +228,7 @@ A. When it's genuinely close and you're unsure, folding is usually the better de
 
 **Q. How do you know when to fold to a river raise?**
 
-A. Treat a river raise, especially from a passive player, as value until proven otherwise. Most players do not have enough bluffs in their raising range on the river, so a big raise usually means a hand that beats one pair or two pair. Unless the opponent is aggressive and capable of bluff-raising, folding all but your strongest hands is correct.
+A. Treat a river raise, especially from a passive player, as value until proven otherwise. Most players do not have enough bluffs in their raising range on the river, so a big raise usually means a hand that beats one pair or two pair. Unless the opponent is aggressive and capable of bluff-raising, folding all but your strongest hands is usually correct — the price you get only rescues a call if their range holds enough bluffs to clear it.
 
 **Q. Is folding a sign of weakness?**
 

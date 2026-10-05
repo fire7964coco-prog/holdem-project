@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limp ialah masuk pot preflop dengan sekadar call big blind, bukan raise atau fold. Open-limp hampir selalu kesilapan: ia tak boleh menang blinds tanpa lawan, anda hilang inisiatif, dan pemain bagus menghukumnya. Pengecualiannya: complete small blind, over-limp di belakang limper lain, dan beberapa spot live atau short stack tournament.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -91,7 +91,7 @@ Di sinilah dogma pergi terlalu jauh. Limp *bukan* selalu salah. Jawapan yang juj
 
 | Spot | Mengapa limp OK di sini |
 |:---|:---|
-| **Complete small blind (pot tanpa raise)** | Tiada sesiapa raise, separuh wang anda sudah masuk dan hanya big blind bertindak selepas anda — peraturan raise-atau-fold tidak lagi terpakai sepenuhnya kerana anda mendapat diskaun. Jika berdepan raise, soalannya lain: 3-bet atau fold. |
+| **Complete small blind (pot tanpa raise)** | Tiada sesiapa raise, lazimnya separuh wang anda sudah masuk dan hanya big blind bertindak selepas anda — peraturan raise-atau-fold tidak lagi terpakai sepenuhnya kerana anda mendapat diskaun. Jika berdepan raise, soalannya lain: 3-bet atau fold. |
 | **Over-limp dengan tangan spekulatif** | Di belakang limper lain dengan pair kecil atau suited connector, anda mendapat odds yang bagus untuk flop tangan monster dalam pot multiway. |
 | **Live stakes rendah yang sangat pasif** | Jika lawan hanya raise dengan tangan monster dan tidak pernah menghukum limper, anda boleh melihat flop murah dengan tangan spekulatif dan merealisasikan equity. |
 | **Posisi lewat dengan short stack (tournament)** | Pada stack tournament yang pendek — jauh di bawah 100bb dalam cash game standard — solver moden membentuk range open-limp dari button, di mana raise tidak banyak memberi keuntungan dan limp mengurangkan kos anda. |
@@ -161,11 +161,11 @@ A. Limp-reraise ialah apabila anda limp, lawan raise di belakang anda, dan anda 
 
 **Q. Patutkah anda open-limp preflop?**
 
-A. Hampir tidak pernah dalam cash game biasa. Jika sesuatu tangan cukup bagus untuk dimainkan, biasanya ia cukup bagus untuk raise; jika tidak, fold. Pengecualian yang jarang ialah permainan live yang sangat pasif di mana anda tidak akan dihukum, dan beberapa spot posisi lewat dengan short stack dalam tournament yang dikenal pasti oleh solver. Sebagai lalai, raise atau fold dan elakkan open-limp.
+A. Hampir tidak pernah dalam cash game biasa. Jika sesuatu tangan cukup bagus untuk dimainkan, biasanya ia cukup bagus untuk raise; jika tidak, fold. Pengecualian yang jarang ialah complete small blind dalam pot tanpa raise, permainan live yang sangat pasif di mana anda tidak akan dihukum, dan beberapa spot posisi lewat dengan short stack dalam tournament yang dikenal pasti oleh solver. Sebagai lalai, raise atau fold dan elakkan open-limp.
 
 **Q. Adakah OK untuk limp dari small blind?**
 
-A. Selalunya, ya — dalam pot tanpa raise, complete small blind ialah antara limp yang paling boleh dipertahankan. Separuh wang anda sudah masuk, hanya big blind boleh bertindak selepas anda, dan anda mendapat harga yang baik, jadi logik biasa raise-atau-fold tidak terpakai dengan cara yang sama. Sama ada anda complete, raise atau fold bergantung pada tangan anda dan kecenderungan big blind, tetapi limp di sini jauh daripada kesilapan open-limp dari posisi lain. (Jika berdepan raise, small blind patut 3-bet atau fold dan bukan flat call.)
+A. Selalunya, ya — dalam pot tanpa raise, complete small blind ialah antara limp yang paling boleh dipertahankan. Lazimnya separuh wang anda sudah masuk, hanya big blind boleh bertindak selepas anda, dan anda mendapat harga yang baik, jadi logik biasa raise-atau-fold tidak terpakai dengan cara yang sama. Sama ada anda complete, raise atau fold bergantung pada tangan anda dan kecenderungan big blind, tetapi limp di sini jauh daripada kesilapan open-limp dari posisi lain. (Jika berdepan raise, small blind patut 3-bet atau fold dan bukan flat call.)
 
 **Q. Apakah beza limper dan calling station?**
 

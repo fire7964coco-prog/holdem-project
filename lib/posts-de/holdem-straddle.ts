@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -132,7 +132,7 @@ Selbst im Cashgame ist es optional und hausregelabhängig: Manche Rooms erlauben
 > **Kurze Antwort**
 > Für fast jeden: nein. Aus Sicht des Erwartungswerts ist Straddeln ein Verlustgeschäft – du committest Geld ohne Information, spielst einen aufgeblähten Pot und zahlst möglicherweise mehr Rake. Vertretbar ist es an ==loose-passiven Tischen==, in Runden, in denen alle unter denselben Bedingungen reihum straddeln, oder schlicht zum Spaß. Als verlässlichen Weg zu mehr Gewinn solltest du es nicht betrachten.
 
-Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard sagt es unverblümt. Drei Gründe:
+Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard ist unverblümt: Geld zu setzen, ohne deine Karten anzusehen, ist „ein massiver Nachteil“, und selbst ein Straddle vom Button ist „trotzdem fast immer ein Verlustgeschäft“. Drei Gründe, warum es dich Geld kostet – die ersten beiden zeigt die Solver-Arbeit, der dritte ist der Anteil des Hauses:
 
 :::card
 🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht. Er halbiert außerdem deine effektive Stacktiefe: Bei €1/€2 sind €200 genau 100 Big Blinds, mit einem €4-Straddle spielt derselbe Stack wie 50

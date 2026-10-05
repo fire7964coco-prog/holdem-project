@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – ein Limp kann die Blinds nicht kampflos gewinnen, du gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live-Spots und Short-Stack-Turniersituationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🚶",
@@ -97,7 +97,7 @@ Hier geht das Dogma zu weit. Limpen ist *nicht* immer falsch – die ehrliche, m
 
 | Situation | Warum Limpen hier okay ist |
 |:---|:---|
-| **Den Small Blind completen (ungeraister Pot)** | Niemand hat geraist, dein Geld ist schon halb drin und nur der Big Blind handelt hinter dir – der Preis ist so günstig, dass die Raise-oder-Fold-Regel hier nicht greift. Gegen einen Raise ist es eine andere Frage: standardmäßig 3-betten oder folden. |
+| **Den Small Blind completen (ungeraister Pot)** | Niemand hat geraist, dein Geld ist meist schon halb drin und nur der Big Blind handelt hinter dir – der Preis ist so günstig, dass die Raise-oder-Fold-Regel hier nicht greift. Gegen einen Raise ist es eine andere Frage: standardmäßig 3-betten oder folden. |
 | **Spekulative Hände over-limpen** | Hinter anderen Limpern mit kleinen Paaren oder Suited Connectors bekommst du starke Odds, im Multiway-Pot ein Monster zu floppen. |
 | **Sehr passives Live-Low-Stakes** | Wenn Gegner nur Monster raisen und Limper nie bestrafen, kannst du billige Flops mit spekulativen Händen sehen und Equity realisieren. |
 | **Short-stacked späte Position (Turniere)** | Bei kurzen Turnier-Stacks – deutlich unter den 100bb eines normalen Cashgames – entwickeln moderne Solver Button-Open-Limp-Ranges, wo ein Raise wenig bringt und Limpen deine Kosten senkt. |
@@ -170,11 +170,11 @@ A. Selten – gegen aufmerksame Gegner fast nie. Der Zug selbst ist schnell erkl
 
 **Q. Solltest du preflop jemals open-limpen?**
 
-A. Fast nie in einem normalen Cashgame. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde. Die seltenen Ausnahmen sind extrem passive Live-Spiele, in denen du nicht bestraft wirst, und einige short-stacked Late-Position-Situationen im Turnier, die Solver identifiziert haben. Als Standard: raisen oder folden und den Open-Limp weglassen.
+A. Fast nie in einem normalen Cashgame. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde. Die seltenen Ausnahmen sind der Complete aus dem Small Blind in einem ungeraisten Pot, extrem passive Live-Spiele, in denen du nicht bestraft wirst, und einige short-stacked Late-Position-Situationen im Turnier, die Solver identifiziert haben. Als Standard: raisen oder folden und den Open-Limp weglassen.
 
 **Q. Ist es okay, im Small Blind zu limpen?**
 
-A. Oft ja – in einem ungeraisten Pot ist der Complete aus dem Small Blind einer der vertretbarsten Limps. Dein Geld ist schon halb drin, nur der Big Blind kann hinter dir handeln, und du bekommst einen Preis, sodass die übliche Raise-oder-Fold-Logik nicht auf dieselbe Weise gilt. Ob du completest, raist oder foldest, hängt von deiner Hand und den Tendenzen des Big Blinds ab, aber Limpen ist hier weit vom Fehler entfernt, der Open-Limpen in anderen Positionen ist. (Gegen einen Raise ist der Standard des Small Blinds 3-betten oder folden – fast nie flat callen.)
+A. Oft ja – in einem ungeraisten Pot ist der Complete aus dem Small Blind einer der vertretbarsten Limps. Dein Geld ist meist schon halb drin, nur der Big Blind kann hinter dir handeln, und du bekommst einen Preis, sodass die übliche Raise-oder-Fold-Logik nicht auf dieselbe Weise gilt. Ob du completest, raist oder foldest, hängt von deiner Hand und den Tendenzen des Big Blinds ab, aber Limpen ist hier weit vom Fehler entfernt, der Open-Limpen in anderen Positionen ist. (Gegen einen Raise ist der Standard des Small Blinds 3-betten oder folden – fast nie flat callen.)
 
 **Q. Was ist der Unterschied zwischen einem Limper und einer Calling Station?**
 

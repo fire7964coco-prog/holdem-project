@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Quando foldar no poker: a habilidade que mais vence em silêncio",
   seoTitle: "Por que você não larga uma boa mão — quando foldar no poker",
   desc: "Foldar é a habilidade vencedora mais subestimada. Quando foldar no pré-flop e em cada street, o limite das pot odds e como largar uma mão grande.",
-  tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
+  tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas no longo prazo. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 A mão mais cara do meu primeiro ano não foi uma que perdi — foi uma que me recusei a perder. Flopei top two pair, um velhinho passivo me deu raise num river que pareou, e todos os alarmes gritavam *ele tem um full house.* Paguei mesmo assim. Falei pra mim mesmo que "não dava pra foldar depois de botar tanto ali". Ele virou o boat, e dirigi pra casa reprisando o exato momento em que eu sabia e paguei do mesmo jeito. Naquela noite aprendi a verdade que todo jogador vencedor acaba aceitando: ==o fold é a jogada mais poderosa do poker, e a mais difícil de fazer.==
 
-**Foldar — jogar sua mão no muck em vez de pagar ou aumentar — é de longe a habilidade mais subestimada do jogo.** Não tem melhor momento em vídeo nem pico de dopamina, mas o pior resultado possível de um fold é exatamente *zero*, enquanto um call ruim perde dinheiro toda vez. Este é o guia completo de *quando foldar*: antes do flop, em cada street depois dele, a matemática exata que decide os spots apertados, como largar uma mão genuinamente boa e como vencer a psicologia que faz foldar parecer impossível. É a disciplina que ancora uma [estratégia de Texas Hold'em](/pt/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") vencedora.
+**Foldar — jogar sua mão no muck em vez de pagar ou aumentar — é de longe a habilidade mais subestimada do jogo.** Não tem melhor momento em vídeo nem pico de dopamina, mas o pior resultado possível de um fold é exatamente *zero*, enquanto um call ruim perde dinheiro com o tempo — não em toda mão, mas no longo prazo. Este é o guia completo de *quando foldar*: antes do flop, em cada street depois dele, a matemática exata que decide os spots apertados, como largar uma mão genuinamente boa e como vencer a psicologia que faz foldar parecer impossível. É a disciplina que ancora uma [estratégia de Texas Hold'em](/pt/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") vencedora.
 
 ---
 
@@ -129,7 +129,7 @@ Aqui está o segredo que as tabelas de estratégia não te contam: **a maioria d
 
 **Sunk cost — "Eu já botei tanto ali."** Este é o principal. As fichas que você apostou antes *não são mais suas* — pertencem ao pote. Toda decisão é independente, julgada apenas pelo que acontece *daqui pra frente.* "Estou pot-committed porque investi tanto" é a falácia do sunk cost numa cadeira de poker. (Pot-commitment real existe, mas vem do preço *atual* em relação a um pote grande — não do que você gastou três streets atrás.)
 
-**Ego — "Eu tenho que saber se ele está blefando."** Pagar para satisfazer a curiosidade, ou para evitar a dor de *talvez* estar sendo blefado, é pagar o máximo por uma informação de que você não precisa. Você vai ser blefado às vezes. Tudo bem — um botão de fold que *nunca* está errado significa que você folda demais e entrega pote atrás de pote para os blefes. Gerencie suas decisões, não seu ego.
+**Ego — "Eu tenho que saber se ele está blefando."** Pagar para satisfazer a curiosidade, ou para evitar a dor de *talvez* estar sendo blefado, é pagar o máximo por uma informação de que você não precisa. Você vai ser blefado às vezes. Tudo bem — se os seus folds *nunca* estão errados, você não está foldando o suficiente: está pagando value bet atrás de value bet só para garantir que ninguém nunca te blefe. Gerencie suas decisões, não seu ego.
 
 **Medo — foldar a melhor mão para uma carta assustadora.** A falha oposta: com tanto medo de estar batido que você larga vencedoras. A correção para os dois polos é a mesma frase — ==folde por matemática, não por medo.== Folde porque o preço está errado ou a história é valor, não porque você "tem um mau pressentimento".
 
@@ -197,7 +197,7 @@ Repare que os dois polos estão aqui: folde *mais* contra os jogadores value-hea
 
 **Q. Quando você deve foldar no poker?**
 
-A. Folde sempre que pagar ou aumentar perde dinheiro no longo prazo: quando sua mão é fraca demais no pré-flop, quando você erra o flop e enfrenta agressão numa mesa que encaixa no range do adversário, quando um projeto não bate suas pot odds e quando uma linha value-heavy vence a mão que você tem. O pior resultado de um fold é zero, então foldar um spot perdedor sempre vence pagá-lo.
+A. Folde sempre que pagar ou aumentar perde dinheiro no longo prazo: quando sua mão é fraca demais no pré-flop, quando você erra o flop e enfrenta agressão numa mesa que encaixa no range do adversário, quando um projeto não bate suas pot odds e quando uma linha value-heavy vence a mão que você tem. O pior resultado de um fold é zero, então, quando pagar perde dinheiro pelo preço que você está recebendo, foldar sempre vence o call — estar atrás não basta, porque um preço bom o suficiente pode tornar correto pagar com uma mão que geralmente está atrás.
 
 **Q. Você perde dinheiro quando folda no poker?**
 
@@ -229,7 +229,7 @@ A. Quando está genuinamente apertado e você está em dúvida, foldar costuma s
 
 **Q. Como saber quando foldar para um raise no river?**
 
-A. Trate um raise no river, especialmente de um jogador passivo, como valor até que se prove o contrário. A maioria dos jogadores não tem blefes suficientes no seu range de raise no river, então um raise grande geralmente significa uma mão que vence um par ou dois pares. A menos que o adversário seja agressivo e capaz de bluff-raise, foldar todas menos suas mãos mais fortes é o correto.
+A. Trate um raise no river, especialmente de um jogador passivo, como valor até que se prove o contrário. A maioria dos jogadores não tem blefes suficientes no seu range de raise no river, então um raise grande geralmente significa uma mão que vence um par ou dois pares. A menos que o adversário seja agressivo e capaz de bluff-raise, foldar todas menos suas mãos mais fortes geralmente é o correto — o preço que você recebe só salva um call se o range dele tiver blefes suficientes para cobri-lo.
 
 **Q. Foldar é sinal de fraqueza?**
 

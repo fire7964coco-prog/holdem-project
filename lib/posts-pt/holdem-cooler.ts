@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que quase nunca daria para foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. No sentido estrito usado neste guia, você estava atrás quando o dinheiro entrou e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do poker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -29,7 +29,7 @@ Um **cooler** é uma mão em que você faz uma mão fortíssima, perde um pote g
 Atrás ao entrar | O teste estrito: onde você estava quando o dinheiro entrou
 Sem suckout | No sentido estrito, o vencedor liderou do começo ao fim
 Forte demais para foldar | Por que você pagou
-Não foi culpa sua | A única derrota que não deve te dar tilt
+Não foi culpa sua | Uma das derrotas que não devem te dar tilt
 :::
 
 ---
@@ -121,7 +121,7 @@ Agora a verdade incômoda, e a razão pela qual essa palavra importa para a sua 
 Existe um teste limpo, e jogadores honestos o usam depois de toda derrota grande:
 
 :::pull
-Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora — ranges, preço e profundidade de stack, não só o feeling? Se **não**, você jogou mal — e isso é um leak para corrigir, não azar. Se **sim**, foi azar: um cooler se você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado.
+Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora — ranges, preço e profundidade de stack, não só o feeling? Se **não**, você jogou mal — e isso é um leak para corrigir, não azar. Se **sim** — e a jogada ainda se sustenta quando você de fato faz a conta com esses ranges e esse preço (muitos calls errados parecem certos toda vez) —, foi azar: em sentido estrito, um cooler se duas mãos fortes colidiram e você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado. Um projeto pago com o preço certo que não entrou não é nenhum dos dois — é só variância.
 :::
 
 Um cooler de verdade significa que você jogou corretamente com uma mão forte e esbarrou numa maior. No momento em que seu "cooler" envolve um call do qual você não tinha certeza, um blefe do qual você se convenceu, ou um fold que deveria ter feito, ele deixa de ser um cooler e vira um **erro disfarçado.** Ser impiedosamente honesto sobre qual é qual — em vez de arquivar toda derrota como "azar" — é exatamente o que separa os jogadores que evoluem dos que continuam [fish](/pt/blog/holdem-fish) para sempre.
@@ -156,7 +156,7 @@ A. Timing e suckouts, pelo menos no sentido estrito. Num cooler você estava atr
 
 **Q. Cooler é azar ou jogada ruim?**
 
-A. Um cooler de verdade é puro azar — você jogou corretamente e mesmo assim perdeu porque duas mãos premium colidiram. O detalhe é que "cooler" é frequentemente mal usado para desculpar um erro real. O teste: você faria a mesma jogada de novo com a mesma informação — ranges, preço e profundidade de stack, não só o feeling? Se não, foi uma jogada ruim da qual você pode aprender. Se sim, foi azar — em sentido estrito, um cooler se você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado.
+A. Um cooler de verdade é puro azar — você jogou corretamente e mesmo assim perdeu porque duas mãos premium colidiram. O detalhe é que "cooler" é frequentemente mal usado para desculpar um erro real. O teste: você faria a mesma jogada de novo com a mesma informação — ranges, preço e profundidade de stack, não só o feeling? Se não, foi uma jogada ruim da qual você pode aprender. Se sim — e a jogada se sustenta nos ranges e no preço, não só na convicção —, foi azar: em sentido estrito, um cooler se duas mãos fortes colidiram e você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado.
 
 **Q. Setup é a mesma coisa que cooler?**
 
@@ -192,7 +192,7 @@ A. Não exatamente — a palavra tem um sentido mais antigo no mundo do jogo. No
 
 1. **Cooler é uma derrota inevitável com uma mão forte demais para foldar** — no sentido estrito, você estava atrás quando o dinheiro entrou e nenhum suckout aconteceu. De um jeito ou de outro, um bom jogador no seu lugar também teria perdido um pote grande.
 2. **Na definição estrita, é o oposto de um bad beat.** Um bad beat é estar na frente e ser superado; um cooler é entrar atrás, com só uma pequena chance de virar. Saber qual aconteceu te diz se há algo para corrigir.
-3. **Seja honesto sobre a diferença entre um cooler e um erro.** Se você faria a jogada de novo com a mesma informação, dê de ombros. Se não faria, não era um cooler — era um leak disfarçado.
+3. **Seja honesto sobre a diferença entre um cooler e um erro.** Se a jogada ainda se sustenta nos ranges e no preço com a mesma informação — não só na convicção —, dê de ombros. Se não se sustenta, não era um cooler — era um leak disfarçado.
 
 Os melhores jogadores perdem exatamente tantos coolers quanto todo mundo; eles só não deixam que causem dano extra. Registre como variância, proteja suas próximas decisões do tilt, e volte a superar a [mesa](/pt/blog/holdem-fish). O baralho esfria todo mundo eventualmente — vencer é o que você faz em todas as mãos que não são coolers.
 

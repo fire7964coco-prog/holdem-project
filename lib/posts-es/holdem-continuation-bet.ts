@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -125,7 +125,7 @@ Ponle números reales. Digamos que el bote es de ==$30== en el flop:
 
 ¿Quieres ver hasta dónde llega de verdad esa marcha de "grande en boards húmedos"? A un solver con dos tamaños disponibles en Q♥T♥7♠ en un bote de 3-bet le sale [el 98.4% del rango en la apuesta de dos tercios](/es/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — y el motivo es un precio que se calcula, no una sensación.
 
-En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue siendo un tercio, pero el grande es más a menudo **medio bote** que dos tercios, porque tu stack es precioso y no puedes recargar. Elijas lo que elijas, ata el tamaño al board, no a la costumbre.
+En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue siendo un tercio, pero el grande es más a menudo **medio bote** que dos tercios, porque tu stack es precioso — en un freezeout no puedes recargar, e incluso un re-entry cuesta un nuevo buy-in. Elijas lo que elijas, ata el tamaño al board, no a la costumbre.
 
 ---
 
@@ -214,7 +214,7 @@ Cada uno de estos se remonta a la misma raíz: **cbetear en piloto automático e
 
 **Q. ¿Qué es una apuesta de continuación en el póker?**
 
-A. Una apuesta de continuación, o c-bet, es una apuesta hecha en el flop por el jugador que subió antes del flop. Estás "continuando" para representar la fuerza que mostraste en el preflop. No necesitas haber ligado el flop para cbetear — como una mano falla el flop cerca de dos tercios de las veces, una c-bet bien elegida gana el bote a menudo cuando tu rival no tiene nada.
+A. Una apuesta de continuación, o c-bet, es una apuesta hecha en el flop por el último jugador que subió antes del flop — el agresor del preflop, lo que incluye a quien hizo 3-bet. Estás "continuando" para representar la fuerza que mostraste en el preflop. No necesitas haber ligado el flop para cbetear — como una mano falla el flop cerca de dos tercios de las veces, una c-bet bien elegida gana el bote a menudo cuando tu rival no tiene nada.
 
 **Q. ¿Por qué se llama apuesta de continuación?**
 
@@ -258,7 +258,7 @@ A. Una apuesta de valor es una apuesta hecha con una mano fuerte esperando que t
 
 **Q. ¿De qué tamaño debe ser una c-bet? (cuánto apostar en una cbet)**
 
-A. El tamaño lo marca la textura del board, con dos marchas que cubren casi todo. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote: si el bote es de $30, cbeteas $10. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más ($20 sobre ese bote de $30) — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos el tamaño grande se encoge — medio bote más a menudo que dos tercios — mientras que el pequeño sigue siendo un tercio, porque no puedes recargar el stack.
+A. El tamaño lo marca la textura del board, con dos marchas que cubren casi todo. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote: si el bote es de $30, cbeteas $10. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más ($20 sobre ese bote de $30) — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos el tamaño grande se encoge — medio bote más a menudo que dos tercios — mientras que el pequeño sigue siendo un tercio, porque en un freezeout no puedes recargar el stack, e incluso un re-entry cuesta un nuevo buy-in.
 
 **Q. ¿Cuál es un buen porcentaje de c-bet?**
 

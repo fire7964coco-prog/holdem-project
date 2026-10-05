@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler en sentido estricto, ibas por delante cuando entró el dinero; la baraja simplemente te traicionó al final. Duele, pero un goteo constante de bad beats suele significar que los rivales meten dinero por detrás — justo la partida en la que quieres estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -185,7 +185,7 @@ A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando un
 
 **Q. ¿Cuál es el peor bad beat de la historia del póker?**
 
-A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Ligó un trío de ases en el flop, Justin Phillips hizo una escalera al as en el turn, y luego el as que quedaba en la baraja completó su póker en el river y, con esa misma carta, convirtió la escalera de Phillips en una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
+A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Ligó un trío de ases en el flop, Justin Phillips hizo una escalera al as en el turn, y luego el as que quedaba en la baraja completó su póker en el river y, con esa misma carta, convirtió la escalera de Phillips en una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo más cruel que puede llegar a ser la suerte en el póker. Según el criterio estricto de esta guía no es un bad beat limpio (el gran all-in del river entró con Phillips ya por delante), pero el póker lo recuerda como el más famoso de todos.
 
 **Q. ¿Los bad beats son más frecuentes online?**
 

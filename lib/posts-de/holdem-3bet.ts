@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -89,7 +89,7 @@ Eine gewinnende 3-Bet-Range hat **zwei klar getrennte Teile**, und den Split zu 
 
 </div>
 
-Hier die Blocker-Logik in einem Satz: **Ein Ass zu halten macht es mathematisch weniger wahrscheinlich, dass dein Gegner Asse oder Ass-König hält**, also ist A5s ein weit besserer Bluff als etwa A9o – das blockt dieselben Premiums, spielt aber schrecklich, wenn es gecallt wird, und macht nur schwache Paare. Backup-Equity zählt, weil dein Gegner nicht jedes Mal foldet; du willst einen Bluff, der den Pot trotzdem gewinnen kann. Deshalb hat A5s ≈ 30% Equity gegen eine QQ+/AK-Call-Range, während Offsuit-Müll weit darunter liegt. Das ist dieselbe [Starthand](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")-Disziplin wie immer – nur aufs Re-Raisen angewendet.
+Hier die Blocker-Logik in einem Satz: **Ein Ass zu halten macht es mathematisch weniger wahrscheinlich, dass dein Gegner Asse oder Ass-König hält**, also ist A5s ein weit besserer Bluff als etwa A9o – das blockt dieselben Premiums, spielt aber schrecklich, wenn es gecallt wird, und macht meist nur schwache Paare. Backup-Equity zählt, weil dein Gegner nicht jedes Mal foldet; du willst einen Bluff, der den Pot trotzdem gewinnen kann. Deshalb hat A5s ≈ 30% Equity gegen eine QQ+/AK-Call-Range, während Offsuit-Müll weit darunter liegt. Das ist dieselbe [Starthand](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")-Disziplin wie immer – nur aufs Re-Raisen angewendet.
 
 ---
 

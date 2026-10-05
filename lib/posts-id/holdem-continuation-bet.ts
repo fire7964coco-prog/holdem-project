@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
-  masterUpdated: "2026-10-04",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 mnt",
   emoji: "🔥",
@@ -125,7 +125,7 @@ Beri angka nyata. Misalkan pot-nya ==$30== di flop:
 - C-bet **sepertiga pot** adalah ==$10== — range bet board kering Anda.
 - C-bet **dua pertiga pot** adalah ==$20== — sizing board basah Anda untuk membebani draw.
 
-Di **turnamen**, condong sedikit lebih kecil: ukuran kecilnya tetap sepertiga, tapi ukuran besarnya lebih sering **setengah pot** ketimbang dua pertiga, karena stack Anda berharga dan tak bisa reload. Apa pun yang Anda pilih, ikat ukurannya pada board, bukan pada kebiasaan.
+Di **turnamen**, condong sedikit lebih kecil: ukuran kecilnya tetap sepertiga, tapi ukuran besarnya lebih sering **setengah pot** ketimbang dua pertiga, karena stack Anda berharga — di freezeout Anda tak bisa reload, dan re-entry pun butuh buy-in baru. Apa pun yang Anda pilih, ikat ukurannya pada board, bukan pada kebiasaan.
 
 Untuk melihat alasan memilih ukuran tertentu, buka contoh Q♥T♥7♠ dalam pot 3-bet. Pada konfigurasi itu, BB sebagai 3-bettor memakai [bet dua pertiga pot dengan 98,4% range-nya](/id/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-id.webp"). Pembahasannya membandingkan harga call untuk draw dan menjelaskan mengapa bet kecil memberi lawan kesempatan lebih murah.
 
@@ -216,7 +216,7 @@ Semuanya berpangkal pada akar yang sama: **c-bet autopilot alih-alih membaca boa
 
 **Q. Apa itu continuation bet di poker?**
 
-A. Continuation bet, atau c-bet, adalah taruhan yang dibuat di flop oleh pemain yang raise sebelum flop. Anda "melanjutkan" merepresentasikan kekuatan yang Anda tunjukkan preflop. Anda tak perlu mengenai flop untuk c-bet — karena sebuah tangan meleset di flop sekitar dua pertiga dari waktu, c-bet yang dipilih baik sering memenangkan pot saat lawan Anda tak punya apa-apa.
+A. Continuation bet, atau c-bet, adalah taruhan yang dibuat di flop oleh pemain terakhir yang raise sebelum flop — agresor preflop, termasuk pemain yang melakukan 3-bet. Anda "melanjutkan" merepresentasikan kekuatan yang Anda tunjukkan preflop. Anda tak perlu mengenai flop untuk c-bet — karena sebuah tangan meleset di flop sekitar dua pertiga dari waktu, c-bet yang dipilih baik sering memenangkan pot saat lawan Anda tak punya apa-apa.
 
 **Q. Kenapa disebut continuation bet?**
 

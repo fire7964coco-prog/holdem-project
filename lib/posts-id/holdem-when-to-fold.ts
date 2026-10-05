@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Kapan Harus Fold di Poker: Skill yang Diam-diam Paling Banyak Menang",
   seoTitle: "Kenapa Anda Tak Bisa Melepas Tangan Bagus — Kapan Harus Fold",
   desc: "Fold adalah skill menang paling diremehkan. Kapan fold preflop dan di tiap street, ambang pot odds, cara melepas tangan besar, dan mengalahkan dorongan call.",
-  tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
+  tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip dalam jangka panjang. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Tangan paling mahal di tahun pertama saya bukanlah yang saya kalahkan — melainkan yang saya menolak untuk kalah. Saya flop top two pair, seorang veteran pasif me-raise saya di river yang berpasangan, dan setiap alarm berbunyi *dia punya full house.* Saya tetap call. Saya bilang pada diri sendiri saya "tak bisa fold setelah memasukkan sebanyak itu." Ia membuka boat-nya, dan saya berkendara pulang sambil memutar ulang momen persis saat saya tahu namun tetap call. Malam itu saya belajar kebenaran yang akhirnya diterima setiap pemain pemenang: ==fold adalah langkah paling ampuh di poker, dan yang paling sulit dilakukan.==
 
-**Fold — membuang tangan Anda alih-alih call atau raise — adalah satu skill paling diremehkan dalam permainan.** Ia tak punya highlight reel dan tak memberi dopamin, tapi hasil terburuk sebuah fold adalah tepat *nol*, sementara call buruk kehilangan uang setiap kali. Ini adalah panduan lengkap tentang *kapan harus fold*: sebelum flop, di setiap street sesudahnya, matematika persis yang menentukan spot yang mepet, cara melepas tangan yang benar-benar bagus, dan cara mengalahkan psikologi yang membuat fold terasa mustahil. Inilah disiplin yang menjadi jangkar sebuah [strategi Texas Hold'em](/id/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang.
+**Fold — membuang tangan Anda alih-alih call atau raise — adalah satu skill paling diremehkan dalam permainan.** Ia tak punya highlight reel dan tak memberi dopamin, tapi hasil terburuk sebuah fold adalah tepat *nol*, sementara call buruk kehilangan uang seiring waktu — bukan di setiap tangan, tapi dalam jangka panjang. Ini adalah panduan lengkap tentang *kapan harus fold*: sebelum flop, di setiap street sesudahnya, matematika persis yang menentukan spot yang mepet, cara melepas tangan yang benar-benar bagus, dan cara mengalahkan psikologi yang membuat fold terasa mustahil. Inilah disiplin yang menjadi jangkar sebuah [strategi Texas Hold'em](/id/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang.
 
 ---
 
@@ -129,7 +129,7 @@ Inilah rahasia yang tak diberitahukan chart strategi: **kebanyakan call buruk bu
 
 **Sunk cost — "Saya sudah memasukkan begitu banyak."** Ini yang paling besar. Chip yang Anda taruhkan sebelumnya *bukan lagi milik Anda* — semuanya milik pot. Setiap keputusan bersifat independen, dinilai hanya dari apa yang terjadi *sejak sekarang.* "Saya pot-committed karena sudah berinvestasi begitu banyak" adalah sunk-cost fallacy di kursi poker. (Pot-commitment nyata memang ada, tapi ia datang dari harga *saat ini* relatif terhadap pot besar — bukan dari apa yang Anda keluarkan tiga street lalu.)
 
-**Ego — "Saya harus tahu apakah dia bluff."** Call untuk memuaskan rasa penasaran, atau untuk menghindari perih *mungkin* di-bluff, adalah membayar maksimal untuk informasi yang tak Anda butuhkan. Anda akan di-bluff kadang-kadang. Tak apa — tombol fold yang *tak pernah* salah berarti Anda fold terlalu banyak dan menyerahkan pot demi pot ke bluff lawan. Kelola keputusan Anda, bukan ego Anda.
+**Ego — "Saya harus tahu apakah dia bluff."** Call untuk memuaskan rasa penasaran, atau untuk menghindari perih *mungkin* di-bluff, adalah membayar maksimal untuk informasi yang tak Anda butuhkan. Anda akan di-bluff kadang-kadang. Tak apa — jika fold Anda *tak pernah* salah, Anda justru kurang fold: Anda terus membayar value bet demi value bet hanya supaya tak ada yang pernah mem-bluff Anda. Kelola keputusan Anda, bukan ego Anda.
 
 **Rasa takut — fold tangan terbaik ke scare card.** Kegagalan sebaliknya: begitu takut kalah sehingga melepas tangan pemenang. Perbaikan untuk kedua kutub sama — frasa yang sama — ==fold karena matematika, bukan karena rasa takut.== Fold karena harganya salah atau ceritanya value, bukan karena Anda "punya firasat buruk."
 
@@ -197,7 +197,7 @@ Perhatikan kedua kutub ada di sini: fold *lebih banyak* melawan pemain value-hea
 
 **Q. Kapan Anda harus fold di poker?**
 
-A. Fold kapan pun call atau raise kehilangan uang dalam jangka panjang: saat tangan Anda terlalu lemah preflop, saat Anda meleset di flop dan menghadapi agresi di board yang cocok dengan range lawan, saat sebuah draw tak memenuhi pot odds-nya, dan saat line value-heavy mengalahkan tangan yang Anda pegang. Hasil terburuk sebuah fold adalah nol, jadi fold sebuah spot kalah selalu lebih baik daripada call.
+A. Fold kapan pun call atau raise kehilangan uang dalam jangka panjang: saat tangan Anda terlalu lemah preflop, saat Anda meleset di flop dan menghadapi agresi di board yang cocok dengan range lawan, saat sebuah draw tak memenuhi pot odds-nya, dan saat line value-heavy mengalahkan tangan yang Anda pegang. Hasil terburuk sebuah fold adalah nol, jadi saat call merugi pada harga yang Anda dapat, fold selalu lebih baik daripada call — sekadar tertinggal belum cukup, karena harga yang cukup bagus bisa membuat call dengan tangan yang biasanya tertinggal menjadi benar.
 
 **Q. Apakah Anda kehilangan uang saat fold di poker?**
 
@@ -229,7 +229,7 @@ A. Saat spotnya benar-benar mepet dan Anda tak yakin, fold biasanya default yang
 
 **Q. Bagaimana Anda tahu kapan fold ke river raise?**
 
-A. Perlakukan river raise, terutama dari pemain pasif, sebagai value hingga terbukti sebaliknya. Kebanyakan pemain tak punya cukup bluff dalam range raise mereka di river, jadi raise besar biasanya berarti tangan yang mengalahkan one pair atau two pair. Kecuali lawan agresif dan mampu bluff-raise, fold semua kecuali tangan terkuat Anda adalah benar.
+A. Perlakukan river raise, terutama dari pemain pasif, sebagai value hingga terbukti sebaliknya. Kebanyakan pemain tak punya cukup bluff dalam range raise mereka di river, jadi raise besar biasanya berarti tangan yang mengalahkan one pair atau two pair. Kecuali lawan agresif dan mampu bluff-raise, fold semua kecuali tangan terkuat Anda biasanya benar — harga yang Anda dapat hanya menyelamatkan sebuah call jika range lawan berisi cukup bluff untuk menutupinya.
 
 **Q. Apakah fold tanda kelemahan?**
 

@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -124,7 +124,7 @@ Put real numbers on it. Say the pot is ==$30== on the flop:
 - A **one-third-pot** c-bet is ==$10== — your dry-board range bet.
 - A **two-thirds-pot** c-bet is ==$20== — your wet-board, charge-the-draws size.
 
-In **tournaments**, lean a touch smaller: the small size stays a third, but the big size is more often **half pot** than two-thirds, because your stack is precious and you can't reload. Whatever you choose, tie the size to the board, not to habit.
+In **tournaments**, lean a touch smaller: the small size stays a third, but the big size is more often **half pot** than two-thirds, because your stack is precious — in a freezeout you can't reload, and even a re-entry costs a fresh buy-in. Whatever you choose, tie the size to the board, not to habit.
 
 Want to see how far the "big on wet boards" gear actually goes? A solver handed two sizes on Q♥T♥7♠ in a three-bet pot puts [98.4% of its range into the two-thirds bet](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — and the reason is a price you can calculate, not a feel.
 
@@ -215,7 +215,7 @@ Every one of these traces back to the same root: **c-betting on autopilot instea
 
 **Q. What is a continuation bet in poker?**
 
-A. A continuation bet, or c-bet, is a bet made on the flop by the player who raised before the flop. You're "continuing" to represent the strength you showed preflop. You don't need to have hit the flop to c-bet — because a hand misses the flop about two-thirds of the time, a well-chosen c-bet often wins the pot when your opponent has nothing.
+A. A continuation bet, or c-bet, is a bet made on the flop by the last player to raise before the flop — the preflop aggressor, which includes a player who 3-bet. You're "continuing" to represent the strength you showed preflop. You don't need to have hit the flop to c-bet — because a hand misses the flop about two-thirds of the time, a well-chosen c-bet often wins the pot when your opponent has nothing.
 
 **Q. Why is it called a continuation bet?**
 

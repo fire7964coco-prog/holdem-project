@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fold ialah kemahiran paling dipandang rendah: hasil terburuk fold ialah sifar, sedangkan call yang kalah membocorkan cip. Pemain mantap fold sekitar 75–85% tangan preflop, melepaskan draw yang tak cukup pot odds, dan melepaskan tangan kuat apabila corak lawan pasif jelas menunjukkan value. Cip yang sudah dalam pot bukan milik anda lagi.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Tangan paling mahal pada tahun pertama saya bukanlah tangan yang saya kalah — tetapi tangan yang saya enggan terima kalah. Saya flop top two pair, seorang pemain lama yang pasif raise saya di river yang berpasangan, dan setiap loceng amaran dalam kepala berbunyi *dia pegang full house.* Saya call juga. Saya pujuk diri sendiri bahawa saya "tak boleh fold selepas masukkan sebanyak itu." Dia tunjuk full house (boat), dan sepanjang perjalanan pulang saya asyik mengulang detik saya sudah tahu tetapi tetap call. Malam itu saya belajar kebenaran yang akhirnya diterima oleh setiap pemain yang menang: ==fold ialah langkah paling berkuasa dalam poker, dan paling sukar dilakukan.==
 
-**Fold — membuang tangan anda ke muck dan bukannya call atau raise — ialah kemahiran yang paling dipandang rendah dalam permainan ini.** Ia tiada detik gemilang dan tiada rasa puas serta-merta, tetapi hasil terburuk fold ialah tepat *sifar*, sedangkan call yang buruk kehilangan wang setiap kali. Artikel ini menerangkan *bila patut fold*: sebelum flop, pada setiap street selepasnya, matematik tepat yang memutuskan spot yang tipis, cara melepaskan tangan yang benar-benar bagus, dan cara mengatasi psikologi yang membuatkan fold terasa mustahil. Inilah disiplin yang menjadi tunjang [strategi Texas Hold'em](/ms/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang.
+**Fold — membuang tangan anda ke muck dan bukannya call atau raise — ialah kemahiran yang paling dipandang rendah dalam permainan ini.** Ia tiada detik gemilang dan tiada rasa puas serta-merta, tetapi hasil terburuk fold ialah tepat *sifar*, sedangkan call yang buruk kehilangan wang dari masa ke masa — bukan pada setiap tangan, tetapi dalam jangka panjang. Artikel ini menerangkan *bila patut fold*: sebelum flop, pada setiap street selepasnya, matematik tepat yang memutuskan spot yang tipis, cara melepaskan tangan yang benar-benar bagus, dan cara mengatasi psikologi yang membuatkan fold terasa mustahil. Inilah disiplin yang menjadi tunjang [strategi Texas Hold'em](/ms/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang.
 
 ---
 
@@ -129,7 +129,7 @@ Inilah rahsia yang tidak diberitahu oleh carta strategi: **kebanyakan call yang 
 
 **Sunk cost — "Saya dah masukkan terlalu banyak."** Inilah yang paling besar. Cip yang anda bet sebelum ini *bukan lagi milik anda* — ia milik pot. Setiap keputusan berdiri sendiri, dinilai hanya berdasarkan apa yang berlaku *dari sini.* "Saya pot-committed kerana saya sudah melabur banyak" ialah sunk cost fallacy (perangkap kos tenggelam) yang sedang duduk di kerusi poker. (Pot-commitment sebenar memang wujud, tetapi ia datang daripada harga *semasa* berbanding pot yang besar — bukan daripada apa yang anda belanjakan tiga street lalu.)
 
-**Ego — "Saya mesti tahu sama ada dia bluff."** Call untuk memuaskan rasa ingin tahu, atau untuk mengelak pedihnya *mungkin* di-bluff, bermakna membayar harga maksimum untuk maklumat yang anda tidak perlukan. Anda akan di-bluff sekali-sekala. Itu tidak mengapa — keputusan fold yang *tidak pernah* salah bermakna anda fold terlalu banyak dan di-bluff keluar daripada pot demi pot. Uruskan keputusan anda, bukan ego anda.
+**Ego — "Saya mesti tahu sama ada dia bluff."** Call untuk memuaskan rasa ingin tahu, atau untuk mengelak pedihnya *mungkin* di-bluff, bermakna membayar harga maksimum untuk maklumat yang anda tidak perlukan. Anda akan di-bluff sekali-sekala. Itu tidak mengapa — jika fold anda *tidak pernah* salah, anda sebenarnya kurang fold: anda terus membayar value bet demi value bet semata-mata supaya tiada sesiapa dapat bluff anda. Uruskan keputusan anda, bukan ego anda.
 
 **Takut — fold tangan terbaik kepada kad menakutkan.** Kegagalan sebaliknya: terlalu takut dikalahkan sehingga anda melepaskan tangan yang menang. Penawar bagi kedua-dua hujung ialah frasa yang sama — ==fold kerana matematik, bukan kerana takut.== Fold kerana harganya salah atau ceritanya value, bukan kerana anda "rasa tak sedap hati."
 
@@ -199,7 +199,7 @@ Perhatikan kedua-dua hujung ada di sini: fold *lebih banyak* menentang pemain ya
 
 **Q. Bila patut fold dalam poker?**
 
-A. Fold apabila call atau raise merugikan wang dalam jangka panjang: apabila tangan anda terlalu lemah preflop, apabila anda miss flop dan berdepan agresi pada board yang sesuai dengan range lawan, apabila draw tidak memenuhi pot odds-nya, dan apabila corak yang condong kepada value mengalahkan tangan anda. Hasil terburuk fold ialah sifar, jadi fold spot yang kalah sentiasa lebih baik daripada call.
+A. Fold apabila call atau raise merugikan wang dalam jangka panjang: apabila tangan anda terlalu lemah preflop, apabila anda miss flop dan berdepan agresi pada board yang sesuai dengan range lawan, apabila draw tidak memenuhi pot odds-nya, dan apabila corak yang condong kepada value mengalahkan tangan anda. Hasil terburuk fold ialah sifar, jadi apabila call merugikan pada harga yang anda dapat, fold sentiasa lebih baik daripada call — sekadar berada di belakang belum cukup, kerana harga yang cukup baik boleh menjadikan call dengan tangan yang biasanya di belakang sebagai keputusan yang betul.
 
 **Q. Adakah anda kehilangan wang apabila fold dalam poker?**
 
@@ -231,7 +231,7 @@ A. Apabila spot itu benar-benar tipis dan anda tidak pasti, fold biasanya piliha
 
 **Q. Bagaimana anda tahu bila patut fold kepada raise di river?**
 
-A. Anggap raise di river, terutamanya daripada pemain pasif, sebagai value sehingga terbukti sebaliknya. Kebanyakan pemain tidak mempunyai cukup bluff dalam range raise mereka di river, jadi raise besar biasanya bermaksud tangan yang mengalahkan one pair atau two pair. Melainkan lawan agresif dan mampu bluff-raise, fold semua kecuali tangan terkuat anda ialah keputusan yang betul.
+A. Anggap raise di river, terutamanya daripada pemain pasif, sebagai value sehingga terbukti sebaliknya. Kebanyakan pemain tidak mempunyai cukup bluff dalam range raise mereka di river, jadi raise besar biasanya bermaksud tangan yang mengalahkan one pair atau two pair. Melainkan lawan agresif dan mampu bluff-raise, fold semua kecuali tangan terkuat anda biasanya keputusan yang betul — harga yang anda dapat hanya menyelamatkan call jika range lawan mengandungi cukup bluff untuk menampungnya.
 
 **Q. Adakah fold tanda kelemahan?**
 

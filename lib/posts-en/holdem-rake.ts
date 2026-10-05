@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -177,7 +177,7 @@ A. Significantly — most of all at low stakes, where the cap doesn't scale down
 
 **Q. Is online or live poker rake higher?**
 
-A. Live rake tends to be a higher percentage, usually with a higher cap, but you play far fewer hands per hour. Online rake is usually a lower percentage with a smaller cap — caps vary by room and stakes, and some online caps run higher than live ones — but multi-tabling means you pay it on many more hands — so a volume grinder can pay more rake per hour online. Judge rake by rate times frequency, not rate alone.
+A. Live rake tends to be a higher percentage, usually with a higher cap, but you play far fewer hands per hour. Online rake is usually a lower percentage with a smaller cap — caps vary by room and stakes, and some online caps run higher than live ones — but multi-tabling means you pay it on many more hands — so a volume grinder can pay more rake per hour online. Judge rake by what you actually pay per pot — the percentage, up to the cap — times how many pots you pay it on, not by the rate alone.
 
 ---
 

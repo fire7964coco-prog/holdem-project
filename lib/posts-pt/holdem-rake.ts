@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -174,7 +174,7 @@ A. Significativamente — principalmente em stakes baixos, onde o cap não desce
 
 **Q. O rake do poker online ou ao vivo é mais alto?**
 
-A. O rake ao vivo tende a ser uma porcentagem mais alta, normalmente com um cap mais alto, mas você joga bem menos mãos por hora. O rake online costuma ser uma porcentagem mais baixa com um cap menor — os caps variam por sala e por stake, e alguns caps online ficam acima dos de jogos ao vivo —, mas jogar em várias mesas significa que você o paga em muito mais mãos — então um grinder de volume pode pagar mais rake por hora online. Julgue o rake pela taxa vezes a frequência, não só pela taxa.
+A. O rake ao vivo tende a ser uma porcentagem mais alta, normalmente com um cap mais alto, mas você joga bem menos mãos por hora. O rake online costuma ser uma porcentagem mais baixa com um cap menor — os caps variam por sala e por stake, e alguns caps online ficam acima dos de jogos ao vivo —, mas jogar em várias mesas significa que você o paga em muito mais mãos — então um grinder de volume pode pagar mais rake por hora online. Julgue o rake pelo que você realmente paga por pote — a porcentagem, até o cap — vezes o número de potes em que paga, não só pela taxa.
 
 ---
 

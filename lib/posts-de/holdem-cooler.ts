@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du so gut wie nie korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Im engeren Sinn, den dieser Guide verwendet, lagst du schon beim Reingehen hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -29,7 +29,7 @@ Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen g
 Hinten beim Reingehen | Der strenge Test: wo du standest, als das Geld reinging
 Kein Suckout | Im engeren Sinn führte der Gewinner von Anfang bis Ende
 Zu stark zum Folden | Warum du bezahlt hast
-Nicht deine Schuld | Der eine Verlust, über den du nicht tilten solltest
+Nicht deine Schuld | Ein Verlust, über den du nicht tilten solltest
 :::
 
 ---
@@ -137,7 +137,7 @@ Jetzt die unbequeme Wahrheit und der Grund, warum dieses Wort für deine Verbess
 Es gibt einen sauberen Lackmustest, und ehrliche Spieler nutzen ihn nach jedem großen Verlust:
 
 :::pull
-Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn **nein**, hast du falsch gespielt – und das ist ein Leak zum Fixen, kein Pech. Wenn **ja**, war es Pech: ein Cooler, wenn du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest.
+Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn **nein**, hast du falsch gespielt – und das ist ein Leak zum Fixen, kein Pech. Wenn **ja** – und es hält auch stand, wenn du diese Ranges und diesen Preis tatsächlich durchrechnest (viele falsche Calls fühlen sich jedes Mal richtig an) –, war es Pech: im engeren Sinn ein Cooler, wenn zwei starke Hände kollidiert sind und du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest. Ein zum passenden Preis gecallter Draw, der nicht ankommt, ist keins von beiden – einfach Varianz.
 :::
 
 Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler“ einen Call beinhaltet, bei dem du dir nicht sicher warst, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist – statt jeden Verlust unter „Pech“ abzulegen – ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
@@ -175,7 +175,7 @@ A. Ja, und das ist der Grund, warum die beiden Begriffe so oft verwechselt werde
 
 **Q. Ist ein Cooler Pech oder schlechtes Play?**
 
-A. Ein echter Cooler ist reines Pech – du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler“ oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn nein, war es ein Fehlspiel, aus dem du lernen kannst. Wenn ja, war es Pech – im engeren Sinn ein Cooler, wenn du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest.
+A. Ein echter Cooler ist reines Pech – du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler“ oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn nein, war es ein Fehlspiel, aus dem du lernen kannst. Wenn ja – und es hält auch bei Ranges und Preis stand, nicht nur aus Überzeugung –, war es Pech: im engeren Sinn ein Cooler, wenn zwei starke Hände kollidiert sind und du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest.
 
 **Q. Was ist ein „Cold Deck“?**
 
@@ -211,7 +211,7 @@ A. Nicht wegen des Coolers selbst – der sagt nichts über die Qualität deines
 
 1. **Ein Cooler ist ein unvermeidbarer Verlust mit einer Hand, die zu stark zum Folden ist** – im engeren Sinn lagst du hinten, als das Geld reinging, es gab keinen Suckout, und auch ein guter Spieler an deiner Stelle hätte einen großen Pot verloren.
 2. **Streng definiert ist es das Gegenteil eines Bad Beat.** Ein Bad Beat ist, vorne zu liegen und ausgedrawt zu werden; ein Cooler ist, beim Reingehen hinten zu liegen und nur eine kleine Chance zu haben, noch aufzuholen. Zu wissen, welcher zugeschlagen hat, sagt dir, ob es etwas zu fixen gibt.
-3. **Sei ehrlich über den Unterschied zwischen einem Cooler und einem Fehler.** Wenn du das Play mit denselben Informationen noch einmal machen würdest, schüttel es ab. Wenn nicht, war es kein Cooler – es war ein Leak in Verkleidung.
+3. **Sei ehrlich über den Unterschied zwischen einem Cooler und einem Fehler.** Wenn das Play mit denselben Informationen auch bei Ranges und Preis standhält – nicht nur aus Überzeugung –, schüttel es ab. Wenn nicht, war es kein Cooler – es war ein Leak in Verkleidung.
 
 Die besten Spieler verlieren genau so viele Cooler wie alle anderen; sie lassen sie nur keinen zusätzlichen Schaden anrichten. Verbuche es als Varianz, schütze deine nächsten paar Entscheidungen vor Tilt und geh zurück dazu, [den Tisch auszuspielen](/de/blog/holdem-fish). Das Deck kühlt jeden irgendwann ab – Gewinnen ist das, was du in all den Händen tust, die keine Cooler sind.
 

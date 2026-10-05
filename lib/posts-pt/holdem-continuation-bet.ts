@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
-  masterUpdated: "2026-10-04",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -125,7 +125,7 @@ Vamos aos números reais. Digamos que o pote seja de ==$30== no flop:
 - Uma c-bet de **um terço do pote** é ==$10== — a sua range bet de dry board.
 - Uma c-bet de **dois terços do pote** é ==$20== — o seu tamanho de wet board, para cobrar dos draws.
 
-Em **torneios**, aperte um pouco os tamanhos: o pequeno continua sendo um terço, mas o grande vira **meio pote** com mais frequência do que dois terços, porque o seu stack é precioso e você não pode recarregar. Seja qual for a escolha, amarre o tamanho ao board, não ao hábito.
+Em **torneios**, aperte um pouco os tamanhos: o pequeno continua sendo um terço, mas o grande vira **meio pote** com mais frequência do que dois terços, porque o seu stack é precioso — num freezeout você não pode recarregar, e até um re-entry custa um novo buy-in. Seja qual for a escolha, amarre o tamanho ao board, não ao hábito.
 
 Para ver essa escolha em um spot concreto, compare os dois tamanhos disponíveis no flop Q♥T♥7♠ de um pote de 3-bet: o solver usa a [aposta de dois terços com 98,4% do range](/pt/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-pt.webp"). A análise mostra o preço que os draws recebem para pagar e por que o tamanho faz diferença nesse board.
 
@@ -217,7 +217,7 @@ Todos eles voltam à mesma raiz: **dar c-bet no piloto automático em vez de ler
 
 **Q. O que é uma continuation bet no poker?**
 
-A. Uma continuation bet, ou c-bet, é uma aposta feita no flop por quem deu raise antes do flop. Você está "continuando" a representar a força que mostrou no pré-flop. Você não precisa ter acertado o flop para dar c-bet — como uma mão erra o flop cerca de dois terços das vezes, uma c-bet bem escolhida costuma ganhar o pote quando o seu adversário não tem nada.
+A. Uma continuation bet, ou c-bet, é uma aposta feita no flop pelo último jogador a dar raise antes do flop — o agressor pré-flop, o que inclui quem deu 3-bet. Você está "continuando" a representar a força que mostrou no pré-flop. Você não precisa ter acertado o flop para dar c-bet — como uma mão erra o flop cerca de dois terços das vezes, uma c-bet bem escolhida costuma ganhar o pote quando o seu adversário não tem nada.
 
 **Q. Por que se chama continuation bet?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could almost never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. In the strict sense used in this guide, you were behind when the money went in and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -28,7 +28,7 @@ A **cooler** is a hand where you make a very strong holding, lose a big pot, and
 Behind going in | The strict test: where you stood when the money went in
 No suckout | In the strict sense, the winner led start to finish
 Too strong to fold | Why you paid it off
-Not your fault | The one loss you shouldn't tilt over
+Not your fault | One loss you shouldn't tilt over
 :::
 
 ---
@@ -120,7 +120,7 @@ Now the uncomfortable truth, and the reason this word matters for your improveme
 There's a clean litmus test, and honest players use it after every big loss:
 
 :::pull
-Would I make the exact same play again, with only the information I had at the time — ranges, price and stack depth, not just gut feel? If **no**, you misplayed — and that's a leak to fix, not bad luck. If **yes**, it was bad luck: a cooler if you were behind when the money went in, a bad beat if you were ahead and got outdrawn.
+Would I make the exact same play again, with only the information I had at the time — ranges, price and stack depth, not just gut feel? If **no**, you misplayed — and that's a leak to fix, not bad luck. If **yes** — and it still holds up when you actually run those ranges and that price (plenty of wrong calls feel right every time) — it was bad luck: in the strict sense, a cooler if two strong hands collided and you were behind when the money went in, a bad beat if you were ahead and got outdrawn. A priced-in draw that missed is neither — just variance.
 :::
 
 A true cooler means you played correctly with a strong hand and ran into a bigger one. The moment your "cooler" involves a call you weren't sure about, a bluff you talked yourself into, or a fold you should have made, it stops being a cooler and becomes a **mistake wearing a disguise.** Being ruthlessly honest about which is which — instead of filing every loss under "unlucky" — is exactly what separates players who improve from players who stay [fish](/en/blog/holdem-fish) forever.
@@ -155,7 +155,7 @@ A. Timing and suckouts, at least in the strict sense. In a cooler you were behin
 
 **Q. Is a cooler bad luck or bad play?**
 
-A. A true cooler is pure bad luck — you played correctly and still lost because two premium hands collided. The catch is that "cooler" is often misused to excuse an actual mistake. The test: would you make the same play again with the same information — ranges, price and stack depth, not just gut feel? If no, it was a misplay you can learn from. If yes, it was bad luck — in the strict sense, a cooler if you were behind going in, a bad beat if you were ahead and got outdrawn.
+A. A true cooler is pure bad luck — you played correctly and still lost because two premium hands collided. The catch is that "cooler" is often misused to excuse an actual mistake. The test: would you make the same play again with the same information — ranges, price and stack depth, not just gut feel? If no, it was a misplay you can learn from. If yes — and it holds up on ranges and price, not just conviction — it was bad luck: in the strict sense, a cooler if two strong hands collided and you were behind going in, a bad beat if you were ahead and got outdrawn.
 
 **Q. Is a setup the same as a cooler?**
 
@@ -191,7 +191,7 @@ A. Not quite — the word has an older gambling meaning. In casino lore a "coole
 
 1. **A cooler is an unavoidable loss with a hand too strong to fold** — in the strict sense, you were behind when the money went in and no suckout happened. Either way, a good player in your spot would have lost a big pot too.
 2. **Strictly defined, it's the opposite of a bad beat.** A bad beat is being ahead and getting outdrawn; a cooler is being behind going in, with only a small chance to catch up. Knowing which one hit tells you whether there's anything to fix.
-3. **Be honest about the difference between a cooler and a mistake.** If you'd make the play again with the same information, shrug it off. If you wouldn't, it wasn't a cooler — it was a leak in disguise.
+3. **Be honest about the difference between a cooler and a mistake.** If the play still holds up on ranges and price with the same information — not just conviction — shrug it off. If it doesn't, it wasn't a cooler — it was a leak in disguise.
 
 The best players lose exactly as many coolers as everyone else; they just don't let them do any extra damage. Log it as variance, protect your next few decisions from tilt, and get back to out-playing the [table](/en/blog/holdem-fish). The deck cools everyone off eventually — winning is what you do in all the hands that aren't coolers.
 

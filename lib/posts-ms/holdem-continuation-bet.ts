@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) ialah bet pada flop oleh pemain yang raise preflop. Jangan c-bet setiap flop: bet board tinggi dan kering (K-7-2) dengan saiz kecil dan kerap, check board rendah yang bersambung (7-6-5). Saiz kira-kira satu pertiga pot di board kering, dua pertiga atau lebih di board basah; jauh kurang dalam pot multiway.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 minit",
@@ -127,7 +127,7 @@ Letakkan angka sebenar. Katakan pot ialah ==$30== di flop:
 - C-bet **satu pertiga pot** ialah ==$10== — range bet anda di board kering.
 - C-bet **dua pertiga pot** ialah ==$20== — saiz board basah anda, untuk mengenakan bayaran kepada draw.
 
-Dalam **tournament**, condong sedikit lebih kecil: saiz kecil kekal satu pertiga, tetapi saiz besar lebih kerap **separuh pot** berbanding dua pertiga, kerana stack anda berharga dan anda tidak boleh reload. Apa pun pilihan anda, ikat saiz kepada board, bukan kepada tabiat.
+Dalam **tournament**, condong sedikit lebih kecil: saiz kecil kekal satu pertiga, tetapi saiz besar lebih kerap **separuh pot** berbanding dua pertiga, kerana stack anda berharga — dalam freezeout anda tidak boleh reload, malah re-entry pun memerlukan buy-in baharu. Apa pun pilihan anda, ikat saiz kepada board, bukan kepada tabiat.
 
 Mahu lihat sejauh mana gear "besar di board basah" sebenarnya pergi? Solver yang diberi dua saiz pada Q♥T♥7♠ dalam pot 3-bet meletakkan [98.4% daripada range-nya ke dalam bet dua pertiga](/ms/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-ms.webp") — dan sebabnya ialah harga yang boleh anda kira, bukan rasa.
 
@@ -218,7 +218,7 @@ Setiap satu daripadanya berpunca daripada akar yang sama: **c-bet secara autopil
 
 **Q. Apakah continuation bet dalam poker?**
 
-A. Continuation bet, atau c-bet, ialah bet yang dibuat pada flop oleh pemain yang raise sebelum flop. Anda "meneruskan" gambaran kekuatan yang anda tunjukkan preflop. Tangan anda tidak perlu mengena pada flop untuk c-bet — kerana tangan terlepas di flop kira-kira dua pertiga masa, c-bet yang dipilih dengan baik selalunya memenangi pot apabila lawan tidak memegang apa-apa.
+A. Continuation bet, atau c-bet, ialah bet yang dibuat pada flop oleh pemain terakhir yang raise sebelum flop — aggressor preflop, termasuk pemain yang membuat 3-bet. Anda "meneruskan" gambaran kekuatan yang anda tunjukkan preflop. Tangan anda tidak perlu mengena pada flop untuk c-bet — kerana tangan terlepas di flop kira-kira dua pertiga masa, c-bet yang dipilih dengan baik selalunya memenangi pot apabila lawan tidak memegang apa-apa.
 
 **Q. Mengapa ia dinamakan continuation bet?**
 

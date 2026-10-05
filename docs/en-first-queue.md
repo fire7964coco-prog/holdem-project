@@ -305,7 +305,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | V-5 | JSON-LD featureList 4번째 (EN «Colour-coded pocket pairs, suited and offsuit» · **ko도 같다** «포켓페어·수티드·오프수트 구분 색상») | 색이 핸드 종류를 나눈다고 주장 — 실제 색 = 오픈 포지션(종류는 삼각형 위치) · 아스트라 교차가 10로케일에서 잡아 로케일은 정정 | «오픈 포지션별 색 구분(UTG~SB)» |
 | V-4 | 서버 metadata description ↔ dict.seo.description | «starting hand chart» vs «starting-hand chart» (한 글자 갈림 · 클라이언트가 덮는다) | EN page.tsx도 dict.seo에서 파생 |
 
-### 2-W. 우편함 수신분 — MA-321 · MA-323 · MA-325 · MA-327 · MA-329 (JA ④ 4-4 부분2 · 4-5 부분1·2 · cooler 결재 · ID 파일럿) · 판정 2026-10-05 (11) · 회신 MB-174 · ✅ ① 이행 10-05 (12) MB-176 · ⏳ ② EN-먼저 대기(사장님 지시)
+### 2-W. 우편함 수신분 — MA-321 · MA-323 · MA-325 · MA-327 · MA-329 (JA ④ 4-4 부분2 · 4-5 부분1·2 · cooler 결재 · ID 파일럿) · 판정 2026-10-05 (11) · 회신 MB-174 · ✅ ① 이행 10-05 (12) MB-176 · ✅ ② 이행 10-06 (1) MB-178
 
 > 근거 = 검수장 각 MA의 `HQ-REPORT.md`(MA 행 «근거» 칸) · 원장 `ledger/{ja,id,…}/<slug>.md`. 판정 = 전부 **채택**(«확신 낮음»은 이행 때 문면을 다시 보고 기각 가능). 이행 순서 = ① JA·ID 고유(로케일 단독 · 한 회차) → ② EN-먼저(EN 정정 → 핵심 8로케일 전파 · 사장님 지시로 연다). 이행 MB가 나가면 검수장이 변경 줄 전/후로 닫는다.
 
@@ -330,7 +330,9 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | W-15 | ja rake | FAQ 위법성 · «ホームゲームがいちばん安い» | 일본 국내 한정 한 줄(刑法 185·186조 · e-Gov 원문) — 합법성은 정보 제공 축(메모리 legality-info) · 후자 확신 낮음 | MA-325 ⓒ |
 | W-16 | id beginners | 돈 블록 «cash game kecil di rumah» + 표 «belajar dengan taruhan sungguhan» · FAQ «home game uang sungguhan … $2 sampai $5» | 인도네시아 한정 한 줄(UU 1/2023 Pasal 427 · BPK 원문) — 플레이머니·국외 한정 · 위법 단정 금지(JA MA-295 선례) | MA-329 요청 1 |
 
-**② EN-먼저 15 (EN 같은 자리 + 핵심 8로케일 사본)**
+**② EN-먼저 15 (EN 같은 자리 + 핵심 8로케일 사본)** — ✅ 전부 이행(10-06 (1) · MB-178 · 기각 0 · W-27 확신 낮음도 채택 · 전/후 문면은 MB-178). 이 8편은 꼬리 로케일 사본 없음. ▶ 검수장 재판정 대기.
+
+- 🪶 ② 렌즈 잔여(자동 착수 금지 · 확신 낮음): cooler 본문 «A priced-in draw that missed is neither» 예시에 «블러프캐처가 밸류에 진 것» 추가안 · when-to-fold 리버 레이즈 «enough bluffs» → «enough hands you beat — mostly bluffs» · pt limping 오픈림프 예외 «(sobretudo em mesa passiva)» · ja bad-beat 要点 상자 «史上最大» ↔ FAQ «最も有名» 표현 통일 · ms limping «separuh wang anda» → «separuh taruhan»(원본 유래) · bad-beat·glossary FAQ «Quick test … if they were already ahead going in, it's a cooler»에 강한 손 충돌 조건 없음(W-31과 같은 명제 · 결재 RISKY를 여기까지 넓힐지 판정 필요)
 
 | # | 글 | EN 자리(JA 줄) | 고칠 방향 | 출처 |
 |---|---|---|---|---|

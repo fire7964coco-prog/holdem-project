@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción preflop y la opción de subir, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -120,7 +120,7 @@ Incluso en cash games es opcional y depende de las reglas de la casa: algunas sa
 
 ![Un bote grande e inflado de fichas mezcladas amontonadas en el centro del tapete, el bote hinchado que crea un straddle antes de que nadie haya visto una carta](/images/holdem-straddle-bloated-pot.webp "Un straddle dobla la ciega e infla el bote — dinero comprometido antes de ver una sola carta")
 
-La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo, no.** El análisis de GTO Wizard lo dice sin rodeos — desde el punto de vista del valor esperado, el straddle es una jugada perdedora. Tres razones:
+La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo, no.** El análisis de GTO Wizard es tajante: meter dinero sin mirar tus cartas es "una desventaja enorme", e incluso hacer straddle desde el botón "sigue siendo casi siempre una propuesta que pierde dinero". Tres razones por las que te cuesta — las dos primeras son lo que muestra el trabajo con solver, la tercera es la parte de la casa:
 
 :::card
 🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50

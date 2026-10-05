@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Wann folden im Poker: die Fähigkeit, die im Stillen am meisten gewinnt",
   seoTitle: "Wann folden im Poker? Die gute Hand, die weg muss",
   desc: "Folden ist die unterschätzteste Gewinner-Fähigkeit. Wann du preflop und auf jeder Street foldest, die Pot-Odds-Grenze und wie du eine starke Hand ablegst.",
-  tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
+  tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein Verlust-Call dich auf Dauer Chips kostet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🛡️",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Die teuerste Hand meines ersten Jahres war keine, die ich verloren habe – es war eine, die ich mich weigerte zu verlieren. Ich flopte Top Two Pair, ein passiver alter Hase raiste mich auf einem gepaarten River, und jede Alarmglocke sagte *er hat ein Full House.* Ich callte trotzdem. Ich redete mir ein, ich „könnte nach so viel Investment nicht mehr folden“. Er zeigte das Boat, und ich fuhr nach Hause und spielte den exakten Moment immer wieder durch, in dem ich es wusste und trotzdem callte. In dieser Nacht lernte ich die Wahrheit, die jeder gewinnende Spieler irgendwann akzeptiert: ==der Fold ist der stärkste Move im Poker und der schwerste, den man macht.==
 
-**Folden – deine Hand in den Muck legen, statt zu callen oder zu raisen – ist die am meisten unterschätzte Fähigkeit im Spiel.** Es hat kein Highlight-Reel und keinen Dopamin-Kick, aber das schlimmstmögliche Ergebnis eines Folds ist exakt *null*, während ein schlechter Call jedes einzelne Mal Geld verliert. Das ist der komplette Guide dazu, *wann man foldet*: vor dem Flop, auf jeder Street danach, die genaue Mathematik, die enge Spots entscheidet, wie du eine wirklich gute Hand ablegst und wie du die Psychologie besiegst, die das Folden unmöglich erscheinen lässt. Es ist die Disziplin, die eine gewinnende [Texas-Hold'em-Strategie](/de/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") verankert.
+**Folden – deine Hand in den Muck legen, statt zu callen oder zu raisen – ist die am meisten unterschätzte Fähigkeit im Spiel.** Es hat kein Highlight-Reel und keinen Dopamin-Kick, aber das schlimmstmögliche Ergebnis eines Folds ist exakt *null*, während ein schlechter Call auf Dauer Geld verliert – nicht in jeder einzelnen Hand, aber auf lange Sicht. Das ist der komplette Guide dazu, *wann man foldet*: vor dem Flop, auf jeder Street danach, die genaue Mathematik, die enge Spots entscheidet, wie du eine wirklich gute Hand ablegst und wie du die Psychologie besiegst, die das Folden unmöglich erscheinen lässt. Es ist die Disziplin, die eine gewinnende [Texas-Hold'em-Strategie](/de/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") verankert.
 
 ---
 
@@ -144,7 +144,7 @@ Hier ist das Geheimnis, das die Strategie-Charts dir nicht verraten: **die meist
 
 **Sunk Cost – „Ich habe schon so viel reingesteckt.“** Das ist der große. Die Chips, die du früher gebettet hast, gehören *nicht mehr dir* – sie gehören dem Pot. Jede Entscheidung ist unabhängig, beurteilt nur danach, was *ab hier* passiert. „Ich bin Pot-committed, weil ich so viel investiert habe“ ist der Sunk-Cost-Fehlschluss im Pokerstuhl. (Echtes Pot-Commitment existiert, aber es kommt aus dem *aktuellen* Preis relativ zu einem großen Pot – nicht aus dem, was du vor drei Streets ausgegeben hast.)
 
-**Ego – „Ich muss wissen, ob er blufft.“** Aus Neugier zu callen, oder um den Stich zu vermeiden, *vielleicht* geblufft worden zu sein, heißt, das Maximum für Informationen zu zahlen, die du nicht brauchst. Du wirst manchmal geblufft. Das ist okay – ein Fold-Knopf, der *nie* falsch liegt, bedeutet, dass du viel zu viel foldest und Pot um Pot an Bluffs abgibst. Manage deine Entscheidungen, nicht dein Ego.
+**Ego – „Ich muss wissen, ob er blufft.“** Aus Neugier zu callen, oder um den Stich zu vermeiden, *vielleicht* geblufft worden zu sein, heißt, das Maximum für Informationen zu zahlen, die du nicht brauchst. Du wirst manchmal geblufft. Das ist okay – wenn deine Folds *nie* falsch liegen, foldest du nicht genug: Du zahlst Value-Bet um Value-Bet aus, nur damit dich bloß niemand je blufft. Manage deine Entscheidungen, nicht dein Ego.
 
 **Angst – die beste Hand auf eine Scare Card folden.** Das entgegengesetzte Versagen: so ängstlich, geschlagen zu sein, dass du Gewinner loslässt. Der Fix für beide Pole ist derselbe Satz – ==folde aus Mathematik, nicht aus Angst.== Folde, weil der Preis falsch ist oder die Geschichte Value erzählt, nicht weil du „ein schlechtes Gefühl“ hast.
 
@@ -212,7 +212,7 @@ Beachte, dass beide Pole hier sind: folde *mehr* gegen die value-lastigen Spiele
 
 **Q. Wann sollte man im Poker folden?**
 
-A. Folde immer dann, wenn Callen oder Raisen auf lange Sicht Geld verliert: wenn deine Hand preflop zu schwach ist, wenn du den Flop verfehlst und auf einem Board, das zur Range deines Gegners passt, Aggression gegenüberstehst, wenn ein Draw seine Pot Odds nicht erfüllt und wenn eine value-lastige Linie die Hand schlägt, die du hältst. Das schlechteste Ergebnis eines Folds ist null, also schlägt das Folden eines verlorenen Spots immer das Callen.
+A. Folde immer dann, wenn Callen oder Raisen auf lange Sicht Geld verliert: wenn deine Hand preflop zu schwach ist, wenn du den Flop verfehlst und auf einem Board, das zur Range deines Gegners passt, Aggression gegenüberstehst, wenn ein Draw seine Pot Odds nicht erfüllt und wenn eine value-lastige Linie die Hand schlägt, die du hältst. Das schlechteste Ergebnis eines Folds ist null, also schlägt das Folden das Callen immer dann, wenn der Call zum gebotenen Preis Geld verliert – hinten zu liegen allein reicht dafür nicht, denn ein ausreichend guter Preis kann den Call mit einer Hand, die meist hinten liegt, richtig machen.
 
 **Q. Verlierst du Geld, wenn du im Poker foldest?**
 
@@ -244,7 +244,7 @@ A. Wenn es wirklich eng ist und du unsicher bist, ist Folden meist der bessere S
 
 **Q. Woher weiß man, wann man auf einen River-Raise foldet?**
 
-A. Behandle einen River-Raise, besonders von einem passiven Spieler, als Value, bis das Gegenteil bewiesen ist. Die meisten Spieler haben nicht genug Bluffs in ihrer Raising-Range am River, also bedeutet ein großer Raise meist eine Hand, die ein Paar oder zwei Paare schlägt. Sofern der Gegner nicht aggressiv und zum Bluff-Raise fähig ist, ist es korrekt, alles außer deinen stärksten Händen zu folden.
+A. Behandle einen River-Raise, besonders von einem passiven Spieler, als Value, bis das Gegenteil bewiesen ist. Die meisten Spieler haben nicht genug Bluffs in ihrer Raising-Range am River, also bedeutet ein großer Raise meist eine Hand, die ein Paar oder zwei Paare schlägt. Sofern der Gegner nicht aggressiv und zum Bluff-Raise fähig ist, ist es meist korrekt, alles außer deinen stärksten Händen zu folden – der Preis, den du bekommst, rettet einen Call nur, wenn seine Range genug Bluffs enthält, um ihn zu rechtfertigen.
 
 **Q. Ist Folden ein Zeichen von Schwäche?**
 

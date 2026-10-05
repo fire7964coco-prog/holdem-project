@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Straddle ialah bet blind pilihan — biasanya dua kali ganda big blind — yang dipasang sebelum kad diedar. Ia memberi straddler tindakan terakhir preflop dan pilihan untuk raise, sekali gus menggandakan stakes. Dalam hampir setiap kes ia permainan -EV, dan di luar cash game ia hampir tidak pernah dibenarkan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -120,7 +120,7 @@ Malah dalam cash game pun ia pilihan dan bergantung pada peraturan rumah: sesete
 
 ![Pot besar yang membengkak dengan cip bercampur bertimbun di tengah felt, pot yang digelembungkan oleh straddle sebelum sesiapa melihat kad](/images/holdem-straddle-bloated-pot.webp "Straddle menggandakan blind dan membengkakkan pot — wang dimasukkan sebelum sekeping kad pun dilihat")
 
-Jawapan jujurnya, dan yang dipersetujui oleh solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard menyatakannya secara terus terang — dari sudut nilai jangkaan (EV), straddle ialah permainan yang rugi. Tiga sebab:
+Jawapan jujurnya, dan yang dipersetujui oleh solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard berterus terang: memasukkan wang tanpa melihat kad anda ialah "kelemahan yang sangat besar", malah straddle dari button pun "masih hampir selalu merugikan". Tiga sebab ia merugikan anda — dua yang pertama ialah apa yang ditunjukkan oleh kerja solver, yang ketiga ialah bahagian pihak rumah:
 
 :::card
 🎯 | Anda meletakkan wang secara buta | Wang masuk sebelum anda melihat kad anda, jadi anda bermain pot yang membengkak tanpa maklumat — kelemahan yang sama yang menjadikan blind kerusi paling buruk di meja. Ia juga mengurangkan separuh kedalaman efektif anda: pada $1/$2 stack $200 bersamaan 100 big blind, tetapi dengan straddle $4, stack yang sama bermain seperti 50

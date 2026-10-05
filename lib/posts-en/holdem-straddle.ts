@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action preflop and the option to raise, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -119,7 +119,7 @@ Even in cash games it's optional and house-rules dependent: some rooms allow onl
 
 ![A large bloated pot of mixed chips piled in the middle of the felt, the inflated pot a straddle creates before anyone has seen a card](/images/holdem-straddle-bloated-pot.webp "A straddle doubles the blind and bloats the pot — money committed before a single card is seen")
 
-The honest answer, and the one the solvers agree on: **for almost everyone, no.** GTO Wizard's analysis puts it bluntly — from an expected-value standpoint, straddling is a losing play. Three reasons:
+The honest answer, and the one the solvers agree on: **for almost everyone, no.** GTO Wizard's analysis is blunt: putting money in without looking at your cards is "a massive disadvantage," and even straddling the button is "still almost always a money-losing proposition." Three reasons it costs you — the first two are what the solver work shows, the third is the house's cut:
 
 :::card
 🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table. It also halves your effective depth: at $1/$2 a $200 stack is 100 big blinds, but with a $4 straddle on, the same stack plays like 50

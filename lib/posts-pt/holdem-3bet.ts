@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -83,7 +83,7 @@ Um range vencedor de 3-bet tem **duas partes distintas**, e entender essa divis�
 
 </div>
 
-A lógica do blocker numa frase: **ter um ás torna matematicamente menos provável que seu adversário tenha ases ou ás-rei**, então A5s é um blefe muito melhor que, digamos, A9o — que bloqueia as mesmas premium mas joga péssimo quando pago e só faz pares fracos. A equity de reserva importa porque seu adversário não vai foldar sempre; você quer um blefe que ainda possa ganhar o pote. É por isso que A5s ≈ 30% de equity contra um range que paga com QQ+/AK, enquanto o lixo offsuit fica bem abaixo disso. É a mesma disciplina de [mãos iniciais](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de sempre — só aplicada ao re-raise.
+A lógica do blocker numa frase: **ter um ás torna matematicamente menos provável que seu adversário tenha ases ou ás-rei**, então A5s é um blefe muito melhor que, digamos, A9o — que bloqueia as mesmas premium mas joga péssimo quando pago e na maioria das vezes só faz pares fracos. A equity de reserva importa porque seu adversário não vai foldar sempre; você quer um blefe que ainda possa ganhar o pote. É por isso que A5s ≈ 30% de equity contra um range que paga com QQ+/AK, enquanto o lixo offsuit fica bem abaixo disso. É a mesma disciplina de [mãos iniciais](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de sempre — só aplicada ao re-raise.
 
 ---
 

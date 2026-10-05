@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação no pré-flop e a opção de aumentar, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -120,7 +120,7 @@ Mesmo em cash games ele é opcional e depende das regras da casa: algumas salas 
 
 ![Um grande pote inchado de fichas misturadas amontoadas no meio do feltro, o pote inflado que um straddle cria antes de qualquer um ter visto uma carta](/images/holdem-straddle-bloated-pot.webp "Um straddle dobra o blind e incha o pote — dinheiro comprometido antes de uma única carta ser vista")
 
-A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.** A análise do GTO Wizard coloca sem rodeios — do ponto de vista de valor esperado, straddar é uma jogada perdedora. Três motivos:
+A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.** A análise do GTO Wizard é direta: colocar dinheiro sem olhar as cartas é "uma desvantagem enorme", e até straddar do button "ainda é quase sempre uma proposta que perde dinheiro". Três motivos pelos quais isso te custa — os dois primeiros são o que o trabalho com solver mostra, o terceiro é a parte da casa:
 
 :::card
 🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa. E ainda corta pela metade a sua profundidade efetiva: num $1/$2, um stack de $200 são 100 big blinds, mas com um straddle de $4 na mesa o mesmo stack joga como 50

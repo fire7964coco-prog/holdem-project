@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — un limp no puede llevarse las ciegas sin oposición, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y de torneo con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -91,7 +91,7 @@ Aquí es donde el dogma va demasiado lejos. Limpear *no* siempre está mal — l
 
 | Caso | Por qué limpear está bien aquí |
 |:---|:---|
-| **Completar la ciega pequeña (bote sin subir)** | Nadie ha subido, tu dinero ya está medio dentro y solo la ciega grande actúa detrás de ti — la regla de subir-o-foldear se rompe con el descuento. Frente a una subida es otra pregunta: por defecto, 3-bet o fold. |
+| **Completar la ciega pequeña (bote sin subir)** | Nadie ha subido, normalmente tu dinero ya está medio dentro y solo la ciega grande actúa detrás de ti — la regla de subir-o-foldear se rompe con el descuento. Frente a una subida es otra pregunta: por defecto, 3-bet o fold. |
 | **Over-limp con manos especulativas** | Detrás de otros limpers con pares pequeños o conectores del mismo palo, obtienes grandes odds para ligar un monstruo en un bote multiway. |
 | **Partidas en vivo muy pasivas de stakes bajos** | Si los rivales solo suben con monstruos y nunca castigan a los limpers, puedes ver flops baratos con manos especulativas y realizar tu equity. |
 | **Posición tardía con stack corto (torneos)** | Con stacks cortos de torneo — muy por debajo de las 100bb de una partida de cash estándar — los solvers modernos desarrollan rangos de open-limp desde el botón, donde subir gana poco y limpear reduce tu coste. |
@@ -161,11 +161,11 @@ A. Un limp-reraise es cuando limpeas, un rival sube detrás de ti, y tú entonce
 
 **Q. ¿Deberías hacer open-limp preflop alguna vez?**
 
-A. Casi nunca en una partida de cash normal. Si una mano es lo bastante buena para jugarla, normalmente lo es para subir; si no lo es, foldea. Las raras excepciones son partidas en vivo extremadamente pasivas donde no te van a castigar, y algunos spots de torneo en posición tardía con stack corto identificados por los solvers. Como estándar, sube o foldea y sáltate el open-limp.
+A. Casi nunca en una partida de cash normal. Si una mano es lo bastante buena para jugarla, normalmente lo es para subir; si no lo es, foldea. Las raras excepciones son completar la ciega pequeña en un bote sin subir, partidas en vivo extremadamente pasivas donde no te van a castigar, y algunos spots de torneo en posición tardía con stack corto identificados por los solvers. Como estándar, sube o foldea y sáltate el open-limp.
 
 **Q. ¿Está bien limpear en la ciega pequeña?**
 
-A. A menudo, sí — en un bote sin subir, completar la ciega pequeña es uno de los limps más defendibles. Tu dinero ya está medio dentro, solo la ciega grande puede actuar detrás de ti, y estás recibiendo un precio, así que la lógica habitual de subir-o-foldear no aplica igual. Que completes, subas o foldees depende de tu mano y de las tendencias de la ciega grande, pero limpear aquí está lejos del error que sí es el open-limp en otras posiciones. (Frente a una subida, lo normal en la ciega pequeña es meter 3-bet o foldear — casi nunca igualar.)
+A. A menudo, sí — en un bote sin subir, completar la ciega pequeña es uno de los limps más defendibles. Normalmente tu dinero ya está medio dentro, solo la ciega grande puede actuar detrás de ti, y estás recibiendo un precio, así que la lógica habitual de subir-o-foldear no aplica igual. Que completes, subas o foldees depende de tu mano y de las tendencias de la ciega grande, pero limpear aquí está lejos del error que sí es el open-limp en otras posiciones. (Frente a una subida, lo normal en la ciega pequeña es meter 3-bet o foldear — casi nunca igualar.)
 
 **Q. ¿Cuál es la diferencia entre un limper y una calling station?**
 

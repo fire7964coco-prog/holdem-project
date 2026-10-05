@@ -1,3 +1,10 @@
+## 2026-10-06 (1) — §2-W ② EN-먼저 W-21~W-31 이행: EN 8편 정정 → 8로케일 전파 (MB-178)
+
+- 판정: 11항목 전부 채택(기각 0 · W-27 확신 낮음도 문면 재확인 뒤 채택 — 본문 L134 «리버 올인은 필립스 앞선 상태» 판정과 FAQ가 어긋나 있었다). W-30은 GTO Wizard 원문 직접 열람(10-06) → 축어 2개 인용 + 레이크 이유를 GTO Wizard 귀속에서 분리. W-31 = 사장님 결재 RISKY(MA-327) 방향: yes 가지에 레인지·가격 근거 조건 + 쿨러 «강한 손끼리 충돌» + «가격 맞춰 콜한 드로가 빗나간 건 둘 다 아님 — 분산». 추가: when-to-fold tldr «every time»도 W-21과 같은 명제라 EN + 7로케일 동시 정정.
+- 전파: 서브 3레인(pt·es / ja·zh·zh-hant / de·id·ms · Opus · 레인 브리프에 git stash·checkout 금지 명시 — 사고 0). 72파일. 동형 추가 = ja·zh cooler 상자 · zh rake 상자 · zh-hant when-to-fold 상자 · es c-bet 사이징 FAQ. de bad-beat은 해당 FAQ 없음 → masterUpdated만 10-06.
+- 렌즈: 플레이어(EN) = 해로운 조언 0 · 교열(diff 9로케일) = 높음 0 · 경미 ② 7자리 반영(es·ms rake 문법 · zh limping 열거 구두점 · ja 용어 «提示された価格» · id·ms «daripada call» · de tldr). 잔여 = queue §2-W 🪶 «② 렌즈 잔여».
+- 게이트: audit:hard 9로케일 🔴 0 · 핵심 드리프트 0 · 빌드 exit 0(74 + 629).
+
 ## 2026-10-05 (12) — §2-W ① 로케일 고유 이행 (JA 8편 22자리 · ID 1편 2자리 · MB-176) · 용어 사전 회차 2 아스트라 교차
 
 - W-1~W-16 전부 채택·이행(기각 0 · «확신 낮음» W-5·W-6·W-15 후자도 문면 재확인 뒤 채택). 대부분 «先に結論» 상자가 본문·EN 한정을 뺀 자리 → 본문·EN 문면으로 복원. rake W-15·id W-16의 국내 한정 한 줄은 `texas-holdem-rules-for-beginners`(ja) 선례 문형 — 조문 번호는 본문에 넣지 않음(posting 합법성 규칙). FAQ «割合×頻度»(W-29)는 EN-먼저라 불변.

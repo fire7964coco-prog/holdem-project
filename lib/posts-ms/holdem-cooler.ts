@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cooler ialah tangan di mana anda kalah pot besar dengan pegangan yang sangat kuat sehingga hampir mustahil untuk fold dengan betul — seperti pocket kings bertemu aces, atau set kalah kepada set yang lebih besar. Dalam erti ketat yang digunakan panduan ini, anda memang di belakang ketika wang masuk dan tiada kad bertuah yang 'suck out' anda: anda bermain betul tetapi tetap kalah. Ia bencana paling jujur dalam poker.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🧊",
@@ -29,7 +29,7 @@ Saya masih ingat tangan yang mengajar saya perkataan ini. Saya dapat set kings d
 Di belakang ketika masuk | Ujian ketat: di mana anda berdiri ketika wang masuk
 Tiada suckout | Dalam erti ketat, pemenang mendahului dari awal hingga akhir
 Terlalu kuat untuk fold | Sebab anda membayarnya
-Bukan salah anda | Satu-satunya kekalahan yang tidak patut membuat anda tilt
+Bukan salah anda | Salah satu kekalahan yang tidak patut membuat anda tilt
 :::
 
 ---
@@ -123,7 +123,7 @@ Sekarang kebenaran yang tidak selesa, dan sebab perkataan ini penting untuk kema
 Ada satu ujian litmus yang jelas, dan pemain yang jujur menggunakannya selepas setiap kekalahan besar:
 
 :::pull
-Adakah saya akan membuat keputusan yang sama sekali lagi, dengan hanya maklumat yang saya ada ketika itu — range (julat tangan), harga dan kedalaman stack, bukan sekadar gerak hati? Jika **tidak**, anda tersilap main — dan itu leak (kelemahan berulang) yang perlu dibaiki, bukan nasib malang. Jika **ya**, itu nasib malang: cooler jika anda di belakang ketika wang masuk, bad beat jika anda di hadapan lalu dipintas.
+Adakah saya akan membuat keputusan yang sama sekali lagi, dengan hanya maklumat yang saya ada ketika itu — range (julat tangan), harga dan kedalaman stack, bukan sekadar gerak hati? Jika **tidak**, anda tersilap main — dan itu leak (kelemahan berulang) yang perlu dibaiki, bukan nasib malang. Jika **ya** — dan ia masih bertahan apabila anda benar-benar mengira range dan harga itu (banyak call yang salah terasa betul setiap kali) — itu nasib malang: dalam erti ketat, cooler jika dua tangan kuat bertembung dan anda di belakang ketika wang masuk, bad beat jika anda di hadapan lalu dipintas. Draw yang di-call pada harga yang wajar lalu terlepas bukan kedua-duanya — itu sekadar variance.
 :::
 
 Cooler sebenar bermaksud anda bermain dengan betul menggunakan tangan kuat dan bertemu tangan yang lebih besar. Sebaik sahaja "cooler" anda melibatkan call yang anda tidak yakin, bluff yang anda pujuk diri sendiri untuk buat, atau fold yang sepatutnya anda lakukan, ia bukan lagi cooler — ia menjadi **kesilapan yang menyamar.** Bersikap jujur tanpa belas tentang yang mana satu — bukannya melabelkan setiap kekalahan sebagai "tak bernasib baik" — itulah yang membezakan pemain yang bertambah baik daripada pemain yang kekal [fish](/ms/blog/holdem-fish) selama-lamanya.
@@ -158,7 +158,7 @@ A. Masa dan suckout, sekurang-kurangnya dalam erti ketat. Dalam cooler, anda di 
 
 **Q. Adakah cooler itu nasib malang atau permainan yang teruk?**
 
-A. Cooler sebenar ialah nasib malang semata-mata — anda bermain dengan betul dan tetap kalah kerana dua tangan premium bertembung. Masalahnya, "cooler" sering disalah guna untuk menutup kesilapan sebenar. Ujiannya: adakah anda akan membuat keputusan yang sama sekali lagi dengan maklumat yang sama — range, harga dan kedalaman stack, bukan sekadar gerak hati? Jika tidak, itu kesilapan yang boleh anda pelajari. Jika ya, itu nasib malang — dalam erti ketat, cooler jika anda di belakang ketika masuk, bad beat jika anda di hadapan lalu dipintas.
+A. Cooler sebenar ialah nasib malang semata-mata — anda bermain dengan betul dan tetap kalah kerana dua tangan premium bertembung. Masalahnya, "cooler" sering disalah guna untuk menutup kesilapan sebenar. Ujiannya: adakah anda akan membuat keputusan yang sama sekali lagi dengan maklumat yang sama — range, harga dan kedalaman stack, bukan sekadar gerak hati? Jika tidak, itu kesilapan yang boleh anda pelajari. Jika ya — dan ia bertahan apabila dikira dengan range dan harga, bukan sekadar keyakinan — itu nasib malang: dalam erti ketat, cooler jika dua tangan kuat bertembung dan anda di belakang ketika masuk, bad beat jika anda di hadapan lalu dipintas.
 
 **Q. Adakah setup sama dengan cooler?**
 
@@ -194,7 +194,7 @@ A. Tidak sepenuhnya — perkataan ini ada makna perjudian yang lebih lama. Dalam
 
 1. **Cooler ialah kekalahan yang tidak dapat dielakkan dengan tangan yang terlalu kuat untuk di-fold** — dalam erti ketat, anda di belakang ketika wang masuk dan tiada suckout berlaku. Apa pun takrifnya, pemain yang bagus dalam situasi anda juga akan kalah pot besar.
 2. **Dalam takrif ketat, ia bertentangan dengan bad beat.** Bad beat ialah berada di hadapan lalu dipintas; cooler ialah berada di belakang ketika masuk, dengan hanya peluang kecil untuk mengejar. Mengetahui yang mana satu menimpa anda memberitahu sama ada ada apa-apa yang perlu dibaiki.
-3. **Jujurlah tentang beza antara cooler dan kesilapan.** Jika anda akan membuat keputusan yang sama sekali lagi dengan maklumat yang sama, lupakan sahaja. Jika tidak, itu bukan cooler — itu leak yang menyamar.
+3. **Jujurlah tentang beza antara cooler dan kesilapan.** Jika keputusan itu masih bertahan apabila dikira dengan range dan harga, dengan maklumat yang sama — bukan sekadar keyakinan — lupakan sahaja. Jika tidak, itu bukan cooler — itu leak yang menyamar.
 
 Pemain terbaik kalah cooler sama banyak dengan orang lain; mereka cuma tidak membiarkannya membuat kerosakan tambahan. Catatkannya sebagai variance, lindungi beberapa keputusan seterusnya daripada tilt, dan kembali mengatasi pemain lain di [meja](/ms/blog/holdem-fish). Dek akan menyejukkan semua orang akhirnya — kemenangan ialah apa yang anda lakukan dalam semua tangan yang bukan cooler.
 

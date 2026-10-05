@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — um limp não consegue ganhar os blinds sem disputa, você abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de torneio com stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -91,7 +91,7 @@ Tem um segundo benefício, mais silencioso: aumentar **nega equity** aos blinds.
 
 | Spot | Por que limpar é ok aqui |
 |:---|:---|
-| **Completar o small blind (pote sem aumento)** | Ninguém aumentou, você já pagou metade da aposta e só o big blind age atrás — o desconto quebra a regra aumentar-ou-foldar. Diante de um aumento a pergunta é outra: por padrão, 3-bet ou fold. |
+| **Completar o small blind (pote sem aumento)** | Ninguém aumentou, normalmente você já pagou metade da aposta e só o big blind age atrás — o desconto quebra a regra aumentar-ou-foldar. Diante de um aumento a pergunta é outra: por padrão, 3-bet ou fold. |
 | **Over-limpar mãos especulativas** | Atrás de outros limpers com pares pequenos ou suited connectors, você recebe ótimas odds para flopar um monstro num pote multiway. |
 | **Ao vivo muito passivo, stakes baixas** | Se os adversários só aumentam com monstros e nunca punem limpers, você vê flops baratos com mãos especulativas e realiza equity. |
 | **Posição tardia com stack curto (torneios)** | Em stacks curtos de torneio — bem abaixo dos 100bb de um cash game padrão — solvers modernos desenvolvem ranges de open-limp no button, onde um aumento ganha pouco e limpar corta o seu custo. |
@@ -161,11 +161,11 @@ A. Um limp-reraise é quando você limpa, um adversário aumenta atrás de você
 
 **Q. Você deveria alguma vez open-limpar no pré-flop?**
 
-A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. As raras exceções são jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de torneio em posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
+A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. As raras exceções são completar o small blind num pote sem aumento, jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de torneio em posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
 
 **Q. Tudo bem limpar no small blind?**
 
-A. Em mesa passiva, sim — num pote sem aumento, completar o small blind é um dos limps mais defensáveis (em jogo difícil, o padrão moderno do SB segue sendo aumentar ou foldar). Você já pagou metade da aposta, só o big blind pode agir atrás de você, e você está recebendo um preço, então a lógica usual de aumentar-ou-foldar não se aplica do mesmo jeito. Se você completa, aumenta ou folda depende da sua mão e das tendências do big blind, mas limpar aqui está longe de ser o erro que open-limpar em outras posições é. (Diante de um aumento, o padrão do small blind é dar 3-bet ou foldar — quase nunca só pagar.)
+A. Em mesa passiva, sim — num pote sem aumento, completar o small blind é um dos limps mais defensáveis (em jogo difícil, o padrão moderno do SB segue sendo aumentar ou foldar). Normalmente você já pagou metade da aposta, só o big blind pode agir atrás de você, e você está recebendo um preço, então a lógica usual de aumentar-ou-foldar não se aplica do mesmo jeito. Se você completa, aumenta ou folda depende da sua mão e das tendências do big blind, mas limpar aqui está longe de ser o erro que open-limpar em outras posições é. (Diante de um aumento, o padrão do small blind é dar 3-bet ou foldar — quase nunca só pagar.)
 
 **Q. Qual a diferença entre um limper e uma calling station?**
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cuándo foldear en el póker: la habilidad que gana más en silencio",
   seoTitle: "Por qué no sabes soltar una buena mano — cuándo foldear",
   desc: "Foldear es la habilidad ganadora más infravalorada. Cuándo retirarte preflop y en cada calle, el umbral de pot odds y cómo soltar una gran mano.",
-  tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
+  tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas a la larga. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 La mano más cara de mi primer año no fue una que perdí, sino una que me negué a perder. Ligué doble pareja alta, un veterano pasivo me subió en un river emparejado y todas las alarmas gritaban *tiene un full.* Igualé igual. Me dije que "no podía foldear después de meter tanto". Enseñó el full, y conduje a casa reviviendo el momento exacto en que lo supe y pagué de todos modos. Esa noche aprendí la verdad que todo jugador ganador acaba aceptando: ==el fold es la jugada más poderosa del póker, y la más difícil de hacer.==
 
-**Foldear —tirar tu mano al muck en lugar de igualar o subir— es, con diferencia, la habilidad más infravalorada del juego.** No tiene resúmenes de highlights ni subidón de dopamina, pero en el peor de los casos un fold te cuesta exactamente *cero*, mientras que un mal call pierde dinero todas y cada una de las veces. Esta es la guía completa de *cuándo foldear*: antes del flop, en cada calle posterior, la matemática exacta que decide los spots ajustados, cómo soltar una mano genuinamente buena y cómo vencer la psicología que hace que foldear parezca imposible. Es la disciplina que ancla una [estrategia sólida de Texas Hold'em](/es/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp").
+**Foldear —tirar tu mano al muck en lugar de igualar o subir— es, con diferencia, la habilidad más infravalorada del juego.** No tiene resúmenes de highlights ni subidón de dopamina, pero en el peor de los casos un fold te cuesta exactamente *cero*, mientras que un mal call pierde dinero con el tiempo — no en cada mano, sino a la larga. Esta es la guía completa de *cuándo foldear*: antes del flop, en cada calle posterior, la matemática exacta que decide los spots ajustados, cómo soltar una mano genuinamente buena y cómo vencer la psicología que hace que foldear parezca imposible. Es la disciplina que ancla una [estrategia sólida de Texas Hold'em](/es/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp").
 
 ---
 
@@ -129,7 +129,7 @@ Aquí está el secreto que las tablas de estrategia no cuentan: **la mayoría de
 
 **Coste hundido — "ya he metido tanto".** Este es el grande. Las fichas que apostaste antes *ya no son tuyas* — pertenecen al bote. Cada decisión es independiente, juzgada solo por lo que pasa *de aquí en adelante.* "Estoy comprometido con el bote porque he invertido mucho" es la falacia del coste hundido en una silla de póker. (El compromiso real con el bote existe, pero viene del precio *actual* respecto a un bote grande — no de lo que gastaste tres calles atrás.)
 
-**Ego — "tengo que saber si va de farol".** Igualar para saciar la curiosidad, o para evitar el escozor de *quizá* estar siendo faroleado, es pagar el máximo por información que no necesitas. Te van a farolear a veces. No pasa nada — un botón de fold que *nunca* se equivoca significa que estás foldeando muchísimo de más y regalando bote tras bote a los faroles. Gestiona tus decisiones, no tu ego.
+**Ego — "tengo que saber si va de farol".** Igualar para saciar la curiosidad, o para evitar el escozor de *quizá* estar siendo faroleado, es pagar el máximo por información que no necesitas. Te van a farolear a veces. No pasa nada — si tus folds *nunca* se equivocan, no estás foldeando lo suficiente: estás pagando apuesta de valor tras apuesta de valor solo para asegurarte de que nadie te farolee nunca. Gestiona tus decisiones, no tu ego.
 
 **Miedo — foldear la mejor mano ante una carta de miedo.** El fallo opuesto: tan asustado de estar batido que sueltas ganadoras. El arreglo para ambos polos es la misma frase — ==foldea por matemática, no por miedo.== Foldea porque el precio está mal o la historia es valor, no porque "tienes una mala corazonada".
 
@@ -197,7 +197,7 @@ Fíjate en que ambos polos están aquí: foldea *más* contra los jugadores carg
 
 **Q. ¿Cuándo deberías foldear en el póker?**
 
-A. Foldea siempre que igualar o subir pierda dinero a la larga: cuando tu mano es demasiado débil preflop, cuando fallas el flop y encaras agresión en una mesa que encaja con el rango del rival, cuando un proyecto no cumple sus pot odds, y cuando una línea cargada de valor le gana a la mano que tienes. En el peor de los casos un fold te cuesta cero, así que foldear un spot perdedor siempre le gana a pagarlo.
+A. Foldea siempre que igualar o subir pierda dinero a la larga: cuando tu mano es demasiado débil preflop, cuando fallas el flop y encaras agresión en una mesa que encaja con el rango del rival, cuando un proyecto no cumple sus pot odds, y cuando una línea cargada de valor le gana a la mano que tienes. En el peor de los casos un fold te cuesta cero, así que, cuando pagar pierde dinero al precio que te dan, foldear siempre le gana al call — ir por detrás no basta, porque un precio lo bastante bueno puede hacer correcto pagar con una mano que suele ir por detrás.
 
 **Q. ¿Pierdes dinero cuando foldeas en el póker?**
 
@@ -233,7 +233,7 @@ A. Cuando es genuinamente ajustado y no estás seguro, foldear suele ser la mejo
 
 **Q. ¿Cómo sabes cuándo foldear a un raise en el river?**
 
-A. Trata un raise en el river, especialmente de un jugador pasivo, como valor hasta que se demuestre lo contrario. La mayoría no tiene suficientes faroles en su rango de raise en el river, así que un raise grande suele significar una mano que le gana a una pareja o a doble pareja. A menos que el rival sea agresivo y capaz de farolear con un raise, foldear todo salvo tus manos más fuertes es lo correcto.
+A. Trata un raise en el river, especialmente de un jugador pasivo, como valor hasta que se demuestre lo contrario. La mayoría no tiene suficientes faroles en su rango de raise en el river, así que un raise grande suele significar una mano que le gana a una pareja o a doble pareja. A menos que el rival sea agresivo y capaz de farolear con un raise, foldear todo salvo tus manos más fuertes suele ser lo correcto — el precio que te dan solo salva un call si su rango tiene suficientes faroles para justificarlo.
 
 **Q. ¿Foldear es señal de debilidad?**
 

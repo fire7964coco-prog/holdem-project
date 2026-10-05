@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet ialah re-raise pertama sebelum flop — bet ketiga selepas big blind dan open-raise. Value 3-bet dengan QQ+ dan AK, tambah beberapa bluff blocker suited seperti A5s; saiz kira-kira 3x open in position dan 4x out of position, dengan kekerapan keseluruhan sekitar 6–10%. Bila kena 3-bet: 4-bet tangan premium, call tangan yang main baik, fold selebihnya.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
   emoji: "♦️",
@@ -83,7 +83,7 @@ Range 3-bet yang menang mempunyai **dua bahagian berbeza**: value 3-bet dengan t
 
 </div>
 
-Inilah logik blocker dalam satu ayat: **memegang As menjadikan lawan secara matematik kurang berkemungkinan memegang AA atau AK**, jadi A5s ialah bluff yang jauh lebih baik berbanding, katakan, A9o — yang menyekat premium yang sama tetapi teruk dimainkan apabila di-call dan hanya membentuk pasangan lemah. Equity sandaran penting kerana lawan tidak akan fold setiap kali; anda mahu bluff yang masih boleh memenangi pot. Sebab itulah A5s ≈ 30% equity terhadap range call QQ+/AK, manakala sampah offsuit jauh di bawahnya. Ini disiplin [tangan permulaan](/ms/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") yang sama seperti biasa — cuma digunakan untuk re-raise.
+Inilah logik blocker dalam satu ayat: **memegang As menjadikan lawan secara matematik kurang berkemungkinan memegang AA atau AK**, jadi A5s ialah bluff yang jauh lebih baik berbanding, katakan, A9o — yang menyekat premium yang sama tetapi teruk dimainkan apabila di-call dan kebanyakannya hanya membentuk pasangan lemah. Equity sandaran penting kerana lawan tidak akan fold setiap kali; anda mahu bluff yang masih boleh memenangi pot. Sebab itulah A5s ≈ 30% equity terhadap range call QQ+/AK, manakala sampah offsuit jauh di bawahnya. Ini disiplin [tangan permulaan](/ms/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") yang sama seperti biasa — cuma digunakan untuk re-raise.
 
 ---
 

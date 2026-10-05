@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler in the strict sense, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but a steady stream of bad beats usually means opponents are putting money in behind — the kind of game you want to be in.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -184,7 +184,7 @@ A. A bad beat jackpot is a progressive prize some cardrooms pay when an exceptio
 
 **Q. What is the worst bad beat in poker history?**
 
-A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand only a straight flush can beat — and still lost. He flopped a set of aces, Justin Phillips made an ace-high straight on the turn, and then the case ace on the river completed Mabuchi's four of a kind and, on the same card, turned Phillips' straight into a royal flush in diamonds. Making the best four of a kind possible and running into a straight flush — the one category of hand that outranks it — is about as bad as a bad beat gets.
+A. The most famous is from the 2008 WSOP Main Event: Motoyuki Mabuchi made quad aces — a hand only a straight flush can beat — and still lost. He flopped a set of aces, Justin Phillips made an ace-high straight on the turn, and then the case ace on the river completed Mabuchi's four of a kind and, on the same card, turned Phillips' straight into a royal flush in diamonds. Making the best four of a kind possible and running into a straight flush — the one category of hand that outranks it — is about as brutal as poker luck gets. By this guide's strict test it's not a clean bad beat (the big river all-in went in with Phillips already ahead), but poker remembers it as the most famous one ever.
 
 **Q. Are bad beats more common online?**
 

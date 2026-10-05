@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -83,7 +83,7 @@ Range 3-bet yang menang punya **dua bagian berbeda**, dan memahami pembagian ini
 
 </div>
 
-Inilah logika blocker dalam satu kalimat: **memegang sebuah ace membuatnya secara matematis lebih kecil kemungkinan lawan Anda memegang aces atau ace-king**, jadi A5s adalah bluff yang jauh lebih baik daripada, katakanlah, A9o — yang memblokir premium yang sama tapi bermain buruk saat di-call dan hanya membuat pasangan lemah. Equity cadangan penting karena lawan Anda tak akan fold setiap kali; Anda ingin bluff yang masih bisa memenangkan pot. Itu sebabnya A5s ≈ 30% equity melawan range call QQ+/AK, sementara sampah offsuit duduk jauh di bawahnya. Ini adalah disiplin [starting-hand](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") yang sama seperti biasa — hanya diterapkan pada re-raising.
+Inilah logika blocker dalam satu kalimat: **memegang sebuah ace membuatnya secara matematis lebih kecil kemungkinan lawan Anda memegang aces atau ace-king**, jadi A5s adalah bluff yang jauh lebih baik daripada, katakanlah, A9o — yang memblokir premium yang sama tapi bermain buruk saat di-call dan sebagian besar hanya membuat pasangan lemah. Equity cadangan penting karena lawan Anda tak akan fold setiap kali; Anda ingin bluff yang masih bisa memenangkan pot. Itu sebabnya A5s ≈ 30% equity melawan range call QQ+/AK, sementara sampah offsuit duduk jauh di bawahnya. Ini adalah disiplin [starting-hand](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") yang sama seperti biasa — hanya diterapkan pada re-raising.
 
 ---
 

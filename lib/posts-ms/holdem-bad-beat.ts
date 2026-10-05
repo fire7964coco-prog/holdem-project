@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -187,7 +187,7 @@ A. Bad beat jackpot ialah hadiah progresif yang dibayar oleh sesetengah bilik ka
 
 **Q. Apa bad beat paling teruk dalam sejarah poker?**
 
-A. Yang paling terkenal datang daripada 2008 WSOP Main Event: Motoyuki Mabuchi membentuk quad aces — tangan yang hanya boleh dikalahkan oleh straight flush — dan tetap kalah. Dia mendapat set aces di flop, Justin Phillips membentuk straight ace-high di turn, kemudian ace terakhir di river melengkapkan four of a kind Mabuchi dan, pada kad yang sama, menukar straight Phillips menjadi royal flush diamond. Membentuk four of a kind terbaik yang mungkin lalu bertembung straight flush — satu-satunya kategori tangan yang lebih tinggi daripadanya — hampir tiada bad beat yang boleh lebih teruk daripada itu.
+A. Yang paling terkenal datang daripada 2008 WSOP Main Event: Motoyuki Mabuchi membentuk quad aces — tangan yang hanya boleh dikalahkan oleh straight flush — dan tetap kalah. Dia mendapat set aces di flop, Justin Phillips membentuk straight ace-high di turn, kemudian ace terakhir di river melengkapkan four of a kind Mabuchi dan, pada kad yang sama, menukar straight Phillips menjadi royal flush diamond. Membentuk four of a kind terbaik yang mungkin lalu bertembung straight flush — satu-satunya kategori tangan yang lebih tinggi daripadanya — nasib poker hampir tidak boleh lebih kejam daripada itu. Mengikut ujian ketat panduan ini, ia bukan bad beat yang bersih (all-in besar di river masuk ketika Phillips sudah di hadapan), tetapi dunia poker mengingatinya sebagai bad beat paling terkenal sepanjang zaman.
 
 **Q. Adakah bad beat lebih kerap berlaku dalam poker online?**
 

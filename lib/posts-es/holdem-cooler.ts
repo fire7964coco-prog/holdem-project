@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que casi nunca podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. En el sentido estricto que usa esta guía, ibas por detrás cuando entró el dinero y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -29,7 +29,7 @@ Un **cooler** es una mano en la que ligas algo muy fuerte, pierdes un bote grand
 Por detrás al entrar | La prueba estricta: dónde estabas cuando entró el dinero
 Sin suckout | En sentido estricto, el ganador iba delante de principio a fin
 Demasiado fuerte para foldear | Por qué lo pagaste
-No es culpa tuya | La única derrota por la que no deberías tiltearte
+No es culpa tuya | Una de las derrotas por las que no deberías tiltearte
 :::
 
 ---
@@ -121,7 +121,7 @@ Ahora la verdad incómoda, y la razón por la que esta palabra importa para tu m
 Hay una prueba de fuego muy limpia, y los jugadores honestos la usan tras cada derrota grande:
 
 :::pull
-¿Volvería a hacer exactamente la misma jugada, solo con la información que tenía en ese momento — rangos, precio y profundidad de stacks, no solo la corazonada? Si es **no**, jugaste mal — y eso es un leak que arreglar, no mala suerte. Si la respuesta es **sí**, fue mala suerte: un cooler si ibas por detrás cuando entró el dinero, un bad beat si ibas por delante y te cazaron.
+¿Volvería a hacer exactamente la misma jugada, solo con la información que tenía en ese momento — rangos, precio y profundidad de stacks, no solo la corazonada? Si es **no**, jugaste mal — y eso es un leak que arreglar, no mala suerte. Si la respuesta es **sí** — y la jugada sigue en pie cuando de verdad haces las cuentas con esos rangos y ese precio (muchos calls equivocados parecen correctos todas las veces) —, fue mala suerte: en sentido estricto, un cooler si dos manos fuertes chocaron e ibas por detrás cuando entró el dinero, un bad beat si ibas por delante y te cazaron. Un proyecto pagado al precio correcto que no entró no es ninguna de las dos cosas — es solo varianza.
 :::
 
 Un cooler de verdad significa que jugaste correctamente con una mano fuerte y te topaste con otra mayor. En el momento en que tu "cooler" incluye un call del que no estabas seguro, un farol que te convenciste a ti mismo de tirar, o un fold que deberías haber hecho, deja de ser un cooler y se convierte en un **error disfrazado.** Ser despiadadamente honesto sobre cuál es cuál — en lugar de archivar cada derrota bajo "mala suerte" — es exactamente lo que separa a los jugadores que mejoran de los que se quedan siendo [peces](/es/blog/holdem-fish) para siempre.
@@ -160,7 +160,7 @@ A. El momento y los suckouts, al menos en sentido estricto. En un cooler ibas **
 
 **Q. ¿Un cooler es mala suerte o mala jugada?**
 
-A. Un cooler de verdad es pura mala suerte — jugaste correctamente y aun así perdiste porque dos manos premium chocaron. La trampa es que "cooler" se usa a menudo mal para excusar un error real. La prueba: ¿volverías a hacer la misma jugada con la misma información — rangos, precio y profundidad de stacks, no solo la corazonada? Si no, fue un error del que puedes aprender. Si sí, fue mala suerte — en sentido estricto, un cooler si ibas por detrás al entrar las fichas, un bad beat si ibas por delante y te cazaron.
+A. Un cooler de verdad es pura mala suerte — jugaste correctamente y aun así perdiste porque dos manos premium chocaron. La trampa es que "cooler" se usa a menudo mal para excusar un error real. La prueba: ¿volverías a hacer la misma jugada con la misma información — rangos, precio y profundidad de stacks, no solo la corazonada? Si no, fue un error del que puedes aprender. Si sí — y la jugada se sostiene con rangos y precio, no solo por convicción —, fue mala suerte: en sentido estricto, un cooler si dos manos fuertes chocaron e ibas por detrás al entrar las fichas, un bad beat si ibas por delante y te cazaron.
 
 **Q. ¿Un setup es lo mismo que un cooler?**
 
@@ -196,7 +196,7 @@ A. No del todo — la palabra tiene un significado más antiguo en el mundo del 
 
 1. **Un cooler es una derrota inevitable con una mano demasiado fuerte para foldear** — en sentido estricto, ibas por detrás cuando entró el dinero y no hubo suckout, y un buen jugador en tu spot también habría perdido un bote grande.
 2. **En sentido estricto, es lo contrario de un bad beat.** Un bad beat es ir por delante y que te superen con un proyecto; un cooler es ir por detrás al entrar las fichas, con solo una pequeña opción de remontar. Saber cuál te tocó te dice si hay algo que corregir.
-3. **Sé honesto sobre la diferencia entre un cooler y un error.** Si volverías a hacer la jugada con la misma información, encógete de hombros. Si no lo harías, no fue un cooler — fue un leak disfrazado.
+3. **Sé honesto sobre la diferencia entre un cooler y un error.** Si la jugada sigue en pie con rangos y precio, con la misma información — no solo por convicción —, encógete de hombros. Si no, no fue un cooler — fue un leak disfrazado.
 
 Los mejores jugadores pierden exactamente tantos coolers como todos los demás; simplemente no dejan que hagan ningún daño extra. Anótalo como varianza, protege tus siguientes decisiones del tilt, y vuelve a jugar mejor que la [mesa](/es/blog/holdem-fish). La baraja enfría a todo el mundo tarde o temprano — ganar es lo que haces en todas las manos que no son coolers.
 

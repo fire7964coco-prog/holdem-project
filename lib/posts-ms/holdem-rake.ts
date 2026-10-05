@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake ialah potongan kecil yang bilik kad ambil daripada kebanyakan pot sebagai bayaran menganjurkan permainan — biasanya 2.5–10% sehingga had (cap) beberapa dolar. Kebanyakan bilik tidak mengambil apa-apa jika semua orang fold sebelum flop ('no flop, no drop'). Rake paling memberi kesan kepada pemain stakes rendah dan meja short-handed, dan rakeback memulangkan sebahagian daripadanya kepada pemain tetap.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -178,7 +178,7 @@ A. Dengan ketara — paling ketara di stakes rendah, kerana cap tidak mengecil s
 
 **Q. Rake poker online atau live yang lebih tinggi?**
 
-A. Rake live lazimnya berperatusan lebih tinggi, biasanya dengan cap lebih tinggi, tetapi anda bermain jauh lebih sedikit tangan sejam. Rake online biasanya berperatusan lebih rendah dengan cap lebih kecil — cap berbeza mengikut bilik dan stakes, malah ada cap online yang lebih tinggi daripada cap live — tetapi multi-tabling bermakna anda membayarnya pada jauh lebih banyak tangan — jadi grinder volum tinggi boleh membayar lebih banyak rake sejam secara online. Nilai rake berdasarkan kadar didarab kekerapan, bukan kadar semata-mata.
+A. Rake live lazimnya berperatusan lebih tinggi, biasanya dengan cap lebih tinggi, tetapi anda bermain jauh lebih sedikit tangan sejam. Rake online biasanya berperatusan lebih rendah dengan cap lebih kecil — cap berbeza mengikut bilik dan stakes, malah ada cap online yang lebih tinggi daripada cap live — tetapi multi-tabling bermakna anda membayarnya pada jauh lebih banyak tangan — jadi grinder volum tinggi boleh membayar lebih banyak rake sejam secara online. Nilai rake berdasarkan jumlah yang benar-benar anda bayar bagi setiap pot — peratusannya, sehingga cap — didarab dengan bilangan pot yang anda bayar rakenya, bukan kadar semata-mata.
 
 ---
 

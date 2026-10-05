@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "bad beat（爆冷输牌／走背运）就是你作为大热门——通常 80% 或以上——把钱推进去，却因对手摸到一张幸运牌“suck out”逆袭你而输掉。跟严格意义上的 cooler 不同，钱推进去时你是领先的；只是这副牌在最后一刻背叛了你。它很扎心，但源源不断的 bad beat 通常说明对手在落后时把钱推进去——那正是你想坐的牌局。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 分钟",
   emoji: "💔",
@@ -211,7 +211,7 @@ A. 大多数牌室要卡住四个硬条件，缺一条就领不到：**①牌力
 
 **Q. 扑克史上最惨的 bad beat 是什么？**
 
-A. 最著名的来自 2008 年 WSOP 主赛事：Motoyuki Mabuchi 凑成了四条 A——一手只有同花顺能击败的牌——却还是输了。他翻牌击中暗三条 A，Justin Phillips 在转牌做出了 A 高的顺子，然后 river 河牌那张 case ace（仅剩的那张 A）凑成了 Mabuchi 的四条，而在同一张牌上，又把 Phillips 的顺子变成了方块同花大顺。凑成扑克里最大的四条，却撞上唯一能压过它的同花顺，这差不多就是 bad beat 惨到极点的样子了。
+A. 最著名的来自 2008 年 WSOP 主赛事：Motoyuki Mabuchi 凑成了四条 A——一手只有同花顺能击败的牌——却还是输了。他翻牌击中暗三条 A，Justin Phillips 在转牌做出了 A 高的顺子，然后 river 河牌那张 case ace（仅剩的那张 A）凑成了 Mabuchi 的四条，而在同一张牌上，又把 Phillips 的顺子变成了方块同花大顺。凑成扑克里最大的四条，却撞上唯一能压过它的同花顺，扑克的运气差不多就残酷到极点了。不过按本文采用的严格说法，这并不算一次干净的 bad beat（河牌那次大额全下时，Phillips 已经领先了）——但扑克世界记住它，是把它当作史上最著名的 bad beat。
 
 **Q. bad beat 在线上更常见吗？**
 

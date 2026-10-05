@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus den meisten Pots nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -197,7 +197,7 @@ A. Erheblich – am stärksten bei Low Stakes, wo das Cap nicht mit den Stakes r
 
 **Q. Ist der Rake online oder live höher?**
 
-A. Live ist der Prozentsatz meist höher und das Cap in der Regel größer, dafür spielst du pro Stunde weit weniger Hände. Online ist der Prozentsatz meist niedriger und das Cap kleiner – die Caps schwanken allerdings je nach Room und Limit, und manche Online-Caps liegen sogar über denen im Live-Casino –, aber Multitabling heißt, dass du ihn auf sehr viel mehr Händen zahlst – ein Volumen-Grinder kann online also pro Stunde mehr Rake zahlen. Beurteile den Rake nach Satz mal Häufigkeit, nie nach dem Satz allein.
+A. Live ist der Prozentsatz meist höher und das Cap in der Regel größer, dafür spielst du pro Stunde weit weniger Hände. Online ist der Prozentsatz meist niedriger und das Cap kleiner – die Caps schwanken allerdings je nach Room und Limit, und manche Online-Caps liegen sogar über denen im Live-Casino –, aber Multitabling heißt, dass du ihn auf sehr viel mehr Händen zahlst – ein Volumen-Grinder kann online also pro Stunde mehr Rake zahlen. Beurteile den Rake danach, was du pro Pot tatsächlich zahlst – den Prozentsatz bis zum Cap –, mal der Zahl der Pots, in denen du ihn zahlst, nie nach dem Satz allein.
 
 **Q. Woran erkennst du, ob ein Raum einen fairen Rake hat?**
 

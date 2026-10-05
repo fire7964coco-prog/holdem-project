@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler no sentido estrito, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas uma sequência constante de bad beats normalmente significa que os adversários estão colocando dinheiro atrás — o tipo de jogo em que você quer estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -185,7 +185,7 @@ A. Um bad beat jackpot é um prêmio progressivo que algumas salas pagam quando 
 
 **Q. Qual é o pior bad beat da história do poker?**
 
-A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão que só um straight flush bate — e mesmo assim perdeu. Ele flopou uma trinca de ases, Justin Phillips fez uma sequência de ás no turn, e então o ás restante no river completou a quadra de Mabuchi e, na mesma carta, transformou a sequência de Phillips num royal flush de ouros. Fazer a melhor quadra possível e esbarrar num straight flush — a única categoria de mão que a supera — é mais ou menos o pior que um bad beat consegue ser.
+A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão que só um straight flush bate — e mesmo assim perdeu. Ele flopou uma trinca de ases, Justin Phillips fez uma sequência de ás no turn, e então o ás restante no river completou a quadra de Mabuchi e, na mesma carta, transformou a sequência de Phillips num royal flush de ouros. Fazer a melhor quadra possível e esbarrar num straight flush — a única categoria de mão que a supera — é mais ou menos o mais cruel que a sorte no poker consegue ser. Pelo teste estrito deste guia, não é um bad beat limpo (o grande all-in do river entrou com Phillips já na frente), mas o poker o lembra como o mais famoso de todos.
 
 **Q. Os bad beats são mais comuns online?**
 
