@@ -130,7 +130,7 @@ La clave: el min-raise iguala el ==incremento== de la última apuesta o subida c
 
 Dos reglas del póker en vivo que vienen con la subida:
 
-1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: apostar o subir en varios movimientos (volviendo a tu stack por el camino) **sin** anunciar antes "subo" — o usar un gesto engañoso para provocar acción fuera de turno (==regla 103==).
+1. **Anuncia "subo" — y la cantidad — antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: apostar o subir en varios movimientos (volviendo a tu stack por el camino) **sin** anunciar antes "subo" — o usar un gesto engañoso para provocar acción fuera de turno (==regla 103==).
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
 *Cuánto* deberías subir (aperturas de 2.5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
@@ -227,7 +227,7 @@ A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). El segundo movimiento nunca cuenta — solo valen las primeras fichas, aplicando primero las reglas de call con una o varias fichas (reglas 44–45 de la TDA, edición de 2024). Cuando corresponde el umbral de la mitad de la regla 43-A, se mide el incremento por encima del call, no el total: menos de la mitad de la mayor apuesta o incremento de subida completos anteriores es call; la mitad o más obliga a completar la subida mínima. Una declaración previa de subida o un all-in se rigen por sus reglas propias. La regla 103 también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
+A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). El segundo movimiento nunca cuenta — solo valen las primeras fichas, aplicando primero las reglas de call con una o varias fichas (reglas 44–45 de la TDA, edición de 2024). Cuando corresponde el umbral de la mitad de la regla 43-A, se mide el incremento por encima del call, no el total: menos de la mitad de la mayor apuesta o incremento de subida completos anteriores es call; la mitad o más obliga a completar la subida mínima. Una declaración previa de subida o un all-in se rigen por sus reglas propias. La regla 103 también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta — "subo" y la cantidad total — o mueve todas las fichas en un solo movimiento (regla 42 de la TDA, edición de 2024).
 
 **Q. ¿Qué significa limpear en el póker?**
 

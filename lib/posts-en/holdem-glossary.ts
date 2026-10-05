@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -274,7 +274,7 @@ A. Both are three of a kind and rank identically, but they're made differently. 
 
 **Q. What is the difference between a cooler and a bad beat?**
 
-A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler — in the strict sense — you were behind when the money went in with a hand too strong to fold, and no lucky card was needed; some players use "cooler" for any big hand that loses to a bigger one. Quick test: if you were a heavy favorite going in and your opponent had to *improve* to win, it's a bad beat; if they were already ahead going in, it's a cooler.
+A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler — in the strict sense — you were behind when the money went in with a hand too strong to fold, and no lucky card was needed; some players use "cooler" for any big hand that loses to a bigger one. Quick test: if you were a heavy favorite going in and your opponent had to *improve* to win, it's a bad beat; if they were already ahead going in and your hand was too strong to fold, it's a cooler (simply being behind with a weaker hand is neither — just a lost pot).
 
 **Q. What is a 3-bet in poker, and why isn't the first raise the "1-bet"?**
 

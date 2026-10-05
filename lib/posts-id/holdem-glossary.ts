@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -275,7 +275,7 @@ A. Keduanya three of a kind dan berperingkat identik, tapi dibuat secara berbeda
 
 **Q. Apa perbedaan antara cooler dan bad beat?**
 
-A. Dalam bad beat Anda adalah favorit saat uang masuk lalu tersalip oleh kartu beruntung. Dalam cooler — dalam arti ketat — Anda sudah tertinggal saat uang masuk dengan tangan yang terlalu kuat untuk difold, dan tak butuh kartu beruntung apa pun; sebagian pemain memakai "cooler" untuk tangan besar apa pun yang kalah oleh tangan lebih besar. Tes cepat: kalau Anda favorit berat saat masuk dan lawan Anda harus *membaik* untuk menang, itu bad beat; kalau lawan sudah unggul saat masuk, itu cooler.
+A. Dalam bad beat Anda adalah favorit saat uang masuk lalu tersalip oleh kartu beruntung. Dalam cooler — dalam arti ketat — Anda sudah tertinggal saat uang masuk dengan tangan yang terlalu kuat untuk difold, dan tak butuh kartu beruntung apa pun; sebagian pemain memakai "cooler" untuk tangan besar apa pun yang kalah oleh tangan lebih besar. Tes cepat: kalau Anda favorit berat saat masuk dan lawan Anda harus *membaik* untuk menang, itu bad beat; kalau lawan sudah unggul saat masuk dan tangan Anda terlalu kuat untuk difold, itu cooler (sekadar tertinggal dengan tangan yang lebih lemah bukan keduanya — itu cuma pot yang kalah).
 
 **Q. Apa itu 3-bet di poker, dan kenapa raise pertama bukan disebut "1-bet"?**
 

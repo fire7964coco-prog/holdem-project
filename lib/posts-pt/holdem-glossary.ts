@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -279,7 +279,7 @@ A. Ambos são uma trinca e valem exatamente o mesmo, mas são formados de jeitos
 
 **Q. Qual é a diferença entre um cooler e um bad beat?**
 
-A. Num bad beat você era o favorito quando o dinheiro entrou e foi ultrapassado por uma carta de sorte. Num cooler — no sentido estrito — você estava atrás quando o dinheiro entrou com uma mão forte demais pra largar, e nenhuma carta de sorte foi necessária; tem jogador que chama de cooler qualquer mão grande que perde pra uma maior. Teste rápido: se você era favorito pesado ao entrar e o oponente precisou *melhorar* pra ganhar, é bad beat; se ele já estava na frente quando o dinheiro entrou, é cooler.
+A. Num bad beat você era o favorito quando o dinheiro entrou e foi ultrapassado por uma carta de sorte. Num cooler — no sentido estrito — você estava atrás quando o dinheiro entrou com uma mão forte demais pra largar, e nenhuma carta de sorte foi necessária; tem jogador que chama de cooler qualquer mão grande que perde pra uma maior. Teste rápido: se você era favorito pesado ao entrar e o oponente precisou *melhorar* pra ganhar, é bad beat; se ele já estava na frente quando o dinheiro entrou e a sua mão era forte demais pra largar, é cooler (só estar atrás com uma mão mais fraca não é nem um nem outro — é só um pote perdido).
 
 **Q. O que é um 3-bet no poker, e por que o primeiro aumento não é o "1-bet"?**
 

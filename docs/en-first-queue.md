@@ -366,7 +366,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | X-5 | betting | FAQ «프리플랍 체크 가능 조건» | «모두가 맞춰야 하는 온전한 라이브 벳 · 스트래들 없으면 BB, 있으면 스트래들러 · SB 절반 벳 불가 · 스트래들 팟 BB는 콜·레이즈·폴드» |
 | X-6 | id betting | 실수 2 string bet 괄호 | «dengan kembali ke stack Anda di tengah jalan» 복원(ID 고유) |
 
-- 🪶 통지 1(판단 쟁점 · 자동 착수 금지): string bet 정의 «without announcing "raise" first (Rule 103)» = WSOP A 103 축어라 유지 · «raise와 금액을 먼저 말하라» 보강(TDA 42 · A 94.b · B 178 금액 선언 기준) 여부는 사장님 판단 · 접두 없는 «Rule 103» 표기(B에서 다른 조항) 정리 후보.
+- ✅ 통지 1 = 사장님 «권고대로»(10-06 (3) · MB-180): 정의(WSOP 103 축어)는 유지 · 실수 1 제목 «"raise" — and the amount —» · FAQ 끝 «"raise" and the full amount … (TDA 2024 Rule 42)»(docs/sources/tda-2024-rules-v1.txt 축어 확인) → 9로케일. 🪶 남음: 접두 없는 «Rule 103» 표기(B에서 다른 조항) 정리 후보.
+- ✅ §2-W 🪶 «Quick test 강한 손 충돌 조건» = 사장님 «권고대로»(10-06 (3) · MB-180): bad-beat·glossary FAQ «if they were already ahead going in **and your hand was too strong to fold**, it's a cooler (simply being behind with a weaker hand is neither — just a lost pot)» → 8로케일(de bad-beat는 해당 FAQ 없음 · es glossary는 FAQ 2자리).
 - 🪶 통지 2(EN 동형 후보 · EN 손질 때): showdown 올인 표 캐시 «must show (Live Action Rule 143)» ↔ 조문 단서 «unless that participant has the only remaining live hand» · betting 사이드팟 «excess chips form a side pot»(헤즈업 미콜분은 반환) · «until someone is all-in»(올인 뒤 나머지끼리 레이즈 가능) · blind «BB defense = Call raise»(3벳 포함) · SB raise-or-fold 결론의 토너먼트 일반화.
 - 🪶 통지 3(ID 현지화 · MA-329 계열): blind 캐시 스테이크·바이인 블록에 인도네시아 한정 없음 — 현지화 손질 때.
 - 🪶 꼬리 15로케일(bn fa fil fr he hi it pl ro ru sw th tr uk vi) 같은 3편 = 이번 미전파(§2-Q 잔여와 같은 옛 판 부채 · 자동 착수 금지). ms blind 노트에 «라이브 스트래들이 마지막 자리» 문장 없음(뒤처짐).

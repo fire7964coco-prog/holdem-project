@@ -131,7 +131,7 @@ O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou rai
 
 Duas regras do poker ao vivo que vêm junto com o raise:
 
-1. **Anuncie "raise" antes de mover as fichas.** Disse "call" e depois empurrou mais? Sua declaração já era vinculante (==regra 90.d==) — o extra não conta. O ==string bet== de verdade é outra coisa: colocar fichas em vários movimentos que incluem um retorno ao seu stack **sem** anunciar "raise" antes — ou usar um gesto enganoso para provocar ação fora de vez (==regra 103==).
+1. **Anuncie "raise" e o valor antes de mover as fichas.** Disse "call" e depois empurrou mais? Sua declaração já era vinculante (==regra 90.d==) — o extra não conta. O ==string bet== de verdade é outra coisa: colocar fichas em vários movimentos que incluem um retorno ao seu stack **sem** anunciar "raise" antes — ou usar um gesto enganoso para provocar ação fora de vez (==regra 103==).
 2. **Um movimento só.** Se você não anunciar, suas fichas precisam entrar em um único movimento para a frente.
 
 *Quanto* você deve aumentar (opens de 2,5x, 3-bets de 3x, sizing pela textura do board) é estratégia, não regra — isso mora no [pilar de estratégia do Texas Hold'em](/pt/blog/holdem-strategy).
@@ -228,7 +228,7 @@ A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a a�
 
 **Q. O que é string bet no poker?**
 
-A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O segundo movimento nunca conta — só valem as primeiras fichas, avaliadas primeiro pelas regras de call com uma ou várias fichas (regras 44–45 da TDA, edição de 2024). Quando se aplica o limite de metade da regra 43-A, mede-se o acréscimo acima do call, não o total: abaixo de metade da maior aposta completa ou do maior incremento de raise completo anterior é call; metade ou mais obriga a completar o min-raise. Uma declaração prévia de raise ou um all-in seguem suas próprias regras. A regra 103 também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
+A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O segundo movimento nunca conta — só valem as primeiras fichas, avaliadas primeiro pelas regras de call com uma ou várias fichas (regras 44–45 da TDA, edição de 2024). Quando se aplica o limite de metade da regra 43-A, mede-se o acréscimo acima do call, não o total: abaixo de metade da maior aposta completa ou do maior incremento de raise completo anterior é call; metade ou mais obriga a completar o min-raise. Uma declaração prévia de raise ou um all-in seguem suas próprias regras. A regra 103 também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta — "raise" e o valor total — ou mova todas as fichas em um único movimento (regra 42 da TDA, edição de 2024).
 
 **Q. O que significa dar limp no poker?**
 

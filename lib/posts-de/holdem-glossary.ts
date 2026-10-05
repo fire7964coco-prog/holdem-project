@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -316,7 +316,7 @@ A. Beide sind ein Drilling und ranken gleich, aber sie entstehen unterschiedlich
 
 **Q. Was ist der Unterschied zwischen einem Cooler und einem Bad Beat?**
 
-A. Bei einem Bad Beat warst du der Favorit, als das Geld reinging, und wurdest von einer Glückskarte outgedrawt. Bei einem Cooler – im engeren Sinn – lagst du schon beim Reingehen hinten, mit einer Hand, die zu stark zum Folden war, und es brauchte keine Glückskarte; manche Spieler nennen allerdings jede große Hand, die gegen eine noch größere verliert, einen Cooler. Schnelltest: Warst du beim Reingehen klarer Favorit und musste dein Gegner sich *verbessern*, um zu gewinnen, ist es ein Bad Beat; lag er beim Reingehen schon vorn, ist es ein Cooler.
+A. Bei einem Bad Beat warst du der Favorit, als das Geld reinging, und wurdest von einer Glückskarte outgedrawt. Bei einem Cooler – im engeren Sinn – lagst du schon beim Reingehen hinten, mit einer Hand, die zu stark zum Folden war, und es brauchte keine Glückskarte; manche Spieler nennen allerdings jede große Hand, die gegen eine noch größere verliert, einen Cooler. Schnelltest: Warst du beim Reingehen klarer Favorit und musste dein Gegner sich *verbessern*, um zu gewinnen, ist es ein Bad Beat; lag er beim Reingehen schon vorn und war deine Hand zu stark zum Folden, ist es ein Cooler (nur mit einer schwächeren Hand hinten zu liegen ist keines von beiden – einfach ein verlorener Pot).
 
 **Q. Was ist eine 3-Bet im Poker, und warum ist der erste Raise nicht die „1-Bet“?**
 

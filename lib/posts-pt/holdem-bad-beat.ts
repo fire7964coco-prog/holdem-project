@@ -173,7 +173,7 @@ A. Um bad beat é quando você perde uma mão que era favorito estatístico fort
 
 **Q. Qual a diferença entre um bad beat e um cooler?**
 
-A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler, no sentido estrito, você estava atrás quando o dinheiro entrou com uma mão forte demais pra foldar, e nenhum suckout aconteceu (tem jogador que usa "cooler" de forma mais solta, pra qualquer mão grande que perde pra uma maior). Teste rápido: se você era favorito pesado ao entrar e o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente quando o dinheiro entrou, é um cooler. Trinca sobre trinca com as duas flopadas e o dinheiro entrando no flop, por exemplo, é um cooler, não um bad beat — se a trinca maior chegou no turn ou no river depois que as fichas entraram, foi suckout.
+A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler, no sentido estrito, você estava atrás quando o dinheiro entrou com uma mão forte demais pra foldar, e nenhum suckout aconteceu (tem jogador que usa "cooler" de forma mais solta, pra qualquer mão grande que perde pra uma maior). Teste rápido: se você era favorito pesado ao entrar e o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente quando o dinheiro entrou e a sua mão era forte demais pra foldar, é um cooler (só estar atrás com uma mão mais fraca não é nem um nem outro — é só um pote perdido). Trinca sobre trinca com as duas flopadas e o dinheiro entrando no flop, por exemplo, é um cooler, não um bad beat — se a trinca maior chegou no turn ou no river depois que as fichas entraram, foi suckout.
 
 **Q. Perder um coinflip é um bad beat?**
 

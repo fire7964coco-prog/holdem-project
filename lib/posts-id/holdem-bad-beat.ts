@@ -173,7 +173,7 @@ A. Bad beat adalah saat Anda kalah di sebuah tangan yang seharusnya Anda menangk
 
 **Q. Apa perbedaan antara bad beat dan cooler?**
 
-A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler, dalam arti ketat, Anda sudah tertinggal saat uang masuk dengan tangan terlalu kuat untuk fold, dan tak ada suckout (sebagian pemain memakai "cooler" lebih longgar, untuk tangan besar apa pun yang kalah oleh tangan lebih besar). Uji cepat: jika Anda favorit berat saat masuk dan lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul saat masuk, itu cooler. Set over set yang kedua set-nya sama-sama di-flop dan uangnya masuk di flop, misalnya, adalah cooler, bukan bad beat — kalau set yang lebih besar baru datang di turn atau river setelah chip masuk, itu suckout.
+A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler, dalam arti ketat, Anda sudah tertinggal saat uang masuk dengan tangan terlalu kuat untuk fold, dan tak ada suckout (sebagian pemain memakai "cooler" lebih longgar, untuk tangan besar apa pun yang kalah oleh tangan lebih besar). Uji cepat: jika Anda favorit berat saat masuk dan lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul saat masuk dan tangan Anda terlalu kuat untuk fold, itu cooler (sekadar tertinggal dengan tangan yang lebih lemah bukan keduanya — itu cuma pot yang kalah). Set over set yang kedua set-nya sama-sama di-flop dan uangnya masuk di flop, misalnya, adalah cooler, bukan bad beat — kalau set yang lebih besar baru datang di turn atau river setelah chip masuk, itu suckout.
 
 **Q. Apakah kalah coinflip itu bad beat?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosari ringkas istilah poker yang benar-benar muncul dalam permainan Texas Hold'em, disusun ikut cara anda menemuinya: aksi pertaruhan, posisi, tangan dan board, jenis pemain, wang serta situasi di meja. Mulakan dengan istilah yang paling sering keliru (check vs call, set vs trips, cooler vs bad beat), kemudian semak ikut kategori. Istilah yang ada panduan lebih mendalam dipautkan terus ke artikelnya.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -275,7 +275,7 @@ A. Kedua-duanya three of a kind dan kedudukannya sama, tetapi cara terbentuknya 
 
 **Q. Apa beza cooler dengan bad beat?**
 
-A. Dalam bad beat, anda favourite ketika wang masuk ke pot, tetapi dipintas oleh kad bertuah. Dalam cooler — dalam erti kata ketat — anda sudah ketinggalan ketika wang masuk dengan tangan yang terlalu kuat untuk di-fold, dan tiada kad bertuah diperlukan; sesetengah pemain menggunakan "cooler" untuk mana-mana tangan besar yang kalah kepada tangan yang lebih besar. Ujian pantas: jika anda favourite yang jelas ketika wang masuk dan lawan perlu *bertambah baik* untuk menang, itu bad beat; jika lawan sudah mendahului ketika wang masuk, itu cooler.
+A. Dalam bad beat, anda favourite ketika wang masuk ke pot, tetapi dipintas oleh kad bertuah. Dalam cooler — dalam erti kata ketat — anda sudah ketinggalan ketika wang masuk dengan tangan yang terlalu kuat untuk di-fold, dan tiada kad bertuah diperlukan; sesetengah pemain menggunakan "cooler" untuk mana-mana tangan besar yang kalah kepada tangan yang lebih besar. Ujian pantas: jika anda favourite yang jelas ketika wang masuk dan lawan perlu *bertambah baik* untuk menang, itu bad beat; jika lawan sudah mendahului ketika wang masuk dan tangan anda terlalu kuat untuk di-fold, itu cooler (sekadar ketinggalan dengan tangan yang lebih lemah bukan kedua-duanya — itu hanya pot yang kalah).
 
 **Q. Apa itu 3-bet dalam poker, dan kenapa raise pertama bukan '1-bet'?**
 

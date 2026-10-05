@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -275,7 +275,7 @@ A. Ambos son trío y valen exactamente lo mismo, pero se forman de manera distin
 
 **Q. ¿Cuál es la diferencia entre un cooler y un bad beat?**
 
-A. En un bad beat eras el favorito cuando entró el dinero y te cazaron con una carta con suerte. En un cooler — en sentido estricto — ibas por detrás cuando entró el dinero con una mano demasiado fuerte para foldear, y no hizo falta ninguna carta afortunada; hay jugadores que llaman cooler a cualquier manaza que pierde ante otra mayor. Test rápido: si eras favorito claro al entrar las fichas y tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante al entrar las fichas, es un cooler.
+A. En un bad beat eras el favorito cuando entró el dinero y te cazaron con una carta con suerte. En un cooler — en sentido estricto — ibas por detrás cuando entró el dinero con una mano demasiado fuerte para foldear, y no hizo falta ninguna carta afortunada; hay jugadores que llaman cooler a cualquier manaza que pierde ante otra mayor. Test rápido: si eras favorito claro al entrar las fichas y tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante al entrar las fichas y tu mano era demasiado fuerte para foldear, es un cooler (ir simplemente por detrás con una mano peor no es ninguna de las dos cosas: es solo un bote perdido).
 
 **Q. ¿Qué es un 3-bet en el póker, y por qué la primera subida no es el "1-bet"?**
 
@@ -299,7 +299,7 @@ A. Son apodos para los tipos de jugador. Un fish (pez) es el jugador recreativo 
 
 **Q. ¿Qué es un cooler y qué es un bad beat?**
 
-A. En un cooler, en el sentido estricto, ibas por detrás cuando entró el dinero con una mano demasiado fuerte para foldear (piensa en trío contra trío ligados en el mismo flop), y no hizo falta ninguna carta afortunada: la mano mayor iba delante todo el rato. No hay una definición oficial única, y muchos jugadores usan "cooler" para cualquier manaza que cae ante otra mayor. En un bad beat eras el claro favorito cuando entró el dinero y te cazaron con una carta improbable en el turn o el river. Test rápido: si eras favorito claro al entrar las fichas y tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante al entrar las fichas, es un cooler. Tienes las dos situaciones a fondo en la [guía del cooler](/es/blog/holdem-cooler) y la [guía del bad beat](/es/blog/holdem-bad-beat).
+A. En un cooler, en el sentido estricto, ibas por detrás cuando entró el dinero con una mano demasiado fuerte para foldear (piensa en trío contra trío ligados en el mismo flop), y no hizo falta ninguna carta afortunada: la mano mayor iba delante todo el rato. No hay una definición oficial única, y muchos jugadores usan "cooler" para cualquier manaza que cae ante otra mayor. En un bad beat eras el claro favorito cuando entró el dinero y te cazaron con una carta improbable en el turn o el river. Test rápido: si eras favorito claro al entrar las fichas y tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante al entrar las fichas y tu mano era demasiado fuerte para foldear, es un cooler (ir simplemente por detrás con una mano peor no es ninguna de las dos cosas: es solo un bote perdido). Tienes las dos situaciones a fondo en la [guía del cooler](/es/blog/holdem-cooler) y la [guía del bad beat](/es/blog/holdem-bad-beat).
 
 ---
 

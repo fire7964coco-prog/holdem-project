@@ -129,7 +129,7 @@ The key insight: the min-raise matches the ==increment== of the last full bet or
 
 Two live-poker rules that come with raising:
 
-1. **Announce "raise" before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: a bet or raise made in multiple motions that include a return to your stack **without** announcing "raise" first — or a deceptive gesture meant to induce action out of turn (==Rule 103==).
+1. **Announce "raise" — and the amount — before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: a bet or raise made in multiple motions that include a return to your stack **without** announcing "raise" first — or a deceptive gesture meant to induce action out of turn (==Rule 103==).
 2. **One motion.** If you don't announce, your chips must go in as a single forward motion.
 
 How *much* you should raise (2.5x opens, 3x 3-bets, sizing by board texture) is strategy, not rules — that lives in the [Texas Hold'em strategy pillar](/en/blog/holdem-strategy).
@@ -226,7 +226,7 @@ A. It depends on the all-in's size. If the all-in is a full legal raise, action 
 
 **Q. What is a string bet in poker?**
 
-A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. Rule 103 also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
+A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. Rule 103 also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally — "raise" and the full amount — or move all chips in one motion (TDA 2024 Rule 42).
 
 **Q. What does it mean to limp in poker?**
 

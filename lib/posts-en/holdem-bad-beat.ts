@@ -172,7 +172,7 @@ A. A bad beat is when you lose a hand you were a strong statistical favorite to 
 
 **Q. What is the difference between a bad beat and a cooler?**
 
-A. In a bad beat you were the favorite when the money went in and got outdrawn — a suckout happened. In a cooler, in the strict sense, you were behind when the money went in with a hand too strong to fold, and no suckout occurred (some players use "cooler" more loosely, for any big hand that loses to a bigger one). Quick test: if you were a heavy favorite going in and your opponent had to *improve* to win, it's a bad beat; if they were already ahead going in, it's a cooler. Set over set where both sets were flopped and the money went in on the flop, for example, is a cooler, not a bad beat — if the bigger set arrived on the turn or river after the chips were in, it was a suckout.
+A. In a bad beat you were the favorite when the money went in and got outdrawn — a suckout happened. In a cooler, in the strict sense, you were behind when the money went in with a hand too strong to fold, and no suckout occurred (some players use "cooler" more loosely, for any big hand that loses to a bigger one). Quick test: if you were a heavy favorite going in and your opponent had to *improve* to win, it's a bad beat; if they were already ahead going in and your hand was too strong to fold, it's a cooler (simply being behind with a weaker hand is neither — just a lost pot). Set over set where both sets were flopped and the money went in on the flop, for example, is a cooler, not a bad beat — if the bigger set arrived on the turn or river after the chips were in, it was a suckout.
 
 **Q. Is losing a coinflip a bad beat?**
 
