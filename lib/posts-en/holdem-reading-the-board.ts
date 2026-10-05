@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-28",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -183,7 +183,7 @@ Strong players run one more scan: not "what do I have?" but ==**"what is the bes
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **Flush possible?** Only two clubs — no. Nobody on earth has a flush here.
+1. **Flush possible?** Only two clubs — no. Nobody on earth has a flush here. (When three of one suit *are* out, ask one thing more: do they fit inside five consecutive ranks? If so, a straight flush is possible — and it, not the best flush, is the nuts. On J♠ 10♠ 9♠ that is K♠ Q♠.)
 2. **Board paired?** No — so no full houses or quads exist either.
 3. **Best straight?** The board's 9-6-5 plus 8-7 in the hole makes 9-8-7-6-5. Nothing higher connects.
 

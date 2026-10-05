@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-28",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -176,7 +176,7 @@ The full house figure counts every way the flop hands you a boat with a pocket p
 
 </div>
 
-The one that surprises people: if **you** hold aces at a 10-handed table, the chance a *second* player also has aces is about **1 in 136** (nine opponents each 1 ÷ C(50,2) = 1/1,225). Rare, but it's exactly the aces-vs-aces cooler that empties a stack and gets blamed on "rigged" software. It's just the deck. For which of those 1,326 hands are worth playing from each seat, see the [starting hands chart by position](/en/blog/holdem-starting-hands-chart).
+The one that surprises people: if **you** hold aces at a 10-handed table, the chance a *second* player also has aces is about **1 in 136** (nine opponents each 1 ÷ C(50,2) = 1/1,225). Rare — and when it does happen it is almost never the disaster people imagine: aces against aces chops the pot about 96% of the time (each side wins outright only about 2% — when the board makes a flush in one player's suit). It's just the deck. For which of those 1,326 hands are worth playing from each seat, see the [starting hands chart by position](/en/blog/holdem-starting-hands-chart).
 
 ---
 

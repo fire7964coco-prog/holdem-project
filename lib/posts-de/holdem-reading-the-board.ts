@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -184,7 +184,7 @@ Starke Spieler machen noch einen zweiten Scan: nicht „was habe ich?“, sonder
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **Flush möglich?** Nur zwei Kreuz – nein. Niemand auf der Welt hat hier einen Flush.
+1. **Flush möglich?** Nur zwei Kreuz – nein. Niemand auf der Welt hat hier einen Flush. (Liegen doch drei Karten einer Farbe, stell noch eine Frage: passen sie in fünf aufeinanderfolgende Ränge? Dann ist ein Straight Flush möglich – und die Nuts sind er, nicht der beste Flush. Auf J♠ 10♠ 9♠ ist das K♠ Q♠.)
 2. **Board gepaart?** Nein – also existieren auch keine Full Houses oder Vierlinge.
 3. **Beste Straße?** Das 9-6-5 des Boards plus 8-7 in der Hand macht 9-8-7-6-5. Nichts Höheres verbindet.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -184,7 +184,7 @@ Jogadores fortes fazem mais uma varredura: não "o que eu tenho?" mas ==**"qual 
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **Flush possível?** Só dois paus — não. Ninguém no mundo tem flush aqui.
+1. **Flush possível?** Só dois paus — não. Ninguém no mundo tem flush aqui. (Quando *há* três de um naipe na mesa, faça mais uma pergunta: elas cabem dentro de cinco valores seguidos? Se sim, um straight flush é possível — e é ele, não o melhor flush, que são os nuts. Numa J♠ 10♠ 9♠, isso é K♠ Q♠.)
 2. **Mesa pareada?** Não — então não existem full houses nem quadras.
 3. **Melhor sequência?** O 9-6-5 da mesa mais 8-7 na mão faz 9-8-7-6-5. Nada mais alto se conecta.
 

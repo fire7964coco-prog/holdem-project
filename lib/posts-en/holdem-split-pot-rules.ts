@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -123,7 +123,7 @@ In a three-way split with two odd chips, the two earliest seats clockwise each g
 
 ## Do Side Pots Split Too? Ties When Someone Is All-In
 
-When someone is all-in, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the deeper stacks who kept betting). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
+When players are all-in for different amounts and others keep betting, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the deeper stacks who kept betting). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
 
 A worked example: A is all-in for 100; B and C each put in 300. That's a **main pot of 300** (100 × 3) and a **side pot of 400** (200 + 200, B and C only). The board runs A♦ J♥ 7♠ 4♣ 2♥:
 

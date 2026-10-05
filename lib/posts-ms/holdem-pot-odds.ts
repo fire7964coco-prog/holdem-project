@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk kira pot odds, bahagikan jumlah yang anda perlu call dengan jumlah pot selepas call anda. Call $50 ke dalam pot $150 = 50 ÷ 200 = 25% — jadi anda perlu sekurang-kurangnya 25% equity supaya call itu menguntungkan.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 minit",
   emoji: "🧮",
@@ -187,9 +187,9 @@ Saya pernah buat setiap satu kesilapan ini sebelum semuanya membuat saya muflis.
 
 ### Satu tangan sebenar, dari awal hingga akhir
 
-Saya memegang ==b:A♥ K♥== pada flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot $100, lawan bet $50. Pot odds saya: saya mendapat 3:1, jadi saya perlu **25%**. Dengan dua kad lagi saya pada ~35%, dan walaupun hanya mengira kad seterusnya (19.1%) implied odds saya sangat besar — jika heart jatuh, saya ambil seluruh stack tangan top pair. ==g:Call yang mudah.==
+Saya memegang ==b:A♥ K♥== pada flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot $100, lawan bet $50. Pot odds saya: saya mendapat 3:1, jadi saya perlu **25%**. Jika saya dapat melihat kedua-dua kad, saya pada ~35% — tetapi call ini hanya membeli turn, dan turn sahaja cuma 19.1%, di bawah harga. Yang menutup jurang itu ialah implied odds: jika heart jatuh, saya ambil seluruh stack tangan top pair. ==g:Call yang mudah.==
 
-Turn ialah 3♠ — kad kosong. Pot kini $200 dan lawan jam $200 — bet saiz pot, jadi sekarang saya hanya mendapat 2:1 dan perlu **33%**. Tetapi dengan **satu kad lagi, flush saya hanya 19.6%** (saya kira 9 kad heart sahaja — menentang jam saiz pot, berpasangan dengan as atau king saya selalunya masih kalah, jadi overcard itu bukan outs bersih). Harga langsung kata fold; implied odds saya kini sifar kerana lawan sudah all-in dan tidak boleh bayar saya lagi. ==r:Fold yang betul== — dan tepat situasi di mana "harapan" dahulunya menghabiskan satu stack saya.
+Turn ialah 3♠ — kad kosong. Pot kini $200 dan lawan jam $200 — bet saiz pot, jadi sekarang saya hanya mendapat 2:1 dan perlu **33%**. Tetapi dengan **satu kad lagi, flush saya hanya 19.6%** (saya kira 9 kad heart sahaja — menentang jam saiz pot, berpasangan dengan as atau king saya selalunya masih kalah, jadi overcard itu bukan outs bersih). Harga langsung kata fold; implied odds saya kini sifar kerana lawan sudah all-in dan tidak boleh bayar saya lagi. Menentang set dan two pair yang jam pada turn kosong seperti ini, 19.6% itulah sahaja yang saya ada — dan walaupun beberapa tangan top pair terselit dalam range-nya, overcard hanya menarik call ini ke lebih kurang pulang modal. ==r:Fold== — dan tepat situasi di mana "harapan" dahulunya menghabiskan satu stack saya.
 
 ---
 
@@ -242,7 +242,7 @@ A. Tepat pot odds anda dalam bentuk peratus: call ÷ pot akhir. Menentang bet se
 
 **Q. Adakah equity anda patut lebih tinggi atau lebih rendah daripada pot odds?**
 
-A. Lebih tinggi. Pot odds anda memberi equity yang anda *perlukan* untuk call (call ÷ pot akhir); equity anda pula bahagian pot yang anda jangka miliki. Anda call apabila equity anda *lebih tinggi* daripada nombor yang diperlukan itu dan fold apabila ia lebih rendah. Jika bet separuh pot perlukan 25% dan flush draw anda ada 35% (dengan dua kad lagi — anda akan melihat turn dan river tanpa bet lagi), maka 35% > 25% → call yang menguntungkan.
+A. Lebih tinggi. Pot odds anda memberi equity yang anda *perlukan* untuk call (call ÷ pot akhir); equity anda pula bahagian pot yang anda jangka miliki. Anda call apabila equity anda *lebih tinggi* daripada nombor yang diperlukan itu dan fold apabila ia lebih rendah — melainkan implied odds boleh menutup jurangnya (wang yang anda menangi di street seterusnya apabila draw anda kena). Jika bet separuh pot perlukan 25% dan flush draw anda ada 35% (dengan dua kad lagi — anda akan melihat turn dan river tanpa bet lagi), maka 35% > 25% → call yang menguntungkan.
 
 ---
 

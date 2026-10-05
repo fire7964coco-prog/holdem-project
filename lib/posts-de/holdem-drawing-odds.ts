@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -179,7 +179,7 @@ Vor all dem oben gibt es das Austeilen. Mit **1.326 möglichen Zwei-Karten-Kombi
 
 </div>
 
-Die Zahl, die Leute überrascht: wenn **du** an einem voll besetzten Tisch (zehn Spieler) Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten, aber es ist genau der Aces-gegen-Aces-Cooler, der einen Stack leert und der „gezinkten“ Software angelastet wird. Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
+Die Zahl, die Leute überrascht: wenn **du** an einem voll besetzten Tisch (zehn Spieler) Aces hältst, liegt die Chance, dass ein *zweiter* Spieler ebenfalls Aces hat, bei etwa **1 zu 136** (neun Gegner, jeder 1 ÷ C(50,2) = 1/1.225). Selten – und wenn es passiert, ist es fast nie die Katastrophe, die man sich vorstellt: Bei Aces gegen Aces wird der Pot in etwa 96% der Fälle geteilt (jede Seite gewinnt nur in rund 2% allein – wenn das Board einen Flush in der Farbe eines der beiden Spieler bringt). Es ist einfach das Deck. Welche dieser 1.326 Hände sich von jedem Platz aus zu spielen lohnen, siehst du in der [Starthand-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
 
 ---
 

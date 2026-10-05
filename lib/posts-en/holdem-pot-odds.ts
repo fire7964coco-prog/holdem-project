@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -186,9 +186,9 @@ I made every one of these before they made me broke. Watch for them:
 
 ### A real hand, start to finish
 
-I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. With two cards to come I'm at ~35%, and even counting just the next card (19.1%) my implied odds are huge — if a heart lands I stack a top-pair hand. ==g:Easy call.==
+I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. If I got to see both cards I'd be at ~35% — but this call only buys the turn, and the turn alone is 19.1%, short of the price. What closes the gap is implied odds: if a heart lands I stack a top-pair hand. ==g:Easy call.==
 
-Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. ==r:Correct fold== — and the exact spot where "hope" used to cost me a stack.
+Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. Against the sets and two pair that jam a brick turn like this, 19.6% is all I have — and even if a few top-pair hands sneak into his range, the overcards only drag the call up to about break-even. ==r:Fold== — and the exact spot where "hope" used to cost me a stack.
 
 ---
 
@@ -241,7 +241,7 @@ A. Exactly your pot odds as a percentage: call ÷ final pot. Against a half-pot 
 
 **Q. Should your equity be higher or lower than your pot odds?**
 
-A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is your expected share of the pot. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your clean flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
+A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is your expected share of the pot. You call when your equity is *higher* than that required number and fold when it's lower — unless implied odds can close the gap (the money you'll win on later streets when you hit). If a half-pot bet needs 25% and your clean flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
 
 ---
 

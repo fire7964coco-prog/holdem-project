@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -127,7 +127,7 @@ En el Hold'em las únicas cartas que se reparten boca arriba son las cinco carta
 :::steps
 Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el turn y el river salen los dos gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad — solo con outs limpias — supera el precio, o cuando las implied odds cubren la diferencia
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
-Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Una carta que has visto está fuera de la baraja (no puede salir en el board y ningún otro jugador puede tenerla) — pero solo cuentan las vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
+Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Una carta que has visto está fuera de la baraja (no puede salir en el board —salvo que fuera una carta de la mesa repartida antes de tiempo y barajada de vuelta en el resto del mazo— y ningún otro jugador puede tenerla) — pero solo cuentan las vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
 :::
 
 Hazlo unas cuantas sesiones y se vuelve automático — estarás "contando cartas" en cada mano, solo que a la manera del póker. El siguiente paso es convertir esos conteos en calls y folds con las [pot odds](/es/blog/holdem-pot-odds), la matemática que te dice si tus outs valen el precio.

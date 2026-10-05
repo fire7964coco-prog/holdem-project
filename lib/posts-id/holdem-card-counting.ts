@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap hand dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -127,7 +127,7 @@ Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima commu
 :::steps
 Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu — hanya dengan clean out — mengalahkan harganya, atau saat implied odds menutup selisihnya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
-Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang sudah Anda lihat sudah keluar dari dek (ia tak bisa muncul di board, dan tak ada pemain lain yang bisa memegangnya) — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain bukan bagian dari metode ini — hanya paparan yang tak disengaja
+Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang sudah Anda lihat sudah keluar dari dek (ia tak bisa muncul di board — kecuali kartu itu kartu board yang terbuka terlalu dini lalu dikocok kembali ke stub — dan tak ada pemain lain yang bisa memegangnya) — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain bukan bagian dari metode ini — hanya paparan yang tak disengaja
 :::
 
 Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap hand, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.

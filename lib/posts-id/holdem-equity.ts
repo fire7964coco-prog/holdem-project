@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -84,7 +84,7 @@ Dua hal yang menjebak orang di sini. Pair melawan dua overcard (QQ vs AK) ==r:bu
 
 **Call saat equity Anda lebih besar dari pot odds Anda — satu perbandingan itu menentukan hampir setiap call di poker.** [Pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") memberi tahu equity yang Anda *butuhkan* untuk impas; equity memberi tahu apa yang Anda *miliki*. Jika Anda punya lebih dari yang dibutuhkan, call menghasilkan uang.
 
-Menghadapi taruhan setengah pot, pot odds Anda membutuhkan ==25%== untuk call. Flush draw dengan dua kartu tersisa punya ~35% equity — 35 mengalahkan 25, jadi ini call yang menguntungkan. Itulah keseluruhan keputusannya, tanpa tebak-tebakan. Catatan: angka 35% itu berlaku hanya kalau Anda melihat **kedua** kartu; kalau taruhan turn masih menanti, call ini cuma membeli satu kartu (==9 ÷ 47 = 19,1%==, di bawah harga 25%).
+Menghadapi taruhan setengah pot, pot odds Anda membutuhkan ==25%== untuk call. Kalau call ini membuat Anda all-in di flop atau Anda bisa melihat **kedua** kartu tersisa tanpa membayar lagi, ~35% equity flush draw yang bersih mengalahkan harga itu. Kalau taruhan turn masih bisa datang, call ini cuma membeli satu kartu (==9 ÷ 47 = 19,1%==), di bawah 25% kalau hanya mengandalkan draw-nya.
 
 Tapi inilah jebakan yang hampir setiap panduan lewatkan: **"equity Anda sama dengan bagian pot Anda" hanya benar saat tak ada taruhan lagi.** Begitu lebih banyak uang bisa masuk di street berikutnya, 35% mentah tak otomatis berubah menjadi 35% dari pot akhir — Anda bisa dipaksa lepas draw, atau membayar saat Anda kena tapi jadi terbaik kedua. Jurang itulah tempat [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (uang yang akan Anda menangkan nanti) dan realisasi equity (di bawah) berperan. Equity adalah tempat matematika *dimulai*, bukan tempat ia berakhir.
 
@@ -137,7 +137,7 @@ Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan ini
 
 ## Equity All-In: Saat Equity Mentah Adalah Segalanya
 
-**Begitu tak ada taruhan lagi yang bisa terjadi — Anda all-in atau sudah call sebuah all-in heads-up, atau semua pemain lain yang tersisa di hand sudah all-in — Anda merealisasi 100% equity Anda, dan equity mentah menjadi kata terakhir.** Setiap komplikasi di atas (posisi, fold, dipaksa lepas) lenyap, karena tak ada taruhan lagi yang bisa terjadi. Berapa pun equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — itulah persis yang akan Anda kumpulkan seiring waktu.
+**Begitu tak ada taruhan lagi yang bisa terjadi — paling banyak hanya satu pemain di hand yang masih punya chip di belakang (heads-up melawan all-in, atau semua pemain lain sudah all-in) — Anda merealisasi 100% equity Anda, dan equity mentah menjadi kata terakhir.** Setiap komplikasi di atas (posisi, fold, dipaksa lepas) lenyap, karena tak ada taruhan lagi yang bisa terjadi. Berapa pun equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — itulah persis yang akan Anda kumpulkan seiring waktu.
 
 Inilah kenapa equity all-in preflop begitu penting: AA all-in melawan KK menyimpan penuh ==82%==-nya — tanpa pajak realisasi, tanpa fold equity, hanya angka mentah yang terjadi. Ini juga kenapa "coin flip" (22 vs AK di ~52/48) adalah adu untung-untungan yang benar-benar dekat saat all-in, meski dua tangan sama yang dimainkan postflop akan menyimpang liar tergantung board dan siapa yang punya posisi.
 
@@ -192,7 +192,7 @@ A. Untuk draw, gunakan Rule of 4 and 2: kalikan outs bersih Anda dengan 4 di flo
 
 **Q. Apa perbedaan antara equity dan pot odds?**
 
-A. Equity adalah bagian Anda dari pot (apa yang Anda miliki); pot odds adalah equity yang Anda butuhkan untuk impas pada sebuah call (apa yang harga tuntut). Aturannya sederhana: call saat equity Anda lebih besar dari pot odds Anda. Pot odds berasal dari ukuran taruhan; equity berasal dari tangan Anda dan board.
+A. Equity adalah bagian Anda dari pot (apa yang Anda miliki); pot odds adalah equity yang Anda butuhkan untuk impas pada sebuah call (apa yang harga tuntut). Patokan praktisnya: call saat equity Anda lebih besar dari pot odds Anda. Patokan ini tepat kalau tak ada taruhan lagi sesudahnya; kalau masih ada, sesuaikan dengan seberapa banyak equity yang benar-benar bisa Anda realisasikan dan dengan implied odds. Pot odds berasal dari ukuran taruhan; equity berasal dari tangan Anda dan board.
 
 **Q. Apakah equity 50% bagus di poker?**
 

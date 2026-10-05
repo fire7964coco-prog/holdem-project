@@ -228,7 +228,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 ### 2-R. 우편함 수신분 — MA-303 JA ④ 4-2 부분2 (split-pot · reading-the-board · flush-vs-straight) · 판정 2026-10-04 (7) · 회신 MB-164
 
-> JA 고유 요청 1(split 결론 상자) + 통지 중 JA 고유 1(reading 4랭크 표기)은 ✅ 10-04 (7) 정정. 아래 EN-먼저는 **판정 = 채택**, 이행은 **다음 회차**(EN 정정 → 24로케일 전파 · 자동 착수 금지 — 사장님 지시로 연다).
+> ✅ **R-1·R-2 = 10-05 (3) EN 정정 → 8로케일 전파 배포(MB-167 · WORKLOG 10-05 (3))** — 이 6편은 핵심 8로케일(de·es·id·ja·ms·pt·zh·zh-hant)에만 사본이 있다(꼬리 로케일 0). 아래 🪶 R-3~R-6은 그대로 남김(자동 착수 금지).
+> JA 고유 요청 1(split 결론 상자) + 통지 중 JA 고유 1(reading 4랭크 표기)은 ✅ 10-04 (7) 정정.
 
 | # | 글 | EN 자리 | 판정 | 고칠 방향 |
 |---|---|---|---|---|
@@ -244,7 +245,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 ### 2-S. 우편함 수신분 — MA-305 JA ④ 4-3 odds 7편 · 판정 2026-10-05 · 회신 MB-166
 
-> JA 고유 요청 1(20건 · 결론 상자 조건 누락 중심) + 같은 클래스 JA 고유 probability FAQ #108은 ✅ 10-05 정정. 아래 EN-먼저 7은 **판정 = 채택**, 이행은 **다음 회차**(EN 정정 → 24로케일 전파 · 자동 착수 금지 — 사장님 지시로 연다). 근거 = 검수장 `reports/검수-ja-회차4-3-odds-2026-10-04/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ja/holdem-*.md`.
+> ✅ **S-1~S-7 = 10-05 (3) EN 정정 → 8로케일 전파 배포(MB-167)**. 레인이 같이 고친 동형: es reading FAQ 요약 SF · zh pot-odds tldr 임플라이드 예외 · id equity L87 35% 조건 · ms split FAQ 형성 조건 · ja reading 결론 상자 SF. 🪶 남김(자동 착수 금지): zh card-counting 상자 «胜率高过价格就跟» · 각 로케일 tldr·결론의 «equity > pot odds면 콜»(EN도 유지 · 대부분 바로 뒤 단서) · ms 5편 masterUpdated 09-26 그대로(EN 09-28 델타 미대조).
+> JA 고유 요청 1(20건 · 결론 상자 조건 누락 중심) + 같은 클래스 JA 고유 probability FAQ #108은 ✅ 10-05 정정. 근거 = 검수장 `reports/검수-ja-회차4-3-odds-2026-10-04/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ja/holdem-*.md`.
 
 | # | 글 | EN 자리 | 판정 | 고칠 방향 |
 |---|---|---|---|---|

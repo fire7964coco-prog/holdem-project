@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -124,7 +124,7 @@ En un split a tres bandas con dos fichas impares, los dos asientos que van antes
 
 ## ¿Los botes laterales también se dividen? Empates cuando alguien está all-in
 
-Cuando alguien está all-in, las fichas forman un ==**bote principal**== (todos son elegibles) más uno o varios ==**botes laterales**== (solo los stacks más profundos que siguieron apostando). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
+Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, las fichas forman un ==**bote principal**== (todos son elegibles) más uno o varios ==**botes laterales**== (solo los stacks más profundos que siguieron apostando). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
 
 Un ejemplo desarrollado: A hace all-in por 100; B y C ponen 300 cada uno. Eso es un **bote principal de 300** (100 × 3) y un **bote lateral de 400** (200 + 200, solo B y C). La mesa sale A♦ J♥ 7♠ 4♣ 2♥:
 

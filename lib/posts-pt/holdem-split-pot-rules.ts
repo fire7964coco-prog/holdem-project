@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -124,7 +124,7 @@ Numa divisão de três vias com duas fichas ímpares, os dois assentos mais pró
 
 ## Os potes paralelos também dividem? Empates quando alguém está all-in
 
-Quando alguém está all-in, as fichas formam um ==**pote principal**== (todos são elegíveis) mais um ou mais ==**potes paralelos**== (só os stacks mais fundos que continuaram apostando). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
+Quando há jogadores all-in por valores diferentes e os outros continuam apostando, as fichas formam um ==**pote principal**== (todos são elegíveis) mais um ou mais ==**potes paralelos**== (só os stacks mais fundos que continuaram apostando). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
 
 Um exemplo prático: o A está all-in por 100; o B e o C colocam 300 cada. Isso dá um **pote principal de 300** (100 × 3) e um **pote paralelo de 400** (200 + 200, só B e C). O board vem A♦ J♥ 7♠ 4♣ 2♥:
 

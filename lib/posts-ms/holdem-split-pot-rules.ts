@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ya — tangan poker boleh seri. Pot dibahagi (chop) apabila dua atau lebih pemain menunjukkan lima kad terbaik yang serupa semasa showdown. Suit tidak pernah memecahkan seri, dan odd chip yang berbaki diberikan kepada pemain seri pertama di sebelah kiri butang pengedar.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -124,7 +124,7 @@ Dalam split tiga hala dengan dua odd chip, dua tempat duduk paling awal mengikut
 
 ## Adakah Side Pot Juga Dibahagi? Seri Apabila Ada Pemain All-In
 
-Apabila seseorang all-in, cip membentuk ==**pot utama**== (semua orang layak) ditambah satu atau lebih ==**side pot**== (hanya pemain dengan stack lebih dalam yang terus bertaruh). Setiap pot diberikan — atau di-chop — ==**secara berasingan**==, berdasarkan tangan terbaik antara pemain yang layak bagi pot itu.
+Apabila pemain all-in dengan jumlah berbeza dan pemain lain terus bertaruh, cip membentuk ==**pot utama**== (semua orang layak) ditambah satu atau lebih ==**side pot**== (hanya pemain dengan stack lebih dalam yang terus bertaruh). Setiap pot diberikan — atau di-chop — ==**secara berasingan**==, berdasarkan tangan terbaik antara pemain yang layak bagi pot itu.
 
 Contoh lengkap: A all-in dengan 100; B dan C masing-masing memasukkan 300. Itu **pot utama 300** (100 × 3) dan **side pot 400** (200 + 200, B dan C sahaja). Board keluar A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -189,7 +189,7 @@ A. Boleh. Jika tiga atau lebih pemain semuanya memegang lima kad terbaik yang se
 
 **Q. Bagaimana split pot dikendalikan apabila ada pemain all-in?**
 
-A. Pot dipecahkan kepada pot utama dan side pot; setiap satu diberikan atau di-chop secara berasingan berdasarkan tangan terbaik antara pemain yang layak bagi pot tertentu itu.
+A. Apabila pemain all-in dengan jumlah berbeza dan pemain lain terus bertaruh, pot dipecahkan kepada pot utama dan satu atau lebih side pot; setiap satu diberikan atau di-chop secara berasingan berdasarkan tangan terbaik antara pemain yang layak bagi pot tertentu itu.
 
 **Q. Bagaimana mengira side pot?**
 

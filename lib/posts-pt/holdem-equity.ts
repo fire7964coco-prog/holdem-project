@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -137,7 +137,7 @@ Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de
 
 ## Equity no all-in: quando a equity bruta é tudo que importa
 
-**Quando não pode haver mais apostas — você está all-in ou pagou um all-in em heads-up, ou todos os outros que seguem na mão estão all-in —, você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua equity bruta — sua fatia do pote, com os empates proporcionais —, é exatamente isso que você vai coletar ao longo do tempo.
+**Quando não pode haver mais apostas — no máximo um jogador que segue na mão ainda tem fichas atrás (heads-up com um all-in, ou todos os outros all-in) —, você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua equity bruta — sua fatia do pote, com os empates proporcionais —, é exatamente isso que você vai coletar ao longo do tempo.
 
 É por isso que as equities de all-in pré-flop importam tanto: AA all-in contra KK embolsa seus ==82%== inteiros — sem imposto de realização, sem fold equity, só o número bruto se desenrolando. É também por isso que um "coin flip" (22 vs AK a ~52/48) é um verdadeiro cara-ou-coroa no all-in, mesmo que as mesmas duas mãos jogadas no pós-flop divergissem muito conforme a mesa e quem tem posição.
 
@@ -192,7 +192,7 @@ A. Num projeto, a conta é outs limpos ×4 quando você vai ver as duas cartas, 
 
 **Q. Qual a diferença entre equity e pot odds?**
 
-A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que você precisa para empatar num call (o que o preço exige). A regra é simples: pague quando sua equity for maior que suas pot odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
+A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que você precisa para empatar num call (o que o preço exige). A regra prática: pague quando sua equity for maior que suas pot odds. Ela é exata quando não vem mais aposta; caso contrário, ajuste pelo quanto da sua equity você vai realizar de fato e pelas implied odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
 
 **Q. 50% de equity é bom no poker?**
 

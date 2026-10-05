@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -177,7 +177,7 @@ La cifra del full cuenta todas las formas en que el flop te sirve un full con un
 
 </div>
 
-La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores, la probabilidad de que un *segundo* jugador también tenga ases es de más o menos **1 de cada 136** (nueve rivales, cada uno 1 ÷ C(50,2) = 1/1,225). Raro, pero es exactamente el cooler ases-contra-ases que vacía un stack y se le echa la culpa al software "trucado". Es solo la baraja. Para saber cuáles de esas 1,326 manos vale la pena jugar desde cada asiento, mira la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
+La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores, la probabilidad de que un *segundo* jugador también tenga ases es de más o menos **1 de cada 136** (nueve rivales, cada uno 1 ÷ C(50,2) = 1/1,225). Raro — y cuando pasa, casi nunca es el desastre que la gente imagina: ases contra ases se reparten el bote alrededor del 96% de las veces (cada lado gana solo en torno al 2% — cuando la mesa forma color en el palo de uno de los dos). Es solo la baraja. Para saber cuáles de esas 1,326 manos vale la pena jugar desde cada asiento, mira la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
 
 ---
 

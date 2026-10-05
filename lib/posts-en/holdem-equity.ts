@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -136,7 +136,7 @@ This is the single most important idea most beginner guides leave out, and it's 
 
 ## All-In Equity: When Raw Equity Is All That Matters
 
-**Once no more betting can happen — you're all-in or have called an all-in heads-up, or everyone else left in the hand is all-in — you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your raw equity is — your share of the pot, splits counted pro rata — that's exactly what you'll collect over time.
+**Once no more betting can happen — at most one player left in the hand still has chips behind (heads-up with an all-in, or everyone else all-in) — you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your raw equity is — your share of the pot, splits counted pro rata — that's exactly what you'll collect over time.
 
 This is why preflop all-in equities matter so much: AA all-in against KK banks its full ==82%== — no realization tax, no fold equity, just the raw number playing out. It's also why a "coin flip" (22 vs AK at ~52/48) is a genuine near-tossup all-in, even though the same two hands played postflop would diverge wildly based on the board and who has position.
 
@@ -191,7 +191,7 @@ A. For draws, use the Rule of 4 and 2: multiply your clean outs by 4 on the flop
 
 **Q. What's the difference between equity and pot odds?**
 
-A. Equity is your share of the pot (what you have); pot odds are the equity you need to break even on a call (what the price demands). The rule is simple: call when your equity is greater than your pot odds. Pot odds come from the bet size; equity comes from your hand and the board.
+A. Equity is your share of the pot (what you have); pot odds are the equity you need to break even on a call (what the price demands). The rule of thumb: call when your equity is greater than your pot odds. It is exact when no more betting follows; otherwise adjust for how much of your equity you'll actually realize and for implied odds. Pot odds come from the bet size; equity comes from your hand and the board.
 
 **Q. Is 50% equity good in poker?**
 

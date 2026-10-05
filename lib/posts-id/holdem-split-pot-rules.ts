@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -124,7 +124,7 @@ Dalam split tiga arah dengan dua odd chip, dua kursi paling awal searah jarum ja
 
 ## Apakah Side Pot Juga Dibagi? Seri Saat Seseorang All-In
 
-Ketika seseorang all-in, chip membentuk ==**main pot**== (semua orang berhak) plus satu atau lebih ==**side pot**== (hanya stack lebih dalam yang terus bertaruh). Setiap pot diberikan — atau di-chop — ==**secara terpisah**==, berdasarkan tangan terbaik di antara pemain yang berhak atas pot itu.
+Saat para pemain all-in dengan jumlah berbeda dan yang lain terus bertaruh, chip membentuk ==**main pot**== (semua orang berhak) plus satu atau lebih ==**side pot**== (hanya stack lebih dalam yang terus bertaruh). Setiap pot diberikan — atau di-chop — ==**secara terpisah**==, berdasarkan tangan terbaik di antara pemain yang berhak atas pot itu.
 
 Sebuah contoh nyata: A all-in dengan 100; B dan C masing-masing memasukkan 300. Itu **main pot 300** (100 × 3) dan **side pot 400** (200 + 200, hanya B dan C). Board berjalan A♦ J♥ 7♠ 4♣ 2♥:
 

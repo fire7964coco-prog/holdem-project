@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -181,9 +181,9 @@ Fast alle teuren Fehler sind Varianten desselben Musters: **die Rechnung kippt i
 
 ### Eine echte Hand, von Anfang bis Ende
 
-Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop – der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Mit zwei kommenden Karten liege ich bei ~35%, und selbst wenn ich nur die nächste Karte zähle (19,1%), sind meine Implied Odds riesig – kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
+Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop – der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Sähe ich beide Karten, läge ich bei ~35% – aber dieser Call kauft nur den Turn, und der Turn allein bringt 19,1%, also weniger als der Preis. Die Lücke schließen die Implied Odds: kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
 
-Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%** (ich zähle allein die 9 Herzen – gegen ein Pot-Size-Jam verliert ein gepaartes Ass oder König meist trotzdem, die Overcards sind also keine sauberen Outs). Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. ==r:Korrekter Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
+Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%** (ich zähle allein die 9 Herzen – gegen ein Pot-Size-Jam verliert ein gepaartes Ass oder König meist trotzdem, die Overcards sind also keine sauberen Outs). Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. Gegen die Sets und Two Pairs, die einen Brick-Turn wie diesen jammen, habe ich nur diese 19,6% – und selbst wenn sich ein paar Top-Pair-Hände in seine Range mischen, ziehen die Overcards den Call höchstens auf etwa Break-even. ==r:Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
 
 ---
 
@@ -236,7 +236,7 @@ A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Po
 
 **Q. Sollte meine Equity höher oder niedriger sein als meine Pot Odds?**
 
-A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist dein erwarteter Anteil am Pot. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein sauberer Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
+A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist dein erwarteter Anteil am Pot. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt – es sei denn, Implied Odds schließen die Lücke (das Geld, das du auf späteren Streets gewinnst, wenn du triffst). Verlangt eine Half-Pot-Bet 25% und hat dein sauberer Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 

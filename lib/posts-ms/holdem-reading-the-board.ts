@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em anda sentiasa bermain tangan 5 kad terbaik daripada 7 kad (2 hole card + 5 kad komuniti) — sama ada guna kedua-dua hole card, satu sahaja, atau tiada langsung (playing the board). Imbas kesemua 7 kad mengikut urutan tetap: flush → straight → nilai berpasangan → high card.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -185,7 +185,7 @@ Pemain yang kuat menjalankan satu lagi imbasan: bukan "apa yang saya pegang?" te
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **Flush mungkin?** Hanya dua club — tidak. Tiada sesiapa pun di dunia ada flush di sini.
+1. **Flush mungkin?** Hanya dua club — tidak. Tiada sesiapa pun di dunia ada flush di sini. (Jika tiga kad satu suit *memang* keluar, tanya satu perkara lagi: adakah ketiga-tiganya muat dalam lima pangkat berturutan? Jika ya, straight flush boleh berlaku — dan itulah the nuts, bukan flush terbaik. Pada J♠ 10♠ 9♠, itu K♠ Q♠.)
 2. **Board berpasangan?** Tidak — jadi full house atau quads juga tidak wujud.
 3. **Straight terbaik?** 9-6-5 di board ditambah 8-7 di tangan membentuk 9-8-7-6-5. Tiada yang lebih tinggi bersambung.
 

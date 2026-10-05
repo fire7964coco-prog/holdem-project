@@ -1,3 +1,10 @@
+## 2026-10-05 (3) — EN-먼저 §2-R·§2-S 9건: EN 6편 정정 → 8로케일 전파 (MB-167)
+
+- EN 6편 9자리(updated 10-05): split 본문 사이드팟 형성 조건(R-1) · reading 너츠 1번 질문에 SF 점검(J♠10♠9♠ → K♠Q♠ · R-2) · pot-odds 플롭 콜 «2장 보면 35% — 이 콜은 턴만 산다(19.1%) · 갭은 임플라이드»(S-1) · 턴 «Correct fold» → 셋·투페어 잼 레인지 명시 + «탑페어 섞여도 본전 근처» + «Fold»(S-2) · FAQ «낮으면 폴드 — 임플라이드가 메우면 예외»(S-3) · equity «칩 남은 사람 최대 1명»(S-4) · FAQ «rule of thumb · 이후 베팅 없을 때만 정확»(S-5) · drawing AA 대 AA «약 96% 찹 · 각자 단독 약 2%(한쪽 무늬 플러시)»(S-6) · card-counting «조기 노출 보드 카드가 스텁에 섞이면 예외»(S-7).
+- 전파: 서브 3레인(pt·es / ja·zh·zh-hant / de·id·ms) · 이 6편은 핵심 8로케일에만 사본(꼬리 0 — «24로케일» 아님). 47파일 본문 + zh split masterUpdated만(이미 같은 문면). 동형 추가 = es reading FAQ · zh pot-odds tldr · id equity L87 · ms split FAQ · ja reading 결론 상자. ms card-counting은 해당 문면 없음.
+- 스탬프: updated 10-05(본문 바뀐 파일) · masterUpdated 10-05 = 8로케일 중 회차 전 동기 파일만(ms 5편은 09-26 뒤처짐 → 유지 · ms pot-odds만 올림).
+- 게이트: audit:hard 9로케일(en·de·es·id·ja·ms·pt·zh·zh-hant) 🔴 0 · check:de-style 6편 0 · 핵심 드리프트 0 · 백틱 개수 불변 · 빌드 exit 0(74 + 629).
+
 ## 2026-10-05 (2) — 우편함 MA-305 판정(JA ④ 4-3 odds 7편) · JA 고유 21자리 정정 · EN-먼저 §2-S 등재 · MA-306·307 ACK (`8ded4fb7` · MB-166)
 
 - 판정: 요청 1(JA 고유 20) 전부 채택 + 같은 클래스 probability FAQ #108 · 요청 2(EN-먼저 7) 채택·이행은 다음 회차(queue §2-S) · 통지는 §2-S 🪶. 근거 = 검수장 원장 RISKY 행 + EN 같은 블록 원문 대조.

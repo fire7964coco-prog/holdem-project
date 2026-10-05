@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -137,7 +137,7 @@ Das ist die mit Abstand wichtigste Idee, die die meisten Anfänger-Guides weglas
 
 ## Was ändert sich an deiner Equity, wenn du all-in bist?
 
-**Sobald kein Setzen mehr möglich ist – du bist all-in oder hast heads-up ein All-in gecallt, oder alle anderen noch in der Hand sind all-in –, realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer deine rohe Equity ist – dein Anteil am Pot, Splits anteilig –, das ist genau der Anteil, den du über die Zeit einsammelst.
+**Sobald kein Setzen mehr möglich ist – höchstens ein Spieler in der Hand hat noch Chips hinter sich (heads-up mit einem All-in, oder alle anderen sind all-in) –, realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer deine rohe Equity ist – dein Anteil am Pot, Splits anteilig –, das ist genau der Anteil, den du über die Zeit einsammelst.
 
 Deshalb zählen Preflop-All-in-Equities so viel: AA all-in gegen KK kassiert seine vollen ==82%== – keine Realization-Steuer, keine Fold Equity, nur die rohe Zahl, die sich ausspielt. Es ist auch der Grund, warum ein „Coinflip“ (22 vs. AK bei ~52/48) all-in ein echtes Kopf-an-Kopf-Rennen ist, obwohl dieselben zwei Hände postflop je nach Board und Position wild auseinanderlaufen würden.
 
@@ -200,7 +200,7 @@ A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig ge
 
 **Q. Was ist der Unterschied zwischen Equity und Pot Odds?**
 
-A. Die Equity ist dein Anteil am Pot (was du hast); die Pot Odds sind die Equity, die du brauchst, um bei einem Call Break-even zu sein (was der Preis verlangt). Die Regel ist einfach: calle, wenn deine Equity größer ist als deine Pot Odds. Die Pot Odds kommen aus der Bet-Größe; die Equity kommt aus deiner Hand und dem Board.
+A. Die Equity ist dein Anteil am Pot (was du hast); die Pot Odds sind die Equity, die du brauchst, um bei einem Call Break-even zu sein (was der Preis verlangt). Die Faustregel: calle, wenn deine Equity größer ist als deine Pot Odds. Exakt gilt sie, wenn danach nicht mehr gesetzt wird; sonst rechnest du ein, wie viel deiner Equity du tatsächlich realisierst, und berücksichtigst die Implied Odds. Die Pot Odds kommen aus der Bet-Größe; die Equity kommt aus deiner Hand und dem Board.
 
 **Q. Sind 50% Equity gut im Poker?**
 

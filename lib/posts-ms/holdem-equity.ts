@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-01",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -137,7 +137,7 @@ Inilah idea paling penting yang ditinggalkan kebanyakan panduan pemula, dan seba
 
 ## Bilakah Equity Mentah Saja yang Penting? All-In Equity
 
-**Sebaik tiada lagi pertaruhan boleh berlaku — anda all-in atau sudah call all-in secara heads-up, atau semua pemain lain yang masih dalam tangan sudah all-in — anda merealisasikan 100% equity anda, dan equity mentah menjadi kata putus.** Setiap komplikasi di atas (posisi, fold, dipaksa melepaskan draw) hilang, kerana tiada lagi pertaruhan boleh berlaku. Apa pun equity mentah anda — bahagian pot anda, split dikira pro rata — itulah tepat yang anda akan kutip dari masa ke masa.
+**Sebaik tiada lagi pertaruhan boleh berlaku — paling ramai seorang pemain dalam tangan masih ada cip di belakang (heads-up dengan pemain all-in, atau semua pemain lain sudah all-in) — anda merealisasikan 100% equity anda, dan equity mentah menjadi kata putus.** Setiap komplikasi di atas (posisi, fold, dipaksa melepaskan draw) hilang, kerana tiada lagi pertaruhan boleh berlaku. Apa pun equity mentah anda — bahagian pot anda, split dikira pro rata — itulah tepat yang anda akan kutip dari masa ke masa.
 
 Sebab itulah equity all-in preflop sangat penting: AA all-in menentang KK menyimpan ==82%== penuhnya — tiada cukai realisasi, tiada fold equity, hanya nombor mentah yang dimainkan. Itu juga sebab "coin flip" (22 vs AK pada ~52/48) benar-benar hampir seimbang ketika all-in, walaupun dua tangan yang sama jika dimainkan postflop akan berbeza jauh bergantung pada board dan siapa ada posisi.
 
@@ -192,7 +192,7 @@ A. Untuk draw, guna Rule of 4 and 2: darab outs bersih anda dengan 4 di flop (ap
 
 **Q. Apa beza equity dengan pot odds?**
 
-A. Equity ialah bahagian pot anda (apa yang anda ada); pot odds ialah equity yang anda perlukan untuk pulang modal pada sesuatu call (apa yang dituntut oleh harga). Peraturannya mudah: call apabila equity anda lebih besar daripada pot odds. Pot odds datang daripada saiz bet; equity datang daripada tangan anda dan board.
+A. Equity ialah bahagian pot anda (apa yang anda ada); pot odds ialah equity yang anda perlukan untuk pulang modal pada sesuatu call (apa yang dituntut oleh harga). Peraturan asasnya: call apabila equity anda lebih besar daripada pot odds. Ia tepat apabila tiada lagi pertaruhan selepas itu; jika masih ada, laraskan mengikut berapa banyak equity yang anda benar-benar realisasikan dan implied odds. Pot odds datang daripada saiz bet; equity datang daripada tangan anda dan board.
 
 **Q. Adakah 50% equity dikira bagus dalam poker?**
 

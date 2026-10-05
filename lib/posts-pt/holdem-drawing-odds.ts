@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -177,7 +177,7 @@ O número do full house conta cada jeito de o flop te dar um boat com um par na 
 
 </div>
 
-O que surpreende as pessoas: se **você** tem ases numa mesa de 10 jogadores, a chance de um *segundo* jogador também ter ases é cerca de **1 em 136** (nove adversários, cada um 1 ÷ C(50,2) = 1/1.225). Raro, mas é exatamente o cooler ases-contra-ases que esvazia um stack e leva a culpa de software "viciado". É só o baralho. Pra saber quais dessas 1.326 mãos valem a pena jogar de cada assento, veja a [tabela de mãos iniciais por posição](/pt/blog/holdem-starting-hands-chart).
+O que surpreende as pessoas: se **você** tem ases numa mesa de 10 jogadores, a chance de um *segundo* jogador também ter ases é cerca de **1 em 136** (nove adversários, cada um 1 ÷ C(50,2) = 1/1.225). Raro — e, quando acontece, quase nunca é o desastre que as pessoas imaginam: ases contra ases dividem o pote cerca de 96% das vezes (cada lado ganha sozinho só uns 2% — quando a mesa forma um flush no naipe de um dos jogadores). É só o baralho. Pra saber quais dessas 1.326 mãos valem a pena jogar de cada assento, veja a [tabela de mãos iniciais por posição](/pt/blog/holdem-starting-hands-chart).
 
 ---
 

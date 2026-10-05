@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -187,9 +187,9 @@ Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya b
 
 ### Sebuah tangan nyata, dari awal sampai akhir
 
-Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Dengan dua kartu tersisa saya di ~35%, dan bahkan menghitung hanya kartu berikutnya (19,1%) implied odds saya sangat besar — jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
+Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Kalau saya bisa melihat kedua kartu, saya di ~35% — tapi call ini hanya membeli turn, dan turn saja cuma 19,1%, di bawah harganya. Yang menutup celah itu adalah implied odds: jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
 
-Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. ==r:Fold yang benar== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
+Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. Melawan set dan two pair yang biasa jam di turn kosong seperti ini, 19,6% itulah semua yang saya punya — dan sekalipun beberapa tangan top-pair menyelinap ke range-nya, overcard hanya menyeret call ini ke sekitar titik impas. ==r:Fold== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
 
 ---
 
@@ -242,7 +242,7 @@ A. Tepat pot odds Anda sebagai persentase: call ÷ pot akhir. Melawan taruhan se
 
 **Q. Equity Anda harus lebih tinggi atau lebih rendah dari pot odds?**
 
-A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah bagian pot yang diharapkan menjadi milik Anda. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah. Jika taruhan setengah pot butuh 25% dan flush draw bersih Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
+A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah bagian pot yang diharapkan menjadi milik Anda. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah — kecuali implied odds bisa menutup selisihnya (uang yang akan Anda menangkan di street berikutnya saat draw Anda jadi). Jika taruhan setengah pot butuh 25% dan flush draw bersih Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
 
 ---
 

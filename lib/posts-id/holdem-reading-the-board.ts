@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -184,7 +184,7 @@ Pemain kuat menjalankan satu pindaian lagi: bukan "saya punya apa?" tapi ==**"ap
 
 Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **Flush mungkin?** Cuma dua keriting — tidak. Tak seorang pun di dunia punya flush di sini.
+1. **Flush mungkin?** Cuma dua keriting — tidak. Tak seorang pun di dunia punya flush di sini. (Kalau tiga kartu sejenis *memang* terbuka, tanyakan satu hal lagi: apakah ketiganya muat dalam lima peringkat berurutan? Kalau ya, straight flush mungkin terjadi — dan itulah the nuts, bukan flush terbaik. Di J♠ 10♠ 9♠, itu K♠ Q♠.)
 2. **Board berpasangan?** Tidak — jadi tak ada full house atau quads.
 3. **Straight terbaik?** 9-6-5 di board plus 8-7 tertutup membentuk 9-8-7-6-5. Tak ada yang lebih tinggi nyambung.
 

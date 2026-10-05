@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -177,7 +177,7 @@ Angka full house menghitung setiap cara flop memberi Anda full house dengan pock
 
 </div>
 
-Yang satu ini mengejutkan orang: kalau **Anda** pegang aces di meja 10-handed, peluang pemain *kedua* juga pegang aces kira-kira **1 dari 136** (sembilan lawan masing-masing 1 ÷ C(50,2) = 1/1.225). Langka, tapi persis inilah cooler aces-vs-aces yang menguras stack dan membuat orang menuduh software-nya "rigged". Itu cuma deck-nya. Untuk tangan mana dari 1.326 itu yang layak dimainkan dari tiap kursi, pelajari [tabel starting hands per posisi](/id/blog/holdem-starting-hands-chart).
+Yang satu ini mengejutkan orang: kalau **Anda** pegang aces di meja 10-handed, peluang pemain *kedua* juga pegang aces kira-kira **1 dari 136** (sembilan lawan masing-masing 1 ÷ C(50,2) = 1/1.225). Langka — dan kalaupun terjadi, hampir tak pernah jadi bencana seperti yang dibayangkan orang: aces lawan aces berakhir dengan pot dibagi sekitar 96% dari waktu (masing-masing hanya menang sendiri sekitar 2% — saat board membentuk flush dengan jenis kartu salah satu pemain). Itu cuma deck-nya. Untuk tangan mana dari 1.326 itu yang layak dimainkan dari tiap kursi, pelajari [tabel starting hands per posisi](/id/blog/holdem-starting-hands-chart).
 
 ---
 

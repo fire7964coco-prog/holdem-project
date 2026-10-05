@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -184,7 +184,7 @@ Los buenos jugadores hacen un repaso más: no "¿qué tengo yo?" sino ==**"¿cu�
 
 Mesa: Q♣ 9♥ 6♣ 5♦ 2♠
 
-1. **¿Color posible?** Solo dos tréboles — no. Nadie en el mundo tiene color aquí.
+1. **¿Color posible?** Solo dos tréboles — no. Nadie en el mundo tiene color aquí. (Cuando *sí* hay tres de un mismo palo en la mesa, hazte una pregunta más: ¿caben dentro de cinco valores seguidos? Si es así, es posible una escalera de color — y las nuts son ella, no el mejor color. En J♠ 10♠ 9♠, eso es K♠ Q♠.)
 2. **¿Mesa emparejada?** No — así que tampoco hay fulls ni pókers.
 3. **¿Mejor escalera?** El 9-6-5 de la mesa más 8-7 en la mano hace 9-8-7-6-5. Nada más alto conecta.
 
@@ -286,7 +286,7 @@ A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al 
 
 **Q. ¿Cuál es la función de las cartas comunitarias y cuál es la mejor mano de 5 posible en la mesa?**
 
-A. La función de las cartas comunitarias es dar a todos una base compartida sobre la que construir: cada jugador la combina con sus 2 cartas propias para su mejor mano de 5. La mejor mano posible que permite una mesa concreta se llama las nuts — y para hallarla no miras tus cartas, sino que preguntas "¿cuál es la mano más fuerte que CUALQUIERA podría formar con esta mesa?". Repasa color, luego mesa emparejada (fulls/pókers) y luego la escalera más alta que conecte; lo mejor de ese repaso es el techo de la mesa.
+A. La función de las cartas comunitarias es dar a todos una base compartida sobre la que construir: cada jugador la combina con sus 2 cartas propias para su mejor mano de 5. La mejor mano posible que permite una mesa concreta se llama las nuts — y para hallarla no miras tus cartas, sino que preguntas "¿cuál es la mano más fuerte que CUALQUIERA podría formar con esta mesa?". Repasa color (y, si hay tres de un palo dentro de cinco valores seguidos, la escalera de color, que estaría por encima de todo), luego mesa emparejada (fulls/pókers) y luego la escalera más alta que conecte; lo mejor de ese repaso es el techo de la mesa.
 
 **Q. ¿Cuenta una pareja en la mesa como parte de tu mano?**
 
