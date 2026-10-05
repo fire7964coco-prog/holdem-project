@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button. Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-01",
+  updated: "2026-10-05",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -109,7 +109,7 @@ Lihat bagaimana range open meluas dari satu tempat duduk ke tempat duduk seterus
 
 :::rangechart:::
 
-Mahukan ia sebagai alat berasingan dengan range yang lebih luas bagi setiap tempat duduk? Gunakan [alat carta tangan permulaan Texas Hold'em (bahasa Inggeris)](/en/hand-chart). Untuk pecahan setiap nama tempat duduk (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/ms/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Mahukan ia sebagai alat berasingan dengan range yang lebih luas bagi setiap tempat duduk? Gunakan [alat carta tangan permulaan Texas Hold'em](/ms/hand-chart). Untuk pecahan setiap nama tempat duduk (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/ms/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Posisi awal (UTG): range paling ketat
 

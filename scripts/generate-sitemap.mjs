@@ -204,6 +204,20 @@ const STATIC_ROUTES = [
   { path: "/id/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/ms/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/hi/calculator", priority: "0.7", changefreq: "monthly" },
+  /**
+   * ★2026-10-05 신설 — `/<locale>/hand-chart` 10개(로케일 도구 확장 회차 1). `/en/hand-chart`(0.7)와 같은 가중치.
+   *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/hand-chart-alternates.ts`.
+   */
+  { path: "/ja/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/es/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/pt/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/de/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/zh/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/zh-hant/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/fr/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/id/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/ms/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/hi/hand-chart", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도
@@ -303,6 +317,10 @@ function sourcesFor(path) {
   //    🔴 ko `/calculator`는 넣지 않는다 — 별도 클라이언트라 공용 컴포넌트를 안 쓴다.
   if (/^\/[a-z-]+\/calculator$/.test(path)) {
     return [`app${path}`, "components/calculator"];
+  }
+  // ★2026-10-05 차트 랜딩 11개(en + 10로케일)도 같은 구조 — 공용 컴포넌트 + 로케일 사전.
+  if (/^\/[a-z-]+\/hand-chart$/.test(path)) {
+    return [`app${path}`, "components/hand-chart"];
   }
   const dir = `app${path}`;
   if (existsSync(join(root, dir))) return [dir];

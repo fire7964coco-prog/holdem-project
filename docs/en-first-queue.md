@@ -293,6 +293,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 MA-311 통지 1(자동 착수 금지): bad-beat 플랍 9♣/9♠ · 리버 액션 출처 갈림(ESPN vs PokerNews) · zh straddle Mississippi «任何座位»(버튼만) · de showdown FAQ «Nein –» · de straddle FAQ «Position verleiht er nie».
 
+### 2-V. `/en/hand-chart` 상속 문구 — 로케일 차트 개설(2026-10-05 · 도구 확장 회차 1)에서 드러남 · 🪶 자동 착수 금지
+
+> 회차 1은 EN 마크업 «전후 0줄 차이»가 게이트라 EN 문구를 그대로 옮겼다(`components/hand-chart/dict.ts` `HAND_CHART_DICT_EN`). 로케일 10개는 ko 판 태도(타입/콤보 기준 병기 · GTO 미주장)로 지었다.
+
+| # | 자리 | 지금 | ko 정본 태도 |
+|---|---|---|---|
+| V-1 | seo.description · 서버 metadata/twitter description · 표 각주 | «color-coded **GTO** open ranges» · «* **GTO-based** approximations» · keywords «GTO starting hands» | 차트는 공개 자료 합의 레인지 — 솔버 SB 46.6% vs 차트 56%(`app/hand-chart/page.tsx` 주석). GTO 주장 근거 없음 |
+| V-2 | FAQ 4 «42% on the button» | «In GTO terms … 40–50%» (타입 42%와 콤보 40~50%를 같은 기준처럼) | ko FAQ 4: 타입 42% ↔ 콤보 35.4% 구분 |
+| V-3 | 칩·범례·표 % 기준 | 기준 미표기 | 칩 위 «169종 중» 캡션 · 표 «타입 / 콤보» 병기(EN은 dict 선택 필드만 채우면 된다) |
+| V-5 | JSON-LD featureList 4번째 (EN «Colour-coded pocket pairs, suited and offsuit» · **ko도 같다** «포켓페어·수티드·오프수트 구분 색상») | 색이 핸드 종류를 나눈다고 주장 — 실제 색 = 오픈 포지션(종류는 삼각형 위치) · 아스트라 교차가 10로케일에서 잡아 로케일은 정정 | «오픈 포지션별 색 구분(UTG~SB)» |
+| V-4 | 서버 metadata description ↔ dict.seo.description | «starting hand chart» vs «starting-hand chart» (한 글자 갈림 · 클라이언트가 덮는다) | EN page.tsx도 dict.seo에서 파생 |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

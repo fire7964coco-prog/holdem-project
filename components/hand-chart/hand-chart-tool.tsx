@@ -1,10 +1,17 @@
 "use client";
 
-import { HAND_CHART_FAQ } from "./faq";
-
-import { useState } from "react";
+import { useState, Fragment, isValidElement, cloneElement, type ReactNode } from "react";
 import Link from "next/link";
 import { SEO } from "@/components/seo";
+import type { HandChartDict, RichSeg } from "./dict";
+
+/**
+ * 스타팅 핸드 차트 — 공용 도구 컴포넌트 (★2026-10-05 로케일 도구 확장 회차 1 · `docs/tools-locale-rollout-plan.md`).
+ * 옛 `app/en/hand-chart/hand-chart-client.tsx`를 그대로 옮겨 문자열만 `HandChartDict`로 뺐다
+ * (EN SSR 마크업 전후 동일 — 텍스트 노드 구분자 `<!-- -->` 외 0줄 차이).
+ * 계산기(`components/calculator/calculator-tool.tsx`)와 같은 «공용 컴포넌트 + 로케일 사전» 구조.
+ * 🔴 ko `/hand-chart`는 아직 별도 클라이언트다(`app/hand-chart/hand-chart-client.tsx`) — CHART를 고치면 두 곳 다.
+ */
 
 const RANKS = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
 
@@ -30,11 +37,11 @@ const CHART: number[][] = [
 ];
 
 const POSITIONS = [
-  { id: 1, label: "UTG", full: "Under the Gun (UTG)", color: "#dc2626", pct: "~12%" },
-  { id: 2, label: "HJ", full: "Hijack (HJ)", color: "#ea580c", pct: "~20%" },
-  { id: 3, label: "CO", full: "Cutoff (CO)", color: "#ca8a04", pct: "~29%" },
-  { id: 4, label: "BTN", full: "Button (BTN)", color: "#16a34a", pct: "~42%" },
-  { id: 5, label: "SB", full: "Small Blind (SB)", color: "#2563eb", pct: "~56%" },
+  { id: 1, label: "UTG", color: "#dc2626" },
+  { id: 2, label: "HJ", color: "#ea580c" },
+  { id: 3, label: "CO", color: "#ca8a04" },
+  { id: 4, label: "BTN", color: "#16a34a" },
+  { id: 5, label: "SB", color: "#2563eb" },
 ];
 
 const TIER_COLORS = [
@@ -48,13 +55,16 @@ const TIER_COLORS = [
 
 const TIER_LABELS = ["Fold", "UTG", "HJ", "CO", "BTN", "SB"];
 
-const RELATED = [
-  { href: "/en/blog/holdem-starting-hands-chart", tag: "Deep guide", title: "Starting Hands Chart by Position", desc: "Which hands to open, and why, from every seat" },
-  { href: "/en/blog/holdem-when-to-fold", tag: "Folding", title: "When to Fold in Poker", desc: "The discipline that quietly wins the most" },
-  { href: "/en/blog/holdem-position-play", tag: "Position", title: "How Position Changes Everything", desc: "Why the button is the most profitable seat" },
-  { href: "/en/blog/holdem-hand-rankings", tag: "Rankings", title: "Poker Hand Rankings", desc: "All 10 hands from royal flush to high card" },
-  { href: "/en/calculator", tag: "Tool", title: "Poker Odds Calculator", desc: "Exact equity and pot odds for any hand" },
+/** Language-invariant hand lists, aligned with POSITIONS. */
+const EXAMPLES = [
+  "AA-77, AKs-A10s, KQs-KJs, AKo-AJo, KQo",
+  "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo, QJo, J10o",
+  "+44, A7s-A5s, K9s, Q9s, J8s, 97s, 87s, K10o, Q10o",
+  "+33-22, K8s-K7s, Q8s, J7s, 10-7s, 65s-54s, K9o, Q9o",
+  "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o, 87o, 76o, 95s, 85s, 74s, 64s",
 ];
+
+const WHY_ICONS = ["📍", "⚠️", "♠️", "🔄"];
 
 function getHandName(row: number, col: number): string {
   const r1 = RANKS[row], r2 = RANKS[col];
@@ -73,19 +83,76 @@ function countPlayable(maxTier: number): number {
   return count;
 }
 
-export default function HandChartEn() {
+/** 콤보 기준 — 페어 6 · 수티드 4 · 오프수트 12, 전체 1,326. 🔴 손으로 적지 마라(ko 판 2026-09-12 렌즈). */
+function countCombos(maxTier: number): number {
+  let combos = 0;
+  for (let i = 0; i < 13; i++)
+    for (let j = 0; j < 13; j++) {
+      const v = CHART[i][j];
+      if (v > 0 && v <= maxTier) combos += i === j ? 6 : i < j ? 4 : 12;
+    }
+  return combos;
+}
+
+/** `{name}` 템플릿 → 노드 배열 (calculator-tool.tsx `fmtNodes`와 같은 동작). */
+function fmtNodes(template: string, vars: Record<string, ReactNode>): ReactNode[] {
+  const out: ReactNode[] = [];
+  const re = /\{(\w+)\}/g;
+  let last = 0;
+  let i = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(template))) {
+    if (m.index > last) out.push(template.slice(last, m.index));
+    const v = vars[m[1]];
+    if (v === undefined) out.push(m[0]);
+    else if (isValidElement(v)) out.push(cloneElement(v, { key: `v${i++}` }));
+    else out.push(v);
+    last = m.index + m[0].length;
+  }
+  if (last < template.length) out.push(template.slice(last));
+  return out;
+}
+
+function Rich({ segs }: { segs: RichSeg[] }) {
+  return (
+    <>
+      {segs.map((s, i) =>
+        typeof s === "string" ? (
+          <Fragment key={i}>{s}</Fragment>
+        ) : "b" in s ? (
+          <strong key={i} className="text-foreground">{s.b}</strong>
+        ) : (
+          <Link key={i} href={s.href} className="text-primary hover:underline">{s.text}</Link>
+        ),
+      )}
+    </>
+  );
+}
+
+export default function HandChartTool({
+  dict: D,
+  faq,
+}: {
+  dict: HandChartDict;
+  faq: { q: string; a: string }[];
+}) {
   const [selectedPos, setSelectedPos] = useState<number | null>(null);
   const [hoveredCell, setHoveredCell] = useState<{ row: number; col: number } | null>(null);
 
   const totalHands = 169;
+  const gap = D.percentGap ?? "";
+  const typePct = (maxTier: number) =>
+    `${D.typePct.replace("{n}", String(Math.round((countPlayable(maxTier) / totalHands) * 100)))}${gap}%`;
+  const comboPct = (maxTier: number) =>
+    `${((countCombos(maxTier) / 1326) * 100).toLocaleString(D.numberLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}${gap}%`;
 
   return (
     <>
       <SEO
-        title="Poker Starting Hand Chart — Open Ranges by Position"
-        description="Interactive Texas Hold'em starting-hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges."
-        path="/en/hand-chart"
-        keywords={["poker starting hand chart", "preflop range chart", "holdem open ranges", "UTG range", "button range", "GTO starting hands"]}
+        title={D.seo.title}
+        description={D.seo.description}
+        path={D.seo.path}
+        keywords={D.seo.keywords}
       />
 
       <div className="max-w-5xl mx-auto px-4 py-10 md:py-14 space-y-12">
@@ -99,20 +166,20 @@ export default function HandChartEn() {
           />
           <div className="relative space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold tracking-wide">
-              ♠ Interactive starting-hand tool
+              {D.hero.badge}
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
-              Poker Starting Hand Chart
+              {D.hero.h1}
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              All 169 hands color-coded by position (UTG → SB). Tap a position to highlight only the hands you can open from that seat.
+              {D.hero.lead}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-sm">
-              <span className="text-foreground font-bold">169<span className="text-muted-foreground font-normal ml-1">hands</span></span>
+              <span className="text-foreground font-bold">169<span className="text-muted-foreground font-normal ml-1">{D.hero.handsUnit}</span></span>
               <span className="text-border">·</span>
-              <span className="text-foreground font-bold">5<span className="text-muted-foreground font-normal ml-1">positions</span></span>
+              <span className="text-foreground font-bold">5<span className="text-muted-foreground font-normal ml-1">{D.hero.positionsUnit}</span></span>
               <span className="text-border">·</span>
-              <span className="text-primary font-semibold">Tap · hover for instant view</span>
+              <span className="text-primary font-semibold">{D.hero.tapHint}</span>
             </div>
           </div>
         </div>
@@ -120,8 +187,14 @@ export default function HandChartEn() {
         {/* Position Filter Buttons */}
         <section className="space-y-4">
           <p className="text-xs text-muted-foreground text-center font-semibold tracking-widest uppercase">
-            Pick a position → playable hands highlight
+            {D.filter.caption}
           </p>
+          {/* 🔴 칩 %의 기준(169종 중)을 한 번 밝힌다 — 칩마다 붙이면 390px에서 줄이 무너진다(ko 판) */}
+          {D.filter.basisNote && (
+            <p className="text-[11px] text-muted-foreground text-center">
+              <Rich segs={D.filter.basisNote} />
+            </p>
+          )}
           <div className="flex flex-wrap gap-2 justify-center">
             <button
               onClick={() => setSelectedPos(null)}
@@ -131,7 +204,7 @@ export default function HandChartEn() {
                   : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
               }`}
             >
-              Show all
+              {D.filter.showAll}
             </button>
             {POSITIONS.map((pos) => {
               const playable = countPlayable(pos.id);
@@ -150,7 +223,7 @@ export default function HandChartEn() {
                   }
                 >
                   {pos.label}
-                  <span className="ml-1.5 opacity-80 font-normal text-xs">{pct}%</span>
+                  <span className="ml-1.5 opacity-80 font-normal text-xs">{pct}{gap}%</span>
                 </button>
               );
             })}
@@ -158,21 +231,26 @@ export default function HandChartEn() {
 
           {selectedPos && (
             <p className="text-center text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">
-                {POSITIONS.find(p => p.id === selectedPos)?.full}
-              </span>
-              {" "}open range ·{" "}
-              <span className="font-semibold text-foreground">
-                {countPlayable(selectedPos)} hands
-              </span>
-              {" "}/ 169 ({Math.round((countPlayable(selectedPos) / totalHands) * 100)}%)
+              {fmtNodes(D.filter.selected, {
+                pos: (
+                  <span className="font-semibold text-foreground">
+                    {D.positions[selectedPos - 1]}
+                  </span>
+                ),
+                count: (
+                  <span className="font-semibold text-foreground">
+                    {D.filter.handsCount.replace("{n}", String(countPlayable(selectedPos)))}
+                  </span>
+                ),
+                pct: Math.round((countPlayable(selectedPos) / totalHands) * 100),
+              })}
             </p>
           )}
         </section>
 
         {/* Grid */}
         <section className="space-y-3">
-          <p className="md:hidden text-center text-xs text-muted-foreground">← Swipe to see the full chart →</p>
+          <p className="md:hidden text-center text-xs text-muted-foreground">{D.grid.swipe}</p>
           <div
             className="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 [-webkit-overflow-scrolling:touch]"
           >
@@ -259,14 +337,16 @@ export default function HandChartEn() {
                               {name}
                             </div>
                             <div className="text-center mt-0.5">
-                              {isPair ? "Pocket pair" : isSuited ? "Suited" : "Offsuit"}
+                              {isPair ? D.grid.pocketPair : isSuited ? D.grid.suited : D.grid.offsuit}
                             </div>
                             <div className="mt-1 text-center">
-                              Open from{" "}
-                              <span className="font-semibold" style={{ color: TIER_COLORS[tier] }}>
-                                {TIER_LABELS[tier]}
-                              </span>
-                              {"+"}
+                              {fmtNodes(D.grid.openFrom, {
+                                pos: (
+                                  <span className="font-semibold" style={{ color: TIER_COLORS[tier] }}>
+                                    {TIER_LABELS[tier]}
+                                  </span>
+                                ),
+                              })}
                             </div>
                           </div>
                         )}
@@ -280,13 +360,13 @@ export default function HandChartEn() {
 
           {/* Grid legend note */}
           <p className="text-center text-xs text-muted-foreground">
-            Top-right triangle = suited (s) · diagonal = pocket pairs · bottom-left triangle = offsuit (o)
+            {D.grid.legendNote}
           </p>
         </section>
 
         {/* Color Legend */}
         <div className="rounded-2xl border border-border/50 p-5 md:p-6 bg-card/40">
-          <h2 className="text-xs font-bold text-primary uppercase tracking-widest mb-4">Color legend</h2>
+          <h2 className="text-xs font-bold text-primary uppercase tracking-widest mb-4">{D.legend.heading}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
             {POSITIONS.map((pos) => (
               <div key={pos.id} className="flex items-center gap-2">
@@ -297,16 +377,16 @@ export default function HandChartEn() {
                   {pos.label}
                 </div>
                 <div className="text-xs leading-tight min-w-0">
-                  <div className="font-semibold text-foreground truncate">{pos.full}</div>
-                  <div className="text-muted-foreground">{pos.pct}</div>
+                  <div className="font-semibold text-foreground truncate">{D.positions[pos.id - 1]}</div>
+                  <div className="text-muted-foreground">{D.legend.seatLine.replace("{pct}", typePct(pos.id))}</div>
                 </div>
               </div>
             ))}
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg shrink-0 bg-[#1a1a1a] border border-border" />
               <div className="text-xs leading-tight">
-                <div className="font-semibold text-foreground">Fold</div>
-                <div className="text-muted-foreground">All positions</div>
+                <div className="font-semibold text-foreground">{D.legend.fold}</div>
+                <div className="text-muted-foreground">{D.legend.foldSub}</div>
               </div>
             </div>
           </div>
@@ -314,15 +394,23 @@ export default function HandChartEn() {
 
         {/* Position Table */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">Open range by position</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.table.heading}</h2>
+          {/* 🔴 390px에서 «범위» 열은 첫 화면 밖이다(표 최소폭 560 ↔ 래퍼 358 · ko 판 실측) */}
+          {D.table.swipe && <p className="text-xs text-muted-foreground md:hidden">{D.table.swipe}</p>}
           <div className="overflow-x-auto rounded-2xl border border-border/50">
             <table className="w-full text-sm min-w-[560px]">
               <thead>
                 <tr className="border-b border-border/50 bg-card/50">
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">Position</th>
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">Hands</th>
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">Range</th>
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">Example hands</th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">{D.table.position}</th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">
+                    {D.table.hands}
+                    {D.table.handsSub && <> <span className="font-normal text-muted-foreground text-xs">{D.table.handsSub}</span></>}
+                  </th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">
+                    {D.table.range}
+                    {D.table.rangeSub && <> <span className="font-normal text-muted-foreground text-xs">{D.table.rangeSub}</span></>}
+                  </th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">{D.table.examples}</th>
                 </tr>
               </thead>
               <tbody>
@@ -338,7 +426,7 @@ export default function HandChartEn() {
                         >
                           {pos.label}
                         </span>
-                        <span className="ml-2 text-muted-foreground text-xs">{pos.full}</span>
+                        <span className="ml-2 text-muted-foreground text-xs">{D.positions[pos.id - 1]}</span>
                       </td>
                       <td className="px-4 py-3 font-mono text-foreground whitespace-nowrap">
                         {playable}
@@ -346,13 +434,14 @@ export default function HandChartEn() {
                           (+{newHands})
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">{pos.pct}</td>
+                      <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">
+                        {typePct(pos.id)}
+                        {D.table.comboCell && (
+                          <span className="ml-1.5 text-xs opacity-70">{D.table.comboCell.replace("{pct}", comboPct(pos.id))}</span>
+                        )}
+                      </td>
                       <td className="px-4 py-3 text-muted-foreground text-xs">
-                        {pos.id === 1 && "AA-77, AKs-A10s, KQs-KJs, AKo-AJo, KQo"}
-                        {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo, QJo, J10o"}
-                        {pos.id === 3 && "+44, A7s-A5s, K9s, Q9s, J8s, 97s, 87s, K10o, Q10o"}
-                        {pos.id === 4 && "+33-22, K8s-K7s, Q8s, J7s, 10-7s, 65s-54s, K9o, Q9o"}
-                        {pos.id === 5 && "+A6o-A4o, K8o-K7o, Q8o, J7o, 97o, 87o, 76o, 95s, 85s, 74s, 64s"}
+                        {EXAMPLES[pos.id - 1]}
                       </td>
                     </tr>
                   );
@@ -360,37 +449,18 @@ export default function HandChartEn() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-muted-foreground">
-            * GTO-based approximations — in practice, adjust for table tendencies, stack depth, and opponent ranges.
-          </p>
+          {D.table.notes.map((segs, i) => (
+            <p key={i} className="text-xs text-muted-foreground">
+              <Rich segs={segs} />
+            </p>
+          ))}
         </section>
 
         {/* Why section */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">Why position drives hand selection</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.why.heading}</h2>
           <div className="grid md:grid-cols-2 gap-4">
-            {[
-              {
-                title: "Position = information",
-                desc: "The button (BTN) always acts last after the flop. Seeing everyone's bets and checks first makes the same hand far more profitable.",
-                icon: "📍",
-              },
-              {
-                title: "UTG has 8 players behind",
-                desc: "Open-raising from UTG at a 9-handed table, you don't know how the 8 players behind will react. The chance of a re-raise is high, so speculative hands like suited connectors can't realize their value — tighten to premium hands.",
-                icon: "⚠️",
-              },
-              {
-                title: "The value of suited",
-                desc: "A suited hand has roughly a 3–5% equity edge over the same offsuit hand. That's why you can open A8s from the hijack but wait for the button with A8o.",
-                icon: "♠️",
-              },
-              {
-                title: "The SB dilemma",
-                desc: "The small blind always acts first after the flop. Even with a wider range than the button, it realizes less equity, so medium-strength hands become less profitable.",
-                icon: "🔄",
-              },
-            ].map((item) => (
+            {D.why.items.map((item, i) => ({ ...item, icon: WHY_ICONS[i] })).map((item) => (
               <div key={item.title} className="rounded-2xl border border-border/40 bg-card/30 p-5 space-y-2 transition-colors hover:border-primary/40">
                 <div className="text-2xl">{item.icon}</div>
                 <h3 className="font-bold text-foreground">{item.title}</h3>
@@ -402,8 +472,8 @@ export default function HandChartEn() {
 
         {/* FAQ */}
         <section className="space-y-3">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">Frequently asked questions</h2>
-          {HAND_CHART_FAQ.map((item) => (
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.faqHeading}</h2>
+          {faq.map((item) => (
             <details
               key={item.q}
               className="group rounded-2xl border border-border/40 bg-card/30 overflow-hidden"
@@ -421,9 +491,9 @@ export default function HandChartEn() {
 
         {/* Related guides (internal links) */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">Next steps — related guides</h2>
+          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.related.heading}</h2>
           <div className="grid sm:grid-cols-2 gap-3">
-            {RELATED.map((r) => (
+            {D.related.items.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}

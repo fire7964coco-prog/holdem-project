@@ -4,6 +4,7 @@ import { socialMeta } from "@/lib/page-metadata";
 import HandChartClient from "./hand-chart-client";
 import HubPage from "@/components/hub-page";
 import { HAND_CHART_FAQ } from "./faq";
+import { HAND_CHART_ALTERNATES } from "@/lib/hand-chart-alternates";
 
 /**
  * ★2026-08-08 noindex 해제 (사장님 결정) — 몰아주기가 성과로 회수되지 않았다.
@@ -59,7 +60,8 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   robots: { index: true, follow: true },
-  alternates: { canonical: `${SITE}/hand-chart` },
+  // ★2026-10-05 로케일 차트 10개 개설 — 12개 랜딩 공용 hreflang 세트(lib/hand-chart-alternates.ts)
+  alternates: { canonical: `${SITE}/hand-chart`, languages: HAND_CHART_ALTERNATES },
   // ★2026-09-20: og도 같은 이유로 홈 카드를 물려받고 있었다(lib/page-metadata.ts 주석).
   ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/hand-chart" }),
 };

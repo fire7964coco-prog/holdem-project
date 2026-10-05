@@ -111,7 +111,7 @@ Mira cómo se ensancha el rango de apertura asiento a asiento — UTG, MP, CO y 
 
 :::rangechart:::
 
-¿La quieres como herramienta independiente con rangos ampliados por asiento? Usa la [herramienta de tabla de manos iniciales de Texas Hold'em](/en/hand-chart). Para un desglose de cada nombre de asiento (UTG, HJ, CO, BTN, SB, BB), consulta la [guía de posiciones de póker](/es/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+¿La quieres como herramienta independiente con rangos ampliados por asiento? Usa la [herramienta de tabla de manos iniciales de Texas Hold'em](/es/hand-chart). Para un desglose de cada nombre de asiento (UTG, HJ, CO, BTN, SB, BB), consulta la [guía de posiciones de póker](/es/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Posición temprana (UTG): el rango más cerrado
 

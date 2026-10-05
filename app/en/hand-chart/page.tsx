@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
-import HandChartEn from "./hand-chart-client";
+import HandChartTool from "@/components/hand-chart/hand-chart-tool";
+import { HAND_CHART_DICT_EN } from "@/components/hand-chart/dict";
+import { HAND_CHART_ALTERNATES } from "@/lib/hand-chart-alternates";
 import HubPage from "@/components/hub-page";
 import { HAND_CHART_FAQ } from "./faq";
 
@@ -10,7 +12,11 @@ export const metadata: Metadata = {
   title: { absolute: "Poker Starting Hand Chart — Open Ranges by Position | HoldemMaster" },
   description:
     "Interactive Texas Hold'em starting hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges.",
-  alternates: { canonical: `${SITE}/en/hand-chart` },
+  alternates: {
+    canonical: `${SITE}/en/hand-chart`,
+    // ★2026-10-05 로케일 도구 확장 회차 1 — 차트 랜딩 12개가 같은 세트를 선언한다. 정본 = lib/hand-chart-alternates.ts
+    languages: HAND_CHART_ALTERNATES,
+  },
   // ★2026-10-05 색인 개시 (사장님 결정 · 원칙 «차트·계산·대회·솔버 의도는 도구로 몰아준다»).
   //   막았던 근거: «holdem-starting-hands-chart 필라가 키워드 소유 → 도구는 SERP 제외».
   //   푼 근거: 그 필라가 28일 0클릭·43.9위 / 90일 0클릭·35.6위 = 못 이겼다(GSC [page] 단일 차원 09-05~10-02).
@@ -86,7 +92,8 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HubPage title="Hand Chart" locale="en">
-        <HandChartEn />
+        {/* ★2026-10-05 공용 컴포넌트로 전환(components/hand-chart) — EN 마크업 전후 동일 확인 */}
+        <HandChartTool dict={HAND_CHART_DICT_EN} faq={HAND_CHART_FAQ} />
       </HubPage>
     </>
   );

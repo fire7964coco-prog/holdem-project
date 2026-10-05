@@ -121,7 +121,7 @@ export const POST: Post = {
 
 :::rangechart:::
 
-各席の拡張レンジ付きの独立ツールとして使いたいなら、[テキサスホールデムのスターティングハンド表ツール](/en/hand-chart)をどうぞ。各席の名前(UTG, HJ, CO, BTN, SB, BB)の内訳は[ポーカーのポジション解説](/ja/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")を参照してください。
+各席の拡張レンジ付きの独立ツールとして使いたいなら、[テキサスホールデムのスターティングハンド表ツール](/ja/hand-chart)をどうぞ。各席の名前(UTG, HJ, CO, BTN, SB, BB)の内訳は[ポーカーのポジション解説](/ja/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")を参照してください。
 
 ### アーリーポジション(UTG):最もタイトなレンジ
 

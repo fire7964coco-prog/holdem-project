@@ -117,7 +117,7 @@ export const POST: Post = {
 
 :::rangechart:::
 
-想要一个每个座位都有扩展范围的独立工具？用[德州扑克起手牌表工具](/en/hand-chart)。想要每个座位名称（UTG、HJ、CO、BTN、SB、BB）的拆解，看[德州扑克位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
+想要一个每个座位都有扩展范围的独立工具？用[德州扑克起手牌表工具](/zh/hand-chart)。想要每个座位名称（UTG、HJ、CO、BTN、SB、BB）的拆解，看[德州扑克位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
 
 ### 前面位置（UTG）：最紧的范围
 

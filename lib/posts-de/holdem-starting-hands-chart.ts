@@ -115,7 +115,7 @@ Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO u
 
 :::rangechart:::
 
-Willst du es als eigenständiges Tool mit erweiterten Ranges pro Position? Nutze das [Texas-Hold'em-Starthände-Chart-Tool](/en/hand-chart). Für eine Aufschlüsselung jedes Positionsnamens (UTG, HJ, CO, BTN, SB, BB) siehe den [Poker-Positionen-Guide](/de/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Willst du es als eigenständiges Tool mit erweiterten Ranges pro Position? Nutze das [Texas-Hold'em-Starthände-Chart-Tool](/de/hand-chart). Für eine Aufschlüsselung jedes Positionsnamens (UTG, HJ, CO, BTN, SB, BB) siehe den [Poker-Positionen-Guide](/de/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Frühe Position (UTG): die engste Range
 

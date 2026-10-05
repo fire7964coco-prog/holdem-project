@@ -109,7 +109,7 @@ Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN 
 
 :::rangechart:::
 
-Mau versi sebagai alat mandiri dengan range yang diperluas per kursi? Gunakan [alat chart starting hand Texas Hold'em](/en/hand-chart). Untuk rincian setiap nama kursi (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/id/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Mau versi sebagai alat mandiri dengan range yang diperluas per kursi? Gunakan [alat chart starting hand Texas Hold'em](/id/hand-chart). Untuk rincian setiap nama kursi (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/id/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Posisi awal (UTG): range paling ketat
 

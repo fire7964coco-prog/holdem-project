@@ -1,3 +1,13 @@
+## 2026-10-05 (10) — 로케일 도구 확장 회차 1: 스타팅 핸드 차트 × 10로케일 개설
+
+- 정본 = `docs/tools-locale-rollout-plan.md` §2 A~G. A: `/en/hand-chart` 클라이언트 → 공용 `components/hand-chart/{hand-chart-tool.tsx,dict.ts}` · EN 정적 렌더 마크업 전후 **바이트 동일**(84,541B · react-dom/server 스냅샷 비교). EN 사전은 상속 문구 그대로 — «GTO» 주장·FAQ4 기준 혼동·featureList 색 오기술은 `en-first-queue` §2-V(V-1~5 · ko featureList 포함 · 자동 착수 금지).
+- B: 5레인(Opus · 2로케일씩)이 `app/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart/{dict,faq,page}` 작성. 로케일은 ko 판 태도(칩 % = 169종 기준 캡션 · 표 «타입 / 콤보» 병기 · 솔버 SB 46.6% 각주 · FAQ4 타입 42% vs 콤보 35.4%) · 차트를 GTO라 부르지 않음. 헤드텀 DataForSEO 실측은 각 dict 머리 주석(ja ポーカー レンジ表 1,600 · pt range poker 590 · fr tableau range poker 210 · de poker starthände tabelle 90 등). ja-gto-solver 뱅크의 «レンジ表는 블로그 자리» 메모에 10-05 갱신 줄.
+- C: Fable 카피 패스 — de·es description에 «Preflop/preflop» · id title «Poker Hand Chart Preflop» · 7로케일 유지.
+- D: `lib/hand-chart-alternates.ts`(12세트+x-default · ko·en 페이지도 선언) · hub-routes · side-rail(라벨 = HubPage 제목) · 사이트맵 10행 + sourcesFor 공용 컴포넌트 규칙.
+- E: 로케일 글 15곳 `](/en/hand-chart)` → `/<loc>/hand-chart`(numstat 1:1 · relink라 스탬프 불변) · ms starting-hands-chart만 «(bahasa Inggeris)» 삭제로 `updated` 10-05.
+- F: 렌즈 A(de fr es pt id) 12건 · 렌즈 B(ja zh zh-hant ms hi) — 🔴 **ms·hi FAQ1 «6-max는 더 넓게»가 «더 이른 자리(타이트)»로 반전** 정정 · zh·zh-hant 모호 표현 정정 · «버튼/칩의 %»(포지션 «버튼(BTN)»과 충돌) → «각 포지션의 %» 9로케일 · 아스트라 교차 = featureList «색 = 핸드 종류» 오기술 10로케일 정정 외 4건 · 2차 교열(hi 성 불일치 «प्रकार» 필수 1 + de·es·pt·fr·ja·id 미세 6). 교훈은 계획서 §2에 1줄.
+- 게이트: intl-links · meta-length · seo-sync · cjk-linebreak 통과 · 빌드 exit 0 · hreflang 0건 · 산출 10/10 «index, follow» · hreflang 13 · 390·1440 화면(ja hi fr de en) 가로 넘침 0.
+
 ## 2026-10-05 (9) — 도구 3곳 색인 개시: /en/hand-chart · /en/glossary · /hands
 
 - 사장님 원칙 확정(«차트·계산·대회·솔버 의도는 도구로 몰아준다» · 재조사 금지). 색인 제외 도구 4곳의 몰아준 필라 성적(GSC [page] 28일/90일): en starting-hands-chart 0·43.9위/0 · en glossary 0·35.9위/0 · ko hand-rankings 5·10.5위/18 · ko holdem-rules 12·10.9위/24(«홀덤 룰» 24위 0클릭).
