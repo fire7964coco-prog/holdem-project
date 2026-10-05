@@ -1,3 +1,9 @@
+## 2026-10-06 (4) — 우편함 MA-331 판정·이행: all-in tldr 누적 예외(EN → 9로케일) + ID game-order 소액 권유 교체 (MB-181)
+
+- 판정: 요청 1·2 전부 채택(기각 0). ① EN all-in tldr «짧은 올인은 재오픈 안 함»에 TDA 47-A 누적 예외(«several short all-ins add up to at least a full raise over what that player has already put in») — 본문 Advanced Case·Mistake 2는 이미 명시, tldr만 누락. ar·de·es·id·ja·ms·pt·zh·zh-hant 전파(ja tldr도 누락 상태였다). ② ID game-order «Mulai dari taruhan paling kecil» → «Mulai dari permainan tanpa taruhan uang»(JA MA-299 선례). 대기열 = `en-first-queue` §2-Y.
+- 스탬프: updated 10-06 · masterUpdated 동기 파일만 10-06(ms 09-26 뒤처짐 유지).
+- 게이트: audit:hard 10로케일 🔴 0 · id game-order 0 · de-style all-in 0 · 핵심 드리프트 0 · 빌드 exit 0.
+
 ## 2026-10-06 (3) — 판단 2건 «권고대로» 이행: string bet 금액 선언 · 쿨러 Quick test 한정 (MB-180)
 
 - 사장님 «잘 모르겠으니 권고대로»(10-06). 권고 = 둘 다 고친다. ① string bet 정의(WSOP 103 축어)는 유지하고 실천 문구만 «"raise"와 전체 금액 먼저 선언 · 아니면 한 번에»(TDA 2024 Rule 42 — 로컬 원문 `docs/sources/tda-2024-rules-v1.txt` 축어 확인) — EN betting 2자리 ② bad-beat·glossary FAQ Quick test «상대가 앞서 있었고 내 손이 접기엔 너무 강했다면 쿨러 · 그저 약한 손으로 뒤처진 건 둘 다 아님»(W-31 결재와 같은 방향 · 본문 litmus는 이미 «monster» 한정).

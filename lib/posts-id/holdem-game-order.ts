@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan paling banyak empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-01",
+  updated: "2026-10-06",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 menit",
@@ -329,7 +329,7 @@ Begitu urutan permainannya nyantol, saatnya benar-benar main.
 - **Latihan dengan uang mainan** — kebanyakan aplikasi dan situs poker punya mode gratis. Praktikkan panduan ini dalam alur permainan nyata.
 - **Baca ulang artikel ini dua-tiga kali** — urutannya harus jadi kebiasaan supaya Anda tidak pernah bengong lagi di meja.
 - **Bikin contekan peringkat kartu** — tulis kesepuluh kombinasi di kertas dan taruh di tempat yang gampang Anda lihat.
-- **Mulai dari taruhan paling kecil** — makin murah kesalahan Anda, makin cepat Anda belajar.
+- **Mulai dari permainan tanpa taruhan uang** — misalnya main bareng teman pakai chip yang tidak bernilai uang; makin murah kesalahan Anda, makin cepat Anda belajar.
 
 Texas Hold'em butuh tiga puluh menit untuk dipelajari dan seumur hidup untuk dikuasai. Tapi dasar-dasar yang Anda dapat hari ini sudah lebih dari cukup untuk duduk di meja. Untuk sejarah dan aturan formalnya, [artikel Wikipedia tentang Texas hold 'em](https://en.wikipedia.org/wiki/Texas_hold_%27em) bisa jadi rujukan yang solid.
 

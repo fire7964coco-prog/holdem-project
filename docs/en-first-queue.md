@@ -372,6 +372,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 3(ID 현지화 · MA-329 계열): blind 캐시 스테이크·바이인 블록에 인도네시아 한정 없음 — 현지화 손질 때.
 - 🪶 꼬리 15로케일(bn fa fil fr he hi it pl ro ru sw th tr uk vi) 같은 3편 = 이번 미전파(§2-Q 잔여와 같은 옛 판 부채 · 자동 착수 금지). ms blind 노트에 «라이브 스트래들이 마지막 자리» 문장 없음(뒤처짐).
 
+### 2-Y. 우편함 수신분 — MA-331 (ID ④ 4-1 rules 부분2 · all-in·game-order) · 판정·이행 2026-10-06 (4) · MB-181
+
+> 판정 = 요청 1(EN-먼저 1)·요청 2(ID 고유 1) 전부 **채택·이행**(기각 0). 근거 = TDA 2024 Rule 47-A «(or cumulative multiple short all-ins)» · 같은 글 본문 «Advanced Case»·«Mistake 2»(이미 예외 명시 — tldr만 누락). 전파 = EN → 9로케일(ar·de·es·id·ja·ms·pt·zh·zh-hant). ▶ 검수장 재판정 대기.
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| Y-1 | all-in | tldr 끝 문장 «짧은 올인은 이미 액션한 사람에게 재오픈 안 함» | «— unless several short all-ins add up to at least a full raise over what that player has already put in» 추가(주어도 «a player who already acted»로 — 판정이 플레이어별) |
+| Y-2 | id game-order | 마무리 «Mulai dari taruhan paling kecil» | «Mulai dari permainan tanpa taruhan uang — 친구와 돈 가치 없는 칩으로»(JA MA-299 «最低レート» → 비환금 예시 교체 선례와 같은 방향 · 앞 불릿 플레이머니와 겹치지 않게 홈게임 예시) |
+
+- 🪶 통지 1(EN 동형 단순화 9자리 · EN 손질 때): all-in FAQ3 캐시 쇼다운 순서 «side pot participants show first»(B 149) 생략 · 결정표 «한 올인 < 풀레이즈 → 콜/폴드만»(앞선 정상 레이즈가 남은 경우) · «메인 이기고 사이드 짐»(자격 없음 ≠ 패배) · «call, bukan all-in»(전 스택 정확 콜) · «muck 금지»(TDA 16 «without tabling») · 실수 3 «$80 … 각자에게서 $80»(이전 기여분 모호) · game-order Call/Raise 정의(레이즈 팟) · FAQ4 «올인 있으면 전원 공개»(«betting complete» 조건) · 18-B «river bet 후 콜된 사람»(«last aggressor») · «벳 있으면 체크 불가» ↔ BB 체크 예외.
+- 🪶 통지 2(ID 직답 상자 완결성): game-order tldr에 EN 선행동 3문장(헤즈업 예외)·desc «who bets first» 누락 — 라벨 영향 없음 · ID 손질 때.
+- 🪶 꼬리 15로케일 all-in tldr = 이번 미전파(자동 착수 금지).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
