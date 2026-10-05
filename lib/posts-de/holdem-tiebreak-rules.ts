@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -234,7 +234,7 @@ A. Das Wheel, A-2-3-4-5, weil das Ass darin als Eins spielt. Straßen werden rei
 
 **Q. Entscheiden Farben beim Texas Hold'em jemals einen Tie?**
 
-A. Nein – Farben entscheiden nie über einen Pot. Wo sie am Hold'em-Tisch doch auftauchen, ist beim Kartenziehen, das einen Platz festlegt. Das bekannteste Beispiel ist das Ziehen um den Button: In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen das Eröffnungsziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lässt erst bei noch drei, zwei und einem verbleibenden Tisch um den Button ziehen.) Turnierleiter setzen außerdem die Spieler eines aufgelösten Tisches neu, indem sie jedem eine Karte austeilen; im TDA-Beispiel bekommt den ersten Platz die ==höchste Karte nach Farbe==. So oder so bestimmt das einen *Platz*, nie eine Hand. Unter den Handregeln des WSOP-Regelwerks gehört die einzige Farbreihenfolge zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
+A. Nein – Farben entscheiden nie über einen Pot. Wo sie am Hold'em-Tisch doch auftauchen, ist beim Kartenziehen, das einen Platz festlegt. Das bekannteste Beispiel ist das Ziehen um den Button: In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen das Eröffnungsziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lässt erst bei noch drei, zwei und einem verbleibenden Tisch um den Button ziehen.) Turnierleiter setzen außerdem die Spieler eines aufgelösten Tisches neu, indem sie jedem eine Karte austeilen; im TDA-Beispiel bekommt den ersten Platz die ==höchste Karte nach Farbe==. So oder so bestimmt das einen *Platz*, nie eine Hand. Unter den Handregeln des WSOP-Turnierregelwerks gehört die einzige Farbreihenfolge zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 

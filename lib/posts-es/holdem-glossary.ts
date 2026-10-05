@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -81,7 +81,7 @@ Todo lo que puedes hacer físicamente en tu turno. Si acabas de empezar, arranca
 | **Farol / Semifarol (bluff)** | Un farol apuesta con mano floja para que manos mejores se retiren; un semifarol lo hace con un proyecto que aún puede mejorar. |
 | **Check-raise** | Pasar y luego subir después de que un rival apueste — una línea fuerte y engañosa (legal en salas modernas). |
 | **Min-raise (subida mínima)** | La subida legal más pequeña. |
-| **String bet** | Volver a por más fichas sin declararlo — solo cuenta el primer movimiento (normalmente se resuelve como call). Declarar primero la subida hace legales los movimientos partidos — el hábito seguro es decir la cantidad antes de ir a por las fichas, o meter toda la subida de un solo movimiento. |
+| **String bet** | Volver a por más fichas sin declararlo — solo cuenta el primer movimiento (normalmente se resuelve como call). Declarar primero la cantidad total de la subida hace legales los movimientos partidos — el hábito seguro es decir la cantidad antes de ir a por las fichas, o meter toda la subida de un solo movimiento. |
 | **Jam / Shove** | Ir all-in. |
 | **Snap call** | Un call instantáneo, sin dudar. |
 | **Hero call** | Pagar con mano floja porque has leído al rival como que va de farol. |

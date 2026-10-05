@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker strategy yang menang bukan senarai tip, tetapi lima soalan yang berulang setiap tangan: di mana anda duduk, adakah tangan ini berbaloi dimainkan, raise atau fold, perlukah terus bet pada flop, dan bila perlu fold. Pemain tight-aggressive yang menjawabnya dengan baik fold kira-kira 80% tangan preflop dan bermain agresif apabila masuk pot.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -245,7 +245,7 @@ A. Belajar di luar meja dan main lebih ketat di meja. Peningkatan terpantas bagi
 Ringkasnya, setiap tangan Texas Hold'em ialah lima soalan yang sama dalam urutan yang sama. Jawab setiap satu dengan disiplin — posisi, pilihan tangan, raise atau fold, c-bet, dan fold — dan anda sudah memegang rangka kerja yang menewaskan hampir setiap permainan kasual:
 
 1. **Posisi** — mainkan lebih banyak tangan di posisi lewat, lebih sedikit di posisi awal; button ialah tempat duduk paling menguntungkan anda.
-2. **Pilihan tangan** — fold ~80% preflop; tangan yang anda simpan lebih kuat daripada tangan lawan.
+2. **Pilihan tangan** — fold ~80% preflop; tangan yang anda simpan secara purata lebih kuat daripada tangan lawan.
 3. **Raise atau fold** — jangan open-limp pada kedalaman cash game biasa (complete small blind dalam pot tanpa raise ialah pengecualiannya); raise boleh memenangi pot sekarang, limp tidak pernah boleh.
 4. **Continuation** — c-bet apabila anda memegang inisiatif, tetapi sesuaikan mengikut board, posisi dan lawan.
 5. **Disiplin** — fold tangan yang sudah kalah dan draw tanpa odds; itulah langkah yang paling menjimatkan wang.

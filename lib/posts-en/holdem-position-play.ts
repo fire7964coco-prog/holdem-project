@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-28",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -107,7 +107,7 @@ The **cutoff** is second-best for one reason: only the button acts behind you, a
 | Seat | Typical long-run result (database averages) | Why |
 |:---|:---|:---|
 | **Button** | Clearly positive — the most profitable seat in essentially every sample | Guaranteed last action postflop |
-| **Cutoff** | Positive — second best | Only the button behind you |
+| **Cutoff** | Positive — second best | Only the button acts after you postflop |
 | Hijack / Lojack | Small positive to around break-even | Moderate position, moderate ranges |
 | UTG | Near break-even even for solid players | Tight range, OOP most hands |
 | **Small blind** | Negative — the ==r:**structurally worst seat to play a hand from**== | First to act on every postflop street, half a blind already dead |
@@ -174,7 +174,7 @@ Every seat gets its own opening range because **the number of players still to a
 | UTG+2 | ~16% | Field starting to shrink |
 | Lojack | ~17% | First true middle position |
 | Hijack | ~20% | Steal opportunities begin |
-| **Cutoff** | **~27%** | Only the button behind — prime steal seat |
+| **Cutoff** | **~27%** | Three left to act (BTN, SB, BB) — prime steal seat |
 | **Button** | ==g:**~43%**== | Guaranteed last action postflop — widest open |
 | Small blind | ~40% when folded to (vs a raise: 3-bet or fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — almost never flat-call |
 | Big blind | Defends wide vs steals | Closing action + pot odds, not opens |
@@ -191,7 +191,7 @@ These percentages describe *range sizes* — which specific hands fill them (whe
 
 Most guides stop at "avoid playing OOP." Fine — but you're in the blinds twice every orbit, and sometimes your UTG open gets called by the button. Here's how to lose the least, and occasionally flip the script:
 
-**1. [Check-raise](/en/blog/low-board-check-raise) is your equalizer.** It's the one weapon OOP has that IP doesn't: because they expect to bet when checked to, ==g:a check-raise turns their positional autopilot against them.== Build the range honestly — strong hands (sets, two pair) plus draws with real equity (open-enders, flush draws) — so it's never all-bluff or all-value.
+**1. [Check-raise](/en/blog/low-board-check-raise) is your equalizer.** It's a weapon OOP has that IP doesn't: because they expect to bet when checked to, ==g:a check-raise turns their positional autopilot against them.== Build the range honestly — strong hands (sets, two pair) plus draws with real equity (open-enders, flush draws) — so it's never all-bluff or all-value.
 
 **2. Give every bet a job — and size it for the spot.** There is no single out-of-position size. In the single-raised pots we solved, the OOP player who bet mostly chose about a third of the pot (79.6% of the small blind's range took that size on A♠A♥6♦, a paired-ace board that heavily favors the raiser). In 3-bet pots the OOP 3-bettor still preferred the small size on A♦K♠2♥ (57.8%) but switched to two-thirds pot on Q♥T♥7♠ and 8♦5♣2♠. The bigger size is for denying the free cards and cheap floats that position would otherwise let your opponent take; the small one lets you bet a wide range cheaply. What loses is betting without a plan — every extra street you drift through favors the player acting last.
 
@@ -294,7 +294,7 @@ A. When you enter a raised pot, mostly yes — the modern default from the SB is
 
 1. **Position improves equity realization on average.** Neither seat is fixed above or below 100%; ranges, board, and action set the number. The usual edge comes from acting last, not from better cards.
 2. **Ranges slide with position.** UTG opens ~13%, the button ==g:~43%== — and every seat between gets a step on the ladder. ==r:Playing button hands from UTG bleeds chips.==
-3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act every street). Protect your button, and facing a raise from the small blind, 3-bet or fold almost every time.
+3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act on every postflop street). Protect your button, and facing a raise from the small blind, 3-bet or fold almost every time.
 4. **OOP isn't hopeless — it's disciplined.** Check-raise as your equalizer, size your bets for the board and pot type, control pots with medium hands, and fold rivers more than feels natural.
 5. **Raise or fold under the gun.** Open-limping UTG combines the worst preflop seat with the weakest line.
 6. **6-max compresses the map.** 6-max UTG plays like full-ring lojack (~17%) — recalibrate when you switch formats.

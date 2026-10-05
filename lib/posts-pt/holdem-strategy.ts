@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo em vez de dar open-limp, continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -256,7 +256,7 @@ A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a mai
 ## As Cinco Decisões, mais uma vez
 
 1. **Posição** — jogue mais mãos tarde, menos cedo; o botão é sua cadeira mais lucrativa.
-2. **Seleção de mãos** — folde ~80% no pré-flop; as mãos que você guarda são mais fortes que as dos adversários.
+2. **Seleção de mãos** — folde ~80% no pré-flop; as mãos que você guarda são, em média, mais fortes que as dos adversários.
 3. **Aumentar ou foldar** — não dê open-limp com stacks normais de cash game (a exceção é completar o small blind num pote sem aumento); um aumento pode ganhar o pote agora, um limp nunca.
 4. **Continuação** — dê c-bet quando tiver a iniciativa, mas ajuste para o board, a posição e os adversários.
 5. **Disciplina** — folde mãos vencidas e projetos sem odds; é a jogada que mais economiza dinheiro.

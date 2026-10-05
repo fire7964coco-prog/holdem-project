@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -108,7 +108,7 @@ O **cutoff** é o segundo melhor por um motivo: só o button age atrás de você
 | Cadeira | Resultado típico no longo prazo (médias de banco de dados) | Por quê |
 |:---|:---|:---|
 | **Button** | Claramente positivo — a cadeira mais lucrativa em praticamente toda amostra | Última ação pós-flop garantida |
-| **Cutoff** | Positivo — a segunda melhor | Só o button atrás de você |
+| **Cutoff** | Positivo — a segunda melhor | Só o button age depois de você no pós-flop |
 | Hijack / Lojack | De pequeno positivo a mais ou menos no zero a zero | Posição moderada, ranges moderados |
 | UTG | Perto do zero a zero mesmo para jogadores sólidos | Range apertado, OOP na maioria das mãos |
 | **Small blind** | Negativo — a ==r:**cadeira estruturalmente pior para se jogar uma mão**== | Primeiro a agir em toda street pós-flop, meio blind já morto |
@@ -175,7 +175,7 @@ Cada cadeira ganha o seu próprio range de abertura porque **o número de jogado
 | UTG+2 | ~16% | Campo começando a encolher |
 | Lojack | ~17% | Primeira middle position de verdade |
 | Hijack | ~20% | Começam as oportunidades de roubo |
-| **Cutoff** | **~27%** | Só o button atrás — cadeira nobre de roubo |
+| **Cutoff** | **~27%** | Três ainda por agir (BTN, SB, BB) — cadeira nobre de roubo |
 | **Button** | ==g:**~43%**== | Última ação pós-flop garantida — abertura mais larga |
 | Small blind | ~40% quando folda até você (diante de um aumento: 3-bet ou fold) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — quase nunca só pague |
 | Big blind | Defende largo vs roubos | Ação de fechamento + pot odds, não aberturas |
@@ -192,7 +192,7 @@ Essas porcentagens descrevem *tamanhos de range* — quais mãos específicas os
 
 A maioria dos guias para em "evite jogar OOP". Beleza — mas você está nos blinds duas vezes por órbita, e às vezes a sua abertura do UTG é paga pelo button. Veja como perder o mínimo, e de vez em quando virar o jogo:
 
-**1. O [check-raise](/pt/blog/low-board-check-raise) é o seu equalizador.** É a única arma que o OOP tem e o IP não: como ele espera apostar quando recebe check, ==g:um check-raise vira o piloto automático posicional dele contra ele mesmo.== Monte o range com honestidade — mãos fortes (trincas, two pair) mais projetos com equity de verdade (sequências abertas, flush draws) — para nunca ser só bluff nem só valor.
+**1. O [check-raise](/pt/blog/low-board-check-raise) é o seu equalizador.** É uma arma que o OOP tem e o IP não: como ele espera apostar quando recebe check, ==g:um check-raise vira o piloto automático posicional dele contra ele mesmo.== Monte o range com honestidade — mãos fortes (trincas, two pair) mais projetos com equity de verdade (sequências abertas, flush draws) — para nunca ser só bluff nem só valor.
 
 **2. Dê uma função a cada aposta — e ajuste o tamanho ao spot.** Não existe um tamanho único fora de posição. Nos potes de um aumento só que resolvemos, o jogador OOP que apostou escolheu sobretudo cerca de um terço do pote (79,6% do range do small blind usou esse tamanho no A♠A♥6♦, um board de ás pareado que favorece muito o aumentador). Nos potes de 3-bet, o 3-bettor OOP ainda preferiu o tamanho pequeno no A♦K♠2♥ (57,8%), mas passou para dois terços do pote no Q♥T♥7♠ e no 8♦5♣2♠. O tamanho maior serve para negar as cartas grátis e os floats baratos que, sem isso, a posição daria ao seu adversário; o menor deixa você apostar um range largo gastando pouco. O que perde é apostar sem plano — cada street extra em que você vai à deriva favorece quem age por último.
 
@@ -295,7 +295,7 @@ A. Quando você entra num pote já aumentado, na maioria das vezes sim — o pad
 
 1. **A posição melhora a realização de equity em média.** Nenhum assento fica fixo acima ou abaixo de 100%; ranges, board e ação determinam o valor. A vantagem habitual vem de agir por último, não de cartas melhores.
 2. **Ranges deslizam com a posição.** O UTG abre ~13%, o button ==g:~43%== — e cada cadeira no meio ganha um degrau na escada. ==r:Jogar mãos de button do UTG sangra fichas.==
-3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda street). Proteja o seu button e, diante de um aumento no small blind, dê 3-bet ou fold quase sempre.
+3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda street pós-flop). Proteja o seu button e, diante de um aumento no small blind, dê 3-bet ou fold quase sempre.
 4. **OOP não é caso perdido — é disciplina.** Check-raise como equalizador, ajuste o tamanho das apostas ao board e ao tipo de pote, controle potes com mãos médias e folde rivers mais do que parece natural.
 5. **Aumente ou folde no under the gun.** Abrir com limp no UTG combina a pior cadeira pré-flop com a linha mais fraca.
 6. **O 6-max comprime o mapa.** O UTG de 6-max joga como o lojack de full ring (~17%) — recalibre ao trocar de formato.

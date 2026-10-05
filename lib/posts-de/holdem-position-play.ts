@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -111,7 +111,7 @@ Der **Cutoff** ist aus einem Grund zweitbester: nur der Button handelt hinter di
 | Sitz | Typisches Langzeit-Ergebnis (Datenbank-Durchschnitte) | Warum |
 |:---|:---|:---|
 | **Button** | Klar positiv – der profitabelste Sitz in praktisch jedem Sample | Garantierte letzte Aktion postflop |
-| **Cutoff** | Positiv – zweitbester | Nur der Button hinter dir |
+| **Cutoff** | Positiv – zweitbester | Postflop handelt nur der Button nach dir |
 | Hijack / Lojack | Leicht positiv bis etwa breakeven | Moderate Position, moderate Ranges |
 | UTG | Nahe breakeven selbst für solide Spieler | Enge Range, OOP in den meisten Händen |
 | **Small Blind** | Negativ – der ==r:**strukturell schlechteste Sitz, um eine Hand zu spielen**== | Zuerst dran auf jeder Postflop-Street, ein halber Blind bereits tot |
@@ -181,7 +181,7 @@ Jeder Sitz bekommt seine eigene Open-Range, weil **die Anzahl der noch handelnde
 | UTG+2 | ~16% | Feld beginnt zu schrumpfen |
 | Lojack | ~17% | Erste echte mittlere Position |
 | Hijack | ~20% | Steal-Gelegenheiten beginnen |
-| **Cutoff** | **~27%** | Nur der Button dahinter – prima Steal-Sitz |
+| **Cutoff** | **~27%** | Noch drei Spieler nach dir (BTN, SB, BB) – prima Steal-Sitz |
 | **Button** | ==g:**~43%**== | Garantierte letzte Aktion postflop – weitester Open |
 | Small Blind | ~40%, wenn zu dir gefoldet wird (gegen einen Raise: 3-betten oder folden) | Weit, wenn zu dir gefoldet wird – standardmäßig raisen, wobei Completen im ungeraisten Pot ein vertretbarer [Limp](/de/blog/holdem-limping) ist; gegen einen Raise: 3-betten oder folden, fast nie flat-callen |
 | Big Blind | Verteidigt weit gegen Steals | Schließende Aktion + Pot Odds, keine Opens |
@@ -198,7 +198,7 @@ Diese Prozente beschreiben *Range-Größen* – welche konkreten Hände sie fül
 
 Die meisten Leitfäden hören bei „spiel nicht OOP“ auf. Schön – aber du bist zweimal pro Runde in den Blinds, und manchmal wird dein UTG-Open vom Button gecallt. So verlierst du am wenigsten und drehst gelegentlich den Spieß um:
 
-**1. Der [Check-Raise](/de/blog/low-board-check-raise) ist dein Equalizer.** Es ist die eine Waffe, die OOP hat und IP nicht: weil er erwartet zu betten, wenn zu ihm gecheckt wird, ==g:wendet ein Check-Raise seinen positionellen Autopiloten gegen ihn.== Bau die Range ehrlich auf – starke Hände (Sets, Two Pair) plus Draws mit echter Equity (Open-Ender, Flushdraws) – sodass sie nie reiner Bluff oder reiner Value ist.
+**1. Der [Check-Raise](/de/blog/low-board-check-raise) ist dein Equalizer.** Es ist eine Waffe, die OOP hat und IP nicht: weil er erwartet zu betten, wenn zu ihm gecheckt wird, ==g:wendet ein Check-Raise seinen positionellen Autopiloten gegen ihn.== Bau die Range ehrlich auf – starke Hände (Sets, Two Pair) plus Draws mit echter Equity (Open-Ender, Flushdraws) – sodass sie nie reiner Bluff oder reiner Value ist.
 
 **2. Gib jeder Bet eine Aufgabe – und wähle die Größe passend zum Spot.** Die eine OOP-Size gibt es nicht. In den Single-Raised Pots, die wir gelöst haben, wählte der OOP-Spieler, wenn er bettete, meist etwa ein Drittel Pot (79,6% der Small-Blind-Range nahmen diese Größe auf A♠A♥6♦, einem gepaarten Ass-Board, das stark den Raiser begünstigt). In 3-Bet-Pots bevorzugte der OOP-3-Better auf A♦K♠2♥ ebenfalls die kleine Größe (57,8%), wechselte auf Q♥T♥7♠ und 8♦5♣2♠ aber auf zwei Drittel Pot. Die große Size ist dafür da, die Free Cards und billigen Floats zu verweigern, die Position deinem Gegner sonst erlauben würde; mit der kleinen bettest du eine weite Range billig. Was verliert, ist Betten ohne Plan – jede zusätzliche Street, durch die du treibst, begünstigt den Spieler, der zuletzt handelt.
 
@@ -301,7 +301,7 @@ A. Wenn du in einen geraisten Pot einsteigst, meistens ja – der moderne Standa
 
 1. **Position verbessert die Equity-Realisierung im Schnitt.** Kein Sitz ist fest über oder unter 100%; Ranges, Board und Action bestimmen den Wert. Der übliche Vorteil kommt vom Zuletzt-Handeln, nicht von besseren Karten.
 2. **Ranges gleiten mit der Position.** UTG öffnet ~13%, der Button ==g:~43%== – und jeder Sitz dazwischen bekommt eine Stufe auf der Leiter. ==r:Button-Hände aus UTG zu spielen blutet Chips.==
-3. **Der Button ist der beste Sitz; die Blinds sind die schlechtesten.** Der BB verliert die meisten reinen Chips (Pflichteinsatz); der SB ist der schlechteste Sitz, um tatsächlich zu spielen (auf jeder Street zuerst dran). Beschütze deinen Button, und gegen einen Raise aus dem Small Blind: fast immer 3-Bet oder Fold.
+3. **Der Button ist der beste Sitz; die Blinds sind die schlechtesten.** Der BB verliert die meisten reinen Chips (Pflichteinsatz); der SB ist der schlechteste Sitz, um tatsächlich zu spielen (auf jeder Postflop-Street zuerst dran). Beschütze deinen Button, und gegen einen Raise aus dem Small Blind: fast immer 3-Bet oder Fold.
 4. **OOP ist nicht hoffnungslos – es ist diszipliniert.** Check-Raise als Equalizer, Bet-Größen passend zu Board und Pot-Typ, Pots mit mittleren Händen kontrollieren und River öfter folden, als sich natürlich anfühlt.
 5. **Raisen oder folden under the Gun.** Open-Limpen aus UTG kombiniert den schlechtesten Preflop-Sitz mit der schwächsten Linie.
 6. **6-Max staucht die Karte.** 6-Max-UTG spielt wie Full-Ring-Lojack (~17%) – kalibriere neu, wenn du die Formate wechselst.

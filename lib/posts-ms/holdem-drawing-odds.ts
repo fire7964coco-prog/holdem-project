@@ -97,7 +97,7 @@ Dua nombor berkaitan yang sering ditanya:
 
 ![As-king heart dengan flop queen-seven heart di atas kain hijau, flush draw sembilan outs yang terbentuk di flop di sebelah timbunan cip yang pendek](/images/holdem-drawing-odds-flush-draw.webp "Dua heart di tangan, dua di flop — flush draw, bukan flush yang sudah jadi: 10.9% untuk flop, 35% untuk lengkap menjelang river")
 
-Tiga kiraan ini menggunakan kad yang diketahui dan bilangan kad yang tinggal yang berbeza:
+Dua kiraan pertama mengira flop yang berbeza daripada dua hole card yang sama (tiga kad daripada 50 yang belum dilihat); hanya kiraan ketiga bermula selepas flop, dengan dua kad lagi akan datang:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

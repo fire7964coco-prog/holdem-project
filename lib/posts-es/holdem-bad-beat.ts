@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler en sentido estricto, ibas por delante cuando entró el dinero; la baraja simplemente te traicionó al final. Duele, pero un goteo constante de bad beats suele significar que los rivales meten dinero por detrás — justo la partida en la que quieres estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -132,7 +132,7 @@ Una advertencia importante: **cada casino y sala online fija su propio cualifica
 
 Si quieres sentirte mejor con tus propios bad beats, recuerda que los peores ocurren en los escenarios más grandes. El más legendario sucedió en el **Main Event de las World Series of Poker 2008**, donde **Motoyuki Mabuchi** convirtió su pareja de ases en **póker — cuatro ases**, una mano batida por una sola combinación en todo el póker — y *aun así perdió*. Sobre una mesa de A♥ 9♣ Q♦ 10♦, **Justin Phillips** (con K♦ J♦) ya había ligado en el turn una **escalera al as** — la Broadway, A-K-Q-J-10 —, por delante del trío de ases de Mabuchi. El **A♦** del river completó el póker de Mabuchi mientras, con esa misma carta, convertía la escalera de Phillips en una **escalera real** — el 10‑J‑Q‑K‑A de diamantes. La acción del river, tal como la narró PokerNews: Mabuchi pasó, Phillips apostó, Mabuchi cantó "gamble!" y se fue all-in, y Phillips pagó al instante. La carta que hizo el póker de ases fue la única carta que podía batirlo.
 
-*Según el listón de arriba, esto técnicamente ni siquiera es un bad beat — Phillips ya iba por delante en el turn y siguió por delante en el river, así que nadie cazó a nadie. Pero el póker lo recuerda como el bad beat más famoso jamás repartido, y el nombre se quedó.*
+*Según el listón de arriba, el suckout no fue en el river — Phillips ya había superado el trío de Mabuchi cuando el 10♦ del turn le completó la escalera, así que el gran all-in del river entró con Phillips por delante. El suckout llegó una calle antes. Pero el póker lo recuerda como el bad beat más famoso jamás repartido, y el nombre se quedó.*
 
 Ese es el techo del dolor de un bad beat: no un favorito del 80% cayendo, sino *cuatro ases* — una mano que podrías jugar toda la vida sin perderla nunca — batida por una escalera de color, la única categoría de mano que supera al póker (cuatro iguales). Merece la pena guardártelo en la recámara la próxima vez que te rompan los ases: por muy mal que te tratara la baraja, alguien perdió una vez con póker de ases.
 

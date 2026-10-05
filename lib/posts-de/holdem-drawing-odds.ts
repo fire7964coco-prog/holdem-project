@@ -98,7 +98,7 @@ Zwei verwandte Zahlen, nach denen Leute fragen:
 
 ![Ass-König in Herz mit einem Dame-Sieben-Herz-Flop auf grünem Filz, ein gefloppter Neun-Out-Flushdraw neben einem kurzen Chipstack](/images/holdem-drawing-odds-flush-draw.webp "Zwei Herz in der Hand, zwei auf dem Flop – ein Flushdraw, kein fertiger Flush: 10,9% zu floppen, 35% bis zum River zu komplettieren")
 
-Die drei Rechnungen gehen von unterschiedlichen bekannten Karten und unterschiedlich vielen noch kommenden Karten aus:
+Die ersten beiden zählen verschiedene Flops aus denselben zwei Hole Cards (drei Karten aus 50 ungesehenen); erst die dritte startet nach dem Flop, mit zwei noch kommenden Karten:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

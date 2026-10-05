@@ -96,7 +96,7 @@ Two related numbers people ask about:
 
 ![Ace-king of hearts with a queen-seven of hearts flop on green felt, a flopped nine-out flush draw beside a short stack of chips](/images/holdem-drawing-odds-flush-draw.webp "Two hearts in hand, two on the flop — a flush draw, not a made flush: 10.9% to flop, 35% to complete by the river")
 
-The three calculations use different known cards and different remaining draws:
+The first two count different flops from the same two hole cards (three cards from 50 unseen); only the third starts after the flop, with two cards to come:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

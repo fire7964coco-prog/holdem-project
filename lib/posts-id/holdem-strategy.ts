@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "♠️",
@@ -241,7 +241,7 @@ A. Belajar di luar meja, dan main lebih ketat di meja. Perbaikan tercepat bagi k
 ## Lima Keputusan, Sekali Lagi
 
 1. **Position** — main lebih banyak tangan di belakang, lebih sedikit di awal; button adalah kursi paling menguntungkan Anda.
-2. **Seleksi tangan** — fold ~80% preflop; tangan yang Anda simpan lebih kuat daripada lawan Anda.
+2. **Seleksi tangan** — fold ~80% preflop; tangan yang Anda simpan rata-rata lebih kuat daripada tangan lawan Anda.
 3. **Raise atau fold** — jangan open-limp di kedalaman stack cash game normal (pengecualiannya: complete dari small blind di pot yang belum di-raise); sebuah raise bisa memenangkan pot sekarang, sebuah limp tak pernah bisa.
 4. **Kelanjutan** — c-bet saat Anda punya inisiatif, tapi sesuaikan dengan board, position, dan lawan.
 5. **Disiplin** — fold tangan yang kalah dan draw tanpa odds; itu langkah yang paling banyak menghemat uang.

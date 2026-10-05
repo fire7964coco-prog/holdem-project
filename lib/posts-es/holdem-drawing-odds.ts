@@ -97,7 +97,7 @@ Dos números relacionados que la gente pregunta:
 
 ![As-rey de corazones con un flop de reina-siete de corazones sobre el tapete verde, un proyecto de color de nueve outs ligado en el flop junto a una torre corta de fichas](/images/holdem-drawing-odds-flush-draw.webp "Dos corazones en mano, dos en el flop — un proyecto de color, no un color hecho: 10.9% de ligarlo, 35% de completarlo al river")
 
-Los tres cálculos parten de cartas conocidas distintas y de cartas por repartir distintas:
+Los dos primeros cuentan flops distintos a partir de las mismas dos cartas propias (tres cartas de 50 no vistas); solo el tercero empieza después del flop, con dos cartas por salir:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

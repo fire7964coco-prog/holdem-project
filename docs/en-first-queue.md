@@ -275,6 +275,23 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 1(라벨 UNV/OK 유지 · 손질 때 참고): BB «closes the action»(BB 레이즈 시 반례) · 라이브 스트래들 시 행동 순서 · 비올인 쇼다운 공개 순서 한정 · 20% 참가율 상한(JA «about» 탈락) · K‑J UTG 폴드 · 리버 OOP 폴드 증가 · `/en/quiz` «against the clock»(퀴즈에 타이머 없음 · 전 로케일 동문) · chart «約2ポイント»(실측 1.8〜3.7p).
 - 🪶 형제 갈림(HQ-REPORT §4 · 각 로케일 회차): SB «usually 半額» UNV 통일 · AK «正しい» · LJ «6maxではふつうUTG».
 
+### 2-U. 묶음 회차 — §2-T 4건 + MA-311 요청 1(3자리) + MA-313 요청 1(1자리) · 판정·이행 2026-10-05 (5)
+
+> ✅ EN 6편 8자리 정정 → 핵심 8로케일 전파(이 6편은 꼬리 로케일 사본 없음). §2-T T-1~T-4 = 아래 U-1~U-5로 닫힘.
+
+| # | 글 | EN 자리 | 출처 | 정정 |
+|---|---|---|---|---|
+| U-1·U-2 | position-play | 표 2곳 CO «Only the button behind» | T-1 | «acts after you postflop» · 오픈 표 «Three left to act (BTN, SB, BB)» |
+| U-3 | position-play | まとめ SB | T-2 | «first to act on every postflop street» |
+| U-4 | position-play | 체크레이즈 «the one weapon» | T-3 | «a weapon» |
+| U-5 | strategy | まとめ hand selection | T-4 | «… on average» |
+| U-6 | bad-beat | 마부치 이탤릭 «nobody sucked out» | MA-311 ① | «리버가 역전이 아니라 턴 10♦가 역전» · 로케일 결론 상자 동형 포함 |
+| U-7 | glossary | String bet | MA-311 ② | «Declaring the full raise amount first» 복원 |
+| U-8 | tiebreak-rules | FAQ 무늬 서열 | MA-311 ③ | «WSOP tournament rulebook» 한정 복원 |
+| U-9 | drawing-odds | 표 앞 문장 | MA-313 ① | «앞 둘은 같은 홀카드·플랍 3장의 다른 사건, 셋째만 플랍 뒤 2장» · ja 상자 동형 |
+
+- 🪶 MA-311 통지 1(자동 착수 금지): bad-beat 플랍 9♣/9♠ · 리버 액션 출처 갈림(ESPN vs PokerNews) · zh straddle Mississippi «任何座位»(버튼만) · de showdown FAQ «Nein –» · de straddle FAQ «Position verleiht er nie».
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

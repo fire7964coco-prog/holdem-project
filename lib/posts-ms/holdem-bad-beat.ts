@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-04",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -134,7 +134,7 @@ Satu kaveat penting: **setiap kasino dan laman poker menetapkan syarat kelayakan
 
 Jika anda mahu rasa lebih lega tentang beat anda sendiri, ingatlah bahawa yang paling teruk berlaku di pentas paling besar. Yang paling legenda berlaku di **2008 World Series of Poker Main Event**, apabila **Motoyuki Mabuchi** menjadikan pocket aces miliknya **four of a kind — quad aces**, tangan yang hanya boleh dikalahkan oleh straight flush — dan *tetap kalah*. Pada board A♥ 9♣ Q♦ 10♦, **Justin Phillips** (memegang K♦ J♦) sudah membentuk straight ace-high — Broadway, A-K-Q-J-10 — di turn, di hadapan set aces Mabuchi. River **A♦** melengkapkan quads Mabuchi sambil, pada kad yang sama, menukar straight Phillips menjadi **royal flush** — 10‑J‑Q‑K‑A diamond. Aksi di river, seperti yang dilaporkan PokerNews: Mabuchi check, Phillips bet, Mabuchi mengumumkan "gamble!" lalu all in, dan Phillips terus call. Satu-satunya kad yang membentuk empat ace ialah satu-satunya kad yang boleh mengalahkannya.
 
-*Mengikut garis di atas, secara teknikal ini bukan pun bad beat — Phillips sudah di hadapan di turn dan kekal di hadapan di river, jadi tiada siapa yang suck out. Tetapi dunia poker mengingatinya sebagai bad beat paling terkenal pernah berlaku, dan nama itu kekal.*
+*Mengikut garis di atas, suckout itu bukan di river — Phillips sudah memintas set Mabuchi apabila 10♦ di turn melengkapkan straight miliknya, jadi all-in besar di river masuk ketika Phillips di hadapan. Suckout itu berlaku satu street lebih awal. Tetapi dunia poker mengingatinya sebagai bad beat paling terkenal pernah berlaku, dan nama itu kekal.*
 
 Itulah puncak kesakitan bad beat: bukan favourite 80% yang tumbang, tetapi *empat ace* — tangan yang boleh anda main seumur hidup tanpa pernah kalah — dikalahkan oleh straight flush, satu-satunya kategori tangan yang lebih tinggi daripada four of a kind. Ingat kisah ini untuk kali seterusnya aces anda tumbang: seteruk mana pun dek melayan anda, pernah ada orang yang kalah dengan quad aces.
 

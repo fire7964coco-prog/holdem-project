@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -149,7 +149,7 @@ Ein wichtiger Vorbehalt: **jedes Casino und jede Pokerseite legt ihren eigenen Q
 
 Wenn du dich über deine eigenen Beats besser fühlen willst, denk daran, dass die schlimmsten auf den größten Bühnen passieren. Mabuchi hielt damit eine Hand, die überhaupt nur noch von einem Straight Flush geschlagen werden kann – und verlor *trotzdem*. Die Kameras erreichten den Tisch erst am River, weil Ray Romano sich dazugesetzt hatte; so wurde einer der berühmtesten Beats der Pokergeschichte überhaupt aufgezeichnet. So hat PokerNews die River-Action protokolliert: Mabuchi checkte, Phillips setzte, Mabuchi sagte „gamble!“ an und ging all-in, und Phillips callte sofort.
 
-*Nach demselben Maßstab ist das streng genommen nicht einmal ein Bad Beat – Phillips lag schon auf dem Turn vorn und blieb auch auf dem River vorn, es hat also niemand ausgesaugt. Aber Poker erinnert sich daran als den berühmtesten Bad Beat, der je ausgeteilt wurde, und der Name blieb hängen.*
+*Nach demselben Maßstab war nicht der River der Suckout – Phillips hatte Mabuchis Set schon überholt, als die 10♦ am Turn seine Straße vollendete; das große All-in am River ging also mit Phillips vorn rein. Der Suckout kam eine Street früher. Aber Poker erinnert sich daran als den berühmtesten Bad Beat, der je ausgeteilt wurde, und der Name blieb hängen.*
 
 Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der untergeht, sondern *vier Asse* – eine Hand, die du ein Leben lang spielen kannst, ohne sie je zu verlieren – geschlagen vom höchsten Blatt, das es gibt. Es lohnt sich, das in der Hinterhand zu haben, wenn das nächste Mal deine Asse geknackt werden: so schlecht das Deck dich auch behandelt hat, jemand hat einmal mit einem Vierling Asse verloren.
 

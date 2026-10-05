@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -108,7 +108,7 @@ El **cutoff** es el segundo mejor por una razón: solo el botón actúa detrás 
 | Asiento | Resultado típico a largo plazo (promedios de base de datos) | Por qué |
 |:---|:---|:---|
 | **Botón** | Claramente positivo — el asiento más rentable en prácticamente toda muestra | Última acción garantizada en el postflop |
-| **Cutoff** | Positivo — el segundo mejor | Solo el botón detrás de ti |
+| **Cutoff** | Positivo — el segundo mejor | Solo el botón actúa después de ti en el postflop |
 | Hijack / Lojack | De ligeramente positivo a cerca del punto de equilibrio | Posición moderada, rangos moderados |
 | UTG | Cerca del equilibrio incluso para jugadores sólidos | Rango cerrado, OOP en la mayoría de manos |
 | **Ciega pequeña** | Negativo — el ==r:**peor asiento estructural desde el que jugar una mano**== | Primero en actuar en cada calle del postflop, con media ciega ya muerta |
@@ -175,7 +175,7 @@ Cada asiento tiene su propio rango de apertura porque **el número de jugadores 
 | UTG+2 | ~16% | El campo empieza a reducirse |
 | Lojack | ~17% | La primera posición media de verdad |
 | Hijack | ~20% | Empiezan las oportunidades de robo |
-| **Cutoff** | **~27%** | Solo el botón detrás — asiento de robo por excelencia |
+| **Cutoff** | **~27%** | Quedan tres por hablar (BTN, SB, BB) — asiento de robo por excelencia |
 | **Botón** | ==g:**~43%**== | Última acción garantizada en el postflop — la apertura más amplia |
 | Ciega pequeña | ~40% cuando llega foldeado (frente a una subida: 3-bet o fold) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — casi nunca iguales |
 | Ciega grande | Defiende amplio vs robos | Cierra la acción + pot odds, no aperturas |
@@ -192,7 +192,7 @@ Estos porcentajes describen *tamaños de rango* — qué manos concretas los rel
 
 La mayoría de las guías se quedan en «evita jugar OOP». Vale — pero estás en las ciegas dos veces por órbita, y a veces tu apertura de UTG la iguala el botón. Aquí tienes cómo perder lo mínimo, y de vez en cuando darle la vuelta a la tortilla:
 
-**1. [El check-raise](/es/blog/low-board-check-raise) es tu igualador.** Es el arma que tiene OOP y que IP no tiene: como esperan apostar cuando les pasan, ==g:un check-raise vuelve su piloto automático posicional en su contra.== Construye el rango con honestidad — manos fuertes (tríos, doble pareja) más proyectos con equity real (escaleras abiertas, proyectos de color) — para que nunca sea todo farol ni todo valor.
+**1. [El check-raise](/es/blog/low-board-check-raise) es tu igualador.** Es un arma que tiene OOP y que IP no tiene: como esperan apostar cuando les pasan, ==g:un check-raise vuelve su piloto automático posicional en su contra.== Construye el rango con honestidad — manos fuertes (tríos, doble pareja) más proyectos con equity real (escaleras abiertas, proyectos de color) — para que nunca sea todo farol ni todo valor.
 
 **2. Dale un trabajo a cada apuesta — y ajusta el tamaño a la situación.** No existe un único tamaño fuera de posición. En los botes de una sola subida que resolvimos, el jugador OOP que apostaba eligió sobre todo más o menos un tercio del bote (el 79.6% del rango de la ciega pequeña tomó ese tamaño en A♠A♥6♦, una mesa de ases emparejados que favorece de lleno a quien subió). En los botes de 3-bet, quien mete el 3-bet OOP siguió prefiriendo el tamaño pequeño en A♦K♠2♥ (57.8%), pero pasó a dos tercios del bote en Q♥T♥7♠ y 8♦5♣2♠. El tamaño grande sirve para negar las cartas gratis y las igualadas especulativas baratas que la posición le dejaría tomar a tu rival; el pequeño te deja apostar un rango amplio barato. Lo que pierde es apostar sin plan — cada calle extra que dejas pasar a la deriva favorece al que actúa último.
 
@@ -307,7 +307,7 @@ A. Cuando entras a un bote ya subido, casi siempre sí — el estándar moderno 
 
 1. **La posición mejora la realización de equity en promedio.** Ningún asiento queda fijo por encima o por debajo del 100%; los rangos, el board y la acción determinan el valor. La ventaja habitual viene de hablar último, no de mejores cartas.
 2. **Los rangos se deslizan con la posición.** UTG abre ~13%, el botón ==g:~43%== — y cada asiento intermedio sube un peldaño en la escalera. ==r:Jugar manos de botón desde UTG sangra fichas.==
-3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle). Protege tu botón, y frente a una subida desde la ciega pequeña, haz 3-bet o fold casi siempre.
+3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle del postflop). Protege tu botón, y frente a una subida desde la ciega pequeña, haz 3-bet o fold casi siempre.
 4. **OOP no es una causa perdida — es disciplina.** El check-raise como igualador, ajusta el tamaño de tus apuestas a la mesa y al tipo de bote, controla botes con manos medias y foldea rivers más de lo que parece natural.
 5. **Subir o foldear under the gun.** Hacer open-limp desde UTG combina el peor asiento del preflop con la línea más débil.
 6. **El 6-max comprime el mapa.** UTG en 6-max se juega como el lojack de full ring (~17%) — recalibra cuando cambies de formato.

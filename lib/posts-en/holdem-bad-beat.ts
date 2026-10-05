@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler in the strict sense, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but a steady stream of bad beats usually means opponents are putting money in behind — the kind of game you want to be in.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -131,7 +131,7 @@ One important caveat: **every casino and poker site sets its own qualifier and s
 
 If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand only a straight flush can beat — and *still lost*. On a board of A♥ 9♣ Q♦ 10♦, **Justin Phillips** (holding K♦ J♦) had already made an ace-high straight — Broadway, A-K-Q-J-10 — on the turn, ahead of Mabuchi's set of aces. The river **A♦** completed Mabuchi's quads while, on the very same card, turning Phillips' straight into a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. The river action, as PokerNews reported it: Mabuchi checked, Phillips bet, Mabuchi announced "gamble!" and moved all in, and Phillips called instantly. The one card that made four aces was the one card that could beat them.
 
-*By the bar above, this technically isn't even a bad beat — Phillips was already ahead on the turn and stayed ahead on the river, so nobody sucked out. But poker remembers it as the most famous bad beat ever dealt, and the name stuck.*
+*By the bar above, the river wasn't the suckout — Phillips had already passed Mabuchi's set when the turn 10♦ completed his straight, so the big river all-in went in with Phillips ahead. The suckout came a street earlier. But poker remembers it as the most famous bad beat ever dealt, and the name stuck.*
 
 That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — beaten by a straight flush, the one category of hand that outranks four of a kind. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
 

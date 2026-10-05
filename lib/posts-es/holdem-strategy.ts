@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -257,7 +257,7 @@ A. Un tell es una pista involuntaria — física o de patrón de apuesta — que
 ## Las cinco decisiones, una vez más
 
 1. **Posición** — juega más manos tarde, menos temprano; el botón es tu asiento más rentable.
-2. **Selección de manos** — foldea ~80% preflop; las manos que te quedas son más fuertes que las de tus rivales.
+2. **Selección de manos** — foldea ~80% preflop; las manos que te quedas son, de media, más fuertes que las de tus rivales.
 3. **Subir o foldear** — no hagas open-limp con stacks normales de cash (la excepción es completar la ciega pequeña en un bote sin subidas); una subida puede ganar el bote ya, un limp nunca.
 4. **Continuación** — haz c-bet cuando tengas la iniciativa, pero ajusta por board, posición y rivales.
 5. **Disciplina** — foldea las manos batidas y los proyectos sin odds; es la jugada que más dinero salva.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -281,7 +281,7 @@ A. Es gibt keine einzelne Zahl – es hängt von Position, Board und der Anzahl 
 ## Die fünf Entscheidungen, noch einmal – deine Poker-Tipps auf einer Seite
 
 1. **Position** – spiele mehr Hände spät, weniger früh; der Button ist dein profitabelster Platz.
-2. **Handauswahl** – folde ~80% preflop; die Hände, die du behältst, sind stärker als die deiner Gegner.
+2. **Handauswahl** – folde ~80% preflop; die Hände, die du behältst, sind im Schnitt stärker als die deiner Gegner.
 3. **Raise oder fold** – bei normaler Cash-Game-Stacktiefe nicht open-limpen (Ausnahme: den Small Blind in einem ungeraisten Pot completen); ein Raise kann den Pot jetzt gewinnen, ein Limp nie.
 4. **Continuation** – C-bette, wenn du die Initiative hast, aber passe für Board, Position und Gegner an.
 5. **Disziplin** – folde geschlagene Hände und Draws ohne Odds; es ist der Move, der am meisten Geld spart.

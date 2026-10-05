@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -230,7 +230,7 @@ A. Gana la escalera de color más alta, decidida por su carta más alta — una 
 
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
-A. No — los palos nunca deciden un bote. Donde sí aparecen en una mesa de Hold'em es en los sorteos de cartas que fijan un asiento. El más conocido es el sorteo del botón: en las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo inicial: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo hace un sorteo para el botón cuando quedan tres, dos y una mesa.) Los directores de torneo también recolocan a los jugadores de una mesa que se rompe repartiendo una carta a cada uno, y el ejemplo de la TDA da el primer asiento a la ==carta más alta contando el palo==. En cualquier caso eso elige un *asiento*, nunca una mano. Entre las reglas de manos del reglamento de la WSOP, el único orden de palos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
+A. No — los palos nunca deciden un bote. Donde sí aparecen en una mesa de Hold'em es en los sorteos de cartas que fijan un asiento. El más conocido es el sorteo del botón: en las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo inicial: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo hace un sorteo para el botón cuando quedan tres, dos y una mesa.) Los directores de torneo también recolocan a los jugadores de una mesa que se rompe repartiendo una carta a cada uno, y el ejemplo de la TDA da el primer asiento a la ==carta más alta contando el palo==. En cualquier caso eso elige un *asiento*, nunca una mano. Entre las reglas de manos del reglamento de torneos de la WSOP, el único orden de palos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
 
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 

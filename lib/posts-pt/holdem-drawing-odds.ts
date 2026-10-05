@@ -97,7 +97,7 @@ Dois números relacionados que as pessoas perguntam:
 
 ![Ás-rei de copas com um flop dama-sete de copas no feltro verde, um flush draw de nove outs flopado ao lado de uma pilha curta de fichas](/images/holdem-drawing-odds-flush-draw.webp "Duas copas na mão, duas no flop — um flush draw, não um flush feito: 10,9% pra flopar, 35% pra completar até o river")
 
-Os três cálculos partem de cartas conhecidas diferentes e de cartas restantes diferentes:
+Os dois primeiros contam flops diferentes a partir das mesmas duas cartas na mão (três cartas entre 50 não vistas); só o terceiro começa depois do flop, com duas cartas por vir:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

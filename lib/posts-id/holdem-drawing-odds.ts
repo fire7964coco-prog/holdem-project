@@ -97,7 +97,7 @@ Dua angka terkait yang sering ditanyakan:
 
 ![Ace-king hati dengan flop queen-seven hati di atas felt hijau, sebuah flush draw sembilan-out yang di-flop di samping tumpukan chip pendek](/images/holdem-drawing-odds-flush-draw.webp "Dua hati di tangan, dua di flop — sebuah flush draw, bukan flush jadi: 10,9% untuk flop, 35% untuk selesai hingga river")
 
-Ketiga hitungan ini memakai kartu yang diketahui dan sisa tarikan yang berbeda:
+Dua hitungan pertama menghitung flop yang berbeda dari dua kartu hole yang sama (tiga kartu dari 50 yang belum terlihat); hanya hitungan ketiga yang dimulai setelah flop, dengan dua kartu lagi yang akan datang:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

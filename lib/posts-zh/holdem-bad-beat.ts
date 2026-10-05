@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "bad beat（爆冷输牌／走背运）就是你作为大热门——通常 80% 或以上——把钱推进去，却因对手摸到一张幸运牌“suck out”逆袭你而输掉。跟严格意义上的 cooler 不同，钱推进去时你是领先的；只是这副牌在最后一刻背叛了你。它很扎心，但源源不断的 bad beat 通常说明对手在落后时把钱推进去——那正是你想坐的牌局。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 分钟",
   emoji: "💔",
@@ -146,11 +146,11 @@ suckout 逆袭 | 那张翻转局面的幸运牌
 ## 扑克史上最著名的 bad beat
 
 > **快速回答**
-> 2008 年 WSOP 主赛事：Motoyuki Mabuchi 凑成四条 A，却输给 Justin Phillips 的方块同花大顺——同一张河牌 A♦ 同时做出了两手牌。严格按门槛算它甚至不算 bad beat：Phillips 在转牌就已经用顺子领先，河牌上也依然领先，没有谁被反超。
+> 2008 年 WSOP 主赛事：Motoyuki Mabuchi 凑成四条 A，却输给 Justin Phillips 的方块同花大顺——同一张河牌 A♦ 同时做出了两手牌。严格按门槛算，河牌并不是那次反超：转牌 10♦ 让 Phillips 凑成顺子、超过了 Mabuchi 的暗三条，suckout 早在前一条街就发生了。
 
 如果你想让自己心里好受点，记住：最惨的 bad beat 都发生在最大的舞台上。最传奇的那一次发生在 **2008 年世界扑克大赛（WSOP）主赛事**上，**Motoyuki Mabuchi** 把他的一对 A 打成了 **four of a kind——四条 A**，一手全扑克里只有同花顺能击败的牌——却*还是输了*。牌面是 A♥ 9♣ Q♦ 10♦，**Justin Phillips**（手握 K♦ J♦）早在转牌就已经做出了 A 高的顺子——broadway，A-K-Q-J-10——领先于 Mabuchi 的暗三条 A。river 河牌那张 **A♦** 凑成了 Mabuchi 的四条，而与此同时，同一张牌又把 Phillips 的顺子变成了 **同花大顺**——方块的 10‑J‑Q‑K‑A。河牌圈的动作，按 PokerNews 的报道：Mabuchi 过牌，Phillips 下注，Mabuchi 喊了一声“gamble！”全下，Phillips 立刻跟注。让他凑成四条 A 的那唯一一张牌，正是唯一能击败它的那张牌。
 
-*按同一条标准，这严格来说甚至算不上 bad beat——Phillips 在转牌就已经领先，到河牌也依然领先，所以谁也没有 suckout。但扑克把它记成了史上最著名的 bad beat，这个叫法也就留了下来。*
+*按同一条标准，河牌并不是那次 suckout——转牌 10♦ 补成顺子时，Phillips 就已经超过了 Mabuchi 的暗三条，所以河牌那次大额全下是在 Phillips 领先的情况下推进去的。suckout 早在前一条街就发生了。但扑克把它记成了史上最著名的 bad beat，这个叫法也就留了下来。*
 
 那就是 bad beat 之痛的天花板：不是一个 80% 的热门倒下，而是*四条 A*——一手你打一辈子都可能永远输不掉的牌——被唯一能压过它的那副牌击败。下次你的一对 A 被击碎时，值得把这个揣在兜里：无论这副牌怎么亏待了你，曾经有人拿着四条 A 也输了。
 

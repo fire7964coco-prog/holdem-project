@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -228,7 +228,7 @@ A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua st
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
-A. Tidak — jenis kartu tak pernah menentukan pot. Di meja Hold'em, jenis kartu baru muncul saat menarik kartu untuk menentukan kursi. Yang paling dikenal adalah tarikan button: di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan pembuka itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan baru mengadakan tarikan untuk button saat tersisa tiga, dua, dan satu meja.) Tournament director juga mendudukkan ulang pemain dari meja yang dibubarkan dengan membagikan satu kartu ke masing-masing, dan contoh TDA memberikan kursi pertama kepada ==kartu tertinggi berdasarkan jenis==. Bagaimanapun juga itu memilih kursi, bukan tangan. Di antara aturan tangan dalam buku aturan WSOP, satu-satunya urutan jenis kartu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
+A. Tidak — jenis kartu tak pernah menentukan pot. Di meja Hold'em, jenis kartu baru muncul saat menarik kartu untuk menentukan kursi. Yang paling dikenal adalah tarikan button: di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan pembuka itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan baru mengadakan tarikan untuk button saat tersisa tiga, dua, dan satu meja.) Tournament director juga mendudukkan ulang pemain dari meja yang dibubarkan dengan membagikan satu kartu ke masing-masing, dan contoh TDA memberikan kursi pertama kepada ==kartu tertinggi berdasarkan jenis==. Bagaimanapun juga itu memilih kursi, bukan tangan. Di antara aturan tangan dalam buku aturan turnamen WSOP, satu-satunya urutan jenis kartu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
 
 **Q. Apa yang terjadi jika kedua pemain punya tangan persis sama?**
 

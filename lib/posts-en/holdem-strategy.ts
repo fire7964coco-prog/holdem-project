@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold rather than open-limp, do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-28",
+  updated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -240,7 +240,7 @@ A. Study away from the table and tighten up at it. The fastest gains for most pl
 ## The Five Decisions, One More Time
 
 1. **Position** — play more hands late, fewer early; the button is your most profitable seat.
-2. **Hand selection** — fold ~80% preflop; the hands you keep are stronger than your opponents'.
+2. **Hand selection** — fold ~80% preflop; the hands you keep are stronger than your opponents' on average.
 3. **Raise or fold** — don't open-limp at normal cash-game depth (completing the small blind in an unraised pot is the exception); a raise can win the pot now, a limp never can.
 4. **Continuation** — c-bet when you have initiative, but adjust for board, position, and opponents.
 5. **Discipline** — fold beaten hands and draws without odds; it's the move that saves the most money.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-05",
+  masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -81,7 +81,7 @@ Tudo o que você pode fazer fisicamente na sua vez. Se você é totalmente novat
 | **Bluff / Semi-bluff** | Um bluff aposta uma mão fraca pra fazer as melhores largarem; um semi-bluff faz isso com um draw que ainda pode melhorar. |
 | **Check-raise** | Dar check e depois aumentar depois que o oponente aposta — uma linha forte e enganosa (permitida nas salas modernas). |
 | **Min-raise** | O menor aumento legal. |
-| **String bet** | Voltar pra buscar mais fichas sem anunciar — só vale o que saiu no primeiro movimento (na prática, quase sempre vira call). Declarar o raise antes torna legais os movimentos separados — o hábito seguro é dizer o valor antes de pegar as fichas, ou empurrar o raise inteiro num movimento só. |
+| **String bet** | Voltar pra buscar mais fichas sem anunciar — só vale o que saiu no primeiro movimento (na prática, quase sempre vira call). Declarar antes o valor total do raise torna legais os movimentos separados — o hábito seguro é dizer o valor antes de pegar as fichas, ou empurrar o raise inteiro num movimento só. |
 | **Jam / Shove** | Ir de all-in. |
 | **Snap call** | Um call instantâneo, sem hesitação. |
 | **Hero call** | Pagar com uma mão fraca porque você leu que o oponente está blefando. |

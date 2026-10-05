@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In position bermaksud anda bertindak terakhir dan melihat keputusan setiap lawan sebelum membelanjakan cip. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi range, board dan aksi boleh membalikkan corak itu. Sebab itu UTG open kira-kira 13% tangan dan button kira-kira 43%.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-05",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -108,7 +108,7 @@ Inilah kelebihan button dalam satu tangan konkrit. Anda open A♦9♦ di button,
 | Tempat duduk | Hasil jangka panjang biasa (purata pangkalan data) | Sebab |
 |:---|:---|:---|
 | **Button** | Jelas positif — tempat duduk paling menguntungkan dalam hampir setiap sampel | Aksi terakhir dijamin selepas flop |
-| **Cutoff** | Positif — kedua terbaik | Hanya button di belakang anda |
+| **Cutoff** | Positif — kedua terbaik | Hanya button bertindak selepas anda di postflop |
 | Hijack / Lojack | Positif kecil hingga sekitar pulang modal | Posisi sederhana, range sederhana |
 | UTG | Hampir pulang modal walaupun bagi pemain yang mantap | Range ketat, OOP dalam kebanyakan tangan |
 | **Small blind** | Negatif — ==r:**tempat duduk paling teruk secara struktur untuk bermain tangan**== | Bertindak pertama di setiap street postflop, separuh blind sudah hangus |
@@ -175,7 +175,7 @@ Setiap tempat duduk mendapat opening range sendiri kerana **bilangan pemain yang
 | UTG+2 | ~16% | Bilangan pemain di belakang mula berkurang |
 | Lojack | ~17% | Posisi tengah sebenar yang pertama |
 | Hijack | ~20% | Peluang steal bermula |
-| **Cutoff** | **~27%** | Hanya button di belakang — tempat duduk steal utama |
+| **Cutoff** | **~27%** | Tiga pemain lagi belum bertindak (BTN, SB, BB) — tempat duduk steal utama |
 | **Button** | ==g:**~43%**== | Aksi terakhir dijamin selepas flop — open paling luas |
 | Small blind | ~40% apabila semua fold kepada anda (vs raise: 3-bet atau fold) | Luas apabila semua fold kepada anda — raise secara lalai, walaupun complete ialah [limp](/ms/blog/holdem-limping) yang wajar dalam pot tanpa raise; berdepan raise, 3-bet atau fold — hampir tidak pernah flat call |
 | Big blind | Bertahan luas menentang steal | Menutup aksi + pot odds, bukan open |
@@ -192,7 +192,7 @@ Peratusan ini menerangkan *saiz range* — tangan khusus mana yang mengisinya (s
 
 Kebanyakan panduan berhenti pada "elakkan bermain OOP." Baik — tetapi anda berada di blind dua kali setiap orbit, dan kadangkala open UTG anda di-call oleh button. Inilah cara untuk rugi paling sedikit, dan sesekali memusingkan keadaan:
 
-**1. [Check-raise](/ms/blog/low-board-check-raise) ialah penyeimbang anda.** Ia satu-satunya senjata yang dimiliki OOP tetapi tiada pada IP: kerana mereka menjangka untuk bet apabila anda check, ==g:check-raise menjadikan autopilot posisi mereka senjata terhadap mereka sendiri.== Bina range secara jujur — tangan kuat (set, two pair) ditambah draw dengan equity sebenar (open-ender, flush draw) — supaya ia tidak pernah semuanya bluff atau semuanya value.
+**1. [Check-raise](/ms/blog/low-board-check-raise) ialah penyeimbang anda.** Ia senjata yang dimiliki OOP tetapi tiada pada IP: kerana mereka menjangka untuk bet apabila anda check, ==g:check-raise menjadikan autopilot posisi mereka senjata terhadap mereka sendiri.== Bina range secara jujur — tangan kuat (set, two pair) ditambah draw dengan equity sebenar (open-ender, flush draw) — supaya ia tidak pernah semuanya bluff atau semuanya value.
 
 **2. Beri setiap bet satu tugas — dan pilih saiz ikut spot.** Tiada satu saiz out of position yang tunggal. Dalam single-raised pot yang kami selesaikan dengan solver, pemain OOP yang bet kebanyakannya memilih kira-kira satu pertiga pot (79.6% range small blind mengambil saiz itu pada A♠A♥6♦, board dengan pasangan As yang sangat memihak kepada raiser). Dalam 3-bet pot, 3-bettor OOP masih memilih saiz kecil pada A♦K♠2♥ (57.8%) tetapi beralih ke dua pertiga pot pada Q♥T♥7♠ dan 8♦5♣2♠. Saiz lebih besar berfungsi untuk menafikan kad percuma dan float murah yang posisi akan benarkan lawan anda ambil; saiz kecil membolehkan anda bet dengan range yang luas secara murah. Yang merugikan ialah bet tanpa rancangan — setiap street tambahan yang anda lalui tanpa arah memihak kepada pemain yang bertindak terakhir.
 
@@ -295,7 +295,7 @@ A. Apabila anda masuk ke pot yang sudah di-raise, kebanyakannya ya — pilihan l
 
 1. **Posisi meningkatkan realisasi equity secara purata.** Tiada tempat duduk yang tetap di atas atau di bawah 100%; range, board dan aksi yang menentukan angkanya. Kelebihan biasa datang daripada bertindak terakhir, bukan daripada kad yang lebih baik.
 2. **Range bergeser mengikut posisi.** UTG open ~13%, button ==g:~43%== — dan setiap tempat duduk di antaranya mendapat satu anak tangga. ==r:Bermain tangan button dari UTG menghakis cip.==
-3. **Button tempat duduk terbaik; blind yang paling teruk.** BB kehilangan paling banyak cip mentah (bet paksa); SB tempat duduk paling teruk untuk benar-benar dimainkan (bertindak pertama setiap street). Lindungi button anda, dan apabila anda di small blind dan berdepan raise, 3-bet atau fold hampir setiap kali.
+3. **Button tempat duduk terbaik; blind yang paling teruk.** BB kehilangan paling banyak cip mentah (bet paksa); SB tempat duduk paling teruk untuk benar-benar dimainkan (bertindak pertama di setiap street postflop). Lindungi button anda, dan apabila anda di small blind dan berdepan raise, 3-bet atau fold hampir setiap kali.
 4. **OOP bukan tiada harapan — ia soal disiplin.** Check-raise sebagai penyeimbang, pilih saiz bet ikut board dan jenis pot, kawal pot dengan tangan sederhana, dan fold di river lebih kerap daripada yang terasa wajar.
 5. **Raise atau fold dari under the gun.** Open-limp dari UTG menggabungkan tempat duduk preflop paling teruk dengan laluan paling lemah.
 6. **6-max memampatkan peta.** UTG 6-max bermain seperti lojack full ring (~17%) — kalibrasi semula apabila anda bertukar format.
