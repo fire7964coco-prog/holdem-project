@@ -57,7 +57,7 @@
 
 | 회차 | 내용 | 선행 조건 | 상태 |
 |---|---|---|---|
-| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ⏳ 계획 올림(10-06 · 사장님 확인 뒤 새 세션 착수) |
+| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ⏳ 계획 승인(10-06) · 다음 세션 착수 |
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
 | 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ⏳ |
 | 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
