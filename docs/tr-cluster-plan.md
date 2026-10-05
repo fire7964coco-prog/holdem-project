@@ -57,12 +57,29 @@
 
 | 회차 | 내용 | 선행 조건 | 상태 |
 |---|---|---|---|
-| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) | — | ⏳ |
-| 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(EN 446행 클라이언트를 사전 구조로 바꾼 뒤 tr 사전 — tr이 두 번째 로케일) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
-| 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament | 회차 2(계산기 링크 자리) | ⏳ |
+| 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ⏳ 계획 올림(10-06 · 사장님 확인 뒤 새 세션 착수) |
+| 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ⏳ |
+| 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ⏳ |
 | 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
-| 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔴 **솔버 앱에 터키어 UI가 없다**(12개 언어: ko en ja es pt de zh zh-hant fr id ms hi) → 솔버 측에 tr 추가 요청(MB) 회신 전엔 랜딩 CTA가 영어 앱으로 떨어진다. 요청 발송 여부 = 사장님 판단 | ⏳ |
+| 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔁 **솔버가 10-05 S-040으로 앱 터키어 UI 착수 통지**(요청 0) → 요청 발송 불필요. 착수 전 솔버 tr 배포 여부만 확인(배포 전이면 랜딩 CTA가 영어 앱으로 떨어진다) | ⏳ |
 | 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
+
+### 4-1. 회차 1 실행 계획 (10-06 작성 · 사장님 확인 뒤 새 세션에서 착수 · 한 세션 90분)
+
+**대상 8편** (`lib/posts-tr/`): texas-holdem-rules-for-beginners(필라) · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings(족보 필라) · holdem-tournament-vs-cash-game.
+**색인 현황**(`docs/gsc-tracking/not-indexed-2026-10-05.md`): 발견됨·미색인 = `/tr/blog` 허브 · all-in-rules · betting-actions · rules-for-beginners / Google이 모름 = `/tr/tournaments` · game-order · tournament-vs-cash-game.
+
+| 단계 | 할 일 | 산출 |
+|---|---|---|
+| 0. 읽기 | posting.mdc · `translate-pillar` 스킬 · `docs/translation-terms-tr.md` · WORKLOG에서 `posts-tr`·각 slug grep(이미 한 작업 확인) · 각 글의 EN 마스터 `masterUpdated` 대조(EN-먼저 정정이 tr에 안 들어간 자리 = 드리프트) | 드리프트 목록 |
+| 1. 실측 | 8편 `audit:hard --slug`(커버리지까지) · 글별 내부링크 표(첫 링크가 필라인가 · tr에 없는 글로 가는 링크 · 고아 글) · §1 실측어가 H2/FAQ/seoTitle에 있는지 대조표 · `/tr/blog` 허브·`/tr/tournaments` 화면 확인(screen-review · 영어 노출·얇은 본문이 미색인 원인인지) | 결함 목록(사실 오류 / 번역 누락 / 링크 / SEO 분류) |
+| 2. 고리 | 모든 글 → 필라 `texas-holdem-rules-for-beginners` 첫 내부링크 · 필라 → 7편 전부 · 족보 쿼리 앵커는 `hand-rankings`로만(§3 소유표) · 대회 글 ↔ `/tr/tournaments` · readnext/썸네일 | 링크 고리 완성 |
+| 3. 흡수 | §1 실측어를 주인 글에만: rules-for-beginners = «poker nasıl oynanır»(5.400)·«poker kuralları»·«texas holdem»·«poker nedir» · hand-rankings = «poker elleri»(2.900)·«el/kart sıralaması»·«kombinasyonları»·«kartları» · blind-meaning = «blind nedir» · all-in-rules = «all in nedir» · showdown = «split pot»/«kicker»(tiebreak 신규 전까지 임시) · 질문형 H2 + 직답 40~75단어 · CTR 훅은 살리고 키워드만 보강(§17) | 수정 diff |
+| 4. 검수 | 손댄 핸드·수치 §13 검산 · 렌즈(터키어 네이티브 교열 · §13 · SEO/카니발) 병렬 → 반영 → 2차 교열 · 아스트라 교차(read-only) | 판정표 |
+| 5. 마감 | `npm run build` · push · MB 1행(커밋·8 slug·tr) · `npm run indexnow -- --since <당일>` · 사장님께 **수동 색인 요청 URL 7개** 목록 전달 · 이 표 상태 칸·WORKLOG·핸드오프 갱신 | 배포 |
+
+- 🔴 범위 밖(이번에 안 함): 신규 글·도구(회차 2~) · 합법성·`online poker`·`poker oyna` 의도 · 도구 링크 중 tr판이 아직 없는 calculator·hand-chart는 회차 2 뒤에 건다(지금 EN 도구로 걸지 않는다).
+- 판단 갈림이 나오면(예: 실측어를 seoTitle에 넣으면 기존 훅이 죽는 자리) 그 자리만 표로 올리고 나머지는 진행.
 
 ## 5. 지킬 것
 
