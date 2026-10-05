@@ -64,6 +64,11 @@ const STATIC_ROUTES = [
    *   필라가 경화 후 17계단 오른 것(29.4→12.1)은 **실측된 성과**이고 도구 회복은 **가설**이다.
    *   사장님 판단 — 실측된 성과를 가설에 걸지 않는다. **재론하려면 새 근거를 가져올 것.**
    */
+  /**
+   * ★2026-10-05 `/hands` 색인 재개시 (사장님 결정) — 위 08-13 주석은 그날 판단으로 보존. 근거 = `app/hands/page.tsx` robots 주석.
+   *   `/rules/texas-holdem`은 noindex 유지(«홀덤 룰»에 /rules 허브·holdem-rules 글이 이미 있어 셋이 나눠 먹는다 — 통합 판단 별건).
+   */
+  { path: "/hands", priority: "0.8", changefreq: "monthly" },
   { path: "/glossary", priority: "0.8", changefreq: "monthly" },
   { path: "/rules", priority: "0.9", changefreq: "monthly" },
   { path: "/rules/omaha", priority: "0.8", changefreq: "monthly" },
@@ -105,6 +110,12 @@ const STATIC_ROUTES = [
   { path: "/en/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/en/quiz", priority: "0.6", changefreq: "monthly" },
   { path: "/en/ranking", priority: "0.7", changefreq: "weekly" },
+  /**
+   * ★2026-10-05 색인 개시 (사장님 결정 · «도구로 몰아준다») — 위 «noindex → 넣지 말 것»은 08-04 기준으로 낡았다.
+   *   근거 = 각 page.tsx robots 주석(몰아준 필라가 28일·90일 모두 0클릭).
+   */
+  { path: "/en/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/en/glossary", priority: "0.6", changefreq: "monthly" },
   /**
    * ★2026-08-19 신설 — `/en/solver`. 한국어 `/solver`(0.9)의 영어판이고 같은 구조다.
    *   robots 확인: 산출물 `.next/server/app/en/solver.html`의 meta가 **index, follow**다

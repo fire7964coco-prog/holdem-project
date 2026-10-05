@@ -1,3 +1,9 @@
+## 2026-10-05 (9) — 도구 3곳 색인 개시: /en/hand-chart · /en/glossary · /hands
+
+- 사장님 원칙 확정(«차트·계산·대회·솔버 의도는 도구로 몰아준다» · 재조사 금지). 색인 제외 도구 4곳의 몰아준 필라 성적(GSC [page] 28일/90일): en starting-hands-chart 0·43.9위/0 · en glossary 0·35.9위/0 · ko hand-rankings 5·10.5위/18 · ko holdem-rules 12·10.9위/24(«홀덤 룰» 24위 0클릭).
+- 3곳 robots index:true + 사이트맵 등재(양쪽 논거 주석 보존). 필라 글은 노인덱스하지 않는다(ko /hand-chart 08-08 선례 = 구글이 스스로 도구 선택 · 롱테일·AI 인용 보존). /rules/texas-holdem은 보류(/rules 허브·holdem-rules 글과 3중 — 통합 판단 별건).
+- 빌드 exit 0 · 산출 HTML robots «index, follow» 3/3 · 사이트맵 84 static.
+
 ## 2026-10-05 (8) — GSC 색인 전수 · tr 클러스터 완결 계획 확정
 
 - GSC URL Inspection 전수(사이트맵 822): 색인 582 · 미색인 240(발견 152 · 모름 46 · 복제 23 · 크롤X 19). 복제 19건은 구글 canonical이 외부 도박 사이트(747live.bet 등) — 08월 EN 2편과 같은 유형, 그 2편은 재색인 요청 뒤 정상화 확인. 언어별 색인율 ko 94 · en 88 · ja 85 · 메인 63~72 · hi·tr 36~38 · it·he 13~25%. 목록 = `docs/gsc-tracking/not-indexed-2026-10-05.md`.

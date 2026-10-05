@@ -11,8 +11,12 @@ export const metadata: Metadata = {
   description:
     "Interactive Texas Hold'em starting hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges.",
   alternates: { canonical: `${SITE}/en/hand-chart` },
-  // 카니발 방지: holdem-starting-hands-chart 필라가 키워드 소유. 도구는 SERP 제외.
-  robots: { index: false, follow: true },
+  // ★2026-10-05 색인 개시 (사장님 결정 · 원칙 «차트·계산·대회·솔버 의도는 도구로 몰아준다»).
+  //   막았던 근거: «holdem-starting-hands-chart 필라가 키워드 소유 → 도구는 SERP 제외».
+  //   푼 근거: 그 필라가 28일 0클릭·43.9위 / 90일 0클릭·35.6위 = 못 이겼다(GSC [page] 단일 차원 09-05~10-02).
+  //   ko /hand-chart는 같은 상황에서 08-08에 풀어 28일 106클릭·7.1위. 필라 글은 노인덱스하지 않는다
+  //   (ko 선례에서 구글이 스스로 도구를 골랐다 · 글의 롱테일·AI 인용 역할 보존).
+  robots: { index: true, follow: true },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
   twitter: {
     card: "summary_large_image",

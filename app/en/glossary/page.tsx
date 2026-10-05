@@ -11,8 +11,11 @@ export const metadata: Metadata = {
   description:
     "A clear, accurate glossary of Texas Hold'em terms: nuts, outs, pot odds, 3-bet, c-bet, ICM, SPR, kicker, tilt and more. Search or filter 45+ essential poker terms.",
   alternates: { canonical: `${SITE}/en/glossary` },
-  // 카니발 방지: holdem-glossary 필라가 "poker glossary" 키워드 소유. 도구는 SERP 제외.
-  robots: { index: false, follow: true },
+  // ★2026-10-05 색인 개시 (사장님 결정 · 원칙 «도구로 몰아준다»).
+  //   막았던 근거: «holdem-glossary 필라가 "poker glossary" 키워드 소유 → 도구는 SERP 제외».
+  //   푼 근거: 그 필라가 28일 0클릭·35.9위 / 90일 0클릭·43.3위(검색어 전부 노출 1~7·60~80위) = 못 이겼다.
+  //   필라 글은 노인덱스하지 않는다(ko /hand-chart 선례 · 글의 롱테일·AI 인용 역할 보존).
+  robots: { index: true, follow: true },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
   twitter: {
     card: "summary_large_image",
