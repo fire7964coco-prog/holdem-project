@@ -49,7 +49,7 @@
 | başlangıç elleri · el tablosu (차트) | **`/tr/hand-chart`(색인)** | starting-hands-chart 글 안 씀 → 카니발 원천 제거. 차트 페이지에 설명·FAQ를 넣어 글 역할까지 |
 | pot oranı hesaplama · olasılık hesaplama | **`/tr/calculator`** | `pot-odds`·`probability` 글 = «pot oranı nedir» 개념 의도만 · 제목에 «hesaplama/hesaplayıcı» 헤드텀을 쓰지 않는다 |
 
-🔴 **도구 몰아주기 근거 (사장님 10-05 · GSC 28일 09-05~10-02 · [page] 단일 차원)**: ko `/hand-chart` 106클릭(7.1위) vs `/blog/holdem-starting-hands-chart` 상위권 밖 · `/tournaments` 564 · `/solver` 82 · `/calculator` 11 vs `pot-odds-calculation` 2·`probability` 4. 예외 = 족보(ko `/hands` noindex · 필라가 이기는 중 — `seo-tool-vs-blog-cannibalization`). 🪶 단 로케일에서는 미증명(`/en/hand-chart` noindex라 시험 안 됨 · `/ja/calculator`·`/es/calculator` 미색인 · `/en/solver` 4클릭) → tr은 «근거 있는 베팅». 회차 2 배포 4주 뒤 `/tr/hand-chart`·`/tr/calculator` 노출·클릭과 색인을 재측정한다.
+🔴 **도구 몰아주기 근거 (사장님 10-05 · GSC 28일 09-05~10-02 · [page] 단일 차원)**: ko `/hand-chart` 106클릭(7.1위) vs `/blog/holdem-starting-hands-chart` 상위권 밖 · `/tournaments` 564 · `/solver` 82 · `/calculator` 11 vs `pot-odds-calculation` 2·`probability` 4. 예외 = 족보(ko `/hands` noindex · 필라가 이기는 중 — `seo-tool-vs-blog-cannibalization`). 🔴 **확정 — 재조사 금지**(사장님 10-05 «알아볼 필요 없어, 이미 나온 결과들이다»). 차트·계산·대회·솔버 의도는 도구로 몰아준다.
 | poker turnuvası · kıbrıs poker · merit poker | `/tr/tournaments` | `holdem-tournament` 글 = «토너먼트 구조·전략» 의도 |
 | gto poker · poker solver | `/tr/solver` 랜딩 | GTO 4편은 남의 헤드텀을 빌려 붙이지 않는다(§1-E) |
 
