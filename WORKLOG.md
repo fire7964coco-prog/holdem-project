@@ -2,7 +2,7 @@
 
 - W-1~W-16 전부 채택·이행(기각 0 · «확신 낮음» W-5·W-6·W-15 후자도 문면 재확인 뒤 채택). 대부분 «先に結論» 상자가 본문·EN 한정을 뺀 자리 → 본문·EN 문면으로 복원. rake W-15·id W-16의 국내 한정 한 줄은 `texas-holdem-rules-for-beginners`(ja) 선례 문형 — 조문 번호는 본문에 넣지 않음(posting 합법성 규칙). FAQ «割合×頻度»(W-29)는 EN-먼저라 불변.
 - 게이트: audit:hard ja 60/60 · id 55/55 🔴 0 · 빌드 exit 0(74 + 629). updated 10-05.
-- 아스트라 교차(용어 사전 10 dict · codex gpt-6-astra read-only · 스크래치 사본) = 아래 결과 절.
+- 아스트라 교차(용어 사전 10 dict · codex gpt-6-astra read-only · 스크래치 사본 · 회차 2 누락분): 24곳 6유형 → 채택 22(Rake 10 · ICM 8 · fr·hi All-in·Check) · 기각 2(fr·hi Blinds 헤즈업 — 표준 정의로 틀리지 않음). 도구 dict만 정정 · 글·EN 도구 같은 자리는 `en-first-queue` §2-W 🪶 «아스트라 교차 잔여». 빌드 exit 0 · 산출 HTML 확인 · MB-177.
 
 ## 2026-10-05 (11) — 우편함 MA-318·320~329 판정·등재 (MB-174) · 로케일 도구 확장 회차 2: 용어 사전 × 10로케일 개설 (MB-175)
 
