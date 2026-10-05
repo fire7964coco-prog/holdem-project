@@ -1,3 +1,9 @@
+## 2026-10-05 (1) — 솔버 S-037 회신: 후기 API 속도 제한 2건 (브랜치 `solver-reviews-code1` `e26376a6` · MB-165)
+
+- 재현 확인(커밋 `a86f3837` 소스): ① 「10분에 저장 6회」가 solver_feedback 의 updated_at 행 수를 세서 같은 후기 반복 수정은 1에서 멈춤 ② setNickname·confirmNickname 이 제한 검사보다 먼저 실행 → rate 거절에도 공개 이름 변경·11개 랜딩 무효화.
+- 수정: 새 표 `solver_feedback_saves`(저장 성공 1회 = 1행 · 하루 지난 몫 정리 · RLS on 정책 0) — SQL 5-A · 검사를 이름 처리 앞으로 · 설계 §7-3 표 «테이블 6».
+- 게이트: check:solver-feedback 🔴 0 · selftest 10/10 · tsc 무오류. 🔴 배포 전 SQL 5-A 재실행 필요(사장님). 브랜치 워크트리 `../Holdem-solver-reviews` 신설.
+
 ## 2026-10-04 (7) — 우편함 MA-303 판정(JA ④ 4-2 부분2) · JA 고유 2자리 정정 · EN-먼저 등재 (MB-164)
 
 - 판정: 요청 1(JA 고유) 채택 · 요청 2 ⓐⓑ(EN-먼저) 채택 · 통지 ①은 R-3·R-4ⓐ 채택(소)·나머지 보류 · 통지 ② 4랭크 표기 채택·flush «唯一» 보류 · 통지 ③ OK. 근거 = EN·JA 원문 직접 대조(split L126·FAQ L189 / reading L180~190).

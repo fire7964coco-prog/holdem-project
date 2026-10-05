@@ -12,6 +12,7 @@
 ## ▶▶▶▶▶▶▶▶ 솔버 후기창 — ✅ 코드 1 구현 · 🔴 브랜치 `solver-reviews-code1`에 보관(미배포)
 
 - 🔴 **10-04 (5)에 브랜치 `solver-reviews-code1`로 옮겼다**(사장님 허락 · 코드 커밋 `1fc7a5df`·`a86f3837`·`9cbd532d` 포함 · main에는 없다). 10/7 `solver_open` 판독 뒤 `git rebase main solver-reviews-code1` → 문서 파일(핸드오프·WORKLOG·우편함) 충돌은 **main 쪽을 남긴다** → main에 ff 머지 → 빌드 → push.
+- 🔴 **S-037 반영 `e26376a6`(10-05 · MB-165)**: 속도 제한 = 새 표 `solver_feedback_saves` · 이름 바꾸기보다 먼저 검사. → **SQL 5-A 재실행이 배포 전에 필요**(사장님께 알림 · 미실행이면 저장이 `unavailable`). 브랜치 워크트리 = `../Holdem-solver-reviews`(node_modules 정션 · 머지 뒤 `git worktree remove`).
 - ✅ **SQL 실행 완료**(10-04 · 1차 `$` 오류 → `9cbd532d` 수정 후 성공). anon 검증: 테이블 5 존재·읽기 [] · 공개 뷰 permission denied · anon 쓰기 RLS 거부 · 버킷 `review-avatars` 존재. ✅ Auth Redirect URLs에 `https://www.holdemmaster.com/**` 추가(10-04 · 그 전엔 www 없어 소셜 로그인 복귀가 Site URL로 떨어졌다).
 - ▶ **실제 쓰기 시험은 배포 뒤 라이브에서**(사장님 10-04 결정 — 로컬 서비스 키 없음): 쓰기·수정·삭제 · 이름 확인 · 숨김 3사유·재검토 요청 · 답글 · 이미지 3종 · 도움됐어요 · 로그인 복귀(www redirect 추가분) → 고칠 것 있으면 그 자리에서 수정 → 시험 행 삭제. 그다음 MB 통지(솔버가 스위치 ⓐ 켬)·IndexNow(12개 랜딩).
 - 배포 때: 개인정보처리방침 `UPDATED`를 배포일로 · Vercel 빌드 로그에 «SUPABASE_SERVICE_ROLE_KEY 없음» 경고가 없는지 · 라이브 12개 랜딩 `data-solver-reviews="ok"` 확인. 구현 지도·운영 절차 = 설계 §7-3.
