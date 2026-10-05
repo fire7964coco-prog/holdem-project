@@ -218,6 +218,20 @@ const STATIC_ROUTES = [
   { path: "/id/hand-chart", priority: "0.7", changefreq: "monthly" },
   { path: "/ms/hand-chart", priority: "0.7", changefreq: "monthly" },
   { path: "/hi/hand-chart", priority: "0.7", changefreq: "monthly" },
+  /**
+   * ★2026-10-05 신설 — `/<locale>/glossary` 10개(로케일 도구 확장 회차 2). `/en/glossary`(0.6)와 같은 가중치.
+   *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/glossary-alternates.ts`.
+   */
+  { path: "/ja/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/es/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/pt/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/de/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/zh/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/zh-hant/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/fr/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/id/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/ms/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/hi/glossary", priority: "0.6", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

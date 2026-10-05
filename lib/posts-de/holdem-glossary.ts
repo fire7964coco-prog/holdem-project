@@ -219,7 +219,7 @@ Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournam
 | **Bounty (Knockout)** | Ein Turnier, das für jeden Spieler, den du eliminierst, einen Preis zahlt. |
 | **Sit & Go (SNG)** | Ein kleines Turnier, das startet, sobald es voll ist. |
 | **MTT** | Ein Multi-Table-Turnier, das Tische zusammenlegt, wenn Spieler ausscheiden. |
-| **ICM** | Das Independent Chip Model – rechnet Turnier-Chips nahe den Pay-Jumps in echtes Geld-Equity um. |
+| **ICM** | Das Independent Chip Model – rechnet Turnier-Chips nahe den Pay-Jumps in echte Geld-Equity um. |
 | **Bad Beat Jackpot** | Ein Promo-Preis, der ausgezahlt wird, wenn eine sehr starke Hand verliert – [wie es funktioniert](/de/blog/holdem-bad-beat). |
 
 </div>

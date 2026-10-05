@@ -41,6 +41,7 @@ const HUB_SECTIONS = ["/pub", "/rules"] as const;
 // ★2026-10-05 `/<locale>/hand-chart` 10개 로케일 신설(로케일 도구 확장 회차 1 · docs/tools-locale-rollout-plan.md).
 //   공용 컴포넌트 components/hand-chart + 로케일 사전. hreflang 세트 = lib/hand-chart-alternates.ts.
 //   ⚠ 아래 개별 주석의 «hand-chart는 없다» 경고는 이 날부로 낡았다(ar·vi·tr은 여전히 없다).
+// ★2026-10-05 `/<locale>/glossary` 같은 10개 로케일 신설(회차 2 · hreflang = lib/glossary-alternates.ts) — «glossary는 없다» 경고도 낡았다.
 const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   /**
    * ⚠ `/en/ranking`·`/en/quiz`는 좌측 레일 메뉴에서만 뺐다(사장님 요청).
@@ -62,42 +63,42 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-09-17 — `/<locale>/calculator` 10개 로케일 동시 신설(사장님 지시 · 다국어 글 우측 레일
   //   계산기 CTA가 전부 한국어 `/calculator`로 떨어지던 것의 처방). 공용 컴포넌트
   //   `components/calculator/calculator-tool.tsx` + 로케일 사전. hreflang 세트 = `lib/calculator-alternates.ts`.
-  ja: ["/ja/blog", "/ja/calculator", "/ja/hand-chart", "/ja/solver", "/ja/tournaments"],
+  ja: ["/ja/blog", "/ja/calculator", "/ja/hand-chart", "/ja/glossary", "/ja/solver", "/ja/tournaments"],
   // es — ★2026-08-22 `/es/solver` 신설. 스페인어권에 솔버 진입로가 0개였다(본체는 noindex).
   //      ⚠ `/es/hand-chart`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
-  es: ["/es/blog", "/es/calculator", "/es/hand-chart", "/es/solver", "/es/tournaments"],
+  es: ["/es/blog", "/es/calculator", "/es/hand-chart", "/es/glossary", "/es/solver", "/es/tournaments"],
   // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
   //      ⚠ 없는 라우트를 넣지 마라(`/pt/tournaments`는 2026-09-29에 생겼다 — 아래).
   // ★2026-09-29 `/pt/tournaments` 신설(로케일 회차 2) — 위 «없다» 경고는 이 날부로 해제.
-  pt: ["/pt/blog", "/pt/calculator", "/pt/hand-chart", "/pt/solver", "/pt/tournaments"],
+  pt: ["/pt/blog", "/pt/calculator", "/pt/hand-chart", "/pt/glossary", "/pt/solver", "/pt/tournaments"],
   // tr — ★2026-09-29 `/tr/tournaments` 신설. tr의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ⚠ tr에는 solver·calculator가 **없다** — 넣지 마라.
   tr: ["/tr/tournaments"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).
-  de: ["/de/blog", "/de/calculator", "/de/hand-chart", "/de/solver", "/de/tournaments"],
+  de: ["/de/blog", "/de/calculator", "/de/hand-chart", "/de/glossary", "/de/solver", "/de/tournaments"],
   // zh — ★2026-08-24 `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 중국어권에 솔버
   //      진입로가 0개였다(본체는 noindex). ⚠ 없는 라우트(hand-chart…)를 넣지 마라.
-  zh: ["/zh/blog", "/zh/calculator", "/zh/hand-chart", "/zh/solver", "/zh/tournaments"],
+  zh: ["/zh/blog", "/zh/calculator", "/zh/hand-chart", "/zh/glossary", "/zh/solver", "/zh/tournaments"],
   // zh-hant — ★2026-08-24 `/zh-hant/solver` 신설과 함께 추가(8번째 솔버 랜딩).
   //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex). 없는 라우트를 넣지 마라.
-  "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/solver", "/zh-hant/tournaments"],
+  "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments"],
   // fr — ★2026-08-24 `/fr/solver` 신설과 함께 추가(9번째 — 솔버 앱 fr 배포 당일).
   //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
-  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/solver"],
+  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
   // ★2026-09-29 `/id/tournaments` 신설(해외 원정 캘린더 · 회차 1 id·ms·vi).
-  id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/solver", "/id/tournaments"],
+  id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/glossary", "/id/solver", "/id/tournaments"],
   // ms — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
   // ★2026-09-29 `/ms/tournaments` 신설.
-  ms: ["/ms/calculator", "/ms/hand-chart", "/ms/solver", "/ms/tournaments"],
+  ms: ["/ms/calculator", "/ms/hand-chart", "/ms/glossary", "/ms/solver", "/ms/tournaments"],
   // vi — ★2026-09-29 `/vi/tournaments` 신설. vi의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ⚠ vi에는 solver·calculator가 **없다** — 넣지 마라.
   vi: ["/vi/tournaments"],
   // hi — 솔버·계산기·대회 보드를 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   // ★2026-09-30 `/hi/tournaments` 신설(로케일 회차 2 후반).
-  hi: ["/hi/calculator", "/hi/hand-chart", "/hi/solver", "/hi/tournaments"],
+  hi: ["/hi/calculator", "/hi/hand-chart", "/hi/glossary", "/hi/solver", "/hi/tournaments"],
   // ar — ★2026-09-30 `/ar/tournaments` 신설. ar의 첫 HubPage다(RTL). 블로그 목록은 자체 크롬을 유지한다.
   //      ⚠ ar에는 solver·calculator가 **없다** — 넣지 마라.
   ar: ["/ar/tournaments"],

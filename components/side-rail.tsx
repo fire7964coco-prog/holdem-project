@@ -135,6 +135,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ja/calculator",  icon: "🧮", label: "勝率計算機" },
     // ★2026-10-05 `/ja/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/ja/hand-chart", icon: "📊", label: "ハンドレンジ表" },
+    // ★2026-10-05 `/ja/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/ja/glossary", icon: "📖", label: "ポーカー用語辞典" },
   ],
   /**
    * ★2026-08-22 — `/es/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -150,6 +152,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/es/calculator",  icon: "🧮", label: "Calculadora de poker" },
     // ★2026-10-05 `/es/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/es/hand-chart", icon: "📊", label: "Tabla de rangos" },
+    // ★2026-10-05 `/es/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/es/glossary", icon: "📖", label: "Glosario de póker" },
   ],
   /**
    * ★2026-08-23 — `/pt/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -166,6 +170,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/pt/calculator", icon: "🧮", label: "Calculadora de poker" },
     // ★2026-10-05 `/pt/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/pt/hand-chart", icon: "📊", label: "Tabela de range" },
+    // ★2026-10-05 `/pt/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/pt/glossary", icon: "📖", label: "Glossário de poker" },
     // ★2026-09-29 `/pt/tournaments` 신설. 라벨 = PT_CLUSTERS tournament pillarLabel 축어(lib/pillar-clusters.ts).
     { href: "/pt/tournaments", icon: "🏆", label: "Torneios" },
   ],
@@ -200,6 +206,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/de/calculator",  icon: "🧮", label: "Poker-Rechner" },
     // ★2026-10-05 `/de/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/de/hand-chart", icon: "📊", label: "Starthände-Tabelle" },
+    // ★2026-10-05 `/de/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/de/glossary", icon: "📖", label: "Poker-Begriffe" },
   ],
   /**
    * ★2026-08-24 — `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 라벨은 전부 검증된 값에서
@@ -217,6 +225,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh/calculator",  icon: "🧮", label: "概率计算器" },
     // ★2026-10-05 `/zh/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/zh/hand-chart", icon: "📊", label: "起手牌表" },
+    // ★2026-10-05 `/zh/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/zh/glossary", icon: "📖", label: "德州扑克术语词典" },
   ],
   /**
    * ★2026-08-24 — `/zh-hant/solver` 신설과 함께 추가(8번째 = 마지막 솔버 랜딩). 라벨은 전부
@@ -236,6 +246,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh-hant/calculator",  icon: "🧮", label: "機率計算器" },
     // ★2026-10-05 `/zh-hant/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/zh-hant/hand-chart", icon: "📊", label: "起手牌表" },
+    // ★2026-10-05 `/zh-hant/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/zh-hant/glossary", icon: "📖", label: "德州撲克術語查詢" },
   ],
   /**
    * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 라벨은 검증된
@@ -253,6 +265,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/fr/calculator", icon: "🧮", label: "Calculateur poker" },
     // ★2026-10-05 `/fr/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/fr/hand-chart", icon: "📊", label: "Tableau range poker" },
+    // ★2026-10-05 `/fr/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/fr/glossary", icon: "📖", label: "Lexique du poker" },
   ],
   /**
    * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:
@@ -270,6 +284,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/id/calculator", icon: "🧮", label: "Kalkulator Poker" },
     // ★2026-10-05 `/id/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/id/hand-chart", icon: "📊", label: "Chart Starting Hand" },
+    // ★2026-10-05 `/id/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/id/glossary", icon: "📖", label: "Kamus Istilah Poker" },
     // ★2026-09-29 `/id/tournaments` 신설. 라벨 = ID_CLUSTERS tournament pillarLabel 축어(lib/pillar-clusters.ts).
     { href: "/id/tournaments", icon: "🏆", label: "Turnamen" },
   ],
@@ -282,6 +298,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ms/calculator", icon: "🧮", label: "Kalkulator Poker" },
     // ★2026-10-05 `/ms/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/ms/hand-chart", icon: "📊", label: "Carta Tangan" },
+    // ★2026-10-05 `/ms/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/ms/glossary", icon: "📖", label: "Glosari Istilah Poker" },
     // ★2026-09-29 `/ms/tournaments` 신설. 라벨 = MS_CLUSTERS tournament pillarLabel 축어(«Tournament» — ms 코퍼스 표기).
     { href: "/ms/tournaments", icon: "🏆", label: "Tournament" },
   ],
@@ -303,6 +321,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/hi/calculator", icon: "🧮", label: "Odds कैलकुलेटर" },
     // ★2026-10-05 `/hi/hand-chart` 신설(도구 확장 회차 1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/hi/hand-chart", icon: "📊", label: "हैंड चार्ट" },
+    // ★2026-10-05 `/hi/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/hi/glossary", icon: "📖", label: "पोकर शब्दावली (Poker Terms)" },
     // ★2026-09-30 `/hi/tournaments` 신설. 라벨 = BOARD_STRINGS.hi countsLine·본문이 쓰는 코퍼스형 «टूर्नामेंट»(hi 글 32회).
     { href: "/hi/tournaments", icon: "🏆", label: "टूर्नामेंट" },
   ],

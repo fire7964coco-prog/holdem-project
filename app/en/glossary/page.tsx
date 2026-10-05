@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import GlossaryEn from "./glossary-client";
 import HubPage from "@/components/hub-page";
 import { TERMS } from "./glossary-data";
+import { GLOSSARY_ALTERNATES } from "@/lib/glossary-alternates";
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
   title: { absolute: "Poker Glossary — Texas Hold'em Terms Explained (A–Z) | HoldemMaster" },
   description:
     "A clear, accurate glossary of Texas Hold'em terms: nuts, outs, pot odds, 3-bet, c-bet, ICM, SPR, kicker, tilt and more. Search or filter 45+ essential poker terms.",
-  alternates: { canonical: `${SITE}/en/glossary` },
+  // ★2026-10-05 hreflang 12세트(로케일 도구 확장 회차 2 · lib/glossary-alternates.ts).
+  alternates: { canonical: `${SITE}/en/glossary`, languages: GLOSSARY_ALTERNATES },
   // ★2026-10-05 색인 개시 (사장님 결정 · 원칙 «도구로 몰아준다»).
   //   막았던 근거: «holdem-glossary 필라가 "poker glossary" 키워드 소유 → 도구는 SERP 제외».
   //   푼 근거: 그 필라가 28일 0클릭·35.9위 / 90일 0클릭·43.3위(검색어 전부 노출 1~7·60~80위) = 못 이겼다.

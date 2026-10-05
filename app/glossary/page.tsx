@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { socialMeta } from "@/lib/page-metadata";
 import GlossaryClient from "./glossary-client";
 import HubPage from "@/components/hub-page";
+import { GLOSSARY_ALTERNATES } from "@/lib/glossary-alternates";
 import { TERMS } from "./glossary-data";
 
 // ★2026-08-01: metadata export가 없어 /strategy와 <title>이 완전히 같았다(루트 기본값).
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   robots: { index: true, follow: true },
   // ★2026-08-02: alternates 미선언 → 루트 layout의 홈 canonical을 물려받고 있었다.
-  alternates: { canonical: `${SITE}/glossary` },
+  // ★2026-10-05 hreflang 12세트(로케일 도구 확장 회차 2 · lib/glossary-alternates.ts).
+  alternates: { canonical: `${SITE}/glossary`, languages: GLOSSARY_ALTERNATES },
   // ★2026-09-20: og도 같은 이유로 홈 카드를 물려받고 있었다(lib/page-metadata.ts 주석).
   ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/glossary" }),
 };

@@ -7,9 +7,11 @@
  *   게다가 `TERMS.slice(0, 8)`로 8개만 넣고 있었다 — 전수로 바꿨다.
  */
 
-export interface Term { term: string; desc: string; }
+// ★2026-10-05 회차 2: 타입 정본 = components/glossary/dict.ts (구 `Term`은 cat 필드가 빠져 있었다).
+import type { GlossaryTerm } from "@/components/glossary/dict";
+export type Term = GlossaryTerm;
 
-export const TERMS: Term[] = [
+export const TERMS: GlossaryTerm[] = [
   { term: "3-Bet", cat: "Action", desc: "The first re-raise of a hand. The big blind counts as the first bet and the open-raise as the second, so the re-raise is the 3-bet. It signals a very strong hand — or a bluff." },
   { term: "All-in", cat: "Action", desc: "Betting your entire stack in one move. Once you're all-in you can't bet again, and a side pot forms if opponents have more chips behind." },
   { term: "Ante", cat: "Action", desc: "A small forced bet posted by every player before the deal to build the pot. Common in later tournament levels, unlike blinds, which only two players post." },

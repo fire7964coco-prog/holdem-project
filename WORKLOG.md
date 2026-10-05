@@ -1,3 +1,12 @@
+## 2026-10-05 (11) — 우편함 MA-318·320~329 판정·등재 (MB-174) · 로케일 도구 확장 회차 2: 용어 사전 × 10로케일 개설 (MB-175)
+
+- 우편함: 요청 5묶음(MA-321·323·325·327·329) 전부 채택 → `docs/en-first-queue.md` §2-W(로케일 고유 W-1~W-16 = JA 22·ID 2 · EN-먼저 W-21~W-31 · cooler 2분법 사장님 결재 RISKY 포함) · 착수 공지·종료 보고 ACK · 이행은 다음 회차(MB-174).
+- A: `/en/glossary` 클라이언트 → 공용 `components/glossary/{glossary-tool.tsx,dict.ts}` · EN은 얇은 클라이언트 래퍼(사전을 서버 props로 넘기면 정의가 flight에 중복) · EN 본문 마크업 전후 **바이트 동일**(56,506B · 빌드 HTML body에서 script·link 제거 후 비교). 구 `Term` 타입(cat 누락)을 `GlossaryTerm`으로. 비라틴 로케일(ja·zh·zh-hant·hi)은 첫 글자 대신 **카테고리별 묶음**(`grouping`) · 검색은 `aka`(영어 원어)도 본다.
+- B: 5레인(Opus · 2로케일씩) `app/<loc>/glossary/dict.ts` — 정의 = 그 로케일 `holdem-glossary` 글 축어(de 38·es 37·pt 38·id 41·ms 41·ja 38·zh 37·zh-hant 37 · 나머지 번역 · fr·hi는 글 없음 → 46개 번역). 헤드텀 DataForSEO 1회씩(각 dict 머리 주석). 🔴 EN 용어 수는 **46**(브리프의 47은 타입 선언 줄까지 센 내 오기 — 레인 5개가 모두 잡았다).
+- D: `lib/glossary-alternates.ts`(12세트 + x-default · ko·en 페이지도 선언) · page.tsx(DefinedTermSet + Breadcrumb · 생성 스크립트) · hub-routes · side-rail(라벨 = dict.hero.h1) · 사이트맵 10행. E: 로케일 글의 glossary 링크 0곳(재조준 대상 없음).
+- F: 렌즈 2(라틴 6 · CJK+hi 4). 채택 → 🔴 zh-hant Nuts «後面的牌會改變它» → «可能會»(사실 · 사전+글) · Trips «踢腳控制較差/踢脚控制较弱/キッカーの管理が弱い» → «킥커에 지기 쉽다»(zh·zh-hant·ja 사전+글) · ja キッカー «引き分けを決める» → «勝敗を決める(それも同じなら引き分け)»(사전+글) · de ICM «echtes Geld-Equity» 문법(사전+글) · fr «la 3-bet» → «le 3-bet» · fr 블라인드 문장 · pt «Pote (pot)» · Equity «승률 기준» 한정 5로케일 사전(글 쪽은 EN 글이 원천이라 §2-W 🪶 EN-먼저). 기각·보류(낮음·축어): C-bet 순환 정의 · de Set/Trips aka · id backdoor · zh «主张» · hi Ante(BB 앤티 미언급 = EN 상속).
+- 게이트: tsc(새 파일 0) · 사전 검증 스크립트 10/10(46개·cat 순서·플레이스홀더·desc ≤160·링크 실재·백틱 0) · 빌드 exit 0(74 + 629) · hreflang 0건 · meta-lang 🔴 0 · seo-sync 🔴 0 · intl-links 통과 · 산출 «index, follow» · 390·1440 화면(ja·fr) 가로 넘침 0. 아스트라 교차는 이번 회차 생략(시간) — 다음 회차 이행 때 함께.
+
 ## 2026-10-05 (10) — 로케일 도구 확장 회차 1: 스타팅 핸드 차트 × 10로케일 개설
 
 - 정본 = `docs/tools-locale-rollout-plan.md` §2 A~G. A: `/en/hand-chart` 클라이언트 → 공용 `components/hand-chart/{hand-chart-tool.tsx,dict.ts}` · EN 정적 렌더 마크업 전후 **바이트 동일**(84,541B · react-dom/server 스냅샷 비교). EN 사전은 상속 문구 그대로 — «GTO» 주장·FAQ4 기준 혼동·featureList 색 오기술은 `en-first-queue` §2-V(V-1~5 · ko featureList 포함 · 자동 착수 금지).

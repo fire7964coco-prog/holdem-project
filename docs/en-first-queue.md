@@ -305,6 +305,51 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | V-5 | JSON-LD featureList 4번째 (EN «Colour-coded pocket pairs, suited and offsuit» · **ko도 같다** «포켓페어·수티드·오프수트 구분 색상») | 색이 핸드 종류를 나눈다고 주장 — 실제 색 = 오픈 포지션(종류는 삼각형 위치) · 아스트라 교차가 10로케일에서 잡아 로케일은 정정 | «오픈 포지션별 색 구분(UTG~SB)» |
 | V-4 | 서버 metadata description ↔ dict.seo.description | «starting hand chart» vs «starting-hand chart» (한 글자 갈림 · 클라이언트가 덮는다) | EN page.tsx도 dict.seo에서 파생 |
 
+### 2-W. 우편함 수신분 — MA-321 · MA-323 · MA-325 · MA-327 · MA-329 (JA ④ 4-4 부분2 · 4-5 부분1·2 · cooler 결재 · ID 파일럿) · 판정 2026-10-05 (11) · 회신 MB-174 · ⏳ 이행 대기
+
+> 근거 = 검수장 각 MA의 `HQ-REPORT.md`(MA 행 «근거» 칸) · 원장 `ledger/{ja,id,…}/<slug>.md`. 판정 = 전부 **채택**(«확신 낮음»은 이행 때 문면을 다시 보고 기각 가능). 이행 순서 = ① JA·ID 고유(로케일 단독 · 한 회차) → ② EN-먼저(EN 정정 → 핵심 8로케일 전파 · 사장님 지시로 연다). 이행 MB가 나가면 검수장이 변경 줄 전/후로 닫는다.
+
+**① 로케일 고유 (JA 22 · ID 2) — 대부분 «先に結論» 상자·FAQ가 본문·EN 한정을 뺀 자리**
+
+| # | 글 | 자리 | 고칠 방향 | 출처 |
+|---|---|---|---|---|
+| W-1 | ja when-to-fold | 상자 L164 «ブラフにしか勝てない」に寄るなら、それがフォールドです» | 같은 절 «ブラフキャッチャー…フォールドという意味ではありません»과 정합(§5-K 1 잔존 · EN Q4-a K1 문면 따라) | MA-321 ⓐ |
+| W-2 | ja when-to-fold | 표 L114 TPTK «フラッシュやストレートに向かって伸びる» | EN «four to a flush or straight»의 «4枚目» 복원 | MA-321 ⓐ |
+| W-3 | ja when-to-fold | 상자 L148 «「フォールドばかり」は、プリフロップなら正解» | 같은 절 75〜85% 상한 복원 · 프리플랍 면책 삭제 | MA-321 ⓐ |
+| W-4 | ja 3bet | FAQ L264 4벳 밸류 «たいていAA〜KK、そしてAK» | 같은 글 «QQ+, AK» + «3벳이 드문 상대엔 AA–KK» 조건 | MA-321 ⓑ |
+| W-5 | ja 3bet | 상자 L44 «降りないなら自分が有利なうちに» | EN «with your best hands» (확신 낮음) | MA-321 ⓑ |
+| W-6 | ja 3bet | L234 Q7o «エクイティもほとんどない» | QQ+/AK 상대 21.8% — «ほとんど» 완화 (확신 낮음) | MA-321 ⓑ |
+| W-7 | ja limping | 상자 L59 «取り戻すには、後からハンドを作るしかありません» | EN «or win it later» 복원(같은 글 L63) | MA-321 ⓒ |
+| W-8 | ja limping | 상자 L86 «すでに半額を払っている席» 외 2(«割安になったポット» speculative 탈락 · «ショートスタック» late position·토너먼트 탈락) | SB «ふつう半額» · EN 한정 복원 | MA-321 ⓒ |
+| W-9 | ja c-bet | 상자 L94 «アウトオブポジションや複数相手では低くなります» | SRP·レイザー 한정 복원(OOP 3벳터 97%와 모순 해소) | MA-321 ⓓ |
+| W-10 | ja bad-beat | FAQ7 «変えるべきはプレーではなく、ティルトへの警戒だけ» | «確かめたら» 전제 복원 · FAQ9(사이즈·ICM 실수)와 정합 | MA-323 ⓐ |
+| W-11 | ja fish | 상자 «3〜4つ重なればカモ…決定的» · «1つでもうなずけば診断は同じ» · «1〜2オービットで表に出ます» | EN «probably … working read» · «not a verdict» · «たいてい»·暫定 복원(MB-083 ② 1~2오빗 자리 겹침 확인) | MA-323 ⓑ |
+| W-12 | ja cooler | 상자 «「コールドデッキ」は本来その一手そのものを指し» | 원뜻 = 바꿔치기·미리 짠 덱(Dictionary.com 1855–60) | MA-323 ⓒ |
+| W-13 | ja rake | 상자 3자리(2.5〜10%·5〜20% · NL50 bb/100 · ライブ/オンライン 율·캡) | 본문 «典型的»·«約»·«あくまで例»·«通常» 복원 | MA-325 ⓐ |
+| W-14 | ja rake | 상자 «答えは「率×回数」で決まります» | «1ポットで実際に払う額(キャップまでの割合)×頻度»(본문 문면) | MA-325 ⓑ |
+| W-15 | ja rake | FAQ 위법성 · «ホームゲームがいちばん安い» | 일본 국내 한정 한 줄(刑法 185·186조 · e-Gov 원문) — 합법성은 정보 제공 축(메모리 legality-info) · 후자 확신 낮음 | MA-325 ⓒ |
+| W-16 | id beginners | 돈 블록 «cash game kecil di rumah» + 표 «belajar dengan taruhan sungguhan» · FAQ «home game uang sungguhan … $2 sampai $5» | 인도네시아 한정 한 줄(UU 1/2023 Pasal 427 · BPK 원문) — 플레이머니·국외 한정 · 위법 단정 금지(JA MA-295 선례) | MA-329 요청 1 |
+
+**② EN-먼저 15 (EN 같은 자리 + 핵심 8로케일 사본)**
+
+| # | 글 | EN 자리(JA 줄) | 고칠 방향 | 출처 |
+|---|---|---|---|---|
+| W-21 | when-to-fold | «every single time»(L9) | −EV ≠ 매회 손실 — «lose money over time» | MA-321 |
+| W-22 | when-to-fold | «never-wrong fold button … proof»(L137 · EN L119) | 논리 방향 바로잡기 | MA-321 |
+| W-23 | when-to-fold | FAQ «…always profitable»(L230) · FAQ «fold everything but the strongest»(L262) | 가격 조건 복원 | MA-321 |
+| W-24 | 3bet | A9o «only makes weak pairs»(L82) | 투페어+ 28.5% — «mostly» | MA-321 |
+| W-25 | limping | FAQ6 예외 열거(L175) · 표·FAQ7 SB «half»(L96·L179) | SB 컴플리트 추가 · «usually half» | MA-321 |
+| W-26 | c-bet | FAQ C벳 정의(L242) · «can't rebuy»(L129) | 최후 레이저(3벳터 포함) · 리엔트리 대회 한정 | MA-321 |
+| W-27 | bad-beat | FAQ5 «about as bad as a bad beat gets» | «お金が入った時点» 기준과 정합 (확신 낮음) | MA-323 |
+| W-28 | cooler | stripe «the only loss you shouldn't tilt over»(EN L19) | 배드빗도 같은 취급 — «one loss» | MA-323 |
+| W-29 | rake | FAQ «Judge rake by rate times frequency, not rate alone.» | W-14와 같은 식 — 캡 반영 | MA-325 |
+| W-30 | straddle | «GTO Wizard puts it bluntly … Three reasons:» | 원문 재확인 후 레이크 이유 삭제 · «almost always» 헤지 복원 | MA-325 |
+| W-31 | cooler | 복기 테스트 yes 가지 본문 L123 · FAQ L158 · 요약 L194 + ja 상자 L122 | 🔴 **사장님 결재 RISKY**(MA-327) — yes 가지에 «레인지·가격으로 따져도 옳았다면» 조건 · 쿨러 가지에 «강한 손끼리 충돌» 복원 · no 가지 유지 · 원장 있는 7로케일 + 꼬리 로케일 사본 grep | MA-327 |
+
+- 🪶 라벨 불변 통지(자동 착수 금지 · 손질 때 참고): MA-321 통지 2(limping «ほぼ弁護できません»·«最適» 강화 · c-bet «二段階») · MA-323 통지 1(원아우터 «約96%» 시점 · «長期では負ける» · «ターンやリバーで» 플랍 누락 · fish «追うのをやめる» · FAQ1 «まさに逆») · MA-325 통지 1(glossary 레이크 «cash-game» · rake «some» · 앤티 정의 · straddle «generally» · glossary UTG·c-bet·3벳·GTO · rake «4種類» · straddle 포스트플랍 최후) · MA-329 통지 1(id «jarang bluff di river» · «As lemah … kicker») · 통지 2(id PDF «satu halaman» ↔ 2쪽 · «4 ronde» 무한정) · 통지 3(EN 동형 후보 5 = MA-295 묶음).
+- 🪶 용어 사전 회차 2 렌즈 잔여(10-05 (11) · 자동 착수 금지): **EN-먼저** glossary 글 Equity «Your percentage share of the pot right now» — «based on your chance to win» 한정 없음(«팟에 넣은 칩 비율» 오독 · `/en/glossary` 도구 desc는 이미 있음) → EN 글 + 로케일 글 사본(로케일 **도구** 사전 5개는 정정 끝) · EN 도구 Ante에 BB 앤티 미언급(hi 사전 상속 · ja·zh 글은 언급) · C-bet 정의 순환(de·es·id·ms 글) · zh·zh-hant Fold «主张/主張» → «权利» · de Set/Trips aka «Drilling» 중복 · id Backdoor «dua kartu berurutan».
+- 🪶 straddle «アンダー・ザ・ガン» 표기 통일(«アンダーザガン» 9회 · MA-325·326) — 통일 커밋 때 검수장에 통지.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
