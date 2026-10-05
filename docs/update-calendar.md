@@ -34,7 +34,7 @@
 - **원본**: [제9회 페이지](https://wpl.winjoygame.com/holdem-masters-9) · [대회 가이드 PDF](https://static.winjoygame.com/wpl/v1/files/9th_HoldemMasters.pdf)(한글 텍스트 추출 불가 → pdftoppm 렌더 후 Read)
 - **제8회 결과**: 10-05 15:30 KST 확인 시 `/holdem-masters/hall-8` 없음(결승 당일). 명예의 전당에 올라오면 결과 상자·FAQ 1번·출처 «결과 게시 대기» 3곳에 우승자·상금 반영. 🪶 10/12경 1차 재확인
 - **10/11** A1 시작 · **11/14** A플라이트 끝(본문 «A플라이트 노린다면 10월 안에» 문장 만료) · **12/6** 새틀라이트 끝 = seoTitle «지금 들어가도 된다» 훅이 죽는 날 → 제10회 공개 여부 확인 · **12/13** FINAL → 결과 아카이브(제9회 결과는 `hall-9`)
-- 🪶 대회 보드: `lib/tournaments.ts`에 `holdem-masters-9` 카드 없음(8회 카드는 10/5 종료로 지난 대회로 넘어감). 신설 시 13로케일 사전(`lib/tournaments-i18n.ts` 이름·설명·한 줄 등) 동시 등재 — 별도 회차
+- 대회 보드: `holdem-masters-9` 카드 ✅ 신설(10-05 (7) · 13로케일 이름·설명 + note 5로케일). **12/13 FINAL 뒤** 카드 note를 «종료 · 우승 …»으로(7회 카드 형식 · note 5로케일 사전 동시) · 8회 카드도 `hall-8` 게시 시 같은 형식으로
 
 ### 10/9 · 10/20경 — APL 서울 가이드 미공개 항목 재확인 (발행 2026-09-23)
 - **글**: `apl-seoul-2026-guide` · 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §A

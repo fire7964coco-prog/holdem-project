@@ -1503,6 +1503,7 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "cap-8-rosario": "CAP 第8戦 ロサリオ",
     "holdem-masters-7": "第7回 Holdem Masters",
     "holdem-masters-8": "第8回 Holdem Masters",
+    "holdem-masters-9": "第9回 Holdem Masters",
     "wsop-2026": "第57回 WSOP 2026",
     "wpt-world-championship": "WPT ワールドチャンピオンシップ",
   },
@@ -1516,42 +1517,50 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
   id: {
     "holdem-masters-7": "Holdem Masters ke-7",
     "holdem-masters-8": "Holdem Masters ke-8",
+    "holdem-masters-9": "Holdem Masters ke-9",
     "wsop-2026": "WSOP ke-57 2026",
   },
   ms: {
     "holdem-masters-7": "Holdem Masters ke-7",
     "holdem-masters-8": "Holdem Masters ke-8",
+    "holdem-masters-9": "Holdem Masters ke-9",
     "wsop-2026": "WSOP ke-57 2026",
   },
   vi: {
     "holdem-masters-7": "Holdem Masters lần thứ 7",
     "holdem-masters-8": "Holdem Masters lần thứ 8",
+    "holdem-masters-9": "Holdem Masters lần thứ 9",
     "wsop-2026": "WSOP 2026 (lần thứ 57)",
   },
   pt: {
     "holdem-masters-7": "7º Holdem Masters",
     "holdem-masters-8": "8º Holdem Masters",
+    "holdem-masters-9": "9º Holdem Masters",
     "wsop-2026": "57ª WSOP 2026",
   },
   tr: {
     "holdem-masters-7": "7. Holdem Masters",
     "holdem-masters-8": "8. Holdem Masters",
+    "holdem-masters-9": "9. Holdem Masters",
     "wsop-2026": "57. WSOP 2026",
   },
   hi: {
     "holdem-masters-7": "7वाँ Holdem Masters",
     "holdem-masters-8": "8वाँ Holdem Masters",
+    "holdem-masters-9": "9वाँ Holdem Masters",
     "wsop-2026": "57वाँ WSOP 2026",
   },
   // ar — 브랜드를 앞에 둔다(카드 제목은 <bdi>로 격리돼 첫 강문자 방향을 따른다 → 라틴 시작 = LTR로 읽힌다).
   ar: {
     "holdem-masters-7": "Holdem Masters — النسخة 7",
     "holdem-masters-8": "Holdem Masters — النسخة 8",
+    "holdem-masters-9": "Holdem Masters — النسخة 9",
     "wsop-2026": "WSOP 2026 — النسخة 57",
   },
   es: {
     "holdem-masters-7": "7.º Holdem Masters",
     "holdem-masters-8": "8.º Holdem Masters",
+    "holdem-masters-9": "9.º Holdem Masters",
     "wsop-2026": "57.ª WSOP 2026",
   },
   "zh-hant": {
@@ -1561,6 +1570,7 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "cap-8-rosario": "CAP 第8站 羅薩里奧",
     "holdem-masters-7": "第7屆 Holdem Masters",
     "holdem-masters-8": "第8屆 Holdem Masters",
+    "holdem-masters-9": "第9屆 Holdem Masters",
     "wsop-2026": "第57屆 WSOP 2026",
     "wpt-world-championship": "WPT 世界錦標賽",
   },
@@ -1571,6 +1581,7 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "cap-8-rosario": "CAP 第8站 罗萨里奥",
     "holdem-masters-7": "第7届 Holdem Masters",
     "holdem-masters-8": "第8届 Holdem Masters",
+    "holdem-masters-9": "第9届 Holdem Masters",
     "wsop-2026": "第57届 WSOP 2026",
     "wpt-world-championship": "WPT 世界锦标赛",
   },
@@ -1836,6 +1847,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
     "亚洲最大巡回赛APT的2026年仁川站。百乐达斯城举办，总保证奖金超过40亿韩元，主赛事保证15亿韩元。",
   "holdem-masters-8":
     "第8届Holdem Masters。总奖金保证20亿韩元，为该系列历来最高，主赛事保证18亿韩元。",
+  "holdem-masters-9": "第9届Holdem Masters。总奖金保证24亿韩元（WPL主赛事20亿韩元＋迷你主赛事4亿韩元）。DAY1于10月11日至12月9日共30场，决赛12月13日。仅限邀请券参赛。",
   "appt-korea":
     "PokerStars APPT的2026年韩国站，在仁川百乐达斯城举行，主赛事保证10亿韩元。",
   "triton-jeju-2":
@@ -1934,6 +1946,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
     "亞洲最大巡迴賽APT的2026年仁川站。百樂達斯城舉辦，總保證獎金超過40億韓元，主賽事保證15億韓元。",
   "holdem-masters-8":
     "第8屆Holdem Masters。總獎金保證20億韓元，為該系列歷來最高，主賽事保證18億韓元。",
+  "holdem-masters-9": "第9屆Holdem Masters。總獎金保證24億韓元（WPL主賽事20億韓元＋迷你主賽事4億韓元）。DAY1於10月11日至12月9日共30場，決賽12月13日。僅限邀請券參賽。",
   "appt-korea":
     "PokerStars APPT的2026年韓國站，在仁川百樂達斯城舉行，主賽事保證10億韓元。",
   "triton-jeju-2":
@@ -2081,6 +2094,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
     "Parada de Incheon 2026 del Asian Poker Tour, el circuito más grande de Asia. En Paradise City, con más de 4.000 millones de KRW garantizados y 1.500 millones en el Main Event.",
   "holdem-masters-8":
     "Octava edición del Holdem Masters, la mayor de la serie hasta la fecha con 2.000 millones de KRW garantizados y 1.800 millones en el Main Event.",
+  "holdem-masters-9": "Novena edición del Holdem Masters: 2.400 millones de KRW garantizados en total (Main Event WPL 2.000 millones + Mini Main Event 400 millones), 30 flights de Day 1 del 11 de octubre al 9 de diciembre y final el 13 de diciembre. Solo con invitación.",
   "appt-korea":
     "Parada de Corea 2026 del APPT de PokerStars, en Paradise City Incheon, con 1.000 millones de KRW garantizados en el Main Event.",
   "triton-jeju-2":
@@ -2208,6 +2222,7 @@ const SCHEMA_DESC_DE: Record<string, string> = {
     "Incheon-Stop 2026 des Asian Poker Tour, der größten Tour Asiens. In der Paradise City, mit über 4 Mrd. KRW Gesamtgarantie und 1,5 Mrd. KRW im Main Event.",
   "holdem-masters-8":
     "Achte Auflage der Holdem Masters und bislang die größte der Serie: 2 Mrd. KRW garantiert, davon 1,8 Mrd. KRW im Main Event.",
+  "holdem-masters-9": "Neunte Auflage der Holdem Masters: insgesamt 2,4 Mrd. KRW garantiert (WPL Main Event 2 Mrd. KRW + Mini Main Event 400 Mio. KRW), 30 Day-1-Flights vom 11. Oktober bis 9. Dezember, Finale am 13. Dezember. Teilnahme nur mit Einladung.",
   "appt-korea":
     "Korea-Stop 2026 der PokerStars APPT in der Paradise City Incheon, mit 1 Mrd. KRW Garantie im Main Event.",
   "triton-jeju-2":
@@ -2342,6 +2357,7 @@ const SCHEMA_DESC_ID: Record<string, string> = {
   "kpc-king-july": "Festival 17 hari di LES A Casino, Pulau Jeju. Garansi ₩2 miliar untuk seluruh seri, dengan ₩1,1 miliar GTD di Main Event King Poker Cup.",
   "apt-incheon": "Seri Incheon 2026 dari Asian Poker Tour, tur terbesar di Asia. Di Paradise City, dengan garansi total lebih dari ₩4 miliar dan ₩1,5 miliar GTD di Main Event.",
   "holdem-masters-8": "Holdem Masters ke-8 dan yang terbesar sejauh ini: garansi ₩2 miliar, dengan ₩1,8 miliar GTD di Main Event.",
+  "holdem-masters-9": "Holdem Masters ke-9: garansi total ₩2,4 miliar (WPL Main Event ₩2 miliar + Mini Main Event ₩400 juta), 30 flight Day 1 pada 11 Okt–9 Des, dan Final pada 13 Des. Hanya dengan tiket undangan.",
   "appt-korea": "Seri Korea 2026 dari PokerStars APPT di Paradise City Incheon, dengan garansi ₩1 miliar di Main Event.",
   "triton-jeju-2": "Triton Super High Roller Series kedua tahun ini di Jeju: 14 turnamen high roller dengan buy-in $15.000 hingga $200.000.",
   "apt-jeju-fall": "Seri musim gugur 2026 Asian Poker Tour di Jeju: 135 event dengan garansi ₩2,2 miliar di Main Event.",
@@ -2354,6 +2370,7 @@ const SCHEMA_DESC_MS: Record<string, string> = {
   "kpc-king-july": "Festival 17 hari di LES A Casino, Pulau Jeju. Jaminan ₩2 bilion untuk keseluruhan siri, dengan ₩1.1 bilion GTD dalam Main Event King Poker Cup.",
   "apt-incheon": "Persinggahan Incheon 2026 Asian Poker Tour, jelajah terbesar di Asia. Di Paradise City, dengan jaminan keseluruhan melebihi ₩4 bilion dan ₩1.5 bilion GTD dalam Main Event.",
   "holdem-masters-8": "Holdem Masters ke-8 dan yang terbesar setakat ini: jaminan ₩2 bilion, dengan ₩1.8 bilion GTD dalam Main Event.",
+  "holdem-masters-9": "Holdem Masters ke-9: jaminan keseluruhan ₩2.4 bilion (WPL Main Event ₩2 bilion + Mini Main Event ₩400 juta), 30 flight Day 1 dari 11 Okt hingga 9 Dis, dan Final pada 13 Dis. Hanya dengan tiket jemputan.",
   "appt-korea": "Persinggahan Korea 2026 PokerStars APPT di Paradise City Incheon, dengan jaminan ₩1 bilion dalam Main Event.",
   "triton-jeju-2": "Triton Super High Roller Series kedua tahun ini di Jeju: 14 tournament high roller dengan buy-in $15,000 hingga $200,000.",
   "apt-jeju-fall": "Persinggahan musim luruh 2026 Asian Poker Tour di Jeju: 135 event dengan jaminan ₩2.2 bilion dalam Main Event.",
@@ -2366,6 +2383,7 @@ const SCHEMA_DESC_VI: Record<string, string> = {
   "kpc-king-july": "Lễ hội 17 ngày tại LES A Casino trên đảo Jeju. Bảo đảm ₩2 tỷ cho cả chuỗi, trong đó ₩1,1 tỷ GTD ở Main Event King Poker Cup.",
   "apt-incheon": "Chặng Incheon 2026 của Asian Poker Tour, tour lớn nhất châu Á. Tại Paradise City, tổng bảo đảm hơn ₩4 tỷ và ₩1,5 tỷ GTD ở Main Event.",
   "holdem-masters-8": "Holdem Masters lần thứ 8 và lớn nhất từ trước tới nay: bảo đảm ₩2 tỷ, trong đó ₩1,8 tỷ GTD ở Main Event.",
+  "holdem-masters-9": "Holdem Masters lần thứ 9: tổng bảo đảm ₩2,4 tỷ (WPL Main Event ₩2 tỷ + Mini Main Event ₩400 triệu), 30 flight Day 1 từ 11/10 đến 9/12, Final ngày 13/12. Chỉ tham gia bằng vé mời.",
   "appt-korea": "Chặng Hàn Quốc 2026 của PokerStars APPT tại Paradise City Incheon, bảo đảm ₩1 tỷ ở Main Event.",
   "triton-jeju-2": "Triton Super High Roller Series lần thứ hai trong năm tại Jeju: 14 giải high roller với buy-in từ $15.000 đến $200.000.",
   "apt-jeju-fall": "Chặng mùa thu 2026 của Asian Poker Tour tại Jeju: 135 event, bảo đảm ₩2,2 tỷ ở Main Event.",
@@ -2457,6 +2475,7 @@ const SCHEMA_DESC_PT: Record<string, string> = {
   "kpc-king-july": "Festival de 17 dias no LES A Casino, na ilha de Jeju. ₩2 bilhões garantidos na série, com ₩1,1 bilhão GTD no Main Event do King Poker Cup.",
   "apt-incheon": "Etapa de Incheon 2026 do Asian Poker Tour, o maior circuito da Ásia. No Paradise City, com mais de ₩4 bilhões garantidos no total e ₩1,5 bilhão GTD no Main Event.",
   "holdem-masters-8": "8ª edição do Holdem Masters e a maior até agora: ₩2 bilhões garantidos, com ₩1,8 bilhão GTD no Main Event.",
+  "holdem-masters-9": "9ª edição do Holdem Masters: ₩2,4 bilhões garantidos no total (WPL Main Event ₩2 bilhões + Mini Main Event ₩400 milhões), 30 flights de Day 1 de 11 de out a 9 de dez e final em 13 de dez. Participação só com convite.",
   "appt-korea": "Etapa coreana 2026 do PokerStars APPT no Paradise City Incheon, com ₩1 bilhão garantido no Main Event.",
   "triton-jeju-2": "Segunda Triton Super High Roller Series do ano em Jeju: 14 torneios high roller com buy-ins de $15.000 a $200.000.",
   "apt-jeju-fall": "Etapa de outono 2026 do Asian Poker Tour em Jeju: 135 eventos, com ₩2,2 bilhões garantidos no Main Event.",
@@ -2469,6 +2488,7 @@ const SCHEMA_DESC_TR: Record<string, string> = {
   "kpc-king-july": "Jeju Adası'ndaki LES A Casino'da 17 günlük festival. Seri genelinde ₩2 milyar garanti, King Poker Cup Main Event'inde ₩1,1 milyar GTD.",
   "apt-incheon": "Asya'nın en büyük turu Asian Poker Tour'un 2026 Incheon ayağı. Paradise City'de, toplam ₩4 milyarı aşan garanti ve Main Event'te ₩1,5 milyar GTD.",
   "holdem-masters-8": "8. Holdem Masters, serinin bugüne kadarki en büyüğü: ₩2 milyar garanti, Main Event'te ₩1,8 milyar GTD.",
+  "holdem-masters-9": "9. Holdem Masters: toplam ₩2,4 milyar garanti (WPL Main Event ₩2 milyar + Mini Main Event ₩400 milyon), 11 Eki–9 Ara arasında 30 Day 1 flight'ı ve 13 Ara'da final. Katılım yalnızca davetiyeyle.",
   "appt-korea": "PokerStars APPT'nin 2026 Kore ayağı, Paradise City Incheon'da; Main Event'te ₩1 milyar garanti.",
   "triton-jeju-2": "Yılın ikinci Jeju Triton Super High Roller Series'i: buy-in'i $15.000 ile $200.000 arasında 14 high roller turnuvası.",
   "apt-jeju-fall": "Asian Poker Tour'un 2026 sonbahar Jeju ayağı: 135 etkinlik, Main Event'te ₩2,2 milyar garanti.",
@@ -2552,11 +2572,13 @@ const PAREN_AR: Record<string, string> = {
    🔴 새 행에 schemaDescription을 달면 여기도 등재하라 — 없으면 한국어 원문이 그대로 나간다. */
 const SCHEMA_DESC_HI: Record<string, string> = {
   "holdem-masters-8": "8वाँ Holdem Masters, अब तक का सबसे बड़ा: कुल ₩200 करोड़ गारंटी, Main Event में ₩180 करोड़ GTD।",
+  "holdem-masters-9": "9वाँ Holdem Masters: कुल ₩240 करोड़ गारंटी (WPL Main Event ₩200 करोड़ + Mini Main Event ₩40 करोड़), 11 अक्टूबर से 9 दिसंबर तक 30 Day 1 फ़्लाइट और 13 दिसंबर को फ़ाइनल। सिर्फ़ निमंत्रण टिकट से प्रवेश।",
   "apt-jeju-fall": "Asian Poker Tour का 2026 का Jeju पड़ाव (शरद): 135 इवेंट, Main Event में ₩220 करोड़ गारंटी।",
   "wpt-seoul": "INSPIRE Entertainment Resort में World Poker Tour का पहला आयोजन: 45 इवेंट, Main Event में ₩100 करोड़ गारंटी।",
 };
 const SCHEMA_DESC_AR: Record<string, string> = {
   "holdem-masters-8": "النسخة الثامنة من Holdem Masters وهي الأكبر حتى الآن: ضمان إجمالي ₩2 مليار، منها ₩1.8 مليار GTD للحدث الرئيسي.",
+  "holdem-masters-9": "النسخة التاسعة من Holdem Masters: ضمان إجمالي ₩2.4 مليار (WPL Main Event ‏₩2 مليار + Mini Main Event ‏₩400 مليون)، و30 رحلة Day 1 من 11 أكتوبر إلى 9 ديسمبر، والنهائي في 13 ديسمبر. المشاركة بتذكرة دعوة فقط.",
   "apt-jeju-fall": "محطة Jeju الخريفية لعام 2026 من Asian Poker Tour: 135 حدثًا، وضمان ₩2.2 مليار للحدث الرئيسي.",
   "wpt-seoul": "أول بطولة لـ World Poker Tour في INSPIRE Entertainment Resort: 45 حدثًا، وضمان ₩1 مليار للحدث الرئيسي.",
 };
@@ -2642,6 +2664,7 @@ const NOTE_EN: Record<string, string> = {
   "ept-barcelona": "Dual festival — PokerStars Open ME €1,650 (Aug 16–22) → EPT ME €5,300 (Aug 22–29)",
   "gop-manila": "Series guarantee ₱60,000,000 · Main Event ₱30M GTD",
   "holdem-masters-8": "₩2bn GTD, the largest yet · Main Event ₩1.8bn plus five NLH deepstacks",
+  "holdem-masters-9": "₩2.4bn GTD (WPL Main Event ₩2bn + Mini Main Event ₩400M) · 30 Day 1 flights Oct 11–Dec 9 · Final Dec 13",
   "appt-korea": "Main Event Sep 10–14 — ₩1.8M buy-in · ₩1bn GTD",
   "triton-jeju-2": "14 high rollers · no satellites, referral only · $200K Invitational Sep 12–14",
   "apt-jeju-fall": "135 events · Main Event ₩2.2bn GTD · 12 APTC seats",
@@ -2712,6 +2735,7 @@ const NOTE_JA: Record<string, string> = {
   "ept-barcelona": "デュアルフェスティバル — PokerStars Open ME €1,650（8/16〜22）→ EPT ME €5,300（8/22〜29）",
   "gop-manila": "シリーズ保証₱60,000,000 · メインイベント₱30M GTD",
   "holdem-masters-8": "総額20億ウォンGTDでシリーズ史上最大 · メインイベント18億ウォン＋NLHディープスタック5種",
+  "holdem-masters-9": "総額24億ウォンGTD（WPLメインイベント20億＋ミニメインイベント4億）· DAY1は30回（10/11〜12/9）· FINAL 12/13",
   "appt-korea": "メインイベント9/10〜14 — バイイン180万ウォン · 10億ウォンGTD",
   "triton-jeju-2": "ハイローラー14種 · サテライトなし（推薦制）· $200K Invitationalは9/12〜14",
   "apt-jeju-fall": "135イベント · メインイベント22億ウォンGTD · APTCシート12席",
@@ -2797,6 +2821,7 @@ const NOTE_ZH: Record<string, string> = {
   "ept-barcelona": "双赛事节——PokerStars Open主赛€1,650（8月16〜22日）→ EPT主赛€5,300（8月22〜29日）",
   "gop-manila": "系列赛保底₱60,000,000 · 主赛事₱30M GTD",
   "holdem-masters-8": "总奖金20亿韩元GTD，创系列赛新高 · 主赛事18亿韩元＋5场NLH深筹",
+  "holdem-masters-9": "总奖金24亿韩元GTD（WPL主赛事20亿＋迷你主赛事4亿）· DAY1共30场（10/11–12/9）· 决赛12/13",
   "appt-korea": "主赛事9月10〜14日——买入180万韩元 · 10亿韩元GTD",
   "triton-jeju-2": "14场豪客赛 · 无卫星赛（推荐制）· $200K Invitational为9月12〜14日",
   "apt-jeju-fall": "135场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
@@ -2888,6 +2913,7 @@ const NOTE_HANT: Record<string, string> = {
   "ept-barcelona": "雙賽事節——PokerStars Open主賽€1,650（8月16〜22日）→ EPT主賽€5,300（8月22〜29日）",
   "gop-manila": "系列賽保底₱60,000,000 · 主賽事₱30M GTD",
   "holdem-masters-8": "總獎金20億韓元GTD，創系列賽新高 · 主賽事18億韓元＋5場NLH深籌",
+  "holdem-masters-9": "總獎金24億韓元GTD（WPL主賽事20億＋迷你主賽事4億）· DAY1共30場（10/11–12/9）· 決賽12/13",
   "appt-korea": "主賽事9月10〜14日——買入180萬韓元 · 10億韓元GTD",
   "triton-jeju-2": "14場豪客賽 · 無衛星賽（推薦制）· $200K Invitational為9月12〜14日",
   "apt-jeju-fall": "135場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
@@ -2973,6 +2999,7 @@ const NOTE_ES: Record<string, string> = {
   "ept-barcelona": "Festival doble: ME del PokerStars Open €1.650 (16–22 ago) → ME del EPT €5.300 (22–29 ago)",
   "gop-manila": "Garantía de la serie ₱60.000.000 · Main Event ₱30 millones GTD",
   "holdem-masters-8": "2.000 millones de KRW GTD, el más grande hasta ahora · Main Event 1.800 millones más cinco deepstacks de NLH",
+  "holdem-masters-9": "2.400 millones de KRW GTD (Main Event WPL 2.000 millones + Mini Main Event 400 millones) · 30 flights de Day 1 del 11 de oct al 9 de dic · final el 13 de dic",
   "appt-korea": "Main Event del 10 al 14 de sep: buy-in de 1,8 M KRW · 1.000 millones GTD",
   "triton-jeju-2": "14 high rollers · sin satélites, solo por recomendación · $200K Invitational del 12 al 14 de sep",
   "apt-jeju-fall": "135 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
@@ -3149,6 +3176,7 @@ const SCHEMA_DESC_EN: Record<string, string> = {
     "The 2026 Incheon stop of the Asian Poker Tour, Asia's largest tour. Held at Paradise City with over ₩4bn guaranteed and ₩1.5bn GTD on the Main Event.",
   "holdem-masters-8":
     "The 8th Holdem Masters — the largest in the series to date at ₩2bn guaranteed, with ₩1.8bn GTD on the Main Event.",
+  "holdem-masters-9": "The 9th Holdem Masters — ₩2.4bn guaranteed in total (WPL Main Event ₩2bn + Mini Main Event ₩400M), 30 Day 1 flights from Oct 11 to Dec 9 and the Final on Dec 13. Entry by invitation ticket only.",
   "appt-korea":
     "The 2026 Korea stop of the PokerStars APPT, at Paradise City Incheon, with ₩1bn guaranteed on the Main Event.",
   "triton-jeju-2":
@@ -3174,6 +3202,7 @@ const SCHEMA_DESC_JA: Record<string, string> = {
     "アジア最大級のツアーAPTの2026年仁川ストップ。パラダイスシティ開催で総額40億ウォン超保証、メインイベントは15億ウォンGTD。",
   "holdem-masters-8":
     "第8回ホールデムマスターズ。賞金総額20億ウォン保証でシリーズ史上最大、メインイベントは18億ウォンGTD。",
+  "holdem-masters-9": "第9回ホールデムマスターズ。賞金総額24億ウォン保証（WPLメインイベント20億ウォン＋ミニメインイベント4億ウォン）。DAY1は10月11日〜12月9日に30回、FINALは12月13日。招待券のみで参加。",
   "appt-korea":
     "PokerStars APPTの2026年韓国ストップ。パラダイスシティ仁川で開催、メインイベントは10億ウォン保証。",
   "triton-jeju-2":

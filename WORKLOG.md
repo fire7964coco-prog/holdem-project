@@ -1,3 +1,10 @@
+## 2026-10-05 (7) — `holdem-masters-9` 대회 보드 카드 신설 · MA-317·319 ACK (MB-172)
+
+- `lib/tournaments.ts`: 9회 카드(8회 형식 · 10/2~12/13 · 야자수 서울센터 · 초대권 전용 · note «총상금 24억 GTD (WPL 메인 20억 + 미니 메인 4억) · DAY1 30회 10/11~12/9 · FINAL 12/13» · blogLink `/blog/holdem-masters-7th-guide` · source = 제9회 공식 페이지 · verifiedAt 10-05). 값 정본 = 10-05 (6) 글 갱신분(같은 날 공식 페이지 + 가이드 PDF 판독).
+- `lib/tournaments-i18n.ts`: NAME_OVERRIDE 11로케일(en·de는 nameEn) · NOTE en·ja·zh·zh-hant·es · SCHEMA_DESC 13로케일. buyin·venue는 기존 등재 값(«초대권 전용»·«야자수 서울센터») 재사용이라 FIELD 추가 없음.
+- 게이트: check:tournaments-i18n 🔴 0 · check:tournament-numbers 9회 갈림 0(🪶 6건은 기존 8회 설명문) · 빌드 exit 0(74 + 629) · 빌드 HTML에서 ko·en·ja·zh-hant·ar·hi·de 보드 9회 카드 확인.
+- 우편함: MA-317(MB-168 전/후)·MA-319(MB-169 전/후) = 요청 0 ACK → MB-172에 합침.
+
 ## 2026-10-05 (6) — 마스터스 글 제9회 갱신 · zh-hant 港撲盃 과거형 · MA-315·316 ACK (MB-170 · MB-171)
 
 - `holdem-masters-7th-guide`: 제9회(10/2 새틀 개시 · 24억 GTD · DAY1 A1~A15·B1~B15 30회 · 미니 메인 4억 · 초대권 12장) 공식 페이지 + 가이드 PDF(렌더 판독)로 «제8회 진행 중» 절 전면 교체 · seoTitle 훅 유지(18억→24억) · desc·tldr·바로 답·FAQ 2·출처 · 요일 30+8개 계산 검산 · 상금표 합계 검산(20억·4억). 제8회 결과는 hall-8 미게시 → «게시 대기». `EVENT_UNTIL` 12-13 연장.

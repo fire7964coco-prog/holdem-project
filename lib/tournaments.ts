@@ -556,6 +556,35 @@ const RAW_TOURNAMENTS: Tournament[] = [
     schemaDescription:
       "제8회 홀덤 마스터스. WPL 메인이벤트 DAY3 & FINAL 상금 18억원, NLH 딥스택 5개 각 4천만원. DAY1 플라이트 28회(8/21~10/2), FINAL 10/5. 초대권 전용 참가.",
   },
+  {
+    /**
+     * 2026-10-05 신설 — 값 정본 = WPL 공식 대회 페이지 + 제9회 대회 가이드(글 `holdem-masters-7th-guide` 제9회 절 · WORKLOG 10-05 (6)).
+     * 🔴 «총상금 24억»은 공식이 그렇게 쓴다(WPL 메인 20억 + 미니 메인 4억) — 8회의 «20억» 합산 표기와 다르다.
+     * startDate = 새틀라이트 개시 10/2(8회 카드와 같은 기준) · DAY1 = WPL 메인 A1~A15·B1~B15 · 전부 10:00.
+     */
+    id: "holdem-masters-9",
+    name: "제9회 홀덤 마스터스",
+    nameEn: "9th Holdem Masters",
+    type: "domestic",
+    startDate: "2026-10-02",
+    endDate: "2026-12-13",
+    location: "한국 서울 (야자수 서울센터)",
+    city: "Seoul",
+    country: "KR",
+    venue: "야자수 서울센터",
+    buyin: "초대권 전용",
+    emoji: "👑",
+    color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
+    note: "총상금 24억 GTD (WPL 메인 20억 + 미니 메인 4억) · DAY1 30회 10/11~12/9 · FINAL 12/13",
+    highlight: true,
+    blogLink: "/blog/holdem-masters-7th-guide",
+    sourceUrl: "https://wpl.winjoygame.com/holdem-masters-9",
+    sourceTier: "A",
+    verifiedAt: "2026-10-05",
+    organizer: { name: "WeLive", url: "https://wpl.winjoygame.com" },
+    schemaDescription:
+      "제9회 홀덤 마스터스. 총상금 24억원 보장(WPL 메인이벤트 20억원 + 미니 메인이벤트 4억원). WPL 메인 DAY1 플라이트 30회(10/11~12/9), FINAL 12/13. 초대권 전용 참가.",
+  },
 
   /* ── 🇰🇷 내국인 참가 가능 축 (2026-09-03 M-082 ② · 검수장 A13 + A1) ──────────
      허브의 한국 카드는 전부 외국인 전용 카지노 베뉴(신화월드 LES A · 파라다이스시티)라 일반 한국 국적자는 참가할 수 없다.
