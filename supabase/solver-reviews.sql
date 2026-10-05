@@ -96,11 +96,24 @@ create table if not exists public.solver_review_profiles (
   constraint solver_review_profiles_hidden_reason check (avatar_hidden_reason is null or avatar_hidden_reason in ('link','abuse','ad'))
 );
 
+-- 5-A) 저장 기록 — 속도 제한은 «행 수»가 아니라 «저장 횟수»로 센다(솔버 S-037 ①, 2026-10-05).
+--    후기는 1인 1언어 1행이라 updated_at 행 수로는 같은 후기를 계속 고쳐도 1에서 멈췄다.
+--    서버가 저장에 성공할 때마다 1행 남기고, 10분 창 안의 행 수를 센다. 하루 지난 행은 저장 때 그 사람 몫만 지운다.
+create table if not exists public.solver_feedback_saves (
+  id         bigint generated always as identity primary key,
+  user_id    uuid not null references public.profiles(id) on delete cascade,
+  kind       text not null,
+  created_at timestamptz not null default now(),
+  constraint solver_feedback_saves_kind check (kind in ('review','question'))
+);
+create index if not exists solver_feedback_saves_user_idx on public.solver_feedback_saves(user_id, kind, created_at);
+
 alter table public.spot_shares             enable row level security;
 alter table public.solver_feedback         enable row level security;
 alter table public.solver_feedback_replies enable row level security;
 alter table public.solver_feedback_helpful enable row level security;
 alter table public.solver_review_profiles  enable row level security;
+alter table public.solver_feedback_saves   enable row level security;
 -- 정책 없음(의도) — 위 🔴 접근 원칙 참조.
 
 -- 6) 공개 목록 뷰 — status='public' 만 · user_id 비노출(이름·사진·로그인 수단·가입 시기만).

@@ -206,7 +206,7 @@ RLS on · 정책 0 · 쓰기는 본체 서버 코드만(09-28 규칙). 공개 �
 
 | 무엇 | 파일 |
 |---|---|
-| SQL(사장님 SQL Editor 실행 · 배포보다 먼저) | `supabase/solver-reviews.sql` — 테이블 5(spot_shares·solver_feedback·replies·helpful·solver_review_profiles) + 공개 뷰(anon 권한 회수) + Storage 공개 버킷 `review-avatars` |
+| SQL(사장님 SQL Editor 실행 · 배포보다 먼저) | `supabase/solver-reviews.sql` — 테이블 6(spot_shares·solver_feedback·replies·helpful·solver_review_profiles·saves — saves = 저장 기록 · 속도 제한 근거 · S-037 10-05 추가) + 공개 뷰(anon 권한 회수) + Storage 공개 버킷 `review-avatars` |
 | 설정(값 정본 · import 없음) | `lib/solver-feedback-config.ts` — 12로케일·경로 매핑·길이·숨김 3사유·링크 규칙·사칭 금지어·캐릭터 id |
 | 검사·저장 한 벌 | `lib/solver-feedback-server.ts` — 랜딩 액션과 앱 API가 같은 함수를 부른다 · 오류는 코드로 반환 |
 | 랜딩 서버 액션 | `app/solver-feedback/actions.ts` — 쓰기·삭제·재검토 요청·도움됐어요·닉네임·프로필 이미지(캐릭터·올리기·가져오기) |

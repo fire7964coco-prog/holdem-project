@@ -325,6 +325,13 @@ async function confirmNickname(db: SupabaseClient, userId: string): Promise<bool
   return !error;
 }
 
+/** 저장 성공 1회 = 기록 1행(속도 제한 근거) · 하루 지난 그 사람 몫은 여기서 지운다. 기록 실패가 저장을 되돌리지는 않는다. */
+async function recordSave(db: SupabaseClient, userId: string, kind: "review" | "question"): Promise<void> {
+  await db.from("solver_feedback_saves").insert({ user_id: userId, kind });
+  await db.from("solver_feedback_saves").delete().eq("user_id", userId)
+    .lt("created_at", new Date(Date.now() - 24 * 3600_000).toISOString());
+}
+
 /**
  * 후기·질문 저장 — 랜딩(서버 액션)·앱(API) 공용.
  * 후기는 1인 1언어 1개: 이미 있으면 수정. 질문은 새 행(속도 제한만).
@@ -347,6 +354,14 @@ export async function saveFeedback(args: {
       db.from("profiles").select("nickname").eq("id", user.id).maybeSingle(),
     ]);
     if (rpRes.error || profRes.error || !profRes.data) return { ok: false, error: "unavailable" };
+
+    // 속도 제한 — 이름 바꾸기보다 먼저 본다(거절된 저장이 공개 이름만 바꾸지 않게 · 솔버 S-037 ②).
+    // 행 수가 아니라 저장 기록(solver_feedback_saves)을 센다 — 같은 후기 반복 수정도 걸린다(S-037 ①).
+    const since = new Date(Date.now() - 10 * 60_000).toISOString();
+    const { count, error: cErr } = await db.from("solver_feedback_saves").select("id", { count: "exact", head: true })
+      .eq("user_id", user.id).eq("kind", value.kind).gte("created_at", since);
+    if (cErr) return { ok: false, error: "unavailable" };
+    if ((count ?? 0) >= (value.kind === "question" ? QUESTIONS_PER_10MIN : SAVES_PER_10MIN)) return { ok: false, error: "rate" };
 
     // 첫 후기 때 이름 확인(설계 §3-1) — 확인 전이면 폼이 보낸 이름으로 확정한다(같은 이름이면 그대로).
     if (!(rpRes.data as any)?.nickname_confirmed_at) {
@@ -378,13 +393,6 @@ export async function saveFeedback(args: {
     const { count: usageCount } = await db.from("trainer_attempts").select("id", { count: "exact", head: true }).eq("user_id", user.id).limit(1);
     const hasUsage = (usageCount ?? 0) > 0;
 
-    // 속도 제한
-    const since = new Date(Date.now() - 10 * 60_000).toISOString();
-    const { count, error: cErr } = await db.from("solver_feedback").select("*", { count: "exact", head: true })
-      .eq("user_id", user.id).eq("kind", value.kind).gte("updated_at", since);
-    if (cErr) return { ok: false, error: "unavailable" };
-    if ((count ?? 0) >= (value.kind === "question" ? QUESTIONS_PER_10MIN : SAVES_PER_10MIN)) return { ok: false, error: "rate" };
-
     const now = new Date().toISOString();
     const base = {
       body: value.body,
@@ -405,6 +413,7 @@ export async function saveFeedback(args: {
           .update({ ...base, has_usage: (existing as any).has_usage || hasUsage })
           .eq("id", (existing as any).id).eq("user_id", user.id);
         if (error) return { ok: false, error: error.code === "23514" ? "link" : "unavailable" };
+        await recordSave(db, user.id, value.kind);
         invalidateSolverFeedback(value.locale);
         return { ok: true, id: (existing as any).id };
       }
@@ -423,6 +432,7 @@ export async function saveFeedback(args: {
       if (error.code === "23514") return { ok: false, error: "link" };
       return { ok: false, error: "unavailable" };
     }
+    await recordSave(db, user.id, value.kind);
     invalidateSolverFeedback(value.locale);
     return { ok: true, id: (data as any).id };
   } catch {
