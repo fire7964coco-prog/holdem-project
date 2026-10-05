@@ -261,6 +261,20 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지만(자동 착수 금지): «オールインにコールしたとき» 베팅 종료 보장(pot-odds tip·outs tip · TDA 2026 Rule 17 부록 예2 멀티웨이 — 09-26 L-2d 잣대로는 OK) · probability 표 «ツーペア 2.0%»(두 홀카드 모두 페어 한정 · 전체 4.04%) · equity «エクイティは自分の手とボードから決まります»(상대 레인지 누락) · card-counting JA «「追い出される」問題は…起きない»(EN e6e6aa9b 교체 JA 미이행 · UNV).
 - 🪶 JA 고유 남김: drawing FAQ 질문 «フラッシュまであと4枚» · implied 셋 비율 7.5/8/7 세 숫자 · outs 상자 «8を超えると出しすぎ» ↔ 본문 7 · drawing 배수 지침 JA만 UNV(형제 통일 후보). JA 손질 회차에.
 
+### 2-T. 우편함 수신분 — MA-309 JA ④ 4-4 strategy 부분1 (strategy · starting-hands-chart · positions · position-play) · 판정 2026-10-05 · 회신 MB-168
+
+> JA 고유 요청 1(14건 · 대부분 先に結論·まとめ 상자의 한정 탈락)은 ✅ 10-05 (4) 정정. 근거 = 검수장 `reports/검수-ja-회차4-4-strategy-부분1-2026-10-04/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ja/holdem-*.md`. 아래 4건은 EN 같은 자리 동형 — EN 정정 → 로케일 전파는 사장님 지시로 연다(자동 착수 금지).
+
+| # | 글 | EN 자리 | 판정 | 고칠 방향 |
+|---|---|---|---|---|
+| T-1 | position-play | 표 L177 «Only the button behind — prime steal seat» (L110 동형) | 채택 — 프리플랍 CO 뒤는 BTN·SB·BB 3명 · 같은 열 UTG «8 behind»는 블라인드 포함 계산 · 스틸 맥락이라 오독 현실적 | «Only the button behind postflop» 또는 «Three behind (BTN, SB, BB)» |
+| T-2 | position-play | まとめ L297 «the SB is the worst seat to actually play (first to act every street)» | 채택 — 프리플랍 SB는 9max 8번째 · 같은 글 다른 자리는 전부 «postflop» 한정 | «(first to act on every postflop street)» |
+| T-3 | position-play | L194 «It's the one weapon OOP has that IP doesn't» | 채택(확신 낮음) — 같은 절 항목 4 돈크벳도 OOP 전용 · 형제 EN #61·PT·ES·DE OK와 갈림 | «a weapon OOP has that IP doesn't» |
+| T-4 | strategy | まとめ L243 «the hands you keep are stronger than your opponents'» | 채택 — 본문은 «on average» 한정 · 상자 단독 노출 | «… stronger than your opponents' on average» |
+
+- 🪶 통지 1(라벨 UNV/OK 유지 · 손질 때 참고): BB «closes the action»(BB 레이즈 시 반례) · 라이브 스트래들 시 행동 순서 · 비올인 쇼다운 공개 순서 한정 · 20% 참가율 상한(JA «about» 탈락) · K‑J UTG 폴드 · 리버 OOP 폴드 증가 · `/en/quiz` «against the clock»(퀴즈에 타이머 없음 · 전 로케일 동문) · chart «約2ポイント»(실측 1.8〜3.7p).
+- 🪶 형제 갈림(HQ-REPORT §4 · 각 로케일 회차): SB «usually 半額» UNV 통일 · AK «正しい» · LJ «6maxではふつうUTG».
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
