@@ -1,3 +1,11 @@
+## 2026-10-07 (3) — fr 클러스터 0-2 SERP 조사 (7레인 · docs/keyword-bank/fr-serp/)
+
+- 브리프 00-brief.md → Opus 서브 7레인 병렬(DataForSEO 2250/fr 자동완성·새 후보 볼륨·SERP 상위10·PAA + 상위 글 원문 정독 + 처방). 산출물 L-A~L-G(50~63KB) · 글별 PAA·자동완성 질문 51/51 ✅.
+- 새 볼륨(원자료 재확인): suite poker 3,600 · royal flush 1,300 · flush poker 880 · poker strategie 320 · utg poker 260 · straight poker 260 · spr poker 210.
+- 0-3 재료 10건 정리(00-brief 끝 절) — ③ fold는 L-A·L-D 일치 · ④ nuts는 L-B(도구)↔L-F(reading-the-board) 엇갈림 · 신규 ⑥ SPR · ⑦ ICM↔계산기 · ⑧ 확률↔계산기 · ⑨ mains de départ↔차트.
+- 사고 1: 레인들이 scratchpad 공유 → 초반 스크립트 덮어쓰기(원자료는 레인 접두라 무사). 다음 병렬 조사는 레인별 하위 폴더 지정.
+- 코드·글 수정 없음(문서만) → 배포·MB 없음.
+
 ## 2026-10-07 (2) — MA-347 판정·이행: ms beginners 5자리 (MB-195 · queue §2-AB)
 
 - 검수장 MS 파일럿 결과. 요청 1의 5자리(헤즈업 블라인드 · 올인 런아웃 · 9/10-max · Premium 범위 · 말레이시아 중립 한 줄) 전부 채택·이행.
