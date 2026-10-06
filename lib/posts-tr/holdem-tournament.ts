@@ -285,7 +285,7 @@ Tipik yapıda alanın en iyi %10–15'i para alır. En düşük ödül (min-cash
 
 ## Turnuva terimleri: Day 1'de duyacağın 16 kelime
 
-Masada duyacağın şeylerin çoğunu bu 16 terim karşılar: ITM, bubble, hand-for-hand, structure sheet, chip leader, short stack, shove, late reg, re-entry, satellite, PKO, Mystery Bounty, turbo, add-on, ICM ve min-cash. Turnuvalarda bunlar çoğunlukla İngilizce haliyle kullanılır. A'dan Z'ye tam liste için [poker terimleri sözlüğüne](/tr/blog/holdem-glossary) bak.
+Masada duyacağın şeylerin çoğunu bu 16 terim karşılar: ITM, bubble, hand-for-hand, structure sheet, chip leader, short stack, shove, late reg, re-entry, satellite, PKO, Mystery Bounty, turbo, add-on, ICM ve min-cash. Turnuvalarda bunlar çoğunlukla İngilizce haliyle kullanılır. Genel poker terimlerinin A'dan Z'ye aranabilir listesi için [poker terimleri sözlüğüne](/tr/glossary) bak.
 
 | Terim | Anlamı |
 |------|--------------|
@@ -333,7 +333,7 @@ Masada duyacağın şeylerin çoğunu bu 16 terim karşılar: ITM, bubble, hand-
 
 :::readnext[Okumaya devam et]
 /tr/blog/holdem-tournament-vs-cash-game | Poker turnuvası mı cash game mi? | /images/tournament-table-action.webp
-/tr/blog/holdem-glossary | Poker terimleri sözlüğü | /images/holdem-glossary-hero.webp
+/tr/blog/holdem-glossary | Pokerde rest, bop, nuts ne demek? |/images/holdem-glossary-hero.webp
 /tr/blog/holdem-blind-meaning | Small blind ve big blind nedir? | /images/holdem-blind-meaning-hero.webp
 :::
 

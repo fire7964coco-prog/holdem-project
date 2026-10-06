@@ -2,50 +2,51 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-glossary",
-  title: "Poker terimleri: Texas Hold'em masasında duyacağın her kelime ve anlamı",
-  seoTitle: "Nuts, tilt, ICM ne demek? Poker terimleri sözlüğü",
-  desc: "Masada duyduğun poker terimleri sade Türkçeyle: bahis hareketleri, pozisyonlar, eller, argo, ICM ve tilt. En çok karıştırılan ikililer de en başta.",
-  tldr: "Bu sözlük, Texas Hold'em masasında gerçekten duyacağın poker terimlerini karşına çıktıkları duruma göre gruplar: bahis hareketleri, pozisyonlar, eller ve board, oyuncu tipleri, para ve oyun formatları, masa durumları. Önce en çok karıştırılan ikililerle başla (check ile call, set ile trips, cooler ile bad beat), sonra ihtiyacın olan kategoriye geç. Derin rehberi olan terimler doğrudan o yazıya bağlanıyor.",
+  title: "Pokerde rest, bop, nuts ne demek? Texas Hold'em masasında duyacağın kelimeler ve anlamları",
+  seoTitle: "Pokerde rest, bop, nuts ne demek? Masanın dilini çöz",
+  desc: "Masada \"rest!\" diyen ne yaptı? Eski Türk masa sözleri (rest, bop, rölans, gördüm) ve Hold'em dili: check, call, nuts, set, ICM, tilt. Karışanlar en başta.",
+  tldr: "Bu rehber, Texas Hold'em masasında gerçekten duyacağın kelimeleri karşına çıktıkları duruma göre gruplar: bahis hareketleri, pozisyonlar, eller ve board, oyuncu tipleri, para ve formatlar, masa durumları. Rest, bop, rölans, gördüm, pas ve kav gibi eski Türk masa sözleri de Hold'em karşılıklarıyla burada. Önce en çok karıştırılan ikililerle başla; derin rehberi olan kelimeler doğrudan o yazıya bağlanıyor.",
   category: "glossary",
   date: "2026-10-06",
   updated: "2026-10-06",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "12 dk",
+  readTime: "13 dk",
   emoji: "📖",
   image: "/images/holdem-glossary-hero.webp",
   imageAlt: "Yeşil çuha üzerinde çipler, dealer butonu ve açık ortak kartlarla bir Texas Hold'em masası — poker dilini temsil ediyor",
   tags: [
-    "poker terimleri",
-    "poker terimleri ve anlamları",
-    "texas holdem terimleri",
-    "icm nedir",
-    "tilt nedir",
+    "pokerde bop ne demek",
+    "rölans ne demek",
+    "pokerde icm nedir",
+    "pokerde tilt nedir",
     "poker argosu",
     "pokerde nuts ne demek",
-    "pokerde kicker nedir",
   ],
   content: `
 İlk canlı oyunuma oturduğumda masa başka bir dil konuşuyor gibiydi. Biri "under the gun"daydı, bir başkası "cutoff'a 3-bet atmıştı", krupiye bana "run it twice" yapmak isteyip istemediğimi sordu, papazlarla kaybettiğimde de "bu bad beat bile değil, düpedüz cooler" dediler. Anlamış gibi kafa salladım. Anlamamıştım.
 
-Pokerin kendine ait bir sözlüğü var ve onu bilmek sana iki şey kazandırır: masada "fish" gibi görünmezsin ve sana para kazandıracak stratejiyi gerçekten takip edebilirsin. Oyunun temellerinde hâlâ yeniysen önce [Texas Hold'em kurallarına](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") göz at. Bu sözlük, Texas Hold'em masasında gerçekten geçen poker terimlerini topluyor — hepsini A'dan Z'ye dev bir listeye yığmak yerine ==g:onlarla gerçekte nasıl karşılaştığına göre== gruplanmış halde. En çok karıştırılan terimlerle başla, sonra ihtiyacın olan kategoriye geç. Bir terimin ayrıntılı rehberi varsa doğrudan oraya giden linki bulacaksın.
+Pokerin kendine ait bir sözlüğü var ve onu bilmek sana iki şey kazandırır: masada "fish" gibi görünmezsin ve sana para kazandıracak stratejiyi gerçekten takip edebilirsin. Oyunun temellerinde hâlâ yeniysen önce [Texas Hold'em kurallarına](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") göz at. Bu rehber, Texas Hold'em masasında gerçekten geçen poker terimlerini topluyor — hepsini A'dan Z'ye dev bir listeye yığmak yerine ==g:onlarla gerçekte nasıl karşılaştığına göre== gruplanmış halde. Rest, bop ve rölans gibi eski Türk masa sözlerini de Hold'em karşılıklarıyla birlikte bulacaksın. En çok karıştırılan kelimelerle başla, sonra ihtiyacın olan kategoriye geç. Bir terimin ayrıntılı rehberi varsa doğrudan oraya giden linki bulacaksın.
 
 ---
 
-### Sözlük, bir bakışta
+### Bu rehber, bir bakışta
 
 :::stripe
 6 | Kategori — karşılaştığın duruma göre gruplandı
 90+ | Sade Türkçeyle tanımlanmış terim
-8 | En çok karıştırılan ikili, önce bunlar
+7+1 | En çok karıştırılan ikili ve 3-bet sayımı, önce bunlar
+8 | Eski Türk masa sözü, Hold'em karşılığıyla
 → | Önemli terimlerden derin rehberlere link
 :::
 
+Aradığın tek bir kelimeyse ve hemen bulmak istiyorsan [A–Z poker sözlüğünde 46 terimi ara](/tr/glossary); bu sayfa ise kelimelerin masada nasıl kullanıldığını ve neyle karıştırıldığını anlatıyor.
+
 ---
 
-## En çok karıştırılan poker terimleri hangileri?
+## Pokerde en çok karıştırılan kelimeler hangileri?
 
-En çok karıştırılan poker terimleri sekiz ikilidir: check ile call, blind ile ante, set ile trips, cooler ile bad beat, value bet ile blöf, pot oranı ile implied odds, VPIP ile PFR ve 3-bet'in nasıl sayıldığı. Masada en çok kafa karışıklığını — ve en pahalı hataları — bunlar yaratır. Sadece bir avuç terimi netleştireceksen, aşağıdaki tablodan başla.
+Pokerde en çok karıştırılan kelimeler yedi ikili ve bir sayım meselesidir: check ile call, blind ile ante, set ile trips, cooler ile bad beat, value bet ile blöf, pot oranı ile implied odds, VPIP ile PFR ve 3-bet'in nasıl sayıldığı. Masada en çok kafa karışıklığını — ve en pahalı hataları — bunlar yaratır. Sadece bir avuç terimi netleştireceksen, aşağıdaki tablodan başla.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -64,11 +65,37 @@ En çok karıştırılan poker terimleri sekiz ikilidir: check ile call, blind i
 
 ---
 
-![Koyu yeşil çuha üzerinde altı kutucuklu poker terimleri haritası, her kutuda altın bir ikon — Actions, Positions, Hands, Players, Money ve Slang](/images/holdem-glossary-categories.webp "Bu sözlüğün düzenlendiği altı grup — alfabeye göre değil, içinde bulunduğun duruma göre göz at")
+## Pokerde rest, bop, rölans ne demek? Eski Türk masa terimleri
+
+Rest, önündeki paranın tamamını ortaya sürmek, yani all-in demektir. Rölans bahsi artırmak (raise), gördüm call, pas ise elden çekilmek (fold) anlamına gelir. Bop'un anlamı kaynağa göre değişir: TDK onu oyuna girmek için gereken en az miktar olarak tanımlar, Hold'em masasında ise check karşılığı olarak duyulur. Bu sözler Hold'em'den önceki klasik poker masalarından kalma; bugün çoğu masada İngilizce karşılıkları konuşulur.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Masa sözü | Kaynaktaki tanım | Hold'em'deki karşılığı | Dikkat |
+|:---|:---|:---|:---|
+| **Rest** | TDK: «Pokerde, bir oyuncunun önündeki paranın tümü» | All-in | "Rest çekmek", tüm çiplerini ortaya sürmektir. Yan pot dahil bütün kuralları [all-in kuralları rehberinde](/tr/blog/holdem-all-in-rules). |
+| **Bop / bob** | TDK: «Poker oyununda, oyuna girmek için ortaya konması gereken en az miktar» ve «İskambil oyunlarında ortadaki miktar kadar oyuna katıldığını belirten bir söz» | Masada check karşılığı olarak duyulur | Kaynaklar ayrışıyor: TDK'ya göre bir miktar ve oyuna katılma sözü, bazı kaynaklara göre bahis yokken oyunda kalmak (check işlevi). Tek ve kesin bir karşılığı yok; krupiyeye "check" demek en net yol. |
+| **Rölans** | TDK: «Konken, poker vb. oyunlarda ortaya sürülmüş olan parayı artırmak için söylenen söz» | Raise | Bazı kaynaklar rölansı «düşünmek için süre istemek» diye tanımlar; bu, TDK'ya da kelimenin Fransızca kökenine (relance) de uymuyor. |
+| **Gördüm** | Sözlükte ayrı madde yok — masa ağzı | Call | "Gördüm" diyen, önündeki bahsi aynı miktarla eşleyip elde kalır. |
+| **Pas** | TDK iki anlam verir: «Bazı iskambil oyunlarında sırası kendisine gelen oyuncunun oyuna o elde katılmayacağını belirten bir söz» ve «Bazı iskambil oyunlarında "geçiniz" anlamında bir söz» | Fold | İki anlama da gelebildiği için bu sitede tek başına "pas" yalnızca fold demektir. Bahis yokken sırayı geçmek için "check" ya da "çek" de. |
+| **Kav** | Vikipedi (Poker maddesi): «Oyun başlangıcında elde mevcut olması gereken paradır.» | Buy-in'e yakın | Birebir aynı kavram değil; masaya oturmak için gereken parayı anlatır, en yakın Hold'em karşılığı buy-in. |
+| **Kent · floş** | Floş için TDK: «Poker oyununda aynı renkten ve aynı türden beş kâğıt» | Straight · flush | Bunlar hareket değil, el adlarıdır. Hangi eli yendiklerini [poker el sıralaması rehberinde](/tr/blog/holdem-hand-rankings) gör. |
+
+</div>
+
+Bu sözleri bilmek, eski usul oynayan birini anlamana yeter. Kendi hareketini beyan ederken ise İngilizce karşılığını söylemek yanlış anlaşılma riskini en aza indirir; masadaki söylenişlerin tamamı [bahis hareketleri rehberinin](/tr/blog/holdem-betting-actions) Türkçe masa terimleri bölümünde.
+
+---
+
+![Koyu yeşil çuha üzerinde altı kutucuklu poker terimleri haritası, her kutuda altın bir ikon — Actions, Positions, Hands, Players, Money ve Slang](/images/holdem-glossary-categories.webp "Bu rehberin düzenlendiği altı grup — alfabeye göre değil, içinde bulunduğun duruma göre göz at")
 
 ## Check, call, raise ne demek? Bahis hareketleri terimleri
 
-Check, önünde bahis yokken çip koymadan sırayı geçmektir; call mevcut bahsi görmek, raise ise bahsi yükseltmektir. Fold elini bırakıp pottan çekilmek, all-in tüm çiplerini ortaya sürmektir. Bunların üstüne limp, 3-bet, c-bet, check-raise gibi terimler, sıra sende olduğunda fiziksel olarak yapabileceğin her şeyi tarif eder. İşe yeni başladıysan önce [bahis hareketleri rehberine](/tr/blog/holdem-betting-actions "thumb:/images/holdem-betting-actions-hero.webp") bak.
+Check, önünde bahis yokken çip koymadan sırayı geçmektir; call mevcut bahsi görmek, raise ise bahsi yükseltmektir. Fold elini bırakıp pottan çekilmek, all-in tüm çiplerini ortaya sürmektir. Bunların üstüne limp, 3-bet, c-bet, check-raise gibi terimler, sıra sende olduğunda fiziksel olarak yapabileceğin her şeyi tarif eder.
+
+### Pokerde call, check ve fold ne demek?
+
+En çok aranan üç kelimenin masada Türkçe söylenişleri de var. **Call**, "gördüm" diye söylenir: önündeki bahsi aynı miktarla eşlersin. **Check** için "çek" denir (bazen "bop"): bedavadır, ama yalnızca önünde açık bahis yokken. **Fold** ise "pas" ya da "çekildim" diye söylenir: kartlarını bırakıp o elden çıkarsın. Beyan kuralları ve örnekler [bahis hareketleri rehberinde](/tr/blog/holdem-betting-actions "thumb:/images/holdem-betting-actions-hero.webp").
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -125,7 +152,7 @@ Her pozisyondan hangi elleri açabileceğini görmek için [başlangıç eli tab
 
 ## Nuts, set ve trips nedir? El ve board terimleri
 
-![Yeşil çuha üzerinde altın bir dealer butonu, yüzü kapalı iki hole kart ve K♦ 7♣ 2♠ flop'unu gösteren infografik](/images/holdem-button-dealer-board.webp "Board ile hole kartların birleşerek en iyi beş kartlık elini oluşturur — poker sözlüğünün büyük kısmı tam olarak bunu anlatır")
+![Yeşil çuha üzerinde altın bir dealer butonu, yüzü kapalı iki hole kart ve K♦ 7♣ 2♠ flop'unu gösteren infografik](/images/holdem-button-dealer-board.webp "Board ile hole kartların birleşerek en iyi beş kartlık elini oluşturur — poker dilinin büyük kısmı tam olarak bunu anlatır")
 
 Nuts, o anki board'da mümkün olan en iyi eldir. Set, elindeki pocket pair'in board'daki bir kartla Üçlü yapmasıdır; trips ise tek bir hole kartının board'daki bir çiftle Üçlü yapmasıdır. Bu bölümdeki terimler kartların kendisini ve onlarla ne yaptığını anlatır: hole kartlar, ortak kartlar, kicker, draw'lar ve gutshot gibi. Street'lerin akışında yeniysen önce [oyun sırasına](/tr/blog/holdem-game-order) bak.
 
@@ -266,7 +293,7 @@ Showdown, son bahisten sonra kazananı belirlemek için ellerin açılmasıdır.
 
 ## Sıkça sorulan sorular
 
-**Q. Yeni başlayan birinin bilmesi gereken en temel poker terimleri hangileri?**
+**Q. Yeni başlayan biri masada önce hangi kelimeleri öğrenmeli?**
 
 A. Temel olanlar bahis hareketleri (check, bet, call, raise, fold, all-in), street'ler (flop, turn, river), pozisyonlar (buton, small blind, big blind, UTG) ve bir avuç el terimidir (nuts, kicker, set, top pair). Yukarıdaki "en çok karıştırılan" ikilileri öğren — özellikle check ile call ve set ile trips — ve neredeyse her masa sohbetini takip edersin.
 
@@ -306,11 +333,29 @@ A. Tilt, duyguların kararlarını yönettiği kötü oyundur ve genelde bir kay
 
 A. VPIP (Voluntarily Put money In Pot), bir oyuncunun preflop'ta oynamayı seçtiği ellerin yüzdesidir — ne kadar gevşek ya da sıkı olduğunun ölçüsü. PFR (Pre-Flop Raise), preflop'ta raise yaptığı ellerin yüzdesidir — agresyonun ölçüsü. PFR asla VPIP'ten yüksek olamaz ve ikisi arasındaki büyük fark pasif, bol call eden bir oyuncuya işaret eder.
 
+**Q. Pokerde rest ne demek?**
+
+A. Rest, all-in'in Türkçe masa adıdır: "rest" diyen oyuncu önündeki bütün çipleri ortaya sürer. Kısa stack'in hangi potu kazanabileceğini [all-in kuralları rehberinde](/tr/blog/holdem-all-in-rules) bulursun.
+
+**Q. Pokerde bop ne demek?**
+
+A. Tek bir cevabı yok. TDK bop'u hem oyuna girmek için konan en az miktar hem de oyuna katıldığını bildiren söz olarak veriyor; Hold'em masasında ise check'in Türkçe söylenişlerinden biri olarak geçiyor. Kaynakların nasıl ayrıştığı yukarıdaki eski Türk masa terimleri tablosunda.
+
+**Q. Masada terimler Türkçe mi İngilizce mi kullanılır?**
+
+A. Poker uygulamalarının çoğunda, uluslararası turnuvalarda ve salonlarda dil İngilizcedir: check, call, raise, all-in. Kendi oynadığım uluslararası turnuvalarda ve canlı masalarda da krupiyeyle konuşulan dil hep buydu. Rest, bop, rölans gibi sözler ise klasik Türk masa ağzından kalma; anlamlarını bilmek işine yarar, ama kendi hareketini beyan ederken İngilizcesini söylemek en güvenlisi.
+
+**Q. Pokerde floş ne demek?**
+
+A. Floş, flush'ın Türkçe adıdır (masada "renk" de denir): aynı türden beş kart. Hangi elleri yendiğini [poker el sıralaması rehberinde](/tr/blog/holdem-hand-rankings) görebilirsin.
+
 ---
 
 ## Sırada ne var?
 
-Bu sözlük bir harita; asıl öğrenme, bağlandığı rehberlerde. Başlamak için birkaç iyi nokta:
+Bu rehber bir harita; asıl öğrenme, bağlandığı rehberlerde. Başlamak için birkaç iyi nokta:
+
+- **Hızlı arama:** bir kelimeye saniyeler içinde bakmak için [A–Z poker sözlüğü](/tr/glossary).
 
 - **Mutlak temeller:** [Texas Hold'em nasıl oynanır](/tr/blog/texas-holdem-rules-for-beginners) ve [bahis hareketleri](/tr/blog/holdem-betting-actions).
 - **Eller:** [hangi el hangisini yener](/tr/blog/holdem-hand-rankings) ve [beraberlik kuralları](/tr/blog/holdem-tiebreak-rules).

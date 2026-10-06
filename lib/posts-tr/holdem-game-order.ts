@@ -359,7 +359,7 @@ A. Check, önünde bahis yokken bahis yapmadan sırayı geçmektir ve yalnızca 
 
 **Q. Showdown'da iki hole kartımı da kullanmak zorunda mıyım?**
 
-A. Hayır. En iyi beş kartlık eli, iki hole kart ve beş ortak kartın herhangi bir kombinasyonundan oluşturursun — hatta yalnızca birini ya da hiçbirini ("board oynamak") kullanabilirsin.
+A. Hayır. En iyi beş kartlık eli, iki hole kart ve beş ortak kartın herhangi bir kombinasyonundan oluşturursun — hatta yalnızca birini ya da hiçbirini ("board oynamak") kullanabilirsin. Kartlı örnekleri [showdown kuralları rehberinde](/tr/blog/holdem-showdown-rules) bulabilirsin.
 
 **Q. Pot oranı (pot odds) nedir?**
 

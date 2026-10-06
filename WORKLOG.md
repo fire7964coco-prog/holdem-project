@@ -1,3 +1,10 @@
+## 2026-10-06 (12) — tr SERP 보강 회차 B: 규칙 단편·용어 5편 (MB-188)
+
+- 처방 = `docs/keyword-bank/tr-serp/` L2 7-2·7-3 · L3 7-1~7-3(L3 7-4 «poker terimleri 글로 이전»은 기각 → 사장님 판단 ② 적용) · 결과·남긴 것 = 같은 폴더 00-brief «회차 B 결과».
+- 수정: holdem-tiebreak-rules(«Pokerde beraberlik:» seoTitle · Kicker nedir 블록 · split pot H2 2번째 · 보드 함정 2 H2(5-6-7-8-9 · 4444K — hand-rankings와 다른 카드) · çiftler toplanmaz · FAQ +2) · holdem-showdown-rules(«Showdown ne demek?» · showdown nedir 첫 H2 · 0/1장 사용 H2 · split pot 축소 → tiebreak · Muck nedir) · holdem-glossary(«poker terimleri / sözlük» seoTitle·H1·tags 제거 · 전통어 대응표 H2(TDK·위키 축어) · FAQ +4 · 도구 링크 2) · holdem-all-in-rules(«Rest» seoTitle · All-in (rest) nedir H2 · FAQ +4) · holdem-blind-meaning(«Small blind big blind nedir?» · küçük/büyük kör · SB vs BB H2 · FAQ +2) · 주변(game-order FAQ 링크 · tournament 링크·카드 라벨 · tr glossary dict 주석).
+- 검수: 1차 렌즈 A(교열 7 + 참고 3) · B(D 0 · §13 전건 일치 · SEO 5) · 아스트라 12(원본 결함 6 포함: 사이드팟 자격 · 재오픈 조건 · 27% equity 단서 · SB limp · opsiyon · B149 중복) → 반영. 2차 교열·룰 렌즈 7(재오픈 규칙에 베터 누락 · «beş kartlar» 등) + 아스트라 3(2건 중복 · 누적 짧은 올인 조건) → 반영. 기각 0.
+- 게이트: audit:hard tr 20편 🔴 0(tiebreak 카드 문단 19 · showdown 3 미인식 → 레인·렌즈 poker-eval 손검산 일치) · check:faq-schema 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-06 (11) — tr SERP 보강 회차 A: 고볼륨 4편 (MB-187)
 
 - 처방 = `docs/keyword-bank/tr-serp/` L1 7-A·7-B·7-C · L2 7-1 · 결과·소유 확정·남긴 것 = 같은 폴더 00-brief «회차 A 결과».

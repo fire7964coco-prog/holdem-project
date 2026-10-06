@@ -12,7 +12,9 @@
 // - seo.title: DataForSEO google_ads search_volume (location 2792 Türkiye · language tr · 2026-10-06, 1회):
 //   «poker terimleri» 260 · «icm nedir» 170 · «tilt nedir» 140 · «poker terimleri sözlüğü» 10 · «poker sözlüğü» null
 //   → 머리어 = 터키어 «Poker Terimleri»(자국어 헤드텀 우세 — ms와 반대) + «Sözlüğü A–Z».
-//   글 seoTitle(«Nuts, tilt, ICM ne demek? Poker terimleri sözlüğü»)과 다른 문장 — «icm nedir · tilt nedir» 질문형 의도는 글이 주인.
+//   🔴 사장님 10-06 확정: «poker terimleri» 머리어의 주인 = 이 도구(경쟁하면 글을 내린다). 글 holdem-glossary는 회차 B(10-06)에
+//   seoTitle·H1·tags에서 «poker terimleri / sözlük»을 빼고 «pokerde X ne demek»·전통어(rest·bop·rölans) 롱테일로 재조준했다
+//   (새 seoTitle «Pokerde rest, bop, nuts ne demek? Masanın dilini çöz»). GSC에서 두 페이지가 «poker terimleri»로 같이 잡히면 글을 내린다.
 // - hero.h1 = «Poker Terimleri Sözlüğü» — components/side-rail.tsx 좌측 레일 라벨과 축어 일치.
 
 import type { GlossaryDict } from "@/components/glossary/dict";

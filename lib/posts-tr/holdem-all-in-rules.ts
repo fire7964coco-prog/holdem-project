@@ -2,10 +2,10 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-all-in-rules",
-  title: "Texas Hold'em all-in kuralları: yan potlar, yeniden yükseltme ve showdown",
-  seoTitle: "All-in gittin ama ne kazanırsın? — All-in ve yan pot kuralları",
-  desc: "Tüm çiplerini ortaya sürdün ve krupiye çipleri iki yığına ayırıyor. Texas Hold'em all-in kuralları: table stakes, ana pot, yan pot ve showdown.",
-  tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
+  title: "Texas Hold'em all-in (rest) kuralları: yan potlar, yeniden yükseltme ve showdown",
+  seoTitle: "All-in gittin ama ne kazanırsın? Rest ve yan pot kuralları",
+  desc: "Pokerde rest, yani all-in: tüm çiplerini ortaya sürdün, krupiye çipleri iki yığına ayırıyor. Table stakes, ana pot, yan pot ve showdown kuralları örnekle.",
+  tldr: "All-in (Türkçe masa dilinde rest) gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-06",
@@ -15,6 +15,7 @@ export const POST: Post = {
   emoji: "♠",
   tags: [
     "all in kuralları poker",
+    "pokerde rest ne demek",
     "texas holdem all in",
     "yan pot poker nedir",
     "pot nasıl bölünür",
@@ -31,9 +32,11 @@ Ben o masada oturdum. Canlı bir cash oyununda ilk kez all-in gittiğimde hâlâ
 
 ==Bu rehber her durumu kapsıyor: ana pot, yan pot, kimin yeniden yükseltebileceği ve showdown sırası.== Krupiye stack'leri saymaya başlayınca donup kalma devri bitti. (Temel bahis akışı hâlâ kafanda oturmadıysa, [yeni başlayanlar için kurallar rehberi](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") her şeyi sıfırdan anlatıyor.)
 
-## All-in nedir? Texas Hold'em'de all-in gitmek ne demek?
+## All-in (rest) nedir? Pokerde rest çekmek ne demek?
 
-All-in gitmek, önünde duran tüm çipleri ortaya sürmek demektir. Bir kez sürdükten sonra daha fazla çip ekleyemezsin — ve seni kimse pas geçmeye zorlayamaz.
+All-in, Türkçe masa diliyle rest, önündeki tüm çipleri tek hamlede ortaya sürmektir. TDK sözlüğü rest'i tam bu anlamda tanımlar: «Pokerde, bir oyuncunun önündeki paranın tümü.» Texas Hold'em kurallarında ve masalarında standart yazım «all-in»dir; rest aynı hamlenin Türkçe adıdır. Sözlük ikinci anlamı da verir: «Karşı çıkış.» Günlük dildeki «rest çekmek» bu ikisini birleştirir — masadaki gibi her şeyini ortaya koyup karşısındakine açıkça karşı çıkmak.
+
+Bir kez sürdükten sonra daha fazla çip ekleyemezsin — ve seni kimse pas geçmeye zorlayamaz. Masada duyacağın diğer Türkçe sözcükler (gördüm, bop, pas) [check, call, raise, fold rehberinin](/tr/blog/holdem-betting-actions) masa terimleri bölümünde; eski Türk masa sözlerinin tamamı [masa dili rehberinde](/tr/blog/holdem-glossary), İngilizce terimlerin kısa tanımları ise [poker terimleri sözlüğünde](/tr/glossary).
 
 Temel, **table stakes** kuralıdır: sadece elin başladığında masada olan çiplerle bahis yapabilirsin. Cebinden ekstra para çıkaramaz, arkadaşından borç alamaz, saat ya da araba anahtarı ortaya koyamazsın — o film pokeridir.
 
@@ -41,15 +44,18 @@ Temel, **table stakes** kuralıdır: sadece elin başladığında masada olan ç
 
 | Terim | Ne demek |
 |------|---------|
+| Rest / rest çekmek | All-in'in Türkçe masa adı |
 | Push / Shove / Jam | All-in gitmenin İngilizce argosu |
 | Table stakes | Sadece elin başında sahip olduğunla bahis yapabilirsin |
 | Double up | Bir all-in kazanıp stack'ini ikiye katlamak |
 | Ana pot (main pot) | Herkesin — all-in oyuncu dahil — kazanabileceği pot |
-| Yan pot (side pot) | Sadece büyük stack'lerin kazanabileceği çipler; all-in oyuncu dışarıda kalır |
+| Yan pot (side pot) | Sadece büyük stack'lerin kazanabileceği çipler; all-in oyuncu kendi katkısını aşan yan potlarda hak sahibi değildir |
 
 </div>
 
 ==g:All-in olup call edildiğinde kalan tüm ortak kartları görmen garanti altındadır.== Kimse seni blöfle elden düşüremez. Kartların river'a kadar canlı kalır.
+
+Masada en sık gördüğüm karışıklık şu: biri "rest" der, karşısındaki "ben de rest" der ve ikisi de bunun bir yükseltme olduğunu sanır. Oysa stack'i küçük ya da eşit olan için bu yalnızca bir call'dur — krupiye önce iki stack'i sayar, ancak ondan sonra kimin neyi kazanabileceği belli olur.
 
 ---
 
@@ -117,7 +123,7 @@ Kural şu: ==her yan pot, bir sonraki en küçük stack'e kadarki farkı × onu 
 
 ==r:Bu, canlı masalarda en çok tartışma çıkaran all-in kuralıdır — iki oyuncunun bunu tam beş dakika tartışmasını, tüm masa beklerken izledim. İkisi de yanılıyordu.==
 
-**Kural:** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, o turda zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.
+**Kural:** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, bu turda zaten bet, call ya da raise yapmış ve son aksiyonundan bu yana toplamda tam bir yükseltmeyle karşılaşmayan oyuncular için bahsi YENİDEN açmaz.
 
 ![Pokerde all-in sonrası yeniden yükseltme kuralı — tam bir yükseltmeden az kalan kısa bir all-in, bu yüzden zaten aksiyon almış olan A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
 
@@ -137,7 +143,7 @@ A Oyuncusuna ve henüz aksiyon almamış C Oyuncusuna ne olur?
 
 | All-in miktarı | Tam yükseltme mi? | Bahsi yeniden açar mı? |
 |--------------|-------------|-----------------|
-| Tam bir yükseltmeden az | Hayır | Hayır — zaten aksiyon alanlar sadece görebilir veya pas geçebilir |
+| Tam bir yükseltmeden az (tek başına) | Hayır | Hayır — zaten aksiyon alanlar sadece görebilir veya pas geçebilir (birden fazla kısa all-in toplamı için aşağıdaki tabloya bak) |
 | Tam yükseltme veya fazlası | Evet | Evet — herkes yeniden yükseltebilir |
 
 </div>
@@ -205,13 +211,13 @@ Bahis kapandığında ve bir oyuncu all-in olduğunda, showdown'da olanlar şöy
 
 ## All-in'i yanlış gidersen ne olur? — Kaçınılması gereken 5 hata
 
-### Hata 1: All-in oyuncunun yan potu kazanabileceğini sanmak
+### Hata 1: All-in oyuncunun kendi katkısını aşan yan potu kazanabileceğini sanmak
 
-Kazanamaz. All-in oyuncu bir kez sınırlandı mı, büyük stack'lerin koyduğu her ekstra çip, üzerinde hiçbir hakkı olmayan bir pota gider.
+Kazanamaz. All-in oyuncu, katkıda bulunduğu ana pot ve yan potlarda hak sahibidir; ama kendi katkısını aşan kısımda büyük stack'lerin koyduğu her ekstra çip, üzerinde hiçbir hakkı olmayan bir pota gider.
 
 ### Hata 2: Kimin yeniden yükseltebileceği kuralını bilmemek
 
-Kısmi bir all-in, o turda **zaten aksiyon almış** oyunculara yeniden yükseltme şansı vermez — henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
+Kısmi bir all-in, o turda **zaten bet, call ya da raise yapmış** oyunculara yeniden yükseltme şansı vermez — birkaç kısa all-in toplanıp o oyuncunun son aksiyonundan bu yana en az tam bir yükseltmeye ulaşmadıkça. Henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
 
 ### Hata 3: El ortasında cepten çip eklemek
 
@@ -233,6 +239,22 @@ All-in, masadaki en güçlü hamledir. Rakipleri ya hep ya hiç kararına zorlar
 :::
 
 ## Sıkça sorulan sorular
+
+**Q. Pokerde rest çekmek ne demek?**
+
+A. Sıra sana geldiğinde bütün çiplerini tek hamlede ortaya koymak, yani all-in gitmektir. Yüksek sesle "rest" ya da "all-in" demen veya stack'ini tek seferde öne itmen yeterlidir; krupiyenin "rest"i bildiğinden emin değilsen "all-in" de. Söyledikten sonra geri alamazsın. Sözcüğün sözlük anlamı ve deyimle bağı için yukarıdaki «All-in (rest) nedir?» bölümüne bak.
+
+**Q. Reste rest ne demek?**
+
+A. Rakibin rest'ine kendi bütün çiplerinle karşılık vermektir; ne anlama geldiğini stack'ler belirler. Stack'in rakibinkinden küçük ya da eşitse bu bir all-in call'dur — eşleyebildiğin kadarını görürsün. Stack'in daha büyükse ve elde başka oyuncu kalmadıysa yine call'dur; rakibin karşılayamadığı fazlalık sana geri döner. Elde hâlâ çipi olan başka oyuncular varsa senin all-in'in bir raise sayılabilir — ama bu turda zaten bet, call ya da raise yaptıysan ve son aksiyonundan bu yana sana gelen toplam artış tam bir yükseltme değilse yeniden yükseltemezsin. Ayrıntı yukarıdaki «All-in bahsi yeniden açar mı?» bölümünde.
+
+**Q. Rest ile all-in aynı şey mi?**
+
+A. Evet, aynı hamledir: table stakes, yan pot hesabı ve showdown sırası birebir aynı işler. Fark yalnızca sözcükte — kural metinlerinde ve çoğu Texas Hold'em masasında "all-in" denir, Türkçe masa dilinde ve günlük konuşmada "rest" yaşar. İlan ederken krupiyenin net anlayacağı sözcüğü seç.
+
+**Q. Rest çekip kaybedersen ne olur?**
+
+A. Seni gören rakip daha iyi elle kazanırsa ortaya koyduğun çipleri kaybedersin; table stakes kuralı yüzünden masadakinden fazlasını asla kaybetmezsin. Rakibin stack'i seninkinden küçükse yalnızca onun eşleyebildiği kadarı gider, gerisi önünde kalır. Stack'in sıfırlanırsa cash oyununda yeniden çip alabilirsin; turnuvada elenirsin (rebuy ya da re-entry varsa ev kuralına göre). Table stakes'in tanımı yukarıdaki «All-in (rest) nedir?» bölümünde.
 
 **Q. Big blind'dan az bir miktara all-in gidilebilir mi?**
 
