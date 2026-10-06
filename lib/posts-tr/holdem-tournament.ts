@@ -2,10 +2,10 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-tournament",
-  seoTitle: "İlk turnuvana mı gireceksin? Buy-in, blind ve ICM rehberi",
+  seoTitle: "Poker turnuvası nasıl oynanır? Buy-in, blind ve ICM rehberi",
   title: "Poker turnuvası nasıl işler? Buy-in, blind seviyeleri, ICM ve ödül dağılımı",
-  desc: "Buy-in nereye gider, blind seviyeleri stack'ini neden eritir, bubble ve ICM nedir? Freezeout, re-entry, PKO, satellite farkları ve ilk Day 1 listesi.",
-  tldr: "Poker turnuvasında herkes aynı buy-in'i öder, aynı başlangıç çipini alır ve blind'lar belirli aralıklarla yükselirken tek bir oyuncu tüm çipleri toplayana kadar oynanır. Genelde alanın %10–15'i para alır. En yaygın formatlar freezeout, re-entry, PKO, satellite ve deepstack'tir.",
+  desc: "Poker turnuvası nasıl oynanır, nasıl katılınır? Buy-in, blind seviyeleri, bubble ve pokerde ICM; freezeout, re-entry, PKO, satellite farkı ve Day 1 listesi.",
+  tldr: "Poker turnuvasında herkes aynı buy-in'i öder, aynı miktarda başlangıç çipi alır ve blind'lar belirli aralıklarla yükselirken genellikle tek bir oyuncu tüm çipleri toplayana kadar oynanır. Genelde alanın %10–15'i para alır. En yaygın formatlar freezeout, re-entry, PKO, satellite ve deepstack'tir.",
   category: "tournament",
   date: "2026-10-06",
   updated: "2026-10-06",
@@ -19,7 +19,7 @@ export const POST: Post = {
     "poker turnuvası nasıl oynanır",
     "turnuva yapısı poker",
     "blind seviyeleri",
-    "ICM nedir",
+    "pokerde ICM nedir",
     "re-entry nedir",
     "freezeout turnuva",
     "satellite turnuva",
@@ -44,7 +44,8 @@ $100+$9 | tipik bir buy-in'in bölünüşü — ödül havuzu + ücret
 
 ## Poker turnuvası nasıl oynanır? 30 saniyelik cevap
 
-Poker turnuvası, herkesin aynı giriş ücretini (**buy-in**) ödediği, aynı sayıda başlangıç çipi aldığı ve tek bir oyuncu oyundaki bütün çipleri toplayana kadar süren bir yarışmadır. Blind'lar zamanla yükselir, çipi biten elenir ve ödülü bitirdiğin sıraya göre alırsın.
+> **Kısa cevap**
+> Poker turnuvası, herkesin aynı giriş ücretini (**buy-in**) ödeyip aynı miktarda başlangıç çipiyle oturduğu bir poker yarışmasıdır; bu çipler paraya çevrilmez, yalnızca oyunda kalma hakkını gösterir. Oyun genellikle tek bir oyuncu bütün çipleri toplayana kadar sürer: blind'lar belirli aralıklarla yükselir, çipi biten elenir ve ödülü elindeki çipe göre değil, bitirdiğin sıraya göre alırsın.
 
 **Tek cümleyle:** Cash game'de çiplerin gerçek paradır ve istediğin an kalkabilirsin. Freezeout turnuvada en fazla kaybın tam olarak buy-in kadardır — re-entry ve add-on bu tutarı artırır — ama çok daha büyük bir ödül havuzundan pay için oynarsın.
 
@@ -104,21 +105,35 @@ Her turnuva aynı dört aşamadan geçer: derin stack'lerle oynanan erken seviye
 Oynamaya alanın var. Spekülatif eller, set avı, ucuz flop görmek — hepsi makul. Yeni başlayanların çoğu burada fazla sıkı oynar. Blind'lar ucuz; masayı tanı.
 
 ### Aşama 2 — Orta aşama (30–60 BB)
-Ante'ler genelde devrededir. Stack baskısı başlar. Kısa stack'li oyuncular all-in sürmeye başlar. Alanın büyük kısmı burada elenir.
+Ante'ler genelde devrededir. Stack baskısı başlar. Short stack'li oyuncular all-in sürmeye başlar. Alanın büyük kısmı burada elenir.
 
 ### Aşama 3 — Bubble
-En stresli aşama. Bir eleme daha olursa kalan herkes **para alır** (ITM = In The Money, yani paraya girmek). Kısa stack'ler donup kalır. Büyük stack'ler baskı kurar. Bu noktada akıllı oyun, tek pot kazanmadan bile gerçek equity kazandırabilir.
+En stresli aşama. Bir eleme daha olursa kalan herkes **para alır** (ITM = In The Money, yani paraya girmek). Short stack'ler donup kalır. Büyük stack'ler baskı kurar. Bu noktada akıllı oyun, tek pot kazanmadan bile gerçek equity kazandırabilir.
 
 ### Aşama 4 — Final masası
 Genelde 6–9 oyuncu kalır. Her elemeyle ödüller sert biçimde artar. Burada kararları ICM yönetir — çip EV'si ile gerçek para EV'si belirgin şekilde ayrışır.
 
 ---
 
-## ICM nedir? Final masada neden her şeyi değiştirir?
+<a id="icm"></a>
 
-**ICM (Independent Chip Model)**, turnuvadaki çip stack'inin gerçek para değerini; stack boyutlarına, kalan oyunculara ve ödül yapısına göre tahmin eden matematiksel bir modeldir. Turnuvada ödül çipine göre değil bitirdiğin sıraya göre ödendiği için, stack'ini ikiye katlamak para equity'ni ikiye katlamaz — ama tüm çipini kaybetmek kalan ödül basamaklarının hepsini bir anda elinden alır: para bölgesinden önce elenirsen eline hiçbir şey geçmez, sonra elenirsen yalnızca o sıranın ödülü kalır.
+## Pokerde ICM nedir? Final masasında çiplerin para değeri
 
-Cash game'de ICM'e gerek yoktur, çünkü orada çip zaten paradır. Turnuvada ise etkisi bubble'da ve özellikle final masasında zirveye çıkar: aynı el, aynı pot odds ve aynı equity ile cash game'de rahat bir call olan karar, ödül basamakları devredeyken fold'a dönebilir.
+> **Kısa cevap**
+> ICM (Independent Chip Model — Bağımsız Çip Modeli), turnuvada çip stack'inin gerçek para değerini hesaplayan modeldir. Stack büyüklüklerine, kalan oyunculara ve ödül tablosuna bakar. Turnuvada ödül çipe göre değil bitirdiğin sıraya göre ödendiği için stack'ini ikiye katlamak para değerini ikiye katlamaz; tüm çipini kaybetmek ise kalan ödül basamaklarının hepsini bir anda elinden alır.
+
+Para bölgesinden önce elenirsen eline hiçbir şey geçmez, sonra elenirsen yalnızca o sıranın ödülü kalır. Cash game'de ICM'ye gerek yoktur, çünkü orada çip zaten paradır. Turnuvada ise etkisi bubble'da ve özellikle final masasında zirveye çıkar: aynı el, aynı pot odds ve aynı equity ile cash game'de rahat bir call olan karar, ödül basamakları devredeyken fold'a dönebilir.
+
+**Sayılarla bir örnek:** Final masasında 3 oyuncu kaldı. Ödüller 1. sıra $500, 2. sıra $300, 3. sıra $200 (toplam $1.000); masadaki çipler 5.000 / 3.000 / 2.000 (toplam 10.000).
+
+| Oyuncu | Stack | Çip payı | ICM değeri | Ödül havuzu payı |
+|:---|:---:|:---:|:---:|:---:|
+| A (chip leader) | 5.000 | %50 | $383,93 | %38,4 |
+| B | 3.000 | %30 | $327,50 | %32,8 |
+| C (short stack) | 2.000 | %20 | $288,57 | %28,9 |
+| Toplam | 10.000 | %100 | $1.000,00 | %100 |
+
+Lider çiplerin yarısına sahip olduğu hâlde ödül havuzunun ancak %38,4'ünü hak ederken short stack %20'lik çipine karşılık %28,9 değer taşır; bu yüzden lider, short stack'le all-in'e girdiğinde kaybedebileceği para değeri kazanabileceğinden fazladır.
 
 Kendi stack'lerinle denemek istersen [poker hesaplayıcısındaki ICM aracı](/tr/calculator) stack'leri ve ödül tablosunu girip her oyuncunun para equity'sini görmeni sağlar. Cash game ile turnuva arasındaki bu farkın tam açıklaması [turnuva mı cash game mi](/tr/blog/holdem-tournament-vs-cash-game) yazısında.
 
@@ -178,9 +193,10 @@ $10.000 harcamak yerine, 19 oyuncuya karşı $500'lık bir turnuvada yarışırs
 
 ---
 
-## Poker turnuvasına nasıl kayıt olunur? 3 yol
+## Poker turnuvalarına nasıl katılabilirim? 3 yol
 
-Bir turnuvaya üç yoldan girersin: salonun kayıt masasında doğrudan buy-in ödeyerek, büyük festivallerde online ön kayıtla ya da bir satellite kazanıp bilet alarak. Hangisini seçersen seç, geçerli fotoğraflı kimlik şarttır; büyük etkinliklerde bir gün önceden online kayıt olmak koltuğunu garantiler.
+> **Kısa cevap**
+> Bir poker turnuvasına üç yoldan katılırsın: salonun kayıt masasında doğrudan buy-in ödeyerek, büyük festivallerde online ön kayıtla ya da daha ucuz bir satellite kazanıp bilet alarak. Hangisini seçersen seç, geçerli fotoğraflı kimlik şarttır. Büyük etkinliklerde bir gün önceden online kayıt olmak koltuğunu garantiler; yakındaki turnuvaların tarih ve buy-in'lerini bu bölümün sonundaki takvim bağlantısından bulabilirsin.
 
 ### Seçenek A: Salonda doğrudan buy-in (en kolayı)
 1. Poker odasının kayıt masasını bul (büyük etkinliklerde turnuva masası)
@@ -214,9 +230,9 @@ Turnuva stratejisinin iskeleti stack derinliğine göre değişir: erken seviyel
 
 **Erken seviyeler (100BB+):** Sıkı, pozisyonu gözeten bir oyun oyna ve büyük çiftleri kırabilecek ellerle ucuz flop gör. Disiplinli bir [başlangıç eli tablosu](/tr/hand-chart) yeni başlayan felaketlerinin çoğunu önler. İlk saatte blöfle stack'ini yakma — Level 1'de kimse fold etmez.
 
-**Orta aşama (30–60BB):** Ante'ler her potu savaşmaya değer kılar. Geç pozisyondan daha geniş open yap, blind çal, big blind'ını daha sık savun ve masanda kimin kısa stack'te olduğunu takip etmeye başla.
+**Orta aşama (30–60BB):** Ante'ler her potu savaşmaya değer kılar. Geç pozisyondan daha geniş open yap, blind çal, big blind'ını daha sık savun ve masanda kimin short stack'te olduğunu takip etmeye başla.
 
-**Kısa stack (20BB altı):** Push-or-fold devralır — buradaki matematik büyük ölçüde çözülmüştür ve tahminle oynamak gerçek paraya mal olur. All-in sürme aralıklarını (push/fold tablolarını) öğren; tahmine bırakma.
+**Short stack (20BB altı):** Push-or-fold devralır — buradaki matematik büyük ölçüde çözülmüştür ve tahminle oynamak gerçek paraya mal olur. All-in sürme aralıklarını (push/fold tablolarını) öğren; tahmine bırakma.
 
 **Bubble ve final masası:** Hayatta kalma matematiği çip matematiğinin önüne geçer. Ödül baskısı hangi elleri oynayabileceğini değiştirir — yukarıdaki ICM bölümü bunun nedenini anlatıyor.
 
@@ -259,6 +275,8 @@ Day 1, sabah kayıt masasından gece para sınırının kırılmasına kadar sü
 </div>
 </div>
 </div>
+
+Masada bubble'ın son yarım saatinde en sık görülen tablo şudur: short stack'ler neredeyse her eli fold edip saatin işlemesini bekler, büyük stack'ler de bunu bildiği için peş peşe raise açıp blind çalar. İlk turnuvanda hangi tarafta olursan ol, bu ritmi önceden bilmek panik kararlarını azaltır.
 
 ---
 
@@ -339,6 +357,10 @@ Masada duyacağın şeylerin çoğunu bu 16 terim karşılar: ITM, bubble, hand-
 
 ## Sıkça sorulan sorular
 
+**Q. Poker turnuvası nedir?**
+
+A. Herkesin aynı buy-in'i ödeyip aynı miktarda başlangıç çipiyle oturduğu, çipi biten oyuncunun elendiği ve ödülün bitiş sırasına göre ödendiği poker yarışmasıdır; çoğu turnuva bir oyuncu tüm çipleri toplayınca biter (çok koltuklu satellite'lar ise belirli sayıda oyuncu kalınca). Nakit masadan farkı için [cash game karşılaştırmasına](/tr/blog/holdem-tournament-vs-cash-game) bak.
+
 **Q. Bir poker turnuvası ne kadar sürer?**
 
 A. Yerel salonlardaki günlük turnuvalar genelde 4–8 saat sürer. WPT şampiyonaları gibi büyük seri etkinlikleri her günün sonunda çiplerin torbalandığı birden çok oyun günüyle 4–6 gün sürer — WSOP Main Event ise Day 1 flight'larından final masasına kadar iki haftaya yakın uzar. Kayıt olurken structure sheet'i iste; blind seviyesi süresine ve başlangıç alanına göre beklenen gün uzunluğunu oradan görürsün.
@@ -362,6 +384,14 @@ A. Bulunduğun yerin mevzuatına bağlıdır. Bunu tek cümleyle çözen bir gen
 **Q. Pokerde ITM ne demek?**
 
 A. ITM = "In The Money", yani paraya girmek. Ödeme garantileyen bir bitiş sırasına ulaştın demektir. 25 sıraya ödeme yapan 200 kişilik bir turnuvada, 175 oyuncu elenip yalnızca 25 kişi kaldığında ITM olursun. Min-cash'in genelde buy-in'inin 1,5–2 katıdır.
+
+**Q. Turnuvada bubble nedir?**
+
+A. Bubble, para alan sıralara (ITM) girmeden hemen önceki aşamadır: bir eleme daha olursa kalan herkes para alır. Bubble'da elenen oyuncu normal ödül havuzundan pay alamaz (PKO'da o ana kadar topladığı bounty'ler kendisinde kalır); bu yüzden short stack'ler donup kalır, büyük stack'ler baskı kurar ve canlı turnuvalarda oyalamayı önlemek için genelde hand-for-hand oyuna geçilir.
+
+**Q. Pokerde ICM ne demek?**
+
+A. Turnuva çiplerinin para karşılığını hesaplayan model: örneğin 3 oyuncu 5.000 / 3.000 / 2.000 çiple $500 / $300 / $200'lük ödüller için oynarken, çiplerin yarısına sahip lider ödül havuzunun yalnızca %38,4'ü ($383,93) değerindedir; %20 çipli short stack ise %28,9 ($288,57) değer taşır. Bu yüzden bubble'da ve final masasında çip kazanmak, aynı miktarda çip kaybetmek kadar değerli değildir.
 
 **Q. Başlamış bir poker turnuvasına girebilir miyim?**
 

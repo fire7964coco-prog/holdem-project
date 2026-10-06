@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-06 (12) (tr SERP 보강 회차 B MB-188) · 2026-10-06 (11) (종결 절 4개 정리 · 10-01 회차 🪶 = docs/harden-brief/pt-rejudge-intake-2026-09-28.md §8-2 · 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md) (tr SERP 보강 회차 A MB-187) · 2026-10-06 (9) (tr 회차 5 MB-186) · 2026-10-06 (8) (tr 회차 4 MB-185) · 2026-10-06 (6) (tr 회차 2 MB-183) · 2026-10-06 (5) (tr 회차 1 MB-182) · 2026-10-06 (1) (§2-W ② EN-먼저 이행 MB-178) · 그 전 2026-10-05 (12) (§2-W ① 이행 MB-176 · 용어 사전 아스트라 교차 MB-177) · 이전 회차 경위는 `WORKLOG.md`. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-06 (13) (tr SERP 보강 회차 C MB-189) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(13)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 🔄 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
@@ -10,14 +10,15 @@
 | 0 | 조사 5레인(SERP 상위10·PAA·자동완성·라쿠·상위 글 원문 장단점 → 처방) = `docs/keyword-bank/tr-serp/` 00-brief + L1~L5(레인마다 §7 처방 · 커버리지 표 ✗ 0까지 보완) | ✅ 10-06 18:51 |
 | A | 고볼륨: texas-holdem-rules-for-beginners(L1 7-A) · holdem-hand-rankings(L2 7-4) · holdem-betting-actions(L1 7-C) · holdem-game-order(L1 7-B «el sırası»=족보 의도 → 개명) | ✅ 10-06 (11) · MB-187 · 결과 = 00-brief «회차 A 결과» |
 | B | 규칙 단편·용어: tiebreak · showdown · glossary(«poker terimleri» 제거 = 판단 ②) · all-in(rest) · blind | ✅ 10-06 (12) · MB-188 · 결과·🪶 = 00-brief «회차 B 결과» |
-| C | 확률·대회: holdem-tournament(ICM 3인 예시) · holdem-probability(상대 수별 승률표 = poker-eval로 계산) · holdem-pot-odds · holdem-tournament-vs-cash-game(L4) | ⏳ **다음 세션** — 🔴 probability 상대 수별 승률표는 poker-eval로 계산(경쟁 글 5장 확률 오류 다수 · L4) |
-| D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) | ⏳ |
+| C | 확률·대회: holdem-tournament · holdem-probability · holdem-pot-odds · holdem-tournament-vs-cash-game(L4) | ✅ 10-06 (13) · MB-189 · 결과·🪶 = 00-brief «회차 C 결과» |
+| D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) + 판단 ③ RTA FAQ | ⏳ **다음 세션** |
 
 - 회차마다: 처방 축어대로 수정 → audit:hard · §13 검산 → 렌즈+아스트라 병렬 → 2차 → 빌드·배포·MB·IndexNow.
 - 판단 3건(10-06 사장님): ① **«pas» = 권고대로 확정** — 단독 pas=fold · check=«çek/bop»(betting-actions «bedavaya pas» 3자리 · 용어집 동기화 · 회차 A) ② **«poker terimleri» 주인 = 도구 `/tr/glossary` 확정**(사장님 «용어는 도구로 · 경쟁하면 글을 내려라») — 회차 B에서 글 `holdem-glossary`의 seoTitle·H1·tags에서(✅ 회차 B 이행) «poker terimleri / sözlük»을 빼고 «pokerde X ne demek»·전통어(rest·bop·rölans) 롱테일로 재조준 + 도구 링크. 그 뒤 GSC에서 두 페이지가 «poker terimleri»로 같이 잡히면 글을 내린다(내릴 때 = `/tr/glossary`로 301 + tr index·hreflang·링크 정리 · 경위 기록). L3 §7의 «글로 이전» 처방은 기각. ③ **솔버 «합법인가» PAA = 합법성 축이 아님**(사장님: 무료 공식 학습 도구) — 영어 PAA «Are poker solvers legal?»의 실제 뜻은 «게임 중 실시간 사용(RTA)이 허용되나». `/tr/solver` FAQ에 «공부용은 문제없고, 온라인 게임 도중 실시간 사용은 포커 룸 약관이 금지한다»로 답한다(룸 이름·추천 없이 · 회차 D).
 - 📊 tr 색인 재측정(10-06 · `docs/gsc-tracking/index-audit-2026-10-06.json`): 26 URL 중 **색인 5**(glossary 도구 · tournaments · blind · hand-rankings · showdown) · 모름 17 · 발견·미색인 4 → 사장님 GSC 수동 색인 요청이 보강과 같이 가야 한다. ⚠ Git Bash에서 `--prefix /tr/`는 `MSYS_NO_PATHCONV=1` 필요(없으면 경로가 변환돼 0건).
 - 회차 5 «다음 = 회차 6(대회 카드)»은 사장님 «조금 나중에» — 이 보강 뒤.
-- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 A 4개 `/tr/blog/{texas-holdem-rules-for-beginners, holdem-betting-actions, holdem-game-order, holdem-hand-rankings}` + 회차 B 5개 `/tr/blog/{holdem-tiebreak-rules, holdem-showdown-rules, holdem-glossary, holdem-all-in-rules, holdem-blind-meaning}`.
+- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 A 4개 `/tr/blog/{texas-holdem-rules-for-beginners, holdem-betting-actions, holdem-game-order, holdem-hand-rankings}` + 회차 B 5개 `/tr/blog/{holdem-tiebreak-rules, holdem-showdown-rules, holdem-glossary, holdem-all-in-rules, holdem-blind-meaning}` + 회차 C 4개 `/tr/blog/{holdem-tournament, holdem-probability, holdem-pot-odds, holdem-tournament-vs-cash-game}`.
+- 📬 우편함: 검수장 MA-332~337(ID ④ 4-2 rankings · 4-3 odds · 4-4 strategy 결과 · 10-06 수신)은 아직 미판정 — 받은 MA는 다음 세션 안에 회신+등재(CLAUDE.md 세션 시작 4).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 5 ✅ 배포 (10-06 (9) · MB-186 · GTO 4편 + /tr/solver) · 다음 = 사장님 지시 대기
 

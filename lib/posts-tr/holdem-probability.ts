@@ -3,19 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-probability",
   title: "Poker olasılıkları tablosu — Texas Hold'em'de her elin gerçek ihtimali",
-  seoTitle: "Ne sıklıkla tutturursun? — Poker olasılıkları tablosu",
-  desc: "Texas Hold'em'de her elin, flop'un ve draw'ın gerçek olasılıkları; 2 ve 4 kuralı ve pot oranı tek bir poker olasılıkları tablosunda, sade dille.",
+  seoTitle: "Poker olasılıkları ve ihtimalleri: Ne sıklıkla tutturursun?",
+  desc: "Texas Hold'em'de her elin gerçek olasılığı: 5 kart ve 7 kart ihtimalleri yan yana, royal flush, set, floş draw ve el kazanma olasılıkları tek rehberde.",
   tldr: "River'a kadar elin %43,8 ihtimalle Çift, %23,5 ihtimalle İki Çift, %3,0 ihtimalle Floş ve %2,6 ihtimalle Full olur. Royal floş ise yaklaşık 31.000 elde yalnızca bir kez gelir.",
   category: "odds",
   date: "2026-10-06",
   updated: "2026-10-06",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
-  readTime: "13 dk",
+  readTime: "15 dk",
   emoji: "🎲",
   image: "/images/holdem-probability-hero.webp",
   imageAlt: "Beş ortak kartın açıldığı, çip yığınlarının dağıldığı ve oyuncuların elin ortasında olduğu bir Texas Hold'em masasına yukarıdan bakış",
-  tags: ["poker olasılıkları", "poker olasılık tablosu", "poker el olasılıkları", "set gelme olasılığı", "2 ve 4 kuralı", "pot odds", "outs nedir", "texas holdem olasılıkları"],
+  tags: ["poker olasılıkları", "poker olasılık tablosu", "poker el olasılıkları", "set gelme olasılığı", "2 ve 4 kuralı", "pot odds", "poker out nedir", "poker ihtimalleri", "poker el kazanma olasılıkları", "royal flush ihtimali", "texas holdem olasılıkları"],
   content: `
 Canlı bir oyunda ilk kez elimdeki 5'li çiftle set avına çıkıp flop'ta setimi yaptığımda, yanımdaki adam "bunun ihtimali ne ki?" diye homurdandı — ve ben cevabı gerçekten biliyordum: yaklaşık ==8,5 elde 1==. Zaten o elde call etmemin sebebi de tam olarak o tek sayıydı.
 
@@ -35,10 +35,10 @@ Poker tahmin oyunu değil. Her call, her fold ve her shove aslında ==kılık de
 
 ---
 
-## Poker el olasılıkları nedir? Her elin ihtimali tek tabloda
+## Poker el olasılıkları nedir? 5 kart ve Hold'em (7 kart) ihtimalleri tek tabloda
 
 > **Kısa cevap**
-> Bir poker elinin olasılığı kaç kart kullandığına bağlıdır. Hold'em'de yedi kartın en iyi beşi, %43,8 ihtimalle Çift ve %23,5 ihtimalle İki Çift verir. Bu river frekansları rastgele dağıtılan beş kartlık elden farklıdır; iki elin ne kadar nadir olduğunu karşılaştırmadan önce doğru sütunu seç.
+> Bir poker elinin olasılığı kaç kart kullandığına bağlıdır. Hold'em'de yedi kartın en iyi beşi %43,8 ihtimalle Çift, %23,5 ihtimalle İki Çift verir. Birçok tablo Hold'em başlığı altında 5 kartlık sayıları verir: royal flush Hold'em'de 649.740'ta 1 değil, yaklaşık 30.940'ta 1'dir. Karşılaştırmadan önce doğru sütunu seç.
 
 - **5 kart olasılığı** = rastgele dağıtılan tek bir beş kartlık elin tam olarak o el *olma* ihtimali (ders kitaplarındaki klasik sayı).
 - **Hold'em (river'a kadar)** = yedi kartın hepsini (2 kapalı kartın + 5 ortak kart) gördükten sonra o elle *bitirme* ihtimalin. Masada asıl önemli olan sayı bu.
@@ -87,6 +87,29 @@ Flop'tan önce tam olarak **1.326 farklı iki kartlık başlangıç eli** vardı
 | Aynı türden herhangi iki kart | 1/4,3 (%23,5) | Neredeyse her dört elde bir |
 
 Yani biri bir dahaki sefere "bana hiç As gelmiyor" dediğinde aşağı yukarı haklı — As çifti gibi *belirli* bir çift sana ancak ==yaklaşık her 221 elde bir== gelir. Ama **herhangi bir** el çifti her 17 elde bir gelir; set avının hayal değil gerçek bir strateji olmasının sebebi bu. Hangi çiftlerin ve aynı türden ellerin hangi pozisyondan oynamaya değdiğini [başlangıç eli tablosunda](/tr/hand-chart) pozisyon pozisyon görebilirsin.
+
+---
+
+## Poker el kazanma olasılıkları: AA, KK ve AK kaç rakibe karşı ne sıklıkla kazanır?
+
+> **Kısa cevap**
+> Herkes preflop all-in olduğunda As çifti tek bir rastgele ele karşı potun ortalama %85,2'sini alır, ama her yeni rakiple bu pay erir: beş rastgele ele karşı %49,2'ye, dolu dokuz kişilik masada (8 rakip) %34,6'ya iner. KK aynı yolu birkaç puan aşağıdan izler. AK offsuit ise heads-up'taki %65,3'ten üç rakibe karşı %38,5'e düşer.
+
+Sitenin kendi el değerlendiricisiyle yaptığımız Monte Carlo simülasyonunda (hücre başına 4.000.000 runout) ==As çifti heads-up %85,2 kazanırken beş rastgele ele karşı %49,2'ye, yani %50'nin altına düşer==. Tablodaki her sayı bir **equity**'dir: elin all-in'den sonra pottan ortalama ne kadar pay aldığı, beraberliklerde pot bölünerek sayılır. 8 rakip sütunu, dokuz kişilik dolu bir masa demektir.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| El | 1 rakip | 2 rakip | 3 rakip | 5 rakip | 8 rakip |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| AA | %85,2 | %73,4 | %63,8 | %49,2 | %34,6 |
+| KK | %82,4 | %68,8 | %58,2 | %43,0 | %29,1 |
+| AK suited (AKs) | %67,0 | %50,7 | %41,4 | %31,1 | %22,7 |
+| AK offsuit (AKo) | %65,3 | %48,2 | %38,5 | %27,9 | %19,2 |
+| 7-2 offsuit | %34,6 | %20,5 | %14,2 | %8,6 | %5,4 |
+
+</div>
+
+Bu tabloda rakipler **rastgele eller** tutar. Gerçek masada senin all-in'ine call eden oyuncular rastgele değildir; call range'leri çok daha güçlüdür, bu yüzden call alan bir elin gerçek equity'si buradaki sayılardan genellikle düşüktür. Tablodan çıkarılacak asıl sonuç şu: güçlü bir el bile her yeni rakiple pay kaybeder, büyük çiftlerle preflop'ta raise yapmanın bir sebebi de rakip sayısını azaltmaktır. En kötü başlangıç eli olarak bilinen 7-2 offsuit bile tek rastgele ele karşı potun üçte birinden fazlasını alır (%34,6). Kendi elini en fazla üç rakibe karşı denemek için [poker hesap makinesine](/tr/calculator) gir ve rakibi «Rastgele el» yap.
 
 ---
 
@@ -139,10 +162,10 @@ Klasik durum: flop'ta **floş draw'ı** (dokuz out) yakaladın. ==River'a kadar 
 
 ---
 
-## Poker olasılıkları nasıl hesaplanır? Out saymak ve 2 ve 4 kuralı
+## Pokerde out nedir? Out sayarak poker olasılıkları nasıl hesaplanır?
 
 > **Kısa cevap**
-> 2 ve 4 kuralı bir draw'ın tamamlanma yüzdesini tahmin eder: tek kart kaldıysa out sayısının iki katını, turn ve river birlikte kaldıysa dört katını al. İki kartlık tahmin, bir flop call'unu ancak iki kartı görmek için tekrar ödeme gerekmiyorsa fiyatlayabilir. Bu bir kısayoldur, kesin equity değildir.
+> Pokerde out, gelirse elini büyük ihtimalle kazanan ele çeviren, henüz açılmamış karttır. Flop'ta aynı türden dört kartın varsa 9 out'un vardır: river'a kadar %35,0, turn boş geçerse yalnızca river'da %19,6 ihtimalle tamamlarsın. Hızlı tahmin için 2 ve 4 kuralı yeter: iki kart gelecekse out × 4, tek kart kaldıysa out × 2. Bu bir kısayoldur, kesin equity değildir.
 
 :::steps
 Out'larını say | Elini tamamlayan görünmeyen kartlar (floş draw'ı = 9)
@@ -158,12 +181,31 @@ Kısayol bu kadar: temiz out'lar → göreceğin kart sayısına göre çarpan �
 
 ---
 
-<a id="pot-odds"></a>
-
-## Pot oranı nedir? Olasılığını call ya da fold kararına çevirmek
+## Oran (2:1) ile olasılık (%33) arasındaki fark nedir?
 
 > **Kısa cevap**
-> Pot oranı (pot odds) bir call'u başa baş hedefine çevirir: call miktarını, call eklendikten sonraki pota böl. Bu fiyatı, call'un gerçekten satın aldığı kartlar boyunca kazanma ihtimalinle karşılaştır. İki kartlık floş rakamı, arkasından yeni bir bahis gelebilecekken sadece turn için ödemeyi haklı çıkaramaz; gelecekteki kazançlar ayrı tahmin ister.
+> Oran (odds), ıskalamaların isabetlere bölümüdür; olasılık ise isabetlerin bütün denemelere bölümü. 2:1, iki ıskaya karşı bir isabet demektir: üç denemede bir, yani %33,3. Çevirme formülü tek satırdır: olasılık = 1 ÷ (oran + 1). Bu yüzden 9:1 "9'da 1" değil, 10'da 1 demektir (%10); iki ifadeyi karıştırmak en yaygın hesap hatasıdır.
+
+| Oran (aleyhte) | Hesap | Olasılık | Bu yazıdaki örnek |
+|:---|:---|:---:|:---|
+| 2:1 | 1 ÷ (2 + 1) | %33,3 | 3'te 1 |
+| 3:1 | 1 ÷ (3 + 1) | %25 | Pot oranı örneği: $150'lık pota $50 call |
+| 4:1 | 1 ÷ (4 + 1) | %20 | 5'te 1 |
+| 7,5:1 | 1 ÷ (7,5 + 1) | %11,8 | Flop'ta set (8,5'te 1) |
+| 9:1 | 1 ÷ (9 + 1) | %10 | 10'da 1 |
+
+Ters yön de aynı mantıkla çalışır: oran = (100 − yüzde) ÷ yüzde. %20 için (100 − 20) ÷ 20 = 4, yani 4:1. Masada pot oranı çoğunlukla "3'e 1" gibi oranla, draw ihtimali ise yüzdeyle söylenir; karşılaştırmadan önce ikisini aynı birime çevir.
+
+---
+
+<a id="pot-odds"></a>
+
+## Olasılığı call ya da fold kararına nasıl çevirirsin?
+
+> **Kısa cevap**
+> Olasılığı karara çevirmek için onu pot oranıyla karşılaştırırsın: call miktarını, call eklendikten sonraki pota bölersen başa baş için gereken equity'yi bulursun. Kazanma ihtimalin bunu geçiyorsa call kârlıdır, geçmiyorsa fold. Yalnız ihtimali, call'un gerçekten satın aldığı kartlarla ölç: arkadan yeni bir bahis gelebilecekken iki kartlık floş rakamı tek bir turn kartı için ödemeyi haklı çıkarmaz.
+
+Pot oranının tanımı, oran-yüzde kısayolu ve bahis büyüklüğüne göre hızlı tablo [pot odds (pot oranı) nedir](/tr/blog/holdem-pot-odds) yazısında; burada yalnızca olasılığı karara bağlıyoruz.
 
 ![Pot oranı infografiği — $100'lık pot ve $25 call, 25 ÷ 125 yani %20 equity gerekir](/images/holdem-probability-pot-odds.webp "$100'lık pota $25 call: başa baş için 25 ÷ 125 = %20 equity gerekir")
 
@@ -177,14 +219,14 @@ Senin equity'n | 9 temiz out'lu floş draw'ı ≈ river'a kadar %35 — ==iki== 
 Karar | İki kart da gelecekse: %35 > %25 → açıkça kârlı bir ==g:call==
 :::
 
-Bütün sayıların karşılığını aldığın an bu — ama **sayıyı, parasını ödediğin sokakla eşleştir**. İki kart da geliyorsa (all-in'sin ya da turn check'le geçiyor), temiz bir draw'ın **%35**'i **%25**'lik fiyatı geçer ve eli çoğu zaman kaybetsen bile call uzun vadede para kazandırır. Rakibin turn'de yine ateş edecekse bu call sana yalnızca turn kartını alır — flop'tan bu ==9 ÷ 47 = %19,1== eder, fiyatın *altında* — ve draw'ın aradaki farkı kapatmak için implied odds'a, yani tutturduktan sonraki sokaklarda kazanacağın paraya ihtiyacı olur. ×4 sayısını tek kartlık bir kararda harcamak, yeni başlayanların bir draw'ı abartmasının en yaygın yoludur. Yöntemin tamamı ve bahis büyüklüğüne göre hızlı tablo için [pot oranı nasıl hesaplanır](/tr/blog/holdem-pot-odds) yazısına bak.
+Bütün sayıların karşılığını aldığın an bu — ama **sayıyı, parasını ödediğin sokakla eşleştir**. İki kart da geliyorsa (all-in'sin ya da turn check'le geçiyor), temiz bir draw'ın **%35**'i **%25**'lik fiyatı geçer ve eli çoğu zaman kaybetsen bile call uzun vadede para kazandırır. Rakibin turn'de yine ateş edecekse bu call sana yalnızca turn kartını alır — flop'tan bu ==9 ÷ 47 = %19,1== eder, fiyatın *altında* — ve draw'ın aradaki farkı kapatmak için implied odds'a, yani tutturduktan sonraki sokaklarda kazanacağın paraya ihtiyacı olur. ×4 sayısını tek kartlık bir kararda harcamak, yeni başlayanların bir draw'ı abartmasının en yaygın yoludur.
 
 ---
 
-## Royal floş ne kadar nadir? (Ve sıralı floş)
+## Royal flush ihtimali nedir? Royal floş ve sıralı floş ne kadar nadir?
 
 > **Kısa cevap**
-> Royal floş rastgele yedi kartlık Hold'em ellerinde kabaca 30.940'ta bir gelir; beş kartlık dağıtımdan çok daha sık. Royal olmayan bir sıralı floş river'a kadar yaklaşık 3.590'da birdir — daha az nadir ama yine olağanüstü. İkisi de belirli bir draw'dan gelen ihtimalini anlatmaz: kapalı kartlar ve flop belli olduğunda hesap o kartlara bağlı, koşullu hâle gelir.
+> Royal flush (royal floş) ihtimali Hold'em'de river'a kadar kabaca 30.940'ta birdir; beş kartlık dağıtımdaki 649.740'ta birden çok daha sık. Royal olmayan bir sıralı floş river'a kadar yaklaşık 3.590'da birdir — daha az nadir ama yine olağanüstü. İkisi de belirli bir draw'dan gelen ihtimalini anlatmaz: kapalı kartlar ve flop belli olduğunda hesap o kartlara bağlı, koşullu hâle gelir.
 
 ![Kupa royal floş infografiği — 10♥ J♥ Q♥ board'unda eldeki A♥ K♥ ile tamamlanan kupa A-K-Q-J-10](/images/holdem-probability-royal-flush.webp "Kupa royal floş: pokerin en nadir eli, river'a kadar yaklaşık 30.940'ta bir")
 
@@ -238,9 +280,17 @@ A. Kare Hold'em'de river'a kadar yaklaşık 595'te 1 gelir (%0,168), dağıtıla
 
 A. Hold'em'de river'a kadar floşu yaklaşık %3,0 (33'te 1), kenti %4,6 (22'de 1), full'ü %2,6 (39'da 1) ihtimalle yaparsın. Yani full aslında floştan, floş da kentten daha nadirdir — el sıralamasının onları dizdiği sırayla birebir aynı.
 
+**Q. Pokerde 5 kart ve 7 kart olasılıkları neden farklı?**
+
+A. Çünkü ikisi farklı soruyu cevaplar. 5 kart olasılığı, rastgele dağıtılan tek bir beş kartlık elin o el olma ihtimalidir. Hold'em'de ise yedi kartın (2 kapalı kart + 5 ortak kart) en iyi beşini seçersin; seçenek arttıkça güçlü eller sıklaşır. Royal floş bu yüzden 649.740'ta 1'den yaklaşık 30.940'ta 1'e çıkar, Yüksek Kart ise %50,1'den %17,4'e düşer.
+
 **Q. River'a kadar floş tamamlama olasılığı nedir?**
 
 A. Flop'ta floş draw'ı (dokuz out) yakaladıysan river'a kadar yaklaşık %35 ihtimalle tamamlarsın — üçte birden iyi. Tek kartta (turn'den river'a) kabaca %19,6'ya düşer.
+
+**Q. Flop'ta floş draw'ı gelme olasılığı nedir?**
+
+A. Aynı türden iki kapalı kartın varken flop'ta senin türünden tam iki kart gelme, yani dört kartlık floş draw'ı yakalama olasılığı C(11,2) × C(39,1) ÷ C(50,3) = 2.145 ÷ 19.600 ≈ %10,9'dur. Bu kabaca 9,1 flop'ta 1 eder, oran olarak 8,1:1. Flop'ta hazır floş ise yalnızca %0,84'tür.
 
 **Q. Flop'ta set gelme olasılığı nedir?**
 
@@ -258,9 +308,13 @@ A. Özel olarak As çifti için 221'de 1 (%0,45). Ama herhangi bir el çifti ço
 
 A. 2 ve 4 kuralı (bazen "4-2 kuralı" da denir) draw olasılığını tahmin eder: flop'ta turn ve river birlikte için out sayını 4'le, turn'de yalnızca river için 2'yle çarp. Dokuz out ×4 ile iki kartta %36 verir, kesin değer %35,0; ×2 river kartı için %18 verir, kesin değer %19,6. Fiyat yakınsa kesin tabloya bak ve iki kartlık rakamı ancak iki kartı ek bahis olmadan göreceğin durumlar için sakla.
 
-**Q. Pot oranı nasıl hesaplanır?**
+**Q. Poker ihtimalleri nasıl hesaplanır?**
 
-A. Call etmen gereken miktarı, call'undan sonraki toplam pota böl: $150'lık pota $50 call etmek 50 ÷ 200 = %25 eder; gereken equity budur. Bu sayfa karşılaştırmanın diğer yarısını verir — draw'ının gerçekte ne sıklıkla tamamlandığını. Fiyat tarafı [pot oranı rehberinde — oranlar, bahis büyüklüğü kısayolları ve pahalı hatalar](/tr/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") anlatılıyor.
+A. Önce out'larını say; hızlı tahmin için 2 ve 4 kuralını kullan (iki kart: out × 4, tek kart: out × 2). Kesin hesap ıskalama ihtimalinden yapılır: flop'ta görmediğin 47 kart vardır, yani flop'tan river'a iki kartta tutturma = 1 − (47 − out)/47 × (46 − out)/46. Tek kartta flop'tan turn'e out ÷ 47, turn'den river'a out ÷ 46 olur. 9 out için 1 − 38/47 × 37/46 = %35,0; 9 ÷ 47 = %19,1; 9 ÷ 46 = %19,6. İki somut el arasındaki equity için [poker hesap makinesini](/tr/calculator) kullan.
+
+**Q. Olasılığı pot oranıyla nasıl karşılaştırırım?**
+
+A. Önce fiyatı bul: call etmen gereken miktarı, call'undan sonraki toplam pota böl. $150'lık pota $50 call etmek 50 ÷ 200 = %25 eder; gereken equity budur. Sonra draw'ının tamamlanma olasılığını bu eşikle karşılaştır — ama draw tamamlanınca bile kaybedebileceğini ve iki kartlık oranın ancak turn'de ek bahis ödemeden river'ı görürsen geçerli olduğunu unutma. Bu sayfa karşılaştırmanın diğer yarısını verir — draw'ının gerçekte ne sıklıkla tamamlandığını. Fiyat tarafı [pot oranı rehberinde — oranlar, bahis büyüklüğü kısayolları ve pahalı hatalar](/tr/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") anlatılıyor.
 
 **Q. Set over set olasılığı nedir?**
 
@@ -272,7 +326,7 @@ A. Çift, ardından İki Çift. Her oyuncu beş ortak kartı paylaştığı içi
 
 **Q. Pokerde en iyi el ne sıklıkla kazanır?**
 
-A. River'dan önce sandığından daha az. En iyi başlangıç eli olan As çifti bile rastgele bir ele karşı heads-up yalnızca yaklaşık %85 kazanır, dolu bir masaya karşı çok daha az. River'da en iyi beş kart tanım gereği kazanır; sürprizler daha önce, hazır bir el canlı bir draw'a yenildiğinde yaşanır.
+A. River'dan önce sandığından daha az. En iyi başlangıç eli olan As çifti bile rastgele bir ele karşı heads-up yalnızca yaklaşık %85 kazanır, dolu bir masaya karşı çok daha az (sekiz rastgele rakibe karşı %34,6). River'da en iyi beş kart tanım gereği kazanır; sürprizler daha önce, hazır bir el canlı bir draw'a yenildiğinde yaşanır.
 
 **Q. Pokerde flop'u ne sıklıkla tutturursun?**
 
@@ -281,6 +335,10 @@ A. Eşleşmemiş iki kapalı kartla flop'ta en az birini yaklaşık %32 ihtimall
 **Q. Nuts'a sahip olma olasılığı nedir?**
 
 A. Tek bir sayı yok — nuts (belirli bir board'daki mümkün olan en iyi el) her board'da değişir. Kuru, eşlenmemiş bir board'da nuts en yüksek set olabilir; bağlantılı bir board'da kent ya da floş olabilir. Beceri bir olasılık rakamını ezberlemek değil; hangi elin nuts *olduğunu* okumak ve bir rakibin onu tutma ihtimalini tartmaktır.
+
+**Q. Poker şans mı?**
+
+A. Tek bir elde ya da bir gecede şans büyük rol oynar: heads-up all-in'de %85,2 equity'ye sahip As çifti bile potun ortalama yaklaşık %15'ini rakibe bırakır. Ama aynı kararlar binlerce el boyunca tekrarlandıkça kartların dağılımı dengelenir ve fark, olasılığı fiyatla doğru karşılaştıran oyuncunun kararlarından gelir. Kuralları ve oyunun akışını sıfırdan görmek için [Texas Hold'em kuralları rehberine](/tr/blog/texas-holdem-rules-for-beginners) bak.
 
 ---
 

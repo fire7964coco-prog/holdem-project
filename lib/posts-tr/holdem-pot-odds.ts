@@ -3,19 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-pot-odds",
   title: "Pot odds nedir? Pokerde pot oranını 10 saniyede bulmanın yolu",
-  seoTitle: "Bu call gerçekten kârlı mı? — Pot odds (pot oranı) nedir",
-  desc: "Umutla call etmeyi bırak. Pot odds (pot oranı) nedir, 10 saniyede nasıl bulunur: oran-yüzde kısayolu, bahis boyutu tablosu ve implied odds'un yeri.",
+  seoTitle: "Pot odds nedir? Pot oranlarıyla call kararı 10 saniyede",
+  desc: "Umutla call etmeyi bırak. Pot odds (pot oranları) nedir, formülü ne, 10 saniyede nasıl bulunur: bahis boyutu tablosu, 4 ve 2 kuralı ve implied odds.",
   tldr: "Pot odds, yani pot oranı, call edeceğin miktarın call'undan sonraki toplam pota bölünmesiyle bulunur. $150'lık bir pota $50 call edersen 50 ÷ 200 = %25 eder; yani call'un kârlı olması için en az %25 equity'ye ihtiyacın var.",
   category: "odds",
   date: "2026-10-06",
   updated: "2026-10-06",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
-  readTime: "12 dk",
+  readTime: "15 dk",
   emoji: "🧮",
   image: "/images/holdem-pot-odds-hero.webp",
   imageAlt: "Yeşil çuhada çiplerini ortadaki pota iten bir oyuncunun eli — pot oranı kararının verildiği an",
-  tags: ["pot odds nedir", "pot oranı nedir", "pot odds poker", "pot odds tablosu", "implied odds nedir", "pot odds ve equity", "4 ve 2 kuralı", "call için gereken equity"],
+  tags: ["pot odds nedir", "pot oranı nedir", "pot odds formülü", "pot oranları", "pot odds poker", "pot odds tablosu", "implied odds nedir", "pot odds ve equity", "4 ve 2 kuralı", "pot odds ve beklenen değer", "pot odds alıştırması", "call için gereken equity"],
   content: `
 Pokerdeki en pahalı kelime "umut"tur. İlk yılımda turn bahislerini, floş draw'ım river'da *belki* gelir diye call edip durdum ve bu yüzden sürekli çip kaybettim. Sonunda kafamda şimşek çaktığı gece, $150'lık bir pota $50'lık bir call'du — bir kez olsun hesabı yaptım, başa baş için sadece %25'e ihtiyacım olduğunu gördüm ve o günden sonra hiçbir call'a eskisi gibi bakmadım.
 
@@ -30,7 +30,7 @@ Draw'larının arkasındaki sayılar [poker olasılıkları ve olasılık tablos
 :::stripe
 %25 | Yarım pot bahse karşı gereken equity
 %33 | Pot büyüklüğünde bahse karşı gereken equity
-call ÷ (pot + call) | Formülün tamamı
+call ÷ (pot + call) | Formülün tamamı (pot = bahis dahil ortadaki para)
 :::
 
 ---
@@ -45,13 +45,13 @@ Diyelim pot $150 ve senin $50 call etmen gerekiyor. Sana ==$50'lık bir risk iç
 
 ---
 
-## Pot oranı nasıl bulunur? Adım adım
+## Pot odds formülü nedir? Adım adım pot oranı bulma
 
 > **Kısa cevap**
-> Önce son potu bul: karşılaştığın bahis ve kendi call'un dahil. Sonra call'unu bu toplama böl. Çıkan sonuç başa baş equity yüzdesidir. Potun zamanlamasını tutarlı tut: mevcut potun içinde zaten sayılmış parayı ikinci kez ekleme.
+> Formül: call ÷ (bahisten önceki pot + rakibin bahsi + senin call'un), kısaca call ÷ (ortadaki para + call). Sonucu yüzdeye çevir ve elinin equity'siyle karşılaştır; equity bu yüzdeden büyükse call kârlıdır. Örnek: $100'lük pota $50 bahis gelirse 50 ÷ 200 = %25. Pot oranını hep bahisten sonraki potla hesapla: $100'lük pota $20 bahis gelirse ortada $120 vardır, yani 120'ye 20 = 6'ya 1 (5'e 1 değil); gereken equity 20 ÷ 140 = %14,3.
 
 :::steps
-Son potu topla | Mevcut pot + bahis + senin call'un. Örnek: $100 pot + $50 bahis + senin $50 call'un = $200
+Son potu topla | Bahisten önceki pot + bahis + senin call'un. Örnek: $100 pot + $50 bahis + senin $50 call'un = $200
 Call'unu son pota böl | $50 ÷ $200 = 0,25
 Gereken equity'n bu | Kârlı call için zamanın en az %25'inde kazanman gerekir
 Gerçek equity'nle karşılaştır | 9 temiz out'lu floş draw'ı, önünde iki kart varken ve başka bahis yoksa ≈ %35 tutar → %35, %25'i geçer → ==g:call==
@@ -90,7 +90,7 @@ Mantık sezgiseldir: pot call'u ne kadar gölgede bırakırsa, call'u haklı ç�
 ## Call için ne kadar equity gerekir?
 
 > **Kısa cevap**
-> Yarım pot bahsi call etmek için %25, pot büyüklüğündeki bahis için %33, potun iki katı bahis için %40 equity gerekir. Hedefi belirleyen, bahsin dolar tutarı değil pota göre büyüklüğüdür. Önce bu hedefi bul, sonra elini sana bu fiyatı teklif eden rakibin range'ine karşı değerlendir.
+> Yarım pot bahsi call etmek için %25, pot büyüklüğündeki bahis için %33, potun iki katı bahis için %40 equity gerekir. Çeyrek pot bahsi ise %16,7 ister (0,25 ÷ 1,5) — bazı İngilizce özet tablolarındaki %20 yanlıştır. Hedefi belirleyen, bahsin dolar tutarı değil pota göre büyüklüğüdür. Önce bu hedefi bul, sonra elini sana bu fiyatı teklif eden rakibin range'ine karşı değerlendir.
 
 ![Son potu pot, bahis ve senin call'un olarak üç çubuğa bölen görsel — yarım pot bahis %25, pot büyüklüğünde bahis %33, 2× pot bahis %40 equity ister](/images/holdem-pot-odds-required-equity.webp "Gereken equity tamamen karşılaştığın bahsin büyüklüğüne bağlıdır")
 
@@ -117,7 +117,7 @@ Devasa bir **2× pot overbet bile sadece %40 equity ister**. Kârlı call için 
 ## Pot odds tablosu: hangi draw hangi bahsi karşılar?
 
 > **Kısa cevap**
-> Bir draw'ın fiyatı karşılayıp karşılamadığı hem temiz out sayısına hem de bu call'un sana kaç kart aldırdığına bağlıdır. Floş draw'ının iki kartlık şansı, tek kartlık şansından çok daha yüksektir. Gerçek karara uyan sütunu kullan; çift ya da floş yapmayı garantili kazanç sanma.
+> Bir draw'ın fiyatı karşılayıp karşılamadığı hem temiz out sayısına hem de bu call'la kaç kart göreceğine bağlıdır. Floş draw'ının iki kartlık şansı, tek kartlık şansından çok daha yüksektir. Gerçek karara uyan sütunu kullan; çift ya da floş yapmayı garantili kazanç sanma.
 
 Tabloyu kullanmadan önce **out**'larını say. Altı out'lu iki overcard satırı, yapacağın herhangi bir çiftin kazandığını varsayar; sana çift yaptırsa bile rakibin olası ellerine karşı yine kaybettiren kartları hesaptan düş.
 
@@ -152,6 +152,27 @@ Implied odds | Tutturursan sonraki sokaklarda kazanmayı beklediğin *ekstra* ç
 **Pot odds ile equity** karşılaştırması kararın çekirdeğidir: equity'n pot oranını geçiyorsa call et. **Implied odds** ise fiyatı kıl payı kaçıran draw'lar için hakemdir. Floş draw'ın %25'e ihtiyaç duyuyor ama river kartında sadece %19,6'ya sahipse, tutturduğunda aradaki farkı kapatacak kadar ekstra bahis alabileceksen yine de call edebilirsin. Flop'ta bir draw'la kârlı call yapabilmenin ve derin stack'lerin draw'ları neden daha değerli kıldığının sebebi budur.
 
 Madalyonun karanlık yüzü **reverse implied odds**'tur — elini tutturup yine de kaybettiğinde *kaptıracağın* çipler (floşun gelir, ama board eşlenir ve birinde full vardır). İkinci en iyi draw'lar sessizce para eritir; [nut floş draw'ının küçük bir floş draw'ından çok daha değerli olmasının](/tr/hand-chart) sebebi de bu.
+
+---
+
+## Pot odds ve beklenen değer (EV) nasıl birlikte kullanılır?
+
+> **Kısa cevap**
+> EV = (kazanma olasılığı × kazanacağın pot) − (kaybetme olasılığı × call tutarı). Kazanacağın pot, ortada zaten duran paradır: rakibin bahsi dahil, kendi call'un hariç. Formül pot bölünmeyeceğini ve sonradan bahis gelmeyeceğini varsayar; split ihtimali varsa EV = equity × (ortadaki para + call) − call kullan. EV sıfırın üstündeyse call kazandırır, altındaysa fold et. EV'nin sıfır olduğu kazanma olasılığı, pot oranının verdiği gereken equity'dir.
+
+Pot büyüklüğünde bir bahisle başlayalım: pot $50'ydi, rakip $50 bahis yaptı. Ortada $100 var ve senin call'un $50. Kazanırsan ortadaki $100'ü alırsın; kaybedersen call ettiğin $50 gider.
+
+| Kazanma olasılığı | Hesap | EV | Karar |
+|:---|:---|:---:|:---:|
+| %30 | 0,30 × 100 − 0,70 × 50 = 30 − 35 | −$5 | Fold |
+| %33,3 (⅓) | ⅓ × 100 − ⅔ × 50 = 33,3 − 33,3 | $0 | Başa baş |
+| %40 | 0,40 × 100 − 0,60 × 50 = 40 − 30 | +$10 | Call |
+
+Başa baş noktası %33,3 — formülle bulduğun 50 ÷ (100 + 50) ile aynı sayı, yani bahis tablosundaki pot büyüklüğü satırı. Bu tesadüf değil: formülün paydası (ortadaki para + senin call'un), EV'deki iki parçanın toplamıdır.
+
+Yarım pot bahiste de aynı mantık işler. Pot $100, rakip $50 bahis yaptı: ortada $150 var, call'un $50. Rakip bu bahisle all-in olduysa floş draw'ın iki kartı da görür ve %35 tutar: 0,35 × 150 − 0,65 × 50 = 52,5 − 32,5 = **+$20**, call. Turn'de yeni bir bahis gelecekse ve call sana yalnızca turn kartını gösteriyorsa şansın %19,1'dir: 0,191 × 150 − 0,809 × 50 = 28,65 − 40,45 = **−$11,80**; doğrudan fiyat fold der, aradaki farkı ancak implied odds kapatabilir.
+
+Masada bu hesabı her seferinde yapmana gerek yok — gereken equity'yi bulman aynı cevabı verir. EV hesabını oynadığın elleri sonradan incelerken ya da sınırdaki kararlarda kullan; rakamları [pot odds ve equity hesaplayıcımızla](/tr/calculator) da doğrulayabilirsin.
 
 ---
 
@@ -195,6 +216,27 @@ Turn 3♠ — boş kart. Pot $200 ve rakip $200 ile all-in gidiyor — pot büy�
 
 ---
 
+## Pot odds alıştırması: 5 soruda kendini test et
+
+> **Kısa cevap**
+> Aşağıdaki beş soru, bu yazıdaki iki tabloyu gerçek kararlara çevirmen için hazırlandı. Her soruda önce gereken equity'yi bul: call ÷ (bahisten önceki pot + rakibin bahsi + senin call'un). Draw varsa out'larından şansını çıkar ve bu call'la kaç kart göreceğine dikkat et. Cevaplara bakmadan önce kendi sayını yaz; hepsi kafadan 10 saniyede çözülür.
+
+1. Pot $60, rakip $20 bahis yapıyor. Pot sana kaça bir veriyor ve call için ne kadar equity gerekir?
+2. Pot $80, rakip $60 bahis yapıyor. Gereken equity kaç?
+3. Pot $100, rakip $200 ile overbet yapıyor. Gereken equity kaç?
+4. Flop'ta temiz 8 out'lu açık uçlu kent draw'ın var. Pot $100, tek rakibin son $50'siyle all-in. Call mı, fold mu?
+5. Turn'de temiz 4 out'lu gutshot'ın var. Pot $90, rakip $30 bahis yapıyor. Call mı, fold mu?
+
+| Soru | Hesap | Cevap |
+|:---:|:---|:---|
+| 1 | 20 ÷ (60 + 20 + 20) = 20 ÷ 100; oran 80'e 20 | 4:1 · %20 (⅓ pot) |
+| 2 | 60 ÷ (80 + 60 + 60) = 60 ÷ 200 | %30 (¾ pot) |
+| 3 | 200 ÷ (100 + 200 + 200) = 200 ÷ 500 | %40 (2× pot) |
+| 4 | Gereken 50 ÷ 200 = %25; all-in olduğu için iki kart: %31,5 (8 × 4 ≈ %32) | ==g:Call== |
+| 5 | Gereken 30 ÷ 150 = %20; tek kart: %8,7 (4 × 2 ≈ %8) | ==r:Fold== (farkı ancak büyük implied odds kapatır) |
+
+---
+
 :::readnext[Okumaya devam et]
 /tr/blog/holdem-probability | Poker olasılıkları ve olasılık tablosu | /images/holdem-probability-hero.webp
 /tr/blog/holdem-tournament-vs-cash-game | Turnuva mı cash oyunu mu? | /images/holdem-tournament-vs-cash-hero.webp
@@ -205,6 +247,10 @@ Turn 3♠ — boş kart. Pot $200 ve rakip $200 ile all-in gidiyor — pot büy�
 **Q. Pot odds hızlıca nasıl bulunur?**
 
 A. Call etmen gereken miktarı, call'undan *sonraki* toplam pota böl. $150'lık bir pota $50 call etmek 50 ÷ 200 = %25 eder — ihtiyacın olan equity budur. Kazanma şansın, yalnızca bu call'un görmene izin verdiği kartlar üzerinden sayıldığında bunu geçiyorsa call et.
+
+**Q. Pot odds formülü nedir?**
+
+A. Gereken equity = call ÷ (ortadaki para + call); ortadaki para, rakibin bahsi dahil pottur. $80'lik pota $40 bahis gelirse ortadaki para $120, call'un $40 olur: 40 ÷ (120 + 40) = 40 ÷ 160 = %25. Oranı ise ortadaki parayı call'a bölerek bulursun: 120'ye 40, yani 3:1. Potu her zaman bahis yapıldıktan sonra say.
 
 **Q. Pot odds'ta kendi call'unu pota katıyor musun?**
 
@@ -221,6 +267,10 @@ A. Ne kadar yüksekse o kadar iyi — "5:1 almak" (sadece %16,7'ye ihtiyaç) har
 **Q. Pot odds orandan yüzdeye nasıl çevrilir?**
 
 A. X:1 oran, yüzde olarak 1 ÷ (X + 1) olur. Yani 3:1 = 1 ÷ 4 = %25; 4:1 = 1 ÷ 5 = %20. Kazanma şansınla karşılaştıracağın şey yüzdedir.
+
+**Q. Pot oranları ile olasılık aynı şey mi?**
+
+A. Hayır. Oran, ödülü riskle karşılaştırır (2:1 = 1 birim riske 2 birim ödül). Pot oranını olasılık = 1 ÷ (oran + 1) ile call için *gereken* equity'ye, yani başa baş eşiğine çevirirsin: 2:1 = 1 ÷ 3 = %33,3. Sonra bu eşiği elinin equity'siyle (beraberliklerdeki payın dahil) karşılaştırırsın. Dikkat: 9:1 "9'da 1" değil, 10'da 1 demektir (%10); 9'da 1 %11,1 olurdu.
 
 **Q. Pot odds ile implied odds arasındaki fark ne?**
 

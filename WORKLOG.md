@@ -1,3 +1,10 @@
+## 2026-10-06 (13) — tr SERP 보강 회차 C: 확률·대회 4편 (MB-189)
+
+- 처방 = `docs/keyword-bank/tr-serp/L4-odds-tournament.md` 7-1~7-4 · 결과·남긴 것 = 같은 폴더 00-brief «회차 C 결과».
+- 수정: holdem-tournament(«Poker turnuvası nasıl oynanır?» seoTitle · Pokerde ICM nedir + 3인 ICM 표 · katılabilirim · FAQ +3) · holdem-probability(«ihtimalleri» · 5/7장 H2 · 상대 수별 승률표 = evaluate7 몬테카를로 직접 계산 · Pokerde out nedir · 오즈↔확률 H2 · FAQ +4) · holdem-pot-odds(«Pot oranlarıyla» · 공식 H2 · EV H2 · 연습 5문항 · FAQ +2) · holdem-tournament-vs-cash-game(«Poker» 앞 seoTitle · fiş→çip · Cash game nedir · 질문형 H2 92% · ICM → tournament#icm).
+- 검수: 1차 렌즈 A(교열 ~30) · B(수치 오류 0 · 지적 4) · 아스트라(수치 전부 통과 · 정의·범위 지적 13 · 원본 결함 3 포함) → 36항목 반영. 2차 렌즈 3 + 아스트라 2(무조건 call · 승률=equity 동일시) → 반영. 기각 = 영어 용어 아포스트로피 일괄 제거.
+- 게이트: audit:hard tr 20편 🔴 0(probability·pot-odds 카드 문단 미인식 → 렌즈·아스트라 손 검산) · check:faq-schema tr 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-06 (12) — tr SERP 보강 회차 B: 규칙 단편·용어 5편 (MB-188)
 
 - 처방 = `docs/keyword-bank/tr-serp/` L2 7-2·7-3 · L3 7-1~7-3(L3 7-4 «poker terimleri 글로 이전»은 기각 → 사장님 판단 ② 적용) · 결과·남긴 것 = 같은 폴더 00-brief «회차 B 결과».
