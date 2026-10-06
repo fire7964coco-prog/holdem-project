@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-cooler",
   title: "Was ist ein Cooler beim Poker? Der unvermeidbare Verlust – und warum es kein Bad Beat ist",
   seoTitle: "Was ist ein Cooler beim Poker? Die Hand ohne Ausweg",
-  desc: "Ein Cooler ist, wenn deine Monsterhand auf eine größere trifft und Folden nie eine Option war – warum es kein Bad Beat ist, mit den klassischen Beispielen.",
+  desc: "Ein Cooler ist, wenn deine Monsterhand auf eine größere trifft und Folden nie eine Option war – warum es streng genommen kein Bad Beat ist, mit Beispielen.",
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du so gut wie nie korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Im engeren Sinn, den dieser Guide verwendet, lagst du schon beim Reingehen hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
@@ -71,7 +71,7 @@ Der sauberste Weg, sie auseinanderzuhalten:
 
 </div>
 
-Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4:1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Siebenen und stackst gegen ein Set aus einem größeren Paar ab. Ab dem Flop warst du der Underdog, und ein geflopptes Set foldet man so gut wie nie. Dieselben Karten, entgegengesetzte Geschichten. Zu wissen, was gerade passiert ist, sagt dir, ob du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") oder es einfach abschütteln solltest.
+Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4:1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Siebenen und stackst gegen ein Set aus einem größeren Paar ab. Ab dem Flop warst du der Underdog, und ein geflopptes Set foldet man so gut wie nie. Dieselben Karten, entgegengesetzte Geschichten. Beides ist Pech, kein Fehler – prüfenswert ist, ob dein Play wirklich standhält; tut es das nicht, solltest du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), statt es einfach abzuschütteln.
 
 ---
 
@@ -140,7 +140,7 @@ Es gibt einen sauberen Lackmustest, und ehrliche Spieler nutzen ihn nach jedem g
 Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn **nein**, hast du falsch gespielt – und das ist ein Leak zum Fixen, kein Pech. Wenn **ja** – und es hält auch stand, wenn du diese Ranges und diesen Preis tatsächlich durchrechnest (viele falsche Calls fühlen sich jedes Mal richtig an) –, war es Pech: im engeren Sinn ein Cooler, wenn zwei starke Hände kollidiert sind und du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest. Ein zum passenden Preis gecallter Draw, der nicht ankommt, ist keins von beiden – einfach Varianz.
 :::
 
-Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler“ einen Call beinhaltet, bei dem du dir nicht sicher warst, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist – statt jeden Verlust unter „Pech“ abzulegen – ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
+Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler“ einen Call beinhaltet, der bei Ranges und Preis nicht standhält, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist – statt jeden Verlust unter „Pech“ abzulegen – ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
 
 ---
 
@@ -210,10 +210,10 @@ A. Nicht wegen des Coolers selbst – der sagt nichts über die Qualität deines
 ## Die 3 Dinge zum Merken
 
 1. **Ein Cooler ist ein unvermeidbarer Verlust mit einer Hand, die zu stark zum Folden ist** – im engeren Sinn lagst du hinten, als das Geld reinging, es gab keinen Suckout, und auch ein guter Spieler an deiner Stelle hätte einen großen Pot verloren.
-2. **Streng definiert ist es das Gegenteil eines Bad Beat.** Ein Bad Beat ist, vorne zu liegen und ausgedrawt zu werden; ein Cooler ist, beim Reingehen hinten zu liegen und nur eine kleine Chance zu haben, noch aufzuholen. Zu wissen, welcher zugeschlagen hat, sagt dir, ob es etwas zu fixen gibt.
+2. **Streng definiert ist es das Gegenteil eines Bad Beat.** Ein Bad Beat ist, vorne zu liegen und ausgedrawt zu werden; ein Cooler ist, beim Reingehen hinten zu liegen und nur eine kleine Chance zu haben, noch aufzuholen. Beides ist eher Pech als ein Fehler – ob es etwas zu fixen gibt, hängt davon ab, ob dein Play standgehalten hat (nächster Punkt).
 3. **Sei ehrlich über den Unterschied zwischen einem Cooler und einem Fehler.** Wenn das Play mit denselben Informationen auch bei Ranges und Preis standhält – nicht nur aus Überzeugung –, schüttel es ab. Wenn nicht, war es kein Cooler – es war ein Leak in Verkleidung.
 
-Die besten Spieler verlieren genau so viele Cooler wie alle anderen; sie lassen sie nur keinen zusätzlichen Schaden anrichten. Verbuche es als Varianz, schütze deine nächsten paar Entscheidungen vor Tilt und geh zurück dazu, [den Tisch auszuspielen](/de/blog/holdem-fish). Das Deck kühlt jeden irgendwann ab – Gewinnen ist das, was du in all den Händen tust, die keine Cooler sind.
+Auch die besten Spieler verlieren etwa so viele Cooler wie alle anderen – abgesehen von der seltenen zweitbesten Hand, die sie doch weglegen können; sie lassen sie nur keinen zusätzlichen Schaden anrichten. Verbuche es als Varianz, schütze deine nächsten paar Entscheidungen vor Tilt und geh zurück dazu, [den Tisch auszuspielen](/de/blog/holdem-fish). Das Deck kühlt jeden irgendwann ab – Gewinnen ist das, was du in all den Händen tust, die keine Cooler sind.
 
 ---
 

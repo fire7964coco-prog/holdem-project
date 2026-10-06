@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -271,7 +271,7 @@ A. Dua jawaban, tergantung pertanyaannya. Small blind adalah kursi terburuk seca
 
 **Q. Apakah small blind termasuk early position?**
 
-A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan di meja tiga orang atau lebih, begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — saat menghadapi raise, default modern dari small blind adalah 3-bet atau fold, nyaris tak pernah flat-call; saat di-fold ke Anda, raise hampir setiap kali.
+A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan di meja tiga orang atau lebih, begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — saat menghadapi raise, default modern dari small blind adalah 3-bet atau fold, nyaris tak pernah flat-call; saat di-fold ke Anda, biasanya raise.
 
 **Q. Lebih baik limp atau raise dari UTG?**
 
@@ -279,7 +279,7 @@ A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan 
 
 **Q. Seberapa lebar saya harus open dari UTG vs button?**
 
-A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — pair kuat, AK/AQ, dan suited broadway terbaik. Dari button, sekitar ~43% profit karena aksi terakhir yang dijamin mengompensasi kartu lebih lemah. Di 6-max, UTG melebar ke sekitar ~17%, bermain seperti lojack full-ring.
+A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — intinya pair kuat, AK/AQ, dan suited broadway terbaik, dilengkapi pair menengah dan suited ace teratas. Dari button, sekitar ~43% profit karena aksi terakhir yang dijamin mengompensasi kartu lebih lemah. Di 6-max, UTG melebar ke sekitar ~17%, bermain seperti lojack full-ring.
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 
@@ -300,7 +300,7 @@ A. Ketika Anda masuk ke pot yang sudah di-raise, sebagian besar ya — default m
 5. **Raise atau fold under the gun.** Open-limp UTG menggabungkan kursi preflop terburuk dengan lini terlemah.
 6. **6-max memadatkan peta.** UTG 6-max bermain seperti lojack full-ring (~17%) — kalibrasi ulang saat Anda berpindah format.
 
-Untuk setiap nama kursi dan peta meja lengkap, lihat [panduan nama kursi dan posisi poker](/id/blog/holdem-positions). Untuk tangan pasti mana yang mengisi tiap range, gunakan [starting hands chart menurut posisi](/id/blog/holdem-starting-hands-chart). Dan untuk kenapa kursi "berdiskon" merugikan Anda paling banyak, [panduan small blind dan big blind](/id/blog/holdem-blind-meaning) membahas matematika taruhan paksa secara detail.
+Untuk setiap nama kursi dan peta meja lengkap, lihat [panduan nama kursi dan posisi poker](/id/blog/holdem-positions). Untuk tangan pasti mana yang mengisi tiap range, gunakan [starting hands chart menurut posisi](/id/blog/holdem-starting-hands-chart). Dan untuk kenapa kursi-kursi "berdiskon" merugikan Anda paling banyak, [panduan small blind dan big blind](/id/blog/holdem-blind-meaning) membahas matematika taruhan paksa secara detail.
 
 ---
 
@@ -320,7 +320,7 @@ Untuk setiap nama kursi dan peta meja lengkap, lihat [panduan nama kursi dan pos
   <a href="/id/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Strategi Small Blind & Big Blind</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa kursi berdiskon paling sulit untuk menghasilkan profit</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa kursi-kursi berdiskon paling sulit untuk menghasilkan profit</div>
   </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament</div>

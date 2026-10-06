@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila board berpasangan dengan As.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-04",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Kedudukan kicker dalam gambaran besar [susunan kad poker](/ms/blog/holdem-hand-r
 
 ## Apa Itu Kicker dalam Poker?
 
-**Kicker ialah kad tertinggi dalam tangan lima kad anda yang bukan sebahagian daripada kombinasi tangan anda — ia menentukan pemenang apabila dua pemain memegang tangan yang sama nilainya.** Ia juga dipanggil "kad sampingan" (side card). Poker sentiasa permainan lima kad (lima kad terbaik anda daripada tujuh dalam Hold'em), jadi sebaik sahaja pair atau trips anda terkunci, tempat yang berbaki diisi oleh kicker.
+**Kicker ialah kad tertinggi dalam tangan lima kad anda yang bukan sebahagian daripada kombinasi tangan anda — ia menentukan pemenang apabila dua pemain memegang tangan yang sama nilainya.** Ia juga dipanggil "kad sampingan" (side card). Dalam Hold'em, tangan sentiasa lima kad (lima kad terbaik anda daripada tujuh), jadi sebaik sahaja pair atau trips anda terkunci, tempat yang berbaki diisi oleh kicker.
 
 Idea utamanya: kicker ==tidak pernah mengalahkan tangan yang berkedudukan lebih tinggi.== Sepasang K dengan kicker 2 masih menghancurkan sepasang 10 dengan kicker As — kedudukan tangan dahulu, kicker hanya sebagai pemecah seri. Kicker hanya penting apabila ==r:nilai tangan betul-betul sama==: pair lawan pair yang sama, trips lawan trips yang sama.
 
@@ -180,7 +180,7 @@ A. Ya — two pair menggunakan satu kicker. Jika anda memegang K♥ Q♦ dan law
 
 **Q. Adakah kicker mesti berada dalam tangan anda?**
 
-A. Tidak. Kicker boleh jadi kad komuniti. Poker sentiasa membentuk lima kad terbaik daripada tujuh, jadi jika kad sampingan tertinggi ialah kad board yang mengatasi hole card kedua-dua pemain, kad itu menjadi kicker yang dikongsi oleh mereka berdua dan kad seterusnya yang menentukan. Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.
+A. Tidak. Kicker boleh jadi kad komuniti. Dalam Hold'em, tangan anda sentiasa lima kad terbaik daripada tujuh, jadi jika kad sampingan tertinggi ialah kad board yang mengatasi hole card kedua-dua pemain, kad itu menjadi kicker yang dikongsi oleh mereka berdua dan kad seterusnya yang menentukan. Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 

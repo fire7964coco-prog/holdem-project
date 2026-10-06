@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -208,7 +208,7 @@ A. Não — no heads-up, quando o adversário está all-in não há mais rodadas
 
 **Q. Como as odds implícitas funcionam no set mining?**
 
-A. Você flopa um set com um par na mão só 11,8% das vezes (cerca de 7,5 para 1 contra), então precisa de um pagamento grande nas vezes que acerta. O empate teórico é um pagamento total (o pote mais o que você ganha depois) de mais ou menos 7,5× o seu call, mas a diretriz prática é ter stacks de 15–20× o seu call — o colchão extra cobre as vezes que você erra, não recebe ação, ou perde com um set.
+A. Você flopa um set com um par na mão só 11,8% das vezes (cerca de 7,5 para 1 contra), então precisa de um pagamento grande nas vezes que acerta. O empate teórico é um pagamento total (o pote mais o que você ganha depois) de mais ou menos 7,5× o seu call, mas a diretriz prática é ter stacks de 15–20× o seu call — o colchão extra cobre as vezes que você acerta mas não recebe ação, ou perde com um set (as vezes que você erra já estão embutidas nos 7,5×).
 
 **Q. Você tem odds implícitas com um flush draw?**
 

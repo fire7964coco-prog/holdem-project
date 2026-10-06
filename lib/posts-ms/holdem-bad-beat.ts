@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "Apa Itu Bad Beat dalam Poker? Bila Jadi Favourite Pun Tak Cukup",
   seoTitle: "Peluang 80% tetapi kalah? — Apa Itu Bad Beat dalam Poker",
-  desc: "Favourite 80% tetapi kalah? Itu bad beat. Ketahui bezanya dengan cooler, cara bad beat jackpot berfungsi, dan kenapa ia sebenarnya petanda baik untuk anda.",
+  desc: "Favourite 80% tetapi kalah? Itu bad beat. Ketahui bezanya dengan cooler, cara bad beat jackpot berfungsi, dan kenapa ia biasanya petanda baik untuk anda.",
   tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
   updated: "2026-10-06",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "💔",
@@ -29,14 +29,14 @@ Yang sampai hari ini masih terasa pedih: saya memegang pocket aces, masuk all-in
 Di hadapan ketika masuk | Di mana anda berdiri pada saat itu, bukan bagaimana ia berakhir
 80%+ | Sebesar mana favourite yang biasanya diperlukan
 Suckout | Kad bertuah yang menterbalikkan keputusan
-Diam-diam baik | Maknanya untuk keuntungan jangka panjang anda
+Biasanya petanda baik | Maknanya untuk keuntungan jangka panjang anda
 :::
 
 ---
 
 ## Apa Itu Bad Beat dalam Poker?
 
-**Bad beat ialah kekalahan dalam satu tangan walaupun anda favourite statistik yang kuat ketika cip masuk, kerana lawan mendapat kad yang tipis peluangnya untuk memintas anda.** Anda memasukkan wang dengan "betul", di hadapan dari segi matematik — biasanya itulah permainan yang tepat — dan dek hanya mengeluarkan satu-satunya runout (turutan kad yang keluar) yang mengalahkan anda. Kekalahan itu bukan salah anda; itu variance pada tahap paling kejamnya.
+**Bad beat ialah kekalahan dalam satu tangan walaupun anda favourite statistik yang kuat ketika cip masuk, kerana lawan mendapat kad yang tipis peluangnya untuk memintas anda.** Anda memasukkan wang dengan "betul", di hadapan dari segi matematik — biasanya itulah permainan yang tepat — dan dek mengeluarkan salah satu runout (turutan kad yang keluar) yang mengalahkan anda. Kekalahan itu bukan salah anda; itu variance pada tahap paling kejamnya.
 
 Di luar poker, orang kadang-kadang memakai "bad beat" untuk apa-apa kekalahan yang terasa tidak adil — tetapi dalam poker maksudnya lebih sempit dan lebih tepat.
 
@@ -146,7 +146,7 @@ Sekarang kebenaran yang mengubah bad beat daripada pencetus tilt (bermain ikut e
 
 Fikirkan apa yang diperlukan oleh bad beat: lawan yang memasukkan wang ketika *di belakang*, sebagai underdog dari segi matematik, dan bernasib baik. Kebanyakan masa, itu pemain yang membuat **keputusan yang merugikan** — tepat lawan yang anda mahukan. Jika tiada sesiapa di meja anda pernah membuat call yang merugikan itu, maknanya semua orang fold tangan lemah mereka dengan betul — permainan yang jauh lebih sukar dikalahkan. Seperti kata satu pepatah kejurulatihan yang terkenal, suckout daripada pemain lemah ialah *hadiah*: itulah harga tiket masuk untuk mendapatkan cip mereka pada empat kali yang lain.
 
-Dalam sampel yang cukup besar, nasib akan menyamaratakan dirinya di sekitar jangkaan anda. Jika andalah yang masuk dengan betul, anda akan menerima lebih banyak beat daripada yang anda berikan — itulah sisi lain semua pot yang anda menangi sebagai favourite. Yang menentukan keputusan jangka panjang anda ialah kualiti keputusan anda. **Masuk wang dengan betul lalu kalah tetap satu kemenangan** dalam setiap aspek yang penting dari masa ke masa. Kelebihan itulah yang berganda merentasi beribu-ribu tangan; satu beat hanyalah bunyi bising di sekelilingnya.
+Dalam sampel yang cukup besar, nasib akan menyamaratakan dirinya di sekitar jangkaan anda. Jika andalah yang masuk dengan betul, anda akan menerima lebih banyak beat daripada yang anda berikan — itulah sisi lain semua pot yang anda menangi sebagai favourite. Yang menentukan keputusan jangka panjang anda ialah kualiti keputusan anda. **Masuk wang dengan betul lalu kalah tetap satu keputusan yang menang** dari masa ke masa — asalkan memasukkan wang itu memang betul (saiz bet yang buruk atau spot ICM masih boleh menjadikannya kesilapan, seperti yang diterangkan dalam FAQ di bawah). Kelebihan itulah yang berganda merentasi beribu-ribu tangan; satu beat hanyalah bunyi bising di sekelilingnya.
 
 ---
 

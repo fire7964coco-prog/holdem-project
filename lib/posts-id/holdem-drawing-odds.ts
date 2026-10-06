@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -155,7 +155,7 @@ Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw 
 
 Satu perbedaan krusial yang rutin dikacaukan halaman teratas: sebuah **set** adalah pocket pair plus satu kartu board yang cocok (11,8%), sedangkan **trips** adalah satu kartu hole *unpaired* yang di-pair-kan board dua kali (1,35%). Three of a kind yang sama di atas kertas, peluang dan playability yang jauh berbeda — set tersamar, trips terlihat jelas. Jangan biarkan siapa pun bilang keduanya bentuk yang sama.
 
-Angka straight flush adalah yang pantas dibingkai: dengan suited connector di rentang tengah umumnya ada **empat** flop yang membentuknya (satu rangkaian di jenis Anda — connector pinggir seperti A-K atau 3-2 punya lebih sedikit), jadi 4 ÷ 19.600 ≈ 1 dari 4.900. Itulah mengapa straight flush yang di-flop jadi cerita yang diceritakan orang selama satu dekade.
+Angka straight flush adalah yang pantas dibingkai: dengan suited connector dari 54s sampai JTs ada tepat **empat** flop yang membentuknya (satu rangkaian tiga kartu di jenis Anda untuk setiap straight yang bisa memuat tangan itu; yang di pinggir punya lebih sedikit — misalnya QJs tiga, KQs dua, A2s satu), jadi 4 ÷ 19.600 ≈ 1 dari 4.900. Itulah mengapa straight flush yang di-flop jadi cerita yang diceritakan orang selama satu dekade.
 
 Angka full house menghitung setiap cara flop memberi Anda full house dengan pocket pair — termasuk flop yang muncul sebagai trips dari rank lain di atas pair Anda — itulah mengapa terbaca 0,98% bukan ~0,73% yang lebih sempit yang dikutip beberapa tabel untuk "set plus board pair" saja.
 

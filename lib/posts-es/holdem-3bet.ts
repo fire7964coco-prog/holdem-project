@@ -260,7 +260,7 @@ A. Haz 3-bet cuando tengas una premium, cuando el que abre sea amplio y débil, 
 
 **Q. ¿Qué es un 3-bet light?**
 
-A. Un 3-bet light (o 3-bet de farol) es resubir con una mano que no esperas que sea la mejor, con la esperanza de foldear fuera al que abre. Los mejores 3-bets light tienen bloqueadores y equity de respaldo — ases del mismo palo de la rueda como A5s bloquean los ases y el as-rey de tu rival y aun así ligan colores y escaleras, así que ganan incluso cuando te pagan.
+A. Un 3-bet light (o 3-bet de farol) es resubir con una mano que no esperas que sea la mejor, con la esperanza de foldear fuera al que abre. Los mejores 3-bets light tienen bloqueadores y equity de respaldo — ases del mismo palo de la rueda como A5s bloquean los ases y el as-rey de tu rival y aun así ligan colores y escaleras, así que conservan una opción real de llevarse el bote incluso cuando te pagan.
 
 **Q. ¿Cuál es la diferencia entre un rango de 3-bet lineal y uno polarizado?**
 

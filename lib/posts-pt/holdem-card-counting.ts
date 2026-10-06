@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blockers também funcionam parcialmente. Num board ==b:Q-J-9==, o nut straight �
 
 ### Card removal e cartas mortas
 
-Toda carta que você enxerga remove possibilidades. Você já usou isso ao contar outs: as 9 outs de flush pressupõem 4 cartas do naipe à vista — se você enxergar mais uma fora disso (um adversário mostrando a mão, uma carta virada por engano), aquele out está ==morto== e você cai para 8. Ler o board dessa forma é um ajuste constante e silencioso que bons jogadores fazem em toda street. É contagem, só que não do tipo que precisa de um total corrente.
+Toda carta que você enxerga remove possibilidades. Você já usou isso ao contar outs: as 9 outs de flush pressupõem 4 cartas do naipe à vista — se você enxergar mais uma fora disso (um adversário mostrando a mão, uma carta virada por engano), aquele out está ==morto== e você cai para 8. (Uma exceção: uma carta do board distribuída antes da hora é embaralhada de volta no restante do baralho e ainda pode sair.) Ler o board dessa forma é um ajuste constante e silencioso que bons jogadores fazem em toda street. É contagem, só que não do tipo que precisa de um total corrente.
 
 ---
 
@@ -159,7 +159,7 @@ A. O blackjack é você contra um dealer de regras fixas usando um shoe ao longo
 
 **Q. Qual é o equivalente da contagem de cartas no poker?**
 
-A. Contar outs (cartas que melhoram a sua mão), usar blockers (cartas que você tem que reduzem as combinações do adversário) e rastrear cartas mortas (outs que você já viu sair de jogo — uma carta exposta por engano, uma mão mostrada no fold). Juntos, eles deixam você ler o que provavelmente vem e o que o seu adversário não pode ter.
+A. Contar outs (cartas que melhoram a sua mão), usar blockers (cartas que você tem que reduzem as combinações do adversário) e rastrear cartas mortas (outs que você já viu sair de jogo — uma carta exposta por engano, uma mão mostrada no fold — exceto uma carta do board distribuída antes da hora, que volta para o restante do baralho). Juntos, eles deixam você ler o que provavelmente vem e o que o seu adversário não pode ter.
 
 **Q. Dá para contar cartas no Seven Card Stud?**
 

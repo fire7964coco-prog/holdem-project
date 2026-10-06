@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "¿Qué es un bad beat en póker? Cuando ser favorito no basta",
   seoTitle: "Ibas 80% ganador — y perdiste. ¿Qué es un bad beat?",
-  desc: "Un bad beat es perder siendo gran favorito cuando el rival tiene suerte. Diferencia con el cooler, el bad beat jackpot y por qué en el fondo te conviene.",
+  desc: "Un bad beat es perder siendo gran favorito cuando el rival tiene suerte. Diferencia con el cooler, el bad beat jackpot y por qué suele ser buena señal.",
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler en sentido estricto, ibas por delante cuando entró el dinero; la baraja simplemente te traicionó al final. Duele, pero un goteo constante de bad beats suele significar que los rivales meten dinero por detrás — justo la partida en la que quieres estar.",
   category: "glossary",
   date: "2026-07-05",
@@ -29,14 +29,14 @@ Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas
 Por delante al entrar | Dónde estabas en ese momento, no cómo acabó la mano
 80%+ | Cuánto favorito suele hacer falta
 El suckout | La carta afortunada que le da la vuelta
-Bueno en secreto | Lo que significa para tu beneficio a largo plazo
+Suele ser buena señal | Lo que significa para tu beneficio a largo plazo
 :::
 
 ---
 
 ## ¿Qué es un bad beat en póker?
 
-**Un bad beat es una mano que pierdes pese a ser favorito estadístico claro cuando entraron las fichas, porque tu rival ligó una carta improbable para adelantarte.** Metiste el dinero "por delante", ganando en la matemática — normalmente la jugada correcta — y la baraja simplemente sacó el único desarrollo que te gana. La derrota no es culpa tuya; es la varianza haciendo de las suyas.
+**Un bad beat es una mano que pierdes pese a ser favorito estadístico claro cuando entraron las fichas, porque tu rival ligó una carta improbable para adelantarte.** Metiste el dinero "por delante", ganando en la matemática — normalmente la jugada correcta — y la baraja sacó uno de los desarrollos que te ganan. La derrota no es culpa tuya; es la varianza haciendo de las suyas.
 
 El mecanismo siempre es un **suckout**: una carta — en el flop, el turn o el river — que llega después de que el dinero haya entrado y convierte una mano perdedora en ganadora. Tus ases arrasaban su pareja de cincos hasta que apareció ese tercer cinco. Tu par top iba por delante de su proyecto de color hasta que cayó el último corazón. Ese momento — el favorito adelantado por un proyecto que no tenía por qué llegar — es el corazón mismo del término. Entenderlo es también el primer paso para no dejar que te reviente la sesión, la misma disciplina emocional que separa a un profesional de un [fish](/es/blog/holdem-fish).
 
@@ -144,7 +144,7 @@ Ahora la verdad que convierte los bad beats de combustible de tilt en una fuente
 
 Piensa en lo que exige un bad beat: un rival que metió su dinero *por detrás*, como desfavorecido matemático, y tuvo suerte. La mayoría de las veces, eso es un jugador tomando **decisiones perdedoras** — exactamente el rival que quieres. Si nadie en tu mesa hiciera nunca esos calls perdedores, significaría que todos tiran sus manos flojas correctamente — una partida mucho más difícil de ganar. Como dice una máxima de coaching muy conocida, un suckout de un jugador flojo es un *regalo*: es el precio de la entrada por llevarte sus fichas las otras cuatro veces.
 
-Sobre una muestra suficientemente grande, la suerte se equilibra alrededor de tu expectativa. Si eres tú quien mete el dinero por delante, recibirás más bad beats de los que repartes — son la otra cara de todos los botes que ganas como favorito. Lo que mueve tus resultados a largo plazo es la calidad de tus decisiones. **Meter el dinero por delante y perder sigue siendo una victoria** en todo lo que importa con el tiempo. La ventaja es lo que se acumula a lo largo de miles de manos; un bad beat suelto es ruido a su alrededor.
+Sobre una muestra suficientemente grande, la suerte se equilibra alrededor de tu expectativa. Si eres tú quien mete el dinero por delante, recibirás más bad beats de los que repartes — son la otra cara de todos los botes que ganas como favorito. Lo que mueve tus resultados a largo plazo es la calidad de tus decisiones. **Meter el dinero por delante y perder sigue siendo una decisión ganadora** con el tiempo — siempre que meterlo fuera de verdad lo correcto (un mal sizing o un spot de ICM aún pueden convertirlo en error, como explica la FAQ de abajo). La ventaja es lo que se acumula a lo largo de miles de manos; un bad beat suelto es ruido a su alrededor.
 
 ---
 

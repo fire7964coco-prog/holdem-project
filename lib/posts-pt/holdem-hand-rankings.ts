@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
+  updated: "2026-10-06",
 
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -373,7 +373,7 @@ A. Como categoria, a pior mão é a carta alta — nenhuma combinação. Já ent
 
 **Q. Dá para ter três pares no poker?**
 
-A. Não. Uma mão de poker é sempre de cinco cartas, então cabe no máximo dois pares. Se as suas cartas e a mesa formarem três pares entre as sete, só os dois pares mais altos entram na mão — uma carta do terceiro par ainda pode ocupar a vaga de kicker se for a sua maior sobra, mas "três pares" nunca vira uma mão.
+A. Não. No Hold'em uma mão é sempre de cinco cartas, então cabe no máximo dois pares. Se as suas cartas e a mesa formarem três pares entre as sete, só os dois pares mais altos entram na mão — uma carta do terceiro par ainda pode ocupar a vaga de kicker se for a sua maior sobra, mas "três pares" nunca vira uma mão.
 
 **Q. Dá para usar o ás como 1 no poker?**
 

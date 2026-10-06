@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 
 ## Was ist ein Kicker beim Poker?
 
-**Ein Kicker ist die höchste Karte in deiner Fünf-Karten-Hand, die nicht Teil deiner gewerteten Kombination ist – er entscheidet über den Sieger, wenn zwei Spieler denselben Rang teilen.** Er wird auch „Beikarte“ genannt. Poker ist immer ein Fünf-Karten-Spiel (deine besten fünf aus sieben im Hold'em), also werden, sobald dein Paar oder Drilling feststeht, die übrigen Plätze mit Kickern gefüllt.
+**Ein Kicker ist die höchste Karte in deiner Fünf-Karten-Hand, die nicht Teil deiner gewerteten Kombination ist – er entscheidet über den Sieger, wenn zwei Spieler denselben Rang teilen.** Er wird auch „Beikarte“ genannt. Im Hold'em besteht eine Hand immer aus fünf Karten (deine besten fünf aus sieben), also werden, sobald dein Paar oder Drilling feststeht, die übrigen Plätze mit Kickern gefüllt.
 
 Der Kerngedanke: Ein Kicker ==schlägt nie eine höherrangige Hand.== Ein Paar Könige mit einer Zwei als Kicker zerlegt trotzdem ein Paar Zehnen mit einem Ass als Kicker – zuerst der Rang, der Kicker nur als Tiebreaker. Kicker sind nur dann wichtig, wenn die ==r:Ränge identisch sind==: Paar gegen dasselbe Paar, Drilling gegen denselben Drilling.
 
@@ -183,7 +183,7 @@ A. Ja, genau einen. Hältst du K♥ Q♦ und dein Gegner J♠ Q♥ auf einem Boa
 
 **Q. Muss der Kicker auf deiner eigenen Hand liegen?**
 
-A. Nein, er kann auch eine Gemeinschaftskarte sein. Poker bildet immer die besten fünf aus sieben – ist die höchste Beikarte eine Board-Karte, die die Hole Cards beider Spieler überragt, wird sie zum gemeinsamen Kicker für beide, und die nächste Karte entscheidet. Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.
+A. Nein, er kann auch eine Gemeinschaftskarte sein. Im Hold'em ist deine Hand immer die besten fünf aus sieben – ist die höchste Beikarte eine Board-Karte, die die Hole Cards beider Spieler überragt, wird sie zum gemeinsamen Kicker für beide, und die nächste Karte entscheidet. Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.
 
 **Q. Was ist ein Ass-Kicker (oder ein König-Kicker)?**
 

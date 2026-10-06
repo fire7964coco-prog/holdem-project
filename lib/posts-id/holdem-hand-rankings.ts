@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
+  updated: "2026-10-06",
 
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -367,7 +367,7 @@ A. Tangan terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu 
 
 **Q. Bisakah punya tiga pasangan di poker?**
 
-A. Tidak. Tangan poker selalu lima kartu, jadi paling banyak hanya memuat dua pasangan. Jika kartu tertutup Anda dan board memberi tiga pasangan di antara tujuh kartu, ==hanya dua pasangan terbaik yang dihitung== — satu kartu dari pasangan ketiga masih bisa mengisi slot kicker kalau itu sisa kartu tertinggi Anda, tapi tak pernah menjadi tangan "three pair".
+A. Tidak. Di Hold'em, tangan selalu lima kartu, jadi paling banyak hanya memuat dua pasangan. Jika kartu tertutup Anda dan board memberi tiga pasangan di antara tujuh kartu, ==hanya dua pasangan terbaik yang dihitung== — satu kartu dari pasangan ketiga masih bisa mengisi slot kicker kalau itu sisa kartu tertinggi Anda, tapi tak pernah menjadi tangan "three pair".
 
 **Q. Apakah ada "super royal flush" di poker?**
 
@@ -383,7 +383,7 @@ A. As. Nilai kartu berurut 2-3-4-5-6-7-8-9-10-J-Q-K-A, dengan As di puncak. As j
 
 **Q. Apa urutan simbol (lambang) kartu poker?**
 
-A. Tidak ada. Simbol — di artikel ini disebut jenis kartu — tidak punya urutan di Texas Hold'em: sekop tidak mengalahkan hati, dan simbol hanya berperan saat membentuk flush. Dua tangan yang nilainya sama persis membagi pot, apa pun simbolnya.
+A. Untuk menentukan siapa yang memenangkan pot, tidak ada. Simbol — di artikel ini disebut jenis kartu — tidak meranking tangan di Texas Hold'em: sekop tidak mengalahkan hati, dan simbol hanya berperan saat membentuk flush. Dua tangan yang nilainya sama persis membagi pot, apa pun simbolnya. Urutan simbol (sekop, hati, wajik, keriting) memang ada di poker, tapi dipakai di luar perebutan pot — misalnya saat menarik kartu untuk menentukan posisi awal dealer button atau kursi — dan di varian lain seperti stud.
 
 ---
 

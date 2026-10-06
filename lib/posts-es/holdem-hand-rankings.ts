@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar con cinco cartas, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -384,7 +384,7 @@ A. La peor mano posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la ca
 
 **Q. ¿Se pueden tener tres parejas en el póker?**
 
-A. No. Una mano de póker siempre son cinco cartas, así que puede contener como máximo dos parejas. Si tus cartas y la mesa te dan tres parejas entre las siete, solo cuentan tus dos mejores parejas — una carta de la tercera pareja puede ocupar el kicker si es tu carta suelta más alta, pero nunca se convierte en una mano de "tres parejas".
+A. No. En Hold'em una mano siempre son cinco cartas, así que puede contener como máximo dos parejas. Si tus cartas y la mesa te dan tres parejas entre las siete, solo cuentan tus dos mejores parejas — una carta de la tercera pareja puede ocupar el kicker si es tu carta suelta más alta, pero nunca se convierte en una mano de "tres parejas".
 
 **Q. ¿Se puede usar el As como un 1 en el póker?**
 

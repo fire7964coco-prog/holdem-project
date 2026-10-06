@@ -161,7 +161,7 @@ A. Limp-reraise adalah saat Anda limp, lawan raise di belakang Anda, lalu Anda m
 
 **Q. Haruskah Anda pernah open-limp preflop?**
 
-A. Nyaris tak pernah di cash game normal. Jika sebuah tangan cukup bagus untuk dimainkan, ia biasanya cukup bagus untuk di-raise; jika tidak, fold. Pengecualian langka adalah menyelesaikan small blind di pot yang belum di-raise, permainan live yang sangat pasif di mana Anda tak akan dihukum, dan beberapa spot turnamen di posisi akhir dengan stack pendek yang diidentifikasi solver. Sebagai default, raise atau fold dan lewati open-limp.
+A. Nyaris tak pernah di cash game normal. Jika sebuah tangan cukup bagus untuk dimainkan, ia biasanya cukup bagus untuk di-raise; jika tidak, fold. Menyelesaikan small blind di pot yang belum di-raise adalah kasus tersendiri (sering tak masalah — lihat pertanyaan berikutnya); di luar itu, pengecualian langka adalah permainan live yang sangat pasif di mana Anda tak akan dihukum, dan beberapa spot turnamen di posisi akhir dengan stack pendek yang diidentifikasi solver. Sebagai default, raise atau fold dan lewati open-limp.
 
 **Q. Apakah boleh limp di small blind?**
 

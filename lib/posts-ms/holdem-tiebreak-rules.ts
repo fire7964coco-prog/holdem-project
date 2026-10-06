@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan mengikut urutan tetap: kedudukan tangan dahulu, kemudian kad yang membentuk tangan itu, kemudian kicker dari tertinggi ke terendah. Pair sama — kicker pertama yang lebih tinggi menang; lima kad yang serupa — pot dibahagi. Suit tidak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-05",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
   emoji: "⚖️",
@@ -151,7 +151,7 @@ Logik yang sama berlaku dalam pot quads di board: semua orang berkongsi empat ka
 
 ## Adakah Suit Penting dalam Poker?
 
-**Tidak — bukan untuk menentukan siapa menang. Suit hanya ada satu tugas dalam Texas Hold'em: lima kad suit yang sama membentuk flush. Selain itu suit tiada kedudukan, jadi dua tangan yang sepadan nilai demi nilai sentiasa membahagi pot, dan tiada kad yang mengatasi kad lain kerana suitnya.**
+**Tidak — bukan untuk menentukan siapa menang. Dalam soal memenangi pot, suit hanya ada satu tugas dalam Texas Hold'em: lima kad suit yang sama membentuk flush. Selain itu suit tiada kedudukan, jadi dua tangan yang sepadan nilai demi nilai sentiasa membahagi pot, dan tiada kad yang mengatasi kad lain kerana suitnya.**
 
 Soalan ini terus timbul kerana susunan suit memang wujud dalam poker — cuma tidak pernah untuk menyusun tangan dalam permainan ini. Stud dan razz menggunakannya untuk menentukan siapa yang membuat bring-in dan siapa yang mengambil cip yang tidak boleh dibahagi. Hold'em tidak menggunakannya untuk mana-mana satu pun.
 
@@ -206,7 +206,7 @@ A. Ya — dan itulah cara paling biasa pemain kalah pot yang disangkanya sudah d
 
 **Q. Bolehkah As digunakan sebagai 1 dalam poker?**
 
-A. Boleh, tetapi hanya dalam straight A-2-3-4-5 ("wheel"), di mana ia dimainkan sebagai kad paling rendah — yang menjadikan wheel straight paling rendah dalam permainan. As tidak boleh berpusing melalui tengah: Q-K-A-2-3 bukan straight.
+A. Dalam Hold'em, boleh, tetapi hanya dalam straight A-2-3-4-5 ("wheel"), di mana ia dimainkan sebagai kad paling rendah — yang menjadikan wheel straight paling rendah dalam permainan. As tidak boleh berpusing melalui tengah: Q-K-A-2-3 bukan straight.
 
 **Q. Bolehkah anda ada straight yang lebih tinggi daripada pemain lain?**
 

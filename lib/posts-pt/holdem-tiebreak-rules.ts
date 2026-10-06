@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -149,7 +149,7 @@ A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro carta
 
 ## Os naipes decidem quem ganha no poker?
 
-**Não — não para decidir quem ganha. No Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
+**Não — não para decidir quem ganha. Na hora de ganhar o pote, no Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
 
 A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só que, neste jogo, nunca para ranquear mãos. O stud e o razz a usam para decidir quem paga o bring-in e quem fica com a ficha indivisível. O Hold'em não a usa para nenhuma das duas coisas.
 
@@ -204,7 +204,7 @@ A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quin
 
 **Q. Dá para usar o ás como 1 no poker?**
 
-A. Sim, mas só na sequência A-2-3-4-5 (a "wheel"), onde ele joga como carta mais baixa — o que faz da wheel a sequência mais baixa do jogo. O ás não pode dar a volta pelo meio: Q-K-A-2-3 não é sequência.
+A. No Hold'em, sim, mas só na sequência A-2-3-4-5 (a "wheel"), onde ele joga como carta mais baixa — o que faz da wheel a sequência mais baixa do jogo. O ás não pode dar a volta pelo meio: Q-K-A-2-3 não é sequência.
 
 **Q. Dá para ter uma sequência mais alta que a de outro jogador?**
 

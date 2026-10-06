@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -285,7 +285,7 @@ A. Raisen oder folden – nicht open-limpen. Eine Hand, die stark genug ist, um 
 
 **Q. Wie weit sollte ich aus UTG vs vom Button öffnen?**
 
-A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände – starke Paare, AK/AQ und die besten suited Broadways. Vom Button sind rund ~43% profitabel, weil die garantierte letzte Aktion für schwächere Karten entschädigt. In 6-Max verbreitert sich UTG auf etwa ~17% und spielt wie ein Full-Ring-Lojack.
+A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände – im Kern starke Paare, AK/AQ und die besten suited Broadways, abgerundet durch mittlere Paare und die besten suited Asse. Vom Button sind rund ~43% profitabel, weil die garantierte letzte Aktion für schwächere Karten entschädigt. In 6-Max verbreitert sich UTG auf etwa ~17% und spielt wie ein Full-Ring-Lojack.
 
 **Q. Wie beeinflusst Position die C-Bet-Frequenz?**
 

@@ -259,7 +259,7 @@ A. 3-bet when you have a premium, when the opener is wide and weak, or when you'
 
 **Q. What is a light 3-bet?**
 
-A. A light 3-bet (or 3-bet bluff) is re-raising with a hand you don't expect to be best, hoping to fold the opener out. The best light 3-bets have blockers and backup equity — suited wheel aces like A5s block your opponent's aces and ace-king while still flopping flushes and straights, so they win even when called.
+A. A light 3-bet (or 3-bet bluff) is re-raising with a hand you don't expect to be best, hoping to fold the opener out. The best light 3-bets have blockers and backup equity — suited wheel aces like A5s block your opponent's aces and ace-king while still flopping flushes and straights, so they keep a real chance to win the pot even when called.
 
 **Q. What is the difference between a linear and a polarized 3-bet range?**
 

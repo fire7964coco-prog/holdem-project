@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -151,7 +151,7 @@ Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier
 
 ## Entscheidet die Farbe beim Poker?
 
-**Nein – nicht darüber, wer gewinnt. Farben haben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
+**Nein – nicht darüber, wer gewinnt. Wenn es um den Gewinn des Pots geht, haben Farben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
 
 Die Frage kommt immer wieder, weil es eine Farbreihenfolge im Poker tatsächlich gibt – nur in diesem Spiel nie zur Bewertung von Händen. Stud und Razz nutzen sie, um zu bestimmen, wer den Bring-in zahlt und wer einen unteilbaren Chip bekommt. Hold'em nutzt sie für keines von beidem.
 
@@ -226,7 +226,7 @@ A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 
-A. Ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt. Das Ass kann nicht um die Ecke spielen: K-A-2-3-4 ist keine Straße, und Q-K-A-2-3 ebenso wenig.
+A. Im Hold'em ja, aber nur in der Straße A-2-3-4-5 (dem „Wheel“), wo es als niedrigste Karte spielt. Das Ass kann nicht um die Ecke spielen: K-A-2-3-4 ist keine Straße, und Q-K-A-2-3 ebenso wenig.
 
 **Q. Welche Straße ist die niedrigste beim Poker?**
 

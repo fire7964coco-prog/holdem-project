@@ -260,7 +260,7 @@ A. 3-bet saat Anda punya premium, saat opener lebar dan lemah, atau saat Anda ou
 
 **Q. Apa itu light 3-bet?**
 
-A. Light 3-bet (atau 3-bet bluff) adalah re-raising dengan tangan yang tak Anda harapkan menjadi terbaik, berharap membuat si opener fold. Light 3-bet terbaik punya blocker dan equity cadangan — suited wheel aces seperti A5s memblokir aces dan ace-king lawan Anda sambil tetap mem-flop flush dan straight, jadi mereka menang bahkan saat di-call.
+A. Light 3-bet (atau 3-bet bluff) adalah re-raising dengan tangan yang tak Anda harapkan menjadi terbaik, berharap membuat si opener fold. Light 3-bet terbaik punya blocker dan equity cadangan — suited wheel aces seperti A5s memblokir aces dan ace-king lawan Anda sambil tetap mem-flop flush dan straight, jadi mereka tetap punya peluang nyata memenangkan pot bahkan saat di-call.
 
 **Q. Apa beda antara range 3-bet linear dan polarized?**
 

@@ -1,3 +1,11 @@
+## 2026-10-06 (16) — §2-Z 이행: MA-332~338 ID 고유 9 + EN-먼저 13편 → 9로케일 (MB-192)
+
+- ① ID 고유 Z-1~Z-8 + drawing SF 드리프트(MA-334 ⑤) · ② EN 13편 25자리 → ar 1 + 8로케일(로케일당 서브 에이전트 1개 · 본체가 diff 판정). 전/후 문면 = MB-192.
+- 판정 변경 1: pot-odds 클린 아웃 15.9%(7/44) → 15.2%(7/46) — 같은 문단 19.6% = 9/46 분모에 맞춤.
+- 과잉 수정 되돌림: es·id bad-beat 요약 3번(EN 패리티 · 범위 = desc·stripe).
+- 검수: 사실 렌즈 0건 · 교열 렌즈 10자리 반영(id equity «kalahkan» 오역 · ja card-counting 괄호 문장 끊김 · ja·zh-hant 전각 뒤 반각 공백 등). 남긴 것 = queue §2-Z 🪶.
+- 게이트: audit:hard 10로케일 🔴 0 · check:drift 핵심 0 · faq-schema 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-06 (15) — 검수장 MA-332~338 판정·회신 (MB-191 · 이행 0)
 
 - 수신 = ID ④ 4-2 rankings 부분1·2 · 4-3 odds 부분1·2 · 4-4 strategy 부분1·2 · 4-5 glossary 부분1(검수장 HQ-REPORT 7건).

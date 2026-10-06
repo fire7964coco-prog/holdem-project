@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bukan seperti dalam blackjack — dek dikocok semula setiap tangan dan terlalu sedikit kad yang terdedah, jadi menjejak kad tinggi dan rendah tidak memberi anda apa-apa kelebihan. Tetapi poker ada kiraan sah tersendiri: kira outs, guna blocker dan jejak kad mati untuk membaca apa yang lawan anda tidak mungkin pegang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blocker juga berfungsi secara separa. Pada board ==b:Q-J-9==, nut straight ialah
 
 ### Card removal & kad mati
 
-Setiap kad yang anda nampak membuang kemungkinan. Dalam Hold'em, out tidak boleh berada di board — jika ia di situ, tangan anda sudah pun terbentuk — jadi ==kad mati== yang perlu dijejak ialah kad yang terdedah *di luar* board: kad yang terbuka secara tidak sengaja, tangan yang ditunjukkan sebelum masuk muck, fold jiran yang kebetulan anda nampak. Setiap out di antaranya ialah out yang anda tidak ada lagi; mana-mana kad terdedah yang lain cuma mengecilkan dek yang belum kelihatan. Menyesuaikan kiraan untuknya ialah tabiat tetap dan senyap yang dijaga oleh pemain bagus di setiap street. Itu tetap satu bentuk kiraan, cuma bukan jenis yang perlukan jumlah berterusan.
+Setiap kad yang anda nampak membuang kemungkinan. Dalam Hold'em, out tidak boleh berada di board — jika ia di situ, tangan anda sudah pun terbentuk — jadi ==kad mati== yang perlu dijejak ialah kad yang terdedah *di luar* board: kad yang terbuka secara tidak sengaja, tangan yang ditunjukkan sebelum masuk muck, fold jiran yang kebetulan anda nampak. (Satu pengecualian: kad board yang diagihkan terlalu awal dikocok semula ke dalam baki dek dan masih boleh keluar.) Setiap out di antaranya ialah out yang anda tidak ada lagi; mana-mana kad terdedah yang lain cuma mengecilkan dek yang belum kelihatan. Menyesuaikan kiraan untuknya ialah tabiat tetap dan senyap yang dijaga oleh pemain bagus di setiap street. Itu tetap satu bentuk kiraan, cuma bukan jenis yang perlukan jumlah berterusan.
 
 ---
 
@@ -159,7 +159,7 @@ A. Blackjack ialah anda menentang dealer berperaturan tetap yang menggunakan sat
 
 **Q. Apakah yang setara dengan kira kad dalam poker?**
 
-A. Mengira outs (kad yang memperbaiki tangan anda), menggunakan blocker (kad yang anda pegang yang mengurangkan kombinasi lawan), dan menjejak kad mati (outs yang anda sudah nampak keluar daripada permainan — kad yang terbuka secara tidak sengaja, tangan yang ditunjukkan ketika fold). Bersama-sama ia membolehkan anda membaca apa yang berkemungkinan datang dan apa yang lawan anda tidak mungkin pegang.
+A. Mengira outs (kad yang memperbaiki tangan anda), menggunakan blocker (kad yang anda pegang yang mengurangkan kombinasi lawan), dan menjejak kad mati (outs yang anda sudah nampak keluar daripada permainan — kad yang terbuka secara tidak sengaja, tangan yang ditunjukkan ketika fold — kecuali kad board yang diagihkan terlalu awal, yang dikembalikan ke dalam baki dek). Bersama-sama ia membolehkan anda membaca apa yang berkemungkinan datang dan apa yang lawan anda tidak mungkin pegang.
 
 **Q. Bolehkah anda kira kad dalam Seven Card Stud?**
 

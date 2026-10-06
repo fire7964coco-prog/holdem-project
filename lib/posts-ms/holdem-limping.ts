@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-27",
   updated: "2026-10-06",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "🚶",
@@ -161,7 +161,7 @@ A. Limp-reraise ialah apabila anda limp, lawan raise di belakang anda, dan anda 
 
 **Q. Patutkah anda open-limp preflop?**
 
-A. Hampir tidak pernah dalam cash game biasa. Jika sesuatu tangan cukup bagus untuk dimainkan, biasanya ia cukup bagus untuk raise; jika tidak, fold. Pengecualian yang jarang ialah complete small blind dalam pot tanpa raise, permainan live yang sangat pasif di mana anda tidak akan dihukum, dan beberapa spot posisi lewat dengan short stack dalam tournament yang dikenal pasti oleh solver. Sebagai lalai, raise atau fold dan elakkan open-limp.
+A. Hampir tidak pernah dalam cash game biasa. Jika sesuatu tangan cukup bagus untuk dimainkan, biasanya ia cukup bagus untuk raise; jika tidak, fold. Complete small blind dalam pot tanpa raise ialah kes berasingan (selalunya OK — lihat soalan seterusnya); selain itu, pengecualian yang jarang ialah permainan live yang sangat pasif di mana anda tidak akan dihukum, dan beberapa spot posisi lewat dengan short stack dalam tournament yang dikenal pasti oleh solver. Sebagai lalai, raise atau fold dan elakkan open-limp.
 
 **Q. Adakah OK untuk limp dari small blind?**
 

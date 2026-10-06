@@ -81,7 +81,7 @@ Segala hal yang bisa Anda lakukan secara fisik pada giliran Anda. Jika Anda bena
 | **Bluff / Semi-bluff** | Bluff bertaruh tangan lemah untuk memaksa tangan lebih baik fold; semi-bluff melakukannya dengan draw yang masih bisa membaik. |
 | **Check-raise** | Check, lalu raise setelah lawan bertaruh — garis kuat dan menipu (legal di room modern). |
 | **Min-raise** | Raise legal terkecil. |
-| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mendeklarasikan jumlah raise secara penuh lebih dulu membuat gerakan bertahap menjadi sah — kebiasaan yang aman adalah menyebut jumlahnya sebelum meraih chip, atau mendorong seluruh raise dalam satu gerakan. |
+| **String bet** | Kembali meraih chip dari stack untuk menambah taruhan tanpa mendeklarasikannya lebih dulu — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mendeklarasikan jumlah raise secara penuh lebih dulu membuat gerakan bertahap menjadi sah — kebiasaan yang aman adalah menyebut jumlahnya sebelum meraih chip, atau mendorong seluruh raise dalam satu gerakan. |
 | **Jam / Shove** | Bergerak all-in. |
 | **Snap call** | Call instan tanpa ragu. |
 | **Hero call** | Call dengan tangan lemah karena Anda membaca lawan sedang bluff. |
@@ -291,7 +291,7 @@ A. VPIP (Voluntarily Put money In Pot) adalah persentase tangan yang dipilih seo
 
 **Q. Muck artinya apa di poker?**
 
-A. Muck punya dua arti yang berkaitan. Sebagai kata kerja, muck berarti membuang tangan Anda dalam keadaan tertutup — fold tanpa memperlihatkan kartu, termasuk melepas tangan kalah di showdown tanpa membukanya. Sebagai kata benda, the muck adalah tumpukan kartu buangan di depan dealer; kartu yang sudah menyentuh muck umumnya dinyatakan mati dan tak bisa diambil kembali.
+A. Muck punya dua arti yang berkaitan. Sebagai kata kerja, muck berarti membuang tangan Anda dalam keadaan tertutup — fold tanpa memperlihatkan kartu, termasuk melepas tangan kalah di showdown tanpa membukanya. Sebagai kata benda, the muck adalah tumpukan kartu buangan di depan dealer; kartu yang dilempar ke muck bisa dinyatakan mati, tapi tangan yang masih jelas bisa dikenali dapat diambil kembali dan dinyatakan hidup atas keputusan floor.
 
 ---
 

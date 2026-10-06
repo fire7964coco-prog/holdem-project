@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "What Is a Bad Beat in Poker? When Being the Favorite Isn't Enough",
   seoTitle: "You Were 80% to Win — and Lost. What Is a Bad Beat?",
-  desc: "A bad beat is losing as a big favorite when your opponent gets lucky. How it differs from a cooler, the bad beat jackpot, and why it's secretly good for you.",
+  desc: "A bad beat is losing as a big favorite when your opponent gets lucky. How it differs from a cooler, the bad beat jackpot, and why it's usually a good sign.",
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler in the strict sense, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but a steady stream of bad beats usually means opponents are putting money in behind — the kind of game you want to be in.",
   category: "glossary",
   date: "2026-07-05",
@@ -28,14 +28,14 @@ A **bad beat** is when you get your chips in as a heavy statistical favorite and
 Ahead going in | Where you stood at that moment, not how it finished
 80%+ | How big a favorite it usually takes
 The suckout | The lucky card that flips it
-Secretly good | What it means for your long-term profit
+Usually a good sign | What it means for your long-term profit
 :::
 
 ---
 
 ## What Is a Bad Beat in Poker?
 
-**A bad beat is a hand you lose despite being a strong statistical favorite when the chips went in, because your opponent hit an unlikely card to overtake you.** You got your money in "good," ahead in the math — usually the correct play — and the deck simply produced the one runout that beats you. The loss isn't your fault; it's variance doing its worst.
+**A bad beat is a hand you lose despite being a strong statistical favorite when the chips went in, because your opponent hit an unlikely card to overtake you.** You got your money in "good," ahead in the math — usually the correct play — and the deck produced one of the runouts that beat you. The loss isn't your fault; it's variance doing its worst.
 
 The mechanism is always a **suckout**: a card — on the flop, turn or river — that arrives after the money goes in and turns a losing hand into a winning one. Your aces were crushing their pocket fives until that third five appeared. Your top pair was ahead of their flush draw until the last heart fell. That moment — the favorite getting run down by a draw that had no business getting there — is the beating heart of the term. Understanding it is also the first step to not letting it wreck your session, the same emotional discipline that separates a pro from a [fish](/en/blog/holdem-fish).
 
@@ -143,7 +143,7 @@ Now the truth that turns bad beats from tilt-fuel into a quiet source of confide
 
 Think about what a bad beat requires: an opponent who put their money in *behind*, as a mathematical underdog, and got lucky. Most of the time that's a player making **losing decisions** — exactly the opponent you want. If nobody at your table ever made those losing calls, it would mean everyone was folding their weak hands correctly — a far tougher game to beat. As one well-known coaching maxim puts it, a suckout from a weak player is a *gift*: it's the price of admission for getting their chips the other four times.
 
-Over a large enough sample, luck evens out around your expectation. If you're the one getting it in good, you'll take more beats than you deliver — they're the other side of all the pots you win as the favorite. What drives your long-term results is the quality of your decisions. **Getting your money in good and losing is still a win** in every way that matters over time. The edge is what compounds over thousands of hands; a single beat is noise around it.
+Over a large enough sample, luck evens out around your expectation. If you're the one getting it in good, you'll take more beats than you deliver — they're the other side of all the pots you win as the favorite. What drives your long-term results is the quality of your decisions. **Getting your money in good and losing is still a winning decision** over time — as long as getting it in really was good (a bad sizing or an ICM spot can still make it a mistake, as the FAQ below explains). The edge is what compounds over thousands of hands; a single beat is noise around it.
 
 ---
 

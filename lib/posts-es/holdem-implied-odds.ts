@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -208,7 +208,7 @@ A. No — en mano a mano, cuando tu rival está all-in no hay más rondas de apu
 
 **Q. ¿Cómo funcionan las odds implícitas en el set mining?**
 
-A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5 a 1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es un pago total (el bote más lo que ganas después) de unos 7.5× tu call, pero la guía práctica son stacks de 15–20× tu call — el colchón extra cubre las veces que fallas, no obtienes acción o pierdes con un set.
+A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5 a 1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es un pago total (el bote más lo que ganas después) de unos 7.5× tu call, pero la guía práctica son stacks de 15–20× tu call — el colchón extra cubre las veces que ligas pero no obtienes acción, o pierdes con un set (las veces que fallas ya están incluidas en el 7.5×).
 
 **Q. ¿Tienes odds implícitas con un proyecto de color?**
 

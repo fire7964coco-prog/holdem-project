@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap hand dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blocker juga bekerja secara parsial. Pada board ==b:Q-J-9==, nut straight-nya K-
 
 ### Card removal & dead card
 
-Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap karena kesalahan, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. Setiap out di antara kartu-kartu itu adalah out yang tak lagi Anda punya; kartu terbuka lainnya sekadar memperkecil dek yang tak terlihat. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
+Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap karena kesalahan, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. (Satu pengecualian: kartu board yang terbuka terlalu dini dikocok kembali ke stub dan masih bisa keluar.) Setiap out di antara kartu-kartu itu adalah out yang tak lagi Anda punya; kartu terbuka lainnya sekadar memperkecil dek yang tak terlihat. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
 
 ---
 
@@ -159,7 +159,7 @@ A. Blackjack adalah Anda melawan dealer yang terikat aturan baku yang memakai sa
 
 **Q. Apa padanan card counting di poker?**
 
-A. Menghitung outs (kartu yang meningkatkan tangan Anda), memakai blocker (kartu yang Anda pegang yang mengurangi kombinasi lawan), dan melacak dead card (outs yang sudah Anda lihat keluar dari permainan — kartu yang tersingkap karena kesalahan, tangan yang dibuka saat fold). Bersama-sama itu membiarkan Anda membaca apa yang mungkin datang dan apa yang tak mungkin dipegang lawan.
+A. Menghitung outs (kartu yang meningkatkan tangan Anda), memakai blocker (kartu yang Anda pegang yang mengurangi kombinasi lawan), dan melacak dead card (outs yang sudah Anda lihat keluar dari permainan — kartu yang tersingkap karena kesalahan, tangan yang dibuka saat fold — kecuali kartu board yang terbuka terlalu dini, yang dikembalikan ke stub). Bersama-sama itu membiarkan Anda membaca apa yang mungkin datang dan apa yang tak mungkin dipegang lawan.
 
 **Q. Bisakah menghitung kartu di Seven Card Stud?**
 

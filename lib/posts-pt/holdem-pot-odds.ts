@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -189,7 +189,7 @@ Cometi cada um deles antes que me quebrassem. Fique de olho:
 
 Estou com ==b:A♥ K♥== num flop ==Q♥ 7♥ 2♣== — o nut flush draw, 9 outs. O pote é $100, o vilão aposta $50. Minhas pot odds: estou recebendo 3 para 1, então preciso de **25%**. Se eu fosse ver as duas cartas, estaria em ~35% — mas este call só compra o turn, e o turn sozinho é 19,1%, abaixo do preço. O que fecha a diferença são as implied odds: se cair uma copas, muitas vezes uma mão de top pair me paga pesado. ==g:Call fácil.==
 
-O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%** (conto apenas as 9 copas — contra um all-in do tamanho do pote, parear o meu ás ou o meu rei muitas vezes ainda perde, então as overcards não são outs limpos). O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. Contra os sets e dois pares que dão all-in num turn brick como esse, 19,6% é tudo o que eu tenho — e mesmo que algumas mãos de top pair entrem no range dele, as overcards só levam o call até mais ou menos o ponto de equilíbrio. ==r:Fold== — e o spot exato onde a "esperança" costumava me custar um stack.
+O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%** (conto apenas as 9 copas — contra um all-in do tamanho do pote, parear o meu ás ou o meu rei muitas vezes ainda perde, então as overcards não são outs limpos). O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. Contra os sets e dois pares que dão all-in num turn brick como esse, 19,6% é o melhor caso — contra um set, o 2♥ e o 3♥ pareiam o board e dão full house para ele, sobrando 7 outs limpos (cerca de 15,2%) — e mesmo que algumas mãos de top pair entrem no range dele, as overcards só levam o call até mais ou menos o ponto de equilíbrio. ==r:Fold== — e o spot exato onde a "esperança" costumava me custar um stack.
 
 ---
 

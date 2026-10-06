@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Di mana kicker cocok dalam gambaran besar [urutan kartu poker](/id/blog/holdem-h
 
 ## Apa Itu Kicker di Poker?
 
-**Kicker adalah kartu tertinggi dalam tangan lima-kartu Anda yang bukan bagian dari kombinasi bernilai Anda — ia menentukan pemenang saat dua pemain punya nilai tangan yang sama.** Ia juga disebut "kartu samping". Poker selalu permainan lima-kartu (lima terbaik dari tujuh di Hold'em), jadi begitu pair atau trips Anda terkunci, slot sisa diisi oleh kicker.
+**Kicker adalah kartu tertinggi dalam tangan lima-kartu Anda yang bukan bagian dari kombinasi bernilai Anda — ia menentukan pemenang saat dua pemain punya nilai tangan yang sama.** Ia juga disebut "kartu samping". Di Hold'em, tangan selalu lima kartu (lima terbaik dari tujuh), jadi begitu pair atau trips Anda terkunci, slot sisa diisi oleh kicker.
 
 Inti idenya: kicker ==tak pernah mengalahkan tangan bernilai lebih tinggi.== Sepasang king dengan kicker deuce tetap menghancurkan sepasang ten dengan kicker ace — nilai tangan dulu, kicker hanya sebagai pemecah seri. Kicker baru penting saat ==r:nilai tangannya identik==: pair vs. pair yang sama, trips vs. trips yang sama.
 
@@ -180,7 +180,7 @@ A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pe
 
 **Q. Apakah kicker harus dari kartu tertutup Anda?**
 
-A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbaik dari tujuh kartu, jadi kalau kartu samping tertinggi adalah kartu board yang lebih tinggi dari kartu tertutup kedua pemain, kartu itulah yang jadi kicker bersama bagi keduanya dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.
+A. Tidak. Kicker bisa berupa kartu komunitas. Di Hold'em, tangan Anda selalu lima terbaik dari tujuh kartu, jadi kalau kartu samping tertinggi adalah kartu board yang lebih tinggi dari kartu tertutup kedua pemain, kartu itulah yang jadi kicker bersama bagi keduanya dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 

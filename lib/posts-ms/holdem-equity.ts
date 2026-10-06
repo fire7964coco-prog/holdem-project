@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-05",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
   emoji: "🥧",
@@ -200,7 +200,7 @@ A. Ia bukan bagus atau buruk dengan sendirinya — 50% ialah coin flip. Sama ada
 
 **Q. Apa maksud 20% equity?**
 
-A. Ia bermakna satu perlima pot milik tangan anda dalam jangka panjang — jadi dalam pot $100 bahagian anda bernilai lebih kurang $20. Sama ada 20% ialah call bergantung pada harga: menentang bet suku pot anda perlu lebih kurang 17%, jadi 20% memadai; menentang bet separuh pot (perlu 25%) ia fold. Mana-mana angka equity hanya bermakna apabila diletakkan di sebelah pot odds.
+A. Ia bermakna satu perlima pot milik tangan anda dalam jangka panjang — jadi dalam pot $100 bahagian anda bernilai lebih kurang $20. Sama ada 20% ialah call bergantung pada harga: menentang bet suku pot anda perlu lebih kurang 17%, jadi 20% memadai; menentang bet separuh pot (perlu 25%) ia fold — dengan andaian tiada bet lagi selepas itu; jika lebih banyak wang boleh masuk kemudian, laraskan mengikut berapa banyak daripada 20% itu yang benar-benar dapat anda realisasikan. Mana-mana angka equity hanya bermakna apabila diletakkan di sebelah pot odds.
 
 **Q. Berapa banyak fold equity anda perlu untuk bluff dengan untung?**
 

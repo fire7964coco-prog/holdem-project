@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -414,7 +414,7 @@ A. Die schlechtestmögliche Hand ist 7-5-4-3-2 in gemischten Farben („Sieben h
 
 **Q. Kann man drei Paare im Poker haben?**
 
-A. Nein. Eine Pokerhand besteht immer aus fünf Karten, sie kann also höchstens zwei Paare enthalten. Ergeben deine Hole Cards und das Board über sieben Karten drei Paare, zählen nur deine besten zwei Paare für die Hand – eine Karte des dritten Paars kann noch den Kicker-Platz füllen, wenn sie deine höchste übrige Karte ist, aber es wird nie eine „Drei-Paare“-Hand.
+A. Nein. Im Hold'em besteht eine Hand immer aus fünf Karten, sie kann also höchstens zwei Paare enthalten. Ergeben deine Hole Cards und das Board über sieben Karten drei Paare, zählen nur deine besten zwei Paare für die Hand – eine Karte des dritten Paars kann noch den Kicker-Platz füllen, wenn sie deine höchste übrige Karte ist, aber es wird nie eine „Drei-Paare“-Hand.
 
 **Q. Kann man ein Ass als 1 im Poker verwenden?**
 

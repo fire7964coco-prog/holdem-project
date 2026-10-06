@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -224,7 +224,7 @@ A. Weil derselbe Pot jetzt auf mehr Hände aufgeteilt wird – preflop gegen zuf
 
 **Q. Was bedeutet 20% Equity?**
 
-A. Dass dir langfristig ein Fünftel des Pots gehört: In einem $200-Pot sind das $40. Ob du damit callen kannst, entscheidet der Preis – 20% Equity reichen genau bis zu einer Drittel-Pot-Bet (du bekommst 4:1). Alles Größere kostet mehr, als deine Hand wert ist.
+A. Dass dir langfristig ein Fünftel des Pots gehört: In einem $200-Pot sind das $40. Ob du damit callen kannst, entscheidet der Preis – 20% Equity reichen genau bis zu einer Drittel-Pot-Bet (du bekommst 4:1). Alles Größere kostet mehr, als deine Hand wert ist – vorausgesetzt, danach wird nicht mehr gesetzt; kann später noch Geld in den Pot gehen, berücksichtige, wie viel von diesen 20% du tatsächlich realisierst.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -93,7 +93,7 @@ Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-10. 
 
 ### Card removal & dead cards
 
-Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed by mistake, a hand shown before it hit the muck, a neighbor's fold you happened to see. Each out among them is one you no longer have; any other exposed card just shrinks the unseen deck. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
+Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed by mistake, a hand shown before it hit the muck, a neighbor's fold you happened to see. (One exception: a board card dealt too early is shuffled back into the stub and can still come.) Each out among them is one you no longer have; any other exposed card just shrinks the unseen deck. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
 
 ---
 
@@ -158,7 +158,7 @@ A. Blackjack is you versus a fixed-rules dealer using one shoe across many hands
 
 **Q. What is the poker equivalent of card counting?**
 
-A. Counting outs (cards that improve your hand), using blockers (cards you hold that reduce your opponent's combinations), and tracking dead cards (outs you've already seen leave play — a card flashed by mistake, a hand shown on the fold). Together they let you read what's likely coming and what your opponent can't have.
+A. Counting outs (cards that improve your hand), using blockers (cards you hold that reduce your opponent's combinations), and tracking dead cards (outs you've already seen leave play — a card flashed by mistake, a hand shown on the fold — except a board card dealt too early, which goes back into the stub). Together they let you read what's likely coming and what your opponent can't have.
 
 **Q. Can you count cards in Seven Card Stud?**
 

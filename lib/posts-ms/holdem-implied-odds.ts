@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya apabila draw anda hit. Ia membolehkan anda call draw dengan untung walaupun pot odds semata-mata kata fold — tetapi hanya jika stack cukup dalam dan lawan anda memang akan bayar.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "💰",
@@ -208,7 +208,7 @@ A. Tidak — secara heads-up, apabila lawan anda all-in tiada lagi pusingan pert
 
 **Q. Bagaimana implied odds berfungsi dalam set mining?**
 
-A. Anda flop set dengan pocket pair hanya 11.8% daripada masa (lebih kurang 7.5:1 menentang), jadi anda perlukan bayaran besar pada kali anda kena. Pulang modal teori ialah lebih kurang 7.5× call anda dalam stack, tetapi garis panduan praktikal ialah 15–20× — kusyen tambahan menampung kali anda terlepas, tidak mendapat aksi, atau kalah dengan set.
+A. Anda flop set dengan pocket pair hanya 11.8% daripada masa (lebih kurang 7.5:1 menentang), jadi anda perlukan bayaran besar pada kali anda kena. Pulang modal teori ialah lebih kurang 7.5× call anda dalam stack, tetapi garis panduan praktikal ialah 15–20× — kusyen tambahan menampung kali anda kena tetapi tidak mendapat aksi, atau kalah dengan set (kali anda terlepas sudah pun dikira dalam 7.5× itu).
 
 **Q. Adakah anda ada implied odds dengan flush draw?**
 

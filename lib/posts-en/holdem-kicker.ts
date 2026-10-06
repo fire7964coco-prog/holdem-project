@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -37,7 +37,7 @@ Where a kicker fits in the bigger picture of [poker hand rankings](/en/blog/hold
 
 ## What Is a Kicker in Poker?
 
-**A kicker is the highest card in your five-card hand that isn't part of your ranked combination — it settles the winner when two players share the same rank.** It's also called a "side card." Poker is always a five-card game (your best five out of seven in Hold'em), so once your pair or trips is locked in, the remaining slots are filled by kickers.
+**A kicker is the highest card in your five-card hand that isn't part of your ranked combination — it settles the winner when two players share the same rank.** It's also called a "side card." In Hold'em a hand is always five cards (your best five out of seven), so once your pair or trips is locked in, the remaining slots are filled by kickers.
 
 The key idea: a kicker ==never beats a higher-ranked hand.== A pair of kings with a deuce kicker still crushes a pair of tens with an ace kicker — rank first, kicker only as a tiebreaker. Kickers only matter when the ==r:ranks are identical==: pair vs. the same pair, trips vs. the same trips.
 
@@ -179,7 +179,7 @@ A. Yes — two pair uses one kicker. If you hold K♥ Q♦ and your opponent hol
 
 **Q. Does the kicker have to be in your hand?**
 
-A. No. A kicker can be a community card. Poker always makes the best five cards out of seven, so if the highest side card is a board card that outranks both players' hole cards, it becomes the shared kicker for both and the next card decides. Your hole card only plays as a kicker when it's higher than the board cards it would replace.
+A. No. A kicker can be a community card. In Hold'em your hand is always the best five cards out of seven, so if the highest side card is a board card that outranks both players' hole cards, it becomes the shared kicker for both and the next card decides. Your hole card only plays as a kicker when it's higher than the board cards it would replace.
 
 **Q. How many kickers are in a poker hand?**
 

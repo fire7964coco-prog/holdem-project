@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -190,7 +190,7 @@ A. Tight-aggressive (TAG). Mainkan sedikit tangan, tapi mainkan secara agresif �
 
 **Q. Bagaimana cara menang di Texas Hold'em?**
 
-A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap hand: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan hanya kalah pot kecil — dan itulah seluruh permainannya.
+A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap hand: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan kalah pot kecil — dan itulah seluruh permainannya.
 
 **Q. Kapan Anda harus fold di poker?**
 

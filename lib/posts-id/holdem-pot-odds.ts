@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -189,7 +189,7 @@ Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya b
 
 Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Kalau saya bisa melihat kedua kartu, saya di ~35% — tapi call ini hanya membeli turn, dan turn saja cuma 19,1%, di bawah harganya. Yang menutup celah itu adalah implied odds: jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
 
-Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. Melawan set dan two pair yang biasa jam di turn kosong seperti ini, 19,6% itulah semua yang saya punya — dan sekalipun beberapa tangan top-pair menyelinap ke range-nya, overcard hanya menyeret call ini ke sekitar titik impas. ==r:Fold== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
+Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. Melawan set dan two pair yang biasa jam di turn kosong seperti ini, 19,6% itu sudah skenario terbaik — melawan set, 2♥ dan 3♥ memasangkan board dan memberinya full house, jadi tersisa 7 outs bersih (sekitar 15,2%) — dan sekalipun beberapa tangan top-pair menyelinap ke range-nya, overcard hanya menyeret call ini ke sekitar titik impas. ==r:Fold== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
 
 ---
 

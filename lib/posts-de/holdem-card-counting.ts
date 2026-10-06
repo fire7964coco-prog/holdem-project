@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blocker wirken auch teilweise. Auf einem ==b:Q-J-9== Board ist die Nut-Straße K
 
 ### Card Removal & tote Karten
 
-Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die versehentlich aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. Jedes Out darunter ist eines, das du nicht mehr hast; jede andere sichtbare Karte verkleinert nur das ungesehene Deck. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
+Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die versehentlich aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. (Eine Ausnahme: Eine zu früh ausgeteilte Boardkarte wird zurück in den Stub gemischt und kann noch kommen.) Jedes Out darunter ist eines, das du nicht mehr hast; jede andere sichtbare Karte verkleinert nur das ungesehene Deck. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
 
 ---
 
@@ -159,7 +159,7 @@ A. Blackjack ist du gegen einen Dealer mit festen Regeln, der einen Schuh über 
 
 **Q. Was ist das Poker-Äquivalent zum Kartenzählen?**
 
-A. Outs zählen (Karten, die deine Hand verbessern), Blocker nutzen (Karten, die du hältst und die die Kombinationen deines Gegners reduzieren) und tote Karten tracken (Outs, die du bereits aus dem Spiel verschwinden gesehen hast – eine versehentlich aufgeblitzte Karte, eine beim Folden gezeigte Hand). Zusammen lassen sie dich lesen, was wahrscheinlich kommt und was dein Gegner nicht haben kann.
+A. Outs zählen (Karten, die deine Hand verbessern), Blocker nutzen (Karten, die du hältst und die die Kombinationen deines Gegners reduzieren) und tote Karten tracken (Outs, die du bereits aus dem Spiel verschwinden gesehen hast – eine versehentlich aufgeblitzte Karte, eine beim Folden gezeigte Hand – außer einer zu früh ausgeteilten Boardkarte, die zurück in den Stub kommt). Zusammen lassen sie dich lesen, was wahrscheinlich kommt und was dein Gegner nicht haben kann.
 
 **Q. Kann man bei Seven Card Stud Karten zählen?**
 

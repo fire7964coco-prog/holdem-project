@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-cooler",
   title: "Apa Itu Cooler di Poker? Kekalahan Tak Terhindarkan — dan Kenapa Itu Bukan Bad Beat",
   seoTitle: "Tangan yang Tak Bisa Anda Fold — Apa Itu Cooler Poker?",
-  desc: "Cooler adalah saat tangan monster Anda bertemu tangan lebih besar dan fold tak pernah jadi pilihan — kenapa itu bukan bad beat, lengkap dengan contoh klasik.",
+  desc: "Cooler adalah saat monster Anda bertemu tangan lebih besar dan fold tak pernah jadi pilihan — kenapa, secara ketat, itu bukan bad beat, plus contoh klasik.",
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang hampir tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Dalam arti ketat yang dipakai panduan ini, Anda sudah tertinggal saat chip masuk dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
@@ -67,7 +67,7 @@ Cara paling bersih untuk membedakannya:
 
 </div>
 
-Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar terasa. **Bad beat:** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sejak flop, dan sebuah flopped set nyaris tak pernah di-fold. Kartu yang sama, cerita yang berlawanan. Mengetahui mana yang baru saja terjadi memberi tahu Anda apakah perlu [meninjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") atau sekadar mengabaikannya.
+Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar terasa. **Bad beat:** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sejak flop, dan sebuah flopped set nyaris tak pernah di-fold. Kartu yang sama, cerita yang berlawanan. Keduanya nasib buruk, bukan kesalahan — yang layak dicek adalah apakah permainan Anda benar-benar bertahan; jika tidak, [tinjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") alih-alih sekadar mengabaikannya.
 
 ---
 
@@ -124,7 +124,7 @@ Ada tes lakmus yang bersih, dan pemain jujur memakainya setelah setiap kekalahan
 Akankah saya membuat permainan yang persis sama lagi, hanya dengan informasi yang saya miliki saat itu — range, harga, dan kedalaman stack, bukan sekadar firasat? Jika **tidak**, Anda salah main — dan itu leak untuk diperbaiki, bukan nasib buruk. Jika **ya** — dan itu tetap bertahan saat Anda benar-benar menghitung range dan harga itu (banyak call yang salah terasa benar setiap kali) — itu nasib buruk: dalam arti ketat, cooler jika dua tangan kuat bertabrakan dan Anda tertinggal saat chip masuk, bad beat jika Anda unggul lalu tersalip. Draw yang di-call dengan harga yang pas lalu meleset bukan keduanya — itu sekadar variance.
 :::
 
-Cooler sejati berarti Anda bermain dengan benar dengan tangan kuat dan bertemu tangan yang lebih besar. Begitu "cooler" Anda melibatkan sebuah call yang Anda tak yakin, sebuah bluff yang Anda bujuk diri sendiri untuk melakukannya, atau sebuah fold yang seharusnya Anda buat, ia berhenti menjadi cooler dan menjadi **kesalahan yang menyamar.** Bersikap jujur tanpa ampun tentang mana yang mana — alih-alih menyimpan setiap kekalahan di bawah "sial" — persis itulah yang memisahkan pemain yang berkembang dari pemain yang tetap [fish](/id/blog/holdem-fish) selamanya.
+Cooler sejati berarti Anda bermain dengan benar dengan tangan kuat dan bertemu tangan yang lebih besar. Begitu "cooler" Anda melibatkan sebuah call yang tak bertahan saat dihitung dengan range dan harga, sebuah bluff yang Anda bujuk diri sendiri untuk melakukannya, atau sebuah fold yang seharusnya Anda buat, ia berhenti menjadi cooler dan menjadi **kesalahan yang menyamar.** Bersikap jujur tanpa ampun tentang mana yang mana — alih-alih menyimpan setiap kekalahan di bawah "sial" — persis itulah yang memisahkan pemain yang berkembang dari pemain yang tetap [fish](/id/blog/holdem-fish) selamanya.
 
 ---
 
@@ -191,10 +191,10 @@ A. Tidak persis — kata ini punya makna judi yang lebih tua. Dalam cerita rakya
 ## 3 Hal yang Harus Diingat
 
 1. **Cooler adalah kekalahan tak terhindarkan dengan tangan terlalu kuat untuk fold** — dalam arti ketat, Anda sudah tertinggal saat chip masuk tanpa ada suckout, dan pemain bagus di posisi Anda pun akan kalah pot besar juga.
-2. **Dalam definisi ketat, itu kebalikan dari bad beat.** Bad beat adalah unggul lalu tersalip; cooler adalah sudah tertinggal saat masuk, dengan peluang kecil untuk menyusul. Mengetahui mana yang kena memberi tahu Anda apakah ada yang perlu diperbaiki.
+2. **Dalam definisi ketat, itu kebalikan dari bad beat.** Bad beat adalah unggul lalu tersalip; cooler adalah sudah tertinggal saat masuk, dengan peluang kecil untuk menyusul. Keduanya nasib buruk, bukan kesalahan — apakah ada yang perlu diperbaiki bergantung pada apakah permainan Anda bertahan (poin berikutnya).
 3. **Bersikaplah jujur tentang perbedaan antara cooler dan kesalahan.** Jika permainan itu tetap bertahan saat dihitung dengan range dan harga, dengan informasi yang sama — bukan sekadar keyakinan — abaikan saja. Jika tidak, itu bukan cooler — itu leak yang menyamar.
 
-Pemain terbaik kalah cooler persis sebanyak orang lain; mereka hanya tak membiarkannya menimbulkan kerusakan tambahan apa pun. Catat sebagai variance, lindungi beberapa keputusan berikutnya dari tilt, dan kembali mengungguli [meja](/id/blog/holdem-fish). Deck mendinginkan semua orang pada akhirnya — menang adalah apa yang Anda lakukan di semua tangan yang bukan cooler.
+Bahkan pemain terbaik kalah cooler kira-kira sebanyak orang lain — selisihnya hanya tangan kedua-terbaik langka yang berhasil mereka lepas; mereka hanya tak membiarkannya menimbulkan kerusakan tambahan apa pun. Catat sebagai variance, lindungi beberapa keputusan berikutnya dari tilt, dan kembali mengungguli [meja](/id/blog/holdem-fish). Deck mendinginkan semua orang pada akhirnya — menang adalah apa yang Anda lakukan di semua tangan yang bukan cooler.
 
 ---
 

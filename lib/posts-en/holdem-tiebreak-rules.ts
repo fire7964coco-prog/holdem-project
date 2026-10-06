@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -150,7 +150,7 @@ The same logic runs quads-on-board pots: everyone shares four cards, so the fift
 
 ## Do Suits Matter in Poker?
 
-**No — not for deciding who wins. Suits do exactly one job in Texas Hold'em: five of the same suit make a flush. Beyond that they carry no rank, so two hands that match rank for rank always split the pot, and no card ever outranks another because of its suit.**
+**No — not for deciding who wins. When it comes to winning the pot, suits do exactly one job in Texas Hold'em: five of the same suit make a flush. Beyond that they carry no rank, so two hands that match rank for rank always split the pot, and no card ever outranks another because of its suit.**
 
 The question keeps coming up because suit order genuinely exists in poker — just never for ranking hands in this game. Stud and razz use it to decide who brings it in and who takes an indivisible chip. Hold'em uses it for neither.
 
@@ -205,7 +205,7 @@ A. Yes — and it is the most common way a player loses a pot they were sure the
 
 **Q. Can you use an ace as a 1 in poker?**
 
-A. Yes, but only in the A-2-3-4-5 straight (the "wheel"), where it plays as the lowest card — which makes the wheel the lowest straight in the game. The ace can't wrap around the middle: Q-K-A-2-3 is not a straight.
+A. In Hold'em, yes, but only in the A-2-3-4-5 straight (the "wheel"), where it plays as the lowest card — which makes the wheel the lowest straight in the game. The ace can't wrap around the middle: Q-K-A-2-3 is not a straight.
 
 **Q. Can you have a higher straight than another player?**
 

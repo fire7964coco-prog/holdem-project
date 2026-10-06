@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -278,7 +278,7 @@ A. Raise or fold — don't open-limp. A hand strong enough to play from the wors
 
 **Q. How wide should I open from UTG vs the button?**
 
-A. From UTG in a full ring game, open roughly the top ~13% of hands — strong pairs, AK/AQ, and the best suited broadways. From the button, around ~43% is profitable because guaranteed last action compensates for weaker cards. In 6-max, UTG widens to about ~17%, playing like a full-ring lojack.
+A. From UTG in a full ring game, open roughly the top ~13% of hands — built around strong pairs, AK/AQ, and the best suited broadways, rounded out by medium pairs and top suited aces. From the button, around ~43% is profitable because guaranteed last action compensates for weaker cards. In 6-max, UTG widens to about ~17%, playing like a full-ring lojack.
 
 **Q. How does position affect c-bet frequency?**
 

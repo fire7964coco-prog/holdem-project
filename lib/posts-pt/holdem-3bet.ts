@@ -260,7 +260,7 @@ A. Dê 3-bet quando você tem uma premium, quando o opener é aberto e fraco, ou
 
 **Q. O que é um 3-bet light?**
 
-A. Um 3-bet light (ou blefe de 3-bet) é dar re-raise com uma mão que você não espera que seja a melhor, torcendo para foldar o opener. Os melhores 3-bets light têm blockers e equity de reserva — ases de roda suited como A5s bloqueiam os ases e o ás-rei do seu adversário enquanto ainda flopam flushes e sequências, então ganham mesmo quando pagos.
+A. Um 3-bet light (ou blefe de 3-bet) é dar re-raise com uma mão que você não espera que seja a melhor, torcendo para foldar o opener. Os melhores 3-bets light têm blockers e equity de reserva — ases de roda suited como A5s bloqueiam os ases e o ás-rei do seu adversário enquanto ainda flopam flushes e sequências, então mantêm uma chance real de ganhar o pote mesmo quando pagos.
 
 **Q. Qual a diferença entre um range de 3-bet linear e um polarizado?**
 

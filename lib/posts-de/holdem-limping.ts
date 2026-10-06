@@ -170,7 +170,7 @@ A. Selten – gegen aufmerksame Gegner fast nie. Der Zug selbst ist schnell erkl
 
 **Q. Solltest du preflop jemals open-limpen?**
 
-A. Fast nie in einem normalen Cashgame. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde. Die seltenen Ausnahmen sind der Complete aus dem Small Blind in einem ungeraisten Pot, extrem passive Live-Spiele, in denen du nicht bestraft wirst, und einige short-stacked Late-Position-Situationen im Turnier, die Solver identifiziert haben. Als Standard: raisen oder folden und den Open-Limp weglassen.
+A. Fast nie in einem normalen Cashgame. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde. Der Complete aus dem Small Blind in einem ungeraisten Pot ist ein eigener Fall (oft in Ordnung – siehe die nächste Frage); darüber hinaus sind die seltenen Ausnahmen extrem passive Live-Spiele, in denen du nicht bestraft wirst, und einige short-stacked Late-Position-Situationen im Turnier, die Solver identifiziert haben. Als Standard: raisen oder folden und den Open-Limp weglassen.
 
 **Q. Ist es okay, im Small Blind zu limpen?**
 

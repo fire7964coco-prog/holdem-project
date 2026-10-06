@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 minit",
   emoji: "🃏",
@@ -386,7 +386,7 @@ A. Tangan paling teruk yang mungkin ialah 7-5-4-3-2 dalam jenis bercampur ("seve
 
 **Q. Bolehkah anda ada tiga pasangan dalam poker?**
 
-A. Tidak. Tangan poker sentiasa lima kad, jadi ia paling banyak mengandungi dua pasangan. Jika hole card dan board memberi anda tiga pasangan daripada tujuh kad, hanya dua pasangan terbaik anda dikira untuk tangan itu — satu kad daripada pasangan ketiga masih boleh mengisi slot kicker jika ia kad selebihnya yang tertinggi, tetapi ia tidak pernah menjadi tangan "three pair".
+A. Tidak. Dalam Hold'em, tangan sentiasa lima kad, jadi ia paling banyak mengandungi dua pasangan. Jika hole card dan board memberi anda tiga pasangan daripada tujuh kad, hanya dua pasangan terbaik anda dikira untuk tangan itu — satu kad daripada pasangan ketiga masih boleh mengisi slot kicker jika ia kad selebihnya yang tertinggi, tetapi ia tidak pernah menjadi tangan "three pair".
 
 **Q. Bolehkah As digunakan sebagai 1 dalam poker?**
 

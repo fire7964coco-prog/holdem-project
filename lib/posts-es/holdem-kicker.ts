@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Dónde encaja el kicker en el panorama general de la [jerarquía de manos de pó
 
 ## ¿Qué es un kicker en el póker?
 
-**El kicker es la carta más alta de tus cinco cartas que no forma parte de tu combinación con valor — decide el ganador cuando dos jugadores comparten el mismo valor.** También se le llama "carta lateral" o "carta de desempate". El póker es siempre un juego de cinco cartas (tus mejores cinco de siete en Hold'em), así que una vez fijada tu pareja o tu trío, los huecos restantes los llenan los kickers.
+**El kicker es la carta más alta de tus cinco cartas que no forma parte de tu combinación con valor — decide el ganador cuando dos jugadores comparten el mismo valor.** También se le llama "carta lateral" o "carta de desempate". En Hold'em una mano es siempre de cinco cartas (tus mejores cinco de siete), así que una vez fijada tu pareja o tu trío, los huecos restantes los llenan los kickers.
 
 La idea clave: un kicker ==nunca gana a una mano de valor superior.== Una pareja de reyes con un dos de kicker sigue aplastando a una pareja de dieces con un as de kicker — primero el valor, el kicker solo como desempate. Los kickers únicamente cuentan cuando los ==r:valores son idénticos==: pareja contra la misma pareja, trío contra el mismo trío.
 
@@ -180,7 +180,7 @@ A. Sí — la doble pareja usa un kicker. Si tienes K♥ Q♦ y tu rival tiene J
 
 **Q. ¿El kicker tiene que estar en tu mano?**
 
-A. No. Un kicker puede ser una carta comunitaria. El póker siempre forma las mejores cinco cartas de siete, así que si la carta lateral más alta es una carta de la mesa que supera a las cartas propias de ambos jugadores, se convierte en el kicker compartido de los dos y decide la siguiente carta. Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.
+A. No. Un kicker puede ser una carta comunitaria. En Hold'em tu mano son siempre las mejores cinco cartas de siete, así que si la carta lateral más alta es una carta de la mesa que supera a las cartas propias de ambos jugadores, se convierte en el kicker compartido de los dos y decide la siguiente carta. Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.
 
 **Q. ¿Cuántos kickers hay en una mano de póker?**
 

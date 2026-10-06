@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "Was ist ein Bad Beat beim Poker? Wenn Favorit sein nicht reicht",
   seoTitle: "Was ist ein Bad Beat beim Poker? Zu 80% vorn, verloren",
-  desc: "Ein Bad Beat ist ein Verlust als klarer Favorit, weil dein Gegner Glück hat. Wie er sich vom Cooler unterscheidet, der Bad Beat Jackpot und warum er dir hilft.",
+  desc: "Ein Bad Beat ist ein Verlust als klarer Favorit, weil dein Gegner Glück hat. Unterschied zum Cooler, Bad Beat Jackpot und warum er meist ein gutes Zeichen ist.",
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -29,7 +29,7 @@ Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinb
 Vorne beim Reingehen | Wo du in dem Moment standest, nicht wie die Hand endete
 80%+ | Wie großer Favorit es meist braucht
 Der Suckout | Die Glückskarte, die es dreht
-Insgeheim gut | Was es für deinen langfristigen Profit bedeutet
+Meist ein gutes Zeichen | Was es für deinen langfristigen Profit bedeutet
 :::
 
 ---
@@ -37,7 +37,7 @@ Insgeheim gut | Was es für deinen langfristigen Profit bedeutet
 ## Was ist ein Bad Beat beim Poker?
 
 > **Kurze Antwort**
-> Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne – meist der richtige Spielzug –, und das Deck hat trotzdem den einen Runout geliefert, der dich schlägt. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
+> Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne – meist der richtige Spielzug –, und das Deck hat trotzdem einen der Runouts geliefert, die dich schlagen. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
 
 Der Mechanismus ist immer ein **Suckout**: eine Karte – am Flop, Turn oder River –, die ankommt, nachdem das Geld reingegangen ist, und eine verlierende Hand in eine gewinnende verwandelt. Deine Asse haben ihr Paar Fünfen zerlegt, bis diese dritte Fünf auftauchte. Dein Top Pair lag vor ihrem Flushdraw, bis das letzte Herz fiel. Dieser Moment – der Favorit, der von einem Draw überrannt wird, der es nie hätte schaffen dürfen – ist der Kern des Begriffs. Ihn zu verstehen ist auch der erste Schritt, ihn deine Session nicht ruinieren zu lassen, dieselbe emotionale Disziplin, die einen Profi von einem [Fish](/de/blog/holdem-fish) trennt.
 
@@ -164,7 +164,7 @@ Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der unterg
 
 Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Meistens ist das ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je solche verlierenden Calls machen würde, hieße das, dass alle ihre schwachen Hände korrekt folden – ein weit härteres Spiel. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
 
-Über eine ausreichend große Stichprobe gleicht sich das Glück um deine Erwartung herum aus. Bist du derjenige, der sein Geld gut reinbekommt, kassierst du mehr Beats, als du austeilst – sie sind die Kehrseite all der Pots, die du als Favorit gewinnst. Was deine langfristigen Ergebnisse bestimmt, ist die Qualität deiner Entscheidungen. **Dein Geld gut reinzubekommen und zu verlieren ist auf Dauer trotzdem ein Sieg** in allem, worauf es ankommt. Der Edge ist das, was sich über Tausende von Händen aufsummiert; ein einzelner Beat ist nur Rauschen drumherum.
+Über eine ausreichend große Stichprobe gleicht sich das Glück um deine Erwartung herum aus. Bist du derjenige, der sein Geld gut reinbekommt, kassierst du mehr Beats, als du austeilst – sie sind die Kehrseite all der Pots, die du als Favorit gewinnst. Was deine langfristigen Ergebnisse bestimmt, ist die Qualität deiner Entscheidungen. **Dein Geld gut reinzubekommen und zu verlieren ist auf Dauer trotzdem eine gewinnende Entscheidung** – solange das Reingehen wirklich gut war (ein schlechtes Sizing oder ein ICM-Spot kann es trotzdem zum Fehler machen, wie die FAQ unten erklärt). Der Edge ist das, was sich über Tausende von Händen aufsummiert; ein einzelner Beat ist nur Rauschen drumherum.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -39,7 +39,7 @@ bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 
 **Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda jika tangan dimainkan sampai showdown, dengan pot seri dihitung proporsional.** Jika pot $100 dan 60% darinya menjadi hak Anda, tangan Anda bernilai ==$60 saat ini==, meski chip belum didorong ke mana pun.
 
-Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda heads-up dengan equity 70% di pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — di satu hand Anda menang seluruhnya atau kalah seluruhnya, bukan membawa pulang 70% dari pot ini; tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
+Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda heads-up dengan equity 70% di pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — Anda tidak membawa pulang 70% dari pot *ini* (pot ini Anda menangkan seluruhnya, kalah seluruhnya, atau dibagi); tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
 
 Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa bagian pot ini yang saya miliki?" — dan itulah angka yang Anda bandingkan dengan harga sebuah call.
 
@@ -200,7 +200,7 @@ A. Tak baik atau buruk dengan sendirinya — 50% adalah coin flip. Apakah ini ca
 
 **Q. Apa arti equity 20%?**
 
-A. Artinya seperlima pot menjadi milik tangan Anda dalam jangka panjang — jadi di pot $100 bagian Anda bernilai kira-kira $20. Apakah 20% layak call tergantung harganya: melawan taruhan seperempat pot Anda butuh sekitar 17%, jadi 20% cukup; melawan taruhan setengah pot (butuh 25%) itu fold. Angka equity apa pun baru bermakna saat disandingkan dengan pot odds.
+A. Artinya seperlima pot menjadi milik tangan Anda dalam jangka panjang — jadi di pot $100 bagian Anda bernilai kira-kira $20. Apakah 20% layak call tergantung harganya: melawan taruhan seperempat pot Anda butuh sekitar 17%, jadi 20% cukup; melawan taruhan setengah pot (butuh 25%) itu fold — dengan asumsi tak ada taruhan lagi sesudahnya; kalau masih bisa ada uang masuk nanti, sesuaikan dengan seberapa banyak dari 20% itu yang benar-benar bisa Anda realisasikan. Angka equity apa pun baru bermakna saat disandingkan dengan pot odds.
 
 **Q. Berapa fold equity yang saya butuhkan untuk bluff menguntungkan?**
 

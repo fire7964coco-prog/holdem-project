@@ -262,7 +262,7 @@ A. 3-bet apabila anda ada premium, apabila opener luas dan lemah, atau apabila a
 
 **Q. Apakah 3-bet ringan (light 3-bet)?**
 
-A. 3-bet ringan (atau bluff 3-bet) ialah re-raise dengan tangan yang anda tidak jangka terbaik, dengan harapan opener fold. 3-bet ringan terbaik ada blocker dan equity sandaran — As wheel suited seperti A5s menyekat AA dan AK lawan sambil masih boleh membentuk flush dan straight di flop, jadi ia tetap menang walaupun di-call.
+A. 3-bet ringan (atau bluff 3-bet) ialah re-raise dengan tangan yang anda tidak jangka terbaik, dengan harapan opener fold. 3-bet ringan terbaik ada blocker dan equity sandaran — As wheel suited seperti A5s menyekat AA dan AK lawan sambil masih boleh membentuk flush dan straight di flop, jadi ia masih mempunyai peluang sebenar untuk memenangi pot walaupun di-call.
 
 **Q. Apakah beza antara range 3-bet linear dan terpolarisasi?**
 

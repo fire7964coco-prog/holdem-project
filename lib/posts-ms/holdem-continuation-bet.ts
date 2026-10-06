@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-27",
   updated: "2026-10-06",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 minit",
   emoji: "🔥",
@@ -271,7 +271,7 @@ A. Sekitar 55–70% untuk c-bet flop ialah julat yang sihat dan seimbang. Lebih 
 1. **C-bet ialah bet flop oleh pemain yang raise preflop** — dan ia berkesan kerana tangan terlepas di flop kira-kira dua pertiga masa.
 2. **Board yang menentukan.** Bet board tinggi dan kering yang memihak kepada range anda; check board rendah yang bersambung yang memihak kepada range lawan.
 3. **Kelebihan range menetapkan kekerapan; kelebihan nut menetapkan saiz.** Bet dengan kerap pada board yang anda kuasai; bet besar apabila anda memegang lebih banyak nut atau perlu mengenakan bayaran kepada draw di board basah.
-4. **Kecil (⅓) di board kering, besar (⅔+) di board basah.** Kurangkan c-bet out of position sebagai satu-satunya pemain yang raise (sebagai pemain 3-bet OOP ia terbalik kepada hampir sentiasa), dan jauh kurang dalam pot multiway.
+4. **Kecil (⅓) di board kering, besar (⅔+) di board basah.** Kurangkan c-bet out of position sebagai satu-satunya pemain yang raise (sebagai pemain 3-bet OOP ia terbalik kepada melebihi 97% pada ketiga-tiga board yang kami solve), dan jauh kurang dalam pot multiway.
 5. **Check ialah senjata.** Pemain terbaik kerap check dan dengan sengaja — c-bet ialah pisau bedah, bukan tukul.
 
 Buat perkara ini dengan betul dan anda berhenti membakar pot pada board yang memang bukan milik anda untuk di-bet. Gandingkan c-bet yang tajam dengan [permainan 3-bet](/ms/blog/holdem-3bet) yang mantap, kesedaran [posisi](/ms/blog/holdem-position-play) yang sebenar dan [rangka kerja strategi](/ms/blog/holdem-strategy) penuh, dan permainan flop anda akan meninggalkan golongan "bet setiap flop" di belakang tanpa disedari.

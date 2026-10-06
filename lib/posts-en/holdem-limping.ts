@@ -160,7 +160,7 @@ A. A limp-reraise is when you limp, an opponent raises behind you, and you then 
 
 **Q. Should you ever open-limp preflop?**
 
-A. Almost never in a normal cash game. If a hand is good enough to play, it's usually good enough to raise; if it isn't, fold. The rare exceptions are completing the small blind in an unraised pot, extremely passive live games where you won't be punished, and some short-stacked late-position tournament spots identified by solvers. As a default, raise or fold and skip the open-limp.
+A. Almost never in a normal cash game. If a hand is good enough to play, it's usually good enough to raise; if it isn't, fold. Completing the small blind in an unraised pot is a separate case (often fine — see the next question); beyond that, the rare exceptions are extremely passive live games where you won't be punished, and some short-stacked late-position tournament spots identified by solvers. As a default, raise or fold and skip the open-limp.
 
 **Q. Is it okay to limp in the small blind?**
 

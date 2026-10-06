@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Los bloqueadores también funcionan parcialmente. En una mesa ==b:Q-J-9==, la es
 
 ### Eliminación de cartas y cartas muertas
 
-Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada out que esté entre ellas es un out que ya no tienes; cualquier otra carta expuesta solo encoge la baraja no vista. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
+Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. (Una excepción: una carta de mesa repartida antes de tiempo se vuelve a barajar con el resto del mazo y todavía puede salir.) Cada out que esté entre ellas es un out que ya no tienes; cualquier otra carta expuesta solo encoge la baraja no vista. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
 
 ---
 
@@ -159,7 +159,7 @@ A. El blackjack es tú contra un repartidor de reglas fijas usando un zapato a l
 
 **Q. ¿Cuál es el equivalente del conteo de cartas en el póker?**
 
-A. Contar outs (cartas que mejoran tu mano), usar bloqueadores (cartas que llevas y que reducen las combinaciones del rival) y rastrear cartas muertas (outs que ya has visto salir del juego — una carta enseñada por error, una mano mostrada al foldear). Juntos te dejan leer qué es probable que salga y qué no puede tener tu rival.
+A. Contar outs (cartas que mejoran tu mano), usar bloqueadores (cartas que llevas y que reducen las combinaciones del rival) y rastrear cartas muertas (outs que ya has visto salir del juego — una carta enseñada por error, una mano mostrada al foldear — salvo una carta de mesa repartida antes de tiempo, que vuelve al mazo). Juntos te dejan leer qué es probable que salga y qué no puede tener tu rival.
 
 **Q. ¿Se pueden contar cartas en Seven Card Stud?**
 

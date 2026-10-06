@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -200,7 +200,7 @@ A. Por sí solo no es ni bueno ni malo — un 50% es un coin flip. Que sea un ca
 
 **Q. ¿Qué significa un 20% de equity?**
 
-A. Significa que a largo plazo a tu mano le corresponde una quinta parte del bote — así que en un bote de $100 tu parte vale en torno a $20. Que un 20% sea un call depende del precio: frente a una apuesta de un cuarto de bote necesitas un 17% aproximadamente, así que un 20% está bien; frente a una apuesta de medio bote (hace falta un 25%) es un fold. Cualquier cifra de equity solo significa algo junto a las pot odds.
+A. Significa que a largo plazo a tu mano le corresponde una quinta parte del bote — así que en un bote de $100 tu parte vale en torno a $20. Que un 20% sea un call depende del precio: frente a una apuesta de un cuarto de bote necesitas un 17% aproximadamente, así que un 20% está bien; frente a una apuesta de medio bote (hace falta un 25%) es un fold — siempre que no vengan más apuestas detrás; si todavía puede entrar más dinero, ajusta según cuánto de ese 20% llegarás a realizar de verdad. Cualquier cifra de equity solo significa algo junto a las pot odds.
 
 **Q. ¿Qué es el fold equity?**
 

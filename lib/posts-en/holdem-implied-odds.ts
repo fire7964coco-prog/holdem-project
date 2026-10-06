@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -207,7 +207,7 @@ A. No — heads-up, when your opponent is all-in there are no more betting round
 
 **Q. How do implied odds work in set mining?**
 
-A. You flop a set with a pocket pair only 11.8% of the time (about 7.5-to-1 against), so you need a big payoff on the times you hit. The theoretical break-even is a total payoff (the pot plus what you win afterward) of roughly 7.5× your call, but the practical guideline is stacks of 15–20× your call — the extra cushion covers the times you miss, get no action, or lose with a set.
+A. You flop a set with a pocket pair only 11.8% of the time (about 7.5-to-1 against), so you need a big payoff on the times you hit. The theoretical break-even is a total payoff (the pot plus what you win afterward) of roughly 7.5× your call, but the practical guideline is stacks of 15–20× your call — the extra cushion covers the times you hit but get no action, or lose with a set (the misses are already priced into the 7.5×).
 
 **Q. Do you have implied odds with a flush draw?**
 

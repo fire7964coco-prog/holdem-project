@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "O que é um bad beat no poker? Quando ser o favorito não basta",
   seoTitle: "Você tinha 80% e perdeu — o que é um bad beat?",
-  desc: "Bad beat é perder como grande favorito quando o adversário dá sorte. A diferença para o cooler, o bad beat jackpot e por que ele é secretamente bom pra você.",
+  desc: "Bad beat é perder como grande favorito quando o adversário dá sorte. A diferença para o cooler, o bad beat jackpot e por que costuma ser um bom sinal.",
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler no sentido estrito, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas uma sequência constante de bad beats normalmente significa que os adversários estão colocando dinheiro atrás — o tipo de jogo em que você quer estar.",
   category: "glossary",
   date: "2026-07-05",
@@ -29,14 +29,14 @@ Um **bad beat** é quando você coloca suas fichas como favorito estatístico pe
 Na frente ao entrar | Onde você estava naquele momento, não como a mão terminou
 80%+ | Que tamanho de favorito costuma ser necessário
 O suckout | A carta de sorte que vira tudo
-Secretamente bom | O que isso significa pro seu lucro no longo prazo
+Costuma ser bom sinal | O que isso significa pro seu lucro no longo prazo
 :::
 
 ---
 
 ## O que é um bad beat no poker?
 
-**Um bad beat é uma mão que você perde apesar de ser favorito estatístico forte quando as fichas entraram, porque o adversário pegou uma carta improvável pra te ultrapassar.** Você colocou seu dinheiro "bem", na frente na matemática — normalmente a jogada correta — e o baralho simplesmente produziu o único runout que te bate. A derrota não é culpa sua; é a variância fazendo o seu pior.
+**Um bad beat é uma mão que você perde apesar de ser favorito estatístico forte quando as fichas entraram, porque o adversário pegou uma carta improvável pra te ultrapassar.** Você colocou seu dinheiro "bem", na frente na matemática — normalmente a jogada correta — e o baralho produziu um dos runouts que te batem. A derrota não é culpa sua; é a variância fazendo o seu pior.
 
 O mecanismo é sempre um **suckout**: uma carta — no flop, no turn ou no river — que chega depois de o dinheiro entrar e transforma uma mão perdedora numa vencedora. Seus ases estavam esmagando o par de cincos dele até aquele terceiro cinco aparecer. Seu top pair estava na frente do flush draw dele até a última copas cair. Esse momento — o favorito atropelado por um projeto que não tinha nada a ver com aquilo — é o coração do termo. Entender isso também é o primeiro passo pra não deixar que ele destrua sua sessão, a mesma disciplina emocional que separa um profissional de um [fish](/pt/blog/holdem-fish).
 
@@ -144,7 +144,7 @@ Agora a verdade que transforma bad beats de combustível de tilt numa fonte sile
 
 Pense no que um bad beat exige: um adversário que colocou o dinheiro *atrás*, como azarão matemático, e deu sorte. Na maioria das vezes, isso é um jogador tomando **decisões perdedoras** — exatamente o adversário que você quer. Se ninguém na sua mesa nunca fizesse esses calls perdedores, significaria que todos estavam foldando suas mãos fracas corretamente — um jogo bem mais duro de bater. Como diz uma máxima de coaching conhecida, um suckout de um jogador fraco é um *presente*: é o preço da entrada por levar as fichas dele nas outras quatro vezes.
 
-Numa amostra grande o suficiente, a sorte se equilibra em torno da sua expectativa. Se é você quem coloca o dinheiro bem, você vai levar mais batidas do que *entrega* — elas são o outro lado de todos os potes que você ganha como favorito. O que impulsiona os seus resultados de longo prazo é a qualidade das suas decisões. **Colocar o dinheiro bem e perder ainda é uma vitória** em todos os sentidos que importam ao longo do tempo. A vantagem é o que se acumula ao longo de milhares de mãos; uma batida isolada é ruído em volta dela.
+Numa amostra grande o suficiente, a sorte se equilibra em torno da sua expectativa. Se é você quem coloca o dinheiro bem, você vai levar mais batidas do que *entrega* — elas são o outro lado de todos os potes que você ganha como favorito. O que impulsiona os seus resultados de longo prazo é a qualidade das suas decisões. **Colocar o dinheiro bem e perder ainda é uma decisão vencedora** ao longo do tempo — desde que colocar o dinheiro tenha sido bom de verdade (um sizing ruim ou um spot de ICM ainda podem tornar isso um erro, como explica o FAQ abaixo). A vantagem é o que se acumula ao longo de milhares de mãos; uma batida isolada é ruído em volta dela.
 
 ---
 

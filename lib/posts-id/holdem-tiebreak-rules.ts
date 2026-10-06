@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -149,7 +149,7 @@ Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi emp
 
 ## Apakah jenis kartu menentukan pemenang di poker?
 
-**Tidak — bukan untuk menentukan siapa yang menang. Di Texas Hold'em jenis kartu punya tepat satu tugas: lima kartu sejenis membentuk flush. Di luar itu jenis kartu tak punya peringkat, jadi dua tangan yang sama persis nilainya selalu membagi pot, dan tak ada kartu yang mengalahkan kartu lain karena jenisnya.**
+**Tidak — bukan untuk menentukan siapa yang menang. Dalam urusan memenangkan pot, jenis kartu di Texas Hold'em punya tepat satu tugas: lima kartu sejenis membentuk flush. Di luar itu jenis kartu tak punya peringkat, jadi dua tangan yang sama persis nilainya selalu membagi pot, dan tak ada kartu yang mengalahkan kartu lain karena jenisnya.**
 
 Pertanyaan ini terus muncul karena urutan jenis kartu memang ada di poker — hanya saja tak pernah dipakai untuk meranking tangan di permainan ini. Stud dan razz memakainya untuk menentukan siapa yang membayar bring-in dan siapa yang menerima chip yang tak bisa dibagi. Hold'em tak memakainya untuk satu pun dari keduanya.
 
@@ -204,7 +204,7 @@ A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan se
 
 **Q. Bisakah As dipakai sebagai angka 1 di poker?**
 
-A. Bisa, tapi hanya dalam straight A-2-3-4-5 (the "wheel"), di mana ia main sebagai kartu terendah — yang menjadikan wheel straight terendah dalam permainan. As tak bisa berputar lewat tengah: Q-K-A-2-3 bukan straight.
+A. Di Hold'em, bisa, tapi hanya dalam straight A-2-3-4-5 (the "wheel"), di mana ia main sebagai kartu terendah — yang menjadikan wheel straight terendah dalam permainan. As tak bisa berputar lewat tengah: Q-K-A-2-3 bukan straight.
 
 **Q. Bisakah Anda punya straight yang lebih tinggi dari pemain lain?**
 

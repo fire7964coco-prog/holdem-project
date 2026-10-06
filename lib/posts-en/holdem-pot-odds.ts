@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -188,7 +188,7 @@ I made every one of these before they made me broke. Watch for them:
 
 I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. If I got to see both cards I'd be at ~35% — but this call only buys the turn, and the turn alone is 19.1%, short of the price. What closes the gap is implied odds: if a heart lands I stack a top-pair hand. ==g:Easy call.==
 
-Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. Against the sets and two pair that jam a brick turn like this, 19.6% is all I have — and even if a few top-pair hands sneak into his range, the overcards only drag the call up to about break-even. ==r:Fold== — and the exact spot where "hope" used to cost me a stack.
+Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. Against the sets and two pair that jam a brick turn like this, 19.6% is the best case — against a set, the 2♥ and 3♥ pair the board and fill him up, leaving 7 clean outs (7 of 46 unseen cards, about 15.2%) — and even if a few top-pair hands sneak into his range, the overcards only drag the call up to about break-even. ==r:Fold== — and the exact spot where "hope" used to cost me a stack.
 
 ---
 

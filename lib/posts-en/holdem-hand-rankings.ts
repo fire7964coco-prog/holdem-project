@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -385,7 +385,7 @@ A. The worst possible hand is 7-5-4-3-2 in mixed suits ("seven-high"). It's the 
 
 **Q. Can you have three pairs in poker?**
 
-A. No. A poker hand is always five cards, so it can contain at most two pairs. If your hole cards and the board give you three pairs across seven cards, only your best two pairs count toward the hand — one card of the third pair can still fill the kicker slot if it's your highest leftover card, but it never becomes a "three pair" hand.
+A. No. In Hold'em a hand is always five cards, so it can contain at most two pairs. If your hole cards and the board give you three pairs across seven cards, only your best two pairs count toward the hand — one card of the third pair can still fill the kicker slot if it's your highest leftover card, but it never becomes a "three pair" hand.
 
 **Q. Can you use an ace as a 1 in poker?**
 

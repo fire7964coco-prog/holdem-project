@@ -161,7 +161,7 @@ A. Un limp-reraise es cuando limpeas, un rival sube detrás de ti, y tú entonce
 
 **Q. ¿Deberías hacer open-limp preflop alguna vez?**
 
-A. Casi nunca en una partida de cash normal. Si una mano es lo bastante buena para jugarla, normalmente lo es para subir; si no lo es, foldea. Las raras excepciones son completar la ciega pequeña en un bote sin subir, partidas en vivo extremadamente pasivas donde no te van a castigar, y algunos spots de torneo en posición tardía con stack corto identificados por los solvers. Como estándar, sube o foldea y sáltate el open-limp.
+A. Casi nunca en una partida de cash normal. Si una mano es lo bastante buena para jugarla, normalmente lo es para subir; si no lo es, foldea. Completar la ciega pequeña en un bote sin subir es un caso aparte (a menudo está bien — mira la siguiente pregunta); fuera de eso, las raras excepciones son partidas en vivo extremadamente pasivas donde no te van a castigar, y algunos spots de torneo en posición tardía con stack corto identificados por los solvers. Como estándar, sube o foldea y sáltate el open-limp.
 
 **Q. ¿Está bien limpear en la ciega pequeña?**
 

@@ -281,7 +281,7 @@ A. 3-bette, wenn du eine Premium hast, wenn der Opener weit und schwach ist, ode
 
 **Q. Was ist eine Light-3-Bet?**
 
-A. Eine Light-3-Bet (oder 3-Bet-Bluff) ist das Re-Raisen mit einer Hand, von der du nicht erwartest, dass sie die beste ist, in der Hoffnung, den Opener herauszufolden. Die besten Light-3-Bets haben Blocker und Backup-Equity – suited Wheel-Assen wie A5s blocken die Assen und Ass-König deines Gegners und floppen trotzdem Flushes und Straßen, sie gewinnen also selbst dann, wenn sie gecallt werden.
+A. Eine Light-3-Bet (oder 3-Bet-Bluff) ist das Re-Raisen mit einer Hand, von der du nicht erwartest, dass sie die beste ist, in der Hoffnung, den Opener herauszufolden. Die besten Light-3-Bets haben Blocker und Backup-Equity – suited Wheel-Assen wie A5s blocken die Assen und Ass-König deines Gegners und floppen trotzdem Flushes und Straßen, sie behalten also selbst dann eine echte Chance, den Pot zu gewinnen, wenn sie gecallt werden.
 
 **Q. Was ist der Unterschied zwischen einer linearen und einer polarisierten 3-Bet-Range?**
 

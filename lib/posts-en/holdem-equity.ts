@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -199,7 +199,7 @@ A. It's neither good nor bad on its own — 50% is a coin flip. Whether it's a c
 
 **Q. What does 20% equity mean?**
 
-A. It means a fifth of the pot belongs to your hand in the long run — so in a $100 pot your share is worth roughly $20. Whether 20% is a call depends on the price: against a quarter-pot bet you need about 17%, so 20% is fine; against a half-pot bet (25% needed) it's a fold. Any equity figure only means something next to the pot odds.
+A. It means a fifth of the pot belongs to your hand in the long run — so in a $100 pot your share is worth roughly $20. Whether 20% is a call depends on the price: against a quarter-pot bet you need about 17%, so 20% is fine; against a half-pot bet (25% needed) it's a fold — assuming no more betting follows; if more money can go in later, adjust for how much of that 20% you'll actually realize. Any equity figure only means something next to the pot odds.
 
 **Q. How much fold equity do I need to bluff profitably?**
 

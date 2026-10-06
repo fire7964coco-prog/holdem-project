@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-06 (15) (MA-332~338 판정·회신 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-06 (16) (§2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
@@ -19,7 +19,7 @@
 - 회차 5 «다음 = 회차 6(대회 카드)»은 사장님 «조금 나중에» — 이 보강 뒤.
 - ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 A 4개 `/tr/blog/{texas-holdem-rules-for-beginners, holdem-betting-actions, holdem-game-order, holdem-hand-rankings}` + 회차 B 5개 `/tr/blog/{holdem-tiebreak-rules, holdem-showdown-rules, holdem-glossary, holdem-all-in-rules, holdem-blind-meaning}` + 회차 C 4개 `/tr/blog/{holdem-tournament, holdem-probability, holdem-pot-odds, holdem-tournament-vs-cash-game}` + 회차 D 5개 `/tr/blog/{holdem-strategy, holdem-positions, holdem-continuation-bet, donk-bet-strategy}` · `/tr/solver`.
 - ▶ 다음: 보강 효과 판독은 색인 뒤(GSC tr 쿼리 · 28일창) — 자동 착수 금지 · 사장님 지시 대기.
-- 📬 우편함: ✅ MA-332~338 판정·회신(10-06 (15) · MB-191 · 전부 채택 · 등재 = `docs/en-first-queue.md` §2-Z). ▶ 다음 = **§2-Z 이행**(① ID 고유 Z-1~Z-8 한 회차 → ② EN-먼저 Z-21~Z-33 EN → 9로케일 · Z-28은 MB-178 자기회귀) · **MA-339(4-5 부분2) 판정** — 받은 MA는 다음 세션 안에 회신+등재.
+- 📬 우편함: ✅ MA-332~338 판정(MB-191) → ✅ **§2-Z 이행·배포**(10-06 (16) · MB-192 · ID 고유 9 + EN 13편 → 9로케일 · 검수장 재판정 대기). ▶ 다음 = **MA-339(4-5 부분2 fish·rake·straddle) 판정** — 받은 MA는 다음 세션 안에 회신+등재. 남긴 것 = `docs/en-first-queue.md` §2-Z 🪶(자동 착수 금지).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 5 ✅ 배포 (10-06 (9) · MB-186 · GTO 4편 + /tr/solver) · 다음 = 사장님 지시 대기
 

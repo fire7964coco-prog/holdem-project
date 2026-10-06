@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-06",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 mnt",
@@ -144,7 +144,7 @@ Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai d
 > **Jawaban singkat**
 > Aturan 2 dan 4 memperkirakan persentase jadinya sebuah draw: kalikan outs dengan dua untuk satu kartu tersisa, dan dengan empat untuk turn dan river sekaligus. Angka dua kartu hanya bisa dipakai menilai call di flop jika Anda tak perlu membayar lagi untuk melihat kedua kartu. Ini jalan pintas, bukan equity yang pasti.
 
-Anda tak bisa membawa tabel itu di kepala. Kalau Anda mencari satu ==rumus poker== yang benar-benar dipakai di meja, inilah dia: **Aturan 2 dan 4** membawa Anda dalam sekitar satu-dua persen dalam satu detik:
+Anda tak bisa membawa tabel itu di kepala. Kalau Anda mencari satu ==rumus poker== yang benar-benar dipakai di meja, inilah dia: **Aturan 2 dan 4** membawa Anda dekat ke angka sebenarnya dalam satu detik — selisihnya sekitar satu-dua persen sampai kira-kira 10 outs; di atas itu, ×4 makin melebih-lebihkan:
 
 :::steps
 Hitung outs Anda | Kartu tak terlihat yang menyempurnakan tangan Anda (flush draw = 9)

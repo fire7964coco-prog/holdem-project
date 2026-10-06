@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-bad-beat",
   title: "Apa itu bad beat di poker? Saat jadi favorit saja tak cukup",
   seoTitle: "Anda 80% menang — tapi kalah. Apa itu bad beat?",
-  desc: "Bad beat adalah kalah sebagai favorit besar saat lawan beruntung. Bedanya dengan cooler, bad beat jackpot, dan kenapa diam-diam itu bagus untuk Anda.",
+  desc: "Bad beat adalah kalah sebagai favorit besar saat lawan beruntung. Bedanya dengan cooler, bad beat jackpot, dan kenapa itu biasanya pertanda baik.",
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler dalam arti ketat, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi aliran bad beat yang terus-menerus biasanya berarti lawan memasukkan uang saat tertinggal — jenis permainan yang memang Anda cari.",
   category: "glossary",
   date: "2026-07-05",
@@ -29,14 +29,14 @@ Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat 
 Unggul saat masuk | Posisi Anda saat itu, bukan bagaimana tangan berakhir
 80%+ | Seberapa besar favorit yang biasanya dibutuhkan
 Suckout | Kartu beruntung yang membalikkannya
-Diam-diam bagus | Artinya bagi profit jangka panjang Anda
+Biasanya pertanda baik | Artinya bagi profit jangka panjang Anda
 :::
 
 ---
 
 ## Apa Itu Bad Beat di Poker?
 
-**Bad beat adalah tangan di mana Anda kalah meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Uang Anda masuk "good," unggul dalam matematika — biasanya itulah permainan yang benar — dan dek sekadar menghasilkan satu-satunya runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
+**Bad beat adalah tangan di mana Anda kalah meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Uang Anda masuk "good," unggul dalam matematika — biasanya itulah permainan yang benar — dan dek menghasilkan salah satu runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
 
 Mekanismenya selalu **suckout**: sebuah kartu — di flop, turn, atau river — yang datang setelah uang masuk dan mengubah tangan kalah menjadi tangan menang. Aces Anda menghancurkan pocket fives mereka sampai five ketiga itu muncul. Top pair Anda unggul atas flush draw mereka sampai heart terakhir jatuh di river. Momen itu — favorit dikejar hingga tersusul oleh draw yang seharusnya tak sampai — adalah inti dari istilah ini. Memahaminya juga langkah pertama agar tidak membiarkannya menghancurkan sesi Anda, disiplin emosional yang sama yang memisahkan pro dari [fish](/id/blog/holdem-fish).
 
@@ -144,7 +144,7 @@ Sekarang kebenaran yang mengubah bad beat dari bahan bakar tilt menjadi sumber p
 
 Pikirkan apa yang dibutuhkan sebuah bad beat: lawan yang memasukkan uang saat *tertinggal*, sebagai underdog matematis, dan beruntung. Sebagian besar waktu, itu pemain yang membuat **keputusan-keputusan kalah** — persis lawan yang Anda inginkan. Jika tak ada seorang pun di meja Anda yang pernah membuat call kalah seperti itu, itu berarti semua orang mem-fold tangan lemah mereka dengan benar — permainan yang jauh lebih sulit untuk dikalahkan. Seperti kata pepatah pelatih poker yang terkenal, suckout dari pemain lemah adalah sebuah *hadiah*: itu harga tiket untuk mengambil chip mereka empat kali lainnya.
 
-Di atas sampel yang cukup besar, keberuntungan merata di sekitar ekspektasi Anda. Jika Anda yang biasanya memasukkan uang saat unggul, Anda akan menerima lebih banyak bad beat daripada yang Anda berikan — itulah sisi lain dari semua pot yang Anda menangkan sebagai favorit. Yang menggerakkan hasil jangka panjang Anda adalah kualitas keputusan Anda. **Memasukkan uang saat unggul lalu kalah tetaplah sebuah kemenangan** dalam segala hal yang penting seiring waktu. Edge itulah yang berlipat di sepanjang ribuan tangan; satu bad beat hanyalah noise di sekitarnya.
+Di atas sampel yang cukup besar, keberuntungan merata di sekitar ekspektasi Anda. Jika Anda yang biasanya memasukkan uang saat unggul, Anda akan menerima lebih banyak bad beat daripada yang Anda berikan — itulah sisi lain dari semua pot yang Anda menangkan sebagai favorit. Yang menggerakkan hasil jangka panjang Anda adalah kualitas keputusan Anda. **Memasukkan uang saat unggul lalu kalah tetaplah keputusan yang menang** seiring waktu — asalkan memasukkannya memang benar-benar good (sizing yang buruk atau spot ICM tetap bisa menjadikannya kesalahan, seperti dijelaskan FAQ di bawah). Edge itulah yang berlipat di sepanjang ribuan tangan; satu bad beat hanyalah noise di sekitarnya.
 
 ---
 

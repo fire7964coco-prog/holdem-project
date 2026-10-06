@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -189,7 +189,7 @@ Cometí todos y cada uno de estos antes de que me dejaran sin fichas. Estate ate
 
 Tengo ==b:A♥ K♥== en un flop ==Q♥ 7♥ 2♣== — el proyecto al color nut, 9 outs. El bote es de $100, el villano apuesta $50. Mis pot odds: estoy recibiendo 3 a 1, así que necesito un **25%**. Si fuera a ver las dos cartas estaría en ~35% — pero este call solo me compra el turn, y el turn por sí solo es un 19.1%, por debajo del precio. Lo que cierra el hueco son las odds implícitas: si cae un corazón le saco todo el stack a una mano de top pair. ==g:Call fácil.==
 
-El turn es el 3♠ — un ladrillo. El bote es de $200 y el villano empuja $200 — una apuesta del tamaño del bote, así que ahora solo estoy recibiendo 2 a 1 y necesito un **33%**. Pero con **una sola carta por venir mi color es solo el 19.6%** (cuento solo los 9 corazones — frente a un empujón del tamaño del bote, emparejar mi as o mi rey a menudo sigue perdiendo, así que las sobrecartas no son outs limpios). El precio directo dice fold; mis odds implícitas ahora son cero porque el villano está all-in y no puede pagarme nada más. Contra los sets y las dobles parejas que empujan en un turn ladrillo como este, el 19.6% es todo lo que tengo — y aunque se cuelen algunas manos de top pair en su rango, las sobrecartas solo acercan el call a más o menos el punto de equilibrio. ==r:Fold== — y el momento exacto en el que la "esperanza" solía costarme un stack.
+El turn es el 3♠ — un ladrillo. El bote es de $200 y el villano empuja $200 — una apuesta del tamaño del bote, así que ahora solo estoy recibiendo 2 a 1 y necesito un **33%**. Pero con **una sola carta por venir mi color es solo el 19.6%** (cuento solo los 9 corazones — frente a un empujón del tamaño del bote, emparejar mi as o mi rey a menudo sigue perdiendo, así que las sobrecartas no son outs limpios). El precio directo dice fold; mis odds implícitas ahora son cero porque el villano está all-in y no puede pagarme nada más. Contra los sets y las dobles parejas que empujan en un turn ladrillo como este, el 19.6% es el mejor caso — contra un set, el 2♥ y el 3♥ emparejan la mesa y le dan full, así que me quedan 7 outs limpios (alrededor del 15.2%) — y aunque se cuelen algunas manos de top pair en su rango, las sobrecartas solo acercan el call a más o menos el punto de equilibrio. ==r:Fold== — y el momento exacto en el que la "esperanza" solía costarme un stack.
 
 ---
 

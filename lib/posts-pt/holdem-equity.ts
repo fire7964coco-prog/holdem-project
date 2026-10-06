@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -200,7 +200,7 @@ A. Não é nem bom nem ruim por si só — 50% é um coin flip. Se é um call de
 
 **Q. O que significa ter 20% de equity?**
 
-A. Significa que um quinto do pote pertence à sua mão no longo prazo — num pote de $100, sua fatia vale mais ou menos $20. Se 20% é um call depende do preço: contra uma aposta de um quarto do pote você precisa de uns 17%, então 20% serve; contra uma aposta de meio pote (25% exigidos) é fold. Qualquer número de equity só significa alguma coisa ao lado das pot odds.
+A. Significa que um quinto do pote pertence à sua mão no longo prazo — num pote de $100, sua fatia vale mais ou menos $20. Se 20% é um call depende do preço: contra uma aposta de um quarto do pote você precisa de uns 17%, então 20% serve; contra uma aposta de meio pote (25% exigidos) é fold — supondo que não haja mais apostas depois; se ainda pode entrar mais dinheiro, ajuste pelo quanto desses 20% você vai realmente realizar. Qualquer número de equity só significa alguma coisa ao lado das pot odds.
 
 **Q. De quanta fold equity eu preciso para blefar com lucro?**
 

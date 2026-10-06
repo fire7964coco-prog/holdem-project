@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-01",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -216,7 +216,7 @@ A. Nein – heads-up gibt es, wenn dein Gegner all-in ist, keine weiteren Setzru
 
 **Q. Wie funktionieren Implied Odds beim Set Mining?**
 
-A. Du floppst mit einem Pocket Pair nur 11,8% der Fälle ein Set (etwa 7,5:1 dagegen), du brauchst also einen großen Payoff für die Male, in denen du triffst. Der theoretische Break-even liegt bei einem Gesamt-Payoff (Pot plus das, was du danach gewinnst) von etwa 7,5× deinem Call, aber die praktische Richtlinie sind Stacks von 15–20× deinem Call – der Extra-Puffer deckt die Male, in denen du verfehlst, keine Action bekommst oder mit einem Set verlierst.
+A. Du floppst mit einem Pocket Pair nur 11,8% der Fälle ein Set (etwa 7,5:1 dagegen), du brauchst also einen großen Payoff für die Male, in denen du triffst. Der theoretische Break-even liegt bei einem Gesamt-Payoff (Pot plus das, was du danach gewinnst) von etwa 7,5× deinem Call, aber die praktische Richtlinie sind Stacks von 15–20× deinem Call – der Extra-Puffer deckt die Male, in denen du triffst, aber keine Action bekommst, oder mit einem Set verlierst (die Fehlschläge sind in den 7,5× bereits eingepreist).
 
 **Q. Hast du Implied Odds mit einem Flushdraw?**
 

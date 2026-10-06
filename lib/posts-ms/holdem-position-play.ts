@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In position bermaksud anda bertindak terakhir dan melihat keputusan setiap lawan sebelum membelanjakan cip. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi range, board dan aksi boleh membalikkan corak itu. Sebab itu UTG open kira-kira 13% tangan dan button kira-kira 43%.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-05",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
   emoji: "🎯",
@@ -279,7 +279,7 @@ A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan 
 
 **Q. Berapa luas range yang patut saya open dari UTG berbanding button?**
 
-A. Dari UTG dalam permainan full ring, open sekitar ~13% tangan teratas — pasangan kuat, AK/AQ dan suited broadway terbaik. Dari button, sekitar ~43% menguntungkan kerana aksi terakhir yang dijamin menampung kad yang lebih lemah. Dalam 6-max, UTG melebar kepada kira-kira ~17%, bermain seperti lojack full ring.
+A. Dari UTG dalam permainan full ring, open sekitar ~13% tangan teratas — terasnya pasangan kuat, AK/AQ dan suited broadway terbaik, dilengkapkan dengan pasangan sederhana dan suited ace teratas. Dari button, sekitar ~43% menguntungkan kerana aksi terakhir yang dijamin menampung kad yang lebih lemah. Dalam 6-max, UTG melebar kepada kira-kira ~17%, bermain seperti lojack full ring.
 
 **Q. Bagaimana posisi mempengaruhi kekerapan c-bet?**
 

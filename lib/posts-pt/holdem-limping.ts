@@ -161,7 +161,7 @@ A. Um limp-reraise é quando você limpa, um adversário aumenta atrás de você
 
 **Q. Você deveria alguma vez open-limpar no pré-flop?**
 
-A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. As raras exceções são completar o small blind num pote sem aumento, jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de torneio em posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
+A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. Completar o small blind num pote sem aumento é um caso à parte (muitas vezes tudo bem — veja a próxima pergunta); fora isso, as raras exceções são jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de torneio em posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
 
 **Q. Tudo bem limpar no small blind?**
 

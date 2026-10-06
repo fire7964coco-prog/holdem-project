@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -151,7 +151,7 @@ La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatr
 
 ## ¿Importan los palos en el póker?
 
-**No — no para decidir quién gana. Los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
+**No — no para decidir quién gana. A la hora de ganar el bote, los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
 
 La pregunta vuelve una y otra vez porque el orden de palos sí existe en el póker — solo que en este juego nunca sirve para ordenar manos. El stud y el razz lo usan para decidir quién pone el bring-in y quién se lleva una ficha indivisible. El Hold'em no lo usa para ninguna de las dos cosas.
 
@@ -206,7 +206,7 @@ A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las
 
 **Q. ¿Se puede usar el as como un 1 en el póker?**
 
-A. Sí, pero solo en la escalera A-2-3-4-5 (la "rueda"), donde juega como la carta más baja — lo que hace de la rueda la escalera más baja del juego. El as no puede dar la vuelta por el medio: Q-K-A-2-3 no es escalera.
+A. En Hold'em, sí, pero solo en la escalera A-2-3-4-5 (la "rueda"), donde juega como la carta más baja — lo que hace de la rueda la escalera más baja del juego. El as no puede dar la vuelta por el medio: Q-K-A-2-3 no es escalera.
 
 **Q. ¿Puedes tener una escalera más alta que otro jugador?**
 
