@@ -179,13 +179,15 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * tr — ★2026-09-29 `/tr/tournaments` 신설(tr 첫 허브). 라벨:
    *   - "Blog"       = CHROME.tr.blogLabel (lib/intl.ts)
    *   - "Turnuvalar" = BOARD_STRINGS.tr h1 «Poker turnuvaları 2026»의 핵심명(tr엔 필라 클러스터가 없다)
-   *   ⚠ tr에는 solver·calculator가 없다 — 넣지 마라.
+   *   ⚠ tr에는 solver가 없다 — 넣지 마라(calculator·hand-chart·glossary는 10-06 신설).
    */
   tr: [
     { href: "/tr/blog",        icon: "📚", label: "Blog" },
     // ★2026-10-06 `/tr/calculator`·`/tr/hand-chart` 신설(tr 회차 2). 라벨 = 각 페이지 HubPage title 축어.
     { href: "/tr/calculator",  icon: "🧮", label: "Hesaplayıcı" },
     { href: "/tr/hand-chart",  icon: "📊", label: "El Tablosu" },
+    // ★2026-10-06 `/tr/glossary` 신설(tr 회차 3). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/tr/glossary",    icon: "📖", label: "Poker Terimleri Sözlüğü" },
     { href: "/tr/tournaments", icon: "🏆", label: "Turnuvalar" },
   ],
   /**

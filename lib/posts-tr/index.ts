@@ -12,6 +12,13 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 
+// tr 회차 3 (2026-10-06 · docs/tr-cluster-plan.md §4) — 기본 5편
+import { POST as holdemGlossary } from "./holdem-glossary";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemProbability } from "./holdem-probability";
+import { POST as holdemTournament } from "./holdem-tournament";
+
 /**
  * 터키어(tr) 블로그 포스트.
  * 기계 번역이 아닌 터키 포커 커뮤니티 용어(Kare, Üçlü, Kent, İki Çift 등 + 영어 병기)로 현지화한 글만 등록한다.
@@ -28,6 +35,12 @@ export const TR_POSTS: Post[] = [
   // 기타
   holdemHandRankings,
   holdemTournamentVsCashGame,
+  // tr 회차 3
+  holdemGlossary,
+  holdemTiebreakRules,
+  holdemPotOdds,
+  holdemProbability,
+  holdemTournament,
 ];
 
 export function getTrPost(slug: string): Post | undefined {

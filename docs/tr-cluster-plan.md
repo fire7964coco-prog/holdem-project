@@ -50,6 +50,7 @@
 | pot oranı hesaplama · olasılık hesaplama | **`/tr/calculator`** | `pot-odds`·`probability` 글 = «pot oranı nedir» 개념 의도만 · 제목에 «hesaplama/hesaplayıcı» 헤드텀을 쓰지 않는다 |
 
 🔴 **도구 몰아주기 근거 (사장님 10-05 · GSC 28일 09-05~10-02 · [page] 단일 차원)**: ko `/hand-chart` 106클릭(7.1위) vs `/blog/holdem-starting-hands-chart` 상위권 밖 · `/tournaments` 564 · `/solver` 82 · `/calculator` 11 vs `pot-odds-calculation` 2·`probability` 4. 예외 = 족보(ko `/hands` noindex · 필라가 이기는 중 — `seo-tool-vs-blog-cannibalization`). 🔴 **확정 — 재조사 금지**(사장님 10-05 «알아볼 필요 없어, 이미 나온 결과들이다»). 차트·계산·대회·솔버 의도는 도구로 몰아준다.
+| kicker nedir · split pot · pokerde beraberlik | `holdem-tiebreak-rules`(회차 3) | hand-rankings 표·FAQ와 showdown «Split pot nedir?» H2는 tiebreak로 링크해 위임 |
 | poker turnuvası · kıbrıs poker · merit poker | `/tr/tournaments` | `holdem-tournament` 글 = «토너먼트 구조·전략» 의도 |
 | gto poker · poker solver | `/tr/solver` 랜딩 | GTO 4편은 남의 헤드텀을 빌려 붙이지 않는다(§1-E) |
 
@@ -59,7 +60,7 @@
 |---|---|---|---|
 | 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ✅ 10-06 (5) 배포(WORKLOG · MB-182) — 남긴 것 = §4-1 아래 «회차 1 결과» |
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ✅ 10-06 (6) 배포(WORKLOG · MB-183) — 남긴 것 = §4-2 |
-| 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ⏳ |
+| 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ✅ 10-06 (7) 배포(WORKLOG · MB-184) — 남긴 것 = §4-3 |
 | 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
 | 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔁 **솔버가 10-05 S-040으로 앱 터키어 UI 착수 통지**(요청 0) → 요청 발송 불필요. 착수 전 솔버 tr 배포 여부만 확인(배포 전이면 랜딩 CTA가 영어 앱으로 떨어진다) | ⏳ |
 | 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
@@ -92,6 +93,14 @@
 - 링크: tr 코퍼스 8편이라 quickRef ①~⑤ link 비움 · deal.link 생략 · shortStackLink = holdem-all-in-rules(fr 선례) · related = 8편 전수 · 차트 related에 tr 글 4 + `/tr/calculator` · 차트 노트의 솔버 링크는 이름만(`/tr/solver` 없음).
 - 검수: Claude 네이티브·교열 렌즈 14건 전부 채택(몬테카를로 한정 · «kicker'ı yener» 뜻 반전 · FAQ4 논리 반전 · «Hayır.» 직답 · deal 전설모음 어미 등) + 아스트라 병렬(결과는 WORKLOG).
 - 🪶 남긴 것(자동 착수 금지): ① **회차 3 뒤 재링크** — pot-odds·probability 글이 생기면 quickRef ①④ link·related·차트 related에 건다 ② **로케일 계산기 FAQ 공통 부채 의심** — EN FAQ «ICM 사용법»(«may be zero on the bubble» · «does not supply the hand-outcome probabilities»)·«ICM 값»(체감 문장)이 ms·fr 등 로케일엔 축약돼 있다(4849f3c8 동시 편집 · tr은 EN대로 넣음) — 판정은 사장님/queue ③ tr 전 페이지 헤더 «GLOBAL POKER COMMUNİTY» — `lang=tr` + uppercase가 i → İ로 바꾼다(`/tr/tournaments`부터 있던 사이트 공통 · 브랜드 span에 `lang="en"`이면 해소).
+
+### 4-3. 회차 3 결과 (10-06 (7))
+
+- 신규 5편(`lib/posts-tr/`): holdem-glossary(축 «poker terimleri» 260 · ICM·tilt FAQ 추가) · holdem-tiebreak-rules(kicker·split pot 주인 · 핸드 예시 16) · holdem-pot-odds(«pot odds / pot oranı nedir» · 계산 의도는 `/tr/calculator`) · holdem-probability(«poker olasılıkları» · 수치 335 EN 대조) · holdem-tournament(구조·전략 의도 · «ICM nedir»(170) H2 신설 · 일정 의도는 `/tr/tournaments`).
+- `/tr/glossary` 도구(공용 `components/glossary` + `app/tr/glossary/dict.ts` · 46용어 = 글 축어 41 + 번역 5) · 등록 4곳(hreflang tr-TR · hub-routes · side-rail «Poker Terimleri Sözlüğü» · 사이트맵).
+- 재링크(§4-2 ①): 계산기 quickRef ① → probability · ④ → pot-odds · related showdown·game-order → pot-odds·probability · 차트 related game-order → probability. 기존 글 역링크 4(showdown·hand-rankings → tiebreak · 필라 → glossary·pot-odds · tournament-vs-cash → holdem-tournament).
+- 번역 = Opus 서브 5레인 병렬(EN 링크 중 tr 없는 글은 빼거나 tr 페이지로 대체). 검수 = Claude 렌즈 2(네이티브 교열 · 수치 대조) + 아스트라 병렬 → 2차 교열(렌즈 + 아스트라). 결과·판정 = WORKLOG 10-06 (7).
+- 🪶 남긴 것(자동 착수 금지): ① 족보 일반명사 뒤 아포스트로피(«Floş'a» → «Floşa» · TDK) — 새 5편만 정리, 기존 tr 글(hand-rankings 등)은 그대로 ② 족보 표기 대소문자(«Kent» vs «kent»)·영어명 혼용(hand-rankings tiebreak 블록 «Full House/Flush»)이 글마다 갈림 — 통일은 별도 회차 ③ «$150'lık»(dolar 읽기) vs «$10'luk»(숫자 읽기) 코퍼스 혼재 ④ holdem-game-order의 «çekiş»(draw) — 새 글은 «draw»로 통일 ⑤ EN probability L196 신화 문장 «so it can be *tied*» 어색(아스트라 지적 · tr은 «berabere kalamaz»로 앞뒤가 맞음 — EN 정정 판단은 queue) ⑦ «başabaş»(TDK = «başa baş») — 새 글은 정리, 기존 blind-meaning·`/tr/calculator` 사전에 남음 ⑥ tournament-vs-cash 제목·desc «Fiş» = 회차 1 ③과 같은 건 · «## FAQ» 제목.
 
 ## 5. 지킬 것
 

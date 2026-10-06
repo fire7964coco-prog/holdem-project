@@ -11,8 +11,8 @@
 //    Kare·Kent·Üçlü·İki Çift·Çift·Yüksek Kart는 터키어) · çip 57+ : fiş 8(클러스터 표기 = çip) · equity 11 · pot odds 8 · out 3 · turnuva 44 · ödül 6.
 // 숫자: tr-TR(천단위 «.» · 소수 «,») · 🔴 퍼센트는 기호가 앞(«%81,9» — 코퍼스 38 : 0) → percentPrefix. 문체 = sen.
 // 🔴 내부 링크: tr 코퍼스는 8편뿐이고 EN 9슬러그 중 실재 = holdem-tournament-vs-cash-game 하나(+ shortStackLink 대체 = holdem-all-in-rules · fr 선례).
-//    quickRef ①~⑤는 link를 비웠다(게이트 F항) · deal.linkLead/link 생략 · related = 실재 8편 전수.
-//    회차 3(pot-odds·probability 글) 뒤에 quickRef ①④·related를 다시 건다.
+//    quickRef ②③⑤는 link 비움(게이트 F항) · deal.linkLead/link 생략.
+//    ★10-06 회차 3: quickRef ① → holdem-probability · ④ → holdem-pot-odds · related에서 showdown·game-order를 pot-odds·probability로 교체(8편 유지).
 import type { CalcDict } from "@/components/calculator/dict";
 
 export const CALC_DICT_TR: CalcDict = {
@@ -391,7 +391,7 @@ export const CALC_DICT_TR: CalcDict = {
   },
 
   // 빠른 참조 6표 — 🔴 모든 값 = scripts/calc-reference-tables.ts 출력(EN 그대로 · §13) · 구분자만 터키식 · 퍼센트 기호 앞.
-  //   🔴 link는 lib/posts-tr/에 «실재하는» 슬러그만(게이트 F항) → ①~⑤ 비움, ⑥만 holdem-tournament-vs-cash-game.
+  //   🔴 link는 lib/posts-tr/에 «실재하는» 슬러그만(게이트 F항) → ②③⑤ 비움, ① probability · ④ pot-odds · ⑥ tournament-vs-cash-game(회차 3).
   //   link를 비운 표의 note는 «…ada dalam»식 미완 문장으로 끝나면 안 된다 — 자립 문장으로 끝냈다.
   quickRef: [
     {
@@ -418,7 +418,9 @@ export const CALC_DICT_TR: CalcDict = {
         ["AKs vs QJs", "%63,5", "%36,5", "%0,5"],
         ["AKo vs JTs", "%59,5", "%40,5", "%0,5"],
       ],
-      note: "Equity, beraberlikler (chop) dahil pottan ortalama payındır. Bir çift iki overcard'a karşı klasik bir yazı turadır; bir çift daha yüksek bir çifte karşı yaklaşık 4,5'e 1 underdog'dur.",
+      note: "Equity, beraberlikler (chop) dahil pottan ortalama payındır. Bir çift iki overcard'a karşı klasik bir yazı turadır; bir çift daha yüksek bir çifte karşı yaklaşık 4,5'e 1 underdog'dur. Street street tam olasılık tabloları:",
+      link: { slug: "holdem-probability", text: "Poker olasılıkları tablosu" },
+      linkTail: "",
     },
     {
       badge: "Hızlı referans",
@@ -485,7 +487,9 @@ export const CALC_DICT_TR: CalcDict = {
         ["2× pot", "1,5 : 1", "%40,0"],
         ["3× pot", "1,33 : 1", "%42,9"],
       ],
-      note: "Bir flush draw (iki kart gelecekken %35,0, sıradaki kartta %19,1) flop'ta pot büyüklüğündeki bet'e yalnızca all-in'ken call eder. Aksi hâlde implied odds hesaplayıcısı — pot oranı sekmesindeki düğme — sonradan kazanmayı beklediğin parayı ekler; yeter ki rakibin arkada çipi ve ödeyecek bir eli olsun. Nut'a draw etmiyorsan ciddi indir.",
+      note: "Bir flush draw (iki kart gelecekken %35,0, sıradaki kartta %19,1) flop'ta pot büyüklüğündeki bet'e yalnızca all-in'ken call eder. Aksi hâlde implied odds hesaplayıcısı — pot oranı sekmesindeki düğme — sonradan kazanmayı beklediğin parayı ekler; yeter ki rakibin arkada çipi ve ödeyecek bir eli olsun. Nut'a draw etmiyorsan ciddi indir. Her spotta 10 saniyelik yöntem:",
+      link: { slug: "holdem-pot-odds", text: "Pot odds nedir?" },
+      linkTail: "",
     },
     {
       badge: "Hızlı referans",
@@ -556,8 +560,8 @@ export const CALC_DICT_TR: CalcDict = {
       { slug: "holdem-betting-actions", title: "Poker bahis hareketleri", desc: "Check, call, raise, fold ve min-raise kuralı" },
       { slug: "texas-holdem-rules-for-beginners", title: "Poker nasıl oynanır?", desc: "Texas Hold'em kuralları, sıfırdan" },
       { slug: "holdem-blind-meaning", title: "Small ve big blind", desc: "Kim koyar, SB ve BB tutarları, big blind ante" },
-      { slug: "holdem-showdown-rules", title: "Showdown ve muck kuralları", desc: "Kartı önce kim açar?" },
-      { slug: "holdem-game-order", title: "Hold'em el sırası", desc: "Preflop, flop, turn, river, showdown" },
+      { slug: "holdem-pot-odds", title: "Pot odds nedir?", desc: "Bu call gerçekten kârlı mı? Pot oranını 10 saniyede bul" },
+      { slug: "holdem-probability", title: "Poker olasılıkları tablosu", desc: "Texas Hold'em'de her elin gerçek ihtimali" },
     ],
   },
 };

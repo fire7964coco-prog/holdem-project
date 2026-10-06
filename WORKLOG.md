@@ -1,3 +1,13 @@
+## 2026-10-06 (7) — tr 회차 3: 신규 기본 5편 + /tr/glossary 도구 (MB-184)
+
+- 계획 = `docs/tr-cluster-plan.md` §4 회차 3 · 결과·남긴 것 = 같은 문서 §4-3.
+- 실측(DFS 2792 · 10-06): poker terimleri 260 · icm nedir 170 · tilt nedir 140 · poker terimleri sözlüğü·kicker nedir·poker kicker·pot odds·poker olasılıkları·re-entry nedir 각 10 · pot oranı·outs nedir·bubble nedir·beraberlik·turnuva stratejisi null.
+- 신규: holdem-glossary · holdem-tiebreak-rules · holdem-pot-odds · holdem-probability · holdem-tournament(Opus 서브 5레인 병렬 · EN 링크 중 tr 없는 글은 빼거나 tr 페이지로 대체) · `/tr/glossary`(46용어 = 글 축어 41 + 번역 5 · 등록 4곳). 재링크 = 계산기 quickRef ①④·related · 차트 related · 기존 글 역링크 4.
+- 헤드 정정: pot-odds 통화 «50$» → «$50»(tr 코퍼스 앞붙임 100%).
+- 검수 1차: Claude 렌즈 A(glossary·tiebreak·tournament) 10건 → 채택 9 · 보류 1(족보 대소문자 통일 = 코퍼스 회차) / 렌즈 B(pot-odds·probability) 8건 전부 채택(pot-odds «çekiş» → «draw» 41곳 · «çip kanadım» 직역 · «başa baş» → «başabaş» — 2차에서 TDK 원문으로 되돌림) / 아스트라 14건 → 렌즈와 중복 6 · 신규 채택 8(probability FAQ «7,5:1» 적중/빗나감 반전 · tournament ICM «전부 잃으면 0» → ITM 뒤 순위 상금 유지 · satellite «1등 아님» 다석 한정 · TDK 아스트로피 9 등) · EN 쪽 지적 1(EN probability 신화 문장)은 tr 앞뒤가 맞아 tr 유지 → §4-3 🪶.
+- 검수 2차: 렌즈 5건 채택(사전에 남은 «Floş'a»·«Kent'i» · call'un 모음조화 · tiebreak «A-A-3-3» 문장 · pot-odds 주어) + 아스트라 2차 3건(2건은 렌즈와 중복 · «başabaş» → «başa baş» 채택 — TDK 사전 원문 «başa baş» · 합성어 «başa baş noktası» 확인 · 렌즈 B 1차 권고를 뒤집음).
+- 게이트: audit:hard tr 13편 🔴 0(tiebreak은 홀카드 라벨 «Oyuncu A/Sen» 미인식 = 미검사 → 서브·렌즈 A·아스트라 3중 손 검산 16예시 OK) · seo-sync 0 · calc-parity tr 0 · 빌드 exit 0(74 + 634) · hreflang 0 · `/tr/glossary` 390·1440 가로 넘침 0.
+
 ## 2026-10-06 (6) — tr 회차 2: 도구 /tr/calculator · /tr/hand-chart 신설 (MB-183)
 
 - 계획 = `docs/tr-cluster-plan.md` §4 회차 2 · 결과·남긴 것 = 같은 문서 §4-2.

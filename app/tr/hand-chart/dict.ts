@@ -117,7 +117,8 @@ export const HAND_CHART_DICT_TR: HandChartDict = {
       { href: "/tr/blog/texas-holdem-rules-for-beginners", tag: "Başlangıç", title: "Poker nasıl oynanır? Texas Hold'em kuralları", desc: "Blindler, çip dağıtımı, el sıralaması — adım adım" },
       { href: "/tr/blog/holdem-hand-rankings", tag: "El sıralaması", title: "Poker el sıralaması", desc: "En güçlüden en zayıfa 10 poker eli, olasılıklarla" },
       { href: "/tr/blog/holdem-betting-actions", tag: "Bahis", title: "Poker bahis hareketleri", desc: "Check, call, raise ve fold ne demek" },
-      { href: "/tr/blog/holdem-game-order", tag: "Oyun sırası", title: "Hold'em el sırası", desc: "Preflop, flop, turn, river, showdown — adım adım" },
+      // ★10-06 회차 3: game-order → holdem-probability(차트 다음 단계 = 확률 · §4-2 ①).
+      { href: "/tr/blog/holdem-probability", tag: "Olasılık", title: "Poker olasılıkları tablosu", desc: "Texas Hold'em'de her elin gerçek ihtimali" },
       { href: "/tr/calculator", tag: "Araç", title: "Poker Hesaplayıcı", desc: "Her el için equity ve pot oranı" },
     ],
   },

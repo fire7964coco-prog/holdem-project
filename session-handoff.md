@@ -3,11 +3,11 @@
 > 갱신: 2026-10-06 (6) (tr 회차 2 MB-183) · 2026-10-06 (5) (tr 회차 1 MB-182) · 2026-10-06 (1) (§2-W ② EN-먼저 이행 MB-178) · 그 전 2026-10-05 (12) (§2-W ① 이행 MB-176 · 용어 사전 아스트라 교차 MB-177) · 이전 회차 경위는 `WORKLOG.md`. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 2 ✅ 배포 (10-06 (6) · MB-183 · `/tr/calculator` · `/tr/hand-chart`) · 다음 = 사장님 지시 대기
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 3 ✅ 배포 (10-06 (7) · MB-184 · 신규 5편 + `/tr/glossary`) · 다음 = 사장님 지시 대기
 
-- 결과·남긴 것 = **`docs/tr-cluster-plan.md` §4-2** ①~③(회차 3 뒤 재링크 · 로케일 계산기 FAQ 공통 축약 의심 · tr 헤더 «COMMUNİTY» 대문자 İ).
-- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 1의 7개(`/tr/blog` · `/tr/tournaments` · `/tr/blog/{texas-holdem-rules-for-beginners, holdem-all-in-rules, holdem-betting-actions, holdem-game-order, holdem-tournament-vs-cash-game}`) + 회차 2의 2개(`/tr/calculator` · `/tr/hand-chart`).
-- 다음 tr = 회차 3(신규 기본 5편 + `/tr/glossary` 도구) — 사장님 지시로. 회차 1 ⑦(규칙급 정정 꼬리 로케일 미전파) 판정도 사장님 대기. 회차 5 솔버 tr UI = S-040·S-042(솔버 tr 구현 끝 · 후기창 tr 초안을 본체 사전에 넣어 달라는 요청 1 — 후기창 브랜치 머지 때 처리).
+- 결과·남긴 것 = **`docs/tr-cluster-plan.md` §4-3**. 회차 2 §4-2 ①(재링크)은 이번에 처리 · ②③은 그대로.
+- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 1의 7개(`/tr/blog` · `/tr/tournaments` · `/tr/blog/{texas-holdem-rules-for-beginners, holdem-all-in-rules, holdem-betting-actions, holdem-game-order, holdem-tournament-vs-cash-game}`) + 회차 2의 2개(`/tr/calculator` · `/tr/hand-chart`) + **회차 3의 6개**(`/tr/glossary` · `/tr/blog/{holdem-glossary, holdem-tiebreak-rules, holdem-pot-odds, holdem-probability, holdem-tournament}`).
+- 다음 tr = 회차 4(전략 3편: strategy · positions · continuation-bet) — 사장님 지시로. 회차 1 ⑦(규칙급 정정 꼬리 로케일 미전파) 판정도 사장님 대기. 회차 5 솔버 tr UI = S-040·S-042(솔버 tr 구현 끝 · 후기창 tr 초안을 본체 사전에 넣어 달라는 요청 1 — 후기창 브랜치 머지 때 처리).
 - 📅 **10/7**: `solver_open` 판독 → 솔버 후기창 브랜치 머지·배포(아래 «솔버 후기창» 절).
 
 ## (이전) 사장님 지시 대기 · 검수장 MB-176·178·179·180·181 재판정 대기

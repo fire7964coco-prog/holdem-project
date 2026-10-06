@@ -93,7 +93,7 @@ Onu yalnızca daha yüksek bir straight flush veya royal flush yener. En düşü
 
 **8♣ 8♦ 8♥ 8♠ K♥** — aynı değerdeki dört kart.
 
-İki kare arasında yüksek değer kazanır. Dördü de *board'daysa*, en yüksek **kicker** belirler — ve As söz sahibidir.
+İki kare arasında yüksek değer kazanır. Dördü de *board'daysa*, en yüksek **kicker** belirler — ve As söz sahibidir. Her el için beraberliğin nasıl bozulduğunu [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısında tek tek gösterdim.
 
 ### #4 — Full House
 

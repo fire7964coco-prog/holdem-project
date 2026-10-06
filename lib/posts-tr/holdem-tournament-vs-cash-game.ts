@@ -31,7 +31,7 @@ Neredeyse her yeni Hold'em oyuncusu bir noktada aynı soruyu sorar:
 
 Dışarıdan bakınca aynı oyun gibi görünür — [Texas Hold'em kuralları](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") birebir aynıdır. Yine iki kapalı kart alırsın, masaya beş ortak kart açılır ve preflop'tan river'a kadar dört bahis turu oynanır. Ama stratejik olarak neredeyse iki ayrı dünyadır. Cash game'de fişlerin paradır. Turnuvada fişlerin turnuva hayatındır.
 
-Bu rehber, ==poker turnuvası ile cash game farkını== yeni başlayanların gerçekten ihtiyaç duyduğu şekilde anlatır: fiş değeri, blind yapısı, zaman, varyans, bankroll, ICM, stack derinliği ve hangi formatla başlaman gerektiği.
+Bu rehber, ==poker turnuvası ile cash game farkını== yeni başlayanların gerçekten ihtiyaç duyduğu şekilde anlatır: fiş değeri, blind yapısı, zaman, varyans, bankroll, ICM, stack derinliği ve hangi formatla başlaman gerektiği. Turnuvanın kendisini — buy-in, blind seviyeleri, aşamalar ve ödül dağılımı — [poker turnuvası nasıl işler?](/tr/blog/holdem-tournament) rehberinde ayrıca anlattım.
 
 ![Turnuva ve cash game seçimlerinin fiş değerini ve stratejiyi değiştirdiği bir Texas Hold'em masası](/images/tournament-table-action.webp "Poker turnuvası ve cash game karşılaştırması")
 

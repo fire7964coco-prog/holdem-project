@@ -453,7 +453,7 @@ Texas Hold'em, kuralları stratejiden ayırdığında öğrenmesi çok daha kola
 
 Önce ==akışı öğren==: blindler, iki hole kart, beş ortak kart, dört bahis turu ve en iyi beş kartlık el. ==g:Sonra pozisyonu, başlangıç ellerini ve temel pot kararlarını öğren.==
 
-Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) gözden geçir, [başlangıç eli tablosuyla](/tr/hand-chart) pratik yap ve bir call'ın neden kârlı olup olmadığını anlamak istediğinde [poker olasılık hesaplayıcısını](/tr/calculator) kullan.
+Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) gözden geçir, [başlangıç eli tablosuyla](/tr/hand-chart) pratik yap ve bir call'ın neden kârlı olup olmadığını anlamak istediğinde [poker olasılık hesaplayıcısını](/tr/calculator) kullan. Masada duyduğun bir kelimeye takılırsan [poker terimleri](/tr/blog/holdem-glossary) sözlüğüne bak; call kararının mantığı için de [pot odds nedir?](/tr/blog/holdem-pot-odds) yazısını oku.
 
 ---
 
