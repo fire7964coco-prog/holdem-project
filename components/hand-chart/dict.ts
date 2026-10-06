@@ -23,6 +23,8 @@ export type HandChartDict = {
   numberLocale: string;
   /** Gap between a number and "%" («12 %» in fr). Omit for none. */
   percentGap?: string;
+  /** «%42» — the sign goes before the number (tr). Overrides percentGap. Omit for «42%». */
+  percentPrefix?: boolean;
 
   /** <SEO> props — must equal the server metadata of the page (check:seo-sync). */
   seo: {

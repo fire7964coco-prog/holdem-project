@@ -53,6 +53,8 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   //   SERP 프랑스어 도구 페이지 title 6/6이 «Calculateur»(«Calculatrice» 0건). 근거 = `docs/keyword-bank/fr-calculator.md` §3-A.
   //   subtitle의 «équité»도 같은 회차 판정(«équité poker» 110 : «equity poker» 50 · SERP #1·#2·#3이 전부 «équité»).
   fr: { title: "Calculateur poker", subtitle: "Équité, outs et cotes du pot en un instant" },
+  // ★2026-10-06 tr 회차 2 — title = /tr/calculator H1 축어 · subtitle = 형제 부제의 세 용어를 tr 사전 표기(equity · out · pot oranı)로.
+  tr: { title: "Poker Hesaplayıcı", subtitle: "Equity, out ve pot oranı anında" },
 };
 
 /**

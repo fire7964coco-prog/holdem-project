@@ -183,6 +183,9 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    */
   tr: [
     { href: "/tr/blog",        icon: "📚", label: "Blog" },
+    // ★2026-10-06 `/tr/calculator`·`/tr/hand-chart` 신설(tr 회차 2). 라벨 = 각 페이지 HubPage title 축어.
+    { href: "/tr/calculator",  icon: "🧮", label: "Hesaplayıcı" },
+    { href: "/tr/hand-chart",  icon: "📊", label: "El Tablosu" },
     { href: "/tr/tournaments", icon: "🏆", label: "Turnuvalar" },
   ],
   /**

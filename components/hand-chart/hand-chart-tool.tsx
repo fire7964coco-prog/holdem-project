@@ -141,10 +141,14 @@ export default function HandChartTool({
 
   const totalHands = 169;
   const gap = D.percentGap ?? "";
-  const typePct = (maxTier: number) =>
-    `${D.typePct.replace("{n}", String(Math.round((countPlayable(maxTier) / totalHands) * 100)))}${gap}%`;
+  // ★2026-10-06 tr — 터키어는 «%42»처럼 기호가 앞에 온다(dict.percentPrefix).
+  const pc = (n: string) => (D.percentPrefix ? `%${n}` : `${n}${gap}%`);
+  const typePct = (maxTier: number) => {
+    const n = String(Math.round((countPlayable(maxTier) / totalHands) * 100));
+    return D.percentPrefix ? D.typePct.replace("{n}", pc(n)) : pc(D.typePct.replace("{n}", n));
+  };
   const comboPct = (maxTier: number) =>
-    `${((countCombos(maxTier) / 1326) * 100).toLocaleString(D.numberLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}${gap}%`;
+    pc(((countCombos(maxTier) / 1326) * 100).toLocaleString(D.numberLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }));
 
   return (
     <>
@@ -223,7 +227,7 @@ export default function HandChartTool({
                   }
                 >
                   {pos.label}
-                  <span className="ml-1.5 opacity-80 font-normal text-xs">{pct}{gap}%</span>
+                  <span className="ml-1.5 opacity-80 font-normal text-xs">{pc(String(pct))}</span>
                 </button>
               );
             })}

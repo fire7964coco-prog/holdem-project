@@ -70,8 +70,10 @@ const commaDecimal = (1.5).toLocaleString(zh.numberLocale).includes(",");
 //   공백형이 정본이라 **콘텐츠가 아니라 게이트를 고쳤다**(게이트가 조판을 지시하게 두면 안 된다).
 //   정규화 순서가 중요하다: ① % 앞 공백 제거 → ② 소수 구분자 뒤집기 → ③ 공백 천단위를 EN의 «,»로.
 //   ②를 ③보다 먼저 해야 «1 035»가 «1.035»로 뒤집히지 않는다.
+// ★2026-10-06 tr 회차: 터키어는 «%81,9»(기호 앞 · 코퍼스 38 : 0 · dict.percentPrefix) → 먼저 «81,9%»로 돌린다(fr과 같은 «게이트를 고친다»).
 const numL = (s: string) => {
-  let t = s.replace(/(\d)[\s  ]+%/g, "$1%");
+  let t = zh.percentPrefix ? s.replace(/%(\d[\d.,]*)/g, "$1%") : s;
+  t = t.replace(/(\d)[\s  ]+%/g, "$1%");
   if (commaDecimal) t = t.replace(/[.,]/g, (c) => (c === "." ? "," : "."));
   t = t.replace(/(\d)[\s  ](?=\d{3}(?!\d))/g, "$1,");
   return num(t);
@@ -593,7 +595,7 @@ async function selftest() {
   }
   const noisy = rows5.filter(([, r]) => checkSummaryVsCode("x", ["", "", "", "", r], table).some(h => h.includes("5행 미판정")));
   t(`25-G H: 12사본 5행 산문이 «미판정»으로 시끄럽지 않다(실제로 ${rows5.length}개를 읽었다)`,
-    rows5.length === 12 && noisy.length === 0, noisy.map(([l]) => l).join(" "));
+    rows5.length === CALCULATOR_LOCALES.length + 1 && noisy.length === 0 /* ★10-06 tr 추가로 13 — 숫자를 박지 않고 순회 목록에서 센다 */, noisy.map(([l]) => l).join(" "));
   // 25-H. zh의 «괄호가 토큰 한가운데» 형태가 5행 검사를 빠져나가지 않는가 — 옛 분리자로는 J2o가 통째로 안 읽혔다.
   // 25-F2. 🔴 2차 교열 A-1이 준 반례 그대로 — 첫 판의 `isHandish`는 `[0-9JQKA]+`라 맨숫자를 전부 오탐했고,
   //    그 오탐이 `hits`에 들어가 **prebuild를 막았다.** 이제 랭크 2개 이상을 요구하고, 미판정은 ℹ로 빠진다.

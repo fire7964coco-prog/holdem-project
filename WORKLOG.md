@@ -1,3 +1,11 @@
+## 2026-10-06 (6) — tr 회차 2: 도구 /tr/calculator · /tr/hand-chart 신설 (MB-183)
+
+- 계획 = `docs/tr-cluster-plan.md` §4 회차 2 · 결과·남긴 것 = 같은 문서 §4-2.
+- 실측(DFS 2792): poker chart 70 · hand chart 30 · el tablosu 10 · poker calculator 40 · odds calculator 40 · hesaplayıcı 10 · 터키어 차트·계산 구 전부 null → 차트 «Poker Starting Hand Chart — Pozisyona Göre Başlangıç Elleri» · 계산기 «Poker Hesaplayıcı — Odds, Equity, ICM ve Pot Oranı».
+- 구현: 사전·FAQ·페이지 ×2(계산기 FAQ 18 = EN 17 + TDA Rule 5 · 차트 FAQ 5) · 등록 6곳(hreflang 2 · hub-routes · side-rail · 사이트맵 · CALC_CTA_LABELS) · 필라 /en 도구 링크 2 → tr · 공용 컴포넌트 `percentPrefix`(«%42» — tr 코퍼스 38 : 0) · `check:calc-parity` 접두 % 정규화 + 셀프테스트 사본 수 동적화(59/59).
+- 검수: Claude 렌즈(네이티브·교열) 14건 전부 채택 · 아스트라 병렬 11건 중 채택 10(2건은 렌즈와 중복) · 기각 1(차트 노트 SB 3bb %46,6 — ko 원문 hand-chart-client.tsx:436 · 형제 로케일 동일) → 2차 교열 2건 + 소문자 1 반영.
+- 게이트: calc-parity 13사본 0 · 빌드 exit 0 · hreflang 0 · 화면 390 overflow 0(계산기·차트).
+
 ## 2026-10-06 (5) — tr 회차 1: 기존 8편 다듬기 (링크 고리 · 실측어 흡수 · 규칙 정정 11자리) (MB-182)
 
 - 계획 = `docs/tr-cluster-plan.md` §4-1(사장님 10-06 승인). 결과·남긴 것 = 같은 문서 «회차 1 결과».

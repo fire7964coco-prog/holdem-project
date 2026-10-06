@@ -204,6 +204,8 @@ const STATIC_ROUTES = [
   { path: "/id/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/ms/calculator", priority: "0.7", changefreq: "monthly" },
   { path: "/hi/calculator", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-06 tr 회차 2.
+  { path: "/tr/calculator", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/hand-chart` 10개(로케일 도구 확장 회차 1). `/en/hand-chart`(0.7)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/hand-chart-alternates.ts`.
@@ -218,6 +220,7 @@ const STATIC_ROUTES = [
   { path: "/id/hand-chart", priority: "0.7", changefreq: "monthly" },
   { path: "/ms/hand-chart", priority: "0.7", changefreq: "monthly" },
   { path: "/hi/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/tr/hand-chart", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/glossary` 10개(로케일 도구 확장 회차 2). `/en/glossary`(0.6)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/glossary-alternates.ts`.

@@ -593,6 +593,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/tr/calculator</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/ja/hand-chart</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -657,6 +664,13 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/hand-chart</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/tr/hand-chart</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

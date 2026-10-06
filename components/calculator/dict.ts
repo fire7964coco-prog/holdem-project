@@ -25,6 +25,11 @@ export type CalcDict = {
    * Omit for no gap.
    */
   percentGap?: string;
+  /**
+   * ★2026-10-06 (tr) — Turkish prints the sign first: «%81,9» (tr corpus 38 : 0). `pf()` then ignores percentGap.
+   * Strings that carry "%" themselves (needPot · needImplied · verdict bodies · quickRef cells) are written that way in the dict.
+   */
+  percentPrefix?: boolean;
 
   /** <SEO> props (client-side metadata sync — must equal the server metadata of the page). */
   seo: {

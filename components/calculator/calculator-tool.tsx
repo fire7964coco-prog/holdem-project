@@ -1476,7 +1476,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
       locale,
       nf: (n: number) => n.toLocaleString(dict.numberLocale),
       nd,
-      pf: (n: number, fixed = 0) => `${nd(n, fixed)}${dict.percentGap ?? ""}%`,
+      pf: (n: number, fixed = 0) => (dict.percentPrefix ? `%${nd(n, fixed)}` : `${nd(n, fixed)}${dict.percentGap ?? ""}%`),
     };
   }, [dict, locale]);
 
