@@ -113,7 +113,7 @@ Gerçek durum: elinde **J♥ 10♥** var, board **Q♥ 9♥ 8♥ 2♣ 5♦**. K�
 
 **Split pot, showdown'da iki ya da daha fazla oyuncunun en iyi beş kartı değer olarak birebir aynı olduğunda potun eşit bölünmesidir.** Önce kombinasyon (el sıralamasındaki yeri), sonra eli oluşturan kartlar, sonra kicker (yan kart) karşılaştırılır; ancak beşi de aynıysa pot bölünür. Türlerin (maça, kupa, karo, sinek) değeri yoktur, yani "benim floşum maça" diye beraberlik bozulmaz.
 
-Kicker'ın hangi ellerde sayıldığını ve beraberlik sırasını [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberindeki tabloda tek tek gösterdim. Aynı çift, iki çift ve 5. kart örnekleriyle adım adım anlatım için: [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules).
+Kicker'ın hangi ellerde sayıldığını ve beraberlik sırasını [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısındaki "Her el için beraberlik kuralları" tablosunda tek tek gösterdim; aynı çift, iki çift ve 5. kart örnekleriyle adım adım anlatım da o yazıda.
 
 ---
 

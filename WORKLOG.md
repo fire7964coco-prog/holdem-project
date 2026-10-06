@@ -1,3 +1,10 @@
+## 2026-10-06 (11) — tr SERP 보강 회차 A: 고볼륨 4편 (MB-187)
+
+- 처방 = `docs/keyword-bank/tr-serp/` L1 7-A·7-B·7-C · L2 7-1 · 결과·소유 확정·남긴 것 = 같은 폴더 00-brief «회차 A 결과».
+- 수정: texas-holdem-rules-for-beginners(«kısaca» seoTitle · kaç kâğıtla / pokerin mantığı / Türk pokeri 비교 H2 · 7장→베스트5 예시 · 흔한 오해 4 · FAQ +5) · holdem-betting-actions(«ne demek» seoTitle·H2 · 터키 테이블 용어표 · check-raise H2 · FAQ +5 · check 문맥 pas 4자리 정정) · holdem-game-order(«el sırası» 반납 → «oyun sırası» · Preflop/Flop/Turn/River nedir · sıra kimde · FAQ +3 · 실핸드 좌석 명시) · holdem-hand-rankings(터키 족보 이름 열 = tr.wikipedia 축어 · en yüksek el 5장/7장 이중 라벨 · renk sıralaması H2 승격 · 카드 이름(İskambil kâğıdı 축어) · 흔한 착각 3 · kicker 축소 → tiebreak 위임 · FAQ +5) · showdown-rules 앵커 1 · 용어집 aka(pas·bop·rest) · translation-terms-tr.
+- 검수: 1차 렌즈 A(교열 17)·B(§13·D 0 · 사실 1 · SEO 4) · 아스트라(룰 문장 2 = «같은 값이면 스플릿»에 같은 족보 조건 누락 · «보드 위로 못 가면 스플릿» 과일반화 + 표기 4) → 반영. 2차 교열 렌즈 9(«7장에선 서열≠빈도» 예시를 올바른 쌍으로 · 헤즈업 예외 복원 · 프리플랍 check-raise 불가 등) + 아스트라 2차 3(2건 중복) → 반영. 기각 = «As'a→asa» · «As'ın» 아포스트로피(코퍼스 As'ın 5 · As 대문자 관습).
+- 게이트: audit:hard tr 20편 🔴 0(rules·hand-rankings 새 카드 문단은 게이트 미인식 → 레인·렌즈·아스트라 손 검산) · 빌드 exit 0(74 + 641).
+
 ## 2026-10-06 (10) — tr SERP 보강 0단계: 20편 현지 조사 5레인 (배포 없음)
 
 - 사장님 지시(«20편을 상위 1페이지로 · 작업 빼먹지 마»). 브리프·산출물 = `docs/keyword-bank/tr-serp/`(00-brief · L1~L5 · 레인마다 볼륨·자동완성·SERP 상위10·PAA·원문 정독·장단점·처방·커버리지). 1차 보고 뒤 추정·대체 자리(고볼륨 SERP 미조회 · 원문 403·404 · 대체 SERP)를 전부 실측으로 보완시킴.

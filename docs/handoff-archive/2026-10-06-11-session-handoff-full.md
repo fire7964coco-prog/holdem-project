@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-06 (11) (종결 절 4개 정리 · 10-01 회차 🪶 = docs/harden-brief/pt-rejudge-intake-2026-09-28.md §8-2 · 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md) (tr SERP 보강 회차 A MB-187) · 2026-10-06 (9) (tr 회차 5 MB-186) · 2026-10-06 (8) (tr 회차 4 MB-185) · 2026-10-06 (6) (tr 회차 2 MB-183) · 2026-10-06 (5) (tr 회차 1 MB-182) · 2026-10-06 (1) (§2-W ② EN-먼저 이행 MB-178) · 그 전 2026-10-05 (12) (§2-W ① 이행 MB-176 · 용어 사전 아스트라 교차 MB-177) · 이전 회차 경위는 `WORKLOG.md`. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-06 (11) (tr SERP 보강 회차 A MB-187) · 2026-10-06 (9) (tr 회차 5 MB-186) · 2026-10-06 (8) (tr 회차 4 MB-185) · 2026-10-06 (6) (tr 회차 2 MB-183) · 2026-10-06 (5) (tr 회차 1 MB-182) · 2026-10-06 (1) (§2-W ② EN-먼저 이행 MB-178) · 그 전 2026-10-05 (12) (§2-W ① 이행 MB-176 · 용어 사전 아스트라 교차 MB-177) · 이전 회차 경위는 `WORKLOG.md`. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 🔄 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
@@ -43,6 +43,14 @@
 - 정본 = **`docs/tr-cluster-plan.md`**(수요 실측 · 메인과 같은 구도에 글 수만 축소 = 20편 + 도구 3 · 카니발 소유표 · 회차 6개). 회차 1 = 기존 8편 다듬기 → 사장님 수동 색인 요청.
 - 근거 자료: GSC 색인 전수 `docs/gsc-tracking/index-audit-2026-10-05.json` · 미색인 목록 `not-indexed-2026-10-05.md`(사장님 수동 요청 대조용).
 
+## ▶▶▶▶▶▶▶▶▶ 우편함 밀린 MA — ✅ 1/2·2/2 배포 끝 (10-04 (5)(6) · MB-162·163)
+
+- ✅ §2-Q 13건 EN → 24로케일 배포(MB-163). 잔여(꼬리 16로케일 showdown 옛 판 등) = `docs/en-first-queue.md` §2-Q · 자동 착수 금지.
+- ✅ MA-303 판정·JA 고유 2자리 배포(MB-164). ▶ EN-먼저 R-1(split 사이드팟 형성 조건)·R-2(너츠 3질문 SF 누락) 외 = queue §2-R — EN 정정 → 24로케일 전파는 사장님 지시로 연다. MA-304(4-3 odds 결과)는 검수장 발신 대기.
+- ✅ MA-305 JA 고유 21자리 배포(MB-166 · `8ded4fb7`) · MA-306·307 ACK. ✅ EN-먼저 §2-R 2건·§2-S 7건 = EN 6편 → 8로케일 54파일 배포(10-05 (3) · MB-167).
+- ✅ MA-309 JA 고유 14자리(MB-168) · ✅ EN-먼저 §2-U 9자리 = MA-309 T-1~T-4 + MA-311 ①②③ + MA-313 ① → 8로케일 배포(10-05 (5) · MB-169 · `a48968f4`). MA-312·314 ACK. ▶ 다음 = 검수장 MA-314(MB-167 전/후)·MB-168·169 재검증 결과 대기. 🔴 레인 브리프에 «git stash·checkout 금지» 넣을 것(10-05 (5) 사고).
+- 🔴 승률 시뮬레이터(S-034)는 사장님 지시 전까지 손대지 않는다(10-04 재확인).
+
 ## ▶▶▶▶▶▶▶▶ 솔버 후기창 — ✅ 코드 1 구현 · 🔴 브랜치 `solver-reviews-code1`에 보관(미배포)
 
 - 🔴 **10-04 (5)에 브랜치 `solver-reviews-code1`로 옮겼다**(사장님 허락 · 코드 커밋 `1fc7a5df`·`a86f3837`·`9cbd532d` 포함 · main에는 없다). 10/7 `solver_open` 판독 뒤 `git rebase main solver-reviews-code1` → 문서 파일(핸드오프·WORKLOG·우편함) 충돌은 **main 쪽을 남긴다** → main에 ff 머지 → 빌드 → push.
@@ -70,6 +78,15 @@
 - ✅ EN 유래 13묶음 = **EN + 9로케일 전파 완료**(10-02 (15) · MB-151). 남긴 6건 = `docs/en-first-queue.md` §2-P 🪶(자동 착수 금지).
 - 🪶 de 시범 «스팟 장면» 이미지: 반응 보고 EN·다른 로케일 전파 판단(`locale-intentional-diffs` 10-02 행 · 브리프 §7). ar·vi·tr 시리즈는 사장님 판단 전 착수 금지(`settled-decisions` §1-E).
 - 🪶 범위 밖 관찰(자동 착수 금지): 구조 게이트 기존 🔴 = pt 1 · id 2 · ms 11 · hi 2 · check-de-style 다른 클러스터 기존 🔴 8(betting-actions·hand-rankings·tiebreak·ept-barcelona·wpt-australia).
+
+## ▶▶▶▶ KO `apt-championship-taipei-2026-guide` — ✅ 발행 (10-01 (6) · MB-135)
+
+✅ 발행·배포(WORKLOG 10-01 (6)). 훅 만료 = 캘린더 «KO apt-championship 훅이 죽는 날»(11/13·11/24·11/29). 🪶 남은 것(자동 착수 금지): ① 보드 카드 note·venue 낡음(«210개 트로피 이벤트» → 209 · «+ Asia Poker Arena» → Red Space 단독) — 13로케일 사전(`lib/tournaments-i18n.ts`) 동시 수정이라 F절 «어긋남 별도 회차»에 합침 ② Natural8 한국 접속 불가(10-01 «services are unavailable in the country you are in») → 기존 KO 글 apt-jeju·apt-incheon의 Natural8 위성 STEP 절 판정 필요(market-profile/ko B-5) ③ `holdem-tournament-how-to-enter`에 역링크 1줄(SEO 렌즈 low).
+
+## ▶▶▶ 다음 세션 회차 (사장님 10-01 지시 — «새 세션에서 이거 하자»)
+
+✅ **10-01 (3) 완료·배포**(MB-132 · WORKLOG 10-01 (3)): WPT 기존 결함 4 · O-5 5묶음 · M-5 판정(채택 6 · 기각 5). 판정표 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8-2.
+🪶 남은 것(자동 착수 금지 · 사장님 지시 시): ① flush-vs-straight «rarer always wins» 보류 판정(7장 빈도 반례 · 문장 재구성) ② §8-2 «미판정 이월» 행(betting-actions 146·156·188 · position-play · beginners · chart 81·103 · 3bet 42·128 · split/all-in · positions · pot-odds 59 — 대부분 X1형 예상) ③ ms betting-actions FAQ 216 «tournament heads-up» 꼬리 절 누락(ms 정정 회차에).
 
 ## ▶▶ 다음 세션 (09-29 갱신)
 
@@ -127,6 +144,12 @@
 - ✅ 5레인 배포(ms 51편) → ✅ Q15 `d506320a` → ✅ Q16 렌더러 `2da14f91` → ✅ **꼬리 드리프트 6편 `16092c4d`**(ms 드리프트 0 · MB-105).
 - 🔓 **ms 동결 없음**(사장님 09-27): 검수 폴더는 pt → ja → … 자체 순서, ms는 마지막. MB-103 아스트라 교차는 **ms 차례가 오면 그 시점 main 해시로** — 그 MA가 오면 판정·등재 → 정정 회차 한 번(MA 정정 + kejohanan·Button/butang·«di hadapan» 판정 결과).
 - 남은 판정 재료: Q16-4(H2 링크 → 직답 이동 · hi CTA · EN-먼저) = `docs/harden-queue-진행.md` §5 Q16. ms 레인 워크트리 5개는 MA 정정 때 재사용하거나 그 뒤 정리.
+
+## E. WPT 오스트레일리아 가이드 — ✅ 결과 아카이브 전환 완료 (10-01 · MB-130)
+
+- 8로케일 전환·배포 끝(WORKLOG 10-01 (2) · 사실 정본 `docs/tournament-factsheets/2026-09-wpt-australia.md` §4 = 36/36). $290 창구 만료도 같은 회차에 처리.
+- 캘린더 9월 측정 항목(hand-chart·족보 앵커·레이아웃·de 색인)은 09-23 보고서 흡수 여부 확인 후 ✅ 정리.
+- ▶ 캘린더 10월 다음 시한: ✅ TMTC 온라인 위성 과거형(10-02 · MB-139) · 10/4 港撲盃 종료 · 10/7경 `solver_open` 판독 · 10/10~12 ja 3건. 10-01 확인분(전부 미공개 유지)은 캘린더 해당 절 🪶.
 
 ## F. 나라별 대회 트랙 재개 — ja 먼저 (사장님 09-27 · 플레이북 §00 개정)
 

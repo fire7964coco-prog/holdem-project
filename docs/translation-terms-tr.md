@@ -14,7 +14,7 @@
   - Two Pair → **İki Çift** (전통 슬랭 **Döper**도 통용 — İki Çift가 더 명료, 첫 등장 후 자유)
   - One Pair → **Çift** (전통 슬랭 **Per**도 있으나 **Çift**가 현대 온라인 표준)
   - High Card → **Yüksek Kart** (또는 Koz yok)
-- **액션(터키어+영어 혼용, 자연스러운 쪽)**: check → **check / kontrol** ("çek"으로 쓰기도), bet → **bahis / bet**, call → **call / görmek**, raise → **raise / yükseltmek (arttırmak)**, fold → **fold / pas (yatmak, çekilmek)**, all-in → **all-in** (또는 "hepsi ortaya"). 첫 등장 병기 후 자연스러운 쪽 사용.
+- **액션(터키어+영어 혼용, 자연스러운 쪽)**: check → **check / kontrol** ("çek"·"bop"으로 쓰기도 — 🔴 사장님 10-06 확정: check 문맥에 «pas» 금지 · 단독 «pas»·«pas geç(mek)» = fold만 · «rest» = all-in · 갈림 설명은 betting-actions «Türkçe masa terimleri» 절이 정본), bet → **bahis / bet**, call → **call / görmek**, raise → **raise / yükseltmek (arttırmak)**, fold → **fold / pas (yatmak, çekilmek)**, all-in → **all-in** (또는 "hepsi ortaya"). 첫 등장 병기 후 자연스러운 쪽 사용.
 - **블라인드**: Blinds → **blind / kör bahis**, Small Blind → **small blind (SB)**, Big Blind → **big blind (BB)**. 온라인 관습상 영어 SB/BB 우세.
 - **스트리트/구조**: pre-flop/preflop, Flop, Turn, River 그대로(터키 사이트도 영어 유지). burn card → **burn kart**, betting round → **bahis turu**, community cards → **ortak kartlar (community cards)**, hole cards → **hole kart / kapalı kartlar**.
 - **핵심 명사**: card → **kart**, hand(패) → **el**, hand rankings → **el sıralaması**, dealer → **dağıtıcı (dealer)**, button → **buton (BTN)**, pot → **pot (kasa / ortadaki para)**, main pot → **ana pot**, side pot → **yan pot (side pot)**, kicker → **kicker / yan kart**, showdown → **showdown / el gösterme**, suit → **tür / renk**, stack → **stack / çip yığını**, chips → **çip / chip**, Bluff → **blöf**.

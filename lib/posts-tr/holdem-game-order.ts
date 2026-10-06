@@ -3,8 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-game-order",
   title: "Texas Hold'em oyun sırası: blind'dan showdown'a bir el nasıl ilerler",
-  seoTitle: "Sıra kimde, ne zaman bahis? — Hold'em el sırası",
-  desc: "Hold'em'de sıra sana gelince donup mu kalıyorsun? İşte elin tam sırası — preflop, flop, turn, river, showdown — gerçek bir el üzerinden adım adım.",
+  seoTitle: "Pokerde sıra kimde? Preflop, flop, turn, river oyun sırası",
+  desc: "Pokerde sıra kimde, flop, turn ve river ne demek? Texas Hold'em oyun sırası gerçek bir el üzerinden: blind'dan showdown'a her bahis turu adım adım.",
   tldr: "Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, toplam 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
@@ -14,27 +14,20 @@ export const POST: Post = {
   readTime: "16 dk",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
-  imageAlt: "Texas Hold'em el sırası şeması — blind, preflop, flop, turn, river, showdown; altı aşamanın tamamı",
-  tags: ["texas holdem oyun sırası", "poker el akışı", "poker el sırası", "preflop flop turn river", "poker bahis turları", "pokerde sıra kimde", "bir poker eli nasıl işler", "poker showdown"],
+  imageAlt: "Texas Hold'em oyun sırası şeması — blind, preflop, flop, turn, river, showdown; altı aşamanın tamamı",
+  tags: ["texas holdem oyun sırası", "pokerde sıra kimde", "poker oyun sırası", "preflop flop turn river", "flop nedir", "poker bahis turları", "bir poker eli nasıl işler", "poker showdown"],
   content: `
 İlk kez Texas Hold'em oynamak için oturan hemen herkes aynı şeyi sorar: ==r:*"Dur… şimdi sıra kimde ve çiplerimi ne zaman koyacağım?"*== Kartların dağıtılacağını biliyorsun. Bilmediğin şey, ne zaman bahis yapacağın, bir sonraki kartların ne zaman geleceği ve kazananın gerçekte nasıl belirlendiği.
 
-İşte bu, **elin sırası rehberi**: blind, preflop, flop, turn, river, showdown ve her aşamada sıranın kimde olduğu. Sıfırdan başlıyorsan ve daha geniş bir başlangıç paketi istiyorsan — kurallar, çipler, el sıralaması, ilk strateji ve yazdırılabilir PDF — önce [yeni başlayanlar için Texas Hold'em kuralları](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") yazısıyla başla. Sonra buraya dönüp elin ayrıntılı akışına bak.
+İşte bu, **oyun sırası rehberi**: blind, preflop, flop, turn, river, showdown ve her aşamada sıranın kimde olduğu. Sıfırdan başlıyorsan ve daha geniş bir başlangıç paketi istiyorsan — kurallar, çipler, el sıralaması, ilk strateji ve yazdırılabilir PDF — önce [yeni başlayanlar için Texas Hold'em kuralları](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") yazısıyla başla. Sonra buraya dönüp elin ayrıntılı akışına bak. Yazının ortasında, gerçek kartlarla ve çip miktarlarıyla baştan sona oynanmış tam bir el de var.
 
 ---
 
-### Bir el 15 saniyede
+## Bir Texas Hold'em eli nasıl ilerler?
 
-Blind koy (zorunlu bahis) → her oyuncuya 2 **kapalı kart** dağıt → **preflop** turu → 3 **flop** kartını aç → bahis → **turn** kartını ekle → bahis → son **river** kartını aç → bahis → kalan oyuncular showdown'da kartlarını gösterir → en iyi beş kartlık el kazanır.
+Bir Texas Hold'em eli altı aşamada ilerler. Önce iki oyuncu blind koyar ve herkese iki kapalı kart dağıtılır; ardından preflop bahis turu oynanır. Sonra flop'ta üç, turn'de bir ve river'da bir ortak kart açılır; her açılışın ardından yeni bir bahis turu gelir. River'dan sonra hâlâ iki ya da daha fazla oyuncu kaldıysa showdown'da en iyi beş kartlık el potu alır.
 
-
----
-
-## Texas Hold'em nedir?
-
-Texas Hold'em, dünyada en çok oynanan poker türüdür. WSOP Ana Turnuvası'ndan bir arkadaş masasına kadar, biri "poker" dediğinde neredeyse kesinlikle Hold'em'i kasteder.
-
-Temel kural basit: **2 kapalı kartın (hole kart) ile masadaki 5 ortak kartı** birleştirerek **en iyi beş kartlık eli** oluşturursun. Hangi kartların geleceğine şans karar verir, ama elin sırasını anlamak — ve her aşamada doğru kararı vermek — kazananı diğerlerinden ayıran şeydir.
+Temel kural basit: **2 kapalı kartın (hole kart) ile masadaki 5 ortak kartı** birleştirerek **en iyi beş kartlık eli** oluşturursun. Hangi kartların geleceğine şans karar verir, ama oyun sırasını anlamak — ve her aşamada doğru kararı vermek — kazananı diğerlerinden ayıran şeydir.
 
 ---
 
@@ -44,7 +37,7 @@ Tek bir kart bile açılmadan önce masayı düzenleyen iki şey vardır: **dağ
 
 **Dağıtıcı butonu ("buton", "D" harfiyle gösterilir)**, o elde "dağıtıcı" konumunu işaretleyen yuvarlak bir disktir. Bir krupiye olsa bile bahis sırasını buton belirler ve buton her elden sonra saat yönünde bir koltuk kayar.
 
-**Blind**, kartlar dağıtılmadan önce konulan zorunlu bahistir. Blind olmasa herkes bedavaya check deyip pas geçebilirdi; ==g:blind, pota para koyar ve oyunculara yarışmak için bir sebep verir==. (Yeni misin? Tam olarak [small blind ve big blind nasıl işler](/tr/blog/holdem-blind-meaning) yazısına bak.)
+**Blind**, kartlar dağıtılmadan önce konulan zorunlu bahistir. Blind olmasa herkes bedavaya check edip sırayı geçebilirdi; ==g:blind, pota para koyar ve oyunculara yarışmak için bir sebep verir==. (Yeni misin? Tam olarak [small blind ve big blind nasıl işler](/tr/blog/holdem-blind-meaning) yazısına bak.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -59,11 +52,11 @@ Blind sadece bir giriş ücreti değildir — ==pozisyonun ve stratejinin başla
 
 ---
 
-## Aşama 1 — Preflop: ilk karar elin tonunu belirler
+## Preflop nedir? İlk karar elin tonunu belirler
 
-Blind'lar konduktan sonra dağıtıcı her oyuncuya kapalı (yüzü aşağı) 2 **hole kart** verir. Bunları yalnızca sen görürsün ve **preflop** turu başlar.
+**Preflop**, blind'lar konduktan ve herkese yüzü kapalı 2 **hole kart** dağıtıldıktan sonra, henüz hiçbir ortak kart açılmadan oynanan ilk bahis turudur. Aksiyon big blind'ın solundaki oyuncudan (UTG) başlar ve saat yönünde ilerler; her oyuncu fold, call ya da raise arasında seçim yapar. Kimse yükseltmediyse big blind check ile turu kapatabilir. Elinde yalnızca iki kart varken verdiğin bu karar, elin geri kalanının çerçevesini çizer.
 
-Aksiyon big blind'ın solundan başlar ve saat yönünde ilerler. Sıra sana gelince şunlardan birini seçersin:
+Sıra sana gelince şunlardan birini seçersin:
 
 - **Fold (pas)** — eli bırak ve kartları at (muck). Daha fazla kaybetmezsin ama potu da kazanamazsın.
 - **Call (gör)** — mevcut bahse eşitle (preflop'ta bu big blind kadardır).
@@ -82,9 +75,9 @@ Bunlardan hangilerini gerçekten açabileceğin koltuğuna bağlıdır. Pozisyon
 
 ---
 
-## Aşama 2 — Flop: üç ortak kart
+## Flop nedir? Üç ortak kart ve ikinci bahis turu
 
-Preflop turu bitince dağıtıcı masanın ortasına 3 **ortak kart (community cards)** açar. İşte bu, **flop**'tur.
+**Flop**, preflop bahis turu bittikten sonra dağıtıcının masanın ortasına aynı anda açtığı ilk üç **ortak karttır (community cards)**. Masadaki herkes bu üç kartı kendi iki hole kartıyla birlikte kullanır. Flop açılınca elin ikinci bahis turu başlar ve sıra, butonun solunda hâlâ elde olan ilk oyuncudadır.
 
 Artık gerçek beş kartlık bir eli okuyabilirsin: iki hole kartın ve masadaki üç kart. Aynı anda iki şeye bak:
 
@@ -93,13 +86,13 @@ Artık gerçek beş kartlık bir eli okuyabilirsin: iki hole kartın ve masadaki
 
 ![Texas Hold'em'in üç sokağı — K♥ 7♦ 2♣ flop'u, 9♠ turn'ü ve Q♥ river'ı](/images/blog-holdem-card-stages.webp "Sokaklar: flop'ta üç kart, sonra turn'de bir ve river'da bir kart")
 
-Flop, yeni bir seçeneği de açar: **check (kontrol)**. Henüz kimse bahis yapmadıysa, çip koymadan sırayı check ile geçebilirsin. Ama sen check dedikten sonra rakip bahis yaparsa; call, raise ya da fold demek zorundasın.
+Flop'tan itibaren önünde bahis yoksa herkes çip koymadan **check (kontrol)** yapabilir; preflop'ta bu hak yalnızca big blind'ındı, o da kimse yükseltmediyse. Ama sen check dedikten sonra rakip bahis yaparsa; call, raise ya da fold demek zorundasın.
 
 ---
 
-## Aşama 3 — Turn: tablo netleşir
+## Turn nedir? Dördüncü kart
 
-Flop bahis turundan sonra bir ortak kart daha eklenir: **turn**. Artık masada dört kart var.
+**Turn**, flop bahis turundan sonra açılan dördüncü ortak karttır; masada artık dört kart vardır. Ardından elin üçüncü bahis turu oynanır; konuşma sırası flop'takiyle aynıdır. Çekişlerin tamamlanması için geriye tek kart kalır ve pot büyüdükçe her kararın bedeli artar. Bu yüzden river'a kadar devam etmeye değip değmediğine çoğu zaman burada karar verilir.
 
 Turn, stratejik kararların ağırlaştığı sokaktır (street):
 
@@ -111,9 +104,9 @@ Turn, stratejik kararların ağırlaştığı sokaktır (street):
 
 ---
 
-## Aşama 4 — River: son kart, son karar
+## River nedir? Son kart, son karar
 
-Turn bahis turundan sonra beşinci ve son ortak kart açılır: **river**. Artık beş ortak kart da ortadadır ve gelecek yeni bir bilgi kalmaz.
+**River**, turn bahis turundan sonra açılan beşinci ve son ortak karttır. Bundan sonra yeni kart gelmez; elinin gücü artık kesinleşmiştir. River'da elin dördüncü ve son bahis turu oynanır; sıra yine flop'taki gibi işler. Bu turun sonunda hâlâ iki ya da daha fazla oyuncu kaldıysa el showdown'a gider.
 
 River'da klasik yeni oyuncu hataları:
 
@@ -125,9 +118,9 @@ River, tüm eli kapattığın yerdir. Elinin gücünü, rakibin bahis düzenini 
 
 ---
 
-## Aşama 5 — Showdown: en iyi beş kart kazanır
+## Showdown: en iyi beş kart kazanır
 
-River bahsinden sonra hâlâ iki ya da daha fazla oyuncu kaldıysa el **showdown**'a gider.
+Son bahis turu kapandığında elde birden fazla oyuncu kaldıysa artık kimse çip koymaz; kartlar açılır ve potun sahibini yalnızca eller belirler. Bu ana **showdown** denir.
 
 ![Poker showdown — 10♣ 7♥ J♦ 4♠ 9♣ board'unda As çifti A♥ A♦, Papaz çiftini K♥ K♣ yener](/images/blog-holdem-showdown.webp "Showdown'da kalan oyuncular kartlarını açar — burada daha yüksek çift, As As, potu alır")
 
@@ -143,7 +136,9 @@ Kimin önce göstereceği, ne zaman muck yapabileceğin ve slow-roll âdâbı [s
 
 ---
 
-## Her sokakta sıra kimde?
+## Pokerde sıra kimde? Her turda ilk kim konuşur?
+
+Preflop'ta ilk konuşan, big blind'ın hemen solundaki oyuncudur (UTG); big blind o turda en son konuşur. Flop, turn ve river'da ise sıra butonun solunda hâlâ elde olan ilk oyuncudan başlar — tam masada bu genellikle small blind'dır — ve buton en son konuşur. Tek istisna heads-up'tır: orada buton small blind'ı koyar, preflop'ta ilk, flop'tan sonra her sokakta son konuşur.
 
 "Sıra kimde?" sorusunun cevabı flop'tan önce ve sonra farklıdır — ve tam da bu değişim, pozisyon stratejisinin motorudur.
 
@@ -160,7 +155,7 @@ Kimin önce göstereceği, ne zaman muck yapabileceğin ve slow-roll âdâbı [s
 
 Ezber hilesi: ==**flop'tan önce big blind'ın soluna, flop'tan sonra butonun soluna bak.**== Buton, flop sonrası her sokakta son konuşur; en kârlı koltuk olmasının nedeni tam olarak budur.
 
-==g:**Heads-up (2 oyuncu) istisnadır:**== buton *small* blind'ı koyar ve preflop'ta **ilk**, flop, turn ve river'da ise **son** konuşur. Aşağıdaki tam el anlatımında bu sıra kullanılıyor.
+==g:**Heads-up (2 oyuncu) istisnadır:**== buton small blind'ı koyar; preflop'ta **ilk**, flop'tan sonra **son** konuşur. Aşağıdaki tam elde Oyuncu A butondur: preflop'ta önce o yükseltir, flop'tan sonra ise B check ettikten sonra konuşur.
 
 ---
 
@@ -195,7 +190,7 @@ Ezber hilesi: ==**flop'tan önce big blind'ın soluna, flop'tan sonra butonun so
 
 Sokakları okumak soyut kalır. Hadi gerçek kart ve çip miktarlarıyla tek bir heads-up (bire bir) eli ilk karttan son karta oynayalım.
 
-**Durum:** heads-up. Blind SB 1.000 / BB 2.000.
+**Durum:** heads-up. Blind SB 1.000 / BB 2.000. Oyuncu A buton ve small blind, Oyuncu B big blind.
 
 - **Oyuncu A (sen):** A♠ K♥ (As-Papaz, farklı tür / offsuit)
 - **Oyuncu B (rakip):** 9♦ 9♣ (dokuz çifti)
@@ -288,13 +283,13 @@ Showdown'da kazanmak için hangi elin hangisini yendiğini anında bilmen gereki
 
 </div>
 
-Kicker ve beraberliklerin kazananı nasıl belirlediği dâhil tüm ayrıntılar için [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberinin tamamına bak.
+On elin tamamı, örnekleri ve olasılıklarıyla [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberinde. Aynı eller çarpıştığında kicker'ın kazananı nasıl belirlediği ve potun ne zaman bölündüğü ise [beraberlik kuralları](/tr/blog/holdem-tiebreak-rules) yazısında.
 
 ---
 
 ## Her yeni oyuncunun kaçınması gereken 5 hata
 
-Elin sırasını ezbere bilsen bile şunları yaparsan çiplerini kaybedersin.
+Oyun sırasını ezbere bilsen bile şunları yaparsan çiplerini kaybedersin.
 
 ### 1. Neredeyse her eli oynamak
 
@@ -320,7 +315,7 @@ Klasik yeni oyuncu hatası: aslında tek çift varken "iki çiftim var!" sanmak.
 
 ## Bugün oynamaya nasıl başlarsın
 
-Elin sırası kafanda oturunca, sıra gerçekten oynamakta.
+Oyun sırası kafanda oturunca, sıra gerçekten oynamakta.
 
 - **Oyun parasıyla çalış** — çoğu uygulama ve poker odası ücretsiz masalar sunar. Bu rehberdekileri gerçek bir akışta dene.
 - **Bu yazıyı iki üç kez tekrar oku** — sıra refleks olmalı ki masada asla donup kalmayasın.
@@ -338,9 +333,21 @@ Texas Hold'em otuz dakikada öğrenilir, ama ustalaşmak bir ömür sürer. Yine
 
 ## Sık sorulan sorular (SSS)
 
-**Q. Bir Texas Hold'em elinin sırası tam olarak nasıldır?**
+**Q. Texas Hold'em'de oyun sırası tam olarak nasıldır?**
 
 A. Zorunlu blind → 2 hole kart dağıt → preflop turu → flop (3 kart) ve bahis → turn (1 kart) ve bahis → river (son kart) ve bahis → showdown (en iyi 5 kart karşılaştırılır).
+
+**Q. Pokerde flop ne demek?**
+
+A. Flop, preflop turundan sonra masaya birlikte açılan ilk üç ortak kartın ve elin o aşamasının adıdır. Masada "flop'u görmek" dendiğinde, preflop'ta fold etmeden bu üç kart açılana kadar elde kalmak kastedilir.
+
+**Q. Preflop'ta ilk kim konuşur?**
+
+A. Big blind'ın solundaki koltuk; buna UTG ("under the gun") denir. Aksiyon oradan saat yönünde döner ve kimse yükseltmediyse big blind check ile turu kapatabilir. İki kişilik oyunda ise ilk konuşan, small blind'ı koyan butondur.
+
+**Q. Heads-up'ta (iki kişi) sıra nasıl değişir?**
+
+A. İki kişide blind'lar ters döner: dağıtıcı butonu small blind'ı, diğer oyuncu big blind'ı koyar. Preflop'ta önce buton konuşur; flop, turn ve river'da ise önce big blind konuşur ve buton her sokağı kapatır. Butonun blind ödediği tek durum budur.
 
 **Q. Preflop ile flop arasındaki fark nedir?**
 

@@ -3,9 +3,9 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-betting-actions",
   title: "Texas Hold'em bahis hareketleri: check, call, raise, fold",
-  seoTitle: "Sıra sende, kilitlendin mi? — Poker bahis hareketleri",
-  desc: "Sıra sana geldi, kafan bomboş mu? Pokerde check, call, raise ve fold ne demek, min-raise kuralı nasıl işler ve kaç kez re-raise yapabilirsin — hepsi burada.",
-  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (bedavaya pas), bet (turu açmak), call (bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
+  seoTitle: "Pokerde check, call, raise, fold ne demek? Sıra sende",
+  desc: "Pokerde check, call, raise ve fold ne demek? Masada duyduğun pas, gördüm, bop, rest de dahil: min-raise kuralı ve kaç kez re-raise yapılabileceği, örneklerle.",
+  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
   category: "rules",
   date: "2026-06-14",
   updated: "2026-10-06",
@@ -15,8 +15,10 @@ export const POST: Post = {
   emoji: "🃏",
   tags: [
     "poker bahis hareketleri",
-    "pokerde check nedir",
-    "pokerde call nedir",
+    "pokerde check ne demek",
+    "pokerde call ne demek",
+    "pokerde bob ne demek",
+    "pokerde pas ne demek",
     "min raise poker kuralı",
     "pokerde kaç kez raise yapılır",
     "check raise nedir",
@@ -48,9 +50,9 @@ Poker masasında verdiğin her karar bu beşinden biridir:
 
 | Hareket | Ne zaman mümkün | Çip maliyeti |
 |--------|---------------|-----------|
-| Fold (yatmak) | Sıra sende olduğu her an | Bedava — ama pota koyduğun çipleri kaybedersin |
-| Check | Yalnızca önünde açık bir bahis yoksa (preflop: sadece big blind olarak) | Bedava — çip eklemeden pas geçersin |
-| Call (görmek) | Biri bahis koyduktan ya da yükselttikten sonra | Mevcut bahsi birebir görürsün |
+| Fold (yatmak / pas) | Sıra sende olduğu her an | Bedava — ama pota koyduğun çipleri kaybedersin |
+| Check (çek / bop) | Yalnızca önünde açık bir bahis yoksa (preflop: sadece big blind olarak) | Bedava — çip eklemeden sırayı solundakine bırakırsın |
+| Call (görmek / gördüm) | Biri bahis koyduktan ya da yükselttikten sonra | Mevcut bahsi birebir görürsün |
 | Bet (bahis) | Turun ilk bahsi | Seçtiğin miktar (minimum = 1 big blind) |
 | Raise (yükseltmek) | Biri bahis koyduktan sonra | Önceki bahsin ya da yükseltmenin en az büyüklüğü kadar üstüne |
 
@@ -60,11 +62,9 @@ Yeni başlayanların kaçırdığı en önemli kural şu: ==r:önünde açık bi
 
 ---
 
-## Pokerde check nedir?
+## Pokerde check ne demek?
 
-Check demek: ==g:"pas geçiyorum — benden bahis yok ama elde kalıyorum."==
-
-Hiçbir maliyeti yok. Canlı pokerde masaya parmakla vurarak ya da "check" diyerek belli edersin. Sıra solundaki oyuncuya geçer. Herkes sırayla check yaparsa bir sonraki ortak kart açılır — river'daysan doğrudan showdown'a gidilir.
+Check, tek cümleyle: ==g:"benden bahis yok ama elde kalıyorum."== Pokerde check nedir sorusunun cevabı bu kadar basit: önünde açık bir bahis yokken çip koymadan sırayı solundaki oyuncuya bırakırsın. Hiçbir maliyeti yok; canlı pokerde masaya parmakla vurarak ya da "check" diyerek belli edersin. Herkes sırayla check yaparsa bir sonraki ortak kart açılır — river'daysan doğrudan showdown'a gidilir.
 
 Check yapmak teslim olmak değildir. Kartların sende kalır, tüm seçeneklerin durur ve sonrasını görmek için hiç ödeme yapmamışsındır.
 
@@ -77,15 +77,23 @@ Check'i tam olarak iki durumda yapabilirsin:
 - **O street'te henüz kimse bahis koymadıysa** (flop, turn ya da river)
 - **Preflop'ta big blind sensen ve kimse yükseltmediyse** — blind'in zaten canlı bir bahis sayılır, yani check yapıp flop'u bedavaya görebilirsin
 
-Sen check yaptıktan sonra biri bahis koyarsa, önüne yepyeni bir karar gelir: fold, call ya da raise. Önce check yapıp sonra rakip bahis koyunca yükseltmene ==check-raise== denir — Texas Hold'em'de tamamen yasaldır ve standart bir silahtır, ayak oyunu değil.
-
-Hangi street'te kimin ne zaman oynadığını sırayla görmek için [Texas Hold'em oyun sırasına](/tr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") bak.
+Sen check yaptıktan sonra biri bahis koyarsa, önüne yepyeni bir karar gelir: fold, call ya da raise. Bunlardan raise'i seçmenin özel bir adı var — hemen aşağıda.
 
 ---
 
-## Pokerde call nedir? (check vs call)
+## Check-raise nedir?
 
-Call yapmak, elde kalmak için ==mevcut bahsi birebir görmek== demektir. Biri $10 koyar, sen $10 call yaparsın — ne fazla, ne eksik.
+Check-raise, aynı bahis turunda önce check yapıp, arkandan biri bahis koyunca o bahsi yükseltmektir. Texas Hold'em'de tamamen yasaldır ve standart bir silahtır, ayak oyunu değil. String bet ile de ilgisi yoktur: check ve raise, iki ayrı sırada verilen iki ayrı karardır. Tek şart, sen check yaptıktan sonra birinin gerçekten bahis koymasıdır; arkandaki herkes check yaparsa yükseltecek bahis kalmaz ve street öylece biter.
+
+Örnek: flop'ta check yaparsın, arkandaki bir oyuncu $10 koyar. Sıra sana döndüğünde en az $20'ye yükseltebilirsin — min-raise artışı son bahis kadar, yani $10 daha.
+
+Check-raise yalnızca flop, turn ve river'da mümkündür ve önce senin konuşman gerekir, yani bahis sırası belirleyicidir: flop'tan itibaren butonun solundaki ilk aktif oyuncu açar. Her street'te sıranın gerçek bir el üzerinde nasıl ilerlediğini [Texas Hold'em oyun sırası rehberinde](/tr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") anlattım.
+
+---
+
+## Pokerde call ne demek? (check vs call)
+
+Call (masada "gördüm"), elde kalmak için ==mevcut bahsi birebir görmek== demektir: biri $10 koyar, sen $10 call yaparsın — ne fazla, ne eksik. Pokerde call nedir diye düşünürken tek şartı aklında tut: call ancak senden önce biri bahis koyduysa ya da yükselttiyse mümkündür. Önünde bahis yoksa görecek bir şey de yoktur; o durumda yapacağın hamle check'tir.
 
 Check ile call, yeni başlayanların en sık karıştırdığı ikili, o yüzden temiz ayrımı şöyle:
 
@@ -93,19 +101,37 @@ Check ile call, yeni başlayanların en sık karıştırdığı ikili, o yüzden
 |-|-------|------|
 | Ne zaman var | Önünde açık bir bahis yok (preflop: sadece big blind olarak) | Senden önce biri bahis koydu |
 | Çip maliyeti | Bedava | Mevcut bahsi görürsün |
-| Ne der | "Pas, hâlâ içerideyim" | "Devam etmek için öderim" |
+| Ne der | "Bop, hâlâ içerideyim" | "Gördüm, devam etmek için öderim" |
 
 Gerçek örnek: flop'ta K♠ 8♦ ile oturuyorsun. Kimse bahis koymamış, o yüzden ==check== yaparsın. Sıradaki oyuncu $10 koyar. Artık seçeneklerin $10 ==call==, ==raise== ($20 ya da fazlası) ya da ==fold==. Check gitti — o pencere bahis girdiği an kapandı.
 
 ---
 
-## Pokerde fold nedir — istediğin an yatabilir misin?
+## Pokerde fold ne demek — istediğin an yatabilir misin?
 
-Fold yapmak, kartlarını atıp elden çıkmak demektir. Yeni bir şey ödemezsin ama ==r:pota koyduğun her çip potta kalır==.
+Fold (masada "pas" ya da "çekiliyorum"), kartlarını atıp elden çıkmak demektir. Yeni bir şey ödemezsin ama ==r:pota koyduğun her çip potta kalır== ve o eldeki potu kazanma şansın biter. Pokerde fold nedir diye soranların asıl merak ettiği zamanlama: evet, sıra sende olduğu her an yatabilirsin, hiç bahis koymadan önce bile, ve o fold bağlayıcıdır.
 
-Evet — sıra sende olduğu her an yatabilirsin, hiç bahis koymadan önce bile, ve o fold bağlayıcıdır. Tamamen bedava da değildir: turnuvada, önünde hiç bahis yokken yatmak ==WSOP 84. kurala== göre "standart dışı fold" sayılır ve uyarı alabilirsin. Ve şu tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
+Yine de her zaman bedava değildir: turnuvada, önünde hiç bahis yokken yatmak ==WSOP 84. kurala== göre "standart dışı fold" sayılır ve uyarı alabilirsin. Ve şu tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
 
 Canlı adabından bir kural: ==sırası gelmeden== yatma. Sıra sana ulaşana kadar bekle — erken yatmak hâlâ karar veren oyunculara bilgi sızdırır ve çoğu salon bunu uyarır ya da cezalandırır. Yatmanın *ne zaman* doğru hamle olduğunu bilmek başlı başına bir beceridir.
+
+---
+
+## Pokerde pas, gördüm, bop ve rest ne demek? Türkçe masa terimleri
+
+Türk masalarında İngilizce terimlerin yanında yerel sözcükler de duyarsın: "gördüm" call, "artırıyorum" raise, "bop" (ya da "bob") ve "çek" check, "rest" all-in demektir. "Pas" ise kafa karıştırır: bu rehberde tek başına "pas" ya da "pas geç" fold, yani elden çekilmek anlamına gelir. Bazı masalarda ve kaynaklarda "pas geçmek" check anlamında da kullanılır — karışıklığı önlemek için check'e "çek" ya da "bop" de.
+
+| Masada duyduğun söz | Hareket | Not |
+|--------|--------|-----------|
+| gördüm / görmek | Call | Mevcut bahsi birebir görürsün |
+| artırıyorum / artırmak / yükseltmek | Raise | Min-raise kuralı aşağıda |
+| bop / bob | Check | Bahis yok, ama elde kalırsın; arkandan bahis gelirse görme ya da artırma hakkın durur |
+| çek | Check | İngilizce "check"in masadaki söylenişi — "çekilmek" ile karıştırma, o fold demektir |
+| pas / pas geç | Fold | Elden çekilmek — bu rehberdeki anlamı |
+| çekilmek / kapatmak | Fold | Kartları bırakıp elden çıkmak |
+| rest / rest çekmek | All-in | Önündeki tüm çipleri ortaya sürmek — ayrıntısı [all-in kuralları ve yan potlarda](/tr/blog/holdem-all-in-rules) |
+
+Krupiye için en net beyan hâlâ İngilizce olandır: emin değilsen "check" ya da "fold" de, yanlış anlaşılma riski en aza iner. Diğer terimler (pot, buton, kicker ve dahası) için [Hold'em terim sözlüğüne](/tr/glossary) bak.
 
 ---
 
@@ -203,7 +229,7 @@ $10'lık bir bahis karşısında oyuncu sessizce tek bir $100'lık çip atar, he
 
 **Q. Pokerde check yaptıktan sonra raise yapılır mı?**
 
-A. Evet — check'ten sonra biri bahis koyarsa, sıra sana dönünce yükseltebilirsin. Bu check-raise'dir ve tamamen yasaldır. Arkandaki herkes check yaparsa yükseltecek bahis olmaz ve street öylece biter.
+A. Evet. Check yaptıktan sonra arkandan biri bahis koyarsa, sıra sana döndüğünde o bahsi yükseltebilirsin; buna check-raise denir ve yasaldır. Kimse bahis koymazsa yükseltecek bir şey de olmaz.
 
 **Q. Kendi bahsini yükseltebilir misin?**
 
@@ -232,6 +258,26 @@ A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i bird
 **Q. Pokerde limp ne demek?**
 
 A. Limp, preflop'ta yükseltmek yerine sadece big blind'i görerek pota girmektir. Yasaldır ama genelde zayıf oyundur — nadir birkaç durumda mantıklı olsa da kural değil istisnadır.
+
+**Q. Pokerde bob ne demek?**
+
+A. Bob (yazımı bop da olur), check için kullanılan masa sözüdür. Sadece önünde açık bir bahis yoksa söyleyebilirsin; biri bahis koyduysa seçeneklerin call, raise ya da fold'dur.
+
+**Q. Pokerde pas ne demek?**
+
+A. Bu rehberde "pas", kartlarını bırakıp o elden çıkmak, yani fold demektir. Kelimenin farklı kullanıldığı masalar için yukarıdaki Türkçe masa terimleri bölümüne bak.
+
+**Q. Pokerde gördüm ne demek?**
+
+A. "Gördüm", call'un masadaki karşılığıdır: önündeki bahsi aynı miktarla eşleyip elde kalırsın.
+
+**Q. Pokerde rest ne demek?**
+
+A. Rest (rest çekmek), all-in'dir: önündeki tüm çipleri ortaya sürersin — yan pot ayrıntısı [all-in kuralları rehberinde](/tr/blog/holdem-all-in-rules).
+
+**Q. Pokerde çek ne demek?**
+
+A. Çek, check'in Türkçe söylenişidir ve bedavadır. Preflop'ta bunu yalnızca big blind, kimse yükseltmediyse söyleyebilir; flop'tan sonra önünde bahis olmayan herkes söyleyebilir.
 
 ---
 

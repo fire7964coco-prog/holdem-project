@@ -34,3 +34,14 @@
 - 합법성·온라인 실전 사이트 추천 의도(poker oyna · online poker)는 조준하지 않는다(§0 · §5).
 - 수정은 하지 않는다 — 조사·처방 문서만 쓴다. git 금지.
 - 산출물 끝에 **커버리지 표**: 검색어별로 1~4를 했는지(✅/✗+이유).
+
+---
+
+## 회차 A 결과 (2026-10-06 (11))
+
+- 대상 4편 = texas-holdem-rules-for-beginners(L1 7-A) · holdem-betting-actions(7-C) · holdem-game-order(7-B) · holdem-hand-rankings(L2 7-1). Opus 서브 4레인 → 렌즈 A(터키어 교열)·B(딜러·§13·SEO) + 아스트라 1차 → 반영 → 2차(교열 렌즈 + 아스트라).
+- 새 seoTitle: 필라 «Poker nasıl oynanır? Kısaca Texas Hold'em kuralları sıfırdan»(60) · betting «Pokerde check, call, raise, fold ne demek? Sıra sende»(53) · game-order «Pokerde sıra kimde? Preflop, flop, turn, river oyun sırası»(58 · «el sırası» 반납) · hand-rankings «Kazandın sandın? Poker elleri: perden royal floşa sıralama»(59).
+- 소유 확정(처방서 L1·L2 엇갈림 정리): «pokerde renk sıralaması» = hand-rankings(H2 신설 · 필라 FAQ 링크도 그쪽) · kicker·split pot·beraberlik = tiebreak-rules(hand-rankings는 요약 + 링크 · :::tiebreak 표 삭제 → showdown-rules·game-order 앵커를 tiebreak으로 재조준) · «önce kim bahis yapar» = game-order(betting H2 삭제 → 2문장 + 링크) · «Showdown nedir» = showdown-rules(game-order H2는 «Showdown: …» 비질문형 유지).
+- «pas» 확정 이행: check 문맥 pas 5자리 정정(betting 4 · game-order 1) · 용어집 aka(pas→fold · bop/bob→check · rest→all-in) · `docs/translation-terms-tr.md` 갱신.
+- 미적용(조건 미충족): hand-rankings Türk pokeri H2(1차 출처 없음 → 1문장) · 필라 Türk pokeri 비교표는 tr.wikipedia «Poker» 축어(5장 비공개 · 최대 4장 교체 · 4인 7~A 덱)로만 · mynet «24 kart» 미사용.
+- 🪶 남긴 것: 필라 seoTitle 60자 상한 · game-order «Showdown: …» 첫 문단 25단어(비질문형) · 처방 차별화 «거리별 좌석 그림»(새 이미지 범위 밖).

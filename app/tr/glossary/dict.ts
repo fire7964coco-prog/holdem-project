@@ -8,7 +8,7 @@
 //   Semi-blöf = «Blöf / Semi-blöf» 행 전체 · Blöf = 같은 행 앞 문장 · All-in = «(bkz. yan pot)» 링크 꼬리만 절단.
 // - 번역 5개(글에 정의 없음) = Board · Offsuit · Out · Preflop · SPR — EN desc 번역, 표기 = docs/translation-terms-tr.md + tr 코퍼스
 //   (ortak kart · deste · tür · Floş · Kent · out · made hand · draw). §13: 9 out / 8 out · A♠K♦ · ÷ 그대로.
-// - 표기: çip(fiş 금지) · fold는 «pas»로 쓰지 않는다(Fold (yatmak) — 글 표 그대로) · 족보 = 코퍼스 표 형(Üçlü·Kent·Floş).
+// - 표기: çip(fiş 금지) · 표제는 Fold (yatmak) — 글 표 그대로 · 검색 별칭(aka) = 사장님 10-06 확정(단독 «pas»·«pas geçmek» = fold · check = çek/bop · rest = all-in — tr SERP 보강 회차 A) · 족보 = 코퍼스 표 형(Üçlü·Kent·Floş).
 // - seo.title: DataForSEO google_ads search_volume (location 2792 Türkiye · language tr · 2026-10-06, 1회):
 //   «poker terimleri» 260 · «icm nedir» 170 · «tilt nedir» 140 · «poker terimleri sözlüğü» 10 · «poker sözlüğü» null
 //   → 머리어 = 터키어 «Poker Terimleri»(자국어 헤드텀 우세 — ms와 반대) + «Sözlüğü A–Z».
@@ -53,7 +53,7 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
   },
   terms: [
     { term: "3-Bet", cat: "Action", desc: "Açılıştan sonraki re-raise. Blind'lar 1. bahis, açılış raise'i 2. bahistir; yani re-raise 3-bet'tir (ilk raise değil).", aka: ["3bet", "three-bet", "3-bet nedir"] },
-    { term: "All-in", cat: "Action", desc: "Tüm çiplerini ortaya sürmek; potun yalnızca karşılayabildiğin kısmını kazanabilirsin.", aka: ["allin", "jam", "shove", "hepsi ortaya"] },
+    { term: "All-in", cat: "Action", desc: "Tüm çiplerini ortaya sürmek; potun yalnızca karşılayabildiğin kısmını kazanabilirsin.", aka: ["allin", "jam", "shove", "hepsi ortaya", "rest", "rest çekmek"] },
     { term: "Ante", cat: "Action", desc: "Geleneksel olarak potu başlatmak için herkesten alınan, blind'lardan ayrı zorunlu bahis — bugün çoğu turnuva, tek bir koltuğun ödediği big blind ante kullanır.", aka: ["big blind ante", "bb ante"] },
     { term: "Backdoor", cat: "Board", desc: "İki kartın art arda gelmesine (turn ve river) ihtiyaç duyan draw.", aka: ["runner-runner", "backdoor draw"] },
     { term: "Bad Beat", cat: "Slang", desc: "Büyük favoriyken şanslı bir draw'a kaybetmek.", aka: ["bad beat", "badbeat"] },
@@ -63,14 +63,14 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
     { term: "Board", cat: "Board", desc: "Masanın ortasındaki ortak kartlar. «Islak» (wet) board draw'larla doludur ve tehlikelidir; «kuru» (dry) board az draw sunar.", aka: ["ortak kartlar", "community cards", "wet board", "dry board"] },
     { term: "Buton (BTN)", cat: "Position", desc: "Dealer pozisyonu; postflop'ta en son oynar — masanın en iyi koltuğu.", aka: ["button", "BTN", "dealer", "dağıtıcı", "buton"] },
     { term: "Call (görmek)", cat: "Action", desc: "Elde kalmak için mevcut bahsi birebir görmek.", aka: ["call", "görmek", "gormek"] },
-    { term: "Check", cat: "Action", desc: "Bahis yapmadan sırayı geçmek — yalnızca önünde karşılaman gereken açık bir bahis yoksa.", aka: ["kontrol", "çek", "cek"] },
+    { term: "Check", cat: "Action", desc: "Bahis yapmadan sırayı geçmek — yalnızca önünde karşılaman gereken açık bir bahis yoksa.", aka: ["kontrol", "çek", "cek", "bop", "bob"] },
     { term: "Check-raise", cat: "Action", desc: "Önce check yapıp rakip bahis koyunca yükseltmek — güçlü ve aldatıcı bir hat (modern salonlarda yasal).", aka: ["check raise", "checkraise"] },
     { term: "C-bet", cat: "Action", desc: "Preflop'ta raise yapan oyuncunun flop'ta yaptığı «devam bahsi» (continuation bet).", aka: ["c-bet", "cbet", "continuation bet", "devam bahsi"] },
     { term: "Cooler", cat: "Slang", desc: "Fold edilemeyecek kadar güçlü bir elin daha büyük bir ele çarpması (dar anlamda, para ortaya girerken zaten gerideydin)." },
     { term: "Draw", cat: "Hand", desc: "Gelişmesi gereken bir el — örneğin floş draw'ı (Floşa 4 kart) ya da kent draw'ı.", aka: ["flush draw", "straight draw", "floş draw", "kent draw"] },
     { term: "Equity", cat: "Math", desc: "Şu an pottaki yüzde payın.", aka: ["ekuiti", "pot payı"] },
     { term: "Flop", cat: "Board", desc: "İlk üç ortak kart." },
-    { term: "Fold (yatmak)", cat: "Action", desc: "Elini bırakıp pot üzerindeki her hakkından vazgeçmek.", aka: ["fold", "yatmak", "çekilmek", "muck"] },
+    { term: "Fold (yatmak)", cat: "Action", desc: "Elini bırakıp pot üzerindeki her hakkından vazgeçmek.", aka: ["fold", "yatmak", "çekilmek", "muck", "pas", "pas geçmek"] },
     { term: "GTO", cat: "Math", desc: "Game Theory Optimal — solver'lardan çıkan dengeli, sömürülemeyen strateji.", aka: ["game theory optimal", "solver"] },
     { term: "Gutshot", cat: "Hand", desc: "Ortadaki tek bir değere ihtiyaç duyan içten kent draw'ı (4 out).", aka: ["inside straight draw", "içten kent"] },
     { term: "Range", cat: "Math", desc: "Bir oyuncunun o spotta tutabileceği ellerin tamamı; profesyoneller tek elle değil range'lerle düşünür.", aka: ["hand range", "el aralığı", "el range"] },

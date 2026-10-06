@@ -3,15 +3,15 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Yeni başlayanlar için Texas Hold'em nasıl oynanır — kurallar, çipler, eller ve ilk strateji",
-  seoTitle: "Poker nasıl oynanır? Texas Hold'em kuralları, sıfırdan",
-  desc: "İlk kez mi oynayacaksın? Poker nasıl oynanır, Texas Hold'em kuralları adım adım: blindler, çip dağıtımı, el sıralaması ve yazdırılabilir kopya kâğıdı.",
+  seoTitle: "Poker nasıl oynanır? Kısaca Texas Hold'em kuralları sıfırdan",
+  desc: "Poker nasıl oynanır, kısaca: 52 kartlık deste, 2 kapalı + 5 ortak kart, 4 bahis turu. Texas Hold'em kuralları adım adım, örnek el, yazdırılabilir kopya kâğıdı.",
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
   updated: "2026-10-06",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
-  readTime: "14 dk",
+  readTime: "16 dk",
   emoji: "♠️",
   image: "/images/rules-texas-holdem.webp",
   imageAlt: "Texas Hold'em temel bilgiler infografiği — A♣ K♦ kapalı kartların yanında beş ortak kartlık A♠ K♥ Q♦ J♣ 10♠ yelpazesi",
@@ -32,7 +32,9 @@ Sana lazım olan şey aslında basit: blindlerin ne olduğu, sıranın ne zaman 
 
 Bu rehber ==Texas Hold'em'in nasıl oynandığını== sade bir dille anlatıyor: tam oyun sırası, yeni başlayanlar için çip düzeni, dağıtımın temelleri ve masanın yanına koyabileceğin yazdırılabilir bir kopya kâğıdı.
 
-### Texas Hold'em 30 saniyede
+## Poker nasıl oynanır? Kısaca 7 adımda
+
+Kısaca: Texas Hold'em'de herkes 2 kapalı kart alır, ortaya üç aşamada toplam 5 ortak kart açılır ve her aşamadan sonra bir bahis turu oynanır. Sonunda elde kalan oyuncular 7 karttan kurdukları en iyi 5 kartlık eli karşılaştırır. Diğer herkes elini atarsa son kalan oyuncu kartını göstermeden potu alır. Adım adım akış şöyle:
 
 1. İki oyuncu **blind** (zorunlu bahis) koyar
 2. Herkese kapalı **2 hole kart** dağıtılır
@@ -51,7 +53,69 @@ Aklında kalsın:
 
 ## Poker nedir? Neden önce Texas Hold'em öğrenilir?
 
-Poker, oyuncuların ellerindeki kartların gücüne göre ortadaki pota bahis yaptığı bir kart oyunudur. Potu kazanmanın iki yolu var: sona kadar kalıp showdown'da en iyi beş kartlık eli göstermek ya da bahisle herkesi elini atmaya (fold) zorlamak. Bugün en çok oynanan türü Texas Hold'em: herkes 2 kapalı kart alır, 5 ortak kart açılır. Kuralları birkaç dakikada öğrenilir ve neredeyse her masada, turnuvada ve uygulamada oynandığı için yeni başlayanların çoğu pokere onunla başlar. Bu yazıdaki tüm kurallar o oyun için.
+Poker, oyuncuların ellerindeki kartların gücüne göre ortadaki pota bahis yaptığı bir kart oyunudur. Tek bir oyun değil, birçok türü olan bir oyun ailesidir. Bugün en çok oynanan türü Texas Hold'em: herkes 2 kapalı kart alır, 5 ortak kart açılır. Kuralları birkaç dakikada öğrenilir ve neredeyse her masada, turnuvada ve uygulamada oynandığı için yeni başlayanların çoğu pokere onunla başlar. Bu yazıdaki tüm kurallar o oyun için.
+
+Poker çeşitleri kısaca:
+
+| Tür | Kartlar | Not |
+|-----|---------|-----|
+| Texas Hold'em | 2 kapalı kart + 5 ortak kart | En yaygın tür — bu yazının konusu |
+| Omaha | 4 kapalı kart + 5 ortak kart | Tam olarak 2 kapalı + 3 ortak kart kullanılır |
+| Türk pokeri (kapalı poker) | 5 kapalı kart, ortak kart yok | Kart değiştirmeli ayrı bir oyun — farkı aşağıda |
+| Stud | Ortak kart yok | Kartların bir kısmı açık dağıtılır |
+
+---
+
+## Pokerin mantığı nedir?
+
+Pokerin mantığı, potu iki yoldan birinden kazanmaktır: sona kadar kalıp showdown'da en iyi 5 kartlık eli göstermek ya da bahis yaparak herkesi elini atmaya zorlamak. Kartlar gizli olduğu için her bahis bir bilgi ve bir baskıdır; rakip senin ne tuttuğunu bilmez. Blindler ise her elde potta para olmasını sağlar, yani beklemenin de bir bedeli vardır. Bu yüzden poker sadece şans değil, karar oyunudur.
+
+---
+
+## Poker kaç kâğıtla oynanır? (kaç deste, kaç kart dağıtılır)
+
+Texas Hold'em tek bir **52 kartlık desteyle**, jokersiz oynanır. Her oyuncuya **2 kapalı kart** dağıtılır, ortaya toplam **5 ortak kart** açılır (önce 3, sonra 1, sonra 1). Her oyuncu kendi 2 kartı ile 5 ortak kartın oluşturduğu **7 karttan en iyi 5'ini** kullanır. Deste oyuncu sayısına göre küçültülmez: 10 kişilik dolu bir masada bile 20 kapalı kart + 3 yakılan kart + 5 ortak kart = 28 kart yeter.
+
+Örnek — 7 karttan en iyi 5 kart nasıl seçilir:
+
+| | Oyuncu A | Oyuncu B |
+|---|---|---|
+| Kapalı kartlar | A♠ K♦ | Q♣ Q♥ |
+| Board | K♠ 9♦ 7♣ 4♥ 2♠ | K♠ 9♦ 7♣ 4♥ 2♠ |
+| 7 kart | A♠ K♦ K♠ 9♦ 7♣ 4♥ 2♠ | Q♣ Q♥ K♠ 9♦ 7♣ 4♥ 2♠ |
+| En iyi 5 kart | K♦ K♠ A♠ 9♦ 7♣ | Q♣ Q♥ K♠ 9♦ 7♣ |
+| El | Çift (papaz), kicker A-9-7 | Çift (kız), kicker K-9-7 |
+
+==g:Papaz çifti kız çiftini yener — potu Oyuncu A alır.== 4♥ ve 2♠ iki oyuncunun da en iyi 5 kartına girmez. Üç maça (A♠ K♠ 2♠) floş için yetmez; floş için aynı renkten 5 kart gerekir.
+
+---
+
+## Texas Hold'em ile Türk pokeri arasındaki fark nedir?
+
+Türk pokeri (kapalı poker) Texas Hold'em'in bir türü değil, ayrı bir oyundur. Türk pokerinde her oyuncuya kapalı olarak 5 kart dağıtılır, ortak kart yoktur ve oyuncular istemedikleri kartları yenileriyle değiştirebilir. Texas Hold'em'de ise herkes 2 kapalı kart alır, 5 ortak kart masanın ortasında açılır ve kart değiştirme yoktur. İnternette "5 kart dağıtılır" diyen anlatımların çoğu Türk pokerini anlatır.
+
+| | Texas Hold'em | Türk pokeri (kapalı poker) |
+|---|---|---|
+| Oyuncuya dağıtılan | 2 kapalı kart | 5 kapalı kart |
+| Ortak kart | 5 (flop, turn, river) | Yok — herkes kendi 5 kartıyla oynar |
+| Kart değiştirme | Yok | Var — en fazla 4 kart değiştirilebilir |
+| Deste | Her zaman tam 52 kart | Oyuncu sayısına göre ayarlanır (4 kişide genelde 7'liden As'a) |
+| Renk sıralaması | Yok | Eşit ellerde tür (renk) sıralaması uygulanabilir; sırası kaynağa göre değişir |
+
+Bu yazının geri kalanı yalnızca Texas Hold'em içindir.
+
+<div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+**Texas Hold'em hakkında 4 yaygın yanlış**
+
+| Yanlış | Doğrusu |
+|--------|---------|
+| ✗ Oyun herkesin ante koymasıyla başlar | Standart Texas Hold'em iki zorunlu bahisle, small blind ve big blind ile başlar. Ante yalnızca bazı turnuva seviyelerinde ve bazı oyunlarda ek olarak gelir. |
+| ✗ Renkler arasında sıralama vardır (kupa, maça, karo, sinek) | Texas Hold'em'de renk sıralaması yoktur. En iyi 5 kart aynıysa pot bölünür — ayrıntısı [beraberlik kurallarında](/tr/blog/holdem-tiebreak-rules). |
+| ✗ Beş ortak kart bir seferde açılır | 3 (flop), sonra 1 (turn), sonra 1 (river) açılır; aralarda bahis turu oynanır. |
+| ✗ İki kapalı kartını da kullanmak zorundasın | İkisini, birini ya da hiçbirini kullanabilirsin — en iyi 5 kart hangisiyse o. |
+
+</div>
 
 ---
 
@@ -87,9 +151,11 @@ Bundan sonra dağıtıcı masanın ortasına beş ortak kart açar:
 
 El sıralaması sana hâlâ yabancıysa oynamadan önce [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) aç. Bir floşun mu yoksa bir kentin mi kazandığını bilmek, ileri seviye stratejiyi ezberlemekten çok daha önemli.
 
+> **Pokerde en güçlü el nedir?** Royal Floş: aynı renkten A-K-Q-J-10. Diğer dokuz elin sırası ve olasılıkları [poker el sıralaması](/tr/blog/holdem-hand-rankings) yazısında.
+
 ---
 
-## Poker nasıl oynanır? Yeni başlayan için el akışı
+## Bir el nasıl akar? Yeni başlayan için el akışı
 
 Bu yazı sana akışın **yeni başlayan sürümünü** veriyor ki masaya oturunca donup kalmayasın. Tam bir eli sokak sokak, bahis sırasıyla ve örneklerle görmek istersen sırada [Texas Hold'em oyun sırası](/tr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") var.
 
@@ -104,15 +170,29 @@ Bu yazı sana akışın **yeni başlayan sürümünü** veriyor ki masaya oturun
 
 İlk seansın için akılda tutman gereken tek fikir şu: ==**her yeni sokak açıldığında bir bahis turu daha yapılır.**==
 
-![Flop öncesi bir Texas Hold'em masasının yukarıdan görünümlü infografiği — her oyuncu iki kapalı kart tutuyor ve board hâlâ boş](/images/rules-step2-preflop.webp "Texas Hold'em adım adım nasıl oynanır — blindlerden sonra preflop aksiyonu")
+![Flop öncesi bir Texas Hold'em masasının yukarıdan görünümlü infografiği — her oyuncu iki kapalı kart tutuyor ve board hâlâ boş](/images/rules-step2-preflop.webp "Texas Hold'em adım adım resimli anlatım — blindlerden sonra preflop aksiyonu")
 
 Ayrıntılı sürüm için [blindlerden showdown'a Texas Hold'em oyun sırasıyla](/tr/blog/holdem-game-order) devam et.
 
+### Masada duyacağın Türkçe terimler
+
+Türk masalarında İngilizce aksiyon adlarının yanında yerel sözcükler de kullanılır:
+
+| Masada duyduğun | İngilizce aksiyon | Anlamı |
+|-----------------|-------------------|--------|
+| gördüm / görmek | call | Yapılan bahsi aynı miktarla karşılamak |
+| artırmak / yükseltmek | raise | Bahsi büyütmek |
+| çek / bop | check | Bahis yokken bahis yapmadan elde kalmak |
+| pas / çekilmek | fold | Kartları atıp elden çıkmak |
+| rest | all-in | Önündeki tüm çipleri ortaya koymak |
+
+Her birinin ne zaman yapılabildiğini [Pokerde pas, gördüm, bop ve rest ne demek?](/tr/blog/holdem-betting-actions) başlığıyla bahis aksiyonları yazısında bulabilirsin.
+
 ---
 
-## Texas Hold'em kaç kişiyle oynanır?
+## Poker kaç kişiyle oynanır? (Texas Hold'em'de 2–10 oyuncu)
 
-Texas Hold'em bir masada **2 ile 10 kişi** arasında oynanır. Başlamak için dolu bir masaya ihtiyacın yok — sadece en az iki kişi yeter.
+Texas Hold'em bir masada **2 ile 10 kişi** arasında oynanır. Başlamak için dolu bir masaya ihtiyacın yok — sadece en az iki kişi yeter. İki kişilik oyuna heads-up, 3–6 kişilik masaya short-handed (6-max), 7–10 kişilik masaya full ring denir. Kurallar oyuncu sayısıyla değişmez; değişen tek şey heads-up'ta blindlerin ve ilk konuşma sırasının ters dönmesidir.
 
 | Oyuncu | Adı | Yeni başlayan notu |
 |--------:|------------------|----------------|
@@ -358,7 +438,7 @@ En güçlüden en zayıfa temel el sıralaması (7 karttan en iyi 5'ini kullanar
 | 9 | Çift (One Pair) | %43,8 — showdown'da en sık görülen el |
 | 10 | Yüksek Kart (High Card) | %17,4 — showdown'daki en zayıf el; genelde yalnızca diğerleri de ıskaladığında kazanır |
 
-İki oyuncunun aynı tür eli varsa, ilgili en yüksek kartları karşılaştır — kicker ve beraberlik kurallarına bakabilirsin. En iyi beş kart tamamen aynıysa pot bölünür (split).
+İki oyuncunun aynı tür eli varsa, ilgili en yüksek kartları karşılaştır — [kicker ve beraberlik kurallarına](/tr/blog/holdem-tiebreak-rules) bakabilirsin. En iyi beş kart tamamen aynıysa pot bölünür (split).
 
 ---
 
@@ -444,6 +524,26 @@ A. No-Limit, herhangi bir bahis turunda tüm çiplerine kadar istediğin miktard
 **Q. Bir Texas Hold'em eli ne kadar sürer?**
 
 A. Canlı masada tek bir el genelde yaklaşık 30 saniye ila 2 dakika sürer, ama zorlu kararlarla dolu büyük çok kişili bir pot birkaç dakika sürebilir. Birkaç saatlik rahat bir ev seansında düzinelerce el oynanır, yani kimse tek bir ele bütün akşamını adamak zorunda kalmaz.
+
+**Q. Poker kaç kâğıtla oynanır?**
+
+A. Texas Hold'em tek bir 52 kartlık desteyle, jokersiz oynanır. Her oyuncu 2 kapalı kart alır, ortaya 5 ortak kart açılır ve herkes bu 7 karttan en iyi 5'ini kullanır. Deste oyuncu sayısına göre küçültülmez.
+
+**Q. Pokerin mantığı nedir?**
+
+A. Pokerde rakibinin kartlarını görmezsin, o da seninkileri görmez. Bu bilgi eksikliği yüzünden bahisler hem güç gösterir hem baskı kurar. Blindler her elde potu başlattığı için sürekli beklemek de çip kaybettirir; bu yüzden poker, eksik bilgiyle doğru kararı verme oyunudur.
+
+**Q. Texas Hold'em'de renk (kupa, maça, karo, sinek) sıralaması var mı?**
+
+A. Hayır. Texas Hold'em'de dört renk eşittir; en iyi 5 kart aynıysa pot bölünür. Renkler arasında sıralama yapmak bazı kapalı poker masalarının kuralıdır, Hold'em'de geçerli değildir. Ayrıntılar için [poker el sıralaması ve renk sıralaması](/tr/blog/holdem-hand-rankings) yazısına bak.
+
+**Q. Türk pokeri nasıl oynanır?**
+
+A. Türk pokeri (kapalı poker) ayrı bir oyundur: her oyuncuya 5 kapalı kart dağıtılır, ortak kart yoktur ve oyuncular istemedikleri kartları değiştirebilir. Texas Hold'em ile farkları yukarıdaki karşılaştırma tablosunda.
+
+**Q. Holdem ne demek?**
+
+A. Hold'em, oyuncuların kendi kapalı kartlarını masadaki ortak kartlarla birleştirerek oynadığı poker türlerinin adıdır. En bilineni Texas Hold'em'dir: 2 kapalı kart ve 5 ortak kartla oynanır.
 
 ---
 
