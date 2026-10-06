@@ -442,6 +442,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 로케일 고유로 같이 고친 사본: zh straddle 바로 답 블록 · ja straddle 先に結論 카드 제목 인용 · ja cooler 본문 L142(같은 어순 · 통지 2와 같은 클래스).
 - 🪶 꼬리 15로케일 같은 글 = 미전파(§2-X·Y·Z와 같은 부채).
 
+### 2-AB. 우편함 수신분 — MA-347 (MS M-0 파일럿 beginners · 기준 `c91cbe98`) · 판정·이행 2026-10-07 (2) · MB-195
+
+> 근거 = 검수장 `reports/검수-ms-M0-파일럿-2026-10-06/hq-reverify/HQ-REPORT.md`. 요청 1의 5자리 전부 EN 현행 문면 실재·ms 부재 확인 → **전부 채택·이행**(ms 고유 · EN 무변경).
+
+| # | 자리(ms beginners) | 이행 |
+|---|---|---|
+| AB-1 | 본문 블라인드 · FAQ 블라인드 | «(jika hanya ada dua pemain, butang sendiri meletakkan Small Blind)» 2자리 |
+| AB-2 | «setiap kali street baru muncul …» | «— kecuali jika pemain sudah all-in dan tiada sesiapa lagi untuk bertaruh; ketika itu, baki kad hanya diedarkan sahaja.» |
+| AB-3 | 인원표 Full ring | «(9-max atau 10-max)» |
+| AB-4 | Premium 칸 | «— raise jika anda pemain pertama masuk, re-raise jika sudah ada satu raise»(«di hadapan»은 MB-103 언어 소견대로 피함) |
+| AB-5 | 금전 홈게임 본문 · FAQ | 말레이시아 중립 한 줄(«tertakluk kepada undang-undang tempatan» · 표 = 해외 기준 · 국내 = 플레이칩) · 조문 번호 본문 금지 |
+
+- 🔴 **원인 = ms가 드리프트 게이트상 «꼬리» 로케일**이라 09-28 EN 델타(`6164c748`·`25fe6027`)와 그 뒤 EN-먼저 일부가 ms에 안 갔다. `check:drift --tail` ms 14편(all-in · blind · drawing-odds · flush-vs-straight · game-order · glossary · outs · positions · reading-the-board · showdown · split-pot · strategy · when-to-fold · beginners). ▶ **다음 회차 후보 = ms 14편 EN 동기화**(글별 «ms masterUpdated 이후 EN diff» → ms 이식 · 검수장 MS 배치 순서와 겹치지 않게 통지). beginners 통지 ⓐ(tldr «unless everyone else folds first» · Fakta «normally moves»)도 그 회차에 포함 — 그래서 beginners masterUpdated는 아직 올리지 않았다.
+- 🪶 통지 ⓑ «jarang bluff» ↔ «under-bluff» · ⓒ 단순 FAQ 프리플랍 생략 · ⓓ Astra EN 동형 묶음 = EN 손질 때 참고(자동 착수 금지).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

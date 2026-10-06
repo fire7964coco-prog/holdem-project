@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas sehingga empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-07",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -55,7 +55,7 @@ Fakta penting:
 
 Peraturan asas Texas Hold'em sebenarnya mudah sebaik sahaja anda melihat meja mengikut urutan.
 
-Setiap tangan bermula dengan butang pengedar. Dua pemain di sebelah kiri butang meletakkan pertaruhan wajib yang dipanggil **Small Blind** dan **Big Blind** — jika ia kedengaran mengelirukan, baca [apa itu blinds dan bagaimana Small Blind dan Big Blind berfungsi](/ms/blog/holdem-blind-meaning). Selepas itu, setiap pemain menerima dua kad secara tertutup. Inilah kad pemula (hole cards) anda.
+Setiap tangan bermula dengan butang pengedar. Dua pemain di sebelah kiri butang meletakkan pertaruhan wajib yang dipanggil **Small Blind** dan **Big Blind** (jika hanya ada dua pemain, butang sendiri meletakkan Small Blind) — jika ia kedengaran mengelirukan, baca [apa itu blinds dan bagaimana Small Blind dan Big Blind berfungsi](/ms/blog/holdem-blind-meaning). Selepas itu, setiap pemain menerima dua kad secara tertutup. Inilah kad pemula (hole cards) anda.
 
 Kemudian, pengedar membuka lima kad kongsi di tengah meja:
 
@@ -98,7 +98,7 @@ Artikel ini memberi anda **versi pemula bagi aliran permainan** supaya anda bole
 | 5 | Flop, turn, river | Kad komuniti keluar 3, kemudian 1, kemudian 1 |
 | 6 | Showdown | Pemain yang tinggal membandingkan tangan 5 kad terbaik |
 
-Untuk sesi pertama anda, idea utamanya mudah: ==**setiap kali street baru muncul, satu lagi pusingan pertaruhan berlaku.**==
+Untuk sesi pertama anda, idea utamanya mudah: ==**setiap kali street baru muncul, satu lagi pusingan pertaruhan berlaku**== — kecuali jika pemain sudah all-in dan tiada sesiapa lagi untuk bertaruh; ketika itu, baki kad hanya diedarkan sahaja.
 
 ![Infografik pandangan atas meja Texas Hold'em sebelum flop — setiap pemain memegang dua kad tertutup dan board masih kosong](/images/rules-step2-preflop.webp "Cara main Texas Hold'em langkah demi langkah — giliran pre-flop selepas blinds")
 
@@ -114,7 +114,7 @@ Texas Hold'em boleh dimainkan dengan **2 hingga 10 pemain** di satu meja. Anda t
 |--------:|------------------|----------------|
 | 2 | Heads-up | Pantas dan agresif; blinds diterbalikkan (lihat di bawah) |
 | 3–6 | Short-handed (6-max) | Paling biasa dalam talian; lebih banyak tangan boleh dimainkan |
-| 7–10 | Full ring (9-max) | Permainan klasik rumah/kasino; main lebih ketat, lebih banyak fold |
+| 7–10 | Full ring (9-max atau 10-max) | Permainan klasik rumah/kasino; main lebih ketat, lebih banyak fold |
 
 Untuk permainan rumah pertama, **4 hingga 6 pemain** ialah bilangan paling sesuai — cukup rancak untuk belajar, cukup sedikit supaya setiap tangan bergerak pantas.
 
@@ -178,7 +178,7 @@ Jawapannya bergantung pada sama ada anda bermain dengan wang sebenar atau sekada
 
 Jika anda masih belajar, gunakan cip permainan dahulu. Matlamatnya ialah memahami urutan permainan, bukan mencipta tekanan.
 
-Jika anda bermain cash game kecil di rumah, pilih buy-in yang semua orang selesa untuk kalah. Struktur biasa untuk pemula ialah:
+Jika anda bermain cash game kecil di rumah, pilih buy-in yang semua orang selesa untuk kalah. Di Malaysia, permainan rumah dengan wang sebenar tertakluk kepada undang-undang tempatan, jadi jadual di bawah ialah panduan umum untuk permainan rumah di luar negara; di dalam negara, gunakan cip permainan. Struktur biasa untuk pemula ialah:
 
 | Tahap blinds | Buy-in pemula | Nota |
 |:---|:---:|:---|
@@ -276,7 +276,7 @@ Tangan permulaan yang baik untuk pemula termasuk:
 
 | Tahap | Tangan | Bila nak main |
 |------|-------|--------------|
-| 🟥 **Premium — sentiasa raise** | AA, KK, QQ, JJ, AKs, AKo | Setiap posisi, setiap stack |
+| 🟥 **Premium — sentiasa raise** | AA, KK, QQ, JJ, AKs, AKo | Setiap posisi, setiap stack — raise jika anda pemain pertama masuk, re-raise jika sudah ada satu raise |
 | 🟧 **Kuat — biasanya raise** | TT, 99, AQs, AQo, AJs, KQs | Kebanyakan posisi; lebih ketat dari UTG |
 | 🟦 **Boleh dimainkan — posisi penting** | 88, 77, ATs, AJo, KJs, QJs, JTs | Utamakan posisi lewat (CO, BTN) |
 | ⬜ **Fold secara lalai** | Semua yang lain sebagai pemula | Terutamanya dari posisi awal |
@@ -407,7 +407,7 @@ A. Untuk permainan rumah pemula, beri setiap pemain cip bernilai sekitar 200 dan
 
 **Q. Berapa banyak wang anda mula dalam Texas Hold'em?**
 
-A. Untuk belajar, mulakan dengan cip permainan. Untuk permainan rumah wang sebenar yang kecil, guna buy-in yang semua orang selesa untuk kalah, seperti $2 hingga $5 pada blinds $0.01/$0.02.
+A. Untuk belajar, mulakan dengan cip permainan. Untuk permainan rumah wang sebenar yang kecil, guna buy-in yang semua orang selesa untuk kalah, seperti $2 hingga $5 pada blinds $0.01/$0.02. Di Malaysia, bermainlah dengan cip permainan sahaja.
 
 **Q. Adakah wujud straight kecil dalam Texas Hold'em?**
 
@@ -423,7 +423,7 @@ A. Versi paling ringkas: setiap pemain dapat 2 kad peribadi. Lima kad kongsi dib
 
 **Q. Peraturan Texas Hold'em untuk pemula — apa maksud blinds?**
 
-A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan. Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan (atau all-in dengan jumlah lebih kecil, jika itu seluruh cip mereka).
+A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan (jika hanya ada dua pemain, butang sendiri meletakkan Small Blind). Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan (atau all-in dengan jumlah lebih kecil, jika itu seluruh cip mereka).
 
 **Q. Apakah versi pantas peraturan Texas Hold'em?**
 
