@@ -87,7 +87,7 @@ Her iki blind da **dağıtımdan önce** koyulur ve dağıtıcı butonu her elde
 | Preflop sırası | Sondan bir önce konuşur | **Son** konuşur (the "opsiyon") |
 | Postflop sırası | **İlk** konuşur (dezavantaj) | İkinci konuşur |
 
-> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Sokak sokak tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise poker pozisyonları rehberinde ele alınıyor.
+> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Sokak sokak tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise [poker pozisyonları rehberinde](/tr/blog/holdem-positions) ele alınıyor.
 
 ---
 
@@ -192,7 +192,7 @@ A. Tam değil — "blind'lar" small ve big blind'ın ikisini birlikte ifade eder
 2. **Big blind masanın birimidir** — yükseltmeler, stack'ler ve turnuva baskısı hep BB cinsinden ölçülür.
 3. Blind'ları dikkatli oyna: **small blind'da raise ya da fold**, **big blind'ı pot odds ile defans et** ve herkes sana kadar fold ettiğinde geç pozisyondan steal'ları çalış.
 
-Oyuna tamamen yeni misin? [Yeni başlayanlar için Texas Hold'em kuralları rehberi](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") temelleri anlatır, [bir eldeki oyun sırası](/tr/blog/holdem-game-order) her blind'ın tam olarak ne zaman konuştuğunu gösterir, poker pozisyonları rehberi ise koltuğunun — sadece blind'ların değil — her kararı nasıl şekillendirdiğini ele alır.
+Oyuna tamamen yeni misin? [Yeni başlayanlar için Texas Hold'em kuralları rehberi](/tr/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") temelleri anlatır, [bir eldeki oyun sırası](/tr/blog/holdem-game-order) her blind'ın tam olarak ne zaman konuştuğunu gösterir, [poker pozisyonları rehberi](/tr/blog/holdem-positions) ise koltuğunun — sadece blind'ların değil — her sokakta ne zaman konuşacağını nasıl belirlediğini gösterir.
 
 ---
 

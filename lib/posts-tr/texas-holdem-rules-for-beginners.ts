@@ -143,7 +143,7 @@ Kolay hatırlama numarası:
 
 ==**Floptan önce big blind'ın soluna bak. Floptan sonra butonun soluna bak.**==
 
-İşte tam da bu yüzden ==g:buton bu kadar güçlü bir pozisyondur==. ==Buton genelde flop, turn ve river'da en son oynar==, yani herkesin ne yaptığını önce görür. Her koltuğun adını — UTG'den butona, 6-max ile 9-max karşılaştırması, hangi koltuğun hangi açılış aralığına izin verdiği — baştan sona görmek istersen poker pozisyonları rehberine bakabilirsin.
+İşte tam da bu yüzden ==g:buton bu kadar güçlü bir pozisyondur==. ==Buton genelde flop, turn ve river'da en son oynar==, yani herkesin ne yaptığını önce görür. Her koltuğun adını — UTG'den butona, 6-max ile 9-max karşılaştırması ve ilk kimin konuştuğu — baştan sona görmek istersen [poker pozisyonları rehberine](/tr/blog/holdem-positions) bakabilirsin.
 
 ---
 
@@ -250,7 +250,7 @@ Pozisyon, **her bahis turunda ne zaman oynadığın** demektir. Daha sonra oynam
 | Dağıtıcının solunda | SB (Small Blind) | 8. pre, 1. post | En kötü koltuk — her postflop sokakta ilk oynar |
 | Dağıtıcının iki solunda | BB (Big Blind) | Son pre (9.), 2. post | Preflop yükseltme opsiyonu var; postflop pozisyonsuz |
 
-==g:Buton masadaki en kârlı koltuktur.== Flop, turn ve river'da en son oynarsın — yani her oyuncu sen karar vermeden önce el gücünü sana gösterir. Tam bir pozisyon rehberi için UTG'den butona kadar pozisyonları inceleyebilirsin.
+==g:Buton masadaki en kârlı koltuktur.== Flop, turn ve river'da en son oynarsın — yani her oyuncu sen karar vermeden önce el gücünü sana gösterir. Tam bir pozisyon rehberi için [UTG'den butona kadar pozisyonları](/tr/blog/holdem-positions) inceleyebilirsin.
 
 ---
 
@@ -469,6 +469,11 @@ Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-ha
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">El sıralaması</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker el sıralaması — en iyiden en kötüye</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">10 elin tamamı olasılıklar, örnekler ve board bulmacalarıyla</div>
+  </a>
+  <a href="/tr/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pozisyonlar</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker pozisyonları: UTG'den butona</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Koltuk numaraları, 6-max haritası ve ilk kimin konuştuğu</div>
   </a>
   <a href="/tr/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Bahis</div>

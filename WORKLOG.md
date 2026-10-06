@@ -1,3 +1,11 @@
+## 2026-10-06 (8) — tr 회차 4: 신규 전략 3편 (MB-185)
+
+- 계획 = `docs/tr-cluster-plan.md` §4 회차 4 · 결과·남긴 것 = 같은 문서 §4-4.
+- 실측(DFS 2792 · 10-06): poker taktikleri 50 · poker nasıl kazanılır 30 · texas holdem taktikleri·pokerde kazanma taktikleri·poker ipuçları·poker strateji·button poker·cutoff poker·c-bet·continuation bet·cbet poker 각 10 · poker stratejisi·poker pozisyonları·utg nedir·c bet nedir null.
+- 신규: holdem-strategy · holdem-positions · holdem-continuation-bet(Opus 서브 3레인 병렬). c-bet GTO ①·⑨ 두 문단 미전파(선례 · `locale-intentional-diffs` 10-06). 역링크 7 + 필라 관련 카드 1.
+- 검수 1차: 렌즈 B(§13) 결함 0 · 앵커 약속 4 · 렌즈 A 교열·용어(buton 통일 · semi-blöf · TDK 아포스트로피 · «zamanın …» 직역투 등) · 아스트라 = c-bet «smashed your range» 반전 3자리 + «ezip geçiyor» 1 · equity denial · kayıpla · sonrakisi 등 → 18항목 반영. 2차: 렌즈 10(앵커·카드 라벨이 positions 범위를 넘는 약속 5 등) · 아스트라 6 채택(first-in 한정 · 소유격 2 · resmî) · 기각 1(dâhil — 코퍼스 dahil 12:1).
+- 게이트: audit:hard tr 16편 🔴 0(strategy·c-bet 카드 문단 미인식 → 렌즈 손 검산) · 빌드 exit 0(74 + 637) · hreflang 0 · 산출 HTML 히어로 1장.
+
 ## 2026-10-06 (7) — tr 회차 3: 신규 기본 5편 + /tr/glossary 도구 (MB-184)
 
 - 계획 = `docs/tr-cluster-plan.md` §4 회차 3 · 결과·남긴 것 = 같은 문서 §4-3.

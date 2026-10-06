@@ -33,6 +33,8 @@
 
 ## 판정 로그
 
+2026-10-06 TR 전략 3편 신규(tr 회차 4): `holdem-continuation-bet` tr은 ① A-high(%98,2)·⑨ 3bet sizing(%98,4) 두 문단을 **넣지 않았다** — 08-19·08-26 행과 같은 사유(GTO ①·⑨ tr 미발행 · 링크 없는 솔버 수치 문단은 근거가 끊긴다). 🔜 tr 회차 5에서 `a-high-board-cbet`이 나가면 ① 문단을 tr로 재저작해 링크와 함께 연다 · ⑨(`3bet-pot-bet-sizing`)는 tr 계획(`docs/tr-cluster-plan.md` §2)에 없어 계속 미전파. 같은 회차에 position-play·3bet·limping·when-to-fold·starting-hands-chart 링크는 tr에 글이 없어 `/tr/blog/holdem-positions`·`/tr/hand-chart`로 바꾸거나 앵커만 뺐다(링크 수 EN > tr = 의도).
+
 2026-10-02 DE GTO 신규 등록: **DE 미발행에 따른 GTO 역링크 면제를 해소**했다(2026-08-19·08-26·08-27·09-08 행의 de 부분 · 시리즈 미발행인 다른 로케일의 판정은 그대로). DE index에 13편을 등록하고 `/de/solver` 랜딩 13링크를 걸었으며, holdem-continuation-bet의 ① A-high(98,2%)·⑨ 3bet sizing(98,4%) 두 문단, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 de 문맥으로 재저작해 열었다(링크 수 EN = de: 14·18·12 실측). 과거 부재 기록은 이력으로 유지한다.
 
 2026-10-02 ✅ **DE GTO 13편 본문 이미지 = EN + 1(스팟 장면)** — de 전용 시범(사장님 10-02 승인 «1번으로 하자»). 각 편 첫 조건표 바로 위에 `gto-<key>-scene-de.webp` 1장(좌석·플랍·팟·스택·선행동자, 결과 수치 없음). 구조 게이트는 장면을 img 비교에서 빼고 별도 축(scene = 정확히 1장 · `SCENE_LOCALES = ['de']`)으로 센다. EN·다른 로케일로의 전파는 반응을 본 뒤 판단 — 그 전까지 다른 로케일에 장면이 없는 것은 드리프트가 아니다. 근거 `docs/de-gto-series-translation-brief.md` §7 · `docs/de-gto-source-contract.md` §8.

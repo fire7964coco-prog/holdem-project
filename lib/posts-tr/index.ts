@@ -19,6 +19,11 @@ import { POST as holdemPotOdds } from "./holdem-pot-odds";
 import { POST as holdemProbability } from "./holdem-probability";
 import { POST as holdemTournament } from "./holdem-tournament";
 
+// tr 회차 4 (2026-10-06) — 전략 3편
+import { POST as holdemStrategy } from "./holdem-strategy";
+import { POST as holdemPositions } from "./holdem-positions";
+import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
+
 /**
  * 터키어(tr) 블로그 포스트.
  * 기계 번역이 아닌 터키 포커 커뮤니티 용어(Kare, Üçlü, Kent, İki Çift 등 + 영어 병기)로 현지화한 글만 등록한다.
@@ -41,6 +46,10 @@ export const TR_POSTS: Post[] = [
   holdemPotOdds,
   holdemProbability,
   holdemTournament,
+  // tr 회차 4
+  holdemStrategy,
+  holdemPositions,
+  holdemContinuationBet,
 ];
 
 export function getTrPost(slug: string): Post | undefined {

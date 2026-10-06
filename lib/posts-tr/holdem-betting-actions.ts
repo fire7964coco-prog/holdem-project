@@ -133,7 +133,7 @@ Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==Kural 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
-*Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu Texas Hold'em stratejisine girer.
+*Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu [Texas Hold'em stratejisine](/tr/blog/holdem-strategy) girer.
 
 ---
 
@@ -164,7 +164,7 @@ Tüm mekanik — yan pot matematiği, kim önce açar, table stakes — [all-in 
 
 Bu rehber her hareketin ne *olduğunu* ve ne zaman *yasal* olduğunu anlatır. Hangisini seçeceğin — ne zaman bahis, ne zaman call kârlı, ne zaman iyi bir el bile atılmalı — ayrı bir beceri ağacı:
 
-- Her karar için çerçeve: Texas Hold'em stratejisi
+- Her karar için çerçeve: [Texas Hold'em stratejisi](/tr/blog/holdem-strategy)
 - Önce elinin ham gücünü tartmak: [poker el sıralaması](/tr/blog/holdem-hand-rankings)
 - Nakit ve turnuvada hareketlerin nasıl değiştiği: [nakit oyun vs turnuva](/tr/blog/holdem-tournament-vs-cash-game)
 

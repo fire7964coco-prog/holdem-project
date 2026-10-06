@@ -61,7 +61,7 @@
 | 1 | 기존 8편 다듬기: 내부링크 고리(필라 = rules-for-beginners) · `/tr/blog` 허브 · §1 실측어 H2/FAQ 흡수 · 사장님 수동 색인 요청(입문 글·`/tr/tournaments` 미색인) — **실행 계획 = §4-1** | — | ✅ 10-06 (5) 배포(WORKLOG · MB-182) — 남긴 것 = §4-1 아래 «회차 1 결과» |
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ✅ 10-06 (6) 배포(WORKLOG · MB-183) — 남긴 것 = §4-2 |
 | 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ✅ 10-06 (7) 배포(WORKLOG · MB-184) — 남긴 것 = §4-3 |
-| 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ⏳ |
+| 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ✅ 10-06 (8) 배포(WORKLOG · MB-185) — 남긴 것 = §4-4 |
 | 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔁 **솔버가 10-05 S-040으로 앱 터키어 UI 착수 통지**(요청 0) → 요청 발송 불필요. 착수 전 솔버 tr 배포 여부만 확인(배포 전이면 랜딩 CTA가 영어 앱으로 떨어진다) | ⏳ |
 | 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
 
@@ -101,6 +101,13 @@
 - 재링크(§4-2 ①): 계산기 quickRef ① → probability · ④ → pot-odds · related showdown·game-order → pot-odds·probability · 차트 related game-order → probability. 기존 글 역링크 4(showdown·hand-rankings → tiebreak · 필라 → glossary·pot-odds · tournament-vs-cash → holdem-tournament).
 - 번역 = Opus 서브 5레인 병렬(EN 링크 중 tr 없는 글은 빼거나 tr 페이지로 대체). 검수 = Claude 렌즈 2(네이티브 교열 · 수치 대조) + 아스트라 병렬 → 2차 교열(렌즈 + 아스트라). 결과·판정 = WORKLOG 10-06 (7).
 - 🪶 남긴 것(자동 착수 금지): ① 족보 일반명사 뒤 아포스트로피(«Floş'a» → «Floşa» · TDK) — 새 5편만 정리, 기존 tr 글(hand-rankings 등)은 그대로 ② 족보 표기 대소문자(«Kent» vs «kent»)·영어명 혼용(hand-rankings tiebreak 블록 «Full House/Flush»)이 글마다 갈림 — 통일은 별도 회차 ③ «$150'lık»(dolar 읽기) vs «$10'luk»(숫자 읽기) 코퍼스 혼재 ④ holdem-game-order의 «çekiş»(draw) — 새 글은 «draw»로 통일 ⑤ EN probability L196 신화 문장 «so it can be *tied*» 어색(아스트라 지적 · tr은 «berabere kalamaz»로 앞뒤가 맞음 — EN 정정 판단은 queue) ⑦ «başabaş»(TDK = «başa baş») — 새 글은 정리, 기존 blind-meaning·`/tr/calculator` 사전에 남음 ⑥ tournament-vs-cash 제목·desc «Fiş» = 회차 1 ③과 같은 건 · «## FAQ» 제목.
+
+### 4-4. 회차 4 결과 (10-06 (8))
+
+- 신규 3편(`lib/posts-tr/`): holdem-strategy(«poker taktikleri» 50 · «poker nasıl kazanılır» 30 — seoTitle·H2·FAQ) · holdem-positions(«button poker»·«cutoff poker» 각 10 — 산문은 클러스터 표기 «buton», «button»은 seoTitle·tags·표 영어명·H2 괄호만) · holdem-continuation-bet(«c-bet»·«continuation bet»·«cbet poker» 각 10). 실측 null = poker stratejisi · poker pozisyonları · utg nedir · c bet nedir.
+- 링크: EN position-play → `/tr/blog/holdem-positions`(앵커 문구는 도착 글 범위로 — 좌석별 레인지는 `/tr/hand-chart`) · starting-hands-chart → `/tr/hand-chart` · 3bet·limping·when-to-fold·GTO 글 = 앵커 제거. positions·c-bet 첫 내부링크 = 전략 필라. 역링크 = blind-meaning 2 · betting-actions 2 · 필라 2 + 관련 카드 1(glossary·game-order는 대응 문장 없음 → 안 넣음).
+- 검수: 렌즈 B(§13) 결함 0 · 렌즈 A 교열 다수 채택 · 아스트라 1차 = 🔴 c-bet «range'ini dağıttı / ezip geçiyor»(smashed = 크게 돕는다 → 부순다로 반전) 정정 · 2차 = strategy «first-in» 한정 복원 외 교열 4 채택 · «sokak → bahis turu» 일괄·«dahil → dâhil»(코퍼스 12:1) 기각.
+- 🪶 남긴 것(자동 착수 금지): ① 회차 5에서 `a-high-board-cbet`이 나가면 c-bet ① 문단(%98,2)을 tr로 재저작해 연다(`locale-intentional-diffs` 10-06) ② sokak/street 혼용(positions = sokak · c-bet = street — 기존 클러스터도 갈림) ③ leak 용어 «kaçak»(strategy·c-bet) vs «sızıntı»(blind-meaning) ④ glossary·game-order에 positions 안내 문장 없음(EN엔 링크 4) ⑤ c-bet 솔버 스크린샷 tr판 없음(-en 사용 · es 선례) ⑥ `/tr/hand-chart` related에 positions·strategy 미등재.
 
 ## 5. 지킬 것
 
