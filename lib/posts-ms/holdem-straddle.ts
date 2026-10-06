@@ -61,7 +61,7 @@ Blind membuat keputusan | Small blind dan big blind bertindak mengikut giliran, 
 Straddler bertindak TERAKHIR | Jika tiada sesiapa raise, straddler boleh check option mereka atau raise — kata putus terakhir sebelum flop
 :::
 
-"Tindakan terakhir preflop" itulah yang dibayar oleh straddler. Tetapi perhatikan perangkapnya: untuk **straddle UTG, keistimewaan bertindak terakhir hanya untuk preflop.** Sebaik sahaja flop keluar, giliran pertaruhan kembali seperti biasa — small blind bertindak dahulu, dan straddler kembali ke kerusi awal yang out of position dengan pot yang sudah membengkak. Itulah salah satu sebab utama straddle UTG begitu kerap menyebabkan kerugian: anda bayar dua kali ganda untuk menjadi terakhir bagi satu street, kemudian bermain tiga street seterusnya out of position.
+"Tindakan terakhir preflop" itulah yang dibayar oleh straddler. Tetapi perhatikan perangkapnya: untuk **straddle UTG, keistimewaan bertindak terakhir hanya untuk preflop.** Sebaik sahaja flop keluar, giliran pertaruhan kembali seperti biasa — small blind bertindak dahulu, dan straddler kembali ke kerusi awal yang out of position dengan pot yang sudah membengkak. Itulah salah satu sebab utama straddle UTG begitu kerap menyebabkan kerugian: anda bayar dua kali ganda untuk menjadi terakhir bagi satu street, kemudian bermain tiga street seterusnya out of position terhadap semua pemain kecuali blind.
 
 ---
 
@@ -124,7 +124,7 @@ Jawapan jujurnya, dan yang dipersetujui oleh solver: **untuk hampir semua orang,
 
 :::card
 🎯 | Anda meletakkan wang secara buta | Wang masuk sebelum anda melihat kad anda, jadi anda bermain pot yang membengkak tanpa maklumat — kelemahan yang sama yang menjadikan blind kerusi paling buruk di meja. Ia juga mengurangkan separuh kedalaman efektif anda: pada $1/$2 stack $200 bersamaan 100 big blind, tetapi dengan straddle $4, stack yang sama bermain seperti 50
-📉 | Straddle UTG membeli posisi untuk satu street sahaja | Ia menjadikan anda bertindak terakhir preflop, kemudian meninggalkan anda di luar posisi untuk tiga street seterusnya dalam pot yang anda besarkan sendiri. Straddle juga tidak menjadikan kerusi lewat lebih longgar: dalam [simulasi GTO Wizard untuk pot straddle](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddle kepada 2bb), button membuka **lebih sedikit** tangan — sekitar 15–20% lebih sedikit — bukan lebih banyak
+📉 | Straddle UTG membeli posisi untuk satu street sahaja | Ia menjadikan anda bertindak terakhir preflop, kemudian meninggalkan anda di luar posisi terhadap setiap pemain yang call kecuali blind untuk tiga street seterusnya, dalam pot yang anda besarkan sendiri. Straddle juga tidak menjadikan kerusi lewat lebih longgar: dalam [simulasi GTO Wizard untuk pot straddle](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddle kepada 2bb), button membuka **lebih sedikit** tangan — sekitar 15–20% lebih sedikit — bukan lebih banyak
 💸 | Ia boleh menaikkan rake pot | Dalam pot yang layak dikenakan [rake](/ms/blog/holdem-rake), pot yang lebih besar boleh bermaksud caj yang lebih besar sehingga cap dicapai. Kenaikan itu tidak berlaku untuk pot preflop di bawah peraturan no-flop-no-drop, permainan time charge, atau pot yang sudah mencapai cap
 :::
 
@@ -179,7 +179,7 @@ A. Hampir tidak pernah. Tournament bergantung pada struktur blind tetap yang mes
 
 **Q. Adakah straddle menguntungkan? Patutkah anda straddle?**
 
-A. Untuk kebanyakan pemain, tidak — ia permainan -EV. Anda meletakkan wang secara buta, straddle UTG membeli tindakan terakhir untuk satu street sahaja dan selepas itu anda bermain selebihnya di luar posisi (dan straddle tidak menjadikan kerusi lewat lebih longgar — dalam simulasi GTO Wizard, button membuka *lebih sedikit* tangan, bukan lebih banyak), dan anda mungkin membayar rake yang lebih tinggi. Ia boleh dipertahankan hanya di meja loose-passive, dalam permainan di mana semua orang sudah buat straddle, atau semata-mata untuk berseronok — hampir tidak pernah sebagai cara untuk menjana wang. Apabila semua orang bergilir buat straddle dengan syarat yang sama, stakes yang lebih tinggi boleh memihak kepada pemain yang lebih kuat.
+A. Untuk kebanyakan pemain, tidak — ia permainan -EV. Anda meletakkan wang secara buta, straddle UTG membeli tindakan terakhir untuk satu street sahaja dan selepas itu anda bermain selebihnya di luar posisi terhadap semua pemain kecuali blind (dan straddle tidak menjadikan kerusi lewat lebih longgar — dalam simulasi GTO Wizard, button membuka *lebih sedikit* tangan, bukan lebih banyak), dan anda mungkin membayar rake yang lebih tinggi. Ia boleh dipertahankan hanya di meja loose-passive, dalam permainan di mana semua orang sudah buat straddle, atau semata-mata untuk berseronok — hampir tidak pernah sebagai cara untuk menjana wang. Apabila semua orang bergilir buat straddle dengan syarat yang sama, stakes yang lebih tinggi boleh memihak kepada pemain yang lebih kuat.
 
 ---
 

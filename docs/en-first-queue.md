@@ -438,7 +438,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 전파 = EN 3편 → de·es·id·ja·ms·pt·zh·zh-hant 각 3편(ar판 없음). ms는 검수장 MS 전수 초벌(MA-346 · 기준 `c91cbe98`) 진행 중 → MB-193으로 해당 행 전/후 요청.
 - 🪶 통지 권고(라벨 OK/UNV · 자동 착수 금지): MA-339 ⓐ re-straddle «Preflop saja» 버튼 예외 · Mississippi 액션 시작 하우스룰 갈래 · 버튼 스트래들 첫 행동자 룸별 ⓑ rake «nyaris» GGPoker 비례 캡 반례 · 도입 «setiap pot» → «nyaris setiap pot» ⓒ fish «sepenuhnya oleh kebalikannya» ↔ FAQ «tidak semua yang bukan shark itu fish» ⓓ straddle 관련 글 카드 «hanya ada di cash game» ↔ «Hampir tak pernah» · MA-344 통지 3(MB-181 행 누락) = **해당 없음** — MB-181 행은 `e8674e53`이 out-본체.md에 같이 커밋했다(MB-180 바로 아래 · MB-193에서 위치 회신).
-- 🪶 렌즈가 남긴 것(자동 착수 금지): straddle 카드2·FAQ «세 스트리트 내내 OOP»는 블라인드 콜러 상대로는 IP라 단순화 — 같은 글 L63 «play the next three streets out of position»과 같은 문면이라 L63과 묶어 «블라인드를 뺀 콜러 상대로» 한정할지 판정(9로케일).
+- ✅ **AA-24**(10-07 (1) · MB-194): straddle «세 스트리트 내내 OOP» 단순화(블라인드 상대로는 IP) — EN L63·카드2·FAQ 3자리에 «to everyone but the blinds» 한정 → 8로케일 같은 자리 + 로케일 고유 사본(zh 바로 답 블록 · de FAQ «Aus welcher Position …») · zh-hant 快速解答 «坐回最早說話的位置»(블라인드가 먼저 행동 = 오류) → «前段的不利位置».
 - 🪶 로케일 고유로 같이 고친 사본: zh straddle 바로 답 블록 · ja straddle 先に結論 카드 제목 인용 · ja cooler 본문 L142(같은 어순 · 통지 2와 같은 클래스).
 - 🪶 꼬리 15로케일 같은 글 = 미전파(§2-X·Y·Z와 같은 부채).
 

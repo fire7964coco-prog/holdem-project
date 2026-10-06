@@ -61,7 +61,7 @@ Deciden las ciegas | La ciega pequeña y la grande actúan por turno, enfrentán
 El que straddlea actúa el ÚLTIMO | Si nadie subió, quien puso el straddle puede pasar su opción o subir — la última palabra antes del flop
 :::
 
-Esa "última acción preflop" es lo que está pagando el que pone el straddle. Pero fíjate en la trampa: para un **straddle UTG, el privilegio de la última acción es solo en preflop.** En cuanto llega el flop, el orden de apuestas vuelve a la normalidad — la ciega pequeña actúa primero, y quien puso el straddle vuelve a un asiento temprano y fuera de posición con un bote inflado. Esa es una de las principales razones por las que el straddle UTG hace perder dinero tan a menudo: pagas el doble por ser el último durante una calle, y luego juegas las tres calles siguientes fuera de posición.
+Esa "última acción preflop" es lo que está pagando el que pone el straddle. Pero fíjate en la trampa: para un **straddle UTG, el privilegio de la última acción es solo en preflop.** En cuanto llega el flop, el orden de apuestas vuelve a la normalidad — la ciega pequeña actúa primero, y quien puso el straddle vuelve a un asiento temprano y fuera de posición con un bote inflado. Esa es una de las principales razones por las que el straddle UTG hace perder dinero tan a menudo: pagas el doble por ser el último durante una calle, y luego juegas las tres calles siguientes fuera de posición frente a todos salvo las ciegas.
 
 ---
 
@@ -124,7 +124,7 @@ La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo,
 
 :::card
 🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50
-📉 | Un straddle UTG compra posición para una sola calle | Te deja último en preflop y después fuera de posición durante las tres calles siguientes, en un bote que tú mismo inflaste. Tampoco hace más loose a los asientos tardíos: en las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (straddle UTG a 2bb), el botón abre **menos** manos — alrededor de un 15–20% menos — no más
+📉 | Un straddle UTG compra posición para una sola calle | Te deja último en preflop y después fuera de posición frente a todo el que pague salvo las ciegas durante las tres calles siguientes, en un bote que tú mismo inflaste. Tampoco hace más loose a los asientos tardíos: en las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (straddle UTG a 2bb), el botón abre **menos** manos — alrededor de un 15–20% menos — no más
 💸 | Puede aumentar el rake por bote | En los botes sujetos a [rake](/es/blog/holdem-rake), un bote mayor puede pagar más hasta alcanzar el tope. Ese aumento no se aplica a botes preflop bajo la regla no flop, no drop, a partidas con cobro por tiempo ni a botes que ya alcanzaron el tope
 :::
 
@@ -183,7 +183,7 @@ A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe se
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 
-A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, un straddle UTG te compra la última acción durante una sola calle y luego juegas el resto fuera de posición (y el straddle no hace más loose a los asientos tardíos: en las simulaciones de GTO Wizard el botón abre *menos* manos, no más), y además puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
+A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, un straddle UTG te compra la última acción durante una sola calle y luego juegas el resto fuera de posición frente a todos salvo las ciegas (y el straddle no hace más loose a los asientos tardíos: en las simulaciones de GTO Wizard el botón abre *menos* manos, no más), y además puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
 
 ---
 

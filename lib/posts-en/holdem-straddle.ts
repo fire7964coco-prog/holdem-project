@@ -60,7 +60,7 @@ Blinds decide | The small and big blinds act in turn, facing the $4 price
 The straddler acts LAST | If no one raised, the straddler can check their option or raise — the last word before the flop
 :::
 
-That "last action preflop" is what the straddler is paying for. But note the catch: for a **UTG straddle, the last-action privilege is preflop only.** Once the flop comes, the betting order snaps back to normal — the small blind acts first, and the straddler is back in an early, out-of-position seat with a bloated pot. That is one of the main reasons UTG straddling is so often a money-loser: you pay double to be last for one street, then play the next three streets out of position.
+That "last action preflop" is what the straddler is paying for. But note the catch: for a **UTG straddle, the last-action privilege is preflop only.** Once the flop comes, the betting order snaps back to normal — the small blind acts first, and the straddler is back in an early, out-of-position seat with a bloated pot. That is one of the main reasons UTG straddling is so often a money-loser: you pay double to be last for one street, then play the next three streets out of position to everyone but the blinds.
 
 ---
 
@@ -123,7 +123,7 @@ The honest answer, and the one the solvers agree on: **for almost everyone, no.*
 
 :::card
 🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table. It also halves your effective depth: at $1/$2 a $200 stack is 100 big blinds, but with a $4 straddle on, the same stack plays like 50
-📉 | A UTG straddle buys position for one street | It makes you last preflop, then leaves you out of position for the next three streets in a pot you inflated yourself. Nor does a straddle loosen up the late seats: in [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddles to 2bb), the button opens **fewer** hands — around 15–20% fewer — not more
+📉 | A UTG straddle buys position for one street | It makes you last preflop, then leaves you out of position to every caller but the blinds for the next three streets, in a pot you inflated yourself. Nor does a straddle loosen up the late seats: in [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddles to 2bb), the button opens **fewer** hands — around 15–20% fewer — not more
 💸 | It can increase pot rake | In pots eligible for [rake](/en/blog/holdem-rake), a bigger pot can mean a bigger charge until the cap is reached. That increase does not apply to preflop pots under no-flop-no-drop rules, time-charge games, or pots already at the cap
 :::
 
@@ -178,7 +178,7 @@ A. Almost never. Tournaments rely on a fixed blind structure that must be identi
 
 **Q. Is straddling profitable? Should you straddle?**
 
-A. For most players, no — it's a -EV play. You commit money blind, a UTG straddle buys last action for one street and then you play the rest out of position (and a straddle doesn't loosen up the late seats — in GTO Wizard's sims the button opens *fewer* hands, not more), and you may pay more rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — almost never as a way to make money. When everyone takes turns straddling on equal terms, the higher stakes can favor the stronger players.
+A. For most players, no — it's a -EV play. You commit money blind, a UTG straddle buys last action for one street and then you play the rest out of position to everyone but the blinds (and a straddle doesn't loosen up the late seats — in GTO Wizard's sims the button opens *fewer* hands, not more), and you may pay more rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — almost never as a way to make money. When everyone takes turns straddling on equal terms, the higher stakes can favor the stronger players.
 
 ---
 

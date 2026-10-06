@@ -65,7 +65,7 @@ Die Blinds entscheiden | Small Blind und Big Blind handeln der Reihe nach, dem �
 Der Straddler handelt ZULETZT | Wenn niemand geraist hat, kann der Straddler seine Option checken oder raisen – das letzte Wort vor dem Flop
 :::
 
-Diese „letzte Action preflop“ ist es, wofür der Straddler bezahlt. Aber merk dir den Haken: Bei einem **UTG-Straddle gilt das Recht auf die letzte Action nur preflop.** Sobald der Flop kommt, springt die Setzreihenfolge zurück auf normal – der Small Blind handelt zuerst, und der Straddler sitzt wieder auf einem frühen, out-of-position-Platz mit einem aufgeblähten Pot. Das ist einer der Hauptgründe, warum UTG-Straddeln so oft ein Verlustgeschäft ist: Du zahlst das Doppelte, um für eine Street zuletzt zu handeln, und spielst dann die nächsten drei Streets out of position.
+Diese „letzte Action preflop“ ist es, wofür der Straddler bezahlt. Aber merk dir den Haken: Bei einem **UTG-Straddle gilt das Recht auf die letzte Action nur preflop.** Sobald der Flop kommt, springt die Setzreihenfolge zurück auf normal – der Small Blind handelt zuerst, und der Straddler sitzt wieder auf einem frühen, out-of-position-Platz mit einem aufgeblähten Pot. Das ist einer der Hauptgründe, warum UTG-Straddeln so oft ein Verlustgeschäft ist: Du zahlst das Doppelte, um für eine Street zuletzt zu handeln, und spielst dann die nächsten drei Streets gegen alle außer den Blinds out of position.
 
 ---
 
@@ -136,7 +136,7 @@ Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard is
 
 :::card
 🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht. Er halbiert außerdem deine effektive Stacktiefe: Bei €1/€2 sind €200 genau 100 Big Blinds, mit einem €4-Straddle spielt derselbe Stack wie 50
-📉 | Ein UTG-Straddle kauft Position für genau eine Straße | Preflop handelst du zuletzt, danach sitzt du drei Straßen lang out of position – in einem Pot, den du selbst aufgebläht hast. Und lockerer macht ein Straddle die späten Plätze auch nicht: In [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddelt auf 2bb) öffnet der Button **weniger** Hände – rund 15–20% weniger – nicht mehr
+📉 | Ein UTG-Straddle kauft Position für genau eine Straße | Preflop handelst du zuletzt, danach sitzt du drei Straßen lang gegen jeden Caller außer den Blinds out of position – in einem Pot, den du selbst aufgebläht hast. Und lockerer macht ein Straddle die späten Plätze auch nicht: In [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddelt auf 2bb) öffnet der Button **weniger** Hände – rund 15–20% weniger – nicht mehr
 💸 | Er kann den Pot-Rake erhöhen | Bei rakepflichtigen Pots kann ein größerer Pot mehr [Rake](/de/blog/holdem-rake) bedeuten, bis das Cap erreicht ist. Das gilt nicht für Preflop-Pots unter No-flop-no-drop-Regeln, Time-Charge-Spiele oder Pots, die das Cap bereits erreicht haben
 :::
 
@@ -207,11 +207,11 @@ A. So gut wie nie. Turniere beruhen auf einer festen Blind-Struktur, die an alle
 
 **Q. Aus welcher Position schadet ein Straddle am wenigsten?**
 
-A. Vom **Button**, sofern der Room es erlaubt. Das ist der einzige Straddle, bei dem du für dein Geld tatsächlich etwas bekommst, das strategisch zählt: das letzte Wort vor *und* nach dem Flop. Am teuersten ist der klassische UTG-Straddle – du zahlst doppelt, handelst genau eine Setzrunde lang zuletzt und sitzt danach drei Streets lang out of position in einem aufgeblähten Pot. Zwischen diesen beiden Enden liegt alles andere.
+A. Vom **Button**, sofern der Room es erlaubt. Das ist der einzige Straddle, bei dem du für dein Geld tatsächlich etwas bekommst, das strategisch zählt: das letzte Wort vor *und* nach dem Flop. Am teuersten ist der klassische UTG-Straddle – du zahlst doppelt, handelst genau eine Setzrunde lang zuletzt und sitzt danach drei Streets lang gegen alle außer den Blinds out of position in einem aufgeblähten Pot. Zwischen diesen beiden Enden liegt alles andere.
 
 **Q. Lohnt sich Straddeln – solltest du straddeln?**
 
-A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, ein UTG-Straddle kauft dir die letzte Action für eine Straße, den Rest spielst du out of position (und lockerer macht ein Straddle die späten Plätze nicht – in den Sims von GTO Wizard öffnet der Button *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
+A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, ein UTG-Straddle kauft dir die letzte Action für eine Straße, den Rest spielst du gegen alle außer den Blinds out of position (und lockerer macht ein Straddle die späten Plätze nicht – in den Sims von GTO Wizard öffnet der Button *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
 
 ---
 
