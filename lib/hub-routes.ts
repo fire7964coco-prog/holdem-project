@@ -72,8 +72,9 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-09-29 `/pt/tournaments` 신설(로케일 회차 2) — 위 «없다» 경고는 이 날부로 해제.
   pt: ["/pt/blog", "/pt/calculator", "/pt/hand-chart", "/pt/glossary", "/pt/solver", "/pt/tournaments"],
   // tr — ★2026-09-29 `/tr/tournaments` 신설. tr의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
-  //      ★2026-10-06 `/tr/calculator`·`/tr/hand-chart` 신설(tr 회차 2). ⚠ tr에는 solver가 아직 **없다**(회차 5) — 넣지 마라.
-  tr: ["/tr/calculator", "/tr/hand-chart", "/tr/glossary", "/tr/tournaments"],
+  //      ★2026-10-06 `/tr/calculator`·`/tr/hand-chart` 신설(tr 회차 2).
+  //      ★2026-10-06 `/tr/solver` 신설(tr 회차 5).
+  tr: ["/tr/calculator", "/tr/hand-chart", "/tr/glossary", "/tr/solver", "/tr/tournaments"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).

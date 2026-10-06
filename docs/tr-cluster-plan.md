@@ -62,7 +62,7 @@
 | 2 | 도구: `/tr/calculator`(공용 컴포넌트 + tr 사전 · 등록 4곳) · `/tr/hand-chart`(🔁 10-05 도구 확장 회차 1에서 **이미 공용 `components/hand-chart` + 로케일 사전 구조**가 됐다 → tr은 11번째 사전만 추가) | 계산기 = `calculator-landings-shared-component` 절차 | ✅ 10-06 (6) 배포(WORKLOG · MB-183) — 남긴 것 = §4-2 |
 | 3 | 신규 기본 5편: glossary · tiebreak-rules · pot-odds · probability · holdem-tournament + 🆕 **`/tr/glossary` 도구**(공용 `components/glossary` · 정의는 tr glossary 글 축어 — 글이 먼저라 이 회차 끝에) | 회차 2(계산기 링크 자리) | ✅ 10-06 (7) 배포(WORKLOG · MB-184) — 남긴 것 = §4-3 |
 | 4 | 신규 전략 3편: strategy · positions · continuation-bet (차트는 도구로 연결) | 회차 2(차트 링크 자리) | ✅ 10-06 (8) 배포(WORKLOG · MB-185) — 남긴 것 = §4-4 |
-| 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔁 **솔버가 10-05 S-040으로 앱 터키어 UI 착수 통지**(요청 0) → 요청 발송 불필요. 착수 전 솔버 tr 배포 여부만 확인(배포 전이면 랜딩 CTA가 영어 앱으로 떨어진다) | ⏳ |
+| 5 | GTO 4편 + `/tr/solver` 랜딩(`docs/solver-landing-playbook.md`) | 🔁 **솔버가 10-05 S-040으로 앱 터키어 UI 착수 통지**(요청 0) → 요청 발송 불필요. 착수 전 솔버 tr 배포 여부만 확인(배포 전이면 랜딩 CTA가 영어 앱으로 떨어진다) | ✅ 10-06 (9) 배포(WORKLOG · MB-186) — 솔버 tr 미배포 상태로 진행(사장님 «랜딩까지 지금 전부») · 남긴 것 = §4-5 |
 | 6 | `/tr/tournaments` 북키프로스 카드(Merit 등) | `docs/country-tournament-playbook.md` — 데이터 공급 확정 전 착수 금지 | ⏳ |
 
 ### 4-1. 회차 1 실행 계획 (10-06 작성 · 사장님 확인 뒤 새 세션에서 착수 · 한 세션 90분)
@@ -108,6 +108,17 @@
 - 링크: EN position-play → `/tr/blog/holdem-positions`(앵커 문구는 도착 글 범위로 — 좌석별 레인지는 `/tr/hand-chart`) · starting-hands-chart → `/tr/hand-chart` · 3bet·limping·when-to-fold·GTO 글 = 앵커 제거. positions·c-bet 첫 내부링크 = 전략 필라. 역링크 = blind-meaning 2 · betting-actions 2 · 필라 2 + 관련 카드 1(glossary·game-order는 대응 문장 없음 → 안 넣음).
 - 검수: 렌즈 B(§13) 결함 0 · 렌즈 A 교열 다수 채택 · 아스트라 1차 = 🔴 c-bet «range'ini dağıttı / ezip geçiyor»(smashed = 크게 돕는다 → 부순다로 반전) 정정 · 2차 = strategy «first-in» 한정 복원 외 교열 4 채택 · «sokak → bahis turu» 일괄·«dahil → dâhil»(코퍼스 12:1) 기각.
 - 🪶 남긴 것(자동 착수 금지): ① 회차 5에서 `a-high-board-cbet`이 나가면 c-bet ① 문단(%98,2)을 tr로 재저작해 연다(`locale-intentional-diffs` 10-06) ② sokak/street 혼용(positions = sokak · c-bet = street — 기존 클러스터도 갈림) ③ leak 용어 «kaçak»(strategy·c-bet) vs «sızıntı»(blind-meaning) ④ glossary·game-order에 positions 안내 문장 없음(EN엔 링크 4) ⑤ c-bet 솔버 스크린샷 tr판 없음(-en 사용 · es 선례) ⑥ `/tr/hand-chart` related에 positions·strategy 미등재.
+
+### 4-5. 회차 5 결과 (10-06 (9))
+
+- 확인: 솔버 tr **라이브 아님**(솔버 `5da9da2` 미푸시 · publish/main보다 34커밋 앞 · 라이브 번들 터키어 0 · 대조군 Deutsch·Español 있음). 사장님 결정 = 랜딩까지 지금 전부 · CTA `?lang=tr`(솔버 배포 순간 자동 터키어).
+- 신규 4편(`lib/posts-tr/`): donk-bet-strategy · monotone-board-strategy · broadway-board-strategy · a-high-board-cbet(Opus 서브 4레인 · EN 마스터 · 이미지 = -en 스크린샷). tr에 없는 글 링크: k-high·low-board-check-raise·holdem-equity = 앵커 제거 · drawing-odds → holdem-probability · implied-odds → holdem-pot-odds · position-play → holdem-positions(앵커 축소) · readnext의 k-high 카드 → 형제 GTO 글.
+- `/tr/solver`(page·faq 19 = EN 18 + «Solver ekranı Türkçe mi?» · solver-client · SPOT slug = tr 4편만) · 등록 = hub-routes · side-rail «GTO Solver» · solver-promo tr · 사이트맵 · 기존 12 랜딩 hreflang `tr-TR` · tr 차트 노트·용어 사전 related → `/tr/solver` 링크.
+- c-bet ① A-high 문단(%98,2) 재저작해 엶(`locale-intentional-diffs` 10-06 행) · ⑨는 계속 미전파.
+- 게이트: `check:gto`에 tr 정규화 추가(앞붙임 % + 소수 콤마 · 셀프테스트 41/41) → tr 4편 일치 27 · 🔴 1 = broadway FAQ «23.7»(EN에도 같은 🔴 — ko에 그 문장이 없는 기존 ko↔EN 차이 · tr 결함 아님). audit:hard tr 🔴 0 · 빌드 exit 0(74 + 641) · hreflang 0 · 화면 390·1440 넘침 0.
+- 검수: 렌즈 B(§13·수치·앵커) 결함 0 · 렌즈 A 18건 → 63자리 반영(의미 2 = donk «yükseltme»→raise 오독 · broadway 레이즈 주체 반전) · 아스트라(글) 신규 채택 9(a-high «kaybetmeden»→«kazanamadan» 반전 등) · 기각 = 영어 용어 뒤 아포스트로피 제거 · «kicker yuvası»(코퍼스 tiebreak 용어) · 랜딩 렌즈 9건 전부 + 아스트라(랜딩) 신규 4 채택 · «dâhil»·아포스트로피 기각(코퍼스 관습).
+- 🔴 **솔버 tr 배포(S-행 재통지) 때 같이 고칠 것**: `app/tr/solver/faq.ts` «Solver ekranı Türkçe mi?» 문항 · solver-client «Grup ve spot adlarını … İngilizce bıraktık» 문장 · 스팟·그룹 이름(앱 tr 축어로) · 글 4편의 영어 앱 라벨(«Study Spots → …» · «uygulama arayüzü şimdilik İngilizce» 괄호 — a-high).
+- 🪶 남긴 것(자동 착수 금지): ① check:gto:structure tr = 링크 수 EN > tr · -en 이미지 = 의도(위 링크 처리) ② «İki Çift» 대소문자(donk 표) vs 소문자 — §4-3 ② 코퍼스 통일 회차 ③ 글 4편 rake·검증일 표기는 4편 안에서만 통일 ④ monotone FAQ «nut floşa karşı» 한정은 tr에만 넣음(EN 242행도 같은 조건 누락 — EN 정정은 queue 판단).
 
 ## 5. 지킬 것
 

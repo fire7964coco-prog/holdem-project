@@ -178,6 +178,14 @@ const COPY = {
     desc: "अपने postflop स्पॉट की रणनीति ब्राउज़र में निकालें — मुफ़्त, इंस्टॉलेशन या खाते की ज़रूरत नहीं",
     cta: "सॉल्वर खोलें →",
   },
+  // 터키어(sen체) — tr 회차 5(2026-10-06) · 용어 docs/translation-terms-tr.md.
+  tr: {
+    href: "/tr/solver",
+    badge: "♠ Ücretsiz araç",
+    title: "GTO Solver",
+    desc: "Postflop spotunun GTO stratejisini tarayıcıda hesapla — ücretsiz, kurulum ve hesap gerekmez",
+    cta: "Solver'ı aç →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

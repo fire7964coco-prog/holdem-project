@@ -1,3 +1,12 @@
+## 2026-10-06 (9) — tr 회차 5: GTO 4편 + /tr/solver 랜딩 (MB-186)
+
+- 계획 = `docs/tr-cluster-plan.md` §4 회차 5 · 결과·남긴 것 = 같은 문서 §4-5.
+- 선행 확인: 솔버 tr 라이브 아님(솔버 `5da9da2` 미푸시 · 라이브 번들 터키어 0) → 사장님 «랜딩까지 지금 전부» · CTA `?lang=tr`.
+- 실측(DFS 2792 · 10-06): gto poker 30 · poker gto 30 · gto nedir 40 · poker solver·gto solver·solver poker·texas solver 10 · gto wizard 210(경쟁 브랜드 · 조준 안 함).
+- 신규: GTO 4편(Opus 서브 4레인) · `/tr/solver`(서브 1) · c-bet ① 문단 · 등록(hub-routes · side-rail · solver-promo · 사이트맵 · 12 랜딩 hreflang tr-TR · tr 차트·용어 사전 → /tr/solver). `check:gto` tr 정규화(셀프테스트 41/41).
+- 검수 1차: 렌즈 B 결함 0 · 렌즈 A 18건(63자리) · 아스트라(글) 신규 9 채택 · 랜딩 렌즈 9 + 아스트라(랜딩) 신규 4 채택 · 기각 = 영어 용어 아포스트로피 제거 · «dâhil» · «kicker yuvası». 2차(아스트라 변경 78줄): 3건 채택(a-high «pota daha fazla para koymadan» · donk «her durumda check'ten daha iyi değildir» · 문장 첫 «As» 대문자).
+- 게이트: audit:hard tr 🔴 0 · check:gto tr 일치 27 · 🔴 1(broadway FAQ 23.7 = EN에도 같은 기존 ko↔EN 차이) · 빌드 exit 0(74 + 641) · hreflang 0 · 화면 390·1440 넘침 0.
+
 ## 2026-10-06 (8) — tr 회차 4: 신규 전략 3편 (MB-185)
 
 - 계획 = `docs/tr-cluster-plan.md` §4 회차 4 · 결과·남긴 것 = 같은 문서 §4-4.

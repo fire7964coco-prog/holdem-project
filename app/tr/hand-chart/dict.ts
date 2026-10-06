@@ -82,8 +82,10 @@ export const HAND_CHART_DICT_TR: HandChartDict = {
         " tabanı ise 1.326 kart kombinasyonundan kaçının dahil olduğunu sayar. Aynı range iki farklı değer verir — AA 1 tür ama 6 kombo, AKo 1 tür ama 12 kombo. Solver'lar ve strateji yazıları genelde kombo tabanını kullanır.",
       ],
       [
-        // 🔴 /tr/solver 랜딩은 회차 5 전까지 없다 — 링크 없이 이름만(ko /solver로 보내지 않는다).
-        "* Bu tablo standart açılış range'lerinin bir tahminidir. Gerçek solver değerleri açılış boyutuna, stack'e ve rakip range'ine göre değişir — örneğin HoldemMaster GTO solver'ın blind savaşı örneğinde SB'nin 3bb'lik açılışı %46,6'dır (92 tür, 618 kombo). Gerçek masada masanın tarzına ve stack derinliğine göre ayrıca ayarla.",
+        // ★2026-10-06 tr 회차 5 — /tr/solver 신설로 링크 연결(hi 사전과 같은 모양).
+        "* Bu tablo standart açılış range'lerinin bir tahminidir. Gerçek solver değerleri açılış boyutuna, stack'e ve rakip range'ine göre değişir — örneğin ",
+        { href: "/tr/solver", text: "HoldemMaster GTO solver" },
+        "'ın blind savaşı örneğinde SB'nin 3bb'lik açılışı %46,6'dır (92 tür, 618 kombo). Gerçek masada masanın tarzına ve stack derinliğine göre ayrıca ayarla.",
       ],
     ],
   },

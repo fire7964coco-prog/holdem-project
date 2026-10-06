@@ -46,6 +46,7 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
       { href: "/tr/blog/texas-holdem-rules-for-beginners", label: "Kurallar", desc: "Blind'lar, showdown, temeller" },
       { href: "/tr/blog/holdem-hand-rankings", label: "El Sıralaması", desc: "10 elin tamamı, sırayla" },
       { href: "/tr/blog/holdem-glossary", label: "Terimler rehberi", desc: "90+ terim, duruma göre gruplu" },
+      { href: "/tr/solver", label: "GTO Solver", desc: "Kendi spotunun range'ini ve equity'sini gör" },
       { href: "/tr/hand-chart", label: "Başlangıç Elleri", desc: "Pozisyona göre açılış range'leri" },
       { href: "/tr/calculator", label: "Hesaplayıcı", desc: "Odds, pot oranı, ICM" },
     ],

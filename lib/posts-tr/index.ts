@@ -24,6 +24,12 @@ import { POST as holdemStrategy } from "./holdem-strategy";
 import { POST as holdemPositions } from "./holdem-positions";
 import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
 
+// tr 회차 5 (2026-10-06) — GTO 솔버 4편(솔버 증거 자료 · settled-decisions §1-E)
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
+import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as aHighBoardCbet } from "./a-high-board-cbet";
+
 /**
  * 터키어(tr) 블로그 포스트.
  * 기계 번역이 아닌 터키 포커 커뮤니티 용어(Kare, Üçlü, Kent, İki Çift 등 + 영어 병기)로 현지화한 글만 등록한다.
@@ -50,6 +56,11 @@ export const TR_POSTS: Post[] = [
   holdemStrategy,
   holdemPositions,
   holdemContinuationBet,
+  // tr 회차 5
+  donkBetStrategy,
+  monotoneBoardStrategy,
+  broadwayBoardStrategy,
+  aHighBoardCbet,
 ];
 
 export function getTrPost(slug: string): Post | undefined {

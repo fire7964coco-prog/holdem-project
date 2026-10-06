@@ -523,6 +523,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/tr/solver</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/ja/calculator</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1975,6 +1982,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -2120,6 +2128,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -2139,6 +2148,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -2657,6 +2667,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -2776,7 +2787,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide" />
   </url>
 
-  <!-- 다국어 블로그 포스트 (637편) -->
+  <!-- 다국어 블로그 포스트 (641편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing</loc>
@@ -2851,6 +2862,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -2944,6 +2956,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -2963,6 +2976,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -3787,6 +3801,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -3946,6 +3961,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -4049,6 +4065,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -4068,6 +4085,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -4913,6 +4931,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -5072,6 +5091,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -5165,6 +5185,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -5205,6 +5226,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -6029,6 +6051,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -6202,6 +6225,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -6295,6 +6319,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -6314,6 +6339,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -7138,6 +7164,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -7297,6 +7324,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -7390,6 +7418,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -7409,6 +7438,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -8233,6 +8263,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -8658,6 +8689,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -8751,6 +8783,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -8777,6 +8810,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -9601,6 +9635,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -9746,6 +9781,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -9839,6 +9875,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -9858,6 +9895,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -10682,6 +10720,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -10827,6 +10866,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -10903,6 +10943,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -10922,6 +10963,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -11714,6 +11756,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -12088,6 +12131,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -12164,6 +12208,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -12183,6 +12228,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -12451,6 +12497,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -12580,6 +12627,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
   </url>
 
@@ -12673,6 +12721,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
   </url>
 
@@ -12699,6 +12748,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
@@ -13530,6 +13580,7 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
@@ -13607,6 +13658,66 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/wpt-australia-2026-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/wpt-australia-2026-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/tr/blog/a-high-board-cbet</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/a-high-board-cbet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/a-high-board-cbet" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/tr/blog/broadway-board-strategy</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/broadway-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/broadway-board-strategy" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/tr/blog/donk-bet-strategy</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/donk-bet-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/donk-bet-strategy" />
   </url>
 
   <url>
@@ -13965,6 +14076,26 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/holdem-tournament-vs-cash-game" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game" />
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/tr/blog/monotone-board-strategy</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.holdemmaster.com/ja/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.holdemmaster.com/es/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.holdemmaster.com/zh/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.holdemmaster.com/zh-hant/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.holdemmaster.com/pt/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.holdemmaster.com/id/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.holdemmaster.com/ms/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.holdemmaster.com/hi/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.holdemmaster.com/de/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.holdemmaster.com/tr/blog/monotone-board-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/blog/monotone-board-strategy" />
   </url>
 
   <url>

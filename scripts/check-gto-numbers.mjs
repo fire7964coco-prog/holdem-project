@@ -120,7 +120,10 @@ function extractContent(src) {
  * keep the source and all other locales unchanged. Includes the first endpoint
  * of percentage ranges, so the coverage warning still sees hidden values. */
 function normalizeNumericText(text, locale) {
-  if (!["pt", "id", "de"].includes(locale)) return text;
+  if (!["pt", "id", "de", "tr"].includes(locale)) return text;
+  // TR (2026-10-06 · tr 회차 5) also prefixes the percent sign («%23,7» · tr 코퍼스 38:0) —
+  // move it behind the number first so the shared decimal-comma rule and pctSet see «23.7%».
+  if (locale === "tr") text = text.replace(/%(\d+(?:\.\d{3})*(?:,\d+)?)/g, "$1%");
   return text.replace(/(?<![\d.,])(\d+(?:\.\d{3})*),(\d+)/g,
     (_, integer, fraction) => `${integer.replace(/\./g, "")}.${fraction}`);
 }
@@ -386,6 +389,11 @@ function selftest() {
     ["DE percentage range keeps its coverage warning", () => {
       const de = normalizeNumericText("73,4–75,2%", "de");
       return hiddenRanges(de).length === 1 && pctSet(de).has("75.2");
+    }],
+    ["TR prefix percent + decimal comma normalize to the shared form", () => {
+      const tr = normalizeNumericText("EQ %45,1 · %1.084,0 · %0,3p\n:::readnext\n/tr/blog/x | %99,8\n:::", "tr");
+      const values = pctSet(tr);
+      return values.has("45.1") && !values.has("99.8") && !values.has("0.3") && has(tr, "1084.0") && !has(tr, "84.0");
     }],
     ["other locales keep their original numeric text", () => normalizeNumericText("1,326 · 45.1%", "en") === "1,326 · 45.1%"],
     ["정본 값이 있으면 has=true", () => has("equity 45.1% and EQR 84.0%", 45.1) === true],

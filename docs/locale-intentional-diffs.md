@@ -33,7 +33,9 @@
 
 ## 판정 로그
 
-2026-10-06 TR 전략 3편 신규(tr 회차 4): `holdem-continuation-bet` tr은 ① A-high(%98,2)·⑨ 3bet sizing(%98,4) 두 문단을 **넣지 않았다** — 08-19·08-26 행과 같은 사유(GTO ①·⑨ tr 미발행 · 링크 없는 솔버 수치 문단은 근거가 끊긴다). 🔜 tr 회차 5에서 `a-high-board-cbet`이 나가면 ① 문단을 tr로 재저작해 링크와 함께 연다 · ⑨(`3bet-pot-bet-sizing`)는 tr 계획(`docs/tr-cluster-plan.md` §2)에 없어 계속 미전파. 같은 회차에 position-play·3bet·limping·when-to-fold·starting-hands-chart 링크는 tr에 글이 없어 `/tr/blog/holdem-positions`·`/tr/hand-chart`로 바꾸거나 앵커만 뺐다(링크 수 EN > tr = 의도).
+2026-10-06 TR GTO 4편 신규(tr 회차 5): donk·monotone·broadway·a-high tr은 EN보다 내부링크가 적다(k-high-board-cbet·low-board-check-raise·holdem-equity = tr 글 없음 → 앵커 제거 · drawing-odds → holdem-probability · implied-odds → holdem-pot-odds · position-play → holdem-positions) · 이미지는 -en 솔버 스크린샷(es 선례) · monotone FAQ에 «nut floşa karşı» 한정 1구 추가(EN 누락 조건 — 아스트라 지적). `check:gto:structure --locale=tr`의 링크·이미지 🔴는 이 행으로 닫는다.
+
+2026-10-06 TR 전략 3편 신규(tr 회차 4): `holdem-continuation-bet` tr은 ① A-high(%98,2)·⑨ 3bet sizing(%98,4) 두 문단을 **넣지 않았다** — 08-19·08-26 행과 같은 사유(GTO ①·⑨ tr 미발행 · 링크 없는 솔버 수치 문단은 근거가 끊긴다). 🔜 tr 회차 5에서 `a-high-board-cbet`이 나가면 ① 문단을 tr로 재저작해 링크와 함께 연다 · ⑨(`3bet-pot-bet-sizing`)는 tr 계획(`docs/tr-cluster-plan.md` §2)에 없어 계속 미전파. 같은 회차에 position-play·3bet·limping·when-to-fold·starting-hands-chart 링크는 tr에 글이 없어 `/tr/blog/holdem-positions`·`/tr/hand-chart`로 바꾸거나 앵커만 뺐다(링크 수 EN > tr = 의도). ✅ ① = 10-06 (9) 회차 5에서 열림.
 
 2026-10-02 DE GTO 신규 등록: **DE 미발행에 따른 GTO 역링크 면제를 해소**했다(2026-08-19·08-26·08-27·09-08 행의 de 부분 · 시리즈 미발행인 다른 로케일의 판정은 그대로). DE index에 13편을 등록하고 `/de/solver` 랜딩 13링크를 걸었으며, holdem-continuation-bet의 ① A-high(98,2%)·⑨ 3bet sizing(98,4%) 두 문단, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 de 문맥으로 재저작해 열었다(링크 수 EN = de: 14·18·12 실측). 과거 부재 기록은 이력으로 유지한다.
 

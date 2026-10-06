@@ -61,6 +61,8 @@ Modern stratejinin gerçekte ne dediği kritik, çünkü yanlış anlaşılması
 
 Bunun altında yatan kavram ==range avantajı (range advantage)==: bu belirli flop'ta kimin genel range'i daha güçlü? Preflop raise yapan olarak elinde daha çok büyük kart ve overpair vardır; bu yüzden **yüksek, kuru board'lar sana aittir** — orta değerli bağlantılı kartlarla dolu board'lar ise call eden oyuncuya. Bu tek fikre hâkim ol, masadaki bütün "ben her zaman c-bet atarım" oyuncularının önüne geçersin.
 
+Üstelik hikâye range avantajıyla bitmiyor — üstüne pozisyonu da ekleyince etki uç noktaya varıyor. A-7-2 rainbow'da solver, call eden oyuncuya range'inin %98,2'sini check ettiriyor, top pair dahil — range equity'si %45,1'e karşı %54,9 ile sadece biraz geride, ama pozisyon dışında olmak bu küçük farkı neredeyse topyekûn bir check'e çeviriyor. Ayrıntılı döküm [top pair var, yine de check](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") yazısında.
+
 ---
 
 ## Hangi flop'lara c-bet yapılır? Her şey board dokusunda
