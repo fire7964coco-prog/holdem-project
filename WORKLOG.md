@@ -1,3 +1,10 @@
+## 2026-10-06 (17) — MA-339 판정·이행 + MA-344 통지 (MB-193 · queue §2-AA)
+
+- 판정: 인용 문면 EN·ID 실재 확인 → 요청 4 전부 채택 · 기각 0. MA-344 통지 1(straddle «solver work» 귀속)은 같은 문단이라 합쳐 이행 · 통지 3(MB-181 누락)은 오탐(`e8674e53`에 행 있음).
+- 이행: EN fish·rake·straddle → de·es·id·ja·ms·pt·zh·zh-hant(로케일당 서브 에이전트 1 · 본체가 보고 대조) · id rake 접근 가능성 한 줄 2자리(W-16 문면) · ja cooler 어순 3자리 · zh-hant betting «通常».
+- 검수: 교열·사실 렌즈 1회 → 4자리 반영. 남긴 것 = queue §2-AA 🪶(카드2 «세 스트리트 OOP» 단순화 = L63과 묶어 판정).
+- 게이트: audit:hard 9로케일 🔴 0 · check:drift 핵심 0 · faq-schema 🔴 0 · 빌드 exit 0(74).
+
 ## 2026-10-06 (16) — §2-Z 이행: MA-332~338 ID 고유 9 + EN-먼저 13편 → 9로케일 (MB-192)
 
 - ① ID 고유 Z-1~Z-8 + drawing SF 드리프트(MA-334 ⑤) · ② EN 13편 25자리 → ar 1 + 8로케일(로케일당 서브 에이전트 1개 · 본체가 diff 판정). 전/후 문면 = MB-192.

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-09-27",
   updated: "2026-10-06",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "💰",
@@ -120,11 +120,11 @@ Malah dalam cash game pun ia pilihan dan bergantung pada peraturan rumah: sesete
 
 ![Pot besar yang membengkak dengan cip bercampur bertimbun di tengah felt, pot yang digelembungkan oleh straddle sebelum sesiapa melihat kad](/images/holdem-straddle-bloated-pot.webp "Straddle menggandakan blind dan membengkakkan pot — wang dimasukkan sebelum sekeping kad pun dilihat")
 
-Jawapan jujurnya, dan yang dipersetujui oleh solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard berterus terang: memasukkan wang tanpa melihat kad anda ialah "kelemahan yang sangat besar", malah straddle dari button pun "masih hampir selalu merugikan". Tiga sebab ia merugikan anda — dua yang pertama ialah apa yang ditunjukkan oleh kerja solver, yang ketiga ialah bahagian pihak rumah:
+Jawapan jujurnya, dan yang dipersetujui oleh solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard berterus terang: memasukkan wang tanpa melihat kad anda ialah "kelemahan yang sangat besar", malah straddle dari button pun "masih hampir selalu merugikan". Tiga sebab ia merugikan anda — dua di meja, satu daripada pihak rumah:
 
 :::card
 🎯 | Anda meletakkan wang secara buta | Wang masuk sebelum anda melihat kad anda, jadi anda bermain pot yang membengkak tanpa maklumat — kelemahan yang sama yang menjadikan blind kerusi paling buruk di meja. Ia juga mengurangkan separuh kedalaman efektif anda: pada $1/$2 stack $200 bersamaan 100 big blind, tetapi dengan straddle $4, stack yang sama bermain seperti 50
-📉 | Ia mengecilkan kelebihan posisi anda | Menggandakan blind membengkakkan pot permulaan dan meninggalkan lebih ramai pemain yang belum bertindak ketika anda berada di kerusi steal terbaik. Berlawanan dengan jangkaan, solver bertindak balas dengan membuka **lebih sedikit** tangan dari button dalam pot yang ada straddle — sekitar 15–20% lebih sedikit, menurut [simulasi GTO Wizard untuk pot straddle](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
+📉 | Straddle UTG membeli posisi untuk satu street sahaja | Ia menjadikan anda bertindak terakhir preflop, kemudian meninggalkan anda di luar posisi untuk tiga street seterusnya dalam pot yang anda besarkan sendiri. Straddle juga tidak menjadikan kerusi lewat lebih longgar: dalam [simulasi GTO Wizard untuk pot straddle](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddle kepada 2bb), button membuka **lebih sedikit** tangan — sekitar 15–20% lebih sedikit — bukan lebih banyak
 💸 | Ia boleh menaikkan rake pot | Dalam pot yang layak dikenakan [rake](/ms/blog/holdem-rake), pot yang lebih besar boleh bermaksud caj yang lebih besar sehingga cap dicapai. Kenaikan itu tidak berlaku untuk pot preflop di bawah peraturan no-flop-no-drop, permainan time charge, atau pot yang sudah mencapai cap
 :::
 
@@ -179,7 +179,7 @@ A. Hampir tidak pernah. Tournament bergantung pada struktur blind tetap yang mes
 
 **Q. Adakah straddle menguntungkan? Patutkah anda straddle?**
 
-A. Untuk kebanyakan pemain, tidak — ia permainan -EV. Anda meletakkan wang secara buta, anda mengecilkan kelebihan posisi anda (solver membuka *lebih sedikit* tangan dari button dalam pot yang ada straddle, bukan lebih banyak), dan anda mungkin membayar rake yang lebih tinggi. Ia boleh dipertahankan hanya di meja loose-passive, dalam permainan di mana semua orang sudah buat straddle, atau semata-mata untuk berseronok — hampir tidak pernah sebagai cara untuk menjana wang. Apabila semua orang bergilir buat straddle dengan syarat yang sama, stakes yang lebih tinggi boleh memihak kepada pemain yang lebih kuat.
+A. Untuk kebanyakan pemain, tidak — ia permainan -EV. Anda meletakkan wang secara buta, straddle UTG membeli tindakan terakhir untuk satu street sahaja dan selepas itu anda bermain selebihnya di luar posisi (dan straddle tidak menjadikan kerusi lewat lebih longgar — dalam simulasi GTO Wizard, button membuka *lebih sedikit* tangan, bukan lebih banyak), dan anda mungkin membayar rake yang lebih tinggi. Ia boleh dipertahankan hanya di meja loose-passive, dalam permainan di mana semua orang sudah buat straddle, atau semata-mata untuk berseronok — hampir tidak pernah sebagai cara untuk menjana wang. Apabila semua orang bergilir buat straddle dengan syarat yang sama, stakes yang lebih tinggi boleh memihak kepada pemain yang lebih kuat.
 
 ---
 

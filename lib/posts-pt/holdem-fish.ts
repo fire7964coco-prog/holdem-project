@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -134,7 +134,7 @@ Aqui vem a parte desconfortável. Se você leu até aqui torcendo baixinho para 
 
 </div>
 
-A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% de todas as mãos distribuídas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — o maior leak do poker. Além das estatísticas, se pergunte com honestidade:
+A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% de todas as mãos distribuídas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — um dos maiores leaks do poker. Além das estatísticas, se pergunte com honestidade:
 
 - Você paga raises no pré-flop com mãos como K‑7 offsuit ou Q‑9 porque "são meio jogáveis"?
 - Você dá limp, depois paga um raise, planejando "acertar o flop"?

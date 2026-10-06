@@ -120,11 +120,11 @@ Mesmo em cash games ele é opcional e depende das regras da casa: algumas salas 
 
 ![Um grande pote inchado de fichas misturadas amontoadas no meio do feltro, o pote inflado que um straddle cria antes de qualquer um ter visto uma carta](/images/holdem-straddle-bloated-pot.webp "Um straddle dobra o blind e incha o pote — dinheiro comprometido antes de uma única carta ser vista")
 
-A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.** A análise do GTO Wizard é direta: colocar dinheiro sem olhar as cartas é "uma desvantagem enorme", e até straddar do button "ainda é quase sempre uma proposta que perde dinheiro". Três motivos pelos quais isso te custa — os dois primeiros são o que o trabalho com solver mostra, o terceiro é a parte da casa:
+A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.** A análise do GTO Wizard é direta: colocar dinheiro sem olhar as cartas é "uma desvantagem enorme", e até straddar do button "ainda é quase sempre uma proposta que perde dinheiro". Três motivos pelos quais isso te custa — dois na mesa, um da casa:
 
 :::card
 🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa. E ainda corta pela metade a sua profundidade efetiva: num $1/$2, um stack de $200 são 100 big blinds, mas com um straddle de $4 na mesa o mesmo stack joga como 50
-📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos do button em potes com straddle — cerca de 15–20% menos, segundo as [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — não mais
+📉 | Um straddle UTG compra posição por uma street só | Ele te deixa por último no pré-flop e depois te põe fora de posição nas três streets seguintes, num pote que você mesmo inflou. E o straddle também não solta as cadeiras finais: nas [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (straddle UTG de 2bb), o button abre **menos** mãos — cerca de 15–20% menos — não mais
 💸 | Pode aumentar o rake do pote | Nos potes sujeitos a [rake](/pt/blog/holdem-rake), um pote maior pode pagar mais até atingir o cap. Esse aumento não se aplica a potes pré-flop sob a regra no flop, no drop, a jogos com time charge nem a potes que já atingiram o cap
 :::
 
@@ -179,7 +179,7 @@ A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa se
 
 **Q. Straddle dá lucro? Você deveria straddar?**
 
-A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos do button em potes com straddle, não mais) e pode pagar mais rake. Só é defensável em mesas loose-passive, em jogos onde todos dão straddle por turnos e nas mesmas condições, ou puramente por diversão — quase nunca como um jeito de ganhar dinheiro. Se todos participam por turnos e nas mesmas condições, o GTO Wizard observa que esses stakes maiores podem favorecer os melhores jogadores da mesa.
+A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, um straddle UTG compra a última ação por uma street só e depois você joga o resto fora de posição (e o straddle não solta as cadeiras finais — nas simulações do GTO Wizard o button abre *menos* mãos, não mais) e pode pagar mais rake. Só é defensável em mesas loose-passive, em jogos onde todos dão straddle por turnos e nas mesmas condições, ou puramente por diversão — quase nunca como um jeito de ganhar dinheiro. Se todos participam por turnos e nas mesmas condições, o GTO Wizard observa que esses stakes maiores podem favorecer os melhores jogadores da mesa.
 
 ---
 

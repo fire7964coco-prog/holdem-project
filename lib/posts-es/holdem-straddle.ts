@@ -120,11 +120,11 @@ Incluso en cash games es opcional y depende de las reglas de la casa: algunas sa
 
 ![Un bote grande e inflado de fichas mezcladas amontonadas en el centro del tapete, el bote hinchado que crea un straddle antes de que nadie haya visto una carta](/images/holdem-straddle-bloated-pot.webp "Un straddle dobla la ciega e infla el bote — dinero comprometido antes de ver una sola carta")
 
-La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo, no.** El análisis de GTO Wizard es tajante: meter dinero sin mirar tus cartas es "una desventaja enorme", e incluso hacer straddle desde el botón "sigue siendo casi siempre una propuesta que pierde dinero". Tres razones por las que te cuesta — las dos primeras son lo que muestra el trabajo con solver, la tercera es la parte de la casa:
+La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo, no.** El análisis de GTO Wizard es tajante: meter dinero sin mirar tus cartas es "una desventaja enorme", e incluso hacer straddle desde el botón "sigue siendo casi siempre una propuesta que pierde dinero". Tres razones por las que te cuesta — dos en la mesa, una de la casa:
 
 :::card
 🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50
-📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos desde el botón en botes con straddle — alrededor de un 15–20% menos, según las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — no más
+📉 | Un straddle UTG compra posición para una sola calle | Te deja último en preflop y después fuera de posición durante las tres calles siguientes, en un bote que tú mismo inflaste. Tampoco hace más loose a los asientos tardíos: en las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (straddle UTG a 2bb), el botón abre **menos** manos — alrededor de un 15–20% menos — no más
 💸 | Puede aumentar el rake por bote | En los botes sujetos a [rake](/es/blog/holdem-rake), un bote mayor puede pagar más hasta alcanzar el tope. Ese aumento no se aplica a botes preflop bajo la regla no flop, no drop, a partidas con cobro por tiempo ni a botes que ya alcanzaron el tope
 :::
 
@@ -183,7 +183,7 @@ A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe se
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 
-A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos desde el botón en botes con straddle, no más) y puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
+A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, un straddle UTG te compra la última acción durante una sola calle y luego juegas el resto fuera de posición (y el straddle no hace más loose a los asientos tardíos: en las simulaciones de GTO Wizard el botón abre *menos* manos, no más), y además puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -140,7 +140,7 @@ Bei ihm heißt es also **„Patsy“**, bei Rounders „Sucker“, am Tisch „F
 ## Bin ich der Fish? Ein ehrlicher Selbstcheck
 
 > **Kurze Antwort**
-> Zwei Zahlen genügen für die Selbstdiagnose. Ein solider Spieler liegt bei **VPIP 15–22%** und **PFR 12–18%** – die beiden Werte liegen dicht beieinander. Die Fish-Signatur ist die weite Lücke dazwischen: viel gespielt, kaum geraist, etwa **VPIP 40–70% bei PFR unter 10%**. Wer sich in die Pots hineincallt und hofft, hat den größten Leak im Spiel.
+> Zwei Zahlen genügen für die Selbstdiagnose. Ein solider Spieler liegt bei **VPIP 15–22%** und **PFR 12–18%** – die beiden Werte liegen dicht beieinander. Die Fish-Signatur ist die weite Lücke dazwischen: viel gespielt, kaum geraist, etwa **VPIP 40–70% bei PFR unter 10%**. Wer sich in die Pots hineincallt und hofft, hat einen der größten Leaks im Spiel.
 
 Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft hast, ein Shark zu sein, mach erst diesen Check – die Stats kannst du in jedem Tracker verfolgen oder ehrlich schätzen:
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
+  updated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -133,7 +133,7 @@ Here's the uncomfortable part. If you've read this far quietly hoping you're a s
 
 </div>
 
-The fish signature is the **wide VPIP / low PFR gap**: you're playing 45% of hands but raising only 5% of all hands dealt. That means you're *calling* your way into pots and hoping — the single biggest leak in poker. Beyond the stats, ask yourself honestly:
+The fish signature is the **wide VPIP / low PFR gap**: you're playing 45% of hands but raising only 5% of all hands dealt. That means you're *calling* your way into pots and hoping — one of the biggest leaks in poker. Beyond the stats, ask yourself honestly:
 
 - Do you call preflop raises with hands like K‑7 offsuit or Q‑9 because "they're sort of playable"?
 - Do you limp in, then call a raise, planning to "hit the flop"?

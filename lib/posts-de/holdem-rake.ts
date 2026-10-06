@@ -193,7 +193,7 @@ A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen sc
 
 **Q. Wie wirkt sich der Rake auf deine Winrate aus?**
 
-A. Erheblich – am stärksten bei Low Stakes, wo das Cap nicht mit den Stakes runterskaliert. Short-handed kommt ein zweiter Effekt dazu, der nichts mit dem Cap zu tun hat: Derselbe Rake pro Pot verteilt sich auf weniger Spieler, und du zahlst die Blinds pro 100 Hände deutlich häufiger – dein Anteil je Hand steigt also. (Pro *Stunde* zahlst du zusätzlich mehr, weil mehr Hände laufen – das ist aber eine andere Frage als bb/100.) Der Rake kann so einen kleinen Gewinner in einen Verlierer verwandeln: Derselbe +8 bb/100-Spieler kann leicht negativ enden, nur weil er in einen Raum mit höherem Rake-Cap wechselt. Miss deine Winrate immer nach Rake.
+A. Erheblich – am stärksten bei Low Stakes, wo das Cap kaum mit den Stakes runterskaliert. Short-handed kommt ein zweiter Effekt dazu, der nichts mit dem Cap zu tun hat: Derselbe Rake pro Pot verteilt sich auf weniger Spieler, und du zahlst die Blinds pro 100 Hände deutlich häufiger – dein Anteil je Hand steigt also. (Pro *Stunde* zahlst du zusätzlich mehr, weil mehr Hände laufen – das ist aber eine andere Frage als bb/100.) Der Rake kann so einen kleinen Gewinner in einen Verlierer verwandeln: Derselbe +8 bb/100-Spieler kann leicht negativ enden, nur weil er in einen Raum mit höherem Rake-Cap wechselt. Miss deine Winrate immer nach Rake.
 
 **Q. Ist der Rake online oder live höher?**
 

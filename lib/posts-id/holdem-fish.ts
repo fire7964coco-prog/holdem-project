@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
@@ -134,7 +134,7 @@ Inilah bagian yang tak nyaman. Kalau Anda membaca sejauh ini sambil diam-diam be
 
 </div>
 
-Tanda tangan fish adalah **celah VPIP lebar / PFR rendah**: Anda memainkan 45% tangan tapi hanya me-raise 5% dari seluruh tangan yang dibagikan. Itu berarti Anda *call* untuk masuk ke pot dan berharap — leak terbesar tunggal di poker. Di luar stat, tanyakan pada diri Anda dengan jujur:
+Tanda tangan fish adalah **celah VPIP lebar / PFR rendah**: Anda memainkan 45% tangan tapi hanya me-raise 5% dari seluruh tangan yang dibagikan. Itu berarti Anda *call* untuk masuk ke pot dan berharap — salah satu leak terbesar di poker. Di luar stat, tanyakan pada diri Anda dengan jujur:
 
 - Apakah Anda call raise preflop dengan tangan seperti K‑7 offsuit atau Q‑9 karena "lumayan bisa dimainkan"?
 - Apakah Anda limp masuk, lalu call raise, berencana "hit di flop"?

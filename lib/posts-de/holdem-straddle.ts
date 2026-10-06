@@ -132,11 +132,11 @@ Selbst im Cashgame ist es optional und hausregelabhängig: Manche Rooms erlauben
 > **Kurze Antwort**
 > Für fast jeden: nein. Aus Sicht des Erwartungswerts ist Straddeln ein Verlustgeschäft – du committest Geld ohne Information, spielst einen aufgeblähten Pot und zahlst möglicherweise mehr Rake. Vertretbar ist es an ==loose-passiven Tischen==, in Runden, in denen alle unter denselben Bedingungen reihum straddeln, oder schlicht zum Spaß. Als verlässlichen Weg zu mehr Gewinn solltest du es nicht betrachten.
 
-Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard ist unverblümt: Geld zu setzen, ohne deine Karten anzusehen, ist „ein massiver Nachteil“, und selbst ein Straddle vom Button ist „trotzdem fast immer ein Verlustgeschäft“. Drei Gründe, warum es dich Geld kostet – die ersten beiden zeigt die Solver-Arbeit, der dritte ist der Anteil des Hauses:
+Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard ist unverblümt: Geld zu setzen, ohne deine Karten anzusehen, ist „ein massiver Nachteil“, und selbst ein Straddle vom Button ist „trotzdem fast immer ein Verlustgeschäft“. Drei Gründe, warum es dich Geld kostet – zwei am Tisch, einer beim Haus:
 
 :::card
 🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht. Er halbiert außerdem deine effektive Stacktiefe: Bei €1/€2 sind €200 genau 100 Big Blinds, mit einem €4-Straddle spielt derselbe Stack wie 50
-📉 | Er schrumpft deinen positionellen Vorteil | Den Blind zu verdoppeln bläht den Startpot auf und drückt zugleich alle Stacks – in Big Blinds gerechnet – zusammen. Wider Erwarten reagieren Solver, indem sie in gestraddelten Pots vom Button **weniger** Hände öffnen – rund 15–20% weniger, laut [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) – nicht mehr
+📉 | Ein UTG-Straddle kauft Position für genau eine Straße | Preflop handelst du zuletzt, danach sitzt du drei Straßen lang out of position – in einem Pot, den du selbst aufgebläht hast. Und lockerer macht ein Straddle die späten Plätze auch nicht: In [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddelt auf 2bb) öffnet der Button **weniger** Hände – rund 15–20% weniger – nicht mehr
 💸 | Er kann den Pot-Rake erhöhen | Bei rakepflichtigen Pots kann ein größerer Pot mehr [Rake](/de/blog/holdem-rake) bedeuten, bis das Cap erreicht ist. Das gilt nicht für Preflop-Pots unter No-flop-no-drop-Regeln, Time-Charge-Spiele oder Pots, die das Cap bereits erreicht haben
 :::
 
@@ -211,7 +211,7 @@ A. Vom **Button**, sofern der Room es erlaubt. Das ist der einzige Straddle, bei
 
 **Q. Lohnt sich Straddeln – solltest du straddeln?**
 
-A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, du verkleinerst deinen positionellen Vorteil (Solver öffnen in gestraddelten Pots vom Button *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
+A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, ein UTG-Straddle kauft dir die letzte Action für eine Straße, den Rest spielst du out of position (und lockerer macht ein Straddle die späten Plätze nicht – in den Sims von GTO Wizard öffnet der Button *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
 
 ---
 

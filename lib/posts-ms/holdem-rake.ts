@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-09-27",
   updated: "2026-10-06",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "🏦",
@@ -174,7 +174,7 @@ A. Ya, tetapi bukan daripada pot. Yuran dikutip bersama bayaran penyertaan anda.
 
 **Q. Bagaimana rake menjejaskan win rate anda?**
 
-A. Dengan ketara — paling ketara di stakes rendah, kerana cap tidak mengecil seiring stakes. Meja short-handed menambah kesan kedua yang langsung tiada kaitan dengan cap: rake yang sama bagi setiap pot dikongsi oleh lebih sedikit pemain, dan anda post blind jauh lebih kerap bagi setiap 100 tangan — jadi bahagian anda bagi setiap tangan meningkat. (Bagi setiap *jam* anda juga membayar lebih, semata-mata kerana lebih banyak tangan dimainkan, tetapi itu soalan yang berbeza daripada bb/100.) Rake boleh menukar pemenang kecil menjadi pemain rugi: pemain +8 bb/100 yang sama boleh berakhir sedikit negatif hanya dengan berpindah ke bilik kad yang cap rake-nya lebih tinggi. Sentiasa ukur win rate anda selepas rake.
+A. Dengan ketara — paling ketara di stakes rendah, kerana cap hampir tidak mengecil seiring stakes. Meja short-handed menambah kesan kedua yang langsung tiada kaitan dengan cap: rake yang sama bagi setiap pot dikongsi oleh lebih sedikit pemain, dan anda post blind jauh lebih kerap bagi setiap 100 tangan — jadi bahagian anda bagi setiap tangan meningkat. (Bagi setiap *jam* anda juga membayar lebih, semata-mata kerana lebih banyak tangan dimainkan, tetapi itu soalan yang berbeza daripada bb/100.) Rake boleh menukar pemenang kecil menjadi pemain rugi: pemain +8 bb/100 yang sama boleh berakhir sedikit negatif hanya dengan berpindah ke bilik kad yang cap rake-nya lebih tinggi. Sentiasa ukur win rate anda selepas rake.
 
 **Q. Rake poker online atau live yang lebih tinggi?**
 

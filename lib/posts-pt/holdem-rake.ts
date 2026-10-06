@@ -170,7 +170,7 @@ A. Sim, mas não do pote. O preço de entrada pode separar a contribuição para
 
 **Q. Como o rake afeta o seu win rate?**
 
-A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: o mesmo rake por pote é dividido entre menos jogadores, e você paga os blinds com muito mais frequência a cada 100 mãos — então a sua parte por mão sobe. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
+A. Significativamente — principalmente em stakes baixos, onde o cap quase não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: o mesmo rake por pote é dividido entre menos jogadores, e você paga os blinds com muito mais frequência a cada 100 mãos — então a sua parte por mão sobe. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
 
 **Q. O rake do poker online ou ao vivo é mais alto?**
 

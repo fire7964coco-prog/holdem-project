@@ -423,6 +423,25 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 권고(라벨 OK/UNV · 자동 착수 금지 · 손질 때): MA-332 통지 1(7-5-4-3-2 최저 손 · 플러시 후속 카드 · 보드 스캔 충분조건 · kicker tldr Q 페어 반례 · «ikut bermain» 용법 · 보드 플레이 공개 조건 · tiebreak 표 Royal 조건 삭제) · MA-333 통지 1(split «Suits never affect» ↔ «few rooms by suit» 내부 모순 · 무경합 쇼다운 예외 · reading SF 예외 비연속 보드 · flush «rarer always wins» 5장 한정 · «better top card» · TDA 22 휴식 1분 · 분할 자격자 · ID Short Deck «common» 탈락) · MA-334 통지 1(관련 글 카드 «rarer always wins» = MA-333 ④와 한 묶음 · outs tldr 조건 · «benar-benar meleset» 60.8% · «Kelangkaan» 강도 · **ID 드리프트 drawing SF «empat» flop → EN «54s–JTs exactly four · QJs three, KQs two, A2s one» 복원 = ① 회차에 같이 해도 됨**) · MA-335 통지 1(ⓐ ID 드리프트 3 «mungkin»·«7,5:1» 방향·«sebagian besar» · ⓑ 관련 글 카드 realisation · 블로커 SF 여지 · Rule of 4 괄호 3인+ · ⓒ 배수 경험칙 = 검수장 잣대 결정 대기) · MA-336 통지(ⓐ SB 최악 좌석 헤즈업 한정 = EN-먼저 본체 판단 · ⓑ «melepas c-bet» 동사 통일 선택 · ⓒ position-play K 비교 UNV · JA 절 제거 선례 · ⓓ GPT 동형 단순화) · MA-337 통지(ⓐ «worst result of a fold is zero» «from that decision forward» 선택 · ⓑ «fills up» → «full house atau lebih baik» · ⓒ ID 드리프트 «tipis»(shallow = 얕은 스택)·«sebagian besar» · ⓓ Z-30과 함께 표 정합 · ⓔ c-bet FAQ 3-bettor 포섭 엇갈림 · ⓕ 배수 경험칙 대기) · MA-338 통지 1(ⓐ ID Rake «cash-game» 탈락 = §2-W 🪶 Rake 행과 같은 묶음 · ⓑ muck 올인 공개 예외 · ⓒ bad-beat EN 원장 Quick test 재판정 = 검수장 몫).
 - 🪶 꼬리 15로케일 같은 글 = 이행 때 미전파(§2-X·Y와 같은 부채 · 자동 착수 금지).
 
+### 2-AA. 우편함 수신분 — MA-339 (ID ④ 4-5 glossary 부분2 · fish·rake·straddle) + MA-344 통지 · 판정·이행 2026-10-06 (17) · MB-193
+
+> 근거 = 검수장 `reports/검수-id-회차4-5-glossary-부분2-2026-10-06/hq-reverify/HQ-REPORT.md` · MA-344 `reports/2026-10/검수-MB176-180-이행-2026-10-06.md`. 본체 판정 = 인용 문면 전부 EN·ID 파일 실재 확인(HEAD `c91cbe98` · `aabd9e9c..HEAD` 대상 6파일 diff 0 · MA 행 번호는 본문 기준이라 파일 행과 13줄 차). **요청 전부 채택(기각 0)** · MA-344 통지 1(straddle «solver work» 귀속)은 AA-23과 같은 문단이라 함께 이행 · 통지 2(ja cooler 어순 · zh-hant «通常»)도 같은 회차 이행.
+
+| # | 글 | 자리 | 이행 문면(EN) | 출처 |
+|---|---|---|---|---|
+| AA-21 | fish | 본문 «the single biggest leak in poker» ↔ «The single most expensive fish habit … bad beat» | 앞쪽을 «one of the biggest leaks in poker»로 · 틸트 최상급은 유지 | MA-339 ① |
+| AA-22 | rake | FAQ «where the cap doesn't scale down with the stakes» | «barely scales down» — 본문 계단식 캡·«nyaris»와 정합 | MA-339 ② |
+| AA-23 | straddle | 도입 «the first two are what the solver work shows» · 카드2 «It shrinks your positional edge» · FAQ «profitable?» 같은 절 | 도입 «two at the table, one from the house» · 카드2 «A UTG straddle buys position for one street»(프리플랍만 마지막 → 세 스트리트 OOP) + 시뮬은 «late seats도 안 넓어진다: UTG 2bb 스트래들 팟에서 버튼 오픈 ~15–20% 감소»로 주체 정정 · FAQ 같은 꼴 | MA-339 ③ · MA-344 통지 1 |
+| AA-1 | id rake | FAQ7 «rakeback·room·home game termurah» · FAQ8 «ilegal?» | 접근 가능성 한 줄(W-16 문면 «di Indonesia, poker dengan taruhan uang tidak tersedia secara resmi» · 조문 번호·처벌 본문 금지 = posting.mdc 합법성 절) | MA-339 ④ |
+| AA-2 | ja cooler | 先に結論·FAQ «強い手同士がぶつかり、入れた時点で負けていたなら» | «ぶつかって入れた時点で» — 배드빗 가지에 안 걸리게 | MA-344 통지 2 |
+| AA-3 | zh-hant betting-actions | FAQ «沒人盲抓時是大盲» | «通常» 복원(EN normally) | MA-344 통지 2 |
+
+- 전파 = EN 3편 → de·es·id·ja·ms·pt·zh·zh-hant 각 3편(ar판 없음). ms는 검수장 MS 전수 초벌(MA-346 · 기준 `c91cbe98`) 진행 중 → MB-193으로 해당 행 전/후 요청.
+- 🪶 통지 권고(라벨 OK/UNV · 자동 착수 금지): MA-339 ⓐ re-straddle «Preflop saja» 버튼 예외 · Mississippi 액션 시작 하우스룰 갈래 · 버튼 스트래들 첫 행동자 룸별 ⓑ rake «nyaris» GGPoker 비례 캡 반례 · 도입 «setiap pot» → «nyaris setiap pot» ⓒ fish «sepenuhnya oleh kebalikannya» ↔ FAQ «tidak semua yang bukan shark itu fish» ⓓ straddle 관련 글 카드 «hanya ada di cash game» ↔ «Hampir tak pernah» · MA-344 통지 3(MB-181 행 누락) = **해당 없음** — MB-181 행은 `e8674e53`이 out-본체.md에 같이 커밋했다(MB-180 바로 아래 · MB-193에서 위치 회신).
+- 🪶 렌즈가 남긴 것(자동 착수 금지): straddle 카드2·FAQ «세 스트리트 내내 OOP»는 블라인드 콜러 상대로는 IP라 단순화 — 같은 글 L63 «play the next three streets out of position»과 같은 문면이라 L63과 묶어 «블라인드를 뺀 콜러 상대로» 한정할지 판정(9로케일).
+- 🪶 로케일 고유로 같이 고친 사본: zh straddle 바로 답 블록 · ja straddle 先に結論 카드 제목 인용 · ja cooler 본문 L142(같은 어순 · 통지 2와 같은 클래스).
+- 🪶 꼬리 15로케일 같은 글 = 미전파(§2-X·Y·Z와 같은 부채).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

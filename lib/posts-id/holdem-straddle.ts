@@ -120,11 +120,11 @@ Bahkan di cash game pun ia opsional dan tergantung aturan rumah: beberapa ruanga
 
 ![Sebuah pot besar menggembung berisi chip campuran menumpuk di tengah felt, pot yang digelembungkan straddle sebelum siapa pun melihat kartu](/images/holdem-straddle-bloated-pot.webp "Sebuah straddle menggandakan blind dan menggembungkan pot — uang dikeluarkan sebelum satu kartu pun terlihat")
 
-Jawaban jujurnya, dan yang disepakati para solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard blak-blakan: memasukkan uang tanpa melihat kartu Anda adalah "kerugian yang sangat besar", dan bahkan straddle dari button "tetap hampir selalu merugi". Tiga alasan mengapa ini merugikan Anda — dua yang pertama ditunjukkan oleh kerja solver, yang ketiga adalah jatah pihak rumah:
+Jawaban jujurnya, dan yang disepakati para solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard blak-blakan: memasukkan uang tanpa melihat kartu Anda adalah "kerugian yang sangat besar", dan bahkan straddle dari button "tetap hampir selalu merugi". Tiga alasan mengapa ini merugikan Anda — dua terjadi di meja, satu datang dari pihak rumah:
 
 :::card
 🎯 | Anda mengeluarkan uang secara buta | Uang masuk sebelum Anda melihat kartu, jadi Anda memainkan pot yang menggembung tanpa informasi — kerugian yang sama yang membuat blind menjadi kursi terburuk di meja. Ia juga memangkas kedalaman efektif Anda jadi separuh: di $1/$2 sebuah stack $200 setara 100 big blind, tapi dengan straddle $4 aktif, stack yang sama bermain seperti 50
-📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan dari button di pot yang di-straddle — sekitar 15–20% lebih sedikit, menurut [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
+📉 | UTG straddle membeli posisi hanya untuk satu street | Ia membuat Anda beraksi terakhir di preflop, lalu membiarkan Anda out of position selama tiga street berikutnya di pot yang Anda gelembungkan sendiri. Straddle juga tidak membuat kursi belakang bermain lebih longgar: dalam [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddle ke 2bb), button membuka **lebih sedikit** tangan — sekitar 15–20% lebih sedikit — bukan lebih banyak
 💸 | Ia bisa menaikkan pot rake | Pada pot yang dikenai [rake](/id/blog/holdem-rake), pot lebih besar bisa berarti biaya lebih tinggi sampai cap tercapai. Kenaikan ini tidak berlaku pada pot preflop dengan aturan no flop, no drop, game time-charge, atau pot yang sudah mencapai cap
 :::
 
@@ -179,7 +179,7 @@ A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus i
 
 **Q. Apakah straddle profit? Perlukah Anda straddle?**
 
-A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan dari button di pot yang di-straddle, bukan lebih banyak), dan Anda bisa membayar lebih banyak rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua pemain bergiliran straddle dengan ketentuan yang sama, atau murni untuk bersenang-senang — hampir tak pernah sebagai cara menghasilkan uang. Jika semua pemain mendapat giliran yang sama, GTO Wizard mencatat bahwa taruhan yang lebih tinggi ini bisa menguntungkan pemain terbaik di meja.
+A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, UTG straddle hanya membeli aksi terakhir untuk satu street lalu sisanya Anda mainkan out of position (dan straddle tidak membuat kursi belakang bermain lebih longgar — dalam simulasi GTO Wizard, button membuka *lebih sedikit* tangan, bukan lebih banyak), dan Anda bisa membayar lebih banyak rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua pemain bergiliran straddle dengan ketentuan yang sama, atau murni untuk bersenang-senang — hampir tak pernah sebagai cara menghasilkan uang. Jika semua pemain mendapat giliran yang sama, GTO Wizard mencatat bahwa taruhan yang lebih tinggi ini bisa menguntungkan pemain terbaik di meja.
 
 ---
 

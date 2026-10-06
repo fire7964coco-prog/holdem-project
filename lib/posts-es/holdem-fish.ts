@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-04",
-  masterUpdated: "2026-10-04",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -134,7 +134,7 @@ Aquí viene la parte incómoda. Si has llegado hasta aquí esperando en silencio
 
 </div>
 
-La firma del fish es la **diferencia amplia VPIP / bajo PFR**: juegas el 45% de las manos pero solo subes el 5% de todas las manos repartidas. Eso significa que te *igualas* el camino hacia los botes y rezas — el mayor leak del póker. Más allá de los stats, pregúntate con honestidad:
+La firma del fish es la **diferencia amplia VPIP / bajo PFR**: juegas el 45% de las manos pero solo subes el 5% de todas las manos repartidas. Eso significa que te *igualas* el camino hacia los botes y rezas — uno de los mayores leaks del póker. Más allá de los stats, pregúntate con honestidad:
 
 - ¿Igualas subidas preflop con manos como K‑7 de distinto palo o Q‑9 porque "son medio jugables"?
 - ¿Limpeas, luego igualas una subida, con el plan de "pegar el flop"?

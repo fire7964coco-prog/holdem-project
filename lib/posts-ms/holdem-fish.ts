@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "'Fish' ialah slang poker untuk pemain lemah yang sentiasa kalah — pemain yang lebih kuat ('shark') mengaut untung daripadanya. Fish bermain terlalu banyak tangan, terlalu kerap call dan tak reti fold; pepatah terkenal mengingatkan, kalau anda tak nampak fish di meja, andalah fish itu. Inilah bacaan paling penting dalam permainan: cari fish, atau jadi fish.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-04",
-  masterUpdated: "2026-09-26",
+  updated: "2026-10-06",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🐟",
@@ -134,7 +134,7 @@ Jadi atribusi yang jujur — yang membezakan sumber yang teliti daripada sumber 
 
 </div>
 
-Ciri khas fish ialah **jurang VPIP luas / PFR rendah**: anda bermain 45% tangan tetapi hanya raise 5% daripada semua tangan yang diagihkan. Maksudnya anda masuk ke dalam pot dengan *call* sambil berharap — leak paling besar dalam poker. Selain statistik, tanya diri anda dengan jujur:
+Ciri khas fish ialah **jurang VPIP luas / PFR rendah**: anda bermain 45% tangan tetapi hanya raise 5% daripada semua tangan yang diagihkan. Maksudnya anda masuk ke dalam pot dengan *call* sambil berharap — antara leak paling besar dalam poker. Selain statistik, tanya diri anda dengan jujur:
 
 - Adakah anda call raise preflop dengan tangan seperti K‑7 offsuit atau Q‑9 kerana "boleh la juga dimainkan"?
 - Adakah anda limp masuk, kemudian call raise, dengan harapan "kena flop"?
