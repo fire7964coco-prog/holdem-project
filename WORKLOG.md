@@ -1,3 +1,9 @@
+## 2026-10-06 (10) — tr SERP 보강 0단계: 20편 현지 조사 5레인 (배포 없음)
+
+- 사장님 지시(«20편을 상위 1페이지로 · 작업 빼먹지 마»). 브리프·산출물 = `docs/keyword-bank/tr-serp/`(00-brief · L1~L5 · 레인마다 볼륨·자동완성·SERP 상위10·PAA·원문 정독·장단점·처방·커버리지). 1차 보고 뒤 추정·대체 자리(고볼륨 SERP 미조회 · 원문 403·404 · 대체 SERP)를 전부 실측으로 보완시킴.
+- 핵심: «poker nasıl oynanır»·«poker elleri» 1페이지가 포럼·앱·얇은 글 · 경쟁 확률·족보 글 §13 오류 다수(GGPoker TR 5장 확률표·팟오즈 5:1 · rangecraft 5장 수치를 홀덤 표기) · game-order «el sırası»=족보 의도 · TDK «rest»=all-in · «pas geç»=fold(지식패널).
+- tr 색인 재측정 = 26 중 색인 5. 실행 회차 A~D·사장님 판단 3건 = 핸드오프 최상단.
+
 ## 2026-10-06 (9) — tr 회차 5: GTO 4편 + /tr/solver 랜딩 (MB-186)
 
 - 계획 = `docs/tr-cluster-plan.md` §4 회차 5 · 결과·남긴 것 = 같은 문서 §4-5.

@@ -3,6 +3,21 @@
 > 갱신: 2026-10-06 (9) (tr 회차 5 MB-186) · 2026-10-06 (8) (tr 회차 4 MB-185) · 2026-10-06 (6) (tr 회차 2 MB-183) · 2026-10-06 (5) (tr 회차 1 MB-182) · 2026-10-06 (1) (§2-W ② EN-먼저 이행 MB-178) · 그 전 2026-10-05 (12) (§2-W ① 이행 MB-176 · 용어 사전 아스트라 교차 MB-177) · 이전 회차 경위는 `WORKLOG.md`. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 🔄 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
+
+| 단계 | 내용 | 상태 |
+|---|---|---|
+| 0 | 조사 5레인(SERP 상위10·PAA·자동완성·라쿠·상위 글 원문 장단점 → 처방) = `docs/keyword-bank/tr-serp/` 00-brief + L1~L5(레인마다 §7 처방 · 커버리지 표 ✗ 0까지 보완) | ✅ 10-06 18:51 |
+| A | 고볼륨: texas-holdem-rules-for-beginners(L1 7-A) · holdem-hand-rankings(L2 7-4) · holdem-betting-actions(L1 7-C) · holdem-game-order(L1 7-B «el sırası»=족보 의도 → 개명) | ⏳ 다음 세션 |
+| B | 규칙 단편·용어: holdem-tiebreak-rules · holdem-showdown-rules(L2) · holdem-glossary · holdem-all-in-rules(rest) · holdem-blind-meaning(L3) | ⏳ |
+| C | 확률·대회: holdem-tournament(ICM 3인 예시) · holdem-probability(상대 수별 승률표 = poker-eval로 계산) · holdem-pot-odds · holdem-tournament-vs-cash-game(L4) | ⏳ |
+| D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) | ⏳ |
+
+- 회차마다: 처방 축어대로 수정 → audit:hard · §13 검산 → 렌즈+아스트라 병렬 → 2차 → 빌드·배포·MB·IndexNow.
+- 🔴 **사장님 판단 3건**(처방에 표로 있음 · 해당 회차 전에 묻는다): ① «pas» 표기 — 구글 지식패널 «pas geç»=fold · rangecraft는 check(L1 §7) → 단독 pas=fold · check=«çek/bop» 권고(betting-actions «bedavaya pas» 3자리) ② «poker terimleri» 주인을 도구 → 글로 이전(L3 §7 · 회차 3 dict 주석 결정과 반대) ③ 솔버 합법성 PAA는 보류(합법성 축 금지) 확인.
+- 📊 tr 색인 재측정(10-06 · `docs/gsc-tracking/index-audit-2026-10-06.json`): 26 URL 중 **색인 5**(glossary 도구 · tournaments · blind · hand-rankings · showdown) · 모름 17 · 발견·미색인 4 → 사장님 GSC 수동 색인 요청이 보강과 같이 가야 한다. ⚠ Git Bash에서 `--prefix /tr/`는 `MSYS_NO_PATHCONV=1` 필요(없으면 경로가 변환돼 0건).
+- 회차 5 «다음 = 회차 6(대회 카드)»은 사장님 «조금 나중에» — 이 보강 뒤.
+
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 5 ✅ 배포 (10-06 (9) · MB-186 · GTO 4편 + /tr/solver) · 다음 = 사장님 지시 대기
 
 - 결과·남긴 것 = **`docs/tr-cluster-plan.md` §4-5**(🪶 자동 착수 금지). 다음 tr = 회차 6(북키프로스 카드 · 데이터 공급 확정 전 착수 금지).
