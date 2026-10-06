@@ -385,6 +385,44 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 2(ID 직답 상자 완결성): game-order tldr에 EN 선행동 3문장(헤즈업 예외)·desc «who bets first» 누락 — 라벨 영향 없음 · ID 손질 때.
 - 🪶 꼬리 15로케일 all-in tldr = 이번 미전파(자동 착수 금지).
 
+### 2-Z. 우편함 수신분 — MA-332~338 (ID ④ 4-2 rankings · 4-3 odds · 4-4 strategy · 4-5 glossary 부분1) · 판정 2026-10-06 (15) · 회신 MB-191 · 이행 = 다음 회차
+
+> 근거 = 검수장 각 MA의 `HQ-REPORT.md`(MA 행 «근거» 칸). 본체 판정 = 인용 문면 전부 EN·ID 파일에서 실재 확인(현 HEAD `7473a796`) · 반례 계산 대조(×4 12아웃 48% vs 정확 45.0% · 턴 Q♥7♥2♣3♠ 셋 상대 클린 7/44 = 15.9% · UTG 13% = 172콤보). **요청 전부 채택**(기각 0). 이행 순서 = ① ID 고유(로케일 단독 · 한 회차) → ② EN-먼저(EN 정정 → 9로케일 ar·de·es·id·ja·ms·pt·zh·zh-hant 사본 grep · 형제 원장 OK 라벨은 검수장이 각 로케일 회차에서 재라벨). 이행 MB가 나가면 검수장이 변경 줄 전/후로 닫는다.
+
+**① ID 고유 8자리**
+
+| # | 글 | 자리 | 고칠 방향 | 출처 |
+|---|---|---|---|---|
+| Z-1 | id hand-rankings | FAQ «Apa urutan simbol (lambang) kartu poker? — Tidak ada …» | «팟 승패를 무늬로 가르지 않는다»로 좁힘 + 버튼·좌석 추첨 등 무늬 서열이 쓰이는 자리 한 줄(WSOP 2026 B 150 · 같은 저자 tiebreak FAQ 문면 따라) | MA-332 요청 3 |
+| Z-2 | id probability | L147 «**Aturan 2 dan 4** membawa Anda dalam sekitar satu-dua persen» | 아웃 수 범위 한정(약 10아웃까지) 또는 EN형 «jalan pintas, bukan equity yang pasti» | MA-334 요청 1 |
+| Z-3 | id equity | L42 «menang seluruhnya atau kalah seluruhnya» | 분할 한정 또는 EN형(«you won't win this pot 70% of the time and lose the rest») | MA-335 요청 2 |
+| Z-4 | id position-play | FAQ L274 «raise hampir setiap kali» | EN «most of the time» 강도 · 같은 글 표 ~40%와 정합 | MA-336 ① |
+| Z-5 | id strategy | L193 «hanya kalah pot kecil» | «hanya» 삭제 — EN «lose the small ones» | MA-336 ② |
+| Z-6 | id position-play | 맺음 «kursi "berdiskon"» | 복수 «kursi-kursi "berdiskon"» 또는 «kedua blind» | MA-336 ③ |
+| Z-7 | id glossary | 표 String bet L84 | «스택 복귀(reach-back)» 요건 복원(WSOP 2026 A 103 · TDA 2024 R56 · EN «undeclared reach-back») | MA-338 ④ |
+| Z-8 | id glossary | FAQ Muck L294 «menyentuh muck umumnya dinyatakan mati» | WSOP 2026 A 108·109 — 식별 가능하면 회수 가능 여지 | MA-338 ⑤ |
+
+**② EN-먼저 (EN 같은 자리 + 9로케일 사본)**
+
+| # | 글 | EN 자리 | 고칠 방향 | 출처 |
+|---|---|---|---|---|
+| Z-21 | kicker · hand-rankings · tiebreak | kicker L40 «Poker is always a five-card game» · kicker FAQ L182 «Poker always makes the best five cards out of seven» · hand-rankings FAQ L388 «A poker hand is always five cards» · tiebreak FAQ L208 «Yes, but only in the A-2-3-4-5 straight» | **WRONG** — «In Hold'em …» 한정만(재작성 아님 · 반례 Badugi·Omaha·Short Deck·Razz) | MA-332 요청 1 |
+| Z-22 | tiebreak | 직답 L153 «Suits do exactly one job in Texas Hold'em» | 같은 글 좌석 추첨 FAQ(L232)와 모순 → «for deciding who wins a pot» 한정 | MA-332 요청 2 |
+| Z-23 | pot-odds | 실전 핸드 L191 «19.6% is all I have» | 셋 상대 클린 아웃 7/44 = 15.9%(2♥·3♥는 상대 풀하우스) · 폴드 결론 불변 | MA-335 ① |
+| Z-24 | implied-odds | FAQ «extra cushion covers the times you miss, get no action, or lose to a set» | «miss» 삭제(7.5:1 손익분기가 이미 미스 포함 · 본문 15–20× 문단 사유 목록 따라) | MA-335 ② |
+| Z-25 | equity | FAQ L202 «quarter-pot … 17% … half-pot fold» | «if no more betting follows» 조건 같은 답에 이식 | MA-335 ③ |
+| Z-26 | card-counting | 본문 L96 «dead cards … exposed off the board: a card flashed by mistake» + FAQ 같은 꼴 | 같은 글 표의 «일찍 노출된 보드 카드는 스텁에 다시 섞일 수 있음» 단서를 두 자리에 | MA-335 ④ |
+| Z-27 | position-play | FAQ «From UTG … ~13% — strong pairs, AK/AQ, best suited broadways» | 열거가 13% 미달 → 본문 «plus middle pairs and top suited aces» 한정 이식 | MA-336 요청 2 |
+| Z-28 | limping | FAQ L163 «The rare exceptions are completing the small blind …» | 🔴 **MB-178(W-25) 자기회귀** — 다음 FAQ «Often, yes»와 빈도 반대 → SB 컴플리트를 «rare» 목록 밖 별문으로 · JA FAQ6 «まれな例外» 등 9로케일 같은 꼴 확인 | MA-337 ① |
+| Z-29 | continuation-bet | desc L8 · 요약 L271 «as the OOP 3-bettor it flips to almost always» | 본문 «above 97% on the three boards we solved» 한정 이식 | MA-337 ② |
+| Z-30 | 3bet | FAQ L262 «so they win even when called» | A5s vs QQ+/AK ≈30% → 같은 글 «bluff that can still win the pot» 형 | MA-337 ③ |
+| Z-31 | cooler | desc L7 «and why it's not a bad beat» | **WRONG**(09-25 결재와 같은 클래스) — 요약의 «in the strict definition» 한정 이식 | MA-338 ① |
+| Z-32 | bad-beat | L146 «still a win in every way that matters» · L38 «the deck simply produced the one runout that beats you» · desc·stripe «quietly good» 무한정 | 같은 글 FAQ ICM·사이징 예외 · «four out of five» · 본문 «usually»·«most of the time» 복원 | MA-338 ② |
+| Z-33 | cooler | L196 «The best players lose exactly as many coolers» · L126 «mistake wearing a disguise»(확신 ≠ EV) · L69·L193 «Knowing which … anything to fix» | 같은 글 «occasionally letting go of the second-best hand» · 계산 잣대 · 축 = 불운 vs 실수로 정합 | MA-338 ③ |
+
+- 🪶 통지 권고(라벨 OK/UNV · 자동 착수 금지 · 손질 때): MA-332 통지 1(7-5-4-3-2 최저 손 · 플러시 후속 카드 · 보드 스캔 충분조건 · kicker tldr Q 페어 반례 · «ikut bermain» 용법 · 보드 플레이 공개 조건 · tiebreak 표 Royal 조건 삭제) · MA-333 통지 1(split «Suits never affect» ↔ «few rooms by suit» 내부 모순 · 무경합 쇼다운 예외 · reading SF 예외 비연속 보드 · flush «rarer always wins» 5장 한정 · «better top card» · TDA 22 휴식 1분 · 분할 자격자 · ID Short Deck «common» 탈락) · MA-334 통지 1(관련 글 카드 «rarer always wins» = MA-333 ④와 한 묶음 · outs tldr 조건 · «benar-benar meleset» 60.8% · «Kelangkaan» 강도 · **ID 드리프트 drawing SF «empat» flop → EN «54s–JTs exactly four · QJs three, KQs two, A2s one» 복원 = ① 회차에 같이 해도 됨**) · MA-335 통지 1(ⓐ ID 드리프트 3 «mungkin»·«7,5:1» 방향·«sebagian besar» · ⓑ 관련 글 카드 realisation · 블로커 SF 여지 · Rule of 4 괄호 3인+ · ⓒ 배수 경험칙 = 검수장 잣대 결정 대기) · MA-336 통지(ⓐ SB 최악 좌석 헤즈업 한정 = EN-먼저 본체 판단 · ⓑ «melepas c-bet» 동사 통일 선택 · ⓒ position-play K 비교 UNV · JA 절 제거 선례 · ⓓ GPT 동형 단순화) · MA-337 통지(ⓐ «worst result of a fold is zero» «from that decision forward» 선택 · ⓑ «fills up» → «full house atau lebih baik» · ⓒ ID 드리프트 «tipis»(shallow = 얕은 스택)·«sebagian besar» · ⓓ Z-30과 함께 표 정합 · ⓔ c-bet FAQ 3-bettor 포섭 엇갈림 · ⓕ 배수 경험칙 대기) · MA-338 통지 1(ⓐ ID Rake «cash-game» 탈락 = §2-W 🪶 Rake 행과 같은 묶음 · ⓑ muck 올인 공개 예외 · ⓒ bad-beat EN 원장 Quick test 재판정 = 검수장 몫).
+- 🪶 꼬리 15로케일 같은 글 = 이행 때 미전파(§2-X·Y와 같은 부채 · 자동 착수 금지).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

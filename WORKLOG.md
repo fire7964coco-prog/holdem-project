@@ -1,3 +1,10 @@
+## 2026-10-06 (15) — 검수장 MA-332~338 판정·회신 (MB-191 · 이행 0)
+
+- 수신 = ID ④ 4-2 rankings 부분1·2 · 4-3 odds 부분1·2 · 4-4 strategy 부분1·2 · 4-5 glossary 부분1(검수장 HQ-REPORT 7건).
+- 판정: 인용 문면 전부 EN·ID 파일 실재 확인(HEAD 7473a796 · 판정 문면 이후 diff = starting 링크 1줄뿐) + 반례 계산 대조 → **요청 전부 채택 · 기각 0**. MA-337 ① limping «rare exceptions»는 MB-178(W-25) 이행의 자기회귀로 인정.
+- 등재 = docs/en-first-queue.md §2-Z(① ID 고유 Z-1~Z-8 · ② EN-먼저 Z-21~Z-33 · 통지 권고는 🪶). 이행은 다음 회차(① ID 고유 → ② EN → 9로케일).
+- MA-339(4-5 부분2)는 미판정 — 다음 세션.
+
 ## 2026-10-06 (14) — tr SERP 보강 회차 D: 전략·GTO 4편 + /tr/solver (MB-190)
 
 - 처방 = `docs/keyword-bank/tr-serp/L5-strategy-gto.md` 7-1~7-4 · §8 + 사장님 판단 ③(RTA FAQ) · 결과·남긴 것 = 같은 폴더 00-brief «회차 D 결과».
