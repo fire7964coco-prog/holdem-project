@@ -41,7 +41,7 @@
 | all in ne demek / allin ne demek | 320 / 320 | ✅ 실측(all in ne demek): 영어 숙어·instagram — 포커 0 | 조준 금지 |
 | rölans ne demek | 320 | ✅ 실측: 어원·학술 PDF·문학 인용 — 포커 글 0 | **glossary 소항목으로 흡수**(약한 SERP) |
 | blöf nedir | 320 | 미조회 | glossary 기존 «Blöf» 항목 유지 |
-| **poker terimleri** | **260** | ✅ 실측: 포커 용어 목록 의도 | **glossary 글 주인**(§7-4) |
+| **poker terimleri** | **260** | ✅ 실측: 포커 용어 목록 의도 | **도구 `/tr/glossary` 주인(10-06 사장님 확정 · 글 이전 처방 기각)** |
 | rest nedir | 210 | 미조회 | 참고 |
 | tilt nedir | 140 | 미조회(자동완성 15개 전부 의학·카메라) | FAQ 유지만 |
 | rest poker | 110 | ✅ 실측: 모바일 앱 «Rest Poker» 브랜드 — 정보 의도 0 | 조준 금지 |

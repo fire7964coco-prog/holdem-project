@@ -14,7 +14,7 @@
 | D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) | ⏳ |
 
 - 회차마다: 처방 축어대로 수정 → audit:hard · §13 검산 → 렌즈+아스트라 병렬 → 2차 → 빌드·배포·MB·IndexNow.
-- 판단 3건(10-06 사장님): ① **«pas» = 권고대로 확정** — 단독 pas=fold · check=«çek/bop»(betting-actions «bedavaya pas» 3자리 · 용어집 동기화 · 회차 A) ② «poker terimleri» 주인 = 🔄 사장님 답 대기(본체 권고 = **도구 `/tr/glossary` 유지** — 이미 색인된 5개 중 하나 · 글은 «pokerde X ne demek»·전통어(rest·bop·rölans) 롱테일로 재조준 + 도구 링크. L3 §7의 «글로 이전» 처방은 채택 안 함) ③ **솔버 «합법인가» PAA = 합법성 축이 아님**(사장님: 무료 공식 학습 도구) — 영어 PAA «Are poker solvers legal?»의 실제 뜻은 «게임 중 실시간 사용(RTA)이 허용되나». `/tr/solver` FAQ에 «공부용은 문제없고, 온라인 게임 도중 실시간 사용은 포커 룸 약관이 금지한다»로 답한다(룸 이름·추천 없이 · 회차 D).
+- 판단 3건(10-06 사장님): ① **«pas» = 권고대로 확정** — 단독 pas=fold · check=«çek/bop»(betting-actions «bedavaya pas» 3자리 · 용어집 동기화 · 회차 A) ② **«poker terimleri» 주인 = 도구 `/tr/glossary` 확정**(사장님 «용어는 도구로 · 경쟁하면 글을 내려라») — 회차 B에서 글 `holdem-glossary`의 seoTitle·H1·tags에서 «poker terimleri / sözlük»을 빼고 «pokerde X ne demek»·전통어(rest·bop·rölans) 롱테일로 재조준 + 도구 링크. 그 뒤 GSC에서 두 페이지가 «poker terimleri»로 같이 잡히면 글을 내린다(내릴 때 = `/tr/glossary`로 301 + tr index·hreflang·링크 정리 · 경위 기록). L3 §7의 «글로 이전» 처방은 기각. ③ **솔버 «합법인가» PAA = 합법성 축이 아님**(사장님: 무료 공식 학습 도구) — 영어 PAA «Are poker solvers legal?»의 실제 뜻은 «게임 중 실시간 사용(RTA)이 허용되나». `/tr/solver` FAQ에 «공부용은 문제없고, 온라인 게임 도중 실시간 사용은 포커 룸 약관이 금지한다»로 답한다(룸 이름·추천 없이 · 회차 D).
 - 📊 tr 색인 재측정(10-06 · `docs/gsc-tracking/index-audit-2026-10-06.json`): 26 URL 중 **색인 5**(glossary 도구 · tournaments · blind · hand-rankings · showdown) · 모름 17 · 발견·미색인 4 → 사장님 GSC 수동 색인 요청이 보강과 같이 가야 한다. ⚠ Git Bash에서 `--prefix /tr/`는 `MSYS_NO_PATHCONV=1` 필요(없으면 경로가 변환돼 0건).
 - 회차 5 «다음 = 회차 6(대회 카드)»은 사장님 «조금 나중에» — 이 보강 뒤.
 
