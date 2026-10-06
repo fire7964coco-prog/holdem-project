@@ -1,3 +1,10 @@
+## 2026-10-06 (14) — tr SERP 보강 회차 D: 전략·GTO 4편 + /tr/solver (MB-190)
+
+- 처방 = `docs/keyword-bank/tr-serp/L5-strategy-gto.md` 7-1~7-4 · §8 + 사장님 판단 ③(RTA FAQ) · 결과·남긴 것 = 같은 폴더 00-brief «회차 D 결과».
+- 수정: holdem-strategy(«Poker taktikleri:» seoTitle · «Poker nasıl kazanılır?» H2 · #pozisyon 앵커 · FAQ +2) · holdem-positions(seoTitle 주력어 선두 · 3분법 정의 H2 · neden önemli → strategy#pozisyon · FAQ button·cutoff) · holdem-continuation-bet(«C-bet nedir?» · double barrel H2 · FAQ +2 · 솔버 링크) · donk-bet-strategy(정의 H2 승격) · /tr/solver(GTO açılımı · 기기 FAQ · FAQ +2 · 차트 링크 «GTO» 제거 = 처방 §8 해당 행 기각) · a-high readnext 라벨.
+- 검수: 렌즈 A(교열 ~20) · B(D 0 · 차트 대조 · 🔴 1 = 차트 GTO 표기) · 아스트라(사실 1 · D 1 · 범위 1) → 반영. 2차 교열 렌즈. 원본 결함 = Karar 1 K‑J(KJs UTG 오픈) · TAG 과장.
+- 게이트: audit:hard tr 20편 🔴 0(strategy·c-bet·donk 카드 문단 미인식 → 새 예시는 쇼다운 비교 없음 · 차트 대조로 확인) · check:faq-schema tr 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-06 (13) — tr SERP 보강 회차 C: 확률·대회 4편 (MB-189)
 
 - 처방 = `docs/keyword-bank/tr-serp/L4-odds-tournament.md` 7-1~7-4 · 결과·남긴 것 = 같은 폴더 00-brief «회차 C 결과».

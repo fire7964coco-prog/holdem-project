@@ -3,7 +3,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-continuation-bet",
   title: "Continuation bet (c-bet): Flop'ta ne zaman, ne kadar bahis yapılır, ne zaman check edilir?",
-  seoTitle: "Her flop'a c-bet neden çip kaybettirir? — Continuation bet",
+  seoTitle: "C-bet nedir? Her flop'a c-bet neden çip kaybettirir?",
   desc: "C-bet (continuation bet) nedir, hangi flop'ta bahis yapılır, hangisinde check edilir? Kuru board'da küçük, ıslakta büyük boyut ve pozisyona göre sıklık.",
   tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman), multiway potlarda ise çok daha az.",
   category: "strategy",
@@ -61,7 +61,7 @@ Modern stratejinin gerçekte ne dediği kritik, çünkü yanlış anlaşılması
 
 Bunun altında yatan kavram ==range avantajı (range advantage)==: bu belirli flop'ta kimin genel range'i daha güçlü? Preflop raise yapan olarak elinde daha çok büyük kart ve overpair vardır; bu yüzden **yüksek, kuru board'lar sana aittir** — orta değerli bağlantılı kartlarla dolu board'lar ise call eden oyuncuya. Bu tek fikre hâkim ol, masadaki bütün "ben her zaman c-bet atarım" oyuncularının önüne geçersin.
 
-Üstelik hikâye range avantajıyla bitmiyor — üstüne pozisyonu da ekleyince etki uç noktaya varıyor. A-7-2 rainbow'da solver, call eden oyuncuya range'inin %98,2'sini check ettiriyor, top pair dahil — range equity'si %45,1'e karşı %54,9 ile sadece biraz geride, ama pozisyon dışında olmak bu küçük farkı neredeyse topyekûn bir check'e çeviriyor. Ayrıntılı döküm [top pair var, yine de check](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") yazısında.
+Üstelik hikâye range avantajıyla bitmiyor — üstüne pozisyonu da ekleyince etki uç noktaya varıyor. A-7-2 rainbow'da solver, call eden oyuncuya range'inin %98,2'sini check ettiriyor, top pair dahil — range equity'si %45,1'e karşı %54,9 ile sadece biraz geride, ama pozisyon dışında olmak bu küçük farkı neredeyse topyekûn bir check'e çeviriyor. Ayrıntılı döküm [top pair var, yine de check](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") yazısında. Rakamları okumakla yetinmeyeceksen [bu spotu kendin çöz](/tr/solver): ücretsiz GTO solver'da Study Spots → Dry Ace-High Board yolu aynı ekranı açar; kurulum yok, hesap yok.
 
 ---
 
@@ -158,6 +158,20 @@ Gecikmek, otomatik bir c-bet'in çip kanattığı bir durumu bir street sonra ya
 
 ---
 
+## Turn'de ikinci c-bet (double barrel) ne zaman?
+
+Double barrel, flop c-bet'in call edildikten sonra turn'de ikinci kez bahis açmaktır. İkinci bahsi şu üç durumda değerlendir: turn kartı senin range'ine rakibininkinden daha iyi oturduğunda, elin turn'de equity kazandığında ya da turn kartından etkilenmeyen güçlü bir value elin olduğunda. Karar yine rakibin range'ine, fold equity'ye ve rakibin turn'e nasıl tepki verdiğine bağlıdır; turn hiçbir şeyi değiştirmediyse ve elinde ne value ne draw varsa, ikinci bahis çoğu zaman yalnızca kaybını büyütür — check et.
+
+Turn kartı açıldığında bakacağın üç şey:
+
+1. **Korkutucu kart (scare card) senin lehine.** Turn'de açılan bir as ya da papaz, preflop raise yapanın range'inde call edeninkinden daha sık bulunur; flop c-bet'ini orta bir çiftle call eden rakip bu kartta rahatsız olur. Board'u bağlayan, kenti ya da floşu tamamlayan bir kart ise genelde call edenin işine yarar — orada yavaşla.
+2. **Equity'si artan eller ikinci bahsin en iyi adaylarıdır.** Flop'u ıskalayan elin turn'de floş draw'ına ya da açık uçlu kent draw'ına dönüştüyse ikinci bahis çoğu zaman iki yoldan kazanır: rakip fold edebilir, call ederse de river'da tamamlama şansın vardır. Yine de bazı draw'lar check ederek de iyi oynanır. Hiçbir out'u olmayan boş elle turn'de ikinci kez ateşlemek ise çoğu zaman sadece daha pahalı bir kayıptır.
+3. **Rakibin range'i flop'ta daraldı mı?** Flop'ta raise yerine yalnızca call eden bir rakibin range'i genellikle orta güçteki ellere kayar, çünkü en güçlü ellerinin bir kısmını raise ile oynar. Turn bahsi tam olarak bu orta elleri zor bir karara sokar; yine de flop'ta güçlü elleri yavaş oynayan bir rakibe karşı bu varsayıma fazla güvenme.
+
+Asıl iş flop'ta başlar: c-bet'i yapmadan önce hangi turn kartlarında ikinci kez ateşleyeceğini, hangilerinde bırakacağını kabaca bil. Planı olmayan flop bahsi, aşağıdaki hata tablosundaki "bir atıp bırakma" kaçağına dönüşür.
+
+---
+
 ## Ne zaman c-bet yapılmaz? (Check bir silahtır, beyaz bayrak değil)
 
 "Yapma"yı açıkça yazalım, çünkü para tam burada kurtarılır:
@@ -221,6 +235,14 @@ A. Çünkü flop'tan önce başlattığın agresyonu sürdürüyorsun. Preflop't
 **Q. Her flop'a c-bet yapmalı mısın?**
 
 A. Hayır — en sık yapılan c-bet hatası tam olarak bu. Range'ini destekleyen flop'larda (daha çok top pair ve overpair tuttuğun, K-7-2 gibi yüksek ve kuru board'lar) bahis yap, rakibini destekleyenlerde (onun call ettiği ellere oturan, 7-6-5 gibi düşük ve bağlantılı board'lar) check et. Otomatik pilotta her flop'a c-bet yapmak iyi oyuncular tarafından cezalandırılır.
+
+**Q. Top pair ile her zaman c-bet yapmalı mıyım?**
+
+A. Hayır. Top pair çoğu board'da bahis yapılacak bir eldir ama kararı elin tek başına değil, board ve pozisyon verir. Solver'dan uç bir örnek: "Buton açıp big blind call ettikten sonra A♥7♦2♣ flop'unda big blind range'inin %98,2'sini check eder — top pair, iki çift ve set'ler dahil." Bu, call edenin tarafı (onun bahsi teknik olarak c-bet değil, lead olur). Döküm [A-7-2 yazısında](/tr/blog/a-high-board-cbet). Raise yapan olarak da pozisyon dışında ya da ıslak bir board'da zayıf kicker'lı top pair'i check etmek potu küçük tutar ve check range'ini korur.
+
+**Q. Elinde hiçbir şey yokken c-bet yapılır mı?**
+
+A. Evet — ıskalamış elle bahis c-bet'in olağan bir parçasıdır, çünkü rakibin de çoğu zaman ıskalamıştır. Ama her boş el aynı değil: overcard'ları, backdoor floş ya da kent ihtimali olan eller turn'de gelişebildiği için en iyi adaylardır. Kuru board'da heads-up küçük range bet'e boş ellerini de katarsın; rakibine oturan bağlantılı board'larda ve multiway potlarda ise hiçbir şeyi olmayan elle check et.
 
 **Q. Ne sıklıkla c-bet yapmalısın?**
 

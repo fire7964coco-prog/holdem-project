@@ -3,8 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-strategy",
   title: "Texas Hold'em stratejisi: kazanan her elin arkasındaki 5 karar",
-  seoTitle: "Ezberlediğin ipuçları neden tutmadı? — Poker taktikleri",
-  desc: "Pokerde kazanmak on kopuk ipucu değil; her elde aynı beş karar: pozisyon, el seçimi, raise ya da fold, c-bet ve eli ne zaman bırakacağın.",
+  seoTitle: "Poker taktikleri: ezberlediğin ipuçları neden tutmadı?",
+  desc: "Poker nasıl kazanılır? Texas Hold'em taktikleri on kopuk ipucu değil, her elde aynı beş karar: pozisyon, el seçimi, raise ya da fold, c-bet ve fold zamanı.",
   tldr: "Kazanan her Texas Hold'em kararı tekrar eden beş soruya iner: nerede oturuyorum, bu el oynanmaya değer mi, pota ilk giriyorsam limp yerine raise mi fold mu, flop'ta bahse devam ediyor muyum ve eli ne zaman bırakıyorum. Bu beş soruyu iyi cevaplayan tight-aggressive bir oyuncu flop öncesi ellerin yaklaşık %80'ini fold eder, oynadıklarını agresif oynar ve ezber ipucu listesine gerek kalmadan neredeyse her gündelik masayı yener.",
   category: "strategy",
   date: "2026-10-06",
@@ -43,6 +43,12 @@ Beni sonunda kazanan bir oyuncu yapan şey daha uzun bir liste olmadı. **Texas 
 
 ---
 
+## Poker nasıl kazanılır?
+
+Pokeri, masadakilerden daha az hata yaparak kazanırsın — daha çok el oynayarak ya da daha çok blöf yaparak değil. Kâr her elde aynı beş karardan gelir: koltuğuna göre oynamak, ellerin çoğunu flop öncesi bırakmak, pota limp yerine raise ile girmek, c-bet'i board'a göre ayarlamak ve yenildiğinde fold etmek. Kısa vadede sonucu şans, uzun vadede kararların belirler; tek bir seansın sonucu sana neyi iyi yaptığını söylemez.
+
+---
+
 ## Poker taktikleri bir ipucu listesi değil — beş karardır
 
 Herhangi bir "yeni başlayanlar için poker stratejisi" yazısını aç, karşına numaralı bir liste çıkar: on ipucu, dokuz kural, yedi alışkanlık. *Yanlış* değiller — ama liste öğrenmenin en kötü yolu, çünkü oyun sana numaralı bir menü vermez. Sana bir koltuk, iki kart ve karşılık vermen gereken bir bahis verir.
@@ -65,7 +71,9 @@ Sihir tek bir kararda değil — kararların *zincirleme* çalışmasında. İyi
 
 ---
 
-## Karar 1 — Nerede oturuyorum? (Pozisyon)
+<a id="pozisyon"></a>
+
+## Karar 1 — Nerede oturuyorum? (Pozisyon neden önemli)
 
 ![Dağıtıcı butonunda oturan, önünde kapalı iki hole kart ve çip yığını olan bir oyuncu — flop sonrası her turda en son konuşan koltuk](/images/holdem-strategy-button-seat.webp "Buton, flop sonrası her turda en son konuşur — masadaki en kârlı koltuk")
 
@@ -77,7 +85,7 @@ En son konuşmak, erken pozisyondaki kimsenin yapamayacağı üç şeyi yapmanı
 - **Potu kontrol edersin** — orta karar bir elle check edip potu küçük tutabilir, güçlü bir elle bet edip büyütebilirsin.
 - **Daha çok çalarsın** — geç pozisyondan gelen bir bahis daha inandırıcıdır ve çok daha sık geçer.
 
-Buradan çıkan pratik kural: **geç pozisyonda daha çok, erken pozisyonda daha az el oyna.** K‑J gibi bir el UTG'de (under the gun, flop öncesi ilk konuşan) fold'dur ama butonda rahat bir raise'dir. Pozisyon hakkında tek bir şey hatırlayacaksan bu olsun. Koltuk koltuk ayrıntılar — UTG, orta pozisyon, CO (cutoff), BTN ve [blind'lar](/tr/blog/holdem-blind-meaning) — pozisyon rehberinde.
+Buradan çıkan pratik kural: **geç pozisyonda daha çok, erken pozisyonda daha az el oyna.** ==K♠J♦== gibi offsuit bir K‑J, UTG'de (under the gun, flop öncesi ilk konuşan) fold'dur ama butonda rahat bir raise'dir. Pozisyon hakkında tek bir şey hatırlayacaksan bu olsun. Koltuk koltuk ayrıntılar — UTG, orta pozisyon, CO (cutoff), BTN ve [blind'lar](/tr/blog/holdem-blind-meaning) — pozisyon rehberinde.
 
 ---
 
@@ -110,6 +118,8 @@ Limp etmek, raise yerine sadece big blind'ı call etmektir. Güvenli ve ucuz his
 2. **İnisiyatifi teslim edersin.** Flop öncesi raise eden, flop'ta hikâyesini anlatmaya devam eder (Karar 4). Limp edersen o hikâyeyi başkasına verirsin.
 3. **Sırtına hedef tahtası asarsın.** Güçlü oyuncular bir limper'ın arkasından büyük raise atarak onu izole eder, sonra bütün el boyunca pozisyonda onu alt eder. Açılışta limp etmek "burada zayıf, pasif bir oyuncu var" diye ilan etmektir.
 
+Somut bir örnek: herkes sana kadar fold etti, cutoff'tasın (CO) ve elinde ==A♠10♦== var. Limp değil, 2,5bb raise. Buton ve iki blind fold ederse ortadaki 1,5bb'yi (small blind 0,5 + big blind 1) flop görmeden alırsın. Aynı eli limp edersen bu ihtimal sıfırdır: big blind bedavaya flop görür, sen de flop'a inisiyatifsiz girersin.
+
 Bunu düzelten varsayılan kural çok net: **bir el oynanmaya değecek kadar iyiyse raise etmeye de değecek kadar iyidir; değilse fold et.** Biri senden *önce* raise ettiyse, tekrar raise etmek — yani 3-bet — geniş açılışları cezalandırmanın ve en iyi ellerinle pot büyütmenin yoludur. Bu raise-ya-da-fold kuralının istisnaları gerçek ve hepsi **fiyatla** ilgili. *Over*-limp — zaten limp etmiş birinin *arkasından*, pozisyonda, küçük bir çift gibi spekülatif bir elle call etmek — çok oyunculu bir pota ucuz bir koltuk satın alır. **Big blind'ını savunmak** bunların en büyüğü: 2,5bb'lik bir açılışa karşı (heads-up, small blind fold etmiş, ante yok) ==1bb zaten ortada==; yani 4bb'lik bir pota 1,5bb call ediyorsun ve kâğıt üzerinde sadece ==1,5 ÷ 5,5 = %27== equity'ye ihtiyacın var. Pozisyon dışında ham equity'nin tamamını gerçekleştiremezsin; o yüzden %27'yi bitiş çizgisi değil taban say. Call'un aksiyonu *kapattığı* için de BB range'inin geniş bir dilimi 3-bet ya da fold yerine düz call eder. Derin stack'lerle bir raise'e karşı küçük bir çiftle **set-mining** üçüncüsü (matematiği aşağıda). Bunlar strateji değil, indirimdir — bu tür spotların dışında raise ya da fold. İlk giren kuralının kendisi normal derinlikte cash oyunu varsayılanıdır: raise gelmemiş bir potta small blind'ı tamamlamak ve kısa turnuva stack'lerinde solver'ların kullandığı buton open-limp'leri, kuralın kapsamadığı başlıca meşru limp'lerdir.
 
 ---
@@ -123,6 +133,8 @@ C-bet işe yarar çünkü flop öncesi güç gösteren *sendin*; board bu yüzde
 - **Pozisyon** — kuru, yüksek kartlı bir board'da (mesela K‑7‑2) pozisyondaysan sık c-bet atabilirsin; pozisyon dışında frekans sert düşer, çünkü hem daha az bilgin hem daha az fold equity'n vardır. Kesin aralıklar [c-bet rehberinde](/tr/blog/holdem-continuation-bet).
 - **Board dokusu** — rakibini ıskalayan kuru board'lar bet etmeyi destekler; call range'lerine oturan ıslak, bağlantılı board'lar (iki aynı renkli 9‑8‑7) dikkat ister.
 - **Rakip sayısı** — heads-up rahatça bet edebilirsin; iki ya da daha fazla call'cıya karşı **ellerin yarısından azında** c-bet at, çünkü biri mutlaka *bir şeyle* bağlanmıştır.
+
+Kuru, as yüksek bir board'da range ve pozisyon avantajının ne kadar uç bir sonuca varabildiğini HoldemMaster solver'ı gösteriyor: "Buton açıp big blind call ettikten sonra A♥7♦2♣ flop'unda big blind range'inin %98,2'sini check eder — top pair, iki çift ve set'ler dahil." (Buton 2,5bb açış, efektif stack 97,5bb, rake hariç; 19 Ağustos 2026 çıktısı.) Bu, call edenin tarafı; yani bu flop'ta pozisyondaki raise yapan sensen, bahsi açıp açmama kararı neredeyse her zaman sana kalır. Sayıların dökümü [A-7-2'de c-bet yazısında](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
 Boyutlandırmada, kuru bir board'da geniş bir range'le bet ediyorsan potun **%25–35'i** kadar küçük bir bet işe yarar; daha ıslak bir board'da polarize bir value-blöf range'ine **%65+** gibi daha büyük bir bet uyar. **Raise** yersen ve elinde hiçbir şey yoksa, iş doğrudan Karar 5'e akar. [Check, bet ve raise](/tr/blog/holdem-betting-actions) mekaniği bahis hareketleri rehberinde.
 
@@ -152,7 +164,7 @@ Matematikçi olman gerekmiyor, ama kararlarının yarısının altında iki say�
 
 ## Yeni başlayanlara en pahalıya patlayan 6 kaçak — ve çözümü
 
-Stratejiyi yeni oyunculara gerçekten para kaybettiren şeylere indirgersen, karşına her seferinde aynı kısa liste çıkar. Bu altısını düzelt, işin %90'ını yapmış olursun:
+Poker kazanma taktikleri çoğu zaman yeni bir hamle öğrenmekten değil, para sızdıran birkaç deliği kapatmaktan ibarettir. Yeni oyunculara gerçekten para kaybettiren şeyleri sıraladığında karşına her seferinde aynı kısa liste çıkar. Bu altısını düzelt, işin %90'ını yapmış olursun:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -171,9 +183,9 @@ Altısından beşinin doğrudan beş karara oturduğuna dikkat et. Çerçeve soy
 
 ---
 
-## Tight-aggressive: başlaman gereken tek stil
+## Texas Hold'em'de hangi stil kazanır? Tight-aggressive
 
-Beş karar işin *ne* olduğuysa, **tight-aggressive (TAG)** *nasıl* olduğudur — her kaynağın doğru başlangıç noktası olarak üzerinde anlaştığı tek stil. Bütün işi iki kelime yapar:
+Gündelik masalarda en istikrarlı kazanan stil **tight-aggressive (TAG)**: az el oynarsın, ama oynadığın eli call ederek değil bet ve raise ederek oynarsın. Beş karar işin *ne* olduğuysa, TAG *nasıl* olduğudur — yeni başlayanlara en çok önerilen başlangıç noktası da budur. Bütün işi iki kelime yapar:
 
 - **Tight (sıkı)** — az el oynarsın (Karar 2). Fold edersin, fold edersin, fold edersin ve önde olma ihtimalinin yüksek olduğu spotları beklersin.
 - **Aggressive (agresif)** — ama oynadığında call ederek değil, raise ve bet ederek girersin (Karar 3 ve 4). Kararı rakiplerine verirsin, tersi değil.
@@ -197,9 +209,13 @@ A. Tekrar eden beş karar üzerine kurulu tight-aggressive bir stil oyna: elleri
 
 A. Tight-aggressive (TAG). Az el oyna ama agresif oyna — call yerine raise et, ıskaladığında hızla fold et. Yeni başlayanların en yaygın iki kaçağını (çok el oynamak ve fazla pasif oynamak) doğrudan düzeltir ve kazanan stiller arasında öğrenme eğrisi en yumuşak olanıdır. Daha gevşek, daha ileri yaklaşımları denemeden önce buradan başla.
 
-**Q. Poker nasıl kazanılır?**
+**Q. Poker kazanma taktikleri nelerdir?**
 
-A. Daha çok el oynayarak değil — her elde aynı beş spotta daha iyi kararlar vererek kazanırsın: pozisyon, el seçimi, raise ya da fold, c-bet ve fold. Kazananlar kaybedenlerden daha çok fold eder, daha çok raise eder ve daha az call eder. Zamanla daha seçici başlangıç elleri ve disiplinli fold'lar büyük potları kazanıp küçükleri kaybetmen demektir — oyunun tamamı da bu.
+A. İşe yarayanların hepsi davranış farkıdır, gizli bir numara değil: kazananlar kaybedenlerden daha çok fold eder, daha çok raise eder ve daha az call eder. Pratikte bu, seçici başlangıç elleri, ilk girişte limp yerine raise, board'a göre ayarlanan c-bet'ler ve yenildiğinde disiplinli fold'lar demektir. Zamanla bu dört alışkanlık büyük potları kazanıp küçükleri kaybetmeni sağlar — oyunun tamamı da bu.
+
+**Q. Pokerin mantığı nedir?**
+
+A. Eksik bilgiyle karar vermek. Karar verirken rakibinin kapalı kartlarını bilmezsin; bu yüzden her bahiste ödeyeceğin fiyatı, elin kazanma ihtimaliyle ve rakibinin neyle devam edebileceğiyle tartarsın. Kartların nasıl dağıtıldığı, bahis turları ve showdown gibi temeller [Poker nasıl oynanır?](/tr/blog/texas-holdem-rules-for-beginners) rehberinde adım adım anlatılıyor.
 
 **Q. Pokerde ne zaman fold edilir?**
 
@@ -236,6 +252,10 @@ A. Tek bir sayı yok — pozisyona, board'a ve kaç rakiple karşı karşıya ol
 **Q. Poker şans oyunu mu, beceri oyunu mu?**
 
 A. İkisi de — ama zamanla beceri kazanır. Tek bir elde büyük bir şans payı vardır; bu yüzden bir yeni başlayan bir seansta bir profesyoneli stack'leyebilir. Ama binlerce el boyunca daha iyi karar verenin avantajı baskın çıkar ve varyans dengelenir — aynı oyuncuların sürekli kazanmasının sebebi de tam olarak budur. Poker, şanstan bir desteyle oynanan bir beceri oyunudur.
+
+**Q. Pokerden para kazanılır mı?**
+
+A. Uzun vadede küçük bir azınlık kazanır; oyuncuların çoğu kaybeder. Beceri binlerce elde öne çıkar, ama varyans (kısa vadeli dalgalanma) çok büyüktür ve rake potlardan pay alır — iyi bir oyuncu bile binlerce, hatta on binlerce el süren kayıp serileri yaşar. Bu yüzden ilk kural bankroll (poker kasası) yönetimidir: pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır, masaya oturduğun tek bir stack bu kasanın küçük bir parçası olsun ve kayıp serisinde limit düşür. Pokeri bir gelir planı olarak değil, kararlarını geliştirdiğin bir oyun olarak gör.
 
 **Q. GTO poker nedir?**
 

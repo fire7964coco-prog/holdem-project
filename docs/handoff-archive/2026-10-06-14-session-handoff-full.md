@@ -1,9 +1,9 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-06 (14) (tr SERP 보강 회차 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-06 (13) (tr SERP 보강 회차 C MB-189) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(13)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 🔄 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
 
 | 단계 | 내용 | 상태 |
 |---|---|---|
@@ -11,14 +11,13 @@
 | A | 고볼륨: texas-holdem-rules-for-beginners(L1 7-A) · holdem-hand-rankings(L2 7-4) · holdem-betting-actions(L1 7-C) · holdem-game-order(L1 7-B «el sırası»=족보 의도 → 개명) | ✅ 10-06 (11) · MB-187 · 결과 = 00-brief «회차 A 결과» |
 | B | 규칙 단편·용어: tiebreak · showdown · glossary(«poker terimleri» 제거 = 판단 ②) · all-in(rest) · blind | ✅ 10-06 (12) · MB-188 · 결과·🪶 = 00-brief «회차 B 결과» |
 | C | 확률·대회: holdem-tournament · holdem-probability · holdem-pot-odds · holdem-tournament-vs-cash-game(L4) | ✅ 10-06 (13) · MB-189 · 결과·🪶 = 00-brief «회차 C 결과» |
-| D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) + 판단 ③ RTA FAQ | ✅ 10-06 (14) · MB-190 · 결과·🪶 = 00-brief «회차 D 결과» (§8 «GTO poker chart» 앵커는 차트 사전 규칙으로 기각) |
+| D | 전략·GTO: holdem-strategy · holdem-positions · holdem-continuation-bet · donk-bet-strategy 정의 H2 · `/tr/solver` 문구(L5 §8) + 판단 ③ RTA FAQ | ⏳ **다음 세션** |
 
 - 회차마다: 처방 축어대로 수정 → audit:hard · §13 검산 → 렌즈+아스트라 병렬 → 2차 → 빌드·배포·MB·IndexNow.
 - 판단 3건(10-06 사장님): ① **«pas» = 권고대로 확정** — 단독 pas=fold · check=«çek/bop»(betting-actions «bedavaya pas» 3자리 · 용어집 동기화 · 회차 A) ② **«poker terimleri» 주인 = 도구 `/tr/glossary` 확정**(사장님 «용어는 도구로 · 경쟁하면 글을 내려라») — 회차 B에서 글 `holdem-glossary`의 seoTitle·H1·tags에서(✅ 회차 B 이행) «poker terimleri / sözlük»을 빼고 «pokerde X ne demek»·전통어(rest·bop·rölans) 롱테일로 재조준 + 도구 링크. 그 뒤 GSC에서 두 페이지가 «poker terimleri»로 같이 잡히면 글을 내린다(내릴 때 = `/tr/glossary`로 301 + tr index·hreflang·링크 정리 · 경위 기록). L3 §7의 «글로 이전» 처방은 기각. ③ **솔버 «합법인가» PAA = 합법성 축이 아님**(사장님: 무료 공식 학습 도구) — 영어 PAA «Are poker solvers legal?»의 실제 뜻은 «게임 중 실시간 사용(RTA)이 허용되나». `/tr/solver` FAQ에 «공부용은 문제없고, 온라인 게임 도중 실시간 사용은 포커 룸 약관이 금지한다»로 답한다(룸 이름·추천 없이 · 회차 D).
 - 📊 tr 색인 재측정(10-06 · `docs/gsc-tracking/index-audit-2026-10-06.json`): 26 URL 중 **색인 5**(glossary 도구 · tournaments · blind · hand-rankings · showdown) · 모름 17 · 발견·미색인 4 → 사장님 GSC 수동 색인 요청이 보강과 같이 가야 한다. ⚠ Git Bash에서 `--prefix /tr/`는 `MSYS_NO_PATHCONV=1` 필요(없으면 경로가 변환돼 0건).
 - 회차 5 «다음 = 회차 6(대회 카드)»은 사장님 «조금 나중에» — 이 보강 뒤.
-- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 A 4개 `/tr/blog/{texas-holdem-rules-for-beginners, holdem-betting-actions, holdem-game-order, holdem-hand-rankings}` + 회차 B 5개 `/tr/blog/{holdem-tiebreak-rules, holdem-showdown-rules, holdem-glossary, holdem-all-in-rules, holdem-blind-meaning}` + 회차 C 4개 `/tr/blog/{holdem-tournament, holdem-probability, holdem-pot-odds, holdem-tournament-vs-cash-game}` + 회차 D 5개 `/tr/blog/{holdem-strategy, holdem-positions, holdem-continuation-bet, donk-bet-strategy}` · `/tr/solver`.
-- ▶ 다음: 보강 효과 판독은 색인 뒤(GSC tr 쿼리 · 28일창) — 자동 착수 금지 · 사장님 지시 대기.
+- ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 A 4개 `/tr/blog/{texas-holdem-rules-for-beginners, holdem-betting-actions, holdem-game-order, holdem-hand-rankings}` + 회차 B 5개 `/tr/blog/{holdem-tiebreak-rules, holdem-showdown-rules, holdem-glossary, holdem-all-in-rules, holdem-blind-meaning}` + 회차 C 4개 `/tr/blog/{holdem-tournament, holdem-probability, holdem-pot-odds, holdem-tournament-vs-cash-game}`.
 - 📬 우편함: 검수장 MA-332~337(ID ④ 4-2 rankings · 4-3 odds · 4-4 strategy 결과 · 10-06 수신)은 아직 미판정 — 받은 MA는 다음 세션 안에 회신+등재(CLAUDE.md 세션 시작 4).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 5 ✅ 배포 (10-06 (9) · MB-186 · GTO 4편 + /tr/solver) · 다음 = 사장님 지시 대기
@@ -96,10 +95,21 @@
 - 09-29: /tournaments [나도 참가] 옆 파랑 네온 화살표 배포(`cd5d4c3f` — Vercel이 안 걸려 빈 커밋 `5def3a46`으로 재배포). 가이드 글 참가 바에는 미적용(지시 시). 🪶 사장님 Vercel 2FA 인증 앱 분실 → 복구 코드 확인 필요(대시보드 필요할 때 막힘).
 - C벳 필라 데이터 표 = ✅ 10-03 (6). 솔버 이해 = `docs/solver-factsheet.md`.
 
-## A. GA·GSC 보고서 (09-23 · 09-30) — 처방·보완 전부 종결 · 경위 = WORKLOG 09-23·09-30 · 이전 표 전문 = docs/handoff-archive/2026-10-06-14-session-handoff-full.md
+## 사장님이 정한 순서 (09-23)
 
-- 남은 것 = 관측뿐: ⑥ 규칙 축(10월 중순) · ⑧ 모바일 홈(10/14) · 족보·흡수 효과(10/14 7일창 → 10/21 28일창) → `docs/update-calendar.md` · 기준선 `docs/keyword-bank/ko-longtail-absorb.md`
-- 🔴 당분간 우선순위 = 언어별 번역작업 · 신규 포스팅(사장님 09-24).
+**① GA 개선작업 마무리 → ② 기존 핸드오프(GPT 이월) 작업 이어서.** 한 세션 한 묶음, 끝나면 이 파일에서 그 행을 지운다.
+
+## A. GA·GSC 보고서 개선작업 (`docs/seo-report-2026-09-23.md` §7-1 · 사장님 착수 지시 09-23)
+
+| 회차 | 항목 | 상태 |
+|---|---|---|
+| 1 | ②①④⑤ — 대회 점검 · 족보 필라 헤드텀 정렬 · 롱테일 FAQ 흡수 · 버튼포지션 판정 | ✅ `9f128346` 배포·라이브 3/3·IndexNow 3 (WORKLOG 09-23 (2)) |
+| 2 | ③ AI 유입 /en/solver — 첫 화면(390·1440)에 직답+CTA **이미 있음**(처방 전제 충족). 공백은 계측: 솔버 앱 클릭이 GA에 0 → `solver_open` 이벤트 배포. **판독 10/7경**(`docs/update-calendar.md` 10월) 전엔 랜딩 문안 손대지 않는다 | ✅ 계측 배포 (WORKLOG 09-23 (3)) |
+| 1.5 | KO 대회 가이드 3편(`apl-seoul-2026-guide`·`wpt-seoul-2026-guide`·`gop-incheon-2026-ii-guide`) 발행 · 사실 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` · 이후 갱신 시한은 `docs/update-calendar.md` 10~11월 | ✅ WORKLOG 09-23 (4) |
+| 1.6 | ja `japan-poker-tournaments-guide` 만료 갱신(AJPC 과거형·東京#03 가이드 공개 반영) · 잔여(AJPC 결과 게재 시 편입)는 캘린더 9월 절 | ✅ WORKLOG 09-23 (5) |
+| 3 | ⑦ 번역 반응 순 → id 쿼리 맞춤 2편 ✅(WORKLOG 09-24 (2)). **ja는 보류**(사장님 09-24: 노출이 막 시작돼 수정 의미 작음) · 효과 판독 10/21 캘린더. 🔴 **당분간 우선순위 = 언어별 번역작업 · 신규 포스팅**(사장님 09-24) | ✅ |
+| 09-30 보고서 | 28일 재분석(WORKLOG 09-30 (3) · 문서 https://claude.ai/code/artifact/2eabb73b-0521-4a8e-ae3e-57ab4d44608c). ✅ 권고 3건 이행·배포(WORKLOG 09-30 (4) · MB-128): ja flush-vs-straight 쿼리 맞춤 · ko 「포커 홀덤 차이」 2차 조치(seoTitle 유지) · 「버블구간」 조치 없음 → **판독 10/21**(`docs/update-calendar.md`). ✅ 보완 1(WORKLOG 09-30 (5)): `ga-device.mjs` 보정 기본화 · `gsc-lang.mjs` zh-hant 추가 · **«격차는 신규에서만» 폐기**(재방문 격차 +23.4p · 메모리·ux-brief 정정). ✅ 보완 2(WORKLOG 09-30 (6)): 질문↔답 어형 스윕 = **패턴 아님**(EN 1건 → `en-first-queue` §2-N · 글 수정 0). ✅ 보완 3(WORKLOG 09-30 (7)): 모바일만 튕기는 4편 = **결함 아님**(소표본 꼬리 · 직전 8주 59~72% · 화면 정상 · 수정 0). ✅ 보완 4·5(WORKLOG 09-30 (8)): 「3벳」 = 조치 없음(09-06~10 닷새 몰린 노출 · 라이브는 Reddit 번역 스레드 독식) · `/en/blog/holdem-equity` = 09-24~27 나흘짜리 일시 노출, 09-28 소멸 · 원인 확정 불가. **09-30 보고서 보완 전부 종결.** | ✅ |
+| 관측 | ⑥ 규칙 축(10월 중순) · ⑧ 모바일 홈(10/14) · 족보·흡수 효과(10/14 7일창 → 10/21 28일창) → `docs/update-calendar.md` · 기준선 `docs/keyword-bank/ko-longtail-absorb.md` | — |
 
 ## B. 이월 대기열 (GPT 작업분 · A 끝난 뒤 · 한 번에 하나만)
 

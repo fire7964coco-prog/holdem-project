@@ -145,7 +145,7 @@ Bu pratik kural tek bir şartla genelleşir: **range avantajı olan — ama beli
 - **Dengeli bir rakibe karşı buradaki check zayıflık değil** — check range'inin içinde set'ler (77, 22) ve iki çiftler (A7, A2) var; fazla bastırırsan check-raise'e çarparsın. Düşük limitlerde çoğu zaman tersi geçerli: birçok oyuncu güçlü ellerini düpedüz önden bahisle oynar, yani check'leri gerçekten zayıftır. Value bet yapmaya devam et; check-raise'i yavaşlama sebebi değil, ara sıra ödenen bir bedel olarak gör.
 
 :::readnext[Okumaya devam et]
-/tr/blog/holdem-continuation-bet | Her flop'a c-bet neden çip kaybettirir? | /images/holdem-continuation-bet-hero.webp
+/tr/blog/holdem-continuation-bet | C-bet nedir? Her flop'a c-bet neden çip kaybettirir? | /images/holdem-continuation-bet-hero.webp
 /tr/blog/holdem-positions | Poker pozisyonları: UTG'den butona | /images/holdem-positions-hero.webp
 :::
 

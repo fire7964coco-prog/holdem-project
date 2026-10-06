@@ -7,6 +7,8 @@ import type { Post } from "../posts";
  *   · holdem-drawing-odds → /tr/blog/holdem-probability (out 세기 절이 있다)
  *   · readnext k-high 카드 → monotone-board-strategy 카드로 교체(본문이 «다음 스팟»으로 가리키는 글).
  * 솔버 앱 라벨(Study Spots·Check·Bet·EQR 등)은 tr UI 미라이브라 영어 유지.
+ * 2026-10-06 tr SERP 보강(L5 §7-4): 정의 H2 «Pokerde donk bet nedir?» 신설(PAA «Donk nedir?» 축어 첫 문장)
+ *   · 같은 문구 FAQ는 H2와 중복이라 제거(FAQ는 «Donk bet neden kötü diye bilinir?»부터).
  */
 export const POST: Post = {
   slug: "donk-bet-strategy",
@@ -54,6 +56,10 @@ Sonuç | BB %23,7 lead yapar — bu serideki ilk gerçek lead
 
 > **Kısa cevap**
 > 9♥8♥7♣'da big blind **%76,2** check eder, iki boyuta yayılmış **%23,7** lead yapar (ikisi de yuvarlanmış). Ama **range avantajı el değiştirmedi** — equity hâlâ %48,5'e %51,5, butonun lehine. Değişen şey farkın büyüklüğü ve güçlü ellerin nerede oturduğu: big blind'ın gücü tamamlanmış kentlerde, butonunki ise bu board'un tehdit ettiği overpair'lerde.
+
+## Pokerde donk bet nedir?
+
+Donk (donk bet), pozisyon dışındaki oyuncunun bir önceki street'in agresörüne check etmek yerine önden bahis yapmasıdır. En tipik hâli flop'ta görülür: preflop'ta sadece call eden oyuncu, raise yapanı beklemeden bahsi koyar. Buna **lead** de denir. Uzun süre acemi hatası sayıldı (sebebi aşağıdaki SSS'de). Oysa solver bu yazıdaki 9♥8♥7♣ flop'unda big blind'a range'inin %23,7'siyle lead yaptırıyor.
 
 ## Bu rakamlar hangi koşullarda çıktı?
 
@@ -221,10 +227,6 @@ Bu spotu çalışmanın en iyi yolu onu **kuru bir board'la yan yana** açmak. �
 Sonra kenar çubuğundaki **GTO Trainer**'ı aç ve az önce okuduğun lead'i sana dağıtmasına izin ver — gerçek range ağırlıklarından rastgele bir el verir ve yanlış seçimin kaç big blind'a mal olduğunu söyler. Ücretsiz, kurulum yok, hesap yok.
 
 ## Sıkça sorulan sorular
-
-**Q. Pokerde donk bet nedir?**
-
-A. Flop'ta preflop raise yapmamış oyuncunun yaptığı bahis — agresöre check etmek yerine onun önüne bahis koymak. Adı "donkey"den, yani eşekten geliyor; bu hamle uzun süre böyle görüldü. Solver'lar belirli board dokularında doğru olduğunu gösteriyor ve bu flop'ta big blind'ın stratejisinin %23,7'si.
 
 **Q. Donk bet neden kötü diye bilinir?**
 

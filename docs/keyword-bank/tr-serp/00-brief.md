@@ -64,3 +64,12 @@
 - 검수에서 고친 원본 결함(아스트라): vs-cash «전 칩 잃으면 equity 0»(ITM 뒤 순위 상금 유지) · «paraya girene kadar oynarsın»(ITM 뒤에도 계속) · 단일 카드 분모 47/46. 편집 결함: 팟 이중 의미 · EV 스플릿 누락 · 오즈≠실제 확률 · 무조건 call 문장 · bubble PKO bounty · 새틀라이트 정의 · 중복 FAQ 4.
 - 기각: 영어 용어 뒤 아포스트로피 일괄 제거(blind'lar 등 = 하우스 관습).
 - 🪶 남긴 것(자동 착수 금지): pot-odds 연습 답 «접기» 미적용(컴포넌트 없음) · probability FAQ «Flop'ta royal floş … Beş kartından ikisini» 문구 명확화 · ICM 표 반올림 합 100,1.
+
+## 회차 D 결과 (2026-10-06 (14))
+
+- 대상 = holdem-strategy(L5 7-1) · holdem-positions(7-2) · holdem-continuation-bet(7-3) · donk-bet-strategy(7-4) · `/tr/solver`(§8) + 판단 ③ RTA FAQ. Opus 서브 4레인 → 렌즈 A(터키어 교열·diff)·B(딜러·§13·SEO) + 아스트라 1차 → 반영 → 2차 교열 렌즈(5건: c-bet FAQ 중복 문장 · 차트 설명 주술 불일치 · 괄호 위치 · positions 위임 문장 · «her modern tarayıcı yeterli») → 반영.
+- 새 seoTitle: strategy «Poker taktikleri: ezberlediğin ipuçları neden tutmadı?»(54) · positions «Poker pozisyonları: UTG, CO, button — her elde adın değişir»(59) · c-bet «C-bet nedir? Her flop'a c-bet neden çip kaybettirir?»(52) · donk 유지.
+- strategy: «Poker nasıl kazanılır?» 첫 H2 · Karar 1 H2 «(Pozisyon neden önemli)» + 앵커 <a id="pozisyon"> · Texas Hold'em stil H2 · FAQ +2(para kazanılır mı · mantığı → 필라 위임) · 옛 FAQ «Poker nasıl kazanılır?» → «Poker kazanma taktikleri nelerdir?»(H2와 중복 회피). positions: 3분법 정의 H2(9-max 표 «Bölge»와 일치) · «neden önemli» H2 → strategy#pozisyon · FAQ button·cutoff(→ /tr/hand-chart) · küçük/büyük kör 병기. c-bet: double barrel H2 · FAQ top pair·boş el · /tr/solver «bu spotu kendin çöz». donk: 정의 H2 승격 · 같은 FAQ 삭제. /tr/solver: «GTO'nun açılımı» · 기기 FAQ «Android, iPhone, Mac ve Linux'ta çalışır mı?» · FAQ +2(ne işe yarar · 공부용 vs RTA = 룸 약관) → 21문항.
+- 🔴 처방 §8 정정: «GTO poker chart» 어휘로 /tr/hand-chart 앵커 → **기각**(components/hand-chart/dict.ts 규칙 «No locale may … call it «GTO»») — 앵커 «Preflop açılış range tablosu» + «공개 자료 표준 오픈 레인지로 엮은 표».
+- 검수에서 고친 원본 결함: strategy Karar 1 «K‑J UTG fold»(KJs는 차트상 UTG 오픈 → offsuit K♠J♦) · TAG «her kaynağın anlaştığı tek stil» 과장. 편집 결함: 더블 배럴 규칙 단정(→ «değerlendir» + range·fold equity) · «상대 카드 절대 못 봄»(쇼다운) · 다운스윙 «yüzlerce el»(→ binlerce, on binlerce) · rake «her pot» · 6-max UTG 분류 문장 · «Turn'e gelmeden önce» 시점 모순 · 버튼 FAQ 헤즈업 예외 · RTA «neredeyse tüm … açıkça»(근거 없음 → 승인 문구 수준) · 직역투 다수.
+- 🪶 남긴 것(자동 착수 금지): 같은 A‑7‑2 %98,2 인용이 사이트 3곳(a-high tldr · strategy · c-bet FAQ) · c-bet readTime 15 dk(약 400단어 증가) · donk 도입부↔정의 H2 «lead» 반복 · tr 전략 7편 `category: "strategy"`가 Category 타입 밖(tsc만 경고 · 빌드 통과 · 기존) · 솔버 기기 FAQ «Android» 동작은 factsheet 명시 없음(«모든 최신 브라우저» 범위 안).

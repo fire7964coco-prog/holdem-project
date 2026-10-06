@@ -3,8 +3,8 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-positions",
   title: "Poker pozisyonları: UTG'den butona her koltuğun adı ve tablosu",
-  seoTitle: "Her elde adın değişir — Poker pozisyonları: UTG, CO, button",
-  desc: "İsimler sandalyeyle değil, butonla döner. UTG, hijack, cutoff, buton: tüm poker pozisyonları, koltuk numaraları, 6-max haritası ve ilk kimin konuştuğu.",
+  seoTitle: "Poker pozisyonları: UTG, CO, button — her elde adın değişir",
+  desc: "İsimler sandalyeyle değil, butonla döner. Erken, orta ve geç pozisyon: tüm poker pozisyonları, koltuk numaraları, 6-max haritası ve ilk kimin konuştuğu.",
   tldr: "Poker pozisyonları, dağıtıcı butonuna göre belirlenen koltuk adlarıdır: UTG, lojack, hijack, cutoff, buton ve blind'lar; normalde her elde saat yönünde bir koltuk kayarlar. Preflop'ta ilk UTG, en son big blind konuşur; flop'tan sonra ilk small blind, en son buton konuşur (heads-up'ta buton aynı zamanda small blind'dır: preflop ilk, postflop son). Fiziksel koltuk numaraları hiç değişmez, pozisyonlar değişir.",
   category: "strategy",
   date: "2026-10-06",
@@ -36,6 +36,18 @@ Aynı el. Bambaşka bir sonuç. Değişen tek şey koltuğumdu — ve o gece far
 
 > **Kısa cevap**
 > Poker pozisyonları, ==dağıtıcı butonuna göre belirlenen koltuk adlarıdır== — UTG, lojack, hijack, cutoff, buton, small blind, big blind — ve buton ilerledikçe ==normalde her elde saat yönünde bir koltuk kayarlar==. Preflop'ta ilk UTG, en son big blind konuşur. Flop'tan sonra ilk small blind, en son buton konuşur. (Heads-up'ta buton aynı zamanda small blind'dır: preflop ilk, postflop son konuşur.)
+
+---
+
+## Pokerde pozisyon nedir? Erken, orta ve geç pozisyon
+
+Pokerde pozisyon, dağıtıcı butonuna göre nerede oturduğun ve bu yüzden kaçıncı konuştuğundur. Preflop'ta ilk konuşan koltuklar ==erken pozisyon== (UTG, UTG+1, UTG+2), ortadakiler ==orta pozisyon== (lojack, hijack), en son konuşanlar ==geç pozisyondur== (cutoff, buton); blind'lar ayrı bir grup sayılır. Buton flop, turn ve river'da en son konuşur; preflop'ta son söz ise big blind'ındır. 6-max'te ilk konuşan koltuk (9-max'in lojack'i) UTG adını alır ve erken pozisyon sayılır.
+
+---
+
+## Pokerde pozisyon neden önemli?
+
+Sonra konuşan oyuncu, karar vermeden önce rakiplerinin check, bet ya da raise'ini görür; önce konuşan ise bu bilgi olmadan karar verir. Bu yüzden aynı el geç pozisyonda daha kolay oynanır ve erken koltuklardan daha az el açılır — girişteki iki J♥ J♠ eli arasındaki fark da buydu. Pozisyon, [poker stratejisi rehberindeki](/tr/blog/holdem-strategy#pozisyon) her elde verdiğin beş kararın ilkidir.
 
 ---
 
@@ -143,8 +155,8 @@ Bu garantili son söz hakkı, butonun pokerin en kârlı koltuğu sayılmasını
 
 Butonun solundaki iki koltuk aynı anda hem pozisyon *hem* zorunlu bahistir:
 
-- **Small blind (SB):** butonun ilk solundaki koltuk. Kartlar dağıtılmadan önce zorunlu bir bahis koyar — genelde big blind'ın yarısı.
-- **Big blind (BB):** saat yönünde bir sonraki koltuk. Ele girmenin fiyatını belirleyen tam zorunlu bahsi koyar.
+- **Small blind (SB, küçük kör):** butonun ilk solundaki koltuk. Kartlar dağıtılmadan önce zorunlu bir bahis koyar — genelde big blind'ın yarısı.
+- **Big blind (BB, büyük kör):** saat yönünde bir sonraki koltuk. Ele girmenin fiyatını belirleyen tam zorunlu bahsi koyar.
 
 Pozisyon olarak, onları tanımlayan şey konuşma sırasındaki ters dönüştür: blind'lar ==preflop'ta son== konuşur (zaten para koymuşlardır, bu yüzden önce herkes onların bahsine cevap vermek zorundadır) ama ==postflop'ta ilk==, tüm masadan önce konuşur — flop'ta, turn'de ve river'da aynı şekilde.
 
@@ -210,13 +222,21 @@ A. Hijack (HJ), dağıtıcı butonunun iki sağındaki, cutoff'tan hemen önceki
 
 A. Lojack (LJ), butonun üç sağındaki koltuktur — 9-max'te iki orta pozisyon koltuğunun öncekisidir. 6-max'te ilk konuşan koltuktur ve orada genelde sadece UTG denir. Ad çoğunlukla "hijack"e takılan şakacı bir kelime oyunu (bir koltuk aşağısı) olarak anlatılır, sık sık LoJack hırsızlık önleme markasıyla da ilişkilendirilir — belgelenmiş etimoloji değil, masa efsanesi.
 
+**Q. Pokerde button ne demek?**
+
+A. Button (buton, BTN), önünde "D" yazan diskin durduğu koltuktur: kartları krupiye dağıtsa bile disk, o elde dağıtıcı sayılan oyuncuyu gösterir ve normalde her elden sonra saat yönünde bir koltuk ilerler. Postflop'ta en son o konuşur; üç ve daha fazla oyunculu masada preflop'ta ondan sonra yalnızca iki blind konuşur. Bu koltuktan hangi ellerin açıldığını [buton açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
+
+**Q. Cutoff pozisyonu nedir?**
+
+A. Cutoff (CO), saat yönünde butondan hemen önce gelen koltuktur ve geç pozisyonun ilk koltuğu sayılır. Preflop'ta arkasında yalnızca buton ve iki blind kalır; buton fold ettiyse flop'tan sonra en son cutoff konuşur. Cutoff'tan hangi ellerin açıldığını [cutoff açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
+
 **Q. Small blind mı önce konuşur, big blind mı?**
 
 A. Small blind her sokakta big blind'dan önce konuşur. Preflop'ta iki blind da son konuşur (en son big blind — kimse raise etmediyse check ya da raise opsiyonuyla); postflop'ta small blind masada ilk konuşan koltuktur. Tek istisna heads-up'tır: orada small blind'ı buton koyar ve postflop'ta ilk big blind konuşur.
 
 **Q. 6-max pokerde kaç pozisyon var?**
 
-A. Altı: UTG (lojack da denir), hijack, cutoff, buton, small blind ve big blind. 9-max masaya göre üç erken koltuk (UTG, UTG+1 ve UTG+2) basitçe düşer ve UTG adını lojack devralır — adlar önce erken pozisyondan silinir, bu yüzden iki orta koltuk da kalır. Kendi adını koruyan her koltuğun — hijack, cutoff, buton ve blind'lar — arkasında full ring'deki adaşıyla aynı sayıda oyuncu vardır; ama erken koltuklar gidince çok daha sık blind'larda ve geç pozisyonda oturursun, bu yüzden range'ler ortalamada daha geniş olur.
+A. Altı: UTG (lojack da denir), hijack, cutoff, buton, small blind ve big blind. 9-max masaya göre üç erken koltuk (UTG, UTG+1 ve UTG+2) basitçe düşer ve UTG adını lojack devralır — adlar önce erken pozisyondan silinir, bu yüzden 9-max'in iki orta koltuğu da masada kalır. Kendi adını koruyan her koltuğun — hijack, cutoff, buton ve blind'lar — arkasında full ring'deki adaşıyla aynı sayıda oyuncu vardır; ama erken koltuklar gidince çok daha sık blind'larda ve geç pozisyonda oturursun, bu yüzden range'ler ortalamada daha geniş olur.
 
 **Q. Poker pozisyonları her elde değişir mi?**
 

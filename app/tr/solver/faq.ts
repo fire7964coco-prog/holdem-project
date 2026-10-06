@@ -3,6 +3,7 @@
  * **같은 배열**을 쓴다. 마스터 = `app/en/solver/faq.ts`(18문항) — 2026-10-06 신설.
  *
  * 🔴 EN 18문항 + **언어 문항 1개**(«Solver ekranı Türkçe mi?») = 19문항.
+ *   + 2026-10-06 tr SERP 보강(L5 §8) 2문항(«Poker solver ne işe yarar?» · 공부용 vs RTA) = 21문항.
  *   솔버 앱의 터키어 UI는 아직 라이브가 아니다(솔버 쪽 배포 대기) — 그래서 «지금은 İngilizce,
  *   Türkçe arayüz hazırlanıyor»로만 답하고 날짜는 약속하지 않는다. 다른 언어판은 열거하지 않는다
  *   (playbook 머리 «지원 언어 열거 금지»).
@@ -19,6 +20,12 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   {
     q: "Pokerde GTO ne demek?",
     a: "GTO, Game Theory Optimal'ın kısaltmasıdır: rakibin nasıl ayarlama yaparsa yapsın uzun vadede sömürülemeyen strateji. Belirleyici özelliği karıştırmadır — aynı el zamanın %70'inde bet, %30'unda check edebilir, böylece kalıbın okunamaz. Solver çıktısının tek bir talimat değil de bir sıklık tablosu olmasının sebebi budur.",
+  },
+  {
+    // tr SERP 보강(L5 §8): PAA «What are solvers in poker?» · betsperts «What you can learn …».
+    // 근거 = solver-factsheet §2(HU 전용 포스트플랍 · 결과 뷰어) · §3(레인지·보드·팟·스택·벳 사이즈 입력) · §1(액션별 EV).
+    q: "Poker solver ne işe yarar?",
+    a: "Verdiğin bir spot için — iki range, board, pot, stack ve bahis boyutları — her elin hangi aksiyonu ne sıklıkla seçmesi gerektiğini ve her aksiyonun beklenen değerini (EV) hesaplar. Ondan hangi board'da c-bet'in sıklaştığını, hangi ellerin check ettiğini ve bahis boyutunun neden değiştiğini öğrenirsin. Sınırı da var: cevap yalnızca girdiğin range'ler ve karar ağacı kadar doğrudur; bu solver ayrıca yalnızca heads-up postflop spotları çözer.",
   },
   {
     q: "Bu GTO solver gerçekten ücretsiz mi?",
@@ -49,8 +56,16 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
     a: "Farklı sorulara cevap verirler; dürüst cevap ne yapmak istediğine bağlı. Bir çözüm kütüphanesine göz atmak daha hızlıdır ve preflop'u kapsar, bu da standart spotları çalışmaya uygundur. Kurulu bir masaüstü solver, bir tarayıcının kaldırabileceğinden büyük ağaçları işler. Hiçbir şey ödemeden ya da kurmadan kendi postflop spotunu hemen çözmek istiyorsan bu solver tam bunun için — cevabını ikisinden biriyle de karşılaştırabilirsin.",
   },
   {
-    q: "Mac, Linux ya da mobilde çalışır mı?",
-    a: "Evet — her modern tarayıcı yeterli; yalnızca Windows'ta çalışan masaüstü solver'lara karşı pratik avantaj da bu. Bir uyarı: iOS ve Safari'de tarayıcı sınırları tek iş parçacıklı (single-thread) çözüme zorlar, bu yüzden özel çözümler orada yavaştır. Telefonda önceden çözülmüş Study Spots'u ve GTO Trainer'ı kullan, kendi çözümlerini masaüstü tarayıcıda çalıştır.",
+    // tr SERP 보강(L5 §8): 자동완성 «poker solver android»·«poker solver iphone» → 기기명 명시.
+    // 근거 = solver-factsheet §1(계산은 브라우저 · Safari 등 단일 스레드 폴백) · §2(PWA). 스토어 앱은 없다(TWA 보류).
+    q: "Android, iPhone, Mac ve Linux'ta çalışır mı?",
+    a: "Evet — uygulama mağazasından bir şey indirmeden Android'de ve iPhone'da telefonunun tarayıcısında açılır. Mac ve Linux'ta da her modern tarayıcı yeterli; yalnızca Windows'ta çalışan masaüstü solver'lara karşı pratik avantaj da bu. Bir uyarı: iOS ve Safari'de tarayıcı sınırları tek iş parçacıklı (single-thread) çözüme zorlar, bu yüzden özel çözümler orada yavaştır. Telefonda önceden çözülmüş Study Spots'u ve GTO Trainer'ı kullan, kendi çözümlerini masaüstü tarayıcıda çalıştır.",
+  },
+  {
+    // tr SERP 보강(L5 §8) · 사장님 판단 ③: 합법성 축이 아니라 «공부용 vs 게임 중 실시간 사용(RTA)» 구분만.
+    // 룸 이름·사이트 추천·법률·처벌 언급 금지.
+    q: "Poker solver kullanmak kurallara aykırı mı? Oyun sırasında kullanılabilir mi?",
+    a: "Çalışmak için kullanmakta sorun yok: oynadığın elleri sonradan incelemek, bir spotu çözmek ya da trainer'la alıştırma yapmak solver'ın asıl işi. Online bir el sürerken solver'a bakmak ise başka bir şey — online poker odalarının kullanım koşulları gerçek zamanlı yardımı (RTA) yasaklar. Bu solver masadan uzakta, oyun bittikten sonra çalışmak için yapıldı.",
   },
   {
     // ★tr 고유 문항 — 솔버 앱 터키어 UI 라이브 전. 날짜 약속·다른 언어판 열거 금지.

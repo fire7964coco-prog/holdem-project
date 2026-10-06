@@ -262,8 +262,9 @@ export default function SolverClientTr() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">GTO nedir? Pokerde GTO ne demek?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          GTO, <strong className="text-foreground">Game Theory Optimal</strong>&apos;ın kısaltmasıdır:
-          pokerde rakibin nasıl ayarlama yaparsa yapsın uzun vadede sömürülemeyen strateji. «GTO poker»
+          GTO&apos;nun açılımı <strong className="text-foreground">Game Theory Optimal</strong>&apos;dır
+          (oyun teorisi açısından optimal): pokerde rakibin nasıl ayarlama yaparsa yapsın uzun vadede
+          sömürülemeyen strateji. «GTO poker»
           dendiğinde kastedilen bu dengedir ve bir poker solver&apos;ın hesapladığı şey de odur. Bir tavan
           değil, bir tabandır — kötü bir rakibi cezalandırmaya çalışmaz, iyi bir rakibin seni
           cezalandıramamasını sağlar.
@@ -529,10 +530,11 @@ export default function SolverClientTr() {
         <ul className="mt-4 list-disc space-y-2 pl-6">
           <li>
             <Link href="/tr/hand-chart" className="font-semibold text-primary hover:underline">
-              Başlangıç eli tablosu
+              Preflop açılış range tablosu
             </Link>{" "}
             — bu solver yalnızca postflop. Her pozisyondan hangi elleri <strong>açacağın</strong>{" "}
-            tabloda. Yukarıdaki yapıştırmaya hazır range&apos;ler başka bir şey — Single Raised Pot
+            tabloda. Tablodaki range&apos;ler solver çıktısı değil; kamuya açık
+            kaynaklardaki standart açılış range&apos;lerinden derlenmiş bir tahmindir. Yukarıdaki yapıştırmaya hazır range&apos;ler başka bir şey — Single Raised Pot
             çalışma spotlarının kullandığı BTN vs BB range&apos;leri
           </li>
           <li>
