@@ -63,6 +63,7 @@
 **② 문체·조판**
 - **tu**(명령형 훅 «Regarde… / Compare… / Essaie…»). vous 금지(인용·법규 축어 제외).
 - 숫자: 천 단위 **공백**(`1 326` · `$2 300`) · 소수점 **쉼표**(`2,5` · `0,84 %`) · **% 앞 공백**(`35 %`) — 코퍼스는 일반 공백(U+0020)이다. 비율 `2,7:1`. §13 값은 불변, 구분자만 바꾼다.
+- 배당·빈도(H-4 · 10-07 헤드): 불리 배당 = «**X contre 1**» · 빈도 = «**1 sur N**»(강조 «1 fois sur N») · EN이 `X:1` 비율로 쓴 자리(팟 오즈 비율)는 `2,7:1` 그대로.
 - 화폐 = **`$` 앞붙임**(`$1/$2` · `$14`) — €로 바꾸지 않는다(§13 보존 · 코퍼스).
 - 인용 = `« … »`(안쪽 공백) · 아포스트로피 = 곧은 `'`(코퍼스 866 · 굽은 0) · `Texas Hold'em`(굽은 0).
 - 카드 = 영어 랭크 문자 + 무늬 기호(`A♠ K♥ Q♦ J♣ 10♠`) — R/D/V 금지. 풀어 쓸 때 소문자 «paire d'as», «roi», «dame», «valet».
@@ -83,6 +84,9 @@
 | One Pair | paire | — |
 | High Card | carte haute | 첫 등장 «carte haute (hauteur)» — 계산기 «Carte haute» |
 | wheel | **la roue (wheel)** = A-2-3-4-5, la plus petite quinte | 도구 용어집 «Roue (wheel)» · 계산기 «roue» · 자동완성 «suite poker as 2 3 4 5» 축어를 H2·FAQ에 |
+| 높이 | «**quinte à l'as**»(브로드웨이 관용) · 그 밖 «**quinte hauteur X**» | H-11 · 10-07 헤드(«quinte à la dame» 1 → hauteur) |
+
+- «suite» 적용 범위(H-3 · 10-07 헤드): **모든 글 본문 = quinte.** 카피·H2·FAQ와 flush-vs-straight로 가는 앵커(«suite ou couleur»)는 «suite» 허용. 첫 등장 «quinte (suite)» 병기는 족보 글(hand-rankings · flush-vs-straight)에서 필수, 다른 글은 선택.
 
 **④ 스트리트·액션·자리**
 
@@ -108,6 +112,13 @@
 | equity / range | équité · la range (여성) | 계산기 §3-B «Équité» · `local-voice` §2 |
 | solver / GTO | solver · résoudre un spot · GTO | `local-voice` §2 · 🅶만 |
 | straddle / bad beat | straddle (첫 등장 «straddle (overblind)») · bad beat (첫 등장 «bad beat (sale coup)») | L-F §0·§7 |
+| street | **street**(la street) | H-1 · 10-07 헤드: 🅲🅳 + 계산기 «sur chaque street» 다수. 🅰 규칙 글은 규정 문체라 «tour de mises»를 쓰되 첫 등장 «tour de mises (une street)» 병기. «rue» 금지 |
+| full raise | **relance complète** | H-2 · 10-07 헤드: all-in-rules «relance pleine» 22 → 교체. betting-actions의 «on dit aussi « relance pleine »» 이칭 소개 1회만 남긴다 |
+| suited / offsuit | **assortie(s) / dépareillée(s)** · suited connectors = «connecteurs assortis» | H-5 · 🅲🅵 일치 · 코퍼스 45 : 0 |
+| limper (사람) | **limpeur(s)** | H-17 · 10-07 헤드: 카피·본문 통일(limping desc·H2 · short-stack 2). 태그의 검색형 «limper poker»는 그대로 |
+| chip EV | **la chip EV**(여성 · EV = espérance de valeur) | H-27 · 코퍼스 전부 여성 |
+| position précoce | position précoce(early position) | H-27 · 🅰🅳🅴 일치 |
+| tapis 관용 | «tapis vert»(펠트 · 이미지 alt) 허용 · «tapis effectif» = all-in-rules가 정의한 예외 | H-11 · 그 밖 스택 뜻은 «stack»(game-order 1 교체) |
 
 **⑤ 도구 링크 앵커 문구 고정**(도구가 헤드의 주인임을 앵커로 알린다 · 3-B와 짝)
 
@@ -118,13 +129,17 @@
 | `/fr/glossary` | «lexique du poker» |
 | `/fr/solver` | «solver poker gratuit» |
 
+- 🔴 역방향도 금지(H-25 · 10-07 헤드): **글로 가는 링크·카드 제목에 위 도구 앵커를 쓰지 않는다.** starting-hands-chart 글 = «guide des mains de départ (par position)» · 카드 제목 «Mains de départ : quelles mains jouer selon ta position» / holdem-glossary 글 = «jargon du poker».
+
+**⑥ 카드 라벨 사전**(H-20 · 10-07 헤드) — 라벨은 EN 카드 라벨을 따라 자리마다 다를 수 있다(EN도 그렇다). 단 **같은 EN 라벨 = 같은 fr 라벨**: Pillar → Pilier · Beginner Guide → Guide débutant · Start Here → Pour commencer · Split Pot → Pot partagé · Glossary → Jargon · Hand Rankings → Classement des mains · Tiebreaker → Départage · Game Flow → Déroulement · Order of Play → Ordre de jeu · Tournament(s) → Tournoi · Deep Dive → Analyse · Odds & Math → Cotes & maths.
+
 ### 3-B. 카니발 소유표
 
 **원칙(이번에 확정)**: ① **목록·도구형 헤드**(lexique/termes · tableau/range · calcul/calculateur · solver/GTO)는 도구가 주인(`tools-over-posts` · tr «poker terimleri» 선례). ② **단일 용어·개념 헤드**(nuts · check-raise · SPR · ICM · fish · rake …)는 그 개념을 다루는 **글**이 주인 — 도구의 사전 항목 한 줄로는 그 SERP를 이기지 못하고(유기 정보형 우세), 도구는 해당 항목에서 글로 앵커한다. ③ 주인 아닌 쪽은 seoTitle·H1·tags에 그 헤드를 쓰지 않고 앵커로 위임한다.
 
 | # | 검색어(볼륨) | 주인 | 주인 아닌 쪽의 처리 | 판정 근거 |
 |---|---|---|---|---|
-| ① | lexique / termes / vocabulaire poker | **`/fr/glossary`**(현행 유지) | holdem-glossary = «jargon / langage / expressions du poker + 영어→프랑스어 대응» 각도 · 첫 화면 도구 링크 · seoTitle·H1·tags에 셋 금지 | L-F §8 ① · 원칙① · tr 10-06 선례 |
+| ① | lexique / termes / vocabulaire / **glossaire** poker(H-19 · 10-07 헤드 추가) | **`/fr/glossary`**(현행 유지) | holdem-glossary = «jargon / langage / expressions du poker + 영어→프랑스어 대응» 각도 · 첫 화면 도구 링크 · seoTitle·H1·tags에 셋 금지 | L-F §8 ① · 원칙① · tr 10-06 선례 |
 | ② | position(s) poker 590 · 좌석명(utg 260 · cut off 170 · bouton) | **holdem-positions** | holdem-position-play = «jouer en / hors de position · pourquoi la position est importante» · seoTitle 선두에 «position poker» 금지 · 서로 첫 문단 앵커 1 | L-D §8-A |
 | ③ | fold poker 140 · se coucher (정의·번역·«peut-on se coucher») | **holdem-betting-actions** | holdem-when-to-fold = «quand (faut-il) se coucher au poker · savoir folder» 전략 롱테일 · 정의는 앵커 · 상호 앵커 1 | L-A §8-A · L-D §8-B 일치 |
 | ④ | nuts poker 210 (+ nuts au poker 20) | **holdem-reading-the-board** — H2 «Comment savoir si tu as les nuts ?» + FAQ «Que signifie « nuts » au poker ?» · 카피 보조어로 «nuts» 허용(Fable 판단) | `/fr/glossary` Nuts 항목 = 정의 1줄 유지 + 글로 앵커(배포 회차) · holdem-glossary = 정의 1줄 + 앵커 · seoTitle에 «nuts» 금지 | 🔴 L-B(도구) vs L-F(글) 엇갈림 → **원칙② 채택**: FR 정보 페이지 0/8 · PAA 정의 2 + «avoir les nuts» 보드 의도 · EN H2 «Reading the Nuts» |
@@ -152,7 +167,7 @@
 | 0-4 공지 | 검수장 착수 공지 MB(§2-⑦) · 레인 워크트리 7개 생성 + 각 `HARDEN.md` | MB 1행 · 워크트리 | 0-3 | ✅ 10-07 (MB-196 · 워크트리 7 + HARDEN.md · 진행 파일 7 · index 칸 6 · lane-sync fr 7레인 · §5 치환표) |
 | 레인 🅰~🅵 | A 준비(브리프 + Fable 카피) → B 집필 → C 마감(게이트·렌즈·2차) | `docs/fr-lanes/<id>-*.md` · `lib/posts-fr/*` | 0-4 | ☐ |
 | 레인 🅶 | 솔버 앱 fr 축어 재추출(§2-⑨) → A·B·C | 〃 | 🅰~🅵 머지 | ☐ |
-| 헤드 머지 | 레인 머지 · 신규 용어 대조 · EN 델타 스윕(§2-⑤) · 아스트라 교차 1회 → 반영 | — | 전 레인 C | ☐ |
+| 헤드 머지 | 레인 머지 · 신규 용어 대조 · EN 델타 스윕(§2-⑤) · 아스트라 교차 1회 → 반영 | — | 전 레인 C | ▶ 🅰~🅵분 ✅ 10-07(§4-B 판정 H-1~30 · 계산기 사전 · 델타 스윕) · ☐ 🅶 머지 → 🅶 용어 대조 + 아스트라 51편 1회 |
 | 배포 | fr index · `/fr/blog` · 러닝맵 · `/fr/solver` 13링크 · 도구 4종 related · 빌드 · push · MB · IndexNow · 수동 색인 목록(GTO 13 제외) | 라이브 | 헤드 머지 | ☐ |
 
 - 모델: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 다른 계열 교차 = GPT 아스트라(ms §2 그대로).
@@ -164,39 +179,41 @@
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상).
 - 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ✅ 🅵 gloss `d8ec6c21` (10-07 · cooler는 MA-350 정정 문면 확인) · ✅ 🅴 tour `51c38a5c` (10-07 · 통합 트리 fr 38편 audit 🔴 0 · intl-links 잔여 4 = 전부 🅶 대상) · ▶ **🅶 gto 시작 신호 ✅ 10-07** (`harden-fr-gto`에 main + fr-integration 머지 `94accc28` — 38편이 보인다) · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
 
-### 4-B. 헤드 판정 대기 (전 레인 C 뒤 신규 용어 대조 때 한 번에)
-| # | 자리 | 레인 | 내용 |
-|---|---|---|---|
-| H-1 | street | 🅰 «tour (de mises)·étape», street 안 씀 ↔ 🅲 «street» 통일 | 🔴 레인 간 분열 — 하나로 |
-| H-2 | full raise | 🅰 relance complète / relance pleine 병기 | 통일 |
-| H-3 | suite 본문 병기 | 🅲 브리프 «본문 suite 금지» ↔ §3-A ③ «quinte (suite)» 첫 병기 | 족보 글 외 적용 범위 |
-| H-4 | X-to-1 | 🅲 «X contre 1» · «1 sur N» | §3-A ②에 추가할지 |
-| H-5 | suited/offsuit | 🅲 assorties / dépareillées | 코퍼스 대조 |
-| H-6 | 태그 | 🅰 «parole poker»(가사 SERP) · 🅲 «règle du 2 et du 4» 3편 중복 | 카피 잠금 해제 판단 |
-| H-7 | 계산기 사전 | 🅲 `check:calc-parity:all` fr 🔴 16 — quickRef 4 + related 5 | 배포 회차(§3-B ⑧) |
-| H-8 | PDF | 🅰 fr 초보 PDF 없음 → «(PDF en anglais)» | 생성 여부 |
-| H-10 | 태그 중복 | 🅱 flush-vs-straight «couleur poker»(= hand-rankings) · «flush/straight poker» · split-pot «pot annexe poker»(= all-in) | H-6과 같이 |
-| H-11 | tapis·hauteur | 🅱 펠트·스택 뜻 tapis 8 → table/feutre·stack · «quinte hauteur X» 통일 | 🅰·🅲·🅳~🅵에 같은 정리 필요한지 대조 |
-| H-12 | 🅰 링크 결손 | 🅱 6편 생기며 🅰 4편(betting-actions·game-order·showdown·beginners) `check:structure` 링크 개수 결손 | 헤드가 통합 트리에서 EN대로 복원 |
-| H-13 | 현지 추가 링크 | 🅱 split-pot FAQ → tiebreak 앵커 1 | 유지 판정(레인 형제) |
-| H-9 | EN-먼저 | 🅰 rules L353 «43.8% most frequent at showdown» · game-order L119 · 🅳 c-bet L181 «charges all his missed hands»(fr은 «met sous pression»으로 먼저) · position-play L128·281 AK/AQ ↔ chart L121 · c-bet L105 «over 97% on all three boards» | queue 등재 후보 |
-| H-14 | solveur | 🅳 starting-hands·position-play 카피(H2·FAQ·tldr)에 «solveur» ↔ §3-A ④ «solver»(본문은 C가 통일) | 카피 잠금 해제 |
-| H-15 | 3-bet FAQ | 🅳 strategy FAQ «Quand faire un 3-bet au poker ?» = 3bet H2·태그 | 앵커는 있음 · 문항 분리 여부 |
-| H-16 | tldr 길이 | 🅳 3bet 618 · c-bet 637 · when-to-fold 623자(EN +50 %) | 2~3줄 규칙(`tldr-two-to-three-lines`) |
-| H-17 | limpers | 🅳 카피 «limpers» ↔ 본문 «limpeurs» | 표기 통일 |
-| H-19 | glossaire | 🅵 «glossaire»도 `/fr/glossary` 소유로 보고 글 seoTitle·H1·tags에서 뺐다 | §3-B ①에 추가할지 |
-| H-20 | 카드 라벨 | 🅵 관련 글 카드 라벨(범주명) — 레인마다 다름(🅲 «Cotes & maths»·«Stratégie» 등) | 전 레인 통일 |
-| H-21 | glossary 표 머리 | 🅵 «**Fold** (se coucher)» 영→불 순서 ↔ 도구 사전 «Tapis (all-in)» 불→영 | 글 각도라 유지 판정 예정 |
-| H-22 | date | 🅵 date = 집필일 · 🅰·타 로케일 = EN date 복사 | 통일 |
-| H-23 | 링크 | 🅰 blind-meaning에 EN의 holdem-straddle 링크 결손 · 🅴 tournament L271 «lexique du poker» 앵커가 글로 감(§3-A ⑤ 위반) · cooler → bad-beat 추가 1(EN에 없음) | 헤드 정리 |
-| H-24 | EN-먼저 | 🅵 glossary L38 «a dozen terms»(8쌍) · rake «most pots brush the cap» · fish «competitors» · cooler 인용 I→you · «Who wins at showdown» 카드 | H-9와 합침 |
-| H-25 | 앵커 분열 | 🅴 «tableau des mains de départ»가 다른 레인에서 글(starting-hands-chart) 대상 12회 — §3-A ⑤는 `/fr/hand-chart` · «lexique du poker» → 글 오용 2건 더 | 전수 치환 |
-| H-26 | 카드 제목 | 🅴 임시 카드 제목 3(positions · when-to-fold · starting-hands) → 🅳 실제 title로 · game-order 카드는 «au showdown» 판 | 전수 대조 |
-| H-27 | 성·표기 | 🅴 «la chip EV»(여성) · «position précoce» ↔ 🅳 표기 | 대조 |
-| H-28 | 태그 카니발 | 🅴 short-stack «fold equity poker» ↔ 🅲 equity · «all in poker tournoi» ↔ 🅰 · vs-cash FAQ «L'ICM compte-t-il en cash game ?» ↔ icm | H-6·H-10과 같이 |
-| H-29 | 🅰 구조 결손 | 🅴 실측: blind-meaning link 2·카드 −2 · beginners link 1 · betting-actions li −3 · game-order FAQ −4 | H-12와 같이 — 🅰 FAQ −4는 확인 필요 |
-| H-30 | 계산기 사전 | `check:calc-parity:all` fr 14(icmGuide.deal.link · related 6→8) | H-7과 같이 · 배포 전 필수 |
-| H-18 | GTO 썸네일 | 🅳 c-bet readnext가 `gto-*-en.webp`(fr 변형 없음) | 🅶 레인에서 `-fr` 생성 시 교체 |
+### 4-B. 헤드 판정 — ✅ 10-07 회차 (H-1~30 · 통합 트리 `fr-integration`)
+
+> 규칙이 된 것은 §3-A·§3-B로 승격했다(이 표는 판정·이행 기록). 종결 행은 다음 정리 때 지운다.
+
+| # | 판정 | 이행 |
+|---|---|---|
+| H-1 street | 본문 정본 = street · 🅰 규칙 글은 «tour de mises» + 첫 병기 | beginners 첫 등장 «tour de mises (une street)» · §3-A ④ |
+| H-2 full raise | relance complète | all-in-rules 22자리 교체 · §3-A ④ |
+| H-3 suite | 본문 quinte 전 글 · 첫 병기는 족보 글만 필수 | 위반 0(kicker tldr = 카피 허용) · §3-A ③ |
+| H-4 X-to-1 | X contre 1 · 1 sur N · X:1 비율 유지 | §3-A ② |
+| H-5 suited/offsuit | assorties / dépareillées | §3-A ④ |
+| H-6·H-10·H-28 태그 | EN이 같은 태그를 여러 글에 둔 자리(règle du 2 et du 4 · cooler vs bad beat)는 패리티로 유지 · 소유자 아닌 쪽만 제거 | 제거 3: betting-actions «parole poker»(가사 SERP) · flush-vs-straight «couleur poker»(→ hand-rankings) · game-order «under the gun poker»(→ positions). short-stack «fold equity poker»·«all in poker tournoi» · vs-cash ICM FAQ는 비교 각도라 유지 |
+| H-7·H-30 계산기 사전 | EN대로 | `app/fr/calculator/dict.ts` quickRef 6링크 + deal 링크 + related 8 · `check:calc-parity:all` 13사본 0 |
+| H-8 PDF | «(PDF en anglais)» 유지 | 🪶 fr PDF 생성은 별도 회차(자동 착수 금지) |
+| H-9·H-24 EN-먼저 | 대기열 등재 | `docs/en-first-queue.md` §2-AE(AE-1~10) |
+| H-11 tapis·hauteur | tapis = all-in 뜻 · «tapis vert»(alt)·«tapis effectif»(정의된 예외) 허용 · quinte à l'as / hauteur X | game-order «ton tapis» → stack · showdown «quinte à la dame» → hauteur dame |
+| H-12·H-29 🅰 결손 | 통합 트리에서 결손 0(`check:structure --locale=fr --tail`) | 링크 집합·FAQ·H2 직접 대조로 확인 — 복원할 것 없음 |
+| H-13 split-pot → tiebreak | 유지(형제 · 결손 아닌 추가) | — |
+| H-14 solveur | solver(카피 잠금 해제) | starting-hands-chart 3 · position-play 1 |
+| H-15 3-bet FAQ | 유지(EN 패리티 · 앵커 있음) | — |
+| H-16 tldr 길이 | 유지 — 전 38편 EN 대비 평균 +24 %(최대 hand-rankings +62 %)로 프랑스어 팽창 범위 · «EN +50 %»는 측정 오류 | — |
+| H-17 limpers | limpeurs | limping desc·H2 · short-stack 2 · §3-A ④ |
+| H-19 glossaire | §3-B ①에 추가 | — |
+| H-20 카드 라벨 | EN 라벨 1:1 사전 | 15장 정정 · §3-A ⑥ |
+| H-21 glossary 표 머리 | 유지(글 각도 = 영→불) | — |
+| H-22 date | 신규 글 = 발행일(ms 선례 09-27) · 🅰 기존 6편 = 원래 date | 🔴 배포가 10-07보다 늦으면 배포 회차에서 신규 45편 date = 배포일로 |
+| H-23 링크 | blind-meaning → straddle 이미 있음 · tournament «lexique du poker» 이미 해소 · cooler → bad-beat 추가 유지 | — |
+| H-25 앵커 분열 | 글로 가는 도구 앵커 금지 | 본문 앵커 7 + cooler «lexique» 1 · §3-A ⑤ |
+| H-26 카드 제목 | 도구 헤드 문구를 쓴 4장만 정정 · 그 밖 문맥별 변형은 EN도 같아 유지 | drawing-odds · implied-odds · outs · probability |
+| H-27 성·표기 | la chip EV · position précoce — 이미 일치 | §3-A ④ |
+| H-18 GTO 썸네일 | 🅶 레인 | `-fr` 생성 시 교체 |
+
+- EN 델타 스윕(§2-⑤): `a54b5f3d..main`의 EN 51편 변경 = 3파일(cooler MA-350 · flush-vs-straight·probability MA-354) — fr에 전부 이미 반영(`698e1b4b` · 🅵 C). `check:drift` fr 38 ✅.
+- 아스트라 교차(§4 헤드 머지)는 🅶 13편 머지 뒤 **51편 한 번에** — 지금 38편에 돌리면 🅶 뒤 또 돌려야 한다(§0 «두 번 일하지 않게»).
+- 게이트(통합 트리 · 10-07): audit:hard fr 38/38 🔴 0 🟠 0 · check:structure 0 · calc-parity 0 · meta 0 · seo-sync 0 · intl-links 잔여 = 🅶 대상뿐 · `npx next build` ✅ 904쪽.
 
 ## 5. 레인 운영 — `ms-translation-lanes.md`를 fr로 읽는 치환표 (0-4 · 10-07)
 
