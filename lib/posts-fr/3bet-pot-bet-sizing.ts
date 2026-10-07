@@ -11,7 +11,7 @@ export const POST: Post = {
   slug: "3bet-pot-bet-sizing",
   title: "Deux sizings proposés, un seul utilisé",
   seoTitle: "98,4 % sur un seul sizing — sizing poker sur board humide",
-  desc: "Deux sizings sur ce flop bicolore, et le solver met 98,4 % de sa range dans un seul. Deux tiers du pot, c'est trop cher pour 38 des 40 tirages à une carte.",
+  desc: "Deux sizings sur ce flop bicolore, et le solver met 98,4 % de sa range dans un seul. Deux tiers du pot : trop cher pour 38 des 40 tirages sur la carte suivante.",
   tldr: "Sur Q♥10♥7♠ dans un pot 3-bet, la grosse blinde mise deux tiers du pot (14,9bb) 98,4 % du temps. Le petit sizing reçoit 0,7 % et le check 0,8 %, à peine un combo sur 73 à eux deux. Un board plus tôt, sur A♦K♠2♥, la même range répartissait son sizing 57,8/42,2. Ce qui a écrasé la répartition, ce n'est pas la force mais le prix. Sur un board aussi humide, le sizing se décide d'après ce que ça coûte au caller de continuer à tirer, et la petite mise ne fait pas payer assez.",
   category: "strategy",
   date: "2026-10-07",
@@ -20,11 +20,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💧",
-  image: "/images/gto-3bp-dynamic-oop-en.webp",
+  image: "/images/gto-3bp-dynamic-oop-fr.webp",
   imageAlt: "Solver GTO HoldemMaster sur un pot 3-bet Q-10-7 bicolore : la grille 13x13 de la grosse blinde presque entièrement d'une seule couleur, avec le sizing deux tiers du pot à 98,4 %",
   tags: ["sizing poker", "bet sizing poker", "board humide poker", "sizing géométrique", "overbet poker", "combien miser au poker", "pot 3-bet"],
   content: `
-Un board plus tôt, la grosse blinde (BB) misait toute sa range sur [A♦K♠2♥](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") et répartissait son sizing presque à parts égales : 57,8 % petit, 42,2 % gros.
+Un board plus tôt, la grosse blinde (BB) misait toute sa range sur [A♦K♠2♥](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-fr.webp") et répartissait son sizing presque à parts égales : 57,8 % petit, 42,2 % gros.
 
 Ce flop-ci, c'est Q♥ 10♥ 7♠. Deux cœurs, et seul le valet manque entre la dame et le dix. **Beaucoup plus de tirages, et la répartition disparaît :** deux tiers du pot prennent ==98,4 %==, et le petit sizing 0,7 %.
 
@@ -93,7 +93,7 @@ Les deux lignes sont des pots 3-bet à SPR 4,0 avec la même range de 3-bet de 1
 
 **En ne comptant que les vrais tirages, les deux camps sont à 30,1 %** — la grosse blinde avec 2,7 % de tirages combo, 2,7 % de tirages couleur et 24,7 % de tirages ventraux ; le bouton avec 3,0 % de tirages combo, 4,5 % de tirages quinte bilatéraux et 22,6 % de tirages ventraux.
 
-🪶 Les tirages couleur backdoor sont exclus exprès. Il faut deux cartes consécutives de la même enseigne (des cœurs pour une main qui tient un cœur, des piques pour une main qui tient deux piques à côté du 7♠), et ça n'arrive que ==(10 ÷ 47) × (9 ÷ 46) = environ 4,2 %== du temps — pas quelque chose qu'un sizing peut faire payer. Et le tableau des tirages est un **axe séparé du tableau des mains faites** : une overpair avec un cœur tombe aussi dans la ligne backdoor. Sur le [flop sec hauteur Roi](/fr/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-en.webp"), la même ligne affichait 72,2 % « aucun tirage » pour la grosse blinde et 77,7 % pour le bouton. Une autre planète.
+🪶 Les tirages couleur backdoor sont exclus exprès. Il faut deux cartes consécutives de la même enseigne (des cœurs pour une main qui tient un cœur, des piques pour une main qui tient deux piques à côté du 7♠), et ça n'arrive que ==(10 ÷ 47) × (9 ÷ 46) = environ 4,2 %== du temps — pas quelque chose qu'un sizing peut faire payer. Et le tableau des tirages est un **axe séparé du tableau des mains faites** : une overpair avec un cœur tombe aussi dans la ligne backdoor. Sur le [flop sec hauteur Roi](/fr/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-fr.webp"), la même ligne affichait 72,2 % « aucun tirage » pour la grosse blinde et 77,7 % pour le bouton. Une autre planète.
 
 Mise un tiers du pot, 7,4bb, et le caller a besoin de ==7,4 ÷ (22,5 + 7,4 + 7,4) = environ 19,8 %== pour continuer. Voici ce que ce prix achète, mesuré carte par carte.
 
@@ -122,7 +122,7 @@ Pour voir plus largement comment compter les outs et mettre un prix sur un tirag
 
 :::pull[Ta main ne choisit pas le sizing. Ce que ton adversaire peut se permettre de payer, si.]:::
 
-:::note[⚠ Même texture, conclusion opposée — et les deux sont justes, parce que les places sont inversées. Dans un **pot simplement relancé (single raised pot)**, le haut d'un flop broadway bicolore appartient au relanceur préflop, et la grosse blinde, qui a seulement payé, le checke presque à chaque fois — sur [Q♠J♦10♠](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp") elle checke 99,9 %. Les conseils classiques du type « mise gros sur les boards humides, et polarise » dans [le guide du c-bet](/fr/blog/holdem-continuation-bet) (mise de continuation) sont écrits pour la place du relanceur, pas pour celle du caller. **C'est le 3-bet qui les inverse.** Ici, c'est la grosse blinde qui tient la range qui connecte, donc c'est elle qui mise — avec tout. La texture seule ne tranche jamais ça ; lis d'abord l'action préflop.]:::
+:::note[⚠ Même texture, conclusion opposée — et les deux sont justes, parce que les places sont inversées. Dans un **pot simplement relancé (single raised pot)**, le haut d'un flop broadway bicolore appartient au relanceur préflop, et la grosse blinde, qui a seulement payé, le checke presque à chaque fois — sur [Q♠J♦10♠](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-fr.webp") elle checke 99,9 %. Les conseils classiques du type « mise gros sur les boards humides, et polarise » dans [le guide du c-bet](/fr/blog/holdem-continuation-bet) (mise de continuation) sont écrits pour la place du relanceur, pas pour celle du caller. **C'est le 3-bet qui les inverse.** Ici, c'est la grosse blinde qui tient la range qui connecte, donc c'est elle qui mise — avec tout. La texture seule ne tranche jamais ça ; lis d'abord l'action préflop.]:::
 
 ## Le sizing géométrique, c'est quoi ?
 
@@ -160,7 +160,7 @@ JJ et 99, c'est le cas inverse. **Ni l'une ni l'autre ne tire à quoi que ce soi
 
 **Plus d'un tiers de sa range — 36,1 % — est une underpair : il arrive sur un board à deux cartes broadway avec une paire sous la dame — sous les deux cartes broadway pour toutes les underpairs sauf JJ, qui se glisse entre les deux.** Le reste se partage entre les mains qui ont touché la dame, les mains qui tirent aux cœurs et une petite queue de rien. Une ligne du tableau ci-dessous ne veut pas dire ce qu'elle semble dire, et ça vaut la peine de la repérer avant de continuer.
 
-![Composition des ranges sur un pot 3-bet Q-10-7 bicolore, avec des overpairs uniquement du côté de la grosse blinde et des deuxièmes paires uniquement du côté du bouton](/images/gto-3bp-dynamic-ranges-en.webp "Pot 3-bet Q-10-7 · la ligne overpair appartient à la grosse blinde, la ligne deuxième paire au bouton")
+![Composition des ranges sur un pot 3-bet Q-10-7 bicolore, avec des overpairs uniquement du côté de la grosse blinde et des deuxièmes paires uniquement du côté du bouton](/images/gto-3bp-dynamic-ranges-fr.webp "Pot 3-bet Q-10-7 · la ligne overpair appartient à la grosse blinde, la ligne deuxième paire au bouton")
 
 | Catégorie | BB (3-betteur) | BTN (caller) |
 |---|---|---|
@@ -212,8 +212,8 @@ Tout ce qui suit suppose **heads-up, pot 3-bet, SPR 4**. Ajoute un cold-caller o
 - **★Depuis la place du bouton, prévois où s'arrêtent les paires moyennes.** 36,1 % de la range de call est ici une underpair. ⚠ Ne lis pas pour autant la **MDF de 60,2 % comme un quota de call** — elle est dérivée en traitant la mise comme un pur bluff sans équité, et **45,1 % de la range de mise de la grosse blinde est déjà faite** (8,2 de brelans servis, 16,4 d'overpairs, 20,5 de top paire), donc savoir si la vraie défense optimale se situe au-dessus ou en dessous, **ce calcul ne le dit pas.** **C'est à la turn que ces paires s'en vont** — une deuxième grosse mise en fait coucher la plupart, et payer le flop sans avoir décidé ça, c'est comme ça que les stacks fuient. (Le nœud de la turn n'est pas dans cette résolution : c'est donc du jugement, pas un chiffre.)
 
 :::readnext[À lire ensuite]
-/fr/blog/3bet-pot-cbet | Le flop que personne ne checke : SPR 4 en pot 3-bet | /images/gto-3bp-ace-king-oop-en.webp
-/fr/blog/3bet-pot-low-board | Trois combos touchent ce flop, et la range mise quand même 97,8 % | /images/gto-3bp-low-oop-en.webp
+/fr/blog/3bet-pot-cbet | Le flop que personne ne checke : SPR 4 en pot 3-bet | /images/gto-3bp-ace-king-oop-fr.webp
+/fr/blog/3bet-pot-low-board | Trois combos touchent ce flop, et la range mise quand même 97,8 % | /images/gto-3bp-low-oop-fr.webp
 :::
 
 ## Vérifie toi-même
@@ -224,7 +224,7 @@ Regarde d'abord la bande d'actions : **Bet 14,9bb (66 % du pot) · 98,4% · 71,9
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale. Il distribue une main selon les vrais poids de la range et note ton action en **Perte d'EV**. Gratuit, sans installation, sans compte.
 
-Un contraste utile : le board A-high du spot précédent. A♦K♠2♥ est rainbow, donc **aucun tirage couleur n'y existe pour personne**, et toute la range de la grosse blinde y a une paire ou mieux. Ici, la ligne « Aucun tirage » n'affiche que 43,8 %. ⚠ Les 56,2 % restants ne sont pas tous *vivants*, attention — 26,0 points sont un **backdoor**, qui demande deux cartes consécutives de la même enseigne (cœur, ou pique pour les mains à deux piques) et se complète environ 4,2 % du temps. Les vrais tirages font 30,1 %. **Cette seule ligne n'est pas toute l'explication, pourtant** — le [flop 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") plus loin dans cette série a 78,3 % « aucun tirage » et envoie quand même le gros sizing 97,8 % du temps. La densité de tirages et la forme de la range ont toutes les deux leur mot à dire.
+Un contraste utile : le board A-high du spot précédent. A♦K♠2♥ est rainbow, donc **aucun tirage couleur n'y existe pour personne**, et toute la range de la grosse blinde y a une paire ou mieux. Ici, la ligne « Aucun tirage » n'affiche que 43,8 %. ⚠ Les 56,2 % restants ne sont pas tous *vivants*, attention — 26,0 points sont un **backdoor**, qui demande deux cartes consécutives de la même enseigne (cœur, ou pique pour les mains à deux piques) et se complète environ 4,2 % du temps. Les vrais tirages font 30,1 %. **Cette seule ligne n'est pas toute l'explication, pourtant** — le [flop 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-fr.webp") plus loin dans cette série a 78,3 % « aucun tirage » et envoie quand même le gros sizing 97,8 % du temps. La densité de tirages et la forme de la range ont toutes les deux leur mot à dire.
 
 ## FAQ
 

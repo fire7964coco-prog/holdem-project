@@ -20,7 +20,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠️",
-  image: "/images/gto-srp-monotone-oop-en.webp",
+  image: "/images/gto-srp-monotone-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop monotone à pique : la grille de la grosse blinde est surtout verte pour le check, avec quelques petites mises mêlées",
   tags: ["flop monotone", "board monotone poker", "comment jouer un flop monotone", "couleur max", "sizing poker", "board monochrome", "cotes implicites inversées"],
   content: `
@@ -57,7 +57,7 @@ Résultat | Grosse mise 3,2 % : le sizing s'effondre
 
 ## Comment la grosse blinde joue-t-elle un flop monotone ?
 
-**Check 88,8 %, lead (donk bet) 11,2 %.** C'est moins de lead que sur le [board connecté 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") à 23,7 %, mais bien plus que sur les flops secs, où il tombait à 1,9 % sur A-7-2 et 0,2 % sur K-8-3.
+**Check 88,8 %, lead (donk bet) 11,2 %.** C'est moins de lead que sur le [board connecté 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp") à 23,7 %, mais bien plus que sur les flops secs, où il tombait à 1,9 % sur A-7-2 et 0,2 % sur K-8-3.
 
 | Première action de la BB | Fréquence | Combos |
 |---|---|---|
@@ -125,7 +125,7 @@ L'équité bouge à peine, 94 % contre 97,7 %, mais l'EQR tombe à 197 %. **Tu g
 
 **La grosse blinde : 7,1 % contre 5,7 %.** Mais les *tirages* couleur vont dans l'autre sens.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board monotone à pique](/images/gto-srp-monotone-ranges-en.webp "Q♠9♠2♠ · répartition par catégorie — les couleurs faites penchent vers la grosse blinde, les overpairs et la hauteur As vers le bouton")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board monotone à pique](/images/gto-srp-monotone-ranges-fr.webp "Q♠9♠2♠ · répartition par catégorie — les couleurs faites penchent vers la grosse blinde, les overpairs et la hauteur As vers le bouton")
 
 | Catégorie | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -173,8 +173,8 @@ L'écart de 18,4 points est le deuxième plus petit **des sept pots simplement r
 - **Face à un adversaire qui ne couche jamais une paire, arrête de tendre des pièges.** Les 69,9 % de check supposent que l'autre joueur mise quand on checke vers lui ; s'il ne fait que payer, mise tes couleurs et prends l'argent.
 
 :::readnext[À lire ensuite]
-/fr/blog/donk-bet-strategy | Le flop où le donk bet est juste : 9-8-7 | /images/gto-srp-middle-connected-oop-en.webp
-/fr/blog/broadway-board-strategy | Deux tiers de la range ont un tirage, et elle checke quand même | /images/gto-srp-broadway-oop-en.webp
+/fr/blog/donk-bet-strategy | Le flop où le donk bet est juste : 9-8-7 | /images/gto-srp-middle-connected-oop-fr.webp
+/fr/blog/broadway-board-strategy | Deux tiers de la range ont un tirage, et elle checke quand même | /images/gto-srp-broadway-oop-fr.webp
 :::
 
 ## Vérifie toi-même

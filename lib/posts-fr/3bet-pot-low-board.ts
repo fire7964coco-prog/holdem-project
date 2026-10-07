@@ -20,7 +20,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎲",
-  image: "/images/gto-3bp-low-oop-en.webp",
+  image: "/images/gto-3bp-low-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop 8-5-2 rainbow en pot 3-bet : la grille de la grosse blinde est presque entièrement colorée pour la grosse mise",
   tags: ["range polarisée poker", "range polarisée", "board sec poker", "flop pot 3-bet", "jouer une surpaire", "board bas et sec"],
   content: `
@@ -43,7 +43,7 @@ Résultat | Deux tiers du pot 97,8 % : trois combos ont pairé ce board
 
 ## Quelles conditions ont produit ces chiffres ?
 
-La même configuration de pot 3-bet que les spots [A-K-2](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") et [Q-10-7](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp"). Seul le board a changé.
+La même configuration de pot 3-bet que les spots [A-K-2](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-fr.webp") et [Q-10-7](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-fr.webp"). Seul le board a changé.
 
 | Élément | Réglage |
 |---|---|
@@ -101,7 +101,7 @@ Les 36 combos de surpaires occupent tout le haut de la range de la grosse blinde
 
 Le SPR de 4 montre jusqu'où va ce sizing ; ce n'en est pas la *raison*, qui est la forme polarisée ci-dessus. Avec seulement 89bb derrière, **deux tiers du pot deux fois, puis ce qui reste à la river, vident le stack exactement** : 14,9bb au flop, 34,5bb à la turn (le tournant), 39,6bb à la river (la rivière). Les deux premières mises font ==14,9 + 34,5 = 49,4bb==, soit 55,5 % du stack de 89bb.
 
-⚠ **Ce n'est pas la même chose que « commence petit et tu perds le chemin pour tout mettre au milieu ».** Tu ne le perds pas. En commençant à 7,4bb : payé, le pot fait 37,3 avec 81,6 derrière ; deux tiers de ça à la turn font 24,6, ce qui laisse un pot de 86,5 et un stack de 57,0 ; l'all-in de 57,0 à la river représente 65,9 % du pot. **Et le sizing n'est de toute façon pas choisi par la profondeur de stack** : le [board A-K-2](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") est au même SPR de 4,0 et utilise le **petit** sizing 57,8 % du temps. Ce qui produit le gros sizing ici, c'est la range polarisée, pas le SPR.
+⚠ **Ce n'est pas la même chose que « commence petit et tu perds le chemin pour tout mettre au milieu ».** Tu ne le perds pas. En commençant à 7,4bb : payé, le pot fait 37,3 avec 81,6 derrière ; deux tiers de ça à la turn font 24,6, ce qui laisse un pot de 86,5 et un stack de 57,0 ; l'all-in de 57,0 à la river représente 65,9 % du pot. **Et le sizing n'est de toute façon pas choisi par la profondeur de stack** : le [board A-K-2](/fr/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-fr.webp") est au même SPR de 4,0 et utilise le **petit** sizing 57,8 % du temps. Ce qui produit le gros sizing ici, c'est la range polarisée, pas le SPR.
 
 Et les 40 combos de hauteur As **gagnent dès que l'adversaire se couche.** 58,3 % de la range du bouton est hauteur As, hauteur Roi ou sans main faite sur ce board. ⚠ Cela dit, « raté » ne veut pas dire « se couche » : **le nœud de réponse du bouton à une mise n'est pas dans cette résolution**, donc aucune fréquence de fold n'en sort, et les hauteurs As du bouton vont d'A-K à A-T, ce qui leur garde une part de valeur à l'abattage. Quand un bluff est vraiment rentable, c'est traité dans [la stratégie de bluff](/fr/blog/holdem-strategy).
 
@@ -109,7 +109,7 @@ Et les 40 combos de hauteur As **gagnent dès que l'adversaire se couche.** 58,3
 
 **Parce que 88, 55 et 22 ne sont pas dans une range de 3-bet, mais bien dans une range de call.** C'est le premier spot de la série où le haut du board appartient entièrement au joueur en position.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board 8-5-2 en pot 3-bet](/images/gto-3bp-low-ranges-en.webp "8-5-2 en pot 3-bet · répartition par catégorie — les brelans uniquement chez le bouton, nettement plus de surpaires pour la grosse blinde (36 combos contre 24)")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board 8-5-2 en pot 3-bet](/images/gto-3bp-low-ranges-fr.webp "8-5-2 en pot 3-bet · répartition par catégorie — les brelans uniquement chez le bouton, nettement plus de surpaires pour la grosse blinde (36 combos contre 24)")
 
 | Catégorie | BB (3-betteur) | BTN (caller) |
 |---|---|---|
@@ -156,8 +156,8 @@ La raison, c'est l'endroit où se trouvent les brelans servis. **Le bouton est l
 - **Compte le SPR avant de miser.** À SPR 4, deux tiers du pot deux fois (14,9 → 34,5) plus un all-in de 39,6 à la river vident 89bb précisément. Une fois que tu mises le flop, le reste du stack est à une ou deux mises de distance ; décide donc avant cette première mise sur quelles turns et quelles rivers tu continueras à miser. La turn et la river ne sont pas dans cette résolution, et un runout ou un adversaire peut encore changer la réponse.
 
 :::readnext[À lire ensuite]
-/fr/blog/3bet-pot-bet-sizing | Un seul sizing, 98,4 % du temps : Q-10-7 en pot 3-bet | /images/gto-3bp-dynamic-oop-en.webp
-/fr/blog/blind-battle-cbet | Le joueur sans position mise en premier, 67,4 % du temps | /images/gto-sb-king-mid-oop-en.webp
+/fr/blog/3bet-pot-bet-sizing | Un seul sizing, 98,4 % du temps : Q-10-7 en pot 3-bet | /images/gto-3bp-dynamic-oop-fr.webp
+/fr/blog/blind-battle-cbet | Le joueur sans position mise en premier, 67,4 % du temps | /images/gto-sb-king-mid-oop-fr.webp
 :::
 
 ## Vérifie toi-même

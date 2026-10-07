@@ -20,13 +20,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "👑",
-  image: "/images/gto-srp-dry-king-oop-en.webp",
+  image: "/images/gto-srp-dry-king-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop sec hauteur Roi K-8-3 : la grille 13x13 de la grosse blinde presque entièrement verte pour le check",
   tags: ["faut-il toujours c-bet", "check back poker", "c-bet retardé", "flop hauteur roi", "board sec k-high", "check de range", "réalisation d'équité"],
   content: `
 Le flop tombe **K♠ 8♦ 3♣**, rainbow. Tu as K9 en grosse blinde (BB) — top paire. Tu as déjà appris à checker la version hauteur As. Un Roi, c'est forcément différent ?
 
-Oui. **Ça checke encore plus.** La grosse blinde checke ==99,8 %== ici, plus complètement que les 98,2 % du [flop hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). Les deux sizings réunis pèsent 0,2 % — un combo sur 474.
+Oui. **Ça checke encore plus.** La grosse blinde checke ==99,8 %== ici, plus complètement que les 98,2 % du [flop hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp"). Les deux sizings réunis pèsent 0,2 % — un combo sur 474.
 
 Chaque chiffre ci-dessous vient du [solver poker gratuit](/fr/solver) de HoldemMaster, relevé sur le résultat du spot d'étude le 2026-08-19.
 
@@ -89,7 +89,7 @@ Le décompte des mains colle exactement au solver. La grosse blinde a 88 et 33 �
 
 **Les catégories fortes sont chez le bouton, les faibles chez la grosse blinde.** Côte à côte, l'écart saute aux yeux.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board sec hauteur Roi, barres vertes et dorées côte à côte](/images/gto-srp-dry-king-ranges-en.webp "K♠8♦3♣ · répartition par catégorie — le haut de la range appartient au bouton")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board sec hauteur Roi, barres vertes et dorées côte à côte](/images/gto-srp-dry-king-ranges-fr.webp "K♠8♦3♣ · répartition par catégorie — le haut de la range appartient au bouton")
 
 Hors de position (OOP), c'est la grosse blinde, qui parle en premier ; en position (IP), c'est le bouton.
 
@@ -129,7 +129,7 @@ Le calcul : le pot fait 5,5bb, donc la part d'équité de la grosse blinde vaut 
 
 :::note[Les valeurs d'EQR de cette série sont celles affichées à l'écran du solver. Les recalculer à partir de l'équité et de l'EV arrondies du même écran peut donner un dixième de point d'écart — c'est de l'arrondi, pas une contradiction.]:::
 
-Le flop hauteur As donnait 84,0 % contre 113,1 %. **Même texture sèche, écart plus large sur le board au Roi.** Mais pas parce que ce board est *plus calme* — les deux plus grands écarts d'EQR de cette série appartiennent à des boards gorgés de tirages : le [flop Q-J-10 bicolore](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp") à 41,5 points et le pot 3-bet sur Q-10-7 à 42,7. Ce qui ouvre l'écart ici, c'est **une seule colonne tout en haut** — sur A-7-2, aucun joueur n'a d'overpair, alors que sur K-8-3 le bouton en a 1,3 % et la grosse blinde aucune. Pourquoi le siège lui-même vaut autant est expliqué dans [jouer en position](/fr/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Le flop hauteur As donnait 84,0 % contre 113,1 %. **Même texture sèche, écart plus large sur le board au Roi.** Mais pas parce que ce board est *plus calme* — les deux plus grands écarts d'EQR de cette série appartiennent à des boards gorgés de tirages : le [flop Q-J-10 bicolore](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-fr.webp") à 41,5 points et le pot 3-bet sur Q-10-7 à 42,7. Ce qui ouvre l'écart ici, c'est **une seule colonne tout en haut** — sur A-7-2, aucun joueur n'a d'overpair, alors que sur K-8-3 le bouton en a 1,3 % et la grosse blinde aucune. Pourquoi le siège lui-même vaut autant est expliqué dans [jouer en position](/fr/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Il n'y a vraiment aucun tirage ici ?
 
@@ -152,13 +152,13 @@ Le conseil habituel dit que les mains hauteur As avec valeur d'abattage doivent 
 
 ## Qu'est-ce que ça change à la table ?
 
-- **Après avoir payé une relance en heads-up sur un flop sec hauteur Roi, le lead n'est pas une option.** Même avec un Roi. La logique du check de range du flop hauteur As s'applique ici plus fort, pas moins. La condition, c'est la **forme de ta range**, pas la forme du board — là où le haut de ta range est plus épais que le sien, la grosse blinde fait bien un lead. Le contre-exemple, c'est le [flop 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), où la grosse blinde fait un lead **23,7 %** du temps.
+- **Après avoir payé une relance en heads-up sur un flop sec hauteur Roi, le lead n'est pas une option.** Même avec un Roi. La logique du check de range du flop hauteur As s'applique ici plus fort, pas moins. La condition, c'est la **forme de ta range**, pas la forme du board — là où le haut de ta range est plus épais que le sien, la grosse blinde fait bien un lead. Le contre-exemple, c'est le [flop 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), où la grosse blinde fait un lead **23,7 %** du temps.
 - **Checker, ce n'est pas check-folder.** Face au petit c-bet, la grosse blinde continue large — tous les Rois, les 8, les underpairs, les hauteurs As avec un backdoor. Top paire, c'est un call ; les candidats naturels au check-raise sont 88, 33 et les doubles paires (ce calcul ne couvre pas la réponse au c-bet).
 - **Au bouton, ne donne pas un traitement fixe à AQ et AJ.** Miser petit et checker derrière se défendent tous les deux ; ajuste le mélange selon que cet adversaire se couche vraiment avec des overcards ou non.
 - **Ne lis pas le check comme une faiblesse — contre un adversaire équilibré.** Cette range de check contient toujours les brelans servis (88, 33) et 12,7 % de top paire. Aux petites limites, c'est souvent l'inverse, parce que beaucoup de joueurs font simplement un lead avec leurs mains fortes : continue donc à miser pour la value et traite le check-raise comme un coût occasionnel.
 
 :::readnext[À lire ensuite]
-/fr/blog/a-high-board-cbet | Top paire, et pourtant check : le c-bet sur A-7-2 | /images/gto-srp-dry-ace-oop-en.webp
+/fr/blog/a-high-board-cbet | Top paire, et pourtant check : le c-bet sur A-7-2 | /images/gto-srp-dry-ace-oop-fr.webp
 /fr/blog/holdem-continuation-bet | Pourquoi « c-bet à chaque flop » te fait perdre des jetons | /images/holdem-continuation-bet-hero.webp
 :::
 

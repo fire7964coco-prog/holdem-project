@@ -21,13 +21,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎴",
-  image: "/images/gto-srp-broadway-oop-en.webp",
+  image: "/images/gto-srp-broadway-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop broadway connecté bicolore Q-J-10 : la grille de la grosse blinde verte pour le check, avec le panneau des tirages à droite",
   tags: ["nut advantage", "avantage de nuts", "avantage de range ou avantage de nuts", "board dynamique poker", "board bicolore", "flop broadway", "réalisation d'équité"],
   content: `
 Le flop tombe **Q♠ J♦ 10♠**. Tu as KQ en grosse blinde (BB) — top paire plus un tirage quinte bilatéral. Checker ça, c'est forcément une erreur, non ?
 
-Les deux spots précédents — [hauteur As](/fr/blog/a-high-board-cbet) et [hauteur Roi](/fr/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-en.webp") — étaient des boards calmes où presque rien n'était en tirage. Ici, c'est l'inverse : **68,4 % de la range de la grosse blinde ont un tirage.** Et le solver checke quand même ==99,9 %==. Le lead est devenu *plus rare*, pas plus fréquent.
+Les deux spots précédents — [hauteur As](/fr/blog/a-high-board-cbet) et [hauteur Roi](/fr/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-fr.webp") — étaient des boards calmes où presque rien n'était en tirage. Ici, c'est l'inverse : **68,4 % de la range de la grosse blinde ont un tirage.** Et le solver checke quand même ==99,9 %==. Le lead est devenu *plus rare*, pas plus fréquent.
 
 « Beaucoup de tirages » et « tu peux miser en premier » sont deux affirmations différentes. Chaque chiffre ci-dessous vient du [solver poker gratuit](/fr/solver) de HoldemMaster, relevé sur le résultat du spot d'étude le 2026-08-19.
 
@@ -105,7 +105,7 @@ L'équité moyenne dit que ce flop est proche du pile ou face. Le haut de la ran
 
 **En ne comptant que les vrais tirages : 68,4 % pour la grosse blinde, 68,7 % pour le bouton.** Ajoute les tirages couleur backdoor et on atteint 75,2 % et 74,4 % — les trois quarts des deux ranges.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board broadway connecté bicolore](/images/gto-srp-broadway-ranges-en.webp "Q♠J♦10♠ · répartition par catégorie — les quatre lignes du haut sont celles où se décide le flop")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board broadway connecté bicolore](/images/gto-srp-broadway-ranges-fr.webp "Q♠J♦10♠ · répartition par catégorie — les quatre lignes du haut sont celles où se décide le flop")
 
 | Tirage | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -153,7 +153,7 @@ Aligne les trois flops et la tendance est nette.
 | K-8-3 (sec) | 80,7 % | 116,7 % | 36,0 points |
 | **Q-J-10 (connecté, bicolore)** | **77,9 %** | **119,4 %** | **41,5 points** |
 
-Trois spots donnent l'impression que *board plus chargé, écart plus large*. **Cette règle casse dès le spot suivant** — [9♥8♥7♣](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") est, comme Q-J-10, trois cartes qui se suivent sur un board bicolore, et son écart est de **13,2 points, le plus étroit des sept pots simplement relancés**, avec une grosse blinde qui réalise 93,2 %, le plus haut de ces sept (sur toute la série, les 117,8 % du pot 3-bet sur Q-10-7 sont plus hauts). Ce qui ouvre l'écart, ce n'est pas l'agitation du board mais **à quelle range appartient le haut du board** : Q-J-10 donne AK, QQ, JJ, AA et KK directement au bouton, alors que sur 9-8-7 ces mêmes cartes ne touchent pas le board. ⚠ Ça ne veut pas dire qu'elles n'y pèsent rien — 9-8-7 répartit les overpairs **1,3 % contre 6,4 %**, un écart plus large que les 0 % contre 2,6 % de Q-J-10. Mais cet avantage en overpairs est fragile sur un board connecté, et c'est pourquoi il ne verrouille pas le haut. Pour comprendre pourquoi parler en dernier vaut autant : [jouer en position](/fr/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Trois spots donnent l'impression que *board plus chargé, écart plus large*. **Cette règle casse dès le spot suivant** — [9♥8♥7♣](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp") est, comme Q-J-10, trois cartes qui se suivent sur un board bicolore, et son écart est de **13,2 points, le plus étroit des sept pots simplement relancés**, avec une grosse blinde qui réalise 93,2 %, le plus haut de ces sept (sur toute la série, les 117,8 % du pot 3-bet sur Q-10-7 sont plus hauts). Ce qui ouvre l'écart, ce n'est pas l'agitation du board mais **à quelle range appartient le haut du board** : Q-J-10 donne AK, QQ, JJ, AA et KK directement au bouton, alors que sur 9-8-7 ces mêmes cartes ne touchent pas le board. ⚠ Ça ne veut pas dire qu'elles n'y pèsent rien — 9-8-7 répartit les overpairs **1,3 % contre 6,4 %**, un écart plus large que les 0 % contre 2,6 % de Q-J-10. Mais cet avantage en overpairs est fragile sur un board connecté, et c'est pourquoi il ne verrouille pas le haut. Pour comprendre pourquoi parler en dernier vaut autant : [jouer en position](/fr/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Comment le bouton doit-il miser un board dynamique comme celui-ci ?
 
@@ -171,8 +171,8 @@ C'est l'inverse de la recette du board sec. Là-bas, petit et fréquent marchait
 - **Contre des adversaires qui ne se couchent jamais avec leurs tirages, grossis le sizing plutôt que de miser plus souvent.** Acheter des folds, c'est ce qui échoue ici ; faire payer les tirages, c'est ce qui marche.
 
 :::readnext[À lire ensuite]
-/fr/blog/k-high-board-cbet | Le flop hauteur Roi où le caller checke 99,8 % | /images/gto-srp-dry-king-oop-en.webp
-/fr/blog/a-high-board-cbet | Top paire, et pourtant check : le c-bet sur A-7-2 | /images/gto-srp-dry-ace-oop-en.webp
+/fr/blog/k-high-board-cbet | Le flop hauteur Roi où le caller checke 99,8 % | /images/gto-srp-dry-king-oop-fr.webp
+/fr/blog/a-high-board-cbet | Top paire, et pourtant check : le c-bet sur A-7-2 | /images/gto-srp-dry-ace-oop-fr.webp
 :::
 
 ## Vérifie toi-même
@@ -189,9 +189,9 @@ Pour t'entraîner au lieu de lire, ouvre le **Trainer GTO** dans la barre latér
 
 A. Trois : AK pour A-K-Q-J-10, K9 pour K-Q-J-10-9, et 98 pour Q-J-10-9-8. Aucune des cartes dont elles ont besoin — As, Roi, 9, 8 — n'est au board, donc chacune vaut 4 × 4 = 16 combos, 48 au total. La grosse blinde 3-bet AK préflop, ce qui lui en laisse 32.
 
-**Q. Un board humide, ce n'est pas justement l'endroit pour lead en semi-bluff ?**
+**Q. Un board humide, ce n'est pas justement l'endroit pour faire un lead en semi-bluff ?**
 
-A. Non — le nombre de tirages ne décide pas à lui seul. La répartition des mains faites, l'avantage de nuts et les bloqueurs doivent être pesés ensemble. Ici, les tirages quinte bilatéraux font 28,7 % contre 27,7 % — en pratique identiques — alors que les quintes déjà faites font 7,1 % contre 10,5 % en faveur du bouton. Un lead exige que le haut de la range soit de ton côté, pas la moyenne, et ce flop est exactement l'inverse. Il existe dans la sélection d'étude un board où la condition est vraiment remplie — le [9-8-7 médian connecté](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), où la grosse blinde fait 23,7 % de lead contre presque rien ici.
+A. Non — le nombre de tirages ne décide pas à lui seul. La répartition des mains faites, l'avantage de nuts et les bloqueurs doivent être pesés ensemble. Ici, les tirages quinte bilatéraux font 28,7 % contre 27,7 % — en pratique identiques — alors que les quintes déjà faites font 7,1 % contre 10,5 % en faveur du bouton. Un lead exige que le haut de la range soit de ton côté, pas la moyenne, et ce flop est exactement l'inverse. Il existe dans la sélection d'étude un board où la condition est vraiment remplie — le [9-8-7 médian connecté](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), où la grosse blinde fait 23,7 % de lead contre presque rien ici.
 
 **Q. Quelle est la différence entre avantage de range et avantage de nuts ?**
 

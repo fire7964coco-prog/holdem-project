@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-short-stack",
   title: "Comment jouer un short stack au poker ? Stratégie tournoi à 15, 10 et 5 BB",
   seoTitle: "Short stack en tournoi de poker ? Jouer à 15, 10 et 5 BB",
-  desc: "Short stack en tournoi de poker ? Voici quand faire tapis à 15, 10 et 5 big blinds, les zones de la valeur M de Harrington et le piège ICM sur la bulle.",
-  tldr: "Un short stack (en gros sous 20–25 big blinds) ne joue plus un poker postflop normal : vers 15 big blinds, il passe en push or fold. Fais tapis first-in pour garder ta fold equity, sans limper ni min-raiser pour folder ensuite. Shove plus large en position tardive, garde une range de call plus serrée que ta range de shove, et ne fonds pas « en attendant une main » : ta fold equity est ton arme, et elle s'effondre sous 8 big blinds environ.",
+  desc: "Short stack en tournoi de poker ? Voici quand faire tapis à 15, 10 et 5 grosses blindes, les zones de la valeur M de Harrington et le piège ICM sur la bulle.",
+  tldr: "Un short stack (en gros sous 20–25 grosses blindes) ne joue plus un poker postflop normal : vers 15 grosses blindes, il passe en push or fold. Fais tapis first-in pour garder ta fold equity, sans limper ni min-raiser pour folder ensuite. Shove plus large en position tardive, garde une range de call plus serrée que ta range de shove, et ne fonds pas « en attendant une main » : ta fold equity est ton arme, et elle s'effondre sous 8 grosses blindes environ.",
   category: "tournament",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Un short stack de jetons de tournoi à côté d'un gros stack sur la feutrine verte, l'horloge du tournoi en arrière-plan — le moment où le joueur en short stack doit faire tapis ou se coucher",
   tags: ["short stack poker", "short stack tournoi", "short stack poker strategy", "stratégie short stack poker", "m ratio poker", "valeur m de harrington", "fold equity poker", "tapis effectif poker", "all in poker tournoi"],
   content: `
-Je ne suis jamais passé aussi vite de « encore en vie » à « éliminé » que le soir où j'ai min-raisé encore et encore avec un stack de 12 big blinds, en foldant à chaque relance, et en perdant une blinde et demie à chaque orbite jusqu'à être trop court pour faire peur à qui que ce soit. Quand j'ai enfin fait tapis, il me restait quatre big blinds et deux joueurs m'ont payé. ==Je n'ai pas été malchanceux — j'ai joué un short stack comme s'il était profond.== Dès que ton stack devient petit, tout le jeu change, et ce sont les joueurs qui connaissent les nouvelles règles qui mènent la table.
+Je ne suis jamais passé aussi vite de « encore en vie » à « éliminé » que le soir où j'ai min-raisé encore et encore avec un stack de 12 grosses blindes, en foldant à chaque relance, et en perdant une blinde et demie à chaque orbite jusqu'à être trop court pour faire peur à qui que ce soit. Quand j'ai enfin fait tapis, il me restait quatre grosses blindes et deux joueurs m'ont payé. ==Je n'ai pas été malchanceux — j'ai joué un short stack comme s'il était profond.== Dès que ton stack devient petit, tout le jeu change, et ce sont les joueurs qui connaissent les nouvelles règles qui mènent la table.
 
 ==Un short stack n'a qu'une mission : faire tapis first-in (premier à entrer dans le coup), garder sa fold equity et choisir le bon moment avant que les blindes ne le choisissent à sa place.== C'est le poker en push or fold, et c'est l'avantage le plus facile à apprendre en tournoi — un ensemble de règles nettes que tu appliques dès que ton stack fond. Cet article est le chapitre « action » de la trilogie des maths de tournoi : [l'ICM (Independent Chip Model)](/fr/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") est la théorie, [la bulle](/fr/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") est le moment critique, et le jeu en short stack, ce sont les coups que tu joues vraiment dans le [tournoi](/fr/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
 
@@ -33,9 +33,9 @@ call plus serré | que ton shove
 
 ---
 
-## C'est quoi un short stack au poker ? (et combien de big blinds)
+## C'est quoi un short stack au poker ? (et combien de grosses blindes)
 
-**Un short stack (« petit tapis ») est un stack trop petit pour jouer un poker postflop normal — en gros sous 20–25 big blinds, le push or fold prenant le relais à partir d'environ 15 big blinds et en dessous.** Ce ne sont pas des seuils stricts ; ce sont les zones où tes options s'effondrent. Avec 60 big blinds, tu peux relancer, payer, flotter et surclasser tes adversaires après le flop. Avec 12, presque tout ça disparaît — tu décides, surtout avant le flop, si tu fais tapis ou si tu te couches.
+**Un short stack (« petit tapis ») est un stack trop petit pour jouer un poker postflop normal — en gros sous 20–25 grosses blindes, le push or fold prenant le relais à partir d'environ 15 grosses blindes et en dessous.** Ce ne sont pas des seuils stricts ; ce sont les zones où tes options s'effondrent. Avec 60 grosses blindes, tu peux relancer, payer, flotter et surclasser tes adversaires après le flop. Avec 12, presque tout ça disparaît — tu décides, surtout avant le flop, si tu fais tapis ou si tu te couches.
 
 Voici la carte pratique selon la profondeur de stack (approximations sans ante, table pleine — les antes font descendre chaque tranche un peu plus bas) :
 
@@ -51,7 +51,7 @@ Voici la carte pratique selon la profondeur de stack (approximations sans ante, 
 
 </div>
 
-La plus grosse erreur, c'est de ne pas savoir sur quelle ligne tu te trouves. Un stack de 12 big blinds qui continue d'ouvrir puis de folder joue le jeu des 40 big blinds et perd un peu à chaque orbite, jusqu'à se retrouver sur la ligne ≤5bb sans plus aucun levier.
+La plus grosse erreur, c'est de ne pas savoir sur quelle ligne tu te trouves. Un stack de 12 grosses blindes qui continue d'ouvrir puis de folder joue le jeu des 40 grosses blindes et perd un peu à chaque orbite, jusqu'à se retrouver sur la ligne ≤5bb sans plus aucun levier.
 
 ---
 
@@ -61,7 +61,7 @@ La plus grosse erreur, c'est de ne pas savoir sur quelle ligne tu te trouves. Un
 
 Pense à ce que fait un min-raise quand tu es court : il engage des jetons, invite une relance que tu ne peux pas payer et laisse tes adversaires réaliser leur équité à bas prix. Un ==shove== fait l'inverse. Il dit « paie pour ton tournoi ou couche-toi », et la plupart des mains se couchent. Quand tu ramasses les blindes et les antes sans contestation assez souvent, ==tu es gagnant même les fois où tu es payé et où tu perds==, parce que les pots gratuits les financent largement.
 
-Le hic, c'est que la fold equity ==diminue à mesure que ton stack fond==. À 12–15 big blinds, les adversaires se couchent beaucoup — ton shove fait peur. Elle commence à s'effacer vers 8–10 big blinds, et à 4–5, ils ont [une cote tellement bonne](/fr/blog/holdem-pot-odds) qu'ils paient avec presque n'importe quoi — ta fold equity a quasiment disparu. C'est toute la raison de ne pas attendre : ==fais tapis tant que ton all-in fait encore peur==, pas après.
+Le hic, c'est que la fold equity ==diminue à mesure que ton stack fond==. À 12–15 grosses blindes, les adversaires se couchent beaucoup — ton shove fait peur. Elle commence à s'effacer vers 8–10 grosses blindes, et à 4–5, ils ont [une cote tellement bonne](/fr/blog/holdem-pot-odds) qu'ils paient avec presque n'importe quoi — ta fold equity a quasiment disparu. C'est toute la raison de ne pas attendre : ==fais tapis tant que ton all-in fait encore peur==, pas après.
 
 ---
 
@@ -83,7 +83,7 @@ Le hic, c'est que la fold equity ==diminue à mesure que ton stack fond==. À 12
 
 </div>
 
-**Comment le M se convertit en big blinds :** sans ante, une orbite coûte la petite blinde plus la grosse blinde — environ 1,5 big blinds — donc ==M ≈ ton stack en big blinds ÷ 1,5==. Un M de 10 correspond à peu près à 15 big blinds ; un M de 5, à environ 7–8. Ajoute des antes et chaque orbite coûte plus cher : le même stack en big blinds a donc un M *plus bas* — et c'est exactement pour ça que les niveaux avec antes forcent l'action plus tôt. Les joueurs modernes comptent en général simplement en big blinds, mais le M est la même idée dans une autre unité, et il intègre les antes automatiquement. Harrington a ensuite ajouté le « M effectif » (ajusté selon le nombre de joueurs à la table), car une table short-handed (à peu de joueurs) te ronge en blindes plus vite.
+**Comment le M se convertit en grosses blindes :** sans ante, une orbite coûte la petite blinde plus la grosse blinde — environ 1,5 grosse blinde — donc ==M ≈ ton stack en grosses blindes ÷ 1,5==. Un M de 10 correspond à peu près à 15 grosses blindes ; un M de 5, à environ 7–8. Ajoute des antes et chaque orbite coûte plus cher : le même stack en grosses blindes a donc un M *plus bas* — et c'est exactement pour ça que les niveaux avec antes forcent l'action plus tôt. Les joueurs modernes comptent en général simplement en grosses blindes, mais le M est la même idée dans une autre unité, et il intègre les antes automatiquement. Harrington a ensuite ajouté le « M effectif » (ajusté selon le nombre de joueurs à la table), car une table short-handed (à peu de joueurs) te ronge en blindes plus vite.
 
 ---
 
@@ -125,7 +125,7 @@ Sers-t'en pour construire ton intuition, pas comme une loi de la nature :
 - **C'est un modèle heads-up / blindes seules.** Les vrais spots comptent plusieurs joueurs encore à parler, des reads et des paliers de gains (pay jumps) qu'un tableau ne voit pas.
 - **Ce qu'il faut retenir de fiable, c'est la forme**, pas la main exacte : shove plus large en position tardive, paie plus serré que tu ne shoves, et fais tapis plus souvent à mesure que ton stack baisse. Pour le vrai chiffre dans un spot ICM ou de bulle réel, entre tes stacks et tes gains dans le [calculateur ICM](/fr/calculator) plutôt que de te fier à une range imprimée.
 
-*(Une nuance pour les curieux : à 10–15 big blinds, les bons joueurs glissent parfois un petit min-raise avec des mains premium pour provoquer des shoves de mains dominées. Ça peut rapporter plus que le shove pur — mais c'est une option avancée. Le push or fold est le cadre fiable ; maîtrise-le d'abord.)*
+*(Une nuance pour les curieux : à 10–15 grosses blindes, les bons joueurs glissent parfois un petit min-raise avec des mains premium pour provoquer des shoves de mains dominées. Ça peut rapporter plus que le shove pur — mais c'est une option avancée. Le push or fold est le cadre fiable ; maîtrise-le d'abord.)*
 
 ---
 
@@ -148,7 +148,7 @@ Les vrais calculs derrière « de combien mon bubble factor est-il plus bas » s
 1. **Limper en premier (open-limp).** Ça abandonne ta fold equity et gonfle un pot que tu ne peux pas jouer postflop. Un short stack relance ou se couche — et en général, cette relance est un shove.
 2. **Min-raiser puis folder avec du déchet.** Relancer un quart de ton stack et folder face à un shove, c'est le pire des deux mondes. Si une main n'est pas assez bonne pour partir à tapis, elle n'est pas assez bonne pour relancer.
 3. **Payer des all-ins à l'instinct.** Ta range de call doit rester plus serrée que ta range de shove — mais « c'est sûrement un flip » est une supposition, pas une raison. Calcule plutôt le prix : en grosse blinde, la petite blinde morte fait qu'un vrai flip franchit déjà la barre en chip EV (cEV), et c'est la pression des paliers de gains, pas le flip lui-même, qui peut le transformer en fold. Deviner fait fuir des jetons dans les deux sens.
-4. **Se laisser manger par les blindes jusqu'à n'avoir plus rien.** Attendre une paire d'as jusqu'à ce qu'il te reste trois big blinds, c'est jeter la fold equity qui rend le shove rentable. Agis tant que ton all-in fait encore peur (en général, avant de passer sous ~8–10bb).
+4. **Se laisser manger par les blindes jusqu'à n'avoir plus rien.** Attendre une paire d'as jusqu'à ce qu'il te reste trois grosses blindes, c'est jeter la fold equity qui rend le shove rentable. Agis tant que ton all-in fait encore peur (en général, avant de passer sous ~8–10bb).
 5. **Ignorer la position.** Ne faire tapis qu'avec des premiums au bouton, ou shover trop large sous le pistolet, fait fuir des jetons dans les deux cas. Élargis en position tardive, resserre en position précoce.
 
 Évite ces cinq erreurs et tu battras déjà la majeure partie du field, qui joue un short stack comme un stack profond jusqu'au moment de sauter.
@@ -162,9 +162,9 @@ Les vrais calculs derrière « de combien mon bubble factor est-il plus bas » s
 
 ## FAQ
 
-**Q. Un short stack, c'est combien de big blinds ?**
+**Q. Un short stack, c'est combien de grosses blindes ?**
 
-A. En gros, sous 20–25 big blinds environ, tu es « court », et le push or fold prend le relais à partir d'environ 15 big blinds et en dessous, pour devenir un shove-ou-fold presque pur vers 10. Ce sont des zones, pas des règles strictes — les antes, la taille de la table et l'ICM les déplacent toutes. L'essentiel : sous ~15 big blinds, tu décides surtout si tu fais tapis avant le flop, tu ne joues plus un poker postflop.
+A. En gros, sous 20–25 grosses blindes environ, tu es « court », et le push or fold prend le relais à partir d'environ 15 grosses blindes et en dessous, pour devenir un shove-ou-fold presque pur vers 10. Ce sont des zones, pas des règles strictes — les antes, la taille de la table et l'ICM les déplacent toutes. L'essentiel : sous ~15 grosses blindes, tu décides surtout si tu fais tapis avant le flop, tu ne joues plus un poker postflop.
 
 **Q. C'est quoi la stratégie push or fold ?**
 
@@ -180,19 +180,19 @@ A. Couche-toi bien plus souvent que tu ne shoverais — ta range de call est bea
 
 **Q. Faut-il parfois limper en short stack ?**
 
-A. Presque jamais quand tu es le premier à entrer. L'open-limp abandonne ta fold equity et construit un pot que tu ne sais pas jouer postflop. En short stack, le jeu standard est relance ou fold, et avec 15 big blinds ou moins, cette relance est en général un all-in. (Compléter depuis la petite blinde derrière d'autres limpeurs avec un tout petit stack est une rare exception.)
+A. Presque jamais quand tu es le premier à entrer. L'open-limp abandonne ta fold equity et construit un pot que tu ne sais pas jouer postflop. En short stack, le jeu standard est relance ou fold, et avec 15 grosses blindes ou moins, cette relance est en général un all-in. (Compléter depuis la petite blinde derrière d'autres limpeurs avec un tout petit stack est une rare exception.)
 
 **Q. Le min-raise est-il parfois correct en short stack ?**
 
-A. Comme réglage par défaut de débutant, non — min-raiser puis folder est une fuite classique. Comme coup avancé à 10–15 big blinds, les bons joueurs min-raisent parfois des mains premium pour provoquer des shoves de mains moins bonnes. Apprends d'abord un push or fold fiable ; n'ajoute la variante du min-raise qu'une fois que c'est devenu automatique.
+A. Comme réglage par défaut de débutant, non — min-raiser puis folder est une fuite classique. Comme coup avancé à 10–15 grosses blindes, les bons joueurs min-raisent parfois des mains premium pour provoquer des shoves de mains moins bonnes. Apprends d'abord un push or fold fiable ; n'ajoute la variante du min-raise qu'une fois que c'est devenu automatique.
 
 **Q. C'est quoi la valeur M (M de Harrington) au poker ?**
 
-A. La valeur M, c'est ton stack divisé par le coût d'une orbite (petite blinde + grosse blinde + antes) — le nombre de tours que tu peux survivre en te couchant. Les zones de Harrington sont la Zone verte (20+), la Zone jaune (de 10 à moins de 20), la Zone orange (de 6 à moins de 10), la Zone rouge (de 1 à moins de 6) et la Zone morte (moins de 1). Plus ton M est bas, plus tu dois prendre les spots shove-ou-fold. Sans ante, le M vaut à peu près tes big blinds ÷ 1,5.
+A. La valeur M, c'est ton stack divisé par le coût d'une orbite (petite blinde + grosse blinde + antes) — le nombre de tours que tu peux survivre en te couchant. Les zones de Harrington sont la Zone verte (20+), la Zone jaune (de 10 à moins de 20), la Zone orange (de 6 à moins de 10), la Zone rouge (de 1 à moins de 6) et la Zone morte (moins de 1). Plus ton M est bas, plus tu dois prendre les spots shove-ou-fold. Sans ante, le M vaut à peu près tes grosses blindes ÷ 1,5.
 
 **Q. C'est quoi la fold equity, et pourquoi diminue-t-elle ?**
 
-A. La fold equity, c'est le profit que tu fais quand tes adversaires se couchent face à ta mise ou à ton shove. Quand tu es court et que tu fais tapis, la fold equity est ton arme principale — les blindes et les antes que tu ramasses gratuitement. Elle diminue à mesure que ton stack baisse, parce que tes adversaires obtiennent une meilleure cote pour payer ; sous environ 5 big blinds, ils paient si large que ton all-in ne fait presque plus coucher personne.
+A. La fold equity, c'est le profit que tu fais quand tes adversaires se couchent face à ta mise ou à ton shove. Quand tu es court et que tu fais tapis, la fold equity est ton arme principale — les blindes et les antes que tu ramasses gratuitement. Elle diminue à mesure que ton stack baisse, parce que tes adversaires obtiennent une meilleure cote pour payer ; sous environ 5 grosses blindes, ils paient si large que ton all-in ne fait presque plus coucher personne.
 
 **Q. La stratégie short stack est-elle différente en cash game ?**
 
@@ -200,7 +200,7 @@ A. Oui. En cash game (ou « partie libre »), tu peux te recaver ou compléter t
 
 **Q. C'est quoi un stack au poker ?**
 
-A. Ton stack, ce sont les jetons que tu as devant toi. En tournoi, on le compte en big blinds plutôt qu'en jetons, parce que c'est ce nombre qui dit ce que tu peux faire : avec 60 big blinds, tu peux relancer, payer, flotter et jouer après le flop ; avec 12, presque tout ça disparaît et tu décides surtout, avant le flop, si tu fais tapis ou si tu te couches. C'est pour ça que tout cet article raisonne en big blinds.
+A. Ton stack, ce sont les jetons que tu as devant toi. En tournoi, on le compte en grosses blindes plutôt qu'en jetons, parce que c'est ce nombre qui dit ce que tu peux faire : avec 60 grosses blindes, tu peux relancer, payer, flotter et jouer après le flop ; avec 12, presque tout ça disparaît et tu décides surtout, avant le flop, si tu fais tapis ou si tu te couches. C'est pour ça que tout cet article raisonne en grosses blindes.
 
 **Q. Qu'est-ce que le tapis effectif au poker ?**
 

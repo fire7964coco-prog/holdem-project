@@ -46,6 +46,8 @@ const CHART_L10N = {
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
   de: { title: 'Range-Zusammensetzung', source: 'Berechnet mit dem GTO-Solver von HoldemMaster · ohne Rake',
         equity: 'Equity', eqr: 'Equity-Realisierung' }, // 2026-10-02 · «Equity-Realisierung» = de 코퍼스 다수형(16회) · 세부 분류명은 라이브 DE UI
+  fr: { title: 'Composition des ranges', source: 'Calculé avec le solver GTO de HoldemMaster · sans rake',
+        equity: 'Équité', eqr: "Réalisation d'équité" }, // 2026-10-07 · 계획 §3-A ④(équité · la range) · 🅶 신규 용어 «réalisation d'équité (EQR)» · «Sans rake»
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
         equity: '勝率 (EQ)', eqr: '勝率實現 (EQR)' },   // 2026-09-03 · 앱 번체 축어(解算器 · 勝率實現) — 간체 求解器/权益实现과 다르다
 };
@@ -59,9 +61,11 @@ const num = (s) => {
   if (!/^\d+(?:\.\d+)?$/.test(value) || !Number.isFinite(Number(value))) throw new Error(`잘못된 백분율: ${s}`);
   return Number(value);
 };
-const commaDecimal = ['pt', 'id', 'de'].includes(LANG);
+const commaDecimal = ['pt', 'id', 'de', 'fr'].includes(LANG);
+const pctSep = LANG === 'fr' ? ' ' : ''; // fr 조판: % 앞 공백(계획 §3-A ②) — 줄바꿈 안 되는 공백(일반 공백이면 긴 막대 값이 «38,4 / %»로 갈렸다)
+const footPct = (v) => (LANG === 'fr' ? pct(num(v)) : v); // fr만 하단 EQ·EQR도 같은 조판(앱 원문은 «58,3%»)
 const stackedHeading = ['pt', 'id', 'ms', 'hi', 'de'].includes(LANG);
-const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
+const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + pctSep + '%';
 
 /** Partial spot sets are valid, but every selected spot must supply both chart panels. */
 function validateChartData(data) {
@@ -96,7 +100,7 @@ if (process.argv.includes('--selftest')) {
   const { strict: assert } = await import('node:assert');
   for (const [raw, expected] of [['98,2%', 98.2], ['0,1%', 0.1], ['98.2%', 98.2], ['0%', 0], ['100,0%', 100]]) assert.equal(num(raw), expected);
   for (const raw of ['', '—', '1,2,3%', '12oops%', '9'.repeat(400)]) assert.throws(() => num(raw));
-  assert.equal(pct(num('0,1%')), commaDecimal ? '0,1%' : '0.1%');
+  assert.equal(pct(num('0,1%')), commaDecimal ? '0,1' + pctSep + '%' : '0.1%');
   console.log('✔ percentage parsing: dot/comma, zero, bounds, invalid input, locale display');
   const panel = { header: 'Back | Example | A♥7♦2♣', players: ['OOP (BB)', 'IP (BTN)'],
     total: ['All', '', '464.0', '45.1%', '2.09', '84.0%'], hands: [{ label: 'Top Pair', pct: '20.7%' }] };
@@ -202,8 +206,8 @@ function html(d) {
     </div>
     <div class="rows">${body}</div>
     <div class="foot">
-      <span>${C.equity} <b>${d.oop.total[3]}</b> · <b>${d.ip.total[3]}</b></span>
-      <span>${C.eqr} <b>${d.oop.total[5]}</b> · <b>${d.ip.total[5]}</b></span>
+      <span>${C.equity} <b>${footPct(d.oop.total[3])}</b> · <b>${footPct(d.ip.total[3])}</b></span>
+      <span>${C.eqr} <b>${footPct(d.oop.total[5])}</b> · <b>${footPct(d.ip.total[5])}</b></span>
       <span class="mark">♠ holdemmaster.com</span>
     </div>
   </div></body></html>`;

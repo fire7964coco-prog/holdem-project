@@ -12,7 +12,7 @@ export const POST: Post = {
   title: "Aucune des deux ranges n'a de quinte ici",
   seoTitle: "Aucune quinte ici — quand faire un check-raise au poker",
   desc: "Sur 6-5-2, une seule main fait quinte et aucun des deux joueurs ne l'a. Alors la grosse blinde checke 96,8 % et garde toute son agression pour le check-raise.",
-  tldr: "Sur le flop bas rainbow 6♠5♥2♦, la grosse blinde checke 96,8 % et lead seulement 3,2 %, alors que ses 48,3 % d'équité sont la deuxième valeur la plus haute des sept spots où elle défend. Une seule main fait quinte ici, 4-3, et aucune des deux ranges ne l'a. Personne n'a le haut du board, donc personne ne lead hors de position. L'action vient plus tard : résous le même arbre au-delà du flop et la grosse blinde check-raise une mise de 1,8bb 14,9 % du temps, surtout avec des tirages.",
+  tldr: "Sur le flop bas rainbow 6♠5♥2♦, la grosse blinde checke 96,8 % et lead seulement 3,2 %, alors que ses 48,3 % d'équité sont la deuxième valeur la plus haute des sept spots où elle défend. Une seule main fait quinte ici, 4-3, et aucune des deux ranges ne l'a. Personne n'a le haut de range, donc personne ne lead hors de position. L'action vient plus tard : résous le même arbre au-delà du flop et la grosse blinde check-raise une mise de 1,8bb 14,9 % du temps, surtout avec des tirages.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -20,13 +20,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🌊",
-  image: "/images/gto-srp-low-rainbow-oop-en.webp",
+  image: "/images/gto-srp-low-rainbow-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur le flop bas rainbow 6♠5♥2♦ : la grille 13x13 de la grosse blinde presque entièrement verte, avec une fine bande orange de leads",
   tags: ["check raise poker", "quand faire un check-raise", "check raise definition", "board humide poker", "flop bas rainbow", "gutshot"],
   content: `
 Le flop est **6♠ 5♥ 2♦**. Trois cartes basses, trois couleurs différentes : donc aucun tirage couleur, et une couleur aurait besoin des deux cartes restantes.
 
-Ça ressemble au genre de board que la grosse blinde (BB) devrait attaquer. Son équité ici est de **48,3 %**, la deuxième valeur la plus haute des sept spots de cette série où elle défend, devant les 45,1 % du [flop hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") et les 46,3 % du flop hauteur Roi.
+Ça ressemble au genre de board que la grosse blinde (BB) devrait attaquer. Son équité ici est de **48,3 %**, la deuxième valeur la plus haute des sept spots de cette série où elle défend, devant les 45,1 % du [flop hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp") et les 46,3 % du flop hauteur Roi.
 
 Elle fait un donk bet (ou lead) **3,2 %** du temps.
 
@@ -94,7 +94,7 @@ Le board avec la plus faible équité (45,1 %) lead plus que le board broadway (
 
 Mets maintenant ⑦ à côté de ④. L'écart d'équité est de **0,2 point de pourcentage**. L'écart de lead, c'est **3,2 % contre 23,7 %.**
 
-**La différence, ce sont les quintes.** Sur [9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), la grosse blinde arrive avec 24 combos de quinte faite : J-T, T-6 assortis et 6-5 assortis. Sur 6-5-2, la seule main qui en complète une est **4-3**, qui remplit ==2-3-4-5-6==. Pour construire la quinte par l'autre bout, il te faudrait 7, 8 et 9 : **trois cartes, et tu n'en tiens que deux.**
+**La différence, ce sont les quintes.** Sur [9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), la grosse blinde arrive avec 24 combos de quinte faite : J-T, T-6 assortis et 6-5 assortis. Sur 6-5-2, la seule main qui en complète une est **4-3**, qui remplit ==2-3-4-5-6==. Pour construire la quinte par l'autre bout, il te faudrait 7, 8 et 9 : **trois cartes, et tu n'en tiens que deux.**
 
 Et 4-3 n'est dans aucune des deux ranges. **Le panneau de catégories du solver n'a aucune ligne « Quinte »**, et 43s et 43o sont grisés dans les deux matrices : la main n'arrive jamais dans ce spot, sous aucune forme.
 
@@ -104,7 +104,7 @@ Et 4-3 n'est dans aucune des deux ranges. **Le panneau de catégories du solver 
 
 **La grosse blinde gagne sur les paires et perd sur tout ce qui est au-dessus.** Elle tient plus de top paires, plus de deuxièmes paires et plus de paires faibles que le bouton ; les brelans et les doubles paires sont à égalité parfaite ; et ses overpairs pèsent à peine la moitié de celles du bouton. Presque les trois quarts des deux ranges n'ont aucune paire : c'est ce qui fait de ce spot une bataille d'overcards plutôt qu'une bataille de value, et c'est pour ça que la main qui la gagne est généralement encore en train de tirer.
 
-![Composition des ranges sur un board bas rainbow, la grosse blinde devant sur les paires et le bouton devant sur les overpairs](/images/gto-srp-low-rainbow-ranges-en.webp "6♠5♥2♦ · composition des ranges — la grosse blinde devant sur les paires, le bouton devant sur les overpairs")
+![Composition des ranges sur un board bas rainbow, la grosse blinde devant sur les paires et le bouton devant sur les overpairs](/images/gto-srp-low-rainbow-ranges-fr.webp "6♠5♥2♦ · composition des ranges — la grosse blinde devant sur les paires, le bouton devant sur les overpairs")
 
 | Catégorie | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -230,8 +230,8 @@ Cette combinaison, un plafond bas et un plancher large, c'est ce qui produit les
 - **Ne te couche pas trop face à une petite mise.** Face à 1,8bb dans 5,5bb, le solver garde **80,5 %** de sa range, au-dessus du seuil de rentabilité de 75,3 %. Coucher tes mains hauteur Roi et tes paires faibles sur une seule petite mise, c'est l'habitude la plus exploitable sur un board comme celui-ci.
 
 :::readnext[À lire ensuite]
-/fr/blog/paired-board-strategy | Tu as plus de brelans (trips) et tu checkes quand même 97 % | /images/gto-srp-paired-oop-en.webp
-/fr/blog/monotone-board-strategy | La couleur max qui checke sept fois sur dix | /images/gto-srp-monotone-oop-en.webp
+/fr/blog/paired-board-strategy | Tu as plus de brelans (trips) et tu checkes quand même 97 % | /images/gto-srp-paired-oop-fr.webp
+/fr/blog/monotone-board-strategy | La couleur max qui checke sept fois sur dix | /images/gto-srp-monotone-oop-fr.webp
 :::
 
 ## Vérifie toi-même
@@ -246,7 +246,7 @@ Ouvre ensuite le **Trainer GTO** dans la barre latérale : il te distribue une m
 
 ## FAQ
 
-**Q. Quand faut-il check-raise au poker ?**
+**Q. Quand faut-il faire un check-raise au poker ?**
 
 A. Quand ta range a des mains qui gagnent à grossir le pot et assez de tirages pour les équilibrer. Sur 6♠5♥2♦, c'est 14,9 % de la range de la grosse blinde face à une mise de 1,8bb : chaque brelan servi, les deux combos de double paire, et un bloc de tirages ventraux. La question n'est pas « est-ce que j'ai une bonne main ? » mais « est-ce que cette main veut que le pot grossisse, et est-ce que je trouve des bluffs qui s'améliorent quand ils sont payés ? »
 
@@ -258,7 +258,7 @@ A. Parce que ce n'est pas l'équité qui donne le droit de miser en premier, c'e
 
 A. Parce que c'est le haut d'une range qui décide qui mise en premier, pas sa moyenne. Sur 9-8-7, la grosse blinde arrive avec 24 combos de quinte faite ; sur 6-5-2, aucune des deux ranges n'en a. Deux dixièmes de point d'équité d'écart, et les leads sortent à 23,7 % contre 3,2 %.
 
-**Q. Quelles mains check-raise sur 6-5-2 ?**
+**Q. Avec quelles mains faire un check-raise sur 6-5-2 ?**
 
 A. Les neuf combos de brelan servi (66, 55, 22), les deux combos de 65 assorti, puis des tirages quinte : 98s pour le tirage ventral vers le sept, 87s pour le tirage bilatéral, et J4s, Q4s, 54s et 64s pour le tirage ventral vers le trois. Aucune n'a été choisie pour une carte haute : au-delà des brelans servis et de 65 assorti, la relance s'appuie surtout sur des tirages.
 

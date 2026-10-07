@@ -64,7 +64,7 @@ Quand tu t'inscris, tu paies le buy-in (droit d'entrée). Cet argent se divise e
 
 Les grands événements live conservent en général 8–10 % du buy-in en frais (les petits tournois quotidiens prennent souvent davantage) — ici $9 sur $109, soit environ 8,3 %. Comment fonctionnent ces frais (et pourquoi l'online diffère du live), c'est expliqué dans [comment fonctionne le rake au poker](/fr/blog/holdem-rake).
 
-En échange, tu reçois un **stack de départ** — souvent de 10 000 à 50 000 jetons de tournoi, soit en général 100–300 big blinds de profondeur au niveau 1.
+En échange, tu reçois un **stack de départ** — souvent de 10 000 à 50 000 jetons de tournoi, soit en général 100–300 grosses blindes de profondeur au niveau 1.
 
 **Ton stack de départ n'a aucune valeur en argent.** Un stack de 10 000 jetons ne vaut pas $10 000 — c'est simplement ta vie dans le tournoi. La seule chose qui compte, c'est d'avoir plus de jetons que les autres quand arrivent les places payées.
 
@@ -80,14 +80,14 @@ C'est ce que la plupart des guides pour débutants zappent, et c'est pourtant le
 
 | Niveau | Blindes | Antes | Ton stack de 10k = |
 |:---|:---:|:---:|:---|
-| 1 | 25 / 50 | — | 200 big blinds |
-| 3 | 75 / 150 | 150 | 67 big blinds |
-| 6 | 200 / 400 | 400 | 25 big blinds |
-| 9 | 500 / 1 000 | 1 000 | 10 big blinds |
+| 1 | 25 / 50 | — | 200 grosses blindes |
+| 3 | 75 / 150 | 150 | 67 grosses blindes |
+| 6 | 200 / 400 | 400 | 25 grosses blindes |
+| 9 | 500 / 1 000 | 1 000 | 10 grosses blindes |
 
 Remarque bien : **tu n'as pas perdu un seul jeton** entre le niveau 1 et le niveau 9. Pourtant ton stack est passé de 200BB à 10BB, simplement parce que les blindes ont monté. C'est comme ça qu'un tournoi force l'action et finit par éliminer les joueurs.
 
-==g:Règle empirique : sous 20 big blinds, tu entres dans la zone du push or fold, et à 15 c'est ton mode de jeu principal. Sous 10 big blinds, tu dois faire tapis avec presque toute main jouable — surtout en position tardive ou depuis la petite blinde — avant que les blindes ne te dévorent.==
+==g:Règle empirique : sous 20 grosses blindes, tu entres dans la zone du push or fold, et à 15 c'est ton mode de jeu principal. Sous 10 grosses blindes, tu dois faire tapis avec presque toute main jouable — surtout en position tardive ou depuis la petite blinde — avant que les blindes ne te dévorent.==
 
 Quand tu en es là, les ranges de shove précises sont dans [la stratégie short stack — quand faire tapis ou se coucher](/fr/blog/holdem-short-stack).
 
@@ -144,7 +144,7 @@ Un PKO (KO progressif) est un tournoi bounty où, en général, environ la moiti
 
 ### C'est quoi un tournoi deepstack ?
 
-Un tournoi deepstack te donne au départ beaucoup plus de jetons par rapport aux blindes que l'événement standard de la même série, et l'associe en général à des niveaux de blindes plus longs. **Il n'existe aucun seuil standardisé** — « deepstack » est toujours une étiquette relative. Calcule à partir de la feuille de structure combien de big blinds vaut ton stack au niveau 1, puis compare avec les 100–200 BB d'un événement standard. Plus de jetons et une horloge plus lente, ça veut dire plus de jeu postflop, plus de marge pour te remettre d'une erreur, et des journées plus longues.
+Un tournoi deepstack te donne au départ beaucoup plus de jetons par rapport aux blindes que l'événement standard de la même série, et l'associe en général à des niveaux de blindes plus longs. **Il n'existe aucun seuil standardisé** — « deepstack » est toujours une étiquette relative. Calcule à partir de la feuille de structure combien de grosses blindes vaut ton stack au niveau 1, puis compare avec les 100–200 BB d'un événement standard. Plus de jetons et une horloge plus lente, ça veut dire plus de jeu postflop, plus de marge pour te remettre d'une erreur, et des journées plus longues.
 
 **Et les recaves et les add-ons ?** Dans un tournoi rebuy, tu peux racheter pendant une fenêtre fixe au début — dans beaucoup d'événements, à chaque fois que ton stack est égal ou inférieur au montant de départ, sans avoir besoin d'être éliminé ; un add-on est un achat de jetons facultatif et unique, proposé en général à la fermeture de cette fenêtre. Ensuite, l'événement se joue comme un freezeout.
 
@@ -352,7 +352,7 @@ A. ITM = « In The Money », dans l'argent. Tu as atteint une place qui te garan
 
 **Q. Peut-on rejoindre un tournoi de poker déjà commencé ?**
 
-A. Oui, pendant la fenêtre d'inscription tardive — en général les premiers niveaux de blindes, souvent deux à quatre heures après le début. Tu reçois quand même le stack de départ complet, mais comme les blindes ont monté, tu t'assieds avec moins de big blinds que ceux qui sont entrés tôt. Une fois la late reg fermée, plus aucune entrée n'est acceptée.
+A. Oui, pendant la fenêtre d'inscription tardive — en général les premiers niveaux de blindes, souvent deux à quatre heures après le début. Tu reçois quand même le stack de départ complet, mais comme les blindes ont monté, tu t'assieds avec moins de grosses blindes que ceux qui sont entrés tôt. Une fois la late reg fermée, plus aucune entrée n'est acceptée.
 
 **Q. Peut-on quitter un tournoi de poker en cours et garder ses jetons ?**
 

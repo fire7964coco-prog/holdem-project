@@ -19,11 +19,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🔥",
-  image: "/images/gto-3bp-ace-king-oop-en.webp",
+  image: "/images/gto-3bp-ace-king-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster dans un pot 3-bet sur un flop hauteur As : toute la grille 13x13 de la grosse blinde colorée pour la mise, check affiché à 0,0 %",
   tags: ["spr poker", "spr poker c'est quoi", "stack effectif poker", "spr definition poker", "pot 3-bet", "c-bet pot 3-bet"],
   content: `
-Dans les sept spots précédents, la réponse de la grosse blinde (BB) était presque toujours de checker. Même sur le [flop 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), là où miser en premier comptait le plus, elle ne misait que 23,7 % du temps. Partout ailleurs, elle checkait entre 88,8 % et 99,9 % du temps.
+Dans les sept spots précédents, la réponse de la grosse blinde (BB) était presque toujours de checker. Même sur le [flop 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), là où miser en premier comptait le plus, elle ne misait que 23,7 % du temps. Partout ailleurs, elle checkait entre 88,8 % et 99,9 % du temps.
 
 Ici, elle fait l'inverse : **la grosse blinde mise toute sa range**, les 63 combos, chacun au moins 99,9 % du temps.
 
@@ -89,13 +89,13 @@ Dans les spots précédents, l'action perdante gardait encore une miette : 0,2 %
 
 (À l'écran, la grosse blinde n'a aucune ligne « Pas de main faite » : une catégorie à 0 % n'est pas affichée.)
 
-Regarde la première ligne. **Trois mains font un brelan servi sur A-K-2, AA, KK et 22, et le bouton ne détient que la dernière.** (Le panneau du solver nomme cette ligne *Set/Brelan*. Sur un board sans paire, une paire servie qui correspond à une carte du board est un **brelan servi (set)** ; la distinction est expliquée dans le [spot du board pairé](/fr/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-en.webp").) Le bouton 4-bet ses paires d'as et de rois avant le flop, donc il a trois combos de brelan servi contre six pour la grosse blinde.
+Regarde la première ligne. **Trois mains font un brelan servi sur A-K-2, AA, KK et 22, et le bouton ne détient que la dernière.** (Le panneau du solver nomme cette ligne *Set/Brelan*. Sur un board sans paire, une paire servie qui correspond à une carte du board est un **brelan servi (set)** ; la distinction est expliquée dans le [spot du board pairé](/fr/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-fr.webp").) Le bouton 4-bet ses paires d'as et de rois avant le flop, donc il a trois combos de brelan servi contre six pour la grosse blinde.
 
 C'est tout le spot. Quand ton adversaire ne peut presque pas avoir la meilleure main, tu peux miser avec les parties de ta range qui ne sont pas fortes du tout, et 38,1 % de cette range est une paire servie *sous* le roi.
 
-**« Pas de main faite : 0,0 % » n'est pas la raison, même s'il est facile de le croire.** La même range de 3-bet sur un board bas dit le contraire : sur le [flop 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") plus loin dans cette série, 48,2 % de la range de la grosse blinde est hauteur As sans aucune paire, et elle ne checke pourtant que **2,0 %**. Passer de 0 % d'air à 48 % d'air ne déplace le check que de deux points. Ce qui fait apparaître un check, ce n'est pas la quantité d'air que tu tiens ; c'est le fait que le board se retourne contre le 3-betteur.
+**« Pas de main faite : 0,0 % » n'est pas la raison, même s'il est facile de le croire.** La même range de 3-bet sur un board bas dit le contraire : sur le [flop 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-fr.webp") plus loin dans cette série, 48,2 % de la range de la grosse blinde est hauteur As sans aucune paire, et elle ne checke pourtant que **2,0 %**. Passer de 0 % d'air à 48 % d'air ne déplace le check que de deux points. Ce qui fait apparaître un check, ce n'est pas la quantité d'air que tu tiens ; c'est le fait que le board se retourne contre le 3-betteur.
 
-:::note[⚠ C'est l'image inversée du [flop hauteur As en pot simplement relancé](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). Là-bas, c'était la grosse blinde qui était **plafonnée** (pas d'AA, d'AK ni d'AQ, parce qu'elle les aurait 3-bet), et elle checkait 98,2 %. Même texture hauteur As, sièges opposés : le joueur qui a 3-bet est celui qui garde le haut.]:::
+:::note[⚠ C'est l'image inversée du [flop hauteur As en pot simplement relancé](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp"). Là-bas, c'était la grosse blinde qui était **plafonnée** (pas d'AA, d'AK ni d'AQ, parce qu'elle les aurait 3-bet), et elle checkait 98,2 %. Même texture hauteur As, sièges opposés : le joueur qui a 3-bet est celui qui garde le haut.]:::
 
 ## Le SPR au poker, c'est quoi ?
 
@@ -132,7 +132,7 @@ L'indice, c'est que **les nombres de combos ne sont pas entiers** : 26,4 en gros
 
 **Près de la moitié de sa range de call, 46,2 %, est une paire servie sans as ni roi**, donc il fonce droit sur un board qui a les deux.
 
-![Composition des ranges dans un pot 3-bet sur un flop hauteur As : la grosse blinde détient tous les combos de brelan servi tandis que la range du bouton se concentre sur les paires moyennes](/images/gto-3bp-ace-king-ranges-en.webp "Pot 3-bet A-K-2 · la grosse blinde garde le haut du board tandis que la range du bouton se tasse au milieu")
+![Composition des ranges dans un pot 3-bet sur un flop hauteur As : la grosse blinde détient tous les combos de brelan servi tandis que la range du bouton se concentre sur les paires moyennes](/images/gto-3bp-ace-king-ranges-fr.webp "Pot 3-bet A-K-2 · la grosse blinde garde le haut du board tandis que la range du bouton se tasse au milieu")
 
 Les underpairs font 46,2 %, soit 60 combos : de QQ à 33, dix paires à six combos chacune. Elles ne peuvent pas payer deux barrels sur cette texture.
 
@@ -176,8 +176,8 @@ Les 78,7 % du bouton (en position, IP) n'en sont pas une preuve à part : c'est 
 - **N'emporte pas « check 0 % » dans tous les pots 3-bet.** Ce qui le change, c'est le board plus que la range : la même range de 3-bet sur [8-5-2](/fr/blog/3bet-pot-low-board) checke 2,0 %, et sur un board qui tourne contre le 3-betteur, un vrai check apparaît. **C'est « un as et un roi ensemble » qui a produit ce zéro dans cet exemple, pas une condition que chaque pot 3-bet doit remplir.** Comment construire la range de 3-bet au départ est expliqué dans [la stratégie de 3-bet](/fr/blog/holdem-3bet).
 
 :::readnext[À lire ensuite]
-/fr/blog/low-board-check-raise | Aucune des deux ranges n'a de quinte ici | /images/gto-srp-low-rainbow-oop-en.webp
-/fr/blog/paired-board-strategy | Tu as plus de brelans (trips) et tu checkes quand même 97 % | /images/gto-srp-paired-oop-en.webp
+/fr/blog/low-board-check-raise | Aucune des deux ranges n'a de quinte ici | /images/gto-srp-low-rainbow-oop-fr.webp
+/fr/blog/paired-board-strategy | Tu as plus de brelans (trips) et tu checkes quand même 97 % | /images/gto-srp-paired-oop-fr.webp
 :::
 
 ## Vérifie toi-même
@@ -208,7 +208,7 @@ A. La range de call de cet exemple ne les contient pas : la plupart des AA et KK
 
 **Q. Pourquoi le petit sizing est-il plus utilisé que le gros ?**
 
-A. À cause de la forme de la range : les 63 combos sont tous une paire ou mieux, donc le bas a disparu et elle ne se sépare jamais en « nuts ou rien », et une range comme ça mise petit. **Pas parce que le stack est court :** le [spot Q-10-7](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") a le même SPR de 4,0 et utilise le gros sizing 98,4 % du temps.
+A. À cause de la forme de la range : les 63 combos sont tous une paire ou mieux, donc le bas a disparu et elle ne se sépare jamais en « nuts ou rien », et une range comme ça mise petit. **Pas parce que le stack est court :** le [spot Q-10-7](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-fr.webp") a le même SPR de 4,0 et utilise le gros sizing 98,4 % du temps.
 
 **Q. Ces chiffres tiennent-ils à ma limite ?**
 

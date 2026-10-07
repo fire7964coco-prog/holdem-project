@@ -61,7 +61,7 @@ Voici ce que dit vraiment la stratégie moderne, parce qu'on se trompe facilemen
 
 Le concept qui est dessous, c'est l'==avantage de range== : quelle range est globalement la plus forte sur ce flop précis. En tant que relanceur préflop, tu as plus de grosses cartes et d'overpaires, donc **les boards hauts et secs t'appartiennent** — et les boards pleins de cartes moyennes connectées appartiennent au joueur qui a payé. Maîtrise cette seule idée et tu as déjà une longueur d'avance sur tous les joueurs « je c-bet et puis c'est tout » de la table.
 
-Et l'avantage de range n'est pas toute l'histoire — ajoute la position par-dessus et l'effet devient extrême. Sur A-7-2 arc-en-ciel, un solver fait checker 98,2 % de sa range au joueur qui a payé, top paire comprise — l'équité de sa range n'est derrière qu'à 45,1 % contre 54,9 %, et pourtant le fait d'être hors de position transforme cet écart modeste en check quasi total. L'analyse complète est dans [top paire, et il checke quand même](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+Et l'avantage de range n'est pas toute l'histoire — ajoute la position par-dessus et l'effet devient extrême. Sur A-7-2 arc-en-ciel, un solver fait checker 98,2 % de sa range au joueur qui a payé, top paire comprise — l'équité de sa range n'est derrière qu'à 45,1 % contre 54,9 %, et pourtant le fait d'être hors de position transforme cet écart modeste en check quasi total. L'analyse complète est dans [top paire, et il checke quand même](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp").
 
 ---
 
@@ -125,7 +125,7 @@ Mettons de vrais chiffres. Disons que le pot fait ==$30== au flop :
 
 En **tournoi**, penche un peu plus petit : la petite taille reste au tiers, mais la grosse taille est plus souvent **la moitié du pot** que les deux tiers, parce que ton stack est précieux — en freezeout tu ne peux pas recaver, et même une re-entry coûte un nouveau buy-in. Quoi que tu choisisses, relie la taille au board, pas à l'habitude.
 
-Tu veux voir jusqu'où va la vitesse « gros sur board humide » ? Un solver à qui l'on donne deux tailles sur Q♥10♥7♠ dans un pot 3-beté met [98,4 % de sa range dans la mise aux deux tiers](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — et la raison est un prix que tu peux calculer, pas une sensation.
+Tu veux voir jusqu'où va la vitesse « gros sur board humide » ? Un solver à qui l'on donne deux tailles sur Q♥10♥7♠ dans un pot 3-beté met [98,4 % de sa range dans la mise aux deux tiers](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-fr.webp") — et la raison est un prix que tu peux calculer, pas une sensation.
 
 ---
 

@@ -20,7 +20,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🅰️",
-  image: "/images/gto-srp-dry-ace-oop-en.webp",
+  image: "/images/gto-srp-dry-ace-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop sec hauteur As A-7-2 : la grille 13x13 de la grosse blinde presque entièrement verte pour le check",
   tags: ["pourcentage de c-bet", "quand c-bet", "board sec poker", "avantage de range", "avantage de range poker", "board sec a-high", "réalisation d'équité"],
   content: `
@@ -85,7 +85,7 @@ Autre point : « un As » n'est pas un seul type de main. A9 perd au kicker cont
 
 Un board sec est un board sans tirage couleur et presque sans tirage quinte — trois cartes non connectées de trois couleurs différentes, comme A♥ 7♦ 2♣. Presque rien n'est en tirage : **71,3 % de la range de la grosse blinde n'a aucun tirage**, et l'essentiel du reste est un tirage couleur backdoor. Il favorise le relanceur parce que la range d'ouverture du bouton garde AK et AQ alors que la range de call de la grosse blinde s'arrête à AJ — les As sont empilés d'un seul côté, et il n'y a pas de tirages pour rééquilibrer plus tard.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board sec hauteur As, barres vertes et dorées côte à côte](/images/gto-srp-dry-ace-ranges-en.webp "A♥7♦2♣ · répartition par catégorie — le bouton a plus de top paires, la grosse blinde plus de mains vides")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board sec hauteur As, barres vertes et dorées côte à côte](/images/gto-srp-dry-ace-ranges-fr.webp "A♥7♦2♣ · répartition par catégorie — le bouton a plus de top paires, la grosse blinde plus de mains vides")
 
 Hors de position (OOP), c'est la grosse blinde, qui parle en premier ; en position (IP), c'est le bouton.
 

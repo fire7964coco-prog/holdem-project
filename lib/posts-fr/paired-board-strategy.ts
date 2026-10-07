@@ -19,7 +19,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "👯",
-  image: "/images/gto-srp-paired-oop-en.webp",
+  image: "/images/gto-srp-paired-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur le flop pairé bas 6♣6♦3♥ : la grille de la grosse blinde presque entièrement verte, avec les lignes carré et full dans le panneau",
   tags: ["trips ou set", "board pairé poker", "flop pairé", "paires servies", "fréquence de défense minimale", "paired board poker"],
   content: `
@@ -79,7 +79,7 @@ Cette différence compte parce que le brelan (trips) est bien plus fréquent que
 | Bet 4,1bb (75 % du pot) | **2,0 %** | 9,6 |
 | Bet 1,8bb (33 % du pot) | 1,0 % | 4,7 |
 
-**La grosse mise est plus fréquente que la petite**, pour la première fois dans cette série. Sur les deux boards où le lead comptait vraiment, le petit sizing l'emportait à plus de deux contre un : 16,8 % contre 6,9 % sur [le spot de donk bet (ou lead) sur 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), 8,0 % contre 3,2 % sur le [flop monotone](/fr/blog/monotone-board-strategy). Ici, ça s'inverse, et le tableau main par main plus bas montre pourquoi.
+**La grosse mise est plus fréquente que la petite**, pour la première fois dans cette série. Sur les deux boards où le lead comptait vraiment, le petit sizing l'emportait à plus de deux contre un : 16,8 % contre 6,9 % sur [le spot de donk bet (ou lead) sur 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), 8,0 % contre 3,2 % sur le [flop monotone](/fr/blog/monotone-board-strategy). Ici, ça s'inverse, et le tableau main par main plus bas montre pourquoi.
 
 ## Pourquoi checker quand tu as plus de brelans ?
 
@@ -99,7 +99,7 @@ D'abord, le compte. Avec 6♣ et 6♦ au board, il ne reste que 6♠ et 6♥ : c
 
 Maintenant, élargis le regard, et le tableau s'inverse.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board pairé bas](/images/gto-srp-paired-ranges-en.webp "6♣6♦3♥ · répartition par catégorie : les brelans favorisent le caller, mais la double paire et la hauteur As favorisent l'ouvreur")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board pairé bas](/images/gto-srp-paired-ranges-fr.webp "6♣6♦3♥ · répartition par catégorie : les brelans favorisent le caller, mais la double paire et la hauteur As favorisent l'ouvreur")
 
 | Catégorie | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -127,7 +127,7 @@ Miser en premier là-dedans échoue des deux côtés : avec un 6, tu ne fais cou
 
 La part du pot de la grosse blinde, hors de position (OOP), vaut ==5,5 × 47,2 % = 2,60bb==, et elle encaisse 2,17bb : ==2,17 ÷ 2,60 ≈ 83,7 %==. La part du bouton, en position (IP), est de 2,90bb contre 3,33bb d'EV, donc il encaisse **114,5 %**, plus que ce que vaut son pourcentage de victoire.
 
-L'écart de **30,8 points** est presque exactement les 29,1 points du [board sec hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **Un board pairé se joue comme un board sec** : les quatre cinquièmes de chaque range sont la même paire de 6 avec une carte haute différente, donc le coup se déroule sans bruit, et le joueur qui parle en dernier voit quelle carte haute est arrivée avant de choisir. Cet avantage, c'est tout l'écart.
+L'écart de **30,8 points** est presque exactement les 29,1 points du [board sec hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp"). **Un board pairé se joue comme un board sec** : les quatre cinquièmes de chaque range sont la même paire de 6 avec une carte haute différente, donc le coup se déroule sans bruit, et le joueur qui parle en dernier voit quelle carte haute est arrivée avant de choisir. Cet avantage, c'est tout l'écart.
 
 :::note[Chaque EQR de cette série est la valeur affichée par le solver. En divisant toi-même l'équité et l'EV arrondies, tu tombes à un dixième de point près : c'est de l'arrondi, pas une incohérence.]:::
 
@@ -212,15 +212,15 @@ Ce calcul ne sert donc pas à « atteindre 75 % » mais à **« ne pas te couche
 - **C'est ton kicker qui décide du coup.** Seuls trois combos battent directement le brelan : les trois fulls 33. (Le carré est hors jeu : dès que tu tiens toi-même un 6, 6♠6♥ ne peut pas exister, donc les quatre combos comptés dans la section full deviennent trois depuis ton siège.) Et ça ne vaut que si ton kicker est un As. Le deuxième kicker est fixé par le 3 du board, donc la seule carte à côté de ton 6 est toute ta main : avec 76s, les A6, K6, Q6 et 86 du bouton te dominent tous. Un brelan avec un kicker faible est un bluff-catcher, pas une main pour construire un pot.
 
 :::readnext[À lire ensuite]
-/fr/blog/monotone-board-strategy | La couleur max qui checke sept fois sur dix | /images/gto-srp-monotone-oop-en.webp
-/fr/blog/donk-bet-strategy | Le flop où le donk bet est juste : 9-8-7 | /images/gto-srp-middle-connected-oop-en.webp
+/fr/blog/monotone-board-strategy | La couleur max qui checke sept fois sur dix | /images/gto-srp-monotone-oop-fr.webp
+/fr/blog/donk-bet-strategy | Le flop où le donk bet est juste : 9-8-7 | /images/gto-srp-middle-connected-oop-fr.webp
 :::
 
 ## Vérifie toi-même
 
 Ouvre le [solver poker gratuit](/fr/solver), va dans **Spots d'étude → Board pairé → [⚡ Voir les résultats]**.
 
-Ce qu'il faut regarder, c'est **la ligne unique 6♠6♥** dans le tableau main par main : le seul carré que ce board permet, et avec **359,7 %**, la plus haute réalisation d'équité de toute cette série (en deuxième, le 88 du bouton dans le [pot 3-bet sur un board bas](/fr/blog/3bet-pot-low-board) à **346,0 %** ; côté grosse blinde, le dauphin est 6♥6♣ sur le [flop bas rainbow](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") à **318,9 %**). Compare-la avec les trois lignes 33 juste en dessous, et tu verras combien le tout haut d'un board pairé contient peu de combos.
+Ce qu'il faut regarder, c'est **la ligne unique 6♠6♥** dans le tableau main par main : le seul carré que ce board permet, et avec **359,7 %**, la plus haute réalisation d'équité de toute cette série (en deuxième, le 88 du bouton dans le [pot 3-bet sur un board bas](/fr/blog/3bet-pot-low-board) à **346,0 %** ; côté grosse blinde, le dauphin est 6♥6♣ sur le [flop bas rainbow](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-fr.webp") à **318,9 %**). Compare-la avec les trois lignes 33 juste en dessous, et tu verras combien le tout haut d'un board pairé contient peu de combos.
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale : il te distribue une main selon les poids réels des ranges et te montre combien de grosses blindes ton action te coûte. Gratuit, rien à installer, sans compte.
 

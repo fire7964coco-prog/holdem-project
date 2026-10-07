@@ -20,11 +20,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "⚔️",
-  image: "/images/gto-sb-king-mid-oop-en.webp",
+  image: "/images/gto-sb-king-mid-oop-fr.webp",
   imageAlt: "Solver HoldemMaster affichant la range de la petite blinde sur un flop rainbow K♥10♦6♠, la majeure partie de la grille colorée en orange pour la mise",
   tags: ["blind vs blind poker", "blind contre blind", "ouverture petite blinde", "flop hauteur roi", "réalisation d'équité", "c-bet hors de position"],
   content: `
-Sur les sept pots simplement relancés (single raised pots) vus plus tôt dans cette série, une règle revenait sans cesse. **Celui qui parle en premier checke.** Le plus haut que le joueur hors de position (OOP) ait jamais misé, c'était sur le [board connecté 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), à 23,7 %, et les six autres plafonnaient à 11,2 %. La seule exception était un pot 3-bet.
+Sur les sept pots simplement relancés (single raised pots) vus plus tôt dans cette série, une règle revenait sans cesse. **Celui qui parle en premier checke.** Le plus haut que le joueur hors de position (OOP) ait jamais misé, c'était sur le [board connecté 9-8-7](/fr/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-fr.webp"), à 23,7 %, et les six autres plafonnaient à 11,2 %. La seule exception était un pot 3-bet.
 
 Ici, ce n'est pas un pot 3-bet. C'est une main ordinaire : la petite blinde (SB) ouvre à 3bb, la grosse blinde (BB) paye. Et **le joueur qui parle en premier mise 67,4 %.**
 
@@ -87,7 +87,7 @@ Aligné avec le reste de la série, l'écart saute aux yeux.
 
 ## Pourquoi le joueur hors de position mise-t-il en premier ici ?
 
-**Parce que c'est le siège où l'agresseur préflop parle aussi en premier au flop.** ⚠ Dans cette série, toutes les mises en premier majoritaires viennent de ce siège, mais le siège ne garantit rien, et un caller peut quand même miser en premier une partie du temps (23,7 % sur ④). La même structure produit **9,6 %** [sur ⑫](/fr/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") et **80,1 %** [sur ⑬](/fr/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp"). Le siège ouvre la porte ; le board décide jusqu'où tu la franchis.
+**Parce que c'est le siège où l'agresseur préflop parle aussi en premier au flop.** ⚠ Dans cette série, toutes les mises en premier majoritaires viennent de ce siège, mais le siège ne garantit rien, et un caller peut quand même miser en premier une partie du temps (23,7 % sur ④). La même structure produit **9,6 %** [sur ⑫](/fr/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-fr.webp") et **80,1 %** [sur ⑬](/fr/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-fr.webp"). Le siège ouvre la porte ; le board décide jusqu'où tu la franchis.
 
 Dans une main ordinaire, ces deux choses se séparent. Quand le bouton ouvre et que la grosse blinde paye, **l'agresseur est le bouton mais celui qui parle en premier est la grosse blinde.** C'est ce qui construit la structure « check, puis c-bet (mise de continuation) », et c'est à ça que ressemblaient tous les spots de ① à ⑦.
 
@@ -115,7 +115,7 @@ Les deux ranges ici ont presque la même taille : **538 combos pour la SB, 525 p
 
 Contre une range large, tu **ne peux pas tout miser sur la chance qu'elle se couche.** Donc 32,6 % restent en check.
 
-Les mains qui checkent ont leur propre rôle. **Les mains trop faibles pour miser** et **les mains qui checkent pour provoquer une mise** vivent toutes là. Si l'adversaire lit ce check comme de la faiblesse et mise, un [check-raise](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") l'attend.
+Les mains qui checkent ont leur propre rôle. **Les mains trop faibles pour miser** et **les mains qui checkent pour provoquer une mise** vivent toutes là. Si l'adversaire lit ce check comme de la faiblesse et mise, un [check-raise](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-fr.webp") l'attend.
 
 :::note[⚠ Ce spot d'étude a été résolu avec un seul sizing, un tiers du pot, comme unique option. Ouvre un sizing plus gros dans l'arbre et les 67,4 % eux-mêmes peuvent bouger. Lis-le comme « petit et large est la réponse *dans ces conditions* ».]:::
 
@@ -123,7 +123,7 @@ Les mains qui checkent ont leur propre rôle. **Les mains trop faibles pour mise
 
 **Les catégories fortes sont du côté de la petite blinde ; les mains non faites sont du côté de la grosse blinde.**
 
-![Infographie de composition des ranges comparant les catégories de mains de la petite blinde et de la grosse blinde sur un board K-10-6](/images/gto-sb-king-mid-ranges-en.webp "K-10-6 en blind contre blind · composition catégorie par catégorie — la grosse blinde a environ 10 points de mains non faites en plus")
+![Infographie de composition des ranges comparant les catégories de mains de la petite blinde et de la grosse blinde sur un board K-10-6](/images/gto-sb-king-mid-ranges-fr.webp "K-10-6 en blind contre blind · composition catégorie par catégorie — la grosse blinde a environ 10 points de mains non faites en plus")
 
 | Catégorie | SB (OOP · ouvreur) | BB (IP · caller) |
 |---|---|---|
@@ -195,8 +195,8 @@ Les 96,1 % de la grosse blinde sont l'autre face de la même histoire. **La posi
 - **Ne lis pas les 32,6 % de checks comme de la faiblesse.** Des mains de check-raise y sont mélangées. Les repères généraux de la [stratégie de c-bet](/fr/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") valent la peine d'être revérifiés à ce siège.
 
 :::readnext[À lire ensuite]
-/fr/blog/3bet-pot-low-board | Trois combos touchent ce flop, et la range mise quand même 97,8 % | /images/gto-3bp-low-oop-en.webp
-/fr/blog/blind-battle-connected-board | Même siège, même stack, et la mise tombe de 67 % à 9,6 % | /images/gto-sb-connected-oop-en.webp
+/fr/blog/3bet-pot-low-board | Trois combos touchent ce flop, et la range mise quand même 97,8 % | /images/gto-3bp-low-oop-fr.webp
+/fr/blog/blind-battle-connected-board | Même siège, même stack, et la mise tombe de 67 % à 9,6 % | /images/gto-sb-connected-oop-fr.webp
 :::
 
 ## Vérifie toi-même

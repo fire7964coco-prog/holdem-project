@@ -57,7 +57,7 @@ En cash game, si tu prends une cave de $200, tes jetons représentent $200. Si t
 
 En tournoi, tu peux payer un buy-in de $100 et recevoir 20 000 jetons. ==r:Ces jetons ne valent pas $20 000==, et tu ne peux pas les encaisser en cours de route. Ils ne comptent que parce qu'ils t'aident à survivre, à mettre la pression et à finir plus haut dans la structure des gains.
 
-Voici ce que ça donne à la table. Dans un cash game $1/$2, payer une mise de $60 à la river avec une paire, c'est risquer $60 immédiatement. Si le call est mauvais, tu peux toujours te lever, te recaver ou rejouer un autre jour. Dans un tournoi à $50 près des places payées, payer pour 18 big blinds peut mettre fin à tout ton tournoi. Les cartes se ressemblent peut-être, mais le prix de l'erreur n'est pas le même.
+Voici ce que ça donne à la table. Dans un cash game $1/$2, payer une mise de $60 à la river avec une paire, c'est risquer $60 immédiatement. Si le call est mauvais, tu peux toujours te lever, te recaver ou rejouer un autre jour. Dans un tournoi à $50 près des places payées, payer pour 18 grosses blindes peut mettre fin à tout ton tournoi. Les cartes se ressemblent peut-être, mais le prix de l'erreur n'est pas le même.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -125,7 +125,7 @@ Si tu passes de 10 % des jetons à 20 % des jetons, tes chances de gagner de l'a
 
 Dans un cash game $1/$2, les blindes restent à $1/$2. Une heure plus tard, elles sont toujours à $1/$2. Trois heures plus tard, toujours $1/$2. Tu peux attendre de meilleurs spots, te recaver si besoin et continuer à jouer avec un stack profond.
 
-En tournoi, c'est l'inverse : un stack de 100 big blinds au début peut tomber à 25 big blinds plus tard sans perdre une seule main. Puis à 12 big blinds. À un moment, attendre devient cher.
+En tournoi, c'est l'inverse : un stack de 100 grosses blindes au début peut tomber à 25 grosses blindes plus tard sans perdre une seule main. Puis à 12 grosses blindes. À un moment, attendre devient cher.
 
 | Phase | Cash game | Tournoi |
 |------|------|------|
@@ -150,9 +150,9 @@ En tournoi, c'est l'inverse : un stack de 100 big blinds au début peut tomber �
 
 ### Poker deepstack contre push or fold en short stack
 
-Le cash game récompense en général le jeu à stacks profonds. Tu joues souvent autour de 100 big blinds, ce qui veut dire que les décisions au flop, à la turn et à la river pèsent lourd. Tu dois comprendre la value bet, le bluff, la texture du board, la position et les ranges adverses.
+Le cash game récompense en général le jeu à stacks profonds. Tu joues souvent autour de 100 grosses blindes, ce qui veut dire que les décisions au flop, à la turn et à la river pèsent lourd. Tu dois comprendre la value bet, le bluff, la texture du board, la position et les ranges adverses.
 
-Le tournoi commence profond mais devient souvent short. À 25 big blinds, 15 big blinds ou 10 big blinds, les décisions préflop deviennent bien plus importantes. Au lieu de planifier trois streets, tu choisis peut-être entre ouvrir, refaire tapis, payer pour tout ton stack ou te coucher — les ranges exactes sont dans [la stratégie short stack : quand faire tapis ou se coucher](/fr/blog/holdem-short-stack).
+Le tournoi commence profond mais devient souvent short. À 25 grosses blindes, 15 grosses blindes ou 10 grosses blindes, les décisions préflop deviennent bien plus importantes. Au lieu de planifier trois streets, tu choisis peut-être entre ouvrir, refaire tapis, payer pour tout ton stack ou te coucher — les ranges exactes sont dans [la stratégie short stack : quand faire tapis ou se coucher](/fr/blog/holdem-short-stack).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -215,7 +215,7 @@ Une règle pratique utile : ==g:le cash game est en général plus dur à *battr
 
 ## Cash game ou tournoi : lequel est le plus rentable ? bb/100 vs ROI
 
-**Le cash game rapporte de façon plus régulière, le tournoi par gros coups rares.** Les résultats en cash game se mesurent en général en **bb/100** ou en taux horaire. Si un joueur gagne 5 big blinds pour 100 mains sur un large échantillon, c'est un avantage régulier. Le retour n'est pas instantané, mais il est plus rapide et plus net que les résultats de tournoi.
+**Le cash game rapporte de façon plus régulière, le tournoi par gros coups rares.** Les résultats en cash game se mesurent en général en **bb/100** ou en taux horaire. Si un joueur gagne 5 grosses blindes pour 100 mains sur un large échantillon, c'est un avantage régulier. Le retour n'est pas instantané, mais il est plus rapide et plus net que les résultats de tournoi.
 
 Les résultats en tournoi se mesurent en général au **ROI**, au taux d'ITM (ITM : In The Money — dans l'argent), à la fréquence de tables finales et aux gros gains. Un joueur de tournoi gagnant peut enchaîner 20 ou 30 tournois sans finir dans l'argent, puis faire un seul long parcours qui rembourse tout.
 
@@ -383,9 +383,9 @@ A. Non. L'ICM s'applique aux tournois, parce que les jetons de tournoi ne sont p
 
 A. Une règle courante : 20-40 caves pour le cash game et 100+ buy-ins pour les tournois à gros field, avec les formats plus petits comme les sit & go entre les deux, autour de 40-60. Le tournoi demande le plus gros coussin parce que les longues séries sans finir dans l'argent sont normales, même pour les joueurs gagnants.
 
-**Q. Avec combien de big blinds commence-t-on en cash game et en tournoi ?**
+**Q. Avec combien de grosses blindes commence-t-on en cash game et en tournoi ?**
 
-A. En cash game, prends la cave maximale de la table — en $1/$2, c'est en général $200–$300, soit 100–150 big blinds — parce que les stacks profonds récompensent le jeu postflop et te permettent de gagner un stack entier quand tu es devant — à deux conditions. Ta bankroll doit le supporter (la règle des 20-40 caves plus haut vaut pour des caves pleines, pas des caves courtes), et un stack profond ne paie que si tu es le meilleur joueur postflop. Si l'un des deux est fragile, prendre une cave plus courte est un choix légitime, pas une erreur de débutant : un stack plus court simplifie les décisions, il plafonne juste ce qu'un bon spot peut rapporter. En tournoi, c'est la structure qui choisit ta profondeur : tu commences en général autour de 100-300 big blinds, mais la montée des blindes la réduit à 20, puis à 10, puis au territoire du push or fold. En bref : prends une cave profonde en cash game quand ta bankroll et ton jeu postflop le permettent, et en tournoi, surveille la baisse de ton nombre de big blinds et ajuste-toi au fur et à mesure.
+A. En cash game, prends la cave maximale de la table — en $1/$2, c'est en général $200–$300, soit 100–150 grosses blindes — parce que les stacks profonds récompensent le jeu postflop et te permettent de gagner un stack entier quand tu es devant — à deux conditions. Ta bankroll doit le supporter (la règle des 20-40 caves plus haut vaut pour des caves pleines, pas des caves courtes), et un stack profond ne paie que si tu es le meilleur joueur postflop. Si l'un des deux est fragile, prendre une cave plus courte est un choix légitime, pas une erreur de débutant : un stack plus court simplifie les décisions, il plafonne juste ce qu'un bon spot peut rapporter. En tournoi, c'est la structure qui choisit ta profondeur : tu commences en général autour de 100-300 grosses blindes, mais la montée des blindes la réduit à 20, puis à 10, puis au territoire du push or fold. En bref : prends une cave profonde en cash game quand ta bankroll et ton jeu postflop le permettent, et en tournoi, surveille la baisse de ton nombre de grosses blindes et ajuste-toi au fur et à mesure.
 
 **Q. Combien de jetons faut-il pour un cash game entre amis ?**
 

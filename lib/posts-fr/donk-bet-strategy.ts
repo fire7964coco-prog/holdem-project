@@ -20,13 +20,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🎯",
-  image: "/images/gto-srp-middle-connected-oop-en.webp",
+  image: "/images/gto-srp-middle-connected-oop-fr.webp",
   imageAlt: "Résultats du solver HoldemMaster sur un flop médian connecté bicolore : la grille de la grosse blinde mêle des checks verts et des mises orange et roses",
   tags: ["donk bet poker", "donkbet poker", "donk bet c'est quoi", "quand ne pas c-bet", "lead poker", "board connecté", "avantage de range"],
   content: `
 L'une des premières règles qu'on apprend au poker : **checker vers le relanceur.** Le joueur qui a attaqué préflop a le droit de faire la première mise au flop.
 
-Les trois spots précédents montraient cette règle dans sa version la plus docile. Sur les flops [hauteur As](/fr/blog/a-high-board-cbet), [hauteur Roi](/fr/blog/k-high-board-cbet) et [broadway](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp"), le lead de la grosse blinde restait sous les 2 % à chaque fois ; sur K-8-3 et Q-J-10, il était à 0,2 % ou moins, autrement dit nul.
+Les trois spots précédents montraient cette règle dans sa version la plus docile. Sur les flops [hauteur As](/fr/blog/a-high-board-cbet), [hauteur Roi](/fr/blog/k-high-board-cbet) et [broadway](/fr/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-fr.webp"), le lead de la grosse blinde restait sous les 2 % à chaque fois ; sur K-8-3 et Q-J-10, il était à 0,2 % ou moins, autrement dit nul.
 
 Sur **9♥ 8♥ 7♣**, il est à **23,7 %**. C'est ici que la règle casse.
 
@@ -111,7 +111,7 @@ Compte les combinaisons et la raison apparaît exactement. Trois mains font quin
 
 **Non. L'équité reste à 48,5 % contre 51,5 %.** Ça mérite d'être dit clairement, parce que c'est la mauvaise conclusion la plus facile à tirer : l'apparition d'un lead ne veut pas dire que l'avantage de range a bougé.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board médian connecté bicolore](/images/gto-srp-middle-connected-ranges-en.webp "9♥8♥7♣ · répartition par catégorie — les quintes penchent vers la grosse blinde, les overpairs et la hauteur As vers le bouton")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board médian connecté bicolore](/images/gto-srp-middle-connected-ranges-fr.webp "9♥8♥7♣ · répartition par catégorie — les quintes penchent vers la grosse blinde, les overpairs et la hauteur As vers le bouton")
 
 | Catégorie | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -195,15 +195,15 @@ Les hautes cartes **dépareillées** ratées comme AKo et AQo se checkent derri�
 
 ## Qu'est-ce que ça change à la table ?
 
-- **Les leads se trouvent sur les boards médians connectés après une ouverture large en position tardive.** Le board monotone du spot suivant en a aussi environ 11 %, alors que les flops secs hauteur As et hauteur Roi sont pratiquement à zéro. ⚠ Cela dit, le seul board médian connecté que cette série résout vraiment est 9-8-7, et la condition n'est pas la texture seule mais **quelle range a le plus de mains parmi les plus fortes dessus.** La preuve est dans la série : le [flop 6-5-2](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") est le même pot simplement relancé bouton contre grosse blinde, et la grosse blinde n'y lead que **3,2 %**, parce que la seule main qui fait quinte est 4-3 et qu'aucune des deux ranges ne l'a. Bas et connecté, à lui seul, ne produit pas de lead.
+- **Les leads se trouvent sur les boards médians connectés après une ouverture large en position tardive.** Le board monotone du spot suivant en a aussi environ 11 %, alors que les flops secs hauteur As et hauteur Roi sont pratiquement à zéro. ⚠ Cela dit, le seul board médian connecté que cette série résout vraiment est 9-8-7, et la condition n'est pas la texture seule mais **quelle range a le plus de mains parmi les plus fortes dessus.** La preuve est dans la série : le [flop 6-5-2](/fr/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-fr.webp") est le même pot simplement relancé bouton contre grosse blinde, et la grosse blinde n'y lead que **3,2 %**, parce que la seule main qui fait quinte est 4-3 et qu'aucune des deux ranges ne l'a. Bas et connecté, à lui seul, ne produit pas de lead.
 - **Tu checkes quand même les trois quarts du temps.** Quand tu fais un lead : petit, et avec plus que tes meilleures mains. Une range qui ne lead que les quintes se lit immédiatement, donc les top paires et les tirages vont dans le même sizing. Garde quand même le total en vue : **le lead entier fait 23,7 %, dont 16,8 au petit sizing.** Transformé en « lead tous les tirages », il devient la moitié de la range et inverse la stratégie. Les 76,2 % restants checkent.
 - **Au bouton, résiste au c-bet sur cette texture.** Plus de la moitié de ta range n'a pas de paire, et les overpairs veulent un pot contrôlé plutôt qu'un gros pot.
 - **Face à un adversaire qui c-bet beaucoup trop souvent, checker peut valoir plus que faire un lead**, et faire un check-**raise**, plutôt que seulement check-call, avec les quintes et les top paires. Le laisser miser tes mains fortes à ta place vaut plus que prendre l'initiative, mais seulement si tu le fais payer ensuite.
 - **Lis-le aussi dans l'autre sens.** Face à un joueur qui checke derrière sur les boards humides, le lead vaut plus que ce que suggère le chiffre du solver : checker là, c'est simplement perdre la street.
 
 :::readnext[À lire ensuite]
-/fr/blog/broadway-board-strategy | Deux tiers de la range ont un tirage, et elle checke quand même | /images/gto-srp-broadway-oop-en.webp
-/fr/blog/k-high-board-cbet | Le flop hauteur Roi où le caller checke 99,8 % | /images/gto-srp-dry-king-oop-en.webp
+/fr/blog/broadway-board-strategy | Deux tiers de la range ont un tirage, et elle checke quand même | /images/gto-srp-broadway-oop-fr.webp
+/fr/blog/k-high-board-cbet | Le flop hauteur Roi où le caller checke 99,8 % | /images/gto-srp-dry-king-oop-fr.webp
 :::
 
 ## Vérifie toi-même
@@ -224,7 +224,7 @@ A. Parce que sur la plupart des boards, il l'est. Dans cette série, les flops h
 
 A. Non. L'équité est de 48,5 % contre 51,5 % et la réalisation d'équité de 93,2 % contre 106,4 %, les deux en faveur du bouton. Le lead apparaît parce que la grosse blinde a plus de quintes faites alors que la force du bouton est concentrée dans des overpairs que ce board menace, et non parce que la grosse blinde serait devant globalement.
 
-**Q. Quand checker plutôt que lead au poker ?**
+**Q. Quand checker plutôt que faire un lead au poker ?**
 
 A. Les trois quarts du temps, même sur ce flop : 76,2 % de la range de la grosse blinde checke. Checke quand ta range n'a pas plus de mains faites, ce qui est le cas de tous les boards secs hauteur As ou hauteur Roi, et checke quand ton adversaire mise de toute façon trop souvent : le laisser miser vaut plus que lui prendre l'initiative. Le lead est l'exception, pas une amélioration.
 

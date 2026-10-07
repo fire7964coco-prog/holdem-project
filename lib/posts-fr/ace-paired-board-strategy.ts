@@ -19,15 +19,15 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🅰️",
-  image: "/images/gto-sb-paired-ace-oop-en.webp",
+  image: "/images/gto-sb-paired-ace-oop-fr.webp",
   imageAlt: "Solver HoldemMaster sur le flop A♠A♥6♦ en blind contre blind : la grille de la petite blinde presque entièrement orange, couleur de la mise",
   tags: ["trips poker", "trips ou set", "board pairé as", "fréquence de bluff poker", "blind contre blind", "board avec deux as"],
   content: `
-On te dira qu'on ne mise pas sur les boards pairés. Sur le [board pairé 6-6-3](/fr/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-en.webp") vu plus tôt dans cette série, le joueur qui parlait en premier misait à peine **3,0 %**.
+On te dira qu'on ne mise pas sur les boards pairés. Sur le [board pairé 6-6-3](/fr/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-fr.webp") vu plus tôt dans cette série, le joueur qui parlait en premier misait à peine **3,0 %**.
 
 Celui-ci est pairé lui aussi. A♠ A♥ 6♦. Et la petite blinde mise **80,1 %**.
 
-Les conditions sont les mêmes que dans les deux spots précédents : un pot de 6bb, un stack effectif de 97bb, la petite blinde comme ouvreur. Un board plus tôt, depuis ce même siège, [elle ne misait que 9,6 %](/fr/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp"). Ce spot est l'autre extrémité. Tous les chiffres ci-dessous viennent du [solver poker gratuit](/fr/solver) de HoldemMaster.
+Les conditions sont les mêmes que dans les deux spots précédents : un pot de 6bb, un stack effectif de 97bb, la petite blinde comme ouvreur. Un board plus tôt, depuis ce même siège, [elle ne misait que 9,6 %](/fr/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-fr.webp"). Ce spot est l'autre extrémité. Tous les chiffres ci-dessous viennent du [solver poker gratuit](/fr/solver) de HoldemMaster.
 
 
 :::stripe
@@ -110,7 +110,7 @@ L'as est la carte que l'agresseur préflop possède le plus : dans ce spot, 95 c
 
 **88 combos (17,5 %) pour la petite blinde, 66 (13,1 %) pour la grosse blinde.** Mais **ce qui manque** compte plus que le nombre. (Le solver range cette classe sous « Set/Brelan » ; sur ce board, ce sont des brelans (trips).)
 
-![Infographie de composition des ranges comparant les classes de mains de la petite blinde et de la grosse blinde sur un board A-A-6](/images/gto-sb-paired-ace-ranges-en.webp "A-A-6 blind contre blind · composition classe par classe : les mains qui ont raté font 39,8 % contre 51,5 %")
+![Infographie de composition des ranges comparant les classes de mains de la petite blinde et de la grosse blinde sur un board A-A-6](/images/gto-sb-paired-ace-ranges-fr.webp "A-A-6 blind contre blind · composition classe par classe : les mains qui ont raté font 39,8 % contre 51,5 %")
 
 | Classe | SB (OOP · ouvreur) | BB (IP · caller) |
 |---|---|---|
@@ -145,7 +145,7 @@ Le pot fait 6bb, donc la part de la petite blinde vaut ==6 × 56,2 % = 3,372bb==
 
 **Parce que l'avantage est *large* plutôt que *profond*.** La mise aux trois quarts du pot reçoit 0,5 %, seulement 2,7 combos. En pratique, il n'y a qu'un seul sizing.
 
-Les pots 3-bet étaient l'inverse. Sur le [board bas 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp"), la grosse blinde misait deux tiers du pot 97,8 % du temps, parce que cette range se coupait à peu près en deux entre **overpairs et hauteur As** : une forme polarisée. Une range tirée vers les extrêmes appelle un gros sizing.
+Les pots 3-bet étaient l'inverse. Sur le [board bas 8-5-2](/fr/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-fr.webp"), la grosse blinde misait deux tiers du pot 97,8 % du temps, parce que cette range se coupait à peu près en deux entre **overpairs et hauteur As** : une forme polarisée. Une range tirée vers les extrêmes appelle un gros sizing.
 
 Ce spot n'est pas comme ça. La range de la petite blinde est **continue** : brelans 17,5 %, double paire 18,5 %, hauteur Roi 22,3 %, mains ratées 39,8 %. Avec cette forme, pousser toute la range avec un petit sizing vaut davantage : les 51,5 % de mains ratées de l'adversaire sont ce sur quoi une petite mise fait pression (un bluff de 2bb dans 6bb n'a besoin que de 25 % de folds pour atteindre son seuil de rentabilité), et la mise elle-même ne risque que 2bb maintenant, même si les 97bb derrière peuvent encore entrer en jeu à la turn (le tournant) et à la river (la rivière).
 
@@ -163,12 +163,12 @@ La raison tient à **qui te paye.** K-K fait double paire avec les as du board, 
 
 - **Ne transforme pas « board pairé = check » en règle.** C'est 3,0 % sur 6-6-3 et 80,1 % sur A-A-6. Le critère n'est pas de savoir si le board est pairé, et **pas non plus combien de combos de ce rang tu as** : sur 6-6-3, la grosse blinde avait plus de 6 (5,3 % contre 4,0 %) et ne misait quand même que 3,0 %. Le critère, c'est **de savoir si ta range *dans son ensemble* est meilleure que la sienne.** La mise a atteint 80 % ici parce que le haut et le reste penchaient **du même côté**.
 - **Avec deux as au board, ne pars pas du principe que ton as ne vaut rien.** Si l'adversaire fait un 3-bet avec A-K et A-Q, le duel des kickers penche déjà de ton côté. **Ça repose quand même sur le fait qu'il fasse ce 3-bet** : face à une table qui ne fait que payer avec A-K et A-Q, la prémisse s'effondre ; avec un brelan au kicker faible, mise, mais reste en dehors d'une grosse guerre de relances.
-- **Petit sizing, haute fréquence.** Quand la range est continue, pousser large à un tiers du pot est meilleur. Le gros sizing est l'outil d'[une range coupée entre fort et faible](/fr/blog/3bet-pot-low-board), même si, à l'intérieur des pots 3-bet, la raison diffère sur [un board chargé en tirages](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp"), où une grosse mise sert à laisser l'adversaire à un mauvais prix. **Note aussi que 80,1 % est un calcul en heads-up** : avec plus d'un adversaire encore dans le coup, coupe nettement les mises avec les mains ratées et resserre vers les brelans et les doubles paires.
+- **Petit sizing, haute fréquence.** Quand la range est continue, pousser large à un tiers du pot est meilleur. Le gros sizing est l'outil d'[une range coupée entre fort et faible](/fr/blog/3bet-pot-low-board), même si, à l'intérieur des pots 3-bet, la raison diffère sur [un board chargé en tirages](/fr/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-fr.webp"), où une grosse mise sert à laisser l'adversaire à un mauvais prix. **Note aussi que 80,1 % est un calcul en heads-up** : avec plus d'un adversaire encore dans le coup, coupe nettement les mises avec les mains ratées et resserre vers les brelans et les doubles paires.
 - **Ne mise pas K-K et Q-Q « parce qu'elles sont fortes ».** Sur ce board, elles ont du mal à se faire payer par pire. Checker pour attraper les bluffs de l'adversaire est meilleur. ⚠ C'est **un jugement tiré de la composition des ranges**, pas une valeur mesurée par cette série : le spot d'étude ne montre que la fréquence de la première action au flop, et aucun nœud après un check n'est résolu pour ce spot (le seul nœud check puis mise de la série est la résolution distincte du [board bas rainbow](/fr/blog/low-board-check-raise)). **Ça suppose aussi que l'adversaire mélange des bluffs** : face à quelqu'un qui n'en fait presque jamais, une mise qui arrive après ton check est en général un as, et te coucher vaut mieux que t'accrocher.
 
 :::readnext[À lire ensuite]
-/fr/blog/blind-battle-connected-board | Même siège, même stack, et la mise tombe de 67 % à 9,6 % | /images/gto-sb-connected-oop-en.webp
-/fr/blog/a-high-board-cbet | Le flop où la grosse blinde checke 98 % du temps | /images/gto-srp-dry-ace-oop-en.webp
+/fr/blog/blind-battle-connected-board | Même siège, même stack, et la mise tombe de 67 % à 9,6 % | /images/gto-sb-connected-oop-fr.webp
+/fr/blog/a-high-board-cbet | Le flop où la grosse blinde checke 98 % du temps | /images/gto-srp-dry-ace-oop-fr.webp
 :::
 
 ## Vérifie toi-même

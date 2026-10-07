@@ -83,6 +83,10 @@ const L10N = {
         back: '← Zurück', spots: 'Lernspots ⚡', view: '⚡ Ergebnisse ansehen',
         noDraw: 'Kein Draw', combos: 'Combos', hands: 'Hände', draws: 'Draws',
         all: 'Alle', summary: 'Übersicht', barWidth: 'Balkenbreite:' }, // 2026-10-02 라이브 DE DOM 축어 · 결과 숫자도 소수 쉼표 · spots는 홈 «Lernspots ansehen»과 갈리게 ⚡까지
+  fr: { url: 'https://solver.holdemmaster.com/?lang=fr',
+        back: '← Liste', spots: "Spots d'étude ⚡", view: '⚡ Voir les résultats',
+        noDraw: 'Aucun tirage', combos: 'combos', hands: 'Mains', draws: 'Tirages',
+        all: 'Tout', summary: 'Résumé', barWidth: 'Largeur des barres :' }, // 2026-10-07 라이브 FR DOM 축어(docs/solver-app-verbatim-fr-2026-10-07.md §1·§5 · 🅶 레인 13/13 통과)
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',

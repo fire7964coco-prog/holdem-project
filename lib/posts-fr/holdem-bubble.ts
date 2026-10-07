@@ -103,7 +103,7 @@ Si tu sens l'étau se resserrer sur la bulle, tu es probablement un stack moyen.
 
 - **Shove ou fold.** L'agression en first-in (premier à entrer dans le coup) préserve ta [fold equity](/fr/blog/holdem-when-to-fold), ton arme la plus précieuse. Open-limper ou te contenter de suivre (flat call) avec un short stack la jette par la fenêtre.
 - **Attends s'il y a des stacks plus courts que toi.** Si deux joueurs sont plus courts, tu peux coucher les mains limites et les laisser sauter d'abord — tu grimpes les paliers gratuitement. Si c'est *toi* le plus court, tu ne peux pas te permettre d'attendre : trouve un spot et fais tapis avant que les blindes ne te mangent.
-- **Ne te resserre pas jusqu'à disparaître.** Te coucher jusqu'à deux big blinds « pour survivre », c'est justement comme ça qu'on finit bubble boy. Choisis une range de shove raisonnable et engage-toi.
+- **Ne te resserre pas jusqu'à disparaître.** Te coucher jusqu'à deux grosses blindes « pour survivre », c'est justement comme ça qu'on finit bubble boy. Choisis une range de shove raisonnable et engage-toi.
 
 Le mantra du short stack : la fold equity, c'est tout. Shove le premier, et choisis ton spot avant que les blindes ne le choisissent pour toi.
 
