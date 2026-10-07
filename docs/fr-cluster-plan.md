@@ -162,7 +162,7 @@
 
 - 🔴 **레인은 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(push = Vercel 배포 → 반쪽 fr + 끊긴 링크가 라이브). main은 계속 MB 회신·다른 로케일 배포에 쓴다. 배포 회차에 `fr-integration` → main 머지 1회.
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상).
-- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
+- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ✅ 🅵 gloss `d8ec6c21` (10-07 · cooler는 MA-350 정정 문면 확인) · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
 
 ### 4-B. 헤드 판정 대기 (전 레인 C 뒤 신규 용어 대조 때 한 번에)
 | # | 자리 | 레인 | 내용 |
@@ -184,6 +184,12 @@
 | H-15 | 3-bet FAQ | 🅳 strategy FAQ «Quand faire un 3-bet au poker ?» = 3bet H2·태그 | 앵커는 있음 · 문항 분리 여부 |
 | H-16 | tldr 길이 | 🅳 3bet 618 · c-bet 637 · when-to-fold 623자(EN +50 %) | 2~3줄 규칙(`tldr-two-to-three-lines`) |
 | H-17 | limpers | 🅳 카피 «limpers» ↔ 본문 «limpeurs» | 표기 통일 |
+| H-19 | glossaire | 🅵 «glossaire»도 `/fr/glossary` 소유로 보고 글 seoTitle·H1·tags에서 뺐다 | §3-B ①에 추가할지 |
+| H-20 | 카드 라벨 | 🅵 관련 글 카드 라벨(범주명) — 레인마다 다름(🅲 «Cotes & maths»·«Stratégie» 등) | 전 레인 통일 |
+| H-21 | glossary 표 머리 | 🅵 «**Fold** (se coucher)» 영→불 순서 ↔ 도구 사전 «Tapis (all-in)» 불→영 | 글 각도라 유지 판정 예정 |
+| H-22 | date | 🅵 date = 집필일 · 🅰·타 로케일 = EN date 복사 | 통일 |
+| H-23 | 링크 | 🅰 blind-meaning에 EN의 holdem-straddle 링크 결손 · 🅴 tournament L271 «lexique du poker» 앵커가 글로 감(§3-A ⑤ 위반) · cooler → bad-beat 추가 1(EN에 없음) | 헤드 정리 |
+| H-24 | EN-먼저 | 🅵 glossary L38 «a dozen terms»(8쌍) · rake «most pots brush the cap» · fish «competitors» · cooler 인용 I→you · «Who wins at showdown» 카드 | H-9와 합침 |
 | H-18 | GTO 썸네일 | 🅳 c-bet readnext가 `gto-*-en.webp`(fr 변형 없음) | 🅶 레인에서 `-fr` 생성 시 교체 |
 
 ## 5. 레인 운영 — `ms-translation-lanes.md`를 fr로 읽는 치환표 (0-4 · 10-07)
