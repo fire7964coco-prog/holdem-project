@@ -3,7 +3,7 @@
 > 정본 = `docs/fr-cluster-plan.md`(§1 범위 · §3 용어·소유표 · §5 ms→fr 치환표) + `docs/ms-translation-lanes.md` §3~§9. EN 기준 해시 `a54b5f3d`.
 > SERP 입력 = `docs/keyword-bank/fr-serp/L-B-rank.md` + `00-brief.md` — 다시 조사하지 않는다(계획 §2-①).
 
-## 상태 — A ✅(10-07 · 브리프 `docs/fr-lanes/rank-brief.md` · Fable 카피 1회 + Opus 조정 8) / B ✅(10-07 · Opus 포크 6 병렬 · index 칸 등록 · 자기 게이트 아래 «미결») / C ✅(10-07 · 게이트 전건 · 전사 대조 · 손검산 48자리 · 렌즈 4종 지적 59/반영 45 · 2차 교열 10/반영 8) · 커밋 (이 커밋)
+## 상태 — A ✅(10-07 · 브리프 `docs/fr-lanes/rank-brief.md` · Fable 카피 1회 + Opus 조정 8) / B ✅(10-07 · Opus 포크 6 병렬 · index 칸 등록 · 자기 게이트 아래 «미결») / C ✅(10-07 · 게이트 전건 · 전사 대조 · 손검산 48자리 · 렌즈 4종 지적 59/반영 45 · 2차 교열 10/반영 8) · 커밋 6d1f1540
 
 ## 편별
 | slug | A 브리프 | B 집필 | C 렌즈 | 비고 |
