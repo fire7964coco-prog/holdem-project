@@ -39,13 +39,9 @@
 
 - 결과 = `docs/tr-cluster-plan.md` §4-4. 사장님 수동 색인 요청 URL(회차 1~4): 회차 1의 7개(`/tr/blog` · `/tr/tournaments` · `/tr/blog/{texas-holdem-rules-for-beginners, holdem-all-in-rules, holdem-betting-actions, holdem-game-order, holdem-tournament-vs-cash-game}`) + 회차 2의 2개(`/tr/calculator` · `/tr/hand-chart`) + 회차 3의 6개(`/tr/glossary` · `/tr/blog/{holdem-glossary, holdem-tiebreak-rules, holdem-pot-odds, holdem-probability, holdem-tournament}`) + 회차 4의 3개(`/tr/blog/{holdem-strategy, holdem-positions, holdem-continuation-bet}`). 회차 1 ⑦(규칙급 정정 꼬리 로케일 미전파) 판정은 사장님 대기.
 
-## (이전) 사장님 지시 대기 · 검수장 MB-176·178·179·180·181 재판정 대기
+## (이전) 도구 확장 회차 1·2 — 남은 것 = 사장님 수동 색인 요청 20개
 
-- ✅ **MA-331 = §2-Y(10-06 (4) · MB-181 · all-in tldr 누적 예외 EN → 9로케일 + ID game-order 소액 권유 교체)**. 검수장 다음 = 4-2 rankings6 레인.
-
-- ✅ §2-W ① 로케일 고유(MB-176) · ✅ **② EN-먼저 W-21~W-31(10-06 (1) · MB-178 · EN 8편 → 8로케일 72파일)** · ✅ **MA-330 = §2-X(10-06 (2) · MB-179 · EN 3편 5자리 → 9로케일 + ID 고유 1)**. 정본 = **`docs/en-first-queue.md` §2-W·§2-X**. 잔여 🪶(렌즈 잔여 · MA-330 통지 1~3 · 꼬리 15로케일)는 같은 절 — 자동 착수 금지.
-- ✅ 판단 2건(쿨러 Quick test 한정 · string bet 금액 선언)은 사장님 «권고대로» → 10-06 (3) 이행·배포(MB-180).
-- ✅ 도구 확장 회차 1(차트 · MB-173)·**회차 2(용어 사전 · MB-175)** 배포. 🪶 사장님 수동 색인 요청 대상 20개: `/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart` · `/{…같은 10}/glossary`. 회차 3(퀴즈)은 사장님 판단(`docs/tools-locale-rollout-plan.md` §3). 회차 2 아스트라 교차 = ✅ 10-05 (12) 반영(MB-177 · 도구 dict만 · 글·EN 도구 잔여는 queue §2-W 🪶).
+- `/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart` · `/{…같은 10}/glossary`. 회차 3(퀴즈) = 사장님 판단(`docs/tools-locale-rollout-plan.md` §3). 경위 = WORKLOG 10-05~10-06.
 
 ## (뒤로 미룸) tr 클러스터 완결 — 위 도구 확장 뒤 재개 (사장님 10-05 결정)
 
