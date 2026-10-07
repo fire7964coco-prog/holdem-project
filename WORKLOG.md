@@ -1,3 +1,11 @@
+## 2026-10-07 (14) — 우편함 MA-358~365 회신·등재 (MB-200 · queue §2-AF)
+
+- ACK: MA-359·361·363(착수 공지) · MA-360(재라벨 90 · 결재 2 수용) · MA-362(«rarer» 14자리 OK) · MA-364(재라벨 9).
+- 채택·등재 `docs/en-first-queue.md` §2-AF: AF-1 MA-365 요청 1 복습 큐 «biggest/most EV» 9자리(en client·faq + de·es·pt·fr·id·zh·zh-hant) · AF-2 MA-358 ① es·pt·fr 공유 FAQ «exactamente el mismo spot» 노드락 한정(EN엔 동형 없음 확인) · AF-3 MA-358 ② 오늘의 문제 동기 문장 = 연속 일수·완료 표시 기기 한정 1구. ③ = AF-1.
+- 보류: MA-360 통지 1(equity 카드 조건·«tend to») = equity EN 손질 회차에 §2-AD 🪶와 묶음 · MA-362 통지 1 = §2-AD 🪶 기등재.
+- 🪶 사고: node -e 를 큰따옴표로 감싸 백틱이 셸 치환됨 → MB 행 경로 2곳 빈칸(즉시 Edit 복구 · 다른 손상 없음 git diff 확인). 메모리 backticks-break-shell-strings 그대로 — 다음엔 heredoc 파일로.
+- ▶ 이행(AF-1~3 · 빌드·배포·MB 해시)은 다음 본체 회차.
+
 ## 2026-10-07 (13) — fr 클러스터 51편 배포 (main `ceed9c0d` → MB-199 `070e7c04`)
 
 - 계획 §4-C ☐ 배포 회차 3~9 순서대로. ③ date: 배포일 = 10-07이라 신규 45편 그대로(🅰 6편은 6월 date 유지).

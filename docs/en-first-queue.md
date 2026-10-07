@@ -505,6 +505,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AE-17 | holdem-when-to-fold L112 «fills up ~34% of the time» | 34 % = 풀 30 % + 쿼드 4,4 % | 〃 |
 | AE-18 | holdem-icm L175 3bb «forced all-in within a hand or two» | 앤티 없으면 블라인드 한 바퀴로 강제 올인이 아니다 | 〃 |
 
+### 2-AF. 우편함 수신분 — MA-358 (솔버 랜딩 10로케일 결과 · 통지 3) · MA-365 (복습 큐 문구 결재 · 요청 1) · MA-360·362 통지 · 판정 2026-10-07 (14) · 회신 MB-200 · ▶ 이행 = 다음 본체 회차
+
+> 솔버 앱 실제 동작(검수장 근거): 복습 큐 = 최근 기록 중 EV 손실 0.05bb 초과 문제를 **최신순**으로 다시 냄 · 크기 선별·정렬 없음 · 3bet 팟은 «최선» 판정(≤~0.08bb)도 진입(`TrainerPage.vue` L2113-2122 · `db.ts` L346). 공유 링크는 노드락을 담지 않음(`spot-share.ts` L88-117). 연속 일수·완료 표시는 기기 localStorage(`daily.ts` L15-18).
+
+| # | 자리 | 처방 | 판정 |
+|---|---|---|---|
+| AF-1 | MA-365 요청 1 · 복습 큐 «biggest / most EV» 9자리: `app/en/solver/solver-client.tsx` L565-566 · `app/en/solver/faq.ts` L99 · `app/{de L707, es L658, pt L691, fr L630, id L625, zh L619, zh-hant L620}/solver/solver-client.tsx` | «biggest/most» 제거 → EN «a Review queue of spots where you lost EV» 류 · 로케일은 EN 문안 확정 뒤 같은 뜻으로(ko «손실이 컸던 문제» · ja «EVロスが大きかった問題»는 검수장 OK — 현행 유지) | ✅ 채택 · RISKY · 고치면 MB 해시 → 변경 줄 재판정 |
+| AF-2 | MA-358 통지 ① es·pt·fr 공유 FAQ «exactamente el mismo spot / exatamente o mesmo spot / exactement le même spot»(`app/{es,pt,fr}/solver/faq.ts`) | 노드락 미포함 한정 1구(«… con los mismos rangos y ajustes; los bloqueos de nodo no viajan en el enlace» 류) 또는 «exactamente» 제거 — EN faq엔 동형 없음(확인) | ✅ 채택(AF-1과 같은 회차) |
+| AF-3 | MA-358 통지 ② «오늘의 문제 기록 동기» 문장(EN L566-567 «Signing in syncs your history for … Daily Challenge» + 전 로케일 동형) | 연속 일수·완료 표시는 기기에만 남는다는 한정 1구 — 앞 문장 «Streaks … run on your practice history»와 붙어 연속 일수까지 동기로 읽힌다 | ✅ 채택(AF-1과 같은 회차) |
+| AF-4 | MA-358 통지 ③ | = AF-1(MA-365로 결재 완료) | 종결 → AF-1 |
+| AF-5 | MA-360 통지 1(선택) equity «Stack depth & skill» 카드 8로케일 · «hands that want a multiway pot are the ones that make the nuts» | 조건(«out of position» 등) 추가 · «tend to» 완화 | 🪶 보류 — 라벨 UNV(오류 아님) · equity EN 손질 회차(§2-AD 🪶 «realization» 카드와 묶음) |
+| AF-6 | MA-362 통지 1 EN equity 카드 «Why realization lives and dies on position» 형제 동형 | 이미 §2-AD 🪶로 등재 | = §2-AD 🪶(중복 등재 안 함) |
+
+- MA-360 통지 2(TDA 헤즈업 버튼 = 2024 v1 Rule 34 · 2026 v1.0 번호 미확인)는 검수장 원장 근거 정정이라 본체 할 일 없음 — ACK.
+- MA-359·361·363(착수 공지) · MA-364(요청 0 · 라벨 정리만) = ACK.
+
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
