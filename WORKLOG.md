@@ -1,3 +1,11 @@
+## 2026-10-07 (17) — vi 계산기·핸드차트 신설 (`/vi/calculator` · `/vi/hand-chart` · tr 회차 2 방식)
+
+- 사장님 10-07 ⓑ «계산기·핸드차트 vi 먼저». 조사 먼저: DFS 볼륨 70개 · SERP 6쿼리 · 자동완성 3시드(2704·vi) → `docs/keyword-bank/vi-tools.md`. 결론 = 베트남어 도구 구 전부 null · 영어 머리어(poker calculator 140 · poker odds calculator 110 · poker hand chart 50) · «poker chart»(70) SERP = 족보 포스터(족보 글 소유 → 차트 제목에서 뺐다) · 계산기 SERP top10 = 앱스토어뿐(베트남어 웹 도구 0).
+- 3+3파일(공용 컴포넌트 + vi 사전): hand-chart = 본체 작성 · calculator = 서브(Opus) 작성(FAQ 18 · 수치 EN 동일 · 족보명 = vi 코퍼스 Sám Cô·Thùng Phá Sảnh Hoàng Gia). 등록 = hreflang 2(vi-VN) · hub-routes · side-rail(«Máy tính xác suất poker»·«Bảng bài khởi đầu») · 사이트맵 · 글 우측 계산기 CTA · beginners 글 «/en/hand-chart»·«/en/calculator» 2링크 → vi 도구(vi 코퍼스 도구 링크는 이 2자리뿐).
+- 검수: 렌즈 3종(딜러·네이티브 교열·SEO) 수치·사실오류 0 · 표현 8 → 7 채택(BB ante 1인 환산 · làm nổi bật · trở đi · runout 조건절 · cover · value 극대화 · ra Thùng) · SEO S-1(title에 ICM) 길이로 기각. 아스트라(codex gpt-6-astra read-only 사본) 6+1 → 채택 4(deal «lường trước» 뜻 · SPR 비문 · FAQ 1 질문 · implied 할인 대상) · 1 중복 · 기각 2(축 라벨 «Royal» = EN·tr과 같은 공간 자리 · 솔버 46,6% 예시 = tr·hi 사전 기존 문장).
+- 게이트: calc-parity --all 14사본 0 · selftest 59/59 · seo-sync 0 · build exit 0(postbuild hreflang 통과) · 렌더 HTML 35,4%·46,6% vi 표기 확인.
+- 🪶 남긴 것(자동 착수 금지): vi ICM 개념 글(«icm poker» 110 · PAA «Icm poker là gì?») 소유 없음 · `/vi/solver` 생기면 차트 노트 솔버 이름 → 링크 · 우편함 S-044(후기창 vi 초안) = 후기창 브랜치 머지 때 S-042(tr)와 함께.
+
 ## 2026-10-07 (16) — `/vi/solver` 키워드·SERP 조사 (랜딩 미작성 · 뱅크 신설)
 
 - 사장님: 솔버 폴더가 vi 작업 중 → «조사부터 꼼꼼히» · «서치는 아스트라 시켜도 됨». 정본 = `docs/keyword-bank/vi-gto-solver.md`.

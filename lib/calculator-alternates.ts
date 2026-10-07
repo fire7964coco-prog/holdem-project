@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
  *   솔버처럼 12파일에 복사하지 않고 **한 곳**에 둔다 — 로케일을 더할 때 여기 한 줄이면 된다.
  * ★언어 코드 표기는 솔버 랜딩과 동일(`ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN`).
  */
-export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr"] as const;
+export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi"] as const;
 export type CalculatorLocale = (typeof CALCULATOR_LOCALES)[number];
 
 export const CALCULATOR_ALTERNATES: Record<string, string> = {
@@ -27,6 +27,8 @@ export const CALCULATOR_ALTERNATES: Record<string, string> = {
   "hi-IN": `${SITE}/hi/calculator`,
   // ★2026-10-06 tr 회차 2(docs/tr-cluster-plan.md §4) — 13번째.
   "tr-TR": `${SITE}/tr/calculator`,
+  // ★2026-10-07 vi 도구 회차(docs/keyword-bank/vi-tools.md).
+  "vi-VN": `${SITE}/vi/calculator`,
   /**
    * ★2026-09-20 추가 — `x-default`는 «어느 언어에도 안 맞는 방문자»가 갈 곳이다.
    *   없으면 구글이 알아서 고르는데, 그 선택은 우리가 통제하지 못한다.

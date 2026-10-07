@@ -139,10 +139,13 @@
 - ⏸ **남은 후보 D·E·F는 보류**(사장님 09-28 «미결정이 있으니 나중에») — D JOPT 2027 도쿄#01(11/26 · 権利 수 공개 대기) · E WPT WC(10/30 · 일본 관련성 약함) · F SPADIE(10/22 · 본전 비용 미발표). 자동 착수 금지 · 공개되면 사장님 지시로 — 캘린더 등재 · 지시 대기. `lib/tournaments.ts` 어긋남 4건(후보 문서 §4)은 별도 회차.
 - 🪶 보드 링크: 로케일 고유 글은 `blogLinkByLocale`(`lib/tournaments.ts` · 해석 = `lib/tournaments-blog-links.ts`)에 건다 — KO 가이드와 슬러그가 다른 ja 글을 대회 카드에 띄우는 자리.
 
-## G. 검수장 PT 재판정 보고 — 판정·전파 끝 (MB-110 · MB-112) · ✅ 이력 전문 = docs/handoff-archive/2026-10-07-17-session-handoff-full.md
+## G. 검수장 PT 재판정 보고 — 판정·전파 끝 (MB-110 · MB-112)
 
-- ▶ 대기: 검수장 남은 배치(MB-112 로케일 odds → strategy → rankings) MA · MA-229 잔여 미판정(과거 실적·입국/교통·위성·목록 완전성) · MB-138·MB-152·MB-153 재검증 — 오면 판정(상위 모델) → «1차 레인 + 사본 스윕 + 렌즈». ⏸ 남은 8편(strategy 2 · tournament · glossary) 보고도 같은 방식.
-- 🪶 자동 착수 금지: §2-O O-5 · ja 오사카 FAQ «現金だけでは入れません» 오독 여지(대만 시트 §6) · 비핵심 15로케일 betting FAQ 옛 단순 문구. TMTC D조 날짜 = 10/26 이후 Results 탭으로(캘린더 TMTC 절). 검수장 요청 2건(EN 원장 beginners #42 라벨 · 새 문면 델타) 회신 대기.
+- ✅ 판정·배포 `6164c748`(EN 23 + PT 23) → ✅ **M-2 로케일 전파 `25fe6027`**(핵심 7로케일 144파일 · check:drift 핵심 0). 판정표·결과 = `docs/harden-brief/pt-rejudge-intake-2026-09-28.md` §8 · 대기열 = `docs/en-first-queue.md` §2-M.
+- ✅ **델타 재검증 요청 5건(MA-231·233·235·238·240) = 10-01 전부 채택·배포**(MB-129 · EN 7자리 → 9로케일 · PDF 3문구 · `docs/en-first-queue.md` §2-O · WORKLOG 10-01 (1)). ▶ 검수장 남은 배치(MB-112 로케일 odds → strategy → rankings) 결과 MA가 오면 같은 방식. 남긴 것 = §2-O O-5(자동 착수 금지).
+- ▶ **MA-229 대회 글 5편(ja 3 · zh-hant 2) 교차 검수** — 1회차 부분 결과 MA-245 = ✅ 4/4 채택·배포(10-01 (4) · MB-133: 오사카 Online Day 1·사이드 예외 · TMTC Mini Main 15,000(이미지 재렌더) · TMTC 웹↔PDF 충돌 병기). 검수장은 맥락 한도로 중단 — **잔여 미판정(과거 실적·입국/교통·위성·목록 완전성 등)은 검수장 다음 회차 MA를 기다린다**(자동 착수 금지). ✅ 2회차 MA-248(JOPT)·MA-249(Korea) = 5/5 채택·배포 + KO gop 형제 사본(10-01 (8) · MB-137). ✅ 3회차 APT MA-253 = 5/5 채택·배포 + KO 형제 사본(10-02 (1) · MB-138 · 시트 §12) · TMTC MA-255 = OK 종결. ✅ **MA-259 T1·T2 · MA-261(실제 대상 = tmt-championship) · MA-263(showdown FAQ 9사본) = 10-02 (8) 전부 채택·배포**(MB-147 · 판정표 = 대만 시트 §6 · TMTC 시트 §2). 🪶 파생 1건(ja 오사카 FAQ «現金だけでは入れません» 오독 여지)은 대만 시트 §6 — 자동 착수 금지. ▶ 다음 = 검수장 MB-138 재검증. TMTC D조 날짜는 10/26 이후 결과 전환 때 Results 탭으로 확정(캘린더 TMTC 절).
+- ✅ **MA-267 = 3묶음 전부 채택·배포**(10-02 (16) · MB-152 · betting FAQ EN+9로케일 10사본 · zh-hant showdown·blind). ✅ **MA-273 = 3묶음 전부 채택·배포**(10-02 (17) · MB-153 · zh·zh-hant pot-odds·zh implied 클린 아웃/최선 패 조건). ▶ 검수장 두 변경분 재검증 대기. 🪶 비핵심 15로케일 betting FAQ는 옛 단순 문구(«다른 사람이 먼저 레이즈해야» — 짧은 올인 누적·FL 50% 미반영) — 자동 착수 금지.
+- ⏸ 남은 8편(strategy 2 · tournament · glossary) 보고가 오면 같은 방식으로 판정(상위 모델) → 전파는 이번처럼 «1차 레인 + 사본 스윕 + 렌즈». 검수장 요청 2건(EN 원장 beginners #42 라벨 · 새 문면 델타 재검증)은 회신 대기.
 
 ## 참고 경계
 

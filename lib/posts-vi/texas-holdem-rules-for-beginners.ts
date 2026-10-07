@@ -441,7 +441,7 @@ Texas Hold'em dễ học hơn khi bạn tách luật ra khỏi chiến thuật.
 
 Trước tiên, ==học trình tự==: mù, hai lá bài tẩy, năm lá bài chung, bốn vòng cược và tay bài 5 lá mạnh nhất. ==g:Sau đó học vị trí, bài khởi đầu và các quyết định pot cơ bản.==
 
-Bước tiếp theo, hãy ôn lại [thứ hạng bài Texas Hold'em](/vi/blog/holdem-hand-rankings), luyện tập với [bảng bài khởi đầu](/en/hand-chart) và dùng [máy tính xác suất poker](/en/calculator) khi bạn muốn hiểu vì sao một lần theo bài có lãi hay không.
+Bước tiếp theo, hãy ôn lại [thứ hạng bài Texas Hold'em](/vi/blog/holdem-hand-rankings), luyện tập với [bảng bài khởi đầu](/vi/hand-chart) và dùng [máy tính xác suất poker](/vi/calculator) khi bạn muốn hiểu vì sao một lần theo bài có lãi hay không.
 
 ---
 

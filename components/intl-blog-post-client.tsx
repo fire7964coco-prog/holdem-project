@@ -55,6 +55,9 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   fr: { title: "Calculateur poker", subtitle: "Équité, outs et cotes du pot en un instant" },
   // ★2026-10-06 tr 회차 2 — title = /tr/calculator H1 축어 · subtitle = 형제 부제의 세 용어를 tr 사전 표기(equity · out · pot oranı)로.
   tr: { title: "Poker Hesaplayıcı", subtitle: "Equity, out ve pot oranı anında" },
+  // ★2026-10-07 vi 도구 회차 — title = /vi/calculator HubPage title 축어(vi 코퍼스 앵커 «máy tính xác suất poker») ·
+  //   subtitle = 형제 부제의 세 용어를 vi 코퍼스 표기로(equity · outs · pot odds — 전부 라틴 그대로).
+  vi: { title: "Máy tính xác suất poker", subtitle: "Equity, outs và pot odds tức thì" },
 };
 
 /**

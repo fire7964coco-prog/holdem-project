@@ -314,10 +314,13 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * vi — ★2026-09-29 `/vi/tournaments` 신설(vi 첫 허브). 라벨:
    *   - "Blog"       = CHROME.vi.blogLabel (lib/intl.ts)
    *   - "Giải poker" = BOARD_STRINGS.vi h1 «Lịch giải poker 2026»의 핵심명(vi엔 필라 클러스터가 없다)
-   *   ⚠ vi에는 solver·calculator가 없다 — 넣지 마라.
+   *   calculator·hand-chart = ★2026-10-07 신설(vi 도구 회차). 라벨 = 각 페이지 HubPage title 축어.
+   *   ⚠ vi에는 solver가 아직 없다 — 넣지 마라.
    */
   vi: [
     { href: "/vi/blog",        icon: "📚", label: "Blog" },
+    { href: "/vi/calculator",  icon: "🧮", label: "Máy tính xác suất poker" },
+    { href: "/vi/hand-chart",  icon: "📊", label: "Bảng bài khởi đầu" },
     { href: "/vi/tournaments", icon: "🏆", label: "Giải poker" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.
