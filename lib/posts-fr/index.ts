@@ -14,6 +14,13 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 // [fr-rank import 끝]
 
 // [fr-prob import 시작]
+import { POST as holdemProbability } from "./holdem-probability";
+import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemOuts } from "./holdem-outs";
+import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
+import { POST as holdemEquity } from "./holdem-equity";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 // [fr-prob import 끝]
 
 // [fr-strat import 시작]
@@ -47,6 +54,13 @@ export const FR_POSTS: Post[] = [
   // [fr-rank 배열 끝]
 
   // [fr-prob 배열 시작]
+  holdemProbability,
+  holdemPotOdds,
+  holdemOuts,
+  holdemDrawingOdds,
+  holdemImpliedOdds,
+  holdemEquity,
+  holdemCardCounting,
   // [fr-prob 배열 끝]
 
   // [fr-strat 배열 시작]
