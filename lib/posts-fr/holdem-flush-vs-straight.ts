@@ -70,7 +70,7 @@ Une quinte a à peu près ==r:**deux fois** plus de façons de se former qu'une 
 
 ### Pourquoi ça semble à l'envers
 
-Une quinte a seulement besoin de cinq rangs consécutifs, et ==**les enseignes ne comptent pas**==. Cette liberté crée un nombre énorme de combinaisons. La couleur, c'est l'inverse : les cinq cartes doivent toutes partager ==**la même enseigne**==, et une seule des quatre enseignes peut le faire à la fois. ==g:Beaucoup moins de chemins pour y arriver, donc la couleur est plus rare — et le plus rare gagne toujours.==
+Une quinte a seulement besoin de cinq rangs consécutifs, et ==**les enseignes ne comptent pas**==. Cette liberté crée un nombre énorme de combinaisons. La couleur, c'est l'inverse : les cinq cartes doivent toutes partager ==**la même enseigne**==, et une seule des quatre enseignes peut le faire à la fois. ==g:Beaucoup moins de chemins pour y arriver, donc la couleur est plus rare — et, entre les catégories de mains, la plus rare est toujours classée plus haut.==
 
 :::tip[Si tu as un tirage couleur et que ton adversaire tire à la quinte, tu gagnes le duel — quand les **deux** tirages rentrent, ta couleur bat sa quinte à l'abattage. Ce n'est pas pour autant que tu es favori : si son tirage quinte s'accompagne d'une paire ou de cartes plus hautes, il peut encore être devant avant la river.]:::
 
