@@ -207,23 +207,23 @@ const SPOT_GROUPS = [
     items: [
       // 🔴 RP-20 정정(9/9 확정 언어의 하나) — 앱 ①은 «체크 다음»을 말하는데 화면은 BB 첫
       //    액션에서 멈춘다. 화면값(체크 98,2 % — §4-B)으로.
-      { board: "A♥7♦2♣", name: "Board sec A-high", note: "Le cas d'école de l'avantage de range — l'as tape en plein dans la range de l'ouvreur, et BB check ici à 98,2 %" },
-      { board: "K♠8♦3♣", name: "Board sec K-high", note: "Compare avec le board A-high. Le board K-high favorise aussi BTN, mais les checks augmentent un peu. Tu sais pourquoi ?" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board sec A-high", note: "Le cas d'école de l'avantage de range — l'as tape en plein dans la range de l'ouvreur, et BB check ici à 98,2 %" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board sec K-high", note: "Compare avec le board A-high. Le board K-high favorise aussi BTN, mais les checks augmentent un peu. Tu sais pourquoi ?" },
       // 🟢 앱 fr 축어가 이미 정정본. «des 13 spots»의 편 수 하드코딩만 «de toute cette série»로(RP-08).
-      { board: "Q♠J♦T♠", name: "Broadway connecté, bicolore", note: "Un board qui semble toucher les deux ranges. Pourtant c'est ici que BB réalise le moins bien son equity de toute cette série — 77,9 % réalisés contre 119,4 % pour BTN — et il check à 99,9 %" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Broadway connecté, bicolore", note: "Un board qui semble toucher les deux ranges. Pourtant c'est ici que BB réalise le moins bien son equity de toute cette série — 77,9 % réalisés contre 119,4 % pour BTN — et il check à 99,9 %" },
       // 🔴🔴 RP-01 계열 + RP-02 정정 — 앱 fr은 아직 «콜러 우위 + C벳 빈도 붕괴» 류다(9언어 전건 ·
       //    원문은 fr 축어 문서 — 주석 인용은 의역으로, M-047). §4-B ④: OOP 벳 23,7 % · 48,5 대 51,5.
-      { board: "9♥8♥7♣", name: "Board médian connecté, bicolore", note: "Le seul board du single raised pot où BB prend vraiment l'initiative : BB mise en premier à 23,7 % — mais l'avantage de range reste à BTN : 48,5 % d'equity pour BB contre 51,5 % pour BTN" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board médian connecté, bicolore", note: "Le seul board du single raised pot où BB prend vraiment l'initiative : BB mise en premier à 23,7 % — mais l'avantage de range reste à BTN : 48,5 % d'equity pour BB contre 51,5 % pour BTN" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «se raréfient» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
       //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
       //    🔴 이 자리는 **구형 완전 축어**였다 — 앱과 갈라지면 즉시 «축어 아님»이 된다.
-      { board: "Q♠9♠2♠", name: "Board monochrome", note: "Regarde pourquoi les grosses mises se raréfient au profit des petites mises et des checks. Remarque à quelle fréquence même une couleur faite se contente de checker" },
-      { board: "6♣6♦3♥", name: "Board pairé", note: "Personne ne touche ce board, donc la part de bluffs augmente. Utilise le tableau détaillé pour trouver quelles mains misent en bluff" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monochrome", note: "Regarde pourquoi les grosses mises se raréfient au profit des petites mises et des checks. Remarque à quelle fréquence même une couleur faite se contente de checker" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board pairé", note: "Personne ne touche ce board, donc la part de bluffs augmente. Utilise le tableau détaillé pour trouver quelles mains misent en bluff" },
       // 🔴 M-045 RP-19 정정 — 앱 fr은 아직 «체크레이즈 빈도 단언 + 따라가 보라» 류다(원문 인용은
       //    의역으로 — M-047). §4-B ⑦ = 체크 96,8 · 벳 3,2뿐.
-      { board: "6♠5♥2♦", name: "Board bas rainbow", note: "Une guerre d'overcards — le spot pour étudier la construction du check-raise. À l'écran, la première action de BB : check 96,8 %, mise 3,2 %" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board bas rainbow", note: "Une guerre d'overcards — le spot pour étudier la construction du check-raise. À l'écran, la première action de BB : check 96,8 %, mise 3,2 %" },
     ],
   },
   {
@@ -233,7 +233,7 @@ const SPOT_GROUPS = [
       // 🔴 M-038 RP-03 정정 — 앱 fr은 아직 «SPR이 낮아서 작은 벳» 인과다(원문 인용은 의역으로 —
       //    M-047). 시리즈 ⑧: SPR이 똑같이 4,0인 ⑨는 큰 사이즈 98,4 % — 사이즈를 정하는 것은
       //    레인지의 모양이다.
-      { board: "A♦K♠2♥", name: "Board A-high, avantage du 3-betteur", note: "Le meilleur flop possible pour le 3-betteur, dont la range est remplie d'AK, d'AA et de KK. Si les petites mises mettent la pression sur toute la range adverse, c'est la forme de cette range qui le permet — pas le SPR bas" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, avantage du 3-betteur", note: "Le meilleur flop possible pour le 3-betteur, dont la range est remplie d'AK, d'AA et de KK. Si les petites mises mettent la pression sur toute la range adverse, c'est la forme de cette range qui le permet — pas le SPR bas" },
       // 🟢 앱 fr 축어가 이미 정정본(98,4 · 0,8 · aux deux tiers).
       // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %가 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이고 벳 합계는 99,1(작은 사이즈 0,7 포함)이라
       //    98,4와 0,8을 나란히 두면 독자가 뺄셈으로 0,8%p를 잃는다. en 문안(«98.4% of the range fires the same two-thirds size»)이 정본.
@@ -241,9 +241,9 @@ const SPOT_GROUPS = [
       // 🪶 산수 렌즈(2026-08-25): 초판의 «, toujours au même sizing»은 레인지 전체 주장으로 읽혀
       //    §4-B의 작은벳 0,7 %와 모순 — «toujours»를 뗐다. 🔴 2026-09-06 정정: «, au même sizing»은 지금도 남아 있다
       //    (98,4 %에 걸리는 절이라 유지 · en «the same two-thirds size»와 동형). 「삭제·동형」이라 적은 건 부정확했다.
-      { board: "Q♥T♥7♠", name: "Board dynamique bicolore", note: "Un pot 3-bet sur un board qui convient aussi au caller — et pourtant le 3-betteur ne ralentit pas : 98,4 % de la range mise aux deux tiers du pot, au même sizing" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Board dynamique bicolore", note: "Un pot 3-bet sur un board qui convient aussi au caller — et pourtant le 3-betteur ne ralentit pas : 98,4 % de la range mise aux deux tiers du pot, au même sizing" },
       // 🟢 앱 fr ⑩은 «presque» 완화형이라 축어 유지(RP-17 비발화 — en·de·ja 계열).
-      { board: "8♦5♣2♠", name: "Board bas et sec", note: "Un board qui rate presque toute la range du 3-betteur — et pourtant les overpairs et les mains hauteur As maintiennent la pression. Equity contre fold equity" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board bas et sec", note: "Un board qui rate presque toute la range du 3-betteur — et pourtant les overpairs et les mains hauteur As maintiennent la pression. Equity contre fold equity" },
     ],
   },
   {
@@ -251,10 +251,10 @@ const SPOT_GROUPS = [
     cond: "OOP : SB (ouvreur) · IP : BB (caller) · Pot 6bb · Stack 97bb",
     items: [
       // 🟢 앱 축어. RP-18 감시 조건(빈도 수치가 붙으면 폐기 명제) 미충족 — 수치를 붙이지 마라.
-      { board: "K♥T♦6♠", name: "Board K-high avec un T", note: "En blind vs blind, les ranges sont larges, donc les deux joueurs arrivent faibles au flop. Compare les fréquences avec le spot « Board sec K-high » de BTN vs BB" },
-      { board: "7♦6♦5♣", name: "Board bas connecté, bicolore", note: "Deux ranges larges se percutent sur un board ultra-connecté : doubles paires, quintes et tirages partout. C'est ici que le panneau « Mains / Tirages » est le plus parlant" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "Board K-high avec un T", note: "En blind vs blind, les ranges sont larges, donc les deux joueurs arrivent faibles au flop. Compare les fréquences avec le spot « Board sec K-high » de BTN vs BB" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Board bas connecté, bicolore", note: "Deux ranges larges se percutent sur un board ultra-connecté : doubles paires, quintes et tirages partout. C'est ici que le panneau « Mains / Tirages » est le plus parlant" },
       // 🟢 앱 fr 축어가 이미 정정본(88 대 66 · 80,1).
-      { board: "A♠A♥6♦", name: "Board avec deux As", note: "Deux as sur le board. Les brelans ne sont pas rares — SB en a simplement plus (88 combos contre 66 pour BB), donc SB mise à 80,1 %. Toute la question sur ce board : qui a le plus d'as dans sa range" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board avec deux As", note: "Deux as sur le board. Les brelans ne sont pas rares — SB en a simplement plus (88 combos contre 66 pour BB), donc SB mise à 80,1 %. Toute la question sur ce board : qui a le plus d'as dans sa range" },
     ],
   },
 ];
@@ -763,46 +763,45 @@ export default function SolverClientFr() {
         </p>
       </section>
 
-      {/* ── 함께 읽으면 좋은 글 — ⚠ fr 코퍼스는 규칙 6편뿐(전건 실존 확인) ── */}
+      {/* ── 함께 읽으면 좋은 글 — 2026-10-07 fr 51편 헤드: de 랜딩 «Zum Weiterlesen» 6글 구성으로 교체(그 전엔 규칙 6편뿐이었다) ── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">Pour aller plus loin</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6">
           <li>
-            <Link href="/fr/blog/texas-holdem-rules-for-beginners" className="font-semibold text-primary hover:underline">
-              Les règles du Texas Hold'em
+            <Link href="/fr/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
+              Mains de départ au poker
             </Link>{" "}
-            — le point de départ si le vocabulaire du solver est encore nouveau pour toi
+            — l'outil ne travaille qu'après le flop : <strong>avec quelles mains entrer dans le coup</strong>, c'est là
           </li>
           <li>
-            <Link href="/fr/blog/holdem-game-order" className="font-semibold text-primary hover:underline">
-              L'ordre du jeu
+            <Link href="/fr/blog/holdem-pot-odds" className="font-semibold text-primary hover:underline">
+              Cote du pot au poker
             </Link>{" "}
-            — préflop, flop, turn, river : le squelette sur lequel le solver travaille
+            — quand tu veux juste le chiffre sans ouvrir le solver : outs et équité nécessaire
           </li>
           <li>
-            <Link href="/fr/blog/holdem-betting-actions" className="font-semibold text-primary hover:underline">
-              Les actions de mise
+            <Link href="/fr/blog/holdem-equity" className="font-semibold text-primary hover:underline">
+              L'équité au poker
             </Link>{" "}
-            — miser, relancer, checker, se coucher : les briques de chaque fréquence du solver
+            — presque tout ce qu'affiche le solver découle de l'équité — à lire avant pour comprendre l'écran de résultats
           </li>
           <li>
-            <Link href="/fr/blog/holdem-blind-meaning" className="font-semibold text-primary hover:underline">
-              Les blindes
+            <Link href="/fr/blog/holdem-position-play" className="font-semibold text-primary hover:underline">
+              Jouer en position
             </Link>{" "}
-            — pourquoi BB défend large, et pourquoi SB parle en premier : l'arrière-plan des spots
-            BTN vs BB et blind vs blind
+            — la réalisation d'équité (EQR) varie fortement avec la position : c'est ce que le solver chiffre
           </li>
           <li>
-            <Link href="/fr/blog/holdem-all-in-rules" className="font-semibold text-primary hover:underline">
-              Les règles du all-in
+            <Link href="/fr/blog/holdem-3bet" className="font-semibold text-primary hover:underline">
+              Le 3-bet au poker
             </Link>{" "}
-            — tapis et pots secondaires, pour lire les lignes qui finissent all-in
+            — comment on arrive aux flops de pot 3-bet de la série
           </li>
           <li>
-            <Link href="/fr/blog/holdem-showdown-rules" className="font-semibold text-primary hover:underline">
-              L'abattage
+            <Link href="/fr/blog/holdem-strategy" className="font-semibold text-primary hover:underline">
+              Stratégie poker au Texas Hold&apos;em
             </Link>{" "}
-            — qui montre, qui gagne : là où toutes les equities se réalisent
+            — la carte des concepts que le solver met en chiffres, définition du GTO comprise
           </li>
         </ul>
       </section>

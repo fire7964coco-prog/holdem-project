@@ -201,6 +201,25 @@ const GTO_SERIES_I18N: Record<string, { pillarLabel: string; nodes: ClusterNode[
       { slug: "ace-paired-board-strategy", label: "⑬ Board mit gepaartem Ass", group: "Blind vs Blind – SB vs BB (weite Ranges)" },
     ],
   },
+  // fr — 2026-10-07 fr 51편 헤드 · 라벨 = app/fr/solver/solver-client.tsx SPOT_GROUPS 축어
+  "fr": {
+    pillarLabel: "Solver GTO",
+    nodes: [
+      { slug: "a-high-board-cbet", label: "① Board sec A-high", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "k-high-board-cbet", label: "② Board sec K-high", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "broadway-board-strategy", label: "③ Broadway connecté, bicolore", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "donk-bet-strategy", label: "④ Board médian connecté, bicolore", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "monotone-board-strategy", label: "⑤ Board monochrome", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "paired-board-strategy", label: "⑥ Board pairé", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "low-board-check-raise", label: "⑦ Board bas rainbow", group: "Single Raised Pot — BTN vs BB (fondamentaux)" },
+      { slug: "3bet-pot-cbet", label: "⑧ Board A-high, avantage du 3-betteur", group: "Pot 3-bet — BB 3-bet, BTN paye (SPR bas)" },
+      { slug: "3bet-pot-bet-sizing", label: "⑨ Board dynamique bicolore", group: "Pot 3-bet — BB 3-bet, BTN paye (SPR bas)" },
+      { slug: "3bet-pot-low-board", label: "⑩ Board bas et sec", group: "Pot 3-bet — BB 3-bet, BTN paye (SPR bas)" },
+      { slug: "blind-battle-cbet", label: "⑪ Board K-high avec un T", group: "Blind vs Blind — SB vs BB (ranges larges)" },
+      { slug: "blind-battle-connected-board", label: "⑫ Board bas connecté, bicolore", group: "Blind vs Blind — SB vs BB (ranges larges)" },
+      { slug: "ace-paired-board-strategy", label: "⑬ Board avec deux As", group: "Blind vs Blind — SB vs BB (ranges larges)" },
+    ],
+  },
 };
 
 /** 그 로케일의 GTO 솔버 필라. 시리즈 번역본이 없는 로케일(de·fr 등)은 null — 러닝맵에 404 링크를 만들지 않는다. */
