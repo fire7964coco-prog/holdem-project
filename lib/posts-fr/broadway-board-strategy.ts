@@ -5,7 +5,7 @@ import type { Post } from "../posts";
  * 출처: EN 본문 축어(수치·카드) · 확정 카피 = docs/fr-lanes/gto-brief.md ③ 절.
  * 키워드: avantage de range ou avantage de nuts(H2·FAQ 3) · nut advantage · board bicolore(태그). «nuts poker» 헤드는 reading-the-board 몫.
  * 표기: 무늬 카드·하이픈 보드의 T는 10(Q♠J♦10♠ · Q-J-10), 핸드 클래스(JT·T9)는 그대로.
- * 한계: 이미지는 EN 경로(-en.webp) 그대로 — fr 캡처 생성 후 일괄 교체 대기.
+ * 한계: 이미지 = fr 캡처(gto-<key>-oop-fr · -ranges-fr · 2026-10-07 헤드 생성).
  * GTO 시리즈 예외: 지어낸 경험담 없음(솔버 증거 자료).
  */
 export const POST: Post = {

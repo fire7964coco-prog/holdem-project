@@ -120,7 +120,10 @@ function extractContent(src) {
  * keep the source and all other locales unchanged. Includes the first endpoint
  * of percentage ranges, so the coverage warning still sees hidden values. */
 function normalizeNumericText(text, locale) {
-  if (!["pt", "id", "de", "tr"].includes(locale)) return text;
+  if (!["pt", "id", "de", "tr", "fr"].includes(locale)) return text;
+  // FR (2026-10-07 · fr 51편 헤드) — 천 단위 공백(«1 326»)을 먼저 붙이고 소수 쉼표 규칙을 같이 쓴다.
+  //   «98,2 %»의 % 앞 공백은 has()·pctSet()의 \s*%가 이미 받는다(U+00A0·U+202F도 \s).
+  if (locale === "fr") text = text.replace(/(?<![\d.,])\d{1,3}(?:[   ]\d{3})+(?!\d)/g, (m) => m.replace(/[   ]/g, ""));
   // TR (2026-10-06 · tr 회차 5) also prefixes the percent sign («%23,7» · tr 코퍼스 38:0) —
   // move it behind the number first so the shared decimal-comma rule and pctSet see «23.7%».
   if (locale === "tr") text = text.replace(/%(\d+(?:\.\d{3})*(?:,\d+)?)/g, "$1%");

@@ -4,7 +4,7 @@ import type { Post } from "../posts";
  * fr ⑫ blind-battle-connected-board — source : EN lib/posts-en/blind-battle-connected-board.ts (updated 2026-10-02, hash a54b5f3d)
  * Copie et H2/FAQ : docs/fr-lanes/gto-brief.md section ⑫ (Fable 2026-10-07, verbatim).
  * Mots-clés : texture de board poker (autocomplétion), board connecté, blind contre blind (10).
- * Limites connues : images encore en -en.webp (variantes -fr à générer) ; pas de H2 FAQ (structure EN).
+ * Limites connues : images = variantes -fr (générées le 2026-10-07) ; pas de H2 FAQ (structure EN).
  */
 export const POST: Post = {
   slug: "blind-battle-connected-board",

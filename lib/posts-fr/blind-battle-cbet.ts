@@ -3,7 +3,7 @@
  * Source : EN master lib/posts-en/blind-battle-cbet.ts (updated 2026-10-02 · hash a54b5f3d) — valeurs, cartes et tableaux en verbatim.
  * Mots-clés : blind vs blind poker (10) · blind contre blind — docs/fr-lanes/gto-brief.md section 11. Aucune FAQ sur les règles des blindes (autre article).
  * Limites connues : un seul sizing (33 %) dans l'arbre ; la SB est l'ouvreur, sa première mise est un c-bet ;
- * pas de H2 FAQ (comme l'EN) ; images encore en -en.webp (variantes -fr pas encore générées).
+ * pas de H2 FAQ (comme l'EN) ; images = variantes -fr (générées le 2026-10-07).
  */
 import type { Post } from "../posts";
 

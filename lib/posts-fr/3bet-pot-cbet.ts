@@ -4,7 +4,7 @@ import type { Post } from "../posts";
  * fr ⑧ 3bet-pot-cbet — source : EN lib/posts-en/3bet-pot-cbet.ts (updated 2026-10-02, hash a54b5f3d)
  * Copie et H2/FAQ : docs/fr-lanes/gto-brief.md section ⑧ (Fable 2026-10-07, verbatim).
  * Mots-clés : spr poker (210, ce billet en est le propriétaire), spr poker c'est quoi (autocomplétion), pot 3-bet.
- * Limites connues : images encore en -en.webp (variantes -fr à générer) ; le check 0,0 % est la valeur affichée (résidu brut conservé dans le texte).
+ * Limites connues : images = variantes -fr (générées le 2026-10-07) ; le check 0,0 % est la valeur affichée (résidu brut conservé dans le texte).
  */
 export const POST: Post = {
   slug: "3bet-pot-cbet",

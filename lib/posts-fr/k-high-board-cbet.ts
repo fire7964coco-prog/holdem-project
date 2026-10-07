@@ -4,7 +4,7 @@ import type { Post } from "../posts";
  * fr ② k-high-board-cbet — EN 마스터 lib/posts-en/k-high-board-cbet.ts 재저작 (2026-10-07 · fr-gto 레인 B)
  * 출처: EN 본문 축어(수치·카드) · 확정 카피 = docs/fr-lanes/gto-brief.md ② 절.
  * 키워드: check back poker(태그·FAQ 3) · c-bet retardé(태그만) · c-bet 일반론은 holdem-continuation-bet 몫.
- * 한계: 이미지는 EN 경로(-en.webp) 그대로 — fr 캡처 생성 후 일괄 교체 대기.
+ * 한계: 이미지 = fr 캡처(gto-<key>-oop-fr · -ranges-fr · 2026-10-07 헤드 생성).
  * GTO 시리즈 예외: 지어낸 경험담 없음(솔버 증거 자료).
  */
 export const POST: Post = {

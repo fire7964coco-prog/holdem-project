@@ -81,6 +81,12 @@ const RULES = {
     readTime: /readTime: "\d+ Min\."/,
     extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'], [/(?<![\d.,])\d+\.\d\s*%/, '마침표 소수 퍼센트(→콤마)']],
   },
+  fr: { // 2026-10-07 fr 51편 헤드 — 계획 docs/fr-cluster-plan.md §3-A ① 고정문 · ② «98,2 %» 조판
+    quick: /> \*\*Réponse rapide\*\*/,
+    readnext: /:::readnext\[(?!À lire ensuite\])/,
+    readTime: /readTime: "\d+ min"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'], [/(?<![\d.,])\d+\.\d\s*%/, '마침표 소수 퍼센트(→쉼표)']],
+  },
   pt: {
     quick: /> \*\*Resposta rápida\*\*/,
     readnext: /:::readnext\[(?!Continue lendo\])/,

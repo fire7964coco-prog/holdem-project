@@ -5,7 +5,7 @@ import type { Post } from "../posts";
  * Source : EN lib/posts-en/3bet-pot-bet-sizing.ts (updated 2026-09-26) · calcul du 2026-08-20.
  * Copie validée : docs/fr-lanes/gto-brief.md ⑨ (title·seoTitle·desc·tldr·tags·H2·FAQ verbatim).
  * Mots-clés : sizing poker · bet sizing poker · sizing géométrique · overbet poker · board humide.
- * Limites connues : images encore en -en.webp (variantes -fr à produire) · premier choix au flop seulement.
+ * Limites connues : images = variantes -fr (générées le 2026-10-07) · premier choix au flop seulement.
  */
 export const POST: Post = {
   slug: "3bet-pot-bet-sizing",

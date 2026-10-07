@@ -3,7 +3,7 @@
  * Source : EN master lib/posts-en/low-board-check-raise.ts (updated 2026-10-02 · hash a54b5f3d) — valeurs, cartes et tableaux en verbatim.
  * Mots-clés : check raise poker (260, propriétaire) · check raise definition · board humide poker — docs/fr-lanes/gto-brief.md section 7.
  * Limites connues : deux résolutions distinctes (exemple précalculé = root seulement · re-solve 2026-08-20 = nœuds après la mise) ;
- * images encore en -en.webp (variantes -fr pas encore générées) ; ajout local = H2 définition + FAQ pourcentage + lien /fr/glossary.
+ * images = variantes -fr (générées le 2026-10-07) ; ajout local = H2 définition + FAQ pourcentage + lien /fr/glossary.
  */
 import type { Post } from "../posts";
 
