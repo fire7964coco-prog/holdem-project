@@ -7,7 +7,7 @@
 
 - 정본 = **`docs/keyword-bank/vi-gto-solver.md`**(볼륨·SERP·경쟁 원문·조준안 §7).
 - ▶ 착수 조건: 솔버 vi 배포 S-행 통지(레포 `94fdd7e`까지 커밋 · 미배포) → 라이브 `?lang=vi` 라벨 축어 대조 후 플레이북 7~12단계.
-- ▶ **사장님 결정 대기**(뱅크 §6): vi엔 랜딩이 링크할 자산 0 — ⓐ 랜딩만 먼저(hi 선례) ⓑ 계산기·핸드차트 vi 먼저 ⓒ GTO 예제 글 vi 일부 먼저(§1-E 해제).
+- ✅ **사장님 결정(10-07): ⓑ 계산기·핸드차트 vi 먼저** → 그다음 `/vi/solver`. ▶ **다음 세션 = vi 계산기·핸드차트 회차**: tr 회차 2(`docs/tr-cluster-plan.md` §4-2) 방식 그대로 — ① vi SERP 실측 먼저(DFS 2704 · 차트·계산기 검색어 · 메모리 new-language-serp-before-writing) ② `app/vi/{calculator,hand-chart}/{dict,faq,page}`(공용 컴포넌트 · 숫자 1.326 / 0,35% · `translation-terms-vi.md`) ③ 등록(alternates 2 · hub-routes(⚠ vi 주석 «solver·calculator 없다» 갱신) · side-rail · 사이트맵 · 글 CTA) ④ vi 8편 «/en/calculator·/en/hand-chart» 재조준 ⑤ 렌즈 + 아스트라 → 빌드·배포·MB·IndexNow.
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 51편 — ✅ 배포 (10-07 (13) · main `ceed9c0d` · MB-199)
 
