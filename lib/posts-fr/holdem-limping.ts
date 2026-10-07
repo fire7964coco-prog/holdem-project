@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-limping",
   title: "Le limp au poker : pourquoi « juste suivre » préflop te coûte des jetons",
   seoTitle: "Pourquoi « juste suivre » te coûte cher — Le limp au poker",
-  desc: "Tu suis la blinde « juste pour voir le flop » ? Limper au poker est presque toujours une erreur : pourquoi, les cas où ça passe et comment punir les limpers.",
-  tldr: "Limper, c'est entrer dans un pot préflop en suivant simplement la grosse blinde au lieu de relancer ou de se coucher. L'open-limp (être le premier à entrer) est presque toujours une erreur : un limp ne peut pas gagner les blindes sans combat, tu abandonnes l'initiative et les bons joueurs te punissent. Mais limper n'est pas toujours faux : compléter en petite blinde, over-limper des mains spéculatives derrière d'autres limpers et certains spots en live ou en short stack en tournoi sont des exceptions légitimes.",
+  desc: "Tu suis la blinde « juste pour voir le flop » ? Limper au poker est presque toujours une erreur : pourquoi, les cas où ça passe et comment punir les limpeurs.",
+  tldr: "Limper, c'est entrer dans un pot préflop en suivant simplement la grosse blinde au lieu de relancer ou de se coucher. L'open-limp (être le premier à entrer) est presque toujours une erreur : un limp ne peut pas gagner les blindes sans combat, tu abandonnes l'initiative et les bons joueurs te punissent. Mais limper n'est pas toujours faux : compléter en petite blinde, over-limper des mains spéculatives derrière d'autres limpeurs et certains spots en live ou en short stack en tournoi sont des exceptions légitimes.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -110,7 +110,7 @@ Le hic, c'est qu'il est devenu **transparent.** Comme presque personne ne limpe 
 
 ---
 
-## Le limp est-il une preuve de faiblesse ? Que faire face à un ou plusieurs limpers
+## Le limp est-il une preuve de faiblesse ? Que faire face à un ou plusieurs limpeurs
 
 ![Schéma d'une table à six places — le siège marqué en rouge a limpé pour un seul jeton, quatre sièges se sont couchés et sont barrés avec les jetons posés des blindes laissés derrière, et le bouton répond en doré avec une pile bien plus grosse, une flèche pointée vers le limpeur](/images/holdem-limping-isolation-raise.webp "Un jeton te fait entrer — et c'est le joueur au bouton qui décide combien le pot va te coûter")
 
@@ -209,7 +209,7 @@ Corriger ton limp est l'une des progressions les plus rapides au poker — ça n
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ce qui vaut vraiment une relance</div>
   </a>
   <a href="/fr/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Lexique</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jargon</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">C'est quoi un fish ?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les habitudes passives qui trahissent un joueur faible</div>
   </a>

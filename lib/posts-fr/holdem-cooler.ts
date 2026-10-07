@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Je me souviens encore de la main qui m'a appris ce mot. J'ai flopé un brelan servi de rois (set), je suis allé à tapis à la turn (le tournant), et j'ai retourné mes cartes en tendant déjà la main vers le pot — avant de voir mon adversaire dévoiler un brelan servi d'as. Je n'avais rien fait de travers. Aucune mauvaise décision à regretter, aucun tirage sur lequel j'aurais dû me coucher. J'étais battu dès l'instant où les jetons étaient partis au milieu, et il n'y avait ==rien que j'aurais pu y faire==. C'est ça, un cooler — et une fois que tu l'as compris, tu arrêtes de t'en vouloir pour des pertes qui n'ont jamais été évitables.
 
-Un **cooler**, c'est une main où tu touches un jeu très fort, où tu perds un gros pot, et où ==g:se coucher n'a jamais été une vraie option== — la main d'en face était simplement plus grosse. Plus bas : ce que le mot veut dire exactement, la frontière que ce guide trace entre un cooler et un **bad beat (sale coup)** (les joueurs confondent les deux sans arrêt), les affrontements de cooler classiques, et la partie honnête que personne n'aime : quand *« c'était juste un cooler »* n'est qu'une excuse polie pour une erreur. C'est l'un des termes les plus mal employés de tout le [lexique du poker](/fr/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), alors fixons précisément ce qui compte.
+Un **cooler**, c'est une main où tu touches un jeu très fort, où tu perds un gros pot, et où ==g:se coucher n'a jamais été une vraie option== — la main d'en face était simplement plus grosse. Plus bas : ce que le mot veut dire exactement, la frontière que ce guide trace entre un cooler et un **bad beat (sale coup)** (les joueurs confondent les deux sans arrêt), les affrontements de cooler classiques, et la partie honnête que personne n'aime : quand *« c'était juste un cooler »* n'est qu'une excuse polie pour une erreur. C'est l'un des termes les plus mal employés de tout le [jargon du poker](/fr/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), alors fixons précisément ce qui compte.
 
 ---
 
@@ -215,7 +215,7 @@ Même les meilleurs joueurs perdent à peu près autant de coolers que tout le m
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le joueur qui appelle un cooler un bad beat</div>
   </a>
   <a href="/fr/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mains</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Classement des mains</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Qui gagne en cas d'égalité ?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Comment se départagent les égalités et les deuxièmes meilleures mains</div>
   </a>

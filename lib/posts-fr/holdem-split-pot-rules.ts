@@ -232,7 +232,7 @@ Révise l'ordre dans [les combinaisons au poker, de la plus forte à la plus fai
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les 10 mains avec probabilités, exemples et énigmes de board</div>
   </a>
   <a href="/fr/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Égalités</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Départage</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles d'égalité et du kicker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Comment le kicker tranche les abattages à main égale</div>
   </a>

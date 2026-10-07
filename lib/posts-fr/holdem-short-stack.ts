@@ -44,7 +44,7 @@ Voici la carte pratique selon la profondeur de stack (approximations sans ante, 
 | Stack | Mode de jeu | Ton arme principale |
 |:--|:--|:--|
 | 25bb+ | Encore un vrai jeu postflop — relance ou fold, quelques calls | La jouabilité |
-| 20bb | Relance ou fold ; re-shove à tapis sur les ouvertures et les limpers | Le levier du re-shove |
+| 20bb | Relance ou fold ; re-shove à tapis sur les ouvertures et les limpeurs | Le levier du re-shove |
 | 15bb | Le push or fold prend le relais — shoves first-in, surtout en position tardive | La fold equity |
 | 10bb | Push or fold pur ; shove first-in une range large et raisonnable | La fold equity (encore forte) |
 | ≤5bb | Shove ou fold, tout de suite — la fold equity s'efface, mets tes jetons au milieu | Toute main jouable, vite |
@@ -180,7 +180,7 @@ A. Couche-toi bien plus souvent que tu ne shoverais — ta range de call est bea
 
 **Q. Faut-il parfois limper en short stack ?**
 
-A. Presque jamais quand tu es le premier à entrer. L'open-limp abandonne ta fold equity et construit un pot que tu ne sais pas jouer postflop. En short stack, le jeu standard est relance ou fold, et avec 15 big blinds ou moins, cette relance est en général un all-in. (Compléter depuis la petite blinde derrière d'autres limpers avec un tout petit stack est une rare exception.)
+A. Presque jamais quand tu es le premier à entrer. L'open-limp abandonne ta fold equity et construit un pot que tu ne sais pas jouer postflop. En short stack, le jeu standard est relance ou fold, et avec 15 big blinds ou moins, cette relance est en général un all-in. (Compléter depuis la petite blinde derrière d'autres limpeurs avec un tout petit stack est une rare exception.)
 
 **Q. Le min-raise est-il parfois correct en short stack ?**
 
