@@ -162,7 +162,7 @@
 
 - 🔴 **레인은 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(push = Vercel 배포 → 반쪽 fr + 끊긴 링크가 라이브). main은 계속 MB 회신·다른 로케일 배포에 쓴다. 배포 회차에 `fr-integration` → main 머지 1회.
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상).
-- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ☐ 🅳 · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
+- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
 
 ### 4-B. 헤드 판정 대기 (전 레인 C 뒤 신규 용어 대조 때 한 번에)
 | # | 자리 | 레인 | 내용 |
@@ -179,7 +179,12 @@
 | H-11 | tapis·hauteur | 🅱 펠트·스택 뜻 tapis 8 → table/feutre·stack · «quinte hauteur X» 통일 | 🅰·🅲·🅳~🅵에 같은 정리 필요한지 대조 |
 | H-12 | 🅰 링크 결손 | 🅱 6편 생기며 🅰 4편(betting-actions·game-order·showdown·beginners) `check:structure` 링크 개수 결손 | 헤드가 통합 트리에서 EN대로 복원 |
 | H-13 | 현지 추가 링크 | 🅱 split-pot FAQ → tiebreak 앵커 1 | 유지 판정(레인 형제) |
-| H-9 | EN-먼저 | 🅰 rules L353 «43.8% most frequent at showdown» · game-order L119 | queue 등재 후보 |
+| H-9 | EN-먼저 | 🅰 rules L353 «43.8% most frequent at showdown» · game-order L119 · 🅳 c-bet L181 «charges all his missed hands»(fr은 «met sous pression»으로 먼저) · position-play L128·281 AK/AQ ↔ chart L121 · c-bet L105 «over 97% on all three boards» | queue 등재 후보 |
+| H-14 | solveur | 🅳 starting-hands·position-play 카피(H2·FAQ·tldr)에 «solveur» ↔ §3-A ④ «solver»(본문은 C가 통일) | 카피 잠금 해제 |
+| H-15 | 3-bet FAQ | 🅳 strategy FAQ «Quand faire un 3-bet au poker ?» = 3bet H2·태그 | 앵커는 있음 · 문항 분리 여부 |
+| H-16 | tldr 길이 | 🅳 3bet 618 · c-bet 637 · when-to-fold 623자(EN +50 %) | 2~3줄 규칙(`tldr-two-to-three-lines`) |
+| H-17 | limpers | 🅳 카피 «limpers» ↔ 본문 «limpeurs» | 표기 통일 |
+| H-18 | GTO 썸네일 | 🅳 c-bet readnext가 `gto-*-en.webp`(fr 변형 없음) | 🅶 레인에서 `-fr` 생성 시 교체 |
 
 ## 5. 레인 운영 — `ms-translation-lanes.md`를 fr로 읽는 치환표 (0-4 · 10-07)
 
