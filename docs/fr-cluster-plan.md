@@ -119,6 +119,12 @@
 | chip EV | **la chip EV**(여성 · EV = espérance de valeur) | H-27 · 코퍼스 전부 여성 |
 | position précoce | position précoce(early position) | H-27 · 🅰🅳🅴 일치 |
 | tapis 관용 | «tapis vert»(펠트 · 이미지 alt) 허용 · «tapis effectif» = all-in-rules가 정의한 예외 | H-11 · 그 밖 스택 뜻은 «stack»(game-order 1 교체) |
+| 스택 단위 | **X grosses blindes**(산문) · 값 표기 «15bb»는 그대로 · «big blind ante»는 고유 용어로 유지 | 🅶 + 10-07 헤드: 🅴 «X big blinds» 57 → 교체(1,5는 단수 «1,5 grosse blinde») · 태그 검색형 유지 |
+| 카드 T | 무늬 붙은 카드·하이픈 보드 = **10**(`Q♥10♥7♠` · `Q-J-10`) · 핸드 클래스·앱 스팟 이름 = **T**(`JT` · `T6s` · «Board K-high avec un T») | 🅶 헤드 요청 3 · 10-07 헤드 확정(코퍼스 49 : 2) |
+| overpair | 첫 등장 «overpair (surpaire)» · 이후 둘 다 허용 · 표·앱 라벨은 «Overpair» 축어 | 🅶 C 렌즈 · 38편 overpair 7 / GTO surpaire 26 — 억지 통일 안 함 |
+| break even | GTO 13 = «seuil de rentabilité» · 팟 오즈 문맥(🅲·계산기)은 «à l'équilibre» 허용 | 🅶: GTO 글에서는 «équilibre»가 GTO 균형과 충돌 |
+| barrel | «envoyer des barrels» · «tirer» 금지(드로우와 충돌) | 🅶 C 네이티브 |
+| GTO 용어(🅶 정본) | donk bet («donk bet (ou lead)») · avantage de range / de nuts · range polarisée / condensée (merged) · fréquence de défense minimale (MDF) · sizing (géométrique) — «taille de mise» 금지 · couleur max · checker derrière (check-back) · c-bet retardé · bicolore · rainbow · monotone(앱 «monochrome») · pairé · sec · humide · réalisation d'équité (EQR) · bloqueur · ouvreur · caller · 3-betteur | `docs/fr-lanes/gto-진행.md` «신규 용어» · 38편 대조 충돌 0(10-07 헤드) |
 
 **⑤ 도구 링크 앵커 문구 고정**(도구가 헤드의 주인임을 앵커로 알린다 · 3-B와 짝)
 
@@ -165,9 +171,9 @@
 | 0-2 SERP | 볼륨 상위 검색어의 구글 FR 상위 10 → 실제 글 정독(원문 · §12-B) · PAA · 자동완성 → 레인별 처방 | `docs/keyword-bank/fr-serp/<레인>.md` | 0-1 | ✅ 10-07 (7레인 · 글별 PAA·자동완성 51/51 · 0-3 재료 10건 = `fr-serp/00-brief.md` 끝 절) |
 | 0-3 정본 | §3-A 고정문·용어 확정 · §3-B 소유표 | 이 문서 §3 | 0-1·0-2 | ✅ 10-07 (고정문 7 · 족보 11 · 액션·자리 20 · 도구 앵커 4 · 소유 12건 — ④ nuts = 글 reading-the-board로 판정) |
 | 0-4 공지 | 검수장 착수 공지 MB(§2-⑦) · 레인 워크트리 7개 생성 + 각 `HARDEN.md` | MB 1행 · 워크트리 | 0-3 | ✅ 10-07 (MB-196 · 워크트리 7 + HARDEN.md · 진행 파일 7 · index 칸 6 · lane-sync fr 7레인 · §5 치환표) |
-| 레인 🅰~🅵 | A 준비(브리프 + Fable 카피) → B 집필 → C 마감(게이트·렌즈·2차) | `docs/fr-lanes/<id>-*.md` · `lib/posts-fr/*` | 0-4 | ☐ |
-| 레인 🅶 | 솔버 앱 fr 축어 재추출(§2-⑨) → A·B·C | 〃 | 🅰~🅵 머지 | ☐ |
-| 헤드 머지 | 레인 머지 · 신규 용어 대조 · EN 델타 스윕(§2-⑤) · 아스트라 교차 1회 → 반영 | — | 전 레인 C | ▶ 🅰~🅵분 ✅ 10-07(§4-B 판정 H-1~30 · 계산기 사전 · 델타 스윕) · ☐ 🅶 머지 → 🅶 용어 대조 + 아스트라 51편 1회 |
+| 레인 🅰~🅵 | A 준비(브리프 + Fable 카피) → B 집필 → C 마감(게이트·렌즈·2차) | `docs/fr-lanes/<id>-*.md` · `lib/posts-fr/*` | 0-4 | ✅ 10-07 (6레인 · 38편 · 머지 기록 §4-A) |
+| 레인 🅶 | 솔버 앱 fr 축어 재추출(§2-⑨) → A·B·C | 〃 | 🅰~🅵 머지 | ✅ 10-07 (`56ac05b6` · 13편 · 렌즈 9 · 축어 `docs/solver-app-verbatim-fr-2026-10-07.md`) |
+| 헤드 머지 | 레인 머지 · 신규 용어 대조 · EN 델타 스윕(§2-⑤) · 아스트라 교차 1회 → 반영 | — | 전 레인 C | ✅ 10-07 (§4-B H-1~30 · 🅶 머지 `cb8b7c93` · 🅶 요청 5건 · 신규 용어 §3-A 승격 · 아스트라 51편 41건 중 채택 32 · EN-먼저 8 · 기처리 1 = queue §2-AE) |
 | 배포 | fr index · `/fr/blog` · 러닝맵 · `/fr/solver` 13링크 · 도구 4종 related · 빌드 · push · MB · IndexNow · 수동 색인 목록(GTO 13 제외) | 라이브 | 헤드 머지 | ☐ |
 
 - 모델: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 다른 계열 교차 = GPT 아스트라(ms §2 그대로).
@@ -177,7 +183,7 @@
 
 - 🔴 **레인은 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(push = Vercel 배포 → 반쪽 fr + 끊긴 링크가 라이브). main은 계속 MB 회신·다른 로케일 배포에 쓴다. 배포 회차에 `fr-integration` → main 머지 1회.
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상).
-- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ✅ 🅵 gloss `d8ec6c21` (10-07 · cooler는 MA-350 정정 문면 확인) · ✅ 🅴 tour `51c38a5c` (10-07 · 통합 트리 fr 38편 audit 🔴 0 · intl-links 잔여 4 = 전부 🅶 대상) · ▶ **🅶 gto 시작 신호 ✅ 10-07** (`harden-fr-gto`에 main + fr-integration 머지 `94accc28` — 38편이 보인다) · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
+- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ✅ MA-354 형제 fr 2자리 `698e1b4b` · ✅ 🅳 strat `b43c47cd` (10-07 · strategy FAQ «se coucher» 분리 `cd1c8683`) · ✅ 🅵 gloss `d8ec6c21` (10-07 · cooler는 MA-350 정정 문면 확인) · ✅ 🅴 tour `51c38a5c` (10-07 · 통합 트리 fr 38편 audit 🔴 0 · intl-links 잔여 4 = 전부 🅶 대상) · ▶ **🅶 gto 시작 신호 ✅ 10-07** (`harden-fr-gto`에 main + fr-integration 머지 `94accc28` — 38편이 보인다) · ✅ **🅶 gto `56ac05b6` → `cb8b7c93`**(10-07 · 이후 헤드 `9d3e0a9a` 이미지 26·카피 6·grosses blindes · `db437ab4` GTO 게이트 fr · `863ba219`·`da56e45a` 아스트라 · `e3cbe640` /fr/solver 13링크·시리즈 노드)
 
 ### 4-B. 헤드 판정 — ✅ 10-07 회차 (H-1~30 · 통합 트리 `fr-integration`)
 
@@ -225,9 +231,10 @@
 - 🪶 러닝맵 머리 «Learning Map / Overview / You are here»는 비-KO 전 로케일이 영어(intl-blog-post-client가 labels를 안 넘김) — fr만의 일이 아니라 별도 회차(자동 착수 금지).
 - 🅶 레인은 C ⓪에서 fr-integration을 머지해 이 변경(러닝맵·용어집 Check-raise 링크)을 받는다 — 헤드는 작업 중인 레인 브랜치에 머지하지 않는다.
 
-**☐ 🅶 머지 뒤 · 배포 전**
-1. 🅶 신규 용어 대조(§3-A) → 아스트라 51편 1회(§4 · 스크래치 사본 · read-only) → 판정·반영.
-2. `/fr/solver` 랜딩: GTO 13편 목록 + 본문 «Pour aller plus loin»의 규칙 6편 대체 링크를 de 구성대로(strategy · starting-hands-chart · equity · reading-the-board · 3bet · c-bet · position-play · pot-odds · glossary) — `docs/solver-landing-playbook.md` · de 10-02 (14) 선례. `gto-series-i18n` fr 항목 · 필라 역링크 · H-18 `-fr` 썸네일은 🅶 레인 몫인지 머지 때 확인.
+**✅ 🅶 머지 회차(10-07 (12))에 끝낸 것** — ① 🅶 신규 용어 대조(§3-A 승격 · 🅴 «big blinds» 57 통일) + 아스트라 51편 1회(3묶음 병렬 · 41건 → 채택 32 · EN-먼저 8 · 기처리 1(사본 뒤 이미 고친 big blinds)) ② `/fr/solver` SPOT_GROUPS 13 slug + «Pour aller plus loin» de 구성 + `gto-series-i18n` fr(러닝맵 Solver GTO 노드) ③ fr 솔버 이미지 26장 + H-18 썸네일 ④ GTO 게이트 2종 fr 지원(셀프 41/41 · 26/26) ⑤ 최종 `npm run build` ✅ 917쪽 · 로컬 DOM(/fr/solver 13링크 · /fr/blog 51 · 오류 0).
+- 🪶 랜딩 본문 산문 속 링크(de는 strategy·glossary·starting-hands·reading-the-board·equity·c-bet 6자리)는 fr 랜딩 문단 구조가 달라 손대지 않았다 — 배포 뒤 별도(자동 착수 금지).
+
+**☐ 배포 회차(남은 것 · 이 순서로)**
 3. 🔴 date: 배포일이 10-07보다 늦으면 신규 45편(🅰 6편 제외) `date` = 배포일(H-22 · ms 선례).
 4. main → fr-integration 머지(충돌 = 문서는 main 쪽) → `npm run build` 전체(prebuild 전부 통과 · sitemap fr 51 확인) → fr-integration → main ff → push.
 5. 라이브 확인(Playwright · curl은 BotID 403): `/fr/blog` 목록 51 · 글 1편 데스크톱 레일(러닝맵·계산기·솔버 버튼) · `/fr/glossary` 링크 3 · `/fr/calculator` related.

@@ -496,6 +496,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AE-8 | holdem-fish «competitors» | 어휘 | 〃 |
 | AE-9 | holdem-cooler 인용 I→you | 인용 화자 | 〃 |
 | AE-10 | 카드 «Who wins at showdown» | 대상 글 제목과 불일치 | 〃 |
+| AE-11 | 3bet-pot-cbet L219 «the big blind holding every set combo» | L167·L176은 BB 6 · BTN 3(22) — «every» 과장 | 아스트라 10-07 · fr 축어 유지 |
+| AE-12 | low-board-check-raise L289 «84 … the same eight outs» | 개수만 같고 카드는 다름(74 = 3·8 · 84 = 3·7) | 〃 |
+| AE-13 | k-high-board-cbet L188 «QJ, JT and T9 that hold two live cards» | AQ·AJ 상대로는 한 장만 살아 있다 | 〃 |
+| AE-14 | paired-board-strategy L215 «2.17 ÷ 2.60 ≈ 83.7%» + 시리즈 note «within a tenth» | 실제 83,46 % · IP 3,33 ÷ 2,90 = 114,8 vs 114,5 — 반올림 차가 0,2~0,3점 | fr note만 «quelques dixièmes»로 먼저 고침(§13) · EN + 로케일 note 같이 |
+| AE-15 | holdem-pot-odds L191 «7 of 46 unseen cards, about 15.2%» | 상대 세트 조건부면 7/44 = 15,9 %(implied-odds L89는 그렇게 계산) | 아스트라 g2 10-07 · fr 축어 유지 |
+| AE-16 | holdem-starting-hands-chart L65 «AK is never the favorite against a pocket pair» | AKs vs 22 = 50,08 %(전수 1 712 304 보드 · 아스트라 계산 — 재검산 필요) | 〃 |
+| AE-17 | holdem-when-to-fold L112 «fills up ~34% of the time» | 34 % = 풀 30 % + 쿼드 4,4 % | 〃 |
+| AE-18 | holdem-icm L175 3bb «forced all-in within a hand or two» | 앤티 없으면 블라인드 한 바퀴로 강제 올인이 아니다 | 〃 |
 
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
