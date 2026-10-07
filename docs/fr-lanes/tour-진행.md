@@ -4,16 +4,16 @@
 > SERP 입력 = `docs/keyword-bank/fr-serp/L-E-tour.md` + `00-brief.md` — 다시 조사하지 않는다(계획 §2-①).
 > 브리프 = `docs/fr-lanes/tour-brief.md`(A 산출 · B의 유일한 입력 + EN 마스터).
 
-## 상태 — A ✅(10-07 · 브리프 + Fable 카피 1회 · Opus 조정 4) / B ☐ / C ☐ · 커밋 —
+## 상태 — A ✅(10-07 · 브리프 + Fable 카피 1회 · Opus 조정 4) / B ✅(10-07 · Opus 서브 5 병렬 집필 · 자기 게이트 아래) / C ☐ · 커밋 —
 
 ## 편별
 | slug | A 브리프 | B 집필 | C 렌즈 | 비고 |
 |---|---|---|---|---|
-| holdem-tournament | ✅ | ☐ | ☐ | 링크 편차 2 · FAQ 합법성 → 운영 질문 교체 |
-| holdem-icm | ✅ | ☐ | ☐ | |
-| holdem-bubble | ✅ | ☐ | ☐ | |
-| holdem-short-stack | ✅ | ☐ | ☐ | |
-| holdem-tournament-vs-cash-game | ✅ | ☐ | ☐ | FAQ 세금 → 운영 질문 교체 · EN 태그 «ICM poker» 버림 |
+| holdem-tournament | ✅ | ✅ | ☐ | 링크 편차 2 · FAQ 합법성 → 운영 질문 교체 |
+| holdem-icm | ✅ | ✅ | ☐ | |
+| holdem-bubble | ✅ | ✅ | ☐ | |
+| holdem-short-stack | ✅ | ✅ | ☐ | |
+| holdem-tournament-vs-cash-game | ✅ | ✅ | ☐ | FAQ 세금 → 운영 질문 교체 · EN 태그 «ICM poker» 버림 |
 
 ## 신규 용어
 | EN | 채택 fr | 근거 |
@@ -52,7 +52,13 @@
 - `lib/posts-en/holdem-icm.ts:183`·`:238` | readnext·그리드 카드 제목 «Texas Hold'em Tournament Strategy» ≠ 대상 글 title «How Poker Tournaments Work — Buy-Ins, Formats & Day 1» | ms 레인 09-26 동일 지적 승계(미처리) — fr은 대상 fr title로 쓴다
 
 ## 헤드 요청
+- 🔴 **`check:calc-parity:all` fr 불일치 14**(B 등록 직후 발생 · 원인 = fr에 holdem-icm·holdem-short-stack이 생겨 `app/fr/calculator` dict가 icmGuide.deal.link · related links[6]·[7]을 요구) → `app/`은 헤드 소유 · 계획 §3-B ⑦⑧ «배포 회차» 작업. 머지 전 처리 안 하면 prebuild가 막힌다.
+- `check:intl-links` exit 1 = 다른 레인 대상 15건 «미번역»(equity · 3bet · pot-odds · when-to-fold · rake · starting-hands-chart · hand-rankings) — 계획 §2-③ 설계대로(전 레인 머지 뒤 0). 그래서 B는 `next build`를 prebuild 없이 직접 돌려 통과 확인(나머지 prebuild 검사 7종 exit 0).
+- 참고: `check:structure` fr 🟠 4건은 🅰 파일(blind-meaning link 2·cardn −2 · rules-for-beginners link 1 · betting-actions li −3 · game-order faq −4) — 이 레인 5편이 생겨 «걸 수 있게 된» 링크 포함. 🅰 레인/헤드 판정.
+- 브리프 오기: tour-brief.md:L768 vs-cash 표 «11» → 실제 12(같은 브리프 L831 목록·EN 모두 12).
 
 ## 미결
+- C: B 서브 «확신 없는 자리» 메모(편별 L##) — tournament: H2 첫 문장 굵기 = EN 패리티(EN 대부분 비굵음) · «field» 미번역 · L131 MTT 행 표기 · recave 첫 등장 순서. icm: 그리드 카드 제목 축약 2. bubble: «payer à tapis»(call off) · «payer en flat» · WSOP Rule 80 영어 인용+풀이. short-stack: L21 first-in 병기가 하이라이트 안 · «sous le pistolet (UTG)» · FAQ 🆕 tapis effectif 답의 일반 서술 1문장. vs-cash: H2 3·4·6~10·12에 굵은 직답 문장 «추가»(EN에 없음 → C에서 EN 패리티로 되돌릴지 판정) · 첫 등장 병기 서식 편차.
+- C: 22 vs AKo 52.65 % poker-eval 대조(short-stack).
 - B: 🅲·🅳 대상(equity · pot-odds · probability · when-to-fold · starting-hands-chart · positions) readnext·그리드 제목 = 임시 직역 → C에서 머지 파일 title로 교체(브리프 §1-D).
 - B: 🅰 재작성 중인 blind-meaning · texas-holdem-rules-for-beginners · game-order 제목 → C에서 🅰 머지 파일과 대조.
