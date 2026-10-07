@@ -655,10 +655,11 @@ export default function SolverClientEs() {
           </li>
           <li className="text-muted-foreground">
             La racha de aciertos, el desglose de puntos débiles y la{" "}
-            <strong className="text-foreground">cola de repaso</strong> con los ejercicios donde más EV
-            has perdido se construyen con ese historial. Por defecto, se guarda en este dispositivo.
+            <strong className="text-foreground">cola de repaso</strong> con los ejercicios donde has
+            perdido EV se construyen con ese historial. Por defecto, se guarda en este dispositivo.
             Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día
-            se guarda en tu cuenta para continuar desde otro dispositivo. Los spots que calculaste y
+            se guarda en tu cuenta para continuar desde otro dispositivo. La racha de días y la marca de
+            completado de las preguntas del día se quedan en cada dispositivo. Los spots que calculaste y
             su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión
           </li>
         </ul>

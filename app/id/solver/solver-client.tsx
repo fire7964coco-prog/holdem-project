@@ -623,9 +623,10 @@ export default function SolverClientId() {
           <li className="text-muted-foreground">
             Rentetan jawaban benar, analisis titik lemah, dan{" "}
             <strong className="text-foreground">tombol Tinjau ulang</strong> (hand tempat Anda
-            paling banyak kehilangan EV muncul kembali) bekerja dari riwayat Anda. Tanpa login,
+            kehilangan EV muncul kembali) bekerja dari riwayat Anda. Tanpa login,
             riwayat tetap di perangkat Anda. Dengan login, riwayat latihan dari spot belajar dan
-            Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil
+            Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Rentetan hari dan tanda selesai
+            Tantangan Harian tetap di masing-masing perangkat. Spot hasil
             hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini,
             meskipun Anda login
           </li>

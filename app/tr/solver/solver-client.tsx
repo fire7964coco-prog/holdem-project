@@ -446,10 +446,10 @@ export default function SolverClientTr() {
             dağıtılır — bir el, o spotta gerçekten ne sıklıkla elinde olacaksa o sıklıkla gelir
           </li>
           <li className="text-muted-foreground">
-            Seriler, zayıf spot dökümleri ve en büyük EV kayıplarını toplayan{" "}
+            Seriler, zayıf spot dökümleri ve EV kaybettiğin elleri toplayan{" "}
             <strong className="text-foreground">Review</strong> kuyruğu pratik geçmişinle çalışır. Giriş
-            yapmak Study Spots ve Daily Challenge geçmişini cihazlar arasında eşitler. Kendi çözdüğün
-            spotlar ve onların pratik geçmişi, giriş yapsan bile bu cihazda kalır
+            yapmak Study Spots ve Daily Challenge geçmişini cihazlar arasında eşitler; Daily Challenge gün serisi ve tamamlandı işareti her
+            cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi, giriş yapsan bile bu cihazda kalır
           </li>
         </ul>
         <div className="mt-5">

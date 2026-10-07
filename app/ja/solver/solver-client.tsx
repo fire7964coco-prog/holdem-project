@@ -555,7 +555,7 @@ export default function SolverClientJa() {
           </li>
           <li className="text-muted-foreground">
             連続正解の記録、苦手分野の内訳、EVロスが大きかった問題を集めた
-            <strong className="text-foreground">復習キュー</strong>は、この履歴をもとに動いています。履歴は初期状態では端末内に保存されます。ログインすると学習スポット・今日の問題の履歴を端末間で同期できます。自分で計算したスポットとその練習履歴は、ログインしてもこの端末だけに残ります
+            <strong className="text-foreground">復習キュー</strong>は、この履歴をもとに動いています。履歴は初期状態では端末内に保存されます。ログインすると学習スポット・今日の問題の履歴を端末間で同期できます。今日の問題の連続日数と解答済みの表示は端末ごとに残ります。自分で計算したスポットとその練習履歴は、ログインしてもこの端末だけに残ります
           </li>
         </ul>
         <div className="mt-5">

@@ -135,7 +135,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Dá para salvar um spot e compartilhar?",
-    a: "Dá. Você pode salvar ranges e configurações, importar e exportar como arquivo, tirar o resumo dos resultados em CSV e gerar um link que abre exatamente o mesmo spot no aparelho de outra pessoa. É a forma mais rápida de perguntar uma mão no grupo de estudo. Se você salvar um spot que calculou como questões do Treinador, essas questões e o histórico de treino delas ficam só neste aparelho, mesmo com login; não são sincronizados com a sua conta.",
+    a: "Dá. Você pode salvar ranges e configurações, importar e exportar como arquivo, tirar o resumo dos resultados em CSV e gerar um link que abre o mesmo spot, com os mesmos ranges e configurações, no aparelho de outra pessoa (as estratégias que você fixou em um nó não vão no link). É a forma mais rápida de perguntar uma mão no grupo de estudo. Se você salvar um spot que calculou como questões do Treinador, essas questões e o histórico de treino delas ficam só neste aparelho, mesmo com login; não são sincronizados com a sua conta.",
   },
   {
     q: "Serve para torneio ou só para cash?",

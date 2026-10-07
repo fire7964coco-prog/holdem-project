@@ -117,7 +117,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Puedo guardar un spot y compartirlo?",
-    a: "Sí. Puedes guardar rangos y configuraciones, importarlas y exportarlas como archivo, sacar el resumen de resultados en CSV y generar un enlace que abra exactamente el mismo spot en el dispositivo de otra persona. Es la forma más rápida de preguntar una mano en un grupo de estudio. Si guardas un spot que calculaste como preguntas del Entrenador, esas preguntas y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión; no se sincronizan con tu cuenta.",
+    a: "Sí. Puedes guardar rangos y configuraciones, importarlas y exportarlas como archivo, sacar el resumen de resultados en CSV y generar un enlace que abra el mismo spot, con los mismos rangos y ajustes, en el dispositivo de otra persona (las estrategias que hayas fijado en un nodo no viajan en el enlace). Es la forma más rápida de preguntar una mano en un grupo de estudio. Si guardas un spot que calculaste como preguntas del Entrenador, esas preguntas y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión; no se sincronizan con tu cuenta.",
   },
   {
     q: "¿Sirve para torneos o solo para cash?",

@@ -129,7 +129,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Je peux sauvegarder et partager mes spots ?",
-    a: "Oui. Ranges et réglages se sauvegardent, s'importent et s'exportent ; le récapitulatif s'exporte en CSV ; et un lien de partage ouvre exactement le même spot sur l'appareil de quelqu'un d'autre. Pour débriefer une main avec un ami, c'est le chemin le plus court. Si tu enregistres un spot que tu as calculé comme exercices du Trainer, ces exercices et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes ; ils ne sont pas synchronisés avec ton compte.",
+    a: "Oui. Ranges et réglages se sauvegardent, s'importent et s'exportent ; le récapitulatif s'exporte en CSV ; et un lien de partage ouvre le même spot, avec les mêmes ranges et réglages, sur l'appareil de quelqu'un d'autre (les stratégies que tu as fixées sur un nœud ne passent pas par le lien). Pour débriefer une main avec un ami, c'est le chemin le plus court. Si tu enregistres un spot que tu as calculé comme exercices du Trainer, ces exercices et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes ; ils ne sont pas synchronisés avec ton compte.",
   },
   {
     q: "C'est adapté au cash game ou au tournoi ?",

@@ -563,8 +563,9 @@ export default function SolverClientEn() {
           </li>
           <li className="text-muted-foreground">
             Streaks, weak-spot breakdowns and a <strong className="text-foreground">Review</strong>{" "}
-            queue of your biggest EV losses run on your practice history. Signing in syncs your
-            history for Study Spots and Daily Challenge across devices. Your own solved spots and their
+            queue of spots where you lost EV run on your practice history. Signing in syncs your
+            history for Study Spots and Daily Challenge across devices; the Daily Challenge day streak
+            and completed mark stay on each device. Your own solved spots and their
             practice history stay on this device even when signed in
           </li>
         </ul>

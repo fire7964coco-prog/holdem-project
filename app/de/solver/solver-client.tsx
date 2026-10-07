@@ -705,9 +705,10 @@ export default function SolverClientDe() {
           <li className="text-muted-foreground">
             Serien, Schwachstellen-Auswertung und die{" "}
             <strong className="text-foreground">Wiederholungs-Queue</strong> mit den Übungen, in denen
-            du am meisten EV verloren hast, bauen auf diesem Verlauf auf. Ohne Login bleibt er auf
+            du EV verloren hast, bauen auf diesem Verlauf auf. Ohne Login bleibt er auf
             deinem Gerät. Mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im
-            Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr
+            Konto speichern und auf anderen Geräten weiterführen. Die Tagesserie und der Erledigt-Status
+            der täglichen Aufgabe bleiben auf dem jeweiligen Gerät. Selbst berechnete Spots und ihr
             Übungsverlauf bleiben auch mit Login nur auf diesem Gerät
           </li>
         </ul>

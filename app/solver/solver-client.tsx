@@ -459,7 +459,7 @@ export default function SolverClient() {
           <li className="text-muted-foreground">
             학습 기록은 기본적으로 <strong className="text-foreground">이 기기 안에</strong> 저장됩니다.
             구글·카카오로 로그인하면 교육 예제와 오늘의 문제 기록을 계정에 보관해 다른 기기에서
-            이어서 풀 수 있습니다. 직접 계산한 스팟과 그 연습 기록은 로그인해도 이 기기에만 남습니다
+            이어서 풀 수 있습니다. 오늘의 문제 연속 일수와 완료 표시는 기기마다 따로 남습니다. 직접 계산한 스팟과 그 연습 기록은 로그인해도 이 기기에만 남습니다
           </li>
         </ul>
         <div className="mt-5">

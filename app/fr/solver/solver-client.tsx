@@ -627,10 +627,11 @@ export default function SolverClientFr() {
           </li>
           <li className="text-muted-foreground">
             Séries de bonnes réponses, analyse des points faibles et{" "}
-            <strong className="text-foreground">bouton Révision</strong> (les mains où tu perds le
-            plus d'EV reviennent) s'appuient sur ton historique. Par défaut, il reste sur cet appareil.
+            <strong className="text-foreground">bouton Révision</strong> (les mains où tu as perdu
+            de l'EV reviennent) s'appuient sur ton historique. Par défaut, il reste sur cet appareil.
             Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour
-            est enregistré sur ton compte pour continuer sur un autre appareil. Tes propres spots
+            est enregistré sur ton compte pour continuer sur un autre appareil. La série de jours et le
+            statut terminé des questions du jour restent sur chaque appareil. Tes propres spots
             calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu
             te connectes
           </li>

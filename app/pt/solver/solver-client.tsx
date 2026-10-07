@@ -689,9 +689,10 @@ export default function SolverClientPt() {
           <li className="text-muted-foreground">
             A sequência de acertos, o detalhamento dos pontos fracos e a{" "}
             <strong className="text-foreground">fila de revisão</strong> com os exercícios em que você
-            mais perdeu EV são construídos com esse histórico. Por padrão, ele fica neste aparelho.
+            perdeu EV são construídos com esse histórico. Por padrão, ele fica neste aparelho.
             Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo
-            na sua conta para você continuar em outro aparelho. Os spots que você calculou e o histórico
+            na sua conta para você continuar em outro aparelho. A sequência de dias e a marca de
+            concluído das questões do dia ficam em cada aparelho. Os spots que você calculou e o histórico
             de treino deles ficam só neste aparelho, mesmo com login
           </li>
         </ul>

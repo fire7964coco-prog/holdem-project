@@ -96,7 +96,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Where is my study progress saved?",
-    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account, your history for Study Spots and Daily Challenge can sync across devices. Your own solved spots and their practice history stay on this device even when signed in; they are not saved to your account. Streaks, weak-spot breakdowns by scenario, and the Review queue of your biggest EV losses use your practice history.",
+    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account, your history for Study Spots and Daily Challenge can sync across devices. The Daily Challenge day streak and completed mark stay on each device. Your own solved spots and their practice history stay on this device even when signed in; they are not saved to your account. Streaks, weak-spot breakdowns by scenario, and the Review queue of spots where you lost EV use your practice history.",
   },
   {
     q: "Can I install it to my home screen?",

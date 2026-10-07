@@ -616,7 +616,7 @@ export default function SolverClientZh() {
             发牌按 <strong className="text-foreground">GTO 范围里的真实权重</strong>来——一手牌出现的频率，就是你在那个局面里真会拿到它的频率
           </li>
           <li className="text-muted-foreground">
-            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏 EV 最多的题排回来）都建立在做题记录上。记录默认存在这台设备上；登录后，教学案例和每日题目的记录可以同步到别的设备。自己算的牌局和对应的练习记录，即使登录也只留在这台设备上
+            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏了 EV 的题排回来）都建立在做题记录上。记录默认存在这台设备上；登录后，教学案例和每日题目的记录可以同步到别的设备，但每日题目的连续天数和完成标记只留在各自的设备上。自己算的牌局和对应的练习记录，即使登录也只留在这台设备上
           </li>
         </ul>
         <div className="mt-5">

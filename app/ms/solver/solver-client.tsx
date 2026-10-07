@@ -390,9 +390,10 @@ export default function SolverClientMs() {
           </li>
           <li className="text-muted-foreground">
             Rekod latihan menyokong rentetan jawapan baik, analisis kelemahan dan ulang kaji tangan
-            dengan kerugian EV terbesar. Jika anda log masuk, rekod latihan{" "}
+            yang kehilangan EV. Jika anda log masuk, rekod latihan{" "}
             <strong className="text-foreground">Spot belajar dan Cabaran Harian</strong> disimpan
-            dalam akaun supaya anda boleh menyambung pada peranti lain. Soalan Spot saya dan rekod
+            dalam akaun supaya anda boleh menyambung pada peranti lain. Rentetan hari dan tanda selesai
+            Cabaran Harian kekal pada setiap peranti. Soalan Spot saya dan rekod
             latihannya kekal pada peranti ini sahaja, walaupun anda log masuk
           </li>
         </ul>
