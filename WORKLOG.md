@@ -1,3 +1,10 @@
+## 2026-10-07 (7) — fr 레인 🅰 rules · 🅲 prob 머지 (통합 브랜치 fr-integration)
+
+- 결정: main 대신 fr-integration(Holdem-fr-head)에 머지 — main push = 배포라 반쪽 fr가 라이브로 나가는 것을 막는다(계획 §4-A).
+- 🅰 2b236c8f(6편 재작성 · 렌즈 84/반영 68) · 🅲 c2d159bf(7편 신규 · 반영 46) 무충돌 머지. 헤드 요청 ⑤(probability FAQ 6 = drawing-odds H2 중복) · ⑧(implied-odds tldr «coucher» → «lâcher») 반영 0f514ece.
+- 게이트(통합 트리): audit:hard fr 13편 🔴 0 · next build exit 0. prebuild intl-links·calc-parity는 전 레인·계산기 사전 전까지 실패가 정상.
+- 레인 간 용어 분열 1건 확인(street) 등 판정 대기 9건 = 계획 §4-B.
+
 ## 2026-10-07 (6) — MA-350 판정·이행: cooler «Cold deck» 사전 귀속 한정 (MB-197 · queue §2-AC)
 
 - 요청 1 채택: EN «In the dictionary it names…» → «Some poker glossaries use it for…» + 형제 8로케일 13자리(de·ja·zh·zh-hant는 FAQ·요약 박스까지 2자리). fr은 cooler 미발행 → 🅵 gloss 레인이 main 머지로 받음.
