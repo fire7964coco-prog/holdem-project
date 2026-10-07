@@ -52,7 +52,7 @@ const OWNED = {
     'lib/posts-ar/',
     'lib/posts-de/',
     'lib/posts-es/',
-    'lib/posts-fr/',
+    // lib/posts-fr/ 는 2026-10-07부터 fr 클러스터 7레인 소유(아래 frLanes) — queue에서 뺐다
     'lib/posts-id/',
     'lib/posts-pt/',
     'public/images/',
@@ -69,16 +69,30 @@ const OWNED = {
     'ms-tour': ['holdem-tournament', 'holdem-icm', 'holdem-bubble', 'holdem-short-stack'],
     'ms-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
   }),
+  // 🇫🇷 fr 클러스터 7레인(2026-10-07 · docs/fr-cluster-plan.md §1·§5) — ms와 같은 슬러그 파일 분할. index.ts 는 공용(null).
+  ...localeLanes('fr', {
+    'fr-rules': ['texas-holdem-rules-for-beginners', 'holdem-game-order', 'holdem-betting-actions', 'holdem-blind-meaning', 'holdem-all-in-rules', 'holdem-showdown-rules'],
+    'fr-rank': ['holdem-hand-rankings', 'holdem-flush-vs-straight', 'holdem-kicker', 'holdem-tiebreak-rules', 'holdem-split-pot-rules', 'holdem-reading-the-board'],
+    'fr-prob': ['holdem-probability', 'holdem-pot-odds', 'holdem-outs', 'holdem-drawing-odds', 'holdem-implied-odds', 'holdem-equity', 'holdem-card-counting'],
+    'fr-strat': ['holdem-strategy', 'holdem-positions', 'holdem-position-play', 'holdem-starting-hands-chart', 'holdem-limping', 'holdem-3bet', 'holdem-continuation-bet', 'holdem-when-to-fold'],
+    'fr-tour': ['holdem-tournament', 'holdem-icm', 'holdem-bubble', 'holdem-short-stack', 'holdem-tournament-vs-cash-game'],
+    'fr-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
+    'fr-gto': ['donk-bet-strategy', 'monotone-board-strategy', 'broadway-board-strategy', 'a-high-board-cbet', 'k-high-board-cbet', 'ace-paired-board-strategy', 'paired-board-strategy', 'low-board-check-raise', 'blind-battle-cbet', 'blind-battle-connected-board', '3bet-pot-cbet', '3bet-pot-bet-sizing', '3bet-pot-low-board'],
+  }),
 };
 
 function msLanes(map) {
+  return localeLanes('ms', map);
+}
+
+function localeLanes(loc, map) {
   const out = {};
   for (const [lane, slugs] of Object.entries(map)) {
-    const id = lane.slice(3);
+    const id = lane.slice(loc.length + 1);
     out[lane] = [
-      ...slugs.map((s) => `lib/posts-ms/${s}.ts`),
-      `docs/ms-lanes/${id}-`,
-      `docs/keyword-bank/ms-${id}.md`,
+      ...slugs.map((s) => `lib/posts-${loc}/${s}.ts`),
+      `docs/${loc}-lanes/${id}-`,
+      `docs/keyword-bank/${loc}-${id}.md`,
     ];
   }
   return out;
@@ -160,6 +174,18 @@ function selftest() {
     ['docs/keyword-bank/ms-strat.md', 'ms-strat'],
     ['docs/keyword-bank/ms-posting-reference.md', null],
     ['docs/ms-translation-lanes.md', null],
+    ['lib/posts-fr/holdem-blind-meaning.ts', 'fr-rules'],
+    ['lib/posts-fr/holdem-hand-rankings.ts', 'fr-rank'],
+    ['lib/posts-fr/holdem-positions.ts', 'fr-strat'],
+    ['lib/posts-fr/holdem-tournament-vs-cash-game.ts', 'fr-tour'],
+    ['lib/posts-fr/3bet-pot-cbet.ts', 'fr-gto'],
+    ['lib/posts-fr/index.ts', null],
+    ['docs/fr-lanes/gto-진행.md', 'fr-gto'],
+    ['docs/fr-lanes/rules-brief.md', 'fr-rules'],
+    ['docs/keyword-bank/fr-prob.md', 'fr-prob'],
+    ['docs/keyword-bank/fr-serp/L-C-prob.md', null],
+    ['docs/keyword-bank/fr-core-volumes.md', null],
+    ['docs/fr-cluster-plan.md', null],
   ];
   let bad = 0;
   for (const [p, want] of cases) {

@@ -1,3 +1,11 @@
+## 2026-10-07 (5) — fr 클러스터 0-4 착수 (MB-196 · 워크트리 7)
+
+- 검수장 착수 공지 MB-196: 51편 범위 · 레인 7 · 요청 1 = 배포 전 lib/posts-fr/ 판정 보류, 배포 해시로 한 번에(계획 §2-⑦).
+- 계획 §5 신설 = ms-translation-lanes §3~§9를 fr로 읽는 치환표(숫자 프랑스식 · SERP 재조사 금지 · 소유표 줄 · 전사 대조 정규화 · 네이티브 렌즈 페르소나 · 🅶 시작 신호).
+- docs/fr-lanes/<id>-진행.md 7개 · lib/posts-fr/index.ts 레인 칸 6(🅰는 재작업이라 칸 없음 · 주석만) · lane-sync fr 7레인 소유 + queue에서 lib/posts-fr/ 제거(셀프테스트 49/49).
+- 워크트리 Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto} · harden-fr-* · node_modules junction · 각 HARDEN.md(비추적).
+- 글 수정 없음(index.ts는 주석만) → IndexNow 없음.
+
 ## 2026-10-07 (4) — fr 클러스터 0-3 정본 (docs/fr-cluster-plan.md §3)
 
 - §3-A 고정문·용어 확정: 실측 = 기존 fr 6편 grep · `lib/intl.ts` fr · 도구 4종 사전 · terms/local-voice 문서 · 0-1/0-2 볼륨. 구조 고정문 7(Réponse rapide · À lire ensuite · FAQ · Articles liés · À retenir · N min · 화자) · 족보 11 · 액션·자리 20 · 도구 앵커 4.

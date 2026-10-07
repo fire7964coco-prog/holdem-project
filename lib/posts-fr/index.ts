@@ -8,6 +8,26 @@ import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 
+// ── fr 클러스터 레인 import 칸 (2026-10-07 · docs/fr-cluster-plan.md §5) ──
+// 🔴 레인은 자기 칸의 «시작»과 «끝» 줄 사이에만 넣는다. 칸 밖을 고치면 레인끼리 충돌한다. (🅰 fr-rules는 위 6편 재작업이라 칸 없음)
+// [fr-rank import 시작]
+// [fr-rank import 끝]
+
+// [fr-prob import 시작]
+// [fr-prob import 끝]
+
+// [fr-strat import 시작]
+// [fr-strat import 끝]
+
+// [fr-tour import 시작]
+// [fr-tour import 끝]
+
+// [fr-gloss import 시작]
+// [fr-gloss import 끝]
+
+// [fr-gto import 시작]
+// [fr-gto import 끝]
+
 /**
  * 프랑스어(fr) 블로그 포스트.
  * 프랑스 포커 커뮤니티 용어(Quinte Flush·Carré·Couleur·Brelan 등 + 영어 병용)로 현지화한 글.
@@ -21,6 +41,25 @@ export const FR_POSTS: Post[] = [
   holdemBlindMeaning,
   holdemAllInRules,
   holdemShowdownRules,
+
+  // ── fr 클러스터 레인 배열 칸 — 자기 칸 사이에만 ──
+  // [fr-rank 배열 시작]
+  // [fr-rank 배열 끝]
+
+  // [fr-prob 배열 시작]
+  // [fr-prob 배열 끝]
+
+  // [fr-strat 배열 시작]
+  // [fr-strat 배열 끝]
+
+  // [fr-tour 배열 시작]
+  // [fr-tour 배열 끝]
+
+  // [fr-gloss 배열 시작]
+  // [fr-gloss 배열 끝]
+
+  // [fr-gto 배열 시작]
+  // [fr-gto 배열 끝]
 ];
 
 export function getFrPost(slug: string): Post | undefined {
