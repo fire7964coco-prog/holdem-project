@@ -99,7 +99,7 @@ Il existe deux façons de le calculer :
 
 :::compare
 Méthode « contributed » | Méthode « dealt »
-Basé sur le rake des pots **dans lesquels tu as mis de l'argent** — la méthode moderne standard | Réparti à parts égales entre **tous les joueurs ayant reçu des cartes** dans un pot ratissé, qu'ils y aient contribué ou non — devenu rare
+Basé sur le rake des pots **dans lesquels tu as mis de l'argent** — la méthode moderne standard | Réparti à parts égales entre **tous les joueurs ayant reçu des cartes** dans un pot sur lequel un rake a été prélevé, qu'ils y aient contribué ou non — devenu rare
 :::
 
 Pour un joueur occasionnel, le rakeback est un petit bonus. Pour un régulier à gros volume, c'est énorme : l'écart entre un accord à 20 % et un à 40 % grandit avec le rake que tu génères réellement, donc il ne devient une vraie somme que si tu fais un vrai volume à des limites qui comptent — et pour beaucoup de grinders à l'équilibre, le rakeback *est* leur bénéfice. Il abaisse en pratique ton rake réel, donc ça vaut le coup de vérifier avant de choisir où jouer. Garde juste en tête qu'une bonne partie des conseils sur le rakeback en ligne sont dictés par l'affiliation — traite les pages « inscris-toi ici » avec la méfiance que tu réserves à n'importe quel argumentaire commercial.

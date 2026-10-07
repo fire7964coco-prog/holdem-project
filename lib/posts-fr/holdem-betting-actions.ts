@@ -226,7 +226,7 @@ Face à une mise de $10, un joueur lâche en silence un seul jeton de $100 en at
 ---
 
 :::readnext[À lire ensuite]
-/fr/blog/holdem-all-in-rules | Faire tapis : règles du all-in et des side pots | /images/holdem-all-in-rules-hero.webp
+/fr/blog/holdem-all-in-rules | Faire tapis : règles de l'all-in et des side pots | /images/holdem-all-in-rules-hero.webp
 /fr/blog/holdem-strategy | La stratégie au Texas Hold'em : les 5 décisions | /images/holdem-strategy-hero.webp
 :::
 

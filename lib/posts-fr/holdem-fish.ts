@@ -48,7 +48,7 @@ Le mot ne dit rien de la *gentillesse* d'un joueur ni du plaisir qu'il prend à 
 
 La métaphore vient tout droit de la chaîne alimentaire de l'océan. **Les requins mangent les poissons.** Un joueur gagnant, technique et agressif, tourne autour de la table à la recherche du joueur faible et passif dont il peut profiter, et ce joueur-là, c'est le fish. L'image est tellement ancrée dans la culture poker qu'une dizaine de termes en sont nés (whale, minnow, guppy), qui décrivent tous des degrés de la même chose.
 
-Il y a une expression qui va avec et que tu entendras sans arrêt : **« Don't tap the glass »**, ne tape pas sur la vitre. Elle vient des panneaux d'aquarium qui demandent aux visiteurs de ne pas taper sur la vitre pour ne pas effrayer les poissons. Au poker, ça veut dire : *ne jamais critiquer, sermonner ou humilier un joueur faible.* Un joueur perdant qui se sent bête se lève et s'en va, avec ses jetons. Les bons joueurs veulent que le fish soit à l'aise, qu'il s'amuse et qu'il reste pour un buy-in de plus. C'est pour ça que les joueurs expérimentés restent aimables avec celui qu'ils sont en train de dépouiller.
+Il y a une expression qui va avec et que tu entendras sans arrêt : **« Don't tap the glass »**, ne tape pas sur la vitre. Elle vient des panneaux d'aquarium qui demandent aux visiteurs de ne pas taper sur la vitre pour ne pas effrayer les poissons. Au poker, ça veut dire : *ne jamais critiquer, sermonner ou humilier un joueur faible.* Un joueur perdant qui se sent bête se lève et s'en va, avec ses jetons. Les bons joueurs veulent que le fish soit à l'aise, qu'il s'amuse et qu'il reste pour un buy-in de plus. C'est pour ça que les joueurs expérimentés restent aimables même avec celui qui vient de leur prendre tout leur stack.
 
 ---
 

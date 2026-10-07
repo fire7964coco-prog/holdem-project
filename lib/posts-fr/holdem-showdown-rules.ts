@@ -4,8 +4,8 @@ export const POST: Post = {
   slug: "holdem-showdown-rules",
   title: "Règles du showdown au poker : qui montre en premier, muck et slow roll",
   seoTitle: "Qui montre ses cartes en premier ? — Showdown poker et muck",
-  desc: "Qui montre ses cartes en premier au showdown ? Règles de l'abattage au poker : dernier relanceur, cards speak, muck sans montrer, slow roll et all-in.",
-  tldr: "En tournoi, sans all-in, le dernier joueur à avoir misé ou relancé sur la river montre en premier ; si tout le monde a checké la river, c'est le premier joueur encore en jeu à gauche du bouton. Après un all-in, toutes les mains restantes doivent être montrées une fois les enchères terminées. Le joueur qui a payé la river et garde ses cartes peut demander à voir la main du dernier relanceur ; en cash game, ce sont les règles de la salle qui décident de qui montre et qui peut jeter sa main.",
+  desc: "Qui montre ses cartes en premier au showdown ? Règles de l'abattage au poker : dernier agresseur, cards speak, muck sans montrer, slow roll et all-in.",
+  tldr: "En tournoi, sans all-in, le dernier joueur à avoir misé ou relancé sur la river montre en premier ; si tout le monde a checké la river, c'est le premier joueur encore en jeu à gauche du bouton. Après un all-in, toutes les mains restantes doivent être montrées une fois les enchères terminées. Le joueur qui a payé la river et garde ses cartes peut demander à voir la main du dernier agresseur ; en cash game, ce sont les règles de la salle qui décident de qui montre et qui peut jeter sa main.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-07",
@@ -40,12 +40,12 @@ Le showdown, c'est le moment où les joueurs encore en jeu retournent leurs cart
 - **Mise ou relance sur la river** : en tournoi, sans all-in, le dernier joueur à avoir misé ou relancé sur la river montre en premier.
 - **River checkée par tout le monde** : c'est le premier joueur encore en jeu à gauche du bouton qui commence, puis on tourne dans le sens des aiguilles d'une montre.
 - **All-in** : toutes les mains restantes doivent être montrées une fois les enchères terminées — en tournoi, personne ne peut jeter ses cartes (muck).
-- **Voir la main adverse** : le joueur qui a payé la river et garde ses cartes peut demander à voir la main du dernier relanceur.
+- **Voir la main adverse** : le joueur qui a payé la river et garde ses cartes peut demander à voir la main du dernier agresseur.
 - **Cash game** : ce sont les règles de la salle qui décident de qui montre et de qui peut jeter sa main.
 
 ## Qui montre ses cartes en premier au poker ?
 
-Tout dépend de la façon dont le dernier tour d'enchères s'est terminé. Si quelqu'un a misé ou relancé sur la river, c'est le dernier relanceur qui montre en premier, pas celui qui a payé. Si tout le monde a checké, c'est le premier joueur actif à gauche du bouton. Et en tournoi, dès qu'un joueur est all-in et que les enchères sont finies, toutes les mains passent face visible.
+Tout dépend de la façon dont le dernier tour d'enchères s'est terminé. Si quelqu'un a misé ou relancé sur la river, c'est le dernier agresseur qui montre en premier, pas celui qui a payé. Si tout le monde a checké, c'est le premier joueur actif à gauche du bouton. Et en tournoi, dès qu'un joueur est all-in et que les enchères sont finies, toutes les mains passent face visible.
 
 Le tableau ci-dessous résume les trois cas (pour la séquence complète, tour par tour, qui mène jusqu'ici, vois [l'ordre du jeu](/fr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")).
 
@@ -61,21 +61,21 @@ Le tableau ci-dessous résume les trois cas (pour la séquence complète, tour p
 
 ![Infographie de l'ordre de l'abattage au Texas Hold'em — qui montre en premier sur un board J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:L'expression clé, c'est « dernier relanceur ».== Si tu as misé sur la river et qu'on t'a payé, c'est toi qui montres en premier — pas celui qui a suivi. Lui voit ta main avant de décider s'il montre la sienne ou s'il la jette.
+==g:L'expression clé, c'est « dernier agresseur ».== Si tu as misé sur la river et qu'on t'a payé, c'est toi qui montres en premier — pas celui qui a suivi. Lui voit ta main avant de décider s'il montre la sienne ou s'il la jette.
 
 ---
 
 ## Peux-tu jeter tes cartes (muck) sans les montrer au showdown ?
 
-Oui, si tu as perdu et que personne n'est all-in : une fois que le dernier relanceur a montré sa main, tu peux jeter la tienne face cachée sans rien dévoiler. Deux limites quand même : en tournoi, un all-in oblige à étaler toutes les mains une fois les enchères finies, et si c'est toi le dernier relanceur, celui qui a payé ta mise sur la river peut exiger de voir ta main.
+Oui, si tu as perdu et que personne n'est all-in : une fois que le dernier agresseur a montré sa main, tu peux jeter la tienne face cachée sans rien dévoiler. Deux limites quand même : en tournoi, un all-in oblige à étaler toutes les mains une fois les enchères finies, et si c'est toi le dernier agresseur, celui qui a payé ta mise sur la river peut exiger de voir ta main.
 
 Concrètement, une fois sa main dévoilée, les autres joueurs ont deux options :
 - **Montrer leur main** s'ils pensent gagner
 - **Jeter leurs cartes face cachée** s'ils voient qu'ils ont perdu — inutile de dévoiler quoi que ce soit. Mais seulement tant que personne n'est all-in : en tournoi, dès qu'un joueur est all-in **et que toutes les enchères des autres joueurs sont terminées**, la ==TDA 2024, règle 16== impose d'étaler toutes les mains du pot, et personne ne peut jeter les siennes. Tant que les autres ont encore des jetons et peuvent miser, tout reste face cachée (en cash game, ce sont les règles de la salle qui s'appliquent, et la plupart laissent celui qui a suivi jeter sa main)
 
-==r:Mais il y a une exception importante :== si ta mise sur la river a été payée, celui qui a suivi a payé pour voir ta main. Cette demande — prier le donneur de retourner une main jetée — c'est la règle du **« I want to see that hand »** (« je veux voir cette main »). En tournoi, la ==TDA 2024, règle 18== l'encadre de près : celui qui n'a plus de cartes à l'abattage, ou qui a jeté les siennes face cachée, perd le droit de la faire. Ce droit n'est garanti que pour le joueur qui a payé la mise de la river et qui a étalé ou gardé ses cartes, et uniquement pour la main du ==dernier relanceur== — celle qu'il a payé pour voir. Tout le reste est laissé à l'appréciation du directeur de tournoi. Le cash game suit les règles de la salle, et elles ne sont pas automatiquement plus souples : selon les règles WSOP Live Action, demander à voir une main non dévoilée suppose un soupçon de collusion **et** la présence d'un responsable de salle, le floor (==Live Action, règle 147==). (Ne confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
+==r:Mais il y a une exception importante :== si ta mise sur la river a été payée, celui qui a suivi a payé pour voir ta main. Cette demande — prier le donneur de retourner une main jetée — c'est la règle du **« I want to see that hand »** (« je veux voir cette main »). En tournoi, la ==TDA 2024, règle 18== l'encadre de près : celui qui n'a plus de cartes à l'abattage, ou qui a jeté les siennes face cachée, perd le droit de la faire. Ce droit n'est garanti que pour le joueur qui a payé la mise de la river et qui a étalé ou gardé ses cartes, et uniquement pour la main du ==dernier agresseur== — celle qu'il a payé pour voir. Tout le reste est laissé à l'appréciation du directeur de tournoi. Le cash game suit les règles de la salle, et elles ne sont pas automatiquement plus souples : selon les règles WSOP Live Action, demander à voir une main non dévoilée suppose un soupçon de collusion **et** la présence d'un responsable de salle, le floor (==Live Action, règle 147==). (Ne confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
 
-Règle pratique : ==quand tu es le dernier relanceur, retourne tes cartes — même sur un bluff payé.== Celui qui a suivi montre ou jette sa main après avoir vu la tienne. En tant que miseur, tu peux en général jeter tes cartes au lieu de les montrer et abandonner le pot ; les tournois WSOP font exception, puisqu'un joueur qui refuse de montrer et jette volontairement sa main y est pénalisé (==WSOP Tournament, règle 72==). Mais jeter trop vite, c'est perdre deux fois : en tournoi, celui qui a payé pour voir peut quand même exiger ta main (==TDA 2024, règle 18==) — en cash game WSOP, il ne le peut pas, sauf soupçon de collusion et présence d'un floor (Live Action, règle 147) — et comme ce sont les cartes qui parlent, bien des joueurs ont jeté une hauteur as qui gagnait en réalité le pot.
+Règle pratique : ==quand tu es le dernier agresseur, retourne tes cartes — même sur un bluff payé.== Celui qui a suivi montre ou jette sa main après avoir vu la tienne. En tant que miseur, tu peux en général jeter tes cartes au lieu de les montrer et abandonner le pot ; les tournois WSOP font exception, puisqu'un joueur qui refuse de montrer et jette volontairement sa main y est pénalisé (==WSOP Tournament, règle 72==). Mais jeter trop vite, c'est perdre deux fois : en tournoi, celui qui a payé pour voir peut quand même exiger ta main (==TDA 2024, règle 18==) — en cash game WSOP, il ne le peut pas, sauf soupçon de collusion et présence d'un floor (Live Action, règle 147) — et comme ce sont les cartes qui parlent, bien des joueurs ont jeté une hauteur as qui gagnait en réalité le pot.
 
 ---
 
@@ -91,7 +91,7 @@ Attention à une idée reçue tenace sur ce cas précis :
 
 | Ce qu'on lit | Ce que dit la règle |
 |--------------------|-----------------|
-| On lit souvent que le dernier relanceur des tours précédents montre en premier | Règle TDA (Rule 17) : premier joueur actif à gauche du bouton |
+| On lit souvent que le dernier agresseur des tours précédents montre en premier | Règle TDA (Rule 17) : premier joueur actif à gauche du bouton |
 
 Une mise faite au flop ou à la turn (le tournant) ne compte pas : si la river passe checkée, l'ordre repart du bouton.
 
@@ -108,7 +108,7 @@ Concrètement, en **tournoi**, les cartes restantes sont alors distribuées avec
 | Scénario d'all-in | Règle à l'abattage |
 |----------------|---------------|
 | Un joueur fait tapis à un tour précédent, les autres suivent, plus aucune mise possible | Tournoi : toutes les mains sont étalées sans attendre, une fois toutes les enchères terminées. Cash : s'il y a un side pot, les joueurs du side pot montrent en premier ; et en no-limit, le joueur qui a fait tapis retourne ses cartes en premier (Live Action, règle 149) |
-| Une mise all-in sur la river est payée | Cash : le joueur à tapis montre en premier, en tant que dernier relanceur. Tournoi : aucun ordre — selon la TDA 2024, règle 16, toutes les mains sont retournées d'un coup et ==r:personne ne peut jeter ses cartes ici== |
+| Une mise all-in sur la river est payée | Cash : le joueur à tapis montre en premier, en tant que dernier agresseur. Tournoi : aucun ordre — selon la TDA 2024, règle 16, toutes les mains sont retournées d'un coup et ==r:personne ne peut jeter ses cartes ici== |
 | Plusieurs all-in qui créent plusieurs side pots | Chaque pot se règle séparément. Tournoi : toutes les mains concernées sont étalées. Cash : pour gagner une part d'un pot, il faut montrer ses cartes (WSOP Live Action, règle 143) |
 
 </div>
@@ -149,7 +149,7 @@ Concrètement : tu as les nuts (la meilleure main possible). L'adversaire montre
 
 ## Quand montrer ses cartes au poker ? Et si tu gagnes sans showdown ?
 
-Tu montres tes cartes quand le coup va jusqu'à l'abattage — en premier si tu es le dernier relanceur, sinon dans l'ordre du coup. En revanche, si tout le monde se couche avant le showdown, tu ramasses le pot sans montrer une seule carte, que tu bluffais ou non : gagner sans abattage, c'est gagner sans rien dévoiler.
+Tu montres tes cartes quand le coup va jusqu'à l'abattage — en premier si tu es le dernier agresseur, sinon dans l'ordre du coup. En revanche, si tout le monde se couche avant le showdown, tu ramasses le pot sans montrer une seule carte, que tu bluffais ou non : gagner sans abattage, c'est gagner sans rien dévoiler.
 
 ==g:Montrer ou non devient alors un choix, jamais une obligation.==
 
@@ -167,7 +167,7 @@ Rien ne refroidit une table plus vite qu'un abattage mal géré — et ces quatr
 
 ### Erreur 1 : attendre que celui qui a suivi montre en premier
 
-Tu mises sur la river. Quelqu'un te paie. Tu te figes et tu attends qu'il montre. C'est l'inverse. ==C'est toi qui montres en premier — tu étais le dernier relanceur.== Attendre ressemble à un slow roll, même quand ce n'en est pas un — j'ai vu une partie entre amis se refroidir pendant un tour de table complet parce qu'un joueur laissait chaque fois transpirer celui qui l'avait payé avant de retourner la main gagnante.
+Tu mises sur la river. Quelqu'un te paie. Tu te figes et tu attends qu'il montre. C'est l'inverse. ==C'est toi qui montres en premier — tu étais le dernier agresseur.== Attendre ressemble à un slow roll, même quand ce n'en est pas un — j'ai vu une partie entre amis se refroidir pendant un tour de table complet parce qu'un joueur laissait chaque fois transpirer celui qui l'avait payé avant de retourner la main gagnante.
 
 ### Erreur 2 : jeter ses cartes avant que le donneur lise la main
 
@@ -175,7 +175,7 @@ Tu es à peu près sûr d'avoir perdu. Tu fais glisser tes cartes face cachée v
 
 ### Erreur 3 : exiger de voir toutes les mains payées
 
-Dans la plupart des salles, tu peux demander au donneur de dévoiler une main jetée. En tournoi, ce droit est strictement encadré : tu ne peux le demander que si tu as étalé tes propres cartes ou si tu les as encore, et un joueur qui a jeté les siennes face cachée le perd complètement (==TDA 2024, règle 18-A==). Au-delà, une seule demande est garantie : la main du dernier relanceur, celle qu'un joueur a payé pour voir. Tout le reste, y compris une main qui n'a jamais été payée ou une river sans mise, relève de l'appréciation du directeur — ce qui ne veut pas dire refus (==TDA 2024, règle 18-B==). Une main couchée est morte une fois dans le muck, et seule une main encore clairement identifiable peut être récupérée (WSOP Tournament, règle 109). Cette règle existe pour se protéger de la collusion, pas pour satisfaire la curiosité, et en abuser passe pour impoli. Utilise-la avec parcimonie.
+Dans la plupart des salles, tu peux demander au donneur de dévoiler une main jetée. En tournoi, ce droit est strictement encadré : tu ne peux le demander que si tu as étalé tes propres cartes ou si tu les as encore, et un joueur qui a jeté les siennes face cachée le perd complètement (==TDA 2024, règle 18-A==). Au-delà, une seule demande est garantie : la main du dernier agresseur, celle qu'un joueur a payé pour voir. Tout le reste, y compris une main qui n'a jamais été payée ou une river sans mise, relève de l'appréciation du directeur — ce qui ne veut pas dire refus (==TDA 2024, règle 18-B==). Une main couchée est morte une fois dans le muck, et seule une main encore clairement identifiable peut être récupérée (WSOP Tournament, règle 109). Cette règle existe pour se protéger de la collusion, pas pour satisfaire la curiosité, et en abuser passe pour impoli. Utilise-la avec parcimonie.
 
 ### Erreur 4 : ignorer que tu peux montrer plus tôt
 
@@ -196,7 +196,7 @@ A. Quand personne n'est all-in, c'est le dernier joueur à avoir fait une action
 
 **Q. Dois-tu montrer tes cartes si tu es payé au showdown ?**
 
-A. Oui — si tu étais le dernier à miser ou relancer sur la river, tu montres en premier quand on te paie ; ta seule porte de sortie est de jeter ta main et d'abandonner le pot, ce que les tournois WSOP pénalisent (WSOP Tournament, règle 72). Un seul cas ne demande pas de montrer du tout : si celui qui a suivi jette ses cartes face cachée en premier et qu'il ne reste aucune autre main en jeu, la tienne remporte le pot sans être montrée (==TDA 2024, règle 17-B== ; la règle WSOP 72 attribue elle aussi le pot à la seule main encore en jeu). Si c'est toi qui as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est l'all-in en tournoi : selon la ==TDA 2024, règle 16==, celui qui a suivi doit lui aussi étaler. Et en tournoi, le droit garanti de demander appartient à celui qui **a payé la mise de la river** — à condition qu'il ait étalé ou gardé ses cartes — et ne porte que sur la main du dernier relanceur, celle qu'il a payé pour voir (==TDA 2024, règle 18==). Un joueur qui a jeté ses cartes face cachée n'a aucun droit de demander, et toute autre demande relève du directeur.
+A. Oui — si tu étais le dernier à miser ou relancer sur la river, tu montres en premier quand on te paie ; ta seule porte de sortie est de jeter ta main et d'abandonner le pot, ce que les tournois WSOP pénalisent (WSOP Tournament, règle 72). Un seul cas ne demande pas de montrer du tout : si celui qui a suivi jette ses cartes face cachée en premier et qu'il ne reste aucune autre main en jeu, la tienne remporte le pot sans être montrée (==TDA 2024, règle 17-B== ; la règle WSOP 72 attribue elle aussi le pot à la seule main encore en jeu). Si c'est toi qui as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est l'all-in en tournoi : selon la ==TDA 2024, règle 16==, celui qui a suivi doit lui aussi étaler. Et en tournoi, le droit garanti de demander appartient à celui qui **a payé la mise de la river** — à condition qu'il ait étalé ou gardé ses cartes — et ne porte que sur la main du dernier agresseur, celle qu'il a payé pour voir (==TDA 2024, règle 18==). Un joueur qui a jeté ses cartes face cachée n'a aucun droit de demander, et toute autre demande relève du directeur.
 
 **Q. Peut-on jeter ses cartes (muck) au showdown sans les montrer ?**
 
@@ -220,11 +220,11 @@ A. Non. Si tous les autres se couchent avant l'abattage, tu remportes le pot imm
 
 **Q. Quelles sont les règles du showdown ?**
 
-A. En tournoi, sans all-in, l'ordre dépend de la fin du coup : après une mise sur la river, le dernier miseur ou relanceur se dévoile d'abord, et après une river checkée, on part du premier joueur actif à gauche du bouton. Un all-in fait retourner toutes les mains une fois les enchères finies, et celui qui a payé la river en gardant ses cartes peut exiger de voir celle du dernier relanceur. En cash game, chaque salle fixe ses propres règles pour l'ordre et le muck.
+A. En tournoi, sans all-in, l'ordre dépend de la fin du coup : après une mise sur la river, le dernier miseur ou relanceur se dévoile d'abord, et après une river checkée, on part du premier joueur actif à gauche du bouton. Un all-in fait retourner toutes les mains une fois les enchères finies, et celui qui a payé la river en gardant ses cartes peut exiger de voir celle du dernier agresseur. En cash game, chaque salle fixe ses propres règles pour l'ordre et le muck.
 
 **Q. Quand montrer ses cartes au poker ?**
 
-A. Seulement quand le coup va jusqu'à l'abattage. Si quelqu'un a misé ou relancé sur la river, le dernier relanceur montre en premier ; si la river a été checkée par tout le monde, on commence par le premier joueur actif à gauche du bouton. Les autres montrent s'ils pensent gagner, ou jettent leurs cartes s'ils ont perdu (sauf all-in en tournoi). Si tout le monde se couche avant le showdown, tu ramasses le pot sans jamais avoir à montrer.
+A. Seulement quand le coup va jusqu'à l'abattage. Si quelqu'un a misé ou relancé sur la river, le dernier agresseur montre en premier ; si la river a été checkée par tout le monde, on commence par le premier joueur actif à gauche du bouton. Les autres montrent s'ils pensent gagner, ou jettent leurs cartes s'ils ont perdu (sauf all-in en tournoi). Si tout le monde se couche avant le showdown, tu ramasses le pot sans jamais avoir à montrer.
 
 ---
 

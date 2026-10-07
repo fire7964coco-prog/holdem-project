@@ -120,7 +120,7 @@ La position et l'avantage de range se cumulent ici : le bouton reçoit la plus g
 
 ## Quand le bouton doit-il c-bet un flop sec hauteur As ?
 
-Presque toujours, petit — **contre des adversaires qui se couchent.** La grosse blinde a 41,4 % de pas de main faite et 71,3 % sans tirage, donc les folds viennent facilement et les mains qui restent s'améliorent rarement. C'est le cas d'école du petit sizing, et c'est pourquoi la mise de 33 % (1,8bb) est celle à choisir ici.
+Presque toujours, petit — **contre des adversaires qui se couchent.** La grosse blinde a 41,4 % de sa range sans main faite et 71,3 % sans tirage, donc les folds viennent facilement et les mains qui restent s'améliorent rarement. C'est le cas d'école du petit sizing, et c'est pourquoi la mise de 33 % (1,8bb) est celle à choisir ici.
 
 Contre une table qui paie n'importe quoi, « tout miser petit » cesse d'être gratuit : rien ne se couche, et tu construis des pots avec des mains qui n'en veulent pas. Là, l'ajustement, c'est moins de tentatives et plus de value.
 

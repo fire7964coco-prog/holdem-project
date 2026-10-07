@@ -129,7 +129,7 @@ La part du pot de la grosse blinde, hors de position (OOP), vaut ==5,5 × 47,2 %
 
 L'écart de **30,8 points** est presque exactement les 29,1 points du [board sec hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp"). **Un board pairé se joue comme un board sec** : les quatre cinquièmes de chaque range sont la même paire de 6 avec une carte haute différente, donc le coup se déroule sans bruit, et le joueur qui parle en dernier voit quelle carte haute est arrivée avant de choisir. Cet avantage, c'est tout l'écart.
 
-:::note[Chaque EQR de cette série est la valeur affichée par le solver. En divisant toi-même l'équité et l'EV arrondies, tu tombes à un dixième de point près : c'est de l'arrondi, pas une incohérence.]:::
+:::note[Chaque EQR de cette série est la valeur affichée par le solver. En divisant toi-même l'équité et l'EV arrondies, tu tombes à quelques dixièmes de point près : c'est de l'arrondi, pas une incohérence.]:::
 
 ## Que valent les paires servies sur 6-6-3 ?
 

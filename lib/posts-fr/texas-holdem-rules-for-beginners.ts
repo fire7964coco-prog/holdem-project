@@ -314,7 +314,7 @@ Pour les 169 mains classées par position (de UTG au bouton), regarde [quelles m
 
 ## Les cotes du pot : la seule notion de maths qui fait économiser des jetons aux débutants
 
-La cote du pot compare ce que tu dois payer à ce que tu peux gagner. Tu la transformes en pourcentage de victoires minimum, puis tu la compares à tes vraies chances de toucher ta main : si tes chances sont plus élevées que ce pourcentage, le call est rentable ; sinon, couche-toi.
+La cote du pot compare ce que tu dois payer à ce que tu peux gagner. Tu la transformes en pourcentage de victoires minimum, puis tu la compares à tes vraies chances de gagner le coup : si tes chances sont plus élevées que ce pourcentage, le call est rentable ; sinon, couche-toi.
 
 Pas besoin d'être un pro des maths. Tu dois juste comprendre une question avant de suivre une mise : **le prix que je paie vaut-il la chance que j'ai de gagner ?**
 

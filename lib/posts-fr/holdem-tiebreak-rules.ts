@@ -210,7 +210,7 @@ A. Le kicker le plus haut — mais vérifie d'abord lesquelles de tes cartes ent
 
 **Q. Deux joueurs ont une double paire : qui gagne ?**
 
-A. La paire haute d'abord, puis la paire basse, puis le kicker unique — donc as et trois bat rois et dames, même si la deuxième paire est bien plus petite. Le cas qui piège les joueurs, c'est un board doublement pairé comme K-K-9-9-5 sans trois cartes de la même enseigne, donc où personne ne peut faire de couleur : à moins que quelqu'un tienne un roi, un neuf, une paire de cinq servie ou une paire servie au-dessus des neuf, chaque joueur a la même double paire, donc la main se réduit à un seul kicker et la meilleure carte fermée de la table l'emporte — et si la carte fermée de personne ne bat les cinq cartes du board, tout le monde joue le board et le pot est partagé. La double paire porte exactement un kicker, jamais deux.
+A. La paire haute d'abord, puis la paire basse, puis le kicker unique — donc as et trois bat rois et dames, même si la deuxième paire est bien plus petite. Le cas qui piège les joueurs, c'est un board doublement pairé comme K-K-9-9-5 sans trois cartes de la même enseigne, donc où personne ne peut faire de couleur : à moins que quelqu'un tienne un roi, un neuf, une paire de cinq servie ou une paire servie au-dessus des neuf, chaque joueur a la même double paire, donc la main se réduit à un seul kicker et la meilleure carte fermée de la table l'emporte — et si aucune carte fermée ne bat le 5 du board, tout le monde joue le board et le pot est partagé. La double paire porte exactement un kicker, jamais deux.
 
 **Q. Deux joueurs ont le même brelan : qui gagne ?**
 

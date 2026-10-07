@@ -11,7 +11,7 @@ export const POST: Post = {
   title: "Personne ne checke ce flop",
   seoTitle: "Personne ne checke ce flop — SPR poker, l'effet d'un SPR 4",
   desc: "Dans ce pot 3-bet, les 63 combos misent, tous. Pas parce que la range est forte : le caller n'a plus ni AA ni KK, et un SPR de 4 ne laisse rien à reporter.",
-  tldr: "Sur A♦K♠2♥ dans un pot 3-bet, la grosse blinde mise toute sa range : le check arrondit à 0,0 %, et aucun des 63 combos ne checke ne serait-ce que 0,1 % du temps. Dans les sept spots précédents, son réflexe était de checker, entre 76,2 % et 99,9 % du temps. Ce qui a basculé, c'est surtout l'action préflop : la grosse blinde a 3-bet au lieu de suivre, donc elle possède le haut de ce flop, pendant que le bouton a 4-bet ses paires d'as et de rois hors de sa range. Et avec un SPR de 4,0, il n'y a plus de street ultérieure à qui reporter la décision.",
+  tldr: "Sur A♦K♠2♥ dans un pot 3-bet, la grosse blinde mise toute sa range : le check s'arrondit à 0,0 %, et aucun des 63 combos ne checke ne serait-ce que 0,1 % du temps. Dans les sept spots précédents, son réflexe était de checker, entre 76,2 % et 99,9 % du temps. Ce qui a basculé, c'est surtout l'action préflop : la grosse blinde a 3-bet au lieu de suivre, donc elle possède le haut de ce flop, pendant que le bouton a 4-bet ses paires d'as et de rois hors de sa range. Et avec un SPR de 4,0, il n'y a plus de street ultérieure à laquelle reporter la décision.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -112,9 +112,9 @@ Ce chiffre compte parce qu'il te dit **combien de mises il reste**, pas combien 
 - Turn (le tournant) **34,5bb** → payé, il reste 39,6bb
 - River (la rivière) **39,6bb** à tapis
 
-**Trois mises et c'est fini : ==14,9 + 34,5 + 39,6 = 89,0==.** Deux mises t'amènent à 49,4bb, soit 55,5 % du stack, pas la totalité. Si tu veux que les trois mises tombent pile sur le tapis avec la même fraction à chaque street, cette fraction est ==environ 54 % du pot==.
+**Trois mises et c'est fini : ==14,9 + 34,5 + 39,6 = 89,0==.** Deux mises t'amènent à 49,4bb, soit 55,5 % du stack, pas la totalité. Si tu veux que la troisième mise te mette pile à tapis, avec la même fraction du pot à chaque street, cette fraction est ==environ 54 % du pot==.
 
-Joue les trois mêmes mises dans un pot simplement relancé et tu as dépensé ==3,67 + 8,56 + 19,96 = 32,2bb==, un tiers du stack. **Voilà la vraie différence entre un SPR de 17,7 et un SPR de 4,0** : pas l'argent, le nombre de décisions qu'il te reste à prendre. Et quand il n'y a plus de street ultérieure à qui reporter la décision, un check n'a plus rien à acheter.
+Joue les trois mêmes mises dans un pot simplement relancé et tu as dépensé ==3,67 + 8,56 + 19,96 = 32,2bb==, un tiers du stack. **Voilà la vraie différence entre un SPR de 17,7 et un SPR de 4,0** : pas l'argent, le nombre de décisions qu'il te reste à prendre. Et quand il n'y a plus de street ultérieure à laquelle reporter la décision, un check n'a plus rien à acheter.
 
 ## Pourquoi le petit sizing est-il utilisé plus souvent ?
 

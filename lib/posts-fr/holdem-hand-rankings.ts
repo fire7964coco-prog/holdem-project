@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Combinaisons au poker : l'ordre des mains et qui bat quoi",
   seoTitle: "Sûr d'avoir gagné ? — Combinaisons poker et ordre des mains",
   desc: "Tu as floppé une couleur et quand même perdu le pot ? Les 10 combinaisons du poker de la plus forte à la plus faible, qui bat quoi et le rôle du kicker.",
-  tldr: "L'ordre des combinaisons au poker, de la plus forte à la plus faible : quinte flush royale, quinte flush, carré, full, couleur, quinte (suite), brelan, double paire, paire et carte haute. Les enseignes ne départagent jamais ; à combinaison égale, c'est le kicker qui décide.",
+  tldr: "L'ordre des combinaisons au poker, de la plus forte à la plus faible : quinte flush royale, quinte flush, carré, full, couleur, quinte (suite), brelan, double paire, paire et carte haute. Les enseignes ne départagent jamais ; à combinaison égale, ce sont les cartes de la combinaison, puis les éventuels kickers, qui départagent.",
   category: "hand-rankings",
   date: "2026-10-07",
   updated: "2026-10-07",

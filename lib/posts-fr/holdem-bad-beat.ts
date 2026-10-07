@@ -189,7 +189,7 @@ A. Le plus célèbre date du Main Event des WSOP 2008 : Motoyuki Mabuchi a fait 
 
 **Q. Les bad beats sont-ils plus fréquents en ligne ?**
 
-A. On peut en avoir l'impression, mais c'est surtout une illusion due au volume. En ligne, tu joues bien plus de mains par heure, souvent sur plusieurs tables, donc tu *vois* simplement plus de bad beats dans le même temps. Les cartes sont distribuées au hasard ; tu n'es pas plus malchanceux en ligne, tu passes juste beaucoup plus de mains, et plus de mains veut dire plus de suckouts dans les deux sens.
+A. On peut en avoir l'impression, mais c'est surtout une illusion due au volume. En ligne, tu joues bien plus de mains par heure, souvent sur plusieurs tables, donc tu *vois* simplement plus de bad beats dans le même temps. Les cartes sont distribuées au hasard ; tu n'es pas plus malchanceux en ligne, tu joues simplement beaucoup plus de mains, et plus de mains veut dire plus de suckouts dans les deux sens.
 
 **Q. Comment gérer les bad beats au poker ?**
 

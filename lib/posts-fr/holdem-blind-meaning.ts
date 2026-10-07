@@ -80,7 +80,7 @@ Comprends la grosse blinde, et tout le jargon chiffré du jeu — tailles de rel
 
 ## Petite blinde et grosse blinde : qui les paie, et quand
 
-Les deux blindes sont posées **avant la distribution**. En rotation normale, le bouton du donneur avance d'un siège dans le sens des aiguilles d'une montre après chaque main : les sièges des blindes tournent avec lui, et ==tout le monde paie les deux blindes une fois par tour de table==. Personne n'y échappe, la petite blinde d'abord, la grosse blinde ensuite.
+Les deux blindes sont posées **avant la distribution**. En rotation normale, le bouton du donneur avance d'un siège dans le sens des aiguilles d'une montre après chaque main : les sièges des blindes tournent avec lui, et ==tout le monde paie les deux blindes une fois par tour de table==. Personne n'y échappe : comme le bouton avance d'un siège dans le sens des aiguilles d'une montre, tu paies la grosse blinde, puis la petite blinde à la main suivante.
 
 Si tu t'absentes, la suite dépend du format : en cash game, à ton retour, tu reposes les blindes manquées, tu attends que la grosse blinde revienne jusqu'à toi ou — si la salle l'autorise — tu prends à la place le straddle live depuis la position under the gun (UTG) ; en tournoi, les blindes et les antes sortent de ton stack, que tu sois assis ou non.
 
