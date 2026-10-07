@@ -1,3 +1,11 @@
+## 2026-10-07 (16) — `/vi/solver` 키워드·SERP 조사 (랜딩 미작성 · 뱅크 신설)
+
+- 사장님: 솔버 폴더가 vi 작업 중 → «조사부터 꼼꼼히» · «서치는 아스트라 시켜도 됨». 정본 = `docs/keyword-bank/vi-gto-solver.md`.
+- 실측: DFS 볼륨 146 + 라쿠 48개월 39(양쪽 값 전부 일치) · 자동완성 시드 25 · SERP top-30 11쿼리(2704·vi) · 아스트라 read-only 원문 정독(A~L) → 본체 4편 직접 재확인.
+- 결론: 헤드 `gto poker` 170 · `range poker` 70 · `poker solver` 20 — 최소 시장. 베트남어 «솔버» 조어는 검색어 아님(null) · 현지 용례도 «solver» 차용. `gto poker`·`solver poker`·`poker solver` top-10 **vi 직접 작성 글 0**(앱스토어·레딧 자동번역·영어·스팸). 오염 = `gto` 애니 · `gto là gì` · `solver` 엑셀 · `equity là gì` 재무. 경쟁 글 오류 = wikipoker «Game Theory Optimize» · natural8 완전정보 서술.
+- 🔴 구조 문제: EN 랜딩 링크 목적지(GTO 예제 13편 · hand-chart · calculator · quiz · strategy·equity·c-bet)가 vi에 전부 0 → 사장님 결정 3안(뱅크 §6).
+- 솔버 레포 vi = `94fdd7e`(최종 통일)까지 커밋 · 배포·S-행 통지 전 → 랜딩은 배포 후 라벨 축어로.
+
 ## 2026-10-07 (15) — 솔버 랜딩 §2-AF 이행 (`84434589` · MB-201)
 
 - AF-1 복습 큐 과장 제거 9자리 + 형제 tr·ms·hi 6자리 · AF-2 es·pt·fr 공유 FAQ 노드 고정 한정 · AF-3 오늘의 문제 연속 일수·완료 표시 기기 한정(13로케일 본문 + 저장 FAQ 6). 근거 = 솔버 `TrainerPage.vue`(evLossBb > 0.05 · 정렬 없음) · `daily.ts`(localStorage) · `spot-share.ts`(노드락 미포함) · 용어 `node-lock-labels.ts`.
