@@ -11,6 +11,12 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 // ── fr 클러스터 레인 import 칸 (2026-10-07 · docs/fr-cluster-plan.md §5) ──
 // 🔴 레인은 자기 칸의 «시작»과 «끝» 줄 사이에만 넣는다. 칸 밖을 고치면 레인끼리 충돌한다. (🅰 fr-rules는 위 6편 재작업이라 칸 없음)
 // [fr-rank import 시작]
+import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
+import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 // [fr-rank import 끝]
 
 // [fr-prob import 시작]
@@ -44,6 +50,12 @@ export const FR_POSTS: Post[] = [
 
   // ── fr 클러스터 레인 배열 칸 — 자기 칸 사이에만 ──
   // [fr-rank 배열 시작]
+  holdemHandRankings,
+  holdemFlushVsStraight,
+  holdemKicker,
+  holdemTiebreakRules,
+  holdemSplitPotRules,
+  holdemReadingTheBoard,
   // [fr-rank 배열 끝]
 
   // [fr-prob 배열 시작]
