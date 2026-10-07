@@ -1,3 +1,13 @@
+## 2026-10-07 (12) — fr 🅶 gto 머지 · 헤드 머지 마감(아스트라 51편) · 배포 준비 완료 (fr-integration `e3cbe640`)
+
+- 🅶 `56ac05b6`(13편 · 렌즈 9 · audit 51/51 🔴0) → fr-integration 무충돌 머지 `cb8b7c93` · fr 51편.
+- 🅶 헤드 요청 5건: ① fr 솔버 이미지 26장(capture L10N fr · 차트 fr — 쉼표 소수·% 앞 U+00A0(일반 공백이면 «38,4 / %» 줄바꿈)·하단 EQ/EQR 같은 조판 · q82 27~107KB · 2장 Read 확인) + `-en` → `-fr` 89자리(H-18 포함) ② GTO 게이트 2종 fr(셀프 41/41 · 26/26 · 수치 오탐 13 → 0 · 남은 2 = donk·low-board 의도 편차 → locale-intentional-diffs) ③ 카드 T → 10 규칙 확정(§3-A) ④ = 아래 /fr/solver ⑤ 잠긴 카피 6 채택(bet-sizing desc 165 → 160자 축약).
+- 신규 용어 대조: 🅶 용어 38편과 충돌 0 · 🅴 «X big blinds» 57 → «grosses blindes»(§3-A ④ · «big blind ante»·태그 유지) · overpair/surpaire·équilibre/seuil은 문맥별 허용으로 정리(§3-A).
+- 아스트라 51편 1회(3묶음 병렬 · codex gpt-6-astra read-only 사본): 41건 → 채택 32(사실·뜻 = tiebreak «le 5 du board» · blind-meaning 블라인드 순서 · showdown «dernier agresseur» 17 · positions desc UTG→BB · fish «stacking them» 뜻 반전 · c-bet «écrasé» 3 · k-high «faire payer» 반전 등 — 블라인드·UTG 순환은 직접 검산) · EN-먼저 8 = queue §2-AE AE-11~18 · 기처리 1.
+- `/fr/solver`: SPOT_GROUPS 13 slug · «Pour aller plus loin» = de 6글 구성 · `gto-series-i18n` fr → 러닝맵 «Solver GTO» 13노드. 🪶 랜딩 본문 산문 속 링크는 fr 문단 구조가 달라 미적용(별도).
+- 게이트: audit:hard fr 51/51 🔴0 🟠0 · structure 🔴0 · intl-links ✅ · meta 0 · images ✅ · image-dims ✅ · `npm run build` ✅ 917쪽 · 로컬 DOM(/fr/solver GTO 13 · /fr/blog 51 · 오류 0).
+- ▶ 남은 것 = 배포 회차(계획 §4-C «☐ 배포 회차» 3~9: date = 배포일 · main↔fr-integration 머지 · push · 라이브 · MB · IndexNow · 수동 색인 38).
+
 ## 2026-10-07 (11) — fr 배포 준비 (fr-integration `0b6f66e6`) · 🅶 레인 창 띄움
 
 - 🅶 gto 레인 창 띄움(wt.exe · «HARDEN.md 읽고 A 시작해» · 사장님 지시). 13편이라도 1레인 — 같은 솔버 앱 문구를 써야 해 분열 위험이 더 크다(B가 길면 그때 7+6 분할).
