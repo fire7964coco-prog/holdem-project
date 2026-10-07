@@ -1,13 +1,16 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-07 (12) (fr 🅶 머지·헤드 마감 e3cbe640 · (11) fr 배포 준비 `0b6f66e6` · 🅶 창 · (10) fr 헤드 판정 H-1~30 · 계산기 사전 · `4a7b2f0c` · (6) MA-350 cooler MB-197 · (5) fr 0-4 착수 MB-196 · (4) fr 0-3 정본 · (3) fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-07 (13) (fr 51편 배포 `ceed9c0d` · MB-199 · (12) fr 🅶 머지·헤드 마감 e3cbe640 · (11) fr 배포 준비 `0b6f66e6` · 🅶 창 · (10) fr 헤드 판정 H-1~30 · 계산기 사전 · `4a7b2f0c` · (6) MA-350 cooler MB-197 · (5) fr 0-4 착수 MB-196 · (4) fr 0-3 정본 · (3) fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 완결 51편 — 계획 확정 (사장님 10-07 «EN처럼 꽉 채우자 · 두 번 일하지 않게»)
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 51편 — ✅ 배포 (10-07 (13) · main `ceed9c0d` · MB-199)
 
-- 정본 = **`docs/fr-cluster-plan.md`**(레인 7 · 재작업 방지 장치 §2 · 단계표 §4). 판단 3건 권고대로(GTO 13 포함·마지막 · 대회 가이드 5 제외 · 레인 병렬). EN 기준 해시 `a54b5f3d`.
-- ✅ 0-1 수요 실측(`docs/keyword-bank/fr-core-volumes.md`) · ✅ **0-2 SERP**(`docs/keyword-bank/fr-serp/` 7레인 · 51/51 질문 확보). ✅ **0-3 정본**(계획 §3-A 용어 · §3-B 소유표 12건 · ④ nuts = reading-the-board). ✅ **0-4**(MB-196 착수 공지 · 계획 §5 ms→fr 치환표 · 워크트리 `Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` + HARDEN.md · 진행 파일 `docs/fr-lanes/` · index 칸 · lane-sync fr 7레인).
-- ▶ 진행 중 = 레인 🅰~🅵 6창 동시(10-07 띄움 · 폴더 `Holdem-fr-<id>`). 🔴 **머지는 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)** — 계획 §4-A. ✅ 🅰 rules · ✅ 🅲 prob · ✅ 🅱 rank · ✅ 🅳 strat · ✅ 🅵 gloss · ✅ 🅴 tour 머지 = **🅰~🅵 전부(fr 38편 · audit 🔴 0 · build ✅)**. ✅ **헤드 판정 회차 10-07 (10)**(`4a7b2f0c` · 계획 §4-B 판정표 · 규칙은 §3-A ②~⑥ 승격 · 계산기 사전 EN대로 · 🅰 결손 0 확인 · EN 델타 기반영 · EN-먼저 10자리 = queue §2-AE). ✅ **🅶 머지 + 헤드 머지 마감 10-07 (12)**(fr-integration `e3cbe640` · fr 51편 · 이미지 26 · 아스트라 51편 채택 32 · `/fr/solver` 13링크 · 러닝맵 Solver GTO · `npm run build` ✅ 917쪽). ▶ **다음 = fr 배포 회차**(사장님 지시 시 · 계획 §4-C «☐ 배포 회차» 3~9 순서 그대로: date = 배포일 → main↔fr-integration 머지 → build → push → 라이브 → MB(+검수장 배포 해시 1회 요청 · MA-357 ACK) → IndexNow → 사장님 수동 색인 38). EN-먼저 18자리 = queue §2-AE(자동 착수 금지). 🪶 H-8 fr PDF = 별도 회차. 📬 MA-357(요청 0) ACK는 다음 MB에.
+- 정본 = **`docs/fr-cluster-plan.md`**(§4-C 배포 회차 ✅). 경위 = WORKLOG 10-07 (10)~(13).
+- ▶ **사장님 몫: GSC 수동 색인 38** = 계획 §4-C ⑧ 목록(필라 6편 rules · hand-rankings · probability · strategy · tournament · glossary부터 · GTO 13 제외).
+- ▶ 검수장 MB-199 요청 1(배포 해시로 fr 51편 1회) 결과 MA 대기 → 오면 다음 세션 안에 회신+등재.
+- 🪶 빈 레인 폴더 `../Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` 7개 = 레인 창 닫은 뒤 삭제(워크트리 등록은 해제됨). 브랜치 `harden-fr-*`·`fr-integration` 보존.
+- 남긴 것(자동 착수 금지): EN-먼저 18자리 = queue §2-AE · H-8 fr PDF = 별도 회차 · `/fr/solver` 본문 산문 링크 · 러닝맵 머리 영어(비-KO 전 로케일).
+- 📬 미처리 MA(오늘 수신 · 다음 세션 안에 회신+등재): MA-358(솔버 랜딩 통지 3) · MA-360 · MA-361 · MA-362 · MA-364(요청 0) · MA-365(복습 큐 문구 요청 1).
 - ⏸ ms 14편 EN 동기화 = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07). 솔버 후기창 머지 = 아직 아님(사장님 10-07).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)

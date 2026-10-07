@@ -234,7 +234,7 @@
 **✅ 🅶 머지 회차(10-07 (12))에 끝낸 것** — ① 🅶 신규 용어 대조(§3-A 승격 · 🅴 «big blinds» 57 통일) + 아스트라 51편 1회(3묶음 병렬 · 41건 → 채택 32 · EN-먼저 8 · 기처리 1(사본 뒤 이미 고친 big blinds)) ② `/fr/solver` SPOT_GROUPS 13 slug + «Pour aller plus loin» de 구성 + `gto-series-i18n` fr(러닝맵 Solver GTO 노드) ③ fr 솔버 이미지 26장 + H-18 썸네일 ④ GTO 게이트 2종 fr 지원(셀프 41/41 · 26/26) ⑤ 최종 `npm run build` ✅ 917쪽 · 로컬 DOM(/fr/solver 13링크 · /fr/blog 51 · 오류 0).
 - 🪶 랜딩 본문 산문 속 링크(de는 strategy·glossary·starting-hands·reading-the-board·equity·c-bet 6자리)는 fr 랜딩 문단 구조가 달라 손대지 않았다 — 배포 뒤 별도(자동 착수 금지).
 
-**☐ 배포 회차(남은 것 · 이 순서로)**
+**✅ 배포 회차(10-07 (13) · main `ceed9c0d` · MB-199 `070e7c04` · 3~7·9 완료 · ⑧은 사장님 몫)** — 경위 WORKLOG 10-07 (13)
 3. 🔴 date: 배포일이 10-07보다 늦으면 신규 45편(🅰 6편 제외) `date` = 배포일(H-22 · ms 선례).
 4. main → fr-integration 머지(충돌 = 문서는 main 쪽) → `npm run build` 전체(prebuild 전부 통과 · sitemap fr 51 확인) → fr-integration → main ff → push.
 5. 라이브 확인(Playwright · curl은 BotID 403): `/fr/blog` 목록 51 · 글 1편 데스크톱 레일(러닝맵·계산기·솔버 버튼) · `/fr/glossary` 링크 3 · `/fr/calculator` related.

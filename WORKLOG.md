@@ -1,3 +1,12 @@
+## 2026-10-07 (13) — fr 클러스터 51편 배포 (main `ceed9c0d` → MB-199 `070e7c04`)
+
+- 계획 §4-C ☐ 배포 회차 3~9 순서대로. ③ date: 배포일 = 10-07이라 신규 45편 그대로(🅰 6편은 6월 date 유지).
+- ④ main(`e78c6365` 문서 1커밋) → fr-integration 무충돌 머지 `f4647cd7` → `npm run build` exit 0 · 917쪽 · sitemap 74 + intl 686 · fr `<loc>` 51 → sitemap 커밋 `ceed9c0d` → main ff → push.
+- ⑤ 라이브(Playwright): `/fr/blog` 글 링크 51 · 신규 `3bet-pot-cbet` 200 · pot-odds 레일(계산기·솔버·러닝맵) · `/fr/glossary` 항목 링크 3(Check-raise · ICM · Nuts) · `/fr/calculator` related · `/fr/solver` · `/fr/hand-chart` 전부 200.
+- ⑥ MB-199(fr 51 슬러그 · 도구 4종 · 검수장 배포 해시로 fr 1회 요청 · MA-357 ACK). ⑦ IndexNow 56 URL 200 OK.
+- ⑨ 워크트리 8개 `git worktree remove`(전부 클린·main 머지 확인 · node_modules 정션은 `rmdir`로 링크만 먼저 끊음 — main node_modules 154 → 154). 🪶 레인 폴더 7개는 빈 폴더로 남음(열린 레인 창이 잡고 있음 · 창 닫은 뒤 삭제). 브랜치 `harden-fr-*`·`fr-integration`은 보존.
+- ▶ ⑧ 사장님 GSC 수동 색인 38(필라 6편부터) = 계획 §4-C ⑧ 목록.
+
 ## 2026-10-07 (12) — fr 🅶 gto 머지 · 헤드 머지 마감(아스트라 51편) · 배포 준비 완료 (fr-integration `e3cbe640`)
 
 - 🅶 `56ac05b6`(13편 · 렌즈 9 · audit 51/51 🔴0) → fr-integration 무충돌 머지 `cb8b7c93` · fr 51편.
