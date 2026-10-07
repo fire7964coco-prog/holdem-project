@@ -23,6 +23,12 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 // [fr-tour import 끝]
 
 // [fr-gloss import 시작]
+import { POST as holdemGlossary } from "./holdem-glossary";
+import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as holdemCooler } from "./holdem-cooler";
+import { POST as holdemFish } from "./holdem-fish";
+import { POST as holdemRake } from "./holdem-rake";
+import { POST as holdemStraddle } from "./holdem-straddle";
 // [fr-gloss import 끝]
 
 // [fr-gto import 시작]
@@ -56,6 +62,12 @@ export const FR_POSTS: Post[] = [
   // [fr-tour 배열 끝]
 
   // [fr-gloss 배열 시작]
+  holdemGlossary,
+  holdemBadBeat,
+  holdemCooler,
+  holdemFish,
+  holdemRake,
+  holdemStraddle,
   // [fr-gloss 배열 끝]
 
   // [fr-gto 배열 시작]
