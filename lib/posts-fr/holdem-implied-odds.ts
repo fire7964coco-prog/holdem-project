@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Cotes implicites au poker : quand un mauvais prix devient un bon call",
   seoTitle: "Payer quand la cote dit non ? — Cotes implicites au poker",
   desc: "Ta cote du pot dit fold, et pourtant le call rapporte. Les cotes implicites au poker : la formule, le set mining et les cotes implicites inversées.",
-  tldr: "Les cotes implicites, ce sont les jetons supplémentaires que tu comptes gagner sur les streets suivantes quand ton tirage rentre. Elles te permettent de payer de façon rentable un tirage que la cote du pot seule te dirait de coucher, mais seulement si les stacks sont profonds et si ton adversaire va vraiment te payer.",
+  tldr: "Les cotes implicites, ce sont les jetons supplémentaires que tu comptes gagner sur les streets suivantes quand ton tirage rentre. Elles te permettent de payer de façon rentable un tirage que la cote du pot seule te dirait de lâcher, mais seulement si les stacks sont profonds et si ton adversaire va vraiment te payer.",
   category: "odds",
   date: "2026-10-07",
   updated: "2026-10-07",

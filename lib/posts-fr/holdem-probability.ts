@@ -242,7 +242,7 @@ A. À la river au Hold'em, tu fais une couleur environ 3,0 % du temps (1 sur 33)
 
 A. Si tu floppes un tirage couleur (neuf outs), tu le complètes environ 35 % du temps d'ici la river — mieux qu'une fois sur trois. Sur une seule carte (de la turn à la river), ça tombe à environ 19,6 %.
 
-**Q. Quelle est la probabilité de flopper un brelan avec une paire servie ?**
+**Q. Quelle est la probabilité de toucher un brelan au flop avec une paire servie ?**
 
 A. Environ 11,8 %, soit à peu près 1 sur 8,5, quand tu tiens une paire servie. Les 7,5 contre 1 équivalents décrivent les ratés face aux réussites, pas une profondeur de stack recommandée. Un call de set mining a aussi besoin d'un paiement futur réaliste ; le repère pratique — des stacks effectifs de 15–20× le montant à suivre — laisse de la marge pour les brelans qui ne se font pas payer ou qui perdent.
 
