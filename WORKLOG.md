@@ -1,3 +1,22 @@
+## 2026-10-07 (10) — fr 헤드 판정 회차: H-1~30 · 계산기 사전 · 🅰 결손 확인 · EN 델타 스윕 (fr-integration `4a7b2f0c`)
+
+- 계산기 사전(H-7·H-30): fr 코퍼스에 대상 글이 다 생겨 «생략이 정답»이던 quickRef 6링크 · ICM deal 링크 · related 8을 EN대로 걸었다 → calc-parity 13사본 0. 링크 문구 = 각 fr 글 title 축약.
+- 🅰 결손(H-12·H-29): 레인 시점 관측이었고 통합 트리에서는 check:structure --tail 0 · 링크 집합 직접 대조도 결손 0(straddle 링크 있음) — 복원할 것 없음.
+- 판정 → 규칙 승격(계획 §3-A ②③④⑤⑥ · §3-B ①): street(🅰은 «tour de mises (une street)») · relance complète · X contre 1/1 sur N · assorties/dépareillées · limpeurs · la chip EV · quinte à l'as/hauteur X · 글로 가는 도구 앵커 금지 · 카드 라벨 사전 · glossaire = 도구 소유.
+- 이행 28파일: all-in «relance complète» 22 · solveur→solver 4 · limpeurs 4 · 앵커 8 + 카드 제목 4 · 라벨 15 · 태그 3 · tapis/hauteur 2 · beginners 병기 1.
+- 판정 «유지»: H-15 · H-16(tldr 평균 +24 % — «+50 %»는 측정 오류) · H-21 · H-13 · 태그 패리티(EN도 중복). H-22 date = 신규는 발행일(ms 선례) → 배포가 늦으면 배포 회차에 배포일로.
+- EN-먼저 후보(H-9·H-24) 10자리 = queue §2-AE 등재(자동 착수 금지).
+- EN 델타 스윕: a54b5f3d..main EN 51편 변경 3파일(cooler·flush-vs-straight·probability) 전부 fr 기반영.
+- 아스트라 교차는 🅶 머지 뒤 51편 1회로 미룸(38편에 지금 돌리면 두 번 일함).
+- 게이트(통합 트리): audit:hard fr 38/38 🔴 0 🟠 0 · structure 0 · meta 0 · seo-sync 0 · intl-links 잔여 = 🅶 대상뿐 · next build ✅ 904쪽.
+
+## 2026-10-07 (9) — fr 레인 🅱🅳🅵🅴 머지 · 🅰~🅵 전부 통합 (fr-integration)
+
+- 🅱 rank(FAQ 3문항 분리) · 🅳 strat(strategy FAQ «se coucher» 분리) · 🅵 gloss(cooler MA-350 문면 확인) · 🅴 tour 무충돌 머지. MA-354 형제 fr 2자리도 통합 브랜치에.
+- 통합 트리 fr 38편 audit:hard 🔴 0 · next build exit 0 · intl-links 잔여 4 = 전부 🅶 GTO 대상.
+- 🅶 시작 신호: harden-fr-gto에 main + fr-integration 머지(94accc28).
+- 헤드 판정 대기 30건 = 계획 §4-B(레인 간 분열: street · tableau des mains de départ 앵커 · tapis · 카드 라벨 · date 등 + 계산기 사전 calc-parity fr 14 · 🅰 구조 결손).
+
 ## 2026-10-07 (8) — 우편함 MA-351~356 회신 · MA-353 ② · MA-354 ① 이행 (MB-198 · queue §2-AD)
 
 - ACK: MA-351(fr 판정 보류 수용) · MA-355·356(cooler 재판정 · EN #45 해제). MA-353 ①은 MB-197로 이미 이행.

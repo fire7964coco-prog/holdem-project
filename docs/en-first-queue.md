@@ -480,6 +480,23 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 EN equity 카드 «Why realization lives and dies on position»(전 로케일 동형) — 본문 충돌은 id뿐이라 이번엔 id만. EN 손질 때 «Why position shapes how much equity you realize»류로 형제 같이.
 - 🪶 MA-353 통지 ③(선택 · UNV): zh positions «满员的 full ring 桌» → «满桌（full ring）» · reading «many rivers beat it» → «can beat it»(EN-먼저) · ja drawing L63 «およそ».
 
+### 2-AE. fr 레인 집필 중 발견 — EN-먼저 후보 (fr 헤드 판정 H-9·H-24 · 2026-10-07 등재 · 🪶 자동 착수 금지)
+
+> 출처 = `docs/fr-cluster-plan.md` §4-B H-9·H-24(레인 진행 파일 «EN-먼저» 표). fr은 각 자리를 이미 정확한 쪽으로 썼다 — EN 손질 회차에 EN + 핵심 로케일을 같이 고친다.
+
+| # | EN 자리 | 의심 | fr 처리 |
+|---|---|---|---|
+| AE-1 | texas-holdem-rules-for-beginners L353 «43.8% most frequent at showdown» | 기준(5장/7장·쇼다운 조건) 불명 단정 | 🅰 진행 파일 |
+| AE-2 | holdem-game-order L119 | 🅰 진행 파일 «EN-먼저» 행 | 〃 |
+| AE-3 | holdem-continuation-bet L181 «charges all his missed hands» | 과장(«all») | fr «met sous pression» |
+| AE-4 | holdem-position-play L128·L281 AK/AQ ↔ holdem-starting-hands-chart L121 | 형제 글 간 핸드 처리 불일치 | 🅳 진행 파일 |
+| AE-5 | holdem-continuation-bet L105 «over 97% on all three boards» | 솔버 수치 귀속·범위 확인 | 〃 |
+| AE-6 | holdem-glossary L38 «a dozen terms» | 실제 8쌍 | fr 개수 맞춤 |
+| AE-7 | holdem-rake «most pots brush the cap» | 근거 없는 빈도 단정 | 🅵 진행 파일 |
+| AE-8 | holdem-fish «competitors» | 어휘 | 〃 |
+| AE-9 | holdem-cooler 인용 I→you | 인용 화자 | 〃 |
+| AE-10 | 카드 «Who wins at showdown» | 대상 글 제목과 불일치 | 〃 |
+
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

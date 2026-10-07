@@ -1,13 +1,13 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-07 (6) (MA-350 cooler MB-197 · (5) fr 0-4 착수 MB-196 · (4) fr 0-3 정본 · (3) fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-07 (10) (fr 헤드 판정 H-1~30 · 계산기 사전 · `4a7b2f0c` · (6) MA-350 cooler MB-197 · (5) fr 0-4 착수 MB-196 · (4) fr 0-3 정본 · (3) fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 완결 51편 — 계획 확정 (사장님 10-07 «EN처럼 꽉 채우자 · 두 번 일하지 않게»)
 
 - 정본 = **`docs/fr-cluster-plan.md`**(레인 7 · 재작업 방지 장치 §2 · 단계표 §4). 판단 3건 권고대로(GTO 13 포함·마지막 · 대회 가이드 5 제외 · 레인 병렬). EN 기준 해시 `a54b5f3d`.
 - ✅ 0-1 수요 실측(`docs/keyword-bank/fr-core-volumes.md`) · ✅ **0-2 SERP**(`docs/keyword-bank/fr-serp/` 7레인 · 51/51 질문 확보). ✅ **0-3 정본**(계획 §3-A 용어 · §3-B 소유표 12건 · ④ nuts = reading-the-board). ✅ **0-4**(MB-196 착수 공지 · 계획 §5 ms→fr 치환표 · 워크트리 `Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` + HARDEN.md · 진행 파일 `docs/fr-lanes/` · index 칸 · lane-sync fr 7레인).
-- ▶ 진행 중 = 레인 🅰~🅵 6창 동시(10-07 띄움 · 폴더 `Holdem-fr-<id>`). 🔴 **머지는 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)** — 계획 §4-A. ✅ 🅰 rules · ✅ 🅲 prob · ✅ 🅱 rank · ✅ 🅳 strat · ✅ 🅵 gloss 머지(남은 🅴 tour). 판정 대기 = 계획 §4-B(전 레인 C 뒤 한 번에). 🅶 gto는 🅰~🅵 머지 뒤 헤드 «시작» 신호. 배포는 전 레인 뒤 1회.
+- ▶ 진행 중 = 레인 🅰~🅵 6창 동시(10-07 띄움 · 폴더 `Holdem-fr-<id>`). 🔴 **머지는 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)** — 계획 §4-A. ✅ 🅰 rules · ✅ 🅲 prob · ✅ 🅱 rank · ✅ 🅳 strat · ✅ 🅵 gloss · ✅ 🅴 tour 머지 = **🅰~🅵 전부(fr 38편 · audit 🔴 0 · build ✅)**. ✅ **헤드 판정 회차 10-07 (10)**(`4a7b2f0c` · 계획 §4-B 판정표 · 규칙은 §3-A ②~⑥ 승격 · 계산기 사전 EN대로 · 🅰 결손 0 확인 · EN 델타 기반영 · EN-먼저 10자리 = queue §2-AE). ▶ **다음 = 🅶 gto 창 띄우기**(사장님 지시 시 · 레인은 최신 §3-A를 받도록 harden-fr-gto에 main·fr-integration 머지해 둠) → 🅶 머지 → 🅶 신규 용어 대조 + **아스트라 51편 1회**(§4 헤드 머지 잔여) → 배포 회차(신규 글 date = 배포일 · `/fr/glossary` Nuts·ICM·Check-raise → 글 앵커 · H-18 썸네일). 🪶 H-8 fr PDF = 별도 회차. 📬 MA-357(요청 0) ACK는 다음 MB에.
 - ⏸ ms 14편 EN 동기화 = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07). 솔버 후기창 머지 = 아직 아님(사장님 10-07).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
@@ -39,13 +39,9 @@
 
 - 결과 = `docs/tr-cluster-plan.md` §4-4. 사장님 수동 색인 요청 URL(회차 1~4): 회차 1의 7개(`/tr/blog` · `/tr/tournaments` · `/tr/blog/{texas-holdem-rules-for-beginners, holdem-all-in-rules, holdem-betting-actions, holdem-game-order, holdem-tournament-vs-cash-game}`) + 회차 2의 2개(`/tr/calculator` · `/tr/hand-chart`) + 회차 3의 6개(`/tr/glossary` · `/tr/blog/{holdem-glossary, holdem-tiebreak-rules, holdem-pot-odds, holdem-probability, holdem-tournament}`) + 회차 4의 3개(`/tr/blog/{holdem-strategy, holdem-positions, holdem-continuation-bet}`). 회차 1 ⑦(규칙급 정정 꼬리 로케일 미전파) 판정은 사장님 대기.
 
-## (이전) 사장님 지시 대기 · 검수장 MB-176·178·179·180·181 재판정 대기
+## (이전) 도구 확장 회차 1·2 — 남은 것 = 사장님 수동 색인 요청 20개
 
-- ✅ **MA-331 = §2-Y(10-06 (4) · MB-181 · all-in tldr 누적 예외 EN → 9로케일 + ID game-order 소액 권유 교체)**. 검수장 다음 = 4-2 rankings6 레인.
-
-- ✅ §2-W ① 로케일 고유(MB-176) · ✅ **② EN-먼저 W-21~W-31(10-06 (1) · MB-178 · EN 8편 → 8로케일 72파일)** · ✅ **MA-330 = §2-X(10-06 (2) · MB-179 · EN 3편 5자리 → 9로케일 + ID 고유 1)**. 정본 = **`docs/en-first-queue.md` §2-W·§2-X**. 잔여 🪶(렌즈 잔여 · MA-330 통지 1~3 · 꼬리 15로케일)는 같은 절 — 자동 착수 금지.
-- ✅ 판단 2건(쿨러 Quick test 한정 · string bet 금액 선언)은 사장님 «권고대로» → 10-06 (3) 이행·배포(MB-180).
-- ✅ 도구 확장 회차 1(차트 · MB-173)·**회차 2(용어 사전 · MB-175)** 배포. 🪶 사장님 수동 색인 요청 대상 20개: `/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart` · `/{…같은 10}/glossary`. 회차 3(퀴즈)은 사장님 판단(`docs/tools-locale-rollout-plan.md` §3). 회차 2 아스트라 교차 = ✅ 10-05 (12) 반영(MB-177 · 도구 dict만 · 글·EN 도구 잔여는 queue §2-W 🪶).
+- `/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart` · `/{…같은 10}/glossary`. 회차 3(퀴즈) = 사장님 판단(`docs/tools-locale-rollout-plan.md` §3). 경위 = WORKLOG 10-05~10-06.
 
 ## (뒤로 미룸) tr 클러스터 완결 — 위 도구 확장 뒤 재개 (사장님 10-05 결정)
 
