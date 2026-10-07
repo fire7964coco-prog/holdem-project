@@ -158,6 +158,29 @@
 - 모델: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 다른 계열 교차 = GPT 아스트라(ms §2 그대로).
 - 🔴 라쿠 MCP는 경로 스코프라 새 워크트리에 수동 등록이 필요하다(ms 선례) — 0-1·0-2를 본체에서 끝내 두면 레인은 라쿠가 필요 없다.
 
+## 4-A. 헤드 머지 = 통합 브랜치 `fr-integration` (10-07 결정)
+
+- 🔴 **레인은 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(push = Vercel 배포 → 반쪽 fr + 끊긴 링크가 라이브). main은 계속 MB 회신·다른 로케일 배포에 쓴다. 배포 회차에 `fr-integration` → main 머지 1회.
+- 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상).
+- 머지 기록: ✅ 🅰 rules `2b236c8f` · ✅ 🅲 prob `c2d159bf` (10-07 · 헤드 요청 ⑤⑧ 반영 `0f514ece`) · ✅ 🅱 rank `62843e1f` (10-07 · 헤드 요청 ③ FAQ 3문항 분리 반영) · ☐ 🅳 · ☐ 🅴 · ☐ 🅵 · ☐ 🅶
+
+### 4-B. 헤드 판정 대기 (전 레인 C 뒤 신규 용어 대조 때 한 번에)
+| # | 자리 | 레인 | 내용 |
+|---|---|---|---|
+| H-1 | street | 🅰 «tour (de mises)·étape», street 안 씀 ↔ 🅲 «street» 통일 | 🔴 레인 간 분열 — 하나로 |
+| H-2 | full raise | 🅰 relance complète / relance pleine 병기 | 통일 |
+| H-3 | suite 본문 병기 | 🅲 브리프 «본문 suite 금지» ↔ §3-A ③ «quinte (suite)» 첫 병기 | 족보 글 외 적용 범위 |
+| H-4 | X-to-1 | 🅲 «X contre 1» · «1 sur N» | §3-A ②에 추가할지 |
+| H-5 | suited/offsuit | 🅲 assorties / dépareillées | 코퍼스 대조 |
+| H-6 | 태그 | 🅰 «parole poker»(가사 SERP) · 🅲 «règle du 2 et du 4» 3편 중복 | 카피 잠금 해제 판단 |
+| H-7 | 계산기 사전 | 🅲 `check:calc-parity:all` fr 🔴 16 — quickRef 4 + related 5 | 배포 회차(§3-B ⑧) |
+| H-8 | PDF | 🅰 fr 초보 PDF 없음 → «(PDF en anglais)» | 생성 여부 |
+| H-10 | 태그 중복 | 🅱 flush-vs-straight «couleur poker»(= hand-rankings) · «flush/straight poker» · split-pot «pot annexe poker»(= all-in) | H-6과 같이 |
+| H-11 | tapis·hauteur | 🅱 펠트·스택 뜻 tapis 8 → table/feutre·stack · «quinte hauteur X» 통일 | 🅰·🅲·🅳~🅵에 같은 정리 필요한지 대조 |
+| H-12 | 🅰 링크 결손 | 🅱 6편 생기며 🅰 4편(betting-actions·game-order·showdown·beginners) `check:structure` 링크 개수 결손 | 헤드가 통합 트리에서 EN대로 복원 |
+| H-13 | 현지 추가 링크 | 🅱 split-pot FAQ → tiebreak 앵커 1 | 유지 판정(레인 형제) |
+| H-9 | EN-먼저 | 🅰 rules L353 «43.8% most frequent at showdown» · game-order L119 | queue 등재 후보 |
+
 ## 5. 레인 운영 — `ms-translation-lanes.md`를 fr로 읽는 치환표 (0-4 · 10-07)
 
 > 레인은 ms 규격 §3~§9를 그대로 따르되, **아래 표의 자리만 바꿔 읽는다.** 표에 없는 자리는 ms 규격 축어.
