@@ -7,7 +7,7 @@
 
 - 정본 = **`docs/fr-cluster-plan.md`**(레인 7 · 재작업 방지 장치 §2 · 단계표 §4). 판단 3건 권고대로(GTO 13 포함·마지막 · 대회 가이드 5 제외 · 레인 병렬). EN 기준 해시 `a54b5f3d`.
 - ✅ 0-1 수요 실측(`docs/keyword-bank/fr-core-volumes.md`) · ✅ **0-2 SERP**(`docs/keyword-bank/fr-serp/` 7레인 · 51/51 질문 확보). ✅ **0-3 정본**(계획 §3-A 용어 · §3-B 소유표 12건 · ④ nuts = reading-the-board). ✅ **0-4**(MB-196 착수 공지 · 계획 §5 ms→fr 치환표 · 워크트리 `Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` + HARDEN.md · 진행 파일 `docs/fr-lanes/` · index 칸 · lane-sync fr 7레인).
-- ▶ 진행 중 = 레인 🅰~🅵 6창 동시(10-07 띄움 · 폴더 `Holdem-fr-<id>`). 🔴 **머지는 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)** — 계획 §4-A. ✅ 🅰 rules · ✅ 🅲 prob · ✅ 🅱 rank · ✅ 🅳 strat · ✅ 🅵 gloss 머지(남은 🅴 tour). 판정 대기 = 계획 §4-B(전 레인 C 뒤 한 번에). 🅶 gto는 🅰~🅵 머지 뒤 헤드 «시작» 신호. 배포는 전 레인 뒤 1회.
+- ▶ 진행 중 = 레인 🅰~🅵 6창 동시(10-07 띄움 · 폴더 `Holdem-fr-<id>`). 🔴 **머지는 main이 아니라 `fr-integration`(폴더 `Holdem-fr-head`)** — 계획 §4-A. ✅ 🅰 rules · ✅ 🅲 prob · ✅ 🅱 rank · ✅ 🅳 strat · ✅ 🅵 gloss · ✅ 🅴 tour 머지 = **🅰~🅵 전부(fr 38편 · audit 🔴 0 · build ✅)**. ▶ 🅶 gto 시작 신호 ✅(창 띄우기 = 사장님 지시 시). ▶ **헤드 판정 회차**(계획 §4-B H-1~30 · 계산기 사전 · 🅰 결손 복원 · EN 델타 스윕 · 아스트라) = 🅶와 병행 가능 — 새 세션 권장. 판정 대기 = 계획 §4-B(전 레인 C 뒤 한 번에). 🅶 gto는 🅰~🅵 머지 뒤 헤드 «시작» 신호. 배포는 전 레인 뒤 1회.
 - ⏸ ms 14편 EN 동기화 = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07). 솔버 후기창 머지 = 아직 아님(사장님 10-07).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)

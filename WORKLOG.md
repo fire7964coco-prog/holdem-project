@@ -1,3 +1,10 @@
+## 2026-10-07 (9) — fr 레인 🅱🅳🅵🅴 머지 · 🅰~🅵 전부 통합 (fr-integration)
+
+- 🅱 rank(FAQ 3문항 분리) · 🅳 strat(strategy FAQ «se coucher» 분리) · 🅵 gloss(cooler MA-350 문면 확인) · 🅴 tour 무충돌 머지. MA-354 형제 fr 2자리도 통합 브랜치에.
+- 통합 트리 fr 38편 audit:hard 🔴 0 · next build exit 0 · intl-links 잔여 4 = 전부 🅶 GTO 대상.
+- 🅶 시작 신호: harden-fr-gto에 main + fr-integration 머지(94accc28).
+- 헤드 판정 대기 30건 = 계획 §4-B(레인 간 분열: street · tableau des mains de départ 앵커 · tapis · 카드 라벨 · date 등 + 계산기 사전 calc-parity fr 14 · 🅰 구조 결손).
+
 ## 2026-10-07 (8) — 우편함 MA-351~356 회신 · MA-353 ② · MA-354 ① 이행 (MB-198 · queue §2-AD)
 
 - ACK: MA-351(fr 판정 보류 수용) · MA-355·356(cooler 재판정 · EN #45 해제). MA-353 ①은 MB-197로 이미 이행.
