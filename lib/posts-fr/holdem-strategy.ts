@@ -195,7 +195,7 @@ A. Avec le jeu serré-agressif (TAG). Joue peu de mains, mais joue-les agressive
 
 A. On ne gagne pas en jouant plus de mains — on gagne en prenant de meilleures décisions dans les cinq mêmes spots à chaque main : position, sélection des mains, relancer ou se coucher, c-bet, et savoir lâcher. Les gagnants se couchent plus, relancent plus et suivent moins que les perdants. Avec le temps, des mains de départ plus serrées et des folds disciplinés font que tu gagnes les gros pots et perds les petits — c'est tout le jeu.
 
-**Q. Quand faut-il se coucher au poker ?**
+**Q. Quel est le principe de base pour savoir quand se coucher ?**
 
 A. Couche-toi quand l'histoire que raconte ton adversaire bat la main que tu as vraiment et que tu n'as pas les cotes du pot pour continuer à tirer. Concrètement : jette les mains faibles avant le flop, couche-toi quand tu rates et que tu fais face à une vraie agression, et lâche les tirages quand le prix n'est pas bon. Jeter une bonne main battue donne l'impression de perdre, mais c'est l'habitude la plus rentable du poker — le détail est dans le guide [quand se coucher au poker](/fr/blog/holdem-when-to-fold).
 
