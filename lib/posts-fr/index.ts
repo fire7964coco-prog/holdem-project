@@ -58,6 +58,19 @@ import { POST as holdemStraddle } from "./holdem-straddle";
 // [fr-gloss import 끝]
 
 // [fr-gto import 시작]
+import { POST as gtoAHighBoardCbet } from "./a-high-board-cbet";
+import { POST as gtoKHighBoardCbet } from "./k-high-board-cbet";
+import { POST as gtoBroadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as gtoDonkBetStrategy } from "./donk-bet-strategy";
+import { POST as gtoMonotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as gtoPairedBoardStrategy } from "./paired-board-strategy";
+import { POST as gtoLowBoardCheckRaise } from "./low-board-check-raise";
+import { POST as gto3betPotCbet } from "./3bet-pot-cbet";
+import { POST as gto3betPotBetSizing } from "./3bet-pot-bet-sizing";
+import { POST as gto3betPotLowBoard } from "./3bet-pot-low-board";
+import { POST as gtoBlindBattleCbet } from "./blind-battle-cbet";
+import { POST as gtoBlindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as gtoAcePairedBoardStrategy } from "./ace-paired-board-strategy";
 // [fr-gto import 끝]
 
 /**
@@ -123,6 +136,19 @@ export const FR_POSTS: Post[] = [
   // [fr-gloss 배열 끝]
 
   // [fr-gto 배열 시작]
+  gtoAHighBoardCbet,
+  gtoKHighBoardCbet,
+  gtoBroadwayBoardStrategy,
+  gtoDonkBetStrategy,
+  gtoMonotoneBoardStrategy,
+  gtoPairedBoardStrategy,
+  gtoLowBoardCheckRaise,
+  gto3betPotCbet,
+  gto3betPotBetSizing,
+  gto3betPotLowBoard,
+  gtoBlindBattleCbet,
+  gtoBlindBattleConnectedBoard,
+  gtoAcePairedBoardStrategy,
   // [fr-gto 배열 끝]
 ];
 

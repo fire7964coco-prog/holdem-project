@@ -467,6 +467,37 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지 ②(선택 · UNV · 자동 착수 금지): bad-beat Mabuchi «moved all in» ↔ 원보도 «splashing his chips» · position-play «bluff-catchers that under-realize» → «that tend to…» · chart «single biggest improvement» → «one of the biggest». EN 손질 때 같이.
 
+### 2-AD. 우편함 수신분 — MA-353 (JA ④ §4 형제 통일) · MA-354 (사장님 결재 4건) · 판정·이행 2026-10-07 (8) · MB-198
+
+| # | 자리 | 이행 |
+|---|---|---|
+| AD-1 | MA-353 ① cooler «사전» 귀속 7로케일 | MB-197 `058a9718`에서 이미 이행(MA-356 재판정 OK) |
+| AD-2 | MA-353 ② ja showdown FAQ5 «どのキャッシュゲームでも…（ルール149）» | WSOP 룰북 귀속을 문장 안으로(L95 문면) |
+| AD-3 | MA-354 ① flush-vs-straight «rarer always wins» | «among hand types, the rarer one always ranks higher» × 9로케일 + fr 통합 브랜치 |
+| AD-4 | MA-354 ① probability 카드 «Why the rarer hand always wins» | «Why the rarer hand type ranks higher» × 7로케일 + fr 통합 브랜치 |
+| AD-5 | MA-354 ① id equity·straddle 카드 | «posisi sangat menentukan» · «hampir hanya» |
+
+- 🪶 EN equity 카드 «Why realization lives and dies on position»(전 로케일 동형) — 본문 충돌은 id뿐이라 이번엔 id만. EN 손질 때 «Why position shapes how much equity you realize»류로 형제 같이.
+- 🪶 MA-353 통지 ③(선택 · UNV): zh positions «满员的 full ring 桌» → «满桌（full ring）» · reading «many rivers beat it» → «can beat it»(EN-먼저) · ja drawing L63 «およそ».
+
+### 2-AE. fr 레인 집필 중 발견 — EN-먼저 후보 (fr 헤드 판정 H-9·H-24 · 2026-10-07 등재 · 🪶 자동 착수 금지)
+
+> 출처 = `docs/fr-cluster-plan.md` §4-B H-9·H-24(레인 진행 파일 «EN-먼저» 표). fr은 각 자리를 이미 정확한 쪽으로 썼다 — EN 손질 회차에 EN + 핵심 로케일을 같이 고친다.
+
+| # | EN 자리 | 의심 | fr 처리 |
+|---|---|---|---|
+| AE-1 | texas-holdem-rules-for-beginners L353 «43.8% most frequent at showdown» | 기준(5장/7장·쇼다운 조건) 불명 단정 | 🅰 진행 파일 |
+| AE-2 | holdem-game-order L119 | 🅰 진행 파일 «EN-먼저» 행 | 〃 |
+| AE-3 | holdem-continuation-bet L181 «charges all his missed hands» | 과장(«all») | fr «met sous pression» |
+| AE-4 | holdem-position-play L128·L281 AK/AQ ↔ holdem-starting-hands-chart L121 | 형제 글 간 핸드 처리 불일치 | 🅳 진행 파일 |
+| AE-5 | holdem-continuation-bet L105 «over 97% on all three boards» | 솔버 수치 귀속·범위 확인 | 〃 |
+| AE-6 | holdem-glossary L38 «a dozen terms» | 실제 8쌍 | fr 개수 맞춤 |
+| AE-7 | holdem-rake «most pots brush the cap» | 근거 없는 빈도 단정 | 🅵 진행 파일 |
+| AE-8 | holdem-fish «competitors» | 어휘 | 〃 |
+| AE-9 | holdem-cooler 인용 I→you | 인용 화자 | 〃 |
+| AE-10 | 카드 «Who wins at showdown» | 대상 글 제목과 불일치 | 〃 |
+
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

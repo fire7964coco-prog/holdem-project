@@ -70,7 +70,7 @@ Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding 
 
 ### Kenapa ini terasa terbalik
 
-Straight hanya butuh lima rank berurutan, dan ==**jenisnya tidak penting**==. Kebebasan itu menciptakan sejumlah besar kombinasi. Flush justru kebalikannya: setiap dari kelima kartu harus punya ==**jenis yang sama**==, dan hanya satu dari empat jenis yang bisa melakukannya dalam satu waktu. ==g:Jauh lebih sedikit cara untuk sampai ke sana berarti flush lebih langka — dan yang lebih langka selalu menang.==
+Straight hanya butuh lima rank berurutan, dan ==**jenisnya tidak penting**==. Kebebasan itu menciptakan sejumlah besar kombinasi. Flush justru kebalikannya: setiap dari kelima kartu harus punya ==**jenis yang sama**==, dan hanya satu dari empat jenis yang bisa melakukannya dalam satu waktu. ==g:Jauh lebih sedikit cara untuk sampai ke sana berarti flush lebih langka — dan di antara kategori tangan, yang lebih langka selalu berperingkat lebih tinggi.==
 
 :::tip[Kalau Anda pegang flush draw dan lawan Anda sedang menarik ke straight, Anda menang saat keduanya bertabrakan — ketika **kedua** draw jadi, flush Anda mengalahkan straight mereka di showdown. Itu tidak sama dengan menjadi unggulan: kalau straight draw mereka datang bersama pair atau kartu yang lebih tinggi, mereka masih bisa unggul sebelum river.]:::
 

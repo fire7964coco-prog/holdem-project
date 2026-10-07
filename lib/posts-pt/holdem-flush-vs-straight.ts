@@ -70,7 +70,7 @@ Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que u
 
 ### Por que isso parece invertido
 
-Uma sequência só precisa de cinco valores em ordem, e ==**os naipes não importam**==. Essa liberdade cria um número enorme de combinações. O flush é o oposto: cada uma das cinco cartas tem que compartilhar ==**o mesmo naipe**==, e só um dos quatro naipes consegue por vez. ==g:Muito menos formas de chegar lá significa que o flush é mais raro — e o mais raro sempre ganha.==
+Uma sequência só precisa de cinco valores em ordem, e ==**os naipes não importam**==. Essa liberdade cria um número enorme de combinações. O flush é o oposto: cada uma das cinco cartas tem que compartilhar ==**o mesmo naipe**==, e só um dos quatro naipes consegue por vez. ==g:Muito menos formas de chegar lá significa que o flush é mais raro — e, entre as categorias de mão, a mais rara sempre fica acima.==
 
 :::tip[Se você tem um draw de flush e seu adversário está buscando a sequência, você ganha a colisão — quando **os dois** draws fecham, seu flush ganha da sequência dele no showdown. Isso não é o mesmo que ser o favorito: se o draw de sequência dele vem com um par ou com cartas mais altas, ele ainda pode estar na frente antes do river.]:::
 

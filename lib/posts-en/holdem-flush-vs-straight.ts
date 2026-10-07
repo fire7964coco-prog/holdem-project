@@ -69,7 +69,7 @@ A straight has roughly ==r:**twice** as many ways to come together as a flush== 
 
 ### Why this feels backwards
 
-A straight only needs five ranks in a row, and ==**the suits don't matter**==. That freedom creates a huge number of combinations. A flush is the opposite: every one of the five cards has to share ==**the same suit**==, and only one of four suits can do it at a time. ==g:Far fewer ways to get there means the flush is rarer — and rarer always wins.==
+A straight only needs five ranks in a row, and ==**the suits don't matter**==. That freedom creates a huge number of combinations. A flush is the opposite: every one of the five cards has to share ==**the same suit**==, and only one of four suits can do it at a time. ==g:Far fewer ways to get there means the flush is rarer — and among hand types, the rarer one always ranks higher.==
 
 :::tip[If you hold a flush draw and your opponent is drawing to a straight, you win the collision — when **both** draws complete, your flush beats their straight at showdown. That is not the same as being the favorite: if their straight draw comes with a pair or higher cards, they can still be ahead before the river.]:::
 
