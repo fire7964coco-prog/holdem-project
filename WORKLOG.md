@@ -1,3 +1,13 @@
+## 2026-10-07 (11) — fr 배포 준비 (fr-integration `0b6f66e6`) · 🅶 레인 창 띄움
+
+- 🅶 gto 레인 창 띄움(wt.exe · «HARDEN.md 읽고 A 시작해» · 사장님 지시). 13편이라도 1레인 — 같은 솔버 앱 문구를 써야 해 분열 위험이 더 크다(B가 길면 그때 7+6 분할).
+- `/fr/glossary`: 공용 `GlossaryTerm.link?` 선택 필드 + 렌더 → Nuts → reading-the-board · ICM → holdem-icm · Check-raise → low-board-check-raise(계획 §3-B ④⑤⑦) · related = EN 구성.
+- `/fr/hand-chart` related = EN 4글(starting-hands-chart · when-to-fold · position-play · hand-rankings) + 계산기.
+- 러닝맵 `FR_CLUSTERS`(ms 구조 6필라) + 레일 솔버 버튼 fr 문구(랜딩 TITLE 축어).
+- 로컬 화면 확인: 첫 시도는 전 페이지 «Application error» — 원인 = 워크트리에 `.env.local` 없음(Supabase 클라이언트) · ms 글도 동일 → 복사 후 재빌드 → 오류 0 · 레일·러닝맵·링크 3 확인.
+- `/fr/solver` 랜딩 링크 재구성은 GTO 13편과 묶여 🅶 배포 회차로(de 10-02 선례).
+- 배포 회차 체크리스트 = 계획 §4-C(수동 색인 38 URL 목록 포함).
+
 ## 2026-10-07 (10) — fr 헤드 판정 회차: H-1~30 · 계산기 사전 · 🅰 결손 확인 · EN 델타 스윕 (fr-integration `4a7b2f0c`)
 
 - 계산기 사전(H-7·H-30): fr 코퍼스에 대상 글이 다 생겨 «생략이 정답»이던 quickRef 6링크 · ICM deal 링크 · related 8을 EN대로 걸었다 → calc-parity 13사본 0. 링크 문구 = 각 fr 글 title 축약.
