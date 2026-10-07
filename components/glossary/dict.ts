@@ -23,6 +23,8 @@ export type GlossaryTerm = {
   desc: string;
   /** Extra search keys (English original, common spellings). Not displayed. */
   aka?: string[];
+  /** Optional «read more» link to the article that owns this term (fr-cluster-plan §3-B ④⑤⑦). */
+  link?: { href: string; text: string };
 };
 
 export type GlossaryDict = {

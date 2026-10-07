@@ -117,10 +117,11 @@ export const HAND_CHART_DICT_FR: HandChartDict = {
   related: {
     heading: "Pour aller plus loin — guides liés",
     items: [
-      { href: "/fr/blog/holdem-game-order", tag: "Ordre du jeu", title: "Comment jouer au Texas Hold'em : l'ordre du jeu", desc: "Qui parle quand, du préflop à l'abattage" },
-      { href: "/fr/blog/holdem-blind-meaning", tag: "Blindes", title: "Les blindes au poker : petite blinde et grosse blinde", desc: "Pourquoi la SB et la BB paient avant de voir leurs cartes" },
-      { href: "/fr/blog/holdem-betting-actions", tag: "Actions", title: "Les actions au Texas Hold'em : checker, suivre, relancer, se coucher", desc: "Check, relance, min-raise et quand se coucher" },
-      { href: "/fr/blog/texas-holdem-rules-for-beginners", tag: "Débutant", title: "Comment jouer au Texas Hold'em quand on débute", desc: "Règles, jetons, mains et première stratégie" },
+      // ★2026-10-07 fr 51편 헤드 회차: EN related 4글 그대로(그 전엔 fr 코퍼스가 규칙 6편뿐이라 규칙 글로 대체했었다).
+      { href: "/fr/blog/holdem-starting-hands-chart", tag: "Guide complet", title: "Mains de départ au poker : quelles mains jouer selon ta position", desc: "Quelles mains ouvrir, et pourquoi, depuis chaque siège" },
+      { href: "/fr/blog/holdem-when-to-fold", tag: "Se coucher", title: "Quand se coucher au poker", desc: "La compétence qui fait gagner le plus, en silence" },
+      { href: "/fr/blog/holdem-position-play", tag: "Position", title: "Jouer en position ou hors de position", desc: "Pourquoi le bouton est le siège le plus rentable" },
+      { href: "/fr/blog/holdem-hand-rankings", tag: "Combinaisons", title: "Combinaisons au poker : l'ordre des mains", desc: "Les 10 mains, de la quinte flush royale à la carte haute" },
       { href: "/fr/calculator", tag: "Outil", title: "Calculateur poker", desc: "Équité exacte et cotes du pot pour n'importe quelle main" },
     ],
   },

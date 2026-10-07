@@ -964,6 +964,86 @@ export const MS_CLUSTERS: PillarCluster[] = [
   ...solverOf("ms"),
 ];
 
+// fr — 2026-10-07 fr 51편 헤드 회차(docs/fr-cluster-plan.md). ms와 같은 구조 · 대회 가이드 4편은 fr에 없어 뺀다.
+// 라벨 = fr 글 제목·계획 §3-A 용어(quinte·blindes·abattage·tapis = all-in · 카드 라벨 사전 ⑥).
+export const FR_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "Règles",
+    nodes: [
+      { slug: "holdem-game-order", label: "Ordre de jeu" },
+      { slug: "holdem-betting-actions", label: "Actions de mise" },
+      { slug: "holdem-blind-meaning", label: "Blindes" },
+      { slug: "holdem-all-in-rules", label: "Règles du tapis" },
+      { slug: "holdem-showdown-rules", label: "Abattage" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "Combinaisons",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "Couleur ou quinte" },
+      { slug: "holdem-kicker", label: "Kicker" },
+      { slug: "holdem-tiebreak-rules", label: "Départage" },
+      { slug: "holdem-split-pot-rules", label: "Pot partagé" },
+      { slug: "holdem-reading-the-board", label: "Lire le board" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "Cotes & maths",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "Cote du pot" },
+      { slug: "holdem-outs", label: "Compter ses outs" },
+      { slug: "holdem-drawing-odds", label: "Cotes des tirages" },
+      { slug: "holdem-implied-odds", label: "Cotes implicites" },
+      { slug: "holdem-equity", label: "Équité" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "Stratégie",
+    nodes: [
+      { slug: "holdem-positions", label: "Positions" },
+      { slug: "holdem-position-play", label: "Jouer sa position" },
+      { slug: "holdem-starting-hands-chart", label: "Mains de départ" },
+      { slug: "holdem-limping", label: "Limp" },
+      { slug: "holdem-3bet", label: "3-bet" },
+      { slug: "holdem-continuation-bet", label: "C-bet" },
+      { slug: "holdem-when-to-fold", label: "Quand se coucher" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "Tournoi",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "Tournoi ou cash game" },
+      { slug: "holdem-icm", label: "ICM" },
+      { slug: "holdem-bubble", label: "Bulle" },
+      { slug: "holdem-short-stack", label: "Short stack" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "Jargon",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "Rake" },
+      { slug: "holdem-fish", label: "Fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad beat" },
+    ],
+  },
+  // GTO 솔버 시리즈 13편 — 라벨 정본 = lib/gto-series-i18n.ts (🅶 레인이 fr 항목을 넣으면 자동 표시)
+  ...solverOf("fr"),
+];
+
 const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   en: EN_CLUSTERS,
   ja: JA_CLUSTERS,
@@ -975,6 +1055,7 @@ const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   id: ID_CLUSTERS,
   hi: HI_CLUSTERS,
   ms: MS_CLUSTERS,
+  fr: FR_CLUSTERS,
 };
 
 /** 로케일별 클러스터. `null`(= 한국어)이면 KO_CLUSTERS. 맵이 없는 언어는 빈 배열. */
