@@ -35,7 +35,7 @@ Presque tous les nouveaux joueurs de Hold'em finissent par se poser la même que
 
 Au début, on dirait le même jeu. Tu reçois toujours deux cartes privatives, cinq cartes communes, et quatre tours d'enchères du préflop à la river. Mais sur le plan stratégique, ce sont presque deux mondes différents. En cash game, tes jetons sont de l'argent. En tournoi, tes jetons sont ta vie dans le tournoi.
 
-Cet article décortique ==cash game ou tournoi au poker== comme un débutant en a vraiment besoin : ce qu'est un cash game et comment il fonctionne, la valeur des jetons, la structure des blindes, ce qui change en stratégie, le format le plus dur, le plus rentable, la bankroll, l'ICM, quand quitter une table, et par lequel commencer. Si les tournois restent encore un mystère pour toi, lis d'abord [comment fonctionne un tournoi de poker — buy-in, niveaux de blindes et déroulement du Jour 1](/fr/blog/holdem-tournament) ; cet article compare les deux formats au lieu de répéter ce guide de structure.
+Cet article décortique la question ==cash game ou tournoi au poker== comme un débutant en a vraiment besoin : ce qu'est un cash game et comment il fonctionne, la valeur des jetons, la structure des blindes, ce qui change en stratégie, le format le plus dur, le plus rentable, la bankroll, l'ICM, quand quitter une table, et par lequel commencer. Si les tournois restent encore un mystère pour toi, lis d'abord [comment fonctionne un tournoi de poker — buy-in, niveaux de blindes et déroulement du Jour 1](/fr/blog/holdem-tournament) ; cet article compare les deux formats au lieu de répéter ce guide de structure.
 
 ### La réponse en 15 secondes
 
@@ -43,7 +43,7 @@ Cet article décortique ==cash game ou tournoi au poker== comme un débutant en 
 - **Tournoi :** tu paies un seul buy-in (droit d'entrée), tu reçois des jetons de tournoi et tu joues jusqu'à être éliminé ou gagner.
 - **Le cash game enseigne les fondamentaux plus vite** parce que les stacks sont plus profonds et que le retour sur tes décisions arrive plus tôt.
 - **Le tournoi offre un plus gros potentiel de gain** mais une variance bien plus forte, des sessions plus longues et [la pression de l'ICM](/fr/blog/holdem-icm).
-- **Pour la plupart des débutants, le cash game est le point de départ le plus propre.** Ajoute les tournois une fois que les bases sont devenues automatiques.
+- **Pour la plupart des débutants, le cash game est le point de départ le plus simple.** Ajoute les tournois une fois que les bases sont devenues automatiques.
 
 ---
 
@@ -90,7 +90,7 @@ Si tu comprends ce tableau, ==g:tu as déjà compris la base de toute la compara
 
 **La salle prélève un rake.** Dans la plupart des cash games, la salle prend une petite part de chaque pot (ou facture des frais de place au temps). Ça détermine discrètement quelles limites sont battables, alors ça vaut le coup de comprendre [comment fonctionne le rake au poker](/fr/blog/holdem-rake) avant de choisir une partie.
 
-:::note[Cette section couvre l'essentiel du cash game. Nous sommes en train d'en faire un guide du cash game à part entière — considère ceci comme la graine.]:::
+:::note[Cette section couvre l'essentiel du cash game. J'en fais un guide du cash game à part entière — vois ceci comme un point de départ.]:::
 
 ---
 
@@ -102,7 +102,7 @@ En cash game, doubler ton stack double ton argent. C'est pour ça que les décis
 
 En tournoi, ==r:doubler ton stack de jetons ne double **pas** ton équité en argent réel==. Les gains dépendent de ta place à l'arrivée, pas du nombre exact de jetons que tu as à un instant donné.
 
-Imagine un tournoi à 10 joueurs où chacun paie $100 (on ignore les frais de la salle pour simplifier — les $1 000 vont entièrement dans le prize pool (la cagnotte)).
+Imagine un tournoi à 10 joueurs où chacun paie $100 (on ignore les frais de la salle pour simplifier — les $1 000 vont entièrement dans le prize pool, la cagnotte).
 
 | Place | Gain |
 |:---|:---:|
@@ -125,7 +125,7 @@ Si tu passes de 10 % des jetons à 20 % des jetons, tes chances de gagner de l'a
 
 Dans un cash game $1/$2, les blindes restent à $1/$2. Une heure plus tard, elles sont toujours à $1/$2. Trois heures plus tard, toujours $1/$2. Tu peux attendre de meilleurs spots, te recaver si besoin et continuer à jouer avec un stack profond.
 
-En tournoi, les blindes montent selon un calendrier. Un stack de 100 big blinds au début peut tomber à 25 big blinds plus tard sans perdre une seule main. Puis à 12 big blinds. À un moment, attendre devient cher.
+En tournoi, c'est l'inverse : un stack de 100 big blinds au début peut tomber à 25 big blinds plus tard sans perdre une seule main. Puis à 12 big blinds. À un moment, attendre devient cher.
 
 | Phase | Cash game | Tournoi |
 |------|------|------|
@@ -144,7 +144,7 @@ En tournoi, les blindes montent selon un calendrier. Un stack de 100 big blinds 
 
 **Le cash game est une seule longue partie ; le tournoi, une série de parties courtes.** En cash game, chaque décision se juge sur une seule question : rapporte-t-elle de l'argent sur des milliers de répétitions ? En tournoi, la même décision doit aussi répondre à une deuxième question : qu'est-ce qu'elle fait à mes chances de survivre jusqu'aux places payées ?
 
-**Ta base préflop part du même point, puis diverge.** Un bon [tableau des mains de départ](/fr/blog/holdem-starting-hands-chart) est la fondation dans les deux formats — mais le tournoi t'éloigne de cette base à mesure que les stacks raccourcissent, que les antes arrivent et que les paliers de gains (pay jump) approchent, alors qu'un cash game te laisse jouer les mêmes ranges disciplinées toute la nuit.
+**Ta base préflop part du même point, puis diverge.** Bien choisir [quelles mains de départ jouer](/fr/blog/holdem-starting-hands-chart) est la fondation dans les deux formats — mais le tournoi t'éloigne de cette base à mesure que les stacks raccourcissent, que les antes arrivent et que les paliers de gains (pay jump) approchent, alors qu'un cash game te laisse jouer les mêmes ranges disciplinées toute la nuit.
 
 **La recave change la façon dont l'agression fonctionne.** En cash game, perdre un stack veut dire remettre la main à la poche, donc les gros bluffs et les calls fins ne coûtent « que » de l'argent. En tournoi, la même erreur, c'est l'élimination — c'est pourquoi les bons joueurs de tournoi choisissent leurs spots en fonction de la taille des stacks et de la survie, pas seulement des cartes.
 
@@ -152,7 +152,7 @@ En tournoi, les blindes montent selon un calendrier. Un stack de 100 big blinds 
 
 Le cash game récompense en général le jeu à stacks profonds. Tu joues souvent autour de 100 big blinds, ce qui veut dire que les décisions au flop, à la turn et à la river pèsent lourd. Tu dois comprendre la value bet, le bluff, la texture du board, la position et les ranges adverses.
 
-Le tournoi commence profond mais devient souvent short. À 25 big blinds, 15 big blinds ou 10 big blinds, les décisions préflop deviennent bien plus importantes. Au lieu de planifier trois streets, tu choisis peut-être entre ouvrir, refaire tapis, payer pour tout ton stack ou passer — les ranges exactes sont dans [la stratégie short stack : quand faire tapis ou passer](/fr/blog/holdem-short-stack).
+Le tournoi commence profond mais devient souvent short. À 25 big blinds, 15 big blinds ou 10 big blinds, les décisions préflop deviennent bien plus importantes. Au lieu de planifier trois streets, tu choisis peut-être entre ouvrir, refaire tapis, payer pour tout ton stack ou te coucher — les ranges exactes sont dans [la stratégie short stack : quand faire tapis ou se coucher](/fr/blog/holdem-short-stack).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -175,16 +175,16 @@ Les joueurs de cash game s'en sortent souvent bien dans les premières phases d'
 
 ICM veut dire **Independent Chip Model**. Il estime la valeur en argent réel de ton stack de tournoi à partir de la taille des stacks, du nombre de joueurs restants et de la structure des gains. Le cash game n'a pas besoin de l'ICM, parce que les jetons y sont déjà de l'argent.
 
-Où est-ce que ça mord ? Surtout [sur la bulle](/fr/blog/holdem-bubble) et en table finale. Imagine que tu as AKo sur la bulle avec un stack moyen et qu'un autre joueur fait tapis. En cash game, si le call est rentable d'après les pot odds et l'équité, tu payes. En tournoi, perdre veut dire finir avec $0, alors que gagner ne double pas ton équité en gains — donc un call qui rapporte de l'argent en cash game peut être un fold évident sous ICM.
+Où est-ce que ça mord ? Surtout [sur la bulle](/fr/blog/holdem-bubble) et en table finale. Imagine que tu as AKo sur la bulle avec un stack moyen et qu'un autre joueur fait tapis. En cash game, si le call est rentable d'après les cotes du pot et l'équité, tu payes. En tournoi, perdre veut dire finir avec $0, alors que gagner ne double pas ton équité en gains — donc un call qui rapporte de l'argent en cash game peut être un fold évident en ICM.
 
 | Facteur de décision | Cash game | Tournoi |
 |------|------|------|
-| Logique du call | Pot odds + équité | Pot odds + équité + ICM |
+| Logique du call | Cotes du pot + équité | Cotes du pot + équité + ICM |
 | Perdre un stack | Tu perds une cave | Élimination |
 | Valeur des mains fortes | Plus stable | Varie avec la pression des gains |
 | Pression de la bulle | Aucune | Énorme |
 
-==g:Quand tu vois un bon joueur de tournoi passer une main qui semble trop belle pour être couchée, l'ICM en est souvent la raison.== Un paragraphe ne peut pas rendre justice aux calculs — les exemples détaillés sont dans [l'ICM expliqué : pourquoi les jetons de tournoi ne sont pas de l'argent](/fr/blog/holdem-icm).
+==g:Quand tu vois un bon joueur de tournoi coucher une main qui semble trop belle pour être jetée, l'ICM en est souvent la raison.== Un paragraphe ne peut pas rendre justice aux calculs — les exemples détaillés sont dans [l'ICM expliqué : pourquoi les jetons de tournoi ne sont pas de l'argent](/fr/blog/holdem-icm).
 
 ![Infographie montrant que doubler ton stack de tournoi fait grandir ton équité en gains de moins du double — le cœur de la pression ICM](/images/holdem-tournament-icm-bubble.webp "Pression de la bulle en tournoi et décisions ICM")
 
@@ -192,7 +192,7 @@ Où est-ce que ça mord ? Surtout [sur la bulle](/fr/blog/holdem-bubble) et en t
 
 ## Le cash game est-il plus dur que le tournoi ?
 
-**Aucun des deux n'est simplement « plus dur » : chacun est difficile à sa façon.** La question revient sans arrêt, et la réponse honnête est la suivante : ==ils sont durs de manières différentes==, et « plus dur » dépend des compétences qui te manquent.
+**Aucun des deux n'est simplement « plus dur » : chacun est difficile à sa façon.** La question revient sans arrêt, et la réponse honnête tient en deux mots : ==tout dépend== — « plus dur » se juge aux compétences qui te manquent.
 
 Le cash game concentre la difficulté dans le **jeu postflop à stacks profonds**. Tu affrontes les mêmes limites — et souvent les mêmes réguliers — jour après jour, sans montée des blindes pour pousser qui que ce soit à l'erreur. Gagner demande en général un vrai avantage en lecture de main, en value bet et en discipline, et beaucoup de joueurs trouvent que grappiller cet avantage sur la durée est le test le plus dur à long terme.
 
@@ -204,7 +204,7 @@ Le tournoi répartit la difficulté sur plusieurs **phases**. Il te faut le jeu 
 |------|------|------|
 | Profondeur d'une compétence | ==r:Très profonde== (postflop, stacks profonds) | Modérée à chaque phase |
 | Éventail des compétences | Plus étroit | ==r:Très large== (profond, short, ICM) |
-| Pression des adversaires | Régulière, souvent des réguliers expérimentés | Champs mélangés, varie selon la phase |
+| Pression des adversaires | Régulière, souvent des réguliers expérimentés | Fields (inscrits) hétérogènes, varie selon la phase |
 | Défi mental | Discipline sur de longues sessions plates | Endurance et écarts de variance |
 
 </div>
@@ -239,11 +239,11 @@ Alors, lequel est le plus rentable ? ==Pour la plupart des joueurs, le cash game
 
 ## Gestion de bankroll : pourquoi le tournoi demande-t-il plus de marge ?
 
-**Le tournoi demande plus de marge parce que ses écarts sont bien plus grands.** La gestion de bankroll compte dans les deux formats, mais le tournoi exige en général un coussin plus épais.
+**Le tournoi demande plus de marge parce que ses écarts sont bien plus grands.** La gestion de bankroll compte dans les deux formats, mais le coussin nécessaire n'est pas le même.
 
 Une règle courante pour débutant en cash game, c'est environ **20-40 caves** pour la limite que tu joues. Si ta cave habituelle en cash game est de $200, ça fait à peu près $4 000-$8 000 comme bankroll poker prudente.
 
-Pour les tournois, la recommandation standard est plus raide : **100+ buy-ins pour les MTT (tournois multi-tables) à gros champ**, un peu moins pour les formats plus petits ou plus faciles. Un tournoi à $50 peut sembler moins cher qu'une cave de $200 en cash game, mais la variance peut être bien plus brutale.
+Pour les tournois, la recommandation standard est plus raide : **100+ buy-ins pour les MTT (tournois multi-tables) à gros field (l'ensemble des inscrits)**, un peu moins pour les formats plus petits ou plus faciles. Un tournoi à $50 peut sembler moins cher qu'une cave de $200 en cash game, mais la variance peut être bien plus brutale.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -251,7 +251,7 @@ Pour les tournois, la recommandation standard est plus raide : **100+ buy-ins po
 |:---|:---:|:---|
 | Cash game | ==g:20-40 caves== | Variance plus faible, recave possible |
 | Petit sit & go (SNG) | 40-60 buy-ins | Plus de variance sur les gains |
-| MTT à gros champ | ==r:100+ buy-ins== | Les longues séries sans finir dans l'argent sont normales |
+| MTT à gros field | ==r:100+ buy-ins== | Les longues séries sans finir dans l'argent sont normales |
 
 </div>
 
@@ -286,9 +286,9 @@ C'est un point pratique que les débutants ratent souvent. Un buy-in de tournoi 
 
 ## Cash game ou tournoi pour débuter au poker : par quoi commencer ?
 
-Pour la plupart des débutants, ==g:**le cash game est la meilleure première salle de classe**==.
+Pour la plupart des débutants, ==g:**le cash game est la meilleure école pour commencer**==.
 
-Ce n'est pas parce que le cash game est facile. Il ne l'est pas. Mais ==il te donne des répétitions plus propres==. Les blindes restent les mêmes, les stacks sont souvent plus profonds, et tu peux vérifier si ton call, ta relance ou ta value bet avaient du sens ==r:sans devoir en plus démêler l'ICM, les paliers de gains et la pression des blindes==.
+Ce n'est pas parce que le cash game est facile. Il ne l'est pas. Mais ==il t'offre un apprentissage plus lisible==. Les blindes restent les mêmes, les stacks sont souvent plus profonds, et tu peux vérifier si ton call, ta relance ou ta value bet avaient du sens ==r:sans devoir en plus démêler l'ICM, les paliers de gains et la pression des blindes==.
 
 Le tournoi peut quand même être excellent pour un débutant si tu aimes la compétition et que tu supportes la variance. C'est excitant, structuré, et ça te donne un objectif clair : survivre et finir plus haut. Ne confonds simplement pas un long parcours avec la preuve que toute ta stratégie tient la route.
 
@@ -316,7 +316,7 @@ Si tu n'arrives toujours pas à choisir, utilise ce filtre rapide.
 | Tu aimes la pression, les classements et jouer pour une table finale | Tournoi |
 | Tu es prêt à étudier les tableaux push or fold et les spots ICM | Tournoi |
 
-Mon conseil par défaut pour un débutant sérieux est simple : joue du cash game en micro-limites pour les répétitions, puis ajoute de petits tournois pour l'expérience. Le cash game révèle tes fuites plus vite. Le tournoi t'apprend la pression, la patience et le contrôle de tes émotions. Ensemble, ils font de toi un joueur plus complet.
+Mon conseil par défaut pour un débutant sérieux est simple : joue du cash game en petites limites pour accumuler du volume, puis ajoute de petits tournois pour l'expérience. Le cash game révèle tes fuites plus vite. Le tournoi t'apprend la pression, la patience et le contrôle de tes émotions. Ensemble, ils font de toi un joueur plus complet.
 
 ### Le cash game te convient mieux si :
 
@@ -357,8 +357,8 @@ Si tu ne peux pas expliquer la structure, ne prends pas encore ta place. Demande
 ---
 
 :::readnext[À lire ensuite]
-/fr/blog/holdem-pot-odds | Comment calculer les pot odds | /images/holdem-pot-odds-hero.webp
-/fr/blog/holdem-probability | Probabilités au poker : le tableau des cotes | /images/holdem-probability-hero.webp
+/fr/blog/holdem-pot-odds | Cote du pot au poker : la méthode en 10 secondes (pot odds) | /images/holdem-pot-odds-hero.webp
+/fr/blog/holdem-probability | Tableau des probabilités au poker : les vraies cotes de chaque main | /images/holdem-probability-hero.webp
 :::
 
 ## FAQ
@@ -373,15 +373,15 @@ A. Il peut l'être, mais attends-toi d'abord à payer ton apprentissage. Les cas
 
 **Q. Un débutant doit-il commencer par le cash game ou le tournoi ?**
 
-A. La plupart des débutants devraient commencer par du cash game en micro-limites ou par de tout petits tournois. Si ton objectif est d'apprendre les fondamentaux vite, le cash game est plus propre. Si ton objectif est l'excitation et une compétition structurée, les petits tournois conviennent très bien, à condition de comprendre la variance.
+A. La plupart des débutants devraient commencer par du cash game en petites limites ou par de tout petits tournois. Si ton objectif est d'apprendre les fondamentaux vite, le cash game est plus formateur. Si ton objectif est l'excitation et une compétition structurée, les petits tournois conviennent très bien, à condition de comprendre la variance.
 
 **Q. L'ICM compte-t-il en cash game ?**
 
-A. Non. L'ICM s'applique aux tournois, parce que les jetons de tournoi ne sont pas de l'argent et que les gains dépendent de la place à l'arrivée. En cash game, les jetons sont déjà de l'argent, donc les décisions reposent plus directement sur les pot odds, l'équité, la position et les ranges adverses.
+A. Non. L'ICM s'applique aux tournois, parce que les jetons de tournoi ne sont pas de l'argent et que les gains dépendent de la place à l'arrivée. En cash game, les jetons sont déjà de l'argent, donc les décisions reposent plus directement sur les cotes du pot, l'équité, la position et les ranges adverses.
 
 **Q. Combien de caves faut-il en cash game et en tournoi ?**
 
-A. Une règle courante : 20-40 caves pour le cash game et 100+ buy-ins pour les tournois à gros champ, avec les formats plus petits comme les sit & go entre les deux, autour de 40-60. Le tournoi demande le plus gros coussin parce que les longues séries sans finir dans l'argent sont normales, même pour les joueurs gagnants.
+A. Une règle courante : 20-40 caves pour le cash game et 100+ buy-ins pour les tournois à gros field, avec les formats plus petits comme les sit & go entre les deux, autour de 40-60. Le tournoi demande le plus gros coussin parce que les longues séries sans finir dans l'argent sont normales, même pour les joueurs gagnants.
 
 **Q. Avec combien de big blinds commence-t-on en cash game et en tournoi ?**
 
@@ -397,11 +397,11 @@ A. Les deux — mais beaucoup de pros se spécialisent. Les spécialistes du cas
 
 **Q. Un tournoi re-entry, c'est en fait du cash game ?**
 
-A. Non. La réentrée (re-entry) te permet de racheter une place dans le tournoi après avoir été éliminé pendant une période donnée, mais les jetons ne sont toujours pas de l'argent. Les blindes montent toujours, les gains dépendent toujours de ta place à l'arrivée, et l'ICM compte toujours plus tard.
+A. Non. La réentrée (re-entry) te permet, pendant une période donnée, de racheter une place dans le tournoi si tu es éliminé, mais les jetons ne sont toujours pas de l'argent. Les blindes montent toujours, les gains dépendent toujours de ta place à l'arrivée, et l'ICM compte toujours plus tard.
 
 **Q. Peut-on quitter une table de cash game à tout moment ?**
 
-A. Oui, d'après les règles : en cash game, tu peux t'asseoir 30 minutes, jouer deux heures ou partir quand tu veux, y compris juste après un gros pot — aucune règle ne t'oblige à « rendre de l'action », même si jouer quelques mains de plus avant de ramasser tes jetons passe mieux qu'un hit and run immédiat. Deux règles de maison s'appliquent presque partout : pas de ratholing (retirer des jetons de la table tout en continuant à jouer), et si tu reviens peu après dans la même partie, tu dois en général te recaver au moins pour le montant avec lequel tu étais parti. En tournoi, c'est l'inverse : si tu t'en vas en cours de route, tes jetons restent sur la table et paient les blindes jusqu'à disparaître.
+A. Oui : en cash game, aucune règle ne t'oblige à rester, même juste après un gros pot. Deux limites existent presque partout : interdiction du ratholing, et obligation, si tu reviens vite à la même partie, de te recaver au moins à hauteur du stack avec lequel tu étais parti. En tournoi, au contraire, partir ne t'enlève pas ton stack : il reste en jeu et fond sous les blindes.
 
 ---
 
@@ -420,13 +420,13 @@ Maîtrise d'abord les fondamentaux du cash game, puis ajoute les tournois quand 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournois</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ? Buy-in, formats et Jour 1</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-in, niveaux de blindes, formats et checklist du Jour 1</div>
   </a>
   <a href="/fr/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Déroulement</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment jouer au Texas Hold'em : l'ordre du jeu</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Du préflop au showdown — le déroulement complet d'une main, étape par étape</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ordre du jeu au poker : qui parle en premier, des blindes au showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Du préflop à l'abattage — le déroulement complet d'une main, étape par étape</div>
   </a>
   <a href="/fr/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Combinaisons</div>
@@ -435,7 +435,7 @@ Maîtrise d'abord les fondamentaux du cash game, puis ajoute les tournois quand 
   </a>
   <a href="/fr/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blindes</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les blindes au poker : petite blinde et grosse blinde</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Qu'est-ce qu'une blinde au poker ? Petite blinde, grosse blinde et ante</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">SB, BB, vol de blindes et option — tout est expliqué</div>
   </a>
 </div>

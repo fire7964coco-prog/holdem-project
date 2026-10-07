@@ -66,7 +66,7 @@ Les grands événements live conservent en général 8–10 % du buy-in en frais
 
 En échange, tu reçois un **stack de départ** — souvent de 10 000 à 50 000 jetons de tournoi, soit en général 100–300 big blinds de profondeur au niveau 1.
 
-**Ton stack de départ n'a aucune valeur en argent.** Les jetons de tournoi ne sont pas de l'argent : un stack de 10 000 jetons ne vaut pas $10 000 — c'est simplement ta vie dans le tournoi. La seule chose qui compte, c'est d'avoir plus de jetons que les autres quand arrivent les places payées.
+**Ton stack de départ n'a aucune valeur en argent.** Un stack de 10 000 jetons ne vaut pas $10 000 — c'est simplement ta vie dans le tournoi. La seule chose qui compte, c'est d'avoir plus de jetons que les autres quand arrivent les places payées.
 
 Chaque tournoi publie sa structure dans une **feuille de structure** : stack de départ, niveaux de blindes, durée des niveaux, calendrier des antes et grille des gains. Demande-la à l'inscription — c'est le document le plus utile de toute la salle.
 
@@ -103,10 +103,10 @@ Tu découvres carrément les blindes ? Commence par [ce que sont vraiment la pet
 Tu as de la marge. Mains spéculatives, set-mining, voir des flops : tout ça reste raisonnable. La plupart des débutants jouent trop serré ici. Les blindes ne coûtent presque rien ; profites-en pour observer la table.
 
 ### Phase 2 — Le milieu de tournoi (30–60 BB)
-Les antes sont généralement en place. La pression sur les stacks commence. Les joueurs à short stack se mettent à faire tapis. C'est là que la majeure partie du field se fait éliminer.
+Les antes sont généralement en place. La pression sur les stacks commence. Les joueurs à short stack se mettent à faire tapis. C'est là que la majeure partie du field (l'ensemble des inscrits) se fait éliminer.
 
 ### Phase 3 — La bulle
-La phase la plus stressante. Encore une élimination et tous ceux qui restent **sont payés** (ITM = In The Money — dans l'argent). Les short stacks se figent. Les gros stacks martyrisent la table. Bien jouer ici peut te rapporter une vraie equity sans gagner un seul pot — [la bulle mérite son propre article](/fr/blog/holdem-bubble).
+La phase la plus stressante. Encore une élimination et tous ceux qui restent **sont payés** (ITM : In The Money — dans l'argent). Les short stacks se figent. Les gros stacks martyrisent la table. Bien jouer ici peut te rapporter une vraie équité sans gagner un seul pot — [la bulle mérite son propre article](/fr/blog/holdem-bubble).
 
 ### Phase 4 — La table finale
 Il reste en général 6–9 joueurs. Les gains augmentent fortement à chaque élimination. L'[ICM (Independent Chip Model)](/fr/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") gouverne les décisions à ce stade — la chip EV et l'EV en argent réel divergent nettement.
@@ -114,6 +114,8 @@ Il reste en général 6–9 joueurs. Les gains augmentent fortement à chaque é
 ---
 
 ## C'est quoi un MTT ? Freezeout, KO progressif (bounty), satellite, deepstack…
+
+**Un MTT (tournoi multi-tables) est le format de tournoi le plus courant : un gros field réparti sur de nombreuses tables.** Autour de lui gravitent plusieurs formats — freezeout, KO progressif, satellite, deepstack, turbo — qui changent le coût, la durée et la stratégie :
 
 | Format | Comment ça marche | Pour qui |
 |:---|:---|:---|
@@ -123,7 +125,7 @@ Il reste en général 6–9 joueurs. Les gains augmentent fortement à chaque é
 | **PKO (KO progressif)** | Les primes grossissent à chaque élimination — une partie te revient, une partie s'ajoute à ta propre tête | Joueurs prêts à la variance pour un gros potentiel |
 | **Deepstack** | Stack de départ bien au-dessus de l'événement standard de la même série, avec des niveaux plus lents | Joueurs qui veulent plus de jeu postflop |
 | **Satellite** | Le prix = une entrée dans un plus gros tournoi, pas de l'argent | Petits budgets qui visent les grands événements |
-| **Turbo / Hyper-Turbo** | Des niveaux de blindes bien plus courts que l'événement standard, donc les stacks deviennent courts très vite et le push or fold arrive tôt | Sessions courtes — joueurs à l'aise avec le shove ou fold |
+| **Turbo / Hyper-Turbo** | Des niveaux de blindes bien plus courts que l'événement standard, donc les stacks deviennent courts très vite et le push or fold arrive tôt | Sessions courtes — joueurs à l'aise avec le push or fold |
 | **Mystery Bounty** | Un tournoi à primes où chaque élimination (en général à partir d'une phase donnée de l'événement) tire un prix au hasard — la plupart sont petits, quelques-uns sont des jackpots | Joueurs qui courent après un gros gain |
 | **MTT** | Tournoi multi-tables (Multi-Table Tournament) — un gros field réparti sur de nombreuses tables | Tout le monde — le format le plus courant |
 | **SNG (sit & go)** | Démarre dès que les places sont remplies (pas d'heure fixe) — en général 6–9 joueurs | Partie rapide, pas besoin de planning |
@@ -195,7 +197,7 @@ La plupart des grands festivals live te permettent de t'inscrire en ligne à l'a
 
 Un seul article ne peut pas enseigner toute la stratégie de tournoi — c'est le rôle des articles de la série — mais voici le squelette, phase par phase, sur lequel repose tout plan gagnant :
 
-**Premiers niveaux (100BB+) :** joue un poker serré et attentif à ta position, et vois des flops bon marché avec des mains capables de casser les grosses paires. Un [tableau des mains de départ](/fr/blog/holdem-starting-hands-chart) appliqué avec discipline évite la plupart des catastrophes de débutant. Ne brûle pas ton stack en bluff pendant la première heure — personne ne se couche au niveau 1.
+**Premiers niveaux (100BB+) :** joue un poker serré et attentif à ta position, et vois des flops bon marché avec des mains capables de casser les grosses paires. Savoir [quelles mains de départ jouer](/fr/blog/holdem-starting-hands-chart), et s'y tenir avec discipline, évite la plupart des catastrophes de débutant. Ne brûle pas ton stack en bluff pendant la première heure — personne ne se couche au niveau 1.
 
 **Milieu de tournoi (30–60BB) :** avec les antes, chaque pot vaut la peine d'être disputé. Ouvre plus large en position tardive, vole les blindes, défends ta grosse blinde plus souvent, et commence à repérer qui est short stack à ta table.
 
@@ -247,19 +249,21 @@ C'est la partie que la plupart des débutants n'apprennent qu'à leurs dépens. 
 
 ## Que signifie être ITM au poker ? Structure des gains et paliers
 
+**Être ITM (In The Money — dans l'argent), c'est atteindre une place payée : ton gain est garanti, quel que soit ton classement final.**
+
 **Structure typique :** les 10–15 % du field les mieux classés sont payés.
 
 | Taille du field | Joueurs payés | Min-cash (typique) | 1re place (typique) |
 |:---|:---:|:---:|:---|
-| 100 | ~13 | 1,5–2x le buy-in | 25–30 % du prize pool |
-| 500 | ~60 | 1,5–2x le buy-in | 20–25 % du prize pool |
-| 2 000 | ~250 | 1,7–2,2x le buy-in | 13–18 % du prize pool |
-| 10 000 | ~1 200 | 1,5–2x le buy-in | 8–12 % du prize pool |
+| 100 | ~13 | 1,5–2× le buy-in | 25–30 % du prize pool |
+| 500 | ~60 | 1,5–2× le buy-in | 20–25 % du prize pool |
+| 2 000 | ~250 | 1,7–2,2× le buy-in | 13–18 % du prize pool |
+| 10 000 | ~1 200 | 1,5–2× le buy-in | 8–12 % du prize pool |
 
 **Exemple réel (WPT Seminole Rock 'N' Roll Poker Open Championship 2024, buy-in de $3 500, 1 435 entrées) :**
 - Prize pool : $4 592 000 ($3 200 de chaque buy-in vont dans la cagnotte — le reste, ce sont les frais)
 - Joueurs payés : 180 (~12,5 % du field)
-- Min-cash : environ 1,83x le buy-in
+- Min-cash : environ 1,83× le buy-in
 - 1re place : $662 200 (~14 % du prize pool)
 
 La grille des gains peut se consulter avant le début du tournoi, mais le nombre final de places payées et les montants exacts ne sont souvent confirmés qu'après la clôture des inscriptions, des recaves et des add-ons. Demande la **feuille de structure** à l'inscription — elle liste les niveaux de blindes, les antes, le stack de départ et la grille des gains.
@@ -268,7 +272,7 @@ La grille des gains peut se consulter avant le début du tournoi, mais le nombre
 
 ## Les mots du tournoi que tu entendras dès le Jour 1
 
-Ces 16 termes couvrent l'essentiel de ce que tu entendras à table. Pour tout le vocabulaire de A à Z, consulte le [lexique du poker](/fr/blog/holdem-glossary).
+Ces 16 termes couvrent l'essentiel de ce que tu entendras à table. Pour tout le vocabulaire de A à Z, consulte le [jargon du poker](/fr/blog/holdem-glossary).
 
 | Terme | Ce que ça veut dire |
 |------|--------------|
@@ -278,7 +282,7 @@ Ces 16 termes couvrent l'essentiel de ce que tu entendras à table. Pour tout le
 | **Feuille de structure** | Le document officiel qui liste les niveaux de blindes, les antes et la grille des gains |
 | **Chip leader** | Le joueur qui a le plus de jetons |
 | **Short stack** | Un joueur qui a très peu de jetons par rapport aux blindes |
-| **Shove / faire tapis** | Partir à tapis (pousser tout ton stack au milieu) |
+| **Shove / jam / faire tapis** | Partir à tapis (pousser tout ton stack au milieu) |
 | **Late reg** | La fenêtre d'inscription tardive — tu peux entrer après le début du tournoi |
 | **Réentrée (re-entry)** | Racheter une entrée après avoir été éliminé (uniquement pendant la late reg) |
 | **Satellite** | Un tournoi qualificatif dont le prix est une place dans un plus gros événement |
@@ -300,7 +304,7 @@ Ces 16 termes couvrent l'essentiel de ce que tu entendras à table. Pour tout le
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Le buy-in + 20 % de marge</strong> en espèces — certains établissements n'acceptent pas la carte</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Carte de fidélité du casino</strong> si elle est exigée (par exemple Caesars Rewards pour les WSOP)</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>L'e-mail de confirmation d'inscription</strong> si tu t'es inscrit en ligne à l'avance</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Des vêtements confortables — un tournoi dure 6–12 heures. Prends une veste (les salles de cartes sont froides).</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Des vêtements confortables — un tournoi dure 6–12 heures. Prends une veste (les salles de poker sont souvent climatisées).</span></div>
 </div>
 
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">Sur place</div>
@@ -315,9 +319,9 @@ Ces 16 termes couvrent l'essentiel de ce que tu entendras à table. Pour tout le
 ---
 
 :::readnext[À lire ensuite]
-/fr/blog/holdem-tournament-vs-cash-game | Cash game ou tournoi : quelle différence ? | /images/tournament-table-action.webp
-/fr/blog/holdem-bubble | Comment jouer la bulle au poker ? | /images/holdem-bubble-hero.webp
-/fr/blog/holdem-icm | ICM au poker : l'Independent Chip Model expliqué | /images/holdem-icm-hero.webp
+/fr/blog/holdem-tournament-vs-cash-game | Cash game ou tournoi au poker : quelle différence, lequel choisir ? | /images/tournament-table-action.webp
+/fr/blog/holdem-bubble | Comment jouer la bulle au poker ? Gros stack, stack moyen et short stack | /images/holdem-bubble-hero.webp
+/fr/blog/holdem-icm | ICM au poker : l'Independent Chip Model expliqué, avec l'exemple à la main | /images/holdem-icm-hero.webp
 :::
 
 ## FAQ
@@ -340,11 +344,11 @@ A. La salle prélève des frais en plus de chaque buy-in — la partie « +$9 »
 
 **Q. Quel est le prix d'entrée pour un tournoi de poker ?**
 
-A. Tu paies un buy-in fixe, souvent écrit en deux parties : pour un buy-in de $109 noté « $100+$9 », $100 vont dans le prize pool partagé entre tous les inscrits et $9 sont les frais conservés par la salle. Les grands événements live prennent en général 8–10 % du buy-in en frais, et les petits tournois quotidiens souvent davantage. En échange, tu reçois un stack de départ — mais les jetons de tournoi ne sont pas de l'argent : ils n'ont aucune valeur en espèces.
+A. Tu paies un buy-in fixe, souvent noté en deux parties : sur un buy-in de $109 écrit « $100+$9 », $100 alimentent le prize pool partagé entre tous les inscrits et $9 reviennent à la salle (sur les grands événements live, ces frais tournent autour de 8–10 %). En échange, tu reçois un stack de départ, qui n'a aucune valeur en espèces.
 
 **Q. Que veut dire ITM au poker ?**
 
-A. ITM = « In The Money », dans l'argent. Tu as atteint une place qui te garantit un gain. Dans un tournoi de 200 joueurs qui paie 25 places, tu es ITM dès que 175 joueurs ont été éliminés et qu'il n'en reste que 25. Ton min-cash représente en général 1,5–2x ton buy-in.
+A. ITM = « In The Money », dans l'argent. Tu as atteint une place qui te garantit un gain. Dans un tournoi de 200 joueurs qui paie 25 places, tu es ITM dès que 175 joueurs ont été éliminés et qu'il n'en reste que 25. Ton min-cash représente en général 1,5–2× ton buy-in.
 
 **Q. Peut-on rejoindre un tournoi de poker déjà commencé ?**
 
@@ -369,27 +373,27 @@ A. MTT veut dire « Multi-Table Tournament », un tournoi multi-tables : un gros
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Analyse</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cash game ou tournoi : quelle différence ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cash game ou tournoi au poker : quelle différence, lequel choisir ?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Valeur des jetons, blindes qui montent, ICM — quel format te correspond</div>
   </a>
   <a href="/fr/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Stratégie</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tableau des mains de départ</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mains de départ au poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quelles mains jouer dans les premiers niveaux</div>
   </a>
   <a href="/fr/blog/holdem-short-stack" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Short stack</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment jouer un short stack au poker ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment jouer un short stack au poker ? Stratégie tournoi à 15, 10 et 5 BB</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le push or fold quand les blindes se resserrent</div>
   </a>
   <a href="/fr/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pour commencer</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment jouer au Texas Hold'em quand on débute</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles du poker Texas Hold'em pour débutants : comment jouer pas à pas</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Maîtrise d'abord les bases</div>
   </a>
   <a href="/fr/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blindes</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les blindes au poker : petite blinde et grosse blinde</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Qu'est-ce qu'une blinde au poker ? Petite blinde, grosse blinde et ante</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les niveaux de blindes commencent ici — SB, BB et antes</div>
   </a>
   <a href="/fr/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

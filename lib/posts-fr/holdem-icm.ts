@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Jetons de poker empilés en table finale devant une échelle des gains, montrant qu'un plus gros stack ne se convertit pas un pour un en une plus grosse part du prize pool",
   tags: ["icm poker", "icm au poker", "icm poker définition", "icm poker signification", "independent chip model", "icm vs chip ev", "deal icm", "chip chop poker", "risk premium poker"],
   content: `
-La première fois que l'ICM m'a coûté de l'argent, je ne savais même pas que ça existait. On était quatre, trois places payées, et je découvre une paire de valets avec un stack dans la moyenne. Je fais tapis, le chip leader paie avec as-dix, et j'ai fait la bulle pour rien. ==Pendant des années, j'ai rangé ce coup comme la preuve que mon shove était une erreur. Ce n'en était pas une== — je ne savais simplement pas *où* la bulle te fait vraiment payer, et c'est sans doute l'idée la plus importante de tout le poker de tournoi.
+La première fois que l'ICM m'a coûté de l'argent, je ne savais même pas que ça existait. On était quatre, trois places payées, et j'ai découvert une paire de valets avec un stack dans la moyenne. J'ai fait tapis, le chip leader a payé avec as-dix, et j'ai fait la bulle pour rien. ==Pendant des années, j'ai rangé ce coup comme la preuve que mon shove était une erreur. Ce n'en était pas une== — je ne savais simplement pas *où* la bulle te fait vraiment payer, et c'est sans doute l'idée la plus importante de tout le poker de tournoi.
 
 ==Les jetons de tournoi ne sont pas de l'argent. Tu ne gagnes jamais qu'*une seule* première place, donc doubler ton stack ne double jamais ce que tu vaux réellement.== L'ICM (Independent Chip Model) est le calcul qui transforme ta pile de jetons en dollars réels, et une fois que tu l'as vu, des calls et des folds qui te semblaient absurdes deviennent logiques. Cet article t'emmène de « que veut dire ICM » jusqu'au partage d'un deal en table finale, avec chaque chiffre calculé pour que tu puisses le vérifier toi-même.
 
@@ -49,7 +49,7 @@ Le déclic à avoir : en cash game, un jeton vaut un dollar, point. En tournoi, 
 
 **Parce que le prize pool (la cagnotte) est réparti sur plusieurs places et que ce qui est en dessous de toi est déjà acquis, doubler tes jetons ne double pas ton équité en argent.** Imagine trois prix de $50 / $30 / $20. Dès que tu es dans l'argent, tu as au moins $20 garantis — les jetons qui protègent ces $20 sont donc précieux, tandis que ceux qui visent la première place courent après un prix que tu ne peux gagner qu'une fois.
 
-La courbe qui relie jetons et argent se ==courbe== donc : les premiers jetons (la survie) valent beaucoup, les derniers (ceux qui vont chercher la victoire) valent moins. Un joueur qui a la moitié des jetons ne possède pas la moitié du prize pool — il en possède nettement moins, parce qu'il ne peut pas finir mieux que premier mais qu'il *peut* encore sauter.
+La relation entre jetons et argent n'est donc pas linéaire, elle se ==courbe== : les premiers jetons (la survie) valent beaucoup, les derniers (ceux qui vont chercher la victoire) valent moins. Un joueur qui a la moitié des jetons ne possède pas la moitié du prize pool — il en possède nettement moins, parce qu'il ne peut pas finir mieux que premier mais qu'il *peut* encore sauter.
 
 Retourne la situation et c'est le short stack qui gagne à ce calcul. Il a déjà un vrai droit sur les paliers de gains (pay jumps) situés sous lui, donc ==chacun de ses jetons vaut plus que sa valeur faciale==. Cette seule asymétrie — le gros stack surévalué en jetons, le short stack sous-évalué — guide toutes les décisions ICM que tu prendras.
 
@@ -97,11 +97,11 @@ Le voilà en chiffres : le leader a ==la moitié des jetons mais seulement 38,4 
 
 ## ICM ou chip EV (cEV vs $EV) : quelle différence ?
 
-**Le chip EV (cEV) mesure une décision en jetons gagnés ou perdus ; l'ICM (ou « $EV ») la mesure en argent réel. Les deux concordent en début de tournoi et divergent fortement à la fin.** Au début, quand les petits paliers de gains sont encore loin, un jeton est à peu près un jeton — tu joues en [chip EV](/fr/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") et tu accumules sans relâche. À l'approche de l'argent et de la table finale, l'ICM prend le relais.
+**La chip EV (cEV) mesure une décision en jetons gagnés ou perdus ; l'ICM (ou « $EV ») la mesure en argent réel. Les deux concordent en début de tournoi et divergent fortement à la fin.** Au début, quand les petits paliers de gains sont encore loin, un jeton est à peu près un jeton — tu joues en [chip EV](/fr/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") et tu accumules sans relâche. À l'approche de l'argent et de la table finale, l'ICM prend le relais.
 
 Le conflit classique, c'est le *call* d'un all-in marginal. En chip EV, un pile ou face pour un gros pot peut être correct, voire bon — tu gagnes autant de jetons que tu en perds. En ICM, ça peut être un ==fold== évident, car sauter te coûte ton équité sur chaque prix au-dessus de celui que tu as déjà sécurisé (le minimum garanti lui-même reste à toi ; sur la bulle, où rien n'est encore acquis, ça te coûte tout), alors que les jetons que tu gagnerais valent moins que leur valeur faciale.
 
-C'est là que j'avais tout compris à l'envers avec ces valets. La taxe s'applique au *call*, et c'est son reflet qui rend la bulle jouable : comme la range de call de tout le monde se resserre, ta fold equity vaut **plus** que ce qu'elle vaut en jetons. Le shove first-in (premier à entrer dans le coup) est l'arme du stack moyen sur la bulle, pas sa fuite — je suis tombé sur le seul joueur qui pouvait payer le plus large, et ça, c'est de la variance, pas une erreur de stratégie. ==Le chip EV demande « est-ce que ça fait grossir mon stack ? » L'ICM demande « est-ce que ça fait grossir ma bankroll ? »== — et seul le second paie.
+C'est là que j'avais tout compris à l'envers avec ces valets. La taxe s'applique au *call*, et c'est son reflet qui rend la bulle jouable : comme la range de call de tout le monde se resserre, ta fold equity vaut **plus** que ce qu'elle vaut en jetons. Le shove first-in (premier à entrer dans le coup) est l'arme du stack moyen sur la bulle, pas sa fuite — je suis tombé sur le seul joueur qui pouvait payer le plus large, et ça, c'est de la variance, pas une erreur de stratégie. ==La chip EV demande « est-ce que ça fait grossir mon stack ? » L'ICM demande « est-ce que ça fait grossir ma bankroll ? »== — et seul le second paie.
 
 ---
 
@@ -123,7 +123,7 @@ Le joueur qui le ressent le plus, c'est le **stack moyen sur la bulle** — asse
 
 Deux règles pratiques en découlent :
 
-- **Gros stack : attaque.** Ta faible prime de risque te permet d'[ouvrir et de 3-bet](/fr/blog/holdem-3bet) sans relâche contre des joueurs qui ne peuvent pas payer sans mettre leur tournoi en jeu. C'est ce qu'on appelle « mettre la pression ICM », et c'est le moyen le plus fiable de gagner des jetons en table finale.
+- **Gros stack : attaque.** Ta faible prime de risque te permet d'[ouvrir et de 3-better](/fr/blog/holdem-3bet) sans relâche contre des joueurs qui ne peuvent pas payer sans mettre leur tournoi en jeu. C'est ce qu'on appelle « mettre la pression ICM », et c'est le moyen le plus fiable de gagner des jetons en table finale.
 - **Stacks moyens et short stacks : resserre ta range de call, mais continue à shover en premier.** Être celui qui fait tapis (avec de la fold equity) vaut bien mieux qu'être celui qui doit payer pour tout son stack. Sous pression, ta range de call doit fondre pendant que ta range d'open-shove reste agressive.
 
 La place cauchemardesque, c'est le stack moyen qui subit un shove — il jette des mains aussi fortes que certaines qu'il paierait sans hésiter en cash game. Ce n'est pas de la faiblesse ; c'est l'ICM.
@@ -158,7 +158,7 @@ Le short stack touche ==$97 de plus== avec un deal ICM qu'avec un chip chop, par
 - **La bulle de la table finale et chaque palier de gains en table finale** — chaque marche de l'échelle, c'est de l'argent réel.
 - **Les satellites** — le cas extrême : dans un satellite à plusieurs places, chaque place qualificative vaut la même chose, donc dès que tu as assez de jetons pour gagner une place, les jetons supplémentaires ne valent presque *rien* et tu te couches sur presque tout (un satellite où le gagnant rafle tout se joue pour la première place, en chip EV).
 
-Appuie-toi sur le chip EV comme approximation suffisante quand :
+Appuie-toi sur la chip EV comme approximation suffisante quand :
 
 - **Début et milieu de tournoi**, quand le prochain palier de gains est une abstraction lointaine et que c'est l'accumulation de jetons qui fait gagner les tournois.
 - **Jeu en deep stack avec des blindes minuscules**, quand tu as la marge pour surclasser tes adversaires plutôt que de tout mettre au milieu.
@@ -176,13 +176,13 @@ Une fuite courante consiste à trop appliquer l'ICM : se coucher jusqu'à deveni
 - **La position.** Un stack de 3 big blinds au bouton (encore libre de choisir son spot et de faire tapis en open avec toute sa fold equity depuis la meilleure place) vaut plus que le même stack en grosse blinde (un tiers déjà posé, forcé à tapis dans la main ou les deux suivantes). L'ICM ne voit pas les places.
 - **Les blindes et la suite du jeu.** L'ICM fige le tournoi à cet instant ; il ignore la montée des blindes, les antes et la façon dont les prochaines orbites vont réellement se dérouler.
 
-Il y a même une confirmation empirique de cet angle mort : une vaste étude de 2025 qui a confronté l'ICM à de vrais résultats de tournois a montré qu'il a tendance à ==sous-estimer les gros stacks et surestimer les short stacks==, en partie parce qu'un chip leader compétent peut exploiter la pression ICM pour gagner *plus* que ce que prédit le modèle brut. Les solveurs avancés ajoutent une correction « future game » précisément pour cette raison. Rien de tout cela ne rend l'ICM faux — cela en fait une solide première approximation que tu ajustes selon le niveau et la position, pas une loi de la physique.
+Il y a même une confirmation empirique de cet angle mort : une vaste étude de 2025 qui a confronté l'ICM à de vrais résultats de tournois a montré qu'il a tendance à ==sous-estimer les gros stacks et surestimer les short stacks==, en partie parce qu'un chip leader compétent peut exploiter la pression ICM pour gagner *plus* que ce que prédit le modèle brut. Les solvers avancés ajoutent une correction « future game » précisément pour cette raison. Rien de tout cela ne rend l'ICM faux — cela en fait une solide première approximation que tu ajustes selon le niveau et la position, pas une loi de la physique.
 
 ---
 
 :::readnext[À lire ensuite]
 /fr/blog/holdem-tournament | Comment fonctionne un tournoi de poker ? Buy-in, formats et Jour 1 | /images/holdem-tournament-hero.webp
-/fr/blog/holdem-equity | L'équité au poker expliquée | /images/holdem-equity-hero.webp
+/fr/blog/holdem-equity | Équité au poker (equity) : ton % de victoire, la fold equity et l'EV | /images/holdem-equity-hero.webp
 :::
 
 ## FAQ
@@ -195,9 +195,9 @@ A. L'ICM (l'Independent Chip Model) est une formule qui convertit ton stack de t
 
 A. Il attribue à chaque joueur une probabilité de finir à chaque place payée selon sa part des jetons (ta probabilité de finir premier = ton stack ÷ total des jetons, puis de façon récursive pour les places inférieures), puis multiplie ces probabilités par les gains. La somme donne la valeur en dollars de ton stack. En pratique, tu utilises un calculateur ICM ; l'important est de comprendre ce qu'il fait.
 
-**Q. Quelle est la différence entre l'ICM et le chip EV ?**
+**Q. Quelle est la différence entre l'ICM et la chip EV ?**
 
-A. Le chip EV mesure une décision en jetons gagnés ou perdus ; l'ICM la mesure en argent réel. Les deux concordent en début de tournoi et divergent à l'approche de l'argent. Sur la bulle, sauter te coûte toute ta chance de finir dans l'argent ; une fois dans les places payées, ça te coûte tout ce qui dépasse le gain que tu as déjà sécurisé. Un all-in à pile ou face, correct en chip EV, peut être un fold évident en ICM.
+A. La chip EV mesure une décision en jetons gagnés ou perdus ; l'ICM la mesure en argent réel. Les deux concordent en début de tournoi et divergent à l'approche de l'argent. Sur la bulle, sauter te coûte toute ta chance de finir dans l'argent ; une fois dans les places payées, ça te coûte tout ce qui dépasse le gain que tu as déjà sécurisé. Un all-in à pile ou face, correct en chip EV, peut être un fold évident en ICM.
 
 **Q. C'est quoi un deal ICM, et en quoi diffère-t-il d'un chip chop ?**
 
@@ -209,7 +209,7 @@ A. Non. En cash game, chaque jeton vaut déjà sa valeur faciale en dollars et t
 
 **Q. Quand faut-il ignorer l'ICM ?**
 
-A. Tu ne le débranches jamais complètement, mais son effet est assez faible pour utiliser le chip EV comme approximation en début et en milieu de tournoi, ainsi qu'en deep stack avec de petites blindes — des spots où les paliers de gains sont loin. En heads-up pour le titre, il ne reste que deux prix, donc l'écart entre la première et la deuxième place peut se juger en chip EV. Même dans ces cas, vérifie la structure des gains et la répartition des stacks.
+A. Tu ne le débranches jamais complètement, mais son effet est assez faible pour utiliser la chip EV comme approximation en début et en milieu de tournoi, ainsi qu'en deep stack avec de petites blindes — des spots où les paliers de gains sont loin. En heads-up pour le titre, il ne reste que deux prix, donc l'écart entre la première et la deuxième place peut se juger en chip EV. Même dans ces cas, vérifie la structure des gains et la répartition des stacks.
 
 **Q. Quelles sont les erreurs ICM les plus fréquentes ?**
 
@@ -224,10 +224,10 @@ A. Le calcul des probabilités d'arrivée est généralement attribué à David 
 ## À retenir
 
 1. **Les jetons ne sont pas de l'argent.** Tu ne gagnes qu'une seule première place, donc le chip leader vaut moins que sa part de jetons et le short stack vaut plus. Cet écart, c'est tout l'ICM.
-2. **En fin de tournoi, passe du chip EV au $EV.** Près des paliers de gains, un call exige une équité supplémentaire (une prime de risque) pour être rentable. Le stack moyen se couche avec des mains qu'il paierait sans hésiter en cash game.
-3. **Connais ton chiffre avant de dealer.** Les short stacks veulent un deal ICM, les gros stacks un chip chop — passe d'abord par le [calculateur ICM](/fr/calculator).
+2. **En fin de tournoi, passe de la chip EV au $EV.** Près des paliers de gains, un call exige une équité supplémentaire (une prime de risque) pour être rentable. Le stack moyen se couche avec des mains qu'il paierait sans hésiter en cash game.
+3. **Connais ton chiffre avant de conclure un deal.** Les short stacks veulent un deal ICM, les gros stacks un chip chop — passe d'abord par le [calculateur ICM](/fr/calculator).
 
-À partir d'ici, vois comment la pression ICM s'intègre dans la [stratégie de tournoi](/fr/blog/holdem-tournament) plus large, ou reviens aux bases avec [l'équité au poker](/fr/blog/holdem-equity) et [les pot odds](/fr/blog/holdem-pot-odds).
+À partir d'ici, vois comment la pression ICM s'intègre dans la [stratégie de tournoi](/fr/blog/holdem-tournament) plus large, ou reviens aux bases avec [l'équité au poker](/fr/blog/holdem-equity) et [la cote du pot (pot odds)](/fr/blog/holdem-pot-odds).
 
 ---
 
@@ -236,18 +236,18 @@ A. Le calcul des probabilités d'arrivée est généralement attribué à David 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournoi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ? Buy-in, formats et Jour 1</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le pilier auquel appartient l'ICM</div>
   </a>
   <a href="/fr/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournoi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cash game ou tournoi au poker : quelle différence ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cash game ou tournoi au poker : quelle différence, lequel choisir ?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pourquoi l'ICM ne s'applique jamais au cash game</div>
   </a>
   <a href="/fr/blog/holdem-equity" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Stratégie</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">L'équité au poker expliquée</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le chip EV, c'est l'équité en jetons</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Équité au poker (equity) : ton % de victoire, la fold equity et l'EV</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La chip EV, c'est l'équité en jetons</div>
   </a>
   <a href="/fr/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Outil gratuit</div>

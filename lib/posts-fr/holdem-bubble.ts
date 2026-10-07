@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Un petit stack de jetons face à un gros stack imposant sur une table de tournoi, sur la bulle des places payées, avec une échelle de gains en arrière-plan — le moment où survivre vaut plus que les jetons",
   tags: ["bulle poker", "faire la bulle poker", "bulle tournoi poker", "bubble poker", "stratégie bulle poker", "bubble factor poker", "bubble boy poker", "main par main poker", "bulle satellite poker"],
   content: `
-La fois où j'ai joué le plus discipliné de ma vie, c'était à trois joueurs de l'argent dans un tournoi du vendredi : tout le monde se couchait comme si les cartes brûlaient les doigts. J'avais un stack moyen et j'ai open-fold as-valet deux fois — des mains que je relance à chaque fois en cash game. Deux orbites plus tard, le short stack a sauté, je me suis traîné jusqu'au min-cash… et j'ai fini 14e pour un gain à peine supérieur à mon buy-in. ==J'ai « survécu » jusqu'à passer à côté du vrai argent.== Toute la bulle tient dans cette histoire : joue-la trop peureux et tu sécurises des miettes ; joue-la bien et c'est là que les tournois se gagnent vraiment.
+La fois où j'ai joué le plus discipliné de ma vie, c'était à trois joueurs de l'argent dans un tournoi du vendredi : tout le monde se couchait comme si les cartes brûlaient les doigts. J'avais un stack moyen et je me suis couché d'entrée deux fois avec as-valet — des mains que je relance à chaque fois en cash game. Deux orbites plus tard, le short stack a sauté, je me suis traîné jusqu'au min-cash… et j'ai fini 14e pour un gain à peine supérieur à mon buy-in. ==J'ai « survécu » jusqu'à passer à côté du vrai argent.== Toute la bulle tient dans cette histoire : joue-la trop peureux et tu sécurises des miettes ; joue-la bien et c'est là que les tournois se gagnent vraiment.
 
 ==Sur la bulle, une élimination de plus fait entrer tous les autres dans l'argent — alors, le temps de quelques mains décisives, rester en vie vaut plus que les jetons que tu pourrais gagner.== Ce seul fait met le poker normal la tête en bas, et presque tout le monde se trompe des deux mêmes façons : les gros stacks n'attaquent pas assez, et les stacks moyens payent beaucoup trop. Cet article, c'est le plan de jeu stack par stack — quoi faire avec un gros stack, un stack moyen ou un short stack, sur les trois bulles différentes que tu vas rencontrer.
 
@@ -75,11 +75,11 @@ Garde cette distinction en tête, car les conseils stack par stack qui suivent c
 
 **Attaque sans relâche — tu as le risk premium (prime de risque) le plus bas de la table et tous les autres doivent respecter tes jetons.** Le gros stack est celui qui profite le plus de la bulle. Tu peux éliminer n'importe qui ; personne ne peut t'éliminer. Alors mets la pression :
 
-- **Ouvre large et [3-bet](/fr/blog/holdem-3bet) léger**, surtout contre les stacks moyens à ta droite, qui ne peuvent pas payer sans risquer leur tournoi.
+- **Ouvre large et fais des [3-bets](/fr/blog/holdem-3bet) légers**, surtout contre les stacks moyens à ta droite, qui ne peuvent pas payer sans risquer leur tournoi.
 - **Vise les stacks moyens, pas les plus courts.** C'est la nuance clé : les short stacks sont plus enclins à te payer (ils ont moins à perdre), et en doubler un est une catastrophe. Malmène les joueurs qui ont ==le plus peur de sauter== — les stacks moyens.
 - **Ne t'emballe pas.** Mettre la pression, c'est voler les blindes et te coucher face à la résistance, pas balancer ton stack dans des calls. Si un stack moyen serré finit par faire tapis, respecte-le.
 
-Bien joué, un gros stack peut empiler les jetons sur la bulle sans jamais aller à l'abattage.
+Bien joué, un gros stack peut empiler les jetons sur la bulle sans jamais aller à l'abattage (showdown).
 
 ---
 
@@ -89,7 +89,7 @@ Bien joué, un gros stack peut empiler les jetons sur la bulle sans jamais aller
 
 Ton plan de jeu :
 
-- **Resserre ta range de call plus que n'importe qui.** C'est toi qui as le plus à perdre en payant à tapis et en sautant. Couche des mains que tu paierais volontiers en cash game — même des mains aussi fortes que certaines paires et de gros as face au shove d'un stack plus gros.
+- **Resserre ta range de call plus que n'importe qui.** C'est toi qui as le plus à perdre en payant un tapis et en sautant. Couche des mains que tu paierais volontiers en cash game — même des mains aussi fortes que certaines paires et de gros as face au shove d'un stack plus gros.
 - **Continue à voler les stacks plus petits que toi.** Coincé pour payer ne veut pas dire passif. Ouvre et mets la pression sur les stacks plus courts ; évite juste de t'accrocher avec les gros stacks à ta gauche.
 - **Garde l'œil sur les paliers, sans avoir peur.** Tu navigues vers l'argent, mais ne te couche pas jusqu'à devenir short stack et te faire manger par les blindes — ce serait échanger un piège contre un pire.
 
@@ -99,9 +99,9 @@ Si tu sens l'étau se resserrer sur la bulle, tu es probablement un stack moyen.
 
 ## Comment jouer un SHORT stack sur la bulle ?
 
-**Fais tapis ou couche-toi — ne limpe jamais et ne paye jamais à tapis — et profite du fait que ton bubble factor est en réalité plus bas que celui du stack moyen.** Comme tu risques déjà fort de sauter, doubler t'aide énormément, donc tu es plus libre de prendre des risques que les stacks moyens coincés. Mais tu prends ce risque en ==étant celui qui shove==, pas celui qui paye — le [plan push or fold du short stack](/fr/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") détaille la mécanique :
+**Fais tapis ou couche-toi — ne limpe jamais et ne paye jamais pour tout ton stack — et profite du fait que ton bubble factor est en réalité plus bas que celui du stack moyen.** Comme tu risques déjà fort de sauter, doubler t'aide énormément, donc tu es plus libre de prendre des risques que les stacks moyens coincés. Mais tu prends ce risque en ==étant celui qui shove==, pas celui qui paye — le [plan push or fold du short stack](/fr/blog/holdem-short-stack "thumb:/images/holdem-short-stack-hero.webp") détaille la mécanique :
 
-- **Shove ou fold.** L'agression en first-in (premier à entrer dans le coup) préserve ta [fold equity](/fr/blog/holdem-when-to-fold), ton arme la plus précieuse. Open-limper ou payer en flat avec un short stack la jette par la fenêtre.
+- **Shove ou fold.** L'agression en first-in (premier à entrer dans le coup) préserve ta [fold equity](/fr/blog/holdem-when-to-fold), ton arme la plus précieuse. Open-limper ou te contenter de suivre (flat call) avec un short stack la jette par la fenêtre.
 - **Attends s'il y a des stacks plus courts que toi.** Si deux joueurs sont plus courts, tu peux coucher les mains limites et les laisser sauter d'abord — tu grimpes les paliers gratuitement. Si c'est *toi* le plus court, tu ne peux pas te permettre d'attendre : trouve un spot et fais tapis avant que les blindes ne te mangent.
 - **Ne te resserre pas jusqu'à disparaître.** Te coucher jusqu'à deux big blinds « pour survivre », c'est justement comme ça qu'on finit bubble boy. Choisis une range de shove raisonnable et engage-toi.
 
@@ -164,7 +164,7 @@ Les joueurs qui gagnent des tournois voient la bulle comme une ==occasion d'accu
 ---
 
 :::readnext[À lire ensuite]
-/fr/blog/holdem-icm | ICM au poker : l'Independent Chip Model expliqué | /images/holdem-icm-hero.webp
+/fr/blog/holdem-icm | ICM au poker : l'Independent Chip Model expliqué, avec l'exemple à la main | /images/holdem-icm-hero.webp
 /fr/blog/holdem-when-to-fold | Quand se coucher au poker | /images/holdem-when-to-fold-hero.webp
 :::
 
@@ -184,7 +184,7 @@ A. Faire la bulle, c'est sauter à la dernière place non payée, juste avant l'
 
 **Q. Quelle différence entre une bulle stone et une bulle soft ?**
 
-A. Une bulle stone (ou hard bubble) correspond au cas où une seule élimination fait entrer tous les joueurs restants dans l'argent en même temps. Une soft bubble est plus floue — une série de quelques éliminations près de l'argent plutôt qu'une place précise. La bulle stone crée la pression la plus extrême, car une seule élimination paye tous ceux qui restent.
+A. Une bulle stone (ou hard bubble) correspond au cas où une seule élimination fait entrer tous les joueurs restants dans l'argent en même temps. Une bulle soft (soft bubble) est plus floue — une série de quelques éliminations près de l'argent plutôt qu'une place précise. La bulle stone crée la pression la plus extrême, car une seule élimination paye tous ceux qui restent.
 
 **Q. Que signifie « payer la bulle » ou « la bulle éclate » ?**
 
@@ -192,7 +192,7 @@ A. « La bulle », c'est la dernière place avant l'argent : le joueur qui saute
 
 **Q. Faut-il se coucher sur la bulle ?**
 
-A. Tu dois renoncer aux *calls* bien plus souvent que d'habitude, mais pas tout coucher — et tu dois continuer à shover et à voler. Près du palier de gains, survivre vaut plus que les jetons, donc payer à tapis et sauter est l'erreur coûteuse. Resserre fortement ta range de call tout en gardant ton agression en first-in large.
+A. Tu dois renoncer aux *calls* bien plus souvent que d'habitude, mais pas tout coucher — et tu dois continuer à shover et à voler. Près du palier de gains, survivre vaut plus que les jetons, donc payer un tapis et sauter est l'erreur coûteuse. Resserre fortement ta range de call tout en gardant ton agression en first-in large.
 
 **Q. Les short stacks subissent-ils la plus forte pression sur la bulle ?**
 
@@ -227,12 +227,12 @@ Le moteur de tout ça, c'est l'[ICM](/fr/blog/holdem-icm) ; la discipline derri�
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournoi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM au poker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM au poker : l'Independent Chip Model expliqué, avec l'exemple à la main</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les maths qui expliquent pourquoi la bulle compte</div>
   </a>
   <a href="/fr/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournoi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Comment fonctionne un tournoi de poker ? Buy-in, formats et Jour 1</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le pilier dont fait partie la bulle</div>
   </a>
   <a href="/fr/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
