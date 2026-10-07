@@ -5,7 +5,7 @@
 
 > 🔴 **🅰~🅵 머지 뒤 헤드의 «시작» 신호 전에는 A도 하지 않는다.** A 앞에 계획 §2-⑨ 솔버 앱 fr 축어 재추출.
 
-## 상태 — A ✅ 10-07 / B ✅ 10-07 / C ✅ 10-07 · 커밋 (이 커밋)
+## 상태 — A ✅ 10-07 / B ✅ 10-07 / C ✅ 10-07 · 커밋 56ac05b6
 
 - C 산출(10-07): ⓪ `fr-integration` 머지(`84870c51` · 러닝맵 FR_CLUSTERS·용어집 Check-raise 링크 수신) · ① 게이트 전건 · ② §13 전사 대조 · ③ 렌즈 9개(딜러 3 · 네이티브 2 · SEO 1 · 교열 3 — 13편 288KB라 렌즈 종류별로 편을 나눔) · ④ 판정·반영 · ⑤ 2차 교열 1회 → 반영.
 - C 게이트(최종): audit:hard fr 51/51 🔴 0 🟠 0 · check:intl-links ✅ · check:structure fr 🔴 0 · 🟠 1 = donk faq −1(의도) · check:faq-schema fr 51 성립 · check:meta·seo-sync·meta-lang·directives 🔴 0(meta 🟠 blind-battle-cbet «마지막 문장 숫자»는 EN·de·es 공통) · check:number-format 🔴 1 = **tr**/a-high-board-cbet(이 레인 밖) · `npm run build` ✅ 686 intl(sitemap.xml 원복).
