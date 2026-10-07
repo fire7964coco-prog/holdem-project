@@ -355,11 +355,11 @@ A. Oui. La couleur est #5 et la quinte #6, donc la couleur gagne toujours — va
 
 A. Oui. Le full (#4) bat la couleur (#5) et la quinte. Il ne perd que contre un full plus haut, un carré, une quinte flush ou une quinte flush royale.
 
-**Q. Qu'est-ce qui bat une suite au poker ?**
+**Q. Quelles mains sont plus fortes qu'une suite ?**
 
 A. La couleur, le full, le carré, la quinte flush et la quinte flush royale battent tous une quinte — tout comme une quinte plus haute. Une quinte (#6) bat quand même le brelan, la double paire, la paire et la carte haute.
 
-**Q. Qu'est-ce qui bat une couleur au poker ?**
+**Q. Quelles mains sont plus fortes qu'une couleur ?**
 
 A. Un full, un carré, une quinte flush ou une quinte flush royale battent une couleur. Contre une autre couleur, la carte la plus haute gagne. Une couleur (#5) bat quand même la quinte et tout ce qui est en dessous.
 
@@ -375,7 +375,7 @@ A. Rien. La quinte flush royale (A-K-Q-J-10 d'une même enseigne) est la meilleu
 
 A. Seulement une quinte flush plus haute ou une quinte flush royale (qui n'est rien d'autre que la quinte flush à l'as). Une quinte flush (#2) bat le carré et toutes les mains en dessous.
 
-**Q. C'est quoi le kicker au poker ?**
+**Q. À quoi sert le kicker dans l'ordre des mains ?**
 
 A. Le kicker est une carte qui ne fait pas partie de ta combinaison mais qui départage les égalités. Quand deux joueurs ont la même paire, la carte d'accompagnement la plus haute (le kicker) gagne. L'as est le meilleur kicker possible.
 
