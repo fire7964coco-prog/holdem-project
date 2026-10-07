@@ -1,3 +1,10 @@
+## 2026-10-07 (4) — fr 클러스터 0-3 정본 (docs/fr-cluster-plan.md §3)
+
+- §3-A 고정문·용어 확정: 실측 = 기존 fr 6편 grep · `lib/intl.ts` fr · 도구 4종 사전 · terms/local-voice 문서 · 0-1/0-2 볼륨. 구조 고정문 7(Réponse rapide · À lire ensuite · FAQ · Articles liés · À retenir · N min · 화자) · 족보 11 · 액션·자리 20 · 도구 앵커 4.
+- 핵심 판정: «suite» = 검색 표기(3,600 vs quinte 720) → 카피·H2·FAQ 허용, 본문 quinte(도구·앱 일치) · turn/river = 본문 정본(검색량·도구 우세, 첫 등장 tournant/rivière 병기) · stack ≠ tapis(tapis는 all-in 뜻만) · showdown은 카피, 본문 abattage.
+- §3-B 소유표 12건 + 원칙(목록·도구형 헤드 = 도구 · 단일 용어·개념 헤드 = 글). ④ nuts 레인 엇갈림 → 원칙에 따라 reading-the-board(글). rake 합법성 FAQ는 빼고 운영 질문으로 · 과세 2 %는 원문 없으면 안 씀.
+- 코드·글 수정 없음 → 배포·MB 없음. 다음 = 0-4(검수장 착수 공지 MB · 워크트리 7 + HARDEN.md).
+
 ## 2026-10-07 (3) — fr 클러스터 0-2 SERP 조사 (7레인 · docs/keyword-bank/fr-serp/)
 
 - 브리프 00-brief.md → Opus 서브 7레인 병렬(DataForSEO 2250/fr 자동완성·새 후보 볼륨·SERP 상위10·PAA + 상위 글 원문 정독 + 처방). 산출물 L-A~L-G(50~63KB) · 글별 PAA·자동완성 질문 51/51 ✅.

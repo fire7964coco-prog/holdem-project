@@ -40,13 +40,107 @@
 | ⑧ | 기존 fr 6편 별도 재경화 | (예방) | 🅰 레인으로 이번 파이프라인에 넣었다 — 나중에 따로 하지 않는다 |
 | ⑨ | 솔버 앱 라벨 어긋남 | 앱 축어 문서가 낡아 있었다(`solver-app-verbatim-fr-2026-08-24.md`) | 🅶 레인 A 전에 솔버 앱 fr 현행 축어를 다시 뜬다(앱 라이브 · Playwright) |
 
-## 3. 소유표·고정문 (0-3에서 채운다)
+## 3. 소유표·고정문 (✅ 0-3 확정 · 2026-10-07)
 
-### 3-A. 고정문·표기 — 정본 후보 = `docs/translation-terms-fr.md` · `docs/local-voice/fr-fr.md` · 기존 fr 6편 · 도구 4종 사전 실측
-_(0-3에서 기존 fr 코퍼스 다수결 + 도구 사전 대조로 확정 — 직답 라벨 · readnext 라벨 · FAQ H2 · 관련 글 H2 · readTime · 2인칭(tu) · 숫자(천 단위 공백 · 소수점 쉼표 · « % » 앞 공백) · 족보·액션 용어)_
+> 레인은 이 절을 **판단 없이 따른다**(§2-④). 여기 없는 용어가 필요하면 진행 파일 «신규 용어» 표에 적고 헤드가 머지 때 대조한다.
+> 근거 실측(10-07): 기존 fr 6편 전문 grep · `lib/intl.ts` fr 블록 · 도구 4종 사전(`app/fr/{calculator,glossary,hand-chart,solver}`) · `docs/translation-terms-fr.md` · `docs/local-voice/fr-fr.md` · 0-1 볼륨 · 0-2 L-A §8-B · L-B §0·§1 · L-C §8.
+> 🔴 «검색 표기»와 «본문 표기»를 나눈다: 카피·H1·H2·FAQ 질문은 프랑스 검색자가 실제 치는 형태(볼륨 근거), 본문은 코퍼스·도구와 같은 표기. 둘이 다르면 글마다 **첫 등장에 병기**한다.
+
+### 3-A. 고정문·표기
+
+**① 구조 고정문**
+
+| 자리 | 정본 | 근거 |
+|---|---|---|
+| 직답 블록 라벨 | `> **Réponse rapide**` | `lib/intl.ts` fr `quickAnswer` · blind-meaning 1 · EN «Quick answer» 50 · es «Respuesta rápida»와 같은 형 |
+| readnext 라벨 | `:::readnext[À lire ensuite]` | fr 6편 중 5 («Continue ta lecture» 1 → 🅰에서 통일) |
+| FAQ H2 | `## FAQ` | fr 6편 중 5 · 스키마는 H2 문구와 무관(`lib/intl-blog-page.tsx` = `**Q.**`+빈 줄+`A.` 쌍) |
+| 관련 글 H2 | `## Articles liés` | `intl.related` · 6편 중 5 |
+| 마무리 H2 | `## À retenir` | blind-meaning 선례(EN «Key Takeaways» 자리) |
+| readTime | `"N min"` | 6편 전부 |
+| 화자 | 1인칭 단수 · 작성자 일치는 남성형(«je me suis figé» — 코퍼스 관행) | blind-meaning 도입 |
+
+**② 문체·조판**
+- **tu**(명령형 훅 «Regarde… / Compare… / Essaie…»). vous 금지(인용·법규 축어 제외).
+- 숫자: 천 단위 **공백**(`1 326` · `$2 300`) · 소수점 **쉼표**(`2,5` · `0,84 %`) · **% 앞 공백**(`35 %`) — 코퍼스는 일반 공백(U+0020)이다. 비율 `2,7:1`. §13 값은 불변, 구분자만 바꾼다.
+- 화폐 = **`$` 앞붙임**(`$1/$2` · `$14`) — €로 바꾸지 않는다(§13 보존 · 코퍼스).
+- 인용 = `« … »`(안쪽 공백) · 아포스트로피 = 곧은 `'`(코퍼스 866 · 굽은 0) · `Texas Hold'em`(굽은 0).
+- 카드 = 영어 랭크 문자 + 무늬 기호(`A♠ K♥ Q♦ J♣ 10♠`) — R/D/V 금지. 풀어 쓸 때 소문자 «paire d'as», «roi», «dame», «valet».
+- `préflop`(붙여 씀 · 36 vs pré-flop 13 → 🅰에서 통일).
+
+**③ 족보** (본문 = 왼쪽 · 검색 표기 = 오른쪽)
+
+| EN | 본문 정본 | 검색 표기·병기 규칙 |
+|---|---|---|
+| Royal Flush | quinte flush royale | 첫 등장 «quinte flush royale (royal flush)» — «royal flush» 1 300 |
+| Straight Flush | quinte flush | — |
+| Four of a Kind | carré | — |
+| Full House | full («full aux X par les Y») | — |
+| Flush | couleur | «flush poker» 880 → hand-rankings·flush-vs-straight 첫 등장 «couleur (flush)». 무늬 뜻의 couleur와 헷갈리는 문장은 무늬를 «enseigne»로 |
+| Straight | **quinte** | 🔴 **«suite»가 검색 표기다**(«suite poker» 3 600 vs «quinte poker» 720). 카피·H2·FAQ는 «suite» 허용(예: «suite ou couleur»), 본문 첫 등장 «quinte (suite)», 이후 quinte. 도구 계산기(Quinte 18)·앱(quinte)과 맞춘다. `local-voice` §2 «suite 피할 것»은 **본문 한정**으로 읽는다 |
+| Three of a Kind | brelan (set = «brelan servi») | — |
+| Two Pair | double paire | 코퍼스 11 · 계산기 «Double paire» · «deux paires» 0 |
+| One Pair | paire | — |
+| High Card | carte haute | 첫 등장 «carte haute (hauteur)» — 계산기 «Carte haute» |
+| wheel | **la roue (wheel)** = A-2-3-4-5, la plus petite quinte | 도구 용어집 «Roue (wheel)» · 계산기 «roue» · 자동완성 «suite poker as 2 3 4 5» 축어를 H2·FAQ에 |
+
+**④ 스트리트·액션·자리**
+
+| EN | 본문 정본 | 규칙·근거 |
+|---|---|---|
+| turn / river | **la turn · la river** | 첫 등장 «la turn (le tournant)» · «la river (la rivière)». 검색량(river 210 vs rivière 50) · 도구(river 28·turn 38 vs rivière 4) · PokerStars «La turn». 🅰 rules·showdown의 tournant/rivière 다수 → 재작성 때 교체 |
+| preflop / flop | préflop · le flop | — |
+| board | le board (첫 등장 «le board (les cartes communes)») | 도구·EN 일치 |
+| blind | **blinde** · petite blinde (SB) · grosse blinde (BB) | 첫 정의에 «blinde (blind)». 코퍼스 blinde 227 · 도구 45 |
+| check | checker (3인칭 «il checke») · 선언어 «parole» | 협회 «parole» |
+| bet / call / raise | miser · suivre (payer 허용) · relancer / relance | 코퍼스 suivre 49 · caller 0 (단 GTO 🅶은 앱 축어 «caller»·«ouvreur»·«3-betteur» 허용 — `local-voice` §2) |
+| fold | **se coucher**(재귀 필수) · 구어 «folder» | 협회 «passe»는 betting-actions에서 1회 소개만. 카피·H2는 «fold» 허용(«fold poker» 140) |
+| all-in | **tapis / faire tapis** · all-in | 카피는 «all-in»(590 · «tapis»는 매트 오염 — L-A §6) |
+| stack | **stack** (짧은 스택 = «short stack») | 🔴 «tapis»는 all-in 뜻으로만 쓴다(코퍼스 stack 0이었지만 short-stack·ICM 글에서 tapis 이중 의미가 혼동을 만든다). 도구 계산기의 «tapis»(스택 뜻)는 손대지 않는다 |
+| showdown | **abattage** | 카피·H2는 «showdown»(110 vs abattage 10) · 첫 등장 «l'abattage (showdown)» |
+| side pot / main pot | pot annexe (side pot) · pot principal | 첫 등장 병기 후 «side pot» 허용(all-in 코퍼스 22) |
+| dealer / button | donneur · bouton (BTN) | 코퍼스 donneur 46 · dealer 0 |
+| 자리 약어 | UTG · HJ · CO («cut-off») · BTN · SB · BB | 첫 등장 풀어 쓰기 |
+| c-bet / 3-bet / limp | c-bet («mise de continuation» 첫 등장 병기) · 3-bet · limp / limper | «cbet poker» 110 · 도구 «c-bet» · «3-bet» |
+| outs / draw | outs · tirage (gutshot = «gutshot (tirage ventral)») | L-C §8 · 계산기 |
+| pot odds / implied | cote(s) du pot · cotes implicites (단·복수 혼용 허용) | 계산기 «cotes du pot» · SERP 5:4 |
+| rule of 2 and 4 | «règle du 2 et du 4» (표기 «règle du 2/4») | `fr-calculator.md` §2-B 정본 |
+| equity / range | équité · la range (여성) | 계산기 §3-B «Équité» · `local-voice` §2 |
+| solver / GTO | solver · résoudre un spot · GTO | `local-voice` §2 · 🅶만 |
+| straddle / bad beat | straddle (첫 등장 «straddle (overblind)») · bad beat (첫 등장 «bad beat (sale coup)») | L-F §0·§7 |
+
+**⑤ 도구 링크 앵커 문구 고정**(도구가 헤드의 주인임을 앵커로 알린다 · 3-B와 짝)
+
+| 도구 | 앵커 정본 |
+|---|---|
+| `/fr/calculator` | «calculateur poker» · 기능별 «calculateur d'équité / d'outs / ICM» |
+| `/fr/hand-chart` | «tableau range poker» · «tableau des mains de départ par position» |
+| `/fr/glossary` | «lexique du poker» |
+| `/fr/solver` | «solver poker gratuit» |
 
 ### 3-B. 카니발 소유표
-_(0-1·0-2 실측 뒤 채운다 — 재료 = `docs/keyword-bank/fr-serp/00-brief.md` «0-3에 넘기는 판정 재료» ①~⑩ · ④ nuts는 레인 엇갈림)_
+
+**원칙(이번에 확정)**: ① **목록·도구형 헤드**(lexique/termes · tableau/range · calcul/calculateur · solver/GTO)는 도구가 주인(`tools-over-posts` · tr «poker terimleri» 선례). ② **단일 용어·개념 헤드**(nuts · check-raise · SPR · ICM · fish · rake …)는 그 개념을 다루는 **글**이 주인 — 도구의 사전 항목 한 줄로는 그 SERP를 이기지 못하고(유기 정보형 우세), 도구는 해당 항목에서 글로 앵커한다. ③ 주인 아닌 쪽은 seoTitle·H1·tags에 그 헤드를 쓰지 않고 앵커로 위임한다.
+
+| # | 검색어(볼륨) | 주인 | 주인 아닌 쪽의 처리 | 판정 근거 |
+|---|---|---|---|---|
+| ① | lexique / termes / vocabulaire poker | **`/fr/glossary`**(현행 유지) | holdem-glossary = «jargon / langage / expressions du poker + 영어→프랑스어 대응» 각도 · 첫 화면 도구 링크 · seoTitle·H1·tags에 셋 금지 | L-F §8 ① · 원칙① · tr 10-06 선례 |
+| ② | position(s) poker 590 · 좌석명(utg 260 · cut off 170 · bouton) | **holdem-positions** | holdem-position-play = «jouer en / hors de position · pourquoi la position est importante» · seoTitle 선두에 «position poker» 금지 · 서로 첫 문단 앵커 1 | L-D §8-A |
+| ③ | fold poker 140 · se coucher (정의·번역·«peut-on se coucher») | **holdem-betting-actions** | holdem-when-to-fold = «quand (faut-il) se coucher au poker · savoir folder» 전략 롱테일 · 정의는 앵커 · 상호 앵커 1 | L-A §8-A · L-D §8-B 일치 |
+| ④ | nuts poker 210 (+ nuts au poker 20) | **holdem-reading-the-board** — H2 «Comment savoir si tu as les nuts ?» + FAQ «Que signifie « nuts » au poker ?» · 카피 보조어로 «nuts» 허용(Fable 판단) | `/fr/glossary` Nuts 항목 = 정의 1줄 유지 + 글로 앵커(배포 회차) · holdem-glossary = 정의 1줄 + 앵커 · seoTitle에 «nuts» 금지 | 🔴 L-B(도구) vs L-F(글) 엇갈림 → **원칙② 채택**: FR 정보 페이지 0/8 · PAA 정의 2 + «avoir les nuts» 보드 의도 · EN H2 «Reading the Nuts» |
+| ⑤ | check raise poker 260 | **low-board-check-raise**(EN parity · seoTitle·첫 정의 H2) | 정의 깊이는 `/fr/glossary` «Check-raise»로 앵커 · fr check-raise 필라가 생기면 그날 반납 | L-G §8 ⑤ · `settled-decisions` §1-E ③(주인 없는 검색어) |
+| ⑥ | spr poker 210 | **3bet-pot-cbet**(EN parity) | «spr poker calculator/chart»는 조준 안 함(계산기에 SPR 탭은 있으나 헤드 «calculateur poker»만 유지) | L-G §8 ⑥ · ⑤와 같은 논리 |
+| ⑦ | icm poker 480 (정의·개념) | **holdem-icm** | `/fr/calculator`는 «calculateur ICM / calcul ICM»만 · 도구 title «… et ICM»은 기능 나열이라 그대로 둔다 · 상호 앵커(글 → «calculateur ICM» · 도구 icmGuide → holdem-icm)는 배포 회차 · bubble·short-stack·tournament·tournament-vs-cash의 ICM 단락 = 2~3문장 + 앵커(정의 H2 금지) | L-E §8-②·⑤ · `fr-calculator.md` §0-A 재판정 조건 발동 |
+| ⑧ | probabilité · tableau probabilité · équité · cote poker | **확률 글 7편**(probabilité · tableau · qu'est-ce que · comment calculer = 손 계산법) | `/fr/calculator` = calcul · calculateur · simulateur · gratuit · 글 title·H1에 «calcul(ateur)» 금지 · 계산기 FAQ 7문항과 같은 질문 문장 금지(의미가 같으면 계산기로 앵커) · 계산기 related에 7편 추가(배포 회차) | L-C §8 · `fr-calculator.md` §0-A |
+| ⑨ | mains de départ poker · quelles mains jouer · meilleures mains de départ | **holdem-starting-hands-chart** | `/fr/hand-chart` = «tableau range poker · tableau des mains de départ (par position) · range» · 글 title·H1에 «tableau / range / chart» 금지 · 도구 title(«Tableau range poker — mains de départ par position»)은 그대로 둔다(뒷부분은 기능 서술) | L-D §8-C · SERP 글형 가이드 우세 |
+| ⑩ | tournoi poker (일정 81 %) | 조준 안 함 | holdem-tournament = PAA 4문(participer · prix · se déroule · fonctionne) + MTT 210 · ITM 170 롱테일 · 일정 의도는 보드 로케일·데이터 공급 확정 때 별도 트랙 | L-E §8-① · `country-tournament-playbook` 착수 금지 조건 |
+| ⑪ | push or fold · «tableau range tournoi» | 도구(`/fr/calculator` push or fold · `/fr/hand-chart`) | short-stack·tournament는 H2 문구 일부·앵커로만 | L-E §8-③·④ |
+| ⑫ | gto poker 480 · solver poker 320 · solver poker gratuit 110 · PAA «C'est quoi le GTO / un solver» | **`/fr/solver`** | GTO 13편 seoTitle·H1·tags에 «GTO poker»·«solver poker» 금지 — EN seoTitle에 «GTO» 단독이 든 3편(ace-paired · blind-battle-cbet · blind-battle-connected)은 «solver» 앵커 문구로 바꾸되 헤드 조준이 아님을 🅶 레인 A가 확인 · «meilleur solver» 문항 신설 금지(factsheet §5) | L-G §8 · `fr-gto-solver.md` |
+
+**레인 A로 넘기는 처리 확정**
+- 🅵 rake: EN FAQ «Is taking a rake illegal?» = fr에서 합법성 축 → **빼고** 같은 자리를 «Pourquoi la salle prend-elle un rake ?»류 운영 질문으로 바꾼다(`legality-ban-scope` · 신규 발행은 합법성 축을 열지 않는다). 프랑스 과세 2 %·상한 1 €는 Légifrance 원문이 없으면 **쓰지 않는다**(§12-B).
+- 🅰 «relance poker»의 legifrance 결과·La Ligue de Poker = 인용·조준 안 함(규칙 출처로만 · L-A §8-C).
+- 🪶 범위 밖(자동 착수 금지): `/fr/glossary` 사전에 PAA가 묻는 TNT·ITM·shove · fish·straddle·nit 항목 없음 → 사전 보강은 별도 회차(L-F §8 ①). 배포 회차에 하는 것은 «Nuts·ICM·Check-raise 항목 → 글 앵커»뿐.
 
 ## 4. 단계 (한 실행 = 한 단계 · AUTONOMY-LIMITS 90분)
 
@@ -54,7 +148,7 @@ _(0-1·0-2 실측 뒤 채운다 — 재료 = `docs/keyword-bank/fr-serp/00-brief
 |---|---|---|---|---|
 | 0-1 수요 | DataForSEO 볼륨(France 2250 · fr) — 51편 헤드·롱테일 시드. 필요 시 BE·CA·CH 비교 | `docs/keyword-bank/fr-core-volumes.md` | — | ✅ 10-07 (시드 210 + Labs 34 · 함정 11 · 0-3 판정 대기 5) |
 | 0-2 SERP | 볼륨 상위 검색어의 구글 FR 상위 10 → 실제 글 정독(원문 · §12-B) · PAA · 자동완성 → 레인별 처방 | `docs/keyword-bank/fr-serp/<레인>.md` | 0-1 | ✅ 10-07 (7레인 · 글별 PAA·자동완성 51/51 · 0-3 재료 10건 = `fr-serp/00-brief.md` 끝 절) |
-| 0-3 정본 | §3-A 고정문·용어 확정 · §3-B 소유표 | 이 문서 §3 | 0-1·0-2 | ☐ |
+| 0-3 정본 | §3-A 고정문·용어 확정 · §3-B 소유표 | 이 문서 §3 | 0-1·0-2 | ✅ 10-07 (고정문 7 · 족보 11 · 액션·자리 20 · 도구 앵커 4 · 소유 12건 — ④ nuts = 글 reading-the-board로 판정) |
 | 0-4 공지 | 검수장 착수 공지 MB(§2-⑦) · 레인 워크트리 7개 생성 + 각 `HARDEN.md` | MB 1행 · 워크트리 | 0-3 | ☐ |
 | 레인 🅰~🅵 | A 준비(브리프 + Fable 카피) → B 집필 → C 마감(게이트·렌즈·2차) | `docs/fr-lanes/<id>-*.md` · `lib/posts-fr/*` | 0-4 | ☐ |
 | 레인 🅶 | 솔버 앱 fr 축어 재추출(§2-⑨) → A·B·C | 〃 | 🅰~🅵 머지 | ☐ |

@@ -27,7 +27,7 @@
 | call하다 | payer (BTN paye) · caller | — |
 | flush | **couleur** | «flush» 단독 남발 |
 | trips | **brelans** (앱 축어 — brelan) | — |
-| straight | **quinte** | «suite» |
+| straight | **quinte** (본문) | 본문의 «suite» — 단 카피·H2·FAQ는 «suite» 허용(검색 표기 3,600 vs 720 · 정본 `docs/fr-cluster-plan.md` §3-A ③) |
 | draw | **tirage(s)** (panneau «Mains / Tirages») | — |
 | pocket pair | **paires servies** (앱 축어) | — |
 | pot odds | cote du pot | — |

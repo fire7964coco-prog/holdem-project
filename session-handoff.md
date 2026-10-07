@@ -1,12 +1,12 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-07 (3) (fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-10-07 (4) (fr 0-3 정본 · (3) fr 0-2 SERP · MA-347 ms beginners MB-195 · (1) straddle OOP 한정 MB-194 · 10-06 (17) MA-339 판정·이행 MB-193 · (16) §2-Z 이행 MB-192 · (15) MA-332~338 판정 MB-191 · 직전 (14) tr SERP 보강 D MB-190 · 보강 A~D 완결) · 이전 회차 경위는 `WORKLOG.md`(10-06 (1)~(14)) · 10-06 (11) 정리 전문 = docs/handoff-archive/2026-10-06-11-session-handoff-full.md. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 완결 51편 — 계획 확정 (사장님 10-07 «EN처럼 꽉 채우자 · 두 번 일하지 않게»)
 
 - 정본 = **`docs/fr-cluster-plan.md`**(레인 7 · 재작업 방지 장치 §2 · 단계표 §4). 판단 3건 권고대로(GTO 13 포함·마지막 · 대회 가이드 5 제외 · 레인 병렬). EN 기준 해시 `a54b5f3d`.
-- ✅ 0-1 수요 실측(`docs/keyword-bank/fr-core-volumes.md`) · ✅ **0-2 SERP**(`docs/keyword-bank/fr-serp/` 7레인 · 51/51 질문 확보). ▶ 다음 = **0-3 정본**(§3-A 용어 · §3-B 소유표 — 재료 = `fr-serp/00-brief.md` 끝 절 ①~⑩, ④ nuts 레인 엇갈림 판정 포함) → 0-4 공지·워크트리.
+- ✅ 0-1 수요 실측(`docs/keyword-bank/fr-core-volumes.md`) · ✅ **0-2 SERP**(`docs/keyword-bank/fr-serp/` 7레인 · 51/51 질문 확보). ✅ **0-3 정본**(계획 §3-A 용어 · §3-B 소유표 12건 · ④ nuts = reading-the-board). ▶ 다음 = **0-4**(검수장 착수 공지 MB «fr은 배포 해시로 한 번에» · 레인 워크트리 7 + 각 `HARDEN.md` — 레인 규격 `docs/ms-translation-lanes.md` §3~§9 · 병렬 조사 시 레인별 scratchpad 하위 폴더 지정).
 - ⏸ ms 14편 EN 동기화 = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07). 솔버 후기창 머지 = 아직 아님(사장님 10-07).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr SERP 보강 ✅ A~D 완결 (사장님 10-06 «20편을 상위 1페이지로 · 작업 빼먹지 마»)
