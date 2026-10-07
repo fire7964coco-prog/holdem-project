@@ -100,7 +100,7 @@ Essas três formas de falar do mesmo desastre confundem muitos jogadores, então
 
 - **Setup** — sinônimo informal de cooler. Enfatiza a sensação de *estar preso* — como se o baralho tivesse sido "armado" para você perder o stack inteiro com uma mão da qual não conseguia escapar. Se alguém diz "aquilo foi um setup total", quer dizer cooler.
 - **Coolerado / levar um cooler (verbo)** — estar do lado perdedor de um cooler. "Levei um cooler" significa que você perdeu um pote grande com uma mão forte demais para foldar. Por definição, dizer isso corretamente é admitir que você *fez a jogada certa* e ainda assim perdeu.
-- **Cold deck** — um termo antigo relacionado. No dicionário ele nomeia **aquela única mão perdedora inevitável** em si; na mesa as pessoas o usam sobretudo para uma fase em que as cartas vêm brutalmente contra você. Historicamente também se referia a uma trapaça: trocar por um baralho "frio" pré-arranjado.
+- **Cold deck** — um termo antigo relacionado. Alguns glossários de pôquer o usam para **aquela única mão perdedora inevitável** em si; na mesa as pessoas o usam sobretudo para uma fase em que as cartas vêm brutalmente contra você. Historicamente também se referia a uma trapaça: trocar por um baralho "frio" pré-arranjado.
 
 Um mito importante para matar: **um cooler não precisa ser all-in.** A característica definidora é a colisão de duas mãos fortes demais para foldar, não o tamanho dos stacks. Você pode levar um cooler por um pote grande sem nunca colocar sua última ficha — é sobre as mãos, não sobre o all-in.
 

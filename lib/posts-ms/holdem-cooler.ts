@@ -102,7 +102,7 @@ Yang paling ikonik ialah **set over set.** Katakan anda pegang **7♣7♦** dan 
 
 - **Setup** — menekankan rasa *terperangkap* — seolah-olah dek kad "diatur" supaya anda kehilangan seluruh stack dengan tangan yang tidak dapat anda lepaskan. Jika seseorang berkata "itu memang setup," maksudnya cooler.
 - **Coolered (kata kerja)** — berada di pihak yang kalah dalam cooler. "Saya kena cooler" bermaksud anda kalah pot besar dengan tangan yang terlalu kuat untuk di-fold. Mengikut takrifnya, menyebutnya dengan betul ialah pengakuan bahawa anda *membuat keputusan yang betul* dan tetap kalah.
-- **Cold deck** — istilah lama yang berkaitan. Dalam kamus, ia merujuk kepada satu tangan kalah yang tidak dapat dielakkan itu sendiri; di meja, orang kebanyakannya menggunakannya untuk satu tempoh apabila kad berterusan menentang anda dengan kejam. Dari segi sejarah, ia juga merujuk kepada helah menipu: menukar masuk dek "sejuk" yang sudah disusun terlebih dahulu.
+- **Cold deck** — istilah lama yang berkaitan. Sesetengah glosari poker menggunakannya untuk satu tangan kalah yang tidak dapat dielakkan itu sendiri; di meja, orang kebanyakannya menggunakannya untuk satu tempoh apabila kad berterusan menentang anda dengan kejam. Dari segi sejarah, ia juga merujuk kepada helah menipu: menukar masuk dek "sejuk" yang sudah disusun terlebih dahulu.
 
 Satu mitos penting yang perlu dibuang: **cooler tidak semestinya all-in.** Ciri penentunya ialah pertembungan dua tangan yang terlalu kuat untuk di-fold, bukan saiz stack. Anda boleh kena cooler dalam pot besar tanpa pernah memasukkan cip terakhir anda — ia tentang tangan, bukan tentang all-in.
 
