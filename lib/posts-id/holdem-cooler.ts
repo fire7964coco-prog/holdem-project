@@ -100,7 +100,7 @@ Tiga cara membicarakan bencana yang sama ini membingungkan banyak pemain, jadi c
 
 - **Setup** — sinonim informal untuk cooler. Ia menekankan perasaan *terjebak* — seolah deck "disusun" agar Anda kehilangan seluruh stack dengan tangan yang tak bisa Anda hindari. Jika seseorang berkata "itu setup total," maksudnya adalah cooler.
 - **Coolered (kata kerja)** — berada di pihak yang kalah dalam sebuah cooler. "Saya kena cooler" berarti Anda kalah pot besar dengan tangan yang terlalu kuat untuk fold. Menurut definisinya, mengatakannya dengan benar adalah pengakuan bahwa Anda *melakukan permainan yang benar* dan tetap kalah.
-- **Cold deck** — istilah aliran lama terkait. Di kamus ia menamai **satu hand kalah tak terhindarkan** itu sendiri; di meja orang memakainya untuk periode saat kartu berjalan brutal melawan Anda. Secara historis ia juga merujuk pada gerakan curang: menukar masuk deck "dingin" yang telah diatur.
+- **Cold deck** — istilah aliran lama terkait. Sebagian glosarium poker memakainya untuk **satu hand kalah tak terhindarkan** itu sendiri; di meja orang memakainya untuk periode saat kartu berjalan brutal melawan Anda. Secara historis ia juga merujuk pada gerakan curang: menukar masuk deck "dingin" yang telah diatur.
 
 Satu mitos penting untuk dibunuh: **cooler tak harus all-in.** Ciri penentunya adalah tabrakan dua tangan yang terlalu-kuat-untuk-fold, bukan ukuran stack. Anda bisa kena cooler di pot besar tanpa pernah memasukkan chip terakhir Anda — ini tentang tangan, bukan tentang all-in.
 

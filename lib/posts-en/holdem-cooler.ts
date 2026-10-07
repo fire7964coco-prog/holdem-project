@@ -99,7 +99,7 @@ These three ways of talking about the same disaster trip up a lot of players, so
 
 - **Setup** — an informal synonym for a cooler. It stresses the *trapped* feeling — as if the deck were "set up" so you'd lose your whole stack with a hand you couldn't get away from. If someone says "that was a total setup," they mean a cooler.
 - **Coolered (verb)** — to be on the losing end of a cooler. "I got coolered" means you lost a big pot with a hand too strong to fold. By definition, saying it correctly is an admission that you *made the right play* and still lost.
-- **Cold deck** — a related old-school term. In the dictionary it names the single unavoidable losing hand itself; at the table people mostly use it for a stretch where the cards run brutally against you. Historically it also referred to a cheating move: swapping in a pre-arranged "cold" deck.
+- **Cold deck** — a related old-school term. Some poker glossaries use it for the single unavoidable losing hand itself; at the table people mostly use it for a stretch where the cards run brutally against you. Historically it also referred to a cheating move: swapping in a pre-arranged "cold" deck.
 
 One important myth to kill: **a cooler does not have to be all-in.** The defining feature is the collision of two too-strong-to-fold hands, not the size of the stacks. You can get coolered for a big pot without ever putting your last chip in — it's about the hands, not the all-in.
 

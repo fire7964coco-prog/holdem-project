@@ -1,3 +1,9 @@
+## 2026-10-07 (6) — MA-350 판정·이행: cooler «Cold deck» 사전 귀속 한정 (MB-197 · queue §2-AC)
+
+- 요청 1 채택: EN «In the dictionary it names…» → «Some poker glossaries use it for…» + 형제 8로케일 13자리(de·ja·zh·zh-hant는 FAQ·요약 박스까지 2자리). fr은 cooler 미발행 → 🅵 gloss 레인이 main 머지로 받음.
+- 통지 ②(UNV 3건)는 queue §2-AC 🪶 등재만.
+- 게이트: audit:hard 9로케일 cooler 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-07 (5) — fr 클러스터 0-4 착수 (MB-196 · 워크트리 7)
 
 - 검수장 착수 공지 MB-196: 51편 범위 · 레인 7 · 요청 1 = 배포 전 lib/posts-fr/ 판정 보류, 배포 해시로 한 번에(계획 §2-⑦).

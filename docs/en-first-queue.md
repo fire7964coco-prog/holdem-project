@@ -457,6 +457,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 **원인 = ms가 드리프트 게이트상 «꼬리» 로케일**이라 09-28 EN 델타(`6164c748`·`25fe6027`)와 그 뒤 EN-먼저 일부가 ms에 안 갔다. `check:drift --tail` ms 14편(all-in · blind · drawing-odds · flush-vs-straight · game-order · glossary · outs · positions · reading-the-board · showdown · split-pot · strategy · when-to-fold · beginners). ▶ **다음 회차 후보 = ms 14편 EN 동기화**(글별 «ms masterUpdated 이후 EN diff» → ms 이식 · 검수장 MS 배치 순서와 겹치지 않게 통지). beginners 통지 ⓐ(tldr «unless everyone else folds first» · Fakta «normally moves»)도 그 회차에 포함 — 그래서 beginners masterUpdated는 아직 올리지 않았다.
 - 🪶 통지 ⓑ «jarang bluff» ↔ «under-bluff» · ⓒ 단순 FAQ 프리플랍 생략 · ⓓ Astra EN 동형 묶음 = EN 손질 때 참고(자동 착수 금지).
 
+### 2-AC. 우편함 수신분 — MA-350 (JA ④ §4 잔여 EN 원장 몫 · 기준 `0635dd8d`) · 판정·이행 2026-10-07 (6) · MB-197
+
+> 근거 = 검수장 `reports/2026-10/검수-JA4잔여-EN원장몫-2026-10-07.md`. 요청 1 = EN 현행 문면 실재 확인 → **채택·이행**(EN + 8로케일 13자리 · fr은 아직 cooler 없음 → 🅵 gloss 레인이 lane:sync로 새 문면을 받는다).
+
+| # | 자리 | 이행 |
+|---|---|---|
+| AC-1 | cooler «Cold deck» 불릿(EN #45 RISKY) — «In the dictionary it names the single unavoidable losing hand itself» | EN «Some poker glossaries use it for …» · de 2(불릿 + FAQ «Was ist ein Cold Deck» 답) · es · id · ms · pt 각 1 · ja · zh · zh-hant 각 2(불릿 + 세 용어 요약 인용 박스) — 전부 «일부 포커 용어집» 귀속으로. 역사적 사기 덱 뜻·테이블 용법 문장은 그대로 |
+
+- 🪶 통지 ②(선택 · UNV · 자동 착수 금지): bad-beat Mabuchi «moved all in» ↔ 원보도 «splashing his chips» · position-play «bluff-catchers that under-realize» → «that tend to…» · chart «single biggest improvement» → «one of the biggest». EN 손질 때 같이.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

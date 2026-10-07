@@ -100,7 +100,7 @@ Estas tres maneras de hablar del mismo desastre confunden a muchos jugadores, as
 
 - **Setup** — un sinónimo informal de cooler. Recalca la sensación de *estar atrapado* — como si la baraja estuviera "preparada" para que perdieras todo tu stack con una mano de la que no podías escapar. Si alguien dice "eso fue un setup total", se refiere a un cooler.
 - **Comerse un cooler (verbo)** — estar en el lado perdedor de un cooler. "Me comí un cooler" significa que perdiste un bote grande con una mano demasiado fuerte para foldear. Por definición, decirlo correctamente es admitir que *hiciste la jugada correcta* y aun así perdiste.
-- **Cold deck** — un término clásico emparentado. En el diccionario nombra **esa única mano perdedora inevitable** en sí; en la mesa la gente lo usa sobre todo para una racha en la que las cartas te vienen brutalmente en contra. Históricamente también aludía a una jugada de tramposo: colar una baraja "fría" ya preparada.
+- **Cold deck** — un término clásico emparentado. Algunos glosarios de póquer lo usan para **esa única mano perdedora inevitable** en sí; en la mesa la gente lo usa sobre todo para una racha en la que las cartas te vienen brutalmente en contra. Históricamente también aludía a una jugada de tramposo: colar una baraja "fría" ya preparada.
 
 Un mito importante que hay que matar: **un cooler no tiene por qué ser all-in.** El rasgo definitorio es el choque de dos manos demasiado fuertes para foldear, no el tamaño de los stacks. Puedes comerte un cooler por un bote grande sin llegar a meter tu última ficha — va de las manos, no del all-in.
 
