@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Règles de l'all-in au poker : faire tapis, side pots, relances et showdown",
   seoTitle: "All-in poker : tu gagnes quoi ? — Faire tapis et side pot",
   desc: "Tu fais tapis et le donneur sépare les jetons en deux tas ? Les règles de l'all-in : table stakes, pot principal, side pots, relances et showdown.",
-  tldr: "Faire all-in (tapis), c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as couvert, c'est le pot principal ; les jetons misés au-delà par deux stacks plus gros ou plus forment un side pot (pot annexe) qu'eux seuls peuvent gagner, et une mise supplémentaire isolée est simplement rendue. En no-limit et en pot-limit, un all-in inférieur à une relance pleine ne rouvre pas les enchères pour un joueur qui a déjà parlé, sauf si plusieurs petits all-in cumulés atteignent au moins une relance pleine au-dessus de ce qu'il a déjà mis.",
+  tldr: "Faire all-in (tapis), c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as couvert, c'est le pot principal ; les jetons misés au-delà par deux stacks plus gros ou plus forment un side pot (pot annexe) qu'eux seuls peuvent gagner, et une mise supplémentaire isolée est simplement rendue. En no-limit et en pot-limit, un all-in inférieur à une relance complète ne rouvre pas les enchères pour un joueur qui a déjà parlé, sauf si plusieurs petits all-in cumulés atteignent au moins une relance complète au-dessus de ce qu'il a déjà mis.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-07",
@@ -121,52 +121,52 @@ La règle : ==chaque side pot se construit en prenant l'écart jusqu'au stack su
 
 ## Un all-in rouvre-t-il les enchères ? La règle que presque tout le monde rate
 
-En no-limit et en pot-limit, pas forcément : un all-in inférieur à une relance pleine ne rouvre pas les enchères pour les joueurs qui ont déjà parlé dans ce tour. Ceux-là peuvent seulement suivre ou se coucher. Un joueur qui n'a pas encore parlé garde, lui, le droit de relancer. En limit, le seuil est plus bas : une demi-mise suffit à rouvrir.
+En no-limit et en pot-limit, pas forcément : un all-in inférieur à une relance complète ne rouvre pas les enchères pour les joueurs qui ont déjà parlé dans ce tour. Ceux-là peuvent seulement suivre ou se coucher. Un joueur qui n'a pas encore parlé garde, lui, le droit de relancer. En limit, le seuil est plus bas : une demi-mise suffit à rouvrir.
 
 ==r:C'est la règle de l'all-in la plus contestée aux tables live — j'ai déjà vu deux joueurs s'écharper cinq bonnes minutes là-dessus pendant que toute la table attendait. Ils avaient tort tous les deux.==
 
-**La règle (no-limit et pot-limit) :** tout se joue sur la notion de **[relance pleine](/fr/blog/holdem-betting-actions)** — l'exemple ci-dessous la calcule pas à pas. Le seuil réduit du limit, la demi-mise, vient de la TDA 2024 Rule 47-B.
+**La règle (no-limit et pot-limit) :** tout se joue sur la notion de **[relance complète](/fr/blog/holdem-betting-actions)** — l'exemple ci-dessous la calcule pas à pas. Le seuil réduit du limit, la demi-mise, vient de la TDA 2024 Rule 47-B.
 
-![Règle de relance après un all-in — un all-in court, inférieur à une relance pleine : le joueur A, qui a déjà parlé, peut seulement suivre ou se coucher](/images/holdem-all-in-reraise-rule.webp)
+![Règle de relance après un all-in — un all-in court, inférieur à une relance complète : le joueur A, qui a déjà parlé, peut seulement suivre ou se coucher](/images/holdem-all-in-reraise-rule.webp)
 
 **Exemple :**
 
 Blindes $1/$2. Quatre joueurs voient le flop.
 
 1. Le joueur A mise $10.
-2. Le joueur B fait tapis pour **$14** (seulement $4 de plus que la mise de $10 de A — pas une relance pleine, qui demanderait au moins $20).
+2. Le joueur B fait tapis pour **$14** (seulement $4 de plus que la mise de $10 de A — pas une relance complète, qui demanderait au moins $20).
 
 Que se passe-t-il pour le joueur A, et pour le joueur C qui n'a pas encore parlé ?
 
-- Le joueur A a déjà parlé (mise de $10) et ne fait face qu'à une relance incomplète. Comme l'all-in de $14 de B est **inférieur à une relance pleine**, l'action NE se rouvre PAS pour le joueur A. ==A peut seulement suivre ou se coucher — il ne peut pas relancer.==
-- Le joueur C n'a pas encore parlé — **le joueur C peut encore relancer**. Attention à la taille, cependant : si C relance, le minimum est un **total** égal à l'all-in de B plus la dernière mise pleine — $14 + $10 = **$24**, et non les $20 qui auraient fait une relance pleine sur A (WSOP Live Action Rule 176). C peut quand même faire tapis pour moins que ça : le minimum ne s'impose jamais à un joueur qui fait tapis (Live Action Rule 175).
+- Le joueur A a déjà parlé (mise de $10) et ne fait face qu'à une relance incomplète. Comme l'all-in de $14 de B est **inférieur à une relance complète**, l'action NE se rouvre PAS pour le joueur A. ==A peut seulement suivre ou se coucher — il ne peut pas relancer.==
+- Le joueur C n'a pas encore parlé — **le joueur C peut encore relancer**. Attention à la taille, cependant : si C relance, le minimum est un **total** égal à l'all-in de B plus la dernière mise pleine — $14 + $10 = **$24**, et non les $20 qui auraient fait une relance complète sur A (WSOP Live Action Rule 176). C peut quand même faire tapis pour moins que ça : le minimum ne s'impose jamais à un joueur qui fait tapis (Live Action Rule 175).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Montant de l'all-in (no-limit / pot-limit) | Relance pleine ? | Rouvre les enchères ? |
+| Montant de l'all-in (no-limit / pot-limit) | Relance complète ? | Rouvre les enchères ? |
 |--------------|-------------|-----------------|
-| Moins qu'une relance pleine | Non | Non — les joueurs qui ont déjà parlé peuvent seulement suivre ou se coucher |
-| Relance pleine ou plus | Oui | Oui — tous les joueurs peuvent de nouveau relancer |
+| Moins qu'une relance complète | Non | Non — les joueurs qui ont déjà parlé peuvent seulement suivre ou se coucher |
+| Relance complète ou plus | Oui | Oui — tous les joueurs peuvent de nouveau relancer |
 
 </div>
 
-Pourquoi cette règle existe-t-elle ? Elle évite qu'un all-in partiel pousse les autres à des relances plus grosses. Une relance pleine signale une vraie agression — un short stack qui pousse ses derniers jetons, non.
+Pourquoi cette règle existe-t-elle ? Elle évite qu'un all-in partiel pousse les autres à des relances plus grosses. Une relance complète signale une vraie agression — un short stack qui pousse ses derniers jetons, non.
 
 ### Cas avancé : plusieurs joueurs font all-in pour moins qu'une relance
 
-C'est la version qui piège même les habitués. Plusieurs all-in courts peuvent **s'additionner** jusqu'à une relance pleine — et si leurs incréments cumulés atteignent le seuil, les enchères se rouvrent pour un joueur qui a déjà parlé. ==r:Le test se fait joueur par joueur, pas une seule fois pour toute la table :== la relance ne se rouvre que pour un joueur qui, **quand l'action lui revient, fait face à au moins une relance pleine au-dessus de ce qu'il a déjà mis** (==TDA 2024 Rule 47==).
+C'est la version qui piège même les habitués. Plusieurs all-in courts peuvent **s'additionner** jusqu'à une relance complète — et si leurs incréments cumulés atteignent le seuil, les enchères se rouvrent pour un joueur qui a déjà parlé. ==r:Le test se fait joueur par joueur, pas une seule fois pour toute la table :== la relance ne se rouvre que pour un joueur qui, **quand l'action lui revient, fait face à au moins une relance complète au-dessus de ce qu'il a déjà mis** (==TDA 2024 Rule 47==).
 
 C'est la règle officielle de la TDA sur la réouverture des enchères (« re-opening the bet »), et la plupart des salles l'appliquent.
 
 **Exemple (blindes $1/$2, au flop) :**
 
 1. Le joueur A mise $10.
-2. Le joueur B fait tapis pour **$14** (incrément de +$4 — pas une relance pleine à lui seul)
-3. Le joueur C fait tapis pour **$21** (incrément de +$7 — pas une relance pleine à lui seul)
+2. Le joueur B fait tapis pour **$14** (incrément de +$4 — pas une relance complète à lui seul)
+3. Le joueur C fait tapis pour **$21** (incrément de +$7 — pas une relance complète à lui seul)
 
 Incréments cumulés : $4 + $7 = **$11** — le seuil de relance minimale (min-raise) de $10 est atteint.
 
-**Résultat : les enchères se ROUVRENT pour le joueur A.** A a mis $10 et fait maintenant face à $21 — $11 de plus, soit au moins une relance pleine — donc A peut se coucher, suivre ou relancer, même si ni B ni C n'a fait individuellement une relance pleine. Un joueur qui aurait suivi les $14 de B entre-temps ne ferait face qu'à $7 de plus quand l'action lui revient, et pour lui rien ne se rouvre : suivre ou se coucher.
+**Résultat : les enchères se ROUVRENT pour le joueur A.** A a mis $10 et fait maintenant face à $21 — $11 de plus, soit au moins une relance complète — donc A peut se coucher, suivre ou relancer, même si ni B ni C n'a fait individuellement une relance complète. Un joueur qui aurait suivi les $14 de B entre-temps ne ferait face qu'à $7 de plus quand l'action lui revient, et pour lui rien ne se rouvre : suivre ou se coucher.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -178,20 +178,20 @@ Incréments cumulés : $4 + $7 = **$11** — le seuil de relance minimale (min-r
 
 </div>
 
-Le seuil de relance minimale est toujours la *dernière mise ou relance pleine et valide* — jamais un total cumulé.
+Le seuil de relance minimale est toujours la *dernière mise ou relance complète et valide* — jamais un total cumulé.
 
 ### Décision express : cet all-in rouvre-t-il les enchères ?
 
-Ce tableau vaut pour le no-limit et le pot-limit. En limit, le seuil est une demi-mise, pas une relance pleine.
+Ce tableau vaut pour le no-limit et le pot-limit. En limit, le seuil est une demi-mise, pas une relance complète.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situation | Rouvre pour les joueurs qui ont déjà parlé ? |
 |---|---|
-| Un seul all-in < relance pleine | ❌ Non — suivre ou se coucher uniquement |
-| Un seul all-in ≥ relance pleine | ✅ Oui — tout le monde peut relancer |
-| Plusieurs all-in courts, cumul < relance pleine | ❌ Non |
-| Plusieurs all-in courts, cumul ≥ relance pleine | ✅ Oui — pour chaque joueur qui fait maintenant face à au moins une relance pleine au-dessus de sa propre dernière action |
+| Un seul all-in < relance complète | ❌ Non — suivre ou se coucher uniquement |
+| Un seul all-in ≥ relance complète | ✅ Oui — tout le monde peut relancer |
+| Plusieurs all-in courts, cumul < relance complète | ❌ Non |
+| Plusieurs all-in courts, cumul ≥ relance complète | ✅ Oui — pour chaque joueur qui fait maintenant face à au moins une relance complète au-dessus de sa propre dernière action |
 | Joueur qui n'a PAS encore parlé | ✅ La limite de réouverture ne s'applique jamais à lui — il peut toujours relancer, dans les limites de mise du jeu : son stack en no-limit, le pot en pot-limit, la taille de mise fixe et le plafond de relances de la salle en limit (TDA 2024 Rule 48) |
 
 </div>
@@ -223,7 +223,7 @@ Avec l'expérience des all-in à table, tu finis par comprendre que le chaos ne 
 Il ne peut pas. Dès que le joueur à tapis est plafonné, tous les jetons supplémentaires misés par les stacks plus gros vont dans un pot sur lequel il n'a aucun droit.
 
 ### Erreur 2 : ignorer la règle de réouverture des relances
-En no-limit et en pot-limit, un all-in partiel ne donne aux joueurs qui ont **déjà parlé** dans ce tour aucune seconde chance de relancer — sauf si plusieurs all-in courts s'empilent au point que l'un d'eux fait face à au moins une relance pleine quand l'action lui revient. Ceux qui n'ont pas encore parlé peuvent relancer, au total minimum vu plus haut. Connaître cette règle par cœur coupe court aux disputes avant qu'elles ne commencent.
+En no-limit et en pot-limit, un all-in partiel ne donne aux joueurs qui ont **déjà parlé** dans ce tour aucune seconde chance de relancer — sauf si plusieurs all-in courts s'empilent au point que l'un d'eux fait face à au moins une relance complète quand l'action lui revient. Ceux qui n'ont pas encore parlé peuvent relancer, au total minimum vu plus haut. Connaître cette règle par cœur coupe court aux disputes avant qu'elles ne commencent.
 
 ### Erreur 3 : ajouter de l'argent de ta poche en plein coup
 Table stakes. Ce qui est sur la table est tout ce que tu peux miser. Si tu es à tapis pour $80 et que le pot fait $400, tu ne peux gagner que $80 de chaque joueur qui a suivi.
@@ -294,7 +294,7 @@ A. Ce n'est pas une question de règle mais de stratégie. La pire raison, c'est
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Toutes les règles, des blindes à l'abattage</div>
   </a>
   <a href="/fr/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split pot</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pot partagé</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles du split pot et du partage</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quand le pot est partagé, et pourquoi</div>
   </a>

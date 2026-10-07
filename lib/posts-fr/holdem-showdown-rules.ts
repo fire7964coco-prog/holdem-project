@@ -123,7 +123,7 @@ Pour voir comment les side pots se forment et se paient quand des joueurs sont �
 
 « Cards speak » (les cartes parlent) veut dire que la meilleure main gagne, quoi que disent les joueurs. Le donneur lit les cartes retournées et attribue le pot à la meilleure main montrée, même si son propriétaire l'a mal annoncée. L'inverse est vrai aussi : une main gagnante jetée sans avoir été montrée ne peut plus rien gagner une fois qu'elle est morte.
 
-![Infographie de la règle cards speak — un board 8♠ 9♣ 10♥ J♦ Q♠ forme une quinte à la dame, et à l'abattage les cartes parlent d'elles-mêmes](/images/holdem-showdown-cards-speak.webp)
+![Infographie de la règle cards speak — un board 8♠ 9♣ 10♥ J♦ Q♠ forme une quinte hauteur dame, et à l'abattage les cartes parlent d'elles-mêmes](/images/holdem-showdown-cards-speak.webp)
 
 Exemple : un joueur lit mal sa main et annonce « j'ai une paire » alors qu'il tient en fait une quinte (suite) — ==c'est la quinte qui gagne==.
 
@@ -237,7 +237,7 @@ A. Seulement quand le coup va jusqu'à l'abattage. Si quelqu'un a misé ou relan
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Toutes les règles — des blindes à l'abattage</div>
   </a>
   <a href="/fr/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split pot</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pot partagé</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles du split pot et des side pots</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quand le pot se partage et comment marchent les side pots</div>
   </a>

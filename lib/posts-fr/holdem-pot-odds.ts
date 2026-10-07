@@ -252,7 +252,7 @@ A. Supérieure. Ta cote du pot donne l'équité dont tu as *besoin* pour suivre 
 2. **La comparaison :** suis quand ton équité bat ta cote du pot. Pour un tirage, outs × 4 ou × 2 donne l'estimation — ne compte que les outs propres, et prends ×2 quand d'autres mises vont venir.
 3. **Le départage :** les cotes implicites sauvent les tirages qui ratent le prix de peu — mais seulement s'il reste des jetons derrière à gagner et un adversaire susceptible de les payer ; tirer aux nuts rend ce gain plus sûr.
 
-Fais-le quelques centaines de fois et ça cesse d'être du calcul pour devenir un réflexe. Tu lâcheras les calls sans espoir, tu feras les calls rentables et tu arrêteras de payer la « taxe de l'espoir ». Pour aller plus loin, affine les chiffres bruts derrière chaque tirage dans le [tableau des probabilités au poker](/fr/blog/holdem-probability), ou vérifie que tu entres dans les pots avec des mains qui valent le tirage grâce au [tableau des mains de départ par position](/fr/blog/holdem-starting-hands-chart).
+Fais-le quelques centaines de fois et ça cesse d'être du calcul pour devenir un réflexe. Tu lâcheras les calls sans espoir, tu feras les calls rentables et tu arrêteras de payer la « taxe de l'espoir ». Pour aller plus loin, affine les chiffres bruts derrière chaque tirage dans le [tableau des probabilités au poker](/fr/blog/holdem-probability), ou vérifie que tu entres dans les pots avec des mains qui valent le tirage grâce au [guide des mains de départ par position](/fr/blog/holdem-starting-hands-chart).
 
 ---
 

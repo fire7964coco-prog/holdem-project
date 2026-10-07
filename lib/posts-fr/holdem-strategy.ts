@@ -88,7 +88,7 @@ Les mains qui passent le filtre dépendent de ta position (la décision 1 nourri
 - **Spéculatives, selon la position :** les petites paires servies et les connecteurs assortis, qui veulent des pots multiway bon marché (les maths plus bas).
 - **Se coucher :** presque tout le reste, surtout les déchets dépareillés comme J‑4, Q‑7, K‑3.
 
-Le [tableau des mains de départ](/fr/blog/holdem-starting-hands-chart) transforme tout ça en grille colorée que tu peux vraiment mémoriser. La discipline ici facilite chacune des décisions suivantes.
+Le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart) transforme tout ça en grille colorée que tu peux vraiment mémoriser. La discipline ici facilite chacune des décisions suivantes.
 
 ---
 
@@ -249,7 +249,7 @@ A. Étudie loin de la table et resserre ton jeu à la table. Les gains les plus 
 4. **Continuation** — fais un c-bet quand tu as l'initiative, mais adapte-toi au board, à la position et aux adversaires.
 5. **Discipline** — lâche les mains battues et les tirages sans cote ; c'est le geste qui fait économiser le plus.
 
-C'est tout le cadre. Pas dix astuces à mémoriser — cinq questions à te poser, dans l'ordre, à chaque main. Deviens bon pour y répondre et tu dépasseras sans bruit les joueurs qui cherchent encore une liste plus longue. Commence par le [tableau des mains de départ](/fr/blog/holdem-starting-hands-chart) et une vraie conscience de ta [position](/fr/blog/holdem-position-play), ajoute les [cotes du pot](/fr/blog/holdem-pot-odds), et tu auras construit un jeu qui bat presque toutes les tables où tu t'assiéras.
+C'est tout le cadre. Pas dix astuces à mémoriser — cinq questions à te poser, dans l'ordre, à chaque main. Deviens bon pour y répondre et tu dépasseras sans bruit les joueurs qui cherchent encore une liste plus longue. Commence par le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart) et une vraie conscience de ta [position](/fr/blog/holdem-position-play), ajoute les [cotes du pot](/fr/blog/holdem-pot-odds), et tu auras construit un jeu qui bat presque toutes les tables où tu t'assiéras.
 
 ---
 

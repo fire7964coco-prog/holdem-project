@@ -21,7 +21,6 @@ export const POST: Post = {
     "raise poker",
     "se coucher au poker",
     "mise minimum poker",
-    "parole poker",
   ],
   image: "/images/holdem-betting-actions-hero.webp",
   imageAlt: "Table de Texas Hold'em avec des piles de jetons CHECK, CALL, RAISE et FOLD — un joueur tient ses cartes fermées en réfléchissant à son action",

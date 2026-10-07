@@ -102,7 +102,7 @@ Le jeu qu'on appelle en France « poker classique » (ou « poker fermé », « 
 
 ## Comment se joue le poker, étape par étape ?
 
-Une main se joue toujours dans le même ordre : le bouton fixe les blindes, la petite et la grosse blinde misent, chacun reçoit deux cartes fermées, puis viennent le préflop, le flop, la turn et la river, avec un tour de mises à chaque fois. Les joueurs encore là à la fin comparent leur meilleure main de cinq cartes.
+Une main se joue toujours dans le même ordre : le bouton fixe les blindes, la petite et la grosse blinde misent, chacun reçoit deux cartes fermées, puis viennent le préflop, le flop, la turn et la river, avec un tour de mises (une street) à chaque fois. Les joueurs encore là à la fin comparent leur meilleure main de cinq cartes.
 
 Cet article te donne la **version débutant du déroulé**, pour que tu puisses t'asseoir sans te figer. Si tu veux une explication plus poussée, étape par étape, avec une main complète, l'ordre des mises et des exemples, lis ensuite [l'ordre de jeu au Texas Hold'em](/fr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
@@ -500,7 +500,7 @@ Pour la suite, revois [le classement des mains au Texas Hold'em](/fr/blog/holdem
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/fr/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Déroulé</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Déroulement</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">L'ordre de jeu au Texas Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Une main complète, du préflop à l'abattage, avec de vrais exemples</div>
   </a>

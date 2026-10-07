@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Mains de départ au poker : quelles mains jouer (et éviter) selon ta position",
   seoTitle: "Te coucher 80 % du temps ? — Quelles mains jouer au poker",
   desc: "La plupart de tes cartes perdent de l'argent. Les meilleures mains de départ au poker, quelles mains jouer selon ta position et en 6-max, lesquelles éviter.",
-  tldr: "Sur les 169 types de mains de départ, seule une petite tranche du haut, environ 15 à 20 % des mains que tu reçois, est rentable pour un débutant. Les grosses paires (AA à TT) et AK relancent depuis n'importe quel siège ; plus tu parles tard, plus tu ouvres large, d'environ 13 % under the gun à environ 43 % au bouton (encore plus large en 6-max). Commence par une sélection de mains simplifiée et passe aux ranges préflop de solveur une fois que « relancer ou se coucher » est devenu automatique.",
+  tldr: "Sur les 169 types de mains de départ, seule une petite tranche du haut, environ 15 à 20 % des mains que tu reçois, est rentable pour un débutant. Les grosses paires (AA à TT) et AK relancent depuis n'importe quel siège ; plus tu parles tard, plus tu ouvres large, d'environ 13 % under the gun à environ 43 % au bouton (encore plus large en 6-max). Commence par une sélection de mains simplifiée et passe aux ranges préflop de solver une fois que « relancer ou se coucher » est devenu automatique.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -163,7 +163,7 @@ Une précision de périmètre : on parle ici du pourcentage de ta *range* à jou
 
 ---
 
-## Faut-il débuter avec les mains d'un solveur ou une sélection simplifiée ?
+## Faut-il débuter avec les mains d'un solver ou une sélection simplifiée ?
 
 Je garde des sorties de solver ouvertes quand j'étudie, et pourtant je donne toujours d'abord une grille simplifiée à chaque débutant. Ce sont deux outils différents, et savoir lequel utiliser vaut plus que n'importe laquelle des deux grilles prise seule.
 
@@ -266,7 +266,7 @@ A. La règle du 7-2 est un jeu annexe maison, pas une règle officielle du poker
 
 A. 7-2 dépareillé est largement considéré comme la pire main de départ au poker. Les cartes sont trop éloignées pour faire une quinte ensemble, trop basses pour gagner souvent sans s'améliorer, et même toucher une paire te laisse avec une main faible et un mauvais kicker.
 
-**Q. Un débutant doit-il utiliser les ranges préflop de solveur ?**
+**Q. Un débutant doit-il utiliser les ranges préflop de solver ?**
 
 A. Pas au début. Les ranges préflop de solver utilisent des fréquences mixtes conçues pour être difficiles à exploiter, même par des adversaires forts — c'est trop pour les parties de débutants, où une sélection simplifiée « relancer ou se coucher » rapporte davantage. Apprends la sélection simple jusqu'à ce qu'elle soit automatique, puis ajoute les ranges de solver quand tu étudies ou que tu montes de limite en ligne.
 

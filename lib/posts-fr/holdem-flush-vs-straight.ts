@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "⚡",
   image: "/images/holdem-flush-vs-straight-hero.webp",
   imageAlt: "Infographie : couleur hauteur as A♠ J♠ 9♠ 6♠ 2♠ à côté d'une quinte hauteur neuf, avec un badge doré FLUSH WINS qui explique pourquoi la couleur est plus forte",
-  tags: ["suite ou couleur", "suite ou couleur qui gagne", "flush poker", "couleur poker", "quinte ou couleur", "full ou couleur", "straight poker", "couleur ou suite qui gagne"],
+  tags: ["suite ou couleur", "suite ou couleur qui gagne", "flush poker", "quinte ou couleur", "full ou couleur", "straight poker", "couleur ou suite qui gagne"],
   content: `
 Le premier gros pot que j'ai perdu en cash game live s'est joué exactement comme ça : je touche une quinte hauteur dix à la river (la rivière), je l'étale sur la table comme si c'était de l'or — et un régulier discret retourne deux cœurs. ==r:Le donneur a poussé le pot de l'autre côté==, et j'ai rejoué cette main dans ma tête pendant tout le trajet du retour.
 
@@ -254,7 +254,7 @@ Fixe l'ordre complet avec [toutes les combinaisons au poker](/fr/blog/holdem-han
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les 10 mains avec probabilités, exemples et énigmes de board</div>
   </a>
   <a href="/fr/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Égalité</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Départage</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Règles d'égalité et du kicker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Même couleur ou même quinte — qui remporte le pot ?</div>
   </a>

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Jouer en position ou hors de position : pourquoi la position bat les cartes",
   seoTitle: "Mêmes cartes, résultat opposé — Jouer en position au poker",
   desc: "Mêmes cartes, résultat opposé ? Ton siège a décidé. Jouer en position ou hors de position, pourquoi ça compte et combien de mains ouvrir d'UTG au bouton.",
-  tldr: "Être en position, c'est parler en dernier : tu vois la décision de chaque adversaire avant de dépenser un jeton. Les exemples de solveur montrent que la position améliore généralement la réalisation d'équité, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'UTG ouvre environ 13 % des mains et le bouton environ 43 %, et que la position réécrit chaque décision de c-bet, de bluff et de contrôle du pot postflop.",
+  tldr: "Être en position, c'est parler en dernier : tu vois la décision de chaque adversaire avant de dépenser un jeton. Les exemples de solver montrent que la position améliore généralement la réalisation d'équité, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'UTG ouvre environ 13 % des mains et le bouton environ 43 %, et que la position réécrit chaque décision de c-bet, de bluff et de contrôle du pot postflop.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",

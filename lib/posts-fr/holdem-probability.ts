@@ -86,7 +86,7 @@ Avant tout flop, il existe exactement **1 326 mains de départ de deux cartes po
 | A-K (assorties *ou* dépareillées) | 1 sur 83 (1,2 %) | — |
 | Deux cartes assorties quelconques | 1 sur 4,3 (23,5 %) | Presque une main sur quatre |
 
-Alors la prochaine fois que quelqu'un dit « je ne touche jamais les as », il a à peu près raison — tu ne reçois une paire *précise* comme les as qu'environ ==une fois toutes les 221 mains==. Mais **n'importe quelle** paire servie arrive toutes les 17 mains, et c'est pour ça que le set mining est une vraie stratégie, pas un fantasme. Quelles paires et quelles mains assorties valent la peine d'être jouées depuis chaque siège, c'est l'objet du [tableau des mains de départ par position](/fr/blog/holdem-starting-hands-chart).
+Alors la prochaine fois que quelqu'un dit « je ne touche jamais les as », il a à peu près raison — tu ne reçois une paire *précise* comme les as qu'environ ==une fois toutes les 221 mains==. Mais **n'importe quelle** paire servie arrive toutes les 17 mains, et c'est pour ça que le set mining est une vraie stratégie, pas un fantasme. Quelles paires et quelles mains assorties valent la peine d'être jouées depuis chaque siège, c'est l'objet du [guide des mains de départ par position](/fr/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -308,7 +308,7 @@ Le poker récompense les joueurs qui ont rendu ces chiffres automatiques. Appren
   </a>
   <a href="/fr/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Mains de départ</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Le tableau des mains de départ par position</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mains de départ : quelles mains jouer selon ta position</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Lesquelles de ces 1 326 mains jouer vraiment</div>
   </a>
   <a href="/fr/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

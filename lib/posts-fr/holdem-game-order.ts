@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Schéma de l'ordre du jeu au Texas Hold'em — les six étapes : blindes, préflop, flop, turn, river et abattage",
-  tags: ["flop turn river", "ordre de jeu poker", "qui commence au poker", "preflop poker", "river poker", "under the gun poker", "bouton dealer poker", "deroulement partie de poker"],
+  tags: ["flop turn river", "ordre de jeu poker", "qui commence au poker", "preflop poker", "river poker", "bouton dealer poker", "deroulement partie de poker"],
   content: `
 Tout le monde se pose la même question en s'asseyant pour sa première partie de Texas Hold'em : ==r:*« Attends — c'est à qui de parler, et quand est-ce que je mets des jetons ? »*== Tu sais qu'on va te distribuer des cartes. Ce que tu ne sais pas encore, c'est quand poser ta blinde (blind), quand miser, quand les cartes suivantes arrivent, et comment on désigne vraiment le gagnant à l'abattage (showdown).
 
@@ -403,7 +403,7 @@ A. La cote du pot, c'est le rapport entre la taille actuelle du pot et le montan
 
 **Q. Quand faut-il faire all-in ?**
 
-A. Faire tapis, c'est miser tous tes jetons. Fais-le avec une main très forte (les nuts), ou en bluff pour faire coucher tes adversaires. Une fois à tapis, tu ne peux plus miser, mais tu restes éligible à la part du pot que tu as égalée. Quand les stacks sont différents et qu'au moins deux joueurs continuent de miser au-delà de ton tapis, cela crée un side pot (pot annexe), voire plusieurs — voir [les règles du tapis et des side pots](/fr/blog/holdem-all-in-rules).
+A. Faire tapis, c'est miser tous tes jetons. Fais-le avec une main très forte (les nuts), ou en bluff pour faire coucher tes adversaires. Une fois à tapis, tu ne peux plus miser, mais tu restes éligible à la part du pot que tu as égalée. Quand les stacks sont différents et qu'au moins deux joueurs continuent de miser au-delà de ton stack, cela crée un side pot (pot annexe), voire plusieurs — voir [les règles du tapis et des side pots](/fr/blog/holdem-all-in-rules).
 
 **Q. Combien de tours d'enchères y a-t-il dans une main ?**
 

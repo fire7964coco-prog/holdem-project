@@ -450,7 +450,7 @@ Une fois les combinaisons connues, l'étape suivante est de savoir avec quelles 
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Les maths, les erreurs de lecture et chaque règle d'égalité</div>
   </a>
   <a href="/fr/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Égalité</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Départage</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les règles pour départager</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Même paire : qui gagne ? Kicker et pot partagé</div>
   </a>
@@ -460,7 +460,7 @@ Une fois les combinaisons connues, l'étape suivante est de savoir avec quelles 
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Le chop et les 5 cas d'égalité expliqués</div>
   </a>
   <a href="/fr/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Débutants</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Guide débutant</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Les règles du Texas Hold'em pour débutants</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Toutes les règles, de la distribution à l'abattage</div>
   </a>

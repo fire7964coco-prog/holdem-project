@@ -18,6 +18,7 @@
 //
 // 🔴 fr 코퍼스는 규칙 6편뿐이다(`lib/posts-fr/`). EN quickRef 6링크·related 8슬러그가 **하나도 실존하지 않는다** →
 //    `link`는 «생략»이 정답이고 related는 실존 6편 전수다. 없는 슬러그를 베끼면 /fr/blog/… 404다.
+// ★2026-10-07 fr 51편 헤드 회차(`docs/fr-cluster-plan.md` H-7·H-30): 대상 글이 전부 생겨 quickRef 6링크·deal 링크·related 8을 EN대로 걸었다.
 //    게이트 `npm run check:calc-parity -- fr`의 F항이 이 규율을 코드로 본다(셀프테스트 15/15).
 //
 // 조판(코퍼스 실측): % 앞 공백 19 : 0 · 천단위 공백(«1 300») · 소수 쉼표 · $ 유지 · guillemets « » · register = tu.
@@ -428,7 +429,7 @@ export const CALC_DICT_FR: CalcDict = {
     deal: {
       // ★2026-09-17 EN 재조준 — 옛 예시(50/30/20 · 618/485/397)는 EN `holdem-icm` 본문 표와 동일해 카니발이었다.
       //   새 예시 = 4명 · 45/25/18/12 · $2 300(1 000/600/400/300) · 값 출처 `scripts/calc-icm-example.ts`.
-      //   🔴 fr 코퍼스에 holdem-icm이 없어 `linkLead`/`link`는 «생략»이 정답이다(게이트 F항 · 뱅크 §0-A).
+      //   ★2026-10-07 fr 51편 헤드 회차: holdem-icm이 생겨 EN대로 `linkLead`/`link`를 걸었다(게이트 F항 실존 확인).
       badge: "Calculateur de chop ICM",
       h2: "Calculateur de chop ICM — ce que vaut vraiment un deal de table finale",
       intro: "Il reste quatre joueurs et ils discutent d'un deal. Les tapis sont 450 000 / 250 000 / 180 000 / 120 000 (45 % / 25 % / 18 % / 12 %) et il reste $2 300 de gains, payés $1 000 / $600 / $400 / $300. Saisis-les dans le calculateur ICM ci-dessus : sa colonne « Chip chop » met les deux chiffres côte à côte :",
@@ -446,12 +447,14 @@ export const CALC_DICT_FR: CalcDict = {
         b2: "plus juste pour les petits tapis",
         b3: "$182 de plus",
       },
+      linkLead: "Le modèle derrière ces chiffres, avec le bubble factor et les usages d'un deal, est dans",
+      link: { slug: "holdem-icm", text: "ICM au poker : l'Independent Chip Model expliqué" },
     },
   },
 
   // ★2026-09-18 빠른 참조 6표 — 🔴 모든 값 = `scripts/calc-reference-tables.ts` 출력(09-17). 손으로 고치지 마라(§13).
-  //   🔴 `link`/`linkTail`은 전 표에서 «생략»이다 — fr 코퍼스에 probability·equity·outs·pot-odds·short-stack·
-  //      tournament-vs-cash-game 글이 하나도 없다(뱅크 §0-A). 없는 슬러그를 베끼면 404다.
+  //   ★2026-10-07 `link`/`linkTail` = EN 6링크 그대로(fr 51편 헤드 회차) — 그 전엔 fr 코퍼스에 probability·equity·outs·pot-odds·short-stack·
+  //      tournament-vs-cash-game 글이 없어 생략했었다(뱅크 §0-A).
   //   🪶 열 이름은 cours-et-fiches.com 축어를 따랐다(«Tirage type» · «Cote offerte») — 단 스트리트는 EN처럼
   //      화살표형을 유지한다. 프랑스어 관용 «% au turn / % à la river»는 «어디서 출발했는지»를 안 적어
   //      세 열을 나란히 놓으면 모호해진다(그 사이트는 두 열만 쓴다 · «% flop → river» 화살표형도 그 사이트 축어다).
@@ -480,7 +483,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["AKs vs QJs", "63,5 %", "36,5 %", "0,5 %"],
         ["AKo vs JTs", "59,5 %", "40,5 %", "0,5 %"],
       ],
-      note: "L'équité au poker, c'est ta part moyenne du pot, égalités comprises. Une paire face à deux overcards, c'est la course classique ; une paire face à une paire plus haute est outsider à environ 4,5 contre 1.",
+      note: "L'équité au poker, c'est ta part moyenne du pot, égalités comprises. Une paire face à deux overcards, c'est la course classique ; une paire face à une paire plus haute est outsider à environ 4,5 contre 1. Le tableau complet des cotes, street par street, est dans",
+      link: { slug: "holdem-probability", text: "Tableau des probabilités au poker" },
+      linkTail: ".",
     },
     {
       badge: "Référence rapide",
@@ -497,7 +502,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["1", "85,2 %"], ["2", "73,4 %"], ["3", "63,8 %"], ["4", "55,9 %"],
         ["5", "49,2 %"], ["6", "43,6 %"], ["7", "38,7 %"], ["8", "34,6 %"],
       ],
-      note: "C'est pour ça que les as veulent un pot en heads-up : face à cinq mains aléatoires, la meilleure main de départ du Hold'em n'est plus favorite pour remporter le pot (49,2 %, les cinq autres se partageant le reste). Mets un adversaire sur « Main aléatoire » dans l'onglet « Équité » pour tester n'importe quelle main de la même façon (jusqu'à trois adversaires).",
+      note: "C'est pour ça que les as veulent un pot en heads-up : face à cinq mains aléatoires, la meilleure main de départ du Hold'em n'est plus favorite pour remporter le pot (49,2 %, les cinq autres se partageant le reste). Mets un adversaire sur « Main aléatoire » dans l'onglet « Équité » pour tester n'importe quelle main de la même façon (jusqu'à trois adversaires). Pourquoi les grosses mains perdent de leur valeur dans un pot à plusieurs, c'est expliqué dans",
+      link: { slug: "holdem-equity", text: "L'équité au poker expliquée" },
+      linkTail: ".",
     },
     {
       badge: "Référence rapide",
@@ -529,7 +536,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["19", "–", "65,0 %", "40,4 %", "41,3 %", "76 % · 38 %"],
         ["20", "–", "67,5 %", "42,6 %", "43,5 %", "80 % · 40 %"],
       ],
-      note: "Le chiffre à deux cartes ne vaut que si tu vas voir les deux sans repayer (un tapis). Face à une mise au flop, prends la colonne flop → turn : 9 outs = 19,1 %. Les overcards sont les outs les moins fiables — face à une main faite, en apparier une perd souvent quand même, alors dévalue-les.",
+      note: "Le chiffre à deux cartes ne vaut que si tu vas voir les deux sans repayer (un tapis). Face à une mise au flop, prends la colonne flop → turn : 9 outs = 19,1 %. Les overcards sont les outs les moins fiables — face à une main faite, en apparier une perd souvent quand même, alors dévalue-les. Comment compter ses outs sans en compter deux fois, c'est expliqué dans",
+      link: { slug: "holdem-outs", text: "Compter ses outs au poker" },
+      linkTail: ".",
     },
     {
       badge: "Référence rapide",
@@ -550,7 +559,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["2× le pot", "1,5 : 1", "40,0 %"],
         ["3× le pot", "1,33 : 1", "42,9 %"],
       ],
-      note: "Un tirage couleur (35,0 % avec deux cartes à venir, 19,1 % sur la carte suivante) ne paie une mise de la taille du pot au flop que si c'est un tapis. Sinon, le calculateur de cotes implicites — le bouton de l'onglet « Cotes du pot » — ajoute l'argent que tu comptes gagner plus tard, à condition que l'adversaire ait du tapis derrière et une main qui paiera ; dévalue-le fortement quand tu ne tires pas vers la main max.",
+      note: "Un tirage couleur (35,0 % avec deux cartes à venir, 19,1 % sur la carte suivante) ne paie une mise de la taille du pot au flop que si c'est un tapis. Sinon, le calculateur de cotes implicites — le bouton de l'onglet « Cotes du pot » — ajoute l'argent que tu comptes gagner plus tard, à condition que l'adversaire ait du tapis derrière et une main qui paiera ; dévalue-le fortement quand tu ne tires pas vers la main max. La méthode en 10 secondes, valable pour n'importe quel spot, est dans",
+      link: { slug: "holdem-pot-odds", text: "Cote du pot au poker : la méthode en 10 secondes" },
+      linkTail: ".",
     },
     {
       badge: "Référence rapide",
@@ -565,7 +576,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["8 ≤ SPR < 15", "Ça devient profond", "Brelan et mieux jouent pour les tapis ; les tirages gagnent des cotes implicites"],
         ["SPR ≥ 15", "Profond", "Les gros pots seulement avec des mains de classe max — les mains faites faibles sont des cibles à bluff"],
       ],
-      note: "Le calculateur de SPR ci-dessus transforme n'importe quel tapis et n'importe quel pot en l'une de ces quatre zones.",
+      note: "Le calculateur de SPR ci-dessus transforme n'importe quel tapis et n'importe quel pot en l'une de ces quatre zones. Pour les ranges selon la profondeur de stack, voir",
+      link: { slug: "holdem-short-stack", text: "Comment jouer un short stack au poker" },
+      linkTail: ".",
     },
     {
       badge: "Référence rapide",
@@ -581,7 +594,9 @@ export const CALC_DICT_FR: CalcDict = {
         ["🟡 Zone jaune", "10–19", "La pression est là — récupère des jetons agressivement dans les bons spots"],
         ["🟢 Zone verte", "20+", "Tapis confortable — stratégie complète, jeu en position et bluffs"],
       ],
-      note: "C'est aussi pour ça qu'un tapis de tournoi se mesure en orbites et en blindes plutôt qu'en jetons.",
+      note: "C'est aussi pour ça qu'un tapis de tournoi se mesure en orbites et en blindes plutôt qu'en jetons. Toutes les différences entre les deux formats sont dans",
+      link: { slug: "holdem-tournament-vs-cash-game", text: "Cash game ou tournoi au poker" },
+      linkTail: ".",
     },
   ],
 
@@ -609,19 +624,21 @@ export const CALC_DICT_FR: CalcDict = {
     q: "Q. {q}",
   },
 
-  // 🔴 fr 코퍼스는 규칙 6편뿐이라 related = **전수 6**이다(EN 8과 개수가 다른 유일한 로케일).
+  // ★2026-10-07 related = EN 8 그대로(fr 51편 헤드 회차 · 그 전엔 규칙 6편 전수였다).
   //    게이트 `check:calc-parity`의 F항이 «min(EN 8, 코퍼스 크기)»로 판정한다 — 개수를 억지로 8로 채우면 404가 난다.
   //    카드 desc는 각 글의 title/seoTitle 축어 범위 안에서만 썼다(창작 금지 · settled §3-A).
   related: {
     badge: "Pour aller plus loin",
     h2: "Les guides à lire une fois que les maths sont claires",
     links: [
-      { slug: "texas-holdem-rules-for-beginners", title: "Règles du Texas Hold'em pour débutants", desc: "Jouer pas à pas : jetons, mains et première stratégie" },
-      { slug: "holdem-blind-meaning", title: "Les blindes au poker", desc: "Petite et grosse blinde, expliquées simplement" },
-      { slug: "holdem-betting-actions", title: "Les actions au Texas Hold'em", desc: "Checker, suivre, relancer, se coucher" },
-      { slug: "holdem-all-in-rules", title: "Règles du tapis (all-in)", desc: "Side pots, relances et abattage" },
-      { slug: "holdem-game-order", title: "L'ordre du jeu au Texas Hold'em", desc: "Quand miser, à qui de parler — des blindes à l'abattage" },
-      { slug: "holdem-showdown-rules", title: "Règles de l'abattage", desc: "Qui montre en premier, jeter ses cartes et le slow roll" },
+      { slug: "holdem-icm", title: "ICM au poker", desc: "Chip EV contre valeur en gains, bubble factor, deals" },
+      { slug: "holdem-equity", title: "L'équité au poker expliquée", desc: "% de victoire, fold equity et réalisation" },
+      { slug: "holdem-pot-odds", title: "Cote du pot au poker", desc: "Transformer un call ou un fold en calcul" },
+      { slug: "holdem-outs", title: "Compter ses outs au poker", desc: "Les outs par tirage et la règle du 2 et du 4" },
+      { slug: "holdem-probability", title: "Tableau des probabilités au poker", desc: "Le tableau complet des cotes de chaque main" },
+      { slug: "holdem-starting-hands-chart", title: "Mains de départ au poker", desc: "Quelles mains jouer selon ta position" },
+      { slug: "holdem-short-stack", title: "Short stack et push or fold", desc: "Utiliser un tableau push or fold, et ses limites" },
+      { slug: "holdem-implied-odds", title: "Cotes implicites au poker", desc: "Quand un mauvais prix reste un bon call" },
     ],
   },
 };
