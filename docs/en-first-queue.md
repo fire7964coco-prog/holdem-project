@@ -467,6 +467,20 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지 ②(선택 · UNV · 자동 착수 금지): bad-beat Mabuchi «moved all in» ↔ 원보도 «splashing his chips» · position-play «bluff-catchers that under-realize» → «that tend to…» · chart «single biggest improvement» → «one of the biggest». EN 손질 때 같이.
 
+### 2-AD. 우편함 수신분 — MA-353 (JA ④ §4 형제 통일) · MA-354 (사장님 결재 4건) · 판정·이행 2026-10-07 (8) · MB-198
+
+| # | 자리 | 이행 |
+|---|---|---|
+| AD-1 | MA-353 ① cooler «사전» 귀속 7로케일 | MB-197 `058a9718`에서 이미 이행(MA-356 재판정 OK) |
+| AD-2 | MA-353 ② ja showdown FAQ5 «どのキャッシュゲームでも…（ルール149）» | WSOP 룰북 귀속을 문장 안으로(L95 문면) |
+| AD-3 | MA-354 ① flush-vs-straight «rarer always wins» | «among hand types, the rarer one always ranks higher» × 9로케일 + fr 통합 브랜치 |
+| AD-4 | MA-354 ① probability 카드 «Why the rarer hand always wins» | «Why the rarer hand type ranks higher» × 7로케일 + fr 통합 브랜치 |
+| AD-5 | MA-354 ① id equity·straddle 카드 | «posisi sangat menentukan» · «hampir hanya» |
+
+- 🪶 EN equity 카드 «Why realization lives and dies on position»(전 로케일 동형) — 본문 충돌은 id뿐이라 이번엔 id만. EN 손질 때 «Why position shapes how much equity you realize»류로 형제 같이.
+- 🪶 MA-353 통지 ③(선택 · UNV): zh positions «满员的 full ring 桌» → «满桌（full ring）» · reading «many rivers beat it» → «can beat it»(EN-먼저) · ja drawing L63 «およそ».
+
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

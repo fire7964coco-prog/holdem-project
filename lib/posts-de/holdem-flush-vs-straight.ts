@@ -70,7 +70,7 @@ Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein F
 
 ### Warum sich das falsch anfühlt
 
-Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine Rolle**==. Diese Freiheit erzeugt eine riesige Zahl an Kombinationen. Ein Flush ist das Gegenteil: Jede der fünf Karten muss ==**dieselbe Farbe**== teilen, und nur eine von vier Farben schafft das zur selben Zeit. ==g:Weit weniger Wege dorthin bedeuten, dass der Flush seltener ist – und das Seltenere gewinnt immer.==
+Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine Rolle**==. Diese Freiheit erzeugt eine riesige Zahl an Kombinationen. Ein Flush ist das Gegenteil: Jede der fünf Karten muss ==**dieselbe Farbe**== teilen, und nur eine von vier Farben schafft das zur selben Zeit. ==g:Weit weniger Wege dorthin bedeuten, dass der Flush seltener ist – und unter den Handkategorien rangiert die seltenere immer höher.==
 
 :::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, gewinnst du den Zusammenstoß – wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown. Das heißt nicht, dass du Favorit bist: Kommt sein Straßendraw mit einem Paar oder höheren Karten, kann er vor dem River trotzdem vorn liegen.]:::
 

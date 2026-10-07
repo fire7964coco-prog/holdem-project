@@ -70,7 +70,7 @@ Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un 
 
 ### Por qué esto parece al revés
 
-Una escalera solo necesita cinco valores seguidos, y ==**los palos no importan**==. Esa libertad crea una cantidad enorme de combinaciones. El color es lo contrario: cada una de las cinco cartas tiene que compartir ==**el mismo palo**==, y solo uno de los cuatro palos puede lograrlo a la vez. ==g:Muchas menos formas de llegar significa que el color es más raro — y lo más raro siempre gana.==
+Una escalera solo necesita cinco valores seguidos, y ==**los palos no importan**==. Esa libertad crea una cantidad enorme de combinaciones. El color es lo contrario: cada una de las cinco cartas tiene que compartir ==**el mismo palo**==, y solo uno de los cuatro palos puede lograrlo a la vez. ==g:Muchas menos formas de llegar significa que el color es más raro — y entre las categorías de mano, la más rara siempre ocupa un puesto más alto.==
 
 :::tip[Si tienes un proyecto de color y tu rival va a la escalera, ganas el choque — cuando **ambos** proyectos se completan, tu color gana a su escalera en el showdown. Eso no es lo mismo que ser favorito: si su proyecto de escalera viene con una pareja o con cartas más altas, puede seguir por delante antes del river.]:::
 

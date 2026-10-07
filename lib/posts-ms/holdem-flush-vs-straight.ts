@@ -70,7 +70,7 @@ Straight mempunyai lebih kurang ==r:**dua kali ganda**== cara untuk terbentuk be
 
 ### Mengapa ini terasa terbalik
 
-Straight hanya memerlukan lima nilai berturutan, dan ==**suit tidak penting**==. Kebebasan itu mewujudkan jumlah kombinasi yang sangat besar. Flush pula sebaliknya: setiap satu daripada lima kad mesti berkongsi ==**suit yang sama**==, dan hanya satu daripada empat suit boleh melakukannya pada satu masa. ==g:Lebih sedikit jalan untuk sampai ke sana bermakna flush lebih jarang — dan yang lebih jarang sentiasa menang.==
+Straight hanya memerlukan lima nilai berturutan, dan ==**suit tidak penting**==. Kebebasan itu mewujudkan jumlah kombinasi yang sangat besar. Flush pula sebaliknya: setiap satu daripada lima kad mesti berkongsi ==**suit yang sama**==, dan hanya satu daripada empat suit boleh melakukannya pada satu masa. ==g:Lebih sedikit jalan untuk sampai ke sana bermakna flush lebih jarang — dan antara kategori tangan, yang lebih jarang sentiasa berkedudukan lebih tinggi.==
 
 :::tip[Jika anda memegang flush draw dan lawan anda mengejar straight, anda menang apabila kedua-duanya bertembung — apabila **kedua-dua** draw menjadi, flush anda mengalahkan straight mereka di showdown. Itu tidak sama dengan lebih berpeluang menang: jika straight draw mereka datang bersama pair atau kad yang lebih tinggi, mereka masih boleh mendahului sebelum river.]:::
 

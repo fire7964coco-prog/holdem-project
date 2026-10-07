@@ -1,3 +1,10 @@
+## 2026-10-07 (8) — 우편함 MA-351~356 회신 · MA-353 ② · MA-354 ① 이행 (MB-198 · queue §2-AD)
+
+- ACK: MA-351(fr 판정 보류 수용) · MA-355·356(cooler 재판정 · EN #45 해제). MA-353 ①은 MB-197로 이미 이행.
+- MA-353 ② ja showdown FAQ5 WSOP 귀속 문장 안으로. MA-354 ① «rarer always wins» 족보 종류 한정 9로케일 + probability 카드 7로케일 + id equity·straddle 카드 = 19자리 · fr 통합 브랜치 2자리(698e1b4b).
+- 솔버 S-034(동결)·S-042(후기창 머지와 같이)는 사장님 지시 대기라 회신 안 함.
+- 게이트: audit:hard 9로케일 🔴 0 · 빌드 exit 0(74 + 641).
+
 ## 2026-10-07 (7) — fr 레인 🅰 rules · 🅲 prob 머지 (통합 브랜치 fr-integration)
 
 - 결정: main 대신 fr-integration(Holdem-fr-head)에 머지 — main push = 배포라 반쪽 fr가 라이브로 나가는 것을 막는다(계획 §4-A).
