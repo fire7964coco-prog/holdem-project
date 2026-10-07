@@ -164,7 +164,7 @@ Le delayed c-bet transforme un spot où un c-bet automatique t'aurait fait saign
 
 Rendons le « ne fais pas » explicite, parce que c'est là que l'argent s'économise :
 
-- **Le board a écrasé la range de ton adversaire.** Un flop 7‑6‑5 ou 9‑8‑7 touche les mains qui paient une relance bien plus fort que les tiennes. Miser ici avec la plupart de ta range, c'est faire un don — checke bien plus souvent, et quand tu mises, mise gros et de façon sélective.
+- **Le board a fortement touché la range de ton adversaire.** Un flop 7‑6‑5 ou 9‑8‑7 touche les mains qui paient une relance bien plus fort que les tiennes. Miser ici avec la plupart de ta range, c'est faire un don — checke bien plus souvent, et quand tu mises, mise gros et de façon sélective.
 - **Tu es hors de position sur un board dynamique** avec une main moyenne. Tu parles en premier sans information : garde le pot petit et checke.
 - **Tu es en multiway avec du vent.** Voir plus haut — pas de fold equity, pas de mise.
 - **Ta main doit protéger une range de check.** Parfois tu checkes une main forte exprès pour que tes checks ne soient pas automatiquement faibles.
@@ -195,7 +195,7 @@ Même relance préflop, flops opposés, bons coups opposés. Toute la leçon est
 | **Miser gros avec une range large** | Une range large veut un petit sizing, pas un gros | Petit sur sec, gros seulement quand tu es polarisé |
 | **C-bet léger en multiway** | La fold equity s'effondre avec plus de joueurs | Value et tirages uniquement contre 2 ou plus |
 | **C-bet trop souvent OOP** | Tu réalises moins d'équité en parlant en premier | Checke plus, construis une range de check |
-| **Miser sur un board qui l'a touché** | 7‑6‑5 a écrasé sa range, pas la tienne | Checke plus ; mise gros et sélectif quand tu mises |
+| **Miser sur un board qui l'a touché** | 7‑6‑5 a fortement touché sa range, pas la tienne | Checke plus ; mise gros et sélectif quand tu mises |
 | **Le barrel « une fois et c'est fini »** | C-bet au flop et abandonner toujours à la turn = facile à floater | Aie un plan pour la turn avant de tirer |
 | **Triple barrel sans équité** | Bluffer tout un stack sans outs ni bloqueurs | Bluffe avec de l'équité de secours ou de bons bloqueurs |
 
@@ -246,7 +246,7 @@ A. Un delayed c-bet, c'est quand le relanceur préflop checke le flop puis mise 
 
 **Q. Quand ne faut-il PAS c-bet ?**
 
-A. Ne c-bet pas par défaut quand le board a écrasé la range de ton adversaire (boards bas et connectés — checke plus, et mise gros et sélectif quand tu mises), quand tu es hors de position avec une main moyenne sur un board dynamique, quand tu es en multiway avec du vent, ou quand ta main préfère protéger une range de check. Checker dans ces spots n'est pas de la faiblesse — ça économise des jetons et rend tes futures mises plus crédibles.
+A. Ne c-bet pas par défaut quand le board a fortement touché la range de ton adversaire (boards bas et connectés — checke plus, et mise gros et sélectif quand tu mises), quand tu es hors de position avec une main moyenne sur un board dynamique, quand tu es en multiway avec du vent, ou quand ta main préfère protéger une range de check. Checker dans ces spots n'est pas de la faiblesse — ça économise des jetons et rend tes futures mises plus crédibles.
 
 **Q. Le c-bet est-il un bluff ?**
 

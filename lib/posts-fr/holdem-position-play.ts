@@ -32,7 +32,7 @@ Une heure plus tard, mêmes K♥Q♥, cette fois au bouton. Je relance, la gross
 
 ## Que veut dire « être en position » au poker ?
 
-Être **en position**, c'est parler **après** ton adversaire au flop, à la turn (le tournant) et à la river (la rivière) — tu le regardes checker, miser ou abandonner avant d'engager le moindre jeton. La position se mesure toujours par rapport au **bouton du donneur** : plus tu es proche du bouton, plus tu parles tard, et le bouton lui-même parle en dernier à chaque tour après le flop, à coup sûr.
+Être **en position**, c'est parler **après** ton adversaire au flop, à la turn (le tournant) et à la river (la rivière) — tu le regardes checker, miser ou abandonner avant d'engager le moindre jeton. La position se mesure toujours par rapport au **bouton du donneur** : plus tu te rapproches du bouton par sa droite, plus tu parles tard, et le bouton lui-même parle en dernier à chaque tour après le flop, à coup sûr.
 
 La position se décide préflop et ne change jamais pendant le coup. Si tu es au bouton et que la grosse blinde paie ta relance, tu es IP pour toute la main. Si tu ouvres depuis under the gun et que le bouton paie, tu es OOP à chaque tour jusqu'à l'abattage.
 

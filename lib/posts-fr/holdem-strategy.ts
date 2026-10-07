@@ -209,7 +209,7 @@ A. Bluffe quand l'histoire est crédible et que ton adversaire peut vraiment se 
 
 **Q. Quand faire un 3-bet au poker ?**
 
-A. Fais un 3-bet (surrelancer un relanceur préflop) pour la value avec tes mains les plus fortes — grosses paires et A-K — pour gonfler le pot quand tu es devant, et ajoute un nombre plus réduit de bluffs avec des mains qui jouent bien quand elles sont payées, comme les connecteurs assortis ou les as assortis. 3-bet davantage en position tardive et contre les joueurs qui ouvrent trop large ; couche plutôt que de suivre tes mains les plus faibles hors de position. Tailles et ranges détaillées : le [guide du 3-bet](/fr/blog/holdem-3bet).
+A. Fais un 3-bet (surrelancer un relanceur préflop) pour la value avec tes mains les plus fortes — grosses paires et A-K — pour gonfler le pot quand tu es devant, et ajoute un nombre plus réduit de bluffs avec des mains qui jouent bien quand elles sont payées, comme les connecteurs assortis ou les as assortis. 3-bet davantage en position tardive et contre les joueurs qui ouvrent trop large ; couche-toi avec tes mains les plus faibles hors de position plutôt que de suivre. Tailles et ranges détaillées : le [guide du 3-bet](/fr/blog/holdem-3bet).
 
 **Q. Quand relancer au poker plutôt que suivre ?**
 

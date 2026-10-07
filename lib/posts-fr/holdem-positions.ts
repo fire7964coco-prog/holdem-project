@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-positions",
   title: "Les positions au poker : le nom de chaque siège, UTG, cut-off, bouton et blindes",
   seoTitle: "Ta place change de nom à chaque main — Positions au poker",
-  desc: "UTG cette main, hijack la suivante ? Les noms suivent le bouton, pas les chaises. Les positions au poker de UTG aux blindes, le 6-max et qui parle en premier.",
+  desc: "UTG cette main, grosse blinde la suivante ? Les noms suivent le bouton. Les positions au poker de UTG aux blindes, le 6-max et qui parle en premier.",
   tldr: "Les positions au poker sont les noms des sièges mesurés à partir du bouton (UTG, lojack, hijack, cut-off, bouton et les blindes), et elles tournent normalement d'un siège dans le sens des aiguilles d'une montre à chaque main. Préflop, UTG parle en premier et la grosse blinde en dernier ; postflop, la petite blinde parle en premier et le bouton en dernier (en heads-up, le bouton est la petite blinde : premier à parler préflop, dernier postflop). Les numéros de siège physiques ne bougent jamais ; les positions, si.",
   category: "strategy",
   date: "2026-10-07",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Vue de dessus d'une table de poker professionnelle montrant 9 positions de joueurs avec leurs piles de jetons et un bouton de donneur doré",
   tags: ["position poker", "positions au poker", "utg poker", "cut off poker", "bouton poker", "position poker 6 max", "position poker table", "under the gun poker", "hijack poker"],
   content: `
-Ma toute première partie de cash game en live, j'étais assis à ce que j'apprendrais plus tard s'appeler UTG. Je regarde mes cartes : J♥ J♠. Je relance. Le hijack suit. Le cut-off suit. Le bouton suit. La grosse blinde fait 3-bet. Je ne savais absolument pas quoi faire — j'ai payé, et j'ai laissé fondre mes jetons sur trois tours d'enchères.
+Ma toute première partie de cash game en live, j'étais assis à ce que j'apprendrais plus tard s'appeler UTG. Je regarde mes cartes : J♥ J♠. Je relance. Le hijack suit. Le cut-off suit. Le bouton suit. La grosse blinde fait un 3-bet. Je ne savais absolument pas quoi faire — j'ai payé, et j'ai laissé fondre mes jetons sur trois tours d'enchères.
 
 Trois mains plus tard, j'étais au bouton avec les mêmes J♥ J♠. Je relance. Tout le monde se couche. J'empoche $14 sans même voir un flop.
 

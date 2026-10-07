@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-card-counting",
   title: "Peut-on compter les cartes au poker ? Oui, mais pas comme tu le crois",
   seoTitle: "Peut-on compter les cartes au poker ? — Oui, mais autrement",
-  desc: "Compter les cartes au poker façon blackjack ne marche pas, mais le poker a le sien. L'interdit en salle, et comment outs et bloqueurs le remplacent.",
+  desc: "Le comptage des cartes façon blackjack ne marche pas au poker, mais le poker a le sien. L'interdit en salle, et comment outs et bloqueurs le remplacent.",
   tldr: "Pas comme au blackjack : le paquet est rebattu à chaque main et trop peu de cartes sont visibles, donc suivre les hautes et les basses cartes ne te donne aucun avantage. Mais le poker a son propre comptage, admis en salle : compter ses outs, utiliser les bloqueurs et suivre les cartes mortes pour lire ce que l'adversaire ne peut pas avoir.",
   category: "odds",
   date: "2026-10-07",

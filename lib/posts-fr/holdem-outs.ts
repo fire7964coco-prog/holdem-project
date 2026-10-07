@@ -122,7 +122,7 @@ C'est exactement l'erreur de ma première année : un tirage couleur et un gutsh
 
 Deux chiffres comptent pour chaque tirage. **« D'ici la river »** compte les deux cartes restantes et s'applique quand plus aucune mise ne peut venir — tu es à tapis, ou tu as payé un tapis. **« Flop → turn »** ne compte que la carte suivante (9 ÷ 47 = 19,1 % ; de la turn à la river, ça devient 9 ÷ 46 = 19,6 %) — utilise-le dès qu'il reste des mises à venir, parce que tu n'es sûr de voir qu'une carte à la fois. Les débutants citent le gros chiffre « d'ici la river » face à une mise à la turn, se persuadent de suivre, et le paient.
 
-Regarde le monstre à 15 outs : avec deux cartes à venir, il rentre 54,1 % du temps — contre une simple paire, ça en fait en général le **favori**, le rare tirage avec lequel tu peux volontiers faire tapis au flop. Contre un brelan servi, non : le board peut s'apparier et donner un full au brelan — l'exemple J♠ T♠ sur 9♠ 8♣ 2♠ plus bas n'a qu'environ 40 % contre une paire de neuf servie.
+Regarde le monstre à 15 outs : avec deux cartes à venir, il rentre 54,1 % du temps — contre une simple paire, ça en fait en général le **favori**, le rare tirage avec lequel tu peux volontiers faire tapis au flop. Contre un brelan servi, non : le board peut s'apparier et donner un full au brelan — l'exemple J♠ 10♠ sur 9♠ 8♣ 2♠ plus bas n'a qu'environ 40 % contre une paire de neuf servie.
 
 ---
 
@@ -160,7 +160,7 @@ La correction propre pour les gros tirages : pour **plus de 8 outs au flop**, mu
 > **Réponse rapide**
 > Un tirage couleur plus un tirage quinte bilatéral a 15 cartes distinctes qui le complètent, pas 17 : deux cartes de quinte appartiennent déjà à l'enseigne de la couleur. Un tirage couleur plus un gutshot en a 12, parce qu'une carte se chevauche. Compte l'union des tirages, puis décompte à part les cartes qui perdraient quand même.
 
-Disons que tu as ==b:J♠ T♠== sur un flop ==9♠ 8♣ 2♠==. Tu as deux tirages empilés : un tirage couleur (pique) et un tirage quinte bilatéral (n'importe quelle Q ou n'importe quel 7 fait la quinte). Additionne-les naïvement et tu obtiens 9 + 8 = 17. Mais **Q♠ et 7♠** complètent chacun *à la fois* la couleur et la quinte — ils sont déjà dans les 9 outs couleur. Compte-les une seule fois :
+Disons que tu as ==b:J♠ 10♠== sur un flop ==9♠ 8♣ 2♠==. Tu as deux tirages empilés : un tirage couleur (pique) et un tirage quinte bilatéral (n'importe quelle Q ou n'importe quel 7 fait la quinte). Additionne-les naïvement et tu obtiens 9 + 8 = 17. Mais **Q♠ et 7♠** complètent chacun *à la fois* la couleur et la quinte — ils sont déjà dans les 9 outs couleur. Compte-les une seule fois :
 
 - Outs couleur : **9** (chaque pique)
 - Outs de quinte qui ne sont pas des piques : Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**

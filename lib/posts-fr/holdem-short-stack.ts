@@ -35,7 +35,7 @@ call plus serré | que ton shove
 
 ## C'est quoi un short stack au poker ? (et combien de grosses blindes)
 
-**Un short stack (« petit tapis ») est un stack trop petit pour jouer un poker postflop normal — en gros sous 20–25 grosses blindes, le push or fold prenant le relais à partir d'environ 15 grosses blindes et en dessous.** Ce ne sont pas des seuils stricts ; ce sont les zones où tes options s'effondrent. Avec 60 grosses blindes, tu peux relancer, payer, flotter et surclasser tes adversaires après le flop. Avec 12, presque tout ça disparaît — tu décides, surtout avant le flop, si tu fais tapis ou si tu te couches.
+**Un short stack (« petit stack ») est un stack trop petit pour jouer un poker postflop normal — en gros sous 20–25 grosses blindes, le push or fold prenant le relais à partir d'environ 15 grosses blindes et en dessous.** Ce ne sont pas des seuils stricts ; ce sont les zones où tes options s'effondrent. Avec 60 grosses blindes, tu peux relancer, payer, flotter et surclasser tes adversaires après le flop. Avec 12, presque tout ça disparaît — tu décides, surtout avant le flop, si tu fais tapis ou si tu te couches.
 
 Voici la carte pratique selon la profondeur de stack (approximations sans ante, table pleine — les antes font descendre chaque tranche un peu plus bas) :
 
@@ -92,7 +92,7 @@ Le hic, c'est que la fold equity ==diminue à mesure que ton stack fond==. À 12
 **Quand tu es le premier à entrer dans le pot avec un short stack, ta décision se résume à shove ou fold — et la largeur de ton shove dépend de la taille de ton stack et, tout autant, de ta position.** Plus ta position est tardive, moins il reste de joueurs derrière toi susceptibles de réveiller une grosse main — la probabilité que tout le monde se couche grimpe, et avec elle la ==fold equity== qui rend le shove rentable. C'est pour ça que ==ta range de shove s'élargit énormément vers le bouton==.
 
 - **Position précoce, 12–15bb :** la plus serrée. Toute la table est derrière toi, donc fais tapis avec une range forte, surtout linéaire, et couche le reste.
-- **Cut-off et bouton, 10–15bb :** beaucoup plus large. Avec deux ou trois joueurs encore à parler, tu fais tapis pour voler les blindes et les antes, et tu peux shover de nombreuses mains qui seraient un fold évident sous le pistolet (UTG).
+- **Cut-off et bouton, 10–15bb :** beaucoup plus large. Avec deux ou trois joueurs encore à parler, tu fais tapis pour voler les blindes et les antes, et tu peux shover de nombreuses mains qui seraient un fold évident UTG (under the gun).
 - **Petite blinde, n'importe quel short stack :** la plus large de toutes en first-in — seule la grosse blinde peut payer, et tu as déjà de l'argent dans le pot. En short stack en petite blinde, c'est souvent le fold qui est l'erreur.
 - **Sous ~6bb :** la position compte moins. Tu dois mettre tes jetons au milieu contre à peu près n'importe qui avant que ta fold equity disparaisse ; prends le prochain spot raisonnable au lieu d'attendre le spot parfait.
 
@@ -102,16 +102,16 @@ Remarque le piège que ça évite : ==un short stack qui ne fait tapis qu'avec d
 
 ## Shove ou call d'un shove : pourquoi deux ranges différentes ?
 
-**Ta range de shove first-in et ta range pour payer le all-in d'un autre joueur ne sont pas les mêmes — et la range de call est beaucoup plus serrée.** C'est la distinction que la plupart des débutants ratent, et elle coûte beaucoup de tournois.
+**Ta range de shove first-in et ta range pour payer l'all-in d'un autre joueur ne sont pas les mêmes — et la range de call est beaucoup plus serrée.** C'est la distinction que la plupart des débutants ratent, et elle coûte beaucoup de tournois.
 
-Quand tu ==shove first-in==, tu gagnes de deux façons : tout le monde se couche (la fold equity), ou tu es payé et ta main tient. Quand tu ==paies== un shove, tu ne gagnes que d'une façon — ta main doit être assez bonne, parce qu'il n'y a plus de fold equity à encaisser. Donc :
+Quand tu ==shoves first-in==, tu gagnes de deux façons : tout le monde se couche (la fold equity), ou tu es payé et ta main tient. Quand tu ==paies== un shove, tu ne gagnes que d'une façon — ta main doit être assez bonne, parce qu'il n'y a plus de fold equity à encaisser. Donc :
 
 - **Shove first-in :** large, surtout en position tardive — tu joues en partie pour le fold.
 - **Call d'un shove :** serré — il te faut une main qui bat la *range* du shoveur, pas juste une main au hasard.
 
 « Serré » veut dire plus serré que ta range de shove, pas « seulement quand je suis sûr d'être devant ». Payer est une question de prix : en grosse blinde face à un shove de 10bb, tu risques 9bb pour gagner un pot de 20,5bb, donc la barre est à ==43,9 %== d'équité contre cette range. Les petites paires et les as faibles sont le *cœur* d'une range de call en grosse blinde précisément pour cette raison — même contre AKo, tout en haut de n'importe quelle range de shove, 22 fait ==52,65 %==. La fuite ne vient pas de la catégorie de main ; elle vient du réflexe « c'est sûrement un coin flip » au lieu de vérifier le chiffre (voir [quand se coucher](/fr/blog/holdem-when-to-fold)).
 
-Une phrase à retenir : ==sois celui qui fait tapis, pas celui qui paie.== C'est dans l'agressivité first-in que vit le profit du short stack ; c'est sur les hero-calls de all-in que les short stacks meurent.
+Une phrase à retenir : ==sois celui qui fait tapis, pas celui qui paie.== C'est dans l'agressivité first-in que vit le profit du short stack ; c'est sur les hero-calls d'all-in que les short stacks meurent.
 
 ---
 
@@ -149,7 +149,7 @@ Les vrais calculs derrière « de combien mon bubble factor est-il plus bas » s
 2. **Min-raiser puis folder avec du déchet.** Relancer un quart de ton stack et folder face à un shove, c'est le pire des deux mondes. Si une main n'est pas assez bonne pour partir à tapis, elle n'est pas assez bonne pour relancer.
 3. **Payer des all-ins à l'instinct.** Ta range de call doit rester plus serrée que ta range de shove — mais « c'est sûrement un flip » est une supposition, pas une raison. Calcule plutôt le prix : en grosse blinde, la petite blinde morte fait qu'un vrai flip franchit déjà la barre en chip EV (cEV), et c'est la pression des paliers de gains, pas le flip lui-même, qui peut le transformer en fold. Deviner fait fuir des jetons dans les deux sens.
 4. **Se laisser manger par les blindes jusqu'à n'avoir plus rien.** Attendre une paire d'as jusqu'à ce qu'il te reste trois grosses blindes, c'est jeter la fold equity qui rend le shove rentable. Agis tant que ton all-in fait encore peur (en général, avant de passer sous ~8–10bb).
-5. **Ignorer la position.** Ne faire tapis qu'avec des premiums au bouton, ou shover trop large sous le pistolet, fait fuir des jetons dans les deux cas. Élargis en position tardive, resserre en position précoce.
+5. **Ignorer la position.** Ne faire tapis qu'avec des premiums au bouton, ou shover trop large UTG, fait fuir des jetons dans les deux cas. Élargis en position tardive, resserre en position précoce.
 
 Évite ces cinq erreurs et tu battras déjà la majeure partie du field, qui joue un short stack comme un stack profond jusqu'au moment de sauter.
 

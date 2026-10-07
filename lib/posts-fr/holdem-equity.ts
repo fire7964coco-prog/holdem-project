@@ -181,7 +181,7 @@ Ajoute la fold equity | Si tu mises, à quelle fréquence l'adversaire se couche
 Compare au prix | Tu suis ? Équité réalisée contre ta cote du pot. Tu mises ? Fréquence de fold de l'adversaire contre le taux de fold d'équilibre — mise ÷ (pot + mise) pour un bluff pur, plus bas quand ta main garde de l'équité si elle est payée → suivre, miser ou se coucher
 :::
 
-Le soir dont je parlais au début, je faisais l'étape une et je m'arrêtais là — je comptais mon équité brute en ignorant que, hors de position, face à un bon joueur, je ne la réaliserais jamais. Quand j'ai commencé à décompter la position et à penser à *ses* folds plutôt qu'à mes seules cartes, les fuites se sont refermées. L'équité n'est pas un chiffre qu'on va chercher dans un tableau ; c'est une grille de lecture à travers laquelle tu fais passer chaque décision.
+Le soir dont je parlais au début, je faisais l'étape une et je m'arrêtais là — je comptais mon équité brute en ignorant que, hors de position, face à un bon joueur, je ne la réaliserais jamais. Quand j'ai commencé à décoter mon équité selon la position et à penser à *ses* folds plutôt qu'à mes seules cartes, les fuites se sont refermées. L'équité n'est pas un chiffre qu'on va chercher dans un tableau ; c'est une grille de lecture à travers laquelle tu fais passer chaque décision.
 
 ---
 

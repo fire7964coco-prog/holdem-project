@@ -180,7 +180,7 @@ Comptons. Mes cinq meilleures cartes sont ==K♣ K♦ 9♠ 9♥ A♥== — doubl
 | **Courir après les tirages sans le prix** | Les cotes du pot disent que ton call perd sur le long terme | Passe le seuil ou couche-toi |
 | **Payer par coût irrécupérable** | « J'y suis déjà » n'est pas une raison | Juge uniquement la décision devant toi |
 | **Hero-call « pour le garder honnête »** | Tu attrapes un bluff, tu paies dix values | Réserve-le aux joueurs qui bluffent vraiment |
-| **Se coucher sur chaque carte qui fait peur (le nit)** | Les bons joueurs te bluffent sur la meilleure main | Couche-toi face aux lignes de value, pas face à la peur |
+| **Se coucher sur chaque carte qui fait peur (le nit)** | Les bons joueurs te font coucher la meilleure main en bluffant | Couche-toi face aux lignes de value, pas face à la peur |
 
 </div>
 
@@ -237,7 +237,7 @@ A. Non — se coucher avec discipline est un signe de compétence. Les meilleurs
 
 **Q. Peut-on trop se coucher au poker ?**
 
-A. Oui. Te coucher à chaque fois que tu subis de la pression fait de toi un « nit », et les adversaires attentifs vont simplement miser chaque pot pour te rouler dessus, en te bluffant sur la meilleure main. Le but n'est pas de te coucher le plus possible — c'est de te coucher quand le calcul ou la ligne de l'adversaire dit que tu es battu, tout en défendant assez pour qu'on ne puisse pas te bluffer à volonté.
+A. Oui. Te coucher à chaque fois que tu subis de la pression fait de toi un « nit », et les adversaires attentifs vont simplement miser chaque pot pour te rouler dessus, en te faisant coucher la meilleure main à coups de bluff. Le but n'est pas de te coucher le plus possible — c'est de te coucher quand le calcul ou la ligne de l'adversaire dit que tu es battu, tout en défendant assez pour qu'on ne puisse pas te bluffer à volonté.
 
 **Q. Quand se coucher avec une overpaire ?**
 
