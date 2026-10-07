@@ -61,7 +61,7 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
  * 데스크톱 우측 레일의 GTO 솔버 버튼 문구 — 2026-09-16 (사장님 지시 「솔버 배너」 · KO의
  * blog-post-client.tsx 08-18 버튼과 같은 자리·같은 크기). 🔴 문구는 지어내지 않았다 —
  * 각 로케일 `app/<loc>/solver/page.tsx`의 metadata TITLE을 «제목 — 부제»로 가른 축어다.
- * 랜딩 TITLE을 바꾸면 여기도 같이. fr은 클러스터 맵이 없어 레일 자체가 없다(대상 밖).
+ * 랜딩 TITLE을 바꾸면 여기도 같이. fr은 2026-10-07 FR_CLUSTERS 신설로 레일이 생겨 추가했다.
  */
 const SOLVER_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle: string }>> = {
   en: { title: "Free GTO Solver", subtitle: "Poker Solver in Your Browser" },
@@ -74,6 +74,7 @@ const SOLVER_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtit
   id: { title: "Solver GTO Poker Gratis", subtitle: "langsung di browser, tanpa instal" },
   hi: { title: "मुफ़्त GTO पोकर सॉल्वर", subtitle: "सीधे ब्राउज़र में" },
   ms: { title: "Solver Poker GTO Percuma", subtitle: "Terus dalam Pelayar" },
+  fr: { title: "Solver Poker GTO Gratuit", subtitle: "dans ton navigateur, sans inscription" },
 };
 
 function IntlTocList({

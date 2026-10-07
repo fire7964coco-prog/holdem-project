@@ -169,6 +169,11 @@ export default function GlossaryTool({ dict }: { dict: GlossaryDict }) {
                         </span>
                       </div>
                       <p className="text-foreground/80 leading-relaxed text-sm">{item.desc}</p>
+                      {item.link && (
+                        <Link href={item.link.href} className="inline-block mt-2 text-xs font-semibold text-primary hover:underline">
+                          → {item.link.text}
+                        </Link>
+                      )}
                     </div>
                   ))}
                 </div>
