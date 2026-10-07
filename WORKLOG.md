@@ -1,3 +1,9 @@
+## 2026-10-07 (15) — 솔버 랜딩 §2-AF 이행 (`84434589` · MB-201)
+
+- AF-1 복습 큐 과장 제거 9자리 + 형제 tr·ms·hi 6자리 · AF-2 es·pt·fr 공유 FAQ 노드 고정 한정 · AF-3 오늘의 문제 연속 일수·완료 표시 기기 한정(13로케일 본문 + 저장 FAQ 6). 근거 = 솔버 `TrainerPage.vue`(evLossBb > 0.05 · 정렬 없음) · `daily.ts`(localStorage) · `spot-share.ts`(노드락 미포함) · 용어 `node-lock-labels.ts`.
+- 치환 = 스크래치 .mjs(36건 · 각 1회 일치 단언). 빌드 ✅ · HTML 옛 문구 0. tsc 기존 오류(holdem-practice engine · tmp/)는 무관. sitemap 내용 변화 없음.
+- ▶ 검수장 MB-201 요청 1(변경 줄 재판정) 결과 MA 대기.
+
 ## 2026-10-07 (14) — 우편함 MA-358~365 회신·등재 (MB-200 · queue §2-AF)
 
 - ACK: MA-359·361·363(착수 공지) · MA-360(재라벨 90 · 결재 2 수용) · MA-362(«rarer» 14자리 OK) · MA-364(재라벨 9).
