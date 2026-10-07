@@ -215,6 +215,27 @@
 - 아스트라 교차(§4 헤드 머지)는 🅶 13편 머지 뒤 **51편 한 번에** — 지금 38편에 돌리면 🅶 뒤 또 돌려야 한다(§0 «두 번 일하지 않게»).
 - 게이트(통합 트리 · 10-07): audit:hard fr 38/38 🔴 0 🟠 0 · check:structure 0 · calc-parity 0 · meta 0 · seo-sync 0 · intl-links 잔여 = 🅶 대상뿐 · `npx next build` ✅ 904쪽.
 
+### 4-C. 배포 회차 체크리스트 (10-07 헤드 준비 · 🅶 머지 뒤 이 순서로)
+
+**✅ 미리 끝낸 것(fr-integration `0b6f66e6` · 10-07 (11))**
+- 도구 related: 계산기 quickRef 6 + deal + related 8(H-7·H-30) · hand-chart related = EN 4글 + 계산기 · glossary related = EN 구성(règles · combinaisons · stratégie · hand-chart · calculateur).
+- `/fr/glossary` 항목 → 글 링크(§3-B ④⑤⑦): Nuts → reading-the-board · ICM → holdem-icm · Check-raise → low-board-check-raise(🅶 · 머지 전엔 404라 🅶 없이 배포 금지). 공용 `GlossaryTerm.link?`(선택 필드 · 다른 로케일 무영향).
+- 러닝맵 `FR_CLUSTERS`(6필라 · ms 구조) + 데스크톱 레일 솔버 버튼 문구(fr 랜딩 TITLE 축어). 솔버 노드는 `lib/gto-series-i18n.ts`에 fr 항목이 들어오면 자동 표시.
+- 로컬 화면 확인(next start · Playwright): fr 글 레일(계산기·솔버 버튼·러닝맵) · 용어집 링크 3 · hand-chart 오류 0. 🔴 `Holdem-fr-head`에 `.env.local`(깃 무시) 복사해 둠 — 없으면 전 페이지 Supabase 클라이언트 오류(로컬 전용 현상). 워크트리 정리 때 같이 지운다.
+- 🪶 러닝맵 머리 «Learning Map / Overview / You are here»는 비-KO 전 로케일이 영어(intl-blog-post-client가 labels를 안 넘김) — fr만의 일이 아니라 별도 회차(자동 착수 금지).
+- 🅶 레인은 C ⓪에서 fr-integration을 머지해 이 변경(러닝맵·용어집 Check-raise 링크)을 받는다 — 헤드는 작업 중인 레인 브랜치에 머지하지 않는다.
+
+**☐ 🅶 머지 뒤 · 배포 전**
+1. 🅶 신규 용어 대조(§3-A) → 아스트라 51편 1회(§4 · 스크래치 사본 · read-only) → 판정·반영.
+2. `/fr/solver` 랜딩: GTO 13편 목록 + 본문 «Pour aller plus loin»의 규칙 6편 대체 링크를 de 구성대로(strategy · starting-hands-chart · equity · reading-the-board · 3bet · c-bet · position-play · pot-odds · glossary) — `docs/solver-landing-playbook.md` · de 10-02 (14) 선례. `gto-series-i18n` fr 항목 · 필라 역링크 · H-18 `-fr` 썸네일은 🅶 레인 몫인지 머지 때 확인.
+3. 🔴 date: 배포일이 10-07보다 늦으면 신규 45편(🅰 6편 제외) `date` = 배포일(H-22 · ms 선례).
+4. main → fr-integration 머지(충돌 = 문서는 main 쪽) → `npm run build` 전체(prebuild 전부 통과 · sitemap fr 51 확인) → fr-integration → main ff → push.
+5. 라이브 확인(Playwright · curl은 BotID 403): `/fr/blog` 목록 51 · 글 1편 데스크톱 레일(러닝맵·계산기·솔버 버튼) · `/fr/glossary` 링크 3 · `/fr/calculator` related.
+6. MB 1행(커밋 해시 · fr 51 슬러그 · 도구 4종) + **검수장에 배포 해시로 fr 1회 요청**(§2-⑦) · MA-357 ACK 같이.
+7. `npm run indexnow -- --since <배포일>`.
+8. 사장님 GSC 수동 색인 요청 목록(GTO 13 제외 · `settled-decisions` §1-E): `/fr/blog` + `/fr/blog/{holdem-3bet, holdem-all-in-rules, holdem-bad-beat, holdem-betting-actions, holdem-blind-meaning, holdem-bubble, holdem-card-counting, holdem-continuation-bet, holdem-cooler, holdem-drawing-odds, holdem-equity, holdem-fish, holdem-flush-vs-straight, holdem-game-order, holdem-glossary, holdem-hand-rankings, holdem-icm, holdem-implied-odds, holdem-kicker, holdem-limping, holdem-outs, holdem-position-play, holdem-positions, holdem-pot-odds, holdem-probability, holdem-rake, holdem-reading-the-board, holdem-short-stack, holdem-showdown-rules, holdem-split-pot-rules, holdem-starting-hands-chart, holdem-straddle, holdem-strategy, holdem-tiebreak-rules, holdem-tournament, holdem-tournament-vs-cash-game, holdem-when-to-fold, texas-holdem-rules-for-beginners}`(38) — 일일 한도가 있으니 필라 6편(rules · hand-rankings · probability · strategy · tournament · glossary)부터.
+9. 마감: WORKLOG · 핸드오프 · 레인 워크트리 7개 + `Holdem-fr-head` 정리(`git worktree remove` — 미커밋 확인 먼저).
+
 ## 5. 레인 운영 — `ms-translation-lanes.md`를 fr로 읽는 치환표 (0-4 · 10-07)
 
 > 레인은 ms 규격 §3~§9를 그대로 따르되, **아래 표의 자리만 바꿔 읽는다.** 표에 없는 자리는 ms 규격 축어.
