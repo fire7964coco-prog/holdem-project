@@ -42,16 +42,16 @@
 
 ---
 
-## 0-2 결과 (2026-10-08 · 진행 중 — 5/7 완료)
+## 0-2 결과 (2026-10-08 · 7/7 산출 · 커버리지 보완 남음)
 
 | 레인 | 수행 | 산출물 | 크기 | 글별 질문 확보 | 메모 |
 |---|---|---|---:|---|---|
-| L-A 규칙 | 아스트라 | (실행 중) | | | |
+| L-A 규칙 | 아스트라 | `L-A-rules.md` | 85KB | 6/6 ✅(아스트라 자체 판정) · 엄격 ✗ 0 미충족(정확 시드 AC 일부·organic 부족 헤드 14/20) | 입문 규칙 4헤드 포커 우세 · «X là gì» 단독 다수 오염 · §2 볼륨 요청 = 다음 세션 |
 | L-B 족보 | 아스트라 + 본체 보완 §10 | `L-B-rank.md` | 111KB | 2/6 엄격 ✅ · 4글 = vi 질문 축어 없음 → EN FAQ 이식 그룹(본체 판정) | sảnh rồng 2/10 · tứ quý 0/10 · nuts là gì 0/10 = 오염 |
 | L-C 확률 | Opus 서브 | `L-C-prob.md` | 56KB | 7/7 ✅ | 상위 글 §13 오류 10건(GGPoker·Natural8) · 도구 경계 증거 |
 | L-D 전략 | Opus 서브 | `L-D-strat.md` | 56KB | 8/8 ✅ | «3 bet» 27,100 = 도박 브랜드 · cbet·under the gun·limp là gì 오염 |
 | L-E 토너먼트 | Opus 서브 | `L-E-tour.md` | 62KB | 5/5 ✅ | icm là gì·bubble là gì·mtt là gì 0/10 · 토너먼트 SERP = 합법성 기사 → EN 합법성 FAQ 삭제 권고 |
-| L-F 용어 | 아스트라 | (실행 중) | | | |
+| L-F 용어 | 아스트라 + 본체 §10 | `L-F-gloss.md` | 84KB | 직접 PAA 미확보 글 다수(허위 ✅ 없음) | fish·tilt·bluff·straddle·cooler «là gì» 단독 오염 · 새 후보 53 측정 = dealer poker là gì 170 최대 |
 | L-G GTO | Opus 서브 | `L-G-gto.md` | 50KB | 13/13 ✅ | 🔴 wikipoker가 13스팟을 vi로 이미 덮음(fr과 다름) · blind vs blind·spr là gì 오염 |
 
 - 공통 관찰: vi 해설 SERP는 **reddit `?tl=vi`·구글 번역 프록시·운영사 번역(GGPoker·Natural8)·wikipoker**가 채운다 — 베트남어 원문 해설이 얇다. 검색 술어 = **영어 차용어 + «là gì» / «trong poker là gì»**(단독 «X là gì»는 대부분 포커 밖). 상위 글 §13 오류 다수(L-C 10 · L-D 4 · L-G 2+) = 차별화 재료.

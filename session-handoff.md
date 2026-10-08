@@ -5,8 +5,8 @@
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 클러스터 51편 — 0-2 SERP 진행 중 (10-08 (5) · 정본 `docs/vi-cluster-plan.md`)
 
-- 사장님 10-08: fr처럼 51편 · 서치·실측 철저 · **아스트라도 활용**(계획 §3-B 지도). 0-1 ✅ `docs/keyword-bank/vi-core-volumes.md` · 0-2 = 5/7 ✅(L-B·C·D·E·G · `docs/keyword-bank/vi-serp/` · 00-brief 끝 결과표).
-- ▶ **다음 세션 첫 일**: 아스트라 L-A·L-F 결과 회수 — `C:/Users/하봄/AppData/Local/Temp/claude/C--Users----Downloads-Holdem-Project/54bd9530-538a-4bab-99e4-8f1d236a1ebf/scratchpad/astra-{A,F}/REPORT.md` → `vi-serp/L-A-rules.md`·`L-F-gloss.md`로 복사 · 커버리지 ✗·«볼륨 측정 요청» 절은 본체가 DFS로 보완(L-B §10 선례 · `node tmp/vi/dfs.mjs`). 파일이 없으면(실행 실패) 같은 폴더 PROMPT.md로 재실행.
+- 사장님 10-08: fr처럼 51편 · 서치·실측 철저 · **아스트라도 활용**(계획 §3-B 지도). 0-1 ✅ `docs/keyword-bank/vi-core-volumes.md` · 0-2 = **7/7 산출 ✅**(`docs/keyword-bank/vi-serp/` · 00-brief 끝 결과표 · 아스트라 L-A·B·F + Opus L-C·D·E·G).
+- ▶ **다음 세션 첫 일** = 커버리지 보완(본체 DFS `node tmp/vi/dfs.mjs`): L-A §2 볼륨 요청(표 형식 · 미측정) · 아스트라 레인의 원형 헤드 AC · `nuts là gì` SERP · organic 8~9개 헤드 재조회 판단 → 00-brief 결과표 갱신.
 - 그다음 0-3(소유표·고정문·용어 정본 + 아스트라 교차) → 사장님 보고. 쟁점: vi엔 `/vi/glossary` 없음 → «X trong poker là gì» 정의형 주인 · 족보 번역어(sảnh rồng = Tiến lên 의심) · positions↔position-play · 확률 글↔계산기 · ICM 글 소유 · 토너먼트 합법성 FAQ 삭제 · GTO 13 순서(`/vi/solver`와 묶기) · GTO 13 포함 재확인(§1-E 해제로 읽음).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 도구 ✅ 배포 (10-07 (17) · `/vi/calculator`·`/vi/hand-chart`) · 다음 = `/vi/solver`
