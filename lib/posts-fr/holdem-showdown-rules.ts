@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En tournoi, sans all-in, le dernier joueur à avoir misé ou relancé sur la river montre en premier ; si tout le monde a checké la river, c'est le premier joueur encore en jeu à gauche du bouton. Après un all-in, toutes les mains restantes doivent être montrées une fois les enchères terminées. Le joueur qui a payé la river et garde ses cartes peut demander à voir la main du dernier agresseur ; en cash game, ce sont les règles de la salle qui décident de qui montre et qui peut jeter sa main.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -91,7 +91,7 @@ Attention à une idée reçue tenace sur ce cas précis :
 
 | Ce qu'on lit | Ce que dit la règle |
 |--------------------|-----------------|
-| On lit souvent que le dernier agresseur des tours précédents montre en premier | Règle TDA (Rule 17) : premier joueur actif à gauche du bouton |
+| On lit souvent que le dernier agresseur des tours précédents montre en premier | TDA 2024, règle 17 : premier joueur actif à gauche du bouton |
 
 Une mise faite au flop ou à la turn (le tournant) ne compte pas : si la river passe checkée, l'ordre repart du bouton.
 
@@ -149,7 +149,7 @@ Concrètement : tu as les nuts (la meilleure main possible). L'adversaire montre
 
 ## Quand montrer ses cartes au poker ? Et si tu gagnes sans showdown ?
 
-Tu montres tes cartes quand le coup va jusqu'à l'abattage — en premier si tu es le dernier agresseur, sinon dans l'ordre du coup. En revanche, si tout le monde se couche avant le showdown, tu ramasses le pot sans montrer une seule carte, que tu bluffais ou non : gagner sans abattage, c'est gagner sans rien dévoiler.
+Tu montres tes cartes quand le coup va jusqu'à l'abattage — en premier si tu es le dernier à avoir misé ou relancé sur la river, sinon dans l'ordre du coup. En revanche, si tout le monde se couche avant le showdown, tu ramasses le pot sans montrer une seule carte, que tu bluffais ou non : gagner sans abattage, c'est gagner sans rien dévoiler.
 
 ==g:Montrer ou non devient alors un choix, jamais une obligation.==
 

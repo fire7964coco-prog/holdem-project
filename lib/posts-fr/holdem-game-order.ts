@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Préflop, c'est le joueur à gauche de la grosse blinde qui parle en premier. Au flop, à la turn et à la river, c'est le premier joueur encore en jeu à gauche du bouton, en général la petite blinde (en heads-up, c'est l'inverse). Une main suit toujours le même ordre : blindes, cartes fermées, préflop, flop, turn, river, showdown, avec jusqu'à 4 tours d'enchères.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -45,7 +45,7 @@ La règle de base est simple : tu construis ta **meilleure main de cinq cartes**
 
 Avant la moindre carte, deux éléments organisent chaque main : le bouton du donneur, qui fixe l'ordre de parole et avance d'un siège dans le sens des aiguilles d'une montre après chaque main, et les blindes, deux mises obligatoires posées par les deux joueurs assis à gauche du bouton. Sans elles, personne n'aurait de raison de se battre pour le pot.
 
-Le **bouton du donneur (le « bouton », marqué D)** est un disque rond qui indique qui « donne » pour cette main. Même avec un croupier professionnel, c'est le bouton qui fixe l'ordre des enchères ; seule la règle du bouton mort (dead button) fait exception à son avancée d'un siège par main.
+Le **bouton du donneur (le « bouton », marqué D)** est un disque rond qui indique qui « donne » pour cette main. Même avec un croupier professionnel, c'est le bouton qui fixe l'ordre des enchères, et il avance normalement d'un siège après chaque main (la règle du bouton mort, ou dead button, est l'exception).
 
 Les **blindes** sont des mises obligatoires posées avant la distribution. Sans elles, tout le monde pourrait checker et se coucher gratuitement ; ==g:les blindes mettent de l'argent au milieu et donnent aux joueurs une raison de se battre==. (Tu découvres le sujet ? Regarde exactement [comment fonctionnent la petite et la grosse blinde](/fr/blog/holdem-blind-meaning).)
 
@@ -185,7 +185,7 @@ Autre subtilité, dans les cash games qui l'autorisent : un **straddle live** d�
 
 ## Quel est l'ordre des joueurs au poker ? Le déroulement en un coup d'œil
 
-Une main de Texas Hold'em suit toujours six étapes dans le même ordre : les blindes, le préflop, le flop, la turn, la river puis l'abattage. Il y a jusqu'à quatre tours d'enchères — préflop, flop, turn et river —, tandis que les blindes sont des mises forcées et que l'abattage se joue sans enchères. Le tableau ci-dessous résume tout.
+Une main de Texas Hold'em menée jusqu'à l'abattage suit six étapes dans le même ordre : les blindes, le préflop, le flop, la turn, la river puis l'abattage — si tous les joueurs sauf un se couchent avant, elle s'arrête plus tôt. Il y a jusqu'à quatre tours d'enchères — préflop, flop, turn et river —, tandis que les blindes sont des mises forcées et que l'abattage se joue sans enchères. Le tableau ci-dessous résume tout.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -266,7 +266,7 @@ La leçon : ==r:quand la river a donné une double paire à A, il a *eu l'impres
 
 ## Quels sont les 7 coups possibles au poker ?
 
-Au poker, tu as sept actions possibles : se coucher, checker, suivre, miser, relancer, surrelancer (3-bet) et faire tapis. Celles qui s'ouvrent à toi dépendent d'une seule chose : y a-t-il déjà une mise devant toi ? Sans mise, tu peux checker ou miser ; face à une mise, tu dois suivre, relancer ou te coucher.
+Au poker, tu as sept actions possibles : se coucher, checker, suivre, miser, relancer, surrelancer (3-bet) et faire tapis. Celles qui s'ouvrent à toi dépendent avant tout d'une question : y a-t-il déjà une mise devant toi ? Sans mise, tu peux checker ou miser ; face à une mise, tu dois suivre, relancer ou te coucher. Une nuance : si tu as déjà misé ou suivi dans ce tour et qu'un all-in trop court pour valoir une relance complète te revient, tu ne peux que suivre ou te coucher — sauf si plusieurs petits all-in cumulés atteignent une relance complète (TDA 2024, règle 47-A).
 
 ![Les actions d'enchères au poker — checker, suivre, se coucher, miser, relancer, surrelancer, faire tapis](/images/holdem-betting-options-guide.webp "Toutes les actions d'enchères possibles au Texas Hold'em")
 

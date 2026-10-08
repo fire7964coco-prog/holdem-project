@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire all-in (tapis), c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as couvert, c'est le pot principal ; les jetons misés au-delà par deux stacks plus gros ou plus forment un side pot (pot annexe) qu'eux seuls peuvent gagner, et une mise supplémentaire isolée est simplement rendue. En no-limit et en pot-limit, un all-in inférieur à une relance complète ne rouvre pas les enchères pour un joueur qui a déjà parlé, sauf si plusieurs petits all-in cumulés atteignent au moins une relance complète au-dessus de ce qu'il a déjà mis.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -57,13 +57,13 @@ Le tapis effectif — on dit aussi **stack effectif** — c'est le plus petit de
 
 ## Comment annoncer un all-in à table ?
 
-Pour faire tapis sans ambiguïté, annonce « all-in » à voix haute, puis pousse tout ton stack en un seul geste. L'annonce verbale t'engage immédiatement et ne peut pas être mal interprétée. Pousser sans rien dire fonctionne souvent, mais pas toujours : face à une mise qui demande déjà tous tes jetons pour la suivre, ce geste silencieux compte comme un simple call.
+Pour faire tapis sans ambiguïté, annonce « all-in » à voix haute, puis pousse tout ton stack en un seul geste. L'annonce verbale t'engage immédiatement et ne peut pas être mal interprétée. Pousser sans rien dire fonctionne souvent, mais pas toujours : face à une mise où chacun de tes jetons est nécessaire rien que pour la suivre, ce geste silencieux compte comme un simple call.
 
 Deux façons valables :
 
 **1. L'annonce verbale** — Dis « all-in » clairement pour que le donneur et tes adversaires l'entendent — c'est la méthode la plus sûre.
 
-**2. Pousser tous tes jetons** — Fais glisser tout ton stack vers le centre en un seul geste net. Avancer tes jetons en plusieurs fois peut ressembler à un string bet (une mise faite en plusieurs temps), alors pousse tout d'un coup. ==r:C'est le cas vu plus haut : face à une mise qui demande tous tes jetons rien que pour la suivre, pousser tes jetons sans rien dire vaut un call, pas un all-in (TDA 2024 Rule 45-A, WSOP Tournament Rule 92).== Le reste du temps, pousser tes derniers jetons **est** bien une mise all-in (TDA 2024 Rule 45-B) — seule exception : un unique dernier jeton de valeur trop forte poussé en silence face à une mise, qui ne vaut qu'un call (TDA 2024 Rule 44).
+**2. Pousser tous tes jetons** — Fais glisser tout ton stack vers le centre en un seul geste net. Avancer tes jetons en plusieurs fois peut ressembler à un string bet (une mise faite en plusieurs temps), alors pousse tout d'un coup. ==r:C'est le cas vu plus haut : face à une mise où chacun de tes jetons est nécessaire rien que pour la suivre, pousser tes jetons sans rien dire vaut un call, pas un all-in (TDA 2024 Rule 45-A, WSOP Tournament Rule 92).== Le reste du temps, pousser tes derniers jetons **est** bien une mise all-in (TDA 2024 Rule 45-B) — seule exception : un unique dernier jeton de valeur trop forte poussé en silence face à une mise, qui ne vaut qu'un call (TDA 2024 Rule 44).
 
 ![Abattage d'un all-in au Texas Hold'em — un board K♠ 10♣ 7♦ 4♥ 2♣ avec les jetons séparés en pot principal et side pot étiquetés](/images/holdem-all-in-declare.webp)
 

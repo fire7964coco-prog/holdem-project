@@ -523,6 +523,25 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ 이행 결과(10-07 (15) `84434589`): AF-1 = 9자리 + 형제 사본 tr(본문·FAQ)·ms(본문·FAQ)·hi(본문·FAQ) — «EV를 잃은 문제»로 · ko·ja 유지. AF-2 = es·pt·fr «exactamente» 제거 + «같은 레인지·설정 · 노드에 고정한 전략은 링크에 안 담김»(용어 = 앱 `node-lock-labels.ts` «Fijar/Fixar/Fixer la stratégie» 축어 · `spot-share.ts`로 레인지·보드·팟·스택·레이크·벳 사이즈·임계값 포함 확인). AF-3 = 13로케일 본문 동기 문장 + 저장 FAQ 6로케일(en·ko·ja·tr·hi·ms) «오늘의 문제 연속 일수·완료 표시는 기기마다»(`daily.ts` localStorage 확인).
 
 
+### 2-AG. 우편함 수신분 — MA-367 (FR 회차 1 🅰 rules 6편 · 기준 `ceed9c0d`) · 판정·이행 2026-10-08 (1)
+
+> 근거 = 검수장 `reports/검수-fr-r1-rules-2026-10-07/hq-reverify/HQ-REPORT.md`. 본체 판정 = 인용 문면 전부 fr·EN 파일에서 실재 확인 + 근거 조문 원문 확인(`docs/sources/tda-2024-rules-v1.txt` 17-A · 34-B · 45-A · 47-A). **요청 1의 9자리 전부 채택·이행**(기각 0 · fr 고유 · EN 무변경 · fr 다른 글 사본 grep 0). diff 교열 렌즈(fr 네이티브+TD · Opus 5.5) 지적 3 채택 = AG-9 «déjà parlé» 과대(47-A «not facing a full bet» 조건 · 누적 예외) · AG-7 지시어 · AG-5 묶음·토너먼트 한정.
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| AG-1 | game-order | 버튼 «seule la règle du bouton mort … fait exception» (WRONG) | EN 꼴 «il avance normalement d'un siège après chaque main (la règle du bouton mort … est l'exception)» |
+| AG-2 | all-in | 본문·방법 2자리 «une mise qui demande (déjà) tous tes jetons» | 45-A 검사 문형 «une mise où chacun de tes jetons est nécessaire rien que pour la suivre» |
+| AG-3 | blind | 블라인드 놓침 문단 | «En cash game live, …» 한정(토너먼트는 같은 글 앞 문단이 이미 다룸) |
+| AG-4 | showdown | «Quand montrer» 직답 «si tu es le dernier agresseur» | «le dernier à avoir misé ou relancé sur la river» |
+| AG-5 | betting | 실수 절 머리 조문 열거 | «90.a/90.b.1, 90.d, 84 (en tournoi) et 97 … ces quatre cas, dans cet ordre» (실수 ③ = A 84 · 84는 토너먼트 조항) |
+| AG-6 | showdown | 표 «Règle TDA (Rule 17)» | «TDA 2024, règle 17» |
+| AG-7 | game-order | «suit toujours six étapes» | «menée jusqu'à l'abattage … — si tous les joueurs sauf un se couchent avant, elle s'arrête plus tôt» |
+| AG-8 | betting | call 비용 «le montant de sa mise» | «ce qu'il faut pour égaler sa mise — seulement la différence si tu as déjà mis des jetons dans ce tour» |
+| AG-9 | game-order | «dépendent d'une seule chose» | «avant tout d'une question» + 47-A 한 줄(이미 벳·콜 + 짧은 올인 → 콜·폴드만 · 누적 짧은 올인 예외 포함) |
+
+- ⚖ F1 4자리(beginners «Pour débuter en argent réel» · 홈게임 FAQ · game-order «plus petites limites» 2) = **검수장 사용자 결재 대기** — 결재 뒤 요청 오면 이행(그 전 착수 금지).
+- 🪶 통지(자동 착수 금지): (a) **EN-먼저** betting «can't raise your own bet» 3자리(EN L146·L209 · 형제 7로케일 동문) — BB·라이브 스트래들 레이즈 옵션(B 159·165) 한정 검토 = EN 손질 회차 (b) fr 단독 경미: game-order 도입 헤즈업 괄호 · beginners «nouvelle carte commune» ↔ EN «street» · betting 체크 열거 스트래들러 · «règle 103» 룰북 접두 · fr positions FAQ «Le bouton avance d'un siège … après chaque main»(«normalement» 없음 · 본체 발견) (c) Astra EN 동형 묶음(검수장 `hq-reverify/triage/`) (d) 검수장 몫: EN 원장 SB raise-or-fold ↔ UNV 통일 재판정.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

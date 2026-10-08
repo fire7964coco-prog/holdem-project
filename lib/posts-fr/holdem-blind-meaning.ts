@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Les blindes sont des mises obligatoires posées avant la distribution des cartes. La petite blinde est à gauche du bouton du donneur et la grosse blinde juste à sa gauche (en heads-up, c'est le bouton qui paie la petite blinde). La grosse blinde, en général le double de la petite, sert d'unité de mise à toute la table.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -137,7 +137,7 @@ Quand il ne reste que deux joueurs (ou dans un match en heads-up), la règle hab
 
 ## Que se passe-t-il si tu rates ta blinde ? (blinde morte)
 
-Si tu t'absentes et que tu ==**rates tes blindes**==, dans la plupart des salles tu les reposes à ton retour pour revenir dans le jeu — la grosse blinde manquée compte comme une mise vivante, et la petite blinde manquée est un jeton ==**mort**== versé directement au pot. Sinon, tu attends que la grosse blinde revienne jusqu'à ton siège. En ligne, tout ça se gère automatiquement.
+En cash game live, si tu t'absentes et que tu ==**rates tes blindes**==, dans la plupart des salles tu les reposes à ton retour pour revenir dans le jeu — la grosse blinde manquée compte comme une mise vivante, et la petite blinde manquée est un jeton ==**mort**== versé directement au pot. Sinon, tu attends que la grosse blinde revienne jusqu'à ton siège. En ligne, tout ça se gère automatiquement.
 
 Même logique quand tu t'assieds pour la première fois à une table de cash game en live : en général, tu ne joues pas gratuitement. La plupart des salles te demandent soit de **poser une grosse blinde** pour être servi tout de suite, soit d'attendre que la blinde arrive à ton siège — même si certaines n'imposent rien aux nouveaux joueurs en no-limit ou en pot-limit (WSOP Live Action Rules 104.a), alors demande au donneur avant de t'asseoir.
 

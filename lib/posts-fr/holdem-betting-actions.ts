@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, il y a 5 actions : checker (dire « parole » : ne pas miser tout en restant dans le coup), miser (ouvrir le tour), suivre (payer la mise), relancer (la relance minimum égale au moins la dernière mise ou relance complète) et se coucher (fold). Tu ne peux checker que s'il n'y a aucune mise devant toi : préflop, c'est en général seulement la grosse blinde, ou le joueur qui a posé un straddle.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -106,7 +106,7 @@ Pour voir qui parle et à quel moment, tour par tour, consulte l'[ordre de jeu a
 
 ## C'est quoi un call au poker ? Check ou call, la différence
 
-Suivre (call), c'est égaler exactement la mise en cours pour rester dans le coup : quelqu'un mise $10, tu paies $10. La différence avec le check est simple : le check n'existe que s'il n'y a aucune mise devant toi et il est gratuit, alors que le call suppose qu'un joueur a déjà misé et te coûte le montant de sa mise.
+Suivre (call), c'est égaler exactement la mise en cours pour rester dans le coup : quelqu'un mise $10, tu paies $10. La différence avec le check est simple : le check n'existe que s'il n'y a aucune mise devant toi et il est gratuit, alors que le call suppose qu'un joueur a déjà misé et te coûte ce qu'il faut pour égaler sa mise — seulement la différence si tu as déjà mis des jetons dans ce tour.
 
 On dit aussi « payer ». Tu mets exactement le montant de la mise, ni plus, ni moins — et s'il te reste moins de $10, tu peux quand même suivre : tu fais tapis avec ce que tu as.
 
@@ -203,7 +203,7 @@ Quand miser, quand un call est rentable, quand lâcher une bonne main : c'est un
 
 ## Les erreurs de mise que je vois chaque semaine en live
 
-Dans les parties live à petites limites, quatre erreurs de mise reviennent sans cesse : pousser des jetons « pour suivre » alors que personne n'a misé, changer d'annonce après avoir dit « je suis », jeter un flop gratuit en grosse blinde, et poser un gros jeton en silence en croyant relancer. Les règles WSOP 90.a, 90.b.1, 90.d et 97 tranchent chacun de ces cas.
+Dans les parties live à petites limites, quatre erreurs de mise reviennent sans cesse : pousser des jetons « pour suivre » alors que personne n'a misé, changer d'annonce après avoir dit « je suis », jeter un flop gratuit en grosse blinde, et poser un gros jeton en silence en croyant relancer. Les règles WSOP 90.a/90.b.1, 90.d, 84 (en tournoi) et 97 tranchent ces quatre cas, dans cet ordre.
 
 Je joue chaque semaine une partie live à petites limites, et les mêmes erreurs d'action reviennent avec une régularité d'horloge :
 

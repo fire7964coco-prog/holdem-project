@@ -1,3 +1,10 @@
+## 2026-10-08 (1) — MA-367 FR 회차 1 🅰 rules 판정·이행 (MB-203 · queue §2-AG)
+
+- 검수장 MA-367 요청 1(fr 고유 9자리) 전부 채택·이행 — fr 5편(game-order 3 · all-in 2 · blind 1 · showdown 2 · betting 2). 근거 조문 TDA 2024 17-A·34-B·45-A·47-A 원문 확인. EN 무변경 · fr 다른 글 사본 0.
+- diff 교열 렌즈 1(fr 네이티브+TD · Opus 5.5) 지적 3 채택: 47-A 한 줄 «déjà parlé» 과대 → «déjà misé ou suivi» + 누적 짧은 올인 예외 · «tous les autres» 지시어 · 조문 열거 묶음·84 토너먼트 한정.
+- 게이트 audit:hard --locale=fr 51/51 🔴 0 · 빌드 exit 0 · HTML 새 문구 확인.
+- ACK MA-366·355·356. ⚖ F1 4자리 = 검수장 사용자 결재 대기. 🪶 통지(EN-먼저 own-raise 3 · fr 경미 4 + positions FAQ 버튼 «normalement» · Astra EN 동형) = §2-AG 등재(자동 착수 금지).
+
 ## 2026-10-07 (17) — vi 계산기·핸드차트 신설 (`/vi/calculator` · `/vi/hand-chart` · tr 회차 2 방식)
 
 - 사장님 10-07 ⓑ «계산기·핸드차트 vi 먼저». 조사 먼저: DFS 볼륨 70개 · SERP 6쿼리 · 자동완성 3시드(2704·vi) → `docs/keyword-bank/vi-tools.md`. 결론 = 베트남어 도구 구 전부 null · 영어 머리어(poker calculator 140 · poker odds calculator 110 · poker hand chart 50) · «poker chart»(70) SERP = 족보 포스터(족보 글 소유 → 차트 제목에서 뺐다) · 계산기 SERP top10 = 앱스토어뿐(베트남어 웹 도구 0).
