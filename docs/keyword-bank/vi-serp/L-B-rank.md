@@ -1006,4 +1006,5 @@ thùng phá sảnh là bài gì 140 · thùng phá sảnh poker 110 · cù lũ t
 11. [related] Poker hands · Poker Table · Poker Mat · Poker Set
 ```
 
+- organic 9개 이하 헤드(poker hands 9 · thứ tự bài poker 9 · cù lũ 7 · tứ quý 8 · nuts là gì 8 · split pot 9 · hòa bài poker 9) 재조회 판정(본체 10-08): 원 JSON 직접 계수 결과 poker hands·thứ tự·hòa bài는 `se_results_count` 자체가 9(Google 전체 결과), cù lũ·tứ quý·nuts·split은 PAA·video·images·local_pack이 1페이지 자리를 차지한 것 → 1페이지 전부 수신 · **재조회 안 함**. §9-1 «✗ 정확 요청 없음» AC 9개는 §10-2로 ✅. 커버리지 ✗ 0.
 - kicker·split·nuts 포커 한정 SERP에도 vi PAA는 없다(nuts poker hand PAA = 영어). → 커버리지 ✗ 4글(kicker·tiebreak·split·reading-the-board)은 «vi 질문 축어 없음 → EN FAQ 이식 + AC 정의형 축어» 그룹으로 닫는다(fr L-G 그룹 A 선례). 본체 판정.

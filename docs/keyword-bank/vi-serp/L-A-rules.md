@@ -787,3 +787,72 @@ EN은 이를 **베팅을 상대하면 call, 베팅이 없으면 그 칩 액면�
 | showdown-rules | ✅ 공개 순서·lật bài tẩy | ✅ 보충 `Showdown là gì?` | ✅ |
 
 **브리프의 엄격한 ‘✗ 0’ 완료 조건은 충족하지 못했다.** 남은 항목은 정확 시드 자동완성 일부, 원자료의 부족한 organic 결과, 외부 글 전체 헤딩 축어 재현이다. 보고서의 오염 계수·검산·vi 대조·처방은 이 한계를 명시한 상태로 사용할 수 있으며, 누락을 완료로 바꾸어 기록하지 않았다.
+---
+
+## 10. 본체 보완 측정 (2026-10-08 · §2·§9 결손 이행 · 원자료 `tmp/vi/L-A2/`)
+
+### 10-1. §2 새 후보 45개 볼륨 (2704 · vi · `vol.txt` 축어)
+
+fold trong poker là gì **50** · check trong poker là gì 30 · call trong poker là gì 30 · raise trong poker là gì 30 · ante trong poker là gì 30 · flop trong poker là gì 20 · ante poker là gì 20 · blind trong poker là gì 20 · poker là gì cách chơi 10 · cách chơi poker đơn giản 10 · cách chơi poker cho người mới bắt đầu 10 · cách chơi poker chip 10 · min raise trong poker 10 · all in poker rules 10 · all in poker meaning 10 · side pot poker 10 · side pot poker rules 10 · side pot texas holdem 10 · river trong poker là gì 10 · all in trong poker là gì 10 · muck trong poker là gì 0 · (`-` = 데이터 없음) cách chơi poker 2 người · poker cách chia bài · flop turn river là gì · khi nào được check trong poker · lệnh check trong poker · check poker là gì · lệnh call trong poker · call poker là gì · luật min raise trong poker · cách tính min raise trong poker · lệnh raise trong poker · raise poker là gì · lệnh fold trong poker · fold poker là gì · big blind trong poker là gì · thứ tự lật bài poker · lật bài tẩy là gì · làm cách nào để chơi poker dễ hiểu · làm cách nào để chia bài trong poker · luật chơi poker là gì · cold call trong poker là gì · turn trong poker là gì · showdown trong poker là gì · under the gun trong poker là gì.
+
+- 읽기: 베트남어 액션 정의 수요의 **실제 표기 = «X trong poker là gì»**(fold 50 > check·call·raise·ante 30 > flop·blind 20 > river·all in 10). «X poker là gì»·«lệnh X» 변형은 전부 `-`. 단독 «X là gì»(0-1: fold 14,800 등)는 §0에서 전부 오염이라 **H2·FAQ 축어는 «X trong poker là gì» 형**으로 쓴다. turn·showdown·under the gun·muck은 결합형도 수요 없음 → H2 소제목으로만.
+- «luật chơi poker là gì» `-` → 헤드는 0-1의 luật poker 2,900 · luật chơi poker 1,600 그대로.
+
+### 10-2. 원형 헤드 자동완성 15개 (`ac.txt` 축어 · §9-A «변형»·«✗» 자리 보완)
+
+```
+## luật chơi poker: luật chơi poker 5 lá · luật chơi poker 2 lá · luật chơi poker 4 lá · luật chơi poker texas · luật chơi poker tournament · luật chơi poker 7 lá · luật chơi poker short deck · luật chơi poker mỹ · luật chơi poker chi tiết · luật chơi poker là gì · luật chơi poker wikipedia · luật chơi liar's poker
+## all in là gì: all in là gì trong học tập · all in la gì trong tình yêu · all in là gì trong bóng đá · all in là gì trong chứng khoán · all in là gì trong tiếng anh · all in là gì meaning · all in one là gì · all in thpt là gì · all in thptqg là gì · all in love là gì · giá all in là gì · không all in là gì · go all in là gì · yêu all in là gì · chơi all in là gì
+## check là gì: check là gì trong tiếng anh · check là gì từ điển tiếng việt · check là gì trong ngân hàng · check là gì trong poker · check là gì trong cờ vua · check out là gì · check legit là gì · check var là gì · double check là gì · check list là gì · site check là gì · check up là gì · check map là gì · check cic là gì · cross check là gì
+## call là gì: call là gì trong tiếng anh · call là gì trong tiếng việt · call là gì trong lgbt · call là gì trên zalo · call là gì trong poker · call là gì trong tin nhắn · call gì là kêu gọi · call off là gì · call margin là gì · call out là gì · viet call là gì · track call là gì · call up là gì · call center là gì · cold call là gì
+## raise là gì: raise là gì trong tiếng anh · raise là gì tiếng việt · raise là gì trong poker · raise là gì trong python · raise money là gì · raise awareness là gì · leg raise là gì · raise up là gì · raise fund là gì · calf raise là gì · lateral raise là gì · raise ticket là gì · raise lên là gì · pay raise là gì · raise concern là gì
+## fold là gì: fold là gì trong tiếng anh · fold là gì dịch · fold là gì trong poker · fold là gì slang · fold up là gì · vocal fold là gì · two fold là gì · coil fold là gì · book fold là gì · fold over là gì · fold bột là gì · aryepiglottic fold là gì · iphone fold là gì · nasolabial fold là gì · k fold là gì
+## turn là gì: turn là gì trong tiếng anh · turn là gì trong móc len · turn là gì trong game · turn gì là từ chối · turn up là gì · turn down là gì · turn out là gì · turn into là gì · turn over là gì · turn off là gì · turn around là gì · turn away là gì · turn round là gì · take turn là gì · my turn là gì
+## river là gì: river là gì trong tiếng anh · river là gì trong poker · river là gì poker · river bank là gì · river đọc là gì · river blindness là gì · river side là gì · river delta là gì · perfume river là gì · river coin là gì · river shen là gì · red river là gì · river token là gì · charming river là gì · river basin là gì
+## flop là gì: flop la gì trên tiktok · flop là gì tiếng việt · flop là gì trên facebook · flop là gì trong poker · flop là gì trên youtube · flop là gì trong truyện · flop là gì trong giới vẽ · flop là gì trong tiếng anh · flop trên tiktok là gì · flip flop là gì · flop là bị gì · flop quá là gì · flop là từ gì · flop kênh là gì · phim flop là gì
+## blind là gì: blind là gì tiếng anh · blind là gì tiếng việt · blind là gì trong poker · blind box là gì · blind date là gì · blind buy là gì · blind spot là gì · blind test là gì · need blind là gì · big blind là gì · blind flange là gì · double blind là gì · blind bag là gì · blind pick là gì · blind stitch là gì
+## showdown là gì: showdown là gì trong rap · pokemon showdown là gì · showdown lck là gì · hunt showdown là gì · shinjuku showdown là gì · showdown poker là gì · final showdown là gì · wild bounty showdown là gì · showdown tiếng việt là gì · ultimate tennis showdown là gì · video browser showdown là gì · saturday showdown lck là gì
+## cách chơi poker 2 lá: cách chơi poker 2 người · cách chơi bài poker 2 lá · cách chơi poker 7 lá · cách chơi poker 3 lá
+## muck là gì: muck là gì tiếng việt · muck out là gì · mockup là gì · muck band là gì · muck là game gì · muck around là gì · muck trong poker là gì · muck sth up là gì · muck tiếng anh là gì · goo goo muck là gì
+## under the gun: under the gun là gì · under the gun phim · under the gun tập 1 · under the gun kdrama · under the gun meaning · under the gun poker · under the gunn · under the gun cast · under the gun meaning poker · under the gun drama · under the gun television show · under the gun 1995 · under the gun full episode · under the guns · idiom under the gun
+## ante là gì: ante là gì poker · ex ante là gì · ante room là gì · ante meridiem là gì · ante up là gì · ante balatro là gì · ante mortem là gì · ante cibum là gì · ante trong balatro là gì · upped the ante là gì · ante tiếng hàn là gì · big blind ante là gì · ante meridiem là tiếng gì · ex ante nghĩa là gì
+```
+
+- 읽기: 단독 헤드 15개 중 포커 제안이 **1개라도 든 것 = check·call·raise·fold·river·flop·blind·showdown·muck·under the gun·ante(«ante là gì poker»·«big blind ante là gì»)** — 전부 «… trong poker» 꼬리로 나타난다(§0 오염 판정 그대로 · 구글이 포커 뜻을 «trong poker» 한정어로 분리). turn·all in은 포커 제안 0. «luật chơi poker»는 변종 게임(5 lá·2 lá·4 lá·7 lá·short deck) 제안이 다수 → 🅰 beginners H2에 «Poker 2 lá(Texas Hold'em)와 5 lá의 차이» 1문단이 검색 의도를 받는다(§7-A와 일치).
+
+### 10-3. 결합형 SERP 13개 — PAA·related·유형 (`serp.txt` 축어 · 2704 · vi · desktop)
+
+| 헤드(볼륨) | organic | 유형 집계(도메인) | PAA 원문 | related 원문 |
+|---|---:|---|---|---|
+| fold trong poker là gì (50) | 10 | reddit `?tl=vi` 5 · facebook 4 · youtube 1 | **Fold poker là gì? · Blind trong poker là gì? · Flush trong poker là gì? · "Call" trong poker có nghĩa là gì?** | — |
+| check trong poker là gì (30) | 10 | 구글번역 프록시 3 · natural8·energycasino 2 · propokervn·hunter.poker 2 · wikipoker 1 · reddit 1 · 기타 1 | 없음 | — |
+| call trong poker là gì (30) | 10 | facebook 6 · reddit 2 · giaytoxe.vn 2 | "Call" trong poker có nghĩa là gì? · Blind trong poker là gì? | Defend trong poker là gì · Khóa học Poker |
+| raise trong poker là gì (30) | 10 | wikipoker 2(«Check-Raise…» · «Các hành động trên bàn poker là gì? Check, Bet, Call, …») · reddit 2(«Min raise hoạt động kiểu gì vậy?») · studocu·docs.google·wikipedia·voz 4 · pokerqz 1 · youtube 1(«CÁCH TÍNH MIN RAISE TRONG POKER») | 없음 | Check trong poker là gì · Call trong Poker là gì · Thuật ngữ poker tiếng viết · Bet trong Poker là gì · Thuật ngữ trong Poker · Bbs trong poker là gì · Luật Poker · Cách chơi poker |
+| ante trong poker là gì (30) | 10 | wikipoker 2 · pokerqz 2(«Ante trong poker là gì? Giải thích trọn vẹn cơ chế, mức…») · reddit 2(«BB ante hoạt động kiểu gì vậy?» · «Lú quá, luật big blind ante là sao ấy nhỉ») · ggpoker·wptglobal 2 · vdict 1 · 기타 1 | Blind trong poker là gì? · "Call" trong poker có nghĩa là gì? · **Buy in poker là gì?** | — |
+| flop trong poker là gì (20) | 10 | facebook 5 · youtube 3 · reddit 1 · 프록시 1 | «flop» 영어 뜻 · 음악 · **Làm cách nào để chơi poker giỏi?** · kpop(포커 1/4) | — |
+| blind trong poker là gì (20) | 10 | natural8 2 · wikipoker 3 · ggpoker 1 · en.wikipedia 1 · reddit 1(«Small blind và big blind trong Texas Hold'em là gì?») · facebook·youtube 2 | 없음 | Các vị trí trong poker · Small blind poker · Why is it called blind in poker · Big blind poker · Sohen trong đánh bài là gì · Rules of blinds in poker · Poker blinds calculator · Big blind small blind rules |
+| all in trong poker là gì (10) | 10 | natural8 2(«All-in trong poker nghĩa là gì?») · reddit 1(«Giải thích rõ hơn về Luật All-in cho người mới chơi») · wikipoker·ggpoker 2 · 주식·일반 3(hsc·ai-hay·studocu) · facebook 2 | 없음 | All in trong tình yêu la gì · All in là gì · Luật chơi poker 2 lá · Luật chơi Poker cơ bản · Cách chơi poker · Luật Poker · Luật raise trong poker · Allin Poker |
+| river trong poker là gì (10) | 10 | wikipoker 2 · ggpoker·natural8 2 · studocu·firststep·tinhte 3 · reddit·youtube·facebook 3 | 없음 | Raise trong Poker là gì · Check trong poker là gì · Thuật ngữ poker tiếng viết · Thuật ngữ trong Poker · Call trong Poker là gì · Sohen trong đánh bài là gì · Bbs trong poker là gì · Dominate trong Poker là gì |
+| side pot poker (10) | 10 | 영어 6(poker-vibe·stackexchange 2·pokertda·wizardofvegas·pokerstrategy es) · reddit 영어 2 · pokerqz 1(«Pot chính | Bảng thuật ngữ») · 앱 1 | 없음 | — |
+| dealer poker là gì (170 · L-F §10 교차) | 9 | 구글번역 프록시 4(«Hướng dẫn cách xáo bài và chia bài» · «Các vị trí trong Poker» · «Cách chơi Poker» · «6 Câu hỏi phỏng vấn dành cho người chia bài casino») · reddit 2(«Dealer Poker Las Vegas Kiếm Được Bao Nhiêu») · ulifestyle(«Dealer là gì trong casino?») · ai-hay · facebook | 없음 | — |
+| phỉnh poker là gì (40 · L-F §10 교차) | 10 | reddit 5 · facebook 5 — 전부 **칩 세트 구매·수집**(«Hướng dẫn mua phỉnh Poker» · «PHỈNH POKER HẢI PHÒNG GIÁ RẺ») | 없음 | — |
+| luật chơi poker là gì (`-`) | 9 | thegioipoker · gamego · ggpoker · natural8 · wikipoker(«Luật chơi Poker No-Limit Hold'em cập nhật mới nhất 2026») · vi.wikipedia(Xì tố) · facebook · **합법성 기사 2**(baomoi «Trường hợp nào chơi bài Poker bị coi là đánh bạc bất…» · congly «Chơi Poker thế nào là hợp pháp?») | Poker là môn thể thao gì? · Làm cách nào để chơi poker giỏi? · **Chia bài poker gọi là gì?** · Poker là bao nhiêu bàn? | Luật chơi poker 5 lá · Luật chơi poker 2 lá · Cách chơi poker online · Thứ tự bài Poker · Cách chia bài Poker · Luật Poker Tournament · Check trong poker là gì · Cách tính điểm poker |
+
+- 🔴 관찰: 결합형 SERP도 **reddit `?tl=vi` 프록시·facebook 포스트·구글번역 프록시**가 과반이고, 베트남어 원문 해설은 wikipoker·pokerqz·natural8·ggpoker 번역판뿐 → 액션 정의 4종(check·call·raise·fold)을 **한 글(betting-actions)에 «X trong poker là gì» H2 4개로 묶고 §13 예시를 붙이면** 정면 경쟁자가 없다(§7-C 그대로).
+- PAA에서 확보한 vi 질문 축어(글별): betting-actions = «Fold poker là gì?» · «"Call" trong poker có nghĩa là gì?» · «Bet trong Poker là gì»(related) / blind-meaning = «Blind trong poker là gì?» · «Small blind và big blind trong Texas Hold'em là gì?»(reddit 제목) · «Big blind ante là gì»(AC) / beginners = «Poker là môn thể thao gì?» · «Làm cách nào để chơi poker giỏi?» · «Poker là bao nhiêu bàn?» / game-order = «Chia bài poker gọi là gì?» · «Dealer trong poker là gì»(dealer 170의 포커 쪽 의도 — 직업·카지노 딜러 의도와 섞여 **헤드 조준 안 함** · FAQ 1문만) / all-in-rules = «Luật All-in cho người mới chơi»(reddit 제목) · «Buy in poker là gì?»(→ 🅴 교차).
+- «phỉnh poker là gì» 40 = 칩 상품 의도 → 조준 안 함(beginners 본문에서 «phỉnh (chip)» 병기만). «luật chơi poker là gì» SERP의 합법성 기사 2건 = 금지 축 → 조준 안 함 · 관찰만.
+- related 신규 용어(0-3 용어 정본 후보 · 조준 아님): Defend · Bbs(big blinds) · Sohen(«sohen trong đánh bài» = 다른 게임) · Dominate · Jam · Snap call · Flip.
+
+### 10-4. organic 부족 헤드 재조회 판정 — **재조회 안 함**
+
+원 JSON(`tmp/vi/serp-A-serp.json`)을 직접 셌다: organic 수가 10 미만인 14헤드는 ① Google 자체가 돌려준 전체 결과 수(`se_results_count`)가 8~9(luật poker 8 · check là gì 9 · cách chơi poker 2 lá 8 · flop turn river 8)이거나 ② 1페이지 자리를 AI overview·이미지·영상·PAA가 차지한 경우(check·call·raise·fold·turn·river·flop·showdown·muck·under the gun·blind = AIO 1 + images/video 1~2)다. depth 10으로 1페이지는 전부 받았고, 빠진 자리를 포커 결과로 가정해도 오염 판정(0/8·0/7·0/6 → 최대 4/10 = «섞임»)이 «포커 몫 있음(≥7)»으로 바뀌는 헤드가 없다. → 동일 조건 재조회 없이 §9-A 판정을 확정한다.
+
+### 10-5. 커버리지 재판정 (§9-A «위임»·«✗» 칸 → 본체 이행)
+
+| 헤드 | 1 AC | 2 볼륨 | 3 SERP | 판정 |
+|---|---|---|---|---|
+| luật chơi poker · all in là gì · check·call·raise·fold·turn·river·flop·blind·showdown là gì · muck là gì · under the gun · ante là gì · cách chơi poker 2 lá | ✅ 정확 시드(§10-2) | ✅ §10-1 | ✅ 원자료 + 결합형 §10-3 | ✅ |
+| §2 새 후보 45 | — | ✅ 45/45 측정 | — | ✅ |
+| 외부 글 H1/H2/H3 전체 축어 | — | — | — | 요구 범위 아님(브리프 4 = 축어 표본·구조) → ✅로 닫음 |
+
+**글별 질문 확보(§9-B) 6/6 유지 + vi PAA 축어 보강(§10-3).** 커버리지 ✗ 0.

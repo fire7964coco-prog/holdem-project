@@ -742,3 +742,50 @@ dealer poker là gì 170 · flush poker là gì 50 · thuật ngữ trong poker 
 
 - 살아 있는 것: **dealer poker là gì 170**(→ L-A game-order/beginners 교차) · flush poker là gì 50(→ L-B) · thuật ngữ trong poker 50 · phỉnh poker là gì 40(칩 «phỉnh») · itm poker là gì 30(→ L-E) · thuật ngữ poker tiếng việt 30 · buy in poker là gì 20 · rake poker là gì 20. 나머지 10 이하.
 - 남은 보완(다음 세션): 지정 헤드 원형 AC · nuts là gì SERP(L-B §10에 AC만 있음) · organic 8~9개 헤드 재조회 여부.
+
+---
+
+## 11. 본체 보완 — 원형 헤드 AC · 결합형 SERP · 커버리지 종결 (2026-10-08 · 원자료 `tmp/vi/L-A2/`)
+
+### 11-1. 원형 헤드 자동완성 9개 (`ac.txt` 축어 · §9-A «△» 자리 보완)
+
+```
+## fish là gì: fish là gì trong tiếng anh · fish maw là gì · fish sauce là gì · cod fish là gì · cat fish là gì · fish out là gì · fish oil là gì · fish tank là gì · cold fish là gì · jelly fish là gì · grilled fish là gì · raw fish là gì · catch fish là gì · fish date là gì · fish kefta là gì
+## tilt là gì: tilt là gì trong quay phim · tilt là gì tiếng anh · tilt là gì trong poker · pelvic tilt là gì · tilt shift là gì · tilt test là gì · tilt up là gì · pan tilt là gì · tilt tension là gì · canthal tilt là gì · bị tilt là gì · value tilt là gì · axial tilt là gì · tilt down là gì · head tilt là gì
+## bluff là gì: bluff là gì meaning · semi bluff là gì · bluff mdf là gì · bluff catcher là gì · double bluff là gì · call bluff là gì · blind man's bluff là gì · call one's bluff là gì · call someone's bluff là gì · call my bluff là gì · bluff your way là gì · bluff tiếng anh là gì · call your bluff là gì · call his bluff là gì · bluff có nghĩa là gì
+## rake là gì: rake là gì trong poker · free rake là gì · rake leaves là gì · rake up là gì · rakeback là gì · rake over là gì · rake angle là gì · notorious rake là gì · rake là con gì · rake off là gì · cắt rake là gì · tiền rake là gì · rake slang là gì · reformed rake là gì · rake tiếng anh là gì
+## straddle là gì: straddle là gì trong poker · straddle carrier là gì · straddle stitch là gì · long straddle là gì · straddle position là gì · straddle seam là gì · short straddle là gì · straddle positioning là gì · straddle strategy là gì · straddle trong logistics là gì · straddle the line là gì · straddle trong may mặc là gì
+## cooler là gì: air cooler là gì · water cooler là gì · eva cooler là gì · oil cooler là gì · cooler master là gì · cpu cooler là gì · wine cooler là gì · can cooler là gì · cooler box là gì · cooler poker là gì · cooler bag là gì · rear cooler là gì · dry cooler là gì · spot cooler là gì · cooler city là gì
+## bad beat: bad beat bl · bad beat poker · bad beat là gì · bad beat jackpot · bad beat brewing · bad beat manhwa · bad beat meaning · playground bad beat · bad beat poker jackpot · bad beat jackpot ggpoker · bad beat jackpot rules · bad beat jackpot stake · bad beat jackpot meaning · bad beat poker meaning · bad beatles
+## nuts là gì: nuts là gì trong tiếng anh · nuts là gì tiếng lóng · nuts là gì slang · tree nuts là gì · go nuts là gì · nuts là quả gì · pine nuts là gì · cashew nuts là gì · brazil nuts là gì · nuts là hạt gì · nuts model là gì · betel nuts là gì · ảnh nuts là gì · nuts talk là gì · ginkgo nuts là gì
+## thuật ngữ trong poker: cách thuật ngữ trong poker · thuật ngữ tiếng anh trong poker · tất cả thuật ngữ trong poker · các thuật ngữ cơ bản trong poker · thuật ngữ poker tiếng việt · thuật ngữ poker tiếng anh · thuật ngữ trong bài poker · thuật ngữ poker
+```
+
+- 읽기: 포커 제안이 든 단독 헤드 = tilt(«tilt là gì trong poker») · rake(«rake là gì trong poker» 1위 · «rakeback là gì» · «tiền rake là gì») · straddle(«straddle là gì trong poker» 1위) · cooler(«cooler poker là gì») · bad beat(«bad beat poker» · «bad beat jackpot» 계열 6 — **잭팟 의도가 bad beat 수요의 본체**) · bluff(«semi bluff là gì» · «bluff catcher là gì» — 포커 용어 2). fish·nuts = 포커 제안 0(§0 판정 확정). «thuật ngữ trong poker» 제안은 전부 용어집 의도(tiếng anh·tiếng việt·cơ bản·tất cả).
+
+### 11-2. 결합형 SERP 7개 (`serp.txt` · 2704 · vi · desktop)
+
+| 헤드(볼륨) | organic | 유형 집계 | PAA · related 원문 |
+|---|---:|---|---|
+| fish poker (10) | 9 | **전부 영어**(youtube 2 · poker-academie fr · hand2note · clipart·shutterstock 2 · cnet 앱 · seminolehardrock 선수명 Darryll Fish · assopoker it) | 없음 |
+| tilt poker là gì (10) | 10 | reddit `?tl=vi` 6(«Senior Tilt» 인물 기사 다수) · facebook 3 · easycommerce 1(«Hiểu Và Sử Dụng Tilt để Giảm Thua Cuộc Khi Chơi Poker») | 없음 |
+| bluff poker là gì (10) | 10 | natural8(«Những thuật ngữ lóng quan trọng trong poker») · ggpoker · pokernews EN · wikipoker · hanoihotel(«Top 3 kỹ thuật bluff thần thánh») · 제휴·스팸 2(vegas79t · agenslotvipx) · facebook · it.wikipedia | related: Call trong Poker là gì · Flip poker là gì · Poker bluff example · **Jam trong poker là gì · Monster draw poker là gì** · Itm Poker la gì · Các thuật ngữ trong Poker · Snap call là gì |
+| bad beat poker là gì (10) | 10 | facebook 5 · reddit 4(«Ai thắng giải độc đắc bad beat ở đây») · 프록시 1 | 없음 |
+| cooler poker là gì (`-`) | 10 | 프록시 2(«Thuật ngữ Poker») · wikipoker · energycasino(용어집) · natural8 · reddit(«ván bài thua tệ nhất/xui xẻo nhất») · facebook 3 · studocu | **PAA: Limp poker là gì? · Call poker là gì?** |
+| straddle poker là gì (0-1 측정) | 10 | reddit 3 · wikipoker · help.ggpoker · natural8 · wptglobal · play.google · voz · facebook — **straddle 해설 제목 0** | 없음 |
+| rake poker là gì (20) | 10 | **전부 영어·외국어**(natural8 EN «What is Rake in Poker» · 888poker · masterclass · macausportingclub · pokercalendar.asia · fr.pokernews · giocodigitale it · youtube EN · reddit EN) | related(영어): Why is taking a rake in poker illegal · What is a rake in poker Molly's game · … and why is it illegal · How does a rake work in poker · Poker rake calculator · Natural8 rake structure · Do casinos take a rake in poker |
+
+- 🔴 fish·rake·straddle·tilt = **베트남어 해설 글이 1페이지에 0~1편** → 네 글은 «첫 베트남어 정면 해설» 자리(차별화 = 정의 + 실전 예 + §13 예시). rake의 related는 전부 «illegal» 축 → fr 선례대로 **합법성 FAQ는 열지 않고** «Tại sao phòng poker thu rake?»류 운영 질문으로 받는다(§8 ③과 일치).
+- 글별 vi 질문 축어 확보: cooler = «Limp poker là gì?»(→ 🅳 limping 교차) · «Call poker là gì?» / bluff·glossary = «Jam trong poker là gì» · «Monster draw poker là gì» · «Snap call là gì» · «Flip poker là gì»(→ 용어집 항목 후보) / bad beat = AC «bad beat jackpot» 계열(FAQ «Bad beat jackpot là gì?» 1문 — 운영사 이름 없이 구조만). fish·tilt·straddle·rake = 직접 PAA 없음 → **EN FAQ 이식 + AC 정의형 축어 그룹**(L-B §10-3과 같은 처리).
+
+### 11-3. `nuts là gì` — L-B §3-13 교차로 종결
+
+지정 SERP는 L-B 레인 원자료(`tmp/vi/serp-B-serp.json`)에 있다: organic 8 · **포커 0/8**(hinative 영어 표현 4 · 부품 1 · 식품 2 · reddit 속어 1) · AIO 존재 · PAA 4(비포커). AC(§11-1) 포커 제안 0. → §9-A «✗ 원자료 없음» 두 칸을 ✅(L-B §3-13·§10-2 참조)로 닫는다. 소유 판정 재료는 L-B §8-1 ④로 합류.
+
+### 11-4. organic 부족 헤드 — 재조회 안 함
+
+원 JSON 직접 계수: fish là gì 8 = AIO 1 + images 1 · cooler là gì 8 = AIO 1 + images 1 · bad beat 9 = video 1 · bluff poker 9 = video 1 + knowledge_graph · thuật ngữ trong poker 8 = `se_results_count` 8(Google 전체 결과가 8). 1페이지 전부 수신했고 빠진 자리를 포커로 가정해도 §0 판정(0/10·1/10·5/10·9/9·8/8)이 바뀌지 않는다.
+
+### 11-5. 커버리지 재판정 — ✗ 0
+
+§9-A의 △·✗ 전부 이행(1 AC ✅ 정확 시드 · 2 볼륨 ✅ §10 53/53 · 3 SERP ✅ 원자료+결합형 · nuts ✅ L-B 교차). §9-B의 «직접 PAA 미확보» 3글(fish·bad beat·cooler) = cooler PAA 2 확보 · fish·bad beat는 vi PAA가 **존재하지 않음을 결합형까지 확인** → EN FAQ 이식 그룹으로 닫음(허위 ✅ 아님 · 근거 §11-2).
