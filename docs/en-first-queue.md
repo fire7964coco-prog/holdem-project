@@ -557,6 +557,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔧 게이트: AH-1 새 문장이 H5 오탐(fr 부정 «ne touche de quinte» 미인식) → `scripts/audit-hardening.mjs` handMentions에 fr 부정(aucun·pas·jamais · «ne <동사> de») + 셀프테스트 2(82/82) · id·ms·es·pt·de·en 전후 결과 동일.
 - 🪶 통지(자동 착수 금지): hand-rankings «garde-le à côté de toi»(토너먼트 TDA 5-D) · tiebreak 단색 보드 SF 반례 · reading 트립스 «deviennent» · Astra EN 동형 B 5건.
 
+### 2-AI. 우편함 수신분 — MA-370 (MB-203 이행 전/후 · 기준 `d5e5fc0b`) · 판정·이행 2026-10-08 (4)
+
+> 근거 = 검수장 MA-370(TDA 2024 47-A · Addendum 47 Ex 1/1-A 본부 덤프). 본체 판정 = 47-A 원문(`docs/sources/tda-2024-rules-v1.txt` L396~) 확인 — «not facing at least a full bet or raise when the action returns to them»는 그 플레이어 자신의 앞선 금액 기준 증분이고 범위는 «In no-limit and pot limit» → **채택·이행**(fr 고유 · EN 무변경 · 같은 문장 fr 사본 0 · 형제 all-in tldr 기존 문면과 같은 꼴).
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| AI-1 | game-order | AG-9 신설 문장 예외절 «sauf si plusieurs petits all-in cumulés atteignent une relance complète» (RISKY) | «Une nuance, en no-limit et en pot-limit : … — sauf si plusieurs petits all-in cumulés te mettent face à au moins une relance complète au-dessus de ce que tu as déjà mis (TDA 2024, règle 47-A).» |
+
+- 🪶 통지(자동 착수 금지): ① game-order L46 버튼 «après chaque main»에 «normalement» 없음(#12와 한정 정도 차이) = §2-AG (b) positions FAQ와 같은 계열 — 손질 회차에 함께 ② betting #73 일화(live 캐시) ↔ 90·97 WSOP 토너먼트 번호 = 결론 불변 · 기존 J1 #74 정리.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

@@ -266,7 +266,7 @@ La leçon : ==r:quand la river a donné une double paire à A, il a *eu l'impres
 
 ## Quels sont les 7 coups possibles au poker ?
 
-Au poker, tu as sept actions possibles : se coucher, checker, suivre, miser, relancer, surrelancer (3-bet) et faire tapis. Celles qui s'ouvrent à toi dépendent avant tout d'une question : y a-t-il déjà une mise devant toi ? Sans mise, tu peux checker ou miser ; face à une mise, tu dois suivre, relancer ou te coucher. Une nuance : si tu as déjà misé ou suivi dans ce tour et qu'un all-in trop court pour valoir une relance complète te revient, tu ne peux que suivre ou te coucher — sauf si plusieurs petits all-in cumulés atteignent une relance complète (TDA 2024, règle 47-A).
+Au poker, tu as sept actions possibles : se coucher, checker, suivre, miser, relancer, surrelancer (3-bet) et faire tapis. Celles qui s'ouvrent à toi dépendent avant tout d'une question : y a-t-il déjà une mise devant toi ? Sans mise, tu peux checker ou miser ; face à une mise, tu dois suivre, relancer ou te coucher. Une nuance, en no-limit et en pot-limit : si tu as déjà misé ou suivi dans ce tour et qu'un all-in trop court pour valoir une relance complète te revient, tu ne peux que suivre ou te coucher — sauf si plusieurs petits all-in cumulés te mettent face à au moins une relance complète au-dessus de ce que tu as déjà mis (TDA 2024, règle 47-A).
 
 ![Les actions d'enchères au poker — checker, suivre, se coucher, miser, relancer, surrelancer, faire tapis](/images/holdem-betting-options-guide.webp "Toutes les actions d'enchères possibles au Texas Hold'em")
 

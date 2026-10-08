@@ -1,3 +1,8 @@
+## 2026-10-08 (4) — MA-370 FR game-order 47-A 예외절 이행 (MB-206 · queue §2-AI)
+
+- 검수장 MA-370 요청 1(AG-9 신설 문장 #121 RISKY) 채택: 예외절에 기준점(«au-dessus de ce que tu as déjà mis»)과 범위(no-limit·pot-limit) 추가 — 47-A 원문 대조 · 형제 all-in tldr 꼴. 해소 9 ACK · 통지 2 = §2-AI. MA-371(MB-205 재판정 착수) ACK.
+- 게이트 audit:hard --locale=fr 51/51 🔴 0 · 빌드 exit 0.
+
 ## 2026-10-08 (3) — MA-368 FR 🅱 rank 판정·이행 (MB-205 · queue §2-AH)
 
 - 요청 1의 3자리 채택·이행(kicker 휠 WRONG · kicker 직답 원페어 한정 + tldr 사본 · hand-rankings 로열 문장 순서) · 렌즈 1 문제없음.
