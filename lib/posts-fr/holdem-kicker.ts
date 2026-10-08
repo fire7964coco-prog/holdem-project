@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Kicker au poker : c'est quoi, combien par main, et l'as dominé",
   seoTitle: "Même paire, pot perdu ? — C'est quoi le kicker au poker",
   desc: "Même paire, pot perdu ? Le kicker au poker, la carte qui départage : quelles mains en ont et combien, pourquoi A9 perd contre AK, et le piège du carré.",
-  tldr: "Le kicker est la carte d'accompagnement la plus haute hors de ta combinaison : il départage deux joueurs qui ont la même main. Carte haute : 4 kickers, paire : 3, double paire : 1, brelan : 2 ; suite, couleur, full et quinte flush n'en ont aucun. Voilà pourquoi AK bat AQ quand un as tombe sur le board.",
+  tldr: "Le kicker est la carte d'accompagnement la plus haute hors de ta combinaison : il départage deux joueurs qui ont la même main. Carte haute : 4 kickers, paire : 3, double paire : 1, brelan : 2 ; suite, couleur, full et quinte flush n'en ont aucun. Voilà pourquoi AK bat AQ quand l'as du board ne donne qu'une paire d'as à chacun.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -94,7 +94,7 @@ La logique est de la pure arithmétique : **cartes de la combinaison + kickers =
 
 ## A-K contre A-Q : comment le kicker désigne le gagnant ?
 
-Avec un as au board, A-K bat A-Q parce que le roi est le premier kicker. Déroulons-le carte par carte pour que le mécanisme soit concret.
+Quand l'as du board ne donne qu'une paire d'as à chacun, A-K bat A-Q parce que le roi est le premier kicker. Déroulons-le carte par carte pour que le mécanisme soit concret.
 
 Le board est ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tu tiens ==b:A♠ K♠==, ton adversaire tient ==b:A♦ Q♦==.
 
@@ -126,7 +126,7 @@ Aucun de vous deux ne peut aller plus haut que l'as : vous « jouez le board » 
 
 ![Deux mains de départ côte à côte sur le feutre vert — A-K à côté de A-9 — montrant comment le même as avec un kicker plus faible devient un piège dominé](/images/holdem-kicker-dominated.webp "Même as, destin différent : c'est le kicker qui sépare une main premium d'une main dominée")
 
-Retour à la main qui m'a coûté ma cave. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, ni quinte ni couleur possible.
+Retour à la main qui m'a coûté ma cave. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, et aucune des deux mains ne touche de quinte ni de couleur.
 
 - **A9 :** A♠ 9♣ → paire d'as, meilleures cinq cartes ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK :** A♥ K♦ → paire d'as, meilleures cinq cartes ==g:A♥ A♦ K♦ Q♠ 7♣==.

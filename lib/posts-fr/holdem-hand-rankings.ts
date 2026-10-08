@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "L'ordre des combinaisons au poker, de la plus forte à la plus faible : quinte flush royale, quinte flush, carré, full, couleur, quinte (suite), brelan, double paire, paire et carte haute. Les enseignes ne départagent jamais ; à combinaison égale, ce sont les cartes de la combinaison, puis les éventuels kickers, qui départagent.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -85,7 +85,7 @@ Voici chaque main, de la plus forte à la plus faible, avec un exemple et la rè
 
 **A♠ K♠ Q♠ J♠ 10♠** — la plus haute quinte flush, et la meilleure main du poker.
 
-Elle est imbattable ; la seule égalité possible, c'est une quinte flush royale posée entièrement sur le board, que tout le monde partage, et le pot est divisé. Tu en verras une environ une fois toutes les 31 000 mains, si bien que la plupart des joueurs passent des années sans en toucher une. Et attention à une idée reçue : une quinte flush qui contient un as n'est pas forcément royale — A-2-3-4-5 de la même enseigne est au contraire la plus petite quinte flush. Le jour où tu la touches, ton seul travail est de mettre un maximum de jetons au milieu.
+Elle est imbattable ; la seule égalité possible, c'est une quinte flush royale posée entièrement sur le board, que tout le monde partage, et le pot est divisé. Tu en verras une environ une fois toutes les 31 000 mains, si bien que la plupart des joueurs passent des années sans en toucher une. Le jour où tu la touches, ton seul travail est de mettre un maximum de jetons au milieu. Et attention à une idée reçue : une quinte flush qui contient un as n'est pas forcément royale — A-2-3-4-5 de la même enseigne est au contraire la plus petite quinte flush.
 
 ### #2 — Quinte flush (straight flush)
 

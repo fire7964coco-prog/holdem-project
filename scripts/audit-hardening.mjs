@@ -508,6 +508,8 @@ function handMentions(text) {
       const before = text.slice(Math.max(0, m.index - 26), m.index);
       if (/\b(sin|sem|ni|nem|no|not|nenhum|nenhuma|kein|keine|nicht|tidak|bukan|tanpa)\b[^.。!?]{0,22}$/i.test(before)) continue;
       if (/(没有|沒有|不是|なし|ではない)[^。.!?]{0,10}$/.test(before)) continue;
+      // fr 부정 — «aucune des deux mains ne touche de quinte» · «pas de couleur» (10-08 MA-368 이행에서 오탐 실측)
+      if (/\b(aucun|aucune|pas|jamais)\b[^.。!?]{0,22}$/i.test(before) || /\bn(?:e\s+|')\S+\s+(?:pas\s+|jamais\s+)?(?:de\s+|d['’])$/i.test(before)) continue;
       ms.push({ name, start: m.index, end: m.index + m[0].length });
     }
   }
@@ -1308,6 +1310,10 @@ if (argv.includes('--selftest')) {
       'Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush out there.'],
     ['부정문 — es "sin escalera ni color" (오탐 금지)', false,
       'Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color a la vista.'],
+    ['부정문 — fr "aucune des deux mains ne touche de quinte" (오탐 금지)', false,
+      'Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, et aucune des deux mains ne touche de quinte ni de couleur.'],
+    ['fr 부정어 없는 «de» 뒤 족보명은 주장이다 (잡아야 함)', true,
+      'Le board **A♦ 7♣ 2♥ Q♠ 4♦** te fait cadeau de quinte.'],
     ['zh "同花色"는 같은 무늬이지 플러시가 아니다 (오탐 금지)', false,
       '关键在于：同样这五张牌必须既同花色又连续。在牌面 **8♥ 7♥ 6♥ Q♠ 3♦** 上看看差别。'],
     ['이미지 alt는 족보 주장이 아니다 (오탐 금지)', false,

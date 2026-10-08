@@ -542,6 +542,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ⚖ F1 4자리(beginners «Pour débuter en argent réel» · 홈게임 FAQ · game-order «plus petites limites» 2) = **검수장 사용자 결재 대기** — 결재 뒤 요청 오면 이행(그 전 착수 금지).
 - 🪶 통지(자동 착수 금지): (a) **EN-먼저** betting «can't raise your own bet» 3자리(EN L146·L209 · 형제 7로케일 동문) — BB·라이브 스트래들 레이즈 옵션(B 159·165) 한정 검토 = EN 손질 회차 (b) fr 단독 경미: game-order 도입 헤즈업 괄호 · beginners «nouvelle carte commune» ↔ EN «street» · betting 체크 열거 스트래들러 · «règle 103» 룰북 접두 · fr positions FAQ «Le bouton avance d'un siège … après chaque main»(«normalement» 없음 · 본체 발견) (c) Astra EN 동형 묶음(검수장 `hq-reverify/triage/`) (d) 검수장 몫: EN 원장 SB raise-or-fold ↔ UNV 통일 재판정.
 
+### 2-AH. 우편함 수신분 — MA-368 (FR 🅱 rank 6편 · 기준 `ceed9c0d`) · 판정·이행 2026-10-08 (4)
+
+> 근거 = 검수장 `reports/검수-fr-r2-rank-2026-10-08/hq-reverify/HQ-REPORT.md`. 요청 1의 3자리 = 인용 문면 실재 확인 · ①은 본체 §13 검산(보드 A♦7♣2♥Q♠4♦ + 5-3 = 휠 가능 · A♠9♣·A♥K♦ 둘 다 스트레이트·플러시 없음) → **전부 채택·이행**(fr 고유 · EN 무변경 · fr 사본 0).
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| AH-1 | kicker | «ni quinte ni couleur possible» (WRONG) | «et aucune des deux mains ne touche de quinte ni de couleur» |
+| AH-2 | kicker | 직답 «Avec un as au board, A-K bat A-Q» | «Quand l'as du board ne donne qu'une paire d'as à chacun, …» + 같은 글 tldr «quand un as tombe sur le board» 사본도 같은 한정(렌즈 발견) |
+| AH-3 | hand-rankings | 로열 문단 «Le jour où tu la touches» 위치 | EN 순서대로 로열 문장 바로 뒤로(스틸 휠 문장 앞) |
+
+- ⚖ 형제 통일 6자리(kicker note · flush 요약 3 · split FAQ «automatique» · split L79 · reading «troisième» · hand-rankings «deux façons») = **검수장 사용자 결재 대기** — 권고안(FR RISKY 유지 + 본체 EN-먼저)으로 결재되면 EN 손질 회차로 요청이 온다(그 전 착수 금지).
+- 🪶 본체 발견(EN-먼저 후보 · 자동 착수 금지): EN kicker L128 «no straight or flush out there» · tldr «AK beats AQ when the board pa(irs an ace)» 동형 — 검수장은 EN을 두 손 한정 독해로 OK.
+- 🔧 게이트: AH-1 새 문장이 H5 오탐(fr 부정 «ne touche de quinte» 미인식) → `scripts/audit-hardening.mjs` handMentions에 fr 부정(aucun·pas·jamais · «ne <동사> de») + 셀프테스트 2(82/82) · id·ms·es·pt·de·en 전후 결과 동일.
+- 🪶 통지(자동 착수 금지): hand-rankings «garde-le à côté de toi»(토너먼트 TDA 5-D) · tiebreak 단색 보드 SF 반례 · reading 트립스 «deviennent» · Astra EN 동형 B 5건.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
