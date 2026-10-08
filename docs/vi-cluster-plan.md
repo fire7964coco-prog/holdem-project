@@ -41,9 +41,114 @@
 | 🆕 ⑩ | **vi 오염 판정** | 0-1에서 «X là gì»·족보 이름 볼륨 다수가 포커 밖(과일·로비·속어·Tiến lên). 0-2 0단계에서 SERP 포커 결과 수로 판정하고, 오염 헤드는 카피에 쓰지 않는다 |
 | 🆕 ⑪ | **다른 게임 혼동** | 베트남 «poker 5 lá·xì tố·mậu binh·tiến lên» 족보 용어(sảnh rồng 등)를 홀덤 족보 번역어로 들여오지 않는다 — 0-3 용어 정본에서 확정 |
 
-## 3. 소유표·고정문 (0-3에서 채운다)
+## 3. 소유표·고정문 (▶ 0-3 초안 · 2026-10-08 (6) · 사장님 판정 §3-D 대기)
 
-### 3-A. 고정문·표기 — (0-3)
+> 레인은 이 절을 **판단 없이 따른다**(§2-④). 여기 없는 용어가 필요하면 진행 파일 «신규 용어» 표에 적고 헤드가 머지 때 대조한다.
+> 근거 실측(10-08): 기존 vi 8편 전문 집계(스크래치 `vi-term-usage.md` · 43개 불일치) · `lib/intl.ts` vi 블록 · 도구 2종 사전(`app/vi/{calculator,hand-chart}`) · `docs/translation-terms-vi.md`(번역 브리프 — 🔴 아래 ③④와 어긋나는 자리는 이 절이 이긴다 · 레인 A 전 브리프를 이 절에 맞춰 고친다) · 0-1 볼륨 · 0-2 L-A §4-E·§8·§10 · L-B §4-6·§8 · L-C §8 · L-D §5-A·§10 · L-E §0·§8 · L-F §4-M·§8·§11 · L-G §4-E·§8.
+> ⚠ 코퍼스 빈도의 한계(아스트라 B-17): 운영사 번역판(Natural8·GGPoker vi)·reddit 자동번역·facebook을 같은 층위로 합산했고 번역 품질은 가르지 않았다 — 빈도는 «검색 표기» 판정의 보조 근거이고, 정본 결정의 1차 근거는 **볼륨(검색자가 치는 형)**이다.
+> 🔴 **vi 고유 원칙 — «검색 표기»와 «본문 표기»를 나눈다**(fr §3과 같은 틀 · 방향은 반대): 검색자는 **영어 차용어**를 치고(0-1·0-2: «fold trong poker là gì» 50 · «big blind là gì» 30 · «showdown là gì» 390 / «mù»·«tố»·«theo»·«bỏ bài» 결합형 전부 `-`), 베트남어 해설 코퍼스도 액션·구조어는 영어가 우세(L-A 12편 blind 110 : mù 19 · L-D 20편 big blind 57 : mù lớn 0 · call 133 : theo cược 1). **족보만 베트남어 고유명이 코퍼스·검색 양쪽에서 표준**(thùng·sảnh·cù lũ 9/9 · «thùng phá sảnh» 1,000). 그래서 **족보 = 베트남어 정본 + 영어 병기 · 액션·구조 = 영어 정본 + 베트남어 풀이 병기**.
+
+### 3-A. 고정문·표기
+
+**① 구조 고정문**
+
+| 자리 | 정본 | 근거 |
+|---|---|---|
+| 직답 블록 라벨 | `> **Trả lời nhanh**` | `lib/intl.ts` vi `quickAnswer` · 기존 8편 1(나머지 «Quy tắc vàng:»·«Lưu ý:» 등 임의 라벨 4 → 🅰에서 통일) |
+| readnext 라벨 | `:::readnext[Đọc tiếp]` | 8편 중 6 |
+| FAQ H2 | `## Câu hỏi thường gặp` | 8편 중 6(«## FAQ» 2 → 통일) · 스키마는 H2 문구와 무관 |
+| 관련 글 H2 | `## Bài viết liên quan` | `intl.related` · 8편 중 5 |
+| 마무리 H2 | `## Những điều cần nhớ` | 8편 1(«3 điều cần nhớ» 2 → 통일 · 개수는 라벨에 넣지 않는다) |
+| readTime | `"N phút"` | 8편 전부 |
+| 화자 | 1인칭 **tôi** · 독자 **bạn**(브리프 §문체) · 존칭·anh/chị 금지 | 8편 일치 |
+
+**② 문체·조판**
+- **bạn**체 명령형 훅(«Hãy nhìn… / So sánh… / Thử…») · 딱딱한 직역 금지(브리프).
+- 숫자: 천 단위 **마침표**(`1.326` · `20.000`) · 소수점 **쉼표**(`2,5 BB` · `43,8%`) · **% 앞 공백 없음**(8편 «43,8%»·«23,5%» 일치) · 비율 `2,7:1`. §13 값은 불변, 구분자만 바꾼다. 계산기 사전과 동일(`19,6%`).
+- 화폐 = **`$` 앞붙임**(`$1/$2` · `$14`) — ₫로 바꾸지 않는다(§13 보존 · 8편 일치).
+- 카드 = 영어 랭크 문자 + 무늬 기호(`A♠ K♥ Q♦ J♣ 10♠`) · 풀어 쓸 때 «đôi Át», «lá K»(«già/đầm/bồi» 금지 — 코퍼스 0). 무늬 이름 = **chuồn · rô · cơ · bích**(L-C 코퍼스).
+- 카드 T = 보드·무늬 붙은 카드 **10**(`Q♥10♥7♠` · `Q-J-10`) · 핸드 클래스·앱 스팟 이름 **T**(`JT` · `T6s`) — fr H-20과 같다.
+- **preflop · postflop**(붙여 씀 · 8편 preflop 53 : pre-flop 9 → 🅰에서 통일) · 문중 **flop · turn · river 소문자**(blind-meaning만 대문자 18 → 통일).
+- 족보명 = **문중 소문자**(«một đôi», «thùng») · 표·H2·카드 라벨에서만 머리글자 대문자. 8편은 `Một Đôi` 11 : `một đôi` 15로 갈렸다.
+- Texas Hold'em = 곧은 아포스트로피 `'` · «Hold'em» 단독 허용 · «Holdem» 금지. 게임 이름은 **poker / Texas Hold'em**. **«xì tố»·«xì phé»는 베트남에서 포커 전반·5장 변형에 두루 쓰여 일대일 대응이 없다**(wikipoker «Poker No Limit Hold'em là một biến thể xì tố phổ biến» — 아스트라 A-2) → «다른 게임»이라 단정하지 말고 1회 고정문 «Tên gọi xì tố/xì phé được dùng không thống nhất; bài này chỉ nói về Texas Hold'em, mỗi người nhận hai lá bài tẩy.» · 5장 변형(poker 5 lá)은 따로 명시(L-A §4-E · 0-2 «luật chơi poker» AC = 5 lá·2 lá·4 lá 변종 제안 다수).
+
+**③ 족보** (본문 = 베트남어 정본 · 첫 등장 «vi (en)» 병기 · 이후 vi 단독 · 검색 표기는 오른쪽)
+
+| EN | 본문 정본 | 검색 표기·병기 규칙 · 근거 |
+|---|---|---|
+| Royal Flush | **thùng phá sảnh hoàng gia** (royal flush) | hand-rankings 11 · 계산기 `rankNames` 축어. 🔴 **«Sảnh Thượng» 폐기**(브리프 권고였으나 beginners 2·game-order 1뿐 · 코퍼스 0/9 — wikipoker의 «thùng phá sảnh thượng»은 단독 «Sảnh Thượng»의 근거가 아니다 · 아스트라 B-2) · «sảnh rồng»·«sảnh chúa» = 별칭 1회 + 의미 고정 «(còn gọi là sảnh rồng, sảnh chúa — 10-J-Q-K-A cùng chất)»(홀덤 royal 용례 있음: wikipoker H2 «Royal Flush – Sảnh Rồng» · 그러나 «sảnh rồng» SERP 2/10 = Tiến lên/Mậu binh 13장 → **헤드 조준 금지** · §2-⑪) · 검색 «royal flush» 영어(0-1) |
+| Straight Flush | **thùng phá sảnh** (straight flush) | 🔴 «thùng phá sảnh»(1,000 · «là bài gì» 140 · «poker» 110)는 코퍼스에서 SF와 royal 양쪽에 쓰인다(L-B 7/9) → hand-rankings H2 «Thùng phá sảnh là gì — khác thùng phá sảnh hoàng gia ở đâu?»가 구성 조건(5장 연속 + 같은 무늬 · A-high만 royal)으로 가른다 |
+| Four of a Kind | **tứ quý** (four of a kind / quads) | 단독 «tứ quý» SERP 0/10(Tiến lên) → 조준 금지 · 본문·병기만 · «thùng phá sảnh có lớn hơn tứ quý không» 20 = FAQ 축어 |
+| Full House | **cù lũ** (full house) | 7/9 · «cù lũ trong poker là gì» 40 · «cù lũ poker» 30 · PAA «Cù lũ trong poker là gì?» 축어 |
+| Flush | **thùng** (flush) | 9/9 · «flush poker là gì» 50 → 첫 등장 병기 필수(족보 2편) · 드로는 **«flush draw»** 영어(계산기 축어 · 글에선 «flush draw (chờ thùng)» 1회 병기) |
+| Straight | **sảnh** (straight) | 9/9 · «thùng và sảnh cái nào lớn hơn» AC → flush-vs-straight H2 축어. 🔴 **sảnh(족보) ≠ vòng(스트리트)**(브리프) |
+| Three of a Kind | **sám cô** (three of a kind) · 첫 등장 «sám cô (bộ ba, three of a kind)» · 산문 «bộ ba» 허용 · «xám» = 인정 별칭 1회 | hand-rankings 21 · 계산기 축어 · 0-1 sám cô 90 : xám cô 50. «xám»은 실제 용어(wikipoker «Xám (bộ 3)» — 아스트라 B-1)라 오자가 아니라 **스타일 통일**: 정본 sám cô · game-order 7·beginners 1은 🅰 교체 · **set · trips = 영어 그대로** + 정의 고정(«set = cầm đôi trên tay + 1 lá trên board · trips = 1 lá trên tay + board có đôi» — wikipoker «Trip và Set đều là bộ ba» · 아스트라 A-3: bộ ba도 sám cô도 set/trips를 가르지 못하니 정의 문장이 가른다) |
+| Two Pair | **hai đôi** (two pair) | 8편·계산기 일치 |
+| One Pair | **một đôi** / đôi | 8편·계산기 일치 |
+| High Card | **mậu thầu** (bài cao / high card) | hand-rankings 11 · 계산기 축어 · 코퍼스는 bài cao 8/9 → 풀이로 «bài cao» 허용 |
+| wheel | **sảnh thấp nhất A-2-3-4-5 (the wheel)** · 이후 «wheel» | hand-rankings 5 · 계산기 «Sảnh wheel» · 🔴 «bánh xe» 금지(beginners 1 → 교체) |
+| Broadway / 높이 | «sảnh Broadway (10-J-Q-K-A)» · 그 밖 «sảnh cao nhất là X» («sảnh đến K») | hand-rankings 선례 |
+| kicker | **kicker** · 첫 등장 «kicker (lá phụ)» | 8편 kicker 46 : lá phụ 3 · «kicker trong poker là gì» AC 축어 |
+| nuts | **nuts** · 첫 등장 «nuts (tay bài mạnh nhất có thể trên board này)» | 단독 «nuts là gì» 720 = 0/10 오염 → 조준 금지 · «nuts trong poker là gì» AC 축어 → reading-the-board H2 |
+| 7장 베스트 5 | «5 lá mạnh nhất trong 7 lá» | §13 검산 문장 고정 |
+
+**④ 액션·구조·개념** (본문 = 영어 정본 · 첫 등장 «en (vi 풀이)» 병기 · 이후 영어 · 베트남어 동사 서술은 «허용» 칸만)
+
+| EN | 본문 정본 | 규칙·근거 |
+|---|---|---|
+| check | **check** | 풀이 없음(«kiểm tra» 금지 — 8편 0 · 브리프 일치) · 검색 «check trong poker là gì» 30 |
+| call | **call** · 첫 등장 «call (theo)» · 산문 동사 **«theo / theo bài» 허용**(목적어·조건절이 있는 문장) | 코퍼스 call 133 : theo cược 1(L-D) · 8편 «theo» 다수 → 정본은 call로 🅰 교체. 아스트라 A-1 채택: 동사 용법 자체는 자연스럽다(thegioipoker «Nếu họ không dám theo … họ sẽ Bỏ Bài») — 금지가 아니라 «정본 call + 동사 허용» |
+| raise | **raise** · 첫 등장 «raise (tố)» · 라이브 구두 선언 인용 «hô "tố"» 허용 | 🔴 **«tố» 산문 금지 유지**(8편 175회 → 🅰 교체): 코퍼스에서 tố = bet·raise 겸용(wikipoker 같은 글 «tố (bet)»·«tố thêm (raise)» — 아스트라 B-3 확인) · 액션 구분이 핵심인 글에서 혼동 · 검색 «raise trong poker là gì» 30 · min-raise = «min-raise» |
+| bet | **bet** · 산문 동사 **«cược / đặt cược» 허용** | 8편 cược 300 · 코퍼스 «đặt cược» · 명사 «mức cược»(계산기 «mức bet»는 손대지 않음) |
+| fold | **fold** · 첫 등장 «fold (bỏ bài)» · 산문 동사 **«bỏ bài» 허용** | L-D bỏ bài 75 : fold 46 — 둘 다 산다 · 검색 «fold trong poker là gì» 50 · PAA «Fold poker là gì?» 축어 |
+| all-in | **all-in**(하이픈) · 풀이 1회 «(tất tay)» | 8편 149 : «all in» 3 → 통일 · 검색은 «all in» 띄어쓰기 허용(tags) |
+| re-raise / 3-bet / 4-bet | **3-bet · 4-bet** · 첫 등장 «3-bet (re-raise, tố lại)» | 코퍼스 3-bet 177 · 8편 «tố lại» 25 → 교체 · 🔴 «3 bet» 27,100 = 도박 브랜드(L-D §10-D) → 글 수요 = «3bet poker» 90 |
+| limp / c-bet / check-raise / donk bet | **limp · c-bet · check-raise · donk bet** · 첫 등장 «c-bet (cược tiếp tục)» · «check-raise (hồi mã thương 금지 — 오염)» | L-D·L-G 코퍼스 · 8편 «Check-tố» 1 → 교체 |
+| bluff / semi-bluff | **bluff · semi-bluff** | 코퍼스 bluff 155(L-F) · «tố lừa» 폐기(8편 1) |
+| blind | **blind** · 첫 등장 «blind (mù — cược bắt buộc)» | 🔴 8편 mù 245 → 🅰 blind-meaning 재작성 때 교체. 근거는 **검색 표기**(«blind trong poker là gì» 20 · «big blind là gì» 30 / «mù lớn là gì»·«mù trong poker là gì» `-`)와 해설 코퍼스(blind 110 : mù 19)뿐 — 구어 우세는 입증하지 않았다(아스트라 B-3 · GGPoker vi는 «mù nhỏ và mù lớn»을 쓴다) |
+| small blind / big blind | **small blind (SB) · big blind (BB)** · 첫 등장 «small blind (mù nhỏ)» · «big blind (mù lớn)» · 이후 SB·BB 약어 허용 | L-D big blind 57 : mù lớn 0 · 핸드차트 «Small Blind (SB)» 축어 |
+| ante / big blind ante | **ante · big blind ante** | AC «ante là gì poker» · «big blind ante là gì» |
+| dealer button | **nút dealer (BTN)** · 사람 = **dealer** · 첫 등장 «dealer (người chia bài)» | 8편 nút Dealer 42 → 소문자 «nút dealer» 통일 · 핸드차트 «Button (BTN)» 축어는 자리명 표에만 · «dealer poker là gì» 170 = 직업 의도 섞임 → 조준 금지 |
+| flop / turn / river / preflop / street | **flop · turn · river · preflop · postflop** · 베팅 라운드 = **vòng cược** | 8편 vòng cược 48 · 계산기 «street»는 도구 사전이라 손대지 않음 · «flop turn river» 50 = game-order tags 유지 |
+| board / community · hole cards | **bài chung** · 첫 등장 «bài chung (board)» · 이후 «board» 허용 · hole cards = **bài tẩy** | 8편 bài chung 41 · board 16 |
+| hand | **tay bài** · 족보 순위 = **thứ hạng tay bài** | 8편 tay bài 126 · intl.ts · 도구 «Xếp hạng bài»는 도구 사전(손대지 않음) · 검색 «thứ tự bài poker» 590 = hand-rankings seoTitle·tags 축어 |
+| pot / side pot / main pot | **pot** · **side pot** · 첫 등장 «side pot (pot phụ)» · «main pot (pot chính)» | 8편 side pot 32 : pot phụ 29 · 검색 «side pot poker» 10 영어 · «hũ» 금지(0) |
+| split pot | **chia pot (split pot)** · «chop» 1회 | 8편 chia pot 10 · 계산기 «Chia pot» |
+| showdown / muck | **showdown** · 첫 등장 «showdown (lật bài)» · 산문 동사 «lật bài» 허용 · **muck** · 첫 등장 «muck (úp bài bỏ)» | 8편 showdown 71 : lật bài 62 · 검색 «showdown là gì» 390(섞임) · «lật bài poker» 10 |
+| position · 자리 약어 | **vị trí** · UTG · HJ · CO · BTN · SB · BB(첫 등장 풀어 쓰기 «Under the Gun (UTG)») | L-D vị trí 251 · 핸드차트 축어 · «vị trí trong poker» 70 |
+| in / out of position | **in position (IP) · out of position (OOP)** · 풀이 «có vị trí / không có vị trí» 1회 | L-D 10·10 |
+| stack / chip / buy-in | **stack** · **chip** · **buy-in** | 8편 stack 49 : chồng chip 6 · «phỉnh» = 칩 상품 의도(L-A §10-3) → 병기 1회만 · «buy in poker là gì» 20 = FAQ 축어 |
+| short stack / push-fold / shove | **short stack · push/fold · shove**(jam 허용) | L-E stack ngắn 9 : short stack 69 · push/fold 68 : tất tay 3 |
+| tournament / cash game | **giải đấu** 주력 · 첫 등장 «giải đấu (tournament)» · 구어 **«đánh tour / out tour»** 1~2회 허용(고정문 «Trong cách nói thông thường, đánh tour nghĩa là chơi giải đấu.» · 고유명 Tour(APT·WPT = 시리즈)와는 그 문맥에서만 구별 — 아스트라 B-16) · **cash game**(소문자) | 🔴 L-E 코퍼스 giải đấu 352 : tournament 97 · vs편은 Tournament 67 : giải đấu 57로 반대 → 🅴 재작성 때 교체 · 대문자 «Tournament/Cash Game» 금지 · «đánh tour» 69회/7쪽 |
+| bubble / ITM / GTD / MTT / SNG / freezeout / re-entry | **bubble · ITM(«vào tiền» 1회) · GTD(«đảm bảo» 1회) · MTT · Sit & Go · freezeout · re-entry · rebuy** | L-E bubble 149 : bong bóng 14 · ITM 94 : vào tiền 11 · GG «Đóng băng» 오역 회피 |
+| ICM / chip EV | **ICM** · 첫 등장 «ICM (Independent Chip Model — mô hình chip độc lập)» · **chip EV** | L-E · 계산기 «ICM» 축어 · 칩은 «chip», 돈만 «$»(경쟁 글 ① 혼동 회피) |
+| outs / draw | **outs** · **draw** · 첫 등장 «draw (bài chờ)» · flush draw · **OESD «sảnh hở hai đầu (OESD)»** · **gutshot «gutshot (sảnh hở giữa)»** · backdoor | 계산기 사전 축어(«Sảnh hở hai đầu (OESD)» · «Gutshot (sảnh hở giữa)») · 8편 bài chờ 8 : cửa chờ 5 → «cửa chờ» 폐기 |
+| equity / pot odds / implied / EV | **equity** «(phần pot kỳ vọng của bạn, tính cả khi chia pot)» — 🔴 «tỷ lệ thắng»은 win probability에만 · **pot odds** «(tỷ lệ pot)» + 계산 정의 1문장 필수(«pot : số tiền phải call») · **implied odds** «(tỷ lệ cược ngầm)» + «tiền có thể thắng thêm ở các vòng sau» · **EV** «(giá trị kỳ vọng)» · fold equity | L-C §8 · 8편 pot odds 12 : tỷ lệ pot 3 · 아스트라 A-4(무승부 지분 누락 — 항상 chop이면 equity 50%)·B-6(번역어보다 계산 정의) 채택 · 🔴 «equity là gì» 2,400 = 금융 오염 → 조준 금지 |
+| rule of 2 and 4 | **quy tắc 4 và 2** | 계산기 정본 · GG 동일 |
+| range / GTO / solver | **range**(«dải bài»·«khoảng bài» 폐기) · **GTO** — 🔴 제목·H1·H2에서 반드시 «GTO poker»로 붙임(단독 GTO = 애니·자동차) · **solver** | L-G · `vi-gto-solver.md` §1-① · 8편 range 표기 3종 → 통일 |
+| GTO 용어(🅶 정본) | donk bet («donk bet (lead)») · lợi thế range / lợi thế nut · range phân cực (polarized) · **range tuyến tính (linear)** · **merged range** 영어 보존 + 정의(아스트라 B-7: linear≠merged) · **geometric sizing** «(size bet lũy tiến — giữ cùng tỷ lệ cược so với pot qua các vòng)»(B-8: 원리 병기) · «bet size / sizing» · **SPR («SPR — stack hiệu dụng chia cho pot»)**(A-5: effective 필수) · board đồng chất (monotone) · mặt bài có đôi (paired board) · 구어 «chập mặt» 허용 · board khô / ướt (dry / wet) · rainbow · bicolor = «hai chất» · MDF («tần suất phòng thủ tối thiểu (MDF)») · blocker · **check-back** 영어 + «check sau khi đối thủ đã check» 설명(B-9) · delayed c-bet («c-bet trì hoãn») · overpair · set / trips 영어 · «blind đối đầu blind (blind vs blind)» — 🔴 «blind vs blind» 단독 헤드 금지(0/10) | L-G §4-E(wikipoker 축어) · 솔버 앱 라벨 = 앱 vi 배포본 축어(§2-⑨ · 미배포면 영어 라벨) |
+| rake / straddle / cooler / bad beat / fish / tilt | **rake** «(phí sòng)» · **straddle** · **cooler** · **bad beat** · **fish** «(người chơi yếu)» · **tilt** | L-F 코퍼스 차용어 유지 · 단독 «X là gì» 전부 오염 → 검색 표기는 «X poker là gì / X trong poker là gì» |
+| heads-up / last aggressor / action | **heads-up** · **«người bet hoặc raise cuối cùng (last aggressor)»** + 적용 범위 «ở vòng cược cuối» 명시 · 액션 명사 = **hành động cược** | 8편 heads-up 7 : đấu tay đôi 4 · showdown «người chủ động cuối» 16 → 교체 · game-order «nước cược» → 교체 · 아스트라 A-6 채택(«người cược cuối cùng»은 마지막 bet만·콜한 사람까지로 오독) |
+| hand / ván bài | 패·조합 = **tay bài** · **한 판 = ván bài** | 아스트라 B-9 채택 — 일괄 치환 금지(«100 hand» = «100 ván») |
+| limp / c-bet / check-raise 별칭 | check-raise 별칭 «hồi mã thương» = 1회 허용(wikipoker 제목 축어) · 검색 표기·정본 아님 | 아스트라 B-4: «오염»이 아니라 문체·검색 표기 선택 — 사유 정정 |
+| 추가 용어(아스트라 C · wikipoker·wikiboardgame 축어) | effective stack = **stack hiệu dụng** · value bet / thin value · set mining = **mua set** · flush draw 구어 **mua thùng / draw thùng** · combo = **combo (tổ hợp bài)** · capped range = **range bị giới hạn** · board coverage = **độ phủ mặt bài** · exploit = **khai thác đối thủ** · bankroll = **bankroll (quỹ tiền chơi poker)** · suited connectors = **hai lá bài liên tiếp cùng chất** · OESD 별칭 «sảnh hai đầu» · gutshot 별칭 «sảnh khe»(정본은 계산기 축어 «sảnh hở hai đầu»·«sảnh hở giữa» — 같은 사이트 일치 우선 · B-5 보류 기각) | 51편 산문에서 첫 등장 병기용 |
+| premium / cold call / slow roll | **premium · cold call · slow roll** | 8편·핸드차트 «Tier 1 — Premium» |
+
+**⑤ 도구 링크 앵커 문구 고정**(도구가 헤드의 주인임을 앵커로 알린다 · 3-C와 짝)
+
+| 도구 | 앵커 정본 |
+|---|---|
+| `/vi/calculator` | «máy tính xác suất poker» · 기능별 «máy tính equity / outs / pot odds / ICM / push-fold» |
+| `/vi/hand-chart` | «bảng bài khởi đầu theo vị trí» · «Poker Hand Chart» |
+| `/vi/tournaments` | «lịch giải poker» |
+| `/vi/solver`(생기면) | «GTO poker solver miễn phí» — 그 전엔 솔버 앱 이름만(링크 없음) |
+
+- 🔴 역방향도 금지(fr H-25): **글로 가는 링크·카드 제목에 도구 의도 구(«máy tính …» · «bảng bài khởi đầu / bảng range / hand chart» · «lịch giải» · «solver»)를 쓰지 않는다.** 단어 «bảng» 자체는 금지가 아니다 — 족보표·확률표를 실제로 싣는 글은 «bảng xếp hạng bài»·«bảng xác suất» 허용(아스트라 A-8 · 경쟁 의도만 제한). hand-chart 보조 앵커 «bảng range preflop theo vị trí» 허용(도구 = 포지션별 오픈 레인지 차트 · B-12). starting-hands-chart 글 = «bài khởi đầu nên chơi theo vị trí» · holdem-glossary 글 = «thuật ngữ poker» 각도(3-C ① 판정에 따름).
+
+**⑥ 카드 라벨 사전**(같은 EN 라벨 = 같은 vi 라벨 · 레인 A가 기존 8편 카드와 대조) — Pillar → **Kiến thức nền tảng** · Beginner Guide → Hướng dẫn người mới(`intl.category` 축어) · Start Here → Bắt đầu từ đây · Split Pot → Chia pot · Glossary → Thuật ngữ · Hand Rankings → Thứ hạng tay bài · Tiebreaker → **So bài cùng hạng**(«Luật hòa bài»는 무승부 규칙으로 읽힌다 — 같은 trips도 kicker로 갈린다 · 아스트라 A-7 · 실제 무승부·팟 분배 = «Hòa bài và chia pot» = Split Pot 카드) · Game Flow → Trình tự ván bài · Order of Play → Thứ tự hành động · Tournament(s) → Giải đấu · Deep Dive → Phân tích sâu · Odds & Math → **Xác suất & toán**(B-11).
+
+**⑦ 오염 헤드 — 어디에도 조준하지 않는다**(`vi-core-volumes.md`에 «오염» 표기 · 0-4 전 본체 1회): fold là gì 880 · all in là gì · check là gì · call là gì · raise là gì · turn/river/flop là gì · blind là gì 720 · showdown là gì 390(섞임) · nuts là gì 720 · tứ quý · sảnh rồng · icm là gì 140 · bubble là gì 1,000 · short stack 390 · mtt là gì 110 · spr là gì 110 · blind vs blind · equity là gì 2,400 · range là gì 1,600 · «3 bet» 27,100 · cbet 1,300 · 4bet 40 · fish/tilt/bluff/rake/straddle/cooler là gì · gto(단독) · solver(단독) · dealer poker là gì 170(직업) · phỉnh poker là gì 40(상품) · luật chơi poker là gì(합법성 혼입).
+
 ### 3-B. 아스트라 활용 지도 (10-08 사장님 지시)
 
 | 단계 | 아스트라 몫 | Claude 몫 |
@@ -54,7 +159,65 @@
 | 레인 C 검수 | **교차 렌즈 1종 상시**(레인마다 · 스크래치 사본 · 네이티브 자연스러움 + §13 독립 검산) | 렌즈 4종 + 2차 교열 |
 | 헤드 판정 | 51편 전수 용어 일관성 스윕(사본) | 머지·빌드·배포 |
 
-### 3-C. 카니발 소유표 — (0-3)
+### 3-C. 카니발 소유표
+
+**원칙**: fr ①②③ 승계 — ① 목록·도구형 헤드(thuật ngữ · bảng/chart · máy tính/tính · solver/GTO)는 도구가 주인 ② 단일 용어·개념 헤드는 그 개념을 다루는 글이 주인 ③ 주인 아닌 쪽은 seoTitle·H1·tags에 그 헤드를 쓰지 않고 앵커로 위임. vi 추가 — ④ **오염 헤드(단독 «X là gì» 포커 ≤2/10)는 아무도 조준하지 않는다**(§3-A ⑦) · 조준어는 «X trong poker là gì» / «X poker» 결합형 ⑤ 금지 축(합법성·실머니·앱 추천)은 SERP에 많아도 조준하지 않는다.
+
+| # | 검색어(볼륨) | 주인 | 주인 아닌 쪽의 처리 | 판정 근거 |
+|---|---|---|---|---|
+| ① | thuật ngữ poker 140 · thuật ngữ trong poker 50 · thuật ngữ poker tiếng việt 30 · tiếng anh 10 | 🔴 **사장님 판정(§3-D ①)** — 권고 = **`/vi/glossary` 도구 신설(배포 회차에 포함) → 도구가 주인** · 그 전까지는 holdem-glossary 글이 임시 주인 | 도구가 생기면 holdem-glossary = «thuật ngữ poker: X trong poker là gì — 영→베 대응 + 쓰이는 자리» 각도 · seoTitle·H1·tags에서 «thuật ngữ poker» 제거 · 첫 화면 도구 링크(fr ① · tr «용어는 도구로») | L-F §8 ① · 원칙① · vi엔 도구 없음(§1) · 11개 로케일 중 vi만 glossary 도구 부재(도구 확장 회차 1·2 선례) |
+| ② | «X trong poker là gì» 정의형(fold 50 · check·call·raise·ante 30 · flop·blind 20 · river·all in 10 · side pot 10) | **해당 규칙 글** — betting-actions(check·call·raise·fold·bet·min-raise) · blind-meaning(blind·SB·BB·ante·big blind ante) · game-order(flop·turn·river·dealer·burn) · all-in-rules(all-in·side pot) · showdown-rules(showdown·muck·slow roll) | holdem-glossary(또는 도구 사전) = 1줄 정의 + 그 글 앵커 · 정의 H2는 규칙 글에만 | L-A §8-B · §10-1 · L-D §10-B |
+| ③ | fold 정의(fold trong poker là gì 50 · PAA «Fold poker là gì?») | **holdem-betting-actions**(H2 «Fold poker là gì?» 축어 · 기존 H2 유지) | holdem-when-to-fold = «khi nào nên bỏ bài trong poker» · AA 폴드 · 정의는 앵커 · 상호 앵커 1 | L-A §8-A · L-D §10-B |
+| ④ | nuts(nuts poker 10 · «nuts trong poker là gì» AC) | **holdem-reading-the-board** — H2 «Nuts trong poker là gì?» + FAQ | holdem-glossary = 1줄 + 앵커 · «nuts là gì» 720은 아무도(0/10) | L-B §8-1 · L-F §7-G · fr ④ 동형 |
+| ⑤ | vị trí trong poker 70 · poker positions 70 · position poker 70 · utg poker là gì 20 · 좌석명 10종 | **holdem-positions** | holdem-position-play = «in position / out of position» · «vị trí tốt nhất» · «bảo vệ big blind» 롱테일 · positions 첫 내부링크 · seoTitle 선두 «vị trí trong poker» 금지 | L-D §10-A · fr ② |
+| ⑥ | poker hand chart 50 · preflop chart 20 · poker range chart 10 · «bảng bài khởi đầu» | **`/vi/hand-chart`** | holdem-starting-hands-chart = «best starting hands / bài khởi đầu mạnh nhất / nên chơi bài gì theo vị trí» 해설 + 도구 CTA · 글 title·H1에 «chart / bảng» 금지 | L-D §10-C · `vi-tools.md` §4 · fr ⑨ |
+| ⑥′ | poker chart 70 · bảng xếp hạng bài · cheat sheet 170(족보 포스터 의도) | **holdem-hand-rankings** | 도구는 조준 안 함(vi-tools 확정) | `vi-tools.md` §2 |
+| ⑦ | xác suất poker · bảng xác suất poker · cách tính(손) · là gì | **확률 글 7편** | `/vi/calculator` = «máy tính / app / phần mềm / tính … online / calculator» · 글 title·H1에 «máy tính·app·phần mềm·calculator» 금지 · 계산기 FAQ 7문항(L-C §6)과 같은 문장 금지 · 배포 회차에 계산기 quickRef `link` 4자리(equity→holdem-equity · outs→holdem-outs · pot odds→holdem-pot-odds · AA vs N명→holdem-probability) + related 7편 추가 | L-C §8 · fr ⑧ |
+| ⑧ | icm poker 110 · icm poker là gì 20 · icm trong poker là gì 10 · deal icm | **holdem-icm**(🪶 `vi-tools.md» «ICM 글 = 사장님 판단» → 사장님 «fr처럼 51편» 지시로 해소) | `/vi/calculator` = «icm calculator 40 / máy tính ICM» · 도구 ICM 가이드에서 글로 «ICM là gì» 앵커(배포 회차) · bubble·short-stack·tournament·vs의 ICM 단락 = 2~3문장 + 앵커(정의 H2 금지) · «icm là gì» 140 = 아무도 | L-E §8-③·⑤ · fr ⑦ |
+| ⑨ | push fold · push or fold · all in or fold · push fold chart | **`/vi/calculator` Push/Fold 탭** | holdem-short-stack = «push fold là gì» 정의 H2 + 도구 링크 | L-E §8-④ · fr ⑪ |
+| ⑩ | giải poker 70 · poker tournament 210 · 장소·연도(giải poker việt nam 50 · hà nội 50 · vietnam poker tour 40) | **`/vi/tournaments`**(현 metaTitle 유지) · 조준 안 함 | holdem-tournament = «poker tournament là gì» 20 · ITM·GTD·buy-in·SNG 롱테일 · 글→보드 링크 1회 · 🔴 EN FAQ «Is it legal to host…» 삭제 · 카지노 바이인 단락 일반화 | L-E §8-①·② · fr ⑩ · `legality-ban-scope` |
+| ⑪ | gto poker 170 · gto poker là gì 30 · range poker 70 · poker solver 20 · PAA «GTO trong poker là gì?» | **`/vi/solver`**(미작성 · 솔버 vi 배포 통지 후) | GTO 13편 seoTitle·H1·tags에 «GTO poker»·«range poker» 금지 · EN seoTitle «GTO» 단독 3편(ace-paired · blind-battle-cbet · blind-battle-connected) → «solver» 문구 · «Check it yourself» 링크 = 랜딩 생기기 전엔 솔버 앱 직접 | L-G §8 · `vi-gto-solver.md` §4·§7 · fr ⑫ |
+| ⑫ | check raise 10 · check raise là gì 10 | **low-board-check-raise**(EN parity · «Check-raise trong poker là gì?» 정의 H2) | 정의 1문단 + `holdem-betting-actions` 링크(glossary 위임 불가) · vi check-raise 필라가 생기면 반납 · «hồi mã thương» 금지 | L-G §8 ⑤ · `settled-decisions` §1-E ③ |
+| ⑬ | spr poker 20 · spr poker là gì 10 | **3bet-pot-cbet**(EN parity · «SPR trong poker là gì?» H2) | «spr là gì» 110 = 아무도 · «spr calculator» 조준 안 함 | L-G §8 ⑥ |
+| ⑭ | c bet là gì 30 · c bet poker là gì 10 | **holdem-continuation-bet** | 13편(a-high · k-high · blind-battle · 3bet-pot 3)은 «c-bet trên … / trong 3-bet pot» 한정어만 · 정의는 링크 | L-G §8 · L-D §11 |
+| ⑮ | 3bet poker 90 · 3 bet trong poker là gì 20 · 3bet light/range 10 | **holdem-3bet** | «3 bet» 27,100 · cbet 1,300 · 4bet 40 = 도박 브랜드 오염 → 볼륨 표기 «오염» · 3bet-pot 3편은 «3-bet pot» 한정어만 | L-D §10-D |
+| ⑯ | limp poker 20 · limp trong poker là gì 10 · PAA «Limp poker là gì?» | **holdem-limping** | betting-actions 기존 FAQ «Limp trong poker nghĩa là gì?» → 1줄 + limping 앵커(🅰 재작성 때) | L-D §8 · L-F §11-2 |
+| ⑰ | bluff poker 110 · bluff poker là gì 10 · semi bluff là gì(AC) | **holdem-strategy** H2 «Bluff trong poker là gì — khi nào nên bluff?»(필라 흡수 · 51편에 bluff 글 없음) | holdem-glossary = 1줄 + 앵커 · fish·cooler 글은 «bluff catcher» 문맥만 | L-F §7-G·§8 · `settled-decisions` §1-E ② |
+| ⑱ | tilt poker 40 · tilt poker là gì 10 | **holdem-bad-beat** H2 «Tilt là gì — làm gì ngay sau một bad beat?» | holdem-glossary = 1줄 + 앵커 | L-F §7-G |
+| ⑲ | bad beat jackpot 계열(AC 6종) | 조준 안 함(운영사 상품) | holdem-bad-beat FAQ «Bad beat jackpot là gì?» 1문 — 구조만 · 운영사 이름·금액 없음 | L-F §11-1 |
+| ⑳ | dealer poker là gì 170 · phỉnh poker là gì 40 · luật chơi poker là gì · «poker online / game bài / w88 …» | 조준 안 함 | game-order FAQ «Dealer và nút dealer trong poker là gì?» 1문 · beginners «chip (phỉnh)» 병기 1회 · 합법성·실머니는 언급도 하지 않는다 | L-A §10-3 · 브리프 금지 축 |
+
+**레인 A로 넘기는 처리 확정**
+- 🅴 holdem-tournament: EN FAQ «Is it legal to host a poker tournament at home?» **삭제** · 카지노 직접 바이인·온라인 사전등록 운영사명 삭제 · tour ≠ tournament 한 줄(wikipoker 혼동).
+- 🅵 holdem-rake: EN FAQ «Is taking a rake illegal?» = 합법성 축 → **빼고** «Tại sao phòng poker thu rake?»류 운영 질문으로(fr 동형 · L-F §11-2 related 전부 «illegal»). 베트남 세율·법령은 **쓰지 않는다**(§12-B).
+- 🅳 holdem-strategy: «mẹo chơi poker luôn thắng» 약속형 금지 — 훅은 «왜 mẹo가 안 통하나»(L-D §8).
+- 🅰 beginners: «Poker 2 lá (Texas Hold'em)와 5 lá·xì tố의 차이» 1문단(AC 변종 다수 · §3-A ②) · «phỉnh (chip)» 1회.
+- 🅰 betting-actions: 액션 4종 H2를 «X trong poker là gì» 축어로(«Check trong poker là gì?» · «"Call" trong poker có nghĩa là gì?» · «Raise trong poker là gì — min-raise tính thế nào?» · «Fold poker là gì?») — L-A §10-3 PAA.
+- 🅱 hand-rankings: «Thùng phá sảnh là gì — khác thùng phá sảnh hoàng gia ở đâu?» H2 + «Thùng phá sảnh có lớn hơn tứ quý không?» FAQ(20) · «sảnh rồng» 별칭 1회(헤드 금지).
+- 🅶: 솔버 vi 앱 라벨 = 배포본 축어(S-043 판정 요청 중 · 배포 전이면 영어 라벨 + 배포 뒤 한 줄 교체 · §2-⑨).
+- 🪶 범위 밖(자동 착수 금지): `/vi/glossary` 도구 신설(§3-D ①에서 사장님이 켜면 배포 회차 체크리스트에 추가) · `docs/translation-terms-vi.md` 갱신(«Sảnh Thượng»·«mù nhỏ/mù lớn» 헤드·«tố» 권고 → 이 절로 교체 · 레인 A 전 본체 1회) · 계산기 사전 «street»·«Xếp hạng bài»·«mức bet»(도구 사전 — 손대지 않음 · 배포 회차 뒤 별도).
+
+### 3-D. 사장님 판정 요청 (0-3 보고 · 2026-10-08 (6))
+
+| # | 쟁점 | 본체 권고 | 대안 |
+|---|---|---|---|
+| ① | vi엔 `/vi/glossary` 도구가 없다 → «thuật ngữ poker» 140의 주인 | **도구 신설을 이번 배포 회차에 포함**(11개 로케일 중 vi만 부재 · 사장님 10-06 «용어는 도구로 · 경쟁하면 글을 내려라») · 글은 «X trong poker là gì» 각도 | 도구 없이 글이 주인 — 아스트라 B-13 의견: 베트남 SERP의 «thuật ngữ poker» 1위는 wikipoker **A–Z 해설 글**이라 «용어집 = 도구»가 검색 관습에서 필연은 아니다 · 도구를 만들더라도 글에서 핵심어를 빼는 건 콘텐츠 설계로 결정 |
+| ② | 족보 번역어 — «Sảnh Thượng»(브리프·기존 2편) vs «thùng phá sảnh hoàng gia»(기존 hand-rankings·도구) · «xám» vs «sám cô» · «sảnh rồng» | §3-A ③대로 **hand-rankings·도구 표기 채택** · sảnh rồng = 별칭 1회(Tiến lên 용어라 헤드 금지) | — |
+| ③ | 액션·블라인드 표기를 **영어 차용어 정본**으로 바꾼다(기존 6편 «Theo/Tố/Bỏ bài»·«Mù nhỏ/Mù lớn» 제목·본문 → 🅰 재작성 때 교체 · slug·URL 불변) | **채택** — 검색(결합형 볼륨 전부 영어) · 코퍼스(blind 110:19 · call 133:1) 양쪽 근거 · 베트남어 동사(bỏ bài·cược·lật bài)는 산문에서 허용 | 브리프대로 베트남어 우선 유지(검색 표기만 영어) |
+| ④ | positions ↔ position-play | positions = 헤드 · position-play = in/out of position 롱테일(§3-C ⑤) | — |
+| ⑤ | 확률 7편 ↔ `/vi/calculator` | §3-C ⑦(글 = là gì·bảng·cách tính · 도구 = máy tính·app·tính) · 배포 회차에 계산기 quickRef 링크 4자리 추가 | — |
+| ⑥ | ICM 글 소유(`vi-tools.md` «사장님 판단» 보류분) | holdem-icm 포함(51편 지시로 해소) · 도구는 «icm calculator» | — |
+| ⑦ | 토너먼트 합법성 FAQ | EN FAQ 삭제 + rake 합법성 FAQ 삭제(§3-C 처리) | — |
+| ⑧ | GTO 13 순서 — `/vi/solver` 랜딩과 묶나 | **13편 먼저(🅶 레인) → 랜딩은 솔버 vi 배포 통지 뒤 별도 회차** — 랜딩 라벨은 배포본 축어가 정본(플레이북 §4-8)이라 지금 쓸 수 없고, 13편이 먼저 있어야 랜딩이 링크할 vi 자산이 생긴다(`vi-gto-solver.md` §6) | 솔버 배포까지 🅶 보류(51편 → 38편 선배포) |
+| ⑨ | GTO 13 포함 재확인(`settled-decisions` §1-E «ar·vi·tr 착수 금지» 해제로 읽었다) | **포함**(사장님 «fr처럼 51편» · fr 선례 · 성과 지표는 solver_open · GSC 수동 색인 요청 안 함) | 제외(38편) |
+| ⑩ | 아스트라 교차(§3-B 0-3 행) 결과 반영 | ✅ 반영 완료 — 아래 §3-E | — |
+
+### 3-E. 아스트라 교차 결과 (10-08 (6) · codex gpt-6-astra read-only · 스크래치 사본 · «베트남 현장 코치» 반박 전용 · 인용 7건 중 5 원문 직접 확인 · equity·SPR 정의 2건은 표준 정의로 판정)
+
+- **반박 8 → 채택 8**(A-8은 범위 축소): A-1 «theo» 동사 허용 · A-2 xì tố 단정 철회(고정문 교체) · A-3 bộ ba 허용 + set/trips 정의 문장 · A-4 equity 풀이(«tỷ lệ thắng» ✗ → 무승부 지분 포함) · A-5 SPR = stack hiệu dụng/pot · A-6 last aggressor = «người bet hoặc raise cuối cùng» · A-7 Tiebreaker 카드 «So bài cùng hạng» · A-8 «bảng» 단어 금지 → 도구 의도 구만 금지.
+- **보류 17 → 채택 9**(B-1 xám 별칭 · B-2 sảnh rồng 의미 고정 · B-4 hồi mã thương 사유 정정 · B-6 pot odds 계산 정의 · B-7 linear/merged 분리 · B-8 geometric 원리 병기 · B-9 tay bài/ván bài · B-11 «Xác suất & toán»·«Kiến thức nền tảng» · B-16 đánh tour 고정문) · **부분 3**(B-3 tố 금지 유지·구두 인용 허용·blind «구어 우세» 단정 삭제 · B-12 hand-chart 보조 앵커 추가 · B-17 코퍼스 층위 한계 = 이 절 머리 근거에 «합산 빈도는 번역 품질을 가르지 않았다» 명시) · **기각 2**(B-5 OESD/gutshot = 계산기 축어 유지 · B-10 숫자 조판 = 사이트 규칙) · **판정 보류 3**(B-13 → §3-D ① 대안에 병기 · B-14 nuts 유지 · B-15 GTO 정의 소유 = `settled-decisions` §1-E ③·fr 선례 유지).
+- **추가 용어 11 → 전부 등재**(§3-A ④ 마지막 행).
+- 🪶 아스트라가 든 Natural8 공식 용어집의 직역 오류(«một người mù nhỏ» · «Một bộ đồ thẳng của cùng một bộ đồ») = 경쟁 약점 재료(레인 A 브리프) — 우리 코퍼스 집계에서 Natural8 번역문은 «자연스러운 용례»로 세지 않는다.
 
 ## 4. 단계 (한 실행 = 한 단계 · AUTONOMY-LIMITS 90분)
 
@@ -62,7 +225,7 @@
 |---|---|---|---|
 | 0-1 | 수요 실측 → `docs/keyword-bank/vi-core-volumes.md` | — | ✅ 10-08 |
 | 0-2 | SERP 7레인 → `docs/keyword-bank/vi-serp/`(00-brief + L-A~L-G) · 본체 대조 · 새 후보 볼륨 일괄 측정 | 0-1 | ✅ 10-08 (6) · 7/7 + 커버리지 ✗ 0(00-brief 결과표 · 보완 = L-A §10 · L-B §10-3 · L-F §11) |
-| 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | |
+| 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | ▶ 10-08 (6) 초안 ✅(§3-A·§3-C·§3-E) · 🔴 **사장님 판정 §3-D 10건 대기** |
 | 0-4 | 착수 공지 MB · 레인 워크트리 · EN 기준 해시 | 0-3 승인 | |
 | 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | |
 | 2 | 🅶 GTO 13(+ `/vi/solver` 판정) | 1 머지 | |

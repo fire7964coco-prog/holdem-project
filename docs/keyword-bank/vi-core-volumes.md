@@ -110,3 +110,13 @@
 ## 3. 0-2로 넘기는 SERP 필수 판정(헤드 중 오염 의심)
 
 all in là gì · check là gì · call là gì · raise là gì · fold là gì · turn là gì · river là gì · flop là gì · blind là gì · showdown là gì · kicker là gì · nuts là gì · sảnh rồng · thùng phá sảnh · tứ quý(단독) · cbet · 3 bet · bubble là gì · fish là gì · tilt là gì · short stack · icm là gì · rake là gì · straddle là gì · cooler là gì · limp là gì · bluff là gì → **SERP 상위 10 중 포커 결과 수**로 «포커 몫 있음/없음/섞임» 판정.
+
+## 4. 0-2 SERP 판정 결과 — 🔴 «오염» 헤드는 어디에도 조준하지 않는다 (2026-10-08 (6) · 정본 = `vi-cluster-plan.md` §3-A ⑦)
+
+판정 = 2704·vi·desktop 1페이지 organic 중 **포커 결과 수**(≥7 포커 몫 있음 · 3~6 섞임 · ≤2 없음). 근거 절 = 각 레인 §0.
+
+| 판정 | 헤드(볼륨) | 조준어 대체 |
+|---|---|---|
+| ✅ 포커 몫 있음 | luật poker 3,600(8/8) · cách chơi poker 2,900(10/10) · poker là gì 1,900(9+1) · luật chơi poker 1,600(10/10) · texas holdem 1,300(9+1) · cách chơi poker 2 lá 110(8/8) · poker hands 2,900(9/10) · bài poker 1,900(10/10) · thứ tự bài poker 590(9/10) · poker hand rankings 1,000(10/10) · thùng phá sảnh 1,000(10/10) · thùng phá sảnh và tứ quý cái nào lớn hơn 90(10/10) · split pot 10(9/10) · thuật ngữ poker 140(9/10) · thuật ngữ trong poker 50(8/8) · bluff poker 110(9/9) · flop turn river 50(5/6) · «X trong poker là gì» 결합형 전부(L-A §10-3) | 그대로 |
+| 🟡 섞임 | thùng phá sảnh là gì 480(6/10) · cù lũ 480(5/10) · royal flush 390(3/10) · kicker là gì 140(3/10) · hòa bài poker(4/10) · bad beat 50(5/10) · rake là gì 390(4/10) · showdown là gì 390(0/8이나 PAA «Showdown là gì?» 보충 · L-A) | 결합형 우선(«cù lũ trong poker là gì» 40 · «kicker trong poker là gì» · «rake poker là gì» 20 · «showdown poker là gì») · 단독형은 tags까지만 |
+| 🔴 오염(없음) | all in là gì 5,400(0/10) · check là gì 3,600(0/8) · call là gì 2,900(0/8) · raise là gì 1,900(0/8) · fold là gì 880(0/7) · turn là gì 880(0/8) · river là gì 720(0/8) · flop là gì 6,600(0/6 · 속어) · blind là gì 720(1/9) · muck là gì 70(0/7) · ante là gì 50(0) · under the gun 170(1/8) · nuts là gì 720(0/10) · tứ quý 2,900(0/10 · Tiến lên) · sảnh rồng 1,000(2/10 · Tiến lên/Mậu binh) · bubble là gì 1,000(0/10) · fish là gì 1,000(0/10) · tilt là gì 880(1/10) · short stack 390(2/10) · icm là gì 140(0/10) · mtt là gì 110(0/10) · straddle là gì 320(1/10) · cooler là gì 170(0/10) · bluff là gì 390(2/10) · limp là gì 170(오염 · L-D) · cbet 1,300(카지노·토큰) · 3 bet 27,100(도박 브랜드) · 4bet 40 · spr là gì 110(0/10) · blind vs blind 10(0/10) · equity là gì 2,400 · range là gì 1,600 · gto 단독 · solver 단독 · dealer poker là gì 170(직업 혼합) · phỉnh poker là gì 40(칩 상품) · luật chơi poker là gì(합법성 혼입) | «X trong poker là gì» / «X poker (là gì)» 결합형(L-A §10-1 · L-F §10 · L-E §0 · L-G §8) — 단독형은 seoTitle·H1·tags 어디에도 쓰지 않는다 · 우선순위 계산에서 제외 |
