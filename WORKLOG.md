@@ -1,3 +1,10 @@
+## 2026-10-08 (5) — vi 클러스터 51편 착수: 계획 정본 · 0-1 볼륨 · 0-2 SERP 5/7
+
+- 사장님 10-08 «fr처럼 50편 · 서치·키워드 실측 잘해서 vi 맞춤 고품질 · 아스트라도 활용» → 계획 정본 `docs/vi-cluster-plan.md`(fr 51편 슬러그 그대로 · GTO 13 포함 · 대회 가이드 5 제외 · 아스트라 활용 지도 §3-B).
+- 0-1: DFS 2704·vi 시드 216 + Labs 제안어 35시드 → `docs/keyword-bank/vi-core-volumes.md`. 수요 = 규칙(luật poker 3,600 · cách chơi poker 2,900)·족보(poker hands 2,900 · bài poker 1,900). «X là gì»·족보 단어 볼륨 다수가 포커 밖(과일·로비·속어·Tiến lên) → 0-2 오염 판정 필수.
+- 0-2: 7레인(`docs/keyword-bank/vi-serp/`) — Opus 서브 L-C·D·E·G 완료(각 50~62KB · 글별 질문 확보 전부 ✅) · 아스트라 L-B 완료(+본체 보완 §10) · 아스트라 L-A·L-F 실행 중(마감 시점). 오염 확정: 3 bet 27,100(도박 브랜드) · cbet · sảnh rồng · tứ quý · nuts là gì · icm/bubble/mtt là gì · blind vs blind · spr là gì. vi 해설 SERP = reddit 자동번역·운영사 번역·wikipoker → 원문 해설 공백 + 상위 글 §13 오류 다수.
+- 커밋만(배포 없음 · 문서 전용 · MB 없음 — 착수 공지는 0-4).
+
 ## 2026-10-08 (4) — MA-370 FR game-order 47-A 예외절 이행 (MB-206 · queue §2-AI)
 
 - 검수장 MA-370 요청 1(AG-9 신설 문장 #121 RISKY) 채택: 예외절에 기준점(«au-dessus de ce que tu as déjà mis»)과 범위(no-limit·pot-limit) 추가 — 47-A 원문 대조 · 형제 all-in tldr 꼴. 해소 9 ACK · 통지 2 = §2-AI. MA-371(MB-205 재판정 착수) ACK.

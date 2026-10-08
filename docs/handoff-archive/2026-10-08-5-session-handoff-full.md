@@ -91,11 +91,18 @@
 - 🪶 de 시범 «스팟 장면» 이미지: 반응 보고 EN·다른 로케일 전파 판단(`locale-intentional-diffs` 10-02 행 · 브리프 §7). ar·vi·tr 시리즈는 사장님 판단 전 착수 금지(`settled-decisions` §1-E).
 - 🪶 범위 밖 관찰(자동 착수 금지): 구조 게이트 기존 🔴 = pt 1 · id 2 · ms 11 · hi 2 · check-de-style 다른 클러스터 기존 🔴 8(betting-actions·hand-rankings·tiebreak·ept-barcelona·wpt-australia).
 
-## ▶▶ 09-29 회차 잔여 (완료 이력 전문 = docs/handoff-archive/2026-10-08-5-session-handoff-full.md)
+## ▶▶ 다음 세션 (09-29 갱신)
 
-- 🪶 새 /tournaments 카드의 buyin·venue는 통화 표기·공식 라틴 표기(한국어 값은 13로케일 FIELD 등재 강제) · 새 행에 schemaDescription을 달면 hi·ar `SCHEMA_DESC_*`에도 등재 · ar 이벤트 카드 4키는 ar 이벤트를 열 때 현지 검수.
-- ⛔ OLA Poker Tour Taipei 글 안 씀(사장님 09-29) · ⏸ KO GOP 제주 2026 가이드 보류 · ja 후보 D·E·F 보류(F절). 대만·TMTC 후속 시한 = `docs/update-calendar.md` 10월 절.
-- 🪶 S-030: `docs/solver-factsheet.md` §4 턴/리버 기기 계산 문구 + «자리로 레인지 채우기»(`f20278d`) — 솔버 회차에.
+- ✅ **`/tournaments` 로케일 신설 계획 완료**(09-29 승인분 · 회차 1 id·ms·vi → 회차 2 pt·tr → **hi·ar 09-30** · WORKLOG 09-30 (1) · MB-127). 보드 = ko + 13로케일. 날짜 문장 만료 = 캘린더 11월 절. 🪶 앞으로 새 카드의 buyin·venue는 통화 표기·공식 라틴 표기로 쓴다(한국어 값은 13로케일 FIELD 등재를 강제한다) · 새 행에 schemaDescription을 달면 hi·ar `SCHEMA_DESC_*`에도 등재.
+- ✅ 허브 셸 tr·vi·ar 영어 노출 해소(10-03 (1) · MB-154). 🪶 ar 이벤트 카드 4키는 신규 번역 — ar 이벤트를 열 때 현지 검수.
+
+- ✅ **zh-hant 대만 대회 1편 발행** — `tmt-championship-2026-guide`(TMTC 10/16~26 · WORKLOG 09-29 (2) · MB-119). 사실 정본 `docs/tournament-factsheets/2026-10-tmtc.md` · 훅 만료 = 캘린더 10월 첫 절(10/1 온라인 위성 · 10/16 패키지 · 10/26 이후 결과 전환).
+- ✅ APC Taipei IV = 취소 판정·보드 삭제(WORKLOG 09-29 (3) · MB-120).
+- ⛔ **OLA Poker Tour Taipei 글은 안 쓴다**(사장님 09-29 «검색이 너무 없다» · zh-TW 평소 월 10·대회 달 170). 보드 카드만 유지. APT Championship은 공식 독식이라 제외.
+- ✅ **zh-hant 대만 대회 일정 모음 글 발행 + 아스트라 교차 검수 반영** — `taiwan-poker-tournaments-guide`(WORKLOG 09-29 (6)·(7) · MB-122·123 · 라이브 확인 · 보드 `ctp-11th-anniversary` 신설). 판정 = 사실 시트 §4·§5. 갱신 시한 = 캘린더 10월 첫 절(10/4·10/11·TMT 21 발표·K-ETA 12/31). 🪶 «아스트라로 검수» = 본체에서 `codex exec` read-only 서브(메모리 astra-subreview). ✅ WWP S5 보드 카드 `wwp-series-5` 편입(WORKLOG 09-29 (8) · MB-124 · 10/11 종료 뒤 결과·과거형은 모음 글 캘린더 회차와 같이). ▶ 다음 = 사장님 지시 대기(🪶 마카오 MGM 주최 원문 확보 시 B→A 교체).
+- ✅ S-027 회신 = MB-121(보드 유형 정의·보고 싶은 값 = `docs/reply-to-solver-2026-09-29.md` · 팩트시트 4곳 정정). ✅ S-028 회신 = MB-136(팩트시트 0.3% 정정 · 레인지 출처 문구 **해제**). 🪶 S-030(10-02 · MB-142 ACK): `docs/solver-factsheet.md` §4에 «턴/리버 = 기기 즉석 계산(목표 0.3% 기본 — 폰에서 느리면 폰의 턴만 0.5%~1%로 낮출 수 있음 · 실기기 측정 전)» 반영 + 유저 측 «자리로 레인지 채우기»(`f20278d`) 추가 — 솔버 회차에. ✅ C벳 필라 표 = 10-03 (6) 반영(최상단 절).
+- ⏸ **KO GOP 제주 2026 가이드는 보류**(사장님 09-29 «이거 말고 대만걸로»). 재개 시: LES A 외국인 전용이라 내국인 참가 불가가 글의 첫 관문(`apt-jeju-2026-fall-guide`·`gop-incheon-2026-ii-guide` 처리 방식) · KO 수요 볼륨부터 확인.
+- ja는 추가 후보 D·E·F 보류(아래 F절).
 
 ## ▶ 다음 세션 (사장님 09-28)
 
