@@ -552,6 +552,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AH-2 | kicker | 직답 «Avec un as au board, A-K bat A-Q» | «Quand l'as du board ne donne qu'une paire d'as à chacun, …» + 같은 글 tldr «quand un as tombe sur le board» 사본도 같은 한정(렌즈 발견) |
 | AH-3 | hand-rankings | 로열 문단 «Le jour où tu la touches» 위치 | EN 순서대로 로열 문장 바로 뒤로(스틸 휠 문장 앞) |
 
+- ✅ **검수장 재판정 = MA-372**(10-08 · 요청 0): AH-1 kicker #39 WRONG→OK · AH-2 #25 RISKY→OK(tldr 사본 #4 OK 유지) · AH-3 #154 RISKY→OK · 이행 문장 결함 0 · 신설 0. 남은 FR 🅱 RISKY = kicker #30 · hand-rankings #30(아래 ⚖ 형제 통일 결재 소속).
+
 - ⚖ 형제 통일 6자리(kicker note · flush 요약 3 · split FAQ «automatique» · split L79 · reading «troisième» · hand-rankings «deux façons») = **검수장 사용자 결재 대기** — 권고안(FR RISKY 유지 + 본체 EN-먼저)으로 결재되면 EN 손질 회차로 요청이 온다(그 전 착수 금지).
 - 🪶 본체 발견(EN-먼저 후보 · 자동 착수 금지): EN kicker L128 «no straight or flush out there» · tldr «AK beats AQ when the board pa(irs an ace)» 동형 — 검수장은 EN을 두 손 한정 독해로 OK.
 - 🔧 게이트: AH-1 새 문장이 H5 오탐(fr 부정 «ne touche de quinte» 미인식) → `scripts/audit-hardening.mjs` handMentions에 fr 부정(aucun·pas·jamais · «ne <동사> de») + 셀프테스트 2(82/82) · id·ms·es·pt·de·en 전후 결과 동일.
