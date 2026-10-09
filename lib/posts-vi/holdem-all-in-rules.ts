@@ -25,7 +25,7 @@ export const POST: Post = {
   image: "/images/holdem-all-in-rules-hero.webp",
   imageAlt: "All-in trong Texas Hold'em — người chơi đẩy toàn bộ chip vào giữa bàn trong lúc dealer tách main pot và side pot trên mặt nỉ xanh",
   content: `
-Bạn đang short stack. Bạn shove. Người ngồi sau call (theo). Người thứ ba raise (tố) lên nữa. Dealer (người chia bài) bắt đầu tách chip ra thành hai đống.
+Bạn đang short stack (còn ít chip). Bạn shove. Người ngồi sau call (theo). Người thứ ba raise (tố) lên nữa. Dealer (người chia bài) bắt đầu tách chip ra thành hai đống.
 
 Bạn không hiểu chuyện gì đang xảy ra.
 
@@ -57,23 +57,21 @@ Nền tảng của nó là luật **table stakes** (chỉ được cược số 
 
 ## Tuyên bố all-in thế nào cho đúng luật?
 
-Có hai cách được công nhận: nói to "all-in" cho dealer và cả bàn nghe thấy, hoặc đẩy toàn bộ stack về giữa bàn trong một động tác. Lời nói là cách an toàn nhất vì không thể bị hiểu khác đi. Đẩy chip mà không nói gì đôi khi chỉ được tính là call, hoặc chỉ là một mức bet nhỏ — phần dưới đây nói rõ khi nào.
-
-Hai cách hợp lệ:
+Có hai cách được công nhận: nói to "all-in" cho dealer và cả bàn nghe thấy, hoặc đẩy toàn bộ stack về giữa bàn trong một động tác. Đẩy chip mà không nói gì đôi khi chỉ được tính là call, hoặc chỉ là một mức bet nhỏ — phần dưới đây nói rõ khi nào.
 
 **1. Tuyên bố bằng lời** — Nói "all-in" rõ ràng để dealer và đối thủ đều nghe thấy. Đây là cách an toàn nhất. Nói ra rồi là bạn đã bị ràng buộc.
 
-**2. Đẩy toàn bộ chip lên trước** — Đẩy cả stack về phía giữa bàn trong một động tác gọn duy nhất. Đẩy chip thành nhiều nhịp có thể bị coi là string bet (đẩy chip nhiều nhịp), nên hãy chuyển tất cả cùng lúc. ==r:Chỉ đẩy chip không phải lúc nào cũng đủ: nếu bạn đang đối diện một mức bet và toàn bộ chip của bạn vừa đủ để call mức đó, cú đẩy im lặng được xử là call, không phải all-in (TDA 2024 Luật 45-A, WSOP Tournament Rule 92).== Trong mọi trường hợp khác, đẩy những chip cuối cùng của bạn **là** một cú bet all-in (TDA 2024 Luật 45-B) — ngoại lệ duy nhất là một lá chip mệnh giá lớn đẩy im lặng vào một mức bet đang có, khi đó chỉ được tính là call (TDA 2024 Luật 44).
+**2. Đẩy toàn bộ chip lên trước** — Đẩy cả stack về phía giữa bàn trong một động tác gọn duy nhất. Đẩy chip thành nhiều nhịp có thể bị coi là string bet (đẩy chip nhiều nhịp), nên hãy chuyển tất cả cùng lúc. ==r:Chỉ đẩy chip không phải lúc nào cũng đủ: nếu bạn đang đối diện một mức bet và toàn bộ chip của bạn vừa đủ để call mức đó, cú đẩy im lặng được xử là call, không phải all-in (TDA 2024 Luật 45-A, WSOP Tournament Rule 92).== Trong mọi trường hợp khác, đẩy những chip cuối cùng của bạn **là** một cú bet all-in (TDA 2024 Luật 45-B) — ngoại lệ duy nhất là một chip mệnh giá lớn đẩy im lặng vào một mức bet đang có, khi đó chỉ được tính là call (TDA 2024 Luật 44).
 
 ![Showdown all-in trong Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ với chip được tách thành main pot và side pot có nhãn riêng](/images/holdem-all-in-declare.webp)
 
-==r:Đừng bao giờ đẩy im lặng một lá chip mệnh giá lớn lên trước rồi mong nó được tính là all-in — nếu đang đối diện một mức bet, dealer tính đó là call; nếu chưa có bet nào, đó là một cú bet đúng bằng mệnh giá lá chip ấy.== Luôn hô "all-in" thành tiếng — đây là cách duy nhất không bao giờ bị đọc thành một hành động khác.
+==r:Đừng bao giờ đẩy im lặng một chip mệnh giá lớn lên trước rồi mong nó được tính là all-in — nếu đang đối diện một mức bet, dealer tính đó là call; nếu chưa có bet nào, đó là một cú bet đúng bằng mệnh giá chip ấy.== Luôn hô "all-in" thành tiếng — đây là cách duy nhất không bao giờ bị đọc thành một hành động khác.
 
 ---
 
 ## Side pot trong poker hoạt động thế nào? (Vì sao người all-in bị giới hạn)
 
-Side pot sinh ra khi một người đã all-in mà những người khác vẫn còn chip để cược tiếp. Người all-in chỉ tranh main pot: số chip của họ cộng với phần ngang bằng từ mỗi người còn lại. Chip cược vượt mức đó của từ hai người trở lên tạo thành side pot mà người all-in không có quyền tranh. Nếu chỉ một người cược vượt, phần dư được trả lại cho chính họ.
+Side pot sinh ra khi một người đã all-in mà những người khác vẫn còn chip để cược tiếp. Người all-in với stack ngắn nhất chỉ tranh main pot: số chip của họ cộng với phần ngang bằng từ mỗi người còn lại — nói chung, mỗi người all-in chỉ tranh được tới mức chip mình đã bỏ vào. Nếu từ hai người trở lên cược vượt mức đó, phần chip vượt tạo thành side pot mà người all-in ngắn hơn không có quyền tranh.
 
 Người all-in chỉ có thể thắng số mình đã bỏ vào cộng với tối đa một phần ngang bằng từ mỗi người chơi khác đã bỏ chip vào — kể cả người sau đó đã fold, vì chip đã vào pot thì ở lại trong pot. Chip cược vượt mức đó đi vào một **side pot** thuộc riêng về những người đã góp vào nó — nhưng chỉ khi có từ hai người trở lên bỏ chip vào đó. Nếu chỉ một người vượt mức giới hạn, không có ai để tranh side pot và phần dư quay thẳng về tay họ dưới dạng cược không ai theo (uncalled bet).
 
@@ -125,7 +123,7 @@ Quy tắc: ==mỗi side pot được tạo bằng cách lấy phần chênh lệ
 
 ## All-in có mở lại vòng cược không? — Luật nhiều người hiểu sai nhất
 
-Trong no-limit và pot-limit: một cú all-in nhỏ hơn một raise đủ mức không mở lại vòng cược cho người đã hành động — họ chỉ được call hoặc fold. Một cú all-in bằng hoặc hơn một raise đủ mức thì mở lại cho tất cả. Người chưa hành động luôn được raise. Nhiều cú all-in ngắn có thể cộng dồn, nhưng phép thử được làm riêng cho từng người.
+Trong no-limit và pot-limit: một cú all-in nhỏ hơn một raise đủ mức không mở lại vòng cược cho người đã hành động — họ chỉ được call hoặc fold. Một cú all-in bằng hoặc hơn một raise đủ mức thì mở lại cho tất cả. Người chưa hành động luôn được raise.
 
 ==r:Đây là luật all-in gây tranh cãi nhiều nhất ở bàn live — tôi từng chứng kiến hai người cãi nhau năm phút trong khi cả bàn ngồi chờ. Cả hai đều sai.==
 
@@ -204,11 +202,11 @@ Bảng này dành cho no-limit và pot-limit. Trong limit game, ngưỡng là n�
 
 ## Luật showdown khi có all-in
 
-Khi có người all-in và mọi vòng cược đã xong, dealer xử lý từ side pot mới nhất lùi dần về main pot, bài tự nói — "cards speak" (bài tự nói) — và mỗi pot có thể về tay một người khác nhau. Trong giải đấu (tournament), mọi tay bài liên quan đều được lật ngửa; trong cash game no-limit, nếu vòng cược kết thúc trước river thì người all-in lật trước.
+Khi có người all-in và mọi vòng cược đã xong, dealer xử lý từ side pot mới nhất lùi dần về main pot, "cards speak" (bài tự nói) — và mỗi pot có thể về tay một người khác nhau. Trong giải đấu (tournament), mọi tay bài liên quan thường được lật ngửa; trong cash game no-limit, nếu vòng cược kết thúc trước river thì người all-in lật trước.
 
-Khi mọi vòng cược kết thúc và có người đang all-in, showdown diễn ra như sau:
+Trình tự cụ thể:
 
-1. **Bài được lật ngửa.** Trong giải đấu, mọi tay bài liên quan đến cú all-in thường được lật ngay khi vòng cược hoàn tất. Trong cash game no-limit, điều đó tùy thời điểm vòng cược kết thúc: nếu kết thúc trước river, người đã đẩy all-in lật trước (WSOP Live Action Rule 149); nếu river có bet, áp dụng [luật showdown chuẩn theo người bet hoặc raise cuối cùng (last aggressor)](/vi/blog/holdem-showdown-rules).
+1. **Bài được lật ngửa.** Trong giải đấu, mọi tay bài liên quan đến cú all-in thường được lật ngay khi mọi hành động cược của những người còn lại đã kết thúc. Trong cash game no-limit, điều đó tùy thời điểm vòng cược kết thúc: nếu kết thúc trước river, người đã đẩy all-in lật trước (WSOP Live Action Rule 149); nếu river có bet, áp dụng [luật showdown chuẩn theo người bet hoặc raise cuối cùng (last aggressor)](/vi/blog/holdem-showdown-rules).
 2. **Side pot được chia trước.** Dealer xử lý side pot được tạo gần nhất trước, rồi lùi dần về main pot.
 3. **Bài tự nói.** Tay bài mạnh nhất thắng từng pot mà nó có quyền tranh — bất kể người chơi nói mình có gì.
 4. **Có thể có nhiều người thắng.** Người chơi A có thể thắng main pot. Người chơi B có thể thắng side pot. Không ai ôm trọn tất cả chỉ vì thắng "pot của mình".
@@ -221,7 +219,7 @@ Khi mọi vòng cược kết thúc và có người đang all-in, showdown di�
 
 ## All-in sai thì chuyện gì xảy ra? — 5 lỗi cần tránh
 
-Sau đủ nhiều pot all-in, bạn sẽ thấy sự hỗn loạn gần như luôn đến từ năm hiểu lầm cụ thể — không phải phép tính, mà là ai có quyền tranh pot nào. Tưởng người all-in thắng được side pot, hiểu sai quyền raise lại, lấy thêm chip giữa ván, muck (úp bài bỏ) quá vội, và all-in vì cay cú: năm lỗi này gây ra gần hết tranh cãi ở bàn.
+Sau đủ nhiều pot all-in, bạn sẽ thấy sự hỗn loạn gần như luôn đến từ năm hiểu lầm cụ thể — không phải phép tính, mà là ai có quyền tranh pot nào. Tưởng người all-in ngắn nhất thắng được side pot, hiểu sai quyền raise lại, lấy thêm chip giữa ván, muck (úp bài bỏ) quá vội, và all-in vì cay cú: năm lỗi này gây ra gần hết tranh cãi ở bàn.
 
 ### Lỗi 1: Nghĩ rằng người all-in stack ngắn nhất có thể thắng side pot
 
@@ -246,7 +244,7 @@ All-in là nước đi quyền lực nhất trên bàn. Nó ép đối thủ và
 ---
 
 :::readnext[Đọc tiếp]
-/vi/blog/texas-holdem-rules-for-beginners | Luật Texas Hold'em cho người mới | /images/rules-texas-holdem.webp
+/vi/blog/texas-holdem-rules-for-beginners | Luật chơi Texas Hold'em cho người mới | /images/rules-texas-holdem.webp
 /vi/blog/holdem-showdown-rules | Luật showdown giải thích rõ | /images/holdem-showdown-rules-hero.webp
 :::
 
@@ -274,11 +272,11 @@ A. Table stakes nghĩa là bạn chỉ được cược số chip có trước m
 
 **Q. Hai người all-in với số chip khác nhau thì ai lật bài trước?**
 
-A. Cú all-in cuối cùng mang tính bet hoặc raise là hành động tấn công cuối và lật trước. Một cú all-in chỉ là call với số ít hơn thì không phải hành động tấn công — trong cash game, người bet ban đầu vẫn lật trước khi vòng cược kết thúc ở river (ở no-limit, nếu kết thúc trước river, người đã đẩy all-in lật trước); và khi có side pot, luật WSOP Live Action xét theo pot: ai trong side pot lật trước người chỉ all-in tranh main pot (Rule 149). ==r:Trong giải đấu hoàn toàn không có thứ tự "ai lật trước" ở đây== — khi vòng cược all-in hoàn tất, mọi tay bài liên quan được lật ngửa cùng lúc (TDA 2024 Luật 16); luật đặt ra thứ tự lật, TDA 2024 Luật 17, chỉ áp dụng cho showdown không có all-in. Trong cash game, nếu đó là một cú all-in được call mà không còn hành động nào sau, người call có thể muck nếu thua sau khi xem bài của người all-in (trong giải đấu, mọi tay bài liên quan vẫn phải lật ngửa).
+A. Cú all-in cuối cùng mang tính bet hoặc raise là hành động tấn công cuối và lật trước. Một cú all-in chỉ là call với số ít hơn thì không phải hành động tấn công — trong cash game, người bet ban đầu vẫn lật trước nếu vòng cược kết thúc ở river (ở no-limit, nếu kết thúc trước river, người đã đẩy all-in lật trước); và khi có side pot, luật WSOP Live Action xét theo pot: ai trong side pot lật trước người chỉ all-in tranh main pot (Rule 149). ==r:Trong giải đấu hoàn toàn không có thứ tự "ai lật trước" ở đây== — khi vòng cược all-in hoàn tất, mọi tay bài liên quan được lật ngửa cùng lúc (TDA 2024 Luật 16); luật đặt ra thứ tự lật, TDA 2024 Luật 17, chỉ áp dụng cho showdown không có all-in. Trong cash game, nếu đó là một cú all-in được call mà không còn hành động nào sau, người call có thể muck nếu thua sau khi xem bài của người all-in (trong giải đấu, mọi tay bài liên quan vẫn phải lật ngửa).
 
 **Q. Luật all-in trong giải đấu và cash game có khác nhau không?**
 
-A. Luật cốt lõi giống nhau, nhưng có hai khác biệt thực tế. Thứ nhất, trong giải đấu mọi tay bài liên quan đến cú all-in được lật ngửa ngay khi vòng cược hoàn tất (TDA 2024 Luật 16) — bạn không được muck cho tới showdown. Trong cash game, áp dụng thứ tự showdown chuẩn — trừ khi đó là no-limit và vòng cược kết thúc trước river, khi ấy người all-in lật trước (Live Action Rule 149) — và người chơi được muck. Thứ hai, run it twice phổ biến ở cash game (nếu tất cả những người còn trong pot đồng ý) nhưng thường không được phép trong giải đấu.
+A. Luật cốt lõi giống nhau, nhưng có hai khác biệt thực tế. Thứ nhất, trong giải đấu mọi tay bài liên quan đến cú all-in được lật ngửa ngay khi mọi hành động cược của những người còn lại đã kết thúc (TDA 2024 Luật 16) — bạn không được muck cho tới showdown. Trong cash game, áp dụng thứ tự showdown chuẩn — trừ khi đó là no-limit và vòng cược kết thúc trước river, khi ấy người all-in lật trước (Live Action Rule 149) — và người chơi được muck. Thứ hai, run it twice phổ biến ở cash game (nếu tất cả những người còn trong pot đồng ý) nhưng thường không được phép trong giải đấu.
 
 ---
 
@@ -287,7 +285,7 @@ A. Luật cốt lõi giống nhau, nhưng có hai khác biệt thực tế. Th�
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/vi/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kiến thức nền tảng</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật Texas Hold'em cho người mới</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật chơi Texas Hold'em cho người mới</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Trọn bộ luật từ blind tới showdown</div>
   </a>
   <a href="/vi/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

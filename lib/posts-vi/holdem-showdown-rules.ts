@@ -38,11 +38,11 @@ Dealer nhìn qua nhìn lại. Những người khác ở bàn thở dài.
 
 Showdown (lật bài) là bước cuối của một ván Texas Hold'em: khi vòng cược ở river kết thúc mà vẫn còn từ hai người giữ bài, họ lật bài tẩy để so tay bài 5 lá mạnh nhất và dealer (người chia bài) trao pot cho người thắng. Bạn chỉ đến được showdown khi không ai bet, call (theo) hay raise (tố) thêm được nữa — còn nếu tất cả đối thủ đã fold (bỏ bài) trước đó, pot thuộc về bạn mà không cần lật lá nào.
 
-Thứ tự lật phụ thuộc vào cách vòng cược cuối kết thúc. Trong giải đấu (tournament) không có all-in, người bet hoặc raise cuối cùng (last aggressor) ở vòng cược cuối lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer (BTN) lật trước. Khi có all-in, mọi tay bài còn lại phải được lật sau khi vòng cược kết thúc. Cash game áp dụng luật nhà về lật bài và muck (úp bài bỏ).
+Thứ tự lật phụ thuộc vào cách vòng cược cuối kết thúc. Trong giải đấu (tournament) không có all-in, người bet hoặc raise cuối cùng (last aggressor) ở vòng cược cuối lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer (BTN) lật trước. Khi có all-in, mọi tay bài còn lại phải được lật sau khi mọi hành động cược của những người còn lại đã kết thúc. Cash game áp dụng luật nhà về lật bài và muck (úp bài bỏ).
 
 ## Ai phải lật bài trước khi showdown?
 
-Câu trả lời ngắn: người bet hoặc raise cuối cùng ở river lật trước, không phải người call. Nếu river check hết và không ai all-in, người còn bài đầu tiên bên trái nút dealer lật trước, rồi lần lượt theo chiều kim đồng hồ. Riêng trong giải đấu có người all-in — ở river hay một vòng trước đó — thì không còn chuyện «ai trước»: mọi tay bài đều phải ngửa ngay khi vòng cược kết thúc.
+Câu trả lời ngắn: người bet hoặc raise cuối cùng ở river lật trước, không phải người call — còn river check hết hay có người all-in thì xử lý theo bảng dưới.
 
 Luật cụ thể phụ thuộc vào cách vòng cược cuối cùng khép lại (để xem trọn trình tự từng vòng cược dẫn đến đây, hãy đọc [thứ tự hành động trong một ván](/vi/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")).
 
@@ -64,7 +64,7 @@ Luật cụ thể phụ thuộc vào cách vòng cược cuối cùng khép lạ
 
 ## Có được muck không lật bài khi showdown không?
 
-Được — **nếu bạn thua**. Sau khi người bet hoặc raise cuối cùng ngửa bài, những người còn lại được úp bài bỏ vào muck mà không cần cho ai xem. Quyền này biến mất trong hai trường hợp: bạn là người bet ở river và bị call (trong giải đấu, người call có quyền đòi xem bài bạn), hoặc ván có người all-in trong giải đấu — khi đó mọi tay bài đều phải ngửa.
+Được — **nếu bạn thua**. Quyền này bị thu hẹp trong hai trường hợp: bạn là người bet ở river và bị call (muck khi đó là bỏ pot, và trong giải đấu người call vẫn có quyền đòi xem bài bạn), hoặc ván có người all-in trong giải đấu — khi đó mọi tay bài đều phải ngửa.
 
 Khi người bet hoặc raise cuối cùng đã lật bài, những người còn lại có thể:
 - **Lật bài của mình** nếu nghĩ rằng mình thắng
@@ -88,7 +88,7 @@ Ví dụ: nút dealer (BTN), small blind (mù nhỏ — SB) và big blind (mù l
 
 ## Luật showdown khi có all-in — người all-in có phải lật trước không?
 
-Tùy nơi chơi. Trong giải đấu, câu hỏi «ai trước» không tồn tại: ngay khi có người all-in và không còn ai bet được nữa, tất cả tay bài trong pot phải ngửa trước khi dealer chia nốt bài chung (board) (TDA 2024, Luật 16). Trong cash game theo bộ luật WSOP Live Action, thứ tự lại khác: ở bàn no-limit, nếu vòng cược kết thúc trước river thì chính người đẩy all-in lật trước, và những người tranh side pot lật trước người chỉ có phần ở main pot (Luật 149).
+Tùy nơi chơi. Trong giải đấu, câu hỏi «ai trước» không tồn tại: ngay khi có người all-in và không còn ai bet được nữa, tất cả tay bài trong pot phải ngửa trước khi dealer chia nốt bài chung (board). Trong cash game theo bộ luật WSOP Live Action thì vẫn có thứ tự lật — chi tiết ngay bên dưới.
 
 Trong **giải đấu**, khi một người all-in và không còn cược được nữa, các lá bài chung còn lại được chia với **mọi tay bài ngửa** (==Luật 16 của TDA 2024==). Điều này bảo vệ tính toàn vẹn của ván bài — không ai được muck một cách có tính toán trong tình huống all-in. **Cash game chạy theo luật nhà**, và bộ luật WSOP Live Action xếp ngược lại: **ở bàn no-limit**, nếu vòng cược kết thúc trước river, người đẩy all-in có trách nhiệm lật trước; và ở bất kỳ cash game nào, khi có side pot (pot phụ), những người tranh side pot lật trước người chỉ all-in cho main pot (pot chính) (==WSOP Live Action, Luật 149==).
 
@@ -112,7 +112,7 @@ Một điểm tinh tế: nếu có **side pot** (những người khác còn chi
 
 ![Infographic luật cards speak — board 8♠ 9♣ 10♥ J♦ Q♠ tạo thành sảnh cao nhất là Q, và khi showdown các lá bài tự nói lên tất cả](/images/holdem-showdown-cards-speak.webp)
 
-«Cards speak» (bài tự nói) nghĩa là ==tay bài mạnh nhất thắng, bất kể người chơi tuyên bố gì==. Dealer đọc các lá bài đã ngửa và trao pot theo đúng giá trị của chúng — lời nói của bạn không làm tay bài mạnh lên hay yếu đi. Hệ quả hai chiều: đọc nhầm mà hô sai, bài vẫn thắng nếu nó thực sự mạnh nhất; nhưng tưởng mình thua rồi úp bài bỏ thì pot cũng đi luôn.
+«Cards speak» nghĩa là ==tay bài mạnh nhất thắng, bất kể người chơi tuyên bố gì==. Dealer đọc các lá bài đã ngửa và trao pot theo đúng giá trị của chúng — lời nói của bạn không làm tay bài mạnh lên hay yếu đi.
 
 Nếu một người đọc nhầm bài của mình và nói «tôi có một đôi», nhưng thực ra họ có sảnh (straight) — thì sảnh thắng. Dealer đọc bài và trao pot cho tay bài mạnh nhất đã được lật.
 
@@ -130,7 +130,7 @@ Bạn cầm nuts (tay bài mạnh nhất có thể trên board này). Đối th�
 
 ![Slow roll trong poker — những người chơi khác bực bội khi một người cố tình trì hoãn lật tay bài thắng](/images/holdem-showdown-slow-roll.webp)
 
-==r:Slow roll là cách nhanh nhất để tạo kẻ thù ở bàn poker.== Nó bị hiểu là cố tình xát muối vào chiến thắng. Luật bất thành văn: nếu bạn cầm tay bài mạnh nhất có thể, hãy lật ngay lập tức. Slow roll không mang lại lợi ích chiến thuật nào. Kết quả duy nhất là căng thẳng.
+==r:Slow roll là cách nhanh nhất để tạo kẻ thù ở bàn poker.== Nó bị xem là cố tình xát muối vào nỗi đau của người thua. Luật bất thành văn: nếu bạn cầm tay bài mạnh nhất có thể, hãy lật ngay lập tức. Slow roll không mang lại lợi ích chiến thuật nào. Kết quả duy nhất là căng thẳng.
 
 Đừng nhầm với **tank** (suy nghĩ lâu) — dành thời gian một cách chính đáng cho một quyết định khó. Điều đó được chấp nhận, thậm chí được tôn trọng. Slow roll với nuts là chuyện hoàn toàn khác.
 
@@ -169,7 +169,7 @@ Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo
 ---
 
 :::readnext[Đọc tiếp]
-/vi/blog/holdem-game-order | Thứ tự hành động trong một ván | /images/blog-holdem-game-flow.webp
+/vi/blog/holdem-game-order | Thứ tự hành động trong một ván bài | /images/blog-holdem-game-flow.webp
 /vi/blog/holdem-all-in-rules | Luật all-in và side pot | /images/holdem-all-in-rules-hero.webp
 :::
 
@@ -177,11 +177,11 @@ Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo
 
 **Q. Ai lật bài trước khi showdown poker?**
 
-A. Khi không ai all-in, người có hành động cược chủ động cuối cùng (bet hoặc raise) ở vòng cược cuối phải lật trước. Nếu vòng cược cuối bị tất cả check hết, người còn bài đầu tiên bên trái nút dealer lật trước, rồi tiếp tục theo chiều kim đồng hồ. Pot có all-in theo luật riêng — xem câu hỏi về all-in bên dưới.
+A. Khi không ai all-in, người bet hoặc raise cuối cùng ở vòng cược cuối phải lật trước. Nếu vòng cược cuối bị tất cả check hết, người còn bài đầu tiên bên trái nút dealer lật trước, rồi tiếp tục theo chiều kim đồng hồ. Pot có all-in theo luật riêng — xem câu hỏi về all-in bên dưới.
 
 **Q. Bị call ở showdown thì có phải lật bài không?**
 
-A. Có — nếu bạn là người bet hoặc raise cuối cùng ở river, bạn lật trước khi bị call; lối thoát duy nhất là muck và bỏ pot, điều mà giải đấu WSOP sẽ phạt (WSOP Tournament, Luật 72). Có một trường hợp không cần lật gì cả: nếu người call muck úp trước và không còn tay bài sống nào khác, bài của bạn thắng pot mà không cần ngửa (==Luật 17-B của TDA 2024==; Luật 72 của WSOP cũng trao pot cho tay bài sống duy nhất còn lại). Nếu bạn là người call cú bet của người khác, bạn được muck úp sau khi xem bài họ nếu đã thua. Ngoại lệ là all-in trong giải đấu: theo ==Luật 16 của TDA 2024==, người call cũng phải ngửa bài. Và trong giải đấu, quyền yêu cầu xem bài được bảo đảm thuộc về người **đã call cú bet ở river** — với điều kiện họ đã ngửa hoặc còn giữ bài — và chỉ với tay bài của người bet hoặc raise cuối cùng, tay bài họ đã trả tiền để xem (==Luật 18 của TDA 2024==). Người đã muck úp không có quyền yêu cầu, và mọi yêu cầu khác do giám đốc giải đấu quyết định.
+A. Có — nếu bạn là người bet hoặc raise cuối cùng ở river, khi bị call, bạn phải lật trước; lối thoát duy nhất là muck và bỏ pot, điều mà giải đấu WSOP sẽ phạt (WSOP Tournament, Luật 72). Có một trường hợp không cần lật gì cả: nếu người call muck úp trước và không còn tay bài sống nào khác, bài của bạn thắng pot mà không cần ngửa (==Luật 17-B của TDA 2024==; Luật 72 của WSOP cũng trao pot cho tay bài sống duy nhất còn lại). Nếu bạn là người call cú bet của người khác, bạn được muck úp sau khi xem bài họ nếu đã thua. Ngoại lệ là all-in trong giải đấu: theo ==Luật 16 của TDA 2024==, người call cũng phải ngửa bài. Và trong giải đấu, quyền yêu cầu xem bài được bảo đảm thuộc về người **đã call cú bet ở river** — với điều kiện họ đã ngửa hoặc còn giữ bài — và chỉ với tay bài của người bet hoặc raise cuối cùng, tay bài họ đã trả tiền để xem (==Luật 18 của TDA 2024==). Người đã muck úp không có quyền yêu cầu, và mọi yêu cầu khác do giám đốc giải đấu quyết định.
 
 **Q. Có được muck ở showdown mà không lật bài không?**
 

@@ -48,7 +48,7 @@ Tại sao lại bắt ai đó phải trả tiền? Để ván bài không chết
 
 ## Small blind là gì?
 
-**Small blind (SB)** là khoản nhỏ hơn trong hai khoản cược bắt buộc, do người chơi ngồi **ngay bên trái nút dealer** đặt. Nó thường bằng **một nửa big blind** — ở bàn $1/$2, small blind là $1. Bạn đặt nó trước khi chia bài, mỗi ván một người, và nút dealer dịch đi là lượt này chuyển sang người kế tiếp.
+**Small blind (SB)** là khoản nhỏ hơn trong hai khoản cược bắt buộc, do người chơi ngồi **ngay bên trái nút dealer** đặt. Nó thường bằng **một nửa big blind** — ở bàn $1/$2, small blind là $1.
 
 Đây cũng là ghế nổi tiếng khó chơi nhất bàn: bạn đã bỏ nửa khoản cược với một tay bài ngẫu nhiên, và từ flop trở đi bạn phải hành động **đầu tiên** ở mỗi vòng cược, với lượng thông tin ít nhất (heads-up là ngoại lệ duy nhất: khi đó small blind chính là nút dealer và hành động cuối cùng). Vì thế về dài hạn, gần như ai cũng thua chip ở ghế small blind — mục tiêu ở đó là thua *ít hơn*, chứ không phải thắng.
 
@@ -78,7 +78,7 @@ Hiểu được big blind, mọi câu chuyện bằng con số của cuộc chơ
 
 ## Luật small blind và big blind: ai đặt, khi nào?
 
-Cả hai khoản blind đều được đặt **trước khi chia bài**, và trong vòng xoay bình thường, nút dealer dịch một ghế theo chiều kim đồng hồ sau mỗi ván — nên hai ghế blind cũng xoay theo và ==ai cũng phải trả cả hai khoản blind một lần mỗi vòng bàn==. Rời bàn thì chuyện tiếp theo tùy định dạng: ở cash game, khi quay lại bạn đặt bù các blind đã lỡ, chờ big blind đến ghế mình lần nữa, hoặc — nơi nào cho phép — nhận straddle sống từ Under the Gun (UTG) thay thế; ở giải đấu, blind và ante bị trừ thẳng khỏi stack của bạn dù bạn có ngồi ở ghế hay không.
+Cả hai khoản blind đều được đặt **trước khi chia bài**, và trong vòng xoay bình thường, nút dealer dịch một ghế theo chiều kim đồng hồ sau mỗi ván — nên hai ghế blind cũng xoay theo và ==ai cũng phải trả cả hai khoản blind một lần mỗi vòng bàn==. Rời bàn thì chuyện tiếp theo tùy định dạng: ở cash game, khi quay lại bạn đặt bù các blind đã lỡ, chờ big blind đến ghế mình lần nữa, hoặc — nơi nào cho phép — đặt một straddle sống từ Under the Gun (UTG) thay thế; ở giải đấu, blind và ante bị trừ thẳng khỏi stack của bạn dù bạn có ngồi ở ghế hay không.
 
 | | Small blind | Big blind |
 |------|-------------|-------------|
@@ -141,7 +141,7 @@ Ngồi vào một bàn cash game live, bạn thường không được chơi mi�
 
 Hai ghế blind là nơi tôi thấy người mới âm thầm chảy máu chip nhiều nhất — không phải trong một pot lớn, mà mỗi vòng bàn một chút. Hai thói quen ở ghế blind sửa được phần lớn chuyện đó — và một nước đi từ vị trí muộn giúp lấy lại một phần:
 
-- **Small blind: chơi đơn giản thôi.** Ở bàn từ ba người trở lên (và không có straddle), bạn hành động áp chót preflop nhưng **đầu tiên** sau flop, nên cách tiếp cận sạch sẽ cho người mới là **raise hoặc fold**, không call. Limp vào rồi bị đánh ngược khi không có vị trí (out of position) là kiểu rò rỉ chip đều đặn — small blind là ghế tôi thấy người mới thua nhiều nhất qua cả một buổi chơi.
+- **Small blind: chơi đơn giản thôi.** Ở bàn từ ba người trở lên (và không có straddle), bạn hành động áp chót preflop nhưng **đầu tiên** sau flop, nên cách tiếp cận sạch sẽ cho người mới là **raise hoặc fold**, không call. Limp (chỉ call big blind) vào rồi bị đánh ngược khi không có vị trí (out of position) là kiểu rò rỉ chip đều đặn — small blind là ghế tôi thấy người mới thua nhiều nhất qua cả một buổi chơi.
 - **Big blind: phòng thủ theo pot odds.** Bạn đã đặt sẵn một khoản cược đầy đủ, nên một cú call ở đây tốn ít hơn bất kỳ ghế nào khác và bạn có thể phòng thủ rộng hơn. Gặp một cú open 2,5 BB (small blind fold), bạn call 1,5 BB để tranh pot 4 BB — khoảng 2,7:1, nghĩa là chỉ cần khoảng 27% equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) là riêng cú call đã hòa vốn. Trên thực tế bạn cần nhiều hơn thế một chút: không có vị trí, với các vòng cược còn ở phía trước, bạn sẽ không hiện thực hóa được toàn bộ equity. Phép tính đó là [pot odds (tỷ lệ pot — pot so với số tiền phải call)](/vi/blog/holdem-pot-odds), và đó là lý do khái niệm "phòng thủ big blind" tồn tại.
 - **Vị trí muộn: cú steal.** Khi tất cả fold tới lượt nút dealer hoặc Cutoff (CO), một cú raise chỉ nhắm lấy hai khoản blind được gọi là **blind steal (cướp blind)** — và raise ngược lại là **re-steal**. Cỡ raise khi steal, range theo từng ghế và nên phòng thủ rộng đến đâu là chủ đề chiến lược, được bàn sâu trong [hướng dẫn chiến lược in position vs out of position](/vi/blog/holdem-position-play).
 
@@ -182,7 +182,7 @@ A. Khi chỉ còn hai người, luật đảo ngược: nút dealer đặt small
 
 A. Ở hầu hết các phòng bài, bạn đặt bù các blind đã lỡ khi quay lại — big blind được tính như cược sống, còn small blind là chip chết được cho thẳng vào pot. Hoặc bạn có thể chờ tới khi big blind tự đến ghế mình — hay, ở phòng nào cho phép, quay lại bàn bằng cách đặt straddle sống từ Under the Gun.
 
-**Q. «Big blind» có giống «the blinds» (các blind) không?**
+**Q. "Big blind" có giống "the blinds" (các blind) không?**
 
 A. Không hẳn — "the blinds" (các blind) chỉ cả small blind lẫn big blind gộp lại, còn big blind là riêng khoản cược bắt buộc lớn hơn và là đơn vị cơ bản của bàn.
 
@@ -212,7 +212,7 @@ Mới bắt đầu chơi từ con số 0? [Luật chơi Texas Hold'em cho ngư�
   <a href="/vi/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Vị trí</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Các vị trí trên bàn poker, giải thích rõ</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Từ UTG đến nút dealer, 6-max vs 9-max, range mở bài</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Từ UTG đến nút dealer, 6-max vs 9-max, range mở</div>
   </a>
   <a href="/vi/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Thứ tự hành động</div>

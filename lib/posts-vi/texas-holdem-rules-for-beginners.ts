@@ -47,15 +47,13 @@ Mọi thứ bên dưới đều rút ra từ việc thực sự điều hành v�
 Điểm mấu chốt:
 - Bạn có thể dùng cả hai lá bài tẩy, một lá, hoặc thậm chí không lá nào — miễn sao ghép được tay bài mạnh nhất
 - Nút dealer thường dịch một ghế sau mỗi ván, nên vị trí blind và thứ tự hành động dịch theo
-- Bạn thắng mà không cần showdown nếu tất cả người khác fold ở bất kỳ thời điểm nào
+- Bạn thắng mà không cần showdown (lật bài) nếu tất cả người khác fold ở bất kỳ thời điểm nào
 
 ---
 
 ## Luật chơi poker Texas Hold'em cơ bản là gì?
 
 Luật chơi poker Texas Hold'em cơ bản, theo luật chuẩn quốc tế, gói trong bốn ý: mỗi người nhận 2 lá bài tẩy; 5 lá bài chung được lật dần qua flop, turn, river; sau mỗi lần lật có một vòng cược; ở showdown, tay bài 5 lá mạnh nhất ghép từ 7 lá thắng pot — hoặc bạn thắng sớm hơn khi tất cả đối thủ đã fold.
-
-Luật cơ bản của Texas Hold'em rất đơn giản một khi bạn nhìn bàn chơi theo đúng trình tự.
 
 Mỗi ván bắt đầu với nút dealer. Hai người chơi bên trái nút phải đặt cược bắt buộc gọi là **small blind (mù nhỏ)** và **big blind (mù lớn)** — khi chỉ có hai người, chính nút dealer đặt small blind — nếu thấy khó hiểu, hãy xem [blind trong poker là gì và small blind, big blind hoạt động ra sao](/vi/blog/holdem-blind-meaning). Sau đó mỗi người nhận hai lá bài úp mặt. Đó là bài tẩy của bạn.
 
@@ -89,7 +87,9 @@ Nếu thứ hạng tay bài còn mới với bạn, hãy mở [thứ hạng tay 
 
 ## Poker là gì — và poker 2 lá (Texas Hold'em) khác poker 5 lá, xì tố ở đâu?
 
-«Poker» — hay "bài poker" theo cách gọi quen thuộc — là tên chung của nhiều biến thể bài cùng dùng một thứ hạng tay bài. Bài này chỉ nói về Texas Hold'em: mỗi người nhận 2 lá bài tẩy, dùng chung 5 lá bài chung và so 5 lá mạnh nhất. Các biến thể ở Việt Nam gọi theo số lá — «poker 5 lá», «poker 4 lá» — khác ở số lá mỗi người được nhận: tên tay bài có thể trùng, nhưng cách chia bài và vòng cược không giống bài này, và tôi không mô tả luật của chúng ở đây. Tên gọi xì tố/xì phé được dùng không thống nhất; bài này chỉ nói về Texas Hold'em, mỗi người nhận hai lá bài tẩy. Nếu bạn tìm "cách chơi poker 2 lá" mà vào đây: «2 lá» là hai lá bài tẩy bạn được chia, không phải so bài bằng hai lá — tay bài cuối cùng luôn là 5 lá mạnh nhất trong 7 lá.
+«Poker» — hay "bài poker" theo cách gọi quen thuộc — là tên chung của nhiều biến thể bài cùng dùng một thứ hạng tay bài. Texas Hold'em là biến thể mỗi người dùng 2 lá bài tẩy cùng 5 lá bài chung và so 5 lá mạnh nhất. Các biến thể ở Việt Nam gọi theo số lá — «poker 5 lá», «poker 4 lá» — khác ở số lá mỗi người được nhận: tên tay bài có thể trùng, nhưng cách chia bài và vòng cược khác với Texas Hold'em, và tôi không mô tả luật của chúng ở đây.
+
+Tên gọi xì tố/xì phé được dùng không thống nhất; bài này chỉ nói về Texas Hold'em, mỗi người nhận hai lá bài tẩy. Nếu bạn tìm "cách chơi poker 2 lá" mà vào đây: «2 lá» là hai lá bài tẩy bạn được chia, không phải so bài bằng hai lá — tay bài cuối cùng luôn là 5 lá mạnh nhất trong 7 lá.
 
 ---
 
@@ -118,13 +118,13 @@ Muốn xem phiên bản chi tiết, hãy đọc tiếp [thứ tự hành động
 
 ## Texas Hold'em chơi được bao nhiêu người?
 
-Một bàn Texas Hold'em cần ít nhất 2 người và tối đa 10 người. Hai người gọi là heads-up, 3–6 người là bàn ngắn (6-max), 7–10 người là bàn đầy đủ (full ring). Số người càng đông thì khả năng có ai đó cầm bài mạnh càng cao, nên bạn phải chơi chặt hơn; với buổi đầu tiên ở nhà, 4–6 người là dễ học nhất.
+Từ 2 đến 10 người: hai người gọi là heads-up, 3–6 người là bàn ngắn (6-max), 7–10 người là bàn đầy đủ (full ring). Số người càng đông thì khả năng có ai đó cầm bài mạnh càng cao, nên bạn phải chơi chặt hơn; với buổi đầu tiên ở nhà, 4–6 người là dễ học nhất.
 
 Texas Hold'em chơi được với **từ 2 đến 10 người** trên một bàn. Bạn không cần đủ bàn mới bắt đầu được — chỉ cần ít nhất hai người.
 
 | Số người | Tên gọi | Ghi chú cho người mới |
 |--------:|------------------|----------------|
-| 2 | Heads-up | Nhanh và hung hãn; vị trí blind bị đảo ngược (xem bên dưới) |
+| 2 | Heads-up | Nhanh và hung hăng; vị trí blind bị đảo ngược (xem bên dưới) |
 | 3–6 | Bàn ngắn (6-max) | Phổ biến nhất khi chơi online; chơi được nhiều tay bài hơn |
 | 7–10 | Bàn đầy đủ (9-max hoặc 10-max) | Kiểu chơi kinh điển ở nhà/casino; chơi chặt hơn, fold nhiều hơn |
 
@@ -138,7 +138,7 @@ Số người chơi cũng thay đổi chiến thuật của bạn — càng nhi�
 
 ## Ai hành động trước trong Texas Hold'em?
 
-Preflop, người ngồi ngay bên trái big blind hành động đầu tiên, vì hai ghế blind đã bỏ chip vào pot rồi. Từ flop trở đi, người còn trong ván gần nhất bên trái nút dealer hành động đầu tiên và nút dealer hành động cuối cùng. Chỉ cần nhớ: trước flop nhìn sang trái BB, sau flop nhìn sang trái nút dealer.
+Preflop, người ngồi ngay bên trái big blind hành động đầu tiên, vì hai ghế blind đã bỏ chip vào pot rồi. Từ flop trở đi, người còn trong ván gần nhất bên trái nút dealer hành động đầu tiên và nút dealer thường hành động cuối cùng.
 
 Đây là một trong những câu hỏi phổ biến nhất của người mới, vì câu trả lời thay đổi sau flop.
 
@@ -153,7 +153,7 @@ Mẹo nhớ đơn giản:
 
 ==**Trước flop, nhìn sang trái big blind. Sau flop, nhìn sang trái nút dealer.**==
 
-Đó là lý do ==g:nút dealer là vị trí quyền lực đến vậy==. ==Nút dealer thường hành động cuối cùng ở flop, turn và river==, nghĩa là họ được xem tất cả người khác làm gì trước khi quyết định. Muốn hiểu đầy đủ từng tên ghế — từ UTG đến nút dealer, 6-max vs 9-max và mỗi chỗ được mở bài với range nào — hãy xem [hướng dẫn vị trí trong poker](/vi/blog/holdem-positions).
+Đó là lý do ==g:nút dealer là vị trí quyền lực đến vậy==. ==Nút dealer thường hành động cuối cùng ở flop, turn và river==, nghĩa là họ được xem tất cả người khác làm gì trước khi quyết định. Muốn hiểu đầy đủ từng tên ghế — từ UTG đến nút dealer, 6-max vs 9-max và mỗi chỗ nên mở với range (nhóm tay bài chọn để chơi) nào — hãy xem [hướng dẫn vị trí trong poker](/vi/blog/holdem-positions).
 
 ---
 
@@ -192,11 +192,7 @@ Với 200 chip và blind 1/2, ==g:mỗi người chơi bắt đầu với 100 bi
 
 Nếu đang học, hãy dùng chip không quy đổi ra tiền; mục tiêu là hiểu trình tự, không phải chịu áp lực. Khi cả nhóm đã nắm luật và muốn chơi cash game nhỏ, chọn buy-in mà ai thua cũng thấy thoải mái — ví dụ $2 đến $5 ở blind $0,01/$0,02 — và nâng dần. Buy-in giải đấu lại là một khoản cố định, chip không đổi ra tiền.
 
-Câu trả lời phụ thuộc vào việc bạn chơi tiền thật hay chỉ đang tập.
-
-Nếu đang học, hãy dùng chip tập trước. Mục tiêu là hiểu trình tự ván bài, không phải tạo áp lực.
-
-Nếu chơi cash game nhỏ ở nhà, hãy chọn mức buy-in mà ai thua cũng thấy thoải mái. Cấu trúc phổ biến cho người mới:
+Cấu trúc phổ biến cho người mới chơi cash game nhỏ ở nhà:
 
 | Mức blind | Buy-in cho người mới | Ghi chú |
 |:---|:---:|:---|
@@ -206,7 +202,7 @@ Nếu chơi cash game nhỏ ở nhà, hãy chọn mức buy-in mà ai thua cũng
 
 ==r:Đừng bắt đầu với mức cược khiến mọi người căng thẳng.== Người mới mà run thì không học nhanh hơn. Họ chỉ fold quá nhiều, call theo cảm xúc, hoặc cãi nhau về luật.
 
-Lưu ý rằng buy-in của **giải đấu (tournament)** hoạt động khác cash game: bạn trả một khoản phí vào cửa cố định, nhận một stack chip không quy đổi ra tiền, và chơi đến khi một người gom hết chip (giải có re-entry cho phép bạn mua vào lại sau khi bị loại). Nếu chưa rõ mình muốn chơi kiểu nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
+Lưu ý rằng buy-in của **giải đấu** hoạt động khác cash game: bạn trả một khoản phí vào cửa cố định, nhận một stack chip không quy đổi ra tiền, và chơi đến khi một người gom hết chip (giải có re-entry cho phép bạn mua vào lại sau khi bị loại). Nếu chưa rõ mình muốn chơi kiểu nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
 
 Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích được thứ tự hành động mà không cần nghĩ. Rồi mới nâng mức cược từ từ.
 
@@ -214,7 +210,7 @@ Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích đ�
 
 ## No-limit, limit hay pot-limit — bạn đang chơi loại Texas Hold'em nào?
 
-Khi ai đó nói "Texas Hold'em", gần như chắc chắn họ nói về No-Limit Hold'em: bạn được bet bất kỳ số nào từ mức big blind đến toàn bộ stack. Fixed-Limit chỉ cho phép bet theo mức cố định, Pot-Limit giới hạn ở kích thước pot hiện tại. Cách chia bài và thứ hạng tay bài giống hệt nhau ở cả ba thể thức.
+Ba thể thức chỉ khác nhau ở mức cược được phép. No-Limit: bạn được bet bất kỳ số nào từ mức big blind đến toàn bộ stack. Fixed-Limit: chỉ được bet theo mức cố định của bàn. Pot-Limit: tối đa bằng kích thước pot hiện tại. Nếu không ai nói rõ, hãy mặc định là No-Limit — đó là thể thức bạn sẽ gặp ở gần như mọi nơi.
 
 Khi người ta nói "Texas Hold'em", họ gần như luôn nói về **No-Limit Hold'em (NLHE)** — thể thức của Main Event WSOP và hầu hết mọi ván chơi tại nhà. Cách chia bài và thứ hạng tay bài giống hệt nhau ở cả ba thể thức. Điều khác biệt chính là **bạn được phép cược bao nhiêu** — và Fixed-Limit thường còn giới hạn số lần raise trong một vòng (ở WSOP: một bet cộng bốn lần raise).
 
@@ -230,9 +226,7 @@ Với người mới, ==g:hãy mặc định là bạn đang chơi No-Limit tr�
 
 ## Cách chia bài Texas Hold'em
 
-Trình tự chia bài Texas Hold'em: xào bài, đặt nút dealer, SB và BB đặt chip, chia mỗi người hai lá úp theo chiều kim đồng hồ từ bên trái nút dealer (một lá mỗi lượt), rồi vòng cược preflop. Trước flop, turn và river, dealer đốt một lá rồi mới lật bài chung. Ở nhà bạn không cần chia đẹp như casino, chỉ cần giữ đúng thứ tự này.
-
-Bạn không cần chia bài chuẩn như dealer casino, nhưng nên theo một trình tự gọn gàng.
+Trình tự chia bài Texas Hold'em: xào bài, đặt nút dealer, SB và BB đặt chip, chia mỗi người hai lá úp theo chiều kim đồng hồ từ bên trái nút dealer (một lá mỗi lượt), rồi vòng cược preflop. Trước flop, turn và river, dealer đốt một lá (burn card) rồi mới lật bài chung. Ở nhà bạn không cần chia đẹp như casino, chỉ cần giữ đúng thứ tự này.
 
 Đây là trình tự chia bài thân thiện với người mới:
 
@@ -247,7 +241,7 @@ Bạn không cần chia bài chuẩn như dealer casino, nhưng nên theo một 
 9. Đốt một lá, rồi chia river.
 10. Đến showdown, so tay bài 5 lá mạnh nhất.
 
-Lá bài đốt (burn card) là lá trên cùng được úp xuống trước khi chia flop, turn và river. Nó giúp bảo vệ bộ bài và là tiêu chuẩn trong poker live.
+Lá bài đốt là lá trên cùng được úp xuống trước khi chia flop, turn và river. Nó giúp bảo vệ bộ bài và là tiêu chuẩn trong poker live.
 
 ![Infographic nhìn từ trên xuống bàn Texas Hold'em khi flop A♠ K♦ 8♥ được lật ngửa ở giữa bàn](/images/rules-step3-flop.webp "Cách chia bài Texas Hold'em — flop xuất hiện sau vòng cược preflop")
 
@@ -257,7 +251,7 @@ Trong ván chơi ở nhà, điều quan trọng nhất là sự nhất quán. H�
 
 ## Vị trí trong Texas Hold'em — vì sao chỗ ngồi thay đổi tất cả?
 
-Vị trí là thứ tự bạn hành động trong mỗi vòng cược. Nút dealer (BTN) là ghế tốt nhất vì hành động cuối ở flop, turn và river, nghĩa là bạn thấy mọi người làm gì rồi mới quyết định. Small blind là ghế tệ nhất vì phải hành động đầu tiên ở mọi vòng postflop. Càng ngồi sớm, bạn càng cần tay bài mạnh để vào pot.
+Nút dealer (BTN) là ghế tốt nhất vì hành động cuối ở flop, turn và river, nghĩa là bạn thấy mọi người làm gì rồi mới quyết định. Small blind là ghế tệ nhất vì phải hành động đầu tiên ở mọi vòng postflop. Càng ngồi sớm, bạn càng cần tay bài mạnh để vào pot.
 
 Vị trí nghĩa là **thời điểm bạn hành động trong mỗi vòng cược**. Hành động sau nghĩa là bạn đã thấy người khác làm gì trước — và thông tin đó giá trị hơn nhiều so với hình dung của hầu hết người mới.
 
@@ -270,15 +264,15 @@ Vị trí nghĩa là **thời điểm bạn hành động trong mỗi vòng cư�
 | Bên trái dealer | SB (small blind) | Thứ 8 preflop, thứ 1 postflop | Chỗ ngồi tệ nhất — hành động đầu ở mọi vòng postflop |
 | Cách dealer hai ghế | BB (big blind) | Cuối preflop (thứ 9), thứ 2 postflop | Được quyền raise ở preflop; không có vị trí postflop |
 
-==g:Nút dealer là chỗ ngồi sinh lời nhất trên bàn.== Bạn hành động cuối ở flop, turn và river — nghĩa là mọi người chơi đều để lộ sức mạnh tay bài trước khi bạn quyết định. Muốn xem hướng dẫn vị trí đầy đủ, hãy đọc [vị trí trong poker: từ UTG đến nút dealer](/vi/blog/holdem-positions).
+==g:Nút dealer là chỗ ngồi sinh lời nhất trên bàn.== Muốn xem hướng dẫn vị trí đầy đủ, hãy đọc [vị trí trong poker: từ UTG đến nút dealer](/vi/blog/holdem-positions).
 
 ---
 
 ## Chiến thuật Texas Hold'em cho người mới nên bắt đầu từ đâu?
 
-Chiến thuật đầu tiên của người mới nên nhàm chán mà chắc: chơi ít tay bài hơn, raise khi cầm bài mạnh, fold nhiều hơn ở vị trí sớm, tôn trọng những cú bet lớn ở river và đừng đuổi theo mọi bài chờ. Bắt đầu với các đôi từ TT trở lên cộng AK, AQ — khoảng 5% số tay bài — rồi mở rộng dần khi đã quen bàn.
+Chiến thuật đầu tiên của người mới nên nhàm chán mà chắc: chơi ít tay bài hơn, raise khi cầm bài mạnh, fold nhiều hơn ở vị trí sớm, tôn trọng những cú bet lớn ở river và đừng đuổi theo mọi bài chờ. Danh sách tay bài cụ thể nằm ở bảng bốn cấp bên dưới.
 
-Khi luật đã rõ ràng, chiến thuật đầu tiên của bạn nên nhàm chán và chắc chắn.
+Khi luật đã rõ ràng, hãy bắt đầu từ chiến thuật đơn giản nhất.
 
 ==r:Hầu hết người mới mất chip vì chơi quá nhiều tay bài, đuổi theo những draw (bài chờ) yếu, hoặc call chỉ vì tò mò.== Mục tiêu đầu tiên của bạn không phải là bluff tất cả mọi người. ==g:Mục tiêu đầu tiên là ngừng biếu chip cho người khác.==
 
@@ -317,7 +311,7 @@ Muốn xem đủ 169 tay bài sắp xếp theo vị trí (từ UTG đến nút d
 
 ## Pot odds — khái niệm toán duy nhất giúp người mới đỡ mất tiền
 
-Pot odds (tỷ lệ pot) là tỷ lệ giữa số chip đang có trong pot và số tiền bạn phải call — tính bằng pot : số tiền phải call. Pot $100, đối thủ bet $20: bạn call $20 để tranh $120, tức pot odds 6:1, nên chỉ cần thắng hơn 1 trong 7 lần (khoảng 14%) là call có lãi.
+Pot odds (tỷ lệ pot) là tỷ lệ giữa số chip đang có trong pot và số tiền bạn phải call — tính bằng pot : số tiền phải call. Tỷ lệ này cho biết bạn cần thắng ít nhất bao nhiêu phần trăm số lần để cú call không lỗ: pot odds càng lớn, bạn càng cần ít cơ hội thắng. Ví dụ bằng số ở ngay dưới.
 
 Bạn không cần giỏi toán. Bạn chỉ cần trả lời một câu hỏi trước khi call một khoản cược: **cái giá tôi trả có xứng với cơ hội thắng của tôi không?**
 
@@ -384,7 +378,7 @@ Thứ hạng tay bài cơ bản từ mạnh nhất đến yếu nhất (kèm t�
 | 9 | Một đôi (one pair) | 43,8% — tay bài xuất hiện nhiều nhất ở showdown |
 | 10 | Mậu thầu (bài cao, high card) | 17,4% — tay bài yếu nhất ở showdown; thường chỉ thắng khi những người khác cũng trượt |
 
-Nếu hai người chơi có cùng loại tay bài, hãy so những lá cao nhất liên quan — xem [luật kicker và so bài cùng hạng](/vi/blog/holdem-tiebreak-rules). Nếu 5 lá mạnh nhất của cả hai giống hệt nhau, pot được [chia pot (split pot)](/vi/blog/holdem-split-pot-rules).
+Nếu hai người chơi có cùng loại tay bài, hãy so những lá cao nhất liên quan — xem [luật kicker (lá phụ) và so bài cùng hạng](/vi/blog/holdem-tiebreak-rules). Nếu 5 lá mạnh nhất của cả hai giống hệt nhau, thì [chia pot (split pot)](/vi/blog/holdem-split-pot-rules).
 
 ---
 
@@ -392,7 +386,7 @@ Nếu hai người chơi có cùng loại tay bài, hãy so những lá cao nh�
 
 Năm lỗi gặp ở gần như mọi bàn người mới: tưởng phải dùng cả hai lá bài tẩy, quên thứ tự hành động đổi sau flop, call vì "biết đâu bài về", chơi mọi lá Át, và phớt lờ vị trí. Hai lỗi đầu là hiểu sai luật; ba lỗi sau làm bạn mất chip trước khi chạm tới bất kỳ chiến thuật nào gọi là nâng cao.
 
-Sau nhiều năm tổ chức ván chơi ở nhà, tôi thấy đúng năm lỗi này ở hầu hết các bàn có người mới — và hai lỗi đầu thuần túy là nhầm luật, còn ba lỗi sau làm bạn mất chip từ rất lâu trước khi tới bất cứ thứ gì gọi là chiến thuật nâng cao.
+Sau nhiều năm tổ chức ván chơi ở nhà, tôi thấy đúng năm lỗi này ở hầu hết các bàn có người mới.
 
 ### Lỗi 1: Nghĩ rằng phải dùng cả hai lá bài tẩy
 
@@ -408,7 +402,7 @@ Draw cần đúng giá. Nếu pot nhỏ mà khoản bet khổng lồ, đuổi th
 
 ### Lỗi 4: Chơi mọi lá Át
 
-A♣4♦ trông hấp dẫn với người mới — tôi đã chứng kiến người mới mất chip vì một lá Át yếu nhiều hơn vì gần như bất kỳ tay bài nào khác — nhưng Át yếu thường chỉ thành một đôi hạng nhì. Những Át lớn như AK và AQ mạnh hơn nhiều.
+A♣4♦ trông hấp dẫn với người mới — tôi đã chứng kiến người mới mất chip vì một lá Át yếu nhiều hơn vì gần như bất kỳ tay bài nào khác — nhưng Át yếu thường chỉ thành một đôi Át thua kicker. Những Át lớn như AK và AQ mạnh hơn nhiều.
 
 ### Lỗi 5: Bỏ qua vị trí
 
@@ -441,7 +435,7 @@ A. Khi học, hãy bắt đầu với chip tập. Với ván chơi tiền thật
 
 **Q. Có "sảnh nhỏ" trong Texas Hold'em không — A-2-3-4-5 tính thế nào?**
 
-A. Có. A-2-3-4-5 là một sảnh hợp lệ — đó là sảnh thấp nhất A-2-3-4-5 (the wheel). Lá Át không được nối vòng: J-Q-K-A-2 không phải là sảnh. Át chỉ đóng vai trò lá cao nhất (A-K-Q-J-10) hoặc thấp nhất (A-2-3-4-5), không bao giờ nằm giữa.
+A. Có — đó là sảnh thấp nhất A-2-3-4-5 (the wheel), một sảnh hoàn toàn hợp lệ. Lá Át không được nối vòng: J-Q-K-A-2 không phải là sảnh. Át chỉ đóng vai trò lá cao nhất (A-K-Q-J-10) hoặc thấp nhất (A-2-3-4-5), không bao giờ nằm giữa.
 
 **Q. Texas Hold'em có bao nhiêu tay bài khởi đầu khác nhau?**
 
@@ -503,7 +497,7 @@ Bước tiếp theo, hãy ôn lại [thứ hạng tay bài Texas Hold'em](/vi/bl
   <a href="/vi/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Vị trí</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Vị trí trong poker: từ UTG đến nút dealer</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Vì sao nút dealer thắng — sơ đồ ghế và range mở bài</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Vì sao nút dealer thắng — sơ đồ ghế và range mở</div>
   </a>
   <a href="/vi/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hành động cược</div>

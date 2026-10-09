@@ -71,7 +71,7 @@ Check là hành động giữ nguyên hiện trạng: bạn không bỏ thêm ch
 
 Check nghĩa là: ==g:"Tôi nhường lượt — không bet, nhưng tôi vẫn ở lại ván bài."==
 
-Nó không tốn gì cả. Ở poker live, bạn ra hiệu bằng cách gõ nhẹ lên mặt bàn hoặc nói "check". Lượt hành động chuyển sang người chơi bên trái bạn. Nếu cả bàn cùng check, lá bài chung (board) tiếp theo được chia — hoặc ở river thì đi thẳng tới showdown (lật bài).
+Nó không tốn gì cả. Ở poker live, bạn ra hiệu bằng cách gõ nhẹ lên mặt bàn hoặc nói "check". Nếu cả bàn cùng check, lá bài chung (board) tiếp theo được chia — hoặc ở river thì đi thẳng tới showdown (lật bài).
 
 Check không phải là đầu hàng. Bạn vẫn giữ bài, vẫn giữ mọi lựa chọn, và chưa phải trả gì để xem điều gì xảy ra tiếp theo.
 
@@ -81,10 +81,10 @@ Check không phải là đầu hàng. Bạn vẫn giữ bài, vẫn giữ mọi 
 
 Bạn được check đúng khi không có khoản cược nào đang mở trước mặt mình: hoặc chưa ai bet trong vòng cược hiện tại, hoặc chính khoản bạn đã đặt sẵn (big blind, hay straddle còn hiệu lực) là mức cược mà cả bàn phải trả và không ai raise. Hễ có người bet hoặc raise trước lượt bạn, quyền check biến mất — chỉ còn fold, call hoặc raise.
 
-Bạn có thể check trong hai kiểu tình huống:
+Cụ thể:
 
 - **Chưa có ai bet** trong vòng cược hiện tại (flop, turn hoặc river)
-- **Bạn là big blind (mù lớn) ở preflop và không ai raise hay straddle** — khoản blind (mù — cược bắt buộc) của bạn đã được tính là một khoản cược đang mở, nên bạn được check và xem flop miễn phí (người đặt straddle (blind tự nguyện) còn hiệu lực cũng vậy, nếu không ai raise hay re-straddle sau họ)
+- **Bạn là big blind (mù lớn) ở preflop và không ai raise hay straddle** — khoản blind (mù — cược bắt buộc) của bạn đã được tính là một khoản cược đang mở, nên bạn được check và xem flop miễn phí (người đặt straddle — blind tự nguyện — còn hiệu lực cũng vậy, nếu không ai raise hay re-straddle sau họ)
 
 Nếu có người bet sau khi bạn check, bạn đứng trước một quyết định mới: fold, call hoặc raise. Check trước rồi raise khi đối thủ bet được gọi là ==check-raise== — hoàn toàn hợp lệ trong Texas Hold'em và là một vũ khí tiêu chuẩn, không phải chiêu trò.
 
@@ -94,7 +94,7 @@ Nếu có người bet sau khi bạn check, bạn đứng trước một quyết
 
 ## "Call" trong poker có nghĩa là gì? Check và call khác nhau ở đâu
 
-Call là trả đúng số chip bằng mức cược đang mở để tiếp tục ván bài — không hơn, không kém. Khác biệt với check nằm ở điều kiện: check chỉ có khi chưa ai bet, còn call chỉ có sau khi đã có người bet hoặc raise. Nói cách khác, cùng một ý "tôi vẫn ở lại", nhưng check không tốn chip, còn call thì phải trả tiền.
+Call là trả đúng số chip bằng mức cược đang mở để tiếp tục ván bài. Khác biệt với check nằm ở điều kiện: check chỉ có khi trước mặt bạn không có khoản cược nào đang mở, còn call chỉ có khi đã có người bet hoặc raise. Nói cách khác, cùng một ý "tôi vẫn ở lại", nhưng check không tốn chip, còn call thì phải trả tiền.
 
 Call nghĩa là bạn ==trả đúng bằng mức cược hiện tại== để ở lại ván bài. Ai đó bet $10, bạn theo $10 — không hơn, không kém. (Còn dưới $10 thì bạn vẫn call được: bạn all-in với số chip mình có.)
 
@@ -112,9 +112,9 @@ Ví dụ thực tế: bạn ở flop với K♠ 8♦. Chưa ai bet, nên bạn =
 
 ## Fold poker là gì — có được fold bất cứ lúc nào không?
 
-Fold là úp bài trả cho dealer và rút khỏi ván: bạn không phải bỏ thêm chip, nhưng cũng không còn cơ hội thắng pot. Bạn được fold ở bất kỳ lúc nào đến lượt mình, và quyết định đó không rút lại được. Điểm cần nhớ: fold khi chưa ai bet là bỏ tay bài một cách vô ích — trong tình huống đó, check miễn phí luôn tốt hơn.
+Fold là úp bài trả cho dealer và rút khỏi ván: bạn không phải bỏ thêm chip, nhưng cũng không còn cơ hội thắng pot. Bạn được fold ở bất kỳ lúc nào đến lượt mình, và quyết định đó không rút lại được. Điểm cần nhớ: fold không phải lúc nào cũng là lựa chọn an toàn — khi chưa ai bet, bạn còn một lựa chọn không tốn chip.
 
-Fold nghĩa là bạn bỏ bài và rời khỏi ván. Bạn không phải trả thêm gì, nhưng ==r:mọi chip bạn đã bỏ vào trước đó vẫn nằm lại trong pot==.
+Có một điều cần nhớ: ==r:mọi chip bạn đã bỏ vào trước đó vẫn nằm lại trong pot==.
 
 Có — mỗi khi đến lượt, bạn đều có thể fold, kể cả khi chưa bet gì, và cú fold đó có hiệu lực ràng buộc. Nhưng không phải là không có hệ quả: trong giải đấu (tournament), fold khi trước mặt không có khoản cược nào bị tính là "non-standard fold" theo ==WSOP Rule 84== và có thể bị cảnh cáo. Và hãy để ý cái bẫy: **fold khi bạn có thể check miễn phí là vứt đi một tay bài vô cớ**. Nếu chưa ai bet, cứ check.
 
@@ -124,7 +124,7 @@ Một quy tắc ứng xử ở bàn live: đừng fold ==trước lượt==. Hã
 
 ## Raise trong poker là gì — min-raise tính thế nào?
 
-Raise là tăng mức cược đang mở lên, với phần cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức (full raise) gần nhất. Mức tối thiểu đó gọi là min-raise (mức raise tối thiểu): nó tính theo mức tăng của lần bet hoặc raise trước, chứ không theo big blind. Mức tối đa là toàn bộ stack của bạn — đó chính là nghĩa của hai chữ "no limit".
+Raise là tăng mức cược đang mở lên, với phần cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức (full raise) gần nhất. Mức tối thiểu đó gọi là min-raise (mức raise tối thiểu): nó tính theo mức tăng của lần bet hoặc raise trước, chứ không theo big blind. Mức tối đa là toàn bộ stack của bạn.
 
 ![Infographic minh họa luật min-raise trong poker: khoản bet $6 buộc raise lên ít nhất $12, và khoản raise preflop lên $6 buộc re-raise tối thiểu lên $10](/images/holdem-betting-actions-min-raise.webp "Luật min-raise — mỗi lần raise phải cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức gần nhất; chỉ all-in mới được nhỏ hơn")
 
@@ -169,7 +169,7 @@ Vẫn có hai ranh giới:
 
 ## Đi all-in nghĩa là gì?
 
-All-in (tất tay) là đẩy toàn bộ chip còn lại của bạn vào pot, dưới dạng bet, call hoặc raise tùy lựa chọn nào đang mở với bạn lúc đó. Nó không phải hành động thứ sáu. Điều quan trọng là bạn không bao giờ bị loại chỉ vì ít chip hơn: all-in ngắn hơn mức cược vẫn tranh phần pot tương ứng với số chip mình bỏ vào.
+All-in là đẩy toàn bộ chip còn lại của bạn vào pot — một cách thực hiện bet, call hay raise chứ không phải một hành động riêng. Điều quan trọng là bạn không bao giờ bị loại chỉ vì ít chip hơn: all-in ngắn hơn mức cược vẫn tranh phần pot tương ứng với số chip mình bỏ vào.
 
 All-in nghĩa là cược ==toàn bộ số chip bạn còn lại==. Bạn có thể làm vậy khi đến lượt mình dưới dạng một khoản bet, một cú call hoặc một cú raise — tùy lựa chọn nào đang mở với bạn lúc đó.
 
@@ -183,7 +183,7 @@ Toàn bộ cơ chế — cách tính side pot, ai lật bài trước, table sta
 
 Luật cho bạn biết hành động nào hợp lệ; chiến thuật mới quyết định hành động nào có lời. Hai thứ này là hai kỹ năng tách biệt: thuộc luật không làm bạn thắng, nhưng không thuộc luật thì bạn mất chip trước cả khi kịp dùng chiến thuật. Bài này dừng ở phần luật — ba bài dưới đây là nơi bắt đầu phần còn lại.
 
-Bài này nói về việc mỗi hành động *là gì* và khi nào nó *hợp lệ*. Còn chọn hành động nào — khi nào nên bet, khi nào call là có lời, khi nào một tay bài đẹp vẫn phải fold — lại là một nhánh kỹ năng khác:
+Chọn hành động nào — khi nào nên bet, khi nào call là có lời, khi nào một tay bài đẹp vẫn phải fold — là một nhánh kỹ năng khác:
 
 - Khung tư duy cho mọi quyết định: [chiến thuật Texas Hold'em — 5 quyết định](/vi/blog/holdem-strategy)
 - Đánh giá sức mạnh thô của tay bài trước tiên: [thứ hạng tay bài poker](/vi/blog/holdem-hand-rankings)
@@ -195,7 +195,7 @@ Một quy tắc bỏ túi giúp người mới giữ được tiền thật tron
 
 ## Những lỗi cược ở bàn live tôi gặp mỗi tuần
 
-Bốn lỗi dưới đây không phải lỗi chiến thuật mà là lỗi luật, và chúng tốn chip thật: call khi có thể check, đổi ý sau khi đã hô, big blind fold một flop miễn phí, và ném một lá chip lớn mà không nói gì. Điểm chung là người chơi hành động trước khi hiểu dealer sẽ xử thế nào — mỗi lỗi đều có một điều luật WSOP cụ thể đứng sau.
+Bốn lỗi dưới đây không phải lỗi chiến thuật mà là lỗi luật, và chúng tốn chip thật: call khi có thể check, đổi ý sau khi đã hô, big blind fold một flop miễn phí, và ném một chip lớn mà không nói gì. Điểm chung là người chơi hành động trước khi hiểu dealer sẽ xử thế nào — phần lớn đều có một điều luật WSOP cụ thể đứng sau.
 
 Tôi chơi một bàn live mức cược thấp hàng tuần, và những lỗi hành động y hệt nhau lặp lại đều như đồng hồ:
 
@@ -205,15 +205,15 @@ Là người hành động đầu tiên ở flop, chưa ai bet, thế mà một 
 
 ### Lỗi 2 — "Call"... à không, "raise"!
 
-"Call... à không, raise!" Không được. Ở poker live, hành động của bạn bị khóa ngay khoảnh khắc bạn hô ra — theo ==Rule 90.d==, lời tuyên bố đúng lượt có tính ràng buộc. (Nhân tiện, đó không phải string bet; string bet là kiểu đẩy chip nhiều nhịp có quay lại stack, nói trong phần Câu hỏi thường gặp. Kết quả thì như nhau: lời đầu tiên có hiệu lực.) Tôi đã chứng kiến dealer xử tình huống này thành một cú call ngay giữa câu nhiều hơn số lần tôi đếm được. Hô "raise" *trước* (hay hô "tố", nếu bàn bạn nói tiếng Việt) — rồi mới đẩy chip.
+"Call... à không, raise!" Không được. Ở poker live, hành động của bạn bị khóa ngay khoảnh khắc bạn hô ra — theo ==Rule 90.d==, lời tuyên bố đúng lượt có tính ràng buộc. (Nhân tiện, đó không phải string bet; string bet là kiểu đẩy chip nhiều nhịp có quay lại stack, nói trong phần Câu hỏi thường gặp. Kết quả thì như nhau: lời đầu tiên có hiệu lực.) Tôi đã thấy dealer xử những câu hô nửa chừng như vậy thành call nhiều đến mức không đếm xuể. Hô "raise" *trước* (hay hô "tố", nếu bàn bạn nói tiếng Việt) — rồi mới đẩy chip.
 
 ### Lỗi 3 — Big blind fold một flop miễn phí
 
-Cả bàn limp, lượt tới big blind... và họ fold. Đó là ném một flop miễn phí vào đống bài muck (úp bài bỏ). ==g:Nếu không ai raise, BB có thể check và xem ba lá bài mà không tốn thêm chip nào== — khoản blind đã nằm sẵn trong pot. Chuyện này xảy ra ở đúng nghĩa mọi vòng bàn.
+Cả bàn limp, lượt tới big blind... và họ fold. Đó là ném một flop miễn phí vào đống bài muck (úp bài bỏ). ==g:Nếu không ai raise, BB có thể check và xem ba lá bài mà không tốn thêm chip nào== — khoản blind đã nằm sẵn trong pot. Vòng bàn nào tôi cũng thấy chuyện này — theo đúng nghĩa đen.
 
-### Lỗi 4 — Một lá chip đẩy ra trong im lặng
+### Lỗi 4 — Một chip đẩy ra trong im lặng
 
-Đối mặt khoản bet $10, một người chơi lẳng lặng ném vào một lá chip $100 duy nhất, vừa mong được thối lại *vừa* muốn tính là raise. ==Luật một chip (one-chip rule)== được ghi nguyên văn trong luật WSOP (==Rule 97==): một lá chip mệnh giá lớn đẩy ra mà không hô gì chỉ được tính là call. Muốn raise, chữ "raise" phải bật ra **trước khi chip chạm mặt bàn**.
+Đối mặt khoản bet $10, một người chơi lẳng lặng ném vào một chip $100 duy nhất, vừa mong được thối lại *vừa* muốn tính là raise. ==Luật một chip (one-chip rule)== được ghi nguyên văn trong luật WSOP (==Rule 97==): một chip mệnh giá lớn đẩy ra mà không hô gì chỉ được tính là call. Muốn raise, chữ "raise" phải bật ra **trước khi chip chạm mặt bàn**.
 
 ---
 
@@ -276,7 +276,7 @@ A. Min-raise bằng mức cược hiện tại cộng thêm đúng mức tăng c
   </a>
   <a href="/vi/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Trình tự ván bài</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Thứ tự chơi trong Texas Hold'em</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Thứ tự hành động trong Texas Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Từ preflop đến river với ví dụ tay bài thực tế</div>
   </a>
   <a href="/vi/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

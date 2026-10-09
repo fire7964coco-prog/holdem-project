@@ -37,17 +37,17 @@ Texas Hold'em là biến thể poker mà mỗi người nhận hai lá bài tẩ
 
 Texas Hold'em là biến thể poker được chơi rộng rãi nhất thế giới. Từ WSOP Main Event đến ván bài tại nhà cho vui, khi người ta nói "poker" thì gần như luôn là Hold'em.
 
-Luật cốt lõi rất đơn giản: bạn tạo **tay bài 5 lá mạnh nhất** từ **hai lá bài tẩy riêng cộng năm lá bài chung**. May rủi chia bài, nhưng hiểu trình tự chơi — và ra quyết định đúng ở từng giai đoạn — mới là thứ tách người thắng khỏi phần còn lại.
+May rủi chia bài, nhưng hiểu trình tự chơi — và ra quyết định đúng ở từng giai đoạn — mới là thứ tách người thắng khỏi phần còn lại.
 
 ---
 
 ## Trước khi chia bài: nút dealer và blind đặt ở đâu?
 
-Nút dealer (BTN) là chiếc đĩa tròn đánh dấu ghế "cầm cái", và nó dịch một ghế theo chiều kim đồng hồ sau mỗi ván. Hai ghế ngay bên trái nút phải đặt blind trước khi thấy bất kỳ lá bài nào: small blind (mù nhỏ) ở ghế thứ nhất, big blind (mù lớn) ở ghế thứ hai. Khi bàn chỉ còn hai người, chính người cầm nút đặt small blind.
+Hai ghế ngay bên trái nút dealer (BTN) phải đặt blind trước khi thấy bất kỳ lá bài nào: small blind (mù nhỏ) ở ghế thứ nhất, big blind (mù lớn) ở ghế thứ hai. Vì nút dịch một ghế theo chiều kim đồng hồ sau mỗi ván, ai cũng lần lượt đi qua hai ghế blind — không ai được miễn, và mọi mô tả vị trí trong bài này đều tính từ nút.
 
 Trước khi có lá bài nào, hai thứ định hình bàn chơi: **nút dealer** và **blind**.
 
-**Nút dealer (cái "button", ký hiệu D)** là một chiếc đĩa tròn đánh dấu ai đang "cầm cái" trong ván đó. Dù có dealer (người chia bài) riêng chia thay cho người chơi, nút vẫn quyết định thứ tự cược, và nó thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván (quy tắc nút dealer chết — dead button — là ngoại lệ).
+**Nút dealer (cái "button", ký hiệu D)** là một chiếc đĩa tròn đánh dấu ai đang đóng vai người chia bài trong ván đó. Dù có dealer (người chia bài) riêng chia thay cho người chơi, nút vẫn quyết định thứ tự cược, và nó thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván (quy tắc nút dealer chết — dead button — là ngoại lệ).
 
 **Blind** là những khoản cược bắt buộc đặt trước khi chia bài. Không có chúng, ai cũng có thể check rồi fold miễn phí; ==g:blind đẩy tiền vào giữa bàn và cho người chơi một lý do để tranh pot==. (Chưa quen với chúng? Xem chính xác [small blind và big blind hoạt động thế nào](/vi/blog/holdem-blind-meaning).)
 
@@ -72,7 +72,7 @@ Preflop là vòng cược đầu tiên, diễn ra ngay sau khi mỗi người nh
 
 Khi blind đã đặt xong, dealer phát cho mỗi người hai **lá bài tẩy** úp xuống. Chỉ bạn thấy chúng, và vòng cược **preflop** bắt đầu.
 
-Hành động bắt đầu từ bên trái big blind và đi theo chiều kim đồng hồ. Đến lượt mình, bạn chọn một trong các hành động sau:
+Đến lượt mình, bạn chọn một trong các hành động sau:
 
 - **Fold (bỏ bài)** — bỏ ván và úp bài. Bạn không mất thêm gì, nhưng cũng không thắng gì.
 - **Call (theo)** — cân bằng mức cược hiện tại (ở preflop là big blind).
@@ -93,11 +93,11 @@ Bạn thực sự mở được tay nào trong số này còn tùy ghế ngồi.
 
 ## Giai đoạn 2 — Flop trong poker là gì? Ba lá bài chung đầu tiên
 
-Flop là ba lá bài chung đầu tiên, được lật cùng lúc ngay sau khi vòng cược preflop kết thúc. Từ đây mỗi người có 5 lá để đọc — hai lá tẩy cộng ba lá trên bàn — và vòng cược thứ hai bắt đầu từ người còn bài đầu tiên bên trái nút dealer. Flop cũng là lúc hành động check mở ra cho tất cả mọi người.
+Flop là ba lá bài chung đầu tiên, được lật cùng lúc ngay sau khi vòng cược preflop kết thúc. Từ đây mỗi người có 5 lá để đọc — hai lá tẩy cộng ba lá trên bàn — và vòng cược thứ hai bắt đầu từ người còn bài đầu tiên bên trái nút dealer.
 
-Khi vòng cược preflop kết thúc, dealer lật ba **lá bài chung** ở giữa bàn. Đây là **flop**.
+Dealer đặt ba **lá bài chung** này ngửa ở giữa bàn — đó là **flop**.
 
-Giờ bạn đọc được một tay bài 5 lá thực sự: hai lá tẩy cộng ba lá trên board. Hãy nhìn hai thứ cùng lúc:
+Hãy nhìn hai thứ cùng lúc:
 
 - **Bạn đang có gì** — một đôi, hai đôi, hay chưa có gì.
 - **Bạn còn có thể tạo ra gì** — một **draw (bài chờ)** thùng hoặc sảnh có thể hoàn tất ở các vòng cược sau.
@@ -110,9 +110,9 @@ Từ flop trở đi, **check** mở cho tất cả mọi người (ở preflop, 
 
 ## Giai đoạn 3 — Turn trong poker là gì? Bức tranh rõ dần
 
-Turn là lá bài chung thứ tư, được lật sau khi vòng cược flop khép lại, nâng tổng số lá trên board lên bốn. Nó mở ra vòng cược thứ ba, vẫn bắt đầu từ người còn bài đầu tiên bên trái nút dealer. Đây là vòng cược nặng tính toán nhất: draw của bạn đã hoàn tất chưa, và bạn có muốn đi tiếp đến river hay không.
+Turn là lá bài chung thứ tư, được lật sau khi vòng cược flop khép lại, nâng tổng số lá trên board lên bốn. Nó mở ra vòng cược thứ ba, vẫn bắt đầu từ người còn bài đầu tiên bên trái nút dealer. Đây là vòng cược nặng tính toán: draw của bạn đã hoàn tất chưa, và bạn có muốn đi tiếp đến river hay không.
 
-Sau vòng cược flop, thêm một lá bài chung được chia — lá **turn** (còn gọi là *fourth street*). Giờ có bốn lá trên board.
+Lá **turn** còn có tên khác là *fourth street*.
 
 Turn là một vòng cược nặng về chiến lược:
 
@@ -128,7 +128,7 @@ Turn là một vòng cược nặng về chiến lược:
 
 River là lá bài chung thứ năm và cuối cùng, được lật sau vòng cược turn. Khi nó xuất hiện, cả năm lá trên board đã lộ hết, không còn lá nào sắp tới, và vòng cược thứ tư — vòng cuối — bắt đầu. Mọi quyết định ở river chỉ còn dựa vào sức mạnh tay bài hiện có và cách đối thủ đã cược suốt ván.
 
-Sau vòng cược turn, lá bài chung thứ năm và cuối cùng được lật — **river** (còn gọi là *fifth street*). Cả năm lá bài chung đã ra hết, và không còn thông tin mới nào sắp đến.
+Lá **river** còn gọi là *fifth street* — sau nó, không còn thông tin mới nào sắp đến.
 
 Những lỗi river kinh điển:
 
@@ -142,7 +142,7 @@ River là nơi bạn kết toàn bộ ván. Cân nhắc sức mạnh tay bài c�
 
 ## Giai đoạn 5 — Showdown: tay bài 5 lá mạnh nhất thắng
 
-Showdown là lúc những người còn bài sau vòng cược river lật bài để so. Mỗi người chọn 5 lá mạnh nhất trong 7 lá — hai lá tẩy cộng năm lá bài chung — và không bắt buộc dùng cả hai lá tẩy. Người bet hoặc raise cuối cùng ở vòng cược cuối phải lật trước; tay bài ngang nhau thì chia pot đều cho những người đó.
+Showdown là lúc những người còn bài sau vòng cược river lật bài để so — và năm quy tắc dưới đây quyết định ai lật, ai thắng. Tóm gọn: mỗi người chọn 5 lá mạnh nhất trong 7 lá, người bet hoặc raise cuối cùng lật trước, tay bài ngang nhau thì chia pot.
 
 Nếu còn hai người trở lên sau vòng cược river, ván bài đi tới **showdown**.
 
@@ -154,7 +154,7 @@ Luật showdown:
 - Bạn không bắt buộc dùng cả hai lá tẩy — có thể dùng một lá, hoặc chơi luôn board (không dùng lá nào) nếu đó là 5 lá mạnh nhất của bạn.
 - **Người bet hoặc raise cuối cùng (last aggressor)** ở vòng cược cuối lật trước; nếu river được check hết lượt, người còn bài đầu tiên bên trái nút lật trước.
 - Người thua thường chỉ cần **muck (úp bài bỏ)** — bỏ mà không lật. Hai ngoại lệ trong giải đấu (tournament): khi một người đã all-in (tất tay) và vòng cược đã kết thúc, mọi tay bài đều phải lật ngửa (TDA 2024 Rule 16 · WSOP Tournament Rule 70); và người bet ở river bị call phải lật nếu người call — vẫn đang cầm hoặc đã lật bài của mình — yêu cầu xem bài (TDA 2024 Rule 18-B).
-- Tay bài ngang nhau thì **chia pot (split pot)** — dân chơi gọi là "chop" — đều nhau.
+- Tay bài ngang nhau thì pot được chia đều — **chia pot (split pot)**, dân chơi gọi là "chop".
 
 Ai phải lật trước, khi nào bạn được muck, và phép lịch sự quanh chuyện slow roll (cố tình lật bài chậm) được nói đầy đủ trong [luật showdown](/vi/blog/holdem-showdown-rules).
 
@@ -162,7 +162,7 @@ Ai phải lật trước, khi nào bạn được muck, và phép lịch sự qu
 
 ## Ai cược trước trong Texas Hold'em?
 
-**Người ngồi ngay bên trái big blind — gọi là Under the Gun (UTG) — hành động trước ở preflop, chính vì hai ghế blind đã có tiền trong pot và được hành động sau cùng. Hai ghế cùng sở hữu chữ "trước", và ghế nào đang trực tùy vào việc flop đã ra hay chưa. Khi flop đã rơi, đặc quyền của blind hết hiệu lực: hành động bắt đầu lại từ người còn bài đầu tiên bên trái nút dealer, và nút khép lại mọi vòng cược từ đó.**
+**Người ngồi ngay bên trái big blind — gọi là Under the Gun (UTG) — hành động trước ở preflop, chính vì hai ghế blind đã có tiền trong pot và được hành động sau cùng. Chữ "trước" thuộc về hai ghế khác nhau, tùy flop đã ra hay chưa. Khi flop đã lật, đặc quyền của blind hết hiệu lực: hành động bắt đầu lại từ người còn bài đầu tiên bên trái nút dealer, và nút khép lại mọi vòng cược từ đó.**
 
 "Đến lượt ai?" vì thế có câu trả lời khác nhau trước và sau flop — và chính sự dịch chuyển ấy là động cơ đằng sau chiến lược vị trí.
 
@@ -214,11 +214,11 @@ Một ván Texas Hold'em đi qua sáu giai đoạn theo đúng thứ tự: blind
 
 ## Theo dõi trọn một ván bài, từng bước một
 
-Dưới đây là một ván heads-up với bài và số chip thật: A♠ K♥ đấu với 9♦ 9♣ trên board K♦ 9♠ 3♥ 2♣ A♥. Bạn sẽ thấy pot lớn dần qua bốn vòng cược — 12.000, 28.000, 58.000 rồi 198.000 — và vì sao hai đôi Át-K ở river trông như tay thắng nhưng vẫn thua một set 9 đã có sẵn từ flop.
+Dưới đây là một ván heads-up với bài và số chip thật: A♠ K♥ đấu với 9♦ 9♣ trên board K♦ 9♠ 3♥ 2♣ A♥. Bạn sẽ thấy pot lớn dần qua bốn vòng cược — 12.000, 28.000, 58.000 rồi 198.000 — và vì sao hai đôi Át-K ở river trông như tay thắng nhưng vẫn thua ba lá 9 mà bên cầm 9♦ 9♣ đã có từ flop.
 
 ![Ví dụ một ván Texas Hold'em đầy đủ — từ preflop đến showdown](/images/holdem-game-example-fullhand.webp "Theo dõi trọn một ván qua từng vòng cược đến showdown")
 
-Đọc về các vòng cược thì trừu tượng. Hãy chạy một ván heads-up từ lá đầu đến lá cuối với bài và số chip thật.
+Đọc về các vòng cược thì trừu tượng — hãy chạy thử một ván từ lá đầu đến lá cuối.
 
 **Thiết lập:** Heads-up. Blind SB 1.000 / BB 2.000.
 
@@ -268,7 +268,7 @@ Bài học: ==r:khi river ghép bài của A thành hai đôi, nó *có cảm gi
 
 ## 7 hành động bạn có thể làm trong poker là gì?
 
-Ở bàn Texas Hold'em bạn chỉ có bảy hành động cược: fold, check, call, bet, raise, 3-bet và all-in. Hành động nào đang mở phụ thuộc vào việc trước mặt bạn đã có cược hay chưa — chưa có thì check hoặc bet, có rồi thì call, raise hoặc fold — còn all-in chỉ là cách đẩy toàn bộ stack vào bằng một trong các hành động đó.
+Ở bàn Texas Hold'em bạn chỉ có bảy nước đi: fold, check, call, bet, raise, 3-bet và all-in — trong đó all-in thực chất là bet, call hoặc raise bằng toàn bộ stack. Nước nào đang mở phụ thuộc vào việc trước mặt bạn đã có cược hay chưa: chưa có thì check hoặc bet, có rồi thì call hoặc raise; còn fold thì lúc nào đến lượt cũng được.
 
 ![Các hành động cược trong poker — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Mọi hành động cược bạn có thể làm trong Texas Hold'em")
 
@@ -304,16 +304,16 @@ Thứ hạng tay bài poker gồm 10 bậc, từ thùng phá sảnh hoàng gia (
 
 | Hạng | Tay bài | Ví dụ | Tần suất |
 |------|------|------|------|
-| 1 | Thùng phá sảnh hoàng gia (Royal Flush) | A♠ K♠ Q♠ J♠ 10♠ | Cực hiếm |
-| 2 | Thùng phá sảnh (Straight Flush) | 5♥ 6♥ 7♥ 8♥ 9♥ | Rất hiếm |
-| 3 | Tứ quý (Four of a Kind) | A♠ A♥ A♦ A♣ K♠ | Hiếm |
-| 4 | Cù lũ (Full House) | K♠ K♥ K♦ A♠ A♥ | Ít gặp |
-| 5 | Thùng (Flush) | A♠ K♠ 8♠ 5♠ 2♠ | Ít gặp |
-| 6 | Sảnh (Straight) | 5♥ 6♠ 7♦ 8♣ 9♥ | Thỉnh thoảng |
-| 7 | Sám cô (Three of a Kind) | Q♠ Q♥ Q♦ 5♠ 7♥ | Thỉnh thoảng |
-| 8 | Hai đôi (Two Pair) | J♠ J♥ 8♦ 8♣ A♠ | Phổ biến |
-| 9 | Một đôi (One Pair) | K♠ K♥ 7♦ 4♣ 2♠ | Rất phổ biến |
-| 10 | Mậu thầu (High Card) | A♠ Q♥ 8♦ 5♣ 2♠ | Phổ biến — nhưng ít hơn hai đôi |
+| 1 | Thùng phá sảnh hoàng gia (royal flush) | A♠ K♠ Q♠ J♠ 10♠ | Cực hiếm |
+| 2 | Thùng phá sảnh (straight flush) | 5♥ 6♥ 7♥ 8♥ 9♥ | Rất hiếm |
+| 3 | Tứ quý (four of a kind) | A♠ A♥ A♦ A♣ K♠ | Hiếm |
+| 4 | Cù lũ (full house) | K♠ K♥ K♦ A♠ A♥ | Ít gặp |
+| 5 | Thùng (flush) | A♠ K♠ 8♠ 5♠ 2♠ | Ít gặp |
+| 6 | Sảnh (straight) | 5♥ 6♠ 7♦ 8♣ 9♥ | Thỉnh thoảng |
+| 7 | Sám cô (three of a kind) | Q♠ Q♥ Q♦ 5♠ 7♥ | Thỉnh thoảng |
+| 8 | Hai đôi (two pair) | J♠ J♥ 8♦ 8♣ A♠ | Phổ biến |
+| 9 | Một đôi (one pair) | K♠ K♥ 7♦ 4♣ 2♠ | Rất phổ biến |
+| 10 | Mậu thầu (high card) | A♠ Q♥ 8♦ 5♣ 2♠ | Phổ biến — nhưng ít hơn hai đôi |
 
 </div>
 
@@ -329,7 +329,7 @@ Bạn có thể thuộc lòng trình tự chơi mà vẫn chảy máu chip nếu
 
 ### 1. Chơi gần như mọi ván
 
-"Cứ xem flop cái đã" là kẻ thua về dài hạn — đó là lỗ hổng phổ biến nhất tôi thấy ở bàn đầu tiên của một người mới. Người chơi mạnh chỉ chơi 15–25% số ván và fold phần còn lại không do dự. Nếu bạn call preflop với bất kỳ hai lá nào, bạn đang trả tiền để thua.
+"Cứ xem flop cái đã" là thói quen thua lỗ về lâu dài — đó là lỗ hổng phổ biến nhất tôi thấy ở bàn đầu tiên của một người mới. Người chơi mạnh chỉ chơi 15–25% số ván và fold phần còn lại không do dự. Nếu bạn call preflop với bất kỳ hai lá nào, bạn đang trả tiền để thua.
 
 ### 2. Bỏ qua vị trí
 
@@ -351,7 +351,7 @@ Lỗi kinh điển của người mới: nghĩ "mình có hai đôi!" trong khi 
 
 ## Bắt đầu chơi ngay hôm nay thế nào?
 
-Cách nhanh nhất để trình tự thành phản xạ là chơi thật với rủi ro bằng không: dùng chế độ tiền ảo, đọc lại bài này vài lần, viết mười thứ hạng tay bài ra giấy, và khi chuyển sang chip thật thì bắt đầu ở mức blind thấp nhất. Texas Hold'em học được trong ba mươi phút, nhưng chính những ván đầu tiên mới khắc vào đầu bạn thứ tự hành động.
+Cách nhanh nhất để trình tự thành phản xạ là chơi thật với rủi ro bằng không, rồi tăng mức cược từ từ — bốn bước dưới đây. Texas Hold'em học được trong ba mươi phút, nhưng chính những ván đầu tiên mới khắc vào đầu bạn thứ tự hành động.
 
 Một khi trình tự chơi đã thông, đã đến lúc thực sự chơi.
 
@@ -365,7 +365,7 @@ Texas Hold'em mất ba mươi phút để học và cả đời để thành th�
 ---
 
 :::readnext[Đọc tiếp]
-/vi/blog/texas-holdem-rules-for-beginners | Luật Texas Hold'em cho người mới | /images/rules-texas-holdem.webp
+/vi/blog/texas-holdem-rules-for-beginners | Luật chơi Texas Hold'em cho người mới | /images/rules-texas-holdem.webp
 /vi/blog/holdem-betting-actions | Các hành động cược giải thích rõ | /images/holdem-betting-actions-hero.webp
 :::
 
@@ -377,7 +377,7 @@ A. Đặt blind → chia hai lá bài tẩy → cược preflop → lật flop (
 
 **Q. Ai hành động trước trong poker?**
 
-A. Tùy bạn hỏi "trước" theo nghĩa nào — và chính điều đó khiến câu hỏi gây rối. Trong một ván có ba thời điểm cùng tranh chữ ấy: người *đặt* trước (small blind), người *hành động* trước ở preflop (UTG, ngay bên trái big blind), và người hành động trước khi flop đã ra (quay về small blind). Vì thế câu trả lời đảo giữa ván — UTG mở vòng preflop, rồi small blind (hoặc, nếu họ đã fold, người còn bài kế tiếp bên trái nút) mở mọi vòng sau đó. (Heads-up đảo ngược điều này — xem câu tiếp theo.)
+A. Tùy bạn hỏi "trước" theo nghĩa nào — và chính điều đó khiến câu hỏi gây rối. Trong một ván có ba thời điểm cùng tranh chữ ấy: người *đặt* trước (small blind), người *hành động* trước ở preflop (UTG, ngay bên trái big blind), và người hành động đầu tiên sau khi flop đã ra (quay về small blind). Vì thế câu trả lời đảo giữa ván — UTG mở vòng preflop, rồi small blind (hoặc, nếu họ đã fold, người còn bài kế tiếp bên trái nút) mở mọi vòng sau đó. (Heads-up đảo ngược điều này — xem câu tiếp theo.)
 
 **Q. Sau flop, ai cược trước?**
 
@@ -405,19 +405,19 @@ A. Pot odds là tỷ lệ giữa kích thước pot hiện tại và số tiền
 
 **Q. Khi nào nên all-in?**
 
-A. All-in nghĩa là cược mọi chip bạn có. Dùng với tay bài rất mạnh (nuts — tay bài mạnh nhất có thể trên board này), hoặc như một cú bluff để ép đối thủ fold. Một khi đã all-in bạn không thể cược tiếp, nhưng vẫn đủ tư cách nhận phần pot bạn đã cân. Khi các stack lệch nhau và hai người trở lên tiếp tục cược vượt mức all-in của bạn, điều này tạo ra side pot (pot phụ) — xem [luật all-in và side pot](/vi/blog/holdem-all-in-rules).
+A. All-in nghĩa là cược mọi chip bạn có. Dùng với tay bài rất mạnh (nuts — tay bài mạnh nhất có thể trên board này), hoặc như một cú bluff để ép đối thủ fold. Một khi đã all-in bạn không thể cược tiếp, nhưng vẫn được tranh phần pot tương ứng với số chip bạn đã bỏ vào. Khi các stack lệch nhau và hai người trở lên tiếp tục cược vượt mức all-in của bạn, điều này tạo ra side pot (pot phụ) — xem [luật all-in và side pot](/vi/blog/holdem-all-in-rules).
 
 **Q. Một ván bài có bao nhiêu vòng cược?**
 
 A. Tối đa bốn: preflop, flop, turn và river. Ván kết thúc sớm — mọi người fold chỉ còn một người, hoặc các bên đã all-in và không còn ai để cược — thì ít hơn. Blind là cược bắt buộc, và showdown không có cược.
 
-**Q. Vì sao dealer phải «đốt» (burn) một lá trước flop, turn, river — và đốt bao nhiêu lá?**
+**Q. Vì sao dealer phải "đốt" (burn) một lá trước flop, turn, river — và đốt bao nhiêu lá?**
 
-A. Trước khi chia flop, turn và river, dealer bỏ úp lá trên cùng của bộ bài — gọi là "burn card" (lá đốt). Vậy là ba lá bị đốt trong một ván đi tới tận river, mỗi lá trước một lần lật bài chung. Đốt bài bảo vệ ván chơi: nếu lá trên cùng bị đánh dấu hay vô tình lộ, một người chơi có thể biết trước lá sắp ra, nên nó được loại khỏi ván trước.
+A. Trước khi chia flop, turn và river, dealer bỏ úp lá trên cùng của bộ bài — gọi là lá bài đốt (burn card). Vậy là ba lá bị đốt trong một ván đi tới tận river, mỗi lá trước một lần lật bài chung. Đốt bài bảo vệ ván chơi: nếu lá trên cùng bị đánh dấu hay vô tình lộ, một người chơi có thể biết trước lá sắp ra, nên nó được loại khỏi ván trước.
 
 **Q. Chia bài poker gọi là gì? Dealer và nút dealer khác nhau thế nào?**
 
-A. Người chia bài gọi là **dealer**; chiếc đĩa tròn đánh dấu ghế "cầm cái" gọi là **nút dealer (BTN)**. Ở ván bài tại nhà, người cầm nút thường tự chia; khi có dealer riêng chia thay, nút vẫn quyết định thứ tự cược và thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván (quy tắc nút dealer chết — dead button — là ngoại lệ). Bài này không nói về nghề dealer.
+A. Người chia bài gọi là **dealer**; chiếc đĩa tròn đánh dấu ghế đóng vai người chia bài gọi là **nút dealer (BTN)**. Ở ván bài tại nhà, người cầm nút thường tự chia; khi có dealer riêng chia thay, nút vẫn quyết định thứ tự cược và thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván (quy tắc nút dealer chết — dead button — là ngoại lệ). Bài này không nói về nghề dealer.
 
 **Q. Làm cách nào để chia bài trong poker?**
 
@@ -440,7 +440,7 @@ Học thuộc trình tự, luyện với chế độ chơi miễn phí, và bạ
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/vi/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hướng dẫn người mới</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật Texas Hold'em cho người mới</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Luật chơi Texas Hold'em cho người mới</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Luật đầy đủ, chip, thứ hạng tay bài + PDF in được</div>
   </a>
   <a href="/vi/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
