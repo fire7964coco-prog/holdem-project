@@ -230,8 +230,8 @@
 | 0-2 | SERP 7레인 → `docs/keyword-bank/vi-serp/`(00-brief + L-A~L-G) · 본체 대조 · 새 후보 볼륨 일괄 측정 | 0-1 | ✅ 10-08 (6) · 7/7 + 커버리지 ✗ 0(00-brief 결과표 · 보완 = L-A §10 · L-B §10-3 · L-F §11) |
 | 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | ✅ 10-08 (6) 초안 → **10-09 사장님 판정 10건 채택(§3-D)** |
 | 0-4 | 착수 공지 MB · 레인 워크트리 · EN 기준 해시 · 번역 브리프 갱신 · 오염 표기 | 0-3 승인 | ✅ 10-09 (MB-207 · 워크트리 7 + HARDEN.md · 진행 파일 7 · index 칸 6 · lane-sync vi 7레인 · EN `b57cb658` · §5 치환표) |
-| 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | ▶ 사장님이 레인 창 6개를 열어 「HARDEN.md 읽고 A 시작해」 |
-| 2 | 🅶 GTO 13(랜딩은 별도 회차 · §3-D ⑧) | 1 머지(헤드 «시작» 신호) | |
+| 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | ✅ 10-09 — 6레인 C 마감 · `vi-integration` 머지(§4-A 기록) |
+| 2 | 🅶 GTO 13(랜딩은 별도 회차 · §3-D ⑧) | 1 머지(헤드 «시작» 신호) | ▶ 시작 신호 ✅ 10-09 — 사장님이 🅶 창에 「HARDEN.md 읽고 A 시작해」 |
 | 3 | 헤드 판정 → `/vi/glossary` 신설 → 배포 1회 → MB · IndexNow · 사장님 GSC 수동 색인 목록 | 2 | |
 
 - 모델·라쿠·통합 브랜치는 fr §4 끝 두 줄 + §4-A를 그대로 쓴다: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 교차 = 아스트라(§3-B · 레인 C마다 1종 상시 + 헤드 51편 1회) · 0-1·0-2를 본체에서 끝냈으니 레인은 라쿠·DFS가 필요 없다.
@@ -240,7 +240,7 @@
 
 - 🔴 **레인은 main이 아니라 `vi-integration`(폴더 `Holdem-vi-head` · 첫 레인 C가 끝날 때 헤드가 만든다)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(반쪽 vi + 끊긴 링크가 라이브). 배포 회차에 `vi-integration` → main 머지 1회.
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상). 🔴 `Holdem-vi-head`에 `.env.local` 복사(로컬 Supabase 클라이언트 오류 회피 · 정리 때 같이 삭제).
-- 머지 기록: (레인 C가 끝나는 대로 여기 적는다)
+- 머지 기록(10-09 · 통합 트리 `Holdem-vi-head`): ✅ 🅰 rules `9e78d88a` · ✅ 🅱 rank `1c8f80d6` · ✅ 🅲 prob `00d1317a` · ✅ 🅳 strat `5fb7f3e6` · ✅ 🅵 gloss `ccef36ff` · ✅ 🅴 tour `8a3f8538`(충돌 0 · vi 38편) · 게이트 오탐 2 수정 `7944acb1`(audit:hard 숫자 사이 쉼표·콜론 보존 → «N:1» 비대조 규칙 부활 · vi «hai đôi» 별칭 · 셀프테스트 84/84 · 15로케일 전후 = vi 🔴 2 → 0만 변화) · 통합 트리 audit vi 38/38 🔴 0 · check:structure vi 결손 0 · `npx next build` exit 0 · ▶ **🅶 시작 신호 ✅** (`harden-vi-gto` ← vi-integration ff `7944acb1` — 38편이 보인다 · HARDEN.md «/vi/solver 링크» 갱신)
 
 ### 4-C. 배포 회차 체크리스트 (🅶 머지 뒤 · fr §4-C 순서 + vi 전용 ①~③)
 

@@ -630,6 +630,48 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 범위: EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지).
 - 같은 MA 통지 2건(이행 불요): F1 리얼머니 4행 = OK(ANJ 관할) · 🪶 «18세 이상 · ANJ 인가 사이트» 한정은 권고 · 🅴 tour 5편 FR 회차 제외(51→46 · 제외 ≠ 사실 통과).
 
+### 2-AN. 우편함 수신분 — MA-387 (FR 🅵 gloss 6편 본부 재검증 · 승인 검수장 `4c6e6b3`) · 등재 2026-10-09 (11) · 미이행
+
+> 근거 = 검수장 `reports/검수-fr-r5-gloss-2026-10-09/hq-reverify/HQ-REPORT.md` §표 1~11 · `ledger/fr/holdem-{glossary,cooler,bad-beat,fish,rake,straddle}.md`. **문안 창작 아님 — 같은 글·형제의 기존 한정 문면을 재료로 원문 대조 뒤 채택/기각.** 이행 뒤 MB → 검수장이 변경 행만 전/후 대조.
+> ✅ **위치 대조(본체 10-09 · 현 main `ca90ac76`)**: 11자리 전부 ledger 축어로 실재 확인(아래 «현 위치»). EN 동문도 확인.
+
+**(a) FR 고유 4자리**(요청 1 · fr만)
+
+| # | 글 · ledger | 판정 · 문제 | 현 위치(fr) | 재료 |
+|---|---|---|---|---|
+| AN-1 | cooler #2 | WRONG · desc «Pourquoi ce n'est pas un bad beat» = 엄격 정의 한정 없이 배타(09-25 cooler 결재) | L7 desc | EN desc «why, **strictly**, it's not a bad beat» |
+| AN-2 | fish #89 | RISKY · 카드 «La mise qui gonfle le pot au profit du fish» = 팟 확대를 fish 이익으로 단정 | L235 카드 | 수혜자 단정 대신 팟 확대 설명(EN 해당 카드 대조) |
+| AN-3 | rake #89 | RISKY · FAQ «c'est tout le modèle économique d'une salle de poker, d'un casino ou d'un site» = 카지노 전체 사업으로 확대 | L169 FAQ | 같은 답의 «principale» 포커룸 주 수입 범위 |
+| AN-4 | straddle #85 | RISKY 높음 · FR 고유 FAQ «les deux joueurs à gauche du bouton» = 헤즈업 SB=버튼 예외 누락(TDA 2026 §36-C · WSOP B §157) | L190 FAQ | pt blind FAQ의 헤즈업 예외 이행 문면 |
+
+**(b) EN-먼저 7자리**(요청 2 · EN → 13로케일 → fr 포함)
+
+| # | 글 · ledger(fr) | 판정 · 문제 | fr 위치 | EN 동문 |
+|---|---|---|---|---|
+| AN-5 | glossary #139 | WRONG 높음 · Run it twice «cash-game only» ↔ WPT 2025 공식 라이브 토너먼트 규정 Run It Twice 허용 | L263 | L243 «— cash-game only, and everyone involved must agree» → 통상 캐시 관행으로 한정(특별 포맷을 일반 토너 자유 허용으로 확대 금지) |
+| AN-6 | bad-beat #43 | RISKY · 7 보드에서 77 «almost always» — 조건부 열거 77 승 80,8008% · AA 승 18,3311% · 무 0,8681% | L101 | L100 «their three-of-a-kind almost always beats your pair — only an ace or a rare runout … saves you» → 빈도 표현 검토(구제 목록 누락 지적은 기각) |
+| AN-7 | cooler #22 | RISKY · bad beat 역전을 턴·리버로 한정(같은 글 플랍 역전 예시와 충돌) | L62 | L53 «hit a lucky card on the turn or river» → id 현행 «플랍·턴·리버» 문면 재료 |
+| AN-8 | fish 새 #90 | RISKY · 요약 «stop chasing» = 드로 가격 조건 탈락(44리버 전수 · 팟 100에 5 콜 EV +15 반례) | L208 | L207 «play fewer hands, fold more, and stop chasing.» → 같은 글 L153·L195 «without a price / without the right pot odds» |
+| AN-9 | straddle #10 | RISKY · 표 요약 «Cash only» ↔ 같은 행 «Almost never allowed in tournaments» | L31 | L30 → 본문 범위 한정 보존 |
+| AN-10 | straddle #90 | RISKY · 카드 «cash-game-only thing» = 배타 | L225 | L216 «Why straddles are a cash-game-only thing» → 본문 «essentially» 범위 |
+| AN-11 | straddle #47 | RISKY · «Even in cash games it's optional» ↔ WSOP 2026 B §165·166 게시 의무형 | L115 | L114 → 일반 선택형 vs 게시된 의무형 구별 |
+
+- 범위: (b)는 EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지). (a)는 fr만.
+- 같은 MA 통지 3건(이행 불요): ① cap #24 · rake 순액 #104 · bad-beat #96 · setup FAQ 다의어 지적 기각 → 기존 OK ② 빈도·분포 UNV · 영화 대사 fish #40·41·70 UNV(2차 전사만 · 수정 요구 아님) ③ F1은 10-09 결재② — 라벨 불변 + 성인·합법 관할 한정 권고 🪶.
+
+### 2-AO. 우편함 수신분 — MA-392 (FR GTO13 경량 트랙 · 검수장 DECISIONS §0-N · 기준 `33b3e18a`) · 등재 2026-10-09 (11) · 미이행
+
+> 근거 = 검수장 `reports/검수-fr-gto13-경량-2026-10-09/REPORT.md`. EN 정정 39자리 FR 반영 37 + UNV형 2(결함 잔존 0). ✅ 위치 대조(본체 10-09 · 현 main): 3자리 전부 축어 실재.
+
+| # | 글 | 판정 · 문제 | 현 위치 | 재료 |
+|---|---|---|---|---|
+| AO-1 | **fr** ace-paired-board-strategy | RISKY 낮음 · FR 고유 · «L'as est la carte que l'agresseur préflop possède le plus» = EN «holds **more** of»(BB 대비)를 최상급으로 · SB 레인지 K 129 · Q 109 · A 95 | fr L107 | EN L199 비교급 |
+| AO-2 | **EN** 3bet-pot-bet-sizing → 13로케일 | RISKY 중간 · «those underpairs put the money in surrounded by two overcards» = 09-23 WRONG #13 잔존(JJ는 Q만 오버카드) | EN L229 · fr L115 «cernées par deux overcards» | 같은 글 EN L275 «except JJ, which sits between them» |
+| AO-3 | **EN** paired-board-strategy → 형제 로케일 확인 | RISKY 낮음 · note «lands within a tenth of a point» ↔ 반올림값 재계산 0,11pp · 0,17pp | EN L219 | fr L132 «à quelques dixièmes de point près»가 맞는 꼴(형제 로케일 각각 확인) |
+
+- 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
+- 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
