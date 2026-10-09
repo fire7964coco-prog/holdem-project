@@ -13,6 +13,11 @@ import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 //    기존 편(hand-rankings · tournament-vs-cash-game)은 재작업 레인의 칸 안으로 옮겨 두었다 — 파일만 다시 쓴다.
 // [vi-rank import 시작]
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
+import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 // [vi-rank import 끝]
 
 // [vi-prob import 시작]
@@ -49,6 +54,11 @@ export const VI_POSTS: Post[] = [
   // ── vi 클러스터 레인 배열 칸 — 자기 칸 사이에만 ──
   // [vi-rank 배열 시작]
   holdemHandRankings,
+  holdemFlushVsStraight,
+  holdemKicker,
+  holdemTiebreakRules,
+  holdemSplitPotRules,
+  holdemReadingTheBoard,
   // [vi-rank 배열 끝]
 
   // [vi-prob 배열 시작]
