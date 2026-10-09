@@ -659,6 +659,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 범위: (b)는 EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지). (a)는 fr만.
 - 같은 MA 통지 3건(이행 불요): ① cap #24 · rake 순액 #104 · bad-beat #96 · setup FAQ 다의어 지적 기각 → 기존 OK ② 빈도·분포 UNV · 영화 대사 fish #40·41·70 UNV(2차 전사만 · 수정 요구 아님) ③ F1은 10-09 결재② — 라벨 불변 + 성인·합법 관할 한정 권고 🪶.
 
+### 2-AO. 우편함 수신분 — MA-392 (FR GTO13 경량 트랙 · 검수장 DECISIONS §0-N · 기준 `33b3e18a`) · 등재 2026-10-09 (11) · 미이행
+
+> 근거 = 검수장 `reports/검수-fr-gto13-경량-2026-10-09/REPORT.md`. EN 정정 39자리 FR 반영 37 + UNV형 2(결함 잔존 0). ✅ 위치 대조(본체 10-09 · 현 main): 3자리 전부 축어 실재.
+
+| # | 글 | 판정 · 문제 | 현 위치 | 재료 |
+|---|---|---|---|---|
+| AO-1 | **fr** ace-paired-board-strategy | RISKY 낮음 · FR 고유 · «L'as est la carte que l'agresseur préflop possède le plus» = EN «holds **more** of»(BB 대비)를 최상급으로 · SB 레인지 K 129 · Q 109 · A 95 | fr L107 | EN L199 비교급 |
+| AO-2 | **EN** 3bet-pot-bet-sizing → 13로케일 | RISKY 중간 · «those underpairs put the money in surrounded by two overcards» = 09-23 WRONG #13 잔존(JJ는 Q만 오버카드) | EN L229 · fr L115 «cernées par deux overcards» | 같은 글 EN L275 «except JJ, which sits between them» |
+| AO-3 | **EN** paired-board-strategy → 형제 로케일 확인 | RISKY 낮음 · note «lands within a tenth of a point» ↔ 반올림값 재계산 0,11pp · 0,17pp | EN L219 | fr L132 «à quelques dixièmes de point près»가 맞는 꼴(형제 로케일 각각 확인) |
+
+- 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
+- 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
