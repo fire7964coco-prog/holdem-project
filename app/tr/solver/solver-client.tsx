@@ -5,8 +5,8 @@ import { SOLVER_FAQ_TR } from "./faq";
 
 /**
  * ★CTA는 `?lang=tr`로 보낸다. 🔴 솔버 앱의 터키어 UI는 아직 라이브가 아니다(솔버 쪽 배포 대기) —
- *   그 전까지는 영어 화면이 뜬다. 그래서 이 페이지의 앱 라벨(OOP Range · Run Solver · Study Spots ·
- *   스팟 이름 등)은 **영어 축어**로 두고, FAQ «Solver ekranı Türkçe mi?»에서 정직하게 답한다.
+ *   2026-10-09 솔버 tr 라이브(S-049). 이 페이지의 앱 라벨(OOP range · Hesapla · Örnek spotlar ·
+ *   스팟·그룹 이름)은 **라이브 `?lang=tr` 터키어 축어**다(10-09 Playwright 대조 · presets titleTr/categoryTr).
  *   UTM은 붙이지 않는다(기존 관례).
  */
 const SOLVER_URL = "https://solver.holdemmaster.com/?lang=tr";
@@ -33,7 +33,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=tr";
 const SPEC: [string, string][] = [
   ["Fiyat", "Ücretsiz — tüm özellikler, kullanım limiti yok"],
   ["Kurulum", "Yok — tarayıcıda çalışır (WebAssembly)"],
-  ["Hesap", "Gerekmez (giriş yaparsan Study Spots ve Daily Challenge geçmişin eşitlenir · kendi çözdüğün spotlar ve onların pratik geçmişi bu cihazda kalır)"],
+  ["Hesap", "Gerekmez (giriş yaparsan Örnek spotlar ve Günün sorusu geçmişin eşitlenir · kendi çözdüğün spotlar ve onların pratik geçmişi bu cihazda kalır)"],
   ["Kapsam", "Postflop, heads-up (flop, turn, river)"],
   ["Hesaplama nerede yapılır", "Sunucuda değil, kendi işlemcinde (CPU)"],
   ["Platformlar", "Her modern tarayıcı — Windows, macOS, Linux, mobil"],
@@ -47,13 +47,13 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Out, pot oranı, SPR ya da ICM hesaplamak", "Poker hesaplayıcı", "/tr/calculator"],
 ];
 
-/** 사용법 — 앱 사이드바 탭 라벨(영어 축어)을 그대로 쓴다. */
+/** 사용법 — 앱 사이드바 단계 라벨(라이브 tr 축어)을 그대로 쓴다. */
 const STEPS = [
-  { n: "①", title: "OOP Range", desc: "Pozisyon dışındaki oyuncunun preflop range'ini 13×13 grid üzerinde boya ya da yaz: 22+, A2s+, KTo+. Grid'de köşegen pocket çiftlerdir, sağ üst suited, sol alt offsuit eller." },
-  { n: "②", title: "IP Range", desc: "Aynısını pozisyondaki oyuncu için yap. En hızlı başlangıç, iki range'i sıfırdan kurmak yerine bir çalışma spotu yükleyip range'lerini düzenlemektir." },
-  { n: "③", title: "Board", desc: "Üç flop kartına tıkla ya da Random Flop'a bas. Belirli bir runout'u çalışmak istersen turn ve river'ı da sabitleyebilirsin." },
-  { n: "④", title: "Bet Sizes", desc: "Başlangıç potunu, efektif stack'i ve her street için bet ve raise boyutlarını ayarla. İlk çözümünde varsayılanları bırak, sadece pot ve stack'i kontrol et." },
-  { n: "⑤", title: "Run Solver", desc: "Ağacı kur, sonra çalıştır. Çözüm kendi makinende saniyelerle dakikalar arasında sürer; bitince Results sekmesini aç." },
+  { n: "①", title: "OOP range", desc: "Pozisyon dışındaki oyuncunun preflop range'ini 13×13 grid üzerinde boya ya da yaz: 22+, A2s+, KTo+. Grid'de köşegen pocket çiftlerdir, sağ üst suited, sol alt offsuit eller." },
+  { n: "②", title: "IP range", desc: "Aynısını pozisyondaki oyuncu için yap. En hızlı başlangıç, iki range'i sıfırdan kurmak yerine bir çalışma spotu yükleyip range'lerini düzenlemektir." },
+  { n: "③", title: "Board", desc: "Üç flop kartına tıkla ya da Rastgele flop'a bas. Belirli bir runout'u çalışmak istersen turn ve river'ı da sabitleyebilirsin." },
+  { n: "④", title: "Bet boyutu", desc: "Başlangıç potunu, efektif stack'i ve her street için bet ve raise boyutlarını ayarla. İlk çözümünde varsayılanları bırak, sadece pot ve stack'i kontrol et." },
+  { n: "⑤", title: "Hesapla", desc: "Ağacı kur, sonra çalıştır. Çözüm kendi makinende saniyelerle dakikalar arasında sürer; bitince Sonuçlar sekmesini aç." },
 ];
 
 /** 앱 「How to Use」가 초심자에게 그대로 복사해 쓰라고 주는 레인지(축어). */
@@ -103,7 +103,7 @@ const COMPARE: string[][] = [
 ];
 
 /**
- * 교육 예제 — 그룹·스팟 이름은 앱 화면(현재 영어) 축어, 해설(note)은 터키어.
+ * 교육 예제 — 그룹·스팟 이름은 앱 화면 터키어 축어(라이브 ?lang=tr · presets categoryTr/titleTr), 해설(note)은 터키어.
  * 🔴 개수를 문장에 박지 않는다 — 아래 배열에서 센다.
  * 🪶 `slug`는 **tr에 발행된 해설 글만** 채운다(2026-10-06 기준 4편). 나머지는 이름·요약만 —
  *    없는 링크를 미리 걸지 않는다(404는 색인에 남는다). tr판이 발행되면 그 행에 `slug`를 채운다.
@@ -112,34 +112,34 @@ const COMPARE: string[][] = [
  */
 const SPOT_GROUPS = [
   {
-    label: "Single Raised Pot — BTN vs BB",
+    label: "Single raised pot — BTN vs BB (temeller)",
     cond: "OOP: BB (call eden) · IP: BTN (açan) · Pot 5,5bb · Stack 97,5bb",
     items: [
-      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Dry Ace-High Board", note: "Ders kitabındaki range avantajı flop'u — as, açan oyuncunun range'ine tam oturur" },
-      { board: "K♠8♦3♣", name: "Dry King-High Board", note: "Yine açanı destekler ama check'ler artar. As'lı board'la karşılaştır" },
-      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Connected Broadway, Two-Tone", note: "İki range'e de oturuyor gibi görünür ama BB, serideki tüm spotlar içinde en az equity'yi burada gerçekleştirir — BTN'nin %119,4'üne karşı %77,9 — ve %99,9 check eder" },
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", note: "BB'nin gerçekten önden oynadığı tek single raised board: %23,7 oranında ilk bahsi o yapar (range avantajı yine BTN'de — BB'nin %48,5 equity'sine karşı %51,5)" },
-      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Monotone Board", note: "Büyük bahisler yerini küçük bahislere ve check'e bırakır — hazır floşlar bile sık sık check eder" },
-      { board: "6♣6♦3♥", name: "Paired Board", note: "Kimse board'a bağlanmaz, bu yüzden blöf payı artar" },
-      { board: "6♠5♥2♦", name: "Low Rainbow Board", note: "Bir overcard savaşı — check-raise tasarlama spotu: ekranda BB'nin ilk aksiyonu %96,8 check, %3,2 bet" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Kuru A-high board", note: "Ders kitabındaki range avantajı flop'u — as, açan oyuncunun range'ine tam oturur" },
+      { board: "K♠8♦3♣", name: "Kuru K-high board", note: "Yine açanı destekler ama check'ler artar. As'lı board'la karşılaştır" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Bağlantılı broadway board, iki renkli", note: "İki range'e de oturuyor gibi görünür ama BB, serideki tüm spotlar içinde en az equity'yi burada gerçekleştirir — BTN'nin %119,4'üne karşı %77,9 — ve %99,9 check eder" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Bağlantılı orta board, iki renkli", note: "BB'nin gerçekten önden oynadığı tek single raised board: %23,7 oranında ilk bahsi o yapar (range avantajı yine BTN'de — BB'nin %48,5 equity'sine karşı %51,5)" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Monoton board (hepsi aynı renk)", note: "Büyük bahisler yerini küçük bahislere ve check'e bırakır — hazır floşlar bile sık sık check eder" },
+      { board: "6♣6♦3♥", name: "Çiftli board", note: "Kimse board'a bağlanmaz, bu yüzden blöf payı artar" },
+      { board: "6♠5♥2♦", name: "Düşük rainbow board", note: "Bir overcard savaşı — check-raise tasarlama spotu: ekranda BB'nin ilk aksiyonu %96,8 check, %3,2 bet" },
     ],
   },
   {
-    label: "3-Bet Pot — BB 3-bets, BTN calls",
+    label: "3-bet pot — BB 3-bet yapar, BTN call eder (düşük SPR)",
     cond: "OOP: BB (3-bet yapan) · IP: BTN (call eden) · Pot 22,5bb · Stack 89bb · SPR ≈ 4,0",
     items: [
-      { board: "A♦K♠2♥", name: "Ace-High Board, 3-Bettor's Edge", note: "3-bet range'inin görebileceği en iyi flop — AK, AA ve KK ile dolu. Küçük bir bahsin rakibin tüm range'ine baskı kurmasını sağlayan düşük SPR değil, o range'in şeklidir" },
-      { board: "Q♥T♥7♠", name: "Dynamic Two-Tone Board", note: "İki canlı draw — range'in %98,4'ü aynı boyutla, potun üçte ikisi kadar bahis yapar" },
-      { board: "8♦5♣2♠", name: "Low Dry Board", note: "3-bet range'i burada hiç top pair yapmaz — sadece gutshot'lar ve backdoor'lar — ama overpair'ler baskıyı sürdürür" },
+      { board: "A♦K♠2♥", name: "A-high board, 3-bet yapanın avantajı", note: "3-bet range'inin görebileceği en iyi flop — AK, AA ve KK ile dolu. Küçük bir bahsin rakibin tüm range'ine baskı kurmasını sağlayan düşük SPR değil, o range'in şeklidir" },
+      { board: "Q♥T♥7♠", name: "Dinamik iki renkli board", note: "İki canlı draw — range'in %98,4'ü aynı boyutla, potun üçte ikisi kadar bahis yapar" },
+      { board: "8♦5♣2♠", name: "Düşük kuru board", note: "3-bet range'i burada hiç top pair yapmaz — sadece gutshot'lar ve backdoor'lar — ama overpair'ler baskıyı sürdürür" },
     ],
   },
   {
-    label: "Blind vs Blind — SB vs BB",
+    label: "Blind vs blind — SB vs BB (geniş range'ler)",
     cond: "OOP: SB (açan) · IP: BB (call eden) · Pot 6bb · Stack 97bb",
     items: [
-      { board: "K♥T♦6♠", name: "King-Ten-High Board", note: "Range'ler geniş olduğu için iki oyuncu da zayıf — BTN versiyonuyla karşılaştır" },
-      { board: "7♦6♦5♣", name: "Low Connected, Two-Tone", note: "Aşırı bağlantılı bir board'da iki geniş range: her yerde iki çift ve draw" },
-      { board: "A♠A♥6♦", name: "Ace-Paired Board", note: "Burada üçlü (trips) nadir değil — SB'de sadece daha fazlası var (BB'nin 66 kombosuna karşı 88 kombo); SB'nin %80,1 bahis yapmasının sebebi bu" },
+      { board: "K♥T♦6♠", name: "K-high, T'li board", note: "Range'ler geniş olduğu için iki oyuncu da zayıf — BTN versiyonuyla karşılaştır" },
+      { board: "7♦6♦5♣", name: "Bağlantılı düşük board, iki renkli", note: "Aşırı bağlantılı bir board'da iki geniş range: her yerde iki çift ve draw" },
+      { board: "A♠A♥6♦", name: "As çiftli board", note: "Burada üçlü (trips) nadir değil — SB'de sadece daha fazlası var (BB'nin 66 kombosuna karşı 88 kombo); SB'nin %80,1 bahis yapmasının sebebi bu" },
     ],
   },
 ];
@@ -448,7 +448,7 @@ export default function SolverClientTr() {
           <li className="text-muted-foreground">
             Seriler, zayıf spot dökümleri ve EV kaybettiğin elleri toplayan{" "}
             <strong className="text-foreground">Review</strong> kuyruğu pratik geçmişinle çalışır. Giriş
-            yapmak Study Spots ve Daily Challenge geçmişini cihazlar arasında eşitler; Daily Challenge gün serisi ve tamamlandı işareti her
+            yapmak Örnek spotlar ve Günün sorusu geçmişini cihazlar arasında eşitler; Günün sorusu gün serisi ve tamamlandı işareti her
             cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi, giriş yapsan bile bu cihazda kalır
           </li>
         </ul>
@@ -457,7 +457,7 @@ export default function SolverClientTr() {
         </div>
       </section>
 
-      {/* ── 교육 예제 (그룹·스팟 이름 = 앱 화면 영어 축어) ────────────── */}
+      {/* ── 교육 예제 (그룹·스팟 이름 = 앱 화면 터키어 축어) ────────────── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">
           Anında açabileceğin {SPOT_TOTAL} çözülmüş çalışma spotu
@@ -466,8 +466,8 @@ export default function SolverClientTr() {
           Aşağıdaki her spot zaten çözülmüş, yani açtığın anda strateji görünür — bekleme yok, ayar yok.
           Range&apos;ler standart 100bb online oyunu yaklaşık olarak yansıtır; birini yükle, bir range&apos;i
           değiştir ve neyin kaydığını görmek için yeniden çöz. Board dokusunun stratejiyi nasıl yeniden
-          yazdığına dair sezgi kazanmanın en hızlı yolu bu. Grup ve spot adlarını, uygulama ekranında
-          göreceğin gibi İngilizce bıraktık.
+          yazdığına dair sezgi kazanmanın en hızlı yolu bu. Grup ve spot adları, uygulama ekranında
+          göreceğin Türkçe hâlleriyle birebir aynı.
         </p>
         {SPOT_GROUPS.map((g) => (
           <div key={g.label} className="mt-5">

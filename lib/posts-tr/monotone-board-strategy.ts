@@ -188,7 +188,7 @@ Big blind'ın equity payı ==5,5 × %47,7 = 2,62bb==, gerçekleşen ise 2,37bb; 
 
 ## Kendin kontrol et
 
-[Ücretsiz GTO solver'ı](/tr/solver) aç, **Study Spots → Monotone Board → [⚡ View results]** yolunu izle.
+[Ücretsiz GTO solver'ı](/tr/solver) aç, **Örnek spotlar → Monoton board (hepsi aynı renk) → [⚡ Sonuçları gör]** yolunu izle.
 
 Bu spotta en alttaki el bazlı tablo dersin ta kendisi — **sonuna kadar kaydır.** A♠J♠ ile A♠4♠'nin check sıklığında neden 30 puan ayrıştığını ve aynı kızın maçayla gelip gelmemesine göre nasıl iki farklı ele bölündüğünü orada okuyabilirsin.
 

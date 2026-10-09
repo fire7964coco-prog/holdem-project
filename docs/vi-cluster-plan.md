@@ -37,7 +37,7 @@
 | ⑥ | 카피는 레인 A 브리프에서 확정 | B·C는 카피 불변 |
 | ⑦ | 착수 공지 MB에 «vi는 배포 해시로 한 번에» | 0-4 |
 | ⑧ | 기존 vi 8편 = 이번 파이프라인 안 | 🅰 6 + 🅱 1 + 🅴 1 |
-| ⑨ | 솔버 앱 vi 축어 | 🅶 레인 A 전에 앱 라이브 vi 축어(솔버 vi 배포 후) — 미배포면 🅶은 영어 앱 라벨 축어로 쓰고 배포 뒤 한 줄 교체 |
+| ⑨ | 솔버 앱 vi 축어 | ✅ **솔버 vi 라이브(S-049 · 2026-10-09)** — 🅶 레인 A 전에 앱 라이브 `?lang=vi` 축어 재추출(§5 «🅶 A 앞» 행) · 영어 라벨 대체 경로는 폐기 |
 | 🆕 ⑩ | **vi 오염 판정** | 0-1에서 «X là gì»·족보 이름 볼륨 다수가 포커 밖(과일·로비·속어·Tiến lên). 0-2 0단계에서 SERP 포커 결과 수로 판정하고, 오염 헤드는 카피에 쓰지 않는다 |
 | 🆕 ⑪ | **다른 게임 혼동** | 베트남 «poker 5 lá·xì tố·mậu binh·tiến lên» 족보 용어(sảnh rồng 등)를 홀덤 족보 번역어로 들여오지 않는다 — 0-3 용어 정본에서 확정 |
 
@@ -194,7 +194,7 @@
 - 🅰 beginners: «Poker 2 lá (Texas Hold'em)와 5 lá·xì tố의 차이» 1문단(AC 변종 다수 · §3-A ②) · «phỉnh (chip)» 1회.
 - 🅰 betting-actions: 액션 4종 H2를 «X trong poker là gì» 축어로(«Check trong poker là gì?» · «"Call" trong poker có nghĩa là gì?» · «Raise trong poker là gì — min-raise tính thế nào?» · «Fold poker là gì?») — L-A §10-3 PAA.
 - 🅱 hand-rankings: «Thùng phá sảnh là gì — khác thùng phá sảnh hoàng gia ở đâu?» H2 + «Thùng phá sảnh có lớn hơn tứ quý không?» FAQ(20) · «sảnh rồng» 별칭 1회(헤드 금지).
-- 🅶: 솔버 vi 앱 라벨 = 배포본 축어(S-043 판정 요청 중 · 배포 전이면 영어 라벨 + 배포 뒤 한 줄 교체 · §2-⑨).
+- 🅶: 솔버 vi 앱 라벨 = 라이브 `?lang=vi` 축어(✅ 2026-10-09 배포 · S-049 · S-043 판정은 검수장 진행 중 — 판정 뒤 라벨이 바뀌면 헤드가 한 줄 교체 · §2-⑨).
 - ✅ 0-4에서 끝낸 것(10-09): `docs/translation-terms-vi.md`를 §3-A에 맞춰 갱신(«Sảnh Thượng»·«mù nhỏ/mù lớn»·«tố» 권고 → §3-A 포인터) · `vi-core-volumes.md` §2 글별 표에 «오염» 표기.
 - 🪶 범위 밖(자동 착수 금지): 계산기 사전 «street»·«Xếp hạng bài»·«mức bet»(도구 사전 — 손대지 않음 · 배포 회차 뒤 별도).
 
@@ -274,4 +274,4 @@
 | §6-③ 네이티브 렌즈 페르소나 | 호찌민 클럽 레귤러(Natural8·GGPoker vi 용어 · 영어 차용어 구어 · 「이 문장을 테이블에서 쓰나」) · 출판 교정자(bạn/tôi 일관 · 성조 부호 · 조판 §3-A ②) · 지방 초심자(영어 차용어가 막는 자리 → 첫 등장 풀이가 있나 · Tiến lên 용어로 오독하지 않나) · **아스트라 교차 1종**(§3-B · 스크래치 사본 · 네이티브 자연스러움 + §13 독립 검산) |
 | §6-⑥ 커밋 | `git add lib/posts-vi/<내 슬러그>.ts lib/posts-vi/index.ts docs/vi-lanes/<id>-*` · 메시지 «vi(<id>): …» |
 | §7 헤드 | 머지 대상 = `vi-integration`(§4-A) · 배포는 🅰~🅶 전부 뒤 1회 · 🅶은 🅰~🅵 머지 뒤 헤드 «시작» 신호 |
-| 🅶 A 앞 | §2-⑨: 솔버 vi가 **배포됐으면** 앱 라이브 `?lang=vi` 축어 재추출 → `docs/solver-app-verbatim-vi-<날짜>.md` · **미배포면(S-043 판정 중 · 10-09 기준 배포·push 전)** 영어 앱 라벨 축어로 쓰고 진행 파일 «미결»에 교체 자리 목록 → 배포 뒤 헤드가 한 줄 교체 |
+| 🅶 A 앞 | §2-⑨: 솔버 vi ✅ **배포됨(2026-10-09 · S-049)** → 앱 라이브 `?lang=vi` 축어 재추출 → `docs/solver-app-verbatim-vi-<날짜>.md`(Playwright로 사이드바·단계·예제 스팟 목록·결과 화면 라벨 · tr 선례 = 10-09 (4) 추출 방식). S-043 판정으로 라벨이 바뀌면 헤드가 한 줄 교체 |

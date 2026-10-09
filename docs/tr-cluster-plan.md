@@ -117,7 +117,7 @@
 - c-bet ① A-high 문단(%98,2) 재저작해 엶(`locale-intentional-diffs` 10-06 행) · ⑨는 계속 미전파.
 - 게이트: `check:gto`에 tr 정규화 추가(앞붙임 % + 소수 콤마 · 셀프테스트 41/41) → tr 4편 일치 27 · 🔴 1 = broadway FAQ «23.7»(EN에도 같은 🔴 — ko에 그 문장이 없는 기존 ko↔EN 차이 · tr 결함 아님). audit:hard tr 🔴 0 · 빌드 exit 0(74 + 641) · hreflang 0 · 화면 390·1440 넘침 0.
 - 검수: 렌즈 B(§13·수치·앵커) 결함 0 · 렌즈 A 18건 → 63자리 반영(의미 2 = donk «yükseltme»→raise 오독 · broadway 레이즈 주체 반전) · 아스트라(글) 신규 채택 9(a-high «kaybetmeden»→«kazanamadan» 반전 등) · 기각 = 영어 용어 뒤 아포스트로피 제거 · «kicker yuvası»(코퍼스 tiebreak 용어) · 랜딩 렌즈 9건 전부 + 아스트라(랜딩) 신규 4 채택 · «dâhil»·아포스트로피 기각(코퍼스 관습).
-- 🔴 **솔버 tr 배포(S-행 재통지) 때 같이 고칠 것**: `app/tr/solver/faq.ts` «Solver ekranı Türkçe mi?» 문항 · solver-client «Grup ve spot adlarını … İngilizce bıraktık» 문장 · 스팟·그룹 이름(앱 tr 축어로) · 글 4편의 영어 앱 라벨(«Study Spots → …» · «uygulama arayüzü şimdilik İngilizce» 괄호 — a-high).
+- ✅ **솔버 tr 라이브(S-049 · 2026-10-09) 반영 = 10-09 (4) · MB-210**: `app/tr/solver/faq.ts` «Solver ekranı Türkçe mi?» → «Evet» · solver-client «İngilizce bıraktık» 문장 → «Türkçe hâlleriyle birebir aynı» · 스팟 13·그룹 3 이름 = 앱 presets titleTr/categoryTr(라이브 `?lang=tr` Playwright 대조 일치) · 단계 라벨 «OOP range · IP range · Board · Bet boyutu · Hesapla» · «Study Spots → Örnek spotlar» · «Daily Challenge → Günün sorusu» · «Custom Spot → Özel spot» · «Results → Sonuçlar» · «Random Flop → Rastgele flop» · 글 4편 «Örnek spotlar → <titleTr> → [⚡ Sonuçları gör]» · a-high «Bet 1,8bb (%33 pot)» + 괄호 삭제. 결과 화면의 Check·Bet·EQ·EV (bb)·EQR은 앱도 그대로라 불변.
 - 🪶 남긴 것(자동 착수 금지): ① check:gto:structure tr = 링크 수 EN > tr · -en 이미지 = 의도(위 링크 처리) ② «İki Çift» 대소문자(donk 표) vs 소문자 — §4-3 ② 코퍼스 통일 회차 ③ 글 4편 rake·검증일 표기는 4편 안에서만 통일 ④ monotone FAQ «nut floşa karşı» 한정은 tr에만 넣음(EN 242행도 같은 조건 누락 — EN 정정은 queue 판단).
 
 ## 5. 지킬 것
