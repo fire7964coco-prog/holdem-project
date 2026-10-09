@@ -283,7 +283,7 @@ A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — com 
 
 **Q. Como a posição afeta a frequência de c-bet?**
 
-A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos leaks mais comuns e mais caros.
+A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é bem mais seguro do que out of position (esse número é contra defesa de blinds; um check-raise ainda pode punir). Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos leaks mais comuns e mais caros.
 
 **Q. Você deveria sempre dar 3-bet do small blind?**
 
