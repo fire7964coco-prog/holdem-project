@@ -578,7 +578,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AJ-1 | equity | desc «c'est ta part du pot, pas ce que tu encaisses» (RISKY · 무한정 부정 ↔ 같은 글 L140 «tu réalises 100 % de ton équité» 올인) | «c'est ta part du pot — mais tu ne l'encaisses pas toujours» (EN desc 꼴 · 나머지 문면 그대로) |
 
 - 🪶 통지 7(FR 라벨 불변 · 자동 착수 금지): **EN 동문 → EN-먼저 후보** ① probability FAQ L271 «La paire, suivie de la double paire»(전원 쇼다운 MC 기준 2인만 원페어 1위 · 3인부터 투페어 · 실제 팟 분포 1차 없음 → 8로케일 UNV · «tête-à-tête» 한정 후보) ② equity 카드 L131 «Des stacks plus profonds … rendent l'équité marginale plus difficile à réaliser»(Upswing: SPR↑ → IP 실현↑ · OOP 반대 · 8로케일 UNV) ③ drawing-odds tldr·À retenir L243 «Chaque chiffre … du paquet» ↔ 같은 글 «vise à gagner 15×»(경험칙 표지 없음) ④ outs tip L139 «mise devant toi → ×2» ↔ 바로 앞 «payé un tapis»(올인 콜이면 ×4 유효) ⑦ drawing-odds H2 L37 «préflop, flop, turn, river dans un seul tableau»(turn 단독 열 없음). **fr 단독 경미** ⑤ probability FR 고유 FAQ L287 «plus basses, et donc moins rares»(7장 개별 SF 4 140 < 로열 4 324 · «donc» 인과 — 묶음으로는 더 흔함) ⑥ card-counting desc L7 «L'interdit en salle»(EN «whether it's legal» → 금지 전제) = §2-AG (b)와 같은 손질 회차에.
-- 검수장 처분(참고): 재라벨 4 · 신설 4 · 근거 칸 산수 정정 3 · 병합 `b727ef5`. 다음 회차 = FR 🅳(= MA-374 · 10-09 수신 · 별도 절).
+- 검수장 처분(참고): 재라벨 4 · 신설 4 · 근거 칸 산수 정정 3 · 병합 `b727ef5`. 다음 회차 = FR 🅳(= MA-374 · §2-AK).
+
+### 2-AK. 우편함 수신분 — MA-374 (FR 🅳 strat 8편 · 기준 `ceed9c0d`) · 판정·이행 2026-10-09 (3)
+
+> 근거 = 검수장 `reports/검수-fr-r4-strat-2026-10-08/hq-reverify/HQ-REPORT.md`(1 067행 · OK 669 · RISKY 7 · WRONG 0 · UNV 391 · 수치 오류 0). 본체 판정 = 인용 문면 전부 fr·EN 파일에서 실재 확인 · EN 09-26 L-2h «rather than open-limp» 이행(EN tldr L8·결정표 L48·요약 L244) 대조 · 같은 글 fr 요약 L248 «compléter la petite blinde … est l'exception» + limping L86·L168 «over-limp … défendable»와의 모순 확인. **요청 1~3 전부 채택·이행**(기각 0). 요청 3은 EN-먼저라 EN → 핵심 8로케일 + fr 전파(ar은 position-play 없음 · 기존 §2-Y 전파 범위 = de·es·id·ja·ms·pt·zh·zh-hant). `updated` 스탬프 전부 유지(문장 미세 수정 · settled §1-C).
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| AK-1 | fr strategy | tldr «plutôt que de limper» · 요약 L40 «(plutôt que limper)» · 결정표 L52 «plutôt que limper ?» (RISKY 3 · limp 전체 배제) | «plutôt que d'open-limper» / «(plutôt qu'open-limper)» / «plutôt que d'open-limper ?» (EN L-2h 꼴 · fr limping 글의 «open-limper» 동사형 재사용) |
+| AK-2 | fr limping | desc «est presque toujours une erreur» (RISKY · EN «usually» 강화) | «est le plus souvent une erreur» (EN desc 꼴 · 157자) |
+| AK-3 | fr position-play | L232 «le jeu se réduit au push/fold» (RISKY · EN «collapses toward» → 배타 단정 · pt 옛 WRONG 선례) | «le jeu bascule vers le push/fold» |
+| AK-4 | **EN** position-play + 8로케일 + fr | FAQ c-bet «so wide betting including air is safe» (RISKY · 체크레이즈 = OOP 무기 · 표는 «vs blind defense» 한정) | EN «so betting wide, air included, is far safer there than out of position (that figure is versus blind defenders; a check-raise can still punish it).» → fr·de·es·id·ja·ms·pt·zh·zh-hant 같은 뜻으로 각 1자리(치환 10/10 · 각 파일 1회) |
+
+- ⚖ strategy 실수 표 L156 «Un call … il doit toucher ou arriver devant à l'abattage» = FR RISKY ↔ JA OK · EN 원장 앞 절만 → **검수장 사용자 결재 대기**(MA-368 형제 갈림 6자리와 같은 부류) — 결재 뒤 요청 오면 이행(그 전 착수 금지).
+- 🪶 통지 7(FR 라벨 불변 · 자동 착수 금지): **EN 동문 → EN-먼저 후보** ① when-to-fold À retenir L250 «quand tu es battu, ça bat toutes les alternatives négatives»(본문 «sans la cote … ni la fold equity» 한정 탈락 · 본부 OK) ② strategy FAQ L220 «plus d'environ une main sur cinq … presque certainement trop»(6-max VPIP 20–30 % · 포맷 한정 후보) ③ position-play À retenir «la SB est le pire siège»(헤즈업 SB = 버튼 · FAQ L261 «trois joueurs ou plus» 한정 탈락) ④ starting-hands-chart FAQ 7-2 «uniquement pour pimenter les home games»(EN «purely» · 카지노 캐시 바운티 사례). **fr 용어** ⑤ 3bet L287 «fréquence de fold d'équilibre»(EN «break-even» → «균형 빈도»로 읽힘 · «seuil de rentabilité» 후보) ⑥ limping FR 고유 FAQ L152 «connecteurs assortis … set-mining»(set-mining은 페어 전용 용어) ⑦ positions H2 L163 «6-max, 8-max, 9-max» ↔ 표에 8인 행 없음(FR 고유 추가 · 8-max 삭제 또는 행 추가). ⑤⑥⑦은 fr 단독이라 §2-AG (b) 손질 회차에.
+- 검수장 처분(참고): 라벨 이동 14 · 신설 10 · 병합 `df33ff3`. 다음 회차 = FR 🅴 tour(검수장 사용자 결정 대기) · 결재 2건(위 ⚖ + MA-368 형제 갈림).
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

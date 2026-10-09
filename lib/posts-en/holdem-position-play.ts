@@ -282,7 +282,7 @@ A. From UTG in a full ring game, open roughly the top ~13% of hands — built ar
 
 **Q. How does position affect c-bet frequency?**
 
-A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop on the boards we ran). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
+A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so betting wide, air included, is far safer there than out of position (that figure is versus blind defenders; a check-raise can still punish it). Out of position in a single-raised pot that drops to roughly 30–45%, because a raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop on the boards we ran). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
 
 **Q. Should you always 3-bet from the small blind?**
 
