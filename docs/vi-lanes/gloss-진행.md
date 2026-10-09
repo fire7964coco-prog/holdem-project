@@ -5,19 +5,21 @@
 
 > 🔴 `/vi/glossary` 도구가 **배포 회차에 같이 신설된다**(§3-D ①) → holdem-glossary는 처음부터 seoTitle·H1·tags에 «thuật ngữ poker»를 쓰지 않고 «X trong poker là gì — 영→베 대응 + 쓰이는 자리» 각도 + 첫 화면 도구 링크(앵커 «thuật ngữ poker» · 링크 `/vi/glossary`). rake 합법성 FAQ → 운영 질문으로(세율·법령 안 씀 · §12-B) · tilt H2는 bad-beat(⑱) · bad beat jackpot = 구조만(⑲) · 단독 «X là gì» 전부 오염 → 조준어 «X poker là gì / X trong poker là gì».
 
-## 상태 — A ✅ (10-09 · 브리프 `docs/vi-lanes/gloss-brief.md` · Fable 카피 1회 → Opus 재측정·수정 6자리) / B ☐ / C ☐ · 커밋 —
+## 상태 — A ✅ (10-09 · 브리프 `docs/vi-lanes/gloss-brief.md` · Fable 카피 1회 → Opus 재측정·수정 6자리) / B ✅ (10-09 · 집필 6편 · 자기 게이트 🔴 0) / C ☐ · 커밋 —
+
+B 산출(2026-10-09 · 🔴 모델 = Fable 5.1 — HARDEN은 Opus 5.5 지정이나 사장님 지시 «B 시작»으로 그대로 진행 · C에서 렌즈·아스트라 교차로 보강): `git merge main` ✅ · 6편 `lib/posts-vi/<slug>.ts` 신규 · `index.ts` vi-gloss 칸 두 곳 등록 · 브리프 확정 카피 축어(seoTitle·desc·H1·tldr·tags·H2·FAQ 문항 전부) · 구조 EN 1:1(표 행 115+현지 11 · 박스·이미지·디렉티브·== 색 동일) · 현지 추가 = glossary H2 #3 영→베 표 11행 + FAQ 9~11 + 링크 6(`/vi/glossary` 1 · reading-the-board 2 · bad-beat 1 · strategy 1 · 3bet 1) · bad-beat `/vi/calculator` 앵커 «máy tính equity» 1 넣음(선택 → C 확인 대상) · rake FAQ 8 «Tại sao phòng poker thu rake?» 교체(Molly's Game·합법성 0) · §13 값·카드 EN 축어(구분자만 §1-B). 자기 게이트: `audit:hard --locale=vi` 6편 전부 🔴 0 🟠 0(커버리지 ⚠ bad-beat·cooler 카드 문단 2씩 미판정 → C 손검산) · `check:intl-links` = 대상 미번역 경고만(다른 레인 몫 · 정상) · `check:structure --tail` = 내 6편 결손 0(vi 결손 4편은 기존 8편 = 🅰·🅱·🅴 몫) · `npx next build` exit 0 · `/vi/blog/` 14편 HTML(6편 생성 확인) · sitemap·tsbuildinfo 복구.
 
 A 산출(2026-10-09): `git merge main` ✅(b5a0a6ca) · EN 6편 기준 해시 뒤 변경 0(diff 빈 출력) · 해부 스크립트(스크래치 `dissect.mjs` · `s13.mjs`) = 메타 코드포인트 · H2/이미지/디렉티브/FAQ L## · 링크 전수(대상 20종 전부 51편 안 · `<a id>` 0 · 외부 1 gtowizard) · 카드 라벨/제목/설명 축어 · §13 후보 줄 100행. 손검산 4자리 통과(잭팟 AAJJ vs JJJJ · 마부치 쿼드 vs 로열 · set over set 777QJ vs JJJQ7 · AA vs KK/77 비율) + 수치 재계산(1/96 · 1 trên 8,5 · one-outer 96% = 플랍 기준). Fable 서브 1회(입력 = EN 메타·H2·FAQ + 키워드·PAA 축어 + §3-A·§3-C·⑦ + posting.mdc SEO 카피) → 6편 카피 · 길이 전부 한도 안(seoTitle 49~55 · desc 144~151 · H1 65~74) · Opus 수정 = glossary tags 2(ante·buy-in → 몫 밖) · bad-beat tags 1(all-in) · 인용부호 «» → 곧은 " 3편 · Where to Go Next 라벨 채택.
 
 ## 편별
 | slug | A 브리프 | B 집필 | C 렌즈 | 비고 |
 |---|---|---|---|---|
-| holdem-glossary | ✅ | ☐ | ☐ | 현지 추가 H2 1(영→베 대응 표) · 첫 화면 `/vi/glossary` 앵커 · FAQ +3(Blind·Buy in·chơi giỏi — PAA) · 추가 앵커 5(nuts 2 · tilt · bluff · 3-bet) |
-| holdem-bad-beat | ✅ | ☐ | ☐ | H2 #9 = 정본 «Tilt là gì — làm gì ngay sau một bad beat?» + tilt 정의 1~2문장 · `/vi/calculator` «máy tính equity» 선택 1 |
-| holdem-cooler | ✅ | ☐ | ☐ | 1:1 · H2 #3 AC «poker cooler vs bad beat» 축어 |
-| holdem-fish | ✅ | ☐ | ☐ | 1:1 · readnext·카드 제목 «chart/bảng» 금지(§3-C ⑥) |
-| holdem-rake | ✅ | ☐ | ☐ | FAQ L166 합법성 → «Tại sao phòng poker thu rake?» 교체 · «nhà cái» 금지 |
-| holdem-straddle | ✅ | ☐ | ☐ | 1:1 · FAQ 1에 PAA «Straddle nghĩa là gì?» 포커 문맥 흡수 |
+| holdem-glossary | ✅ | ✅ | ☐ | 현지 추가 H2 1(영→베 대응 표) · 첫 화면 `/vi/glossary` 앵커 · FAQ +3(Blind·Buy in·chơi giỏi — PAA) · 추가 앵커 5(nuts 2 · tilt · bluff · 3-bet) |
+| holdem-bad-beat | ✅ | ✅ | ☐ | H2 #9 = 정본 «Tilt là gì — làm gì ngay sau một bad beat?» + tilt 정의 1~2문장 · `/vi/calculator` «máy tính equity» 선택 1 |
+| holdem-cooler | ✅ | ✅ | ☐ | 1:1 · H2 #3 AC «poker cooler vs bad beat» 축어 |
+| holdem-fish | ✅ | ✅ | ☐ | 1:1 · readnext·카드 제목 «chart/bảng» 금지(§3-C ⑥) |
+| holdem-rake | ✅ | ✅ | ☐ | FAQ L166 합법성 → «Tại sao phòng poker thu rake?» 교체 · «nhà cái» 금지 |
+| holdem-straddle | ✅ | ✅ | ☐ | 1:1 · FAQ 1에 PAA «Straddle nghĩa là gì?» 포커 문맥 흡수 |
 
 ## 신규 용어
 | EN | 채택 vi | 근거 |
@@ -59,5 +61,9 @@ A 산출(2026-10-09): `git merge main` ✅(b5a0a6ca) · EN 6편 기준 해시 �
 3. **«Buy in poker là gì?» 20** — §3-C에 주인 없음(L-F §2는 L-E 잠정 인계). glossary FAQ 10으로 흡수했다(1줄 정의 + 대회 fee 구조). 🅴가 정의 H2를 세우면 glossary는 앵커로 바꾼다.
 
 ## 미결
+- 🔴 **B는 Fable 5.1로 집필했다**(HARDEN 지정 Opus 5.5 아님) → C 렌즈 + 아스트라 교차를 생략 없이 전건 돌린다.
+- B가 넣은 bad-beat `/vi/calculator` 앵커(H2 #5 절 끝 «máy tính equity») → C가 `vi-tools.md`로 핸드 vs 핸드 equity 지원 1회 확인 · 미지원이면 문장 삭제.
+- glossary 본문에서 «thuật ngữ» 단어 = 도입부 앵커 1회뿐(헤드 요청 2와 일관).
+- fish 표 «Fish» 행 머리 풀이 «(nghĩa đen là "cá")»는 설명 열에 두었다(머리 괄호 1개 규칙).
 - `/vi/glossary` 도구 링크를 걸었다(계획 §1 «생길 것으로 보고 건다») — 배포 회차 ① 신설 전까지 빌드의 intl-links가 경고할 수 있음(정상).
 - bad-beat `/vi/calculator` 앵커는 **선택** — B가 넣으면 C가 계산기 핸드 vs 핸드 equity 지원을 `vi-tools.md`로 1회 확인.

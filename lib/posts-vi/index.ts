@@ -26,6 +26,12 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 // [vi-tour import 끝]
 
 // [vi-gloss import 시작]
+import { POST as holdemGlossary } from "./holdem-glossary";
+import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as holdemCooler } from "./holdem-cooler";
+import { POST as holdemFish } from "./holdem-fish";
+import { POST as holdemRake } from "./holdem-rake";
+import { POST as holdemStraddle } from "./holdem-straddle";
 // [vi-gloss import 끝]
 
 // [vi-gto import 시작]
@@ -62,6 +68,12 @@ export const VI_POSTS: Post[] = [
   // [vi-tour 배열 끝]
 
   // [vi-gloss 배열 시작]
+  holdemGlossary,
+  holdemBadBeat,
+  holdemCooler,
+  holdemFish,
+  holdemRake,
+  holdemStraddle,
   // [vi-gloss 배열 끝]
 
   // [vi-gto 배열 시작]
