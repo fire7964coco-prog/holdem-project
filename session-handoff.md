@@ -3,11 +3,12 @@
 > 갱신: 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 클러스터 51편 — 레인 6개 진행 중 (정본 `docs/vi-cluster-plan.md`)
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 클러스터 51편 — 🅰~🅵 ✅ 통합 머지 · 🅶 gto 진행 (정본 `docs/vi-cluster-plan.md`)
 
 - 0-1~0-4 ✅ · 사장님 판정 §3-D 10건 채택(10-09): `/vi/glossary` 도구 신설(배포 회차) · 족보 베트남어·액션 영어 차용어 정본 · GTO 13 포함·13편 먼저.
-- ✅ 레인 창 6개(`Holdem-vi-{rules,rank,prob,strat,tour,gloss}` · 본체가 `wt.exe … claude`) — 창마다 사장님이 「HARDEN.md 읽고 A 시작해」. EN 기준 해시 `b57cb658`. 레인은 시작 때 `git merge main`. 창 다시 띄우는 명령 = `docs/hardening-protocol.md` L80 꼴. 🅶 gto는 🅰~🅵 머지 뒤 헤드 «시작» 신호.
-- 헤드(본체) 몫: 첫 레인 C 완료 때 `vi-integration` + `Holdem-vi-head` 생성(계획 §4-A) · 레인 머지 · 🅶 시작 신호 · 배포 회차 = 계획 §4-C(① `/vi/glossary` 신설 ② 계산기 quickRef 4 ③ ICM 앵커·러닝맵 → 빌드·push·MB·IndexNow·수동 색인 38+1). 🅶 «Check it yourself» 링크 = `/vi/solver`(10-09 신설) · 글 꼴 «Spot mẫu → <titleVi> → [⚡ Xem kết quả]» · 라벨 정본 = `docs/solver-app-verbatim-vi-2026-10-09.md`.
+- ✅ 10-09 (10): 🅰~🅵 6레인 → `vi-integration`(폴더 `Holdem-vi-head`) 머지 · 38편 · 게이트 오탐 2 수정 `7944acb1`(vi-integration에만 있음 — main엔 배포 회차에 같이 들어간다) · audit vi 🔴 0 · 빌드 ✅ · 머지 해시 = 계획 §4-A. **main 머지·push는 §4-C 배포 회차에만**(사장님 10-09).
+- ▶ **🅶 gto 시작 신호 ✅** (`harden-vi-gto` ← vi-integration ff) → 사장님이 🅶 창(`Holdem-vi-gto`)에 「HARDEN.md 읽고 A 시작해」 → B → C. 🅶 C 끝나면 헤드가 vi-integration에 머지 → 배포 회차. 레인 창 6개(🅰~🅵)는 닫아도 된다(폴더 정리는 배포 회차 ⑩).
+- 헤드(본체) 몫: 🅶 머지 · 배포 회차 = 계획 §4-C(① `/vi/glossary` 신설 ② 계산기 quickRef 4 ③ ICM 앵커·러닝맵 → 빌드·push·MB·IndexNow·수동 색인 38+1). 🅶 «Check it yourself» 링크 = `/vi/solver`(10-09 신설) · 글 꼴 «Spot mẫu → <titleVi> → [⚡ Xem kết quả]» · 라벨 정본 = `docs/solver-app-verbatim-vi-2026-10-09.md`.
 - 🔴 S-043(vi 928 문구 판정)은 검수장 진행 중 — 라벨이 바뀌면 verbatim 문서·`/vi/solver`·🅶 헤드를 같이 한 줄 교체.
 - ▶ 검수장 대기: MB-208·209 변경 줄 재판정 + ⚖ 결재 2(strategy call 문장 · MA-368 형제 갈림 6자리) + FR 🅴 tour 회차 MA → 오면 다음 세션 안에 회신+등재.
 

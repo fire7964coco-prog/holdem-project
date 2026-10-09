@@ -1,3 +1,10 @@
+## 2026-10-09 (10) — vi 🅰~🅵 `vi-integration` 머지 · 게이트 오탐 2 수정 `7944acb1` · 🅶 시작 신호
+
+- `Holdem-vi-head`(`vi-integration` ← main `b94711f5` · node_modules 정션 · .env.local 복사) · 6레인 --no-ff 머지 충돌 0 · vi 38편. main 머지·push는 §4-C 배포 회차(사장님 10-09).
+- audit:hard vi 🔴 2 = 둘 다 게이트 오탐: ① C1 probability ↔ drawing-odds «Pocket pair bất kỳ» 1 trong 17 (5,9%) ↔ 16:1 · 5,9% — normText가 숫자 사이 «,» «:»를 지워 59·161로 읽음, 같은 원인으로 NON_COMPARABLE_CELL «N:1» 규칙이 전 로케일에서 죽어 있었다(다른 로케일은 행 키 굵게 위치가 달라 우연히 안 짝지어짐) ② H5 when-to-fold «K♣ K♦ 9♠ 9♥ A♥ — hai đôi» + 같은 문단 상대 «sám cô 9 (… three of a kind)» → vi 투페어명 부재. strat 레인 자체에도 남아 있던 🔴(아스트라 반영 뒤 재실행 누락으로 보임). 본문 무변경.
+- 수정 `7944acb1`(vi-integration): 숫자 사이 `.,:` 보존 · 투페어 별칭 `hai đôi` · 셀프테스트 +2 → 84/84 · 15로케일 전후 대조 = vi만 변화.
+- 🅶: `harden-vi-gto` ff → 38편 보임 · HARDEN.md(비추적) 낡은 «솔버 앱 직접 링크» → `/vi/solver`. 사장님이 🅶 창에 「HARDEN.md 읽고 A 시작해」.
+
 ## 2026-10-09 (9) — 솔버 후기창 코드 2 라이브 `1b097803` · MB-215
 
 - `/api/spot-share`(POST {payload} → {ok,id,url} · CORS 솔버만 · IP 해시 시간당 30 · sha256 결정적 id 10자) · `/s/[id]`(noindex · 보드·팟·스택 · 솔버에서 열기 ?spot=&lang= · 14언어 Accept-Language) · `/api/solver-reviews/summary`({text} · 랜딩 문장 · 3개 미만 빈 값). 설계 §7-4.
