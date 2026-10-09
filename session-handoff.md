@@ -47,6 +47,7 @@
 - 정리 남음: 워크트리 `../Holdem-solver-reviews`(복사한 `.env.local` 삭제 → `git worktree remove`) · 브랜치 `solver-reviews-code1`·`-pre-rebase`는 main에 들어갔으니 삭제 가능.
 - 🔴 순서(사장님 10-04): 후기창 끝난 뒤 ① 우편함 미처리 ② S-034 승률 시뮬레이터 개선. 🔴 Supabase SQL이 필요한 순간 사장님께 바로(경로·SQL Editor·확인법 한 번에 · 배포보다 먼저).
 - ✅ **복기 링크 1자리 배포**(10-09 (8) `5f37b2bd` · MB-214): ko `holdem-cbet-strategy` 솔버 표 아래. 🪶 전파 미착수(자동 착수 금지 · 사장님 지시 대기): 다른 로케일 C벳 필라 · donk-bet(987 = srp-btn-bb) · 3bet-strategy(AK2 = 3bp-btn-bb) · GTO 시리즈 글. 복기 11상황 = SRP 9(BTN·SB·CO·HJ·UTG vs BB · CO·HJ·UTG vs BTN · HJ vs CO) + 3벳 팟 2(BTN 오픈에 SB·BB 3벳) — 🔴 «3벳 팟은 BTN 오픈만»(9조합 확장 S-행 대기) · 앱에 보드 미리 채움 파라미터 없음(딥링크 생기면 교체). 문구 꼴 = WORKLOG 10-09 (8).
+- 📬 **S-051 도착(10-09 밤 · 솔버 후기 스위치 feedback ON `a29430e`)** → 다음 세션 ACK(MB 행 · 확인 칸 S-051). 솔버 기능 현황 = `docs/solver-factsheet.md`(10-09 밤 전면 갱신 · 복기 §4 · 주소 파라미터 §4-A).
 - 🛠 /admin 솔버 후기 탭 PGRST201 수정 `025a5d86`(10-09 (7)) — 랜딩 표시는 원래 정상.
 
 ## 사장님 지시 대기 (자동 착수 금지)
