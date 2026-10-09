@@ -1,3 +1,9 @@
+## 2026-10-10 (1) — 솔버 랜딩 빈자리 파악 · `/ru/solver` 계획 수립
+
+- 랜딩 14개(ko en ja zh zh-hant es de pt fr id ms hi tr vi) · 앱 15언어 중 랜딩 없음 = ru만 · 앱 미지원 언어(ar·bn·fa·fil·he·it·pl·ro·sw·th·uk)는 대상 아님.
+- 역방향 빈자리: 솔버 `outbound.ts` LOCALE_PATHS에 ms·hi·vi `/solver` 없음(ms·hi는 09-14 개설인데 앱 주석은 09-03·05 404 실측 그대로) → 사장님이 솔버에 직접 전달.
+- 계획 `docs/ru-solver-landing-plan.md`: 회차 A 조사·뱅크(Google+Yandex) → 회차 B 작성·등록 6곳(hub-i18n ru 없음 주의)·후기창 ru(SQL 사장님)·검수·배포. S-034 시뮬레이터는 «안정된 후».
+
 ## 2026-10-09 (11) — 우편함 MB-216·217 = MA-387·390·391·392 ACK · queue §2-AN·§2-AO 등재
 
 - MA-387(FR 🅵 gloss 본부 재검증): 요청 1 FR 고유 4 + 요청 2 EN-먼저 7 → `docs/en-first-queue.md` §2-AN(미이행). 11자리 전부 ledger 축어로 fr 실재 + EN 동문 위치 확인. 통지 3 접수.

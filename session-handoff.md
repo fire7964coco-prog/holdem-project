@@ -3,6 +3,13 @@
 > 갱신: 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ 다음 세션 첫 작업 = `/ru/solver` 회차 A(현지 조사 → 뱅크) — 정본 `docs/ru-solver-landing-plan.md`
+
+- 사장님 10-10: «RU 랜딩 진행 · 플랜 먼저 · 다음 세션에서 작업». 회차 A = 조사·뱅크만(글·코드 0) → 회차 B = 작성·등록·후기창 ru·검수·배포. 계획 §1 결정 4건(D-1 지역 · D-2 Yandex · D-3 후기창 포함 · D-4 합법성 제외)은 기본값으로 진행 가능 — 시작할 때 한 번 보고.
+- 첫 지시문: 「핸드오프 읽고 ru 솔버 랜딩 회차 A 시작해」.
+- ⏸ S-034 승률 시뮬레이터 = 사장님 10-10 «조금 안정된 후에» — 자동 착수 금지.
+- 📬 솔버 `LOCALE_PATHS` ms·hi·vi `/solver` 추가 = 사장님이 직접 솔버에 전달(10-10). 솔버 S-행 오면 MB-211 확인 칸 닫기.
+
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 클러스터 51편 — 🅰~🅵 ✅ 통합 머지 · 🅶 gto 진행 (정본 `docs/vi-cluster-plan.md`)
 
 - 0-1~0-4 ✅ · 사장님 판정 §3-D 10건 채택(10-09): `/vi/glossary` 도구 신설(배포 회차) · 족보 베트남어·액션 영어 차용어 정본 · GTO 13 포함·13편 먼저.
@@ -18,7 +25,7 @@
 - ▶ **사장님 몫: GSC 수동 색인 요청 3개**(`/vi/calculator` · `/vi/hand-chart` · `/vi/solver`).
 - ▶ 솔버: MB-211 요청 1(`LOCALE_PATHS` vi → `/vi/solver`) + 통지(앱 `presets.ts` lessonVi ④⑦⑧ 옛 명제) → S-행 오면 ACK. ▶ 검수장: MB-211(신설 + 기존 랜딩 13 횡단) 결과 MA 오면 다음 세션 안에 회신+등재.
 - 🪶 자동 착수 금지: EN 솔버 랜딩 동문 8건 = `docs/en-first-queue.md` §2-AL(vi만 AL-1·2 선반영 · 판정 뒤 EN → 13로케일) · GTO 13편·strategy 등이 vi로 발행되면 랜딩 SPOT_GROUPS `slug`·결과 화면 문단 링크 채우기(🅶 머지 회차).
-- `/ru/solver`(S-049 선택 요청) = ru 글 7편·뱅크 없음 → «새 언어는 SERP부터» 조사 회차 뒤 별도(사장님 지시 대기).
+- `/ru/solver` = ▶ 맨 위 절 «다음 세션 첫 작업»(계획 `docs/ru-solver-landing-plan.md`).
 - 📬 후기창 사전: S-042(tr)·S-044(vi) ✅ 10-09 (6) · S-048(ru · `feedbackLabels.ru` 619행~ · `appLabels.ru` 787행~ · 참고자료 `전달_ru_포커용어_참고자료_2026-10-09.md`)은 `/ru/solver` 회차에(설정·SQL 제약·랜딩 같이).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 51편 — ✅ 배포 (10-07 (13) `ceed9c0d` · MB-199) · 정본 `docs/fr-cluster-plan.md`
