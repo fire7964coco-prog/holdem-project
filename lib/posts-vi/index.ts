@@ -16,6 +16,13 @@ import { POST as holdemHandRankings } from "./holdem-hand-rankings";
 // [vi-rank import 끝]
 
 // [vi-prob import 시작]
+import { POST as holdemProbability } from "./holdem-probability";
+import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemOuts } from "./holdem-outs";
+import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
+import { POST as holdemEquity } from "./holdem-equity";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 // [vi-prob import 끝]
 
 // [vi-strat import 시작]
@@ -52,6 +59,13 @@ export const VI_POSTS: Post[] = [
   // [vi-rank 배열 끝]
 
   // [vi-prob 배열 시작]
+  holdemProbability,
+  holdemPotOdds,
+  holdemOuts,
+  holdemDrawingOdds,
+  holdemImpliedOdds,
+  holdemEquity,
+  holdemCardCounting,
   // [vi-prob 배열 끝]
 
   // [vi-strat 배열 시작]
