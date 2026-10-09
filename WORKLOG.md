@@ -1,3 +1,10 @@
+## 2026-10-09 (8) — 복기 링크 회차(ko C벳 필라 1자리) · 배포 `5f37b2bd` · MB-214
+
+- 대상 = `docs/reply-to-solver-2026-09-28.md` 약속(«표 아래 … 출시 뒤 이 보드에서 내 판 복기하기 링크») · `holdem-cbet-strategy` 솔버 표 절 끝에 인용 블록 1개. 앱 라벨 = 솔버 `hand-review-labels.ts` ko 축어(«내 카드 2장»·«플랍 3장»·«최적/허용 가능한/다시 볼 선택»·scopeNote 범위). 표 상황 = srp-btn-bb(복기 11상황 안).
+- 🔴 앱에는 보드·상황 미리 채움 파라미터가 없다(`view`·`lang`만) → 링크는 복기 화면만 연다 → 글 문면도 «이 보드를 열어 준다»가 아니라 «같은 상황 판을 넣어 보라». 딥링크 생기면 교체(MB-214 통지).
+- 글 링크 관례는 `/solver` 랜딩인데 이번만 앱 주소 — 복기 화면 직행이 목적. 게이트 audit:hard 🔴 0(카드 문단 3은 기존 · 새 문단 수치·카드 0) · 빌드 exit 0.
+- 🪶 미착수: 다른 로케일 C벳 필라 · donk-bet(987 = srp-btn-bb)·3bet-strategy(AK2 = 3bp-btn-bb)·GTO 시리즈 글 전파.
+
 ## 2026-10-09 (7) — /admin 솔버 후기 탭 수정 `025a5d86` · 참여 장치 실사용 확인 · 우편함 MB-213 (S-050·MA-385)
 
 - /admin «솔버 후기·질문» 탭 «읽지 못했습니다» = 테이블 없음이 아니라 PostgREST PGRST201 — `solver_feedback_helpful`(feedback_id·user_id)이 solver_feedback↔profiles 다대다 경로를 하나 더 만들어 `profiles(...)` 조인이 모호. `profiles!solver_feedback_user_id_fkey`로 고정. 어드민 읽기 쿼리 12개 라이브 DB 대조 정상 · 빌드 exit 0(74 + 686) · 어드민 전용이라 MB 통지 대신 MB-213 통지 1로 겸함. 랜딩 후기 표시는 처음부터 정상(라이브 Playwright `/solver`에 «bts» 확인).
