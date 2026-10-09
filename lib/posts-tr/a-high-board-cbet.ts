@@ -6,7 +6,7 @@ import type { Post } from "../posts";
  * 링크 치환: /en/solver → /tr/solver · holdem-continuation-bet → /tr/ 동일 slug ·
  *   holdem-position-play → /tr/blog/holdem-positions(앵커를 «postflop 발언 순서»로 좁힘) ·
  *   holdem-equity → tr에 없음 → 링크 제거, 문장은 «원리» 약속 없이 재서술.
- * 앱 라벨(Check·Bet·EQ·EV·EQR·Study Spots·GTO Trainer)은 tr UI 미라이브라 영어 그대로.
+ * 앱 라벨 = 라이브 ?lang=tr 축어(2026-10-09 S-049): Örnek spotlar · ⚡ Sonuçları gör · 스팟 이름 titleTr · Check/Bet/EQ/EV/EQR은 앱도 그대로.
  */
 export const POST: Post = {
   slug: "a-high-board-cbet",
@@ -62,7 +62,7 @@ Buton 2,5bb açar, big blind call eder, geri kalan herkes fold eder — yani iki
 | Rake | Modele dahil değil |
 | Kontrol tarihi | 19 Ağustos 2026, çalışma spotu çıktısı |
 
-Pot 5,5bb, çünkü butonun 2,5bb'lik açışına ve big blind'ın 2,5bb'lik call'una fold eden small blind'ın 0,5bb'lik ölü parası ekleniyor. Ekrandaki her şey big blind cinsinden — bahisler "Bet 1.8bb (33% pot)" şeklinde, beklenen değer ise "EV (bb)" olarak görünür (uygulama arayüzü şimdilik İngilizce).
+Pot 5,5bb, çünkü butonun 2,5bb'lik açışına ve big blind'ın 2,5bb'lik call'una fold eden small blind'ın 0,5bb'lik ölü parası ekleniyor. Ekrandaki her şey big blind cinsinden — bahisler "Bet 1,8bb (%33 pot)" şeklinde, beklenen değer ise "EV (bb)" olarak görünür.
 
 ## Kuru as yüksek board'da iyi bir c-bet yüzdesi kaçtır?
 
@@ -151,7 +151,7 @@ Bu pratik kural tek bir şartla genelleşir: **range avantajı olan — ama beli
 
 ## Kendin kontrol et
 
-[Ücretsiz GTO solver'ı](/tr/solver) aç, **Study Spots → Dry Ace-High Board → [⚡ View results]** yolunu izle; bu ekranın aynısı beklemeden açılır. OOP ile IP arasında oyuncu seçiciyi değiştirerek iki range'i karşılaştır, bahis yapan elleri bulmak için detay tablosunu istediğin sütuna göre sırala. Çalışma spotları **yalnızca flop'un ilk aksiyonunu** önceden çözer — turn ve river'a tıklayarak ilerlemek ya da bir range'i değiştirip sıklıkların nasıl oynadığını izlemek için **Solve this spot yourself** ile ağacı çalıştır.
+[Ücretsiz GTO solver'ı](/tr/solver) aç, **Örnek spotlar → Kuru A-high board → [⚡ Sonuçları gör]** yolunu izle; bu ekranın aynısı beklemeden açılır. OOP ile IP arasında oyuncu seçiciyi değiştirerek iki range'i karşılaştır, bahis yapan elleri bulmak için detay tablosunu istediğin sütuna göre sırala. Çalışma spotları **yalnızca flop'un ilk aksiyonunu** önceden çözer — turn ve river'a tıklayarak ilerlemek ya da bir range'i değiştirip sıklıkların nasıl oynadığını izlemek için **Solve this spot yourself** ile ağacı çalıştır.
 
 Aynı spotu okumak yerine çalışmak istersen kenar çubuğundan **GTO Trainer**'ı aç: gerçek range'den sana bir el dağıtır, aksiyonunu seçersin ve o seçimin sana kaç big blind'a mal olduğunu söyler. Ücretsiz; kurulum yok, hesap yok.
 
