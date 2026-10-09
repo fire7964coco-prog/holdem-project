@@ -122,6 +122,15 @@ lowfruits 화면에서 바로 보인 것 둘 —
 5. **단일 영어 일반어(cooler·fish·outs·limp·straddle·スクイーズ)의 볼륨은 비포커 의도 지배** —
    pt cooler 135k·ja スクイーズ 301k가 실증. 자릿수 함정 규칙의 태그판. 근거 금지.
 
+6. 🔴 **러시아는 측정 도구 어디에도 없다**(2026-10-10 · ru 솔버 회차 A 실측) — DFS `google_ads`·`serp/google`
+   로케이션 목록 RU 0행(대조군 KZ 369행) · Labs 94개국 중 RU 0 · DFS Yandex SERP 경로 없음(40402) · 라쿠 RU 0 · Belarus 0.
+   `language_code`를 빼도 `location_code` 거부 → 오진 아님. google.ru·yandex.ru 직접 Playwright = 캡차.
+   → **대리 분업**: 볼륨 = 같은 언어 인접국(KZ 2398 · UA 2804) + 지역 무지정(🔴 **키릴만 유효** — 라틴 문자열은 언어 필터가
+   안 먹어 전 세계 영어 합) · SERP = google.kz + `language_code:"ru"` · 본토 신호 = **Yandex 공개 자동완성**
+   (`yandex.ru/suggest/suggest-ya.cgi?v=4&part=…&lr=213&uil=ru` · 캡차 없음). 본토 절대 볼륨은 Wordstat(사장님 Yandex 계정)뿐.
+   🔴 다른 제재국·광고 미지원국도 착수 전에 `google_ads/locations/<cc>` 행 수부터. 정본 = `docs/keyword-bank/ru-gto-solver.md` 머리.
+   🪶 Git Bash에서 `node script.mjs /v3/...`처럼 슬래시 인자를 넘기면 MSYS가 경로로 바꾼다 → `MSYS_NO_PATHCONV=1`.
+
 > 전 언어 태그 전수 실측 정본 = `docs/keyword-bank/<locale>-tag-volumes.md`(pt·de·ja·zh·zh-hant·es)
 > + `id-core-volumes.md`. 갱신 절차: 태그 수확 스크립트 → 라쿠 배치(15크레딧/언어) → 판정.
 

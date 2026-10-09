@@ -1,12 +1,13 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
+> 갱신: 2026-10-10 (2) (`/ru/solver` 회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ 다음 세션 첫 작업 = `/ru/solver` 회차 A(현지 조사 → 뱅크) — 정본 `docs/ru-solver-landing-plan.md`
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ 다음 세션 첫 작업 = `/ru/solver` 회차 B(작성·등록·후기창 ru·검수·배포) — 정본 `docs/ru-solver-landing-plan.md` §2 회차 B
 
-- 사장님 10-10: «RU 랜딩 진행 · 플랜 먼저 · 다음 세션에서 작업». 회차 A = 조사·뱅크만(글·코드 0) → 회차 B = 작성·등록·후기창 ru·검수·배포. 계획 §1 결정 4건(D-1 지역 · D-2 Yandex · D-3 후기창 포함 · D-4 합법성 제외)은 기본값으로 진행 가능 — 시작할 때 한 번 보고.
-- 첫 지시문: 「핸드오프 읽고 ru 솔버 랜딩 회차 A 시작해」.
+- ✅ 회차 A 10-10 (2): 뱅크 `docs/keyword-bank/ru-gto-solver.md`(§7 조준안 · §5-C 경쟁 오류 · §1 오염 4). 🔴 러시아 본토 볼륨·SERP는 측정 불가 → 대리값(뱅크 머리). 본토 절대 볼륨이 필요하면 사장님 Yandex Wordstat뿐(선택).
+- 회차 B 순서 = 계획 §2: 앱 ru 축어 재추출(MA-384 정정분) → 3파일 → 등록 6곳(🔴 `lib/hub-i18n.ts` ru 신설) + hreflang `ru-RU` 15파일 → 후기창 ru(S-048) → 게이트 → 렌즈 4+아스트라 → 🔴 **사장님 Supabase SQL(locale 제약 ru) 실행 확인 뒤 push** → MB·IndexNow.
+- 첫 지시문: 「핸드오프 읽고 ru 솔버 랜딩 회차 B 시작해」.
 - ⏸ S-034 승률 시뮬레이터 = 사장님 10-10 «조금 안정된 후에» — 자동 착수 금지.
 - 📬 솔버 `LOCALE_PATHS` ms·hi·vi `/solver` 추가 = 사장님이 직접 솔버에 전달(10-10). 솔버 S-행 오면 MB-211 확인 칸 닫기.
 

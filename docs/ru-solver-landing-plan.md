@@ -27,7 +27,9 @@
 
 ## 2. 회차 나눔 (한 실행 = 한 회차 · AUTONOMY-LIMITS 90분)
 
-### 회차 A — 현지 조사 → 뱅크 `docs/keyword-bank/ru-gto-solver.md` (playbook 1~6단계)
+### 회차 A — ✅ 2026-10-10 완료 → 뱅크 `docs/keyword-bank/ru-gto-solver.md`
+
+> 🔴 D-1·D-2 전제 깨짐: 러시아(2643)는 DFS·라쿠 어디에도 없고 DFS Yandex SERP도 없다 → 대리(KZ·UA·지역 무지정 볼륨 · google.kz 러시아어 SERP · Yandex 공개 자동완성). D-3·D-4는 그대로. 결론·조준안 = 뱅크 §0·§7. 아래 단계 목록은 원래 계획(이력).
 
 1. 라이브 `?lang=ru` 확인(Playwright · 사이드바·스텝·Spot 이름·결과 화면)
 2. `app/ru/` 실재 라우트 세기(현재 `blog`·홈뿐)
