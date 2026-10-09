@@ -6,7 +6,7 @@ import type { Post } from "../posts";
  * 링크 치환: /en/* → /tr/* · k-high-board-cbet·low-board-check-raise = tr 없음 → 링크만 제거(문장 유지)
  *   · holdem-drawing-odds → /tr/blog/holdem-probability (out 세기 절이 있다)
  *   · readnext k-high 카드 → monotone-board-strategy 카드로 교체(본문이 «다음 스팟»으로 가리키는 글).
- * 솔버 앱 라벨(Study Spots·Check·Bet·EQR 등)은 tr UI 미라이브라 영어 유지.
+ * 솔버 앱 라벨 = 라이브 ?lang=tr 축어(2026-10-09 S-049): Örnek spotlar · ⚡ Sonuçları gör · 스팟 이름 titleTr · Check/Bet/EQR은 앱도 그대로.
  * 2026-10-06 tr SERP 보강(L5 §7-4): 정의 H2 «Pokerde donk bet nedir?» 신설(PAA «Donk nedir?» 축어 첫 문장)
  *   · 같은 문구 FAQ는 H2와 중복이라 제거(FAQ는 «Donk bet neden kötü diye bilinir?»부터).
  */
@@ -220,7 +220,7 @@ AKo ve AQo gibi ıskalamış **offsuit** yüksek kartlar standart check-back ell
 
 ## Kendin kontrol et
 
-[Ücretsiz GTO solver'ı](/tr/solver) aç, **Study Spots → Middle Connected, Two-Tone → [⚡ View results]** yolunu izle.
+[Ücretsiz GTO solver'ı](/tr/solver) aç, **Örnek spotlar → Bağlantılı orta board, iki renkli → [⚡ Sonuçları gör]** yolunu izle.
 
 Bu spotu çalışmanın en iyi yolu onu **kuru bir board'la yan yana** açmak. Önce "Dry King-High Board"u aç ve tek bir yeşille kaplı ızgaraya bak, sonra buraya dön ve aralarında turuncu ile pembenin belirdiğini izle. Aynı oyuncular, aynı range'ler — üç kart stratejiyi değiştirdi.
 
