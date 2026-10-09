@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-09 (6) (솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
+> 갱신: 2026-10-09 (7) (우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 클러스터 51편 — 레인 6개 진행 중 (정본 `docs/vi-cluster-plan.md`)
@@ -24,6 +24,7 @@
 
 - ▶ **사장님 몫: GSC 수동 색인 38** = 계획 §4-C ⑧ 목록(필라 6편부터 · GTO 13 제외).
 - 검수장 회차 결과 = MA-367(🅰) MB-203 §2-AG · MA-368(🅱) MB-205 §2-AH · MA-370 MB-206 §2-AI · MA-372 재판정 해소 · MA-373(🅲) MB-208 §2-AJ · MA-374(🅳) MB-209 §2-AK. ▶ 대기: MB-206·208·209 변경 줄 판정 · F1 4자리·⚖ 결재 2 · 🅴 tour 처리 방식(검수장 사용자 결정) → MA 오면 회신+등재.
+- ▶ **MA-385 요청 1 = queue §2-AM 등재(미이행 · MB-213 ACK)**: FR 형제 갈림 7자리 EN-먼저 → 13로케일 → 이행 MB. 🔴 첫 단계 = 위치 재확인(① kicker · ⑤ reading-the-board 축어 미발견). 🅴 tour 5편은 FR 회차 제외(46편).
 - 🪶 빈 레인 폴더 `../Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` 7개 = 레인 창 닫은 뒤 삭제(워크트리 등록은 해제됨). 브랜치 `harden-fr-*`·`fr-integration` 보존.
 - 🪶 자동 착수 금지: EN-먼저 18자리 queue §2-AE · H-8 fr PDF 별도 회차 · `/fr/solver` 본문 산문 링크 · 러닝맵 머리 영어(비-KO 전 로케일) · §2-AF 이행 `84434589` MB-201 재판정 결과 대기.
 - ⏸ ms 14편 EN 동기화(queue §2-AB) = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07).
@@ -45,7 +46,8 @@
 - ▶ **코드 2**(`/api/spot-share` + `/s/[id]` noindex + `/api/solver-reviews/summary`) — 솔버 share·summary 스위치가 이걸 기다린다 · 🔴 솔버 코드 이식 금지(AGPL) · 명세 `클로드-프로그램만들기/handoff-to-main-site/공유링크_형식명세_2026-10-04.md` · 설계 `docs/solver-review-design.md` §8.
 - 정리 남음: 워크트리 `../Holdem-solver-reviews`(복사한 `.env.local` 삭제 → `git worktree remove`) · 브랜치 `solver-reviews-code1`·`-pre-rebase`는 main에 들어갔으니 삭제 가능.
 - 🔴 순서(사장님 10-04): 후기창 끝난 뒤 ① 우편함 미처리 ② S-034 승률 시뮬레이터 개선. 🔴 Supabase SQL이 필요한 순간 사장님께 바로(경로·SQL Editor·확인법 한 번에 · 배포보다 먼저).
-- 솔버 복기 메뉴 출시 = S-050 예정(a459704 배포 중) → 받으면 «이 보드에서 내 판 복기하기» 링크 회차.
+- ▶ **복기 링크 회차 착수 가능**(S-050 ✅ 10-09 · MB-213 ACK): 솔버 «핸드 복기» `?view=hand-review` · 11상황(SRP 9 = BTN·SB·CO·HJ·UTG vs BB · CO·HJ·UTG vs BTN · HJ vs CO + 3벳 팟 2 = BTN 오픈에 SB·BB 3벳) → «이 보드에서 내 판 복기하기» 링크. 🔴 «3벳 팟은 BTN 오픈만»이 현재 사실(9조합 확장 S-행 대기). 원문 `../클로드-프로그램만들기/handoff-to-main-site/통지_복기출시_2026-10-09.md`.
+- 🛠 /admin 솔버 후기 탭 PGRST201 수정 `025a5d86`(10-09 (7)) — 랜딩 표시는 원래 정상.
 
 ## 사장님 지시 대기 (자동 착수 금지)
 

@@ -612,6 +612,24 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 📬 솔버 쪽 통지 후보(이번 MB에 적음): 앱 `presets.ts` lessonVi ④ «có lợi cho bên call» · ⑦ «BB check-raise thường xuyên» · ⑧ «Ở SPR thấp, cược nhỏ gây áp lực» = EN 랜딩이 M-038·M-042로 철회한 옛 명제(랜딩은 정정본이라 영향 없음 · 앱 해설 드리프트).
 
+### 2-AM. 우편함 수신분 — MA-385 요청 1 (FR 형제 갈림 7자리 · 사장님 결재 «FR RISKY 유지 + EN-먼저» 10-09) · 등재 2026-10-09 (7) · 미이행
+
+> 근거 = 검수장 `DECISIONS.md` §0-F «FR 결재 3건» ③ · `reports/검수-fr-r2-rank-2026-10-08.md` §2 · `reports/검수-fr-r4-strat-2026-10-08.md` §2 · `reports/검수-fr-r1-rules-2026-10-07.md` §3. **문안 창작 아님 — 같은 글 안 재료로 보정.** EN 고친 뒤 13로케일 전파 → 이행 MB → 검수장이 EN·형제 원장을 새 문면으로 재판정(지금 형제 재라벨 없음).
+> 🔴 **위치 대조(본체 10-09 · 현 main `025a5d86`)**: MA 인용은 축어가 아닌 자리가 있고 행 번호도 어긋난다(기준 커밋 차이). 이행 회차 첫 단계 = 아래 «현 위치» 확인 → 미발견 ⑤는 보고서 §2에서 원문 재확인.
+
+| # | 글(EN) | MA 자리 · 문제 | 현 위치(본체 대조) |
+|---|---|---|---|
+| AM-1 | holdem-kicker | L93 note «only counts as a kicker if it beats what is on the board» ↔ 같은 글 L118·L121(보드보다 낮은 두 번째 키커) 모순 | 축어 미발견 · 후보 = L105 `:::note` «Kickers can come from the board too … Your hole …» |
+| AM-2 | holdem-flush-vs-straight | L208 요약 3 «connected … it is a straight flush» = 가능성을 성립으로 단정(앞 두 절은 possible) | L220 «suited *plus* connected is a straight flush» ✅ |
+| AM-3 | holdem-split-pot-rules | L195 FAQ «a split pot at showdown is automatic» = 홀카드 공개 조건(WSOP A 75 · B 172) 탈락(본문 L91 정확) | L207 ✅ 축어 |
+| AM-4 | holdem-split-pot-rules | L91 «your hand only wins if you turn it face up» = TDA 2024 17-B · WSOP A 72 · B 15 «마지막 라이브 핸드» 반례 → «쇼다운에서 상대가 남아 있으면» 한정 | L91 ✅ 축어 |
+| AM-5 | holdem-reading-the-board | L143 «your pair suddenly becomes the third-best hand» = KK732 보드 원페어 위 투페어 등 범주 4 | ❓ 축어·«third» 미발견(L163 «top pair shrinks on paired boards» 부근 후보) → 보고서 원문 확인 |
+| AM-6 | holdem-hand-rankings | L63 «two kinds of three of a kind» ↔ L126 «three ways» 내부 모순 | L75 «the two kinds o[f three of a kind]» ↔ L138 «three ways to make it» ✅ |
+| AM-7 | holdem-strategy | L140 실수 표 «a call … must hit or be ahead at showdown» = 배타 필요조건(플로트 반례 · 같은 글 FAQ 문형이 안전) | L152 «it has to hit or reach showdown ahead» ✅ |
+
+- 범위: EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지).
+- 같은 MA 통지 2건(이행 불요): F1 리얼머니 4행 = OK(ANJ 관할) · 🪶 «18세 이상 · ANJ 인가 사이트» 한정은 권고 · 🅴 tour 5편 FR 회차 제외(51→46 · 제외 ≠ 사실 통과).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
