@@ -34,6 +34,8 @@
 
 ## 2. 글별 후보 (볼륨 · 원자료 `core-vol.txt`·`core-sugg.txt`)
 
+> 🔴 «오염»·«섞임» 표기 = 0-2 SERP 판정(§4 · 2026-10-09 0-4에서 이 표에 옮겨 적음). 오염 헤드는 seoTitle·H1·tags 어디에도 쓰지 않는다 · 섞임은 결합형 우선, 단독형은 tags까지. 정본 = `vi-cluster-plan.md` §3-A ⑦.
+
 ### 🅰 규칙 (기존 vi 6편 재작업)
 
 | slug | 헤드 후보 | 롱테일 후보 |
@@ -41,9 +43,9 @@
 | texas-holdem-rules-for-beginners | **luật poker 3,600 · cách chơi poker 2,900 · poker là gì 1,900 · luật chơi poker 1,600** · poker rules 1,300 · texas holdem 1,300 · chơi poker 880 · poker cách chơi 720 · poker luật 590 | cách chơi bài poker 320 · texas holdem poker 320 · hướng dẫn chơi poker 260 · bài poker là gì 210 · luật chơi poker cơ bản 170 · poker texas holdem 170 · luật chơi bài poker 110 · cách chơi poker 2 lá 110 · luật poker cơ bản 70 · cách chơi poker cơ bản 70 · poker rules texas holdem 70 · luật poker tiếng việt 50 · luật poker quốc tế 50 · texas holdem rules 50 · cách chơi poker vn 50 · mẹo chơi poker 40 · cách chơi poker texas holdem 20 · học chơi poker 20 · cách chơi poker cho người mới 10 |
 | holdem-game-order | (헤드 후보 = turn là gì 880 · river là gì 720 — 오염 확인) | flop turn river 50 · cách chia bài poker 110 · người chia bài trong poker gọi là gì 70 · luật chia bài poker 20 · under the gun 170 · preflop flop turn river 10 · dealer button 10 |
 | holdem-betting-actions | **check là gì 3,600 · call là gì 2,900 · raise là gì 1,900 · fold là gì 880**(전부 오염 확인) | bet poker 30 · check/call/raise poker 20 · fold poker 50 · luật raise trong poker 10 · 4bet 40 |
-| holdem-blind-meaning | blind là gì 720(확인) | ante là gì 50 · big blind là gì 30 · blind trong poker là gì 20 · big blind 20 · small blind 20 · blind poker 20 · ante poker 20 · small blind là gì 10 |
-| holdem-all-in-rules | **all in là gì 5,400**(확인) | all in poker 170 · luật all in poker 10 · side pot 10 · (pot phụ · side pot là gì `-`) |
-| holdem-showdown-rules | showdown là gì 390(확인) | muck là gì 70 · slow roll 40 · showdown poker 10 · lật bài poker 10 · so bài poker 30 |
+| holdem-blind-meaning | blind là gì 720(🔴 오염 1/9) | ante là gì 50 · big blind là gì 30 · blind trong poker là gì 20 · big blind 20 · small blind 20 · blind poker 20 · ante poker 20 · small blind là gì 10 |
+| holdem-all-in-rules | **all in là gì 5,400**(🔴 오염 0/10) | all in poker 170 · luật all in poker 10 · side pot 10 · (pot phụ · side pot là gì `-`) |
+| holdem-showdown-rules | showdown là gì 390(🟡 섞임 · PAA 보충) | muck là gì 70 · slow roll 40 · showdown poker 10 · lật bài poker 10 · so bài poker 30 |
 
 ### 🅱 족보
 
@@ -51,10 +53,10 @@
 |---|---|---|
 | holdem-hand-rankings | **poker hand(s) 2,900 · bài poker 1,900 · poker ranking(s) 1,600 · poker hand ranking(s) 1,000 · thứ tự poker 1,000** | thứ tự bài poker 590 · xếp hạng bài poker 210 · bộ bài poker 140 · thứ tự bài trong poker 140 · thứ tự bài mạnh trong poker 110 · bài poker đẹp 110 · thùng phá sảnh 1,000 · thùng phá sảnh là gì 480 · cù lũ 480 · royal flush 390 · full house poker 260 · straight flush 140 · sám cô 90 · xám cô 50 · mậu thầu 50 · một đôi 50 · hand bài poker 50 · thứ tự bài poker tiếng việt 50 · các hand bài poker 40 · trong poker bài nào to nhất 40 · các loại bài trong poker 30 · thứ hạng bài poker 30 · texas holdem hands 50 · two pair 20 · hai đôi 10 |
 | holdem-flush-vs-straight | (헤드 없음) | thùng phá sảnh và tứ quý cái nào lớn hơn 90 · thùng phá sảnh nào lớn nhất 90 · tứ quý và thùng phá sảnh 20 · flush vs straight 20 · thùng và sảnh cái nào lớn hơn 10 |
-| holdem-kicker | kicker là gì 140(확인) | kicker poker 10 · (hai người cùng sảnh · hòa bài poker `-`) |
+| holdem-kicker | kicker là gì 140(🟡 섞임 3/10) | kicker poker 10 · (hai người cùng sảnh · hòa bài poker `-`) |
 | holdem-tiebreak-rules | (헤드 없음) | (luật hòa poker · hòa bài poker `-`) → 0-2 자동완성으로 표현 확보 |
 | holdem-split-pot-rules | (헤드 없음) | split pot 10 · chia pot 10 · chop pot 10 |
-| holdem-reading-the-board | nuts là gì 720(확인) | the nuts 90 · nuts poker 10 · board poker 20 · (đọc bài poker `-`) |
+| holdem-reading-the-board | nuts là gì 720(🔴 오염 0/10) | the nuts 90 · nuts poker 10 · board poker 20 · (đọc bài poker `-`) |
 
 ### 🅲 확률
 
@@ -73,12 +75,12 @@
 | slug | 헤드 후보 | 롱테일 후보 |
 |---|---|---|
 | holdem-strategy | (헤드 없음 · 하강 중) | chiến thuật poker 50 · poker strategy 50 · mẹo chơi poker 40 · cách chơi poker chuyên nghiệp 30 · cách chơi poker giỏi 20 · chiến thuật chơi poker 10 · cách thắng poker 10 · bí quyết chơi poker 10 · texas holdem ultimate strategy 10 |
-| holdem-positions | under the gun 170 | vị trí trong poker 70 · poker positions 70 · position poker 70 · các vị trí trong poker 50 · vị trí poker 20 · utg poker · cutoff poker · hijack poker · button poker 각 10 |
+| holdem-positions | under the gun 170(🔴 오염 1/8) | vị trí trong poker 70 · poker positions 70 · position poker 70 · các vị trí trong poker 50 · vị trí poker 20 · utg poker · cutoff poker · hijack poker · button poker 각 10 |
 | holdem-position-play | (헤드 없음) | (positions와 갈라 먹기 — 0-3) |
 | holdem-starting-hands-chart | (헤드 없음) | poker starting hands 10 · starting hands poker 10 · (bài khởi đầu poker · những tay bài nên chơi `-`) → 차트 도구 `/vi/hand-chart` 경계 |
-| holdem-limping | limp là gì 170(확인) | limp poker 20 · limp poker là gì 10 · limp trong poker là gì 10 · open limp 0 |
-| holdem-3bet | 3bet poker 90 | 4bet 40 · 3bet là gì 10 · (3 bet 27,100 = 함정 §1) |
-| holdem-continuation-bet | **cbet 1,300**(확인) | c bet là gì 30 · c bet poker 10 · cbet poker 10 · continuation bet 10 · cbet meaning poker 10 |
+| holdem-limping | limp là gì 170(🔴 오염) | limp poker 20 · limp poker là gì 10 · limp trong poker là gì 10 · open limp 0 |
+| holdem-3bet | 3bet poker 90 | 4bet 40(🔴 오염) · 3bet là gì 10 · (3 bet 27,100 = 🔴 오염 · 도박 브랜드 §1) |
+| holdem-continuation-bet | **cbet 1,300**(🔴 오염 · 카지노·토큰) | c bet là gì 30 · c bet poker 10 · cbet poker 10 · continuation bet 10 · cbet meaning poker 10 |
 | holdem-when-to-fold | (헤드 없음) | (khi nào nên fold · khi nào nên bỏ bài `-`) |
 
 ### 🅴 토너먼트
@@ -86,9 +88,9 @@
 | slug | 헤드 후보 | 롱테일 후보 |
 |---|---|---|
 | holdem-tournament | poker tournament 210 · tournament poker 210 | giải poker 70 · giải poker là gì 40 · mtt poker 50 · giải đấu poker 20 · giải poker thế giới 20 · giải poker lớn nhất thế giới 20 |
-| holdem-icm | icm là gì 140(확인) · icm poker 110 | (icm calculator 40 = 계산기 도구 몫 · vi-tools) |
-| holdem-bubble | bubble là gì 1,000(확인) | bubble poker 10 |
-| holdem-short-stack | short stack 390(확인) | push fold 10 · short stack poker 10 |
+| holdem-icm | icm là gì 140(🔴 오염 0/10) · icm poker 110 | (icm calculator 40 = 계산기 도구 몫 · vi-tools) |
+| holdem-bubble | bubble là gì 1,000(🔴 오염 0/10) | bubble poker 10 |
+| holdem-short-stack | short stack 390(🔴 오염 2/10) | push fold 10 · short stack poker 10 |
 | holdem-tournament-vs-cash-game | cash game 40 · cash game poker 50 | cash game là gì 10 · tournament vs cash game 0 |
 
 ### 🅵 용어
@@ -96,12 +98,12 @@
 | slug | 헤드 후보 | 롱테일 후보 |
 |---|---|---|
 | holdem-glossary | thuật ngữ poker 140 | (từ ngữ trong poker `-`) · «X là gì» 정의형 묶음(§0) — 🔴 `/vi/glossary` 도구가 **없다**(도구 확장 회차 1·2에 vi 미포함) → 0-3 판정 |
-| holdem-fish | fish là gì 1,000(확인) | fish poker 10 · fish poker meaning/term 10 · (cá trong poker `-`) |
+| holdem-fish | fish là gì 1,000(🔴 오염 0/10) | fish poker 10 · fish poker meaning/term 10 · (cá trong poker `-`) |
 | holdem-bad-beat | bad beat 50 | bad beat là gì 10 |
-| holdem-cooler | cooler là gì 170(확인) | cooler poker 10 |
-| holdem-rake | rake là gì 390(확인) | rake poker 20 · rake trong poker là gì 20 |
-| holdem-straddle | straddle là gì 320(확인) | straddle poker 30 · straddle poker là gì 30 |
-| (관련 · 소속 판정 0-3) | tilt là gì 880 · bluff là gì 390 · bluff poker 110 | tilt poker 40 · bluff trong poker 50 · bluff trong poker la gì 40 · semi bluff 20 · value bet 20 |
+| holdem-cooler | cooler là gì 170(🔴 오염 0/10) | cooler poker 10 |
+| holdem-rake | rake là gì 390(🟡 섞임 4/10) | rake poker 20 · rake trong poker là gì 20 |
+| holdem-straddle | straddle là gì 320(🔴 오염 1/10) | straddle poker 30 · straddle poker là gì 30 |
+| (관련 · 소속 = 0-3 §3-C ⑰⑱: bluff → strategy · tilt → bad-beat) | tilt là gì 880(🔴 오염 1/10) · bluff là gì 390(🔴 오염 2/10) · bluff poker 110 | tilt poker 40 · bluff trong poker 50 · bluff trong poker la gì 40 · semi bluff 20 · value bet 20 |
 
 ### 🅶 GTO 13편
 

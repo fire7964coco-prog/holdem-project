@@ -1,3 +1,12 @@
+## 2026-10-09 (1) — vi 0-3 판정 반영(§3-D 10건 채택) · 0-4 착수 (MB-207 · 워크트리 7)
+
+- 사장님 «§3-D 결과 반영하고 0-4 착수» → 본체 권고 10건 전부 채택으로 읽고 반영(`docs/vi-cluster-plan.md` §3 머리 ✅ · §3-D = 판정 기록표 · §3-C ① `/vi/glossary` 도구 신설 확정 · §1 링크 대상에 `/vi/glossary` 추가 · §2-⑤ EN 기준 해시 `b57cb658`).
+- 계획 신설: §4-A 통합 브랜치 `vi-integration`(fr 승계) · §4-C 배포 회차 체크리스트(vi 전용 ① `/vi/glossary` 신설 ② 계산기 quickRef 4 + related ③ ICM 앵커·러닝맵 → fr 순서) · §5 fr→vi 차이 표(숫자 베트남식 `43,8%` 붙임 · B 틀 = blind-meaning 필드 모양만 · 전사 대조 정규화 · 네이티브 렌즈 페르소나 3 + 아스트라 · 🅶 A 앞 솔버 vi 배포 여부).
+- `docs/translation-terms-vi.md` 개정(«Sảnh Thượng»·«mù nhỏ/mù lớn»·«tố/theo» 권고 폐기 → §3-A 포인터 · 족보 베트남어/액션 영어 원칙) · `vi-core-volumes.md` §2 글별 표에 오염·섞임 표기 17행.
+- `lib/posts-vi/index.ts` 레인 칸 6(🅰 칸 없음 · 기존 hand-rankings → [vi-rank] · vs-cash → [vi-tour] 칸 안으로 이동 · 주석만) · `lane-sync.mjs` vi 7레인 소유 + 셀프테스트 62/62.
+- `docs/vi-lanes/<id>-진행.md` 7개 · 워크트리 `Holdem-vi-{rules,rank,prob,strat,tour,gloss,gto}`(`harden-vi-*` · main `b57cb658`) + node_modules junction + 비추적 HARDEN.md + settings.local 복사 · 상태표시줄 MAP 🇻🇳 1줄. 빈 fr 레인 폴더 7개는 창이 잡고 있어 삭제 실패(그대로).
+- 검수장 착수 공지 MB-207(요청 1 = 배포 전 `lib/posts-vi/` 판정 보류). 글 수정 없음 → 배포·IndexNow 없음. 📬 MA-373은 미처리(다음 세션 회신).
+
 ## 2026-10-08 (6) — vi 0-2 커버리지 ✗ 0 · 0-3 소유표·고정문·용어 정본 초안 + 아스트라 교차 → 사장님 판정 대기
 
 - 0-2 보완(본체 DFS · `tmp/vi/L-A2/`): L-A §2 새 후보 45 볼륨(«X trong poker là gì» 형만 산다 — fold 50 · check/call/raise/ante 30 · flop/blind 20) · 원형 헤드 AC 24(L-A 15 · L-F 9 — 단독 «X là gì» 포커 제안은 전부 «trong poker» 꼬리) · 결합형 SERP 20(PAA 축어 «Fold poker là gì?»·«Blind trong poker là gì?»·«Buy in poker là gì?»·«Limp poker là gì?» 등 · fish·rake·straddle·tilt = vi 해설 1페이지 0~1편 · dealer 170 = 직업 혼합 · phỉnh 40 = 칩 상품) · `nuts là gì` = L-B §3-13 교차 종결 · organic 8~9 헤드 = 원 JSON 계수 결과 `se_results_count` 8~9 또는 AIO·이미지·영상 자리 → **재조회 안 함**(판정 불변). 산출 = L-A §10 · L-B §10-3 · L-F §11 · 00-brief 결과표. 커밋 `90e0448c`.

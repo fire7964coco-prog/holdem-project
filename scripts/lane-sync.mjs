@@ -79,6 +79,17 @@ const OWNED = {
     'fr-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
     'fr-gto': ['donk-bet-strategy', 'monotone-board-strategy', 'broadway-board-strategy', 'a-high-board-cbet', 'k-high-board-cbet', 'ace-paired-board-strategy', 'paired-board-strategy', 'low-board-check-raise', 'blind-battle-cbet', 'blind-battle-connected-board', '3bet-pot-cbet', '3bet-pot-bet-sizing', '3bet-pot-low-board'],
   }),
+  // 🇻🇳 vi 클러스터 7레인(2026-10-09 · docs/vi-cluster-plan.md §1·§5) — fr과 같은 슬러그 파일 분할. index.ts 는 공용(null).
+  //   기존 vi 8편(rules 6 · hand-rankings · tournament-vs-cash-game)도 재작업 레인 소유.
+  ...localeLanes('vi', {
+    'vi-rules': ['texas-holdem-rules-for-beginners', 'holdem-game-order', 'holdem-betting-actions', 'holdem-blind-meaning', 'holdem-all-in-rules', 'holdem-showdown-rules'],
+    'vi-rank': ['holdem-hand-rankings', 'holdem-flush-vs-straight', 'holdem-kicker', 'holdem-tiebreak-rules', 'holdem-split-pot-rules', 'holdem-reading-the-board'],
+    'vi-prob': ['holdem-probability', 'holdem-pot-odds', 'holdem-outs', 'holdem-drawing-odds', 'holdem-implied-odds', 'holdem-equity', 'holdem-card-counting'],
+    'vi-strat': ['holdem-strategy', 'holdem-positions', 'holdem-position-play', 'holdem-starting-hands-chart', 'holdem-limping', 'holdem-3bet', 'holdem-continuation-bet', 'holdem-when-to-fold'],
+    'vi-tour': ['holdem-tournament', 'holdem-icm', 'holdem-bubble', 'holdem-short-stack', 'holdem-tournament-vs-cash-game'],
+    'vi-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
+    'vi-gto': ['donk-bet-strategy', 'monotone-board-strategy', 'broadway-board-strategy', 'a-high-board-cbet', 'k-high-board-cbet', 'ace-paired-board-strategy', 'paired-board-strategy', 'low-board-check-raise', 'blind-battle-cbet', 'blind-battle-connected-board', '3bet-pot-cbet', '3bet-pot-bet-sizing', '3bet-pot-low-board'],
+  }),
 };
 
 function msLanes(map) {
@@ -186,6 +197,19 @@ function selftest() {
     ['docs/keyword-bank/fr-serp/L-C-prob.md', null],
     ['docs/keyword-bank/fr-core-volumes.md', null],
     ['docs/fr-cluster-plan.md', null],
+    ['lib/posts-vi/holdem-blind-meaning.ts', 'vi-rules'],
+    ['lib/posts-vi/holdem-hand-rankings.ts', 'vi-rank'],
+    ['lib/posts-vi/holdem-equity.ts', 'vi-prob'],
+    ['lib/posts-vi/holdem-tournament-vs-cash-game.ts', 'vi-tour'],
+    ['lib/posts-vi/holdem-straddle.ts', 'vi-gloss'],
+    ['lib/posts-vi/low-board-check-raise.ts', 'vi-gto'],
+    ['lib/posts-vi/index.ts', null],
+    ['docs/vi-lanes/strat-진행.md', 'vi-strat'],
+    ['docs/keyword-bank/vi-gloss.md', 'vi-gloss'],
+    ['docs/keyword-bank/vi-serp/L-F-gloss.md', null],
+    ['docs/keyword-bank/vi-core-volumes.md', null],
+    ['docs/translation-terms-vi.md', null],
+    ['docs/vi-cluster-plan.md', null],
   ];
   let bad = 0;
   for (const [p, want] of cases) {

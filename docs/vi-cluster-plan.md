@@ -22,8 +22,8 @@
 | 🅵 용어 | 6 | holdem-glossary · holdem-bad-beat · holdem-cooler · holdem-fish · holdem-rake · holdem-straddle | — |
 | 🅶 GTO 13 | 13 | donk-bet-strategy · monotone-board-strategy · broadway-board-strategy · a-high-board-cbet · k-high-board-cbet · ace-paired-board-strategy · paired-board-strategy · low-board-check-raise · blind-battle-cbet · blind-battle-connected-board · 3bet-pot-cbet · 3bet-pot-bet-sizing · 3bet-pot-low-board | — |
 
-- 링크가 «걸려도 되는» vi 대상 = 위 51편 + vi 도구(`/vi/calculator` · `/vi/hand-chart` · `/vi/tournaments`) + (생기면) `/vi/solver`. 🔴 **vi엔 `/vi/glossary`가 없다**(fr과 다른 점) → 0-3에서 «용어 정의 의도»의 주인을 정한다(§3 쟁점 ①·⑪).
-- 🅶은 마지막 레인. `/vi/solver` 랜딩(솔버 vi 배포 통지 대기 · `vi-gto-solver.md` §7)과 같은 회차에 묶는 안을 0-3에서 판정.
+- 링크가 «걸려도 되는» vi 대상 = 위 51편 + vi 도구(`/vi/calculator` · `/vi/hand-chart` · `/vi/tournaments`) + **`/vi/glossary`(배포 회차에 신설 · §3-D ① · 레인은 생길 것으로 보고 링크를 건다 — 앵커 §3-A ⑤)** + (생기면) `/vi/solver`.
+- 🅶은 마지막 레인. `/vi/solver` 랜딩은 솔버 vi 배포 통지 뒤 별도 회차(§3-D ⑧) — 🅶 «Check it yourself» 링크는 솔버 앱 직접.
 
 ## 2. 재작업 방지 장치 (fr §2 ①~⑨ 승계 + vi 추가)
 
@@ -33,7 +33,7 @@
 | ② | 0-3 소유표 먼저 | 도구가 주인인 의도(차트·계산·솔버)는 글 제목·H1·태그에 쓰지 않는다 |
 | ③ | 처음부터 EN 링크 1:1 · 배포 1회 | 51편 동시 진행 |
 | ④ | 0-3 고정문·용어 정본 | vi 족보·액션 번역어(thùng/sảnh/cù lũ/sám cô · tố/theo/bỏ bài · mù) = 0-2 상위 글 집계 + 기존 vi 8편 + `lib/intl.ts` vi 블록 + vi 도구 사전 |
-| ⑤ | EN 기준 해시 고정 → 헤드 머지 때 diff 1회 | 해시 = 0-4 착수 시점에 적는다 |
+| ⑤ | EN 기준 해시 고정 → 헤드 머지 때 diff 1회 | **`b57cb658`**(0-4 착수 10-09 · EN 51편 마지막 변경 = `628b9a52` 10-07 포함) → 헤드 머지 때 `git diff b57cb658..HEAD -- lib/posts-en/<51편>` 1회 · `masterUpdated` = 그 시점 EN `updated` |
 | ⑥ | 카피는 레인 A 브리프에서 확정 | B·C는 카피 불변 |
 | ⑦ | 착수 공지 MB에 «vi는 배포 해시로 한 번에» | 0-4 |
 | ⑧ | 기존 vi 8편 = 이번 파이프라인 안 | 🅰 6 + 🅱 1 + 🅴 1 |
@@ -41,7 +41,7 @@
 | 🆕 ⑩ | **vi 오염 판정** | 0-1에서 «X là gì»·족보 이름 볼륨 다수가 포커 밖(과일·로비·속어·Tiến lên). 0-2 0단계에서 SERP 포커 결과 수로 판정하고, 오염 헤드는 카피에 쓰지 않는다 |
 | 🆕 ⑪ | **다른 게임 혼동** | 베트남 «poker 5 lá·xì tố·mậu binh·tiến lên» 족보 용어(sảnh rồng 등)를 홀덤 족보 번역어로 들여오지 않는다 — 0-3 용어 정본에서 확정 |
 
-## 3. 소유표·고정문 (▶ 0-3 초안 · 2026-10-08 (6) · 사장님 판정 §3-D 대기)
+## 3. 소유표·고정문 (✅ 0-3 확정 · 2026-10-09 · 사장님 판정 §3-D 10건 = 본체 권고 채택)
 
 > 레인은 이 절을 **판단 없이 따른다**(§2-④). 여기 없는 용어가 필요하면 진행 파일 «신규 용어» 표에 적고 헤드가 머지 때 대조한다.
 > 근거 실측(10-08): 기존 vi 8편 전문 집계(스크래치 `vi-term-usage.md` · 43개 불일치) · `lib/intl.ts` vi 블록 · 도구 2종 사전(`app/vi/{calculator,hand-chart}`) · `docs/translation-terms-vi.md`(번역 브리프 — 🔴 아래 ③④와 어긋나는 자리는 이 절이 이긴다 · 레인 A 전 브리프를 이 절에 맞춰 고친다) · 0-1 볼륨 · 0-2 L-A §4-E·§8·§10 · L-B §4-6·§8 · L-C §8 · L-D §5-A·§10 · L-E §0·§8 · L-F §4-M·§8·§11 · L-G §4-E·§8.
@@ -165,7 +165,7 @@
 
 | # | 검색어(볼륨) | 주인 | 주인 아닌 쪽의 처리 | 판정 근거 |
 |---|---|---|---|---|
-| ① | thuật ngữ poker 140 · thuật ngữ trong poker 50 · thuật ngữ poker tiếng việt 30 · tiếng anh 10 | 🔴 **사장님 판정(§3-D ①)** — 권고 = **`/vi/glossary` 도구 신설(배포 회차에 포함) → 도구가 주인** · 그 전까지는 holdem-glossary 글이 임시 주인 | 도구가 생기면 holdem-glossary = «thuật ngữ poker: X trong poker là gì — 영→베 대응 + 쓰이는 자리» 각도 · seoTitle·H1·tags에서 «thuật ngữ poker» 제거 · 첫 화면 도구 링크(fr ① · tr «용어는 도구로») | L-F §8 ① · 원칙① · vi엔 도구 없음(§1) · 11개 로케일 중 vi만 glossary 도구 부재(도구 확장 회차 1·2 선례) |
+| ① | thuật ngữ poker 140 · thuật ngữ trong poker 50 · thuật ngữ poker tiếng việt 30 · tiếng anh 10 | ✅ **`/vi/glossary` 도구 신설(배포 회차 §4-C에 포함) → 도구가 주인**(사장님 10-09 §3-D ①) | holdem-glossary = «thuật ngữ poker: X trong poker là gì — 영→베 대응 + 쓰이는 자리» 각도 · 🔴 **🅵 레인은 처음부터** seoTitle·H1·tags에 «thuật ngữ poker»를 쓰지 않는다(도구가 같은 배포로 나간다) · 첫 화면 도구 링크 앵커 «thuật ngữ poker»(fr ① · tr «용어는 도구로») | L-F §8 ① · 원칙① · 11개 로케일 중 vi만 glossary 도구 부재(도구 확장 회차 1·2 선례) |
 | ② | «X trong poker là gì» 정의형(fold 50 · check·call·raise·ante 30 · flop·blind 20 · river·all in 10 · side pot 10) | **해당 규칙 글** — betting-actions(check·call·raise·fold·bet·min-raise) · blind-meaning(blind·SB·BB·ante·big blind ante) · game-order(flop·turn·river·dealer·burn) · all-in-rules(all-in·side pot) · showdown-rules(showdown·muck·slow roll) | holdem-glossary(또는 도구 사전) = 1줄 정의 + 그 글 앵커 · 정의 H2는 규칙 글에만 | L-A §8-B · §10-1 · L-D §10-B |
 | ③ | fold 정의(fold trong poker là gì 50 · PAA «Fold poker là gì?») | **holdem-betting-actions**(H2 «Fold poker là gì?» 축어 · 기존 H2 유지) | holdem-when-to-fold = «khi nào nên bỏ bài trong poker» · AA 폴드 · 정의는 앵커 · 상호 앵커 1 | L-A §8-A · L-D §10-B |
 | ④ | nuts(nuts poker 10 · «nuts trong poker là gì» AC) | **holdem-reading-the-board** — H2 «Nuts trong poker là gì?» + FAQ | holdem-glossary = 1줄 + 앵커 · «nuts là gì» 720은 아무도(0/10) | L-B §8-1 · L-F §7-G · fr ④ 동형 |
@@ -195,22 +195,25 @@
 - 🅰 betting-actions: 액션 4종 H2를 «X trong poker là gì» 축어로(«Check trong poker là gì?» · «"Call" trong poker có nghĩa là gì?» · «Raise trong poker là gì — min-raise tính thế nào?» · «Fold poker là gì?») — L-A §10-3 PAA.
 - 🅱 hand-rankings: «Thùng phá sảnh là gì — khác thùng phá sảnh hoàng gia ở đâu?» H2 + «Thùng phá sảnh có lớn hơn tứ quý không?» FAQ(20) · «sảnh rồng» 별칭 1회(헤드 금지).
 - 🅶: 솔버 vi 앱 라벨 = 배포본 축어(S-043 판정 요청 중 · 배포 전이면 영어 라벨 + 배포 뒤 한 줄 교체 · §2-⑨).
-- 🪶 범위 밖(자동 착수 금지): `/vi/glossary` 도구 신설(§3-D ①에서 사장님이 켜면 배포 회차 체크리스트에 추가) · `docs/translation-terms-vi.md` 갱신(«Sảnh Thượng»·«mù nhỏ/mù lớn» 헤드·«tố» 권고 → 이 절로 교체 · 레인 A 전 본체 1회) · 계산기 사전 «street»·«Xếp hạng bài»·«mức bet»(도구 사전 — 손대지 않음 · 배포 회차 뒤 별도).
+- ✅ 0-4에서 끝낸 것(10-09): `docs/translation-terms-vi.md`를 §3-A에 맞춰 갱신(«Sảnh Thượng»·«mù nhỏ/mù lớn»·«tố» 권고 → §3-A 포인터) · `vi-core-volumes.md` §2 글별 표에 «오염» 표기.
+- 🪶 범위 밖(자동 착수 금지): 계산기 사전 «street»·«Xếp hạng bài»·«mức bet»(도구 사전 — 손대지 않음 · 배포 회차 뒤 별도).
 
-### 3-D. 사장님 판정 요청 (0-3 보고 · 2026-10-08 (6))
+### 3-D. 사장님 판정 — ✅ 10-09 확정 (0-3 보고 10-08 (6) → 사장님 «§3-D 결과 반영하고 0-4 착수» · 본체 권고 10건 전부 채택)
 
-| # | 쟁점 | 본체 권고 | 대안 |
+> 규칙이 된 것은 §3-A·§3-C·§4-C로 승격했다. 이 표는 판정 기록이다.
+
+| # | 쟁점 | 판정(= 본체 권고) | 이행 자리 |
 |---|---|---|---|
-| ① | vi엔 `/vi/glossary` 도구가 없다 → «thuật ngữ poker» 140의 주인 | **도구 신설을 이번 배포 회차에 포함**(11개 로케일 중 vi만 부재 · 사장님 10-06 «용어는 도구로 · 경쟁하면 글을 내려라») · 글은 «X trong poker là gì» 각도 | 도구 없이 글이 주인 — 아스트라 B-13 의견: 베트남 SERP의 «thuật ngữ poker» 1위는 wikipoker **A–Z 해설 글**이라 «용어집 = 도구»가 검색 관습에서 필연은 아니다 · 도구를 만들더라도 글에서 핵심어를 빼는 건 콘텐츠 설계로 결정 |
-| ② | 족보 번역어 — «Sảnh Thượng»(브리프·기존 2편) vs «thùng phá sảnh hoàng gia»(기존 hand-rankings·도구) · «xám» vs «sám cô» · «sảnh rồng» | §3-A ③대로 **hand-rankings·도구 표기 채택** · sảnh rồng = 별칭 1회(Tiến lên 용어라 헤드 금지) | — |
-| ③ | 액션·블라인드 표기를 **영어 차용어 정본**으로 바꾼다(기존 6편 «Theo/Tố/Bỏ bài»·«Mù nhỏ/Mù lớn» 제목·본문 → 🅰 재작성 때 교체 · slug·URL 불변) | **채택** — 검색(결합형 볼륨 전부 영어) · 코퍼스(blind 110:19 · call 133:1) 양쪽 근거 · 베트남어 동사(bỏ bài·cược·lật bài)는 산문에서 허용 | 브리프대로 베트남어 우선 유지(검색 표기만 영어) |
-| ④ | positions ↔ position-play | positions = 헤드 · position-play = in/out of position 롱테일(§3-C ⑤) | — |
-| ⑤ | 확률 7편 ↔ `/vi/calculator` | §3-C ⑦(글 = là gì·bảng·cách tính · 도구 = máy tính·app·tính) · 배포 회차에 계산기 quickRef 링크 4자리 추가 | — |
-| ⑥ | ICM 글 소유(`vi-tools.md` «사장님 판단» 보류분) | holdem-icm 포함(51편 지시로 해소) · 도구는 «icm calculator» | — |
-| ⑦ | 토너먼트 합법성 FAQ | EN FAQ 삭제 + rake 합법성 FAQ 삭제(§3-C 처리) | — |
-| ⑧ | GTO 13 순서 — `/vi/solver` 랜딩과 묶나 | **13편 먼저(🅶 레인) → 랜딩은 솔버 vi 배포 통지 뒤 별도 회차** — 랜딩 라벨은 배포본 축어가 정본(플레이북 §4-8)이라 지금 쓸 수 없고, 13편이 먼저 있어야 랜딩이 링크할 vi 자산이 생긴다(`vi-gto-solver.md` §6) | 솔버 배포까지 🅶 보류(51편 → 38편 선배포) |
-| ⑨ | GTO 13 포함 재확인(`settled-decisions` §1-E «ar·vi·tr 착수 금지» 해제로 읽었다) | **포함**(사장님 «fr처럼 51편» · fr 선례 · 성과 지표는 solver_open · GSC 수동 색인 요청 안 함) | 제외(38편) |
-| ⑩ | 아스트라 교차(§3-B 0-3 행) 결과 반영 | ✅ 반영 완료 — 아래 §3-E | — |
+| ① | `/vi/glossary` 도구 부재 → «thuật ngữ poker» 140의 주인 | **도구 신설을 이번 배포 회차에 포함 → 도구가 주인** · 글은 «X trong poker là gì» 각도(아스트라 B-13 대안은 기각 — 사장님 10-06 «용어는 도구로») | §3-C ① · §4-C ①(도구 신설 = 헤드 몫 · fr `/fr/glossary` 구조 + vi 사전) |
+| ② | 족보 번역어 | **hand-rankings·도구 표기 채택**(thùng phá sảnh hoàng gia · sám cô) · «Sảnh Thượng» 폐기 · sảnh rồng = 별칭 1회·헤드 금지 | §3-A ③ · 🅰 beginners·game-order 교체 |
+| ③ | 액션·블라인드 = 영어 차용어 정본 | **채택** — 기존 6편 «Theo/Tố/Bỏ bài»·«Mù nhỏ/Mù lớn» 제목·본문은 🅰 재작성 때 교체(slug·URL 불변) · 베트남어 동사(bỏ bài·cược·lật bài·theo)는 산문 허용 | §3-A ④ · `translation-terms-vi.md` 갱신(0-4 ✅) |
+| ④ | positions ↔ position-play | positions = 헤드 · position-play = in/out of position 롱테일 | §3-C ⑤ |
+| ⑤ | 확률 7편 ↔ `/vi/calculator` | §3-C ⑦ · 배포 회차에 계산기 quickRef 링크 4자리 | §4-C ② |
+| ⑥ | ICM 글 소유 | holdem-icm 포함 · 도구는 «icm calculator» | §3-C ⑧ · §4-C ③(도구 ICM 가이드 → 글 앵커) |
+| ⑦ | 합법성 FAQ | tournament EN FAQ 삭제 + rake 합법성 FAQ 삭제 | §3-C 「레인 A로 넘기는 처리」 |
+| ⑧ | GTO 13 ↔ `/vi/solver` 순서 | **13편 먼저(🅶) → 랜딩은 솔버 vi 배포 통지 뒤 별도 회차** | §4 단계 2 · 🅶 «Check it yourself» = 솔버 앱 직접 링크 |
+| ⑨ | GTO 13 포함 재확인 | **포함**(`settled-decisions` §1-E 운영 메모의 vi 금지는 사장님 «fr처럼 51편»으로 해제 · GSC 수동 색인 요청 안 함) | §1 🅶 · §4-C ⑧ 목록에서 제외 |
+| ⑩ | 아스트라 교차 반영 | ✅ §3-E | — |
 
 ### 3-E. 아스트라 교차 결과 (10-08 (6) · codex gpt-6-astra read-only · 스크래치 사본 · «베트남 현장 코치» 반박 전용 · 인용 7건 중 5 원문 직접 확인 · equity·SPR 정의 2건은 표준 정의로 판정)
 
@@ -225,8 +228,50 @@
 |---|---|---|---|
 | 0-1 | 수요 실측 → `docs/keyword-bank/vi-core-volumes.md` | — | ✅ 10-08 |
 | 0-2 | SERP 7레인 → `docs/keyword-bank/vi-serp/`(00-brief + L-A~L-G) · 본체 대조 · 새 후보 볼륨 일괄 측정 | 0-1 | ✅ 10-08 (6) · 7/7 + 커버리지 ✗ 0(00-brief 결과표 · 보완 = L-A §10 · L-B §10-3 · L-F §11) |
-| 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | ▶ 10-08 (6) 초안 ✅(§3-A·§3-C·§3-E) · 🔴 **사장님 판정 §3-D 10건 대기** |
-| 0-4 | 착수 공지 MB · 레인 워크트리 · EN 기준 해시 | 0-3 승인 | |
-| 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | |
-| 2 | 🅶 GTO 13(+ `/vi/solver` 판정) | 1 머지 | |
-| 3 | 헤드 판정 → 배포 1회 → MB · IndexNow · 사장님 GSC 수동 색인 목록 | 2 | |
+| 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | ✅ 10-08 (6) 초안 → **10-09 사장님 판정 10건 채택(§3-D)** |
+| 0-4 | 착수 공지 MB · 레인 워크트리 · EN 기준 해시 · 번역 브리프 갱신 · 오염 표기 | 0-3 승인 | ✅ 10-09 (MB-207 · 워크트리 7 + HARDEN.md · 진행 파일 7 · index 칸 6 · lane-sync vi 7레인 · EN `b57cb658` · §5 치환표) |
+| 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | ▶ 사장님이 레인 창 6개를 열어 「HARDEN.md 읽고 A 시작해」 |
+| 2 | 🅶 GTO 13(랜딩은 별도 회차 · §3-D ⑧) | 1 머지(헤드 «시작» 신호) | |
+| 3 | 헤드 판정 → `/vi/glossary` 신설 → 배포 1회 → MB · IndexNow · 사장님 GSC 수동 색인 목록 | 2 | |
+
+- 모델·라쿠·통합 브랜치는 fr §4 끝 두 줄 + §4-A를 그대로 쓴다: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 교차 = 아스트라(§3-B · 레인 C마다 1종 상시 + 헤드 51편 1회) · 0-1·0-2를 본체에서 끝냈으니 레인은 라쿠·DFS가 필요 없다.
+
+## 4-A. 헤드 머지 = 통합 브랜치 `vi-integration` (fr §4-A 승계)
+
+- 🔴 **레인은 main이 아니라 `vi-integration`(폴더 `Holdem-vi-head` · 첫 레인 C가 끝날 때 헤드가 만든다)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(반쪽 vi + 끊긴 링크가 라이브). 배포 회차에 `vi-integration` → main 머지 1회.
+- 통합 트리 빌드 = `npx next build`(prebuild의 intl-links·calc-parity는 전 레인 + 계산기 사전 전까지 실패가 정상). 🔴 `Holdem-vi-head`에 `.env.local` 복사(로컬 Supabase 클라이언트 오류 회피 · 정리 때 같이 삭제).
+- 머지 기록: (레인 C가 끝나는 대로 여기 적는다)
+
+### 4-C. 배포 회차 체크리스트 (🅶 머지 뒤 · fr §4-C 순서 + vi 전용 ①~③)
+
+1. 🔴 **`/vi/glossary` 도구 신설**(§3-D ①) — `app/fr/glossary` 구조 복제 + vi 사전(용어 = §3-A ③④ 축어 · 항목 → 글 링크: Nuts → reading-the-board · ICM → holdem-icm · Check-raise → low-board-check-raise · fr `GlossaryTerm.link` 선례) · 도구 확장 회차 1·2의 등록 자리(로케일 목록 · hreflang · sitemap · 러닝맵)를 fr과 같게 · 🅵 holdem-glossary 글 첫 화면 앵커 «thuật ngữ poker» 확인.
+2. 계산기 사전 quickRef 링크 4자리(equity → holdem-equity · outs → holdem-outs · pot odds → holdem-pot-odds · AA vs N명 → holdem-probability) + related 7편(§3-C ⑦) · hand-chart related = EN 4글 + 계산기 · `check:calc-parity:all`.
+3. 도구 ICM 가이드에서 글로 «ICM là gì» 앵커(§3-C ⑧) · 러닝맵 `VI_CLUSTERS`(fr 구조) · 데스크톱 레일 솔버 버튼 문구는 `/vi/solver` 생기기 전까지 fr 선례의 «랜딩 없음» 분기 확인.
+4. 🔴 date: 신규 43편(🅰 6 + 🅱 hand-rankings + 🅴 vs-cash 기존 8편 제외) `date` = 배포일 · 기존 8편은 원래 date(fr H-22).
+5. main → vi-integration 머지(문서 충돌 = main 쪽) → `npm run build` 전체(sitemap vi 51 확인) → vi-integration → main ff → push.
+6. 라이브 확인(Playwright): `/vi/blog` 51 · 글 1편 레일 · `/vi/glossary` 링크 3 · `/vi/calculator` related.
+7. MB 1행(커밋 해시 · vi 51 슬러그 · 도구) + **검수장에 배포 해시로 vi 1회 요청**(§2-⑦ · MB-207 요청 1 이행 신호).
+8. `npm run indexnow -- --since <배포일>`.
+9. 사장님 GSC 수동 색인 요청 목록 = fr §4-C ⑧의 38 슬러그를 `/vi/blog/`로 + `/vi/glossary`(GTO 13 제외 · 필라 6편부터).
+10. 마감: WORKLOG · 핸드오프 · 워크트리 7개 + `Holdem-vi-head` 정리(미커밋 확인 먼저 · node_modules 정션은 `rmdir`로 링크만 끊기).
+
+## 5. 레인 운영 — fr §5 치환표를 vi로 읽는 «차이 표» (0-4 · 10-09)
+
+> 레인은 `docs/ms-translation-lanes.md` §3~§9를 따르되 **fr 계획 §5 치환표**를 먼저 적용하고, 아래 표의 자리만 vi로 바꿔 읽는다. 표에 없는 자리는 fr §5 → ms 규격 순.
+
+| fr §5 자리 | vi에서는 |
+|---|---|
+| 폴더·파일 이름 `fr-` | `vi-` — 진행 `docs/vi-lanes/<id>-진행.md` · 브리프 `docs/vi-lanes/<id>-brief.md` · 키워드 `docs/keyword-bank/vi-<id>.md`(선택) |
+| §0 링크 대상 | 이 문서 §1(51편 + 도구 `/vi/calculator` · `/vi/hand-chart` · `/vi/tournaments` · **`/vi/glossary`(배포 회차 신설 예정 — 링크 건다)** · `/vi/solver`는 없음 → 솔버 앱 직접 링크) |
+| §1-A 고정문 · §1-B 용어 | **이 문서 §3-A**(정본 · `translation-terms-vi.md`·`local-voice`와 어긋나면 §3-A가 이긴다). 🔴 vi 최대 위험 = ① **족보는 베트남어(thùng·sảnh·cù lũ·sám cô) · 액션·구조는 영어 차용어(call·raise·fold·blind·SB/BB)** — 방향을 섞지 마라 ② 성조 부호 누락·오타(§13급) ③ 다른 게임(Tiến lên·Mậu binh·xì tố) 용어 유입(§2-⑪) ④ 단독 «X là gì» 오염 헤드를 seoTitle·H1·tags에 쓰기(§3-A ⑦) |
+| 숫자 = 프랑스식 | 🔴 **vi = 베트남식**(§3-A ②): 천 단위 **마침표** `1.326` · 소수 **쉼표** `2,5 BB` · **`43,8%` 붙임**(공백 없음 — fr과 다름) · 비율 `2,7:1` · 화폐 `$` 앞붙임 · 카드 = 영어 랭크 + 무늬 기호 |
+| §4-③·④ 조사 금지 | 입력 = `docs/keyword-bank/vi-serp/<레인>.md`(L-A-rules · L-B-rank · L-C-prob · L-D-strat · L-E-tour · L-F-gloss · L-G-gto) + `00-brief.md` + `vi-core-volumes.md`(§4 오염 판정 포함) · DFS 직접은 1회(**2704 Vietnam · vi**) |
+| §4-⑤ 브리프 «소유표» 줄 | 이 문서 §3-C에서 그 글이 주인인 검색어 · 금지 헤드 + **§3-A ⑦ 오염 헤드** |
+| §5 B 틀 | 필드 모양 = `lib/posts-vi/holdem-blind-meaning.ts`(Trả lời nhanh · Đọc tiếp · Câu hỏi thường gặp · Những điều cần nhớ 전부 있는 유일한 편 — 🔴 **문면은 7월판 «Mù» 표기라 복사 금지 · 필드 모양만**) · `masterUpdated` = 기준 해시 `b57cb658` 시점 EN `updated` |
+| §5 등록 | `lib/posts-vi/index.ts`의 **자기 레인 칸 두 곳**(`[vi-<id> import 시작]~끝` · `[vi-<id> 배열 시작]~끝`). 🅰 rules는 칸 없음(위 6편 재작업) · 🅱의 hand-rankings · 🅴의 tournament-vs-cash-game은 **기존 import를 자기 칸 안으로 옮겨 두었다** — 파일만 다시 쓴다 |
+| §5·§6 게이트 | `--locale=vi` · `check:structure`는 vi 행 · 🅰·🅱 hand-rankings·🅴 vs-cash는 추가로 `check:drift`(masterUpdated) |
+| §6-② 전사 대조 정규화 | vi 구분자 정규화 = 천 단위 마침표 제거(vi 소수점은 쉼표뿐이라 `1.326` → `1326` 안전) · 소수 쉼표 → 마침표 · `%` 그대로 — 안 하면 전부 불일치로 뜬다 |
+| §6-③ 네이티브 렌즈 페르소나 | 호찌민 클럽 레귤러(Natural8·GGPoker vi 용어 · 영어 차용어 구어 · 「이 문장을 테이블에서 쓰나」) · 출판 교정자(bạn/tôi 일관 · 성조 부호 · 조판 §3-A ②) · 지방 초심자(영어 차용어가 막는 자리 → 첫 등장 풀이가 있나 · Tiến lên 용어로 오독하지 않나) · **아스트라 교차 1종**(§3-B · 스크래치 사본 · 네이티브 자연스러움 + §13 독립 검산) |
+| §6-⑥ 커밋 | `git add lib/posts-vi/<내 슬러그>.ts lib/posts-vi/index.ts docs/vi-lanes/<id>-*` · 메시지 «vi(<id>): …» |
+| §7 헤드 | 머지 대상 = `vi-integration`(§4-A) · 배포는 🅰~🅶 전부 뒤 1회 · 🅶은 🅰~🅵 머지 뒤 헤드 «시작» 신호 |
+| 🅶 A 앞 | §2-⑨: 솔버 vi가 **배포됐으면** 앱 라이브 `?lang=vi` 축어 재추출 → `docs/solver-app-verbatim-vi-<날짜>.md` · **미배포면(S-043 판정 중 · 10-09 기준 배포·push 전)** 영어 앱 라벨 축어로 쓰고 진행 파일 «미결»에 교체 자리 목록 → 배포 뒤 헤드가 한 줄 교체 |
