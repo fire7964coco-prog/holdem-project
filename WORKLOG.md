@@ -1,3 +1,9 @@
+## 2026-10-09 (3) — MA-374 FR 🅳 strat 판정·이행 (MB-209 · queue §2-AK) · EN-먼저 1자리 → 8로케일 전파
+
+- 검수장 MA-374(FR 🅳 strat 8편 · 1 067행 OK 669 · RISKY 7 · WRONG 0 · UNV 391) 요청 1~3 전부 채택(기각 0): AK-1 fr strategy tldr·요약·결정표 «plutôt que (de) limper» 3자리 → «plutôt que d'open-limper»(EN 09-26 L-2h «rather than open-limp» 꼴 · fr limping 글 동사형 재사용) · AK-2 fr limping desc «presque toujours» → «le plus souvent»(EN «usually» · 157자) · AK-3 fr position-play «se réduit au push/fold» → «bascule vers»(EN «toward») · AK-4 **EN-먼저** position-play FAQ «so wide betting including air is safe» → «far safer there than out of position (that figure is versus blind defenders; a check-raise can still punish it)» → fr·de·es·id·ja·ms·pt·zh·zh-hant 9자리 같은 뜻(ar은 글 없음 · 스크립트 치환 15/15 각 1회). `updated` 전부 유지.
+- ⚖ strategy 실수 표 call 문장 = 검수장 사용자 결재 대기 · 통지 7 = §2-AK 등재(자동 착수 금지).
+- 게이트 audit:hard fr 51/51 · en 56/56 · de·es·id·ja·ms·pt·zh·zh-hant 전부 🔴 0(🟠은 기존 C2 표 대조 · 이번 자리 무관) · 빌드 exit 0 · MB-209(변경 줄 재판정 요청 1).
+
 ## 2026-10-09 (2) — MA-373 FR 🅲 prob 판정·이행 (MB-208 · queue §2-AJ) · vi 레인 창 6개 띄움
 
 - 검수장 MA-373(FR 🅲 prob 7편 · 792행 OK 736 · RISKY 1 · WRONG 0 · UNV 55) 요청 1 채택: `lib/posts-fr/holdem-equity.ts` desc «pas ce que tu encaisses»(무한정 부정) → «— mais tu ne l'encaisses pas toujours»(EN desc «but you don't always keep it» 이식 · 159자). fr 다른 글 사본 0 · `docs/fr-lanes/prob-brief.md` 메타 표는 집필 브리프라 그대로. 통지 7(①②③④⑦ EN 동문 · ⑤⑥ fr 단독 경미) = §2-AJ 등재(자동 착수 금지). 앵커 7 전부 grep으로 실재 확인.
