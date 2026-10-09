@@ -1,3 +1,10 @@
+## 2026-10-09 (9) — 솔버 후기창 코드 2 라이브 `1b097803` · MB-215
+
+- `/api/spot-share`(POST {payload} → {ok,id,url} · CORS 솔버만 · IP 해시 시간당 30 · sha256 결정적 id 10자) · `/s/[id]`(noindex · 보드·팟·스택 · 솔버에서 열기 ?spot=&lang= · 14언어 Accept-Language) · `/api/solver-reviews/summary`({text} · 랜딩 문장 · 3개 미만 빈 값). 설계 §7-4.
+- 🔴 솔버 코드 이식 0 — 명세 문서만 보고 새로 짬(AGPL). 응답 계약은 솔버 `solver-feedback-share.ts`·`FeedbackSummary.vue`가 이미 기다리던 꼴(읽기만).
+- 검증: 게이트 ⑩ 신설 🔴 0 · 빌드 exit 0 · 로컬 next start(불량 거부·CORS·not-found 14언어) · 라이브 시험 1행 `/s/a6KEmJUwtc`(Ks 7d 2c · 5.5bb/97.5bb · 재요청 같은 id) · 390·1440 넘침 0.
+- 사장님 판단: /s 머리·꼬리 KO 크롬 = 일단 그대로. S-051 = MB-212 확인 칸 처리.
+
 ## 2026-10-09 (8) — 복기 링크 회차(ko C벳 필라 1자리) · 배포 `5f37b2bd` · MB-214
 
 - 대상 = `docs/reply-to-solver-2026-09-28.md` 약속(«표 아래 … 출시 뒤 이 보드에서 내 판 복기하기 링크») · `holdem-cbet-strategy` 솔버 표 절 끝에 인용 블록 1개. 앱 라벨 = 솔버 `hand-review-labels.ts` ko 축어(«내 카드 2장»·«플랍 3장»·«최적/허용 가능한/다시 볼 선택»·scopeNote 범위). 표 상황 = srp-btn-bb(복기 11상황 안).

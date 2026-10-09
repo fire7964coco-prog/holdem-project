@@ -39,15 +39,14 @@
 
 - `/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/hand-chart` · 같은 10 `/glossary`. 회차 3(퀴즈) = 사장님 판단(`docs/tools-locale-rollout-plan.md` §3).
 
-## ▶▶▶▶▶▶▶▶ 솔버 후기창 — ✅ 코드 1 라이브 (10-09 (6) `5ac5d755` · 14로케일 · MB-212) · 다음 = 코드 2
+## ▶▶▶▶▶▶▶▶ 솔버 후기창 — ✅ 코드 1 (`5ac5d755` MB-212) · ✅ 코드 2 (`1b097803` MB-215) 라이브
 
 - ▶ 사장님: KO 시험 글(«bts» ★5) → /admin «솔버 후기·질문» 탭에 잡히는지 + 숨길지 판단(운영자 ★5가 첫 후기면 자작으로 보일 수 있음 — 숨김 권장).
 - ▶ 솔버: MB-212 = `LAUNCHED.feedback`만 ON · ru 후기 숨김(`/ru/solver` 없음 → 서버 `locale` 오류) → S-행 오면 MB-212 확인 칸 «✅ 회신 S-###». S-042·S-044 반영 완료 · S-048(ru 사전)은 `/ru/solver` 회차. ▶ 검수장: MB-212 tr·vi 신규 키 판정 MA 오면 회신+등재.
-- ▶ **코드 2 = 로컬 커밋 `1b097803`(미푸시)** — 설계 §7-4. 빌드 exit 0 · 게이트 🔴 0 · 로컬 `next start` 실측(요약 API·CORS·불량 payload 거부·/s 없는 id 14언어·noindex) ✅. 🔴 미시험 = 정상 저장 경로(운영 DB 쓰기 1행) + /s 정상 화면 390·1440 → 사장님 승인 뒤 push → 라이브에서 시험 1행 → MB(솔버: `LAUNCHED.share`·`summary` ON 요청 · 응답 형식 `{ok,id,url}` · 요약 `{text}`).
+- ✅ **코드 2 라이브**(10-09 (9) `1b097803` · MB-215 · 설계 §7-4) — 시험 공유 1행 `/s/a6KEmJUwtc` 남음(무해). ▶ 솔버: `LAUNCHED.share`·`summary` ON → S-행 오면 MB-215 확인 칸. ▶ 검수장: /s 문구 14언어 판정 MA 오면 회신+등재. 🪶 /s 머리·꼬리 KO 크롬 = 사장님 «일단 그대로».
 - 정리 남음: 워크트리 `../Holdem-solver-reviews`(복사한 `.env.local` 삭제 → `git worktree remove`) · 브랜치 `solver-reviews-code1`·`-pre-rebase`는 main에 들어갔으니 삭제 가능.
 - 🔴 순서(사장님 10-04): 후기창 끝난 뒤 ① 우편함 미처리 ② S-034 승률 시뮬레이터 개선. 🔴 Supabase SQL이 필요한 순간 사장님께 바로(경로·SQL Editor·확인법 한 번에 · 배포보다 먼저).
 - ✅ **복기 링크 1자리 배포**(10-09 (8) `5f37b2bd` · MB-214): ko `holdem-cbet-strategy` 솔버 표 아래. 🪶 전파 미착수(자동 착수 금지 · 사장님 지시 대기): 다른 로케일 C벳 필라 · donk-bet(987 = srp-btn-bb) · 3bet-strategy(AK2 = 3bp-btn-bb) · GTO 시리즈 글. 복기 11상황 = SRP 9(BTN·SB·CO·HJ·UTG vs BB · CO·HJ·UTG vs BTN · HJ vs CO) + 3벳 팟 2(BTN 오픈에 SB·BB 3벳) — 🔴 «3벳 팟은 BTN 오픈만»(9조합 확장 S-행 대기) · 앱에 보드 미리 채움 파라미터 없음(딥링크 생기면 교체). 문구 꼴 = WORKLOG 10-09 (8).
-- 📬 S-051(feedback ON `a29430e`) = MB-212 확인 칸 «✅ 회신 S-051» 처리 · ACK 본문은 코드 2 배포 MB에 같이. 솔버 기능 현황 = `docs/solver-factsheet.md`(10-09 밤 전면 갱신 · 복기 §4 · 주소 파라미터 §4-A).
 - 🛠 /admin 솔버 후기 탭 PGRST201 수정 `025a5d86`(10-09 (7)) — 랜딩 표시는 원래 정상.
 
 ## 사장님 지시 대기 (자동 착수 금지)
