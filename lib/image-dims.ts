@@ -4,13 +4,8 @@
  * 본문 이미지의 실제 픽셀 치수. `lib/render-markdown.ts` 가 `<img width height>` 에 그대로 박아
  * 브라우저가 **정확한 자리를 미리 예약**하게 한다(CLS). 한 값으로 고정하면 안 되는 이유와
  * 실측 근거는 `scripts/gen-image-dims.mjs` 머리글에 있다.
-<<<<<<< HEAD
  * 최다 규격: 1200x675 502장 · 1200x849 78장 · 1200x845 69장
- * 생성 대상 796장 (public/images)
-=======
- * 최다 규격: 1200x675 489장 · 1200x845 69장 · 1200x849 65장
- * 생성 대상 782장 (public/images)
->>>>>>> 1fc7a5df (feat(solver-reviews): 솔버 후기창 코드 1 — SQL · 앱 API · 12언어 «써 본 사람들» 블록 · 프로필 이미지 · admin · 게이트)
+ * 생성 대상 808장 (public/images)
  */
 export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/7poker-vs-holdem-card-deal-card.webp": [820, 478],
