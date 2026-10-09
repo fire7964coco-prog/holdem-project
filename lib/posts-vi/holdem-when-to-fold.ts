@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Một người chơi poker đẩy úp hai lá bài vào đống bài bỏ dưới ánh đèn bàn, chọn fold thay vì trả tiền cho một cú cược",
   tags: ["khi nào nên bỏ bài trong poker", "bỏ bài trong poker", "khi nào nên fold trong poker", "fold poker hands", "bỏ bài khi có đôi Át", "kỷ luật bỏ bài", "sunk cost poker", "fold trước river raise", "pot odds fold"],
   content: `
-Ván bài đắt nhất năm đầu tiên của tôi không phải ván tôi thua — mà là ván tôi từ chối thua. Tôi flop ra hai đôi cao nhất, một ông lão chơi bị động raise (tố) tôi trên river có đôi, và mọi chuông báo động đều kêu *ông ấy có cù lũ (full house).* Tôi vẫn call (theo). Tôi tự nhủ mình "không thể fold (bỏ bài) sau khi đã bỏ vào nhiều thế." Ông ấy lật cù lũ, và tôi lái xe về nhà, tua đi tua lại đúng khoảnh khắc tôi đã biết mà vẫn call. Đêm đó tôi học được sự thật mà mọi người chơi thắng rốt cuộc đều chấp nhận: ==fold là nước đi mạnh nhất trong poker, và khó thực hiện nhất.==
+Ván bài đắt nhất năm đầu tiên của tôi không phải ván tôi thua — mà là ván tôi từ chối thua. Tôi flop ra hai đôi (two pair) cao nhất, một ông lão chơi bị động raise (tố) tôi trên river có đôi, và mọi chuông báo động đều kêu *ông ấy có cù lũ (full house).* Tôi vẫn call (theo). Tôi tự nhủ mình "không thể fold (bỏ bài) sau khi đã bỏ vào nhiều thế." Ông ấy lật cù lũ, và tôi lái xe về nhà, tua đi tua lại đúng khoảnh khắc tôi đã biết mà vẫn call. Đêm đó tôi học được sự thật mà mọi người chơi thắng rốt cuộc đều chấp nhận: ==fold là nước đi mạnh nhất trong poker, và khó thực hiện nhất.==
 
 **Fold (bỏ bài) — đẩy bài vào đống bài bỏ thay vì call hay raise — là kỹ năng bị đánh giá thấp nhất trong game.** Nó không có khoảnh khắc highlight, không có cú dopamine, nhưng kết quả tệ nhất của một cú fold là đúng *bằng không*, còn một cú call tệ mất tiền theo thời gian — không phải ở mọi ván, nhưng về lâu dài. Đây là hướng dẫn hoàn chỉnh về *khi nào nên bỏ bài*: trước flop, ở mọi vòng cược sau đó, phép toán chính xác quyết định những tình huống sít sao, cách buông một tay bài thực sự tốt, và cách vượt qua thứ tâm lý khiến việc bỏ bài tưởng như bất khả. (Nếu bạn cần ôn lại fold khác call và check ở đâu, [các hành động cược trong poker](/vi/blog/holdem-betting-actions) giải thích cơ chế.) Đó là kỷ luật neo giữ một [chiến thuật Texas Hold'em](/vi/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") thắng.
 
@@ -40,7 +40,7 @@ Toán > sợ | Lý do duy nhất để fold, hoặc không
 
 Đây là ý tưởng định hình lại mọi thứ: **giá trị kỳ vọng (EV) của một cú fold, tính từ quyết định đó trở đi, bằng không.** Khi bạn thực sự đã bị thua (đang ở sau, không có odds để đuổi kịp hay fold equity để đẩy họ ra), mọi lựa chọn khác đều *âm*: call khiến bạn mất khoản call, raise khiến bạn mất nhiều hơn. Số 0 vẫn hơn số âm. Bỏ bài không thắng pot, nhưng nó thắng cuộc chơi dài bằng cách không tặng chip vào những chỗ bạn đang ở sau.
 
-Một lưu ý chính xác, vì nó quan trọng: bỏ bài *không miễn phí.* Chip đã vào pot biến mất ngay khoảnh khắc bạn bỏ chúng vào — fold chỉ ngăn bạn ném *tiền tốt theo tiền xấu.* Sự phân biệt đó là toàn bộ tâm lý của việc bỏ bài, và ta sẽ quay lại nó. Trước hết, cơ chế.
+Một lưu ý chính xác, vì nó quan trọng: bỏ bài *không miễn phí.* Chip đã vào pot biến mất ngay khoảnh khắc bạn bỏ chúng vào — fold chỉ ngăn bạn ném *thêm tiền tốt vào chỗ đã mất.* Sự phân biệt đó là toàn bộ tâm lý của việc bỏ bài, và ta sẽ quay lại nó. Trước hết, cơ chế.
 
 ---
 
@@ -51,7 +51,7 @@ Lỗ hổng lớn nhất trong poker là chơi quá nhiều tay bài, nên cách
 Fold preflop khi:
 
 - **Tay bài của bạn đơn giản là yếu hoặc rác** — bài lệch chất rời rạc (J‑4, Q‑7, K‑3), Át yếu (A‑7 lệch chất trở xuống từ ghế sớm), và phần lớn bài lệch chất "một lá lớn". Nếu nó không có trong [range bài khởi đầu](/vi/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") cho ghế đó, bỏ nó.
-- **Bạn ở vị trí sớm** — gần như mọi người khác quyết định sau bạn, và sau flop chỉ hai blind hành động trước bạn, nên bạn cần bài mạnh hơn để vào. K‑J lệch chất là fold ở under the gun và raise ở button.
+- **Bạn ở vị trí sớm** — gần như mọi người khác quyết định sau bạn, và sau flop chỉ hai blind (mù — cược bắt buộc) hành động trước bạn, nên bạn cần bài mạnh hơn để vào. K‑J lệch chất là fold ở under the gun và raise ở button.
 - **Bạn bị áp đảo.** A‑9 lệch chất trước một người raise chặt ở vị trí sớm thường thua A‑T, A‑J, A‑Q, A‑K của họ — cùng lá Át, kicker (lá phụ) kém hơn. Áp đảo là kẻ giết người thầm lặng; fold thay vì bị thua kicker.
 - **Bạn đối mặt một cú [3-bet](/vi/blog/holdem-3bet) với phần yếu hơn của range.** Bạn open rộng, nên phần lớn range đó fold trước một cú re-raise — tiếp tục với bài tốt nhất và buông phần còn lại. Trước một cú **4-bet** lớn, fold đôi nhỏ và bài đồng chất đầu cơ; implied odds (tỷ lệ cược ngầm) của chúng đã sụp đổ.
 
@@ -65,7 +65,7 @@ Bỏ bài sau flop là nơi tiền thật được tiết kiệm, và mỗi vòn
 
 ![Một board 5 lá đầy đủ trên mặt nỉ xanh cạnh một đống chip lớn khi người chơi cầm hai lá bài úp, cân nhắc có nên fold ở vòng sau không](/images/holdem-fold-board.webp "Mỗi vòng cược đổi câu hỏi: ở flop bạn hỏi mình có dính board không, đến river bạn chỉ hỏi mình có thắng được một cú value bet không")
 
-**Flop — "Board này giúp tôi, hay giúp họ?"** Khi bạn trượt và đối mặt một cú cược trên board hợp với range của đối thủ, buông. Át cao không có bài chờ trên board liên kết không đáng một cú call "để xem turn." Fold cả bài chờ yếu — một gutshot (sảnh hở giữa) không có equity nào khác và giá tệ là fold, không phải đuổi.
+**Flop — "Board này giúp tôi, hay giúp họ?"** Khi bạn trượt và đối mặt một cú cược trên board hợp với range của đối thủ, buông. Át cao không có bài chờ trên board liên kết không đáng một cú call "để xem turn." Fold cả bài chờ yếu — một gutshot (sảnh hở giữa) không có thêm equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) nào và giá tệ là fold, không phải đuổi.
 
 **Turn — vòng của sự buông bỏ.** Đây là cú fold quan trọng nhất trong poker và là cú người chơi bỏ qua. Ở turn, range phân cực về "rất mạnh hoặc đã hỏng," và cỡ cược phình to. Cú float ở flop không cải thiện, đôi thứ nhì giờ đối mặt cú barrel thứ hai, bài chờ vừa trượt với một lá còn lại và giá tệ — đó là những cú turn để buông, không phải để tự thuyết phục mình call thêm một lần. Nếu bạn "float flop để bluff turn," và turn không cho bạn lý do, bỏ cuộc.
 
@@ -99,7 +99,7 @@ Cùng tay bài, quyết định ngược nhau — vì *giá* đổi, không ph�
 
 ## Cú fold khó nhất: làm sao buông một tay bài tốt?
 
-Fold rác thì dễ. Fold một tay bài *tốt* — top pair (đôi cao nhất), overpair (đôi tẩy cao hơn mọi lá trên board), thậm chí một set — là thứ tách người thắng khỏi phần còn lại. Cái bẫy tinh thần là nghĩ "đây là tay bài mạnh," trong khi câu hỏi duy nhất quan trọng là "nó có mạnh *ngay lúc này, trước đường cược này* không?"
+Fold rác thì dễ. Fold một tay bài *tốt* — top pair (đôi cao nhất), overpair (đôi tẩy cao hơn mọi lá trên board), thậm chí một set (cầm đôi trên tay + 1 lá trên board) — là thứ tách người thắng khỏi phần còn lại. Cái bẫy tinh thần là nghĩ "đây là tay bài mạnh," trong khi câu hỏi duy nhất quan trọng là "nó có mạnh *ngay lúc này, trước đường cược này* không?"
 
 **Top pair không phải đỉnh range của bạn.** Trong pot đã raise hoặc re-raise, top pair và overpair là bài sức mạnh trung bình. Trước sự chủ động nặng nề qua nhiều vòng — nhất là một cú raise trên river đáng sợ — chúng thường đã thua, và kỷ luật buông chúng là một **laydown (bỏ bài lớn) tốt**, không phải yếu. Đây là những tay bài người chơi cưới trong khi lẽ ra phải đệ đơn ly hôn:
 
@@ -108,14 +108,14 @@ Fold rác thì dễ. Fold một tay bài *tốt* — top pair (đôi cao nhất)
 | Tay bài bạn đang bám víu | Cái bẫy | Vì sao nên fold |
 |:---|:---|:---|
 | **Top pair, kicker yếu** | Đối mặt cược lớn ở turn + river | Bạn thắng bluff và đôi yếu hơn — nhưng range value của họ thắng kicker bạn |
-| **Overpair (JJ/QQ)** | Một người chơi bị động raise trên board liên kết | Người bị động raise với nuts, không phải bài không khí — bạn gần như chỉ còn rất ít outs |
+| **Overpair (JJ/QQ)** | Một người chơi bị động raise trên board liên kết | Người bị động raise với nuts, không phải bài chưa có gì (air) — bạn gần như chỉ còn rất ít outs |
 | **Top pair top kicker** | Board chạy ra bốn lá cùng chất hoặc bốn lá liền | Một đôi của bạn không thắng nổi thùng (flush)/sảnh (straight) họ đang thể hiện |
-| **Một set** | Raise lớn trên board đồng chất hoặc bốn lá liền — **ở river** | Set gặp set là cooler; một thùng đã thành thì không. Ở *flop* cùng set đó vẫn lên cù lũ ~34% số lần đến river trước một thùng đã thành, và thắng cả stack khi lên — call |
+| **Một set** | Raise lớn trên board đồng chất hoặc bốn lá liền — **ở river** | Set gặp set là cooler; một thùng đã thành thì không. Ở *flop* cùng set đó vẫn lên cù lũ hoặc tứ quý ~34% số lần đến river trước một thùng đã thành, và thắng cả stack khi lên — call |
 | **Đôi thứ nhì** | Call ba vòng "để giữ họ trung thực" | Bạn trả tiền value ba lần để bắt một cú bluff |
 
 </div>
 
-Hàng set là hàng cần nêu rõ vòng cược, vì fold nó quá sớm tốn nhiều hơn fold quá muộn. Cầm 9♠9♣ trên flop 9♥5♥2♥ trước một thùng A♥K♥ đã thành, set vẫn thắng ==34%== số lần — và không thùng đã thành nào giữ nó thấp hơn thế nhiều (sàn khoảng 32%, trước 3♥4♥ với outs thùng sảnh của nó): nó lên cù lũ nhờ bảy outs hiển nhiên (lá 9 còn lại, ba lá 5, ba lá 2) *và* bất cứ khi nào turn và river tạo đôi với nhau. Ở flop đó là call — không phải vì riêng lá kế tiếp trúng đủ thường xuyên (bảy outs là khoảng 16%, không đủ cho phần lớn giá cược), mà vì khi board có đôi bạn thắng mọi thứ một thùng sẽ trả, và fold set ở flop tốn nhiều hơn theo thời gian so với những cú cược bạn tiết kiệm được. Chỉ khi bài chờ đã về đích, hàng ở trên mới áp dụng.
+Hàng set là hàng cần nêu rõ vòng cược, vì fold nó quá sớm tốn nhiều hơn fold quá muộn. Cầm 9♠9♣ trên flop 9♥5♥2♥ trước một thùng A♥K♥ đã thành, set vẫn thắng ==34%== số lần — và không thùng đã thành nào giữ nó thấp hơn thế nhiều (sàn khoảng 32%, trước 3♥4♥ với outs thùng phá sảnh của nó): nó lên cù lũ — hoặc tứ quý (four of a kind) — nhờ bảy outs hiển nhiên (lá 9 còn lại cho tứ quý, ba lá 5, ba lá 2) *và* bất cứ khi nào turn và river tạo đôi với nhau. Ở flop đó là call — không phải vì riêng lá kế tiếp trúng đủ thường xuyên (bảy outs là khoảng 16%, không đủ cho phần lớn giá cược), mà vì khi board có đôi bạn thắng mọi thứ một thùng sẽ trả, và fold set ở flop tốn nhiều hơn theo thời gian so với những cú cược bạn tiết kiệm được. Chỉ khi bài chờ đã về đích, hàng ở trên mới áp dụng.
 
 Hình ảnh phản chiếu cũng quan trọng, vì **bỏ bài có thể là lỗ hổng của chính nó.** Một laydown *tốt* buông một tay bài đã thua trước một đường cược có lý. Một laydown *tệ* fold tay bài tốt nhất trước một lá bài đáng sợ vì sợ hãi — và nếu bạn làm thế thường xuyên, đối thủ biết suy nghĩ sẽ bluff bạn không ngừng. Mục tiêu không phải fold nhiều hơn hay ít hơn; mà là fold *khi có bằng chứng.*
 
@@ -159,7 +159,7 @@ Không câu nào mất đến ba mươi giây thật sự khi đã thành thói 
 
 Đây là một cú fold tôi tự hào, viết rõ ra để bạn tự kiểm tra. Cash $1/$2, stack sâu 100bb.
 
-- **Bài của tôi:** ==A♥K♣.== Tôi raise, big blind — một người chơi chặt, bị động — call.
+- **Bài của tôi:** ==A♥K♣.== Tôi raise, big blind (mù lớn) — một người chơi chặt, bị động — call.
 - **Flop:** ==K♦ 9♠ 4♥.== Tôi có top pair, top kicker. Tôi bet, anh ta call. Tiêu chuẩn.
 - **Turn:** ==7♣.== Một lá trống. Tôi bet tiếp lấy value, anh ta lại call. Vẫn có vẻ ổn.
 - **River:** ==9♥.== Board có đôi, giờ là ==K♦ 9♠ 4♥ 7♣ 9♥==, và người chơi bị động bỗng **check-raise** tôi lớn.
@@ -231,7 +231,7 @@ A. Khi thực sự sít sao và bạn không chắc, fold thường là mặc đ
 
 **Q. Làm sao biết khi nào nên bỏ bài trước một cú raise ở river?**
 
-A. Hãy coi một cú raise ở river, nhất là từ người chơi bị động, là value cho đến khi chứng minh được điều ngược lại. Phần lớn người chơi không có đủ bluff trong range raise ở river, nên một cú raise lớn thường nghĩa là tay bài thắng được một đôi hoặc hai đôi. Trừ khi đối thủ hung hãn và có khả năng bluff-raise, fold tất cả trừ những tay bài mạnh nhất thường là đúng — cái giá bạn nhận chỉ cứu được một cú call nếu range của họ chứa đủ bluff để vượt nó.
+A. Hãy coi một cú raise ở river, nhất là từ người chơi bị động, là value cho đến khi chứng minh được điều ngược lại. Phần lớn người chơi không có đủ bluff trong range raise ở river, nên một cú raise lớn thường nghĩa là tay bài thắng được một đôi (one pair) hoặc hai đôi. Trừ khi đối thủ hung hãn và có khả năng bluff-raise, fold tất cả trừ những tay bài mạnh nhất thường là đúng — cái giá bạn nhận chỉ cứu được một cú call nếu range của họ chứa đủ bluff để vượt nó.
 
 **Q. Bỏ bài có phải là dấu hiệu yếu không?**
 
@@ -243,7 +243,7 @@ A. Có. Fold mỗi khi gặp sức ép biến bạn thành một "nit," và đ�
 
 **Q. Khi nào nên bỏ overpair?**
 
-A. Bỏ overpair khi một đối thủ bị động thể hiện sự chủ động thật sự trên board liên kết hoặc có đôi — một cú check-raise hay một cú barrel lớn ở turn và river. Người chơi bị động raise với bài mạnh, không phải bài không khí, nên overpair của bạn thường ở sau một set, hai đôi hoặc sảnh. Trước đối thủ hung hãn hay bluff, bạn có thể tiếp tục nhiều hơn, nhưng một đường cược bị động gào lên sức mạnh là fold.
+A. Bỏ overpair khi một đối thủ bị động thể hiện sự chủ động thật sự trên board liên kết hoặc có đôi — một cú check-raise hay một cú barrel lớn ở turn và river. Người chơi bị động raise với bài mạnh, không phải bài chưa có gì, nên overpair của bạn thường ở sau một set, hai đôi hoặc sảnh. Trước đối thủ hung hãn hay bluff, bạn có thể tiếp tục nhiều hơn, nhưng một đường cược bị động gào lên sức mạnh là fold.
 
 ---
 

@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Khi mới bắt đầu chơi, tôi limp vào gần như mọi pot. Cảm giác thật an toàn — tôi được xem flop với giá rẻ, không mạo hiểm nhiều, và "giữ mọi lựa chọn mở." Điều tôi không nhận ra là mọi người chơi dày dạn ở bàn đã đọc vị tôi ngay khoảnh khắc tôi làm thế. Limp là dấu hiệu rõ nhất ở poker cược nhỏ cho thấy ai đó chưa thực sự biết mình đang làm gì — và trong hai năm, người đó là tôi.
 
-**Limp** là khi bạn vào pot trước flop bằng cách chỉ *call* (theo) big blind, thay vì raise (tố) hoặc fold (bỏ bài). Nghe vô hại, và thỉnh thoảng nó ổn thật — nhưng ==r:open-limp khi là người đầu tiên vào pot== là một trong những thói quen phổ biến và tốn kém nhất trong game. Dưới đây là chính xác limp là gì, vì sao nó thường mất tiền, những tình huống cụ thể mà nó thực sự đúng (nó không *luôn luôn* sai), và cách người chơi giỏi biến cú limp của bạn thành lợi nhuận của họ. Nắm đúng một khái niệm này là bước nhảy lớn hơn phần lớn người chơi tưởng — đó là quyết định thứ ba của một [chiến thuật Texas Hold'em](/vi/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") thắng, ngay sau việc chọn ghế và chọn bài khởi đầu.
+**Limp** là khi bạn vào pot trước flop bằng cách chỉ *call* (theo) big blind (mù lớn), thay vì raise (tố) hoặc fold (bỏ bài). Nghe vô hại, và thỉnh thoảng nó ổn thật — nhưng ==r:open-limp khi là người đầu tiên vào pot== là một trong những thói quen phổ biến và tốn kém nhất trong game. Dưới đây là chính xác limp là gì, vì sao nó thường mất tiền, những tình huống cụ thể mà nó thực sự đúng (nó không *luôn luôn* sai), và cách người chơi giỏi biến cú limp của bạn thành lợi nhuận của họ. Nắm đúng một khái niệm này là bước nhảy lớn hơn phần lớn người chơi tưởng — đó là quyết định thứ ba của một [chiến thuật Texas Hold'em](/vi/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") thắng, ngay sau việc chọn ghế và chọn bài khởi đầu.
 
 ---
 
@@ -27,7 +27,7 @@ Khi mới bắt đầu chơi, tôi limp vào gần như mọi pot. Cảm giác t
 
 :::stripe
 Call big blind | Limp là gì (không raise)
-0% | Xác suất một cú limp thắng hai blind mà không bị tranh
+0% | Xác suất một cú limp thắng hai blind (mù — cược bắt buộc) mà không bị tranh
 Open-limp | Phiên bản gần như luôn sai
 Over-limp / SB | Những chỗ limp thực sự ổn
 :::
@@ -56,7 +56,7 @@ Trước khi phán xét limp, hãy tách nó làm hai — vì một phiên bản
 
 </div>
 
-Sự phân biệt này quan trọng vì phần lớn lời khuyên "limp rất tệ" thực ra nói về **open-limp** — là người đầu tiên vào pot và chọn chỉ call. Over-limp sau những người khác là một quyết định thực sự khác, và thường có thể bảo vệ được. Giữ hai thứ tách bạch và cả chủ đề sẽ rõ hơn hẳn.
+Sự phân biệt này quan trọng vì phần lớn lời khuyên "limp rất tệ" thực ra nói về **open-limp** — là người đầu tiên vào pot và chọn chỉ call. Over-limp sau những người khác là một quyết định thực sự khác, và thường có cơ sở. Giữ hai thứ tách bạch và cả chủ đề sẽ rõ hơn hẳn.
 
 ---
 
@@ -77,7 +77,7 @@ Khi bạn open-limp, bạn từ bỏ nhiều hơn mình tưởng: cơ hội th�
 
 Toàn bộ lập luận cho việc raise thay vì limp quy về một sự bất đối xứng: **một cú raise có thể thắng pot ngay lập tức; một cú limp thì không bao giờ.** Khi bạn open-raise, bạn tự cho mình *hai* cách thắng — mọi người fold preflop, hoặc bạn lấy pot sau đó với quyền chủ động của kẻ tấn công. Limp chỉ để lại cho bạn con đường thứ hai, khó hơn, và tước đi fold equity khiến sự chủ động preflop có lời.
 
-Có một lợi ích thứ hai, thầm lặng hơn: raise **từ chối equity** của hai blind. Nếu bạn limp, big blind được xem flop với giá rẻ bằng bất kỳ tay bài ngẫu nhiên nào họ được chia, và đôi khi nó đánh bại bạn. Một cú raise bắt họ trả giá để tiếp tục và thường đuổi họ ra hẳn, nên bài rác của họ không bao giờ có cơ hội trúng ngược bạn. Đó là lý do "raise hoặc fold" là mặc định mà người chơi giỏi sống theo — và vì sao vào pot bằng raise kết hợp tự nhiên đến vậy với một [range bài khởi đầu](/vi/blog/holdem-starting-hands-chart) có kỷ luật.
+Có một lợi ích thứ hai, thầm lặng hơn: raise **từ chối equity** của hai blind (equity = phần pot kỳ vọng, tính cả khi chia pot). Nếu bạn limp, big blind được xem flop với giá rẻ bằng bất kỳ tay bài ngẫu nhiên nào họ được chia, và đôi khi nó đánh bại bạn. Một cú raise bắt họ trả giá để tiếp tục và thường đuổi họ ra hẳn, nên bài rác của họ không bao giờ có cơ hội trúng ngược bạn. Đó là lý do "raise hoặc fold" là mặc định mà người chơi giỏi sống theo — và vì sao vào pot bằng raise kết hợp tự nhiên đến vậy với một [range bài khởi đầu](/vi/blog/holdem-starting-hands-chart) có kỷ luật.
 
 ---
 
@@ -98,7 +98,7 @@ Có một lợi ích thứ hai, thầm lặng hơn: raise **từ chối equity**
 
 </div>
 
-Hữu ích nhất trong số này cho việc chơi hằng ngày là **over-limp với đôi tẩy nhỏ.** Các đôi nhỏ, chẳng hạn từ 22 đến 77, chỉ flop ra set khoảng **11,8% số lần** (xấp xỉ 1 trong 8,5), nên tự chúng không đáng để xây pot lớn. Nhưng limp *sau* những limper khác với giá rẻ, trong một pot nhiều người mà bạn sẽ được trả tiền khi trúng, xoay [implied odds](/vi/blog/holdem-pot-odds) về phía bạn. Bạn đang set mining — và đó là lý do chính đáng để limp theo. Chỉ cần lưu ý mặt đất đang dịch chuyển dưới câu thần chú "không bao giờ limp": công việc solver năm 2026 đã lặng lẽ phục hồi limp ở một số ít tình huống stack cạn và nhiều người. Đó là sắc thái, không phải giấy phép để open-limp toàn bộ range.
+Hữu ích nhất trong số này cho việc chơi hằng ngày là **over-limp với đôi tẩy nhỏ.** Các đôi nhỏ, chẳng hạn từ 22 đến 77, chỉ flop ra set (cầm đôi trên tay + 1 lá trên board) khoảng **11,8% số lần** (xấp xỉ 1 trong 8,5), nên tự chúng không đáng để xây pot lớn. Nhưng limp *sau* những limper khác với giá rẻ, trong một pot nhiều người mà bạn sẽ được trả tiền khi trúng, xoay [implied odds](/vi/blog/holdem-pot-odds) về phía bạn. Bạn đang set mining — và đó là lý do chính đáng để limp theo. Chỉ cần lưu ý quan điểm về câu thần chú "không bao giờ limp" đang thay đổi: công việc solver năm 2026 đã lặng lẽ phục hồi limp ở một số ít tình huống stack cạn và nhiều người. Đó là sắc thái, không phải giấy phép để open-limp toàn bộ range.
 
 ---
 
@@ -117,7 +117,7 @@ Cái bẫy ở chỗ nó đã trở nên **quá lộ.** Vì gần như không ai
 Có — ở phần lớn các bàn, một cú open-limp là tấm biển nhấp nháy ghi *"ở đây có người chơi yếu, bị động."* Và lý do nó là thói quen tốn kém đến vậy là vì người chơi giỏi không chỉ ghi nhận, họ **tấn công** nó:
 
 - **Iso-raise (raise cô lập).** Khi một người chơi giỏi thấy bạn open-limp, họ raise lớn sau bạn — một cú "iso-raise" — để đuổi mọi người khác ra và đưa bạn vào thế heads-up, họ có vị trí và quyền dẫn cược. Giờ bạn chơi một pot lớn hơn mình muốn, không có vị trí, trước một người áp đảo bạn ở mọi vòng cược.
-- **Value mỏng và c-bet không ngừng.** Trước một range limp bị giới hạn (ít hoặc không có bài premium, vì thường bạn sẽ raise những tay đó), người chơi giỏi bet nhiều vòng hơn để lấy value mỏng hơn và bluff thoải mái hơn, tự tin rằng bạn khó cầm những tay bài mạnh nhất.
+- **Value mỏng và c-bet (cược tiếp tục) không ngừng.** Trước một range limp bị giới hạn (ít hoặc không có bài premium, vì thường bạn sẽ raise những tay đó), người chơi giỏi bet nhiều vòng hơn để lấy value mỏng hơn và bluff thoải mái hơn, tự tin rằng bạn khó cầm những tay bài mạnh nhất.
 - **Lạm dụng vị trí.** Vì limper thường lỏng và bị động, người chơi hung hãn đơn giản chơi lấn lướt họ sau flop, bet đuổi họ khỏi bài tầm tầm và vắt value khi họ trúng.
 
 Cách sửa đơn giản đến dễ chịu: **raise hoặc fold làm mặc định, và dành limp cho những tình huống cụ thể ở trên.** Khoảnh khắc bạn ngừng open-limp, bạn ngừng là mục tiêu dễ nhất ở bàn — mà tình cờ, đó chính là thứ đầu tiên tách bạn khỏi [fish](/vi/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
@@ -126,7 +126,7 @@ Cách sửa đơn giản đến dễ chịu: **raise hoặc fold làm mặc đ�
 
 ## Limp ở bàn live cược nhỏ và online/GTO khác gì?
 
-Một lưu ý trung thực, vì bối cảnh thay đổi mọi thứ. Ở **online và những bàn khó hơn**, open-limp gần như không thể bảo vệ — các bàn hung hãn, gần như lần nào cũng có người iso-raise bạn, và đường cơ sở GTO về cơ bản là "đừng open-limp ở bàn 100bb bình thường" — trừ small blind, nơi hoàn thành blind vẫn có thể bảo vệ vì những lý do ở trên.
+Một lưu ý trung thực, vì bối cảnh thay đổi mọi thứ. Ở **online và những bàn khó hơn**, open-limp gần như không có cơ sở — các bàn hung hãn, gần như lần nào cũng có người iso-raise bạn, và đường cơ sở GTO về cơ bản là "đừng open-limp ở bàn 100bb bình thường" — trừ small blind (mù nhỏ), nơi hoàn thành blind vẫn có cơ sở vì những lý do ở trên.
 
 Ở **bàn live cược nhỏ rất bị động**, đó là một thế giới khác. Nếu bàn thường xuyên để limper xem flop rẻ và không ai trừng phạt họ, limp theo với bài đầu cơ tốn ít hơn nhiều — bạn không bị cô lập, và bạn được thực hiện equity với những tay bài không muốn đối mặt một cú raise. Nó vẫn không *tối ưu* — và open-limp từ vị trí sớm vẫn là phiên bản tệ nhất — nhưng hình phạt nhỏ, và set mining trong một pot nhiều người (family pot) có thể in ra tiền. Hãy đọc bàn của bạn: bàn càng mềm và bị động, bạn càng limp được nhiều; bàn càng khó, bạn càng phải raise hoặc fold nghiêm ngặt.
 
@@ -149,11 +149,11 @@ A. Open-limp từ bỏ rất nhiều: bạn không thể thắng pot preflop nh�
 
 **Q. Có nên limp trong poker không — limp có bao giờ là chiến thuật tốt?**
 
-A. Có, ở những tình huống cụ thể. Hoàn thành từ small blind, over-limp bài đầu cơ như đôi nhỏ và suited connector sau những limper khác, bàn live cược nhỏ rất bị động, và vài tình huống ở button khi stack giải đấu ngắn đều hợp lý. Thứ gần như luôn sai là open-limp — là người đầu tiên vào pot và chọn chỉ call thay vì raise.
+A. Có, ở những tình huống cụ thể. Hoàn thành từ small blind, over-limp bài đầu cơ như đôi nhỏ và suited connector (hai lá bài liên tiếp cùng chất) sau những limper khác, bàn live cược nhỏ rất bị động, và vài tình huống ở button khi stack giải đấu ngắn đều hợp lý. Thứ gần như luôn sai là open-limp — là người đầu tiên vào pot và chọn chỉ call thay vì raise.
 
 **Q. Open-limp và over-limp khác nhau ở điểm nào?**
 
-A. Open-limp là khi bạn là người đầu tiên vào pot và chỉ call big blind — gần như luôn là sai lầm, vì bạn lẽ ra có thể raise để thắng ngay. Over-limp (hay limp theo sau) là call sau khi đã có người limp; nó dễ bảo vệ hơn vì bạn được giảm giá vào một pot nhiều người, hợp với những tay bài set mining.
+A. Open-limp là khi bạn là người đầu tiên vào pot và chỉ call big blind — gần như luôn là sai lầm, vì bạn lẽ ra có thể raise để thắng ngay. Over-limp (hay limp theo sau) là call sau khi đã có người limp; nó có cơ sở hơn vì bạn được giảm giá vào một pot nhiều người, hợp với những tay bài set mining.
 
 **Q. Limp-reraise là gì?**
 
@@ -165,7 +165,7 @@ A. Gần như không bao giờ ở cash game bình thường. Nếu một tay b�
 
 **Q. Limp ở small blind có ổn không?**
 
-A. Thường là có — trong pot chưa ai raise, hoàn thành small blind là một trong những cú limp dễ bảo vệ nhất. Tiền của bạn thường đã vào một nửa, chỉ big blind có thể hành động sau bạn, và bạn đang được giá, nên logic raise-hay-fold thông thường không áp dụng theo cùng cách. Hoàn thành, raise hay fold tùy tay bài của bạn và khuynh hướng của big blind, nhưng limp ở đây khác xa sai lầm mà open-limp ở các vị trí khác mắc phải. (Gặp một cú raise, mặc định của small blind là 3-bet hoặc fold — gần như không bao giờ flat call.)
+A. Thường là có — trong pot chưa ai raise, hoàn thành small blind là một trong những cú limp có cơ sở nhất. Tiền của bạn thường đã vào một nửa, chỉ big blind có thể hành động sau bạn, và bạn đang được giá, nên logic raise-hay-fold thông thường không áp dụng theo cùng cách. Hoàn thành, raise hay fold tùy tay bài của bạn và khuynh hướng của big blind, nhưng limp ở đây khác xa sai lầm mà open-limp ở các vị trí khác mắc phải. (Gặp một cú raise, mặc định của small blind là 3-bet hoặc fold — gần như không bao giờ flat call.)
 
 **Q. Limper và calling station khác nhau ở đâu?**
 

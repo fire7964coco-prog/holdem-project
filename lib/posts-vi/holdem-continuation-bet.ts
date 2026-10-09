@@ -61,7 +61,7 @@ Nếu bạn học poker trước thời solver, bạn được bảo c-bet kho�
 
 Khái niệm nền là ==lợi thế range (range advantage)==: range tổng thể của ai mạnh hơn trên flop cụ thể này. Là người raise preflop, bạn cầm nhiều bài lớn và overpair (đôi tẩy cao hơn mọi lá trên board) hơn, nên **board cao, khô thuộc về bạn** — còn board đầy bài trung liên kết thuộc về người đã call. Nắm vững một ý đó và bạn đã đi trước mọi người chơi "cứ c-bet" ở bàn.
 
-Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm vị trí lên và hiệu ứng trở nên cực đoan. Trên A-7-2 rainbow, solver cho người call check 98,2% range của mình, kể cả top pair (đôi cao nhất) — equity range của họ chỉ thua 45,1% so với 54,9%, vậy mà việc không có vị trí biến khoảng cách khiêm tốn đó thành một cú check gần như toàn bộ. Phân tích đầy đủ nằm trong [top pair mà vẫn check](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm vị trí lên và hiệu ứng trở nên cực đoan. Trên A-7-2 rainbow, solver cho người call check 98,2% range của mình, kể cả top pair (đôi cao nhất) — range của họ chỉ có 45,1% equity (phần pot kỳ vọng, tính cả khi chia pot) so với 54,9%, vậy mà việc không có vị trí biến khoảng cách khiêm tốn đó thành một cú check gần như toàn bộ. Phân tích đầy đủ nằm trong [top pair mà vẫn check](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
 ---
 
@@ -79,7 +79,7 @@ Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm v�
 | **Thấp, liên kết** | 7‑6‑5, 9‑8‑6 | **Người call** | **Check nhiều hơn**; bet lớn & chọn lọc khi bet | Trúng suited connector và đôi nhỏ của họ |
 | **Có đôi thấp** | 8‑8‑3, 5‑5‑2 | **Bạn (nhỉnh hơn)** | Bet **thường & nhỏ** | Chẳng bên nào có trips nhiều; lá cao/overpair của bạn dẫn |
 | **Đồng chất (monotone)** | K♠9♠4♠ | Lẫn lộn — thận trọng | Bet **ít hơn, nhỏ hơn** | Một thùng đã thành giới hạn cả hai range; đi rẻ |
-| **Hai chất & ướt** | Q♥J♥7♣ | Nghiêng về người call | **Phân cực:** lớn với value/bài chờ, check bài không khí | Vô số bài chờ — bắt trả giá hoặc rút lui |
+| **Hai chất & ướt** | Q♥J♥7♣ | Nghiêng về người call | **Phân cực:** lớn với value/bài chờ, check bài chưa có gì (air) | Vô số bài chờ — bắt trả giá hoặc rút lui |
 
 </div>
 
@@ -87,7 +87,7 @@ Hai ý tưởng liên quan làm toàn bộ công việc ở đây:
 - **Lợi thế range quyết định bạn bet *thường xuyên* đến đâu.** Nhiều phần range của bạn mạnh trên board này → bet thường xuyên hơn.
 - **Lợi thế nut quyết định bạn bet *lớn* đến đâu.** Bạn cầm nhiều tay bài tốt nhất tuyệt đối hơn (set, sảnh) → bet lớn hơn.
 
-Phần tinh tế: bạn có thể có cái này mà không có cái kia. Trên A‑8‑3 bạn có nhiều top pair hơn hẳn (lợi thế range) nhưng gần như chẳng ai có set, nên bạn **bet thường nhưng nhỏ**. Trên board mà bạn cầm nhiều set và overpair hơn hẳn, bạn **bet lớn**. Nắm thẳng hai đòn bẩy này và sizing c-bet sẽ không còn là chuyện đoán mò.
+Phần tinh tế: bạn có thể có cái này mà không có cái kia. Trên A‑8‑3 bạn có nhiều top pair hơn hẳn (lợi thế range) nhưng gần như chẳng ai có set (cầm đôi trên tay + 1 lá trên board), nên bạn **bet thường nhưng nhỏ**. Trên board mà bạn cầm nhiều set và overpair hơn hẳn, bạn **bet lớn**. Nắm thẳng hai đòn bẩy này và sizing c-bet sẽ không còn là chuyện đoán mò.
 
 ---
 
@@ -100,8 +100,8 @@ Không có một tỷ lệ c-bet "đúng" duy nhất — ai đưa bạn một co
 | Tình huống | Tần suất c-bet ước lượng | Ghi chú |
 |:---|:---:|:---|
 | **Có vị trí, heads-up, board khô** | **70–100%** (nhỏ) | "Range bet" kinh điển — bet gần như mọi thứ, rất nhỏ |
-| **Có vị trí, heads-up, board ướt** | **~50–60%** | Phân cực hơn — value và bài chờ bet, bài không khí check |
-| **Không có vị trí, heads-up (pot raise đơn, bạn là người raise)** | **~30–45%** | Check nhiều hơn hẳn để bảo vệ range check. Là *người 3-bet* ở OOP thì lật ngược: hơn 97% trên cả ba board chúng tôi đã solve, gần như toàn bộ ở cỡ hai phần ba pot trên Q♥10♥7♠ và 8♦5♣2♠ nhưng chủ yếu ở cỡ một phần ba pot trên A♦K♠2♥ (57,8%); xem [bài chiến thuật vị trí](/vi/blog/holdem-position-play) |
+| **Có vị trí, heads-up, board ướt** | **~50–60%** | Phân cực hơn — value và bài chờ bet, bài chưa có gì check |
+| **Không có vị trí, heads-up (pot raise đơn, bạn là người raise)** | **~30–45%** | Check nhiều hơn hẳn để bảo vệ range check. Là *người 3-bet* ở OOP thì lật ngược: hơn 97% trên cả ba board đã được solve, gần như toàn bộ ở cỡ hai phần ba pot trên Q♥10♥7♠ và 8♦5♣2♠ nhưng chủ yếu ở cỡ một phần ba pot trên A♦K♠2♥ (57,8%); xem [bài chiến thuật vị trí](/vi/blog/holdem-position-play) |
 | **Nhiều người (2 đối thủ)** | **~50% hoặc ít hơn** | Ai đó nhiều khả năng đã dính board — siết lại |
 | **Nhiều người (3+ đối thủ)** | **Chỉ bài mạnh & bài chờ tốt** | Fold equity về cơ bản đã biến mất |
 
@@ -115,7 +115,7 @@ Không có một tỷ lệ c-bet "đúng" duy nhất — ai đưa bạn một co
 
 Sizing đi thẳng từ kết cấu board. Hai nấc phủ gần như mọi thứ: nhỏ, khoảng một phần ba pot, trên board khô nơi bạn có lợi thế range; lớn, hai phần ba pot trở lên, trên board ướt nơi bạn cần bắt bài chờ trả giá. Chọn sai nấc là cách phổ biến nhất để một cú c-bet đúng chỗ vẫn mất tiền:
 
-- **Nhỏ — khoảng một phần ba pot** — trên board khô, tĩnh, có lợi thế range, nhất là khi có vị trí. Range của đối thủ yếu và sẽ không cải thiện nhiều, nên bạn không cần bắt bài chờ trả giá; một cú bet nhỏ đã đặt toàn bộ bài không khí của họ vào thế khó trong khi vẫn giữ bài yếu hơn ở lại để trả tiền cho bạn. Bet lớn hơn ở đây chỉ đuổi đi những tay bài bạn *muốn* họ call.
+- **Nhỏ — khoảng một phần ba pot** — trên board khô, tĩnh, có lợi thế range, nhất là khi có vị trí. Range của đối thủ yếu và sẽ không cải thiện nhiều, nên bạn không cần bắt bài chờ trả giá; một cú bet nhỏ đã đặt toàn bộ bài chưa có gì của họ vào thế khó trong khi vẫn giữ bài yếu hơn ở lại để trả tiền cho bạn. Bet lớn hơn ở đây chỉ đuổi đi những tay bài bạn *muốn* họ call.
 - **Lớn — hai phần ba pot trở lên** — trên board ướt, động và bất cứ khi nào range của bạn phân cực. Giờ bạn cần bắt flush draw và bài chờ sảnh trả giá (từ chối equity của họ) và xây pot với bài mạnh. Bet nhỏ để bài chờ call quá rẻ.
 
 Đặt con số thật vào. Giả sử pot là ==$30== ở flop:
@@ -125,7 +125,7 @@ Sizing đi thẳng từ kết cấu board. Hai nấc phủ gần như mọi th�
 
 Ở **giải đấu**, nghiêng nhỏ hơn một chút: cỡ nhỏ vẫn là một phần ba, nhưng cỡ lớn thường là **nửa pot** hơn là hai phần ba, vì stack của bạn quý giá — ở freezeout bạn không thể nạp lại, và ngay cả re-entry cũng tốn một buy-in mới. Dù chọn gì, hãy gắn size với board, không phải với thói quen.
 
-Muốn thấy nấc "lớn trên board ướt" thực sự đi xa đến đâu? Một solver được cho hai cỡ cược trên Q♥10♥7♠ trong pot 3-bet đặt [98,4% range của mình vào cú bet hai phần ba](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — và lý do là một cái giá bạn có thể tính ra, không phải cảm giác.
+Muốn thấy nấc "lớn trên board ướt" thực sự đi xa đến đâu? Một solver được cho hai cỡ cược trên Q♥10♥7♠ trong pot 3-bet (re-raise, tố lại) đặt [98,4% range của mình vào cú bet hai phần ba](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — và lý do là một cái giá bạn có thể tính ra, không phải cảm giác.
 
 ---
 
@@ -162,11 +162,11 @@ Trì hoãn biến một chỗ mà cú c-bet tự động lẽ ra rỉ chip thàn
 
 ## Khi nào KHÔNG nên c-bet? (Check là vũ khí, không phải cờ trắng)
 
-Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: đừng c-bet khi board trúng đậm range đối thủ, khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài không khí, hay khi tay bài của bạn cần ở lại để bảo vệ range check. Cụ thể:
+Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: đừng c-bet khi board trúng đậm range đối thủ, khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài chưa có gì, hay khi tay bài của bạn cần ở lại để bảo vệ range check. Cụ thể:
 
 - **Board trúng đậm range của đối thủ.** Một flop 7‑6‑5 hay 9‑8‑7 trúng những tay bài call cú raise mạnh hơn hẳn trúng bài của bạn. Bet ở đây với phần lớn range chỉ là tặng chip — check thường xuyên hơn nhiều, và khi bet, bet lớn và chọn lọc.
 - **Bạn không có vị trí trên board động** với bài tầm tầm. Hành động trước không có thông tin, giữ pot nhỏ và check.
-- **Bạn ở pot nhiều người với bài không khí.** Đã nói ở trên — không có fold equity, không bet.
+- **Bạn ở pot nhiều người với bài chưa có gì.** Đã nói ở trên — không có fold equity, không bet.
 - **Tay bài của bạn cần bảo vệ range check.** Đôi khi bạn cố ý check một tay bài mạnh để những cú check của bạn không tự động là yếu.
 
 Sự chuyển đổi tư duy biến bạn thành người thắng: **check không phải đầu hàng.** Người chơi giỏi check *rất nhiều*, có chủ đích, và điều đó khiến những cú bet của họ đáng sợ hơn hẳn khi chúng đến. Nếu bạn cảm thấy bắt buộc phải bet chỉ vì bạn raise preflop, phản xạ đó đang khiến bạn mất tiền.
@@ -177,9 +177,9 @@ Sự chuyển đổi tư duy biến bạn thành người thắng: **check khôn
 
 Hai tình huống từ cùng một buổi chơi cho thấy cả hai mặt của quyết định.
 
-**Tình huống 1 — một cú c-bet mẫu mực.** Tôi raise ==A♣K♦== và big blind call. Flop: ==K♠ 7♦ 2♣.== Đó là board cao, khô, rời rạc thuộc về range của tôi — và tôi flop ra **top pair, top kicker**: K♦ của tôi tạo đôi với K♠, với lá Át là kicker tốt nhất có thể (năm lá tốt nhất = K♦ K♠ A♣ 7♦ 2♣). Tôi bet **một phần ba pot** như một range bet: nó bắt mọi tay bài trượt của anh ta trả giá và giữ những lá K yếu hơn cùng các đôi ở lại. Cú c-bet dễ dàng, có lời.
+**Tình huống 1 — một cú c-bet mẫu mực.** Tôi raise ==A♣K♦== và big blind (mù lớn) call. Flop: ==K♠ 7♦ 2♣.== Đó là board cao, khô, rời rạc thuộc về range của tôi — và tôi flop ra **top pair, top kicker**: K♦ của tôi tạo đôi với K♠, với lá Át là kicker (lá phụ) tốt nhất có thể (năm lá tốt nhất = K♦ K♠ A♣ 7♦ 2♣). Tôi bet **một phần ba pot** như một range bet: nó bắt mọi tay bài trượt của anh ta trả giá và giữ những lá K yếu hơn cùng các đôi ở lại. Cú c-bet dễ dàng, có lời.
 
-**Tình huống 2 — một cú check mẫu mực.** Cùng buổi, tôi raise ==A♥Q♥== và big blind call. Flop: ==7♠ 6♠ 5♦.== Board này nghiền nát chính những tay bài anh ta đã call — suited connector, đôi nhỏ và sảnh — trong khi tôi chỉ có Át cao, không đôi, không bài chờ (không có lá cơ nào trên board, nên không có cả thùng backdoor). Hai năm trước, hẳn tôi đã "tiếp tục" theo thói quen và bị raise. Giờ tôi **check và bỏ cuộc.** Nếu một lá turn an toàn đến và tôi nhặt được equity, delayed c-bet vẫn sẵn sàng; nếu không, tôi đã thua ở mức tối thiểu.
+**Tình huống 2 — một cú check mẫu mực.** Cùng buổi, tôi raise ==A♥Q♥== và big blind call. Flop: ==7♠ 6♠ 5♦.== Board này trúng đậm chính những tay bài anh ta đã call — suited connector (hai lá bài liên tiếp cùng chất), đôi nhỏ và sảnh — trong khi tôi chỉ có Át cao, không đôi, không bài chờ (không có lá cơ nào trên board, nên không có cả thùng backdoor). Hai năm trước, hẳn tôi đã "tiếp tục" theo thói quen và bị raise. Giờ tôi **check và bỏ cuộc.** Nếu một lá turn an toàn đến và tôi nhặt được equity, delayed c-bet vẫn sẵn sàng; nếu không, tôi đã thua ở mức tối thiểu.
 
 Cùng cú raise preflop, flop ngược nhau, nước đi đúng ngược nhau. Đó là toàn bộ bài học: **board quyết định, không phải việc bạn đã raise.**
 
@@ -197,7 +197,7 @@ Bảy lỗi lặp lại ở gần như mọi bàn: c-bet mọi flop theo quán t
 | **Bet lớn với range rộng** | Range rộng muốn sizing nhỏ, không phải lớn | Nhỏ trên board khô, lớn chỉ khi phân cực |
 | **C-bet nhẹ trong pot nhiều người** | Fold equity sụp đổ khi có thêm người | Chỉ value & bài chờ trước 2+ đối thủ |
 | **C-bet quá thường xuyên khi OOP** | Bạn không thực hiện được nhiều equity khi hành động trước | Check nhiều hơn, xây range check |
-| **Bet vào board đã trúng họ** | 7‑6‑5 nghiền nát range của họ, không phải của bạn | Check nhiều hơn; bet lớn và chọn lọc khi bet |
+| **Bet vào board đã trúng họ** | 7‑6‑5 trúng đậm range của họ, không phải của bạn | Check nhiều hơn; bet lớn và chọn lọc khi bet |
 | **Barrel "một phát rồi thôi"** | C-bet flop, luôn bỏ turn = dễ bị float | Có kế hoạch cho turn trước khi bắn |
 | **Triple barrel không có equity** | Bluff bay cả stack mà không có outs hay blocker | Bluff với equity dự phòng hoặc blocker tốt |
 
@@ -248,11 +248,11 @@ A. Delayed c-bet là khi người raise preflop check ở flop rồi bet ở tur
 
 **Q. Khi nào không nên c-bet?**
 
-A. Đừng c-bet theo mặc định khi board nghiền nát range đối thủ (board thấp liên kết — check nhiều hơn, bet lớn và chọn lọc khi bet), khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài không khí, hoặc khi tay bài của bạn nên ở lại để bảo vệ range check. Check ở những chỗ này không phải yếu — nó tiết kiệm chip và khiến những cú bet sau của bạn đáng tin hơn.
+A. Đừng c-bet theo mặc định khi board trúng đậm range đối thủ (board thấp liên kết — check nhiều hơn, bet lớn và chọn lọc khi bet), khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài chưa có gì, hoặc khi tay bài của bạn nên ở lại để bảo vệ range check. Check ở những chỗ này không phải yếu — nó tiết kiệm chip và khiến những cú bet sau của bạn đáng tin hơn.
 
 **Q. C-bet có phải là bluff không?**
 
-A. Đôi khi có, đôi khi không — đó chính là điểm mấu chốt. Nhiều cú c-bet là semi-bluff hoặc bluff thuần với tay bài đã trượt, bet vì đối thủ có lẽ cũng trượt. Những cú khác là value bet với bài mạnh. Một chiến thuật c-bet cân bằng trộn cả hai trên cùng những board, nên đối thủ không biết cú bet flop của bạn nghĩa là mạnh hay bài không khí.
+A. Đôi khi có, đôi khi không — đó chính là điểm mấu chốt. Nhiều cú c-bet là semi-bluff hoặc bluff thuần với tay bài đã trượt, bet vì đối thủ có lẽ cũng trượt. Những cú khác là value bet với bài mạnh. Một chiến thuật c-bet cân bằng trộn cả hai trên cùng những board, nên đối thủ không biết cú bet flop của bạn nghĩa là mạnh hay bài chưa có gì.
 
 **Q. Value bet trong poker là gì?**
 
@@ -268,8 +268,8 @@ A. Khoảng 55–70% cho c-bet flop là dải lành mạnh, cân bằng. Trên k
 
 1. **C-bet là cú bet ở flop của người raise preflop** — và nó hiệu quả vì tay bài trượt flop khoảng hai phần ba số lần.
 2. **Board quyết định.** Bet board cao, khô có lợi cho range của bạn; check board thấp, liên kết có lợi cho range đối thủ.
-3. **Lợi thế range đặt tần suất; lợi thế nut đặt size.** Bet thường trên board bạn áp đảo; bet lớn khi bạn cầm nhiều nuts hơn hoặc cần bắt bài chờ trả giá trên board ướt.
-4. **Nhỏ (⅓) trên board khô, lớn (⅔+) trên board ướt.** C-bet ít hơn khi không có vị trí nếu là người raise duy nhất (là người 3-bet ở OOP thì lật lên hơn 97% trên ba board chúng tôi đã solve), và ít hơn nhiều trong pot nhiều người.
+3. **Lợi thế range đặt tần suất; lợi thế nut đặt size.** Bet thường trên board bạn áp đảo; bet lớn khi bạn cầm nhiều nuts (tay bài mạnh nhất có thể trên board này) hơn hoặc cần bắt bài chờ trả giá trên board ướt.
+4. **Nhỏ (⅓) trên board khô, lớn (⅔+) trên board ướt.** C-bet ít hơn khi không có vị trí nếu là người raise duy nhất (là người 3-bet ở OOP thì lật lên hơn 97% trên ba board đã được solve), và ít hơn nhiều trong pot nhiều người.
 5. **Check là vũ khí.** Người chơi giỏi nhất check thường xuyên và có chủ đích — c-bet là con dao mổ, không phải cái búa.
 
 Làm đúng điều này và bạn ngừng đốt pot trên những board chưa bao giờ là của bạn để bet. Ghép c-bet sắc bén với một [lối chơi 3-bet](/vi/blog/holdem-3bet) vững, ý thức thực sự về [vị trí](/vi/blog/holdem-position-play), và [khung chiến thuật](/vi/blog/holdem-strategy) đầy đủ, và lối chơi flop của bạn lặng lẽ bỏ xa đám đông "bet mọi flop".

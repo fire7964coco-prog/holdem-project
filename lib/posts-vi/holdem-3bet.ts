@@ -36,12 +36,12 @@ QQ+, AK | Lõi value gần như ai cũng đồng ý
 
 ## 3-bet trong poker là gì — vì sao gọi là "3"?
 
-**3-bet là lần re-raise đầu tiên trước flop** — bạn raise lại (tố lại) một người đã open-raise. Nếu ai đó open lên 3 big blind và bạn nâng lên 9, đó là một cú 3-bet.
+**3-bet là lần re-raise đầu tiên trước flop** — bạn raise lại (tố lại) một người đã open-raise. Nếu ai đó open lên 3 big blind (mù lớn) và bạn nâng lên 9, đó là một cú 3-bet.
 
 Vậy vì sao gọi là *ba*-bet khi nó chỉ là cú raise thứ hai? Vì cái tên đếm **số cược trong chuỗi, không phải số raise.** Big blind là một khoản cược bắt buộc — đó là ==cược thứ nhất==. Open-raise là ==cược thứ hai==. Cú re-raise của bạn là ==cược thứ ba== — 3-bet. Lần theo chuỗi đi lên và phần từ vựng còn lại tự vào chỗ:
 
 - **4-bet** — cú re-raise *đè lên* một 3-bet (cược thứ tư). Rất mạnh hoặc phân cực.
-- **5-bet** — cú re-raise đè lên một 4-bet. Ở 100 big blind thường là all-in.
+- **5-bet** — cú re-raise đè lên một 4-bet. Ở 100 big blind thường là all-in (tất tay).
 - **Cold 4-bet** — một cú 4-bet từ người chưa raise lần nào (ví dụ UTG open, bạn 3-bet, button 4-bet "cold"). Nó gào lên sức mạnh.
 
 Đó là toàn bộ cái thang. Mọi thứ còn lại trong bài là về nấc đầu tiên — khi nào leo lên, leo cao bao nhiêu, và làm gì khi ai đó leo lên đầu bạn. Nếu các [hành động cược](/vi/blog/holdem-betting-actions) cơ bản check, call và raise còn mơ hồ, hãy bắt đầu ở đó rồi quay lại.
@@ -50,9 +50,9 @@ Vậy vì sao gọi là *ba*-bet khi nó chỉ là cú raise thứ hai? Vì cái
 
 ## Vì sao phải 3-bet? 3-bet thực sự làm được gì?
 
-Call một cú open-raise (gọi là **flat**) giữ bạn trong pot, nhưng 3-bet làm được bốn việc mà flat không thể: thắng pot ngay lập tức, xây pot lớn với bài mạnh nhất, giành quyền chủ động cược, và từ chối equity lẫn thông tin của đối thủ. Cụ thể:
+Call một cú open-raise (gọi là **flat**) giữ bạn trong pot, nhưng 3-bet làm được bốn việc mà flat không thể: thắng pot ngay lập tức, xây pot lớn với bài mạnh nhất, giành quyền chủ động cược, và từ chối đối thủ phần equity (phần pot kỳ vọng, tính cả khi chia pot) lẫn thông tin. Cụ thể:
 
-1. **Nó thắng pot ngay lập tức, thường xuyên.** Một phần đáng kể số lần, người raise fold và bạn thu pot trước flop không cần showdown. Flat không bao giờ làm được điều này.
+1. **Nó thắng pot ngay lập tức, thường xuyên.** Một phần đáng kể số lần, người raise fold và bạn thu pot trước flop không cần showdown (lật bài). Flat không bao giờ làm được điều này.
 2. **Nó xây pot lớn với những tay bài mạnh nhất của bạn.** Khi bạn cầm đôi Át hay đôi K, flat để ba người khác vào với giá rẻ. 3-bet cô lập người raise và đưa tiền vào pot khi bạn là cửa trên áp đảo.
 3. **Nó giành quyền chủ động cược.** Bạn trở thành kẻ tấn công dẫn cược ở mọi vòng — và trước một người open rộng, áp lực đó in ra tiền.
 4. **Nó từ chối equity và thông tin.** Một cú raise bắt đối thủ trả giá để tiếp tục thay vì cho họ xem flop rẻ với một tay bài có thể đánh bại bạn.
@@ -148,7 +148,7 @@ Phép tính được để lộ ra có chủ đích vì đó là chỗ người 
 
 </div>
 
-Điểm rút ra lớn: **flat là hợp lý khi có vị trí** — solver hiện đại giữ một range flat lành mạnh ở button vì bạn hành động cuối ở mọi vòng cược postflop và chỉ còn hai blind phía sau, nên rủi ro bị squeeze nhỏ và bạn có thể xem flop có lời. Không có vị trí thì yếu hơn, nhưng với một phân nhánh quan trọng: từ **small blind**, nghiêng về *3-bet hoặc fold* với range **linear** hơn: call rộng khi OOP thực hiện equity kém và tạo ra một range yếu, dễ bị giới hạn, nên bạn raise phần trên của range và buông phần còn lại. **Big blind** là ngoại lệ — vì bạn khép vòng cược và đã được giá, bạn phòng thủ bằng cách *call* rộng hơn nhiều ở đó, nhất là trước những cú steal từ vị trí muộn. Điều đó khiến 3-bet từ big blind của bạn tương đối **polarized**: bài mạnh và bluff, phần giữa thì flat. Vị trí, một lần nữa, thay đổi mọi thứ — cùng bài học với [cẩm nang vị trí](/vi/blog/holdem-position-play).
+Điểm rút ra lớn: **flat là hợp lý khi có vị trí** — solver hiện đại giữ một range flat lành mạnh ở button vì bạn hành động cuối ở mọi vòng cược postflop và chỉ còn hai blind phía sau, nên rủi ro bị squeeze nhỏ và bạn có thể xem flop có lời. Không có vị trí thì yếu hơn, nhưng với một phân nhánh quan trọng: từ **small blind (mù nhỏ)**, nghiêng về *3-bet hoặc fold* với range **linear** hơn: call rộng khi OOP thực hiện equity kém và tạo ra một range yếu, dễ bị giới hạn, nên bạn raise phần trên của range và buông phần còn lại. **Big blind** là ngoại lệ — vì bạn khép vòng cược và đã được giá, bạn phòng thủ bằng cách *call* rộng hơn nhiều ở đó, nhất là trước những cú steal từ vị trí muộn. Điều đó khiến 3-bet từ big blind của bạn tương đối **polarized**: bài mạnh và bluff, phần giữa thì flat. Vị trí, một lần nữa, thay đổi mọi thứ — cùng bài học với [cẩm nang vị trí](/vi/blog/holdem-position-play).
 
 ---
 
@@ -197,7 +197,7 @@ Giờ đổi lại. MDF giả định một đối thủ *cân bằng*. Ở mứ
 Đủ lý thuyết rồi — đây là một ván đầy đủ với các con số, để bạn thấy toàn bộ dòng chảy. Cash $1/$2, stack sâu 100bb.
 
 - **Preflop:** Một cutoff lỏng open lên ==$6== (3bb). Tôi ở button với ==A♠Q♠==. Đây là một cú **3-bet value** rõ ràng trước một cú open rộng từ vị trí muộn, và tôi có vị trí, nên tôi nâng lên ==$18== (3x). Hai blind fold; cutoff call. Pot là $39.
-- **Flop:** ==Q♦ 8♣ 4♥.== Tôi flop **top pair, top kicker** — A♠Q♠ của tôi tạo đôi Q với kicker tốt nhất có thể (lá Át). Năm lá tốt nhất: Q♠ Q♦ A♠ 8♣ 4♥ = một đôi (Q) với kicker Át. Trước range gồm Q yếu hơn, đôi 8 và float của anh ta, tôi dẫn trước rất xa.
+- **Flop:** ==Q♦ 8♣ 4♥.== Tôi flop **top pair, top kicker** — A♠Q♠ của tôi tạo đôi Q với kicker (lá phụ) tốt nhất có thể (lá Át). Năm lá tốt nhất: Q♠ Q♦ A♠ 8♣ 4♥ = một đôi Q (one pair) với kicker Át. Trước range gồm Q yếu hơn, đôi 8 và float của anh ta, tôi dẫn trước rất xa.
 - **Điểm mấu chốt:** vì tôi 3-bet preflop, pot đã lớn và tôi dẫn cược, nên tôi bet tiếp để lấy value và được trả tiền bởi những lá Q yếu hơn và bài chờ. Nếu tôi chỉ *flat* preflop, ba người khác có thể đã xem flop đó, tay bài của tôi khó chơi hơn nhiều, và pot chỉ bằng một phần nhỏ. Cú 3-bet là thứ biến top pair thành cả một stack.
 
 Giờ lật lại: nếu tôi 3-bet một tay **light** như A5s ở đó và cutoff **4-bet** lên $48 (khoảng 2,7x — nhỉnh hơn mức 2,2–2,5x khi có vị trí một chút, vì cutoff hành động trước postflop), tôi đơn giản fold — cú bluff có blocker đã làm xong việc bằng cách cho tôi một cú laydown rẻ và sạch. Đó là kỷ luật khiến 3-bet light sinh lời thay vì vung tiền.
@@ -254,7 +254,7 @@ A. 5-bet là cú re-raise đè lên một 4-bet, và ở khoảng 100 big blind 
 
 **Q. Nên 3-bet với những bài nào?**
 
-A. Chia 3-bet của bạn thành value và bluff. Lõi value là QQ+ và AK, mở rộng tới JJ, TT, AQs và KQs trước những cú open rộng hơn. Với bluff, dùng tay bài đồng chất có blocker và khả năng chơi — A5s đến A2s và suited connector như 76s và 65s — không phải rác lệch chất ngẫu nhiên.
+A. Chia 3-bet của bạn thành value và bluff. Lõi value là QQ+ và AK, mở rộng tới JJ, TT, AQs và KQs trước những cú open rộng hơn. Với bluff, dùng tay bài đồng chất có blocker và khả năng chơi — A5s đến A2s và suited connector (hai lá bài liên tiếp cùng chất) như 76s và 65s — không phải rác lệch chất ngẫu nhiên.
 
 **Q. Khi nào nên 3-bet thay vì chỉ call (flat)?**
 

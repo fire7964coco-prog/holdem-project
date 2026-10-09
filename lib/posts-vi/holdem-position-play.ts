@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Góc nhìn từ trên xuống một bàn poker chuyên nghiệp với 9 vị trí được dán nhãn và nút dealer, ghế button và cutoff được tô sáng là vùng sinh lời",
   tags: ["in position poker", "out of position poker", "vị trí đẹp trong poker", "vị trí tốt trong poker", "vị trí tốt nhất trong poker", "position poker strategy", "chiến thuật vị trí poker", "bảo vệ big blind"],
   content: `
-Mùa xuân năm ngoái, ở bàn $1/$2 quen thuộc, tôi chơi K♥Q♥ hai lần trong cùng một buổi — một lần từ big blind, một lần từ button — và hai ván đó dạy tôi về vị trí nhiều hơn bất kỳ video huấn luyện nào. Nếu bạn chưa rõ tên gọi [các vị trí trong poker](/vi/blog/holdem-positions), hãy đọc bài đó trước; bài này nói về việc phải làm gì với từng ghế.
+Mùa xuân năm ngoái, ở bàn $1/$2 quen thuộc, tôi chơi K♥Q♥ hai lần trong cùng một buổi — một lần từ big blind (mù lớn), một lần từ button — và hai ván đó dạy tôi về vị trí nhiều hơn bất kỳ video huấn luyện nào. Nếu bạn chưa rõ tên gọi [các vị trí trong poker](/vi/blog/holdem-positions), hãy đọc bài đó trước; bài này nói về việc phải làm gì với từng ghế.
 
 Từ big blind, tôi call (theo) một cú raise (tố) của button và flop ra top pair (đôi cao nhất) trên Q♠8♦4♣. Phải hành động trước ở mọi vòng cược, tôi check-call flop, check-call turn, và khi cú cược thứ ba (triple barrel) bay tới ở river, tôi nhìn chằm chằm xuống mặt nỉ rồi fold (bỏ bài). Có thể anh ta có bài, có thể không — ==r:out of position, tôi trả tiền hai vòng cược để chẳng biết được gì.==
 
@@ -34,7 +34,7 @@ Một tiếng sau, cũng K♥Q♥, lần này ở button. Tôi raise, big blind 
 
 **In position** nghĩa là bạn hành động **sau** đối thủ ở flop, turn và river — bạn được xem họ check, bet hay bỏ cuộc trước khi bỏ ra một chip. Vị trí luôn được đo so với **nút dealer (button)**: bạn ngồi càng gần phía bên phải của button theo chiều hành động, bạn hành động càng muộn, và bản thân button hành động cuối cùng ở mọi vòng cược postflop, được bảo đảm.
 
-Vị trí được quyết định preflop và không bao giờ đổi trong ván. Nếu bạn ở button và big blind call cú raise của bạn, bạn IP suốt cả ván. Nếu bạn open từ Under the Gun (UTG) và button call, bạn OOP ở mọi vòng cược cho đến showdown.
+Vị trí được quyết định preflop và không bao giờ đổi trong ván. Nếu bạn ở button và big blind call cú raise của bạn, bạn IP suốt cả ván. Nếu bạn open từ Under the Gun (UTG) và button call, bạn OOP ở mọi vòng cược cho đến showdown (lật bài).
 
 Chín ghế chia thành bốn khu vực lớn:
 
@@ -76,11 +76,11 @@ Vì vị trí biến cùng những lá bài thành nhiều tiền hơn. Cách nh
 | **In position** | ==g:**Thường cao hơn — tùy spot**== | Hành động sau → thấy tất cả → value bet và bluff đúng thời điểm |
 | **Out of position** | ==r:**Thường thấp hơn — có thể vượt 100%**== | Hành động trước → fold bài thắng, trả tiền cho bài thua, nhường lá miễn phí |
 
-Những nhãn đó là quy tắc kinh nghiệm, không phải định luật. Vị trí tạo ra lợi thế trung bình, nhưng range, board và diễn biến cược quyết định ghế nào thu về vượt hay thiếu equity trong một spot cụ thể.
+Những nhãn đó là quy tắc kinh nghiệm, không phải định luật. Vị trí tạo ra lợi thế trung bình, nhưng range, board và diễn biến cược quyết định ghế nào thu về vượt hay thiếu equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) trong một spot cụ thể.
 
 ![So sánh IP và OOP — Button (IP) hành động sau cùng, còn range, board và diễn biến cược quyết định mức equity thực hiện được chính xác của mỗi ghế](/images/holdem-position-play-ip-vs-oop.webp)
 
-Lấy 8♥7♥ trên flop K♥4♠2♥. In position, flush draw (chờ thùng) của bạn chơi rất đẹp: call một cú bet với giá rẻ, lấy lá miễn phí khi được check tới, hoặc bluff khi họ lộ điểm yếu hai lần. Out of position, cùng bài chờ đó rò rỉ: bet rồi đối mặt một cú raise, hoặc check rồi nhìn họ bắt bạn trả giá tối đa — hoặc tệ hơn, check rồi fold đúng lá bài lẽ ra đã hoàn thành thùng của bạn. Cùng chín outs, giá rất khác nhau.
+Lấy 8♥7♥ trên flop K♥4♠2♥. In position, flush draw (chờ thùng) của bạn chơi rất đẹp: call một cú bet với giá rẻ, lấy lá miễn phí khi được check tới, hoặc bluff khi họ lộ điểm yếu hai lần. Out of position, cùng bài chờ đó rò rỉ: bet rồi đối mặt một cú raise, hoặc check rồi nhìn họ bắt bạn trả giá tối đa — hoặc tệ hơn, check rồi fold đúng lá bài lẽ ra đã hoàn thành thùng (flush) của bạn. Cùng chín outs, giá rất khác nhau.
 
 Qua hàng nghìn ván, khoản rò rỉ đó tích lũy thành khác biệt lớn nhất giữa người thắng và người thua ở cùng trình độ. ==g:Người thắng không chỉ chơi bài tốt — họ chơi bài tốt ở vị trí tốt.==
 
@@ -105,7 +105,7 @@ Qua hàng nghìn ván, khoản rò rỉ đó tích lũy thành khác biệt lớ
 | **Small blind** | Âm — ghế ==r:**tệ nhất về cấu trúc để chơi một ván bài**== | Hành động đầu tiên ở mọi vòng cược postflop, nửa blind đã chết sẵn |
 | **Big blind** | ==r:**Thua nhiều chip thô nhất tính theo bb/100**== | Đặt trọn một blind mỗi vòng bàn — chơi hoàn hảo cũng chỉ giảm bớt khoản thua |
 
-Sự phân biệt này quan trọng: **big blind thua nhiều chip thô nhất trên 100 ván** đơn giản vì nó bị buộc đặt trọn một blind mỗi vòng bàn — không chiến thuật nào biến cược bắt buộc thành miễn phí. Nhưng **small blind là ghế tệ nhất để thực sự chơi**, vì bạn hành động đầu tiên ở mọi vòng cược postflop mà không có khoản giảm giá nào bù lại cho đáng. Con số bb/100 chính xác thay đổi theo mức cược và tập người chơi, nên hãy coi bất kỳ con số cụ thể nào là kết quả cơ sở dữ liệu điển hình chứ không phải định luật — nhưng *thứ hạng* thì nhất quán đến đáng ngạc nhiên.
+Sự phân biệt này quan trọng: **big blind thua nhiều chip thô nhất trên 100 ván** đơn giản vì nó bị buộc đặt trọn một blind (mù — cược bắt buộc) mỗi vòng bàn — không chiến thuật nào biến khoản đó thành miễn phí. Nhưng **small blind (mù nhỏ) là ghế tệ nhất để thực sự chơi**, vì bạn hành động đầu tiên ở mọi vòng cược postflop mà không có khoản giảm giá nào bù lại cho đáng. Con số bb/100 chính xác thay đổi theo mức cược và tập người chơi, nên hãy coi bất kỳ con số cụ thể nào là kết quả cơ sở dữ liệu điển hình chứ không phải định luật — nhưng *thứ hạng* thì nhất quán đến đáng ngạc nhiên.
 
 > **Mẹo ở bàn live:** Ở bàn $1/$2 live, người chơi thường xuyên limp ở button vì "tôi không có bài tốt lắm." Đó là bỏ phí miếng đất giá trị nhất trong poker. Ở button, open-raise hoặc fold — phần thưởng vị trí quá quý giá để limp cho qua.
 
@@ -131,11 +131,11 @@ Chơi tốt ở UTG chủ yếu là kiềm chế:
 
 Cú open-limp thất bại ở ba điểm từ UTG:
 
-1. **Nó mời cả bàn vào** với pot odds hoàn hảo, nên bạn flop trước bốn tay bài ngẫu nhiên khi đang OOP.
+1. **Nó mời cả bàn vào** với pot odds (tỷ lệ pot — pot chia cho số tiền phải call) hoàn hảo, nên bạn flop trước bốn tay bài ngẫu nhiên khi đang OOP.
 2. **Nó giới hạn range mà người khác cảm nhận về bạn** — người chơi tinh ý tấn công limper không ngừng, và bạn sẽ gặp những cú raise không thể tiếp tục một cách thoải mái.
 3. **Nó không thắng gì preflop.** Một cú raise có thể lấy hai blind ngay; một cú limp thì không bao giờ.
 
-Có một ngoại lệ hẹp ở những bàn live rất bị động — limp theo sau các limper khác với đôi nhỏ và suited connector để xem flop nhiều người với giá rẻ — nhưng *open*-limp ở UTG là lỗ hổng ở hầu như mọi bàn với stack bình thường. Lập luận đầy đủ, kể cả khi nào over-limp thực sự ổn, nằm trong [bài về limp](/vi/blog/holdem-limping).
+Có một ngoại lệ hẹp ở những bàn live rất bị động — limp theo sau các limper khác với đôi nhỏ và suited connector (hai lá bài liên tiếp cùng chất) để xem flop nhiều người với giá rẻ — nhưng *open*-limp ở UTG là lỗ hổng ở hầu như mọi bàn với stack bình thường. Lập luận đầy đủ, kể cả khi nào over-limp thực sự ổn, nằm trong [bài về limp](/vi/blog/holdem-limping).
 
 ---
 
@@ -147,7 +147,7 @@ Vị trí sớm là nơi bạn phòng thủ; vị trí muộn — trái nghĩa c
 
 - **Steal từ cutoff:** raise ~2,2–2,5× với range rộng khi được fold tới — nhưng nhớ rằng button vẫn rình phía sau bạn.
 - **Steal từ button:** còn rộng hơn — những tay bài như K7s, Q9s và A2o trở thành cú open có lời vì cả hai blind OOP trước bạn mãi mãi.
-- **Tôn trọng cú resteal:** những blind 3-bet hung hãn cắt vào lợi nhuận steal của bạn; trước họ, siết nhẹ lại và 4-bet với các ứng viên tốt nhất.
+- **Tôn trọng cú resteal:** những blind 3-bet (re-raise, tố lại) hung hãn cắt vào lợi nhuận steal của bạn; trước họ, siết nhẹ lại và 4-bet với các ứng viên tốt nhất.
 
 ![Một người chơi vị trí muộn ở button đẩy cú raise về phía trước trong khi cả hai blind fold — một cú cướp blind kinh điển](/images/holdem-position-play-blind-steal.webp "Cướp blind từ button khi cả bàn fold tới")
 
@@ -185,7 +185,7 @@ Phần lớn bài hướng dẫn dừng ở "tránh chơi OOP." Được thôi �
 
 **1. [Check-raise](/vi/blog/low-board-check-raise) là vũ khí cân bằng của bạn.** Đó là thứ OOP có mà IP không có: vì họ sẽ bet khi được check tới, ==g:một cú check-raise quay chế độ lái tự động theo vị trí của họ lại chống chính họ.== Xây range một cách trung thực — bài mạnh (set, hai đôi) cộng bài chờ có equity thật (sảnh hở hai đầu (OESD), flush draw) — để nó không bao giờ toàn bluff hay toàn value.
 
-**2. Giao cho mỗi cú bet một nhiệm vụ — và chọn cỡ theo spot.** Không có một cỡ cược OOP duy nhất. Trong các pot raise đơn chúng tôi đã solve, người chơi OOP khi bet phần lớn chọn khoảng một phần ba pot (79,6% range của small blind chọn cỡ đó trên A♠A♥6♦, một board có đôi Át nghiêng mạnh về người raise). Trong pot 3-bet, người 3-bet ở OOP vẫn ưu tiên cỡ nhỏ trên A♦K♠2♥ (57,8%) nhưng chuyển sang hai phần ba pot trên Q♥10♥7♠ và 8♦5♣2♠. Cỡ lớn hơn dùng để từ chối những lá miễn phí và cú float rẻ mà vị trí lẽ ra cho phép đối thủ lấy; cỡ nhỏ cho phép bạn bet một range rộng với giá rẻ. Thứ thua là bet không có kế hoạch — mỗi vòng cược bạn trôi qua thêm đều có lợi cho người hành động sau.
+**2. Giao cho mỗi cú bet một nhiệm vụ — và chọn cỡ theo spot.** Không có một cỡ cược OOP duy nhất. Trong các pot raise đơn đã được solve, người chơi OOP khi bet phần lớn chọn khoảng một phần ba pot (79,6% range của small blind chọn cỡ đó trên A♠A♥6♦, một board có đôi Át nghiêng mạnh về người raise). Trong pot 3-bet, người 3-bet ở OOP vẫn ưu tiên cỡ nhỏ trên A♦K♠2♥ (57,8%) nhưng chuyển sang hai phần ba pot trên Q♥10♥7♠ và 8♦5♣2♠. Cỡ lớn hơn dùng để từ chối những lá miễn phí và cú float rẻ mà vị trí lẽ ra cho phép đối thủ lấy; cỡ nhỏ cho phép bạn bet một range rộng với giá rẻ. Thứ thua là bet không có kế hoạch — mỗi vòng cược bạn trôi qua thêm đều có lợi cho người hành động sau.
 
 **3. Kiểm soát pot nghĩa là check nhiều hơn, call nhiều hơn và fold sớm hơn.** Bài sức mạnh trung bình khi OOP muốn showdown rẻ. Đường check-call đến được đó; đường bet-rồi-bị-raise thì không. Và khi cú cược thứ ba bay tới mà bài bạn chưa cải thiện, hãy nhớ bài trung bình khi OOP thực sự là gì: ==r:bluff-catcher thu về thiếu equity.== Fold river khi OOP thường xuyên hơn cảm giác tự nhiên thường là đúng.
 
@@ -201,15 +201,15 @@ Big blind phòng thủ rộng trước những cú steal từ vị trí muộn v
 
 ## Vị trí ảnh hưởng đến tần suất c-bet ra sao?
 
-Rất nhiều. C-bet (continuation bet — cược tiếp tục) về bản chất là một nước đi dựa trên thông tin, và thông tin chính là thứ vị trí cung cấp: có vị trí, bạn c-bet rộng và an toàn; không có vị trí trong pot raise đơn, bạn phải chọn lọc hơn nhiều; còn khi là người 3-bet ở OOP, lợi thế range cho phép bạn c-bet gần như mọi flop trên các board chúng tôi đã chạy.
+Rất nhiều. C-bet (continuation bet — cược tiếp tục) về bản chất là một nước đi dựa trên thông tin, và thông tin chính là thứ vị trí cung cấp: có vị trí, bạn c-bet rộng và an toàn; không có vị trí trong pot raise đơn, bạn phải chọn lọc hơn nhiều; còn khi là người 3-bet ở OOP, lợi thế range cho phép bạn c-bet gần như mọi flop trên các board đã được chạy.
 
 | Tình huống | Tần suất c-bet solver điển hình (flop) |
 |---|---|
 | **IP (BTN/CO trước blind phòng thủ)** | **~65–75%** số board |
-| OOP với tư cách người 3-bet (pot 3-bet từ blind) | Rất cao — trong các lần chạy solver của chúng tôi, big blind c-bet hơn 97% số lần trên cả Q♥10♥7♠ và 8♦5♣2♠ — ở cỡ hai phần ba pot; cỡ một phần ba dưới 1% (trên A♦K♠2♥ cỡ một phần ba lại dẫn đầu, 57,8%) |
+| OOP với tư cách người 3-bet (pot 3-bet từ blind) | Rất cao — trong các lần chạy solver, big blind c-bet hơn 97% số lần trên cả Q♥10♥7♠ và 8♦5♣2♠ — ở cỡ hai phần ba pot; cỡ một phần ba dưới 1% (trên A♦K♠2♥ cỡ một phần ba lại dẫn đầu, 57,8%) |
 | OOP là người raise trước IP call (pot raise đơn) | ~30–45% — chọn lọc nhất |
 
-In position, bạn có thể c-bet một range rộng — gồm cả bài không khí và bài chờ backdoor — vì đối thủ phải phản ứng mà không biết nước đi kế tiếp của bạn, và khi bị call bạn vẫn hành động sau ở turn. Out of position, cùng cú bet đó rủi ro hơn: một cú raise kết thúc cú bluff của bạn, và một cú call để bạn phải đoán trước ở mọi vòng còn lại. Đó là lý do c-bet mù quáng 100% "vì tôi đã raise preflop" đốt tiền khi OOP trong pot raise đơn — hàng gần 100% ở trên thuộc về người 3-bet, người có lợi thế range cho phép điều đó.
+In position, bạn có thể c-bet một range rộng — gồm cả bài chưa có gì (air) và bài chờ backdoor — vì đối thủ phải phản ứng mà không biết nước đi kế tiếp của bạn, và khi bị call bạn vẫn hành động sau ở turn. Out of position, cùng cú bet đó rủi ro hơn: một cú raise kết thúc cú bluff của bạn, và một cú call để bạn phải đoán trước ở mọi vòng còn lại. Đó là lý do c-bet mù quáng 100% "vì tôi đã raise preflop" đốt tiền khi OOP trong pot raise đơn — hàng gần 100% ở trên thuộc về người 3-bet, người có lợi thế range cho phép điều đó.
 
 Khung đầy đủ về cỡ cược và kết cấu board (board texture) nằm trong [bài hướng dẫn c-bet](/vi/blog/holdem-continuation-bet).
 
@@ -278,7 +278,7 @@ A. Từ UTG ở bàn full ring, open khoảng top ~13% tay bài — xây quanh �
 
 **Q. Vị trí ảnh hưởng đến tần suất c-bet như thế nào?**
 
-A. In position (button hoặc cutoff), solver c-bet khoảng 65–75% số flop — bạn hành động sau ở mọi vòng sau đó, nên bet rộng, kể cả bài không khí, an toàn hơn nhiều so với khi out of position (con số đó là trước người phòng thủ blind; một cú check-raise vẫn có thể trừng phạt nó). Out of position trong pot raise đơn, con số giảm xuống khoảng 30–45%, vì một cú raise có thể kết thúc cú bluff của bạn và một cú call để bạn phải đoán trước ở turn và river (là người 3-bet ở out of position thì khác — lợi thế range cho phép bạn c-bet gần như mọi flop trên các board chúng tôi đã chạy). C-bet cùng tần suất khi OOP như khi IP là một trong những lỗ hổng phổ biến và tốn kém nhất.
+A. In position (button hoặc cutoff), solver c-bet khoảng 65–75% số flop — bạn hành động sau ở mọi vòng sau đó, nên bet rộng, kể cả bài chưa có gì, an toàn hơn nhiều so với khi out of position (con số đó là trước người phòng thủ blind; một cú check-raise vẫn có thể trừng phạt nó). Out of position trong pot raise đơn, con số giảm xuống khoảng 30–45%, vì một cú raise có thể kết thúc cú bluff của bạn và một cú call để bạn phải đoán trước ở turn và river (là người 3-bet ở out of position thì khác — lợi thế range cho phép bạn c-bet gần như mọi flop trên các board đã được chạy). C-bet cùng tần suất khi OOP như khi IP là một trong những lỗ hổng phổ biến và tốn kém nhất.
 
 **Q. Có nên luôn 3-bet từ small blind không?**
 
@@ -290,7 +290,7 @@ A. Khi bạn vào một pot đã bị raise, phần lớn là có — mặc đ�
 
 1. **Vị trí cải thiện mức equity thực hiện được tính trung bình.** Không ghế nào cố định trên hay dưới 100%; range, board và diễn biến cược định ra con số. Lợi thế thông thường đến từ hành động sau, không phải từ lá bài tốt hơn.
 2. **Range trượt theo vị trí.** UTG open ~13%, button ==g:~43%== — và mỗi ghế ở giữa là một bậc thang. ==r:Chơi bài của button từ UTG là rỉ chip.==
-3. **Button là ghế tốt nhất; hai blind là tệ nhất.** BB thua nhiều chip thô nhất (cược bắt buộc); SB là ghế tệ nhất để thực sự chơi (hành động đầu tiên ở mọi vòng cược postflop). Bảo vệ button của bạn, và gặp một cú raise từ small blind, 3-bet hoặc fold gần như mọi lần.
+3. **Button là ghế tốt nhất; hai blind là tệ nhất.** BB thua nhiều chip thô nhất (cược bắt buộc); SB là ghế tệ nhất để thực sự chơi (hành động đầu tiên ở mọi vòng cược postflop). Bảo vệ button của bạn, và khi bạn ở small blind và gặp một cú raise, 3-bet hoặc fold gần như mọi lần.
 4. **OOP không vô vọng — nó đòi hỏi kỷ luật.** Check-raise làm vũ khí cân bằng, chọn cỡ cược theo board và loại pot, kiểm soát pot với bài trung bình, và fold river nhiều hơn cảm giác tự nhiên.
 5. **Raise hoặc fold ở under the gun.** Open-limp ở UTG kết hợp ghế preflop tệ nhất với đường chơi yếu nhất.
 6. **6-max nén tấm bản đồ.** UTG ở 6-max chơi như lojack ở full ring (~17%) — hiệu chỉnh lại khi bạn đổi định dạng.

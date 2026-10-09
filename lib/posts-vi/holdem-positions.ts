@@ -17,11 +17,11 @@ export const POST: Post = {
   imageAlt: "Góc nhìn từ trên xuống một bàn poker chuyên nghiệp với 9 vị trí người chơi, chồng chip và nút dealer màu vàng",
   tags: ["vị trí trong poker", "các vị trí trong poker", "poker positions", "position poker", "utg poker là gì", "vị trí poker", "cutoff poker", "hijack poker", "button poker", "poker positions 6 max"],
   content: `
-Ván cash game live đầu tiên của tôi, tôi ngồi ở chỗ mà sau này mới biết là UTG. Tôi nhìn xuống thấy J♥ J♠ và raise (tố). Hijack call (theo). Cutoff call. Button call. Big blind 3-bet. Tôi không biết phải làm gì — tôi call và rỉ chip suốt ba vòng cược.
+Ván cash game live đầu tiên của tôi, tôi ngồi ở chỗ mà sau này mới biết là UTG. Tôi nhìn xuống thấy J♥ J♠ và raise (tố). Hijack call (theo). Cutoff call. Button call. Big blind 3-bet (re-raise, tố lại). Tôi không biết phải làm gì — tôi call và rỉ chip suốt ba vòng cược.
 
 Ba ván sau, tôi ngồi ở button với đúng J♥ J♠ ấy. Tôi raise. Tất cả fold (bỏ bài). Tôi thắng $14 mà chưa cần nhìn thấy flop.
 
-Cùng một tay bài. Kết quả hoàn toàn khác. Thứ duy nhất thay đổi là chỗ ngồi của tôi — và đêm đó tôi nhận ra mình thậm chí không biết các ghế được *gọi* là gì, nói chi đến ý nghĩa của chúng. Nếu bạn vẫn đang học một ván bài chạy từ lúc chia đến showdown ra sao, hãy bắt đầu với [luật chơi Texas Hold'em](/vi/blog/texas-holdem-rules-for-beginners); bài này là sơ đồ ghế mà bài luật ấy mặc định bạn đã biết.
+Cùng một tay bài. Kết quả hoàn toàn khác. Thứ duy nhất thay đổi là chỗ ngồi của tôi — và đêm đó tôi nhận ra mình thậm chí không biết các ghế được *gọi* là gì, nói chi đến ý nghĩa của chúng. Nếu bạn vẫn đang học một ván bài chạy từ lúc chia đến showdown (lật bài) ra sao, hãy bắt đầu với [luật chơi Texas Hold'em](/vi/blog/texas-holdem-rules-for-beginners); bài này là sơ đồ ghế mà bài luật ấy mặc định bạn đã biết.
 
 ---
 

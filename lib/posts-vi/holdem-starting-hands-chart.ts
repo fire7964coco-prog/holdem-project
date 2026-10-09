@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Buổi chơi live đầu tiên, tôi nhận A♣ 4♦ và nghĩ "có Át, tệ đến đâu được chứ?"
 
-Tôi call (theo) một cú raise (tố), trượt flop, call tiếp, trượt turn. Đến river tôi đã mất 40 big blind mà trong tay chẳng có gì.
+Tôi call (theo) một cú raise (tố), trượt flop, call tiếp, trượt turn. Đến river tôi đã mất 40 big blind (mù lớn) mà trong tay chẳng có gì.
 
 Đây là phép toán khó chịu đứng sau ván bài đó: ==Texas Hold'em có 169 loại bài khởi đầu khác nhau — và khoảng 80% số tay bài bạn được chia nên fold (bỏ bài) ngay preflop.== Học xem tay bài nào nên chơi — và từ ghế nào — là bước tiến lớn nhất người mới đạt được trong tháng đầu tiên. Chọn bài khởi đầu là quyết định thứ hai trong [5 quyết định](/vi/blog/holdem-strategy) đứng sau mọi ván bài thắng: làm đúng và mọi vòng cược sau đó đều dễ hơn.
 
@@ -57,7 +57,7 @@ Trang này là phiên bản trọn gói: 10 tay bài khởi đầu mạnh nhất
 
 ![Bốn tay bài khởi đầu premium của Texas Hold'em — đôi Át, đôi K, đôi Q và Át-K đồng chất — sáng vàng trên nỉ xanh đậm](/images/holdem-starting-hands-premium.webp "Nhóm premium — những tay bài bạn có thể raise từ mọi vị trí")
 
-==g:Với tay bài 1–5 (các đôi tẩy), gần như luôn raise và thường re-raise preflop để xây pot.== Với AK và AQ, mục tiêu là đưa ván về heads-up, nơi bài lớn của bạn có equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) tối đa. Những con số đáng nhớ: ==AK không bao giờ là cửa trên trước một đôi tẩy, nhưng trước 22–QQ nó không bao giờ bị bỏ xa== — cú "race" kinh điển. AK lệch chất có khoảng 46–47% trước 22–44, khoảng 45% trước 55–99, và khoảng 43% trước TT–QQ; AK đồng chất cộng thêm khoảng 2,5–3 điểm vào mỗi mốc (AKs trước 22, ở khoảng 50%, là thứ gần nhất với một cú tung đồng xu thật sự). Trước KK và AA khoảng cách rộng hơn nhiều — nhưng trước mọi đôi thấp hơn chúng, raise và re-raise với AK vẫn đúng.
+==g:Với tay bài 1–5 (các đôi tẩy), gần như luôn raise và thường re-raise preflop để xây pot.== Với AK và AQ, mục tiêu là đưa ván về heads-up, nơi bài lớn của bạn có equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) tối đa. Những con số đáng nhớ: ==AK hầu như không bao giờ là cửa trên trước một đôi tẩy, nhưng trước 22–QQ nó không bao giờ bị bỏ xa== — cú "race" kinh điển. AK lệch chất có khoảng 46–47% trước 22–44, khoảng 45% trước 55–99, và khoảng 43% trước TT–QQ; AK đồng chất cộng thêm khoảng 2,5–3 điểm vào mỗi mốc (AKs trước 22, ở khoảng 50%, là thứ gần nhất với một cú tung đồng xu thật sự). Trước KK và AA khoảng cách rộng hơn nhiều — nhưng trước mọi đôi thấp hơn chúng, raise và re-raise với AK vẫn đúng.
 
 Pocket rockets, cowboys, big slick — nếu tiếng lóng ở bàn còn lạ với bạn, bài [giải thích từ vựng ở bàn poker](/vi/blog/holdem-glossary) có đủ mọi biệt danh tay bài. Và nếu bạn còn mơ hồ về thứ gì thắng thứ gì khi board đã mở, hãy xem lại [thứ hạng tay bài poker](/vi/blog/holdem-hand-rankings) trước.
 
@@ -125,9 +125,9 @@ Những tay bài trông mạnh nhưng là fold hoặc ở rìa từ UTG:
 
 Button là ghế tốt nhất trong poker. ==g:Bạn hành động cuối ở flop, turn và river trong mọi ván.== Lợi thế đó cho phép bạn thêm vào một cách có lời:
 
-- **Đôi tẩy nhỏ (22–66)** — hy vọng flop ra set
+- **Đôi tẩy nhỏ (22–66)** — hy vọng flop ra set (cầm đôi trên tay + 1 lá trên board)
 - **Bất kỳ Át đồng chất nào (A2s–A9s)** — tiềm năng nut flush draw
-- **Suited connector (T9s, 98s, 87s)** — tay bài rẻ, implied odds (tỷ lệ cược ngầm) cao
+- **Suited connector (hai lá bài liên tiếp cùng chất: T9s, 98s, 87s)** — tay bài rẻ, implied odds (tỷ lệ cược ngầm) cao
 - **Broadway lệch chất yếu hơn (KTo, QJo)** — chỉ ở vị trí muộn, không bao giờ ở ghế sớm
 
 Quy tắc then chốt: ==là bài open, những tay bài đầu cơ này cần vị trí để có lời==. Và nếu một người ở UTG raise trước bạn, phần lớn chúng đi thẳng vào đống bài bỏ — bạn sẽ phải trả giá một cú raise để chơi tay bài đầu cơ trước một range mạnh, và flop rẻ chúng cần đã biến mất.
@@ -147,7 +147,7 @@ AJo, KQo = fold từ ghế đầu tiên | AJo, KQo = open tiêu chuẩn từ gh�
 Bài đầu cơ chủ yếu chỉ CO/BTN | Bài đầu cơ chơi được sớm hơn một ghế
 :::
 
-Sai lầm cần tránh là dùng bảng 9-max ở bàn 6-max: bạn sẽ fold những tay bài rõ ràng có lời và bị blind ăn mòn. Sai lầm ngược lại — range 6-max ở bàn full ring — là cách những lá Át yếu bị áp đảo suốt cả đêm. Khi bảng đã thành phản xạ, [chơi theo vị trí](/vi/blog/holdem-position-play) là kỹ năng biến những range rộng hơn ấy thành lợi nhuận thật: steal, cô lập và gây sức ép lên hai blind từ những ghế cho phép.
+Sai lầm cần tránh là dùng bảng 9-max ở bàn 6-max: bạn sẽ fold những tay bài rõ ràng có lời và bị blind (mù — cược bắt buộc) ăn mòn. Sai lầm ngược lại — range 6-max ở bàn full ring — là cách những lá Át yếu bị áp đảo suốt cả đêm. Khi bảng đã thành phản xạ, [chơi theo vị trí](/vi/blog/holdem-position-play) là kỹ năng biến những range rộng hơn ấy thành lợi nhuận thật: steal, cô lập và gây sức ép lên hai blind từ những ghế cho phép.
 
 ---
 
@@ -167,7 +167,7 @@ Một ghi chú về giới hạn của bài: đây là về bao nhiêu phần tr
 
 Tôi luôn mở sẵn kết quả solver khi học, và tôi vẫn đưa cho mọi người mới một bảng rút gọn trước. Đây là hai công cụ khác nhau, và biết dùng cái nào đáng giá hơn bản thân từng bảng.
 
-**Bảng GTO preflop** đến từ solver (PioSOLVER, GTO Wizard và các phần mềm tương tự). Chúng được xây để gần với mức không thể bị khai thác nhất có thể — và chúng đầy những tần suất trộn: open tay bài này 25% số lần, fold 75%, 3-bet tổ hợp này nhưng chỉ với những chất này. **Bảng cho người mới** — như bảng trên trang này — nén tất cả điều đó thành một hành động rõ ràng cho mỗi tay bài.
+**Bảng GTO preflop** đến từ solver (PioSOLVER, GTO Wizard và các phần mềm tương tự). Chúng được xây để gần với mức không thể bị khai thác nhất có thể — và chúng đầy những tần suất trộn: open tay bài này 25% số lần, fold 75%, 3-bet (re-raise, tố lại) tổ hợp này nhưng chỉ với những chất này. **Bảng cho người mới** — như bảng trên trang này — nén tất cả điều đó thành một hành động rõ ràng cho mỗi tay bài.
 
 :::compare
 Bảng GTO preflop | Bảng rút gọn cho người mới
@@ -188,7 +188,7 @@ Những tay bài khởi đầu tệ nhất trong poker không phải rác ngẫu
 
 | Loại tay bài | Vì sao thua | Người mới nghĩ gì |
 |-----------|-------------|---------------------|
-| ==r:Át yếu (A2o–A8o)== | Tạo đôi thứ nhì trước những lá Át tốt hơn | "Tôi có Át, chắc phải tốt" |
+| ==r:Át yếu (A2o–A8o)== | Cùng đôi Át nhưng thua kicker trước những lá Át tốt hơn | "Tôi có Át, chắc phải tốt" |
 | Connector lệch chất thấp (76o, 65o) | Hiếm khi trúng gọn, khó chơi khi trúng | "Nó có thể thành sảnh" |
 | K kèm rác lệch chất (K3o, K4o) | Bị áp đảo bởi mọi lá K tốt hơn | "K là lá bài lớn" |
 | Bất kỳ hai lá đồng chất nào | Thành thùng đến river chỉ ~6,4% số lần (flop ra thùng ~0,8%) | "Nhưng chúng cùng chất mà" |

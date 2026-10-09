@@ -28,7 +28,7 @@ Thứ cuối cùng biến tôi thành người chơi thắng không phải một
 :::stripe
 5 | Quyết định lặp lại trong mọi ván bài
 ~80% | Tay bài mà người chơi tight-aggressive bỏ preflop
-11,8% | Xác suất một đôi tẩy flop thành set (≈1 trong 8,5)
+11,8% | Xác suất một đôi tẩy flop thành set (cầm đôi trên tay + 1 lá trên board — ≈1 trong 8,5)
 0% | Xác suất một cú limp thắng pot ngay trước flop
 :::
 
@@ -38,7 +38,7 @@ Thứ cuối cùng biến tôi thành người chơi thắng không phải một
 
 Vì bàn poker không đưa cho bạn một thực đơn đánh số. Nó đưa cho bạn một chỗ ngồi, hai lá bài và một cú cược phải phản ứng. Mẹo chơi poker không sai — nhưng mẹo là cách học tệ nhất, vì mỗi ván bài bạn phải tự tìm xem mẹo nào áp dụng. Một **chiến thuật poker** thực sự là chuỗi 5 câu hỏi cố định, hỏi theo cùng một thứ tự ở mọi ván, và mỗi câu có đúng một bài hướng dẫn chuyên sâu.
 
-Mở bất kỳ bài "chiến thuật poker cho người mới" nào, bạn sẽ gặp một listicle: mười mẹo, chín nguyên tắc, bảy thói quen. Thay vì danh sách, hãy dùng một **xương sống quyết định**. Mỗi ván bài bạn chơi đều đi qua đúng 5 câu hỏi này theo đúng thứ tự này. Mỗi câu có một bài riêng trên trang — bài này là tấm bản đồ nối chúng lại:
+Mở bất kỳ bài "chiến thuật poker cho người mới" nào, bạn sẽ gặp một bài viết dạng danh sách: mười mẹo, chín nguyên tắc, bảy thói quen. Thay vì danh sách, hãy dùng một **xương sống quyết định**. Mỗi ván bài bạn chơi đều đi qua đúng 5 câu hỏi này theo đúng thứ tự này. Mỗi câu có một bài riêng trên trang — bài này là tấm bản đồ nối chúng lại:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -60,7 +60,7 @@ Mở bất kỳ bài "chiến thuật poker cho người mới" nào, bạn sẽ
 
 ![Một người chơi ngồi ở nút dealer với hai lá bài tẩy úp và một chồng chip, chỗ ngồi hành động cuối cùng ở mọi vòng cược postflop](/images/holdem-strategy-button-seat.webp "Button hành động cuối cùng ở mọi vòng cược postflop — chỗ ngồi sinh lời nhất bàn")
 
-Trước cả khi nhìn bài, thông tin quan trọng nhất đã được định sẵn: **chỗ ngồi của bạn.** Trong Hold'em, người hành động *cuối cùng* sau flop có lợi thế khổng lồ — họ thấy mọi người khác làm gì trước khi bỏ ra một chip. Đó là lý do [button](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") là chỗ ngồi sinh lời nhất trong game, còn hai ghế blind là kém nhất. Nếu bạn chưa quen tên từng ghế, [các vị trí trong poker](/vi/blog/holdem-positions) được giải thích đầy đủ ở bài riêng.
+Trước cả khi nhìn bài, thông tin quan trọng nhất đã được định sẵn: **chỗ ngồi của bạn.** Trong Hold'em, người hành động *cuối cùng* sau flop có lợi thế khổng lồ — họ thấy mọi người khác làm gì trước khi bỏ ra một chip. Đó là lý do [button](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") là chỗ ngồi sinh lời nhất trong game, còn hai ghế blind (mù — cược bắt buộc) là kém nhất. Nếu bạn chưa quen tên từng ghế, [các vị trí trong poker](/vi/blog/holdem-positions) được giải thích đầy đủ ở bài riêng.
 
 Hành động cuối cho phép bạn làm ba việc mà không ai ở vị trí sớm (EP) làm được:
 
@@ -82,7 +82,7 @@ Tay bài nào đủ chuẩn tùy thuộc vào vị trí của bạn (quyết đ�
 
 - **Luôn raise:** đôi lớn (từ A‑A xuống T‑T) và A‑K.
 - **Thường raise:** đôi trung, A‑Q và các bài broadway đồng chất mạnh (K‑Q, A‑J đồng chất) — càng ngồi muộn càng thoải mái hơn.
-- **Đầu cơ, tùy vị trí:** đôi tẩy nhỏ và suited connector (hai lá đồng chất liền số), những tay bài muốn vào pot nhiều người với giá rẻ (phần toán ở dưới).
+- **Đầu cơ, tùy vị trí:** đôi tẩy nhỏ và suited connector (hai lá bài liên tiếp cùng chất), những tay bài muốn vào pot nhiều người với giá rẻ (phần toán ở dưới).
 - **Fold:** gần như mọi thứ còn lại, nhất là bài rác lệch chất như J‑4, Q‑7, K‑3.
 
 Hướng dẫn [bài khởi đầu poker](/vi/blog/holdem-starting-hands-chart) biến quy tắc này thành một lưới màu bạn có thể học thuộc thật, còn [bảng bài khởi đầu theo vị trí](/vi/hand-chart) cho bạn tra ngay tay bài nào nên chơi ở ghế nào. Kỷ luật ở đây khiến mọi quyết định sau dễ hơn.
@@ -95,13 +95,13 @@ Hướng dẫn [bài khởi đầu poker](/vi/blog/holdem-starting-hands-chart) 
 
 Khi đã quyết định một tay bài đáng chơi, còn một quyết định thứ hai mà phần lớn người mới làm sai: vào pot *bằng cách nào*. Câu trả lời, gần như luôn luôn, là **raise — đừng limp.** Một cú raise có thể thắng pot ngay lập tức, giữ quyền chủ động cho flop và không biến bạn thành mục tiêu; một cú limp không làm được điều nào trong ba điều đó.
 
-[Limp](/vi/blog/holdem-limping) là chỉ call đúng mức big blind thay vì raise. Nó có vẻ an toàn và rẻ, và là một trong những thói quen đắt đỏ nhất trong poker, vì ba lý do:
+[Limp](/vi/blog/holdem-limping) là chỉ call đúng mức big blind (mù lớn) thay vì raise. Nó có vẻ an toàn và rẻ, và là một trong những thói quen đắt đỏ nhất trong poker, vì ba lý do:
 
 1. **Một cú limp không bao giờ thắng pot preflop.** Khi bạn raise đầu tiên, mọi người có thể fold và bạn thu hai khoản blind miễn phí. Limp, và cơ hội đó bằng đúng **không** — bạn vừa vứt đi cách thắng sạch sẽ nhất.
 2. **Bạn nhường quyền chủ động.** Người raise preflop được tiếp tục kể câu chuyện ở flop (quyết định 4). Limp, và bạn trao câu chuyện đó cho người khác.
 3. **Bạn tự vẽ bia lên người mình.** Người chơi giỏi raise lớn sau một limper để cô lập họ, rồi chơi lấn lướt họ khi có vị trí suốt cả ván. Một cú open-limp tuyên bố "ở đây có người chơi yếu, bị động."
 
-Mặc định sửa lỗi này rất thẳng: **nếu một tay bài đủ tốt để chơi, nó đủ tốt để raise; nếu không, fold.** Và khi người *khác* đã raise rồi, raise thêm lần nữa — một cú [3-bet](/vi/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") (re-raise, tố lại) — là cách bạn trừng phạt những cú open quá rộng và xây pot với các tay bài mạnh nhất. Ngoại lệ của mặc định raise-hay-fold là có thật, và mỗi ngoại lệ đều xoay quanh **giá**. *Over*-limp (limp theo sau) — call *sau* một người đã limp, khi có vị trí, với tay bài đầu cơ như đôi nhỏ — mua một chỗ rẻ trong pot nhiều người. **Phòng thủ big blind** là ngoại lệ lớn hơn: trước một cú open 2,5bb (heads-up, small blind đã fold, không ante) bạn ==đã đặt sẵn 1bb==, nên bạn call 1,5bb vào pot 4bb và trên giấy chỉ cần ==1,5 ÷ 5,5 = 27%== equity. Ở ngoài vị trí bạn sẽ thực hiện được ít hơn equity thô, nên hãy coi 27% là sàn, không phải đích. Và vì cú call của bạn *khép* vòng cược, một lát rộng của range BB nên flat call thay vì 3-bet hay fold. **Set-mining** với đôi nhỏ trước một cú raise khi stack sâu là ngoại lệ thứ ba (toán ở dưới). Đó là những khoản giảm giá, không phải chiến thuật — ngoài các tình huống như vậy, raise hoặc fold. Bản thân quy tắc vào pot đầu tiên là mặc định cho cash game stack bình thường: hoàn thành small blind trong pot chưa ai raise và cú open-limp ở button mà solver dùng khi stack giải đấu (tournament) ngắn là hai kiểu limp hợp lý chính mà quy tắc không bao trùm.
+Mặc định sửa lỗi này rất thẳng: **nếu một tay bài đủ tốt để chơi, nó đủ tốt để raise; nếu không, fold.** Và khi người *khác* đã raise rồi, raise thêm lần nữa — một cú [3-bet](/vi/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") (re-raise, tố lại) — là cách bạn trừng phạt những cú open quá rộng và xây pot với các tay bài mạnh nhất. Ngoại lệ của mặc định raise-hay-fold là có thật, và mỗi ngoại lệ đều xoay quanh **giá**. *Over*-limp (limp theo sau) — call *sau* một người đã limp, khi có vị trí, với tay bài đầu cơ như đôi nhỏ — mua một chỗ rẻ trong pot nhiều người. **Phòng thủ big blind** là ngoại lệ lớn hơn: trước một cú open 2,5bb (heads-up, small blind đã fold, không ante) bạn ==đã đặt sẵn 1bb==, nên bạn call 1,5bb vào pot 4bb và trên giấy chỉ cần ==1,5 ÷ 5,5 = 27%== equity (phần pot kỳ vọng của bạn, tính cả khi chia pot). Ở ngoài vị trí bạn sẽ thực hiện được ít hơn equity thô, nên hãy coi 27% là sàn, không phải đích. Và vì cú call của bạn *khép* vòng cược, một phần lớn range BB nên flat call thay vì 3-bet hay fold. **Set-mining** với đôi nhỏ trước một cú raise khi stack sâu là ngoại lệ thứ ba (toán ở dưới). Đó là những khoản giảm giá, không phải chiến thuật — ngoài các tình huống như vậy, raise hoặc fold. Bản thân quy tắc vào pot đầu tiên là mặc định cho cash game stack bình thường: hoàn thành small blind trong pot chưa ai raise và cú open-limp ở button mà solver dùng khi stack giải đấu (tournament) ngắn là hai kiểu limp hợp lý chính mà quy tắc không bao trùm.
 
 ---
 
@@ -115,7 +115,7 @@ C-bet hiệu quả vì *bạn* là người đã thể hiện sức mạnh prefl
 - **Kết cấu board (board texture)** — board khô (dry) trượt range của đối thủ ủng hộ việc cược; board ướt (wet), liên kết (connected) (9‑8‑7 với hai lá cùng chất) khớp với range call thì cần thận trọng.
 - **Số đối thủ** — heads-up bạn có thể cược thoải mái; trước hai người call trở lên, c-bet **dưới một nửa** số lần, vì ai đó đã dính *thứ gì đó* với board.
 
-Về kích cỡ, một cú cược nhỏ **25–35% pot** hợp khi bạn cược với range rộng trên board khô; một cú cược lớn hơn **65%+** hợp với range phân cực (polarized) gồm value và bluff trên board ướt hơn. Nếu bạn bị **raise** và không có gì trong tay, chuyện này chảy thẳng sang quyết định 5. Cơ chế của việc [check, cược và raise](/vi/blog/holdem-betting-actions) được nói kỹ trong bài về các hành động cược.
+Về kích cỡ, một cú cược nhỏ **25–35% pot** hợp khi bạn cược với range rộng trên board khô; một cú cược lớn hơn **65%+** hợp với range phân cực (polarized) gồm value và bluff trên board ướt hơn. Nếu bạn bị **raise** và không có gì trong tay, chuyện này đưa thẳng bạn đến quyết định 5. Cơ chế của việc [check, cược và raise](/vi/blog/holdem-betting-actions) được nói kỹ trong bài về các hành động cược.
 
 ---
 
