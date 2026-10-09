@@ -4,7 +4,7 @@
 - 라벨 추출: 라이브 `solver.holdemmaster.com/?lang=tr` Playwright 3회(사이드바·단계·예제 스팟 목록·결과 화면 innerText) + 솔버 소스 `presets.ts` titleTr/categoryTr 대조 → 스팟 13·그룹 3 이름 일치. 라이브 축어: Örnek spotlar(Study Spots) · ⚡ Sonuçları gör(View results) · Kendin hesapla · ① OOP range ② IP range ③ Board ④ Bet boyutu ⑤ Hesapla(Run Solver) · Sonuçlar(Results) · Günün sorusu(Daily Challenge) · Özel spot(Custom Spot) · Rastgele flop · 결과 화면 Check · Bet 1,8bb (%33 pot) · Aksiyon % · Aksiyon EV · Strateji · EQ · EV (bb) · EQR(앱도 그대로).
 - 반영: `app/tr/solver/faq.ts` «Solver ekranı Türkçe mi?» → «Evet …»(?lang=tr 안내 · 단계·스팟·Günün sorusu·Trainer 터키어 · Check/Bet/EQ/EV/EQR는 그대로) + Study Spots/Daily Challenge/Custom Spot/단계 라벨 치환 · `solver-client.tsx` STEPS 5 · 그룹 3 · 스팟 13 · «İngilizce bıraktık» → «Türkçe hâlleriyle birebir aynı» · `page.tsx` 주석 · 글 4편 «Örnek spotlar → <titleTr> → [⚡ Sonuçları gör]» · a-high «Bet 1,8bb (%33 pot)» + «(uygulama arayüzü şimdilik İngilizce)» 삭제. 스크립트 치환 각 1회(전역 3종은 회수 출력). `updated` 유지.
 - 문서: `tr-cluster-plan.md` §4-5 🔴 → ✅ · `vi-cluster-plan.md` §2-⑨·§3-B·§5 «🅶 A 앞» = 솔버 vi 배포됨 · 핸드오프(vi 도구 절 = `/vi/solver` 착수 조건 충족 · 새 세션 첫 지시 · 후기창 초안 tr·vi·ru · tr 회차 5 ✅).
-- 게이트: audit:hard --locale=tr 20/20 🔴 0 · check:gto tr = 기존 broadway 🔴 1(§4-5 기록 · ko↔EN 기존 차이 · 이번 변경 무관) · 빌드 exit 0 · 라이브 390 넘침 검사는 배포 뒤(아래).
+- 게이트: audit:hard --locale=tr 20/20 🔴 0 · check:gto tr = 기존 broadway 🔴 1(§4-5 기록 · ko↔EN 기존 차이 · 이번 변경 무관) · 빌드 exit 0 · 배포 `5bd992b9` → 라이브 `/tr/solver` Playwright: 390·1440 scrollWidth = clientWidth(넘침 0) · FAQ «Evet …» 라이브 · 영어 잔여 0. 🪶 390에서 스펙 표(Fiyat·Kurulum…) 오른쪽 셀이 잘려 보임 = 기존 레이아웃(이번 변경 무관 · 다른 로케일 랜딩도 같은 틀) — 손질은 별도.
 
 ## 2026-10-09 (3) — MA-374 FR 🅳 strat 판정·이행 (MB-209 · queue §2-AK) · EN-먼저 1자리 → 8로케일 전파
 
