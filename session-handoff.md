@@ -49,7 +49,7 @@
 
 ## 사장님 지시 대기 (자동 착수 금지)
 
-- **언어별 이벤트**(사장님 09-28): 다른 언어는 «Coming soon»(`review-event-panel.tsx` 비-KO 분기) 그대로 · 나중에 한 언어씩 — 1순위 ja(JOPT 오사카 등). 설계부터. 펍 글은 대상 아님. 참여 장치 쓰기 경로(참가 표시·투표)는 라이브에서 아직 아무도 안 눌러 봤다 — 첫 실사용이 /admin «후기·투표»에 잡히는지 확인.
+- **언어별 이벤트**(사장님 09-28): 다른 언어는 «Coming soon»(`review-event-panel.tsx` 비-KO 분기) 그대로 · 나중에 한 언어씩 — 1순위 ja(JOPT 오사카 등). 설계부터. 펍 글은 대상 아님. 참여 장치 쓰기 경로 = ✅ 실사용 확인(10-09 DB 조회): 투표 21표·19명(09-29~) · 참가 표시 2건(apl-seoul-winter-circuit-1) · 투표 댓글 0. 로컬 `.env.local`에 service role 키 있음(사장님 10-09 추가) → 조회는 사장님 허락 받고.
 - **C벳 필라 솔버 표**(10-03 (6) MB-157 · ko만) → 검수장 판정 대기 · 🪶 EN·로케일 전파 · CO·HJ·UTG·SB-BB 집계 요청 · 복기 출시 후 링크.
 - **de GTO 13편**(10-02 MB-150) · 🪶 «스팟 장면» 이미지 전파 판단 · ar·vi·tr 시리즈는 `settled-decisions` §1-E(vi는 10-09 클러스터로 해제). 🪶 구조 게이트 기존 🔴 = pt 1 · id 2 · ms 11 · hi 2 · check-de-style 8.
 - **es 무르시아 `casino-odiseo-murcia-poker`**(10-03 MB-155) → 후속은 `docs/update-calendar.md` «es 무르시아» 절(매월 25일 · 10/19 VPT · 11/9 · 11/30 · 12/7). Playwright `timezoneId: Europe/Madrid`.

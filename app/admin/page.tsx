@@ -74,9 +74,11 @@ export default async function AdminPage() {
       count(db, "poll_votes", (q: any) => q.eq("poll_id", p.id).eq("option_idx", i)))))),
   ]);
   // ── 솔버 후기창(2026-10-04) — 테이블이 없으면 에러 → 탭이 «SQL 실행 필요»를 보인다.
+  // profiles 조인은 FK 이름을 박는다 — solver_feedback_helpful(feedback_id·user_id)이 다대다 경로를 하나 더 만들어
+  // 그냥 profiles(...)면 PostgREST가 PGRST201(모호)로 거부한다(10-09 라이브 탭 «읽지 못했습니다»).
   const [sfRes, sfReplies, sfHelpful, sfProfiles] = await Promise.all([
     db.from("solver_feedback")
-      .select("id, user_id, locale, kind, body, downside, rating, device, source, auth_provider, status, hidden_reason, review_requested_at, created_at, profiles(nickname, avatar_url)")
+      .select("id, user_id, locale, kind, body, downside, rating, device, source, auth_provider, status, hidden_reason, review_requested_at, created_at, profiles!solver_feedback_user_id_fkey(nickname, avatar_url)")
       .order("created_at", { ascending: false }).limit(500),
     db.from("solver_feedback_replies").select("feedback_id, body"),
     db.from("solver_feedback_helpful").select("feedback_id").limit(20000),
