@@ -90,6 +90,12 @@ export const SPOT_SHARE_I18N: Record<SolverFeedbackLocale, SpotShareDict> = {
     board: "Board", pot: "Pot", stack: "Stack", open: "Mở trong solver →", landing: "Tìm hiểu GTO solver miễn phí",
     notFound: "Không tìm thấy spot", notFoundBody: "Đường dẫn sai hoặc không còn tồn tại. Bạn có thể tự dựng spot trong solver.",
   },
+  // ru — ★2026-10-10(`/ru/solver` 신설 회차). board·pot·stack = 솔버 ru 라벨 축어(Борд · Банк · Стек) · open = 랜딩 CTA 축어 · ты체.
+  ru: {
+    title: "Спот из солвера, которым поделились", lead: "Кто-то поделился этим спотом из GTO-солвера HoldemMaster. Он откроется с теми же диапазонами и сайзингами.",
+    board: "Борд", pot: "Банк", stack: "Стек", open: "Открыть в солвере →", landing: "О бесплатном GTO-солвере",
+    notFound: "Спот не найден", notFoundBody: "Ссылка неверная или больше не работает. Спот можно собрать в солвере самостоятельно.",
+  },
 };
 
 /** Accept-Language → 화면 언어 (zh-TW·zh-HK·zh-Hant = zh-hant · 못 받는 언어는 en) */

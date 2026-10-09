@@ -5,8 +5,8 @@
  * 🔴 LINK_PATTERN · HIDDEN_REASONS · SOLVER_FEEDBACK_LOCALES 는 SQL check 제약과 같은 값이어야 한다.
  */
 
-/** 솔버 랜딩이 있는 14개 언어 = 후기창이 열리는 언어(설계 §1-8 전 언어 동시 개통 · tr·vi 10-09 추가) */
-export const SOLVER_FEEDBACK_LOCALES = ["ko", "en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi"] as const;
+/** 솔버 랜딩이 있는 15개 언어 = 후기창이 열리는 언어(설계 §1-8 전 언어 동시 개통 · tr·vi 10-09 · ru 10-10 추가) */
+export const SOLVER_FEEDBACK_LOCALES = ["ko", "en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ru"] as const;
 export type SolverFeedbackLocale = (typeof SOLVER_FEEDBACK_LOCALES)[number];
 
 export function isSolverFeedbackLocale(v: unknown): v is SolverFeedbackLocale {

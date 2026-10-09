@@ -1,3 +1,13 @@
+## 2026-10-10 (3) — `/ru/solver` 회차 B — 작성·등록·후기창 ru·렌즈 4+아스트라 ✅ · 🔴 push 대기(사장님 SQL)
+
+- 앱 ru 축어 재추출(라이브 `?lang=ru` Playwright 2회 · 솔버 `3ba90e8` 기준 · presets titleRu/categoryRu 대조 13/13) → `docs/solver-app-verbatim-ru-2026-10-10.md`. 앱 사이드바에 «Разбор раздачи»(복기)가 새로 보인다(EN 랜딩 미언급 → queue §2-AP AP-4).
+- 3파일 `app/ru/solver/{page,solver-client,faq}` = vi 골격 · 뱅크 §7 조준(제목 «Покерный солвер онлайн бесплатно — GTO прямо в браузере» · H1 «Бесплатный GTO-солвер для покера…» · «называют по-разному» 문단에 солвер покер·гто покер·ренджи) · FAQ 23(EN 18 + 언어 1 + tr·vi 공통 3 + ru 고유 «GTO vs эксплойт») · 경쟁 오역 3종(«оптимальная теория игры»·«всегда в плюсе»·«GTO 적응») 정면 정정(경쟁사 이름 없음) · 링크 = ru 규칙 글 6편(도구 0 · hi·vi 선례 ⓐ).
+- 등록: hub-routes · 🔴 hub-i18n RU 신설 · side-rail(+HUB_HEADING «Гайды») · solver-promo · sitemap · hreflang `ru-RU` 14파일+새 파일. 🔴 렌더 확인에서 레일 «Feed·Chat·Event·Profile»이 영어 → `bottom-tab-bar` TAB_LABELS·`event-config` 상태 라벨에 ru 추가(기존 ru 블로그 글 탭도 같이 러시아어가 된다 · playbook 상단에 승격).
+- 후기창 ru(S-048): `lib/solver-reviews-i18n.ts` ru(폼 키 = 솔버 초안 축어 · 나머지 본체 · 성별 과거형 회피 «Регистрация: …») · `spot-share-i18n` ru · config 15로케일 · SQL 제약 2곳 `ru` · 게이트 15개·selftest 치환 `ru`. check:solver-feedback 🔴 0 · selftest 11/11.
+- 렌즈 4(모스크바 레귤러·교정자·초심자·§13 수치) + 아스트라 + 2차 교열 → 반영: 🔴 사용자 남성 과거형 6+(«ты вошёл»·«ты ввёл»·«ты терял»·«ты оказался»·«пришёл, искав»·«самому»·«будешь готов»·«ты задал») · «데스크톱 솔버=전부 Windows» 비제한 용법 · 🔴 9♥8♥7♣ «유일한 동크 보드»(Q♠9♠2♠ 11,2% · 스펙 §4-B) → ru 바르게 · EN 동문 = queue §2-AP AP-1 · «GTO는 평균 안 짐» → «양 포지션을 번갈아» 조건 · A♠A♥6♦ 트립스 정의에서 A6(풀하우스) 제외 · 라벨 격변화(«Задачи дня» → раздела «Задача дня») · EV 직역 «ожидаемая ценность» 제거 · chart=«чарт» · NBSP(ГБ·МБ·$1 000). 보류: 복기·프리플랍 차트 소개(EN에 없음 → AP-4) · 0,08bb 표시 모순(EN 동일 → AP-2).
+- 게이트: build exit 0(sitemap 74+686+111+25 · /ru/solver) · hreflang 0건 · meta-lang 🔴 0 · check:solver-feedback 🔴 0 · 로컬 390·1440 넘침 0 · FAQ 화면 23 = 스키마 23 · 셸 영어 0.
+- 🔴 push 전: 사장님 Supabase SQL(로케일 제약에 ru) 실행 확인 → push → 라이브 390·1440 · MB(솔버 LOCALE_PATHS.ru + S-048·S-049 · 검수장 신설+횡단) · IndexNow · GSC 수동 색인 1.
+
 ## 2026-10-10 (2) — `/ru/solver` 회차 A(조사 → 뱅크) ✅
 
 - 뱅크 `docs/keyword-bank/ru-gto-solver.md` 신설. 글·코드 변경 0.

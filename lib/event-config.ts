@@ -84,6 +84,8 @@ const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused
   tr: { open: "Katılım açık", closed: "Katılım kapandı", paused: "Yakında", draw: "Planlanan çekiliş", next: "Sonraki katılım", round: "Tur", conditions: (p, l) => `Giriş yap · ${p} gönderi yaz · ${l} beğeni al` },
   hi: { open: "प्रविष्टियाँ खुली हैं", closed: "प्रविष्टियाँ बंद हैं", paused: "जल्द आ रहा है", draw: "निर्धारित ड्रा", next: "अगली प्रविष्टियाँ", round: "राउंड", conditions: (p, l) => `लॉगिन करें · ${p} पोस्ट लिखें · ${l} लाइक पाएँ` },
   ar: { open: "التسجيل مفتوح", closed: "التسجيل مغلق", paused: "قريبًا", draw: "موعد السحب", next: "التسجيل القادم", round: "الجولة", conditions: (p, l) => `سجّل الدخول · اكتب ${p} منشورًا · احصل على ${l} إعجاب` },
+  // ru — 2026-10-10 `/ru/solver`(ru 첫 허브)와 함께. 수사 뒤 명사 격변화를 피하려고 «라벨: 수» 꼴(용어 참고자료 §2-1).
+  ru: { open: "Приём заявок открыт", closed: "Приём заявок закрыт", paused: "Скоро", draw: "Розыгрыш по расписанию", next: "Следующий приём заявок", round: "Тур", conditions: (p, l) => `Войди · Постов в сообществе: ${p} · Лайков на твоих постах: ${l}` },
 };
 
 export function getEventLabels(lang: string) {

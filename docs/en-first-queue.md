@@ -672,6 +672,17 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
 - 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
 
+### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · 미이행
+
+> ru는 신설 시점에 바르게 썼다(EN 문면과 이 자리만 다름 · EN 정정 뒤 일치). 나머지 14랜딩은 EN 정정 → 전파.
+
+| # | 자리 | 판정 · 문제 | 근거 | 처방 |
+|---|---|---|---|---|
+| AP-1 | **EN** `app/en/solver/solver-client.tsx` SPOT_GROUPS 9♥8♥7♣ note → 14랜딩 | 🔴 사실 · «The only single-raised board where BB truly leads» — Q♠9♠2♠도 BB 리드 11.2%(스펙 §4-B L393·L419 · EN `monotone-board-strategy` L106 «lead 11.2%») | 아스트라 교차(10-10) | «the single-raised board where BB leads most: 23.7% (11.2% on monotone Q♠9♠2♠)» 꼴 — ru 문면 참조 |
+| AP-2 | **EN** 솔버 랜딩 «0.08bb … 0.36% of a 22.5bb pot (acceptable)» ↔ «thresholds 0.08bb and 0.23bb» | 🟡 표시 모순(실제 컷 0.07875bb → 반올림) | 수치 렌즈(10-10) | «≈0.08bb» 또는 예시 값 교체 — EN 판정 뒤 |
+| AP-3 | **EN** 솔버 FAQ «Windows-only desktop solvers» 류 | 🟡 확인 · 전 로케일 번역에서 비제한 용법(«데스크톱 솔버=전부 Windows»)으로 옮겨졌는지 | 모스크바·초심자 렌즈(10-10) | 로케일별 문면 확인 |
+| AP-4 | 솔버 랜딩 전반 — 사이드바 «Hand review»(복기) · «Preflop Chart» 미언급 | 🪶 제안 · EN에 없음 → EN 판단 먼저 | 초심자 렌즈(10-10) | 사장님 판단 |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

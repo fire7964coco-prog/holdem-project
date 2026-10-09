@@ -196,6 +196,16 @@ const COPY = {
     desc: "Tính chiến lược GTO cho spot postflop ngay trên trình duyệt — miễn phí, không cần cài đặt hay tài khoản",
     cta: "Mở solver →",
   },
+  // 러시아어(ты체) — ★2026-10-10 `/ru/solver` 신설 · 용어 = 솔버 ru 용어 참고자료 정본(солвер · GTO 라틴).
+  //   훅은 랜딩 H1·앱 히어로 축어(«прямо в браузере» · «Ничего не нужно ни устанавливать, ни оплачивать») · cta = 랜딩 본문 CTA 축어.
+  //   🔴 «GTO»·«солвер» 단독 검색어 조준 금지(체력검정 ГТО·멘토링 오염 · 뱅크 ru-gto-solver §1) → title은 랜딩 HubPage title과 같은 라벨.
+  ru: {
+    href: "/ru/solver",
+    badge: "♠ Бесплатный инструмент",
+    title: "GTO-солвер",
+    desc: "Считай GTO-стратегию для постфлоп-спота прямо в браузере — бесплатно, без установки и аккаунта",
+    cta: "Открыть солвер →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

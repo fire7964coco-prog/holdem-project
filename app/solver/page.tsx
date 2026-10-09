@@ -61,6 +61,7 @@ export const metadata: Metadata = {
       "hi-IN": `${SITE}/hi/solver`,
       "tr-TR": `${SITE}/tr/solver`,
       "vi-VN": `${SITE}/vi/solver`,
+      "ru-RU": `${SITE}/ru/solver`,
     },
   },
   openGraph: {

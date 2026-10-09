@@ -1228,13 +1228,111 @@ const vi: SolverReviewsDict = {
   },
 };
 
+/** 러시아어 수사 뒤 명사 3단(one / few / many) — «1 отзыв · 3 отзыва · 5 отзывов». */
+function ruPlural(n: number, one: string, few: string, many: string) {
+  const m10 = n % 10;
+  const m100 = n % 100;
+  if (m10 === 1 && m100 !== 11) return one;
+  if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+  return many;
+}
+
+/**
+ * ru — ★2026-10-10 `/ru/solver` 신설과 함께. 폼 문구(formTitle~saved · errors)는 솔버 S-048 초안
+ *   (`solver/src/solver-feedback-labels.ts` feedbackLabels.ru) 축어, 나머지 키는 본체가 같은 결(ты체 · 보상·응모 뉘앙스 없음)로 채웠다.
+ *   🔴 사용자를 주어로 한 과거형 금지(러시아어 과거형은 성별이 드러난다 · 용어 참고자료 §2) — «Регистрация: …» 꼴.
+ *   joined의 monthYear는 Intl 주격(«октябрь 2026 г.»)이라 «с …» 앞에 두면 격이 틀린다 → 콜론 꼴.
+ */
+const ru: SolverReviewsDict = {
+  title: "Что говорят те, кто уже пользовался",
+  summary: (n, avg, r) => `${n} ${ruPlural(n, "отзыв", "отзыва", "отзывов")}${avg !== null ? ` · ★ ${avg.toFixed(1).replace(".", ",")} (${r} ${ruPlural(r, "оценка", "оценки", "оценок")})` : ""}`,
+  noticeNeg: "Негативные отзывы мы не удаляем.",
+  noticeHide: "Скрываем только посты со ссылками, оскорблениями или рекламой.",
+  criteriaToggle: "Посмотреть критерии",
+  criteria: {
+    link: "Ссылка — в тексте есть внешний адрес",
+    abuse: "Оскорбление — брань или грубость в адрес человека (резкая критика продукта оскорблением не считается)",
+    ad: "Реклама — продвижение другого сервиса или товара",
+  },
+  formTitle: "Как тебе солвер?",
+  tabReview: "Отзыв",
+  tabQuestion: "Вопрос",
+  ratingLabel: "Оценка (необязательно)",
+  placeholderReview: "Напиши пару слов — хорошее и плохое, как есть",
+  placeholderQuestion: "О чём хочешь спросить?",
+  downsideToggle: "+ Добавить, что можно улучшить",
+  downsidePlaceholder: "Что можно улучшить (необязательно)",
+  postingAs: (name) => `Автор: ${name}`,
+  change: "Изменить",
+  nicknameSave: "Сохранить имя",
+  nicknameCancel: "Отмена",
+  nicknameEmailWarn: "Сейчас твоё имя — это начало адреса электронной почты. Выбери имя, пока оно не стало публичным.",
+  submit: "Опубликовать",
+  submitEdit: "Обновить",
+  loginTitle: "Войди — и текст опубликуется в том виде, в каком написан",
+  loginGoogle: "Войти через Google",
+  loginKakao: "Войти через Kakao",
+  loginEmail: "Войти по электронной почте",
+  linkWarn: "Ссылки добавлять нельзя",
+  saved: "Опубликовано. Спасибо!",
+  firstReview: "Оставь первый отзыв",
+  featured: "Избранные отзывы",
+  allReviews: (n) => `Все отзывы (${n} · сначала новые)`,
+  reviewsList: "Отзывы",
+  questions: "Вопросы",
+  answered: "Есть ответ",
+  awaiting: "Ждёт ответа",
+  operator: "Команда HoldemMaster",
+  helpful: "Полезно",
+  edit: "Изменить",
+  del: "Удалить",
+  confirmDelete: "Удалить этот пост?",
+  mine: "Твой пост",
+  joined: (my) => `Регистрация: ${my}`,
+  usage: "Пользуется солвером",
+  devices: { phone: "Телефон", tablet: "Планшет", desktop: "Компьютер" },
+  reasons: { link: "ссылка", abuse: "оскорбление", ad: "реклама" },
+  hiddenMine: (r) => `Скрыто · причина: ${r} — видно только тебе`,
+  requestReview: "Запросить повторную проверку",
+  requested: "Повторная проверка запрошена",
+  avatarTitle: "Аватар (необязательно)",
+  avatarInitial: "Первая буква",
+  avatarCharacter: "Выбрать персонажа",
+  avatarUpload: "Загрузить фото",
+  avatarProvider: "Фото из Google/Kakao",
+  avatarHidden: (r) => `Твой аватар скрыт (причина: ${r})`,
+  unavailable: "Сейчас отзывы не загружаются.",
+  errors: {
+    login: "Войди в аккаунт.",
+    unavailable: "Попробуй ещё раз чуть позже.",
+    body_short: "Напиши хотя бы пару символов.",
+    body_long: "Не больше 600 символов.",
+    downside_long: "В поле «Что можно улучшить» — не больше 200 символов.",
+    link: "Ссылки добавлять нельзя.",
+    rating: "Недопустимая оценка.",
+    rating_needs_body: "Добавь пару слов — оценки без текста мы не принимаем.",
+    rate: "Попробуй ещё раз через несколько минут.",
+    nickname_confirm: "Перед публикацией выбери имя.",
+    nickname_short: "Имя — минимум 2 символа.",
+    nickname_long: "Имя — не больше 20 символов.",
+    nickname_link: "Имя не может содержать адреса сайтов или почты.",
+    nickname_impersonation: "Нельзя брать имена, похожие на официальные или на имена сотрудников.",
+    image_type: "Только изображения (jpg, png, webp).",
+    image_size: "Загрузи изображение размером меньше 5 МБ.",
+    already_requested: "Повторная проверка уже запрошена.",
+    not_found: "Не найдено. Обнови страницу.",
+    bad_input: "Попробуй ещё раз чуть позже.",
+    locale: "Попробуй ещё раз чуть позже.",
+  },
+};
+
 export const SOLVER_REVIEWS_I18N: Record<SolverFeedbackLocale, SolverReviewsDict> = {
-  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi,
+  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi, ru,
 };
 
 /** Intl 로케일 태그 — 가입 시기·날짜 표기 */
 export const SOLVER_REVIEWS_INTL_TAG: Record<SolverFeedbackLocale, string> = {
   ko: "ko-KR", en: "en-US", ja: "ja-JP", es: "es-ES", pt: "pt-BR", de: "de-DE",
   zh: "zh-CN", "zh-hant": "zh-TW", fr: "fr-FR", id: "id-ID", ms: "ms-MY", hi: "hi-IN",
-  tr: "tr-TR", vi: "vi-VN",
+  tr: "tr-TR", vi: "vi-VN", ru: "ru-RU",
 };

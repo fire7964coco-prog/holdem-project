@@ -191,6 +191,8 @@ const STATIC_ROUTES = [
   { path: "/tr/solver", priority: "0.7", changefreq: "monthly" },
   // `/vi/solver` — 솔버 vi 라이브 당일(2026-10-09 · S-049). 형제 랜딩과 같은 가중치.
   { path: "/vi/solver", priority: "0.7", changefreq: "monthly" },
+  // `/ru/solver` — 15번째 솔버 랜딩(2026-10-10 · 솔버 ru 라이브 S-049). 형제 랜딩과 같은 가중치.
+  { path: "/ru/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★2026-09-17 신설 — `/<locale>/calculator` 10개(ja es pt de zh zh-hant fr id ms hi).
