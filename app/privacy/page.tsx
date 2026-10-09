@@ -16,7 +16,7 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
  */
 
 // 🔴 솔버 후기창 배포 때 실제 배포일로 바꾼다(코드 1 = 10/7 판독 뒤 배포 · docs/solver-review-design.md §10-2)
-const UPDATED = "2026-10-04";
+const UPDATED = "2026-10-09";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
