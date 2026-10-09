@@ -295,7 +295,7 @@ A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — c
 
 **Q. ¿Cómo afecta la posición a la frecuencia de c-bet?**
 
-A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque una subida puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops en las mesas que analizamos). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
+A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio, aire incluido, es mucho más seguro que fuera de posición (esa cifra es contra una defensa de ciegas; un check-raise aún puede castigarlo). Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque una subida puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops en las mesas que analizamos). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
 
 **Q. ¿Hay que hacer siempre 3-bet desde la ciega pequeña?**
 

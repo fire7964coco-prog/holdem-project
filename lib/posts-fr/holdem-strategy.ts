@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Stratégie poker au Texas Hold'em : les 5 décisions derrière chaque main gagnante",
   seoTitle: "Pas d'astuces, 5 décisions — Stratégie poker Texas Hold'em",
   desc: "Tu as lu dix astuces et tu perds encore ? Gagner au poker tient à 5 décisions : position, mains à jouer, relancer ou se coucher, c-bet et quand lâcher.",
-  tldr: "Chaque décision gagnante au Texas Hold'em se ramène à cinq questions : où suis-je assis (la position), cette main vaut-elle la peine d'être jouée, est-ce que je relance ou je me couche plutôt que de limper, est-ce que je continue à miser au flop (le c-bet), et quand est-ce que je lâche ? Un joueur serré-agressif qui répond bien à ces cinq questions se couche sur environ 80 % de ses mains préflop, joue les autres agressivement et bat presque toutes les parties entre amateurs, sans liste d'astuces à mémoriser.",
+  tldr: "Chaque décision gagnante au Texas Hold'em se ramène à cinq questions : où suis-je assis (la position), cette main vaut-elle la peine d'être jouée, est-ce que je relance ou je me couche plutôt que d'open-limper, est-ce que je continue à miser au flop (le c-bet), et quand est-ce que je lâche ? Un joueur serré-agressif qui répond bien à ces cinq questions se couche sur environ 80 % de ses mains préflop, joue les autres agressivement et bat presque toutes les parties entre amateurs, sans liste d'astuces à mémoriser.",
   category: "strategy",
   date: "2026-10-07",
   updated: "2026-10-07",
@@ -37,7 +37,7 @@ Ce qui a fini par faire de moi un joueur gagnant, ce n'est pas une liste plus lo
 ## Comment gagner au poker ? Pas avec des astuces, avec 5 décisions
 
 > **Réponse rapide**
-> Les fondamentaux du poker tiennent en cinq décisions, toujours dans le même ordre : **ta position**, **la sélection de ta main**, **relancer ou te coucher** (plutôt que limper), **continuer à miser au flop** (le c-bet) et **savoir lâcher** une main battue. Un style serré-agressif qui répond bien à ces cinq questions bat presque toutes les parties entre amateurs.
+> Les fondamentaux du poker tiennent en cinq décisions, toujours dans le même ordre : **ta position**, **la sélection de ta main**, **relancer ou te coucher** (plutôt qu'open-limper), **continuer à miser au flop** (le c-bet) et **savoir lâcher** une main battue. Un style serré-agressif qui répond bien à ces cinq questions bat presque toutes les parties entre amateurs.
 
 Ouvre n'importe quel article de « stratégie poker débutant » et tu tombes sur une liste numérotée : dix astuces, neuf règles, sept habitudes. Elles ne sont pas *fausses* — mais une liste est la pire façon d'apprendre, parce que le jeu ne te tend jamais un menu numéroté. Il te donne un siège, deux cartes et une mise à laquelle réagir.
 
@@ -49,7 +49,7 @@ Alors au lieu d'une liste, utilise une **colonne vertébrale de décisions**. Ch
 |:---:|:---|:---|:---|
 | **1** | **Position** | Où suis-je assis, et qui parle après moi ? | [Jouer sa position](/fr/blog/holdem-position-play) |
 | **2** | **Sélection des mains** | Cette main mérite-t-elle vraiment d'entrer dans le pot ? | [Mains de départ](/fr/blog/holdem-starting-hands-chart) |
-| **3** | **Agression préflop** | Est-ce que je relance ou je me couche plutôt que limper ? | [Pourquoi le limp coûte cher](/fr/blog/holdem-limping) |
+| **3** | **Agression préflop** | Est-ce que je relance ou je me couche plutôt que d'open-limper ? | [Pourquoi le limp coûte cher](/fr/blog/holdem-limping) |
 | **4** | **Continuation** | Est-ce que je continue à miser au flop, ou je ralentis ? | [Les actions de mise](/fr/blog/holdem-betting-actions) |
 | **5** | **Discipline** | Quand est-ce que je lâche une main ? | [Cotes du pot et fold](/fr/blog/holdem-pot-odds) |
 

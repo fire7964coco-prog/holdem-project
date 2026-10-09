@@ -283,7 +283,7 @@ A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — intinya pair k
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 
-A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop di board yang kami uji). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
+A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, jauh lebih aman daripada out of position (angka itu melawan pembela blind; check-raise tetap bisa menghukumnya). Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop di board yang kami uji). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
 
 **Q. Apakah Anda harus selalu 3-bet dari small blind?**
 

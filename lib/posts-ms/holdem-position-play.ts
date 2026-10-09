@@ -283,7 +283,7 @@ A. Dari UTG dalam permainan full ring, open sekitar ~13% tangan teratas — tera
 
 **Q. Bagaimana posisi mempengaruhi kekerapan c-bet?**
 
-A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — anda bertindak terakhir di setiap street seterusnya, jadi bet luas termasuk tangan kosong selamat. Out of position dalam single-raised pot, angka itu jatuh ke kira-kira 30–45%, kerana raise boleh menamatkan bluff anda dan call membiarkan anda meneka dahulu di turn dan river (sebagai 3-bettor out of position, ceritanya berbeza — kelebihan range membolehkan anda c-bet hampir setiap flop pada board yang kami jalankan). C-bet dengan kekerapan yang sama OOP seperti IP ialah salah satu leak paling biasa dan paling mahal.
+A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — anda bertindak terakhir di setiap street seterusnya, jadi bet luas termasuk tangan kosong jauh lebih selamat berbanding out of position (angka itu menentang pembela blind; check-raise masih boleh menghukumnya). Out of position dalam single-raised pot, angka itu jatuh ke kira-kira 30–45%, kerana raise boleh menamatkan bluff anda dan call membiarkan anda meneka dahulu di turn dan river (sebagai 3-bettor out of position, ceritanya berbeza — kelebihan range membolehkan anda c-bet hampir setiap flop pada board yang kami jalankan). C-bet dengan kekerapan yang sama OOP seperti IP ialah salah satu leak paling biasa dan paling mahal.
 
 **Q. Patutkah anda sentiasa 3-bet dari small blind?**
 

@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-limping",
   title: "Le limp au poker : pourquoi « juste suivre » préflop te coûte des jetons",
   seoTitle: "Pourquoi « juste suivre » te coûte cher — Le limp au poker",
-  desc: "Tu suis la blinde « juste pour voir le flop » ? Limper au poker est presque toujours une erreur : pourquoi, les cas où ça passe et comment punir les limpeurs.",
+  desc: "Tu suis la blinde « juste pour voir le flop » ? Limper au poker est le plus souvent une erreur : pourquoi, les cas où ça passe et comment punir les limpeurs.",
   tldr: "Limper, c'est entrer dans un pot préflop en suivant simplement la grosse blinde au lieu de relancer ou de se coucher. L'open-limp (être le premier à entrer) est presque toujours une erreur : un limp ne peut pas gagner les blindes sans combat, tu abandonnes l'initiative et les bons joueurs te punissent. Mais limper n'est pas toujours faux : compléter en petite blinde, over-limper des mains spéculatives derrière d'autres limpeurs et certains spots en live ou en short stack en tournoi sont des exceptions légitimes.",
   category: "strategy",
   date: "2026-10-07",
