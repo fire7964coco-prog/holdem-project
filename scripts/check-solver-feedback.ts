@@ -1,20 +1,20 @@
 /**
  * 솔버 후기창 게이트 (2026-10-04 · docs/solver-review-design.md §10-2)
  *
- *   npm run check:solver-feedback               — 코드·SQL·12랜딩 정합
- *   npm run check:solver-feedback -- --build    — + 빌드 산출물(12개 solver.html · 빌드 키)
+ *   npm run check:solver-feedback               — 코드·SQL·14랜딩 정합
+ *   npm run check:solver-feedback -- --build    — + 빌드 산출물(14개 solver.html · 빌드 키)
  *   npm run check:solver-feedback:selftest      — 검사기 자체 검증(일부러 틀린 입력을 잡는가)
  *
  * 검사 항목
  *  ① 링크 규칙 — lib/solver-feedback-config.ts = lib/participation-config.ts = supabase/solver-reviews.sql(본문·아쉬운 점 2곳)
  *  ② 숨김 사유 3값 — 설정 = SQL(후기·프로필 이미지 2곳) = 관리자 화면 버튼
- *  ③ 로케일 12값 — 설정 = SQL = 랜딩 폴더 = 문구 사전
- *  ④ 12개 랜딩 — page.tsx 가 자기 로케일로 블록을 넣고, solver-client 가 FAQ «바로 위»에 슬롯을 둔다
- *  ⑤ 문구 사전 — 12언어 키 집합 동일 · 오류 코드 전부 번역
+ *  ③ 로케일 14값 — 설정 = SQL = 랜딩 폴더 = 문구 사전
+ *  ④ 14개 랜딩 — page.tsx 가 자기 로케일로 블록을 넣고, solver-client 가 FAQ «바로 위»에 슬롯을 둔다
+ *  ⑤ 문구 사전 — 14언어 키 집합 동일 · 오류 코드 전부 번역
  *  ⑥ 빈 상태 — 요약 문턱 3 · 키/테이블 없을 때 표지(data-solver-reviews="unavailable")
  *  ⑦ 스키마 부재 — Review·AggregateRating 을 내보내지 않는다(설계 §5-2)
  *  ⑧ 캐릭터 이미지 — AVATAR_CHARACTERS 전부 webp 존재
- *  ⑨ (--build) 12개 solver.html 존재 · 블록 표지 · 빌드 키 없음(no-key) = 🔴 · 테이블 없음(no-table) = 🟠
+ *  ⑨ (--build) 14개 solver.html 존재 · 블록 표지 · 빌드 키 없음(no-key) = 🔴 · 테이블 없음(no-table) = 🟠
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -58,9 +58,13 @@ export function checkSources(src: {
   if (/delete\(\)/.test(src.adminTsx)) red("② 관리자 화면에 삭제 호출이 있다 — 숨김만 허용");
 
   // ③
-  const sqlLocales = sqlList(src.sql, /locale\s+in\s*\(([^)]*)\)/g)[0] ?? [];
-  if (!setEq(sqlLocales, src.locales)) red(`③ 로케일: SQL [${sqlLocales}] ≠ 코드 [${src.locales}]`);
-  if (src.locales.length !== 12) red(`③ 로케일은 12개여야 한다(지금 ${src.locales.length})`);
+  // create table 의 check + 2-a) 재적용 alter — 둘 다 코드와 같아야 한다
+  const sqlLocaleLists = sqlList(src.sql, /locale\s+in\s*\(([^)]*)\)/g);
+  if (sqlLocaleLists.length === 0) red("③ 로케일: SQL check 목록을 못 찾았다");
+  for (const sqlLocales of sqlLocaleLists) {
+    if (!setEq(sqlLocales, src.locales)) red(`③ 로케일: SQL [${sqlLocales}] ≠ 코드 [${src.locales}]`);
+  }
+  if (src.locales.length !== 14) red(`③ 로케일은 14개여야 한다(지금 ${src.locales.length})`);
   if (!setEq(Object.keys(src.pages), src.locales)) red(`③ 로케일: 랜딩 폴더 [${Object.keys(src.pages)}] ≠ 코드 [${src.locales}]`);
   if (!setEq(Object.keys(src.dictKeys), src.locales)) red(`③ 로케일: 문구 사전 [${Object.keys(src.dictKeys)}] ≠ 코드`);
 
@@ -189,7 +193,8 @@ function selftest(): number {
     ["참여 장치 링크 규칙과 다름", (s) => { s.linkPc = s.linkPc.replace("xyz", "xy"); }],
     ["숨김 사유 4번째 값(SQL)", (s) => { s.sql = s.sql.replace("hidden_reason in ('link','abuse','ad')", "hidden_reason in ('link','abuse','ad','spam')"); }],
     ["관리자 버튼에 다른 사유", (s) => { s.adminTsx = s.adminTsx.replace('value: "ad"', 'value: "spam"'); }],
-    ["SQL 로케일 하나 빠짐", (s) => { s.sql = s.sql.replace(",'hi'))", "))"); }],
+    ["SQL 로케일 하나 빠짐", (s) => { s.sql = s.sql.replace(",'vi'))", "))"); }],
+    ["SQL 재적용 블록만 로케일 빠짐", (s) => { const i = s.sql.lastIndexOf(",'vi'))"); s.sql = s.sql.slice(0, i) + "))" + s.sql.slice(i + 7); }],
     ["랜딩 하나가 다른 로케일", (s) => { s.pages.ja = s.pages.ja.replace('<SolverReviews locale="ja"', '<SolverReviews locale="en"'); }],
     ["슬롯이 FAQ 아래", (s) => { s.clients.en = s.clients.en.replace("{reviews}", "") + "\n{reviews}"; }],
     ["사전 키 하나 빠짐", (s) => { s.dictKeys.fr = s.dictKeys.fr.filter((k) => k !== "helpful"); }],

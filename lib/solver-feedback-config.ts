@@ -5,8 +5,8 @@
  * 🔴 LINK_PATTERN · HIDDEN_REASONS · SOLVER_FEEDBACK_LOCALES 는 SQL check 제약과 같은 값이어야 한다.
  */
 
-/** 솔버 랜딩이 있는 12개 언어 = 후기창이 열리는 언어(설계 §1-8 전 언어 동시 개통) */
-export const SOLVER_FEEDBACK_LOCALES = ["ko", "en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi"] as const;
+/** 솔버 랜딩이 있는 14개 언어 = 후기창이 열리는 언어(설계 §1-8 전 언어 동시 개통 · tr·vi 10-09 추가) */
+export const SOLVER_FEEDBACK_LOCALES = ["ko", "en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi"] as const;
 export type SolverFeedbackLocale = (typeof SOLVER_FEEDBACK_LOCALES)[number];
 
 export function isSolverFeedbackLocale(v: unknown): v is SolverFeedbackLocale {
@@ -58,7 +58,7 @@ export const LINK_PATTERN = /(https?:\/\/|www\.|\.(com|net|org|kr|io|me|xyz|gg|l
 export const NICKNAME_MIN = 2;
 export const NICKNAME_MAX = 20;
 
-/** 사칭 금지어 — 비교 전에 소문자화·공백/기호 제거. 12언어의 «운영자·관리자·공식» + 브랜드 */
+/** 사칭 금지어 — 비교 전에 소문자화·공백/기호 제거. 14언어의 «운영자·관리자·공식» + 브랜드 */
 export const IMPERSONATION_TERMS = [
   // 브랜드·도구
   "holdemmaster", "홀덤마스터", "gto솔버", "gtosolver", "admin", "administrator", "moderator", "official", "staff",
@@ -74,6 +74,10 @@ export const IMPERSONATION_TERMS = [
   "betreiber", "offiziell", "pengelola", "pentadbir",
   // hi
   "व्यवस्थापक", "एडमिन", "आधिकारिक",
+  // tr (10-09 · «resmi» 는 id·ms 와 같은 이유로 넣지 않는다)
+  "yönetici", "moderatör",
+  // vi (10-09 · 성조 없이 쓰는 꼴도 같이)
+  "quản trị viên", "ban quản trị", "chính thức", "quantrivien", "chinhthuc",
 ] as const;
 
 export function normalizeNickname(raw: string): string {

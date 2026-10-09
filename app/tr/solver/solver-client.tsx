@@ -194,7 +194,7 @@ function Table({ head, rows }: { head: string[]; rows: (string | React.ReactNode
   );
 }
 
-export default function SolverClientTr() {
+export default function SolverClientTr({ reviews }: { reviews?: React.ReactNode } = {}) {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16">
       {/* ── 히어로 + 직답 + CTA ───────────────────────────────────────── */}
@@ -551,6 +551,9 @@ export default function SolverClientTr() {
           </li>
         </ul>
       </section>
+
+      {/* ── 써 본 사람들(솔버 후기창 · FAQ 바로 위 · docs/solver-review-design.md §2-3) ── */}
+      {reviews}
 
       {/* ── FAQ — 배열은 ./faq.ts 단일 출처(서버 FAQPage 스키마와 공유) · 본문에도 전부 렌더 ── */}
       <section className="mt-12">

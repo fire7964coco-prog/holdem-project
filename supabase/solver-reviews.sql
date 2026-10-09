@@ -9,7 +9,7 @@
 --    읽기·쓰기는 전부 본체 서버 코드(lib/solver-feedback-server.ts)가 service role로 하고,
 --    거기서 로그인·길이·링크·속도 제한을 먼저 검사한다. 앱(솔버 도메인)도 본체 /api/solver-feedback 를 거친다.
 -- 🔴 링크 거부 정규식은 lib/solver-feedback-config.ts · lib/participation-config.ts 의 LINK_PATTERN 과 같은 뜻.
---    숨김 사유 3값·로케일 12값도 같은 파일과 맞춘다 — 게이트 `npm run check:solver-feedback`.
+--    숨김 사유 3값·로케일 14값도 같은 파일과 맞춘다 — 게이트 `npm run check:solver-feedback`.
 -- ============================================================
 
 -- 1) 스팟 공유 — 코드 2(/api/spot-share · /s/<id>)가 쓴다. 후기의 spot_share_id 가 가리키므로 먼저 만든다.
@@ -43,7 +43,7 @@ create table if not exists public.solver_feedback (
   review_requested_at timestamptz,      -- 숨김 뒤 «다시 검토 요청» 1회
   created_at          timestamptz not null default now(),
   updated_at          timestamptz not null default now(),
-  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi')),
+  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi')),
   constraint solver_feedback_kind     check (kind in ('review','question')),
   constraint solver_feedback_body_len check (char_length(body) between 2 and 600),
   constraint solver_feedback_body_link check (body !~* '(https?://|www\.|\.(com|net|org|kr|io|me|xyz|gg|ly|link|site|shop|top)([/?#]|$|[^a-z0-9]))'),
@@ -61,6 +61,12 @@ create table if not exists public.solver_feedback (
 create unique index if not exists solver_feedback_one_review on public.solver_feedback(user_id, locale) where kind = 'review';
 create index if not exists solver_feedback_list_idx on public.solver_feedback(locale, status, created_at desc);
 create index if not exists solver_feedback_user_idx on public.solver_feedback(user_id, created_at desc);
+
+-- 2-a) 로케일 14개(tr·vi 2026-10-09 추가) — 이미 만든 DB에도 적용한다(여러 번 실행해도 안전).
+--      위 create table 은 테이블이 있으면 건너뛰므로 제약은 여기서 다시 건다. 목록은 위 check 와 같아야 한다.
+alter table public.solver_feedback drop constraint if exists solver_feedback_locale;
+alter table public.solver_feedback add constraint solver_feedback_locale
+  check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi'));
 
 -- 3) 운영자 답글 — 관리자 화면에서만 쓴다(후기 1개에 답글 1개)
 create table if not exists public.solver_feedback_replies (
