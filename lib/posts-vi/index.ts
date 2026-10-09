@@ -42,6 +42,10 @@ import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
 // [vi-strat import 끝]
 
 // [vi-tour import 시작]
+import { POST as holdemTournament } from "./holdem-tournament";
+import { POST as holdemIcm } from "./holdem-icm";
+import { POST as holdemBubble } from "./holdem-bubble";
+import { POST as holdemShortStack } from "./holdem-short-stack";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
 // [vi-tour import 끝]
 
@@ -104,6 +108,10 @@ export const VI_POSTS: Post[] = [
   // [vi-strat 배열 끝]
 
   // [vi-tour 배열 시작]
+  holdemTournament,
+  holdemIcm,
+  holdemBubble,
+  holdemShortStack,
   holdemTournamentVsCashGame,
   // [vi-tour 배열 끝]
 
