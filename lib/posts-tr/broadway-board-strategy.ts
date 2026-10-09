@@ -37,7 +37,7 @@ Flop **Q♠ J♦ T♠** açılıyor. Big blind'dasın, elinde KQ — top pair ar
 
 Önceki iki spot — [as yüksek board](/tr/blog/a-high-board-cbet) ve papaz yüksek board — neredeyse kimsenin draw'ı olmayan sakin board'lardı. Bu tam tersi: **burada big blind range'inin %68,4'ü draw tutuyor.** Ve solver yine de ==%99,9== check ediyor. Önden bahis (lead) daha *sık* değil, daha *seyrek* hâle geldi.
 
-"Bol draw var" ile "ilk bahsi sen yapabilirsin" ayrı iddialar. Aşağıdaki bütün rakamlar HoldemMaster'ın [ücretsiz GTO solver'ından](/tr/solver) geliyor; 19 Ağustos 2026'da çalışma spotunun (Study Spots) çıktısından okundu.
+"Bol draw var" ile "ilk bahsi sen yapabilirsin" ayrı iddialar. Aşağıdaki bütün rakamlar HoldemMaster'ın [ücretsiz GTO solver'ından](/tr/solver) geliyor; 19 Ağustos 2026'da örnek spotun (Örnek spotlar) çıktısından okundu.
 
 
 :::stripe
@@ -183,7 +183,7 @@ Bu, kuru board tarifinin tam tersi. Orada küçük ve sık bahis işe yarıyordu
 
 ## Kendin kontrol et
 
-[Ücretsiz GTO solver'ı](/tr/solver) aç, **Study Spots → Connected Broadway, Two-Tone → [⚡ View results]** yolunu izle; yukarıdaki ekran beklemeden açılır.
+[Ücretsiz GTO solver'ı](/tr/solver) aç, **Örnek spotlar → Bağlantılı broadway board, iki renkli → [⚡ Sonuçları gör]** yolunu izle; yukarıdaki ekran beklemeden açılır.
 
 Bu spotta **sağdaki Draws paneline** bak — açık uçlu kent draw'ları ile gutshot'lar birlikte %60'ı geçiyor, bu seride ilk kez. Sonra oyuncu seçiciyi **IP (BTN)**'ye çevir ve Straight %10,5 satırına bak: bu yazının tamamı o tek satırdan çıkıyor.
 

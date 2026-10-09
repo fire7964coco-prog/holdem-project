@@ -12,7 +12,7 @@ import { SOLVER_FAQ_TR } from "./faq";
  * 🔴 키워드 실측(DataForSEO 튀르키예 2792 · 2026-10-06 · 월): gto poker 30 · poker gto 30 ·
  *   gto nedir 40(오염 가능 — poker 앵커 필수) · poker solver 10 · gto solver 10 ·
  *   gto wizard 210(경쟁 브랜드 — 조준·광고 문구 금지, COMPARE 표의 EN 수준 언급만).
- * 🔴 솔버 앱 터키어 UI는 아직 라이브가 아니다 — 앱 라벨은 영어 축어, FAQ 한 문항으로 정직하게 답한다.
+ * 솔버 앱 터키어 UI = 2026-10-09 라이브(S-049) — 앱 라벨은 라이브 ?lang=tr 터키어 축어, FAQ «Solver ekranı Türkçe mi?»는 «Evet»로 답한다.
  */
 
 const TITLE = "Ücretsiz GTO Poker Solver — Tarayıcıda, Kurulumsuz | HoldemMaster";

@@ -4,8 +4,8 @@
  *
  * 🔴 EN 18문항 + **언어 문항 1개**(«Solver ekranı Türkçe mi?») = 19문항.
  *   + 2026-10-06 tr SERP 보강(L5 §8) 2문항(«Poker solver ne işe yarar?» · 공부용 vs RTA) = 21문항.
- *   솔버 앱의 터키어 UI는 아직 라이브가 아니다(솔버 쪽 배포 대기) — 그래서 «지금은 İngilizce,
- *   Türkçe arayüz hazırlanıyor»로만 답하고 날짜는 약속하지 않는다. 다른 언어판은 열거하지 않는다
+ *   솔버 앱 터키어 UI = 2026-10-09 라이브(S-049). 앱 라벨은 라이브 `?lang=tr` 축어(Örnek spotlar · Günün sorusu ·
+ *   Özel spot · Hesapla · Sonuçlar · ⚡ Sonuçları gör · 스팟·그룹 이름 = presets titleTr/categoryTr). 다른 언어판은 열거하지 않는다
  *   (playbook 머리 «지원 언어 열거 금지»).
  * 🔴 수치는 EN과 값이 같다 — 구분자만 터키식(%0,35 · 0,08bb · 5,5bb).
  * ⚠ Samsung Internet 경고문은 터키어 화면 문구를 실측하지 못했다 → 축어 인용 없이 설명으로 썼다.
@@ -29,7 +29,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Bu GTO solver gerçekten ücretsiz mi?",
-    a: "Evet. Tüm özellikler ücretsiz; kullanım limiti, ödeme yöntemi, kilitli paket ve hesap zorunluluğu yok. Giriş yapmak isteğe bağlıdır ve Study Spots ile Daily Challenge geçmişini cihazlar arasında eşitler. Kendi çözdüğün spotlar ve onların pratik geçmişi, giriş yapsan bile bu cihazda kalır. Solver, açık kaynak motor WASM Postflop (AGPL-3.0) üzerine kuruludur ve HoldemMaster'ın değiştirdiği kaynak kodu aynı lisansla yayımlanmıştır.",
+    a: "Evet. Tüm özellikler ücretsiz; kullanım limiti, ödeme yöntemi, kilitli paket ve hesap zorunluluğu yok. Giriş yapmak isteğe bağlıdır ve Örnek spotlar ile Günün sorusu geçmişini cihazlar arasında eşitler. Kendi çözdüğün spotlar ve onların pratik geçmişi, giriş yapsan bile bu cihazda kalır. Solver, açık kaynak motor WASM Postflop (AGPL-3.0) üzerine kuruludur ve HoldemMaster'ın değiştirdiği kaynak kodu aynı lisansla yayımlanmıştır.",
   },
   {
     q: "Bir şey indirmem ya da kurmam gerekiyor mu?",
@@ -41,7 +41,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Bir poker solver'ı ilk kez nasıl kullanırım?",
-    a: "Özel bir çözümle değil, Study Spots ile başla. O spotlar zaten çözülmüş; böylece ayar yapmayı öğrenmeden önce çıktıyı okumayı öğrenirsin. Hazır olduğunda Custom Spot sekmeleri sırayla ilerler: ① OOP Range, ② IP Range, ③ Board, ④ Bet Sizes, ⑤ Run Solver. İlk çözümünde bahis boyutu ağacını varsayılan ayarlarında bırak.",
+    a: "Özel bir çözümle değil, Örnek spotlar ile başla. O spotlar zaten çözülmüş; böylece ayar yapmayı öğrenmeden önce çıktıyı okumayı öğrenirsin. Hazır olduğunda Özel spot sekmeleri sırayla ilerler: ① OOP range, ② IP range, ③ Board, ④ Bet boyutu, ⑤ Hesapla. İlk çözümünde bahis boyutu ağacını varsayılan ayarlarında bırak.",
   },
   {
     q: "Hangi poker durumlarını analiz edebilir?",
@@ -59,7 +59,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
     // tr SERP 보강(L5 §8): 자동완성 «poker solver android»·«poker solver iphone» → 기기명 명시.
     // 근거 = solver-factsheet §1(계산은 브라우저 · Safari 등 단일 스레드 폴백) · §2(PWA). 스토어 앱은 없다(TWA 보류).
     q: "Android, iPhone, Mac ve Linux'ta çalışır mı?",
-    a: "Evet — uygulama mağazasından bir şey indirmeden Android'de ve iPhone'da telefonunun tarayıcısında açılır. Mac ve Linux'ta da her modern tarayıcı yeterli; yalnızca Windows'ta çalışan masaüstü solver'lara karşı pratik avantaj da bu. Bir uyarı: iOS ve Safari'de tarayıcı sınırları tek iş parçacıklı (single-thread) çözüme zorlar, bu yüzden özel çözümler orada yavaştır. Telefonda önceden çözülmüş Study Spots'u ve GTO Trainer'ı kullan, kendi çözümlerini masaüstü tarayıcıda çalıştır.",
+    a: "Evet — uygulama mağazasından bir şey indirmeden Android'de ve iPhone'da telefonunun tarayıcısında açılır. Mac ve Linux'ta da her modern tarayıcı yeterli; yalnızca Windows'ta çalışan masaüstü solver'lara karşı pratik avantaj da bu. Bir uyarı: iOS ve Safari'de tarayıcı sınırları tek iş parçacıklı (single-thread) çözüme zorlar, bu yüzden özel çözümler orada yavaştır. Telefonda önceden çözülmüş Örnek spotlar'u ve GTO Trainer'ı kullan, kendi çözümlerini masaüstü tarayıcıda çalıştır.",
   },
   {
     // tr SERP 보강(L5 §8) · 사장님 판단 ③: 합법성 축이 아니라 «공부용 vs 게임 중 실시간 사용(RTA)» 구분만.
@@ -68,10 +68,9 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
     a: "Çalışmak için kullanmakta sorun yok: oynadığın elleri sonradan incelemek, bir spotu çözmek ya da trainer'la alıştırma yapmak solver'ın asıl işi. Online bir el sürerken solver'a bakmak ise başka bir şey — online poker odalarının kullanım koşulları gerçek zamanlı yardımı (RTA) yasaklar. Bu solver masadan uzakta, oyun bittikten sonra çalışmak için yapıldı.",
   },
   {
-    // ★tr 고유 문항 — 솔버 앱 터키어 UI 라이브 전. 날짜 약속·다른 언어판 열거 금지.
-    // 🔴 솔버 tr 배포(S-행 재통지) 순간 이 문항 + solver-client «Grup ve spot adlarını … İngilizce bıraktık» + 스팟 이름을 같이 고친다(핸드오프 등재).
+    // ★tr 고유 문항 — 솔버 앱 터키어 UI 라이브(2026-10-09 S-049) 반영. 다른 언어판 열거 금지.
     q: "Solver ekranı Türkçe mi?",
-    a: "Henüz değil. Solver uygulamasının ekranı şu an İngilizce açılıyor; Türkçe arayüz hazırlanıyor. Türkçe arayüz yayına girene kadar menü ve buton adları — OOP Range, Board, Run Solver, Check, Bet, EQ, EV, EQR gibi — İngilizce görünür. Bu sayfa o terimleri Türkçe açıklıyor: beş adımı, sonuç ekranının bölümlerini ve trainer'ın puanlamasını burada Türkçe anlattık; çalışma spotlarının adlarını da ekranda gördüğün İngilizce hâlleriyle verdik.",
+    a: "Evet. Solver uygulaması Türkçe açılır: tarayıcı dilin Türkçeyse otomatik, değilse adresin sonuna ?lang=tr ekleyerek. Beş adım (OOP range, IP range, Board, Bet boyutu, Hesapla), örnek spotların adları, Günün sorusu ve GTO Trainer ekranı Türkçedir. Sonuç ekranındaki kısa teknik etiketler — Check, Bet, EQ, EV (bb), EQR — uluslararası hâliyle kalır; bu sayfa onları Türkçe açıklıyor. Buradaki spot ve grup adları ekranda gördüklerinle birebir aynıdır.",
   },
   {
     q: "GTO Trainer nedir?",
@@ -87,7 +86,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Çalışma ilerlemem nereye kaydediliyor?",
-    a: "Varsayılan olarak cihazına, hesap gerekmeden. HoldemMaster hesabıyla giriş yaparsan Study Spots ve Daily Challenge geçmişin cihazlar arasında eşitlenebilir. Daily Challenge gün serisi ve tamamlandı işareti her cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi giriş yapsan bile bu cihazda kalır; hesabına kaydedilmez. Seriler, senaryoya göre zayıf spot dökümleri ve EV kaybettiğin elleri toplayan Review kuyruğu pratik geçmişini kullanır.",
+    a: "Varsayılan olarak cihazına, hesap gerekmeden. HoldemMaster hesabıyla giriş yaparsan Örnek spotlar ve Günün sorusu geçmişin cihazlar arasında eşitlenebilir. Günün sorusu gün serisi ve tamamlandı işareti her cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi giriş yapsan bile bu cihazda kalır; hesabına kaydedilmez. Seriler, senaryoya göre zayıf spot dökümleri ve EV kaybettiğin elleri toplayan Review kuyruğu pratik geçmişini kullanır.",
   },
   {
     q: "Ana ekranıma yükleyebilir miyim?",

@@ -14,8 +14,8 @@
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ vi 도구 ✅ 배포 (10-07 (17) · `/vi/calculator`·`/vi/hand-chart`) · 다음 = `/vi/solver`
 
 - ✅ 계산기·핸드차트 vi(사장님 ⓑ) — 뱅크 `docs/keyword-bank/vi-tools.md` · 경위 WORKLOG 10-07 (17). ▶ 사장님 몫: GSC 수동 색인 요청 2개(`/vi/calculator` · `/vi/hand-chart`).
-- ▶ **다음 = `/vi/solver`** — 정본 `docs/keyword-bank/vi-gto-solver.md`(§7 조준안). 착수 조건: 솔버 vi 배포 통지(S-044 = 구현 끝 · 🔴 배포·push 전 — 그 전까지 `?lang=vi`는 영어) → 라이브 `?lang=vi` 라벨 축어 대조 후 플레이북 7~12단계. 생기면 vi 차트 노트의 솔버 이름 → 링크 · 솔버에 `/vi/solver` 생겼다고 알림(S-044 «한 줄 교체»).
-- 📬 S-044 요청 1(후기창 vi 초안 → 본체 사전) = 후기창 브랜치 머지 때 S-042(tr)와 함께(MB-202에 등재).
+- ▶ **다음 = `/vi/solver` 신설 — 🔴 착수 조건 충족(솔버 vi 라이브 2026-10-09 · S-049 · MB-210 ACK)** — 정본 `docs/keyword-bank/vi-gto-solver.md`(§7 조준안) · 절차 `docs/solver-landing-playbook.md` 7~12단계 · 라벨 = 라이브 `?lang=vi` Playwright 축어(tr 선례 = WORKLOG 10-09 (4) 추출 방식 · 사이드바·단계·예제 스팟 목록·결과 화면). 열리면 vi 차트 노트의 솔버 이름 → 링크 · 솔버에 한 줄 알림(S-049 «`LOCALE_PATHS` 교체»). **새 세션 첫 지시 = 「핸드오프 읽고 /vi/solver 신설 시작해」.** `/ru/solver`(S-049 선택 요청)는 ru 글 7편·키워드 뱅크 없음 → «새 언어는 SERP부터» 조사 회차 뒤 별도(사장님 지시 대기).
+- 📬 후기창 초안 → 본체 사전 = S-042(tr) · S-044(vi) · **S-048(ru · 10-09 · `feedbackLabels.ru` 619행~ · `appLabels.ru` 787행~ · 참고자료 `전달_ru_포커용어_참고자료_2026-10-09.md`)** 셋을 후기창 브랜치 머지 회차에 한 번에(MB-210 ACK).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 51편 — ✅ 배포 (10-07 (13) · main `ceed9c0d` · MB-199)
 
@@ -48,7 +48,7 @@
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ tr 회차 5 ✅ 배포 (10-06 (9) · MB-186 · GTO 4편 + /tr/solver) · 다음 = 사장님 지시 대기
 
 - 결과·남긴 것 = **`docs/tr-cluster-plan.md` §4-5**(🪶 자동 착수 금지). 다음 tr = 회차 6(북키프로스 카드 · 데이터 공급 확정 전 착수 금지).
-- 🔴 **솔버 tr 배포 통지(S-행)가 오면**: `/tr/solver` FAQ «Solver ekranı Türkçe mi?» · 본문 «… İngilizce bıraktık» · 스팟 이름 · 글 4편 영어 앱 라벨을 앱 tr 축어로 같이 고친다(§4-5 목록).
+- ✅ 솔버 tr 라이브(S-049 · 10-09) 반영 = 10-09 (4) · MB-210 · `docs/tr-cluster-plan.md` §4-5 ✅ 행(FAQ «Evet» · 스팟 13·그룹 3 titleTr · 단계 라벨 · 글 4편 «Örnek spotlar → … → [⚡ Sonuçları gör]»).
 - ▶ 사장님 몫: GSC 수동 색인 요청 — 회차 1~4 목록(아래 회차 4 절) + **회차 5의 5개**(`/tr/solver` · `/tr/blog/{donk-bet-strategy, monotone-board-strategy, broadway-board-strategy, a-high-board-cbet}`).
 - 📅 **10/7**: `solver_open` 판독 → 솔버 후기창 브랜치 머지·배포(아래 «솔버 후기창» 절) · 그때 솔버 S-042 요청 1(후기창 tr 초안을 본체 사전에 넣기)도 처리.
 
