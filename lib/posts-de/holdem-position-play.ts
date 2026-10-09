@@ -289,7 +289,7 @@ A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände 
 
 **Q. Wie beeinflusst Position die C-Bet-Frequenz?**
 
-A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Leaks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, auf den von uns gerechneten Boards fast jeden Flop zu c-betten.)
+A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air dort deutlich sicherer ist als out of position (die Zahl gilt gegen Blind-Verteidiger; ein Check-Raise kann es trotzdem bestrafen). Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Leaks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, auf den von uns gerechneten Boards fast jeden Flop zu c-betten.)
 
 **Q. Sollte man aus dem Small Blind immer 3-betten?**
 
