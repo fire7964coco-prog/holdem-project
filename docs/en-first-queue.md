@@ -569,6 +569,17 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(자동 착수 금지): ① game-order L46 버튼 «après chaque main»에 «normalement» 없음(#12와 한정 정도 차이) = §2-AG (b) positions FAQ와 같은 계열 — 손질 회차에 함께 ② betting #73 일화(live 캐시) ↔ 90·97 WSOP 토너먼트 번호 = 결론 불변 · 기존 J1 #74 정리.
 
+### 2-AJ. 우편함 수신분 — MA-373 (FR 🅲 prob 7편 · 기준 `ceed9c0d`) · 판정·이행 2026-10-09 (2)
+
+> 근거 = 검수장 `reports/검수-fr-r3-prob-2026-10-08/hq-reverify/HQ-REPORT.md`(792행 · OK 736 · RISKY 1 · WRONG 0 · UNV 55 · 수치 오류 0). 본체 판정 = 요청 1 인용 문면 + 통지 7 앵커 전부 fr 파일에서 실재 확인(`grep`). 요청 1 = EN desc «but you don't always keep it» 부분 부정 이식 → **채택·이행**(fr 고유 · EN 무변경 · 같은 문면 fr 다른 글 사본 0 · 159자 ≤160). `docs/fr-lanes/prob-brief.md` L991 메타 표의 옛 desc는 집필 브리프(이력)라 손대지 않는다.
+
+| # | 글 | 자리 | 이행 |
+|---|---|---|---|
+| AJ-1 | equity | desc «c'est ta part du pot, pas ce que tu encaisses» (RISKY · 무한정 부정 ↔ 같은 글 L140 «tu réalises 100 % de ton équité» 올인) | «c'est ta part du pot — mais tu ne l'encaisses pas toujours» (EN desc 꼴 · 나머지 문면 그대로) |
+
+- 🪶 통지 7(FR 라벨 불변 · 자동 착수 금지): **EN 동문 → EN-먼저 후보** ① probability FAQ L271 «La paire, suivie de la double paire»(전원 쇼다운 MC 기준 2인만 원페어 1위 · 3인부터 투페어 · 실제 팟 분포 1차 없음 → 8로케일 UNV · «tête-à-tête» 한정 후보) ② equity 카드 L131 «Des stacks plus profonds … rendent l'équité marginale plus difficile à réaliser»(Upswing: SPR↑ → IP 실현↑ · OOP 반대 · 8로케일 UNV) ③ drawing-odds tldr·À retenir L243 «Chaque chiffre … du paquet» ↔ 같은 글 «vise à gagner 15×»(경험칙 표지 없음) ④ outs tip L139 «mise devant toi → ×2» ↔ 바로 앞 «payé un tapis»(올인 콜이면 ×4 유효) ⑦ drawing-odds H2 L37 «préflop, flop, turn, river dans un seul tableau»(turn 단독 열 없음). **fr 단독 경미** ⑤ probability FR 고유 FAQ L287 «plus basses, et donc moins rares»(7장 개별 SF 4 140 < 로열 4 324 · «donc» 인과 — 묶음으로는 더 흔함) ⑥ card-counting desc L7 «L'interdit en salle»(EN «whether it's legal» → 금지 전제) = §2-AG (b)와 같은 손질 회차에.
+- 검수장 처분(참고): 재라벨 4 · 신설 4 · 근거 칸 산수 정정 3 · 병합 `b727ef5`. 다음 회차 = FR 🅳(= MA-374 · 10-09 수신 · 별도 절).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

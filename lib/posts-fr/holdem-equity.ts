@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-equity",
   title: "Équité au poker (equity) : ton % de victoire, la fold equity et l'EV",
   seoTitle: "Tes 40 % ne sont pas 40 % des pots — Équité au poker et EV",
-  desc: "L'équité au poker, c'est ta part du pot, pas ce que tu encaisses. Pourquoi 40 % d'équité ne font pas 40 % des pots : fold equity, réalisation, EV.",
+  desc: "L'équité au poker, c'est ta part du pot — mais tu ne l'encaisses pas toujours. Pourquoi 40 % d'équité ne font pas 40 % des pots : fold equity, réalisation, EV.",
   tldr: "L'équité (equity), c'est ta part du pot : la fraction que ta main est censée gagner en moyenne une fois toutes les cartes distribuées, pots partagés comptés au prorata. Tu suis quand ton équité dépasse la cote du pot, mais la position et les mises font que tu gardes rarement toute ton équité, et la fold equity te fait gagner des pots même avec la moins bonne main.",
   category: "odds",
   date: "2026-10-07",

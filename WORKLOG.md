@@ -1,3 +1,9 @@
+## 2026-10-09 (2) — MA-373 FR 🅲 prob 판정·이행 (MB-208 · queue §2-AJ) · vi 레인 창 6개 띄움
+
+- 검수장 MA-373(FR 🅲 prob 7편 · 792행 OK 736 · RISKY 1 · WRONG 0 · UNV 55) 요청 1 채택: `lib/posts-fr/holdem-equity.ts` desc «pas ce que tu encaisses»(무한정 부정) → «— mais tu ne l'encaisses pas toujours»(EN desc «but you don't always keep it» 이식 · 159자). fr 다른 글 사본 0 · `docs/fr-lanes/prob-brief.md` 메타 표는 집필 브리프라 그대로. 통지 7(①②③④⑦ EN 동문 · ⑤⑥ fr 단독 경미) = §2-AJ 등재(자동 착수 금지). 앵커 7 전부 grep으로 실재 확인.
+- 게이트 audit:hard --locale=fr 51/51 🔴 0 · 빌드 exit 0 · MB-208(MA-374 접수 — 다음 세션 회신).
+- vi 레인 창 6개(`Holdem-vi-{rules,rank,prob,strat,tour,gloss}` · `wt.exe … claude`) 본체가 띄움(사장님 지시) — 창마다 「HARDEN.md 읽고 A 시작해」는 사장님이 친다. 🅶 gto는 🅰~🅵 머지 뒤.
+
 ## 2026-10-09 (1) — vi 0-3 판정 반영(§3-D 10건 채택) · 0-4 착수 (MB-207 · 워크트리 7)
 
 - 사장님 «§3-D 결과 반영하고 0-4 착수» → 본체 권고 10건 전부 채택으로 읽고 반영(`docs/vi-cluster-plan.md` §3 머리 ✅ · §3-D = 판정 기록표 · §3-C ① `/vi/glossary` 도구 신설 확정 · §1 링크 대상에 `/vi/glossary` 추가 · §2-⑤ EN 기준 해시 `b57cb658`).
