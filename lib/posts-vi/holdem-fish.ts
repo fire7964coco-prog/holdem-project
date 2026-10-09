@@ -17,9 +17,9 @@ export const POST: Post = {
   imageAlt: "Một người chơi giải trí thư thái ở bàn poker đẩy chồng chip lớn vào pot trong khi những đối thủ sắc sảo hơn lặng lẽ quan sát",
   tags: ["fish poker là gì", "fish poker", "fish poker meaning", "fish poker player", "shark poker", "whale poker", "nit poker", "donkey poker"],
   content: `
-Lần đầu có người ở một bàn poker live khẽ gọi tôi là fish, tôi thậm chí không biết mình vừa bị xúc phạm. Tôi tưởng mình đang chơi ổn — tôi xem rất nhiều flop, call để "giữ họ thật thà", đuổi theo mọi draw vì ==biết đâu đấy==. Sáu tháng và rất nhiều buy-in mất trắng sau, tôi hiểu ra: tôi *chính là* fish. Cả bàn đã biết điều đó trước cả khi tôi ngồi xuống.
+Lần đầu có người ở một bàn poker live khẽ gọi tôi là fish, tôi thậm chí không biết mình vừa bị xúc phạm. Tôi tưởng mình đang chơi ổn — tôi xem rất nhiều flop, call để "bắt bluff cho chắc", đuổi theo mọi draw vì ==biết đâu đấy==. Sáu tháng và rất nhiều buy-in mất trắng sau, tôi hiểu ra: tôi *chính là* fish. Cả bàn đã biết điều đó trước cả khi tôi ngồi xuống.
 
-**Fish** (người chơi yếu — nghĩa đen là "cá") là tiếng lóng poker chỉ người chơi yếu, thua đều — người mà những người chơi mạnh hơn lặng lẽ kiếm tiền từ đó. Đây là cái nhãn quan trọng nhất trong poker, vì mọi buổi chơi có lời đều bắt đầu bằng cùng một câu hỏi: *fish ở đây là ai?* Bên dưới là chính xác từ này nghĩa là gì, ==g:cách nhận ra fish== trong một hai vòng bàn, cả "sở thú" tiếng lóng về kiểu người chơi (shark, whale, nit, donkey), sự thật đằng sau câu "tìm ra sucker" nổi tiếng — và một bài tự kiểm tra thật lòng để fish không bao giờ là bạn. Đây là từ đầu tiên mà hầu hết người chơi học được trong [vốn từ ở bàn poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), và đây là mọi thứ đằng sau nó.
+**Fish** (người chơi yếu — nghĩa đen là "cá") là tiếng lóng poker chỉ người chơi yếu, thua đều — người mà những người chơi mạnh hơn lặng lẽ kiếm tiền từ đó. Đây là cái nhãn quan trọng nhất trong poker, vì mọi buổi chơi có lời đều bắt đầu bằng cùng một câu hỏi: *fish ở đây là ai?* Bên dưới là chính xác từ này nghĩa là gì, ==g:cách nhận ra fish== trong một hai vòng bàn (orbit), cả "sở thú" tiếng lóng về kiểu người chơi (shark, whale, nit, donkey), sự thật đằng sau câu "tìm ra sucker" nổi tiếng — và một bài tự kiểm tra thật lòng để fish không bao giờ là bạn. Đây là từ đầu tiên mà hầu hết người chơi học được trong [vốn từ ở bàn poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), và đây là mọi thứ đằng sau nó.
 
 ---
 
@@ -46,22 +46,22 @@ Từ này không nói về việc ai đó *dễ mến* thế nào hay thích vá
 
 ![Hình nhìn từ trên xuống một bàn poker quán bar với board K♦ 7♣ 2♠ 9♥ 3♦, các chồng chip và nút dealer](/images/holdem-pub-players-table.webp "Bàn nào cũng có chuỗi thức ăn: shark lặng lẽ xác định fish và xây lợi nhuận quanh họ")
 
-Phép ẩn dụ đến thẳng từ chuỗi thức ăn đại dương. **Cá mập ăn cá.** Một người chơi thắng, giỏi và hung hăng lượn quanh bàn tìm người chơi yếu, thụ động mà họ có thể kiếm lời từ đó — và người ấy là fish. Hình ảnh này ăn sâu vào văn hóa poker đến mức cả tá từ liên quan mọc ra từ nó (whale, minnow, guppy), tất cả mô tả các mức độ của cùng một thứ.
+Phép ẩn dụ đến thẳng từ chuỗi thức ăn đại dương. **Cá mập ăn cá.** Một người chơi thắng, giỏi và hung hăng lượn quanh bàn tìm người chơi yếu, thụ động mà họ có thể kiếm lời từ đó — và người ấy là fish. Hình ảnh này ăn sâu vào văn hóa poker đến mức cả tá từ liên quan mọc ra từ nó (whale — cá voi, minnow/guppy — cá con), tất cả mô tả các mức độ của cùng một thứ.
 
-Có một câu đi kèm bạn sẽ nghe liên tục: **"Don't tap the glass"** (đừng gõ vào bể cá — đừng chê người chơi yếu). Nó đến từ những tấm biển ở thủy cung nhắc khách đừng gõ vào bể làm cá sợ. Trong poker nó nghĩa là: *đừng bao giờ chỉ trích, lên lớp hay làm bẽ mặt một người chơi yếu.* Một người chơi thua mà thấy mình ngu ngốc sẽ đứng dậy bỏ đi — mang theo chip của họ. Người chơi giỏi muốn fish thoải mái, vui vẻ và ở lại thêm một buy-in nữa. Đó là lý do người chơi có kinh nghiệm luôn thân thiện với chính người đang bị họ lấy stack.
+Có một câu đi kèm bạn sẽ nghe liên tục: **"Don't tap the glass"** (đừng gõ vào bể cá — đừng chê người chơi yếu). Nó đến từ những tấm biển ở thủy cung nhắc khách đừng gõ vào bể làm cá sợ. Trong poker nó nghĩa là: *đừng bao giờ chỉ trích, lên lớp hay làm bẽ mặt một người chơi yếu.* Một người chơi thua mà thấy mình ngu ngốc sẽ đứng dậy bỏ đi — mang theo chip của họ. Người chơi giỏi muốn fish thoải mái, vui vẻ và ở lại thêm một buy-in nữa. Đó là lý do người chơi có kinh nghiệm luôn thân thiện với chính người vừa lấy stack của họ.
 
 ---
 
 ## Nhận ra fish ở bàn poker bằng 8 dấu hiệu nào?
 
-Bạn thường không cần cả buổi — một fish tự lộ ra trong một hai vòng bàn (orbit). Hãy để ý những điều này:
+Bạn thường không cần cả buổi — một fish tự lộ ra trong một hai vòng bàn. Hãy để ý những điều này:
 
 :::stripe
 Chơi quá nhiều tay | Xem flop với hai lá bất kỳ — VPIP 40–70% so với 15–22% của người chơi chắc tay
 Limp liên tục | Call big blind thay vì raise hay fold, hết lần này đến lần khác
 Call, hiếm khi raise | Thụ động — thà "xem chuyện gì xảy ra" còn hơn giành quyền kiểm soát
 Không fold nổi một đôi | Ôm top pair hay overpair đến river bất kể diễn biến
-Đuổi theo mọi draw | Trả bất kỳ giá nào cho thùng hay sảnh, mặc kệ tỷ lệ
+Đuổi theo mọi draw | Trả bất kỳ giá nào cho thùng (flush) hay sảnh (straight), mặc kệ tỷ lệ
 Size bet kỳ lạ | Min-bet tay lớn, overbet tay yếu — size không nói lên gì
 Lật tay yếu ở showdown | Mở ra những tay lẽ ra không bao giờ đi xa đến thế
 Chơi theo cảm xúc | Tilt sau bad beat, đuổi theo khoản thua, chơi sợ sệt khi đang âm
@@ -83,9 +83,9 @@ Không dấu hiệu đơn lẻ nào là bằng chứng — ngay cả người ch
 |:---|:---|:---|:---|
 | **Fish** | Người chơi yếu, thua (từ bao trùm) | Lỏng, thụ động, không fold nổi | Value bet mỏng, đừng bluff |
 | **Shark** | Người chơi mạnh, thắng | Tight-aggressive, thích nghi | Tránh — chọn bàn mềm hơn |
-| **Whale** (cá voi — fish nhiều tiền) | Một fish *giàu* thua **lớn** | Rất lỏng, stakes cao, không bận tâm | Như với fish, phần thưởng cao hơn |
+| **Whale** (cá voi — fish nhiều tiền) | Một fish *giàu* thua **lớn** | Rất lỏng, stakes (mức cược) cao, không bận tâm | Như với fish, phần thưởng cao hơn |
 | **Nit** (người chơi quá chặt) | Cực kỳ chặt, sợ rủi ro | Chỉ tay premium, hiếm khi bluff | Fold trước hầu hết raise của họ; cướp blind |
-| **Donkey (donk)** (người chơi tệ) | Fish ra những nước đặc biệt *tệ* | Phi logic, vung chip | Như với fish — để họ tự treo cổ mình |
+| **Donkey** (donk — người chơi tệ) | Fish ra những nước đặc biệt *tệ* | Phi logic, vung chip | Như với fish — cứ để họ tự mắc sai lầm |
 | **Calling station** (người chỉ biết call) | Người call quá đà, thụ động | Call gần như mọi thứ, hiếm khi raise hay fold | Value bet không ngừng, không bao giờ bluff |
 | **Reg** (regular — người chơi thường xuyên) | Người "quen mặt" ở một mức cược | Tùy người — không phải lúc nào cũng thắng | Đọc từng người một |
 | **Grinder** (người cày volume) | Pro/bán pro chơi khối lượng lớn | Chắc tay, đều đặn, variance thấp | Tránh; tìm người chơi giải trí |
@@ -98,13 +98,13 @@ Ba phân biệt mà các trang khác liên tục làm mờ, đáng để nắm �
 
 - **Fish ≠ whale.** Whale là một *tập con* của fish — người thua những khoản **lớn**, thường giàu và chơi stakes cao một cách lỏng lẻo. Mọi whale đều là fish; không phải mọi fish đều là whale. Có whale trong bàn là lý do shark xuất hiện.
 - **Fish ≠ donkey.** Gần đồng nghĩa, nhưng "donkey" nhấn vào *quyết định tệ* và nặng hơn; "fish" nhấn vào *thiếu kinh nghiệm và thua.* Gọi ai đó là donk mang tính xúc phạm nhiều hơn.
-- **Nit thường không phải fish.** Nit *chặt* — thường hòa vốn hoặc hơi thắng. Họ khai thác được vì range của họ lộ liễu, nhưng họ không vung chip như fish (dù một nit fold quá nhiều vẫn có thể là người chơi thua). Và **LAG/TAG là phong cách nhiều người chơi thắng dùng**, không phải nhãn người chơi yếu — chỉ phiên bản hỏng của chúng (gã "maniac" liều lĩnh — người chơi quá hung hăng, kẻ "TAG fish" đóng băng) mới là lỗ hổng.
+- **Nit thường không phải fish.** Nit *chặt* — thường hòa vốn hoặc hơi thắng. Họ dễ bị khai thác vì range của họ lộ liễu, nhưng họ không vung chip như fish (dù một nit fold quá nhiều vẫn có thể là người chơi thua). Và **LAG/TAG là phong cách nhiều người chơi thắng dùng**, không phải nhãn người chơi yếu — chỉ phiên bản hỏng của chúng (gã "maniac" liều lĩnh — người chơi quá hung hăng, kẻ "TAG fish" cứng nhắc, sợ sệt) mới là lỗ hổng.
 
 ---
 
 ## "Không thấy sucker ở bàn thì chính là bạn" — câu nói nổi tiếng, sửa cho đúng
 
-![Hai tay khởi đầu đặt cạnh nhau trên mặt nỉ — một Át-4 khác chất yếu viền đỏ, cạnh một Át-K premium viền vàng](/images/holdem-starting-hands-weak-ace-trap.webp "Bài tự kiểm tra quan trọng: nếu bạn đang call raise với tay bên trái, cả bàn đã nhận ra bạn rồi")
+![Hai tay khởi đầu đặt cạnh nhau trên mặt nỉ — một A‑4 khác chất yếu viền đỏ, cạnh một A‑K premium viền vàng](/images/holdem-starting-hands-weak-ace-trap.webp "Bài tự kiểm tra quan trọng: nếu bạn đang call raise với tay bên trái, cả bàn đã nhận ra bạn rồi")
 
 Bạn đã nghe một phiên bản nào đó: *"Nếu không nhận ra fish ở bàn trong nửa giờ đầu, bạn chính là fish."* Đó là câu được trích dẫn nhiều nhất trong poker — và gần như ai cũng nhớ sai một chút.
 
@@ -130,7 +130,7 @@ Vậy nên cách ghi nguồn trung thực — thứ tách một nguồn cẩn th
 | | VPIP (tỷ lệ ván chơi) | PFR (tỷ lệ ván raise) | Cách đọc |
 |:---|:---:|:---:|:---|
 | **Người chơi chắc tay** | 15–22% | 12–18% (không bao giờ cao hơn VPIP) | Chặt, hung hăng, khoảng cách hẹp |
-| **Fish** | 40–70% | dưới 10% | Lỏng và thụ động — chơi mọi thứ, dẫn đầu chẳng gì |
+| **Fish** | 40–70% | dưới 10% | Lỏng và thụ động — chơi mọi thứ, chẳng bao giờ chủ động bet |
 | **Nit** | dưới 12% | dưới 8% | Quá chặt — dễ đoán, thường không phải fish |
 
 </div>
@@ -142,7 +142,7 @@ Chữ ký của fish là **khoảng cách VPIP rộng / PFR thấp**: bạn chơ
 - Bạn có thấy fold chán, nên tự thuyết phục mình ở lại?
 - Sau một bad beat, 20 phút tiếp theo của bạn có *tệ hơn*?
 
-Nếu bạn đang gật đầu, đó không phải bản án — đó là một món quà. Mỗi điều trên là một lỗ hổng sửa được, và sửa chúng là khác biệt giữa nuôi ván chơi và thắng ván chơi.
+Nếu bạn đang gật đầu, đó không phải bản án — đó là một món quà. Mỗi điều trên là một lỗ hổng sửa được, và sửa chúng là khác biệt giữa làm nguồn tiền cho cả bàn và thắng cả bàn.
 
 ---
 
@@ -163,7 +163,7 @@ Làm sáu điều đó và bạn thôi là nguồn tiền. Bạn không cần th
 
 :::readnext[Đọc tiếp]
 /vi/blog/holdem-starting-hands-chart | Nên chơi bài gì theo vị trí? | /images/holdem-starting-hands-chart-hero.webp
-/vi/blog/holdem-pot-odds | Pot odds trong 10 giây | /images/holdem-pot-odds-hero.webp
+/vi/blog/holdem-pot-odds | Cách tính pot odds | /images/holdem-pot-odds-hero.webp
 :::
 
 ## Câu hỏi thường gặp

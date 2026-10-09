@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Người chơi ở vị trí under the gun đặt thêm một khoản blind hai chip trước big blind, trước khi bài được chia",
   tags: ["straddle poker là gì", "straddle poker", "straddle poker rules", "straddle poker meaning", "straddle là gì trong poker", "UTG straddle", "Mississippi straddle", "sleeper straddle"],
   content: `
-Lần đầu có người straddle ở bàn $1/$2 của tôi, tôi không hiểu vì sao gã under the gun ném ra $4 trước khi bài tới — và vì sao dealer bỗng bắt đầu lượt hành động ở ghế kế tiếp. Tôi gọi nó là "bet của người giàu" suốt khoảng một tháng trước khi biết nó thật sự làm gì: một straddle ==nhân đôi stakes và mua cho một người quyền nói sau cùng trước flop==, tất cả trước khi ai kịp nhìn một lá bài.
+Lần đầu có người straddle ở bàn $1/$2 của tôi, tôi không hiểu vì sao gã ngồi under the gun (ghế ngay bên trái big blind — mù lớn, cược bắt buộc) ném ra $4 trước khi bài tới — và vì sao dealer bỗng bắt đầu lượt hành động ở ghế kế tiếp. Tôi gọi nó là "bet của người giàu" suốt khoảng một tháng trước khi biết nó thật sự làm gì: một straddle ==nhân đôi stakes (mức cược) và mua cho một người quyền nói sau cùng trước flop==, tất cả trước khi ai kịp nhìn một lá bài.
 
 Nếu bạn từng thấy một bàn live mà một blind phụ bỗng xuất hiện từ đâu ra, đây là từ bạn đang tìm. Đó là một trong những mục bị hiểu sai nhiều nhất trong cả [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), nên hãy nắm nó cho thật đúng. Bên dưới là chính xác **straddle** (blind tự nguyện thứ ba, thường gấp đôi big blind) là gì, mọi kiểu bạn sẽ gặp, ai act trước — hành động trước — khi có straddle, và câu trả lời thật lòng cho câu hỏi duy nhất đáng hỏi: ==g:bạn có nên làm vậy không?==
 
@@ -29,19 +29,19 @@ Nếu bạn từng thấy một bàn live mà một blind phụ bỗng xuất hi
 2× BB | Cỡ straddle tiêu chuẩn
 Cuối cùng | Lượt act preflop của người straddle
 Chỉ cash game | Gần như không bao giờ được phép trong giải đấu
--EV | Kết luận cho hầu hết người chơi
+-EV (EV âm) | Kết luận cho hầu hết người chơi
 :::
 
 ---
 
 ## Straddle trong poker là gì?
 
-**Straddle là một blind (mù — cược bắt buộc) tự nguyện — thường gấp đôi big blind — đặt trước khi bài được chia.** Ở bàn $1/$2, người chơi under the gun (ngay bên trái big blind) có thể thả $4 "lên straddle", và bàn lập tức chơi như một bàn $1/$2/$4 trong ván đó.
+**Straddle là một blind tự nguyện — thường gấp đôi big blind — đặt trước khi bài được chia.** Ở bàn $1/$2, người chơi under the gun có thể thả $4 "lên straddle", và bàn lập tức chơi như một bàn $1/$2/$4 trong ván đó.
 
 Hai điều khiến nó không chỉ là thêm tiền vào pot:
 
 - Nó là một **live blind** (blind còn quyền hành động). Y như big blind, người straddle đã mua **quyền raise sau cùng (option)** kể cả khi mọi người chỉ call — một "blind thứ ba" với quyền act trên nó.
-- Nó được đặt **mù**, tức chưa thấy bài. Bạn straddle *trước* khi nhìn bài (ở hầu hết phòng, trước cả khi bài được chia). Bạn đang bỏ tiền ra mà không có thông tin nào, và đó là toàn bộ lý do nó thường là ý tồi — nói thêm bên dưới.
+- Nó được đặt **khi chưa thấy bài**. Bạn straddle *trước* khi nhìn bài (ở hầu hết phòng, trước cả khi bài được chia). Bạn đang bỏ tiền ra mà không có thông tin nào, và đó là toàn bộ lý do nó thường là ý tồi — nói thêm bên dưới.
 
 Straddle không phải một cú raise theo nghĩa thông thường — nó là một blind đặt lại cái giá. Nếu bạn đã hiểu [small blind và big blind là gì](/vi/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), straddle đơn giản là một blind *thứ ba* tùy chọn mà người chơi tự nguyện đặt để đẩy stakes lên và giành vị trí.
 
@@ -101,7 +101,7 @@ Straddle tiêu chuẩn là **đúng 2× big blind** — $4 ở bàn $1/$2, $10 �
 
 Một số phòng no-limit cho phép nhiều hơn:
 
-- **Straddle không giới hạn / all-in straddle** — một vài phòng cho người straddle đặt bất kỳ số tiền nào, tới cả stack, như một khoản cược mù. Một straddle lớn có thể biến một bàn nhỏ thành bàn rất lớn trong một ván.
+- **Straddle không giới hạn / all-in straddle** — một vài phòng cho người straddle đặt bất kỳ số tiền nào, tới cả stack, như một blind. Một straddle lớn có thể biến một bàn nhỏ thành bàn rất lớn trong một ván.
 - **Chuỗi re-straddle** — nơi cho phép re-straddle, mỗi cái ít nhất gấp đôi cái trước: $4, rồi $8, rồi $16, và cứ thế. Những bàn mà cả bàn straddle rồi re-straddle có thể làm stakes hiệu dụng phình lên nhiều lần.
 
 Nếu bạn đang call vào một pot có straddle, hãy nhớ [pot odds](/vi/blog/holdem-pot-odds) của bạn giờ được đo trên một blind lớn hơn — giá để chơi mỗi ván đã nhân đôi, điều này lặng lẽ trừng phạt kiểu call lỏng.
@@ -123,7 +123,7 @@ Ngay cả trong cash game nó cũng tùy chọn và tùy luật riêng của ph�
 Câu trả lời thật lòng, và cũng là câu các solver đồng ý: **với gần như tất cả mọi người, không.** Phân tích của GTO Wizard nói thẳng: bỏ tiền vào mà không nhìn bài là "a massive disadvantage" (một bất lợi khổng lồ), và ngay cả straddle từ button cũng "still almost always a money-losing proposition" (vẫn gần như luôn là một nước đi mất tiền). Ba lý do nó tốn của bạn — hai ở bàn, một từ nhà:
 
 :::card
-🎯 | Bạn bỏ tiền mù | Tiền vào trước khi bạn thấy bài, nên bạn đang chơi một pot phình to mà không có thông tin — cùng bất lợi khiến các blind là ghế tệ nhất bàn. Nó còn làm độ sâu hiệu dụng của bạn giảm một nửa: ở $1/$2, stack $200 là 100 big blind, nhưng với straddle $4, cùng stack ấy chơi như 50
+🎯 | Bạn bỏ tiền khi chưa thấy bài | Tiền vào trước khi bạn thấy bài, nên bạn đang chơi một pot phình to mà không có thông tin — cùng bất lợi khiến các blind là ghế tệ nhất bàn. Nó còn làm độ sâu hiệu dụng của bạn giảm một nửa: ở $1/$2, stack $200 là 100 big blind, nhưng với straddle $4, cùng stack ấy chơi như 50
 📉 | UTG straddle mua vị trí cho một vòng cược | Nó cho bạn act cuối ở preflop, rồi để bạn không có vị trí trước mọi người call trừ các blind trong ba vòng tiếp theo, trong một pot do chính bạn thổi phồng. Straddle cũng không làm các ghế muộn chơi lỏng hơn: trong [mô phỏng pot có straddle của GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) (UTG straddle lên 2bb), button mở **ít** tay hơn — ít hơn khoảng 15–20% — chứ không nhiều hơn
 💸 | Nó có thể làm tăng pot rake | Ở những pot đủ điều kiện thu [rake](/vi/blog/holdem-rake), pot lớn hơn có thể đồng nghĩa khoản thu lớn hơn cho tới khi chạm cap. Mức tăng này không áp dụng với pot preflop theo luật no flop no drop, bàn time charge, hay pot đã chạm cap
 :::
@@ -147,7 +147,7 @@ Thứ straddle *không* làm được là "tạo hình ảnh lỏng" để sau n
 
 **Q. Straddle nghĩa là gì trong poker?**
 
-A. Trong poker, straddle là một khoản cược mù tự nguyện, thường gấp đôi big blind, đặt trước khi bài được chia — thường nhất bởi người chơi under the gun. Nó nhân đôi stakes cho ván đó và cho người straddle quyền raise cùng lượt act cuối ở preflop, y như một blind thứ ba.
+A. Trong poker, straddle là một blind tự nguyện, thường gấp đôi big blind, đặt trước khi bài được chia — thường nhất bởi người chơi under the gun. Nó nhân đôi stakes cho ván đó và cho người straddle quyền raise cùng lượt act cuối ở preflop, y như một blind thứ ba.
 
 **Q. Straddle thường là bao nhiêu?**
 
@@ -163,7 +163,7 @@ A. Tùy kiểu. Với straddle tiêu chuẩn, chỉ người chơi under the gun
 
 **Q. Straddle có tính là raise không?**
 
-A. Không. Straddle là một khoản cược mù, không phải raise — nó đặt lại cái giá mọi người phải call để vào pot, và giữ cho người straddle option để raise sau. Nó có tính vào giới hạn số lần raise ở bàn limit hay không là luật riêng của phòng: nhiều phòng không tính, nhưng một số coi nó là raise cho mục đích đó, nên hãy kiểm tra tại chỗ.
+A. Không. Straddle là một blind, không phải raise — nó đặt lại cái giá mọi người phải call để vào pot, và giữ cho người straddle option để raise sau. Nó có tính vào giới hạn số lần raise ở bàn limit hay không là luật riêng của phòng: nhiều phòng không tính, nhưng một số coi nó là raise cho mục đích đó, nên hãy kiểm tra tại chỗ.
 
 **Q. Mississippi straddle là gì?**
 
@@ -179,7 +179,7 @@ A. Gần như không bao giờ. Giải đấu dựa vào một cấu trúc blind
 
 **Q. Straddle có lời không?**
 
-A. Với hầu hết người chơi, không — đó là nước đi -EV (EV âm). Bạn bỏ tiền mù, UTG straddle mua lượt act cuối cho một vòng cược rồi bạn chơi phần còn lại không có vị trí trước mọi người trừ các blind (và straddle không làm các ghế muộn lỏng hơn — trong mô phỏng của GTO Wizard, button mở *ít* tay hơn, không nhiều hơn), và bạn có thể trả nhiều rake hơn. Nó chỉ bào chữa được ở bàn lỏng-thụ động, ở bàn mà ai cũng đã straddle, hoặc thuần túy cho vui — gần như không bao giờ là cách kiếm tiền. Khi mọi người thay phiên straddle trên cùng điều kiện, stakes cao hơn có thể có lợi cho những người chơi mạnh hơn.
+A. Với hầu hết người chơi, không — đó là nước đi -EV. Bạn bỏ tiền khi chưa thấy bài, UTG straddle mua lượt act cuối cho một vòng cược rồi bạn chơi phần còn lại không có vị trí trước mọi người trừ các blind (và straddle không làm các ghế muộn lỏng hơn — trong mô phỏng của GTO Wizard, button mở *ít* tay hơn, không nhiều hơn), và bạn có thể trả nhiều rake hơn. Nó chỉ bào chữa được ở bàn lỏng-thụ động, ở bàn mà ai cũng đã straddle, hoặc thuần túy cho vui — gần như không bao giờ là cách kiếm tiền. Khi mọi người thay phiên straddle trên cùng điều kiện, stakes cao hơn có thể có lợi cho những người chơi mạnh hơn.
 
 ---
 
@@ -187,7 +187,7 @@ A. Với hầu hết người chơi, không — đó là nước đi -EV (EV âm
 
 1. **Straddle là một blind thứ ba tùy chọn, thường 2× big blind,** đặt trước khi có bài — nó nhân đôi stakes và mua lượt act cuối ở preflop.
 2. **Ghế quyết định vị trí, không phải tên của straddle.** UTG straddle chỉ act cuối ở preflop. Straddle duy nhất cũng act cuối sau flop là straddle đặt ==từ nút dealer== — vì postflop, thứ tự luôn đi theo nút dealer. Mọi thứ đều tùy luật riêng của phòng.
-3. **Nó là -EV với gần như tất cả mọi người.** Bỏ tiền mù, thổi phồng pot khi không có vị trí, và có thể trả nhiều rake hơn — những thứ đó nặng hơn niềm vui. Theo quy tắc chung, straddle để giải trí, không phải vì hình ảnh hay lợi nhuận.
+3. **Nó là -EV với gần như tất cả mọi người.** Bỏ tiền khi chưa thấy bài, thổi phồng pot khi không có vị trí, và có thể trả nhiều rake hơn — những thứ đó nặng hơn niềm vui. Theo quy tắc chung, straddle để giải trí, không phải vì hình ảnh hay lợi nhuận.
 
 Giờ bạn đã biết blind phụ này, hãy siết lại những nền tảng mà nó làm méo: [các blind thật sự làm gì](/vi/blog/holdem-blind-meaning), [vì sao vị trí thắng tiền](/vi/blog/holdem-position-play), và [các hành động cược và raise vận hành thế nào](/vi/blog/holdem-betting-actions) một khi straddle đặt lại cái giá.
 

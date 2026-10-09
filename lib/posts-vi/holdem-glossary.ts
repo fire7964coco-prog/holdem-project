@@ -43,9 +43,9 @@ Nếu bạn chỉ gỡ rối được một tá từ, hãy chọn những cặp 
 | Hay bị nhầm | Khác nhau ở đâu |
 |:---|:---|
 | **Check vs Call** | Check không mất **chip nào** (chỉ khi không có khoản cược nào đang chờ bạn theo); call (theo) là **theo đủ** một khoản cược đã có. |
-| **Blind vs Ante** | Blind là cược bắt buộc **theo vị trí** (SB/BB); ante gieo hạt cho pot — theo truyền thống từ **mọi người**, dù hầu hết giải đấu ngày nay dùng big blind ante do một ghế trả. |
+| **Blind vs Ante** | Blind (mù) là cược bắt buộc **theo vị trí** (SB/BB); ante là khoản góp nhỏ vào pot trước khi chia bài — theo truyền thống từ **mọi người**, dù hầu hết giải đấu ngày nay dùng big blind ante do một ghế trả. |
 | **Set vs Trips** | Cả hai đều là sám cô (bộ ba) — **set** là cầm đôi trên tay + 1 lá trên board; **trips** là 1 lá trên tay + board có đôi. |
-| **Cooler vs Bad Beat** | [Cooler](/vi/blog/holdem-cooler) = tay quá mạnh để fold gặp tay lớn hơn (theo nghĩa chặt, bạn bị dẫn ngay lúc tiền vào); [bad beat](/vi/blog/holdem-bad-beat) = bạn là favorite lớn lúc tiền vào rồi bị thua ngược. |
+| **Cooler vs Bad Beat** | [Cooler](/vi/blog/holdem-cooler) = tay quá mạnh để fold gặp tay lớn hơn (theo nghĩa chặt, bạn bị dẫn ngay lúc tiền vào); [bad beat](/vi/blog/holdem-bad-beat) = bạn là favorite (bên có cơ hội thắng cao hơn) lúc tiền vào rồi bị thua ngược. |
 | **Value bet vs Bluff** | Value bet muốn **được call bởi tay yếu hơn**; bluff muốn **tay mạnh hơn fold**. |
 | **Pot odds vs Implied odds** | [Pot odds](/vi/blog/holdem-pot-odds) chỉ tính chip **đang trong pot lúc này**; implied odds cộng thêm phần bạn **sẽ thắng sau**. |
 | **VPIP vs PFR** | VPIP = bạn **chơi** bao nhiêu ván; PFR = bạn **raise** bao nhiêu ván. PFR không bao giờ vượt VPIP. |
@@ -68,7 +68,7 @@ Nếu bạn chỉ gỡ rối được một tá từ, hãy chọn những cặp 
 | **Four of a kind (quads)** | tứ quý | 4 lá cùng giá trị |
 | **Full house (boat)** | cù lũ | sám cô + một đôi |
 | **Flush** | thùng | 5 lá cùng chất |
-| **Straight** | sảnh | 5 lá liên tiếp, khác chất |
+| **Straight** | sảnh | 5 lá liên tiếp, không cùng một chất |
 | **Three of a kind** | sám cô (bộ ba) | set và trips vẫn gọi bằng tiếng Anh |
 | **Two pair** | hai đôi | |
 | **One pair** | một đôi | |
@@ -128,7 +128,7 @@ Bạn ngồi ở đâu quyết định bạn act (hành động) khi nào — v�
 | **UTG (under the gun)** | Act đầu tiên ở preflop — cần range mở chặt nhất. |
 | **Cutoff (CO)** | Bên phải nút dealer; ghế tốt nhì, rất hợp để cướp blind. |
 | **Hijack (HJ)** | Cách nút dealer hai ghế về bên phải; vị trí giữa (MP), ngay trước cutoff. |
-| **Lojack (LJ)** | Bên phải hijack; cũng là vị trí giữa (MP) — tên gọi dịch theo số người ở bàn. |
+| **Lojack (LJ)** | Bên phải hijack; cũng là vị trí giữa (MP) — tên gọi thay đổi theo số người ở bàn. |
 | **Early / Middle / Late** | Nhóm theo việc bạn act sớm hay muộn — vị trí sớm = chặt nhất, vị trí muộn = rộng nhất và có lời nhất. |
 | **In / Out of position** | Bạn *có vị trí (in position)* nếu act sau đối thủ, *không có vị trí (out of position)* nếu act trước. |
 
@@ -165,7 +165,7 @@ Chính các lá bài, và thứ bạn làm ra từ chúng. Mới với trình t�
 | **Draw** (bài chờ) | Tay cần cải thiện — ví dụ **flush draw** (chờ thùng, 4 lá cùng chất) hay chờ sảnh. |
 | **Gutshot** (sảnh hở giữa) | Draw sảnh cần một lá ở giữa (4 [outs](/vi/blog/holdem-outs)). |
 | **Open-ender** (sảnh hở hai đầu — OESD) | Draw sảnh hoàn thành ở cả hai đầu (8 outs). |
-| **Backdoor** | Draw cần **hai** lá liên tiếp (turn *và* river). |
+| **Backdoor** | Draw cần trúng **cả hai** lá turn *và* river. |
 | **Runner-runner** | Hoàn thành tay bài bằng **cả** turn và river — một draw backdoor đã tới (vd. "runner-runner thùng"). |
 | **Overcard** | Lá cao hơn board. |
 | **Suited connectors** | Hai lá bài liên tiếp cùng chất (vd. 8♥9♥). |
@@ -184,7 +184,7 @@ Còn đang học bài nào thắng bài nào? [Hướng dẫn thứ hạng tay b
 
 ![Năm ô kiểu người chơi poker — fish, whale, donk, nit và shark — mỗi ô đánh dấu bằng biểu tượng định nghĩa nó](/images/holdem-glossary-player-types.webp "Bàn nào cũng là hỗn hợp các kiểu — học tiếng lóng cho bạn biết nhắm vào ai và tránh ai")
 
-Sở thú biệt danh cho những người ngồi phía bên kia mặt nỉ. Bản phân tích đầy đủ nằm ở [bài về fish](/vi/blog/holdem-fish).
+Đủ loại biệt danh cho những người ngồi phía bên kia mặt nỉ. Bản phân tích đầy đủ nằm ở [bài về fish](/vi/blog/holdem-fish).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -192,7 +192,7 @@ Sở thú biệt danh cho những người ngồi phía bên kia mặt nỉ. B�
 |:---|:---|
 | **Fish** | Người chơi giải trí yếu, thua đều (nghĩa đen là "cá") — nguồn lợi nhuận của cả bàn. |
 | **Shark** | Người chơi mạnh, thắng (cá mập), săn những người yếu hơn. |
-| **Whale** | Người chơi giải trí giàu, yếu, ở stakes lớn — một "fish nhiều tiền" (cá voi). |
+| **Whale** | Người chơi giải trí giàu, yếu, ở stakes (mức cược) lớn — một "fish nhiều tiền" (cá voi). |
 | **Nit** | Người chơi cực kỳ chặt, chỉ chơi tay premium. |
 | **Donkey (donk)** | Từ miệt thị cho một người chơi tệ, kém kỹ năng. |
 | **Calling station** | Người chơi thụ động, chỉ biết call, hiếm khi fold hay raise. |
@@ -215,7 +215,7 @@ Chip, mức cược, và hai thể thức. Ngã rẽ lớn là [cash game hay gi
 | Từ | Nghĩa |
 |:---|:---|
 | **Blinds** (mù — cược bắt buộc) | Hai khoản cược bắt buộc SB/BB khởi động ván — cũng là tên gọi của mức cược ([giải thích về blind](/vi/blog/holdem-blind-meaning)). |
-| **Ante** | Theo truyền thống là khoản cược bắt buộc nhỏ từ mọi người để gieo hạt cho pot, tách biệt với blind — hầu hết giải đấu nay dùng big blind ante do một ghế trả cho cả bàn. |
+| **Ante** | Theo truyền thống là khoản cược bắt buộc nhỏ từ mọi người để tạo pot ban đầu, tách biệt với blind — hầu hết giải đấu nay dùng big blind ante do một ghế trả cho cả bàn. |
 | **Pot** | Tổng số chip đang được tranh. |
 | **Side pot** (pot phụ) | Pot riêng hình thành khi một người đã all-in và những người khác tiếp tục cược. |
 | **Stack** | Số chip trước mặt một người chơi. |
@@ -311,7 +311,7 @@ A. Nuts là tay bài mạnh nhất có thể với những lá trên board ở t
 
 **Q. VPIP và PFR là gì?**
 
-A. VPIP (Voluntarily Put money In Pot) là tỷ lệ ván một người chọn chơi ở preflop — thước đo họ lỏng hay chặt. PFR (Pre-Flop Raise) là tỷ lệ ván họ raise ở preflop — thước đo độ hung hăng. PFR không bao giờ cao hơn VPIP, và khoảng cách lớn giữa hai số đánh dấu một người chơi thụ động, nặng về call.
+A. VPIP (Voluntarily Put money In Pot) là tỷ lệ ván một người chọn chơi ở preflop — thước đo họ lỏng hay chặt. PFR (Preflop Raise) là tỷ lệ ván họ raise ở preflop — thước đo độ hung hăng. PFR không bao giờ cao hơn VPIP, và khoảng cách lớn giữa hai số đánh dấu một người chơi thụ động, nặng về call.
 
 **Q. Blind trong poker là gì?**
 
@@ -323,7 +323,7 @@ A. Buy-in là số tiền cần để vào một bàn hay một giải đấu. �
 
 **Q. Làm cách nào để chơi poker giỏi?**
 
-A. Không có đường tắt, nhưng có thứ tự: luật và thứ tự cược trước, rồi thứ hạng tay bài, rồi phần toán (pot odds, outs), rồi vị trí — đúng thứ tự của mục "Nên đọc gì tiếp?" bên dưới. Khi đã vững nền, [chiến thuật](/vi/blog/holdem-strategy) mới là nơi lợi thế thật sự được xây.
+A. Không có đường tắt, nhưng có thứ tự: luật và thứ tự cược trước, rồi thứ hạng tay bài, rồi phần toán (pot odds, outs) — đúng thứ tự của mục "Nên đọc gì tiếp?" bên dưới — rồi mới tới vị trí. Khi đã vững nền, [chiến thuật](/vi/blog/holdem-strategy) mới là nơi lợi thế thật sự được xây.
 
 ---
 

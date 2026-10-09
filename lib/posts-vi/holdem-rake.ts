@@ -15,11 +15,11 @@ export const POST: Post = {
   emoji: "🏦",
   image: "/images/holdem-rake-hero.webp",
   imageAlt: "Dealer kéo một chồng chip nhỏ từ pot giữa bàn vào khe thu rake trên mặt nỉ xanh",
-  tags: ["rake trong poker là gì", "rake poker là gì", "rake poker", "rake là gì", "tiền rake là gì", "cắt rake là gì", "rakeback là gì", "pot rake"],
+  tags: ["rake trong poker là gì", "rake poker là gì", "rake poker", "rake poker meaning", "tiền rake là gì", "cắt rake là gì", "rakeback là gì", "pot rake"],
   content: `
 Tôi mất một tháng chán nản với những buổi "hòa vốn" mới hiểu ra tiền của mình thật sự đi đâu. Tôi không thua những người chơi khác — tôi đang thắng họ, một chút. Tôi thua ==phần nhà cắt ở mọi pot tôi thắng.== Khoản phí lặng lẽ ấy gọi là **rake** (phí sòng), và cho đến khi hiểu nó, bạn có thể là người chơi thắng trên giấy mà vẫn là người thua ở quầy đổi chip.
 
-Rake là cách một phòng poker kiếm tiền từ một ván chơi mà nó không chơi lấy một tay. Bên dưới là chính xác nó là gì, mọi cách nó được thu, phép tính thật lòng về ==g:bạn thật sự trả bao nhiêu mỗi buổi==, và cách rakeback (hoàn rake) đòi lại một phần. Đó là khoản phí quyết định việc thắng poker stakes nhỏ có khả thi hay không — và là một trong những từ đắt nhất trong [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") nếu hiểu sai.
+Rake là cách một phòng poker kiếm tiền từ một ván chơi mà nó không chơi lấy một tay. Bên dưới là chính xác nó là gì, mọi cách nó được thu, phép tính thật lòng về ==g:bạn thật sự trả bao nhiêu mỗi buổi==, và cách rakeback (hoàn rake) đòi lại một phần. Đó là khoản phí quyết định việc thắng poker stakes (mức cược) nhỏ có khả thi hay không — và là một trong những từ đắt nhất trong [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") nếu hiểu sai.
 
 ---
 
@@ -36,7 +36,7 @@ No flop, no drop | Thường không thu rake nếu mọi người fold preflop
 
 ## Rake trong poker là gì?
 
-**Rake là khoản hoa hồng phòng poker thu từ một cash game để tổ chức ván chơi.** Vì poker là người chơi đấu với người chơi — nhà không bao giờ cược — rake là cách phòng, sòng hay ứng dụng thật sự kiếm tiền. Đó là phí dịch vụ cho dealer (người chia bài), bàn, chip và an ninh, được cắt từng chút một từ các pot.
+**Rake là khoản hoa hồng phòng poker thu từ một cash game để tổ chức ván chơi.** Vì poker là người chơi đấu với người chơi — nhà không bao giờ cược — rake là cách phòng poker, sòng bài hay ứng dụng thật sự kiếm tiền. Đó là phí dịch vụ cho dealer (người chia bài), bàn, chip và an ninh, được cắt từng chút một từ các pot.
 
 Trong cash game nó thường được lấy thẳng từ pot: một tỷ lệ nhỏ của số tiền giữa bàn, thả vào một khe trên bàn trước khi người thắng được trả. Trong giải đấu (tournament) nó hoạt động khác — phí được gộp sẵn vào buy-in của bạn ngay từ đầu (nói kỹ bên dưới). Dù cách nào, rake tách biệt với bất kỳ thứ gì bạn thắng hay thua trước người chơi khác, và chính vì thế nó rất dễ bị bỏ qua. Đây là một trong những khác biệt thực tế lớn nhất giữa [cash game và giải đấu](/vi/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp").
 
@@ -62,8 +62,8 @@ Không chỉ có một kiểu rake. Cách nhà thu tiền tùy vào mức cượ
 Vài quy tắc chi phối cách pot rake thật sự được cắt:
 
 - **"No flop, no drop"** (không có flop thì không thu rake). Ở hầu hết phòng, nếu ván kết thúc trước flop — mọi người fold trước một cú raise preflop — nhà **không thu rake** nào cả. (Không phải phổ quát: một vài trang, đáng chú ý là GGPoker, có thu rake một số pot preflop, nên hãy kiểm tra phòng của bạn.)
-- **Cap** (mức trần rake). Nhà không bao giờ lấy trọn tỷ lệ trên một pot khổng lồ — nó dừng ở một mức tối đa, phổ biến **$3–$6 ở bàn live** và **$1–$3 online**. Cap có tăng khi mức cược tăng, nhưng không theo tỷ lệ — chúng nhảy theo bậc thô, nên nhiều mức cược thường dùng chung một cap. Thêm nữa chúng thường co lại khi ít người được chia bài hơn (một pot heads-up có thể bị cap ở $1).
-- **Time charge thay cho pot rake.** Ở stakes cao hơn, phòng thường thôi cắt pot và thay bằng một khoản phí cố định — chẳng hạn $10–$15 mỗi giờ mỗi người, thu mỗi nửa giờ. Cách này có lợi cho người thắng pot lớn — dù thứ bạn tiết kiệm là rake *đã bị cap*, không phải một lát của pot: với cap $3–$6, một pot $2.000 cũng chỉ từng mất vài đô la.
+- **Cap** (mức trần rake). Nhà không bao giờ lấy trọn tỷ lệ trên một pot khổng lồ — nó dừng ở một mức tối đa, phổ biến **$3–$6 ở bàn live** và **$1–$3 online**. Cap có tăng khi mức cược tăng, nhưng không theo tỷ lệ — chúng tăng theo từng nấc lớn, nên nhiều mức cược thường dùng chung một cap. Thêm nữa chúng thường co lại khi ít người được chia bài hơn (một pot heads-up có thể bị cap ở $1).
+- **Time charge thay cho pot rake.** Ở stakes cao hơn, phòng thường thôi cắt pot và thay bằng một khoản phí cố định — chẳng hạn $10–$15 mỗi giờ mỗi người, thu mỗi nửa giờ. Cách này có lợi cho người thắng pot lớn — dù thứ bạn tiết kiệm là rake *đã bị cap*, không phải một lát của pot: với cap $3–$6, một pot $2.000 cũng chỉ mất vài đô la.
 - **Dead drop.** Một cách ít phổ biến hơn, chỉ người ở nút dealer trả một khoản rake định sẵn mỗi ván, thu trước khi bài được chia — thiết kế để người thắng pot lớn không bị đánh thuế nặng hơn ai khác.
 
 ---
@@ -80,7 +80,7 @@ Vài quy tắc chi phối cách pot rake thật sự được cắt:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Cùng người chơi, cùng ván | Rake trả | Kết quả |
+| Cùng người chơi, cùng ván | Rake trả (bb/100 = số big blind mỗi 100 ván) | Kết quả |
 |:---|:---:|:---|
 | Phòng có **cap $2** | ~5 bb/100 | Win rate +8 bb/100 vẫn là **người thắng (+3)** |
 | Phòng có **cap $4** | ~8–9 bb/100 | +8 bb/100 hòa vốn hoặc thành **người thua (0 đến −1)** |
@@ -98,7 +98,7 @@ Vì nhà kiếm lời từ khối lượng bạn tạo ra, hầu hết phòng tr
 Có hai cách tính nó:
 
 :::compare
-Contributed | Dealt
+Contributed (theo phần đã góp) | Dealt (chia đều)
 Dựa trên rake từ những pot **bạn có bỏ tiền vào** — cách hiện đại tiêu chuẩn | Chia đều cho **mọi người được chia bài** trong pot bị thu rake, dù có góp tiền hay không — nay đã hiếm
 :::
 
@@ -114,7 +114,7 @@ Không phải kiểu cắt pot — nhưng bạn vẫn trả một khoản phí, 
 Một giải **$100 + $9** nghĩa là $100 vào quỹ giải thưởng và **$9 là phí của nhà.**
 :::
 
-Khoản phí đó — còn gọi là **"juice"** hay **"vig"** — là phiên bản rake của giải đấu, tức phí đăng ký (fee). Nó thường là **5–20% buy-in**, và cố định: bạn trả nó dù bị loại đầu tiên hay thắng cả giải. Buy-in thấp hơn mang phí cao hơn theo tỷ lệ (một Sit & Go $3 + $0,30 là 10%), và vì **các thể thức turbo nén lợi thế của bạn**, phí cắn nặng nhất ở đó — tỷ lệ càng thấp, kỹ năng của bạn càng sống sót qua nó nhiều hơn. Vì cấu trúc của một giải đấu khác hoàn toàn cash game, cách bạn trả tiền để chơi cũng vậy — một phân biệt đáng hiểu cùng với những điều cơ bản về [giải đấu và cash game](/vi/blog/holdem-tournament-vs-cash-game).
+Khoản phí đó — còn gọi là **"juice"** hay **"vig"** — là phiên bản rake của giải đấu, tức phí đăng ký (fee). Nó thường là **5–20% buy-in**, và cố định: bạn trả nó dù bị loại đầu tiên hay thắng cả giải. Buy-in thấp hơn mang phí cao hơn theo tỷ lệ (một Sit & Go $3 + $0,30 là 10%), và vì **các thể thức turbo (blind tăng nhanh) nén lợi thế của bạn**, phí cắn nặng nhất ở đó — tỷ lệ càng thấp, kỹ năng của bạn càng sống sót qua nó nhiều hơn. Vì cấu trúc của một giải đấu khác hoàn toàn cash game, cách bạn trả tiền để chơi cũng vậy — một phân biệt đáng hiểu cùng với những điều cơ bản về [giải đấu và cash game](/vi/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -185,7 +185,7 @@ A. Rake live có xu hướng tỷ lệ cao hơn, thường với cap cao hơn, n
 ## Những điều cần nhớ
 
 1. **Rake là phần nhà cắt để tổ chức ván chơi** — thường 2,5–10% của các pot đủ điều kiện tới một cap nhỏ, và nó tách biệt với thứ bạn thắng hay thua trước đối thủ.
-2. **Nó cắn stakes thấp nặng nhất.** Cap gần như không nhúc nhích khi bạn xuống mức thấp, nên theo tỷ lệ bạn trả nhiều rake nhất ở đáy — "bẫy rake" khiến micro-stakes khó thắng đến vậy.
+2. **Nó cắn stakes thấp nặng nhất.** Cap gần như không nhúc nhích khi bạn xuống mức thấp, nên theo tỷ lệ bạn trả nhiều rake nhất ở đáy — "bẫy rake" khiến micro-stakes (mức cược siêu nhỏ) khó thắng đến vậy.
 3. **Rakeback và cấu trúc rake quan trọng.** Nhận lại 20–40% rake, và chọn phòng có cap thân thiện với người chơi, có thể lật ngược kết quả dài hạn của bạn — hãy đo mọi thứ *sau* rake.
 
 Giờ bạn đã thấy phần nhà cắt, những con số bạn đọc ở mọi nơi khác trở nên dễ hiểu hơn: [pot odds](/vi/blog/holdem-pot-odds) của bạn, win rate của bạn, và vì sao một [straddle](/vi/blog/holdem-straddle) làm pot phình to cũng lặng lẽ nuôi rake. Poker có thể thắng được — nhưng chỉ khi bạn thắng những người chơi khác *nhiều hơn* phần nhà lấy đi.

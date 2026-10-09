@@ -17,9 +17,9 @@ export const POST: Post = {
   imageAlt: "Một người chơi poker sững sờ ôm đầu sau khi thua pot lớn, nhìn đối thủ kéo chồng chip cao về phía mình trên mặt nỉ xanh",
   tags: ["cooler poker là gì", "cooler poker", "cooler trong poker", "cooler poker hand", "poker cooler vs bad beat", "set over set", "KK gặp AA", "coolered"],
   content: `
-Tôi vẫn nhớ ván bài đã dạy tôi từ này. Tôi flop set K, all-in ở turn, lật bài lên và tay đã vươn ra định kéo pot — rồi nhìn đối thủ lật lên set A. Tôi không làm gì sai cả. Không có nước đi nào để hối tiếc, không có draw nào lẽ ra phải fold. Tôi đã thua từ khoảnh khắc chip vào pot, và ==tôi không thể làm gì khác được==. Đó là một cooler, và khi đã hiểu nó, bạn sẽ thôi tự trách mình vì những ván thua vốn không bao giờ nằm trong tay bạn.
+Tôi vẫn nhớ ván bài đã dạy tôi từ này. Tôi flop set K (đôi K trên tay trúng thêm một lá K ở flop), all-in ở turn, lật bài lên và tay đã vươn ra định kéo pot — rồi nhìn đối thủ lật lên set A. Tôi không làm gì sai cả. Không có nước đi nào để hối tiếc, không có draw nào lẽ ra phải fold. Tôi đã thua từ khoảnh khắc chip vào pot, và ==tôi không thể làm gì khác được==. Đó là một cooler, và khi đã hiểu nó, bạn sẽ thôi tự trách mình vì những ván thua vốn không bao giờ nằm trong tay bạn.
 
-**Cooler** (tay bài quá mạnh để fold nhưng vẫn thua tay mạnh hơn) là ván bạn làm được một tay bài rất mạnh, thua một pot lớn, và ==g:fold chưa bao giờ là một lựa chọn thật sự== — tay bên kia đơn giản là lớn hơn. Dưới đây là chính xác nó nghĩa là gì, ranh giới mà bài này vạch giữa cooler và **bad beat** (người chơi tráo hai từ này suốt), những cặp cooler kinh điển, và phần thật lòng chẳng ai thích: khi nào *"cooler thôi"* thực ra là một lời bao biện lịch sự cho sai lầm. Đây là một trong những từ bị dùng sai nhiều nhất trong cả [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), nên hãy chốt lại chính xác cái gì mới được tính.
+**Cooler** (tay bài quá mạnh để fold nhưng vẫn thua tay mạnh hơn) là ván bạn làm được một tay bài rất mạnh, thua một pot lớn, và ==g:fold chưa bao giờ là một lựa chọn thật sự== — tay bên kia đơn giản là lớn hơn. Dưới đây là chính xác nó nghĩa là gì, ranh giới mà bài này vạch giữa cooler và **bad beat** (người chơi dùng lẫn lộn hai từ này suốt), những cặp cooler kinh điển, và phần thật lòng chẳng ai thích: khi nào *"cooler thôi"* thực ra là một lời bao biện lịch sự cho sai lầm. Đây là một trong những từ bị dùng sai nhiều nhất trong cả [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), nên hãy chốt lại chính xác cái gì mới được tính.
 
 ---
 
@@ -36,7 +36,7 @@ Không phải lỗi của bạn | Một ván thua không đáng để tilt
 
 ## Cooler trong poker là gì?
 
-![Hình minh họa đôi K thua đôi A, gắn nhãn COOLER — hai tay bài premium đụng nhau mà không ai chơi sai](/images/holdem-cooler-collision.webp "Bản chất của cooler: hai tay bài khổng lồ đụng nhau, tay mạnh nhì không fold được, và không ai làm gì sai")
+![Hình minh họa đôi K thua đôi Át, gắn nhãn COOLER — hai tay bài premium đụng nhau mà không ai chơi sai](/images/holdem-cooler-collision.webp "Bản chất của cooler: hai tay bài khổng lồ đụng nhau, tay mạnh nhì không fold được, và không ai làm gì sai")
 
 **Cooler là ván bài mà hai tay rất mạnh đụng nhau, và tay thua quá mạnh để fold đúng được.** Theo nghĩa chặt mà bài này dùng, người thua cũng đã bị dẫn ngay lúc chip vào pot; nhiều người dùng từ này rộng hơn, cho bất kỳ tay lớn nào gặp tay lớn hơn — kể cả khi một lá bài muộn quyết định kết quả. Dù hiểu theo cách nào, tay bài đơn giản là quá tốt để bỏ — nên chip vào pot, và con quái vật mạnh nhì trả tiền cho con mạnh nhất. Không ai chơi sai. Ván thua không phải sai lầm; đó là cái giá không thể tránh khi cầm tay premium đúng lúc người khác cầm tay nhỉnh hơn một chút.
 
@@ -46,7 +46,7 @@ Bản thân từ này đã vẽ nên bức tranh: bạn bị "làm nguội" — 
 
 ## Poker cooler vs bad beat: khác nhau ở đâu mà ai cũng nhầm?
 
-![Hình minh họa A♠ A♦ đối đầu K♥ K♦ trên runout K♠ 7♦ 2♣ 8♥ 3♠ — cùng một cú va chạm nhìn từ hai phía](/images/holdem-cooler-vs-badbeat.webp "Một cú va chạm, hai cái tên: preflop, đôi K gặp đôi A là cooler sách giáo khoa cho bên K — và khi lá K xuất hiện, chính ván đó thành bad beat cho bên A")
+![Hình minh họa A♠ A♦ đối đầu K♥ K♦ trên runout K♠ 7♦ 2♣ 8♥ 3♠ — cùng một cú va chạm nhìn từ hai phía](/images/holdem-cooler-vs-badbeat.webp "Một cú va chạm, hai cái tên: preflop, đôi K gặp đôi Át là cooler sách giáo khoa cho bên K — và khi lá K xuất hiện, chính ván đó thành bad beat cho bên A")
 
 Đây là sự phân biệt quyết định bạn có hiểu từ này hay không — và gần như mọi người chơi giải trí đều dùng hai từ thay cho nhau. Cả hai đều rất tệ, và không có định nghĩa chính thức duy nhất — nhưng theo nghĩa chặt mà bài này dùng, chúng là hai thái cực:
 
@@ -75,17 +75,17 @@ Cùng hai người chơi đó cho thấy cả hai, để bạn thấy rõ. **Bad
 
 ![Hai người chơi đẩy toàn bộ stack chip vào giữa mặt nỉ xanh, cú va chạm mà không tay nào fold được](/images/holdem-cooler-stacks-collide.webp "Cooler xảy ra khi cả hai bên cầm tay bài quá mạnh để fold — tiền vào pot và con quái vật mạnh nhì trả giá")
 
-Cooler đến theo một gia đình dễ nhận ra. Trong gần như mọi trường hợp, *cả hai* tay đều mạnh đến mức fold sẽ là nước đi thua về dài hạn — đó chính là lý do chúng không thể tránh. Hàng sảnh cần một lưu ý, và bảng ghi rõ:
+Cooler đến theo một gia đình dễ nhận ra. Trong gần như mọi trường hợp, *cả hai* tay đều mạnh đến mức fold sẽ là nước đi thua về dài hạn — đó chính là lý do chúng không thể tránh. Hàng sảnh (straight) cần một lưu ý, và bảng ghi rõ:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cooler | Cú va chạm | Vì sao bạn không fold được |
 |:---|:---|:---|
-| **Đôi K gặp đôi A** | KK all-in preflop trước AA | KK là underdog khoảng 4,5:1 trước AA, và gần như không ai fold đôi K preflop |
-| **Set đụng set lớn hơn (set over set)** | Set bạn flop được vs set lớn hơn cũng flop | Set đã flop gần như không bao giờ fold; set nhỏ hơn gần như drawing dead |
-| **Thùng đụng thùng lớn hơn** | Thùng cao K của bạn vs thùng cao A | Thùng cao K trông khổng lồ — bạn hiếm khi đặt đối thủ đúng vào thùng nuts |
-| **Cù lũ đụng cù lũ lớn hơn** | Cù lũ của bạn vs cù lũ lớn hơn | Cù lũ ("boat") là quái vật; bỏ nó xuống gần như bất khả |
-| **Cù lũ vs tứ quý** | Cù lũ Át của bạn vs tứ quý | Cooler tối thượng — cù lũ thua tứ quý |
+| **Đôi K gặp đôi Át** | KK all-in preflop trước AA | KK là underdog khoảng 4,5:1 trước AA, và gần như không ai fold đôi K preflop |
+| **Set đụng set lớn hơn (set over set)** | Set bạn flop được vs set lớn hơn cũng flop | Set đã flop gần như không bao giờ fold; set nhỏ hơn gần như drawing dead (hết đường thắng) |
+| **Thùng (flush) đụng thùng lớn hơn** | Thùng cao K của bạn vs thùng cao A | Thùng cao K trông khổng lồ — bạn hiếm khi đọc ra đối thủ đang cầm đúng thùng nuts |
+| **Cù lũ (full house) đụng cù lũ lớn hơn** | Cù lũ của bạn vs cù lũ lớn hơn | Cù lũ ("boat") là quái vật; bỏ nó xuống gần như bất khả |
+| **Cù lũ vs tứ quý (four of a kind)** | Cù lũ Át của bạn vs tứ quý | Cooler tối thượng — cù lũ thua tứ quý |
 | **Sảnh đụng sảnh cao hơn** | Sảnh của bạn vs sảnh cao hơn | Sảnh gần nuts quá mạnh để buông — nhưng đầu thấp của sảnh (idiot end) thường là một cú fold, không phải cooler |
 
 </div>
@@ -108,9 +108,9 @@ Một huyền thoại cần dẹp bỏ: **cooler không bắt buộc phải là 
 
 ## Có thật sự tránh được cooler không?
 
-Phần lớn là không — và đây là điều người chơi giỏi hiểu còn người mới thì chưa: **bạn thậm chí không nên cố.** Lý do cooler lấy tiền của bạn cũng chính là lý do bạn *thắng* tiền: bạn đẩy tối đa chip vào với tay premium. Nếu bạn bắt đầu fold set và cù lũ để né cooler hiếm hoi, bạn sẽ chảy máu nhiều giá trị hơn hẳn ở tất cả những ván mà con quái vật của bạn thực sự là tay mạnh nhất. Về dài hạn, thỉnh thoảng trả tiền cho một cooler đơn giản là cái giá của việc lấy stack mọi người khác trong đại đa số thời gian.
+Phần lớn là không — và đây là điều người chơi giỏi hiểu còn người mới thì chưa: **bạn thậm chí không nên cố.** Lý do cooler lấy tiền của bạn cũng chính là lý do bạn *thắng* tiền: bạn đẩy tối đa chip vào với tay premium. Nếu bạn bắt đầu fold set và cù lũ để né cooler hiếm hoi, bạn sẽ mất nhiều giá trị hơn hẳn ở tất cả những ván mà con quái vật của bạn thực sự là tay mạnh nhất. Về dài hạn, thỉnh thoảng trả tiền cho một cooler đơn giản là cái giá của việc lấy stack mọi người khác trong đại đa số thời gian.
 
-Nói vậy, "không thể tránh" có một dấu sao nhỏ ở trình độ cao nhất. Người chơi giỏi *có thể* thỉnh thoảng bỏ tay mạnh nhì xuống khi hành động của đối thủ gào lên là nuts (tay bài mạnh nhất có thể trên board này) — một đối thủ chỉ raise theo đường này với đúng một tay, một mức bet không có nghĩa lý gì trừ khi họ có nó. Fold một tay lớn ở chỗ đó là một trong những kỹ năng khó và cao cấp nhất của poker. Nhưng những cái read như vậy hiếm, và với đại đa số cooler, nước đi đúng và có lời là đẩy tiền vào rồi đi tiếp. Chơi tốt [vị trí](/vi/blog/holdem-position-play) giúp bạn *đọc* được những chỗ ấy — nó không giúp bạn né được bộ bài.
+Nói vậy, "không thể tránh" có một ngoại lệ nhỏ ở trình độ cao nhất. Người chơi giỏi *có thể* thỉnh thoảng bỏ tay mạnh nhì xuống khi hành động của đối thủ gào lên là nuts (tay bài mạnh nhất có thể trên board này) — một đối thủ chỉ raise theo đường này với đúng một tay, một mức bet không có nghĩa lý gì trừ khi họ có nó. Fold một tay lớn ở chỗ đó là một trong những kỹ năng khó và cao cấp nhất của poker. Nhưng những cái read như vậy hiếm, và với đại đa số cooler, nước đi đúng và có lời là đẩy tiền vào rồi đi tiếp. Chơi tốt [vị trí](/vi/blog/holdem-position-play) giúp bạn *đọc* được những chỗ ấy — nó không giúp bạn né được bộ bài.
 
 ---
 
@@ -121,7 +121,7 @@ Giờ là sự thật khó chịu, và là lý do từ này quan trọng cho s�
 Có một phép thử sạch sẽ, và người chơi thật lòng dùng nó sau mỗi ván thua lớn:
 
 :::pull
-Tôi có đi lại đúng nước ấy không, chỉ với thông tin tôi có lúc đó — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu **không**, bạn đã chơi sai — và đó là một lỗ hổng để sửa, không phải xui. Nếu **có** — và nó vẫn đứng vững khi bạn thật sự chạy lại những range và cái giá ấy (rất nhiều cú call sai luôn có cảm giác đúng) — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào pot, là bad beat nếu bạn đang dẫn và bị thua ngược. Một draw đã có giá đúng mà trượt thì không phải cả hai — chỉ là variance.
+Tôi có chơi lại đúng nước ấy không, chỉ với thông tin tôi có lúc đó — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu **không**, bạn đã chơi sai — và đó là một lỗ hổng để sửa, không phải xui. Nếu **có** — và nó vẫn đứng vững khi bạn thật sự chạy lại những range và cái giá ấy (rất nhiều cú call sai luôn có cảm giác đúng) — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào pot, là bad beat nếu bạn đang dẫn và bị thua ngược. Một draw đã có giá đúng mà trượt thì không phải cả hai — chỉ là variance.
 :::
 
 Cooler thật nghĩa là bạn chơi đúng với tay mạnh và gặp tay mạnh hơn. Khoảnh khắc "cooler" của bạn dính tới một cú call không đứng vững trên range và giá, một cú bluff bạn tự thuyết phục mình, hay một cú fold lẽ ra phải làm, nó thôi là cooler và trở thành **sai lầm đeo mặt nạ.** Thật lòng đến tàn nhẫn về việc cái nào là cái nào — thay vì xếp mọi ván thua vào ngăn "xui" — chính là thứ tách người chơi tiến bộ khỏi người mãi mãi là [fish](/vi/blog/holdem-fish).
@@ -148,7 +148,7 @@ Vì cooler không mang bài học nào, thiệt hại thật sự duy nhất nó
 
 **Q. Cooler poker là gì?**
 
-A. Cooler là ván bạn thua một pot lớn với tay bài rất mạnh mà gần như không bao giờ fold đúng được — người kia đơn giản là có tay lớn hơn. Theo nghĩa chặt, bạn đã bị dẫn từ khoảnh khắc chip vào pot, và không có nước chơi sai nào dính vào. Đôi K gặp đôi A là cooler sách giáo khoa.
+A. Cooler là ván bạn thua một pot lớn với tay bài rất mạnh mà gần như không bao giờ fold đúng được — người kia đơn giản là có tay lớn hơn. Theo nghĩa chặt, bạn đã bị dẫn từ khoảnh khắc chip vào pot, và không có nước chơi sai nào dính vào. Đôi K gặp đôi Át là cooler sách giáo khoa.
 
 **Q. Cooler và bad beat khác nhau ở đâu?**
 
@@ -156,7 +156,7 @@ A. Ở thời điểm và ở suckout, ít nhất theo nghĩa chặt. Trong cool
 
 **Q. Cooler là do xui hay do chơi dở?**
 
-A. Cooler thật là xui thuần túy — bạn chơi đúng mà vẫn thua vì hai tay premium đụng nhau. Cái bẫy là "cooler" thường bị lạm dụng để bao biện cho một sai lầm thật sự. Phép thử: bạn có đi lại đúng nước ấy với cùng thông tin — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu không, đó là nước chơi sai bạn có thể học từ nó. Nếu có — và nó đứng vững trên range và giá, không chỉ trên niềm tin — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào, là bad beat nếu bạn đang dẫn và bị thua ngược.
+A. Cooler thật là xui thuần túy — bạn chơi đúng mà vẫn thua vì hai tay premium đụng nhau. Cái bẫy là "cooler" thường bị lạm dụng để bao biện cho một sai lầm thật sự. Phép thử: bạn có chơi lại đúng nước ấy với cùng thông tin — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu không, đó là nước chơi sai bạn có thể học từ nó. Nếu có — và nó đứng vững trên range và giá, không chỉ trên niềm tin — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào, là bad beat nếu bạn đang dẫn và bị thua ngược.
 
 **Q. "Setup" có giống cooler không?**
 
@@ -164,7 +164,7 @@ A. Có — "setup" là từ đồng nghĩa không chính thức của cooler. N�
 
 **Q. KK gặp AA có phải cooler không?**
 
-A. Có — đó là cooler kinh điển nhất. Đôi K là underdog khoảng 4,5:1 trước đôi A preflop, và gần như không người chơi hợp lý nào fold đôi K trước flop. Cần một cái read gào lên là đôi A, hoặc áp lực giải đấu như bubble của một satellite nơi ICM (Independent Chip Model — mô hình chip độc lập) có thể biến cả đôi K thành một cú fold — và những chỗ như vậy hiếm khi đến. Thế nên tiền vào pot, bạn bị dẫn từ đầu, và bạn thua một ván mà bạn gần như không bao giờ thoát được.
+A. Có — đó là cooler kinh điển nhất. Đôi K là underdog khoảng 4,5:1 trước đôi Át preflop, và gần như không người chơi hợp lý nào fold đôi K trước flop. Cần một cái read gào lên là đôi Át, hoặc áp lực giải đấu như bubble của một satellite nơi ICM (Independent Chip Model — mô hình chip độc lập) có thể biến cả đôi K thành một cú fold — và những chỗ như vậy hiếm khi đến. Thế nên tiền vào pot, bạn bị dẫn từ đầu, và bạn thua một ván mà bạn gần như không bao giờ thoát được.
 
 **Q. Set gặp set lớn hơn xảy ra bao lâu một lần?**
 
@@ -176,7 +176,7 @@ A. Bị coolered là thua một pot lớn ở bên sai của một cooler — b�
 
 **Q. Cooler có luôn phải là all-in không?**
 
-A. Không. Cooler thường đi tới all-in, nhất là trong giải đấu, nhưng cú all-in không phải thứ làm nên cooler — cú va chạm của hai tay quá mạnh để fold mới là. Bạn có thể bị coolered một pot lớn mà chưa từng đẩy chip cuối cùng vào.
+A. Không. Cooler thường đi tới all-in, nhất là trong giải đấu, nhưng cú all-in không phải thứ làm nên cooler — cú va chạm của hai tay quá mạnh để fold mới là. Bạn có thể bị cooler một pot lớn mà chưa từng đẩy chip cuối cùng vào.
 
 **Q. Làm sao vượt qua một cooler?**
 
