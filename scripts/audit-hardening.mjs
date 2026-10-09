@@ -453,7 +453,7 @@ const HAND_ALIASES = [
   //   같은 이유로 es "orden", de "Reihenfolge"도 넣지 않는다.
   ['스트레이트', /스트레이트|양차|백도어 ?스트|\bstraight\b|ストレート|[顺順]子|\bescalera\b|\bstra[ßs]e\b|\bquintes?\b/i],
   ['트리플', /트리플|트립스|쓰리\s*카드|셋(?=[\s)*.,·]|$)|\bthree\s+of\s+a\s+kind\b|\btrips\b|スリーカード|トリップス|三[条條]|\bdrilling\b|\btrinca\b|\btr[íi]o\b|\bbrelan\b/i],
-  ['투페어', /투\s*페어|투페어|\btwo\s+pair\b|ツーペア|[两兩][对對]|\bzwei\s+paare\b|\bdois\s+pares\b|\bdoble\s+pareja\b|\bdouble\s+paire\b/i],
+  ['투페어', /투\s*페어|투페어|\btwo\s+pair\b|ツーペア|[两兩][对對]|\bzwei\s+paare\b|\bdois\s+pares\b|\bdoble\s+pareja\b|\bdouble\s+paire\b|\bhai\s+đôi\b/i],
   // 맨 "페어"/"pair"/"par"/"Paar"는 뺀다 — "페어 2쌍"(=투페어) · "트리플 + 페어"(=풀하우스 구성 설명)를 원페어로 오독한다.
   ['원페어', /원\s*페어|오버\s*페어|탑\s*페어|바텀\s*페어|미들\s*페어|포켓\s*페어|\b(one|top|over|bottom|middle|pocket)\s*-?\s*pair\b|ワンペア|オーバーペア|トップペア|ポケットペア|一[对對]/i],
   ['하이카드', /하이\s*카드|\bhigh\s+card\b|ハイカード|ノーペア|高牌|\bcarta\s+alta\b|\bh[öo]chste\s+karte\b|\bcarte\s+haute\b/i],
@@ -833,7 +833,9 @@ function normText(s) {
     .replace(/\s+/g, ' ')
     // ★소수점은 문장부호가 아니다. 보호하지 않으면 "3.5%"와 "35%"가 같은 값이 돼
     //   형제 글의 확률 수치 모순을 통째로 놓친다(2026-07-31 확률 클러스터에서 발견).
-    .replace(/[.。!?·,·:：]/g, (m, i, str) => (m === '.' && /\d/.test(str[i - 1] ?? '') && /\d/.test(str[i + 1] ?? '')) ? '.' : '')
+    // ★쉼표·콜론도 숫자 사이면 지우지 않는다(2026-10-09 vi 실측): 지우면 소수 쉼표 «5,9%»가 59%,
+    //   비율 «16:1»이 161이 돼 같은 값끼리 C1 🔴이 났다(fr·de·vi는 소수 쉼표 로케일).
+    .replace(/[.。!?·,·:：]/g, (m, i, str) => ('.,:'.includes(m) && /\d/.test(str[i - 1] ?? '') && /\d/.test(str[i + 1] ?? '')) ? m : '')
     .trim();
 }
 function trigrams(s) { const g = new Set(); for (let i = 0; i < s.length - 2; i++) g.add(s.slice(i, i + 3)); return g; }
@@ -1386,6 +1388,14 @@ if (argv.includes('--selftest')) {
     ['소수점을 지우면 안 된다 — 3.5%와 35%는 다른 값', ['C1'],
       '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 3.5% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |',
       '| 드로우 | 아웃츠 | 완성 확률 |\n|---|---|---|\n| 투페어+ | 6 | 35% |\n| 플러시 드로우 | 9 | 35% |\n| 거트샷 | 4 | 16.5% |'],
+    // ★2026-10-09 vi 실측: «1 trong 17 (5,9%)» ↔ «16:1 · 5,9%»는 같은 값이다. normText가 콜론을 지워 «16:1»이 161이 되는 바람에
+    //   NON_COMPARABLE_CELL의 «N:1» 규칙이 전 로케일에서 죽어 있었다 — 콜론을 살리자 비율 셀은 다시 대조에서 빠진다.
+    ['같은 확률의 다른 꼴(1 in N ↔ N−1:1 · 소수 쉼표)은 모순이 아니다 (오탐 금지)', [],
+      '| Tay khởi đầu | Xác suất | Bao lâu một lần |\n|---|---|---|\n| Đôi Át | 1 trong 221 (0,45%) | ~221 ván |\n| Pocket pair bất kỳ | 1 trong 17 (5,9%) | hai lần mỗi giờ |\n| AK | 1 trong 83 (1,2%) | — |',
+      '| Tay khởi đầu | Xác suất | Bao lâu một lần |\n|---|---|---|\n| Đôi Át | 220:1 · 0,45% | ~221 ván |\n| Pocket pair bất kỳ | 16:1 · 5,9% | hai lần mỗi giờ |\n| AK | 82:1 · 1,2% | — |'],
+    ['소수 쉼표를 지우면 안 된다 — 5,9%와 59%는 다른 값', ['C1'],
+      '| Tay khởi đầu | Xác suất | Bao lâu một lần |\n|---|---|---|\n| Đôi Át | 1 trong 221 (0,45%) | ~221 ván |\n| Pocket pair bất kỳ | 1 trong 17 (5,9%) | hai lần mỗi giờ |\n| AK | 1 trong 83 (1,2%) | — |',
+      '| Tay khởi đầu | Xác suất | Bao lâu một lần |\n|---|---|---|\n| Đôi Át | 220:1 · 0,45% | ~221 ván |\n| Pocket pair bất kỳ | 1 trong 17 (59%) | hai lần mỗi giờ |\n| AK | 82:1 · 1,2% | — |'],
     ['같은 개념인데 표기만 다른 열은 육안으로 올린다 (C2)', ['C2'],
       '| 드로우 | 아웃츠 | 플럽 승률 (×4) |\n|---|---|---|\n| 플러시 드로우 | 9장 | 약 36% |\n| 양방 스트레이트 | 8장 | 약 32% |\n| 거트샷 | 4장 | 약 16% |',
       '| 드로우 | 아웃츠 | 플랍 승률(×4) |\n|---|---|---|\n| 플러시 드로우 | 9장 | 약 35% |\n| 양방 스트레이트 | 8장 | 약 31% |\n| 거트샷 | 4장 | 약 17% |'],
