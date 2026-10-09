@@ -224,6 +224,20 @@ RLS on · 정책 0 · 쓰기는 본체 서버 코드만(09-28 규칙). 공개 �
 - 🔴 개인정보처리방침 `UPDATED`는 배포일로 바꾼다(지금 값 = 10-04 · 코드 주석).
 - `has_usage`(«솔버 사용 기록 있음»)는 서버가 그 계정의 `trainer_attempts` 존재로 판정한다 — 클라이언트 값은 안 믿는다(랜딩·앱 같음). 같은 SQL에 `trainer_attempts.created_at := now()` 강제 트리거(MB-159 통지 1 · S-035 영향 없음 확인).
 
+### 7-4. 코드 2 구현 지도 (2026-10-09)
+
+| 무엇 | 파일 |
+|---|---|
+| 형식 검사·id·표시(🔴 솔버 코드 이식 없음 — 명세 `공유링크_형식명세_2026-10-04.md`만 보고 새로 짬) | `lib/spot-share.ts` — base64url·≤16384·v 1~3·o/i/b·카드 3장 이상(틀린 조각 버림) · id = sha256 → base64url 10자(같은 payload = 같은 id) · u=10 → bb |
+| 공유 API | `app/api/spot-share/route.ts` — POST `{ payload }` → `{ ok, id, url }` · CORS 솔버 도메인만 · 로그인 불필요 · IP 해시 시간당 30(이미 있는 주소는 안 셈) · 오류 코드 `length·charset·decode·version·fields·board·rate·collision·unavailable` |
+| 미리보기 | `app/s/[id]/page.tsx` — 🔴 noindex·nofollow · 보드·팟·스택(자리는 payload에 없음 — 명세 §4) · «솔버에서 열기» = `solver.holdemmaster.com/?spot=<P>&lang=<화면 언어>` · 화면 언어 = 보는 사람 Accept-Language(`?lang=`로 덮기) · 없는 id = 같은 꼴 «찾지 못함»(랜딩 링크) · 화면은 meta 열이 아니라 payload를 다시 디코드한 값만 믿는다 |
+| 문구 14언어 | `lib/spot-share-i18n.ts` — board·pot·stack = 앱 라벨 축어 · open = 랜딩 CTA 꼴 |
+| 요약 API | `app/api/solver-reviews/summary/route.ts` — GET `?locale=` → `{ text, reviews, ratingAverage, ratingCount }` · text = 랜딩 블록과 같은 문장(`summary()`) · 3개 미만·모르는 로케일·테이블 없음 = `""` · CDN 5분 |
+| 게이트 | `check:solver-feedback` ⑩ — 명세 표본 통과·불량 8종 거부 · SQL 상한 = 코드 · noindex · 문구 14언어 · Accept-Language · 솔버 코드 참조 흔적 |
+
+- SQL 추가 없음 — `spot_shares`는 코드 1 SQL에 이미 있다.
+- 🔴 사이트 머리·꼬리는 루트 레이아웃(KO 크롬)을 그대로 탄다 — 본문만 보는 사람 언어. 바꿀지는 사장님 판단(🪶).
+
 ## 8. 솔버 측 요청 (초안 — 발송 대기)
 
 | # | 요청 | 본체가 넘길 것 |

@@ -14,6 +14,7 @@
  *  ⑥ 빈 상태 — 요약 문턱 3 · 키/테이블 없을 때 표지(data-solver-reviews="unavailable")
  *  ⑦ 스키마 부재 — Review·AggregateRating 을 내보내지 않는다(설계 §5-2)
  *  ⑧ 캐릭터 이미지 — AVATAR_CHARACTERS 전부 webp 존재
+ *  ⑩ 코드 2 공유 링크 — 형식 검사(명세 표본 통과·불량 거부) · SQL payload 상한 = 코드 · /s/<id> noindex · 문구 14언어 · 솔버 코드 이식 흔적 없음
  *  ⑨ (--build) 14개 solver.html 존재 · 블록 표지 · 빌드 키 없음(no-key) = 🔴 · 테이블 없음(no-table) = 🟠
  */
 import fs from "node:fs";
@@ -24,6 +25,8 @@ import {
 } from "../lib/solver-feedback-config";
 import { LINK_PATTERN as LINK_PC } from "../lib/participation-config";
 import { SOLVER_REVIEWS_I18N } from "../lib/solver-reviews-i18n";
+import { SPOT_PAYLOAD_MAX, formatSpotAmount, parseSpotPayload, spotShareId } from "../lib/spot-share";
+import { SPOT_SHARE_I18N, spotShareLocale } from "../lib/spot-share-i18n";
 
 type Finding = { level: "red" | "orange"; msg: string };
 
@@ -158,6 +161,37 @@ function extraChecks(): Finding[] {
   if (nicknameProblem("Admin_01") !== "impersonation") red("닉네임: «Admin_01»을 막지 못한다");
   if (nicknameProblem("Rasmi") !== null) red("닉네임: 인명 «Rasmi»를 막았다(오탐)");
   if (solverLandingPath("ko") !== "/solver" || solverLandingPath("zh-hant") !== "/zh-hant/solver") red("경로 매핑이 틀렸다");
+  return out;
+}
+
+/** ⑩ 코드 2 — 공유 링크(명세 = 공유링크_형식명세_2026-10-04.md) */
+function spotShareChecks(): Finding[] {
+  const out: Finding[] = [];
+  const red = (msg: string) => out.push({ level: "red", msg });
+  const enc = (o: unknown) => Buffer.from(JSON.stringify(o), "utf8").toString("base64url");
+  const good = { v: 3, o: "AA,KK", i: "QQ-22", b: "Ks 7d 2c", sp: 55, es: 975, u: 10, rp: 0, rc: 0, d: false, bt: [], th: [] };
+  const r = parseSpotPayload(enc(good));
+  if (!r.ok || r.meta.board.join(" ") !== "Ks 7d 2c") red("⑩ 명세 표본(v3 · Ks 7d 2c)을 거부했다");
+  else if (formatSpotAmount(r.meta.pot, r.meta.unit) !== "5.5bb") red("⑩ u=10 팟 55 ≠ 5.5bb");
+  const lower = parseSpotPayload(enc({ ...good, b: "as kd 2c xx" }));
+  if (!lower.ok || lower.meta.board.join(" ") !== "As Kd 2c") red("⑩ 소문자 랭크·틀린 조각 버리기(명세 §3-4)가 틀렸다");
+  const bad: [string, unknown][] = [
+    ["v4", enc({ ...good, v: 4 })], ["o 빈 값", enc({ ...good, o: "" })], ["보드 2장", enc({ ...good, b: "Ks 7d" })],
+    ["무늬 대문자", enc({ ...good, b: "KS 7D 2C" })], ["base64 패딩·+", enc(good) + "=="], ["배열 JSON", enc([1])],
+    ["상한 초과", "A".repeat(SPOT_PAYLOAD_MAX + 1)], ["문자열 아님", 123],
+  ];
+  for (const [name, p] of bad) if (parseSpotPayload(p).ok) red(`⑩ 불량 payload «${name}»를 받았다`);
+  if (spotShareId("x") !== spotShareId("x") || !/^[A-Za-z0-9_-]{10}$/.test(spotShareId("x"))) red("⑩ id 가 결정적 10자가 아니다");
+  const sql = read("supabase/solver-reviews.sql");
+  const lim = /spot_shares_payload_len check \(char_length\(payload\) <= (\d+)\)/.exec(sql);
+  if (!lim || Number(lim[1]) !== SPOT_PAYLOAD_MAX) red(`⑩ SQL payload 상한 ${lim?.[1]} ≠ 코드 ${SPOT_PAYLOAD_MAX}`);
+  const page = read("app/s/[id]/page.tsx");
+  if (!/robots\s*=\s*\{\s*index:\s*false/.test(page)) red("⑩ /s/<id> 가 noindex 가 아니다");
+  for (const loc of SOLVER_FEEDBACK_LOCALES) if (!SPOT_SHARE_I18N[loc]) red(`⑩ /s 문구 사전에 ${loc} 없음`);
+  if (spotShareLocale("zh-TW,zh;q=0.9") !== "zh-hant" || spotShareLocale("ru-RU") !== "en" || spotShareLocale("de-DE,de;q=0.9") !== "de") red("⑩ Accept-Language 판정이 틀렸다");
+  for (const f of ["lib/spot-share.ts", "app/api/spot-share/route.ts", "app/s/[id]/page.tsx"]) {
+    if (/applySpotFromUrl|wasm-postflop|from ["'].*solver\/src/.test(read(f).replace(/^\s*\*.*$/gm, ""))) red(`⑩ ${f}: 솔버 코드 참조 흔적(AGPL 이식 금지)`);
+  }
   return out;
 }
 
