@@ -595,6 +595,23 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 7(FR 라벨 불변 · 자동 착수 금지): **EN 동문 → EN-먼저 후보** ① when-to-fold À retenir L250 «quand tu es battu, ça bat toutes les alternatives négatives»(본문 «sans la cote … ni la fold equity» 한정 탈락 · 본부 OK) ② strategy FAQ L220 «plus d'environ une main sur cinq … presque certainement trop»(6-max VPIP 20–30 % · 포맷 한정 후보) ③ position-play À retenir «la SB est le pire siège»(헤즈업 SB = 버튼 · FAQ L261 «trois joueurs ou plus» 한정 탈락) ④ starting-hands-chart FAQ 7-2 «uniquement pour pimenter les home games»(EN «purely» · 카지노 캐시 바운티 사례). **fr 용어** ⑤ 3bet L287 «fréquence de fold d'équilibre»(EN «break-even» → «균형 빈도»로 읽힘 · «seuil de rentabilité» 후보) ⑥ limping FR 고유 FAQ L152 «connecteurs assortis … set-mining»(set-mining은 페어 전용 용어) ⑦ positions H2 L163 «6-max, 8-max, 9-max» ↔ 표에 8인 행 없음(FR 고유 추가 · 8-max 삭제 또는 행 추가). ⑤⑥⑦은 fr 단독이라 §2-AG (b) 손질 회차에.
 - 검수장 처분(참고): 라벨 이동 14 · 신설 10 · 병합 `df33ff3`. 다음 회차 = FR 🅴 tour(검수장 사용자 결정 대기) · 결재 2건(위 ⚖ + MA-368 형제 갈림).
 
+### 2-AL. `/vi/solver` 신설 렌즈·아스트라가 EN 솔버 랜딩에서 찾은 EN 동문 — 2026-10-09 (5) · 🪶 자동 착수 금지
+
+> 근거 = vi 랜딩 신설 회차의 §13 렌즈 + 아스트라(codex gpt-6-astra) 보고. vi판은 EN 정정본을 구분자만 바꿔 옮긴 것이라 아래는 전부 **EN `app/en/solver/{solver-client,faq}.tsx` 원문**의 사안이고, 고치면 13로케일 솔버 랜딩 전부에 전파해야 한다. vi에서 먼저 고친 2건(AL-1·AL-2)은 vi만 바뀐 상태(로케일 고유 의도 편차 아님 — EN 정정 뒤 다시 맞춘다).
+
+| # | 자리(EN) | 문제 | 처방 후보 |
+|---|---|---|---|
+| AL-1 | solver-client 무료 범위 문단 «settings that normally live in **paid** desktop solvers» | 사실 시트 §5 «유료 솔버 비교 금지(«다른 곳은 유료» 포함)» 저촉 | «installed desktop solvers»(설치형 축) — vi는 «solver desktop phải cài»로 선반영 |
+| AL-2 | faq «Which GTO solver is better…» «without **paying** or installing anything» | 같은 규칙(비교 문항 안이라 «다른 쪽은 유료» 암시) | «free and with nothing to install» — vi는 «miễn phí và không cần cài đặt»로 선반영 |
+| AL-3 | 9♥8♥7♣ note «The **only** single-raised board where BB truly leads: 23.7%» | §4-B에 SRP BB 리드 ⑤ 11,2% · ⑦ 3,2% · ⑥ 3,0% 있음 → «유일» 단정(D유형) | «the SRP board where BB leads most (23.7% — next is monotone 11.2%)» |
+| AL-4 | 8♦5♣2♠ note «just gutshots and backdoors» | 3벳 레인지 14종에 A5s(세컨드 페어 5) 있음 → «chỉ/just»가 메이드 핸드 부재로 읽힘(F유형 경계 · 판정 필요) | «no top pair — overpairs, A5s's pair of fives, gutshots and backdoors» 판정 후 |
+| AL-5 | faq «Why is grading relative to the pot?» · 트레이너 bullet «0.02bb and 0.06bb / 0.08bb and 0.23bb» | 반올림 값을 정확 임계처럼 서술(실제 0,055 · 0,07875 · 0,225) — 0,08bb가 22,5bb 팟에서 «acceptable»인 것과 맞물려 자기모순처럼 읽힘 | «rounded to two decimals, the cutoffs work out to about …» 한 구 |
+| AL-6 | solver-client 포스트플랍 절 «Together they cover a whole hand: the chart decides what you open, the solver …» | 차트는 오픈 레인지뿐(vs 오픈·3벳·4벳 대응 없음) · «solver decides» 과장 | «the chart gives opening ranges by position; the solver analyzes postflop — facing a raise preflop needs its own ranges» |
+| AL-7 | solver-client 무료 범위 «The **only** real limit is postflop and heads-up» | 같은 페이지가 4GB·속도·반복 상한을 말함 → «유일» 모순 | «The main limit …» |
+| AL-8 | faq·COMPARE «Solution libraries such as GTO Wizard let you browse spots solved in advance» | GTO Wizard에 custom solving(레인지·팟·스택·트리 편집)이 있음(help.gtowizard.com custom-solving-faq) → «열람 전용» 묘사는 경쟁 제품 사실 오류 위험(§12-B 1차 출처 확인 뒤) | «solution libraries let you browse pre-solved spots (GTO Wizard also offers custom solving); the difference here is that the solve runs on your own CPU in the browser» — 가격·우열 언급 없이 |
+
+- 📬 솔버 쪽 통지 후보(이번 MB에 적음): 앱 `presets.ts` lessonVi ④ «có lợi cho bên call» · ⑦ «BB check-raise thường xuyên» · ⑧ «Ở SPR thấp, cược nhỏ gây áp lực» = EN 랜딩이 M-038·M-042로 철회한 옛 명제(랜딩은 정정본이라 영향 없음 · 앱 해설 드리프트).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

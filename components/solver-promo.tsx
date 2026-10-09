@@ -186,6 +186,16 @@ const COPY = {
     desc: "Postflop spotunun GTO stratejisini tarayıcıda hesapla — ücretsiz, kurulum ve hesap gerekmez",
     cta: "Solver'ı aç →",
   },
+  // 베트남어(bạn체) — ★2026-10-09 `/vi/solver` 신설(솔버 vi 라이브 S-049 당일) · 용어 docs/translation-terms-vi.md.
+  //   훅은 랜딩 H1·앱 히어로 축어(«ngay trên trình duyệt» · «không cần cài đặt») · cta = 랜딩 본문 CTA 축어(«Mở solver →»).
+  //   🔴 «GTO»·«solver» 단독 금지(애니·Excel 오염 · 뱅크 vi-gto-solver §1) → title «GTO Solver»는 랜딩 HubPage title과 같은 라벨.
+  vi: {
+    href: "/vi/solver",
+    badge: "♠ Công cụ miễn phí",
+    title: "GTO Solver",
+    desc: "Tính chiến lược GTO cho spot postflop ngay trên trình duyệt — miễn phí, không cần cài đặt hay tài khoản",
+    cta: "Mở solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

@@ -189,6 +189,8 @@ const STATIC_ROUTES = [
   { path: "/hi/solver", priority: "0.7", changefreq: "monthly" },
   // `/tr/solver` — tr 회차 5(2026-10-06). 형제 랜딩과 같은 가중치.
   { path: "/tr/solver", priority: "0.7", changefreq: "monthly" },
+  // `/vi/solver` — 솔버 vi 라이브 당일(2026-10-09 · S-049). 형제 랜딩과 같은 가중치.
+  { path: "/vi/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★2026-09-17 신설 — `/<locale>/calculator` 10개(ja es pt de zh zh-hant fr id ms hi).

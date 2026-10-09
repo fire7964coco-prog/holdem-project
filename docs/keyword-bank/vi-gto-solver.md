@@ -1,4 +1,4 @@
-# vi 솔버 랜딩 키워드 뱅크 — `/vi/solver` (조사만 · 랜딩 미작성)
+# vi 솔버 랜딩 키워드 뱅크 — `/vi/solver` (✅ 랜딩 신설 2026-10-09 · §7 조준안대로 · 라벨 = `docs/solver-app-verbatim-vi-2026-10-09.md`)
 
 > 2026-10-07 실측. 플레이북 `docs/solver-landing-playbook.md` §2의 3~6단계(볼륨·질문 → 코퍼스 → SERP → 뱅크).
 > 도구 = **DataForSEO** `keywords_data/google_ads/search_volume/live`(location 2704 · vi · 146개) +
@@ -234,5 +234,6 @@ SERP `solver`: **AI 개요가 «Excel Solver là một công cụ bổ sung (Add
 | SERP top-30 + PAA 11쿼리 | ✅(`gto`·`solver`·`equity là gì`·`gto wizard`·`học poker`는 오염·의도 판정용) |
 | 상위 페이지 원문 | 🟡 아스트라 9/10 열람 · 본체 4편 직접 재확인 · 헤딩 전체 축어는 본체 확인 4편만 |
 | 자사 코퍼스 grep | ✅ vi 8편 |
-| 앱 `?lang=vi` 라이브 대조 | ✗ — 앱 vi 미배포(솔버 레포 `94fdd7e` 커밋까지). 배포 통지 후 라벨 축어 대조 |
+| 앱 `?lang=vi` 라이브 대조 | ✅ 2026-10-09(S-049 라이브 당일 · Playwright 2회 · `docs/solver-app-verbatim-vi-2026-10-09.md` · presets titleVi/categoryVi 일치) |
+| 랜딩 작성·검수 | ✅ 2026-10-09 — 3파일 + 등록 6곳 + hreflang 14세트 · 렌즈 4종 + 아스트라 · 경위 WORKLOG 10-09 (5). 🪶 §6 구조 문제는 hi 선례 ⓐ(링크 빈자리 안고 랜딩 먼저)로 열었다 — GTO 13편(🅶)·strategy·equity·c-bet이 vi로 발행되면 SPOT_GROUPS `slug`·결과 화면 문단 링크를 채운다 |
 | 라쿠 발굴계 도구 | ✗ 의도적 — Japan 고정(`rakko-playbook` §8) |

@@ -82,8 +82,10 @@ export const HAND_CHART_DICT_VI: HandChartDict = {
         " đếm bao nhiêu trong 1.326 tổ hợp lá bài được tính vào. Cùng một range cho ra hai con số khác nhau — AA là 1 loại nhưng 6 combo, AKo là 1 loại nhưng 12 combo. Solver và các bài chiến thuật thường dùng cách tính theo combo.",
       ],
       [
-        // 🔴 vi에는 /vi/solver가 없다(10-07 · 다음 회차) — 이름만 쓰고 링크하지 않는다(tr 회차 2 선례).
-        "* Bảng này là ước lượng các range mở bài tiêu chuẩn. Giá trị solver thực tế thay đổi theo mức mở bài, stack và range của đối thủ — ví dụ, trong ví dụ đấu blind của HoldemMaster GTO solver, range mở 3bb của SB là 46,6% (92 loại, 618 combo). Ở bàn thật, bạn cần điều chỉnh thêm theo phong cách bàn chơi và độ sâu stack.",
+        // ★2026-10-09 `/vi/solver` 신설로 링크 연결(tr 회차 5 · hi 사전과 같은 모양). 문장은 10-07 원문 그대로, 이름 자리만 링크.
+        "* Bảng này là ước lượng các range mở bài tiêu chuẩn. Giá trị solver thực tế thay đổi theo mức mở bài, stack và range của đối thủ — ví dụ, trong ví dụ đấu blind của ",
+        { href: "/vi/solver", text: "HoldemMaster GTO solver" },
+        ", range mở 3bb của SB là 46,6% (92 loại, 618 combo). Ở bàn thật, bạn cần điều chỉnh thêm theo phong cách bàn chơi và độ sâu stack.",
       ],
     ],
   },

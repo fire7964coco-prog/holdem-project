@@ -6,12 +6,14 @@
 >
 > ~~상태(2026-08-24): 랜딩 **ko en ja es pt de zh 7개** · 앱은 8개 언어.~~
 >
-> 🔴 **상태(2026-09-06 갱신 · 라이브 실측)**: 랜딩 **10개**(`ko en ja es pt de zh zh-hant fr id`) ·
+> ~~🔴 **상태(2026-09-06 갱신 · 라이브 실측)**: 랜딩 **10개**(`ko en ja es pt de zh zh-hant fr id`) ·
 > 앱은 **12개 언어**(`ko en ja es pt de zh zh-hant fr id ms hi`).
 > **정본은 `solver/src/i18n.ts:18`의 `Locale` 타입 축어**이고, 라이브 `?lang=` 12/12가 고유 문안임을 확인했다(2026-09-06).
-> 랜딩이 없는 언어 = **ms · hi** — 앱만 있고 랜딩은 아직 없다(M-100은 «새 hi 랜딩 신설은 이번 요청에 포함하지 않는다»고 명시했다).
+> 랜딩이 없는 언어 = **ms · hi** — 앱만 있고 랜딩은 아직 없다(M-100은 «새 hi 랜딩 신설은 이번 요청에 포함하지 않는다»고 명시했다).~~ (이력 · 아래 10-09 행이 현재)
 >
-> **2026-09-14 최신 운영 상태**: 사용자 직접 지시로 MS·기존 FAQ 정정은 **`27c08021`**, HI 신규 랜딩은 **`2dbb885c`**로 배포했다. 현재 **12개 언어**(`ko en ja es pt de zh zh-hant fr id ms hi`) 모두 HTTP200·FAQ252 소스/화면/스키마 일치를 20:55:39 KST 실측했다. 앱의 현재12언어 중 랜딩 미구현은 없다. 위 10개·M-100 범위는 이전 이력이다. 조사·라벨·AI 현지 전문가 역할 기록 = `docs/{ms,hi}-solver-landing-brief.md`. 다음 포스팅은 **`docs/keyword-bank/{ms,hi}-posting-reference.md`**에 승격한 실제 조사 내용부터 읽는다.
+> **2026-10-09 최신 운영 상태**: 랜딩 **14개**(`ko en ja es pt de zh zh-hant fr id ms hi` + `tr` 10-06 + `vi` 10-09) · 앱은 15개 언어(+tr·vi·ru · S-049 10-09 라이브). hreflang 소스 세트(14파일) = 12코드 + `tr-TR` + `vi-VN`. `ru`는 랜딩 없음(ru 글 7편·뱅크 없음 → SERP 조사 회차 뒤). vi는 GTO 예제 글·strategy·equity·c-bet 글이 없어 **hi 선례 ⓐ(링크 빈자리를 안고 랜딩 먼저)** 로 열었다 — 뱅크 `docs/keyword-bank/vi-gto-solver.md` §6·§8.
+>
+> **2026-09-14 운영 상태(이력)**: 사용자 직접 지시로 MS·기존 FAQ 정정은 **`27c08021`**, HI 신규 랜딩은 **`2dbb885c`**로 배포했다. 현재 **12개 언어**(`ko en ja es pt de zh zh-hant fr id ms hi`) 모두 HTTP200·FAQ252 소스/화면/스키마 일치를 20:55:39 KST 실측했다. 앱의 현재12언어 중 랜딩 미구현은 없다. 위 10개·M-100 범위는 이전 이력이다. 조사·라벨·AI 현지 전문가 역할 기록 = `docs/{ms,hi}-solver-landing-brief.md`. 다음 포스팅은 **`docs/keyword-bank/{ms,hi}-posting-reference.md`**에 승격한 실제 조사 내용부터 읽는다.
 >
 > 🔴 **«언어 셀렉터»라는 말을 쓰지 마라 — 2026-08-27에 제거됐다.** 앱은 본진(holdemmaster.com) 언어에
 > **페깅**되고 `?lang=`만 받는다(`solver/src/i18n.ts` KEY 주석 · 라이브 `select` 0개·언어 버튼 0개 실측).
@@ -33,7 +35,7 @@
 | 자산 | 위치 |
 |---|---|
 | 키워드 뱅크 (실측 수치·SERP·카니발 판정) | `docs/keyword-bank/{es,pt,de,zh}-gto-solver.md` — **수치는 로케일마다 재실측, «방법»만 재사용** |
-| 앱 화면 축어 8개 언어 | `docs/solver-app-verbatim-5langs-2026-08-24.md`(ko·en·de·zh·zh-hant) + ja·es·pt 기납품 |
+| 앱 화면 축어 8개 언어 | `docs/solver-app-verbatim-5langs-2026-08-24.md`(ko·en·de·zh·zh-hant) + ja·es·pt 기납품 · vi = `docs/solver-app-verbatim-vi-2026-10-09.md` · tr = WORKLOG 10-09 (4) |
 | 수치 정본 (13스팟 8지표) | `docs/gto-solver-series-spec.md` **§4-B 확정표** — 앱 화면이 아니라 이것이 심판 |
 | 폐기 명제 목록 (착수 체크리스트) | `홀덤검수/reports/폐기명제목록-2026-08-23.md`(19행+) + regression — 회귀 77/77 |
 | 번체 검색 관습 | `docs/zh-hant-search-behavior-report.md` · `docs/translation-terms-zh-hant.md` §7-C |
@@ -52,7 +54,7 @@ pt에서 실제로 걸렸다) · `components/side-rail.tsx` · `components/solve
 `scripts/generate-sitemap.mjs` · **각 랜딩의 `alternates.languages`**.
 
 - 🔴 **hreflang은 «전 랜딩 파일이 완전히 같은 문자열 세트»여야 게이트를 통과한다.**
-  HI 포함 소스 세트(12파일): `ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN`. 새 랜딩 하나를 열면 **기존 파일 전부에 새 코드를 같이** 단다.
+  소스 세트(14파일 · 2026-10-09): `ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN tr-TR vi-VN`. 새 랜딩 하나를 열면 **기존 파일 전부에 새 코드를 같이** 단다.
 - 캡처 스크립트 3종(`capture-solver-spots.mjs`·`make-solver-range-charts.mjs`·
   `convert-solver-captures.mjs`)은 `--lang` 지원 — 새 로케일은 **화면 문자열 사전을 라이브에서 직접
   읽어** 채워라. 안 갈면 에러가 아니라 **«조용히 0건»**. 원본 PNG는 커밋 금지(`.solver-captures-*/`).

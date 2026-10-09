@@ -95,9 +95,9 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-09-29 `/ms/tournaments` 신설.
   ms: ["/ms/calculator", "/ms/hand-chart", "/ms/glossary", "/ms/solver", "/ms/tournaments"],
   // vi — ★2026-09-29 `/vi/tournaments` 신설. vi의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
-  //      ⚠ vi에는 solver·calculator가 **없다** — 넣지 마라.
-  //      ★2026-10-07 `/vi/calculator`·`/vi/hand-chart` 신설(vi 도구 회차 · docs/keyword-bank/vi-tools.md). solver는 아직 없다.
-  vi: ["/vi/calculator", "/vi/hand-chart", "/vi/tournaments"],
+  //      ★2026-10-07 `/vi/calculator`·`/vi/hand-chart` 신설(vi 도구 회차 · docs/keyword-bank/vi-tools.md).
+  //      ★2026-10-09 `/vi/solver` 신설(솔버 vi 라이브 S-049 당일).
+  vi: ["/vi/calculator", "/vi/hand-chart", "/vi/solver", "/vi/tournaments"],
   // hi — 솔버·계산기·대회 보드를 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   // ★2026-09-30 `/hi/tournaments` 신설(로케일 회차 2 후반).
   hi: ["/hi/calculator", "/hi/hand-chart", "/hi/glossary", "/hi/solver", "/hi/tournaments"],

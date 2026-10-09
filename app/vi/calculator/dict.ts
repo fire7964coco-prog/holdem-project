@@ -13,7 +13,8 @@
 //    ICM·bubble·payout·shove·call은 tournament-vs-cash-game 글처럼 영어 그대로 · vị trí sớm(EP) · bài tẩy 26 · mù lớn 93.
 // 숫자: vi-VN(천단위 «.» · 소수 «,») · 퍼센트는 숫자 뒤 붙여 씀(«81,9%» — 코퍼스 «0,0032%»·«2,60%» 형) → percentPrefix·percentGap 없음. 문체 = bạn.
 // 🔴 내부 링크: vi 코퍼스는 8편뿐이고 EN 9슬러그 중 실재 = holdem-tournament-vs-cash-game 하나(+ shortStackLink 대체 = holdem-all-in-rules · tr·fr 선례).
-//    quickRef ①~⑤는 link 비움(게이트 F항 · note는 자립 문장으로 끝냈다) · deal.linkLead/link 생략 · /vi/solver·/vi/glossary 없음.
+//    quickRef ①~⑤는 link 비움(게이트 F항 · note는 자립 문장으로 끝냈다) · deal.linkLead/link 생략 · /vi/glossary 없음(계획 §4-C 배포 회차 신설 예정).
+//    `/vi/solver`는 2026-10-09 신설됐다 — 이 사전은 tr 계산기 사전처럼 솔버를 링크하지 않는다(EN 계산기 화면도 솔버 링크 없음).
 //    related는 /vi/blog/ 슬러그만 받는다(컴포넌트가 /{locale}/blog/{slug}로 만든다) → /vi/hand-chart는 여기 못 넣는다.
 import type { CalcDict } from "@/components/calculator/dict";
 
