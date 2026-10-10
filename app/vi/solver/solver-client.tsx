@@ -27,7 +27,8 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=vi";
  *   /en/blog/holdem-equity · holdem-continuation-bet · holdem-strategy → vi 없음 → 규칙 글로 대체
  *   (hand-rankings = 결과 화면 «Nhóm tay bài» 읽기 · game-order = flop → turn → river 순서 · betting-actions · blind-meaning · rules-for-beginners)
  *   /en/calculator · /en/hand-chart → /vi/... (10-07 신설) · /en/win-rate-quiz → vi 없음 → 행·링크 제거
- *   GTO 예제 13편 → vi 미발행 → SPOT_GROUPS `slug` 전부 비움(없는 링크를 미리 걸지 않는다 · tr 선례)
+ *   GTO 예제 13편 → ★2026-10-10 vi 51편 배포 회차(🅶 머지)에 SPOT_GROUPS `slug` 13개 채움(lib/posts-vi/ 실존 확인) ·
+ *   결과 화면 문단 = EN대로 equity·c-bet 글 링크 복원 · 기초 읽기에 strategy 글 복원(EN 순서 · quiz는 vi 라우트 없음)
  *
  * 🔴 해설 수치는 EN 랜딩 값 그대로(정본 = docs/gto-solver-series-spec.md §4-B). EN 주석의 정정 이력
  *   (M-038·M-042·M-045·M-046·M-067)이 반영된 문안을 옮겼다 — 앱 문구로 되돌리지 마라.
@@ -117,8 +118,7 @@ const COMPARE: string[][] = [
 /**
  * 교육 예제 — 그룹·스팟 이름은 앱 화면 베트남어 축어(라이브 ?lang=vi · presets categoryVi/titleVi · cond = 앱 축어 + 3-bet 그룹만 SPR ≈ 4,0 병기(EN 동일)), 해설(note)은 베트남어.
  * 🔴 개수를 문장에 박지 않는다 — 아래 배열에서 센다.
- * 🪶 `slug`는 **vi에 발행된 해설 글만** 채운다 — 2026-10-09 기준 0편(GTO 13편은 vi 클러스터 🅶 레인 예정 · `docs/vi-cluster-plan.md`).
- *    없는 링크를 미리 걸지 않는다(404는 색인에 남는다). vi판이 발행되면 그 행에 `slug`를 채운다.
+ * ★2026-10-10 `slug` 13개 = vi 🅶 GTO 13편(docs/vi-cluster-plan.md §4-C 배포 회차 · 보드 ↔ 슬러그 = lib/gto-series-i18n.ts 순서).
  * 🔴 note 문안은 EN 정정본(M-038 RP-01·03·04 · M-042 RP-17 · M-045 RP-19 · M-046 E-4 · M-067)을
  *    옮긴 것이다 — 앱의 옛 문구로 되돌리지 마라.
  */
@@ -127,31 +127,31 @@ const SPOT_GROUPS = [
     label: "Single raised pot — BTN vs BB (cơ bản)",
     cond: "OOP: BB (bên call) · IP: BTN (bên open) · Pot 5,5bb · Stack 97,5bb",
     items: [
-      { board: "A♥7♦2♣", name: "Board A-high khô", note: "Flop điển hình về lợi thế range — lá A rơi đúng vào range của bên open" },
-      { board: "K♠8♦3♣", name: "Board K-high khô", note: "Vẫn có lợi cho bên open nhưng tần suất check cao hơn. Hãy so với board có lá A" },
-      { board: "Q♠J♦10♠", name: "Board broadway liền nhau, hai chất", note: "Trông như trúng cả hai range, nhưng trong cả loạt spot, đây là nơi BB hiện thực hóa equity kém nhất — 77,9% so với 119,4% của BTN — và check 99,9%" },
-      { board: "9♥8♥7♣", name: "Board tầm trung liền nhau, hai chất", note: "Board single raised pot duy nhất mà BB thật sự donk bet: BB bet trước 23,7% số lần (lợi thế range vẫn thuộc BTN — 51,5% so với 48,5% equity của BB)" },
-      { board: "Q♠9♠2♠", name: "Board monotone (cả 3 lá cùng chất)", note: "Cược lớn nhường chỗ cho cược nhỏ và check — ngay cả thùng đã thành cũng check thường xuyên" },
-      { board: "6♣6♦3♥", name: "Board có đôi", note: "Hầu như không ai trúng board, nên phần bluff tăng lên" },
-      { board: "6♠5♥2♦", name: "Board thấp rainbow (3 lá khác chất)", note: "Cuộc chiến overcard — spot để thiết kế check-raise: trên màn hình, hành động đầu của BB là check 96,8%, bet 3,2%" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board A-high khô", note: "Flop điển hình về lợi thế range — lá A rơi đúng vào range của bên open" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board K-high khô", note: "Vẫn có lợi cho bên open nhưng tần suất check cao hơn. Hãy so với board có lá A" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦10♠", name: "Board broadway liền nhau, hai chất", note: "Trông như trúng cả hai range, nhưng trong cả loạt spot, đây là nơi BB hiện thực hóa equity kém nhất — 77,9% so với 119,4% của BTN — và check 99,9%" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tầm trung liền nhau, hai chất", note: "Board single raised pot duy nhất mà BB thật sự donk bet: BB bet trước 23,7% số lần (lợi thế range vẫn thuộc BTN — 51,5% so với 48,5% equity của BB)" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone (cả 3 lá cùng chất)", note: "Cược lớn nhường chỗ cho cược nhỏ và check — ngay cả thùng đã thành cũng check thường xuyên" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board có đôi", note: "Hầu như không ai trúng board, nên phần bluff tăng lên" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board thấp rainbow (3 lá khác chất)", note: "Cuộc chiến overcard — spot để thiết kế check-raise: trên màn hình, hành động đầu của BB là check 96,8%, bet 3,2%" },
     ],
   },
   {
     label: "Pot 3-bet — BB 3-bet, BTN call (SPR thấp)",
     cond: "OOP: BB (bên 3-bet) · IP: BTN (bên call) · Pot 22,5bb · Stack 89bb · SPR ≈ 4,0",
     items: [
-      { board: "A♦K♠2♥", name: "Board A-high, lợi thế của bên 3-bet", note: "Flop tốt nhất mà range 3-bet có thể gặp — đầy AK, AA và KK. Điều khiến một cược nhỏ ép được toàn bộ range đối thủ là cấu trúc của range đó, không phải SPR thấp" },
-      { board: "Q♥10♥7♠", name: "Board động, hai chất", note: "Board có cả flush draw lẫn straight draw còn sống — 98,4% của range bet cùng một cỡ, hai phần ba pot" },
-      { board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — chỉ gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, lợi thế của bên 3-bet", note: "Flop tốt nhất mà range 3-bet có thể gặp — đầy AK, AA và KK. Điều khiến một cược nhỏ ép được toàn bộ range đối thủ là cấu trúc của range đó, không phải SPR thấp" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥10♥7♠", name: "Board động, hai chất", note: "Board có cả flush draw lẫn straight draw còn sống — 98,4% của range bet cùng một cỡ, hai phần ba pot" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — chỉ gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
     ],
   },
   {
     label: "Blind vs blind — SB vs BB (range rộng)",
     cond: "OOP: SB (bên open) · IP: BB (bên call) · Pot 6bb · Stack 97bb",
     items: [
-      { board: "K♥10♦6♠", name: "Board K-high có lá 10", note: "Range rộng nên cả hai bên đều yếu — hãy so với phiên bản BTN vs BB" },
-      { board: "7♦6♦5♣", name: "Board thấp liền nhau, hai chất", note: "Hai range rộng trên board cực kỳ liền nhau: hai đôi và draw ở khắp nơi" },
-      { board: "A♠A♥6♦", name: "Board đôi A", note: "Trips — một lá A trên tay ghép với đôi A trên board, tức sám cô (bộ ba, three of a kind) — không hiếm ở đây; chỉ là SB có nhiều hơn (88 combo so với 66 của BB); đó là lý do SB bet 80,1%" },
+      { slug: "blind-battle-cbet", board: "K♥10♦6♠", name: "Board K-high có lá 10", note: "Range rộng nên cả hai bên đều yếu — hãy so với phiên bản BTN vs BB" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Board thấp liền nhau, hai chất", note: "Hai range rộng trên board cực kỳ liền nhau: hai đôi và draw ở khắp nơi" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board đôi A", note: "Trips — một lá A trên tay ghép với đôi A trên board, tức sám cô (bộ ba, three of a kind) — không hiếm ở đây; chỉ là SB có nhiều hơn (88 combo so với 66 của BB); đó là lý do SB bet 80,1%" },
     ],
   },
 ];
@@ -345,6 +345,17 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
           <strong className="text-foreground">EQR 84,0%</strong>. Con số đáng dừng lại là equity
           realization dưới 100%: range này nắm 45,1% equity nhưng vì chơi không có vị trí và không có
           thế chủ động, nó chỉ hiện thực hóa được 84% giá trị của phần equity đó.
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Nếu các khái niệm này còn mới với bạn, bài{" "}
+          <Link href="/vi/blog/holdem-equity" className="font-semibold text-primary hover:underline">
+            equity trong poker
+          </Link>{" "}
+          và bài{" "}
+          <Link href="/vi/blog/holdem-continuation-bet" className="font-semibold text-primary hover:underline">
+            continuation bet (c-bet)
+          </Link>{" "}
+          giải thích solver đang đo gì, trước khi bạn thử đọc các con số.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Nếu các tên trong khung Nhóm tay bài — top pair, hai đôi (two pair), thùng (flush) — còn mới với bạn, hãy xem{" "}
@@ -554,7 +565,7 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
         </ul>
       </section>
 
-      {/* ── 기초 읽기 (hi 선례 — vi에 strategy·equity·c-bet 글이 없어 규칙 글로 받친다 · 글 앵커에 도구 의도 구 금지 § 3-C) ── */}
+      {/* ── 기초 읽기 (규칙 글 5 + ★10-10 strategy 글 복원 — EN 마지막 행 · 글 앵커에 도구 의도 구 금지 § 3-C) ── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">Đọc thêm để hiểu nền tảng</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6">
@@ -587,6 +598,12 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
               Thứ hạng các tay bài poker
             </Link>{" "}
             — nhận ra một đôi (one pair), sảnh (straight), thùng và các tay bài khác xuất hiện trong khung Nhóm tay bài
+          </li>
+          <li>
+            <Link href="/vi/blog/holdem-strategy" className="font-semibold text-primary hover:underline">
+              Chiến thuật poker Texas Hold&apos;em
+            </Link>{" "}
+            — những khái niệm mà solver lượng hóa: vị trí, range, sự chủ động và kiểm soát pot
           </li>
         </ul>
       </section>

@@ -231,8 +231,8 @@
 | 0-3 | 소유표·고정문·용어 정본(§3) + 아스트라 교차 → 사장님 보고(쟁점 판정) | 0-2 | ✅ 10-08 (6) 초안 → **10-09 사장님 판정 10건 채택(§3-D)** |
 | 0-4 | 착수 공지 MB · 레인 워크트리 · EN 기준 해시 · 번역 브리프 갱신 · 오염 표기 | 0-3 승인 | ✅ 10-09 (MB-207 · 워크트리 7 + HARDEN.md · 진행 파일 7 · index 칸 6 · lane-sync vi 7레인 · EN `b57cb658` · §5 치환표) |
 | 1 | 레인 🅰~🅵 병렬(A 준비 → B 집필 → C 마감) | 0-4 | ✅ 10-09 — 6레인 C 마감 · `vi-integration` 머지(§4-A 기록) |
-| 2 | 🅶 GTO 13(랜딩은 별도 회차 · §3-D ⑧) | 1 머지(헤드 «시작» 신호) | ▶ 시작 신호 ✅ 10-09 — 사장님이 🅶 창에 「HARDEN.md 읽고 A 시작해」 |
-| 3 | 헤드 판정 → `/vi/glossary` 신설 → 배포 1회 → MB · IndexNow · 사장님 GSC 수동 색인 목록 | 2 | |
+| 2 | 🅶 GTO 13(랜딩은 별도 회차 · §3-D ⑧) | 1 머지(헤드 «시작» 신호) | ✅ 10-10 `a5dd9cfe` → vi-integration ff 머지(10-10 (8)) |
+| 3 | 헤드 판정 → `/vi/glossary` 신설 → 배포 1회 → MB · IndexNow · 사장님 GSC 수동 색인 목록 | 2 | ✅ 10-10 (8) — 판정 = queue §2-AS · 배포 기록 §4-C 끝 |
 
 - 모델·라쿠·통합 브랜치는 fr §4 끝 두 줄 + §4-A를 그대로 쓴다: 본체·레인 = Opus 5.5 · 카피 판정 = Fable 서브 1회/레인 · 렌즈 = Opus 서브 · 교차 = 아스트라(§3-B · 레인 C마다 1종 상시 + 헤드 51편 1회) · 0-1·0-2를 본체에서 끝냈으니 레인은 라쿠·DFS가 필요 없다.
 
@@ -254,6 +254,8 @@
 8. `npm run indexnow -- --since <배포일>`.
 9. 사장님 GSC 수동 색인 요청 목록 = fr §4-C ⑧의 38 슬러그를 `/vi/blog/`로 + `/vi/glossary`(GTO 13 제외 · 필라 6편부터).
 10. 마감: WORKLOG · 핸드오프 · 워크트리 7개 + `Holdem-vi-head` 정리(미커밋 확인 먼저 · node_modules 정션은 `rmdir`로 링크만 끊기).
+
+**배포 기록 (10-10 (8) · 헤드)**: 🅶 ff 머지 → main 머지 → ① `/vi/glossary`(46용어 · 글 축어 42 + 번역 4 · 링크 3 · 등록 4곳 hreflang vi-VN) ② 계산기 quickRef **EN 6링크 전부**(계획은 4라 적었으나 fr 선례대로 EN 대응: ①표 → probability ②AA vs N → equity ③outs ④pot-odds ⑤SPR → short-stack ⑥vs) + deal → holdem-icm(«ICM poker là gì?») + related EN 8 · hand-chart related EN 4글 + 계산기 ③ `VI_CLUSTERS` + `GTO_SERIES_I18N.vi`(랜딩 SPOT_GROUPS 축어) · `/vi/solver` SPOT_GROUPS slug 13 + 결과 문단 equity·c-bet 링크 + 기초 읽기 strategy 복원 ④ date 신규 43 = 10-10(10-09 30편 수정 · 기존 8편 원래 date) · 헤드 판정 = queue §2-AS(이월 3: vi 이미지 · check-gto vi · verbatim 행) · donk faq −1 = `locale-intentional-diffs` 등재.
 
 ## 5. 레인 운영 — fr §5 치환표를 vi로 읽는 «차이 표» (0-4 · 10-09)
 

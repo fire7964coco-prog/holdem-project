@@ -113,13 +113,14 @@ export const HAND_CHART_DICT_VI: HandChartDict = {
   faqHeading: "Câu hỏi thường gặp",
   related: {
     heading: "Bước tiếp theo — hướng dẫn liên quan",
-    // 🔴 vi 코퍼스는 8편 — starting-hands-chart·position-play·probability 글이 없다(차트 의도는 이 도구가 주인).
-    //    실재하는 vi 글 + vi 도구만 건다. desc는 각 글의 title/seoTitle/desc 축어 범위 안(settled §3-A).
+    // ★2026-10-10 vi 51편 배포 회차(§4-C ② · fr 10-07 선례): EN 4글 + 계산기. 차트 의도 헤드는 이 도구가 주인이라
+    //    글 카드 제목에 «chart / bảng range» 금지(§3-C ⑥) — starting-hands-chart는 글 seoTitle의 «bài khởi đầu» 각도.
+    //    title/desc = 각 글의 title·seoTitle·desc 축어 범위 안(settled §3-A).
     items: [
-      { href: "/vi/blog/texas-holdem-rules-for-beginners", tag: "Người mới", title: "Cách chơi Texas Hold'em cho người mới", desc: "Mù, chia chip, thứ hạng bài và bảng tóm tắt in được" },
-      { href: "/vi/blog/holdem-hand-rankings", tag: "Thứ hạng bài", title: "Thứ hạng các tay bài poker trong Texas Hold'em", desc: "10 tay bài poker từ mạnh nhất đến yếu nhất, xác suất thực của từng tay" },
-      { href: "/vi/blog/holdem-betting-actions", tag: "Hành động cược", title: "Các hành động cược trong Texas Hold'em", desc: "Check, theo (call), tố (raise) và bỏ bài (fold) là gì" },
-      { href: "/vi/blog/holdem-tournament-vs-cash-game", tag: "Tournament", title: "Poker Tournament hay Cash Game: người mới nên chơi gì?", desc: "Giá trị chip, blind, bankroll, variance và áp lực ICM rất khác nhau" },
+      { href: "/vi/blog/holdem-starting-hands-chart", tag: "Hướng dẫn đầy đủ", title: "Bài khởi đầu poker: tay bài mạnh nhất và nên chơi gì theo vị trí", desc: "Nên chơi bài gì theo vị trí và bàn 6-max" },
+      { href: "/vi/blog/holdem-when-to-fold", tag: "Bỏ bài", title: "Khi nào nên bỏ bài trong poker", desc: "Kỹ năng âm thầm thắng nhiều nhất" },
+      { href: "/vi/blog/holdem-position-play", tag: "Vị trí", title: "In position và out of position trong poker", desc: "Vì sao vị trí quan trọng, vị trí đẹp nhất" },
+      { href: "/vi/blog/holdem-hand-rankings", tag: "Thứ hạng bài", title: "Thứ tự bài poker Texas Hold'em", desc: "10 tay bài từ mạnh nhất đến yếu nhất" },
       { href: "/vi/calculator", tag: "Công cụ", title: "Máy tính xác suất poker", desc: "Equity, outs và pot odds cho mọi tay bài" },
     ],
   },

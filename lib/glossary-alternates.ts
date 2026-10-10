@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
  *   그 전까지 용어 사전은 ko·en 둘뿐이었고 서로 hreflang도 없었다.
  * 🔴 x-default = 영어판(계산기와 같은 판단).
  */
-export const GLOSSARY_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr"] as const;
+export const GLOSSARY_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi"] as const;
 export type GlossaryLocale = (typeof GLOSSARY_LOCALES)[number];
 
 export const GLOSSARY_ALTERNATES: Record<string, string> = {
@@ -26,5 +26,7 @@ export const GLOSSARY_ALTERNATES: Record<string, string> = {
   "hi-IN": `${SITE}/hi/glossary`,
   // ★2026-10-06 tr 회차 3(docs/tr-cluster-plan.md §4) — 12번째.
   "tr-TR": `${SITE}/tr/glossary`,
+  // ★2026-10-10 vi 배포 회차(docs/vi-cluster-plan.md §4-C ①) — 13번째 · 코드 = lib/calculator-alternates.ts vi 축어.
+  "vi-VN": `${SITE}/vi/glossary`,
   "x-default": `${SITE}/en/glossary`,
 };

@@ -1044,6 +1044,86 @@ export const FR_CLUSTERS: PillarCluster[] = [
   ...solverOf("fr"),
 ];
 
+// vi — 2026-10-10 vi 51편 배포 회차(docs/vi-cluster-plan.md §4-C ③). fr과 같은 구조(대회 가이드 4편은 vi에 없다).
+// 라벨 = vi 글 제목·계획 §3-A 용어(액션·구조 = 영어 차용어 · 족보 = 베트남어 · 카드 라벨 사전 ⑥).
+export const VI_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "Luật chơi",
+    nodes: [
+      { slug: "holdem-game-order", label: "Trình tự ván bài" },
+      { slug: "holdem-betting-actions", label: "Hành động cược" },
+      { slug: "holdem-blind-meaning", label: "Small blind & big blind" },
+      { slug: "holdem-all-in-rules", label: "Luật all-in" },
+      { slug: "holdem-showdown-rules", label: "Showdown" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "Thứ hạng tay bài",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "Thùng hay sảnh" },
+      { slug: "holdem-kicker", label: "Kicker" },
+      { slug: "holdem-tiebreak-rules", label: "So bài cùng hạng" },
+      { slug: "holdem-split-pot-rules", label: "Chia pot" },
+      { slug: "holdem-reading-the-board", label: "Đọc board" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "Xác suất & toán",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "Pot odds" },
+      { slug: "holdem-outs", label: "Tính outs" },
+      { slug: "holdem-drawing-odds", label: "Xác suất draw" },
+      { slug: "holdem-implied-odds", label: "Implied odds" },
+      { slug: "holdem-equity", label: "Equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "Chiến thuật",
+    nodes: [
+      { slug: "holdem-positions", label: "Vị trí" },
+      { slug: "holdem-position-play", label: "In / out of position" },
+      { slug: "holdem-starting-hands-chart", label: "Bài khởi đầu" },
+      { slug: "holdem-limping", label: "Limp" },
+      { slug: "holdem-3bet", label: "3-bet" },
+      { slug: "holdem-continuation-bet", label: "C-bet" },
+      { slug: "holdem-when-to-fold", label: "Khi nào bỏ bài" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "Giải đấu",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "Tournament hay cash game" },
+      { slug: "holdem-icm", label: "ICM" },
+      { slug: "holdem-bubble", label: "Bubble" },
+      { slug: "holdem-short-stack", label: "Short stack" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "Thuật ngữ",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "Rake" },
+      { slug: "holdem-fish", label: "Fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad beat" },
+    ],
+  },
+  // GTO 솔버 시리즈 13편 — 라벨 정본 = lib/gto-series-i18n.ts (app/vi/solver SPOT_GROUPS 축어)
+  ...solverOf("vi"),
+];
+
 const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   en: EN_CLUSTERS,
   ja: JA_CLUSTERS,
@@ -1056,6 +1136,7 @@ const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   hi: HI_CLUSTERS,
   ms: MS_CLUSTERS,
   fr: FR_CLUSTERS,
+  vi: VI_CLUSTERS,
 };
 
 /** 로케일별 클러스터. `null`(= 한국어)이면 KO_CLUSTERS. 맵이 없는 언어는 빈 배열. */

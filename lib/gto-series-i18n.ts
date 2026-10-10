@@ -220,6 +220,25 @@ const GTO_SERIES_I18N: Record<string, { pillarLabel: string; nodes: ClusterNode[
       { slug: "ace-paired-board-strategy", label: "⑬ Board avec deux As", group: "Blind vs Blind — SB vs BB (ranges larges)" },
     ],
   },
+  // vi — 2026-10-10 vi 51편 배포 회차 · 라벨 = app/vi/solver/solver-client.tsx SPOT_GROUPS name·label 축어
+  "vi": {
+    pillarLabel: "GTO Poker Solver",
+    nodes: [
+      { slug: "a-high-board-cbet", label: "① Board A-high khô", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "k-high-board-cbet", label: "② Board K-high khô", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "broadway-board-strategy", label: "③ Board broadway liền nhau, hai chất", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "donk-bet-strategy", label: "④ Board tầm trung liền nhau, hai chất", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "monotone-board-strategy", label: "⑤ Board monotone (cả 3 lá cùng chất)", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "paired-board-strategy", label: "⑥ Board có đôi", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "low-board-check-raise", label: "⑦ Board thấp rainbow (3 lá khác chất)", group: "Single raised pot — BTN vs BB (cơ bản)" },
+      { slug: "3bet-pot-cbet", label: "⑧ Board A-high, lợi thế của bên 3-bet", group: "Pot 3-bet — BB 3-bet, BTN call (SPR thấp)" },
+      { slug: "3bet-pot-bet-sizing", label: "⑨ Board động, hai chất", group: "Pot 3-bet — BB 3-bet, BTN call (SPR thấp)" },
+      { slug: "3bet-pot-low-board", label: "⑩ Board thấp khô", group: "Pot 3-bet — BB 3-bet, BTN call (SPR thấp)" },
+      { slug: "blind-battle-cbet", label: "⑪ Board K-high có lá 10", group: "Blind vs blind — SB vs BB (range rộng)" },
+      { slug: "blind-battle-connected-board", label: "⑫ Board thấp liền nhau, hai chất", group: "Blind vs blind — SB vs BB (range rộng)" },
+      { slug: "ace-paired-board-strategy", label: "⑬ Board đôi A", group: "Blind vs blind — SB vs BB (range rộng)" },
+    ],
+  },
 };
 
 /** 그 로케일의 GTO 솔버 필라. 시리즈 번역본이 없는 로케일(de·fr 등)은 null — 러닝맵에 404 링크를 만들지 않는다. */

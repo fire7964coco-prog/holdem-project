@@ -321,6 +321,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/vi/blog",        icon: "📚", label: "Blog" },
     { href: "/vi/calculator",  icon: "🧮", label: "Máy tính xác suất poker" },
     { href: "/vi/hand-chart",  icon: "📊", label: "Bảng bài khởi đầu" },
+    // ★2026-10-10 vi 배포 회차(docs/vi-cluster-plan.md §4-C ①) `/vi/glossary` 신설. 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
+    { href: "/vi/glossary",    icon: "📖", label: "Thuật ngữ poker" },
     { href: "/vi/solver",      icon: "🧠", label: "GTO Solver" },
     { href: "/vi/tournaments", icon: "🏆", label: "Giải poker" },
   ],

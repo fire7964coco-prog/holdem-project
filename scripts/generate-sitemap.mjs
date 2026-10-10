@@ -246,6 +246,8 @@ const STATIC_ROUTES = [
   { path: "/hi/glossary", priority: "0.6", changefreq: "monthly" },
   // ★2026-10-06 tr 회차 3.
   { path: "/tr/glossary", priority: "0.6", changefreq: "monthly" },
+  // ★2026-10-10 vi 배포 회차(docs/vi-cluster-plan.md §4-C ①).
+  { path: "/vi/glossary", priority: "0.6", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

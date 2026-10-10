@@ -13,7 +13,7 @@
 //    ICM·bubble·payout·shove·call은 tournament-vs-cash-game 글처럼 영어 그대로 · vị trí sớm(EP) · bài tẩy 26 · mù lớn 93.
 // 숫자: vi-VN(천단위 «.» · 소수 «,») · 퍼센트는 숫자 뒤 붙여 씀(«81,9%» — 코퍼스 «0,0032%»·«2,60%» 형) → percentPrefix·percentGap 없음. 문체 = bạn.
 // 🔴 내부 링크: vi 코퍼스는 8편뿐이고 EN 9슬러그 중 실재 = holdem-tournament-vs-cash-game 하나(+ shortStackLink 대체 = holdem-all-in-rules · tr·fr 선례).
-//    quickRef ①~⑤는 link 비움(게이트 F항 · note는 자립 문장으로 끝냈다) · deal.linkLead/link 생략 · /vi/glossary 없음(계획 §4-C 배포 회차 신설 예정).
+//    ★2026-10-10 vi 51편 배포 회차: quickRef 6링크·deal 링크·related 8 = EN 슬러그 그대로(fr 10-07 선례 · §4-C ②③).
 //    `/vi/solver`는 2026-10-09 신설됐다 — 이 사전은 tr 계산기 사전처럼 솔버를 링크하지 않는다(EN 계산기 화면도 솔버 링크 없음).
 //    related는 /vi/blog/ 슬러그만 받는다(컴포넌트가 /{locale}/blog/{slug}로 만든다) → /vi/hand-chart는 여기 못 넣는다.
 import type { CalcDict } from "@/components/calculator/dict";
@@ -372,7 +372,7 @@ export const CALC_DICT_VI: CalcDict = {
       },
     },
     deal: {
-      // 수치 = scripts/calc-icm-example.ts 출력 = EN 그대로(§13). 🔴 vi에 holdem-icm 글이 없어 linkLead/link 생략(tr·fr 선례 · 게이트 F항).
+      // 수치 = scripts/calc-icm-example.ts 출력 = EN 그대로(§13). ★10-10 holdem-icm 생김 → summary 아래 linkLead/link.
       badge: "Máy tính ICM deal",
       h2: "Máy tính ICM deal — một deal ở final table thực sự đáng bao nhiêu",
       intro: "Còn bốn người và đang bàn chuyện deal. Stack là 450.000 / 250.000 / 180.000 / 120.000 (45% / 25% / 18% / 12%), còn lại $2.300 tiền thưởng, trả $1.000 / $600 / $400 / $300. Nhập các số này vào máy tính ICM ở trên, cột Chip chop sẽ đặt hai con số cạnh nhau:",
@@ -389,11 +389,16 @@ export const CALC_DICT_VI: CalcDict = {
         b2: "công bằng hơn với short stack",
         b3: "nhiều hơn $182",
       },
+      // ★2026-10-10 vi 배포 회차(§4-C ③ · §3-C ⑧): holdem-icm이 생겨 EN대로 linkLead/link(앵커 «ICM là gì» — 글이 주인).
+      linkLead: "Mô hình đứng sau các con số này, cùng bubble factor và cách thương lượng deal, xem bài",
+      link: { slug: "holdem-icm", text: "ICM poker là gì?" },
     },
   },
 
   // 빠른 참조 6표 — 🔴 모든 값 = scripts/calc-reference-tables.ts 출력(EN 그대로 · §13) · 구분자만 베트남식 · 퍼센트 기호 뒤.
-  //   🔴 link는 lib/posts-vi/에 «실재하는» 슬러그만(게이트 F항) → ①~⑤ 비움, ⑥ tournament-vs-cash-game.
+  //   🔴 link는 lib/posts-vi/에 «실재하는» 슬러그만(게이트 F항).
+  //   ★2026-10-10 vi 51편 배포 회차(docs/vi-cluster-plan.md §4-C ② · fr 10-07 선례): EN 6링크 그대로 —
+  //   ① probability ② equity ③ outs ④ pot-odds ⑤ short-stack ⑥ tournament-vs-cash-game. 앵커 = 각 글 title/seoTitle 축어 범위.
   //   link를 비운 표의 note는 미완 문장으로 끝나면 안 된다 — 자립 문장으로 끝냈다(EN의 «… is in» 꼬리 삭제).
   quickRef: [
     {
@@ -420,7 +425,9 @@ export const CALC_DICT_VI: CalcDict = {
         ["AKs vs QJs", "63,5%", "36,5%", "0,5%"],
         ["AKo vs JTs", "59,5%", "40,5%", "0,5%"],
       ],
-      note: "Equity là phần pot trung bình của bạn, tính cả các lần hòa (chia pot). Một đôi gặp hai overcard là thế coin flip kinh điển; một đôi gặp đôi cao hơn là cửa dưới với tỷ lệ khoảng 4,5 : 1.",
+      note: "Equity là phần pot trung bình của bạn, tính cả các lần hòa (chia pot). Một đôi gặp hai overcard là thế coin flip kinh điển; một đôi gặp đôi cao hơn là cửa dưới với tỷ lệ khoảng 4,5 : 1. Bảng xác suất đầy đủ theo từng vòng, xem bài",
+      link: { slug: "holdem-probability", text: "Bảng xác suất poker" },
+      linkTail: "",
     },
     {
       badge: "Tra cứu nhanh",
@@ -434,7 +441,9 @@ export const CALC_DICT_VI: CalcDict = {
         ["1", "85,2%"], ["2", "73,4%"], ["3", "63,8%"], ["4", "55,9%"],
         ["5", "49,2%"], ["6", "43,6%"], ["7", "38,7%"], ["8", "34,6%"],
       ],
-      note: "Đó là lý do đôi A muốn pot heads-up: trước năm tay bài ngẫu nhiên, tay khởi đầu mạnh nhất của Hold'em không còn là cửa trên để thắng pot (49,2%, năm người kia chia phần còn lại). Đặt một đối thủ thành “Tay bài ngẫu nhiên” trong máy tính equity để thử bất kỳ tay nào theo cách tương tự (tối đa ba đối thủ).",
+      note: "Đó là lý do đôi A muốn pot heads-up: trước năm tay bài ngẫu nhiên, tay khởi đầu mạnh nhất của Hold'em không còn là cửa trên để thắng pot (49,2%, năm người kia chia phần còn lại). Đặt một đối thủ thành “Tay bài ngẫu nhiên” trong máy tính equity để thử bất kỳ tay nào theo cách tương tự (tối đa ba đối thủ). Vì sao tay bài mạnh mất giá trị trong pot nhiều người, xem bài",
+      link: { slug: "holdem-equity", text: "Equity trong poker là gì?" },
+      linkTail: "",
     },
     {
       badge: "Tra cứu nhanh",
@@ -466,7 +475,9 @@ export const CALC_DICT_VI: CalcDict = {
         ["19", "–", "65,0%", "40,4%", "41,3%", "76% · 38%"],
         ["20", "–", "67,5%", "42,6%", "43,5%", "80% · 40%"],
       ],
-      note: "Con số hai lá chỉ đúng khi bạn được xem cả hai lá mà không phải trả thêm (all-in). Khi gặp một lần bet ở flop, hãy dùng cột flop → turn: 9 outs = 19,1%. Overcard là loại outs kém tin cậy nhất — trước một tay đã thành, bắt đôi một overcard vẫn thường thua, nên hãy trừ bớt giá trị của chúng.",
+      note: "Con số hai lá chỉ đúng khi bạn được xem cả hai lá mà không phải trả thêm (all-in). Khi gặp một lần bet ở flop, hãy dùng cột flop → turn: 9 outs = 19,1%. Overcard là loại outs kém tin cậy nhất — trước một tay đã thành, bắt đôi một overcard vẫn thường thua, nên hãy trừ bớt giá trị của chúng. Cách đếm outs mà không đếm trùng, xem bài",
+      link: { slug: "holdem-outs", text: "Cách tính outs trong poker" },
+      linkTail: "",
     },
     {
       badge: "Tra cứu nhanh",
@@ -487,7 +498,9 @@ export const CALC_DICT_VI: CalcDict = {
         ["2× pot", "1,5 : 1", "40,0%"],
         ["3× pot", "1,33 : 1", "42,9%"],
       ],
-      note: "Một flush draw (35,0% khi còn hai lá, 19,1% ở lá kế tiếp) chỉ call được mức bet bằng pot ở flop khi đó là all-in. Nếu không, máy tính implied odds — nút bật trong tab pot odds — sẽ cộng thêm số tiền bạn kỳ vọng thắng về sau, với điều kiện đối thủ còn chip phía sau và có tay bài chịu trả tiền; hãy trừ mạnh khi bạn không draw tới nuts.",
+      note: "Một flush draw (35,0% khi còn hai lá, 19,1% ở lá kế tiếp) chỉ call được mức bet bằng pot ở flop khi đó là all-in. Nếu không, máy tính implied odds — nút bật trong tab pot odds — sẽ cộng thêm số tiền bạn kỳ vọng thắng về sau, với điều kiện đối thủ còn chip phía sau và có tay bài chịu trả tiền; hãy trừ mạnh khi bạn không draw tới nuts. Cách tính trong 10 giây cho mọi tình huống, xem bài",
+      link: { slug: "holdem-pot-odds", text: "Pot odds là gì? Cách tính trong 10 giây" },
+      linkTail: "",
     },
     {
       badge: "Tra cứu nhanh",
@@ -502,7 +515,9 @@ export const CALC_DICT_VI: CalcDict = {
         ["8 ≤ SPR < 15", "Sâu dần", "Set trở lên chơi để lấy cả stack; draw có thêm implied odds"],
         ["SPR ≥ 15", "Sâu", "Pot lớn chỉ với tay cỡ nuts — tay đã thành yếu là mục tiêu bị bluff"],
       ],
-      note: "Máy tính SPR ở trên quy đổi bất kỳ stack và pot nào về một trong bốn vùng này.",
+      note: "Máy tính SPR ở trên quy đổi bất kỳ stack và pot nào về một trong bốn vùng này. Range theo độ sâu stack, xem bài",
+      link: { slug: "holdem-short-stack", text: "Short stack poker là gì?" },
+      linkTail: "",
     },
     {
       badge: "Tra cứu nhanh",
@@ -549,18 +564,18 @@ export const CALC_DICT_VI: CalcDict = {
   related: {
     badge: "Đọc tiếp",
     h2: "Các hướng dẫn nên đọc khi đã nắm phần tính toán",
-    // 🔴 vi 코퍼스 8편 전수(EN 8슬러그는 vi에 0개 실재 · tr·fr 선례: related = 실재 글 전수 · 게이트 F항 min(EN 8, 코퍼스)).
+    // ★2026-10-10 vi 51편 배포 회차(§4-C ② · fr 10-07 선례): related = EN 8슬러그 그대로(그 전엔 코퍼스 8편 전수였다).
     //    title/desc = 각 글의 title·seoTitle·desc 축어 범위 안(settled §3-A · 창작 금지 · 첫 글자 대문자화만).
-    //    /vi/hand-chart는 블로그 슬러그가 아니라서 여기 못 넣는다(컴포넌트가 /vi/blog/{slug}로 만든다).
+    //    🔴 글로 가는 카드에 도구 의도 구(«máy tính»·«bảng range»·«solver») 금지(계획 §3-A ⑤).
     links: [
-      { slug: "holdem-tournament-vs-cash-game", title: "Tournament hay Cash Game?", desc: "Giá trị chip, blind, bankroll, variance và áp lực ICM" },
-      { slug: "holdem-all-in-rules", title: "Luật all-in & side pot", desc: "Table stakes, pot chính, pot phụ (side pot), quyền tố lại và thứ tự showdown" },
-      { slug: "holdem-hand-rankings", title: "Thứ hạng tay bài poker", desc: "10 tay bài poker từ mạnh nhất đến yếu nhất, xác suất thực của từng tay" },
-      { slug: "holdem-betting-actions", title: "Các hành động cược trong poker", desc: "Check, theo (call), tố (raise) và bỏ bài (fold)" },
-      { slug: "holdem-game-order", title: "Trình Tự Chơi Texas Hold'em", desc: "Preflop, flop, turn, river, lật bài" },
-      { slug: "holdem-showdown-rules", title: "Luật showdown & muck trong Poker", desc: "Người cược cuối, bài tự nói, slow roll và all-in" },
-      { slug: "texas-holdem-rules-for-beginners", title: "Cách chơi Texas Hold'em cho người mới", desc: "Mù, chia chip, thứ hạng bài và bảng tóm tắt in được" },
-      { slug: "holdem-blind-meaning", title: "Mù nhỏ và mù lớn trong poker", desc: "Ai đặt, mức cược SB/BB, big blind ante và luật mù khi chơi heads-up" },
+      { slug: "holdem-icm", title: "ICM poker là gì?", desc: "Chip EV, thuế ICM và deal ICM — chip không phải là tiền" },
+      { slug: "holdem-equity", title: "Equity poker là gì?", desc: "Phần pot kỳ vọng, fold equity và realization" },
+      { slug: "holdem-pot-odds", title: "Pot odds poker là gì và cách tính", desc: "Công thức tiền call ÷ (pot + tiền call) trong 10 giây" },
+      { slug: "holdem-outs", title: "Cách tính outs trong poker", desc: "Bảng outs từng loại draw và các outs bẩn làm bạn mất tiền" },
+      { slug: "holdem-probability", title: "Bảng xác suất poker", desc: "Mọi tay bài xuất hiện bao nhiêu lần trong Hold'em" },
+      { slug: "holdem-starting-hands-chart", title: "Bài khởi đầu poker mạnh nhất", desc: "Tay bài mạnh nhất và nên chơi gì theo vị trí" },
+      { slug: "holdem-short-stack", title: "Short stack poker là gì?", desc: "Push/fold khi còn 15, 10 và 5 big blind" },
+      { slug: "holdem-implied-odds", title: "Implied odds trong poker", desc: "Khi pot odds bảo fold mà call vẫn có lời" },
     ],
   },
 };

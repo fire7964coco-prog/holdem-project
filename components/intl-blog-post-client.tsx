@@ -78,7 +78,7 @@ const SOLVER_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtit
   hi: { title: "मुफ़्त GTO पोकर सॉल्वर", subtitle: "सीधे ब्राउज़र में" },
   ms: { title: "Solver Poker GTO Percuma", subtitle: "Terus dalam Pelayar" },
   fr: { title: "Solver Poker GTO Gratuit", subtitle: "dans ton navigateur, sans inscription" },
-  // tr·vi — 2026-10-09 미리 등재(아직 TR/VI_CLUSTERS 없음 → 레일 미표시). vi 🅶 GTO 13편으로 VI_CLUSTERS가 생기면
+  // tr·vi — 2026-10-09 미리 등재(★10-10 VI_CLUSTERS 신설로 vi 레일 표시 · tr은 아직 TR_CLUSTERS 없음). vi 🅶 GTO 13편으로 VI_CLUSTERS가 생기면
   //   솔버 버튼만 조용히 빠지는 자리라 먼저 채웠다. 값 = 각 랜딩 TITLE «제목 — 부제» 축어.
   tr: { title: "Ücretsiz GTO Poker Solver", subtitle: "Tarayıcıda, Kurulumsuz" },
   vi: { title: "GTO Poker Solver miễn phí", subtitle: "chạy ngay trên trình duyệt" },
