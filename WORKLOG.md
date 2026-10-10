@@ -1,3 +1,10 @@
+## 2026-10-10 (7) — 우편함 MA-412·413 회신+이행 · PDF 4자리 · MB-222
+
+- MA-412 요청 1: `spot-share-i18n.ts` L93 ru 주석 정정(화면 0).
+- MA-413 요청 1: starting-hands-chart PDF(원본 HTML → `render-starting-hands-pdf.mjs`) 4자리 = MA 처방 꼴 축어(UTG 58콤보 각주 · raise first in · ~2–3 points · Most-called worst hand). 1쪽 유지 렌더 확인 · check-pdf-page 🔴 0. P17 미변경.
+- 통지 3 = queue §2-AR(EN FAQ L280 «about 2 percentage points» = EN-먼저 후보 · 자동 착수 아님).
+- 게이트: build exit 0.
+
 ## 2026-10-10 (5) — queue §2-AQ (a) 6자리 이행·배포 · MB-220 · MA-409·410 ACK
 
 - 🔴 AQ-6: 사칭 금지어 ru 어간 3(«админ»·«модератор»·«официальн») + 주석 15언어 + selftest 사례 3. 첫 실행 🔴 1 = 시험 닉네임 «Официальный Модератор»가 21자라 길이 검사에 먼저 걸린 것(필터 아님) → 사례 교체.
