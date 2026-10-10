@@ -48,6 +48,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Equity-Realisierung' }, // 2026-10-02 · «Equity-Realisierung» = de 코퍼스 다수형(16회) · 세부 분류명은 라이브 DE UI
   fr: { title: 'Composition des ranges', source: 'Calculé avec le solver GTO de HoldemMaster · sans rake',
         equity: 'Équité', eqr: "Réalisation d'équité" }, // 2026-10-07 · 계획 §3-A ④(équité · la range) · 🅶 신규 용어 «réalisation d'équité (EQR)» · «Sans rake»
+  vi: { title: 'Thành phần range', source: 'Tính bằng solver GTO của HoldemMaster · không tính rake',
+        equity: 'Equity', eqr: 'Equity realization (EQR)' }, // 2026-10-10 · vi 코퍼스 «thành phần range»(alt 3)·«Equity realization (EQR)»(18)·«không tính rake»(31) · 세부 분류명은 라이브 VI UI
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
         equity: '勝率 (EQ)', eqr: '勝率實現 (EQR)' },   // 2026-09-03 · 앱 번체 축어(解算器 · 勝率實現) — 간체 求解器/权益实现과 다르다
 };
@@ -61,10 +63,10 @@ const num = (s) => {
   if (!/^\d+(?:\.\d+)?$/.test(value) || !Number.isFinite(Number(value))) throw new Error(`잘못된 백분율: ${s}`);
   return Number(value);
 };
-const commaDecimal = ['pt', 'id', 'de', 'fr'].includes(LANG);
+const commaDecimal = ['pt', 'id', 'de', 'fr', 'vi'].includes(LANG);
 const pctSep = LANG === 'fr' ? ' ' : ''; // fr 조판: % 앞 공백(계획 §3-A ②) — 줄바꿈 안 되는 공백(일반 공백이면 긴 막대 값이 «38,4 / %»로 갈렸다)
 const footPct = (v) => (LANG === 'fr' ? pct(num(v)) : v); // fr만 하단 EQ·EQR도 같은 조판(앱 원문은 «58,3%»)
-const stackedHeading = ['pt', 'id', 'ms', 'hi', 'de'].includes(LANG);
+const stackedHeading = ['pt', 'id', 'ms', 'hi', 'de', 'vi'].includes(LANG);
 const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + pctSep + '%';
 
 /** Partial spot sets are valid, but every selected spot must supply both chart panels. */

@@ -20,13 +20,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "🎴",
-  image: "/images/gto-srp-broadway-oop-en.webp",
+  image: "/images/gto-srp-broadway-oop-vi.webp",
   imageAlt: "Kết quả solver HoldemMaster cho flop broadway liền nhau hai chất: lưới bài của big blind phủ xanh check, bảng draw nằm bên phải",
   tags: ["nut advantage poker", "lợi thế nut", "range advantage vs nut advantage", "dynamic board poker", "board hai chất", "flop broadway", "equity realization", "ví dụ solver"],
   content: `
 Flop ra **Q♠ J♦ 10♠**. Bạn cầm KQ ở big blind (BB — mù lớn) — top pair kèm sảnh hở hai đầu (OESD). Check tay này thì chắc chắn là sai, phải không?
 
-Hai spot (tình huống ra quyết định) trước — [A-high](/vi/blog/a-high-board-cbet) và [K-high](/vi/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-en.webp") — là những board yên ắng, gần như chẳng có gì đang draw. Spot này thì ngược lại: **68,4% range của big blind ở đây có draw.** Vậy mà solver vẫn check ==99,9%==. Lead (donk bet — bet trước vào người đã raise preflop) trở nên *hiếm hơn*, chứ không phổ biến hơn.
+Hai spot (tình huống ra quyết định) trước — [A-high](/vi/blog/a-high-board-cbet) và [K-high](/vi/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-vi.webp") — là những board yên ắng, gần như chẳng có gì đang draw. Spot này thì ngược lại: **68,4% range của big blind ở đây có draw.** Vậy mà solver vẫn check ==99,9%==. Lead (donk bet — bet trước vào người đã raise preflop) trở nên *hiếm hơn*, chứ không phổ biến hơn.
 
 "Nhiều draw" và "được quyền bet trước" là hai mệnh đề khác nhau. Mọi con số dưới đây lấy từ [GTO poker solver miễn phí](/vi/solver) của HoldemMaster, đọc từ kết quả Spot mẫu ngày 2026-08-19.
 
@@ -102,7 +102,7 @@ Equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) trung bình
 
 **Chỉ đếm draw thật: 68,4% với big blind, 68,7% với button.** Cộng thêm backdoor flush draw thì lên tới 75,2% và 74,4% — ba phần tư của cả hai range.
 
-![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board broadway liền nhau hai chất](/images/gto-srp-broadway-ranges-en.webp "Q♠J♦10♠ · phân bổ theo nhóm — bốn hàng trên cùng là nơi flop được quyết định")
+![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board broadway liền nhau hai chất](/images/gto-srp-broadway-ranges-vi.webp "Q♠J♦10♠ · phân bổ theo nhóm — bốn hàng trên cùng là nơi flop được quyết định")
 
 | Draw | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -150,7 +150,7 @@ Xếp ba flop cạnh nhau, xu hướng hiện ra rất rõ.
 | K-8-3 (khô) | 80,7% | 116,7% | 36,0 điểm |
 | **Q-J-10 (liền nhau, hai chất)** | **77,9%** | **119,4%** | **41,5 điểm** |
 
-Ba spot khiến mọi thứ trông như *board càng động, khoảng cách càng rộng*. **Quy tắc đó vỡ ngay ở spot tiếp theo** — [9♥8♥7♣](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), cũng như Q-J-10, là ba lá liền nhau trên board hai chất, vậy mà khoảng cách chỉ **13,2 điểm, hẹp nhất trong bảy pot raise đơn (single raised pot)**, với big blind đạt 93,2%, cao nhất trong bảy spot đó (trên toàn loạt bài, con số 117,8% của pot 3-bet Q-10-7 còn cao hơn). Thứ mở rộng khoảng cách không phải độ động của board mà là **phần đỉnh của board thuộc về range của ai**: Q-J-10 trao thẳng AK, QQ, JJ, AA và KK cho button, còn trên 9-8-7 cũng chính những lá đó lại trượt board. ⚠ Không phải ở đó chúng vô nghĩa — 9-8-7 chia overpair **1,3% so với 6,4%**, khoảng cách còn rộng hơn mức 0% so với 2,6% của Q-J-10. Nhưng lợi thế overpair đó mong manh trên một board liền nhau, nên nó không khóa được phần đỉnh. Vì sao hành động sau cùng lại đáng giá đến thế: [chơi theo vị trí](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Ba spot khiến mọi thứ trông như *board càng động, khoảng cách càng rộng*. **Quy tắc đó vỡ ngay ở spot tiếp theo** — [9♥8♥7♣](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), cũng như Q-J-10, là ba lá liền nhau trên board hai chất, vậy mà khoảng cách chỉ **13,2 điểm, hẹp nhất trong bảy pot raise đơn (single raised pot)**, với big blind đạt 93,2%, cao nhất trong bảy spot đó (trên toàn loạt bài, con số 117,8% của pot 3-bet Q-10-7 còn cao hơn). Thứ mở rộng khoảng cách không phải độ động của board mà là **phần đỉnh của board thuộc về range của ai**: Q-J-10 trao thẳng AK, QQ, JJ, AA và KK cho button, còn trên 9-8-7 cũng chính những lá đó lại trượt board. ⚠ Không phải ở đó chúng vô nghĩa — 9-8-7 chia overpair **1,3% so với 6,4%**, khoảng cách còn rộng hơn mức 0% so với 2,6% của Q-J-10. Nhưng lợi thế overpair đó mong manh trên một board liền nhau, nên nó không khóa được phần đỉnh. Vì sao hành động sau cùng lại đáng giá đến thế: [chơi theo vị trí](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Button nên bet thế nào trên một board dynamic như thế này?
 
@@ -168,8 +168,8 @@ Ba spot khiến mọi thứ trông như *board càng động, khoảng cách cà
 - **Gặp đối thủ không bao giờ fold draw, hãy tăng size thay vì bet thường xuyên hơn.** Mua fold là thứ thất bại ở đây; bắt draw trả giá mới là thứ hiệu quả.
 
 :::readnext[Đọc tiếp]
-/vi/blog/k-high-board-cbet | Flop K-high nơi người call check 99,8% | /images/gto-srp-dry-king-oop-en.webp
-/vi/blog/a-high-board-cbet | Có top pair vẫn check: A-7-2 | /images/gto-srp-dry-ace-oop-en.webp
+/vi/blog/k-high-board-cbet | Flop K-high nơi người call check 99,8% | /images/gto-srp-dry-king-oop-vi.webp
+/vi/blog/a-high-board-cbet | Có top pair vẫn check: A-7-2 | /images/gto-srp-dry-ace-oop-vi.webp
 :::
 
 ## Tự kiểm tra
@@ -188,7 +188,7 @@ A. Ba tay: AK cho A-K-Q-J-10, K9 cho K-Q-J-10-9, và 98 cho Q-J-10-9-8. Không l
 
 **Q. Board ướt chẳng phải là chỗ để lead semi-bluff sao?**
 
-A. Không — chỉ đếm số draw thì chưa quyết định được. Phân bổ tay đã thành bài, lợi thế nut và blocker phải được cân cùng lúc. Ở đây OESD là 28,7% so với 27,7% — gần như y hệt — trong khi sảnh đã hoàn thành là 7,1% so với 10,5%, nghiêng về button. Một cú lead cần phần đỉnh của range đứng về phía bạn, không phải mức trung bình, và flop này đúng là trường hợp ngược lại. Có một board trong bộ Spot mẫu thật sự thỏa điều kiện đó — [9-8-7 tầm trung liền nhau](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), nơi big blind donk bet 23,7% số lần thay vì gần như không bao giờ.
+A. Không — chỉ đếm số draw thì chưa quyết định được. Phân bổ tay đã thành bài, lợi thế nut và blocker phải được cân cùng lúc. Ở đây OESD là 28,7% so với 27,7% — gần như y hệt — trong khi sảnh đã hoàn thành là 7,1% so với 10,5%, nghiêng về button. Một cú lead cần phần đỉnh của range đứng về phía bạn, không phải mức trung bình, và flop này đúng là trường hợp ngược lại. Có một board trong bộ Spot mẫu thật sự thỏa điều kiện đó — [9-8-7 tầm trung liền nhau](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), nơi big blind donk bet 23,7% số lần thay vì gần như không bao giờ.
 
 **Q. Range advantage và nut advantage khác nhau ở điểm nào?**
 

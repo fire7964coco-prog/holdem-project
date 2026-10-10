@@ -22,13 +22,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 phút",
   emoji: "🎯",
-  image: "/images/gto-srp-middle-connected-oop-en.webp",
+  image: "/images/gto-srp-middle-connected-oop-vi.webp",
   imageAlt: "Kết quả GTO solver của HoldemMaster trên flop tầm trung liền nhau hai chất: lưới bài của big blind trộn ô check màu xanh lá với ô bet màu cam và hồng",
   tags: ["donk bet", "donk bet là gì", "donk bet poker", "khi nào không nên c-bet", "lead bet", "board liền nhau tầm trung", "ví dụ solver"],
   content: `
 Một trong những quy tắc đầu tiên bạn học trong poker: **check cho người đã raise (tố).** Người tấn công ở preflop được quyền bet trước ở flop.
 
-Ba spot (tình huống ra quyết định) vừa rồi là quy tắc ấy ở dạng ngoan ngoãn nhất. Trên flop [A-high](/vi/blog/a-high-board-cbet), [K-high](/vi/blog/k-high-board-cbet) và [broadway](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp"), tần suất lead của big blind (BB — mù lớn) lần nào cũng dưới 2% — trên K-8-3 và Q-J-10 chỉ còn 0,2% hoặc thấp hơn, coi như bằng không.
+Ba spot (tình huống ra quyết định) vừa rồi là quy tắc ấy ở dạng ngoan ngoãn nhất. Trên flop [A-high](/vi/blog/a-high-board-cbet), [K-high](/vi/blog/k-high-board-cbet) và [broadway](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-vi.webp"), tần suất lead của big blind (BB — mù lớn) lần nào cũng dưới 2% — trên K-8-3 và Q-J-10 chỉ còn 0,2% hoặc thấp hơn, coi như bằng không.
 
 Trên **9♥ 8♥ 7♣** con số đó là **23,7%**. Đây là chỗ quy tắc bị phá vỡ.
 
@@ -114,7 +114,7 @@ Chiều ngược lại cũng có. Overpair (đôi tẩy cao hơn mọi lá trên
 
 **Không. Equity vẫn là 48,5% so với 51,5%.** Điều này đáng nói thẳng ra, vì đây là kết luận sai dễ rút ra nhất: lead xuất hiện không có nghĩa là lợi thế range đã dịch chuyển. Equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) vẫn nghiêng về button.
 
-![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board tầm trung liền nhau hai chất](/images/gto-srp-middle-connected-ranges-en.webp "9♥8♥7♣ · tỷ lệ theo nhóm — sảnh nghiêng về big blind, overpair và A-high nghiêng về button")
+![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board tầm trung liền nhau hai chất](/images/gto-srp-middle-connected-ranges-vi.webp "9♥8♥7♣ · tỷ lệ theo nhóm — sảnh nghiêng về big blind, overpair và A-high nghiêng về button")
 
 | Nhóm | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -198,15 +198,15 @@ Những lá cao **khác chất** đã trượt như AKo và AQo là check-back (
 
 ## Ra bàn thật thì chơi khác gì?
 
-- **Lead sống trên board tầm trung liền nhau sau một cú open rộng từ vị trí muộn.** Board monotone ở spot tiếp theo cũng có khoảng 11%, trong khi flop khô A-high và K-high coi như bằng không. ⚠ Tuy vậy, board tầm trung liền nhau duy nhất loạt bài này thực sự giải là 9-8-7, và điều kiện không chỉ là texture mà là **range nào cầm nhiều tay mạnh nhất hơn trên board đó.** Bằng chứng nằm ngay trong loạt bài: [flop 6-5-2](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") là cùng một pot raise đơn (single raised pot) button đấu big blind, và big blind chỉ lead **3,2%** ở đó, vì tay duy nhất tạo sảnh là 4-3 và không range nào cầm nó. Chỉ thấp và liền nhau thì không sinh ra lead.
+- **Lead sống trên board tầm trung liền nhau sau một cú open rộng từ vị trí muộn.** Board monotone ở spot tiếp theo cũng có khoảng 11%, trong khi flop khô A-high và K-high coi như bằng không. ⚠ Tuy vậy, board tầm trung liền nhau duy nhất loạt bài này thực sự giải là 9-8-7, và điều kiện không chỉ là texture mà là **range nào cầm nhiều tay mạnh nhất hơn trên board đó.** Bằng chứng nằm ngay trong loạt bài: [flop 6-5-2](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-vi.webp") là cùng một pot raise đơn (single raised pot) button đấu big blind, và big blind chỉ lead **3,2%** ở đó, vì tay duy nhất tạo sảnh là 4-3 và không range nào cầm nó. Chỉ thấp và liền nhau thì không sinh ra lead.
 - **Bạn vẫn check ba phần tư số lần.** Khi lead: dùng size nhỏ, và với nhiều thứ hơn chỉ những tay mạnh nhất — một range chỉ lead sảnh sẽ bị đọc ngay, nên top pair và draw thuộc về cùng size đó. Nhưng hãy giữ tổng số trong tầm mắt: **toàn bộ lead là 23,7%, 16,8 trong đó ở size nhỏ.** Biến nó thành "lead mọi draw" thì nó thành nửa range và đảo ngược chiến lược. 76,2% còn lại check.
 - **Ở button, kiềm chế c-bet trên texture này.** Hơn một nửa range của bạn không có đôi, và overpair muốn một pot được kiểm soát chứ không phải một pot lớn.
 - **Gặp đối thủ c-bet quá thường xuyên, check có thể đáng giá hơn lead** — và check-**raise**, chứ không chỉ check-call, với sảnh và top pair. Để họ bet giùm những tay mạnh của bạn đáng giá hơn việc giành quyền chủ động, nhưng chỉ khi sau đó bạn bắt họ trả giá.
 - **Đọc theo chiều ngược lại nữa.** Gặp người hay check-back trên board ướt, lead đáng giá hơn con số solver gợi ý: check ở đó chỉ đơn giản là mất trắng vòng cược.
 
 :::readnext[Đọc tiếp]
-/vi/blog/broadway-board-strategy | Hai phần ba range có draw — mà vẫn check | /images/gto-srp-broadway-oop-en.webp
-/vi/blog/k-high-board-cbet | Flop K-high nơi người call check 99,8% | /images/gto-srp-dry-king-oop-en.webp
+/vi/blog/broadway-board-strategy | Hai phần ba range có draw — mà vẫn check | /images/gto-srp-broadway-oop-vi.webp
+/vi/blog/k-high-board-cbet | Flop K-high nơi người call check 99,8% | /images/gto-srp-dry-king-oop-vi.webp
 :::
 
 ## Tự kiểm tra

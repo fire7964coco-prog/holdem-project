@@ -87,6 +87,10 @@ const L10N = {
         back: '← Liste', spots: "Spots d'étude ⚡", view: '⚡ Voir les résultats',
         noDraw: 'Aucun tirage', combos: 'combos', hands: 'Mains', draws: 'Tirages',
         all: 'Tout', summary: 'Résumé', barWidth: 'Largeur des barres :' }, // 2026-10-07 라이브 FR DOM 축어(docs/solver-app-verbatim-fr-2026-10-07.md §1·§5 · 🅶 레인 13/13 통과)
+  vi: { url: 'https://solver.holdemmaster.com/?lang=vi',
+        back: '← Quay lại', spots: 'Spot mẫu ⚡', view: '⚡ Xem kết quả',
+        noDraw: 'Không draw', combos: 'combo', hands: 'Tay bài', draws: 'Draw',
+        all: 'Tất cả', summary: 'Tóm tắt', barWidth: 'Độ rộng thanh' }, // 2026-10-10 docs/solver-app-verbatim-vi-2026-10-09.md §1·§4 축어(queue §2-AS H-1) · 결과 숫자는 소수 쉼표 · spots는 홈 «Xem spot mẫu»와 갈리게 ⚡까지
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
@@ -188,7 +192,7 @@ if (args.includes('--selftest')) {
   try {
     const testPage = await testBrowser.newPage();
     for (const [locale, labels] of Object.entries(L10N)) {
-      const value = ['pt', 'id'].includes(locale) ? '98,2%' : '98.2%';
+      const value = ['pt', 'id', 'vi'].includes(locale) ? '98,2%' : '98.2%';
       await testPage.setContent(`<div>${labels.back}<br>Board A-high<br>A♥7♦2♣</div>
         <select><option>OOP (BB (caller))</option><option>IP (BTN (opener))</option></select>
         <section>Check<br>${value}<br>455.5<br>${labels.combos}</section>

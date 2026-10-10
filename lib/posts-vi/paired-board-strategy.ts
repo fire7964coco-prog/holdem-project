@@ -7,7 +7,7 @@ import type { Post } from "../posts";
  * 🔴 «set poker»(칩 세트 쇼핑)·set/trips 통칭 단독어 금지. 지어낸 경험담 금지(GTO 시리즈 예외).
  * 의도적 EN 차이(§2-AO 선반영): EN L219 note «within a tenth of a point» → «lệch trong vòng vài phần mười điểm»(AO-3) ·
  *   «four ranges out of five» → «bốn phần năm của mỗi range».
- * 이미지 = EN 경로(-en.webp) — vi 캡처 생성 후 헤드가 -vi로 교체.
+ * 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  */
 export const POST: Post = {
   slug: "paired-board-strategy",
@@ -22,7 +22,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "👯",
-  image: "/images/gto-srp-paired-oop-en.webp",
+  image: "/images/gto-srp-paired-oop-vi.webp",
   imageAlt: "Kết quả GTO solver của HoldemMaster cho flop có đôi thấp 6♣6♦3♥: lưới bài của big blind gần như phủ kín màu xanh check, bảng bên cạnh có hàng tứ quý và cù lũ",
   tags: ["poker trips vs set", "set trong poker", "paired board poker", "pocket pair", "mdf poker", "ví dụ solver"],
   content: `
@@ -82,7 +82,7 @@ Khác biệt đó quan trọng vì trips phổ biến hơn set rất nhiều và
 | Bet 4,1bb (75% pot) | **2,0%** | 9,6 |
 | Bet 1,8bb (33% pot) | 1,0% | 4,7 |
 
-**Cú bet lớn nhiều hơn cú bet nhỏ** — lần đầu tiên trong loạt bài này. Trên hai board mà việc lead thật sự có ý nghĩa, size nhỏ thắng thế với tỷ lệ hơn hai trên một: 16,8% so với 6,9% ở [spot donk bet 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), 8,0% so với 3,2% ở [flop monotone](/vi/blog/monotone-board-strategy). Ở đây nó đảo ngược, và bảng theo từng tay bài bên dưới cho thấy lý do.
+**Cú bet lớn nhiều hơn cú bet nhỏ** — lần đầu tiên trong loạt bài này. Trên hai board mà việc lead thật sự có ý nghĩa, size nhỏ thắng thế với tỷ lệ hơn hai trên một: 16,8% so với 6,9% ở [spot donk bet 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), 8,0% so với 3,2% ở [flop monotone](/vi/blog/monotone-board-strategy). Ở đây nó đảo ngược, và bảng theo từng tay bài bên dưới cho thấy lý do.
 
 ## Cầm nhiều trips hơn, vì sao vẫn check?
 
@@ -102,7 +102,7 @@ Trước hết là đếm. Với 6♣ và 6♦ trên board, chỉ còn 6♠ và 
 
 Giờ mở rộng tầm nhìn, và bức tranh đảo ngược.
 
-![Đồ họa so sánh thành phần range của big blind và button theo nhóm tay bài trên board có đôi thấp](/images/gto-srp-paired-ranges-en.webp "6♣6♦3♥ · chia theo nhóm — trips nghiêng về người call, nhưng hai đôi và A-high nghiêng về người open")
+![Đồ họa so sánh thành phần range của big blind và button theo nhóm tay bài trên board có đôi thấp](/images/gto-srp-paired-ranges-vi.webp "6♣6♦3♥ · chia theo nhóm — trips nghiêng về người call, nhưng hai đôi và A-high nghiêng về người open")
 
 | Nhóm | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -130,7 +130,7 @@ Lead vào thế đó thì hỏng từ cả hai đầu: có lá 6 thì bạn ch�
 
 Phần pot của big blind là ==5,5 × 47,2% = 2,60bb==, và nó ghi được 2,17bb — ==2,17 ÷ 2,60 ≈ 83,7%==. Đó là equity realization (EQR — phần equity bạn thực sự thu về). Phần của button là 2,90bb so với EV (giá trị kỳ vọng) 3,33bb, nên nó thu về **114,5%**, nhiều hơn phần mà equity của nó đáng được hưởng. Ở đây big blind là out of position (OOP — không có vị trí), button là in position (IP — có vị trí).
 
-Khoảng cách **30,8 điểm** gần như đúng bằng 29,1 điểm của [board A-high khô](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **Board có đôi chơi giống một board khô** — bốn phần năm của mỗi range là cùng một đôi 6 kèm một lá cao khác nhau, nên ván bài trôi lặng lẽ, và người hành động sau được thấy lá cao nào xuất hiện rồi mới chọn. Lợi thế đó là toàn bộ khoảng cách.
+Khoảng cách **30,8 điểm** gần như đúng bằng 29,1 điểm của [board A-high khô](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp"). **Board có đôi chơi giống một board khô** — bốn phần năm của mỗi range là cùng một đôi 6 kèm một lá cao khác nhau, nên ván bài trôi lặng lẽ, và người hành động sau được thấy lá cao nào xuất hiện rồi mới chọn. Lợi thế đó là toàn bộ khoảng cách.
 
 :::note[Mọi EQR trong loạt bài này là con số solver hiển thị. Tự chia equity và EV đã làm tròn thì kết quả lệch trong vòng vài phần mười điểm so với con số đó — đó là do làm tròn, không phải mâu thuẫn.]:::
 
@@ -215,15 +215,15 @@ Vậy phép tính này có ích không phải ở chỗ "phải đạt 75%" mà 
 - **Kicker quyết định ván bài.** Chỉ ba combo thắng thẳng trips — ba combo cù lũ 33. (Tứ quý thì loại khỏi bàn: một khi chính bạn cầm một lá 6, 6♠6♥ không thể tồn tại, nên bốn combo đếm ở phần cù lũ trở thành ba từ ghế của bạn.) Và ngay cả điều đó cũng chỉ đúng khi kicker của bạn là lá A. Kicker thứ hai bị cố định bởi lá 3 trên board, nên lá bài duy nhất bên cạnh lá 6 của bạn là toàn bộ ván bài: với 76s, A6, K6, Q6 và 86 của button đều đè bẹp bạn. Trips với kicker yếu là tay bắt bluff, không phải tay để xây pot.
 
 :::readnext[Đọc tiếp]
-/vi/blog/monotone-board-strategy | Thùng nut mà bảy trên mười lần vẫn check | /images/gto-srp-monotone-oop-en.webp
-/vi/blog/donk-bet-strategy | Flop mà donk bet là nước đúng — 9-8-7 | /images/gto-srp-middle-connected-oop-en.webp
+/vi/blog/monotone-board-strategy | Thùng nut mà bảy trên mười lần vẫn check | /images/gto-srp-monotone-oop-vi.webp
+/vi/blog/donk-bet-strategy | Flop mà donk bet là nước đúng — 9-8-7 | /images/gto-srp-middle-connected-oop-vi.webp
 :::
 
 ## Tự kiểm tra
 
 Mở [GTO poker solver miễn phí](/vi/solver), vào **Spot mẫu → Board có đôi → [⚡ Xem kết quả]**.
 
-Điều cần nhìn là **hàng 6♠6♥ duy nhất** trong bảng theo từng tay bài — tứ quý duy nhất board này cho phép, và với **359,7%** là mức equity realization cao nhất trong cả loạt bài (thứ hai là 88 của button trong [pot 3-bet trên board thấp](/vi/blog/3bet-pot-low-board) với **346,0%**; phía big blind, hạng nhì là 6♥6♣ trên [flop thấp rainbow](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") với **318,9%**). So nó với ba hàng 33 ngay bên dưới, bạn sẽ thấy phần đỉnh thật sự của một board có đôi chứa ít combo đến mức nào.
+Điều cần nhìn là **hàng 6♠6♥ duy nhất** trong bảng theo từng tay bài — tứ quý duy nhất board này cho phép, và với **359,7%** là mức equity realization cao nhất trong cả loạt bài (thứ hai là 88 của button trong [pot 3-bet trên board thấp](/vi/blog/3bet-pot-low-board) với **346,0%**; phía big blind, hạng nhì là 6♥6♣ trên [flop thấp rainbow](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-vi.webp") với **318,9%**). So nó với ba hàng 33 ngay bên dưới, bạn sẽ thấy phần đỉnh thật sự của một board có đôi chứa ít combo đến mức nào.
 
 Sau đó mở **Trainer GTO** ở thanh bên: nó chia cho bạn một tay theo trọng số range thật và cho thấy hành động của bạn tốn bao nhiêu big blind (**EV mất**). Miễn phí, không cần cài đặt, không cần tài khoản.
 

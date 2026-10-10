@@ -120,7 +120,8 @@ function extractContent(src) {
  * keep the source and all other locales unchanged. Includes the first endpoint
  * of percentage ranges, so the coverage warning still sees hidden values. */
 function normalizeNumericText(text, locale) {
-  if (!["pt", "id", "de", "tr", "fr"].includes(locale)) return text;
+  // VI (2026-10-10 · queue §2-AS H-2) — 앱 축어와 같은 소수 쉼표(«98,2%») · 천 단위 마침표(«1.326») = PT·DE와 같은 규칙.
+  if (!["pt", "id", "de", "tr", "fr", "vi"].includes(locale)) return text;
   // FR (2026-10-07 · fr 51편 헤드) — 천 단위 공백(«1 326»)을 먼저 붙이고 소수 쉼표 규칙을 같이 쓴다.
   //   «98,2 %»의 % 앞 공백은 has()·pctSet()의 \s*%가 이미 받는다(U+00A0·U+202F도 \s).
   if (locale === "fr") text = text.replace(/(?<![\d.,])\d{1,3}(?:[   ]\d{3})+(?!\d)/g, (m) => m.replace(/[   ]/g, ""));
@@ -392,6 +393,13 @@ function selftest() {
     ["DE percentage range keeps its coverage warning", () => {
       const de = normalizeNumericText("73,4–75,2%", "de");
       return hiddenRanges(de).length === 1 && pctSet(de).has("75.2");
+    }],
+    ["VI decimal commas, grouped thousands and readnext/%p exclusions match PT", () => {
+      const vi = normalizeNumericText("Check 98,2% · EQR 84,0% · 0,3%p\n:::readnext[Đọc tiếp]\n/vi/blog/x | 99,8%\n:::", "vi");
+      const values = pctSet(vi);
+      const grouped = normalizeNumericText("1.084,0%", "vi");
+      return values.has("98.2") && values.has("84.0") && !values.has("99.8") && !values.has("0.3") &&
+        has(grouped, "1084.0") && !has(grouped, "84.0");
     }],
     ["TR prefix percent + decimal comma normalize to the shared form", () => {
       const tr = normalizeNumericText("EQ %45,1 · %1.084,0 · %0,3p\n:::readnext\n/tr/blog/x | %99,8\n:::", "tr");

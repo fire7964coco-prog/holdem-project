@@ -58,7 +58,7 @@
 ## 4. 결과 화면 (srp-dry-ace · OOP 첫 액션)
 
 - 머리: «← Quay lại» · Pot **5,5 bb** · Stack **97,5 bb** · «Chỉ có chiến lược flop. Muốn xem tiếp turn và river? →» · **«Tự giải spot này»**
-- 플레이어 선택: «Người chơi:» **OOP (BB (bên call))** / **IP (BTN (bên open))** · 안내 «Đây là chiến lược của người hành động trước (OOP). Để xem đối thủ (IP), đổi “Người chơi” ở trên sang IP.»
+- 플레이어 선택: «Người chơi:» **OOP (BB (bên call))** / **IP (BTN (bên open))** · 그룹별(2026-10-10 라이브 13스팟 `capture-solver-spots --lang=vi` 추출 · queue §2-AS H-3): SRP 7 = 위와 같음 · **Pot 3-bet 3 = OOP (BB (bên 3-bet)) / IP (BTN (bên call))** · **Blind vs blind 3 = OOP (SB (bên open)) / IP (BB (bên call))** · 안내 «Đây là chiến lược của người hành động trước (OOP). Để xem đối thủ (IP), đổi “Người chơi” ở trên sang IP.»
 - 액션 카드(축어): **Bet 4,1bb (75% pot) 0,9% 3,9 combo · Bet 1,8bb (33% pot) 1,0% 4,5 combo · Check 98,2% 455,5 combo**(% 뒤붙임 · tr «(%33 pot)»과 다름)
 - 핸드 분류 머리 **«Tay bài»**: Xám 1,3% · Hai Đôi 3,9% · Top pair 20,7% · Second pair 5,2% · Đôi yếu 1,3% · Underpair 9,1% · K-high 17,2% · Chưa thành bài 41,4% · **«Draw»**: Gutshot 0,9% · Backdoor FD 27,8% · Không draw 71,3%
 - 표: **Tóm tắt** · Độ rộng thanh: Chuẩn hóa / Tuyệt đối / Đầy đủ · Hiển thị: **% hành động · EV hành động** · 열 **Tay bài · Chiến lược · Trọng số · EQ · EV (bb) · EQR** · 액션 열 B 4,1bb · B 1,8bb · Check · 요약 행 **Tất cả 464,0 · 45,1% · 2,09 · 84,0%** — EN 랜딩 수치(464.0 combos · EQ 45.1% · EV 2.09 · EQR 84.0% · Check 98.2% 455.5)와 일치
@@ -80,5 +80,6 @@
 |---|---|
 | 홈 · 사이드바 · Spot mẫu 13 · Hướng dẫn · Trainer 머리 | ✅ 라이브 innerText |
 | 결과 화면(srp-dry-ace OOP) | ✅ 라이브 innerText(액션 카드·분류·표 머리·요약 행) |
+| 결과 화면 13스팟 × OOP·IP(플레이어 라벨·액션·분류·요약 행) | ✅ 2026-10-10 라이브 `capture-solver-spots --lang=vi` 13/13 · 수치 de·hi 캡처와 26/26 일치 |
 | 트레이너 문제 화면 · Equity 탭 · Bảng preflop 탭 | ✗ 미추출(소스 vi 블록만 확인 · 랜딩이 인용하지 않는다) |
 | Samsung Internet 경고 문구 | ✗ 기기 실측 불가 → 랜딩 FAQ는 설명으로만 |

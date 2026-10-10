@@ -6,7 +6,7 @@ import type { Post } from "../posts";
  * 브리프: docs/vi-lanes/gto-brief.md ⑪ · 확정 카피 축어(Fable 1회 · Opus 측정).
  * 키워드: blind vs blind poker (태그) · 산문 «blind đối đầu blind (blind vs blind)» · «blind vs blind» 단독 헤드 금지(SERP 오염).
  * 한계: 트리에 33% 사이즈 하나뿐 · rake 미반영 · 플랍 첫 결정만 · «362,1»은 EN 축어(EN-먼저 미판정).
- * 이미지: vi 캡처 없음 → EN 경로(-en.webp) 그대로 (헤드 요청 = vi 캡처 후 일괄 교체).
+ * 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  */
 export const POST: Post = {
   slug: "blind-battle-cbet",
@@ -21,11 +21,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "⚔️",
-  image: "/images/gto-sb-king-mid-oop-en.webp",
+  image: "/images/gto-sb-king-mid-oop-vi.webp",
   imageAlt: "Solver GTO của HoldemMaster hiển thị range của small blind trên flop K-10-6 rainbow, phần lớn lưới tô màu cam cho lựa chọn bet",
   tags: ["blind vs blind poker", "blind đối đầu blind", "small blind open", "flop K-high", "equity realization", "ví dụ solver"],
   content: `
-Qua bảy pot raise đơn (single raised pot) trước đó trong loạt bài này, có một quy luật lặp đi lặp lại. **Ai hành động trước thì check.** Mức cao nhất mà người out of position (OOP — không có vị trí) từng bet là trên [board liền nhau 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") với 23,7%, còn sáu spot (tình huống ra quyết định) còn lại cao nhất chỉ 11,2%. Ngoại lệ duy nhất là pot 3-bet.
+Qua bảy pot raise đơn (single raised pot) trước đó trong loạt bài này, có một quy luật lặp đi lặp lại. **Ai hành động trước thì check.** Mức cao nhất mà người out of position (OOP — không có vị trí) từng bet là trên [board liền nhau 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp") với 23,7%, còn sáu spot (tình huống ra quyết định) còn lại cao nhất chỉ 11,2%. Ngoại lệ duy nhất là pot 3-bet.
 
 Đây không phải pot 3-bet. Đây là một ván bình thường: small blind (SB — mù nhỏ) open lên 3bb, big blind (BB — mù lớn) call (theo). Vậy mà **người hành động trước bet 67,4%.**
 
@@ -88,7 +88,7 @@ Màn hình hiển thị theo **big blind** — cú bet được ghi là "Bet 2bb
 
 ## Vì sao người không có vị trí lại bet trước ở đây?
 
-**Vì đây là chỗ ngồi mà người chủ động preflop cũng là người hành động trước ở flop.** ⚠ Trong loạt bài này, mọi trường hợp bet trước với tần suất áp đảo đều đến từ chỗ ngồi đó, nhưng chỗ ngồi không bảo đảm điều gì, và người call vẫn có thể bet trước một phần thời gian (23,7% ở ④). Cùng một cấu trúc cho ra **9,6%** [ở ⑫](/vi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") và **80,1%** [ở ⑬](/vi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp"). Chỗ ngồi mở cửa; board quyết định bạn bước vào bao xa.
+**Vì đây là chỗ ngồi mà người chủ động preflop cũng là người hành động trước ở flop.** ⚠ Trong loạt bài này, mọi trường hợp bet trước với tần suất áp đảo đều đến từ chỗ ngồi đó, nhưng chỗ ngồi không bảo đảm điều gì, và người call vẫn có thể bet trước một phần thời gian (23,7% ở ④). Cùng một cấu trúc cho ra **9,6%** [ở ⑫](/vi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-vi.webp") và **80,1%** [ở ⑬](/vi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-vi.webp"). Chỗ ngồi mở cửa; board quyết định bạn bước vào bao xa.
 
 Trong một ván bình thường, hai yếu tố này tách rời nhau. Khi button (BTN) open và big blind call, **người chủ động là button nhưng người hành động trước lại là big blind.** Chính điều đó tạo nên cấu trúc check rồi để đối thủ c-bet (cược tiếp tục), và các spot ① đến ⑦ đều có hình dạng như vậy.
 
@@ -116,7 +116,7 @@ Hai range ở đây có kích thước gần như bằng nhau: **538 combo cho S
 
 Trước một range rộng, bạn **không thể bet mọi tay bài chỉ với hy vọng đối thủ sẽ fold.** Vì vậy 32,6% được giữ lại thành check.
 
-Những tay check có nhiệm vụ riêng. **Tay quá yếu để bet** và **tay check để dụ đối thủ bet** đều nằm ở đó. Nếu đối thủ đọc cú check ấy là yếu và bắn, một cú [check-raise](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") đang chờ sẵn.
+Những tay check có nhiệm vụ riêng. **Tay quá yếu để bet** và **tay check để dụ đối thủ bet** đều nằm ở đó. Nếu đối thủ đọc cú check ấy là yếu và bắn, một cú [check-raise](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-vi.webp") đang chờ sẵn.
 
 :::note[⚠ Spot mẫu này được giải với một cỡ bet duy nhất — một phần ba pot — là lựa chọn duy nhất. Mở thêm một size lớn hơn trong cây thì chính con số 67,4% cũng có thể dịch chuyển. Hãy đọc nó là "nhỏ và rộng là đáp án *trong những điều kiện này*."]:::
 
@@ -124,7 +124,7 @@ Những tay check có nhiệm vụ riêng. **Tay quá yếu để bet** và **ta
 
 **Các nhóm bài mạnh nằm ở small blind; các tay chưa thành bài nằm ở big blind.**
 
-![Infographic thành phần range so sánh các nhóm bài của small blind và big blind trên board K-10-6](/images/gto-sb-king-mid-ranges-en.webp "K-10-6 blind đối đầu blind · thành phần theo từng nhóm — big blind có nhiều tay chưa thành bài hơn khoảng 10 điểm")
+![Infographic thành phần range so sánh các nhóm bài của small blind và big blind trên board K-10-6](/images/gto-sb-king-mid-ranges-vi.webp "K-10-6 blind đối đầu blind · thành phần theo từng nhóm — big blind có nhiều tay chưa thành bài hơn khoảng 10 điểm")
 
 | Nhóm | SB (OOP · bên open) | BB (IP · bên call) |
 |---|---|---|
@@ -196,8 +196,8 @@ Mức 96,1% của big blind là mặt còn lại của cùng câu chuyện. **C�
 - **Đừng đọc 32,6% check là yếu.** Các tay check-raise được trộn trong đó. Những chuẩn mực chung trong [chiến lược c-bet](/vi/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") đáng được kiểm tra lại ở chỗ ngồi này.
 
 :::readnext[Đọc tiếp]
-/vi/blog/3bet-pot-low-board | Ba combo trúng flop — mà vẫn bet 97,8% | /images/gto-3bp-low-oop-en.webp
-/vi/blog/blind-battle-connected-board | Cùng ghế, cùng stack — mà cú bet rơi từ 67% xuống 9,6% | /images/gto-sb-connected-oop-en.webp
+/vi/blog/3bet-pot-low-board | Ba combo trúng flop — mà vẫn bet 97,8% | /images/gto-3bp-low-oop-vi.webp
+/vi/blog/blind-battle-connected-board | Cùng ghế, cùng stack — mà cú bet rơi từ 67% xuống 9,6% | /images/gto-sb-connected-oop-vi.webp
 :::
 
 ## Tự kiểm tra

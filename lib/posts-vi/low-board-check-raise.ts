@@ -9,7 +9,7 @@ import type { Post } from "../posts";
  * 🔴 두 솔브를 섞지 마라: 사전 계산 Spot mẫu(root 96,8/3,2) vs 2026-08-20 별도 재솔브(check-raise 절 · root lead 2,0).
  * 현지 추가: 정의 H2 «Check-raise trong poker là gì?» + holdem-betting-actions 링크 1 · FAQ «Tỷ lệ check-raise bao nhiêu là hợp lý?» 1.
  * §0-0 정정: EN L220 «Nine combos each» → «mỗi bên chín combo».
- * 이미지 = EN 경로(-en.webp) · vi 캡처 생성 뒤 일괄 교체(헤드 요청).
+ * 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  */
 export const POST: Post = {
   slug: "low-board-check-raise",
@@ -24,13 +24,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "11 phút",
   emoji: "🌊",
-  image: "/images/gto-srp-low-rainbow-oop-en.webp",
+  image: "/images/gto-srp-low-rainbow-oop-vi.webp",
   imageAlt: "Kết quả solver HoldemMaster cho flop rainbow thấp 6♠5♥2♦: lưới 13x13 của big blind gần như phủ kín màu xanh check, chỉ có một dải cam mỏng là các cú lead",
   tags: ["check raise poker", "check raise là gì", "khi nào nên check-raise", "wet board poker", "flop rainbow thấp", "gutshot", "ví dụ solver"],
   content: `
 Flop là **6♠ 5♥ 2♦**. Ba lá thấp, ba chất khác nhau — tức một board rainbow (3 lá khác chất): không có flush draw (chờ thùng), và muốn có thùng (flush) thì phải cần cả hai lá còn lại.
 
-Trông nó giống đúng kiểu board mà big blind (BB — mù lớn) nên tấn công. Equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) của big blind ở đây là **48,3%** — cao thứ hai trong bảy spot (tình huống ra quyết định) của loạt bài này mà nó phòng thủ, hơn cả [flop A-high](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") với 45,1% và flop K-high với 46,3%.
+Trông nó giống đúng kiểu board mà big blind (BB — mù lớn) nên tấn công. Equity (phần pot kỳ vọng của bạn, tính cả khi chia pot) của big blind ở đây là **48,3%** — cao thứ hai trong bảy spot (tình huống ra quyết định) của loạt bài này mà nó phòng thủ, hơn cả [flop A-high](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp") với 45,1% và flop K-high với 46,3%.
 
 Vậy mà nó chỉ lead (donk bet — bet trước vào người đã raise preflop) **3,2%** số lần.
 
@@ -99,7 +99,7 @@ Board có equity thấp nhất (45,1%) lại lead nhiều hơn board broadway (4
 
 Giờ đặt ⑦ cạnh ④. Chênh lệch equity là **0,2 điểm phần trăm**. Chênh lệch lead là **3,2% so với 23,7%.**
 
-**Khác biệt nằm ở sảnh.** Trên [9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), big blind mang vào 24 combo sảnh đã thành — J-T, T-6 đồng chất và 6-5 đồng chất. Trên 6-5-2, tay bài duy nhất hoàn thành sảnh là **4-3**, lấp đầy ==2-3-4-5-6==. Để làm sảnh ở đầu bên kia, bạn cần 7, 8 và 9 — **ba lá, trong khi bạn chỉ cầm hai.**
+**Khác biệt nằm ở sảnh.** Trên [9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), big blind mang vào 24 combo sảnh đã thành — J-T, T-6 đồng chất và 6-5 đồng chất. Trên 6-5-2, tay bài duy nhất hoàn thành sảnh là **4-3**, lấp đầy ==2-3-4-5-6==. Để làm sảnh ở đầu bên kia, bạn cần 7, 8 và 9 — **ba lá, trong khi bạn chỉ cầm hai.**
 
 Mà 4-3 không nằm trong range nào cả. **Bảng phân loại của solver hoàn toàn không có hàng "Sảnh"**, và ô 43s, 43o bị tô xám trong cả hai ma trận — tay bài này không bao giờ đi tới spot này, dù đồng chất hay khác chất.
 
@@ -109,7 +109,7 @@ Mà 4-3 không nằm trong range nào cả. **Bảng phân loại của solver h
 
 **Big blind thắng ở các đôi và thua ở mọi thứ phía trên chúng.** Nó có nhiều top pair, nhiều second pair và nhiều đôi yếu hơn button; set và hai đôi (two pair) thì ngang nhau tuyệt đối; còn overpair (đôi tẩy cao hơn mọi lá trên board) của nó chỉ được khoảng một nửa của button. Gần ba phần tư của cả hai range không có đôi nào — chính điều đó khiến đây là cuộc đấu overcard (lá cao hơn board) chứ không phải cuộc đấu giá trị, và vì thế tay bài thắng cuối cùng thường là tay vẫn còn đang chờ bài để hoàn thành.
 
-![Thành phần range trên board rainbow thấp, big blind hơn ở các đôi còn button hơn ở overpair](/images/gto-srp-low-rainbow-ranges-en.webp "6♠5♥2♦ · thành phần range — big blind hơn ở các đôi, button hơn ở overpair")
+![Thành phần range trên board rainbow thấp, big blind hơn ở các đôi còn button hơn ở overpair](/images/gto-srp-low-rainbow-ranges-vi.webp "6♠5♥2♦ · thành phần range — big blind hơn ở các đôi, button hơn ở overpair")
 
 | Nhóm | BB (OOP — out of position, không có vị trí) | BTN (IP — in position, có vị trí) |
 |---|---|---|
@@ -235,8 +235,8 @@ Sự kết hợp đó — trần thấp và sàn rộng — tạo ra các con s�
 - **Đừng fold quá nhiều trước cú bet nhỏ.** Trước 1,8bb vào pot 5,5bb, solver giữ lại **80,5%** range, trên ngưỡng hòa vốn 75,3%. Fold K-high và đôi yếu trước một cú bet nhỏ là thói quen dễ bị khai thác nhất trên một board như thế này.
 
 :::readnext[Đọc tiếp]
-/vi/blog/paired-board-strategy | Bạn cầm nhiều trips hơn — mà vẫn check 97% | /images/gto-srp-paired-oop-en.webp
-/vi/blog/monotone-board-strategy | Thùng nut mà bảy trên mười lần vẫn check | /images/gto-srp-monotone-oop-en.webp
+/vi/blog/paired-board-strategy | Bạn cầm nhiều trips hơn — mà vẫn check 97% | /images/gto-srp-paired-oop-vi.webp
+/vi/blog/monotone-board-strategy | Thùng nut mà bảy trên mười lần vẫn check | /images/gto-srp-monotone-oop-vi.webp
 :::
 
 ## Tự kiểm tra

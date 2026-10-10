@@ -6,7 +6,7 @@ import type { Post } from "../posts";
  * 확정 카피 = docs/vi-lanes/gto-brief.md ⑬ (Fable 1회 · 변경 금지)
  * 키워드: trips poker · poker trips vs set(자동완성) · set trong poker — FAQ 1에 흡수. «set poker»·«bộ ba» 단독 금지.
  * 수치 출처 = EN 축어(2026-08-08 Spot mẫu · 2026-08-21 라이브 실측) · 구분자만 vi(천 단위 마침표 · 소수 쉼표).
- * 이미지 = EN 경로(-en.webp) — vi 캡처 생성 후 헤드가 일괄 교체.
+ * 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  * EN 결함 정정 반영(§0-0): L199 «more» = 비교급 · L248 «offsuit broadways» → Q-x·J-x 오프수트 · L250 «beats that card» → 핸드 · L274 trips 정의 고정문.
  */
 export const POST: Post = {
@@ -21,7 +21,7 @@ export const POST: Post = {
   masterUpdated: "2026-10-02",
   readTime: "10 phút",
   emoji: "🅰️",
-  image: "/images/gto-sb-paired-ace-oop-en.webp",
+  image: "/images/gto-sb-paired-ace-oop-vi.webp",
   imageAlt: "GTO solver HoldemMaster trên flop A-A-6, lưới bài của small blind gần như phủ kín màu cam của lựa chọn bet",
   keepImagesInBody: true,
   tags: [
@@ -32,11 +32,11 @@ export const POST: Post = {
     "ví dụ solver",
   ],
   content: `
-Người ta hay bảo bạn rằng trên board có đôi thì không ai bet. Ở [board có đôi 6-6-3](/vi/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-en.webp") trước đó trong loạt bài này, người hành động trước chỉ bet **3,0%**.
+Người ta hay bảo bạn rằng trên board có đôi thì không ai bet. Ở [board có đôi 6-6-3](/vi/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-vi.webp") trước đó trong loạt bài này, người hành động trước chỉ bet **3,0%**.
 
 Đây cũng là một board có đôi. A♠ A♥ 6♦. Và small blind (SB — mù nhỏ) bet **80,1%**.
 
-Điều kiện không đổi so với hai spot (tình huống ra quyết định) trước — pot 6bb, stack hiệu dụng 97bb, small blind là bên open. Chỉ một board trước đó, cũng từ chính ghế này, [nó chỉ bet 9,6%](/vi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp"). Spot này nằm ở đầu bên kia. Mọi con số dưới đây đều lấy từ [GTO poker solver miễn phí](/vi/solver) của HoldemMaster.
+Điều kiện không đổi so với hai spot (tình huống ra quyết định) trước — pot 6bb, stack hiệu dụng 97bb, small blind là bên open. Chỉ một board trước đó, cũng từ chính ghế này, [nó chỉ bet 9,6%](/vi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-vi.webp"). Spot này nằm ở đầu bên kia. Mọi con số dưới đây đều lấy từ [GTO poker solver miễn phí](/vi/solver) của HoldemMaster.
 
 
 :::stripe
@@ -119,7 +119,7 @@ Lá A là lá mà người tấn công preflop cầm nhiều hơn — ở spot n
 
 **88 combo (17,5%) cho small blind, 66 (13,1%) cho big blind.** Nhưng **cái bị thiếu** quan trọng hơn con số. (Solver gắn nhãn nhóm này là hàng «Xám» — chính là thứ người ở bàn gọi là trips (1 lá trên tay + board có đôi).)
 
-![Infographic thành phần range so sánh các nhóm tay bài của small blind và big blind trên board A-A-6](/images/gto-sb-paired-ace-ranges-en.webp "A-A-6 blind vs blind · thành phần theo từng nhóm — tay trượt là 39,8% so với 51,5%")
+![Infographic thành phần range so sánh các nhóm tay bài của small blind và big blind trên board A-A-6](/images/gto-sb-paired-ace-ranges-vi.webp "A-A-6 blind vs blind · thành phần theo từng nhóm — tay trượt là 39,8% so với 51,5%")
 
 | Nhóm | SB (OOP · bên open) | BB (IP — in position, có vị trí · bên call) |
 |---|---|---|
@@ -154,7 +154,7 @@ Pot là 6bb, nên phần của small blind là ==6 × 56,2% = 3,372bb== so với
 
 **Vì lợi thế ở đây *rộng* chứ không *sâu*.** Cú bet ba phần tư pot chỉ nhận 0,5%, vỏn vẹn 2,7 combo. Trên thực tế chỉ có một size.
 
-Các pot 3-bet thì ngược lại. Trên [board thấp 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp"), big blind dùng hai phần ba pot 97,8% số lần, vì range đó tách gần làm đôi thành **overpair (đôi tẩy cao hơn mọi lá trên board) hoặc A-high** — một hình dạng range phân cực (polarized). Một range bị kéo về hai cực thì cần size lớn.
+Các pot 3-bet thì ngược lại. Trên [board thấp 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-vi.webp"), big blind dùng hai phần ba pot 97,8% số lần, vì range đó tách gần làm đôi thành **overpair (đôi tẩy cao hơn mọi lá trên board) hoặc A-high** — một hình dạng range phân cực (polarized). Một range bị kéo về hai cực thì cần size lớn.
 
 Spot này không như vậy. Range của small blind trải **liên tục** — trips 17,5%, hai đôi 18,5%, K-high 22,3%, tay trượt 39,8%. Với hình dạng đó, đẩy cả range vào ở size nhỏ đáng giá hơn: 51,5% tay trượt của đối thủ là thứ một cú bet nhỏ tạo áp lực lên — một cú bluff 2bb vào pot 6bb chỉ cần 25% fold là hòa vốn — và bản thân cú bet lúc này chỉ mạo hiểm 2bb, dù 97bb phía sau vẫn có thể bị cuốn vào ở turn và river.
 
@@ -172,12 +172,12 @@ Lý do nằm ở **ai sẽ call bạn.** K-K tạo hai đôi (two pair) cùng đ
 
 - **Đừng biến "board có đôi thì check" thành một quy tắc.** Trên 6-6-3 là 3,0%, trên A-A-6 là 80,1%. Phép thử không phải là board có đôi hay không, và **cũng không phải bạn cầm bao nhiêu combo của hạng bài đó** — trên 6-6-3, big blind cầm lá 6 dày hơn (5,3% so với 4,0%) mà vẫn chỉ bet 3,0%. Phép thử là **range của bạn *xét tổng thể* có tốt hơn range của họ hay không.** Cú bet lên tới 80% ở đây vì phần đỉnh và phần còn lại nghiêng **cùng một hướng**.
 - **Khi hai lá A đã ra, đừng mặc định lá A của bạn vô giá trị.** Nếu đối thủ 3-bet A-K và A-Q, cuộc đấu kicker đã nghiêng về phía bạn. **Tuy nhiên điều đó dựa trên việc họ 3-bet** — trước một bàn chỉ toàn call bằng A-K và A-Q thì tiền đề sụp đổ, nên với trips kicker yếu, hãy bet nhưng tránh lao vào một cuộc chiến raise (tố) lớn.
-- **Size nhỏ, tần suất cao.** Khi range trải liên tục, đẩy rộng ở mức một phần ba pot là tốt hơn. Size lớn là công cụ cho [một range tách thành mạnh và yếu](/vi/blog/3bet-pot-low-board) — dù ngay trong các pot 3-bet, lý do lại khác trên [một board dày draw](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp"), nơi cú bet lớn là để giữ đối thủ ở mức giá tệ. **Cũng lưu ý 80,1% là kết quả tính heads-up** — khi còn hơn một đối thủ trong ván, hãy cắt mạnh các cú bet bằng tay trượt và thu hẹp về trips và hai đôi.
+- **Size nhỏ, tần suất cao.** Khi range trải liên tục, đẩy rộng ở mức một phần ba pot là tốt hơn. Size lớn là công cụ cho [một range tách thành mạnh và yếu](/vi/blog/3bet-pot-low-board) — dù ngay trong các pot 3-bet, lý do lại khác trên [một board dày draw](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-vi.webp"), nơi cú bet lớn là để giữ đối thủ ở mức giá tệ. **Cũng lưu ý 80,1% là kết quả tính heads-up** — khi còn hơn một đối thủ trong ván, hãy cắt mạnh các cú bet bằng tay trượt và thu hẹp về trips và hai đôi.
 - **Đừng bet K-K và Q-Q "vì chúng mạnh".** Trên board này, chúng khó được tay nào yếu hơn call. Check để bắt bluff của đối thủ thì tốt hơn. ⚠ Đó là **một nhận định rút ra từ thành phần range**, không phải giá trị mà loạt bài này đã đo — Spot mẫu chỉ hiện tần suất của hành động đầu tiên trên flop, và không có node nào sau cú check được giải cho spot này (node check-rồi-bet duy nhất trong loạt bài là lần giải riêng trên [board thấp rainbow](/vi/blog/low-board-check-raise)). **Nó cũng giả định đối thủ có trộn bluff** — trước người gần như không bao giờ bluff, một cú bet đến sau khi bạn check thường là lá A, và fold (bỏ bài) tốt hơn là cố bám.
 
 :::readnext[Đọc tiếp]
-/vi/blog/blind-battle-connected-board | Cùng ghế, cùng stack — mà cú bet rơi từ 67% xuống 9,6% | /images/gto-sb-connected-oop-en.webp
-/vi/blog/a-high-board-cbet | Flop mà big blind check 98% số lần | /images/gto-srp-dry-ace-oop-en.webp
+/vi/blog/blind-battle-connected-board | Cùng ghế, cùng stack — mà cú bet rơi từ 67% xuống 9,6% | /images/gto-sb-connected-oop-vi.webp
+/vi/blog/a-high-board-cbet | Flop mà big blind check 98% số lần | /images/gto-srp-dry-ace-oop-vi.webp
 :::
 
 ## Tự kiểm tra

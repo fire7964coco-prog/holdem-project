@@ -5,7 +5,7 @@ import type { Post } from "../posts";
  * 마스터 = lib/posts-en/blind-battle-connected-board.ts (EN updated 2026-10-02 · 기준 해시 b57cb658)
  * 확정 카피 = docs/vi-lanes/gto-brief.md ⑫ (Fable 1회 · Opus 측정) — B·C 변경 금지
  * 키워드: board texture poker · connected board poker · wet board poker(산문) — «blind vs blind» 단독 헤드 금지
- * 수치 = EN 축어(구분자만 vi) · 이미지 = EN 경로(-en.webp · vi 캡처 생성 후 헤드가 교체)
+ * 수치 = EN 축어(구분자만 vi) · 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  * 한계: 첫 플랍 결정만 · 사이즈 33% 하나 · rake 미반영 · 체크 이후 노드 없음
  * 🔴 드로우 표 백도어 행을 빼지 마라(여섯 줄 상호배타) · 9,6%의 이유를 팟·스택·SPR(상수)에서 찾지 마라
  */
@@ -22,7 +22,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "🪜",
-  image: "/images/gto-sb-connected-oop-en.webp",
+  image: "/images/gto-sb-connected-oop-vi.webp",
   imageAlt: "Solver HoldemMaster trên flop 7-6-5 hai chất, lưới bài của small blind gần như phủ kín màu xanh lá của check",
   tags: ["board texture poker", "connected board poker", "flop thấp liền nhau", "chiến lược overpair", "ví dụ solver"],
   content: `
@@ -111,7 +111,7 @@ Bài trước khép lại bằng câu *"trên những board hợp với người
 
 **Vì range call của big blind (BB — mù lớn) thêm vào những tay mà small blind không bao giờ open nhưng lại trúng 7-6-5 — trong đó có T7o, 97o, 87o, 76o, 74s và 43s — chồng lên trên phần sảnh (straight), set và hai đôi (two pair) mà cả hai range cùng có.** Năm hàng đầu trong bảng dưới là các nhóm thực sự trúng board này, và ngoài overpair (đôi tẩy cao hơn mọi lá trên board), small blind không dẫn ở nhóm nào.
 
-![Đồ họa so sánh thành phần range theo nhóm bài của small blind và big blind trên board 7-6-5](/images/gto-sb-connected-ranges-en.webp "7-6-5 blind đối đầu blind · thành phần theo nhóm — top pair 6,8% so với 11,2%, nghiêng về big blind")
+![Đồ họa so sánh thành phần range theo nhóm bài của small blind và big blind trên board 7-6-5](/images/gto-sb-connected-ranges-vi.webp "7-6-5 blind đối đầu blind · thành phần theo nhóm — top pair 6,8% so với 11,2%, nghiêng về big blind")
 
 | Nhóm | SB (OOP · bên open) | BB (IP — in position, có vị trí · bên call) |
 |---|---|---|
@@ -189,20 +189,20 @@ Ba loại ô có vệt dày hơn thấy rõ. (Tần suất dưới đây là tru
 - **A-7 đồng chất và K-7 đồng chất** — top pair với lá 7. Chúng được chọn không phải vì mạnh mà vì **value mỏng đi kèm blocker A hoặc K** (làm giảm số combo A-high hoặc K-high trong range đối thủ). Top pair trên board này thực ra đang bị dẫn, 39 combo so với 60.
 - **K-4 đồng chất và Q-4 đồng chất** — một lá 4 đồng chất. Thêm lá 4 vào 7-6-5, bạn có ==4-5-6-7==, sảnh hở hai đầu hoàn thành với lá 3 hoặc 8. Tính trung bình nhóm thì Q-4s là 30,9% và K-4s là 27,1%, nhưng **tính từng combo thì Q♠4♠ và Q♥4♥ đạt 54,7%, cao nhất trong toàn bộ spot.**
 
-9,6% được dựng bằng cách trộn một chút value với vài draw. Đôi 8 đứng đầu bảng xếp hạng theo nhóm vì **một tay làm cả hai việc cùng lúc.** ⚠ Nhưng đó không phải quy tắc chung — **không combo đơn lẻ nào trong số các combo có tần suất cao nhất làm cả hai việc** (Q♥4♥ và Q♠4♠ ở 54,7% là draw thuần, A♣7♣ ở 54,4% là value mỏng có blocker, và kế tiếp là 10♣9♣ ở 52,2%, một gutshot). Combo tốt nhất của tay làm hai việc, 8♦8♣, lại *thấp hơn*, ở 47,1%. **9,6% không được chọn theo một tiêu chí duy nhất nào.** **Và check 90,4% không có nghĩa là small blind bỏ cuộc trên board này** — mà là với value mỏng như A♣7♣ và K♣7♣, bet và check cho kết quả chênh nhau trong vòng 0,03bb, nên check gần như không mất gì. ⚠ Tuy vậy, đừng tìm lý do ở pot 6bb, stack 97bb hay SPR 16,2 — ba thứ đó là **những hằng số y hệt** trên [⑪ K-10-6](/vi/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-en.webp") và trên [board A-A-6](/vi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp") ở phần sau của loạt bài, nơi cùng small blind đó bet 67,4% và 80,1%. Thứ tạo ra 9,6% không phải stack; mà là **ba lá trên board**.
+9,6% được dựng bằng cách trộn một chút value với vài draw. Đôi 8 đứng đầu bảng xếp hạng theo nhóm vì **một tay làm cả hai việc cùng lúc.** ⚠ Nhưng đó không phải quy tắc chung — **không combo đơn lẻ nào trong số các combo có tần suất cao nhất làm cả hai việc** (Q♥4♥ và Q♠4♠ ở 54,7% là draw thuần, A♣7♣ ở 54,4% là value mỏng có blocker, và kế tiếp là 10♣9♣ ở 52,2%, một gutshot). Combo tốt nhất của tay làm hai việc, 8♦8♣, lại *thấp hơn*, ở 47,1%. **9,6% không được chọn theo một tiêu chí duy nhất nào.** **Và check 90,4% không có nghĩa là small blind bỏ cuộc trên board này** — mà là với value mỏng như A♣7♣ và K♣7♣, bet và check cho kết quả chênh nhau trong vòng 0,03bb, nên check gần như không mất gì. ⚠ Tuy vậy, đừng tìm lý do ở pot 6bb, stack 97bb hay SPR 16,2 — ba thứ đó là **những hằng số y hệt** trên [⑪ K-10-6](/vi/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-vi.webp") và trên [board A-A-6](/vi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-vi.webp") ở phần sau của loạt bài, nơi cùng small blind đó bet 67,4% và 80,1%. Thứ tạo ra 9,6% không phải stack; mà là **ba lá trên board**.
 
 :::note[⚠ Spot mẫu này được giải với một size bet duy nhất — một phần ba pot — làm lựa chọn duy nhất. Mở thêm một size lớn hơn trong cây thì con số 9,6% có thể thay đổi. Hãy đọc nó là "trong điều kiện này gần như không có gì đáng bet, kể cả bet nhỏ."]:::
 
 ## Ra bàn thật thì chơi khác gì?
 
 - **Đừng biến "blind đối đầu blind thì bet" thành quy tắc.** 67,4% của spot trước và 9,6% ở đây bị tách ra bởi board, không phải bởi ghế. Dù bạn open từ small blind, một khi flop ra thấp và liền nhau — 5, 6, 7, 8 — thì thế chủ động trong ván đó đã sang phía bên kia bàn.
-- **Đừng coi overpair là lý do để xây pot lớn.** 42 combo overpair của small blind gấp ba lần rưỡi của big blind, nhưng trên một board mà đối thủ có 42 combo đang thắng sẵn, đây không phải tay để bet liên tiếp qua hai hay ba vòng cược. Điều đó không phản đối một cú bet nhỏ đơn lẻ — vấn đề là **đừng coi nó là tay để đẩy hết stack**. ⚠ Cũng không có nghĩa là "raise (tố) đến là fold (bỏ bài) ngay". Range đối thủ có 24,9% sảnh hở hai đầu, 23,8% gutshot và 3,7% draw kép, nên một cú raise ở flop không thể toàn là value, và tự động fold overpair trước cú raise của một đối thủ nhiều draw tự nó đã là một thói quen dễ bị khai thác. **Không muốn đẩy hết stack và fold là hai chuyện khác nhau.** Và node bet-rồi-bị-raise không có trong lần giải này, nên không có tần suất nào được đưa ra từ đó. Loạt bài này cứ đi đến cùng một kết luận: [board liền nhau bào mòn lợi thế của người raise preflop](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp").
+- **Đừng coi overpair là lý do để xây pot lớn.** 42 combo overpair của small blind gấp ba lần rưỡi của big blind, nhưng trên một board mà đối thủ có 42 combo đang thắng sẵn, đây không phải tay để bet liên tiếp qua hai hay ba vòng cược. Điều đó không phản đối một cú bet nhỏ đơn lẻ — vấn đề là **đừng coi nó là tay để đẩy hết stack**. ⚠ Cũng không có nghĩa là "raise (tố) đến là fold (bỏ bài) ngay". Range đối thủ có 24,9% sảnh hở hai đầu, 23,8% gutshot và 3,7% draw kép, nên một cú raise ở flop không thể toàn là value, và tự động fold overpair trước cú raise của một đối thủ nhiều draw tự nó đã là một thói quen dễ bị khai thác. **Không muốn đẩy hết stack và fold là hai chuyện khác nhau.** Và node bet-rồi-bị-raise không có trong lần giải này, nên không có tần suất nào được đưa ra từ đó. Loạt bài này cứ đi đến cùng một kết luận: [board liền nhau bào mòn lợi thế của người raise preflop](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp").
 - **Đừng nhầm A-high là sức mạnh.** Một phần tư range của small blind là A-high, và trên board này phần lớn chỉ có thể lên đôi (A4 và A8 có thêm sảnh hở hai đầu, còn các tay A♦x♦ có flush draw). Draw của đối thủ, khi trúng, phần lớn là sảnh — cái khác nhau không phải là cơ hội cải thiện mà là **sự cải thiện đó đáng giá bao nhiêu**. Con số equity 49,6% là kết quả.
-- **Quyết định trước sẽ làm gì sau khi check.** Đã đưa 90,4% vào check, bạn call (theo) gì và [check-raise](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") gì trước cú bet của đối thủ mới là bài toán thật tiếp theo. ⚠ **Câu trả lời đó không có trong lần tính này** — Spot mẫu chỉ giải **hành động đầu tiên ở flop**, nên các node sau một lần check (tần suất bet của big blind, check-raise của small blind) đơn giản là không tồn tại. Nếu bạn muốn một spot mà check-raise thực sự được giải, board thấp rainbow là spot duy nhất trong loạt bài có tần suất được giải lại — **dù ghế khác** (ở đó big blind là bên call đối đầu button).
+- **Quyết định trước sẽ làm gì sau khi check.** Đã đưa 90,4% vào check, bạn call (theo) gì và [check-raise](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-vi.webp") gì trước cú bet của đối thủ mới là bài toán thật tiếp theo. ⚠ **Câu trả lời đó không có trong lần tính này** — Spot mẫu chỉ giải **hành động đầu tiên ở flop**, nên các node sau một lần check (tần suất bet của big blind, check-raise của small blind) đơn giản là không tồn tại. Nếu bạn muốn một spot mà check-raise thực sự được giải, board thấp rainbow là spot duy nhất trong loạt bài có tần suất được giải lại — **dù ghế khác** (ở đó big blind là bên call đối đầu button).
 
 :::readnext[Đọc tiếp]
-/vi/blog/blind-battle-cbet | Người không có vị trí lại bet trước — 67,4% số lần | /images/gto-sb-king-mid-oop-en.webp
-/vi/blog/ace-paired-board-strategy | Hai lá A trên flop và cú bet vọt lên 80% | /images/gto-sb-paired-ace-oop-en.webp
+/vi/blog/blind-battle-cbet | Người không có vị trí lại bet trước — 67,4% số lần | /images/gto-sb-king-mid-oop-vi.webp
+/vi/blog/ace-paired-board-strategy | Hai lá A trên flop và cú bet vọt lên 80% | /images/gto-sb-paired-ace-oop-vi.webp
 :::
 
 ## Tự kiểm tra

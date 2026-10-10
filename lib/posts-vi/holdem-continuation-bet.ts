@@ -61,7 +61,7 @@ Nếu bạn học poker trước thời solver, bạn được bảo c-bet kho�
 
 Khái niệm nền là ==lợi thế range (range advantage)==: range tổng thể của ai mạnh hơn trên flop cụ thể này. Là người raise preflop, bạn cầm nhiều bài lớn và overpair (đôi tẩy cao hơn mọi lá trên board) hơn, nên **board cao, khô thuộc về bạn** — còn board đầy bài trung liên kết thuộc về người đã call. Nắm vững một ý đó và bạn đã đi trước mọi người chơi "cứ c-bet" ở bàn.
 
-Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm vị trí lên và hiệu ứng trở nên cực đoan. Trên A-7-2 rainbow, solver cho người call check 98,2% range của mình, kể cả top pair (đôi cao nhất) — range của họ chỉ có 45,1% equity (phần pot kỳ vọng, tính cả khi chia pot) so với 54,9%, vậy mà việc không có vị trí biến khoảng cách khiêm tốn đó thành một cú check gần như toàn bộ. Phân tích đầy đủ nằm trong [top pair mà vẫn check](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm vị trí lên và hiệu ứng trở nên cực đoan. Trên A-7-2 rainbow, solver cho người call check 98,2% range của mình, kể cả top pair (đôi cao nhất) — range của họ chỉ có 45,1% equity (phần pot kỳ vọng, tính cả khi chia pot) so với 54,9%, vậy mà việc không có vị trí biến khoảng cách khiêm tốn đó thành một cú check gần như toàn bộ. Phân tích đầy đủ nằm trong [top pair mà vẫn check](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp").
 
 ---
 
@@ -125,7 +125,7 @@ Sizing đi thẳng từ kết cấu board. Hai nấc phủ gần như mọi th�
 
 Ở **giải đấu**, nghiêng nhỏ hơn một chút: cỡ nhỏ vẫn là một phần ba, nhưng cỡ lớn thường là **nửa pot** hơn là hai phần ba, vì stack của bạn quý giá — ở freezeout bạn không thể nạp lại, và ngay cả re-entry cũng tốn một buy-in mới. Dù chọn gì, hãy gắn size với board, không phải với thói quen.
 
-Muốn thấy nấc "lớn trên board ướt" thực sự đi xa đến đâu? Một solver được cho hai cỡ cược trên Q♥10♥7♠ trong pot 3-bet (re-raise, tố lại) đặt [98,4% range của mình vào cú bet hai phần ba](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — và lý do là một cái giá bạn có thể tính ra, không phải cảm giác.
+Muốn thấy nấc "lớn trên board ướt" thực sự đi xa đến đâu? Một solver được cho hai cỡ cược trên Q♥10♥7♠ trong pot 3-bet (re-raise, tố lại) đặt [98,4% range của mình vào cú bet hai phần ba](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-vi.webp") — và lý do là một cái giá bạn có thể tính ra, không phải cảm giác.
 
 ---
 

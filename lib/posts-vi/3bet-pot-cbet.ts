@@ -20,11 +20,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "12 phút",
   emoji: "🔥",
-  image: "/images/gto-3bp-ace-king-oop-en.webp",
+  image: "/images/gto-3bp-ace-king-oop-vi.webp",
   imageAlt: "Kết quả solver HoldemMaster cho pot 3-bet trên flop A-high: toàn bộ lưới 13x13 của big blind tô màu bet, ô check hiện 0,0%",
   tags: ["spr poker", "spr poker là gì", "spr trong poker là gì", "effective stack poker", "pot 3-bet", "ví dụ solver"],
   content: `
-Ở bảy spot (tình huống ra quyết định) trước bài này, câu trả lời của big blind (BB — mù lớn) gần như lúc nào cũng là check. Ngay cả trên [flop 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), nơi việc lead quan trọng nhất, nó cũng chỉ bet 23,7% số lần. Ở mọi spot còn lại, nó check từ 88,8% đến 99,9%.
+Ở bảy spot (tình huống ra quyết định) trước bài này, câu trả lời của big blind (BB — mù lớn) gần như lúc nào cũng là check. Ngay cả trên [flop 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), nơi việc lead quan trọng nhất, nó cũng chỉ bet 23,7% số lần. Ở mọi spot còn lại, nó check từ 88,8% đến 99,9%.
 
 Ở đây nó làm điều ngược lại: **big blind bet toàn bộ range** — cả 63 combo (tổ hợp bài), mỗi combo bet ít nhất 99,9% số lần.
 
@@ -90,13 +90,13 @@ Một con số 0,0% không có nghĩa là check bị cấm. Nó có nghĩa là *
 
 (Trên màn hình, big blind hoàn toàn không có hàng "Chưa thành bài" — nhóm nào ở 0% thì không được vẽ ra.)
 
-Hãy nhìn hàng trên cùng. **Có ba tay tạo set trên A-K-2 — AA, KK và 22 — và button chỉ giữ tay cuối cùng.** (Bảng của solver gắn nhãn hàng đó là *Xám*. Trên một board không có đôi, đôi tẩy trùng với một lá trên board là **set** — sự phân biệt này được trình bày ở [spot board có đôi](/vi/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-en.webp").) Button đã 4-bet pocket A và pocket K từ trước flop, nên số combo set của nó là ba, so với sáu của big blind.
+Hãy nhìn hàng trên cùng. **Có ba tay tạo set trên A-K-2 — AA, KK và 22 — và button chỉ giữ tay cuối cùng.** (Bảng của solver gắn nhãn hàng đó là *Xám*. Trên một board không có đôi, đôi tẩy trùng với một lá trên board là **set** — sự phân biệt này được trình bày ở [spot board có đôi](/vi/blog/paired-board-strategy "thumb:/images/gto-srp-paired-oop-vi.webp").) Button đã 4-bet pocket A và pocket K từ trước flop, nên số combo set của nó là ba, so với sáu của big blind.
 
 Toàn bộ spot nằm ở đó. Khi đối thủ gần như không thể có tay bài tốt nhất, bạn có thể bet bằng cả những phần chẳng mạnh chút nào trong range của mình — và 38,1% range này là đôi tẩy *thấp hơn* lá K.
 
-**"Chưa thành bài: 0,0%" không phải là lý do, dù rất dễ nghĩ như vậy.** Cùng range 3-bet đó trên một board thấp nói điều ngược lại: trên [flop 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") ở phần sau của loạt bài này, 48,2% range của big blind là A-high không có đôi nào — vậy mà nó vẫn chỉ check **2,0%**. Đi từ 0% lên 48% tay không có đôi chỉ dịch tần suất check đi hai điểm. Thứ làm cú check xuất hiện không phải là bạn cầm bao nhiêu tay không có đôi; mà là board có quay lưng với bên 3-bet hay không.
+**"Chưa thành bài: 0,0%" không phải là lý do, dù rất dễ nghĩ như vậy.** Cùng range 3-bet đó trên một board thấp nói điều ngược lại: trên [flop 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-vi.webp") ở phần sau của loạt bài này, 48,2% range của big blind là A-high không có đôi nào — vậy mà nó vẫn chỉ check **2,0%**. Đi từ 0% lên 48% tay không có đôi chỉ dịch tần suất check đi hai điểm. Thứ làm cú check xuất hiện không phải là bạn cầm bao nhiêu tay không có đôi; mà là board có quay lưng với bên 3-bet hay không.
 
-:::note[⚠ Đây là hình ảnh phản chiếu của [flop A-high trong pot raise đơn](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). Ở đó big blind mới là bên bị **capped** (range bị chặn trần) — không có AA, AK hay AQ, vì nó đã 3-bet những tay đó — và nó check 98,2%. Cùng một kết cấu A-high, ghế ngược nhau: ai 3-bet thì người đó giữ phần đỉnh.]:::
+:::note[⚠ Đây là hình ảnh phản chiếu của [flop A-high trong pot raise đơn](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp"). Ở đó big blind mới là bên bị **capped** (range bị chặn trần) — không có AA, AK hay AQ, vì nó đã 3-bet những tay đó — và nó check 98,2%. Cùng một kết cấu A-high, ghế ngược nhau: ai 3-bet thì người đó giữ phần đỉnh.]:::
 
 ## SPR trong poker là gì?
 
@@ -133,7 +133,7 @@ Dấu hiệu lộ ra là **số combo không phải số nguyên**: 26,4 bet l�
 
 **Gần một nửa range call của nó — 46,2% — là đôi tẩy không chứa A cũng không chứa K** — nên nó đi thẳng vào một board có cả hai lá đó.
 
-![Thành phần range trên pot 3-bet flop A-high: big blind giữ mọi combo set, còn range của button dồn cục ở các đôi tầm trung](/images/gto-3bp-ace-king-ranges-en.webp "Pot 3-bet A-K-2 · big blind giữ phần đỉnh của board, còn range của button dồn vào khúc giữa")
+![Thành phần range trên pot 3-bet flop A-high: big blind giữ mọi combo set, còn range của button dồn cục ở các đôi tầm trung](/images/gto-3bp-ace-king-ranges-vi.webp "Pot 3-bet A-K-2 · big blind giữ phần đỉnh của board, còn range của button dồn vào khúc giữa")
 
 Underpair (đôi tẩy thấp hơn lá cao nhất trên board) chiếm 46,2%, tức 60 combo: từ QQ xuống 33, mười đôi, mỗi đôi sáu combo. Trên kết cấu này chúng không thể call cả flop lẫn turn.
 
@@ -177,8 +177,8 @@ Mức 78,7% của button không phải bằng chứng riêng cho điều đó �
 - **Đừng mang "check 0%" sang mọi pot 3-bet.** Thứ thay đổi nó là board nhiều hơn là range: cùng range 3-bet trên [8-5-2](/vi/blog/3bet-pot-low-board) check 2,0%, và trên một board quay lưng với bên 3-bet thì cú check xuất hiện thật sự. **"Một lá A và một lá K cùng lúc" là thứ tạo ra con số không này trong ví dụ này — không phải điều kiện mà mọi pot 3-bet đều phải đáp ứng.** Cách xây range 3-bet ngay từ đầu nằm trong [chiến thuật 3-bet](/vi/blog/holdem-3bet).
 
 :::readnext[Đọc tiếp]
-/vi/blog/low-board-check-raise | Cả hai range đều không có sảnh | /images/gto-srp-low-rainbow-oop-en.webp
-/vi/blog/paired-board-strategy | Bạn cầm nhiều trips hơn — mà vẫn check 97% | /images/gto-srp-paired-oop-en.webp
+/vi/blog/low-board-check-raise | Cả hai range đều không có sảnh | /images/gto-srp-low-rainbow-oop-vi.webp
+/vi/blog/paired-board-strategy | Bạn cầm nhiều trips hơn — mà vẫn check 97% | /images/gto-srp-paired-oop-vi.webp
 :::
 
 ## Tự kiểm tra
@@ -209,7 +209,7 @@ A. Range call của ví dụ này không chứa chúng — phần lớn AA và K
 
 **Q. Vì sao size nhỏ được dùng nhiều hơn size lớn?**
 
-A. Vì hình dạng của range — cả 63 combo đều từ một đôi trở lên, nên phần đáy đã biến mất và range không bao giờ tách thành kiểu "nut hoặc không có gì", và một range như vậy thì bet nhỏ. **Không phải vì stack nông:** [spot Q-10-7](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") có cùng SPR 4,0 và dùng size lớn 98,4% số lần.
+A. Vì hình dạng của range — cả 63 combo đều từ một đôi trở lên, nên phần đáy đã biến mất và range không bao giờ tách thành kiểu "nut hoặc không có gì", và một range như vậy thì bet nhỏ. **Không phải vì stack nông:** [spot Q-10-7](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-vi.webp") có cùng SPR 4,0 và dùng size lớn 98,4% số lần.
 
 **Q. Những con số này có đúng ở stake tôi đang chơi không?**
 

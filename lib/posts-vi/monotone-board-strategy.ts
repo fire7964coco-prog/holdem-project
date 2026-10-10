@@ -20,7 +20,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "♠️",
-  image: "/images/gto-srp-monotone-oop-en.webp",
+  image: "/images/gto-srp-monotone-oop-vi.webp",
   imageAlt: "Kết quả solver HoldemMaster trên flop toàn bích: lưới bài của big blind phần lớn màu xanh check, xen vài cú bet nhỏ",
   tags: ["monotone flop", "monotone board poker", "cách chơi flop monotone", "thùng nut", "bet sizing", "reverse implied odds", "ví dụ solver"],
   content: `
@@ -57,7 +57,7 @@ Kết quả | Bet lớn 3,2% — sizing sụp xuống
 
 ## Big blind chơi flop monotone thế nào?
 
-**Check 88,8%, lead 11,2%.** Mức lead này thấp hơn trên [board liền nhau 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") (23,7%), nhưng cao hơn hẳn các flop khô, nơi nó chỉ là 1,9% trên A-7-2 và 0,2% trên K-8-3. Đây là donk bet (lead — bet trước vào người đã raise preflop) của big blind, không phải c-bet (cược tiếp tục).
+**Check 88,8%, lead 11,2%.** Mức lead này thấp hơn trên [board liền nhau 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp") (23,7%), nhưng cao hơn hẳn các flop khô, nơi nó chỉ là 1,9% trên A-7-2 và 0,2% trên K-8-3. Đây là donk bet (lead — bet trước vào người đã raise preflop) của big blind, không phải c-bet (cược tiếp tục).
 
 | Hành động đầu tiên của BB | Tần suất | Combo |
 |---|---|---|
@@ -125,7 +125,7 @@ Equity gần như không nhúc nhích — 94% so với 97,7% — nhưng EQR rơi
 
 **Big blind — 7,1% so với 5,7%.** Nhưng với *draw* thùng thì ngược lại.
 
-![Infographic so sánh thành phần range của big blind và button theo từng nhóm tay trên board toàn bích](/images/gto-srp-monotone-ranges-en.webp "Q♠9♠2♠ · chia theo nhóm tay — thùng đã thành nghiêng về big blind, overpair và A-high nghiêng về button")
+![Infographic so sánh thành phần range của big blind và button theo từng nhóm tay trên board toàn bích](/images/gto-srp-monotone-ranges-vi.webp "Q♠9♠2♠ · chia theo nhóm tay — thùng đã thành nghiêng về big blind, overpair và A-high nghiêng về button")
 
 | Nhóm | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -173,8 +173,8 @@ Khoảng cách 18,4 điểm là nhỏ thứ hai **trong bảy pot raise đơn (s
 - **Gặp đối thủ không bao giờ fold một đôi thì thôi gài bẫy.** Mức check 69,9% giả định người kia sẽ bet khi được check tới; nếu họ chỉ biết call, hãy bet các tay thùng và lấy tiền.
 
 :::readnext[Đọc tiếp]
-/vi/blog/donk-bet-strategy | Flop mà donk bet là nước đúng — 9-8-7 | /images/gto-srp-middle-connected-oop-en.webp
-/vi/blog/broadway-board-strategy | Hai phần ba range có draw — mà vẫn check | /images/gto-srp-broadway-oop-en.webp
+/vi/blog/donk-bet-strategy | Flop mà donk bet là nước đúng — 9-8-7 | /images/gto-srp-middle-connected-oop-vi.webp
+/vi/blog/broadway-board-strategy | Hai phần ba range có draw — mà vẫn check | /images/gto-srp-broadway-oop-vi.webp
 :::
 
 ## Tự kiểm tra

@@ -4,7 +4,7 @@ import type { Post } from "../posts";
  * GTO 솔버 스팟 해설 시리즈 ⑩ 베트남어판 — 8♦5♣2♠ 3벳팟 (BB 3벳터 vs BTN 콜러)
  * 출처 = EN 마스터 lib/posts-en/3bet-pot-low-board.ts (기준 해시 b57cb658 · EN updated 2026-10-02) 축어 · 수치 구분자만 vi.
  * 키워드 = polarized range (10) · 3bet pot (10) — docs/vi-lanes/gto-brief.md ⑩ (L-G 축어 · 재조사 0).
- * 알려진 한계: 이미지는 EN 캡처(-en.webp) 그대로 — vi 캡처 생성 후 교체(헤드 요청).
+ * 알려진 한계: 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  * 🔴 드로우 3행 상호배타 · 58,3% missed ≠ fold · Set/Trips 행은 852에서 set만 · EQR ≠ 팟 점유율(6,1điểm).
  */
 export const POST: Post = {
@@ -20,7 +20,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "🎲",
-  image: "/images/gto-3bp-low-oop-en.webp",
+  image: "/images/gto-3bp-low-oop-vi.webp",
   imageAlt: "Kết quả GTO solver của HoldemMaster cho flop rainbow 8-5-2 trong pot 3-bet, lưới bài của big blind gần như phủ kín màu của cỡ bet lớn",
   tags: ["polarized range", "range phân cực", "dry board poker", "pot 3-bet", "chiến lược overpair", "ví dụ solver"],
   content: `
@@ -43,7 +43,7 @@ Kết quả | Hai phần ba pot 97,8% — ba combo có đôi với board này
 
 ## Những con số này đến từ điều kiện nào?
 
-Cùng thiết lập pot 3-bet như các spot (tình huống ra quyết định) [A-K-2](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") và [Q-10-7](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp"). Chỉ có board thay đổi.
+Cùng thiết lập pot 3-bet như các spot (tình huống ra quyết định) [A-K-2](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-vi.webp") và [Q-10-7](/vi/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-vi.webp"). Chỉ có board thay đổi.
 
 | Mục | Thiết lập |
 |---|---|
@@ -101,7 +101,7 @@ Cũng có đúng một gutshot (sảnh hở giữa). **Bốn combo A4s** chỉ c
 
 SPR 4 cho thấy cỡ bet đó đi được bao xa — nó không phải *lý do* của cỡ bet, lý do là hình phân cực ở trên. Với chỉ 89bb phía sau, **hai lần hai phần ba pot rồi phần còn lại ở river là vừa khít hết stack**: 14,9bb ở flop, 34,5bb ở turn, 39,6bb ở river. Hai cú đầu cộng lại ==14,9 + 34,5 = 49,4bb==, tức 55,5% của stack 89bb.
 
-⚠ **Điều đó không giống với "bắt đầu nhỏ thì mất đường đưa hết stack vào".** Không hề. Bắt đầu với 7,4bb: bị call, pot là 37,3 với 81,6 phía sau; hai phần ba pot ở turn là 24,6, còn pot 86,5 và stack 57,0; cú all-in 57,0 ở river bằng 65,9% pot. **Và dù sao size cũng không do độ sâu stack quyết định** — [board A-K-2](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") có cùng SPR 4,0 và dùng size **nhỏ** với tần suất 57,8%. Thứ tạo ra cỡ bet lớn ở đây là range phân cực, không phải SPR.
+⚠ **Điều đó không giống với "bắt đầu nhỏ thì mất đường đưa hết stack vào".** Không hề. Bắt đầu với 7,4bb: bị call, pot là 37,3 với 81,6 phía sau; hai phần ba pot ở turn là 24,6, còn pot 86,5 và stack 57,0; cú all-in 57,0 ở river bằng 65,9% pot. **Và dù sao size cũng không do độ sâu stack quyết định** — [board A-K-2](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-vi.webp") có cùng SPR 4,0 và dùng size **nhỏ** với tần suất 57,8%. Thứ tạo ra cỡ bet lớn ở đây là range phân cực, không phải SPR.
 
 Và 40 combo ace-high **thắng ngay khi đối thủ fold (bỏ bài).** 58,3% range của button là ace-high, king-high hoặc chưa thành bài trên board này. ⚠ Tuy nhiên "trượt" không phải "fold" — **node mô tả cách button phản ứng trước cú bet không có trong lần tính này**, nên không có tần suất fold nào rút ra từ đó, và các ace-high của button chạy từ A-K xuống A-T, vẫn giữ được chút giá trị khi lật bài. Khi nào bluff thực sự có lãi được bàn trong [chiến thuật bluff](/vi/blog/holdem-strategy).
 
@@ -109,7 +109,7 @@ Và 40 combo ace-high **thắng ngay khi đối thủ fold (bỏ bài).** 58,3% 
 
 **Vì 88, 55 và 22 không nằm trong range 3-bet, nhưng lại nằm trong range call.** Đây là spot đầu tiên trong loạt bài này mà phần đỉnh của board thuộc trọn về người chơi IP.
 
-![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board 8-5-2 trong pot 3-bet](/images/gto-3bp-low-ranges-en.webp "8-5-2 trong pot 3-bet · chia theo nhóm — set chỉ có ở button, big blind có nhiều overpair hơn hẳn (36 combo so với 24)")
+![Infographic thành phần range so sánh các nhóm bài của big blind và button trên board 8-5-2 trong pot 3-bet](/images/gto-3bp-low-ranges-vi.webp "8-5-2 trong pot 3-bet · chia theo nhóm — set chỉ có ở button, big blind có nhiều overpair hơn hẳn (36 combo so với 24)")
 
 | Nhóm | BB (bên 3-bet) | BTN (bên call) |
 |---|---|---|
@@ -156,8 +156,8 @@ Lý do nằm ở chỗ các set trú ngụ. **Button là người chơi duy nh�
 - **Đếm SPR trước khi bet.** Ở SPR 4, hai lần hai phần ba pot (14,9 → 34,5) cộng cú all-in 39,6 ở river làm hết vừa khít 89bb. Một khi đã bet flop, phần còn lại của stack chỉ cách một hoặc hai cú bet nữa, nên hãy quyết định trước cú bet đầu tiên rằng bạn sẽ tiếp tục bắn ở những turn và river nào — turn và river không có trong lần tính này, và một runout hay một đối thủ vẫn có thể thay đổi câu trả lời.
 
 :::readnext[Đọc tiếp]
-/vi/blog/3bet-pot-bet-sizing | Một size, 98,4% số lần — Q-10-7 trong pot 3-bet | /images/gto-3bp-dynamic-oop-en.webp
-/vi/blog/blind-battle-cbet | Người không có vị trí lại bet trước — 67,4% số lần | /images/gto-sb-king-mid-oop-en.webp
+/vi/blog/3bet-pot-bet-sizing | Một size, 98,4% số lần — Q-10-7 trong pot 3-bet | /images/gto-3bp-dynamic-oop-vi.webp
+/vi/blog/blind-battle-cbet | Người không có vị trí lại bet trước — 67,4% số lần | /images/gto-sb-king-mid-oop-vi.webp
 :::
 
 ## Tự kiểm tra

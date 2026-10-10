@@ -21,13 +21,13 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 phút",
   emoji: "👑",
-  image: "/images/gto-srp-dry-king-oop-en.webp",
+  image: "/images/gto-srp-dry-king-oop-vi.webp",
   imageAlt: "Màn hình kết quả solver HoldemMaster cho flop K-high khô K♠8♦3♣, lưới 13x13 của big blind gần như phủ kín màu xanh check",
   tags: ["có nên luôn c-bet", "check back range", "delay cbet poker", "flop K-high", "range check", "equity realization", "ví dụ solver"],
   content: `
 Flop ra **K♠ 8♦ 3♣**, rainbow (3 lá khác chất). Bạn cầm K9 ở big blind (BB — mù lớn) — top pair. Bạn đã học rằng trên phiên bản A-high thì nên check. Chắc lá K thì phải khác chứ?
 
-Đúng là khác. **Nó check còn mạnh hơn.** Big blind check ==99,8%== ở đây, trọn vẹn hơn cả mức 98,2% trên [flop A-high](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). Cả hai cỡ bet cộng lại chỉ chiếm 0,2% — một combo (tổ hợp bài) trên 474. Con số này là của người hành động trước (big blind), không phải tần suất c-bet của button.
+Đúng là khác. **Nó check còn mạnh hơn.** Big blind check ==99,8%== ở đây, trọn vẹn hơn cả mức 98,2% trên [flop A-high](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp"). Cả hai cỡ bet cộng lại chỉ chiếm 0,2% — một combo (tổ hợp bài) trên 474. Con số này là của người hành động trước (big blind), không phải tần suất c-bet của button.
 
 Mọi con số dưới đây lấy từ [GTO poker solver miễn phí](/vi/solver) của HoldemMaster, đọc trực tiếp từ kết quả Spot mẫu ngày 2026-08-19.
 
@@ -90,7 +90,7 @@ Số tay bài khớp đúng với solver. Big blind có 88 và 33, mỗi đôi b
 
 **Các nhóm mạnh nằm bên button, các nhóm yếu nằm bên big blind.** Đặt cạnh nhau thì khoảng cách lộ rõ.
 
-![Infographic so sánh thành phần range của big blind và button trên board K-high khô, thanh xanh lá và vàng đặt cạnh nhau theo từng nhóm tay bài](/images/gto-srp-dry-king-ranges-en.webp "K♠8♦3♣ · chia theo nhóm — phần đỉnh range thuộc về button")
+![Infographic so sánh thành phần range của big blind và button trên board K-high khô, thanh xanh lá và vàng đặt cạnh nhau theo từng nhóm tay bài](/images/gto-srp-dry-king-ranges-vi.webp "K♠8♦3♣ · chia theo nhóm — phần đỉnh range thuộc về button")
 
 | Nhóm | BB (OOP — out of position, không có vị trí) | BTN (IP — in position, có vị trí) |
 |---|---|---|
@@ -128,7 +128,7 @@ Phép tính: pot là 5,5bb, nên phần equity (phần pot kỳ vọng của b�
 
 :::note[Các con số EQR trong loạt bài này là con số hiển thị trên màn hình solver. Tính lại từ equity và EV đã làm tròn trên cùng màn hình có thể lệch một phần mười điểm — đó là làm tròn, không phải mâu thuẫn.]:::
 
-Flop A-high là 84,0% so với 113,1%. **Cùng kết cấu khô, khoảng cách rộng hơn trên board K.** Nhưng không phải vì board này *yên tĩnh hơn* — hai khoảng cách EQR rộng nhất trong loạt bài này thuộc về những board ngập draw: [flop Q-J-10 hai chất](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp") với 41,5 điểm và pot 3-bet Q-10-7 với 42,7. Thứ mở rộng khoảng cách ở đây là **một cột ở đỉnh** — trên A-7-2 không ai có overpair, còn trên K-8-3 button có 1,3% và big blind không có gì. Vì sao bản thân chỗ ngồi lại đáng giá đến thế được giải thích trong [chơi theo vị trí](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Flop A-high là 84,0% so với 113,1%. **Cùng kết cấu khô, khoảng cách rộng hơn trên board K.** Nhưng không phải vì board này *yên tĩnh hơn* — hai khoảng cách EQR rộng nhất trong loạt bài này thuộc về những board ngập draw: [flop Q-J-10 hai chất](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-vi.webp") với 41,5 điểm và pot 3-bet Q-10-7 với 42,7. Thứ mở rộng khoảng cách ở đây là **một cột ở đỉnh** — trên A-7-2 không ai có overpair, còn trên K-8-3 button có 1,3% và big blind không có gì. Vì sao bản thân chỗ ngồi lại đáng giá đến thế được giải thích trong [chơi theo vị trí](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Ở đây thật sự không có draw nào sao?
 
@@ -151,13 +151,13 @@ Lời khuyên phổ biến là các tay A-high có giá trị showdown nên chec
 
 ## Ra bàn thật thì chơi khác gì?
 
-- **Khi đã call một cú raise (tố) heads-up trên flop K-high khô, lead không phải là một lựa chọn.** Kể cả khi có lá K. Logic range check từ flop A-high áp dụng ở đây còn mạnh hơn, không yếu hơn. Nhưng điều kiện là **hình dạng range của bạn**, không phải hình dạng của board — ở nơi đỉnh range của bạn dày hơn của đối thủ, big blind có lead. Phản ví dụ là [flop 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), nơi big blind lead **23,7%** số lần.
+- **Khi đã call một cú raise (tố) heads-up trên flop K-high khô, lead không phải là một lựa chọn.** Kể cả khi có lá K. Logic range check từ flop A-high áp dụng ở đây còn mạnh hơn, không yếu hơn. Nhưng điều kiện là **hình dạng range của bạn**, không phải hình dạng của board — ở nơi đỉnh range của bạn dày hơn của đối thủ, big blind có lead. Phản ví dụ là [flop 9-8-7](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp"), nơi big blind lead **23,7%** số lần.
 - **Check không có nghĩa là check-fold.** Trước cú c-bet nhỏ, big blind đi tiếp rộng — mọi lá K, các lá 8, các underpair (đôi tẩy thấp hơn lá cao nhất trên board), A-high có backdoor. Top pair là call; ứng viên check-raise tự nhiên là 88, 33 và các tay hai đôi (lần giải này không bao gồm phản ứng trước cú c-bet).
 - **Ở button, đừng gán cho AQ và AJ một cách xử lý cố định.** Bet nhỏ và check back đều hợp lý; điều chỉnh tỷ lệ pha trộn dựa trên việc đối thủ này có thật sự fold overcard (lá cao hơn board) hay không.
 - **Đừng đọc cú check là yếu — khi gặp đối thủ cân bằng.** Range check đó vẫn chứa set (88, 33) và 12,7% top pair. Ở stake thấp thì điều ngược lại thường đúng, vì nhiều người chơi cứ thế lead tay mạnh, nên hãy tiếp tục value bet và coi check-raise là một cái giá thỉnh thoảng phải trả.
 
 :::readnext[Đọc tiếp]
-/vi/blog/a-high-board-cbet | Có top pair vẫn check: tần suất c-bet trên flop A-7-2 | /images/gto-srp-dry-ace-oop-en.webp
+/vi/blog/a-high-board-cbet | Có top pair vẫn check: tần suất c-bet trên flop A-7-2 | /images/gto-srp-dry-ace-oop-vi.webp
 /vi/blog/holdem-continuation-bet | Vì sao c-bet mọi flop ngốn chip | /images/holdem-continuation-bet-hero.webp
 :::
 

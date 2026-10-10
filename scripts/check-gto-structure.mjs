@@ -87,6 +87,12 @@ const RULES = {
     readTime: /readTime: "\d+ min"/,
     extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'], [/(?<![\d.,])\d+\.\d\s*%/, '마침표 소수 퍼센트(→쉼표)']],
   },
+  vi: { // 2026-10-10 queue §2-AS H-2 — vi 코퍼스 실측(Trả lời nhanh 48 · Đọc tiếp 51 · "N phút" 51 · 마침표 소수 퍼센트 0)
+    quick: /> \*\*Trả lời nhanh\*\*/,
+    readnext: /:::readnext\[(?!Đọc tiếp\])/,
+    readTime: /readTime: "\d+ phút"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'], [/(?<![\d.,])\d+\.\d\s*%/, '마침표 소수 퍼센트(→쉼표)']],
+  },
   pt: {
     quick: /> \*\*Resposta rápida\*\*/,
     readnext: /:::readnext\[(?!Continue lendo\])/,
@@ -278,6 +284,12 @@ if (args.includes('--selftest')) {
       RULES.de.readnext.test(':::readnext[Read next]') && RULES.de.readTime.test('readTime: "9 Min."') &&
       RULES.de.extra.at(-1)[0].test('Check 98.2%') && !RULES.de.extra.at(-1)[0].test('Check 98,2%') &&
       !RULES.de.extra.at(-1)[0].test('Pot 5,5bb')],
+    ['VI labels: Trả lời nhanh · Đọc tiếp · N phút · dot-decimal percent flagged', () =>
+      RULES.vi.quick.test('> **Trả lời nhanh**') && !RULES.vi.quick.test('> **Quick answer**') &&
+      !RULES.vi.readnext.test(':::readnext[Đọc tiếp]') && RULES.vi.readnext.test(':::readnext[Read next]') &&
+      RULES.vi.readTime.test('readTime: "9 phút"') && !RULES.vi.readTime.test('readTime: "9 min"') &&
+      RULES.vi.extra.at(-1)[0].test('Check 98.2%') && !RULES.vi.extra.at(-1)[0].test('Check 98,2%') &&
+      !RULES.vi.extra.at(-1)[0].test('Pot 5,5bb')],
     ['Highlights count formulas with equals and approximation signs equally', () =>
       counts('==2 + 3 = 5== and ==g:5 / 9 ≈ 56%==', 'ms').hl === 2 &&
       counts('==2 + 3 ≈ 5== and ==g:5 / 9 = 56%==', 'en').hl === 2],

@@ -5,7 +5,7 @@ import type { Post } from "../posts";
  * 출처 = EN 마스터 lib/posts-en/3bet-pot-bet-sizing.ts (기준 해시 b57cb658) · 수치·카드 EN 축어(구분자만 vi).
  * 키워드 = bet sizing poker · bet size trong poker · geometric bet sizing · overbet poker (docs/keyword-bank/vi-serp/L-G-gto.md).
  * EN과 의도적으로 다름(en-first-queue §2-AO 선반영): L176 «Effectively, no» → «Thực tế là có» · L229 JJ 오버카드 = Q 하나뿐(AO-2).
- * 알려진 한계: 이미지 = EN 경로(-en.webp) · vi 캡처 생성 후 교체 예정.
+ * 알려진 한계: 이미지 = vi 캡처(-vi.webp) — 2026-10-10 헤드 교체(queue §2-AS H-1).
  * GTO 시리즈 예외 — 1차 데이터이고 재현 가능성이 출처를 대신한다(지어낸 경험담 없음).
  */
 export const POST: Post = {
@@ -21,11 +21,11 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "12 phút",
   emoji: "💧",
-  image: "/images/gto-3bp-dynamic-oop-en.webp",
+  image: "/images/gto-3bp-dynamic-oop-vi.webp",
   imageAlt: "Kết quả solver HoldemMaster trên pot 3-bet Q-10-7 hai chất: lưới 13x13 của big blind gần như phủ kín một màu, size hai phần ba pot hiện 98,4%",
   tags: ["bet sizing poker", "bet size trong poker", "wet board poker", "geometric bet sizing", "overbet poker", "ví dụ solver"],
   content: `
-Ở board trước đó, big blind bet toàn bộ range trên [A♦K♠2♥](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-en.webp") và chia sizing gần như làm đôi — 57,8% size nhỏ, 42,2% size lớn.
+Ở board trước đó, big blind bet toàn bộ range trên [A♦K♠2♥](/vi/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop-vi.webp") và chia sizing gần như làm đôi — 57,8% size nhỏ, 42,2% size lớn.
 
 Flop lần này là Q♥ 10♥ 7♠. Hai lá cơ, và giữa lá Q với lá 10 chỉ thiếu đúng lá J. **Draw nhiều hơn hẳn, và cú chia size biến mất:** hai phần ba pot chiếm ==98,4%==, còn size nhỏ chỉ được 0,7%.
 
@@ -94,7 +94,7 @@ Cả hai hàng đều là pot 3-bet ở SPR 4,0, dùng cùng một range 3-bet g
 
 **Chỉ đếm draw thật, cả hai bên đều ở mức 30,1%** — big blind từ 2,7% combo draw, 2,7% flush draw và 24,7% gutshot; button từ 3,0% combo draw, 4,5% OESD và 22,6% gutshot.
 
-🪶 Backdoor flush được loại ra có chủ đích. Nó cần hai lá liên tiếp cùng một chất (chất cơ với tay đang cầm một lá cơ, chất bích với tay cầm hai lá bích bên cạnh 7♠), và chỉ thành khoảng ==(10 ÷ 47) × (9 ÷ 46) = khoảng 4,2%== số lần — không phải thứ mà một cỡ bet có thể bắt trả giá. Thêm nữa, bảng draw là **một trục riêng, tách khỏi bảng tay đã thành bài** — một overpair (đôi tẩy cao hơn mọi lá trên board) có một lá cơ cũng nằm luôn trong hàng backdoor. Trên [flop K-high khô](/vi/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-en.webp"), cũng hàng đó ghi 72,2% "không draw" cho big blind và 77,7% cho button. Hai thế giới khác hẳn.
+🪶 Backdoor flush được loại ra có chủ đích. Nó cần hai lá liên tiếp cùng một chất (chất cơ với tay đang cầm một lá cơ, chất bích với tay cầm hai lá bích bên cạnh 7♠), và chỉ thành khoảng ==(10 ÷ 47) × (9 ÷ 46) = khoảng 4,2%== số lần — không phải thứ mà một cỡ bet có thể bắt trả giá. Thêm nữa, bảng draw là **một trục riêng, tách khỏi bảng tay đã thành bài** — một overpair (đôi tẩy cao hơn mọi lá trên board) có một lá cơ cũng nằm luôn trong hàng backdoor. Trên [flop K-high khô](/vi/blog/k-high-board-cbet "thumb:/images/gto-srp-dry-king-oop-vi.webp"), cũng hàng đó ghi 72,2% "không draw" cho big blind và 77,7% cho button. Hai thế giới khác hẳn.
 
 Bet một phần ba pot, 7,4bb, và người call cần ==7,4 ÷ (22,5 + 7,4 + 7,4) = khoảng 19,8%== để đi tiếp. Đây là những gì cái giá đó mua được, tính từng lá một.
 
@@ -123,7 +123,7 @@ Nhưng tiến thêm một bước: **người call cũng không thể cứ fold 
 
 :::pull[Tay bài của bạn không chọn size. Thứ đối thủ đủ sức call mới chọn.]:::
 
-:::note[⚠ Cùng texture, kết luận ngược nhau — và cả hai đều đúng, vì hai ghế đã đổi chỗ. Trong một **pot raise đơn**, phần đỉnh của flop broadway hai chất thuộc về người raise preflop, còn big blind — người chỉ call — gần như lần nào cũng check; trên [Q♠J♦10♠](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-en.webp") nó check 99,9%. Lời khuyên quen thuộc như "board ướt thì bet lớn và phân cực range" trong [bài hướng dẫn c-bet](/vi/blog/holdem-continuation-bet) được viết cho ghế người raise, không phải ghế người call. **Chính cú 3-bet đã đổi chỗ hai ghế.** Ở đây big blind mới là bên cầm range ăn khớp với board, nên nó là bên bet — với mọi thứ. Riêng texture không bao giờ quyết định được chuyện này; hãy đọc hành động preflop trước.]:::
+:::note[⚠ Cùng texture, kết luận ngược nhau — và cả hai đều đúng, vì hai ghế đã đổi chỗ. Trong một **pot raise đơn**, phần đỉnh của flop broadway hai chất thuộc về người raise preflop, còn big blind — người chỉ call — gần như lần nào cũng check; trên [Q♠J♦10♠](/vi/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-vi.webp") nó check 99,9%. Lời khuyên quen thuộc như "board ướt thì bet lớn và phân cực range" trong [bài hướng dẫn c-bet](/vi/blog/holdem-continuation-bet) được viết cho ghế người raise, không phải ghế người call. **Chính cú 3-bet đã đổi chỗ hai ghế.** Ở đây big blind mới là bên cầm range ăn khớp với board, nên nó là bên bet — với mọi thứ. Riêng texture không bao giờ quyết định được chuyện này; hãy đọc hành động preflop trước.]:::
 
 ## Geometric bet sizing là gì?
 
@@ -161,7 +161,7 @@ JJ và 99 là trường hợp ngược lại. **Không tay nào đang chờ gì 
 
 **Hơn một phần ba — 36,1% — là underpair, nên nó bước vào một board có hai lá broadway với một đôi thấp hơn lá Q — thấp hơn cả hai lá broadway đối với mọi underpair, trừ JJ, nằm giữa hai lá.** Phần còn lại chia thành những tay ăn với lá Q, những tay đang chờ chất cơ, và một cái đuôi nhỏ không có gì. Có một hàng trong bảng dưới đây không mang nghĩa như vẻ ngoài của nó, và đáng để tìm ra trước khi đọc tiếp.
 
-![Thành phần range trên pot 3-bet Q-10-7 hai chất: hàng overpair chỉ có ở phía big blind, hàng second pair chỉ có ở phía button](/images/gto-3bp-dynamic-ranges-en.webp "Pot 3-bet Q-10-7 · hàng overpair thuộc về big blind, hàng second pair thuộc về button")
+![Thành phần range trên pot 3-bet Q-10-7 hai chất: hàng overpair chỉ có ở phía big blind, hàng second pair chỉ có ở phía button](/images/gto-3bp-dynamic-ranges-vi.webp "Pot 3-bet Q-10-7 · hàng overpair thuộc về big blind, hàng second pair thuộc về button")
 
 | Nhóm | BB (bên 3-bet) | BTN (bên call) |
 |---|---|---|
@@ -213,8 +213,8 @@ Mọi điều dưới đây đều giả định **heads-up, pot 3-bet, SPR 4**.
 - **★Từ ghế button, hãy lên kế hoạch các đôi tầm trung dừng ở đâu.** 36,1% range call ở đây là underpair. ⚠ Tuy vậy, đừng đọc **MDF 60,2% như một chỉ tiêu call** — nó được suy ra bằng cách coi cú bet là bluff thuần không có equity, và **45,1% range bet của big blind đã là tay thành bài** (8,2 trips, 16,4 overpair, 20,5 top pair), nên mức phòng thủ tối ưu thật nằm trên hay dưới con số đó là câu hỏi **lần tính này không trả lời được.** **Turn mới là nơi số phận những đôi này được định đoạt** — một cú bet lớn thứ hai sẽ khiến phần lớn chúng fold, và call flop mà chưa tính trước chuyện đó chính là cách stack rò rỉ dần. (Node turn không có trong lần giải này, nên đó là phán đoán, không phải một con số.)
 
 :::readnext[Đọc tiếp]
-/vi/blog/3bet-pot-cbet | Flop không ai check — SPR 4 trong pot 3-bet | /images/gto-3bp-ace-king-oop-en.webp
-/vi/blog/3bet-pot-low-board | Ba combo trúng flop — mà vẫn bet 97,8% | /images/gto-3bp-low-oop-en.webp
+/vi/blog/3bet-pot-cbet | Flop không ai check — SPR 4 trong pot 3-bet | /images/gto-3bp-ace-king-oop-vi.webp
+/vi/blog/3bet-pot-low-board | Ba combo trúng flop — mà vẫn bet 97,8% | /images/gto-3bp-low-oop-vi.webp
 :::
 
 ## Tự kiểm tra
@@ -225,7 +225,7 @@ Hãy nhìn dải hành động trước: **Bet 14,9bb (66% pot) · 98,4% · 71,9
 
 Tiếp theo mở **Trainer GTO** ở thanh bên. Nó chia một tay bài theo trọng số range thật và chấm hành động của bạn bằng **EV mất**. Miễn phí, không cần cài đặt, không cần tài khoản.
 
-Một phép đối chiếu hữu ích là board A-high ở spot trước. A♦K♠2♥ là rainbow (3 lá khác chất), nên **không ai có flush draw trên đó**, và toàn bộ range của big blind ở đó đều từ một đôi trở lên. Ở đây hàng "không draw" chỉ ghi 43,8%. ⚠ Nhưng 56,2% còn lại không phải tất cả đều *sống* — 26,0 điểm trong đó là **backdoor**, cần hai lá liên tiếp cùng một chất (chất cơ, hoặc chất bích với những tay cầm hai lá bích) và chỉ thành khoảng 4,2% số lần. Draw thật cộng lại là 30,1%. **Tuy vậy, dòng đó chưa phải toàn bộ lời giải thích** — [flop 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") ở phần sau của loạt bài này có 78,3% "không draw" mà vẫn bắn size lớn 97,8% số lần. Mật độ draw và hình dạng range đều có tiếng nói.
+Một phép đối chiếu hữu ích là board A-high ở spot trước. A♦K♠2♥ là rainbow (3 lá khác chất), nên **không ai có flush draw trên đó**, và toàn bộ range của big blind ở đó đều từ một đôi trở lên. Ở đây hàng "không draw" chỉ ghi 43,8%. ⚠ Nhưng 56,2% còn lại không phải tất cả đều *sống* — 26,0 điểm trong đó là **backdoor**, cần hai lá liên tiếp cùng một chất (chất cơ, hoặc chất bích với những tay cầm hai lá bích) và chỉ thành khoảng 4,2% số lần. Draw thật cộng lại là 30,1%. **Tuy vậy, dòng đó chưa phải toàn bộ lời giải thích** — [flop 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-vi.webp") ở phần sau của loạt bài này có 78,3% "không draw" mà vẫn bắn size lớn 97,8% số lần. Mật độ draw và hình dạng range đều có tiếng nói.
 
 ## Câu hỏi thường gặp
 

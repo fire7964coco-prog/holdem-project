@@ -19,7 +19,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "9 phút",
   emoji: "🅰️",
-  image: "/images/gto-srp-dry-ace-oop-en.webp",
+  image: "/images/gto-srp-dry-ace-oop-vi.webp",
   imageAlt: "Kết quả solver của HoldemMaster trên flop A-high khô: lưới 13x13 của big blind gần như phủ kín màu xanh lá của check",
   tags: ["tần suất c-bet", "khi nào nên c-bet", "dry board poker", "range advantage poker", "lợi thế range", "equity realization", "ví dụ solver"],
   content: `
@@ -84,7 +84,7 @@ Cũng cần nhớ rằng "một tay Át" không phải chỉ một loại tay b�
 
 Board khô là board không có flush draw (chờ thùng) và gần như không có straight draw — ba lá rời rạc ở ba chất khác nhau, như A♥ 7♦ 2♣. Gần như chẳng có gì đang chờ: **71,3% range của big blind không có draw**, và phần lớn số còn lại là backdoor flush draw. Board này nghiêng về người raise vì range open của button giữ AK và AQ, trong khi range call của big blind cao nhất chỉ tới AJ — các tay Át dồn về một phía, và không có draw nào để cân bằng lại ở các vòng sau.
 
-![Infographic thành phần range so sánh các nhóm tay bài của big blind và button trên board A-high khô, thanh xanh lá và vàng đặt cạnh nhau](/images/gto-srp-dry-ace-ranges-en.webp "A♥7♦2♣ · chia theo nhóm — button có nhiều top pair hơn, big blind nhiều bài chưa có gì hơn")
+![Infographic thành phần range so sánh các nhóm tay bài của big blind và button trên board A-high khô, thanh xanh lá và vàng đặt cạnh nhau](/images/gto-srp-dry-ace-ranges-vi.webp "A♥7♦2♣ · chia theo nhóm — button có nhiều top pair hơn, big blind nhiều bài chưa có gì hơn")
 
 Out of position (OOP) là big blind, hành động trước; in position (IP) là button.
 
