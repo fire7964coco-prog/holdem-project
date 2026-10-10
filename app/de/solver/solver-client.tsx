@@ -211,11 +211,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  *    1차 출처로 확인된 것은 **설치형·주로 Windows**라는 사실뿐이다.
  */
 const COMPARE: string[][] = [
-  ["Wie gerechnet wird", "Live im Browser", "Nachschlagen vorab gerechneter Lösungen", "Installieren und auf dem eigenen Rechner rechnen"],
+  ["Wie gerechnet wird", "Live im Browser", "Vor allem Nachschlagen vorab gerechneter Lösungen", "Installieren und auf dem eigenen Rechner rechnen"],
   ["Installation", "Keine", "Keine", "Installer, vor allem Windows"],
   ["Umfang", "Nach dem Flop, heads-up", "Oft inklusive Preflop", "Je nach Edition"],
-  ["Ranges und Baum bearbeiten", "Frei", "Innerhalb des veröffentlichten Katalogs", "Frei"],
-  ["Wo gerechnet wird", "Auf deinem Gerät", "Beim Anbieter (vorab gerechnet)", "Auf deinem Gerät"],
+  ["Ranges und Baum bearbeiten", "Frei", "Vor allem innerhalb des veröffentlichten Katalogs; manche Dienste bieten eigene Berechnungen an", "Frei"],
+  ["Wo gerechnet wird", "Auf deinem Gerät", "Auf den Rechnern des Anbieters", "Auf deinem Gerät"],
 ];
 
 /**
@@ -244,7 +244,7 @@ const SPOT_GROUPS = [
       //      넘어간 것은 아니다 — 48.5% 대 51.5%」 · EN ④ FAQ 「→ No.」).
       //    ▸ 「BTN C벳 빈도」는 화면에서 확인 불가다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. 앱 문구로 되돌리지 마라.
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Verbundenes Middle-Board, Two-Tone", note: "Das einzige Single-Raised-Board, auf dem die BB wirklich vorangeht: Sie setzt in 23,7% der Fälle zuerst (der Range-Vorteil bleibt trotzdem beim BTN – die BB hält 48,5% Equity gegen 51,5%)" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Verbundenes Middle-Board, Two-Tone", note: "Das Single-Raised-Board, auf dem die BB am häufigsten vorangeht: Sie setzt in 23,7% der Fälle zuerst (auf dem Monotone-Board Q♠9♠2♠ sind es 11,2%), und trotzdem bleibt der Range-Vorteil beim BTN – die BB hält 48,5% Equity gegen 51,5%" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «seltener werden» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
@@ -275,7 +275,7 @@ const SPOT_GROUPS = [
       // 🟢 앱 de ⑩은 «weitgehend verfehlt» 완화형이라 결함은 아니나(RP-17은 «통째로»형이 결함),
       //    랜딩은 다른 다섯 랜딩과 같은 **수치 정본**으로 간다 — KO ⑩ 표 실측 **탑 페어 0%**
       //    (8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.
-      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – abgesehen von Overpairs und dem Fünferpaar von A5s nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
     ],
   },
   {
@@ -591,9 +591,9 @@ export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Ja – und zwar ohne das übliche Kleingedruckte: keine Zahlungsdaten, keine gesperrten
           Funktionen, keine Obergrenze für Berechnungen pro Tag, kein Konto. Auch die Einstellungen, die
-          sonst in bezahlten Desktop-Solvern wohnen –{" "}
+          du von einem installierten Desktop-Solver erwarten würdest –{" "}
           <strong className="text-foreground">Rake und Rake-Cap, Präzisionsmodi, Baum-Bearbeitung
-          Knoten für Knoten</strong> – sind dabei. Die einzige echte Grenze: Dieses Werkzeug deckt{" "}
+          Knoten für Knoten</strong> – sind dabei. Die wichtigste Grenze: Dieses Werkzeug deckt{" "}
           <strong className="text-foreground">nur die Zeit nach dem Flop ab, heads-up</strong>.
         </p>
         <Table
@@ -637,8 +637,9 @@ export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode 
           <Link href="/de/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             Starthände-Tabelle
           </Link>{" "}
-          sammelt die Ranges nach Position. Mit beiden Teilen deckst du eine Hand von Anfang bis Ende
-          ab: Die Tabelle entscheidet, womit du einsteigst, der Solver, was ab dem Flop passiert.
+          sammelt die Opening-Ranges nach Position, der Solver analysiert das Spiel ab dem Flop. Aber
+          Achtung: Wenn du vor dem Flop einer Erhöhung gegenüberstehst (callen oder 3-betten), brauchst
+          du eigene Ranges, die die Opening-Tabelle nicht abdeckt.
         </p>
       </section>
 
@@ -677,8 +678,9 @@ export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             Dieselben 0,08bb sind 1,45% in einem 5,5bb-Pot (nachschauen) und 0,36% in einem 22,5bb-Pot
-            (akzeptabel). Die Grenzen liegen bei 0,02bb und 0,06bb im Single Raised Pot und bei 0,08bb
-            und 0,23bb im 3-Bet-Pot. Untergrenzen von 0,02bb und 0,05bb sorgen dafür, dass
+            (akzeptabel). Die Grenzen liegen bei 0,02bb und 0,055bb im Single Raised Pot und bei etwa
+            0,079bb und 0,225bb im 3-Bet-Pot – 0,08bb liegt also knapp hinter der Top-Play-Linie.
+            Untergrenzen von 0,02bb und 0,05bb sorgen dafür, dass
             Kleinstunterschiede nicht mit der Fehlermarge des Solvers verwechselt werden
           </li>
           {/*
@@ -770,8 +772,8 @@ export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Alle heißen Solver, aber was sich unterscheidet, ist{" "}
           <strong className="text-foreground">wo und wann gerechnet wird</strong>. Lösungsbibliotheken
-          wie GTO Wizard sind Nachschlagewerke: Sie zeigen vorab gerechnete Lösungen, sind sehr schnell
-          und decken oft auch Preflop ab. Desktop-Solver wie PioSOLVER installierst du und sie rechnen
+          wie GTO Wizard sind vor allem Nachschlagewerke: Sie zeigen vorab gerechnete Lösungen, sind sehr
+          schnell und decken oft auch Preflop ab (GTO Wizard bietet zusätzlich eigene Berechnungen an). Desktop-Solver wie PioSOLVER installierst du und sie rechnen
           auf deinem eigenen Rechner, vor allem unter Windows. Dieses Werkzeug{" "}
           <strong className="text-foreground">rechnet live im Browser – genau dann, wenn du
           fragst</strong>. Du kannst Ranges und Baum beliebig umschreiben, und es gibt nichts zu
@@ -825,8 +827,9 @@ export default function SolverClientDe({ reviews }: { reviews?: React.ReactNode 
           genauso wie am Computer. Aber{" "}
           <strong className="text-foreground">wenn du willst, legst du ihn auf den
           Startbildschirm</strong> und er verhält sich wie eine App: eigenes Icon, Vollbild, keine
-          Adressleiste. Es ist eine Browser-Verknüpfung, kein Programm – nach Systemberechtigungen
-          fragt sie nie.
+          Adressleiste. Er bleibt trotzdem eine Web-App und kein heruntergeladenes Programm: Er läuft in
+          der Sandbox des Browsers (unter Android verpackt Chrome ihn als schlankes App-Paket) – nach
+          Systemberechtigungen fragt er nie.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Einmal hinzugefügt, liegen die Lernspots und der GTO-Trainer auf dem Gerät und{" "}

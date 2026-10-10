@@ -65,7 +65,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
   },
   {
     q: "Muss ich etwas installieren?",
-    a: "Nein. Der Solver läuft mit WebAssembly im Browser und funktioniert damit unter Windows, macOS, Linux und auf dem Handy ohne Installer. Wer mag, legt ihn über den Button «Zum Startbildschirm hinzufügen» als App-Verknüpfung ab – das ist nur ein Lesezeichen mit eigenem Icon, kein Programm, und Systemberechtigungen braucht es nie.",
+    a: "Nein. Der Solver läuft mit WebAssembly im Browser und funktioniert damit unter Windows, macOS, Linux und auf dem Handy ohne Installer. Wer mag, legt ihn über den Button «Zum Startbildschirm hinzufügen» als App-Verknüpfung ab – auch dann bleibt er eine Web-App und kein heruntergeladenes Programm: Er läuft in der Sandbox des Browsers (unter Android verpackt Chrome ihn als schlankes App-Paket), und Systemberechtigungen braucht er nie.",
   },
   {
     // 🔴 PAA 축어 3형(`Was ist gto beim Poker?`·`Was ist gto im Poker?`·`Was bedeutet gto?`)을
@@ -108,7 +108,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
     // 🟢 정합성 렌즈 반영(2026-08-24) — H2와 문항이 축어 동일했다(H2/FAQ 중복 금지 · de-core §7-6).
     //    문항을 변형형으로 갈랐다.
     q: "Worin unterscheidet er sich von GTO Wizard und PioSOLVER?",
-    a: "Darin, wo und wann gerechnet wird. Hier entsteht die Lösung auf deinem Gerät, im Moment der Berechnung, mit den Ranges und dem Spielbaum, die du einträgst. Lösungsbibliotheken zeigen vorab gerechnete Lösungen aus ihrem Katalog. PioSOLVER ist ein Programm, das du installierst und das auf deinem eigenen Rechner rechnet, vor allem unter Windows. Keins ist besser oder schlechter – sie lösen unterschiedliche Bedürfnisse.",
+    a: "Darin, wo und wann gerechnet wird. Hier entsteht die Lösung auf deinem Gerät, im Moment der Berechnung, mit den Ranges und dem Spielbaum, die du einträgst. Lösungsbibliotheken dienen vor allem zum Nachschlagen vorab gerechneter Lösungen aus ihrem Katalog (GTO Wizard bietet zusätzlich eigene Berechnungen an). PioSOLVER ist ein Programm, das du installierst und das auf deinem eigenen Rechner rechnet, vor allem unter Windows. Keins ist besser oder schlechter – sie lösen unterschiedliche Bedürfnisse.",
   },
   {
     q: "Wie lange dauert es, einen Spot zu lösen?",

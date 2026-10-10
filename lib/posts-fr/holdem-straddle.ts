@@ -187,7 +187,7 @@ A. Le plus souvent, on dit tout simplement « straddle » : c'est le terme angla
 
 **Q. Comment s'appelle la mise de départ au poker ?**
 
-A. Au Texas Hold'em, la mise de départ, ce sont les blindes : la petite blinde et la grosse blinde, deux mises obligatoires posées avant la distribution par les deux joueurs à gauche du bouton. Le straddle, lui, est une blinde en plus, volontaire, qui vient se poser par-dessus — tout le détail est dans [les blindes au poker](/fr/blog/holdem-blind-meaning).
+A. Au Texas Hold'em, la mise de départ, ce sont les blindes : la petite blinde et la grosse blinde, deux mises obligatoires posées avant la distribution par les deux joueurs à gauche du bouton (en heads-up, c'est le bouton lui-même qui pose la petite blinde). Le straddle, lui, est une blinde en plus, volontaire, qui vient se poser par-dessus — tout le détail est dans [les blindes au poker](/fr/blog/holdem-blind-meaning).
 
 ---
 

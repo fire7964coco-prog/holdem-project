@@ -69,7 +69,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Hay que instalar algo?",
-    a: "No hace falta. Corre dentro del navegador con WebAssembly, así que funciona en Windows, macOS, Linux y móvil sin instalador. Si quieres, puedes añadirlo a la pantalla de inicio con el botón «Agregar a inicio» de la app, pero es un acceso directo del navegador, no un programa: nunca pide permisos del sistema.",
+    a: "No hace falta. Corre dentro del navegador con WebAssembly, así que funciona en Windows, macOS, Linux y móvil sin instalador. Si quieres, puedes añadirlo a la pantalla de inicio con el botón «Agregar a inicio» de la app, pero sigue siendo una app web, no un programa descargado: corre dentro del entorno aislado del navegador (en Android, Chrome la empaqueta como una app ligera) y nunca pide permisos del sistema.",
   },
   {
     // 🔴 2026-08-22 검수로 신설 — `que es gto en poker`(ES 20 · **MX 30**)를 glossary·strategy에
@@ -97,7 +97,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿En qué se diferencia de GTO Wizard o PioSOLVER?",
-    a: "En dónde y cómo se calcula. Aquí la solución se calcula en tu dispositivo en el momento, con los rangos y el árbol que tú escribas. Las plataformas de consulta te muestran soluciones ya calculadas de antemano, dentro del catálogo que publican. PioSOLVER es un programa que se instala y calcula en tu propia máquina, principalmente en Windows. No son mejores o peores: resuelven necesidades distintas.",
+    a: "En dónde y cómo se calcula. Aquí la solución se calcula en tu dispositivo en el momento, con los rangos y el árbol que tú escribas. Las plataformas de consulta sirven sobre todo para ver soluciones ya calculadas de antemano, dentro del catálogo que publican (GTO Wizard también ofrece cálculo personalizado). PioSOLVER es un programa que se instala y calcula en tu propia máquina, principalmente en Windows. No son mejores o peores: resuelven necesidades distintas.",
   },
   {
     q: "¿Cuánto tarda en resolver un spot?",

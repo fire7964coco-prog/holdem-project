@@ -114,11 +114,11 @@ const FEATURES = [
 
 /** 외부 도구 비교 — ⚠ 가격·무료 티어 수치는 넣지 않는다(§12-B, faq.ts 주석 참조). */
 const COMPARE = [
-  ["계산 방식", "브라우저에서 그 자리에서 직접 계산", "미리 계산된 솔루션을 열람", "PC에 설치해 직접 계산"],
+  ["계산 방식", "브라우저에서 그 자리에서 직접 계산", "주로 미리 계산된 솔루션을 열람", "PC에 설치해 직접 계산"],
   ["설치", "없음", "없음", "필요 (윈도우 중심)"],
-  ["다루는 구간", "포스트플랍 헤즈업", "제품에 따라 프리플랍까지", "포스트플랍"],
-  ["레인지·트리 수정", "자유롭게", "정해진 솔루션 범위 안에서", "자유롭게"],
-  ["계산이 도는 곳", "내 컴퓨터 (전송 없음)", "제공사가 미리 계산한 결과", "내 컴퓨터"],
+  ["다루는 구간", "포스트플랍 헤즈업", "제품에 따라 프리플랍까지", "주로 포스트플랍 (일부 버전은 프리플랍 포함)"],
+  ["레인지·트리 수정", "자유롭게", "주로 공개된 솔루션 범위 안에서 · 커스텀 계산을 더하는 서비스도 있음", "자유롭게"],
+  ["계산이 도는 곳", "내 컴퓨터 (전송 없음)", "제공사의 컴퓨터", "내 컴퓨터"],
 ];
 
 /**
@@ -141,7 +141,7 @@ const SPOT_GROUPS = [
       { n: "①", slug: "a-high-board-cbet", board: "A♥7♦2♣", anchor: "A하이 보드 C벳", note: "BB가 98.2% 체크하는 이유" },
       { n: "②", slug: "k-high-board-cbet", board: "K♠8♦3♣", anchor: "K하이 보드 C벳", note: "체크 99.8% — 드라이 보드의 끝" },
       { n: "③", slug: "broadway-board-strategy", board: "Q♠J♦T♠", anchor: "브로드웨이 보드 전략", note: "체크 99.9%" },
-      { n: "④", slug: "donk-bet-strategy", board: "9♥8♥7♣", anchor: "동크벳 레인지", note: "23.7% — 먼저 치는 보드" },
+      { n: "④", slug: "donk-bet-strategy", board: "9♥8♥7♣", anchor: "동크벳 레인지", note: "23.7% — 가장 많이 먼저 치는 보드 (모노톤 Q♠9♠2♠는 11.2%)" },
       { n: "⑤", slug: "monotone-board-strategy", board: "Q♠9♠2♠", anchor: "모노톤 보드 전략", note: "너트 플러시도 체크" },
       { n: "⑥", slug: "paired-board-strategy", board: "6♣6♦3♥", anchor: "페어 보드 전략", note: "포켓페어의 값" },
       { n: "⑦", slug: "low-board-check-raise", board: "6♠5♥2♦", anchor: "로우 보드 전략", note: "체크레이즈 설계" },
@@ -369,8 +369,8 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
         <h2 className="text-xl font-bold">무료 GTO 프로그램인데 어디까지 되나요?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           기능 제한이 없습니다. 결제 수단을 묻지 않고, 잠긴 유료 구간도, 하루 사용 횟수 제한도
-          없습니다. 레이크와 레이크 캡, 정밀도 모드, 게임 트리 직접 편집처럼 유료 데스크톱
-          솔버에서 쓰던 설정도 그대로 있습니다. 유일한 경계는 이 솔버가{" "}
+          없습니다. 레이크와 레이크 캡, 정밀도 모드, 게임 트리 직접 편집처럼 설치형 데스크톱
+          솔버에서 기대할 만한 설정도 그대로 있습니다. 주된 한계는 이 솔버가{" "}
           <strong className="text-foreground">포스트플랍 헤즈업 전용</strong>이라는 것입니다.
         </p>
         <Table
@@ -430,8 +430,9 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
           <li className="text-muted-foreground">
             같은 0.08bb가 팟 5.5bb에선 1.45%(다시 볼 스팟)이고 팟 22.5bb에선 0.36%(허용 가능)입니다
             — 그래서 팟 대비로 잽니다. 팟 5.5bb 싱글레이즈팟이면{" "}
-            <strong className="text-foreground">0.02bb · 0.06bb</strong>, 팟 22.5bb 3벳팟이면{" "}
-            <strong className="text-foreground">0.08bb · 0.23bb</strong>가 경계입니다
+            <strong className="text-foreground">0.02bb · 0.055bb</strong>, 팟 22.5bb 3벳팟이면{" "}
+            <strong className="text-foreground">약 0.079bb · 0.225bb</strong>가 경계입니다 — 그래서
+            0.08bb는 최적 선택 경계를 살짝 넘습니다
           </li>
           {/*
             ★2026-08-15 — 「문제가 13개뿐인가?」라는 오해가 실제로 나왔다(사장님).
@@ -534,7 +535,8 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
         <h2 className="text-xl font-bold">GTO Wizard·PioSolver와 뭐가 다른가요?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           셋은 같은 «GTO 솔버»라도 계산이 도는 방식이 다릅니다. 미리 계산형(GTO Wizard 등)은
-          완성된 솔루션을 열람하는 쪽이라 빠르고 프리플랍까지 덮습니다. 설치형(PioSolver 등)은
+          주로 완성된 솔루션을 열람하는 쪽이라 빠르고 프리플랍까지 덮습니다(GTO Wizard는 커스텀
+          계산도 제공합니다). 설치형(PioSolver 등)은
           윈도우 PC에 설치해 직접 계산합니다. 홀덤마스터 솔버는{" "}
           <strong className="text-foreground">설치 없이 브라우저에서 직접 계산하는</strong> 쪽이라,
           레인지와 트리를 자유롭게 바꿔 볼 수 있고 화면이 한국어입니다.

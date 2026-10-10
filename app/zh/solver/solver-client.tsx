@@ -206,11 +206,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  *    1차 출처로 확인된 것은 **설치형·주로 Windows**라는 사실뿐이다.
  */
 const COMPARE: string[][] = [
-  ["怎么算", "在浏览器里现场算", "查询提前算好的答案", "安装后在自己电脑上算"],
+  ["怎么算", "在浏览器里现场算", "主要是查询提前算好的答案", "安装后在自己电脑上算"],
   ["安装", "不需要", "不需要", "要装，主要是 Windows"],
   ["覆盖范围", "翻牌后、单挑", "常常连翻牌前一起", "看版本"],
-  ["范围和决策树可否修改", "自由", "只能在已发布的目录里选", "自由"],
-  ["在哪里算", "你的设备上", "服务商那边（提前算好）", "你的设备上"],
+  ["范围和决策树可否修改", "自由", "主要在已发布的目录里选；也有服务另加自定义计算", "自由"],
+  ["在哪里算", "你的设备上", "服务商的电脑", "你的设备上"],
 ];
 
 /**
@@ -240,7 +240,7 @@ const SPOT_GROUPS = [
       //      넘어간 것은 아니다 — 48.5% 대 51.5%」 · EN ④ FAQ 「→ No.」).
       //    ▸ 「BTN C벳 빈도」는 화면에서 확인 불가다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. 앱 문구로 되돌리지 마라.
-      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "中张连张双色牌面", note: "单加注底池里唯一一个 BB 真会主动领打的牌面：BB 有 23.7% 先下注（不过范围优势仍在 BTN——胜率 BB 48.5% 对 BTN 51.5%）" },
+      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "中张连张双色牌面", note: "单加注底池里 BB 主动领打最多的牌面：BB 有 23.7% 先下注（单色 Q♠9♠2♠ 上是 11.2%），不过范围优势仍在 BTN——胜率 BB 48.5% 对 BTN 51.5%" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «变少了，主要剩下» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2%
@@ -272,7 +272,7 @@ const SPOT_GROUPS = [
       // 🔴 RP-17 정정 — 앱 zh는 «통째로 빗나감» 류 **결함형이 잔존하는 3개 언어(ko·zh·zh-hant)
       //    중 하나**다(원문 인용은 의역으로 — M-047). 정본은 «완화»가 아니라 «수치»다 —
       //    KO ⑩ 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.
-      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "低张干燥牌面", note: "3bet 范围在这里连一个顶对都翻不出来——只有卡顺和后门听牌——可超对和 A 高牌照样在施压" },
+      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "低张干燥牌面", note: "3bet 范围在这里连一个顶对都翻不出来——除了超对和 A5s 的一对 5，就是卡顺和后门听牌——可超对和 A 高牌照样在施压" },
     ],
   },
   {
@@ -536,9 +536,9 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
       <section className="mt-12">
         <h2 className="text-xl font-bold">真的全部免费吗？——能用到哪一步</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          真的——而且没有那些常见的小字条款：不要支付信息、没有锁起来的功能、没有每天的计算上限、不用注册。连通常只在付费桌面求解器里才有的设置——
+          真的——而且没有那些常见的小字条款：不要支付信息、没有锁起来的功能、没有每天的计算上限、不用注册。你会期待在安装版桌面求解器里看到的设置——
           <strong className="text-foreground">抽水和抽水封顶、精度模式、逐节点编辑决策树</strong>
-          ——也都在。唯一真正的边界是：这个工具只管
+          ——也都在。主要的限制是：这个工具只管
           <strong className="text-foreground">翻牌之后的单挑局面</strong>。
         </p>
         <Table
@@ -572,7 +572,7 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
           <Link href="/zh/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             起手牌表
           </Link>
-          按位置整理了开池范围。两块拼起来，一手牌就从头到尾都有了答案：表决定你带什么进场，求解器决定翻牌之后的事。
+          按位置整理了开池范围，求解器负责分析翻牌之后的打法——翻牌前面对加注（跟注或 3bet）需要另外的范围，开池表并不覆盖。
         </p>
       </section>
 
@@ -605,8 +605,7 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             同样是 0.08bb，在 5.5bb 的底池里是 1.45%（要复盘），在 22.5bb 的底池里只有
-            0.36%（可接受）。换算成 bb：单加注底池的两条线在 0.02bb 和 0.06bb，3bet 底池在
-            0.08bb 和 0.23bb。另有 0.02bb 和 0.05bb 的下限，防止把微小差值当成失误
+            0.36%（可接受）。换算成 bb：单加注底池的两条线在 0.02bb 和 0.055bb，3bet 底池在约 0.079bb 和 0.225bb——所以 0.08bb 刚好越过顶级操作那条线。另有 0.02bb 和 0.05bb 的下限，防止把微小差值当成失误
           </li>
           <li className="text-muted-foreground">
             题目出自每个牌局的多个决策点，组合数
@@ -676,7 +675,7 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           它们都可以叫 GTO solver 或 poker solver，差别在
           <strong className="text-foreground">「在哪算、什么时候算」</strong>。
-          GTO Wizard 这类解决方案库是查询式的：翻的是提前算好的目录，速度快，常常连翻牌前一起覆盖。PioSOLVER、TexasSolver 这类桌面求解器要下载安装，用你自己的电脑算。本页的工具
+          GTO Wizard 这类解决方案库主要是查询式的：翻的是提前算好的目录，速度快，常常连翻牌前一起覆盖（GTO Wizard 也提供自定义计算）。PioSOLVER、TexasSolver 这类桌面求解器要下载安装，用你自己的电脑算。本页的工具
           <strong className="text-foreground">在浏览器里现场算——你问的那一刻才开始算</strong>，范围和决策树随便改，而且什么都不用装。
         </p>
         <Table
@@ -713,7 +712,7 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">手机上能用吗？离线呢？</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           都行。上手的时候什么都不用装——手机浏览器打开就是完整版。不过
-          <strong className="text-foreground">想要的话，可以点「添加到主屏幕」</strong>把它放到桌面，它就会像一个 App：自己的图标、全屏、没有地址栏。那只是浏览器快捷方式，不是程序——从不弹系统权限。
+          <strong className="text-foreground">想要的话，可以点「添加到主屏幕」</strong>把它放到桌面，它就会像一个 App：自己的图标、全屏、没有地址栏。它是网页应用，不是下载的程序——加到主屏幕后也在浏览器的沙盒里运行（安卓 Chrome 会把它包成一个轻量应用包），从不弹系统权限。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           添加之后，教学案例和 GTO 训练器都存在设备里，

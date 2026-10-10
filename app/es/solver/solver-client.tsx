@@ -208,11 +208,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  *    대신 적어 주는 것은 다른 일**이다. 액수 없이도 «우리는 무료»는 성립한다.
  */
 const COMPARE: string[][] = [
-  ["Cómo se calcula", "En el navegador, en el momento", "Se consultan soluciones ya calculadas", "Se instala y calcula en tu equipo"],
+  ["Cómo se calcula", "En el navegador, en el momento", "Sobre todo, se consultan soluciones ya calculadas", "Se instala y calcula en tu equipo"],
   ["Instalación", "No hace falta", "No hace falta", "Instalador, sobre todo en Windows"],
   ["Alcance", "Postflop heads-up", "A menudo incluye preflop", "Según la edición"],
-  ["Editar rangos y árbol", "Libremente", "Dentro del catálogo publicado", "Libremente"],
-  ["Dónde corre el cálculo", "En tu dispositivo", "En el proveedor (precalculado)", "En tu dispositivo"],
+  ["Editar rangos y árbol", "Libremente", "Sobre todo dentro del catálogo publicado; algunos servicios añaden cálculo personalizado", "Libremente"],
+  ["Dónde corre el cálculo", "En tu dispositivo", "En los ordenadores del proveedor", "En tu dispositivo"],
 ];
 
 /**
@@ -243,7 +243,7 @@ const SPOT_GROUPS = [
       //    **48.5% 대 51.5%**로 여전히 BTN이 앞선다」 · EN ④ FAQ 「Does the big blind have the advantage? → **No.**」
       //    초판은 앱 문구를 따라 `favorece al que paga` 로 썼다 — 검수장이 ja에서 잡았고 **언어 불변**이라 es에도 있었다.
       //    ⚠ 「우위가 넘어갔다」가 아니라 **「리드가 처음으로 전략의 한 축이 된다」**가 정확한 서술이다.
-      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23.7% (la ventaja de rango sigue siendo de BTN — equity 48.5% contra 51.5%)" },
+      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "Conectado medio, two-tone", note: "El board de bote simple donde BB más lidera: apuesta primero el 23.7% (en el monotone Q♠9♠2♠, el 11.2%), y aun así la ventaja de rango sigue siendo de BTN — equity 48.5% contra 51.5%" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «ceden el paso» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
@@ -273,7 +273,7 @@ const SPOT_GROUPS = [
       //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
       //       **틀렸다**(2026-08-24 사장님 지적). ja 는 «정본과 어긋나지 않은 유일한 랜딩»이었을 뿐이다.
       //    🟢 문안은 수치로 갔다 — KO 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다).
-      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "Board bajo y seco", note: "El rango de 3-bet no liga ni un top pair aquí — solo gutshots y proyectos de puerta trasera — y aun así los sobrepares mantienen la presión" },
+      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "Board bajo y seco", note: "El rango de 3-bet no liga ni un top pair aquí — fuera de los sobrepares y la pareja de cincos de A5s, solo gutshots y proyectos de puerta trasera — y aun así los sobrepares mantienen la presión" },
     ],
   },
   {
@@ -558,9 +558,9 @@ export default function SolverClientEs({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Sí, y sin la letra pequeña habitual: no hay que registrar un método de pago, no hay funciones
           bloqueadas, no hay un número máximo de cálculos al día y no hace falta cuenta. Los ajustes que
-          suelen vivir en los solvers de escritorio de pago —{" "}
+          esperarías de un solver de escritorio instalado —{" "}
           <strong className="text-foreground">rake y tope de rake, modos de precisión, edición del árbol
-          nodo a nodo</strong> — también están aquí. El único límite real es que esta herramienta es{" "}
+          nodo a nodo</strong> — también están aquí. El principal límite es que esta herramienta es{" "}
           <strong className="text-foreground">solo postflop y heads-up</strong>.
         </p>
         <Table
@@ -602,8 +602,9 @@ export default function SolverClientEs({ reviews }: { reviews?: React.ReactNode 
           <Link href="/es/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             tabla de manos iniciales
           </Link>{" "}
-          reúne los rangos por posición. Con las dos piezas cubres una mano de principio a fin: la tabla
-          decide con qué entras, el solver decide qué pasa a partir del flop.
+          reúne los rangos de apertura por posición, y el solver analiza el juego a partir del flop. Ojo:
+          enfrentarte a una subida antes del flop (pagar o hacer 3-bet) requiere rangos propios, que la
+          tabla de apertura no cubre.
         </p>
       </section>
 
@@ -638,8 +639,9 @@ export default function SolverClientEs({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             Los mismos 0.08bb son un 1.45% en un bote de 5.5bb (a revisar) y un 0.36% en uno de 22.5bb
-            (aceptable). Los umbrales caen en 0.02bb y 0.06bb en el bote de subida simple, y en 0.08bb y
-            0.23bb en el bote de 3-bet. Hay suelos de 0.02bb y 0.05bb para que las diferencias mínimas
+            (aceptable). Los umbrales caen en 0.02bb y 0.055bb en el bote de subida simple, y en unos 0.079bb y
+            0.225bb en el bote de 3-bet — así que 0.08bb queda justo por encima de la línea de jugada
+            óptima. Hay suelos de 0.02bb y 0.05bb para que las diferencias mínimas
             no se confundan con el propio margen de error del solver
           </li>
           <li className="text-muted-foreground">
@@ -723,8 +725,9 @@ export default function SolverClientEs({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           A todos se les llama solver, pero lo que cambia es{" "}
           <strong className="text-foreground">dónde y cuándo se hace el cálculo</strong>. Las
-          bibliotecas de soluciones como GTO Wizard se consultan: muestran soluciones calculadas de
-          antemano, van muy rápido y suelen incluir preflop. Los solvers de escritorio como PioSOLVER se
+          bibliotecas de soluciones como GTO Wizard sirven sobre todo para consultar soluciones calculadas
+          de antemano, van muy rápido y suelen incluir preflop (GTO Wizard también ofrece cálculo
+          personalizado). Los solvers de escritorio como PioSOLVER se
           instalan y calculan en tu propia máquina, principalmente en Windows. Esta herramienta{" "}
           <strong className="text-foreground">calcula en el navegador en el momento</strong>, así que
           puedes reescribir rangos y árbol a voluntad y no hay nada que instalar.
@@ -776,8 +779,9 @@ export default function SolverClientEs({ reviews }: { reviews?: React.ReactNode 
           Sí a las dos cosas. No necesitas instalar nada para empezar — se abre en el navegador del
           móvil igual que en el ordenador — pero{" "}
           <strong className="text-foreground">si quieres, puedes añadirlo a la pantalla de inicio</strong>{" "}
-          y se comporta como una app: icono propio, pantalla completa y sin barra de direcciones. Es un
-          acceso directo del navegador, no un programa, así que nunca pide permisos del sistema.
+          y se comporta como una app: icono propio, pantalla completa y sin barra de direcciones. Sigue
+          siendo una app web, no un programa descargado: corre dentro del entorno aislado del navegador
+          (en Android, Chrome la empaqueta como una app ligera), así que nunca pide permisos del sistema.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Una vez añadido, los spots de estudio y el Entrenador GTO quedan guardados en el dispositivo y{" "}

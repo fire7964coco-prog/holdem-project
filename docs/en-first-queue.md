@@ -595,7 +595,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 7(FR 라벨 불변 · 자동 착수 금지): **EN 동문 → EN-먼저 후보** ① when-to-fold À retenir L250 «quand tu es battu, ça bat toutes les alternatives négatives»(본문 «sans la cote … ni la fold equity» 한정 탈락 · 본부 OK) ② strategy FAQ L220 «plus d'environ une main sur cinq … presque certainement trop»(6-max VPIP 20–30 % · 포맷 한정 후보) ③ position-play À retenir «la SB est le pire siège»(헤즈업 SB = 버튼 · FAQ L261 «trois joueurs ou plus» 한정 탈락) ④ starting-hands-chart FAQ 7-2 «uniquement pour pimenter les home games»(EN «purely» · 카지노 캐시 바운티 사례). **fr 용어** ⑤ 3bet L287 «fréquence de fold d'équilibre»(EN «break-even» → «균형 빈도»로 읽힘 · «seuil de rentabilité» 후보) ⑥ limping FR 고유 FAQ L152 «connecteurs assortis … set-mining»(set-mining은 페어 전용 용어) ⑦ positions H2 L163 «6-max, 8-max, 9-max» ↔ 표에 8인 행 없음(FR 고유 추가 · 8-max 삭제 또는 행 추가). ⑤⑥⑦은 fr 단독이라 §2-AG (b) 손질 회차에.
 - 검수장 처분(참고): 라벨 이동 14 · 신설 10 · 병합 `df33ff3`. 다음 회차 = FR 🅴 tour(검수장 사용자 결정 대기) · 결재 2건(위 ⚖ + MA-368 형제 갈림).
 
-### 2-AL. `/vi/solver` 신설 렌즈·아스트라가 EN 솔버 랜딩에서 찾은 EN 동문 — 2026-10-09 (5) · 🪶 자동 착수 금지
+### 2-AL. `/vi/solver` 신설 렌즈·아스트라가 EN 솔버 랜딩에서 찾은 EN 동문 — 2026-10-09 (5) · ✅ AL-1~8 이행 10-10 (10) MB-225(§2-AQ (b) 회차)
 
 > 근거 = vi 랜딩 신설 회차의 §13 렌즈 + 아스트라(codex gpt-6-astra) 보고. vi판은 EN 정정본을 구분자만 바꿔 옮긴 것이라 아래는 전부 **EN `app/en/solver/{solver-client,faq}.tsx` 원문**의 사안이고, 고치면 13로케일 솔버 랜딩 전부에 전파해야 한다. vi에서 먼저 고친 2건(AL-1·AL-2)은 vi만 바뀐 상태(로케일 고유 의도 편차 아님 — EN 정정 뒤 다시 맞춘다).
 
@@ -631,7 +631,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 범위: EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지).
 - 같은 MA 통지 2건(이행 불요): F1 리얼머니 4행 = OK(ANJ 관할) · 🪶 «18세 이상 · ANJ 인가 사이트» 한정은 권고 · 🅴 tour 5편 FR 회차 제외(51→46 · 제외 ≠ 사실 통과).
 
-### 2-AN. 우편함 수신분 — MA-387 (FR 🅵 gloss 6편 본부 재검증 · 승인 검수장 `4c6e6b3`) · 등재 2026-10-09 (11) · 미이행
+### 2-AN. 우편함 수신분 — MA-387 (FR 🅵 gloss 6편 본부 재검증 · 승인 검수장 `4c6e6b3`) · 등재 2026-10-09 (11) · (a) ✅ 이행 10-10 (10) MB-225 · (b) 미이행
 
 > 근거 = 검수장 `reports/검수-fr-r5-gloss-2026-10-09/hq-reverify/HQ-REPORT.md` §표 1~11 · `ledger/fr/holdem-{glossary,cooler,bad-beat,fish,rake,straddle}.md`. **문안 창작 아님 — 같은 글·형제의 기존 한정 문면을 재료로 원문 대조 뒤 채택/기각.** 이행 뒤 MB → 검수장이 변경 행만 전/후 대조.
 > ✅ **위치 대조(본체 10-09 · 현 main `ca90ac76`)**: 11자리 전부 ledger 축어로 실재 확인(아래 «현 위치»). EN 동문도 확인.
@@ -660,7 +660,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 범위: (b)는 EN 7자리 → 13로케일 동문 전파(fr는 같은 자리 RISKY 행) · `updated` 스탬프 settled §1-C(문장 미세 수정이면 유지). (a)는 fr만.
 - 같은 MA 통지 3건(이행 불요): ① cap #24 · rake 순액 #104 · bad-beat #96 · setup FAQ 다의어 지적 기각 → 기존 OK ② 빈도·분포 UNV · 영화 대사 fish #40·41·70 UNV(2차 전사만 · 수정 요구 아님) ③ F1은 10-09 결재② — 라벨 불변 + 성인·합법 관할 한정 권고 🪶.
 
-### 2-AO. 우편함 수신분 — MA-392 (FR GTO13 경량 트랙 · 검수장 DECISIONS §0-N · 기준 `33b3e18a`) · 등재 2026-10-09 (11) · 미이행
+### 2-AO. 우편함 수신분 — MA-392 (FR GTO13 경량 트랙 · 검수장 DECISIONS §0-N · 기준 `33b3e18a`) · 등재 2026-10-09 (11) · AO-1 ✅ 10-10 (10) MB-225 · AO-2·3 미이행
 
 > 근거 = 검수장 `reports/검수-fr-gto13-경량-2026-10-09/REPORT.md`. EN 정정 39자리 FR 반영 37 + UNV형 2(결함 잔존 0). ✅ 위치 대조(본체 10-09 · 현 main): 3자리 전부 축어 실재.
 
@@ -673,7 +673,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
 - 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
 
-### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · 미이행
+### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · AP-1·2 ✅ 10-10 (10) MB-225 · AP-3·4 미결
 
 > ru는 신설 시점에 바르게 썼다(EN 문면과 이 자리만 다름 · EN 정정 뒤 일치). 나머지 14랜딩은 EN 정정 → 전파.
 
@@ -686,7 +686,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🔗 **겹침(10-10 (4) 대조)**: AP-1 = §2-AL AL-3과 같은 자리(L169) — 검수장 MA-408이 ru 정정 문면 «BB донкует чаще всего … Q♠9♠2♠ — 11,2%»를 **OK** 판정(SRP 리드 최대 ④ 23.7 · 둘째 ⑤ 11.2) → EN 처방 꼴로 확정. AP-2 = AL-5와 같은 사안. 이행은 §2-AQ (b) 한 회차로 묶는다.
 
-### 2-AQ. 우편함 수신분 — MA-403 (MB-212·215 후기·`/s` 문구) · MA-406 (MB-211 `/vi/solver` + 횡단) · MA-408 (MB-218 `/ru/solver` + ru 문구) · 등재 2026-10-10 (4) · 회신 MB-219 · (a) ✅ 이행 10-10 (5) MB-220 · (b) 미이행
+### 2-AQ. 우편함 수신분 — MA-403 (MB-212·215 후기·`/s` 문구) · MA-406 (MB-211 `/vi/solver` + 횡단) · MA-408 (MB-218 `/ru/solver` + ru 문구) · 등재 2026-10-10 (4) · 회신 MB-219 · (a) ✅ 이행 10-10 (5) MB-220 · (b) ✅ 이행 10-10 (10) MB-225(EN 9 + AL-1·2 → 14로케일 · WORKLOG 10-10 (10))
 
 > 근거 = 검수장 `reports/판정-MB212-215-2026-10-10/judge-MB212-215.md` · `reports/2026-10/검수-solver-vi-MB211-2026-10-10/REPORT.md`·`횡단-판정표.md` · `reports/2026-10/검수-solver-ru-MB218-2026-10-10/REPORT.md`·`judge-ru-strings.md` · `ledger/landing/solver-*.md`. WRONG 0(랜딩 문면) · WRONG 1은 소스 주석(화면 영향 0).
 > ✅ **위치 대조(본체 10-10 (4) · 현 main `d71a896f`)**: 아래 «현 위치» 전부 축어 실재 확인.

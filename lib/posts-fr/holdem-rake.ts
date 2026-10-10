@@ -166,7 +166,7 @@ A. Tu ne peux pas échapper complètement au rake dans une partie où il est pr�
 
 **Q. Pourquoi la salle prend-elle un rake ?**
 
-A. Parce qu'elle ne joue pas : au poker, les joueurs s'affrontent entre eux et la maison ne mise jamais. Faire payer l'organisation de la partie, c'est tout le modèle économique d'une salle de poker, d'un casino ou d'un site en ligne. Ce prélèvement finance le personnel et le matériel, et c'est la principale source de revenus de la salle — pris sur les pots plutôt que sur tes résultats.
+A. Parce qu'elle ne joue pas : au poker, les joueurs s'affrontent entre eux et la maison ne mise jamais. Faire payer l'organisation de la partie, c'est le cœur du modèle économique d'une salle de poker, en casino comme en ligne. Ce prélèvement finance le personnel et le matériel, et c'est la principale source de revenus de la salle — pris sur les pots plutôt que sur tes résultats.
 
 **Q. Y a-t-il du rake dans les tournois de poker ?**
 

@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "holdem-cooler",
   title: "C'est quoi un cooler au poker ? La main que tu ne pouvais pas coucher",
   seoTitle: "Impossible à coucher — c'est quoi un cooler au poker ?",
-  desc: "Ta main monstre tombe sur plus fort et se coucher n'était pas une option : le cooler au poker. Pourquoi ce n'est pas un bad beat, et les exemples classiques.",
+  desc: "Ta main monstre tombe sur plus fort, impossible de te coucher : le cooler au poker. Pourquoi, au sens strict, ce n'est pas un bad beat, exemples à l'appui.",
   tldr: "Un cooler, c'est une main où tu perds un gros pot avec un jeu très fort que tu ne pouvais presque jamais coucher correctement, comme une paire de rois qui tombe sur les as, ou un set battu par un set plus gros. Au sens strict utilisé ici, tu étais derrière au moment de la mise et aucune carte chanceuse n'a renversé le coup : tu as bien joué et tu as quand même perdu. C'est le désastre le plus honnête du poker.",
   category: "glossary",
   date: "2026-10-07",

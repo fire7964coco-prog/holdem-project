@@ -136,11 +136,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  *   확인된 것은 **설치형·윈도우**뿐이다("Download the installer" · ".exe" · "Windows pop-up").
  */
 const COMPARE: string[][] = [
-  ["How it computes", "Solves in your browser, on demand", "Browse solutions computed in advance", "Solves locally after you install it"],
+  ["How it computes", "Solves in your browser, on demand", "Mainly browse solutions computed in advance", "Solves locally after you install it"],
   ["Install", "None", "None", "Installer, Windows"],
-  ["Coverage", "Postflop, heads-up", "Often includes preflop", "Postflop"],
-  ["Editing ranges and trees", "Anything you like", "Within the published solution set", "Anything you like"],
-  ["Where the solve runs", "Your own machine", "The provider's, done in advance", "Your own machine"],
+  ["Coverage", "Postflop, heads-up", "Often includes preflop", "Mainly postflop (some versions add preflop)"],
+  ["Editing ranges and trees", "Anything you like", "Mainly within the published solutions; some services add custom solving", "Anything you like"],
+  ["Where the solve runs", "Your own machine", "The provider's computers", "Your own machine"],
 ];
 
 /**
@@ -166,7 +166,7 @@ const SPOT_GROUPS = [
       //    「레인지 우위가 BB로 넘어간 것은 아니다 — 에퀴티는 48.5% 대 51.5%로 여전히 BTN이 앞선다」 ·
       //    EN ④ FAQ 「Does the big blind have the advantage? → No.」
       //    ⚠ BB가 «먼저 친다»(23.7%)는 것과 «우위»는 다른 말이다. 앱 문구로 되돌리지 마라.
-      { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The only single-raised board where BB truly leads: it bets first 23.7% of the time (the range advantage still belongs to BTN — 48.5% equity against 51.5%)" },
+      { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The single-raised board where BB leads most: it bets first 23.7% of the time (on monotone Q♠9♠2♠ it is 11.2%), yet the range advantage still belongs to BTN — 48.5% equity against 51.5%" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «give way» 형). 사유는 앱 쪽과 동일하다:
       //    🔴 **구형 문자열을 주석에도 적지 마라** — 검수장 회귀 앵커가 이 파일에서 그 문자열의
@@ -209,7 +209,7 @@ const SPOT_GROUPS = [
       //       랜딩들은 그 고침을 못 받았다.
       //    🟢 문안은 «완화»가 아니라 **수치**로 갔다 — KO 표 실측 **탑 페어 0%**
       //       (8이 들어간 핸드가 3벳 레인지에 없다). 오버페어와 층이 달라 뒤 절과 충돌하지 않는다.
-      { board: "8♦5♣2♠", name: "Low Dry Board", slug: "3bet-pot-low-board", note: "The 3-bet range flops no top pair at all here — just gutshots and backdoors — yet overpairs keep the pressure on" },
+      { board: "8♦5♣2♠", name: "Low Dry Board", slug: "3bet-pot-low-board", note: "The 3-bet range flops no top pair at all here — beyond overpairs and A5s's pair of fives, it is gutshots and backdoors — yet overpairs keep the pressure on" },
     ],
   },
   {
@@ -455,9 +455,9 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">Is it really a free poker solver?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Yes, and without the usual asterisks: no payment method, no locked features, no daily solve
-          limit and no account. The settings that normally sit behind a paid desktop solver — rake and
-          rake cap, precision modes, editing the game tree node by node — are all here. The one real
-          boundary is that this solver is{" "}
+          limit and no account. The settings you would expect from an installed desktop solver — rake and
+          rake cap, precision modes, editing the game tree node by node — are all here. The main
+          limit is that this solver is{" "}
           <strong className="text-foreground">postflop and heads-up</strong>.
         </p>
         <Table
@@ -506,8 +506,9 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
           <Link href="/en/hand-chart" className="font-semibold text-primary hover:underline">
             starting hand chart
           </Link>
-          . The two together cover a hand end to end: the chart decides what you open with, the solver
-          decides what happens after the flop.
+          . The chart gives opening ranges by position and the solver analyzes play after the flop —
+          facing a raise before the flop (calling or 3-betting) needs ranges of its own, which the
+          opening chart does not cover.
         </p>
       </section>
 
@@ -548,8 +549,9 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             The same 0.08bb is 1.45% in a 5.5bb pot (a spot to review) and 0.36% in a 22.5bb one
-            (acceptable). In a 5.5bb single raised pot the cutoffs land at 0.02bb and 0.06bb; in a
-            22.5bb 3-bet pot, 0.08bb and 0.23bb. Floors of 0.02bb and 0.05bb keep grading above solver noise
+            (acceptable). In a 5.5bb single raised pot the cutoffs land at 0.02bb and 0.055bb; in a
+            22.5bb 3-bet pot, about 0.079bb and 0.225bb — so 0.08bb sits just past the best-play line.
+            Floors of 0.02bb and 0.05bb keep grading above solver noise
           </li>
           <li className="text-muted-foreground">
             Questions are drawn from several decision points inside each spot, so the combinations{" "}
@@ -625,8 +627,8 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">How is this different from GTO Wizard or PioSOLVER?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           All three are called solvers, but they differ in where and when the calculation happens.
-          Solution libraries such as GTO Wizard let you browse spots solved in advance, which is fast
-          and can include preflop. Desktop solvers such as PioSOLVER are installed on a Windows machine
+          Solution libraries such as GTO Wizard are mainly for browsing spots solved in advance, which is
+          fast and can include preflop (GTO Wizard also offers custom solving). Desktop solvers such as PioSOLVER are installed on a Windows machine
           and solve locally. This one{" "}
           <strong className="text-foreground">solves on demand inside your browser</strong>, so ranges
           and trees are yours to rewrite with nothing to install.

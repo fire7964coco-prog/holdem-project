@@ -108,11 +108,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  * 🔴 「PioSOLVER는 유료」라고 쓰지 마라 — 확인된 것은 설치형·윈도우뿐이다(EN 주석 참조).
  */
 const COMPARE: string[][] = [
-  ["Cách tính", "Giải ngay trong trình duyệt, lúc bạn cần", "Tra các lời giải đã tính trước", "Giải tại máy sau khi cài"],
+  ["Cách tính", "Giải ngay trong trình duyệt, lúc bạn cần", "Chủ yếu tra các lời giải đã tính trước", "Giải tại máy sau khi cài"],
   ["Cài đặt", "Không", "Không", "Tệp cài đặt, Windows"],
-  ["Phạm vi", "Postflop, heads-up", "Thường có cả preflop", "Postflop"],
-  ["Sửa range và cây", "Tùy ý", "Trong bộ lời giải đã công bố", "Tùy ý"],
-  ["Phép giải chạy ở đâu", "Trên máy bạn", "Trên máy của nhà cung cấp, từ trước", "Trên máy bạn"],
+  ["Phạm vi", "Postflop, heads-up", "Thường có cả preflop", "Chủ yếu postflop (một số phiên bản có thêm preflop)"],
+  ["Sửa range và cây", "Tùy ý", "Chủ yếu trong bộ lời giải đã công bố; một số dịch vụ có thêm giải tùy chỉnh", "Tùy ý"],
+  ["Phép giải chạy ở đâu", "Trên máy bạn", "Trên máy của nhà cung cấp", "Trên máy bạn"],
 ];
 
 /**
@@ -130,7 +130,7 @@ const SPOT_GROUPS = [
       { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board A-high khô", note: "Flop điển hình về lợi thế range — lá A rơi đúng vào range của bên open" },
       { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board K-high khô", note: "Vẫn có lợi cho bên open nhưng tần suất check cao hơn. Hãy so với board có lá A" },
       { slug: "broadway-board-strategy", board: "Q♠J♦10♠", name: "Board broadway liền nhau, hai chất", note: "Trông như trúng cả hai range, nhưng trong cả loạt spot, đây là nơi BB hiện thực hóa equity kém nhất — 77,9% so với 119,4% của BTN — và check 99,9%" },
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tầm trung liền nhau, hai chất", note: "Board single raised pot duy nhất mà BB thật sự donk bet: BB bet trước 23,7% số lần (lợi thế range vẫn thuộc BTN — 51,5% so với 48,5% equity của BB)" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tầm trung liền nhau, hai chất", note: "Board single raised pot mà BB donk bet nhiều nhất: BB bet trước 23,7% số lần (trên board monotone Q♠9♠2♠ là 11,2%), nhưng lợi thế range vẫn thuộc BTN — 51,5% so với 48,5% equity của BB" },
       { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone (cả 3 lá cùng chất)", note: "Cược lớn nhường chỗ cho cược nhỏ và check — ngay cả thùng đã thành cũng check thường xuyên" },
       { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board có đôi", note: "Hầu như không ai trúng board, nên phần bluff tăng lên" },
       { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board thấp rainbow (3 lá khác chất)", note: "Cuộc chiến overcard — spot để thiết kế check-raise: trên màn hình, hành động đầu của BB là check 96,8%, bet 3,2%" },
@@ -142,7 +142,7 @@ const SPOT_GROUPS = [
     items: [
       { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, lợi thế của bên 3-bet", note: "Flop tốt nhất mà range 3-bet có thể gặp — đầy AK, AA và KK. Điều khiến một cược nhỏ ép được toàn bộ range đối thủ là cấu trúc của range đó, không phải SPR thấp" },
       { slug: "3bet-pot-bet-sizing", board: "Q♥10♥7♠", name: "Board động, hai chất", note: "Board có cả flush draw lẫn straight draw còn sống — 98,4% của range bet cùng một cỡ, hai phần ba pot" },
-      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — chỉ gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — ngoài overpair và đôi 5 của A5s, chỉ có gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
     ],
   },
   {
@@ -375,9 +375,9 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">Có thật là poker solver miễn phí không?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Có, và không có điều kiện ẩn nào: không phương thức thanh toán, không tính năng bị
-          khóa, không giới hạn số lần giải mỗi ngày, không tài khoản. Những cài đặt thường chỉ có ở solver
+          khóa, không giới hạn số lần giải mỗi ngày, không tài khoản. Những cài đặt bạn vẫn mong đợi ở một solver
           desktop phải cài — rake và mức rake tối đa, tùy chọn độ chính xác, chỉnh cây trò chơi theo từng
-          node — đều có ở đây. Giới hạn thật sự duy nhất là solver này{" "}
+          node — đều có ở đây. Giới hạn chính là solver này{" "}
           <strong className="text-foreground">chỉ giải postflop và heads-up</strong>.
         </p>
         <Table
@@ -418,8 +418,8 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
           <Link href="/vi/hand-chart" className="font-semibold text-primary hover:underline">
             bảng bài khởi đầu
           </Link>
-          . Hai thứ ghép lại bao trọn một ván bài: bảng quyết định bạn mở bài nào, solver quyết định
-          chuyện gì xảy ra sau flop.
+          . Bảng cho bạn range mở bài theo từng vị trí, còn solver phân tích lối chơi sau flop — khi
+          đối mặt với raise trước flop (call hay 3-bet), bạn cần range riêng mà bảng mở bài không bao gồm.
         </p>
       </section>
 
@@ -450,8 +450,9 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             Cùng 0,08bb là 1,45% trong pot 5,5bb (spot cần xem lại), nhưng chỉ 0,36% trong pot 22,5bb (chấp
-            nhận được). Trong single raised pot 5,5bb, hai ngưỡng tương ứng 0,02bb và 0,06bb; trong pot
-            3-bet 22,5bb là 0,08bb và 0,23bb. Mức sàn 0,02bb và 0,05bb giúp tránh coi những chênh lệch EV rất nhỏ do sai số của
+            nhận được). Trong single raised pot 5,5bb, hai ngưỡng tương ứng 0,02bb và 0,055bb; trong pot
+            3-bet 22,5bb là khoảng 0,079bb và 0,225bb — nên 0,08bb nằm ngay bên ngoài ngưỡng nước đi tốt
+            nhất. Mức sàn 0,02bb và 0,05bb giúp tránh coi những chênh lệch EV rất nhỏ do sai số của
             solver là lỗi
           </li>
           <li className="text-muted-foreground">
@@ -524,8 +525,8 @@ export default function SolverClientVi({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">Khác gì GTO Wizard hay PioSOLVER?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Cả ba đều được gọi là solver, nhưng khác nhau ở chỗ phép tính diễn ra ở đâu và lúc nào. Thư viện
-          lời giải như GTO Wizard cho bạn tra các spot đã được giải trước; cách này nhanh và có thể gồm cả
-          preflop. Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này thì{" "}
+          lời giải như GTO Wizard chủ yếu dùng để tra các spot đã được giải trước; cách này nhanh và có thể
+          gồm cả preflop (GTO Wizard cũng có tính năng giải tùy chỉnh). Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này thì{" "}
           <strong className="text-foreground">giải ngay trong trình duyệt, lúc bạn cần</strong>; bạn sửa
           range và cây tùy ý mà không phải cài gì.
         </p>

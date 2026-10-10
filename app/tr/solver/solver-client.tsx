@@ -95,11 +95,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  * 🔴 「PioSOLVER는 유료」라고 쓰지 마라 — 확인된 것은 설치형·윈도우뿐이다(EN 주석 참조).
  */
 const COMPARE: string[][] = [
-  ["Nasıl hesaplar", "Tarayıcında, istediğin an çözer", "Önceden hesaplanmış çözümlere göz atarsın", "Kurduktan sonra yerelde çözer"],
+  ["Nasıl hesaplar", "Tarayıcında, istediğin an çözer", "Çoğunlukla önceden hesaplanmış çözümlere göz atarsın", "Kurduktan sonra yerelde çözer"],
   ["Kurulum", "Yok", "Yok", "Kurulum dosyası, Windows"],
-  ["Kapsam", "Postflop, heads-up", "Çoğu zaman preflop'u da içerir", "Postflop"],
-  ["Range ve ağaç düzenleme", "İstediğin her şey", "Yayımlanmış çözüm seti içinde", "İstediğin her şey"],
-  ["Çözüm nerede çalışır", "Kendi makinende", "Sağlayıcının makinesinde, önceden", "Kendi makinende"],
+  ["Kapsam", "Postflop, heads-up", "Çoğu zaman preflop'u da içerir", "Çoğunlukla postflop (bazı sürümler preflop'u da ekler)"],
+  ["Range ve ağaç düzenleme", "İstediğin her şey", "Çoğunlukla yayımlanmış çözümler içinde; bazı servisler özel çözüm de sunar", "İstediğin her şey"],
+  ["Çözüm nerede çalışır", "Kendi makinende", "Sağlayıcının bilgisayarlarında", "Kendi makinende"],
 ];
 
 /**
@@ -118,7 +118,7 @@ const SPOT_GROUPS = [
       { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Kuru A-high board", note: "Ders kitabındaki range avantajı flop'u — as, açan oyuncunun range'ine tam oturur" },
       { board: "K♠8♦3♣", name: "Kuru K-high board", note: "Yine açanı destekler ama check'ler artar. As'lı board'la karşılaştır" },
       { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Bağlantılı broadway board, iki renkli", note: "İki range'e de oturuyor gibi görünür ama BB, serideki tüm spotlar içinde en az equity'yi burada gerçekleştirir — BTN'nin %119,4'üne karşı %77,9 — ve %99,9 check eder" },
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Bağlantılı orta board, iki renkli", note: "BB'nin gerçekten önden oynadığı tek single raised board: %23,7 oranında ilk bahsi o yapar (range avantajı yine BTN'de — BB'nin %48,5 equity'sine karşı %51,5)" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Bağlantılı orta board, iki renkli", note: "BB'nin en sık önden oynadığı single raised board: %23,7 oranında ilk bahsi o yapar (monoton Q♠9♠2♠'de bu oran %11,2), yine de range avantajı BTN'de — BB'nin %48,5 equity'sine karşı %51,5" },
       { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Monoton board (hepsi aynı renk)", note: "Büyük bahisler yerini küçük bahislere ve check'e bırakır — hazır floşlar bile sık sık check eder" },
       { board: "6♣6♦3♥", name: "Çiftli board", note: "Kimse board'a bağlanmaz, bu yüzden blöf payı artar" },
       { board: "6♠5♥2♦", name: "Düşük rainbow board", note: "Bir overcard savaşı — check-raise tasarlama spotu: ekranda BB'nin ilk aksiyonu %96,8 check, %3,2 bet" },
@@ -130,7 +130,7 @@ const SPOT_GROUPS = [
     items: [
       { board: "A♦K♠2♥", name: "A-high board, 3-bet yapanın avantajı", note: "3-bet range'inin görebileceği en iyi flop — AK, AA ve KK ile dolu. Küçük bir bahsin rakibin tüm range'ine baskı kurmasını sağlayan düşük SPR değil, o range'in şeklidir" },
       { board: "Q♥T♥7♠", name: "Dinamik iki renkli board", note: "İki canlı draw — range'in %98,4'ü aynı boyutla, potun üçte ikisi kadar bahis yapar" },
-      { board: "8♦5♣2♠", name: "Düşük kuru board", note: "3-bet range'i burada hiç top pair yapmaz — sadece gutshot'lar ve backdoor'lar — ama overpair'ler baskıyı sürdürür" },
+      { board: "8♦5♣2♠", name: "Düşük kuru board", note: "3-bet range'i burada hiç top pair yapmaz — overpair'ler ve A5s'in 5'li pair'i dışında yalnızca gutshot'lar ve backdoor'lar var — ama overpair'ler baskıyı sürdürür" },
     ],
   },
   {
@@ -356,9 +356,9 @@ export default function SolverClientTr({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">Gerçekten ücretsiz bir poker solver mı?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Evet, hem de alışılmış küçük puntolu şartlar olmadan: ödeme yöntemi yok, kilitli özellik yok,
-          günlük çözüm limiti yok, hesap yok. Normalde ücretli masaüstü solver&apos;larda duran ayarlar —
-          rake ve rake tavanı, hassasiyet modları, oyun ağacını node node düzenlemek — hepsi burada. Tek
-          gerçek sınır, bu solver&apos;ın{" "}
+          günlük çözüm limiti yok, hesap yok. Kurulumlu bir masaüstü solver&apos;dan bekleyeceğin ayarlar —
+          rake ve rake tavanı, hassasiyet modları, oyun ağacını node node düzenlemek — hepsi burada. Asıl
+          sınır, bu solver&apos;ın{" "}
           <strong className="text-foreground">postflop ve heads-up</strong> olması.
         </p>
         <Table
@@ -399,8 +399,9 @@ export default function SolverClientTr({ reviews }: { reviews?: React.ReactNode 
           <Link href="/tr/hand-chart" className="font-semibold text-primary hover:underline">
             başlangıç eli tablosunda
           </Link>
-          . İkisi birlikte bir eli baştan sona kapsar: tablo neyle açacağına, solver flop&apos;tan sonra
-          ne olacağına karar verir.
+          . Tablo pozisyona göre açılış range&apos;lerini verir, solver ise flop&apos;tan sonraki oyunu
+          analiz eder — flop öncesi bir raise&apos;e karşı (call ya da 3-bet) kendine ait range&apos;ler
+          gerekir ve açılış tablosu bunları kapsamaz.
         </p>
       </section>
 
@@ -432,7 +433,8 @@ export default function SolverClientTr({ reviews }: { reviews?: React.ReactNode 
           <li className="text-muted-foreground">
             Aynı 0,08bb, 5,5bb&apos;lik potta %1,45 (gözden geçirilecek spot), 22,5bb&apos;lik potta
             %0,36&apos;dır (kabul edilebilir). 5,5bb&apos;lik single raised potta eşikler 0,02bb ve
-            0,06bb&apos;ye, 22,5bb&apos;lik 3-bet potta 0,08bb ve 0,23bb&apos;ye denk gelir. 0,02bb ve
+            0,055bb&apos;ye, 22,5bb&apos;lik 3-bet potta yaklaşık 0,079bb ve 0,225bb&apos;ye denk gelir —
+            yani 0,08bb en iyi oyun sınırının hemen dışında kalır. 0,02bb ve
             0,05bb&apos;lik tabanlar puanlamayı solver gürültüsünün üzerinde tutar
           </li>
           <li className="text-muted-foreground">
@@ -504,8 +506,8 @@ export default function SolverClientTr({ reviews }: { reviews?: React.ReactNode 
         <h2 className="text-xl font-bold">GTO Wizard ya da PioSOLVER&apos;dan farkı ne?</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Üçüne de solver denir, ama hesaplamanın nerede ve ne zaman yapıldığı bakımından ayrılırlar. GTO Wizard
-          gibi çözüm kütüphaneleri önceden çözülmüş spotlara göz atmanı sağlar; bu hızlıdır ve preflop&apos;u
-          da içerebilir. PioSOLVER gibi masaüstü solver&apos;lar bir Windows bilgisayara kurulur ve yerelde
+          gibi çözüm kütüphaneleri çoğunlukla önceden çözülmüş spotlara göz atmak içindir; bu hızlıdır ve
+          preflop&apos;u da içerebilir (GTO Wizard özel çözüm de sunar). PioSOLVER gibi masaüstü solver&apos;lar bir Windows bilgisayara kurulur ve yerelde
           çözer. Bu solver ise{" "}
           <strong className="text-foreground">tarayıcının içinde, istediğin an çözer</strong>;
           range&apos;leri ve ağaçları hiçbir şey kurmadan istediğin gibi yeniden yazabilirsin.

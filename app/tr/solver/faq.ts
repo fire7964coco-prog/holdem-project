@@ -49,11 +49,11 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "GTO Wizard ya da PioSOLVER'dan farkı ne?",
-    a: "Temel fark, hesaplamanın nerede yapıldığıdır. GTO Wizard gibi çözüm kütüphaneleri önceden çözülmüş spotlara göz atmanı sağlar; bu hızlıdır ve preflop'u da kapsar. PioSOLVER gibi masaüstü solver'lar bir Windows bilgisayara kurulur ve yerelde çözer. Bu solver ise tarayıcında çözer; hiçbir şey kurmadan range'leri ve ağaçları istediğin gibi yeniden yazabilirsin.",
+    a: "Temel fark, hesaplamanın nerede yapıldığıdır. GTO Wizard gibi çözüm kütüphaneleri çoğunlukla önceden çözülmüş spotlara göz atmak içindir; bu hızlıdır ve preflop'u da kapsar (GTO Wizard özel çözüm de sunar). PioSOLVER gibi masaüstü solver'lar bir Windows bilgisayara kurulur ve yerelde çözer. Bu solver ise tarayıcında çözer; hiçbir şey kurmadan range'leri ve ağaçları istediğin gibi yeniden yazabilirsin.",
   },
   {
     q: "Hangi GTO solver daha iyi, PioSOLVER mı GTO Wizard mı?",
-    a: "Farklı sorulara cevap verirler; dürüst cevap ne yapmak istediğine bağlı. Bir çözüm kütüphanesine göz atmak daha hızlıdır ve preflop'u kapsar, bu da standart spotları çalışmaya uygundur. Kurulu bir masaüstü solver, bir tarayıcının kaldırabileceğinden büyük ağaçları işler. Hiçbir şey ödemeden ya da kurmadan kendi postflop spotunu hemen çözmek istiyorsan bu solver tam bunun için — cevabını ikisinden biriyle de karşılaştırabilirsin.",
+    a: "Farklı sorulara cevap verirler; dürüst cevap ne yapmak istediğine bağlı. Bir çözüm kütüphanesine göz atmak daha hızlıdır ve preflop'u kapsar, bu da standart spotları çalışmaya uygundur. Kurulu bir masaüstü solver, bir tarayıcının kaldırabileceğinden büyük ağaçları işler. Ücretsiz ve hiçbir şey kurmadan kendi postflop spotunu hemen çözmek istiyorsan bu solver tam bunun için — cevabını ikisinden biriyle de karşılaştırabilirsin.",
   },
   {
     // tr SERP 보강(L5 §8): 자동완성 «poker solver android»·«poker solver iphone» → 기기명 명시.
@@ -82,7 +82,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Puanlama neden pota göre yapılıyor?",
-    a: "Çünkü aynı 0,08bb, 5,5bb'lik bir potun %1,45'idir — gözden geçirilecek bir spot — ama 22,5bb'lik bir potun yalnızca %0,36'sıdır, bu da kabul edilebilir. Mutlak bb ile puanlama 3-bet potları olduklarından kötü gösteriyordu; bu yüzden puanlama Ağustos 2026'da potun yüzdesine geçti. 5,5bb'lik single raised potta eşikler 0,02bb ve 0,06bb'ye, 22,5bb'lik 3-bet potta 0,08bb ve 0,23bb'ye denk gelir.",
+    a: "Çünkü aynı 0,08bb, 5,5bb'lik bir potun %1,45'idir — gözden geçirilecek bir spot — ama 22,5bb'lik bir potun yalnızca %0,36'sıdır, bu da kabul edilebilir. Mutlak bb ile puanlama 3-bet potları olduklarından kötü gösteriyordu; bu yüzden puanlama Ağustos 2026'da potun yüzdesine geçti. 5,5bb'lik single raised potta eşikler 0,02bb ve 0,055bb'ye, 22,5bb'lik 3-bet potta yaklaşık 0,079bb ve 0,225bb'ye denk gelir; yani 0,08bb en iyi oyun sınırının hemen dışında kalır.",
   },
   {
     q: "Çalışma ilerlemem nereye kaydediliyor?",
@@ -94,7 +94,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Ana ekrana yüklemek güvenli mi?",
-    a: "Cihazına alışılmış anlamda hiçbir şey kurulmaz — tarayıcı, yine tarayıcının içinde çalışan bir kısayol oluşturur. Bizim sözümüze güvenmek yerine kendin doğrulayabilirsin: kamera, rehber, SMS ya da konum izni istenmez ve geliştirici araçlarındaki ağ (network) sekmesi yapılan istekleri gösterir. Kaynak kodu GitHub'da AGPL-3.0 ile herkese açıktır ve kaldırdığında geride hiçbir şey kalmaz.",
+    a: "Bu indirilen bir program değil, bir web uygulamasıdır — ana ekrana eklendiğinde bile tarayıcının sandbox'ı içinde çalışır (Android'de Chrome onu hafif bir uygulama paketine sarar). Bizim sözümüze güvenmek yerine kendin doğrulayabilirsin: kamera, rehber, SMS ya da konum izni istenmez ve geliştirici araçlarındaki ağ (network) sekmesi yapılan istekleri gösterir. Kaynak kodu GitHub'da AGPL-3.0 ile herkese açıktır ve kaldırdığında tarayıcı, kayıtlı verilerini de silmene izin verir.",
   },
   {
     q: "Samsung Internet yüklerken güvenli olmayan uygulama uyarısı veriyor — bu ne anlama geliyor?",

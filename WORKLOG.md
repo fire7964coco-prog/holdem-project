@@ -1,3 +1,10 @@
+## 2026-10-10 (10) — queue §2-AQ (b) 솔버 랜딩 EN→14로케일 · §2-AN (a) fr 4 · §2-AO AO-1 · MB-225
+
+- 사장님 지시(«§2-AQ (b) 9자리(AP-1 포함) + §2-AN fr 고유 4·§2-AO 1 회차 진행»). EN `app/en/solver/{solver-client.tsx,faq.ts}` 9자리 + 같은 파일 AL-1·2(사실 시트 §5 처방 · vi 선반영분 EN 맞춤): AL-3=AP-1 «leads most 23.7% (monotone Q♠9♠2♠ 11.2%)» · AL-4 «beyond overpairs and A5s's pair of fives» · AL-5=AP-2 경계 «0.02/0.055 · about 0.079/0.225 → 0.08bb sits just past the best-play line»(본문+FAQ) · AL-6 차트=오픈 레인지·프리플랍 레이즈 대응은 별도 · AL-7 «The main limit» · AL-8 «mainly for browsing … (GTO Wizard also offers custom solving)» + 비교표 열 3칸 · X-1 «Mainly postflop (some versions add preflop)» · X-2 «web app, not a downloaded program … sandbox (Android Chrome = lightweight app package)» · X-3 «the browser lets you clear its stored data».
+- 14로케일 전파 = 서브에이전트 3(ko·ja·zh·zh-hant / es·pt·de·fr / id·ms·hi·vi·tr·ru) + 헤드 대조. 판정 예외 존중(AL-4 ko·ja·fr·id OK · AL-6 fr Charts 탭 · X-1 헤지형 로케일 · ru AL-3·AQ-4 기정정). 문장 부재 자리는 «해당 없음»(ms·hi 구조 · X-3 = en·ko·ja·vi·tr·ru만). 범위 밖 동형 채택: X-2 본문 모바일 절 동문(es·pt·de·fr·zh·zh-hant·id) · ja faq AL-1 동형 · ru·vi AL-1 «обычно… только»/«thường chỉ» 배타형 → EN 꼴.
+- fr 5자리: AN-1 cooler desc «au sens strict»(160자 상한 → 155자로 재구성) · AN-2 fish 카드 «gonfle le pot avant même le flop» · AN-3 rake FAQ «le cœur du modèle économique d'une salle de poker, en casino comme en ligne» · AN-4 straddle FAQ 헤즈업 예외(fr blind-meaning 축어 꼴) · AO-1 «une carte que l'agresseur préflop possède davantage que BB». `updated` 유지(§1-C 미세 수정). audit:hard fr 🔴 0.
+- 남긴 것(MB 통지): ja faq «課金プランも広告もなく»(타 앱 유료 암시 · AL-1 성격) · zh·zh-hant faq L53·es FAQ L60·pt FAQ L63 «차트=진입 / 솔버=플랍 이후» 문형(«끝까지 덮는다» 주장 없음) · 소스 주석 옛 반올림값(ko·es·id · 화면 0).
+
 ## 2026-10-10 (9) — vi 레인 워크트리 정리 · 우편함 MB-224
 
 - 워크트리 `Holdem-vi-{gloss,gto,head,prob,rank,rules,strat,tour}` 8개 제거: 전 브랜치 main 조상 확인 · 미커밋 = rank·tour `tsconfig.tsbuildinfo`(빌드 산출물)뿐 · node_modules 정션 `rmdir` 후 `worktree remove --force` · vi-head `.env.local` 폴더째 삭제 · 브랜치 보존 · 본 레포 node_modules 무사.

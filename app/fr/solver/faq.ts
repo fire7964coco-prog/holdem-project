@@ -53,7 +53,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Faut-il télécharger ou installer quelque chose ?",
-    a: "Non. Le solver tourne directement dans ton navigateur grâce à WebAssembly — Windows, macOS, Linux et mobile, sans fichier d'installation. Si tu veux, tu peux appuyer sur « Ajouter à l'écran d'accueil » pour le garder sous la main : rien ne s'installe vraiment — juste une icône qui rouvre le navigateur, sans qu'aucune permission système ne soit demandée.",
+    a: "Non. Le solver tourne directement dans ton navigateur grâce à WebAssembly — Windows, macOS, Linux et mobile, sans fichier d'installation. Si tu veux, tu peux appuyer sur « Ajouter à l'écran d'accueil » pour le garder sous la main : ça reste une app web, pas un programme téléchargé — elle tourne dans le bac à sable du navigateur (sur Android, Chrome l'emballe dans un paquet d'app léger), sans qu'aucune permission système ne soit demandée.",
   },
   {
     // 🔴 `GTO` 단독 = 자동차·아니메 오염(뱅크 §1-①) → 문항이 «au poker»로 못박는다.
@@ -98,7 +98,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   {
     // 🟢 정합 렌즈 반영(2026-08-25) — 비교 절의 «l'endroit et au moment du calcul» 축어를 변주.
     q: "C'est le même genre d'outil que GTO Wizard ou PioSolver ?",
-    a: "Tous appartiennent à la famille des solvers ; ce qui les sépare, c'est qui calcule, où, et à quel moment. Ici, la réponse est calculée à l'instant où tu cliques, avec tes ranges et ton arbre de décision, sur ton propre appareil. Les bibliothèques de solutions affichent des réponses précalculées, stockées dans un catalogue. PioSolver est un programme de bureau à installer, surtout sous Windows, qui calcule sur ta machine. Aucun n'est « meilleur » dans l'absolu — ils ne répondent pas au même besoin.",
+    a: "Tous appartiennent à la famille des solvers ; ce qui les sépare, c'est qui calcule, où, et à quel moment. Ici, la réponse est calculée à l'instant où tu cliques, avec tes ranges et ton arbre de décision, sur ton propre appareil. Les bibliothèques de solutions servent surtout à consulter des réponses précalculées, stockées dans un catalogue (GTO Wizard propose aussi du calcul sur mesure). PioSolver est un programme de bureau à installer, surtout sous Windows, qui calcule sur ta machine. Aucun n'est « meilleur » dans l'absolu — ils ne répondent pas au même besoin.",
   },
   {
     // 🔴 무료 설치형 오픈소스와의 대비 — 남의 제품 «성능·가격» 주장은 안 쓴다(§12-B). 구조 사실만.

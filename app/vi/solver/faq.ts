@@ -54,7 +54,7 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
   },
   {
     q: "Khác gì GTO Wizard hay PioSOLVER?",
-    a: "Khác chủ yếu ở chỗ phép tính diễn ra ở đâu. Thư viện lời giải như GTO Wizard cho bạn tra các spot đã được giải trước — nhanh và có cả preflop. Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này giải ngay trong trình duyệt của bạn, nên bạn sửa range và cây tùy ý mà không phải cài gì.",
+    a: "Khác chủ yếu ở chỗ phép tính diễn ra ở đâu. Thư viện lời giải như GTO Wizard chủ yếu dùng để tra các spot đã được giải trước — nhanh và có cả preflop (GTO Wizard cũng có tính năng giải tùy chỉnh). Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này giải ngay trong trình duyệt của bạn, nên bạn sửa range và cây tùy ý mà không phải cài gì.",
   },
   {
     q: "GTO solver nào tốt hơn, PioSOLVER hay GTO Wizard?",
@@ -91,7 +91,7 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
   },
   {
     q: "Vì sao chấm điểm tương đối theo pot?",
-    a: "Vì cùng 0,08bb là 1,45% của pot 5,5bb — một spot cần xem lại — nhưng chỉ là 0,36% của pot 22,5bb, mức chấp nhận được. Chấm theo bb tuyệt đối khiến pot 3-bet trông tệ hơn thực tế, nên từ tháng 8/2026 cách chấm chuyển sang phần trăm pot. Trong single raised pot 5,5bb, hai ngưỡng tương ứng 0,02bb và 0,06bb; trong pot 3-bet 22,5bb là 0,08bb và 0,23bb.",
+    a: "Vì cùng 0,08bb là 1,45% của pot 5,5bb — một spot cần xem lại — nhưng chỉ là 0,36% của pot 22,5bb, mức chấp nhận được. Chấm theo bb tuyệt đối khiến pot 3-bet trông tệ hơn thực tế, nên từ tháng 8/2026 cách chấm chuyển sang phần trăm pot. Trong single raised pot 5,5bb, hai ngưỡng tương ứng 0,02bb và 0,055bb; trong pot 3-bet 22,5bb là khoảng 0,079bb và 0,225bb, nên 0,08bb nằm ngay bên ngoài ngưỡng nước đi tốt nhất.",
   },
   {
     q: "Tiến độ học của tôi được lưu ở đâu?",
@@ -103,7 +103,7 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
   },
   {
     q: "Cài lên màn hình chính có an toàn không?",
-    a: "Không có gì được cài vào thiết bị theo nghĩa thông thường — trình duyệt chỉ tạo một lối tắt chạy bên trong trình duyệt. Bạn có thể tự kiểm chứng thay vì tin lời chúng tôi: ứng dụng không xin quyền camera, danh bạ, SMS hay vị trí, và tab mạng (network) trong công cụ nhà phát triển cho thấy mọi yêu cầu nó gửi. Mã nguồn công khai trên GitHub theo AGPL-3.0, và gỡ đi thì không để lại gì.",
+    a: "Đây là ứng dụng web, không phải chương trình tải về — nó chạy trong sandbox của trình duyệt kể cả khi đã thêm vào màn hình chính (trên Android, Chrome đóng gói nó thành một gói ứng dụng nhẹ). Bạn có thể tự kiểm chứng thay vì tin lời chúng tôi: ứng dụng không xin quyền camera, danh bạ, SMS hay vị trí, và tab mạng (network) trong công cụ nhà phát triển cho thấy mọi yêu cầu nó gửi. Mã nguồn công khai trên GitHub theo AGPL-3.0, và khi gỡ ứng dụng, trình duyệt cho phép bạn xóa luôn cả dữ liệu đã lưu của nó.",
   },
   {
     q: "Samsung Internet báo ứng dụng không an toàn khi cài — nghĩa là gì?",

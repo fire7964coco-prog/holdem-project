@@ -104,7 +104,7 @@ Ici, le reste penche aussi du côté de la petite blinde. La hauteur Roi fait 22
 
 :::pull[Ce qui fixe la fréquence de mise, ce n'est pas le nombre de combos de ta meilleure classe. C'est de savoir si ta range entière est meilleure que la sienne.]:::
 
-L'as est la carte que l'agresseur préflop possède le plus : dans ce spot, 95 combos contre 72, **environ 1,3 fois plus.** Quand cette carte tombe deux fois au flop, le haut de la range et tout le reste penchent **du même côté**, et c'est là que la fréquence de mise monte à 80 %.
+L'as est une carte que l'agresseur préflop possède davantage que BB : dans ce spot, 95 combos contre 72, **environ 1,3 fois plus.** Quand cette carte tombe deux fois au flop, le haut de la range et tout le reste penchent **du même côté**, et c'est là que la fréquence de mise monte à 80 %.
 
 ## Qui a le plus de brelans ?
 

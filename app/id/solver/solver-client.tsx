@@ -173,11 +173,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  * 🔴 **「PioSolver berbayar」라고 단정하지 마라** — 1차 출처로 확인된 것은 설치형·주로 Windows뿐.
  */
 const COMPARE: string[][] = [
-  ["Cara menghitung", "Langsung, di browser", "Menampilkan jawaban yang sudah dihitung", "Di PC Anda, setelah diinstal"],
+  ["Cara menghitung", "Langsung, di browser", "Terutama menampilkan jawaban yang sudah dihitung", "Di PC Anda, setelah diinstal"],
   ["Instalasi", "Tidak ada", "Tidak ada", "Ya, terutama Windows"],
   ["Cakupan", "Postflop, heads-up", "Sering termasuk preflop", "Tergantung versi"],
-  ["Range dan pohon bisa diubah", "Bebas", "Hanya dalam katalog yang dipublikasikan", "Bebas"],
-  ["Tempat perhitungan", "Di perangkat Anda", "Di penyedia, sebelum Anda membuka", "Di perangkat Anda"],
+  ["Range dan pohon bisa diubah", "Bebas", "Terutama dalam katalog yang dipublikasikan; sebagian layanan menambah perhitungan kustom", "Bebas"],
+  ["Tempat perhitungan", "Di perangkat Anda", "Di komputer penyedia", "Di perangkat Anda"],
 ];
 
 /**
@@ -202,7 +202,7 @@ const SPOT_GROUPS = [
       // 🟢 §4-B ③(77,9/119,4 · 체크 99,9). 편 수 하드코딩 없음(RP-08).
       { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Board Broadway terhubung, two-tone", note: "Board yang tampak mengenai kedua range. Justru di sini BB merealisasikan equity paling buruk di seluruh seri ini — 77,9% terealisasi berbanding 119,4% untuk BTN — dan BB check 99,9%" },
       // 🔴 RP-01·RP-02 회피 — «콜러 우위»·«C벳 붕괴»를 쓰지 않는다. §4-B ④: OOP 벳 23,7% · 48,5 대 51,5.
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tengah terhubung, two-tone", note: "Satu-satunya board single raised pot tempat BB benar-benar mengambil inisiatif: BB bet lebih dulu 23,7% — tetapi range advantage tetap di BTN: equity BB 48,5% berbanding BTN 51,5%" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tengah terhubung, two-tone", note: "Board single raised pot tempat BB paling sering mengambil inisiatif: BB bet lebih dulu 23,7% (di board monotone Q♠9♠2♠ angkanya 11,2%) — tetapi range advantage tetap di BTN: equity BB 48,5% berbanding BTN 51,5%" },
       // 🪶 모노톤 보드 — 사이즈 분포를 «관찰하라»는 지시 대신 «무엇을 공부하는 스팟인가»만.
       { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone (satu suit)", note: "Spot untuk mempelajari cara flush yang sudah jadi dan flush draw membagi bet size di board monotone — pilihan size di sini sangat berbeda dari board two-tone" },
       { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board paired", note: "Board yang jarang mengenai kedua range, sehingga porsi bluff ikut bergeser. Tabel detail menunjukkan hand mana yang bet sebagai bluff" },
@@ -513,10 +513,10 @@ export default function SolverClientId({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Benar-benar gratis — semua fitur, tanpa batas pemakaian, dan tanpa catatan kaki yang
           biasa: tidak ada kartu pembayaran yang harus ditinggalkan, tidak ada fitur yang dikunci,
-          tidak ada kuota perhitungan harian, tidak ada pendaftaran. Bahkan pengaturan yang biasanya
-          hanya ada di solver desktop berbayar —{" "}
+          tidak ada kuota perhitungan harian, tidak ada pendaftaran. Pengaturan yang biasa Anda
+          harapkan dari solver desktop yang diinstal —{" "}
           <strong className="text-foreground">rake dan cap rake, mode presisi, edit pohon keputusan
-          per node</strong> — ada di sini. Satu-satunya batas yang sebenarnya: alat ini hanya
+          per node</strong> — ada di sini. Batas utamanya: alat ini hanya
           mencakup <strong className="text-foreground">situasi heads-up setelah flop</strong>.
         </p>
         <Table
@@ -557,8 +557,9 @@ export default function SolverClientId({ reviews }: { reviews?: React.ReactNode 
           <Link href="/id/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             chart starting hands
           </Link>
-          . Keduanya bersama-sama menjawab satu hand dari ujung ke ujung: chart memutuskan hand apa
-          yang Anda masukkan, solver memutuskan semua yang terjadi setelah flop.
+          . Chart memberi range open per posisi, dan solver menganalisis permainan setelah flop —
+          menghadapi raise sebelum flop (call atau 3-bet) butuh range tersendiri, yang tidak dicakup
+          chart open itu.
         </p>
       </section>
 
@@ -601,7 +602,8 @@ export default function SolverClientId({ reviews }: { reviews?: React.ReactNode 
           <li className="text-muted-foreground">
             Selisih 0,08bb yang sama berbobot 1,45% di pot 5,5bb (perlu ditinjau) dan hanya 0,36% di
             pot 22,5bb (masih bisa diterima). Dalam bb: dua ambang single raised pot jatuh di 0,02bb
-            dan 0,06bb, ambang pot 3-bet di 0,08bb dan 0,23bb. Dua batas bawah (0,02bb dan 0,05bb)
+            dan 0,055bb, ambang pot 3-bet di sekitar 0,079bb dan 0,225bb — jadi 0,08bb berada tepat
+            di luar batas pilihan terbaik. Dua batas bawah (0,02bb dan 0,05bb)
             mencegah selisih yang sangat kecil dihitung sebagai kesalahan
           </li>
           {/*
@@ -689,8 +691,9 @@ export default function SolverClientId({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Semuanya bisa disebut GTO solver atau solver poker; bedanya ada pada{" "}
           <strong className="text-foreground">tempat dan waktu perhitungan</strong>. Pustaka solusi
-          seperti GTO Wizard bekerja dengan cara menelusuri katalog yang sudah dihitung sebelumnya —
-          cepat, dan preflop sering ikut tercakup. Solver desktop seperti PioSolver atau TexasSolver
+          seperti GTO Wizard terutama dipakai untuk menelusuri katalog yang sudah dihitung sebelumnya —
+          cepat, dan preflop sering ikut tercakup (GTO Wizard juga menawarkan perhitungan kustom).
+          Solver desktop seperti PioSolver atau TexasSolver
           diinstal dan menghitung di PC Anda. Alat di halaman ini{" "}
           <strong className="text-foreground">menghitung langsung di browser — perhitungan dimulai
           saat Anda mengajukan pertanyaannya</strong>, range dan pohon bisa diubah sesuka hati, tanpa
@@ -739,7 +742,8 @@ export default function SolverClientId({ reviews }: { reviews?: React.ReactNode 
           versi lengkapnya. Meski begitu,{" "}
           <strong className="text-foreground">kalau mau, pasang ke layar utama</strong>: solver ini
           akan berperilaku seperti aplikasi biasa — ikon sendiri, layar penuh, tanpa bilah alamat.
-          Ini pintasan browser, bukan program yang diinstal — tidak pernah meminta izin sistem.
+          Ini tetap web app di dalam sandbox browser, bukan program yang diunduh (di Android, Chrome
+          membungkusnya dalam paket aplikasi ringan) — tidak pernah meminta izin sistem.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Setelah dipasang, spot belajar dan Trainer GTO tetap ada di perangkat Anda,{" "}

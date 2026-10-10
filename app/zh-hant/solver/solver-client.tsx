@@ -222,11 +222,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  *    1차 출처로 확인된 것은 **설치형·주로 Windows**라는 사실뿐이다.
  */
 const COMPARE: string[][] = [
-  ["怎麼算", "在瀏覽器裡現場算", "查詢提前算好的答案", "安裝後在自己電腦上算"],
+  ["怎麼算", "在瀏覽器裡現場算", "主要是查詢提前算好的答案", "安裝後在自己電腦上算"],
   ["安裝", "不需要", "不需要", "要裝，主要是 Windows"],
   ["涵蓋範圍", "翻牌後、單挑", "常常連翻牌前一起", "看版本"],
-  ["範圍和決策樹可否修改", "自由", "只能在已發布的目錄裡選", "自由"],
-  ["在哪裡算", "你的裝置上", "服務商那邊（提前算好）", "你的裝置上"],
+  ["範圍和決策樹可否修改", "自由", "主要在已發布的目錄裡選；也有服務另加自訂計算", "自由"],
+  ["在哪裡算", "你的裝置上", "服務商的電腦", "你的裝置上"],
 ];
 
 /**
@@ -255,7 +255,7 @@ const SPOT_GROUPS = [
       // 🔴🔴 RP-01 계열 + RP-02 정정 — 앱 zh-hant는 아직 «콜러 우위 + C벳 빈도 붕괴» 류다
       //    (8개 언어 전건 · 원문은 5langs 축어 문서 §6 — 주석 인용은 의역으로, M-047).
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%** · 에퀴티 48.5 대 51.5. 앱 문구로 되돌리지 마라.
-      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "中張連張雙色牌面", note: "單加注底池裡唯一一個 BB 真會主動領打的牌面：BB 有 23.7% 先下注（不過範圍優勢仍在 BTN——勝率 BB 48.5% 對 BTN 51.5%）" },
+      { board: "9♥8♥7♣", slug: "donk-bet-strategy", name: "中張連張雙色牌面", note: "單加注底池裡 BB 主動領打最多的牌面：BB 有 23.7% 先下注（單色 Q♠9♠2♠ 上是 11.2%），不過範圍優勢仍在 BTN——勝率 BB 48.5% 對 BTN 51.5%" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «變少了，主要剩下» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2%
@@ -287,7 +287,7 @@ const SPOT_GROUPS = [
       // 🔴 RP-17 정정 — 앱 zh-hant는 «整個 빗나감» 류 **결함형이 잔존하는 3개 언어(ko·zh·zh-hant)
       //    중 하나**다(원문 인용은 의역으로 — M-047). 정본은 «완화»가 아니라 «수치»다 —
       //    KO ⑩ 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.
-      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "低張乾燥牌面", note: "3bet 範圍在這裡連一個頂對都翻不出來——只有卡順和後門聽牌——但超對和 A 高牌照樣在施壓" },
+      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "低張乾燥牌面", note: "3bet 範圍在這裡連一個頂對都翻不出來——除了超對和 A5s 的一對 5，就是卡順和後門聽牌——但超對和 A 高牌照樣在施壓" },
     ],
   },
   {
@@ -544,7 +544,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
       <section className="mt-12">
         <h2 className="text-xl font-bold">免費能用到哪一步——全部功能、不限次數</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          真的全部免費——而且沒有那些常見的小字條款：不用留付款資訊、沒有鎖起來的功能、沒有每天的計算上限、不用註冊。連通常只在付費桌面解算器裡才有的設定——<strong className="text-foreground">抽水和抽水封頂、精度模式、逐節點編輯決策樹</strong>——也都在。唯一真正的邊界是：這個工具只管<strong className="text-foreground">翻牌之後的單挑局面</strong>。
+          真的全部免費——而且沒有那些常見的小字條款：不用留付款資訊、沒有鎖起來的功能、沒有每天的計算上限、不用註冊。你會期待在安裝版桌面解算器裡看到的設定——<strong className="text-foreground">抽水和抽水封頂、精度模式、逐節點編輯決策樹</strong>——也都在。主要的限制是：這個工具只管<strong className="text-foreground">翻牌之後的單挑局面</strong>。
         </p>
         <Table
           head={["功能", "包含", "備註"]}
@@ -577,7 +577,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
           <Link href="/zh-hant/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             起手牌表
           </Link>
-          按位置整理了開池範圍。兩塊拼起來，一手牌就從頭到尾都有了答案：表決定你帶什麼進場，解算器決定翻牌之後的事。
+          按位置整理了開池範圍，解算器負責分析翻牌之後的打法——翻牌前面對加注（跟注或 3bet）需要另外的範圍，開池表並不涵蓋。
         </p>
       </section>
 
@@ -608,7 +608,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
             <span className="font-semibold text-orange-500">超過 1%</span> 值得回頭復盤
           </li>
           <li className="text-muted-foreground">
-            同樣是 0.08bb，在 5.5bb 的底池裡是 1.45%（要復盤），在 22.5bb 的底池裡只有 0.36%（可接受）。換算成 bb：單加注底池的兩條線在 0.02bb 和 0.06bb，3bet 底池在 0.08bb 和 0.23bb。另有 0.02bb 和 0.05bb 的下限，防止把微小差值當成失誤
+            同樣是 0.08bb，在 5.5bb 的底池裡是 1.45%（要復盤），在 22.5bb 的底池裡只有 0.36%（可接受）。換算成 bb：單加注底池的兩條線在 0.02bb 和 0.055bb，3bet 底池在約 0.079bb 和 0.225bb——所以 0.08bb 剛好越過頂級操作那條線。另有 0.02bb 和 0.05bb 的下限，防止把微小差值當成失誤
           </li>
           <li className="text-muted-foreground">
             題目出自每個牌局的多個決策點，組合數<strong className="text-foreground">上萬</strong>（目標可剝削度 0.5%）。也可以專練一類局面：單加注底池、3bet 底池或盲位對戰
@@ -674,7 +674,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
       <section className="mt-12">
         <h2 className="text-xl font-bold">和 GTO Wizard、PioSOLVER、TexasSolver 這些解算器的差別</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          它們都可以叫 GTO solver 或 poker solver，差別在<strong className="text-foreground">「在哪算、什麼時候算」</strong>。GTO Wizard 這類解決方案庫是查詢式的：翻的是提前算好的目錄，速度快，常常連翻牌前一起涵蓋。PioSOLVER、TexasSolver 這類桌面解算器要下載安裝，用你自己的電腦算。本頁的工具<strong className="text-foreground">在瀏覽器裡現場算——你問的那一刻才開始算</strong>，範圍和決策樹隨便改，而且什麼都不用裝。
+          它們都可以叫 GTO solver 或 poker solver，差別在<strong className="text-foreground">「在哪算、什麼時候算」</strong>。GTO Wizard 這類解決方案庫主要是查詢式的：翻的是提前算好的目錄，速度快，常常連翻牌前一起涵蓋（GTO Wizard 也提供自訂計算）。PioSOLVER、TexasSolver 這類桌面解算器要下載安裝，用你自己的電腦算。本頁的工具<strong className="text-foreground">在瀏覽器裡現場算——你問的那一刻才開始算</strong>，範圍和決策樹隨便改，而且什麼都不用裝。
         </p>
         <Table
           head={["", "HoldemMaster 解算器", "解決方案庫", "桌面解算器"]}
@@ -710,7 +710,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
       <section className="mt-12">
         <h2 className="text-xl font-bold">手機與離線使用——按「加入主畫面」就行</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          手機瀏覽器打開就是完整版，什麼都不用裝。不過<strong className="text-foreground">想要的話，可以按「加入主畫面」</strong>把它放到桌面，它就會像一個 App：自己的圖示、全螢幕、沒有網址列。那只是瀏覽器捷徑，不是程式——從不跳系統權限。
+          手機瀏覽器打開就是完整版，什麼都不用裝。不過<strong className="text-foreground">想要的話，可以按「加入主畫面」</strong>把它放到桌面，它就會像一個 App：自己的圖示、全螢幕、沒有網址列。它是網頁應用程式，不是下載的程式——加入主畫面後也在瀏覽器的沙盒裡執行（Android 的 Chrome 會把它包成一個輕量的應用程式套件），從不跳系統權限。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           加入之後，教學案例和 GTO 訓練器都存在裝置裡，<strong className="text-foreground">沒網路也能接著練</strong>——捷運或地鐵上、飛機上、流量不夠用的時候都一樣。重要的邊界：要從零算一個自己的牌局，計算引擎得先被載入過一次。

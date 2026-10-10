@@ -70,11 +70,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
 ];
 
 const COMPARE: string[][] = [
-  ["Cara mendapatkan hasil", "Kira terus dalam pelayar", "Buka hasil yang sudah dikira", "Kira pada komputer selepas pemasangan"],
+  ["Cara mendapatkan hasil", "Kira terus dalam pelayar", "Terutamanya membuka hasil yang sudah dikira", "Kira pada komputer selepas pemasangan"],
   ["Pemasangan", "Tidak diperlukan", "Tidak diperlukan", "Diperlukan; platform bergantung pada produk"],
   ["Skop", "Postflop, heads-up", "Mengikut katalog, termasuk preflop jika tersedia", "Mengikut produk dan versi"],
-  ["Ubah range dan pokok tindakan", "Boleh ditetapkan sendiri", "Terhad kepada konfigurasi dalam katalog", "Boleh ditetapkan sendiri"],
-  ["Tempat pengiraan", "Pada peranti anda", "Dikira lebih awal oleh penyedia", "Pada peranti anda"],
+  ["Ubah range dan pokok tindakan", "Boleh ditetapkan sendiri", "Terutamanya dalam konfigurasi katalog; sesetengah perkhidmatan menambah pengiraan tersuai", "Boleh ditetapkan sendiri"],
+  ["Tempat pengiraan", "Pada peranti anda", "Komputer penyedia", "Pada peranti anda"],
 ];
 
 // Boards and strategy figures follow docs/gto-solver-series-spec.md §4-B.
@@ -373,8 +373,9 @@ export default function SolverClientMs({ reviews }: { reviews?: React.ReactNode 
           </li>
           <li className="text-muted-foreground">
             Kerugian 0.08bb bersamaan 1.45% dalam pot 5.5bb, tetapi hanya 0.36% dalam pot 22.5bb.
-            Dalam single raised pot 5.5bb, ambangnya kira-kira 0.02bb dan 0.06bb; dalam pot 3-bet
-            22.5bb, kira-kira 0.08bb dan 0.23bb. Had minimum 0.02bb dan 0.05bb mengelakkan perbezaan
+            Dalam single raised pot 5.5bb, ambangnya 0.02bb dan 0.055bb; dalam pot 3-bet 22.5bb,
+            kira-kira 0.079bb dan 0.225bb — jadi 0.08bb terletak sedikit melepasi garis Pilihan
+            terbaik. Had minimum 0.02bb dan 0.05bb mengelakkan perbezaan
             kecil akibat ketepatan pengiraan daripada terlalu mempengaruhi penilaian
           </li>
           <li className="text-muted-foreground">
@@ -442,8 +443,8 @@ export default function SolverClientMs({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Apabila membandingkan alat poker, perhatikan{" "}
           <strong className="text-foreground">di mana dan bila pengiraan dibuat</strong>. Pustaka
-          penyelesaian seperti yang ditawarkan oleh GTO Wizard membolehkan anda membuka katalog hasil
-          yang sudah dikira. Solver desktop seperti PioSolver atau TexasSolver dipasang pada komputer
+          penyelesaian seperti yang ditawarkan oleh GTO Wizard terutamanya digunakan untuk membuka
+          katalog hasil yang sudah dikira (GTO Wizard juga menawarkan pengiraan tersuai). Solver desktop seperti PioSolver atau TexasSolver dipasang pada komputer
           untuk menjalankan pengiraan sendiri. Jadual ini membandingkan cara penggunaan tersebut;
           ciri sesuatu produk bergantung pada mod atau versi yang dipilih.
         </p>

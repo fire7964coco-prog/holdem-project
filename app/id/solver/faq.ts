@@ -56,7 +56,7 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   {
     // 관련검색 `gto poker app` 흡수 — «앱»의 정체를 정직하게 가른다(설치 불필요 · PWA는 바로가기).
     q: "Apakah harus mengunduh atau menginstal aplikasi?",
-    a: "Tidak. Solver ini berjalan langsung di browser Anda lewat WebAssembly — Windows, macOS, Linux, dan ponsel, tanpa file instalasi. Kalau mau, Anda bisa memasangnya ke layar utama supaya selalu gampang dijangkau: tidak ada yang benar-benar terinstal — hanya ikon yang membuka kembali browser, tanpa meminta izin sistem apa pun.",
+    a: "Tidak. Solver ini berjalan langsung di browser Anda lewat WebAssembly — Windows, macOS, Linux, dan ponsel, tanpa file instalasi. Kalau mau, Anda bisa memasangnya ke layar utama supaya selalu gampang dijangkau: ia tetap web app, bukan program yang diunduh — berjalan di dalam sandbox browser (di Android, Chrome membungkusnya dalam paket aplikasi ringan), tanpa meminta izin sistem apa pun.",
   },
   {
     q: "Apa itu range di poker?",
@@ -93,7 +93,7 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   {
     // ⚠ 가격·무료 티어 «수치»는 넣지 않는다(CLAUDE.md §12-B). «방식의 차이»만.
     q: "Apa bedanya dengan GTO Wizard atau PioSolver?",
-    a: "Semuanya keluarga solver; yang membedakan adalah di mana dan kapan perhitungannya terjadi. Di sini, jawaban dihitung saat Anda mengeklik, dengan range dan pohon keputusan Anda sendiri, di perangkat Anda sendiri. Pustaka solusi seperti GTO Wizard menampilkan jawaban yang sudah dihitung sebelumnya dan disimpan dalam katalog. PioSolver adalah program desktop yang diinstal, terutama di Windows, dan menghitung di komputer Anda. Tidak ada yang «lebih baik» secara mutlak — kebutuhannya berbeda.",
+    a: "Semuanya keluarga solver; yang membedakan adalah di mana dan kapan perhitungannya terjadi. Di sini, jawaban dihitung saat Anda mengeklik, dengan range dan pohon keputusan Anda sendiri, di perangkat Anda sendiri. Pustaka solusi seperti GTO Wizard terutama menampilkan jawaban yang sudah dihitung sebelumnya dan disimpan dalam katalog (GTO Wizard juga menawarkan perhitungan kustom). PioSolver adalah program desktop yang diinstal, terutama di Windows, dan menghitung di komputer Anda. Tidak ada yang «lebih baik» secara mutlak — kebutuhannya berbeda.",
   },
   {
     q: "Berapa lama satu perhitungan?",

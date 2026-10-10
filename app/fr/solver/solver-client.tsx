@@ -186,11 +186,11 @@ const FEATURES: [string, "yes" | "no", string][] = [
  * 🔴 **「PioSolver payant」이라고 단정하지 마라** — 1차 출처로 확인된 것은 설치형·주로 Windows뿐.
  */
 const COMPARE: string[][] = [
-  ["Comment il calcule", "En direct, dans le navigateur", "Consulte des réponses précalculées", "Sur ton PC, après installation"],
+  ["Comment il calcule", "En direct, dans le navigateur", "Surtout consultation de réponses précalculées", "Sur ton PC, après installation"],
   ["Installation", "Aucune", "Aucune", "Oui, surtout Windows"],
   ["Couverture", "Postflop, heads-up", "Souvent préflop inclus", "Selon la version"],
-  ["Ranges et arbre modifiables", "Librement", "Dans le catalogue publié seulement", "Librement"],
-  ["Où se fait le calcul", "Sur ton appareil", "Chez le fournisseur (à l'avance)", "Sur ton appareil"],
+  ["Ranges et arbre modifiables", "Librement", "Surtout dans le catalogue publié ; certains services ajoutent du calcul sur mesure", "Librement"],
+  ["Où se fait le calcul", "Sur ton appareil", "Sur les serveurs du fournisseur", "Sur ton appareil"],
 ];
 
 /**
@@ -213,7 +213,7 @@ const SPOT_GROUPS = [
       { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Broadway connecté, bicolore", note: "Un board qui semble toucher les deux ranges. Pourtant c'est ici que BB réalise le moins bien son equity de toute cette série — 77,9 % réalisés contre 119,4 % pour BTN — et il check à 99,9 %" },
       // 🔴🔴 RP-01 계열 + RP-02 정정 — 앱 fr은 아직 «콜러 우위 + C벳 빈도 붕괴» 류다(9언어 전건 ·
       //    원문은 fr 축어 문서 — 주석 인용은 의역으로, M-047). §4-B ④: OOP 벳 23,7 % · 48,5 대 51,5.
-      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board médian connecté, bicolore", note: "Le seul board du single raised pot où BB prend vraiment l'initiative : BB mise en premier à 23,7 % — mais l'avantage de range reste à BTN : 48,5 % d'equity pour BB contre 51,5 % pour BTN" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board médian connecté, bicolore", note: "Le board du single raised pot où BB prend le plus l'initiative : BB mise en premier à 23,7 % (11,2 % sur le monocolore Q♠9♠2♠) — mais l'avantage de range reste à BTN : 48,5 % d'equity pour BB contre 51,5 % pour BTN" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «se raréfient» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
@@ -518,9 +518,9 @@ export default function SolverClientFr({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Vraiment — et sans les petites lignes habituelles : pas de moyen de paiement à laisser,
           pas de fonctions verrouillées, pas de quota de calculs par jour, pas d'inscription. Même
-          les réglages qu'on ne trouve d'ordinaire que dans les solvers de bureau payants —{" "}
+          les réglages qu'on attendrait d'un solver de bureau installé —{" "}
           <strong className="text-foreground">rake et cap de rake, modes de précision, édition de
-          l'arbre nœud par nœud</strong> — sont là. La seule vraie frontière : cet outil ne couvre
+          l'arbre nœud par nœud</strong> — sont là. La principale limite : cet outil ne couvre
           que <strong className="text-foreground">les situations heads-up après le flop</strong>.
         </p>
         <Table
@@ -601,7 +601,8 @@ export default function SolverClientFr({ reviews }: { reviews?: React.ReactNode 
           <li className="text-muted-foreground">
             Les mêmes 0,08bb pèsent 1,45 % dans un pot de 5,5bb (à revoir) et seulement 0,36 % dans
             un pot de 22,5bb (acceptable). En bb : les deux seuils du single raised pot tombent à
-            0,02bb et 0,06bb, ceux du pot 3-bet à 0,08bb et 0,23bb. Deux planchers (0,02bb et
+            0,02bb et 0,055bb, ceux du pot 3-bet à environ 0,079bb et 0,225bb — 0,08bb passe donc
+            tout juste la ligne du meilleur choix. Deux planchers (0,02bb et
             0,05bb) évitent de compter les écarts minuscules comme des erreurs
           </li>
           {/*
@@ -694,8 +695,9 @@ export default function SolverClientFr({ reviews }: { reviews?: React.ReactNode 
         <p className="mt-2 text-sm text-muted-foreground">
           Tous peuvent s'appeler GTO solver ou solver poker ; la différence tient à{" "}
           <strong className="text-foreground">l'endroit et au moment du calcul</strong>. Les
-          bibliothèques de solutions comme GTO Wizard fonctionnent par consultation : elles
-          feuillettent un catalogue précalculé, c'est rapide et le préflop est souvent couvert. Les
+          bibliothèques de solutions comme GTO Wizard fonctionnent surtout par consultation : elles
+          feuillettent un catalogue précalculé, c'est rapide et le préflop est souvent couvert
+          (GTO Wizard propose aussi du calcul sur mesure). Les
           solvers de bureau comme PioSolver ou TexasSolver s'installent et calculent sur ton PC.
           L'outil de cette page{" "}
           <strong className="text-foreground">calcule en direct dans le navigateur — le calcul
@@ -746,8 +748,9 @@ export default function SolverClientFr({ reviews }: { reviews?: React.ReactNode 
           Les deux. Rien à installer pour commencer — le navigateur mobile ouvre la version
           complète. Cela dit, <strong className="text-foreground">si tu veux, appuie sur « Ajouter
           à l'écran d'accueil »</strong> : il se comporte alors comme une app — sa propre icône,
-          plein écran, pas de barre d'adresse. C'est un raccourci de navigateur, pas un programme —
-          il ne demande jamais de permission système.
+          plein écran, pas de barre d'adresse. Ça reste une app web, pas un programme téléchargé : elle
+          tourne dans le bac à sable du navigateur (sur Android, Chrome l'emballe dans un paquet d'app
+          léger) et ne demande jamais de permission système.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Une fois ajouté, les spots d'étude et le Trainer GTO restent sur ton appareil,{" "}

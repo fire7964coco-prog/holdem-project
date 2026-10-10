@@ -64,7 +64,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "How is this different from GTO Wizard or PioSOLVER?",
-    a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard let you browse spots that were solved in advance, which is fast and covers preflop. Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
+    a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard are mainly for browsing spots that were solved in advance, which is fast and covers preflop (GTO Wizard also offers custom solving). Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
   },
   {
     /**
@@ -74,7 +74,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
      *   가격·기능은 1차 출처로 확인되지 않는다(§12-B). «무엇을 하려느냐»로 되돌려 준다.
      */
     q: "Which GTO solver is better, PioSOLVER or GTO Wizard?",
-    a: "They answer different questions, so the honest answer is what you want to do. A solution library is faster to browse and covers preflop, which suits studying standard spots. An installed desktop solver handles bigger trees than a browser can. If you want to solve your own postflop spot right now without paying or installing anything, that is what this solver is for — and you can compare its answer with either of them.",
+    a: "They answer different questions, so the honest answer is what you want to do. A solution library is faster to browse and covers preflop, which suits studying standard spots. An installed desktop solver handles bigger trees than a browser can. If you want to solve your own postflop spot right now free and with nothing to install, that is what this solver is for — and you can compare its answer with either of them.",
   },
   {
     q: "Does it work on Mac, Linux or mobile?",
@@ -92,7 +92,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     q: "Why is grading relative to the pot?",
     // 🔴 M-046 E-1 정정(2026-08-24) — 종전의 «같은 0.05bb» 예시는 자기모순이었다(0.05÷5.5=0.91%는
     //    자기가 적은 경계로 «acceptable» 구간). solver-client의 RP-06 정정본(0.08bb)과 같은 수치로 맞췄다.
-    a: "Because the same 0.08bb is 1.45% of a 5.5bb pot — a spot to review — and just 0.36% of a 22.5bb pot, which is acceptable. Absolute-bb grading made 3-bet pots look worse than they were, so grading switched to a percentage of the pot in August 2026. In a 5.5bb single raised pot the cutoffs work out to 0.02bb and 0.06bb; in a 22.5bb 3-bet pot they are 0.08bb and 0.23bb.",
+    a: "Because the same 0.08bb is 1.45% of a 5.5bb pot — a spot to review — and just 0.36% of a 22.5bb pot, which is acceptable. Absolute-bb grading made 3-bet pots look worse than they were, so grading switched to a percentage of the pot in August 2026. In a 5.5bb single raised pot the cutoffs work out to 0.02bb and 0.055bb; in a 22.5bb 3-bet pot they are about 0.079bb and 0.225bb, so 0.08bb sits just past the best-play line.",
   },
   {
     q: "Where is my study progress saved?",
@@ -104,7 +104,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Is it safe to install to the home screen?",
-    a: "Nothing is installed on your device in the usual sense — the browser creates a shortcut that runs inside the browser. You can verify it rather than take our word for it: no camera, contacts, SMS or location permission is requested, and the network tab in developer tools shows the requests it makes. The source code is public on GitHub under AGPL-3.0, and removing it leaves nothing behind.",
+    a: "It is a web app, not a downloaded program — it runs inside the browser's sandbox even when added to the home screen (on Android, Chrome wraps it in a lightweight app package). You can verify it rather than take our word for it: no camera, contacts, SMS or location permission is requested, and the network tab in developer tools shows the requests it makes. The source code is public on GitHub under AGPL-3.0, and when you remove it, the browser lets you clear its stored data as well.",
   },
   {
     q: "Samsung Internet says \"Unsafe app blocked\" — what does that mean?",
