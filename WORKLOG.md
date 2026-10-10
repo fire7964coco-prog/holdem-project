@@ -1,3 +1,9 @@
+## 2026-10-10 (4) — 우편함: MA-403·406·408 회신+등재 · S-060 ACK · MB-219
+
+- MA-403(MB-212·215 후기·/s 문구) · MA-406(MB-211 `/vi/solver` + 횡단) · MA-408(MB-218 `/ru/solver` + ru 문구) = 랜딩 WRONG 0. 요청·통지 전 자리를 현 main `d71a896f`에서 축어 대조(전부 실재) → `docs/en-first-queue.md` **§2-AQ** 신설: (a) 본체 사전·코드 6(AQ-1 /s CTA 주석 · AQ-2 image_type gif · AQ-3 notFoundBody · AQ-4 ru FAQ L43 «ярлык» · AQ-5 ru usage 현재형 · 🔴 AQ-6 IMPERSONATION_TERMS 키릴 0 = 이행 1순위) · (b) EN-먼저 솔버 랜딩 9자리(AL-3~8 RISKY 확정 + X-1·2·3 · 로케일 예외 · 비교표 «Solution library» 열 AL-8 포함).
+- §2-AL 인용 축어 2곳 정정(AL-1 L458 «sit behind a paid desktop solver» · AL-7 L459 «The one real boundary») + 판정 결과 한 줄 · §2-AP에 겹침 표시(AP-1 = AL-3 · ru 정정 문면 OK 판정 · AP-2 = AL-5).
+- S-060(솔버 `7c24104` LOCALE_PATHS.ru · ru 후기창 해제 · 배포 전) ACK. 발신함 확인 칸 닫음: MB-211(검수장 MA-406) · MB-212(MA-403) · MB-215(MA-403) · MB-218(솔버 S-060 · 검수장 MA-408). 착수 공지 MA-402·405·407도 MB-219 확인 칸에 포함. 남은 우편함 = 검수장→솔버 · 본체→솔버(MB-204) · MB-219 회신 대기뿐. 코드·글 수정 0.
+
 ## 2026-10-10 (3) — `/ru/solver` 회차 B — 작성·등록·후기창 ru·렌즈 4+아스트라 ✅ · 배포 `3814bcfc` · MB-218
 
 - 앱 ru 축어 재추출(라이브 `?lang=ru` Playwright 2회 · 솔버 `3ba90e8` 기준 · presets titleRu/categoryRu 대조 13/13) → `docs/solver-app-verbatim-ru-2026-10-10.md`. 앱 사이드바에 «Разбор раздачи»(복기)가 새로 보인다(EN 랜딩 미언급 → queue §2-AP AP-4).
