@@ -734,7 +734,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ 10-10 (12) `dbb115cc` MB-227 — EN + 10로케일 «about 2–3 points». 원 항목: **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
 - 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
 
-### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · 🪶 자동 착수 금지
+### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · ✅ AS-1~7 이행 10-10 (13) `006bc898` MB-228(EN → 13로케일 · AS-7 paired H2 링크 = 유지 판정) · H-1~3 미결
 > 출처 = `docs/vi-lanes/gto-진행.md` «EN-먼저 후보»·«헤드 요청»(🅶 C · `a5dd9cfe`). vi는 정정 뜻으로 이미 썼다(EN과 의도적으로 다름) — EN을 고치면 13로케일 전파.
 - AS-1 `k-high-board-cbet` EN L159 «Equity is how often you win the pot» — 무승부 지분 누락(equity ≠ 승률) · 아스트라.
 - AS-2 `paired-board-strategy` EN L215 «more than its winning percentage is worth» — EQR 기준은 equity · 네이티브·아스트라.

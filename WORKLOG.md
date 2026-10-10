@@ -1,3 +1,9 @@
+## 2026-10-10 (13) — queue §2-AS AS-1~7 · GTO 시리즈 EN 9자리 → 13로케일 · 배포 `006bc898` · MB-228
+
+- 사장님 «진행해». EN 9자리(AS-1~7) 헤드 직접 → 로케일 서브에이전트 3(ko·ja·zh·zh-hant / es·pt·de·fr / id·ms·vi·hi·tr) + 헤드 대조. 서브가 범위 밖 동형 발견 → EN k-high FAQ L218 «wins the pot more often» → «slightly bigger share of the pot than on A-7-2» + 로케일 8 · ko «승률 지분» 3.
+- 유지 판정: paired H2 링크 · ko 3bet-low 캡션 «트리플»(의도) · ko 3bet-pot-cbet 확인일(08-08 체계).
+- 교열 렌즈(diff): 편집 결함 0 · 문체 4 반영. 게이트 13로케일 🔴 0 · ko 7 slug 🔴 0(blind-battle-connected L165 H1 = HEAD부터 있던 오탐 · HEAD 판으로 재현 확인) · build exit 0 · IndexNow 200 · 65파일 ±83.
+
 ## 2026-10-10 (12) — MB-225·226 통지 이행 + queue §2-AR + AP-3 판정 · 배포 `dbb115cc` · MB-227
 
 - 사장님 지시(«핸드오프 우선순위대로 진행» · 색인은 사장님 몫). 배치 = MB-225·226 통지 6 + §2-AP AP-3 + §2-AR.
