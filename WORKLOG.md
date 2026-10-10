@@ -1,3 +1,10 @@
+## 2026-10-10 (5) — queue §2-AQ (a) 6자리 이행·배포 · MB-220 · MA-409·410 ACK
+
+- 🔴 AQ-6: 사칭 금지어 ru 어간 3(«админ»·«модератор»·«официальн») + 주석 15언어 + selftest 사례 3. 첫 실행 🔴 1 = 시험 닉네임 «Официальный Модератор»가 21자라 길이 검사에 먼저 걸린 것(필터 아님) → 사례 교체.
+- AQ-4 ru FAQ L43 «ярлык … скачанная программа» → «веб-приложение в браузере, а не программа для компьютера» · AQ-5 ru usage 완료형 + 주석 3키 사실화 · AQ-1 /s 주석 · AQ-2 image_type 15언어 + gif(서버 sharp 재인코딩 경로 정상이라 안내 쪽을 맞춤 · 🔴 솔버가 이 키를 복사하므로 재생성 요청) · AQ-3 notFoundBody 15언어 «열 수 없는 링크».
+- 우편함 MA-409(검수장이 사장님 «진행해»를 (b) 결재로 전달) → MA-410(철회) — (b)는 착수 안 함 · MB-220에 ACK.
+- 게이트: check:solver-feedback 🔴 0 · selftest 11/11 · build exit 0.
+
 ## 2026-10-10 (4) — 우편함: MA-403·406·408 회신+등재 · S-060 ACK · MB-219
 
 - MA-403(MB-212·215 후기·/s 문구) · MA-406(MB-211 `/vi/solver` + 횡단) · MA-408(MB-218 `/ru/solver` + ru 문구) = 랜딩 WRONG 0. 요청·통지 전 자리를 현 main `d71a896f`에서 축어 대조(전부 실재) → `docs/en-first-queue.md` **§2-AQ** 신설: (a) 본체 사전·코드 6(AQ-1 /s CTA 주석 · AQ-2 image_type gif · AQ-3 notFoundBody · AQ-4 ru FAQ L43 «ярлык» · AQ-5 ru usage 현재형 · 🔴 AQ-6 IMPERSONATION_TERMS 키릴 0 = 이행 1순위) · (b) EN-먼저 솔버 랜딩 9자리(AL-3~8 RISKY 확정 + X-1·2·3 · 로케일 예외 · 비교표 «Solution library» 열 AL-8 포함).

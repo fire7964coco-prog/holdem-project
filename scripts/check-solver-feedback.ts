@@ -159,6 +159,9 @@ function extraChecks(): Finding[] {
   // 사칭 금지어 · 경로 매핑 표본
   if (nicknameProblem("홀덤마스터 운영자") !== "impersonation") red("닉네임: «홀덤마스터 운영자»를 막지 못한다");
   if (nicknameProblem("Admin_01") !== "impersonation") red("닉네임: «Admin_01»을 막지 못한다");
+  if (nicknameProblem("Администратор") !== "impersonation") red("닉네임: «Администратор»를 막지 못한다");
+  if (nicknameProblem("Модератор 01") !== "impersonation") red("닉네임: «Модератор 01»을 막지 못한다");
+  if (nicknameProblem("Официальная") !== "impersonation") red("닉네임: «Официальная»를 막지 못한다");
   if (nicknameProblem("Rasmi") !== null) red("닉네임: 인명 «Rasmi»를 막았다(오탐)");
   if (solverLandingPath("ko") !== "/solver" || solverLandingPath("zh-hant") !== "/zh-hant/solver") red("경로 매핑이 틀렸다");
   return out;
