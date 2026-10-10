@@ -54,7 +54,7 @@ Résultat | La BB mise 100 %, le check est à 0,0 %
 | **SPR** | **4,0** | 17,7 |
 | Bet sizes | Environ 1/3 et 2/3 du pot | Environ 33 % et 75 % (⑦ n'avait qu'un sizing) |
 | Rake | Sans rake | Sans rake |
-| Vérifié le | 2026-08-20 | 2026-08-20 |
+| Vérifié le | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 Le pot de 22,5bb, c'est ==11 de 3-bet + 11 de call + les 0,5bb de la petite blinde couchée==, et le stack effectif est de ==100 − 11 = 89bb==.
 

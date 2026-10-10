@@ -156,7 +156,7 @@ Blockers show up in the same table. **A♠J♠ and A♠T♠ check over 80%, whil
 
 ## Are non-nut flushes played differently?
 
-**They check even more.** There are 33 made-flush combos on this board; the 25 without the A♠ average **81.4%** checking, against the nut's 69.9%.
+**They check even more.** The big blind's range holds 33 made-flush combos on this board; the 25 without the A♠ average **81.4%** checking, against the nut's 69.9%.
 
 | Hand | Equity | Check | EQR |
 |---|---|---|---|

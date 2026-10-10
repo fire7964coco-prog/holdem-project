@@ -55,7 +55,7 @@ Kết quả | BB bet 100% — check là 0,0%
 | **SPR** | **4,0** | 17,7 |
 | Cỡ bet | Khoảng 1/3 và 2/3 pot | Khoảng 33% và 75% (⑦ chỉ có một size) |
 | Rake | Không tính rake | Không tính rake |
-| Kiểm tra ngày | 2026-08-20 | 2026-08-20 |
+| Kiểm tra ngày | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 Pot 22,5bb là ==11 tiền 3-bet + 11 tiền call + 0,5 của small blind đã fold==, còn stack hiệu dụng là ==100 − 11 = 89bb==.
 

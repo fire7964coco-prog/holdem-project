@@ -80,7 +80,7 @@ Resultado | La BB apuesta el 100% — el check es 0.0%
 | **SPR** | **4.0** | 17.7 |
 | Tamaños de apuesta | Aproximadamente 1/3 y 2/3 del bote | Aproximadamente 33% y 75% (⑦ tenía un solo tamaño) |
 | Rake | No modelado | No modelado |
-| Comprobado | 2026-08-20 | 2026-08-20 |
+| Comprobado | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 El bote de 22.5bb es ==11 del 3-bet + 11 del call + 0.5 de ciega pequeña muerta==, y el stack efectivo es ==100 − 11 = 89bb==.
 

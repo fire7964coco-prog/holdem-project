@@ -118,7 +118,7 @@ Das beste A-High des Big Blinds ist hier AJ – sein AQ 3-bettet er preflop –,
 
 ## Warum steht die EQR bei 81 zu 117, wenn die Equity 46 zu 54 beträgt?
 
-**Equity ist, wie oft du den Pot gewinnst; Equity-Realisierung ist, wie viel davon du tatsächlich einsammelst.** Das ist nicht dieselbe Zahl.
+**Equity ist dein Anteil am Pot, wenn alle Karten ausgeteilt würden, wobei ein Split halb zählt; Equity-Realisierung ist, wie viel davon du tatsächlich einsammelst.** Das ist nicht dieselbe Zahl.
 
 | Kennzahl | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -177,7 +177,7 @@ A. Weil die stärksten Hände, die dieses Board zulässt, in der Calling-Range f
 
 **Q. Was ist für den Big Blind schlimmer, ein A-High-Flop oder ein K-High-Flop?**
 
-A. K-High. Die Equity ist sogar höher – 46,3% gegenüber 45,1% auf A-7-2 –, aber die Equity-Realisierung ist niedriger, 80,7% gegenüber 84,0%. Der Big Blind gewinnt den Pot hier öfter und sammelt weniger davon ein.
+A. K-High. Die Equity ist sogar höher – 46,3% gegenüber 45,1% auf A-7-2 –, aber die Equity-Realisierung ist niedriger, 80,7% gegenüber 84,0%. Der Big Blind hat hier einen etwas größeren Anteil am Pot als auf A-7-2 und sammelt weniger davon ein.
 
 **Q. Was ist eine Check-back-Range?**
 

@@ -132,7 +132,7 @@ Ein Lead scheitert hier von beiden Enden: Mit einer Sechs bringst du nur die Hä
 | EV (bb) | 2,17 | 3,33 |
 | **Equity-Realisierung (EQR)** | **83,7%** | **114,5%** |
 
-Der Anteil des Big Blinds am Pot beträgt ==5,5 × 47,2% = 2,60bb==, und er verbucht 2,17bb – ==2,17 ÷ 2,60 ≈ 83,7%==. Der Anteil des Buttons liegt bei 2,90bb gegenüber einem Erwartungswert (EV) von 3,33bb, er sammelt also **114,5%** ein – mehr, als seine Gewinnwahrscheinlichkeit wert ist.
+Der Anteil des Big Blinds am Pot beträgt ==5,5 × 47,2% = 2,60bb==, und er verbucht 2,17bb – ==2,17 ÷ 2,60 ≈ 83,7%==. Der Anteil des Buttons liegt bei 2,90bb gegenüber einem Erwartungswert (EV) von 3,33bb, er sammelt also **114,5%** ein – mehr, als seine Equity wert ist.
 
 Die Lücke von **30,8 Prozentpunkten** entspricht fast genau den 29,1 Punkten des [trockenen A-High-Boards](/de/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-de.webp"). **Ein gepaartes Board spielt sich wie ein trockenes** – in beiden Ranges sind vier von fünf Händen dasselbe Sechserpaar mit einer anderen hohen Karte, die Hand verläuft also ruhig, und der Spieler, der zuletzt handelt, sieht, welche hohe Karte aufgetaucht ist, bevor er sich entscheidet. Dieser Vorteil ist die ganze Lücke.
 

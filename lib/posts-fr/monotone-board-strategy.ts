@@ -110,7 +110,7 @@ Les bloqueurs apparaissent dans le même tableau. **A♠J♠ et A♠10♠ checke
 
 ## Les couleurs non max se jouent-elles autrement ?
 
-**Elles checkent encore plus.** Il y a 33 combos de couleur faite sur ce board ; les 25 sans l'A♠ checkent en moyenne **81,4 %**, contre 69,9 % pour la couleur max.
+**Elles checkent encore plus.** La range de la grosse blinde contient 33 combos de couleur faite sur ce board ; les 25 sans l'A♠ checkent en moyenne **81,4 %**, contre 69,9 % pour la couleur max.
 
 | Main | Équité | Check | EQR |
 |---|---|---|---|

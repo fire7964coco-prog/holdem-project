@@ -212,7 +212,7 @@ Leading into that fails from both ends: with a six you fold out only the hands y
 | EV (bb) | 2.17 | 3.33 |
 | **EQR (equity realization)** | **83.7%** | **114.5%** |
 
-The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. The button's share is 2.90bb against 3.33bb of EV, so it collects **114.5%**, more than its winning percentage is worth.
+The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. The button's share is 2.90bb against 3.33bb of EV, so it collects **114.5%**, more than its equity is worth.
 
 The **30.8-point** gap is almost exactly the 29.1 points of the [dry ace-high board](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **A paired board plays like a dry one** — four ranges out of five are the same pair of sixes with a different high card, so the hand runs quietly, and the player who acts last gets to see which high card showed up before choosing. That advantage is the whole gap.
 

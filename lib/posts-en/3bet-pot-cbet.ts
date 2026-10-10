@@ -138,7 +138,7 @@ Result | BB bets 100% — check is 0.0%
 | **SPR** | **4.0** | 17.7 |
 | Bet sizes | Roughly 1/3 and 2/3 of pot | Roughly 33% and 75% (⑦ had one size) |
 | Rake | Not modeled | Not modeled |
-| Checked | 2026-08-20 | 2026-08-20 |
+| Checked | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 The 22.5bb pot is ==11 three-bet + 11 call + 0.5 dead small blind==, and the effective stack is ==100 − 11 = 89bb==.
 

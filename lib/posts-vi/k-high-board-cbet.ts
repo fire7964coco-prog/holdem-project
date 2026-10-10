@@ -175,7 +175,7 @@ A. Vì những tay mạnh nhất mà board này cho phép đều vắng mặt tr
 
 **Q. Flop A-high hay flop K-high tệ hơn cho big blind?**
 
-A. K-high. Equity thực ra cao hơn — 46,3% so với 45,1% trên A-7-2 — nhưng equity realization thấp hơn, 80,7% so với 84,0%. Ở đây big blind thắng pot thường xuyên hơn mà lại thu về ít hơn.
+A. K-high. Equity thực ra cao hơn — 46,3% so với 45,1% trên A-7-2 — nhưng equity realization thấp hơn, 80,7% so với 84,0%. Ở đây big blind có phần pot nhỉnh hơn so với A-7-2 mà lại thu về ít hơn.
 
 **Q. Check back range là gì?**
 

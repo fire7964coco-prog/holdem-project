@@ -48,7 +48,7 @@ Hasil | BB bet 100% — check 0.0%
 | **SPR** | **4.0** | 17.7 |
 | Saiz bet | Kira-kira 1/3 dan 2/3 pot | Kira-kira 33% dan 75% (⑦ hanya satu saiz) |
 | Rake | Tidak dimodelkan | Tidak dimodelkan |
-| Tarikh semakan | 2026-08-20 | 2026-08-20 |
+| Tarikh semakan | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 Pot 22.5 bb ialah ==11 daripada 3-bet + 11 daripada call + 0.5 small blind yang fold==. Stack efektif ialah ==100 − 11 = 89 bb==.
 

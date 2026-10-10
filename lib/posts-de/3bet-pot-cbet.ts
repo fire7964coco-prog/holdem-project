@@ -61,7 +61,7 @@ Ergebnis | BB bettet 100% – Check steht bei 0,0%
 | **SPR** | **4,0** | 17,7 |
 | Bet Sizes | Etwa 1/3 und 2/3 des Pots | Etwa 33% und 75% (⑦ hatte nur eine Size) |
 | Rake | Nicht berücksichtigt | Nicht berücksichtigt |
-| Geprüft | 20.08.2026 | 20.08.2026 |
+| Geprüft | 20.08.2026 | ①–④ 19.08.2026 · ⑤–⑦ 20.08.2026 |
 
 Die 22,5bb im Pot sind ==11 aus der 3-Bet + 11 aus dem Call + 0,5 des gefoldeten Small Blinds==, und der effektive Stack ist ==100 − 11 = 89bb==.
 

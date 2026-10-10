@@ -151,7 +151,7 @@ Di sini range SB lebih **berterusan**: trips 17.5%, two pair 18.5%, K-high 22.3%
 
 **Check ialah campuran daripada pelbagai kelas, bukan satu kelas penuh.** Pemeriksaan langsung pada **2026-08-21** menunjukkan pocket pair check pada **KK 72.4%, QQ 66.2%, JJ 42.0% dan TT 21.6%**. KK dan QQ condong kepada check, tetapi **TT sudah bet sekitar 78%**. Ini pemerhatian sejarah, bukan solve baharu ketika penerbitan MS.
 
-Komposisi 99.8 kombo check juga bukan sekadar “tangan sederhana”: **tangan terlepas ialah kumpulan terbesar, kira-kira 44%**, diikuti K-high sekitar 27%, two pair sekitar 17% dan trips sekitar 11%. Hijau paling tebal berada pada **Broadway offsuit** seperti Q9o, QJo, QTo dan J9o. Sel dengan ace serta 66 kebanyakannya oren.
+Komposisi 99.8 kombo check juga bukan sekadar “tangan sederhana”: **tangan terlepas ialah kumpulan terbesar, kira-kira 44%**, diikuti K-high sekitar 27%, two pair sekitar 17% dan trips sekitar 11%. Hijau paling tebal berada pada **tangan Q-high dan J-high offsuit** seperti Q9o, QJo, QTo dan J9o. Sel dengan ace serta 66 kebanyakannya oren.
 
 Sebabnya berkait dengan **siapa yang sanggup call**. KK membentuk two pair bersama ace di board, tetapi sukar mendapatkan value besar. ⚠ Jangan menukarnya kepada “tangan lemah semuanya fold, hanya trips lebih baik call”. **Jadual artikel ini sendiri menafikan kesimpulan itu.** BB mempunyai 78 kombo two pair: tujuh rank pocket pair (42) dan 6x (36), semuanya di bawah KK. Tambah 92 kombo K-high, terdapat **170 kombo (33.7%)** lebih lemah, dan tidak semuanya semestinya fold terhadap satu pertiga pot. Trips serta full house yang mengalahkan KK hanya **75 kombo (14.9%)**, lebih sedikit.
 

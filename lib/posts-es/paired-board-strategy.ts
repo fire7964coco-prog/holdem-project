@@ -146,7 +146,7 @@ Apostar primero contra eso falla por los dos lados: con un seis solo haces folde
 | EV (bb) | 2.17 | 3.33 |
 | **Realización de equity (EQR)** | **83.7%** | **114.5%** |
 
-La parte del bote que le toca a la ciega grande es ==5.5 × 47.2% = 2.60bb==, y se anota 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. La parte del botón es 2.90bb contra 3.33bb de EV, así que cobra el **114.5%**, más de lo que vale su porcentaje de victorias.
+La parte del bote que le toca a la ciega grande es ==5.5 × 47.2% = 2.60bb==, y se anota 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. La parte del botón es 2.90bb contra 3.33bb de EV, así que cobra el **114.5%**, más de lo que vale su equity.
 
 La diferencia de **30.8 puntos** es casi exactamente los 29.1 puntos del [board seco con as](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-es.webp"). **Un board pareado se juega como uno seco** — cuatro quintas partes de cada rango son la misma pareja de seises con otra carta alta, así que la mano transcurre tranquila, y el jugador que actúa último llega a ver qué carta alta apareció antes de elegir. Esa ventaja es toda la diferencia.
 

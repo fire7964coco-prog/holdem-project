@@ -117,7 +117,7 @@ La meilleure hauteur As de la grosse blinde ici est AJ — son AQ 3-bet préflop
 
 ## Pourquoi l'EQR fait 81 contre 117 quand l'équité fait 46 contre 54 ?
 
-**L'équité, c'est la fréquence à laquelle tu gagnes le pot ; la réalisation d'équité, c'est la part que tu en encaisses réellement.** Ce n'est pas le même chiffre.
+**L'équité, c'est ta part du pot si toutes les cartes étaient distribuées, les égalités comptant pour moitié ; la réalisation d'équité, c'est la part que tu en encaisses réellement.** Ce n'est pas le même chiffre.
 
 | Indicateur | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -176,7 +176,7 @@ A. Parce que les mains les plus fortes que permet ce board manquent dans la rang
 
 **Q. Flop hauteur As ou hauteur Roi : lequel est pire pour la grosse blinde ?**
 
-A. Hauteur Roi. L'équité est même plus élevée — 46,3 % contre 45,1 % sur A-7-2 — mais la réalisation d'équité est plus basse, 80,7 % contre 84,0 %. La grosse blinde gagne le pot plus souvent ici et en encaisse moins.
+A. Hauteur Roi. L'équité est même plus élevée — 46,3 % contre 45,1 % sur A-7-2 — mais la réalisation d'équité est plus basse, 80,7 % contre 84,0 %. La grosse blinde dispose ici d'une part du pot un peu plus grande que sur A-7-2, et en encaisse moins.
 
 **Q. C'est quoi une range de check back ?**
 

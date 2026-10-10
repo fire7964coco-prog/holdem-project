@@ -110,7 +110,7 @@ Blocker cũng hiện ra ngay trong bảng này. **A♠J♠ và A♠10♠ check t
 
 ## Thùng không phải nut có chơi khác không?
 
-**Chúng còn check nhiều hơn.** Trên board này có 33 combo thùng đã thành; 25 combo không có A♠ check trung bình **81,4%**, so với 69,9% của tay nut.
+**Chúng còn check nhiều hơn.** Trên board này, range của big blind có 33 combo thùng đã thành; 25 combo không có A♠ check trung bình **81,4%**, so với 69,9% của tay nut.
 
 | Tay bài | Equity | Check | EQR |
 |---|---|---|---|

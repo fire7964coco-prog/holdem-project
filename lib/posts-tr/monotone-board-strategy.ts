@@ -119,7 +119,7 @@ Blocker'lar da aynı tabloda görünüyor. **A♠J♠ ve A♠T♠ %80'in üzerin
 
 ## Nut olmayan floşlar farklı mı oynanır?
 
-**Daha da fazla check ederler.** Bu board'da 33 hazır floş kombosu var; A♠ içermeyen 25'i ortalama **%81,4** check ediyor, nut'un %69,9'una karşı.
+**Daha da fazla check ederler.** Bu board'da big blind'ın range'inde 33 hazır floş kombosu var; A♠ içermeyen 25'i ortalama **%81,4** check ediyor, nut'un %69,9'una karşı.
 
 | El | Equity | Check | EQR |
 |---|---|---|---|

@@ -144,7 +144,7 @@ The hand count matches the solver exactly. The big blind has 88 and 33 at three 
 | Ace high | 27.0% | **30.0%** |
 | No made hand | **35.4%** | 28.3% |
 
-Read it top to bottom. **Every category at the top of the range — sets, overpairs, top pair — belongs to the button, and the weakest one, no made hand, is 7.1 points heavier for the big blind.** The categories where the big blind leads are two pair, second pair and weak pair. **Two pair is the second-best category on this board**, ahead of an overpair, and the big blind holds twice as much of it — but 0.8% of 474 combos is **four hands.** It fails to carry the range because there is none of it, not because it ranks low. The other two are genuinely middling. Betting first with a range shaped like that means your weak half is paying off their strong half.
+Read it top to bottom. **Every category at the top of the range — sets, overpairs, top pair — belongs to the button, and the weakest one, no made hand, is 7.1 points heavier for the big blind.** The categories where the big blind leads are two pair, second pair and weak pair. **Two pair is the second-best category on this board**, ahead of an overpair, and the big blind holds twice as much of it — but 0.8% of 474 combos is **four hands.** It fails to carry the range because there is so little of it, not because it ranks low. The other two are genuinely middling. Betting first with a range shaped like that means your weak half is paying off their strong half.
 
 ## Why is almost a third of both ranges ace high?
 
@@ -156,7 +156,7 @@ The big blind's best ace-high here is AJ — its AQ three-bets preflop — and t
 
 ## Why is EQR 81 against 117 when equity is 46 against 54?
 
-**Equity is how often you win the pot; equity realization is how much of that you actually collect.** They are not the same number.
+**Equity is your share of the pot if all the cards were dealt out, with ties counted as half; equity realization is how much of that you actually collect.** They are not the same number.
 
 | Metric | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -215,7 +215,7 @@ A. Because the strongest hands this board allows are missing from the calling ra
 
 **Q. Which is worse for the big blind, an ace-high flop or a king-high flop?**
 
-A. King-high. Equity is actually higher — 46.3% against 45.1% on A-7-2 — but equity realization is lower, 80.7% against 84.0%. The big blind wins the pot more often here and collects less of it.
+A. King-high. Equity is actually higher — 46.3% against 45.1% on A-7-2 — but equity realization is lower, 80.7% against 84.0%. The big blind starts with a slightly bigger share of the pot than on A-7-2 and collects less of it.
 
 **Q. What is a check-back range?**
 

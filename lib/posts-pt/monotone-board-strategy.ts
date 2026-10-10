@@ -103,7 +103,7 @@ Os blockers aparecem na mesma tabela. **A♠J♠ e A♠T♠ dão check em mais d
 
 ## Os flushes abaixo do nut flush jogam diferente?
 
-**Eles dão ainda mais check.** Há 33 combos de flush pronto neste board; os 25 sem A♠ dão check em **81,4%** na média, contra 69,9% dos nut flushes.
+**Eles dão ainda mais check.** O range do big blind tem 33 combos de flush pronto neste board; os 25 sem A♠ dão check em **81,4%** na média, contra 69,9% dos nut flushes.
 
 | Mão | Equity | Check | EQR |
 |---|---|---|---|

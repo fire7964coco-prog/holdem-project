@@ -48,7 +48,7 @@ Hasil | BB bet 100% — check 0,0%
 | **SPR** | **4,0** | 17,7 |
 | Bet size | Sekitar 1/3 dan 2/3 pot | Sekitar 33% dan 75% (⑦ hanya satu ukuran) |
 | Rake | Tidak diperhitungkan | Tidak diperhitungkan |
-| Tanggal pengamatan | 2026-08-20 | 2026-08-20 |
+| Tanggal pengamatan | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 Pot 22,5bb berasal dari ==11 untuk 3-bet + 11 call + 0,5 small blind yang fold==. Stack efektif tersisa ==100 − 11 = 89bb==.
 

@@ -131,7 +131,7 @@ Los blockers aparecen en la misma tabla. **A♠J♠ y A♠10♠ hacen check por 
 
 ## ¿Se juegan distinto los colores que no son máximos?
 
-**Hacen check todavía más.** En este board hay 33 combos de color hecho; los 25 que no llevan el A♠ hacen check un **81.4%** de media, frente al 69.9% de las nuts.
+**Hacen check todavía más.** En este board, el rango de la ciega grande tiene 33 combos de color hecho; los 25 que no llevan el A♠ hacen check un **81.4%** de media, frente al 69.9% de las nuts.
 
 | Mano | Equity | Check | EQR |
 |---|---|---|---|

@@ -93,7 +93,7 @@ Mis en ligne avec le reste de la série, tu vois où celui-ci se place.
 | | 6♣6♦3♥ (⑥) | A♠A♥6♦ (⑬) |
 |---|---|---|
 | Qui parle en premier | BB, le caller | **SB, l'ouvreur** |
-| Part de brelans | BB 5,3 % contre BTN 4,0 % : **le joueur qui mise en premier en a plus** | SB 17,5 % contre BB 13,1 % : le joueur qui mise en premier en a plus |
+| Part de brelans | BB 5,3 % contre BTN 4,0 % : **le joueur qui parle en premier en a plus** | SB 17,5 % contre BB 13,1 % : le joueur qui parle en premier en a plus |
 | Équité OOP | 47,2 % | **56,2 %** |
 | EQR OOP | 83,7 % | **104,1 %** |
 | Fréquence de mise OOP | **3,0 %** | **80,1 %** |

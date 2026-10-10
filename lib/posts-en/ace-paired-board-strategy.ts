@@ -185,7 +185,7 @@ Lined up across the series, you can see where this one lands.
 | | 6♣6♦3♥ (⑥) | A♠A♥6♦ (⑬) |
 |---|---|---|
 | Who acts first | BB — the caller | **SB — the opener** |
-| Share of trips | BB 5.3% vs BTN 4.0% — **the player betting first has more** | SB 17.5% vs BB 13.1% — the player betting first has more |
+| Share of trips | BB 5.3% vs BTN 4.0% — **the player acting first has more** | SB 17.5% vs BB 13.1% — the player acting first has more |
 | OOP equity | 47.2% | **56.2%** |
 | OOP EQR | 83.7% | **104.1%** |
 | OOP bet frequency | **3.0%** | **80.1%** |
@@ -245,7 +245,7 @@ This spot is not that. The small blind's range runs **continuously** — trips 1
 
 ## Which hands make up the 19.8% that checks?
 
-**Not one class held back whole, but a slice from each.** Measured live on 2026-08-21, the pocket pairs check at **K-K 72.4%, Q-Q 66.2%, J-J 42.0% and T-T 21.6%** — so K-K and Q-Q lean check, but **T-T is already betting 78%.** The 99.8 checking combos cannot be summed up as "medium strength" either: **misses are the largest group at about 44%**, then king-high at about 27%, two pair about 17% and trips about 11%. The cells where green pools most thickly are **offsuit broadways** like Q-9o, Q-Jo, Q-To and J-9o. The cells holding an ace, and 6-6, are mostly orange.
+**Not one class held back whole, but a slice from each.** Measured live on 2026-08-21, the pocket pairs check at **K-K 72.4%, Q-Q 66.2%, J-J 42.0% and T-T 21.6%** — so K-K and Q-Q lean check, but **T-T is already betting 78%.** The 99.8 checking combos cannot be summed up as "medium strength" either: **misses are the largest group at about 44%**, then king-high at about 27%, two pair about 17% and trips about 11%. The cells where green pools most thickly are **offsuit queen- and jack-high hands** like Q-9o, Q-Jo, Q-To and J-9o. The cells holding an ace, and 6-6, are mostly orange.
 
 The reason lies in **who calls you.** K-K makes two pair with the board's aces, but **there is little value to collect by betting it.** ⚠ Do not translate that into "the worse hands fold and only better trips call" — **this article's own table refutes it.** The big blind's 78 combos of two pair are seven ranks of pocket pairs (42) plus six-x (36), **all below K-K**, and its 92 combos of king-high are below it too; facing a third-pot bet, those 170 combos (33.7% of the range) do not all fold. Meanwhile the trips and full houses that beat K-K come to **75 combos (14.9%) — fewer.** The reason the value is thin is not that the weak hands all fold; it is that **that wide slice will call but will not follow you into a big pot** — two pair and king-high can tell they are behind K-K without much trouble, so the bigger you bet the more only trips remain. ⚠ For the record, **another ace on the turn or river does not flip K-K** — with A-A-A-6 on the board K-K becomes *aces full of kings*, and nothing in those 170 combos beats that card. Checking instead leaves room for the big blind's 260 missed combos to bluff, and then a call earns its keep — **on the assumption that the opponent mixes in bluffs.** ⚠ How often the big blind actually bluffs after a check is not in this calculation (the study spot ends at the first action on the flop); it is an interpretation drawn from range composition.
 

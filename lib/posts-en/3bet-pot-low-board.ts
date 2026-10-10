@@ -169,7 +169,7 @@ And the 40 ace-high combos **win as soon as the opponent folds.** 58.3% of the b
 
 **Because 88, 55 and 22 are not in a three-betting range, and they are in a calling range.** This is the first spot in the series where the top of the board belongs entirely to the in-position player.
 
-![Range composition infographic comparing the big blind and button hand categories on an 8-5-2 board in a three-bet pot](/images/gto-3bp-low-ranges-en.webp "8-5-2 in a three-bet pot · category split — trips only on the button, clearly more overpairs for the big blind (36 combos to 24)")
+![Range composition infographic comparing the big blind and button hand categories on an 8-5-2 board in a three-bet pot](/images/gto-3bp-low-ranges-en.webp "8-5-2 in a three-bet pot · category split — sets only on the button, clearly more overpairs for the big blind (36 combos to 24)")
 
 | Category | BB (three-bettor) | BTN (caller) |
 |---|---|---|

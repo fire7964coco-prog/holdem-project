@@ -125,7 +125,7 @@ Blocker tauchen in derselben Tabelle auf. **A♠J♠ und A♠T♠ checken über 
 
 ## Spielst du Flushes unterhalb der Nuts anders?
 
-**Sie checken noch mehr.** Auf diesem Board gibt es 33 fertige Flush-Combos; die 25 ohne A♠ checken im Schnitt **81,4%**, gegenüber 69,9% beim Nut Flush.
+**Sie checken noch mehr.** Auf diesem Board hält die Range des Big Blinds 33 fertige Flush-Combos; die 25 ohne A♠ checken im Schnitt **81,4%**, gegenüber 69,9% beim Nut Flush.
 
 | Hand | Equity | Check | EQR |
 |---|---|---|---|

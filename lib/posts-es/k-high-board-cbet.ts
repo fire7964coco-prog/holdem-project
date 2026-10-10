@@ -132,7 +132,7 @@ El mejor A-high de la ciega grande aquí es AJ — su AQ hace 3-bet preflop — 
 
 ## ¿Por qué el EQR es 81 contra 117 si la equity es 46 contra 54?
 
-**La equity es con qué frecuencia ganas el bote; la realización de equity es cuánto de eso cobras de verdad.** No son el mismo número.
+**La equity es tu parte del bote si se repartieran todas las cartas, contando los empates como medio bote; la realización de equity es cuánto de eso cobras de verdad.** No son el mismo número.
 
 | Métrica | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -191,7 +191,7 @@ A. Porque las manos más fuertes que permite este board faltan en el rango de pa
 
 **Q. ¿Qué es peor para la ciega grande, un flop A-high o uno K-high?**
 
-A. El K-high. La equity es incluso mayor — 46.3% contra el 45.1% de A-7-2 — pero la realización de equity es menor, 80.7% contra 84.0%. La ciega grande gana el bote más veces aquí y cobra menos de él.
+A. El K-high. La equity es incluso mayor — 46.3% contra el 45.1% de A-7-2 — pero la realización de equity es menor, 80.7% contra 84.0%. La ciega grande arranca con una porción del bote algo mayor que en A-7-2 y cobra menos de ella.
 
 **Q. ¿Qué es un rango de check back?**
 

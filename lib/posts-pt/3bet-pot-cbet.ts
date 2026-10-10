@@ -48,7 +48,7 @@ Resultado | BB aposta em 100% — check em 0,0%
 | **SPR** | **4,0** | 17,7 |
 | Tamanhos de aposta | Aproximadamente 1/3 e 2/3 do pote | Aproximadamente 33% e 75% (⑦ tinha um tamanho) |
 | Rake | Não incluído no modelo | Não incluído no modelo |
-| Data da consulta | 2026-08-20 | 2026-08-20 |
+| Data da consulta | 2026-08-20 | ①–④ 2026-08-19 · ⑤–⑦ 2026-08-20 |
 
 O pote de 22,5bb vem de ==11 da 3-bet + 11 do call + 0,5 do small blind que foldou==, e o stack efetivo é ==100 − 11 = 89bb==.
 

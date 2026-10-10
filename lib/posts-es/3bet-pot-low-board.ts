@@ -128,7 +128,7 @@ Y los 40 combos de A-high **ganan en cuanto el rival foldea.** El 58.3% del rang
 
 **Porque 88, 55 y 22 no entran en un rango de 3-bet, y sí entran en un rango que paga.** Este es el primer spot de la serie donde la parte alta del board pertenece por completo al jugador en posición.
 
-![Infografía de composición de rangos que compara las clases de mano de la ciega grande y del botón en un board 8-5-2 en bote de 3-bet](/images/gto-3bp-low-ranges-es.webp "8-5-2 en un bote de 3-bet · reparto por categorías — el trío solo del lado del botón, claramente más sobrepares para la ciega grande (36 combos contra 24)")
+![Infografía de composición de rangos que compara las clases de mano de la ciega grande y del botón en un board 8-5-2 en bote de 3-bet](/images/gto-3bp-low-ranges-es.webp "8-5-2 en un bote de 3-bet · reparto por categorías — los sets solo del lado del botón, claramente más sobrepares para la ciega grande (36 combos contra 24)")
 
 | Categoría | BB (3-bettor) | BTN (caller) |
 |---|---|---|

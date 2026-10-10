@@ -125,7 +125,7 @@ Miser en premier là-dedans échoue des deux côtés : avec un 6, tu ne fais cou
 | EV (bb) | 2,17 | 3,33 |
 | **EQR (réalisation d'équité)** | **83,7 %** | **114,5 %** |
 
-La part du pot de la grosse blinde, hors de position (OOP), vaut ==5,5 × 47,2 % = 2,60bb==, et elle encaisse 2,17bb : ==2,17 ÷ 2,60 ≈ 83,7 %==. La part du bouton, en position (IP), est de 2,90bb contre 3,33bb d'EV, donc il encaisse **114,5 %**, plus que ce que vaut son pourcentage de victoire.
+La part du pot de la grosse blinde, hors de position (OOP), vaut ==5,5 × 47,2 % = 2,60bb==, et elle encaisse 2,17bb : ==2,17 ÷ 2,60 ≈ 83,7 %==. La part du bouton, en position (IP), est de 2,90bb contre 3,33bb d'EV, donc il encaisse **114,5 %**, plus que ce que vaut son équité.
 
 L'écart de **30,8 points** est presque exactement les 29,1 points du [board sec hauteur As](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp"). **Un board pairé se joue comme un board sec** : les quatre cinquièmes de chaque range sont la même paire de 6 avec une carte haute différente, donc le coup se déroule sans bruit, et le joueur qui parle en dernier voit quelle carte haute est arrivée avant de choisir. Cet avantage, c'est tout l'écart.
 

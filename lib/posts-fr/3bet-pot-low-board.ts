@@ -109,7 +109,7 @@ Et les 40 combos de hauteur As **gagnent dès que l'adversaire se couche.** 58,3
 
 **Parce que 88, 55 et 22 ne sont pas dans une range de 3-bet, mais bien dans une range de call.** C'est le premier spot de la série où le haut du board appartient entièrement au joueur en position.
 
-![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board 8-5-2 en pot 3-bet](/images/gto-3bp-low-ranges-fr.webp "8-5-2 en pot 3-bet · répartition par catégorie — les brelans uniquement chez le bouton, nettement plus de surpaires pour la grosse blinde (36 combos contre 24)")
+![Infographie de composition des ranges comparant les catégories de mains de la grosse blinde et du bouton sur un board 8-5-2 en pot 3-bet](/images/gto-3bp-low-ranges-fr.webp "8-5-2 en pot 3-bet · répartition par catégorie — les brelans servis uniquement chez le bouton, nettement plus de surpaires pour la grosse blinde (36 combos contre 24)")
 
 | Catégorie | BB (3-betteur) | BTN (caller) |
 |---|---|---|
