@@ -673,7 +673,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
 - 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
 
-### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · AP-1·2 ✅ 10-10 (10) MB-225 · AP-3·4 미결
+### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · AP-1·2 ✅ 10-10 (10) MB-225 · AP-3 ✅ 판정 해당 없음 10-10 (12) MB-227(EN·vi·tr·ru 전부 제한적 수식 · 다른 로케일 문장 없음) · AP-4 사장님 판단
 
 > ru는 신설 시점에 바르게 썼다(EN 문면과 이 자리만 다름 · EN 정정 뒤 일치). 나머지 14랜딩은 EN 정정 → 전파.
 
@@ -731,7 +731,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - ✅ MA-412 요청 1 · `lib/spot-share-i18n.ts` L93 ru 주석 «open = 랜딩 CTA 축어» → «/s 전용 문구(랜딩 CTA «Открыть солвер →»와 별개)». 화면 영향 0.
 - ✅ MA-413 요청 1 · PDF `public/downloads/poker-starting-hands-chart.pdf`(원본 `scripts/starting-hands-chart-print.html` → `render-starting-hands-pdf.mjs`) 4자리 = MA 처방 꼴 그대로: ⓐ P9 위치표 캡션에 «% = share of all 1,326 combos … UTG core is 58 combos (~4%)» 각주 ⓑ P2 «Almost always raise these first in, from any seat.» ⓒ P14 «~2–3 points of equity (AKs vs AKo ≈ 2)» ⓓ P16 «Most-called worst hand: 7-2 offsuit.» · 1쪽 유지(렌더 확인) · check-pdf-page 🔴 0. 🪶 P17 «interactive chart»(UNV · 선택) = 손대지 않음.
-- 🪶 **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
+- ✅ 10-10 (12) `dbb115cc` MB-227 — EN + 10로케일 «about 2–3 points». 원 항목: **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
 - 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
 
 ### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · 🪶 자동 착수 금지

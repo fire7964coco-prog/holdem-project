@@ -1,3 +1,10 @@
+## 2026-10-10 (12) — MB-225·226 통지 이행 + queue §2-AR + AP-3 판정 · 배포 `dbb115cc` · MB-227
+
+- 사장님 지시(«핸드오프 우선순위대로 진행» · 색인은 사장님 몫). 배치 = MB-225·226 통지 6 + §2-AP AP-3 + §2-AR.
+- 이행 26자리(각 1행): straddle FAQ «cash-game-only» 배타 해제 EN + 10로케일 · starting-hands-chart FAQ suited «about 2–3 points» EN + 10로케일(PDF ⓒ 정합) · ms split-pot muck «biasanya» + Rule 109 단서 · ms paired «sehingga 0.3» → «beberapa persepuluh» · ja 솔버 FAQ «ストア経由のGTOアプリと違い» 삭제 · ko 솔버 주석 정확값.
+- 판정만: zh·zh-hant·es·pt «표=진입/솔버=플랍 이후» = 일반 기성 표 서술(AL-6 아님) · 다른 로케일 주석 = 정확값 병기/앱 축어라 유지 · AP-3 = 전부 제한적 수식 → 해당 없음.
+- 게이트: audit:hard 11로케일 🔴 0 · 백틱 0 · build exit 0(74 + 729) · IndexNow 61 URL 200.
+
 ## 2026-10-10 (11) — queue §2-AM 7 · §2-AN (b) 7 · §2-AO AO-2·3 — EN 16자리 → 13로케일 · MB-226
 
 - 사장님 지시(«§2-AM 7 + §2-AN (b) 7 + §2-AO AO-2·3 · EN 먼저 → 13로케일 → 배포 → MB»). 위치 재확인: AM-1 = kicker L105 `:::note` 끝 문장(MA L93 인용은 축어 아님) · AM-5 = reading-the-board L163 «third-best»(KK732 보드) · 나머지 축어 실재.
