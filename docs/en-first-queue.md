@@ -725,6 +725,15 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 이행 순서: EN 9자리 → 14로케일(ru는 AL-3 이미 맞음) → 이행 MB(전/후 대조 요청) · `updated` 스탬프 settled §1-C. 🪶 자동 착수 금지 — 사장님 지시 대기(§2-AP와 같은 판단).
 - 검수장 자기 정정 접수: ja #1 «唯一» 08-24 OK → RISKY(MA-406) · `landing-source.mjs` 키릴 추출 수정(MA-408 ③ · 기존 11편 불변).
 
+### 2-AR. 우편함 수신분 — MA-412 (MB-220 전/후) · MA-413 (starting-hands-chart 본문 밖 3종) · 등재·이행 2026-10-10 (7) · 회신 MB-222
+
+> 근거 = 검수장 `reports/2026-10/검수-MB220-2026-10-10/judge.md` · `reports/2026-10/검수-shc-컴포넌트-2026-10-10/judge.md`. MA-413 = WRONG 0.
+
+- ✅ MA-412 요청 1 · `lib/spot-share-i18n.ts` L93 ru 주석 «open = 랜딩 CTA 축어» → «/s 전용 문구(랜딩 CTA «Открыть солвер →»와 별개)». 화면 영향 0.
+- ✅ MA-413 요청 1 · PDF `public/downloads/poker-starting-hands-chart.pdf`(원본 `scripts/starting-hands-chart-print.html` → `render-starting-hands-pdf.mjs`) 4자리 = MA 처방 꼴 그대로: ⓐ P9 위치표 캡션에 «% = share of all 1,326 combos … UTG core is 58 combos (~4%)» 각주 ⓑ P2 «Almost always raise these first in, from any seat.» ⓒ P14 «~2–3 points of equity (AKs vs AKo ≈ 2)» ⓓ P16 «Most-called worst hand: 7-2 offsuit.» · 1쪽 유지(렌더 확인) · check-pdf-page 🔴 0. 🪶 P17 «interactive chart»(UNV · 선택) = 손대지 않음.
+- 🪶 **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
+- 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
