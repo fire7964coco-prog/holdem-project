@@ -284,7 +284,7 @@ A. Nicht am Anfang. GTO-Preflop-Charts nutzen gemischte Frequenzen, die selbst f
 
 **Q. Macht suited zu sein wirklich einen Unterschied?**
 
-A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2 Prozentpunkte Equity hinzu (AKs hat 67% gegen eine zufällige Hand; AKo 65%) – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,4% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
+A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2–3 Prozentpunkte Equity hinzu (AKs hat 67% gegen eine zufällige Hand; AKo 65%) – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,4% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
 
 **Q. Sollte ich kleine Pocket Pairs wie 22 oder 33 immer folden?**
 

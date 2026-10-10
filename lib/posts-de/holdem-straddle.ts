@@ -203,7 +203,7 @@ A. Selten, und wenn, dann stark eingeschränkt. Die meisten Onlineräume bieten 
 
 **Q. Sind Straddles in Turnieren erlaubt?**
 
-A. So gut wie nie. Turniere beruhen auf einer festen Blind-Struktur, die an allen Tischen identisch sein muss – ein freiwilliger Zusatz-Blind würde das Format sprengen. Straddeln ist im Grunde eine reine Cashgame-Option, und selbst dort hängt es an den Hausregeln des jeweiligen Cardrooms.
+A. So gut wie nie. Turniere beruhen auf einer festen Blind-Struktur, die an allen Tischen identisch sein muss – ein freiwilliger Zusatz-Blind würde das Format sprengen. Straddeln ist im Grunde eine Cashgame-Option, und selbst dort hängt es an den Hausregeln des jeweiligen Cardrooms.
 
 **Q. Aus welcher Position schadet ein Straddle am wenigsten?**
 

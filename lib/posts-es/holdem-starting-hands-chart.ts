@@ -280,7 +280,7 @@ A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas pa
 
 **Q. ¿Importa de verdad ser del mismo palo?**
 
-A. Ser del mismo palo añade en torno a 2 puntos porcentuales de equity sobre la misma mano de distinto palo (AKs tiene 67% contra una mano aleatoria; AKo, 65%) — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.4% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
+A. Ser del mismo palo añade en torno a 2–3 puntos porcentuales de equity sobre la misma mano de distinto palo (AKs tiene 67% contra una mano aleatoria; AKo, 65%) — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.4% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 

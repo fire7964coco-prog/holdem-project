@@ -175,7 +175,7 @@ A. Sleeper straddle là một blind đặt từ ghế không phải UTG mà nằ
 
 **Q. Giải đấu có cho straddle không?**
 
-A. Gần như không bao giờ. Giải đấu dựa vào một cấu trúc blind cố định phải giống hệt ở mọi bàn, nên một blind phụ tự nguyện sẽ phá vỡ thể thức. Straddle về cơ bản là tùy chọn chỉ có ở cash game, và ngay cả ở đó nó cũng tùy luật riêng của từng phòng poker.
+A. Gần như không bao giờ. Giải đấu dựa vào một cấu trúc blind cố định phải giống hệt ở mọi bàn, nên một blind phụ tự nguyện sẽ phá vỡ thể thức. Straddle về cơ bản là tùy chọn của cash game, và ngay cả ở đó nó cũng tùy luật riêng của từng phòng poker.
 
 **Q. Straddle có lời không?**
 

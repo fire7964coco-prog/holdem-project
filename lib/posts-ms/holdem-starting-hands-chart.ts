@@ -282,7 +282,7 @@ A. Bukan pada mulanya. GTO preflop chart menggunakan kekerapan bercampur yang di
 
 **Q. Adakah suited benar-benar penting?**
 
-A. Suited menambah kira-kira 2 mata peratusan equity berbanding tangan offsuit yang sama (AKs 67% menentang tangan rawak; AKo, 65%) — bermakna, tetapi bukan alasan untuk memainkan tangan yang buruk. Dua kad suited membentuk flush menjelang river hanya ~6.4% masa (dan flush draw yang didapati di flop menjadi flush kira-kira 35% masa menjelang river). Sampah suited tetap sampah.
+A. Suited menambah kira-kira 2–3 mata peratusan equity berbanding tangan offsuit yang sama (AKs 67% menentang tangan rawak; AKo, 65%) — bermakna, tetapi bukan alasan untuk memainkan tangan yang buruk. Dua kad suited membentuk flush menjelang river hanya ~6.4% masa (dan flush draw yang didapati di flop menjadi flush kira-kira 35% masa menjelang river). Sampah suited tetap sampah.
 
 **Q. Patutkah saya sentiasa fold pocket pair kecil seperti 22 atau 33?**
 

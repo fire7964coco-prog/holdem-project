@@ -175,7 +175,7 @@ A. Un sleeper straddle est une blinde posée depuis un siège autre qu'UTG qui r
 
 **Q. Le straddle est-il autorisé en tournoi ?**
 
-A. Presque jamais. Les tournois reposent sur une structure de blindes fixe qui doit être identique à toutes les tables, donc une blinde supplémentaire volontaire casserait le format. Le straddle est essentiellement une pratique réservée au cash game, et même là il dépend des règles de la salle de poker concernée.
+A. Presque jamais. Les tournois reposent sur une structure de blindes fixe qui doit être identique à toutes les tables, donc une blinde supplémentaire volontaire casserait le format. Le straddle est essentiellement une pratique de cash game, et même là il dépend des règles de la salle de poker concernée.
 
 **Q. Le straddle est-il rentable ? Faut-il straddler ?**
 

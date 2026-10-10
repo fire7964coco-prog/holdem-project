@@ -175,7 +175,7 @@ A. Um sleeper straddle é um blind postado de uma cadeira que não é UTG e que 
 
 **Q. Straddle é permitido em torneios?**
 
-A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa ser idêntica em todas as mesas, então um blind extra voluntário quebraria o formato. O straddle é essencialmente uma opção só de cash game, e mesmo ali depende das regras da casa do clube ou da sala específica.
+A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa ser idêntica em todas as mesas, então um blind extra voluntário quebraria o formato. O straddle é essencialmente uma opção de cash game, e mesmo ali depende das regras da casa do clube ou da sala específica.
 
 **Q. Straddle dá lucro? Você deveria straddar?**
 

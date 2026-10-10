@@ -281,7 +281,7 @@ A. Não de cara. As tabelas GTO de pré-flop usam frequências mistas feitas pra
 
 **Q. Ser suited faz diferença de verdade?**
 
-A. Ser suited adiciona cerca de 2 pontos percentuais de equity sobre a mesma mão offsuit (AKs tem 67% contra uma mão aleatória; AKo, 65%) — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,4% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
+A. Ser suited adiciona cerca de 2 a 3 pontos percentuais de equity sobre a mesma mão offsuit (AKs tem 67% contra uma mão aleatória; AKo, 65%) — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,4% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
 
 **Q. Devo sempre foldar pares pequenos como 22 ou 33?**
 

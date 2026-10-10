@@ -277,7 +277,7 @@ A. Not at first. GTO preflop charts use mixed frequencies designed to be hard to
 
 **Q. Does being suited really matter?**
 
-A. Suited adds about 2 percentage points of equity over the same offsuit hand (AKs is 67% against a random hand; AKo, 65%) — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.4% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
+A. Suited adds about 2–3 percentage points of equity over the same offsuit hand (AKs is 67% against a random hand; AKo, 65%) — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.4% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
 
 **Q. Should I always fold small pocket pairs like 22 or 33?**
 

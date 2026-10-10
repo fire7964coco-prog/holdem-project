@@ -175,7 +175,7 @@ A. Sleeper straddle adalah blind yang dipasang dari kursi non-UTG yang tetap tid
 
 **Q. Apakah straddle diizinkan di turnamen?**
 
-A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus identik di semua meja, jadi blind ekstra sukarela akan merusak formatnya. Straddle pada dasarnya adalah opsi khusus cash game, dan bahkan di sana pun ia tergantung aturan rumah cardroom tertentu.
+A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus identik di semua meja, jadi blind ekstra sukarela akan merusak formatnya. Straddle pada dasarnya adalah opsi cash game, dan bahkan di sana pun ia tergantung aturan rumah cardroom tertentu.
 
 **Q. Apakah straddle profit? Perlukah Anda straddle?**
 

@@ -174,7 +174,7 @@ A. A sleeper straddle is a blind posted from a non-UTG seat that stays inactive 
 
 **Q. Is straddling allowed in tournaments?**
 
-A. Almost never. Tournaments rely on a fixed blind structure that must be identical across all tables, so a voluntary extra blind would break the format. Straddling is essentially a cash-game-only option, and even there it depends on the specific cardroom's house rules.
+A. Almost never. Tournaments rely on a fixed blind structure that must be identical across all tables, so a voluntary extra blind would break the format. Straddling is essentially a cash-game option, and even there it depends on the specific cardroom's house rules.
 
 **Q. Is straddling profitable? Should you straddle?**
 

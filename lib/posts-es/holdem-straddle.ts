@@ -179,7 +179,7 @@ A. Un sleeper straddle es una ciega puesta desde un asiento que no es UTG y que 
 
 **Q. ¿Se permite el straddle en torneos?**
 
-A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe ser idéntica en todas las mesas, así que una ciega extra voluntaria rompería el formato. El straddle es básicamente una opción exclusiva del cash game, e incluso ahí depende de las reglas de la casa de cada sala.
+A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe ser idéntica en todas las mesas, así que una ciega extra voluntaria rompería el formato. El straddle es básicamente una opción del cash game, e incluso ahí depende de las reglas de la casa de cada sala.
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 

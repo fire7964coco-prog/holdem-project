@@ -272,7 +272,7 @@ A. Pas au début. Les ranges préflop de solver utilisent des fréquences mixtes
 
 **Q. Être assorti (suited), ça change vraiment quelque chose ?**
 
-A. Être assorti ajoute environ 2 points de pourcentage d'équité par rapport à la même main dépareillée (AKs fait 67 % contre une main aléatoire ; AKo, 65 %) — c'est significatif, mais ce n'est pas une raison de jouer une mauvaise main. Deux cartes assorties ne font couleur à la river que ~6,4 % du temps (et un tirage couleur au flop se complète environ 35 % du temps d'ici la river). Une poubelle assortie reste une poubelle.
+A. Être assorti ajoute environ 2 à 3 points de pourcentage d'équité par rapport à la même main dépareillée (AKs fait 67 % contre une main aléatoire ; AKo, 65 %) — c'est significatif, mais ce n'est pas une raison de jouer une mauvaise main. Deux cartes assorties ne font couleur à la river que ~6,4 % du temps (et un tirage couleur au flop se complète environ 35 % du temps d'ici la river). Une poubelle assortie reste une poubelle.
 
 **Q. Faut-il toujours se coucher avec une petite paire comme 22 ou 33 ?**
 

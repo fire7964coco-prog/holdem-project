@@ -123,7 +123,7 @@ Bahagian equity BB bernilai ==5.5 × 47.2% = 2.60 bb==, tetapi EV (nilai jangkaa
 
 Jurang **30.8 mata** hampir sama dengan 29.1 mata pada [board A-high kering](/ms/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-ms.webp"). **Board berpasangan bermain seperti board kering**: sekitar empat perlima range berkongsi pair enam dengan kad tinggi berbeza. Pot sering bergerak perlahan, dan pemain terakhir bertindak boleh melihat tindakan lawan sebelum memilih. Kelebihan maklumat itulah yang memisahkan kutipan kedua-duanya.
 
-:::note[Semua EQR dalam siri ini ialah angka yang dipaparkan oleh solver. Pengiraan semula daripada equity dan EV yang telah dibundarkan boleh berbeza sehingga 0.3 mata peratusan. Kekalkan nilai paparan; perbezaan kecil ini datang daripada pembundaran.]:::
+:::note[Semua EQR dalam siri ini ialah angka yang dipaparkan oleh solver. Pengiraan semula daripada equity dan EV yang telah dibundarkan boleh berbeza beberapa persepuluh mata peratusan. Kekalkan nilai paparan; perbezaan kecil ini datang daripada pembundaran.]:::
 
 ## Sejauh mana pocket pair kuat pada 6-6-3?
 

@@ -272,7 +272,7 @@ A. Lúc đầu thì không. Bảng GTO preflop dùng tần suất trộn đượ
 
 **Q. Bài đồng chất (suited) có thực sự quan trọng không?**
 
-A. Đồng chất cộng thêm khoảng 2 điểm phần trăm equity so với cùng tay bài lệch chất (AKs là 67% trước một tay bài ngẫu nhiên; AKo, 65%) — đáng kể, nhưng không phải lý do để chơi một tay bài tệ. Hai lá đồng chất thành thùng đến river chỉ ~6,4% số lần (và một flush draw ở flop hoàn thành khoảng 35% số lần đến river). Rác đồng chất vẫn là rác.
+A. Đồng chất cộng thêm khoảng 2–3 điểm phần trăm equity so với cùng tay bài lệch chất (AKs là 67% trước một tay bài ngẫu nhiên; AKo, 65%) — đáng kể, nhưng không phải lý do để chơi một tay bài tệ. Hai lá đồng chất thành thùng đến river chỉ ~6,4% số lần (và một flush draw ở flop hoàn thành khoảng 35% số lần đến river). Rác đồng chất vẫn là rác.
 
 **Q. Có nên luôn bỏ đôi nhỏ như 22 hay 33 không?**
 
