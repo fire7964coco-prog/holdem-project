@@ -240,7 +240,7 @@ A. Cù lũ lớn hơn. Cù lũ (#4) đứng trên cả thùng (#5) lẫn sảnh 
 
 1. **Thùng (#5) lớn hơn sảnh (#6)** — không có ngoại lệ trong Hold'em chuẩn.
 2. Nó thắng vì hiếm hơn: **5.108** tổ hợp thùng so với **10.200** tổ hợp sảnh trong các bộ 5 lá — và 3,03% so với 4,62% tính trên cả 7 lá đến river.
-3. Hãy nhìn board: **ba lá cùng chất** nghĩa là đối thủ có thể có thùng, **board có đôi** nghĩa là cù lũ có thể ăn thùng của bạn, và cùng chất *cộng* liên tiếp là thùng phá sảnh.
+3. Hãy nhìn board: **ba lá cùng chất** nghĩa là đối thủ có thể có thùng, **board có đôi** nghĩa là cù lũ có thể ăn thùng của bạn, và cùng chất *cộng* liên tiếp nghĩa là thùng phá sảnh có thể xảy ra.
 
 Khóa chặt thứ tự đầy đủ với [thứ tự bài poker](/vi/blog/holdem-hand-rankings), học cách phân định các tay bài sát nhau trong [hướng dẫn so bài cùng hạng và kicker](/vi/blog/holdem-tiebreak-rules), và nếu bạn hoàn toàn mới, [luật chơi Texas Hold'em cho người mới](/vi/blog/texas-holdem-rules-for-beginners) sẽ nối tất cả lại với nhau.
 

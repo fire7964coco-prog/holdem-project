@@ -216,7 +216,7 @@ The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17
 
 The **30.8-point** gap is almost exactly the 29.1 points of the [dry ace-high board](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **A paired board plays like a dry one** — four ranges out of five are the same pair of sixes with a different high card, so the hand runs quietly, and the player who acts last gets to see which high card showed up before choosing. That advantage is the whole gap.
 
-:::note[Every EQR in this series is the figure the solver displays. Dividing the rounded equity and EV yourself lands within a tenth of a point of it — that is rounding, not a discrepancy.]:::
+:::note[Every EQR in this series is the figure the solver displays. Dividing the rounded equity and EV yourself lands within a few tenths of a point of it — that is rounding, not a discrepancy.]:::
 
 ## How strong are pocket pairs on 6-6-3?
 

@@ -150,7 +150,7 @@ Se você reduzir a estratégia ao que de fato faz iniciantes perderem dinheiro, 
 | O leak | Por que sangra fichas | A correção |
 |:---|:---|:---|
 | **Jogar mãos demais** | Mãos iniciais fracas flopam mãos feitas fracas que te custam pós-flop | Folde ~80% no pré-flop (Decisão 2) |
-| **Pagar demais** | Um call não tem fold equity: ninguém folda, então você precisa acertar ou chegar ao showdown na frente | Aumente ou folde; pare de "pagar para ver" (Decisão 3) |
+| **Pagar demais** | Um call não tem fold equity — ninguém folda para um call — e deixa outros entrarem barato | Aumente ou folde; pare de "pagar para ver" (Decisão 3) |
 | **Ser passivo demais** | Vencedores apostam e aumentam por valor; passividade ganha potes minúsculos e perde os grandes | Tome a linha agressiva quando você tem a mão (Decisão 4) |
 | **Ignorar a posição** | Jogar lixo fora de posição significa adivinhar em toda street | Jogue mais apertado cedo, mais solto tarde (Decisão 1) |
 | **Perseguir projetos sem odds** | Calls de "esperança" que o pote não justifica | Confira as pot odds antes de todo call de projeto (Decisão 5) |

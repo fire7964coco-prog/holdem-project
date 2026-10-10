@@ -260,7 +260,7 @@ Le tilt, c'est mal jouer sous le coup de l'émotion ; le VPIP, la fréquence à 
 | **Range** | L'ensemble des mains qu'un joueur peut avoir dans un spot ; les pros raisonnent en ranges, pas en mains isolées. |
 | **Cold deck** | Une donne malchanceuse qui produit un cooler (à l'origine, un paquet préparé à l'avance par un tricheur). |
 | **« Don't tap the glass »** | Ne critique pas les joueurs faibles — tu ferais fuir ceux qui te font gagner. |
-| **Run it twice** | Les joueurs à tapis distribuent deux fois le reste du board, chaque board pour la moitié du pot, afin de réduire la variance — uniquement en cash game, et seulement si tous les joueurs concernés sont d'accord. |
+| **Run it twice** | Les joueurs à tapis distribuent deux fois le reste du board, chaque board pour la moitié du pot, afin de réduire la variance — surtout pratiqué en cash game, et seulement si tous les joueurs concernés sont d'accord. |
 | **Heads-up** | Jouer à un contre un — une partie à deux joueurs ou les deux derniers d'un tournoi. |
 | **RFI (raise first in)** | L'abréviation des ranges et des stats pour l'open-raise : la fréquence à laquelle tu ouvres le pot quand personne n'est entré avant toi. |
 | **Splash the pot** | Jeter ses jetons en vrac dans le pot au lieu de les empiler devant soi — à éviter, car le montant ne peut pas être vérifié. |

@@ -98,7 +98,7 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 
 *Menurut ambang di bagian sebelumnya, overpair vs flush draw adalah kasus batas dalam daftar ini: pada ~63%, kasus itu lebih tepat disebut variance ketimbang bad beat "sejati" — tapi begitulah meja tetap menyebutnya.*
 
-Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board, three-of-a-kind mereka hampir selalu mengalahkan pair Anda — hanya sebuah ace atau runout langka (flush, straight, atau trips di board) yang menyelamatkan Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu hand tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
+Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board, three-of-a-kind mereka biasanya mengalahkan pair Anda — hanya sebuah ace atau runout langka (flush, straight, atau trips di board) yang menyelamatkan Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu hand tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
 
 ---
 

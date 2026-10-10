@@ -103,7 +103,7 @@ Board là ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Bạn cầm ==b:A♠ K♠==, đối th
 
 Cùng đôi, nên so kicker từ trên xuống: ==g:K của bạn thắng Q của họ.== Bạn thắng, A-A-K-9-7 trên A-A-Q-9-7. Lá 9 và lá 7 thậm chí không cần đến — kicker thứ nhất đã định đoạt.
 
-:::note[Để ý cả hai tay đều dùng chung lá 9 và lá 7 từ board. Kicker cũng có thể đến từ board: nếu lá phụ cao nhất là một lá bài chung, nó lấp vào tay bài của *cả hai* người và lá tiếp theo sẽ quyết định. Lá bài tẩy của bạn chỉ là kicker khi nó cao hơn thứ đã nằm sẵn trên board.]:::
+:::note[Để ý cả hai tay đều dùng chung lá 9 và lá 7 từ board. Kicker cũng có thể đến từ board: nếu lá phụ cao nhất là một lá bài chung, nó lấp vào tay bài của *cả hai* người và lá tiếp theo sẽ quyết định. Lá bài tẩy của bạn không cần cao hơn cả board mới được tính: nó vẫn có thể lấp một ô kicker thấp hơn, đứng sau một lá trên board (ngay bên dưới bạn sẽ thấy lá 9 bị đẩy xuống sau lá Q của board), và chỉ bị loại khi chính board đã đủ năm lá tốt hơn.]:::
 
 ---
 

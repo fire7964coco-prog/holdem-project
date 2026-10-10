@@ -150,7 +150,7 @@ Si reduces la estrategia a lo que de verdad hace perder dinero a los novatos, es
 | La fuga | Por qué sangra fichas | El arreglo |
 |:---|:---|:---|
 | **Jugar demasiadas manos** | Las manos iniciales débiles ligan manos hechas débiles que te cuestan postflop | Foldea ~80% preflop (Decisión 2) |
-| **Igualar demasiado** | Un call no tiene fold equity: no foldea a nadie, así que tiene que ligar o llegar al showdown por delante | Sube o foldea; deja de «pagar por ver» (Decisión 3) |
+| **Igualar demasiado** | Un call no tiene fold equity — nadie foldea ante un call — y deja entrar a otros barato | Sube o foldea; deja de «pagar por ver» (Decisión 3) |
 | **Ser demasiado pasivo** | Los ganadores apuestan y suben por valor; la pasividad gana botes diminutos y pierde los grandes | Toma la línea agresiva cuando la tengas (Decisión 4) |
 | **Ignorar la posición** | Jugar basura fuera de posición es adivinar en cada calle | Juega más tight temprano, más loose tarde (Decisión 1) |
 | **Perseguir proyectos sin odds** | Calls de «esperanza» que el bote no justifica | Revisa las pot odds antes de cada call con proyecto (Decisión 5) |

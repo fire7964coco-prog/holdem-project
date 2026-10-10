@@ -240,7 +240,7 @@ The words for what's happening — and how to behave while it does.
 | **Range** | The full set of hands a player could hold in a spot; pros think in ranges, not single hands. |
 | **Cold deck** | An unlucky deal producing a cooler (originally a cheat's pre-stacked deck). |
 | **"Don't tap the glass"** | Don't criticize weak players — you'll scare away the ones you profit from. |
-| **Run it twice** | All-in players deal the remaining board twice, each for half the pot, to cut variance — cash-game only, and everyone involved must agree. |
+| **Run it twice** | All-in players deal the remaining board twice, each for half the pot, to cut variance — mostly a cash-game practice, and everyone involved must agree. |
 | **Heads-up** | Playing one-on-one — either a two-player game or the final two of a tournament. |
 | **RFI (raise first in)** | The range-and-stats shorthand for the open-raise: how often you open the pot when no one has entered before you. |
 | **Splash the pot** | Throwing chips messily into the pot instead of stacking them in front of you — discouraged, since the amount can't be verified. |

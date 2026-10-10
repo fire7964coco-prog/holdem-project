@@ -53,7 +53,7 @@ Perkataan itu sendiri melukis gambarannya: anda "disejukkan" — tangan panas an
 **Dalam erti ketat, cooler dan bad beat berlawanan: dalam cooler anda di belakang ketika wang masuk, dalam bad beat anda di hadapan lalu dipintas.** Inilah perbezaan yang menentukan sama ada anda benar-benar faham istilah ini — dan hampir setiap pemain kasual menggunakan kedua-dua perkataan secara bertukar ganti. Kedua-duanya terasa teruk, dan tiada satu takrif rasmi — perinciannya:
 
 - **Cooler** — anda **di belakang** ketika wang masuk dan **kekal di belakang.** Tiada kad bertuah menyelamatkan sesiapa; pemenang mendahului sepanjang masa. Anda kalah kerana tangan besar anda bertemu tangan yang lebih besar.
-- **Bad beat** — anda **di hadapan** (selalunya favourite besar) ketika wang masuk, dan lawan anda **suck out** — kena kad bertuah di turn atau river untuk memintas anda.
+- **Bad beat** — anda **di hadapan** (selalunya favourite besar) ketika wang masuk, dan lawan anda **suck out** — kena kad bertuah di flop, turn atau river untuk memintas anda.
 
 Cara paling mudah untuk tidak tertukar:
 

@@ -206,7 +206,7 @@ A. Phiên bản nổi tiếng trên màn ảnh đến từ bộ phim *Rounders* 
 
 1. **Fish là người chơi yếu mà mọi người khác kiếm lời từ đó** — lỏng, thụ động, và thường không tự biết. Nhận ra fish là việc đầu tiên ở bất kỳ bàn nào.
 2. **Biết cả sở thú.** Fish, whale, nit, donkey và calling station không thay thế được cho nhau — gọi đúng kiểu của đối thủ cho bạn biết chính xác cách thắng họ.
-3. **Chắc rằng đó không phải bạn.** VPIP rộng với tỷ lệ raise thấp là chữ ký của fish. Nếu đó là bạn, các cách sửa là những chiến thắng dễ nhất trong poker: chơi ít tay hơn, fold nhiều hơn, và thôi đuổi theo.
+3. **Chắc rằng đó không phải bạn.** VPIP rộng với tỷ lệ raise thấp là chữ ký của fish. Nếu đó là bạn, các cách sửa là những chiến thắng dễ nhất trong poker: chơi ít tay hơn, fold nhiều hơn, và thôi đuổi theo draw mà không có pot odds đúng.
 
 Câu nói xưa đúng là có lý do. Nhìn quanh bàn tiếp theo của bạn và tìm ra fish trong nửa giờ đầu — và nếu thật sự không tìm thấy, điều giá trị nhất poker từng dạy bạn là đã đến lúc chăm chút cho chính ván chơi của mình. Bắt đầu với một [range bài khởi đầu](/vi/blog/holdem-starting-hands-chart) chặt hơn và cảm nhận thật về [pot odds](/vi/blog/holdem-pot-odds), rồi để người khác làm bữa ăn.
 

@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-10 (10) (§2-AQ (b) 솔버 랜딩 EN→14로케일 · §2-AN (a) · AO-1 · MB-225) · 그 전 (9) (vi 레인 워크트리 8개 제거 · 우편함 MB-224 = MA-414·416·417·S-063 ACK) · 그 전 (8) (vi 51편 + `/vi/glossary` 배포 `6b76c650` · MB-223 · queue §2-AS) · 그 전 (7) (MA-412·413 회신+이행 · PDF 4자리 · MB-222 · queue §2-AR) · 그 전 (6) (MA-411 착수 공지 ACK MB-221) · 그 전 (5) (§2-AQ (a) 배포 · MB-220) · 그 전 (4) (우편함 MB-219 · queue §2-AQ) · 그 전 (3) (`/ru/solver` 배포 `3814bcfc` · MB-218) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
+> 갱신: 2026-10-10 (11) (queue §2-AM 7 · §2-AN (b) 7 · §2-AO AO-2·3 EN→13로케일 · MB-226) · 그 전 (10) (§2-AQ (b) 솔버 랜딩 EN→14로케일 · §2-AN (a) · AO-1 · MB-225) · 그 전 (9) (vi 레인 워크트리 8개 제거 · 우편함 MB-224 = MA-414·416·417·S-063 ACK) · 그 전 (8) (vi 51편 + `/vi/glossary` 배포 `6b76c650` · MB-223 · queue §2-AS) · 그 전 (7) (MA-412·413 회신+이행 · PDF 4자리 · MB-222 · queue §2-AR) · 그 전 (6) (MA-411 착수 공지 ACK MB-221) · 그 전 (5) (§2-AQ (a) 배포 · MB-220) · 그 전 (4) (우편함 MB-219 · queue §2-AQ) · 그 전 (3) (`/ru/solver` 배포 `3814bcfc` · MB-218) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ `/ru/solver` ✅ 배포 (10-10 (3) `3814bcfc` · MB-218) · 판정 회신 ✅ (10-10 (4) MB-219)
@@ -32,8 +32,8 @@
 
 - ▶ **사장님 몫: GSC 수동 색인 38** = 계획 §4-C ⑧ 목록(필라 6편부터 · GTO 13 제외).
 - 검수장 회차 결과 = MA-367(🅰) MB-203 §2-AG · MA-368(🅱) MB-205 §2-AH · MA-370 MB-206 §2-AI · MA-372 재판정 해소 · MA-373(🅲) MB-208 §2-AJ · MA-374(🅳) MB-209 §2-AK. ▶ 대기: MB-206·208·209 변경 줄 판정 · F1 4자리·⚖ 결재 2 · 🅴 tour 처리 방식(검수장 사용자 결정) → MA 오면 회신+등재.
-- ▶ **MA-387(🅵 gloss) = queue §2-AN**: (a) FR 고유 4 ✅ 10-10 (10) MB-225 · (b) EN-먼저 7(→ 13로케일) 미이행 · 위치 확인 완료. MA-392 = §2-AO: AO-1(fr) ✅ MB-225 · AO-2·3 EN-먼저 미이행.
-- ▶ **MA-385 요청 1 = queue §2-AM 등재(미이행 · MB-213 ACK)**: FR 형제 갈림 7자리 EN-먼저 → 13로케일 → 이행 MB. 🔴 첫 단계 = 위치 재확인(① kicker · ⑤ reading-the-board 축어 미발견). 🅴 tour 5편은 FR 회차 제외(46편).
+- ▶ **MA-387(🅵 gloss) = queue §2-AN**: (a) FR 고유 4 ✅ 10-10 (10) MB-225 · (b) EN-먼저 7 ✅ 10-10 (11) MB-226. MA-392 = §2-AO: AO-1 ✅ MB-225 · AO-2·3 ✅ MB-226. ▶ 검수장 전/후 대조 MA 대기.
+- ✅ **MA-385 요청 1 = queue §2-AM** 7자리 EN→13로케일 이행 10-10 (11) MB-226 · 🪶 MB-226 통지 3(straddle FAQ «cash-game-only option» 동문 · ms split-pot Rule 109 단서 · ms paired «0.3»). 🅴 tour 5편은 FR 회차 제외(46편).
 - 🪶 빈 레인 폴더 `../Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` 7개 = 레인 창 닫은 뒤 삭제(워크트리 등록은 해제됨). 브랜치 `harden-fr-*`·`fr-integration` 보존.
 - 🪶 자동 착수 금지: EN-먼저 18자리 queue §2-AE · H-8 fr PDF 별도 회차 · `/fr/solver` 본문 산문 링크 · 러닝맵 머리 영어(비-KO 전 로케일) · §2-AF 이행 `84434589` MB-201 재판정 결과 대기.
 - ⏸ ms 14편 EN 동기화(queue §2-AB) = 검수장 MS 전수 초벌(MA-346)과 겹쳐 «나중에 봐서»(사장님 10-07).

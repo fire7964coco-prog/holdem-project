@@ -28,7 +28,7 @@ Nếu bạn từng thấy một bàn live mà một blind phụ bỗng xuất hi
 :::stripe
 2× BB | Cỡ straddle tiêu chuẩn
 Cuối cùng | Lượt act preflop của người straddle
-Chỉ cash game | Gần như không bao giờ được phép trong giải đấu
+Chủ yếu cash game | Gần như không bao giờ được phép trong giải đấu
 -EV (EV âm) | Kết luận cho hầu hết người chơi
 :::
 
@@ -112,7 +112,7 @@ Nếu bạn đang call vào một pot có straddle, hãy nhớ [pot odds](/vi/bl
 
 **Gần như không bao giờ.** Straddle là đặc điểm của cash game. Giải đấu (tournament) chạy trên một cấu trúc level blind cố định phải giống hệt ở mọi bàn để công bằng, và một blind phụ tự nguyện sẽ phá vỡ điều đó — nên đại đa số giải đấu, live lẫn online, **cấm straddle hoàn toàn.**
 
-Ngay cả trong cash game nó cũng tùy chọn và tùy luật riêng của phòng: một số phòng chỉ cho UTG straddle, một số cho phép Mississippi và button straddle, một số giới hạn cỡ, một số cấm re-straddle. Online, straddle hiếm và, nơi có, thường chỉ là một nút bật UTG đơn giản. Khác biệt giữa một khoản cược cash game như thế này và thể thức giải đấu cứng nhắc là cả một chủ đề riêng — xem [giải đấu và cash game](/vi/blog/holdem-tournament-vs-cash-game).
+Ngay cả trong cash game nó cũng tùy luật riêng của phòng. Thường thì straddle là tùy chọn (có những bàn bắt buộc straddle), và một số phòng chỉ cho UTG straddle, một số cho phép Mississippi và button straddle, một số giới hạn cỡ, một số cấm re-straddle. Online, straddle hiếm và, nơi có, thường chỉ là một nút bật UTG đơn giản. Khác biệt giữa một khoản cược cash game như thế này và thể thức giải đấu cứng nhắc là cả một chủ đề riêng — xem [giải đấu và cash game](/vi/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -214,7 +214,7 @@ Giờ bạn đã biết blind phụ này, hãy siết lại những nền tảng
   <a href="/vi/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Giải đấu</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Giải đấu hay cash game?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Vì sao straddle là chuyện riêng của cash game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Vì sao straddle về cơ bản là chuyện của cash game</div>
   </a>
 </div>
 `.trim(),

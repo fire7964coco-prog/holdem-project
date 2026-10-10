@@ -160,7 +160,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
 | A♠ Q♦ | K-K-A-Q-7 | Just one pair — the board's kings — with A-Q behind |
 
-Notice the last row: ==even with nothing, the board's pair is part of your hand==. "Does a pair on the board count?" — yes, for everyone at once. That's why top pair shrinks on paired boards: any king in someone's hand makes at least trips (K-7, K-3 or K-2 is already a full house), any 7-7 is a boat, and your one pair is suddenly third-best.
+Notice the last row: ==even with nothing, the board's pair is part of your hand==. "Does a pair on the board count?" — yes, for everyone at once. That's why top pair shrinks on paired boards: any king in someone's hand makes at least trips (K-7, K-3 or K-2 is already a full house), any 7-7 is a boat, any single 7, 3 or 2 already makes two pair, and your one pair trails all of them.
 
 ==g:Paired board = re-read the hand from scratch before putting chips in.==
 

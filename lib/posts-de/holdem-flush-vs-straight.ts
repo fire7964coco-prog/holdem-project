@@ -222,7 +222,7 @@ A. Nein. Eine Hand ist immer über der anderen eingestuft, also gewinnt der Flus
 
 1. **Flush (#5) schlägt Straße (#6)** – keine Ausnahmen im Standard-Hold'em.
 2. Er gewinnt, weil er seltener ist: **5.108** Flush- gegen **10.200** Straßen-Kombinationen unter den Fünf-Karten-Händen – über alle sieben Karten bis zum River 3,03% gegen 4,62%.
-3. Achte auf das Board: **drei einer Farbe** bedeuten, dass ein Flush möglich ist, ein **gepaartes Board** bedeutet, dass ein Full House deinen Flush schlagen kann, und suited *plus* verbunden ist ein Straight Flush.
+3. Achte auf das Board: **drei einer Farbe** bedeuten, dass ein Flush möglich ist, ein **gepaartes Board** bedeutet, dass ein Full House deinen Flush schlagen kann, und suited *plus* verbunden bedeutet, dass ein Straight Flush möglich ist.
 
 Zementiere die komplette Reihenfolge mit der [vollständigen Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings), lern im [Tie-Breaker- und Kicker-Guide](/de/blog/holdem-tiebreak-rules), wie knappe Hände entschieden werden, und wenn du ganz neu bist, verbindet der [Anfänger-Guide zu den Texas Hold'em Regeln](/de/blog/texas-holdem-rules-for-beginners) alles miteinander.
 

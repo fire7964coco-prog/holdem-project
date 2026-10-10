@@ -226,7 +226,7 @@ A. Tidak. Three of a kind ialah tangan #7, dua anak tangga di bawah flush (#5), 
 
 1. **Flush (#5) menang ke atas straight (#6)** — tiada pengecualian dalam Hold'em standard.
 2. Ia menang kerana lebih jarang: **5,108** kombinasi flush berbanding **10,200** kombinasi straight antara tangan lima kad — dan 3.03% berbanding 4.62% merentas kesemua tujuh kad hingga river.
-3. Perhatikan board: **tiga kad satu suit** bermakna flush masih mungkin, **board berpasangan** bermakna full house boleh mengalahkan flush anda, dan satu suit *serta* bersambung bermakna straight flush.
+3. Perhatikan board: **tiga kad satu suit** bermakna flush masih mungkin, **board berpasangan** bermakna full house boleh mengalahkan flush anda, dan satu suit *serta* bersambung bermakna straight flush masih mungkin.
 
 Kukuhkan urutannya dengan [susunan penuh kad poker](/ms/blog/holdem-hand-rankings), pelajari cara tangan yang hampir sama ditentukan dalam [panduan pemecah seri dan kicker](/ms/blog/holdem-tiebreak-rules), dan jika anda benar-benar baharu, [panduan peraturan Texas Hold'em untuk pemula](/ms/blog/texas-holdem-rules-for-beginners) menyatukan semuanya.
 

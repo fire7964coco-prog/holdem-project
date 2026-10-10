@@ -161,7 +161,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
 | A♠ Q♦ | K-K-A-Q-7 | Cuma sepasang — sepasang K dari board — dengan A-Q di belakang |
 
-Perhatikan baris terakhir: ==bahkan tanpa apa-apa, pasangan di board jadi bagian tangan Anda==. "Apakah pair di board dihitung?" — ya, untuk semua orang sekaligus. Itu sebabnya top pair mengecil di paired board: K mana pun di tangan seseorang minimal jadi trips (K-7, K-3, atau K-2 sudah full house), 7-7 mana pun jadi boat, dan sepasang Anda tiba-tiba jadi peringkat ketiga.
+Perhatikan baris terakhir: ==bahkan tanpa apa-apa, pasangan di board jadi bagian tangan Anda==. "Apakah pair di board dihitung?" — ya, untuk semua orang sekaligus. Itu sebabnya top pair mengecil di paired board: K mana pun di tangan seseorang minimal jadi trips (K-7, K-3, atau K-2 sudah full house), 7-7 mana pun jadi boat, satu kartu 7, 3, atau 2 saja sudah jadi two pair, dan sepasang Anda tertinggal di bawah semuanya.
 
 ==g:Paired board = baca ulang tangan dari nol sebelum memasukkan chip.==
 

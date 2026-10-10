@@ -103,7 +103,7 @@ Mejanya ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Anda pegang ==b:A♠ K♠==, lawan pegan
 
 Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q mereka.== Anda menang, A-A-K-9-7 atas A-A-Q-9-7. Si 9 dan 7 bahkan tak ikut bermain — kicker pertama sudah menentukannya.
 
-:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari board. Kicker bisa datang dari board juga: kalau kartu samping tertinggi adalah kartu komunitas, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru jadi kicker kalau ia mengalahkan apa yang sudah ada di board.]:::
+:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari board. Kicker bisa datang dari board juga: kalau kartu samping tertinggi adalah kartu komunitas, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda tak harus mengalahkan seluruh board untuk ikut dihitung: ia tetap bisa mengisi slot kicker yang lebih rendah di belakang kartu board (di bawah nanti Anda lihat 9 terdorong ke belakang queen di board), dan baru tersingkir kalau board sendiri sudah menyediakan lima kartu yang lebih baik.]:::
 
 ---
 

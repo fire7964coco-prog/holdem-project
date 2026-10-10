@@ -161,7 +161,7 @@ Mesa: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full, full de sietes con reyes |
 | A♠ Q♦ | K-K-A-Q-7 | Solo pareja — los reyes de la mesa — con A-Q detrás |
 
-Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte de tu mano==. "¿Cuenta una pareja en la mesa?" — sí, para todos a la vez. Por eso la pareja alta pierde valor en mesas emparejadas: cualquier rey en la mano de alguien es como mínimo trío (K-7, K-3 o K-2 ya es full), cualquier 7-7 es full, y tu pareja de repente es la tercera mejor.
+Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte de tu mano==. "¿Cuenta una pareja en la mesa?" — sí, para todos a la vez. Por eso la pareja alta pierde valor en mesas emparejadas: cualquier rey en la mano de alguien es como mínimo trío (K-7, K-3 o K-2 ya es full), cualquier 7-7 es full, cualquier 7, 3 o 2 suelto ya hace doble pareja, y tu pareja queda por debajo de todas ellas.
 
 ==g:Mesa emparejada = vuelve a leer la mano desde cero antes de meter fichas.==
 

@@ -265,7 +265,7 @@ Những từ cho điều đang xảy ra — và cách cư xử trong lúc đó.
 | **Range** | Toàn bộ tập tay bài một người có thể cầm ở một chỗ; pro nghĩ theo range, không theo một tay đơn lẻ. |
 | **Cold deck** | Một ván chia xui tạo ra cooler (nghĩa gốc là bộ bài gian lận đã xếp sẵn). |
 | **"Don't tap the glass"** | Đừng chê người chơi yếu (đừng gõ vào bể cá) — bạn sẽ dọa đi chính những người bạn kiếm lời từ đó. |
-| **Run it twice** | Những người đã all-in chia phần board còn lại hai lần, mỗi lần cho nửa pot, để giảm variance — chỉ ở cash game, và mọi người liên quan phải đồng ý. |
+| **Run it twice** | Những người đã all-in chia phần board còn lại hai lần, mỗi lần cho nửa pot, để giảm variance — chủ yếu là thông lệ ở cash game, và mọi người liên quan phải đồng ý. |
 | **Heads-up** | Chơi một đối một — hoặc bàn hai người, hoặc hai người cuối của một giải đấu. |
 | **RFI (raise first in)** | Cách gọi tắt của cú open-raise trong range và thống kê: bạn mở pot bao nhiêu phần trăm khi chưa ai vào trước bạn. |
 | **Splash the pot** | Ném chip bừa vào pot thay vì xếp trước mặt — không nên, vì số tiền không kiểm chứng được. |

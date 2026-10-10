@@ -73,7 +73,7 @@ Dalam Texas Hold'em standard, **tiada jenis kad yang lebih kuat daripada jenis l
 
 ## Apakah 10 Tangan Poker? (Setiap Satu Dijelaskan)
 
-Inilah setiap tangan dari terkuat ke terlemah, dengan contoh dan satu peraturan yang menentukan setiap pertarungan. Lima yang paling mengelirukan — full house, flush, straight, dan dua jenis three of a kind — diberi perhatian tambahan.
+Inilah setiap tangan dari terkuat ke terlemah, dengan contoh dan satu peraturan yang menentukan setiap pertarungan. Tangan yang paling mengelirukan — full house, flush, straight, dan tiga jenis three of a kind — diberi perhatian tambahan.
 
 ### #1 — Royal Flush
 

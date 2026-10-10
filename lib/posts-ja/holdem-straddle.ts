@@ -28,7 +28,7 @@ $1/$2のテーブルで初めて誰かがストラドルしたとき、私はさ
 :::stripe
 BBの2倍 | 標準的なストラドルの額
 最後 | ストラドルした人のプリフロップのアクション順
-キャッシュのみ | トーナメントではほぼ不許可
+主にキャッシュ | トーナメントではほぼ不許可
 -EV | ほとんどのプレイヤーにとっての結論
 :::
 
@@ -125,7 +125,7 @@ $2/$5なら$10と、レートが上がればそのまま倍で付いてきます
 
 ストラドルはキャッシュゲームの機能です。トーナメントは公平性のため、どのテーブルでも同一に保たれる固定のブラインドレベル構造で動いており、任意の追加ブラインドはそれを壊してしまいます——だからライブでもオンラインでも、大多数のトーナメントは**ストラドルを完全に禁止**しています。
 
-キャッシュゲームでさえ任意でハウスルール依存です。UTGストラドルだけ許すルーム、ミシシッピやボタンストラドルを認めるルーム、額に上限を設けるルーム、リストラドルを禁じるルーム。オンラインではストラドルはまれで、提供される場合も通常は単純なUTGのボタン切り替えに限られます。こうしたキャッシュゲームのベットと、硬直したトーナメント形式の違いはそれ自体が一つのテーマです——[トーナメントとキャッシュゲームの違い](/ja/blog/holdem-tournament-vs-cash-game)を参照。
+キャッシュゲームでさえハウスルール依存です。たいていは任意ですが(ストラドルが義務のゲームもあります)、UTGストラドルだけ許すルーム、ミシシッピやボタンストラドルを認めるルーム、額に上限を設けるルーム、リストラドルを禁じるルーム。オンラインではストラドルはまれで、提供される場合も通常は単純なUTGのボタン切り替えに限られます。こうしたキャッシュゲームのベットと、硬直したトーナメント形式の違いはそれ自体が一つのテーマです——[トーナメントとキャッシュゲームの違い](/ja/blog/holdem-tournament-vs-cash-game)を参照。
 
 ---
 
@@ -234,7 +234,7 @@ A. ストラドルされたポットは、実質的にビッグブラインド�
   <a href="/ja/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">トーナメント</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">トーナメントとキャッシュゲーム</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ストラドルがキャッシュゲーム専用な理由</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ストラドルが事実上キャッシュゲームのものである理由</div>
   </a>
 </div>
 `.trim(),

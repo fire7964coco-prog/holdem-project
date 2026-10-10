@@ -98,7 +98,7 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 
 *Según el listón de la sección anterior, el sobrepar contra proyecto de color es el caso límite de la familia: con ~63%, es más varianza que un bad beat "de verdad" — pero es como lo llama la mesa de todos modos.*
 
-El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa, su trío casi siempre gana a tu pareja — solo te salva un as o un desarrollo raro (color, escalera o trío en la mesa). Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
+El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa, su trío normalmente gana a tu pareja — solo te salva un as o un desarrollo raro (color, escalera o trío en la mesa). Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
 
 ---
 

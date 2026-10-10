@@ -241,7 +241,7 @@ Masih belajar tangan mana mengalahkan yang mana? [Panduan susunan kad](/ms/blog/
 | **Range** | Set penuh tangan yang mungkin dipegang seseorang pemain dalam sesuatu situasi; pemain pro berfikir dalam range, bukan tangan tunggal. |
 | **Cold deck** | Agihan kad malang yang menghasilkan cooler (asalnya dek yang disusun lebih awal oleh penipu). |
 | **"Don't tap the glass"** | Jangan kritik pemain lemah — anda akan menakutkan pemain yang menjadi sumber keuntungan anda. |
-| **Run it twice** | Baki board diagihkan dua kali untuk pemain all-in, setiap kali untuk separuh pot, bagi mengurangkan variance — hanya dalam cash game, dan semua yang terlibat mesti bersetuju. |
+| **Run it twice** | Baki board diagihkan dua kali untuk pemain all-in, setiap kali untuk separuh pot, bagi mengurangkan variance — kebanyakannya amalan cash game, dan semua yang terlibat mesti bersetuju. |
 | **Heads-up** | Bermain satu lawan satu — sama ada permainan dua pemain atau dua pemain terakhir dalam tournament. |
 | **RFI (raise first in)** | Singkatan dalam range dan statistik untuk open-raise: kekerapan anda membuka pot apabila tiada sesiapa masuk sebelum anda. |
 | **Splash the pot** | Membaling cip secara berselerak ke dalam pot dan bukannya menyusunnya di hadapan anda — tidak digalakkan, kerana jumlahnya tidak dapat disahkan. |

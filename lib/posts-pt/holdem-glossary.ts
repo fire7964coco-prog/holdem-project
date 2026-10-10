@@ -244,7 +244,7 @@ As palavras pro que está acontecendo — e como se comportar enquanto acontece.
 | **Range** | O conjunto completo de mãos que um jogador pode ter num spot; os pros pensam em ranges, não em mãos únicas. |
 | **Cold deck** | Uma distribuição azarada que produz um cooler (originalmente um baralho pré-arrumado de trapaceiro). |
 | **"Don't tap the glass" (não bata no vidro)** | Não critique jogadores fracos — você vai espantar aqueles de quem lucra. |
-| **Run it twice** | Os jogadores all-in distribuem o resto do board duas vezes, cada uma valendo metade do pote, pra reduzir a variância — coisa de cash game, e só com acordo de todos os envolvidos. |
+| **Run it twice** | Os jogadores all-in distribuem o resto do board duas vezes, cada uma valendo metade do pote, pra reduzir a variância — coisa principalmente de cash game, e só com acordo de todos os envolvidos. |
 | **Heads-up** | Jogar um contra um — seja uma mesa de dois jogadores, seja os dois últimos de um torneio. |
 | **RFI (raise first in)** | A sigla de ranges e estatísticas pro open-raise: com que frequência você abre o pote quando ninguém entrou antes. |
 | **Splash the pot** | Jogar as fichas de qualquer jeito no meio do pote em vez de empilhá-las na sua frente — barrado pelo dealer, porque o valor não dá pra conferir. |

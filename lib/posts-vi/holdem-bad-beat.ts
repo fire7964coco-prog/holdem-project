@@ -98,7 +98,7 @@ Mọi bad beat đều cùng một hình dáng: bạn là favorite, underdog cầ
 
 *Theo ngưỡng ở phần trước, overpair vs flush draw là ca ranh giới của cả nhóm này: ở khoảng 63%, đó là variance nhiều hơn là một bad beat "thật" — nhưng ở bàn người ta vẫn gọi vậy.*
 
-Tiêu biểu nhất là **đôi Át bị set bẻ gãy.** Bạn all-in preflop với đôi Át trước đôi 7 — bạn là favorite khoảng 80%, một thế khóa 4:1 nghiêng về bạn. Nhưng còn hai lá 7 nữa trong bộ bài, và nếu một lá rơi xuống board, sám cô (three of a kind) của họ gần như luôn thắng đôi của bạn — chỉ một lá Át hay một runout hiếm (thùng, sảnh, hoặc trips trên board) mới cứu được bạn. Bốn trên năm lần bạn vét pot; lần thứ năm, bạn có một câu chuyện bad beat chẳng ai muốn nghe. Toán học chưa bao giờ sai — bạn chỉ rơi vào phía sai của nó, và đó chính là lý do một ván đơn lẻ [chẳng nói gì về việc bạn chơi hay hay dở](/vi/blog/holdem-cooler). Muốn tự kiểm tra một cặp tay bất kỳ, [máy tính equity](/vi/calculator) cho bạn con số ngay.
+Tiêu biểu nhất là **đôi Át bị set bẻ gãy.** Bạn all-in preflop với đôi Át trước đôi 7 — bạn là favorite khoảng 80%, một thế khóa 4:1 nghiêng về bạn. Nhưng còn hai lá 7 nữa trong bộ bài, và nếu một lá rơi xuống board, sám cô (three of a kind) của họ thường sẽ thắng đôi của bạn — chỉ một lá Át hay một runout hiếm (thùng, sảnh, hoặc trips trên board) mới cứu được bạn. Bốn trên năm lần bạn vét pot; lần thứ năm, bạn có một câu chuyện bad beat chẳng ai muốn nghe. Toán học chưa bao giờ sai — bạn chỉ rơi vào phía sai của nó, và đó chính là lý do một ván đơn lẻ [chẳng nói gì về việc bạn chơi hay hay dở](/vi/blog/holdem-cooler). Muốn tự kiểm tra một cặp tay bất kỳ, [máy tính equity](/vi/calculator) cho bạn con số ngay.
 
 ---
 

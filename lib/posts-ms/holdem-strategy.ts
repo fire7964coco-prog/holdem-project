@@ -152,7 +152,7 @@ Jika strategi dilucutkan kepada apa yang benar-benar menyebabkan pemain baharu r
 | Leak | Kenapa ia menghakis cip | Cara membaiki |
 |:---|:---|:---|
 | **Bermain terlalu banyak tangan** | Tangan permulaan yang lemah menghasilkan tangan lemah di flop yang merugikan anda postflop | Fold ~80% preflop (Keputusan 2) |
-| **Terlalu banyak call** | Call tiada fold equity — ia tidak pernah membuatkan sesiapa fold, jadi ia mesti menjadi atau sampai ke showdown dalam keadaan mendahului | Raise atau fold; berhenti "call untuk tengok" (Keputusan 3) |
+| **Terlalu banyak call** | Call tiada fold equity — tiada siapa fold kepada call — dan ia membiarkan pemain lain masuk dengan murah | Raise atau fold; berhenti "call untuk tengok" (Keputusan 3) |
 | **Terlalu pasif** | Pemenang bet dan raise untuk value; sikap pasif memenangi pot kecil dan kalah pot besar | Ambil laluan agresif apabila anda memilikinya (Keputusan 4) |
 | **Mengabaikan posisi** | Bermain tangan sampah out of position bermaksud meneka di setiap street | Main lebih ketat di posisi awal, lebih longgar di posisi lewat (Keputusan 1) |
 | **Mengejar draw tanpa odds** | Call "harapan" yang tidak dijustifikasikan oleh pot | Semak pot odds sebelum setiap call draw (Keputusan 5) |

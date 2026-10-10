@@ -153,7 +153,7 @@ Si tu réduis la stratégie à ce qui fait réellement perdre de l'argent aux no
 | L'erreur | Pourquoi elle coûte des jetons | La correction |
 |:---|:---|:---|
 | **Jouer trop de mains** | Les mains de départ faibles touchent des mains faites faibles qui te coûtent après le flop | Jette ~80 % préflop (décision 2) |
-| **Payer trop souvent** | Un call n'a aucune fold equity — il ne fait jamais coucher personne, donc il doit toucher ou arriver devant à l'abattage (showdown) | Relance ou couche-toi ; arrête de « payer pour voir » (décision 3) |
+| **Payer trop souvent** | Un call n'a aucune fold equity — personne ne se couche face à un call — et il laisse entrer les autres à bas prix | Relance ou couche-toi ; arrête de « payer pour voir » (décision 3) |
 | **Être trop passif** | Les gagnants misent et relancent pour la value ; la passivité gagne de petits pots et perd les gros | Prends la ligne agressive quand tu as la main (décision 4) |
 | **Ignorer la position** | Jouer des déchets hors de position, c'est deviner à chaque tour | Plus serré en début de parole, plus large en fin (décision 1) |
 | **Poursuivre des tirages sans cote** | Des calls « d'espoir » que le pot ne justifie pas | Vérifie les cotes du pot avant chaque call sur tirage (décision 5) |

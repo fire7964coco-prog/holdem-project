@@ -161,7 +161,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full house, setes com reis |
 | A♠ Q♦ | K-K-A-Q-7 | Só um par — os reis da mesa — com A-Q atrás |
 
-Repare na última linha: ==mesmo sem nada, o par da mesa faz parte da sua mão==. "Um par na mesa conta?" — conta, para todo mundo ao mesmo tempo. É por isso que o top pair encolhe em mesas pareadas: qualquer rei na mão de alguém é no mínimo trinca (K-7, K-3 ou K-2 já é full house), qualquer 7-7 é um boat, e seu par vira de repente o terceiro melhor.
+Repare na última linha: ==mesmo sem nada, o par da mesa faz parte da sua mão==. "Um par na mesa conta?" — conta, para todo mundo ao mesmo tempo. É por isso que o top pair encolhe em mesas pareadas: qualquer rei na mão de alguém é no mínimo trinca (K-7, K-3 ou K-2 já é full house), qualquer 7-7 é um boat, qualquer 7, 3 ou 2 sozinho já faz dois pares, e seu par fica abaixo de todas elas.
 
 ==g:Mesa pareada = releia a mão do zero antes de colocar fichas.==
 

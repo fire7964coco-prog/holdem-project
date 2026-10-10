@@ -226,7 +226,7 @@ Bet a third of the pot, 7.4bb, and the caller needs ==7.4 ÷ (22.5 + 7.4 + 7.4) 
 
 One step further, though: **the caller cannot simply fold everything either.** Facing 14.9bb into 22.5bb, denying a pure bluff its profit takes ==22.5 ÷ (22.5 + 14.9) = 60.2%== of the range — the minimum defense frequency. The button's genuinely made hands add up to only **33.9%** (6.8 trips, 20.3 top pair, 6.8 second pair).
 
-🪶 Filling 60.2% does not need the draws at all, though — **33.9% made plus 36.1% underpairs is already 70.0%.** Even if all 38 priced-out draw combos fold, 71.4% of the range remains, comfortably clear. What the big size really does, then, is less "chase the draws away" and more **make the middle of the button's range pay badly to stay** — those underpairs put the money in surrounded by two overcards and every draw on the board.
+🪶 Filling 60.2% does not need the draws at all, though — **33.9% made plus 36.1% underpairs is already 70.0%.** Even if all 38 priced-out draw combos fold, 71.4% of the range remains, comfortably clear. What the big size really does, then, is less "chase the draws away" and more **make the middle of the button's range pay badly to stay** — those underpairs put the money in under the queen (and under both broadway cards, except JJ) with every draw on the board.
 
 :::note[⚠ MDF treats the bet as a pure bluff holding no equity of its own. Most of what bets here is not that — 24.7% of the big blind's range is a gutshot, and a gutshot that gives up still had real equity when it fired. Treat 60.2% as a way to think about defending, not a quota to fill.]:::
 

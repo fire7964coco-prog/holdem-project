@@ -28,7 +28,7 @@ Si has visto una partida en vivo donde aparece una ciega extra de la nada, este 
 :::stripe
 2× BB | Tamaño estándar del straddle
 Última | La acción preflop del que lo pone
-Solo cash | Casi nunca permitido en torneos
+Sobre todo cash | Casi nunca permitido en torneos
 -EV | El veredicto para la mayoría de jugadores
 :::
 
@@ -112,7 +112,7 @@ Si vas a igualar en un bote con straddle, recuerda que tus [pot odds](/es/blog/h
 
 **Casi nunca.** El straddle es cosa de cash games. Los torneos funcionan con una estructura fija de niveles de ciegas que tiene que ser idéntica en todas las mesas por justicia, y una ciega extra voluntaria rompería eso — así que la inmensa mayoría de torneos, en vivo y online, **prohíben el straddle por completo.**
 
-Incluso en cash games es opcional y depende de las reglas de la casa: algunas salas permiten solo el straddle UTG, otras aceptan Mississippi y button straddles, otras ponen tope al tamaño, otras prohíben los re-straddles. Online, los straddles son raros y, donde se ofrecen, suelen limitarse a un simple interruptor de straddle UTG. La diferencia entre una apuesta de cash game como esta y el formato rígido de torneo da para todo un tema aparte — mira [torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).
+Incluso en cash games depende de las reglas de la casa. Suele ser opcional (hay partidas que se juegan con straddle obligatorio), y algunas salas permiten solo el straddle UTG, otras aceptan Mississippi y button straddles, otras ponen tope al tamaño, otras prohíben los re-straddles. Online, los straddles son raros y, donde se ofrecen, suelen limitarse a un simple interruptor de straddle UTG. La diferencia entre una apuesta de cash game como esta y el formato rígido de torneo da para todo un tema aparte — mira [torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -218,7 +218,7 @@ Ahora que conoces la ciega extra, afina los fundamentos que distorsiona: [qué h
   <a href="/es/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneos</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneos vs cash games</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por qué los straddles son cosa solo de cash games</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por qué los straddles son, en la práctica, cosa de cash games</div>
   </a>
 </div>
 `.trim(),

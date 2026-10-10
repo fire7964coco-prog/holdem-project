@@ -28,7 +28,7 @@ export const POST: Post = {
 :::stripe
 2×BB | 标准 straddle 尺寸
 最后 | 抓的人翻前的行动顺序
-仅现金局 | 锦标赛几乎从不允许
+主要在现金局 | 锦标赛几乎从不允许
 -EV | 对大多数人的结论
 :::
 
@@ -123,7 +123,7 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 
 原因是公平：锦标赛的盲注级别表是全场统一的，哪一桌多出一个盲注，那一桌的实际级别就跟别桌不一样了。
 
-哪怕在现金局里它也是可选的、看房规：有些牌房只允许 UTG straddle，有些允许 mississippi 和 button straddle，有些限制尺寸，有些禁止 re-straddle。线上，straddle 很少见，就算提供，通常也只是一个简单的 UTG 按钮开关。像这样一个现金局下注和那种死板的锦标赛赛制之间的区别，本身就是一整个话题——见 [锦标赛 vs 现金局](/zh/blog/holdem-tournament-vs-cash-game)。
+哪怕在现金局里它也要看房规：通常是可选的（也有把 straddle 定为强制的牌局），有些牌房只允许 UTG straddle，有些允许 mississippi 和 button straddle，有些限制尺寸，有些禁止 re-straddle。线上，straddle 很少见，就算提供，通常也只是一个简单的 UTG 按钮开关。像这样一个现金局下注和那种死板的锦标赛赛制之间的区别，本身就是一整个话题——见 [锦标赛 vs 现金局](/zh/blog/holdem-tournament-vs-cash-game)。
 
 ---
 
@@ -247,7 +247,7 @@ A. 对大多数玩家来说，不赚——这是个 -EV 的打法。你盲投了
   <a href="/zh/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">锦标赛 vs 现金局</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么 straddle 是只属于现金局的东西</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">为什么 straddle 基本上是现金局的东西</div>
   </a>
 </div>
 `.trim(),

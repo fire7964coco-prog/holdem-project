@@ -103,7 +103,7 @@ Board ialah ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Anda memegang ==b:A♠ K♠==, lawan
 
 Pair yang sama, jadi bandingkan kicker dari atas ke bawah: ==g:K anda mengalahkan Q mereka.== Anda menang, A-A-K-9-7 mengatasi A-A-Q-9-7. Kad 9 dan 7 langsung tidak terlibat — kicker pertama sudah menyelesaikannya.
 
-:::note[Perhatikan kedua-dua tangan berkongsi 9 dan 7 dari board. Kicker juga boleh datang dari board: jika kad sampingan tertinggi ialah kad komuniti, ia mengisi tangan *kedua-dua* pemain dan kad seterusnya yang menentukan. Hole card (dua kad peribadi anda) hanya menjadi kicker jika ia mengatasi kad yang sudah ada di board.]:::
+:::note[Perhatikan kedua-dua tangan berkongsi 9 dan 7 dari board. Kicker juga boleh datang dari board: jika kad sampingan tertinggi ialah kad komuniti, ia mengisi tangan *kedua-dua* pemain dan kad seterusnya yang menentukan. Hole card (dua kad peribadi anda) tidak perlu mengatasi seluruh board untuk dikira: ia masih boleh mengisi slot kicker yang lebih rendah di belakang kad board (di bawah nanti anda akan lihat 9 ditolak ke belakang Q di board), dan hanya tersingkir apabila board sendiri sudah membekalkan lima kad yang lebih baik.]:::
 
 ---
 

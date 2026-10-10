@@ -77,7 +77,7 @@ Au Texas Hold'em standard, **aucune enseigne n'est plus forte qu'une autre**. Le
 
 ## Quelles sont les mains au poker ? Les 10 combinaisons expliquées une par une
 
-Voici chaque main, de la plus forte à la plus faible, avec un exemple et la règle qui tranche chaque duel. Les cinq qui sèment le plus de confusion — le full, la couleur, la quinte et les deux façons de faire un brelan — ont droit à plus d'attention.
+Voici chaque main, de la plus forte à la plus faible, avec un exemple et la règle qui tranche chaque duel. Celles qui sèment le plus de confusion — le full, la couleur, la quinte et les trois façons de faire un brelan — ont droit à plus d'attention.
 
 ### #1 — Quinte flush royale (royal flush)
 

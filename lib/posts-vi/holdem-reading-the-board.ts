@@ -153,7 +153,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Cù lũ 7 kèm K |
 | A♠ Q♦ | K-K-A-Q-7 | Chỉ một đôi — đôi K của board — với A-Q đứng sau |
 
-Hãy để ý hàng cuối: ==ngay cả khi không có gì, đôi trên board vẫn là một phần tay bài của bạn==. "Đôi trên board có tính không?" — có, cho tất cả mọi người cùng lúc. Vì thế top pair mất giá trên board có đôi: bất kỳ lá K nào trong tay ai đó cũng thành ít nhất trips (K-7, K-3 hay K-2 đã là cù lũ), bất kỳ 7-7 nào cũng là cù lũ, và một đôi của bạn bỗng chỉ còn đứng thứ ba.
+Hãy để ý hàng cuối: ==ngay cả khi không có gì, đôi trên board vẫn là một phần tay bài của bạn==. "Đôi trên board có tính không?" — có, cho tất cả mọi người cùng lúc. Vì thế top pair mất giá trên board có đôi: bất kỳ lá K nào trong tay ai đó cũng thành ít nhất trips (K-7, K-3 hay K-2 đã là cù lũ), bất kỳ 7-7 nào cũng là cù lũ, chỉ cần một lá 7, 3 hay 2 là đã thành hai đôi, và một đôi của bạn đứng dưới tất cả những tay đó.
 
 ==g:Board có đôi = đọc lại tay bài từ đầu trước khi bỏ chip vào.==
 

@@ -205,7 +205,7 @@ A. Versi terkenal di skrin datang daripada filem *Rounders* (1998), diucapkan ol
 
 1. **Fish ialah pemain lemah yang menjadi sumber untung semua orang lain** — longgar, pasif dan biasanya tidak sedar. Mengenal pasti fish ialah tugas pertama di mana-mana meja.
 2. **Kenali seluruh zoo.** Fish, whale, nit, donkey dan calling station tidak boleh ditukar ganti — menamakan jenis tepat lawan anda memberitahu dengan tepat cara mengalahkannya.
-3. **Pastikan ia bukan anda.** VPIP yang luas dengan peratus raise yang rendah ialah ciri khas fish. Jika itu anda, pembaikannya ialah kemenangan paling mudah dalam poker: main lebih sedikit tangan, lebih banyak fold, dan berhenti mengejar.
+3. **Pastikan ia bukan anda.** VPIP yang luas dengan peratus raise yang rendah ialah ciri khas fish. Jika itu anda, pembaikannya ialah kemenangan paling mudah dalam poker: main lebih sedikit tangan, lebih banyak fold, dan berhenti mengejar draw tanpa pot odds yang betul.
 
 Pepatah lama itu betul bersebab. Lihat sekeliling meja anda yang seterusnya dan cari fish dalam setengah jam pertama — dan jika anda benar-benar tidak jumpa, pelajaran paling berharga yang poker akan ajar ialah sudah tiba masanya untuk membaiki permainan anda sendiri. Mulakan dengan [range tangan permulaan](/ms/blog/holdem-starting-hands-chart) yang lebih ketat dan kefahaman sebenar tentang [pot odds](/ms/blog/holdem-pot-odds), dan biarkan orang lain menjadi hidangan.
 

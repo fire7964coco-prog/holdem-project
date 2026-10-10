@@ -171,7 +171,7 @@ Poker kazanma taktikleri çoğu zaman yeni bir hamle öğrenmekten değil, para 
 | Kaçak | Neden çip eritir | Çözüm |
 |:---|:---|:---|
 | **Çok fazla el oynamak** | Zayıf başlangıç elleri flop'ta zayıf eller yapar ve flop sonrası sana pahalıya patlar | Flop öncesi ~%80 fold (Karar 2) |
-| **Çok fazla call** | Call'un fold equity'si yoktur — kimseyi fold ettirmez; ya tutması ya da showdown'a önde ulaşması gerekir | Raise ya da fold; "görmek için call"ı bırak (Karar 3) |
+| **Çok fazla call** | Call'un fold equity'si yoktur — call'a kimse fold etmez — ve başkalarını ucuza içeri alır | Raise ya da fold; "görmek için call"ı bırak (Karar 3) |
 | **Fazla pasif olmak** | Kazananlar value için bet ve raise eder; pasiflik küçük potlar kazanıp büyükleri kaybettirir | Elin varken agresif çizgiyi seç (Karar 4) |
 | **Pozisyonu yok saymak** | Pozisyon dışında çöp oynamak her turda tahmin yürütmek demektir | Erken sıkı, geç daha gevşek oyna (Karar 1) |
 | **Oran yokken draw kovalamak** | Potun haklı çıkarmadığı "umut" call'ları | Her draw call'undan önce pot odds'a bak (Karar 5) |

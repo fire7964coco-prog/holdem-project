@@ -217,7 +217,7 @@ A. No. One hand is always ranked above the other, so the flush simply wins. A sp
 
 1. **Flush (#5) beats straight (#6)** — no exceptions in standard Hold'em.
 2. It wins because it's rarer: **5,108** flush combos against **10,200** straight combos among five-card hands — and 3.03% against 4.62% across all seven cards to the river.
-3. Watch the board: **three of one suit** means a flush is live, a **paired board** means a full house can beat your flush, and suited *plus* connected is a straight flush.
+3. Watch the board: **three of one suit** means a flush is live, a **paired board** means a full house can beat your flush, and suited *plus* connected means a straight flush is possible.
 
 Lock in the full order with the [complete hand rankings](/en/blog/holdem-hand-rankings), learn how close hands are decided in the [tie-breaker and kicker guide](/en/blog/holdem-tiebreak-rules), and if you're brand new, the [beginner's guide to Texas Hold'em rules](/en/blog/texas-holdem-rules-for-beginners) ties it all together.
 

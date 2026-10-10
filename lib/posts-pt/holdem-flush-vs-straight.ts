@@ -218,7 +218,7 @@ A. Não. Uma mão está sempre acima da outra, então o flush simplesmente ganha
 
 1. **Flush (#5) ganha de sequência (#6)** — sem exceção no Hold'em padrão.
 2. Ele ganha porque é mais raro: **5.108** combinações de flush contra **10.200** de sequência entre as mãos de cinco cartas — e 3,03% contra 4,62% ao longo das sete cartas até o river.
-3. Fique de olho na mesa: **três de um naipe** significa que um flush está vivo, uma **mesa pareada** significa que um full house pode ganhar do seu flush, e cinco cartas do mesmo naipe *e* seguidas formam um straight flush.
+3. Fique de olho na mesa: **três de um naipe** significa que um flush está vivo, uma **mesa pareada** significa que um full house pode ganhar do seu flush, e cartas do mesmo naipe *e* seguidas significam que um straight flush é possível.
 
 Fixe a ordem completa com o [ranking completo de mãos](/pt/blog/holdem-hand-rankings), aprenda como os confrontos parelhos são decididos no [guia de desempate e kicker](/pt/blog/holdem-tiebreak-rules) e, se você é totalmente novo, o [guia para iniciantes das regras do Texas Hold'em](/pt/blog/texas-holdem-rules-for-beginners) amarra tudo.
 

@@ -251,7 +251,7 @@ Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournam
 | **Range** | Die gesamte Menge an Händen, die ein Spieler in einem Spot halten kann; Profis denken in Ranges, nicht in einzelnen Händen. |
 | **Cold Deck** | Ein Pechdeal, der einen Cooler erzeugt (ursprünglich das vorpräparierte Deck eines Betrügers). |
 | **„Don't tap the glass“** | Kritisiere schwache Spieler nicht – du verschreckst die, an denen du verdienst. |
-| **Run it twice** | All-in-Spieler teilen das restliche Board zweimal aus, jeweils für den halben Pot, um Varianz zu senken – nur im Cashgame, und alle Beteiligten müssen zustimmen. |
+| **Run it twice** | All-in-Spieler teilen das restliche Board zweimal aus, jeweils für den halben Pot, um Varianz zu senken – vor allem im Cashgame üblich, und alle Beteiligten müssen zustimmen. |
 
 </div>
 

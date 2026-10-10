@@ -28,7 +28,7 @@ Jika Anda pernah melihat game live di mana sebuah blind ekstra muncul entah dari
 :::stripe
 2× BB | Ukuran straddle standar
 Terakhir | Aksi preflop si straddler
-Cash saja | Hampir tak pernah diizinkan di turnamen
+Umumnya cash | Hampir tak pernah diizinkan di turnamen
 -EV | Vonis untuk sebagian besar pemain
 :::
 
@@ -112,7 +112,7 @@ Jika Anda call ke dalam pot yang di-straddle, ingat [pot odds](/id/blog/holdem-p
 
 **Hampir tak pernah.** Straddle adalah fitur cash game. Turnamen berjalan dengan struktur level blind tetap yang harus tetap identik di setiap meja demi keadilan, dan blind ekstra sukarela akan merusaknya — jadi sebagian besar turnamen, live maupun online, **melarang straddle sepenuhnya.**
 
-Bahkan di cash game pun ia opsional dan tergantung aturan rumah: beberapa ruangan hanya mengizinkan UTG straddle, beberapa membolehkan Mississippi dan button straddle, beberapa membatasi ukurannya, beberapa melarang re-straddle. Online, straddle langka dan, di mana ditawarkan, biasanya terbatas pada toggle button UTG sederhana. Perbedaan antara taruhan cash game seperti ini dan format turnamen yang kaku adalah topik tersendiri — lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
+Bahkan di cash game pun ia tergantung aturan rumah. Biasanya opsional (ada game yang dijalankan dengan straddle wajib), dan beberapa ruangan hanya mengizinkan UTG straddle, beberapa membolehkan Mississippi dan button straddle, beberapa membatasi ukurannya, beberapa melarang re-straddle. Online, straddle langka dan, di mana ditawarkan, biasanya terbatas pada toggle button UTG sederhana. Perbedaan antara taruhan cash game seperti ini dan format turnamen yang kaku adalah topik tersendiri — lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
 
 ---
 

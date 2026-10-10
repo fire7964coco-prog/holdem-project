@@ -51,7 +51,7 @@ A palavra pinta o quadro: sua mão quente "esfriou" sem culpa nenhuma sua. Você
 Essa é a distinção que decide se você entende ou não o termo — e quase todo jogador casual a embaça. Ambos são horríveis, e não existe uma definição oficial única — mas, no sentido estrito que este guia usa, são opostos:
 
 - **Um cooler** — você estava **atrás** quando o dinheiro entrou e **continuou atrás.** Nenhuma carta de sorte salvou ninguém; o vencedor esteve na frente o tempo todo. Você perdeu porque sua mão enorme encontrou uma maior.
-- **Um bad beat** — você estava **na frente** (muitas vezes um grande favorito) quando o dinheiro entrou, e seu adversário **sugou** — acertou uma carta de sorte no turn ou no river para te ultrapassar.
+- **Um bad beat** — você estava **na frente** (muitas vezes um grande favorito) quando o dinheiro entrou, e seu adversário **sugou** — acertou uma carta de sorte no flop, no turn ou no river para te ultrapassar.
 
 A forma mais limpa de não confundir:
 

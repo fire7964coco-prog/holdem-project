@@ -73,7 +73,7 @@ En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan 
 
 ## Las 10 manos de póker explicadas (una a una)
 
-Aquí tienes cada mano, de la más fuerte a la más débil, con un ejemplo y la regla que decide cada duelo. Las cinco que más confusión causan — full, color, escalera y los dos tipos de trío — reciben más atención.
+Aquí tienes cada mano, de la más fuerte a la más débil, con un ejemplo y la regla que decide cada duelo. Las que más confusión causan — full, color, escalera y los tres tipos de trío — reciben más atención.
 
 ### #1 — Escalera Real
 

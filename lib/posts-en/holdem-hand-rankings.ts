@@ -72,7 +72,7 @@ In standard Texas Hold'em, **no suit is stronger than another**. Spades do not b
 
 ## What Are the 10 Poker Hands? (Each One Explained)
 
-Here is every hand from strongest to weakest, with an example and the one rule that decides each matchup. The five that cause the most confusion — full house, flush, straight, and the two kinds of three-of-a-kind — get the extra attention.
+Here is every hand from strongest to weakest, with an example and the one rule that decides each matchup. The hands that cause the most confusion — full house, flush, straight, and all three kinds of three-of-a-kind — get the extra attention.
 
 ### #1 — Royal Flush
 

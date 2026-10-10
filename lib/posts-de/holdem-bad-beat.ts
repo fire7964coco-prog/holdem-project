@@ -108,7 +108,7 @@ Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 
 *Gemessen an der Latte von oben ist Overpair gegen Flushdraw der Grenzfall der Familie: Bei ~63% ist es eher Varianz als ein „echter“ Bad Beat – aber am Tisch heißt es trotzdem so.*
 
-Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-in preflop gegen ein Paar Siebenen – du bist ungefähr ein 80%-Favorit, ein klarer 4:1-Vorsprung zu deinen Gunsten. Aber es sind noch zwei Siebenen im Deck, und wenn eine das Board trifft, schlägt ihr Drilling dein Paar fast immer – nur ein Ass oder ein seltener Runout (ein Flush, eine Straße oder ein Drilling auf dem Board) rettet dich. Vier von fünf Malen holst du den Pot; beim fünften hast du eine Bad-Beat-Story, die niemand hören will. Die Mathematik war nie falsch – du bist nur auf der falschen Seite gelandet, was genau der Grund ist, warum eine einzelne Hand dir [nichts darüber sagt, ob du gut gespielt hast](/de/blog/holdem-cooler).
+Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-in preflop gegen ein Paar Siebenen – du bist ungefähr ein 80%-Favorit, ein klarer 4:1-Vorsprung zu deinen Gunsten. Aber es sind noch zwei Siebenen im Deck, und wenn eine das Board trifft, schlägt ihr Drilling dein Paar in der Regel – nur ein Ass oder ein seltener Runout (ein Flush, eine Straße oder ein Drilling auf dem Board) rettet dich. Vier von fünf Malen holst du den Pot; beim fünften hast du eine Bad-Beat-Story, die niemand hören will. Die Mathematik war nie falsch – du bist nur auf der falschen Seite gelandet, was genau der Grund ist, warum eine einzelne Hand dir [nichts darüber sagt, ob du gut gespielt hast](/de/blog/holdem-cooler).
 
 ---
 

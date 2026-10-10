@@ -228,7 +228,7 @@ A. Alle drei meinen dieselbe Person, sie kommen nur aus verschiedenen Ecken. Am 
 
 1. **Ein Fish ist der schwache Spieler, an dem jeder andere verdient** – loose, passiv und sich dessen meist nicht bewusst. Den Fish zu erkennen, ist die erste Aufgabe an jedem Tisch.
 2. **Kenne den ganzen Zoo.** Fish, Whale, Nit, Donkey und Calling Station sind nicht austauschbar – den genauen Typ deines Gegners zu benennen, sagt dir präzise, wie du ihn schlägst.
-3. **Stell sicher, dass du es nicht bist.** Ein hoher VPIP bei niedrigem PFR ist die Fish-Signatur. Wenn das du bist, sind die Fixes die einfachsten Gewinne beim Poker: weniger Hände spielen, mehr folden und aufhören zu jagen.
+3. **Stell sicher, dass du es nicht bist.** Ein hoher VPIP bei niedrigem PFR ist die Fish-Signatur. Wenn das du bist, sind die Fixes die einfachsten Gewinne beim Poker: weniger Hände spielen, mehr folden und aufhören, Draws ohne die passenden Pot Odds zu jagen.
 
 Der alte Spruch stimmt aus gutem Grund. Sieh dich an deinem nächsten Tisch um und finde den Fish in der ersten halben Stunde – und wenn du es ehrlich nicht kannst, ist die wertvollste Lektion, die Poker dir je erteilen wird, dass es Zeit ist, an deinem eigenen Spiel zu arbeiten. Fang mit einer engeren [Starthand-Range](/de/blog/holdem-starting-hands-chart) und einem echten Gespür für [Pot Odds](/de/blog/holdem-pot-odds) an, und lass jemand anderen die Mahlzeit sein.
 

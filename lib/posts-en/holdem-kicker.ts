@@ -102,7 +102,7 @@ The board is ==b:A♣ 9♦ 5♠ 2♥ 7♣==. You hold ==b:A♠ K♠==, your oppo
 
 Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A-K-9-7 over A-A-Q-9-7. The 9 and 7 never even come into play — the first kicker settled it.
 
-:::note[Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card, it fills the hand for *both* players and the next card decides. Your hole card is only a kicker if it beats what's already on the board.]:::
+:::note[Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card, it fills the hand for *both* players and the next card decides. Your hole card doesn't have to beat the whole board to count: it can still fill a lower kicker slot behind a board card (you'll see a 9 pushed behind the board's queen below), and it drops out only when the board already supplies five better cards.]:::
 
 ---
 

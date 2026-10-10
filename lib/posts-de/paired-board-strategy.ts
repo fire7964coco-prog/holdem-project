@@ -136,7 +136,7 @@ Der Anteil des Big Blinds am Pot beträgt ==5,5 × 47,2% = 2,60bb==, und er verb
 
 Die Lücke von **30,8 Prozentpunkten** entspricht fast genau den 29,1 Punkten des [trockenen A-High-Boards](/de/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-de.webp"). **Ein gepaartes Board spielt sich wie ein trockenes** – in beiden Ranges sind vier von fünf Händen dasselbe Sechserpaar mit einer anderen hohen Karte, die Hand verläuft also ruhig, und der Spieler, der zuletzt handelt, sieht, welche hohe Karte aufgetaucht ist, bevor er sich entscheidet. Dieser Vorteil ist die ganze Lücke.
 
-:::note[Jede EQR in dieser Serie ist der Wert, den der GTO-Solver anzeigt. Teilst du die gerundete Equity und den gerundeten EV selbst, landest du innerhalb eines Zehntelpunkts daneben – das ist Rundung, kein Widerspruch.]:::
+:::note[Jede EQR in dieser Serie ist der Wert, den der GTO-Solver anzeigt. Teilst du die gerundete Equity und den gerundeten EV selbst, landest du höchstens wenige Zehntelpunkte daneben – das ist Rundung, kein Widerspruch.]:::
 
 ## Wie stark sind Pocket Pairs auf 6-6-3?
 

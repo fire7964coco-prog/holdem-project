@@ -241,7 +241,7 @@ Kata-kata untuk apa yang sedang terjadi — dan bagaimana bersikap selama itu be
 | **Range** | Seluruh himpunan tangan yang mungkin dipegang seorang pemain dalam suatu spot; pro berpikir dalam range, bukan tangan tunggal. |
 | **Cold deck** | Pembagian sial yang menghasilkan cooler (aslinya kartu yang sudah disusun oleh penipu). |
 | **"Don't tap the glass"** | Jangan mengkritik pemain lemah — Anda akan mengusir pergi mereka yang justru menjadi sumber profit Anda. |
-| **Run it twice** | Pemain yang all-in sepakat agar sisa board dibagikan dua kali, masing-masing untuk setengah pot, guna mengurangi variance — khusus cash game, dan semua yang terlibat harus setuju. |
+| **Run it twice** | Pemain yang all-in sepakat agar sisa board dibagikan dua kali, masing-masing untuk setengah pot, guna mengurangi variance — umumnya kebiasaan di cash game, dan semua yang terlibat harus setuju. |
 | **Heads-up** | Bermain satu lawan satu — entah permainan dua pemain atau dua orang terakhir sebuah turnamen. |
 | **RFI (raise first in)** | Singkatan range dan statistik untuk open-raise: seberapa sering Anda membuka pot saat belum ada yang masuk sebelum Anda. |
 | **Splash the pot** | Melempar chip berantakan ke tengah pot alih-alih menumpuknya di depan Anda — tidak dianjurkan, karena jumlahnya jadi tak bisa diverifikasi. |

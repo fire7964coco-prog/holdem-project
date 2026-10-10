@@ -59,7 +59,7 @@ Le mot a aussi un sens plus ancien, hérité des casinos (la FAQ plus bas racont
 C'est la distinction qui fait ou défait ta compréhension du terme — et presque tous les joueurs occasionnels emploient les deux mots indifféremment. Les deux font un mal de chien, et il n'existe pas de définition officielle unique — mais au sens strict utilisé dans ce guide, ce sont des opposés :
 
 - **Un cooler** — tu étais **derrière** quand l'argent est parti et tu es **resté derrière.** Aucune carte chanceuse n'a sauvé personne ; le gagnant menait du début à la fin. Tu as perdu parce que ton énorme main a croisé plus grosse.
-- **Un bad beat** — tu étais **devant** (souvent largement favori) quand l'argent est parti, et ton adversaire a réussi un **suckout** (la carte miracle de l'adversaire) — il a touché une carte chanceuse à la turn ou à la river (la rivière) pour te dépasser.
+- **Un bad beat** — tu étais **devant** (souvent largement favori) quand l'argent est parti, et ton adversaire a réussi un **suckout** (la carte miracle de l'adversaire) — il a touché une carte chanceuse au flop, à la turn ou à la river (la rivière) pour te dépasser.
 
 Le moyen le plus net de ne pas les confondre :
 

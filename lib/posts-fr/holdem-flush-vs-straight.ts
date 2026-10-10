@@ -239,7 +239,7 @@ A. Non. Le brelan (#7) et la double paire (#8) sont tous les deux sous la couleu
 
 1. **La couleur (#5) bat la quinte (#6)** — aucune exception au Hold'em standard.
 2. Elle gagne parce qu'elle est plus rare : **5 108** combinaisons de couleur contre **10 200** combinaisons de quinte parmi les mains de cinq cartes — et 3,03 % contre 4,62 % sur les sept cartes jusqu'à la river.
-3. Surveille le board : **trois cartes de la même enseigne** signifient qu'une couleur est possible, un **board pairé** qu'un full peut battre ta couleur, et des cartes de la même enseigne *et* connectées, c'est une quinte flush.
+3. Surveille le board : **trois cartes de la même enseigne** signifient qu'une couleur est possible, un **board pairé** qu'un full peut battre ta couleur, et des cartes de la même enseigne *et* connectées, qu'une quinte flush est possible.
 
 Fixe l'ordre complet avec [toutes les combinaisons au poker](/fr/blog/holdem-hand-rankings), apprends comment se décident les mains serrées dans le [guide des égalités et du kicker](/fr/blog/holdem-tiebreak-rules), et si tu débutes complètement, le [guide des règles du Texas Hold'em pour débutants](/fr/blog/texas-holdem-rules-for-beginners) relie le tout.
 

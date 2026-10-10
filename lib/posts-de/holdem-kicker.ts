@@ -106,7 +106,7 @@ Das Board ist ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Du hältst ==b:A♠ K♠==, dein G
 
 Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlägt seine Q.== Du gewinnst, A-A-K-9-7 über A-A-Q-9-7. Die 9 und die 7 kommen nicht einmal ins Spiel – der erste Kicker hat es entschieden.
 
-:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card ist nur dann ein Kicker, wenn sie schlägt, was schon auf dem Board liegt.]:::
+:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card muss nicht das ganze Board schlagen, um zu zählen: Sie kann trotzdem einen niedrigeren Kicker-Platz hinter einer Boardkarte füllen (weiter unten siehst du eine 9, die hinter die Dame vom Board rutscht), und sie fällt erst heraus, wenn das Board schon fünf bessere Karten liefert.]:::
 
 ---
 

@@ -28,7 +28,7 @@ Se você já viu um jogo ao vivo em que um blind extra aparece do nada, é esse 
 :::stripe
 2× BB | Tamanho padrão do straddle
 Última | A ação de pré-flop do straddler
-Só cash | Quase nunca permitido em torneios
+Sobretudo cash | Quase nunca permitido em torneios
 -EV | O veredito pra maioria dos jogadores
 :::
 
@@ -112,7 +112,7 @@ Se você está pagando pra entrar num pote com straddle, lembre que suas [pot od
 
 **Quase nunca.** O straddle é uma característica de cash game. Torneios rodam numa estrutura fixa de níveis de blind que precisa se manter idêntica em toda mesa pra ser justa, e um blind extra voluntário quebraria isso — então a esmagadora maioria dos torneios, ao vivo e online, **proíbe o straddle por completo.**
 
-Mesmo em cash games ele é opcional e depende das regras da casa: algumas salas permitem só o straddle UTG, algumas admitem Mississippi e button straddles, algumas limitam o tamanho, algumas banem o re-straddle. Online, os straddles são raros e, onde oferecidos, costumam se limitar a um simples botão UTG. A diferença entre uma aposta de cash game como essa e o formato rígido de torneio é um tópico por si só — veja [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
+Mesmo em cash games ele depende das regras da casa. Costuma ser opcional (há jogos que rodam com straddle obrigatório), e algumas salas permitem só o straddle UTG, algumas admitem Mississippi e button straddles, algumas limitam o tamanho, algumas banem o re-straddle. Online, os straddles são raros e, onde oferecidos, costumam se limitar a um simples botão UTG. A diferença entre uma aposta de cash game como essa e o formato rígido de torneio é um tópico por si só — veja [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -214,7 +214,7 @@ Agora que você conhece o blind extra, aperte os fundamentos que ele distorce: [
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneio</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Torneio vs Cash Game</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que straddles são coisa só de cash game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que straddles são, na prática, coisa de cash game</div>
   </a>
 </div>
 `.trim(),

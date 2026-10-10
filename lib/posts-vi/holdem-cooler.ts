@@ -51,7 +51,7 @@ Bản thân từ này đã vẽ nên bức tranh: bạn bị "làm nguội" — 
 Đây là sự phân biệt quyết định bạn có hiểu từ này hay không — và gần như mọi người chơi giải trí đều dùng hai từ thay cho nhau. Cả hai đều rất tệ, và không có định nghĩa chính thức duy nhất — nhưng theo nghĩa chặt mà bài này dùng, chúng là hai thái cực:
 
 - **Cooler** — bạn **bị dẫn** lúc tiền vào pot và **vẫn bị dẫn** đến cuối. Không có lá bài may mắn nào cứu ai; người thắng dẫn suốt. Bạn thua vì tay khổng lồ của bạn gặp tay lớn hơn.
-- **Bad beat** (thua ngược khi bạn đang nắm lợi thế áp đảo) — bạn **đang dẫn** (thường là favorite lớn — bên có cơ hội thắng cao hơn) lúc tiền vào pot, rồi đối thủ **suck out** — trúng lá bài may mắn ở turn hoặc river để vượt lên.
+- **Bad beat** (thua ngược khi bạn đang nắm lợi thế áp đảo) — bạn **đang dẫn** (thường là favorite lớn — bên có cơ hội thắng cao hơn) lúc tiền vào pot, rồi đối thủ **suck out** — trúng lá bài may mắn ở flop, turn hoặc river để vượt lên.
 
 Cách sạch nhất để không lẫn hai thứ:
 

@@ -55,7 +55,7 @@ Das Wort malt das Bild: Du wurdest „abgekühlt“ – deine heiße Hand wurde 
 Das ist die Unterscheidung, die dein Verständnis des Begriffs macht oder bricht – und fast jeder Freizeitspieler benutzt die beiden Wörter austauschbar. Beide fühlen sich schrecklich an, und eine einheitliche offizielle Definition gibt es nicht – aber im engeren Sinn, den dieser Guide verwendet, sind sie Gegensätze:
 
 - **Ein Cooler** – du lagst **hinten**, als das Geld reinging, und **bliebst hinten.** Keine Glückskarte hat irgendjemanden gerettet; der Gewinner lag die ganze Zeit vorne. Du hast verloren, weil deine riesige Hand auf eine größere traf.
-- **Ein Bad Beat** – du lagst **vorne** (oft großer Favorit), als das Geld reinging, und dein Gegner hat **ausgesaugt** – eine Glückskarte am Turn oder River getroffen, um dich zu überholen.
+- **Ein Bad Beat** – du lagst **vorne** (oft großer Favorit), als das Geld reinging, und dein Gegner hat **ausgesaugt** – eine Glückskarte am Flop, Turn oder River getroffen, um dich zu überholen.
 
 Der sauberste Weg, sie auseinanderzuhalten:
 

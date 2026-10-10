@@ -103,7 +103,7 @@ O board é ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Você tem ==b:A♠ K♠==, seu advers
 
 Mesmo par, então compare os kickers de cima para baixo: seu ==g:K ganha da Q dele.== Você vence, A-A-K-9-7 contra A-A-Q-9-7. O 9 e o 7 nem entram em jogo — o primeiro kicker resolveu.
 
-:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão só é kicker se ela superar o que já está na mesa.]:::
+:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão não precisa superar a mesa inteira para contar: ela ainda pode ocupar uma vaga de kicker mais baixa, atrás de uma carta da mesa (mais abaixo você vai ver um 9 empurrado para trás da dama da mesa), e só fica de fora quando a mesa já fornece cinco cartas melhores.]:::
 
 ---
 

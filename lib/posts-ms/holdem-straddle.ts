@@ -28,7 +28,7 @@ Jika anda pernah melihat permainan live di mana satu blind tambahan muncul entah
 :::stripe
 2× BB | Saiz straddle standard
 Terakhir | Tindakan preflop straddler
-Cash game sahaja | Hampir tidak pernah dibenarkan dalam tournament
+Kebanyakannya cash game | Hampir tidak pernah dibenarkan dalam tournament
 -EV | Keputusan untuk kebanyakan pemain
 :::
 
@@ -112,7 +112,7 @@ Jika anda call ke dalam pot yang ada straddle, ingat bahawa [pot odds](/ms/blog/
 
 **Hampir tidak pernah.** Straddle ialah ciri cash game. Tournament berjalan mengikut struktur tahap blind yang tetap dan mesti sama di setiap meja demi keadilan, dan blind tambahan sukarela akan merosakkannya — jadi sebahagian besar tournament, live dan dalam talian, **melarang straddle sepenuhnya.**
 
-Malah dalam cash game pun ia pilihan dan bergantung pada peraturan rumah: sesetengah bilik kad hanya benarkan straddle UTG, sesetengah membenarkan Mississippi dan button straddle, sesetengah mengehadkan saiznya, sesetengah melarang re-straddle. Dalam talian, straddle jarang ada dan, jika ditawarkan, biasanya terhad kepada butang togol straddle UTG yang ringkas. Perbezaan antara bet cash game seperti ini dengan format tournament yang ketat ialah satu topik tersendiri — lihat [tournament vs cash game](/ms/blog/holdem-tournament-vs-cash-game).
+Malah dalam cash game pun ia bergantung pada peraturan rumah. Biasanya ia pilihan (ada permainan yang dijalankan dengan straddle wajib), dan sesetengah bilik kad hanya benarkan straddle UTG, sesetengah membenarkan Mississippi dan button straddle, sesetengah mengehadkan saiznya, sesetengah melarang re-straddle. Dalam talian, straddle jarang ada dan, jika ditawarkan, biasanya terhad kepada butang togol straddle UTG yang ringkas. Perbezaan antara bet cash game seperti ini dengan format tournament yang ketat ialah satu topik tersendiri — lihat [tournament vs cash game](/ms/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -214,7 +214,7 @@ Sekarang anda sudah kenal blind tambahan ini, kukuhkan asas yang diherotkannya: 
   <a href="/ms/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tournament vs Cash Game</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa straddle hanya wujud dalam cash game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa straddle pada dasarnya milik cash game</div>
   </a>
 </div>
 `.trim(),

@@ -103,7 +103,7 @@ Le board est ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tu tiens ==b:A♠ K♠==, ton adver
 
 Même paire, donc on compare les kickers du haut vers le bas : ton ==g:K bat sa Q.== Tu gagnes, A-A-K-9-7 contre A-A-Q-9-7. Le 9 et le 7 n'entrent même pas en jeu — le premier kicker a tout réglé.
 
-:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée ne sert de kicker que si elle bat ce qui est déjà sur le board.]:::
+:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée n'a pas besoin de battre tout le board pour compter : elle peut encore occuper une place de kicker plus basse, derrière une carte du board (plus bas, tu verras un 9 relégué derrière la dame du board), et elle ne sort de la main que si le board fournit déjà cinq meilleures cartes.]:::
 
 ---
 

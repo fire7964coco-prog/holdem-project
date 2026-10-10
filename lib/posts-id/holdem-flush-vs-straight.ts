@@ -226,7 +226,7 @@ A. Royal flush artinya straight flush tertinggi: A-K-Q-J-10 dalam satu jenis. In
 
 1. **Flush (#5) mengalahkan straight (#6)** — tanpa pengecualian di Hold'em standar.
 2. Ia menang karena lebih langka: **5.108** kombinasi flush berbanding **10.200** kombinasi straight di antara tangan lima-kartu — dan 3,03% berbanding 4,62% sepanjang tujuh kartu sampai river.
-3. Perhatikan board: **tiga kartu satu jenis** berarti flush hidup, **board yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan adalah straight flush.
+3. Perhatikan board: **tiga kartu satu jenis** berarti flush hidup, **board yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan berarti straight flush mungkin terjadi.
 
 Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pelajari bagaimana tangan-tangan berdekatan diputuskan di [panduan seri dan kicker](/id/blog/holdem-tiebreak-rules), dan kalau Anda benar-benar baru, [panduan pemula aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) merangkai semuanya jadi satu.
 

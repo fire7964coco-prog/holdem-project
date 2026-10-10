@@ -88,7 +88,7 @@ That's my 8-8-8-A-K hand: my J♠ 10♥ and his 5♣ 2♦ both played the board'
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
-**And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is normally dead even when it would have chopped (only a hand that is still clearly identifiable can be retrieved, and only at the floor's discretion; WSOP Tournament Rule 109) — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
+**And the part that matters most at the table: at a showdown with an opponent still in, your hand only wins if you turn it face up.** A mucked hand is normally dead even when it would have chopped (only a hand that is still clearly identifiable can be retrieved, and only at the floor's discretion; WSOP Tournament Rule 109) — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
 
 :::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar for a call — and a low one for a fold: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three**, and on a river where the board can still be beaten, that is the normal case.]:::
 
@@ -204,7 +204,7 @@ A. Yes. A deeper-stacked player with the best hand can win the main pot and ever
 
 **Q. Is a tournament chop the same as a split pot?**
 
-A. No — same word, two different things. A split pot at showdown is automatic: when hands tie, the dealer divides the chips. A tournament "chop" is a voluntary deal among the remaining players to divide the prize pool, usually by chip counts or [ICM](/en/blog/holdem-icm), and it only happens if everyone agrees. See [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game) for how tournament payouts differ.
+A. No — same word, two different things. A split pot at showdown isn't negotiated: when tied hands are shown face up, the dealer divides the chips. A tournament "chop" is a voluntary deal among the remaining players to divide the prize pool, usually by chip counts or [ICM](/en/blog/holdem-icm), and it only happens if everyone agrees. See [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game) for how tournament payouts differ.
 
 ---
 

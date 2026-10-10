@@ -169,7 +169,7 @@ Board : K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full aux sept par les rois |
 | A♠ Q♦ | K-K-A-Q-7 | Une simple paire — les rois du board — avec A-Q derrière |
 
-Regarde la dernière ligne : ==même sans rien, la paire du board fait partie de ta main==. « Une paire sur le board compte-t-elle ? » — oui, pour tout le monde à la fois. C'est pour ça que la paire max perd de sa valeur sur un board pairé : n'importe quel roi en main fait au moins un brelan (K-7, K-3 ou K-2 fait déjà un full), n'importe quel 7-7 fait un full, et ta paire devient soudain la troisième meilleure main.
+Regarde la dernière ligne : ==même sans rien, la paire du board fait partie de ta main==. « Une paire sur le board compte-t-elle ? » — oui, pour tout le monde à la fois. C'est pour ça que la paire max perd de sa valeur sur un board pairé : n'importe quel roi en main fait au moins un brelan (K-7, K-3 ou K-2 fait déjà un full), n'importe quel 7-7 fait un full, un seul 7, 3 ou 2 fait déjà une double paire, et ta paire passe derrière toutes ces mains.
 
 ==g:Board pairé = relis ta main depuis le début avant de mettre des jetons.==
 

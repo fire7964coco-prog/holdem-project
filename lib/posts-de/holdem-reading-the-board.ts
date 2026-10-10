@@ -161,7 +161,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full House, Siebenen voll mit Königen |
 | A♠ Q♦ | K-K-A-Q-7 | Nur ein Paar – die Könige des Boards – mit A-Q dahinter |
 
-Beachte die letzte Zeile: ==selbst mit nichts ist das Paar des Boards Teil deiner Hand==. „Zählt ein Paar auf dem Board?“ – ja, für alle gleichzeitig. Deshalb schrumpft Top Pair an gepaarten Boards: jeder König in einer fremden Hand ergibt mindestens einen Drilling (K-7, K-3 oder K-2 ist schon ein Full House), jedes 7-7 ist ein Boat, und dein einzelnes Paar ist plötzlich nur noch drittbeste.
+Beachte die letzte Zeile: ==selbst mit nichts ist das Paar des Boards Teil deiner Hand==. „Zählt ein Paar auf dem Board?“ – ja, für alle gleichzeitig. Deshalb schrumpft Top Pair an gepaarten Boards: jeder König in einer fremden Hand ergibt mindestens einen Drilling (K-7, K-3 oder K-2 ist schon ein Full House), jedes 7-7 ist ein Boat, jede einzelne 7, 3 oder 2 macht schon Two Pair, und dein einzelnes Paar liegt hinter all diesen Händen.
 
 ==g:Gepaartes Board = die Hand von Grund auf neu lesen, bevor du Chips reinschiebst.==
 

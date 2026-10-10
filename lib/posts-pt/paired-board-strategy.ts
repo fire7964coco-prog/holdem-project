@@ -123,7 +123,7 @@ A parcela do pote correspondente à equity do BB é ==5,5 × 47,2% = 2,60bb==, m
 
 A diferença de **30,8 pontos percentuais** é quase igual aos 29,1 pontos do [board seco com ás alto](/pt/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-pt.webp"). **Um board pareado se comporta como um board seco:** cerca de quatro quintos dos ranges têm o mesmo par de seis com cartas altas diferentes. A mão tende a seguir com menos ação, e quem age por último observa o que o adversário faz antes de decidir. Essa vantagem explica a distância.
 
-:::note[Os valores de EQR desta série são os exibidos pelo solver. Refazer a divisão com equity e EV arredondados pode produzir uma pequena diferença, da ordem de um décimo de ponto percentual: é efeito do arredondamento.]:::
+:::note[Os valores de EQR desta série são os exibidos pelo solver. Refazer a divisão com equity e EV arredondados pode produzir uma pequena diferença, da ordem de alguns décimos de ponto percentual: é efeito do arredondamento.]:::
 
 ## Qual é a força dos pares de mão no 6-6-3?
 

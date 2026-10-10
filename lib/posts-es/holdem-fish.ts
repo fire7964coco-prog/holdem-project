@@ -213,7 +213,7 @@ A. La famosa versión en pantalla es de la película de 1998 *Rounders*, dicha p
 
 1. **Un fish es el jugador débil del que todos los demás sacan beneficio** — suelto, pasivo y normalmente sin ser consciente de ello. Detectar al pez es la primera tarea en cualquier mesa.
 2. **Conoce todo el zoo.** Fish, ballena, nit, donk y calling station no son intercambiables — nombrar el tipo exacto de tu rival te dice con precisión cómo batirlo.
-3. **Asegúrate de que no eres tú.** Un VPIP amplio con un porcentaje de subida bajo es la firma del fish. Si ese eres tú, los arreglos son las victorias más fáciles del póker: juega menos manos, foldea más y deja de perseguir.
+3. **Asegúrate de que no eres tú.** Un VPIP amplio con un porcentaje de subida bajo es la firma del fish. Si ese eres tú, los arreglos son las victorias más fáciles del póker: juega menos manos, foldea más y deja de perseguir proyectos sin las pot odds correctas.
 
 La vieja frase tiene razón por algo. Mira alrededor de tu próxima mesa y encuentra al pez en la primera media hora — y si de verdad no puedes, lo más valioso que el póker te enseñará nunca es que ha llegado el momento de trabajar tu propio juego. Empieza con un [rango de manos iniciales](/es/blog/holdem-starting-hands-chart) más ajustado y un manejo real de las [pot odds](/es/blog/holdem-pot-odds), y deja que sea otro la comida.
 

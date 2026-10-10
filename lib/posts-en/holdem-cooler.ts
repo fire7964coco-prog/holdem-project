@@ -50,7 +50,7 @@ The word paints the picture: you got "cooled off" — your hot hand went cold th
 This is the distinction that makes or breaks your understanding of the term — and almost every casual player uses the two words interchangeably. Both feel terrible, and there's no single official definition — but in the strict sense this guide uses, they are opposites:
 
 - **A cooler** — you were **behind** when the money went in and **stayed behind.** No lucky card saved anyone; the winner was ahead the entire time. You lost because your huge hand met a bigger one.
-- **A bad beat** — you were **ahead** (often a big favorite) when the money went in, and your opponent **sucked out** — hit a lucky card on the turn or river to overtake you.
+- **A bad beat** — you were **ahead** (often a big favorite) when the money went in, and your opponent **sucked out** — hit a lucky card on the flop, turn or river to overtake you.
 
 The cleanest way to keep them straight:
 

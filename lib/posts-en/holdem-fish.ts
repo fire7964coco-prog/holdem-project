@@ -204,7 +204,7 @@ A. The famous on-screen version is from the 1998 film *Rounders*, spoken by Matt
 
 1. **A fish is the weak player everyone else profits from** — loose, passive, and usually unaware of it. Spotting the fish is the first job at any table.
 2. **Know the whole zoo.** Fish, whale, nit, donkey, and calling station are not interchangeable — naming your opponent's exact type tells you precisely how to beat them.
-3. **Make sure it isn't you.** A wide VPIP with a low raise percentage is the fish signature. If that's you, the fixes are the easiest wins in poker: play fewer hands, fold more, and stop chasing.
+3. **Make sure it isn't you.** A wide VPIP with a low raise percentage is the fish signature. If that's you, the fixes are the easiest wins in poker: play fewer hands, fold more, and stop chasing draws without the right pot odds.
 
 The old line is right for a reason. Look around your next table and find the fish in the first half hour — and if you genuinely can't, the most valuable thing poker will ever teach you is that it's time to work on your own game. Start with a tighter [starting hand range](/en/blog/holdem-starting-hands-chart) and a real feel for [pot odds](/en/blog/holdem-pot-odds), and let someone else be the meal.
 

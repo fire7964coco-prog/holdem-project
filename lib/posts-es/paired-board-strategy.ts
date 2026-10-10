@@ -150,7 +150,7 @@ La parte del bote que le toca a la ciega grande es ==5.5 × 47.2% = 2.60bb==, y 
 
 La diferencia de **30.8 puntos** es casi exactamente los 29.1 puntos del [board seco con as](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-es.webp"). **Un board pareado se juega como uno seco** — cuatro quintas partes de cada rango son la misma pareja de seises con otra carta alta, así que la mano transcurre tranquila, y el jugador que actúa último llega a ver qué carta alta apareció antes de elegir. Esa ventaja es toda la diferencia.
 
-:::note[Todos los EQR de esta serie son la cifra que muestra el solver. Si recalculas el EQR a mano, el resultado queda a menos de una décima de punto de la cifra mostrada — eso es redondeo, no una discrepancia.]:::
+:::note[Todos los EQR de esta serie son la cifra que muestra el solver. Si recalculas el EQR a mano, el resultado queda a unas pocas décimas de punto de la cifra mostrada — eso es redondeo, no una discrepancia.]:::
 
 ## ¿Qué tan fuertes son los pares servidos en 6-6-3?
 

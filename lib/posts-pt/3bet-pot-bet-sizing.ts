@@ -105,7 +105,7 @@ Aposte um terço do pote, 7,4bb, e o caller precisa de ==7,4 ÷ (22,5 + 7,4 + 7,
 
 Há mais um ponto: **o caller também não pode simplesmente desistir de tudo.** Contra 14,9bb em um pote de 22,5bb, impedir o lucro automático de um blefe puro exige defender ==22,5 ÷ (22,5 + 14,9) = 60,2%== do range — a frequência mínima de defesa, ou MDF. As mãos feitas mais fortes do botão somam apenas **33,9%**: 6,8 de trinca, 20,3 de top pair e 6,8 de segundo par.
 
-🪶 Mesmo assim, chegar a 60,2% não exige incluir draws: **33,9% de mãos feitas mais 36,1% de underpairs já somam 70,0%.** Mesmo que todos os 38 combos de draw sem preço imediato fossem descartados, sobrariam 71,4% do range, acima da referência. Assim, a aposta grande faz mais do que expulsar draws: ela **cobra caro para a parte intermediária do range do botão continuar**. Esses underpairs colocam dinheiro no pote diante de cartas acima do par e de todos os draws do board.
+🪶 Mesmo assim, chegar a 60,2% não exige incluir draws: **33,9% de mãos feitas mais 36,1% de underpairs já somam 70,0%.** Mesmo que todos os 38 combos de draw sem preço imediato fossem descartados, sobrariam 71,4% do range, acima da referência. Assim, a aposta grande faz mais do que expulsar draws: ela **cobra caro para a parte intermediária do range do botão continuar**. Esses underpairs colocam dinheiro no pote abaixo da dama (e abaixo das duas cartas broadway, exceto JJ) e diante de todos os draws do board.
 
 :::note[⚠ A MDF trata a aposta como um blefe puro, sem equity própria. Grande parte das mãos que apostam aqui não se encaixa nisso: 24,7% do range do big blind é gutshot, e um gutshot que depois desiste ainda tinha equity quando apostou. Use 60,2% como referência para pensar na defesa, não como uma cota obrigatória.]:::
 

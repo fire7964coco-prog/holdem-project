@@ -238,7 +238,7 @@ A. No, es al revés: el full gana al color. En una mesa emparejada, un rival con
 
 1. **El color (#5) gana a la escalera (#6)** — sin excepciones en el Hold'em estándar.
 2. Gana porque es más raro: **5,108** combinaciones de color frente a **10,200** de escalera entre las manos de cinco cartas — y 3.03% frente a 4.62% sobre las siete cartas hasta el river.
-3. Vigila la mesa: **tres de un palo** significa que un color está vivo, una **mesa emparejada** significa que un full puede ganar a tu color, y del mismo palo *más* conectadas es una escalera de color.
+3. Vigila la mesa: **tres de un palo** significa que un color está vivo, una **mesa emparejada** significa que un full puede ganar a tu color, y del mismo palo *más* conectadas significa que una escalera de color es posible.
 
 Fija el orden completo con la [jerarquía de manos completa](/es/blog/holdem-hand-rankings), aprende cómo se deciden las manos ajustadas en la [guía de desempate y kicker](/es/blog/holdem-tiebreak-rules), y si eres nuevo del todo, la [guía de reglas del Texas Hold'em para principiantes](/es/blog/texas-holdem-rules-for-beginners) lo ata todo.
 

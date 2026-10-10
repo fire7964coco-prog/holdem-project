@@ -73,7 +73,7 @@ Trong Texas Hold'em chuẩn, **không có chất nào mạnh hơn chất nào**.
 
 ## 10 tay bài poker gồm những gì? Giải thích từng tay
 
-Đây là từng tay bài từ mạnh nhất đến yếu nhất, kèm ví dụ và quy tắc duy nhất quyết định mỗi cuộc so bài. Năm tay bài gây nhầm lẫn nhiều nhất — cù lũ, thùng, sảnh và hai kiểu sám cô — được dành thêm chú ý.
+Đây là từng tay bài từ mạnh nhất đến yếu nhất, kèm ví dụ và quy tắc duy nhất quyết định mỗi cuộc so bài. Những tay bài gây nhầm lẫn nhiều nhất — cù lũ, thùng, sảnh và ba kiểu sám cô — được dành thêm chú ý.
 
 ### #1 — Thùng phá sảnh hoàng gia (royal flush)
 

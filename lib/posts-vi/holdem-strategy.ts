@@ -150,7 +150,7 @@ Nếu tước bỏ hết lớp vỏ, thứ thực sự khiến người mới m�
 | Lỗ hổng | Vì sao nó rút chip | Cách sửa |
 |:---|:---|:---|
 | **Chơi quá nhiều tay bài** | Bài khởi đầu yếu flop ra tay bài yếu, và tay bài yếu khiến bạn trả giá postflop | Bỏ ~80% preflop (quyết định 2) |
-| **Call quá nhiều** | Một cú call không có fold equity — nó không bao giờ khiến ai bỏ bài, nên phải trúng bài hoặc dẫn đầu đến showdown | Raise hoặc fold; thôi "call xem sao" (quyết định 3) |
+| **Call quá nhiều** | Một cú call không có fold equity — không ai fold trước một cú call — và để người khác vào pot với giá rẻ | Raise hoặc fold; thôi "call xem sao" (quyết định 3) |
 | **Quá bị động** | Người thắng bet và raise để lấy value; bị động thắng pot tí hon và thua pot lớn | Chọn đường chơi chủ động khi bạn có nó (quyết định 4) |
 | **Bỏ qua vị trí** | Chơi bài rác khi không có vị trí nghĩa là đoán mò ở mọi vòng | Chơi chặt hơn ở ghế sớm, rộng hơn ở ghế muộn (quyết định 1) |
 | **Đuổi bài chờ không có odds** | Những cú call "hy vọng" mà pot không biện minh được | Kiểm tra pot odds trước mọi cú call bài chờ (quyết định 5) |

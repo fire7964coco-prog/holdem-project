@@ -28,7 +28,7 @@ Si tu as déjà vu une partie live où une blinde en plus apparaît de nulle par
 :::stripe
 2× BB | Taille standard du straddle
 Dernier | L'action préflop du straddler
-Cash uniquement | Presque jamais autorisé en tournoi
+Surtout en cash | Presque jamais autorisé en tournoi
 -EV | Le verdict pour la plupart des joueurs
 :::
 
@@ -112,7 +112,7 @@ Si tu suis dans un pot straddlé, rappelle-toi que tes [cotes du pot](/fr/blog/h
 
 **Presque jamais.** Le straddle est une spécificité du cash game. Les tournois fonctionnent avec une structure de niveaux de blindes fixe qui doit rester identique à toutes les tables par souci d'équité, et une blinde supplémentaire volontaire la casserait — l'immense majorité des tournois, en live comme en ligne, **interdisent donc complètement le straddle.**
 
-Même en cash game, il reste facultatif et dépend des règles de la maison : certaines salles n'autorisent que le straddle UTG, d'autres permettent le Mississippi et le straddle bouton, certaines plafonnent le montant, d'autres interdisent les re-straddles. En ligne, les straddles sont rares et, quand ils existent, se limitent en général à une simple case à cocher pour le straddle UTG. La différence entre une mise de cash game comme celle-ci et le format rigide des tournois est un sujet à part entière — voir [tournoi vs cash game](/fr/blog/holdem-tournament-vs-cash-game).
+Même en cash game, il dépend des règles de la maison. Il est généralement facultatif (certaines parties se jouent avec un straddle obligatoire), et certaines salles n'autorisent que le straddle UTG, d'autres permettent le Mississippi et le straddle bouton, certaines plafonnent le montant, d'autres interdisent les re-straddles. En ligne, les straddles sont rares et, quand ils existent, se limitent en général à une simple case à cocher pour le straddle UTG. La différence entre une mise de cash game comme celle-ci et le format rigide des tournois est un sujet à part entière — voir [tournoi vs cash game](/fr/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -222,7 +222,7 @@ Maintenant que tu connais cette blinde en plus, resserre les fondamentaux qu'ell
   <a href="/fr/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournoi</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cash game ou tournoi</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pourquoi le straddle n'existe qu'en cash game</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pourquoi le straddle est essentiellement une affaire de cash game</div>
   </a>
 </div>
 `.trim(),

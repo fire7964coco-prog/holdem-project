@@ -51,7 +51,7 @@ La palabra pinta la escena: te "enfriaron" — tu mano caliente se quedó fría 
 Esta es la distinción que hace o rompe tu comprensión del término — y casi todo jugador casual usa las dos palabras como sinónimos. Ambos sientan fatal, y no existe una definición oficial única — pero en el sentido estricto que usa esta guía, son opuestos:
 
 - **Un cooler** — ibas **por detrás** cuando entró el dinero y **seguiste por detrás.** Ninguna carta afortunada salvó a nadie; el ganador iba delante todo el tiempo. Perdiste porque tu manaza se topó con otra mayor.
-- **Un bad beat** — ibas **por delante** (a menudo gran favorito) cuando entró el dinero, y tu rival hizo un **suckout** — cazó una carta afortunada en el turn o el river para adelantarte.
+- **Un bad beat** — ibas **por delante** (a menudo gran favorito) cuando entró el dinero, y tu rival hizo un **suckout** — cazó una carta afortunada en el flop, el turn o el river para adelantarte.
 
 La forma más limpia de no confundirlos, con ese criterio estricto:
 
@@ -156,7 +156,7 @@ A. Porque te "enfría" (de *to cool*, enfriar): tu mano estaba caliente y de gol
 
 **Q. ¿Cuál es la diferencia entre un cooler y un bad beat?**
 
-A. El momento y los suckouts, al menos en sentido estricto. En un cooler ibas **por detrás** cuando entró el dinero y perdiste ante una mano mayor — ninguna carta afortunada cambió nada, y ambos teníais un monstruo. En un [bad beat](/es/blog/holdem-bad-beat) ibas **por delante** (normalmente favorito claro) y tu rival cazó una carta improbable en el turn o el river para adelantarte. Hay jugadores que llaman cooler a cualquier choque de manaza contra manaza mayor, aunque lo decida una carta tardía; la separación estricta solo sirve para que la lección quede clara. Cooler: "nunca tuve opción". Bad beat: "esa la tenía que haber ganado".
+A. El momento y los suckouts, al menos en sentido estricto. En un cooler ibas **por detrás** cuando entró el dinero y perdiste ante una mano mayor — ninguna carta afortunada cambió nada, y ambos teníais un monstruo. En un [bad beat](/es/blog/holdem-bad-beat) ibas **por delante** (normalmente favorito claro) y tu rival cazó una carta improbable en el flop, el turn o el river para adelantarte. Hay jugadores que llaman cooler a cualquier choque de manaza contra manaza mayor, aunque lo decida una carta tardía; la separación estricta solo sirve para que la lección quede clara. Cooler: "nunca tuve opción". Bad beat: "esa la tenía que haber ganado".
 
 **Q. ¿Un cooler es mala suerte o mala jugada?**
 

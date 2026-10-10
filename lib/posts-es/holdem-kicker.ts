@@ -103,7 +103,7 @@ La mesa es ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tú tienes ==b:A♠ K♠==, tu rival 
 
 Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== Ganas, A-A-K-9-7 contra A-A-Q-9-7. El 9 y el 7 ni siquiera entran en juego — el primer kicker lo zanjó.
 
-:::note[Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia solo es kicker si supera lo que ya hay en la mesa.]:::
+:::note[Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia no necesita superar toda la mesa para contar: aún puede ocupar un hueco de kicker más bajo, detrás de una carta de la mesa (más abajo verás un 9 empujado detrás de la reina de la mesa), y solo se queda fuera cuando la mesa ya aporta cinco cartas mejores.]:::
 
 ---
 

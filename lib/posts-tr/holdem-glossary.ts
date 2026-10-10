@@ -277,7 +277,7 @@ Showdown, son bahisten sonra kazananı belirlemek için ellerin açılmasıdır.
 | **Range** | Bir oyuncunun o spotta tutabileceği ellerin tamamı; profesyoneller tek elle değil range'lerle düşünür. |
 | **Cold deck** | Cooler üreten şanssız bir dağıtım (aslen hilecinin önceden dizdiği deste). |
 | **"Don't tap the glass"** | Zayıf oyuncuları eleştirme — kâr ettiğin oyuncuları kaçırırsın. |
-| **Run it twice** | All-in oyuncular kalan board'u iki kez açar, her biri potun yarısı için; varyansı azaltmak içindir — yalnızca cash oyununda ve ilgili herkes kabul ederse. |
+| **Run it twice** | All-in oyuncular kalan board'u iki kez açar, her biri potun yarısı için; varyansı azaltmak içindir — çoğunlukla cash oyunlarına özgü bir uygulamadır ve ilgili herkesin kabul etmesi gerekir. |
 | **Heads-up** | Bire bir oynamak — ya iki kişilik bir oyun ya da bir turnuvanın son iki oyuncusu. |
 | **RFI (raise first in)** | Açılış raise'i için range ve istatistik kısaltması: senden önce kimse pota girmemişken potu ne sıklıkla açtığın. |
 | **Splash the pot** | Çipleri önüne dizmek yerine pota dağınık fırlatmak — miktar doğrulanamadığı için hoş karşılanmaz. |

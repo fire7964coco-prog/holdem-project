@@ -98,7 +98,7 @@ Todo bad beat tem a mesma forma: você é o favorito, o azarão precisa de ajuda
 
 *Pela régua da seção anterior, o overpair vs flush draw é o caso-limite da família: com ~63%, é mais variância do que bad beat "de verdade" — mas é assim que a mesa o chama.*
 
-O mais icônico são os **ases quebrados por uma trinca.** Você coloca um par de ases all-in preflop contra um par de setes — você é favorito de mais ou menos 80%, uma trava de 4 para 1 a seu favor. Mas há mais dois setes no baralho, e se um bater no board, a trinca deles quase sempre bate o seu par — só um ás ou um runout raro (um flush, uma sequência ou uma trinca na mesa) te salva. Quatro em cada cinco vezes você abocanha o pote; na quinta, você tem uma história de bad beat que ninguém quer ouvir. A matemática nunca esteve errada — você só caiu no lado errado dela, que é exatamente por que uma única mão não te diz [nada sobre se você jogou bem](/pt/blog/holdem-cooler).
+O mais icônico são os **ases quebrados por uma trinca.** Você coloca um par de ases all-in preflop contra um par de setes — você é favorito de mais ou menos 80%, uma trava de 4 para 1 a seu favor. Mas há mais dois setes no baralho, e se um bater no board, a trinca deles normalmente bate o seu par — só um ás ou um runout raro (um flush, uma sequência ou uma trinca na mesa) te salva. Quatro em cada cinco vezes você abocanha o pote; na quinta, você tem uma história de bad beat que ninguém quer ouvir. A matemática nunca esteve errada — você só caiu no lado errado dela, que é exatamente por que uma única mão não te diz [nada sobre se você jogou bem](/pt/blog/holdem-cooler).
 
 ---
 

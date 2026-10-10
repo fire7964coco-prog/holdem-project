@@ -205,7 +205,7 @@ A. A famosa versão da tela é do filme de 1998 *Rounders*, dita pelo personagem
 
 1. **Um fish é o jogador fraco de quem todo mundo lucra** — frouxo, passivo e geralmente sem saber disso. Identificar o fish é o primeiro trabalho em qualquer mesa.
 2. **Conheça o zoológico inteiro.** Fish, whale, nit, donkey e calling station não são intercambiáveis — nomear o tipo exato do seu adversário te diz precisamente como bater ele.
-3. **Garanta que não é você.** Um VPIP alto com uma porcentagem de raise baixa é a assinatura do fish. Se isso é você, as correções são as vitórias mais fáceis do poker: jogue menos mãos, dê mais fold e pare de correr atrás.
+3. **Garanta que não é você.** Um VPIP alto com uma porcentagem de raise baixa é a assinatura do fish. Se isso é você, as correções são as vitórias mais fáceis do poker: jogue menos mãos, dê mais fold e pare de correr atrás de projetos sem as pot odds certas.
 
 A velha frase está certa por um motivo. Olhe ao redor da sua próxima mesa e ache o fish na primeira meia hora — e se você genuinamente não conseguir, a coisa mais valiosa que o poker vai te ensinar é que está na hora de trabalhar no seu próprio jogo. Comece com um [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) mais apertado e uma noção real de [pot odds](/pt/blog/holdem-pot-odds), e deixe outra pessoa ser a refeição.
 

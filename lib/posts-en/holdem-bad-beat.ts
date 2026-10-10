@@ -97,7 +97,7 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 
 *By the bar in the previous section, overpair vs flush draw is the family's borderline case: at ~63%, it's more variance than a "true" bad beat — but it's what the table calls it anyway.*
 
-The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind almost always beats your pair — only an ace or a rare runout (a flush, a straight, or trips on the board) saves you. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
+The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind usually beats your pair — only an ace or a rare runout (a flush, a straight, or trips on the board) saves you. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
 
 ---
 
