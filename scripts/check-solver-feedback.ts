@@ -67,7 +67,7 @@ export function checkSources(src: {
   for (const sqlLocales of sqlLocaleLists) {
     if (!setEq(sqlLocales, src.locales)) red(`③ 로케일: SQL [${sqlLocales}] ≠ 코드 [${src.locales}]`);
   }
-  if (src.locales.length !== 14) red(`③ 로케일은 14개여야 한다(지금 ${src.locales.length})`);
+  if (src.locales.length !== 15) red(`③ 로케일은 15개여야 한다(지금 ${src.locales.length})`);
   if (!setEq(Object.keys(src.pages), src.locales)) red(`③ 로케일: 랜딩 폴더 [${Object.keys(src.pages)}] ≠ 코드 [${src.locales}]`);
   if (!setEq(Object.keys(src.dictKeys), src.locales)) red(`③ 로케일: 문구 사전 [${Object.keys(src.dictKeys)}] ≠ 코드`);
 
@@ -159,6 +159,9 @@ function extraChecks(): Finding[] {
   // 사칭 금지어 · 경로 매핑 표본
   if (nicknameProblem("홀덤마스터 운영자") !== "impersonation") red("닉네임: «홀덤마스터 운영자»를 막지 못한다");
   if (nicknameProblem("Admin_01") !== "impersonation") red("닉네임: «Admin_01»을 막지 못한다");
+  if (nicknameProblem("Администратор") !== "impersonation") red("닉네임: «Администратор»를 막지 못한다");
+  if (nicknameProblem("Модератор 01") !== "impersonation") red("닉네임: «Модератор 01»을 막지 못한다");
+  if (nicknameProblem("Официальная") !== "impersonation") red("닉네임: «Официальная»를 막지 못한다");
   if (nicknameProblem("Rasmi") !== null) red("닉네임: 인명 «Rasmi»를 막았다(오탐)");
   if (solverLandingPath("ko") !== "/solver" || solverLandingPath("zh-hant") !== "/zh-hant/solver") red("경로 매핑이 틀렸다");
   return out;
@@ -227,8 +230,8 @@ function selftest(): number {
     ["참여 장치 링크 규칙과 다름", (s) => { s.linkPc = s.linkPc.replace("xyz", "xy"); }],
     ["숨김 사유 4번째 값(SQL)", (s) => { s.sql = s.sql.replace("hidden_reason in ('link','abuse','ad')", "hidden_reason in ('link','abuse','ad','spam')"); }],
     ["관리자 버튼에 다른 사유", (s) => { s.adminTsx = s.adminTsx.replace('value: "ad"', 'value: "spam"'); }],
-    ["SQL 로케일 하나 빠짐", (s) => { s.sql = s.sql.replace(",'vi'))", "))"); }],
-    ["SQL 재적용 블록만 로케일 빠짐", (s) => { const i = s.sql.lastIndexOf(",'vi'))"); s.sql = s.sql.slice(0, i) + "))" + s.sql.slice(i + 7); }],
+    ["SQL 로케일 하나 빠짐", (s) => { s.sql = s.sql.replace(",'ru'))", "))"); }],
+    ["SQL 재적용 블록만 로케일 빠짐", (s) => { const i = s.sql.lastIndexOf(",'ru'))"); s.sql = s.sql.slice(0, i) + "))" + s.sql.slice(i + 7); }],
     ["랜딩 하나가 다른 로케일", (s) => { s.pages.ja = s.pages.ja.replace('<SolverReviews locale="ja"', '<SolverReviews locale="en"'); }],
     ["슬롯이 FAQ 아래", (s) => { s.clients.en = s.clients.en.replace("{reviews}", "") + "\n{reviews}"; }],
     ["사전 키 하나 빠짐", (s) => { s.dictKeys.fr = s.dictKeys.fr.filter((k) => k !== "helpful"); }],

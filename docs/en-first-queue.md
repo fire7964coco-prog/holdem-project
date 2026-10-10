@@ -601,15 +601,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 | # | 자리(EN) | 문제 | 처방 후보 |
 |---|---|---|---|
-| AL-1 | solver-client 무료 범위 문단 «settings that normally live in **paid** desktop solvers» | 사실 시트 §5 «유료 솔버 비교 금지(«다른 곳은 유료» 포함)» 저촉 | «installed desktop solvers»(설치형 축) — vi는 «solver desktop phải cài»로 선반영 |
+| AL-1 | solver-client 무료 범위 문단 L458 «The settings that normally sit behind a **paid** desktop solver»(10-10 MA-406 통지로 인용 축어 정정) | 사실 시트 §5 «유료 솔버 비교 금지(«다른 곳은 유료» 포함)» 저촉 | «installed desktop solvers»(설치형 축) — vi는 «solver desktop phải cài»로 선반영 |
 | AL-2 | faq «Which GTO solver is better…» «without **paying** or installing anything» | 같은 규칙(비교 문항 안이라 «다른 쪽은 유료» 암시) | «free and with nothing to install» — vi는 «miễn phí và không cần cài đặt»로 선반영 |
 | AL-3 | 9♥8♥7♣ note «The **only** single-raised board where BB truly leads: 23.7%» | §4-B에 SRP BB 리드 ⑤ 11,2% · ⑦ 3,2% · ⑥ 3,0% 있음 → «유일» 단정(D유형) | «the SRP board where BB leads most (23.7% — next is monotone 11.2%)» |
 | AL-4 | 8♦5♣2♠ note «just gutshots and backdoors» | 3벳 레인지 14종에 A5s(세컨드 페어 5) 있음 → «chỉ/just»가 메이드 핸드 부재로 읽힘(F유형 경계 · 판정 필요) | «no top pair — overpairs, A5s's pair of fives, gutshots and backdoors» 판정 후 |
 | AL-5 | faq «Why is grading relative to the pot?» · 트레이너 bullet «0.02bb and 0.06bb / 0.08bb and 0.23bb» | 반올림 값을 정확 임계처럼 서술(실제 0,055 · 0,07875 · 0,225) — 0,08bb가 22,5bb 팟에서 «acceptable»인 것과 맞물려 자기모순처럼 읽힘 | «rounded to two decimals, the cutoffs work out to about …» 한 구 |
 | AL-6 | solver-client 포스트플랍 절 «Together they cover a whole hand: the chart decides what you open, the solver …» | 차트는 오픈 레인지뿐(vs 오픈·3벳·4벳 대응 없음) · «solver decides» 과장 | «the chart gives opening ranges by position; the solver analyzes postflop — facing a raise preflop needs its own ranges» |
-| AL-7 | solver-client 무료 범위 «The **only** real limit is postflop and heads-up» | 같은 페이지가 4GB·속도·반복 상한을 말함 → «유일» 모순 | «The main limit …» |
+| AL-7 | solver-client 무료 범위 L459 «The **one** real boundary …»(10-10 MA-406 통지로 인용 축어 정정) | 같은 페이지가 4GB·속도·반복 상한을 말함 → «유일» 모순 | «The main limit …» |
 | AL-8 | faq·COMPARE «Solution libraries such as GTO Wizard let you browse spots solved in advance» | GTO Wizard에 custom solving(레인지·팟·스택·트리 편집)이 있음(help.gtowizard.com custom-solving-faq) → «열람 전용» 묘사는 경쟁 제품 사실 오류 위험(§12-B 1차 출처 확인 뒤) | «solution libraries let you browse pre-solved spots (GTO Wizard also offers custom solving); the difference here is that the solve runs on your own CPU in the browser» — 가격·우열 언급 없이 |
 
+- ⚖ **검수장 판정 10-10 (MA-406)**: AL-3~AL-8 = 전부 RISKY 확정 → 이행 재료·EN 동문 추가 3자리·로케일 예외는 **§2-AQ (b)**. AL-1 사실 = UNV(«normally» 분포 단정) · AL-1·2 «유료 비교»는 본체 편집 규칙 사안(판정 밖) · AL-2 명시 주장 OK.
 - 📬 솔버 쪽 통지 후보(이번 MB에 적음): 앱 `presets.ts` lessonVi ④ «có lợi cho bên call» · ⑦ «BB check-raise thường xuyên» · ⑧ «Ở SPR thấp, cược nhỏ gây áp lực» = EN 랜딩이 M-038·M-042로 철회한 옛 명제(랜딩은 정정본이라 영향 없음 · 앱 해설 드리프트).
 
 ### 2-AM. 우편함 수신분 — MA-385 요청 1 (FR 형제 갈림 7자리 · 사장님 결재 «FR RISKY 유지 + EN-먼저» 10-09) · 등재 2026-10-09 (7) · 미이행
@@ -671,6 +672,58 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🔴 vi 🅶 레인(10-09 진행)에는 HARDEN.md로 AO-2·AO-3 정정 뜻 선반영을 알렸다 — EN 정정 뒤 vi는 다시 맞출 필요 없음(AL-1·2와 같은 방식).
 - 통지 1(기각 · 라벨 불변) · 통지 2(EN 원장 무효 10행 = EN 손질 회차에 갱신) 접수. 검수장 회귀 감시: AO-1·AO-2 이행 시 결함형 감시 🔴 = 이행 신호.
+
+### 2-AP. `/ru/solver` 신설 렌즈(10-10 회차 B)가 찾은 EN 솔버 랜딩 동문 · 등재 2026-10-10 (3) · 미이행
+
+> ru는 신설 시점에 바르게 썼다(EN 문면과 이 자리만 다름 · EN 정정 뒤 일치). 나머지 14랜딩은 EN 정정 → 전파.
+
+| # | 자리 | 판정 · 문제 | 근거 | 처방 |
+|---|---|---|---|---|
+| AP-1 | **EN** `app/en/solver/solver-client.tsx` SPOT_GROUPS 9♥8♥7♣ note → 14랜딩 | 🔴 사실 · «The only single-raised board where BB truly leads» — Q♠9♠2♠도 BB 리드 11.2%(스펙 §4-B L393·L419 · EN `monotone-board-strategy` L106 «lead 11.2%») | 아스트라 교차(10-10) | «the single-raised board where BB leads most: 23.7% (11.2% on monotone Q♠9♠2♠)» 꼴 — ru 문면 참조 |
+| AP-2 | **EN** 솔버 랜딩 «0.08bb … 0.36% of a 22.5bb pot (acceptable)» ↔ «thresholds 0.08bb and 0.23bb» | 🟡 표시 모순(실제 컷 0.07875bb → 반올림) | 수치 렌즈(10-10) | «≈0.08bb» 또는 예시 값 교체 — EN 판정 뒤 |
+| AP-3 | **EN** 솔버 FAQ «Windows-only desktop solvers» 류 | 🟡 확인 · 전 로케일 번역에서 비제한 용법(«데스크톱 솔버=전부 Windows»)으로 옮겨졌는지 | 모스크바·초심자 렌즈(10-10) | 로케일별 문면 확인 |
+| AP-4 | 솔버 랜딩 전반 — 사이드바 «Hand review»(복기) · «Preflop Chart» 미언급 | 🪶 제안 · EN에 없음 → EN 판단 먼저 | 초심자 렌즈(10-10) | 사장님 판단 |
+
+- 🔗 **겹침(10-10 (4) 대조)**: AP-1 = §2-AL AL-3과 같은 자리(L169) — 검수장 MA-408이 ru 정정 문면 «BB донкует чаще всего … Q♠9♠2♠ — 11,2%»를 **OK** 판정(SRP 리드 최대 ④ 23.7 · 둘째 ⑤ 11.2) → EN 처방 꼴로 확정. AP-2 = AL-5와 같은 사안. 이행은 §2-AQ (b) 한 회차로 묶는다.
+
+### 2-AQ. 우편함 수신분 — MA-403 (MB-212·215 후기·`/s` 문구) · MA-406 (MB-211 `/vi/solver` + 횡단) · MA-408 (MB-218 `/ru/solver` + ru 문구) · 등재 2026-10-10 (4) · 회신 MB-219 · (a) ✅ 이행 10-10 (5) MB-220 · (b) 미이행
+
+> 근거 = 검수장 `reports/판정-MB212-215-2026-10-10/judge-MB212-215.md` · `reports/2026-10/검수-solver-vi-MB211-2026-10-10/REPORT.md`·`횡단-판정표.md` · `reports/2026-10/검수-solver-ru-MB218-2026-10-10/REPORT.md`·`judge-ru-strings.md` · `ledger/landing/solver-*.md`. WRONG 0(랜딩 문면) · WRONG 1은 소스 주석(화면 영향 0).
+> ✅ **위치 대조(본체 10-10 (4) · 현 main `d71a896f`)**: 아래 «현 위치» 전부 축어 실재 확인.
+
+**(a) 본체 사전·코드 — EN-먼저 아님(15로케일 사전 한 파일씩) · 이행 뒤 MB → 검수장 변경 줄 대조**
+
+| # | 출처 | 판정 · 문제 | 현 위치 | 처방 꼴(MA) |
+|---|---|---|---|---|
+| AQ-1 | MA-403 요청 1 | WRONG(주석) · «open = 각 언어 솔버 랜딩의 CTA 축어» ↔ 실제 0/14 일치(ko «솔버에서 열기 →» vs 랜딩 «솔버 바로 실행하기 →») | `lib/spot-share-i18n.ts` L6 | 주석을 «랜딩 CTA와 별개 문구»로 사실화(문구 교체보다 이쪽 — /s는 «이 스팟 열기» 맥락) |
+| AQ-2 | MA-403 요청 2 | RISKY 경미 · `image_type` «jpg·png·webp만» ↔ 서버 `gif` 허용 · 클라이언트 accept에도 gif (14언어 + ru = 15) | `lib/solver-reviews-i18n.ts` 각 로케일 `image_type`(L143·L226·L309…) ↔ `app/solver-feedback/actions.ts` L133 | 택1: 안내에 gif 추가 / 서버·accept에서 gif 제외 — 🔴 SQL·스토리지 제약도 같이 확인 |
+| AQ-3 | MA-403 요청 3 | RISKY 경미 · `notFoundBody` «주소가 잘못됐거나 지워진 링크» ↔ readSpot이 DB 없음·조회 예외도 null(일시 장애도 «못 찾음») · `spot_shares` 삭제·만료 경로 없음 | `lib/spot-share-i18n.ts` notFoundBody(L26~ · 15언어) · `app/s/[id]/page.tsx` readSpot L22~37 | 예외 시 «잠시 뒤 다시» 화면 분리 또는 문구 «주소가 잘못됐거나 열 수 없는 링크» |
+| AQ-4 | MA-408 요청 1 | RISKY · ru 고유 · FAQ «это ярлык внутри браузера, а не скачанная программа»(EN·vi에 없는 문장 · X-2보다 더 센 단정 · Android Chrome = WebAPK 설치) | `app/ru/solver/faq.ts` L43 | «…веб-приложение в браузере, а не программа для компьютера» · L112 «браузер лишь создаёт ярлык»는 X-2 동형 → (b)와 같이 |
+| AQ-5 | MA-408 요청 2 | RISKY 경미 · ru `usage` «Пользуется солвером»(현재형) ↔ 실제 = 트레이너 기록 1건 이상·한 번 켜지면 유지(`solver-feedback-server.ts` 393·413) · 14언어는 완료형 | `lib/solver-reviews-i18n.ts` L1292 · 주석 L1241~1242 | «Есть опыт работы с солвером» · 주석에서 tabQuestion·placeholderQuestion·loginEmail 3키는 «본체 작성»으로 사실화 |
+| AQ-6 | MA-408 통지 ② | 🔴 운영 · `IMPERSONATION_TERMS` 키릴 0 → «Администратор»·«Модератор»·«Официальный» 닉네임 통과 · 주석 «14언어» 낡음 | `lib/solver-feedback-config.ts` L62~ (tr·vi는 10-09 추가) | ru 항목 추가(«администратор»·«модератор»·«официальный» 등) + 주석 15 · `check:solver-feedback` selftest에 ru 케이스 |
+
+- 🪶 (MA-403) zh-hant `/s`만 «Solver» ↔ 같은 언어 앱·랜딩 «解算器»(집계 밖) · tr·vi 카카오 문구는 화면 밖.
+- 🪶 (MA-408) UNV ru 고유 5(«Сразу в Excel или Google Таблицы» 상표명·CSV 쉼표 구분 등) — 실측 없이는 손대지 않는다.
+- ✅ **(a) AQ-1~6 전부 이행 10-10 (5) · MB-220**(AQ-2 = 안내에 gif 추가 쪽 · AQ-3 = 문구 «열 수 없는 링크» 쪽 · 화면 분리 안 함). ▶ 검수장 변경 줄 대조 MA 대기 · 솔버 재생성 ✅ S-061 `4f4ace0`.
+
+**(b) EN-먼저 — 솔버 랜딩(EN `app/en/solver/{solver-client.tsx,faq.ts}`) → 14로케일 · §2-AL·§2-AP 합본**
+
+| # | 자리(EN 현 위치) | 판정 | 로케일 예외(판정자) |
+|---|---|---|---|
+| AL-3 = AP-1 | solver-client L169 9♥8♥7♣ note «The only single-raised board where BB truly leads» | RISKY 확정(§4-B ⑤ 11.2%) · ru 정정 문면 OK | ru = 이미 정정 |
+| AL-4 | L212 8♦5♣2♠ «just gutshots and backdoors» | RISKY 경미(A5s 5 원페어 3콤보) | ko·ja(ほぼ)·fr(presque)·id = OK |
+| AL-5 = AP-2 | faq L95 · solver-client L550~552 경계 0.06/0.08/0.23 | RISKY(실제 0.055/0.07875/0.225 · «0.08bb acceptable»과 충돌) · 본문+FAQ | — |
+| AL-6 | 포스트플랍 절 «Together they cover a whole hand» | RISKY(오픈 차트 전용) | fr = 앱 Charts 탭 지칭이라 OK · ru = 문장 없음 |
+| AL-7 | L459 «The one real boundary» | RISKY(4GB·반복 상한·iOS) | — |
+| AL-8 | faq L67 · solver-client L628 «solved in advance» + **비교표 «Solution library» 열 칸**(L635~ «사전 계산 열람»·«공개 솔루션 범위 안»·«사전·서비스 컴퓨터») | RISKY(GTO Wizard custom solving) · MA-408 통지 ①로 비교표 열 포함(vi #40·#41 OK→RISKY · ru #47·#50·#51) | — |
+| X-1 | 비교표 설치형 열 «Postflop» 단정 | RISKY(PioSOLVER Edge 프리플랍) | en·ko·vi만 · 8로케일 «버전에 따라» 헤지 = OK |
+| X-2 | faq L107 «Nothing is installed … creates a shortcut» | RISKY(Android Chrome = WebAPK) | de «nur ein Lesezeichen» 더 강함 · ru L112 동형(+L43은 (a) AQ-4) |
+| X-3 | faq L107 «removing it leaves nothing behind» | RISKY(Chrome 제거 시 데이터 삭제는 선택) | en·ko·ja·vi |
+
+- 범위 메모(MA-406): tr = 위 9자리 전부 동문 존재 · hi·ms = AL-5(헤지형)·AL-8·X-1(헤지형) 존재 — 원장 없음이라 판정은 아니지만 전파 대상에 넣는다.
+- AL-1 사실 = UNV(zh·zh-hant·fr·id는 只/ne…que/hanya 배타형이라 더 강함) — AL-1·2는 사실 시트 §5 편집 규칙으로 이미 처방 있음(vi 선반영).
+- 이행 순서: EN 9자리 → 14로케일(ru는 AL-3 이미 맞음) → 이행 MB(전/후 대조 요청) · `updated` 스탬프 settled §1-C. 🪶 자동 착수 금지 — 사장님 지시 대기(§2-AP와 같은 판단).
+- 검수장 자기 정정 접수: ja #1 «唯一» 08-24 OK → RISKY(MA-406) · `landing-source.mjs` 키릴 추출 수정(MA-408 ③ · 기존 11편 불변).
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

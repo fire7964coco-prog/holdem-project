@@ -276,7 +276,25 @@ const AR: HubLabels = {
   languages: "🌐 لغات المجتمع",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR };
+/**
+ * ★2026-10-10 신설 — `/ru/solver`(ru 첫 HubPage) 셸이 영어로 떨어지지 않게(playbook §3 · pt 실사고).
+ *   community-client.tsx에 LABELS.ru가 없어 ar처럼 허브 문구만 번역했다. 금액·시각은 공통 값 그대로.
+ *   login = 솔버 ru «Войти через Google»의 동사 · write = 솔버 트레이너 ru가 인용하는 «[✏️ Написать пост]» 축어
+ *   (솔버 S-048 한 줄 알림 — ru 커뮤니티 사전을 열 때도 이 라벨로 맞춘다) · ты체.
+ */
+const RU: HubLabels = {
+  login: "Войти",
+  write: "✏️ Написать пост",
+  trending: "🔥 Популярное за неделю",
+  eventBadge: "🎰 Розыгрыш · Скоро",
+  eventTitle: "Выбери 6 чисел\nВыиграй подарочные карты!",
+  eventDesc: "3 совпадения → $30 · 4 → $200\n5 → $1 000",
+  eventSchedule: "🔗 Каждое воскресенье в 19:00 KST\nАвтоматический розыгрыш по хешу блока Bitcoin",
+  eventButton: "Подробнее →",
+  languages: "🌐 Языки сообщества",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {

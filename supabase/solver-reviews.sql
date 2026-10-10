@@ -43,7 +43,7 @@ create table if not exists public.solver_feedback (
   review_requested_at timestamptz,      -- 숨김 뒤 «다시 검토 요청» 1회
   created_at          timestamptz not null default now(),
   updated_at          timestamptz not null default now(),
-  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi')),
+  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru')),
   constraint solver_feedback_kind     check (kind in ('review','question')),
   constraint solver_feedback_body_len check (char_length(body) between 2 and 600),
   constraint solver_feedback_body_link check (body !~* '(https?://|www\.|\.(com|net|org|kr|io|me|xyz|gg|ly|link|site|shop|top)([/?#]|$|[^a-z0-9]))'),
@@ -62,11 +62,11 @@ create unique index if not exists solver_feedback_one_review on public.solver_fe
 create index if not exists solver_feedback_list_idx on public.solver_feedback(locale, status, created_at desc);
 create index if not exists solver_feedback_user_idx on public.solver_feedback(user_id, created_at desc);
 
--- 2-a) 로케일 14개(tr·vi 2026-10-09 추가) — 이미 만든 DB에도 적용한다(여러 번 실행해도 안전).
+-- 2-a) 로케일 15개(tr·vi 2026-10-09 · ru 2026-10-10 추가) — 이미 만든 DB에도 적용한다(여러 번 실행해도 안전).
 --      위 create table 은 테이블이 있으면 건너뛰므로 제약은 여기서 다시 건다. 목록은 위 check 와 같아야 한다.
 alter table public.solver_feedback drop constraint if exists solver_feedback_locale;
 alter table public.solver_feedback add constraint solver_feedback_locale
-  check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi'));
+  check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru'));
 
 -- 3) 운영자 답글 — 관리자 화면에서만 쓴다(후기 1개에 답글 1개)
 create table if not exists public.solver_feedback_replies (

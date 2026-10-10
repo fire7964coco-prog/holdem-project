@@ -1,3 +1,39 @@
+## 2026-10-10 (5) — queue §2-AQ (a) 6자리 이행·배포 · MB-220 · MA-409·410 ACK
+
+- 🔴 AQ-6: 사칭 금지어 ru 어간 3(«админ»·«модератор»·«официальн») + 주석 15언어 + selftest 사례 3. 첫 실행 🔴 1 = 시험 닉네임 «Официальный Модератор»가 21자라 길이 검사에 먼저 걸린 것(필터 아님) → 사례 교체.
+- AQ-4 ru FAQ L43 «ярлык … скачанная программа» → «веб-приложение в браузере, а не программа для компьютера» · AQ-5 ru usage 완료형 + 주석 3키 사실화 · AQ-1 /s 주석 · AQ-2 image_type 15언어 + gif(서버 sharp 재인코딩 경로 정상이라 안내 쪽을 맞춤 · 🔴 솔버가 이 키를 복사하므로 재생성 요청) · AQ-3 notFoundBody 15언어 «열 수 없는 링크».
+- 우편함 MA-409(검수장이 사장님 «진행해»를 (b) 결재로 전달) → MA-410(철회) — (b)는 착수 안 함 · MB-220에 ACK.
+- 게이트: check:solver-feedback 🔴 0 · selftest 11/11 · build exit 0.
+
+## 2026-10-10 (4) — 우편함: MA-403·406·408 회신+등재 · S-060 ACK · MB-219
+
+- MA-403(MB-212·215 후기·/s 문구) · MA-406(MB-211 `/vi/solver` + 횡단) · MA-408(MB-218 `/ru/solver` + ru 문구) = 랜딩 WRONG 0. 요청·통지 전 자리를 현 main `d71a896f`에서 축어 대조(전부 실재) → `docs/en-first-queue.md` **§2-AQ** 신설: (a) 본체 사전·코드 6(AQ-1 /s CTA 주석 · AQ-2 image_type gif · AQ-3 notFoundBody · AQ-4 ru FAQ L43 «ярлык» · AQ-5 ru usage 현재형 · 🔴 AQ-6 IMPERSONATION_TERMS 키릴 0 = 이행 1순위) · (b) EN-먼저 솔버 랜딩 9자리(AL-3~8 RISKY 확정 + X-1·2·3 · 로케일 예외 · 비교표 «Solution library» 열 AL-8 포함).
+- §2-AL 인용 축어 2곳 정정(AL-1 L458 «sit behind a paid desktop solver» · AL-7 L459 «The one real boundary») + 판정 결과 한 줄 · §2-AP에 겹침 표시(AP-1 = AL-3 · ru 정정 문면 OK 판정 · AP-2 = AL-5).
+- S-060(솔버 `7c24104` LOCALE_PATHS.ru · ru 후기창 해제 · 배포 전) ACK. 발신함 확인 칸 닫음: MB-211(검수장 MA-406) · MB-212(MA-403) · MB-215(MA-403) · MB-218(솔버 S-060 · 검수장 MA-408). 착수 공지 MA-402·405·407도 MB-219 확인 칸에 포함. 남은 우편함 = 검수장→솔버 · 본체→솔버(MB-204) · MB-219 회신 대기뿐. 코드·글 수정 0.
+
+## 2026-10-10 (3) — `/ru/solver` 회차 B — 작성·등록·후기창 ru·렌즈 4+아스트라 ✅ · 배포 `3814bcfc` · MB-218
+
+- 앱 ru 축어 재추출(라이브 `?lang=ru` Playwright 2회 · 솔버 `3ba90e8` 기준 · presets titleRu/categoryRu 대조 13/13) → `docs/solver-app-verbatim-ru-2026-10-10.md`. 앱 사이드바에 «Разбор раздачи»(복기)가 새로 보인다(EN 랜딩 미언급 → queue §2-AP AP-4).
+- 3파일 `app/ru/solver/{page,solver-client,faq}` = vi 골격 · 뱅크 §7 조준(제목 «Покерный солвер онлайн бесплатно — GTO прямо в браузере» · H1 «Бесплатный GTO-солвер для покера…» · «называют по-разному» 문단에 солвер покер·гто покер·ренджи) · FAQ 23(EN 18 + 언어 1 + tr·vi 공통 3 + ru 고유 «GTO vs эксплойт») · 경쟁 오역 3종(«оптимальная теория игры»·«всегда в плюсе»·«GTO 적응») 정면 정정(경쟁사 이름 없음) · 링크 = ru 규칙 글 6편(도구 0 · hi·vi 선례 ⓐ).
+- 등록: hub-routes · 🔴 hub-i18n RU 신설 · side-rail(+HUB_HEADING «Гайды») · solver-promo · sitemap · hreflang `ru-RU` 14파일+새 파일. 🔴 렌더 확인에서 레일 «Feed·Chat·Event·Profile»이 영어 → `bottom-tab-bar` TAB_LABELS·`event-config` 상태 라벨에 ru 추가(기존 ru 블로그 글 탭도 같이 러시아어가 된다 · playbook 상단에 승격).
+- 후기창 ru(S-048): `lib/solver-reviews-i18n.ts` ru(폼 키 = 솔버 초안 축어 · 나머지 본체 · 성별 과거형 회피 «Регистрация: …») · `spot-share-i18n` ru · config 15로케일 · SQL 제약 2곳 `ru` · 게이트 15개·selftest 치환 `ru`. check:solver-feedback 🔴 0 · selftest 11/11.
+- 렌즈 4(모스크바 레귤러·교정자·초심자·§13 수치) + 아스트라 + 2차 교열 → 반영: 🔴 사용자 남성 과거형 6+(«ты вошёл»·«ты ввёл»·«ты терял»·«ты оказался»·«пришёл, искав»·«самому»·«будешь готов»·«ты задал») · «데스크톱 솔버=전부 Windows» 비제한 용법 · 🔴 9♥8♥7♣ «유일한 동크 보드»(Q♠9♠2♠ 11,2% · 스펙 §4-B) → ru 바르게 · EN 동문 = queue §2-AP AP-1 · «GTO는 평균 안 짐» → «양 포지션을 번갈아» 조건 · A♠A♥6♦ 트립스 정의에서 A6(풀하우스) 제외 · 라벨 격변화(«Задачи дня» → раздела «Задача дня») · EV 직역 «ожидаемая ценность» 제거 · chart=«чарт» · NBSP(ГБ·МБ·$1 000). 보류: 복기·프리플랍 차트 소개(EN에 없음 → AP-4) · 0,08bb 표시 모순(EN 동일 → AP-2).
+- 게이트: build exit 0(sitemap 74+686+111+25 · /ru/solver) · hreflang 0건 · meta-lang 🔴 0 · check:solver-feedback 🔴 0 · 로컬 390·1440 넘침 0 · FAQ 화면 23 = 스키마 23 · 셸 영어 0.
+- 배포: 사장님 SQL 실행 확인(스크린샷 · select 1행) → push `3814bcfc` → 라이브 200 · 390·1440 넘침 0 · FAQ 23=23 · 셸 영어 0 · EN 쪽 hreflang ru-RU 확인 · IndexNow 15 URL 200(`--since`는 정적 lastmod라 0건 → `--urls`로). MB-218(솔버 요청 2 = LOCALE_PATHS.ru · ru 후기창 해제 / 검수장 요청 2 · S-048·049·057·059 ACK · MB-211·215 솔버 칸 닫음). ▶ 사장님 GSC 수동 색인 `/ru/solver`.
+
+## 2026-10-10 (2) — `/ru/solver` 회차 A(조사 → 뱅크) ✅
+
+- 뱅크 `docs/keyword-bank/ru-gto-solver.md` 신설. 글·코드 변경 0.
+- 🔴 러시아(2643)는 DFS google_ads·serp·Labs·라쿠 전부 없음(로케이션 목록 0행 ↔ 대조군 KZ 369행 · 언어 빼도 location 거부) · DFS Yandex SERP 경로 없음 · google.ru·yandex.ru 직접 = 캡차 → 대리: 볼륨 KZ·UA·지역 무지정(키릴만) 195개 + 라쿠 UA 48개월(DFS UA와 일치) · SERP google.kz ru 11쿼리 · Yandex 공개 자동완성(모스크바) 33시드. rakko-playbook 08-27 절 6번으로 승격.
+- 판독: 헤드 = `солвер покер`(Yandex 1번 축) · `гто покер` · 오염 4(`гто`=체력검정 246k · `солвер`=멘토링·소설 · `ренджи`=블리치 · `эквити`=재무) · 정의 축은 러시아어 매체 8/10 포화 ↔ `солвер покер бесплатно` 러시아어 직접 작성 1/10.
+- 상위 6편 원문(서브에이전트 · 본체 축어 대조 6): GTO 풀이 오역 4/6(«оптимальная теория игры») · «всегда в плюсе» 3/6 · 포스트플랍 수치 스팟 0 · 전부 유료·설치형 전제 · «무료+무설치+무가입+브라우저» 조합 0 → 훅 확정.
+
+## 2026-10-10 (1) — 솔버 랜딩 빈자리 파악 · `/ru/solver` 계획 수립
+
+- 랜딩 14개(ko en ja zh zh-hant es de pt fr id ms hi tr vi) · 앱 15언어 중 랜딩 없음 = ru만 · 앱 미지원 언어(ar·bn·fa·fil·he·it·pl·ro·sw·th·uk)는 대상 아님.
+- 역방향 빈자리: 솔버 `outbound.ts` LOCALE_PATHS에 ms·hi·vi `/solver` 없음(ms·hi는 09-14 개설인데 앱 주석은 09-03·05 404 실측 그대로) → 사장님이 솔버에 직접 전달.
+- 계획 `docs/ru-solver-landing-plan.md`: 회차 A 조사·뱅크(Google+Yandex) → 회차 B 작성·등록 6곳(hub-i18n ru 없음 주의)·후기창 ru(SQL 사장님)·검수·배포. S-034 시뮬레이터는 «안정된 후».
+
 ## 2026-10-09 (11) — 우편함 MB-216·217 = MA-387·390·391·392 ACK · queue §2-AN·§2-AO 등재
 
 - MA-387(FR 🅵 gloss 본부 재검증): 요청 1 FR 고유 4 + 요청 2 EN-먼저 7 → `docs/en-first-queue.md` §2-AN(미이행). 11자리 전부 ledger 축어로 fr 실재 + EN 동문 위치 확인. 통지 3 접수.
