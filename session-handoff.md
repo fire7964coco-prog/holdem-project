@@ -15,7 +15,7 @@
 
 - 0-1~0-4 ✅ · 사장님 판정 §3-D 10건 채택(10-09): `/vi/glossary` 도구 신설(배포 회차) · 족보 베트남어·액션 영어 차용어 정본 · GTO 13 포함·13편 먼저.
 - ✅ 10-09 (10): 🅰~🅵 6레인 → `vi-integration`(폴더 `Holdem-vi-head`) 머지 · 38편 · 게이트 오탐 2 수정 `7944acb1`(vi-integration에만 있음 — main엔 배포 회차에 같이 들어간다) · audit vi 🔴 0 · 빌드 ✅ · 머지 해시 = 계획 §4-A. **main 머지·push는 §4-C 배포 회차에만**(사장님 10-09).
-- ▶ **🅶 gto 시작 신호 ✅** (`harden-vi-gto` ← vi-integration ff) → 사장님이 🅶 창(`Holdem-vi-gto`)에 「HARDEN.md 읽고 A 시작해」 → B → C. 🅶 C 끝나면 헤드가 vi-integration에 머지 → 배포 회차. 레인 창 6개(🅰~🅵)는 닫아도 된다(폴더 정리는 배포 회차 ⑩).
+- ✅ **🅶 gto A·B·C 완료**(10-10 `a5dd9cfe` · 브랜치 `harden-vi-gto` · 폴더 `Holdem-vi-gto` · 진행 = `docs/vi-lanes/gto-진행.md`) — 레인 창은 재부팅으로 닫혔고 다시 띄울 필요 없음. ▶ **헤드 다음 행동 = `harden-vi-gto` → vi-integration 머지 → 배포 회차(§4-C)**. 헤드 요청 ②(donk FAQ −1 의도)·③(check-gto-* vi 미지원)·보류 2(산문 흡수 · 3bet-low «ace-high») + EN-먼저 유래 4(equity 정의 · blocker · offsuit broadways · SEO 3)는 머지 때 판정.
 - 헤드(본체) 몫: 🅶 머지 · 배포 회차 = 계획 §4-C(① `/vi/glossary` 신설 ② 계산기 quickRef 4 ③ ICM 앵커·러닝맵 → 빌드·push·MB·IndexNow·수동 색인 38+1). 🅶 «Check it yourself» 링크 = `/vi/solver`(10-09 신설) · 글 꼴 «Spot mẫu → <titleVi> → [⚡ Xem kết quả]» · 라벨 정본 = `docs/solver-app-verbatim-vi-2026-10-09.md`.
 - 🔴 S-043(vi 928 문구 판정)은 검수장 진행 중 — 라벨이 바뀌면 verbatim 문서·`/vi/solver`·🅶 헤드를 같이 한 줄 교체.
 - ▶ 검수장 대기: MB-208·209 변경 줄 재판정 + ⚖ 결재 2(strategy call 문장 · MA-368 형제 갈림 6자리) + FR 🅴 tour 회차 MA → 오면 다음 세션 안에 회신+등재.
@@ -51,7 +51,7 @@
 
 ## ▶▶▶▶▶▶▶▶ 솔버 후기창 — ✅ 코드 1 (`5ac5d755` MB-212) · ✅ 코드 2 (`1b097803` MB-215) 라이브
 
-- ▶ 사장님: KO 시험 글(«bts» ★5) → /admin «솔버 후기·질문» 탭에 잡히는지 + 숨길지 판단(운영자 ★5가 첫 후기면 자작으로 보일 수 있음 — 숨김 권장).
+- ✅ KO 시험 글 «bts» ★5 = 숨기지 않음(사장님 10-10).
 - ✅ MB-212 닫힘(솔버 S-051 · 검수장 MA-403 → queue §2-AQ) · ru 사전·후기창 해제 = MB-218·S-060.
 - ✅ **코드 2 라이브**(10-09 (9) `1b097803` · MB-215 · 설계 §7-4) — 시험 공유 1행 `/s/a6KEmJUwtc` 남음(무해). ✅ MB-215 닫힘(S-057·S-059 · MA-403 → §2-AQ). 🪶 /s 머리·꼬리 KO 크롬 = 사장님 «일단 그대로».
 - 정리 남음: 워크트리 `../Holdem-solver-reviews`(`.env.local`은 이미 없음 ✅ 10-10 확인 → `git worktree remove`) · 브랜치 `solver-reviews-code1`(main 병합 ✅ 삭제 가능) · 🔴 `-pre-rebase`는 git cherry상 main에 없는 패치 3개(rebase 때 충돌 수정본) → `-D` 전에 사장님 확인. 🔴 그 워크트리의 `supabase/solver-reviews.sql`은 낡았다(로케일 제약에 ru 없음) — SQL은 반드시 main 판으로 실행.
@@ -68,7 +68,7 @@
 - **ja 대회 트랙**(F): 발행 3편(jopt-osaka · korea-poker-trip · apt-championship-taipei) 후속은 캘린더 · 후보 D·E·F 보류(사장님 09-28) · `lib/tournaments.ts` 어긋남 4건 별도 · 로케일 고유 글은 `blogLinkByLocale`.
 - **ms 30편**(D · `docs/ms-translation-lanes.md`): 동결 없음 · 검수 폴더가 ms 차례일 때 MA-103 아스트라 교차 → 정정 회차 1번(kejohanan·Button/butang·«di hadapan» 판정 포함) · Q16-4 재료 = `docs/harden-queue-진행.md` §5.
 - **GTO 예제 전략**(C · `settled-decisions` §1-E): 새 글 금지·필라 흡수 · 판독 10/21 GSC(«홀덤 포지션» 순위·CTR · 동크벳 «뜻»·«리드벳» 노출).
-- 09-29 잔여: 새 /tournaments 카드 buyin·venue 표기 규칙(13로케일 FIELD · hi·ar SCHEMA_DESC) · ⛔ OLA Taipei 안 씀 · ⏸ GOP 제주 · S-030 솔버 사실 시트 §4 문구 솔버 회차에 · 사장님 Vercel 2FA 복구 코드 확인 필요.
+- 09-29 잔여: 새 /tournaments 카드 buyin·venue 표기 규칙(13로케일 FIELD · hi·ar SCHEMA_DESC) · ⛔ OLA Taipei 안 씀 · ⏸ GOP 제주 · S-030 솔버 사실 시트 §4 문구 솔버 회차에 · ✅ Vercel 접속 확인(사장님 10-10).
 
 ## 대기열·관측 (링크만)
 
