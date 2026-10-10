@@ -1,3 +1,10 @@
+## 2026-10-10 (16) — queue §2-AT AT-1~8 이행 · vi rules 5편 · 배포 `0876cc17` · MB-231
+
+- 사장님 «이어서 진행해». MA-420 요청 1 8묶음 = vi 5편 15자리 + 교열 반영. AT-2 실머니 = 삭제(표 3행·직답·FAQ·game-order 2) → 연습 칩 문면(같은 글 칩 표 수치).
+- 근거 원문 확인: TDA 2024 16 · 17-A(L143–147) · 45-A Ex-2 · WSOP Live Action 143(L679 «unless … only remaining live hand»).
+- diff 교열 렌즈(vi 네이티브+TD 서브 1): 45-A «mọi chip của mình»이 «스택 전체 필요»로 읽힘 → «chip bạn đẩy ra … bớt đi một chip nhỏ nhất» · 끊긴 토너먼트 buy-in 비교 문단 → 링크 한 줄 · «càng» 상관어 · 표 어휘 · FAQ 첫머리 = 반영 5. 미반영 1(«trả tiền» 비유 · 범위 밖).
+- 게이트: audit:hard vi 51/51 🔴 0 · 백틱 0 · build exit 0(74 + 729) · IndexNow 66 URL 200.
+
 ## 2026-10-10 (15) — MA-420 회신+등재 · queue §2-AT · MB-230
 
 - 사장님 «MA-420 회신+등재 진행해». 검수장 `HQ-REPORT.md` 통독 → 인용 문면 현 main `c5b65007` vi ts 파일 축어 대조(전 자리 실재 · 행 번호는 ts 기준으로 다시 적음).

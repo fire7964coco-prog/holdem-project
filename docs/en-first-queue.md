@@ -747,7 +747,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - (이행 전 원문) 헤드 이월(vi 고유 · 배포를 막지 않음): H-1 vi 캡처·차트 생성 후 13편 `gto-*-en.webp` → `-vi` 교체(현재 0장) · H-2 `scripts/check-gto-numbers.mjs`·`check-gto-structure.mjs`에 vi 추가(미지원 — 🅶은 scratchpad 전사 대조로 대신했다) · H-3 `docs/solver-app-verbatim-vi-2026-10-09.md` §4에 BvB «OOP (SB (bên open))»·3-bet «IP (BTN (bên call))» 행 추가.
 - 헤드 판정으로 닫은 것(10-10): donk FAQ −1 = 의도(`locale-intentional-diffs` 등재) · 산문 흡수 wet/paired/texture = **기각**(볼륨 10 · §3-C 소유 밖) · 3bet-low «ace-high» 풀네임 = **유지**(tldr 확정 카피 연동) · X5 기메 인용·readnext a-high→position = 형제 vi 관행 유지.
 
-### 2-AT. 우편함 수신분 — MA-420 (VI 회차 1 🅰 rules 6편 · 기준 `6b76c650`) · 등재 2026-10-10 (15) · 회신 MB-230 · 미이행
+### 2-AT. 우편함 수신분 — MA-420 (VI 회차 1 🅰 rules 6편 · 기준 `6b76c650`) · 등재 2026-10-10 (15) · 회신 MB-230 · ✅ AT-1~8 이행 10-10 (16) `0876cc17` MB-231
 
 > 근거 = 검수장 `reports/검수-vi-r1-rules-2026-10-10/hq-reverify/HQ-REPORT.md`(698행 OK 597 · RISKY 14 · WRONG 0 · UNV 87). 위치 대조 = 현 main `c5b65007` `lib/posts-vi/*.ts`(행 번호 = ts 파일 · MA의 L은 md 기준이라 다르다) · 인용 문면 전부 축어 실재. 처방 원칙 = MA 그대로 «EN 문면 이식 또는 같은 글 정답 문면 재사용 — 문안 창작 아님» · vi 고유 · EN 무변경.
 
@@ -764,7 +764,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(자동 착수 금지): (a) **EN-먼저** = betting own-raise 3자리(MA-367 (a) 재확인 = §2-AG (a) 그대로 · B 159·165) · all-in EN «If you're all-in for $80 and the pot is $400…»(이미 있던 팟 독해) · beginners 표 BB «out of position postflop»(BvB) · blind FAQ 놓친 블라인드 캐시 범위 · showdown H4H 공개 대기(RP-8-F · A 126-g)·B 143 단서 · betting 룰북 접두 없는 «Rule 84·90·97·103» · 스트래들 최소 레이즈(B 165) · 매칭 안 된 초과분 반환 (b) vi 단독 경미 = «thắng chắc trên hầu hết board» · «trừ khi mọi người đã all-in»(TDA 16 단수) · SB 직답 헤즈업 예외 · «luôn đi theo cùng một nhịp … mỗi lần kèm một vòng cược» · «big blind là người chốt vòng» · «fold thì lúc nào đến lượt cũng được» · game-order 리드문 헤즈업 · game-order FAQ «chia bài» 질문 ↔ dealer 답 어긋남 1 → AT-1~8 이행 회차에 같이 볼지 그때 판단 (c) 회귀 앵커 `mb073`·`mb074` = 보존 확인(되돌림 0 · 앵커 정리 검수장 몫).
 - MB-223 ② register·성조 = 이상 없음 · ④ 메타·FAQ 정형 = 사실 왜곡 없음 → 접수.
-- 이행 = 🅱 rank 6편 결과(MA)와 묶을지 이행 회차에 판단 → MB(변경 줄 전/후).
+- ✅ 이행 10-10 (16) `0876cc17` = vi 5편(blind 무변경 · `updated` 10-10) · AT-2 = 실머니 표·문장 삭제 + 연습 칩 문면(같은 글 칩 표 수치) + 토너먼트 buy-in 문단을 링크 한 줄로 · AT-7 = 45-A «chip bạn đẩy ra» 검사 문형(Ex-2 2000 vs 1050 = call) · AT-8 = 17-A·16·B 143(«trừ khi … tay bài sống duy nhất»). diff 교열 렌즈(vi 네이티브+TD · Opus 5.5) 반영 5 · 미반영 1(betting «call thì phải trả tiền» 비유 = 범위 밖 · 실머니 권유 아님). 🪶 통지 (a)(b)는 그대로 남김.
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
