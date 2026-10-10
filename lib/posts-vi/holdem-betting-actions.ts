@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt không mất chip), bet (mở vòng cược), call (trả bằng mức cược), raise (tăng cược — mức raise tối thiểu bằng khoản bet hoặc raise đủ mức gần nhất) và fold (bỏ bài). Bạn chỉ được check khi trước mặt không có khoản cược nào đang mở — ở preflop, thường chỉ big blind (hoặc người đã đặt straddle còn hiệu lực) được check.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 phút",
@@ -53,7 +53,7 @@ Mọi quyết định bạn đưa ra ở bàn poker đều là một trong năm 
 |--------|---------------|-----------|
 | Fold | Bất cứ lúc nào đến lượt bạn | Không mất thêm — nhưng số chip đã bỏ vào pot thì mất |
 | Check | Chỉ khi trước mặt bạn không có khoản cược nào đang mở (preflop: khi bạn là big blind, hoặc là người đã đặt straddle còn hiệu lực) | Không mất thêm — bạn nhường lượt mà không thêm chip |
-| Call | Sau khi có người đã bet hoặc raise | Bạn trả đúng bằng mức cược hiện tại |
+| Call | Sau khi có người đã bet hoặc raise | Bạn bỏ chip cho bằng đúng mức cược hiện tại |
 | Bet | Khoản cược đầu tiên của vòng | Số tiền bạn chọn (tối thiểu = 1 big blind) |
 | Raise | Sau khi có người đã bet | Cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức gần nhất |
 
@@ -94,7 +94,7 @@ Nếu có người bet sau khi bạn check, bạn đứng trước một quyết
 
 ## "Call" trong poker có nghĩa là gì? Check và call khác nhau ở đâu
 
-Call là trả đúng số chip bằng mức cược đang mở để tiếp tục ván bài. Khác biệt với check nằm ở điều kiện: check chỉ có khi trước mặt bạn không có khoản cược nào đang mở, còn call chỉ có khi đã có người bet hoặc raise. Nói cách khác, cùng một ý "tôi vẫn ở lại", nhưng check không tốn chip, còn call thì phải trả tiền.
+Call là bỏ chip cho bằng đúng mức cược đang mở để tiếp tục ván bài — nếu bạn đã có chip trong vòng cược này thì chỉ bù phần chênh lệch. Khác biệt với check nằm ở điều kiện: check chỉ có khi trước mặt bạn không có khoản cược nào đang mở, còn call chỉ có khi đã có người bet hoặc raise. Nói cách khác, cùng một ý "tôi vẫn ở lại", nhưng check không tốn chip, còn call thì phải trả tiền.
 
 Call nghĩa là bạn ==trả đúng bằng mức cược hiện tại== để ở lại ván bài. Ai đó bet $10, bạn theo $10 — không hơn, không kém. (Còn dưới $10 thì bạn vẫn call được: bạn all-in với số chip mình có.)
 
@@ -103,7 +103,7 @@ Check và call là nhầm lẫn phổ biến nhất của người mới, nên �
 | | Check | Call |
 |-|-------|------|
 | Khi nào tồn tại | Trước mặt bạn không có khoản cược đang mở (preflop: khi bạn là big blind, hoặc là người đã đặt straddle còn hiệu lực) | Đã có người bet trước bạn |
-| Tốn chip | Không | Bạn trả bằng mức cược hiện tại |
+| Tốn chip | Không | Bạn bỏ chip cho bằng mức cược hiện tại |
 | Ý nghĩa | "Tôi nhường lượt, vẫn ở lại" | "Tôi trả tiền để đi tiếp" |
 
 Ví dụ thực tế: bạn ở flop với K♠ 8♦. Chưa ai bet, nên bạn ==check==. Người kế tiếp bet $10. Giờ lựa chọn của bạn là ==call== $10, ==raise== (lên $20 trở lên) hoặc ==fold==. Check đã biến mất — cánh cửa đó khép lại ngay khi khoản bet được đẩy vào.
@@ -124,7 +124,7 @@ Một quy tắc ứng xử ở bàn live: đừng fold ==trước lượt==. Hã
 
 ## Raise trong poker là gì — min-raise tính thế nào?
 
-Raise là tăng mức cược đang mở lên, với phần cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức (full raise) gần nhất. Mức tối thiểu đó gọi là min-raise (mức raise tối thiểu): nó tính theo mức tăng của lần bet hoặc raise trước, chứ không theo big blind. Mức tối đa là toàn bộ stack của bạn.
+Raise là tăng mức cược đang mở lên, với phần cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức (full raise) gần nhất. Mức tối thiểu đó gọi là min-raise (mức raise tối thiểu): nó tính theo mức tăng của lần bet hoặc raise trước, chứ không theo big blind. Ở no-limit, mức tối đa là toàn bộ stack của bạn.
 
 ![Infographic minh họa luật min-raise trong poker: khoản bet $6 buộc raise lên ít nhất $12, và khoản raise preflop lên $6 buộc re-raise tối thiểu lên $10](/images/holdem-betting-actions-min-raise.webp "Luật min-raise — mỗi lần raise phải cộng thêm ít nhất bằng khoản bet hoặc raise đủ mức gần nhất; chỉ all-in mới được nhỏ hơn")
 

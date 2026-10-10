@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Luật showdown (lật bài) trong Texas Hold'em: ai lật trước, muck và slow roll",
   seoTitle: "Ai lật bài trước? — Luật showdown poker, so bài và muck",
   desc: "Ai lật bài trước khi showdown? Có được muck mà không lật không? Luật so bài Hold'em: last aggressor, cards speak, slow roll và luật all-in.",
-  tldr: "Ở showdown trong giải đấu không có all-in, người bet hoặc raise cuối cùng ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer lật trước. Khi có all-in, mọi tay bài còn lại phải được lật sau khi vòng cược kết thúc. Người đã call ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người bet hoặc raise cuối cùng. Cash game áp dụng luật nhà về lật bài và muck.",
+  tldr: "Ở showdown trong giải đấu không có all-in, người bet hoặc raise cuối cùng ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer lật trước. Khi có all-in, mọi tay bài còn lại phải được lật khi mọi hành động cược đã kết thúc. Người đã call ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người bet hoặc raise cuối cùng. Cash game áp dụng luật nhà về lật bài và muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -209,7 +209,7 @@ A. Thứ tự đi theo vòng cược cuối: người bet hoặc raise cuối c�
 
 **Q. Lật bài tẩy là gì — khi nào bạn phải lật bài tẩy?**
 
-A. Lật bài tẩy là ngửa hai lá bài riêng của bạn lên để so với đối thủ ở showdown. Bạn chỉ bắt buộc lật khi còn tranh pot ở showdown: là người bet hoặc raise cuối cùng ở river mà bị call, hoặc khi có người all-in trong giải đấu và vòng cược đã kết thúc (TDA 2024, Luật 16). Nếu tất cả đối thủ đã fold, bạn thắng pot mà không phải lật — lật hay không khi đó hoàn toàn là lựa chọn của bạn.
+A. Lật bài tẩy là ngửa hai lá bài riêng của bạn lên để so với đối thủ ở showdown. Bạn phải lật khi còn tranh pot ở showdown, theo thứ tự: người bet hoặc raise cuối cùng ở river mà bị call lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer lật trước (TDA 2024, Luật 17-A); khi có người all-in trong giải đấu và mọi hành động cược đã kết thúc, mọi tay bài đều phải lật (TDA 2024, Luật 16). Đến lượt mà không lật thì chỉ còn cách muck và bỏ pot — muốn thắng pot, bạn phải lật bài, trừ khi bạn là tay bài sống duy nhất còn lại (WSOP Live Action, Luật 143). Nếu tất cả đối thủ đã fold, bạn thắng pot mà không phải lật — lật hay không khi đó hoàn toàn là lựa chọn của bạn.
 
 ---
 

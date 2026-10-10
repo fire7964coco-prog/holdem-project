@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở preflop, người ngồi bên trái big blind hành động trước. Ở flop, turn và river, người còn bài đầu tiên bên trái nút dealer đi trước — thường là small blind (heads-up thì đảo ngược). Một ván chạy theo thứ tự blind → bài tẩy → preflop → flop → turn → river → showdown, với tối đa bốn vòng cược.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -142,7 +142,7 @@ River là nơi bạn kết toàn bộ ván. Cân nhắc sức mạnh tay bài c�
 
 ## Giai đoạn 5 — Showdown: tay bài 5 lá mạnh nhất thắng
 
-Showdown là lúc những người còn bài sau vòng cược river lật bài để so — và năm quy tắc dưới đây quyết định ai lật, ai thắng. Tóm gọn: mỗi người chọn 5 lá mạnh nhất trong 7 lá, người bet hoặc raise cuối cùng lật trước, tay bài ngang nhau thì chia pot.
+Showdown là lúc những người còn bài sau vòng cược river lật bài để so — và năm quy tắc dưới đây quyết định ai lật, ai thắng. Tóm gọn: mỗi người chọn 5 lá mạnh nhất trong 7 lá, người bet hoặc raise cuối cùng ở river lật trước (river check hết thì người còn bài đầu tiên bên trái nút lật trước), tay bài ngang nhau thì chia pot.
 
 Nếu còn hai người trở lên sau vòng cược river, ván bài đi tới **showdown**.
 
@@ -153,7 +153,7 @@ Luật showdown:
 - Mỗi người tạo **tay bài 5 lá mạnh nhất** từ hai lá tẩy và năm lá bài chung.
 - Bạn không bắt buộc dùng cả hai lá tẩy — có thể dùng một lá, hoặc chơi luôn board (không dùng lá nào) nếu đó là 5 lá mạnh nhất của bạn.
 - **Người bet hoặc raise cuối cùng (last aggressor)** ở vòng cược cuối lật trước; nếu river được check hết lượt, người còn bài đầu tiên bên trái nút lật trước.
-- Người thua thường chỉ cần **muck (úp bài bỏ)** — bỏ mà không lật. Hai ngoại lệ trong giải đấu (tournament): khi một người đã all-in (tất tay) và vòng cược đã kết thúc, mọi tay bài đều phải lật ngửa (TDA 2024 Rule 16 · WSOP Tournament Rule 70); và người bet ở river bị call phải lật nếu người call — vẫn đang cầm hoặc đã lật bài của mình — yêu cầu xem bài (TDA 2024 Rule 18-B).
+- Người thua thường chỉ cần **muck (úp bài bỏ)** — bỏ mà không lật. Hai ngoại lệ trong giải đấu (tournament): khi một người đã all-in (tất tay) và mọi hành động cược đã kết thúc, mọi tay bài đều phải lật ngửa (TDA 2024 Rule 16 · WSOP Tournament Rule 70); và người bet ở river bị call phải lật nếu người call — vẫn đang cầm hoặc đã lật bài của mình — yêu cầu xem bài (TDA 2024 Rule 18-B).
 - Tay bài ngang nhau thì pot được chia đều — **chia pot (split pot)**, dân chơi gọi là "chop".
 
 Ai phải lật trước, khi nào bạn được muck, và phép lịch sự quanh chuyện slow roll (cố tình lật bài chậm) được nói đầy đủ trong [luật showdown](/vi/blog/holdem-showdown-rules).
@@ -351,14 +351,14 @@ Lỗi kinh điển của người mới: nghĩ "mình có hai đôi!" trong khi 
 
 ## Bắt đầu chơi ngay hôm nay thế nào?
 
-Cách nhanh nhất để trình tự thành phản xạ là chơi thật với rủi ro bằng không, rồi tăng mức cược từ từ — bốn bước dưới đây. Texas Hold'em học được trong ba mươi phút, nhưng chính những ván đầu tiên mới khắc vào đầu bạn thứ tự hành động.
+Cách nhanh nhất để trình tự thành phản xạ là chơi thật nhiều ván với rủi ro bằng không — bốn bước dưới đây. Texas Hold'em học được trong ba mươi phút, nhưng chính những ván đầu tiên mới khắc vào đầu bạn thứ tự hành động.
 
 Một khi trình tự chơi đã thông, đã đến lúc thực sự chơi.
 
 - **Luyện bằng tiền ảo** — đa số app và trang poker có chế độ chơi miễn phí. Áp dụng hướng dẫn này vào một dòng chảy ván bài thật.
 - **Đọc lại bài này hai ba lần** — trình tự phải thành bản năng để bạn không bao giờ đơ ở bàn.
 - **Làm một tờ nhắc thứ hạng tay bài** — viết mười tay bài ra giấy và để chỗ dễ thấy.
-- **Bắt đầu ở mức cược thấp nhất** — sai lầm càng rẻ, bạn học càng nhanh.
+- **Tập với bạn bè bằng chip không quy đổi ra tiền** — sai lầm không tốn gì, nên bạn học nhanh hơn.
 
 Texas Hold'em mất ba mươi phút để học và cả đời để thành thạo. Nhưng những điều cơ bản bạn nắm được hôm nay là quá đủ để ngồi vào bàn. Về lịch sử và luật chính thức, [bài Wikipedia về Texas hold 'em (tiếng Anh)](https://en.wikipedia.org/wiki/Texas_hold_%27em) là một tài liệu tham khảo vững.
 

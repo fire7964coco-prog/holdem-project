@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người nhận 2 lá bài tẩy và dùng chung 5 lá bài chung. Một ván có tối đa bốn vòng cược; tay bài 5 lá mạnh nhất thắng ở showdown — trừ khi tất cả đối thủ đã fold trước đó.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -87,7 +87,7 @@ Nếu thứ hạng tay bài còn mới với bạn, hãy mở [thứ hạng tay 
 
 ## Poker là gì — và poker 2 lá (Texas Hold'em) khác poker 5 lá, xì tố ở đâu?
 
-«Poker» — hay "bài poker" theo cách gọi quen thuộc — là tên chung của nhiều biến thể bài cùng dùng một thứ hạng tay bài. Texas Hold'em là biến thể mỗi người dùng 2 lá bài tẩy cùng 5 lá bài chung và so 5 lá mạnh nhất. Các biến thể ở Việt Nam gọi theo số lá — «poker 5 lá», «poker 4 lá» — khác ở số lá mỗi người được nhận: tên tay bài có thể trùng, nhưng cách chia bài và vòng cược khác với Texas Hold'em, và tôi không mô tả luật của chúng ở đây.
+«Poker» — hay "bài poker" theo cách gọi quen thuộc — là tên chung của nhiều biến thể bài, phần lớn cùng dùng một thứ hạng tay bài. Texas Hold'em là biến thể mỗi người dùng 2 lá bài tẩy cùng 5 lá bài chung và so 5 lá mạnh nhất. Các biến thể ở Việt Nam gọi theo số lá — «poker 5 lá», «poker 4 lá» — khác ở số lá mỗi người được nhận: tên tay bài có thể trùng, nhưng cách chia bài và vòng cược khác với Texas Hold'em, và tôi không mô tả luật của chúng ở đây.
 
 Tên gọi xì tố/xì phé được dùng không thống nhất; bài này chỉ nói về Texas Hold'em, mỗi người nhận hai lá bài tẩy. Nếu bạn tìm "cách chơi poker 2 lá" mà vào đây: «2 lá» là hai lá bài tẩy bạn được chia, không phải so bài bằng hai lá — tay bài cuối cùng luôn là 5 lá mạnh nhất trong 7 lá.
 
@@ -190,21 +190,13 @@ Với 200 chip và blind 1/2, ==g:mỗi người chơi bắt đầu với 100 bi
 
 ## Nên bắt đầu Texas Hold'em với bao nhiêu tiền?
 
-Nếu đang học, hãy dùng chip không quy đổi ra tiền; mục tiêu là hiểu trình tự, không phải chịu áp lực. Khi cả nhóm đã nắm luật và muốn chơi cash game nhỏ, chọn buy-in mà ai thua cũng thấy thoải mái — ví dụ $2 đến $5 ở blind $0,01/$0,02 — và nâng dần. Buy-in giải đấu lại là một khoản cố định, chip không đổi ra tiền.
+Bạn không cần tiền để bắt đầu: hãy dùng chip không quy đổi ra tiền; mục tiêu là hiểu trình tự, không phải chịu áp lực. Stack và blind cho ván tập đã có ở bảng chia chip phía trên — 100 đến 200 chip mỗi người, blind 1/2 là đủ.
 
-Cấu trúc phổ biến cho người mới chơi cash game nhỏ ở nhà:
+==r:Đừng để ván tập trở nên căng thẳng.== Người mới mà run thì không học nhanh hơn. Họ chỉ fold quá nhiều, call theo cảm xúc, hoặc cãi nhau về luật.
 
-| Mức blind | Buy-in cho người mới | Ghi chú |
-|:---|:---:|:---|
-| $0,01 / $0,02 | $2 đến $5 | Tốt nhất để học với chút tiền cược thật |
-| $0,05 / $0,10 | $10 đến $20 | Vẫn nhỏ, nhưng quyết định đã có sức nặng |
-| $0,10 / $0,25 | $25 đến $50 | Phù hợp hơn khi mọi người đã nắm luật |
+Nếu chưa rõ cash game và giải đấu khác nhau thế nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
 
-==r:Đừng bắt đầu với mức cược khiến mọi người căng thẳng.== Người mới mà run thì không học nhanh hơn. Họ chỉ fold quá nhiều, call theo cảm xúc, hoặc cãi nhau về luật.
-
-Lưu ý rằng buy-in của **giải đấu** hoạt động khác cash game: bạn trả một khoản phí vào cửa cố định, nhận một stack chip không quy đổi ra tiền, và chơi đến khi một người gom hết chip (giải có re-entry cho phép bạn mua vào lại sau khi bị loại). Nếu chưa rõ mình muốn chơi kiểu nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
-
-Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích được thứ tự hành động mà không cần nghĩ. Rồi mới nâng mức cược từ từ.
+Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích được thứ tự hành động mà không cần nghĩ.
 
 ---
 
@@ -431,7 +423,7 @@ A. Với ván chơi ở nhà cho người mới, chia cho mỗi người khoản
 
 **Q. Bắt đầu chơi Texas Hold'em với bao nhiêu tiền?**
 
-A. Khi học, hãy bắt đầu với chip tập. Với ván chơi tiền thật nhỏ ở nhà, dùng mức buy-in mà ai thua cũng thoải mái, ví dụ $2 đến $5 với blind $0,01/$0,02.
+A. Không cần tiền: khi học, hãy bắt đầu với chip tập không quy đổi ra tiền — khoảng 100 đến 200 chip mỗi người với blind 1/2 là đủ.
 
 **Q. Có "sảnh nhỏ" trong Texas Hold'em không — A-2-3-4-5 tính thế nào?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã bỏ vào ngang họ (main pot). Phần chip dư do hai stack lớn hơn trở lên cược vượt mức đó tạo thành side pot chỉ họ được tranh; nếu chỉ một người cược dư thì phần đó được trả lại. Trong no-limit và pot-limit, một cú all-in nhỏ hơn một raise đủ mức KHÔNG mở lại vòng cược cho người đã hành động — trừ khi nhiều cú all-in ngắn cộng lại đạt ít nhất một raise đủ mức so với số chip người đó đã bỏ vào.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -61,7 +61,7 @@ Có hai cách được công nhận: nói to "all-in" cho dealer và cả bàn n
 
 **1. Tuyên bố bằng lời** — Nói "all-in" rõ ràng để dealer và đối thủ đều nghe thấy. Đây là cách an toàn nhất. Nói ra rồi là bạn đã bị ràng buộc.
 
-**2. Đẩy toàn bộ chip lên trước** — Đẩy cả stack về phía giữa bàn trong một động tác gọn duy nhất. Đẩy chip thành nhiều nhịp có thể bị coi là string bet (đẩy chip nhiều nhịp), nên hãy chuyển tất cả cùng lúc. ==r:Chỉ đẩy chip không phải lúc nào cũng đủ: nếu bạn đang đối diện một mức bet và toàn bộ chip của bạn vừa đủ để call mức đó, cú đẩy im lặng được xử là call, không phải all-in (TDA 2024 Luật 45-A, WSOP Tournament Rule 92).== Trong mọi trường hợp khác, đẩy những chip cuối cùng của bạn **là** một cú bet all-in (TDA 2024 Luật 45-B) — ngoại lệ duy nhất là một chip mệnh giá lớn đẩy im lặng vào một mức bet đang có, khi đó chỉ được tính là call (TDA 2024 Luật 44).
+**2. Đẩy toàn bộ chip lên trước** — Đẩy cả stack về phía giữa bàn trong một động tác gọn duy nhất. Đẩy chip thành nhiều nhịp có thể bị coi là string bet (đẩy chip nhiều nhịp), nên hãy chuyển tất cả cùng lúc. ==r:Chỉ đẩy chip không phải lúc nào cũng đủ: nếu bạn đang đối diện một mức bet và mọi chip bạn đẩy ra đều cần cho cú call — chỉ bớt đi một chip nhỏ nhất là không còn đủ để call — cú đẩy im lặng được xử là call, không phải all-in (TDA 2024 Luật 45-A, WSOP Tournament Rule 92).== Trong mọi trường hợp khác, đẩy những chip cuối cùng của bạn **là** một cú bet all-in (TDA 2024 Luật 45-B) — ngoại lệ duy nhất là một chip mệnh giá lớn đẩy im lặng vào một mức bet đang có, khi đó chỉ được tính là call (TDA 2024 Luật 44).
 
 ![Showdown all-in trong Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ với chip được tách thành main pot và side pot có nhãn riêng](/images/holdem-all-in-declare.webp)
 
