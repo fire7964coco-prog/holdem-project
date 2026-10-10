@@ -1,13 +1,12 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-10 (3) (`/ru/solver` 회차 B 로컬 커밋 · push 대기) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
+> 갱신: 2026-10-10 (3) (`/ru/solver` 배포 `3814bcfc` · MB-218) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
-## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ 다음 할 일 = `/ru/solver` 배포 마감 — 🔴 사장님 Supabase SQL 실행 확인 → push (정본 `docs/ru-solver-landing-plan.md` §2 회차 B 7~8)
+## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ `/ru/solver` ✅ 배포 (10-10 (3) `3814bcfc` · MB-218) — 남은 것 = 회신 대기
 
-- ✅ 10-10 (3) 회차 B 작성·등록·후기창 ru·렌즈 4+아스트라+2차 교열·게이트 전부 끝 · **로컬 커밋만**(WORKLOG 10-10 (3)).
-- 🔴 남은 순서: ① 사장님 SQL(SQL Editor · `solver_feedback_locale` 제약에 `ru` — 문구 = 이 회차 마지막 답변 · 파일 `supabase/solver-reviews.sql` 2-a 블록) 실행 확인 ② `git push` ③ 라이브 `/ru/solver` 390·1440 넘침 0 · FAQ 스키마 23 ④ MB 1행(솔버: `LOCALE_PATHS.ru` → `/ru/solver` · S-048 반영 · S-049·S-057·S-059 ACK / 검수장: 신설 판정 + 15랜딩 hreflang 횡단 + tr·vi·ru 후기 문구) ⑤ `npm run indexnow -- --since 2026-10-10` ⑥ 사장님 GSC 수동 색인 `/ru/solver`.
-- 첫 지시문: 「SQL 실행했어 — ru 솔버 배포 마감해」.
+- ▶ 사장님: GSC 수동 색인 `/ru/solver`.
+- ▶ 솔버: MB-218 요청 2(`LOCALE_PATHS.ru` · ru 후기창 해제) → S-행 오면 MB-218 확인 칸. ▶ 검수장: MB-218(신설 + 15랜딩 횡단 + ru 후기 문구) · MB-211·215 검수장 몫 → MA 오면 다음 세션 안에 회신+등재.
 - 🪶 EN-먼저 동문 = queue §2-AP(AP-1 🔴 9-8-7 «유일한 동크 보드» 사실오류 · 14랜딩) — 자동 착수 금지·사장님 판단.
 - ⏸ S-034 승률 시뮬레이터 = 사장님 10-10 «조금 안정된 후에» — 자동 착수 금지.
 
@@ -26,7 +25,7 @@
 - ▶ **사장님 몫: GSC 수동 색인 요청 3개**(`/vi/calculator` · `/vi/hand-chart` · `/vi/solver`).
 - ▶ 솔버: MB-211 요청 1(`LOCALE_PATHS` vi → `/vi/solver`) + 통지(앱 `presets.ts` lessonVi ④⑦⑧ 옛 명제) → S-행 오면 ACK. ▶ 검수장: MB-211(신설 + 기존 랜딩 13 횡단) 결과 MA 오면 다음 세션 안에 회신+등재.
 - 🪶 자동 착수 금지: EN 솔버 랜딩 동문 8건 = `docs/en-first-queue.md` §2-AL(vi만 AL-1·2 선반영 · 판정 뒤 EN → 13로케일) · GTO 13편·strategy 등이 vi로 발행되면 랜딩 SPOT_GROUPS `slug`·결과 화면 문단 링크 채우기(🅶 머지 회차).
-- `/ru/solver` = ▶ 맨 위 절(배포 마감 대기).
+- `/ru/solver` = ✅ 10-10 배포(맨 위 절).
 - 📬 후기창 사전: S-042(tr)·S-044(vi) ✅ 10-09 (6) · S-048(ru · `feedbackLabels.ru` 619행~ · `appLabels.ru` 787행~ · 참고자료 `전달_ru_포커용어_참고자료_2026-10-09.md`)은 `/ru/solver` 회차에(설정·SQL 제약·랜딩 같이).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ fr 클러스터 51편 — ✅ 배포 (10-07 (13) `ceed9c0d` · MB-199) · 정본 `docs/fr-cluster-plan.md`

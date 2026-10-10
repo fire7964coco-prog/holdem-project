@@ -40,7 +40,7 @@
 
 산출: 뱅크 1개 + 핸드오프 «회차 B 첫 지시문». 글·코드 변경 0.
 
-### 회차 B — 작성 · 등록 · 검수 · 배포 (playbook 7~12단계)
+### 회차 B — ✅ 2026-10-10 배포 `3814bcfc` · MB-218 (WORKLOG 10-10 (3))
 
 1. 앱 ru 축어 재추출 → `docs/solver-app-verbatim-ru-<날짜>.md`(vi 꼴 · MA-384 정정분 반영된 라이브 기준)
 2. 3파일 `app/ru/solver/{page,solver-client,faq}.tsx` — vi 구조 복제 + 뱅크 §7 조준안 · 숫자 = ru 서식(`1 326` · `2,5` · `35,4%` 붙임) · ты체(솔버와 일치) · 수치 정본 = `docs/gto-solver-series-spec.md` §4-B(앱 화면 아님)
