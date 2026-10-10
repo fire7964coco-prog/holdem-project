@@ -1,3 +1,8 @@
+## 2026-10-10 (9) — vi 레인 워크트리 정리 · 우편함 MB-224
+
+- 워크트리 `Holdem-vi-{gloss,gto,head,prob,rank,rules,strat,tour}` 8개 제거: 전 브랜치 main 조상 확인 · 미커밋 = rank·tour `tsconfig.tsbuildinfo`(빌드 산출물)뿐 · node_modules 정션 `rmdir` 후 `worktree remove --force` · vi-head `.env.local` 폴더째 삭제 · 브랜치 보존 · 본 레포 node_modules 무사.
+- 우편함: MA-414(MB-222 OK) · MA-416·417(원장 정리 종결 · 요청 0) · S-063(솔버 S-060~062 라이브) → MB-224 ACK. 라이브 확인 = Playwright ru-RU: 번들 `dcfbecf6` · `lang=ru` · 소개 링크 `/ru/solver` · 후기창 «Как тебе солвер?». note3bet 새 문장은 본체 랜딩·verbatim 문서에 수록 자리 0(grep) → 교체 없음.
+
 ## 2026-10-10 (8) — vi 클러스터 51편 배포 회차(§4-C) · `/vi/glossary` 신설 · MB-223
 
 - 🅶 `harden-vi-gto`(`a5dd9cfe`) → `vi-integration` ff → main 머지(문서 3커밋) → 배포 `6b76c650`(main ff · push).

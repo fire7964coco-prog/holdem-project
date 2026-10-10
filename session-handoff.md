@@ -1,13 +1,13 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-10 (8) (vi 51편 + `/vi/glossary` 배포 `6b76c650` · MB-223 · queue §2-AS) · 그 전 (7) (MA-412·413 회신+이행 · PDF 4자리 · MB-222 · queue §2-AR) · 그 전 (6) (MA-411 착수 공지 ACK MB-221) · 그 전 (5) (§2-AQ (a) 배포 · MB-220) · 그 전 (4) (우편함 MB-219 · queue §2-AQ) · 그 전 (3) (`/ru/solver` 배포 `3814bcfc` · MB-218) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
+> 갱신: 2026-10-10 (9) (vi 레인 워크트리 8개 제거 · 우편함 MB-224 = MA-414·416·417·S-063 ACK) · 그 전 (8) (vi 51편 + `/vi/glossary` 배포 `6b76c650` · MB-223 · queue §2-AS) · 그 전 (7) (MA-412·413 회신+이행 · PDF 4자리 · MB-222 · queue §2-AR) · 그 전 (6) (MA-411 착수 공지 ACK MB-221) · 그 전 (5) (§2-AQ (a) 배포 · MB-220) · 그 전 (4) (우편함 MB-219 · queue §2-AQ) · 그 전 (3) (`/ru/solver` 배포 `3814bcfc` · MB-218) · 그 전 (2) (회차 A 뱅크 ✅) · 그 전 2026-10-09 (8) (복기 링크 ko 1자리 `5f37b2bd` MB-214 · (7) 우편함 MB-213 = S-050·MA-385 ACK · /admin 후기 탭 수정 `025a5d86` · 그 전 (6) 솔버 후기창 코드 1 라이브 `5ac5d755` MB-212 · 그 전 (5) `/vi/solver` 신설·배포 `29316681` MB-211 · 렌즈 4종+아스트라 · queue §2-AL · 대청소 — 이전본 전문 = `docs/handoff-archive/2026-10-09-5-session-handoff-full.md` · 그 전 = `2026-10-08-5-…` · `2026-10-07-17-…` · `2026-10-06-14-…`). 경위는 전부 `WORKLOG.md`(최상단부터). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + 워크트리 status(`git worktree list`).
 > 🔴 **작업 주체**: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4(규칙 41편·Q8-a PT·086161eb는 09-22 마감 — 그 «남음» 칸은 낡았다).
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ `/ru/solver` ✅ 배포 (10-10 (3) `3814bcfc` · MB-218) · 판정 회신 ✅ (10-10 (4) MB-219)
 
 - ▶ 사장님: GSC 수동 색인 `/ru/solver`.
-- ✅ 솔버 S-060(`7c24104` LOCALE_PATHS.ru · ru 후기창 해제 · **운영 반영 전**) → 라이브 번들 알림 S-행 오면 `?lang=ru` 한 번 확인.
-- ✅ 검수장 MA-403·406·408 → **queue §2-AQ** · ✅ (a) 6자리 이행 배포 10-10 (5) MB-220. ✅ 검수장 대조 MA-412 전부 OK · 주석 1 이행 · MA-413(shc 3종 WRONG 0) PDF 4자리 이행 → **MB-222 변경 줄 전/후 대조 MA 대기** · 통지 3 = queue §2-AR 🪶(EN FAQ L280 «about 2 points» EN-먼저 후보 · 자동 착수 금지) · ✅ 솔버 S-061(`4f4ace0` image_type 재복사 · 배포 전 · S-060과 같은 묶음) → 라이브 번들 알림 오면 `?lang=ru` 후기창 한 번 확인.
+- ✅ 솔버 S-060·S-061 라이브(S-063) · `?lang=ru` 후기창 확인 = MB-224.
+- ✅ 검수장 MA-403·406·408 → **queue §2-AQ** · ✅ (a) 6자리 이행 배포 10-10 (5) MB-220. ✅ 검수장 대조 MA-412 전부 OK · 주석 1 이행 · MA-413(shc 3종 WRONG 0) PDF 4자리 이행 → **MB-222 전/후 = MA-414 OK** · 통지 3 = queue §2-AR 🪶(EN FAQ L280 «about 2 points» EN-먼저 후보 · 자동 착수 금지)
 - 🪶 (b) EN-먼저 솔버 랜딩 9자리(§2-AQ (b) = §2-AL AL-3~8 + X-1~3 · §2-AP 합본 · AP-1 🔴 «유일한 동크 보드» 포함) → 14로케일 — 자동 착수 금지·사장님 판단.
 - ⏸ S-034 승률 시뮬레이터 = 사장님 10-10 «조금 안정된 후에» — 자동 착수 금지.
 
@@ -16,7 +16,6 @@
 - ▶ **사장님 몫: GSC 수동 색인 39** = `/vi/glossary` + `/vi/blog/` 38(fr §4-C ⑧ 슬러그 · GTO 13 제외 · 필라 6편부터). 목록 = WORKLOG 10-10 (8).
 - ▶ 검수장 MB-223 요청 1(배포 해시로 vi 51 + glossary 사전 1회 판정) → MA 오면 다음 세션 안에 회신+등재.
 - 🪶 이월 = queue §2-AS(EN-먼저 AS-1~7 · 헤드 H-1 vi 이미지 · H-2 check-gto vi · H-3 verbatim 행) — 자동 착수 금지.
-- 🪶 정리 남음: 워크트리 `Holdem-vi-{rules,rank,prob,strat,tour,gloss,gto}` + `Holdem-vi-head`(미커밋 확인 먼저 · node_modules 정션은 `rmdir` · vi-head `.env.local` 같이 삭제) — 브랜치는 보존.
 - 🔴 S-043(vi 928 문구 판정)은 검수장 진행 중 — 라벨이 바뀌면 verbatim 문서·`/vi/solver`·🅶 13편을 같이 한 줄 교체.
 - ▶ 검수장 대기: MB-208·209 변경 줄 재판정 + ⚖ 결재 2(strategy call 문장 · MA-368 형제 갈림 6자리) + FR 🅴 tour 회차 MA → 오면 다음 세션 안에 회신+등재.
 
