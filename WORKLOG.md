@@ -1,3 +1,15 @@
+## 2026-10-10 (8) — vi 클러스터 51편 배포 회차(§4-C) · `/vi/glossary` 신설 · MB-223
+
+- 🅶 `harden-vi-gto`(`a5dd9cfe`) → `vi-integration` ff → main 머지(문서 3커밋) → 배포 `6b76c650`(main ff · push).
+- 헤드 판정(gto-진행 «C 판정 요약»): ② donk faq −1 = 의도(`locale-intentional-diffs` 등재) · ③ check-gto vi·① vi 이미지·④ verbatim 행 = 이월(queue §2-AS H-1~3) · 보류 2 = 산문 흡수 기각(볼륨 10) · 3bet-low «ace-high» 유지 · EN-먼저 후보 = §2-AS AS-1~7.
+- ① `/vi/glossary`(서브에이전트 작성 · 헤드 검토): 46용어 · 글 축어 42 + 번역 4 · 링크 3(nuts·ICM·check-raise) · seo title «Thuật ngữ poker A–Z» · 등록 4곳(hreflang vi-VN · hub-routes · side-rail · sitemap). «tố»·«mù»는 aka(검색 키)에만 — 화면 표제·정의엔 없음(tr «pas» 선례).
+- ② 계산기: 계획은 «quickRef 4»라 적었으나 EN 대응 그대로 6링크(fr 선례 · ①표 → probability ②AA vs N → equity 등 — 계획의 매핑은 EN과 달랐다) + deal → holdem-icm + related EN 8 · hand-chart related EN 4글 + 계산기. calc-parity 14/14.
+- ③ `VI_CLUSTERS` + `GTO_SERIES_I18N.vi`(랜딩 SPOT_GROUPS 축어 대조 스크립트로 확인) · `/vi/solver` slug 13 + 결과 문단 equity·c-bet + strategy 행 복원.
+- ④ date: 10-09로 찍힌 신규 30편 → 10-10(🅶 13은 이미 10-10) · 기존 8편 원래 date.
+- 게이트: audit vi 51 🔴0 · check:structure vi 🟠1(donk 등재분) · build exit 0 · sitemap vi 51 · hreflang 0건.
+- 사장님 GSC 수동 색인 39(필라 6편이 맨 앞): `/vi/glossary` · `/vi/blog/texas-holdem-rules-for-beginners` · `/vi/blog/holdem-hand-rankings` · `/vi/blog/holdem-probability` · `/vi/blog/holdem-strategy` · `/vi/blog/holdem-tournament` · `/vi/blog/holdem-glossary` · `/vi/blog/holdem-3bet` · `/vi/blog/holdem-all-in-rules` · `/vi/blog/holdem-bad-beat` · `/vi/blog/holdem-betting-actions` · `/vi/blog/holdem-blind-meaning` · `/vi/blog/holdem-bubble` · `/vi/blog/holdem-card-counting` · `/vi/blog/holdem-continuation-bet` · `/vi/blog/holdem-cooler` · `/vi/blog/holdem-drawing-odds` · `/vi/blog/holdem-equity` · `/vi/blog/holdem-fish` · `/vi/blog/holdem-flush-vs-straight` · `/vi/blog/holdem-game-order` · `/vi/blog/holdem-icm` · `/vi/blog/holdem-implied-odds` · `/vi/blog/holdem-kicker` · `/vi/blog/holdem-limping` · `/vi/blog/holdem-outs` · `/vi/blog/holdem-position-play` · `/vi/blog/holdem-positions` · `/vi/blog/holdem-pot-odds` · `/vi/blog/holdem-rake` · `/vi/blog/holdem-reading-the-board` · `/vi/blog/holdem-short-stack` · `/vi/blog/holdem-showdown-rules` · `/vi/blog/holdem-split-pot-rules` · `/vi/blog/holdem-starting-hands-chart` · `/vi/blog/holdem-straddle` · `/vi/blog/holdem-tiebreak-rules` · `/vi/blog/holdem-tournament-vs-cash-game` · `/vi/blog/holdem-when-to-fold`.
+- 정리(사장님 승인): `../Holdem-solver-reviews` 워크트리 제거(node_modules 정션 rmdir 먼저) · 브랜치 `solver-reviews-code1`·`-pre-rebase` 삭제.
+
 ## 2026-10-10 (7) — 우편함 MA-412·413 회신+이행 · PDF 4자리 · MB-222
 
 - MA-412 요청 1: `spot-share-i18n.ts` L93 ru 주석 정정(화면 0).
