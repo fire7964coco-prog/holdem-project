@@ -1,3 +1,11 @@
+## 2026-10-10 (14) — queue §2-AS H-1~3 · vi 솔버 이미지 26장 · GTO 게이트 vi · 축어 행 · MB-229
+
+- 사장님 «queue §2-AS H-1~3 진행». fr 선례 `9d3e0a9a` 절차 그대로.
+- H-1: `capture-solver-spots` L10N vi(축어 문서 §1·§4) → 라이브 13/13 · 수치 de·hi 캡처와 26/26 일치 · `make-solver-range-charts` vi(Thành phần range · Equity realization (EQR) · không tính rake · 소수 쉼표 · 2단 제목) → q82 26장 24~101KB · Read 육안 3장(monotone·3bp-ace-king ranges · sb-connected oop) · vi 14파일 89자리 `-en` → `-vi` + 머리 주석 7 · image-dims 834장.
+- H-2: `check-gto-numbers` vi 소수 쉼표 정규화(셀프 42/42) → vi 일치 88 · 🔴 3 = fr·de와 같은 기존 3건(broadway 23.7 = EN 형제 인용 · 3bet-pot-cbet 7.6 · bet-sizing 37.6·95.9 = ko «A~B%» 앞 숫자 미검사 — 이 게이트가 원래 못 보는 자리라 vi 결함이 아니다). `check-gto-structure` vi 규칙(Trả lời nhanh · Đọc tiếp · N phút · 마침표 소수 — 셀프 27/27) → 11/13 ✔ · donk·low-board ✘ = `locale-intentional-diffs` 10-10 VI 행 ①②(③ 이미지 갱신).
+- H-3: `docs/solver-app-verbatim-vi-2026-10-09.md` §4 그룹별 플레이어 라벨(3-bet «OOP (BB (bên 3-bet)) / IP (BTN (bên call))» · BvB «OOP (SB (bên open)) / IP (BB (bên call))») + §6 커버리지 행.
+- 게이트: audit:hard vi 51/51 🔴 0 · check:images ✅ · image-reuse 🔴 0 · image-dims ✅ · build exit 0(74 blog posts).
+
 ## 2026-10-10 (13) — queue §2-AS AS-1~7 · GTO 시리즈 EN 9자리 → 13로케일 · 배포 `006bc898` · MB-228
 
 - 사장님 «진행해». EN 9자리(AS-1~7) 헤드 직접 → 로케일 서브에이전트 3(ko·ja·zh·zh-hant / es·pt·de·fr / id·ms·vi·hi·tr) + 헤드 대조. 서브가 범위 밖 동형 발견 → EN k-high FAQ L218 «wins the pot more often» → «slightly bigger share of the pot than on A-7-2» + 로케일 8 · ko «승률 지분» 3.

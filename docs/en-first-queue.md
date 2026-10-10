@@ -734,7 +734,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ 10-10 (12) `dbb115cc` MB-227 — EN + 10로케일 «about 2–3 points». 원 항목: **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
 - 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
 
-### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · ✅ AS-1~7 이행 10-10 (13) `006bc898` MB-228(EN → 13로케일 · AS-7 paired H2 링크 = 유지 판정) · H-1~3 미결
+### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · ✅ AS-1~7 이행 10-10 (13) `006bc898` MB-228(EN → 13로케일 · AS-7 paired H2 링크 = 유지 판정) · ✅ H-1~3 이행 10-10 (14) MB-229
 > 출처 = `docs/vi-lanes/gto-진행.md` «EN-먼저 후보»·«헤드 요청»(🅶 C · `a5dd9cfe`). vi는 정정 뜻으로 이미 썼다(EN과 의도적으로 다름) — EN을 고치면 13로케일 전파.
 - AS-1 `k-high-board-cbet` EN L159 «Equity is how often you win the pot» — 무승부 지분 누락(equity ≠ 승률) · 아스트라.
 - AS-2 `paired-board-strategy` EN L215 «more than its winning percentage is worth» — EQR 기준은 equity · 네이티브·아스트라.
@@ -743,7 +743,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - AS-5 `ace-paired-board-strategy` EN L188 «the player betting first has more» → «acting first»(6-6-3 열 BB는 3%만 bet) · 네이티브.
 - AS-6 `3bet-pot-low-board` EN L172 캡션 «trips only on the button» ↔ 같은 글 «read it as a set»(무페어 보드) · 네이티브.
 - AS-7 (하) `3bet-pot-cbet` EN L141 Checked «①–⑦ 2026-08-20» ↔ blind-battle-cbet «①–④ 08-19 · ⑤–⑦ 08-20» · `monotone-board-strategy` EN L159 «33 made-flush combos» = BB 레인지 수치 · `k-high-board-cbet` EN L147 «none of it» ↔ «four hands» · `paired-board-strategy` EN L278 H2 안 링크(SEO).
-- 헤드 이월(vi 고유 · 배포를 막지 않음): H-1 vi 캡처·차트 생성 후 13편 `gto-*-en.webp` → `-vi` 교체(현재 0장) · H-2 `scripts/check-gto-numbers.mjs`·`check-gto-structure.mjs`에 vi 추가(미지원 — 🅶은 scratchpad 전사 대조로 대신했다) · H-3 `docs/solver-app-verbatim-vi-2026-10-09.md` §4에 BvB «OOP (SB (bên open))»·3-bet «IP (BTN (bên call))» 행 추가.
+- ✅ 헤드 이월 이행(10-10 (14)): H-1 = 라이브 vi 캡처 13/13(수치 de·hi와 26/26 일치) → `gto-*-{oop,ranges}-vi.webp` 26장 q82(24~101KB) · vi 14파일 89자리 `-en` → `-vi` · H-2 = `check-gto-numbers` vi 소수 쉼표(셀프 42/42 · vi 🔴 3 = fr·de와 같은 기존 3건: broadway 23.7 EN 형제 인용 · ko 범위 앞 숫자 7.6·37.6·95.9) + `check-gto-structure` vi 규칙(셀프 27/27 · 11/13 ✔ · donk·low-board ✘ = `locale-intentional-diffs` 10-10 VI 행) · H-3 = 축어 문서 §4 그룹별 플레이어 라벨 행.
+- (이행 전 원문) 헤드 이월(vi 고유 · 배포를 막지 않음): H-1 vi 캡처·차트 생성 후 13편 `gto-*-en.webp` → `-vi` 교체(현재 0장) · H-2 `scripts/check-gto-numbers.mjs`·`check-gto-structure.mjs`에 vi 추가(미지원 — 🅶은 scratchpad 전사 대조로 대신했다) · H-3 `docs/solver-app-verbatim-vi-2026-10-09.md` §4에 BvB «OOP (SB (bên open))»·3-bet «IP (BTN (bên call))» 행 추가.
 - 헤드 판정으로 닫은 것(10-10): donk FAQ −1 = 의도(`locale-intentional-diffs` 등재) · 산문 흡수 wet/paired/texture = **기각**(볼륨 10 · §3-C 소유 밖) · 3bet-low «ace-high» 풀네임 = **유지**(tldr 확정 카피 연동) · X5 기메 인용·readnext a-high→position = 형제 vi 관행 유지.
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
