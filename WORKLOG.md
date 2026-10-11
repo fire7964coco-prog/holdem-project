@@ -1,3 +1,9 @@
+## 2026-10-11 (4) — queue §2-AU 남김 EN 동형 5자리 → 13로케일 · 배포 `5f22c51a` · MB-235
+
+- 사장님 «1순위 이어서». EN 5자리 헤드 직접(같은 글 문면 재사용 · TDA 2024 Rule 19 «To play the board, players must table all hole cards to get part of the pot» 축어 확인) → 로케일 서브 3.
+- 게이트: audit:hard 14로케일 🔴 0(🟠 = 기존 C2 es 1 · de 1 · zh 1 · zh-hant 4) · 추가 줄 백틱 0 · build exit 0(74 + 729).
+- 🪶 남김(자동 착수 금지): hand-rankings L83 보드 로열 «get as many chips in»(레이크) · ko split 오드칩 «무늬로 가리지 않음» 단정 ↔ EN 하우스 예외 · ko flush «더 높은 무늬 카드» 표현 · zh kicker 바로답 L166·zh-hant 본문 L125 «보드 플레이 = 평분»(바로 아래 예시에 공개 조건 있음) · zh tiebreak L152 바로답 · ja kicker FAQ L180 «並べば» · ar Stud «الرزمة» 네이티브 확인 · §2-AU 통지 2(vi 단독).
+
 ## 2026-10-11 (3) — queue §2-AU 통지 1 EN-먼저 13자리 → 13로케일 · 배포 `3ec21aaf` · MB-234
 
 - 사장님 «진행해»(§2-AU 통지 1 추천안). 근거 = 검수장 `reports/검수-vi-r2-rank-2026-10-10/hq-reverify/` HQ-REPORT §6 + Astra 6편 리포트(EN 동형 축어).
