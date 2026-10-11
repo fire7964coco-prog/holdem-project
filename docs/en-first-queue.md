@@ -810,7 +810,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = when-to-fold 체크리스트 «Passive players and big river raises are value — believe them»(«usually» 탈락) · when-to-fold FAQ «far more than a fifth»(20–25%와 경계) · strategy «beats almost every casual game» · shc tldr «about 15–20% … is profitable»(«across a session» 한정 탈락) · shc «raising and re-raising with AK stays correct» · when-to-fold «Beat the pot odds threshold or fold»(implied odds 예외 탈락) · position-play «position, not card strength, funds that gap» · 3bet «leading every street» · limping «worst seat in the house» **통지 2 vi 단독** = when-to-fold L91 «Nếu bạn không muốn tính nhẩm ở bàn, máy tính pot odds cho ra ngưỡng ngay»(테이블 중 계산기로 읽힘 · EN 없음) · c-bet tldr EN 괄호절 «(as the out-of-position 3-bettor …97% …)» 부재 · position-play L186 «sẽ bet»(EN «expect»).
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. 🟠 MB-233·234·236·237 전/후 대조는 검수장 별도 회차(MA-425 착수 공지).
 
-### 2-AX. 우편함 수신분 — MA-426 (MB-225·226·227·228·231 이행 전/후 재판정 · 기준 `8fb1e28b`) · 등재·회신 2026-10-11 (13) MB-246 · 미이행
+### 2-AX. 우편함 수신분 — MA-426 (MB-225·226·227·228·231 이행 전/후 재판정 · 기준 `8fb1e28b`) · 등재·회신 2026-10-11 (13) MB-246 · ✅ AX-1 이행 `257f1220` MB-251
 
 > 근거 = 검수장 `reports/2026-10/검수-MB225-231-이행-2026-10-11.md`(재판정 236 · 신설 115 · 삭제 3 · 회귀 🆕 52 = 전부 옛 문면 소거 신호). 위치 대조 = 현 main `378d35ad`.
 

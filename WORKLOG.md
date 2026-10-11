@@ -1,3 +1,9 @@
+## 2026-10-11 (16) — queue §2-AX AX-1 이행(솔버 랜딩 3벳 로우 보드 note 9로케일) · 배포 `257f1220` · MB-251 · 한도로 마감
+
+- 사장님 «이어서 해»(EN-먼저 묶음). 실행 시작 17:14 → 18:18에 64분째라 AUTONOMY-LIMITS 90분 안에 끝나는 최소 단위 AX-1만 하고 마감.
+- AX-1: EN «it is gutshots and backdoors» → «the rest is almost all gutshots and backdoors» + 8로케일 동형(정확히 1자리씩 치환 확인). build exit 0(74 + 729).
+- 남김(다음 세션): AW-5(strategy FAQ «fold quickly when you miss» EN → 13로케일) · AY-5~8(bad-beat 결론 · rake FAQ 승자 부담 · straddle «whole reason» · 사전 hero 전칭 → 13로케일) · vi 고유 AW-1~4 · AY-1~4 · AZ-1~2.
+
 ## 2026-10-11 (15) — 우편함: MA-436·437 이행(배포 `85b99efe` · MB-249) · MA-427·429 등재(queue §2-AY·§2-AZ) · ACK 4 · MB-250
 
 - 사장님 «우편함 확인해».
