@@ -820,7 +820,34 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(자동 착수 금지): ① EN straddle 정의문 «A straddle is an optional blind bet» ↔ 같은 글 «usually optional (… mandatory)» ② vi beginners «phần lớn cùng dùng một thứ hạng» UNV ↔ EN hand-rankings «Mostly yes»(형제 잣대 후보 · 라벨 불변) ③ es·EN low-board «mostly with draws» UNV(레이즈 구성 ~40콤보 미집계 — 캡처 구성표 있으면 OK 가능) ④ 범위 밖 = 로케일 GTO 13편 원장 없음(§0-N 경량 트랙) · MB-229·S-064~066·MB-238~240 미처리.
 
-## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
+### 2-AY. 우편함 수신분 — MA-427 (VI 회차 5 🅵 gloss 6편 + /vi/glossary · 기준 `853c8e1e`) · 등재·회신 2026-10-11 (15) MB-250 · 미이행
+
+> 근거 = 검수장 `reports/검수-vi-r5-gloss-2026-10-11/hq-reverify/HQ-REPORT.md`(글 679행 OK 474 · RISKY 10 · WRONG 0 · UNV 195 + 사전 73행). 위치 대조 = 현 main `85b99efe`(ts 행). 처방 원칙 = 같은 글 정답 문면 재사용.
+
+| # | 글 | 자리(ts 행) | 처방 |
+|---|---|---|---|
+| AY-1 vi | holdem-glossary | L48 혼동표 «bạn là favorite (bên có cơ hội thắng cao hơn)» — EN «a **big** favorite» 탈락 | 같은 글 정의표 «favorite lớn»·FAQ «áp đảo» |
+| AY-2 vi | holdem-glossary | L318 vi 추가 FAQ «small blind … ngay bên trái nút dealer» — 헤즈업 예외 없음 | 같은 글 블라인드 표 «Với từ ba người trở lên … Khi heads-up, SB ở nút dealer» |
+| AY-3 vi | holdem-bad-beat | L8 tldr «ở cuối»·«ở lá cuối» — 역전 카드를 마지막 장으로 좁힘 | 같은 글 «ở flop, turn hay river»·runner-runner |
+| AY-4 vi | holdem-rake | V1 4자리(L105 rakeback 본문 · FAQ cap · FAQ 홈게임 «poker rẻ nhất» · L189 요약) — 합법 장소·연령·관할 한정 없음 · EN 관할 FAQ가 vi에서 대체돼 한정 소실 | 🅰 MA-420 이행 틀(한정 추가 또는 권유 삭제 · Nghị định 282/2025 Điều 36) |
+| AY-5 🔴 EN-먼저 | holdem-bad-beat | EN L209 결론 «… the deck's cruelty becomes your profit» — 같은 글 «as long as it really was good (…ICM…)» 한정 탈락 | 한정 복원 → 13로케일 |
+| AY-6 🔴 EN-먼저 | holdem-rake | EN FAQ L148 «Rake is pulled straight from the pot, so on paper the player who wins the hand pays it» — time charge·dead drop 반례(WSOP 2026 B 31) | 같은 글 «In most cash games it's a percentage of the pot» 범위로 → 13로케일 |
+| AY-7 🔴 EN-먼저 | holdem-straddle | «which is the whole reason it's usually a bad idea» ↔ 같은 글 «Three reasons»·«one of the main reasons» | «one of the main reasons» 꼴 → 13로케일 |
+| AY-8 🔴 EN-먼저 | 사전(/glossary · `lib/posts-en/holdem-glossary.ts` 등 13로케일 공통) | hero «Every Texas Hold'em term you'll hear at the table» — 46용어(straddle·squeeze·4-bet·donk bet 표제 없음) | 전칭 완화 → 13로케일 |
+
+- 🪶 통지(자동 착수 금지): straddle «Only in specific spots»·FAQ «defensible only …»(헤지로 OK) · fish 요점 «everyone else profits from»(형제 OK) · 사전 vi Board «Năm lá bài chung»(플랍 3장도 board) · cooler 복기 yes 가지 = MA-327 결재 A 사유 해소 확인.
+
+### 2-AZ. 우편함 수신분 — MA-429 (VI 🅶 GTO13 경량 트랙 · 기준 `378d35ad`) · 등재·회신 2026-10-11 (15) MB-250 · 미이행
+
+> 근거 = 검수장 `reports/검수-vi-gto13-경량-2026-10-11/REPORT.md`. EN 정정 39자리 = 반영 35 · EN 동형 4 · vi 결함 잔존 0. 위치 대조 = 현 main `85b99efe`.
+
+| # | 글 | 자리(ts 행) | 처방 |
+|---|---|---|---|
+| AZ-1 vi | 3bet-pot-bet-sizing | L16 tldr «Size nhỏ chỉ được 0,7% và check 0,8% — cộng lại chưa tới một combo trong 73» — 원시 0,600 + 0,529 = 1,13콤보 · 같은 글 L63 «chia nhau 1,1 combo»와 자기모순 | 같은 글 L63 수치(«khoảng 1,1 combo») 또는 EN «barely one» 뜻 |
+| AZ-2 vi | 3bet-pot-low-board L165 · ace-paired-board-strategy L185 · blind-battle-cbet L205 · blind-battle-connected-board L210 | «… mọi tính năng đều dùng được khi không đăng nhập» — 전칭(오늘의 문제 순위·저장 목록 동기는 로그인 필요) + 동기 대상 한정 탈락 | vi 랜딩 «đăng nhập thì đồng bộ lịch sử Spot mẫu và Thử thách hôm nay»(EN 문장 범위) 재사용 |
+
+- 🪶 통지(라벨 불변): k-high L119 equity 풀이 조건 생략(선택) · EN 손질 참고 = ace-paired «about 44% · about 27%» ↔ 원시 44,9%·25,9% · k-high «folds overcards» 예시(QJ·JT·T9) 용법.
+ (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
 - ✅ **종결(queue Q4-a · 2026-09-12)** — EN 경쟁 페이지 배타 주장 제거(`rake`·`tournament`·`3bet`·`straddle`·`ept`). 🔴 단 「most guides / almost every article」류 **완화형은 유지가 판정**이다(차별점 서술 · E-E-A-T 목소리 — 다시 지우자고 하지 마라).
