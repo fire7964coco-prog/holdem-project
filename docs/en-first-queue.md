@@ -869,7 +869,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(라벨 불변): 3bet-pot-cbet L67 «check tidak digunakan …» = OK(EN 꼴 복원은 재량) · low-board L138 «2026-08-20 · integer 16-bit · 12 thread»(EN 머리 주석 본문화) = UNV · AX-1 = ms 랜딩 해당 문장 없음 · MB-103 언어 질의 ⓐⓑⓒ = 13편 사용 0.
 
-### 2-BC. 우편함 수신분 — MA-449 (MS rules 묶음 1 · all-in·betting·blind · 기준 `aa607f72`) · 등재·회신 2026-10-11 (20) MB-257 · ✅ BC-1 + BC-2~4 EN·ms 이행 2026-10-11 (21) MB-258 · ▶ BC-2~4 형제 전파 남음
+### 2-BC. 우편함 수신분 — MA-449 (MS rules 묶음 1 · all-in·betting·blind · 기준 `aa607f72`) · 등재·회신 2026-10-11 (20) MB-257 · ✅ BC-1 + BC-2~4 EN·ms 이행 2026-10-11 (21) MB-258 · ✅ BC-2~4 형제 23로케일 2026-10-11 (22) `2e9bc644` MB-259
 
 > 근거 = 검수장 `reports/검수-ms-rules-묶음1-2026-10-11/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ms/` 3편. 274행 = OK 210 · RISKY 27 · WRONG 1 · UNV 36. 위치 대조 = 현 main `52a42c16`.
 
@@ -883,7 +883,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지(라벨 불변): all-in Kesilapan 3 «$80 daripada setiap pemain yang call» = OK · blind 요약 «raise atau fold dari Small Blind» = UNV(§0-F 10-07 SB 처방 통일) · MB-103 언어 소견 = 3편 혼동 문장 0.
 - 이행 MB 오면 검수장이 EN·형제 원장 재판정.
 - ✅ 10-11 (21) MB-258: BC-1 = all-in 10자리 + 표 아래 리밋 문장 + 한 칩 경고(EN 델타 동반) · betting 2 · blind 11 + «Tanpa blinds atau pertaruhan wajib lain»(EN 델타 동반) · ms `masterUpdated` 불변(앵커 이식만 · settled §1-C). BC-2~4 = EN + ms 이행.
-- ▶ **남음 = BC-2~4 형제 전파(별도 배치)**: BC-2 «Rule 103» 접두 = ar·bn·de·es·fa·fil·fr·he·hi·id·it·ja·pl·pt·ro·ru·sw·th·tr·uk·vi·zh·zh-hant(+ko 확인 · grep «103») — 각 로케일 기존 «WSOP … 90.a» 표기 꼴로 · BC-3 betting Mistake 3 «or straddled» · BC-4 all-in 표 2곳 «now faces less than a full bet or raise» 조건(EN 문면 = 이번 커밋).
+- ✅ 10-11 (22) `2e9bc644` MB-259: BC-2 21로케일(fa·he·ko 103 인용 없음) · BC-3·BC-4 23로케일 · updated 10-11. 아래는 당시 작업 지시(기록).
+- (완료) **BC-2~4 형제 전파**: BC-2 «Rule 103» 접두 = ar·bn·de·es·fa·fil·fr·he·hi·id·it·ja·pl·pt·ro·ru·sw·th·tr·uk·vi·zh·zh-hant(+ko 확인 · grep «103») — 각 로케일 기존 «WSOP … 90.a» 표기 꼴로 · BC-3 betting Mistake 3 «or straddled» · BC-4 all-in 표 2곳 «now faces less than a full bet or raise» 조건(EN 문면 = 이번 커밋).
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

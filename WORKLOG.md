@@ -1,3 +1,12 @@
+## 2026-10-11 (22) — queue §2-BC 남음 BC-2~4 형제 23로케일 전파 · 배포 `2e9bc644` · MB-259
+
+- 사장님 «queue §2-BC 남음(BC-2~4 형제 23로케일 전파) 진행해». 기준 EN 문면 = `f98be0ba`.
+- **BC-2** betting «Rule 103» → «WSOP Tournament Rule 103» 접두 = 21로케일(ar·bn·de·es·fil·fr·hi·id·it·ja·pl·pt·ro·ru·sw·th·tr·uk·vi·zh·zh-hant) · 각 로케일 기존 «WSOP … 90.a» 표기 꼴(예: es «regla 103 de torneos de la WSOP» · ja «WSOPトーナメントルール103» · zh «WSOP 锦标赛规则第 103 条»). fa·he·ko = 103 인용 없음(해당 없음).
+- **BC-3** betting Mistake 3 BB 무료 플롭 «raise 또는 straddle 없음» = 23로케일(로케일 straddle 표기: zh-hant 盲抓 · ru стрэддл · uk стредл · ja ストラドル · ar سترادل …).
+- **BC-4** all-in 표 1 «이미 행동했고 지금 풀 벳/레이즈 미만을 마주한 사람만 콜·폴드» + 가이드표 «단, 풀 벳/레이즈를 마주하면 예외(체크 뒤 누가 풀 벳)» = 23로케일(tr 표 1 괄호 보존).
+- 🪶 관찰(이번 범위 밖 · 미착수): 형제 대부분 all-in 표 머리 «(no-limit / pot-limit)»·리밋 문장 등 EN `6164c748` 델타도 미전파로 보임(ar·de·es·fr·id·ja·pt·vi·zh·zh-hant는 머리 있음 · bn·fa·fil·he·hi·it·pl·ro·ru·sw·th·tr·uk 없음) — BC-1은 ms 한정 처방이었다. 검수장 레인이 로케일별로 오면 같이.
+- 스탬프 `updated` 10-11 · `masterUpdated` 불변. 게이트: audit:hard 23로케일 전편 🔴 0 · schema 23로케일 일치(zh-hant 🟠 C2 tmt↔taiwan = 기존) · build 74 + 729.
+
 ## 2026-10-11 (21) — queue §2-BB·§2-BC 이행(ms 고유 + EN-먼저 EN·ms) · 배포 `f98be0ba` · MB-258
 
 - 사장님 «진행해». posting.mdc 필독(tldr 평문·백틱·굵은 단락 중첩) 후 착수.
