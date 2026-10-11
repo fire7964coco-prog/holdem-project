@@ -184,6 +184,8 @@ export interface QuizUI {
   quizHandSummary: (avgErr: string, hits: number, decisions: number, points: number) => string;
   /** 꺾은선의 «내 짐작» 선 */
   quizGuessLegend: string;
+  /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
+  resultTabs: readonly [string, string, string];
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -460,6 +462,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [street, setStreet] = useState(0);
   const [reveal, setReveal] = useState(false);
   const [showRule, setShowRule] = useState(false);
+  /** 결과 화면 탭 — 패널을 아래로 쌓지 않고 한 번에 하나만 보여 준다(사장님 10-11 «스크롤만 계속») */
+  const [resultTab, setResultTab] = useState<"review" | "chart" | "street">("review");
   /**
    * 퀴즈 모드 (S-034 ③) — 기본은 꺼짐(지금의 «끝까지 보고 복기» 흐름 그대로).
    * 켜면 스트리트마다 승률·판정을 가린 채 짐작을 먼저 받는다. 답은 판마다(answers).
@@ -624,6 +628,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const cardsUp = (reveal && !quizPending) || showdown;
   // 판이 끝났다(리버까지 또는 상대 전원 폴드) — 짐작한 판이면 계정에 올린다
   useEffect(() => { if (isEnd) closeHand(); }, [isEnd, closeHand]);
+  useEffect(() => { if (isEnd) setResultTab("review"); }, [isEnd]);
 
   const submitGuess = (choice: "call" | "fold" | null) => {
     if (!rec || answer) return;
@@ -864,6 +869,42 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     </div>
   );
 
+        {/* 퀴즈 누적 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(«내 기록» 회차 C).
+            폰에서는 짐작하는 동안 숨긴다 — 그 한 줄이 팟오즈 줄을 고정 버튼 밑으로 민다 */}
+  const quizLine = quiz && (() => {
+          const t = shownTotals ?? EMPTY_TOTALS;
+          return (
+            <div className={`${quizPending ? "hidden lg:block" : "block"} mt-2 pt-1.5 border-t border-white/10`}>
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-[10.5px] text-white/55 tabular-nums">
+                  {ui.quizStats({
+                    hands: t.hands,
+                    avgErr: t.guesses ? (t.errSum / t.guesses).toFixed(1) : "—",
+                    hits: t.hits, decisions: t.decisions, points: t.points,
+                  })}
+                </span>
+                {auth === "out" && t.guesses > 0 && (
+                  <button onClick={resetLocal} className="text-[10px] text-white/40 underline shrink-0">
+                    {ui.quizReset}
+                  </button>
+                )}
+              </div>
+              {/* 권유 한 줄 — 기록이 생긴 사람에게만 · 팝업·반복 요청 없음(설계 §0-3 · §2-2) */}
+              {auth === "out" && t.hands >= 1 && (
+                <p className="text-[10.5px] text-white/50 leading-snug mt-1">
+                  {ui.quizInvite}{" "}
+                  <a href={loginHref(pathname || "/win-rate-quiz")} className="underline font-bold whitespace-nowrap" style={{ color: GOLD }}>
+                    {ui.quizInviteLink}
+                  </a>
+                </p>
+              )}
+            </div>
+          );
+  })();
+  /** 판이 끝난 화면 — 결과 머리 + 탭(복기 · 승률 흐름 · 마지막 스트리트) */
+  const endView = isEnd && !!result;
+  const showStreet = !endView || resultTab === "street";
+
   return (
     <>
       <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
@@ -955,6 +996,43 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* ── 우: 승률·팟오즈·산출근거·버튼 전부 ── */}
       <div>
 
+      {/* ── 판이 끝났다: 결과 + 새 판 버튼을 맨 위에, 나머지는 탭 하나씩 ──
+          ★2026-10-11 사장님: 결과를 보면 오른쪽 칸만 아래로 쌓여 스크롤만 계속해야 했다
+            (승률 → 팟오즈 → 결과 → 복기 → 꺾은선 → 버튼 → 산출 근거). 버튼이 맨 아래라 새 판도 스크롤해야 눌렸다. */}
+      {endView && result && (
+        <div className="mb-2">
+          <div className="flex flex-col gap-2 mb-2">
+            <motion.div initial={false} animate={{ opacity: 1 }} className="rounded-xl px-4 py-2 border-2 text-center"
+              style={{ borderColor: `${GOLD}66`, background: `${GOLD}0d` }}>
+              <div className="font-black text-base text-foreground">🏆 {resultLabel}</div>
+            </motion.div>
+            <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
+              <button onClick={newHand}
+                className="w-full py-3 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none"
+                style={{ background: GOLD }}>
+                {ui.newHandBtn}
+              </button>
+            </div>
+          </div>
+          {!showStreet && quizLine && (
+            <div className="rounded-xl px-4 py-1.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>{quizLine}</div>
+          )}
+          <div role="tablist" className="grid grid-cols-3 gap-1 p-1 rounded-xl" style={{ background: "hsl(var(--muted))" }}>
+            {(["review", "chart", "street"] as const).map((k, i) => (k === "chart" && !chartSeries) ? <span key={k} /> : (
+              <button key={k} role="tab" aria-selected={resultTab === k} onClick={() => setResultTab(k)}
+                className="py-2 rounded-lg text-[12px] font-bold transition-colors whitespace-nowrap"
+                style={resultTab === k
+                  ? { background: "hsl(var(--background))", color: "hsl(var(--foreground))", boxShadow: "0 1px 3px rgba(0,0,0,0.12)" }
+                  : { color: "hsl(var(--muted-foreground))" }}>
+                {ui.resultTabs[i]}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showStreet && (<>
+
       {/* ── 내 승률 ──
           퀴즈에서 답을 내기 전에는 같은 자리에 짐작 슬라이더를 둔다(카드 높이를 비슷하게 맞춰 폰 첫 화면을 지킨다) */}
       <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
@@ -1044,38 +1122,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         )}
         </>
         )}
-        {/* 퀴즈 누적 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(«내 기록» 회차 C).
-            폰에서는 짐작하는 동안 숨긴다 — 그 한 줄이 팟오즈 줄을 고정 버튼 밑으로 민다 */}
-        {quiz && (() => {
-          const t = shownTotals ?? EMPTY_TOTALS;
-          return (
-            <div className={`${quizPending ? "hidden lg:block" : "block"} mt-2 pt-1.5 border-t border-white/10`}>
-              <div className="flex items-center justify-between gap-2">
-                <span className="text-[10.5px] text-white/55 tabular-nums">
-                  {ui.quizStats({
-                    hands: t.hands,
-                    avgErr: t.guesses ? (t.errSum / t.guesses).toFixed(1) : "—",
-                    hits: t.hits, decisions: t.decisions, points: t.points,
-                  })}
-                </span>
-                {auth === "out" && t.guesses > 0 && (
-                  <button onClick={resetLocal} className="text-[10px] text-white/40 underline shrink-0">
-                    {ui.quizReset}
-                  </button>
-                )}
-              </div>
-              {/* 권유 한 줄 — 기록이 생긴 사람에게만 · 팝업·반복 요청 없음(설계 §0-3 · §2-2) */}
-              {auth === "out" && t.hands >= 1 && (
-                <p className="text-[10.5px] text-white/50 leading-snug mt-1">
-                  {ui.quizInvite}{" "}
-                  <a href={loginHref(pathname || "/win-rate-quiz")} className="underline font-bold whitespace-nowrap" style={{ color: GOLD }}>
-                    {ui.quizInviteLink}
-                  </a>
-                </p>
-              )}
-            </div>
-          );
-        })()}
+        {quizLine}
       </div>
 
       {/* ── 팟오즈 ── */}
@@ -1107,6 +1154,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </>
         )}
       </div>
+      </>)}
 
       {/* ── 진행 ──
           ★모바일에서는 하단 내비(62px) 위에 **고정**한다. 화면이 짧아 버튼이 접히면
@@ -1165,13 +1213,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         </div>
       ) : result && (
         <>
-          {/* 결과 */}
-          <motion.div initial={false} animate={{ opacity: 1 }} className="rounded-xl p-4 mb-3 border-2 text-center"
-            style={{ borderColor: `${GOLD}66`, background: `${GOLD}0d` }}>
-            <div className="font-black text-lg text-foreground">🏆 {resultLabel}</div>
-          </motion.div>
-
-          {/* 복기 */}
+          {/* 복기 (탭) */}
+          {resultTab === "review" && (
           <div className="rounded-xl p-4 mb-3" style={{ background: "hsl(var(--muted))" }}>
             <div className="font-black text-sm mb-2 text-foreground">{ui.reviewTitle}</div>
             <div className="overflow-x-auto">
@@ -1221,16 +1264,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               </p>
             )}
           </div>
+          )}
 
-          {chartSeries && <EquityChart series={chartSeries} streets={ui.streets} ui={ui} />}
-
-          <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
-            <button onClick={newHand}
-              className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none"
-              style={{ background: GOLD }}>
-              {ui.newHandBtn}
-            </button>
-          </div>
+          {resultTab === "chart" && chartSeries && <EquityChart series={chartSeries} streets={ui.streets} ui={ui} />}
         </>
       )}
 
@@ -1248,6 +1284,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           ★암산(Rule of 2/4)과 시뮬레이션 승률은 **다른 것을 잰다.**
             앞은 "드로우를 맞출 확률", 뒤는 "팟을 이길 확률"이다. 맞춰도 상대가 더 좋아지면 지고,
             못 맞춰도 이길 때가 있다. 그 차이를 설명 없이 나란히 두면 오히려 틀린 걸 가르치게 된다. */}
+      {showStreet && (
       <div className="rounded-xl px-4 py-3 mt-3" style={{ background: "hsl(var(--muted))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-2">{ui.formulaTitle}</div>
         {outs.total > 0 ? (
@@ -1282,6 +1319,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </p>
         )}
       </div>
+      )}
 
       </div>{/* /우 */}
       </div>{/* /2단 */}

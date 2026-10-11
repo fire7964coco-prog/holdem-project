@@ -82,6 +82,7 @@ const EN_UI: QuizUI = {
       ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${n} hands against the hands each opponent would plausibly enter the pot with from their seat.`
       : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
   chartTitle: "📈 Equity street by street — all cards face up",
+  resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
   chartRangeLegend: "What you saw",
   chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A line stops on the street that player folded.",
   quizToggle: "🎯 Quiz",
