@@ -858,6 +858,31 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|
 | BA-1 🔴 EN-먼저(경미) | EN `lib/posts-en/holdem-glossary.ts` L5 title «Texas Hold'em Glossary: Every Poker Term You'll Hear at the Table» · L7 desc «Every poker term you'll hear at the table, …» — 글 표제 ~107개에 squeeze·float·blocker·overbet·set mining 없음(사전 hero AY-8과 같은 잣대) | 전칭 완화(빈출 한정 · AY-8 «you'll hear most» 꼴) → 형제 동형 = title de·es·id·pt·ms·zh·zh-hant / desc de·es·id·pt·zh·zh-hant(ms desc·fr·ja·vi·tr 전칭 없음 · 무변경). 🔴 desc는 검색 결과 문면 — seoTitle은 그대로 두고 훅 유지 |
 
+### 2-BB. 우편함 수신분 — MA-446 (MS 🅶 GTO13 경량 트랙 · 기준 `aa607f72`) · 등재·회신 2026-10-11 (20) MB-257 · 미이행
+
+> 근거 = 검수장 `reports/검수-ms-gto13-경량-2026-10-11/REPORT.md`. EN 정정 39자리 = 반영 34 · EN 원장 유지 4(ms 단독 정정 금지) · EN 검증 뒤 변경 52줄 중 49 반영. 위치 대조 = 현 main `52a42c16`. vi 선례 = §2-AZ AZ-1.
+
+| # | 글 | 자리(ts 행) | 처방 |
+|---|---|---|---|
+| BB-1 ms (WRONG 낮음) | 3bet-pot-bet-sizing | L9 tldr «kedua-duanya bersama **hampir satu kombo** daripada 73» — 원시 0.6002 + 0.5288 = 1.13콤보(1 초과) · «hampir» = 못 미침 · 같은 글 L55 «berkongsi 1.1 kombo»와 자기모순 | L55 수치(«hanya kira-kira 1.1 kombo») — AZ-1 vi 꼴 |
+| BB-2 ms (RISKY 낮음) | paired-board-strategy | L35 요약 상자 «Ace-high dan King-high yang lebih baik pula tidak patut dibuang secara automatik» — EN `4b353f92` 두 한정(«against a single small bet» · «how wide the optimal defense goes is not something this study spot shows») 미전파 · 원시 `srp-paired` = BB 첫 액션만 | EN 현행 문면 이식 · 본문 L193·L205 한정 문면과 맞춘다 |
+
+- 🪶 통지(라벨 불변): 3bet-pot-cbet L67 «check tidak digunakan …» = OK(EN 꼴 복원은 재량) · low-board L138 «2026-08-20 · integer 16-bit · 12 thread»(EN 머리 주석 본문화) = UNV · AX-1 = ms 랜딩 해당 문장 없음 · MB-103 언어 질의 ⓐⓑⓒ = 13편 사용 0.
+
+### 2-BC. 우편함 수신분 — MA-449 (MS rules 묶음 1 · all-in·betting·blind · 기준 `aa607f72`) · 등재·회신 2026-10-11 (20) MB-257 · 미이행
+
+> 근거 = 검수장 `reports/검수-ms-rules-묶음1-2026-10-11/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ms/` 3편. 274행 = OK 210 · RISKY 27 · WRONG 1 · UNV 36. 위치 대조 = 현 main `52a42c16`.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BC-1 ms (WRONG 1 + RISKY 23 · 새 문안 아님) | EN 09-28 `6164c748`(MB-110 · EN+PT만 수정) 델타가 ms 3편 미전파. ⓐ **WRONG** all-in L72 «… setiap pemain lain yang masih dalam pot»(폴드자 기여분 배제) ⓑ all-in 10 = tldr·규칙문·표 머리·가이드표 앞 «no-limit and pot-limit» 한정 · 미행동자 «within the game's own betting limits» · Kesilapan 2 · FAQ BB 미만 · FAQ 초과분 «or goes straight back to a lone player» · FAQ RIT 조건 ⓒ betting 2 = All-in «whichever of those is open to you» · Kesilapan 1 끝 «if nobody bets behind you» ⓓ blind 11 = 헤즈업 괄호 4 · 스트래들 4 · 캐시 스테이크 «unless the table and the room agree» · SB/BB 표기 «In no-limit and pot-limit games» | `git show 6164c748` EN 델타를 ms 3편에 이식(자리 목록 = HQ-REPORT) · 🔴 ms `masterUpdated` 09-22 — ms 남은 rules 편도 `6164c748` 미전파 가능(레인이 묶음마다 차이표로 확인 중 · 묶음 오면 같이) |
+| BC-2 🔴 EN-먼저 (사용자 10-11 결재로 통지→요청 격상) | EN `holdem-betting-actions.ts` «(==Rule 103==)» 3자리(본문 · FAQ L229 외) — 같은 FAQ 블록 다른 인용이 TDA 2024뿐이라 TDA 조항으로 읽힘(TDA 2024에 103조 없음) · DECISIONS §0-F «룰북 미한정 = RISKY» · MA-330(id)·MA-420(vi) 동형 | 룰북 접두 «WSOP Tournament Rule 103» → 형제 동형 = de·fil·id·ms·sw·vi(grep «Rule 103») + 로케일 번역 표기 grep |
+| BC-3 EN-먼저 | EN betting L188 Mistake 3 «If no one raised, the BB can check …» — 스트래들 한정 없음(B 165·174) · EN blind는 09-30 «or straddles» 정정 → EN 내부 불일치 | EN blind 문면(«no raise and no straddle») 꼴 → 형제 |
+| BC-4 EN-먼저 | EN all-in L139 표 · L180 가이드표 «already acted → call or fold» — 1차 조건 «and are not facing at least a full bet or raise»(TDA 2024 47-A · B 175) 탈락 | 표 두 곳에 조건 추가 → 형제 |
+
+- 🪶 통지(라벨 불변): all-in Kesilapan 3 «$80 daripada setiap pemain yang call» = OK · blind 요약 «raise atau fold dari Small Blind» = UNV(§0-F 10-07 SB 처방 통일) · MB-103 언어 소견 = 3편 혼동 문장 0.
+- 이행 MB 오면 검수장이 EN·형제 원장 재판정.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
