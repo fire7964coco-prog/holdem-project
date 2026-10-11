@@ -292,12 +292,26 @@ function combosOf(m: Map<string, number>): WeightedHole[] {
  */
 const DEFEND_FALLBACK: Record<string, string> = {
   "hj-vs-utg": "co-vs-utg",
+  // 9인 테이블: 앞자리끼리(UTG~LJ가 전부 «UTG» 표로 접힌다)의 수비도 HJ vs UTG와 같은 대체를 쓴다
+  "utg-vs-utg": "co-vs-utg",
   "sb-vs-utg": "btn-vs-utg",
   "sb-vs-hj": "btn-vs-hj",
   "sb-vs-co": "btn-vs-co",
 };
 
 export type EntryRole = { kind: "open"; pos: Position } | { kind: "defend"; pos: Position; vs: Position };
+
+/** 차트(6맥스)에 실린 자리 이름 */
+type ChartPos = "UTG" | "HJ" | "CO" | "BTN" | "SB" | "BB";
+
+/**
+ * 9인 테이블 자리 → 레인지 표를 빌려 올 6맥스 자리 (가정 — 화면 규칙 설명에 적는다).
+ *   · UTG·UTG+1·UTG+2·LJ → 6맥스 UTG 표. 6맥스 UTG는 9인의 LJ와 같은 자리라(뒤에 5명) LJ에는 맞고,
+ *     그보다 앞 세 자리에는 **실제보다 넓다**(9인 표는 차트에 없다 · 솔버 S-034 §4).
+ *   · HJ·CO·BTN·SB·BB는 이름이 같은 6맥스 자리 그대로.
+ */
+const chartPos = (pos: Position): ChartPos =>
+  pos === "UTG+1" || pos === "UTG+2" || pos === "LJ" ? "UTG" : (pos as ChartPos);
 
 const cache = new Map<string, WeightedHole[]>();
 
@@ -307,12 +321,13 @@ const cache = new Map<string, WeightedHole[]>();
  * 플랍을 본 팟으로 친다. 두 빈도 합은 100에서 자른다.
  */
 export function rangeFor(role: EntryRole): WeightedHole[] {
-  const id = role.kind === "open" ? `open-${role.pos}` : `${role.pos}-vs-${role.vs}`.toLowerCase();
+  const pos = chartPos(role.pos);
+  const id = role.kind === "open" ? `open-${pos}` : `${pos}-vs-${chartPos(role.vs)}`.toLowerCase();
   const hit = cache.get(id);
   if (hit) return hit;
   let m: Map<string, number>;
   if (role.kind === "open") {
-    m = freqMap(DATA.RFI[role.pos]);
+    m = freqMap(DATA.RFI[pos]);
   } else {
     const key = DATA.DEFEND[id] ? id : DEFEND_FALLBACK[id];
     const d = DATA.DEFEND[key];

@@ -75,7 +75,7 @@ const jsonLd = {
       inLanguage: "en",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "Play a 6-max hand blind, street by street",
+        "Play a 6-max or 9-max hand blind (2–6 players), street by street",
         "Equity shown on every street",
         "Pot odds required from the flop on",
         "Post-hand review of the correct fold point"

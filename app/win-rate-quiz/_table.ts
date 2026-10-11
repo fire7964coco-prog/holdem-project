@@ -1,4 +1,4 @@
-// 6맥스 좌석·포지션 배치 (언어 중립). 확률 계산은 전부 _equity.ts에 있고 여기엔 없다.
+// 6인·9인 테이블 좌석·포지션 배치 (언어 중립). 확률 계산은 전부 _equity.ts에 있고 여기엔 없다.
 //
 // ★왜 분리했나 (2026-08-05)
 //   시뮬레이터를 "2~4명이 동그랗게 앉은 화면"에서 "6인 테이블에서 몇 명만 붙는 화면"으로
@@ -9,15 +9,21 @@ import { toDisplay, type Card, type HandNames } from "./_equity";
 import { rangeFor, type EntryRole, type NCard, type WeightedHole } from "./_ranges";
 
 /**
- * 6맥스 프리플랍 액션 순서 = 물리적 좌석 순서(시계 방향).
- * slot 0(나)에서 시계 방향으로 1,2,3,4,5가 이어진다.
+ * 프리플랍 액션 순서 = 물리적 좌석 순서(시계 방향).
+ * slot 0(나)에서 시계 방향으로 1,2,3,…가 이어진다.
+ * ★9인(풀링)은 6맥스 앞에 세 자리(UTG·UTG+1·UTG+2)가 더 있고, 6맥스의 UTG 자리가 LJ가 된다
+ *   (S-034 ② · 2026-10-11 · 이름 규칙 = 블로그 holdem-positions 표의 9인 행과 같다).
  */
 export const POSITIONS_6 = ["UTG", "HJ", "CO", "BTN", "SB", "BB"] as const;
-export type Position = (typeof POSITIONS_6)[number];
+export const POSITIONS_9 = ["UTG", "UTG+1", "UTG+2", "LJ", "HJ", "CO", "BTN", "SB", "BB"] as const;
+export type Position = (typeof POSITIONS_9)[number];
+export type TableSize = 6 | 9;
+
+const positionsOf = (size: TableSize): readonly Position[] => (size === 9 ? POSITIONS_9 : POSITIONS_6);
 
 /** 좌석 slot의 포지션 이름 (나의 포지션이 heroPos일 때) */
-export function positionAt(heroPos: number, slot: number): Position {
-  return POSITIONS_6[(heroPos + slot) % 6];
+export function positionAt(heroPos: number, slot: number, size: TableSize): Position {
+  return positionsOf(size)[(heroPos + slot) % size];
 }
 
 /**
@@ -30,11 +36,13 @@ export function positionAt(heroPos: number, slot: number): Position {
  * ★포지션 우위 자체는 이 사이트의 필라(/blog/position-is-everything-in-holdem)가 다루는 보편 사실이다.
  */
 const STAY_WEIGHT: Record<Position, number> = {
-  UTG: 1.0, HJ: 1.3, CO: 1.7, BTN: 2.2, SB: 1.2, BB: 2.0,
+  UTG: 1.0, "UTG+1": 1.0, "UTG+2": 1.0, LJ: 1.0, HJ: 1.3, CO: 1.7, BTN: 2.2, SB: 1.2, BB: 2.0,
 };
 
 export interface TableSim {
-  /** 나의 포지션 (POSITIONS_6 인덱스) */
+  /** 테이블 좌석 수 — 좌석 slot은 0 ~ size-1 */
+  size: TableSize;
+  /** 나의 포지션 (POSITIONS_6 또는 POSITIONS_9 인덱스) */
   heroPos: number;
   /** 끝까지 간 좌석 번호(오름차순). 항상 0(나)을 포함한다 */
   activeSlots: number[];
@@ -53,8 +61,9 @@ export interface TableSim {
 }
 
 /** 가중 무작위 추출(비복원) — 뒷자리가 더 자주 뽑힌다 */
-function pickSlots(heroPos: number, count: number): number[] {
-  const pool = [1, 2, 3, 4, 5].map((slot) => ({ slot, w: STAY_WEIGHT[positionAt(heroPos, slot)] }));
+function pickSlots(heroPos: number, count: number, size: TableSize): number[] {
+  const pool = Array.from({ length: size - 1 }, (_, i) => i + 1)
+    .map((slot) => ({ slot, w: STAY_WEIGHT[positionAt(heroPos, slot, size)] }));
   const picked: number[] = [];
   for (let i = 0; i < count; i++) {
     const total = pool.reduce((a, p) => a + p.w, 0);
@@ -68,8 +77,8 @@ function pickSlots(heroPos: number, count: number): number[] {
 }
 
 /**
- * 6인 테이블 한 판을 **딜만 한다.** `preflopCount`는 프리플랍에 들어오는 인원이고,
- * 좌석은 언제나 6개다. 나머지는 폴드로 표시된다.
+ * 6인 또는 9인 테이블 한 판을 **딜만 한다.** `preflopCount`(2~6)는 프리플랍에 들어오는 인원이고,
+ * 좌석은 `size`개다. 나머지는 폴드로 표시된다.
  *
  * ★2026-08-05 성능 검수에서 여기서 하던 계산을 전부 걷어냈다.
  *   6인 테이블 버전이 쓰던 `eq`(프리플랍 MC 10만 + 플랍 990 + 턴 44)·`winners`·`categories`를
@@ -77,15 +86,15 @@ function pickSlots(heroPos: number, count: number): number[] {
  *   매 핸드 500~800ms짜리 동기 계산이 아무 이유 없이 돌면서 화면을 얼려 놓고 있었다.
  *   승률은 `_engine.ts`가, 쇼다운 판정은 `_simulator.tsx`가 §13 평가기로 직접 한다.
  */
-export function makeTableSim(preflopCount: number, _names?: HandNames): TableSim {
-  const heroPos = Math.floor(Math.random() * 6);
-  const activeSlots = [0, ...pickSlots(heroPos, preflopCount - 1)].sort((a, b) => a - b);
+export function makeTableSim(preflopCount: number, size: TableSize = 6, _names?: HandNames): TableSim {
+  const heroPos = Math.floor(Math.random() * size);
+  const activeSlots = [0, ...pickSlots(heroPos, Math.min(preflopCount, size) - 1, size)].sort((a, b) => a - b);
   // activeSlots가 0을 포함한 오름차순이므로 인덱스 0 = 나 = hands[0]이 보장된다
-  const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots));
+  const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots, size));
   const oppRanges = oppRoles.map(rangeFor);
   const { hands, board } = dealFromRanges(oppRanges);
   const seed = Math.floor(Math.random() * 2 ** 32);
-  return { heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed };
+  return { size, heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed };
 }
 
 /**
@@ -97,12 +106,12 @@ export function makeTableSim(preflopCount: number, _names?: HandNames): TableSim
  *   (콜드콜 2번째 이후 표는 차트에 없다 · 단순화).
  * ★BB는 액션 순서가 맨 끝이라 2명 이상 팟에서 오프너가 될 수 없다.
  */
-function roleOf(heroPos: number, slot: number, activeSlots: number[]): EntryRole {
-  const order = (s: number) => (heroPos + s) % 6; // POSITIONS_6 = 액션 순서
+function roleOf(heroPos: number, slot: number, activeSlots: number[], size: TableSize): EntryRole {
+  const order = (s: number) => (heroPos + s) % size; // POSITIONS_6·POSITIONS_9 = 액션 순서
   const opener = activeSlots.reduce((a, s) => (order(s) < order(a) ? s : a));
-  const pos = positionAt(heroPos, slot);
+  const pos = positionAt(heroPos, slot, size);
   if (slot === opener) return { kind: "open", pos };
-  return { kind: "defend", pos, vs: positionAt(heroPos, opener) };
+  return { kind: "defend", pos, vs: positionAt(heroPos, opener, size) };
 }
 
 /** 빈도 가중 추출 — 이미 쓴 카드와 겹치는 콤보는 다시 뽑는다 */

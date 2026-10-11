@@ -19,8 +19,10 @@ const EN_UI: QuizUI = {
   raise: "Raise",
   call: "Call",
   check: "Check",
-  tableNote: "6-max table · pick how many see the flop",
+  tableNote: "6-max or 9-handed table · pick how many see the flop (2–6)",
   playersBtn: (n) => `${n} players`,
+  playersLabel: "Players",
+  tableBtn: (n) => `${n}-max`,
   loading: "Shuffling and running the numbers…",
 
   myEquity: "Your equity",
@@ -127,7 +129,9 @@ const EN_UI: QuizUI = {
         defended that open with a call or a 3-bet (opening range · defending range). The ranges are 6-max
         100bb cash consensus ranges cross-checked across several public sources, with borderline hands mixed
         at 25/50/75%. Where no chart exists (HJ facing a UTG open · SB facing a UTG, HJ or CO open) and for the
-        third player onward, the nearest defending chart stands in. Only your own hand is random — the tool lets
+        third player onward, the nearest defending chart stands in. There are no 9-handed charts, so at a 9-max
+        table UTG, UTG+1, UTG+2 and LJ use the 6-max UTG chart and every other seat uses the 6-max chart of the
+        same name — the first three seats of a 9-max table come out wider than they really are. Only your own hand is random — the tool lets
         you play any two cards to the river. A 3-bet does not change the pot size here (simplified).
       </p>
       <p className="mb-2">

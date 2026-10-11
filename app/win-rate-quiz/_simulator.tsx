@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useCallback, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
-import { makeTableSim, positionAt, type TableSim } from "./_table";
+import { makeTableSim, positionAt, type TableSim, type TableSize } from "./_table";
 import {
   runHand, heroOuts, ruleOf24, SAMPLES,
   type HandResult, type StreetRecord, type Action, type EquitySplit,
@@ -34,12 +34,14 @@ const LIVE = "#e0555e";
 const GOOD = "#4ade80";
 const BAD = "#f87171";
 /**
- * 꺾은선·좌석 승률 배지의 좌석 색 — 나 + 상대 3명(4인 팟까지 · S-034 회차 2).
- * ★어두운 카드(#0f172a) 위 범주 팔레트 검증 통과(dataviz validate_palette: 밝기 띠·채도·색약 ΔE ≥ 15).
+ * 꺾은선·좌석 승률 배지의 좌석 색 — 나 + 상대 5명(6인 팟까지).
+ * ★어두운 카드(#0f172a) 위 범주 팔레트 검증 통과(dataviz validate_palette: 밝기 띠·채도·대비 ·
+ *   인접 순서 색약 ΔE 최저 13.8 · 정상 시각 최저 26.2). 앞 4색 = 회차 2, 뒤 2색(청록·주황) = 회차 4(2~6명).
+ *   «모든 쌍» 검사는 6색에서 통과하는 조합이 없다(후보 18색 전수) — 그래서 색만으로 구분하지 않는다:
+ *   꺾은선은 범례 + 끝점 이름표, 배지는 좌석 이름 옆에 붙는다.
  *   색은 «상대 순서»(activeSlots 순)를 따른다 — 누가 폴드해도 남은 사람 색이 바뀌지 않는다.
- *   회차 4(2~6명)에서 상대가 5명으로 늘면 두 칸을 더 검증해 붙인다.
  */
-const SEAT_COLORS = ["#b08d2a", "#0284c7", "#db2777", "#7c3aed"];
+const SEAT_COLORS = ["#b08d2a", "#0284c7", "#db2777", "#7c3aed", "#0d9488", "#ea580c"];
 /** 꺾은선의 «내 짐작» 점선 — 좌석이 아니라 중립색(좌석 팔레트와 겹치지 않게) */
 const GUESS_COLOR = "#e2e8f0";
 
@@ -77,7 +79,12 @@ export interface QuizUI {
   call: string;
   check: string;
   tableNote: string;
+  /** 인원 버튼의 접근성 이름(«3명») — 버튼 글자는 숫자만 */
   playersBtn: (n: number) => string;
+  /** 인원 버튼 묶음 앞 짧은 라벨(sm↑에서만 보인다) */
+  playersLabel: string;
+  /** 테이블 크기 버튼 — 6 · 9 (S-034 ②) */
+  tableBtn: (size: number) => string;
   loading: string;
   /** 승률 카드 */
   myEquity: string;
@@ -282,7 +289,10 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
   const x = (i: number) => L + (i * (W - L - R)) / 3;
   const y = (v: number) => T + ((100 - v) * (H - T - B)) / 100;
 
-  // 끝점 라벨 — 마지막 값 기준, 11px보다 가까우면 아래로 밀어 겹치지 않게
+  // 끝점 라벨 — 마지막 값 기준, 11px보다 가까우면 아래로 밀어 겹치지 않게.
+  // ★같은 스트리트에서 같은 글자(«0%»)로 끝나는 선은 라벨 하나만 — 6인 팟(S-034 회차 4)에서 리버 «0%»가
+  //   다섯 줄 쌓여 이름 없는 숫자 탑이 됐다. 누가 몇 %인지는 아래 범례가 말한다.
+  const seenEnd = new Set<string>();
   const ends = series
     .map((s) => {
       let last = -1;
@@ -290,6 +300,12 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
       return last < 0 ? null : { s, i: last, v: s.values[last]!, ly: y(s.values[last]!) };
     })
     .filter((e): e is NonNullable<typeof e> => !!e)
+    .filter((e) => {
+      const k = `${e.i}:${badgePct(e.v)}`;
+      if (seenEnd.has(k)) return false;
+      seenEnd.add(k);
+      return true;
+    })
     .sort((a, b) => a.ly - b.ly);
   for (let i = 1; i < ends.length; i++) if (ends[i].ly - ends[i - 1].ly < 11) ends[i].ly = ends[i - 1].ly + 11;
   // 아래로 밀다가 0% 선 밑(가로축 글자 자리)으로 나가면 바닥부터 위로 되민다
@@ -374,8 +390,10 @@ function badgePct(x: number): string {
 }
 
 // ── 좌석 ────────────────────────────────────────────────────────────────────
-function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor, eq, eqColor }: {
+function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor, eq, eqColor, compact }: {
   pos: string; isBtn: boolean; isHero: boolean; heroWord: string;
+  /** 9인 테이블 — 좌석 최소 폭·패 이름 폭을 줄인다(폰 한 줄 4석) */
+  compact?: boolean;
   cards?: QuizCard[]; faceDown?: boolean; folded?: boolean; isWinner?: boolean;
   color: string; label?: string; isDead?: boolean; statusText?: string; statusColor?: string;
   /** 패를 깠을 때 이 좌석의 승률 % — 방송 화면 방식 배지(S-034 ④) */
@@ -384,7 +402,7 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
   const size: CardSize = folded ? "fold" : isHero ? "hero" : "seat";
   return (
     <div className="flex flex-col items-center gap-1"
-      style={{ minWidth: folded ? 62 : isHero ? 100 : 80, opacity: folded ? 0.55 : 1 }}>
+      style={{ minWidth: compact ? (folded ? 50 : isHero ? 80 : 62) : folded ? 62 : isHero ? 100 : 80, opacity: folded ? 0.55 : 1 }}>
       <div className="flex items-center gap-1">
         <PosBadge pos={pos} color={color} glow={!!isWinner} />
         {isBtn && <DealerChip />}
@@ -409,7 +427,7 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
       </div>
       {label && (
         <div className="text-[8.5px] font-semibold leading-tight text-center px-0.5"
-          style={{ color: isDead ? BAD : "rgba(255,255,255,0.72)", maxWidth: isHero ? 108 : 86 }}>
+          style={{ color: isDead ? BAD : "rgba(255,255,255,0.72)", maxWidth: compact ? (isHero ? 84 : 64) : isHero ? 108 : 86 }}>
           {label}
         </div>
       )}
@@ -420,6 +438,8 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
 // ── 본체 ────────────────────────────────────────────────────────────────────
 export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [preflopCount, setPreflopCount] = useState(3);
+  /** 6인 · 9인 테이블 (S-034 ② · 2026-10-11) — 프리플랍 인원 2~6명은 두 테이블 모두 같다 */
+  const [tableSize, setTableSize] = useState<TableSize>(6);
   /** 새 판을 돌리는 트리거 — `sim`을 의존성으로 쓰면 계산이 스스로 취소된다(아래 effect 주석) */
   const [handId, setHandId] = useState(0);
   const [sim, setSim] = useState<TableSim | null>(null);
@@ -465,7 +485,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     let cancelled = false;
     let worker: Worker | null = null;
     const t = setTimeout(() => {
-      const s = makeTableSim(preflopCount);
+      const s = makeTableSim(preflopCount, tableSize);
       if (cancelled) return;
       setSim(s);
       const req: HandRequest = {
@@ -491,7 +511,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       }
     }, 30);
     return () => { cancelled = true; clearTimeout(t); worker?.terminate(); };
-  }, [handId, preflopCount]);
+  }, [handId, preflopCount, tableSize]);
 
   const newHand = useCallback(() => {
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
@@ -502,6 +522,11 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setPreflopCount(n);
+  }, []);
+  const changeSize = useCallback((n: TableSize) => {
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setAnswers({}); setGuess(50);
+    setTableSize(n);
   }, []);
 
   /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝). 계산 중엔 아직 모른다 */
@@ -576,7 +601,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   const nameOf = useCallback((slot: number) => {
     if (!sim) return "";
-    const pos = positionAt(sim.heroPos, slot);
+    const pos = positionAt(sim.heroPos, slot, sim.size);
     return slot === 0 ? `${ui.hero}(${pos})` : pos;
   }, [sim, ui.hero]);
 
@@ -624,22 +649,24 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     return ui.winLabel(nameOf(winnerSlots[0].slot), winnerSlots[0].cat);
   }, [sim, result, winnerSlots, nameOf, ui]);
 
+  /** 9인 테이블은 좌석이 많아 폭을 줄인다(폰 390에서 한 줄 4석 · 보드 양옆 1석씩) */
+  const compact = sim?.size === 9;
   const renderSeat = (slot: number) => {
     if (!sim) return null;
-    const pos = positionAt(sim.heroPos, slot);
+    const pos = positionAt(sim.heroPos, slot, sim.size);
     const inHand = slot in slotToIdx;
     const isBtn = pos === "BTN";
     const isHero = slot === 0;
 
     // 프리플랍에 들어오지 않은 좌석 = 처음부터 폴드
     if (!inHand) {
-      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero}
+      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} compact={compact}
         folded color={MUTED} statusText={ui.folded} />;
     }
     const k = slotToIdx[slot];
     const hasFolded = foldedSlots.has(slot);
     if (hasFolded) {
-      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero}
+      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} compact={compact}
         folded color={MUTED} statusText={ui.folded} />;
     }
 
@@ -660,7 +687,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
     const isWinner = showdown && winnerSlots.some((w) => w.slot === slot);
 
-    return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero}
+    return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero} compact={compact}
       cards={sim.hands[k]} faceDown={!isHero && !cardsUp}
       color={isHero ? GOLD : LIVE} label={label} isWinner={isWinner}
       statusText={statusText} statusColor={act === "raise" ? BAD : "rgba(255,255,255,0.55)"}
@@ -668,20 +695,36 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   };
 
   /**
-   * 인원 버튼 + 퀴즈 토글 한 줄. ★폰 첫 화면 높이(S-034 ⑤)를 지키려고 토글을 따로 줄로 내리지 않는다 —
-   * 390px에서 «2명 3명 4명 | 🎯» 네 개가 한 줄에 들어가도록 버튼 좌우 여백을 줄였다.
+   * 테이블 크기 + 인원 + 퀴즈 토글 한 줄. ★폰 첫 화면 높이(S-034 ⑤)를 지키려고 줄을 늘리지 않는다 —
+   * 390px에서 «[6인|9인] [2 3 4 5 6] | 🎯»가 한 줄에 들어가도록 묶음 버튼은 글자만 두고(인원 = 숫자),
+   * 묶음 앞 «인원» 라벨은 sm↑에서만 보인다. 인원 버튼의 뜻은 aria-label(«3명»)로 준다.
    */
+  const segBtn = (on: boolean) => on
+    ? { background: GOLD, color: "#000" }
+    : { color: "hsl(var(--muted-foreground))" };
   const controls = (cls: string) => (
     <div className={`flex justify-center items-center gap-1.5 sm:gap-2 ${cls}`}>
-      {[2, 3, 4].map((n) => (
-        <button key={n} onClick={() => changeCount(n)}
-          className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all"
-          style={preflopCount === n
-            ? { borderColor: GOLD, background: `${GOLD}1f`, color: GOLD }
-            : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
-          {ui.playersBtn(n)}
-        </button>
-      ))}
+      <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
+        {([6, 9] as TableSize[]).map((n) => (
+          <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n}
+            className="px-2 sm:px-3 py-1 rounded-full text-[13px] sm:text-sm font-bold transition-all whitespace-nowrap"
+            style={segBtn(tableSize === n)}>
+            {ui.tableBtn(n)}
+          </button>
+        ))}
+      </div>
+      <span className="hidden sm:inline text-[11px] font-bold text-muted-foreground">{ui.playersLabel}</span>
+      <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group"
+        aria-label={ui.playersLabel}>
+        {[2, 3, 4, 5, 6].map((n) => (
+          <button key={n} onClick={() => changeCount(n)} aria-pressed={preflopCount === n}
+            aria-label={ui.playersBtn(n)} title={ui.playersBtn(n)}
+            className="min-w-[26px] sm:min-w-[30px] px-1.5 py-1 rounded-full text-[13px] sm:text-sm font-bold tabular-nums transition-all"
+            style={segBtn(preflopCount === n)}>
+            {n}
+          </button>
+        ))}
+      </div>
       <span className="w-px h-5 bg-border mx-0.5" aria-hidden />
       <button onClick={toggleQuiz} aria-pressed={quiz}
         className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
@@ -721,6 +764,19 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     points: answerList.reduce((a, x) => a + x.points, 0),
   } : null;
 
+  /** 커뮤니티 카드 — 9인은 보드 양옆에 좌석이 앉으므로 카드를 좌석 크기로 줄인다 */
+  const boardEl = (
+    <div className="flex flex-col items-center gap-1.5">
+      <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-white/45">{ui.streets[street]}</div>
+      <div className={`flex justify-center ${compact ? "gap-1" : "gap-1.5"}`}>
+        {sim.board.map((c, i) => <PlayingCard key={i} card={c} hidden={i >= boardShown} size={compact ? "seat" : "hero"} />)}
+      </div>
+      <div className="text-[10px] font-black tabular-nums mt-0.5" style={{ color: GOLD }}>
+        {ui.potLabel} {rec.potAfter.toLocaleString()}
+      </div>
+    </div>
+  );
+
   return (
     <>
       <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
@@ -736,7 +792,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           ★좌석 배치가 화면에 따라 다르다. 같은 배치를 양쪽에 쓰면 한쪽이 반드시 망가진다.
             · **모바일(<lg)**: 위아래로 쌓이니 **세로가 비싸다** → 3줄(한 줄 3석)로 낮고 넓게
             · **데스크톱(lg↑)**: 좌우로 나뉘어 **가로가 비싸다** → 5줄(한 줄 2석)로 좁고 길게
-            좌석 순서는 둘 다 시계 방향으로 같다(slot 1·2·3·4·5, 0=나).
+            좌석 순서는 둘 다 시계 방향으로 같다(slot 1·2·3·4·5, 0=나). 9인 배치는 아래 별도 분기.
             DOM을 두 벌 그리고 CSS로 하나만 보이게 한다 — 미디어쿼리로 JS 분기하면
             서버 렌더와 첫 클라이언트 렌더가 갈려 하이드레이션이 깨진다. */}
       <div className="mb-2 lg:mb-0 mx-auto w-full max-w-[404px] md:max-w-[560px] lg:max-w-none" style={{
@@ -753,8 +809,33 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             paddingLeft: 6, paddingRight: 6,
           }}>
 
+          {sim.size === 9 ? (<>
+          {/* ── 9인 (S-034 ② · 2026-10-11): 시계 방향 slot 0(나·아래 가운데)→1·2(왼쪽 아래)→3~6(위)→7·8(오른쪽 아래).
+              ★폰은 «위 4석 · 보드 양옆 1석씩 · 아래 3석», 데스크톱은 «2·2·보드 양옆·2·나» — 6인과 같은 이유로 DOM 두 벌 */}
+          <div className="flex w-full justify-between items-start px-9 sm:px-12 pt-2 lg:hidden">
+            {renderSeat(3)}{renderSeat(4)}{renderSeat(5)}{renderSeat(6)}
+          </div>
+          <div className="hidden lg:flex w-full justify-between items-start px-24 pt-3">
+            {renderSeat(4)}{renderSeat(5)}
+          </div>
+          <div className="hidden lg:flex w-full justify-between items-start px-4">
+            {renderSeat(3)}{renderSeat(6)}
+          </div>
+          <div className="flex w-full justify-between items-center px-0.5 lg:px-1">
+            {renderSeat(2)}{boardEl}{renderSeat(7)}
+          </div>
+          <div className="hidden lg:flex w-full justify-between items-end px-4">
+            {renderSeat(1)}{renderSeat(8)}
+          </div>
+          <div className="hidden lg:flex lg:flex-col lg:items-center lg:w-full">
+            {renderSeat(0)}
+          </div>
+          <div className="flex w-full justify-between items-end px-10 sm:px-16 lg:hidden">
+            {renderSeat(1)}{renderSeat(0)}{renderSeat(8)}
+          </div>
+          </>) : (<>
           {/* ── 모바일: 위 3석 ── */}
-          <div className="flex w-full justify-between items-start px-3 sm:px-8 lg:hidden">
+          <div className="flex w-full justify-between items-start px-6 sm:px-8 pt-1 lg:hidden">
             {renderSeat(2)}{renderSeat(3)}{renderSeat(4)}
           </div>
 
@@ -766,16 +847,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             {renderSeat(2)}{renderSeat(4)}
           </div>
 
-          {/* 커뮤니티 카드 */}
-          <div className="flex flex-col items-center gap-1.5">
-            <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-white/45">{ui.streets[street]}</div>
-            <div className="flex gap-1.5 justify-center">
-              {sim.board.map((c, i) => <PlayingCard key={i} card={c} hidden={i >= boardShown} size="hero" />)}
-            </div>
-            <div className="text-[10px] font-black tabular-nums mt-0.5" style={{ color: GOLD }}>
-              {ui.potLabel} {rec.potAfter.toLocaleString()}
-            </div>
-          </div>
+          {boardEl}
 
           {/* ── 데스크톱: 아래 양옆 + 나 ── */}
           <div className="hidden lg:flex w-full justify-between items-end px-4">
@@ -786,9 +858,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </div>
 
           {/* ── 모바일: 아래 3석 (가운데가 나) ── */}
-          <div className="flex w-full justify-between items-end px-3 sm:px-8 lg:hidden">
+          <div className="flex w-full justify-between items-end px-6 sm:px-8 lg:hidden">
             {renderSeat(1)}{renderSeat(0)}{renderSeat(5)}
           </div>
+          </>)}
         </div>
       </div>
 

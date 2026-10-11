@@ -56,7 +56,7 @@ const jsonLd = {
       inLanguage: "ko",
       offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
       featureList: [
-        "6인 테이블 핸드 시뮬레이션",
+        "6인·9인 테이블 핸드 시뮬레이션(2~6명)",
         "스트리트별 내 승률 계산",
         "팟오즈 필요 승률 병기",
         "핸드 종료 후 폴드 시점 복기",
