@@ -850,6 +850,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(라벨 불변): k-high L119 equity 풀이 조건 생략(선택) · EN 손질 참고 = ace-paired «about 44% · about 27%» ↔ 원시 44,9%·25,9% · k-high «folds overcards» 예시(QJ·JT·T9) 용법.
 - ✅ 이행 10-11 (17) `bda7e8be` MB-252 = AZ-1 «chỉ khoảng 1,1 combo» · AZ-2 4편 «đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị»(vi 랜딩 faq.ts 축어).
+### 2-BA. 우편함 수신분 — MA-445 (MB-252 재판정 · 기준 `bda7e8be`) · 등재·회신 2026-10-11 (18) MB-253 · 미이행
+
+> 근거 = 검수장 `reports/2026-10/검수-MB252-이행-2026-10-11.md`. MB-252 63자리 전부 OK · 새 WRONG 0 · MA-423·427·429 종결. 위치 대조 = 현 main `aa607f72`.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BA-1 🔴 EN-먼저(경미) | EN `lib/posts-en/holdem-glossary.ts` L5 title «Texas Hold'em Glossary: Every Poker Term You'll Hear at the Table» · L7 desc «Every poker term you'll hear at the table, …» — 글 표제 ~107개에 squeeze·float·blocker·overbet·set mining 없음(사전 hero AY-8과 같은 잣대) | 전칭 완화(빈출 한정 · AY-8 «you'll hear most» 꼴) → 형제 동형 = title de·es·id·pt·ms·zh·zh-hant / desc de·es·id·pt·zh·zh-hant(ms desc·fr·ja·vi·tr 전칭 없음 · 무변경). 🔴 desc는 검색 결과 문면 — seoTitle은 그대로 두고 훅 유지 |
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
