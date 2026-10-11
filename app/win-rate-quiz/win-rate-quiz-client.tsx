@@ -29,8 +29,10 @@ const KO_UI: QuizUI = {
 
   myEquity: "내 승률",
   vsOpponents: (n) => (n === 0 ? "상대 없음" : `상대 ${n}명 상대로`),
-  basisRandom: "상대 무작위 기준",
+  basisSeat: "자리별 레인지 기준",
   basisRange: "액션 일치 레인지 기준",
+  roleOpen: "오픈",
+  roleDefend: "수비",
   revealedLabel: "👀 공개된 저 패들 상대로는",
   revealedNote: (gap) =>
     `위 승률은 상대 패를 모른다고 보고 낸 값이라 ${gap}%p 차이가 납니다. 실전에서 판단할 때 쓰는 건 위쪽 숫자입니다.`,
@@ -75,8 +77,8 @@ const KO_UI: QuizUI = {
   formulaCaveat:
     "두 숫자는 서로 다른 걸 잽니다. 위는 «맞출» 확률이고 아래는 «이길» 확률이라, 맞춰도 상대가 더 좋아지면 지고 못 맞춰도 이길 때가 있습니다. 콜·폴드 판정에 쓰는 건 아래 숫자입니다.",
   noDrawNote: (basis, min, max) =>
-    basis === "random"
-      ? `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대를 무작위 패로 보고 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`
+    basis === "seat"
+      ? `프리플랍이라 아직 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대마다 그 자리에서 팟에 들어올 만한 패(자리별 레인지)를 상대로 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`
       : `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`,
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
@@ -100,7 +102,15 @@ const KO_UI: QuizUI = {
         <b className="text-foreground">내 승률은 상대 패를 모른다는 전제로 계산합니다.</b> 플랍부터는
         상대가 보여준 액션(레이즈·콜)을 그대로 했을 패 전체를 그 상대의 레인지로 봅니다 — 레이즈를 봤다면
         투페어 이상만 남는 식입니다. 화면에서 폴드한 사람이 계산에서도
-        빠지므로 보이는 것과 근거가 어긋나지 않습니다. 프리플랍만 상대를 무작위로 봅니다.
+        빠지므로 보이는 것과 근거가 어긋나지 않습니다.
+      </p>
+      <p className="mb-2">
+        <b className="text-foreground">상대의 프리플랍 패는 자리별 레인지에서 나옵니다.</b> 팟에 남은 사람 중
+        액션 순서가 가장 빠른 사람이 오픈했고, 나머지는 그 오픈을 콜이나 3벳으로 받았다고 봅니다(오픈 레인지 ·
+        수비 레인지). 레인지는 6맥스 캐시 100bb 기준으로 공개 자료 여러 곳을 맞춰 본 합의 레인지이고, 경계에
+        있는 패는 25·50·75% 빈도로 섞입니다. 표가 없는 조합(HJ가 UTG 오픈을 받을 때 · SB가 UTG·HJ·CO 오픈을
+        받을 때)과 세 번째 사람부터는 가장 가까운 수비 표를 씁니다. 내 패만은 무작위입니다 — 레인지 밖의 패로도
+        끝까지 가 보는 도구라서요. 3벳을 해도 팟 크기는 같게 단순화했습니다.
       </p>
       <p className="mb-2">
         <b className="text-foreground">판정은 팟오즈만 놓고 본 것입니다.</b> 임플라이드 오즈·상대의 성향·
@@ -138,9 +148,10 @@ export default function WinRateQuizClient() {
         path="/win-rate-quiz"
       />
       <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-3 lg:py-6">
-        <div className="text-center mb-2 lg:mb-3">
+        <div className="text-center mb-1.5 lg:mb-3">
           <h1 className="font-serif text-2xl font-black text-foreground">승률 시뮬레이터 🃏</h1>
-          <p className="text-xs text-muted-foreground mt-0.5">상대 패는 모른 채로 — 끝나고 나서 어디서 끊었어야 했는지 복기합니다</p>
+          {/* 폰에서는 두 줄로 접혀 팟오즈 박스를 고정 버튼 밑으로 밀어낸다(S-034 ⑤) — h1만 남긴다 */}
+          <p className="hidden sm:block text-xs text-muted-foreground mt-0.5">상대 패는 모른 채로 — 끝나고 나서 어디서 끊었어야 했는지 복기합니다</p>
         </div>
         <WinRateSimulator ui={KO_UI} />
       </div>

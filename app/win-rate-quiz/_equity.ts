@@ -17,7 +17,8 @@ function toNum(c: Card): NCard {
   return [RANKS.indexOf(c.rank) + 2, SUITS.indexOf(c.suit)];
 }
 
-function toDisplay(n: NCard): Card {
+/** 엔진 숫자 카드 → 화면 카드. `_table.ts`가 레인지에서 뽑은 콤보를 화면에 올릴 때 쓴다 */
+export function toDisplay(n: NCard): Card {
   return { rank: RANKS[n[0] - 2], suit: SUITS[n[1]] };
 }
 

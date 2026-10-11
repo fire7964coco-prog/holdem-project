@@ -5,7 +5,8 @@
 //   바꾸면서, 좌석 배치·포지션 이름은 한국어판과 영어판이 **완전히 같아야** 하기 때문이다.
 //   UTG·HJ·CO·BTN·SB·BB는 두 언어에서 같은 표기를 쓴다.
 
-import { dealHands, type Card, type HandNames } from "./_equity";
+import { toDisplay, type Card, type HandNames } from "./_equity";
+import { rangeFor, type EntryRole, type NCard, type WeightedHole } from "./_ranges";
 
 /**
  * 6맥스 프리플랍 액션 순서 = 물리적 좌석 순서(시계 방향).
@@ -40,6 +41,13 @@ export interface TableSim {
   /** hands[k] ↔ activeSlots[k]. hands[0]은 항상 나 */
   hands: Card[][];
   board: Card[];
+  /**
+   * 상대별 프리플랍 레인지(빈도 포함) — oppRanges[k] ↔ activeSlots[k + 1].
+   * 딜도 승률 계산도 **같은 표**에서 출발한다(그래야 화면의 상대와 계산의 상대가 같은 사람이다).
+   */
+  oppRanges: WeightedHole[][];
+  /** 상대별 역할 — «UTG 오픈» · «BB가 UTG 오픈 수비» 같은 표기를 UI가 만든다 */
+  oppRoles: EntryRole[];
 }
 
 /** 가중 무작위 추출(비복원) — 뒷자리가 더 자주 뽑힌다 */
@@ -71,6 +79,70 @@ export function makeTableSim(preflopCount: number, _names?: HandNames): TableSim
   const heroPos = Math.floor(Math.random() * 6);
   const activeSlots = [0, ...pickSlots(heroPos, preflopCount - 1)].sort((a, b) => a - b);
   // activeSlots가 0을 포함한 오름차순이므로 인덱스 0 = 나 = hands[0]이 보장된다
-  const { hands, board } = dealHands(preflopCount);
-  return { heroPos, activeSlots, hands, board };
+  const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots));
+  const oppRanges = oppRoles.map(rangeFor);
+  const { hands, board } = dealFromRanges(oppRanges);
+  return { heroPos, activeSlots, hands, board, oppRanges, oppRoles };
+}
+
+/**
+ * 이 좌석이 어떤 역할로 팟에 들어왔나.
+ *
+ * ★모델(가정): 프리플랍 액션 순서(UTG→BB)에서 **팟에 남은 사람 중 가장 먼저인 사람이 오픈**했고,
+ *   나머지는 그 오픈을 수비(콜 또는 3벳)했다. 나도 이 순서에 들어간다 — 내가 맨 앞이면
+ *   상대 전원이 «내 오픈을 수비한 사람»이다. 3명 이상 팟의 두 번째 수비자도 같은 수비 표를 쓴다
+ *   (콜드콜 2번째 이후 표는 차트에 없다 · 단순화).
+ * ★BB는 액션 순서가 맨 끝이라 2명 이상 팟에서 오프너가 될 수 없다.
+ */
+function roleOf(heroPos: number, slot: number, activeSlots: number[]): EntryRole {
+  const order = (s: number) => (heroPos + s) % 6; // POSITIONS_6 = 액션 순서
+  const opener = activeSlots.reduce((a, s) => (order(s) < order(a) ? s : a));
+  const pos = positionAt(heroPos, slot);
+  if (slot === opener) return { kind: "open", pos };
+  return { kind: "defend", pos, vs: positionAt(heroPos, opener) };
+}
+
+/** 빈도 가중 추출 — 이미 쓴 카드와 겹치는 콤보는 다시 뽑는다 */
+function pickWeighted(range: WeightedHole[], used: Set<number>): WeightedHole["hole"] {
+  const total = range.reduce((a, c) => a + c.w, 0);
+  for (let tries = 0; tries < 1000; tries++) {
+    let r = Math.random() * total;
+    let k = 0;
+    while (k < range.length - 1 && r >= range[k].w) { r -= range[k].w; k++; }
+    const h = range[k].hole;
+    if (!used.has(h[0][0] * 4 + h[0][1]) && !used.has(h[1][0] * 4 + h[1][1])) return h;
+  }
+  throw new Error("레인지에서 콤보를 뽑지 못함");
+}
+
+/**
+ * 나는 무작위 2장(레인지 밖의 패로도 «끝까지 가 보는» 도구라서), 상대는 각자 레인지에서,
+ * 보드는 남은 카드에서 뽑는다.
+ */
+function dealFromRanges(oppRanges: WeightedHole[][]): { hands: Card[][]; board: Card[] } {
+  const deck: NCard[] = [];
+  for (let r = 2; r <= 14; r++) for (let s = 0; s < 4; s++) deck.push([r, s]);
+  /** 아직 안 쓴 카드에서 n장 — 부분 Fisher-Yates */
+  const draw = (n: number, used: Set<number>): NCard[] => {
+    const rest = deck.filter((c) => !used.has(c[0] * 4 + c[1]));
+    for (let i = 0; i < n; i++) {
+      const j = i + Math.floor(Math.random() * (rest.length - i));
+      [rest[i], rest[j]] = [rest[j], rest[i]];
+    }
+    return rest.slice(0, n);
+  };
+  const used = new Set<number>();
+  const mark = (cs: NCard[]) => cs.forEach((c) => used.add(c[0] * 4 + c[1]));
+  const hero = draw(2, used);
+  mark(hero);
+  const opp = oppRanges.map((range) => {
+    const h = pickWeighted(range, used);
+    mark(h);
+    return h;
+  });
+  const board = draw(5, used);
+  return {
+    hands: [hero, ...opp].map((h) => h.map(toDisplay)),
+    board: board.map(toDisplay),
+  };
 }

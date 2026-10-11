@@ -25,8 +25,10 @@ const EN_UI: QuizUI = {
 
   myEquity: "Your equity",
   vsOpponents: (n) => (n === 0 ? "no one left" : `against ${n} opponent${n > 1 ? "s" : ""}`),
-  basisRandom: "vs random hands",
+  basisSeat: "vs seat-based ranges",
   basisRange: "vs hands matching their actions",
+  roleOpen: "Opened",
+  roleDefend: "Defended",
   revealedLabel: "👀 Against the exact hands shown",
   revealedNote: (gap) =>
     `The number above assumes you cannot see their cards, which is why it is ${gap}%p apart. The top figure is the one you would actually decide on.`,
@@ -71,8 +73,8 @@ const EN_UI: QuizUI = {
   formulaCaveat:
     "These measure different things. The top one is the chance you HIT; the bottom is the chance you WIN. You can hit and still lose if an opponent improves further, and you can miss and still win. The verdict uses the bottom number.",
   noDrawNote: (basis, min, max) =>
-    basis === "random"
-      ? `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${min}–${max} hands (scaled to your device) against random holdings.`
+    basis === "seat"
+      ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${min}–${max} hands (scaled to your device) against the hands each opponent would plausibly enter the pot with from their seat.`
       : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${min}–${max} hands (scaled to your device) against every holding that matches the actions you saw.`,
 
   ruleTitle: "What this simulator assumes",
@@ -96,7 +98,16 @@ const EN_UI: QuizUI = {
         <b className="text-foreground">Your equity is calculated as if you cannot see their cards.</b> From the
         flop on, each opponent&rsquo;s range is every hand that would have taken exactly the actions you saw —
         after a raise, only two pair or better remains. The players who fold on screen also drop out of the
-        math. Only preflop treats opponents as fully random.
+        math.
+      </p>
+      <p className="mb-2">
+        <b className="text-foreground">Opponents&rsquo; preflop hands come from seat-based ranges.</b> Of the
+        players in the pot, whoever acts first preflop is treated as the opener, and everyone else as having
+        defended that open with a call or a 3-bet (opening range · defending range). The ranges are 6-max
+        100bb cash consensus ranges cross-checked across several public sources, with borderline hands mixed
+        at 25/50/75%. Where no chart exists (HJ facing a UTG open · SB facing a UTG, HJ or CO open) and for the
+        third player onward, the nearest defending chart stands in. Only your own hand is random — the tool lets
+        you play any two cards to the river. A 3-bet does not change the pot size here (simplified).
       </p>
       <p className="mb-2">
         <b className="text-foreground">The verdict is pure pot odds.</b> Implied odds, opponent tendencies and
@@ -126,9 +137,9 @@ const EN_UI: QuizUI = {
 export default function WinRateQuizClientEn() {
   return (
     <div className="min-h-screen max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-3 py-3 lg:py-6">
-      <div className="text-center mb-2 lg:mb-3">
+      <div className="text-center mb-1.5 lg:mb-3">
         <h1 className="font-serif text-2xl font-black text-foreground">Equity Simulator 🃏</h1>
-        <p className="text-xs text-muted-foreground mt-0.5">Play it blind — then find out where you should have folded</p>
+        <p className="hidden sm:block text-xs text-muted-foreground mt-0.5">Play it blind — then find out where you should have folded</p>
       </div>
       <WinRateSimulator ui={EN_UI} />
     </div>

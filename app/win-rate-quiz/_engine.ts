@@ -11,6 +11,7 @@
 //     (물리 교과서의 "마찰이 없다고 가정하면"과 같은 취급)
 
 import { EVAL, type Card } from "./_equity";
+import type { WeightedHole } from "./_ranges";
 
 const { score5, best7fast } = EVAL;
 
@@ -90,6 +91,19 @@ export interface ActionStep {
 }
 
 /**
+ * 빈도 가중 레인지 → 표본용 후보 목록. 빈도 25·50·75·100을 1·2·3·4벌 복사해 넣어
+ * `heroEquity`의 균등 추출이 그대로 빈도 가중 추출이 된다. 죽은 카드(내 패·보드)와 겹치는 콤보는 뺀다.
+ */
+function expandPool(range: WeightedHole[], deadKeys: Set<number>): NCard[][] {
+  const out: NCard[][] = [];
+  for (const c of range) {
+    if (deadKeys.has(keyOf(c.hole[0])) || deadKeys.has(keyOf(c.hole[1]))) continue;
+    for (let k = Math.round(c.w / 25); k > 0; k--) out.push(c.hole);
+  }
+  return out;
+}
+
+/**
  * 이 상대가 **관측된 액션을 그대로 했을** 홀카드 조합 전부.
  *
  * ★2026-08-05 정정 — 처음엔 "폴드만 안 했으면 통과"로 만들었는데, 그러면
@@ -97,29 +111,26 @@ export interface ActionStep {
  *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
  *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
  */
-async function eligibleHoles(deadKeys: Set<number>, history: ActionStep[]): Promise<NCard[][]> {
-  const deck: NCard[] = [];
-  for (let r = 2; r <= 14; r++)
-    for (let s = 0; s < 4; s++) if (!deadKeys.has(r * 4 + s)) deck.push([r, s]);
-  const out: NCard[][] = [];
-  // 이 루프도 양보해야 한다 — 1,081쌍 × 이력 단계라 6배 느린 기기에선 200ms를 넘긴다
+async function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[]): Promise<NCard[][]> {
+  // ★2026-10-11: 출발점이 «남은 카드 전부(1,081쌍)»에서 **그 상대의 프리플랍 레인지**로 바뀌었다.
+  //   레이즈·콜이 공개 정보인 것처럼, 프리플랍에 팟에 들어왔다는 것도 공개 정보다.
+  const kept: WeightedHole[] = [];
+  // 이 루프도 양보해야 한다 — 콤보 수 × 이력 단계라 6배 느린 기기에선 200ms를 넘긴다
   let n = 0;
   let last = performance.now();
-  for (let i = 0; i < deck.length; i++) {
-    for (let j = i + 1; j < deck.length; j++) {
-      if (++n % CLOCK_EVERY === 0 && performance.now() - last > SLICE_MS) {
-        await yieldToMain();
-        last = performance.now();
-      }
-      const hole = [deck[i], deck[j]];
-      let ok = true;
-      for (const step of history) {
-        if (opponentAction(hole, step.board) !== step.action) { ok = false; break; }
-      }
-      if (ok) out.push(hole);
+  for (const c of preflop) {
+    if (++n % CLOCK_EVERY === 0 && performance.now() - last > SLICE_MS) {
+      await yieldToMain();
+      last = performance.now();
     }
+    if (deadKeys.has(keyOf(c.hole[0])) || deadKeys.has(keyOf(c.hole[1]))) continue;
+    let ok = true;
+    for (const step of history) {
+      if (opponentAction(c.hole, step.board) !== step.action) { ok = false; break; }
+    }
+    if (ok) kept.push(c);
   }
-  return out;
+  return expandPool(kept, deadKeys);
 }
 
 /** 메인스레드를 잠깐 놓아준다 — 안 하면 계산이 1.6초짜리 long task가 되어 화면이 얼어붙는다 */
@@ -144,7 +155,8 @@ const CLOCK_EVERY = 128;
 /**
  * 상대들의 홀카드가 미지수일 때 내 승률 %. 무승부는 절반으로 센다.
  *
- * @param pools  **상대별** 홀카드 후보 레인지. null이면 전원 무작위(프리플랍).
+ * @param pools  **상대별** 홀카드 후보 레인지(내 패·보드와 겹치는 콤보는 빠져 있어야 한다).
+ *               null이면 전원 무작위 — 2026-10-11부터 화면에서는 안 쓴다(프리플랍도 자리별 레인지).
  *               상대마다 액션이 다르므로(한 명은 레이즈, 한 명은 콜) 레인지도 각각이다.
  * @param onChunk 표본 CHUNK개마다 불린다 — 메인스레드 양보용
  */
@@ -388,8 +400,8 @@ export interface StreetRecord {
   required: number | null;
   /** 상대 패를 모르는 상태에서의 내 승률 % */
   equity: number;
-  /** 이 승률이 무작위 상대 기준인지, 규칙 레인지 기준인지 */
-  basis: "random" | "range";
+  /** 이 승률이 자리별 프리플랍 레인지 기준인지(프리플랍), 그 위에 액션까지 맞춘 레인지 기준인지(플랍~) */
+  basis: "seat" | "range";
   /** 팟오즈만 놓고 봤을 때의 판정 */
   verdict: "call" | "fold" | "free";
 }
@@ -455,6 +467,8 @@ export async function runHand(
   oppHands: Card[][],
   oppSlots: number[],
   board: Card[],
+  /** 상대별 프리플랍 레인지 (`TableSim.oppRanges` — 딜에 쓴 것과 같은 표) */
+  oppRanges: WeightedHole[][],
   /** 스트리트가 하나 끝날 때마다 부른다 — 사용자가 프리플랍을 읽는 동안 나머지가 계산된다 */
   onStreet?: (streets: StreetRecord[]) => void
 ): Promise<HandResult> {
@@ -499,15 +513,17 @@ export async function runHand(
 
     // ── 내 승률: 상대 패를 모른다는 전제로 계산한다 (실제 딜된 패는 쓰지 않는다)
     let equity = 0;
-    const basis: "random" | "range" = s === 0 ? "random" : "range";
+    const basis: "seat" | "range" = s === 0 ? "seat" : "range";
     if (live.length) {
       if (s === 0) {
-        equity = await heroEquity(heroHand, [], live.length, null, SAMPLES.preflop);
+        const dead = new Set(hN.map(keyOf));
+        const pools = live.map((i) => expandPool(oppRanges[i], dead));
+        equity = await heroEquity(heroHand, [], live.length, pools, SAMPLES.preflop);
       } else {
-        // ★상대마다 자기 액션 이력에 맞는 레인지를 만든다.
+        // ★상대마다 «자기 프리플랍 레인지 ∩ 자기 액션 이력»으로 레인지를 만든다.
         //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pools = await Promise.all(live.map((i) => eligibleHoles(dead, history[i])));
+        const pools = await Promise.all(live.map((i) => eligibleHoles(dead, history[i], oppRanges[i])));
         equity = await heroEquity(heroHand, board.slice(0, shown), live.length, pools, SAMPLES.postflop);
       }
     } else {

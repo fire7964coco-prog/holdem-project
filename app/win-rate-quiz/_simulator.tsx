@@ -49,8 +49,12 @@ export interface QuizUI {
   /** 승률 카드 */
   myEquity: string;
   vsOpponents: (n: number) => string;
-  basisRandom: string;
+  /** 프리플랍 = 자리별 레인지 기준 · 플랍~ = 그 위에 액션까지 맞춘 레인지 기준 */
+  basisSeat: string;
   basisRange: string;
+  /** 프리플랍 좌석 표시 — 이 상대가 어떤 역할로 팟에 들어왔나(레인지 출처) */
+  roleOpen: string;
+  roleDefend: string;
   /** 상대 패를 공개했을 때 나란히 뜨는 "그 패들 상대 승률" */
   revealedLabel: string;
   /** 두 값의 차이(%p)를 받아 왜 다른지 한 줄로 설명 */
@@ -96,7 +100,7 @@ export interface QuizUI {
    * basis를 받아 문장을 갈라야 한다 — 표본도 적응형(min~max)이라 고정 숫자를 박으면 안 된다
    * (2026-08-05 검수 판정 #1).
    */
-  noDrawNote: (basis: "random" | "range", minSamples: string, maxSamples: string) => string;
+  noDrawNote: (basis: "seat" | "range", minSamples: string, maxSamples: string) => string;
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -257,7 +261,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       if (cancelled) return;
       setSim(s);
       const oppSlots = s.activeSlots.slice(1);
-      const r = await runHand(s.hands[0], s.hands.slice(1), oppSlots, s.board, (partial) => {
+      const r = await runHand(s.hands[0], s.hands.slice(1), oppSlots, s.board, s.oppRanges, (partial) => {
         if (!cancelled) setStreets(partial);
       });
       if (!cancelled) { setStreets(r.streets); setResult(r); }
@@ -375,10 +379,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
     // 액션 라벨
     const act: Action | undefined = rec?.actionBySlot[slot];
+    // 프리플랍에는 액션이 없으므로 «어떤 레인지로 들어왔나»(오픈·수비)를 대신 적는다
+    const role = !isHero ? sim.oppRoles[k - 1] : undefined;
     const statusText = isHero ? undefined
       : act === "raise" ? ui.raise
       : act === "call" ? ui.call
-      : street === 0 ? undefined : ui.check;
+      : street === 0 ? (role?.kind === "open" ? ui.roleOpen : ui.roleDefend) : ui.check;
 
     const label = isHero
       ? describeHand(sim.hands[k], sim.board.slice(0, boardShown), false, ui.names)
@@ -456,11 +462,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
         boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
       }}>
-        <div className="relative flex flex-col items-center justify-between min-h-[318px] lg:min-h-[522px]"
+        {/* ★S-034 ⑤ (2026-10-11): 폰 390×844에서 팟오즈 박스가 고정 버튼 밑에 깔렸다(실측 50px).
+            모바일 높이·위아래 여백을 줄여 «테이블→승률→팟오즈→버튼»을 첫 화면에 다시 넣는다 */}
+        <div className="relative flex flex-col items-center justify-between min-h-[290px] py-2 lg:py-3 lg:min-h-[522px]"
           style={{
             borderRadius: "46% / 40%", background: FELT,
             border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
-            padding: "12px 6px",
+            paddingLeft: 6, paddingRight: 6,
           }}>
 
           {/* ── 모바일: 위 3석 ── */}
@@ -512,7 +520,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             {ui.myEquity} · {ui.streets[street]}
           </span>
           <span className="text-[10px] text-white/40">
-            {rec.basis === "random" ? ui.basisRandom : ui.basisRange}
+            {rec.basis === "seat" ? ui.basisSeat : ui.basisRange}
           </span>
         </div>
         <div className="flex items-end gap-2 mt-1">
@@ -547,9 +555,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       </div>
 
       {/* ── 팟오즈 ── */}
-      <div className="rounded-xl px-4 py-3 mb-4 border-2"
+      <div className="rounded-xl px-4 py-2 lg:py-3 mb-4 border-2"
         style={{ borderColor: rec.verdict === "fold" ? `${BAD}55` : rec.verdict === "call" ? `${GOOD}55` : "hsl(var(--border))" }}>
-        <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1.5">{ui.potOddsTitle}</div>
+        <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1 lg:mb-1.5">{ui.potOddsTitle}</div>
         {rec.toCall === 0 ? (
           <p className="text-sm text-muted-foreground">{ui.noBet}</p>
         ) : (
@@ -579,6 +587,17 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             데스크톱(lg↑)은 이미 첫 화면 안에 들어오므로 고정하지 않는다. */}
       {!isEnd ? (
         <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
+          {/* ★S-034 ⑤ (2026-10-11): 플랍부터 팟오즈 박스가 2~3줄로 늘어 판정 줄이 이 버튼 밑에 깔린다
+              (실측 390×844에서 박스 끝 742~787px · 버튼 722px). 폰에서만 판정 한 줄을 버튼 위에 붙여
+              «승률 → 판정 → 버튼»이 첫 화면에 남게 한다. 식 전체는 위 박스에 그대로 있다 */}
+          {rec.required !== null && (
+            <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-sm font-black tabular-nums shadow-lg"
+              style={{ background: "hsl(var(--background))", border: `2px solid ${rec.verdict === "call" ? GOOD : BAD}88`,
+                color: rec.verdict === "call" ? GOOD : BAD }}>
+              {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required.toFixed(oddsDigits)}% →{" "}
+              {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
+            </div>
+          )}
           <button onClick={() => setStreet((s) => Math.min(s + 1, streets.length - 1))}
             disabled={waiting}
             className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-wait shadow-xl lg:shadow-none"
