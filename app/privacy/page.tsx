@@ -8,15 +8,17 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
  * 개인정보처리방침.
  *
  * ★여기 적힌 수집 항목·수탁사는 **추측이 아니라 코드에서 확인한 것**이다.
- *   - 수집 항목  : supabase/schema.sql (profiles·posts·comments·likes·event_entries·chat_messages)
+ *   - 수집 항목  : supabase/schema.sql (profiles·posts·comments·likes·event_entries·chat_messages ·
+ *                  trainer_attempts §10 · my-records.sql §12 solver_saved_items·win_rate_quiz_hands)
  *   - 분석 도구  : app/layout.tsx (GA4 G-CHSBJJDC14 · Vercel Speed Insights · Vercel Analytics)
  *   - 번역 위탁  : CLAUDE.md §5 + app/api 번역 라우트 (Gemini Flash API)
  *   - 저장 위치  : Supabase 서울 리전 (CLAUDE.md §5)
  *   스택을 바꾸면 이 문서도 같이 바꿔야 한다. 안 그러면 "사실과 다른 고지"가 된다.
  */
 
-// 🔴 솔버 후기창 배포 때 실제 배포일로 바꾼다(코드 1 = 10/7 판독 뒤 배포 · docs/solver-review-design.md §10-2)
-const UPDATED = "2026-10-09";
+// 🔴 수집 항목을 바꾸면 배포일로 바꾼다 — 10-11 = 학습·퀴즈 기록 3줄(docs/my-records-design.md §4 ·
+//   트레이너 기록은 08-15부터 수집 중이었는데 표에 없었다)
+const UPDATED = "2026-10-11";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
@@ -91,6 +93,21 @@ export default function PrivacyPage() {
               <td>후기·질문 작성 시</td>
             </tr>
             <tr>
+              <td>GTO 트레이너 기록</td>
+              <td>푼 문제, 고른 액션, EV 손실, 푼 시각</td>
+              <td>로그인 상태로 GTO 트레이너를 풀 때</td>
+            </tr>
+            <tr>
+              <td>솔버 저장 목록</td>
+              <td>솔버에 저장한 레인지·벳 설정과 그룹 이름</td>
+              <td>로그인 상태로 솔버에 저장할 때</td>
+            </tr>
+            <tr>
+              <td>승률 퀴즈 기록</td>
+              <td>판마다 테이블 크기·인원, 짐작한 승률의 오차, 콜·폴드 판정 맞힘 여부, 점수, 시각(카드는 저장하지 않음)</td>
+              <td>로그인 상태로 승률 시뮬레이터 퀴즈를 할 때</td>
+            </tr>
+            <tr>
               <td>전략 글 투표</td>
               <td>선택한 답, 브라우저에 저장되는 무작위 식별자, 접속 IP 주소를 변환한 값(해시 — 원래 IP 주소는 저장하지 않음), 한 줄 코멘트(로그인 시)</td>
               <td>투표·코멘트 시</td>
@@ -114,6 +131,7 @@ export default function PrivacyPage() {
           <li>커뮤니티 글·댓글·채팅의 작성자 표시와 본인 게시물 관리</li>
           <li>이벤트 참여 자격 확인, 중복 응모 방지, 추첨·당첨 안내</li>
           <li>대회 후기·투표 결과 표시와 중복 투표·도배 방지</li>
+          <li>학습·퀴즈 기록과 솔버 저장 목록을 계정에 보관해 여러 기기에서 이어 쓰게 하고, 본인에게 «내 기록»으로 보여 주기</li>
           <li>다국어 이용자를 위한 게시물 자동 번역 제공</li>
           <li>서비스 이용 통계 분석과 성능(로딩 속도) 개선</li>
           <li>부정 이용·스팸·불법 게시물 대응</li>
@@ -135,6 +153,11 @@ export default function PrivacyPage() {
             닉네임, 선택한 프로필 이미지, 로그인 수단(구글·카카오 표시), 가입 시기(연·월), 작성 날짜, 기기 종류,
             별점과 본문입니다(이메일은 공개되지 않습니다). 본인이 삭제하거나 회원 탈퇴하면 지체 없이 파기하며,
             직접 올린 프로필 이미지는 다른 이미지로 바꾸거나 탈퇴할 때 함께 삭제합니다.
+          </li>
+          <li>
+            <strong>학습·퀴즈 기록과 솔버 저장 목록</strong> — 본인만 볼 수 있고 다른 이용자에게 공개되지
+            않습니다. 로그인하지 않으면 이용하는 기기(브라우저)에만 남고 서버로 전송되지 않습니다. 본인이
+            삭제하거나 회원 탈퇴하면 지체 없이 파기합니다.
           </li>
           <li>
             <strong>투표 기록</strong> — 무작위 식별자와 IP 주소 변환값만 남아 회원 계정과 연결되지 않으며,
@@ -166,7 +189,7 @@ export default function PrivacyPage() {
           <tbody>
             <tr>
               <td>Supabase</td>
-              <td>회원 인증, 게시물·댓글·채팅 데이터베이스 운영</td>
+              <td>회원 인증, 게시물·댓글·채팅·학습 기록 데이터베이스 운영</td>
               <td>데이터는 서울(대한민국) 리전에 저장</td>
             </tr>
             <tr>
