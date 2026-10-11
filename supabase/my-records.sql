@@ -12,10 +12,13 @@
 
 -- ------------------------------------------------------------
 -- 1) solver_saved_items — 솔버에 저장한 레인지·벳 설정 (쓰는 곳: solver.holdemmaster.com)
---    솔버가 넘긴 SQL(handoff-to-main-site/supabase_solver_saved_items.sql) 그대로 + 상한 2곳 수정:
+--    솔버가 넘긴 SQL(handoff-to-main-site/supabase_solver_saved_items.sql) 그대로 + 상한 3곳 수정:
 --    ① 상한을 «살아 있는 행 1,000 + 지운 표시 포함 전체 3,000»으로 나눴다
 --       (원안은 지운 표시까지 1,000에 세서, 저장·삭제를 오래 반복하면 실제 목록이 적어도 막혔다)
 --    ② 지운 표시를 되살리는 update(deleted_at → null)도 살아 있는 행 상한을 검사한다
+--    ③ upsert가 BEFORE INSERT를 먼저 타므로, 같은 열쇠의 행이 이미 있으면 INSERT 상한을 건너뛴다
+--       (원안은 상한에 닿은 사람이 기존 항목 수정까지 막혔다)
+-- ▶ 운영 DB 실행 = 2026-10-11 (사장님 SQL Editor · 확인 쿼리 RLS true · 정책 4/3 · REST anon 읽기 []·쓰기 401)
 -- ------------------------------------------------------------
 create table if not exists public.solver_saved_items (
   id          uuid primary key default gen_random_uuid(),
