@@ -850,7 +850,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(라벨 불변): k-high L119 equity 풀이 조건 생략(선택) · EN 손질 참고 = ace-paired «about 44% · about 27%» ↔ 원시 44,9%·25,9% · k-high «folds overcards» 예시(QJ·JT·T9) 용법.
 - ✅ 이행 10-11 (17) `bda7e8be` MB-252 = AZ-1 «chỉ khoảng 1,1 combo» · AZ-2 4편 «đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị»(vi 랜딩 faq.ts 축어).
-### 2-BA. 우편함 수신분 — MA-445 (MB-252 재판정 · 기준 `bda7e8be`) · 등재·회신 2026-10-11 (18) MB-253 · 미이행
+### 2-BA. 우편함 수신분 — MA-445 (MB-252 재판정 · 기준 `bda7e8be`) · 등재·회신 2026-10-11 (18) MB-253 · ⛔ **BA-1 기각**(사장님 10-11 «모든용어나 자주듣는용어나....하지마!!!» — 제목·desc «모든/자주 듣는» 수준의 전칭 완화는 하지 않는다 · 재요청 금지 · MB-254)
 
 > 근거 = 검수장 `reports/2026-10/검수-MB252-이행-2026-10-11.md`. MB-252 63자리 전부 OK · 새 WRONG 0 · MA-423·427·429 종결. 위치 대조 = 현 main `aa607f72`.
 

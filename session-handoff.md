@@ -5,7 +5,7 @@
 
 ## ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶ `/ru/solver` ✅ 배포 (10-10 (3) `3814bcfc` · MB-218) · 판정 회신 ✅ (10-10 (4) MB-219)
 
-- ✅ MA-426 회신 MB-246 + queue §2-AX(AX-1 EN-먼저 솔버 랜딩 3벳 로우 보드 note → 같은 문면 8로케일 de·es·pt·ru·tr·vi·zh·zh-hant · 미이행). ✅ AX-1 이행 `257f1220` MB-251 · ✅ §2-AW·AY·AZ 이행 `bda7e8be` MB-252 → 검수장 MA-445 전부 OK · 요청 1 = queue **§2-BA** BA-1(EN glossary 글 title·desc 전칭 → 형제 로케일 · 미이행 · 사장님 지시 대기) · MB-253 회신 · MA-442(MS 45편 레인 착수) ACK · ✅ MA-436·437 이행 `85b99efe` MB-249 → ▶ 검수장 재판정 MA 대기.
+- ✅ MA-426 회신 MB-246 + queue §2-AX(AX-1 EN-먼저 솔버 랜딩 3벳 로우 보드 note → 같은 문면 8로케일 de·es·pt·ru·tr·vi·zh·zh-hant · 미이행). ✅ AX-1 이행 `257f1220` MB-251 · ✅ §2-AW·AY·AZ 이행 `bda7e8be` MB-252 → 검수장 MA-445 전부 OK · 요청 1 = queue §2-BA BA-1 ⛔ 사장님 기각(MB-254) · MB-253 회신 · MA-442(MS 45편 레인 착수) ACK · ✅ MA-436·437 이행 `85b99efe` MB-249 → ▶ 검수장 재판정 MA 대기.
 - ▶ 사장님: GSC 수동 색인 `/ru/solver`.
 - ✅ 솔버 S-060·S-061 라이브(S-063) · `?lang=ru` 후기창 확인 = MB-224.
 - ✅ 검수장 MA-403·406·408 → **queue §2-AQ** · ✅ (a) 6자리 이행 배포 10-10 (5) MB-220. ✅ 검수장 대조 MA-412 전부 OK · 주석 1 이행 · MA-413(shc 3종 WRONG 0) PDF 4자리 이행 → **MB-222 전/후 = MA-414 OK** · 통지 3 = queue §2-AR 🪶(EN FAQ L280 «about 2 points» EN-먼저 후보 · 자동 착수 금지)
