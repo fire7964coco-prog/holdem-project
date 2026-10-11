@@ -82,6 +82,21 @@ const EN_UI: QuizUI = {
   chartTitle: "📈 Equity street by street — all cards face up",
   chartRangeLegend: "What you saw",
   chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A line stops on the street that player folded.",
+  quizToggle: "🎯 Quiz",
+  quizGuessTitle: "What's your equity?",
+  quizGuessHint: "Set your guess with the slider",
+  quizSubmit: "Check answer",
+  quizCallSubmit: "Call → check",
+  quizFoldSubmit: "Fold → check",
+  quizResult: (guess, err, points) => `Your guess ${guess}% · off by ${err}%p · ${points} pts`,
+  quizChoiceResult: (ok, verdict) => (ok ? `Right call (${verdict})` : `Wrong — the answer was ${verdict}`),
+  quizStats: (s) => `${s.hands} hand${s.hands === 1 ? "" : "s"} · avg off ${s.avgErr}%p · ${s.hits}/${s.decisions} right · ${s.points.toLocaleString()} pts`,
+  quizReset: "Reset",
+  quizGuessCol: "Guess",
+  quizChoiceCol: "Pick",
+  quizHandSummary: (avgErr, hits, decisions, points) =>
+    `This hand: avg error ${avgErr}%p${decisions > 0 ? ` · ${hits}/${decisions} decisions right` : ""} · ${points} pts`,
+  quizGuessLegend: "Your guess",
 
   ruleTitle: "What this simulator assumes",
   ruleText: (
@@ -133,6 +148,13 @@ const EN_UI: QuizUI = {
         the flop on this counts every remaining card exactly (preflop alone is {SAMPLES.known.toLocaleString()} simulated runs),
         and it never feeds the equity or the call/fold verdict on screen — you would not have that information at a
         real table.
+      </p>
+      <p className="mt-2">
+        <b className="text-foreground">🎯 With Quiz on</b>, the equity and verdict stay hidden on each street until you guess
+        your equity. On streets where someone bets, you also pick call or fold. The answer is “Your equity” above (the
+        figure without seeing their cards), and each guess scores <b className="text-foreground">100 − 4 × error (%p)</b>
+        (zero once you are 25%p or more off). A call/fold pick counts as right when it matches the pot-odds verdict. Your
+        running totals last only while you stay on this page.
       </p>
     </>
   ),

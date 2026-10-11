@@ -40,6 +40,31 @@ const BAD = "#f87171";
  *   회차 4(2~6명)에서 상대가 5명으로 늘면 두 칸을 더 검증해 붙인다.
  */
 const SEAT_COLORS = ["#b08d2a", "#0284c7", "#db2777", "#7c3aed"];
+/** 꺾은선의 «내 짐작» 점선 — 좌석이 아니라 중립색(좌석 팔레트와 겹치지 않게) */
+const GUESS_COLOR = "#e2e8f0";
+
+// ── 퀴즈 모드 (S-034 ③ · 2026-10-11) ────────────────────────────────────────
+/** 한 스트리트의 답 */
+interface QuizAnswer {
+  guess: number;
+  /** 베팅이 없던 스트리트는 null */
+  choice: "call" | "fold" | null;
+  /** 정답 = 그 스트리트의 화면 승률(레인지 기준) */
+  equity: number;
+  err: number;
+  points: number;
+  /** 고른 콜/폴드가 팟오즈 판정과 맞았나 · 고를 게 없던 스트리트는 null */
+  choiceOk: boolean | null;
+}
+interface QuizStats { hands: number; guesses: number; errSum: number; decisions: number; hits: number; points: number }
+const EMPTY_STATS: QuizStats = { hands: 0, guesses: 0, errSum: 0, decisions: 0, hits: 0, points: 0 };
+/**
+ * 짐작 1번의 점수 = 100 − 4 × 오차(%p), 0 아래는 0. 오차 25%p면 0점.
+ * ★규칙 설명(ko·en ruleText)에 이 식을 그대로 적어 두었다 — 바꾸면 거기도 같이.
+ */
+const quizPoints = (err: number) => Math.max(0, Math.round(100 - 4 * err));
+/** 퀴즈 모드 켜짐 기억(보는 사람 브라우저에만 · 실패해도 기본값 꺼짐) */
+const QUIZ_KEY = "wrq-quiz-mode";
 
 export interface QuizUI {
   names: HandNames;
@@ -119,6 +144,29 @@ export interface QuizUI {
   chartRangeLegend: string;
   /** 실선 = 패를 다 깠을 때 좌석별 승률 · 폴드한 사람은 거기서 선이 끝난다 */
   chartNote: string;
+  /** 퀴즈 모드 (S-034 ③) — 켜면 스트리트마다 승률을 먼저 짐작하고(콜/폴드도 고르고) 정답을 본다 */
+  quizToggle: string;
+  quizGuessTitle: string;
+  quizGuessHint: string;
+  /** 베팅이 없는 스트리트 — 짐작만 내고 확인 */
+  quizSubmit: string;
+  /** 베팅이 있는 스트리트 — 콜/폴드를 고르는 순간 짐작과 같이 제출 */
+  quizCallSubmit: string;
+  quizFoldSubmit: string;
+  /** 정답 공개 뒤 한 줄 — 짐작·오차·점수 */
+  quizResult: (guess: number, err: string, points: number) => string;
+  /** 고른 콜/폴드가 팟오즈 판정과 맞았나 */
+  quizChoiceResult: (ok: boolean, verdict: string) => string;
+  /** 세션 누적 한 줄 */
+  quizStats: (s: { hands: number; avgErr: string; hits: number; decisions: number; points: number }) => string;
+  quizReset: string;
+  /** 복기 표에 붙는 두 열 */
+  quizGuessCol: string;
+  quizChoiceCol: string;
+  /** 복기 아래 이번 판 요약 */
+  quizHandSummary: (avgErr: string, hits: number, decisions: number, points: number) => string;
+  /** 꺾은선의 «내 짐작» 선 */
+  quizGuessLegend: string;
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -382,6 +430,24 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [street, setStreet] = useState(0);
   const [reveal, setReveal] = useState(false);
   const [showRule, setShowRule] = useState(false);
+  /**
+   * 퀴즈 모드 (S-034 ③) — 기본은 꺼짐(지금의 «끝까지 보고 복기» 흐름 그대로).
+   * 켜면 스트리트마다 승률·판정을 가린 채 짐작을 먼저 받는다. 답은 판마다(answers), 누적은 페이지에 있는 동안(stats).
+   */
+  const [quiz, setQuiz] = useState(false);
+  const [guess, setGuess] = useState(50);
+  const [answers, setAnswers] = useState<Record<number, QuizAnswer>>({});
+  const [stats, setStats] = useState<QuizStats>(EMPTY_STATS);
+  // 켜짐 기억은 effect에서 읽는다 — 첫 렌더에서 읽으면 서버 렌더(꺼짐)와 갈려 하이드레이션이 깨진다
+  useEffect(() => {
+    try { if (localStorage.getItem(QUIZ_KEY) === "1") setQuiz(true); } catch { /* 저장소 막힘 = 꺼짐 */ }
+  }, []);
+  const toggleQuiz = useCallback(() => {
+    setQuiz((q) => {
+      try { localStorage.setItem(QUIZ_KEY, q ? "0" : "1"); } catch { /* 기억만 못 할 뿐 */ }
+      return !q;
+    });
+  }, []);
 
   /**
    * ★계산은 스트리트 단위로 흘려보낸다 — 프리플랍이 나오는 즉시 화면에 뿌리고 나머지를 이어서 계산한다.
@@ -429,10 +495,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   const newHand = useCallback(() => {
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setAnswers({}); setGuess(50);
     setHandId((id) => id + 1);
   }, []);
   const changeCount = useCallback((n: number) => {
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setAnswers({}); setGuess(50);
     setPreflopCount(n);
   }, []);
 
@@ -442,9 +510,34 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const boardShown = street === 0 ? 0 : street + 2;
   /** 다음 스트리트가 아직 계산 중인가 */
   const waiting = !result && street + 1 >= streets.length;
-  const isEnd = !!result && street >= lastStreet;
+  /** 이 스트리트의 퀴즈 답 */
+  const answer = answers[street] as QuizAnswer | undefined;
+  /**
+   * 퀴즈에서 아직 답을 안 낸 스트리트 — 승률·판정·상대 패를 가린다.
+   * 상대가 이 스트리트에서 전부 폴드했으면 물을 게 없다(승률 100%로 끝난 판).
+   * ★리버에서도 답을 먼저 받는다 — 안 그러면 쇼다운이 상대 패와 결과를 먼저 보여 준다.
+   */
+  const quizPending = quiz && !!rec && !answer && rec.opponentsBefore - rec.foldedSlots.length > 0;
+  const isEnd = !!result && street >= lastStreet && !quizPending;
   const showdown = isEnd && result?.wonByFoldAt === null;
-  const cardsUp = reveal || showdown;
+  const cardsUp = (reveal && !quizPending) || showdown;
+
+  const submitGuess = (choice: "call" | "fold" | null) => {
+    if (!rec || answer) return;
+    const err = Math.abs(guess - rec.equity);
+    const points = quizPoints(err);
+    const choiceOk = choice === null ? null : choice === rec.verdict;
+    const firstOfHand = Object.keys(answers).length === 0;
+    setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
+    setStats((s) => ({
+      hands: s.hands + (firstOfHand ? 1 : 0),
+      guesses: s.guesses + 1,
+      errSum: s.errSum + err,
+      decisions: s.decisions + (choice === null ? 0 : 1),
+      hits: s.hits + (choiceOk ? 1 : 0),
+      points: s.points + points,
+    }));
+  };
 
   /** 좌석 slot → 상대 인덱스(hands 배열 기준). 없으면 -1 */
   const slotToIdx = useMemo(() => {
@@ -502,8 +595,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       key: "range", name: ui.chartRangeLegend, color: GOLD, dashed: true,
       values: [0, 1, 2, 3].map((s) => result.streets.find((x) => x.street === s)?.equity),
     };
-    return [...seats, seen];
-  }, [sim, result, nameOf, ui.chartRangeLegend]);
+    // 퀴즈로 짐작한 스트리트가 있으면 «내 짐작» 점선을 더한다 — 점선 둘의 간격 = 내 감각의 오차
+    const guessed = [0, 1, 2, 3].map((s) => answers[s]?.guess);
+    const mine: ChartSeries[] = guessed.some((v) => v !== undefined)
+      ? [{ key: "guess", name: ui.quizGuessLegend, color: GUESS_COLOR, dashed: true, values: guessed }]
+      : [];
+    return [...seats, seen, ...mine];
+  }, [sim, result, nameOf, answers, ui.chartRangeLegend, ui.quizGuessLegend]);
 
   /** 쇼다운 승자 좌석 (전원 폴드면 나) */
   const winnerSlots = useMemo(() => {
@@ -569,21 +667,37 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       eq={knownBySlot[slot]} eqColor={SEAT_COLORS[k]} />;
   };
 
+  /**
+   * 인원 버튼 + 퀴즈 토글 한 줄. ★폰 첫 화면 높이(S-034 ⑤)를 지키려고 토글을 따로 줄로 내리지 않는다 —
+   * 390px에서 «2명 3명 4명 | 🎯» 네 개가 한 줄에 들어가도록 버튼 좌우 여백을 줄였다.
+   */
+  const controls = (cls: string) => (
+    <div className={`flex justify-center items-center gap-1.5 sm:gap-2 ${cls}`}>
+      {[2, 3, 4].map((n) => (
+        <button key={n} onClick={() => changeCount(n)}
+          className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all"
+          style={preflopCount === n
+            ? { borderColor: GOLD, background: `${GOLD}1f`, color: GOLD }
+            : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
+          {ui.playersBtn(n)}
+        </button>
+      ))}
+      <span className="w-px h-5 bg-border mx-0.5" aria-hidden />
+      <button onClick={toggleQuiz} aria-pressed={quiz}
+        className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        style={quiz
+          ? { borderColor: GOLD, background: GOLD, color: "#000" }
+          : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
+        {ui.quizToggle}
+      </button>
+    </div>
+  );
+
   if (!sim || !rec) {
     return (
       <>
         <p className="text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
-        <div className="flex justify-center gap-2 mb-4">
-          {[2, 3, 4].map((n) => (
-            <button key={n} onClick={() => changeCount(n)}
-              className="px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all"
-              style={preflopCount === n
-                ? { borderColor: GOLD, background: `${GOLD}1f`, color: GOLD }
-                : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
-              {ui.playersBtn(n)}
-            </button>
-          ))}
-        </div>
+        {controls("mb-4")}
         <div className="rounded-3xl p-16 text-center text-sm text-white/70" style={{ background: FELT, border: `2px solid ${GOLD}44` }}>
           🃏 {ui.loading}
         </div>
@@ -597,21 +711,20 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const hitPct = ruleOf24(outs.total, outs.toCome);
   /** 판정줄 자릿수 — 1자리 반올림으로 두 값이 같아지면("25.0% < 25.0%") 2자리로 늘린다. 판정 자체는 전정밀 비교 */
   const oddsDigits = rec.required !== null && rec.equity.toFixed(1) === rec.required.toFixed(1) ? 2 : 1;
+  /** 이번 판 퀴즈 답 — 복기 표 열·요약은 답이 하나라도 있을 때만 */
+  const answerList = Object.values(answers);
+  const hasAnswers = answerList.length > 0;
+  const handQuiz = hasAnswers ? {
+    avgErr: (answerList.reduce((a, x) => a + x.err, 0) / answerList.length).toFixed(1),
+    hits: answerList.filter((x) => x.choiceOk).length,
+    decisions: answerList.filter((x) => x.choice !== null).length,
+    points: answerList.reduce((a, x) => a + x.points, 0),
+  } : null;
 
   return (
     <>
       <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
-      <div className="flex justify-center gap-2 mb-2 lg:mb-4">
-        {[2, 3, 4].map((n) => (
-          <button key={n} onClick={() => changeCount(n)}
-            className="px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all"
-            style={preflopCount === n
-              ? { borderColor: GOLD, background: `${GOLD}1f`, color: GOLD }
-              : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
-            {ui.playersBtn(n)}
-          </button>
-        ))}
-      </div>
+      {controls("mb-2 lg:mb-4")}
 
       {/* ── 넓은 화면(lg↑)에서는 본문을 반으로: 좌 = 테이블 / 우 = 승률·팟오즈·버튼 전부 ──
           ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
@@ -682,8 +795,35 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* ── 우: 승률·팟오즈·산출근거·버튼 전부 ── */}
       <div>
 
-      {/* ── 내 승률 ── */}
+      {/* ── 내 승률 ──
+          퀴즈에서 답을 내기 전에는 같은 자리에 짐작 슬라이더를 둔다(카드 높이를 비슷하게 맞춰 폰 첫 화면을 지킨다) */}
       <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+        {quizPending ? (
+          <>
+            <div className="flex justify-between items-baseline gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
+                🎯 {ui.quizGuessTitle} · {ui.streets[street]}
+              </span>
+              <span className="text-[10px] text-white/40 text-right">
+                {rec.basis === "seat" ? ui.basisSeat : ui.basisRange}
+              </span>
+            </div>
+            <div className="flex items-end gap-2 mt-1">
+              <span className="text-3xl lg:text-4xl font-black tabular-nums leading-none text-white">
+                {guess}<span className="text-2xl">%</span>
+              </span>
+              <span className="flex flex-col leading-tight pb-0.5 min-w-0">
+                <span className="text-[11px] text-white/50 whitespace-nowrap">{ui.vsOpponents(liveOpponents)}</span>
+                <span className="text-[10.5px] text-white/55">{ui.quizGuessHint}</span>
+              </span>
+            </div>
+            <input type="range" min={0} max={100} step={1} value={guess}
+              onChange={(e) => setGuess(Number(e.target.value))}
+              aria-label={ui.quizGuessTitle}
+              className="w-full mt-2 h-2.5 cursor-pointer" style={{ accentColor: GOLD }} />
+          </>
+        ) : (
+        <>
         <div className="flex justify-between items-baseline">
           <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
             {ui.myEquity} · {ui.streets[street]}
@@ -703,10 +843,25 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <WinTieLose split={rec.split} ui={ui} />
           </span>
         </div>
-        <div className="h-2.5 rounded-full overflow-hidden bg-black/40 mt-2">
+        <div className="relative h-2.5 rounded-full overflow-hidden bg-black/40 mt-2">
           <motion.div className="h-full" style={{ background: GOLD }}
             initial={false} animate={{ width: `${rec.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
+          {/* 퀴즈 답을 낸 스트리트 — 내 짐작 자리에 흰 눈금 */}
+          {answer && (
+            <span className="absolute top-0 bottom-0 w-[3px] -ml-[1.5px] rounded-full" aria-hidden
+              style={{ left: `${answer.guess}%`, background: GUESS_COLOR, boxShadow: "0 0 0 1px rgba(0,0,0,0.6)" }} />
+          )}
         </div>
+        {answer && (
+          <p className="text-[11px] font-bold tabular-nums mt-1.5" style={{ color: GUESS_COLOR }}>
+            🎯 {ui.quizResult(answer.guess, answer.err.toFixed(1), answer.points)}
+            {answer.choiceOk !== null && (
+              <span style={{ color: answer.choiceOk ? GOOD : BAD }}>
+                {" · "}{ui.quizChoiceResult(answer.choiceOk, rec.verdict === "call" ? ui.verdictCall : ui.verdictFold)}
+              </span>
+            )}
+          </p>
+        )}
 
         {/* 카드를 공개했을 때만 — 같은 화면의 두 숫자가 왜 다른지가 이 도구의 핵심 교육 장면이다 */}
         {known && (
@@ -727,11 +882,31 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </p>
           </div>
         )}
+        </>
+        )}
+        {/* 퀴즈 세션 누적 — 페이지에 있는 동안만(새로고침하면 0).
+            폰에서는 짐작하는 동안 숨긴다 — 그 한 줄이 팟오즈 줄을 고정 버튼 밑으로 민다 */}
+        {quiz && (
+          <div className={`${quizPending ? "hidden lg:flex" : "flex"} items-center justify-between gap-2 mt-2 pt-1.5 border-t border-white/10`}>
+            <span className="text-[10.5px] text-white/55 tabular-nums">
+              {ui.quizStats({
+                hands: stats.hands,
+                avgErr: stats.guesses ? (stats.errSum / stats.guesses).toFixed(1) : "—",
+                hits: stats.hits, decisions: stats.decisions, points: stats.points,
+              })}
+            </span>
+            {stats.guesses > 0 && (
+              <button onClick={() => setStats(EMPTY_STATS)} className="text-[10px] text-white/40 underline shrink-0">
+                {ui.quizReset}
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       {/* ── 팟오즈 ── */}
       <div className="rounded-xl px-4 py-2 lg:py-3 mb-4 border-2"
-        style={{ borderColor: rec.verdict === "fold" ? `${BAD}55` : rec.verdict === "call" ? `${GOOD}55` : "hsl(var(--border))" }}>
+        style={{ borderColor: quizPending ? "hsl(var(--border))" : rec.verdict === "fold" ? `${BAD}55` : rec.verdict === "call" ? `${GOOD}55` : "hsl(var(--border))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1 lg:mb-1.5">{ui.potOddsTitle}</div>
         {rec.toCall === 0 ? (
           <p className="text-sm text-muted-foreground">{ui.noBet}</p>
@@ -745,11 +920,14 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {" → "}{ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} ={" "}
               <b className="text-foreground">{rec.required!.toFixed(oddsDigits)}%</b>
             </p>
+            {/* 퀴즈 답 전에는 판정 줄을 가린다 — 필요 승률(식)은 짐작의 재료라 그대로 보여 준다 */}
+            {!quizPending && (
             <p className="text-sm font-black mt-1" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
               {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required!.toFixed(oddsDigits)}% →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </p>
-            {rec.verdict === "fold" && street < 3 && (
+            )}
+            {!quizPending && rec.verdict === "fold" && street < 3 && (
               <p className="text-[11px] text-muted-foreground mt-1">{ui.impliedNote}</p>
             )}
           </>
@@ -765,7 +943,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           {/* ★S-034 ⑤ (2026-10-11): 플랍부터 팟오즈 박스가 2~3줄로 늘어 판정 줄이 이 버튼 밑에 깔린다
               (실측 390×844에서 박스 끝 742~787px · 버튼 722px). 폰에서만 판정 한 줄을 버튼 위에 붙여
               «승률 → 판정 → 버튼»이 첫 화면에 남게 한다. 식 전체는 위 박스에 그대로 있다 */}
-          {rec.required !== null && (
+          {rec.required !== null && !quizPending && (
             <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-sm font-black tabular-nums shadow-lg"
               style={{ background: "hsl(var(--background))", border: `2px solid ${rec.verdict === "call" ? GOOD : BAD}88`,
                 color: rec.verdict === "call" ? GOOD : BAD }}>
@@ -773,12 +951,43 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </div>
           )}
+          {/* 퀴즈 답 전: 베팅이 있으면 콜/폴드 버튼이 곧 제출(짐작과 같이) · 없으면 확인 한 개 */}
+          {quizPending ? (
+            rec.toCall > 0 ? (
+              <>
+              {/* 폰에서는 팟오즈 박스가 이 버튼들 밑에 깔린다 — 콜/폴드를 고를 재료(필요 승률 식)만 버튼 위에 한 줄 */}
+              <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-[13px] font-bold tabular-nums shadow-lg text-foreground"
+                style={{ background: "hsl(var(--background))", border: "2px solid hsl(var(--border))" }}>
+                {ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} = <b>{rec.required!.toFixed(1)}%</b>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <button onClick={() => submitGuess("call")}
+                  className="py-3.5 lg:py-4 rounded-xl font-black text-base transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none border-2"
+                  style={{ background: "hsl(var(--background))", borderColor: GOOD, color: GOOD }}>
+                  {ui.quizCallSubmit}
+                </button>
+                <button onClick={() => submitGuess("fold")}
+                  className="py-3.5 lg:py-4 rounded-xl font-black text-base transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none border-2"
+                  style={{ background: "hsl(var(--background))", borderColor: BAD, color: BAD }}>
+                  {ui.quizFoldSubmit}
+                </button>
+              </div>
+              </>
+            ) : (
+              <button onClick={() => submitGuess(null)}
+                className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none"
+                style={{ background: GOLD }}>
+                {ui.quizSubmit}
+              </button>
+            )
+          ) : (
           <button onClick={() => setStreet((s) => Math.min(s + 1, streets.length - 1))}
             disabled={waiting}
             className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-wait shadow-xl lg:shadow-none"
             style={{ background: GOLD }}>
             {waiting ? `⏳ ${ui.loading}` : ui.revealBtn(ui.streets[street + 1])}
           </button>
+          )}
         </div>
       ) : result && (
         <>
@@ -792,22 +1001,37 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <div className="rounded-xl p-4 mb-3" style={{ background: "hsl(var(--muted))" }}>
             <div className="font-black text-sm mb-2 text-foreground">{ui.reviewTitle}</div>
             <div className="overflow-x-auto">
-              <table className="w-full text-xs tabular-nums">
+              <table className={`w-full ${hasAnswers ? "text-[11px]" : "text-xs"} tabular-nums`}>
                 <thead>
                   <tr className="text-muted-foreground text-left">
-                    {ui.reviewCols.map((c, i) => <th key={i} className="font-semibold pb-1 pr-3 whitespace-nowrap">{c}</th>)}
+                    {(hasAnswers ? [...ui.reviewCols, ui.quizGuessCol, ui.quizChoiceCol] : ui.reviewCols)
+                      .map((c, i) => <th key={i} className={`font-semibold pb-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>{c}</th>)}
                   </tr>
                 </thead>
                 <tbody>
                   {streets.map((r) => (
                     <tr key={r.street} className="border-t" style={{ borderColor: "hsl(var(--border))" }}>
-                      <td className="py-1 pr-3 font-bold whitespace-nowrap">{ui.streets[r.street]}</td>
-                      <td className="py-1 pr-3">{r.equity.toFixed(1)}%</td>
-                      <td className="py-1 pr-3">{r.required === null ? "—" : `${r.required.toFixed(1)}%`}</td>
-                      <td className="py-1 font-bold whitespace-nowrap"
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} font-bold whitespace-nowrap`}>{ui.streets[r.street]}</td>
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{r.equity.toFixed(1)}%</td>
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{r.required === null ? "—" : `${r.required.toFixed(1)}%`}</td>
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} font-bold whitespace-nowrap`}
                         style={{ color: r.verdict === "fold" ? BAD : r.verdict === "call" ? GOOD : "hsl(var(--muted-foreground))" }}>
                         {r.verdict === "free" ? "—" : r.verdict === "call" ? ui.verdictCall : ui.verdictFold}
                       </td>
+                      {hasAnswers && (() => {
+                        const a = answers[r.street];
+                        return (
+                          <>
+                            <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>
+                              {a ? <>{a.guess}%<span className="block text-[10px] text-muted-foreground leading-tight">±{a.err.toFixed(1)}</span></> : "—"}
+                            </td>
+                            <td className="py-1 font-bold whitespace-nowrap"
+                              style={{ color: a?.choiceOk === true ? GOOD : a?.choiceOk === false ? BAD : "hsl(var(--muted-foreground))" }}>
+                              {a?.choice ? `${a.choice === "call" ? ui.verdictCall : ui.verdictFold} ${a.choiceOk ? "✓" : "✗"}` : "—"}
+                            </td>
+                          </>
+                        );
+                      })()}
                     </tr>
                   ))}
                 </tbody>
@@ -817,6 +1041,11 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {result.firstMistake !== null ? ui.reviewMistake(ui.streets[result.firstMistake]) : ui.reviewNoMistake}
             </p>
             <p className="text-[11px] text-muted-foreground mt-1">{ui.reviewInvested(result.invested, result.finalPot)}</p>
+            {handQuiz && (
+              <p className="text-xs font-bold mt-1.5 text-foreground">
+                🎯 {ui.quizHandSummary(handQuiz.avgErr, handQuiz.hits, handQuiz.decisions, handQuiz.points)}
+              </p>
+            )}
           </div>
 
           {chartSeries && <EquityChart series={chartSeries} streets={ui.streets} ui={ui} />}
@@ -832,7 +1061,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       )}
 
       {/* 상대 카드 보기 */}
-      {!showdown && (
+      {/* 퀴즈 답 전에는 숨긴다 — 패를 보면 짐작이 아니게 된다 */}
+      {!showdown && !quizPending && (
         <button onClick={() => setReveal((v) => !v)}
           className="w-full mt-2 py-2.5 rounded-xl text-xs font-bold border-2 transition-all"
           style={{ borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -866,7 +1096,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="rounded-lg px-3 py-2 mb-2" style={{ background: "hsl(var(--background))" }}>
               <div className="flex justify-between items-baseline gap-2">
                 <span className="text-[11px] text-muted-foreground">{ui.winLabel2}</span>
-                <span className="text-lg font-black tabular-nums text-primary">{rec.equity.toFixed(1)}%</span>
+                <span className="text-lg font-black tabular-nums text-primary">{quizPending ? "?" : `${rec.equity.toFixed(1)}%`}</span>
               </div>
             </div>
 

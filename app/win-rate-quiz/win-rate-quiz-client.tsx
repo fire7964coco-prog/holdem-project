@@ -86,6 +86,21 @@ const KO_UI: QuizUI = {
   chartTitle: "📈 스트리트별 승률 — 패를 다 깠을 때",
   chartRangeLegend: "내가 본 승률",
   chartNote: "실선은 모든 패를 공개했을 때 좌석별 승률이고, 점선은 상대 패를 모른 채 화면에서 본 내 승률입니다. 폴드한 사람은 그 스트리트에서 선이 끝납니다.",
+  quizToggle: "🎯 퀴즈",
+  quizGuessTitle: "내 승률은 몇 %일까?",
+  quizGuessHint: "슬라이더로 짐작해 보세요",
+  quizSubmit: "정답 확인",
+  quizCallSubmit: "콜 → 정답 확인",
+  quizFoldSubmit: "폴드 → 정답 확인",
+  quizResult: (guess, err, points) => `내 짐작 ${guess}% · 오차 ${err}%p · ${points}점`,
+  quizChoiceResult: (ok, verdict) => (ok ? `판정 맞음(${verdict})` : `판정 틀림 — 정답은 ${verdict}`),
+  quizStats: (s) => `누적 ${s.hands}판 · 평균 오차 ${s.avgErr}%p · 판정 ${s.hits}/${s.decisions} · ${s.points.toLocaleString()}점`,
+  quizReset: "초기화",
+  quizGuessCol: "내 짐작",
+  quizChoiceCol: "내 선택",
+  quizHandSummary: (avgErr, hits, decisions, points) =>
+    `이번 판 평균 오차 ${avgErr}%p${decisions > 0 ? ` · 판정 ${hits}/${decisions} 맞힘` : ""} · ${points}점`,
+  quizGuessLegend: "내 짐작",
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (
@@ -135,6 +150,12 @@ const KO_UI: QuizUI = {
         <b className="text-foreground">상대 패를 공개하면</b> 좌석마다 «모든 패를 알 때의 승률»을 붙입니다. 이 값은 플랍부터
         남은 카드를 전부 열거한 정확한 값이고(프리플랍만 {SAMPLES.known.toLocaleString()}회 시뮬레이션), 화면 승률과
         콜·폴드 판정에는 쓰지 않습니다 — 실전에서는 볼 수 없는 정보라서요.
+      </p>
+      <p className="mt-2">
+        <b className="text-foreground">🎯 퀴즈를 켜면</b> 스트리트마다 승률과 판정을 가린 채 내 승률을 먼저 짐작합니다.
+        누군가 베팅한 스트리트에서는 콜·폴드도 같이 고릅니다. 정답은 위 «내 승률»(상대 패를 모를 때의 값)이고,
+        짐작 한 번의 점수는 <b className="text-foreground">100 − 4 × 오차(%p)</b>입니다(오차 25%p 이상이면 0점).
+        콜·폴드는 팟오즈 판정과 같으면 맞힌 것으로 셉니다. 누적 기록은 이 페이지에 있는 동안만 남습니다.
       </p>
     </>
   ),
