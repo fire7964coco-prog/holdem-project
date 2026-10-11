@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler no sentido estrito, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas uma sequência constante de bad beats normalmente significa que os adversários estão colocando dinheiro atrás — o tipo de jogo em que você quer estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -207,7 +207,7 @@ A. Não — em quase todos os casos são opostos. Um bad beat significa que o se
 2. **Na definição estrita, é o oposto de um cooler.** Um bad beat precisa de uma grande vantagem e de um suckout (o azarão melhora); um cooler estrito não tem suckout (o líder continuou na frente). Se você era favorito pesado ao entrar e o seu adversário teve que melhorar pra ganhar, foi um bad beat.
 3. **Bad beats são secretamente bons pra você.** Eles significam que os adversários estão colocando dinheiro atrás e dando sorte — na maior parte das vezes, decisões perdedoras que te pagam muito mais vezes do que te queimam. Coloque bem, dê de ombros pra batida, e deixe a variância se equilibrar.
 
-Bad beats são o imposto que você paga por jogar um jogo vencedor. Os melhores jogadores levam muitos — muitas vezes mais, porque são favoritos com mais frequência — eles só aprenderam a registrá-los como variância, proteger a próxima mão do tilt, e voltar a [jogar melhor que a mesa](/pt/blog/holdem-fish). Coloque o seu dinheiro bem com frequência suficiente, e a crueldade do baralho vira o seu lucro.
+Bad beats são o imposto que você paga por jogar um jogo vencedor. Os melhores jogadores levam muitos — muitas vezes mais, porque são favoritos com mais frequência — eles só aprenderam a registrá-los como variância, proteger a próxima mão do tilt, e voltar a [jogar melhor que a mesa](/pt/blog/holdem-fish). Coloque o seu dinheiro bem com frequência suficiente — desde que colocar o dinheiro seja bom de verdade —, e a crueldade do baralho vira o seu lucro.
 
 ---
 

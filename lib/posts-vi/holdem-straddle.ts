@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Straddle là một blind tự nguyện — thường gấp đôi big blind — đặt trước khi bài được chia. Đổi lại, người straddle được act cuối cùng ở preflop và có quyền raise, còn stakes của ván coi như tăng gấp đôi. Trong gần như mọi trường hợp đây là nước đi -EV, và ngoài cash game thì hầu như không nơi nào cho phép.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -41,7 +41,7 @@ Chủ yếu cash game | Gần như không bao giờ được phép trong giải 
 Hai điều khiến nó không chỉ là thêm tiền vào pot:
 
 - Nó là một **live blind** (blind còn quyền hành động). Y như big blind, người straddle đã mua **quyền raise sau cùng (option)** kể cả khi mọi người chỉ call — một "blind thứ ba" với quyền act trên nó.
-- Nó được đặt **khi chưa thấy bài**. Bạn straddle *trước* khi nhìn bài (ở hầu hết phòng, trước cả khi bài được chia). Bạn đang bỏ tiền ra mà không có thông tin nào, và đó là toàn bộ lý do nó thường là ý tồi — nói thêm bên dưới.
+- Nó được đặt **khi chưa thấy bài**. Bạn straddle *trước* khi nhìn bài (ở hầu hết phòng, trước cả khi bài được chia). Bạn đang bỏ tiền ra mà không có thông tin nào, và đó là một trong những lý do chính khiến nó thường là ý tồi — nói thêm bên dưới.
 
 Straddle không phải một cú raise theo nghĩa thông thường — nó là một blind đặt lại cái giá. Nếu bạn đã hiểu [small blind và big blind là gì](/vi/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), straddle đơn giản là một blind *thứ ba* tùy chọn mà người chơi tự nguyện đặt để đẩy stakes lên và giành vị trí.
 

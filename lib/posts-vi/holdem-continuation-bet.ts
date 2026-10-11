@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) là cược ở flop của người đã raise preflop. Quy tắc hiện đại không phải 'c-bet mọi flop' mà là cược nhỏ và thường ở flop có lợi cho range của bạn (bài chung cao, khô như K-7-2), check ở flop có lợi cho đối thủ (thấp, liên kết như 7-6-5). Size khoảng 1/3 pot ở flop khô, 2/3 trở lên ở flop ướt; c-bet ít hơn khi không có vị trí nếu bạn là người raise duy nhất, và ít hơn nhiều trong pot nhiều người.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 phút",
@@ -162,7 +162,7 @@ Trì hoãn biến một chỗ mà cú c-bet tự động lẽ ra rỉ chip thàn
 
 ## Khi nào KHÔNG nên c-bet? (Check là vũ khí, không phải cờ trắng)
 
-Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: đừng c-bet khi board trúng đậm range đối thủ, khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài chưa có gì, hay khi tay bài của bạn cần ở lại để bảo vệ range check. Cụ thể:
+Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: đừng c-bet theo mặc định khi board trúng đậm range đối thủ, khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài chưa có gì, hay khi tay bài của bạn cần ở lại để bảo vệ range check. Cụ thể:
 
 - **Board trúng đậm range của đối thủ.** Một flop 7‑6‑5 hay 9‑8‑7 trúng những tay bài call cú raise mạnh hơn hẳn trúng bài của bạn. Bet ở đây với phần lớn range chỉ là tặng chip — check thường xuyên hơn nhiều, và khi bet, bet lớn và chọn lọc.
 - **Bạn không có vị trí trên board động** với bài tầm tầm. Hành động trước không có thông tin, giữ pot nhỏ và check.

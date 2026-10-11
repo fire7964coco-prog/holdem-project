@@ -28,7 +28,7 @@ export const GLOSSARY_DICT_DE: GlossaryDict = {
   hero: {
     badge: "♠ {n} Begriffe · durchsuchbar von A bis Z",
     h1: "Poker-Begriffe",
-    leadBefore: "Jeder Texas-Hold'em-Begriff, den du am Tisch hörst – ",
+    leadBefore: "Die Texas-Hold'em-Begriffe, die du am Tisch am häufigsten hörst – ",
     leadStrong: "Nuts, Outs, Pot Odds, 3-Bet, ICM",
     leadAfter: " und mehr – klar und korrekt erklärt. Suche oder filtere nach Kategorie.",
   },

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler en sentido estricto, ibas por delante cuando entró el dinero; la baraja simplemente te traicionó al final. Duele, pero un goteo constante de bad beats suele significar que los rivales meten dinero por detrás — justo la partida en la que quieres estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -215,7 +215,7 @@ A. Sí, es completamente normal — y de hecho es buena señal. Un bad beat exig
 2. **En sentido estricto, es lo opuesto de un cooler.** Un bad beat necesita una gran ventaja y un suckout (el desfavorecido mejora); un cooler estricto no tiene suckout (el líder siguió por delante). Si eras favorito claro al entrar las fichas y tu rival tuvo que mejorar para ganar, fue un bad beat.
 3. **Los bad beats en el fondo te convienen.** Significan que los rivales meten dinero por detrás y tienen suerte — la mayoría de las veces, decisiones perdedoras que te pagan mucho más a menudo de lo que te queman. Mételo por delante, encógete de hombros ante el bad beat y deja que la varianza se nivele.
 
-Los bad beats son el impuesto que pagas por jugar una partida ganadora. Los mejores jugadores reciben un montón — a menudo más que nadie, porque son favoritos más a menudo —; solo que han aprendido a registrarlos como varianza, proteger la siguiente mano del tilt y volver a [jugar mejor que la mesa](/es/blog/holdem-fish). Mete el dinero por delante con suficiente frecuencia, y la crueldad de la baraja se convierte en tu beneficio.
+Los bad beats son el impuesto que pagas por jugar una partida ganadora. Los mejores jugadores reciben un montón — a menudo más que nadie, porque son favoritos más a menudo —; solo que han aprendido a registrarlos como varianza, proteger la siguiente mano del tilt y volver a [jugar mejor que la mesa](/es/blog/holdem-fish). Mete el dinero por delante con suficiente frecuencia — siempre que meterlo sea de verdad lo correcto —, y la crueldad de la baraja se convierte en tu beneficio.
 
 ---
 

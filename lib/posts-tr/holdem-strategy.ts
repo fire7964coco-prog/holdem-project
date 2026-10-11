@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kazanan her Texas Hold'em kararı tekrar eden beş soruya iner: nerede oturuyorum, bu el oynanmaya değer mi, pota ilk giriyorsam limp yerine raise mi fold mu, flop'ta bahse devam ediyor muyum ve eli ne zaman bırakıyorum. Bu beş soruyu iyi cevaplayan tight-aggressive bir oyuncu flop öncesi ellerin yaklaşık %80'ini fold eder, oynadıklarını agresif oynar ve ezber ipucu listesine gerek kalmadan neredeyse her gündelik masayı yener.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -207,7 +207,7 @@ A. Tekrar eden beş karar üzerine kurulu tight-aggressive bir stil oyna: elleri
 
 **Q. Yeni başlayanlar için en iyi poker taktikleri hangileri?**
 
-A. Tight-aggressive (TAG). Az el oyna ama agresif oyna — call yerine raise et, ıskaladığında hızla fold et. Yeni başlayanların en yaygın iki kaçağını (çok el oynamak ve fazla pasif oynamak) doğrudan düzeltir ve kazanan stiller arasında öğrenme eğrisi en yumuşak olanıdır. Daha gevşek, daha ileri yaklaşımları denemeden önce buradan başla.
+A. Tight-aggressive (TAG). Az el oyna ama agresif oyna — call yerine raise et, ıskalayıp gerçek bir agresiflikle karşılaştığında fold et. Yeni başlayanların en yaygın iki kaçağını (çok el oynamak ve fazla pasif oynamak) doğrudan düzeltir ve kazanan stiller arasında öğrenme eğrisi en yumuşak olanıdır. Daha gevşek, daha ileri yaklaşımları denemeden önce buradan başla.
 
 **Q. Poker kazanma taktikleri nelerdir?**
 

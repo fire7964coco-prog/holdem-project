@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong 169 loại bài khởi đầu, chỉ một lát mỏng ở trên cùng — khoảng 15–20% số tay bài bạn được chia — là có lời với người mới. Đôi lớn (AA–TT) và AK raise từ mọi ghế; bạn hành động càng muộn thì mở càng rộng — từ khoảng 13% ở under the gun đến khoảng 43% ở button (bàn 6-max còn rộng hơn). Hãy bắt đầu với một bảng rút gọn, rồi thêm bảng GTO preflop khi raise-hay-fold đã thành phản xạ.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -193,7 +193,7 @@ Những tay bài khởi đầu tệ nhất trong poker không phải rác ngẫu
 | K kèm rác lệch chất (K3o, K4o) | Bị áp đảo bởi mọi lá K tốt hơn | "K là lá bài lớn" |
 | Bất kỳ hai lá đồng chất nào | Thành thùng đến river chỉ ~6,4% số lần (flop ra thùng ~0,8%) | "Nhưng chúng cùng chất mà" |
 
-![Bẫy Át yếu trong Texas Hold'em — A♣ 4♦ viền đỏ là tay bài thua, bị A♠ K♦ màu vàng áp đảo](/images/holdem-starting-hands-weak-ace-trap.webp "Át yếu trông mạnh nhưng luôn bị áp đảo — fold chúng preflop")
+![Bẫy Át yếu trong Texas Hold'em — A♣ 4♦ viền đỏ là tay bài thua, bị A♠ K♦ màu vàng áp đảo](/images/holdem-starting-hands-weak-ace-trap.webp "Át yếu trông mạnh nhưng thường bị những lá Át tốt hơn áp đảo — fold chúng preflop")
 
 ==r:Sai lầm đắt giá nhất người mới mắc phải là call cú raise với Át yếu== như A♣ 4♦ ở phần mở đầu. Khi cuối cùng bạn trúng đôi Át, bạn thường đứng thứ nhì sau A♠ K♦ hoặc A♥ Q♦ — và bạn thua một pot lớn trong khi đinh ninh mình có top pair. Bạn có thật. Họ cũng có, với kicker tốt hơn.
 

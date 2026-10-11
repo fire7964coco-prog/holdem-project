@@ -33,7 +33,7 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
   hero: {
     badge: "♠ {n} terim · A–Z aranabilir",
     h1: "Poker Terimleri Sözlüğü",
-    leadBefore: "Masada duyacağın her Texas Hold'em terimi — ",
+    leadBefore: "Masada en sık duyacağın Texas Hold'em terimleri — ",
     leadStrong: "nuts, out, pot odds, 3-bet, ICM",
     leadAfter: " ve fazlası — net ve doğru şekilde tanımlandı. Ara ya da kategoriye göre filtrele.",
   },

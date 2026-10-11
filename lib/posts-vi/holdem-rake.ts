@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake là phần nhỏ phòng poker cắt từ hầu hết các pot để tổ chức ván chơi — thường 2,5–10% và có mức cap vài đô la mỗi pot. Hầu hết phòng không thu gì nếu mọi người fold trước flop (\"no flop, no drop\"). Rake ăn nặng nhất vào người chơi stakes thấp và bàn ít người, còn rakeback trả lại một phần cho người chơi thường xuyên.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -102,7 +102,7 @@ Contributed (theo phần đã góp) | Dealt (chia đều)
 Dựa trên rake từ những pot **bạn có bỏ tiền vào** — cách hiện đại tiêu chuẩn | Chia đều cho **mọi người được chia bài** trong pot bị thu rake, dù có góp tiền hay không — nay đã hiếm
 :::
 
-Với người chơi giải trí, rakeback là một đặc quyền nhỏ. Với một reg (regular — người chơi thường xuyên) khối lượng lớn thì nó khổng lồ: khoảng cách giữa thỏa thuận 20% và 40% tỷ lệ với lượng rake bạn thật sự tạo ra, nên nó chỉ thành tiền đáng kể nếu bạn chơi khối lượng thật ở stakes có ý nghĩa — và với nhiều grinder hòa vốn, rakeback *chính là* lợi nhuận của họ. Nó thực chất hạ mức rake thật của bạn, nên đáng kiểm tra trước khi chọn nơi chơi. Chỉ cần nhớ rằng phần lớn lời khuyên về rakeback trên mạng là do tiếp thị liên kết thúc đẩy — hãy đối xử với những trang "đăng ký tại đây" bằng sự hoài nghi bạn dành cho bất kỳ lời chào hàng nào.
+Với người chơi giải trí, rakeback là một đặc quyền nhỏ. Với một reg (regular — người chơi thường xuyên) khối lượng lớn thì nó khổng lồ: khoảng cách giữa thỏa thuận 20% và 40% tỷ lệ với lượng rake bạn thật sự tạo ra, nên nó chỉ thành tiền đáng kể nếu bạn chơi khối lượng thật ở stakes có ý nghĩa — và với nhiều grinder hòa vốn, rakeback *chính là* lợi nhuận của họ. Nó thực chất hạ mức rake thật của bạn. Chỉ cần nhớ rằng phần lớn lời khuyên về rakeback trên mạng là do tiếp thị liên kết thúc đẩy — hãy đối xử với những trang "đăng ký tại đây" bằng sự hoài nghi bạn dành cho bất kỳ lời chào hàng nào.
 
 ---
 
@@ -146,7 +146,7 @@ A. Ở hầu hết cash game, đó là một tỷ lệ của pot, thả vào khe
 
 **Q. Ai là người trả rake?**
 
-A. Rake được lấy thẳng từ pot, nên trên giấy người thắng ván trả nó — stack thắng về nhỏ hơn đúng khoản rake. Thực tế, mọi người đã bỏ chip vào pot ấy đều góp phần, nên cả bàn chia sẻ chi phí qua một buổi chơi. Trong giải đấu thì không có gì mơ hồ: mọi người tham dự trả một khoản phí bằng nhau gộp vào buy-in, dù thắng hay bị loại đầu tiên.
+A. Ở hầu hết cash game, rake được lấy thẳng từ pot, nên trên giấy người thắng ván trả nó — stack thắng về nhỏ hơn đúng khoản rake. Thực tế, mọi người đã bỏ chip vào pot ấy đều góp phần, nên cả bàn chia sẻ chi phí qua một buổi chơi. Trong giải đấu thì không có gì mơ hồ: mọi người tham dự trả một khoản phí bằng nhau gộp vào buy-in, dù thắng hay bị loại đầu tiên.
 
 **Q. Mọi người fold hết trước flop thì có bị thu rake không?**
 
@@ -162,7 +162,7 @@ A. Rakeback hoàn lại một tỷ lệ của phần rake bạn đã trả — t
 
 **Q. Làm sao để trả ít rake hơn?**
 
-A. Bạn không thể thoát rake hoàn toàn trong một ván có thu rake, nhưng có thể thu nhỏ nó. Lấy thỏa thuận rakeback tốt nhất bạn có thể, và chọn phòng có cap thân thiện với người chơi. Chơi lên mức cược cao hơn cũng giảm rake, vì một cap cố định là phần nhỏ hơn của mỗi pot — nhưng chỉ bước lên khi bankroll (quỹ tiền chơi poker) của bạn chịu được biến động *và* bạn vẫn có lợi thế trước đối thủ khó hơn, nếu không người chơi sẽ lấy của bạn nhiều hơn hẳn rake từng lấy. Chơi ít pot hơn nhưng lớn hơn thay vì một loạt pot nhỏ cũng hạ nó: cap chỉ phát huy ở pot lớn, còn pot nhỏ trả trọn tỷ lệ. Tương tự với việc tránh bàn rất ít người, nơi bạn chơi nhiều ván mỗi giờ hơn hẳn và đặt blind thường xuyên hơn hẳn, nên bạn ở trong nhiều pot bị thu rake hơn mỗi giờ (kể cả khi cap giảm lúc ít người được chia bài). Ưu tiên bàn stakes cao thu time charge cũng giúp — nhưng chuyển sang những bàn đó đòi hỏi cùng một tấm đệm bankroll và lợi thế trước đối thủ. Xét thuần chi phí, một ván bài tại nhà (home game) không thu rake là poker rẻ nhất — không gì bị cắt khỏi pot.
+A. Bạn không thể thoát rake hoàn toàn trong một ván có thu rake, nhưng có thể thu nhỏ nó. Chơi lên mức cược cao hơn cũng giảm rake, vì một cap cố định là phần nhỏ hơn của mỗi pot — nhưng chỉ bước lên khi bankroll (quỹ tiền chơi poker) của bạn chịu được biến động *và* bạn vẫn có lợi thế trước đối thủ khó hơn, nếu không người chơi sẽ lấy của bạn nhiều hơn hẳn rake từng lấy. Chơi ít pot hơn nhưng lớn hơn thay vì một loạt pot nhỏ cũng hạ nó: cap chỉ phát huy ở pot lớn, còn pot nhỏ trả trọn tỷ lệ. Tương tự với việc tránh bàn rất ít người, nơi bạn chơi nhiều ván mỗi giờ hơn hẳn và đặt blind thường xuyên hơn hẳn, nên bạn ở trong nhiều pot bị thu rake hơn mỗi giờ (kể cả khi cap giảm lúc ít người được chia bài). Ưu tiên bàn stakes cao thu time charge cũng giúp — nhưng chuyển sang những bàn đó đòi hỏi cùng một tấm đệm bankroll và lợi thế trước đối thủ.
 
 **Q. Tại sao phòng poker thu rake?**
 
@@ -186,7 +186,7 @@ A. Rake live có xu hướng tỷ lệ cao hơn, thường với cap cao hơn, n
 
 1. **Rake là phần nhà cắt để tổ chức ván chơi** — thường 2,5–10% của các pot đủ điều kiện tới một cap nhỏ, và nó tách biệt với thứ bạn thắng hay thua trước đối thủ.
 2. **Nó cắn stakes thấp nặng nhất.** Cap gần như không nhúc nhích khi bạn xuống mức thấp, nên theo tỷ lệ bạn trả nhiều rake nhất ở đáy — "bẫy rake" khiến micro-stakes (mức cược siêu nhỏ) khó thắng đến vậy.
-3. **Rakeback và cấu trúc rake quan trọng.** Nhận lại 20–40% rake, và chọn phòng có cap thân thiện với người chơi, có thể lật ngược kết quả dài hạn của bạn — hãy đo mọi thứ *sau* rake.
+3. **Rakeback và cấu trúc rake quan trọng.** Mức rakeback 20–40% và cấu trúc cap có thể lật ngược kết quả dài hạn của bạn — hãy đo mọi thứ *sau* rake.
 
 Giờ bạn đã thấy phần nhà cắt, những con số bạn đọc ở mọi nơi khác trở nên dễ hiểu hơn: [pot odds](/vi/blog/holdem-pot-odds) của bạn, win rate của bạn, và vì sao một [straddle](/vi/blog/holdem-straddle) làm pot phình to cũng lặng lẽ nuôi rake. Poker có thể thắng được — nhưng chỉ khi bạn thắng những người chơi khác *nhiều hơn* phần nhà lấy đi.
 

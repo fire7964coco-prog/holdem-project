@@ -23,7 +23,7 @@ export const GLOSSARY_DICT_ES: GlossaryDict = {
   hero: {
     badge: "♠ {n} términos · buscador de la A a la Z",
     h1: "Glosario de póker",
-    leadBefore: "Todos los términos de Texas Hold'em que oirás en la mesa — ",
+    leadBefore: "Los términos de Texas Hold'em que más oirás en la mesa — ",
     leadStrong: "nuts, outs, pot odds, 3-bet, ICM",
     leadAfter: " y más — explicados con claridad y precisión. Busca o filtra por categoría.",
   },

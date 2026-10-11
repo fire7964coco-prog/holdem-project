@@ -40,7 +40,7 @@ export const GLOSSARY_DICT_VI: GlossaryDict = {
   hero: {
     badge: "♠ {n} thuật ngữ · tra cứu A–Z",
     h1: "Thuật ngữ poker",
-    leadBefore: "Mọi thuật ngữ Texas Hold'em bạn sẽ nghe ở bàn — ",
+    leadBefore: "Những thuật ngữ Texas Hold'em bạn hay nghe nhất ở bàn — ",
     leadStrong: "nuts, outs, pot odds, 3-bet, ICM",
     leadAfter: " và nhiều từ khác — được giải nghĩa rõ ràng, chính xác. Hãy gõ một từ hoặc lọc theo nhóm.",
   },

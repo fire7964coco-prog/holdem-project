@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler dalam arti ketat, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi aliran bad beat yang terus-menerus biasanya berarti lawan memasukkan uang saat tertinggal — jenis permainan yang memang Anda cari.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -207,7 +207,7 @@ A. Tidak — di hampir semua kasus keduanya berlawanan. Bad beat berarti uang An
 2. **Dalam definisi ketat, itu kebalikan dari cooler.** Bad beat butuh keunggulan besar dan suckout (underdog membaik); cooler ketat tak punya suckout (pemimpin tetap unggul). Jika Anda favorit berat saat masuk dan lawan Anda harus improve untuk menang, itu bad beat.
 3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — sebagian besar waktu, keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
 
-Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima banyak bad beat — sering kali lebih banyak, karena mereka lebih sering menjadi favorit — mereka hanya belajar mencatatnya sebagai variance, melindungi hand berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.
+Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima banyak bad beat — sering kali lebih banyak, karena mereka lebih sering menjadi favorit — mereka hanya belajar mencatatnya sebagai variance, melindungi hand berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering — asalkan memasukkannya memang benar-benar good — dan kekejaman dek menjadi profit Anda.
 
 ---
 

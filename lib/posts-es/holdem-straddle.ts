@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción preflop y la opción de subir, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -41,7 +41,7 @@ Sobre todo cash | Casi nunca permitido en torneos
 Dos cosas hacen que sea más que simple dinero extra en el bote:
 
 - Es una **ciega viva.** Igual que la ciega grande, quien pone el straddle ha comprado la **opción de subir** aunque todos solo igualen — una "tercera ciega" con derecho a actuar sobre ella.
-- Se pone **a ciegas.** Straddleas *antes* de mirar tus cartas (en la mayoría de salas, antes incluso de que las repartan). Estás comprometiendo dinero sin información, que es justo la razón por la que suele ser mala idea — más sobre esto abajo.
+- Se pone **a ciegas.** Straddleas *antes* de mirar tus cartas (en la mayoría de salas, antes incluso de que las repartan). Estás comprometiendo dinero sin información, que es una de las principales razones por las que suele ser mala idea — más sobre esto abajo.
 
 Un straddle no es una subida en el sentido normal — es una ciega que resetea el precio. Si entiendes [qué son la ciega pequeña y la ciega grande](/es/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), un straddle es simplemente una *tercera* opcional que el jugador elige poner para inflar la apuesta y agarrar posición.
 

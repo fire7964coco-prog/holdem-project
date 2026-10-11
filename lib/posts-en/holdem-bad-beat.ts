@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler in the strict sense, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but a steady stream of bad beats usually means opponents are putting money in behind — the kind of game you want to be in.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -206,7 +206,7 @@ A. No — in almost every case they're opposites. A bad beat means your money we
 2. **Strictly defined, it's the opposite of a cooler.** A bad beat needs a big edge and a suckout (the underdog improves); a strict cooler has no suckout (the leader stayed ahead). If you were a heavy favorite going in and your opponent had to improve to win, it was a bad beat.
 3. **Bad beats are secretly good for you.** They mean opponents are putting money in behind and getting lucky — most of the time, losing decisions that pay you off far more often than they burn you. Get it in good, shrug off the beat, and let variance even out.
 
-Bad beats are the tax you pay for playing a winning game. The best players take plenty of them — often more, because they're the favorite more often — they've just learned to log them as variance, protect the next hand from tilt, and get back to [out-playing the table](/en/blog/holdem-fish). Get your money in good often enough, and the deck's cruelty becomes your profit.
+Bad beats are the tax you pay for playing a winning game. The best players take plenty of them — often more, because they're the favorite more often — they've just learned to log them as variance, protect the next hand from tilt, and get back to [out-playing the table](/en/blog/holdem-fish). Get your money in good often enough — as long as getting it in really was good — and the deck's cruelty becomes your profit.
 
 ---
 

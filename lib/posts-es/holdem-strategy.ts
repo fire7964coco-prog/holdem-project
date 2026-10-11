@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -186,7 +186,7 @@ A. Juega un estilo tight-aggressive construido en torno a cinco decisiones que s
 
 **Q. ¿Cuál es la mejor estrategia de póker para principiantes?**
 
-A. Tight-aggressive (TAG). Juega pocas manos, pero juégalas con agresividad — sube en vez de igualar, y foldea rápido cuando falles. Arregla directamente las dos fugas de principiante más comunes (jugar demasiadas manos y jugar demasiado pasivo) y tiene la curva de aprendizaje más suave de cualquier estilo ganador. Empieza ahí antes de experimentar con enfoques más loose y avanzados.
+A. Tight-aggressive (TAG). Juega pocas manos, pero juégalas con agresividad — sube en vez de igualar, y foldea cuando falles y te enfrentes a agresión real. Arregla directamente las dos fugas de principiante más comunes (jugar demasiadas manos y jugar demasiado pasivo) y tiene la curva de aprendizaje más suave de cualquier estilo ganador. Empieza ahí antes de experimentar con enfoques más loose y avanzados.
 
 **Q. ¿Cómo se gana en Texas Hold'em?**
 

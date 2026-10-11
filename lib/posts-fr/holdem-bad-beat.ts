@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un bad beat (sale coup), c'est quand tu mets ton argent au milieu en gros favori, en général à 80 % ou plus, et que tu perds parce que l'adversaire touche la carte chanceuse qui le sauve. Contrairement au cooler au sens strict, tu étais devant au moment de la mise ; c'est le paquet qui t'a trahi à la fin. Ça pique, mais une série régulière de bad beats veut souvent dire que tes adversaires mettent leur argent en étant derrière, exactement la partie que tu veux jouer.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -215,7 +215,7 @@ A. À court terme, oui : sur une main, la chance décide, et c'est exactement ce
 2. **Au sens strict, c'est l'opposé d'un cooler.** Un bad beat exige une grosse avance et un suckout (l'outsider s'améliore) ; un cooler strict n'a pas de suckout (celui qui menait est resté devant). Si tu étais gros favori au départ et que ton adversaire devait s'améliorer pour gagner, c'était un bad beat.
 3. **Les bad beats sont secrètement bons pour toi.** Ils veulent dire que tes adversaires mettent leur argent en étant derrière et ont de la chance : la plupart du temps, des décisions perdantes qui te paient bien plus souvent qu'elles ne te brûlent. Mets ton argent en étant devant, encaisse le coup et laisse la variance s'équilibrer.
 
-Les bad beats sont la taxe que tu paies pour jouer une partie gagnante. Les meilleurs joueurs en prennent beaucoup, souvent plus, parce qu'ils sont plus souvent favoris ; ils ont juste appris à les classer en variance, à protéger la main suivante du tilt et à se remettre à [surclasser la table](/fr/blog/holdem-fish). Mets ton argent en étant devant assez souvent, et la cruauté du paquet devient ton profit.
+Les bad beats sont la taxe que tu paies pour jouer une partie gagnante. Les meilleurs joueurs en prennent beaucoup, souvent plus, parce qu'ils sont plus souvent favoris ; ils ont juste appris à les classer en variance, à protéger la main suivante du tilt et à se remettre à [surclasser la table](/fr/blog/holdem-fish). Mets ton argent en étant devant assez souvent — à condition que mettre l'argent soit vraiment correct —, et la cruauté du paquet devient ton profit.
 
 ---
 

@@ -27,7 +27,7 @@ export const GLOSSARY_DICT_ID: GlossaryDict = {
   hero: {
     badge: "♠ {n} istilah · bisa dicari A–Z",
     h1: "Kamus Istilah Poker",
-    leadBefore: "Setiap istilah Texas Hold'em yang Anda dengar di meja — ",
+    leadBefore: "Istilah Texas Hold'em yang paling sering Anda dengar di meja — ",
     leadStrong: "nuts, outs, pot odds, 3-bet, ICM",
     leadAfter: " dan lainnya — dijelaskan dengan jelas dan tepat. Cari atau saring per kategori.",
   },

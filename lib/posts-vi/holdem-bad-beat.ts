@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Bad beat trong poker là gì? Khi cầm 80% thắng vẫn chưa đủ để giữ stack",
   seoTitle: "Thắng 80% mà vẫn thua cả stack — Bad beat poker là gì?",
   desc: "AA all-in, đối thủ 55 call, river ra con 5 — tôi mất cả stack dù dẫn hơn 4:1. Bad beat poker là gì, khác cooler ở đâu và vì sao nó thường là tin tốt.",
-  tldr: "Bad beat là khi bạn đẩy tiền vào pot với lợi thế rất lớn, thường từ 80% trở lên, rồi thua vì đối thủ trúng đúng lá bài may mắn ở cuối. Khác với cooler theo nghĩa chặt, lúc tiền vào pot bạn đang dẫn trước; chỉ là bộ bài phản bội bạn ở lá cuối. Cảm giác rất đau, nhưng nếu bad beat đến đều đặn thì thường là đối thủ đang bỏ tiền vào khi đã thua thế — đúng kiểu bàn bạn muốn ngồi.",
+  tldr: "Bad beat là khi bạn đẩy tiền vào pot với lợi thế rất lớn, thường từ 80% trở lên, rồi thua vì đối thủ trúng lá bài may mắn — ở flop, turn hay river — sau khi tiền đã vào pot. Khác với cooler theo nghĩa chặt, lúc tiền vào pot bạn đang dẫn trước; chỉ là bộ bài phản bội bạn về sau. Cảm giác rất đau, nhưng nếu bad beat đến đều đặn thì thường là đối thủ đang bỏ tiền vào khi đã thua thế — đúng kiểu bàn bạn muốn ngồi.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -207,7 +207,7 @@ A. Không — trong gần như mọi trường hợp chúng ngược nhau. Bad b
 2. **Định nghĩa chặt thì nó là mặt đối lập của cooler.** Bad beat cần một lợi thế lớn và một suckout (underdog cải thiện); cooler theo nghĩa chặt không có suckout (người dẫn giữ nguyên thế dẫn). Nếu bạn là favorite áp đảo lúc tiền vào và đối thủ phải cải thiện mới thắng, đó là bad beat.
 3. **Bad beat âm thầm tốt cho bạn.** Chúng nghĩa là đối thủ đang đẩy tiền vào khi đã thua thế rồi gặp may — phần lớn thời gian, những quyết định thua trả tiền cho bạn nhiều hơn hẳn số lần chúng đốt bạn. Đẩy vào khi đang tốt, nhún vai với cú thua, và để variance tự cân bằng.
 
-Bad beat là khoản thuế bạn trả cho việc chơi theo một lối chơi có lãi. Những người chơi giỏi nhất hứng rất nhiều — thường là nhiều hơn, vì họ là favorite thường xuyên hơn — họ chỉ học được cách ghi chúng vào sổ như variance, bảo vệ ván tiếp theo khỏi tilt, và quay lại việc [chơi hay hơn cả bàn](/vi/blog/holdem-fish). Đẩy tiền vào khi đang tốt đủ thường xuyên, và sự tàn nhẫn của bộ bài sẽ trở thành lợi nhuận của bạn.
+Bad beat là khoản thuế bạn trả cho việc chơi theo một lối chơi có lãi. Những người chơi giỏi nhất hứng rất nhiều — thường là nhiều hơn, vì họ là favorite thường xuyên hơn — họ chỉ học được cách ghi chúng vào sổ như variance, bảo vệ ván tiếp theo khỏi tilt, và quay lại việc [chơi hay hơn cả bàn](/vi/blog/holdem-fish). Đẩy tiền vào khi đang tốt đủ thường xuyên — miễn là lúc đẩy vào thật sự là tốt — và sự tàn nhẫn của bộ bài sẽ trở thành lợi nhuận của bạn.
 
 ---
 

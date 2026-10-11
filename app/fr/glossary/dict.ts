@@ -29,7 +29,7 @@ export const GLOSSARY_DICT_FR: GlossaryDict = {
   hero: {
     badge: "♠ {n} termes · recherche de A à Z",
     h1: "Lexique du poker",
-    leadBefore: "Tous les termes du Texas Hold'em que tu entendras à table — ",
+    leadBefore: "Les termes du Texas Hold'em que tu entendras le plus à table — ",
     leadStrong: "nuts, outs, cotes du pot, 3-bet, ICM",
     leadAfter: " et bien d'autres — définis clairement et correctement. Cherche un mot ou filtre par catégorie.",
   },

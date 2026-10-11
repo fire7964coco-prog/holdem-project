@@ -17,7 +17,7 @@ export const POST: Post = {
   tldr: "Sau khi small blind open và big blind call, flop A♠A♥6♦ nhận một cú bet 80,1% số lần (79,6% ở một phần ba pot, 0,5% ở ba phần tư, check 19,8%). Đó là điều ngược hẳn với mức 3,0% trên board có đôi 6♣6♦3♥ — và thứ tách hai spot ra không hẳn là chuyện board có đôi, mà là lá nào tạo đôi và nó khớp range của ai (ghế và range đã đổi cùng với board). Những tay bài có trips với lá A là 88 combo so với 66, và 16 combo trong số đó, A-K và A-Q, hoàn toàn không có trong range của người call.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-02",
   readTime: "10 phút",
   emoji: "🅰️",
@@ -182,7 +182,7 @@ Lý do nằm ở **ai sẽ call bạn.** K-K tạo hai đôi (two pair) cùng đ
 
 ## Tự kiểm tra
 
-Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board đôi A" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập thì hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó hiện tần suất trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập tài khoản HoldemMaster để lưu vào tài khoản và học tiếp trên thiết bị khác — đăng nhập là tùy chọn, mọi tính năng đều dùng được khi không đăng nhập.
+Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board đôi A" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập thì hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó hiện tần suất trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị.
 
 **Hãy bấm qua lại với board có đôi 6-6-3.** Cả hai đều là board có đôi mà ma trận lại mang màu ngược nhau. Đi qua các Spot mẫu một lượt, bạn sẽ còn lại một kết luận: trước hết đừng nhìn **đó là board gì**, mà nhìn **board này gắn với range của ai**. Miễn phí, không cần cài đặt, không cần tài khoản.
 

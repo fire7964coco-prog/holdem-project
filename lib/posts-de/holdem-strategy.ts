@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -226,7 +226,7 @@ A. Spiele einen tight-aggressiven Stil, der um fünf sich wiederholende Entschei
 
 **Q. Was ist die beste Poker-Strategie für Anfänger?**
 
-A. Tight-Aggressive (TAG). Spiele wenige Hände, aber spiele sie aggressiv – raise statt zu callen, und folde schnell, wenn du verfehlst. Es behebt direkt die zwei häufigsten Anfänger-Leaks (zu viele Hände spielen und zu passiv spielen) und hat die flachste Lernkurve jedes gewinnenden Stils. Starte dort, bevor du mit looseren, fortgeschritteneren Ansätzen experimentierst.
+A. Tight-Aggressive (TAG). Spiele wenige Hände, aber spiele sie aggressiv – raise statt zu callen, und folde, wenn du verfehlst und echter Aggression gegenüberstehst. Es behebt direkt die zwei häufigsten Anfänger-Leaks (zu viele Hände spielen und zu passiv spielen) und hat die flachste Lernkurve jedes gewinnenden Stils. Starte dort, bevor du mit looseren, fortgeschritteneren Ansätzen experimentierst.
 
 **Q. Wie gewinnt man bei Texas Hold'em?**
 

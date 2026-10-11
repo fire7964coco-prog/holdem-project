@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Chaque décision gagnante au Texas Hold'em se ramène à cinq questions : où suis-je assis (la position), cette main vaut-elle la peine d'être jouée, est-ce que je relance ou je me couche plutôt que d'open-limper, est-ce que je continue à miser au flop (le c-bet), et quand est-ce que je lâche ? Un joueur serré-agressif qui répond bien à ces cinq questions se couche sur environ 80 % de ses mains préflop, joue les autres agressivement et bat presque toutes les parties entre amateurs, sans liste d'astuces à mémoriser.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -189,7 +189,7 @@ A. Joue un style serré-agressif construit autour de cinq décisions qui revienn
 
 **Q. Comment bien débuter au poker ?**
 
-A. Avec le jeu serré-agressif (TAG). Joue peu de mains, mais joue-les agressivement — relance au lieu de suivre, et couche-toi vite quand tu rates. Ça corrige directement les deux fuites de débutant les plus courantes (trop de mains jouées et trop de passivité) et c'est le style gagnant à la courbe d'apprentissage la plus douce. Commence par là avant d'essayer des approches plus larges et plus avancées.
+A. Avec le jeu serré-agressif (TAG). Joue peu de mains, mais joue-les agressivement — relance au lieu de suivre, et couche-toi quand tu rates et que tu fais face à une vraie agression. Ça corrige directement les deux fuites de débutant les plus courantes (trop de mains jouées et trop de passivité) et c'est le style gagnant à la courbe d'apprentissage la plus douce. Commence par là avant d'essayer des approches plus larges et plus avancées.
 
 **Q. Comment gagner au poker ?**
 

@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Sau khi big blind 3-bet và button call, flop 8♦5♣2♠ nhận một cú bet hai phần ba pot với tần suất 97,8%. Điểm lạ: trong 83 combo của big blind, đúng ba combo có đôi với board — A5s — và không có 88, 55 hay 22 nào trong range cả. Nó vẫn bet vì range chia thành 36 combo overpair và 40 combo ace-high, ở giữa gần như chẳng có gì — chỉ ba combo A5s. Range có hình phân cực thì bet lớn.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -162,7 +162,7 @@ Lý do nằm ở chỗ các set trú ngụ. **Button là người chơi duy nh�
 
 ## Tự kiểm tra
 
-Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board thấp khô" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó hiện tần suất pha trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập tài khoản HoldemMaster để lưu vào tài khoản và học tiếp trên thiết bị khác — đăng nhập là tùy chọn, mọi tính năng đều dùng được khi không đăng nhập.
+Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board thấp khô" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó hiện tần suất pha trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị.
 
 Hãy tìm **hàng "Set/Trips" bị thiếu** (trên app là «Xám») trong bảng «Tay bài / Draw». Rồi chuyển người chơi sang **IP (BTN (bên call))**, hàng đó xuất hiện với 6,3%. Một dòng ấy kể trọn câu chuyện ai đang nắm phần đỉnh của board này. Miễn phí, không cần cài đặt, không cần tài khoản.
 

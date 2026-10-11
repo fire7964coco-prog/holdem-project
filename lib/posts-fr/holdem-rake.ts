@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Le rake, c'est la petite part que la salle prélève sur la plupart des pots pour organiser la partie, en général 2,5 à 10 % plafonnés à quelques dollars. La plupart des salles ne prennent rien si tout le monde se couche avant le flop (« no flop, no drop »). Il pèse surtout sur les petites limites et les tables à peu de joueurs, et le rakeback en rend une partie aux habitués.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -146,7 +146,7 @@ A. Dans la plupart des cash games, c'est un pourcentage du pot, prélevé avant 
 
 **Q. Qui paie le rake au poker ?**
 
-A. Le rake est pris directement dans le pot, donc sur le papier c'est le joueur qui gagne la main qui le paie — le pot remporté lui revient amputé du montant du rake. En pratique, tous ceux qui ont mis des jetons dans ce pot y ont contribué, si bien que toute la table en partage le coût sur une session. En tournoi, pas d'ambiguïté : chaque inscrit paie les mêmes frais intégrés au buy-in, qu'il gagne ou qu'il saute le premier.
+A. Dans la plupart des cash games, le rake est pris directement dans le pot, donc sur le papier c'est le joueur qui gagne la main qui le paie — le pot remporté lui revient amputé du montant du rake. En pratique, tous ceux qui ont mis des jetons dans ce pot y ont contribué, si bien que toute la table en partage le coût sur une session. En tournoi, pas d'ambiguïté : chaque inscrit paie les mêmes frais intégrés au buy-in, qu'il gagne ou qu'il saute le premier.
 
 **Q. Paie-t-on le rake si tout le monde se couche avant le flop ?**
 

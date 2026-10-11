@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action preflop and the option to raise, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -40,7 +40,7 @@ Mostly cash | Almost never allowed in tournaments
 Two things make it more than just extra money in the pot:
 
 - It's a **live blind.** Exactly like the big blind, the straddler has bought the **option to raise** even if everyone just calls — a "third blind" with the right to act on it.
-- It's posted **blind.** You straddle *before* looking at your cards (in most rooms, before they're even dealt). You're committing money with no information, which is the whole reason it's usually a bad idea — more on that below.
+- It's posted **blind.** You straddle *before* looking at your cards (in most rooms, before they're even dealt). You're committing money with no information, which is one of the main reasons it's usually a bad idea — more on that below.
 
 A straddle isn't a raise in the normal sense — it's a blind that resets the price. If you understand [what the small and big blinds are](/en/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), a straddle is simply an optional *third* one that the player chooses to post to inflate the stakes and grab position.
 

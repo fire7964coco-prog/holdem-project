@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação no pré-flop e a opção de aumentar, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -41,7 +41,7 @@ Sobretudo cash | Quase nunca permitido em torneios
 Duas coisas fazem disso mais do que só dinheiro extra no pote:
 
 - É um **blind vivo (live).** Exatamente como o big blind, o straddler comprou a **opção de aumentar** mesmo que todo mundo só pague — um "terceiro blind" com o direito de agir sobre ele.
-- É postado **às cegas.** Você dá o straddle *antes* de olhar suas cartas (na maioria das salas, antes mesmo de elas serem distribuídas). Você está comprometendo dinheiro sem informação nenhuma, que é justamente por isso que costuma ser uma má ideia — mais sobre isso abaixo.
+- É postado **às cegas.** Você dá o straddle *antes* de olhar suas cartas (na maioria das salas, antes mesmo de elas serem distribuídas). Você está comprometendo dinheiro sem informação nenhuma, e esse é um dos principais motivos pelos quais costuma ser uma má ideia — mais sobre isso abaixo.
 
 Um straddle não é um aumento no sentido normal — é um blind que reseta o preço. Se você entende [o que são o small e o big blind](/pt/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), um straddle é simplesmente um *terceiro* opcional que o jogador escolhe postar pra inflar o jogo e comprar posição.
 

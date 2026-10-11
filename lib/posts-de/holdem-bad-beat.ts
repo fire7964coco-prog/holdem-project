@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -230,7 +230,7 @@ A. Nein – in fast jedem Fall sind sie Gegensätze. Ein Bad Beat bedeutet, dass
 2. **Streng definiert ist es das Gegenteil eines Coolers.** Ein Bad Beat braucht einen großen Vorteil und einen Suckout (der Underdog verbessert sich); ein Cooler im engeren Sinn hat keinen Suckout (der Führende blieb vorn). Wenn du beim Reingehen klarer Favorit warst und dein Gegner sich verbessern musste, um zu gewinnen, war es ein Bad Beat.
 3. **Bad Beats sind insgeheim gut für dich.** Sie bedeuten, dass Gegner ihr Geld hinten reinstecken und Glück haben – meistens verlierende Entscheidungen, die dich weit öfter auszahlen, als sie dich verbrennen. Bekomm es gut rein, schüttel den Beat ab und lass die Varianz sich ausgleichen.
 
-Bad Beats sind die Steuer, die du für ein gewinnendes Spiel zahlst. Die besten Spieler kassieren reichlich davon – oft sogar mehr, weil sie öfter Favorit sind –, sie haben nur gelernt, sie als Varianz abzuhaken, die nächste Hand vor Tilt zu schützen und zurück dazu zu kommen, [den Tisch auszuspielen](/de/blog/holdem-fish). Bekomm dein Geld oft genug gut rein, und die Grausamkeit des Decks wird zu deinem Profit.
+Bad Beats sind die Steuer, die du für ein gewinnendes Spiel zahlst. Die besten Spieler kassieren reichlich davon – oft sogar mehr, weil sie öfter Favorit sind –, sie haben nur gelernt, sie als Varianz abzuhaken, die nächste Hand vor Tilt zu schützen und zurück dazu zu kommen, [den Tisch auszuspielen](/de/blog/holdem-fish). Bekomm dein Geld oft genug gut rein – solange das Reingehen wirklich gut war –, und die Grausamkeit des Decks wird zu deinem Profit.
 
 ---
 

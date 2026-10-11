@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mọi quyết định thắng trong Texas Hold'em đều quy về 5 câu hỏi lặp lại: tôi đang ngồi ở vị trí nào, tay bài này có đáng chơi không, raise hay fold thay vì open-limp, có tiếp tục cược ở flop (c-bet) không, và khi nào nên bỏ bài. Người chơi tight-aggressive trả lời tốt 5 câu đó sẽ bỏ khoảng 80% tay bài preflop, chơi mạnh tay khi đã vào pot và thắng gần như mọi bàn chơi vui — không cần học thuộc danh sách mẹo nào cả.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -52,7 +52,7 @@ Mở bất kỳ bài "chiến thuật poker cho người mới" nào, bạn sẽ
 
 </div>
 
-Điều kỳ diệu không nằm ở riêng quyết định nào — mà ở chỗ chúng *nối chuỗi* với nhau. Vị trí tốt khiến việc chọn bài dễ hơn. Chọn bài chặt hơn khiến cú raise của bạn đáng sợ hơn. Cú raise đáng sợ thắng nhiều pot hơn ở flop. Và biết khi nào bỏ bài giữ cho những pot bạn thua luôn nhỏ. Đứt một mắt xích là cả chuỗi đứt. Giờ đi qua từng quyết định.
+Điều kỳ diệu không nằm ở riêng quyết định nào — mà ở chỗ chúng *nối chuỗi* với nhau. Vị trí tốt khiến việc chọn bài dễ hơn. Chọn bài chặt hơn khiến cú raise của bạn đáng sợ hơn. Cú raise đáng sợ thắng nhiều pot hơn ở flop. Và biết khi nào bỏ bài giữ cho những pot bạn thua nhỏ. Đứt một mắt xích là cả chuỗi đứt. Giờ đi qua từng quyết định.
 
 ---
 
@@ -202,7 +202,7 @@ A. Chơi theo lối tight-aggressive xây quanh 5 quyết định lặp lại: c
 
 **Q. Người mới nên bắt đầu với chiến thuật poker nào?**
 
-A. Tight-aggressive (TAG). Chơi ít tay bài, nhưng chơi mạnh — raise thay vì call, và fold nhanh khi trượt. Nó sửa thẳng hai lỗ hổng phổ biến nhất của người mới (chơi quá nhiều tay bài và chơi quá bị động) và có đường cong học tập thoải nhất trong mọi lối chơi thắng. Bắt đầu từ đó trước khi thử những cách tiếp cận rộng hơn, nâng cao hơn.
+A. Tight-aggressive (TAG). Chơi ít tay bài, nhưng chơi mạnh — raise thay vì call, và fold khi trượt và gặp cược thật sự. Nó sửa thẳng hai lỗ hổng phổ biến nhất của người mới (chơi quá nhiều tay bài và chơi quá bị động) và có đường cong học tập thoải nhất trong mọi lối chơi thắng. Bắt đầu từ đó trước khi thử những cách tiếp cận rộng hơn, nâng cao hơn.
 
 **Q. Làm cách nào để chơi poker giỏi và thắng nhiều hơn?**
 

@@ -17,7 +17,7 @@ export const POST: Post = {
   tldr: "Sau khi small blind open và big blind call, flop 7♦6♦5♣ chỉ nhận một cú bet 9,6% số lần và check 90,4%. Pot, stack, SPR, size bet và cả hai range đều y hệt spot trước — chỉ ba lá board thay đổi, và cú bet sụp từ 67,4% xuống 9,6%. Lợi thế range giành được ở preflop là lợi thế về bài cao, và một board thấp liền nhau xóa sạch nó. Equity đảo chiều thành 49,6% so với 50,4%, và realization của người không có vị trí rơi xuống 85,3%.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -207,7 +207,7 @@ Ba loại ô có vệt dày hơn thấy rõ. (Tần suất dưới đây là tru
 
 ## Tự kiểm tra
 
-Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và chọn **Spot mẫu → "Board thấp liền nhau, hai chất" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay ngẫu nhiên, và khi bạn chọn hành động, nó cho thấy tần suất pha trộn và **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập tài khoản HoldemMaster để lưu vào tài khoản và học tiếp trên thiết bị khác — đăng nhập là tùy chọn, mọi tính năng đều dùng được khi không đăng nhập.
+Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và chọn **Spot mẫu → "Board thấp liền nhau, hai chất" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) từ thanh bên — nó chia cho bạn một tay ngẫu nhiên, và khi bạn chọn hành động, nó cho thấy tần suất pha trộn và **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị.
 
 **Bấm qua lại với "Board K-high có lá 10"**, spot trước. Nhãn người chơi ở cả hai đều là "OOP (SB (bên open))", pot và stack y hệt — vậy mà ma trận đổi màu hoàn toàn. Đây là minh chứng ngắn nhất trong loạt bài này về việc board thực sự làm gì. Miễn phí, không cần cài đặt, không cần tài khoản.
 

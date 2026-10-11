@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de la mayoría de botes por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -150,7 +150,7 @@ A. En la mayoría de cash games es un porcentaje del bote (habitualmente 2.5–1
 
 **Q. ¿Quién paga el rake en póker?**
 
-A. El rake se saca directamente del bote, así que sobre el papel lo paga el jugador que gana la mano — el montón ganador vuelve más pequeño por la cantidad del rake. En la práctica, todos los que metieron fichas en ese bote contribuyeron a él, así que la mesa entera comparte el coste a lo largo de una sesión. En torneos no hay ambigüedad: cada participante paga una comisión igual incluida en el buy-in, gane o buste primero.
+A. En la mayoría de cash games, el rake se saca directamente del bote, así que sobre el papel lo paga el jugador que gana la mano — el montón ganador vuelve más pequeño por la cantidad del rake. En la práctica, todos los que metieron fichas en ese bote contribuyeron a él, así que la mesa entera comparte el coste a lo largo de una sesión. En torneos no hay ambigüedad: cada participante paga una comisión igual incluida en el buy-in, gane o buste primero.
 
 **Q. ¿Pagas rake si todos foldean antes del flop?**
 

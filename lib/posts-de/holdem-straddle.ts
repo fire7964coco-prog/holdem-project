@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -42,7 +42,7 @@ Meist Cashgame | Fast nie in Turnieren erlaubt
 Zwei Dinge machen ihn zu mehr als nur zusätzlichem Geld im Pot:
 
 - Es ist ein **Live-Blind.** Genau wie der Big Blind hat der Straddler die **Option zu raisen** gekauft, selbst wenn alle nur callen – ein „dritter Blind“ mit dem Recht, darauf zu handeln.
-- Er wird **blind** gesetzt. Du straddelst, *bevor* du deine Karten anschaust (in den meisten Rooms, bevor sie überhaupt ausgeteilt sind). Du committest Geld ohne jede Information, was der eigentliche Grund ist, warum es meist eine schlechte Idee ist – dazu unten mehr.
+- Er wird **blind** gesetzt. Du straddelst, *bevor* du deine Karten anschaust (in den meisten Rooms, bevor sie überhaupt ausgeteilt sind). Du committest Geld ohne jede Information, was einer der Hauptgründe ist, warum es meist eine schlechte Idee ist – dazu unten mehr.
 
 Ein Straddle ist kein Raise im üblichen Sinn – er ist ein Blind, der den Preis neu setzt. Wenn du verstehst, [was Small Blind und Big Blind sind](/de/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), ist ein Straddle einfach ein optionaler *dritter*, den ein Spieler freiwillig setzt, um den Einsatz aufzublähen und sich Position zu sichern.
 

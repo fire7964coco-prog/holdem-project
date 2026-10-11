@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -146,7 +146,7 @@ A. Di sebagian besar cash game ia adalah persentase dari pot, dijatuhkan sebelum
 
 **Q. Siapa yang membayar rake di poker?**
 
-A. Rake ditarik langsung dari pot, jadi di atas kertas pemenang tanganlah yang membayarnya — tumpukan chip yang ia bawa pulang berkurang persis sebesar rake. Dalam praktiknya, semua yang memasukkan chip ke pot itu ikut menyumbangnya, jadi seisi meja berbagi biayanya sepanjang sesi. Di turnamen tak ada keraguan: setiap peserta membayar biaya yang sama yang dibaurkan ke buy-in, entah menang atau bust pertama.
+A. Di sebagian besar cash game, rake ditarik langsung dari pot, jadi di atas kertas pemenang tanganlah yang membayarnya — tumpukan chip yang ia bawa pulang berkurang persis sebesar rake. Dalam praktiknya, semua yang memasukkan chip ke pot itu ikut menyumbangnya, jadi seisi meja berbagi biayanya sepanjang sesi. Di turnamen tak ada keraguan: setiap peserta membayar biaya yang sama yang dibaurkan ke buy-in, entah menang atau bust pertama.
 
 **Q. Apakah Anda membayar rake jika semua fold sebelum flop?**
 

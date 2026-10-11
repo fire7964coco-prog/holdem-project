@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "straddle 就是发牌前主动补的一个盲注——通常是大盲的 2 倍。它替抓的人买下翻前最后行动权和加注权，把赌注翻倍。绝大多数情况下这是一个 -EV 的打法，而且现金局之外几乎不允许抓。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 分钟",
@@ -42,7 +42,7 @@ export const POST: Post = {
 有两点让它不只是往底池里多丢的钱：
 
 - 它是一个 **活盲注（live blind）**。跟大盲一模一样，抓的人买下了 **加注权**，哪怕所有人都只是跟注——这是一个有权在它之上行动的“第三个盲注”。
-- 它是 **盲抓** 的。你在看牌*之前*就抓 straddle（在多数牌房里，甚至是发牌之前）。你在毫无信息的情况下就把钱投了进去，这正是它通常是个坏主意的根本原因——下面细说。
+- 它是 **盲抓** 的。你在看牌*之前*就抓 straddle（在多数牌房里，甚至是发牌之前）。你在毫无信息的情况下就把钱投了进去，这正是它通常是个坏主意的主要原因之一——下面细说。
 
 straddle 不是通常意义上的加注——它是一个重置价格的盲注。如果你搞懂了 [小盲和大盲是什么](/zh/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp")，那么 straddle 无非就是一个可选的*第三个*盲注，玩家选择补它来把赌注做大、抢下位置。
 

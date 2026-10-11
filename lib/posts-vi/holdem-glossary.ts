@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Đây là bảng giải nghĩa những từ poker tiếng Anh thật sự xuất hiện trong một ván Texas Hold'em, xếp theo cách bạn gặp chúng: hành động bet, vị trí, bài và board, kiểu người chơi, tiền và tình huống ở bàn. Hãy bắt đầu từ các cặp dễ nhầm nhất (check với call, set với trips, cooler với bad beat), rồi lướt theo từng nhóm. Từ nào có bài hướng dẫn sâu hơn sẽ dẫn thẳng tới bài đó.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -45,7 +45,7 @@ Nếu bạn chỉ gỡ rối được một tá từ, hãy chọn những cặp 
 | **Check vs Call** | Check không mất **chip nào** (chỉ khi không có khoản cược nào đang chờ bạn theo); call (theo) là **theo đủ** một khoản cược đã có. |
 | **Blind vs Ante** | Blind (mù) là cược bắt buộc **theo vị trí** (SB/BB); ante là khoản góp nhỏ vào pot trước khi chia bài — theo truyền thống từ **mọi người**, dù hầu hết giải đấu ngày nay dùng big blind ante do một ghế trả. |
 | **Set vs Trips** | Cả hai đều là sám cô (bộ ba) — **set** là cầm đôi trên tay + 1 lá trên board; **trips** là 1 lá trên tay + board có đôi. |
-| **Cooler vs Bad Beat** | [Cooler](/vi/blog/holdem-cooler) = tay quá mạnh để fold gặp tay lớn hơn (theo nghĩa chặt, bạn bị dẫn ngay lúc tiền vào); [bad beat](/vi/blog/holdem-bad-beat) = bạn là favorite (bên có cơ hội thắng cao hơn) lúc tiền vào rồi bị thua ngược. |
+| **Cooler vs Bad Beat** | [Cooler](/vi/blog/holdem-cooler) = tay quá mạnh để fold gặp tay lớn hơn (theo nghĩa chặt, bạn bị dẫn ngay lúc tiền vào); [bad beat](/vi/blog/holdem-bad-beat) = bạn là favorite lớn (bên có cơ hội thắng cao hơn hẳn) lúc tiền vào rồi bị thua ngược. |
 | **Value bet vs Bluff** | Value bet muốn **được call bởi tay yếu hơn**; bluff muốn **tay mạnh hơn fold**. |
 | **Pot odds vs Implied odds** | [Pot odds](/vi/blog/holdem-pot-odds) chỉ tính chip **đang trong pot lúc này**; implied odds cộng thêm phần bạn **sẽ thắng sau**. |
 | **VPIP vs PFR** | VPIP = bạn **chơi** bao nhiêu ván; PFR = bạn **raise** bao nhiêu ván. PFR không bao giờ vượt VPIP. |
@@ -315,7 +315,7 @@ A. VPIP (Voluntarily Put money In Pot) là tỷ lệ ván một người chọn 
 
 **Q. Blind trong poker là gì?**
 
-A. Blind (mù — cược bắt buộc) là hai khoản cược bắt buộc theo vị trí khởi động mỗi ván: small blind (mù nhỏ) ngay bên trái nút dealer và big blind (mù lớn) kế tiếp, và cỡ blind cũng là tên của mức cược ($1/$2). Ai đặt, vì sao, và big blind ante khác gì — tất cả ở bài [giải thích về blind](/vi/blog/holdem-blind-meaning).
+A. Blind (mù — cược bắt buộc) là hai khoản cược bắt buộc theo vị trí khởi động mỗi ván: small blind (mù nhỏ) ngay bên trái nút dealer (với từ ba người trở lên — khi heads-up, SB ở nút dealer) và big blind (mù lớn) kế tiếp, và cỡ blind cũng là tên của mức cược ($1/$2). Ai đặt, vì sao, và big blind ante khác gì — tất cả ở bài [giải thích về blind](/vi/blog/holdem-blind-meaning).
 
 **Q. Buy in poker là gì?**
 

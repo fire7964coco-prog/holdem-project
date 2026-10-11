@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un straddle (overblind) est une blinde facultative, en général le double de la grosse blinde, posée avant que les cartes soient distribuées. Elle donne au straddler la dernière parole préflop et le droit de relancer, ce qui double les enjeux de la table. Dans presque tous les cas c'est un coup à espérance négative (-EV), et en dehors du cash game il est presque toujours interdit.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -41,7 +41,7 @@ Surtout en cash | Presque jamais autorisé en tournoi
 Deux choses en font bien plus qu'un simple supplément dans le pot :
 
 - C'est une **blinde vivante.** Exactement comme la grosse blinde, le straddler a acheté le **droit de relancer** (l'option) même si tout le monde se contente de suivre — une « troisième blinde » avec le droit d'agir.
-- Elle est posée **à l'aveugle.** Tu straddles *avant* de regarder tes cartes (dans la plupart des salles, avant même qu'elles soient distribuées). Tu engages de l'argent sans aucune information, et c'est toute la raison pour laquelle c'est en général une mauvaise idée — on y revient plus bas.
+- Elle est posée **à l'aveugle.** Tu straddles *avant* de regarder tes cartes (dans la plupart des salles, avant même qu'elles soient distribuées). Tu engages de l'argent sans aucune information, et c'est l'une des principales raisons pour lesquelles c'est en général une mauvaise idée — on y revient plus bas.
 
 Un straddle n'est pas une relance au sens habituel — c'est une blinde qui redéfinit le prix. Si tu as compris [ce que sont la petite et la grosse blinde](/fr/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), un straddle n'est rien d'autre qu'une *troisième* blinde facultative que le joueur choisit de poser pour gonfler les enjeux et s'emparer de la position.
 

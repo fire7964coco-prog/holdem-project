@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Vị trí trong poker là tên ghế tính từ nút dealer — UTG, lojack, hijack, cutoff, button và hai blind — và thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván. Preflop, UTG hành động trước và big blind cuối cùng; postflop, small blind đi trước và button đi cuối (heads-up thì button chính là small blind: đi trước preflop, đi cuối postflop). Số ghế vật lý không bao giờ đổi, chỉ có vị trí đổi.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -160,7 +160,7 @@ Một câu hỏi láng giềng đáng một dòng: ở **showdown**, mặc đị
 
 ## Vị trí bàn poker từ heads-up đến 10 người khác nhau ra sao? (6-max và full ring)
 
-Tên vị trí không đổi theo kích cỡ bàn — ==chúng rụng dần từ vị trí sớm trước== khi bớt người chơi. Button, hai blind, cutoff và hijack tồn tại lâu nhất; các ghế UTG+1 trở lên chỉ có ở bàn full ring (bàn 9 người). Đây là sơ đồ từ 2 đến 10 người, liệt kê theo thứ tự hành động preflop:
+Tên vị trí không đổi theo kích cỡ bàn — ==chúng rụng dần từ vị trí sớm trước== khi bớt người chơi. Button, hai blind, cutoff và hijack tồn tại lâu nhất; các ghế UTG+1 trở lên chỉ có ở bàn full ring. Đây là sơ đồ từ 2 đến 10 người, liệt kê theo thứ tự hành động preflop:
 
 | Số người | Thứ tự hành động preflop (đầu → cuối) |
 |:---:|:---|

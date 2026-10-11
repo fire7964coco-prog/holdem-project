@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -145,7 +145,7 @@ A. In most cash games it's a percentage of the pot, dropped before the winner is
 
 **Q. Who pays the rake in poker?**
 
-A. Rake is pulled straight from the pot, so on paper the player who wins the hand pays it — the winning stack comes back smaller by the rake amount. In practice, everyone who put chips into that pot contributed to it, so the whole table shares the cost over a session. In tournaments there's no ambiguity: every entrant pays an equal fee baked into the buy-in, whether they win or bust first.
+A. In most cash games, rake is pulled straight from the pot, so on paper the player who wins the hand pays it — the winning stack comes back smaller by the rake amount. In practice, everyone who put chips into that pot contributed to it, so the whole table shares the cost over a session. In tournaments there's no ambiguity: every entrant pays an equal fee baked into the buy-in, whether they win or bust first.
 
 **Q. Do you pay rake if everyone folds before the flop?**
 

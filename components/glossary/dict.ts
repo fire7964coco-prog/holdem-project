@@ -91,7 +91,7 @@ export const GLOSSARY_DICT_EN: GlossaryDict = {
   hero: {
     badge: "♠ {n} terms · searchable A–Z",
     h1: "Poker Glossary",
-    leadBefore: "Every Texas Hold'em term you'll hear at the table — ",
+    leadBefore: "The Texas Hold'em terms you'll hear most at the table — ",
     leadStrong: "nuts, outs, pot odds, 3-bet, ICM",
     leadAfter: " and more — defined clearly and correctly. Search or filter by category.",
   },

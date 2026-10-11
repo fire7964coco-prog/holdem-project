@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -209,7 +209,7 @@ A. Tidak — dalam hampir setiap kes, kedua-duanya bertentangan. Bad beat bermak
 2. **Jika didefinisikan secara ketat, ia bertentangan dengan cooler.** Bad beat memerlukan kelebihan besar dan suckout (underdog bertambah baik); cooler dalam erti ketat tiada suckout (yang di hadapan kekal di hadapan). Jika anda favourite besar ketika masuk dan lawan perlu bertambah baik untuk menang, itu bad beat.
 3. **Bad beat diam-diam baik untuk anda.** Ia bermakna lawan memasukkan wang ketika di belakang dan bernasib baik — kebanyakan masa, keputusan yang rugi bagi mereka, dan ia membayar anda jauh lebih kerap daripada ia menjejaskan anda. Masuk dengan betul, abaikan beat itu, dan biarkan variance menyamaratakan dirinya.
 
-Bad beat ialah cukai yang anda bayar kerana bermain permainan yang menang. Pemain terbaik menerima banyak bad beat — selalunya lebih banyak, kerana mereka lebih kerap menjadi favourite — cuma mereka sudah belajar mencatatnya sebagai variance, melindungi tangan seterusnya daripada tilt, dan kembali [mengatasi pemain lain di meja](/ms/blog/holdem-fish). Masukkan wang dengan betul cukup kerap, dan kekejaman dek akan menjadi keuntungan anda.
+Bad beat ialah cukai yang anda bayar kerana bermain permainan yang menang. Pemain terbaik menerima banyak bad beat — selalunya lebih banyak, kerana mereka lebih kerap menjadi favourite — cuma mereka sudah belajar mencatatnya sebagai variance, melindungi tangan seterusnya daripada tilt, dan kembali [mengatasi pemain lain di meja](/ms/blog/holdem-fish). Masukkan wang dengan betul cukup kerap — asalkan memasukkan wang itu memang betul — dan kekejaman dek akan menjadi keuntungan anda.
 
 ---
 

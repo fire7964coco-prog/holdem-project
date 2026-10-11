@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir di preflop bagi si straddler dan opsi untuk raise, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -41,7 +41,7 @@ Umumnya cash | Hampir tak pernah diizinkan di turnamen
 Dua hal membuatnya lebih dari sekadar uang ekstra di pot:
 
 - Ia adalah **blind hidup (live blind).** Persis seperti big blind, si straddler telah membeli **opsi untuk raise** bahkan jika semua orang hanya call — sebuah "blind ketiga" dengan hak untuk beraksi atasnya.
-- Ia dipasang **buta (blind).** Anda straddle *sebelum* melihat kartu Anda (di sebagian besar ruangan, bahkan sebelum kartu dibagi). Anda mengeluarkan uang tanpa informasi, dan itulah alasan utama kenapa biasanya ini ide buruk — lebih lanjut di bawah.
+- Ia dipasang **buta (blind).** Anda straddle *sebelum* melihat kartu Anda (di sebagian besar ruangan, bahkan sebelum kartu dibagi). Anda mengeluarkan uang tanpa informasi, dan itulah salah satu alasan utama kenapa biasanya ini ide buruk — lebih lanjut di bawah.
 
 Straddle bukanlah raise dalam arti biasa — melainkan blind yang mereset harga. Jika Anda paham [apa itu small blind dan big blind](/id/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), straddle sekadar blind *ketiga* opsional yang pemain pilih untuk dipasang guna menggelembungkan taruhan dan merebut posisi.
 

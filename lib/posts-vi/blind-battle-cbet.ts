@@ -16,7 +16,7 @@ export const POST: Post = {
   tldr: "Sau khi small blind open và big blind call, flop K♥10♦6♠ nhận một cú bet 67,4% số lần và check 32,6%. Ở bảy pot raise đơn trước đó trong series, người không có vị trí chỉ bet từ 0,1% đến 23,7% — và có hai thứ thay đổi, không phải một. Ở đây người không có vị trí là người raise chứ không phải người call, và board nghiêng về range đó. Cả hai cùng đẩy equity realization của người không có vị trí lên 103,1%.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -202,7 +202,7 @@ Mức 96,1% của big blind là mặt còn lại của cùng câu chuyện. **C�
 
 ## Tự kiểm tra
 
-Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board K-high có lá 10" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) ở thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó cho thấy tần suất pha trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập tài khoản HoldemMaster để lưu vào tài khoản và học tiếp trên thiết bị khác — đăng nhập là tùy chọn, mọi tính năng đều dùng được khi không đăng nhập.
+Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver miễn phí](/vi/solver) và vào **Spot mẫu → "Board K-high có lá 10" → [⚡ Xem kết quả]**. Muốn chơi chính spot này như một bài tập, hãy mở [Trainer GTO](/vi/solver) ở thanh bên — nó chia cho bạn một tay bài ngẫu nhiên, và khi bạn chọn hành động, nó cho thấy tần suất pha trộn cùng **EV mất** (bb) của lựa chọn đó. Lịch sử của bạn mặc định được lưu trên thiết bị này; đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị.
 
 Hãy nhìn nhãn người chơi ở trên cùng trước: **"OOP (SB (bên open))"**. Khi thấy nó khác với "OOP (BB (bên call))" của các spot trước, bạn sẽ hiểu ngay bài viết này muốn nói gì khi bảo "vai trò đã đổi". Miễn phí, không cần cài đặt, không cần tài khoản.
 

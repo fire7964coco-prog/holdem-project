@@ -25,7 +25,7 @@ export const GLOSSARY_DICT_HI: GlossaryDict = {
   hero: {
     badge: "♠ {n} शब्द · खोज के साथ",
     h1: "पोकर शब्दावली (Poker Terms)",
-    leadBefore: "टेबल पर सुनाई देने वाला टेक्सस होल्डम का हर शब्द — ",
+    leadBefore: "टेबल पर सबसे ज़्यादा सुनाई देने वाले टेक्सस होल्डम के शब्द — ",
     leadStrong: "nuts, outs, pot odds, 3-bet, ICM",
     leadAfter: " और भी — साफ़ और सही मतलब के साथ। शब्द खोजें या category से छाँटें।",
   },

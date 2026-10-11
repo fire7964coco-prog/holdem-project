@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker strategy yang menang bukan senarai tip, tetapi lima soalan yang berulang setiap tangan: di mana anda duduk, adakah tangan ini berbaloi dimainkan, raise atau fold, perlukah terus bet pada flop, dan bila perlu fold. Pemain tight-aggressive yang menjawabnya dengan baik fold kira-kira 80% tangan preflop dan bermain agresif apabila masuk pot.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -188,7 +188,7 @@ A. Mainkan gaya tight-aggressive yang dibina di sekeliling lima keputusan berula
 
 **Q. Apakah poker strategy terbaik untuk pemula?**
 
-A. Tight-aggressive (TAG). Mainkan sedikit tangan, tetapi mainkannya secara agresif — raise dan bukannya call, dan fold dengan cepat apabila anda terlepas. Ia terus membaiki dua leak pemula yang paling biasa (bermain terlalu banyak tangan dan bermain terlalu pasif) dan mempunyai keluk pembelajaran paling landai berbanding mana-mana gaya yang menang. Mulakan di situ sebelum mencuba pendekatan yang lebih longgar dan lebih lanjutan.
+A. Tight-aggressive (TAG). Mainkan sedikit tangan, tetapi mainkannya secara agresif — raise dan bukannya call, dan fold apabila anda terlepas dan berdepan agresi sebenar. Ia terus membaiki dua leak pemula yang paling biasa (bermain terlalu banyak tangan dan bermain terlalu pasif) dan mempunyai keluk pembelajaran paling landai berbanding mana-mana gaya yang menang. Mulakan di situ sebelum mencuba pendekatan yang lebih longgar dan lebih lanjutan.
 
 **Q. Bagaimana cara menang poker Texas Hold'em?**
 
