@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -106,7 +106,7 @@ Das Board ist ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Du hältst ==b:A♠ K♠==, dein G
 
 Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlägt seine Q.== Du gewinnst, A-A-K-9-7 über A-A-Q-9-7. Die 9 und die 7 kommen nicht einmal ins Spiel – der erste Kicker hat es entschieden.
 
-:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card muss nicht das ganze Board schlagen, um zu zählen: Sie kann trotzdem einen niedrigeren Kicker-Platz hinter einer Boardkarte füllen (weiter unten siehst du eine 9, die hinter die Dame vom Board rutscht), und sie fällt erst heraus, wenn das Board schon fünf bessere Karten liefert.]:::
+:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card muss nicht das ganze Board schlagen, um zu zählen: Sie kann trotzdem einen niedrigeren Kicker-Platz hinter einer Boardkarte füllen (weiter unten siehst du eine 9, die hinter die Dame vom Board rutscht). Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.]:::
 
 ---
 

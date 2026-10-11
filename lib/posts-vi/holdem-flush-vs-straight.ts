@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thùng (flush — 5 lá cùng chất, khoảng 0,197% số bộ 5 lá) luôn lớn hơn sảnh (straight — 5 lá liên tiếp, khoảng 0,392%) trong Texas Hold'em, vì thùng hiếm hơn: tính trên cả 7 lá đến river, thùng ra 3,03% còn sảnh 4,62%. Trên thùng còn có cù lũ, tứ quý và thùng phá sảnh.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -228,7 +228,7 @@ A. Thùng là năm lá cùng chất, thứ tự không quan trọng; sảnh là 
 
 **Q. Cù lũ ăn thùng không?**
 
-A. Có. Cù lũ (#4) lớn hơn thùng (#5), kể cả thùng A cao nhất. Thùng chỉ thắng cù lũ khi ở Short Deck (6+), còn trong Texas Hold'em chuẩn thì không bao giờ.
+A. Có. Cù lũ (#4) lớn hơn thùng (#5), kể cả thùng A cao nhất. Trong các thể thức phổ biến, thùng chỉ thắng cù lũ ở Short Deck (6+), còn trong Texas Hold'em chuẩn thì không bao giờ.
 
 **Q. Cù lũ với sảnh cái nào lớn hơn?**
 

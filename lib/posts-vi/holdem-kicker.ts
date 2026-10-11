@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Kicker trong poker là gì — luật, cách đếm và vì sao A9 thua AK",
   seoTitle: "A9 thua AK ở lá nào? — Kicker (lá phụ) trong poker là gì",
   desc: "Kicker (lá phụ) là lá phá thế hòa khi hai người cùng hạng: tay nào có kicker, đếm mấy lá, vì sao A9 thua AK, và ngoại lệ tứ quý nhiều nơi viết sai.",
-  tldr: "Kicker (lá phụ) là lá cao nhất không thuộc phần chính của tay bài — nó phá thế hòa khi hai người cùng hạng. Mậu thầu dùng 4 kicker, một đôi 3, hai đôi 1, sám cô 2; sảnh, thùng, cù lũ và thùng phá sảnh không có kicker. Đó là lý do AK thắng AQ khi bài chung (board) có một lá A.",
+  tldr: "Kicker (lá phụ) là lá cao nhất không thuộc phần chính của tay bài — nó phá thế hòa khi hai người cùng hạng. Mậu thầu dùng 4 kicker, một đôi 3, hai đôi 1, sám cô 2; sảnh, thùng, cù lũ và thùng phá sảnh không có kicker. Đó là lý do AK thắng AQ khi cả hai cùng đôi A nhờ một lá A trên bài chung (board).",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -103,7 +103,7 @@ Board là ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Bạn cầm ==b:A♠ K♠==, đối th
 
 Cùng đôi, nên so kicker từ trên xuống: ==g:K của bạn thắng Q của họ.== Bạn thắng, A-A-K-9-7 trên A-A-Q-9-7. Lá 9 và lá 7 thậm chí không cần đến — kicker thứ nhất đã định đoạt.
 
-:::note[Để ý cả hai tay đều dùng chung lá 9 và lá 7 từ board. Kicker cũng có thể đến từ board: nếu lá phụ cao nhất là một lá bài chung, nó lấp vào tay bài của *cả hai* người và lá tiếp theo sẽ quyết định. Lá bài tẩy của bạn không cần cao hơn cả board mới được tính: nó vẫn có thể lấp một ô kicker thấp hơn, đứng sau một lá trên board (ngay bên dưới bạn sẽ thấy lá 9 bị đẩy xuống sau lá Q của board), và chỉ bị loại khi chính board đã đủ năm lá tốt hơn.]:::
+:::note[Để ý cả hai tay đều dùng chung lá 9 và lá 7 từ board. Kicker cũng có thể đến từ board: nếu lá phụ cao nhất là một lá bài chung, nó lấp vào tay bài của *cả hai* người và lá tiếp theo sẽ quyết định. Lá bài tẩy của bạn không cần cao hơn cả board mới được tính: nó vẫn có thể lấp một ô kicker thấp hơn, đứng sau một lá trên board (ngay bên dưới bạn sẽ thấy lá 9 bị đẩy xuống sau lá Q của board). Lá bài tẩy của bạn chỉ đóng vai kicker khi nó cao hơn lá trên board mà nó thay thế.]:::
 
 ---
 
@@ -152,7 +152,7 @@ Phép toán rất rõ: bốn lá tạo thành tứ quý, một lá là kicker. N
 
 **Q. Kicker poker là gì?**
 
-A. Kicker là lá phụ cao nhất trong tay bài năm lá của bạn mà không thuộc tổ hợp đã xếp hạng. Nó phá thế hòa khi hai người cùng hạng — ví dụ A-K thắng A-Q khi board ra một lá A, vì kicker K cao hơn kicker Q. Kicker không bao giờ thắng một tay bài xếp cao hơn.
+A. Kicker là lá phụ cao nhất trong tay bài năm lá của bạn mà không thuộc tổ hợp đã xếp hạng. Nó phá thế hòa khi hai người cùng hạng — ví dụ A-K thắng A-Q khi cả hai cùng đôi A, vì kicker K cao hơn kicker Q. Kicker không bao giờ thắng một tay bài xếp cao hơn.
 
 **Q. Thùng có kicker không?**
 

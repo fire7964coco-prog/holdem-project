@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. A carta alta usa 4 kickers, um par 3, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -103,7 +103,7 @@ O board é ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Você tem ==b:A♠ K♠==, seu advers
 
 Mesmo par, então compare os kickers de cima para baixo: seu ==g:K ganha da Q dele.== Você vence, A-A-K-9-7 contra A-A-Q-9-7. O 9 e o 7 nem entram em jogo — o primeiro kicker resolveu.
 
-:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão não precisa superar a mesa inteira para contar: ela ainda pode ocupar uma vaga de kicker mais baixa, atrás de uma carta da mesa (mais abaixo você vai ver um 9 empurrado para trás da dama da mesa), e só fica de fora quando a mesa já fornece cinco cartas melhores.]:::
+:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão não precisa superar a mesa inteira para contar: ela ainda pode ocupar uma vaga de kicker mais baixa, atrás de uma carta da mesa (mais abaixo você vai ver um 9 empurrado para trás da dama da mesa). Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.]:::
 
 ---
 

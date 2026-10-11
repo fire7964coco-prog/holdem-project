@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Có — poker có thể hòa. Pot được chia (chia pot, split pot hay chop) khi hai người trở lên lật bài (showdown) ra cùng một tay bài 5 lá mạnh nhất giống hệt nhau. Chất bài không bao giờ phá thế hòa, và chip lẻ (odd chip) còn dư thuộc về người hòa đầu tiên bên trái nút dealer (BTN).",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -161,7 +161,7 @@ A. Pot bị chia khi hai người trở lên có tay bài 5 lá mạnh nhất gi
 
 **Q. Chia pot trong poker như thế nào?**
 
-A. Dealer chia đều chip cho những người hòa. Nếu pot không chia đều được, phần dư trước hết được đổi ra mệnh giá nhỏ nhất đang dùng, và chip lẻ cuối cùng thuộc về người hòa đầu tiên bên trái nút dealer. Chất bài không bao giờ ảnh hưởng đến việc chia, và khi có người all-in, mỗi pot chính và pot phụ được chia riêng.
+A. Dealer chia đều chip cho những người hòa. Nếu pot không chia đều được, phần dư trước hết được đổi ra mệnh giá nhỏ nhất đang dùng, và chip lẻ cuối cùng thuộc về người hòa đầu tiên bên trái nút dealer. Chất bài không bao giờ phá thế hòa, và khi có người all-in, mỗi pot chính và pot phụ được chia riêng.
 
 **Q. Hai người cùng tay bài thì có chia pot không?**
 

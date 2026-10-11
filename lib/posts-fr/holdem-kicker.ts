@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Le kicker est la carte d'accompagnement la plus haute hors de ta combinaison : il départage deux joueurs qui ont la même main. Carte haute : 4 kickers, paire : 3, double paire : 1, brelan : 2 ; suite, couleur, full et quinte flush n'en ont aucun. Voilà pourquoi AK bat AQ quand l'as du board ne donne qu'une paire d'as à chacun.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-08",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -103,7 +103,7 @@ Le board est ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tu tiens ==b:A♠ K♠==, ton adver
 
 Même paire, donc on compare les kickers du haut vers le bas : ton ==g:K bat sa Q.== Tu gagnes, A-A-K-9-7 contre A-A-Q-9-7. Le 9 et le 7 n'entrent même pas en jeu — le premier kicker a tout réglé.
 
-:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée n'a pas besoin de battre tout le board pour compter : elle peut encore occuper une place de kicker plus basse, derrière une carte du board (plus bas, tu verras un 9 relégué derrière la dame du board), et elle ne sort de la main que si le board fournit déjà cinq meilleures cartes.]:::
+:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée n'a pas besoin de battre tout le board pour compter : elle peut encore occuper une place de kicker plus basse, derrière une carte du board (plus bas, tu verras un 9 relégué derrière la dame du board). Ta carte fermée ne joue comme kicker que si elle est plus haute que les cartes du board qu'elle remplacerait.]:::
 
 ---
 
