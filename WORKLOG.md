@@ -1,3 +1,9 @@
+## 2026-10-11 (23) — 우편함 MA-451(MS odds 묶음 1) 회신+등재 queue §2-BD · MB-260
+
+- 사장님 «바로할일해». MA-451 = 368행 OK 330 · RISKY 7 · WRONG 0 · UNV 31 · 요청 1(ms 고유 · EN `6164c748` 현행 문면 이식).
+- 위치 대조 main `fa995ba6`: BD-1 «clean» 5자리(probability L178·L182 · pot-odds L57·L217·L245) · BD-2 probability L273 · BD-3 outs L177 — 전부 실재 확인. 통지 줄(OK/UNV 미전파)도 같은 회차 이식 예정.
+- 이행은 미착수(다음 배치) · ms `masterUpdated` 불변 예정.
+
 ## 2026-10-11 (22) — queue §2-BC 남음 BC-2~4 형제 23로케일 전파 · 배포 `2e9bc644` · MB-259
 
 - 사장님 «queue §2-BC 남음(BC-2~4 형제 23로케일 전파) 진행해». 기준 EN 문면 = `f98be0ba`.

@@ -886,6 +886,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ 10-11 (22) `2e9bc644` MB-259: BC-2 21로케일(fa·he·ko 103 인용 없음) · BC-3·BC-4 23로케일 · updated 10-11. 아래는 당시 작업 지시(기록).
 - (완료) **BC-2~4 형제 전파**: BC-2 «Rule 103» 접두 = ar·bn·de·es·fa·fil·fr·he·hi·id·it·ja·pl·pt·ro·ru·sw·th·tr·uk·vi·zh·zh-hant(+ko 확인 · grep «103») — 각 로케일 기존 «WSOP … 90.a» 표기 꼴로 · BC-3 betting Mistake 3 «or straddled» · BC-4 all-in 표 2곳 «now faces less than a full bet or raise» 조건(EN 문면 = 이번 커밋).
 
+### 2-BD. 우편함 수신분 — MA-451 (MS odds 묶음 1 · probability·pot-odds·implied-odds·outs · 기준 `aa607f72`) · 등재·회신 2026-10-11 (23) MB-260
+
+> 근거 = 검수장 `reports/검수-ms-odds-묶음1-2026-10-11/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ms/` 4편. 368행 = OK 330 · RISKY 7 · WRONG 0 · UNV 31. 위치 대조 = 현 main `fa995ba6`. 전부 ms 고유(새 문안 아님 = EN 09-28 `6164c748` 현행 문면 이식) · EN-먼저 0.
+
+| # | 자리(ts 행) | 처방 |
+|---|---|---|
+| BD-1 ms (RISKY 5) «clean» 한정 | probability L178 표 «Flush draw ≈ 35% menjelang river» · L182 «**35%** anda mengatasi harga **25%**» · pot-odds L57 표 «Flush draw ≈ 35% untuk kena …» · L217 FAQ «sesuai dengan flush draw hanya apabila …» · L245 FAQ «flush draw anda ada 35%» — 더티 3장이면 24.14% < 25% · 2:1은 더티 1장 31.45% < 33.3% | EN 문면 이식: «with 9 clean outs» · «a clean draw's 35%» · «a clean flush draw» · «your clean flush draw» · 말레이어 어휘(outs bersih/kotor)는 용어표 확인 뒤 |
+| BD-2 ms (RISKY) | probability L273 FAQ 끝 «Kekerapan penuh setiap keputusan ada dalam carta di atas» | EN «How often each hand shows up over seven cards — which is not the same as how often it wins the pot — is in the chart above» 꼴 |
+| BD-3 ms (RISKY) | outs L177 카드 «kira 3, mungkin 4, bukan 6» — 셋·투페어 상대면 A-K 한 장 아웃 0 | EN «count 3 at most, not 6, and none at all once you are sure of the set or two pair» 꼴 · id «hitung paling banyak 3 … sama sekali nol» 참조 |
+
+- 🪶 통지(라벨 OK/UNV · 같은 `6164c748` 미전파 · 같은 회차에 이식 권장): pot-odds FAQ «counted only over the cards this call lets you see» · implied L60·FAQ «cards this call pays for»·7.5× 재서술 · outs «worth less than that»·스트라이프 «(both cards to come)»·FAQ ×4 근사 단서·«only outs that actually win count».
+- prob FAQ «One pair, followed by two pair» = EN·형제와 같은 UNV · 요청 없음. Z-23·Z-24 ms 반영 확인됨.
+- 🔴 ms `masterUpdated` 그대로(앵커 이식만 · settled §1-C) · odds 남은 3편·strategy도 같은 미전파 가능 — 레인 묶음 2 차이표 오면 같이.
+- 이행 MB 오면 검수장이 ms 4편 원장 재판정.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
