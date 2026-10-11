@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -161,7 +161,7 @@ A. Sebuah pot dibagi ketika dua pemain atau lebih punya lima kartu terbaik yang 
 
 **Q. Bagaimana cara pot dibagi di poker?**
 
-A. Dealer membagi chip rata di antara para pemain yang seri. Jika pot tak bisa dibagi rata, sisanya lebih dulu dipecah ke ==denominasi terkecil yang dipakai di meja==, dan chip ganjil terakhir jatuh ke pemain seri pertama di sebelah kiri tombol dealer. Jenis kartu tak pernah memengaruhi pembagian, dan ketika ada pemain all-in, main pot dan setiap side pot dibagi secara terpisah.
+A. Dealer membagi chip rata di antara para pemain yang seri. Jika pot tak bisa dibagi rata, sisanya lebih dulu dipecah ke ==denominasi terkecil yang dipakai di meja==, dan chip ganjil terakhir jatuh ke pemain seri pertama di sebelah kiri tombol dealer. Jenis kartu tak pernah memecah seri, dan ketika ada pemain all-in, main pot dan setiap side pot dibagi secara terpisah.
 
 **Q. Apakah pot dibagi jika kedua pemain punya tangan yang sama?**
 
@@ -197,7 +197,7 @@ A. Setiap pemain hanya bisa memenangkan dari lawan sebanyak yang ia masukkan sen
 
 **Q. Siapa yang berhak atas side pot?**
 
-A. Hanya pemain yang memasukkan chip ke side pot spesifik itu — mereka yang terus bertaruh setelah pemain lain all-in. Pemain all-in hanya berhak atas main pot (plus side pot lebih awal yang ia sumbangi), tak pernah atas side pot yang dibangun dengan chip yang tak bisa ia imbangi.
+A. Hanya pemain yang memasukkan chip ke side pot spesifik itu — pemain yang memasukkan lebih banyak daripada yang bisa diimbangi stack all-in yang lebih pendek. Pemain all-in hanya berhak atas main pot (plus side pot lebih awal yang ia sumbangi), tak pernah atas side pot yang dibangun dengan chip yang tak bisa ia imbangi.
 
 **Q. Bisakah memenangkan main pot dan side pot sekaligus?**
 

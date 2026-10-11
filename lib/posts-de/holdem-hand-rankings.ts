@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -318,7 +318,7 @@ Die Reihenfolge ist in fast allen Poker-Varianten gleich, mit einigen wichtigen 
 |------|------|------|
 | **Texas Hold'em** | Standard (dieser Guide) | Nutze 0-2 deiner Hole Cards |
 | **Omaha** | Standard | Du musst *genau* 2 deiner 4 Hole Cards nutzen |
-| **Seven-Card Stud** | Standard | Keine Gemeinschaftskarten |
+| **Seven-Card Stud** | Standard | Keine Gemeinschaftskarten (außer einer seltenen gemeinsamen letzten Karte, wenn das Deck nicht reicht) |
 | **Short Deck (6+)** | Angepasst | Flush schlägt Full House; A-6-7-8-9 ist die niedrigste Straße (das Ass spielt niedrig und schließt ohne die Zweien bis Fünfen direkt an die 6 an) |
 
 Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jedes Spiel. Merke dir nur Omahas „genau zwei“-Regel und die Aufwertung des Flushs im Short Deck.
@@ -410,7 +410,7 @@ A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen ei
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 
-A. Die schlechtestmögliche Hand ist 7-5-4-3-2 in gemischten Farben („Sieben hoch“). Es ist das niedrigste High-Card-Blatt, das weder Paar, Straße noch Flush ist – die klassische „du hast nichts“-Hand.
+A. Als Fünf-Karten-Hand ist die schlechtestmögliche 7-5-4-3-2 in gemischten Farben („Sieben hoch“). Es ist das niedrigste High-Card-Blatt, das weder Paar, Straße noch Flush ist – die klassische „du hast nichts“-Hand. Im Hold'em, wo du die besten fünf aus sieben Karten spielst, ist die schwächste Hand, mit der du tatsächlich ankommen kannst, 9-8-7-5-4 (aus 9-8-7-5-4-3-2 in gemischten Farben).
 
 **Q. Kann man drei Paare im Poker haben?**
 

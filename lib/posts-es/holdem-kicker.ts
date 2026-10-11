@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Qué es el kicker en el póker — reglas, cuántos hay y el as dominado",
   seoTitle: "Kicker en póker: qué es y por qué pierdes el bote",
   desc: "El kicker rompe empates en el póker: qué manos lo tienen y cuántos, por qué A9 pierde contra AK y la excepción del póker que casi nadie explica bien.",
-  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
+  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando el as de la mesa solo les da a ambos una pareja de ases.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-11",
@@ -103,7 +103,7 @@ La mesa es ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tú tienes ==b:A♠ K♠==, tu rival 
 
 Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== Ganas, A-A-K-9-7 contra A-A-Q-9-7. El 9 y el 7 ni siquiera entran en juego — el primer kicker lo zanjó.
 
-:::note[Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia no necesita superar toda la mesa para contar: aún puede ocupar un hueco de kicker más bajo, detrás de una carta de la mesa (más abajo verás un 9 empujado detrás de la reina de la mesa). Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.]:::
+:::note[Fíjate en que ambas manos comparten el 9 y el 7 de la mesa. Los kickers también pueden venir de la mesa: si la carta lateral más alta es una carta comunitaria que supera las cartas propias de ambos jugadores, llena la mano de *ambos* jugadores y decide la siguiente carta. Tu carta propia no necesita superar toda la mesa para contar: aún puede ocupar un hueco de kicker más bajo, detrás de una carta de la mesa (más abajo verás un 9 empujado detrás de la reina de la mesa). Tu carta propia solo juega como kicker cuando es más alta que las cartas de la mesa a las que sustituiría.]:::
 
 ---
 
@@ -152,7 +152,7 @@ La matemática es clara: cuatro cartas forman el póker, una carta es el kicker.
 
 **Q. ¿Qué es un kicker en el póker?**
 
-A. El kicker es la carta lateral más alta de tus cinco cartas que no forma parte de tu combinación con valor. Rompe los empates cuando dos jugadores comparten el mismo valor — por ejemplo, A-K gana a A-Q cuando la mesa empareja un as, porque el rey de kicker supera a la reina. Un kicker nunca gana a una mano de valor superior.
+A. El kicker es la carta lateral más alta de tus cinco cartas que no forma parte de tu combinación con valor. Rompe los empates cuando dos jugadores comparten el mismo valor — por ejemplo, A-K gana a A-Q cuando el as de la mesa solo les da a ambos una pareja de ases, porque el rey de kicker supera a la reina. Un kicker nunca gana a una mano de valor superior.
 
 **Q. ¿El color tiene kicker?**
 

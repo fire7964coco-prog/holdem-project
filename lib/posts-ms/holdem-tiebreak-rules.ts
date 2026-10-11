@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Seri dipecahkan mengikut urutan tetap: kedudukan tangan dahulu, kemudian kad yang membentuk tangan itu, kemudian kicker dari tertinggi ke terendah. Pair sama — kicker pertama yang lebih tinggi menang; lima kad yang serupa — pot dibahagi. Suit tidak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -145,7 +145,7 @@ Dua perkara yang *tidak* dilakukan oleh wheel: As tidak boleh berpusing melalui 
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, dan A♠ 8♠ menentang A♦ 7♦. Kedua-duanya ada sepasang As. Kicker pertama: K di board — seri. Kicker kedua: Q di board — seri. Kicker ketiga: ==g:8 mengalahkan 7.== Kad kelima tangan itu secara harfiah telah menentukan segala-galanya di atasnya.
 
-Logik yang sama berlaku dalam pot quads di board: semua orang berkongsi empat kad, jadi kad kelima ialah keseluruhan showdown. Ia juga berlaku dalam seri high card dan flush, di mana setiap kad hingga yang terakhir dibandingkan. Kad kelima hanya berhenti penting apabila board mengatasinya — dan itulah kepingan terakhir teka-teki ini.
+Logik yang sama berlaku dalam pot quads di board: semua orang berkongsi empat kad, jadi kad kelima ialah keseluruhan showdown. Ia juga berlaku dalam seri high card dan flush, di mana setiap kad hingga yang terakhir dibandingkan. Sebaik sahaja kad-kad di atasnya seri, kad kelima hanya berhenti penting apabila board mengatasinya — dan itulah kepingan terakhir teka-teki ini.
 
 ---
 
@@ -202,7 +202,7 @@ A. Three of a kind membawa dua kicker, dibandingkan dari yang tertinggi — jadi
 
 **Q. Adakah kad ke-5 penting dalam poker?**
 
-A. Ya — dan itulah cara paling biasa pemain kalah pot yang disangkanya sudah dimenangi. Situasi klasik yang meletakkan seluruh pot pada kad terakhir: kicker ketiga bagi pair, satu-satunya kicker bagi two pair, kad terendah dalam flush, dan kad sampingan di sebelah quads yang berada di board. Ia hanya berhenti penting apabila kad board itu sendiri mengatasi kad sampingan yang anda pegang — kadangkala kerana seluruh board dimainkan dan hole card anda tercicir sepenuhnya, kadangkala kerana satu hole card dimainkan dan yang satu lagi tidak pernah dikira: A♠ 3♠ menentang A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ ialah chop, kedua-duanya memainkan A-A-K-Q-J.
+A. Ya — dan itulah cara paling biasa pemain kalah pot yang disangkanya sudah dimenangi. Situasi klasik yang meletakkan seluruh pot pada kad terakhir: kicker ketiga bagi pair, satu-satunya kicker bagi two pair, kad terendah dalam flush, dan kad sampingan di sebelah quads yang berada di board. Selagi kad-kad di atasnya seri, ia hanya berhenti penting apabila kad board itu sendiri mengatasi kad sampingan yang anda pegang — kadangkala kerana seluruh board dimainkan dan hole card anda tercicir sepenuhnya, kadangkala kerana satu hole card dimainkan dan yang satu lagi tidak pernah dikira: A♠ 3♠ menentang A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ ialah chop, kedua-duanya memainkan A-A-K-Q-J.
 
 **Q. Bolehkah As digunakan sebagai 1 dalam poker?**
 

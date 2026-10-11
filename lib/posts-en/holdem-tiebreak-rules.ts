@@ -144,7 +144,7 @@ Two things the wheel does *not* do: the ace can't wrap around the middle (Q-K-A-
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, and it's A♠ 8♠ against A♦ 7♦. Both have a pair of aces. First kicker: the board's K — tie. Second kicker: the board's Q — tie. Third kicker: ==g:8 beats 7.== The literal fifth card of the hand just decided everything above it.
 
-The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. The fifth card only stops mattering when the board outranks it — which is the last piece of the puzzle.
+The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. Once the cards above it are tied, the fifth card stops mattering only when the board outranks it — which is the last piece of the puzzle.
 
 ---
 
@@ -201,7 +201,7 @@ A. Three of a kind carries two kickers, compared highest first — so if both pl
 
 **Q. Does the 5th card matter in poker?**
 
-A. Yes — and it is the most common way a player loses a pot they were sure they had won. The classic spots that put the whole pot on the last card: a pair's third kicker, two pair's lone kicker, the lowest card of a flush, and the side card next to quads sitting on the board. It stops mattering only when the board's own cards outrank the side card you hold — sometimes because the whole board plays and your hole cards drop out entirely, sometimes because one hole card plays and the other never counts: A♠ 3♠ against A♦ 2♦ on A♥ K♣ Q♦ J♠ 9♥ is a chop, both playing A-A-K-Q-J.
+A. Yes — and it is the most common way a player loses a pot they were sure they had won. The classic spots that put the whole pot on the last card: a pair's third kicker, two pair's lone kicker, the lowest card of a flush, and the side card next to quads sitting on the board. When the cards above it are tied, it stops mattering only when the board's own cards outrank the side card you hold — sometimes because the whole board plays and your hole cards drop out entirely, sometimes because one hole card plays and the other never counts: A♠ 3♠ against A♦ 2♦ on A♥ K♣ Q♦ J♠ 9♥ is a chop, both playing A-A-K-Q-J.
 
 **Q. Can you use an ace as a 1 in poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em anda sentiasa bermain tangan 5 kad terbaik daripada 7 kad (2 hole card + 5 kad komuniti) — sama ada guna kedua-dua hole card, satu sahaja, atau tiada langsung (playing the board). Imbas kesemua 7 kad mengikut urutan tetap: flush → straight → nilai berpasangan → high card.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -173,7 +173,7 @@ Perhatikan baris terakhir: ==walaupun anda tiada apa-apa, pasangan di board iala
 Anda boleh MEMEGANG kedua-duanya — tetapi anda tidak boleh MEMAINKAN kedua-duanya. ==Tangan poker ialah tepat 5 kad, jadi kombinasi yang bertindih tidak bertimbun; anda hanya memainkan yang lebih kuat.==
 
 - Anda memegang A♠ K♠ di Q♠ 7♠ 2♠ K♦ 3♣. Anda sudah membentuk sepasang K DAN lima spade. Tangan anda ialah ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — pasangan K itu langsung tidak terlibat.
-- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan anda ialah ==straight 8 tinggi== — bukan "pair dengan straight". Di showdown anda tidak perlu mengumumkannya: cards speak (kad yang bercakap), dan pengedar yang membaca tangan (Peraturan 12 TDA 2024). Yang anda mesti lakukan ialah membuka kedua-dua kad — kad hanya bercakap bagi tangan yang dibuka dengan betul (Peraturan 13-A TDA 2024). Dan jika pengedar tersalah baca, bersuara segera: bacaan boleh dipertikaikan sehingga tangan seterusnya bermula (Peraturan 22 TDA 2024), tetapi jauh lebih mudah untuk membetulkannya sebelum pot ditolak.
+- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan anda ialah ==straight 8 tinggi== — bukan "pair dengan straight". Di showdown anda tidak perlu mengumumkannya: cards speak (kad yang bercakap), dan pengedar yang membaca tangan (Peraturan 12 TDA 2024). Yang anda mesti lakukan ialah membuka kedua-dua kad — kad hanya bercakap bagi tangan yang dibuka dengan betul (Peraturan 13-A TDA 2024). Dan jika pengedar tersalah baca, bersuara segera: bacaan boleh dipertikaikan sehingga tangan seterusnya bermula — atau, jika tangan tamat semasa rehat, hanya sehingga 1 minit selepas pot diserahkan (Peraturan 22 TDA 2024) — tetapi jauh lebih mudah untuk membetulkannya sebelum pot ditolak.
 
 Logik yang sama menjawab "bolehkah anda ada tiga pair?" — anda mungkin memegang tiga nilai berpasangan merentas 7 kad, tetapi hanya dua yang terbaik muat ke dalam 5 kad (diterangkan dalam panduan [susunan penuh kad poker](/ms/blog/holdem-hand-rankings)).
 
@@ -251,7 +251,7 @@ A. Ia bermakna 5 kad komuniti sudah menjadi tangan 5 kad terbaik anda yang mungk
 
 **Q. Bolehkah board menjadi tangan terbaik bagi semua orang?**
 
-A. Boleh. Jika board itu sendiri ialah tangan 5 kad terbaik dan tiada hole card pemain yang memperbaikinya — katakan board menunjukkan royal flush — semua pemain yang tinggal membahagi pot sama rata. Tetapi semak dahulu: di board full house seperti A-A-A-7-7, pemain yang memegang As terakhir (quad As), dua 7 terakhir (quad 7), atau pocket pair besar (boat lebih besar) mengalahkan board.
+A. Boleh. Jika board itu sendiri ialah tangan 5 kad terbaik dan tiada hole card pemain yang memperbaikinya — katakan board menunjukkan royal flush — semua pemain yang tinggal membahagi pot sama rata — setiap pot utama dan side pot dibahagi dalam kalangan pemain yang layak untuknya. Tetapi semak dahulu: di board full house seperti A-A-A-7-7, pemain yang memegang As terakhir (quad As), dua 7 terakhir (quad 7), atau pocket pair besar (boat lebih besar) mengalahkan board.
 
 **Q. Bolehkah anda ada flush dan pair serentak?**
 
@@ -275,7 +275,7 @@ A. Apabila lima kad komuniti membentuk flush, setiap pemain yang tinggal berkong
 
 **Q. Jika ada straight di board, siapa yang menang?**
 
-A. Apabila lima kad komuniti sudah membentuk straight, semua orang sekurang-kurangnya ada straight itu — jadi sesiapa yang memanjangkannya kepada straight lebih tinggi dengan hole card akan menang. Di board 5-6-7-8-9, pemain yang memegang 10 membentuk 6-7-8-9-10 dan mengalahkan board. Berhati-hati sebaik sahaja tiga kad satu suit berada di situ: lawan dengan dua kad yang sepadan kemudiannya mengalahkan setiap straight itu dengan flush. Jika tiada sesiapa boleh pergi lebih tinggi, pot dibahagi.
+A. Apabila lima kad komuniti sudah membentuk straight, semua orang sekurang-kurangnya ada straight itu — jadi pemain yang memanjangkannya kepada straight lebih tinggi dengan hole card mengalahkan board — dan jika dua pemain sama-sama memanjangkannya, straight yang lebih tinggi menang. Di board 5-6-7-8-9, pemain yang memegang 10 membentuk 6-7-8-9-10 dan mengalahkan board. Berhati-hati sebaik sahaja tiga kad satu suit berada di situ: lawan dengan dua kad yang sepadan kemudiannya mengalahkan setiap straight itu dengan flush. Jika tiada sesiapa boleh pergi lebih tinggi, pot dibahagi.
 
 **Q. Adakah pair di board dikira sebagai sebahagian daripada tangan anda?**
 

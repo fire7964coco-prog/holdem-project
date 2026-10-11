@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -143,7 +143,7 @@ Dua hal yang *tidak* bisa dilakukan wheel: As tak bisa berputar lewat tengah (Q-
 
 Meja **A♥ K♣ Q♦ 4♣ 2♥**, dan pertarungannya A♠ 8♠ melawan A♦ 7♦. Keduanya punya sepasang As. Kicker pertama: K milik meja — seri. Kicker kedua: Q milik meja — seri. Kicker ketiga: ==g:8 mengalahkan 7.== Kartu kelima tangan itu secara harfiah baru saja menentukan segala hal di atasnya.
 
-Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Kartu kelima baru berhenti penting saat board mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
+Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Begitu kartu-kartu di atasnya seri, kartu kelima baru berhenti penting saat board mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
 
 ---
 
@@ -200,7 +200,7 @@ A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, diba
 
 **Q. Apakah kartu kelima penting di poker?**
 
-A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di board. Ia baru berhenti penting saat kartu board sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
+A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di board. Selama kartu-kartu di atasnya seri, ia baru berhenti penting saat kartu board sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
 
 **Q. Bisakah As dipakai sebagai angka 1 di poker?**
 

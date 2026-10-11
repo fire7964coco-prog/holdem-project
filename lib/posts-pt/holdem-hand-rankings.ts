@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
 
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
@@ -285,7 +285,7 @@ A ordem é comum a quase todas as variantes de poker, com alguns detalhes import
 |------|------|------|
 | **Texas Hold'em** | Padrão (este guia) | Use 0-2 das suas cartas |
 | **Omaha** | Padrão | Você precisa usar *exatamente* 2 das suas 4 cartas |
-| **Seven-Card Stud** | Padrão | Sem cartas comunitárias |
+| **Seven-Card Stud** | Padrão | Sem cartas comunitárias (exceto uma rara última carta compartilhada se o baralho acabar) |
 | **Short Deck (6+)** | Modificada | O flush ganha do full house; A-6-7-8-9 é a sequência mais baixa (o Ás joga baixo e, sem as cartas de 2 a 5, emenda no 6) |
 
 A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogos. Só lembre da regra de "exatamente duas" do Omaha e da promoção do flush no Short Deck.

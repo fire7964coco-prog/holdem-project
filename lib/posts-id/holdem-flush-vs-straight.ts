@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -194,7 +194,7 @@ A. Murni matematika. Straight mengabaikan jenis, jadi ada sekitar 10.200 cara me
 
 **Q. Apa yang mengalahkan flush di poker?**
 
-A. Full house, four of a kind, straight flush, dan royal flush semuanya mengalahkan flush — begitu juga flush yang lebih tinggi (kartu teratas lebih baik). Segala yang di bawahnya (straight, three of a kind, two pair, one pair, high card) kalah darinya.
+A. Full house, four of a kind, straight flush, dan royal flush semuanya mengalahkan flush — begitu juga flush yang lebih tinggi (dibandingkan kartu demi kartu dari yang teratas). Segala yang di bawahnya (straight, three of a kind, two pair, one pair, high card) kalah darinya.
 
 **Q. Apa yang mengalahkan straight di poker?**
 

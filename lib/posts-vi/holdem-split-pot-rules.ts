@@ -197,7 +197,7 @@ A. Mỗi người chỉ có thể thắng từ một đối thủ tối đa bằ
 
 **Q. Ai được ăn pot phụ?**
 
-A. Chỉ những người đã bỏ chip vào chính pot phụ đó — những người còn tiếp tục bet sau khi một người khác đã all-in. Người all-in chỉ đủ điều kiện với pot chính (cộng pot phụ nào trước đó họ đã góp vào), không bao giờ với pot phụ dựng bằng số chip họ không theo kịp. Mỗi pot được trao cho tay bài mạnh nhất trong số những người đủ điều kiện của riêng nó.
+A. Chỉ những người đã bỏ chip vào chính pot phụ đó — những người đã bỏ vào nhiều hơn mức mà một stack all-in ngắn hơn có thể theo kịp. Người all-in chỉ đủ điều kiện với pot chính (cộng pot phụ nào trước đó họ đã góp vào), không bao giờ với pot phụ dựng bằng số chip họ không theo kịp. Mỗi pot được trao cho tay bài mạnh nhất trong số những người đủ điều kiện của riêng nó.
 
 **Q. Có thể thắng cả pot chính lẫn pot phụ không?**
 

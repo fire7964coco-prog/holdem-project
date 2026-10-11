@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apa Itu Kicker dalam Poker — Peraturan, Kiraan & As yang Didominasi",
   seoTitle: "A9 Kalah kepada AK? — Maksud & Peraturan Kicker Poker",
   desc: "Board keluar As, tetapi A9 anda kalah kepada AK? Itulah kuasa kicker. Tangan mana yang ada kicker, berapa banyak, dan pengecualian Four of a Kind.",
-  tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila board berpasangan dengan As.",
+  tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila As di board hanya memberi kedua-duanya sepasang As.",
   category: "hand-rankings",
   date: "2026-09-27",
   updated: "2026-10-11",
@@ -103,7 +103,7 @@ Board ialah ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Anda memegang ==b:A♠ K♠==, lawan
 
 Pair yang sama, jadi bandingkan kicker dari atas ke bawah: ==g:K anda mengalahkan Q mereka.== Anda menang, A-A-K-9-7 mengatasi A-A-Q-9-7. Kad 9 dan 7 langsung tidak terlibat — kicker pertama sudah menyelesaikannya.
 
-:::note[Perhatikan kedua-dua tangan berkongsi 9 dan 7 dari board. Kicker juga boleh datang dari board: jika kad sampingan tertinggi ialah kad komuniti, ia mengisi tangan *kedua-dua* pemain dan kad seterusnya yang menentukan. Hole card (dua kad peribadi anda) tidak perlu mengatasi seluruh board untuk dikira: ia masih boleh mengisi slot kicker yang lebih rendah di belakang kad board (di bawah nanti anda akan lihat 9 ditolak ke belakang Q di board). Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.]:::
+:::note[Perhatikan kedua-dua tangan berkongsi 9 dan 7 dari board. Kicker juga boleh datang dari board: jika kad sampingan tertinggi ialah kad komuniti yang lebih tinggi daripada hole card kedua-dua pemain, ia mengisi tangan *kedua-dua* pemain dan kad seterusnya yang menentukan. Hole card (dua kad peribadi anda) tidak perlu mengatasi seluruh board untuk dikira: ia masih boleh mengisi slot kicker yang lebih rendah di belakang kad board (di bawah nanti anda akan lihat 9 ditolak ke belakang Q di board). Hole card anda hanya dimainkan sebagai kicker apabila ia lebih tinggi daripada kad board yang akan digantikannya.]:::
 
 ---
 
@@ -152,7 +152,7 @@ Matematiknya jelas: empat kad membentuk quad, satu kad ialah kicker. Ia hanya pe
 
 **Q. Apa itu kicker dalam poker?**
 
-A. Kicker ialah kad sampingan tertinggi dalam tangan lima kad anda yang bukan sebahagian daripada kombinasi tangan anda. Ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya — contohnya, A-K mengalahkan A-Q apabila board berpasangan dengan As, kerana kicker K mengatasi Q. Kicker tidak pernah mengalahkan tangan yang berkedudukan lebih tinggi.
+A. Kicker ialah kad sampingan tertinggi dalam tangan lima kad anda yang bukan sebahagian daripada kombinasi tangan anda. Ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya — contohnya, A-K mengalahkan A-Q apabila As di board hanya memberi kedua-duanya sepasang As, kerana kicker K mengatasi Q. Kicker tidak pernah mengalahkan tangan yang berkedudukan lebih tinggi.
 
 **Q. Adakah flush ada kicker?**
 

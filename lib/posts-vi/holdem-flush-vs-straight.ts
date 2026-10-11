@@ -200,7 +200,7 @@ A. Thuần túy toán học. Sảnh không quan tâm đến chất, nên có kho
 
 **Q. Những tay bài nào ăn được thùng?**
 
-A. Cù lũ, tứ quý, thùng phá sảnh và thùng phá sảnh hoàng gia đều lớn hơn thùng — và thùng cao hơn (lá cao nhất lớn hơn) cũng vậy. Mọi thứ bên dưới (sảnh, sám cô, hai đôi, một đôi, mậu thầu) đều thua thùng.
+A. Cù lũ, tứ quý, thùng phá sảnh và thùng phá sảnh hoàng gia đều lớn hơn thùng — và thùng cao hơn (so từng lá từ lá cao nhất xuống) cũng vậy. Mọi thứ bên dưới (sảnh, sám cô, hai đôi, một đôi, mậu thầu) đều thua thùng.
 
 **Q. Những tay bài nào ăn được sảnh?**
 

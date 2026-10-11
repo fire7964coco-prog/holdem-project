@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -298,7 +298,7 @@ Sebahagian besarnya ya — susunan sepuluh tangan yang sama terpakai merentasi T
 |------|------|------|
 | **Texas Hold'em** | Standard (panduan ini) | Guna mana-mana 0–2 hole card anda |
 | **Omaha** | Standard | Wajib guna *tepat* 2 daripada 4 hole card anda |
-| **Seven-Card Stud** | Standard | Tiada kad komuniti |
+| **Seven-Card Stud** | Standard | Tiada kad komuniti (kecuali satu kad terakhir dikongsi yang jarang berlaku jika dek kehabisan kad) |
 | **Short Deck (6+)** | Diubah suai | Flush menang ke atas full house; A-6-7-8-9 ialah straight terendah (As masih main rendah, dan tanpa kad 2–5 ia terus bersambung ke 6) |
 
 Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir setiap permainan. Cuma ingat peraturan "tepat dua" Omaha dan kenaikan flush dalam Short Deck.
@@ -382,7 +382,7 @@ A. Ya. Straight flush (#2) menang ke atas four of a kind (#3) — lima kad bertu
 
 **Q. Apakah tangan terendah (paling teruk) dalam poker?**
 
-A. Tangan paling teruk yang mungkin ialah 7-5-4-3-2 dalam jenis bercampur ("seven-high"). Ia high card terendah yang bukan pair, straight, mahupun flush — tangan klasik "anda tiada apa-apa".
+A. Sebagai tangan lima kad, yang paling teruk ialah 7-5-4-3-2 dalam jenis bercampur ("seven-high"). Ia high card terendah yang bukan pair, straight, mahupun flush — tangan klasik "anda tiada apa-apa". Dalam Hold'em, kerana anda bermain dengan lima kad terbaik daripada tujuh, tangan paling lemah yang benar-benar boleh anda pegang pada akhirnya ialah 9-8-7-5-4 (daripada 9-8-7-5-4-3-2 dalam jenis bercampur).
 
 **Q. Bolehkah anda ada tiga pasangan dalam poker?**
 

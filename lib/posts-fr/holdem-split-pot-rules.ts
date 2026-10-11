@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Oui, l'égalité existe au poker. Le pot est partagé (split pot, ou « chop ») quand deux joueurs ou plus abattent exactement la même meilleure main de cinq cartes. L'enseigne ne départage jamais, et le jeton restant va au premier joueur à égalité à gauche du bouton.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -161,7 +161,7 @@ A. Le pot est partagé quand deux joueurs ou plus ont exactement la même meille
 
 **Q. Comment fonctionnent les pots partagés ?**
 
-A. Le donneur divise les jetons à parts égales entre les joueurs à égalité. Si le pot ne se divise pas exactement, le reste est d'abord changé en jetons de la plus petite valeur en jeu, et le dernier jeton restant va au premier joueur à égalité à gauche du bouton du donneur. L'enseigne n'influe jamais sur le partage, et quand un joueur est all-in, le pot principal et chaque pot annexe sont partagés séparément.
+A. Le donneur divise les jetons à parts égales entre les joueurs à égalité. Si le pot ne se divise pas exactement, le reste est d'abord changé en jetons de la plus petite valeur en jeu, et le dernier jeton restant va au premier joueur à égalité à gauche du bouton du donneur. L'enseigne ne départage jamais, et quand un joueur est all-in, le pot principal et chaque pot annexe sont partagés séparément.
 
 **Q. Partage-t-on le pot si les deux joueurs ont la même main ?**
 
@@ -197,7 +197,7 @@ A. Chaque joueur ne peut gagner sur un adversaire que ce qu'il a lui-même misé
 
 **Q. Qui peut gagner le pot annexe ?**
 
-A. Seulement les joueurs qui ont mis des jetons dans ce pot annexe précis — ceux qui ont continué à miser après qu'un autre joueur a fait tapis. Un joueur all-in n'a droit qu'au pot principal (plus les éventuels pots annexes antérieurs auxquels il a contribué), jamais à un pot annexe formé avec des jetons qu'il ne pouvait pas égaler. Chaque pot revient à la meilleure main parmi ses propres joueurs éligibles.
+A. Seulement les joueurs qui ont mis des jetons dans ce pot annexe précis — ceux qui ont misé plus que ce qu'un tapis all-in plus court pouvait égaler. Un joueur all-in n'a droit qu'au pot principal (plus les éventuels pots annexes antérieurs auxquels il a contribué), jamais à un pot annexe formé avec des jetons qu'il ne pouvait pas égaler. Chaque pot revient à la meilleure main parmi ses propres joueurs éligibles.
 
 **Q. Peut-on gagner le pot principal et le pot annexe ?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -145,7 +145,7 @@ Zwei Dinge, die das Wheel *nicht* kann: Das Ass kann nicht um die Ecke spielen (
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, und es steht A♠ 8♠ gegen A♦ 7♦. Beide haben ein Ass-Paar. Erster Kicker: der K vom Board – Tie. Zweiter Kicker: die Q vom Board – Tie. Dritter Kicker: ==g:8 schlägt 7.== Die buchstäbliche fünfte Karte der Hand hat gerade alles darüber entschieden.
 
-Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier Karten, also ist die fünfte der gesamte Showdown. Und sie läuft bei High-Card- und Flush-Ties, wo jede Karte bis zur letzten verglichen wird. Die fünfte Karte hört erst dann auf zu zählen, wenn das Board sie überragt – was das letzte Puzzleteil ist.
+Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier Karten, also ist die fünfte der gesamte Showdown. Und sie läuft bei High-Card- und Flush-Ties, wo jede Karte bis zur letzten verglichen wird. Sind die Karten darüber gleich, hört die fünfte Karte erst dann auf zu zählen, wenn das Board sie überragt – was das letzte Puzzleteil ist.
 
 ---
 
@@ -222,7 +222,7 @@ A. Selten – genau dafür gibt es Kicker. Ein echter Gleichstand entsteht nur, 
 
 **Q. Wann entscheidet die fünfte Karte den ganzen Pot?**
 
-A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, der einzige Kicker bei Zwei Paaren, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sie hört erst auf zu zählen, wenn die Karten des Boards deine Beikarte überragen – mal weil das ganze Board spielt und deine Hole Cards komplett rausfallen, mal weil nur eine Hole Card spielt und die zweite nie zählt: A♠ 3♠ gegen A♦ 2♦ auf A♥ K♣ Q♦ J♠ 9♥ ist ein Chop, beide spielen A-A-K-Q-J.
+A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, der einzige Kicker bei Zwei Paaren, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sind die Karten darüber gleich, hört sie erst auf zu zählen, wenn die Karten des Boards deine Beikarte überragen – mal weil das ganze Board spielt und deine Hole Cards komplett rausfallen, mal weil nur eine Hole Card spielt und die zweite nie zählt: A♠ 3♠ gegen A♦ 2♦ auf A♥ K♣ Q♦ J♠ 9♥ ist ein Chop, beide spielen A-A-K-Q-J.
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 

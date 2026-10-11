@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "O que é kicker no poker — regras, contagem e o ás dominado",
   seoTitle: "O que é kicker no poker? A carta lateral que leva o pote",
   desc: "O kicker é a carta lateral que desempata no poker — quais mãos têm um e quantos, por que A9 perde para AK e a exceção da quadra que quase todo guia erra.",
-  tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. A carta alta usa 4 kickers, um par 3, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
+  tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. A carta alta usa 4 kickers, um par 3, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando o ás da mesa dá a cada um apenas um par de ases.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-11",
@@ -103,7 +103,7 @@ O board é ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Você tem ==b:A♠ K♠==, seu advers
 
 Mesmo par, então compare os kickers de cima para baixo: seu ==g:K ganha da Q dele.== Você vence, A-A-K-9-7 contra A-A-Q-9-7. O 9 e o 7 nem entram em jogo — o primeiro kicker resolveu.
 
-:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão não precisa superar a mesa inteira para contar: ela ainda pode ocupar uma vaga de kicker mais baixa, atrás de uma carta da mesa (mais abaixo você vai ver um 9 empurrado para trás da dama da mesa). Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.]:::
+:::note[Repare que as duas mãos dividem o 9 e o 7 da mesa. Kickers também podem vir da mesa: se a carta lateral mais alta é comunitária e supera as cartas de mão dos dois jogadores, ela preenche a mão dos *dois* jogadores e a próxima carta decide. Sua carta de mão não precisa superar a mesa inteira para contar: ela ainda pode ocupar uma vaga de kicker mais baixa, atrás de uma carta da mesa (mais abaixo você vai ver um 9 empurrado para trás da dama da mesa). Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.]:::
 
 ---
 
@@ -152,7 +152,7 @@ A conta é clara: quatro cartas fazem a quadra, uma carta é o kicker. Ela só i
 
 **Q. O que é um kicker no poker?**
 
-A. O kicker é a carta lateral mais alta da sua mão de cinco cartas que não faz parte da sua combinação de valor. Ele desempata quando dois jogadores têm o mesmo valor — por exemplo, A-K ganha de A-Q quando a mesa pareia um ás, porque o kicker rei supera a dama. Um kicker nunca ganha de uma mão de valor mais alto.
+A. O kicker é a carta lateral mais alta da sua mão de cinco cartas que não faz parte da sua combinação de valor. Ele desempata quando dois jogadores têm o mesmo valor — por exemplo, A-K ganha de A-Q quando o ás da mesa dá a cada um apenas um par de ases, porque o kicker rei supera a dama. Um kicker nunca ganha de uma mão de valor mais alto.
 
 **Q. O flush tem kicker?**
 

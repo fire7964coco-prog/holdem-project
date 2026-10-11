@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "What Is a Kicker in Poker — Rules, Counting & the Dominated Ace",
   seoTitle: "What Is a Kicker in Poker? The Side Card That Wins Pots",
   desc: "A kicker is the side card that breaks ties in poker — which hands have one and how many, why A9 loses to AK, and the quads exception most guides get wrong.",
-  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
+  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board's ace gives each of them just a pair of aces.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-06",
@@ -102,7 +102,7 @@ The board is ==b:A♣ 9♦ 5♠ 2♥ 7♣==. You hold ==b:A♠ K♠==, your oppo
 
 Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A-K-9-7 over A-A-Q-9-7. The 9 and 7 never even come into play — the first kicker settled it.
 
-:::note[Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card, it fills the hand for *both* players and the next card decides. Your hole card doesn't have to beat the whole board to count: it can still fill a lower kicker slot behind a board card (you'll see a 9 pushed behind the board's queen below). Your hole card only plays as a kicker when it's higher than the board cards it would replace.]:::
+:::note[Notice both hands share the 9 and 7 from the board. Kickers can come from the board too: if the highest side card is a community card that outranks both players' hole cards, it fills the hand for *both* players and the next card decides. Your hole card doesn't have to beat the whole board to count: it can still fill a lower kicker slot behind a board card (you'll see a 9 pushed behind the board's queen below). Your hole card only plays as a kicker when it's higher than the board cards it would replace.]:::
 
 ---
 
@@ -151,7 +151,7 @@ The math is clear: four cards make the quad, one card is the kicker. It only mat
 
 **Q. What is a kicker in poker?**
 
-A. A kicker is the highest side card in your five-card hand that isn't part of your ranked combination. It breaks ties when two players share the same rank — for example, A-K beats A-Q when the board pairs an ace, because the king kicker outranks the queen. A kicker never beats a higher-ranked hand.
+A. A kicker is the highest side card in your five-card hand that isn't part of your ranked combination. It breaks ties when two players share the same rank — for example, A-K beats A-Q when the board's ace gives each of them just a pair of aces, because the king kicker outranks the queen. A kicker never beats a higher-ranked hand.
 
 **Q. Does a flush have a kicker?**
 

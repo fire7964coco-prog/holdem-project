@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -172,7 +172,7 @@ Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte
 Puedes TENER los dos — nunca puedes JUGAR los dos. ==Una mano de póker son exactamente 5 cartas, así que las combinaciones que se solapan no se acumulan; simplemente juegas la más fuerte.==
 
 - Tienes A♠ K♠ en Q♠ 7♠ 2♠ K♦ 3♣. Has formado pareja de reyes Y cinco picas. Tu mano es el ==color máximo (nut flush), A♠ K♠ Q♠ 7♠ 2♠== — la pareja de reyes simplemente no cuenta.
-- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — no "una pareja con una escalera". En el showdown no hace falta cantarla: las cartas hablan y el dealer lee la mano (regla 12 de la TDA 2024). Lo que sí tienes que hacer es poner las dos cartas boca arriba — las cartas solo hablan por una mano bien enseñada (regla 13-A de la TDA 2024). Y si el dealer la lee mal, dilo en el acto: una lectura se puede disputar hasta que empieza la mano siguiente (regla 22 de la TDA 2024), pero es mucho más fácil corregirla antes de que empuje el bote.
+- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — no "una pareja con una escalera". En el showdown no hace falta cantarla: las cartas hablan y el dealer lee la mano (regla 12 de la TDA 2024). Lo que sí tienes que hacer es poner las dos cartas boca arriba — las cartas solo hablan por una mano bien enseñada (regla 13-A de la TDA 2024). Y si el dealer la lee mal, dilo en el acto: una lectura se puede disputar hasta que empieza la mano siguiente —o, si la mano termina durante un descanso, solo hasta 1 minuto después de adjudicarse el bote (regla 22 de la TDA 2024)—, pero es mucho más fácil corregirla antes de que empuje el bote.
 
 La misma lógica responde a "¿se pueden tener tres parejas?" — puedes tener tres valores emparejados en tus 7 cartas, pero solo las dos mejores caben en 5 cartas (cubierto en la [guía de jerarquía de manos](/es/blog/holdem-hand-rankings)).
 
@@ -258,7 +258,7 @@ A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 car
 
 **Q. ¿Puede la mesa ser la mejor mano para todos?**
 
-A. Sí. Si la propia mesa es la mejor mano de 5 cartas y las cartas de ningún jugador la mejoran — pongamos que la mesa muestra una escalera real — todos los jugadores que queden dividen el bote a partes iguales. Pero comprueba primero: en una mesa con full como A-A-A-7-7, un jugador con el último As (póker de ases), los dos últimos sietes (póker de sietes), o una pareja servida grande (full mayor) le gana a la mesa.
+A. Sí. Si la propia mesa es la mejor mano de 5 cartas y las cartas de ningún jugador la mejoran — pongamos que la mesa muestra una escalera real — todos los jugadores que queden dividen el bote a partes iguales: el bote principal y cada bote secundario, entre los jugadores con derecho a cada uno. Pero comprueba primero: en una mesa con full como A-A-A-7-7, un jugador con el último As (póker de ases), los dos últimos sietes (póker de sietes), o una pareja servida grande (full mayor) le gana a la mesa.
 
 **Q. ¿Se puede tener un color y una pareja a la vez?**
 
@@ -282,7 +282,7 @@ A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que
 
 **Q. Si hay una escalera en la mesa, ¿quién gana?**
 
-A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al menos esa escalera — así que gana quien la extienda a una escalera más alta con una carta propia. En una mesa 5-6-7-8-9, un jugador con un 10 forma 6-7-8-9-10 y le gana a la mesa. Ojo en cuanto haya tres cartas del mismo palo: un rival con dos cartas de ese palo le gana a todas esas escaleras con un color. Si nadie puede subir más, el bote se reparte.
+A. Cuando las cinco cartas comunitarias ya forman una escalera, todos tienen al menos esa escalera — así que un jugador que la extienda a una escalera más alta con una carta propia le gana a la mesa, y si dos jugadores la extienden, gana la escalera más alta. En una mesa 5-6-7-8-9, un jugador con un 10 forma 6-7-8-9-10 y le gana a la mesa. Ojo en cuanto haya tres cartas del mismo palo: un rival con dos cartas de ese palo le gana a todas esas escaleras con un color. Si nadie puede subir más, el bote se reparte.
 
 **Q. ¿Cuál es la función de las cartas comunitarias y cuál es la mejor mano de 5 posible en la mesa?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -161,7 +161,7 @@ A. O pote é dividido quando dois ou mais jogadores têm a mesma melhor mão de 
 
 **Q. Como o pote é dividido na prática?**
 
-A. O dealer reparte as fichas por igual entre os empatados. Se o pote não dividir certinho, a sobra é primeiro quebrada na menor denominação em jogo, e a última ficha ímpar vai para o primeiro empatado à esquerda do botão do dealer. O naipe nunca afeta a divisão e, quando alguém está all-in, o pote principal e cada pote paralelo são divididos separadamente.
+A. O dealer reparte as fichas por igual entre os empatados. Se o pote não dividir certinho, a sobra é primeiro quebrada na menor denominação em jogo, e a última ficha ímpar vai para o primeiro empatado à esquerda do botão do dealer. O naipe nunca desempata e, quando alguém está all-in, o pote principal e cada pote paralelo são divididos separadamente.
 
 **Q. O pote é dividido se os dois jogadores têm a mesma mão?**
 
@@ -197,7 +197,7 @@ A. Cada jogador só pode ganhar de um adversário o mesmo tanto que ele próprio
 
 **Q. Quem é elegível para um pote paralelo?**
 
-A. Só os jogadores que colocaram fichas naquele pote paralelo específico — os que continuaram apostando depois de outro jogador ter ido all-in. Um jogador all-in é elegível apenas para o pote principal (mais qualquer pote paralelo anterior para o qual tenha contribuído), nunca para um pote paralelo montado com fichas que ele não conseguiu cobrir. Cada pote vai para a melhor mão entre os seus próprios elegíveis.
+A. Só os jogadores que colocaram fichas naquele pote paralelo específico — os que colocaram mais do que um stack all-in menor conseguia cobrir. Um jogador all-in é elegível apenas para o pote principal (mais qualquer pote paralelo anterior para o qual tenha contribuído), nunca para um pote paralelo montado com fichas que ele não conseguiu cobrir. Cada pote vai para a melhor mão entre os seus próprios elegíveis.
 
 **Q. Dá para ganhar o pote principal e um pote paralelo na mesma mão?**
 

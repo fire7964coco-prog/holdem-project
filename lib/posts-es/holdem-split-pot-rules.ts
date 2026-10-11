@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -165,7 +165,7 @@ A. El bote se divide cuando dos o más jugadores tienen las mismas mejores cinco
 
 **Q. ¿Cómo se divide el bote en el póker?**
 
-A. El dealer reparte las fichas por igual entre los jugadores empatados. Si el bote no se puede dividir de forma exacta, el sobrante se cambia primero a la denominación más pequeña en juego, y la última ficha impar va al primer jugador empatado a la izquierda del botón. El palo nunca afecta al reparto, y cuando un jugador está all-in cada bote —principal y lateral— se divide por separado.
+A. El dealer reparte las fichas por igual entre los jugadores empatados. Si el bote no se puede dividir de forma exacta, el sobrante se cambia primero a la denominación más pequeña en juego, y la última ficha impar va al primer jugador empatado a la izquierda del botón. El palo nunca rompe el empate, y cuando un jugador está all-in cada bote —principal y lateral— se divide por separado.
 
 **Q. ¿Se divide el bote si ambos jugadores tienen la misma mano?**
 
@@ -209,7 +209,7 @@ A. Cada jugador solo puede ganar de un rival tanto como él mismo puso. Si A hac
 
 **Q. ¿Quién es elegible para un bote secundario?**
 
-A. Solo los jugadores que pusieron fichas en ese bote secundario concreto —los que siguieron apostando después de que otro jugador quedara all-in—. Un jugador all-in es elegible solo para el bote principal (y cualquier bote secundario anterior al que sí aportó), nunca para un bote secundario formado con fichas que no pudo igualar. Cada bote se adjudica a la mejor mano entre sus propios jugadores elegibles.
+A. Solo los jugadores que pusieron fichas en ese bote secundario concreto —los que pusieron más de lo que un stack all-in más corto podía igualar—. Un jugador all-in es elegible solo para el bote principal (y cualquier bote secundario anterior al que sí aportó), nunca para un bote secundario formado con fichas que no pudo igualar. Cada bote se adjudica a la mejor mano entre sus propios jugadores elegibles.
 
 **Q. ¿Se puede ganar el bote principal y un bote secundario a la vez?**
 

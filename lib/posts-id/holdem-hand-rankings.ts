@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
 
   masterUpdated: "2026-10-06",
   image: "/images/holdem-hand-rankings-hero.webp",
@@ -283,7 +283,7 @@ Urutan ini berlaku di hampir semua varian poker, dengan beberapa perbedaan penti
 |------|------|------|
 | **Texas Hold'em** | Standar (panduan ini) | Pakai 0-2 kartu Anda |
 | **Omaha** | Standar | Wajib pakai *tepat* 2 dari 4 kartu Anda |
-| **Seven-Card Stud** | Standar | Tanpa kartu komunitas |
+| **Seven-Card Stud** | Standar | Tanpa kartu komunitas (kecuali satu kartu terakhir bersama yang jarang terjadi bila dek kehabisan kartu) |
 | **Short Deck (6+)** | Dimodifikasi | Flush menang atas full house; A-6-7-8-9 adalah straight terendah (As main rendah dan, tanpa kartu 2–5, tersambung ke 6) |
 
 Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan. Hanya ingat aturan "tepat dua" Omaha dan naiknya flush di Short Deck.
@@ -363,7 +363,7 @@ A. Ya. Straight flush (#2) mengalahkan four of a kind (#3) — lima kartu beruru
 
 **Q. Apa tangan terendah (terburuk) di poker?**
 
-A. Tangan terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu adalah high card terendah yang bukan pair, bukan straight, dan bukan flush — tangan klasik "Anda tidak punya apa-apa".
+A. Sebagai tangan lima kartu, yang terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu adalah high card terendah yang bukan pair, bukan straight, dan bukan flush — tangan klasik "Anda tidak punya apa-apa". Di Hold'em, karena Anda memainkan lima kartu terbaik dari tujuh kartu, tangan terlemah yang benar-benar bisa Anda pegang di akhir adalah 9-8-7-5-4 (dari 9-8-7-5-4-3-2 dengan jenis campur).
 
 **Q. Bisakah punya tiga pasangan di poker?**
 

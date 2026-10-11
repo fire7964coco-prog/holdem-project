@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -172,7 +172,7 @@ Beachte die letzte Zeile: ==selbst mit nichts ist das Paar des Boards Teil deine
 Du kannst beide HALTEN – du kannst nie beide SPIELEN. ==Eine Pokerhand besteht aus genau 5 Karten, also stapeln sich überlappende Kombinationen nicht; du spielst einfach die stärkere.==
 
 - Du hältst A♠ K♠ auf Q♠ 7♠ 2♠ K♦ 3♣. Du hast ein Paar Könige UND fünf Pik gemacht. Deine Hand ist der ==Nut Flush, A♠ K♠ Q♠ 7♠ 2♠== – das Paar Könige kommt einfach nie zum Tragen.
-- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-2024-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (TDA-2024-Regel 13-A). Und wenn der Dealer sie falsch liest, sag sofort etwas: Eine Lesung kann bis zum Beginn der nächsten Hand angefochten werden (TDA-2024-Regel 22), aber korrigieren lässt sie sich viel leichter, bevor der Pot geschoben wird.
+- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-2024-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (TDA-2024-Regel 13-A). Und wenn der Dealer sie falsch liest, sag sofort etwas: Eine Lesung kann bis zum Beginn der nächsten Hand angefochten werden – oder, wenn die Hand in einer Pause endet, nur bis 1 Minute nach Vergabe des Pots (TDA-2024-Regel 22) –, aber korrigieren lässt sie sich viel leichter, bevor der Pot geschoben wird.
 
 Dieselbe Logik beantwortet „kann man drei Paare haben?“ – du hältst vielleicht drei gepaarte Ränge über 7 Karten, aber nur die besten zwei passen in 5 Karten (behandelt im [Leitfaden zur Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings)).
 
@@ -246,7 +246,7 @@ A. Es bedeutet, dass die 5 Gemeinschaftskarten bereits deine bestmögliche 5-Kar
 
 **Q. Kann das Board für alle die beste Hand sein?**
 
-A. Ja. Wenn das Board selbst die beste 5-Karten-Hand ist und die Hole Cards keines Spielers es verbessern – sagen wir, das Board zeigt einen Royal Flush – teilen alle verbleibenden Spieler den Pot zu gleichen Teilen. Aber prüf zuerst: an einem Board-Full-House wie A-A-A-7-7 schlägt ein Spieler mit dem letzten Ass (Vierling Asse), den letzten zwei Siebenen (Vierling Siebenen) oder einem großen Pocket Pair (größeres Boat) das Board.
+A. Ja. Wenn das Board selbst die beste 5-Karten-Hand ist und die Hole Cards keines Spielers es verbessern – sagen wir, das Board zeigt einen Royal Flush – teilen alle verbleibenden Spieler den Pot zu gleichen Teilen – den Hauptpot und jeden Nebenpot jeweils unter den Spielern, die dafür berechtigt sind. Aber prüf zuerst: an einem Board-Full-House wie A-A-A-7-7 schlägt ein Spieler mit dem letzten Ass (Vierling Asse), den letzten zwei Siebenen (Vierling Siebenen) oder einem großen Pocket Pair (größeres Boat) das Board.
 
 **Q. Zählt mein Paar mit, wenn ich schon einen Flush habe?**
 
@@ -270,7 +270,7 @@ A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst
 
 **Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
 
-A. Dann hat jeder mindestens diese Straße. Es gewinnt, wer sie mit einer Hole Card nach oben verlängert – auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Vorsicht, sobald dort drei Karten derselben Farbe liegen: Ein Gegner mit zwei passenden Karten schlägt dann jede dieser Straßen mit seinem Flush. Kann niemand höher, wird der Pot geteilt.
+A. Dann hat jeder mindestens diese Straße. Wer sie mit einer Hole Card nach oben verlängert, schlägt das Board – und verlängern zwei Spieler sie, gewinnt die höhere Straße. Auf einem Board 5-6-7-8-9 macht ein Spieler mit einer Zehn die 6-7-8-9-10 und schlägt das Board. Vorsicht, sobald dort drei Karten derselben Farbe liegen: Ein Gegner mit zwei passenden Karten schlägt dann jede dieser Straßen mit seinem Flush. Kann niemand höher, wird der Pot geteilt.
 
 **Q. Musst du im Texas Hold'em beide Hole Cards benutzen?**
 

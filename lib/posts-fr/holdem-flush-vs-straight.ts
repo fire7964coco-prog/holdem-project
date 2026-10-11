@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, la couleur (cinq cartes de la même enseigne, environ 0,197 % des mains de cinq cartes) bat toujours la suite (cinq cartes qui se suivent, environ 0,392 %). La raison : elle est plus rare. Sur les sept cartes jusqu'à la river, tu touches une couleur dans 3,03 % des cas, contre 4,62 % pour la suite.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -207,7 +207,7 @@ A. Pour une raison purement mathématique. Une quinte ignore les enseignes, donc
 
 **Q. Quelles mains battent une couleur ?**
 
-A. Le full, le carré, la quinte flush et la quinte flush royale battent tous une couleur — tout comme une couleur plus haute (meilleure carte de tête). Tout ce qui est en dessous (quinte, brelan, double paire, paire, carte haute) perd contre elle.
+A. Le full, le carré, la quinte flush et la quinte flush royale battent tous une couleur — tout comme une couleur plus haute (comparée carte par carte de haut en bas). Tout ce qui est en dessous (quinte, brelan, double paire, paire, carte haute) perd contre elle.
 
 **Q. Qu'est-ce qui bat une suite au poker ?**
 

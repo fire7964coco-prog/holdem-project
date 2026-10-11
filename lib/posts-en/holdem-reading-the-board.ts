@@ -171,7 +171,7 @@ Notice the last row: ==even with nothing, the board's pair is part of your hand=
 You can HOLD both — you can never PLAY both. ==A poker hand is exactly 5 cards, so overlapping combinations don't stack; you simply play the stronger one.==
 
 - You hold A♠ K♠ on Q♠ 7♠ 2♠ K♦ 3♣. You've made a pair of kings AND five spades. Your hand is the ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — the pair of kings simply never comes up.
-- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — not "a pair with a straight." At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA 2024 Rule 12). What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (TDA 2024 Rule 13-A). And if the dealer misreads it, speak up at once: a reading can be disputed until the next hand begins (TDA 2024 Rule 22), but it is far easier to fix before the pot is pushed.
+- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — not "a pair with a straight." At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA 2024 Rule 12). What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (TDA 2024 Rule 13-A). And if the dealer misreads it, speak up at once: a reading can be disputed until the next hand begins — or, if the hand ends during a break, only until 1 minute after the pot is awarded (TDA 2024 Rule 22) — but it is far easier to fix before the pot is pushed.
 
 Same logic answers "can you have three pairs?" — you might hold three paired ranks across 7 cards, but only the best two fit into 5 cards (covered in the [hand rankings guide](/en/blog/holdem-hand-rankings)).
 
@@ -249,7 +249,7 @@ A. It means the 5 community cards are already your best possible 5-card hand —
 
 **Q. Can the board be the best hand for everyone?**
 
-A. Yes. If the board itself is the best 5-card hand and no player's hole cards improve it — say the board shows a royal flush — all remaining players split the pot equally. But check first: on a board full house like A-A-A-7-7, a player holding the last ace (quad aces), the last two sevens (quad sevens), or a big pocket pair (bigger boat) beats the board.
+A. Yes. If the board itself is the best 5-card hand and no player's hole cards improve it — say the board shows a royal flush — all remaining players split the pot equally — each main and side pot among the players eligible for it. But check first: on a board full house like A-A-A-7-7, a player holding the last ace (quad aces), the last two sevens (quad sevens), or a big pocket pair (bigger boat) beats the board.
 
 **Q. Can you have a flush and a pair at the same time?**
 
@@ -273,7 +273,7 @@ A. When the five community cards make a flush, every remaining player shares it.
 
 **Q. If there is a straight on the board, who wins?**
 
-A. When the five community cards already form a straight, everyone has at least that straight — so whoever extends it to a higher straight with a hole card wins. On a 5-6-7-8-9 board, a player holding a 10 makes 6-7-8-9-10 and beats the board. Watch out the moment three cards of one suit are sitting there: an opponent with two matching cards then beats every one of those straights with a flush. If no one can go higher, the pot is split.
+A. When the five community cards already form a straight, everyone has at least that straight — so a player who extends it to a higher straight with a hole card beats the board — and if two players extend it, the higher straight wins. On a 5-6-7-8-9 board, a player holding a 10 makes 6-7-8-9-10 and beats the board. Watch out the moment three cards of one suit are sitting there: an opponent with two matching cards then beats every one of those straights with a flush. If no one can go higher, the pot is split.
 
 **Q. Does a pair on the board count as part of your hand?**
 

@@ -103,7 +103,7 @@ Le board est ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Tu tiens ==b:A♠ K♠==, ton adver
 
 Même paire, donc on compare les kickers du haut vers le bas : ton ==g:K bat sa Q.== Tu gagnes, A-A-K-9-7 contre A-A-Q-9-7. Le 9 et le 7 n'entrent même pas en jeu — le premier kicker a tout réglé.
 
-:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée n'a pas besoin de battre tout le board pour compter : elle peut encore occuper une place de kicker plus basse, derrière une carte du board (plus bas, tu verras un 9 relégué derrière la dame du board). Ta carte fermée ne joue comme kicker que si elle est plus haute que les cartes du board qu'elle remplacerait.]:::
+:::note[Remarque que les deux mains partagent le 9 et le 7 du board. Les kickers peuvent aussi venir du board : si la carte d'accompagnement la plus haute est une carte commune plus haute que les cartes fermées des deux joueurs, elle complète la main des *deux* joueurs et c'est la carte suivante qui décide. Ta carte fermée n'a pas besoin de battre tout le board pour compter : elle peut encore occuper une place de kicker plus basse, derrière une carte du board (plus bas, tu verras un 9 relégué derrière la dame du board). Ta carte fermée ne joue comme kicker que si elle est plus haute que les cartes du board qu'elle remplacerait.]:::
 
 ---
 
@@ -152,7 +152,7 @@ Le calcul est clair : quatre cartes forment le carré, une carte sert de kicker.
 
 **Q. Quelle est la définition de « kicker » en français ?**
 
-A. En français aussi, on dit « kicker » ; le mot se traduit par « carte d'accompagnement ». C'est la carte la plus haute de ta main de cinq cartes qui ne fait pas partie de ta combinaison. Il départage deux joueurs qui ont le même rang — par exemple, A-K bat A-Q quand le board apparie un as, parce que le kicker roi est plus haut que la dame. Un kicker ne bat jamais une combinaison plus forte.
+A. En français aussi, on dit « kicker » ; le mot se traduit par « carte d'accompagnement ». C'est la carte la plus haute de ta main de cinq cartes qui ne fait pas partie de ta combinaison. Il départage deux joueurs qui ont le même rang — par exemple, A-K bat A-Q quand l'as du board ne donne qu'une paire d'as à chacun, parce que le kicker roi est plus haut que la dame. Un kicker ne bat jamais une combinaison plus forte.
 
 **Q. La couleur a-t-elle un kicker ?**
 

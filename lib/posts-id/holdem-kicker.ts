@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apa Itu Kicker di Poker — Aturan, Cara Menghitung & Ace yang Terdominasi",
   seoTitle: "Apa Itu Kicker di Poker? Kartu Samping yang Memenangkan Pot",
   desc: "Kicker adalah kartu samping yang memecah seri di poker: tangan mana yang punya kicker, kenapa A9 kalah dari AK, dan pengecualian quads yang sering keliru.",
-  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
+  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat ace di meja membuat keduanya sama-sama hanya punya sepasang ace.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-11",
@@ -103,7 +103,7 @@ Mejanya ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Anda pegang ==b:A♠ K♠==, lawan pegan
 
 Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q mereka.== Anda menang, A-A-K-9-7 atas A-A-Q-9-7. Si 9 dan 7 bahkan tak ikut bermain — kicker pertama sudah menentukannya.
 
-:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari board. Kicker bisa datang dari board juga: kalau kartu samping tertinggi adalah kartu komunitas, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda tak harus mengalahkan seluruh board untuk ikut dihitung: ia tetap bisa mengisi slot kicker yang lebih rendah di belakang kartu board (di bawah nanti Anda lihat 9 terdorong ke belakang queen di board). Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.]:::
+:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari board. Kicker bisa datang dari board juga: kalau kartu samping tertinggi adalah kartu komunitas yang lebih tinggi dari kartu tertutup kedua pemain, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda tak harus mengalahkan seluruh board untuk ikut dihitung: ia tetap bisa mengisi slot kicker yang lebih rendah di belakang kartu board (di bawah nanti Anda lihat 9 terdorong ke belakang queen di board). Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.]:::
 
 ---
 
@@ -152,7 +152,7 @@ Matematikanya jelas: empat kartu membentuk quad, satu kartu adalah kicker. Ia ba
 
 **Q. Apa itu kicker di poker?**
 
-A. Kicker adalah kartu samping tertinggi dalam tangan lima-kartu Anda yang bukan bagian dari kombinasi bernilai Anda. Ia memecah seri saat dua pemain punya nilai tangan yang sama — misalnya, A-K menang atas A-Q saat meja memasangkan sebuah ace, karena kicker king mengungguli queen. Kicker tak pernah mengalahkan tangan bernilai lebih tinggi.
+A. Kicker adalah kartu samping tertinggi dalam tangan lima-kartu Anda yang bukan bagian dari kombinasi bernilai Anda. Ia memecah seri saat dua pemain punya nilai tangan yang sama — misalnya, A-K menang atas A-Q saat ace di meja membuat keduanya sama-sama hanya punya sepasang ace, karena kicker king mengungguli queen. Kicker tak pernah mengalahkan tangan bernilai lebih tinggi.
 
 **Q. Apakah flush punya kicker?**
 

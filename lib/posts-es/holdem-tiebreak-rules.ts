@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -145,7 +145,7 @@ En el otro extremo de la escalera, ==**la escalera más alta del póker es Broad
 
 Mesa **A♥ K♣ Q♦ 4♣ 2♥**, y es A♠ 8♠ contra A♦ 7♦. Ambos tienen pareja de ases. Primer kicker: la K de la mesa — empate. Segundo kicker: la Q de la mesa — empate. Tercer kicker: ==g:el 8 gana al 7.== La quinta carta literal de la mano acaba de decidir todo lo de arriba.
 
-La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatro cartas, así que la quinta es todo el showdown. Y gobierna los empates de carta alta y de color, donde se compara cada carta hasta la última. La quinta carta solo deja de importar cuando la mesa la supera — que es la última pieza del rompecabezas.
+La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatro cartas, así que la quinta es todo el showdown. Y gobierna los empates de carta alta y de color, donde se compara cada carta hasta la última. Una vez empatadas las cartas por encima de ella, la quinta carta solo deja de importar cuando la mesa la supera — que es la última pieza del rompecabezas.
 
 ---
 
@@ -202,7 +202,7 @@ A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos
 
 **Q. ¿Importa la 5.ª carta en el póker?**
 
-A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las situaciones clásicas que ponen todo el bote en la última carta: el tercer kicker de una pareja, el kicker único de una doble pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Solo deja de importar cuando las propias cartas de la mesa superan la carta lateral que llevas — a veces porque juega la mesa entera y tus cartas de mano salen del todo, a veces porque una carta de mano juega y la otra no cuenta nunca: A♠ 3♠ contra A♦ 2♦ en A♥ K♣ Q♦ J♠ 9♥ es un split, jugando ambos A-A-K-Q-J.
+A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las situaciones clásicas que ponen todo el bote en la última carta: el tercer kicker de una pareja, el kicker único de una doble pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Cuando las cartas por encima de ella están empatadas, solo deja de importar cuando las propias cartas de la mesa superan la carta lateral que llevas — a veces porque juega la mesa entera y tus cartas de mano salen del todo, a veces porque una carta de mano juega y la otra no cuenta nunca: A♠ 3♠ contra A♦ 2♦ en A♥ K♣ Q♦ J♠ 9♥ es un split, jugando ambos A-A-K-Q-J.
 
 **Q. ¿Se puede usar el as como un 1 en el póker?**
 

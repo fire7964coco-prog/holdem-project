@@ -160,7 +160,7 @@ A. A pot is split when two or more players have the identical best five-card han
 
 **Q. How is the pot split in poker?**
 
-A. The dealer divides the chips equally among the tied players. If the pot can't divide evenly, the leftover is first broken into the smallest denomination in play, and the last odd chip goes to the first tied player left of the dealer button. Suits never affect the split, and when a player is all-in each main and side pot is divided separately.
+A. The dealer divides the chips equally among the tied players. If the pot can't divide evenly, the leftover is first broken into the smallest denomination in play, and the last odd chip goes to the first tied player left of the dealer button. Suits never break the tie, and when a player is all-in each main and side pot is divided separately.
 
 **Q. Do you split the pot if both players have the same hand?**
 
@@ -196,7 +196,7 @@ A. Each player can only win from an opponent as much as they themselves put in. 
 
 **Q. Who is eligible for a side pot?**
 
-A. Only the players who put chips into that specific side pot — the ones who kept betting after another player was all-in. An all-in player is eligible only for the main pot (plus any earlier side pots they contributed to), never for a side pot built with chips they couldn't match. Each pot is awarded to the best hand among its own eligible players.
+A. Only the players who put chips into that specific side pot — the players who put in more than a shorter all-in stack could match. An all-in player is eligible only for the main pot (plus any earlier side pots they contributed to), never for a side pot built with chips they couldn't match. Each pot is awarded to the best hand among its own eligible players.
 
 **Q. Can you win both the main pot and a side pot?**
 

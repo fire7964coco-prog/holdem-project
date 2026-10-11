@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar con cinco cartas, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -296,7 +296,7 @@ En su mayoría sí — el mismo orden de diez manos vale en Texas Hold'em, Omaha
 |------|------|------|
 | **Texas Hold'em** | Estándar (esta guía) | Usa 0-2 de tus cartas propias |
 | **Omaha** | Estándar | Debes usar *exactamente* 2 de tus 4 cartas |
-| **Seven-Card Stud** | Estándar | Sin cartas comunitarias |
+| **Seven-Card Stud** | Estándar | Sin cartas comunitarias (salvo una rara última carta compartida si la baraja no alcanza) |
 | **Short Deck (6+)** | Modificada | El color gana al full; A-6-7-8-9 es la escalera más baja (el As juega bajo y, sin las cartas del 2 al 5, conecta con el 6) |
 
 La conclusión: aprende el orden estándar una vez y te servirá en casi todos los juegos. Solo recuerda la regla de "exactamente dos" del Omaha y el ascenso del color en Short Deck.
@@ -380,7 +380,7 @@ A. Sí. La escalera de color (#2) gana al póker (#3) — cinco cartas en secuen
 
 **Q. ¿Cuál es la mano más baja (peor) del póker?**
 
-A. La peor mano posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la carta alta más baja que no forma pareja, escalera ni color — la clásica mano de "no tienes nada".
+A. Como mano de cinco cartas, la peor posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la carta alta más baja que no forma pareja, escalera ni color — la clásica mano de "no tienes nada". En Hold'em, donde juegas las mejores cinco de tus siete cartas, la mano más floja con la que puedes terminar de verdad es 9-8-7-5-4 (con 9-8-7-5-4-3-2 en palos mezclados).
 
 **Q. ¿Se pueden tener tres parejas en el póker?**
 

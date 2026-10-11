@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker phá thế hòa theo thứ tự cố định: so hạng bài trước, rồi so các lá tạo nên tay bài, cuối cùng so kicker (lá phụ) từ cao xuống thấp. Cùng đôi thì kicker đầu cao hơn thắng; giống hệt 5 lá thì chia pot (split pot). Chất bài không bao giờ quyết định thắng thua.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -145,7 +145,7 @@ Hai điều wheel *không* làm được: lá A không thể nằm giữa chuỗ
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, và đó là A♠ 8♠ đấu A♦ 7♦. Cả hai có đôi A. Kicker thứ nhất: lá K trên board — hòa. Kicker thứ hai: lá Q trên board — hòa. Kicker thứ ba: ==g:8 thắng 7.== Chính lá thứ năm quyết định người thắng pot.
 
-Cách so này cũng áp dụng khi tứ quý nằm trên board: mọi người dùng chung bốn lá, nên lá thứ năm là toàn bộ showdown. Và cách này cũng dùng cho thế hòa của mậu thầu và thùng, nơi từng lá cho đến lá cuối cùng đều được so. Lá thứ năm chỉ thôi quan trọng khi board cao hơn nó — mảnh ghép cuối cùng của bài toán.
+Cách so này cũng áp dụng khi tứ quý nằm trên board: mọi người dùng chung bốn lá, nên lá thứ năm là toàn bộ showdown. Và cách này cũng dùng cho thế hòa của mậu thầu và thùng, nơi từng lá cho đến lá cuối cùng đều được so. Một khi các lá phía trên đã hòa nhau, lá thứ năm chỉ thôi quan trọng khi board cao hơn nó — mảnh ghép cuối cùng của bài toán.
 
 ---
 
@@ -202,7 +202,7 @@ A. Sám cô mang hai kicker, so lá cao nhất trước — nên nếu cả hai 
 
 **Q. Lá thứ 5 có quan trọng không?**
 
-A. Có — và đó là cách phổ biến nhất khiến một người mất pot mà họ chắc chắn đã thắng. Những tình huống kinh điển đặt cả pot lên lá cuối: kicker thứ ba của một đôi, kicker duy nhất của hai đôi, lá thấp nhất của thùng, và lá phụ bên cạnh tứ quý nằm trên board. Nó chỉ thôi quan trọng khi các lá của chính board cao hơn lá phụ bạn cầm — đôi khi vì cả board được tính và bài tẩy của bạn rơi ra hoàn toàn, đôi khi vì một lá bài tẩy được tính còn lá kia không bao giờ: A♠ 3♠ đấu A♦ 2♦ trên A♥ K♣ Q♦ J♠ 9♥ là chop, cả hai đều chơi A-A-K-Q-J.
+A. Có — và đó là cách phổ biến nhất khiến một người mất pot mà họ chắc chắn đã thắng. Những tình huống kinh điển đặt cả pot lên lá cuối: kicker thứ ba của một đôi, kicker duy nhất của hai đôi, lá thấp nhất của thùng, và lá phụ bên cạnh tứ quý nằm trên board. Khi các lá phía trên nó đã hòa nhau, nó chỉ thôi quan trọng khi các lá của chính board cao hơn lá phụ bạn cầm — đôi khi vì cả board được tính và bài tẩy của bạn rơi ra hoàn toàn, đôi khi vì một lá bài tẩy được tính còn lá kia không bao giờ: A♠ 3♠ đấu A♦ 2♦ trên A♥ K♣ Q♦ J♠ 9♥ là chop, cả hai đều chơi A-A-K-Q-J.
 
 **Q. Lá A có tính là 1 trong sảnh không, và sảnh đó lớn cỡ nào?**
 

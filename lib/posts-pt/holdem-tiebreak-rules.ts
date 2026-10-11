@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -143,7 +143,7 @@ Duas coisas que a wheel *não* faz: o ás não dá a volta pelo meio (Q-K-A-2-3 
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, e é A♠ 8♠ contra A♦ 7♦. Ambos têm par de ases. Primeiro kicker: o K da mesa — empate. Segundo kicker: a Q da mesa — empate. Terceiro kicker: ==g:8 ganha de 7.== A literal quinta carta da mão acabou de decidir tudo acima dela.
 
-A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro cartas, então a quinta é o showdown inteiro. E vale em empates de carta alta e flush, onde toda carta até a última é comparada. A quinta carta só deixa de importar quando a mesa a supera — que é a última peça do quebra-cabeça.
+A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro cartas, então a quinta é o showdown inteiro. E vale em empates de carta alta e flush, onde toda carta até a última é comparada. Com as cartas acima dela empatadas, a quinta carta só deixa de importar quando a mesa a supera — que é a última peça do quebra-cabeça.
 
 ---
 
@@ -200,7 +200,7 @@ A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — 
 
 **Q. A 5ª carta importa no poker?**
 
-A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Ela só deixa de importar quando as cartas da mesa superam a carta lateral que você tem — às vezes porque a mesa inteira joga e suas cartas fechadas saem de cena, às vezes porque só uma carta fechada joga e a outra nunca conta: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
+A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Com as cartas acima dela empatadas, ela só deixa de importar quando as cartas da mesa superam a carta lateral que você tem — às vezes porque a mesa inteira joga e suas cartas fechadas saem de cena, às vezes porque só uma carta fechada joga e a outra nunca conta: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
 
 **Q. Dá para usar o ás como 1 no poker?**
 

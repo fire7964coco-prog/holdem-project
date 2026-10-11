@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em bạn luôn chơi tay bài 5 lá mạnh nhất trong 7 lá (2 lá bài tẩy + 5 lá bài chung) — dùng cả hai lá tẩy, một lá, hoặc không lá nào (chơi theo board). Quét cả 7 lá theo một thứ tự cố định: thùng → sảnh → các lá trùng hạng → bài cao.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -164,7 +164,7 @@ Hãy để ý hàng cuối: ==ngay cả khi không có gì, đôi trên board v�
 Bạn có thể CẦM cả hai — nhưng không bao giờ CHƠI cả hai. ==Một tay bài poker là đúng 5 lá, nên các tổ hợp chồng lên nhau không cộng dồn; bạn chỉ chơi tay mạnh hơn.==
 
 - Bạn cầm A♠ K♠ trên Q♠ 7♠ 2♠ K♦ 3♣. Bạn vừa có đôi K VÀ năm lá bích. Tay bài của bạn là ==thùng nuts (nut flush), A♠ K♠ Q♠ 7♠ 2♠== — đôi K đơn giản là không bao giờ được nhắc tới.
-- Bạn cầm 8♥ 8♦ trên 7♣ 6♦ 5♠ 4♥ K♦. Đôi 8 VÀ 8-7-6-5-4. Tay bài của bạn là ==sảnh có 8 cao nhất== — không phải "đôi kèm sảnh". Khi showdown bạn không cần hô tên tay bài: bài tự nói lên tất cả, và dealer đọc tay bài (Luật TDA 2024, điều 12). Điều bạn phải làm là ngửa cả hai lá lên — bài chỉ "nói" khi tay bài được lật đúng cách (Luật TDA 2024, điều 13-A). Và nếu dealer đọc nhầm, hãy lên tiếng ngay: việc đọc bài có thể được khiếu nại cho tới khi ván sau bắt đầu (Luật TDA 2024, điều 22), nhưng sửa trước khi pot được đẩy đi dễ hơn nhiều.
+- Bạn cầm 8♥ 8♦ trên 7♣ 6♦ 5♠ 4♥ K♦. Đôi 8 VÀ 8-7-6-5-4. Tay bài của bạn là ==sảnh có 8 cao nhất== — không phải "đôi kèm sảnh". Khi showdown bạn không cần hô tên tay bài: bài tự nói lên tất cả, và dealer đọc tay bài (Luật TDA 2024, điều 12). Điều bạn phải làm là ngửa cả hai lá lên — bài chỉ "nói" khi tay bài được lật đúng cách (Luật TDA 2024, điều 13-A). Và nếu dealer đọc nhầm, hãy lên tiếng ngay: việc đọc bài có thể được khiếu nại cho tới khi ván sau bắt đầu — hoặc, nếu ván kết thúc lúc giải lao, chỉ trong 1 phút sau khi pot được trao (Luật TDA 2024, điều 22) — nhưng sửa trước khi pot được đẩy đi dễ hơn nhiều.
 
 Cùng logic đó trả lời "có 3 đôi không?" — bạn có thể cầm ba hạng trùng trong 7 lá, nhưng chỉ hai đôi mạnh nhất lọt vào 5 lá (đã nói trong [bài thứ tự bài poker](/vi/blog/holdem-hand-rankings)).
 
@@ -244,7 +244,7 @@ A. Nghĩa là 5 lá bài chung đã là tay bài 5 lá mạnh nhất có thể c
 
 **Q. Bài chung có thể là tay bài mạnh nhất cho cả bàn không?**
 
-A. Có. Nếu chính board là tay bài 5 lá mạnh nhất và bài tẩy của không ai cải thiện được nó — ví dụ board hiện thùng phá sảnh hoàng gia — mọi người chơi còn lại chia đều pot. Nhưng hãy kiểm tra trước: trên board cù lũ như A-A-A-7-7, người cầm lá A cuối cùng (tứ quý A), hai lá 7 còn lại (tứ quý 7) hoặc một đôi lớn trên tay (cù lũ lớn hơn) đều thắng board.
+A. Có. Nếu chính board là tay bài 5 lá mạnh nhất và bài tẩy của không ai cải thiện được nó — ví dụ board hiện thùng phá sảnh hoàng gia — mọi người chơi còn lại chia đều pot — pot chính và từng pot phụ được chia giữa những người đủ điều kiện tranh pot đó. Nhưng hãy kiểm tra trước: trên board cù lũ như A-A-A-7-7, người cầm lá A cuối cùng (tứ quý A), hai lá 7 còn lại (tứ quý 7) hoặc một đôi lớn trên tay (cù lũ lớn hơn) đều thắng board.
 
 **Q. Vừa có thùng vừa có đôi thì tính thế nào?**
 
@@ -268,7 +268,7 @@ A. Khi năm lá bài chung tạo thành thùng, mọi người chơi còn lại 
 
 **Q. Board là sảnh sẵn thì ai thắng?**
 
-A. Khi năm lá bài chung đã tạo thành sảnh, mọi người đều có ít nhất sảnh đó — nên ai kéo dài được nó thành sảnh cao hơn bằng một lá tẩy sẽ thắng. Trên board 5-6-7-8-9, người cầm lá 10 có 6-7-8-9-10 và thắng board. Hãy cảnh giác ngay khi có ba lá cùng chất nằm đó: đối thủ cầm hai lá chất đó sẽ thắng mọi sảnh kia bằng thùng. Nếu không ai lên cao hơn được, pot được chia — xem [luật chia pot](/vi/blog/holdem-split-pot-rules).
+A. Khi năm lá bài chung đã tạo thành sảnh, mọi người đều có ít nhất sảnh đó — nên người kéo dài được nó thành sảnh cao hơn bằng một lá tẩy sẽ thắng board — và nếu hai người cùng kéo dài được, sảnh cao hơn sẽ thắng. Trên board 5-6-7-8-9, người cầm lá 10 có 6-7-8-9-10 và thắng board. Hãy cảnh giác ngay khi có ba lá cùng chất nằm đó: đối thủ cầm hai lá chất đó sẽ thắng mọi sảnh kia bằng thùng. Nếu không ai lên cao hơn được, pot được chia — xem [luật chia pot](/vi/blog/holdem-split-pot-rules).
 
 **Q. Đôi trên board có tính vào tay bài của tôi không?**
 

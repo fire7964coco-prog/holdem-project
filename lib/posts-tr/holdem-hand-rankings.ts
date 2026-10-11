@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -319,7 +319,7 @@ Sıralama neredeyse tüm poker varyantlarında aynıdır, birkaç önemli farkla
 |------|------|------|
 | **Texas Hold'em** | Standart (bu rehber) | 0-2 kartını kullan |
 | **Omaha** | Standart | 4 kartından *tam olarak* 2'sini kullanmalısın |
-| **Seven-Card Stud** | Standart | Ortak kart yok |
+| **Seven-Card Stud** | Standart | Ortak kart yok (deste yetmezse nadiren paylaşılan tek bir son kart hariç) |
 | **Short Deck (6+)** | Değiştirilmiş | Flush full house'u yener; A-6-7-8-9 en düşük kenttir (As düşük oynar; 2–5 çıkarıldığı için doğrudan 6'ya bağlanır) |
 
 Özet: standart sıralamayı bir kez öğren, neredeyse her oyunda işine yarar. Sadece Omaha'nın "tam olarak iki" kuralını ve Short Deck'te flush'ın yükselişini hatırla. Türk pokeri ayrı bir oyundur; bu rehber 52 kartlık Texas Hold'em içindir.

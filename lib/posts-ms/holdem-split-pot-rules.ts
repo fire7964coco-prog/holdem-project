@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ya — tangan poker boleh seri. Pot dibahagi (chop) apabila dua atau lebih pemain menunjukkan lima kad terbaik yang serupa semasa showdown. Suit tidak pernah memecahkan seri, dan odd chip yang berbaki diberikan kepada pemain seri pertama di sebelah kiri butang pengedar.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -161,7 +161,7 @@ A. Pot dibahagi apabila dua atau lebih pemain memegang lima kad terbaik yang ser
 
 **Q. Bagaimana pot dibahagi dalam poker?**
 
-A. Pengedar membahagi cip sama rata antara pemain yang seri. Jika pot tidak dapat dibahagi sama rata, bakinya dipecahkan dahulu kepada denominasi terkecil yang digunakan, dan odd chip terakhir diberikan kepada pemain seri pertama di sebelah kiri butang pengedar. Suit tidak pernah menjejaskan pembahagian, dan apabila ada pemain all-in, setiap pot utama dan side pot dibahagi secara berasingan.
+A. Pengedar membahagi cip sama rata antara pemain yang seri. Jika pot tidak dapat dibahagi sama rata, bakinya dipecahkan dahulu kepada denominasi terkecil yang digunakan, dan odd chip terakhir diberikan kepada pemain seri pertama di sebelah kiri butang pengedar. Suit tidak pernah memecahkan seri, dan apabila ada pemain all-in, setiap pot utama dan side pot dibahagi secara berasingan.
 
 **Q. Adakah pot dibahagi jika kedua-dua pemain ada tangan yang sama?**
 
@@ -197,7 +197,7 @@ A. Setiap pemain hanya boleh memenangi daripada seorang lawan sebanyak yang dima
 
 **Q. Siapa yang layak untuk side pot?**
 
-A. Hanya pemain yang memasukkan cip ke dalam side pot tertentu itu — mereka yang terus bertaruh selepas pemain lain all-in. Pemain all-in hanya layak untuk pot utama (ditambah mana-mana side pot terdahulu yang disumbangnya), tidak pernah untuk side pot yang dibina dengan cip yang tidak mampu disamainya. Setiap pot diberikan kepada tangan terbaik antara pemain yang layak baginya sendiri.
+A. Hanya pemain yang memasukkan cip ke dalam side pot tertentu itu — pemain yang memasukkan lebih banyak daripada yang mampu disamai oleh stack all-in yang lebih pendek. Pemain all-in hanya layak untuk pot utama (ditambah mana-mana side pot terdahulu yang disumbangnya), tidak pernah untuk side pot yang dibina dengan cip yang tidak mampu disamainya. Setiap pot diberikan kepada tangan terbaik antara pemain yang layak baginya sendiri.
 
 **Q. Bolehkah anda memenangi pot utama dan side pot sekali gus?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au poker, une égalité se départage toujours dans le même ordre : d'abord le rang de la combinaison, puis les cartes qui la forment, puis les kickers du plus haut au plus bas. Même paire : le kicker le plus haut gagne ; cinq cartes identiques : le pot est partagé. L'enseigne des cartes ne départage jamais.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -153,7 +153,7 @@ Deux choses que la roue ne fait *pas* : l'as ne peut pas faire le tour par le mi
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, et c'est A♠ 8♠ contre A♦ 7♦. Les deux ont une paire d'as. Premier kicker : le K du board — égalité. Deuxième kicker : la Q du board — égalité. Troisième kicker : ==g:le 8 bat le 7.== La cinquième carte de la main, au sens littéral, a décidé à elle seule du pot.
 
-La même logique s'applique aux pots avec un carré sur le board : tout le monde partage quatre cartes, donc c'est la cinquième carte qui tranche à l'abattage. Et elle s'applique aux égalités à la carte haute et à la couleur, où chaque carte jusqu'à la dernière est comparée. La cinquième carte ne cesse de compter que lorsque le board la domine — et c'est la dernière pièce du puzzle.
+La même logique s'applique aux pots avec un carré sur le board : tout le monde partage quatre cartes, donc c'est la cinquième carte qui tranche à l'abattage. Et elle s'applique aux égalités à la carte haute et à la couleur, où chaque carte jusqu'à la dernière est comparée. Une fois les cartes au-dessus d'elle à égalité, la cinquième carte ne cesse de compter que lorsque le board la domine — et c'est la dernière pièce du puzzle.
 
 ---
 
@@ -218,7 +218,7 @@ A. Le brelan porte deux kickers, comparés le plus haut d'abord — donc si les 
 
 **Q. La 5e carte peut-elle faire la différence ?**
 
-A. Oui — et c'est la façon la plus courante de perdre un pot qu'on croyait gagné. Les cas classiques où tout le pot se joue sur la dernière carte : le troisième kicker d'une paire, le kicker unique d'une double paire, la carte la plus basse d'une couleur, et la carte d'accompagnement à côté d'un carré posé sur le board. Elle cesse de compter seulement quand les cartes du board dominent la carte que tu tiens — parfois parce que tout le board joue et que tes cartes fermées sortent entièrement de la main, parfois parce qu'une carte fermée joue et que l'autre ne compte jamais : A♠ 3♠ contre A♦ 2♦ sur A♥ K♣ Q♦ J♠ 9♥ est un partage, les deux jouant A-A-K-Q-J.
+A. Oui — et c'est la façon la plus courante de perdre un pot qu'on croyait gagné. Les cas classiques où tout le pot se joue sur la dernière carte : le troisième kicker d'une paire, le kicker unique d'une double paire, la carte la plus basse d'une couleur, et la carte d'accompagnement à côté d'un carré posé sur le board. Quand les cartes au-dessus d'elle sont à égalité, elle cesse de compter seulement quand les cartes du board dominent la carte que tu tiens — parfois parce que tout le board joue et que tes cartes fermées sortent entièrement de la main, parfois parce qu'une carte fermée joue et que l'autre ne compte jamais : A♠ 3♠ contre A♦ 2♦ sur A♥ K♣ Q♦ J♠ 9♥ est un partage, les deux jouant A-A-K-Q-J.
 
 **Q. L'as peut-il valoir 1 dans une suite (As-2-3-4-5) ?**
 

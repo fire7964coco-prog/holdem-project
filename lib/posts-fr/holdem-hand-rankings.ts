@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "L'ordre des combinaisons au poker, de la plus forte à la plus faible : quinte flush royale, quinte flush, carré, full, couleur, quinte (suite), brelan, double paire, paire et carte haute. Les enseignes ne départagent jamais ; à combinaison égale, ce sont les cartes de la combinaison, puis les éventuels kickers, qui départagent.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-08",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -321,7 +321,7 @@ Presque toujours — le même ordre des dix combinaisons vaut au Texas Hold'em, 
 |------|------|------|
 | **Texas Hold'em** | Standard (ce guide) | Tu utilises 0 à 2 de tes cartes fermées, au choix |
 | **Omaha** | Standard | Tu dois utiliser *exactement* 2 de tes 4 cartes fermées |
-| **Seven-Card Stud** | Standard | Pas de cartes communes |
+| **Seven-Card Stud** | Standard | Pas de cartes communes (sauf une rare dernière carte commune si le paquet ne suffit pas) |
 | **Short Deck (6+)** | Modifié | La couleur bat le full ; A-6-7-8-9 est la plus petite quinte (l'as joue toujours en bas, et sans les 2 à 5 il se relie au 6) |
 
 À retenir : apprends l'ordre standard une fois et il te servira dans presque tous les jeux. Souviens-toi juste du « exactement deux » de l'Omaha et de la couleur qui monte d'un cran au Short Deck.
@@ -405,7 +405,7 @@ A. Oui. La quinte flush (#2) bat le carré (#3) — cinq cartes qui se suivent d
 
 **Q. Quelle est la combinaison la plus faible au poker ?**
 
-A. La pire main possible est 7-5-4-3-2 en enseignes mélangées (« hauteur sept »). C'est la plus petite carte haute qui ne forme ni paire, ni quinte, ni couleur — la main classique du « tu n'as rien ».
+A. En main de cinq cartes, la pire possible est 7-5-4-3-2 en enseignes mélangées (« hauteur sept »). C'est la plus petite carte haute qui ne forme ni paire, ni quinte, ni couleur — la main classique du « tu n'as rien ». Au Hold'em, où tu joues tes cinq meilleures cartes parmi les sept, la main la plus faible avec laquelle tu peux réellement finir est 9-8-7-5-4 (avec 9-8-7-5-4-3-2 en enseignes mélangées).
 
 **Q. Peut-on avoir trois paires au poker ?**
 

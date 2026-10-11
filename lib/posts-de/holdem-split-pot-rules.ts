@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -165,7 +165,7 @@ A. Nur, wenn die vollständigen besten Fünf unentschieden sind – dasselbe Paa
 
 **Q. Wie teilt der Dealer den Pot konkret auf?**
 
-A. Er stapelt die Chips und gibt jedem am Chop beteiligten Spieler denselben Anteil. Geht die Teilung nicht glatt auf, wird der Rest zuerst in die kleinste im Spiel befindliche Chip-Einheit gewechselt, und der letzte Odd Chip wandert an den ersten am Chop beteiligten Sitz links vom Button. Die Farbe spielt dabei keine Rolle, und wenn jemand All-in ist, wird jeder Pot – Haupt- wie Nebenpot – für sich abgerechnet.
+A. Er stapelt die Chips und gibt jedem am Chop beteiligten Spieler denselben Anteil. Geht die Teilung nicht glatt auf, wird der Rest zuerst in die kleinste im Spiel befindliche Chip-Einheit gewechselt, und der letzte Odd Chip wandert an den ersten am Chop beteiligten Sitz links vom Button. Die Farbe bricht dabei nie den Gleichstand, und wenn jemand All-in ist, wird jeder Pot – Haupt- wie Nebenpot – für sich abgerechnet.
 
 **Q. Wird bei Full House, Straße oder Zwei Paaren geteilt?**
 
@@ -197,7 +197,7 @@ A. Jeder kann von einem Gegner nur so viel gewinnen, wie er selbst investiert ha
 
 **Q. Wer ist für einen Nebenpot berechtigt?**
 
-A. Nur die Spieler, die Chips in genau diesen Nebenpot gelegt haben – also die, die nach dem All-in weitergesetzt haben. Ein All-in-Spieler ist für den Hauptpot berechtigt (plus frühere Nebenpots, zu denen er beigetragen hat), nie für einen Pot aus Chips, die er nicht mitgehen konnte.
+A. Nur die Spieler, die Chips in genau diesen Nebenpot gelegt haben – also die, die mehr eingezahlt haben, als ein kürzerer All-in-Stack mitgehen konnte. Ein All-in-Spieler ist für den Hauptpot berechtigt (plus frühere Nebenpots, zu denen er beigetragen hat), nie für einen Pot aus Chips, die er nicht mitgehen konnte.
 
 **Q. Kann man Hauptpot und Nebenpot zugleich gewinnen?**
 

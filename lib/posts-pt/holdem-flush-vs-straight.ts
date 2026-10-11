@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -194,7 +194,7 @@ A. Matemática pura. A sequência ignora os naipes, então há cerca de 10.200 f
 
 **Q. O que ganha do flush no poker?**
 
-A. Full house, quadra, straight flush e royal flush ganham todos do flush — e um flush mais alto (carta de topo melhor) também. Tudo abaixo dele (sequência, trinca, dois pares, par, carta alta) perde para ele.
+A. Full house, quadra, straight flush e royal flush ganham todos do flush — e um flush mais alto (comparado carta a carta, de cima para baixo) também. Tudo abaixo dele (sequência, trinca, dois pares, par, carta alta) perde para ele.
 
 **Q. O que ganha da sequência no poker?**
 

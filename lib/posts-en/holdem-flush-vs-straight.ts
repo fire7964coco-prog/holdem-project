@@ -193,7 +193,7 @@ A. Pure math. A straight ignores suits, so there are about 10,200 ways to make o
 
 **Q. What beats a flush in poker?**
 
-A. A full house, four of a kind, a straight flush, and a royal flush all beat a flush — and so does a higher flush (better top card). Everything below it (straight, three of a kind, two pair, one pair, high card) loses to it.
+A. A full house, four of a kind, a straight flush, and a royal flush all beat a flush — and so does a higher flush (compared card by card from the top). Everything below it (straight, three of a kind, two pair, one pair, high card) loses to it.
 
 **Q. What beats a straight in poker?**
 

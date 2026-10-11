@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, tu joues toujours la meilleure main de 5 cartes parmi 7 (tes 2 cartes fermées + les 5 cartes communes), avec tes deux cartes fermées, une seule ou aucune (jouer le board). Passe les 7 cartes en revue toujours dans le même ordre : couleur, puis suite, puis cartes appariées, puis carte haute.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -180,7 +180,7 @@ Regarde la dernière ligne : ==même sans rien, la paire du board fait partie de
 Tu peux AVOIR les deux — tu ne peux jamais JOUER les deux. ==Une main de poker fait exactement 5 cartes, donc les combinaisons qui se chevauchent ne s'additionnent pas ; tu joues simplement la plus forte.==
 
 - Tu as A♠ K♠ sur Q♠ 7♠ 2♠ K♦ 3♣. Tu as fait une paire de rois ET cinq piques. Ta main est ==la couleur max (nut flush), A♠ K♠ Q♠ 7♠ 2♠== — la paire de rois n'entre tout simplement jamais en jeu.
-- Tu as 8♥ 8♦ sur 7♣ 6♦ 5♠ 4♥ K♦. Paire de huit ET 8-7-6-5-4. Ta main est la ==quinte hauteur huit== — pas « une paire avec une quinte ». À l'abattage, tu n'as pas besoin de l'annoncer : les cartes parlent, et c'est le donneur qui lit la main (TDA 2024, règle 12). Ce que tu dois faire, en revanche, c'est retourner tes deux cartes face visible — les cartes ne parlent que pour une main correctement abattue (TDA 2024, règle 13-A). Et si le donneur lit mal ta main, signale-le tout de suite : une lecture peut être contestée jusqu'au début de la main suivante (TDA 2024, règle 22), mais c'est bien plus facile à corriger avant que le pot ne soit poussé.
+- Tu as 8♥ 8♦ sur 7♣ 6♦ 5♠ 4♥ K♦. Paire de huit ET 8-7-6-5-4. Ta main est la ==quinte hauteur huit== — pas « une paire avec une quinte ». À l'abattage, tu n'as pas besoin de l'annoncer : les cartes parlent, et c'est le donneur qui lit la main (TDA 2024, règle 12). Ce que tu dois faire, en revanche, c'est retourner tes deux cartes face visible — les cartes ne parlent que pour une main correctement abattue (TDA 2024, règle 13-A). Et si le donneur lit mal ta main, signale-le tout de suite : une lecture peut être contestée jusqu'au début de la main suivante — ou, si la main se termine pendant une pause, seulement jusqu'à 1 minute après l'attribution du pot (TDA 2024, règle 22) —, mais c'est bien plus facile à corriger avant que le pot ne soit poussé.
 
 La même logique répond à « peut-on avoir trois paires ? » — tu peux avoir trois rangs appariés parmi 7 cartes, mais seules les deux meilleures paires tiennent dans 5 cartes (expliqué dans le [guide des combinaisons au poker](/fr/blog/holdem-hand-rankings)).
 
@@ -260,7 +260,7 @@ A. Cela veut dire que les 5 cartes communes sont déjà ta meilleure main possib
 
 **Q. Que se passe-t-il si la meilleure combinaison est affichée sur le board ?**
 
-A. Si le board lui-même est la meilleure main de 5 cartes et qu'aucune carte fermée ne l'améliore — par exemple une quinte flush royale sur le board — tous les joueurs restants se partagent le pot à parts égales. Mais vérifie d'abord : sur un full du board comme A-A-A-7-7, un joueur qui a le dernier as (carré d'as), les deux derniers sept (carré de sept) ou une grosse paire servie (full plus fort) bat le board.
+A. Si le board lui-même est la meilleure main de 5 cartes et qu'aucune carte fermée ne l'améliore — par exemple une quinte flush royale sur le board — tous les joueurs restants se partagent le pot à parts égales — le pot principal et chaque pot annexe entre les joueurs qui y ont droit. Mais vérifie d'abord : sur un full du board comme A-A-A-7-7, un joueur qui a le dernier as (carré d'as), les deux derniers sept (carré de sept) ou une grosse paire servie (full plus fort) bat le board.
 
 **Q. Une couleur et une paire en même temps, c'est possible ?**
 
@@ -284,7 +284,7 @@ A. Quand les cinq cartes communes forment une couleur, tous les joueurs restants
 
 **Q. Il y a une suite sur le board : qui gagne ?**
 
-A. Quand les cinq cartes communes forment déjà une quinte, tout le monde a au moins cette quinte — c'est donc celui qui la prolonge en une quinte plus haute avec une carte fermée qui gagne. Sur un board 5-6-7-8-9, un joueur qui a un 10 fait 6-7-8-9-10 et bat le board. Méfie-toi dès que trois cartes d'une même enseigne sont posées : un adversaire avec deux cartes assorties bat alors toutes ces quintes avec une couleur. Si personne ne peut monter plus haut, le pot est partagé.
+A. Quand les cinq cartes communes forment déjà une quinte, tout le monde a au moins cette quinte — un joueur qui la prolonge en une quinte plus haute avec une carte fermée bat donc le board, et si deux joueurs la prolongent, c'est la quinte la plus haute qui gagne. Sur un board 5-6-7-8-9, un joueur qui a un 10 fait 6-7-8-9-10 et bat le board. Méfie-toi dès que trois cartes d'une même enseigne sont posées : un adversaire avec deux cartes assorties bat alors toutes ces quintes avec une couleur. Si personne ne peut monter plus haut, le pot est partagé.
 
 **Q. Une paire sur le board compte-t-elle dans ta main ?**
 

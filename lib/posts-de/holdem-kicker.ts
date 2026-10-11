@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Was ist ein Kicker beim Poker – Regeln, Zählen & das dominierte Ass",
   seoTitle: "Was ist ein Kicker beim Poker? Die Karte, die Pots gewinnt",
   desc: "Der Kicker ist die Beikarte, die beim Poker Gleichstände bricht – welche Hände einen haben und wie viele, warum A9 gegen AK verliert und die Vierling-Ausnahme.",
-  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
+  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Ass auf dem Board beiden nur ein Paar Asse gibt.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-11",
@@ -35,7 +35,7 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 :::
 
 > **Kurze Antwort**
-> Ein Kicker (deutsch: **Beikarte**) ist die höchste Karte in deinen besten fünf, die nicht zur gewerteten Kombination gehört. Er entscheidet den Pot, wenn zwei Spieler dieselbe Hand halten: ==g:A-K schlägt A-Q, sobald das Board ein Ass pairt==. Bei High Card zählen vier Kicker, bei einem Paar drei, bei einem Drilling zwei, bei Zwei Paaren und Vierling je einer – **Straße, Flush, Full House und Straight Flush haben keinen**, weil sie bereits alle fünf Karten füllen.
+> Ein Kicker (deutsch: **Beikarte**) ist die höchste Karte in deinen besten fünf, die nicht zur gewerteten Kombination gehört. Er entscheidet den Pot, wenn zwei Spieler dieselbe Hand halten: ==g:A-K schlägt A-Q, sobald das Ass auf dem Board beiden nur ein Paar Asse gibt==. Bei High Card zählen vier Kicker, bei einem Paar drei, bei einem Drilling zwei, bei Zwei Paaren und Vierling je einer – **Straße, Flush, Full House und Straight Flush haben keinen**, weil sie bereits alle fünf Karten füllen.
 
 ---
 
@@ -106,7 +106,7 @@ Das Board ist ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Du hältst ==b:A♠ K♠==, dein G
 
 Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlägt seine Q.== Du gewinnst, A-A-K-9-7 über A-A-Q-9-7. Die 9 und die 7 kommen nicht einmal ins Spiel – der erste Kicker hat es entschieden.
 
-:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card muss nicht das ganze Board schlagen, um zu zählen: Sie kann trotzdem einen niedrigeren Kicker-Platz hinter einer Boardkarte füllen (weiter unten siehst du eine 9, die hinter die Dame vom Board rutscht). Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.]:::
+:::note[Beachte, dass beide Hände die 9 und die 7 vom Board teilen. Kicker können auch vom Board kommen: Wenn die höchste Beikarte eine Gemeinschaftskarte ist, die höher ist als die Hole Cards beider Spieler, füllt sie die Hand *beider* Spieler und die nächste Karte entscheidet. Deine Hole Card muss nicht das ganze Board schlagen, um zu zählen: Sie kann trotzdem einen niedrigeren Kicker-Platz hinter einer Boardkarte füllen (weiter unten siehst du eine 9, die hinter die Dame vom Board rutscht). Deine Hole Card spielt nur, wenn sie höher ist als die Board-Karte, die sie ersetzen würde.]:::
 
 ---
 
@@ -155,7 +155,7 @@ Die Mathematik ist klar: Vier Karten bilden den Vierling, eine Karte ist der Kic
 
 **Q. Was bedeutet „Beikarte“ beim Poker?**
 
-A. Beikarte ist das deutsche Wort für Kicker: die höchste Karte in deinen besten Fünf, die nicht Teil deiner gewerteten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Board ein Ass pairt, weil der König als Kicker die Dame schlägt. Ein Kicker schlägt nie eine höherrangige Hand.
+A. Beikarte ist das deutsche Wort für Kicker: die höchste Karte in deinen besten Fünf, die nicht Teil deiner gewerteten Kombination ist. Er bricht Gleichstände, wenn zwei Spieler denselben Rang teilen – zum Beispiel schlägt A-K das A-Q, wenn das Ass auf dem Board beiden nur ein Paar Asse gibt, weil der König als Kicker die Dame schlägt. Ein Kicker schlägt nie eine höherrangige Hand.
 
 **Q. Hat ein Flush einen Kicker?**
 

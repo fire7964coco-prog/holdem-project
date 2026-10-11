@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Flush (lima kad satu suit, kira-kira 0.197% daripada tangan lima kad) sentiasa menang ke atas straight (lima kad berturutan, kira-kira 0.392%) dalam Texas Hold'em. Sebabnya flush lebih jarang: merentas tujuh kad hingga river, flush muncul 3.03% berbanding 4.62% untuk straight.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -194,7 +194,7 @@ A. Matematik semata-mata. Straight tidak mengira suit, jadi ada kira-kira 10,200
 
 **Q. Apa yang mengalahkan flush dalam poker?**
 
-A. Full house, four of a kind, straight flush dan royal flush semuanya mengalahkan flush — begitu juga flush yang lebih tinggi (kad teratas yang lebih baik). Semua di bawahnya (straight, three of a kind, two pair, one pair, high card) kalah kepadanya.
+A. Full house, four of a kind, straight flush dan royal flush semuanya mengalahkan flush — begitu juga flush yang lebih tinggi (dibandingkan kad demi kad dari yang teratas). Semua di bawahnya (straight, three of a kind, two pair, one pair, high card) kalah kepadanya.
 
 **Q. Apa yang mengalahkan straight dalam poker?**
 

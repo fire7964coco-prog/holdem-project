@@ -297,7 +297,7 @@ Mostly yes — the same ten-hand order carries across Texas Hold'em, Omaha, and 
 |------|------|------|
 | **Texas Hold'em** | Standard (this guide) | Use any 0–2 of your hole cards |
 | **Omaha** | Standard | Must use *exactly* 2 of your 4 hole cards |
-| **Seven-Card Stud** | Standard | No community cards |
+| **Seven-Card Stud** | Standard | No community cards (except a rare shared final card if the deck runs short) |
 | **Short Deck (6+)** | Modified | Flush beats full house; A-6-7-8-9 is the lowest straight (the ace still plays low, and with the 2s–5s gone it connects to the 6) |
 
 The takeaway: learn the standard order once and it carries you through nearly every game. Just remember Omaha's "exactly two" rule and Short Deck's flush bump.
@@ -381,7 +381,7 @@ A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequen
 
 **Q. What is the lowest (worst) hand in poker?**
 
-A. The worst possible hand is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand.
+A. As a five-card hand, the worst possible is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand. In Hold'em, where you play the best five of seven cards, the weakest hand you can actually finish with is 9-8-7-5-4 (from 9-8-7-5-4-3-2 in mixed suits).
 
 **Q. Can you have three pairs in poker?**
 

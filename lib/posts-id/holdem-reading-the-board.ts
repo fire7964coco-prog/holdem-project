@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -172,7 +172,7 @@ Perhatikan baris terakhir: ==bahkan tanpa apa-apa, pasangan di board jadi bagian
 Anda bisa MEMEGANG keduanya — Anda tak pernah bisa MEMAINKAN keduanya. ==Sebuah tangan poker adalah tepat 5 kartu, jadi kombinasi yang tumpang tindih tidak menumpuk; Anda cukup memainkan yang lebih kuat.==
 
 - Anda memegang A♠ K♠ di Q♠ 7♠ 2♠ K♦ 3♣. Anda membentuk sepasang K DAN lima sekop. Tangan Anda adalah ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — sepasang K itu tak pernah muncul.
-- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — bukan "sepasang dengan straight." Saat showdown Anda tak perlu menyebutnya: kartu yang berbicara, dan dealer yang membaca tangan (TDA 2024 Rule 12). Yang harus Anda lakukan adalah membuka kedua kartu — kartu hanya berbicara untuk tangan yang dibuka dengan benar (TDA 2024 Rule 13-A). Dan kalau dealer salah membacanya, langsung bicara: pembacaan tangan masih bisa digugat sampai hand berikutnya dimulai (TDA 2024 Rule 22), tapi jauh lebih mudah memperbaikinya sebelum pot didorong.
+- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — bukan "sepasang dengan straight." Saat showdown Anda tak perlu menyebutnya: kartu yang berbicara, dan dealer yang membaca tangan (TDA 2024 Rule 12). Yang harus Anda lakukan adalah membuka kedua kartu — kartu hanya berbicara untuk tangan yang dibuka dengan benar (TDA 2024 Rule 13-A). Dan kalau dealer salah membacanya, langsung bicara: pembacaan tangan masih bisa digugat sampai hand berikutnya dimulai — atau, jika hand berakhir saat jeda, hanya sampai 1 menit setelah pot diserahkan (TDA 2024 Rule 22) — tapi jauh lebih mudah memperbaikinya sebelum pot didorong.
 
 Logika yang sama menjawab "bisakah punya three pair?" — Anda mungkin memegang tiga nilai berpasangan di antara 7 kartu, tapi hanya dua terbaik yang muat dalam 5 kartu (dibahas di [panduan peringkat tangan](/id/blog/holdem-hand-rankings)).
 
@@ -250,7 +250,7 @@ A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada 
 
 **Q. Bisakah board jadi tangan terbaik untuk semua orang?**
 
-A. Ya. Jika board itu sendiri adalah tangan 5-kartu terbaik dan tak ada kartu tertutup pemain yang memperbaikinya — misalnya board menampilkan royal flush — semua pemain tersisa membagi pot sama rata. Tapi cek dulu: di board full house seperti A-A-A-7-7, pemain yang memegang As terakhir (quad As), dua 7 terakhir (quad 7), atau pocket pair besar (boat lebih besar) mengalahkan board.
+A. Ya. Jika board itu sendiri adalah tangan 5-kartu terbaik dan tak ada kartu tertutup pemain yang memperbaikinya — misalnya board menampilkan royal flush — semua pemain tersisa membagi pot sama rata — main pot dan setiap side pot dibagi di antara pemain yang berhak atasnya. Tapi cek dulu: di board full house seperti A-A-A-7-7, pemain yang memegang As terakhir (quad As), dua 7 terakhir (quad 7), atau pocket pair besar (boat lebih besar) mengalahkan board.
 
 **Q. Bisakah Anda punya flush dan pair sekaligus?**
 
@@ -274,7 +274,7 @@ A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya
 
 **Q. Jika ada straight di board, siapa yang menang?**
 
-A. Ketika lima kartu komunitas sudah membentuk straight, semua orang punya setidaknya straight itu — jadi siapa pun yang memperpanjangnya jadi straight lebih tinggi dengan kartu tertutup yang menang. Di board 5-6-7-8-9, pemain yang memegang 10 membentuk 6-7-8-9-10 dan mengalahkan board. Waspada begitu tiga kartu satu jenis ada di sana: lawan dengan dua kartu sejenis mengalahkan semua straight itu dengan flush. Jika tak ada yang bisa lebih tinggi, pot dibagi.
+A. Ketika lima kartu komunitas sudah membentuk straight, semua orang punya setidaknya straight itu — jadi pemain yang memperpanjangnya jadi straight lebih tinggi dengan kartu tertutup mengalahkan board — dan kalau dua pemain sama-sama memperpanjangnya, straight yang lebih tinggi yang menang. Di board 5-6-7-8-9, pemain yang memegang 10 membentuk 6-7-8-9-10 dan mengalahkan board. Waspada begitu tiga kartu satu jenis ada di sana: lawan dengan dua kartu sejenis mengalahkan semua straight itu dengan flush. Jika tak ada yang bisa lebih tinggi, pot dibagi.
 
 **Q. Apakah pair di board dihitung sebagai bagian tangan Anda?**
 

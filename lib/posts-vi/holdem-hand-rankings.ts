@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ tự bài poker từ mạnh nhất đến yếu nhất: thùng phá sảnh hoàng gia (royal flush), thùng phá sảnh (straight flush), tứ quý (four of a kind), cù lũ (full house), thùng (flush), sảnh (straight), sám cô (three of a kind), hai đôi, một đôi và mậu thầu (high card). Cùng hạng thì so tổ hợp chính trước rồi đến kicker (lá phụ); chất bài không xếp hạng.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-09",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -330,7 +330,7 @@ Phần lớn là có — cùng thứ tự mười tay bài này dùng chung cho 
 |------|------|------|
 | **Texas Hold'em** | Chuẩn (bài này) | Dùng 0–2 lá bài tẩy tùy ý |
 | **Omaha** | Chuẩn | Bắt buộc dùng *đúng* 2 trong 4 lá bài tẩy |
-| **Seven-Card Stud** | Chuẩn | Không có bài chung |
+| **Seven-Card Stud** | Chuẩn | Không có bài chung (trừ trường hợp hiếm: một lá cuối dùng chung khi bộ bài không đủ lá) |
 | **Short Deck (6+)** | Có điều chỉnh | Thùng thắng cù lũ; A-6-7-8-9 là sảnh thấp nhất (lá A vẫn chơi thấp, và vì các lá 2–5 đã bị bỏ nên nó nối với lá 6) |
 
 Kết luận: học thứ tự chuẩn một lần là dùng được ở gần như mọi thể thức. Chỉ cần nhớ luật "đúng hai lá" của Omaha và việc thùng được nâng hạng trong Short Deck.
@@ -414,7 +414,7 @@ A. Có. Thùng phá sảnh (#2) thắng tứ quý (#3) — năm lá liên tiếp
 
 **Q. Bài yếu nhất trong poker là gì?**
 
-A. Tay bài tệ nhất có thể là 7-5-4-3-2 khác chất ("7 cao nhất"). Đó là mậu thầu thấp nhất không tạo thành đôi, sảnh hay thùng — tay bài "không có gì" kinh điển.
+A. Xét tay bài năm lá, tệ nhất có thể là 7-5-4-3-2 khác chất ("7 cao nhất"). Đó là mậu thầu thấp nhất không tạo thành đôi, sảnh hay thùng — tay bài "không có gì" kinh điển. Trong Hold'em, vì bạn dùng 5 lá mạnh nhất trong 7 lá, tay bài yếu nhất bạn thực sự có thể có khi kết thúc là 9-8-7-5-4 (từ 9-8-7-5-4-3-2 khác chất).
 
 **Q. Trong poker có 3 đôi không?**
 

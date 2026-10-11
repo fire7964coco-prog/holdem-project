@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beraberlik sabit bir sırayla bozulur: önce el türü, sonra eli oluşturan kartlar, sonra yüksekten düşüğe kicker'lar. Aynı çiftte ilk kicker'ı yüksek olan kazanır; beş kartın beşi de aynıysa pot bölünür (split pot). Türler asla beraberlik bozmaz.",
   category: "hand-rankings",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 dk",
@@ -209,7 +209,7 @@ Masada bu runout'ta en sık gördüğüm sahne, cep çifti olan oyuncunun kartla
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, A♠ 8♠ karşısında A♦ 7♦. İkisinde de As çifti var. Birinci kicker: board'daki K — berabere. İkinci kicker: board'daki Q — berabere. Üçüncü kicker: ==g:8, 7'yi yener.== Elin kelimenin tam anlamıyla beşinci kartı, üstündeki her şeyi belirledi.
 
-Aynı mantık board'da kare olan potlarda da işler: herkes dört kartı paylaşır, yani beşinci kart showdown'ın ta kendisidir. Yüksek kart ve floş beraberliklerinde de işler; orada son karta kadar her kart karşılaştırılır. Beşinci kart ancak board onu geçtiğinde önemini yitirir — yukarıdaki split pot örneğinde ve board'da karenin yanındaki papazı geçemeyen ellerde olduğu gibi.
+Aynı mantık board'da kare olan potlarda da işler: herkes dört kartı paylaşır, yani beşinci kart showdown'ın ta kendisidir. Yüksek kart ve floş beraberliklerinde de işler; orada son karta kadar her kart karşılaştırılır. Üstündeki kartlar eşitken beşinci kart ancak board onu geçtiğinde önemini yitirir — yukarıdaki split pot örneğinde ve board'da karenin yanındaki papazı geçemeyen ellerde olduğu gibi.
 
 ---
 
@@ -256,7 +256,7 @@ A. Üçlünün iki kicker'ı vardır ve önce yüksek olanı karşılaştırıl�
 
 **Q. Pokerde 5. kart önemli mi?**
 
-A. Evet — ve emin olduğun bir potu kaybetmenin en yaygın yolu budur. Potun tamamını son karta bağlayan klasik durumlar: çiftin üçüncü kicker'ı, iki çiftin tek kicker'ı, floşun en düşük kartı ve board'daki karenin yanındaki yan kart. Ancak board'un kendi kartları elindeki yan kartı geçtiğinde önemini yitirir — bazen bütün board oynadığı ve hole kartların tamamen dışarıda kaldığı için, bazen de bir hole kart oynayıp diğeri hiç sayılmadığı için: A♥ K♣ Q♦ J♠ 9♥ board'unda A♠ 3♠ ile A♦ 2♦ berabere biter, ikisi de A-A-K-Q-J oynar.
+A. Evet — ve emin olduğun bir potu kaybetmenin en yaygın yolu budur. Potun tamamını son karta bağlayan klasik durumlar: çiftin üçüncü kicker'ı, iki çiftin tek kicker'ı, floşun en düşük kartı ve board'daki karenin yanındaki yan kart. Üstündeki kartlar eşitken, ancak board'un kendi kartları elindeki yan kartı geçtiğinde önemini yitirir — bazen bütün board oynadığı ve hole kartların tamamen dışarıda kaldığı için, bazen de bir hole kart oynayıp diğeri hiç sayılmadığı için: A♥ K♣ Q♦ J♠ 9♥ board'unda A♠ 3♠ ile A♦ 2♦ berabere biter, ikisi de A-A-K-Q-J oynar.
 
 **Q. Pokerde As 1 olarak kullanılabilir mi?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -172,7 +172,7 @@ Repare na última linha: ==mesmo sem nada, o par da mesa faz parte da sua mão==
 Você pode TER os dois — mas nunca pode JOGAR os dois. ==Uma mão de poker são exatamente 5 cartas, então combinações que se sobrepõem não se somam; você simplesmente joga a mais forte.==
 
 - Você tem A♠ K♠ num board Q♠ 7♠ 2♠ K♦ 3♣. Você fez um par de reis E cinco espadas. Sua mão é o ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — o par de reis simplesmente nunca entra na conta.
-- Você tem 8♥ 8♦ num board 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — não "um par com uma sequência". No showdown você não precisa anunciar: as cartas falam, e o dealer lê a mão (regra 12 da TDA, edição de 2024). O que você precisa fazer é virar as duas cartas para cima — as cartas só falam por uma mão mostrada corretamente (regra 13-A da TDA, edição de 2024). E, se o dealer ler errado, fale na hora: dá para contestar a leitura até a próxima mão começar (regra 22 da TDA, edição de 2024), mas é muito mais fácil corrigir antes de o pote ser empurrado.
+- Você tem 8♥ 8♦ num board 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — não "um par com uma sequência". No showdown você não precisa anunciar: as cartas falam, e o dealer lê a mão (regra 12 da TDA, edição de 2024). O que você precisa fazer é virar as duas cartas para cima — as cartas só falam por uma mão mostrada corretamente (regra 13-A da TDA, edição de 2024). E, se o dealer ler errado, fale na hora: dá para contestar a leitura até a próxima mão começar — ou, se a mão terminar durante um intervalo, só até 1 minuto depois de o pote ser entregue (regra 22 da TDA, edição de 2024) —, mas é muito mais fácil corrigir antes de o pote ser empurrado.
 
 A mesma lógica responde "dá para ter três pares?" — você pode ter três valores pareados entre 7 cartas, mas só os dois melhores cabem nas 5 cartas (explicado no [guia de ranking de mãos](/pt/blog/holdem-hand-rankings)).
 
@@ -250,7 +250,7 @@ A. Significa que as 5 cartas comunitárias já são sua melhor mão possível de
 
 **Q. A mesa pode ser a melhor mão para todo mundo?**
 
-A. Pode. Se a própria mesa é a melhor mão de 5 cartas e as cartas na mão de nenhum jogador a melhoram — digamos que a mesa mostra um royal flush — todos os jogadores restantes dividem o pote igualmente. Mas confira primeiro: numa mesa com full house tipo A-A-A-7-7, um jogador com o último ás (quadra de ases), os dois últimos setes (quadra de setes), ou um par grande na mão (boat maior) ganha da mesa.
+A. Pode. Se a própria mesa é a melhor mão de 5 cartas e as cartas na mão de nenhum jogador a melhoram — digamos que a mesa mostra um royal flush — todos os jogadores restantes dividem o pote igualmente — o pote principal e cada pote paralelo entre os jogadores elegíveis para ele. Mas confira primeiro: numa mesa com full house tipo A-A-A-7-7, um jogador com o último ás (quadra de ases), os dois últimos setes (quadra de setes), ou um par grande na mão (boat maior) ganha da mesa.
 
 **Q. Dá para ter flush e par ao mesmo tempo?**
 
@@ -274,7 +274,7 @@ A. Quando as cinco cartas comunitárias formam um flush, todos os jogadores rest
 
 **Q. Se há uma sequência na mesa, quem ganha?**
 
-A. Quando as cinco cartas comunitárias já formam uma sequência, todo mundo tem pelo menos essa sequência — então ganha quem a esticar para uma sequência mais alta com uma carta da mão. Numa mesa 5-6-7-8-9, um jogador com um 10 faz 6-7-8-9-10 e ganha da mesa. Fique atento no instante em que três cartas do mesmo naipe estiverem ali: um adversário com duas cartas desse naipe bate todas essas sequências com um flush. Se ninguém consegue ir mais alto, o pote é dividido.
+A. Quando as cinco cartas comunitárias já formam uma sequência, todo mundo tem pelo menos essa sequência — então um jogador que a esticar para uma sequência mais alta com uma carta da mão ganha da mesa — e, se dois jogadores a esticarem, ganha a sequência mais alta. Numa mesa 5-6-7-8-9, um jogador com um 10 faz 6-7-8-9-10 e ganha da mesa. Fique atento no instante em que três cartas do mesmo naipe estiverem ali: um adversário com duas cartas desse naipe bate todas essas sequências com um flush. Se ninguém consegue ir mais alto, o pote é dividido.
 
 **Q. Um par na mesa conta como parte da sua mão?**
 

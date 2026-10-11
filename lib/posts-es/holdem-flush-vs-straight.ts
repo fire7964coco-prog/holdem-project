@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -194,7 +194,7 @@ A. Matemática pura. Una escalera ignora los palos, así que hay unas 10,200 for
 
 **Q. ¿Qué le gana al color en el póker?**
 
-A. Un full, un póker, una escalera de color y una escalera real le ganan al color — y también un color más alto (mejor carta superior). Todo lo que está por debajo (escalera, trío, doble pareja, pareja, carta alta) pierde contra él.
+A. Un full, un póker, una escalera de color y una escalera real le ganan al color — y también un color más alto (comparado carta por carta de arriba abajo). Todo lo que está por debajo (escalera, trío, doble pareja, pareja, carta alta) pierde contra él.
 
 **Q. ¿Qué le gana a la escalera en el póker?**
 
