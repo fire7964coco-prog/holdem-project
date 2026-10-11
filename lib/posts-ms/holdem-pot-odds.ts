@@ -54,7 +54,7 @@ Nombor "sekerap mana anda perlu menang" itulah intinya. Mendapat 3:1 bermakna ca
 Jumlahkan pot akhir | Pot semasa + bet + call anda. Contoh: pot $100 + bet $50 + call $50 anda = $200
 Bahagikan call anda dengan pot akhir itu | $50 ÷ $200 = 0.25
 Itulah equity yang anda perlukan | Anda perlu menang sekurang-kurangnya 25% daripada masa untuk call dengan untung
-Bandingkan dengan equity sebenar anda | Flush draw ≈ 35% untuk kena dengan dua kad lagi dan tiada bet lagi → 35% mengatasi 25% → ==g:call==
+Bandingkan dengan equity sebenar anda | Flush draw dengan 9 outs bersih ≈ 35% untuk kena dengan dua kad lagi dan tiada bet lagi → 35% mengatasi 25% → ==g:call==
 :::
 
 Itu sahaja. **Equity diperlukan = call anda ÷ pot akhir.** Jika peluang sebenar anda menang lebih besar daripada nombor itu, call menghasilkan wang dalam jangka panjang — walaupun anda akan kalah tangan itu lebih kerap daripada menang.
@@ -202,7 +202,7 @@ Turn ialah 3♠ — kad kosong. Pot kini $200 dan lawan jam $200 — bet saiz po
 
 **Q. Bagaimana cara kira pot odds dengan cepat?**
 
-A. Bahagikan jumlah yang anda perlu call dengan jumlah pot *selepas* call anda. Call $50 ke dalam pot $150 ialah 50 ÷ 200 = 25% — itulah equity yang anda perlukan. Jika peluang anda menang mengatasinya, call.
+A. Bahagikan jumlah yang anda perlu call dengan jumlah pot *selepas* call anda. Call $50 ke dalam pot $150 ialah 50 ÷ 200 = 25% — itulah equity yang anda perlukan. Jika peluang anda menang — dikira hanya atas kad yang dapat anda lihat dengan call ini — mengatasinya, call.
 
 **Q. Adakah call anda sendiri dikira dalam pot odds?**
 
@@ -214,7 +214,7 @@ A. Pot ialah setiap cip yang sudah berada di tengah ditambah sebarang bet yang d
 
 **Q. Apakah pot odds yang bagus dalam poker?**
 
-A. Semakin tinggi semakin baik — anda tentu suka "mendapat 5:1" (hanya perlu 16.7%). Tetapi "bagus" bergantung pada tangan anda: mendapat 2:1 (perlu 33%) sesuai dengan flush draw hanya apabila anda memang akan melihat kedua-dua kad (all-in, atau tiada bet lagi — 35%); ia tidak memenuhi harga jika call itu membeli satu kad sahaja (19.1% dari flop, 19.6% dari turn); dan ia sangat teruk dengan gutshot. Sentiasa bandingkan harga dengan equity anda.
+A. Semakin tinggi semakin baik — anda tentu suka "mendapat 5:1" (hanya perlu 16.7%). Tetapi "bagus" bergantung pada tangan anda: mendapat 2:1 (perlu 33%) sesuai dengan flush draw yang bersih hanya apabila anda memang akan melihat kedua-dua kad (all-in, atau tiada bet lagi — 35%); ia tidak memenuhi harga jika call itu membeli satu kad sahaja (19.1% dari flop, 19.6% dari turn); dan ia sangat teruk dengan gutshot. Sentiasa bandingkan harga dengan equity anda.
 
 **Q. Bagaimana tukar pot odds daripada nisbah ke peratus?**
 
@@ -242,7 +242,7 @@ A. Tepat pot odds anda dalam bentuk peratus: call ÷ pot akhir. Menentang bet se
 
 **Q. Adakah equity anda patut lebih tinggi atau lebih rendah daripada pot odds?**
 
-A. Lebih tinggi. Pot odds anda memberi equity yang anda *perlukan* untuk call (call ÷ pot akhir); equity anda pula bahagian pot yang anda jangka miliki. Anda call apabila equity anda *lebih tinggi* daripada nombor yang diperlukan itu dan fold apabila ia lebih rendah — melainkan implied odds boleh menutup jurangnya (wang yang anda menangi di street seterusnya apabila draw anda kena). Jika bet separuh pot perlukan 25% dan flush draw anda ada 35% (dengan dua kad lagi — anda akan melihat turn dan river tanpa bet lagi), maka 35% > 25% → call yang menguntungkan.
+A. Lebih tinggi. Pot odds anda memberi equity yang anda *perlukan* untuk call (call ÷ pot akhir); equity anda pula bahagian pot yang anda jangka miliki. Anda call apabila equity anda *lebih tinggi* daripada nombor yang diperlukan itu dan fold apabila ia lebih rendah — melainkan implied odds boleh menutup jurangnya (wang yang anda menangi di street seterusnya apabila draw anda kena). Jika bet separuh pot perlukan 25% dan flush draw bersih anda ada 35% (dengan dua kad lagi — anda akan melihat turn dan river tanpa bet lagi), maka 35% > 25% → call yang menguntungkan.
 
 ---
 

@@ -28,7 +28,7 @@ Tabiat itu dipanggil mengira **outs** — [jawapan sebenar poker kepada "kira ka
 :::stripe
 9 | Outs dalam flush draw
 8 | Outs dalam open-ended straight draw
-×4 / ×2 | Darab outs di flop / turn untuk % anda
+×4 / ×2 | Darab outs di flop (dua kad lagi) / turn untuk % anggaran
 :::
 
 ---
@@ -174,10 +174,10 @@ Tiga situasi untuk melatih mata anda:
 :::card
 ♠ | Flush bukan nut | Memegang 8♠7♠ pada K♠9♠2♣, anda ada 9 "outs" spade — tetapi jika spade datang dan lawan sedang draw ke flush yang sama dengan spade lebih tinggi, anda membentuk flush dan masih kalah. Potong outs anda apabila anda bukan draw ke nut flush
 🂮 | Board berpasangan | Flush draw pada board seperti J♥8♥8♣ nampak seperti 9 outs bersih, tetapi board sudah berpasangan — full house yang sudah jadi mungkin sedang menunggu, jadi sebahagian flush anda sudah mati sebelum sempat hidup
-🃁 | Overcard menentang kekuatan | Dua overcard (A-K pada Q-8-3) dikira 6 outs di atas kertas, tetapi jika raise besar menjerit set atau two pair, berpasangan dengan as anda selalunya tidak cukup — kira 3, mungkin 4, bukan 6
+🃁 | Overcard menentang kekuatan | Dua overcard (A-K pada Q-8-3) dikira 6 outs di atas kertas, tetapi jika raise besar menjerit set atau two pair, berpasangan dengan as anda selalunya tidak cukup — kira paling banyak 3, bukan 6, dan langsung tiada sebaik anda pasti tentang set atau two pair itu
 :::
 
-Anda jarang tahu potongan yang tepat, dan itu tidak mengapa. Arahnya jelas: apabila board atau aksi memberitahu sesuatu out mungkin tidak menang, kurangkan kiraan *ke bawah* sebelum anda menukarnya. Pemain yang mengira 9 outs pada board berpasangan lalu call saiz pot sedang membayar harga penuh untuk draw yang diam-diam hanya bernilai enam. Membaca outs mana yang bersih ialah kemahiran tekstur board — bina ia dengan [cara membaca board](/ms/blog/holdem-reading-the-board).
+Anda jarang tahu potongan yang tepat, dan itu tidak mengapa. Arahnya jelas: apabila board atau aksi memberitahu sesuatu out mungkin tidak menang, kurangkan kiraan *ke bawah* sebelum anda menukarnya. Pemain yang mengira 9 outs pada board berpasangan lalu call saiz pot sedang membayar harga penuh untuk draw yang diam-diam bernilai kurang daripada itu. Membaca outs mana yang bersih ialah kemahiran tekstur board — bina ia dengan [cara membaca board](/ms/blog/holdem-reading-the-board).
 
 ---
 
@@ -194,7 +194,7 @@ A. Outs ialah kad yang tinggal dalam dek yang memperbaiki tangan anda menjadi ta
 
 **Q. Apa maksud 9 outs dalam poker?**
 
-A. Ia bermakna sembilan kad yang tinggal dalam dek boleh melengkapkan tangan anda — selalunya flush draw (13 satu jenis tolak 4 yang anda nampak). Sembilan outs bersamaan lebih kurang 35% untuk kena menjelang river dari flop — nombor dua kad yang menganggap tiada lagi bet akan datang — atau 19.1% pada satu kad turn sahaja. Peraturannya sama untuk mana-mana kiraan: lebih banyak outs bermakna peluang kena lebih tinggi, dan darab outs dengan 4 di flop (atau 2 di turn) memberi peratus yang pantas.
+A. Ia bermakna sembilan kad yang tinggal dalam dek boleh melengkapkan tangan anda — selalunya flush draw (13 satu jenis tolak 4 yang anda nampak). Sembilan outs bersamaan lebih kurang 35% untuk kena menjelang river dari flop — nombor dua kad yang menganggap tiada lagi bet akan datang — atau 19.1% pada satu kad turn sahaja. Logiknya sama untuk mana-mana kiraan: lebih banyak outs bermakna peluang kena lebih tinggi, dan darab outs dengan 4 di flop (atau 2 di turn) memberi peratus anggaran yang pantas (×4 terlebih tinggi pada draw besar: 15 outs ialah 54%, bukan 60%).
 
 **Q. Bagaimana cara kira outs dalam poker?**
 
@@ -218,7 +218,7 @@ A. Kad yang melengkapkan tangan anda tetapi masih boleh kalah — kad flush apab
 
 **Q. Berapa outs untuk flush draw campur straight draw?**
 
-A. 15, bukan 17. Flush draw ialah 9 outs dan open-ended straight ialah 8, tetapi dua kad straight juga jenis anda dan sudah dikira dalam flush — jadi anda tolak pertindihannya. Lima belas outs ialah favourite untuk kena menjelang river (lebih kurang 54%) — tetapi hanya apabila anda akan melihat kedua-dua kad; jika bet di turn masih akan datang, 32% satu kad itulah yang menentukan harga call anda.
+A. 15, bukan 17. Flush draw ialah 9 outs dan open-ended straight ialah 8, tetapi dua kad straight juga jenis anda dan sudah dikira dalam flush — jadi anda tolak pertindihannya. Lima belas outs ialah favourite untuk kena menjelang river (lebih kurang 54%) — tetapi hanya apabila anda akan melihat kedua-dua kad; jika bet di turn masih akan datang, 32% satu kad itulah yang menentukan harga call anda — dan hanya outs yang benar-benar menang dikira untuk kedua-dua nombor itu.
 
 **Q. Adakah kad lawan dikira semasa mengira outs?**
 

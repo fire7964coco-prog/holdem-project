@@ -111,7 +111,7 @@ Jadi lain kali ada orang kata "saya tak pernah dapat aces", mereka lebih kurang 
 
 Jadi dengan dua kad yang tidak berpasangan, anda flop two pair hanya 2.0% daripada masa — lebih kurang 49:1 menentang anda.
 
-Untuk set mining, ==7.5:1 ialah bayaran pulang modal secara teori, bukan peraturan stack yang mencukupi==: ia menganggap setiap kali kena anda menang dan dibayar. Dalam praktik, garis panduan biasa effective stack 15–20× memberi ruang untuk value yang terlepas dan set yang kalah; itu pun heuristik, bukan call automatik. Itulah jambatan ke [pot odds](#pot-odds) di bawah. Untuk terbitan penuh setiap baris di sini — termasuk peraturan stack set mining dan pecahan flush flop terus vs draw vs lengkap — lihat kupasan mendalam tentang [drawing odds dan odds flop setiap tangan](/ms/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Untuk set mining, ==7.5:1 ialah bayaran pulang modal secara teori, bukan peraturan stack yang mencukupi==: ia menganggap setiap kali kena anda menang dan dibayar. Dalam praktik, garis panduan biasa — effective stack 15–20× call — memberi ruang untuk value yang terlepas dan set yang kalah; itu pun heuristik, bukan call automatik. Itulah jambatan ke [pot odds](#pot-odds) di bawah. Untuk terbitan penuh setiap baris di sini — termasuk peraturan stack set mining dan pecahan flush flop terus vs draw vs lengkap — lihat kupasan mendalam tentang [drawing odds dan odds flop setiap tangan](/ms/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -175,11 +175,11 @@ Itulah jalan pintasnya: outs bersih → pendarab untuk kad yang anda akan lihat 
 Pot selepas bet | $100 + $50 = $150
 Call anda | $50 untuk menang $150 (pot akhir $200)
 Pot odds | 50 ÷ 200 = 25% — anda perlu sekurang-kurangnya 25% equity
-Equity anda | Flush draw ≈ 35% menjelang river (Rule of 4: 9 × 4 = 36%), yang menganggap anda melihat ==kedua-dua== kad
+Equity anda | Flush draw dengan 9 outs bersih ≈ 35% menjelang river (Rule of 4: 9 × 4 = 36%), yang menganggap anda melihat ==kedua-dua== kad
 Keputusan | Dengan dua kad lagi: 35% > 25% → ==g:call== yang jelas menguntungkan
 :::
 
-Di sinilah semua nombor itu membuahkan hasil — tetapi **padankan nombor dengan street yang anda bayar**. Apabila kedua-dua kad akan keluar (anda all-in, atau turn di-check), **35%** anda mengatasi harga **25%** dan call itu menang wang dalam jangka panjang walaupun anda akan kalah tangan itu lebih kerap daripada menang. Apabila lawan akan bet lagi di turn, call ini hanya membeli kad turn — dari flop itu ==9 ÷ 47 = 19.1%==, *di bawah* harga — dan draw itu kemudian perlukan [implied odds](/ms/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), iaitu wang yang anda menang di street selepas anda kena, untuk menampung jurang itu. Menggunakan nombor ×4 untuk keputusan satu kad ialah cara paling biasa pemula menilai terlalu tinggi sesuatu draw. Untuk kaedah penuh dan helaian rujukan saiz bet, lihat [cara kira pot odds](/ms/blog/holdem-pot-odds).
+Di sinilah semua nombor itu membuahkan hasil — tetapi **padankan nombor dengan street yang anda bayar**. Apabila kedua-dua kad akan keluar (anda all-in, atau turn di-check), **35%** bagi draw yang bersih mengatasi harga **25%** dan call itu menang wang dalam jangka panjang walaupun anda akan kalah tangan itu lebih kerap daripada menang. Apabila lawan akan bet lagi di turn, call ini hanya membeli kad turn — dari flop itu ==9 ÷ 47 = 19.1%==, *di bawah* harga — dan draw itu kemudian perlukan [implied odds](/ms/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), iaitu wang yang anda menang di street selepas anda kena, untuk menampung jurang itu. Menggunakan nombor ×4 untuk keputusan satu kad ialah cara paling biasa pemula menilai terlalu tinggi sesuatu draw. Untuk kaedah penuh dan helaian rujukan saiz bet, lihat [cara kira pot odds](/ms/blog/holdem-pot-odds).
 
 ---
 
@@ -246,7 +246,7 @@ A. Jika anda flop flush draw (sembilan outs), anda akan melengkapkannya lebih ku
 
 **Q. Berapakah odds untuk flop set?**
 
-A. Lebih kurang 11.8%, atau kira-kira 1 dalam 8.5, apabila anda memegang pocket pair. Odds setara 7.5:1 menggambarkan terlepas berbanding kena, bukan kedalaman stack yang disyorkan. Call set mining juga perlukan bayaran masa depan yang realistik; garis panduan praktikal 15–20× memberi ruang untuk set yang tidak mendapat aksi atau yang kalah.
+A. Lebih kurang 11.8%, atau kira-kira 1 dalam 8.5, apabila anda memegang pocket pair. Odds setara 7.5:1 menggambarkan terlepas berbanding kena, bukan kedalaman stack yang disyorkan. Call set mining juga perlukan bayaran masa depan yang realistik; garis panduan praktikal — effective stack 15–20× call — memberi ruang untuk set yang tidak mendapat aksi atau yang kalah.
 
 **Q. Berapakah odds untuk flop royal flush?**
 
@@ -270,7 +270,7 @@ A. Tiada satu nombor tetap — ia bergantung pada berapa ramai lawan memegang po
 
 **Q. Apakah tangan menang yang paling biasa dalam poker?**
 
-A. One pair, diikuti two pair. Kerana setiap pemain berkongsi lima kad komuniti, kebanyakan pot Texas Hold'em ditentukan oleh satu pair dan kicker-nya — flush, straight dan full house menang jauh kurang kerap daripada jangkaan pemula. Kekerapan penuh setiap keputusan ada dalam carta di atas.
+A. One pair, diikuti two pair. Kerana setiap pemain berkongsi lima kad komuniti, kebanyakan pot Texas Hold'em ditentukan oleh satu pair dan kicker-nya — flush, straight dan full house menang jauh kurang kerap daripada jangkaan pemula. Kekerapan setiap tangan muncul dalam tujuh kad — yang tidak sama dengan kekerapan ia memenangi pot — ada dalam carta di atas.
 
 **Q. Berapa kerap tangan terbaik menang dalam poker?**
 

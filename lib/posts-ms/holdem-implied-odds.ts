@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya apabila draw anda hit. Ia membolehkan anda call draw dengan untung walaupun pot odds semata-mata kata fold — tetapi hanya jika stack cukup dalam dan lawan anda memang akan bayar.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -57,7 +57,7 @@ Memberitahu sama ada call itu membayar dirinya hari ini | Memberitahu sama ada c
 Tetap terpakai menentang all-in | Bernilai sifar menentang all-in (heads-up — tiada bet lagi)
 :::
 
-Peraturan praktikalnya: **mulakan dengan pot odds.** Jika equity anda sudah mengatasi harga, call — tak perlu cerita. Jika draw anda *hampir-hampir* memenuhi harga, barulah implied odds menjadi pemutus. Dan jika draw anda jauh daripada harga, implied odds biasanya tidak dapat menyelamatkannya juga.
+Peraturan praktikalnya: **mulakan dengan pot odds.** Jika equity anda sudah mengatasi harga — dikira hanya atas kad yang dibayar oleh call ini — call; tak perlu cerita. Jika draw anda *hampir-hampir* memenuhi harga, barulah implied odds menjadi pemutus. Dan jika draw anda jauh daripada harga, implied odds biasanya tidak dapat menyelamatkannya juga.
 
 ---
 
@@ -124,9 +124,9 @@ Kerana anda terlepas ==r:tujuh kali daripada lapan==, matematiknya kejam melaink
 
 Inilah pecahan jujur yang dilangkau kebanyakan artikel:
 
-- **Pulang modal tulen ialah 7.5:1.** Dalam dunia khayalan di mana anda memenangi *seluruh* stack lawan setiap kali anda flop set, anda hanya perlu lebih kurang 7.5× di belakang.
+- **Pulang modal tulen ialah 7.5:1.** Dalam dunia khayalan di mana anda dibayar sepenuhnya setiap kali anda flop set, pot ditambah apa yang anda menang selepas itu hanya perlu berjumlah lebih kurang 7.5× call anda.
 - **Kehidupan sebenar menuntut 15–20×.** Anda tidak selalu mendapat seluruh stack, kadang-kadang anda flop set dan *masih kalah* (set over set, atau mereka melengkapkan tangan lebih besar), dan posisi penting. Kusyen tambahan menampung kebocoran itu.
-- Jadi ==b:7.5:1 ialah lantai teori; 15–20× ialah peraturan praktikal.== Jangan keliru antara keduanya — menggunakan nombor 7.5 sebagai panduan di meja sebenar ialah leak (kelemahan berulang) yang perlahan.
+- Jadi ==b:7.5:1 ialah lantai teori bagi bayaran; stack 15–20× call anda ialah peraturan praktikal.== Jangan keliru antara keduanya — menggunakan nombor 7.5 sebagai panduan di meja sebenar ialah leak (kelemahan berulang) yang perlahan.
 
 Kiraan tepat flop set dan setiap nombor "odds flop X" yang lain ada dalam [drawing odds](/ms/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); pengajaran di sini ialah pair kecil menjadi emas apabila stack dalam dan sampah apabila stack pendek — pair itu tidak berubah, implied odds yang berubah.
 
@@ -192,7 +192,7 @@ A. Beza antara pot odds dan implied odds ialah kepastian: pot semasa dan jumlah 
 
 **Q. Bilakah patut guna implied odds?**
 
-A. Mulakan dengan pot odds. Jika equity anda sudah mengatasi harga serta-merta, call sahaja — tak perlu implied odds. Gunakan implied odds apabila draw anda tidak memenuhi harga itu dan stack di belakang cukup dalam sehingga, apabila kena, anda boleh menang lebih daripada x dalam formula — semakin jauh draw itu daripada harga, semakin besar x. Idealnya itu draw yang kuat, tersembunyi atau ke nuts menentang lawan yang akan membayar. Jika stack di belakang tidak dapat menampung x — contohnya lawan heads-up yang all-in atau stack pendek — implied odds tidak dapat menyelamatkan call itu.
+A. Mulakan dengan pot odds. Jika equity anda sudah mengatasi harga serta-merta — diukur atas kad yang dibayar oleh call ini — call sahaja — tak perlu implied odds. Gunakan implied odds apabila draw anda tidak memenuhi harga itu dan stack di belakang cukup dalam sehingga, apabila kena, anda boleh menang lebih daripada x dalam formula — semakin jauh draw itu daripada harga, semakin besar x. Idealnya itu draw yang kuat, tersembunyi atau ke nuts menentang lawan yang akan membayar. Jika stack di belakang tidak dapat menampung x — contohnya lawan heads-up yang all-in atau stack pendek — implied odds tidak dapat menyelamatkan call itu.
 
 **Q. Apakah reverse implied odds?**
 
@@ -208,7 +208,7 @@ A. Tidak — secara heads-up, apabila lawan anda all-in tiada lagi pusingan pert
 
 **Q. Bagaimana implied odds berfungsi dalam set mining?**
 
-A. Anda flop set dengan pocket pair hanya 11.8% daripada masa (lebih kurang 7.5:1 menentang), jadi anda perlukan bayaran besar pada kali anda kena. Pulang modal teori ialah lebih kurang 7.5× call anda dalam stack, tetapi garis panduan praktikal ialah 15–20× — kusyen tambahan menampung kali anda kena tetapi tidak mendapat aksi, atau kalah dengan set (kali anda terlepas sudah pun dikira dalam 7.5× itu).
+A. Anda flop set dengan pocket pair hanya 11.8% daripada masa (lebih kurang 7.5:1 menentang), jadi anda perlukan bayaran besar pada kali anda kena. Pulang modal teori ialah jumlah bayaran (pot ditambah apa yang anda menang selepas itu) lebih kurang 7.5× call anda, tetapi garis panduan praktikal ialah stack 15–20× call anda — kusyen tambahan menampung kali anda kena tetapi tidak mendapat aksi, atau kalah dengan set (kali anda terlepas sudah pun dikira dalam 7.5× itu).
 
 **Q. Adakah anda ada implied odds dengan flush draw?**
 
