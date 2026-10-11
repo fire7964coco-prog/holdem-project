@@ -783,7 +783,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ **남김 EN 동형 이행 10-11 (4) `5f22c51a` MB-235** = EN 5자리(split 본문 L126 «(only the players who put in more than a shorter all-in stack could match)» · hand-rankings L316·L340 «the highest card wins, then the next, and so on down all five»(같은 글 L168 문면) · L356 «— and if that ties too, the next one decides» · kicker L198 «— but only among players who turn their hole cards face up (TDA 2024 Rule 19)»(원문 축어 확인)) → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·hi·ar(ko 이미 맞음·해당 없음 · hi·tr 해당 FAQ 없는 자리 있음). 🪶 남김(자동 착수 금지): hand-rankings L83 보드 로열 «get as many chips in»(레이크) · ko split 오드칩 «무늬로 가리지 않음» 단정 ↔ EN 하우스 예외 · ko flush «더 높은 무늬 카드» 표현 · zh kicker 바로답 L166·zh-hant 본문 L125 «보드 플레이 = 평분»(바로 아래 예시에 공개 조건 있음) · zh tiebreak L152 바로답 · ja kicker FAQ L180 «並べば» · ar Stud «الرزمة» 네이티브 확인 · §2-AU 통지 2(vi 단독).
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. MB-226·227 vi 🅱 5편 몫 = 이 회차가 새 문면 판정으로 흡수 → 접수. 🟠 공용 🆕 vi 12 = MA-420 이행 진행 신호(되돌림 아님) → MB-231 배포로 해소.
 
-### 2-AV. 우편함 수신분 — MA-422 (VI 회차 3 🅲 prob 7편 · 기준 `6b76c650`) · 등재·회신 2026-10-11 (5) MB-236 · ✅ 요청 1 이행 `a8cd4b43`
+### 2-AV. 우편함 수신분 — MA-422 (VI 회차 3 🅲 prob 7편 · 기준 `6b76c650`) · 등재·회신 2026-10-11 (5) MB-236 · ✅ 요청 1 이행 `a8cd4b43` · ✅ 통지 1·2 이행 `8fb1e28b` MB-237
 
 > 근거 = 검수장 `reports/검수-vi-r3-prob-2026-10-11/hq-reverify/HQ-REPORT.md`(815행 OK 753 · RISKY 1 · WRONG 0 · UNV 61 · 수치 WRONG 0). 처방 원칙 = «같은 글 정답 문면 재사용 — 문안 창작 아님».
 
@@ -793,6 +793,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = card-counting EN FAQ L149 «What rooms and platforms restrict is outside help during play»(AV-1 같은 축 · 약한 배타) · probability steps «≈ 35% by the river — the Rule of 4 number»(×4 = 36% · 같은 글 «9 × 4 = 36% — the true figure is 35.0%») · equity «that single comparison decides almost every call»(후속 베팅 조건) · outs «the single skill that sits underneath every odds decision»(전칭) · pot-odds stripe «call ÷ (pot + call)»의 pot(상대 벳 포함) 정의가 블록 밖 · pot-odds 실전 핸드 «7 of 46»·«19.6% is the best case» ↔ implied 같은 손 «7 ÷ 44»(09-30 MB-110 정정 미전파) · 멀티웨이 «called an all-in» = 추가 베팅 종료 전제(pot-odds·outs) **통지 2 vi 단독** = drawing desc «Flop ra set 11,8%, ra thùng chỉ 0,84%» 수딧 조건 없음(같은 글 tldr «Hai lá cùng chất ra thùng … 0,84%» 문면) · implied L100 «gấp đôi» = EN «roughly twice»의 «roughly» 탈락.
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수.
+- ✅ **통지 1·2 이행 10-11 (6) `8fb1e28b` MB-237** = EN 7묶음(+ «called an all-in» 동형 사본 card-counting·drawing-odds 2) → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·tr(tr 2편) · vi 단독 2. 🪶 남김(자동 착수 금지): EN card-counting 직답 L102 «devices and advice from others during play, and each room or event sets its own rules»(배타 아님 · es·pt·de·ja·zh-hant 동형) · vi pot-odds desc «tiền call ÷ (pot + tiền call)» · id·ms·vi card-counting 표 L128 «×4 … (all-in, atau turn dan river sama-sama gratis)» · es card-counting L128·pot-odds L182·L221 올인 문면 · zh-hant card-counting 표 «（你已經全下，或者後面沒有下注）» · EN·로케일 equity H2 «Decides Every Call»(SEO 제목 · 유지).
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 

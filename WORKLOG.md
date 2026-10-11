@@ -1,3 +1,9 @@
+## 2026-10-11 (6) — queue §2-AV 통지 1·2 EN-먼저 7묶음 → 11로케일 + vi 단독 2 · 배포 `8fb1e28b` · MB-237
+
+- 사장님 «진행해»(§2-AV 통지 1). EN 헤드 직접(같은 글 문면 재사용 · §13 7/46 = 15.2% · 7/44 = 15.9% · 9 × 4 = 36%) → 로케일 서브 3(ja·zh·zh-hant·tr / es·pt·de·fr / id·ms·vi + vi 단독 2). 헤드 교정 1 = ja equity «この比較で正確» → «この比較は正確».
+- 게이트: audit:hard 12로케일 🔴 0 · 추가 줄 백틱 0 · build exit 0(74 + 729).
+- 🪶 남김(자동 착수 금지): EN card-counting 직답 L102 «devices and advice from others during play, and each room or event sets its own rules»(배타 아님 · es·pt·de·ja·zh-hant 동형) · vi pot-odds desc «tiền call ÷ (pot + tiền call)» · id·ms·vi card-counting 표 L128 «×4 … (all-in, atau turn dan river sama-sama gratis)» · es card-counting L128·pot-odds L182·L221 올인 문면 · zh-hant card-counting 표 «（你已經全下，或者後面沒有下注）» · EN·로케일 equity H2 «Decides Every Call»(SEO 제목 · 유지).
+
 ## 2026-10-11 (5) — MA-422 회신+등재 queue §2-AV · 요청 1 vi card-counting FAQ 1자리 · 배포 `a8cd4b43` · MB-236
 
 - 사장님 «핸드오프읽고 진행해». 우편함 우리 몫 = MA-422(VI 🅲 prob 7편) 1건.
