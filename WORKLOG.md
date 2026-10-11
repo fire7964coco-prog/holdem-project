@@ -1,3 +1,9 @@
+## 2026-10-11 (24) — queue §2-BD 이행 (ms odds 4편 · MA-451) · 배포 `876f0214` · MB-261
+
+- 사장님 «바로 진행하자». posting.mdc 통독 후 착수. 소스 = `git show 6164c748` EN 4편 word-diff → ms 대응 자리 20 치환(정확히 1회 일치 검증 스크립트).
+- BD-1 clean 5 · BD-2 1 · BD-3 1 + 통지 이식 11 + probability 15–20× call 2(EN 같은 델타). 용어 «outs bersih»(ms 기존 표기).
+- updated 10-11 · masterUpdated 불변. 게이트 audit:hard ms 51/51 🔴 0 · schema 일치 · build 74 + 729.
+
 ## 2026-10-11 (23) — 우편함 MA-451(MS odds 묶음 1) 회신+등재 queue §2-BD · MB-260
 
 - 사장님 «바로할일해». MA-451 = 368행 OK 330 · RISKY 7 · WRONG 0 · UNV 31 · 요청 1(ms 고유 · EN `6164c748` 현행 문면 이식).

@@ -886,7 +886,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ 10-11 (22) `2e9bc644` MB-259: BC-2 21로케일(fa·he·ko 103 인용 없음) · BC-3·BC-4 23로케일 · updated 10-11. 아래는 당시 작업 지시(기록).
 - (완료) **BC-2~4 형제 전파**: BC-2 «Rule 103» 접두 = ar·bn·de·es·fa·fil·fr·he·hi·id·it·ja·pl·pt·ro·ru·sw·th·tr·uk·vi·zh·zh-hant(+ko 확인 · grep «103») — 각 로케일 기존 «WSOP … 90.a» 표기 꼴로 · BC-3 betting Mistake 3 «or straddled» · BC-4 all-in 표 2곳 «now faces less than a full bet or raise» 조건(EN 문면 = 이번 커밋).
 
-### 2-BD. 우편함 수신분 — MA-451 (MS odds 묶음 1 · probability·pot-odds·implied-odds·outs · 기준 `aa607f72`) · 등재·회신 2026-10-11 (23) MB-260
+### 2-BD. 우편함 수신분 — MA-451 (MS odds 묶음 1 · probability·pot-odds·implied-odds·outs · 기준 `aa607f72`) · 등재·회신 2026-10-11 (23) MB-260 · ✅ BD-1~3 + 통지 이행 2026-10-11 (24) `876f0214` MB-261
 
 > 근거 = 검수장 `reports/검수-ms-odds-묶음1-2026-10-11/hq-reverify/HQ-REPORT.md` · 원장 `ledger/ms/` 4편. 368행 = OK 330 · RISKY 7 · WRONG 0 · UNV 31. 위치 대조 = 현 main `fa995ba6`. 전부 ms 고유(새 문안 아님 = EN 09-28 `6164c748` 현행 문면 이식) · EN-먼저 0.
 
