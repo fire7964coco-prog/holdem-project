@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Peraturan All-In Texas Hold'em: Side Pot, Re-Raise & Showdown",
   seoTitle: "Dah All-In Tapi Keliru? — Peraturan All-In & Side Pot Hold'em",
   desc: "Semua cip masuk, tapi tak pasti apa yang boleh anda menangi? Peraturan all-in Texas Hold'em — table stakes, pot utama, side pot, hak re-raise dan showdown.",
-  tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang hanya boleh dimenangi oleh pemain yang menyamainya. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak — kecuali beberapa all-in pendek yang digabungkan mencapai sekurang-kurangnya satu raise penuh di atas jumlah yang sudah dimasukkan oleh pemain itu.",
+  tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Cip lebihan yang dipertaruhkan oleh dua atau lebih stack yang lebih besar melebihi jumlah itu membentuk side pot yang hanya boleh dimenangi oleh mereka; jika hanya seorang yang bertaruh lebih, lebihan itu dipulangkan sahaja. Dalam no-limit dan pot-limit, all-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak — kecuali beberapa all-in pendek yang digabungkan mencapai sekurang-kurangnya satu raise penuh di atas jumlah yang sudah dimasukkan oleh pemain itu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -63,13 +63,13 @@ Ada dua cara yang sah:
 
 ![Showdown all-in Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ dengan cip diasingkan kepada pot utama dan side pot yang berlabel](/images/holdem-all-in-declare.webp)
 
-==r:Jangan sesekali tolak satu cip ke hadapan tanpa berkata apa-apa — jika anda berdepan dengan bet, pengedar mengiranya sebagai call (jika tiada bet, sebagai nilai cip itu sahaja), bukan seluruh stack anda.== Sentiasa isytiharkan "all-in" dengan kuat — itulah satu-satunya cara yang tidak akan ditafsir sebagai tindakan lain.
+==r:Jangan sesekali tolak satu cip besar ke hadapan tanpa berkata apa-apa dan mengharapkan ia dikira sebagai all-in — jika anda berdepan dengan bet, pengedar mengiranya sebagai call; jika tiada bet, sebagai bet bernilai cip itu sahaja.== Sentiasa isytiharkan "all-in" dengan kuat — itulah satu-satunya cara yang tidak akan ditafsir sebagai tindakan lain.
 
 ---
 
 ## Bagaimana Side Pot Berfungsi dalam Poker? (Kenapa Pemain All-In Dihadkan)
 
-Pemain all-in hanya boleh menang taruhannya sendiri ditambah jumlah yang sama daripada setiap pemain lain yang masih dalam pot. Cip yang dipertaruhkan melebihi itu masuk ke **side pot** yang hanya menjadi milik pemain yang membiayainya — tetapi hanya jika dua pemain atau lebih memasukkannya. Jika hanya seorang pemain berada di atas had itu, tiada siapa yang boleh merebut side pot, dan lebihan itu terus dipulangkan kepadanya sebagai bet yang tidak di-call.
+Pemain all-in hanya boleh menang taruhannya sendiri ditambah sehingga jumlah yang sama daripada setiap pemain lain yang telah memasukkan cip — termasuk pemain yang kemudiannya fold, kerana cip yang sudah masuk kekal dalam pot. Cip yang dipertaruhkan melebihi itu masuk ke **side pot** yang hanya menjadi milik pemain yang membiayainya — tetapi hanya jika dua pemain atau lebih memasukkannya. Jika hanya seorang pemain berada di atas had itu, tiada siapa yang boleh merebut side pot, dan lebihan itu terus dipulangkan kepadanya sebagai bet yang tidak di-call.
 
 ![Side pot selepas all-in Texas Hold'em — pengedar mengasingkan cip kepada pot utama dan side pot sementara Pemain A dihadkan](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Peraturannya: ==setiap side pot dibina dengan mengambil beza sehingga stack terk
 
 ==r:Inilah peraturan all-in yang paling kerap dipertikaikan di meja live — saya pernah tengok dua pemain bertekak lima minit tentangnya sementara seluruh meja menunggu. Kedua-duanya silap.==
 
-**Peraturannya:** Jika seorang pemain all-in dengan jumlah **kurang daripada satu [raise penuh](/ms/blog/holdem-betting-actions)**, all-in itu TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak dalam pusingan itu.
+**Peraturannya (no-limit dan pot-limit):** Jika seorang pemain all-in dengan jumlah **kurang daripada satu [raise penuh](/ms/blog/holdem-betting-actions)**, all-in itu TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak dalam pusingan itu. Permainan limit meletakkan garisnya lebih rendah: di sana, all-in sekurang-kurangnya separuh bet membuka semula pertaruhan (Peraturan 47-B TDA 2024).
 
 ![Peraturan re-raise selepas all-in dalam poker — all-in pendek yang kurang daripada satu raise penuh, jadi Pemain A yang sudah bertindak hanya boleh call atau fold](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,12 +135,13 @@ Apa yang berlaku kepada Pemain A, dan kepada Pemain C yang belum bertindak lagi?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Jumlah all-in | Raise penuh? | Buka semula pertaruhan? |
+| Jumlah all-in (no-limit / pot-limit) | Raise penuh? | Buka semula pertaruhan? |
 |--------------|-------------|-----------------|
-| Kurang daripada raise penuh | Tidak | Tidak — pemain yang sudah bertindak hanya boleh call atau fold |
+| Kurang daripada raise penuh | Tidak | Tidak — pemain yang sudah bertindak dan kini berdepan kurang daripada satu bet atau raise penuh hanya boleh call atau fold |
 | Raise penuh atau lebih | Ya | Ya — semua pemain boleh re-raise semula |
 
 </div>
+Jadual ini untuk no-limit dan pot-limit. Dalam permainan limit, ambangnya ialah separuh bet, bukan satu raise penuh.
 
 Kenapa peraturan ini wujud? Ia melindungi pemain daripada dipaksa menghadapi raise yang lebih besar akibat all-in separa. Raise penuh menandakan agresi sebenar — all-in stack pendek dengan baki cip sedikit tidak.
 
@@ -178,11 +179,11 @@ Ambang raise minimum sentiasa merujuk kepada *bet atau raise penuh sah yang tera
 
 | Situasi | Buka semula untuk pemain yang sudah bertindak? |
 |---|---|
-| Satu all-in < raise penuh | ❌ Tidak — call atau fold sahaja |
+| Satu all-in < raise penuh | ❌ Tidak — call atau fold sahaja, melainkan pemain itu kini berdepan sekurang-kurangnya satu bet atau raise penuh (contohnya dia cek, kemudian seseorang membuat bet penuh) |
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
 | Beberapa all-in pendek; kenaikan sejak tindakan terakhir pemain ≥ bet/raise penuh | ✅ Ya — untuk pemain itu sahaja |
-| Pemain yang BELUM bertindak | ✅ Had pembukaan semula tidak terpakai kepadanya — dia masih boleh raise, setakat yang dibenarkan oleh cipnya sendiri (dan dalam permainan limit, had bilangan raise yang ditetapkan rumah — Peraturan 48 TDA 2024) |
+| Pemain yang BELUM bertindak | ✅ Had pembukaan semula tidak terpakai kepadanya — dia masih boleh raise, dalam had pertaruhan permainan itu sendiri: stack-nya dalam no-limit, saiz pot dalam pot-limit, saiz bet tetap dan had bilangan raise yang ditetapkan rumah dalam limit (Peraturan 48 TDA 2024) |
 
 </div>
 
@@ -211,7 +212,7 @@ Tidak boleh. Sebaik sahaja pemain all-in dihadkan, sebarang cip tambahan yang di
 
 ### Kesilapan 2: Tidak tahu peraturan hak re-raise
 
-All-in separa tidak memberi peluang kedua untuk re-raise kepada pemain yang **sudah bertindak** dalam pusingan itu — kecuali beberapa all-in pendek terkumpul sehingga salah seorang daripada mereka berdepan dengan sekurang-kurangnya satu raise penuh apabila giliran kembali kepadanya. Sesiapa yang belum bertindak masih boleh raise, pada jumlah minimum yang ditunjukkan di atas. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
+Dalam no-limit dan pot-limit, all-in separa tidak memberi peluang kedua untuk re-raise kepada pemain yang **sudah bertindak** dalam pusingan itu — kecuali beberapa all-in pendek terkumpul sehingga salah seorang daripada mereka berdepan dengan sekurang-kurangnya satu raise penuh apabila giliran kembali kepadanya. Sesiapa yang belum bertindak masih boleh raise, pada jumlah minimum yang ditunjukkan di atas. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
 
 ### Kesilapan 3: Menambah cip dari poket di tengah hand
 
@@ -236,7 +237,7 @@ All-in ialah tindakan paling berkuasa di meja. Ia memaksa lawan membuat keputusa
 
 **Q. Boleh ke all-in dengan jumlah kurang daripada big blind?**
 
-A. Boleh. Kalau cip anda kurang daripada big blind, anda secara automatik all-in dengan apa sahaja yang anda ada apabila tiba giliran blind. Pemain lain tetap membayar big blind penuh — apa-apa jumlah yang melebihi sumbangan anda masuk ke side pot.
+A. Boleh. Jika blind yang perlu anda bayar lebih besar daripada seluruh stack anda, anda meletakkan baki cip anda dan all-in dengan jumlah itu (Peraturan Live Action WSOP 154). Pemain lain tetap call big blind penuh — jumlah yang mereka masukkan melebihi sumbangan anda membentuk side pot antara mereka, atau terus dipulangkan kepada seorang pemain sahaja sebagai bet yang tidak di-call.
 
 **Q. Apa jadi kalau anda menang all-in tetapi kalah side pot?**
 
@@ -248,7 +249,7 @@ A. Dalam tournament, ya—apabila seorang pemain all-in dan semua pertaruhan sel
 
 **Q. Boleh ke buat "run it twice" dalam all-in poker?**
 
-A. Run it twice (mengedarkan baki kad komuniti dua kali dan membahagikan pot) dibenarkan dalam banyak cash game jika semua pemain yang masih dalam pot bersetuju selepas all-in — bukan dua orang sahaja (Peraturan Live Action WSOP 210). Ia lazimnya tidak dibenarkan dalam tournament. Pilihan ini mesti dipersetujui sebelum baki kad komuniti diedarkan.
+A. Run it twice (mengedarkan baki kad komuniti dua kali dan membahagikan pot) dibenarkan dalam banyak cash game jika, setelah seseorang all-in dan tiada lagi aksi pertaruhan yang belum selesai, semua pemain yang masih dalam pot bersetuju — bukan dua orang sahaja (Peraturan Live Action WSOP 210 dan 211). Ia lazimnya tidak dibenarkan dalam tournament. Pilihan ini mesti dipersetujui sebelum baki kad komuniti diedarkan.
 
 **Q. Apa sebenarnya peraturan "table stakes"?**
 

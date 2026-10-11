@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra chips that two or more bigger stacks bet beyond that form a side pot only they can win; a lone extra bet is simply returned. In no-limit and pot-limit, an all-in for less than a full raise does NOT reopen the betting for a player who already acted — unless several short all-ins add up to at least a full raise over what that player has already put in.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -136,7 +136,7 @@ What happens to Player A, and to Player C who hasn't acted yet?
 
 | All-in amount (no-limit / pot-limit) | Full raise? | Reopens betting? |
 |--------------|-------------|-----------------|
-| Less than a full raise | No | No — players who already acted can only call or fold |
+| Less than a full raise | No | No — a player who already acted and now faces less than a full bet or raise can only call or fold |
 | Full raise or more | Yes | Yes — all players can re-raise again |
 
 </div>
@@ -179,7 +179,7 @@ The table is for no-limit and pot-limit. In a limit game the threshold is half a
 
 | Situation | Reopens for players who already acted? |
 |---|---|
-| Single all-in < full raise | ❌ No — call or fold only |
+| Single all-in < full raise | ❌ No — call or fold only, unless that player now faces at least a full bet or raise (e.g. they checked, then someone made a full bet) |
 | Single all-in ≥ full raise | ✅ Yes — all can re-raise |
 | Multiple short all-ins, combined < full raise | ❌ No |
 | Multiple short all-ins, combined ≥ full raise | ✅ Yes — for each player who now faces at least a full raise above their own last action |

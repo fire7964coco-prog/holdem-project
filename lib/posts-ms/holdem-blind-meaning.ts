@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apa Itu Blind Dalam Poker? Small Blind vs Big Blind, Dijelaskan Dengan Mudah",
   seoTitle: "Bayar Sebelum Nampak Kad? — Small Blind vs Big Blind Poker",
   desc: "Dua pemain terpaksa bayar sebelum kad diedar — kenapa? Apa itu Small Blind dan Big Blind, siapa yang bayar, jumlahnya, big blind ante dan peraturan heads-up.",
-  tldr: "Blinds ialah pertaruhan wajib yang dibayar sebelum kad diedar. Small Blind duduk di sebelah kiri butang pengedar dan Big Blind di sebelah kirinya pula; Big Blind — biasanya dua kali ganda Small Blind — ialah unit pertaruhan meja.",
+  tldr: "Blinds ialah pertaruhan wajib yang dibayar sebelum kad diedar. Small Blind duduk di sebelah kiri butang pengedar dan Big Blind di sebelah kirinya pula (dalam heads-up, butang itu sendiri membayar Small Blind); Big Blind — biasanya dua kali ganda Small Blind — ialah unit pertaruhan meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 minit",
@@ -24,7 +24,7 @@ Blinds ialah ==enjin yang memastikan poker terus bergerak== — bahagian pertama
 ---
 
 > **Jawapan ringkas**
-> Blind ialah **pertaruhan wajib** yang dibayar sebelum sebarang kad diedar. **Small Blind (SB)** duduk betul-betul di sebelah kiri butang pengedar; **Big Blind (BB)** pula di sebelah kiri Small Blind. Big Blind biasanya **dua kali ganda** Small Blind dan berfungsi sebagai unit pertaruhan standard meja.
+> Blind ialah **pertaruhan wajib** yang dibayar sebelum sebarang kad diedar. **Small Blind (SB)** duduk betul-betul di sebelah kiri butang pengedar; **Big Blind (BB)** pula di sebelah kiri Small Blind (dalam permainan heads-up, butang membayar Small Blind). Big Blind biasanya **dua kali ganda** Small Blind dan berfungsi sebagai unit pertaruhan standard meja.
 
 ---
 
@@ -42,7 +42,7 @@ Blinds ialah ==enjin yang memastikan poker terus bergerak== — bahagian pertama
 
 **Blind** ialah pertaruhan yang anda terpaksa buat *sebelum* kad anda sampai — anda bertaruh secara "buta", tanpa melihat apa-apa. Dua pemain membayarnya pada setiap tangan biasa: Small Blind dan Big Blind, dua tempat duduk yang berada betul-betul di sebelah kiri butang pengedar. (Dua pengecualian yang lazim: dead button, yang boleh menyebabkan Small Blind tidak dibayar untuk satu tangan, dan permainan heads-up, di mana butang itu sendiri yang membayar Small Blind — lihat di bawah.)
 
-Kenapa perlu paksa orang bayar? Untuk memastikan permainan terus hidup. ==r:Tanpa blinds, setiap pemain boleh fold dan menunggu tanpa henti untuk tangan premium==; pot akan kosong, bluff jadi tak bermakna, dan permainan akan terhenti. ==g:Dua pertaruhan wajib pada setiap tangan menjamin sentiasa ada sesuatu untuk direbut.==
+Kenapa perlu paksa orang bayar? Untuk memastikan permainan terus hidup. ==r:Tanpa blinds atau pertaruhan wajib lain, setiap pemain boleh fold dan menunggu tanpa henti untuk tangan premium==; pot akan kosong, bluff jadi tak bermakna, dan permainan akan terhenti. ==g:Dua pertaruhan wajib pada setiap tangan menjamin sentiasa ada sesuatu untuk direbut.==
 
 ---
 
@@ -50,13 +50,13 @@ Kenapa perlu paksa orang bayar? Untuk memastikan permainan terus hidup. ==r:Tanp
 
 **Small Blind (SB)** ialah yang lebih kecil antara dua pertaruhan wajib, dibayar oleh pemain yang duduk **betul-betul di sebelah kiri butang pengedar**. Ia biasanya **separuh daripada Big Blind** — dalam permainan $1/$2, Small Blind ialah $1.
 
-Ia juga terkenal sebagai tempat duduk paling rumit di meja: anda sudah bayar separuh pertaruhan dengan tangan rawak, dan dari flop ke atas anda bertindak **dahulu** pada setiap street, dengan maklumat paling sedikit. Sebab itulah hampir semua orang rugi wang dari Small Blind dalam jangka panjang — matlamat di situ ialah rugi *lebih sedikit*, bukan menang.
+Ia juga terkenal sebagai tempat duduk paling rumit di meja: anda sudah bayar separuh pertaruhan dengan tangan rawak, dan dari flop ke atas anda bertindak **dahulu** pada setiap street, dengan maklumat paling sedikit (heads-up satu-satunya pengecualian: di situ Small Blind ialah butang dan bertindak terakhir). Sebab itulah hampir semua orang rugi wang dari Small Blind dalam jangka panjang — matlamat di situ ialah rugi *lebih sedikit*, bukan menang.
 
 ---
 
 ## Apa Itu Big Blind?
 
-**Big Blind (BB)** ialah **pertaruhan asas penuh**, dibayar oleh pemain yang berada betul-betul di **sebelah kiri Small Blind**. Dalam permainan $1/$2, Big Blind ialah $2. Jika tiada sesiapa raise sebelum flop, Big Blind mendapat kelebihan istimewa — **"option"** untuk [cek](/ms/blog/holdem-betting-actions) dan melihat flop secara percuma.
+**Big Blind (BB)** ialah **pertaruhan asas penuh**, dibayar oleh pemain yang berada betul-betul di **sebelah kiri Small Blind**. Dalam permainan $1/$2, Big Blind ialah $2. Jika tiada sesiapa raise atau straddle sebelum flop, Big Blind mendapat kelebihan istimewa — **"option"** untuk [cek](/ms/blog/holdem-betting-actions) dan melihat flop secara percuma.
 
 Ada sebabnya orang mencari "big blind" secara berasingan: ia bukan sekadar tempat duduk, ia ==**kayu pengukur** untuk keseluruhan permainan==.
 
@@ -87,13 +87,13 @@ Kedua-dua blinds dibayar **sebelum kad diedar**, dan butang pengedar bergerak sa
 | Susunan pre-flop | Bertindak kedua terakhir | Bertindak **terakhir** ("option") |
 | Susunan post-flop | Bertindak **dahulu** (satu kelemahan) | Bertindak kedua |
 
-> **Nota:** sebelum flop, aksi bermula dengan pemain di sebelah kiri Big Blind dan BB bertindak terakhir — dia melihat keputusan semua orang lain dahulu. Dari flop ke atas, susunan diset semula dan blinds bertindak awal. Turutan street demi street dihuraikan dalam [urutan permainan Texas Hold'em](/ms/blog/holdem-game-order), dan setiap nama tempat duduk di sekeliling butang dibincangkan dalam [panduan posisi poker](/ms/blog/holdem-positions).
+> **Nota:** sebelum flop, aksi bermula dengan pemain di sebelah kiri Big Blind dan BB bertindak terakhir — dia melihat keputusan semua orang lain dahulu. Dari flop ke atas, susunan diset semula dan blinds bertindak awal. Dua perkara mengubah jadual ini: dalam heads-up, butang ialah Small Blind dan bertindak terakhir selepas flop; dan straddle hidup, jika bilik membenarkannya, memulakan aksi pre-flop di sebelah kirinya sendiri dan mengambil alih tempat bertindak terakhir. Turutan street demi street dihuraikan dalam [urutan permainan Texas Hold'em](/ms/blog/holdem-game-order), dan setiap nama tempat duduk di sekeliling butang dibincangkan dalam [panduan posisi poker](/ms/blog/holdem-positions).
 
 ---
 
 ## Berapa Besar Blinds? Stakes Dalam Cash Game dan Kejohanan
 
-Stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan Big Blind $2; Small Blind ialah nombor yang lebih kecil, Big Blind yang lebih besar.
+Dalam permainan no-limit dan pot-limit, stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan Big Blind $2; Small Blind ialah nombor yang lebih kecil, Big Blind yang lebih besar. (Meja fixed-limit pula dinamakan mengikut dua saiz bet-nya — dalam permainan limit 4-8, bet minimum ialah $4; Peraturan Live Action WSOP 104.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -110,7 +110,7 @@ Stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan
 
 </div>
 
-- **Cash game:** blinds kekal ==g:**tetap**==. Duduk di meja $1/$2 dan ia kekal $1/$2 sehingga anda bangun. (Untuk perbandingan lebih mendalam, lihat [kejohanan vs cash game](/ms/blog/holdem-tournament-vs-cash-game).)
+- **Cash game:** blinds kekal ==g:**tetap**==. Tiada jam yang menaikkannya — meja $1/$2 kekal $1/$2 melainkan meja dan bilik bersetuju menukar stakes. (Untuk perbandingan lebih mendalam, lihat [kejohanan vs cash game](/ms/blog/holdem-tournament-vs-cash-game).)
 - **Kejohanan:** blinds ==r:**naik** mengikut masa== (cth. 25/50 → 50/100 → 100/200), jadi tekanan semakin meningkat sepanjang malam. Tahap blind, jam kejohanan dan helaian struktur dibincangkan dalam [panduan cara kejohanan poker berfungsi](/ms/blog/holdem-tournament).
 
 ---
@@ -160,7 +160,7 @@ A. Blinds ialah pertaruhan wajib yang menjamin sentiasa ada wang dalam pot, yang
 
 **Q. Big Blind atau Small Blind yang bertindak dahulu?**
 
-A. Sebelum flop, jika tiada straddle, Small Blind bertindak kedua terakhir dan Big Blind bertindak terakhir (straddle hidup pula bertindak terakhir pre-flop, dan apabila button membuat straddle, Small Blind bertindak dahulu). Selepas flop, susunannya terbalik: Small Blind bertindak dahulu dan Big Blind kedua, sebelum pemain lain di meja.
+A. Sebelum flop, jika tiada straddle, Small Blind bertindak kedua terakhir dan Big Blind bertindak terakhir (straddle hidup pula bertindak terakhir pre-flop, dan apabila button membuat straddle, Small Blind bertindak dahulu). Selepas flop, susunannya terbalik: Small Blind bertindak dahulu dan Big Blind kedua, sebelum pemain lain di meja. (Heads-up ialah pengecualian: Small Blind berada di butang, jadi ia bertindak dahulu pre-flop dan terakhir selepas flop.)
 
 **Q. Adakah Small Blind sentiasa tepat separuh daripada Big Blind?**
 
@@ -168,7 +168,7 @@ A. Biasanya ya, tetapi tidak selalu — sesetengah struktur (seperti $1/$3 atau 
 
 **Q. Jika tiada sesiapa raise, bolehkah Big Blind cek sahaja?**
 
-A. Boleh — itulah "option" Big Blind. Jika semua orang hanya call, Big Blind boleh cek dan melihat flop secara percuma, atau raise jika ada tangan yang kuat.
+A. Boleh — itulah "option" Big Blind. Jika semua orang hanya call big blind — tiada raise dan tiada straddle — Big Blind boleh cek dan melihat flop secara percuma, atau raise jika ada tangan yang kuat.
 
 **Q. Bolehkah fold selepas membayar blind?**
 
@@ -190,7 +190,7 @@ A. Tidak juga — "blinds" merujuk kepada Small Blind dan Big Blind bersama-sama
 
 ## Perkara Penting
 
-1. Blinds ialah **pertaruhan wajib sebelum kad diedar**: Small Blind di kiri butang, Big Blind di kirinya pula, dan BB biasanya dua kali ganda SB.
+1. Blinds ialah **pertaruhan wajib sebelum kad diedar**: Small Blind di kiri butang (heads-up: di butang), Big Blind di kirinya pula, dan BB biasanya dua kali ganda SB.
 2. **Big Blind ialah unit meja** — raise, stack dan tekanan kejohanan semuanya diukur dalam BB.
 3. Mainkan blinds dengan cermat: **raise atau fold dari Small Blind**, **pertahan Big Blind dengan pot odds**, dan pelajari steal dari posisi lewat apabila semua orang fold sehingga ke anda.
 

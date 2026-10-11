@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the last full bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -129,7 +129,7 @@ The key insight: the min-raise matches the ==increment== of the last full bet or
 
 Two live-poker rules that come with raising:
 
-1. **Announce "raise" — and the amount — before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: a bet or raise made in multiple motions that include a return to your stack **without** announcing "raise" first — or a deceptive gesture meant to induce action out of turn (==Rule 103==).
+1. **Announce "raise" — and the amount — before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: a bet or raise made in multiple motions that include a return to your stack **without** announcing "raise" first — or a deceptive gesture meant to induce action out of turn (==WSOP Tournament Rule 103==).
 2. **One motion.** If you don't announce, your chips must go in as a single forward motion.
 
 How *much* you should raise (2.5x opens, 3x 3-bets, sizing by board texture) is strategy, not rules — that lives in the [Texas Hold'em strategy pillar](/en/blog/holdem-strategy).
@@ -185,7 +185,7 @@ First to act on the flop, nobody has bet, and a newer player pushes chips in **s
 
 ### Mistake 3 — The big blind folding a free flop
 
-Everyone limps, action reaches the big blind, and they fold. That's a free flop thrown in the muck. ==g:If no one raised, the BB can check and see three cards for zero extra cost== — the blind is already live. This comes up every single orbit.
+Everyone limps, action reaches the big blind, and they fold. That's a free flop thrown in the muck. ==g:If no one raised or straddled, the BB can check and see three cards for zero extra cost== — the blind is already live. This comes up every single orbit.
 
 ### Mistake 4 — The silent single chip
 
@@ -226,7 +226,7 @@ A. It depends on the all-in's size. If the all-in is a full legal raise, action 
 
 **Q. What is a string bet in poker?**
 
-A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. Rule 103 also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally — "raise" and the full amount — or move all chips in one motion (TDA 2024 Rule 42).
+A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==WSOP Tournament Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. WSOP Tournament Rule 103 also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally — "raise" and the full amount — or move all chips in one motion (TDA 2024 Rule 42).
 
 **Q. What does it mean to limp in poker?**
 

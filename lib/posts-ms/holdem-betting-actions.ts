@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise penuh sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 minit",
@@ -132,7 +132,7 @@ Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise penuh te
 
 Dua peraturan poker live yang datang bersama raise:
 
-1. **Umumkan "raise" berserta jumlahnya sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: bertaruh atau raise dalam beberapa pergerakan yang termasuk kembali ke stack anda **tanpa** mengumumkan "raise" dahulu — atau isyarat mengelirukan yang bertujuan memancing aksi di luar giliran (==Rule 103==).
+1. **Umumkan "raise" berserta jumlahnya sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: bertaruh atau raise dalam beberapa pergerakan yang termasuk kembali ke stack anda **tanpa** mengumumkan "raise" dahulu — atau isyarat mengelirukan yang bertujuan memancing aksi di luar giliran (==WSOP Tournament Rule 103==).
 2. **Satu pergerakan.** Jika anda tidak mengumumkan, cip anda mesti masuk dalam satu pergerakan ke hadapan sahaja.
 
 *Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan — tempatnya dalam [panduan utama strategi Texas Hold'em](/ms/blog/holdem-strategy). Selepas 3-bet dan call berlaku, [contoh pot 3-bet pada flop AK2](/ms/blog/3bet-pot-cbet) menunjukkan bagaimana range dan stack yang tinggal mempengaruhi keputusan seterusnya.
@@ -154,7 +154,7 @@ Dalam permainan **Fixed-Limit**, setiap pusingan ada had (pot "capped"). Peratur
 
 ## Apa Maksud All-In?
 
-All-in bermaksud mempertaruhkan ==semua cip yang anda ada==. Anda boleh melakukannya bila-bila masa giliran anda — sebagai bertaruh, call atau raise.
+All-in bermaksud mempertaruhkan ==semua cip yang anda ada==. Anda boleh melakukannya pada giliran anda sebagai bertaruh, call atau raise — mana-mana yang terbuka kepada anda pada ketika itu.
 
 Jika all-in anda *lebih kecil* daripada pertaruhan semasa, anda tidak terkeluar: anda cuma bersaing untuk ==pot utama== yang dihadkan pada sumbangan anda, manakala cip lebihan daripada stack yang lebih besar membentuk ==side pot== yang anda tidak boleh menang. (Jika ada pemain yang stack-nya lebih pendek daripada anda, anda tetap bermain untuk side pot yang tidak dapat dicapainya — setiap all-in hanya mengehadkan lapisannya sendiri.) Dan all-in yang *kurang daripada satu min-raise penuh* umumnya tidak membuka semula raise untuk pemain yang sudah bertindak — peraturan halus yang mengejutkan pemain tetap sekalipun.
 
@@ -180,7 +180,7 @@ Saya bermain permainan live taruhan rendah setiap minggu, dan kesilapan aksi yan
 
 ### Kesilapan 1 — Call ketika anda boleh cek
 
-Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu menolak cip masuk **tanpa bersuara**, "untuk call". Tiada apa yang hendak di-call: menurut ==WSOP Rule 90.a==, pertaruhan dibuat melalui pengumuman *atau* dengan menolak cip — dia baru sahaja bertaruh tanpa sengaja. Kalau dia *menyebut* "call", ==Rule 90.b.1== menjadikannya cek. Apabila pusingan belum dibuka, cek dan lihat kad secara percuma.
+Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu menolak cip masuk **tanpa bersuara**, "untuk call". Tiada apa yang hendak di-call: menurut ==WSOP Rule 90.a==, pertaruhan dibuat melalui pengumuman *atau* dengan menolak cip — dia baru sahaja bertaruh tanpa sengaja. Kalau dia *menyebut* "call", ==Rule 90.b.1== menjadikannya cek. Apabila pusingan belum dibuka, cek — jika tiada sesiapa bertaruh selepas anda, anda melihat kad seterusnya secara percuma.
 
 ### Kesilapan 2 — "Saya call... eh, raise!"
 
@@ -188,7 +188,7 @@ Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu menolak cip
 
 ### Kesilapan 3 — Big blind membuang flop percuma
 
-Semua orang limp, aksi sampai kepada big blind, dan dia fold. Itu flop percuma yang dibuang ke muck. ==g:Jika tiada sesiapa raise, BB boleh cek dan melihat tiga kad tanpa kos tambahan== — blind itu sudah pun hidup. Perkara ini berlaku setiap orbit.
+Semua orang limp, aksi sampai kepada big blind, dan dia fold. Itu flop percuma yang dibuang ke muck. ==g:Jika tiada sesiapa raise atau straddle, BB boleh cek dan melihat tiga kad tanpa kos tambahan== — blind itu sudah pun hidup. Perkara ini berlaku setiap orbit.
 
 ### Kesilapan 4 — Satu cip besar tanpa suara
 
@@ -229,7 +229,7 @@ A. Bergantung pada saiz all-in itu. Jika all-in itu merupakan raise sah yang pen
 
 **Q. Apa itu string bet dalam poker?**
 
-A. Cubaan bertaruh atau raise dalam beberapa pergerakan — kembali ke stack anda di antaranya — tanpa mengumumkan "raise" dahulu (==Rule 103==). Pergerakan kedua tidak pernah dikira — hanya cip pertama yang kekal, dinilai terlebih dahulu di bawah peraturan call satu cip dan berbilang cip (TDA 2024 Rules 44–45). Jika ambang separuh minimum Rule 43-A terpakai, ukur kenaikan di atas jumlah call, bukan jumlah keseluruhan cip: kurang daripada separuh pertaruhan atau raise penuh terbesar sebelumnya dikira call; separuh atau lebih mewajibkan min-raise penuh. Pengumuman raise yang dibuat lebih awal atau all-in dinilai di bawah peraturannya sendiri. Rule 103 juga melarang isyarat mengelirukan yang bertujuan memancing aksi di luar giliran sebelum aksi anda sendiri selesai. Menyebut "call" kemudian menambah bukan string bet tetapi pengumuman yang mengikat (==Rule 90.d==) — kesannya sama. Umumkan aksi anda secara lisan — "raise" berserta jumlah penuhnya — atau gerakkan semua cip dalam satu pergerakan (TDA 2024 Rule 42).
+A. Cubaan bertaruh atau raise dalam beberapa pergerakan — kembali ke stack anda di antaranya — tanpa mengumumkan "raise" dahulu (==WSOP Tournament Rule 103==). Pergerakan kedua tidak pernah dikira — hanya cip pertama yang kekal, dinilai terlebih dahulu di bawah peraturan call satu cip dan berbilang cip (TDA 2024 Rules 44–45). Jika ambang separuh minimum Rule 43-A terpakai, ukur kenaikan di atas jumlah call, bukan jumlah keseluruhan cip: kurang daripada separuh pertaruhan atau raise penuh terbesar sebelumnya dikira call; separuh atau lebih mewajibkan min-raise penuh. Pengumuman raise yang dibuat lebih awal atau all-in dinilai di bawah peraturannya sendiri. WSOP Tournament Rule 103 juga melarang isyarat mengelirukan yang bertujuan memancing aksi di luar giliran sebelum aksi anda sendiri selesai. Menyebut "call" kemudian menambah bukan string bet tetapi pengumuman yang mengikat (==Rule 90.d==) — kesannya sama. Umumkan aksi anda secara lisan — "raise" berserta jumlah penuhnya — atau gerakkan semua cip dalam satu pergerakan (TDA 2024 Rule 42).
 
 **Q. Apa maksud limp dalam poker?**
 

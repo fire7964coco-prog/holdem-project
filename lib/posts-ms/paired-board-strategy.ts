@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "👯",
@@ -32,7 +32,7 @@ Hasil | BB check 97.0% — walaupun mempunyai lebih banyak trips
 :::
 
 > **Jawapan ringkas**
-> Check hampir seluruh range dan jangan terlalu cepat membuang tangan yang kelihatan lemah. Memegang enam bukan alasan untuk terus lead: banyak tangan yang anda tewaskan akan fold, jadi kebanyakan 6x kekal dalam range check. BB check **97.0%** di sini. Pocket pair melebihi enam mendapat nilai besar; Ace-high dan King-high yang lebih baik pula tidak patut dibuang secara automatik.
+> Check hampir seluruh range dan jangan terlalu cepat membuang tangan yang kelihatan lemah. Memegang enam bukan alasan untuk terus lead: banyak tangan yang anda tewaskan akan fold, jadi kebanyakan 6x kekal dalam range check. BB check **97.0%** di sini. Pocket pair melebihi enam mendapat nilai besar, manakala Ace-high tidak patut di-fold secara automatik kepada satu bet kecil. Sejauh mana pertahanan optimum sebenarnya pula tidak ditunjukkan oleh spot kajian ini.
 
 ## Apakah tetapan yang menghasilkan angka ini?
 
