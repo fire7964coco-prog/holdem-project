@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -173,7 +173,7 @@ No turn (1 carta por vir) | Multiplique outs × 2 → sua % aproximada de acerta
 Pote depois da aposta | $100 + $50 = $150
 Seu call | $50 para ganhar $150 (pote final $200)
 Pot odds | 50 ÷ 200 = 25% — você precisa de pelo menos 25% de equity
-Sua equity | Projeto de flush com 9 outs limpos ≈ 35% até o river (regra do 4) — o número pressupõe que você vê ==as duas== cartas
+Sua equity | Projeto de flush com 9 outs limpos ≈ 35% até o river (regra do 4: 9 × 4 = 36%) — o número pressupõe que você vê ==as duas== cartas
 Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucrativo
 :::
 

@@ -81,7 +81,7 @@ Blackjack rewards memory of what's already gone; poker rewards reading what you 
 
 An ==out== is any unseen card that improves your hand into a likely winner. A flush draw has ==9 outs== (13 of a suit minus the 4 you can see) — the suited board cards are already subtracted in that 9, so don't cross them off a second time as "dead cards". Convert outs to a rough win chance with the ==Rule of 4 and 2==: multiply by 4 with two cards to come, by 2 with one.
 
-A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — no more betting to come, as when you're all-in or have called an all-in. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — no more betting to come, as when you're all-in or have called an all-in and no one left in the hand can still bet. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blockers (card removal)
 
@@ -146,7 +146,7 @@ A. No. Blackjack counting tracks the high-low balance of a shoe played down over
 
 **Q. Is counting cards illegal in poker?**
 
-A. No. Calculating your own outs and blockers in your head is legal and a normal part of poker. What rooms and platforms restrict is outside help during play: devices, charts, and advice from others.
+A. No. Calculating your own outs and blockers in your head is legal and a normal part of poker. What rooms and platforms restrict is outside help: devices, charts, and advice from others. Online software has its own rules — PokerStars, for example, restricts solver use while its client is open.
 
 **Q. Does card counting work in Texas Hold'em?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -82,7 +82,7 @@ Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ v
 
 ## Equity vs. Pot Odds: Die eine Regel, die jeden Call entscheidet
 
-**Calle, wenn deine Equity größer ist als deine Pot Odds – dieser eine Vergleich entscheidet fast jeden Call im Poker.** Die [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") sagen dir die Equity, die du *brauchst*, um Break-even zu sein; die Equity sagt dir, was du *hast*. Wenn du mehr hast, als du brauchst, macht der Call Geld.
+**Calle, wenn deine Equity größer ist als deine Pot Odds – dieser Vergleich ist exakt, wenn danach nicht mehr gesetzt wird.** Die [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") sagen dir die Equity, die du *brauchst*, um Break-even zu sein; die Equity sagt dir, was du *hast*. Wenn du mehr hast, als du brauchst, macht der Call Geld.
 
 Gegen eine Half-Pot-Bet verlangen deine Pot Odds ==25%== zum Callen. Setzt dich dieser Call am Flop all-in oder siehst du beide restlichen Karten ohne weitere Zahlung, schlagen die ~35% eines sauberen Flushdraws diesen Preis. Kann am Turn noch eine Bet folgen, kauft der Call nur eine Karte: 9 ÷ 47 = 19,1% – allein mit dem Draw unter 25%.
 

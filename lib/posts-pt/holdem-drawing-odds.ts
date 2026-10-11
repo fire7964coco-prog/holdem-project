@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -113,7 +113,7 @@ Então a frase honesta é: duas cartas do mesmo naipe flopam um **projeto** muit
 
 O número de completar se divide por street, e isso importa no instante em que ainda há aposta:
 
-- **Flop → river (as duas cartas):** 35,0% — use isso só quando você vai ver as duas cartas sem mais apostas (você está all-in, ou pagou um all-in).
+- **Flop → river (as duas cartas):** 35,0% — use isso só quando você vai ver as duas cartas sem mais apostas (você está all-in, ou pagou um all-in e ninguém que segue na mão ainda pode apostar).
 - **Flop → turn (uma carta):** 9 ÷ 47 = 19,1%.
 - **Turn → river (uma carta):** 9 ÷ 46 = 19,6%.
 

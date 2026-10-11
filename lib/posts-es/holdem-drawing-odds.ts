@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -113,7 +113,7 @@ Así que la frase honesta es: dos cartas del mismo palo ligan un **proyecto** mu
 
 La cifra de completar se reparte por calle, lo que importa en cuanto queda apuesta por delante:
 
-- **Flop → river (las dos cartas):** 35.0% — usa esto solo cuando verás las dos cartas sin más apuestas (estás all-in o has pagado un all-in).
+- **Flop → river (las dos cartas):** 35.0% — usa esto solo cuando verás las dos cartas sin más apuestas (estás all-in o has pagado un all-in y nadie que siga en la mano puede apostar más).
 - **Flop → turn (una carta):** 9 ÷ 47 = 19.1%.
 - **Turn → river (una carta):** 9 ÷ 46 = 19.6%.
 

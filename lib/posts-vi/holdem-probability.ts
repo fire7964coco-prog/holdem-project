@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Đến river, bạn có một đôi 43,8% số ván, hai đôi 23,5%, thùng 3,0% và cù lũ 2,6%. Còn thùng phá sảnh hoàng gia chỉ xuất hiện khoảng 1 lần trong 30.940 ván. Các con số này tính theo 7 lá đến river, không phải bảng 5 lá bạn hay gặp.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 phút",
@@ -173,7 +173,7 @@ Tình huống kinh điển: bạn ra **flush draw** ở flop (9 outs). Bạn s�
 Pot sau cú bet | $100 + $50 = $150
 Tiền call của bạn | $50 để tranh $150 (pot cuối cùng $200)
 Pot odds | 50 ÷ 200 = 25% — bạn cần ít nhất 25% equity
-Equity của bạn | Flush draw với 9 outs sạch ≈ 35% đến river — con số theo quy tắc nhân 4, giả định bạn thấy ==cả hai== lá
+Equity của bạn | Flush draw với 9 outs sạch ≈ 35% đến river (quy tắc nhân 4: 9 × 4 = 36%), giả định bạn thấy ==cả hai== lá
 Quyết định | Khi còn cả hai lá: 35% > 25% → một lần ==g:call== rõ ràng có lời
 :::
 

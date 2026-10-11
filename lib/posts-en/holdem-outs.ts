@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 For my first year at the table I "played my draws" without ever counting them. A flush draw and a gutshot felt about the same — both were "cards that could come" — so I called the same on both and wondered why I kept losing. The fix wasn't a strategy course. It was a five-minute habit: ==stop, and actually count the cards that save me.==
 
-That habit is called counting **outs** — [poker's real answer to "counting cards"](/en/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — and it's the single skill that sits underneath every odds decision in poker. Before you can ask "is this call profitable?" you have to answer "how many cards win the hand for me?" This guide is the counting half — the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") is the reference behind it, and [pot odds](/en/blog/holdem-pot-odds) is what you do with the number once you have it.
+That habit is called counting **outs** — [poker's real answer to "counting cards"](/en/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — and it's the skill that sits underneath every drawing decision in poker. Before you can ask "is this call profitable?" you have to answer "how many cards win the hand for me?" This guide is the counting half — the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") is the reference behind it, and [pot odds](/en/blog/holdem-pot-odds) is what you do with the number once you have it.
 
 ---
 
@@ -111,7 +111,7 @@ The two combo draws at the top are where players fumble the arithmetic, so they 
 
 </div>
 
-Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when no more betting can happen — you're all-in, or you've called an all-in. **"Flop → turn"** counts just the next card (9 ÷ 47 = 19.1%; from the turn to the river it becomes 9 ÷ 46 = 19.6%) — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
+Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when no more betting can happen — you're all-in, or you've called an all-in and no one left in the hand can still bet. **"Flop → turn"** counts just the next card (9 ÷ 47 = 19.1%; from the turn to the river it becomes 9 ÷ 46 = 19.6%) — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
 
 Notice the 15-out monster: with two cards to come it completes 54.1% of the time — against a single pair that usually makes it a **favorite**, the rare draw you can happily get all-in with on the flop. Against a set it isn't: the board can pair and fill up the set — the J♠ T♠ on 9♠ 8♣ 2♠ example below is only about 40% against pocket nines.
 
@@ -127,7 +127,7 @@ Notice the 15-out monster: with two cards to come it completes 54.1% of the time
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.6% — close enough to act).
 
-:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when no more betting can happen (you're all-in, or you've called an all-in). If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
+:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when no more betting can happen (you're all-in, or you've called an all-in and no one left in the hand can still bet). If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
 
 The main weakness is **high out counts on the flop**. The exact two-card calculation accounts for hitting on either street without counting a double hit twice. The ×4 estimate starts running slightly high at 7 outs, but the gap grows with bigger draws; the usual correction below is used for more than 8 outs.
 

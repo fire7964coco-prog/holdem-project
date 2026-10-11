@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Menjelang river, anda membentuk one pair dalam 43.8% tangan, two pair 23.5%, flush 3.0% dan full house 2.6%. Royal flush pula muncul hanya sekali dalam kira-kira 31,000 tangan — itu asas 7 kad Texas Hold'em, bukan 5 kad.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-01",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 minit",
@@ -175,7 +175,7 @@ Itulah jalan pintasnya: outs bersih → pendarab untuk kad yang anda akan lihat 
 Pot selepas bet | $100 + $50 = $150
 Call anda | $50 untuk menang $150 (pot akhir $200)
 Pot odds | 50 ÷ 200 = 25% — anda perlu sekurang-kurangnya 25% equity
-Equity anda | Flush draw ≈ 35% menjelang river — nombor Rule of 4, yang menganggap anda melihat ==kedua-dua== kad
+Equity anda | Flush draw ≈ 35% menjelang river (Rule of 4: 9 × 4 = 36%), yang menganggap anda melihat ==kedua-dua== kad
 Keputusan | Dengan dua kad lagi: 35% > 25% → ==g:call== yang jelas menguntungkan
 :::
 

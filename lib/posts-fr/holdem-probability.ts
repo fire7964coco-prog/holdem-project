@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "À la river, tu termines avec une paire 43,8 % du temps, une double paire 23,5 %, une couleur 3,0 % et un full 2,6 %. La quinte flush royale, elle, n'apparaît qu'environ 1 fois sur 31 000 mains.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -173,7 +173,7 @@ C'est tout le raccourci : des outs propres → le multiplicateur correspondant a
 Pot après la mise | $100 + $50 = $150
 Ton call | $50 pour gagner $150 (pot final $200)
 Cote du pot | 50 ÷ 200 = 25 % — il te faut au moins 25 % d'équité
-Ton équité | Tirage couleur avec 9 outs propres ≈ 35 % d'ici la river — le chiffre de la règle du 4, qui suppose que tu vois ==les deux== cartes
+Ton équité | Tirage couleur avec 9 outs propres ≈ 35 % d'ici la river (règle du 4 : 9 × 4 = 36 %), qui suppose que tu vois ==les deux== cartes
 Décision | Avec deux cartes à venir : 35 % > 25 % → ==g:suivre==, clairement rentable
 :::
 

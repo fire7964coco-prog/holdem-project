@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -82,7 +82,7 @@ Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas 
 
 ## Equity vs pot odds: la única regla que decide cada call
 
-**Iguala cuando tu equity es mayor que tus pot odds — esa única comparación decide casi todos los calls del póker.** Las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dicen el equity que *necesitas* para no perder ni ganar; el equity te dice el que *tienes*. Si tienes más del que necesitas, igualar gana dinero.
+**Iguala cuando tu equity es mayor que tus pot odds — esa comparación es exacta cuando no vienen más apuestas.** Las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dicen el equity que *necesitas* para no perder ni ganar; el equity te dice el que *tienes*. Si tienes más del que necesitas, igualar gana dinero.
 
 Frente a una apuesta de medio bote, tus pot odds exigen ==25%== para igualar. Si este call te deja all-in en el flop o te permite ver las dos cartas restantes sin volver a pagar, el ~35% de un proyecto de color limpio supera ese precio. Si puede llegar otra apuesta en el turn, el call solo te compra una carta: 9 ÷ 47 = 19.1%, por debajo del 25% con el proyecto por sí solo.
 

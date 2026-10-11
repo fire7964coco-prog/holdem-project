@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds là số chip bạn kỳ vọng thắng thêm ở các vòng cược sau khi draw của bạn trúng. Nhờ đó bạn có thể call một draw mà pot odds đơn thuần bảo fold mà vẫn có lời, nhưng chỉ khi stack còn sâu và đối thủ thật sự sẽ trả tiền cho bạn.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -110,7 +110,7 @@ Cùng một lần call $50, hai quyết định ngược nhau — và các lá b
 
 </div>
 
-Hai lực đặt ra con số. **Tần suất:** gutshot trúng bằng nửa flush draw, nên cần khoản trả lớn gấp đôi để hòa vốn. **Độ che giấu:** một set kín được trả nhiều hơn hẳn một thùng lộ liễu trên board đồng chất (monotone), vì đối thủ không thể đoán ra bạn cầm nó — đó là lý do set chịu được tỷ lệ trúng thấp. [Nut flush draw đáng giá hơn hẳn một flush draw bé](/vi/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") cũng vì lý do đó: nó được trả *và* không bao giờ thua thùng cao hơn khi về.
+Hai lực đặt ra con số. **Tần suất:** gutshot trúng bằng nửa flush draw, nên cần khoản trả lớn khoảng gấp đôi để hòa vốn. **Độ che giấu:** một set kín được trả nhiều hơn hẳn một thùng lộ liễu trên board đồng chất (monotone), vì đối thủ không thể đoán ra bạn cầm nó — đó là lý do set chịu được tỷ lệ trúng thấp. [Nut flush draw đáng giá hơn hẳn một flush draw bé](/vi/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") cũng vì lý do đó: nó được trả *và* không bao giờ thua thùng cao hơn khi về.
 
 ---
 

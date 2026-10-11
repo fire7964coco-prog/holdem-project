@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -82,7 +82,7 @@ El blackjack premia recordar lo que ya salió; el póker premia leer lo que ves 
 
 Un ==out== es cualquier carta no vista que convierte tu mano en una probable ganadora. Un proyecto de color tiene ==9 outs== (13 de un palo menos las 4 que ves) — las cartas de ese palo que hay en la mesa ya están restadas dentro de esos 9, así que no las taches otra vez como "cartas muertas". Convierte los outs en una probabilidad aproximada de ligar con la ==regla del 2 y 4==: multiplica por 4 con dos cartas por venir, por 2 con una.
 
-Un proyecto de color de 9 outs liga para el river alrededor del ==g:35%== de las veces (9 × 4 = 36% como estimación rápida — la cifra real es 35.0%). Esa cifra cuenta ambas cartas restantes, así que solo decide el call cuando de verdad ves las dos — sin más apuestas por delante, como cuando estás all-in o has pagado un all-in. Si hay una apuesta en el flop que tendrás que volver a pagar en el turn, cuenta solo la siguiente carta: ==9 ÷ 47 = 19.1%==. El método completo — outs sucias, proyectos combinados, porcentajes exactos — está en la [guía para contar outs](/es/blog/holdem-outs), y las odds detrás de cada proyecto viven en la [tabla de probabilidades](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Un proyecto de color de 9 outs liga para el river alrededor del ==g:35%== de las veces (9 × 4 = 36% como estimación rápida — la cifra real es 35.0%). Esa cifra cuenta ambas cartas restantes, así que solo decide el call cuando de verdad ves las dos — sin más apuestas por delante, como cuando estás all-in o has pagado un all-in y nadie que siga en la mano puede apostar más. Si hay una apuesta en el flop que tendrás que volver a pagar en el turn, cuenta solo la siguiente carta: ==9 ÷ 47 = 19.1%==. El método completo — outs sucias, proyectos combinados, porcentajes exactos — está en la [guía para contar outs](/es/blog/holdem-outs), y las odds detrás de cada proyecto viven en la [tabla de probabilidades](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Bloqueadores (eliminación de cartas)
 
@@ -147,7 +147,7 @@ A. No. El conteo del blackjack rastrea el balance alto-bajo de un zapato jugado 
 
 **Q. ¿Es ilegal contar cartas en el póker?**
 
-A. No. Calcular tus propios outs y bloqueadores de cabeza es legal y una parte normal del póker. Lo que restringen las salas y las plataformas es la ayuda externa durante el juego: dispositivos, tablas y consejos de otros.
+A. No. Calcular tus propios outs y bloqueadores de cabeza es legal y una parte normal del póker. Lo que restringen las salas y las plataformas es la ayuda externa: dispositivos, tablas y consejos de otros. El software online tiene sus propias reglas: por ejemplo, PokerStars restringe el uso de solvers mientras su cliente está abierto.
 
 **Q. ¿Funciona el conteo de cartas en el Texas Hold'em?**
 

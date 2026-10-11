@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un out, c'est une carte encore dans le paquet qui transforme ta main en main probablement gagnante. Tu les comptes, puis tu convertis : outs × 4 au flop, outs × 2 à la turn, pour obtenir ton pourcentage approximatif de toucher. Un tirage couleur, c'est 9 outs, soit environ 36 % d'ici la river.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Pendant ma première année à la table, j'ai « joué mes tirages » sans jamais les compter. Un tirage couleur et un gutshot (tirage ventral) me paraissaient à peu près pareils — dans les deux cas, c'étaient « des cartes qui pouvaient tomber » —, alors je suivais de la même façon sur les deux et je me demandais pourquoi je perdais sans arrêt. Le remède n'a pas été une formation en stratégie. Ça a été une habitude de cinq minutes : ==m'arrêter, et compter vraiment les cartes qui me sauvent.==
 
-Cette habitude, c'est compter ses **outs** — [la vraie réponse du poker au « comptage des cartes »](/fr/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — et c'est la compétence qui se cache sous chaque décision de probabilités au poker. Avant de te demander « ce call est-il rentable ? », tu dois répondre à « combien de cartes me font gagner la main ? ». Cet article, c'est la moitié « comptage » — le [tableau des probabilités au poker](/fr/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") est la référence qui se trouve derrière, et les [cotes du pot (pot odds)](/fr/blog/holdem-pot-odds), c'est ce que tu fais du chiffre une fois que tu l'as.
+Cette habitude, c'est compter ses **outs** — [la vraie réponse du poker au « comptage des cartes »](/fr/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — et c'est la compétence qui se cache sous chaque décision sur un tirage au poker. Avant de te demander « ce call est-il rentable ? », tu dois répondre à « combien de cartes me font gagner la main ? ». Cet article, c'est la moitié « comptage » — le [tableau des probabilités au poker](/fr/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") est la référence qui se trouve derrière, et les [cotes du pot (pot odds)](/fr/blog/holdem-pot-odds), c'est ce que tu fais du chiffre une fois que tu l'as.
 
 ---
 
@@ -120,7 +120,7 @@ C'est exactement l'erreur de ma première année : un tirage couleur et un gutsh
 
 </div>
 
-Deux chiffres comptent pour chaque tirage. **« D'ici la river »** compte les deux cartes restantes et s'applique quand plus aucune mise ne peut venir — tu es à tapis, ou tu as payé un tapis. **« Flop → turn »** ne compte que la carte suivante (9 ÷ 47 = 19,1 % ; de la turn à la river, ça devient 9 ÷ 46 = 19,6 %) — utilise-le dès qu'il reste des mises à venir, parce que tu n'es sûr de voir qu'une carte à la fois. Les débutants citent le gros chiffre « d'ici la river » face à une mise à la turn, se persuadent de suivre, et le paient.
+Deux chiffres comptent pour chaque tirage. **« D'ici la river »** compte les deux cartes restantes et s'applique quand plus aucune mise ne peut venir — tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser. **« Flop → turn »** ne compte que la carte suivante (9 ÷ 47 = 19,1 % ; de la turn à la river, ça devient 9 ÷ 46 = 19,6 %) — utilise-le dès qu'il reste des mises à venir, parce que tu n'es sûr de voir qu'une carte à la fois. Les débutants citent le gros chiffre « d'ici la river » face à une mise à la turn, se persuadent de suivre, et le paient.
 
 Regarde le monstre à 15 outs : avec deux cartes à venir, il rentre 54,1 % du temps — contre une simple paire, ça en fait en général le **favori**, le rare tirage avec lequel tu peux volontiers faire tapis au flop. Contre un brelan servi, non : le board peut s'apparier et donner un full au brelan — l'exemple J♠ 10♠ sur 9♠ 8♣ 2♠ plus bas n'a qu'environ 40 % contre une paire de neuf servie.
 
@@ -136,7 +136,7 @@ Regarde le monstre à 15 outs : avec deux cartes à venir, il rentre 54,1 % du t
 
 Un tirage couleur, c'est 9 outs. Au flop : 9 × 4 = **36 %** (valeur exacte 35,0 % — pile dessus). À la turn : 9 × 2 = **18 %** (exact 19,6 % — assez proche pour agir).
 
-:::tip[Le raccourci ×4 suppose en silence que tu verras *les deux* cartes sans autre mise — ce n'est garanti que quand plus aucune mise ne peut venir (tu es à tapis, ou tu as payé un tapis). S'il y a une mise devant toi, utilise le chiffre ×2 (une carte) pour la street où tu te trouves vraiment.]:::
+:::tip[Le raccourci ×4 suppose en silence que tu verras *les deux* cartes sans autre mise — ce n'est garanti que quand plus aucune mise ne peut venir (tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser). S'il y a une mise devant toi, utilise le chiffre ×2 (une carte) pour la street où tu te trouves vraiment.]:::
 
 La faiblesse principale, ce sont **les gros comptes d'outs au flop**. Le calcul exact à deux cartes tient compte du fait de toucher sur l'une ou l'autre street sans compter deux fois le cas où les deux cartes touchent. L'estimation ×4 commence à viser un peu haut dès 7 outs, mais l'écart grandit avec les gros tirages ; la correction habituelle ci-dessous s'applique au-delà de 8 outs.
 

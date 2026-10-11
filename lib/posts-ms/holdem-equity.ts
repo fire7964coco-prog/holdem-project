@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -82,7 +82,7 @@ Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard 
 
 ## Equity vs Pot Odds: Satu Peraturan yang Tentukan Setiap Call
 
-**Call apabila equity anda lebih besar daripada pot odds anda — satu perbandingan itu menentukan hampir setiap call dalam poker.** [Pot odds](/ms/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") memberitahu equity yang anda *perlukan* untuk pulang modal; equity memberitahu apa yang anda *ada*. Jika anda ada lebih daripada yang diperlukan, call menghasilkan wang.
+**Call apabila equity anda lebih besar daripada pot odds anda — perbandingan itu tepat apabila tiada lagi pertaruhan selepas itu.** [Pot odds](/ms/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") memberitahu equity yang anda *perlukan* untuk pulang modal; equity memberitahu apa yang anda *ada*. Jika anda ada lebih daripada yang diperlukan, call menghasilkan wang.
 
 Menghadapi bet separuh pot, pot odds anda memerlukan ==25%== untuk call. Jika call ini meletakkan anda all-in di flop atau membolehkan anda melihat kedua-dua kad yang tinggal tanpa bayaran lagi, ~35% flush draw yang bersih melepasi harga itu. Jika satu lagi bet boleh menyusul di turn, call itu hanya membeli satu kad: 9 ÷ 47 = 19.1%, di bawah 25% untuk draw itu semata-mata.
 

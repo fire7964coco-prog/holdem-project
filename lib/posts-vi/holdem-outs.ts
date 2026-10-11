@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Out là bất kỳ lá nào còn trong bộ bài giúp tay bạn mạnh lên thành tay nhiều khả năng thắng. Đếm số outs rồi quy đổi: nhân 4 ở flop hoặc nhân 2 ở turn để ra phần trăm trúng xấp xỉ. Flush draw có 9 outs, tức khoảng 36% đến river.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Năm đầu ở bàn, tôi "chơi draw" mà chưa bao giờ đếm chúng. Flush draw (chờ thùng) và gutshot (sảnh hở giữa) cảm giác như nhau — đều là "những lá có thể ra" — nên tôi call như nhau với cả hai và tự hỏi vì sao mình cứ thua. Cách chữa không phải một khóa học chiến thuật. Nó là một thói quen năm phút: ==dừng lại, và thực sự đếm những lá cứu được mình.==
 
-Thói quen đó gọi là đếm **outs** — [câu trả lời thật của poker cho chuyện "đếm bài"](/vi/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — và là kỹ năng duy nhất nằm dưới mọi quyết định về xác suất trong poker. Trước khi hỏi "lần call này có lời không?", bạn phải trả lời "bao nhiêu lá thắng ván này cho tôi?". Hướng dẫn này là nửa đếm — [bảng xác suất poker](/vi/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") là tài liệu tham chiếu đằng sau nó, còn [pot odds](/vi/blog/holdem-pot-odds) (tỷ lệ pot — pot so với số tiền phải call) là việc bạn làm với con số khi đã có nó.
+Thói quen đó gọi là đếm **outs** — [câu trả lời thật của poker cho chuyện "đếm bài"](/vi/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — và là kỹ năng nằm dưới mọi quyết định theo draw trong poker. Trước khi hỏi "lần call này có lời không?", bạn phải trả lời "bao nhiêu lá thắng ván này cho tôi?". Hướng dẫn này là nửa đếm — [bảng xác suất poker](/vi/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") là tài liệu tham chiếu đằng sau nó, còn [pot odds](/vi/blog/holdem-pot-odds) (tỷ lệ pot — pot so với số tiền phải call) là việc bạn làm với con số khi đã có nó.
 
 ---
 
@@ -112,7 +112,7 @@ Hai draw kép (combo draw) ở đầu bảng là chỗ người chơi hay vấp 
 
 </div>
 
-Hai con số quan trọng với mọi draw. **"Đến river"** tính cả hai lá còn lại và áp dụng khi không thể có thêm vòng cược — bạn đã all-in, hoặc đã call một cú all-in. **"Flop → turn"** chỉ tính lá kế tiếp (9 ÷ 47 = 19,1%; từ turn sang river thành 9 ÷ 46 = 19,6%) — hãy dùng nó ngay khi còn vòng cược phía trước, vì bạn chỉ được bảo đảm thấy từng lá một. Người mới trích con số "đến river" béo bở trong khi đối mặt bet ở turn, tự thuyết phục mình call, rồi trả giá.
+Hai con số quan trọng với mọi draw. **"Đến river"** tính cả hai lá còn lại và áp dụng khi không thể có thêm vòng cược — bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp. **"Flop → turn"** chỉ tính lá kế tiếp (9 ÷ 47 = 19,1%; từ turn sang river thành 9 ÷ 46 = 19,6%) — hãy dùng nó ngay khi còn vòng cược phía trước, vì bạn chỉ được bảo đảm thấy từng lá một. Người mới trích con số "đến river" béo bở trong khi đối mặt bet ở turn, tự thuyết phục mình call, rồi trả giá.
 
 Hãy để ý monster draw 15 outs: còn hai lá, nó hoàn thành 54,1% số lần — trước một đôi đơn, điều đó thường biến nó thành **bên có lợi thế**, draw hiếm hoi bạn có thể vui vẻ all-in ngay ở flop. Trước một set thì không: board có thể ra đôi và lấp đầy cù lũ cho set — ví dụ J♠ 10♠ trên 9♠ 8♣ 2♠ bên dưới chỉ khoảng 40% trước pocket 9 (lúc này đã là set).
 
@@ -128,7 +128,7 @@ Hãy để ý monster draw 15 outs: còn hai lá, nó hoàn thành 54,1% số l�
 
 Flush draw là 9 outs. Ở flop: 9 × 4 = **36%** (giá trị thật 35,0% — trúng phóc). Ở turn: 9 × 2 = **18%** (thật 19,6% — đủ sát để hành động).
 
-:::tip[Mẹo ×4 ngầm giả định bạn sẽ thấy *cả hai* lá mà không có thêm vòng cược — chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in). Nếu có cú bet trước mặt, hãy dùng con số ×2 (một lá) cho vòng bạn đang thực sự đứng.]:::
+:::tip[Mẹo ×4 ngầm giả định bạn sẽ thấy *cả hai* lá mà không có thêm vòng cược — chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp). Nếu có cú bet trước mặt, hãy dùng con số ×2 (một lá) cho vòng bạn đang thực sự đứng.]:::
 
 Điểm yếu chính là **số outs lớn ở flop**. Phép tính hai lá chính xác tính việc trúng ở một trong hai vòng mà không đếm trùng lần trúng cả hai. Ước lượng ×4 bắt đầu hơi cao từ 7 outs, nhưng khoảng cách tăng theo draw càng lớn; phép hiệu chỉnh thường dùng bên dưới dành cho hơn 8 outs.
 

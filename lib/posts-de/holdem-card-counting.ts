@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -82,7 +82,7 @@ Blackjack belohnt das Gedächtnis für das, was schon weg ist; Poker belohnt das
 
 Ein ==Out== ist jede unsichtbare Karte, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Ein Flushdraw hat ==9 Outs== (13 einer Farbe minus die 4, die du sehen kannst) – die Karten dieser Farbe auf dem Board sind in diesen 9 bereits abgezogen, streich sie also nicht ein zweites Mal als „tote Karten“ weg. Rechne Outs mit der ==Regel der 4 und 2== in eine grobe Gewinnchance um: multipliziere mit 4 bei zwei kommenden Karten, mit 2 bei einer.
 
-Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst – ohne weiteres Setzen, etwa weil du all-in bist oder ein All-in gecallt hast. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst – ohne weiteres Setzen, etwa weil du all-in bist oder ein All-in gecallt hast und niemand mehr in der Hand noch setzen kann. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (Card Removal)
 
@@ -147,7 +147,7 @@ A. Nein. Blackjack-Zählen trackt die Hoch-Tief-Balance eines Schuhs, der über 
 
 **Q. Ist Kartenzählen beim Poker illegal?**
 
-A. Nein. Deine eigenen Outs und Blocker im Kopf zu berechnen ist legal und ein normaler Teil des Pokers. Was Cardrooms und Plattformen einschränken, ist Hilfe von außen während des Spiels: Geräte, Charts und Ratschläge anderer.
+A. Nein. Deine eigenen Outs und Blocker im Kopf zu berechnen ist legal und ein normaler Teil des Pokers. Was Cardrooms und Plattformen einschränken, ist Hilfe von außen: Geräte, Charts und Ratschläge anderer. Online-Software hat eigene Regeln: PokerStars etwa schränkt die Nutzung von Solvern ein, solange der Client geöffnet ist.
 
 **Q. Funktioniert Kartenzählen bei Texas Hold'em?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair dalam 11.8% tangan (odds 7.5:1 menentang anda), flop flush dengan dua kad satu jenis hanya 0.84%, dan melengkapkan flush draw dari flop menjelang river dalam 35% kes. Setiap nombor di bawah dikira terus daripada dek, bukan diagak.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -113,7 +113,7 @@ Jadi ayat yang jujur ialah: dua kad satu jenis flop **draw** jauh lebih kerap da
 
 Angka lengkap itu terbahagi ikut street, dan itu penting apabila masih ada pertaruhan:
 
-- **Flop → river (kedua-dua kad):** 35.0% — guna ini hanya apabila anda akan melihat kedua-dua kad tanpa bet lagi (anda all-in, atau anda sudah call all-in).
+- **Flop → river (kedua-dua kad):** 35.0% — guna ini hanya apabila anda akan melihat kedua-dua kad tanpa bet lagi (anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet).
 - **Flop → turn (satu kad):** 9 ÷ 47 = 19.1%.
 - **Turn → river (satu kad):** 9 ÷ 46 = 19.6%.
 

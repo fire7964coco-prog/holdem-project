@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Avec une paire servie, tu floppes un brelan 11,8 % du temps (7,5 contre 1) ; avec deux cartes assorties, tu floppes la couleur seulement 0,84 % du temps, et un tirage couleur floppé se complète à la river 35 % du temps. Chaque chiffre ci-dessous est dérivé du paquet, pas estimé au jugé.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -113,7 +113,7 @@ La phrase honnête est donc : deux cartes assorties floppent un **tirage** bien 
 
 Le chiffre de complétion se découpe par tour d'enchères, et ça compte dès qu'il reste des mises à venir :
 
-- **Du flop à la river (les deux cartes) :** 35,0 % — à n'utiliser que si tu vois les deux cartes sans autre mise (tu es à tapis, ou tu as payé un tapis).
+- **Du flop à la river (les deux cartes) :** 35,0 % — à n'utiliser que si tu vois les deux cartes sans autre mise (tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser).
 - **Du flop à la turn (une carte) :** 9 ÷ 47 = 19,1 %.
 - **De la turn à la river (une carte) :** 9 ÷ 46 = 19,6 %.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pas comme au blackjack : le paquet est rebattu à chaque main et trop peu de cartes sont visibles, donc suivre les hautes et les basses cartes ne te donne aucun avantage. Mais le poker a son propre comptage, admis en salle : compter ses outs, utiliser les bloqueurs et suivre les cartes mortes pour lire ce que l'adversaire ne peut pas avoir.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -82,7 +82,7 @@ Le blackjack récompense la mémoire de ce qui est déjà sorti ; le poker réco
 
 Un ==out== est une carte non vue qui améliore ta main en main probablement gagnante. Un tirage couleur a ==9 outs== (13 cartes d'une enseigne moins les 4 que tu vois) — les cartes de cette enseigne déjà sur le board sont déjà retirées de ces 9, donc ne les barre pas une deuxième fois comme « cartes mortes ». Pour convertir tes outs en chance de gagner approximative, applique la ==règle du 2 et du 4== : multiplie par 4 quand il reste deux cartes à venir, par 2 quand il en reste une.
 
-Un tirage couleur à 9 outs rentre d'ici la river (la rivière) environ ==g:35 %== du temps (9 × 4 = 36 % en estimation rapide — le chiffre exact est 35,0 %). Ce chiffre compte les deux cartes restantes, donc il ne tranche le call que si tu es sûr de voir les deux — plus aucune mise à venir, comme quand tu as fait tapis ou suivi un tapis. Face à une mise au flop que tu devras encore payer à la turn (le tournant), compte seulement la carte suivante : ==9 ÷ 47 = 19,1 %==. La méthode complète — outs « sales » (dirty outs), tirages combinés, pourcentages exacts — se trouve dans le [guide pour compter ses outs](/fr/blog/holdem-outs), et les probabilités de chaque tirage sont dans le [tableau des probabilités](/fr/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Un tirage couleur à 9 outs rentre d'ici la river (la rivière) environ ==g:35 %== du temps (9 × 4 = 36 % en estimation rapide — le chiffre exact est 35,0 %). Ce chiffre compte les deux cartes restantes, donc il ne tranche le call que si tu es sûr de voir les deux — plus aucune mise à venir, comme quand tu as fait tapis ou suivi un tapis et que plus personne encore dans le coup ne peut miser. Face à une mise au flop que tu devras encore payer à la turn (le tournant), compte seulement la carte suivante : ==9 ÷ 47 = 19,1 %==. La méthode complète — outs « sales » (dirty outs), tirages combinés, pourcentages exacts — se trouve dans le [guide pour compter ses outs](/fr/blog/holdem-outs), et les probabilités de chaque tirage sont dans le [tableau des probabilités](/fr/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Les bloqueurs (card removal)
 
@@ -147,7 +147,7 @@ A. Non. Le comptage du blackjack suit l'équilibre hautes-basses d'un sabot jou�
 
 **Q. Est-il légal de compter les cartes au poker ?**
 
-A. Calculer de tête tes propres outs et bloqueurs n'a rien d'une triche : les règles de salle l'admettent et cela fait normalement partie du poker. Ce que les salles et les plateformes encadrent, c'est l'aide extérieure pendant le jeu : appareils, tableaux et conseils d'autrui.
+A. Calculer de tête tes propres outs et bloqueurs n'a rien d'une triche : les règles de salle l'admettent et cela fait normalement partie du poker. Ce que les salles et les plateformes encadrent, c'est l'aide extérieure : appareils, tableaux et conseils d'autrui. Les logiciels en ligne ont leurs propres règles : par exemple, PokerStars restreint l'usage des solvers tant que son client est ouvert.
 
 **Q. Le comptage des cartes est-il efficace au Texas Hold'em ?**
 

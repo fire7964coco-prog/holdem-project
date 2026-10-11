@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pour calculer la cote du pot, divise le montant que tu dois payer par le pot total une fois ton call ajouté. Payer $50 dans un pot de $150, c'est 50 ÷ 200 = 25 % : il te faut donc au moins 25 % d'équité pour que le call soit rentable.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -30,7 +30,7 @@ Les chiffres derrière tes tirages viennent du [tableau des probabilités au pok
 :::stripe
 25 % | Équité nécessaire face à une mise de la moitié du pot
 33 % | Équité nécessaire face à une mise de la taille du pot
-call ÷ (pot + call) | Toute la formule
+call ÷ pot final | Toute la formule (pot final = le pot en comptant la mise que tu affrontes + ton call)
 :::
 
 ---
@@ -163,7 +163,7 @@ Le revers de la médaille, ce sont les **cotes implicites inversées** — les j
 
 Un tirage couleur, c'est 9 outs. Au flop : 9 × 4 = **36 %** (valeur exacte 35,0 % — pile dans le mille). À la turn : 9 × 2 = **18 %** (valeur exacte 19,6 % — assez proche pour décider).
 
-:::tip[La version ×4 suppose discrètement que tu verras les *deux* cartes restantes sans plus aucune mise — ce qui n'est garanti que lorsqu'aucune mise ne peut plus avoir lieu (tu es à tapis, ou tu as payé un tapis). S'il reste des mises à venir, appuie-toi sur le chiffre ×2 (une carte) pour la street qui est devant toi, et laisse les cotes implicites justifier le reste.]:::
+:::tip[La version ×4 suppose discrètement que tu verras les *deux* cartes restantes sans plus aucune mise — ce qui n'est garanti que lorsqu'aucune mise ne peut plus avoir lieu (tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser). S'il reste des mises à venir, appuie-toi sur le chiffre ×2 (une carte) pour la street qui est devant toi, et laisse les cotes implicites justifier le reste.]:::
 
 Le détail des calculs pour chaque tirage et chaque main faite se trouve dans le [tableau des probabilités](/fr/blog/holdem-probability). Ici, le raccourci suffit.
 
@@ -189,7 +189,7 @@ Je les ai toutes faites avant qu'elles ne me mettent à sec. Surveille-les :
 
 J'ai ==b:A♥ K♥== sur un flop ==Q♥ 7♥ 2♣== — le tirage couleur max, 9 outs. Le pot fait $100, l'adversaire mise $50. Ma cote du pot : 3 contre 1, donc il me faut **25 %**. Si je voyais les deux cartes, je serais à ~35 % — mais ce call n'achète que la turn, et la turn seule, c'est 19,1 %, en dessous du prix. Ce qui comble l'écart, ce sont les cotes implicites : si un cœur tombe, je prends tout le stack d'une top paire. ==g:Call facile.==
 
-La turn est le 3♠ — une carte neutre (brick). Le pot fait $200 et l'adversaire fait tapis pour $200 — une mise de la taille du pot, donc je n'ai plus que 2 contre 1 et il me faut **33 %**. Or **avec une seule carte à venir, ma couleur ne vaut que 19,6 %** (je ne compte que les 9 cœurs — face à un tapis de la taille du pot, toucher une paire d'as ou de rois perd souvent encore, donc les overcards ne sont pas des outs propres). Le prix direct dit fold ; mes cotes implicites sont maintenant nulles, puisque l'adversaire est à tapis et ne peut plus rien me payer. Contre les brelans servis (sets) et les doubles paires qui font tapis sur une turn neutre comme celle-ci, 19,6 % est le meilleur cas — contre un brelan servi, le 2♥ et le 3♥ pairent le board et lui donnent un full, ce qui laisse 7 outs propres (7 sur 46 cartes non vues, environ 15,2 %) — et même si quelques top paires se glissent dans sa range, les overcards ne remontent le call qu'à peu près à l'équilibre. ==r:Fold== — exactement le spot où l'« espoir » me coûtait un stack.
+La turn est le 3♠ — une carte neutre (brick). Le pot fait $200 et l'adversaire fait tapis pour $200 — une mise de la taille du pot, donc je n'ai plus que 2 contre 1 et il me faut **33 %**. Or **avec une seule carte à venir, ma couleur ne vaut que 19,6 %** (je ne compte que les 9 cœurs — face à un tapis de la taille du pot, toucher une paire d'as ou de rois perd souvent encore, donc les overcards ne sont pas des outs propres). Le prix direct dit fold ; mes cotes implicites sont maintenant nulles, puisque l'adversaire est à tapis et ne peut plus rien me payer. Contre les brelans servis (sets) et les doubles paires qui font tapis sur une turn neutre comme celle-ci, 19,6 % est le meilleur cas — contre un brelan servi, le 2♥ et le 3♥ pairent le board et lui donnent un full, ce qui laisse 7 outs propres (7 sur les 46 cartes que je ne vois pas, environ 15,2 % — ou 7 ÷ 44, environ 15,9 %, si je retire aussi ses deux cartes) — et même si quelques top paires se glissent dans sa range, les overcards ne remontent le call qu'à peu près à l'équilibre. ==r:Fold== — exactement le spot où l'« espoir » me coûtait un stack.
 
 ---
 

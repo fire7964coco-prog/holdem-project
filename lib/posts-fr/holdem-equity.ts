@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "L'équité (equity), c'est ta part du pot : la fraction que ta main est censée gagner en moyenne une fois toutes les cartes distribuées, pots partagés comptés au prorata. Tu suis quand ton équité dépasse la cote du pot, mais la position et les mises font que tu gardes rarement toute ton équité, et la fold equity te fait gagner des pots même avec la moins bonne main.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -82,7 +82,7 @@ Deux choses piègent les joueurs ici. Une paire contre deux overcards (deux cart
 
 ## Équité contre cote du pot : quelle règle décide chaque call ?
 
-**Suis quand ton équité est plus grande que ta cote du pot — cette seule comparaison décide presque tous les calls au poker.** La [cote du pot](/fr/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dit l'équité dont tu as *besoin* pour être à l'équilibre ; l'équité te dit ce que tu *as*. Si tu as plus que ce qu'il te faut, suivre rapporte de l'argent.
+**Suis quand ton équité est plus grande que ta cote du pot — cette comparaison est exacte quand aucune mise ne suit.** La [cote du pot](/fr/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dit l'équité dont tu as *besoin* pour être à l'équilibre ; l'équité te dit ce que tu *as*. Si tu as plus que ce qu'il te faut, suivre rapporte de l'argent.
 
 Face à une mise de la moitié du pot, ta cote du pot exige ==25 %== pour suivre. Si ce call te met à tapis au flop ou te laisse voir les deux cartes restantes sans autre paiement, les ~35 % d'un tirage couleur propre dépassent ce prix. Si une autre mise peut arriver sur la turn, le call n'achète qu'une carte : 9 ÷ 47 = 19,1 %, sous les 25 % avec le seul tirage.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pot odds, yani pot oranı, call edeceğin miktarın call'undan sonraki toplam pota bölünmesiyle bulunur. $150'lık bir pota $50 call edersen 50 ÷ 200 = %25 eder; yani call'un kârlı olması için en az %25 equity'ye ihtiyacın var.",
   category: "odds",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -186,7 +186,7 @@ Masada bu hesabı her seferinde yapmana gerek yok — gereken equity'yi bulman a
 
 Floş draw'ı 9 out'tur. Flop'ta: 9 × 4 = **%36** (gerçek değer %35,0 — tam isabet). Turn'de: 9 × 2 = **%18** (gerçek değer %19,6 — karar vermeye yetecek kadar yakın).
 
-:::tip[×4 versiyonu, kalan iki kartı da başka bahis olmadan göreceğini sessizce varsayar — bu da ancak artık hiç bahis yapılamadığında garantidir (all-in olduysan ya da bir all-in'i call ettiysen). Önünde daha bahis varsa, önündeki sokak için ×2 (tek kart) sayısına yaslan; gerisini implied odds haklı çıkarsın.]:::
+:::tip[×4 versiyonu, kalan iki kartı da başka bahis olmadan göreceğini sessizce varsayar — bu da ancak artık hiç bahis yapılamadığında garantidir (all-in olduysan ya da bir all-in'i call ettiysen ve elde kalan kimse artık bahis yapamıyorsa). Önünde daha bahis varsa, önündeki sokak için ×2 (tek kart) sayısına yaslan; gerisini implied odds haklı çıkarsın.]:::
 
 Her draw ve tamamlanmış el için tam türetmeler [olasılık tablosunda](/tr/blog/holdem-probability) duruyor. Burada ihtiyacın olan tek şey bu kısayol.
 

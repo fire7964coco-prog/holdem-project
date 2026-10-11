@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -82,7 +82,7 @@ Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) =
 
 ## Equity vs pot odds: a única regra que decide todo call
 
-**Pague quando sua equity for maior que suas pot odds — essa única comparação decide quase todo call no poker.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
+**Pague quando sua equity for maior que suas pot odds — essa comparação é exata quando não vem mais aposta.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
 
 Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush limpo com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta, do flop para o turn (9 ÷ 47 = 19,1%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
 

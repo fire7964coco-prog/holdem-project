@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "holdem-drawing-odds",
   title: "Xác suất ra thùng, ra sảnh và ra set ở flop: drawing odds trong poker",
   seoTitle: "Flop chiều bạn mấy lần? — Xác suất ra set, ra thùng ở flop",
-  desc: "Flop ra set 11,8%, ra thùng chỉ 0,84%. Xác suất thật của set, thùng, sảnh, tứ quý và mọi draw ở flop, kèm bài toán mua set các trang khác bỏ qua.",
+  desc: "Flop ra set 11,8%, hai lá cùng chất ra thùng chỉ 0,84%. Xác suất thật của set, thùng, sảnh, tứ quý và mọi draw, kèm bài toán mua set các trang khác bỏ qua.",
   tldr: "Cầm một đôi, bạn ra set ở flop 11,8% số ván (tỷ lệ 7,5:1 bất lợi). Hai lá cùng chất ra thùng ngay flop chỉ 0,84%, còn flush draw ở flop hoàn thành đến river 35% số ván. Mọi con số bên dưới đều suy ra từ bộ bài, không phải đoán.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -113,7 +113,7 @@ Vậy câu nói trung thực là: hai lá cùng chất ra **draw** nhiều hơn 
 
 Con số hoàn thành tách theo vòng cược, điều quan trọng ngay khi còn vòng cược phía trước:
 
-- **Flop → river (cả hai lá):** 35,0% — chỉ dùng khi bạn sẽ thấy cả hai lá mà không có thêm vòng cược (bạn đã all-in, hoặc đã call một cú all-in).
+- **Flop → river (cả hai lá):** 35,0% — chỉ dùng khi bạn sẽ thấy cả hai lá mà không có thêm vòng cược (bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp).
 - **Flop → turn (một lá):** 9 ÷ 47 = 19,1%.
 - **Turn → river (một lá):** 9 ÷ 46 = 19,6%.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 In meinem ersten Jahr am Tisch habe ich „meine Draws gespielt“, ohne sie je zu zählen. Ein Flushdraw und ein Gutshot fühlten sich ungefähr gleich an – beides waren „Karten, die kommen könnten“ – also callte ich bei beiden gleich und wunderte mich, warum ich ständig verlor. Die Lösung war kein Strategie-Kurs. Es war eine Fünf-Minuten-Gewohnheit: ==stoppen und tatsächlich die Karten zählen, die mich retten.==
 
-Diese Gewohnheit heißt **Outs** zählen – [die echte Antwort des Pokers auf „Kartenzählen“](/de/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") – und es ist die eine Fähigkeit, die jeder Odds-Entscheidung im Poker zugrunde liegt. Bevor du fragen kannst „ist dieser Call profitabel?“, musst du beantworten „wie viele Karten machen mir die beste Hand?“ Dieser Guide ist die Zähl-Hälfte – die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
+Diese Gewohnheit heißt **Outs** zählen – [die echte Antwort des Pokers auf „Kartenzählen“](/de/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") – und es ist die Fähigkeit, die jeder Draw-Entscheidung im Poker zugrunde liegt. Bevor du fragen kannst „ist dieser Call profitabel?“, musst du beantworten „wie viele Karten machen mir die beste Hand?“ Dieser Guide ist die Zähl-Hälfte – die [Poker-Odds-und-Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ist die Referenz dahinter, und [Pot Odds](/de/blog/holdem-pot-odds) ist das, was du mit der Zahl machst, sobald du sie hast.
 
 ---
 
@@ -112,7 +112,7 @@ Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein
 
 </div>
 
-Zwei Zahlen zählen für jeden Draw. **„Bis zum River“** rechnet beide verbleibenden Karten und gilt, wenn kein Setzen mehr möglich ist – du bist all-in oder hast ein All-in gecallt. **„Nur Turn“** rechnet nur die nächste Karte (9 ÷ 47 = 19,1%; vom Turn zum River werden daraus 9 ÷ 46 = 19,6%) – nutze das, sobald noch weitere Setzrunden kommen, denn dir ist nur garantiert, jeweils eine Karte zu sehen. Anfänger zitieren die fette „bis zum River“-Zahl, während sie eine Turn-Bet vor sich haben, reden sich in einen Call hinein und zahlen dafür.
+Zwei Zahlen zählen für jeden Draw. **„Bis zum River“** rechnet beide verbleibenden Karten und gilt, wenn kein Setzen mehr möglich ist – du bist all-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen. **„Nur Turn“** rechnet nur die nächste Karte (9 ÷ 47 = 19,1%; vom Turn zum River werden daraus 9 ÷ 46 = 19,6%) – nutze das, sobald noch weitere Setzrunden kommen, denn dir ist nur garantiert, jeweils eine Karte zu sehen. Anfänger zitieren die fette „bis zum River“-Zahl, während sie eine Turn-Bet vor sich haben, reden sich in einen Call hinein und zahlen dafür.
 
 Beachte das 15-Outs-Monster: mit zwei kommenden Karten kommt es in 54,1% der Fälle an – gegen ein einzelnes Paar macht es das meist zum **Favoriten**, dem seltenen Draw, mit dem du am Flop happy all-in gehen kannst. Gegen ein Set nicht: Das Board kann paaren und das Set zum Full House auffüllen – das Beispiel J♠ 10♠ auf 9♠ 8♣ 2♠ weiter unten hat gegen Pocket-Neunen nur etwa 40%. Wenn du einen Spot gegenrechnen willst, statt ihn zu schätzen: unser [Poker-Rechner](/de/calculator) macht Outs, Pot Odds und Equity in einem Schritt.
 
@@ -129,7 +129,7 @@ Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung
 
 Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – einen Punkt daneben, also brauchbar). Am Turn: 9 × 2 = **18%** (wahr 19,6% – nah genug, um zu handeln).
 
-:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur garantiert, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt). Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
+:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur garantiert, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen). Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
 
 Die größte Schwäche der Regel: **hohe Out-Zahlen am Flop.** Die exakte Zwei-Karten-Rechnung erfasst einen Treffer auf Turn *oder* River, ohne einen doppelten Treffer zweimal zu zählen. Die ×4-Schätzung liegt schon ab 7 Outs leicht zu hoch, die Lücke wächst aber mit größeren Draws; die übliche Korrektur unten gilt für mehr als 8 Outs.
 

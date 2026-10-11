@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Untuk kira pot odds, bahagikan jumlah yang anda perlu call dengan jumlah pot selepas call anda. Call $50 ke dalam pot $150 = 50 ÷ 200 = 25% — jadi anda perlu sekurang-kurangnya 25% equity supaya call itu menguntungkan.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -30,7 +30,7 @@ Nombor di sebalik draw anda datang daripada [carta odds dan kebarangkalian poker
 :::stripe
 25% | Equity diperlukan menentang bet separuh pot
 33% | Equity diperlukan menentang bet saiz pot
-call ÷ (pot + call) | Seluruh formula
+call ÷ pot akhir | Seluruh formula (pot akhir = pot termasuk bet yang anda hadapi + call anda)
 :::
 
 ---
@@ -163,7 +163,7 @@ Cermin gelapnya ialah **reverse implied odds** — cip yang anda akan *hilang* a
 
 Flush draw ialah 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenar 35.0% — tepat). Di turn: 9 × 2 = **18%** (nilai sebenar 19.6% — cukup dekat untuk membuat keputusan).
 
-:::tip[Versi ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad yang tinggal tanpa bet lagi — dan itu hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in). Jika masih ada pertaruhan yang akan datang, bersandarlah pada nombor ×2 (satu kad) untuk street di depan anda, dan biarkan implied odds mewajarkan selebihnya.]:::
+:::tip[Versi ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad yang tinggal tanpa bet lagi — dan itu hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet). Jika masih ada pertaruhan yang akan datang, bersandarlah pada nombor ×2 (satu kad) untuk street di depan anda, dan biarkan implied odds mewajarkan selebihnya.]:::
 
 Terbitan penuh untuk setiap draw dan made hand ada dalam [carta kebarangkalian](/ms/blog/holdem-probability). Di sini, jalan pintas itu sudah memadai.
 
@@ -189,7 +189,7 @@ Saya pernah buat setiap satu kesilapan ini sebelum semuanya membuat saya muflis.
 
 Saya memegang ==b:A♥ K♥== pada flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot $100, lawan bet $50. Pot odds saya: saya mendapat 3:1, jadi saya perlu **25%**. Jika saya dapat melihat kedua-dua kad, saya pada ~35% — tetapi call ini hanya membeli turn, dan turn sahaja cuma 19.1%, di bawah harga. Yang menutup jurang itu ialah implied odds: jika heart jatuh, saya ambil seluruh stack tangan top pair. ==g:Call yang mudah.==
 
-Turn ialah 3♠ — kad kosong. Pot kini $200 dan lawan jam $200 — bet saiz pot, jadi sekarang saya hanya mendapat 2:1 dan perlu **33%**. Tetapi dengan **satu kad lagi, flush saya hanya 19.6%** (saya kira 9 kad heart sahaja — menentang jam saiz pot, berpasangan dengan as atau king saya selalunya masih kalah, jadi overcard itu bukan outs bersih). Harga langsung kata fold; implied odds saya kini sifar kerana lawan sudah all-in dan tidak boleh bayar saya lagi. Menentang set dan two pair yang jam pada turn kosong seperti ini, 19.6% itu pun keadaan terbaik — menentang set, 2♥ dan 3♥ memasangkan board dan melengkapkan full house-nya, jadi tinggal 7 outs bersih (lebih kurang 15.2%) — dan walaupun beberapa tangan top pair terselit dalam range-nya, overcard hanya menarik call ini ke lebih kurang pulang modal. ==r:Fold== — dan tepat situasi di mana "harapan" dahulunya menghabiskan satu stack saya.
+Turn ialah 3♠ — kad kosong. Pot kini $200 dan lawan jam $200 — bet saiz pot, jadi sekarang saya hanya mendapat 2:1 dan perlu **33%**. Tetapi dengan **satu kad lagi, flush saya hanya 19.6%** (saya kira 9 kad heart sahaja — menentang jam saiz pot, berpasangan dengan as atau king saya selalunya masih kalah, jadi overcard itu bukan outs bersih). Harga langsung kata fold; implied odds saya kini sifar kerana lawan sudah all-in dan tidak boleh bayar saya lagi. Menentang set dan two pair yang jam pada turn kosong seperti ini, 19.6% itu pun keadaan terbaik — menentang set, 2♥ dan 3♥ memasangkan board dan melengkapkan full house-nya, jadi tinggal 7 outs bersih (7 daripada 46 kad yang saya tidak nampak, lebih kurang 15.2% — atau 7 ÷ 44, lebih kurang 15.9%, apabila dua kadnya juga dikeluarkan daripada kiraan) — dan walaupun beberapa tangan top pair terselit dalam range-nya, overcard hanya menarik call ini ke lebih kurang pulang modal. ==r:Fold== — dan tepat situasi di mana "harapan" dahulunya menghabiskan satu stack saya.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Di tahun pertama saya di meja, saya "memainkan draw" tanpa pernah benar-benar menghitungnya. Flush draw dan gutshot terasa mirip saja — keduanya "kartu yang mungkin datang" — jadi saya call sama saja pada keduanya dan bingung kenapa terus kalah. Solusinya bukan kursus strategi. Solusinya adalah kebiasaan lima menit: ==berhenti, dan benar-benar hitung kartu yang menyelamatkan saya.==
 
-Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghitung kartu"](/id/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — dan itulah satu-satunya keterampilan yang mendasari setiap keputusan odds di poker. Sebelum Anda bisa bertanya "apakah call ini menguntungkan?", Anda harus menjawab "berapa kartu yang memenangkan tangan untuk saya?" Panduan ini adalah bagian menghitungnya — [bagan odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") adalah referensi di baliknya, dan [pot odds](/id/blog/holdem-pot-odds) adalah apa yang Anda lakukan dengan angka itu setelah Anda memilikinya.
+Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghitung kartu"](/id/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — dan itulah keterampilan yang mendasari setiap keputusan draw di poker. Sebelum Anda bisa bertanya "apakah call ini menguntungkan?", Anda harus menjawab "berapa kartu yang memenangkan tangan untuk saya?" Panduan ini adalah bagian menghitungnya — [bagan odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") adalah referensi di baliknya, dan [pot odds](/id/blog/holdem-pot-odds) adalah apa yang Anda lakukan dengan angka itu setelah Anda memilikinya.
 
 ---
 
@@ -112,7 +112,7 @@ Dua combo draw di atas adalah tempat pemain gagal berhitung, jadi keduanya menda
 
 </div>
 
-Dua angka penting untuk setiap draw. **"Hingga river"** menghitung kedua kartu tersisa dan berlaku saat tak ada taruhan lagi yang bisa terjadi — Anda all-in, atau Anda sudah call sebuah all-in. **"Flop → turn"** menghitung hanya kartu berikutnya (9 ÷ 47 = 19,1%; dari turn ke river menjadi 9 ÷ 46 = 19,6%) — pakai angka satu-kartu begitu masih ada taruhan yang akan datang, karena Anda hanya dijamin melihat satu kartu setiap kali. Pemula mengutip angka "hingga river" yang menggiurkan sambil menghadapi taruhan turn, membujuk diri untuk call, dan membayarnya.
+Dua angka penting untuk setiap draw. **"Hingga river"** menghitung kedua kartu tersisa dan berlaku saat tak ada taruhan lagi yang bisa terjadi — Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh. **"Flop → turn"** menghitung hanya kartu berikutnya (9 ÷ 47 = 19,1%; dari turn ke river menjadi 9 ÷ 46 = 19,6%) — pakai angka satu-kartu begitu masih ada taruhan yang akan datang, karena Anda hanya dijamin melihat satu kartu setiap kali. Pemula mengutip angka "hingga river" yang menggiurkan sambil menghadapi taruhan turn, membujuk diri untuk call, dan membayarnya.
 
 Perhatikan monster 15-out: dengan dua kartu yang akan datang ia jadi 54,1% dari waktu — melawan satu pair itu biasanya menjadikannya **favorit**, draw langka yang bisa Anda all-in-kan dengan senang hati di flop. Melawan set tidak: board bisa berpasangan dan membuat set itu jadi full house — contoh J♠ 10♠ di 9♠ 8♣ 2♠ di bawah hanya sekitar 40% melawan pocket nines.
 
@@ -128,7 +128,7 @@ Perhatikan monster 15-out: dengan dua kartu yang akan datang ia jadi 54,1% dari 
 
 Flush draw punya 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — pas). Di turn: 9 × 2 = **18%** (sebenarnya 19,6% — cukup dekat untuk beraksi).
 
-:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat tak ada taruhan lagi yang bisa terjadi (Anda all-in, atau Anda sudah call sebuah all-in). Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
+:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat tak ada taruhan lagi yang bisa terjadi (Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh). Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
 
 Kelemahan utamanya ada di **jumlah out tinggi di flop.** Hitungan dua kartu yang persis memperhitungkan kena di street mana pun tanpa menghitung dua kali saat kedua kartu sama-sama kena. Perkiraan ×4 mulai sedikit terlalu tinggi sejak 7 outs, tapi selisihnya membesar pada draw yang lebih besar; koreksi umum di bawah dipakai untuk lebih dari 8 outs.
 

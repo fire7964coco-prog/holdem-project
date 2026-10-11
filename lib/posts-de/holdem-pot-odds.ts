@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -30,7 +30,7 @@ Die Zahlen hinter deinen Draws kommen aus der [Tabelle für Poker-Odds und Wahrs
 :::stripe
 25% | Benötigte Equity gegen eine Half-Pot-Bet
 33% | Benötigte Equity gegen eine Pot-Size-Bet
-Call ÷ (Pot + Call) | Die gesamte Formel
+Call ÷ finaler Pot | Die gesamte Formel (finaler Pot = der Pot inklusive der Bet, der du gegenüberstehst, + dein Call)
 :::
 
 ---
@@ -160,7 +160,7 @@ Du kannst mitten in der Hand nicht die exakte Equity ausrechnen, also rechne so:
 
 Ein Flushdraw hat 9 Outs. Auf dem Flop: 9 × 4 = **36%** (echter Wert 35,0% – einen Punkt daneben, also brauchbar). Auf dem Turn: 9 × 2 = **18%** (echter Wert 19,6% – nah genug zum Entscheiden).
 
-:::tip[Die ×4-Version nimmt stillschweigend an, dass du *beide* verbleibenden Karten ohne weitere Bets siehst – was nur garantiert ist, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt). Wenn noch Bets kommen, verlass dich auf die ×2-Zahl (eine Karte) für die Street vor dir und lass Implied Odds den Rest rechtfertigen.]:::
+:::tip[Die ×4-Version nimmt stillschweigend an, dass du *beide* verbleibenden Karten ohne weitere Bets siehst – was nur garantiert ist, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen). Wenn noch Bets kommen, verlass dich auf die ×2-Zahl (eine Karte) für die Street vor dir und lass Implied Odds den Rest rechtfertigen.]:::
 
 Vollständige Herleitungen für jeden Draw und jede fertige Hand findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability). Hier ist die Abkürzung alles, was du brauchst.
 
@@ -183,7 +183,7 @@ Fast alle teuren Fehler sind Varianten desselben Musters: **die Rechnung kippt i
 
 Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop – der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Sähe ich beide Karten, läge ich bei ~35% – aber dieser Call kauft nur den Turn, und der Turn allein bringt 19,1%, also weniger als der Preis. Die Lücke schließen die Implied Odds: kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
 
-Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%** (ich zähle allein die 9 Herzen – gegen ein Pot-Size-Jam verliert ein gepaartes Ass oder König meist trotzdem, die Overcards sind also keine sauberen Outs). Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. Gegen die Sets und Two Pairs, die einen Brick-Turn wie diesen jammen, sind diese 19,6% schon der beste Fall – gegen ein Set paaren die 2♥ und die 3♥ das Board und geben ihm ein Full House, es bleiben 7 saubere Outs (etwa 15,2%) – und selbst wenn sich ein paar Top-Pair-Hände in seine Range mischen, ziehen die Overcards den Call höchstens auf etwa Break-even. ==r:Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
+Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%** (ich zähle allein die 9 Herzen – gegen ein Pot-Size-Jam verliert ein gepaartes Ass oder König meist trotzdem, die Overcards sind also keine sauberen Outs). Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. Gegen die Sets und Two Pairs, die einen Brick-Turn wie diesen jammen, sind diese 19,6% schon der beste Fall – gegen ein Set paaren die 2♥ und die 3♥ das Board und geben ihm ein Full House, es bleiben 7 saubere Outs (7 der 46 Karten, die ich nicht sehe, etwa 15,2% – oder 7 ÷ 44, etwa 15,9%, wenn ich auch seine beiden Karten abziehe) – und selbst wenn sich ein paar Top-Pair-Hände in seine Range mischen, ziehen die Overcards den Call höchstens auf etwa Break-even. ==r:Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
 
 ---
 

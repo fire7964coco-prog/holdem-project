@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity là phần pot kỳ vọng của bạn, tức phần tay bài của bạn xứng đáng nhận trung bình khi mọi lá đã được chia, tính cả khi chia pot. Bạn call khi equity vượt pot odds, nhưng vị trí và các lượt bet khiến bạn hiếm khi giữ trọn equity. Fold equity còn giúp bạn thắng pot ngay cả khi tay bài đang bị dẫn.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -82,7 +82,7 @@ Hai điều làm người ta vấp ở đây. Một đôi trước hai overcard 
 
 ## Equity và pot odds: quy tắc nào quyết định mọi lần call?
 
-**Call khi equity của bạn lớn hơn pot odds — phép so duy nhất đó quyết định gần như mọi lần call trong poker.** [Pot odds](/vi/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") (tỷ lệ pot — pot so với số tiền phải call) cho biết equity bạn *cần* để hòa vốn; equity cho biết thứ bạn *có*. Nếu bạn có nhiều hơn mức cần, call kiếm tiền.
+**Call khi equity của bạn lớn hơn pot odds — phép so đó chính xác khi không còn vòng cược nào theo sau.** [Pot odds](/vi/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") (tỷ lệ pot — pot so với số tiền phải call) cho biết equity bạn *cần* để hòa vốn; equity cho biết thứ bạn *có*. Nếu bạn có nhiều hơn mức cần, call kiếm tiền.
 
 Đối mặt bet nửa pot, pot odds đòi ==25%== để call. Nếu lần call này đẩy bạn all-in ở flop hoặc cho bạn thấy cả hai lá còn lại mà không phải trả thêm, ~35% của một flush draw sạch vượt mức giá đó. Nếu còn một cú bet nữa có thể theo sau ở turn, lần call chỉ mua một lá: 9 ÷ 47 = 19,1%, dưới 25% nếu chỉ dựa vào draw.
 

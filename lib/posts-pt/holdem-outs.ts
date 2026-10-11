@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 No meu primeiro ano na mesa eu "jogava meus projetos" sem nunca contá-los. Um projeto de flush e um gutshot pareciam a mesma coisa — ambos eram "cartas que podiam vir" — então eu pagava igual nos dois e me perguntava por que continuava perdendo. O conserto não foi um curso de estratégia. Foi um hábito de cinco minutos: ==parar e de fato contar as cartas que me salvam.==
 
-Esse hábito se chama contar **outs** — [a verdadeira resposta do poker para "contar cartas"](/pt/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — e é a única habilidade que está na base de toda decisão de odds no poker. Antes de perguntar "esse call é lucrativo?" você tem que responder "quantas cartas ganham a mão para mim?" Este guia é a metade da contagem — a [tabela de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") é a referência por trás dela, e [pot odds](/pt/blog/holdem-pot-odds) é o que você faz com o número depois de tê-lo.
+Esse hábito se chama contar **outs** — [a verdadeira resposta do poker para "contar cartas"](/pt/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — e é a habilidade que está na base de toda decisão com projeto no poker. Antes de perguntar "esse call é lucrativo?" você tem que responder "quantas cartas ganham a mão para mim?" Este guia é a metade da contagem — a [tabela de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") é a referência por trás dela, e [pot odds](/pt/blog/holdem-pot-odds) é o que você faz com o número depois de tê-lo.
 
 ---
 
@@ -112,7 +112,7 @@ Os dois projetos combinados no topo são onde os jogadores erram a conta, então
 
 </div>
 
-Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando não pode haver mais apostas — você está all-in, ou pagou um all-in. **"Flop → turn"** conta só a próxima carta (9 ÷ 47 = 19,1%; do turn para o river vira 9 ÷ 46 = 19,6%) — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
+Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando não pode haver mais apostas — você está all-in, ou pagou um all-in e ninguém que segue na mão ainda pode apostar. **"Flop → turn"** conta só a próxima carta (9 ÷ 47 = 19,1%; do turn para o river vira 9 ÷ 46 = 19,6%) — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
 
 Repare no monstro de 15 outs: com duas cartas por vir ele completa 54,1% das vezes — contra um único par, isso normalmente o torna **favorito**, o raro projeto com o qual você pode alegremente ir de all-in no flop. Contra um set, não: a mesa pode parear e completar o full house do set — o exemplo de J♠ 10♠ em 9♠ 8♣ 2♠ mais abaixo tem só cerca de 40% contra um par de noves.
 
@@ -128,7 +128,7 @@ Repare no monstro de 15 outs: com duas cartas por vir ele completa 54,1% das vez
 
 Um projeto de flush são 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% — na mosca). No turn: 9 × 2 = **18%** (real 19,6% — perto o suficiente para agir).
 
-:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in). Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
+:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in e ninguém que segue na mão ainda pode apostar). Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
 
 O ponto fraco principal são as **contagens altas de outs no flop**. O cálculo exato de duas cartas considera acertar em qualquer uma das streets sem contar duas vezes o acerto duplo. A estimativa do ×4 começa a ficar um pouco alta já com 7 outs, mas a diferença cresce com projetos maiores; a correção usual abaixo é usada para mais de 8 outs.
 

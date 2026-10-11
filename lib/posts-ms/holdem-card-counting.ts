@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bukan seperti dalam blackjack — dek dikocok semula setiap tangan dan terlalu sedikit kad yang terdedah, jadi menjejak kad tinggi dan rendah tidak memberi anda apa-apa kelebihan. Tetapi poker ada kiraan sah tersendiri: kira outs, guna blocker dan jejak kad mati untuk membaca apa yang lawan anda tidak mungkin pegang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -82,7 +82,7 @@ Blackjack memberi ganjaran kepada ingatan tentang apa yang sudah keluar; poker m
 
 ==Out== ialah mana-mana kad yang belum kelihatan yang memperbaiki tangan anda menjadi tangan yang berkemungkinan menang. Flush draw ada ==9 outs== (13 satu jenis tolak 4 yang anda nampak) — kad board yang sama jenis sudah ditolak dalam 9 itu, jadi jangan potongnya kali kedua sebagai "kad mati". Tukar outs kepada anggaran peluang menang dengan ==Rule of 4 and 2==: darab dengan 4 apabila dua kad lagi, dengan 2 apabila satu.
 
-Flush draw 9 outs kena menjelang river lebih kurang ==g:35%== daripada masa (9 × 4 = 36% sebagai anggaran pantas — angka sebenar 35.0%). Angka itu mengira kedua-dua kad yang tinggal, jadi ia menentukan call hanya apabila anda benar-benar akan melihat kedua-duanya — tiada lagi bet akan datang, seperti apabila anda all-in atau sudah call all-in. Menghadapi bet di flop yang anda perlu bayar lagi di turn, kira kad seterusnya sahaja: ==9 ÷ 47 = 19.1%==. Kaedah penuhnya — outs kotor, combo draw, peratus tepat — ada dalam [panduan kira outs](/ms/blog/holdem-outs), dan odds di sebalik setiap draw ada dalam [carta kebarangkalian](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Flush draw 9 outs kena menjelang river lebih kurang ==g:35%== daripada masa (9 × 4 = 36% sebagai anggaran pantas — angka sebenar 35.0%). Angka itu mengira kedua-dua kad yang tinggal, jadi ia menentukan call hanya apabila anda benar-benar akan melihat kedua-duanya — tiada lagi bet akan datang, seperti apabila anda all-in atau sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet. Menghadapi bet di flop yang anda perlu bayar lagi di turn, kira kad seterusnya sahaja: ==9 ÷ 47 = 19.1%==. Kaedah penuhnya — outs kotor, combo draw, peratus tepat — ada dalam [panduan kira outs](/ms/blog/holdem-outs), dan odds di sebalik setiap draw ada dalam [carta kebarangkalian](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (card removal)
 
@@ -147,7 +147,7 @@ A. Tidak. Kira kad blackjack menjejak imbangan tinggi-rendah satu shoe yang dima
 
 **Q. Adakah kira kad dalam poker menyalahi peraturan?**
 
-A. Tidak. Mengira outs dan blocker anda sendiri dalam kepala itu sah dan merupakan sebahagian biasa daripada poker. Apa yang disekat oleh room dan platform ialah bantuan luar semasa bermain: peranti, carta dan nasihat daripada orang lain.
+A. Tidak. Mengira outs dan blocker anda sendiri dalam kepala itu sah dan merupakan sebahagian biasa daripada poker. Apa yang disekat oleh room dan platform ialah bantuan luar: peranti, carta dan nasihat daripada orang lain. Perisian dalam talian ada peraturan sendiri — contohnya, PokerStars menyekat penggunaan solver ketika klien mereka dibuka.
 
 **Q. Adakah kira kad berkesan dalam Texas Hold'em?**
 

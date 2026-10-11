@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -173,7 +173,7 @@ Ese es el atajo: outs limpias → el multiplicador de las cartas que vas a ver �
 Bote tras la apuesta | $100 + $50 = $150
 Tu call | $50 para ganar $150 (bote final $200)
 Pot odds | 50 ÷ 200 = 25% — necesitas al menos 25% de equity
-Tu equity | Proyecto de color con 9 outs limpios ≈ 35% para el river (regla del 4) — el número asume que ves ==las dos== cartas
+Tu equity | Proyecto de color con 9 outs limpios ≈ 35% para el river (regla del 4: 9 × 4 = 36%) — el número asume que ves ==las dos== cartas
 Decisión | Con dos cartas por venir: 35% > 25% → un ==g:call== claramente rentable
 :::
 

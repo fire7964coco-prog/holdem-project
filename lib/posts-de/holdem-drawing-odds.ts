@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-10-05",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -114,7 +114,7 @@ Der ehrliche Satz lautet also: zwei suited Karten floppen weit häufiger einen *
 
 Die Komplettierungs-Zahl teilt sich nach Street auf, was in dem Moment zählt, in dem noch Setzrunden übrig sind:
 
-- **Flop → River (beide Karten):** 35,0% – nutze das nur, wenn du beide Karten ohne weiteres Setzen siehst (du bist All-in oder hast ein All-in gecallt).
+- **Flop → River (beide Karten):** 35,0% – nutze das nur, wenn du beide Karten ohne weiteres Setzen siehst (du bist All-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen).
 - **Flop → Turn (eine Karte):** 9 ÷ 47 = 19,1%.
 - **Turn → River (eine Karte):** 9 ÷ 46 = 19,6%.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -174,7 +174,7 @@ Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: C
 Pot nach der Bet | $100 + $50 = $150
 Dein Call | $50, um $150 zu gewinnen (finaler Pot $200)
 Pot Odds | 50 ÷ 200 = 25% – du brauchst mindestens 25% Equity
-Deine Equity | Flushdraw mit 9 sauberen Outs ≈ 35% bis zum River (Faustregel: 9 × 4) – die Zahl setzt voraus, dass du ==beide== Karten siehst
+Deine Equity | Flushdraw mit 9 sauberen Outs ≈ 35% bis zum River (Faustregel: 9 × 4 = 36%) – die Zahl setzt voraus, dass du ==beide== Karten siehst
 Entscheidung | Mit zwei kommenden Karten: 35% > 25% → ein klar profitabler ==g:Call==
 :::
 

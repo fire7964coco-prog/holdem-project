@@ -29,7 +29,7 @@ The numbers behind your draws come from the [poker odds and probability chart](/
 :::stripe
 25% | Equity needed vs a half-pot bet
 33% | Equity needed vs a pot-size bet
-call ÷ (pot + call) | The entire formula
+call ÷ final pot | The entire formula (final pot = the pot including the bet you face + your call)
 :::
 
 ---
@@ -162,7 +162,7 @@ The dark mirror is **reverse implied odds** — the chips you'll *lose* when you
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — spot on). On the turn: 9 × 2 = **18%** (true value 19.6% — close enough to decide).
 
-:::tip[The ×4 version quietly assumes you'll see *both* remaining cards with no more betting — which is only guaranteed when no more betting can happen (you're all-in, or you've called an all-in). If there's more betting to come, lean on the ×2 (one-card) number for the street in front of you, and let implied odds justify the rest.]:::
+:::tip[The ×4 version quietly assumes you'll see *both* remaining cards with no more betting — which is only guaranteed when no more betting can happen (you're all-in, or you've called an all-in and no one left in the hand can still bet). If there's more betting to come, lean on the ×2 (one-card) number for the street in front of you, and let implied odds justify the rest.]:::
 
 Full derivations for every draw and made hand live in the [probability chart](/en/blog/holdem-probability). Here, the shortcut is all you need.
 
@@ -188,7 +188,7 @@ I made every one of these before they made me broke. Watch for them:
 
 I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. If I got to see both cards I'd be at ~35% — but this call only buys the turn, and the turn alone is 19.1%, short of the price. What closes the gap is implied odds: if a heart lands I stack a top-pair hand. ==g:Easy call.==
 
-Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. Against the sets and two pair that jam a brick turn like this, 19.6% is the best case — against a set, the 2♥ and 3♥ pair the board and fill him up, leaving 7 clean outs (7 of 46 unseen cards, about 15.2%) — and even if a few top-pair hands sneak into his range, the overcards only drag the call up to about break-even. ==r:Fold== — and the exact spot where "hope" used to cost me a stack.
+Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. Against the sets and two pair that jam a brick turn like this, 19.6% is the best case — against a set, the 2♥ and 3♥ pair the board and fill him up, leaving 7 clean outs (7 of the 46 cards I can't see, about 15.2% — or 7 ÷ 44, about 15.9%, once his two cards are counted out too) — and even if a few top-pair hands sneak into his range, the overcards only drag the call up to about break-even. ==r:Fold== — and the exact spot where "hope" used to cost me a stack.
 
 ---
 

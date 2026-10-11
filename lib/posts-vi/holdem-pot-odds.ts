@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Để tính pot odds, bạn chia số tiền phải call cho tổng pot sau khi call. Call $50 vào pot $150 là 50 ÷ 200 = 25%, nên bạn cần ít nhất 25% equity thì lần call này mới có lời.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -30,7 +30,7 @@ Các con số đằng sau draw (bài chờ) của bạn đến từ [bảng xác
 :::stripe
 25% | Equity cần có trước bet nửa pot
 33% | Equity cần có trước bet bằng pot
-tiền call ÷ (pot + tiền call) | Toàn bộ công thức
+tiền call ÷ pot cuối cùng | Toàn bộ công thức (pot cuối cùng = pot gồm cả cú bet bạn đang đối mặt + tiền call của bạn)
 :::
 
 ---
@@ -163,7 +163,7 @@ Mặt trái là **reverse implied odds** — số chip bạn *mất* khi trúng 
 
 Flush draw là 9 outs. Ở flop: 9 × 4 = **36%** (giá trị thật 35,0% — trúng phóc). Ở turn: 9 × 2 = **18%** (giá trị thật 19,6% — đủ sát để quyết định).
 
-:::tip[Phiên bản ×4 ngầm giả định bạn sẽ thấy *cả hai* lá còn lại mà không có thêm vòng cược — điều chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in). Nếu còn vòng cược phía trước, hãy dựa vào con số ×2 (một lá) cho vòng bạn đang đứng, và để implied odds biện minh cho phần còn lại.]:::
+:::tip[Phiên bản ×4 ngầm giả định bạn sẽ thấy *cả hai* lá còn lại mà không có thêm vòng cược — điều chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp). Nếu còn vòng cược phía trước, hãy dựa vào con số ×2 (một lá) cho vòng bạn đang đứng, và để implied odds biện minh cho phần còn lại.]:::
 
 Cách suy ra từng draw và từng tay bài đã thành hình nằm trong [bảng xác suất](/vi/blog/holdem-probability). Ở đây, mẹo nhẩm là tất cả những gì bạn cần.
 
@@ -189,7 +189,7 @@ Tôi đã mắc từng lỗi này trước khi chúng làm tôi cháy túi. Hãy
 
 Tôi cầm ==b:A♥ K♥== trên flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot là $100, đối thủ bet $50. Pot odds của tôi: đang được 3:1, nên tôi cần **25%**. Nếu được xem cả hai lá tôi ở khoảng 35% — nhưng lần call này chỉ mua lá turn, và riêng turn là 19,1%, hụt giá. Thứ lấp khoảng trống là implied odds: nếu một lá cơ rơi xuống, tôi lấy trọn stack của một tay top pair. ==g:Call dễ.==
 
-Turn là lá 3♠ — một lá brick (lá trượt — không giúp draw của tôi). Pot là $200 và đối thủ shove $200 — bet bằng pot, nên giờ tôi chỉ được 2:1 và cần **33%**. Nhưng **còn một lá, thùng của tôi chỉ là 19,6%** (tôi chỉ đếm 9 lá cơ — trước một cú shove bằng pot, tạo đôi Át hay đôi K thường vẫn thua, nên các overcard không phải outs sạch). Giá trực tiếp bảo fold; implied odds của tôi giờ bằng không vì đối thủ đã all-in và không thể trả thêm. Trước những set (cầm đôi trên tay + 1 lá trên board) và hai đôi thường shove ở turn brick thế này, 19,6% là trường hợp tốt nhất — trước một set, lá 2♥ và 3♥ làm board có đôi và lấp đầy cù lũ cho họ, chỉ còn 7 outs sạch (7 trong 46 lá chưa thấy, khoảng 15,2%) — và ngay cả khi vài tay top pair lọt vào range của họ, các overcard chỉ kéo lần call lên khoảng hòa vốn. ==r:Fold== — và đúng cái chỗ "hy vọng" từng khiến tôi mất cả stack.
+Turn là lá 3♠ — một lá brick (lá trượt — không giúp draw của tôi). Pot là $200 và đối thủ shove $200 — bet bằng pot, nên giờ tôi chỉ được 2:1 và cần **33%**. Nhưng **còn một lá, thùng của tôi chỉ là 19,6%** (tôi chỉ đếm 9 lá cơ — trước một cú shove bằng pot, tạo đôi Át hay đôi K thường vẫn thua, nên các overcard không phải outs sạch). Giá trực tiếp bảo fold; implied odds của tôi giờ bằng không vì đối thủ đã all-in và không thể trả thêm. Trước những set (cầm đôi trên tay + 1 lá trên board) và hai đôi thường shove ở turn brick thế này, 19,6% là trường hợp tốt nhất — trước một set, lá 2♥ và 3♥ làm board có đôi và lấp đầy cù lũ cho họ, chỉ còn 7 outs sạch (7 trong 46 lá tôi không nhìn thấy, khoảng 15,2% — hoặc 7 ÷ 44, khoảng 15,9%, khi trừ luôn hai lá của họ) — và ngay cả khi vài tay top pair lọt vào range của họ, các overcard chỉ kéo lần call lên khoảng hòa vốn. ==r:Fold== — và đúng cái chỗ "hy vọng" từng khiến tôi mất cả stack.
 
 ---
 

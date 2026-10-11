@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -30,7 +30,7 @@ Angka di balik draw Anda berasal dari [bagan peluang dan probabilitas poker](/id
 :::stripe
 25% | Equity yang dibutuhkan vs taruhan setengah pot
 33% | Equity yang dibutuhkan vs taruhan sebesar pot
-call ÷ (pot + call) | Seluruh rumusnya
+call ÷ pot akhir | Seluruh rumusnya (pot akhir = pot termasuk taruhan yang Anda hadapi + call Anda)
 :::
 
 ---
@@ -163,7 +163,7 @@ Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilan
 
 Flush draw itu 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — tepat sasaran). Di turn: 9 × 2 = **18%** (nilai sebenarnya 19,6% — cukup dekat untuk memutuskan).
 
-:::tip[Versi ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tersisa tanpa taruhan lagi — yang hanya terjamin saat tak mungkin ada taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in). Jika masih ada taruhan, andalkan angka ×2 (satu kartu) untuk street di depan Anda, dan biarkan implied odds membenarkan sisanya.]:::
+:::tip[Versi ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tersisa tanpa taruhan lagi — yang hanya terjamin saat tak mungkin ada taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh). Jika masih ada taruhan, andalkan angka ×2 (satu kartu) untuk street di depan Anda, dan biarkan implied odds membenarkan sisanya.]:::
 
 Penurunan lengkap untuk setiap draw dan tangan jadi ada di [bagan probabilitas](/id/blog/holdem-probability). Di sini, jalan pintas ini sudah cukup.
 
@@ -189,7 +189,7 @@ Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya b
 
 Saya pegang ==b:A♥ K♥== di flop ==Q♥ 7♥ 2♣== — nut flush draw, 9 outs. Pot-nya $100, villain bertaruh $50. Pot odds saya: saya dapat 3:1, jadi saya butuh **25%**. Kalau saya bisa melihat kedua kartu, saya di ~35% — tapi call ini hanya membeli turn, dan turn saja cuma 19,1%, di bawah harganya. Yang menutup celah itu adalah implied odds: jika hati keluar, saya mengambil seluruh stack tangan top-pair. ==g:Call mudah.==
 
-Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. Melawan set dan two pair yang biasa jam di turn kosong seperti ini, 19,6% itu sudah skenario terbaik — melawan set, 2♥ dan 3♥ memasangkan board dan memberinya full house, jadi tersisa 7 outs bersih (sekitar 15,2%) — dan sekalipun beberapa tangan top-pair menyelinap ke range-nya, overcard hanya menyeret call ini ke sekitar titik impas. ==r:Fold== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
+Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan sebesar pot, jadi sekarang saya hanya dapat 2:1 dan butuh **33%**. Tapi dengan **satu kartu tersisa flush saya hanya 19,6%** (saya menghitung hanya 9 outs flush — melawan jam sebesar pot, memasangkan ace atau king sering tetap kalah, jadi overcard bukan out bersih). Harga langsung berkata fold; implied odds saya sekarang nol karena villain all-in dan tak bisa membayar saya lebih. Melawan set dan two pair yang biasa jam di turn kosong seperti ini, 19,6% itu sudah skenario terbaik — melawan set, 2♥ dan 3♥ memasangkan board dan memberinya full house, jadi tersisa 7 outs bersih (7 dari 46 kartu yang tak bisa saya lihat, sekitar 15,2% — atau 7 ÷ 44, sekitar 15,9%, kalau dua kartunya juga dikeluarkan dari hitungan) — dan sekalipun beberapa tangan top-pair menyelinap ke range-nya, overcard hanya menyeret call ini ke sekitar titik impas. ==r:Fold== — dan tepat spot di mana "harapan" dulu menghabiskan seluruh stack saya.
 
 ---
 

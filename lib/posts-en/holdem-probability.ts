@@ -172,7 +172,7 @@ That's the shortcut: clean outs → the multiplier for the cards you'll see → 
 Pot after the bet | $100 + $50 = $150
 Your call | $50 to win $150 (final pot $200)
 Pot odds | 50 ÷ 200 = 25% — you need at least 25% equity
-Your equity | Flush draw with 9 clean outs ≈ 35% by the river — the Rule of 4 number, which assumes you see ==both== cards
+Your equity | Flush draw with 9 clean outs ≈ 35% by the river (Rule of 4: 9 × 4 = 36%), which assumes you see ==both== cards
 Decision | With both cards to come: 35% > 25% → a clearly profitable ==g:call==
 :::
 

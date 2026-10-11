@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap hand dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -82,7 +82,7 @@ Blackjack memberi imbalan pada ingatan atas apa yang sudah pergi; poker memberi 
 
 Sebuah ==out== adalah kartu tak terlihat mana pun yang meningkatkan tangan Anda menjadi kemungkinan pemenang. Sebuah flush draw punya ==9 outs== (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat) — kartu sejenis yang ada di board sudah dikurangkan di dalam angka 9 itu, jadi jangan mencoretnya sekali lagi sebagai "dead card". Ubah outs menjadi peluang menang kasar dengan ==Rule of 4 and 2==: kalikan dengan 4 saat masih dua kartu tersisa, dengan 2 saat satu.
 
-Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya — tak ada taruhan lagi yang akan datang, seperti saat Anda all-in atau sudah call sebuah all-in. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [bagan probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya — tak ada taruhan lagi yang akan datang, seperti saat Anda all-in atau sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [bagan probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (card removal)
 
@@ -147,7 +147,7 @@ A. Tidak. Card counting blackjack melacak keseimbangan tinggi-rendah sebuah shoe
 
 **Q. Apakah menghitung kartu ilegal di poker?**
 
-A. Tidak. Menghitung outs dan blocker Anda sendiri di kepala adalah legal dan bagian normal dari poker. Yang dibatasi room dan platform adalah bantuan dari luar selama permainan: perangkat, chart, dan saran dari orang lain.
+A. Tidak. Menghitung outs dan blocker Anda sendiri di kepala adalah legal dan bagian normal dari poker. Yang dibatasi room dan platform adalah bantuan dari luar: perangkat, chart, dan saran dari orang lain. Software online punya aturannya sendiri — misalnya, PokerStars membatasi pemakaian solver selama client-nya terbuka.
 
 **Q. Apakah card counting bekerja di Texas Hold'em?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Out ialah mana-mana kad yang masih tinggal dalam dek dan boleh menaikkan tangan anda menjadi tangan yang berkemungkinan menang. Kira dulu, kemudian tukar: darab outs dengan 4 di flop atau dengan 2 di turn untuk anggaran peratus anda hit. Flush draw ada 9 outs, lebih kurang 36% menjelang river.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-27",
+  updated: "2026-10-11",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Sepanjang tahun pertama saya di meja, saya "main draw" tanpa pernah mengiranya. Flush draw dan gutshot terasa lebih kurang sama — kedua-duanya "kad yang mungkin datang" — jadi saya call dengan cara yang sama untuk kedua-duanya dan tertanya-tanya kenapa saya asyik kalah. Penyelesaiannya bukan kursus strategi. Ia tabiat lima minit: ==berhenti, dan betul-betul kira kad yang menyelamatkan saya.==
 
-Tabiat itu dipanggil mengira **outs** — [jawapan sebenar poker kepada "kira kad"](/ms/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — dan ia satu-satunya kemahiran yang menjadi asas setiap keputusan odds dalam poker. Sebelum anda boleh bertanya "adakah call ini menguntungkan?", anda perlu menjawab "berapa kad yang memenangkan tangan ini untuk saya?" Panduan ini ialah separuh bahagian mengira — [carta odds dan kebarangkalian poker](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ialah rujukan di belakangnya, dan [pot odds](/ms/blog/holdem-pot-odds) ialah apa yang anda buat dengan nombor itu sebaik anda memilikinya.
+Tabiat itu dipanggil mengira **outs** — [jawapan sebenar poker kepada "kira kad"](/ms/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp") — dan ia kemahiran yang menjadi asas setiap keputusan draw dalam poker. Sebelum anda boleh bertanya "adakah call ini menguntungkan?", anda perlu menjawab "berapa kad yang memenangkan tangan ini untuk saya?" Panduan ini ialah separuh bahagian mengira — [carta odds dan kebarangkalian poker](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") ialah rujukan di belakangnya, dan [pot odds](/ms/blog/holdem-pot-odds) ialah apa yang anda buat dengan nombor itu sebaik anda memilikinya.
 
 ---
 
@@ -112,7 +112,7 @@ Dua combo draw di bahagian atas ialah tempat pemain tersilap aritmetik, jadi ia 
 
 </div>
 
-Dua nombor penting untuk setiap draw. **"Menjelang river"** mengira kedua-dua kad yang tinggal dan terpakai apabila tiada lagi pertaruhan boleh berlaku — anda all-in, atau anda sudah call all-in. **"Flop → turn"** mengira kad seterusnya sahaja (9 ÷ 47 = 19.1%; dari turn ke river ia menjadi 9 ÷ 46 = 19.6%) — gunakan ini selagi masih ada pertaruhan akan datang, kerana anda hanya dijamin melihat satu kad pada satu masa. Pemula memetik nombor "menjelang river" yang besar sambil menghadapi bet di turn, memujuk diri sendiri untuk call, dan membayar harganya.
+Dua nombor penting untuk setiap draw. **"Menjelang river"** mengira kedua-dua kad yang tinggal dan terpakai apabila tiada lagi pertaruhan boleh berlaku — anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet. **"Flop → turn"** mengira kad seterusnya sahaja (9 ÷ 47 = 19.1%; dari turn ke river ia menjadi 9 ÷ 46 = 19.6%) — gunakan ini selagi masih ada pertaruhan akan datang, kerana anda hanya dijamin melihat satu kad pada satu masa. Pemula memetik nombor "menjelang river" yang besar sambil menghadapi bet di turn, memujuk diri sendiri untuk call, dan membayar harganya.
 
 Perhatikan draw raksasa 15 outs: dengan dua kad lagi ia lengkap 54.1% daripada masa — menentang satu pair, itu biasanya menjadikannya **favourite** (lebih berpeluang menang), draw jarang yang anda boleh all-in dengan senang hati di flop. Menentang set pula tidak: board boleh berpasangan dan melengkapkan full house bagi set itu — contoh J♠ T♠ pada 9♠ 8♣ 2♠ di bawah hanya lebih kurang 40% menentang pocket nines.
 
@@ -128,7 +128,7 @@ Perhatikan draw raksasa 15 outs: dengan dua kad lagi ia lengkap 54.1% daripada m
 
 Flush draw ialah 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenar 35.0% — tepat). Di turn: 9 × 2 = **18%** (sebenar 19.6% — cukup dekat untuk bertindak).
 
-:::tip[Jalan pintas ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad tanpa bet lagi — hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in). Jika ada bet di depan anda, guna nombor ×2 (satu kad) untuk street yang anda sedang berada.]:::
+:::tip[Jalan pintas ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad tanpa bet lagi — hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet). Jika ada bet di depan anda, guna nombor ×2 (satu kad) untuk street yang anda sedang berada.]:::
 
 Kelemahan utamanya ialah **kiraan outs yang tinggi di flop**. Kiraan dua kad yang tepat mengambil kira kena di mana-mana street tanpa mengira kena dua kali sebagai dua. Anggaran ×4 mula sedikit tinggi pada 7 outs, tetapi jurangnya membesar dengan draw yang lebih besar; pembetulan biasa di bawah digunakan untuk lebih daripada 8 outs.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -113,7 +113,7 @@ Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada
 
 Angka penyelesaian terpecah per street, yang penting begitu masih ada taruhan tersisa:
 
-- **Flop → river (kedua kartu):** 35,0% — pakai ini hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in).
+- **Flop → river (kedua kartu):** 35,0% — pakai ini hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh).
 - **Flop → turn (satu kartu):** 9 ÷ 47 = 19,1%.
 - **Turn → river (satu kartu):** 9 ÷ 46 = 19,6%.
 

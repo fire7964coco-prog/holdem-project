@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -30,7 +30,7 @@ Os números por trás dos seus projetos vêm da [tabela de odds e probabilidade 
 :::stripe
 25% | Equity necessária contra uma aposta de meio pote
 33% | Equity necessária contra uma aposta do tamanho do pote
-call ÷ (pote + call) | A fórmula inteira
+call ÷ pote final | A fórmula inteira (pote final = o pote somando a aposta que você enfrenta + o seu call)
 :::
 
 ---
@@ -163,7 +163,7 @@ O reverso da moeda são as **reverse implied odds** — as fichas que você vai 
 
 Um flush draw tem 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% — na mosca). No turn: 9 × 2 = **18%** (valor real 19,6% — perto o suficiente para decidir).
 
-:::tip[A versão ×4 assume silenciosamente que você vai ver *as duas* cartas restantes sem mais apostas — o que só é garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in). Se ainda há aposta por vir, apoie-se no número ×2 (uma carta) para a street na sua frente, e deixe as implied odds justificarem o resto.]:::
+:::tip[A versão ×4 assume silenciosamente que você vai ver *as duas* cartas restantes sem mais apostas — o que só é garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in e ninguém que segue na mão ainda pode apostar). Se ainda há aposta por vir, apoie-se no número ×2 (uma carta) para a street na sua frente, e deixe as implied odds justificarem o resto.]:::
 
 As derivações completas de cada projeto e mão feita estão na [tabela de probabilidade](/pt/blog/holdem-probability). Aqui, o atalho é tudo o que você precisa.
 
@@ -189,7 +189,7 @@ Cometi cada um deles antes que me quebrassem. Fique de olho:
 
 Estou com ==b:A♥ K♥== num flop ==Q♥ 7♥ 2♣== — o nut flush draw, 9 outs. O pote é $100, o vilão aposta $50. Minhas pot odds: estou recebendo 3 para 1, então preciso de **25%**. Se eu fosse ver as duas cartas, estaria em ~35% — mas este call só compra o turn, e o turn sozinho é 19,1%, abaixo do preço. O que fecha a diferença são as implied odds: se cair uma copas, muitas vezes uma mão de top pair me paga pesado. ==g:Call fácil.==
 
-O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%** (conto apenas as 9 copas — contra um all-in do tamanho do pote, parear o meu ás ou o meu rei muitas vezes ainda perde, então as overcards não são outs limpos). O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. Contra os sets e dois pares que dão all-in num turn brick como esse, 19,6% é o melhor caso — contra um set, o 2♥ e o 3♥ pareiam o board e dão full house para ele, sobrando 7 outs limpos (cerca de 15,2%) — e mesmo que algumas mãos de top pair entrem no range dele, as overcards só levam o call até mais ou menos o ponto de equilíbrio. ==r:Fold== — e o spot exato onde a "esperança" costumava me custar um stack.
+O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%** (conto apenas as 9 copas — contra um all-in do tamanho do pote, parear o meu ás ou o meu rei muitas vezes ainda perde, então as overcards não são outs limpos). O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. Contra os sets e dois pares que dão all-in num turn brick como esse, 19,6% é o melhor caso — contra um set, o 2♥ e o 3♥ pareiam o board e dão full house para ele, sobrando 7 outs limpos (7 das 46 cartas que eu não vejo, cerca de 15,2% — ou 7 ÷ 44, cerca de 15,9%, se eu também descontar as duas cartas dele) — e mesmo que algumas mãos de top pair entrem no range dele, as overcards só levam o call até mais ou menos o ponto de equilíbrio. ==r:Fold== — e o spot exato onde a "esperança" costumava me custar um stack.
 
 ---
 

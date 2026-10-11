@@ -81,7 +81,7 @@ Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:n
 
 ## Equity vs Pot Odds: The One Rule That Decides Every Call
 
-**Call when your equity is bigger than your pot odds — that single comparison decides almost every call in poker.** [Pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") tell you the equity you *need* to break even; equity tells you what you *have*. If you have more than you need, calling makes money.
+**Call when your equity is bigger than your pot odds — that comparison is exact when no more betting follows.** [Pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") tell you the equity you *need* to break even; equity tells you what you *have*. If you have more than you need, calling makes money.
 
 Facing a half-pot bet, your pot odds require ==25%== to call. If this call puts you all-in on the flop or lets you see both remaining cards without another payment, a clean flush draw's ~35% clears that price. If another bet can follow on the turn, the call buys only one card: 9 ÷ 47 = 19.1%, below 25% on the draw alone.
 

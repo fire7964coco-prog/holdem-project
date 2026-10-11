@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "River'a kadar elin %43,8 ihtimalle Çift, %23,5 ihtimalle İki Çift, %3,0 ihtimalle Floş ve %2,6 ihtimalle Full olur. Royal floş ise yaklaşık 31.000 elde yalnızca bir kez gelir.",
   category: "odds",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -215,7 +215,7 @@ Pot oranının tanımı, oran-yüzde kısayolu ve bahis büyüklüğüne göre h
 Bahisten sonraki pot | $100 + $50 = $150
 Senin call'un | $150 kazanmak için $50 (son pot $200)
 Pot oranı | 50 ÷ 200 = %25 — en az %25 equity gerekir
-Senin equity'n | 9 temiz out'lu floş draw'ı ≈ river'a kadar %35 — ==iki== kartı da gördüğünü varsayan 4 kuralı sayısı
+Senin equity'n | 9 temiz out'lu floş draw'ı ≈ river'a kadar %35 (4 kuralı: 9 × 4 = %36) — ==iki== kartı da gördüğünü varsayan sayı
 Karar | İki kart da gelecekse: %35 > %25 → açıkça kârlı bir ==g:call==
 :::
 

@@ -112,7 +112,7 @@ So the honest sentence is: two suited cards flop a **draw** far more than a made
 
 The completion figure splits by street, which matters the moment there's betting left:
 
-- **Flop → river (both cards):** 35.0% — use this only when you'll see both cards with no more betting (you're all-in, or you've called an all-in).
+- **Flop → river (both cards):** 35.0% — use this only when you'll see both cards with no more betting (you're all-in, or you've called an all-in and no one left in the hand can still bet).
 - **Flop → turn (one card):** 9 ÷ 47 = 19.1%.
 - **Turn → river (one card):** 9 ÷ 46 = 19.6%.
 

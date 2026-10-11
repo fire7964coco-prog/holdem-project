@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -82,7 +82,7 @@ O blackjack recompensa a memória do que já saiu; o poker recompensa ler o que 
 
 Um ==out== é qualquer carta não vista que melhora a sua mão para uma provável vencedora. Um flush draw tem ==9 outs== (13 de um naipe menos as 4 que você enxerga) — as cartas do naipe que estão no board já estão descontadas nesse 9, então não as risque uma segunda vez como "cartas mortas". Converta outs numa chance aproximada de ganhar com a ==regra do 2 e 4==: multiplique por 4 com duas cartas por vir, por 2 com uma.
 
-Um flush draw de 9 outs fecha até o river cerca de ==g:35%== das vezes (9 × 4 = 36% como estimativa rápida — o valor real é 35,0%). Esse número conta as duas cartas restantes, então ele só decide o call quando você realmente vê as duas — sem mais apostas por vir, como quando você está all-in ou pagou um all-in. Se há uma aposta no flop que você terá de pagar de novo no turn, conte só a próxima carta: ==9 ÷ 47 = 19,1%==. O método completo — outs sujos, combo draws, porcentagens exatas — está no [guia de como contar outs](/pt/blog/holdem-outs), e as odds por trás de todo projeto estão na [tabela de probabilidade](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Um flush draw de 9 outs fecha até o river cerca de ==g:35%== das vezes (9 × 4 = 36% como estimativa rápida — o valor real é 35,0%). Esse número conta as duas cartas restantes, então ele só decide o call quando você realmente vê as duas — sem mais apostas por vir, como quando você está all-in ou pagou um all-in e ninguém que segue na mão ainda pode apostar. Se há uma aposta no flop que você terá de pagar de novo no turn, conte só a próxima carta: ==9 ÷ 47 = 19,1%==. O método completo — outs sujos, combo draws, porcentagens exatas — está no [guia de como contar outs](/pt/blog/holdem-outs), e as odds por trás de todo projeto estão na [tabela de probabilidade](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blockers (card removal)
 
@@ -147,7 +147,7 @@ A. Não. A contagem de blackjack rastreia o equilíbrio de altas e baixas de um 
 
 **Q. Contar cartas é ilegal no poker?**
 
-A. Não. Calcular os seus próprios outs e blockers de cabeça é legal e uma parte normal do poker. O que salas e plataformas restringem é a ajuda externa durante o jogo: aparelhos, tabelas e conselhos de outras pessoas.
+A. Não. Calcular os seus próprios outs e blockers de cabeça é legal e uma parte normal do poker. O que salas e plataformas restringem é a ajuda externa: aparelhos, tabelas e conselhos de outras pessoas. Software online tem regras próprias: por exemplo, a PokerStars restringe o uso de solver enquanto o cliente dela está aberto.
 
 **Q. A contagem de cartas funciona no Texas Hold'em?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "13 mnt",
@@ -175,7 +175,7 @@ Itulah jalan pintasnya: outs bersih → pengali untuk jumlah kartu yang akan And
 Pot setelah taruhan | $100 + $50 = $150
 Call Anda | $50 untuk menang $150 (pot akhir $200)
 Pot odds | 50 ÷ 200 = 25% — Anda butuh setidaknya 25% equity
-Equity Anda | Flush draw dengan 9 outs bersih ≈ 35% hingga river (Aturan 4) — angka ini mengandaikan Anda melihat ==kedua== kartu
+Equity Anda | Flush draw dengan 9 outs bersih ≈ 35% hingga river (Aturan 4: 9 × 4 = 36%) — angka ini mengandaikan Anda melihat ==kedua== kartu
 Keputusan | Dengan dua kartu tersisa: 35% > 25% → sebuah ==g:call== yang jelas menguntungkan
 :::
 
