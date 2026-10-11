@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã bỏ vào ngang họ (main pot). Phần chip dư do hai stack lớn hơn trở lên cược vượt mức đó tạo thành side pot chỉ họ được tranh; nếu chỉ một người cược dư thì phần đó được trả lại. Trong no-limit và pot-limit, một cú all-in nhỏ hơn một raise đủ mức KHÔNG mở lại vòng cược cho người đã hành động — trừ khi nhiều cú all-in ngắn cộng lại đạt ít nhất một raise đủ mức so với số chip người đó đã bỏ vào.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -147,7 +147,7 @@ Chuyện gì xảy ra với Người chơi A, và với Người chơi C chưa h
 
 | Mức all-in (no-limit / pot-limit) | Raise đủ mức? | Mở lại vòng cược? |
 |--------------|-------------|-----------------|
-| Nhỏ hơn một raise đủ mức | Không | Không — người đã hành động chỉ được call hoặc fold |
+| Nhỏ hơn một raise đủ mức | Không | Không — người đã hành động và giờ đối mặt với mức nhỏ hơn một bet hoặc raise đủ mức thì chỉ được call hoặc fold |
 | Bằng hoặc hơn một raise đủ mức | Có | Có — tất cả đều được raise lại |
 
 </div>
@@ -190,7 +190,7 @@ Bảng này dành cho no-limit và pot-limit. Trong limit game, ngưỡng là n�
 
 | Tình huống | Mở lại cho người đã hành động? |
 |---|---|
-| Một cú all-in < raise đủ mức | ❌ Không — chỉ call hoặc fold |
+| Một cú all-in < raise đủ mức | ❌ Không — chỉ call hoặc fold, trừ khi người đó giờ phải đối mặt với ít nhất một bet hoặc raise đủ mức (ví dụ đã check, rồi có người bet đủ mức) |
 | Một cú all-in ≥ raise đủ mức | ✅ Có — tất cả được raise lại |
 | Nhiều all-in ngắn, cộng lại < raise đủ mức | ❌ Không |
 | Nhiều all-in ngắn, cộng lại ≥ raise đủ mức | ✅ Có — với từng người đang đối diện ít nhất một raise đủ mức so với hành động gần nhất của chính họ |

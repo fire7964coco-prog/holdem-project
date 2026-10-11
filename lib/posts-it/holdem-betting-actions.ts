@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o rilancio) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop questo vale solo per il big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -130,7 +130,7 @@ Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o r
 
 Due regole del poker dal vivo che arrivano insieme al rilancio:
 
-1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: mettere fiches in più movimenti **senza** annunciare prima "rilancio" (==regola 103==).
+1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: mettere fiches in più movimenti **senza** annunciare prima "rilancio" (==regola 103 dei tornei WSOP==).
 2. **Un solo movimento.** Se non annunci, le tue fiches devono entrare con un unico gesto in avanti.
 
 *Quanto* dovresti rilanciare (aperture da 2,5x, 3-bet da 3x, sizing in base alla texture del board) è strategia, non regole — quella è un altro discorso.
@@ -182,7 +182,7 @@ Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spin
 
 ### Errore 3 — Il grande buio che butta un flop gratis
 
-Tutti entrano di limp, l'azione arriva al grande buio… e lui passa. Quello è un flop gratis buttato nel muck. ==g:Se nessuno ha rilanciato, il BB può fare check e vedere tre carte senza alcun costo extra== — il suo buio è già vivo. Succede a ogni singolo giro.
+Tutti entrano di limp, l'azione arriva al grande buio… e lui passa. Quello è un flop gratis buttato nel muck. ==g:Se nessuno ha rilanciato né messo lo straddle, il BB può fare check e vedere tre carte senza alcun costo extra== — il suo buio è già vivo. Succede a ogni singolo giro.
 
 ### Errore 4 — La fiche singola silenziosa
 
@@ -223,7 +223,7 @@ A. Dipende dalla dimensione dell'all-in. Se l'all-in è un rilancio legale compl
 
 **Q. Cos'è uno string bet nel poker?**
 
-A. Mettere le fiches in più movimenti senza aver annunciato "rilancio" prima (==regola 103==). I mazzieri giudicano lo string bet come una chiamata della cifra iniziale. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce oppure sposta tutte le fiches in un solo movimento.
+A. Mettere le fiches in più movimenti senza aver annunciato "rilancio" prima (==regola 103 dei tornei WSOP==). I mazzieri giudicano lo string bet come una chiamata della cifra iniziale. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce oppure sposta tutte le fiches in un solo movimento.
 
 **Q. Cosa significa fare limp nel poker?**
 

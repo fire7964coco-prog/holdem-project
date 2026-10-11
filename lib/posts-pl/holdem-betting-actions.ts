@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się poprzedniemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie wyłącznie jako duża ciemna.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -130,7 +130,7 @@ Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego zakładu lub pr
 
 Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
-1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: wypychanie żetonów w kilku ruchach **bez** wcześniejszej zapowiedzi "raise" (==zasada 103==).
+1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: wypychanie żetonów w kilku ruchach **bez** wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==).
 2. **Jeden ruch.** Jeśli nic nie zapowiadasz, żetony muszą wjechać jednym ruchem do przodu.
 
 *Ile* powinieneś przebijać (otwarcia 2,5x, 3-bety po 3x, dobór rozmiaru pod fakturę stołu) to strategia, a nie zasady — o tym jest filar strategii Texas Hold'em.
@@ -186,7 +186,7 @@ Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypych
 
 ### Błąd 3 — duży blind pasujący darmowy flop
 
-Wszyscy limpują, ruch dochodzi do dużego blinda… i on pasuje. To darmowy flop wyrzucony do mucka. ==g:Jeśli nikt nie przebił, BB może czeknąć i zobaczyć trzy karty bez dodatkowego kosztu== — jego blind jest już żywy. To się zdarza dosłownie co orbitę.
+Wszyscy limpują, ruch dochodzi do dużego blinda… i on pasuje. To darmowy flop wyrzucony do mucka. ==g:Jeśli nikt nie przebił ani nie wystawił straddle'a, BB może czeknąć i zobaczyć trzy karty bez dodatkowego kosztu== — jego blind jest już żywy. To się zdarza dosłownie co orbitę.
 
 ### Błąd 4 — cichy pojedynczy żeton
 
@@ -226,7 +226,7 @@ A. Zależy od rozmiaru all-inu. Jeśli all-in jest pełnym legalnym przebiciem, 
 
 **Q. Co to jest string bet w pokerze?**
 
-A. Wrzucanie żetonów w kilku ruchach bez wcześniejszej zapowiedzi "raise" (==zasada 103==). Rozdający uznają string bet za sprawdzenie pierwotnej kwoty. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie albo wrzuć wszystkie żetony jednym ruchem.
+A. Wrzucanie żetonów w kilku ruchach bez wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==). Rozdający uznają string bet za sprawdzenie pierwotnej kwoty. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie albo wrzuć wszystkie żetony jednym ruchem.
 
 **Q. Co znaczy limpować w pokerze?**
 

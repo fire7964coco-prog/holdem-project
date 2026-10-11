@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, il y a 5 actions : checker (dire « parole » : ne pas miser tout en restant dans le coup), miser (ouvrir le tour), suivre (payer la mise), relancer (la relance minimum égale au moins la dernière mise ou relance complète) et se coucher (fold). Tu ne peux checker que s'il n'y a aucune mise devant toi : préflop, c'est en général seulement la grosse blinde, ou le joueur qui a posé un straddle.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-08",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -157,7 +157,7 @@ L'idée clé : le min-raise reprend ==l'incrément== de la dernière mise ou rel
 
 Deux règles du poker en live qui accompagnent la relance :
 
-1. **Annonce « relance » — et le montant — avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ta déclaration t'engageait déjà (==règle 90.d==) — le surplus ne compte pas. Un vrai ==string bet== (une mise en plusieurs fois), c'est autre chose : une mise ou une relance faite en plusieurs mouvements, avec un retour à ton stack, **sans** avoir annoncé « relance » d'abord — ou un geste trompeur destiné à provoquer une action hors tour (==règle 103==).
+1. **Annonce « relance » — et le montant — avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ta déclaration t'engageait déjà (==règle 90.d==) — le surplus ne compte pas. Un vrai ==string bet== (une mise en plusieurs fois), c'est autre chose : une mise ou une relance faite en plusieurs mouvements, avec un retour à ton stack, **sans** avoir annoncé « relance » d'abord — ou un geste trompeur destiné à provoquer une action hors tour (==règle 103 des tournois de la WSOP==).
 2. **Un seul mouvement.** Si tu n'annonces rien, tes jetons doivent partir en un seul mouvement vers l'avant.
 
 *Combien* tu devrais relancer — ouvertures à 2,5x, 3-bets à 3x, tailles selon la texture du board (les cartes communes) —, c'est de la stratégie, pas du règlement — tout ça se trouve dans le [pilier stratégie du Texas Hold'em](/fr/blog/holdem-strategy).
@@ -217,7 +217,7 @@ Premier à parler au flop, personne n'a misé, et un joueur encore novice pousse
 
 ### Erreur 3 — La grosse blinde qui jette un flop gratuit
 
-Tout le monde limpe (se contente de payer la grosse blinde), l'action arrive à la grosse blinde, et elle se couche. C'est jeter ses cartes (muck) devant un flop gratuit. ==g:Si personne n'a relancé, la BB peut checker et voir trois cartes sans payer un jeton de plus== — sa blinde est déjà vivante. Ça arrive à chaque tour de table.
+Tout le monde limpe (se contente de payer la grosse blinde), l'action arrive à la grosse blinde, et elle se couche. C'est jeter ses cartes (muck) devant un flop gratuit. ==g:Si personne n'a relancé ni posé de straddle, la BB peut checker et voir trois cartes sans payer un jeton de plus== — sa blinde est déjà vivante. Ça arrive à chaque tour de table.
 
 ### Erreur 4 — Le jeton unique posé en silence
 
@@ -258,7 +258,7 @@ A. Ça dépend de la taille du tapis. S'il vaut une relance légale complète, l
 
 **Q. C'est quoi un string bet au poker ?**
 
-A. C'est essayer de miser ou de relancer en plusieurs mouvements — en retournant à ton stack entre les deux — sans avoir annoncé « relance » d'abord (==règle 103==). Le second mouvement ne compte jamais — seuls les premiers jetons restent, jugés d'abord selon les règles du call à un jeton et à plusieurs jetons (règles 44–45 du TDA 2024). Là où s'applique le seuil de la moitié du minimum de la règle 43-A, mesure l'augmentation au-delà du call, pas le total des jetons : en dessous de la moitié de la plus grosse mise ou relance complète précédente, c'est un call ; à la moitié ou plus, il faut une relance minimale complète. Une annonce de relance préalable ou un tapis relèvent de leurs propres règles. La règle 103 interdit aussi un geste trompeur destiné à provoquer une action hors tour avant que ta propre action soit terminée. Dire « je suis » puis ajouter des jetons, ce n'est pas un string bet mais une annonce qui t'engage (==règle 90.d==) — même effet. Annonce ton action à voix haute — « relance » et le montant complet — ou mets tous tes jetons en un seul mouvement (règle 42 du TDA 2024).
+A. C'est essayer de miser ou de relancer en plusieurs mouvements — en retournant à ton stack entre les deux — sans avoir annoncé « relance » d'abord (==règle 103 des tournois de la WSOP==). Le second mouvement ne compte jamais — seuls les premiers jetons restent, jugés d'abord selon les règles du call à un jeton et à plusieurs jetons (règles 44–45 du TDA 2024). Là où s'applique le seuil de la moitié du minimum de la règle 43-A, mesure l'augmentation au-delà du call, pas le total des jetons : en dessous de la moitié de la plus grosse mise ou relance complète précédente, c'est un call ; à la moitié ou plus, il faut une relance minimale complète. Une annonce de relance préalable ou un tapis relèvent de leurs propres règles. La règle 103 des tournois de la WSOP interdit aussi un geste trompeur destiné à provoquer une action hors tour avant que ta propre action soit terminée. Dire « je suis » puis ajouter des jetons, ce n'est pas un string bet mais une annonce qui t'engage (==règle 90.d==) — même effet. Annonce ton action à voix haute — « relance » et le montant complet — ou mets tous tes jetons en un seul mouvement (règle 42 du TDA 2024).
 
 **Q. Que veut dire limper au poker ?**
 

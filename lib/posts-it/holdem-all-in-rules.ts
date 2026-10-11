@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Cosa succede al Giocatore A e al Giocatore C, che non ha ancora agito?
 
 | Importo dell'all-in | Rilancio completo? | Riapre le puntate? |
 |--------------|-------------|-----------------|
-| Meno di un rilancio completo | No | No — chi ha già agito può solo chiamare o passare |
+| Meno di un rilancio completo | No | No — chi ha già agito e ora affronta meno di una puntata o di un rilancio completo può solo chiamare o passare |
 | Rilancio completo o più | Sì | Sì — tutti possono rilanciare di nuovo |
 
 </div>
@@ -178,7 +178,7 @@ La soglia del rilancio minimo è sempre l'*ultima puntata o rilancio completo va
 
 | Situazione | Si riapre per chi ha già agito? |
 |---|---|
-| Un solo all-in < rilancio completo | ❌ No — solo chiamare o passare |
+| Un solo all-in < rilancio completo | ❌ No — solo chiamare o passare, a meno che quel giocatore non affronti ora almeno una puntata o un rilancio completo (es. ha fatto check, poi qualcuno ha puntato un importo completo) |
 | Un solo all-in ≥ rilancio completo | ✅ Sì — tutti possono rilanciare |
 | Più all-in corti, somma < rilancio completo | ❌ No |
 | Più all-in corti, aumento dall'ultima azione del giocatore ≥ puntata o rilancio completo | ✅ Sì, per quel giocatore |

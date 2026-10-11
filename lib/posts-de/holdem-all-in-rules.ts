@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Chips, die zwei oder mehr größere Stacks darüber hinaus setzen, bilden einen Side Pot, den nur sie gewinnen können; ein einzelner Überschuss-Einsatz geht einfach zurück. Im No-Limit und Pot-Limit öffnet ein All-in unterhalb einer vollen Erhöhung die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu – außer mehrere kurze All-ins ergeben zusammen mindestens eine volle Erhöhung über das, was dieser Spieler schon gesetzt hat.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -137,7 +137,7 @@ Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
 | All-in-Betrag (No-Limit / Pot-Limit) | Volle Erhöhung? | Öffnet die Setzrunde neu? |
 |--------------|-------------|-----------------|
-| Weniger als eine volle Erhöhung | Nein | Nein – wer bereits gehandelt hat, kann nur callen oder folden |
+| Weniger als eine volle Erhöhung | Nein | Nein – wer bereits gehandelt hat und jetzt weniger als einem vollen Einsatz oder einer vollen Erhöhung gegenübersteht, kann nur callen oder folden |
 | Volle Erhöhung oder mehr | Ja | Ja – alle Spieler dürfen erneut re-raisen |
 
 </div>
@@ -180,7 +180,7 @@ Die Tabelle gilt für No-Limit und Pot-Limit. Im Limit-Spiel liegt die Schwelle 
 
 | Situation | Neu geöffnet für Spieler, die bereits gehandelt haben? |
 |---|---|
-| Einzelnes All-in < volle Erhöhung | ❌ Nein – nur callen oder folden |
+| Einzelnes All-in < volle Erhöhung | ❌ Nein – nur callen oder folden, außer dieser Spieler steht jetzt mindestens einem vollen Einsatz oder einer vollen Erhöhung gegenüber (z. B. er hat gecheckt, danach hat jemand voll gesetzt) |
 | Einzelnes All-in ≥ volle Erhöhung | ✅ Ja – alle dürfen re-raisen |
 | Mehrere kurze All-ins, kombiniert < volle Erhöhung | ❌ Nein |
 | Mehrere kurze All-ins, kombiniert ≥ volle Erhöhung | ✅ Ja – für jeden Spieler, der jetzt vor mindestens einer vollen Erhöhung über seiner eigenen letzten Aktion steht |

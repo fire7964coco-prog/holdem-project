@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot); chipsi za ziada za wale wenye stack kubwa hutengeneza side pot ambayo huwezi kuigusa. All-in ya chini ya raise kamili HAIfungui tena dau kwa wale walioshacheza.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Kinatokea nini kwa Mchezaji A, na kwa Mchezaji C ambaye bado hajacheza?
 
 | Kiasi cha all-in | Raise kamili? | Kinafungua dau? |
 |--------------|-------------|-----------------|
-| Chini ya raise kamili | Hapana | Hapana — walioshacheza wanaweza ku-call au ku-fold tu |
+| Chini ya raise kamili | Hapana | Hapana — aliyeshacheza na sasa anakabiliwa na kiasi chini ya bet au raise kamili anaweza ku-call au ku-fold tu |
 | Raise kamili au zaidi | Ndiyo | Ndiyo — wachezaji wote wanaweza ku-re-raise tena |
 
 </div>
@@ -178,7 +178,7 @@ Kizingiti cha raise ya chini daima ni *bet au raise kamili halali ya mwisho* —
 
 | Hali | Kinafungua kwa walioshacheza? |
 |---|---|
-| All-in moja < raise kamili | ❌ Hapana — call au fold tu |
+| All-in moja < raise kamili | ❌ Hapana — call au fold tu, isipokuwa mchezaji huyo sasa anakabiliwa na angalau bet au raise kamili (k.m. alicheck, kisha mtu akaweka bet kamili) |
 | All-in moja ≥ raise kamili | ✅ Ndiyo — wote wanaweza ku-re-raise |
 | All-in ndogo kadhaa, jumla < raise kamili | ❌ Hapana |
 | All-in ndogo kadhaa; ongezeko tangu action ya mwisho ya mchezaji ≥ bet/raise kamili | ✅ Ndiyo — kwa mchezaji huyo tu |

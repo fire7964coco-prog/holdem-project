@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in जाने का मतलब है अपने सामने रखे हर chip को दांव पर लगाना। हर प्रतिद्वंद्वी से आप उतना ही जीत सकते हैं जितना आपने match किया (यानी main pot)। बड़े stack के अतिरिक्त दांव एक side pot बनाते हैं जिसे आप नहीं जीत सकते। एक full raise से कम का all-in उन खिलाड़ियों के लिए betting दोबारा नहीं खोलता जो पहले act कर चुके हैं।",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Player A का, और Player C का जिसने अभी act नही�
 
 | All-in रक़म | Full raise? | Betting दोबारा खुलती है? |
 |--------------|-------------|-----------------|
-| Full raise से कम | नहीं | नहीं — जो पहले act कर चुके, वे केवल call या fold कर सकते हैं |
+| Full raise से कम | नहीं | नहीं — जो पहले act कर चुका है और अब full bet या raise से कम रक़म का सामना कर रहा है, वह केवल call या fold कर सकता है |
 | Full raise या ज़्यादा | हाँ | हाँ — सभी खिलाड़ी दोबारा re-raise कर सकते हैं |
 
 </div>
@@ -178,7 +178,7 @@ Minimum raise threshold हमेशा *आख़िरी full valid bet य�
 
 | हालात | जो पहले act कर चुके, उनके लिए दोबारा खुलती है? |
 |---|---|
-| अकेला all-in < full raise | ❌ नहीं — केवल call या fold |
+| अकेला all-in < full raise | ❌ नहीं — केवल call या fold, जब तक कि वह खिलाड़ी अब कम से कम एक full bet या raise का सामना न कर रहा हो (जैसे उसने check किया, फिर किसी ने full bet लगाई) |
 | अकेला all-in ≥ full raise | ✅ हाँ — सभी re-raise कर सकते हैं |
 | कई छोटे all-in, combined < full raise | ❌ नहीं |
 | कई छोटे all-in; खिलाड़ी के आख़िरी action से कुल बढ़ोतरी ≥ full bet/raise | ✅ हाँ — केवल उस खिलाड़ी के लिए |

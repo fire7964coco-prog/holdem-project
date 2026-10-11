@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). As fichas que dois ou mais stacks maiores apostam além disso viram um pote paralelo (side pot) que só eles podem ganhar; uma aposta extra sozinha simplesmente volta para quem apostou. No no-limit e no pot-limit, um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu — a não ser que vários all-ins curtos somem pelo menos um aumento completo sobre o que esse jogador já colocou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -138,7 +138,7 @@ O que acontece com o Jogador A e com o Jogador C, que ainda não agiu?
 
 | Valor do all-in (no-limit / pot-limit) | Aumento completo? | Reabre a aposta? |
 |--------------|-------------|-----------------|
-| Menor que um aumento completo | Não | Não — quem já agiu só pode pagar ou foldar |
+| Menor que um aumento completo | Não | Não — quem já agiu e agora enfrenta menos que uma aposta ou um aumento completo só pode pagar ou foldar |
 | Aumento completo ou mais | Sim | Sim — todos podem aumentar de novo |
 
 </div>
@@ -181,7 +181,7 @@ A tabela vale para no-limit e pot-limit. Num jogo de limit, a linha é meia apos
 
 | Situação | Reabre para quem já agiu? |
 |---|---|
-| Um all-in < aumento completo | ❌ Não — só pagar ou foldar |
+| Um all-in < aumento completo | ❌ Não — só pagar ou foldar, a menos que esse jogador agora enfrente pelo menos uma aposta ou um aumento completo (ex.: deu check e depois alguém fez uma aposta completa) |
 | Um all-in ≥ aumento completo | ✅ Sim — todos podem aumentar de novo |
 | Vários all-ins curtos, soma < aumento completo | ❌ Não |
 | Vários all-ins curtos, soma ≥ aumento completo | ✅ Sim — para cada jogador que agora tem à frente pelo menos um aumento completo acima da própria última ação |

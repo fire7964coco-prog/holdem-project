@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt không mất chip), bet (mở vòng cược), call (trả bằng mức cược), raise (tăng cược — mức raise tối thiểu bằng khoản bet hoặc raise đủ mức gần nhất) và fold (bỏ bài). Bạn chỉ được check khi trước mặt không có khoản cược nào đang mở — ở preflop, thường chỉ big blind (hoặc người đã đặt straddle còn hiệu lực) được check.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 phút",
@@ -145,7 +145,7 @@ Hai ví dụ tính sẵn:
 
 Hai luật poker live đi kèm với việc raise:
 
-1. **Hô "raise" — kèm số tiền — trước khi đẩy chip.** Nói "call" rồi mới đẩy thêm? Lời hô của bạn đã có hiệu lực ràng buộc (==Rule 90.d==) — phần thêm không được tính. ==String bet== (đẩy chip nhiều nhịp) thật sự là chuyện khác: một khoản bet hoặc raise được đẩy bằng nhiều động tác có quay lại stack **mà không** hô "raise" trước — hoặc một cử chỉ đánh lừa nhằm khiến người khác hành động trước lượt (==Rule 103==).
+1. **Hô "raise" — kèm số tiền — trước khi đẩy chip.** Nói "call" rồi mới đẩy thêm? Lời hô của bạn đã có hiệu lực ràng buộc (==Rule 90.d==) — phần thêm không được tính. ==String bet== (đẩy chip nhiều nhịp) thật sự là chuyện khác: một khoản bet hoặc raise được đẩy bằng nhiều động tác có quay lại stack **mà không** hô "raise" trước — hoặc một cử chỉ đánh lừa nhằm khiến người khác hành động trước lượt (==WSOP Tournament Rule 103==).
 2. **Một động tác duy nhất.** Nếu không hô, chip của bạn phải được đẩy vào trong một động tác tiến duy nhất.
 
 Nên raise *bao nhiêu* (mở 2,5x, 3-bet (re-raise, tố lại) 3x, chọn cỡ cược theo cấu trúc board) là chuyện chiến thuật, không phải luật — phần đó nằm ở [trụ cột chiến thuật Texas Hold'em](/vi/blog/holdem-strategy).
@@ -209,7 +209,7 @@ Là người hành động đầu tiên ở flop, chưa ai bet, thế mà một 
 
 ### Lỗi 3 — Big blind fold một flop miễn phí
 
-Cả bàn limp, lượt tới big blind... và họ fold. Đó là ném một flop miễn phí vào đống bài muck (úp bài bỏ). ==g:Nếu không ai raise, BB có thể check và xem ba lá bài mà không tốn thêm chip nào== — khoản blind đã nằm sẵn trong pot. Vòng bàn nào tôi cũng thấy chuyện này — theo đúng nghĩa đen.
+Cả bàn limp, lượt tới big blind... và họ fold. Đó là ném một flop miễn phí vào đống bài muck (úp bài bỏ). ==g:Nếu không ai raise hay straddle, BB có thể check và xem ba lá bài mà không tốn thêm chip nào== — khoản blind đã nằm sẵn trong pot. Vòng bàn nào tôi cũng thấy chuyện này — theo đúng nghĩa đen.
 
 ### Lỗi 4 — Một chip đẩy ra trong im lặng
 
@@ -250,7 +250,7 @@ A. Tùy cỡ của cú all-in. Nếu cú all-in là một mức raise hợp lệ
 
 **Q. String bet trong poker là gì?**
 
-A. Là cố bet hoặc raise bằng nhiều động tác — quay lại stack ở giữa chừng — mà không hô "raise" trước (==Rule 103==). Động tác thứ hai không bao giờ được tính — chỉ phần chip đầu tiên có hiệu lực, và được xét trước theo luật call bằng một chip hoặc nhiều chip (TDA 2024 Rules 44–45). Ở nơi áp dụng ngưỡng nửa mức tối thiểu của Rule 43-A, hãy đo phần tăng thêm so với mức call chứ không phải tổng số chip: dưới một nửa khoản bet hoặc raise đủ mức lớn nhất trước đó là call; từ một nửa trở lên thì phải raise đủ min-raise. Lời hô "raise" từ trước hoặc một cú all-in được xử theo luật riêng của nó. Rule 103 cũng cấm cử chỉ đánh lừa nhằm khiến người khác hành động trước lượt khi hành động của bạn chưa hoàn tất. Nói "call" rồi mới thêm chip không phải string bet mà là lời tuyên bố ràng buộc (==Rule 90.d==) — hệ quả như nhau. Hãy hô hành động bằng lời — "raise" kèm số tiền đầy đủ — hoặc đẩy toàn bộ chip trong một động tác duy nhất (TDA 2024 Rule 42).
+A. Là cố bet hoặc raise bằng nhiều động tác — quay lại stack ở giữa chừng — mà không hô "raise" trước (==WSOP Tournament Rule 103==). Động tác thứ hai không bao giờ được tính — chỉ phần chip đầu tiên có hiệu lực, và được xét trước theo luật call bằng một chip hoặc nhiều chip (TDA 2024 Rules 44–45). Ở nơi áp dụng ngưỡng nửa mức tối thiểu của Rule 43-A, hãy đo phần tăng thêm so với mức call chứ không phải tổng số chip: dưới một nửa khoản bet hoặc raise đủ mức lớn nhất trước đó là call; từ một nửa trở lên thì phải raise đủ min-raise. Lời hô "raise" từ trước hoặc một cú all-in được xử theo luật riêng của nó. WSOP Tournament Rule 103 cũng cấm cử chỉ đánh lừa nhằm khiến người khác hành động trước lượt khi hành động của bạn chưa hoàn tất. Nói "call" rồi mới thêm chip không phải string bet mà là lời tuyên bố ràng buộc (==Rule 90.d==) — hệ quả như nhau. Hãy hô hành động bằng lời — "raise" kèm số tiền đầy đủ — hoặc đẩy toàn bộ chip trong một động tác duy nhất (TDA 2024 Rule 42).
 
 **Q. Limp trong poker nghĩa là gì?**
 

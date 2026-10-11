@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in (Türkçe masa dilinde rest) gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -143,7 +143,7 @@ A Oyuncusuna ve henüz aksiyon almamış C Oyuncusuna ne olur?
 
 | All-in miktarı | Tam yükseltme mi? | Bahsi yeniden açar mı? |
 |--------------|-------------|-----------------|
-| Tam bir yükseltmeden az (tek başına) | Hayır | Hayır — zaten aksiyon alanlar sadece görebilir veya pas geçebilir (birden fazla kısa all-in toplamı için aşağıdaki tabloya bak) |
+| Tam bir yükseltmeden az (tek başına) | Hayır | Hayır — zaten aksiyon almış ve şimdi tam bir bahis veya yükseltmeden azıyla karşı karşıya olan oyuncu sadece görebilir veya pas geçebilir (birden fazla kısa all-in toplamı için aşağıdaki tabloya bak) |
 | Tam yükseltme veya fazlası | Evet | Evet — herkes yeniden yükseltebilir |
 
 </div>
@@ -184,7 +184,7 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 
 | Durum | Zaten aksiyon alanlar için açılır mı? |
 |---|---|
-| Tek all-in < tam yükseltme | ❌ Hayır — sadece gör ya da pas geç |
+| Tek all-in < tam yükseltme | ❌ Hayır — sadece gör ya da pas geç, meğer ki o oyuncu artık en az tam bir bahis veya yükseltmeyle karşı karşıya olsun (ör. check yaptı, ardından biri tam bahis yaptı) |
 | Tek all-in ≥ tam yükseltme | ✅ Evet — herkes yeniden yükseltebilir |
 | Birden fazla kısa all-in, toplam < tam yükseltme | ❌ Hayır |
 | Birden fazla kısa all-in; oyuncunun son aksiyonundan beri artış ≥ tam bahis/yükseltme | ✅ Evet — yalnızca o oyuncu için |

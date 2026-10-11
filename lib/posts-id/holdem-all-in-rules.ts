@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Chip yang dipertaruhkan di atas jumlah itu oleh dua stack lebih besar atau lebih membentuk side pot yang hanya bisa dimenangkan mereka; taruhan ekstra dari satu pemain saja cukup dikembalikan. Di no-limit dan pot-limit, all-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi — kecuali beberapa all-in pendek yang digabung mencapai setidaknya satu raise penuh di atas jumlah yang sudah dimasukkan pemain itu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 menit",
@@ -137,7 +137,7 @@ Apa yang terjadi pada Pemain A, dan pada Pemain C yang belum beraksi?
 
 | Jumlah all-in (no-limit / pot-limit) | Raise penuh? | Membuka kembali taruhan? |
 |--------------|-------------|-----------------|
-| Kurang dari satu raise penuh | Tidak | Tidak — pemain yang sudah beraksi hanya bisa call atau fold |
+| Kurang dari satu raise penuh | Tidak | Tidak — pemain yang sudah beraksi dan kini menghadapi kurang dari satu bet atau raise penuh hanya bisa call atau fold |
 | Satu raise penuh atau lebih | Ya | Ya — semua pemain boleh re-raise lagi |
 
 </div>
@@ -180,7 +180,7 @@ Tabel ini untuk no-limit dan pot-limit. Di permainan limit, ambangnya setengah b
 
 | Situasi | Terbuka kembali bagi yang sudah beraksi? |
 |---|---|
-| Satu all-in < raise penuh | ❌ Tidak — hanya call atau fold |
+| Satu all-in < raise penuh | ❌ Tidak — hanya call atau fold, kecuali pemain itu kini menghadapi setidaknya satu bet atau raise penuh (misalnya ia check, lalu ada yang bet penuh) |
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
 | Beberapa all-in pendek, gabungan ≥ raise penuh | ✅ Ya — bagi tiap pemain yang kini menghadapi setidaknya satu raise penuh di atas aksi terakhirnya sendiri |

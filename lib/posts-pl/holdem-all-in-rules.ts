@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Co dzieje się z Graczem A i z Graczem C, który jeszcze nie zagrał?
 
 | Kwota all-inu | Pełne przebicie? | Otwiera licytację? |
 |--------------|-------------|-----------------|
-| Mniej niż pełne przebicie | Nie | Nie — kto już zagrał, może tylko sprawdzić lub spasować |
+| Mniej niż pełne przebicie | Nie | Nie — kto już zagrał i teraz ma przed sobą mniej niż pełny zakład lub pełne przebicie, może tylko sprawdzić lub spasować |
 | Pełne przebicie lub więcej | Tak | Tak — wszyscy mogą znów przebić |
 
 </div>
@@ -178,7 +178,7 @@ Próg minimalnego przebicia to zawsze *ostatni pełny prawidłowy zakład lub pr
 
 | Sytuacja | Otwiera dla tych, którzy już zagrali? |
 |---|---|
-| Pojedynczy all-in < pełne przebicie | ❌ Nie — tylko sprawdzić lub spasować |
+| Pojedynczy all-in < pełne przebicie | ❌ Nie — tylko sprawdzić lub spasować, chyba że ten gracz ma teraz przed sobą co najmniej pełny zakład lub pełne przebicie (np. czeknął, a potem ktoś postawił pełny zakład) |
 | Pojedynczy all-in ≥ pełne przebicie | ✅ Tak — wszyscy mogą przebić |
 | Kilka krótkich all-inów, suma < pełne przebicie | ❌ Nie |
 | Kilka krótkich all-inów, przyrost od ostatniej akcji gracza ≥ pełny zakład lub przebicie | ✅ Tak, dla tego gracza |

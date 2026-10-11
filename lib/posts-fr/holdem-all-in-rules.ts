@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire all-in (tapis), c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as couvert, c'est le pot principal ; les jetons misés au-delà par deux stacks plus gros ou plus forment un side pot (pot annexe) qu'eux seuls peuvent gagner, et une mise supplémentaire isolée est simplement rendue. En no-limit et en pot-limit, un all-in inférieur à une relance complète ne rouvre pas les enchères pour un joueur qui a déjà parlé, sauf si plusieurs petits all-in cumulés atteignent au moins une relance complète au-dessus de ce qu'il a déjà mis.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-08",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -145,7 +145,7 @@ Que se passe-t-il pour le joueur A, et pour le joueur C qui n'a pas encore parl�
 
 | Montant de l'all-in (no-limit / pot-limit) | Relance complète ? | Rouvre les enchères ? |
 |--------------|-------------|-----------------|
-| Moins qu'une relance complète | Non | Non — les joueurs qui ont déjà parlé peuvent seulement suivre ou se coucher |
+| Moins qu'une relance complète | Non | Non — un joueur qui a déjà parlé et fait maintenant face à moins qu'une mise ou relance complète peut seulement suivre ou se coucher |
 | Relance complète ou plus | Oui | Oui — tous les joueurs peuvent de nouveau relancer |
 
 </div>
@@ -188,7 +188,7 @@ Ce tableau vaut pour le no-limit et le pot-limit. En limit, le seuil est une dem
 
 | Situation | Rouvre pour les joueurs qui ont déjà parlé ? |
 |---|---|
-| Un seul all-in < relance complète | ❌ Non — suivre ou se coucher uniquement |
+| Un seul all-in < relance complète | ❌ Non — suivre ou se coucher uniquement, sauf si ce joueur fait maintenant face à au moins une mise ou relance complète (ex. il a checké, puis quelqu'un a misé un montant complet) |
 | Un seul all-in ≥ relance complète | ✅ Oui — tout le monde peut relancer |
 | Plusieurs all-in courts, cumul < relance complète | ❌ Non |
 | Plusieurs all-in courts, cumul ≥ relance complète | ✅ Oui — pour chaque joueur qui fait maintenant face à au moins une relance complète au-dessus de sa propre dernière action |

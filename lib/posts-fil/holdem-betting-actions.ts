@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, nangyayari lang iyon kapag ikaw ang big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-07",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -130,7 +130,7 @@ Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling bet o rai
 
 Dalawang live-poker rules na kasama ng pag-raise:
 
-1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: paglalagay ng chips sa maraming galaw **nang hindi** muna nag-aanunsyo ng "raise" (==Rule 103==).
+1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: paglalagay ng chips sa maraming galaw **nang hindi** muna nag-aanunsyo ng "raise" (==WSOP Tournament Rule 103==).
 2. **Isang galaw.** Kung hindi ka mag-anunsyo, ang chips mo ay dapat pumasok sa iisang forward na galaw.
 
 Kung *gaano* kalaki ang dapat mong i-raise (2.5x na opens, 3x na 3-bets, sizing base sa board texture) ay strategy, hindi rules.
@@ -182,7 +182,7 @@ Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na
 
 ### Mistake 3 — Big blind na nag-fold ng libreng flop
 
-Nag-limp lahat, umabot ang action sa big blind, tapos nag-fold sila. Iyon ay libreng flop na itinapon sa muck. ==g:Kung walang nag-raise, pwede mag-check ang BB at makita ang tatlong card nang walang dagdag na gastos== — buhay na ang blind. Nangyayari ito kada orbit.
+Nag-limp lahat, umabot ang action sa big blind, tapos nag-fold sila. Iyon ay libreng flop na itinapon sa muck. ==g:Kung walang nag-raise o nag-straddle, pwede mag-check ang BB at makita ang tatlong card nang walang dagdag na gastos== — buhay na ang blind. Nangyayari ito kada orbit.
 
 ### Mistake 4 — Ang tahimik na iisang chip
 

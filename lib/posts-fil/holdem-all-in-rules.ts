@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Ano ang mangyayari kay Player A, at kay Player C na hindi pa nakakilos?
 
 | Halaga ng all-in | Full raise? | Nagbubukas ng betting? |
 |--------------|-------------|-----------------|
-| Kulang sa full raise | Hindi | Hindi — call o fold lang ang mga nakakilos na |
+| Kulang sa full raise | Hindi | Hindi — call o fold lang ang nakakilos na kung kulang sa full bet o raise ang hinaharap niya ngayon |
 | Full raise o higit pa | Oo | Oo — lahat ay puwedeng mag-re-raise ulit |
 
 </div>
@@ -178,7 +178,7 @@ Ang minimum raise threshold ay palaging ang *huling full valid bet o raise* — 
 
 | Sitwasyon | Nagbubukas para sa mga nakakilos na? |
 |---|---|
-| Iisang all-in < full raise | ❌ Hindi — call o fold lang |
+| Iisang all-in < full raise | ❌ Hindi — call o fold lang, maliban kung ang hinaharap na ngayon ng player na iyon ay hindi bababa sa full bet o raise (hal. nag-check siya, tapos may nag-full bet) |
 | Iisang all-in ≥ full raise | ✅ Oo — lahat puwedeng mag-re-raise |
 | Maraming maliliit na all-in, combined < full raise | ❌ Hindi |
 | Maraming short all-in; increase mula sa huling action ng player ≥ full bet/raise | ✅ Oo — para lang sa player na iyon |

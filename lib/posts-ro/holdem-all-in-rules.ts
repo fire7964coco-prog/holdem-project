@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-10-11",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Ce se întâmplă cu Jucătorul A și cu Jucătorul C, care încă n-a acționat
 
 | Suma all-in | Mărire completă? | Redeschide pariurile? |
 |--------------|-------------|-----------------|
-| Mai mică decât o mărire completă | Nu | Nu — cine a acționat deja poate doar plăti sau renunța |
+| Mai mică decât o mărire completă | Nu | Nu — cine a acționat deja și acum are în față mai puțin decât un pariu sau o mărire completă poate doar plăti sau renunța |
 | Mărire completă sau mai mult | Da | Da — toți pot mări din nou |
 
 </div>
@@ -178,7 +178,7 @@ Pragul măririi minime este mereu *ultimul pariu sau ultima mărire completă va
 
 | Situație | Se redeschide pentru cine a acționat deja? |
 |---|---|
-| Un singur all-in < mărire completă | ❌ Nu — doar plătești sau renunți |
+| Un singur all-in < mărire completă | ❌ Nu — doar plătești sau renunți, cu excepția cazului în care acel jucător are acum în față cel puțin un pariu sau o mărire completă (de ex. a dat check, apoi cineva a pariat complet) |
 | Un singur all-in ≥ mărire completă | ✅ Da — toți pot mări |
 | Mai multe all-in-uri scurte, suma < mărire completă | ❌ Nu |
 | Mai multe all-in-uri scurte, creșterea de la ultima acțiune a jucătorului ≥ pariu sau mărire completă | ✅ Da, pentru acel jucător |

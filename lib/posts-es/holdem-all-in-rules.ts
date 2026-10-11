@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas que dos o más stacks más grandes apuestan por encima de eso forman un side pot que solo ellos pueden ganar; una apuesta extra de un solo jugador simplemente se le devuelve. En sin límite y pot-limit, un all-in menor que una subida completa NO reabre la apuesta para quien ya actuó, salvo que varios all-ins cortos sumen al menos una subida completa sobre lo que ese jugador ya puso.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -137,7 +137,7 @@ Ciegas $1/$2. Cuatro jugadores ven el flop.
 
 | Cantidad del all-in (sin límite / pot-limit) | ¿Subida completa? | ¿Reabre la apuesta? |
 |--------------|-------------|-----------------|
-| Menos de una subida completa | No | No — quienes ya actuaron solo pueden pagar o retirarse |
+| Menos de una subida completa | No | No — quien ya actuó y ahora se enfrenta a menos de una apuesta o subida completa solo puede pagar o retirarse |
 | Subida completa o más | Sí | Sí — todos pueden volver a resubir |
 
 </div>
@@ -180,7 +180,7 @@ La tabla es para sin límite y pot-limit. En una partida con límite el umbral e
 
 | Situación | ¿Se reabre para quienes ya actuaron? |
 |---|---|
-| Un solo all-in < subida completa | ❌ No — solo pagar o retirarse |
+| Un solo all-in < subida completa | ❌ No — solo pagar o retirarse, salvo que ese jugador se enfrente ahora al menos a una apuesta o subida completa (p. ej., pasó y luego alguien hizo una apuesta completa) |
 | Un solo all-in ≥ subida completa | ✅ Sí — todos pueden resubir |
 | Varios all-ins cortos, suma < subida completa | ❌ No |
 | Varios all-ins cortos, suma ≥ subida completa | ✅ Sí — para cada jugador que ahora tenga delante al menos una subida completa por encima de su última acción |

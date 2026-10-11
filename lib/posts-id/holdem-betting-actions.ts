@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise penuh terakhir), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 menit",
@@ -130,7 +130,7 @@ Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise penuh terakhir, b
 
 Dua aturan poker live yang menyertai raise:
 
-1. **Ucapkan "raise" beserta jumlahnya sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: bet atau raise dalam beberapa gerakan (tangan Anda sempat kembali ke stack di tengah jalan) **tanpa** mengucapkan "raise" lebih dulu — atau gerakan tipuan untuk memancing aksi di luar giliran (==Rule 103==).
+1. **Ucapkan "raise" beserta jumlahnya sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: bet atau raise dalam beberapa gerakan (tangan Anda sempat kembali ke stack di tengah jalan) **tanpa** mengucapkan "raise" lebih dulu — atau gerakan tipuan untuk memancing aksi di luar giliran (==WSOP Tournament Rule 103==).
 2. **Satu gerakan.** Kalau Anda tidak mengucapkannya, chip Anda harus masuk dalam satu gerakan maju.
 
 *Seberapa besar* Anda sebaiknya raise (open 2,5x, 3-bet 3x, ukuran sesuai tekstur board) adalah strategi, bukan aturan — itu ada di [panduan strategi lengkap Texas Hold'em](/id/blog/holdem-strategy).
@@ -186,7 +186,7 @@ Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia
 
 ### Kesalahan 3 — Big blind membuang flop gratis
 
-Semua orang limp, giliran sampai ke big blind, dan dia fold. Itu sama saja membuang kesempatan melihat flop gratis. ==g:Kalau tidak ada yang raise, BB boleh check dan melihat tiga kartu tanpa biaya tambahan== — blind-nya sudah hidup. Ini terjadi di hampir setiap orbit.
+Semua orang limp, giliran sampai ke big blind, dan dia fold. Itu sama saja membuang kesempatan melihat flop gratis. ==g:Kalau tidak ada yang raise atau straddle, BB boleh check dan melihat tiga kartu tanpa biaya tambahan== — blind-nya sudah hidup. Ini terjadi di hampir setiap orbit.
 
 ### Kesalahan 4 — Satu chip besar tanpa suara
 
@@ -227,7 +227,7 @@ A. Tergantung ukuran all-in-nya. Kalau all-in itu merupakan raise penuh yang sah
 
 **Q. Apa itu string bet di poker?**
 
-A. Mencoba bet atau raise dalam beberapa gerakan — kembali ke stack Anda di tengah jalan — tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Gerakan kedua tidak pernah dihitung — hanya chip pertama yang berlaku, dengan aturan call satu chip dan beberapa chip diterapkan lebih dulu (TDA Rules 44–45, edisi 2024). Jika ambang setengah minimum dalam Rule 43-A berlaku, yang diukur adalah tambahan di atas call, bukan total chip: kurang dari setengah bet penuh atau kenaikan raise penuh terbesar sebelumnya berarti call; setengah atau lebih wajib dilengkapi menjadi min-raise penuh. Deklarasi raise sebelumnya atau all-in mengikuti aturannya sendiri. Rule 103 juga melarang gerakan tipuan untuk memancing aksi di luar giliran sebelum aksi Anda sendiri selesai. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas — "raise" beserta jumlah penuhnya — atau gerakkan semua chip dalam satu gerakan (TDA Rule 42, edisi 2024).
+A. Mencoba bet atau raise dalam beberapa gerakan — kembali ke stack Anda di tengah jalan — tanpa mengucapkan "raise" lebih dulu (==WSOP Tournament Rule 103==). Gerakan kedua tidak pernah dihitung — hanya chip pertama yang berlaku, dengan aturan call satu chip dan beberapa chip diterapkan lebih dulu (TDA Rules 44–45, edisi 2024). Jika ambang setengah minimum dalam Rule 43-A berlaku, yang diukur adalah tambahan di atas call, bukan total chip: kurang dari setengah bet penuh atau kenaikan raise penuh terbesar sebelumnya berarti call; setengah atau lebih wajib dilengkapi menjadi min-raise penuh. Deklarasi raise sebelumnya atau all-in mengikuti aturannya sendiri. WSOP Tournament Rule 103 juga melarang gerakan tipuan untuk memancing aksi di luar giliran sebelum aksi Anda sendiri selesai. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas — "raise" beserta jumlah penuhnya — atau gerakkan semua chip dalam satu gerakan (TDA Rule 42, edisi 2024).
 
 **Q. Apa arti limp di poker?**
 

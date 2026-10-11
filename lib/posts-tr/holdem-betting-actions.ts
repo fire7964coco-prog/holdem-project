@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-06",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",
@@ -156,7 +156,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
-1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==Kural 103==).
+1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==WSOP turnuva kuralı 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
 *Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu [Texas Hold'em stratejisine](/tr/blog/holdem-strategy) girer.
@@ -212,7 +212,7 @@ Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce
 
 ### Hata 3 — Big blind'in bedava flop'u atması
 
-Herkes limp'ler, sıra big blind'e gelir ve o... fold eder. Bu, bedava bir flop'u muck'a atmaktır. ==g:Kimse yükseltmediyse BB check yapıp üç kartı sıfır ekstra maliyetle görebilir== — blind zaten canlı. Bu her turda çıkar.
+Herkes limp'ler, sıra big blind'e gelir ve o... fold eder. Bu, bedava bir flop'u muck'a atmaktır. ==g:Kimse yükseltmediyse ve straddle koymadıysa BB check yapıp üç kartı sıfır ekstra maliyetle görebilir== — blind zaten canlı. Bu her turda çıkar.
 
 ### Hata 4 — Sessiz tek çip
 
@@ -253,7 +253,7 @@ A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareke
 
 **Q. Pokerde string bet nedir?**
 
-A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (Kural 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir. ("Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı sözlü beyan kuralıdır: ilk söz geçerli.) Hareketini sözle ilan et ya da tüm çipleri tek hareketle koy.
+A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (WSOP turnuva kuralı 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir. ("Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı sözlü beyan kuralıdır: ilk söz geçerli.) Hareketini sözle ilan et ya da tüm çipleri tek hareketle koy.
 
 **Q. Pokerde limp ne demek?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, asta se întâmplă doar dacă ești big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -130,7 +130,7 @@ Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultim
 
 Două reguli de poker live care vin la pachet cu relansarea:
 
-1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: să pui jetoane în mai multe mișcări **fără** să anunți întâi "raise" (==regula 103==).
+1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: să pui jetoane în mai multe mișcări **fără** să anunți întâi "raise" (==regula 103 din regulamentul de turnee WSOP==).
 2. **O singură mișcare.** Dacă nu anunți, jetoanele trebuie să intre printr-o unică mișcare înainte.
 
 *Cât* ar trebui să relansezi (deschideri de 2,5x, 3-bet-uri de 3x, sizing în funcție de textura boardului) ține de strategie, nu de reguli — asta e altă discuție.
@@ -182,7 +182,7 @@ Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge j
 
 ### Greșeala 3 — Big blind-ul care aruncă un flop gratis
 
-Toți intră la limp, acțiunea ajunge la big blind… și el dă fold. Ăla e un flop gratis aruncat la gunoi. ==g:Dacă nimeni nu a relansat, BB-ul poate da check și vede trei cărți fără niciun cost în plus== — blindul lui e deja viu. Se întâmplă la fiecare tur de masă.
+Toți intră la limp, acțiunea ajunge la big blind… și el dă fold. Ăla e un flop gratis aruncat la gunoi. ==g:Dacă nimeni nu a relansat și nu a pus straddle, BB-ul poate da check și vede trei cărți fără niciun cost în plus== — blindul lui e deja viu. Se întâmplă la fiecare tur de masă.
 
 ### Greșeala 4 — Jetonul singur, tăcut
 
@@ -223,7 +223,7 @@ A. Depinde de mărimea all-in-ului. Dacă all-in-ul e o relansare legală comple
 
 **Q. Ce este un string bet la poker?**
 
-A. Să pui jetoanele în mai multe mișcări fără să fi anunțat "raise" înainte (==regula 103==). Dealerii judecă string bet-ul drept un call al sumei inițiale. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare sau mută toate jetoanele într-o singură mișcare.
+A. Să pui jetoanele în mai multe mișcări fără să fi anunțat "raise" înainte (==regula 103 din regulamentul de turnee WSOP==). Dealerii judecă string bet-ul drept un call al sumei inițiale. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare sau mută toate jetoanele într-o singură mișcare.
 
 **Q. Ce înseamnă să faci limp la poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na dau au raise iliyotangulia), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — na kwenye preflop hilo hutokea ukiwa big blind pekee.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-10-11",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -130,7 +130,7 @@ Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise ya mwisho, 
 
 Sheria mbili za live poker zinazokuja na raise:
 
-1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: kusukuma chipsi kwa mienendo kadhaa **bila** kutangaza "raise" kwanza (==Rule 103==).
+1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: kusukuma chipsi kwa mienendo kadhaa **bila** kutangaza "raise" kwanza (==WSOP Tournament Rule 103==).
 2. **Mwendo mmoja.** Kama hutatangaza, chipsi zako lazima ziingie kwa mwendo mmoja wa mbele.
 
 *Kiasi* gani unatakiwa raise (open za 2.5x, 3-bet za 3x, sizing kulingana na texture ya bodi) ni strategy, si sheria.
@@ -182,7 +182,7 @@ Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma
 
 ### Kosa 3 — Big blind kufold flop ya bure
 
-Kila mtu anafanya limp, action inafika kwa big blind, na wanafold. Hiyo ni flop ya bure iliyotupwa kwenye muck. ==g:Kama hakuna aliyeraise, BB anaweza check na kuona karata tatu bila gharama ya ziada== — blind yake tayari iko hai. Hili linatokea kila orbit.
+Kila mtu anafanya limp, action inafika kwa big blind, na wanafold. Hiyo ni flop ya bure iliyotupwa kwenye muck. ==g:Kama hakuna aliyeraise wala kuweka straddle, BB anaweza check na kuona karata tatu bila gharama ya ziada== — blind yake tayari iko hai. Hili linatokea kila orbit.
 
 ### Kosa 4 — Chipsi moja ya kimya
 
