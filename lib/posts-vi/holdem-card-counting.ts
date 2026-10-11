@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Không theo cách bạn đếm trong blackjack: bộ bài được xào lại mỗi ván và quá ít lá lộ ra, nên theo dõi lá cao lá thấp không cho bạn lợi thế nào. Nhưng poker có kiểu đếm riêng hoàn toàn được phép: đếm outs, dùng blocker và theo dõi lá bài chết để đọc ra những tay đối thủ không thể có.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -147,7 +147,7 @@ A. Không. Đếm bài blackjack theo dõi cân bằng cao-thấp của một h�
 
 **Q. Đếm bài trong poker có vi phạm luật phòng bài không?**
 
-A. Không — tính outs và blocker trong đầu là kỹ năng bình thường và là một phần tự nhiên của poker; phòng bài và nền tảng chỉ hạn chế trợ giúp từ bên ngoài trong lúc chơi: thiết bị, bảng biểu và lời khuyên từ người khác.
+A. Không — tính outs và blocker trong đầu là kỹ năng bình thường và là một phần tự nhiên của poker; thứ phòng bài và nền tảng hạn chế là trợ giúp từ bên ngoài: thiết bị, bảng biểu và lời khuyên từ người khác. Phần mềm online có luật riêng — ví dụ PokerStars hạn chế dùng solver khi client của họ đang mở.
 
 **Q. Đếm bài có hiệu quả trong Texas Hold'em không?**
 
