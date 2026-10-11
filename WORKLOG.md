@@ -1,3 +1,11 @@
+## 2026-10-11 (2) — queue §2-AU AU-1~4 이행 · kicker EN + 9로케일 · vi 3편 · 배포 `86846fb3` · MB-233
+
+- 사장님 «queue §2-AU AU-1~4 진행해». 처방 = MA 그대로 «같은 글 정답 문면 재사용».
+- AU-1: EN note 끝 절 → FAQ L182 축어 «Your hole card only plays as a kicker when it's higher than the board cards it would replace.» · 9로케일은 각 로케일 같은 글 FAQ 축어(de·es·fr·id·ja·ms·pt·vi·zh-hant). zh note = 이미 «只有比它要挤掉的那张公共牌更大，才算得上踢脚»(AM-1 때 미변경) → 무변경. 앞 절 «9가 Q 뒤로 밀린다» 예시는 참이라 유지.
+- AU-2~4 vi: kicker tldr·FAQ1 «khi cả hai cùng đôi A» · split FAQ2 «không bao giờ phá thế hòa» · flush FAQ «Trong các thể thức phổ biến». L45 본문 예시(«Cả hai đều có "đôi A"» 전제 명시)는 유지.
+- `updated` 로케일 10-11(10파일 · f5a5b927 과소 부채도 해소) · EN 무변경(check-stamp EN 문턱 선례).
+- 게이트: audit:hard en·de·es·fr·id·ja·ms·pt·vi·zh-hant 🔴 0(es 🟠 1 = 기존 probability↔drawing-odds C2) · build exit 0(74 + 729).
+
 ## 2026-10-11 (1) — MA-421 회신+등재 · queue §2-AU · MB-232
 
 - 사장님 «MA-421 회신과 대기열 등재 진행해». 인용 문면 현 main `d3b3cc7e` vi·EN ts 축어 대조(전 자리 실재 · 행 번호 ts 기준). 반례 A♠9♣ / A♦K♥Q♠J♦2♣ 손 검산 = EN kicker note 거짓 확인.

@@ -766,7 +766,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - MB-223 ② register·성조 = 이상 없음 · ④ 메타·FAQ 정형 = 사실 왜곡 없음 → 접수.
 - ✅ 이행 10-10 (16) `0876cc17` = vi 5편(blind 무변경 · `updated` 10-10) · AT-2 = 실머니 표·문장 삭제 + 연습 칩 문면(같은 글 칩 표 수치) + 토너먼트 buy-in 문단을 링크 한 줄로 · AT-7 = 45-A «chip bạn đẩy ra» 검사 문형(Ex-2 2000 vs 1050 = call) · AT-8 = 17-A·16·B 143(«trừ khi … tay bài sống duy nhất»). diff 교열 렌즈(vi 네이티브+TD · Opus 5.5) 반영 5 · 미반영 1(betting «call thì phải trả tiền» 비유 = 범위 밖 · 실머니 권유 아님). 🪶 통지 (a)(b)는 그대로 남김.
 
-### 2-AU. 우편함 수신분 — MA-421 (VI 회차 2 🅱 rank 6편 · 기준 `bea65d3b`) · 등재 2026-10-11 (1) · 회신 MB-232 · 미이행
+### 2-AU. 우편함 수신분 — MA-421 (VI 회차 2 🅱 rank 6편 · 기준 `bea65d3b`) · 등재 2026-10-11 (1) · 회신 MB-232 · ✅ AU-1~4 이행 2026-10-11 (2) MB-233
 
 > 근거 = 검수장 `reports/검수-vi-r2-rank-2026-10-10/hq-reverify/HQ-REPORT.md`(701행 OK 638 · RISKY 4 · WRONG 1 · UNV 58). 위치 대조 = 현 main `d3b3cc7e`(행 번호 = ts 파일 · MA의 L은 md 기준) · 인용 문면 전 자리 실재. 반례 손 검산 = A♠9♣ / A♦K♥Q♠J♦2♣ → 베스트5 A-A-K-Q-J · 9 탈락 · 보드의 9 초과 카드 4장(5장 아님) → EN note 문장 거짓 확인. 처방 원칙 = MA 그대로 «같은 글 정답 문면 재사용 — 문안 창작 아님».
 
@@ -778,6 +778,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AU-4 vi | flush | FAQ L231 «Thùng chỉ thắng cù lũ khi ở Short Deck (6+)» | 같은 글 L178 «thể thức phổ biến duy nhất» 한정 재사용(WSOP 2026 B 260 Mexican Poker) |
 
 - 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = kicker tldr·FAQ «AK beats AQ when the board pairs an ace» · hand-rankings FAQ L384 «worst possible hand is 7-5-4-3-2»(5장 기준 · 7장 최약 = 9-8-7-5-4) · reading TDA 22 휴식 중 예외 · 보드 로열 «split equally» 사이드팟 자격 · 보드 스트레이트 «whoever extends it» · flush FAQ «better top card» 둘째 이하 · split 사이드팟 FAQ «kept betting after…» · Seven-Card Stud «No community cards» · tiebreak «fifth card only stops mattering…» · kicker note «if the highest side card is a community card» 조건 · EN split L163 «Suits never affect the split» **통지 2 vi 단독** = reading L57 «khớp hạng giữa bài tẩy và board»(포켓페어·보드 페어) · flush Short Deck 절 «flush > straight 유지» 미기재 → AU 이행 회차에 같이 볼지 그때 판단.
+- ✅ 이행 10-11 (2) = AU-1 EN + 9로케일(de·es·fr·id·ja·ms·pt·vi·zh-hant) note 끝 절 → 각 로케일 같은 글 FAQ «only plays as a kicker…» 축어(zh = 이미 같은 꼴 «只有比它要挤掉的那张公共牌更大» → 무변경) · AU-2 vi tldr «khi cả hai cùng đôi A nhờ một lá A trên bài chung (board)» · FAQ1 «khi cả hai cùng đôi A» · AU-3 vi FAQ2 «Chất bài không bao giờ phá thế hòa» · AU-4 vi FAQ «Trong các thể thức phổ biến, thùng chỉ thắng cù lũ ở Short Deck (6+)». `updated` 로케일 10-11 · EN 무변경(check-stamp EN 문턱 · 선례 `f5a5b927`). 🪶 통지 1·2는 그대로 남김.
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. MB-226·227 vi 🅱 5편 몫 = 이 회차가 새 문면 판정으로 흡수 → 접수. 🟠 공용 🆕 vi 12 = MA-420 이행 진행 신호(되돌림 아님) → MB-231 배포로 해소.
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
