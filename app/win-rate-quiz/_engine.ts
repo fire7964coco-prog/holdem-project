@@ -111,18 +111,11 @@ function expandPool(range: WeightedHole[], deadKeys: Set<number>): NCard[][] {
  *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
  *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
  */
-async function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[]): Promise<NCard[][]> {
+function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[]): NCard[][] {
   // ★2026-10-11: 출발점이 «남은 카드 전부(1,081쌍)»에서 **그 상대의 프리플랍 레인지**로 바뀌었다.
   //   레이즈·콜이 공개 정보인 것처럼, 프리플랍에 팟에 들어왔다는 것도 공개 정보다.
   const kept: WeightedHole[] = [];
-  // 이 루프도 양보해야 한다 — 콤보 수 × 이력 단계라 6배 느린 기기에선 200ms를 넘긴다
-  let n = 0;
-  let last = performance.now();
   for (const c of preflop) {
-    if (++n % CLOCK_EVERY === 0 && performance.now() - last > SLICE_MS) {
-      await yieldToMain();
-      last = performance.now();
-    }
     if (deadKeys.has(keyOf(c.hole[0])) || deadKeys.has(keyOf(c.hole[1]))) continue;
     let ok = true;
     for (const step of history) {
@@ -133,153 +126,197 @@ async function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], prefl
   return expandPool(kept, deadKeys);
 }
 
-/** 메인스레드를 잠깐 놓아준다 — 안 하면 계산이 1.6초짜리 long task가 되어 화면이 얼어붙는다 */
-const yieldToMain = () => new Promise<void>((r) => setTimeout(r, 0));
+// ── 난수 ─────────────────────────────────────────────────────────────────────
 
 /**
- * 한 번에 붙잡고 있어도 되는 시간(ms). 이 시간이 지나면 메인스레드를 놓아준다.
+ * 시드 고정 난수(mulberry32). **같은 판이면 어느 기기에서 몇 번을 돌려도 같은 숫자**가 나온다.
  *
- * 🔴 **개수가 아니라 시간으로 자를 것.** 처음엔 "표본 4,000개마다"로 잘랐는데,
- *   그건 데스크톱에서 한 조각이 30~40ms인 값이라 **기기가 느려지면 그대로 늘어난다.**
- *   CPU 스로틀링 실측: 4배 느린 기기에서 최악 217ms · 6배에서 **429ms**(총 블로킹 3.9초)로
- *   long task가 26~36개씩 돌아왔다. 시간 기준이면 느린 기기일수록 자동으로 더 자주 끊긴다.
- * ★50ms가 long task 기준선이라 그 절반으로 잡았다.
+ * ★S-034 회차 2 (2026-10-11) — 그 전엔 Math.random + 시간 예산이라 같은 판도 기기마다
+ *   표본 수가 달랐고(8,000~60,000) 마지막 자리가 흔들렸다. 계산을 웹 워커로 옮기면서
+ *   «화면이 얼지 않게 표본을 줄이는» 이유가 사라져 표본을 고정하고 시드도 고정했다.
  */
-const SLICE_MS = 25;
-
-/** 매 반복마다 performance.now()를 부르면 그 자체가 비싸다 — 이 간격으로만 시계를 본다 */
-const CLOCK_EVERY = 128;
+export function mulberry32(seed: number): () => number {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
 
 // ── 내 승률 (상대 패를 모르는 상태) ───────────────────────────────────────────
 
+/** 승·무·패 분리 — 전부 % · equity = 승 + 무승부 몫(같이 이긴 사람 수로 나눈다) */
+export interface EquitySplit {
+  win: number;
+  tie: number;
+  lose: number;
+  equity: number;
+}
+
 /**
- * 상대들의 홀카드가 미지수일 때 내 승률 %. 무승부는 절반으로 센다.
+ * 상대들의 홀카드가 미지수일 때 내 승률(승·무·패).
  *
  * @param pools  **상대별** 홀카드 후보 레인지(내 패·보드와 겹치는 콤보는 빠져 있어야 한다).
- *               null이면 전원 무작위 — 2026-10-11부터 화면에서는 안 쓴다(프리플랍도 자리별 레인지).
  *               상대마다 액션이 다르므로(한 명은 레이즈, 한 명은 콜) 레인지도 각각이다.
- * @param onChunk 표본 CHUNK개마다 불린다 — 메인스레드 양보용
+ *               후보가 한 개뿐인 레인지를 주면 그 패로 고정된다(공개된 패 계산).
+ * ★무승부 몫: 2026-10-11 전에는 «무승부 = 절반»이라 3명 동점에서도 1/2을 셌다 → 1/동점자 수로 바로잡았다.
  */
-export async function heroEquity(
+export function heroEquity(
   heroCards: Card[],
   boardCards: Card[],
-  opponents: number,
-  pools: NCard[][][] | null,
-  samples: number
-): Promise<number> {
+  pools: NCard[][][],
+  samples: number,
+  rng: () => number
+): EquitySplit {
   const h = heroCards.map(toNum);
   const b = boardCards.map(toNum);
+  const opponents = pools.length;
   const dead = new Set([...h, ...b].map(keyOf));
-  const deck: NCard[] = [];
+  const bag: NCard[] = [];
   for (let r = 2; r <= 14; r++)
-    for (let s = 0; s < 4; s++) if (!dead.has(r * 4 + s)) deck.push([r, s]);
+    for (let s = 0; s < 4; s++) if (!dead.has(r * 4 + s)) bag.push([r, s]);
 
   const toCome = 5 - b.length;
   const holes: NCard[][] = Array.from({ length: opponents }, () => [[0, 0], [0, 0]]);
-  const full: NCard[] = [b[0], b[1], b[2], b[3], b[4]].slice(0, b.length) as NCard[];
+  const full: NCard[] = [...b];
   for (let i = b.length; i < 5; i++) full.push([0, 0]);
   const heroBuf: NCard[] = [h[0], h[1], full[0], full[1], full[2], full[3], full[4]];
   const oppBuf: NCard[] = [[0, 0], [0, 0], full[0], full[1], full[2], full[3], full[4]];
 
-  let win = 0, tie = 0, n = 0;
+  let win = 0, tie = 0, share = 0, n = 0;
   const used = new Set<number>();
-  const bag = [...deck];
 
-  const started = performance.now();
-  let lastYield = started;
   for (let k = 0; k < samples; k++) {
-    if (k % CLOCK_EVERY === 0) {
-      const now = performance.now();
-      // 메인스레드 양보 — 개수가 아니라 **경과 시간**으로 자른다(SLICE_MS 주석 참조)
-      if (now - lastYield > SLICE_MS) {
-        await yieldToMain();
-        lastYield = performance.now();
-      }
-      // 시간 예산 초과 → 하한만 채웠으면 여기서 멈춘다(BUDGET_MS 주석 참조)
-      if (k >= MIN_SAMPLES && performance.now() - started > BUDGET_MS) break;
-    }
     used.clear();
     let ok = true;
 
     // 1) 상대 홀카드 배정 — 상대마다 자기 액션에 맞는 레인지에서 뽑는다
-    if (pools) {
-      for (let o = 0; o < opponents; o++) {
-        const pool = pools[o];
-        let tries = 0;
-        let picked: NCard[] | null = null;
-        while (tries++ < 200) {
-          const cand = pool[(Math.random() * pool.length) | 0];
-          const k0 = keyOf(cand[0]), k1 = keyOf(cand[1]);
-          if (used.has(k0) || used.has(k1)) continue;
-          used.add(k0); used.add(k1);
-          picked = cand;
-          break;
-        }
-        if (!picked) { ok = false; break; }
-        holes[o][0] = picked[0];
-        holes[o][1] = picked[1];
+    for (let o = 0; o < opponents; o++) {
+      const pool = pools[o];
+      let tries = 0;
+      let picked: NCard[] | null = null;
+      while (tries++ < 200) {
+        const cand = pool[(rng() * pool.length) | 0];
+        const k0 = keyOf(cand[0]), k1 = keyOf(cand[1]);
+        if (used.has(k0) || used.has(k1)) continue;
+        used.add(k0); used.add(k1);
+        picked = cand;
+        break;
       }
-      if (!ok) continue; // 배정 실패 표본은 버린다(레인지가 극단적으로 좁을 때만 발생)
-      // 2) 남은 보드는 아직 안 쓴 카드에서
-      let filled = 0;
-      let guard = 0;
-      while (filled < toCome && guard++ < 400) {
-        const c = bag[(Math.random() * bag.length) | 0];
-        const kk = keyOf(c);
-        if (used.has(kk)) continue;
-        used.add(kk);
-        full[b.length + filled] = c;
-        filled++;
-      }
-      if (filled < toCome) continue;
-    } else {
-      // 무작위 상대 — 부분 Fisher-Yates 한 번으로 상대 홀카드 + 남은 보드를 뽑는다
-      const need = opponents * 2 + toCome;
-      for (let i = 0; i < need; i++) {
-        const j = i + ((Math.random() * (bag.length - i)) | 0);
-        const t = bag[i]; bag[i] = bag[j]; bag[j] = t;
-      }
-      for (let o = 0; o < opponents; o++) {
-        holes[o][0] = bag[o * 2];
-        holes[o][1] = bag[o * 2 + 1];
-      }
-      for (let i = 0; i < toCome; i++) full[b.length + i] = bag[opponents * 2 + i];
+      if (!picked) { ok = false; break; }
+      holes[o][0] = picked[0];
+      holes[o][1] = picked[1];
     }
+    if (!ok) continue; // 배정 실패 표본은 버린다(레인지가 극단적으로 좁을 때만 발생)
+    // 2) 남은 보드는 아직 안 쓴 카드에서
+    let filled = 0;
+    let guard = 0;
+    while (filled < toCome && guard++ < 400) {
+      const c = bag[(rng() * bag.length) | 0];
+      const kk = keyOf(c);
+      if (used.has(kk)) continue;
+      used.add(kk);
+      full[b.length + filled] = c;
+      filled++;
+    }
+    if (filled < toCome) continue;
 
     // 3) 승부 — 평가는 §13 검증 평가기가 한다
     for (let i = 0; i < 5; i++) { heroBuf[2 + i] = full[i]; oppBuf[2 + i] = full[i]; }
     const hs = best7fast(heroBuf);
-    let best = -1;
+    let best = -1, atBest = 0;
     for (let o = 0; o < opponents; o++) {
       oppBuf[0] = holes[o][0];
       oppBuf[1] = holes[o][1];
       const vs = best7fast(oppBuf);
-      if (vs > best) best = vs;
+      if (vs > best) { best = vs; atBest = 1; }
+      else if (vs === best) atBest++;
     }
-    if (hs > best) win++;
-    else if (hs === best) tie++;
+    if (hs > best) { win++; share++; }
+    else if (hs === best) { tie++; share += 1 / (atBest + 1); }
     n++;
   }
-  return n ? ((win + tie / 2) / n) * 100 : 0;
+  if (!n) return { win: 0, tie: 0, lose: 0, equity: 0 };
+  return {
+    win: (win / n) * 100,
+    tie: (tie / n) * 100,
+    lose: ((n - win - tie) / n) * 100,
+    equity: (share / n) * 100,
+  };
 }
 
 /**
- * **공개된 상대 패**를 그대로 놓고 계산한 내 승률.
+ * **공개된 패끼리** 좌석마다의 승률 — 방송 화면 방식(S-034 ④).
  *
- * ★2026-08-05 신설 — 「상대 패 보기」를 눌러도 화면 승률은 레인지 기준이라
- *   보이는 카드와 무관한 숫자가 된다(실측 스팟에서 20.1% vs 27.9%, 7.8%p 차이).
- *   두 값을 나란히 보여주기 위한 것이다.
- * ★구현은 `heroEquity`를 그대로 쓴다 — 상대마다 **후보가 한 개뿐인 레인지**를 주면
- *   그 패로 고정된다. 청크 양보도 함께 물려받아 화면이 안 얼어붙는다.
+ * hands[0]은 나. 플랍부터는 남은 보드를 **전부 열거**(플랍 990 · 턴 44 · 리버 1)해서 정확한 값,
+ * 프리플랍만 몬테카를로(표본 고정 · 시드 고정)다.
+ * @returns equity = 좌석별 몫(%, 합계 100) · hero = 나의 승·무·패
  */
-export function heroEquityVsKnown(
-  heroCards: Card[],
+export function knownEquities(
+  hands: Card[][],
   boardCards: Card[],
-  oppHands: Card[][],
-  samples: number
-): Promise<number> {
-  const pools = oppHands.map((h) => [h.map(toNum)]);
-  return heroEquity(heroCards, boardCards, oppHands.length, pools, samples);
+  samples: number,
+  rng: () => number
+): { equity: number[]; hero: EquitySplit } {
+  const P = hands.length;
+  const nums = hands.map((x) => x.map(toNum));
+  const b = boardCards.map(toNum);
+  const dead = new Set<number>();
+  for (const x of nums) for (const c of x) dead.add(keyOf(c));
+  for (const c of b) dead.add(keyOf(c));
+  const rest: NCard[] = [];
+  for (let r = 2; r <= 14; r++) for (let s = 0; s < 4; s++) if (!dead.has(r * 4 + s)) rest.push([r, s]);
+
+  const bufs: NCard[][] = nums.map((x) => [x[0], x[1], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]);
+  const eq = new Array<number>(P).fill(0);
+  const sc = new Array<number>(P).fill(0);
+  let heroWin = 0, heroTie = 0, total = 0;
+
+  const settle = (full: NCard[]) => {
+    let best = -1;
+    for (let p = 0; p < P; p++) {
+      const buf = bufs[p];
+      for (let i = 0; i < 5; i++) buf[2 + i] = full[i];
+      sc[p] = best7fast(buf);
+      if (sc[p] > best) best = sc[p];
+    }
+    let w = 0;
+    for (let p = 0; p < P; p++) if (sc[p] === best) w++;
+    for (let p = 0; p < P; p++) if (sc[p] === best) eq[p] += 1 / w;
+    if (sc[0] === best) { if (w === 1) heroWin++; else heroTie++; }
+    total++;
+  };
+
+  const full: NCard[] = [...b];
+  if (b.length === 5) settle(full);
+  else if (b.length === 4) {
+    for (const c of rest) { full[4] = c; settle(full); }
+  } else if (b.length === 3) {
+    for (let i = 0; i < rest.length; i++)
+      for (let j = i + 1; j < rest.length; j++) { full[3] = rest[i]; full[4] = rest[j]; settle(full); }
+  } else {
+    const pool = [...rest];
+    for (let k = 0; k < samples; k++) {
+      for (let i = 0; i < 5; i++) {
+        const j = i + ((rng() * (pool.length - i)) | 0);
+        const t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+        full[i] = pool[i];
+      }
+      settle(full);
+    }
+  }
+  return {
+    equity: eq.map((e) => (e / total) * 100),
+    hero: {
+      win: (heroWin / total) * 100,
+      tie: (heroTie / total) * 100,
+      lose: ((total - heroWin - heroTie) / total) * 100,
+      equity: (eq[0] / total) * 100,
+    },
+  };
 }
 
 // ── 아웃츠와 실전 암산(Rule of 2 and 4) ──────────────────────────────────────
@@ -398,8 +435,16 @@ export interface StreetRecord {
   toCall: number;
   /** 팟오즈상 손익분기 승률 % (toCall이 0이면 null) */
   required: number | null;
-  /** 상대 패를 모르는 상태에서의 내 승률 % */
+  /** 상대 패를 모르는 상태에서의 내 승률 % (= split.equity) */
   equity: number;
+  /** 같은 계산의 승·무·패 분리 (S-034 ④) */
+  split: EquitySplit;
+  /**
+   * **공개된 패끼리** 좌석마다의 승률 — «상대 패 보기»·쇼다운·꺾은선용(S-034 ④).
+   * slots[0] = 0(나) · 이 스트리트 액션 뒤에도 남아 있는 사람만. 화면 승률(equity)과 판정에는 안 쓴다.
+   * ★null = 아직 계산 전. 첫 숫자를 빨리 보여 주려고 화면 승률 4스트리트를 먼저 다 낸 뒤에 채운다.
+   */
+  known: { slots: number[]; equity: number[]; hero: EquitySplit } | null;
   /** 이 승률이 자리별 프리플랍 레인지 기준인지(프리플랍), 그 위에 액션까지 맞춘 레인지 기준인지(플랍~) */
   basis: "seat" | "range";
   /** 팟오즈만 놓고 봤을 때의 판정 */
@@ -435,24 +480,17 @@ export const ANTE = 20;
 export const STACK = 1000;
 
 /**
- * 표본 수의 **상한**. 실제로는 기기 속도에 맞춰 이 아래에서 자동으로 멈춘다(BUDGET_MS 참조).
- * 화면의 규칙 설명이 이 값을 그대로 인용하므로 **export해서 손으로 적지 않게** 한다
- * (숫자를 문장에 박아 두면 상수를 바꿨을 때 설명만 거짓이 된다 — 이 프로젝트에서 반복된 사고다).
- */
-export const SAMPLES = { preflop: 60000, postflop: 30000 } as const;
-
-/**
- * 승률 한 번을 계산하는 데 쓸 **시간 예산**과 표본 하한.
+ * 승률 한 번에 쓰는 **고정** 표본 수. 화면의 규칙 설명이 이 값을 그대로 인용하므로
+ * **export해서 손으로 적지 않게** 한다(숫자를 문장에 박아 두면 상수를 바꿨을 때 설명만 거짓이 된다).
  *
- * 🔴 **표본 수를 고정하지 말 것.** 6만으로 고정했더니 CPU 4배 느린 기기에서 첫 숫자까지
- *   **5.6초**, 6배에서 **9.0초**가 걸렸다(실측). 데스크톱은 0.4초였다 —
- *   같은 상수가 기기에 따라 20배 넘게 벌어진다.
- * → 예산을 넘기면 **하한만 채우고 멈춘다.** 빠른 기기는 상한까지 돌아 정밀하고,
- *   느린 기기는 정밀도를 조금 내주고 빨리 답을 준다.
- * ★하한 8,000이면 표준오차 약 ±0.56%p — 소수 1자리 표시에서 마지막 자리만 흔들리는 수준이다.
+ * ★S-034 회차 2 (2026-10-11): 그 전엔 시간 예산(700ms)으로 8,000~60,000 사이에서 기기마다
+ *   표본이 달랐다 — 메인 스레드에서 돌아 느린 기기가 얼어붙지 않게 하려는 장치였다.
+ *   계산이 웹 워커(`_engine.worker.ts`)로 옮겨 가 화면이 얼 일이 없어졌으므로 **고정**하고
+ *   시드도 판마다 고정한다(`mulberry32`) → 같은 판은 어느 기기에서든 같은 숫자.
+ * ★표준오차: 40,000회 ≈ ±0.25%p · 20,000회 ≈ ±0.35%p(승률 50% 근처 최대치).
+ *   known = 공개된 패끼리 프리플랍(플랍부터는 전수 열거라 표본이 없다).
  */
-export const BUDGET_MS = 700;
-export const MIN_SAMPLES = 8000;
+export const SAMPLES = { preflop: 40000, postflop: 20000, known: 40000 } as const;
 
 /**
  * 한 판을 통째로 계산한다. 클릭할 때마다 계산하면 화면이 멈추므로 미리 다 구해 둔다.
@@ -462,16 +500,19 @@ export const MIN_SAMPLES = 8000;
  * @param oppSlots   각 상대의 좌석 번호
  * @param board      보드 5장
  */
-export async function runHand(
+export function runHand(
   heroHand: Card[],
   oppHands: Card[][],
   oppSlots: number[],
   board: Card[],
   /** 상대별 프리플랍 레인지 (`TableSim.oppRanges` — 딜에 쓴 것과 같은 표) */
   oppRanges: WeightedHole[][],
+  /** 판마다 고정된 시드 (`TableSim.seed`) — 같은 판은 같은 숫자 */
+  seed: number,
   /** 스트리트가 하나 끝날 때마다 부른다 — 사용자가 프리플랍을 읽는 동안 나머지가 계산된다 */
   onStreet?: (streets: StreetRecord[]) => void
-): Promise<HandResult> {
+): HandResult {
+  const rng = mulberry32(seed);
   const hN = heroHand.map(toNum);
   const oppN = oppHands.map((h) => h.map(toNum));
   const bN = board.map(toNum);
@@ -484,6 +525,8 @@ export async function runHand(
   /** 상대별 액션 이력 — 이게 곧 그 사람의 레인지다 */
   const history: ActionStep[][] = oppHands.map(() => []);
   let wonByFoldAt: HandResult["wonByFoldAt"] = null;
+  /** 스트리트별로 액션 뒤에도 남아 있던 상대 인덱스 — 공개 승률을 뒤에서 채울 때 쓴다 */
+  const liveAt: number[][] = [];
 
   for (let s = 0 as 0 | 1 | 2 | 3; s <= 3; s = (s + 1) as 0 | 1 | 2 | 3) {
     const shown = s === 0 ? 0 : s + 2; // 0 / 3 / 4 / 5
@@ -512,23 +555,24 @@ export async function runHand(
     }
 
     // ── 내 승률: 상대 패를 모른다는 전제로 계산한다 (실제 딜된 패는 쓰지 않는다)
-    let equity = 0;
+    let split: EquitySplit = { win: 100, tie: 0, lose: 0, equity: 100 }; // 전원 폴드 = 팟은 내 것
     const basis: "seat" | "range" = s === 0 ? "seat" : "range";
     if (live.length) {
       if (s === 0) {
         const dead = new Set(hN.map(keyOf));
         const pools = live.map((i) => expandPool(oppRanges[i], dead));
-        equity = await heroEquity(heroHand, [], live.length, pools, SAMPLES.preflop);
+        split = heroEquity(heroHand, [], pools, SAMPLES.preflop, rng);
       } else {
         // ★상대마다 «자기 프리플랍 레인지 ∩ 자기 액션 이력»으로 레인지를 만든다.
         //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pools = await Promise.all(live.map((i) => eligibleHoles(dead, history[i], oppRanges[i])));
-        equity = await heroEquity(heroHand, board.slice(0, shown), live.length, pools, SAMPLES.postflop);
+        const pools = live.map((i) => eligibleHoles(dead, history[i], oppRanges[i]));
+        split = heroEquity(heroHand, board.slice(0, shown), pools, SAMPLES.postflop, rng);
       }
-    } else {
-      equity = 100; // 전원 폴드 = 팟은 내 것
     }
+    const equity = split.equity;
+
+    liveAt.push([...live]);
 
     // ── 팟오즈
     const potBefore = pot;
@@ -553,12 +597,24 @@ export async function runHand(
       toCall,
       required,
       equity,
+      split,
+      known: null,
       basis,
       verdict: required === null ? "free" : equity >= required ? "call" : "fold",
     });
     onStreet?.([...streets]);
 
     if (!live.length) { wonByFoldAt = s; break; }
+  }
+
+  // ── 공개된 패끼리 (상대 패 보기·꺾은선용 — 위 승률·판정과 섞지 않는다)
+  for (const r of streets) {
+    const lv = liveAt[r.street];
+    const k = lv.length
+      ? knownEquities([heroHand, ...lv.map((i) => oppHands[i])], board.slice(0, r.street === 0 ? 0 : r.street + 2), SAMPLES.known, rng)
+      : { equity: [100], hero: r.split };
+    r.known = { slots: [0, ...lv.map((i) => oppSlots[i])], equity: k.equity, hero: k.hero };
+    onStreet?.([...streets]);
   }
 
   const firstMistake = streets.find((r) => r.verdict === "fold")?.street ?? null;

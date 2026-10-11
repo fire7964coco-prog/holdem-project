@@ -48,6 +48,8 @@ export interface TableSim {
   oppRanges: WeightedHole[][];
   /** 상대별 역할 — «UTG 오픈» · «BB가 UTG 오픈 수비» 같은 표기를 UI가 만든다 */
   oppRoles: EntryRole[];
+  /** 이 판의 승률 계산 시드 — 같은 판은 어느 기기에서든 같은 숫자(`_engine.ts` mulberry32) */
+  seed: number;
 }
 
 /** 가중 무작위 추출(비복원) — 뒷자리가 더 자주 뽑힌다 */
@@ -82,7 +84,8 @@ export function makeTableSim(preflopCount: number, _names?: HandNames): TableSim
   const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots));
   const oppRanges = oppRoles.map(rangeFor);
   const { hands, board } = dealFromRanges(oppRanges);
-  return { heroPos, activeSlots, hands, board, oppRanges, oppRoles };
+  const seed = Math.floor(Math.random() * 2 ** 32);
+  return { heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed };
 }
 
 /**

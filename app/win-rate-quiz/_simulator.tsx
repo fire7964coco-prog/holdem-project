@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim } from "./_table";
 import {
-  runHand, heroEquityVsKnown, heroOuts, ruleOf24, SAMPLES, MIN_SAMPLES,
-  type HandResult, type StreetRecord, type Action,
+  runHand, heroOuts, ruleOf24, SAMPLES,
+  type HandResult, type StreetRecord, type Action, type EquitySplit,
 } from "./_engine";
+import type { HandMessage, HandRequest } from "./_engine.worker";
 
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
@@ -32,6 +33,13 @@ const MUTED = "rgba(255,255,255,0.3)";
 const LIVE = "#e0555e";
 const GOOD = "#4ade80";
 const BAD = "#f87171";
+/**
+ * 꺾은선·좌석 승률 배지의 좌석 색 — 나 + 상대 3명(4인 팟까지 · S-034 회차 2).
+ * ★어두운 카드(#0f172a) 위 범주 팔레트 검증 통과(dataviz validate_palette: 밝기 띠·채도·색약 ΔE ≥ 15).
+ *   색은 «상대 순서»(activeSlots 순)를 따른다 — 누가 폴드해도 남은 사람 색이 바뀌지 않는다.
+ *   회차 4(2~6명)에서 상대가 5명으로 늘면 두 칸을 더 검증해 붙인다.
+ */
+const SEAT_COLORS = ["#b08d2a", "#0284c7", "#db2777", "#7c3aed"];
 
 export interface QuizUI {
   names: HandNames;
@@ -55,6 +63,10 @@ export interface QuizUI {
   /** 프리플랍 좌석 표시 — 이 상대가 어떤 역할로 팟에 들어왔나(레인지 출처) */
   roleOpen: string;
   roleDefend: string;
+  /** 승·무·패 분리 줄 (S-034 ④) — 짧은 라벨 */
+  winShort: string;
+  tieShort: string;
+  loseShort: string;
   /** 상대 패를 공개했을 때 나란히 뜨는 "그 패들 상대 승률" */
   revealedLabel: string;
   /** 두 값의 차이(%p)를 받아 왜 다른지 한 줄로 설명 */
@@ -100,7 +112,13 @@ export interface QuizUI {
    * basis를 받아 문장을 갈라야 한다 — 표본도 적응형(min~max)이라 고정 숫자를 박으면 안 된다
    * (2026-08-05 검수 판정 #1).
    */
-  noDrawNote: (basis: "seat" | "range", minSamples: string, maxSamples: string) => string;
+  noDrawNote: (basis: "seat" | "range", samples: string) => string;
+  /** 결과 화면 꺾은선 (S-034 ④) */
+  chartTitle: string;
+  /** 점선 = 상대 패를 모를 때 화면에 보였던 내 승률 */
+  chartRangeLegend: string;
+  /** 실선 = 패를 다 깠을 때 좌석별 승률 · 폴드한 사람은 거기서 선이 끝난다 */
+  chartNote: string;
   /** 규칙·단서 */
   ruleTitle: string;
   ruleText: ReactNode;
@@ -184,11 +202,136 @@ function DealerChip() {
   );
 }
 
+/** 승·무·패 한 줄 — 무승부가 0.05% 미만이면 빼서 줄을 짧게 둔다 */
+function WinTieLose({ split, ui, className }: { split: EquitySplit; ui: QuizUI; className?: string }) {
+  return (
+    <span className={`text-[10.5px] text-white/55 tabular-nums whitespace-nowrap ${className ?? ""}`}>
+      {ui.winShort} {split.win.toFixed(1)}%
+      {split.tie >= 0.05 && <> · {ui.tieShort} {split.tie.toFixed(1)}%</>}
+      {" · "}{ui.loseShort} {split.lose.toFixed(1)}%
+    </span>
+  );
+}
+
+// ── 스트리트별 승률 꺾은선 (S-034 ④) ─────────────────────────────────────────
+interface ChartSeries {
+  key: string;
+  name: string;
+  color: string;
+  dashed?: boolean;
+  /** 스트리트 0~3 값 · undefined = 그 스트리트엔 없음(폴드했거나 판이 끝남) */
+  values: (number | undefined)[];
+}
+
+/**
+ * 실선 = 패를 다 깠을 때 좌석별 승률(공개 승률) · 금색 점선 = 상대 패를 모를 때 화면에 보였던 내 승률.
+ * ★두 선의 간격이 곧 «모르고 판단한 숫자 vs 실제»다 — 리버에서 실선은 100/0(또는 동점 몫)으로 끝난다.
+ * ★축은 하나(0~100%) · 범례 + 끝점 직접 라벨 + 열 단위 호버(터치도 같은 동작).
+ */
+function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: readonly string[]; ui: QuizUI }) {
+  const [hover, setHover] = useState<number | null>(null);
+  const W = 320, H = 168, L = 30, R = 46, T = 10, B = 22;
+  const x = (i: number) => L + (i * (W - L - R)) / 3;
+  const y = (v: number) => T + ((100 - v) * (H - T - B)) / 100;
+
+  // 끝점 라벨 — 마지막 값 기준, 11px보다 가까우면 아래로 밀어 겹치지 않게
+  const ends = series
+    .map((s) => {
+      let last = -1;
+      s.values.forEach((v, i) => { if (v !== undefined) last = i; });
+      return last < 0 ? null : { s, i: last, v: s.values[last]!, ly: y(s.values[last]!) };
+    })
+    .filter((e): e is NonNullable<typeof e> => !!e)
+    .sort((a, b) => a.ly - b.ly);
+  for (let i = 1; i < ends.length; i++) if (ends[i].ly - ends[i - 1].ly < 11) ends[i].ly = ends[i - 1].ly + 11;
+  // 아래로 밀다가 0% 선 밑(가로축 글자 자리)으로 나가면 바닥부터 위로 되민다
+  const floor = y(0);
+  if (ends.length && ends[ends.length - 1].ly > floor) {
+    ends[ends.length - 1].ly = floor;
+    for (let i = ends.length - 2; i >= 0; i--) if (ends[i + 1].ly - ends[i].ly < 11) ends[i].ly = ends[i + 1].ly - 11;
+  }
+  /** 읽는 스트리트 — 호버가 없으면 마지막 스트리트 */
+  const lastIdx = Math.max(...series.map((s) => s.values.reduce((a: number, v, i) => (v === undefined ? a : i), 0)));
+  const shown = hover ?? lastIdx;
+
+  const pick = (clientX: number, el: SVGSVGElement) => {
+    const r = el.getBoundingClientRect();
+    const px = ((clientX - r.left) / r.width) * W;
+    let best = 0;
+    for (let i = 1; i < 4; i++) if (Math.abs(x(i) - px) < Math.abs(x(best) - px)) best = i;
+    setHover(best);
+  };
+
+  return (
+    <div className="rounded-xl px-3 pt-3 pb-2.5 mb-3" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+      <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.chartTitle}</div>
+      <div className="relative">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto select-none touch-pan-y" role="img" aria-label={ui.chartTitle}
+          onPointerMove={(e) => pick(e.clientX, e.currentTarget)} onPointerDown={(e) => pick(e.clientX, e.currentTarget)}
+          onPointerLeave={() => setHover(null)}>
+          {[0, 25, 50, 75, 100].map((v) => (
+            <g key={v}>
+              <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="rgba(255,255,255,0.08)" strokeWidth={1} />
+              <text x={L - 5} y={y(v) + 3} textAnchor="end" fontSize={9} fill="rgba(255,255,255,0.4)">{v}%</text>
+            </g>
+          ))}
+          {streets.map((s, i) => (
+            <text key={i} x={x(i)} y={H - 6} textAnchor="middle" fontSize={9.5}
+              fill={shown === i ? "rgba(255,255,255,0.85)" : "rgba(255,255,255,0.45)"}>{s}</text>
+          ))}
+          {hover !== null && <line x1={x(hover)} x2={x(hover)} y1={T} y2={H - B} stroke="rgba(255,255,255,0.25)" strokeWidth={1} />}
+          {series.map((s) => {
+            const pts = s.values.map((v, i) => (v === undefined ? null : `${x(i)},${y(v)}`)).filter(Boolean);
+            return (
+              <g key={s.key}>
+                <polyline points={pts.join(" ")} fill="none" stroke={s.color} strokeWidth={s.dashed ? 1.5 : 2}
+                  strokeDasharray={s.dashed ? "4 3" : undefined} strokeLinejoin="round" strokeLinecap="round" />
+                {s.values.map((v, i) => v === undefined ? null : (
+                  <circle key={i} cx={x(i)} cy={y(v)} r={s.dashed ? 2.5 : 4} fill={s.dashed ? "#0f172a" : s.color}
+                    stroke={s.dashed ? s.color : "#0f172a"} strokeWidth={s.dashed ? 1.5 : 2} />
+                ))}
+              </g>
+            );
+          })}
+          {ends.map((e) => (
+            <text key={e.s.key} x={x(e.i) + 7} y={e.ly + 3} fontSize={9.5} fontWeight={700} fill="rgba(255,255,255,0.8)">
+              {badgePct(e.v)}
+            </text>
+          ))}
+        </svg>
+      </div>
+      {/* 범례 겸 읽기 줄 — 떠 있는 툴팁은 좁은 칸에서 잘려서(데스크톱 316px) 차트 아래 고정 줄로 읽는다.
+          누른/가리킨 스트리트의 값 · 아무것도 안 가리키면 마지막 스트리트. 이름을 같이 둬 색만으로 구분하지 않는다 */}
+      <div className="text-[10px] font-bold text-white/55 mt-1 mb-0.5">{streets[shown]}</div>
+      <div className="grid grid-cols-2 gap-x-3 gap-y-0.5 text-[10.5px] text-white/70 tabular-nums">
+        {series.map((s) => (
+          <span key={s.key} className="inline-flex items-center gap-1.5 min-w-0">
+            <svg width="16" height="6" aria-hidden className="shrink-0"><line x1="0" x2="16" y1="3" y2="3" stroke={s.color} strokeWidth={2}
+              strokeDasharray={s.dashed ? "4 3" : undefined} /></svg>
+            <span className="truncate">{s.name}</span>
+            <b className="ml-auto text-white">{s.values[shown] === undefined ? "—" : `${s.values[shown]!.toFixed(1)}%`}</b>
+          </span>
+        ))}
+      </div>
+      <p className="text-[10px] text-white/40 mt-1.5 leading-snug">{ui.chartNote}</p>
+    </div>
+  );
+}
+
+/** 배지용 정수 % — 0.4%를 «0%», 99.6%를 «100%»로 반올림하면 «이미 끝난 판»처럼 읽힌다 */
+function badgePct(x: number): string {
+  if (x > 0 && x < 1) return "<1%";
+  if (x > 99 && x < 100) return ">99%";
+  return `${Math.round(x)}%`;
+}
+
 // ── 좌석 ────────────────────────────────────────────────────────────────────
-function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor }: {
+function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor, eq, eqColor }: {
   pos: string; isBtn: boolean; isHero: boolean; heroWord: string;
   cards?: QuizCard[]; faceDown?: boolean; folded?: boolean; isWinner?: boolean;
   color: string; label?: string; isDead?: boolean; statusText?: string; statusColor?: string;
+  /** 패를 깠을 때 이 좌석의 승률 % — 방송 화면 방식 배지(S-034 ④) */
+  eq?: number; eqColor?: string;
 }) {
   const size: CardSize = folded ? "fold" : isHero ? "hero" : "seat";
   return (
@@ -205,9 +348,15 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
           ? [0, 1].map((i) => <PlayingCard key={i} hidden size="fold" />)
           : (cards ?? []).map((c, i) => <PlayingCard key={i} card={c} hidden={faceDown} size={size} />)}
       </div>
-      <div className="h-4 flex items-center">
+      <div className="h-4 flex items-center gap-1">
         {statusText && (
           <span className="text-[9.5px] font-bold" style={{ color: statusColor ?? MUTED }}>{statusText}</span>
+        )}
+        {eq !== undefined && (
+          <span className="text-[10px] font-black tabular-nums leading-none rounded px-1 py-[2px] text-white"
+            style={{ background: "rgba(0,0,0,0.55)", borderLeft: `3px solid ${eqColor ?? color}` }}>
+            {badgePct(eq)}
+          </span>
         )}
       </div>
       {label && (
@@ -233,48 +382,57 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [street, setStreet] = useState(0);
   const [reveal, setReveal] = useState(false);
   const [showRule, setShowRule] = useState(false);
-  /**
-   * 상대 패를 공개했을 때 **그 패들 상대로의** 승률.
-   *
-   * ★왜 따로 두나 (2026-08-05, 사장님 지적) — 카드를 까도 화면의 승률은 그대로 레인지 기준이라
-   *   "보이는 카드와 무관한 숫자"가 된다. 실제로 캡처 스팟에서 레인지 20.1% vs 실제 27.9%로
-   *   **7.8%p 벌어졌다.** 두 값을 나란히 보여주면 오해가 사라질 뿐 아니라,
-   *   *"모르고 판단하면 20%, 까보니 28%"* 가 이 도구에서 가장 좋은 교육 장면이 된다.
-   */
-  const [revealedEq, setRevealedEq] = useState<number | null>(null);
 
   /**
-   * ★계산은 스트리트 단위로 흘려보낸다 (2026-08-05 성능 검수에서 고침).
-   *   한 번에 다 돌리면 **1.4~1.6초짜리 단일 long task**가 되어 화면이 통째로 얼어붙었다
-   *   (중저가 모바일이면 4~6초). MC 루프가 표본 CHUNK개마다 메인스레드를 놓아주고,
-   *   프리플랍이 나오는 즉시 화면에 뿌린 뒤 나머지를 이어서 계산한다.
+   * ★계산은 스트리트 단위로 흘려보낸다 — 프리플랍이 나오는 즉시 화면에 뿌리고 나머지를 이어서 계산한다.
+   *   S-034 회차 2 (2026-10-11)부터 **웹 워커**에서 돈다. 그 전엔 메인 스레드에서 25ms씩 쪼개고
+   *   700ms 예산을 넘기면 표본을 줄였다(기기마다 숫자가 달랐다). 워커는 화면을 얼리지 않으므로
+   *   표본·시드를 고정했다(`_engine.ts` SAMPLES · mulberry32).
+   *   판마다 워커를 새로 띄우고 정리 때 terminate한다 — 판을 빨리 넘기면 이전 계산이 즉시 멈춘다.
+   *   워커가 없는 환경이면 같은 runHand를 메인 스레드에서 돌린다(결과는 시드가 같아 동일).
    *
    * 🔴 **`sim`을 이 effect의 의존성으로 두지 말 것.** 안에서 `setSim`을 부르므로 의존성이 바뀌고,
    *   React가 이전 effect를 정리하며 `cancelled = true`를 세워 **계산 결과가 통째로 버려진다**
-   *   (화면이 "계산 중…"에서 영영 멈춘다). 동기 코드일 땐 안 드러나다가 async로 바꾸며 터졌다.
-   *   새 판은 `handId`를 올려서 돌린다.
+   *   (화면이 "계산 중…"에서 영영 멈춘다). 새 판은 `handId`를 올려서 돌린다.
    */
   useEffect(() => {
     let cancelled = false;
-    const t = setTimeout(async () => {
+    let worker: Worker | null = null;
+    const t = setTimeout(() => {
       const s = makeTableSim(preflopCount);
       if (cancelled) return;
       setSim(s);
-      const oppSlots = s.activeSlots.slice(1);
-      const r = await runHand(s.hands[0], s.hands.slice(1), oppSlots, s.board, s.oppRanges, (partial) => {
-        if (!cancelled) setStreets(partial);
-      });
-      if (!cancelled) { setStreets(r.streets); setResult(r); }
+      const req: HandRequest = {
+        id: handId, heroHand: s.hands[0], oppHands: s.hands.slice(1), oppSlots: s.activeSlots.slice(1),
+        board: s.board, oppRanges: s.oppRanges, seed: s.seed,
+      };
+      try {
+        worker = new Worker(new URL("./_engine.worker.ts", import.meta.url));
+      } catch {
+        worker = null;
+      }
+      if (worker) {
+        worker.onmessage = (e: MessageEvent<HandMessage>) => {
+          const m = e.data;
+          if (cancelled || m.id !== handId) return;
+          if (m.type === "streets") setStreets(m.streets);
+          else { setStreets(m.result.streets); setResult(m.result); worker?.terminate(); }
+        };
+        worker.postMessage(req);
+      } else {
+        const r = runHand(req.heroHand, req.oppHands, req.oppSlots, req.board, req.oppRanges, req.seed);
+        if (!cancelled) { setStreets(r.streets); setResult(r); }
+      }
     }, 30);
-    return () => { cancelled = true; clearTimeout(t); };
+    return () => { cancelled = true; clearTimeout(t); worker?.terminate(); };
   }, [handId, preflopCount]);
 
   const newHand = useCallback(() => {
-    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]); setRevealedEq(null);
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setHandId((id) => id + 1);
   }, []);
   const changeCount = useCallback((n: number) => {
-    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]); setRevealedEq(null);
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setPreflopCount(n);
   }, []);
 
@@ -305,37 +463,47 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     return s;
   }, [streets, street]);
 
-  /** 지금 살아 있는 상대들의 실제 홀카드 (공개 승률 계산용) */
-  const liveOppHands = useMemo(() => {
-    if (!sim) return [];
-    return sim.activeSlots
-      .filter((slot) => slot !== 0 && !foldedSlots.has(slot))
-      .map((slot) => sim.hands[slotToIdx[slot]]);
-  }, [sim, foldedSlots, slotToIdx]);
-
   /**
-   * 카드를 공개했을 때만 "그 패들 상대 승률"을 계산한다.
-   * 안 봤으면 계산도 안 한다 — 보지도 않을 값에 표본을 쓸 이유가 없다.
+   * 상대 패를 공개했을 때 **그 패들 상대로의** 승률 — 좌석별 값과 나의 승·무·패.
+   *
+   * ★왜 따로 두나 (2026-08-05, 사장님 지적) — 카드를 까도 화면의 승률은 그대로 레인지 기준이라
+   *   "보이는 카드와 무관한 숫자"가 된다. 실제로 캡처 스팟에서 레인지 20.1% vs 실제 27.9%로
+   *   **7.8%p 벌어졌다.** 두 값을 나란히 보여주면 오해가 사라질 뿐 아니라,
+   *   *"모르고 판단하면 20%, 까보니 28%"* 가 이 도구에서 가장 좋은 교육 장면이 된다.
+   * ★S-034 회차 2: 워커가 스트리트마다 미리 계산해 둔다(rec.known) — 누를 때 다시 돌리지 않는다.
+   *   null = 아직 계산 중(화면 승률 4스트리트를 먼저 낸 뒤 채운다).
    */
-  useEffect(() => {
-    if (!cardsUp || !sim || !liveOppHands.length) { setRevealedEq(null); return; }
-    let cancelled = false;
-    setRevealedEq(null);
-    (async () => {
-      const e = await heroEquityVsKnown(
-        sim.hands[0], sim.board.slice(0, boardShown), liveOppHands,
-        boardShown === 0 ? SAMPLES.preflop : SAMPLES.postflop
-      );
-      if (!cancelled) setRevealedEq(e);
-    })();
-    return () => { cancelled = true; };
-  }, [cardsUp, sim, liveOppHands, boardShown]);
+  const known = cardsUp && rec?.known && rec.known.slots.length > 1 ? rec.known : null;
+  /** 좌석 slot → 공개 승률 % */
+  const knownBySlot = useMemo(() => {
+    const m: Record<number, number> = {};
+    known?.slots.forEach((slot, i) => { m[slot] = known.equity[i]; });
+    return m;
+  }, [known]);
 
   const nameOf = useCallback((slot: number) => {
     if (!sim) return "";
     const pos = positionAt(sim.heroPos, slot);
     return slot === 0 ? `${ui.hero}(${pos})` : pos;
   }, [sim, ui.hero]);
+
+  /** 결과 화면 꺾은선 — 좌석별 공개 승률 + 내가 본(레인지) 승률. 워커가 전부 끝낸 뒤에만 */
+  const chartSeries = useMemo((): ChartSeries[] | null => {
+    if (!sim || !result || result.streets.some((r) => !r.known)) return null;
+    const at = (slot: number) => [0, 1, 2, 3].map((s) => {
+      const r = result.streets.find((x) => x.street === s);
+      const i = r?.known?.slots.indexOf(slot) ?? -1;
+      return r && i >= 0 ? r.known!.equity[i] : undefined;
+    });
+    const seats: ChartSeries[] = sim.activeSlots.map((slot, k) => ({
+      key: `s${slot}`, name: nameOf(slot), color: SEAT_COLORS[k], values: at(slot),
+    }));
+    const seen: ChartSeries = {
+      key: "range", name: ui.chartRangeLegend, color: GOLD, dashed: true,
+      values: [0, 1, 2, 3].map((s) => result.streets.find((x) => x.street === s)?.equity),
+    };
+    return [...seats, seen];
+  }, [sim, result, nameOf, ui.chartRangeLegend]);
 
   /** 쇼다운 승자 좌석 (전원 폴드면 나) */
   const winnerSlots = useMemo(() => {
@@ -397,7 +565,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero}
       cards={sim.hands[k]} faceDown={!isHero && !cardsUp}
       color={isHero ? GOLD : LIVE} label={label} isWinner={isWinner}
-      statusText={statusText} statusColor={act === "raise" ? BAD : "rgba(255,255,255,0.55)"} />;
+      statusText={statusText} statusColor={act === "raise" ? BAD : "rgba(255,255,255,0.55)"}
+      eq={knownBySlot[slot]} eqColor={SEAT_COLORS[k]} />;
   };
 
   if (!sim || !rec) {
@@ -527,7 +696,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <span className="text-3xl lg:text-4xl font-black tabular-nums leading-none" style={{ color: GOLD }}>
             {rec.equity.toFixed(1)}<span className="text-2xl">%</span>
           </span>
-          <span className="text-[11px] text-white/50 pb-1">{ui.vsOpponents(liveOpponents)}</span>
+          {/* 승·무·패 분리 (S-034 ④) — 큰 숫자는 승 + 무승부 몫이다.
+              한 줄에 붙이면 데스크톱 오른쪽 칸(316px)에서 «패»가 잘린다 → 상대 수 아래 둘째 줄로 */}
+          <span className="flex flex-col leading-tight pb-0.5 min-w-0">
+            <span className="text-[11px] text-white/50 whitespace-nowrap">{ui.vsOpponents(liveOpponents)}</span>
+            <WinTieLose split={rec.split} ui={ui} />
+          </span>
         </div>
         <div className="h-2.5 rounded-full overflow-hidden bg-black/40 mt-2">
           <motion.div className="h-full" style={{ background: GOLD }}
@@ -535,20 +709,21 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         </div>
 
         {/* 카드를 공개했을 때만 — 같은 화면의 두 숫자가 왜 다른지가 이 도구의 핵심 교육 장면이다 */}
-        {cardsUp && revealedEq !== null && (
+        {known && (
           <div className="mt-2.5 pt-2.5 border-t border-white/10">
             <div className="flex items-baseline justify-between gap-2">
               <span className="text-[11px] text-white/55">{ui.revealedLabel}</span>
               <span className="text-lg font-black tabular-nums" style={{ color: "#7dd3fc" }}>
-                {revealedEq.toFixed(1)}%
+                {known.hero.equity.toFixed(1)}%
               </span>
             </div>
+            <WinTieLose split={known.hero} ui={ui} className="block text-right" />
             <div className="h-1.5 rounded-full overflow-hidden bg-black/40 mt-1.5">
               <motion.div className="h-full" style={{ background: "#7dd3fc" }}
-                initial={false} animate={{ width: `${revealedEq}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
+                initial={false} animate={{ width: `${known.hero.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
             </div>
             <p className="text-[10px] text-white/40 mt-1.5 leading-snug">
-              {ui.revealedNote(Math.abs(revealedEq - rec.equity).toFixed(1))}
+              {ui.revealedNote(Math.abs(known.hero.equity - rec.equity).toFixed(1))}
             </p>
           </div>
         )}
@@ -644,6 +819,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <p className="text-[11px] text-muted-foreground mt-1">{ui.reviewInvested(result.invested, result.finalPot)}</p>
           </div>
 
+          {chartSeries && <EquityChart series={chartSeries} streets={ui.streets} ui={ui} />}
+
           <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
             <button onClick={newHand}
               className="w-full py-3.5 lg:py-4 rounded-xl font-black text-base text-black transition-all hover:brightness-110 active:scale-[0.98] shadow-xl lg:shadow-none"
@@ -697,8 +874,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </>
         ) : (
           <p className="text-[11.5px] text-muted-foreground leading-relaxed">
-            {ui.noDrawNote(rec.basis, MIN_SAMPLES.toLocaleString(),
-              (street === 0 ? SAMPLES.preflop : SAMPLES.postflop).toLocaleString())}
+            {ui.noDrawNote(rec.basis, (street === 0 ? SAMPLES.preflop : SAMPLES.postflop).toLocaleString())}
           </p>
         )}
       </div>

@@ -4,7 +4,7 @@ import { SEO } from "@/components/seo";
 
 import WinRateSimulator, { type QuizUI } from "./_simulator";
 import { KO_NAMES } from "./_equity";
-import { ANTE, STACK, SAMPLES, MIN_SAMPLES } from "./_engine";
+import { ANTE, STACK, SAMPLES } from "./_engine";
 
 /**
  * 한국어판 승률 시뮬레이터.
@@ -33,6 +33,9 @@ const KO_UI: QuizUI = {
   basisRange: "액션 일치 레인지 기준",
   roleOpen: "오픈",
   roleDefend: "수비",
+  winShort: "승",
+  tieShort: "무",
+  loseShort: "패",
   revealedLabel: "👀 공개된 저 패들 상대로는",
   revealedNote: (gap) =>
     `위 승률은 상대 패를 모른다고 보고 낸 값이라 ${gap}%p 차이가 납니다. 실전에서 판단할 때 쓰는 건 위쪽 숫자입니다.`,
@@ -76,10 +79,13 @@ const KO_UI: QuizUI = {
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
     "두 숫자는 서로 다른 걸 잽니다. 위는 «맞출» 확률이고 아래는 «이길» 확률이라, 맞춰도 상대가 더 좋아지면 지고 못 맞춰도 이길 때가 있습니다. 콜·폴드 판정에 쓰는 건 아래 숫자입니다.",
-  noDrawNote: (basis, min, max) =>
+  noDrawNote: (basis, n) =>
     basis === "seat"
-      ? `프리플랍이라 아직 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대마다 그 자리에서 팟에 들어올 만한 패(자리별 레인지)를 상대로 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`
-      : `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${min}~${max}회(기기 속도에 맞춰) 돌려 낸 값입니다.`,
+      ? `프리플랍이라 아직 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대마다 그 자리에서 팟에 들어올 만한 패(자리별 레인지)를 상대로 ${n}회 돌려 낸 값입니다.`
+      : `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${n}회 돌려 낸 값입니다.`,
+  chartTitle: "📈 스트리트별 승률 — 패를 다 깠을 때",
+  chartRangeLegend: "내가 본 승률",
+  chartNote: "실선은 모든 패를 공개했을 때 좌석별 승률이고, 점선은 상대 패를 모른 채 화면에서 본 내 승률입니다. 폴드한 사람은 그 스트리트에서 선이 끝납니다.",
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (
@@ -119,9 +125,16 @@ const KO_UI: QuizUI = {
       </p>
       <p>
         각자 {ANTE}씩 넣고 시작하며 스택은 {STACK.toLocaleString()}입니다. 나는 폴드하지 않고 끝까지 갑니다 —
-        그래야 리버까지 보고 복기할 수 있기 때문입니다. 승률은 시뮬레이션으로 낸 근사값이고,
-        표본은 기기 속도에 맞춰 <b className="text-foreground">{MIN_SAMPLES.toLocaleString()}~{SAMPLES.preflop.toLocaleString()}회</b> 사이에서
-        자동으로 조절됩니다(오차 ±0.2~0.6%p). 느린 기기에서 몇 초씩 멈추지 않게 하기 위해서입니다.
+        그래야 리버까지 보고 복기할 수 있기 때문입니다. 승률은 시뮬레이션으로 낸 근사값이고, 표본은
+        프리플랍 <b className="text-foreground">{SAMPLES.preflop.toLocaleString()}회</b> · 플랍부터{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()}회</b>로 고정입니다(오차 약 ±0.25~0.35%p).
+        판마다 난수 시드를 고정하므로 같은 판이면 어느 기기에서든 같은 숫자가 나옵니다. 무승부는 같이 이긴 사람 수로
+        나눠 셉니다(둘이 비기면 절반).
+      </p>
+      <p className="mt-2">
+        <b className="text-foreground">상대 패를 공개하면</b> 좌석마다 «모든 패를 알 때의 승률»을 붙입니다. 이 값은 플랍부터
+        남은 카드를 전부 열거한 정확한 값이고(프리플랍만 {SAMPLES.known.toLocaleString()}회 시뮬레이션), 화면 승률과
+        콜·폴드 판정에는 쓰지 않습니다 — 실전에서는 볼 수 없는 정보라서요.
       </p>
     </>
   ),

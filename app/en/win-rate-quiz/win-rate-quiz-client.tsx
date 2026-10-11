@@ -2,7 +2,7 @@
 
 import WinRateSimulator, { type QuizUI } from "../../win-rate-quiz/_simulator";
 import { EN_NAMES } from "../../win-rate-quiz/_equity";
-import { ANTE, STACK, SAMPLES, MIN_SAMPLES } from "../../win-rate-quiz/_engine";
+import { ANTE, STACK, SAMPLES } from "../../win-rate-quiz/_engine";
 
 /**
  * 영어판 승률 시뮬레이터 (2026-08-04 신설 · 2026-08-05 실전 모드로 개편).
@@ -29,6 +29,9 @@ const EN_UI: QuizUI = {
   basisRange: "vs hands matching their actions",
   roleOpen: "Opened",
   roleDefend: "Defended",
+  winShort: "Win",
+  tieShort: "Tie",
+  loseShort: "Lose",
   revealedLabel: "👀 Against the exact hands shown",
   revealedNote: (gap) =>
     `The number above assumes you cannot see their cards, which is why it is ${gap}%p apart. The top figure is the one you would actually decide on.`,
@@ -72,10 +75,13 @@ const EN_UI: QuizUI = {
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
     "These measure different things. The top one is the chance you HIT; the bottom is the chance you WIN. You can hit and still lose if an opponent improves further, and you can miss and still win. The verdict uses the bottom number.",
-  noDrawNote: (basis, min, max) =>
+  noDrawNote: (basis, n) =>
     basis === "seat"
-      ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${min}–${max} hands (scaled to your device) against the hands each opponent would plausibly enter the pot with from their seat.`
-      : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${min}–${max} hands (scaled to your device) against every holding that matches the actions you saw.`,
+      ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${n} hands against the hands each opponent would plausibly enter the pot with from their seat.`
+      : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
+  chartTitle: "📈 Equity street by street — all cards face up",
+  chartRangeLegend: "What you saw",
+  chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A line stops on the street that player folded.",
 
   ruleTitle: "What this simulator assumes",
   ruleText: (
@@ -116,9 +122,17 @@ const EN_UI: QuizUI = {
       </p>
       <p>
         Everyone posts {ANTE} to start with a {STACK.toLocaleString()} stack. You never fold — that is the point,
-        so you can see the river and review. Equity is a simulated estimate, and the sample size scales to your
-        device between <b className="text-foreground">{MIN_SAMPLES.toLocaleString()} and {SAMPLES.preflop.toLocaleString()} runs</b>{" "}
-        (roughly ±0.2–0.6%p) so a slower phone never freezes for seconds at a time.
+        so you can see the river and review. Equity is a simulated estimate with a fixed sample size:{" "}
+        <b className="text-foreground">{SAMPLES.preflop.toLocaleString()} runs</b> preflop and{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()} runs</b> from the flop on (roughly ±0.25–0.35%p).
+        Each hand uses a fixed random seed, so the same hand shows the same numbers on any device. Ties are split
+        by the number of players who share the pot (half each in a two-way tie).
+      </p>
+      <p className="mt-2">
+        <b className="text-foreground">When you show their cards</b>, every seat gets its equity with all hands known. From
+        the flop on this counts every remaining card exactly (preflop alone is {SAMPLES.known.toLocaleString()} simulated runs),
+        and it never feeds the equity or the call/fold verdict on screen — you would not have that information at a
+        real table.
       </p>
     </>
   ),
