@@ -312,7 +312,7 @@ La conclusión: aprende el orden estándar una vez y te servirá en casi todos l
 
 **Q. ¿Qué es un color en el póker?**
 
-A. Un color son cinco cartas cualesquiera del mismo palo — por ejemplo A♦ J♦ 8♦ 6♦ 2♦ — sin importar el orden. Es la #5, por encima de la escalera y por debajo del full. Cuando dos jugadores tienen color, gana la carta más alta; los palos nunca rompen el empate.
+A. Un color son cinco cartas cualesquiera del mismo palo — por ejemplo A♦ J♦ 8♦ 6♦ 2♦ — sin importar el orden. Es la #5, por encima de la escalera y por debajo del full. Cuando dos jugadores tienen color, gana la carta más alta, luego la siguiente, y así con las cinco; los palos nunca rompen el empate.
 
 **Q. ¿Qué es un full en el póker?**
 
@@ -336,7 +336,7 @@ A. El color, el full, el póker, la escalera de color y la escalera real ganan a
 
 **Q. ¿Qué gana a un color en el póker?**
 
-A. El full, el póker, la escalera de color y la escalera real ganan a un color. Contra otro color, gana la carta más alta. El color (#5) aún gana a la escalera y a todo lo que está por debajo.
+A. El full, el póker, la escalera de color y la escalera real ganan a un color. Contra otro color, gana la carta más alta, luego la siguiente, y así con las cinco. El color (#5) aún gana a la escalera y a todo lo que está por debajo.
 
 **Q. ¿Qué gana a un full en el póker?**
 
@@ -352,7 +352,7 @@ A. Solo una escalera de color más alta o una escalera real (que no es más que 
 
 **Q. ¿Qué es un kicker?**
 
-A. Un kicker es una carta que no forma parte de tu mano hecha pero rompe empates. Con dos parejas iguales, gana la carta lateral (kicker) más alta. El mejor kicker posible es el As.
+A. Un kicker es una carta que no forma parte de tu mano hecha pero rompe empates. Con dos parejas iguales, gana la carta lateral (kicker) más alta — y si también empata, decide la siguiente. El mejor kicker posible es el As.
 
 **Q. ¿Pueden dos jugadores tener la misma mano?**
 

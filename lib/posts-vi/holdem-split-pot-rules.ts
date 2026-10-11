@@ -124,7 +124,7 @@ Trong một pot chia ba có hai chip lẻ, hai người ngồi gần nút dealer
 
 ## Pot phụ (side pot) có chia không? Hòa khi có người all-in
 
-Khi một hoặc nhiều người chơi all-in (tất tay) với số chip khác nhau và những người khác tiếp tục bet, chip hình thành một ==**main pot (pot chính)**== (ai cũng đủ điều kiện) cộng một hoặc nhiều ==**side pot (pot phụ)**== (chỉ những stack sâu hơn còn tiếp tục bet). Mỗi pot được trao — hoặc chop — ==**riêng rẽ**==, dựa trên tay bài mạnh nhất trong số những người đủ điều kiện với pot đó.
+Khi một hoặc nhiều người chơi all-in (tất tay) với số chip khác nhau và những người khác tiếp tục bet, chip hình thành một ==**main pot (pot chính)**== (ai cũng đủ điều kiện) cộng một hoặc nhiều ==**side pot (pot phụ)**== (chỉ những người đã bỏ vào nhiều hơn mức mà một stack all-in ngắn hơn có thể theo kịp). Mỗi pot được trao — hoặc chop — ==**riêng rẽ**==, dựa trên tay bài mạnh nhất trong số những người đủ điều kiện với pot đó.
 
 Một ví dụ cụ thể: A all-in 100; B và C mỗi người bỏ vào 300. Vậy là **pot chính 300** (100 × 3) và **pot phụ 400** (200 + 200, chỉ B và C). Board ra A♦ J♥ 7♠ 4♣ 2♥:
 

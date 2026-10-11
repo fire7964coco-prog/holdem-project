@@ -314,7 +314,7 @@ Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir setiap pe
 
 **Q. Apakah itu flush dalam poker?**
 
-A. Flush ialah mana-mana lima kad daripada jenis yang sama — contohnya A♦ J♦ 8♦ 6♦ 2♦ — tidak kira susunannya. Ia berada di #5, di atas straight dan di bawah full house. Apabila dua pemain sama-sama memegang flush, kad tertinggi menang; jenis kad tidak pernah memecahkan seri.
+A. Flush ialah mana-mana lima kad daripada jenis yang sama — contohnya A♦ J♦ 8♦ 6♦ 2♦ — tidak kira susunannya. Ia berada di #5, di atas straight dan di bawah full house. Apabila dua pemain sama-sama memegang flush, kad tertinggi menang, kemudian yang seterusnya, dan begitulah hingga kelima-limanya; jenis kad tidak pernah memecahkan seri.
 
 **Q. Apakah itu full house dalam poker?**
 
@@ -338,7 +338,7 @@ A. Flush, full house, four of a kind, straight flush, atau royal flush semuanya 
 
 **Q. Apa yang menang ke atas flush dalam poker?**
 
-A. Full house, four of a kind, straight flush, atau royal flush menang ke atas flush. Melawan flush lain, kad teratas yang lebih tinggi menang. Flush (#5) masih menang ke atas straight dan semua yang di bawahnya.
+A. Full house, four of a kind, straight flush, atau royal flush menang ke atas flush. Melawan flush lain, kad tertinggi menang, kemudian yang seterusnya, dan begitulah hingga kelima-limanya. Flush (#5) masih menang ke atas straight dan semua yang di bawahnya.
 
 **Q. Apa yang menang ke atas full house dalam poker?**
 
@@ -354,7 +354,7 @@ A. Hanya straight flush yang lebih tinggi atau royal flush (yang sebenarnya stra
 
 **Q. Apakah itu kicker?**
 
-A. Kicker ialah kad yang bukan sebahagian daripada tangan siap anda tetapi memecahkan seri. Jika dua pemain memegang pair yang sama, kad sampingan (kicker) tertinggi yang menang. As ialah kicker terbaik yang mungkin.
+A. Kicker ialah kad yang bukan sebahagian daripada tangan siap anda tetapi memecahkan seri. Jika dua pemain memegang pair yang sama, kad sampingan (kicker) tertinggi yang menang — dan jika itu juga seri, kad seterusnya yang menentukan. As ialah kicker terbaik yang mungkin.
 
 **Q. Bolehkah dua pemain memegang tangan yang sama?**
 

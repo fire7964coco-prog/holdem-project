@@ -124,7 +124,7 @@ En un split a tres bandas con dos fichas impares, los dos asientos que van antes
 
 ## ¿Los botes laterales también se dividen? Empates cuando alguien está all-in
 
-Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, las fichas forman un ==**bote principal**== (todos son elegibles) más uno o varios ==**botes laterales**== (solo los stacks más profundos que siguieron apostando). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
+Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, las fichas forman un ==**bote principal**== (todos son elegibles) más uno o varios ==**botes laterales**== (solo los jugadores que pusieron más de lo que un stack all-in más corto podía igualar). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
 
 Un ejemplo desarrollado: A hace all-in por 100; B y C ponen 300 cada uno. Eso es un **bote principal de 300** (100 × 3) y un **bote lateral de 400** (200 + 200, solo B y C). La mesa sale A♦ J♥ 7♠ 4♣ 2♥:
 

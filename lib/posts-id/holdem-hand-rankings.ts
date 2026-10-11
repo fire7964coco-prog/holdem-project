@@ -299,7 +299,7 @@ Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan
 
 **Q. Apa itu flush di poker?**
 
-A. Flush adalah lima kartu dengan jenis yang sama — misalnya A♦ J♦ 8♦ 6♦ 2♦ — tanpa peduli urutannya. Flush menempati peringkat ==#5==, di atas straight dan di bawah full house. Ketika dua pemain sama-sama punya flush, kartu tertinggi yang menang; jenis kartu tak pernah memecah seri.
+A. Flush adalah lima kartu dengan jenis yang sama — misalnya A♦ J♦ 8♦ 6♦ 2♦ — tanpa peduli urutannya. Flush menempati peringkat ==#5==, di atas straight dan di bawah full house. Ketika dua pemain sama-sama punya flush, kartu tertinggi yang menang, lalu berikutnya, dan seterusnya untuk kelimanya; jenis kartu tak pernah memecah seri.
 
 **Q. Apa itu full house di poker?**
 
@@ -323,7 +323,7 @@ A. Flush, full house, four of a kind, straight flush, dan royal flush semuanya m
 
 **Q. Apa yang mengalahkan flush di poker?**
 
-A. Full house, four of a kind, straight flush, atau royal flush mengalahkan flush. Melawan flush lain, kartu teratas yang lebih tinggi yang menang. Flush (#5) tetap menang atas straight dan semua yang di bawahnya.
+A. Full house, four of a kind, straight flush, atau royal flush mengalahkan flush. Melawan flush lain, kartu tertinggi yang menang, lalu berikutnya, dan seterusnya untuk kelimanya. Flush (#5) tetap menang atas straight dan semua yang di bawahnya.
 
 **Q. Apa yang mengalahkan full house di poker?**
 
@@ -335,7 +335,7 @@ A. Hanya straight flush yang lebih tinggi atau royal flush (yang sebenarnya cuma
 
 **Q. Apa itu kicker?**
 
-A. Kicker adalah kartu yang bukan bagian dari tangan jadi tapi memecah seri. Dengan dua pasangan sama, kartu samping (kicker) tertinggi menang. Kicker terbaik adalah As.
+A. Kicker adalah kartu yang bukan bagian dari tangan jadi tapi memecah seri. Dengan dua pasangan sama, kartu samping (kicker) tertinggi menang — dan kalau itu juga sama, kartu berikutnya yang menentukan. Kicker terbaik adalah As.
 
 **Q. Bisakah dua pemain punya tangan sama?**
 

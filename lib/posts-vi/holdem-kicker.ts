@@ -196,7 +196,7 @@ A. Ace kicker nghĩa là lá phụ cao nhất của bạn là lá A — kicker m
 
 **Q. Chơi theo bài chung (playing the board) nghĩa là gì?**
 
-A. Chơi theo bài chung nghĩa là năm lá bài chung đã là tay bài mạnh nhất của bạn và bài tẩy không cải thiện được nó. Nếu không ai cải thiện được board, mọi người dùng cùng năm lá và pot được chia. Lá phụ của bạn không còn quyết định gì, vì không lá bài tẩy nào lọt vào năm lá bạn chơi — mọi lá trong tay bài đều là lá dùng chung.
+A. Chơi theo bài chung nghĩa là năm lá bài chung đã là tay bài mạnh nhất của bạn và bài tẩy không cải thiện được nó. Nếu không ai cải thiện được board, mọi người dùng cùng năm lá và pot được chia — nhưng chỉ cho những người lật ngửa bài tẩy (Luật TDA 2024, điều 19). Lá phụ của bạn không còn quyết định gì, vì không lá bài tẩy nào lọt vào năm lá bạn chơi — mọi lá trong tay bài đều là lá dùng chung.
 
 **Q. Kicker có quan trọng trong Texas Hold'em không?**
 

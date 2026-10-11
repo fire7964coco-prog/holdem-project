@@ -124,7 +124,7 @@ Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze i
 
 ## Werden auch Nebenpots geteilt? Unentschieden, wenn jemand All-in ist
 
-Sind Spieler für unterschiedliche Beträge All-in und setzen andere weiter, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die größeren Stacks, die weiter gesetzt haben). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
+Sind Spieler für unterschiedliche Beträge All-in und setzen andere weiter, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die Spieler, die mehr eingezahlt haben, als ein kürzerer All-in-Stack mitgehen konnte). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
 
 Ein durchgerechnetes Beispiel: A ist All-in mit 100; B und C legen je 300 nach. Das ergibt einen **Hauptpot von 300** (100 × 3) und einen **Nebenpot von 400** (200 + 200, nur B und C). Das Board kommt A♦ J♥ 7♠ 4♣ 2♥:
 

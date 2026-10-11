@@ -195,7 +195,7 @@ A. An ace kicker means your highest side card is an ace — the strongest kicker
 
 **Q. What does "playing the board" mean?**
 
-A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. If nobody can improve on the board, everyone uses the same five cards and the pot is split. Your side cards stop deciding anything, because none of your hole cards makes the five you play — every card in the hand is shared.
+A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. If nobody can improve on the board, everyone uses the same five cards and the pot is split — but only among players who turn their hole cards face up (TDA 2024 Rule 19). Your side cards stop deciding anything, because none of your hole cards makes the five you play — every card in the hand is shared.
 
 **Q. Do kickers matter in Texas Hold'em?**
 

@@ -346,7 +346,7 @@ Kết luận: học thứ tự chuẩn một lần là dùng được ở gần 
 
 **Q. Thùng (flush) gồm những lá nào?**
 
-A. Thùng là năm lá bất kỳ cùng chất — ví dụ A♦ J♦ 8♦ 6♦ 2♦ — không cần theo thứ tự. Nó xếp #5, trên sảnh và dưới cù lũ. Khi hai người cùng có thùng, lá cao nhất cao hơn thắng; chất bài không bao giờ phân định khi hòa.
+A. Thùng là năm lá bất kỳ cùng chất — ví dụ A♦ J♦ 8♦ 6♦ 2♦ — không cần theo thứ tự. Nó xếp #5, trên sảnh và dưới cù lũ. Khi hai người cùng có thùng, lá cao nhất thắng, rồi đến lá tiếp theo, và cứ thế cho cả năm lá; chất bài không bao giờ phân định khi hòa.
 
 **Q. Cù lũ trong poker là gì?**
 
@@ -370,7 +370,7 @@ A. Thùng, cù lũ, tứ quý, thùng phá sảnh hoặc thùng phá sảnh hoà
 
 **Q. Trên thùng còn những tay bài nào?**
 
-A. Cù lũ, tứ quý, thùng phá sảnh và thùng phá sảnh hoàng gia đều thắng thùng. Gặp thùng khác, lá cao nhất cao hơn thắng. Thùng (#5) vẫn thắng sảnh và mọi tay bài bên dưới.
+A. Cù lũ, tứ quý, thùng phá sảnh và thùng phá sảnh hoàng gia đều thắng thùng. Gặp thùng khác, lá cao nhất thắng, rồi đến lá tiếp theo, và cứ thế cho cả năm lá. Thùng (#5) vẫn thắng sảnh và mọi tay bài bên dưới.
 
 **Q. Bài nào lớn hơn cù lũ trong poker?**
 
@@ -386,7 +386,7 @@ A. Thùng phá sảnh hoàng gia — chính là thùng phá sảnh có A cao nh�
 
 **Q. Kicker (lá phụ) dùng để làm gì?**
 
-A. Kicker là lá nằm trong 5 lá mạnh nhất nhưng không thuộc tổ hợp chính của bạn, dùng để phân định khi hòa. Khi hai người có cùng một đôi, kicker cao nhất thắng. Kicker tốt nhất có thể là lá A.
+A. Kicker là lá nằm trong 5 lá mạnh nhất nhưng không thuộc tổ hợp chính của bạn, dùng để phân định khi hòa. Khi hai người có cùng một đôi, kicker cao nhất thắng — nếu lá đó cũng hòa, lá tiếp theo quyết định. Kicker tốt nhất có thể là lá A.
 
 **Q. Hai người có thể có tay bài giống hệt nhau không?**
 

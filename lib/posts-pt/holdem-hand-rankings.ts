@@ -301,7 +301,7 @@ A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogo
 
 **Q. O que é um flush no poker?**
 
-A. Flush é qualquer conjunto de cinco cartas do mesmo naipe — por exemplo A♦ J♦ 8♦ 6♦ 2♦ — sem precisar de ordem nenhuma. É a mão #5, acima da sequência e abaixo do full house. Quando dois jogadores fecham flush, ganha o de carta mais alta; o naipe nunca desempata.
+A. Flush é qualquer conjunto de cinco cartas do mesmo naipe — por exemplo A♦ J♦ 8♦ 6♦ 2♦ — sem precisar de ordem nenhuma. É a mão #5, acima da sequência e abaixo do full house. Quando dois jogadores fecham flush, ganha a carta mais alta, depois a seguinte, e assim com as cinco; o naipe nunca desempata.
 
 **Q. O que é um full house no poker?**
 
@@ -325,7 +325,7 @@ A. Flush, full house, quadra, straight flush e royal flush ganham todos de uma s
 
 **Q. O que ganha de um flush no poker?**
 
-A. Full house, quadra, straight flush e royal flush ganham do flush. Contra outro flush, ganha quem tiver a carta de topo mais alta. O flush (#5) continua ganhando da sequência e de tudo que vem abaixo dela.
+A. Full house, quadra, straight flush e royal flush ganham do flush. Contra outro flush, ganha a carta mais alta, depois a seguinte, e assim com as cinco. O flush (#5) continua ganhando da sequência e de tudo que vem abaixo dela.
 
 **Q. O que ganha de um full house no poker?**
 
@@ -341,7 +341,7 @@ A. Só um straight flush mais alto ou o royal flush (que é simplesmente o strai
 
 **Q. O que é um kicker?**
 
-A. É uma carta que não faz parte da sua mão feita, mas desempata. Com dois pares iguais, ganha a carta lateral (kicker) mais alta. O melhor kicker possível é o Ás.
+A. É uma carta que não faz parte da sua mão feita, mas desempata. Com dois pares iguais, ganha a carta lateral (kicker) mais alta — e, se ela também empatar, decide a seguinte. O melhor kicker possível é o Ás.
 
 **Q. Dois jogadores podem ter a mesma mão?**
 

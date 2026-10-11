@@ -124,7 +124,7 @@ Dans un partage à trois avec deux jetons restants, les deux premiers sièges da
 
 ## Le pot annexe (side pot) se partage-t-il aussi ? Égalité avec un joueur all-in
 
-Quand des joueurs sont all-in (à tapis) pour des montants différents et que d'autres continuent de miser, les jetons forment un ==**pot principal**== (tout le monde y a droit) plus un ou plusieurs ==**pots annexes (side pots)**== (seulement les plus gros stacks qui ont continué à miser). Chaque pot est attribué — ou partagé — ==**séparément**==, selon la meilleure main parmi les joueurs qui ont droit à ce pot.
+Quand des joueurs sont all-in (à tapis) pour des montants différents et que d'autres continuent de miser, les jetons forment un ==**pot principal**== (tout le monde y a droit) plus un ou plusieurs ==**pots annexes (side pots)**== (seulement les joueurs qui ont misé plus que ce qu'un tapis all-in plus court pouvait égaler). Chaque pot est attribué — ou partagé — ==**séparément**==, selon la meilleure main parmi les joueurs qui ont droit à ce pot.
 
 Un exemple concret : A est all-in pour 100 ; B et C mettent chacun 300. Ça fait un **pot principal de 300** (100 × 3) et un **pot annexe de 400** (200 + 200, B et C seulement). Le board donne A♦ J♥ 7♠ 4♣ 2♥ :
 

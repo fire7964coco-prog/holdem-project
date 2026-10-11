@@ -334,7 +334,7 @@ Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jede
 
 **Q. Was ist ein Flush im Poker?**
 
-A. Ein Flush sind beliebige fünf Karten derselben Farbe – zum Beispiel A♦ J♦ 8♦ 6♦ 2♦ – unabhängig von der Reihenfolge. Er steht auf #5, über einer Straße und unter einem Full House. Halten zwei Spieler einen Flush, gewinnt die höchste Karte; Farben brechen nie den Gleichstand.
+A. Ein Flush sind beliebige fünf Karten derselben Farbe – zum Beispiel A♦ J♦ 8♦ 6♦ 2♦ – unabhängig von der Reihenfolge. Er steht auf #5, über einer Straße und unter einem Full House. Halten zwei Spieler einen Flush, gewinnt die höchste Karte, dann die nächste, und so weiter über alle fünf; Farben brechen nie den Gleichstand.
 
 **Q. Was ist ein Full House im Poker?**
 
@@ -358,7 +358,7 @@ A. Flush, Full House, Vierling, Straight Flush und Royal Flush schlagen alle ein
 
 **Q. Was schlägt einen Flush im Poker?**
 
-A. Ein Full House, Vierling, Straight Flush oder Royal Flush schlägt einen Flush. Gegen einen anderen Flush gewinnt die höhere oberste Karte. Ein Flush (#5) schlägt trotzdem eine Straße und alles darunter.
+A. Ein Full House, Vierling, Straight Flush oder Royal Flush schlägt einen Flush. Gegen einen anderen Flush gewinnt die höchste Karte, dann die nächste, und so weiter über alle fünf. Ein Flush (#5) schlägt trotzdem eine Straße und alles darunter.
 
 **Q. Was schlägt ein Full House im Poker?**
 
@@ -374,7 +374,7 @@ A. Nur ein höherer Straight Flush oder ein Royal Flush (der einfach der Ass-hoc
 
 **Q. Was ist ein Kicker?**
 
-A. Ein Kicker ist eine Karte, die nicht Teil deiner fertigen Hand ist, aber Gleichstände bricht. Bei zwei gleichen Paaren gewinnt die höchste Seitenkarte (der Kicker). Der beste mögliche Kicker ist das Ass.
+A. Ein Kicker ist eine Karte, die nicht Teil deiner fertigen Hand ist, aber Gleichstände bricht. Bei zwei gleichen Paaren gewinnt die höchste Seitenkarte (der Kicker) – und ist auch die gleich, entscheidet die nächste. Der beste mögliche Kicker ist das Ass.
 
 **Q. Können zwei Spieler dieselbe Hand haben?**
 

@@ -313,7 +313,7 @@ The takeaway: learn the standard order once and it carries you through nearly ev
 
 **Q. What is a flush in poker?**
 
-A. A flush is any five cards of the same suit — for example A♦ J♦ 8♦ 6♦ 2♦ — regardless of order. It ranks #5, above a straight and below a full house. When two players both hold a flush, the highest card wins; suits never break the tie.
+A. A flush is any five cards of the same suit — for example A♦ J♦ 8♦ 6♦ 2♦ — regardless of order. It ranks #5, above a straight and below a full house. When two players both hold a flush, the highest card wins, then the next, and so on down all five; suits never break the tie.
 
 **Q. What is a full house in poker?**
 
@@ -337,7 +337,7 @@ A. A flush, full house, four of a kind, straight flush, or royal flush all beat 
 
 **Q. What beats a flush in poker?**
 
-A. A full house, four of a kind, straight flush, or royal flush beats a flush. Against another flush, the higher top card wins. A flush (#5) still beats a straight and everything below it.
+A. A full house, four of a kind, straight flush, or royal flush beats a flush. Against another flush, the highest card wins, then the next, and so on down all five. A flush (#5) still beats a straight and everything below it.
 
 **Q. What beats a full house in poker?**
 
@@ -353,7 +353,7 @@ A. Only a higher straight flush or a royal flush (which is simply the ace-high s
 
 **Q. What is a kicker?**
 
-A. A kicker is a card that isn't part of your made hand but breaks ties. With two equal pairs, the highest side card (kicker) wins. The Ace is the best possible kicker.
+A. A kicker is a card that isn't part of your made hand but breaks ties. With two equal pairs, the highest side card (kicker) wins — and if that ties too, the next one decides. The Ace is the best possible kicker.
 
 **Q. Can two players have the same hand?**
 

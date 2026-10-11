@@ -123,7 +123,7 @@ In a three-way split with two odd chips, the two earliest seats clockwise each g
 
 ## Do Side Pots Split Too? Ties When Someone Is All-In
 
-When players are all-in for different amounts and others keep betting, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the deeper stacks who kept betting). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
+When players are all-in for different amounts and others keep betting, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the players who put in more than a shorter all-in stack could match). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
 
 A worked example: A is all-in for 100; B and C each put in 300. That's a **main pot of 300** (100 × 3) and a **side pot of 400** (200 + 200, B and C only). The board runs A♦ J♥ 7♠ 4♣ 2♥:
 

@@ -124,7 +124,7 @@ Dalam split tiga hala dengan dua odd chip, dua tempat duduk paling awal mengikut
 
 ## Adakah Side Pot Juga Dibahagi? Seri Apabila Ada Pemain All-In
 
-Apabila pemain all-in dengan jumlah berbeza dan pemain lain terus bertaruh, cip membentuk ==**pot utama**== (semua orang layak) ditambah satu atau lebih ==**side pot**== (hanya pemain dengan stack lebih dalam yang terus bertaruh). Setiap pot diberikan — atau di-chop — ==**secara berasingan**==, berdasarkan tangan terbaik antara pemain yang layak bagi pot itu.
+Apabila pemain all-in dengan jumlah berbeza dan pemain lain terus bertaruh, cip membentuk ==**pot utama**== (semua orang layak) ditambah satu atau lebih ==**side pot**== (hanya pemain yang memasukkan lebih banyak daripada yang mampu disamai oleh stack all-in yang lebih pendek). Setiap pot diberikan — atau di-chop — ==**secara berasingan**==, berdasarkan tangan terbaik antara pemain yang layak bagi pot itu.
 
 Contoh lengkap: A all-in dengan 100; B dan C masing-masing memasukkan 300. Itu **pot utama 300** (100 × 3) dan **side pot 400** (200 + 200, B dan C sahaja). Board keluar A♦ J♥ 7♠ 4♣ 2♥:
 

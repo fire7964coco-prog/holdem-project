@@ -196,7 +196,7 @@ A. Un kicker as signifie que ta carte d'accompagnement la plus haute est un as �
 
 **Q. Que veut dire « jouer le board » ?**
 
-A. Jouer le board, c'est quand les cinq cartes communes forment ta meilleure main et que tes cartes fermées ne peuvent pas l'améliorer. Si personne ne peut faire mieux que le board, tout le monde utilise les mêmes cinq cartes et le pot est partagé. Tes cartes d'accompagnement ne décident plus rien, parce qu'aucune de tes cartes fermées ne fait partie des cinq que tu joues — chaque carte de la main est commune.
+A. Jouer le board, c'est quand les cinq cartes communes forment ta meilleure main et que tes cartes fermées ne peuvent pas l'améliorer. Si personne ne peut faire mieux que le board, tout le monde utilise les mêmes cinq cartes et le pot est partagé — mais seulement entre les joueurs qui retournent leurs cartes fermées (TDA 2024, règle 19). Tes cartes d'accompagnement ne décident plus rien, parce qu'aucune de tes cartes fermées ne fait partie des cinq que tu joues — chaque carte de la main est commune.
 
 **Q. Le kicker compte-t-il au Texas Hold'em ?**
 

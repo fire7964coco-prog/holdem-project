@@ -124,7 +124,7 @@ Numa divisão de três vias com duas fichas ímpares, os dois assentos mais pró
 
 ## Os potes paralelos também dividem? Empates quando alguém está all-in
 
-Quando há jogadores all-in por valores diferentes e os outros continuam apostando, as fichas formam um ==**pote principal**== (todos são elegíveis) mais um ou mais ==**potes paralelos**== (só os stacks mais fundos que continuaram apostando). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
+Quando há jogadores all-in por valores diferentes e os outros continuam apostando, as fichas formam um ==**pote principal**== (todos são elegíveis) mais um ou mais ==**potes paralelos**== (só os jogadores que colocaram mais do que um stack all-in menor conseguia cobrir). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
 
 Um exemplo prático: o A está all-in por 100; o B e o C colocam 300 cada. Isso dá um **pote principal de 300** (100 × 3) e um **pote paralelo de 400** (200 + 200, só B e C). O board vem A♦ J♥ 7♠ 4♣ 2♥:
 

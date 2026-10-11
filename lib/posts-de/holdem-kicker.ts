@@ -199,7 +199,7 @@ A. Ein hoher – ein Ass oder König als Kicker ist stark, während ein niedrige
 
 **Q. Was bedeutet „das Board spielen“?**
 
-A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Kann niemand das Board verbessern, nutzen alle dieselben fünf Karten und der Pot wird geteilt. Deine Beikarten entscheiden dann nichts mehr, weil keine deiner Hole Cards zu den fünf Karten gehört, die du spielst – jede Karte der Hand ist geteilt.
+A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Kann niemand das Board verbessern, nutzen alle dieselben fünf Karten und der Pot wird geteilt – aber nur unter den Spielern, die ihre Hole Cards aufdecken (TDA-2024-Regel 19). Deine Beikarten entscheiden dann nichts mehr, weil keine deiner Hole Cards zu den fünf Karten gehört, die du spielst – jede Karte der Hand ist geteilt.
 
 **Q. Zählen Kicker im Texas Hold'em?**
 

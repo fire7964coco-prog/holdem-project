@@ -196,7 +196,7 @@ A. Kicker ás significa que sua carta lateral mais alta é um ás — o kicker m
 
 **Q. O que significa "jogar a mesa"?**
 
-A. Jogar a mesa significa que as cinco cartas comunitárias são sua melhor mão e suas cartas de mão não podem melhorá-la. Se ninguém consegue melhorar o board, todos usam as mesmas cinco cartas e o pote é dividido. Suas cartas laterais deixam de decidir qualquer coisa, porque nenhuma das suas cartas de mão entra nas cinco que você joga — toda carta da mão é compartilhada.
+A. Jogar a mesa significa que as cinco cartas comunitárias são sua melhor mão e suas cartas de mão não podem melhorá-la. Se ninguém consegue melhorar o board, todos usam as mesmas cinco cartas e o pote é dividido — mas só entre os jogadores que viram as cartas para cima (regra 19 da TDA, edição de 2024). Suas cartas laterais deixam de decidir qualquer coisa, porque nenhuma das suas cartas de mão entra nas cinco que você joga — toda carta da mão é compartilhada.
 
 **Q. Os kickers importam no Texas Hold'em?**
 

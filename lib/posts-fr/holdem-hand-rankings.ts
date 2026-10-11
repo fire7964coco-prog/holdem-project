@@ -337,7 +337,7 @@ Presque toujours — le même ordre des dix combinaisons vaut au Texas Hold'em, 
 
 **Q. Qu'est-ce qu'un flush au poker ?**
 
-A. Le flush, c'est la couleur : cinq cartes quelconques de la même enseigne — par exemple A♦ J♦ 8♦ 6♦ 2♦ — peu importe l'ordre. Elle est classée #5, au-dessus de la quinte et en dessous du full. Quand deux joueurs ont chacun une couleur, la carte la plus haute gagne ; les enseignes ne départagent jamais.
+A. Le flush, c'est la couleur : cinq cartes quelconques de la même enseigne — par exemple A♦ J♦ 8♦ 6♦ 2♦ — peu importe l'ordre. Elle est classée #5, au-dessus de la quinte et en dessous du full. Quand deux joueurs ont chacun une couleur, la carte la plus haute gagne, puis la suivante, et ainsi de suite sur les cinq ; les enseignes ne départagent jamais.
 
 **Q. Qu'est-ce qu'une main full au poker ?**
 
@@ -361,7 +361,7 @@ A. La couleur, le full, le carré, la quinte flush et la quinte flush royale bat
 
 **Q. Quelles mains sont plus fortes qu'une couleur ?**
 
-A. Un full, un carré, une quinte flush ou une quinte flush royale battent une couleur. Contre une autre couleur, la carte la plus haute gagne. Une couleur (#5) bat quand même la quinte et tout ce qui est en dessous.
+A. Un full, un carré, une quinte flush ou une quinte flush royale battent une couleur. Contre une autre couleur, la carte la plus haute gagne, puis la suivante, et ainsi de suite sur les cinq. Une couleur (#5) bat quand même la quinte et tout ce qui est en dessous.
 
 **Q. Qu'est-ce qui bat un full au poker ?**
 
@@ -377,7 +377,7 @@ A. Seulement une quinte flush plus haute ou une quinte flush royale (qui n'est r
 
 **Q. À quoi sert le kicker dans l'ordre des mains ?**
 
-A. Le kicker est une carte qui ne fait pas partie de ta combinaison mais qui départage les égalités. Quand deux joueurs ont la même paire, la carte d'accompagnement la plus haute (le kicker) gagne. L'as est le meilleur kicker possible.
+A. Le kicker est une carte qui ne fait pas partie de ta combinaison mais qui départage les égalités. Quand deux joueurs ont la même paire, la carte d'accompagnement la plus haute (le kicker) gagne — et si elle est identique aussi, c'est la suivante qui décide. L'as est le meilleur kicker possible.
 
 **Q. Deux joueurs peuvent-ils avoir la même main ?**
 

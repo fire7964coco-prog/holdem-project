@@ -196,7 +196,7 @@ A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat
 
 **Q. Apa arti "playing the board"?**
 
-A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Kalau tak seorang pun bisa memperbaiki board, semua orang memakai lima kartu yang sama dan pot dibagi. Kartu samping Anda berhenti menentukan apa pun, karena tak satu pun kartu tertutup Anda ikut membentuk lima kartu yang Anda mainkan — setiap kartu dalam tangan itu milik bersama.
+A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Kalau tak seorang pun bisa memperbaiki board, semua orang memakai lima kartu yang sama dan pot dibagi — tapi hanya di antara pemain yang membuka kartu tertutupnya (TDA 2024 Rule 19). Kartu samping Anda berhenti menentukan apa pun, karena tak satu pun kartu tertutup Anda ikut membentuk lima kartu yang Anda mainkan — setiap kartu dalam tangan itu milik bersama.
 
 **Q. Apakah kicker penting di Texas Hold'em?**
 

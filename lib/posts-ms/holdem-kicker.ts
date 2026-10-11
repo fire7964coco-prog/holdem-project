@@ -196,7 +196,7 @@ A. Kicker As (ace kicker) bermakna kad sampingan tertinggi anda ialah As — kic
 
 **Q. Apa maksud "playing the board"?**
 
-A. Playing the board bermakna lima kad komuniti ialah tangan terbaik anda dan hole card anda tidak dapat memperbaikinya. Jika tiada sesiapa yang dapat memperbaiki board, semua orang menggunakan lima kad yang sama dan pot dibahagi. Kad sampingan anda berhenti menentukan apa-apa, kerana tiada satu pun hole card anda membentuk lima kad yang anda mainkan — setiap kad dalam tangan itu dikongsi.
+A. Playing the board bermakna lima kad komuniti ialah tangan terbaik anda dan hole card anda tidak dapat memperbaikinya. Jika tiada sesiapa yang dapat memperbaiki board, semua orang menggunakan lima kad yang sama dan pot dibahagi — tetapi hanya antara pemain yang membuka hole card mereka (Peraturan 19 TDA 2024). Kad sampingan anda berhenti menentukan apa-apa, kerana tiada satu pun hole card anda membentuk lima kad yang anda mainkan — setiap kad dalam tangan itu dikongsi.
 
 **Q. Adakah kicker penting dalam Texas Hold'em?**
 
