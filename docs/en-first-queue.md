@@ -795,6 +795,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수.
 - ✅ **통지 1·2 이행 10-11 (6) `8fb1e28b` MB-237** = EN 7묶음(+ «called an all-in» 동형 사본 card-counting·drawing-odds 2) → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·tr(tr 2편) · vi 단독 2. 🪶 남김(자동 착수 금지): EN card-counting 직답 L102 «devices and advice from others during play, and each room or event sets its own rules»(배타 아님 · es·pt·de·ja·zh-hant 동형) · vi pot-odds desc «tiền call ÷ (pot + tiền call)» · id·ms·vi card-counting 표 L128 «×4 … (all-in, atau turn dan river sama-sama gratis)» · es card-counting L128·pot-odds L182·L221 올인 문면 · zh-hant card-counting 표 «（你已經全下，或者後面沒有下注）» · EN·로케일 equity H2 «Decides Every Call»(SEO 제목 · 유지).
 
+### 2-AW. 우편함 수신분 — MA-423 (VI 회차 4 🅳 strat 8편 · 기준 `19742875`) · 등재·회신 2026-10-11 (10) MB-241 · 미이행
+
+> 근거 = 검수장 `reports/검수-vi-r4-strat-2026-10-11/hq-reverify/HQ-REPORT.md`(1,058행 OK 611 · RISKY 5 · WRONG 0 · UNV 442 · 수치 WRONG 0). 위치 대조 = 현 main `c732b7e9`(ts 행 번호 · MA의 L은 md 기준) · 인용 문면 전 자리 실재. 처방 원칙 = «같은 글 정답 문면 재사용 — 문안 창작 아님».
+
+| # | 글 | 자리(ts 행) | 처방 |
+|---|---|---|---|
+| AW-1 vi | holdem-positions | L163 «các ghế UTG+1 trở lên chỉ có ở bàn full ring (bàn 9 người)» ↔ 같은 표 10인 행·«rụng dần từ vị trí sớm trước» | 괄호 «(bàn 9 người)» 제거(EN «exist only at full-ring tables» 동형) |
+| AW-2 vi | holdem-strategy | L55 «giữ cho những pot bạn thua luôn nhỏ»(EN에 없는 «luôn») | «luôn» 제거 · 같은 글 L209 «thắng pot lớn và thua pot nhỏ» 경향형 |
+| AW-3 vi | holdem-starting-hands-chart | L196 이미지 캡션 «Át yếu trông mạnh nhưng luôn bị áp đảo»(A4o vs KQo 57,8% 반례) | EN «stay dominated» · 같은 글 L191 «trước những lá Át tốt hơn»·L198 «thường đứng thứ nhì» 문면 |
+| AW-4 vi | holdem-continuation-bet | L165 «đừng c-bet khi board trúng đậm range đối thủ»(«by default» 탈락) | 같은 글 FAQ L251 «Đừng c-bet theo mặc định khi …» 문면 재사용 |
+| AW-5 🔴 EN-먼저 | holdem-strategy | EN FAQ L188 «… and fold quickly when you miss» · vi L205 «fold nhanh khi trượt» 동문 · 13로케일 | 같은 글 «fold when you miss and face real action» 문면 → 13로케일(이행 MB 때 fr·pt·id 형제 갈림 재판정 요청) |
+
+- 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = when-to-fold 체크리스트 «Passive players and big river raises are value — believe them»(«usually» 탈락) · when-to-fold FAQ «far more than a fifth»(20–25%와 경계) · strategy «beats almost every casual game» · shc tldr «about 15–20% … is profitable»(«across a session» 한정 탈락) · shc «raising and re-raising with AK stays correct» · when-to-fold «Beat the pot odds threshold or fold»(implied odds 예외 탈락) · position-play «position, not card strength, funds that gap» · 3bet «leading every street» · limping «worst seat in the house» **통지 2 vi 단독** = when-to-fold L91 «Nếu bạn không muốn tính nhẩm ở bàn, máy tính pot odds cho ra ngưỡng ngay»(테이블 중 계산기로 읽힘 · EN 없음) · c-bet tldr EN 괄호절 «(as the out-of-position 3-bettor …97% …)» 부재 · position-play L186 «sẽ bet»(EN «expect»).
+- MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. 🟠 MB-233·234·236·237 전/후 대조는 검수장 별도 회차(MA-425 착수 공지).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
