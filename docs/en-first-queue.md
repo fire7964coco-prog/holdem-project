@@ -782,6 +782,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ **통지 1 이행 10-11 (3) `3ec21aaf` MB-234** = EN 13자리(kicker tldr·FAQ1·note 조건 · hand-rankings 최약 핸드 5장/7장 9-8-7-5-4(전수 계산) · Stud «except a rare shared final card»(WSOP LA 232 축어) · reading TDA 2024 22 휴식 예외(축어) · 보드 로열 사이드팟별 · 보드 스트레이트 «beats the board — … the higher straight wins» · flush «compared card by card from the top» · split «Suits never break the tie» · 사이드팟 «more than a shorter all-in stack could match» · tiebreak 본문·FAQ «Once/When the cards above it are tied») → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·hi·tr·ar(ko 4편 = 해당 문장 없음 · 로케일별 «이미 맞음» 자리 = vi #1·2·10 · fr #1 · de #9 · zh-hant #11) + de kicker 직답 박스 동형 1. EN `updated` 무변경(문턱) · 로케일 10-11. 🪶 남김(→ 10-11 (4)에서 앞 4묶음 처리): EN split 본문 L126 «only the deeper stacks who kept betting» + zh L185·zh-hant L140 동형(사이드팟 본문) · EN hand-rankings L316·L340 «highest/higher top card wins»(Astra #4 · flush FAQ와 동형) · EN kicker FAQ L198 playing the board 공개 조건 · hand-rankings L83 보드 로열 «get as many chips in»(레이크) · ko split 오드칩 «무늬로 가리지 않음» 단정 ↔ EN 하우스 예외 · ko flush «더 높은 무늬 카드» 표현 · zh tiebreak L152 바로답(전제 있어 유지) · ja kicker FAQ L180 «並べば»(유지) · ar Stud «الرزمة» 네이티브 확인. §2-AU 통지 2(vi 단독)는 미착수.
 - ✅ **남김 EN 동형 이행 10-11 (4) `5f22c51a` MB-235** = EN 5자리(split 본문 L126 «(only the players who put in more than a shorter all-in stack could match)» · hand-rankings L316·L340 «the highest card wins, then the next, and so on down all five»(같은 글 L168 문면) · L356 «— and if that ties too, the next one decides» · kicker L198 «— but only among players who turn their hole cards face up (TDA 2024 Rule 19)»(원문 축어 확인)) → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·hi·ar(ko 이미 맞음·해당 없음 · hi·tr 해당 FAQ 없는 자리 있음). 🪶 남김(자동 착수 금지): hand-rankings L83 보드 로열 «get as many chips in»(레이크) · ko split 오드칩 «무늬로 가리지 않음» 단정 ↔ EN 하우스 예외 · ko flush «더 높은 무늬 카드» 표현 · zh kicker 바로답 L166·zh-hant 본문 L125 «보드 플레이 = 평분»(바로 아래 예시에 공개 조건 있음) · zh tiebreak L152 바로답 · ja kicker FAQ L180 «並べば» · ar Stud «الرزمة» 네이티브 확인 · §2-AU 통지 2(vi 단독).
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. MB-226·227 vi 🅱 5편 몫 = 이 회차가 새 문면 판정으로 흡수 → 접수. 🟠 공용 🆕 vi 12 = MA-420 이행 진행 신호(되돌림 아님) → MB-231 배포로 해소.
+- ✅ 이행 10-11 (17) `bda7e8be` MB-252 = AW-1~4 vi 처방대로 · AW-5 = EN «fold when you miss and face real aggression»(같은 글 L196 축어 · queue 문안 «real action» 대신 실제 문면) → de·es·fr·id·ja·ms·pt·tr·vi·zh·zh-hant 각 글 fold FAQ 문면 · ko 사본 없음 · 통지 1·2 그대로 남김.
 
 ### 2-AV. 우편함 수신분 — MA-422 (VI 회차 3 🅲 prob 7편 · 기준 `6b76c650`) · 등재·회신 2026-10-11 (5) MB-236 · ✅ 요청 1 이행 `a8cd4b43` · ✅ 통지 1·2 이행 `8fb1e28b` MB-237
 
@@ -795,7 +796,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수.
 - ✅ **통지 1·2 이행 10-11 (6) `8fb1e28b` MB-237** = EN 7묶음(+ «called an all-in» 동형 사본 card-counting·drawing-odds 2) → ja·zh·zh-hant·es·pt·de·fr·id·ms·vi·tr(tr 2편) · vi 단독 2. 🪶 남김(자동 착수 금지): EN card-counting 직답 L102 «devices and advice from others during play, and each room or event sets its own rules»(배타 아님 · es·pt·de·ja·zh-hant 동형) · vi pot-odds desc «tiền call ÷ (pot + tiền call)» · id·ms·vi card-counting 표 L128 «×4 … (all-in, atau turn dan river sama-sama gratis)» · es card-counting L128·pot-odds L182·L221 올인 문면 · zh-hant card-counting 표 «（你已經全下，或者後面沒有下注）» · EN·로케일 equity H2 «Decides Every Call»(SEO 제목 · 유지).
 
-### 2-AW. 우편함 수신분 — MA-423 (VI 회차 4 🅳 strat 8편 · 기준 `19742875`) · 등재·회신 2026-10-11 (10) MB-241 · 미이행
+### 2-AW. 우편함 수신분 — MA-423 (VI 회차 4 🅳 strat 8편 · 기준 `19742875`) · 등재·회신 2026-10-11 (10) MB-241 · ✅ AW-1~5 이행 2026-10-11 (17) `bda7e8be` MB-252
 
 > 근거 = 검수장 `reports/검수-vi-r4-strat-2026-10-11/hq-reverify/HQ-REPORT.md`(1,058행 OK 611 · RISKY 5 · WRONG 0 · UNV 442 · 수치 WRONG 0). 위치 대조 = 현 main `c732b7e9`(ts 행 번호 · MA의 L은 md 기준) · 인용 문면 전 자리 실재. 처방 원칙 = «같은 글 정답 문면 재사용 — 문안 창작 아님».
 
@@ -820,7 +821,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(자동 착수 금지): ① EN straddle 정의문 «A straddle is an optional blind bet» ↔ 같은 글 «usually optional (… mandatory)» ② vi beginners «phần lớn cùng dùng một thứ hạng» UNV ↔ EN hand-rankings «Mostly yes»(형제 잣대 후보 · 라벨 불변) ③ es·EN low-board «mostly with draws» UNV(레이즈 구성 ~40콤보 미집계 — 캡처 구성표 있으면 OK 가능) ④ 범위 밖 = 로케일 GTO 13편 원장 없음(§0-N 경량 트랙) · MB-229·S-064~066·MB-238~240 미처리.
 
-### 2-AY. 우편함 수신분 — MA-427 (VI 회차 5 🅵 gloss 6편 + /vi/glossary · 기준 `853c8e1e`) · 등재·회신 2026-10-11 (15) MB-250 · 미이행
+### 2-AY. 우편함 수신분 — MA-427 (VI 회차 5 🅵 gloss 6편 + /vi/glossary · 기준 `853c8e1e`) · 등재·회신 2026-10-11 (15) MB-250 · ✅ AY-1~8 이행 2026-10-11 (17) `bda7e8be` MB-252
 
 > 근거 = 검수장 `reports/검수-vi-r5-gloss-2026-10-11/hq-reverify/HQ-REPORT.md`(글 679행 OK 474 · RISKY 10 · WRONG 0 · UNV 195 + 사전 73행). 위치 대조 = 현 main `85b99efe`(ts 행). 처방 원칙 = 같은 글 정답 문면 재사용.
 
@@ -836,8 +837,9 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AY-8 🔴 EN-먼저 | 사전(/glossary · `lib/posts-en/holdem-glossary.ts` 등 13로케일 공통) | hero «Every Texas Hold'em term you'll hear at the table» — 46용어(straddle·squeeze·4-bet·donk bet 표제 없음) | 전칭 완화 → 13로케일 |
 
 - 🪶 통지(자동 착수 금지): straddle «Only in specific spots»·FAQ «defensible only …»(헤지로 OK) · fish 요점 «everyone else profits from»(형제 OK) · 사전 vi Board «Năm lá bài chung»(플랍 3장도 board) · cooler 복기 yes 가지 = MA-327 결재 A 사유 해소 확인.
+- ✅ 이행 10-11 (17) `bda7e8be` MB-252 = AY-1~3 처방대로(AY-2 = 괄호 «với từ ba người trở lên — khi heads-up, SB ở nút dealer») · AY-4 = §2-AT 삭제 틀(L105 «nên đáng kiểm tra trước khi chọn nơi chơi» · FAQ rakeback 거래·cap 방 고르기 문장 · 홈게임 «poker rẻ nhất» 문장 삭제 · L189 요약 서술형) · AY-5 EN+10 · AY-6 EN+9(de 무변경 = 이미 «방식에 따라») · AY-7 EN+10(id·ms «alasan/sebab utama»도 «salah satu») · AY-8 = `components/glossary/dict.ts` + app 9로케일 dict(ja·zh·zh-hant 전칭 아님 · 🪶 EN 글 holdem-glossary desc «Every poker term you’ll hear at the table»는 메타라 손대지 않음 — 판정 요청).
 
-### 2-AZ. 우편함 수신분 — MA-429 (VI 🅶 GTO13 경량 트랙 · 기준 `378d35ad`) · 등재·회신 2026-10-11 (15) MB-250 · 미이행
+### 2-AZ. 우편함 수신분 — MA-429 (VI 🅶 GTO13 경량 트랙 · 기준 `378d35ad`) · 등재·회신 2026-10-11 (15) MB-250 · ✅ AZ-1·2 이행 2026-10-11 (17) `bda7e8be` MB-252
 
 > 근거 = 검수장 `reports/검수-vi-gto13-경량-2026-10-11/REPORT.md`. EN 정정 39자리 = 반영 35 · EN 동형 4 · vi 결함 잔존 0. 위치 대조 = 현 main `85b99efe`.
 
@@ -847,6 +849,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | AZ-2 vi | 3bet-pot-low-board L165 · ace-paired-board-strategy L185 · blind-battle-cbet L205 · blind-battle-connected-board L210 | «… mọi tính năng đều dùng được khi không đăng nhập» — 전칭(오늘의 문제 순위·저장 목록 동기는 로그인 필요) + 동기 대상 한정 탈락 | vi 랜딩 «đăng nhập thì đồng bộ lịch sử Spot mẫu và Thử thách hôm nay»(EN 문장 범위) 재사용 |
 
 - 🪶 통지(라벨 불변): k-high L119 equity 풀이 조건 생략(선택) · EN 손질 참고 = ace-paired «about 44% · about 27%» ↔ 원시 44,9%·25,9% · k-high «folds overcards» 예시(QJ·JT·T9) 용법.
+- ✅ 이행 10-11 (17) `bda7e8be` MB-252 = AZ-1 «chỉ khoảng 1,1 combo» · AZ-2 4편 «đăng nhập là tùy chọn và dùng để đồng bộ lịch sử Spot mẫu và Thử thách hôm nay giữa các thiết bị»(vi 랜딩 faq.ts 축어).
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

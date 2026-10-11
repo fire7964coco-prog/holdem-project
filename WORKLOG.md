@@ -1,3 +1,11 @@
+## 2026-10-11 (17) — queue EN-먼저 묶음 AW-5 + AY-5~8 → 로케일 전파 · vi 고유 AW-1~4 · AY-1~4 · AZ-1~2 · 배포 `bda7e8be` · MB-252
+
+- 사장님 «핸드오프 읽고 queue EN-먼저 묶음 진행해». 18:22 착수.
+- EN 5자리 → 로케일 = 54자리(«정확히 1자리» 단언 스크립트). 로케일 문안은 전부 각 글에 이미 있는 형제 문면 재사용(AW-5 fold FAQ · AY-5 ICM 문단 · AY-6 «대부분의 캐시게임» FAQ · AY-7 L63 «주요 이유 중 하나»). 비대상 = AY-6 de(이미 방식별) · AY-8 ja·zh·zh-hant(전칭 아님). AY-8 위치는 글이 아니라 `components/glossary/dict.ts` + app 로케일 dict.
+- vi 17자리 · AY-4는 §2-AT 삭제 틀. AZ-2 = vi 랜딩 faq.ts 축어.
+- `updated` 10-11(56편 · masterUpdated 불변 = `3ec21aaf` 선례). 교열 렌즈 1(Opus 5.5 · must-fix 0 · 선택 3 중 2 반영).
+- 게이트: audit:hard --locale en·vi 해당 글 0 · check:stamp 이상 없음 · build exit 0(74 + 729) · IndexNow 200.
+
 ## 2026-10-11 (16) — queue §2-AX AX-1 이행(솔버 랜딩 3벳 로우 보드 note 9로케일) · 배포 `257f1220` · MB-251 · 한도로 마감
 
 - 사장님 «이어서 해»(EN-먼저 묶음). 실행 시작 17:14 → 18:18에 64분째라 AUTONOMY-LIMITS 90분 안에 끝나는 최소 단위 AX-1만 하고 마감.
