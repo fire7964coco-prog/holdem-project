@@ -1,3 +1,12 @@
+## 2026-10-11 (13) — MA-426 회신+등재(MB-246 · queue §2-AX) · «내 기록» 회차 D(프로필 탭 카드 3장) · 배포 `c03b6909` · MB-247
+
+- 사장님 «핸드오프 읽고 MA-426 회신+등재 후 내 기록 회차 D 진행해».
+- MA-426: 요청 1(EN 솔버 랜딩 3벳 로우 보드 note «beyond overpairs and A5s's pair of fives, it is gutshots and backdoors» — K♥Q♥ 반례) = AX-1 EN-먼저 등재 · 같은 문면 실측 = en + de·es·pt·ru·tr·vi·zh·zh-hant(tr은 MA 목록 밖이나 동형) · hi·ms·fr·id·ja 문면 다름 · 통지 4 🪶. 미이행.
+- 회차 D: `app/community/my-records.tsx` 신설(카드 3장 · 12로케일 = 프로필 탭 LABELS와 같은 범위·폴백) · 트레이너 «좋은 선택» = S-068 기준 · 평균 EV 손실·좋은 선택·종류 이름 = 솔버 TrainerPage.vue·trainer.ts 축어 · 저장 목록 = count head(지운 표시·그룹 제외) · 카드가 열릴 때 브라우저에 남은 끝난 판을 먼저 올림 · `fetchAccountQuiz`(합계 + 최근 7일) 추가 · 로그인 안 한 카드에 한 줄(break-keep — 390에서 «계/정»으로 쪼개짐).
+- 🔴 판단: 지우기는 퀴즈 카드만. 솔버 `account.ts syncAttempts`가 기기 기록을 client_id upsert로 전부 다시 올리므로 본체에서 트레이너·저장 목록 행을 지우면 다음 동기화 때 되살아난다 → «솔버 화면에서 지울 수 있어요» 안내(설계 §3-4 변경 · 솔버에 MB-247로 알림).
+- 검증: 임시 페이지 + Playwright 가짜 REST 응답으로 ko 390·1440 · en·de·tr·zh-hant·vi·ja 390 넘침 0 · 숫자 검산(61/69=88% · 7.8%p · 7일 12판 · 0.115bb · 30/40=75% · 14/13/13) · 실제 `/?tab=profile`·`/en?tab=profile` 비로그인 한 줄 확인. 임시 페이지 삭제 · dev 서버 3177은 PID·부모 명령줄 대조 후 내 것만 종료(3123은 다른 서버 · 손대지 않음). 🪶 실계정 미시험.
+- 게이트: tsc(변경 파일) 0 · build exit 0(74 + 729).
+
 ## 2026-10-11 (12) — «내 기록» 회차 C (승률 퀴즈 기록 브라우저 보관 + 계정 저장 + 권유 한 줄) · 배포 `50e0d8a6` · MB-245
 
 - 사장님 «핸드오프 읽고 내 기록 회차 C 진행해».
