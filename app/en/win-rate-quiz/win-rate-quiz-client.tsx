@@ -84,7 +84,7 @@ const EN_UI: QuizUI = {
   chartTitle: "📈 Equity street by street — all cards face up",
   resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
   chartRangeLegend: "What you saw",
-  chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A line stops on the street that player folded.",
+  chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A folded player's line runs up to the street before the fold.",
   quizToggle: "🎯 Quiz",
   quizGuessTitle: "What's your equity?",
   quizGuessHint: "Set your guess with the slider",
@@ -123,7 +123,7 @@ const EN_UI: QuizUI = {
       </p>
       <p className="mb-2">
         <b className="text-foreground">Your equity is calculated as if you cannot see their cards.</b> From the
-        flop on, each opponent&rsquo;s range is every hand that would have taken exactly the actions you saw —
+        flop on, each opponent&rsquo;s range is the hands in their seat-based preflop range (below) that match the actions you saw —
         after a raise, only two pair or better remains. The players who fold on screen also drop out of the
         math.
       </p>
@@ -135,7 +135,7 @@ const EN_UI: QuizUI = {
         at 25/50/75%. Where no chart exists (HJ facing a UTG open · SB facing a UTG, HJ or CO open) and for the
         third player onward, the nearest defending chart stands in. There are no 9-handed charts, so at a 9-max
         table UTG, UTG+1, UTG+2 and LJ use the 6-max UTG chart and every other seat uses the 6-max chart of the
-        same name — the first three seats of a 9-max table come out wider than they really are. Only your own hand is random — the tool lets
+        same name (an early seat defending another early seat&rsquo;s open, or the HJ defending one, uses the CO vs UTG chart) — the first three seats of a 9-max table come out wider than they really are. Only your own hand is random — the tool lets
         you play any two cards to the river. A 3-bet does not change the pot size here (simplified).
       </p>
       <p className="mb-2">
@@ -147,7 +147,7 @@ const EN_UI: QuizUI = {
         Everyone posts {ANTE} to start with a {STACK.toLocaleString()} stack. You never fold — that is the point,
         so you can see the river and review. Equity is a simulated estimate with a fixed sample size:{" "}
         <b className="text-foreground">{SAMPLES.preflop.toLocaleString()} runs</b> preflop and{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()} runs</b> from the flop on (roughly ±0.25–0.35%p).
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()} runs</b> from the flop on (standard error roughly 0.25–0.35%p).
         Each hand uses a fixed random seed, so the same hand shows the same numbers on any device. Ties are split
         by the number of players who share the pot (half each in a two-way tie).
       </p>
