@@ -362,6 +362,54 @@
     0 24px 56px -24px hsl(0 0% 0% / 0.65);
 }
 
+/* ── 승률 시뮬레이터(/win-rate-quiz · /en/win-rate-quiz) 색 토큰 ──────────
+   S-034 회차 5(2026-10-11): 하드코딩 40곳을 여기로 모았다. 디자인 부품 = 유튜브
+   shared-assets/poker-scene/kit-v1 «EMERALD ROOM»(카드·칩·딜러 버튼 SVG의 색을 그대로).
+   역할: 강조는 accent(내 승률) 하나 · 다크 면(패널·펠트) 위 판정색은 *-on-dark,
+   크림 면(팟오즈·복기 표) 위 판정색은 good/bad(크림 대비 4.5:1 이상). */
+.wrq {
+  --wrq-accent: rgb(var(--gold-dark-rgb));
+  --wrq-accent-ink: #000;
+  --wrq-felt: radial-gradient(ellipse 120% 90% at 50% 42%, #1f7a52 0%, #12603f 45%, #0b4229 78%, #08331f 100%);
+  --wrq-rail: linear-gradient(160deg, #6b4a29 0%, #4a3319 55%, #37260f 100%);
+  --wrq-panel: #17231f;
+  --wrq-panel-line: rgba(233, 234, 219, 0.1);
+  --wrq-reveal: #e9eadb;
+  --wrq-guess: #e2e8f0;
+  --wrq-muted: rgba(255, 255, 255, 0.3);
+  --wrq-live: #e0555e;
+  --wrq-good-on-dark: #4ade80;
+  --wrq-bad-on-dark: #f87171;
+  --wrq-good: #166534;
+  --wrq-bad: #b91c1c;
+  --wrq-slot: rgba(233, 234, 219, 0.28);
+  /* 좌석 범주색(꺾은선·승률 배지) — dataviz 검증: 패널 #17231f 위 PASS(보라만 대비 WARN → 범례·이름표로 보완) */
+  --wrq-seat-1: #b08d2a;
+  --wrq-seat-2: #0284c7;
+  --wrq-seat-3: #db2777;
+  --wrq-seat-4: #7c3aed;
+  --wrq-seat-5: #0d9488;
+  --wrq-seat-6: #ea580c;
+  --wrq-shade: rgba(0, 0, 0, 0.45);
+  /* 카드(kit-v1 cards/) */
+  --wrq-card-paper: #fffefa;
+  --wrq-card-paper-2: #eeeee8;
+  --wrq-card-edge: #d8d6ca;
+  --wrq-card-black: #152626;
+  --wrq-card-red: #b92d3a;
+  --wrq-back: #144b3c;
+  --wrq-back-paper: #f4f2e9;
+  --wrq-back-line: #c6a66b;
+  /* 칩·딜러 버튼(kit-v1 chips/chip-gold · ui/dealer) */
+  --wrq-chip-hi: #ffe1a0;
+  --wrq-chip: #c79e50;
+  --wrq-chip-lo: #725029;
+  --wrq-chip-stripe: #f5ecd9;
+  --wrq-dealer: #e6e5d8;
+  --wrq-dealer-edge: #748276;
+  --wrq-dealer-ink: #263a32;
+}
+
 /* ── 골드 버튼 (CTA) ──────────────────────────────── */
 .btn-gold {
   position: relative;

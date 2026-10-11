@@ -16,6 +16,7 @@ import {
   type HandResult, type StreetRecord, type Action, type EquitySplit,
 } from "./_engine";
 import type { HandMessage, HandRequest } from "./_engine.worker";
+import { KitCardFace, KitCardBack, KitCardSlot, KitDealer, KitChip } from "./_kit";
 
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
@@ -34,23 +35,36 @@ import type { HandMessage, HandRequest } from "./_engine.worker";
  * ★확률 계산은 이 파일에 한 줄도 없다. `_engine.ts`(레인지·팟오즈) + `_equity.ts`(§13 평가기).
  */
 
-const GOLD = "rgb(var(--gold-dark-rgb))";
-const FELT = "radial-gradient(ellipse 120% 90% at 50% 42%, #1f7a52 0%, #12603f 45%, #0b4229 78%, #08331f 100%)";
-const MUTED = "rgba(255,255,255,0.3)";
-const LIVE = "#e0555e";
-const GOOD = "#4ade80";
-const BAD = "#f87171";
+// ── 색 = globals.css `.wrq` 토큰 (S-034 회차 5 · 2026-10-11) ──────────────────
+// ★강조는 GOLD(내 승률·진행 버튼) 하나. 판정색은 놓이는 면에 따라 둘 — 다크(패널·펠트) = *_DARK,
+//   크림(팟오즈·복기 표) = GOOD/BAD. 예전 #4ade80을 크림 위에 쓰면 대비가 1.6:1이었다.
+// ★반투명은 `${GOLD}66`처럼 이어 붙이지 말고 mix()로 — GOLD가 rgb(var(...))라 이어 붙인 값은
+//   CSS가 버린다(회차 4까지 펠트 테두리·결과 상자 테두리가 그렇게 안 보였다).
+const GOLD = "var(--wrq-accent)";
+const FELT = "var(--wrq-felt)";
+const PANEL = "var(--wrq-panel)";
+const PANEL_LINE = "var(--wrq-panel-line)";
+const REVEAL = "var(--wrq-reveal)";
+const MUTED = "var(--wrq-muted)";
+const LIVE = "var(--wrq-live)";
+const GOOD = "var(--wrq-good)";
+const BAD = "var(--wrq-bad)";
+const GOOD_DARK = "var(--wrq-good-on-dark)";
+const BAD_DARK = "var(--wrq-bad-on-dark)";
+/** 색 + 불투명도(0~100) */
+const mix = (c: string, pct: number) => `color-mix(in srgb, ${c} ${pct}%, transparent)`;
 /**
  * 꺾은선·좌석 승률 배지의 좌석 색 — 나 + 상대 5명(6인 팟까지).
- * ★어두운 카드(#0f172a) 위 범주 팔레트 검증 통과(dataviz validate_palette: 밝기 띠·채도·대비 ·
- *   인접 순서 색약 ΔE 최저 13.8 · 정상 시각 최저 26.2). 앞 4색 = 회차 2, 뒤 2색(청록·주황) = 회차 4(2~6명).
+ * ★어두운 패널 위 범주 팔레트 검증 통과(dataviz validate_palette: 밝기 띠·채도 ·
+ *   인접 순서 색약 ΔE 최저 13.8 · 정상 시각 최저 26.2 · 회차 5 패널 #17231f로 재검증 같은 값 · 보라 대비 WARN).
+ *   값은 globals.css `.wrq --wrq-seat-1~6`. 앞 4색 = 회차 2, 뒤 2색(청록·주황) = 회차 4(2~6명).
  *   «모든 쌍» 검사는 6색에서 통과하는 조합이 없다(후보 18색 전수) — 그래서 색만으로 구분하지 않는다:
  *   꺾은선은 범례 + 끝점 이름표, 배지는 좌석 이름 옆에 붙는다.
  *   색은 «상대 순서»(activeSlots 순)를 따른다 — 누가 폴드해도 남은 사람 색이 바뀌지 않는다.
  */
-const SEAT_COLORS = ["#b08d2a", "#0284c7", "#db2777", "#7c3aed", "#0d9488", "#ea580c"];
+const SEAT_COLORS = [1, 2, 3, 4, 5, 6].map((n) => `var(--wrq-seat-${n})`);
 /** 꺾은선의 «내 짐작» 점선 — 좌석이 아니라 중립색(좌석 팔레트와 겹치지 않게) */
-const GUESS_COLOR = "#e2e8f0";
+const GUESS_COLOR = "var(--wrq-guess)";
 
 // ── 퀴즈 모드 (S-034 ③ · 2026-10-11) ────────────────────────────────────────
 /** 한 스트리트의 답 */
@@ -192,7 +206,7 @@ export interface QuizUI {
   footer: ReactNode;
 }
 
-// ── 카드 ────────────────────────────────────────────────────────────────────
+// ── 카드 (회차 5: kit-v1 SVG · `_kit.tsx`) ──────────────────────────────────
 type CardSize = "hero" | "seat" | "fold";
 /**
  * ★모바일에서 한 치수 작다 (2026-08-05).
@@ -206,44 +220,24 @@ const CARD_BOX: Record<CardSize, string> = {
   fold: "w-[24px] h-[34px] lg:w-[26px] lg:h-[36px]",
 };
 
-function PlayingCard({ card, hidden, size = "seat" }: { card?: QuizCard; hidden?: boolean; size?: CardSize }) {
+/**
+ * slot = 빈 자리(아직 안 깐 보드 · 폴드한 좌석) — 테두리만. 회차 4까지는 빨간 뒷면 5장이 테이블
+ * 가운데를 차지하고 폴드 좌석 뒷면까지 시선을 끌었다(S-034 ⑥ 캡처 지적).
+ */
+function PlayingCard({ card, hidden, slot, size = "seat" }: { card?: QuizCard; hidden?: boolean; slot?: boolean; size?: CardSize }) {
+  if (slot) return <div className={`${CARD_BOX[size]} shrink-0`}><KitCardSlot /></div>;
   if (hidden || !card) {
-    const muted = size === "fold";
     return (
-      <div className={CARD_BOX[size]} style={{
-        borderRadius: 5, flexShrink: 0, opacity: muted ? 0.5 : 1,
-        background: muted
-          ? "linear-gradient(135deg,#4b3535 0%,#584040 50%,#4b3535 100%)"
-          : "linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#7f1d1d 100%)",
-        border: `2px solid ${muted ? "rgba(255,255,255,0.18)" : "rgba(var(--gold-dark-rgb),0.5)"}`,
-        boxShadow: "0 2px 6px rgba(0,0,0,0.45)",
-        display: "flex", alignItems: "center", justifyContent: "center",
-      }}>
-        <div style={{
-          width: "60%", height: "70%", borderRadius: 2,
-          border: `1px solid ${muted ? "rgba(255,255,255,0.14)" : "rgba(var(--gold-dark-rgb),0.45)"}`,
-          background: `repeating-linear-gradient(45deg,transparent,transparent 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(var(--gold-dark-rgb),0.16)"} 2.5px,${muted ? "rgba(255,255,255,0.08)" : "rgba(var(--gold-dark-rgb),0.16)"} 5px)`,
-        }} />
+      <div className={`${CARD_BOX[size]} shrink-0`} style={{ filter: "drop-shadow(0 2px 4px var(--wrq-shade))" }}>
+        <KitCardBack />
       </div>
     );
   }
-  const isRed = card.suit === "♥" || card.suit === "♦";
-  const color = isRed ? "#dc2626" : "#0f172a";
-  const small = size !== "hero";
   return (
-    <motion.div className={CARD_BOX[size]}
+    <motion.div className={`${CARD_BOX[size]} shrink-0`}
       initial={{ rotateY: 90, opacity: 0 }} animate={{ rotateY: 0, opacity: 1 }} transition={{ duration: 0.26 }}
-      style={{
-        background: "linear-gradient(160deg,#fff 0%,#f1f5f9 100%)", borderRadius: 5, flexShrink: 0,
-        position: "relative", border: "1px solid #cbd5e1", boxShadow: "0 2px 7px rgba(0,0,0,0.4)",
-      }}>
-      <div style={{ position: "absolute", top: 2, left: 3, lineHeight: 1, textAlign: "center", color }}>
-        <div style={{ fontSize: small ? 9 : 11, fontWeight: 900, letterSpacing: "-1px" }}>{card.rank}</div>
-        <div style={{ fontSize: small ? 8 : 9 }}>{card.suit}</div>
-      </div>
-      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", color, fontSize: small ? 16 : 22, opacity: 0.9 }}>
-        {card.suit}
-      </div>
+      style={{ filter: "drop-shadow(0 2px 4px var(--wrq-shade))" }}>
+      <KitCardFace card={card} />
     </motion.div>
   );
 }
@@ -251,7 +245,7 @@ function PlayingCard({ card, hidden, size = "seat" }: { card?: QuizCard; hidden?
 function PosBadge({ pos, color, glow }: { pos: string; color: string; glow: boolean }) {
   return (
     <div style={{
-      minWidth: 30, height: 24, padding: "0 5px", borderRadius: 12, background: "rgba(0,0,0,0.38)",
+      minWidth: 30, height: 24, padding: "0 5px", borderRadius: 12, background: "var(--wrq-shade)",
       border: `2px solid ${color}`, display: "flex", alignItems: "center", justifyContent: "center",
       color, fontWeight: 900, fontSize: 10, letterSpacing: "-0.3px", flexShrink: 0,
       boxShadow: glow ? `0 0 12px ${color}` : "none",
@@ -259,15 +253,8 @@ function PosBadge({ pos, color, glow }: { pos: string; color: string; glow: bool
   );
 }
 
-function DealerChip() {
-  return (
-    <div style={{
-      width: 17, height: 17, borderRadius: "50%", background: "#f8fafc", color: "#0f172a",
-      fontSize: 9, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center",
-      border: "1px solid #94a3b8", boxShadow: "0 1px 3px rgba(0,0,0,0.5)", flexShrink: 0,
-    }}>D</div>
-  );
-}
+/** 딜러 버튼 = kit-v1 ui/dealer.svg */
+const DealerChip = () => <KitDealer size={18} />;
 
 /** 승·무·패 한 줄 — 무승부가 0.05% 미만이면 빼서 줄을 짧게 둔다 */
 function WinTieLose({ split, ui, className }: { split: EquitySplit; ui: QuizUI; className?: string }) {
@@ -339,7 +326,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
   };
 
   return (
-    <div className="rounded-xl px-3 pt-3 pb-2.5 mb-3" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+    <div className="rounded-xl px-3 pt-3 pb-2.5 mb-3" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>
       <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.chartTitle}</div>
       <div className="relative">
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto select-none touch-pan-y" role="img" aria-label={ui.chartTitle}
@@ -360,11 +347,11 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
             const pts = s.values.map((v, i) => (v === undefined ? null : `${x(i)},${y(v)}`)).filter(Boolean);
             return (
               <g key={s.key}>
-                <polyline points={pts.join(" ")} fill="none" stroke={s.color} strokeWidth={s.dashed ? 1.5 : 2}
+                <polyline points={pts.join(" ")} fill="none" style={{ stroke: s.color }} strokeWidth={s.dashed ? 1.5 : 2}
                   strokeDasharray={s.dashed ? "4 3" : undefined} strokeLinejoin="round" strokeLinecap="round" />
                 {s.values.map((v, i) => v === undefined ? null : (
-                  <circle key={i} cx={x(i)} cy={y(v)} r={s.dashed ? 2.5 : 4} fill={s.dashed ? "#0f172a" : s.color}
-                    stroke={s.dashed ? s.color : "#0f172a"} strokeWidth={s.dashed ? 1.5 : 2} />
+                  <circle key={i} cx={x(i)} cy={y(v)} r={s.dashed ? 2.5 : 4} strokeWidth={s.dashed ? 1.5 : 2}
+                    style={{ fill: s.dashed ? PANEL : s.color, stroke: s.dashed ? s.color : PANEL }} />
                 ))}
               </g>
             );
@@ -382,7 +369,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
       <div className="grid grid-cols-2 gap-x-3 gap-y-0.5 text-[10.5px] text-white/70 tabular-nums">
         {series.map((s) => (
           <span key={s.key} className="inline-flex items-center gap-1.5 min-w-0">
-            <svg width="16" height="6" aria-hidden className="shrink-0"><line x1="0" x2="16" y1="3" y2="3" stroke={s.color} strokeWidth={2}
+            <svg width="16" height="6" aria-hidden className="shrink-0"><line x1="0" x2="16" y1="3" y2="3" style={{ stroke: s.color }} strokeWidth={2}
               strokeDasharray={s.dashed ? "4 3" : undefined} /></svg>
             <span className="truncate">{s.name}</span>
             <b className="ml-auto text-white">{s.values[shown] === undefined ? "—" : `${s.values[shown]!.toFixed(1)}%`}</b>
@@ -423,7 +410,7 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
       </div>
       <div className="flex gap-1">
         {folded
-          ? [0, 1].map((i) => <PlayingCard key={i} hidden size="fold" />)
+          ? [0, 1].map((i) => <PlayingCard key={i} slot size="fold" />)
           : (cards ?? []).map((c, i) => <PlayingCard key={i} card={c} hidden={faceDown} size={size} />)}
       </div>
       <div className="h-4 flex items-center gap-1">
@@ -432,14 +419,14 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
         )}
         {eq !== undefined && (
           <span className="text-[10px] font-black tabular-nums leading-none rounded px-1 py-[2px] text-white"
-            style={{ background: "rgba(0,0,0,0.55)", borderLeft: `3px solid ${eqColor ?? color}` }}>
+            style={{ background: "var(--wrq-shade)", borderLeft: `3px solid ${eqColor ?? color}` }}>
             {badgePct(eq)}
           </span>
         )}
       </div>
       {label && (
         <div className="text-[8.5px] font-semibold leading-tight text-center px-0.5"
-          style={{ color: isDead ? BAD : "rgba(255,255,255,0.72)", maxWidth: compact ? (isHero ? 84 : 64) : isHero ? 108 : 86 }}>
+          style={{ color: isDead ? BAD_DARK : "rgba(255,255,255,0.72)", maxWidth: compact ? (isHero ? 84 : 64) : isHero ? 108 : 86 }}>
           {label}
         </div>
       )}
@@ -782,7 +769,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero} compact={compact}
       cards={sim.hands[k]} faceDown={!isHero && !cardsUp}
       color={isHero ? GOLD : LIVE} label={label} isWinner={isWinner}
-      statusText={statusText} statusColor={act === "raise" ? BAD : "rgba(255,255,255,0.55)"}
+      statusText={statusText} statusColor={act === "raise" ? BAD_DARK : "rgba(255,255,255,0.55)"}
       eq={knownBySlot[slot]} eqColor={SEAT_COLORS[k]} />;
   };
 
@@ -792,7 +779,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * 묶음 앞 «인원» 라벨은 sm↑에서만 보인다. 인원 버튼의 뜻은 aria-label(«3명»)로 준다.
    */
   const segBtn = (on: boolean) => on
-    ? { background: GOLD, color: "#000" }
+    ? { background: GOLD, color: "var(--wrq-accent-ink)" }
     : { color: "hsl(var(--muted-foreground))" };
   const controls = (cls: string) => (
     <div className={`flex justify-center items-center gap-1.5 sm:gap-2 ${cls}`}>
@@ -821,7 +808,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <button onClick={toggleQuiz} aria-pressed={quiz}
         className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={quiz
-          ? { borderColor: GOLD, background: GOLD, color: "#000" }
+          ? { borderColor: GOLD, background: GOLD, color: "var(--wrq-accent-ink)" }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
         {ui.quizToggle}
       </button>
@@ -830,13 +817,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   if (!sim || !rec) {
     return (
-      <>
+      <div className="wrq">
         <p className="text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
         {controls("mb-4")}
-        <div className="rounded-3xl p-16 text-center text-sm text-white/70" style={{ background: FELT, border: `2px solid ${GOLD}44` }}>
+        <div className="rounded-3xl p-16 text-center text-sm text-white/70" style={{ background: FELT, border: `2px solid ${mix(GOLD, 27)}` }}>
           🃏 {ui.loading}
         </div>
-      </>
+      </div>
     );
   }
 
@@ -861,10 +848,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     <div className="flex flex-col items-center gap-1.5">
       <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-white/45">{ui.streets[street]}</div>
       <div className={`flex justify-center ${compact ? "gap-1" : "gap-1.5"}`}>
-        {sim.board.map((c, i) => <PlayingCard key={i} card={c} hidden={i >= boardShown} size={compact ? "seat" : "hero"} />)}
+        {sim.board.map((c, i) => <PlayingCard key={i} card={c} slot={i >= boardShown} size={compact ? "seat" : "hero"} />)}
       </div>
-      <div className="text-[10px] font-black tabular-nums mt-0.5" style={{ color: GOLD }}>
-        {ui.potLabel} {rec.potAfter.toLocaleString()}
+      {/* 팟 = kit-v1 무표기 칩 + 글자(README 원칙: 금액은 칩이 아니라 옆 글자) */}
+      <div className="flex items-center gap-1 rounded-full pl-1 pr-2 py-[2px] mt-0.5 text-[10px] font-black tabular-nums"
+        style={{ color: GOLD, background: "var(--wrq-shade)" }}>
+        <KitChip size={13} />{ui.potLabel} {rec.potAfter.toLocaleString()}
       </div>
     </div>
   );
@@ -906,7 +895,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const showStreet = !endView || resultTab === "street";
 
   return (
-    <>
+    <div className="wrq">
       <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
       {controls("mb-2 lg:mb-4")}
 
@@ -925,15 +914,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             서버 렌더와 첫 클라이언트 렌더가 갈려 하이드레이션이 깨진다. */}
       <div className="mb-2 lg:mb-0 mx-auto w-full max-w-[404px] md:max-w-[560px] lg:max-w-none" style={{
         padding: 9, borderRadius: "47% / 41%",
-        background: "linear-gradient(160deg,#6b4a29 0%,#4a3319 55%,#37260f 100%)",
-        boxShadow: "0 16px 44px rgba(0,0,0,0.42)",
+        background: "var(--wrq-rail)",
+        boxShadow: "0 16px 44px var(--wrq-shade)",
       }}>
         {/* ★S-034 ⑤ (2026-10-11): 폰 390×844에서 팟오즈 박스가 고정 버튼 밑에 깔렸다(실측 50px).
             모바일 높이·위아래 여백을 줄여 «테이블→승률→팟오즈→버튼»을 첫 화면에 다시 넣는다 */}
         <div className="relative flex flex-col items-center justify-between min-h-[290px] py-2 lg:py-3 lg:min-h-[522px]"
           style={{
             borderRadius: "46% / 40%", background: FELT,
-            border: `2px solid ${GOLD}66`, boxShadow: "inset 0 3px 44px rgba(0,0,0,0.5)",
+            border: `2px solid ${mix(GOLD, 40)}`, boxShadow: "inset 0 3px 44px var(--wrq-shade)",
             paddingLeft: 6, paddingRight: 6,
           }}>
 
@@ -1003,7 +992,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         <div className="mb-2">
           <div className="flex flex-col gap-2 mb-2">
             <motion.div initial={false} animate={{ opacity: 1 }} className="rounded-xl px-4 py-2 border-2 text-center"
-              style={{ borderColor: `${GOLD}66`, background: `${GOLD}0d` }}>
+              style={{ borderColor: mix(GOLD, 40), background: mix(GOLD, 5) }}>
               <div className="font-black text-base text-foreground">🏆 {resultLabel}</div>
             </motion.div>
             <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
@@ -1015,7 +1004,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </div>
           </div>
           {!showStreet && quizLine && (
-            <div className="rounded-xl px-4 py-1.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>{quizLine}</div>
+            <div className="rounded-xl px-4 py-1.5 mb-2" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>{quizLine}</div>
           )}
           <div role="tablist" className="grid grid-cols-3 gap-1 p-1 rounded-xl" style={{ background: "hsl(var(--muted))" }}>
             {(["review", "chart", "street"] as const).map((k, i) => (k === "chart" && !chartSeries) ? <span key={k} /> : (
@@ -1035,7 +1024,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
       {/* ── 내 승률 ──
           퀴즈에서 답을 내기 전에는 같은 자리에 짐작 슬라이더를 둔다(카드 높이를 비슷하게 맞춰 폰 첫 화면을 지킨다) */}
-      <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: "#0f172a", border: "1px solid rgba(255,255,255,0.08)" }}>
+      <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>
         {quizPending ? (
           <>
             <div className="flex justify-between items-baseline gap-2">
@@ -1084,17 +1073,23 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         <div className="relative h-2.5 rounded-full overflow-hidden bg-black/40 mt-2">
           <motion.div className="h-full" style={{ background: GOLD }}
             initial={false} animate={{ width: `${rec.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
+          {/* 필요 승률 눈금(S-034 ⑥) — 금색 막대가 이 선을 넘으면 콜이 본전 이상. 숫자 없이 판정이 보인다 */}
+          {rec.required !== null && (
+            <span className="absolute top-0 bottom-0 w-[2px] -ml-px" role="img"
+              aria-label={`${ui.requiredLabel} ${rec.required.toFixed(1)}%`} title={`${ui.requiredLabel} ${rec.required.toFixed(1)}%`}
+              style={{ left: `${Math.min(rec.required, 100)}%`, background: REVEAL }} />
+          )}
           {/* 퀴즈 답을 낸 스트리트 — 내 짐작 자리에 흰 눈금 */}
           {answer && (
             <span className="absolute top-0 bottom-0 w-[3px] -ml-[1.5px] rounded-full" aria-hidden
-              style={{ left: `${answer.guess}%`, background: GUESS_COLOR, boxShadow: "0 0 0 1px rgba(0,0,0,0.6)" }} />
+              style={{ left: `${answer.guess}%`, background: GUESS_COLOR, boxShadow: "0 0 0 1px var(--wrq-shade)" }} />
           )}
         </div>
         {answer && (
           <p className="text-[11px] font-bold tabular-nums mt-1.5" style={{ color: GUESS_COLOR }}>
             🎯 {ui.quizResult(answer.guess, answer.err.toFixed(1), answer.points)}
             {answer.choiceOk !== null && (
-              <span style={{ color: answer.choiceOk ? GOOD : BAD }}>
+              <span style={{ color: answer.choiceOk ? GOOD_DARK : BAD_DARK }}>
                 {" · "}{ui.quizChoiceResult(answer.choiceOk, rec.verdict === "call" ? ui.verdictCall : ui.verdictFold)}
               </span>
             )}
@@ -1106,13 +1101,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <div className="mt-2.5 pt-2.5 border-t border-white/10">
             <div className="flex items-baseline justify-between gap-2">
               <span className="text-[11px] text-white/55">{ui.revealedLabel}</span>
-              <span className="text-lg font-black tabular-nums" style={{ color: "#7dd3fc" }}>
+              <span className="text-lg font-black tabular-nums" style={{ color: REVEAL }}>
                 {known.hero.equity.toFixed(1)}%
               </span>
             </div>
             <WinTieLose split={known.hero} ui={ui} className="block text-right" />
             <div className="h-1.5 rounded-full overflow-hidden bg-black/40 mt-1.5">
-              <motion.div className="h-full" style={{ background: "#7dd3fc" }}
+              <motion.div className="h-full" style={{ background: mix(REVEAL, 70) }}
                 initial={false} animate={{ width: `${known.hero.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
             </div>
             <p className="text-[10px] text-white/40 mt-1.5 leading-snug">
@@ -1127,7 +1122,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
       {/* ── 팟오즈 ── */}
       <div className="rounded-xl px-4 py-2 lg:py-3 mb-4 border-2"
-        style={{ borderColor: quizPending ? "hsl(var(--border))" : rec.verdict === "fold" ? `${BAD}55` : rec.verdict === "call" ? `${GOOD}55` : "hsl(var(--border))" }}>
+        style={{ borderColor: quizPending ? "hsl(var(--border))" : rec.verdict === "fold" ? mix(BAD, 35) : rec.verdict === "call" ? mix(GOOD, 35) : "hsl(var(--border))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1 lg:mb-1.5">{ui.potOddsTitle}</div>
         {rec.toCall === 0 ? (
           <p className="text-sm text-muted-foreground">{ui.noBet}</p>
@@ -1167,7 +1162,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               «승률 → 판정 → 버튼»이 첫 화면에 남게 한다. 식 전체는 위 박스에 그대로 있다 */}
           {rec.required !== null && !quizPending && (
             <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-sm font-black tabular-nums shadow-lg"
-              style={{ background: "hsl(var(--background))", border: `2px solid ${rec.verdict === "call" ? GOOD : BAD}88`,
+              style={{ background: "hsl(var(--background))", border: `2px solid ${mix(rec.verdict === "call" ? GOOD : BAD, 55)}`,
                 color: rec.verdict === "call" ? GOOD : BAD }}>
               {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required.toFixed(oddsDigits)}% →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
@@ -1337,7 +1332,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       )}
 
       <p className="text-center text-xs text-muted-foreground mt-4">{ui.footer}</p>
-    </>
+    </div>
   );
 }
 
