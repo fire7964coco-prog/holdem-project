@@ -94,6 +94,9 @@ const EN_UI: QuizUI = {
   quizChoiceResult: (ok, verdict) => (ok ? `Right call (${verdict})` : `Wrong — the answer was ${verdict}`),
   quizStats: (s) => `${s.hands} hand${s.hands === 1 ? "" : "s"} · avg off ${s.avgErr}%p · ${s.hits}/${s.decisions} right · ${s.points.toLocaleString()} pts`,
   quizReset: "Reset",
+  quizResetConfirm: "Clear the quiz record saved in this browser? This can't be undone.",
+  quizInvite: "Log in to keep this record in your account and see it on any phone or PC.",
+  quizInviteLink: "Log in",
   quizGuessCol: "Guess",
   quizChoiceCol: "Pick",
   quizHandSummary: (avgErr, hits, decisions, points) =>
@@ -158,7 +161,8 @@ const EN_UI: QuizUI = {
         your equity. On streets where someone bets, you also pick call or fold. The answer is “Your equity” above (the
         figure without seeing their cards), and each guess scores <b className="text-foreground">100 − 4 × error (%p)</b>
         (zero once you are 25%p or more off). A call/fold pick counts as right when it matches the pot-odds verdict. Your
-        running totals last only while you stay on this page.
+        running totals stay in this browser, and when you are logged in they are also saved to your account so they
+        follow you to other devices (the cards and board are not saved).
       </p>
     </>
   ),

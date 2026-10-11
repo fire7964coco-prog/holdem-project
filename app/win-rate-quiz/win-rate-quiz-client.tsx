@@ -98,6 +98,9 @@ const KO_UI: QuizUI = {
   quizChoiceResult: (ok, verdict) => (ok ? `판정 맞음(${verdict})` : `판정 틀림 — 정답은 ${verdict}`),
   quizStats: (s) => `누적 ${s.hands}판 · 평균 오차 ${s.avgErr}%p · 판정 ${s.hits}/${s.decisions} · ${s.points.toLocaleString()}점`,
   quizReset: "초기화",
+  quizResetConfirm: "이 브라우저에 남은 퀴즈 기록을 지울까요? 되돌릴 수 없습니다.",
+  quizInvite: "로그인하면 이 기록이 계정에 남아 폰·PC 어디서나 볼 수 있어요.",
+  quizInviteLink: "로그인",
   quizGuessCol: "내 짐작",
   quizChoiceCol: "내 선택",
   quizHandSummary: (avgErr, hits, decisions, points) =>
@@ -158,7 +161,8 @@ const KO_UI: QuizUI = {
         <b className="text-foreground">🎯 퀴즈를 켜면</b> 스트리트마다 승률과 판정을 가린 채 내 승률을 먼저 짐작합니다.
         누군가 베팅한 스트리트에서는 콜·폴드도 같이 고릅니다. 정답은 위 «내 승률»(상대 패를 모를 때의 값)이고,
         짐작 한 번의 점수는 <b className="text-foreground">100 − 4 × 오차(%p)</b>입니다(오차 25%p 이상이면 0점).
-        콜·폴드는 팟오즈 판정과 같으면 맞힌 것으로 셉니다. 누적 기록은 이 페이지에 있는 동안만 남습니다.
+        콜·폴드는 팟오즈 판정과 같으면 맞힌 것으로 셉니다. 누적 기록은 이 브라우저에 남고, 로그인하면 계정에도
+        저장돼 다른 기기에서도 이어집니다(카드·보드는 저장하지 않습니다).
       </p>
     </>
   ),

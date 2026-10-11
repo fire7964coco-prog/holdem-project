@@ -1,7 +1,14 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback, type ReactNode } from "react";
+import { useState, useMemo, useEffect, useCallback, useRef, type ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { loginHref } from "@/lib/auth-navigation";
+import {
+  readQuizStore, recordQuizAnswer, finishQuizHands, clearQuizStore, newClientId,
+  uploadQuizHands, fetchAccountTotals, pendingQuizTotals, addQuizTotals, EMPTY_TOTALS, type QuizTotals,
+} from "@/lib/win-rate-quiz-records";
 import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
 import { makeTableSim, positionAt, type TableSim, type TableSize } from "./_table";
 import {
@@ -58,8 +65,6 @@ interface QuizAnswer {
   /** 고른 콜/폴드가 팟오즈 판정과 맞았나 · 고를 게 없던 스트리트는 null */
   choiceOk: boolean | null;
 }
-interface QuizStats { hands: number; guesses: number; errSum: number; decisions: number; hits: number; points: number }
-const EMPTY_STATS: QuizStats = { hands: 0, guesses: 0, errSum: 0, decisions: 0, hits: 0, points: 0 };
 /**
  * 짐작 1번의 점수 = 100 − 4 × 오차(%p), 0 아래는 0. 오차 25%p면 0점.
  * ★규칙 설명(ko·en ruleText)에 이 식을 그대로 적어 두었다 — 바꾸면 거기도 같이.
@@ -164,9 +169,14 @@ export interface QuizUI {
   quizResult: (guess: number, err: string, points: number) => string;
   /** 고른 콜/폴드가 팟오즈 판정과 맞았나 */
   quizChoiceResult: (ok: boolean, verdict: string) => string;
-  /** 세션 누적 한 줄 */
+  /** 누적 한 줄 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(+ 아직 올리지 않은 판) */
   quizStats: (s: { hands: number; avgErr: string; hits: number; decisions: number; points: number }) => string;
+  /** 이 브라우저 기록 지우기(로그인 안 했을 때만 보인다 — 계정 기록 지우기는 «내 기록») */
   quizReset: string;
+  quizResetConfirm: string;
+  /** 권유 한 줄(«내 기록» 설계 §2-2) — 누적 1판 이상 + 로그인 안 함일 때만 */
+  quizInvite: string;
+  quizInviteLink: string;
   /** 복기 표에 붙는 두 열 */
   quizGuessCol: string;
   quizChoiceCol: string;
@@ -452,12 +462,75 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [showRule, setShowRule] = useState(false);
   /**
    * 퀴즈 모드 (S-034 ③) — 기본은 꺼짐(지금의 «끝까지 보고 복기» 흐름 그대로).
-   * 켜면 스트리트마다 승률·판정을 가린 채 짐작을 먼저 받는다. 답은 판마다(answers), 누적은 페이지에 있는 동안(stats).
+   * 켜면 스트리트마다 승률·판정을 가린 채 짐작을 먼저 받는다. 답은 판마다(answers).
+   * 누적은 «내 기록» 회차 C(2026-10-11)부터 이 브라우저에 계속 남고, 로그인하면 계정에도 올라간다
+   * (`lib/win-rate-quiz-records.ts` · 설계 docs/my-records-design.md §3-2).
    */
   const [quiz, setQuiz] = useState(false);
   const [guess, setGuess] = useState(50);
   const [answers, setAnswers] = useState<Record<number, QuizAnswer>>({});
-  const [stats, setStats] = useState<QuizStats>(EMPTY_STATS);
+  /** 브라우저 기록(합계 + 아직 올리지 않은 판) — 첫 렌더는 빈 값(하이드레이션) · effect에서 읽는다 */
+  const [store, setStore] = useState(() => ({ totals: null as QuizTotals | null, pending: null as QuizTotals | null }));
+  /** 로그인 상태 — 확인 전 "checking" */
+  const [auth, setAuth] = useState<"checking" | "in" | "out">("checking");
+  /** 계정에 올라간 합계 — 읽기 실패면 null(그때는 브라우저 합계를 보여 준다) */
+  const [account, setAccount] = useState<QuizTotals | null>(null);
+  const sbRef = useRef<{ sb: SupabaseClient; uid: string } | null>(null);
+  /** 지금 판의 기록 열쇠(client_id) — 첫 짐작 때 만든다 */
+  const handKey = useRef<string | null>(null);
+  const syncing = useRef<Promise<void> | null>(null);
+  const pathname = usePathname();
+  const applyStore = useCallback((s: ReturnType<typeof readQuizStore>) => {
+    setStore({ totals: s.totals, pending: pendingQuizTotals(s) });
+  }, []);
+
+  /** 끝난 판을 계정에 올린다 — 로그인했을 때만 · 겹쳐 부르면 앞 작업이 끝난 뒤 한 번 더 */
+  const sync = useCallback(async () => {
+    const ctx = sbRef.current;
+    if (!ctx) return;
+    while (syncing.current) await syncing.current;
+    const run = (async () => {
+      const added = await uploadQuizHands(ctx.sb, ctx.uid).catch(() => null);
+      if (added && added.hands) setAccount((a) => (a ? addQuizTotals(a, added) : a));
+      applyStore(readQuizStore());
+    })();
+    syncing.current = run;
+    try { await run; } finally { if (syncing.current === run) syncing.current = null; }
+  }, [applyStore]);
+
+  // 페이지를 열면: 지난 방문에 진행 중이던 판을 «끝남»으로 · 로그인했으면 쌓인 판을 올리고 계정 합계를 읽는다
+  useEffect(() => {
+    let alive = true;
+    applyStore(finishQuizHands());
+    (async () => {
+      try {
+        const { createClient } = await import("@/lib/supabase/client");
+        const sb = createClient();
+        const { data } = await sb.auth.getSession();
+        const uid = data.session?.user.id;
+        if (!alive) return;
+        if (!uid) { setAuth("out"); return; }
+        sbRef.current = { sb, uid };
+        setAuth("in");
+        await sync();
+        const t = await fetchAccountTotals(sb, uid);
+        if (alive && t) setAccount(t);
+      } catch {
+        if (alive) setAuth("out");
+      }
+    })();
+    return () => { alive = false; };
+  }, [applyStore, sync]);
+
+  /** 지금 판을 닫는다(끝났거나 새 판으로 넘어감) — 짐작이 하나라도 있었으면 올린다 */
+  const closeHand = useCallback(() => {
+    const key = handKey.current;
+    handKey.current = null;
+    if (!key) return;
+    applyStore(finishQuizHands(key));
+    void sync();
+  }, [applyStore, sync]);
+  useEffect(() => () => { if (handKey.current) finishQuizHands(handKey.current); }, []);
   // 켜짐 기억은 effect에서 읽는다 — 첫 렌더에서 읽으면 서버 렌더(꺼짐)와 갈려 하이드레이션이 깨진다
   useEffect(() => {
     try { if (localStorage.getItem(QUIZ_KEY) === "1") setQuiz(true); } catch { /* 저장소 막힘 = 꺼짐 */ }
@@ -514,20 +587,23 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }, [handId, preflopCount, tableSize]);
 
   const newHand = useCallback(() => {
+    closeHand();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setHandId((id) => id + 1);
-  }, []);
+  }, [closeHand]);
   const changeCount = useCallback((n: number) => {
+    closeHand();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setPreflopCount(n);
-  }, []);
+  }, [closeHand]);
   const changeSize = useCallback((n: TableSize) => {
+    closeHand();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setTableSize(n);
-  }, []);
+  }, [closeHand]);
 
   /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝). 계산 중엔 아직 모른다 */
   const lastStreet = result ? result.streets[result.streets.length - 1].street : 3;
@@ -546,6 +622,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const isEnd = !!result && street >= lastStreet && !quizPending;
   const showdown = isEnd && result?.wonByFoldAt === null;
   const cardsUp = (reveal && !quizPending) || showdown;
+  // 판이 끝났다(리버까지 또는 상대 전원 폴드) — 짐작한 판이면 계정에 올린다
+  useEffect(() => { if (isEnd) closeHand(); }, [isEnd, closeHand]);
 
   const submitGuess = (choice: "call" | "fold" | null) => {
     if (!rec || answer) return;
@@ -554,14 +632,23 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     const choiceOk = choice === null ? null : choice === rec.verdict;
     const firstOfHand = Object.keys(answers).length === 0;
     setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
-    setStats((s) => ({
-      hands: s.hands + (firstOfHand ? 1 : 0),
-      guesses: s.guesses + 1,
-      errSum: s.errSum + err,
-      decisions: s.decisions + (choice === null ? 0 : 1),
-      hits: s.hits + (choiceOk ? 1 : 0),
-      points: s.points + points,
-    }));
+    if (!handKey.current) handKey.current = newClientId();
+    if (sim) {
+      applyStore(recordQuizAnswer(
+        handKey.current,
+        { tableSize: sim.size, players: sim.activeSlots.length, first: firstOfHand },
+        { err, decided: choice !== null, hit: !!choiceOk, points },
+      ));
+    }
+  };
+
+  /** 누적 한 줄에 보일 합계 — 로그인했고 계정 합계를 읽었으면 «계정 + 아직 안 올린 판», 아니면 이 브라우저 */
+  const shownTotals: QuizTotals | null = auth === "in" && account
+    ? addQuizTotals(account, store.pending ?? EMPTY_TOTALS)
+    : store.totals;
+  const resetLocal = () => {
+    if (!window.confirm(ui.quizResetConfirm)) return;
+    applyStore(clearQuizStore());
   };
 
   /** 좌석 slot → 상대 인덱스(hands 배열 기준). 없으면 -1 */
@@ -957,24 +1044,38 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         )}
         </>
         )}
-        {/* 퀴즈 세션 누적 — 페이지에 있는 동안만(새로고침하면 0).
+        {/* 퀴즈 누적 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(«내 기록» 회차 C).
             폰에서는 짐작하는 동안 숨긴다 — 그 한 줄이 팟오즈 줄을 고정 버튼 밑으로 민다 */}
-        {quiz && (
-          <div className={`${quizPending ? "hidden lg:flex" : "flex"} items-center justify-between gap-2 mt-2 pt-1.5 border-t border-white/10`}>
-            <span className="text-[10.5px] text-white/55 tabular-nums">
-              {ui.quizStats({
-                hands: stats.hands,
-                avgErr: stats.guesses ? (stats.errSum / stats.guesses).toFixed(1) : "—",
-                hits: stats.hits, decisions: stats.decisions, points: stats.points,
-              })}
-            </span>
-            {stats.guesses > 0 && (
-              <button onClick={() => setStats(EMPTY_STATS)} className="text-[10px] text-white/40 underline shrink-0">
-                {ui.quizReset}
-              </button>
-            )}
-          </div>
-        )}
+        {quiz && (() => {
+          const t = shownTotals ?? EMPTY_TOTALS;
+          return (
+            <div className={`${quizPending ? "hidden lg:block" : "block"} mt-2 pt-1.5 border-t border-white/10`}>
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-[10.5px] text-white/55 tabular-nums">
+                  {ui.quizStats({
+                    hands: t.hands,
+                    avgErr: t.guesses ? (t.errSum / t.guesses).toFixed(1) : "—",
+                    hits: t.hits, decisions: t.decisions, points: t.points,
+                  })}
+                </span>
+                {auth === "out" && t.guesses > 0 && (
+                  <button onClick={resetLocal} className="text-[10px] text-white/40 underline shrink-0">
+                    {ui.quizReset}
+                  </button>
+                )}
+              </div>
+              {/* 권유 한 줄 — 기록이 생긴 사람에게만 · 팝업·반복 요청 없음(설계 §0-3 · §2-2) */}
+              {auth === "out" && t.hands >= 1 && (
+                <p className="text-[10.5px] text-white/50 leading-snug mt-1">
+                  {ui.quizInvite}{" "}
+                  <a href={loginHref(pathname || "/win-rate-quiz")} className="underline font-bold whitespace-nowrap" style={{ color: GOLD }}>
+                    {ui.quizInviteLink}
+                  </a>
+                </p>
+              )}
+            </div>
+          );
+        })()}
       </div>
 
       {/* ── 팟오즈 ── */}
