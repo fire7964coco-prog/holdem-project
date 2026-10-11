@@ -1,3 +1,10 @@
+## 2026-10-11 (5) — MA-422 회신+등재 queue §2-AV · 요청 1 vi card-counting FAQ 1자리 · 배포 `a8cd4b43` · MB-236
+
+- 사장님 «핸드오프읽고 진행해». 우편함 우리 몫 = MA-422(VI 🅲 prob 7편) 1건.
+- AV-1: vi card-counting FAQ «chỉ … trong lúc chơi» 배타 제거 + 같은 글 L108 PokerStars 문면 재사용 · `updated` 10-11.
+- 게이트: audit:hard vi 🔴 0 · build exit 0(74 + 729).
+- 🪶 남김(자동 착수 금지): §2-AV 통지 1 EN-먼저 7묶음 · 통지 2 vi 단독 2.
+
 ## 2026-10-11 (4) — queue §2-AU 남김 EN 동형 5자리 → 13로케일 · 배포 `5f22c51a` · MB-235
 
 - 사장님 «1순위 이어서». EN 5자리 헤드 직접(같은 글 문면 재사용 · TDA 2024 Rule 19 «To play the board, players must table all hole cards to get part of the pot» 축어 확인) → 로케일 서브 3.
