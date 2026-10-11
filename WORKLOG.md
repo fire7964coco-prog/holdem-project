@@ -1,3 +1,13 @@
+## 2026-10-11 (21) — queue §2-BB·§2-BC 이행(ms 고유 + EN-먼저 EN·ms) · 배포 `f98be0ba` · MB-258
+
+- 사장님 «진행해». posting.mdc 필독(tldr 평문·백틱·굵은 단락 중첩) 후 착수.
+- **BB-1** ms 3bet-pot-bet-sizing tldr «hampir satu kombo» → «hanya kira-kira 1.1 kombo»(L55 수치 · vi AZ-1 꼴). **BB-2** ms paired-board 요약 상자 EN `4b353f92` 두 한정 이식(«kepada satu bet kecil» · «Sejauh mana pertahanan optimum … tidak ditunjukkan oleh spot kajian ini») · «King-high yang lebih baik» 삭제(EN 동형).
+- **BC-1** EN `6164c748` 델타 → ms 3편: all-in 10자리(WRONG L72 폴드자 기여분 포함 · tldr·규칙문·표 머리·표 아래 리밋 문장·미행동자 한도·결론 NL/PL · FAQ BB 미만 WSOP 154 · RIT 210·211) + 한 칩 경고 문면(EN 델타 동반) · betting 2(L157 · L183) · blind 11(헤즈업 괄호 4 · 스트래들 3 · 캐시 스테이크 · SB/BB 표기 리밋 괄호 WSOP 104) + «atau pertaruhan wajib lain»(EN 델타 동반). 원장 행 = 검수장 `ledger/ms/` RISKY/WRONG 전수 대조.
+- **BC-2~4** EN-먼저: EN betting «(==WSOP Tournament Rule 103==)» 2 + «WSOP Tournament Rule 103 also bans» · Mistake 3 «raised or straddled» · EN all-in 표 2곳 «now faces less than a full bet or raise» 조건 → ms 동형. 형제 23로케일 전파 = 다음 배치(queue §2-BC 남음 칸).
+- 스탬프: 손댄 7파일 `updated` 10-11 · ms `masterUpdated` 불변(앵커 이식만 · settled §1-C).
+- 게이트: audit:hard en 56/56 · ms 51/51 🔴 0 · check:gto ms 일치 91 🔴 0.
+- 🔴 첫 빌드 실패 `/solver`·`/win-rate-quiz` «e[o] is not a function» = 같은 폴더에 `next dev` 2개(3100·3123)가 `.next`를 공유 · 사장님 승인으로 PID 대조 종료 → `.next` 삭제 후 재빌드.
+
 ## 2026-10-11 (20) — 우편함 MA-446·449 등재(queue §2-BB·§2-BC · 미이행) · MA-447·450 ACK · MB-257
 
 - 사장님 «우편함 먼저 확인하고» → «진행해». 본체 몫 4행: MA-446(MS GTO13 · ms 고유 WRONG 1·RISKY 1) · MA-449(MS rules 묶음 1 · EN `6164c748` 델타 ms 3편 미전파 + EN-먼저 3) · MA-447·450 ACK.
