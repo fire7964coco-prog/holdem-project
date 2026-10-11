@@ -273,7 +273,7 @@ const SPOT_GROUPS = [
       //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
       //       **틀렸다**(2026-08-24 사장님 지적). ja 는 «정본과 어긋나지 않은 유일한 랜딩»이었을 뿐이다.
       //    🟢 문안은 수치로 갔다 — KO 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다).
-      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "Board bajo y seco", note: "El rango de 3-bet no liga ni un top pair aquí — fuera de los sobrepares y la pareja de cincos de A5s, solo gutshots y proyectos de puerta trasera — y aun así los sobrepares mantienen la presión" },
+      { board: "8♦5♣2♠", slug: "3bet-pot-low-board", name: "Board bajo y seco", note: "El rango de 3-bet no liga ni un top pair aquí — fuera de los sobrepares y la pareja de cincos de A5s, casi todo son gutshots y proyectos de puerta trasera — y aun así los sobrepares mantienen la presión" },
     ],
   },
   {

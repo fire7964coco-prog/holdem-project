@@ -130,7 +130,7 @@ const SPOT_GROUPS = [
     items: [
       { board: "A♦K♠2♥", name: "A-high board, 3-bet yapanın avantajı", note: "3-bet range'inin görebileceği en iyi flop — AK, AA ve KK ile dolu. Küçük bir bahsin rakibin tüm range'ine baskı kurmasını sağlayan düşük SPR değil, o range'in şeklidir" },
       { board: "Q♥T♥7♠", name: "Dinamik iki renkli board", note: "İki canlı draw — range'in %98,4'ü aynı boyutla, potun üçte ikisi kadar bahis yapar" },
-      { board: "8♦5♣2♠", name: "Düşük kuru board", note: "3-bet range'i burada hiç top pair yapmaz — overpair'ler ve A5s'in 5'li pair'i dışında yalnızca gutshot'lar ve backdoor'lar var — ama overpair'ler baskıyı sürdürür" },
+      { board: "8♦5♣2♠", name: "Düşük kuru board", note: "3-bet range'i burada hiç top pair yapmaz — overpair'ler ve A5s'in 5'li pair'i dışında neredeyse yalnızca gutshot'lar ve backdoor'lar var — ama overpair'ler baskıyı sürdürür" },
     ],
   },
   {

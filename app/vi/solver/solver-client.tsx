@@ -142,7 +142,7 @@ const SPOT_GROUPS = [
     items: [
       { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, lợi thế của bên 3-bet", note: "Flop tốt nhất mà range 3-bet có thể gặp — đầy AK, AA và KK. Điều khiến một cược nhỏ ép được toàn bộ range đối thủ là cấu trúc của range đó, không phải SPR thấp" },
       { slug: "3bet-pot-bet-sizing", board: "Q♥10♥7♠", name: "Board động, hai chất", note: "Board có cả flush draw lẫn straight draw còn sống — 98,4% của range bet cùng một cỡ, hai phần ba pot" },
-      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — ngoài overpair và đôi 5 của A5s, chỉ có gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board thấp khô", note: "Range 3-bet không có top pair nào ở đây — ngoài overpair và đôi 5 của A5s, gần như chỉ có gutshot và backdoor — nhưng overpair vẫn giữ áp lực" },
     ],
   },
   {

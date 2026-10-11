@@ -275,7 +275,7 @@ const SPOT_GROUPS = [
       // 🟢 앱 de ⑩은 «weitgehend verfehlt» 완화형이라 결함은 아니나(RP-17은 «통째로»형이 결함),
       //    랜딩은 다른 다섯 랜딩과 같은 **수치 정본**으로 간다 — KO ⑩ 표 실측 **탑 페어 0%**
       //    (8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.
-      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – abgesehen von Overpairs und dem Fünferpaar von A5s nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Niedriges, trockenes Board", note: "Die 3-Bet-Range floppt hier kein einziges Top Pair – abgesehen von Overpairs und dem Fünferpaar von A5s fast nur Gutshots und Backdoors – und trotzdem machen Overpairs und A-High weiter Druck" },
     ],
   },
   {

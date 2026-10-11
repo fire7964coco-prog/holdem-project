@@ -209,7 +209,7 @@ const SPOT_GROUPS = [
       //       랜딩들은 그 고침을 못 받았다.
       //    🟢 문안은 «완화»가 아니라 **수치**로 갔다 — KO 표 실측 **탑 페어 0%**
       //       (8이 들어간 핸드가 3벳 레인지에 없다). 오버페어와 층이 달라 뒤 절과 충돌하지 않는다.
-      { board: "8♦5♣2♠", name: "Low Dry Board", slug: "3bet-pot-low-board", note: "The 3-bet range flops no top pair at all here — beyond overpairs and A5s's pair of fives, it is gutshots and backdoors — yet overpairs keep the pressure on" },
+      { board: "8♦5♣2♠", name: "Low Dry Board", slug: "3bet-pot-low-board", note: "The 3-bet range flops no top pair at all here — beyond overpairs and A5s's pair of fives, the rest is almost all gutshots and backdoors — yet overpairs keep the pressure on" },
     ],
   },
   {
