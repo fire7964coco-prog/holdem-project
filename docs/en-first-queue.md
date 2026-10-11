@@ -810,6 +810,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = when-to-fold 체크리스트 «Passive players and big river raises are value — believe them»(«usually» 탈락) · when-to-fold FAQ «far more than a fifth»(20–25%와 경계) · strategy «beats almost every casual game» · shc tldr «about 15–20% … is profitable»(«across a session» 한정 탈락) · shc «raising and re-raising with AK stays correct» · when-to-fold «Beat the pot odds threshold or fold»(implied odds 예외 탈락) · position-play «position, not card strength, funds that gap» · 3bet «leading every street» · limping «worst seat in the house» **통지 2 vi 단독** = when-to-fold L91 «Nếu bạn không muốn tính nhẩm ở bàn, máy tính pot odds cho ra ngưỡng ngay»(테이블 중 계산기로 읽힘 · EN 없음) · c-bet tldr EN 괄호절 «(as the out-of-position 3-bettor …97% …)» 부재 · position-play L186 «sẽ bet»(EN «expect»).
 - MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. 🟠 MB-233·234·236·237 전/후 대조는 검수장 별도 회차(MA-425 착수 공지).
 
+### 2-AX. 우편함 수신분 — MA-426 (MB-225·226·227·228·231 이행 전/후 재판정 · 기준 `8fb1e28b`) · 등재·회신 2026-10-11 (13) MB-246 · 미이행
+
+> 근거 = 검수장 `reports/2026-10/검수-MB225-231-이행-2026-10-11.md`(재판정 236 · 신설 115 · 삭제 3 · 회귀 🆕 52 = 전부 옛 문면 소거 신호). 위치 대조 = 현 main `378d35ad`.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| AX-1 🔴 EN-먼저 | `app/en/solver/solver-client.tsx` L212 3벳 로우 보드(8♦5♣2♠) note «beyond overpairs and A5s's pair of fives, it is gutshots and backdoors» — BB_3BET 83콤보 중 K♥Q♥ 1콤보가 페어·거트샷·백도어 0(보드 ♥ 0장) · 원인 = 검수장 AL-4 처방 문안 | «the rest is almost all gutshots and backdoors»(또는 «mostly») → 같은 꼴 로케일 8: de L278 · es L276 · pt L301 · ru L143 · tr L133 · vi L145 · zh L275 · zh-hant L290(같은 문면 실측 · hi·ms·fr·id·ja는 문면이 달라 대상 아님) · 이행 MB에 전/후 |
+
+- 🪶 통지(자동 착수 금지): ① EN straddle 정의문 «A straddle is an optional blind bet» ↔ 같은 글 «usually optional (… mandatory)» ② vi beginners «phần lớn cùng dùng một thứ hạng» UNV ↔ EN hand-rankings «Mostly yes»(형제 잣대 후보 · 라벨 불변) ③ es·EN low-board «mostly with draws» UNV(레이즈 구성 ~40콤보 미집계 — 캡처 구성표 있으면 OK 가능) ④ 범위 밖 = 로케일 GTO 13편 원장 없음(§0-N 경량 트랙) · MB-229·S-064~066·MB-238~240 미처리.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

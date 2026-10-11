@@ -31,6 +31,7 @@ import { REVIEW_EVENT_BANNER_KO } from "@/lib/participation-config";
 import { loginHref } from "@/lib/auth-navigation";
 import MobileHomeNavigation from "./mobile-home-navigation";
 import EventStatus, { EventStatusBadge } from "./event-status";
+import MyRecords, { myRecordsLabels } from "./my-records";
 
 export type { FeedPost } from "./post-card";
 
@@ -1119,7 +1120,9 @@ export default function CommunityClient({
                 <div className="rounded p-6 text-center" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
                   <div className="text-3xl mb-3">👤</div>
                   <p className="text-[15px] font-medium mb-1" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{L.loginRequired}</p>
-                  <p className="text-sm mb-4" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.loginRequiredSub}</p>
+                  <p className="text-sm mb-1" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.loginRequiredSub}</p>
+                  {/* «내 기록» 설계 §2-1 — 로그인의 이유 한 줄 */}
+                  <p className="text-sm mb-4 break-keep" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{myRecordsLabels(pageLocale ?? myLanguage).loginLine}</p>
                   <Link href={currentLoginHref} className="inline-block px-5 py-2.5 rounded text-sm font-semibold transition-transform active:scale-95 hover:opacity-90" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
                     {L.loginSignup}
                   </Link>
@@ -1190,6 +1193,8 @@ export default function CommunityClient({
                     ))}
                   </div>
                 </div>
+                {/* «내 기록» 카드 3장 — 프로필 카드 아래 · «내 글» 위(설계 §2-1 · 회차 D) */}
+                <MyRecords userId={currentUser.id} locale={pageLocale ?? myLanguage} />
                 <p className="text-[11px] font-bold tracking-widest uppercase px-1 pt-1" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.myPostsSection}</p>
                 {myPosts.length === 0
                   ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />

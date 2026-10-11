@@ -198,12 +198,17 @@ function dropUploaded(ids: Set<string>) {
 
 /** 계정에 쌓인 퀴즈 합계 — 1,000행씩 넘겨 읽는다(PostgREST 기본 상한) · 실패하면 null */
 export async function fetchAccountTotals(sb: SupabaseClient, userId: string): Promise<QuizTotals | null> {
+  return (await fetchAccountQuiz(sb, userId))?.totals ?? null;
+}
+
+/** 계정 합계 + 최근 7일 판 수(기기 시각 played_at 기준) — «내 기록» 카드(회차 D) · 실패하면 null */
+export async function fetchAccountQuiz(sb: SupabaseClient, userId: string): Promise<{ totals: QuizTotals; last7: number } | null> {
   const rows: QuizHandRow[] = [];
   const PAGE = 1000;
   for (let from = 0; ; from += PAGE) {
     const { data, error } = await sb
       .from(QUIZ_TABLE)
-      .select("guesses, err_sum, decisions, hits, points")
+      .select("guesses, err_sum, decisions, hits, points, played_at")
       .eq("user_id", userId)
       .order("id")
       .range(from, from + PAGE - 1);
@@ -211,5 +216,15 @@ export async function fetchAccountTotals(sb: SupabaseClient, userId: string): Pr
     rows.push(...((data ?? []) as QuizHandRow[]));
     if (!data || data.length < PAGE) break;
   }
-  return sumQuizRows(rows);
+  const since = Date.now() - 7 * 24 * 60 * 60 * 1000;
+  const last7 = rows.filter((r) => Date.parse(r.played_at) >= since).length;
+  return { totals: sumQuizRows(rows), last7 };
+}
+
+/** 계정의 퀴즈 기록을 전부 지운다(«내 기록» 지우기) + 이 브라우저 기록도 비운다 — 안 비우면 다음 방문 때 다시 올라간다 */
+export async function deleteAccountQuiz(sb: SupabaseClient, userId: string): Promise<boolean> {
+  const { error } = await sb.from(QUIZ_TABLE).delete().eq("user_id", userId);
+  if (error) return false;
+  clearQuizStore();
+  return true;
 }
