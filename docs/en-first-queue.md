@@ -766,6 +766,20 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - MB-223 ② register·성조 = 이상 없음 · ④ 메타·FAQ 정형 = 사실 왜곡 없음 → 접수.
 - ✅ 이행 10-10 (16) `0876cc17` = vi 5편(blind 무변경 · `updated` 10-10) · AT-2 = 실머니 표·문장 삭제 + 연습 칩 문면(같은 글 칩 표 수치) + 토너먼트 buy-in 문단을 링크 한 줄로 · AT-7 = 45-A «chip bạn đẩy ra» 검사 문형(Ex-2 2000 vs 1050 = call) · AT-8 = 17-A·16·B 143(«trừ khi … tay bài sống duy nhất»). diff 교열 렌즈(vi 네이티브+TD · Opus 5.5) 반영 5 · 미반영 1(betting «call thì phải trả tiền» 비유 = 범위 밖 · 실머니 권유 아님). 🪶 통지 (a)(b)는 그대로 남김.
 
+### 2-AU. 우편함 수신분 — MA-421 (VI 회차 2 🅱 rank 6편 · 기준 `bea65d3b`) · 등재 2026-10-11 (1) · 회신 MB-232 · 미이행
+
+> 근거 = 검수장 `reports/검수-vi-r2-rank-2026-10-10/hq-reverify/HQ-REPORT.md`(701행 OK 638 · RISKY 4 · WRONG 1 · UNV 58). 위치 대조 = 현 main `d3b3cc7e`(행 번호 = ts 파일 · MA의 L은 md 기준) · 인용 문면 전 자리 실재. 반례 손 검산 = A♠9♣ / A♦K♥Q♠J♦2♣ → 베스트5 A-A-K-Q-J · 9 탈락 · 보드의 9 초과 카드 4장(5장 아님) → EN note 문장 거짓 확인. 처방 원칙 = MA 그대로 «같은 글 정답 문면 재사용 — 문안 창작 아님».
+
+| # | 글 | 자리(ts 행) | 처방 |
+|---|---|---|---|
+| AU-1 🔴 EN-먼저 | kicker | EN L105 note «…and it drops out only when the board already supplies five better cards.» · `f5a5b927`(§2-AM AM-1) 이식 10로케일 동문(de·es·fr·id·ja·ms·pt·vi·zh-hant + EN · zh는 미변경 — 이행 때 zh 문면 따로 대조) | 같은 글 FAQ L182 정답 문면 «Your hole card only plays as a kicker when it's higher than the board cards it would replace.» 꼴로 교체 → 10로케일 같은 자리 · 본체 자기회귀(AM-1 이행 문안 결함) |
+| AU-2 vi | kicker | tldr L8 «Đó là lý do AK thắng AQ khi bài chung (board) có một lá A.» · FAQ1 L155 «ví dụ A-K thắng A-Q khi board ra một lá A» | 같은 글 L207 «Chỉ khi cả hai cùng đôi A» 한정(보드 A 1장 AQ 승 ~22% · FR MB-205 선례) · EN tldr «when the board pairs an ace» 동문 = 통지 1로 |
+| AU-3 vi | split | FAQ2 L164 «Chất bài không bao giờ ảnh hưởng đến việc chia» ↔ 같은 글 L121 하우스 무늬 오드칩 · L184 | 같은 글 L8·L27 «Chất bài không bao giờ phá thế hòa»(FR 결재 ③) · EN L163 «Suits never affect the split» 동문 = 🪶 EN-먼저 후보 |
+| AU-4 vi | flush | FAQ L231 «Thùng chỉ thắng cù lũ khi ở Short Deck (6+)» | 같은 글 L178 «thể thức phổ biến duy nhất» 한정 재사용(WSOP 2026 B 260 Mexican Poker) |
+
+- 🪶 통지(자동 착수 금지): **통지 1 EN-먼저** = kicker tldr·FAQ «AK beats AQ when the board pairs an ace» · hand-rankings FAQ L384 «worst possible hand is 7-5-4-3-2»(5장 기준 · 7장 최약 = 9-8-7-5-4) · reading TDA 22 휴식 중 예외 · 보드 로열 «split equally» 사이드팟 자격 · 보드 스트레이트 «whoever extends it» · flush FAQ «better top card» 둘째 이하 · split 사이드팟 FAQ «kept betting after…» · Seven-Card Stud «No community cards» · tiebreak «fifth card only stops mattering…» · kicker note «if the highest side card is a community card» 조건 · EN split L163 «Suits never affect the split» **통지 2 vi 단독** = reading L57 «khớp hạng giữa bài tẩy và board»(포켓페어·보드 페어) · flush Short Deck 절 «flush > straight 유지» 미기재 → AU 이행 회차에 같이 볼지 그때 판단.
+- MB-223 ② register·성조(«bạn» 일관 · 성조 오기 0) · ④ 메타·FAQ 정형 = 접수. MB-226·227 vi 🅱 5편 몫 = 이 회차가 새 문면 판정으로 흡수 → 접수. 🟠 공용 🆕 vi 12 = MA-420 이행 진행 신호(되돌림 아님) → MB-231 배포로 해소.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
