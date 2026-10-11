@@ -1,3 +1,11 @@
+## 2026-10-11 (3) — queue §2-AU 통지 1 EN-먼저 13자리 → 13로케일 · 배포 `3ec21aaf` · MB-234
+
+- 사장님 «진행해»(§2-AU 통지 1 추천안). 근거 = 검수장 `reports/검수-vi-r2-rank-2026-10-10/hq-reverify/` HQ-REPORT §6 + Astra 6편 리포트(EN 동형 축어).
+- 원문 축어 확인: TDA 2024 Rule 22 «If a hand finishes during a break, the right to any dispute ends 1 minute after the pot is awarded.»(`docs/sources/tda-2024-rules-v1.txt` L174~177) · WSOP 2026 Live Action 232 «…the dealer will burn and deal a community card»(`docs/sources/wsop-2026-live-action-rules.txt` L1261~1267). §13: 7장 최약 하이카드 전수 = 9-8-7-5-4(2-3-4-5-7-8-9).
+- EN 13자리 헤드 직접 → 로케일 서브 3(ko·ja·zh·zh-hant / es·pt·de·fr / id·ms·vi·hi·tr·ar) · 같은 글 문면 재사용. de 직답 박스 동형은 헤드가 같은 글 #1 문면으로.
+- 게이트: audit:hard 14로케일 🔴 0(🟠 = 기존 C2 es 1 · de 1 · zh 1 · zh-hant 4) · 추가 줄 백틱 0 · build exit 0(74 + 729).
+- 🪶 남김(자동 착수 금지): EN split 본문 L126 «only the deeper stacks who kept betting» + zh L185·zh-hant L140 동형(사이드팟 본문) · EN hand-rankings L316·L340 «highest/higher top card wins»(Astra #4 · flush FAQ와 동형) · EN kicker FAQ L198 playing the board 공개 조건 · hand-rankings L83 보드 로열 «get as many chips in»(레이크) · ko split 오드칩 «무늬로 가리지 않음» 단정 ↔ EN 하우스 예외 · ko flush «더 높은 무늬 카드» 표현 · zh tiebreak L152 바로답(전제 있어 유지) · ja kicker FAQ L180 «並べば»(유지) · ar Stud «الرزمة» 네이티브 확인. §2-AU 통지 2(vi 단독)는 미착수.
+
 ## 2026-10-11 (2) — queue §2-AU AU-1~4 이행 · kicker EN + 9로케일 · vi 3편 · 배포 `86846fb3` · MB-233
 
 - 사장님 «queue §2-AU AU-1~4 진행해». 처방 = MA 그대로 «같은 글 정답 문면 재사용».
