@@ -1,3 +1,10 @@
+## 2026-10-12 (29) — 회차 A ①~⑤ 본체 정리 · 배포 `4e367e54` · MB-294
+
+- 사장님 «a를 이번 세션에서 진행하고 다음 세션에서 6~부터 할 수 있는 데까지 순서대로» → 핸드오프 회차표 A·B 등재 후 착수.
+- ① de `formulaCaveat` «wenn du GEWINNST» → «den du durch GEWINNEN holst». ② 솔버 카드 `solverTitle`을 함수로(spot/notReady/그 밖 3분기) 6언어 + spot 플랍 분기 «솔버 싱글 레이즈 팟 기준». ③ GTO 2편 범위 앞 % 38자리(10로케일 · updated 무변경) → check:gto 🔴 20→12, 범위 미검사 0. 남은 🔴 12 = broadway 23.7(ko FAQ에 «987 보드 23.7% 리드» 문장 없음 · 11로케일) · es monotone 44.0·47.3 — 이번 범위 밖. ④ audit-hardening H1 콤보 열거 예외 + 셀프테스트 85/85.
+- ⑤ `../Holdem-fr-*` 빈 폴더 7개 rmdir · 워크트리 10개(calc-ko·ja·ms-5·queue·zh·zh-hant · 미커밋 0 · 고유 커밋 0 · 점유 프로세스 0) `git worktree remove` · 브랜치 보존. ⚠ 폴더 9개에 `node_modules`(12KB · 링크로 추정)만 남음 — 링크 판별 명령이 권한에서 막혀 미삭제(재귀 삭제 금지: 본체 node_modules를 가리키면 본체가 지워진다). 사장님 확인 뒤 링크만 떼고 rmdir.
+- build 74+729 exit 0.
+
 ## 2026-10-12 (28) — MA-500(MB-289·291·292 판정) 요청 1·통지 1 이행 · 배포 `8c58860e` · MB-293
 
 - 사장님 «핸드오프읽고 우편함확인» → «2번 검수장판정 끝났는데??»(우편함 도구엔 MA 행이 아직 없고 REPORT만 미커밋으로 있던 시점 — 본체가 «대기»로 잘못 보고) → «진행해». ① ko·en·ja·zh 승률 시뮬 사전 무인자 toLocaleString 32자리 → en-US ② ja·zh·es·de 솔버 랜딩 단일 핸드 승률 행 → /{l}/calculator(Equity 초기 탭). build 74+729 exit 0.
