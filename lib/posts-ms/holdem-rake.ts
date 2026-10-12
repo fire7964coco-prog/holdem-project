@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake ialah potongan kecil yang bilik kad ambil daripada kebanyakan pot sebagai bayaran menganjurkan permainan — biasanya 2.5–10% sehingga had (cap) beberapa dolar. Kebanyakan bilik tidak mengambil apa-apa jika semua orang fold sebelum flop ('no flop, no drop'). Rake paling memberi kesan kepada pemain stakes rendah dan meja short-handed, dan rakeback memulangkan sebahagian daripadanya kepada pemain tetap.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -62,7 +62,7 @@ Rake bukan satu jenis sahaja. Cara pihak rumah mengutip wangnya bergantung pada 
 Beberapa peraturan menentukan cara pot rake sebenarnya dipotong:
 
 - **No flop, no drop.** Maksudnya: tiada flop, tiada rake. Di kebanyakan bilik kad, jika tangan tamat sebelum flop — semua orang fold kepada raise preflop — pihak rumah **tidak mengambil rake** langsung. (Tidak universal: beberapa laman, terutamanya GGPoker, memang mengambil rake daripada sesetengah pot preflop, jadi semak peraturan bilik anda.)
-- **Cap rake.** Pihak rumah tidak pernah mengambil peratusan penuh daripada pot yang sangat besar — ia berhenti pada satu had maksimum, lazimnya **$3–$6 untuk live** dan **$1–$3 untuk online**. Cap memang naik apabila stakes naik, tetapi tidak secara berkadar — ia bergerak dalam langkah yang kasar, jadi beberapa stakes selalunya berkongsi cap yang sama. Tambahan pula, cap sering mengecil apabila lebih sedikit pemain menerima kad (pot heads-up mungkin hanya ada cap $1).
+- **Cap rake.** Di kebanyakan bilik kad, pihak rumah tidak mengambil peratusan penuh daripada pot yang sangat besar — ia berhenti pada satu had maksimum, lazimnya **$3–$6 untuk live** dan **$1–$3 untuk online**. Cap memang naik apabila stakes naik, tetapi tidak secara berkadar — ia bergerak dalam langkah yang kasar, jadi beberapa stakes selalunya berkongsi cap yang sama. Tambahan pula, cap sering mengecil apabila lebih sedikit pemain menerima kad (pot heads-up mungkin hanya ada cap $1).
 - **Time charge menggantikan pot rake.** Di stakes lebih tinggi, bilik kad sering berhenti mengambil rake daripada pot dan sebaliknya mengutip bayaran tetap — katakan $10–$15 sejam bagi setiap pemain, diambil setiap setengah jam. Ini menguntungkan pemain yang memenangi pot besar — walaupun yang anda jimatkan ialah rake yang *sudah dihadkan oleh cap*, bukan sepotong daripada pot: dengan cap $3–$6, pot $2,000 pun hanya menyerahkan beberapa dolar.
 - **Dead drop.** Kaedah yang kurang biasa: hanya pemain di butang membayar rake tetap setiap tangan, dikutip sebelum kad diedarkan — direka supaya pemenang pot besar tidak dikenakan lebih daripada orang lain.
 
@@ -102,7 +102,7 @@ Contributed (ikut sumbangan) | Dealt (ikut kad diedarkan)
 Berdasarkan rake daripada pot yang **anda masukkan wang** — kaedah moden yang standard | Dibahagi sama rata kepada **semua yang menerima kad** dalam pot yang dikenakan rake, sama ada mereka menyumbang atau tidak — kini jarang
 :::
 
-Bagi pemain kasual, rakeback cuma faedah kecil. Bagi pemain tetap yang bermain dengan volum tinggi, ia sangat besar: jurang antara kadar 20% dan 40% bergantung pada rake yang anda sebenarnya jana, jadi ia hanya menjadi jumlah yang serius jika anda benar-benar bermain dengan volum tinggi pada stakes yang bermakna — dan bagi ramai grinder break-even, rakeback *itulah* keuntungan mereka. Ia secara efektif merendahkan rake sebenar anda, jadi ia wajar disemak sebelum anda memilih tempat bermain. Cuma berhati-hati: kebanyakan nasihat rakeback di internet didorong oleh affiliate — layan halaman "daftar di sini" dengan sikap skeptikal yang sama seperti anda melayan mana-mana promosi jualan.
+Bagi pemain kasual, rakeback cuma faedah kecil. Bagi pemain tetap yang bermain dengan volum tinggi, ia sangat besar: jurang antara kadar 20% dan 40% bergantung pada rake yang anda sebenarnya jana, jadi ia hanya menjadi jumlah yang serius jika anda benar-benar bermain dengan volum tinggi pada stakes yang bermakna — dan bagi ramai grinder break-even, rakeback *itulah* keuntungan mereka. Ia secara efektif merendahkan rake sebenar anda. Cuma berhati-hati: kebanyakan nasihat rakeback di internet didorong oleh affiliate — layan halaman "daftar di sini" dengan sikap skeptikal yang sama seperti anda melayan mana-mana promosi jualan.
 
 ---
 
@@ -162,7 +162,7 @@ A. Rakeback memulangkan peratusan daripada rake yang anda sendiri bayar — sela
 
 **Q. Bagaimana cara bayar rake lebih sedikit dalam poker?**
 
-A. Anda tidak boleh lari sepenuhnya daripada rake dalam permainan yang dikenakan rake, tetapi anda boleh mengecilkannya. Dapatkan kadar rakeback terbaik yang anda layak, dan pilih bilik kad dengan cap yang mesra pemain. Naik stakes juga mengecilkan rake, kerana cap yang tetap menjadi bahagian yang lebih kecil daripada setiap pot — tetapi ambil langkah itu hanya apabila bankroll anda mampu menampung turun naik *dan* anda masih ada kelebihan ke atas pemain yang lebih sukar, jika tidak pemain lain akan mengambil jauh lebih banyak daripada apa yang pernah diambil oleh rake. Bermain lebih sedikit pot tetapi lebih besar, berbanding lambakan pot kecil, juga merendahkannya: cap hanya berkesan pada pot besar, manakala pot kecil membayar peratusan penuh. Begitu juga dengan mengelak meja yang sangat short-handed, kerana di situ anda bermain jauh lebih banyak tangan sejam dan post blind jauh lebih kerap, jadi anda berada dalam lebih banyak pot yang dikenakan rake setiap jam (walaupun cap turun apabila lebih sedikit pemain menerima kad). Memilih permainan time charge stakes tinggi juga membantu — tetapi berpindah ke permainan itu memerlukan kusyen bankroll yang sama dan kelebihan ke atas pemain lain. Dari segi kos semata-mata, home game tanpa rake ialah poker paling murah — tiada apa yang dipotong daripada pot.
+A. Anda tidak boleh lari sepenuhnya daripada rake dalam permainan yang dikenakan rake, tetapi anda boleh mengecilkannya. Naik stakes juga mengecilkan rake, kerana cap yang tetap menjadi bahagian yang lebih kecil daripada setiap pot — tetapi ambil langkah itu hanya apabila bankroll anda mampu menampung turun naik *dan* anda masih ada kelebihan ke atas pemain yang lebih sukar, jika tidak pemain lain akan mengambil jauh lebih banyak daripada apa yang pernah diambil oleh rake. Bermain lebih sedikit pot tetapi lebih besar, berbanding lambakan pot kecil, juga merendahkannya: cap hanya berkesan pada pot besar, manakala pot kecil membayar peratusan penuh. Begitu juga dengan mengelak meja yang sangat short-handed, kerana di situ anda bermain jauh lebih banyak tangan sejam dan post blind jauh lebih kerap, jadi anda berada dalam lebih banyak pot yang dikenakan rake setiap jam (walaupun cap turun apabila lebih sedikit pemain menerima kad). Memilih permainan time charge stakes tinggi juga membantu — tetapi berpindah ke permainan itu memerlukan kusyen bankroll yang sama dan kelebihan ke atas pemain lain.
 
 **Q. Adakah mengambil rake dalam poker menyalahi undang-undang?**
 
@@ -186,7 +186,7 @@ A. Rake live lazimnya berperatusan lebih tinggi, biasanya dengan cap lebih tingg
 
 1. **Rake ialah potongan pihak rumah kerana menganjurkan permainan** — biasanya 2.5–10% daripada pot yang layak sehingga cap yang kecil, dan ia berasingan daripada apa yang anda menang atau kalah kepada lawan.
 2. **Ia paling membebankan stakes rendah.** Cap hampir tidak bergerak apabila anda turun stakes, jadi secara berkadar anda membayar rake paling banyak di tangga paling bawah — "perangkap rake" yang menjadikan micro-stakes begitu sukar dikalahkan.
-3. **Rakeback dan struktur penting.** Mendapat semula 20–40% daripada rake anda, dan memilih bilik kad dengan cap yang mesra pemain, boleh membalikkan keputusan jangka panjang anda — ukur segala-galanya *selepas* rake.
+3. **Rakeback dan struktur penting.** Kadar rakeback 20–40% dan struktur cap boleh membalikkan keputusan jangka panjang anda — ukur segala-galanya *selepas* rake.
 
 Sekarang anda nampak potongan pihak rumah, angka yang anda baca di tempat lain jadi lebih masuk akal: [pot odds](/ms/blog/holdem-pot-odds) anda, win rate anda, dan kenapa [straddle](/ms/blog/holdem-straddle) yang membesarkan pot juga diam-diam menyuap rake. Poker boleh dikalahkan — tetapi hanya apabila anda mengalahkan pemain lain dengan margin *lebih besar* daripada apa yang diambil pihak rumah.
 

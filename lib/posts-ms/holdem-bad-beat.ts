@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apa Itu Bad Beat dalam Poker? Bila Jadi Favourite Pun Tak Cukup",
   seoTitle: "Peluang 80% tetapi kalah? — Apa Itu Bad Beat dalam Poker",
   desc: "Favourite 80% tetapi kalah? Itu bad beat. Ketahui bezanya dengan cooler, cara bad beat jackpot berfungsi, dan kenapa ia biasanya petanda baik untuk anda.",
-  tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
+  tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda — di flop, turn atau river — selepas wang masuk. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; dek sahaja yang mengkhianati anda selepas itu. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Yang sampai hari ini masih terasa pedih: saya memegang pocket aces, masuk all-in menentang seorang pemain yang call dengan pocket fives, lalu melihat salah satu daripada dua five terakhir jatuh menghentam river. Saya sudah buat semuanya dengan betul. Wang saya masuk sebagai favourite lebih daripada 4-to-1, namun saya tetap kalah seluruh stack kepada ==salah satu daripada dua kad dalam dek yang boleh mengalahkan saya==. Itulah bad beat, dan jika anda bermain poker cukup lama, ia akan menimpa anda beribu-ribu kali.
 
-**Bad beat** berlaku apabila anda memasukkan cip sebagai favourite statistik yang kuat tetapi tetap kalah, kerana lawan mendapat kad bertuah untuk ==g:suck out== anda. Kata kuncinya ialah *favourite* — anda sedang menang ketika wang masuk, dan hanya satu kad yang tipis peluangnya menterbalikkan keputusan. Ia antara perkataan yang paling kerap disalah guna dalam seluruh [istilah poker](/ms/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi di bawah ini kita lihat dengan tepat apa yang dikira bad beat, bezanya dengan [cooler](/ms/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), apa yang dibayar oleh "bad beat jackpot", dan satu kebenaran yang berlawanan dengan gerak hati yang akhirnya dipelajari oleh setiap pemain yang menang: bad beat biasanya petanda *baik*.
+**Bad beat** berlaku apabila anda memasukkan cip sebagai favourite statistik yang kuat tetapi tetap kalah, kerana lawan mendapat kad bertuah untuk ==g:suck out== anda. Kata kuncinya ialah *favourite* — anda sedang menang ketika wang masuk, dan hanya runout yang tipis peluangnya menterbalikkan keputusan. Ia antara perkataan yang paling kerap disalah guna dalam seluruh [istilah poker](/ms/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi di bawah ini kita lihat dengan tepat apa yang dikira bad beat, bezanya dengan [cooler](/ms/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), apa yang dibayar oleh "bad beat jackpot", dan satu kebenaran yang berlawanan dengan gerak hati yang akhirnya dipelajari oleh setiap pemain yang menang: bad beat biasanya petanda *baik*.
 
 ---
 
@@ -56,7 +56,7 @@ Ramai orang memakai "bad beat" dan "cooler" (dalam poker, bukan penyejuk) secara
 |:---|:---|:---|
 | **Siapa di hadapan ketika cip masuk** | **Anda** favourite (selalunya 80%+) | Anda **di belakang** |
 | **Adakah suckout berlaku?** | Ya — kad bertuah menterbalikkannya | Tidak — yang di hadapan kekal di hadapan hingga akhir |
-| **Bolehkah anda fold?** | Tidak penting — anda sedang menang | Tidak — tangan terlalu kuat untuk di-fold |
+| **Bolehkah anda fold?** | Bergantung — bad beat itu sendiri tidak memberitahu sama ada permainan anda bertahan | Tidak — tangan terlalu kuat untuk di-fold |
 | **Contoh klasik** | AA kalah apabila 7‑7 dapat set | KK bertembung AA |
 | **Perasaannya** | "Saya kena outdraw" | "Saya memang tiada peluang" |
 

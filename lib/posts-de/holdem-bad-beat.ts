@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Der eine, der immer noch schmerzt: Ich hielt zwei Asse, bin all-in gegangen gegen einen Spieler, der mit einem Paar Fünfen gecallt hat, und musste zusehen, wie eine der letzten beiden Fünfen auf den River knallte. Ich hatte alles richtig gemacht. Mein Geld ging als besser als 4:1-Favorit rein, und trotzdem verlor ich den ganzen Stack an ==eine der beiden Karten im Deck, die mich schlagen konnten==. Das ist ein Bad Beat, und wenn du lange genug Poker spielst, wird er dir tausende Male passieren.
 
-Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur eine unwahrscheinliche Karte hat das Ergebnis gedreht. Es ist eines der am häufigsten überstrapazierten Wörter im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") – hier steht deshalb genau, was wirklich als Bad Beat zählt: wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind meist ein *gutes* Zeichen.
+Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur ein unwahrscheinlicher Runout hat das Ergebnis gedreht. Es ist eines der am häufigsten überstrapazierten Wörter im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") – hier steht deshalb genau, was wirklich als Bad Beat zählt: wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind meist ein *gutes* Zeichen.
 
 ---
 
@@ -58,7 +58,7 @@ Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, und eine offizielle 
 |:---|:---|:---|
 | **Wer führte, als die Chips reingingen** | **Du** warst der Favorit (oft 80%+) | Du warst **hinten** |
 | **Gab es einen Suckout?** | Ja – eine Glückskarte hat es gedreht | Nein – der Führende führte die ganze Zeit |
-| **Hättest du folden können?** | Egal – du warst vorne | Nein – Hand zu stark zum Folden |
+| **Hättest du folden können?** | Kommt drauf an – der Bad Beat selbst sagt dir nicht, ob dein Play standgehalten hat | Nein – Hand zu stark zum Folden |
 | **Klassisches Beispiel** | AA verliert, wenn 7‑7 ein Set spikt | KK läuft in AA |
 | **Das Gefühl** | „Ich wurde outgedrawt“ | „Ich hatte nie eine Chance“ |
 

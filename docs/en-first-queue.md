@@ -951,6 +951,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지(라벨 OK/UNV · 같은 회차 이식 권장): SHC L139 «as opening hands,» · L218 PDF «9-max penuh» → «by position» · SHC L277·L281 · pp L70·L71 · 3bet L179·L245 `6164c748` 문면 · 3bet L293 «membalas jam tulen» 지시대상 모호(EN 동형 UNV) · pp L225 OK.
 - 🔴 ms `masterUpdated` 그대로(이식만 · settled §1-C) · EN-먼저(BE·BF·BI-2·BI-3)는 EN `updated` 갱신 → 형제는 EN 문면 확정 뒤.
 - 이행 순서 = ms 고유(BG·BH·BI-1) → EN-먼저 EN+ms(BE·BF·BI-2·3) → 형제 로케일. 이행 MB에서 재판정 요청.
+- ✅ **재판정 MA-468**(2026-10-12 · 기준 `0fd43688`): §2-BE~§2-BI 이행 70파일 OK · 새 RISKY/WRONG 0 · 범위 밖 기존 RISKY(de cooler #60 · es fish #8 · es position-play #65 · ms equity 4)는 그대로.
+
+### 2-BJ. 우편함 수신분 — MA-465 (MS glossary 묶음 3 · bad-beat·rake·straddle · 기준 `30f15d46`) · 등재·회신 2026-10-12 (4) MB-265
+
+> WRONG 0 · straddle RISKY 0. 요청 2 = EN-먼저 3자리(사용자 결재 10-12 · 같은 글 안 정정 축) + ms 고유 5자리(vi 기결 틀 미러). 위치 대조 main `db7f41cc`(MA 줄번호는 원장 기준 — 아래는 실제 파일 줄). KO 레거시 해당 글 없음.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BJ-1 EN-먼저 ⓐ | rake EN L64 «The house never takes the full percentage on a huge pot» · ms L65 «Pihak rumah tidak pernah mengambil …» + 형제 9(de·es·fr·id·ja·pt·vi·zh·zh-hant) | 같은 글 L63 «In most rooms» 헤지 틀 — «In most rooms the house doesn't take the full percentage …»(1차 반례 Grand Poker Club «No Cap») |
+| BJ-2 EN-먼저 ⓑ | bad-beat EN L21 «only an improbable card flipped the result» · ms L22 «hanya satu kad» + 형제 | «only an improbable runout flipped the result»(같은 글 L38 명사 · runner-runner와 정합) |
+| BJ-3 EN-먼저 ⓒ | bad-beat 비교표 EN L56 «Could you have folded? — Doesn't matter — you were winning» · ms L59 «Tidak penting — anda sedang menang» + 형제 | MA-457 ⓑ(§2-BF BF-2 · cooler L63)과 같은 처방 — «whether your play held up» 축 |
+| BJ-4 ms | bad-beat tldr L8 «kad terakhir sahaja yang mengkhianati anda» | §2-AY AY-3(vi) 틀 = 같은 글 «di flop, turn atau river» + «selepas wang masuk» |
+| BJ-5 ms | rake 법 맥락 4자리: L105 꼬리절 «jadi ia wajar disemak sebelum anda memilih tempat bermain» · FAQ L165 «Dapatkan kadar rakeback terbaik … pilih bilik kad dengan cap yang mesra pemain» · FAQ «home game tanpa rake ialah poker paling murah» · 요약 L189 «… memilih bilik kad dengan cap yang mesra pemain, boleh membalikkan …» | §2-AY AY-4 / §2-AT 틀(권유 삭제 또는 같은 블록 관할 한정 · 법령 위반 단정 아님) |
+
+- 🪶 통지 라벨 유지(요청 아님): ① bad-beat L90 «trips di board»(EN L100) OK🪶 정밀화 여지 ② bad-beat L129 «ada yang mengambil rake daripada potongan jackpot» 방향 뒤집힘 읽힘(ms 고유 · 경미) ③ straddle EN «a few rooms let the straddler post any amount» = 검수장 EN 재판정 몫 ④ straddle «Preflop sahaja»·팟오즈 · rake «online lebih rendah» 단서 누락 · «much of»→«kebanyakan».
+- 🔴 ms `masterUpdated` 그대로 · EN-먼저(BJ-1~3)는 EN `updated` 갱신 → 형제는 EN 문면 확정 뒤. 이행 순서 = ms 고유(BJ-4·5) → EN+ms(BJ-1~3) → 형제 9.
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

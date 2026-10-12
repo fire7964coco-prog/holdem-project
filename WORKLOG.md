@@ -1,3 +1,11 @@
+## 2026-10-12 (4) — 우편함 MA-465 회신+등재 queue §2-BJ · MA-466·468 ACK · §2-BJ 이행 · MB-265 · MB-266
+
+- 사장님 «우편함작업해». 본체 몫 = MA-465(MS glossary 묶음 3 · bad-beat·rake·straddle) · MA-466(착수 공지) · MA-468(MB-263 재판정 OK · 새 RISKY/WRONG 0).
+- 등재 = queue §2-BJ(BJ-1~5) · §2-BE~BI 끝에 MA-468 재판정 결과 1줄. 회신 MB-265.
+- 이행: BJ-4 ms bad-beat tldr «kad terakhir sahaja» → «— di flop, turn atau river — selepas wang masuk» + «dek sahaja … selepas itu»(vi AY-3 틀) · BJ-5 ms rake 법 맥락 4자리 = §2-AT 삭제 틀(L105 꼬리절 · FAQ rakeback·cap 방 고르기 문장 · 홈게임 «paling murah» 문장 삭제 · L189 요약 서술형) · BJ-1 rake cap «never» → 각 로케일 같은 글 «In most rooms» 표현(EN+ms+9) · BJ-2 bad-beat «improbable card» → 각 로케일 같은 글 직답 문단의 runout 명사(de Runout · es desarrollo · fr board · ja 展開 · zh·zh-hant 牌面 · id·pt·vi·ms runout) · BJ-3 비교표 칸 = 로케일별 cooler 글 BF-2 확정 문면 축어 이식.
+- updated 10-12 · masterUpdated 불변. 게이트 audit:hard 11로케일×2 🔴 0 · ms schema 일치 · build 74 + 729.
+- 🪶 범위 밖 관찰(손대지 않음): ja bad-beat tldr «相手が最後にラッキーカードを引いて» = ms BJ-4와 같은 «마지막 카드» 좁힘 · EN tldr «at the end»는 «deck betrayed»라 MA가 OK로 봄 → 검수장 판정 몫으로 MB-266에 통지.
+
 ## 2026-10-12 (3) — queue §2-BG 통지 ①② 이행 (형제 13로케일 all-in·betting ← EN `6164c748`) · 배포 `fe93df0d` · MB-264
 
 - 사장님 «핸드오프 읽고 queue §2-BG 통지 ①② … 진행해». 우편함 본체 몫 새 MA 없음. posting.mdc 확인 후 착수.

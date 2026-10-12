@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake là phần nhỏ phòng poker cắt từ hầu hết các pot để tổ chức ván chơi — thường 2,5–10% và có mức cap vài đô la mỗi pot. Hầu hết phòng không thu gì nếu mọi người fold trước flop (\"no flop, no drop\"). Rake ăn nặng nhất vào người chơi stakes thấp và bàn ít người, còn rakeback trả lại một phần cho người chơi thường xuyên.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -62,7 +62,7 @@ Không chỉ có một kiểu rake. Cách nhà thu tiền tùy vào mức cượ
 Vài quy tắc chi phối cách pot rake thật sự được cắt:
 
 - **"No flop, no drop"** (không có flop thì không thu rake). Ở hầu hết phòng, nếu ván kết thúc trước flop — mọi người fold trước một cú raise preflop — nhà **không thu rake** nào cả. (Không phải phổ quát: một vài trang, đáng chú ý là GGPoker, có thu rake một số pot preflop, nên hãy kiểm tra phòng của bạn.)
-- **Cap** (mức trần rake). Nhà không bao giờ lấy trọn tỷ lệ trên một pot khổng lồ — nó dừng ở một mức tối đa, phổ biến **$3–$6 ở bàn live** và **$1–$3 online**. Cap có tăng khi mức cược tăng, nhưng không theo tỷ lệ — chúng tăng theo từng nấc lớn, nên nhiều mức cược thường dùng chung một cap. Thêm nữa chúng thường co lại khi ít người được chia bài hơn (một pot heads-up có thể bị cap ở $1).
+- **Cap** (mức trần rake). Ở hầu hết phòng, nhà không lấy trọn tỷ lệ trên một pot khổng lồ — nó dừng ở một mức tối đa, phổ biến **$3–$6 ở bàn live** và **$1–$3 online**. Cap có tăng khi mức cược tăng, nhưng không theo tỷ lệ — chúng tăng theo từng nấc lớn, nên nhiều mức cược thường dùng chung một cap. Thêm nữa chúng thường co lại khi ít người được chia bài hơn (một pot heads-up có thể bị cap ở $1).
 - **Time charge thay cho pot rake.** Ở stakes cao hơn, phòng thường thôi cắt pot và thay bằng một khoản phí cố định — chẳng hạn $10–$15 mỗi giờ mỗi người, thu mỗi nửa giờ. Cách này có lợi cho người thắng pot lớn — dù thứ bạn tiết kiệm là rake *đã bị cap*, không phải một lát của pot: với cap $3–$6, một pot $2.000 cũng chỉ mất vài đô la.
 - **Dead drop.** Một cách ít phổ biến hơn, chỉ người ở nút dealer trả một khoản rake định sẵn mỗi ván, thu trước khi bài được chia — thiết kế để người thắng pot lớn không bị đánh thuế nặng hơn ai khác.
 

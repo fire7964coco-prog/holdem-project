@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler in the strict sense, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but a steady stream of bad beats usually means opponents are putting money in behind — the kind of game you want to be in.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 The one that still stings: I had pocket aces, got it all in against a player who called with pocket fives, and watched one of the last two fives slam onto the river. I'd done everything right. My money went in as better than a 4-to-1 favorite, and I still lost the whole stack to ==one of the two cards in the deck that could beat me==. That's a bad beat, and if you play poker long enough, it will happen to you thousands of times.
 
-A **bad beat** is when you get your chips in as a heavy statistical favorite and lose anyway, because your opponent catches a lucky card to ==g:suck out== on you. The key word is *favorite* — you were winning when the money went in, and only an improbable card flipped the result. It's one of the most over-used words in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so below is exactly what counts as a bad beat, how it differs from a [cooler](/en/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), what a "bad beat jackpot" pays, and the counterintuitive truth every winning player eventually learns: bad beats are usually a *good* sign.
+A **bad beat** is when you get your chips in as a heavy statistical favorite and lose anyway, because your opponent catches a lucky card to ==g:suck out== on you. The key word is *favorite* — you were winning when the money went in, and only an improbable runout flipped the result. It's one of the most over-used words in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so below is exactly what counts as a bad beat, how it differs from a [cooler](/en/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), what a "bad beat jackpot" pays, and the counterintuitive truth every winning player eventually learns: bad beats are usually a *good* sign.
 
 ---
 
@@ -53,7 +53,7 @@ People use "bad beat" and "cooler" interchangeably, and there's no single offici
 |:---|:---|:---|
 | **Who led when chips went in** | **You** were the favorite (often 80%+) | You were **behind** |
 | **Did a suckout happen?** | Yes — a lucky card flipped it | No — the leader led all the way |
-| **Could you have folded?** | Doesn't matter — you were winning | No — hand too strong to fold |
+| **Could you have folded?** | Depends — the bad beat itself doesn't tell you whether your play held up | No — hand too strong to fold |
 | **Classic example** | AA loses when 7‑7 spikes a set | KK runs into AA |
 | **The feeling** | "I got outdrawn" | "I never had a chance" |
 

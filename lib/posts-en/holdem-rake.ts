@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -61,7 +61,7 @@ There isn't just one kind of rake. How the house collects its money depends on t
 A few rules govern how pot rake is actually skimmed:
 
 - **No flop, no drop.** In most rooms, if the hand ends before the flop — everyone folds to a preflop raise — the house takes **no rake** at all. (Not universal: a few sites, notably GGPoker, do rake some preflop pots, so check your room.)
-- **The rake cap.** The house never takes the full percentage on a huge pot — it stops at a maximum, commonly **$3–$6 live** and **$1–$3 online**. Caps do rise as the stakes rise, but not proportionally — they move in coarse steps, so several stakes often share the same cap. On top of that they often shrink when fewer players are dealt in (a heads-up pot might be capped at $1).
+- **The rake cap.** In most rooms the house doesn't take the full percentage on a huge pot — it stops at a maximum, commonly **$3–$6 live** and **$1–$3 online**. Caps do rise as the stakes rise, but not proportionally — they move in coarse steps, so several stakes often share the same cap. On top of that they often shrink when fewer players are dealt in (a heads-up pot might be capped at $1).
 - **Time charge instead of pot rake.** At higher stakes, rooms often stop raking pots and instead collect a flat fee — say $10–$15 an hour per player, taken every half-hour. This favors players who win big pots — though what you save is the *capped* rake, not a slice of the pot: against a $3–$6 cap, a $2,000 pot was only ever giving up a few dollars.
 - **Dead drop.** A less common method where only the player on the button pays a set rake each hand, collected before the cards are dealt — designed so big-pot winners aren't taxed more than anyone else.
 

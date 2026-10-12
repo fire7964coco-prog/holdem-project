@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Le rake, c'est la petite part que la salle prélève sur la plupart des pots pour organiser la partie, en général 2,5 à 10 % plafonnés à quelques dollars. La plupart des salles ne prennent rien si tout le monde se couche avant le flop (« no flop, no drop »). Il pèse surtout sur les petites limites et les tables à peu de joueurs, et le rakeback en rend une partie aux habitués.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -62,7 +62,7 @@ Il n'existe pas qu'un seul type de rake. La manière dont la maison encaisse dé
 Quelques règles encadrent la façon dont le rake au pot est réellement prélevé :
 
 - **No flop, no drop (pas de flop, pas de rake).** Dans la plupart des salles, si la main se termine avant le flop — tout le monde se couche sur une relance préflop —, la maison ne prend **aucun rake**. (Ce n'est pas universel : quelques sites, notamment GGPoker, prélèvent sur certains pots préflop, donc vérifie la règle de ta salle.)
-- **Le plafond (cap).** La maison ne prend jamais le pourcentage complet sur un énorme pot — elle s'arrête à un maximum, couramment **$3–$6 en live** et **$1–$3 en ligne**. Les plafonds montent bien avec les limites, mais pas proportionnellement — ils avancent par grosses marches, si bien que plusieurs limites partagent souvent le même plafond. En plus, ils baissent souvent quand moins de joueurs reçoivent des cartes (un pot en heads-up peut être plafonné à $1).
+- **Le plafond (cap).** Dans la plupart des salles, la maison ne prend pas le pourcentage complet sur un énorme pot — elle s'arrête à un maximum, couramment **$3–$6 en live** et **$1–$3 en ligne**. Les plafonds montent bien avec les limites, mais pas proportionnellement — ils avancent par grosses marches, si bien que plusieurs limites partagent souvent le même plafond. En plus, ils baissent souvent quand moins de joueurs reçoivent des cartes (un pot en heads-up peut être plafonné à $1).
 - **Le time charge à la place du rake au pot.** Aux limites plus élevées, les salles arrêtent souvent de prélever sur les pots et encaissent plutôt un time charge (forfait horaire) — disons $10–$15 de l'heure par joueur, pris toutes les demi-heures. Ça avantage les joueurs qui gagnent de gros pots — même si ce que tu économises, c'est le rake *plafonné*, pas une tranche du pot : avec un plafond de $3–$6, un pot de $2 000 ne cédait de toute façon que quelques dollars.
 - **Dead drop.** Une méthode moins courante où seul le joueur au bouton paie un rake fixe à chaque main, encaissé avant la distribution des cartes — pensée pour que les gagnants de gros pots ne soient pas taxés plus que les autres.
 

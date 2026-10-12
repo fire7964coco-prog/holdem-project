@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -62,7 +62,7 @@ Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pad
 Beberapa aturan mengatur bagaimana pot rake sebenarnya disaring:
 
 - **No flop, no drop.** Di sebagian besar room, jika tangan berakhir sebelum flop — semua fold ke sebuah raise preflop — house **tidak mengambil rake** sama sekali. (Tidak universal: beberapa situs, terutama GGPoker, memang me-rake sebagian pot preflop, jadi periksa room Anda.)
-- **Cap rake.** House tak pernah mengambil persentase penuh pada pot besar — ia berhenti pada maksimum, umumnya **$3–$6 live** dan **$1–$3 online**. Cap memang naik saat stake naik, tetapi tidak proporsional — ia bergerak dalam tingkatan kasar, sehingga beberapa stake sering memakai cap yang sama. Selain itu, cap sering menyusut saat lebih sedikit pemain yang dibagikan kartu (pot heads-up mungkin di-cap pada $1).
+- **Cap rake.** Di sebagian besar room, house tidak mengambil persentase penuh pada pot besar — ia berhenti pada maksimum, umumnya **$3–$6 live** dan **$1–$3 online**. Cap memang naik saat stake naik, tetapi tidak proporsional — ia bergerak dalam tingkatan kasar, sehingga beberapa stake sering memakai cap yang sama. Selain itu, cap sering menyusut saat lebih sedikit pemain yang dibagikan kartu (pot heads-up mungkin di-cap pada $1).
 - **Time charge alih-alih pot rake.** Pada stake lebih tinggi, room sering berhenti me-rake pot dan malah menarik biaya tetap — katakanlah $10–$15 per jam per pemain, diambil tiap setengah jam. Ini menguntungkan pemain yang memenangkan pot besar, walau yang Anda hemat adalah rake yang *sudah kena cap*, bukan sepotong pot: dengan cap $3–$6, pot $2.000 pun hanya melepas beberapa dolar.
 - **Dead drop.** Metode yang lebih jarang di mana hanya pemain di button yang membayar rake tetap tiap tangan, dikumpulkan sebelum kartu dibagikan — dirancang agar pemenang pot besar tidak dipajaki lebih dari siapa pun.
 

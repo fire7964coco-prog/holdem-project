@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler en sentido estricto, ibas por delante cuando entró el dinero; la baraja simplemente te traicionó al final. Duele, pero un goteo constante de bad beats suele significar que los rivales meten dinero por detrás — justo la partida en la que quieres estar.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 El que todavía me escuece: tenía pareja de ases, metí todas las fichas contra un rival que pagó con pareja de cincos y vi caer uno de los dos cincos que quedaban en el river. Lo había hecho todo bien. Mi dinero entró siendo mejor que 4 a 1 favorito, y aun así perdí todo el stack ante ==una de las dos cartas del mazo que podían batirme==. Eso es un bad beat, y si juegas al póker el tiempo suficiente, te pasará miles de veces.
 
-Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 80% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo una carta improbable dio la vuelta al resultado. Es una de las palabras que más se usan a la ligera en todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), así que aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats suelen ser *buena* señal.
+Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 80% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo un desarrollo improbable dio la vuelta al resultado. Es una de las palabras que más se usan a la ligera en todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), así que aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats suelen ser *buena* señal.
 
 ---
 
@@ -54,7 +54,7 @@ La gente usa "bad beat" y "cooler" como sinónimos, y no hay una frontera oficia
 |:---|:---|:---|
 | **Quién lideraba al entrar las fichas** | **Tú** eras el favorito (a menudo 80%+) | Ibas **por detrás** |
 | **¿Hubo un suckout?** | Sí — una carta afortunada le dio la vuelta | No — el líder lideró hasta el final |
-| **¿Podías haber foldeado?** | Da igual — ibas ganando | No — mano demasiado fuerte para tirar |
+| **¿Podías haber foldeado?** | Depende — el bad beat en sí no te dice si tu jugada se sostuvo | No — mano demasiado fuerte para tirar |
 | **Ejemplo clásico** | AA pierde cuando 7‑7 clava un trío | KK se topa con AA |
 | **La sensación** | "Me cazaron una carta" | "Nunca tuve opción" |
 

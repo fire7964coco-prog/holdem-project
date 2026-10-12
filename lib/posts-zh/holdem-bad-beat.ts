@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "bad beat（爆冷输牌／走背运）就是你作为大热门——通常 80% 或以上——把钱推进去，却因对手摸到一张幸运牌“suck out”逆袭你而输掉。跟严格意义上的 cooler 不同，钱推进去时你是领先的；只是这副牌在最后一刻背叛了你。它很扎心，但源源不断的 bad beat 通常说明对手在落后时把钱推进去——那正是你想坐的牌局。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 分钟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 那一手到现在还扎心：我拿着一对 A，全下对上一个用一对 5 跟注的对手，然后眼睁睁看着牌桌上仅剩两张 5 中的一张砸在了 river 河牌上。我什么都做对了。我的钱推进去时是超过 4:1 的热门，可我还是把整摞筹码输给了 ==这副牌里唯一能击败我的两张牌之一==。这就是 bad beat（爆冷输牌／走背运），只要你打扑克打得够久，它就会发生在你身上成千上万次。
 
-**bad beat** 就是你作为统计上的大热门把筹码推进去，却还是输了，因为你的对手摸到一张幸运牌对你 ==g:suck out（逆袭）== 了。关键词是*热门*——钱推进去时你是领先的，只有一张几乎不可能出现的牌才翻转了结果。它是整个 [扑克术语表](/zh/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") 里被滥用得最厉害的词之一，所以下面就讲清楚到底什么才算 bad beat、它跟 [cooler](/zh/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") 有什么区别、“bad beat jackpot”赔多少，以及每个赢家最终都会学到的那个反直觉的真相：bad beat 通常其实是个*好*信号。
+**bad beat** 就是你作为统计上的大热门把筹码推进去，却还是输了，因为你的对手摸到一张幸运牌对你 ==g:suck out（逆袭）== 了。关键词是*热门*——钱推进去时你是领先的，只有几乎不可能出现的牌面才翻转了结果。它是整个 [扑克术语表](/zh/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") 里被滥用得最厉害的词之一，所以下面就讲清楚到底什么才算 bad beat、它跟 [cooler](/zh/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") 有什么区别、“bad beat jackpot”赔多少，以及每个赢家最终都会学到的那个反直觉的真相：bad beat 通常其实是个*好*信号。
 
 ---
 
@@ -60,7 +60,7 @@ suckout 逆袭 | 那张翻转局面的幸运牌
 |:---|:---|:---|
 | **筹码推进去时谁领先** | **你**是热门（常常 80%+） | 你是**落后**的 |
 | **有没有发生 suckout？** | 有——一张幸运牌翻转了局面 | 没有——领先方全程领先 |
-| **你本可以弃牌吗？** | 无所谓——你本来是赢的 | 不行——牌太强弃不掉 |
+| **你本可以弃牌吗？** | 看情况——光凭 bad beat 本身，看不出你的打法站不站得住 | 不行——牌太强弃不掉 |
 | **典型例子** | AA 输给 7‑7 击中暗三条 | KK 撞上 AA |
 | **那种感觉** | “我被逆袭了” | “我从头到尾没机会” |
 

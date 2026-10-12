@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un bad beat (sale coup), c'est quand tu mets ton argent au milieu en gros favori, en général à 80 % ou plus, et que tu perds parce que l'adversaire touche la carte chanceuse qui le sauve. Contrairement au cooler au sens strict, tu étais devant au moment de la mise ; c'est le paquet qui t'a trahi à la fin. Ça pique, mais une série régulière de bad beats veut souvent dire que tes adversaires mettent leur argent en étant derrière, exactement la partie que tu veux jouer.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Celui qui me fait encore mal : j'avais une paire d'as, j'ai tout mis au milieu contre un joueur qui a suivi avec une paire de cinq, et j'ai vu l'un des deux derniers cinq s'écraser sur la river (la rivière). J'avais tout fait comme il faut. Mon argent est parti alors que j'étais favori à plus de 4 contre 1, et j'ai quand même perdu tout mon stack sur ==l'une des deux cartes du paquet qui pouvaient me battre==. C'est ça, un bad beat (sale coup), et si tu joues assez longtemps, ça t'arrivera des milliers de fois.
 
-Un **bad beat**, c'est quand tu mets tes jetons au milieu en gros favori statistique et que tu perds quand même, parce que l'adversaire touche une carte chanceuse : le ==g:suckout== (la carte miracle). Le mot clé, c'est *favori* : tu gagnais au moment où l'argent est entré, et seule une carte improbable a renversé le résultat. C'est l'un des mots les plus galvaudés de tout le [jargon du poker](/fr/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), alors voici précisément ce qui compte comme un bad beat, ce qui le distingue d'un [cooler](/fr/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), ce que paie un « bad beat jackpot », et la vérité contre-intuitive que tout joueur gagnant finit par apprendre : les bad beats sont en général *bon signe*.
+Un **bad beat**, c'est quand tu mets tes jetons au milieu en gros favori statistique et que tu perds quand même, parce que l'adversaire touche une carte chanceuse : le ==g:suckout== (la carte miracle). Le mot clé, c'est *favori* : tu gagnais au moment où l'argent est entré, et seul un board improbable a renversé le résultat. C'est l'un des mots les plus galvaudés de tout le [jargon du poker](/fr/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), alors voici précisément ce qui compte comme un bad beat, ce qui le distingue d'un [cooler](/fr/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), ce que paie un « bad beat jackpot », et la vérité contre-intuitive que tout joueur gagnant finit par apprendre : les bad beats sont en général *bon signe*.
 
 ---
 
@@ -54,7 +54,7 @@ Beaucoup emploient « bad beat » et « cooler » comme synonymes, et aucune fro
 |:---|:---|:---|
 | **Qui menait quand les jetons sont entrés** | **Toi**, tu étais favori (souvent 80 %+) | Tu étais **derrière** |
 | **Y a-t-il eu un suckout ?** | Oui, une carte chanceuse a tout renversé | Non, celui qui menait a mené jusqu'au bout |
-| **Pouvais-tu te coucher ?** | Peu importe, tu gagnais | Non, main trop forte pour être jetée |
+| **Pouvais-tu te coucher ?** | Ça dépend — le bad beat en lui-même ne dit rien de la solidité de ton jeu | Non, main trop forte pour être jetée |
 | **Exemple classique** | AA perd quand 7‑7 touche un brelan | KK tombe sur AA |
 | **Le ressenti** | « Je me suis fait rattraper » | « Je n'ai jamais eu ma chance » |
 

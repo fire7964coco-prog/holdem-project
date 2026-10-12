@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus den meisten Pots nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -69,7 +69,7 @@ Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede si
 Ein paar Regeln bestimmen, wie der Pot Rake tatsächlich abgeschöpft wird:
 
 - **No flop, no drop.** In den meisten Räumen nimmt das Haus **gar keinen Rake**, wenn die Hand vor dem Flop endet (der Jackpot-Drop läuft davon getrennt) – alle folden auf einen Preflop-Raise. (Nicht überall so: ein paar Seiten, allen voran GGPoker, raken manche Preflop-Pots, prüf also deinen Raum.)
-- **Das Rake-Cap.** Das Haus nimmt auf einem riesigen Pot nie den vollen Prozentsatz – es stoppt bei einem Maximum: live in deutschen Spielbanken **€10 bis €20**, online **$1–$3**. ==Steigen die Stakes, steigt auch das Cap – aber nicht proportional, sondern in groben Stufen==, sodass mehrere Stakes sich dasselbe Cap teilen. Die Rake-Tabelle der Spielbank Berlin zeigt genau das: bei den kleinsten Blinds liegt das Cap bei **€10**, und ab der nächsten Stufe bei **€20** – für alle höheren Limits gleich. Zusätzlich schrumpft es oft, wenn weniger Spieler ausgeteilt bekommen (ein Heads-up-Pot ist vielleicht bei $1 gecappt).
+- **Das Rake-Cap.** In den meisten Räumen nimmt das Haus auf einem riesigen Pot nicht den vollen Prozentsatz – es stoppt bei einem Maximum: live in deutschen Spielbanken **€10 bis €20**, online **$1–$3**. ==Steigen die Stakes, steigt auch das Cap – aber nicht proportional, sondern in groben Stufen==, sodass mehrere Stakes sich dasselbe Cap teilen. Die Rake-Tabelle der Spielbank Berlin zeigt genau das: bei den kleinsten Blinds liegt das Cap bei **€10**, und ab der nächsten Stufe bei **€20** – für alle höheren Limits gleich. Zusätzlich schrumpft es oft, wenn weniger Spieler ausgeteilt bekommen (ein Heads-up-Pot ist vielleicht bei $1 gecappt).
 - **Time Charge statt Pot Rake.** Bei höheren Stakes hören Räume oft auf, Pots zu raken, und kassieren stattdessen eine Pauschalgebühr – sagen wir $10–$15 pro Stunde pro Spieler, alle halbe Stunde genommen. Das ist ein **Fixkosten-Modell**: Wer viele Pots spielt, fährt damit besser; wer tight sitzt oder nur eine Stunde bleibt, zahlt relativ am meisten. Bei großen Pots ist die Ersparnis dagegen klein – gegen ein Cap von €20 hat ein €2.000-Pot ohnehin nur diese €20 abgegeben.
 - **Dead Drop.** Eine seltenere Methode, bei der nur der Spieler am Button jede Hand einen festen Rake zahlt, kassiert bevor die Karten ausgeteilt werden – so konzipiert, dass Gewinner großer Pots nicht stärker besteuert werden als alle anderen.
 

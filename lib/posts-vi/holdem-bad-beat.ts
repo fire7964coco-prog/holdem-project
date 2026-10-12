@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat là khi bạn đẩy tiền vào pot với lợi thế rất lớn, thường từ 80% trở lên, rồi thua vì đối thủ trúng lá bài may mắn — ở flop, turn hay river — sau khi tiền đã vào pot. Khác với cooler theo nghĩa chặt, lúc tiền vào pot bạn đang dẫn trước; chỉ là bộ bài phản bội bạn về sau. Cảm giác rất đau, nhưng nếu bad beat đến đều đặn thì thường là đối thủ đang bỏ tiền vào khi đã thua thế — đúng kiểu bàn bạn muốn ngồi.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Ván đến giờ vẫn còn nhói: tôi cầm đôi Át, all-in (tất tay) trước một người call (theo) bằng đôi 5, rồi nhìn một trong hai lá 5 cuối cùng đập xuống river. Tôi đã làm đúng mọi thứ. Tiền của tôi vào pot với lợi thế hơn 4:1, và tôi vẫn mất cả stack vào ==một trong hai lá bài trong bộ có thể đánh bại tôi==. Đó là một bad beat, và nếu bạn chơi poker đủ lâu, nó sẽ xảy ra với bạn hàng nghìn lần.
 
-**Bad beat** (thua ngược khi bạn đang nắm lợi thế áp đảo) là khi bạn đẩy chip vào pot với tư cách favorite (bên có cơ hội thắng cao hơn) áp đảo về mặt thống kê mà vẫn thua, vì đối thủ bắt được lá bài may mắn để ==g:suck out== bạn. Từ khóa là *favorite* — bạn đang thắng lúc tiền vào pot, và chỉ một lá bài khó xảy ra đã lật ngược kết quả. Đây là một trong những từ bị dùng quá tay nhất trong cả [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), nên bên dưới là chính xác cái gì được tính là bad beat, nó khác [cooler](/vi/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") ở đâu, "bad beat jackpot" trả gì, và sự thật ngược đời mà mọi người chơi thắng rồi sẽ học được: bad beat thường là dấu hiệu *tốt*.
+**Bad beat** (thua ngược khi bạn đang nắm lợi thế áp đảo) là khi bạn đẩy chip vào pot với tư cách favorite (bên có cơ hội thắng cao hơn) áp đảo về mặt thống kê mà vẫn thua, vì đối thủ bắt được lá bài may mắn để ==g:suck out== bạn. Từ khóa là *favorite* — bạn đang thắng lúc tiền vào pot, và chỉ một runout khó xảy ra đã lật ngược kết quả. Đây là một trong những từ bị dùng quá tay nhất trong cả [bảng từ poker](/vi/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), nên bên dưới là chính xác cái gì được tính là bad beat, nó khác [cooler](/vi/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") ở đâu, "bad beat jackpot" trả gì, và sự thật ngược đời mà mọi người chơi thắng rồi sẽ học được: bad beat thường là dấu hiệu *tốt*.
 
 ---
 
@@ -54,7 +54,7 @@ Người ta dùng "bad beat" và "cooler" (tay bài quá mạnh để fold nhưn
 |:---|:---|:---|
 | **Ai dẫn lúc chip vào pot** | **Bạn** là favorite (thường 80%+) | Bạn **bị dẫn** |
 | **Có suckout không?** | Có — một lá bài may mắn lật ngược | Không — bên dẫn trước giữ thế dẫn đến cuối |
-| **Bạn có fold được không?** | Không quan trọng — bạn đang thắng | Không — tay quá mạnh để fold |
+| **Bạn có fold được không?** | Tùy — bản thân bad beat không cho biết nước đi của bạn có đứng vững không | Không — tay quá mạnh để fold |
 | **Ví dụ kinh điển** | AA thua khi 7‑7 trúng set | KK gặp AA |
 | **Cảm giác** | "Tôi bị thua ngược" | "Tôi chưa từng có cơ hội" |
 

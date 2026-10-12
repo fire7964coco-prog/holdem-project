@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -62,7 +62,7 @@ Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos st
 Algumas regras governam como o rake do pote é de fato tirado:
 
 - **No flop, no drop.** Na maioria das salas, se a mão acaba antes do flop — todo mundo folda para um aumento no preflop — a casa não tira **nenhum rake**. (Não é universal: alguns sites, notadamente o GGPoker, tiram rake de alguns potes preflop, então cheque a sua sala.)
-- **O cap do rake.** A casa nunca tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps sobem quando os stakes sobem, mas não de forma proporcional — eles se movem em degraus, então vários stakes costumam compartilhar o mesmo cap. Além disso, frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
+- **O cap do rake.** Na maioria das salas, a casa não tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps sobem quando os stakes sobem, mas não de forma proporcional — eles se movem em degraus, então vários stakes costumam compartilhar o mesmo cap. Além disso, frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
 - **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de tirar rake dos potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, embora o que você economize seja o rake *no cap*, não uma fatia do pote: contra um cap de $3–$6, um pote de $2.000 só deixaria alguns dólares.
 - **Dead drop.** Um método menos comum em que só o jogador no botão paga um rake fixo por mão, recolhido antes de as cartas serem distribuídas — feito para que os vencedores de potes grandes não sejam taxados mais do que os outros.
 

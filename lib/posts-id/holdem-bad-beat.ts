@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler dalam arti ketat, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi aliran bad beat yang terus-menerus biasanya berarti lawan memasukkan uang saat tertinggal — jenis permainan yang memang Anda cari.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Yang masih perih sampai sekarang: saya pegang pocket aces, all-in melawan pemain yang call dengan pocket fives, dan menyaksikan salah satu dari dua five terakhir menghantam river. Saya sudah melakukan semuanya dengan benar. Uang saya masuk sebagai favorit lebih dari 4:1, dan saya tetap kehilangan seluruh stack ke ==salah satu dari dua kartu di dek yang bisa mengalahkan saya==. Itulah bad beat, dan jika Anda cukup lama bermain poker, itu akan terjadi pada Anda ribuan kali.
 
-Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya sebuah kartu yang tak terduga yang membalikkan hasilnya. Ini salah satu kata yang paling sering dipakai serampangan di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi berikut persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat biasanya adalah tanda yang *bagus*.
+Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya sebuah runout yang tak terduga yang membalikkan hasilnya. Ini salah satu kata yang paling sering dipakai serampangan di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi berikut persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat biasanya adalah tanda yang *bagus*.
 
 ---
 
@@ -54,7 +54,7 @@ Orang memakai "bad beat" dan "cooler" secara bergantian, dan tak ada satu garis 
 |:---|:---|:---|
 | **Siapa unggul saat chip masuk** | **Anda** yang favorit (sering 80%+) | Anda **tertinggal** |
 | **Apakah suckout terjadi?** | Ya — kartu beruntung membalikkannya | Tidak — pemimpin unggul sepanjang jalan |
-| **Bisakah Anda fold?** | Tak masalah — Anda sedang menang | Tidak — tangan terlalu kuat untuk fold |
+| **Bisakah Anda fold?** | Tergantung — bad beat itu sendiri tidak memberi tahu apakah permainan Anda bertahan | Tidak — tangan terlalu kuat untuk fold |
 | **Contoh klasik** | AA kalah saat 7‑7 memasang set | KK bertemu AA |
 | **Rasanya** | "Saya di-outdraw" | "Saya tak pernah punya peluang" |
 
