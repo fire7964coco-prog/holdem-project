@@ -66,6 +66,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Pautan Kongsi Spot", "yes", "Buka spot yang sama pada peranti lain melalui pautan"],
   ["Spot belajar siap dikira", "yes", "Lihat strategi serta-merta tanpa menunggu pengiraan"],
   ["Kajian flop — strategi flop yang dikira awal", "yes", "Pilih spot, posisi dan flop; grid dipaparkan serta-merta tanpa menunggu · flop sahaja · saiz bet tetap (flop 33% / 75%, raise 60%)"],
+  ["Laporan flop — strategi purata mengikut kumpulan board", "yes", "1,755 flop diberi pemberat mengikut kekerapan · keputusan pertama dan selepas check · kumpul ikut kad tertinggi, suit, pair, kesambungan · saiz bet tetap"],
   ["Trainer GTO dengan pemarkahan", "yes", "Analisis kelemahan dan ulang kaji berdasarkan kerugian EV"],
   ["Latihan daripada spot yang anda kira", "yes", "Jadikan hasil pengiraan sebagai soalan Spot saya; soalan dan rekod latihannya disimpan pada peranti ini sahaja, walaupun selepas log masuk"],
 ];

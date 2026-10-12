@@ -108,6 +108,7 @@ const jsonLd = {
         "Precision modes (32-bit float / 16-bit integer) and target exploitability",
         "Pre-solved study spots that open instantly",
         "Flop study — precomputed flop strategies for the spot, seats and board you choose (flop only, fixed bet sizes)",
+        "Flop reports — bet frequencies and EV averaged over 1,755 precomputed flops (weighted by how often each comes up), compared by board group",
         "GTO Trainer that grades decisions by EV loss relative to the pot",
         "CSV export of the summary and shareable spot links",
         "Runs in the browser via WebAssembly — no install, no account",

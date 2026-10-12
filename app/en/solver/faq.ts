@@ -67,6 +67,10 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     a: "Yes — open «Flop study» in the sidebar. These are precomputed results, so they appear with no wait. Choose «Open · Call», «3-bet pot» or «4-bet pot», pick the seats and a three-card flop, and you get the action frequencies of the player who acts first plus a 13×13 strategy and range grid; click an action to follow the line until the flop ends. The basis is 6-max 100bb with a 0.3% target error, and every ready spot covers all 1,755 distinct flops (grouped by suit isomorphism). Bet sizes are fixed at 33% and 75% on the flop with 60% raises, and nothing from the turn onward is stored. Seat combinations not yet computed show «Coming soon». For other sizes or the turn and river, use «Open in solver» and solve it yourself.",
   },
   {
+    q: "Can I see at a glance which boards get bet the most?",
+    a: "Yes — open «Flop reports» in the sidebar. Pick a spot and the seats, and you get bet frequencies and EV averaged over 1,755 precomputed flops, weighted by how often each flop actually comes up. It covers two decisions: the first decision of the player who acts first, and the in-position player's decision after a check. Group by «High card», «Suits», «Pairing» or «Connectedness» to compare where betting goes up or down, and click a row to open that flop in «Flop study». The base is 6-max 100bb with a 0.3% target error, and bet sizes are fixed at 33% and 75% on the flop. Spots that haven't been precomputed yet aren't available.",
+  },
+  {
     q: "How is this different from GTO Wizard or PioSOLVER?",
     a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard are mainly for browsing spots that were solved in advance, which is fast and covers preflop (GTO Wizard also offers custom solving). Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
   },

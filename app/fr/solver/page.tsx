@@ -129,6 +129,7 @@ const jsonLd = {
         "Modes de précision (flottant 32 bits / entier 16 bits) et exploitabilité cible",
         "Spots d'étude précalculés, résultats au clic",
         "Étudier un flop — stratégies de flop précalculées pour le spot, les positions et le board choisis (flop uniquement, sizings fixes)",
+        "Rapports de flop — fréquence de mise et EV moyennées sur 1 755 flops précalculés (pondérés par fréquence), comparées par groupe de boards",
         "Trainer GTO qui note tes décisions sur la perte d'EV par rapport au pot",
         "Onglets intégrés Charts préflop et calculateur d'Equity",
         "Export CSV du récapitulatif, lien de partage de spot",

@@ -165,6 +165,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Tautan Bagikan Spot", "yes", "Spot yang sama terbuka di perangkat teman belajar Anda"],
   ["Spot belajar yang sudah dihitung", "yes", "Hasil langsung tampil saat diklik, tanpa menunggu"],
   ["Studi flop — strategi flop yang sudah dihitung sebelumnya", "yes", "Pilih spot, posisi, dan flop, grid langsung tampil tanpa menunggu · hanya flop · ukuran bet tetap (flop 33% / 75%, raise 60%)"],
+  ["Laporan flop — strategi rata-rata per kelompok board", "yes", "1.755 flop dibobot menurut frekuensi · keputusan pertama dan setelah check · kelompokkan menurut kartu tertinggi, suit, pair, keterhubungan · ukuran bet tetap"],
   ["Trainer GTO dengan skor EV", "yes", "Termasuk analisis titik lemah dan tombol Tinjau ulang"],
   ["Latihan dengan spot hasil hitungan Anda sendiri", "yes", "Sekali klik di layar hasil menyimpan spot itu menjadi soal Trainer · hanya di perangkat ini"],
 ];

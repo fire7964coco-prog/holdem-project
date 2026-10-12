@@ -109,6 +109,10 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
     a: "Ja, unter «Flops studieren» in der Seitenleiste. Die Ergebnisse sind vorberechnet und erscheinen daher ohne Wartezeit. Du wählst «Open · Call», «3-Bet-Pot» oder «4-Bet-Pot», die Positionen und die drei Flop-Karten und siehst die Aktionshäufigkeiten des Spielers, der zuerst handelt, dazu die 13×13-Matrix für Strategie und Range; tippst du auf eine Aktion, folgst du der Linie bis zum Ende des Flops. Grundlage ist 6-max mit 100bb und 0,3% Zielfehler, und jeder verfügbare Spot enthält alle 1.755 unterschiedlichen Flops (nach gleichwertigen Farben zusammengefasst). Die Bet-Sizes sind fest (33% und 75% am Flop, Raises 60%); ab dem Turn ist nichts gespeichert. Positionskombinationen, die noch nicht berechnet sind, stehen auf «In Arbeit». Für andere Größen oder Turn und River nimmst du «Im Solver öffnen» und rechnest selbst.",
   },
   {
+    q: "Kann ich auf einen Blick sehen, auf welchen Boards am meisten gesetzt wird?",
+    a: "Ja, unter «Flop-Reports» in der Seitenleiste. Du wählst Spot und Positionen und siehst Bet-Häufigkeit und EV, gemittelt über 1.755 vorberechnete Flops und danach gewichtet, wie oft jeder Flop tatsächlich fällt. Abgedeckt sind zwei Entscheidungen: die erste Entscheidung des Spielers, der zuerst handelt, und die des Spielers in Position nach einem Check. Gruppierst du nach «Höchste Karte», «Farben», «Paarung» oder «Konnektivität», vergleichst du, auf welchen Boards mehr oder weniger gesetzt wird, und ein Klick auf eine Zeile öffnet diesen Flop in «Flops studieren». Grundlage ist 6-max mit 100bb und 0,3% Zielfehler; die Bet-Sizes sind fest (33% und 75% am Flop). Noch nicht vorberechnete Spots sind nicht verfügbar.",
+  },
+  {
     // 🟢 정합성 렌즈 반영(2026-08-24) — H2와 문항이 축어 동일했다(H2/FAQ 중복 금지 · de-core §7-6).
     //    문항을 변형형으로 갈랐다.
     q: "Worin unterscheidet er sich von GTO Wizard und PioSOLVER?",

@@ -147,6 +147,7 @@ const jsonLd = {
         "Modos de precisão (ponto flutuante 32 bits / inteiro 16 bits) e exploitabilidade alvo",
         "Spots de estudo já calculados que abrem na hora",
         "Estudar flop — estratégias de flop pré-calculadas para o spot, as posições e o board que você escolher (só flop, tamanhos de aposta fixos)",
+        "Relatórios de flop — frequência de aposta e EV médios em 1.755 flops pré-calculados (ponderados pela frequência), comparados por grupo de board",
         "Treinador GTO que pontua a perda de EV em relação ao pote",
         "Exportação do resumo em CSV e link para compartilhar um spot",
         "Roda no navegador com WebAssembly — sem instalação e sem conta",

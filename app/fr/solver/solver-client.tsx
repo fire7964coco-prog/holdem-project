@@ -178,6 +178,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Lien de partage de spot", "yes", "Le même spot s'ouvre chez ton partenaire d'étude"],
   ["Spots d'étude précalculés", "yes", "Résultats au clic, sans attendre"],
   ["Étudier un flop — stratégies de flop précalculées", "yes", "Tu choisis le spot, les positions et le flop, la matrice s'affiche sans attendre · flop uniquement · sizings fixes (flop 33 % / 75 %, raise 60 %)"],
+  ["Rapports de flop — stratégie moyenne par groupe de boards", "yes", "1 755 flops pondérés par fréquence · première décision et après un check · grouper par carte haute, couleurs, paires, connectivité · sizings fixes"],
   ["Trainer GTO avec notation", "yes", "Analyse des points faibles et bouton Révision inclus"],
   ["Travailler tes propres spots calculés", "yes", "Un clic sur l'écran de résultats les transforme en exercices du Trainer · sur cet appareil uniquement"],
 ];

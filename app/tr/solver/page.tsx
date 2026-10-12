@@ -90,6 +90,7 @@ const jsonLd = {
         "Hassasiyet modları (32-bit float / 16-bit integer) ve hedef exploitability",
         "Anında açılan, önceden çözülmüş çalışma spotları",
         "Flop çalışması — seçtiğin spot, pozisyonlar ve board için önceden hesaplanmış flop stratejileri (yalnızca flop, sabit bet boyutları)",
+        "Flop raporları — önceden hesaplanmış 1.755 flop üzerinden görülme sıklığına göre ağırlıklandırılmış ortalama bet sıklığı ve EV, board gruplarına göre karşılaştırma",
         "Kararları pota göre EV kaybıyla puanlayan GTO Trainer",
         "Özetin CSV olarak dışa aktarılması ve paylaşılabilir spot linkleri",
         "WebAssembly ile tarayıcıda çalışır — kurulum yok, hesap yok",

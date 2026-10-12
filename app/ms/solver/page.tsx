@@ -68,6 +68,7 @@ const jsonLd = {
         "Mod ketepatan float 32-bit atau integer 16-bit dan sasaran exploitability",
         "Spot belajar yang sudah dikira untuk melihat hasil dengan segera",
         "Kajian flop — strategi flop yang dikira awal bagi spot, posisi dan board yang anda pilih (flop sahaja, saiz bet tetap)",
+        "Laporan flop — kekerapan bet dan EV purata bagi 1,755 flop yang dikira awal (diberi pemberat mengikut kekerapan), dibandingkan mengikut kumpulan board",
         "Trainer GTO dengan penilaian kerugian EV berbanding saiz pot",
         "Tab Carta preflop dan kalkulator Equity",
         "Eksport ringkasan CSV, import dan eksport JSON, serta pautan Kongsi Spot",

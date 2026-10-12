@@ -115,6 +115,10 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
     a: "Dá, em «Estudar flop» na barra lateral. São resultados pré-calculados, então aparecem na hora. Você escolhe «Open · Call», «Pote 3-bet» ou «Pote 4-bet», as posições e as três cartas do flop, e vê as frequências de ação de quem age primeiro junto com a matriz 13×13 de estratégia e de range; ao tocar numa ação, segue a linha até o flop terminar. A base é 6-max com 100bb e erro alvo de 0,3%, e cada spot disponível tem os 1.755 flops distintos calculados (agrupados por naipes equivalentes). Os tamanhos são fixos — 33% e 75% no flop, raises de 60% — e nada a partir do turn fica salvo. Combinações de posições que ainda não foram calculadas aparecem como «Em breve». Para outros tamanhos ou para turn e river, use «Abrir no solver» e calcule você mesmo.",
   },
   {
+    q: "Dá para ver de relance em quais boards se aposta mais?",
+    a: "Dá, em «Relatórios de flop» na barra lateral. Você escolhe o spot e as posições e vê a média da frequência de aposta e do EV em 1.755 flops pré-calculados, ponderados pela frequência com que cada flop realmente sai. São duas decisões: a primeira decisão de quem age primeiro e a do jogador em posição após um check. Agrupando por «Carta alta», «Naipes», «Pares» ou «Conexão», você compara em quais boards a aposta sobe ou cai, e ao tocar numa linha esse flop abre em «Estudar flop». A base é 6-max com 100bb e erro alvo de 0,3%, e os tamanhos de aposta são fixos: 33% e 75% no flop. Spots que ainda não foram pré-calculados não aparecem.",
+  },
+  {
     q: "Qual é a diferença para o GTO Wizard ou o PioSOLVER?",
     a: "Está em onde e quando o cálculo acontece. Aqui a solução é calculada no seu aparelho, na hora, com os ranges e a árvore que você escrever. As plataformas de consulta servem principalmente para ver soluções calculadas de antemão, dentro do catálogo que publicam (o GTO Wizard também oferece cálculo personalizado). O PioSOLVER é um programa que se instala e calcula na sua própria máquina, principalmente no Windows. Não é melhor nem pior: resolvem necessidades diferentes.",
   },

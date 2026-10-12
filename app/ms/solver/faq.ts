@@ -43,6 +43,10 @@ export const SOLVER_FAQ_MS: FaqItem[] = [
     a: "Boleh, melalui Kajian flop di bar sisi. Ini keputusan yang dikira awal, jadi ia dipaparkan tanpa menunggu. Pilih Open · Call, Pot 3-bet atau Pot 4-bet, tetapkan posisi dan tiga kad flop, kemudian anda akan melihat kekerapan tindakan pemain yang bertindak dahulu bersama grid 13×13 untuk strategi dan range; klik satu tindakan untuk mengikut aliran itu sehingga flop tamat. Asasnya 6-max 100bb dengan ralat sasaran 0.3%, dan setiap spot yang tersedia sudah mengira kesemua 1,755 flop yang berbeza (dikumpulkan mengikut sut yang setara). Saiz bet ditetapkan — 33% dan 75% pada flop, raise 60% — dan permainan dari turn tidak disimpan. Gabungan posisi yang belum dikira ditandakan Akan datang. Untuk saiz lain atau turn dan river, gunakan Buka dalam solver dan kira sendiri.",
   },
   {
+    q: "Bolehkah saya melihat sepintas lalu board mana yang paling kerap di-bet?",
+    a: "Boleh, melalui Laporan flop di bar sisi. Pilih spot dan posisi, kemudian anda akan melihat kekerapan bet dan EV purata bagi 1,755 flop yang dikira awal, diberi pemberat mengikut kekerapan setiap flop benar-benar muncul. Ia meliputi dua keputusan: keputusan pertama pemain yang bertindak dahulu, dan keputusan pemain in position selepas check. Kumpulkan mengikut Kad tertinggi, Suit, Pair atau Kesambungan untuk membandingkan board mana yang lebih kerap atau kurang kerap di-bet, dan klik satu baris untuk membuka flop itu dalam Kajian flop. Asasnya 6-max 100bb dengan ralat sasaran 0.3%, dan saiz bet ditetapkan: 33% dan 75% pada flop. Spot yang belum dikira awal tidak tersedia.",
+  },
+  {
     q: "Sejauh manakah ketepatan solver dalam pelayar?",
     a: "Solver melakukan pengiraan berulang ke arah sasaran exploitability yang anda tetapkan. Sasaran lebih rendah memerlukan lebih banyak masa pengiraan; semak nilai exploitability akhir kerana pengiraan juga boleh berhenti apabila had iterasi dicapai. Ketepatan perlu dibaca dalam konteks range dan pokok keputusan yang anda masukkan. Pokok yang sangat besar memerlukan lebih banyak memori dan mungkin lebih sesuai dikira dengan solver desktop.",
   },

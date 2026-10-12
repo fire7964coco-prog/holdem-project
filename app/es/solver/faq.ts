@@ -100,6 +100,10 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
     a: "Sí, en «Estudiar flop» de la barra lateral. Son resultados precalculados, así que aparecen sin esperar. Eliges «Open · Call», «Bote 3-bet» o «Bote 4-bet», las posiciones y las tres cartas del flop, y ves las frecuencias de acción de quien habla primero junto con la matriz 13×13 de estrategia y de rango; al tocar una acción sigues la línea hasta que termina el flop. La base es 6-max a 100bb con error objetivo del 0.3%, y cada spot disponible tiene calculados los 1,755 flops distintos (agrupados por palos equivalentes). Los tamaños son fijos —33% y 75% en el flop, raises del 60%— y del turn en adelante no se guarda nada. Las combinaciones de posiciones que aún no están calculadas aparecen como «Próximamente». Para otros tamaños o para turn y river, usa «Abrir en el solver» y calcúlalo tú mismo.",
   },
   {
+    q: "¿Puedo ver de un vistazo en qué boards se apuesta más?",
+    a: "Sí, en «Informes de flop» de la barra lateral. Eliges el spot y las posiciones y ves la frecuencia de apuesta y el EV promediados en 1,755 flops precalculados, ponderados según la frecuencia con la que sale cada flop. Cubre dos decisiones: la primera decisión de quien habla primero y la del jugador en posición tras un check. Si agrupas por «Carta alta», «Palos», «Parejas» o «Conexión», comparas en qué boards se apuesta más o menos, y al tocar una fila se abre ese flop en «Estudiar flop». La base es 6-max a 100bb con error objetivo del 0.3%, y los tamaños de apuesta son fijos: 33% y 75% en el flop. Los spots que aún no están precalculados no se pueden ver.",
+  },
+  {
     q: "¿En qué se diferencia de GTO Wizard o PioSOLVER?",
     a: "En dónde y cómo se calcula. Aquí la solución se calcula en tu dispositivo en el momento, con los rangos y el árbol que tú escribas. Las plataformas de consulta sirven sobre todo para ver soluciones ya calculadas de antemano, dentro del catálogo que publican (GTO Wizard también ofrece cálculo personalizado). PioSOLVER es un programa que se instala y calcula en tu propia máquina, principalmente en Windows. No son mejores o peores: resuelven necesidades distintas.",
   },
