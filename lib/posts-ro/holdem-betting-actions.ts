@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Acțiunile de pariere la Texas Hold'em: check, call, raise, fold",
   seoTitle: "Check, call sau fold? — Acțiunile de pariere la poker",
   desc: "E rândul tău și rămâi blocat? Iată ce înseamnă check, call, raise și fold la poker, regula min-raise și de câte ori poți relansa într-o mână.",
-  tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, asta se întâmplă doar dacă ești big blind.",
+  tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare completă) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, de regulă, asta se întâmplă doar dacă ești big blind (sau jucătorul care a pus un straddle viu).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -38,7 +38,7 @@ La Texas Hold'em există doar ==5 acțiuni de pariere==, dar regulile din jurul 
 :::stripe
 5 | acțiuni de pariere: check, pariu, call, raise, fold
 1 BB | pariul minim de deschidere în No-Limit Hold'em
-= ultima relansare | mărimea minimă a re-relansării (regula incrementului)
+= ultima relansare completă | mărimea minimă a re-relansării (regula incrementului)
 Fără plafon | la re-relansări în No-Limit — poți relansa până când cineva intră all-in
 :::
 
@@ -49,10 +49,10 @@ Fiecare decizie pe care o iei la o masă de poker e una dintre acestea cinci:
 | Acțiune | Când e disponibilă | Cost în jetoane |
 |--------|---------------|-----------|
 | Fold (a renunța) | Oricând e rândul tău | Gratis — dar pierzi jetoanele deja puse în pot |
-| Check | Doar dacă în fața ta nu stă un pariu activ (preflop: doar ca big blind) | Gratis — pasezi fără să adaugi jetoane |
+| Check | Doar dacă în fața ta nu stă un pariu activ (preflop: ca big blind sau ca jucătorul care a pus un straddle viu) | Gratis — pasezi fără să adaugi jetoane |
 | Call (a plăti) | După ce cineva a pariat sau a relansat | Egalezi exact pariul curent |
 | Pariu (bet) | Primul pariu al rundei | Suma pe care o alegi (minim = 1 big blind) |
-| Raise (a mări) | După ce cineva a pariat | Cel puțin cât ultimul pariu sau ultima relansare, pe deasupra |
+| Raise (a mări) | După ce cineva a pariat | Cel puțin cât ultimul pariu sau ultima relansare completă, pe deasupra |
 
 A intra ==all-in== nu e o a șasea acțiune separată — e un pariu, un call sau un raise cu toate jetoanele care ți-au rămas. Revenim la asta mai jos.
 
@@ -85,13 +85,13 @@ Pentru tabloul complet, stradă cu stradă, despre cine acționează și când, 
 
 ## Ce înseamnă call la poker? (check vs call)
 
-Call (sau a plăti) înseamnă că ==egalezi exact pariul curent== ca să rămâi în mână. Cineva pariază $10, tu plătești $10 — nici mai mult, nici mai puțin.
+Call (sau a plăti) înseamnă că ==egalezi exact pariul curent== ca să rămâi în mână. Cineva pariază $10, tu plătești $10 — nici mai mult, nici mai puțin. (Dacă ți-au rămas mai puțin de $10, poți plăti oricum: intri all-in cu cât ai.)
 
 Check vs call e cea mai frecventă confuzie de începător, așa că iată distincția clară:
 
 | | Check | Call |
 |-|-------|------|
-| Când există | În fața ta nu stă un pariu activ (preflop: doar ca big blind) | Cineva a pariat înaintea ta |
+| Când există | În fața ta nu stă un pariu activ (preflop: ca big blind sau ca jucătorul care a pus un straddle viu) | Cineva a pariat înaintea ta |
 | Cost în jetoane | Gratis | Egalezi pariul curent |
 | Ce spune | "Pasez, rămân în joc" | "Plătesc ca să continui" |
 
@@ -116,7 +116,7 @@ O regulă de etichetă live: nu da fold ==în afara rândului==. Așteaptă ca a
 În No-Limit Hold'em (formatul pe care îl vei juca aproape mereu):
 
 - **Pariul minim**: 1 big blind
-- **Relansarea minimă (min-raise)**: cel puțin ==mărimea pariului sau a relansării precedente== adăugată pe deasupra
+- **Relansarea minimă (min-raise)**: cel puțin ==mărimea ultimului pariu sau a ultimei relansări complete== adăugată pe deasupra
 - **Maximul**: tot stack-ul tău — acesta e "no limit"-ul
 
 Două exemple lucrate:
@@ -126,11 +126,11 @@ Două exemple lucrate:
 | Flop | Un jucător pariază $6 | $6 în plus → $12 în total |
 | Preflop (blind-uri $1/$2) | Un jucător relansează la $6 (o relansare de $4 peste blindul de $2) | $4 în plus → $10 în total |
 
-Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultimei relansări, nu big blind-ul. Preflop, big blind-ul contează ca pariu de deschidere, motiv pentru care cea mai mică relansare de deschidere e la 2 big blind-uri.
+Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultimei relansări complete, nu big blind-ul. („Complet" contează când cineva intră all-in pentru mai puțin decât o relansare: după un pariu de $10 și un all-in de $14, incrementul de egalat rămâne $10, deci cea mai mică relansare e la $24.) Preflop, big blind-ul contează ca pariu de deschidere, motiv pentru care cea mai mică relansare de deschidere e la 2 big blind-uri.
 
 Două reguli de poker live care vin la pachet cu relansarea:
 
-1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: să pui jetoane în mai multe mișcări **fără** să anunți întâi "raise" (==regula 103 din regulamentul de turnee WSOP==).
+1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: un pariu sau un raise făcut în mai multe mișcări care includ o întoarcere la stack, **fără** să anunți întâi "raise" — sau un gest înșelător menit să provoace o acțiune în afara rândului (==regula 103 din regulamentul de turnee WSOP==).
 2. **O singură mișcare.** Dacă nu anunți, jetoanele trebuie să intre printr-o unică mișcare înainte.
 
 *Cât* ar trebui să relansezi (deschideri de 2,5x, 3-bet-uri de 3x, sizing în funcție de textura boardului) ține de strategie, nu de reguli — asta e altă discuție.
@@ -143,7 +143,7 @@ Două reguli de poker live care vin la pachet cu relansarea:
 
 Rămân totuși două limite:
 
-- Fiecare re-relansare trebuie să respecte ==regula incrementului minim== de mai sus
+- Fiecare re-relansare trebuie să respecte ==regula incrementului minim== de mai sus — singura excepție e all-in-ul, care poate fi mai mic
 - ==r:Nu îți poți relansa propriul pariu.== Dacă pariezi și toți doar plătesc, runda se încheie — poți relansa din nou doar dacă cineva te relansează *pe tine* mai întâi
 
 În jocurile **Fixed-Limit** fiecare rundă e plafonată (pot "plafonat"). Regulile de turneu WSOP fixează plafonul la ==un pariu plus patru relansări== (regula 100.b) — iar excepția merge invers față de ce se așteaptă aproape toată lumea: ==r:plafonul rămâne chiar dacă în mână au mai rămas doar doi jucători==. Cade abia când **întreg turneul** ajunge heads-up. La cash contează regulile casei, așa că întreabă dealerul.
@@ -152,7 +152,7 @@ Rămân totuși două limite:
 
 ## Ce înseamnă să intri all-in?
 
-All-in înseamnă să pariezi ==toate jetoanele care ți-au rămas==. Poți face asta oricând e rândul tău — ca pariu, ca call sau ca raise.
+All-in înseamnă să pariezi ==toate jetoanele care ți-au rămas==. Poți face asta când e rândul tău, ca pariu, call sau raise — oricare dintre ele îți e permisă în acel moment.
 
 Dacă all-in-ul tău e *mai mic* decât pariul curent, nu ești eliminat: pur și simplu concurezi pentru un ==pot principal== limitat la contribuția ta, în timp ce jetoanele în plus de la stack-urile mai mari formează un ==side pot (pot secundar)== pe care nu îl poți câștiga. Iar un all-in *mai mic decât un min-raise complet* de regulă nu redeschide relansarea pentru jucătorii care au acționat deja — o regulă subtilă care îi surprinde și pe cei experimentați.
 
@@ -174,11 +174,11 @@ Joc săptămânal o partidă live la mize mici, iar aceleași greșeli de acțiu
 
 ### Greșeala 1 — Să plătești când ai putea da check
 
-Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge jetoane **în tăcere**, "ca să dea call". Nu ai ce plăti: conform ==regulii 90.a WSOP== se pariază prin declarație *sau* împingând jetoane — tocmai a pariat fără să vrea. Dacă ar fi *spus* "call", ==regula 90.b.1== ar fi făcut din asta un check. Când strada e încă nedeschisă, dă check și vezi cartea gratis.
+Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge jetoane **în tăcere**, "ca să dea call". Nu ai ce plăti: conform ==regulii 90.a WSOP== se pariază prin declarație *sau* împingând jetoane — tocmai a pariat fără să vrea. Dacă ar fi *spus* "call", ==regula 90.b.1== ar fi făcut din asta un check. Când strada e încă nedeschisă, dă check — dacă nimeni din spatele tău nu pariază, vezi următoarea carte gratis.
 
-### Greșeala 2 — String raise-ul
+### Greșeala 2 — "Plătesc... de fapt, raise!"
 
-"Plătesc... de fapt, raise!" Nici gând. La pokerul live acțiunea ta se fixează în clipa în care o anunți. Am văzut dealeri judecând asta drept un simplu call, la jumătatea propoziției, de mai multe ori decât pot număra. Anunță "raise" *întâi*, apoi mișcă jetoanele.
+"Plătesc... de fapt, raise!" Nici gând. La pokerul live acțiunea ta se fixează în clipa în care o anunți: conform ==regulii 90.d==, o declarație verbală făcută la rândul tău e obligatorie. (Asta nu e string bet, apropo; string bet-ul e împingerea în mai multe mișcări cu întoarcere la stack, explicată în FAQ. Rezultatul e totuși același: contează primul cuvânt.) Am văzut dealeri judecând asta drept un simplu call, la jumătatea propoziției, de mai multe ori decât pot număra. Anunță "raise" *întâi*, apoi mișcă jetoanele.
 
 ### Greșeala 3 — Big blind-ul care aruncă un flop gratis
 
@@ -203,11 +203,11 @@ A. Da — dacă cineva pariază după check-ul tău, poți relansa când acțiun
 
 **Q. Îți poți relansa propriul pariu?**
 
-A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — runda de pariere se încheie. Poți relansa din nou doar dacă un alt jucător te relansează pe tine mai întâi, ceea ce redeschide acțiunea.
+A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — runda de pariere se încheie. La No-Limit și Pot-Limit poți relansa din nou doar dacă acțiunea revine la tine și ai în față cel puțin o relansare completă peste pariul tău — fie că a făcut-o un singur jucător, fie că se adună din mai multe all-in-uri scurte; un singur all-in mai mic decât o relansare completă nu redeschide acțiunea. La Fixed-Limit ștacheta e mai jos: o redeschide un all-in de cel puțin 50% dintr-un pariu sau o relansare completă (TDA 2024, regula 47-B).
 
 **Q. De câte ori poți relansa la Texas Hold'em?**
 
-A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când un jucător intră all-in, atâta timp cât fiecare relansare respectă incrementul minim. La Fixed-Limit, regulile de turneu WSOP plafonează runda la un pariu plus patru relansări (regula 100.b), iar plafonul rămâne chiar dacă în mână au mai rămas doi jucători.
+A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când un jucător intră all-in, atâta timp cât fiecare relansare respectă incrementul minim (all-in-ul poate fi mai mic). La Fixed-Limit, regulile de turneu WSOP plafonează runda la un pariu plus patru relansări (regula 100.b), iar plafonul rămâne chiar dacă în mână au mai rămas doi jucători — cade abia când întreg turneul ajunge heads-up.
 
 **Q. Poți da fold în afara rândului?**
 
@@ -215,7 +215,7 @@ A. Nu ar trebui. Acțiunea trebuie să se desfășoare în sensul acelor de ceas
 
 **Q. Poți da check preflop?**
 
-A. Doar ca big blind și doar dacă nimeni nu a relansat. BB-ul a pus deja un pariu viu, așa că poate da check și vede flopul gratis. Orice altă poziție preflop trebuie să plătească, să relanseze sau să renunțe.
+A. Doar dacă propria ta miză obligatorie e pariul viu complet pe care toți ceilalți trebuie să-l egaleze și nimeni nu a relansat — de regulă big blind-ul când nimeni nu a pus straddle, sau jucătorul cu straddle viu când cineva l-a pus (regulile 159 și 165 din WSOP Live Action Rules): miza aceea contează drept pariul tău de deschidere, așa că poți da check și vezi flopul gratis. Jumătatea de pariu a small blind-ului nu contează niciodată, iar într-un pot cu straddle big blind-ul e doar încă un jucător care are un pariu în față — orice poziție a cărei miză nu e acel pariu viu trebuie preflop să plătească, să relanseze sau să renunțe.
 
 **Q. Poți relansa după ce cineva intră all-in?**
 
@@ -223,7 +223,7 @@ A. Depinde de mărimea all-in-ului. Dacă all-in-ul e o relansare legală comple
 
 **Q. Ce este un string bet la poker?**
 
-A. Să pui jetoanele în mai multe mișcări fără să fi anunțat "raise" înainte (==regula 103 din regulamentul de turnee WSOP==). Dealerii judecă string bet-ul drept un call al sumei inițiale. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare sau mută toate jetoanele într-o singură mișcare.
+A. Să încerci să pariezi sau să relansezi în mai multe mișcări — întorcându-te la stack între ele — fără să fi anunțat "raise" înainte (==regula 103 din regulamentul de turnee WSOP==). A doua mișcare nu contează niciodată — rămân doar primele jetoane, judecate mai întâi după regulile de call cu un jeton sau cu mai multe jetoane (TDA 2024, regulile 44–45). Acolo unde se aplică pragul de jumătate din regula 43-A, se măsoară creșterea peste call, nu totalul jetoanelor: sub jumătate din cel mai mare pariu sau cea mai mare relansare completă anterioară e call; de la jumătate în sus trebuie să completezi un min-raise. O declarație de raise făcută înainte sau un all-in se judecă după regulile lor. Regula 103 din regulamentul de turnee WSOP interzice și un gest înșelător menit să provoace o acțiune în afara rândului înainte ca acțiunea ta să fie completă. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare — "raise" și suma completă — sau mută toate jetoanele într-o singură mișcare (TDA 2024, regula 42).
 
 **Q. Ce înseamnă să faci limp la poker?**
 

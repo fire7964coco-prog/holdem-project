@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Akcje w Texas Hold'em: czek, sprawdzenie, przebicie i pas",
   seoTitle: "Czek, sprawdzić czy spasować? — akcje w pokerze",
   desc: "Przychodzi twój ruch i pustka w głowie? Zobacz, co znaczą czek, sprawdzenie, przebicie i pas, jak działa min-raise i ile razy można przebijać.",
-  tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się poprzedniemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie wyłącznie jako duża ciemna.",
+  tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się ostatniemu pełnemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie zwykle wyłącznie jako duża ciemna (albo jako gracz, który wystawił żywego straddle'a).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -38,7 +38,7 @@ W Texas Hold'em istnieje tylko ==5 akcji==, ale zasady wokół nich (kiedy wolno
 :::stripe
 5 | akcje: czek, postawienie, sprawdzenie, przebicie, pas
 1 BB | minimalny zakład otwierający w No-Limit Hold'em
-= ostatnie przebicie | minimalny rozmiar re-raise (zasada przyrostu)
+= ostatnie pełne przebicie | minimalny rozmiar re-raise (zasada przyrostu)
 Bez limitu | przebić w No-Limit — możesz podbijać, aż ktoś wejdzie all-in
 :::
 
@@ -49,10 +49,10 @@ Każda pojedyncza decyzja przy stole to jedna z tych pięciu:
 | Akcja | Kiedy dostępna | Koszt w żetonach |
 |--------|---------------|-----------|
 | Pas (fold) | Zawsze, gdy ruch należy do ciebie | Za darmo — ale tracisz żetony już wrzucone do puli |
-| Czek (check) | Tylko gdy przed tobą nie stoi aktywny zakład (preflop: wyłącznie jako duża ciemna) | Za darmo — oddajesz ruch, nie dokładając żetonów |
+| Czek (check) | Tylko gdy przed tobą nie stoi aktywny zakład (preflop: jako duża ciemna albo jako gracz, który wystawił żywego straddle'a) | Za darmo — oddajesz ruch, nie dokładając żetonów |
 | Sprawdzenie (call) | Po tym, jak ktoś postawił lub przebił | Dokładasz dokładnie do aktualnej stawki |
 | Postawienie (bet) | Pierwszy zakład w rundzie | Kwota, którą wybierzesz (minimum = 1 duży blind) |
-| Przebicie (raise) | Po tym, jak ktoś postawił | Co najmniej rozmiar poprzedniego zakładu lub przebicia na wierzch |
+| Przebicie (raise) | Po tym, jak ktoś postawił | Co najmniej rozmiar ostatniego pełnego zakładu lub przebicia na wierzch |
 
 Wejście ==all-in== to nie osobna, szósta akcja — to postawienie, sprawdzenie albo przebicie wszystkimi żetonami, jakie ci zostały. Więcej o tym niżej.
 
@@ -85,13 +85,13 @@ Pełny obraz, kto działa i kiedy, ulica po ulicy, znajdziesz w [kolejności gry
 
 ## Co to jest sprawdzenie w pokerze? (czek vs sprawdzenie)
 
-Sprawdzenie znaczy, że ==dokładasz dokładnie do aktualnej stawki==, żeby zostać w rozdaniu. Ktoś stawia $10, ty sprawdzasz za $10 — ani więcej, ani mniej.
+Sprawdzenie znaczy, że ==dokładasz dokładnie do aktualnej stawki==, żeby zostać w rozdaniu. Ktoś stawia $10, ty sprawdzasz za $10 — ani więcej, ani mniej. (Jeśli zostało ci mniej niż $10, i tak możesz sprawdzić: wchodzisz all-in za tyle, ile masz.)
 
 Czek vs sprawdzenie to najczęstsza pomyłka początkujących, więc oto czysty podział:
 
 | | Czek (check) | Sprawdzenie (call) |
 |-|-------|------|
-| Kiedy istnieje | Przed tobą nie stoi aktywny zakład (preflop: wyłącznie jako duża ciemna) | Ktoś postawił przed tobą |
+| Kiedy istnieje | Przed tobą nie stoi aktywny zakład (preflop: jako duża ciemna albo jako gracz, który wystawił żywego straddle'a) | Ktoś postawił przed tobą |
 | Koszt w żetonach | Za darmo | Dokładasz do aktualnej stawki |
 | Co mówi | "Pasuję słownie, zostaję" | "Płacę, żeby grać dalej" |
 
@@ -116,7 +116,7 @@ Jedna zasada etykiety na żywo: nie pasuj ==poza kolejnością==. Poczekaj, aż 
 W No-Limit Hold'em (formacie, w który niemal zawsze będziesz grać):
 
 - **Minimalny zakład**: 1 duży blind
-- **Minimalne przebicie (min-raise)**: co najmniej ==rozmiar poprzedniego zakładu lub przebicia== dołożony na wierzch
+- **Minimalne przebicie (min-raise)**: co najmniej ==rozmiar ostatniego pełnego zakładu lub przebicia== dołożony na wierzch
 - **Maksimum**: cały twój stack — stąd nazwa "no limit"
 
 Dwa rozpisane przykłady:
@@ -126,11 +126,11 @@ Dwa rozpisane przykłady:
 | Flop | Gracz stawia $6 | $6 więcej → $12 razem |
 | Preflop (blindy $1/$2) | Gracz przebija do $6 (przebicie o $4 ponad blind $2) | $4 więcej → $10 razem |
 
-Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego zakładu lub przebicia, a nie dużemu blindowi. Przed flopem duży blind liczy się jako zakład otwierający — dlatego najmniejsze przebicie otwierające to do 2 dużych blindów.
+Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego pełnego zakładu lub przebicia, a nie dużemu blindowi. ("Pełnego" ma znaczenie, gdy ktoś wejdzie all-in za mniej niż przebicie: po zakładzie $10 i all-inie za $14 przyrost do wyrównania to nadal $10, więc najmniejsze przebicie to do $24.) Przed flopem duży blind liczy się jako zakład otwierający — dlatego najmniejsze przebicie otwierające to do 2 dużych blindów.
 
 Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
-1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: wypychanie żetonów w kilku ruchach **bez** wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==).
+1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: zakład lub przebicie w kilku ruchach, z powrotem do stacka po drodze, **bez** wcześniejszej zapowiedzi "raise" — albo zwodniczy gest, który ma sprowokować akcję poza kolejnością (==zasada 103 regulaminu turniejowego WSOP==).
 2. **Jeden ruch.** Jeśli nic nie zapowiadasz, żetony muszą wjechać jednym ruchem do przodu.
 
 *Ile* powinieneś przebijać (otwarcia 2,5x, 3-bety po 3x, dobór rozmiaru pod fakturę stołu) to strategia, a nie zasady — o tym jest filar strategii Texas Hold'em.
@@ -143,7 +143,7 @@ W **No-Limit Hold'em: nie ma limitu**. Możesz przebić, dostać re-raise i prze
 
 Wciąż obowiązują dwie granice:
 
-- Każde re-raise musi spełniać ==zasadę minimalnego przyrostu== z góry
+- Każde re-raise musi spełniać ==zasadę minimalnego przyrostu== z góry — jedynym wyjątkiem jest all-in, który może być mniejszy
 - ==r:Nie możesz przebić własnego zakładu.== Jeśli postawisz, a wszyscy tylko sprawdzą, runda się kończy — ponownie możesz przebić tylko wtedy, gdy ktoś przebije *ciebie* pierwszy
 
 W grach **Fixed-Limit** każda runda jest zamknięta limitem (pula "capped"). Turniejowe zasady WSOP ustawiają go na ==jeden zakład plus cztery przebicia== (zasada 100.b) — a wyjątek działa odwrotnie, niż niemal wszyscy zakładają: ==r:limit obowiązuje nawet wtedy, gdy w rozdaniu zostało już tylko dwóch graczy==. Znika dopiero, gdy heads-up jest **cały turniej**. W grach cash decydują zasady lokalu, więc dopytaj rozdającego.
@@ -152,7 +152,7 @@ W grach **Fixed-Limit** każda runda jest zamknięta limitem (pula "capped"). Tu
 
 ## Co znaczy wejść all-in?
 
-All-in znaczy postawienie ==wszystkich żetonów, jakie ci zostały==. Możesz to zrobić w każdej chwili, gdy ruch należy do ciebie — jako postawienie, sprawdzenie albo przebicie.
+All-in znaczy postawienie ==wszystkich żetonów, jakie ci zostały==. Możesz to zrobić w swojej kolejce jako postawienie, sprawdzenie albo przebicie — tę z tych akcji, która jest ci w tym momencie dostępna.
 
 Jeśli twój all-in jest *mniejszy* niż aktualna stawka, nie wypadasz z gry: po prostu walczysz o ==główną pulę== ograniczoną do twojego wkładu, a nadwyżka żetonów od większych stacków tworzy ==pulę boczną (side pot)==, której nie możesz wygrać. A all-in *mniejszy niż pełne min-raise* zwykle nie otwiera na nowo przebijania graczom, którzy już zagrali — subtelna zasada, która zaskakuje nawet ogranych.
 
@@ -178,11 +178,11 @@ Gram cotygodniową grę na żywo o niskie stawki i te same błędy w akcjach pow
 
 ### Błąd 1 — sprawdzenie, gdy mógłbyś czeknąć
 
-Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypycha żetony "na sprawdzenie". Nie ma czego sprawdzać: według ==zasady 90.a WSOP== zakład stawia się deklaracją *albo* wypchnięciem żetonów — właśnie postawił, nie chcąc tego. Gdyby *powiedział* "sprawdzam", ==zasada 90.b.1== zrobiłaby z tego czek. Gdy ulica jest nieotwarta, czeknij i zobacz kartę za darmo.
+Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypycha żetony "na sprawdzenie". Nie ma czego sprawdzać: według ==zasady 90.a WSOP== zakład stawia się deklaracją *albo* wypchnięciem żetonów — właśnie postawił, nie chcąc tego. Gdyby *powiedział* "sprawdzam", ==zasada 90.b.1== zrobiłaby z tego czek. Gdy ulica jest nieotwarta, czeknij — jeśli nikt za tobą nie postawi, zobaczysz następną kartę za darmo.
 
-### Błąd 2 — string raise
+### Błąd 2 — "Sprawdzam... nie, czekaj, przebijam!"
 
-"Sprawdzam... nie, czekaj, przebijam!" Nie ma tak. W pokerze na żywo akcja jest wiążąca w chwili, gdy ją zapowiadasz. Widziałem rozdających, którzy uznali to za zwykłe sprawdzenie w połowie zdania więcej razy, niż jestem w stanie policzyć. Zapowiedz "raise" *najpierw*, a potem rusz żetony.
+"Sprawdzam... nie, czekaj, przebijam!" Nie ma tak. W pokerze na żywo akcja jest wiążąca w chwili, gdy ją zapowiadasz — według ==zasady 90.d== słowna deklaracja w twojej kolejce jest wiążąca. (To zresztą nie string bet; string bet to wypychanie w kilku ruchach z powrotem do stacka, opisane w FAQ. Skutek ten sam: liczy się pierwsze słowo.) Widziałem rozdających, którzy uznali to za zwykłe sprawdzenie w połowie zdania więcej razy, niż jestem w stanie policzyć. Zapowiedz "raise" *najpierw*, a potem rusz żetony.
 
 ### Błąd 3 — duży blind pasujący darmowy flop
 
@@ -206,11 +206,11 @@ A. Tak — jeśli ktoś postawi po twoim czeku, możesz przebić, gdy ruch wróc
 
 **Q. Czy można przebić własny zakład?**
 
-A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć więcej — runda licytacji się kończy. Ponownie przebić możesz tylko wtedy, gdy inny gracz przebije ciebie pierwszy, co otwiera akcję na nowo.
+A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć więcej — runda licytacji się kończy. W No-Limit i Pot-Limit możesz przebić ponownie tylko wtedy, gdy ruch wróci do ciebie i masz przed sobą co najmniej pełne przebicie ponad twój zakład — czy zrobił je jeden gracz, czy złożyło się na nie kilka krótkich all-inów; pojedynczy all-in mniejszy niż pełne przebicie nie otwiera akcji na nowo. W Fixed-Limit poprzeczka wisi niżej: otwiera ją all-in wart co najmniej 50% pełnego zakładu lub przebicia (TDA 2024, zasada 47-B).
 
 **Q. Ile razy można przebić w Texas Hold'em?**
 
-A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż gracz wejdzie all-in, o ile każde przebicie spełnia minimalny przyrost. W Fixed-Limit turniejowe zasady WSOP ograniczają rundę do jednego zakładu plus czterech przebić (zasada 100.b), a limit obowiązuje nawet wtedy, gdy w rozdaniu zostało dwóch graczy.
+A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż gracz wejdzie all-in, o ile każde przebicie spełnia minimalny przyrost (all-in może być mniejszy). W Fixed-Limit turniejowe zasady WSOP ograniczają rundę do jednego zakładu plus czterech przebić (zasada 100.b), a limit obowiązuje nawet wtedy, gdy w rozdaniu zostało dwóch graczy — znika dopiero, gdy heads-up jest cały turniej.
 
 **Q. Czy można spasować poza kolejnością?**
 
@@ -218,7 +218,7 @@ A. Nie powinieneś. Akcja musi iść w kolejności, zgodnie z ruchem wskazówek 
 
 **Q. Czy można czekać przed flopem?**
 
-A. Tylko jako duży blind i tylko jeśli nikt nie przebił. BB postawił już żywy zakład, więc może czeknąć i zobaczyć flop za darmo. Każda inna pozycja przed flopem musi sprawdzić, przebić albo spasować.
+A. Tylko jeśli twoja własna wpłata jest pełnym żywym zakładem, który wszyscy inni muszą wyrównać, i nikt nie przebił — zwykle to duży blind, gdy nikt nie wystawił straddle'a, albo gracz z żywym straddle'em, gdy ktoś go wystawił (zasady 159 i 165 WSOP Live Action Rules): ta wpłata liczy się jako twój zakład otwierający, więc możesz czeknąć i zobaczyć flop za darmo. Pół zakładu małego blinda nigdy się nie liczy, a w puli ze straddle'em duży blind jest po prostu kolejnym graczem z zakładem przed sobą — każda pozycja, której wpłata nie jest tym żywym zakładem, musi przed flopem sprawdzić, przebić albo spasować.
 
 **Q. Czy można przebić po tym, jak ktoś wszedł all-in?**
 
@@ -226,7 +226,7 @@ A. Zależy od rozmiaru all-inu. Jeśli all-in jest pełnym legalnym przebiciem, 
 
 **Q. Co to jest string bet w pokerze?**
 
-A. Wrzucanie żetonów w kilku ruchach bez wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==). Rozdający uznają string bet za sprawdzenie pierwotnej kwoty. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie albo wrzuć wszystkie żetony jednym ruchem.
+A. Próba postawienia lub przebicia w kilku ruchach — z powrotem do stacka w międzyczasie — bez wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==). Drugi ruch nigdy się nie liczy — ważne są tylko pierwsze żetony, oceniane najpierw według zasad sprawdzenia jednym i wieloma żetonami (TDA 2024, zasady 44–45). Tam, gdzie stosuje się próg połowy z zasady 43-A, mierzy się nadwyżkę ponad sprawdzenie, a nie sumę żetonów: poniżej połowy największego wcześniejszego pełnego zakładu lub przebicia to sprawdzenie; połowa lub więcej wymaga pełnego min-raise. Wcześniejsza deklaracja przebicia albo all-in podlegają własnym zasadom. Zasada 103 regulaminu turniejowego WSOP zakazuje też zwodniczego gestu, który ma sprowokować akcję poza kolejnością, zanim twoja akcja się zakończy. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie — "raise" i pełną kwotę — albo wrzuć wszystkie żetony jednym ruchem (TDA 2024, zasada 42).
 
 **Q. Co znaczy limpować w pokerze?**
 

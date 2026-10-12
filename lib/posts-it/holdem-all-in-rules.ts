@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Regole dell'all-in nel Texas Hold'em: side pot, rilanci e showdown",
   seoTitle: "All-in e non sai cosa vinci? — Regole all-in e side pot",
   desc: "Vai all-in e il dealer divide le fiches in due mucchi. Regole dell'all-in nel Texas Hold'em: table stakes, piatto principale, side pot, rilanci e showdown.",
-  tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
+  tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches che due o più stack più grandi puntano oltre quella cifra formano un side pot che possono vincere solo loro; una puntata in più di un solo giocatore gli viene semplicemente restituita. Nel No-Limit e nel Pot-Limit, un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito — a meno che più all-in corti, sommati, non arrivino ad almeno un rilancio completo sopra quanto quel giocatore ha già messo.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -63,13 +63,13 @@ Ci sono due modi validi:
 
 ![Showdown di un all-in nel Texas Hold'em — un board K♠ 10♣ 7♦ 4♥ 2♣ con le fiches divise in piatto principale e side pot etichettati](/images/holdem-all-in-declare.webp)
 
-==r:Non spingere mai una singola fiche senza dire nulla — il dealer la conterà solo per il valore di quella fiche, non come il tuo stack completo.== Dichiara sempre "all-in" ad alta voce, oppure muovi tutto lo stack in una volta.
+==r:Non spingere mai una singola fiche grossa senza dire nulla aspettandoti che valga come all-in — se c'è una puntata da pareggiare, il dealer la conta come chiamata; se non c'è nessuna puntata in corso, come una puntata pari al solo valore di quella fiche.== Dichiara sempre "all-in" ad alta voce, oppure muovi tutto lo stack in una volta.
 
 ---
 
 ## Come funzionano i side pot nel poker? (Perché il giocatore all-in viene limitato)
 
-Il giocatore all-in può vincere solo quello che ha messo dentro più l'importo pareggiato da ciascun altro giocatore ancora nel piatto. Tutte le fiches puntate oltre quella cifra formano un **side pot** che appartiene in esclusiva ai giocatori che lo hanno alimentato.
+Il giocatore all-in può vincere solo quello che ha messo dentro più, al massimo, un importo pari al suo da ciascun altro giocatore che ha messo fiches nel piatto — compreso chi nel frattempo ha passato, perché le fiches entrate restano nel piatto. Tutte le fiches puntate oltre quella cifra formano un **side pot** che appartiene in esclusiva ai giocatori che lo hanno alimentato — ma solo se a metterle sono almeno due giocatori. Se sopra il tetto c'è un solo giocatore, non c'è nessuno con cui contendersi un side pot e l'eccedenza gli torna subito indietro come puntata non chiamata.
 
 ![Side pot dopo un all-in nel Texas Hold'em — il dealer separa le fiches in piatto principale e side pot mentre il Giocatore A resta limitato](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ La regola: ==ogni side pot si costruisce prendendo la differenza fino allo stack
 
 ==r:È la regola dell'all-in che genera più discussioni ai tavoli dal vivo — ho visto due giocatori litigarci sopra per cinque minuti con tutto il tavolo ad aspettare. Avevano torto entrambi.==
 
-**La regola:** se un giocatore va all-in per **meno di un [rilancio completo](/it/blog/holdem-betting-actions)**, quell'all-in NON riapre le puntate per i giocatori che hanno già agito in quel giro.
+**La regola (No-Limit e Pot-Limit):** se un giocatore va all-in per **meno di un [rilancio completo](/it/blog/holdem-betting-actions)**, quell'all-in NON riapre le puntate per i giocatori che hanno già agito in quel giro. Nelle partite Limit la soglia è più bassa: lì un all-in pari ad almeno mezza puntata riapre le puntate (TDA 2024, regola 47-B).
 
 ![Regola del rilancio dopo un all-in nel poker — un all-in corto, inferiore a un rilancio completo, quindi il Giocatore A, che ha già agito, può solo chiamare o passare](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Cosa succede al Giocatore A e al Giocatore C, che non ha ancora agito?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Importo dell'all-in | Rilancio completo? | Riapre le puntate? |
+| Importo dell'all-in (No-Limit / Pot-Limit) | Rilancio completo? | Riapre le puntate? |
 |--------------|-------------|-----------------|
 | Meno di un rilancio completo | No | No — chi ha già agito e ora affronta meno di una puntata o di un rilancio completo può solo chiamare o passare |
 | Rilancio completo o più | Sì | Sì — tutti possono rilanciare di nuovo |
@@ -174,6 +174,8 @@ La soglia del rilancio minimo è sempre l'*ultima puntata o rilancio completo va
 
 ### Guida rapida alla decisione — questo all-in riapre le puntate?
 
+La tabella vale per No-Limit e Pot-Limit. In una partita Limit la soglia è mezza puntata, non un rilancio completo.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situazione | Si riapre per chi ha già agito? |
@@ -182,7 +184,7 @@ La soglia del rilancio minimo è sempre l'*ultima puntata o rilancio completo va
 | Un solo all-in ≥ rilancio completo | ✅ Sì — tutti possono rilanciare |
 | Più all-in corti, somma < rilancio completo | ❌ No |
 | Più all-in corti, aumento dall'ultima azione del giocatore ≥ puntata o rilancio completo | ✅ Sì, per quel giocatore |
-| Giocatore che NON ha ancora agito | ✅ Può sempre rilanciare (in ogni caso) |
+| Giocatore che NON ha ancora agito | ✅ Il limite sulla riapertura non lo riguarda mai — può ancora rilanciare, entro i limiti di puntata del gioco: il suo stack nel No-Limit, il piatto nel Pot-Limit, la puntata fissa e il tetto della casa ai rilanci nel Limit (TDA 2024, regola 48) |
 
 </div>
 
@@ -211,7 +213,7 @@ Non può. Una volta che il giocatore all-in è limitato, ogni fiche in più punt
 
 ### Errore 2: non sapere la regola su chi può rilanciare
 
-Un all-in parziale non dà una seconda occasione di rilanciare a chi **ha già agito** in quel giro — chi non ha ancora agito può rilanciare normalmente. Saperlo a memoria taglia le discussioni prima ancora che inizino.
+Nel No-Limit e nel Pot-Limit, un all-in parziale non dà una seconda occasione di rilanciare a chi **ha già agito** in quel giro — chi non ha ancora agito può rilanciare normalmente. Saperlo a memoria taglia le discussioni prima ancora che inizino.
 
 ### Errore 3: aggiungere fiches dalla tasca a metà mano
 
@@ -236,7 +238,7 @@ L'all-in è la mossa più potente del tavolo. Costringe gli avversari a una deci
 
 **Q. Si può andare all-in per meno del grande buio?**
 
-A. Sì. Se ti restano meno fiches del grande buio, quando tocca a te metterlo resti automaticamente all-in per quello che hai. Gli altri continuano a pagare il grande buio per intero — tutto ciò che supera il tuo contributo finisce in un side pot.
+A. Sì. Se il buio che devi mettere è più grande di tutto il tuo stack, metti quello che ti resta e sei all-in per quella cifra (regola 154 delle WSOP Live Action Rules). Gli altri continuano a chiamare il grande buio per intero — quello che mettono oltre il tuo contributo forma un side pot tra loro, oppure, se a metterlo è un solo giocatore, gli torna indietro come puntata non chiamata.
 
 **Q. Cosa succede se vinci l'all-in ma perdi il side pot?**
 
@@ -248,7 +250,7 @@ A. Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le
 
 **Q. Si può fare "run it twice" in un all-in a poker?**
 
-A. Distribuire due volte le carte comuni rimanenti e dividere il piatto (run it twice) è permesso in molti cash game se entrambi i giocatori sono d'accordo dopo l'all-in. Nei tornei di norma non è consentito. Va concordato prima di distribuire le carte mancanti.
+A. Distribuire due volte le carte comuni rimanenti e dividere il piatto (run it twice) è permesso in molti cash game se, una volta che qualcuno è all-in e non resta alcuna azione di puntata in sospeso, sono d'accordo tutti i giocatori ancora nel piatto — non solo due di voi (regole 210 e 211 delle WSOP Live Action Rules). Nei tornei di norma non è consentito. Va concordato prima di distribuire le carte mancanti.
 
 **Q. In cosa consiste esattamente la regola delle "table stakes"?**
 
@@ -256,11 +258,11 @@ A. Table stakes significa che puoi puntare solo le fiches che avevi davanti all'
 
 **Q. Se due giocatori vanno all-in per importi diversi, chi mostra per primo?**
 
-A. ==r:In torneo non si aspetta il proprio turno per mostrare==: Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check. Gli importi degli all-in, da soli, non determinano quindi chi mostra per primo.
+A. L'ultimo all-in che era una puntata o un rilancio è l'ultima azione aggressiva e mostra per primo. Un all-in che si limita a chiamare per meno non è aggressivo — nel cash mostra comunque per primo chi aveva puntato in origine, se le puntate sono finite al river (nel No-Limit, se sono finite prima del river, gira per primo chi è andato all-in); e dove c'è un side pot, le WSOP Live Action Rules vanno per piatto: chi è nel side pot mostra prima del giocatore che è all-in solo per il piatto principale (regola 149). ==r:In torneo qui non esiste alcun ordine per mostrare== — chiuse le puntate dell'all-in, tutte le mani coinvolte si girano scoperte nello stesso momento (TDA 2024, regola 16); la regola che fissa un ordine, la 17 della TDA 2024, riguarda solo gli showdown senza all-in. Nel cash, se era un all-in chiamato senza altra azione, chi ha chiamato può fare muck se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
 
 **Q. Le regole dell'all-in cambiano tra tornei e cash game?**
 
-A. Il nucleo è lo stesso, con due differenze pratiche. Prima: Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash l'ordine segue le regole della casa, comprese le condizioni B149 alle WSOP, e il muck non è vietato in generale. Seconda: il run it twice è comune nei cash game (se entrambi i giocatori sono d'accordo) ma nei tornei di norma non è permesso.
+A. Il nucleo è lo stesso, con due differenze pratiche. Prima: Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash l'ordine segue le regole della casa, comprese le condizioni B149 alle WSOP, e il muck non è vietato in generale. Seconda: il run it twice è comune nei cash game (se sono d'accordo tutti i giocatori ancora nel piatto) ma nei tornei di norma non è permesso.
 
 ---
 

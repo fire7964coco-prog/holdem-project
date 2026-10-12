@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em bahis hareketleri: check, call, raise, fold",
   seoTitle: "Pokerde check, call, raise, fold ne demek? Sıra sende",
   desc: "Pokerde check, call, raise ve fold ne demek? Masada duyduğun pas, gördüm, bop, rest de dahil: min-raise kuralı ve kaç kez re-raise yapılabileceği, örneklerle.",
-  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
+  tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, son tam bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu normalde yalnızca big blind (ya da canlı straddle koyan oyuncu) içindir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",
@@ -40,7 +40,7 @@ Texas Hold'em'de yalnızca ==5 bahis hareketi== var, ama etraflarındaki kuralla
 :::stripe
 5 | bahis hareketi: check, bet, call, raise, fold
 1 BB | No-Limit Hold'em'de minimum açılış bahsi
-= son raise | minimum re-raise büyüklüğü (artış kuralı)
+= son tam raise | minimum re-raise büyüklüğü (artış kuralı)
 Sınır yok | No-Limit'te re-raise'e — biri all-in olana kadar yükseltebilirsin
 :::
 
@@ -51,10 +51,10 @@ Poker masasında verdiğin her karar bu beşinden biridir:
 | Hareket | Ne zaman mümkün | Çip maliyeti |
 |--------|---------------|-----------|
 | Fold (yatmak / pas) | Sıra sende olduğu her an | Bedava — ama pota koyduğun çipleri kaybedersin |
-| Check (çek / bop) | Yalnızca önünde açık bir bahis yoksa (preflop: sadece big blind olarak) | Bedava — çip eklemeden sırayı solundakine bırakırsın |
+| Check (çek / bop) | Yalnızca önünde açık bir bahis yoksa (preflop: big blind olarak ya da canlı straddle koyan oyuncu olarak) | Bedava — çip eklemeden sırayı solundakine bırakırsın |
 | Call (görmek / gördüm) | Biri bahis koyduktan ya da yükselttikten sonra | Mevcut bahsi birebir görürsün |
 | Bet (bahis) | Turun ilk bahsi | Seçtiğin miktar (minimum = 1 big blind) |
-| Raise (yükseltmek) | Biri bahis koyduktan sonra | Önceki bahsin ya da yükseltmenin en az büyüklüğü kadar üstüne |
+| Raise (yükseltmek) | Biri bahis koyduktan sonra | Son tam bahsin ya da yükseltmenin en az büyüklüğü kadar üstüne |
 
 ==All-in== gitmek altıncı ayrı bir hareket değildir — kalan tüm çiplerinle yaptığın bir bet, call ya da raise'dir. Aşağıda daha çok var.
 
@@ -93,13 +93,13 @@ Check-raise yalnızca flop, turn ve river'da mümkündür ve önce senin konuşm
 
 ## Pokerde call ne demek? (check vs call)
 
-Call (masada "gördüm"), elde kalmak için ==mevcut bahsi birebir görmek== demektir: biri $10 koyar, sen $10 call yaparsın — ne fazla, ne eksik. Pokerde call nedir diye düşünürken tek şartı aklında tut: call ancak senden önce biri bahis koyduysa ya da yükselttiyse mümkündür. Önünde bahis yoksa görecek bir şey de yoktur; o durumda yapacağın hamle check'tir.
+Call (masada "gördüm"), elde kalmak için ==mevcut bahsi birebir görmek== demektir: biri $10 koyar, sen $10 call yaparsın — ne fazla, ne eksik. (Elinde $10'dan az kalsa bile call yapabilirsin: elindekiyle all-in olursun.) Pokerde call nedir diye düşünürken tek şartı aklında tut: call ancak senden önce biri bahis koyduysa ya da yükselttiyse mümkündür. Önünde bahis yoksa görecek bir şey de yoktur; o durumda yapacağın hamle check'tir.
 
 Check ile call, yeni başlayanların en sık karıştırdığı ikili, o yüzden temiz ayrımı şöyle:
 
 | | Check | Call |
 |-|-------|------|
-| Ne zaman var | Önünde açık bir bahis yok (preflop: sadece big blind olarak) | Senden önce biri bahis koydu |
+| Ne zaman var | Önünde açık bir bahis yok (preflop: big blind olarak ya da canlı straddle koyan oyuncu olarak) | Senden önce biri bahis koydu |
 | Çip maliyeti | Bedava | Mevcut bahsi görürsün |
 | Ne der | "Bop, hâlâ içerideyim" | "Gördüm, devam etmek için öderim" |
 
@@ -142,7 +142,7 @@ Krupiye için en net beyan hâlâ İngilizce olandır: emin değilsen "check" ya
 No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 - **Minimum bahis**: 1 big blind
-- **Minimum yükseltme (min-raise)**: en az ==önceki bahsin ya da yükseltmenin büyüklüğü== kadarını üstüne
+- **Minimum yükseltme (min-raise)**: en az ==son tam bahsin ya da yükseltmenin büyüklüğü== kadarını üstüne
 - **Maksimum**: tüm stack'in — işte bu yüzden "no limit"
 
 İki çözümlü örnek:
@@ -156,7 +156,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
-1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden çipleri birden fazla hareketle itmek (==WSOP turnuva kuralı 103==).
+1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden, arada stack'ine geri dönen birden fazla hareketle bahis ya da raise yapmak — ya da sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı bir hareket (==WSOP turnuva kuralı 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
 *Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu [Texas Hold'em stratejisine](/tr/blog/holdem-strategy) girer.
@@ -169,7 +169,7 @@ Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
 Yine de iki sınır geçerli:
 
-- Her re-raise, yukarıdaki ==min-raise artış kuralını== karşılamalı
+- Her re-raise, yukarıdaki ==min-raise artış kuralını== karşılamalı — tek istisna all-in'dir, o daha az olabilir
 - ==r:Kendi bahsini yükseltemezsin.== Sen bahis koyarsın ve herkes sadece call yaparsa tur biter — ancak biri *seni* önce yükseltirse tekrar raise yapabilirsin
 
 **Fixed-Limit** oyunlarda her tur sınırlıdır ("capped" pot). WSOP turnuva kuralları sınırı ==bir bahis artı dört yükseltme== olarak koyar (Kural 100.b) — ve istisna çoğu kişinin beklediğinin tam tersi işler: ==r:elde yalnızca iki oyuncu kalsa bile sınır durur==. Sınır ancak **turnuvanın tamamı** heads-up olduğunda kalkar. Cash oyunlarda salon kuralları geçerlidir, o yüzden krupiyeye sor.
@@ -204,7 +204,7 @@ Haftalık düşük bahisli canlı bir oyun oynuyorum ve aynı hareket hataları 
 
 ### Hata 1 — Check yapabilecekken call yapmak
 
-Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 kuralı== bunu check sayardı. Street açılmadıysa check yap ve kartı bedavaya gör.
+Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 kuralı== bunu check sayardı. Street açılmadıysa check yap — arkandan kimse bahis koymazsa sıradaki kartı bedavaya görürsün.
 
 ### Hata 2 — "Call... yok, dur, raise!"
 
@@ -233,11 +233,11 @@ A. Evet. Check yaptıktan sonra arkandan biri bahis koyarsa, sıra sana döndü�
 
 **Q. Kendi bahsini yükseltebilir misin?**
 
-A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyemezsin — bahis turu biter. Ancak başka bir oyuncu seni önce yükseltirse tekrar raise yapabilirsin, bu da hareketi yeniden açar.
+A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyemezsin — bahis turu biter. No-Limit ve Pot-Limit'te ancak sıra sana, bahsinin üstüne en az tam bir yükseltmeyle karşı karşıya olarak dönerse tekrar raise yapabilirsin — bunu tek bir oyuncu yapmış olsun ya da birkaç kısa all-in toplanıp ona ulaşmış olsun; tam bir yükseltmeden az tek bir all-in hareketi yeniden açmaz. Fixed-Limit'te çıta daha düşüktür: tam bir bahsin ya da yükseltmenin en az %50'si kadar bir all-in hareketi yeniden açar (TDA 2024 Kural 47-B).
 
 **Q. Texas Hold'em'de kaç kez raise yapabilirsin?**
 
-A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece, bir oyuncu all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda WSOP turnuva kuralları turu bir bahis artı dört yükseltmeyle sınırlar (Kural 100.b) ve elde iki oyuncu kalsa bile bu sınır durur.
+A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece (all-in daha az olabilir), bir oyuncu all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda WSOP turnuva kuralları turu bir bahis artı dört yükseltmeyle sınırlar (Kural 100.b) ve elde iki oyuncu kalsa bile bu sınır durur — yalnızca turnuvanın tamamı heads-up'a düştüğünde kalkar.
 
 **Q. Sıran gelmeden fold yapabilir misin?**
 
@@ -245,7 +245,7 @@ A. Yapmamalısın. Hareket saat yönünde, sırayla ilerlemeli; sırası gelmede
 
 **Q. Preflop'ta check yapılır mı?**
 
-A. Yalnızca big blind olarak ve yalnızca kimse yükseltmediyse. BB zaten canlı bir bahis koymuştur, o yüzden check yapıp flop'u bedavaya görebilir. Preflop'ta diğer her pozisyon call, raise ya da fold yapmalı.
+A. Yalnızca kendi zorunlu bahsin, herkesin eşlemesi gereken tam canlı bahisse ve kimse yükseltmediyse — normalde kimse straddle koymadıysa big blind, koyduysa canlı straddle'ı koyan oyuncu (WSOP Live Action Kural 159 · 165): o bahis senin açılış bahsin sayılır, o yüzden check yapıp flop'u bedavaya görebilirsin. Small blind'in yarım bahsi bu şartı asla karşılamaz; straddle'lı bir potta big blind da önünde bahis olan sıradan bir oyuncudur — kendi zorunlu bahsi o canlı bahis olmayan her pozisyon preflop'ta call, raise ya da fold yapmalı.
 
 **Q. Biri all-in olduktan sonra raise yapılır mı?**
 
@@ -253,7 +253,7 @@ A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareke
 
 **Q. Pokerde string bet nedir?**
 
-A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (WSOP turnuva kuralı 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir. ("Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı sözlü beyan kuralıdır: ilk söz geçerli.) Hareketini sözle ilan et ya da tüm çipleri tek hareketle koy.
+A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (WSOP turnuva kuralı 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir ve önce tek çip ve çoklu çip call kurallarına göre değerlendirilir (TDA 2024 Kural 44–45). Kural 43-A'daki yarım minimum eşiğinin uygulandığı yerde toplam çipleri değil, call'un üstündeki artışı ölç: önceki en büyük tam bahsin ya da yükseltmenin yarısından azı call'dur; yarısı ya da fazlası tam bir min-raise'i zorunlu kılar. Daha önce yapılmış bir raise beyanı ya da all-in kendi kurallarına göre değerlendirilir. WSOP turnuva kuralı 103, kendi aksiyonun tamamlanmadan sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı hareketi de yasaklar. "Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı bir sözlü beyandır (==Kural 90.d==) — sonuç aynı: ilk söz geçerli. Hareketini sözle ilan et — "raise" ve tutarın tamamı — ya da tüm çipleri tek hareketle koy (TDA 2024 Kural 42).
 
 **Q. Pokerde limp ne demek?**
 

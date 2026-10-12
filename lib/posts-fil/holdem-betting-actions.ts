@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Betting Actions sa Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Check, Call o Fold? — Poker Betting Actions & Min-Raise",
   desc: "Nasa iyo na ang action pero blangko ang isip? Alamin ang check, call, raise at fold, ang min-raise rule, at kung ilang beses ka pwedeng mag-re-raise.",
-  tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, nangyayari lang iyon kapag ikaw ang big blind.",
+  tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling full bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, karaniwang ang big blind lang iyon (o ang nag-post ng live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -38,7 +38,7 @@ Lima lang ang ==betting actions== ng Texas Hold'em, pero ang mga rules sa paligi
 :::stripe
 5 | betting actions: check, bet, call, raise, fold
 1 BB | pinakamaliit na opening bet sa No-Limit Hold'em
-= huling raise | pinakamaliit na re-raise size (ang increment rule)
+= huling full raise | pinakamaliit na re-raise size (ang increment rule)
 Walang cap | sa re-raises sa No-Limit — pwede kang mag-raise hanggang may mag-all-in
 :::
 
@@ -49,10 +49,10 @@ Bawat desisyon mo sa poker table ay isa sa limang ito:
 | Action | Kailan available | Chip cost |
 |--------|---------------|-----------|
 | Fold | Anumang oras na nasa iyo ang action | Libre — pero mawawala sa iyo ang chips na nailagay mo na sa pot |
-| Check | Kapag walang aktibong bet sa harap mo (preflop: bilang big blind lang) | Libre — pumapasa ka nang walang dagdag na chips |
+| Check | Kapag walang aktibong bet sa harap mo (preflop: bilang big blind, o bilang player na nag-post ng live straddle) | Libre — pumapasa ka nang walang dagdag na chips |
 | Call | Pagkatapos may nag-bet o nag-raise | Tinutumbasan mo ang current bet nang eksakto |
 | Bet | Unang taya ng round | Ikaw ang pipili ng halaga (minimum = 1 big blind) |
-| Raise | Pagkatapos may nag-bet | Kahit ang laki ng nauna nang bet o raise, dagdag pa sa taas |
+| Raise | Pagkatapos may nag-bet | Kahit ang laki ng huling full bet o raise, dagdag pa sa taas |
 
 Ang pag-all-in ay hindi ikaanim na hiwalay na action — ito ay isang bet, call, o raise gamit ang lahat ng natitira mong chips. Marami pa tungkol dito sa baba.
 
@@ -85,13 +85,13 @@ Para sa buong street-by-street na larawan ng sino ang aaksyon at kailan, tingnan
 
 ## Ano ang Call sa Poker? (Check vs Call)
 
-Ang ibig sabihin ng call ay ==tinutumbasan mo ang current bet nang eksakto== para manatili sa hand. May nag-bet ng $10, ikaw call ka ng $10 — hindi hihigit, hindi kukulang.
+Ang ibig sabihin ng call ay ==tinutumbasan mo ang current bet nang eksakto== para manatili sa hand. May nag-bet ng $10, ikaw call ka ng $10 — hindi hihigit, hindi kukulang. (Kahit kulang na sa $10 ang natitira sa'yo, puwede ka pa ring mag-call: all-in ka sa kung ano ang meron ka.)
 
 Ang check vs call ang pinakamadalas na pagkalito ng mga baguhan, kaya heto ang malinis na pagkakaiba:
 
 | | Check | Call |
 |-|-------|------|
-| Kailan meron | Walang aktibong bet sa harap mo (preflop: bilang big blind lang) | May nag-bet na bago ka |
+| Kailan meron | Walang aktibong bet sa harap mo (preflop: bilang big blind, o bilang player na nag-post ng live straddle) | May nag-bet na bago ka |
 | Chip cost | Libre | Tinutumbasan mo ang current bet |
 | Ibig sabihin | "Pumapasa, nasa hand pa rin" | "Nagbabayad para tumuloy" |
 
@@ -116,7 +116,7 @@ Isang rule ng live etiquette: huwag mag-fold ==out of turn== (hindi pa turn mo).
 Sa No-Limit Hold'em (ang format na halos palagi mong lalaruin):
 
 - **Minimum bet**: 1 big blind
-- **Minimum raise (ang min-raise)**: kahit ==laki ng nauna nang bet o raise== na idadagdag sa taas
+- **Minimum raise (ang min-raise)**: kahit ==laki ng huling full bet o raise== na idadagdag sa taas
 - **Maximum**: ang buong stack mo — iyan ang "no limit"
 
 Dalawang worked na halimbawa:
@@ -126,11 +126,11 @@ Dalawang worked na halimbawa:
 | Flop | Nag-bet ng $6 ang manlalaro | $6 pa → $12 total |
 | Preflop (blinds $1/$2) | Nag-raise hanggang $6 ang manlalaro (raise na $4 sa ibabaw ng $2 blind) | $4 pa → $10 total |
 
-Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling bet o raise, hindi sa big blind. Preflop, ang big blind ang binibilang na opening bet, kaya ang pinakamaliit na open-raise ay hanggang 2 big blinds.
+Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling full bet o raise, hindi sa big blind. (Mahalaga ang "full" kapag may nag-all-in nang kulang sa raise: matapos ang $10 bet at $14 all-in, $10 pa rin ang increment na dapat tapatan, kaya ang pinakamaliit na raise ay hanggang $24.) Preflop, ang big blind ang binibilang na opening bet, kaya ang pinakamaliit na open-raise ay hanggang 2 big blinds.
 
 Dalawang live-poker rules na kasama ng pag-raise:
 
-1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: paglalagay ng chips sa maraming galaw **nang hindi** muna nag-aanunsyo ng "raise" (==WSOP Tournament Rule 103==).
+1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: pag-bet o pag-raise sa maraming galaw na may pagbalik ng kamay sa stack **nang hindi** muna nag-aanunsyo ng "raise" — o mapanlinlang na kilos para mapakilos ang iba bago ang turn nila (==WSOP Tournament Rule 103==).
 2. **Isang galaw.** Kung hindi ka mag-anunsyo, ang chips mo ay dapat pumasok sa iisang forward na galaw.
 
 Kung *gaano* kalaki ang dapat mong i-raise (2.5x na opens, 3x na 3-bets, sizing base sa board texture) ay strategy, hindi rules.
@@ -143,7 +143,7 @@ Sa **No-Limit Hold'em: walang cap**. Pwede kang mag-raise, ma-re-raise, at mag-r
 
 Dalawang hangganan pa rin ang tumatakbo:
 
-- Bawat re-raise ay dapat matugunan ang ==min-raise increment rule== sa itaas
+- Bawat re-raise ay dapat matugunan ang ==min-raise increment rule== sa itaas — ang tanging exception ay all-in, na puwedeng kulang
 - ==r:Hindi mo pwedeng i-raise ang sarili mong bet.== Kung nag-bet ka at basta na-call ka lang ng lahat, tapos na ang round — pwede ka lang mag-raise ulit kung may mag-raise *sa iyo* muna
 
 Sa **Fixed-Limit** na laro, naka-cap ang bawat round (isang "capped" na pot). Sa tournament rules ng WSOP, ang cap ay ==isang bet plus apat na raises== (Rule 100.b) — at baligtad ang exception sa inaasahan ng karamihan: ==r:nananatili ang cap kahit dalawa na lang ang natitira sa hand==. Naaalis lang ito kapag ang **buong tournament** na ang heads-up. Sa cash game, house rules ang masusunod, kaya tanungin mo ang dealer.
@@ -152,7 +152,7 @@ Sa **Fixed-Limit** na laro, naka-cap ang bawat round (isang "capped" na pot). Sa
 
 ## Ano ang Ibig Sabihin ng Pag-All-In?
 
-Ang all-in ay ibig sabihin i-bet mo ang ==bawat chip na natitira sa iyo==. Pwede mo itong gawin anumang oras na nasa iyo ang action — bilang bet, call, o raise.
+Ang all-in ay ibig sabihin i-bet mo ang ==bawat chip na natitira sa iyo==. Pwede mo itong gawin sa turn mo bilang bet, call, o raise — alinman sa mga iyon ang bukas sa iyo sa puntong iyon.
 
 Kung ang all-in mo ay *mas maliit* kaysa sa current bet, hindi ka fold: nakikipaglaban ka lang para sa ==main pot== na naka-cap sa kontribusyon mo, habang ang sobrang chips mula sa mas malalaking stack ay bumubuo ng ==side pot== na hindi mo mapapanalunan. At ang all-in na *mas kaunti sa buong min-raise* ay karaniwang hindi nagbubukas muli ng raise para sa mga manlalarong nakaaksyon na — isang tusong rule na nagugulat kahit sa mga regular.
 
@@ -174,7 +174,7 @@ May weekly low-stakes na live game ako, at ang parehong action errors ay paulit-
 
 ### Mistake 1 — Nag-call kung pwede namang mag-check
 
-Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka at tingnan ang card nang libre.
+Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka — kung walang mag-bet sa likod mo, makikita mo ang susunod na card nang libre.
 
 ### Mistake 2 — "Call ako... teka, raise!"
 
@@ -202,11 +202,11 @@ A. Oo — kung may mag-bet pagkatapos ng check mo, pwede kang mag-raise pagbalik
 
 **Q. Pwede mo bang i-raise ang sarili mong bet?**
 
-A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pwedeng magdagdag — tapos na ang betting round. Pwede ka lang mag-raise ulit kung may ibang manlalarong mag-raise sa iyo muna, na nagbubukas muli ng action.
+A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pwedeng magdagdag — tapos na ang betting round. Sa No-Limit at Pot-Limit, puwede ka lang mag-raise ulit kung babalik sa iyo ang action na may hinaharap kang hindi bababa sa isang full raise lampas sa bet mo — galing man sa iisang player o sa ilang short all-in na pinagsama; ang iisang all-in na kulang sa full raise ay hindi nagbubukas ulit ng action. Sa Fixed-Limit mas mababa ang guhit: ang all-in na hindi bababa sa 50% ng full bet o raise ay nagbubukas ulit nito (TDA 2024 Rule 47-B).
 
 **Q. Ilang beses ka pwedeng mag-raise sa Texas Hold'em?**
 
-A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang isang manlalaro, basta matugunan ng bawat raise ang minimum increment. Sa Fixed-Limit, nagki-cap ang tournament rules ng WSOP sa isang bet plus apat na raises (Rule 100.b), at nananatili ang cap kahit dalawa na lang ang natitira sa hand.
+A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang isang manlalaro, basta matugunan ng bawat raise ang minimum increment (puwedeng kulang ang all-in). Sa Fixed-Limit, nagki-cap ang tournament rules ng WSOP sa isang bet plus apat na raises (Rule 100.b), at nananatili ang cap kahit dalawa na lang ang natitira sa hand — naaalis lang ito kapag heads-up na ang buong tournament.
 
 **Q. Pwede ka bang mag-fold out of turn?**
 
@@ -214,7 +214,7 @@ A. Hindi dapat. Dapat sunod-sunod ang action, pakanan (clockwise), at ang out-of
 
 **Q. Pwede ka bang mag-check preflop?**
 
-A. Bilang big blind lang, at kung walang nag-raise. Nag-post na ng buhay na bet ang BB, kaya pwede itong mag-check para makita ang flop nang libre. Lahat ng ibang position preflop ay dapat mag-call, raise, o fold.
+A. Kung ang sarili mong post lang ang buong live bet na kailangang tapatan ng lahat at walang nag-raise — karaniwan ang big blind kapag walang nag-straddle, o ang live straddler kapag mayroon (WSOP Live Action Rules 159 · 165): binibilang ang post na iyon bilang opening bet mo, kaya puwede kang mag-check para makita ang flop nang libre. Hindi kailanman pasok ang kalahating bet ng small blind, at sa straddled pot, ang big blind ay isa lang ding player na may hinaharap na bet — bawat position na ang sariling post ay hindi ang live bet na iyon ay dapat mag-call, raise, o fold preflop.
 
 **Q. Pwede ka bang mag-raise pagkatapos may mag-all-in?**
 
@@ -222,7 +222,7 @@ A. Depende sa laki ng all-in. Kung ang all-in ay buong legal na raise, magbubuka
 
 **Q. Ano ang string bet sa poker?**
 
-A. Ang paglalagay ng chips sa maraming galaw, o pagsabi ng "call" tapos magdagdag ng raise, nang hindi muna nag-anunsyo ng "raise". Iru-rule ng dealers ang string bet bilang call ng orihinal na halaga. I-anunsyo mo ang action mo o igalaw ang lahat ng chips sa iisang galaw.
+A. Pagsubok na mag-bet o mag-raise sa maraming galaw — bumabalik ang kamay sa stack sa pagitan — nang hindi muna nag-aanunsyo ng "raise" (==WSOP Tournament Rule 103==). Hindi kailanman binibilang ang pangalawang galaw — ang unang chips lang ang tumatayo, at hinuhusgahan muna ang mga iyon sa ilalim ng single- at multiple-chip call rules (TDA 2024 Rules 44–45). Kung saan umiiral ang half-minimum threshold ng Rule 43-A, sukatin ang dagdag lampas sa call, hindi ang kabuuang chips: kulang sa kalahati ng pinakamalaking naunang full bet o raise ay call; kalahati o higit pa ay kailangang maging buong min-raise. Ang naunang deklarasyon ng raise o all-in ay may sariling patakaran. Ipinagbabawal din ng WSOP Tournament Rule 103 ang mapanlinlang na kilos para mapakilos ang iba bago ang turn nila habang hindi pa tapos ang sarili mong action. Ang pagsabi ng "call" tapos magdagdag ay hindi string bet kundi binding na deklarasyon (==Rule 90.d==) — pareho ang epekto. I-anunsyo mo nang malakas ang action mo — "raise" at ang buong halaga — o igalaw ang lahat ng chips sa iisang galaw (TDA 2024 Rule 42).
 
 **Q. Ano ang ibig sabihin ng limp sa poker?**
 

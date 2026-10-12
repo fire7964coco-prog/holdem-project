@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in (Türkçe masa dilinde rest) gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -123,7 +123,7 @@ Kural şu: ==her yan pot, bir sonraki en küçük stack'e kadarki farkı × onu 
 
 ==r:Bu, canlı masalarda en çok tartışma çıkaran all-in kuralıdır — iki oyuncunun bunu tam beş dakika tartışmasını, tüm masa beklerken izledim. İkisi de yanılıyordu.==
 
-**Kural:** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, bu turda zaten bet, call ya da raise yapmış ve son aksiyonundan bu yana toplamda tam bir yükseltmeyle karşılaşmayan oyuncular için bahsi YENİDEN açmaz.
+**Kural (no-limit ve pot-limit):** Bir oyuncu **tam bir [yükseltmeden](/tr/blog/holdem-betting-actions) az** bir miktara all-in giderse, o all-in, bu turda zaten bet, call ya da raise yapmış ve son aksiyonundan bu yana toplamda tam bir yükseltmeyle karşılaşmayan oyuncular için bahsi YENİDEN açmaz. Limit oyunlarda çizgi daha aşağıdadır: orada en az yarım bahis tutarındaki bir all-in bahsi yeniden açar (TDA 2024 Kural 47-B).
 
 ![Pokerde all-in sonrası yeniden yükseltme kuralı — tam bir yükseltmeden az kalan kısa bir all-in, bu yüzden zaten aksiyon almış olan A Oyuncusu sadece görebilir veya pas geçebilir](/images/holdem-all-in-reraise-rule.webp)
 
@@ -141,7 +141,7 @@ A Oyuncusuna ve henüz aksiyon almamış C Oyuncusuna ne olur?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| All-in miktarı | Tam yükseltme mi? | Bahsi yeniden açar mı? |
+| All-in miktarı (no-limit / pot-limit) | Tam yükseltme mi? | Bahsi yeniden açar mı? |
 |--------------|-------------|-----------------|
 | Tam bir yükseltmeden az (tek başına) | Hayır | Hayır — zaten aksiyon almış ve şimdi tam bir bahis veya yükseltmeden azıyla karşı karşıya olan oyuncu sadece görebilir veya pas geçebilir (birden fazla kısa all-in toplamı için aşağıdaki tabloya bak) |
 | Tam yükseltme veya fazlası | Evet | Evet — herkes yeniden yükseltebilir |
@@ -180,6 +180,8 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 
 ### Hızlı karar rehberi — Bu all-in bahsi yeniden açar mı?
 
+Tablo no-limit ve pot-limit içindir. Limit oyunda eşik tam bir yükseltme değil, yarım bahistir.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Durum | Zaten aksiyon alanlar için açılır mı? |
@@ -188,7 +190,7 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 | Tek all-in ≥ tam yükseltme | ✅ Evet — herkes yeniden yükseltebilir |
 | Birden fazla kısa all-in, toplam < tam yükseltme | ❌ Hayır |
 | Birden fazla kısa all-in; oyuncunun son aksiyonundan beri artış ≥ tam bahis/yükseltme | ✅ Evet — yalnızca o oyuncu için |
-| Henüz aksiyon ALMAMIŞ oyuncu | ✅ Her zaman yükseltebilir (ne olursa olsun) |
+| Henüz aksiyon ALMAMIŞ oyuncu | ✅ Yeniden açma sınırı ona hiç uygulanmaz — oyunun kendi bahis sınırları içinde yükseltebilir: no-limit'te kendi stack'i, pot-limit'te pot, limit'te sabit bahis büyüklüğü ve salonun yükseltme tavanı (TDA 2024 Kural 48) |
 
 </div>
 
@@ -217,7 +219,7 @@ Kazanamaz. All-in oyuncu, katkıda bulunduğu ana pot ve yan potlarda hak sahibi
 
 ### Hata 2: Kimin yeniden yükseltebileceği kuralını bilmemek
 
-Kısmi bir all-in, o turda **zaten bet, call ya da raise yapmış** oyunculara yeniden yükseltme şansı vermez — birkaç kısa all-in toplanıp o oyuncunun son aksiyonundan bu yana en az tam bir yükseltmeye ulaşmadıkça. Henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
+No-limit ve pot-limit'te kısmi bir all-in, o turda **zaten bet, call ya da raise yapmış** oyunculara yeniden yükseltme şansı vermez — birkaç kısa all-in toplanıp o oyuncunun son aksiyonundan bu yana en az tam bir yükseltmeye ulaşmadıkça. Henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
 
 ### Hata 3: El ortasında cepten çip eklemek
 
@@ -266,7 +268,7 @@ A. Ana potu (her oyuncudan eşlediğin miktarı) sen alırsın, yan potu diğer 
 
 **Q. All-in gitmek elini açmaya zorlar mı?**
 
-A. Turnuvada evet—bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir. WSOP 2026 B149'a göre yan pot oyuncuları önce gösterir; No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir.
+A. Turnuvada evet—bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir: standart showdown sırası işler — river'daki son agresör önce gösterir (river herkesçe check geçildiyse en erken pozisyondaki oyuncu), ardından diğerleri gösterir ya da muck eder. WSOP 2026 B149'a göre yan pot oyuncuları önce gösterir; No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir.
 
 **Q. Poker all-in'inde "run it twice" yapılabilir mi?**
 
@@ -278,7 +280,7 @@ A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapab
 
 **Q. İki oyuncu farklı miktarlarda all-in giderse önce kim gösterir?**
 
-A. ==r:Turnuvada "kim önce gösterir" sırası yoktur==—bir oyuncu all-in olduğunda ve bahis tamamlandığında kalan bütün eller hemen açılmalıdır (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir; WSOP 2026 B149'a göre yan pot oyuncuları önce gösterir ve No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir. All-in miktarı tek başına kimin başlayacağını belirlemez.
+A. Bet ya da raise olan son all-in, son agresif aksiyondur ve önce o gösterir. Daha az bir miktarla yalnızca call eden all-in agresif sayılmaz — cash oyununda bahis river'da bittiyse ilk bahsi yapan yine önce gösterir (no-limit'te bahis river'dan önce bittiyse all-in'e giden oyuncu önce açar); yan pot varsa WSOP Live Action kuralları pota göre ilerler: yan pottaki herkes, yalnızca ana pot için all-in olan oyuncudan önce gösterir (Kural 149). ==r:Turnuvada burada "kim önce gösterir" sırası hiç yoktur==—all-in bahsi tamamlandığında ilgili bütün eller aynı anda açılır (TDA 2024 Kural 16); gösterme sırasını belirleyen TDA 2024 Kural 17 yalnızca all-in olmayan showdown'lar içindir. Cash oyununda all-in call edildiyse ve başka aksiyon yoksa, call eden oyuncu all-in oyuncunun elini gördükten sonra kaybettiyse kartlarını muck edebilir (turnuvada ilgili bütün eller açık kalır).
 
 **Q. All-in kuralları turnuvalarda ve cash oyunlarında farklı mı?**
 

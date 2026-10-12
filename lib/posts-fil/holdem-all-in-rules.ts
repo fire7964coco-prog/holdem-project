@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Mga Patakaran sa All-In sa Texas Hold'em: Side Pots, Re-Raise at Showdown",
   seoTitle: "Nag-all-in ka, pero litong-lito? — All-In Rules at Side Pots",
   desc: "Isinugod mo lahat ng chips pero di sigurado kung ano ang mapapanalunan mo? Mga all-in rules ng Texas Hold'em: table stakes, side pot, re-raise at showdown.",
-  tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
+  tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang chips na itinaya lampas doon ng dalawa o higit pang mas malalaking stack ay bumubuo ng side pot na sila lang ang puwedeng manalo; kung iisa lang ang may sobrang taya, ibinabalik lang ito sa kanya. Sa No-Limit at Pot-Limit, ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa player na nakakilos na — maliban kung ang ilang short all-in, kapag pinagsama, ay umabot nang hindi bababa sa isang full raise lampas sa nailagay na ng player na iyon.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -63,13 +63,13 @@ Dalawang valid na paraan:
 
 ![All-in showdown sa Texas Hold'em — isang K♠ 10♣ 7♦ 4♥ 2♣ na board na may chips na hiwalay bilang naka-label na main pot at side pot](/images/holdem-all-in-declare.webp)
 
-==r:Huwag na huwag kang magtutulak ng isang chip nang walang sinasabi — bibilangin lang iyon ng dealer bilang halaga ng chip na iyon, hindi ang buong stack mo.== Palaging i-declare nang malakas ang "all-in", o igalaw ang buong stack mo nang minsanan.
+==r:Huwag na huwag kang magtutulak ng iisang malaking chip nang walang sinasabi at aasahang all-in iyon — kung may bet kang hinaharap, bibilangin iyon ng dealer bilang call; kung walang bet, bilang bet na kasinghalaga lang ng chip na iyon.== Palaging i-declare nang malakas ang "all-in", o igalaw ang buong stack mo nang minsanan.
 
 ---
 
 ## Paano Gumagana ang Side Pots sa Poker? (Bakit Naka-cap ang All-In Player)
 
-Ang all-in player ay puwede lang manalo ng inilagay niya, kasama ang katumbas na halagang na-match ng bawat isa pang player na nasa pot pa. Anumang chips na na-bet nang lampas doon ay bumubuo ng **side pot** na pag-aari lang ng mga nagbigay nito.
+Ang all-in player ay puwede lang manalo ng inilagay niya, kasama ang hanggang katumbas na halaga mula sa bawat isa pang player na naglagay ng chips — kasama ang player na nag-fold na pagkatapos, dahil ang chips na naipasok ay nananatili sa pot. Anumang chips na na-bet nang lampas doon ay bumubuo ng **side pot** na pag-aari lang ng mga nagbigay nito — pero kapag dalawa o higit pang player ang naglagay nito. Kung iisa lang ang lampas sa cap, wala siyang kalaban sa side pot at ibinabalik agad sa kanya ang sobra bilang uncalled bet.
 
 ![Side pot pagkatapos ng all-in sa Texas Hold'em — hinihiwalay ng dealer ang chips sa main pot at side pot habang naka-cap si Player A](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Ang patakaran: ==bawat side pot ay binubuo sa pamamagitan ng pagkuha ng differen
 
 ==r:Ito ang pinaka-disputed na all-in rule sa mga live table — nakita ko ang dalawang player na nagtalo tungkol dito nang limang minuto habang naghihintay ang buong mesa. Pareho silang mali.==
 
-**Ang patakaran:** Kung ang isang player ay nag-all-in ng **kulang sa [full raise](/fil/blog/holdem-betting-actions)**, ang all-in na iyon ay HINDI nagbubukas ulit ng betting para sa mga player na nakakilos na sa round na iyon.
+**Ang patakaran (No-Limit at Pot-Limit):** Kung ang isang player ay nag-all-in ng **kulang sa [full raise](/fil/blog/holdem-betting-actions)**, ang all-in na iyon ay HINDI nagbubukas ulit ng betting para sa mga player na nakakilos na sa round na iyon. Mas mababa ang guhit sa Limit games: doon, ang all-in na hindi bababa sa kalahating bet ay nagbubukas ulit ng betting (TDA 2024 Rule 47-B).
 
 ![Re-raise rule pagkatapos ng all-in sa poker — maikling all-in na kulang sa full raise, kaya si Player A na nakakilos na ay puwede lang mag-call o mag-fold](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Ano ang mangyayari kay Player A, at kay Player C na hindi pa nakakilos?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Halaga ng all-in | Full raise? | Nagbubukas ng betting? |
+| Halaga ng all-in (No-Limit / Pot-Limit) | Full raise? | Nagbubukas ng betting? |
 |--------------|-------------|-----------------|
 | Kulang sa full raise | Hindi | Hindi — call o fold lang ang nakakilos na kung kulang sa full bet o raise ang hinaharap niya ngayon |
 | Full raise o higit pa | Oo | Oo — lahat ay puwedeng mag-re-raise ulit |
@@ -174,6 +174,8 @@ Ang minimum raise threshold ay palaging ang *huling full valid bet o raise* — 
 
 ### Mabilis na Decision Guide — Nagbubukas Ba ng Betting ang All-In na Ito?
 
+Para sa No-Limit at Pot-Limit ang table na ito. Sa Limit game, kalahating bet ang threshold, hindi full raise.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Sitwasyon | Nagbubukas para sa mga nakakilos na? |
@@ -182,7 +184,7 @@ Ang minimum raise threshold ay palaging ang *huling full valid bet o raise* — 
 | Iisang all-in ≥ full raise | ✅ Oo — lahat puwedeng mag-re-raise |
 | Maraming maliliit na all-in, combined < full raise | ❌ Hindi |
 | Maraming short all-in; increase mula sa huling action ng player ≥ full bet/raise | ✅ Oo — para lang sa player na iyon |
-| Player na HINDI PA nakakilos | ✅ Laging puwedeng mag-raise (kahit ano pa) |
+| Player na HINDI PA nakakilos | ✅ Hindi kailanman sa kanya umaabot ang limitasyon sa pagbubukas ulit — puwede pa rin siyang mag-raise, sa loob ng sariling betting limits ng laro: ang stack niya sa No-Limit, ang pot sa Pot-Limit, ang fixed na bet size at ang house cap sa raises sa Limit (TDA 2024 Rule 48) |
 
 </div>
 
@@ -209,7 +211,7 @@ Kapag kumpleto na ang lahat ng betting at may all-in na player, ganito ang nangy
 Hindi nila kaya. Kapag naka-cap na ang all-in player, anumang dagdag na chips na na-bet ng mas malalaking stack ay pag-aari ng pot na walang karapatan ang all-in player.
 
 ### Pagkakamali 2: Hindi alam ang re-raise eligibility rule
-Ang partial all-in ay hindi nagbibigay ng pangalawang pagkakataon na mag-re-raise sa mga **nakakilos na** sa round na iyon — ang hindi pa nakakilos ay puwede pa ring mag-raise nang normal. Ang pag-alam nito nang husto ay pumipigil sa mga away bago pa man magsimula.
+Sa No-Limit at Pot-Limit, ang partial all-in ay hindi nagbibigay ng pangalawang pagkakataon na mag-re-raise sa mga **nakakilos na** sa round na iyon — ang hindi pa nakakilos ay puwede pa ring mag-raise nang normal. Ang pag-alam nito nang husto ay pumipigil sa mga away bago pa man magsimula.
 
 ### Pagkakamali 3: Pagdagdag ng chips mula sa bulsa habang nasa gitna ng hand
 Table stakes. Ang nasa mesa ang tanging kaya mong itaya. Kung all-in ka ng $80 at ang pot ay $400, $80 lang ang kaya mong panalunan sa bawat nag-call.
@@ -231,7 +233,7 @@ Ang all-in ang pinakamalakas na galaw sa mesa. Pinipilit nito ang mga kalaban sa
 
 **Q. Puwede ka bang mag-all-in ng kulang sa big blind?**
 
-A. Oo. Kung ang chips mo ay mas kaunti sa big blind, automatic kang all-in sa kung ano man ang hawak mo pagdating ng blinds sa'yo. Babayaran pa rin ng ibang player ang buong big blind — anumang halaga na lampas sa kontribusyon mo ay pupunta sa side pot.
+A. Oo. Kung mas malaki ang blind na dapat mong ilagay kaysa sa buong stack mo, ilalagay mo ang natitira sa'yo at all-in ka na roon (WSOP Live Action Rule 154). Ico-call pa rin ng ibang player ang buong big blind — ang inilagay nila nang lampas sa kontribusyon mo ay bumubuo ng side pot sa pagitan nila, o diretsong ibinabalik sa iisang player bilang uncalled bet.
 
 **Q. Ano ang mangyayari kung mananalo ka sa all-in pero matatalo sa side pot?**
 
@@ -239,11 +241,11 @@ A. Kukunin mo ang main pot (ang na-match mo sa bawat player) at kukunin ng ibang
 
 **Q. Nagpapakita ba ang pag-all-in ng hand mo?**
 
-A. Sa tournament, oo—kapag may all-in at tapos na ang lahat ng betting, kailangang i-table agad ang lahat ng natitirang hand at walang muck (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod. Sa WSOP 2026 B149, unang nagpapakita ang mga nasa side pot; sa No-Limit, kung natapos ang betting bago ang river, unang nagpapakita ang all-in player.
+A. Sa tournament, oo—kapag may all-in at tapos na ang lahat ng betting, kailangang i-table agad ang lahat ng natitirang hand at walang muck (TDA 2024 Rule 16). Sa live cash game, ang karaniwang showdown rules ang masusunod — unang nagpapakita ang huling aggressor sa river (ang player na nasa pinakaunang posisyon, kung na-check through ang river), saka magpapakita o magmu-muck ang iba — maliban kung No-Limit at natapos ang betting bago ang river, kung saan unang nagpapakita ang all-in player (WSOP 2026 B149). Kung may side pot, sa B149 unang nagpapakita ang mga nasa side pot.
 
 **Q. Puwede bang mag-run it twice sa isang poker all-in?**
 
-A. Ang run it twice (pag-deal ng natitirang community cards nang dalawang beses at paghahati ng pot) ay pinapayagan sa maraming cash game kung magkasundo ang dalawang player pagkatapos ng all-in. Karaniwang hindi ito pinapayagan sa tournament. Dapat munang mapagkasunduan ang opsyon bago i-run out ang natitirang community cards.
+A. Ang run it twice (pag-deal ng natitirang community cards nang dalawang beses at paghahati ng pot) ay pinapayagan sa maraming cash game kung, kapag may all-in na at wala nang nakabinbing betting action, pumayag ang lahat ng nasa pot pa — hindi lang kayong dalawa (WSOP Live Action Rules 210 at 211). Karaniwang hindi ito pinapayagan sa tournament. Dapat munang mapagkasunduan ang opsyon bago i-run out ang natitirang community cards.
 
 **Q. Ano nga ba talaga ang "table stakes" rule?**
 
@@ -251,7 +253,7 @@ A. Ang table stakes ay ibig sabihin ang kaya mo lang itaya ay ang chips na nasa 
 
 **Q. Kung dalawang player ang nag-all-in sa magkaibang halaga, sino ang mauuna magpakita?**
 
-A. ==r:Sa tournament, walang "sino ang unang magpapakita"==—kapag may all-in at tapos na ang betting, kailangang i-table agad ang lahat ng natitirang hand (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod; sa WSOP 2026 B149, unang nagpapakita ang mga nasa side pot, at sa No-Limit na natapos ang betting bago ang river, all-in player ang una. Hindi ang laki ng all-in lang ang nagtatakda kung sino ang mauuna.
+A. Ang huling all-in na bet o raise ang huling aggressive action, kaya iyon ang unang nagpapakita. Ang all-in na nag-call lang nang kulang ay hindi aggressive — sa cash game, ang orihinal na bettor pa rin ang unang nagpapakita kapag natapos ang betting sa river (sa No-Limit, kung natapos bago ang river, ang nag-push ng all-in ang unang magbubukas); at kapag may side pot, ayon sa pot ang WSOP Live Action rules: ang sinumang nasa side pot ay nagpapakita bago ang player na all-in para sa main pot lang (WSOP 2026 B149). ==r:Sa tournament, walang "sino ang unang magpapakita" dito==—pagkatapos ng all-in betting, sabay-sabay na binubuksan ang lahat ng kasaling hand (TDA 2024 Rule 16); ang rule na nagtatakda ng order of show, TDA 2024 Rule 17, ay para lang sa showdown na walang all-in. Sa cash game, kung na-call ang all-in at wala nang kasunod na action, puwedeng mag-muck ang caller kung talo siya matapos makita ang hand ng all-in player (sa tournament, nananatiling nakabukas ang lahat ng kasaling hand).
 
 **Q. Iba ba ang all-in rules sa tournament kumpara sa cash game?**
 

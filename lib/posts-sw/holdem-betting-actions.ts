@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Betting Actions za Texas Hold'em: Check, Call, Raise na Fold",
   seoTitle: "Check, Call au Fold? — Sheria za Betting Actions za Poker",
   desc: "Zamu imefika kwako na akili inaganda? Jifunze maana ya check, call, raise na fold, sheria ya min-raise, na mara ngapi unaweza kufanya re-raise.",
-  tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na dau au raise iliyotangulia), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — na kwenye preflop hilo hutokea ukiwa big blind pekee.",
+  tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na bet au raise kamili ya mwisho), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — kwenye preflop kwa kawaida ni big blind pekee (au aliyeweka live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -38,7 +38,7 @@ Texas Hold'em ina ==betting actions 5 tu==, lakini sheria zinazozizunguka (lini 
 :::stripe
 5 | betting actions: check, bet, call, raise, fold
 1 BB | bet ndogo zaidi ya kufungua katika No-Limit Hold'em
-= raise ya mwisho | ukubwa mdogo zaidi wa re-raise (sheria ya nyongeza)
+= raise kamili ya mwisho | ukubwa mdogo zaidi wa re-raise (sheria ya nyongeza)
 Hakuna kikomo | cha re-raise katika No-Limit — unaweza raise hadi mtu awe all-in
 :::
 
@@ -49,10 +49,10 @@ Kila uamuzi mmoja unaoufanya kwenye meza ya poker ni mojawapo ya haya matano:
 | Action | Inapatikana lini | Gharama ya chipsi |
 |--------|---------------|-----------|
 | Fold | Wakati wowote action iko kwako | Bure — lakini unapoteza chipsi ulizoweka tayari kwenye pot |
-| Check | Pale tu hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind pekee) | Bure — unapitisha bila kuongeza chipsi |
+| Check | Pale tu hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind, au mchezaji aliyeweka live straddle) | Bure — unapitisha bila kuongeza chipsi |
 | Call | Baada ya mtu kuweka bet au kufanya raise | Unalingana na bet ya sasa sawasawa |
 | Bet | Dau la kwanza la raundi | Kiasi unachochagua (kiwango cha chini = 1 big blind) |
-| Raise | Baada ya mtu kuweka bet | Angalau ukubwa wa bet au raise iliyotangulia juu yake |
+| Raise | Baada ya mtu kuweka bet | Angalau ukubwa wa bet au raise kamili ya mwisho juu yake |
 
 Kwenda ==all-in== si action ya sita tofauti — ni bet, call, au raise kwa kila chipsi ulizobaki nazo. Zaidi kuhusu hilo hapo chini.
 
@@ -85,13 +85,13 @@ Kwa picha kamili ya street kwa street ya nani anacheza lini, angalia [mpangilio 
 
 ## Call katika Poker ni Nini? (Check vs Call)
 
-Call ina maana ==unalingana na bet ya sasa sawasawa== ili kubaki kwenye mkono. Mtu anaweka bet $10, wewe unafanya call $10 — si zaidi, si pungufu.
+Call ina maana ==unalingana na bet ya sasa sawasawa== ili kubaki kwenye mkono. Mtu anaweka bet $10, wewe unafanya call $10 — si zaidi, si pungufu. (Hata kama umebaki na chini ya $10 bado unaweza ku-call: unakuwa all-in kwa ulichonacho.)
 
 Check vs call ndiyo mkanganyiko wa kawaida zaidi kwa wanaoanza, hivyo hii hapa tofauti safi:
 
 | | Check | Call |
 |-|-------|------|
-| Inapotokea | Hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind pekee) | Mtu ameweka bet kabla yako |
+| Inapotokea | Hakuna bet inayoendelea mbele yako (preflop: ukiwa big blind, au mchezaji aliyeweka live straddle) | Mtu ameweka bet kabla yako |
 | Gharama ya chipsi | Bure | Unalingana na bet ya sasa |
 | Inasema nini | "Napitisha, bado nipo" | "Nalipa kuendelea" |
 
@@ -116,7 +116,7 @@ Sheria moja ya adabu ya live: usifanye fold ==nje ya zamu yako==. Subiri hadi ac
 Katika No-Limit Hold'em (format utakayoicheza karibu kila mara):
 
 - **Bet ya chini kabisa**: 1 big blind
-- **Raise ya chini kabisa (min-raise)**: angalau ==ukubwa wa bet au raise iliyotangulia== iliyoongezwa juu
+- **Raise ya chini kabisa (min-raise)**: angalau ==ukubwa wa bet au raise kamili ya mwisho== iliyoongezwa juu
 - **Kiwango cha juu**: stack yako yote — ndiyo maana ni "no limit"
 
 Mifano miwili iliyofanyiwa hesabu:
@@ -126,11 +126,11 @@ Mifano miwili iliyofanyiwa hesabu:
 | Flop | Mchezaji anaweka bet $6 | $6 zaidi → $12 jumla |
 | Preflop (blinds $1/$2) | Mchezaji anafanya raise hadi $6 (raise ya $4 juu ya blind ya $2) | $4 zaidi → $10 jumla |
 
-Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise ya mwisho, si big blind. Kabla ya flop, big blind inahesabika kama bet ya kufungua, ndiyo maana open-raise ndogo zaidi ni hadi big blind 2.
+Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise kamili ya mwisho, si big blind. ("Kamili" ina maana pale mtu anapoenda all-in kwa chini ya raise: baada ya bet ya $10 na all-in ya $14, nyongeza ya kulingana bado ni $10, hivyo raise ndogo zaidi ni hadi $24.) Kabla ya flop, big blind inahesabika kama bet ya kufungua, ndiyo maana open-raise ndogo zaidi ni hadi big blind 2.
 
 Sheria mbili za live poker zinazokuja na raise:
 
-1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: kusukuma chipsi kwa mienendo kadhaa **bila** kutangaza "raise" kwanza (==WSOP Tournament Rule 103==).
+1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: bet au raise kwa mienendo kadhaa inayojumuisha kurudi kwenye stack yako **bila** kutangaza "raise" kwanza — au ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao (==WSOP Tournament Rule 103==).
 2. **Mwendo mmoja.** Kama hutatangaza, chipsi zako lazima ziingie kwa mwendo mmoja wa mbele.
 
 *Kiasi* gani unatakiwa raise (open za 2.5x, 3-bet za 3x, sizing kulingana na texture ya bodi) ni strategy, si sheria.
@@ -143,7 +143,7 @@ Katika **No-Limit Hold'em: hakuna kikomo**. Unaweza raise, upate re-raise, na ur
 
 Bado kuna mipaka miwili:
 
-- Kila re-raise lazima itimize ==sheria ya nyongeza ya min-raise== iliyotajwa hapo juu
+- Kila re-raise lazima itimize ==sheria ya nyongeza ya min-raise== iliyotajwa hapo juu — isipokuwa all-in pekee, ambayo inaweza kuwa pungufu
 - ==r:Huwezi raise bet yako mwenyewe.== Kama ukiweka bet na kila mtu akafanya call tu, raundi inaisha — unapata nafasi ya kuraise tena tu ikiwa mtu atakufanyia raise *wewe* kwanza
 
 Katika michezo ya **Fixed-Limit**, kila raundi ina kikomo (pot "iliyofungwa"). Sheria za mashindano za WSOP zinaweka kikomo hicho kwenye ==bet moja pamoja na raise nne== (Rule 100.b) — na kipekee chake kinakwenda kinyume na wanavyodhani wengi: ==r:kikomo kinabaki hata kama kwenye mkono huo wamebaki wachezaji wawili tu==. Kinaondoka pale tu **mashindano yote** yanapobaki na watu wawili. Kwenye cash game sheria za nyumba ndizo hutawala, hivyo mwulize dila.
@@ -152,7 +152,7 @@ Katika michezo ya **Fixed-Limit**, kila raundi ina kikomo (pot "iliyofungwa"). S
 
 ## Kwenda All-In Kuna Maana Gani?
 
-All-in ina maana kuweka bet ==kila chipsi ulizobaki nazo==. Unaweza kufanya hivyo wakati wowote action iko kwako — kama bet, call, au raise.
+All-in ina maana kuweka bet ==kila chipsi ulizobaki nazo==. Unaweza kufanya hivyo kwenye zamu yako kama bet, call, au raise — yoyote kati ya hizo iliyo wazi kwako wakati huo.
 
 Kama all-in yako ni *ndogo* kuliko bet ya sasa, hujafold: unashindania tu ==pot kuu== iliyofungwa kwa mchango wako, huku chipsi za ziada kutoka kwa stack kubwa zikitengeneza ==side pot== ambayo huwezi kuishinda. Na all-in ambayo ni *pungufu ya min-raise kamili* kwa kawaida hairudishi nafasi ya raise kwa wachezaji ambao tayari wamecheza — sheria ya hila inayowashangaza hata wachezaji wa kawaida.
 
@@ -174,11 +174,11 @@ Nacheza mchezo wa live wa stakes ndogo kila wiki, na makosa yale yale ya action 
 
 ### Kosa 1 — Kufanya call pale ungeweza check
 
-Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma chipsi **kimyakimya**, "ili kufanya call". Hakuna kitu cha ku-call: kwa mujibu wa ==WSOP Rule 90.a==, bet hufanywa kwa kutamka *au* kwa kusukuma chipsi — ndio kwanza ameweka bet bila kukusudia. Angesema "call" kwa *sauti*, ==Rule 90.b.1== ingeifanya kuwa check tu. Pale street haijafunguliwa, fanya check na uone karata bure.
+Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma chipsi **kimyakimya**, "ili kufanya call". Hakuna kitu cha ku-call: kwa mujibu wa ==WSOP Rule 90.a==, bet hufanywa kwa kutamka *au* kwa kusukuma chipsi — ndio kwanza ameweka bet bila kukusudia. Angesema "call" kwa *sauti*, ==Rule 90.b.1== ingeifanya kuwa check tu. Pale street haijafunguliwa, fanya check — kama hakuna atakayeweka bet nyuma yako, unaona karata inayofuata bure.
 
-### Kosa 2 — String raise
+### Kosa 2 — "Nafanya call... la hasha, raise!"
 
-"Nafanya call... la hasha, raise!" Hapana. Kwenye live poker action yako inakwama pindi unapoitangaza. Nimeshuhudia madila wakihukumu hili kama flat call katikati ya sentensi mara nyingi kuliko ninavyoweza kuhesabu. Tangaza "raise" *kwanza*, kisha sukuma chipsi.
+"Nafanya call... la hasha, raise!" Hapana. Kwenye live poker action yako inakwama pindi unapoitangaza — kwa mujibu wa ==Rule 90.d== tamko la mdomo kwenye zamu yako linafunga. (Hiyo si string bet, kwa njia; string bet ni kusukuma kwa mienendo mingi na kurudi kwenye stack kunakoelezwa kwenye FAQ. Matokeo ni yale yale: neno la kwanza ndilo linalotawala.) Nimeshuhudia madila wakihukumu hili kama flat call katikati ya sentensi mara nyingi kuliko ninavyoweza kuhesabu. Tangaza "raise" *kwanza*, kisha sukuma chipsi.
 
 ### Kosa 3 — Big blind kufold flop ya bure
 
@@ -202,11 +202,11 @@ A. Ndiyo — kama mtu akiweka bet baada ya check yako, unaweza raise pale action
 
 **Q. Unaweza raise bet yako mwenyewe?**
 
-A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaidi — raundi ya betting inaisha. Unaweza raise tena tu ikiwa mchezaji mwingine atakufanyia raise kwanza, jambo linalorudisha action.
+A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaidi — raundi ya betting inaisha. Katika No-Limit na Pot-Limit, unaweza ku-raise tena tu ikiwa action itarudi kwako ukikabiliwa na angalau raise kamili juu ya bet yako — iwe imetoka kwa mchezaji mmoja au all-in fupi kadhaa zikijumlishwa; all-in moja ya chini ya raise kamili hairudishi action. Kwenye Fixed-Limit kiwango ni cha chini zaidi: all-in yenye angalau 50% ya bet au raise kamili huirudisha (TDA 2024 Rule 47-B).
 
 **Q. Unaweza raise mara ngapi katika Texas Hold'em?**
 
-A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi mchezaji awe all-in, mradi kila raise itimize nyongeza ya chini. Kwenye Fixed-Limit, sheria za mashindano za WSOP zinaweka kikomo cha raundi kwenye bet moja pamoja na raise nne (Rule 100.b), na kikomo hicho kinabaki hata kama kwenye mkono huo wamebaki wawili.
+A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi mchezaji awe all-in, mradi kila raise itimize nyongeza ya chini (all-in inaweza kuwa pungufu). Kwenye Fixed-Limit, sheria za mashindano za WSOP zinaweka kikomo cha raundi kwenye bet moja pamoja na raise nne (Rule 100.b), na kikomo hicho kinabaki hata kama kwenye mkono huo wamebaki wawili — kinaondoka tu pale mashindano yote yanapokuwa heads-up.
 
 **Q. Unaweza fold nje ya zamu yako?**
 
@@ -214,7 +214,7 @@ A. Hupaswi. Action lazima iende kwa mpangilio, kwa mwelekeo wa saa, na fold ya n
 
 **Q. Unaweza check kabla ya flop (preflop)?**
 
-A. Kama big blind tu, na tu ikiwa hakuna aliyeraise. BB tayari ameweka bet hai, hivyo anaweza check na kuona flop bure. Kila position nyingine kabla ya flop lazima ifanye call, raise, au fold.
+A. Tu ikiwa post yako mwenyewe ndiyo bet hai kamili ambayo kila mtu lazima ailingane na hakuna aliyeraise — kwa kawaida big blind pale hakuna aliyeweka straddle, au aliyeweka live straddle pale ipo (WSOP Live Action Rules 159 · 165): post hiyo inahesabika kama bet yako ya kufungua, hivyo unaweza check na kuona flop bure. Nusu-bet ya small blind haistahili kamwe, na kwenye pot yenye straddle, big blind ni mchezaji wa kawaida tu anayekabiliwa na bet — kila position ambayo post yake si bet hai hiyo lazima ifanye call, raise, au fold kabla ya flop.
 
 **Q. Unaweza raise baada ya mtu kwenda all-in?**
 
@@ -222,7 +222,7 @@ A. Inategemea ukubwa wa all-in. Kama all-in ni raise kamili halali, action inaru
 
 **Q. String bet katika poker ni nini?**
 
-A. Kuweka chipsi kwa mienendo mingi, au kusema "call" kisha kuongeza raise, bila kutangaza "raise" kwanza. Madila wanahukumu string bet kama call ya kiasi cha awali. Tangaza action yako kwa sauti au sukuma chipsi zote kwa mwendo mmoja.
+A. Kujaribu kuweka bet au raise kwa mienendo mingi — ukirudi kwenye stack yako katikati — bila kutangaza "raise" kwanza (==WSOP Tournament Rule 103==). Mwendo wa pili hauhesabiki kamwe — chipsi za kwanza tu ndizo zinasimama, na zinapimwa kwanza kwa sheria za call ya chipsi moja na chipsi nyingi (TDA 2024 Rules 44–45). Pale kizingiti cha nusu-ya-kiwango-cha-chini cha Rule 43-A kinapotumika, pima ongezeko juu ya call, si jumla ya chipsi: chini ya nusu ya bet au raise kamili kubwa zaidi iliyotangulia ni call; nusu au zaidi inalazimu min-raise kamili. Tamko la awali la raise au all-in hushughulikiwa kwa sheria zake. WSOP Tournament Rule 103 pia inakataza ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao kabla action yako haijakamilika. Kusema "call" kisha kuongeza si string bet bali ni tamko linalofunga (==Rule 90.d==) — athari ni ileile. Tangaza action yako kwa sauti — "raise" na kiasi kamili — au sukuma chipsi zote kwa mwendo mmoja (TDA 2024 Rule 42).
 
 **Q. Kufanya limp katika poker kuna maana gani?**
 

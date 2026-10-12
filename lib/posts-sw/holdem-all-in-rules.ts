@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Sheria za all-in katika Texas Hold'em: side pots, re-raise na showdown",
   seoTitle: "Umeenda all-in halafu umechanganyikiwa? — Sheria za all-in",
   desc: "Umesukuma chipsi zote na dila anatenganisha pot mbili? Sheria za all-in Texas Hold'em: table stakes, main pot, side pot, re-raise na showdown.",
-  tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot); chipsi za ziada za wale wenye stack kubwa hutengeneza side pot ambayo huwezi kuigusa. All-in ya chini ya raise kamili HAIfungui tena dau kwa wale walioshacheza.",
+  tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot). Chipsi za ziada ambazo stack kubwa mbili au zaidi zinaweka juu ya hapo hutengeneza side pot ambayo wao pekee wanaweza kuishinda; dau la ziada la mchezaji mmoja peke yake hurudishwa kwake tu. Katika No-Limit na Pot-Limit, all-in ya chini ya raise kamili HAIfungui tena dau kwa mchezaji ambaye ameshacheza — isipokuwa all-in fupi kadhaa zikijumlishwa zifikie angalau raise kamili juu ya kile mchezaji huyo ameshaweka.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -63,13 +63,13 @@ Kuna njia mbili halali:
 
 ![Showdown ya all-in katika Texas Hold'em — meza yenye K♠ 10♣ 7♦ 4♥ 2♣ na chipsi zimetenganishwa kuwa main pot na side pot zenye lebo](/images/holdem-all-in-declare.webp)
 
-==r:Kamwe usisukume chipsi moja bila kusema chochote — dila ataihesabu kwa thamani ya chipsi hiyo tu, si kama stack yako yote.== Tangaza daima "all-in" kwa sauti, au sogeza stack yako yote kwa mara moja.
+==r:Kamwe usisukume chipsi moja kubwa bila kusema chochote ukitarajia ihesabiwe kama all-in — ukikabiliwa na bet, dila ataihesabu kama call; kama hakuna bet, kama bet ya thamani ya chipsi hiyo tu.== Tangaza daima "all-in" kwa sauti, au sogeza stack yako yote kwa mara moja.
 
 ---
 
 ## Side pot zinafanya kazi vipi katika poker? (Kwa nini mchezaji wa all-in anawekewa kikomo)
 
-Mchezaji wa all-in anaweza kushinda tu kile alichokiweka yeye mwenyewe, pamoja na kiasi kilekile kutoka kwa kila mchezaji mwingine aliyebaki kwenye pot. Chipsi zozote zilizowekwa juu ya kiasi hicho hutengeneza **side pot** inayomilikiwa na wale waliochangia pekee.
+Mchezaji wa all-in anaweza kushinda tu kile alichokiweka yeye mwenyewe, pamoja na hadi kiasi kilekile kutoka kwa kila mchezaji mwingine aliyeweka chipsi — hata yule aliyefold baadaye, kwa sababu chipsi zilizoingia hubaki kwenye pot. Chipsi zozote zilizowekwa juu ya kiasi hicho hutengeneza **side pot** inayomilikiwa na wale waliochangia pekee — lakini tu ikiwa wachezaji wawili au zaidi wameziweka. Ikiwa ni mchezaji mmoja tu aliye juu ya kikomo hicho, hakuna wa kushindana naye kwenye side pot, na ziada hiyo hurudishwa kwake moja kwa moja kama dau ambalo halikuitwa (uncalled bet).
 
 ![Side pot baada ya all-in katika Texas Hold'em — dila anatenganisha chipsi kuwa main pot na side pot wakati Mchezaji A amewekewa kikomo](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Sheria: ==kila side pot hujengwa kwa kuchukua tofauti hadi stack ndogo inayofuat
 
 ==r:Hii ndiyo sheria ya all-in inayoleta migogoro zaidi kwenye meza za moja kwa moja — nimeshuhudia wachezaji wawili wakibishana kuhusu hii kwa dakika tano huku meza nzima ikisubiri. Wote wawili walikuwa wamekosea.==
 
-**Sheria:** Kama mchezaji anaenda all-in kwa **chini ya [raise kamili](/sw/blog/holdem-betting-actions)**, all-in hiyo HAIfungui tena dau kwa wachezaji ambao tayari wamecheza katika raundi hiyo.
+**Sheria (No-Limit na Pot-Limit):** Kama mchezaji anaenda all-in kwa **chini ya [raise kamili](/sw/blog/holdem-betting-actions)**, all-in hiyo HAIfungui tena dau kwa wachezaji ambao tayari wamecheza katika raundi hiyo. Michezo ya Limit inaweka mstari chini zaidi: huko, all-in ya angalau nusu ya bet hufungua tena dau (TDA 2024 Rule 47-B).
 
 ![Sheria ya re-raise baada ya all-in katika poker — all-in fupi chini ya raise kamili, hivyo Mchezaji A ambaye tayari amecheza anaweza ku-call au ku-fold tu](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Kinatokea nini kwa Mchezaji A, na kwa Mchezaji C ambaye bado hajacheza?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Kiasi cha all-in | Raise kamili? | Kinafungua dau? |
+| Kiasi cha all-in (No-Limit / Pot-Limit) | Raise kamili? | Kinafungua dau? |
 |--------------|-------------|-----------------|
 | Chini ya raise kamili | Hapana | Hapana — aliyeshacheza na sasa anakabiliwa na kiasi chini ya bet au raise kamili anaweza ku-call au ku-fold tu |
 | Raise kamili au zaidi | Ndiyo | Ndiyo — wachezaji wote wanaweza ku-re-raise tena |
@@ -174,6 +174,8 @@ Kizingiti cha raise ya chini daima ni *bet au raise kamili halali ya mwisho* —
 
 ### Mwongozo wa haraka wa uamuzi — Je, all-in hii inafungua dau?
 
+Jedwali hili ni la No-Limit na Pot-Limit. Katika mchezo wa Limit, kizingiti ni nusu ya bet, si raise kamili.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hali | Kinafungua kwa walioshacheza? |
@@ -182,7 +184,7 @@ Kizingiti cha raise ya chini daima ni *bet au raise kamili halali ya mwisho* —
 | All-in moja ≥ raise kamili | ✅ Ndiyo — wote wanaweza ku-re-raise |
 | All-in ndogo kadhaa, jumla < raise kamili | ❌ Hapana |
 | All-in ndogo kadhaa; ongezeko tangu action ya mwisho ya mchezaji ≥ bet/raise kamili | ✅ Ndiyo — kwa mchezaji huyo tu |
-| Mchezaji ambaye BADO hajacheza | ✅ Daima anaweza ku-raise (bila kujali) |
+| Mchezaji ambaye BADO hajacheza | ✅ Kizuizi cha kufungua tena hakimhusu kamwe — bado anaweza ku-raise, ndani ya mipaka ya dau ya mchezo wenyewe: stack yake katika No-Limit, pot katika Pot-Limit, ukubwa maalum wa bet na kikomo cha house cha raise katika Limit (TDA 2024 Rule 48) |
 
 </div>
 
@@ -209,7 +211,7 @@ Wakati dau lote limekamilika na kuna mchezaji wa all-in, hivi ndivyo kinachotoke
 Hawezi. Ukishawekewa kikomo mchezaji wa all-in, chipsi zozote za ziada zilizowekwa na wenye stack kubwa zinamilikiwa na pot ambayo mchezaji wa all-in hana haki nayo.
 
 ### Kosa la 2: Kutojua sheria ya nani anaruhusiwa ku-re-raise
-All-in ya sehemu haiwapi nafasi ya pili ya ku-re-raise wale ambao **tayari wamecheza** raundi hiyo — ambaye bado hajacheza anaweza ku-raise kama kawaida. Kuijua hii vizuri kunakomesha migogoro kabla haijaanza.
+Katika No-Limit na Pot-Limit, all-in ya sehemu haiwapi nafasi ya pili ya ku-re-raise wale ambao **tayari wamecheza** raundi hiyo — ambaye bado hajacheza anaweza ku-raise kama kawaida. Kuijua hii vizuri kunakomesha migogoro kabla haijaanza.
 
 ### Kosa la 3: Kuongeza chipsi kutoka mfukoni katikati ya mkono
 Table stakes. Kilichopo mezani ndicho chote unachoweza kuweka dau. Kama uko all-in kwa $80 na pot ni $400, unaweza kushinda tu $80 kutoka kwa kila aliye-call.
@@ -231,7 +233,7 @@ All-in ni mchukuo wenye nguvu zaidi mezani. Unawalazimisha wapinzani kuingia kwe
 
 **Q. Je, unaweza kwenda all-in kwa chini ya big blind?**
 
-A. Ndiyo. Kama umekaa na chipsi chache kuliko big blind, unakuwa all-in kiotomatiki kwa kile ulichonacho blinds zinapokuja. Wachezaji wengine bado wanalipa big blind kamili — kiasi chochote juu ya mchango wako kinaenda kwenye side pot.
+A. Ndiyo. Kama blind unayodaiwa ni kubwa kuliko stack yako yote, unaweka kilichobaki na unakuwa all-in kwa kiasi hicho (WSOP Live Action Rule 154). Wachezaji wengine bado wanacall big blind kamili — wanachoweka juu ya mchango wako hutengeneza side pot kati yao, au hurudi moja kwa moja kwa mchezaji mmoja peke yake kama uncalled bet.
 
 **Q. Kinatokea nini ukishinda all-in lakini ukapoteza side pot?**
 
@@ -239,11 +241,11 @@ A. Unachukua main pot (kile ulichokilingana kutoka kwa kila mchezaji) na mchezaj
 
 **Q. Je, kwenda all-in kunafichua mkono wako?**
 
-A. Kwenye tournament, ndiyo—mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja na haiwezi kuwa muck (TDA 2024 Rule 16). Kwenye cash game, house rule inatumika. Kwa WSOP 2026 B149, wachezaji wa side pot huonyesha kwanza; katika No-Limit, betting ikiisha kabla ya river, mchezaji wa all-in huonyesha kwanza.
+A. Kwenye tournament, ndiyo—mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja na haiwezi kuwa muck (TDA 2024 Rule 16). Kwenye live cash game, sheria za kawaida za showdown zinatumika — aggressor wa mwisho kwenye river huonyesha kwanza (mchezaji wa nafasi ya mapema zaidi, kama river ilicheckiwa hadi mwisho), kisha wengine huonyesha au hufanya muck — isipokuwa ni No-Limit na betting iliisha kabla ya river, ambapo mchezaji wa all-in huonyesha kwanza (WSOP 2026 B149). Kukiwa na side pot, kwa B149 wachezaji wa side pot huonyesha kwanza.
 
 **Q. Je, unaweza ku-run it twice kwenye all-in ya poker?**
 
-A. Ku-run it twice (kugawa karata za pamoja zilizobaki mara mbili na kugawanya pot) kunaruhusiwa kwenye michezo mingi ya cash kama wachezaji wote wawili wanakubaliana baada ya all-in. Kwa ujumla hakuruhusiwi kwenye tournament. Chaguo hilo lazima likubaliwe kabla ya karata za pamoja zilizobaki kutolewa.
+A. Ku-run it twice (kugawa karata za pamoja zilizobaki mara mbili na kugawanya pot) kunaruhusiwa kwenye michezo mingi ya cash kama, mtu akishakuwa all-in na hakuna action ya dau inayosubiri, wachezaji wote waliobaki kwenye pot wanakubali — si nyinyi wawili tu (WSOP Live Action Rules 210 na 211). Kwa ujumla hakuruhusiwi kwenye tournament. Chaguo hilo lazima likubaliwe kabla ya karata za pamoja zilizobaki kutolewa.
 
 **Q. Sheria ya "table stakes" ni ipi hasa?**
 
@@ -251,7 +253,7 @@ A. Table stakes maana yake unaweza kuweka dau tu la chipsi zilizokuwa mbele yako
 
 **Q. Kama wachezaji wawili wanaenda all-in kwa viasi tofauti, nani anaonyesha kwanza?**
 
-A. ==r:Kwenye tournament hakuna mpangilio wa "nani anaonyesha kwanza"==—mchezaji akiwa all-in na betting imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja (TDA 2024 Rule 16). Kwenye cash game, house rule inatumika; kwa WSOP 2026 B149, wachezaji wa side pot huonyesha kwanza, na katika No-Limit iliyokamilika kabla ya river, mchezaji wa all-in huonyesha kwanza. Kiasi cha all-in peke yake hakiamui anayeanza.
+A. All-in ya mwisho iliyokuwa bet au raise ndiyo action ya mwisho ya kishambulizi, na huonyesha kwanza. All-in inayocall tu kwa kiasi pungufu si ya kishambulizi — kwenye cash game, mweka bet wa awali bado huonyesha kwanza betting ikiisha kwenye river (katika No-Limit, ikiisha kabla ya river, aliyesukuma all-in hufungua kwanza); na kukiwa na side pot, sheria za WSOP Live Action huenda kwa pot: yeyote aliye kwenye side pot huonyesha kabla ya mchezaji aliye all-in kwa main pot tu (WSOP 2026 B149). ==r:Kwenye tournament hakuna mpangilio wa "nani anaonyesha kwanza" hapa kabisa==—betting ya all-in ikikamilika, mikono yote inayohusika hufunuliwa kwa wakati mmoja (TDA 2024 Rule 16); sheria inayoweka mpangilio wa kuonyesha, TDA 2024 Rule 17, inahusu showdown zisizo na all-in tu. Kwenye cash game, kama ilikuwa all-in iliyocallwa bila action zaidi, aliyecall anaweza kufanya muck akishindwa baada ya kuona mkono wa mchezaji wa all-in (kwenye tournament mikono yote inayohusika hubaki wazi).
 
 **Q. Je, sheria za all-in ni tofauti kwenye tournament dhidi ya michezo ya cash?**
 

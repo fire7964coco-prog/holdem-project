@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Azioni di puntata nel Texas Hold'em: check, chiamare, rilanciare, passare",
   seoTitle: "Check, chiamare o passare? — Le azioni del poker",
   desc: "Tocca a te e vai nel pallone? Ecco cosa significano check, chiamare, rilanciare e passare, la regola del min-raise e quante volte puoi rilanciare.",
-  tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o rilancio) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop questo vale solo per il big blind.",
+  tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o all'ultimo rilancio completo) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop, di norma, questo vale solo per il big blind (o per chi ha messo uno straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -38,7 +38,7 @@ Nel Texas Hold'em esistono solo ==5 azioni di puntata==, ma le regole che ci gir
 :::stripe
 5 | azioni di puntata: check, puntare, chiamare, rilanciare, passare
 1 BB | puntata minima di apertura nel No-Limit Hold'em
-= ultimo rilancio | dimensione minima del re-rilancio (la regola dell'incremento)
+= ultimo rilancio completo | dimensione minima del re-rilancio (la regola dell'incremento)
 Nessun limite | ai re-rilanci nel No-Limit — puoi rilanciare finché qualcuno non va all-in
 :::
 
@@ -49,10 +49,10 @@ Ogni singola decisione che prendi a un tavolo da poker è una di queste cinque:
 | Azione | Quando è disponibile | Costo in fiches |
 |--------|---------------|-----------|
 | Passare (fold) | Ogni volta che tocca a te | Gratis — ma perdi le fiches già nel piatto |
-| Check | Solo se davanti a te non c'è una puntata viva (preflop: solo come big blind) | Gratis — passi senza mettere fiches |
+| Check | Solo se davanti a te non c'è una puntata viva (preflop: come big blind, o come il giocatore che ha messo uno straddle vivo) | Gratis — passi senza mettere fiches |
 | Chiamare (call) | Dopo che qualcuno ha puntato o rilanciato | Pareggi esattamente la puntata in corso |
 | Puntare (bet) | Prima puntata del giro | La cifra che scegli (minimo = 1 grande buio) |
-| Rilanciare (raise) | Dopo che qualcuno ha puntato | Almeno la dimensione della puntata o del rilancio precedente in più |
+| Rilanciare (raise) | Dopo che qualcuno ha puntato | Almeno la dimensione dell'ultima puntata o dell'ultimo rilancio completo in più |
 
 Andare ==all-in== non è una sesta azione a sé: è una puntata, una chiamata o un rilancio con tutte le fiches che ti restano. Più avanti lo vediamo nel dettaglio.
 
@@ -85,13 +85,13 @@ Per il quadro completo di chi agisce e quando, street per street, guarda l'[ordi
 
 ## Cosa vuol dire chiamare nel poker? (check vs chiamare)
 
-Chiamare (o vedere) significa che ==pareggi esattamente la puntata in corso== per restare in mano. Qualcuno punta $10, tu chiami $10 — né più, né meno.
+Chiamare (o vedere) significa che ==pareggi esattamente la puntata in corso== per restare in mano. Qualcuno punta $10, tu chiami $10 — né più, né meno. (Se ti restano meno di $10 puoi chiamare lo stesso: vai all-in per quello che hai.)
 
 Check vs chiamare è la confusione da principiante più diffusa in assoluto, quindi ecco la distinzione netta:
 
 | | Check | Chiamare |
 |-|-------|------|
-| Quando esiste | Davanti a te non c'è una puntata viva (preflop: solo come big blind) | Qualcuno ha puntato prima di te |
+| Quando esiste | Davanti a te non c'è una puntata viva (preflop: come big blind, o come il giocatore che ha messo uno straddle vivo) | Qualcuno ha puntato prima di te |
 | Costo in fiches | Gratis | Pareggi la puntata in corso |
 | Cosa dice | "Passo, resto dentro" | "Pago per continuare" |
 
@@ -116,7 +116,7 @@ Una regola di etiquette dal vivo: non passare ==fuori turno==. Aspetta che l'azi
 Nel No-Limit Hold'em (il formato che giocherai quasi sempre):
 
 - **Puntata minima**: 1 grande buio
-- **Rilancio minimo (il min-raise)**: almeno ==la dimensione della puntata o del rilancio precedente== aggiunta sopra
+- **Rilancio minimo (il min-raise)**: almeno ==la dimensione dell'ultima puntata o dell'ultimo rilancio completo== aggiunta sopra
 - **Massimo**: tutto il tuo stack — ecco il "no limit"
 
 Due esempi svolti:
@@ -126,11 +126,11 @@ Due esempi svolti:
 | Flop | Un giocatore punta $6 | $6 in più → $12 in totale |
 | Preflop (bui $1/$2) | Un giocatore rilancia a $6 (un rilancio di $4 sopra il buio da $2) | $4 in più → $10 in totale |
 
-Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o rilancio, non al grande buio. Preflop, il grande buio conta come puntata di apertura, ed è per questo che il rilancio d'apertura più piccolo è a 2 grandi bui.
+Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o dell'ultimo rilancio completo, non al grande buio. ("Completo" conta quando qualcuno va all-in per meno di un rilancio: dopo una puntata da $10 e un all-in da $14, l'incremento da pareggiare resta $10, quindi il rilancio minimo è a $24.) Preflop, il grande buio conta come puntata di apertura, ed è per questo che il rilancio d'apertura più piccolo è a 2 grandi bui.
 
 Due regole del poker dal vivo che arrivano insieme al rilancio:
 
-1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: mettere fiches in più movimenti **senza** annunciare prima "rilancio" (==regola 103 dei tornei WSOP==).
+1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: puntare o rilanciare in più movimenti che includono un ritorno al tuo stack, **senza** annunciare prima "rilancio" — oppure un gesto ingannevole fatto per indurre un'azione fuori turno (==regola 103 dei tornei WSOP==).
 2. **Un solo movimento.** Se non annunci, le tue fiches devono entrare con un unico gesto in avanti.
 
 *Quanto* dovresti rilanciare (aperture da 2,5x, 3-bet da 3x, sizing in base alla texture del board) è strategia, non regole — quella è un altro discorso.
@@ -143,7 +143,7 @@ Nel **No-Limit Hold'em: non c'è limite**. Puoi rilanciare, farti re-rilanciare 
 
 Restano comunque due paletti:
 
-- Ogni re-rilancio deve rispettare la ==regola dell'incremento minimo== di sopra
+- Ogni re-rilancio deve rispettare la ==regola dell'incremento minimo== di sopra — l'unica eccezione è l'all-in, che può essere inferiore
 - ==r:Non puoi rilanciare la tua stessa puntata.== Se punti e tutti si limitano a chiamare, il giro finisce — puoi rilanciare di nuovo solo se qualcuno rilancia *te* per primo
 
 Nelle partite **Fixed-Limit** ogni giro è cappato (piatto "cappato"). Le regole da torneo WSOP fissano il tetto a ==una puntata più quattro rilanci== (regola 100.b) — e l'eccezione funziona al contrario di come quasi tutti se l'aspettano: ==r:il tetto resta anche se nella mano sono rimasti solo due giocatori==. Cade solo quando è l'**intero torneo** a essere heads-up. Nel cash valgono le regole della casa, quindi chiedi al mazziere.
@@ -152,7 +152,7 @@ Nelle partite **Fixed-Limit** ogni giro è cappato (piatto "cappato"). Le regole
 
 ## Cosa significa andare all-in?
 
-Andare all-in significa puntare ==tutte le fiches che ti restano==. Puoi farlo in qualsiasi momento in cui l'azione tocca a te — come puntata, come chiamata o come rilancio.
+Andare all-in significa puntare ==tutte le fiches che ti restano==. Puoi farlo quando tocca a te, come puntata, chiamata o rilancio — quella delle tre che in quel momento ti è consentita.
 
 Se il tuo all-in è *inferiore* alla puntata in corso, non sei fuori: semplicemente competi per un ==piatto principale== limitato al tuo contributo, mentre le fiches extra degli stack più grandi formano un ==side pot (piatto laterale)== che tu non puoi vincere. E un all-in *più piccolo di un min-raise completo* di norma non riapre l'azione per i giocatori che hanno già agito — una regola sottile che sorprende anche i più esperti.
 
@@ -174,11 +174,11 @@ Gioco una partita settimanale dal vivo a basse poste, e gli stessi errori di azi
 
 ### Errore 1 — Chiamare quando potresti fare check
 
-Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spinge dentro le fiches **in silenzio**, "per chiamare". Non c'è niente da chiamare: per la ==regola 90.a WSOP== si punta per dichiarazione *o* spingendo fiches — ha appena puntato senza volerlo. Se avesse *detto* "chiamo", la ==regola 90.b.1== ne avrebbe fatto un check. Quando la street è ancora chiusa, fai check e vedi la carta gratis.
+Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spinge dentro le fiches **in silenzio**, "per chiamare". Non c'è niente da chiamare: per la ==regola 90.a WSOP== si punta per dichiarazione *o* spingendo fiches — ha appena puntato senza volerlo. Se avesse *detto* "chiamo", la ==regola 90.b.1== ne avrebbe fatto un check. Quando la street è ancora chiusa, fai check — se dietro di te nessuno punta, vedi la carta successiva gratis.
 
-### Errore 2 — Lo string raise
+### Errore 2 — "Chiamo... anzi no, rilancio!"
 
-"Chiamo... anzi no, rilancio!" Niente da fare. Nel poker dal vivo la tua azione si fissa nell'istante in cui la annunci. Ho visto mazzieri giudicarlo una chiamata a metà frase più volte di quante ne possa contare. Annuncia "rilancio" *prima*, poi muovi le fiches.
+"Chiamo... anzi no, rilancio!" Niente da fare. Nel poker dal vivo la tua azione si fissa nell'istante in cui la annunci: per la ==regola 90.d== una dichiarazione verbale fatta nel tuo turno è vincolante. (E non è uno string bet: lo string bet è la spinta in più movimenti con ritorno allo stack di cui parlo nelle FAQ. Il risultato però è lo stesso: vale la prima parola.) Ho visto mazzieri giudicarlo una chiamata a metà frase più volte di quante ne possa contare. Annuncia "rilancio" *prima*, poi muovi le fiches.
 
 ### Errore 3 — Il grande buio che butta un flop gratis
 
@@ -203,11 +203,11 @@ A. Sì — se qualcuno punta dopo il tuo check, puoi rilanciare quando l'azione 
 
 **Q. Puoi rilanciare la tua stessa puntata?**
 
-A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altro — il giro di puntate finisce. Puoi rilanciare di nuovo solo se un altro giocatore rilancia te per primo, il che riapre l'azione.
+A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altro — il giro di puntate finisce. Nel No-Limit e nel Pot-Limit puoi rilanciare di nuovo solo se l'azione torna a te e davanti hai almeno un rilancio completo sopra la tua puntata — che l'abbia fatto un solo giocatore o che ci arrivino sommati più all-in corti; un singolo all-in inferiore a un rilancio completo non riapre l'azione. Nel Fixed-Limit la soglia è più bassa: la riapre un all-in pari ad almeno il 50% di una puntata o di un rilancio completo (TDA 2024, regola 47-B).
 
 **Q. Quante volte si può rilanciare nel Texas Hold'em?**
 
-A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché un giocatore non va all-in, purché ogni rilancio rispetti l'incremento minimo. Nel Fixed-Limit le regole da torneo WSOP cappano il giro a una puntata più quattro rilanci (regola 100.b), e il tetto resta anche se nella mano sono rimasti solo due giocatori.
+A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché un giocatore non va all-in, purché ogni rilancio rispetti l'incremento minimo (l'all-in può essere inferiore). Nel Fixed-Limit le regole da torneo WSOP cappano il giro a una puntata più quattro rilanci (regola 100.b), e il tetto resta anche se nella mano sono rimasti solo due giocatori — cade solo quando l'intero torneo è heads-up.
 
 **Q. Si può passare fuori turno?**
 
@@ -215,7 +215,7 @@ A. Meglio di no. L'azione deve procedere in senso orario, nell'ordine, e un fold
 
 **Q. Si può fare check nel preflop?**
 
-A. Solo come grande buio, e solo se nessuno ha rilanciato. Il BB ha già messo una puntata viva, quindi può fare check e vedere il flop gratis. Ogni altra posizione preflop deve chiamare, rilanciare o passare.
+A. Solo se la tua puntata obbligatoria è la puntata viva completa che tutti gli altri devono pareggiare e nessuno ha rilanciato — di norma il grande buio quando nessuno ha messo lo straddle, oppure il giocatore dello straddle vivo quando qualcuno l'ha messo (regole 159 e 165 delle WSOP Live Action Rules): quella puntata vale come tua apertura, quindi puoi fare check e vedere il flop gratis. La mezza puntata del piccolo buio non conta mai, e in un piatto con straddle il grande buio è solo un altro giocatore che ha davanti una puntata: ogni posizione la cui puntata non sia quella puntata viva deve chiamare, rilanciare o passare preflop.
 
 **Q. Si può rilanciare dopo che qualcuno è andato all-in?**
 
@@ -223,7 +223,7 @@ A. Dipende dalla dimensione dell'all-in. Se l'all-in è un rilancio legale compl
 
 **Q. Cos'è uno string bet nel poker?**
 
-A. Mettere le fiches in più movimenti senza aver annunciato "rilancio" prima (==regola 103 dei tornei WSOP==). I mazzieri giudicano lo string bet come una chiamata della cifra iniziale. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce oppure sposta tutte le fiches in un solo movimento.
+A. Cercare di puntare o rilanciare in più movimenti — tornando al tuo stack nel mezzo — senza aver annunciato "rilancio" prima (==regola 103 dei tornei WSOP==). Il secondo movimento non conta mai: valgono solo le prime fiches, giudicate prima con le regole sulla chiamata con una o più fiches (TDA 2024, regole 44–45). Dove si applica la soglia della metà della regola 43-A, si misura l'aumento sopra la chiamata, non il totale delle fiches: sotto la metà della più grande puntata o rilancio completo precedente è una chiamata; dalla metà in su devi completare un min-raise. Una dichiarazione di rilancio fatta prima o un all-in seguono le loro regole. La regola 103 dei tornei WSOP vieta anche un gesto ingannevole fatto per indurre un'azione fuori turno prima che la tua azione sia completa. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce — "rilancio" e la cifra completa — oppure sposta tutte le fiches in un solo movimento (TDA 2024, regola 42).
 
 **Q. Cosa significa fare limp nel poker?**
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Zasady all-in w Texas Hold'em: pula boczna, przebicia i showdown",
   seoTitle: "All-in i nie wiesz, co możesz wygrać? — zasady i pula boczna",
   desc: "Wchodzisz all-in, a rozdający dzieli żetony na dwa stosy. Zasady all-in w Texas Hold'em: table stakes, główna pula, pula boczna, przebicia i showdown.",
-  tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
+  tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula). Żetony, które dwa lub więcej większych stacków postawi ponad tę kwotę, tworzą pulę boczną, którą mogą wygrać tylko oni; nadwyżka jednego gracza po prostu do niego wraca. W No-Limit i Pot-Limit all-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla gracza, który już zagrał — chyba że kilka krótkich all-inów razem da co najmniej pełne przebicie ponad to, co ten gracz już wrzucił.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -63,13 +63,13 @@ Są dwa poprawne sposoby:
 
 ![Showdown all-in w Texas Hold'em — stół z K♠ 10♣ 7♦ 4♥ 2♣ i żetonami rozdzielonymi na opisaną główną pulę i pulę boczną](/images/holdem-all-in-declare.webp)
 
-==r:Nigdy nie wypychaj pojedynczego żetonu bez słowa — rozdający policzy go tylko według wartości tego żetonu, a nie jako cały twój stack.== Zawsze deklaruj "all-in" na głos albo przesuń cały stack jednym ruchem.
+==r:Nigdy nie wypychaj bez słowa pojedynczego dużego żetonu, licząc, że przejdzie jako all-in — gdy masz przed sobą zakład, rozdający uzna go za sprawdzenie; gdy żadnego zakładu nie ma, za zakład tylko w wysokości tego jednego żetonu.== Zawsze deklaruj "all-in" na głos albo przesuń cały stack jednym ruchem.
 
 ---
 
 ## Jak działa pula boczna w pokerze? (Dlaczego gracz all-in ma limit)
 
-Gracz all-in może wygrać tylko tyle, ile wrzucił, plus wyrównaną kwotę od każdego innego gracza, który wciąż jest w puli. Wszystkie żetony postawione ponad tę kwotę tworzą **pulę boczną (side pot)**, która należy wyłącznie do graczy, którzy ją zasilili.
+Gracz all-in może wygrać tylko tyle, ile wrzucił, plus co najwyżej tyle samo od każdego innego gracza, który wrzucił żetony — także od tego, kto potem spasował, bo wrzucone żetony zostają w puli. Wszystkie żetony postawione ponad tę kwotę tworzą **pulę boczną (side pot)**, która należy wyłącznie do graczy, którzy ją zasilili — ale tylko jeśli wrzuciło je co najmniej dwóch graczy. Jeśli ponad limit jest tylko jeden gracz, nie ma z kim walczyć o pulę boczną, a nadwyżka od razu wraca do niego jako niesprawdzony zakład.
 
 ![Pula boczna po all-inie w Texas Hold'em — rozdający oddziela żetony na główną pulę i pulę boczną, gdy Gracz A ma nałożony limit](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Zasada: ==każdą pulę boczną tworzy się, biorąc różnicę do następnego n
 
 ==r:To reguła all-in, która wywołuje najwięcej kłótni przy stołach na żywo — widziałem, jak dwaj gracze spierali się o nią pięć minut, a cały stół czekał. Obaj byli w błędzie.==
 
-**Reguła:** jeśli gracz wchodzi all-in za **mniej niż pełne [przebicie](/pl/blog/holdem-betting-actions)**, ten all-in NIE otwiera na nowo licytacji dla graczy, którzy już zagrali w tej rundzie.
+**Reguła (No-Limit i Pot-Limit):** jeśli gracz wchodzi all-in za **mniej niż pełne [przebicie](/pl/blog/holdem-betting-actions)**, ten all-in NIE otwiera na nowo licytacji dla graczy, którzy już zagrali w tej rundzie. W grach Limit granica leży niżej: tam licytację otwiera na nowo all-in wart co najmniej pół zakładu (TDA 2024, zasada 47-B).
 
 ![Reguła przebicia po all-inie w pokerze — krótki all-in za mniej niż pełne przebicie, więc Gracz A, który już zagrał, może tylko sprawdzić lub spasować](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Co dzieje się z Graczem A i z Graczem C, który jeszcze nie zagrał?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Kwota all-inu | Pełne przebicie? | Otwiera licytację? |
+| Kwota all-inu (No-Limit / Pot-Limit) | Pełne przebicie? | Otwiera licytację? |
 |--------------|-------------|-----------------|
 | Mniej niż pełne przebicie | Nie | Nie — kto już zagrał i teraz ma przed sobą mniej niż pełny zakład lub pełne przebicie, może tylko sprawdzić lub spasować |
 | Pełne przebicie lub więcej | Tak | Tak — wszyscy mogą znów przebić |
@@ -174,6 +174,8 @@ Próg minimalnego przebicia to zawsze *ostatni pełny prawidłowy zakład lub pr
 
 ### Szybki przewodnik decyzyjny — czy ten all-in otwiera licytację?
 
+Tabela dotyczy No-Limit i Pot-Limit. W grze Limit progiem jest pół zakładu, a nie pełne przebicie.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Sytuacja | Otwiera dla tych, którzy już zagrali? |
@@ -182,7 +184,7 @@ Próg minimalnego przebicia to zawsze *ostatni pełny prawidłowy zakład lub pr
 | Pojedynczy all-in ≥ pełne przebicie | ✅ Tak — wszyscy mogą przebić |
 | Kilka krótkich all-inów, suma < pełne przebicie | ❌ Nie |
 | Kilka krótkich all-inów, przyrost od ostatniej akcji gracza ≥ pełny zakład lub przebicie | ✅ Tak, dla tego gracza |
-| Gracz, który JESZCZE nie zagrał | ✅ Zawsze może przebić (niezależnie od reszty) |
+| Gracz, który JESZCZE nie zagrał | ✅ Ograniczenie ponownego otwarcia nigdy go nie dotyczy — wciąż może przebić, w granicach limitów samej gry: swojego stacka w No-Limit, puli w Pot-Limit, stałego zakładu i limitu przebić ustalonego przez kasyno w Limit (TDA 2024, zasada 48) |
 
 </div>
 
@@ -211,7 +213,7 @@ Nie może. Gdy gracz all-in ma już nałożony limit, każdy dodatkowy żeton po
 
 ### Błąd 2: nieznajomość reguły, kto może przebić
 
-Częściowy all-in nie daje drugiej szansy na przebicie tym, którzy **już zagrali** w tej rundzie — kto jeszcze nie zagrał, może przebijać normalnie. Znajomość tego na wylot ucina kłótnie, zanim się zaczną.
+W No-Limit i Pot-Limit częściowy all-in nie daje drugiej szansy na przebicie tym, którzy **już zagrali** w tej rundzie — kto jeszcze nie zagrał, może przebijać normalnie. Znajomość tego na wylot ucina kłótnie, zanim się zaczną.
 
 ### Błąd 3: dokładanie żetonów z kieszeni w środku rozdania
 
@@ -236,7 +238,7 @@ All-in to najpotężniejszy ruch przy stole. Zmusza rywali do decyzji na zasadzi
 
 **Q. Czy można wejść all-in za mniej niż duży blind?**
 
-A. Tak. Jeśli masz mniej żetonów niż duży blind, to gdy przychodzi twoja kolej, automatycznie jesteś all-in za tyle, ile masz. Reszta graczy i tak wpłaca pełny duży blind — wszystko ponad twój wkład idzie do puli bocznej.
+A. Tak. Jeśli blind, który musisz wpłacić, jest większy niż cały twój stack, wpłacasz to, co ci zostało, i jesteś za to all-in (zasada 154 WSOP Live Action Rules). Pozostali gracze i tak sprawdzają pełny duży blind — to, co wrzucą ponad twój wkład, tworzy pulę boczną między nimi albo, jeśli dołożył to tylko jeden gracz, wraca prosto do niego jako niesprawdzony zakład.
 
 **Q. Co się dzieje, jeśli wygrasz all-in, ale przegrasz pulę boczną?**
 
@@ -248,7 +250,7 @@ A. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie po
 
 **Q. Czy przy all-inie można zrobić "run it twice"?**
 
-A. Rozdanie pozostałych kart wspólnych dwa razy i podział puli (run it twice) jest dozwolone w wielu grach cash, jeśli obaj gracze zgodzą się po all-inie. W turniejach zwykle się tego nie dopuszcza. Trzeba to ustalić przed rozdaniem brakujących kart.
+A. Rozdanie pozostałych kart wspólnych dwa razy i podział puli (run it twice) jest dozwolone w wielu grach cash, jeśli — gdy ktoś jest już all-in i nie czeka żadna akcja licytacyjna — zgodzą się wszyscy gracze, którzy wciąż są w puli, a nie tylko dwóch z nich (zasady 210 i 211 WSOP Live Action Rules). W turniejach zwykle się tego nie dopuszcza. Trzeba to ustalić przed rozdaniem brakujących kart.
 
 **Q. Na czym dokładnie polega reguła "table stakes"?**
 
@@ -256,11 +258,11 @@ A. Table stakes oznacza, że możesz obstawiać tylko te żetony, które miałe�
 
 **Q. Jeśli dwaj gracze wejdą all-in za różne kwoty, kto pokazuje pierwszy?**
 
-A. ==r:W turnieju nie czeka się na swoją kolej pokazywania==: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali. Same kwoty all-inów nie określają więc, kto pokazuje pierwszy.
+A. Ostatni all-in, który był zakładem lub przebiciem, to ostatnia agresywna akcja i ten gracz pokazuje pierwszy. All-in, który tylko sprawdza za mniej, nie jest agresywny — w cashu, jeśli licytacja skończyła się na riverze, pierwszy pokazuje nadal ten, kto pierwotnie postawił (w No-Limit, jeśli skończyła się przed riverem, pierwszy odkrywa karty gracz, który wszedł all-in); a gdy jest pula boczna, WSOP Live Action Rules idą według pul: kto jest w puli bocznej, pokazuje przed graczem, który jest all-in tylko o główną pulę (zasada 149). ==r:W turnieju nie ma tu w ogóle kolejności pokazywania== — gdy licytacja przy all-inie się zakończy, wszystkie ręce biorące udział odkrywa się jednocześnie (TDA 2024, zasada 16); zasada ustalająca kolejność, zasada 17 TDA 2024, dotyczy wyłącznie showdownów bez all-inu. W cashu, jeśli był to sprawdzony all-in bez dalszej akcji, sprawdzający może zmuckować karty, jeśli przegrywa po zobaczeniu ręki gracza all-in (w turniejach wszystkie ręce biorące udział zostają odkryte).
 
 **Q. Czy zasady all-in różnią się w turniejach i w cashu?**
 
-A. Rdzeń jest ten sam, z dwiema praktycznymi różnicami. Pierwsza: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu kolejność określają zasady pokoju, w tym warunki B149 na WSOP, a muck nie jest ogólnie zakazany. Druga: run it twice jest częsty w cashu (jeśli obaj gracze się zgodzą), ale w turniejach zwykle jest niedozwolony.
+A. Rdzeń jest ten sam, z dwiema praktycznymi różnicami. Pierwsza: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu kolejność określają zasady pokoju, w tym warunki B149 na WSOP, a muck nie jest ogólnie zakazany. Druga: run it twice jest częsty w cashu (jeśli zgodzą się wszyscy gracze, którzy wciąż są w puli), ale w turniejach zwykle jest niedozwolony.
 
 ---
 

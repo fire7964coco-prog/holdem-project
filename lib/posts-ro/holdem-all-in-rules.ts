@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Regulile all-in la Texas Hold'em: side pot, re-raise și showdown",
   seoTitle: "Ai dat all-in și nu știi ce câștigi? — Reguli all-in",
   desc: "Dai all-in și dealerul împarte jetoanele în două grămezi. Reguli all-in la Texas Hold'em: table stakes, pot principal, side pot, re-raise și showdown.",
-  tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
+  tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele pe care două sau mai multe stack-uri mai mari le pariază peste suma aceea formează un side pot pe care doar ei îl pot câștiga, iar un pariu în plus al unui singur jucător pur și simplu i se returnează. La No-Limit și Pot-Limit, un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja — decât dacă mai multe all-in-uri scurte adunate ajung la cel puțin o mărire completă peste cât a pus deja jucătorul respectiv.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -63,13 +63,13 @@ Sunt două moduri valide:
 
 ![Showdown-ul unui all-in la Texas Hold'em — un board K♠ 10♣ 7♦ 4♥ 2♣ cu jetoanele împărțite în pot principal și side pot etichetate](/images/holdem-all-in-declare.webp)
 
-==r:Nu împinge niciodată un singur jeton fără să spui nimic — dealerul îl va socoti doar la valoarea acelui jeton, nu ca întregul tău stack.== Declară mereu „all-in" cu voce tare sau mută tot stack-ul dintr-o singură mișcare.
+==r:Nu împinge niciodată în tăcere un singur jeton mare așteptând să conteze drept all-in — dacă ai un pariu în față, dealerul îl socotește call; dacă nu e niciun pariu în joc, un pariu doar cât valoarea acelui jeton.== Declară mereu „all-in" cu voce tare sau mută tot stack-ul dintr-o singură mișcare.
 
 ---
 
 ## Cum funcționează side pot-urile la poker? (De ce jucătorul all-in este plafonat)
 
-Jucătorul all-in poate câștiga doar cât a băgat el, plus suma egalată de la fiecare alt jucător rămas în pot. Toate jetoanele pariate peste suma aceea formează un **side pot** care aparține exclusiv jucătorilor care l-au alimentat.
+Jucătorul all-in poate câștiga doar cât a băgat el, plus cel mult aceeași sumă de la fiecare alt jucător care a pus jetoane — inclusiv de la cine a renunțat între timp, pentru că jetoanele intrate rămân în pot. Toate jetoanele pariate peste suma aceea formează un **side pot** care aparține exclusiv jucătorilor care l-au alimentat — dar numai dacă le-au pus cel puțin doi jucători. Dacă deasupra plafonului e un singur jucător, nu are cine să-i dispute un side pot, iar surplusul i se întoarce direct ca pariu neplătit.
 
 ![Side pot după un all-in la Texas Hold'em — dealerul separă jetoanele în pot principal și side pot în timp ce Jucătorul A rămâne plafonat](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Regula: ==fiecare side pot se construiește luând diferența până la următor
 
 ==r:Este regula all-in care stârnește cele mai multe certuri la mesele live — am văzut doi jucători ceartându-se pe ea cinci minute, cu toată masa așteptând. Amândoi greșeau.==
 
-**Regula:** dacă un jucător dă all-in pentru **mai puțin de o [mărire completă](/ro/blog/holdem-betting-actions)**, acel all-in NU redeschide pariurile pentru jucătorii care au acționat deja în runda respectivă.
+**Regula (No-Limit și Pot-Limit):** dacă un jucător dă all-in pentru **mai puțin de o [mărire completă](/ro/blog/holdem-betting-actions)**, acel all-in NU redeschide pariurile pentru jucătorii care au acționat deja în runda respectivă. Jocurile Limit pun pragul mai jos: acolo, un all-in de cel puțin jumătate de pariu redeschide pariurile (TDA 2024, regula 47-B).
 
 ![Regula re-raise-ului după un all-in la poker — un all-in scurt, sub o mărire completă, așa că Jucătorul A, care a acționat deja, poate doar să plătească sau să renunțe](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Ce se întâmplă cu Jucătorul A și cu Jucătorul C, care încă n-a acționat
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Suma all-in | Mărire completă? | Redeschide pariurile? |
+| Suma all-in (No-Limit / Pot-Limit) | Mărire completă? | Redeschide pariurile? |
 |--------------|-------------|-----------------|
 | Mai mică decât o mărire completă | Nu | Nu — cine a acționat deja și acum are în față mai puțin decât un pariu sau o mărire completă poate doar plăti sau renunța |
 | Mărire completă sau mai mult | Da | Da — toți pot mări din nou |
@@ -174,6 +174,8 @@ Pragul măririi minime este mereu *ultimul pariu sau ultima mărire completă va
 
 ### Ghid rapid de decizie — acest all-in redeschide pariurile?
 
+Tabelul e pentru No-Limit și Pot-Limit. Într-un joc Limit pragul e jumătate de pariu, nu o mărire completă.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situație | Se redeschide pentru cine a acționat deja? |
@@ -182,7 +184,7 @@ Pragul măririi minime este mereu *ultimul pariu sau ultima mărire completă va
 | Un singur all-in ≥ mărire completă | ✅ Da — toți pot mări |
 | Mai multe all-in-uri scurte, suma < mărire completă | ❌ Nu |
 | Mai multe all-in-uri scurte, creșterea de la ultima acțiune a jucătorului ≥ pariu sau mărire completă | ✅ Da, pentru acel jucător |
-| Jucător care NU a acționat încă | ✅ Poate mări mereu (în orice caz) |
+| Jucător care NU a acționat încă | ✅ Limita de redeschidere nu i se aplică niciodată — poate mări în continuare, în limitele de pariere ale jocului: stack-ul lui la No-Limit, potul la Pot-Limit, pariul fix și plafonul casei pentru măriri la Limit (TDA 2024, regula 48) |
 
 </div>
 
@@ -211,7 +213,7 @@ Nu poate. Odată ce jucătorul all-in este plafonat, orice jeton în plus pariat
 
 ### Greșeala 2: să nu știi regula despre cine poate re-mări
 
-Un all-in parțial nu le dă o a doua șansă de a mări celor care **au acționat deja** în runda respectivă — cine încă nu a acționat poate mări normal. Dacă știi asta pe de rost, tai certurile înainte să înceapă.
+La No-Limit și Pot-Limit, un all-in parțial nu le dă o a doua șansă de a mări celor care **au acționat deja** în runda respectivă — cine încă nu a acționat poate mări normal. Dacă știi asta pe de rost, tai certurile înainte să înceapă.
 
 ### Greșeala 3: să adaugi jetoane din buzunar în timpul mâinii
 
@@ -236,7 +238,7 @@ All-in-ul este cea mai puternică mișcare de la masă. Îi obligă pe adversari
 
 **Q. Poți da all-in pentru mai puțin decât big blind-ul?**
 
-A. Da. Dacă ai mai puține jetoane decât big blind-ul, când îți vine rândul să-l pui rămâi automat all-in pentru cât ai. Ceilalți continuă să plătească big blind-ul întreg — tot ce depășește contribuția ta ajunge într-un side pot.
+A. Da. Dacă blindul pe care îl datorezi e mai mare decât tot stack-ul tău, pui cât ți-a rămas și ești all-in pentru suma aceea (regula 154 din WSOP Live Action Rules). Ceilalți continuă să plătească big blind-ul întreg — ce pun ei peste contribuția ta formează un side pot între ei sau, dacă a pus-o un singur jucător, i se întoarce direct ca pariu neplătit.
 
 **Q. Ce se întâmplă dacă câștigi all-in-ul, dar pierzi side pot-ul?**
 
@@ -248,7 +250,7 @@ A. În turneu, când există un all-in și toate pariurile s-au încheiat, toate
 
 **Q. Poți face „run it twice" la un all-in de poker?**
 
-A. Să împarți de două ori cărțile comune rămase și să divizezi potul (run it twice) este permis în multe cash game-uri dacă ambii jucători sunt de acord după all-in. În turnee de regulă nu se permite. Trebuie stabilit înainte de a se împărți cărțile rămase.
+A. Să împarți de două ori cărțile comune rămase și să divizezi potul (run it twice) este permis în multe cash game-uri dacă, odată ce cineva e all-in și nu mai e nicio acțiune de pariere în așteptare, sunt de acord toți jucătorii rămași în pot — nu doar doi dintre voi (regulile 210 și 211 din WSOP Live Action Rules). În turnee de regulă nu se permite. Trebuie stabilit înainte de a se împărți cărțile rămase.
 
 **Q. În ce constă exact regula „table stakes"?**
 
@@ -256,11 +258,11 @@ A. Table stakes înseamnă că poți paria doar jetoanele pe care le aveai în f
 
 **Q. Dacă doi jucători dau all-in pentru sume diferite, cine arată primul?**
 
-A. ==r:În turneu nu se așteaptă rândul pentru a arăta==: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check. Sumele all-in-urilor nu stabilesc, singure, cine arată primul.
+A. Ultimul all-in care a fost un pariu sau o mărire e ultima acțiune agresivă și arată primul. Un all-in care doar plătește pentru mai puțin nu e agresiv — la cash, dacă pariurile s-au încheiat pe river, arată tot primul jucătorul care a pariat inițial (la No-Limit, dacă s-au încheiat înainte de river, întoarce primul cărțile cel care a dat all-in); iar acolo unde există un side pot, WSOP Live Action Rules merg pe poturi: cine e în side pot arată înaintea jucătorului care e all-in doar pentru potul principal (regula 149). ==r:În turneu aici nu există deloc o ordine de arătare== — odată încheiate pariurile all-in-ului, toate mâinile implicate se întorc cu fața în sus în același timp (TDA 2024, regula 16); regula care fixează o ordine, regula 17 TDA 2024, acoperă doar showdown-urile fără all-in. La cash, dacă a fost un all-in plătit fără altă acțiune, cel care a plătit poate face muck dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân la vedere).
 
 **Q. Regulile all-in diferă între turnee și cash game?**
 
-A. Nucleul e același, cu două diferențe practice. Prima: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash ordinea respectă regulile casei, inclusiv condițiile B149 la WSOP, iar muck-ul nu este interzis în general. A doua: run it twice e comun la cash game (dacă ambii jucători sunt de acord), dar în turnee de regulă nu se permite.
+A. Nucleul e același, cu două diferențe practice. Prima: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash ordinea respectă regulile casei, inclusiv condițiile B149 la WSOP, iar muck-ul nu este interzis în general. A doua: run it twice e comun la cash game (dacă sunt de acord toți jucătorii rămași în pot), dar în turnee de regulă nu se permite.
 
 ---
 
