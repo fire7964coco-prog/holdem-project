@@ -137,6 +137,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ja/hand-chart", icon: "📊", label: "ハンドレンジ表" },
     // ★2026-10-05 `/ja/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/ja/glossary", icon: "📖", label: "ポーカー用語辞典" },
+    // ★2026-10-12 `/ja/win-rate-quiz` 신설(승률 시뮬레이터 ⑤ 언어 확대). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/ja/win-rate-quiz", icon: "📈", label: "勝率シミュレーター" },
   ],
   /**
    * ★2026-08-22 — `/es/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -154,6 +156,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/es/hand-chart", icon: "📊", label: "Tabla de rangos" },
     // ★2026-10-05 `/es/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/es/glossary", icon: "📖", label: "Glosario de póker" },
+    // ★2026-10-12 `/es/win-rate-quiz` 신설(승률 시뮬레이터 ⑤ 언어 확대). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/es/win-rate-quiz", icon: "📈", label: "Simulador" },
   ],
   /**
    * ★2026-08-23 — `/pt/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -215,6 +219,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/de/hand-chart", icon: "📊", label: "Starthände-Tabelle" },
     // ★2026-10-05 `/de/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/de/glossary", icon: "📖", label: "Poker-Begriffe" },
+    // ★2026-10-12 `/de/win-rate-quiz` 신설(승률 시뮬레이터 ⑤ 언어 확대). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/de/win-rate-quiz", icon: "📈", label: "Poker-Simulator" },
   ],
   /**
    * ★2026-08-24 — `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 라벨은 전부 검증된 값에서
@@ -234,6 +240,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh/hand-chart", icon: "📊", label: "起手牌表" },
     // ★2026-10-05 `/zh/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/zh/glossary", icon: "📖", label: "德州扑克术语词典" },
+    // ★2026-10-12 `/zh/win-rate-quiz` 신설(승률 시뮬레이터 ⑤ 언어 확대). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/zh/win-rate-quiz", icon: "📈", label: "胜率模拟器" },
   ],
   /**
    * ★2026-08-24 — `/zh-hant/solver` 신설과 함께 추가(8번째 = 마지막 솔버 랜딩). 라벨은 전부

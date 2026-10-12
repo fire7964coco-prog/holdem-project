@@ -40,6 +40,11 @@ const STATIC_ROUTES = [
    *   **원래부터 사이트맵에 없다.** 의도인지 누락인지 확인되지 않아 이번엔 건드리지 않았다.
    */
   { path: "/en/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-12 승률 시뮬레이터 ⑤ 언어 확대(ja·es·de·zh) — EN과 같은 가중치 · hreflang = lib/win-rate-quiz-alternates.ts
+  { path: "/ja/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  { path: "/es/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  { path: "/de/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  { path: "/zh/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-08-08 `/hand-chart` 색인 개시 (사장님 결정) — 상세 근거는 `app/hand-chart/page.tsx` 주석.
    *   요약: 몰아준 쪽(holdem-starting-hand-range)이 28일 노출 16·38위로 못 이겼고

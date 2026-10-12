@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import WinRateQuizClientEn from "./win-rate-quiz-client";
 import HubPage from "@/components/hub-page";
+import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
 
 /**
  * 영어판 승률 시뮬레이터 (2026-08-04 신설, 사장님 요청).
@@ -26,11 +27,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   alternates: {
     canonical: `${SITE}/en/win-rate-quiz`,
-    languages: {
-      ko: `${SITE}/win-rate-quiz`,
-      en: `${SITE}/en/win-rate-quiz`,
-      "x-default": `${SITE}/en/win-rate-quiz`,
-    },
+    // ★2026-10-12 ⑤ 언어 확대 — 세트는 lib/win-rate-quiz-alternates.ts 한 곳(ko·en·ja·es·de·zh).
+    languages: WIN_RATE_QUIZ_ALTERNATES,
   },
   openGraph: {
     type: "website",

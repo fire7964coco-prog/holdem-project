@@ -63,10 +63,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-09-17 — `/<locale>/calculator` 10개 로케일 동시 신설(사장님 지시 · 다국어 글 우측 레일
   //   계산기 CTA가 전부 한국어 `/calculator`로 떨어지던 것의 처방). 공용 컴포넌트
   //   `components/calculator/calculator-tool.tsx` + 로케일 사전. hreflang 세트 = `lib/calculator-alternates.ts`.
-  ja: ["/ja/blog", "/ja/calculator", "/ja/hand-chart", "/ja/glossary", "/ja/solver", "/ja/tournaments"],
+  ja: ["/ja/blog", "/ja/calculator", "/ja/hand-chart", "/ja/glossary", "/ja/solver", "/ja/tournaments", "/ja/win-rate-quiz"],
   // es — ★2026-08-22 `/es/solver` 신설. 스페인어권에 솔버 진입로가 0개였다(본체는 noindex).
-  //      ⚠ `/es/hand-chart`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
-  es: ["/es/blog", "/es/calculator", "/es/hand-chart", "/es/glossary", "/es/solver", "/es/tournaments"],
+  //      ★2026-10-12 `/es/win-rate-quiz` 신설(승률 시뮬레이터 ⑤) — 위 «없다» 경고는 해제(hand-chart는 10-05에 생겼다).
+  es: ["/es/blog", "/es/calculator", "/es/hand-chart", "/es/glossary", "/es/solver", "/es/tournaments", "/es/win-rate-quiz"],
   // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
   //      ⚠ 없는 라우트를 넣지 마라(`/pt/tournaments`는 2026-09-29에 생겼다 — 아래).
   // ★2026-09-29 `/pt/tournaments` 신설(로케일 회차 2) — 위 «없다» 경고는 이 날부로 해제.
@@ -78,10 +78,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).
-  de: ["/de/blog", "/de/calculator", "/de/hand-chart", "/de/glossary", "/de/solver", "/de/tournaments"],
+  de: ["/de/blog", "/de/calculator", "/de/hand-chart", "/de/glossary", "/de/solver", "/de/tournaments", "/de/win-rate-quiz"],
   // zh — ★2026-08-24 `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 중국어권에 솔버
   //      진입로가 0개였다(본체는 noindex). ⚠ 없는 라우트(hand-chart…)를 넣지 마라.
-  zh: ["/zh/blog", "/zh/calculator", "/zh/hand-chart", "/zh/glossary", "/zh/solver", "/zh/tournaments"],
+  zh: ["/zh/blog", "/zh/calculator", "/zh/hand-chart", "/zh/glossary", "/zh/solver", "/zh/tournaments", "/zh/win-rate-quiz"],
   // zh-hant — ★2026-08-24 `/zh-hant/solver` 신설과 함께 추가(8번째 솔버 랜딩).
   //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex). 없는 라우트를 넣지 마라.
   "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments"],

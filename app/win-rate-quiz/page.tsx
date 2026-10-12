@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import WinRateQuizClient from "./win-rate-quiz-client";
 import HubPage from "@/components/hub-page";
+import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
 import { WIN_RATE_QUIZ_FAQ } from "./faq";
 import QuizContent from "./_content";
 
@@ -20,11 +21,8 @@ export const metadata: Metadata = {
      * ⚠ 값은 en판(app/en/win-rate-quiz/page.tsx)과 **글자 그대로 같아야** 한다.
      *   x-default가 en을 가리키는 것도 en판 선언 그대로다.
      */
-    languages: {
-      ko: `${SITE}/win-rate-quiz`,
-      en: `${SITE}/en/win-rate-quiz`,
-      "x-default": `${SITE}/en/win-rate-quiz`,
-    },
+    // ★2026-10-12 ⑤ 언어 확대 — 세트는 lib/win-rate-quiz-alternates.ts 한 곳(ko·en·ja·es·de·zh).
+    languages: WIN_RATE_QUIZ_ALTERNATES,
   },
   openGraph: {
     type: "website",

@@ -21,6 +21,7 @@ import {
   fetchAccountQuiz, uploadQuizHands, deleteAccountQuiz, readQuizStore, pendingQuizTotals, addQuizTotals,
   type QuizTotals,
 } from "@/lib/win-rate-quiz-records";
+import { WIN_RATE_QUIZ_LOCALES } from "@/lib/win-rate-quiz-alternates";
 import { BORDER, CARD, GOLD, INK, MUTED, RED } from "./post-card";
 
 /** S-068 «좋은 선택» 기준 — ev_loss_bb ≤ 이 값(팟 1% · 최소 0.05bb). 솔버 프리셋이 바뀌면 솔버가 다시 보낸다 */
@@ -268,7 +269,9 @@ export default function MyRecords({ userId, locale }: { userId: string; locale: 
 
   const solverLang = SOLVER_LANGS.includes(locale) ? locale : "en";
   const solverHref = (view: string) => `https://solver.holdemmaster.com/?view=${view}&lang=${solverLang}`;
-  const quizHref = locale === "ko" ? "/win-rate-quiz" : "/en/win-rate-quiz";
+  // ★2026-10-12 ⑤ 언어 확대 — 승률 시뮬레이터가 있는 로케일은 그 언어 페이지로(목록 = lib/win-rate-quiz-alternates.ts)
+  const quizHref = locale === "ko" ? "/win-rate-quiz"
+    : (WIN_RATE_QUIZ_LOCALES as readonly string[]).includes(locale) ? `/${locale}/win-rate-quiz` : "/en/win-rate-quiz";
 
   async function clearQuiz() {
     if (!window.confirm(L.quizClearConfirm)) return;
