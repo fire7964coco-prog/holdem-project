@@ -953,7 +953,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 이행 순서 = ms 고유(BG·BH·BI-1) → EN-먼저 EN+ms(BE·BF·BI-2·3) → 형제 로케일. 이행 MB에서 재판정 요청.
 - ✅ **재판정 MA-468**(2026-10-12 · 기준 `0fd43688`): §2-BE~§2-BI 이행 70파일 OK · 새 RISKY/WRONG 0 · 범위 밖 기존 RISKY(de cooler #60 · es fish #8 · es position-play #65 · ms equity 4)는 그대로.
 
-### 2-BJ. 우편함 수신분 — MA-465 (MS glossary 묶음 3 · bad-beat·rake·straddle · 기준 `30f15d46`) · 등재·회신 2026-10-12 (4) MB-265
+### 2-BJ. 우편함 수신분 — MA-465 (MS glossary 묶음 3 · bad-beat·rake·straddle · 기준 `30f15d46`) · 등재·회신 2026-10-12 (4) MB-265 · ✅ BJ-1~5 이행 2026-10-12 (4) `f788ec21` MB-266
 
 > WRONG 0 · straddle RISKY 0. 요청 2 = EN-먼저 3자리(사용자 결재 10-12 · 같은 글 안 정정 축) + ms 고유 5자리(vi 기결 틀 미러). 위치 대조 main `db7f41cc`(MA 줄번호는 원장 기준 — 아래는 실제 파일 줄). KO 레거시 해당 글 없음.
 
