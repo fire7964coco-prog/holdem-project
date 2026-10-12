@@ -65,6 +65,10 @@ const DE_UI: QuizUI = {
   toCallLabel: "Zu callen",
   requiredLabel: "Benötigte Equity",
   noBet: "Niemand hat gesetzt. Du siehst die nächste Karte gratis.",
+  noBetAllIn: (river) =>
+    river
+      ? "Alle verbliebenen Spieler sind schon all-in, es gibt keine Chips mehr zum Setzen. Es geht direkt zum Showdown."
+      : "Alle verbliebenen Spieler sind schon all-in, es gibt keine Chips mehr zum Setzen. Die restlichen Karten werden ausgeteilt, dann folgt der Showdown.",
   verdictCall: "Call",
   verdictFold: "Fold",
   impliedNote: "Wenn du beim Treffer aber noch mehr gewinnen kannst (Implied Odds), kann ein Call trotzdem richtig sein.",
@@ -97,15 +101,17 @@ const DE_UI: QuizUI = {
       both > 0 ? `${both} davon zählen für zwei Wege (nur einmal gezählt)` : "",
     ].filter(Boolean).join(" · "),
   hitLabel: "Chance, dass eine dieser Karten kommt (Faustregel)",
-  winLabel2: "Chance, dass du den Pot gewinnst (simuliert)",
+  winLabel2: "Deine Pot-Equity (simuliert · bei Gleichstand zählt dein Anteil am geteilten Pot)",
   formulaExpr: (outs, toCome) =>
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
-    "Die beiden Zahlen messen Verschiedenes: oben die Chance, dass du TRIFFST, unten die Chance, dass du GEWINNST. Du kannst treffen und trotzdem verlieren, wenn sich ein Gegner noch stärker verbessert – und du kannst danebenliegen und trotzdem gewinnen. Das Urteil richtet sich nach der unteren Zahl.",
+    "Die beiden Zahlen messen Verschiedenes: oben die Chance, dass du TRIFFST, unten dein Anteil am Pot, wenn du GEWINNST (bei Gleichstand dein geteilter Anteil). Du kannst treffen und trotzdem verlieren, wenn sich ein Gegner noch stärker verbessert – und du kannst danebenliegen und trotzdem gewinnen. Das Urteil richtet sich nach der unteren Zahl.",
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Wir sind noch preflop, deshalb greift die Faustregel „Outs × 2/4“ noch nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen die Hände, mit denen jeder Gegner von seiner Position aus plausibel in den Pot gehen würde.`
-      : `Du hast weder Flushdraw noch Straßendraw und keine Karte, die dich eine Handkategorie höher zu Set, Zwei Paaren oder einem Overcard-Paar bringt – deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
+      : `Du hast keinen der Outs, die dieses Tool zählt – keine Karte vervollständigt Flush oder Straße oder bringt dich eine Handkategorie höher zu Set, Zwei Paaren oder einem Overcard-Paar –, deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
+  foldWinNote: "Alle Gegner haben gefoldet, der Pot gehört dir. Die 100% oben sind keine simulierte Zahl, sondern das Ergebnis dieser Hand.",
+  riverNote: "Das ist der River – es kommen keine Karten mehr, deshalb greift die Faustregel „Outs × 2/4“ nicht. Die Equity oben vergleicht deine fertige Hand mit jeder Hand, die zu den gesehenen Aktionen passt.",
   chartTitle: "📈 Equity Street für Street – alle Karten offen",
   resultTabs: ["📋 Analyse", "📈 Verlauf", "🃏 Odds"],
   solverTitle: "Diese Situation im GTO-Solver ansehen",
@@ -226,7 +232,7 @@ const DE_UI: QuizUI = {
         <b className="text-foreground">{n(SAMPLES.preflop)} Durchläufe</b> preflop und{" "}
         <b className="text-foreground">{n(SAMPLES.postflop)} Durchläufe</b> ab dem Flop (Standardfehler etwa 0,25–0,35 Prozentpunkte).
         Jede Hand nutzt einen festen Zufalls-Seed, deshalb zeigt dieselbe Hand auf jedem Gerät dieselben Zahlen. Bei Gleichstand
-        wird der Pot durch die Zahl der beteiligten Spieler geteilt (bei zwei Spielern je die Hälfte).
+        wird der Pot unter den Spielern mit gleich guter Hand geteilt (bei einem Gleichstand zu zweit je die Hälfte).
       </p>
       <p className="mt-2">
         <b className="text-foreground">Wenn du die Gegnerkarten aufdeckst</b>, bekommt jede Position ihre Equity mit allen

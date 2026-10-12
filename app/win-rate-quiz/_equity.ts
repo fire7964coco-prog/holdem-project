@@ -416,21 +416,31 @@ export function describeHand(
   if (revealed >= 5) return made; // 리버: 확정 족보
   if (drawingDead) return names.drawingDead;
 
+  // ★2026-10-12 MA-497 — 드로우 정의를 엔진 `hasDraw`(상대 액션 규칙)와 맞춘다: **홀카드가 1장 이상 들어간 패턴만.**
+  //   보드만으로 된 4플러시·4랭크는 테이블 전원 공유라 그 사람의 드로우가 아니다
+  //   (전: 9♠9♦ / 2♥3♥4♥7♥ = «원페어 · 플러시 드로우»인데 같은 칸 액션은 드로우 없는 원페어 규칙).
+  const bs = board.map(toNum);
   const draws: string[] = [];
-  // 플러시 드로우: 한 무늬 정확히 4장 (아직 플러시 미완성)
+  // 플러시 드로우: 한 무늬 정확히 4장 (아직 플러시 미완성) · 보드만으로 4장이면 제외
   if (catIdx < 5) {
     const suitCount = [0, 0, 0, 0];
+    const boardSuit = [0, 0, 0, 0];
     for (const c of cs) suitCount[c[1]]++;
-    if (suitCount.some((x) => x === 4)) draws.push(names.flushDraw);
+    for (const c of bs) boardSuit[c[1]]++;
+    if (suitCount.some((x, s) => x === 4 && boardSuit[s] < 4)) draws.push(names.flushDraw);
   }
-  // 스트레이트 드로우: 5칸 창에 4랭크 존재 (스트레이트 미만일 때만, 휠 포함)
+  // 스트레이트 드로우: 5칸 창에 4랭크 존재 (스트레이트 미만일 때만, 휠 포함) · 보드만으로 4랭크면 제외
   if (catIdx < 4) {
-    const present = new Set(cs.map((c) => c[0]));
-    if (present.has(14)) present.add(1);
+    const withWheel = (rs: Set<number>) => { if (rs.has(14)) rs.add(1); return rs; };
+    const present = withWheel(new Set(cs.map((c) => c[0])));
+    const onBoard = withWheel(new Set(bs.map((c) => c[0])));
     for (let lo = 1; lo <= 10; lo++) {
-      let cnt = 0;
-      for (let k = 0; k < 5; k++) if (present.has(lo + k)) cnt++;
-      if (cnt === 4) { draws.push(names.straightDraw); break; }
+      let cnt = 0, nb = 0;
+      for (let k = 0; k < 5; k++) {
+        if (present.has(lo + k)) cnt++;
+        if (onBoard.has(lo + k)) nb++;
+      }
+      if (cnt === 4 && nb < 4) { draws.push(names.straightDraw); break; }
     }
   }
   if (draws.length) return `${made} · ${draws.join(" · ")}`;

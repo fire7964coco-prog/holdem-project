@@ -59,6 +59,10 @@ const ES_UI: QuizUI = {
   toCallLabel: "A pagar",
   requiredLabel: "Equity necesaria",
   noBet: "Nadie apostó. Ves la siguiente carta gratis.",
+  noBetAllIn: (river) =>
+    river
+      ? "Todos los que siguen en la mano ya están all-in, así que no quedan fichas para apostar. La mano va directa al showdown."
+      : "Todos los que siguen en la mano ya están all-in, así que no quedan fichas para apostar. Se reparten las cartas que faltan y la mano va al showdown.",
   verdictCall: "Pagar",
   verdictFold: "Foldear",
   impliedNote: "Eso sí, si cuando ligas puedes ganar más (odds implícitas), pagar puede seguir siendo correcto.",
@@ -90,15 +94,17 @@ const ES_UI: QuizUI = {
       both > 0 ? `${both} sirven para dos de estas (se cuentan una sola vez)` : "",
     ].filter(Boolean).join(" · "),
   hitLabel: "Probabilidad de que salga una de estas cartas (regla del 2 y el 4)",
-  winLabel2: "Probabilidad de ganar el bote (simulada)",
+  winLabel2: "Tu equity en el bote (simulada · un empate cuenta solo tu parte del bote repartido)",
   formulaExpr: (outs, toCome) =>
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
-    "Miden cosas distintas. La de arriba es la probabilidad de LIGAR; la de abajo, la de GANAR. Puedes ligar y aun así perder si un rival mejora más, y puedes no ligar y ganar igual. El veredicto usa la cifra de abajo.",
+    "Miden cosas distintas. La de arriba es la probabilidad de LIGAR; la de abajo, tu parte del bote al GANAR (un empate cuenta como la parte que te toca). Puedes ligar y aun así perder si un rival mejora más, y puedes no ligar y ganar igual. El veredicto usa la cifra de abajo.",
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `Todavía es preflop, así que el atajo «outs × 2/4» aún no se aplica. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra las manos con las que cada rival entraría razonablemente al bote desde su posición.`
-      : `No tienes proyecto de color ni de escalera, ni ninguna carta que suba tu mano una categoría a set, doble pareja o pareja con una sobrecarta, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
+      : `No tienes ninguno de los outs que cuenta esta herramienta —ninguna carta completa color o escalera ni sube tu mano una categoría a set, doble pareja o pareja con una sobrecarta—, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
+  foldWinNote: "Todos los rivales foldearon, así que el bote es tuyo. El 100% de arriba no es una cifra simulada: es el resultado de esta mano.",
+  riverNote: "Es el river, así que no quedan cartas por salir y el atajo «outs × 2/4» no se aplica. La equity de arriba compara tu mano final con todas las manos que encajan con las acciones que viste.",
   chartTitle: "📈 Equity calle a calle — todas las cartas boca arriba",
   resultTabs: ["📋 Repaso", "📈 Evolución", "🃏 Cálculo"],
   solverTitle: "Mira este spot en el solver GTO",

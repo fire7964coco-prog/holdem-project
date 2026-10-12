@@ -144,6 +144,8 @@ export interface QuizUI {
   toCallLabel: string;
   requiredLabel: string;
   noBet: string;
+  /** 올인 뒤 스트리트 — 더 걸 칩이 없다(MA-495 ②ⓐ). river = 남은 카드 없음 */
+  noBetAllIn: (river: boolean) => string;
   verdictCall: string;
   verdictFold: string;
   impliedNote: string;
@@ -178,6 +180,9 @@ export interface QuizUI {
    * (2026-08-05 검수 판정 #1).
    */
   noDrawNote: (basis: "seat" | "range", samples: string) => string;
+  /** 아웃츠 칸 대체 설명 — 전원 폴드(계산 없이 100) · 리버(올 카드 없음)는 noDrawNote 대신 (MA-495 ②ⓒ) */
+  foldWinNote: string;
+  riverNote: string;
   /** 결과 화면 꺾은선 (S-034 ④) */
   chartTitle: string;
   /** 점선 = 상대 패를 모를 때 화면에 보였던 내 승률 */
@@ -809,6 +814,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * ★리버에서도 답을 먼저 받는다 — 안 그러면 쇼다운이 상대 패와 결과를 먼저 보여 준다.
    */
   const quizPending = quiz && !!rec && !answer && rec.opponentsBefore - rec.foldedSlots.length > 0;
+  /** 이 스트리트에서 상대가 전부 폴드했다 — 승률 100은 계산이 아니라 결과다 */
+  const recAllFold = !!rec && rec.street > 0 && rec.opponentsBefore - rec.foldedSlots.length === 0;
+  /** 앞 스트리트에서 올인 — 이 스트리트엔 베팅이 없다 */
+  const recAllIn = !!rec && Object.values(rec.actionBySlot).includes("allIn");
   const isEnd = !!result && street >= lastStreet && !quizPending;
   const showdown = isEnd && result?.wonByFoldAt === null;
   const cardsUp = (reveal && !quizPending) || showdown;
@@ -1368,7 +1377,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         style={{ borderColor: quizPending ? "hsl(var(--border))" : rec.verdict === "fold" ? mix(BAD, 35) : rec.verdict === "call" ? mix(GOOD, 35) : "hsl(var(--border))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1 lg:mb-1.5">{ui.potOddsTitle}</div>
         {rec.toCall === 0 ? (
-          <p className="text-sm text-muted-foreground">{ui.noBet}</p>
+          // ★베팅이 0인 경우는 셋뿐이다 — 프리플랍(앤티만) · 전원 폴드 · 앞에서 올인. «다음 카드 무료»는 첫째만 참(MA-495 ②ⓐ)
+          <p className="text-sm text-muted-foreground">
+            {recAllFold ? ui.wonByFold(rec.potBefore) : recAllIn ? ui.noBetAllIn(rec.street === 3) : ui.noBet}
+          </p>
         ) : (
           <>
             {/* 모바일에서 세로를 아끼려고 「팟·콜」과 「필요 승률 식」을 한 줄로 붙인다.
@@ -1525,7 +1537,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {showStreet && (
       <div className="rounded-xl px-4 py-3 mt-3" style={{ background: "hsl(var(--muted))" }}>
         <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-2">{ui.formulaTitle}</div>
-        {outs.total > 0 ? (
+        {recAllFold ? (
+          <p className="text-[11.5px] text-muted-foreground leading-relaxed">{ui.foldWinNote}</p>
+        ) : outs.total > 0 ? (
           <>
             <p className="text-sm font-black text-foreground">{ui.outsLabel(outs.total)}</p>
             <p className="text-[11px] text-muted-foreground mb-2.5">
@@ -1551,6 +1565,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
             <p className="text-[10.5px] text-muted-foreground leading-snug">{ui.formulaCaveat}</p>
           </>
+        ) : street === 3 ? (
+          <p className="text-[11.5px] text-muted-foreground leading-relaxed">{ui.riverNote}</p>
         ) : (
           <p className="text-[11.5px] text-muted-foreground leading-relaxed">
             {ui.noDrawNote(rec.basis, (street === 0 ? SAMPLES.preflop : SAMPLES.postflop).toLocaleString())}
