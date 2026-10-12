@@ -68,6 +68,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Kajian flop — strategi flop yang dikira awal", "yes", "Pilih spot, posisi dan flop; grid dipaparkan serta-merta tanpa menunggu · flop sahaja · saiz bet tetap (flop 33% / 75%, raise 60%)"],
   ["Laporan flop — strategi purata mengikut kumpulan board", "yes", "1,755 flop diberi pemberat mengikut kekerapan · keputusan pertama dan selepas check · kumpul ikut kad tertinggi, suit, pair, kesambungan · saiz bet tetap"],
   ["Trainer GTO dengan pemarkahan", "yes", "Analisis kelemahan dan ulang kaji berdasarkan kerugian EV"],
+  ["Latihan RNG dalam Trainer GTO", "yes", "Satu nombor 1–100 bagi setiap tangan · tindakan dalam julat nombor itu ialah Pilihan terbaik · High/Low · tutup secara lalai · tidak digunakan untuk Cabaran Harian"],
   ["Latihan daripada spot yang anda kira", "yes", "Jadikan hasil pengiraan sebagai soalan Spot saya; soalan dan rekod latihannya disimpan pada peranti ini sahaja, walaupun selepas log masuk"],
 ];
 

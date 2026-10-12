@@ -71,6 +71,10 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     a: "Yes — open «Flop reports» in the sidebar. Pick a spot and the seats, and you get bet frequencies and EV averaged over 1,755 precomputed flops, weighted by how often each flop actually comes up. It covers two decisions: the first decision of the player who acts first, and the in-position player's decision after a check. Group by «High card», «Suits», «Pairing» or «Connectedness» to compare where betting goes up or down, and click a row to open that flop in «Flop study». The base is 6-max 100bb with a 0.3% target error, and bet sizes are fixed at 33% and 75% on the flop. Spots that haven't been precomputed yet aren't available.",
   },
   {
+    q: "How do I practice hands where the solver mixes actions?",
+    a: "Use RNG practice in the GTO Trainer. Tap «RNG: Off» at the end of the trainer's top button row to switch it to «RNG: High» or «RNG: Low», and every hand comes with a number from 1 to 100 (it's off by default, and this device remembers the setting). The solver's frequencies for that hand split 1–100 into a range per action: with High, higher numbers mean more aggressive actions; with Low, lower numbers do. Picking the action in your number's range is «Best play»; a different action the solver still uses at least 3.5% of the time is «Acceptable»; anything else is graded by EV loss, up to «Acceptable» at most. The results screen shows each action's number range and where your number landed. It isn't used for the Daily Puzzle, and your training record is still kept by EV loss whether RNG is on or off.",
+  },
+  {
     q: "How is this different from GTO Wizard or PioSOLVER?",
     a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard are mainly for browsing spots that were solved in advance, which is fast and covers preflop (GTO Wizard also offers custom solving). Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
   },

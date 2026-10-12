@@ -61,6 +61,10 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
     a: "Có, trong mục «Báo cáo flop» ở thanh bên. Bạn chọn spot và vị trí, rồi xem tần suất bet và EV trung bình trên 1.755 flop đã tính sẵn, có trọng số theo tần suất xuất hiện thực tế của mỗi flop. Có hai quyết định: quyết định đầu tiên của người đi trước, và quyết định của người có vị trí sau khi check. Nhóm theo «Lá cao nhất», «Chất», «Đôi» hoặc «Độ liền» để so sánh board nào được bet nhiều hơn hay ít hơn, và nhấn vào một dòng để mở flop đó trong «Tra cứu flop». Nền tảng là 6-max 100bb với exploitability mục tiêu 0,3%, và cỡ cược cố định: 33% và 75% ở flop. Những spot chưa được tính sẵn thì chưa xem được.",
   },
   {
+    q: "Làm sao để luyện những tay bài mà solver trộn hành động?",
+    a: "Dùng chế độ luyện RNG trong Trainer GTO. Chạm vào «RNG: Tắt» ở cuối hàng nút phía trên Trainer để chuyển sang «RNG: High» hoặc «RNG: Low», khi đó mỗi ván sẽ có một số từ 1 đến 100 (mặc định tắt, thiết lập được nhớ trên thiết bị này). Tần suất của solver cho tay bài đó chia 1–100 thành khoảng số cho từng hành động: với High, số càng cao hành động càng hung hăng; với Low, số càng thấp hành động càng hung hăng. Chọn hành động trong khoảng của số bạn nhận được là «Nước đi tốt nhất»; hành động khác mà solver dùng ít nhất 3,5% là «Chấp nhận được»; còn lại chấm theo EV mất, cao nhất là «Chấp nhận được». Màn hình kết quả hiện khoảng số của từng hành động và vị trí số của bạn. Chế độ này không dùng cho Thử thách hôm nay, và lịch sử luyện tập của bạn vẫn tính theo EV mất dù bật RNG hay không.",
+  },
+  {
     q: "Khác gì GTO Wizard hay PioSOLVER?",
     a: "Khác chủ yếu ở chỗ phép tính diễn ra ở đâu. Thư viện lời giải như GTO Wizard chủ yếu dùng để tra các spot đã được giải trước — nhanh và có cả preflop (GTO Wizard cũng có tính năng giải tùy chỉnh). Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này giải ngay trong trình duyệt của bạn, nên bạn sửa range và cây tùy ý mà không phải cài gì.",
   },

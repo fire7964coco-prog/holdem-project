@@ -102,6 +102,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Tra cứu flop — chiến lược flop đã tính sẵn", "yes", "Chọn spot, vị trí và flop, lưới hiện ra ngay, không phải chờ · chỉ đến flop · cỡ cược cố định (flop 33% / 75%, raise 60%)"],
   ["Báo cáo flop — chiến lược trung bình theo nhóm board", "yes", "1.755 flop có trọng số theo tần suất · quyết định đầu và sau khi check · nhóm theo lá cao nhất, chất, đôi, độ liền · cỡ cược cố định"],
   ["Trainer GTO chấm theo EV mất", "yes", "Có cả bộ lọc điểm yếu và hàng đợi Xem lại"],
+  ["Luyện RNG trong Trainer GTO", "yes", "Mỗi ván một số từ 1–100 · hành động trong khoảng của số đó là Nước đi tốt nhất · High/Low · mặc định tắt · không dùng cho Thử thách hôm nay"],
   ["Luyện với spot tự giải", "yes", "Chỉ cần nhấn một lần ở màn hình kết quả để lưu thành câu hỏi trainer · chỉ trên thiết bị này"],
 ];
 

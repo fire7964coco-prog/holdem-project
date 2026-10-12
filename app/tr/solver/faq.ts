@@ -56,6 +56,10 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
     a: "Evet, kenar çubuğundaki «Flop raporları» bölümünden. Spotu ve pozisyonları seçtiğinde, önceden hesaplanmış 1.755 flop üzerinden, her flop'un gerçekte ne sıklıkla geldiğine göre ağırlıklandırılmış ortalama bet sıklığını ve EV'yi görürsün. İki karar kapsanıyor: önce hareket eden oyuncunun ilk kararı ve check sonrası pozisyondaki oyuncunun kararı. «En yüksek kart», «Renkler», «Çift durumu» ya da «Bağlantılılık» ile gruplayınca hangi board'larda bet'in arttığını ya da azaldığını karşılaştırırsın; bir satıra tıklayınca o flop «Flop çalışması» bölümünde açılır. Temel 6-max 100bb ve hedef exploitability %0,3; bet boyutları sabit (flop'ta %33 ve %75). Henüz önceden hesaplanmamış spotlar görüntülenemez.",
   },
   {
+    q: "Solver'ın aksiyonları karıştırdığı elleri nasıl çalışırım?",
+    a: "GTO Trainer'daki RNG alıştırmasıyla. Trainer'ın üstteki düğme satırının sonundaki «RNG: Kapalı» düğmesine dokunup «RNG: High» ya da «RNG: Low» konumuna getirdiğinde her ele 1–100 arası bir sayı verilir (varsayılan olarak kapalıdır, ayar bu cihazda hatırlanır). O elin solver sıklıkları 1–100'ü her aksiyon için bir aralığa böler: High'da sayı büyüdükçe, Low'da sayı küçüldükçe aksiyon daha agresiftir. Sayının aralığındaki aksiyonu seçersen «En iyi oyun»; sayıyla uyuşmasa da solver'ın en az %3,5 sıklıkla oynadığı başka bir aksiyon «Kabul edilebilir» olur; geri kalanı EV kaybına göre puanlanır ve en fazla «Kabul edilebilir» alır. Sonuç ekranında her aksiyonun sayı aralığı ve senin sayının nereye düştüğü görünür. Günün sorusunda kullanılmaz; pratik geçmişin de RNG açık olsun kapalı olsun EV kaybına göre tutulmaya devam eder.",
+  },
+  {
     q: "GTO Wizard ya da PioSOLVER'dan farkı ne?",
     a: "Temel fark, hesaplamanın nerede yapıldığıdır. GTO Wizard gibi çözüm kütüphaneleri çoğunlukla önceden çözülmüş spotlara göz atmak içindir; bu hızlıdır ve preflop'u da kapsar (GTO Wizard özel çözüm de sunar). PioSOLVER gibi masaüstü solver'lar bir Windows bilgisayara kurulur ve yerelde çözer. Bu solver ise tarayıcında çözer; hiçbir şey kurmadan range'leri ve ağaçları istediğin gibi yeniden yazabilirsin.",
   },

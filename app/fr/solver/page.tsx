@@ -131,6 +131,7 @@ const jsonLd = {
         "Étudier un flop — stratégies de flop précalculées pour le spot, les positions et le board choisis (flop uniquement, sizings fixes)",
         "Rapports de flop — fréquence de mise et EV moyennées sur 1 755 flops précalculés (pondérés par fréquence), comparées par groupe de boards",
         "Trainer GTO qui note tes décisions sur la perte d'EV par rapport au pot",
+        "Entraînement RNG dans le Trainer GTO — à chaque main, un nombre de 1 à 100 indique l'action à choisir, pour travailler les stratégies mixtes (High/Low ; pas dans le Défi du jour)",
         "Onglets intégrés Charts préflop et calculateur d'Equity",
         "Export CSV du récapitulatif, lien de partage de spot",
         "Tourne dans le navigateur via WebAssembly — sans installation ni compte",

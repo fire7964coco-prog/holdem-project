@@ -113,6 +113,10 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
     a: "Ja, unter «Flop-Reports» in der Seitenleiste. Du wählst Spot und Positionen und siehst Bet-Häufigkeit und EV, gemittelt über 1.755 vorberechnete Flops und danach gewichtet, wie oft jeder Flop tatsächlich fällt. Abgedeckt sind zwei Entscheidungen: die erste Entscheidung des Spielers, der zuerst handelt, und die des Spielers in Position nach einem Check. Gruppierst du nach «Höchste Karte», «Farben», «Paarung» oder «Konnektivität», vergleichst du, auf welchen Boards mehr oder weniger gesetzt wird, und ein Klick auf eine Zeile öffnet diesen Flop in «Flops studieren». Grundlage ist 6-max mit 100bb und 0,3% Zielfehler; die Bet-Sizes sind fest (33% und 75% am Flop). Noch nicht vorberechnete Spots sind nicht verfügbar.",
   },
   {
+    q: "Wie übe ich Hände, bei denen der Solver Aktionen mischt?",
+    a: "Mit dem RNG-Training im GTO-Trainer. Tippe am Ende der oberen Button-Leiste des Trainers auf «RNG: Aus», um auf «RNG: High» oder «RNG: Low» umzuschalten – dann bekommt jede Hand eine Zahl von 1 bis 100 (standardmäßig aus; dieses Gerät merkt sich die Einstellung). Die Solver-Häufigkeiten dieser Hand teilen 1–100 in einen Bereich pro Aktion: Bei High bedeuten höhere Zahlen aggressivere Aktionen, bei Low niedrigere. Wählst du die Aktion im Bereich deiner Zahl, ist das die «Beste Wahl»; eine andere Aktion, die der Solver mindestens 3,5% der Zeit spielt, ist «Vertretbar»; alles andere wird nach EV-Verlust bewertet, höchstens mit «Vertretbar». Der Ergebnisbildschirm zeigt den Zahlenbereich jeder Aktion und wo deine Zahl lag. In der Tagesaufgabe wird es nicht verwendet, und dein Übungsverlauf wird weiter nach EV-Verlust geführt, egal ob RNG an ist oder nicht.",
+  },
+  {
     // 🟢 정합성 렌즈 반영(2026-08-24) — H2와 문항이 축어 동일했다(H2/FAQ 중복 금지 · de-core §7-6).
     //    문항을 변형형으로 갈랐다.
     q: "Worin unterscheidet er sich von GTO Wizard und PioSOLVER?",
