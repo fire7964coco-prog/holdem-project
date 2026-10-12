@@ -137,10 +137,10 @@ const SPEC: [string, string][] = [
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["ポストフロップのスポットを計算したい", "このページのGTOツール", null],
-  ["ポジション別にどのハンドを開くか知りたい", "スターティングハンド表の記事", "/ja/blog/holdem-starting-hands-chart"],
-  ["アウツやポットオッズを計算したい", "ポットオッズの記事", "/ja/blog/holdem-pot-odds"],
+  ["ポジション別にどのハンドを開くか知りたい", "ポーカー ハンドレンジ表", "/ja/hand-chart"],
+  ["アウツ・ポットオッズ・SPR・ICMをその場で計算したい", "ポーカー勝率計算機", "/ja/calculator"],
   ["その場で勝率だけ知りたい", "アプリ内蔵のエクイティ計算機", null],
-  // ★2026-10-12 — /ja/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  // ★2026-10-12 — 로케일 도구 페이지가 생겨(hand-chart·calculator·win-rate-quiz) 표의 링크를 도구로 옮겼다. 위 주석의 «도구 없음»은 그 전 기준 · 단일 핸드 승률 행은 계산기에 그 기능이 없어 그대로
   ["相手の手が見えないまま、勝率の見積もりと降りどきを練習したい", "ポーカー練習シミュレーター", "/ja/win-rate-quiz"],
 ];
 

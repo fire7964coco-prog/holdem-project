@@ -147,10 +147,10 @@ const SPEC: [string, string][] = [
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Einen konkreten Spot nach dem Flop durchrechnen", "Der Solver auf dieser Seite", null],
-  ["Wissen, welche Hände du aus welcher Position öffnest", "Die Starthände-Tabelle", "/de/blog/holdem-starting-hands-chart"],
-  ["Outs zählen und Pot Odds berechnen", "Der Pot-Odds-Guide", "/de/blog/holdem-pot-odds"],
+  ["Wissen, welche Hände du aus welcher Position öffnest", "Die Starthände-Tabelle", "/de/hand-chart"],
+  ["Outs zählen und Pot Odds, SPR oder ICM sofort berechnen", "Der Poker-Odds-Rechner", "/de/calculator"],
   ["Nur die Gewinnchance einer Hand sehen", "Der Equity-Guide", "/de/blog/holdem-equity"],
-  // ★2026-10-12 — /de/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  // ★2026-10-12 — 로케일 도구 페이지가 생겨(hand-chart·calculator·win-rate-quiz) 표의 링크를 도구로 옮겼다. 위 주석의 «도구 없음»은 그 전 기준 · 단일 핸드 승률 행은 계산기에 그 기능이 없어 그대로
   ["Equity schätzen üben, ohne die Karten der Gegner zu sehen – und erkennen, wann du hättest folden sollen", "Der Poker-Simulator", "/de/win-rate-quiz"],
 ];
 

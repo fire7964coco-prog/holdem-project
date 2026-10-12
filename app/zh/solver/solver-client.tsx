@@ -140,10 +140,10 @@ const SPEC: [string, string][] = [
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["把翻牌后的一个具体牌局算清楚", "本页的求解器", null],
-  ["知道每个位置该开哪些起手牌", "起手牌表", "/zh/blog/holdem-starting-hands-chart"],
-  ["数补牌、算底池赔率", "底池赔率指南", "/zh/blog/holdem-pot-odds"],
+  ["知道每个位置该开哪些起手牌", "德州扑克起手牌表", "/zh/hand-chart"],
+  ["当场数补牌、算底池赔率、SPR 和 ICM", "德州扑克概率计算器", "/zh/calculator"],
   ["只想看一手牌的胜率", "胜率（Equity）指南", "/zh/blog/holdem-equity"],
-  // ★2026-10-12 — /zh/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  // ★2026-10-12 — 로케일 도구 페이지가 생겨(hand-chart·calculator·win-rate-quiz) 표의 링크를 도구로 옮겼다. 위 주석의 «도구 없음»은 그 전 기준 · 단일 핸드 승률 행은 계산기에 그 기능이 없어 그대로
   ["在看不到对手底牌时练习估算胜率、找准弃牌时机", "德州扑克模拟器", "/zh/win-rate-quiz"],
 ];
 
