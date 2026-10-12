@@ -109,7 +109,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Mis rangos se envían a algún servidor?",
-    a: "Para calcular, no. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Los rangos que guardas quedan en tu navegador, y solo salen de ahí si tú generas un enlace para compartir un spot, exportas un archivo o inicias sesión: con sesión iniciada, tus rangos y ajustes guardados se conservan en tu cuenta para que puedas abrirlos en otro dispositivo. Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día se guarda en tu cuenta. Los spots que calculaste y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión.",
+    a: "Para calcular, no. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Los rangos que guardas quedan en tu navegador, y solo salen de ahí si tú generas un enlace para compartir un spot, exportas un archivo o inicias sesión: con sesión iniciada, tus listas guardadas de rangos y de tamaños de apuesta se conservan en tu cuenta para que puedas abrirlos en otro dispositivo. Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día se guarda en tu cuenta. Los spots que calculaste y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión.",
   },
   {
     q: "¿El solver tiene en cuenta el rake?",

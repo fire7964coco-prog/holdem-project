@@ -255,7 +255,7 @@ A. İkisi de — ama zamanla beceri kazanır. Tek bir elde büyük bir şans pay
 
 **Q. Pokerden para kazanılır mı?**
 
-A. Uzun vadede küçük bir azınlık kazanır; oyuncuların çoğu kaybeder. Beceri binlerce elde öne çıkar, ama varyans (kısa vadeli dalgalanma) çok büyüktür ve rake potlardan pay alır — iyi bir oyuncu bile binlerce, hatta on binlerce el süren kayıp serileri yaşar. Bu yüzden ilk kural bankroll (poker kasası) yönetimidir: pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır, masaya oturduğun tek bir stack bu kasanın küçük bir parçası olsun ve kayıp serisinde limit düşür. Pokeri bir gelir planı olarak değil, kararlarını geliştirdiğin bir oyun olarak gör.
+A. Uzun vadede küçük bir azınlık kazanır; oyuncuların çoğu kaybeder. Beceri yüz binlerce elde öne çıkar, ama varyans (kısa vadeli dalgalanma) çok büyüktür ve rake potlardan pay alır — iyi bir oyuncu bile binlerce, hatta on binlerce el süren kayıp serileri yaşar. Bu yüzden ilk kural bankroll (poker kasası) yönetimidir: pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır, masaya oturduğun tek bir stack bu kasanın küçük bir parçası olsun ve kayıp serisinde limit düşür. Pokeri bir gelir planı olarak değil, kararlarını geliştirdiğin bir oyun olarak gör.
 
 **Q. GTO poker nedir?**
 
