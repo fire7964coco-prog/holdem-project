@@ -57,7 +57,7 @@ export const POST: Post = {
   tldr: "On 9♥8♥7♣ after a button open and a big blind call, the big blind checks 76.2% and leads 23.7% — the first spot in this series where the lead is a real strategy rather than a rounding artifact. Range advantage has not flipped: equity is still 48.5% against 51.5%. What changed is the gap and where each side's strong hands sit.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-26",
+  updated: "2026-10-12",
   readTime: "9 min",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-en.webp",
@@ -259,7 +259,7 @@ The best way to study this one is **side by side with a dry board.** Open "Dry K
 
 Then open the **GTO Trainer** in the sidebar and let it deal you the lead you just read about — it hands you a random hand from the real range weights and tells you in big blinds what choosing wrong cost. Free, nothing to install, no account.
 
-> **Review your own hand from this spot** — This spot is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ slightly from the example above, and it may not suit pub games or tournaments.
+> **Review your own hand from this spot** — This spot is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
 
 ## FAQ
 

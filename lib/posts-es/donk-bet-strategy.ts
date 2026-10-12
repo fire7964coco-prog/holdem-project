@@ -26,7 +26,7 @@ export const POST: Post = {
   tldr: "En 9♥8♥7♣, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 76.2% y lidera el 23.7% — el primer spot de esta serie donde el lead es una estrategia de verdad y no un residuo de redondeo. La ventaja de rango no cambió de manos: la equity sigue siendo 48.5% contra 51.5%. Lo que cambió es la diferencia y dónde está la fuerza de cada lado.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-26",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -229,7 +229,7 @@ La mejor forma de estudiar este es **al lado de un board seco.** Abre primero "B
 
 Después abre el **Entrenador GTO** en la barra lateral y deja que te reparta el lead que acabas de leer: te da una mano al azar con los pesos reales del rango y te dice en ciegas grandes lo que costó elegir mal. Gratis, sin nada que instalar y sin cuenta.
 
-> **Revisa tu propia mano en este spot** — Este spot es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir un poco del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
 
 ## Preguntas frecuentes
 

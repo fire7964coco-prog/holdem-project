@@ -92,7 +92,7 @@ export const POST: Post = {
   tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets its whole range: checking rounds to 0.0%, and no combo out of 63 checks even 0.1% of the time. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-02",
+  updated: "2026-10-12",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -272,7 +272,7 @@ Check the header first: **Pot 22.5bb · Stack 89bb**. Seeing those instead of th
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
-> **Review your own hand from this spot** — This spot is a 3-bet pot: BTN opens, BB 3-bets and BTN calls. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**3-bet pot**, **Opening seat** BTN, **3-betting seat** BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ slightly from the example above, and it may not suit pub games or tournaments.
+> **Review your own hand from this spot** — This spot is a 3-bet pot: BTN opens, BB 3-bets and BTN calls. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**3-bet pot**, **Opening seat** BTN, **3-betting seat** BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), and its larger flop bet is 75% of the pot rather than 66%, so its numbers can differ from the example above, and it may not suit pub games or tournaments.
 
 ## FAQ
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet seluruh range: check dibulatkan menjadi 0,0%, dan tidak ada satu pun dari 63 combo yang check sampai 0,1%. Pada tujuh contoh sebelumnya BB check 76,2%–99,9%. Peran preflop kini berbalik: BB melakukan 3-bet, sementara BTN call tanpa AA dan KK karena keduanya masuk range 4-bet. BB memiliki set tertinggi, dan SPR 4,0 memperkecil ruang untuk menunda pembangunan pot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-02",
   readTime: "12 mnt",
   emoji: "🔥",
@@ -184,7 +184,7 @@ Periksa header **Pot 22,5bb · Stack 89bb**, berbeda dari 5,5bb dan 97,5bb pada 
 
 Setelah itu, gunakan **Trainer GTO** di sidebar. Hand dibagikan mengikuti bobot range dan tindakan Anda dinilai berdasarkan kerugian EV. Gratis, tanpa instalasi, serta dapat digunakan tanpa akun.
 
-> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot 3-bet: BTN open, BB 3-bet, lalu BTN call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Pot 3-bet**, **Posisi pembuka** BTN, **Posisi yang 3-bet** BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa sedikit berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot 3-bet: BTN open, BB 3-bet, lalu BTN call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Pot 3-bet**, **Posisi pembuka** BTN, **Posisi yang 3-bet** BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb) dan ukuran bet besarnya di flop 75% pot, bukan 66%, jadi angkanya bisa berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
 
 ## Pertanyaan umum
 

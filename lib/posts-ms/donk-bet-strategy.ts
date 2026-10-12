@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 9♥8♥7♣ selepas BTN open dan BB call, BB check 76.2% serta lead 23.7%. Inilah contoh pertama siri ini yang mempunyai lead sebagai bahagian strategi yang ketara. Kelebihan range belum berpindah: equity masih 48.5% berbanding 51.5% memihak BTN. Yang berubah ialah jurang equity dan taburan tangan kuat, dengan lebih banyak straight siap pada BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-27",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "🎯",
@@ -205,7 +205,7 @@ Cara paling berguna ialah **membandingkannya dengan board kering**. Buka **Board
 
 Selepas itu, buka **Trainer GTO** di bar sisi. Tangan diberikan mengikut wajaran range sebenar untuk menguji keputusan yang baru dipelajari. Aplikasi menunjukkan kerugian EV pilihan anda dalam big blind, dengan skor berdasarkan kerugian berbanding pot. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot BTN open dan BB call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, BTN dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin sedikit berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot BTN open dan BB call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, BTN dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
 
 ## Soalan Lazim
 

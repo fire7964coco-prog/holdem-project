@@ -14,7 +14,7 @@ export const POST: Post = {
   tldr: "Sur A♦K♠2♥ dans un pot 3-bet, la grosse blinde mise toute sa range : le check s'arrondit à 0,0 %, et aucun des 63 combos ne checke ne serait-ce que 0,1 % du temps. Dans les sept spots précédents, son réflexe était de checker, entre 76,2 % et 99,9 % du temps. Ce qui a basculé, c'est surtout l'action préflop : la grosse blinde a 3-bet au lieu de suivre, donc elle possède le haut de ce flop, pendant que le bouton a 4-bet ses paires d'as et de rois hors de sa range. Et avec un SPR de 4,0, il n'y a plus de street ultérieure à laquelle reporter la décision.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -188,7 +188,7 @@ Regarde d'abord l'en-tête : **Pot 22,5bb · Stack 89bb**. Voir ces valeurs au l
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale : il te distribue une main selon les vrais poids de la range et montre combien de grosses blindes ton action te coûte (**Perte d'EV**). Gratuit, rien à installer, sans compte.
 
-> **Revois ta propre main dans ce spot** — Ce spot est un pot 3-bet : le BTN ouvre, la BB fait 3-bet et le BTN paye. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Pot 3-bet**, **Position d’ouverture** BTN, **Position qui 3-bet** BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer un peu de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+> **Revois ta propre main dans ce spot** — Ce spot est un pot 3-bet : le BTN ouvre, la BB fait 3-bet et le BTN paye. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Pot 3-bet**, **Position d’ouverture** BTN, **Position qui 3-bet** BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb) et sa grosse mise au flop est de 75 % du pot au lieu de 66 %, donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
 
 ## FAQ
 

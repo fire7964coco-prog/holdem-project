@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Trên A♦K♠2♥ trong pot 3-bet, big blind bet toàn bộ range: check làm tròn còn 0,0%, và không combo nào trong 63 combo check dù chỉ 0,1%. Ở bảy spot trước, mặc định của nó là check, từ 76,2% đến 99,9%. Thứ đổi chiều chủ yếu là hành động preflop: big blind 3-bet thay vì call, nên nó nắm phần đỉnh của flop này, trong khi button đã 4-bet pocket A và pocket K đi mất. Và với SPR 4,0, không còn street nào sau đó để dồn lại.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -189,7 +189,7 @@ Hãy nhìn phần đầu trước: **Pot 22,5bb · Stack 89bb**. Thấy hai con 
 
 Rồi mở **Trainer GTO** ở thanh bên: nó chia cho bạn một tay bài theo đúng trọng số range thực tế và cho thấy hành động của bạn tốn bao nhiêu big blind. Miễn phí, không cần cài đặt, không cần tài khoản.
 
-> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot 3-bet: BTN open, BB 3-bet và BTN call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Pot 3-bet**, **Vị trí open** BTN, **Vị trí 3-bet** BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể hơi khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot 3-bet: BTN open, BB 3-bet và BTN call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Pot 3-bet**, **Vị trí open** BTN, **Vị trí 3-bet** BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb) và size cược lớn ở flop là 75% pot thay vì 66%, nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
 
 ## Câu hỏi thường gặp
 

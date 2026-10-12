@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf A♦K♠2♥ im 3-Bet-Pot bettet der Big Blind seine ganze Range: Der Check rundet auf 0,0%, und keine der 63 Combos checkt auch nur 0,1% der Zeit. In den sieben Spots davor war sein Standard der Check, in 76,2% bis 99,9% der Fälle. Umgedreht hat das vor allem die Preflop-Aktion: Der Big Blind hat ge-3-bettet, statt zu callen, also gehört ihm die Spitze dieses Flops, während der Button seine Pocket-Asse und -Könige per 4-Bet aus der Range genommen hat. Und bei einer SPR von 4,0 gibt es keine spätere Street, auf die man ausweichen könnte.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -195,7 +195,7 @@ Schau zuerst auf die Kopfzeile: **Pot 22,5bb · Stack 89bb**. Dort diese Werte s
 
 Öffne dann den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und zeigt dir, wie viele Big Blinds deine Aktion kostet. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
-> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein 3-Bet-Pot: BTN eröffnet, BB 3-bettet und BTN callt. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**3-Bet-Pot**, **Eröffnende Position** BTN, **3-bettende Position** BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen leicht vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein 3-Bet-Pot: BTN eröffnet, BB 3-bettet und BTN callt. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**3-Bet-Pot**, **Eröffnende Position** BTN, **3-bettende Position** BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), und ihre große Flop-Bet beträgt 75% statt 66% vom Pot, daher können die Zahlen vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
 
 ## FAQ
 

@@ -32,7 +32,7 @@ export const POST: Post = {
   tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta su rango entero: el check redondea a 0.0%, y ninguno de los 63 combos hace check ni siquiera el 0.1% de las veces. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-02",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -214,7 +214,7 @@ Mira primero la cabecera: **Bote 22.5 bb · Stack 89 bb**. Ver eso en lugar de l
 
 Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin instalar nada, sin cuenta.
 
-> **Revisa tu propia mano en este spot** — Este spot es un bote 3-bet: BTN abre, BB hace 3-bet y BTN paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Bote 3-bet**, **Posición que abre** BTN, **Posición que hace 3-bet** BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir un poco del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+> **Revisa tu propia mano en este spot** — Este spot es un bote 3-bet: BTN abre, BB hace 3-bet y BTN paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Bote 3-bet**, **Posición que abre** BTN, **Posición que hace 3-bet** BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb) y su apuesta grande en el flop es del 75% del bote en lugar del 66%, así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
 
 ## Preguntas frecuentes
 
