@@ -58,7 +58,27 @@ export interface TableSim {
   oppRoles: EntryRole[];
   /** 이 판의 승률 계산 시드 — 같은 판은 어느 기기에서든 같은 숫자(`_engine.ts` mulberry32) */
   seed: number;
+  /** 직접 입력(S-034 2차 ①)으로 고정한 카드·자리가 있는 판 — 퀴즈 기록에 넣지 않는다 */
+  custom: boolean;
 }
+
+/**
+ * 직접 입력 (S-034 2차 ① · 2026-10-12) — «내가 겪은 그 판» 재현.
+ * null 칸은 지금처럼 무작위로 채운다. 상대 패는 입력받지 않는다 — 실전에서 모르는 정보라서
+ * 늘 자리별 레인지에서 나온다(화면 승률의 전제 «상대 패를 모른다»가 그대로 유지된다).
+ */
+export interface FixedDeal {
+  /** 내 포지션 인덱스 (POSITIONS_6 또는 POSITIONS_9) · null = 무작위 */
+  heroPos: number | null;
+  /** 내 패 2칸 */
+  hero: (NCard | null)[];
+  /** 보드 5칸 (플랍 3 · 턴 · 리버) */
+  board: (NCard | null)[];
+}
+
+/** 고정한 칸이 하나라도 있나 */
+export const isFixed = (f: FixedDeal | null | undefined): f is FixedDeal =>
+  !!f && (f.heroPos !== null || f.hero.some(Boolean) || f.board.some(Boolean));
 
 /** 가중 무작위 추출(비복원) — 뒷자리가 더 자주 뽑힌다 */
 function pickSlots(heroPos: number, count: number, size: TableSize): number[] {
@@ -86,15 +106,16 @@ function pickSlots(heroPos: number, count: number, size: TableSize): number[] {
  *   매 핸드 500~800ms짜리 동기 계산이 아무 이유 없이 돌면서 화면을 얼려 놓고 있었다.
  *   승률은 `_engine.ts`가, 쇼다운 판정은 `_simulator.tsx`가 §13 평가기로 직접 한다.
  */
-export function makeTableSim(preflopCount: number, size: TableSize = 6, _names?: HandNames): TableSim {
-  const heroPos = Math.floor(Math.random() * size);
+export function makeTableSim(preflopCount: number, size: TableSize = 6, _names?: HandNames, fixed?: FixedDeal | null): TableSim {
+  const custom = isFixed(fixed);
+  const heroPos = custom && fixed.heroPos !== null && fixed.heroPos < size ? fixed.heroPos : Math.floor(Math.random() * size);
   const activeSlots = [0, ...pickSlots(heroPos, Math.min(preflopCount, size) - 1, size)].sort((a, b) => a - b);
   // activeSlots가 0을 포함한 오름차순이므로 인덱스 0 = 나 = hands[0]이 보장된다
   const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots, size));
   const oppRanges = oppRoles.map(rangeFor);
-  const { hands, board } = dealFromRanges(oppRanges);
+  const { hands, board } = dealFromRanges(oppRanges, custom ? fixed : null);
   const seed = Math.floor(Math.random() * 2 ** 32);
-  return { size, heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed };
+  return { size, heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed, custom };
 }
 
 /**
@@ -130,8 +151,9 @@ function pickWeighted(range: WeightedHole[], used: Set<number>): WeightedHole["h
 /**
  * 나는 무작위 2장(레인지 밖의 패로도 «끝까지 가 보는» 도구라서), 상대는 각자 레인지에서,
  * 보드는 남은 카드에서 뽑는다.
+ * ★직접 입력한 칸은 먼저 «쓴 카드»로 막아 둔다 — 상대 콤보·무작위 칸이 그 카드를 다시 뽑지 않게.
  */
-function dealFromRanges(oppRanges: WeightedHole[][]): { hands: Card[][]; board: Card[] } {
+function dealFromRanges(oppRanges: WeightedHole[][], fixed: FixedDeal | null): { hands: Card[][]; board: Card[] } {
   const deck: NCard[] = [];
   for (let r = 2; r <= 14; r++) for (let s = 0; s < 4; s++) deck.push([r, s]);
   /** 아직 안 쓴 카드에서 n장 — 부분 Fisher-Yates */
@@ -145,14 +167,22 @@ function dealFromRanges(oppRanges: WeightedHole[][]): { hands: Card[][]; board: 
   };
   const used = new Set<number>();
   const mark = (cs: NCard[]) => cs.forEach((c) => used.add(c[0] * 4 + c[1]));
-  const hero = draw(2, used);
-  mark(hero);
+  const fixedCards = fixed ? [...fixed.hero, ...fixed.board].filter((c): c is NCard => !!c) : [];
+  mark(fixedCards);
+  /** 고정 칸은 그대로, 빈 칸은 남은 카드에서 */
+  const fill = (slots: (NCard | null)[]): NCard[] => {
+    const rnd = draw(slots.filter((c) => !c).length, used);
+    mark(rnd);
+    let k = 0;
+    return slots.map((c) => c ?? rnd[k++]);
+  };
+  const hero = fill(fixed ? fixed.hero : [null, null]);
   const opp = oppRanges.map((range) => {
     const h = pickWeighted(range, used);
     mark(h);
     return h;
   });
-  const board = draw(5, used);
+  const board = fill(fixed ? fixed.board : [null, null, null, null, null]);
   return {
     hands: [hero, ...opp].map((h) => h.map(toDisplay)),
     board: board.map(toDisplay),

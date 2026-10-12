@@ -103,6 +103,20 @@ const EN_UI: QuizUI = {
   quizHandSummary: (avgErr, hits, decisions, points) =>
     `This hand: avg error ${avgErr}%p${decisions > 0 ? ` · ${hits}/${decisions} decisions right` : ""} · ${points} pts`,
   quizGuessLegend: "Your guess",
+  customToggle: "✍️ Set hand",
+  customTitle: "Set up a hand — replay one you played",
+  customHint: "Tap a slot, then pick a card below. Empty slots are dealt at random, and opponents still get hands from their seat ranges.",
+  customPos: "Your seat",
+  customRandom: "Random",
+  customHero: "Your hand",
+  customBoard: "Board",
+  customBoardSlots: ["Flop", "Flop", "Flop", "Turn", "River"],
+  customStart: "Deal this hand →",
+  customClear: "Clear all",
+  customClose: "Close",
+  customOff: "Back to random hands",
+  customActive: "Your set-up hand · new hands keep these cards",
+  customEdit: "Edit",
 
   ruleTitle: "What this simulator assumes",
   ruleText: (
@@ -135,7 +149,7 @@ const EN_UI: QuizUI = {
         at 25/50/75%. Where no chart exists (HJ facing a UTG open · SB facing a UTG, HJ or CO open) and for the
         third player onward, the nearest defending chart stands in. There are no 9-handed charts, so at a 9-max
         table UTG, UTG+1, UTG+2 and LJ use the 6-max UTG chart and every other seat uses the 6-max chart of the
-        same name (an early seat defending another early seat&rsquo;s open, or the HJ defending one, uses the CO vs UTG chart) — the first three seats of a 9-max table come out wider than they really are. Only your own hand is random — the tool lets
+        same name (an early seat defending another early seat&rsquo;s open, or the HJ defending one, uses the CO vs UTG chart) — the first three seats of a 9-max table come out wider than they really are. Only your own hand is random (unless you set it yourself) — the tool lets
         you play any two cards to the river. A 3-bet does not change the pot size here (simplified).
       </p>
       <p className="mb-2">
@@ -164,6 +178,14 @@ const EN_UI: QuizUI = {
         (zero once you are 25%p or more off). A call/fold pick counts as right when it matches the pot-odds verdict. Your
         running totals stay in this browser, and when you are logged in they are also saved to your account so they
         follow you to other devices (the cards and board are not saved).
+      </p>
+      <p className="mt-2">
+        <b className="text-foreground">✍️ Set hand</b> lets you pick your seat, your hole cards and the board to replay a
+        hand you actually played. Empty slots are dealt at random. You cannot pick your opponents&rsquo; cards — you would
+        not know them at a real table either — so they still come from the seat-based ranges, and the on-screen equity
+        keeps the same “cards unknown” premise. Even with the board set in advance, each street&rsquo;s equity only uses
+        the cards dealt so far. Because replaying the same hand would let you memorize the answers, set-up hands are not
+        added to your quiz record.
       </p>
     </>
   ),

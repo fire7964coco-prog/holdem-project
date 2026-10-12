@@ -9,8 +9,12 @@ import {
   readQuizStore, recordQuizAnswer, finishQuizHands, clearQuizStore, newClientId,
   uploadQuizHands, fetchAccountTotals, pendingQuizTotals, addQuizTotals, EMPTY_TOTALS, type QuizTotals,
 } from "@/lib/win-rate-quiz-records";
-import { describeHand, handCategory, winnersAt, type Card as QuizCard, type HandNames } from "./_equity";
-import { makeTableSim, positionAt, type TableSim, type TableSize } from "./_table";
+import { describeHand, handCategory, winnersAt, toDisplay, type Card as QuizCard, type HandNames } from "./_equity";
+import {
+  makeTableSim, positionAt, isFixed, POSITIONS_6, POSITIONS_9,
+  type TableSim, type TableSize, type FixedDeal,
+} from "./_table";
+import type { NCard } from "./_ranges";
 import {
   runHand, heroOuts, ruleOf24, SAMPLES,
   type HandResult, type StreetRecord, type Action, type EquitySplit,
@@ -198,6 +202,27 @@ export interface QuizUI {
   quizHandSummary: (avgErr: string, hits: number, decisions: number, points: number) => string;
   /** 꺾은선의 «내 짐작» 선 */
   quizGuessLegend: string;
+  /**
+   * 직접 입력 (S-034 2차 ① · 2026-10-12) — 내 자리·내 패·보드를 골라 «겪은 그 판»을 재현한다.
+   * 상대 패는 입력받지 않는다(늘 자리별 레인지). 직접 입력한 판은 퀴즈 기록에 넣지 않는다.
+   */
+  customToggle: string;
+  customTitle: string;
+  customHint: string;
+  customPos: string;
+  customRandom: string;
+  customHero: string;
+  customBoard: string;
+  /** 보드 칸 이름 — 플랍 3 · 턴 · 리버 (빈 칸 안에 작게) */
+  customBoardSlots: readonly [string, string, string, string, string];
+  customStart: string;
+  customClear: string;
+  customClose: string;
+  /** 직접 입력을 끄고 무작위 판으로 */
+  customOff: string;
+  /** 직접 입력한 판을 돌리는 중 — 테이블 위 한 줄 */
+  customActive: string;
+  customEdit: string;
   /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
   resultTabs: readonly [string, string, string];
   /** 규칙·단서 */
@@ -434,6 +459,123 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
   );
 }
 
+// ── 직접 입력 (S-034 2차 ①) ─────────────────────────────────────────────────
+const EMPTY_DEAL: FixedDeal = { heroPos: null, hero: [null, null], board: [null, null, null, null, null] };
+/** 카드 고르기 판 — 무늬 줄 × 숫자 칸(A부터) */
+const PICK_RANKS = [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2];
+const PICK_SUITS = [0, 1, 2, 3];
+const cardKey = (c: NCard) => c[0] * 4 + c[1];
+
+/** 테이블 크기를 바꾸면 자리 번호의 뜻이 달라진다(6인 3 = BTN · 9인 3 = LJ) — 이름으로 옮기고 없으면 무작위 */
+function moveHeroPos(f: FixedDeal, from: TableSize, to: TableSize): FixedDeal {
+  if (f.heroPos === null || from === to) return f;
+  const name = (from === 9 ? POSITIONS_9 : POSITIONS_6)[f.heroPos];
+  const i = (to === 9 ? POSITIONS_9 : POSITIONS_6).indexOf(name as never);
+  return { ...f, heroPos: i < 0 ? null : i };
+}
+
+function CustomEditor({ ui, size, draft, setDraft, onStart, onClose, onOff }: {
+  ui: QuizUI; size: TableSize; draft: FixedDeal; setDraft: (f: FixedDeal) => void;
+  onStart: () => void; onClose: () => void; onOff: (() => void) | null;
+}) {
+  /** 지금 채울 칸 — 0·1 = 내 패 · 2~6 = 보드 */
+  const [active, setActive] = useState(0);
+  const slots = [...draft.hero, ...draft.board];
+  const used = new Set(slots.filter((c): c is NCard => !!c).map(cardKey));
+  const put = (c: NCard | null) => {
+    const next = slots.slice();
+    next[active] = c;
+    setDraft({ ...draft, hero: next.slice(0, 2), board: next.slice(2) });
+    // 다음 빈 칸으로(뒤쪽 먼저, 없으면 앞쪽) — 카드만 연달아 누르면 내 패 → 플랍 → 턴 → 리버 순으로 찬다
+    if (c) {
+      const order = [...Array(7).keys()].map((k) => (active + 1 + k) % 7);
+      const nextEmpty = order.find((k) => !next[k]);
+      if (nextEmpty !== undefined) setActive(nextEmpty);
+    }
+  };
+  const positions = size === 9 ? POSITIONS_9 : POSITIONS_6;
+  const slotBtn = (i: number, label: string) => {
+    const c = slots[i];
+    const on = active === i;
+    const d = c ? toDisplay(c) : null;
+    return (
+      <button key={i} type="button" onClick={() => (on && c ? put(null) : setActive(i))}
+        aria-pressed={on} aria-label={d ? `${label} ${d.rank}${d.suit}` : label}
+        className="w-[34px] h-[48px] shrink-0 rounded-[5px] relative"
+        style={{ outline: on ? `2px solid ${GOLD}` : "none", outlineOffset: 2 }}>
+        {d ? <KitCardFace card={d} />
+          : <span className="absolute inset-0 rounded-[5px] border border-dashed flex items-center justify-center text-[9px] font-bold text-white/45"
+              style={{ borderColor: on ? GOLD : "rgba(255,255,255,0.3)" }}>{label}</span>}
+      </button>
+    );
+  };
+  const segBtn = (on: boolean) => on
+    ? { background: GOLD, color: "var(--wrq-accent-ink)", borderColor: GOLD }
+    : { color: "rgba(255,255,255,0.7)", borderColor: "rgba(255,255,255,0.2)" };
+  return (
+    <div className="rounded-2xl px-3 py-3 mb-3 lg:max-w-[560px] lg:mx-auto" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>
+      <div className="font-black text-sm text-white">✍️ {ui.customTitle}</div>
+      <p className="text-[11px] text-white/55 leading-snug mt-0.5 mb-2.5">{ui.customHint}</p>
+
+      <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.customPos}</div>
+      <div className="flex flex-wrap gap-1 mb-3" role="group" aria-label={ui.customPos}>
+        <button type="button" onClick={() => setDraft({ ...draft, heroPos: null })} aria-pressed={draft.heroPos === null}
+          className="px-2 py-1 rounded-full text-[11.5px] font-bold border" style={segBtn(draft.heroPos === null)}>{ui.customRandom}</button>
+        {positions.map((name, i) => (
+          <button key={name} type="button" onClick={() => setDraft({ ...draft, heroPos: i })} aria-pressed={draft.heroPos === i}
+            className="px-2 py-1 rounded-full text-[11.5px] font-bold border tabular-nums" style={segBtn(draft.heroPos === i)}>{name}</button>
+        ))}
+      </div>
+
+      <div className="flex items-end gap-3 mb-3">
+        <div>
+          <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.customHero}</div>
+          <div className="flex gap-1">{slotBtn(0, "?")}{slotBtn(1, "?")}</div>
+        </div>
+        <div className="min-w-0">
+          <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.customBoard}</div>
+          <div className="flex gap-1">
+            {[2, 3, 4].map((i) => slotBtn(i, ui.customBoardSlots[i - 2]))}
+            <span className="w-1" aria-hidden />
+            {slotBtn(5, ui.customBoardSlots[3])}{slotBtn(6, ui.customBoardSlots[4])}
+          </div>
+        </div>
+      </div>
+
+      {/* 카드 52장 — 이미 쓴 카드는 흐리게. 누르면 금테 칸에 들어간다 */}
+      <div className="grid gap-[3px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+        {PICK_SUITS.map((su) => PICK_RANKS.map((r) => {
+          const c: NCard = [r, su];
+          const d = toDisplay(c);
+          const taken = used.has(cardKey(c));
+          return (
+            <button key={`${r}-${su}`} type="button" disabled={taken} onClick={() => put(c)}
+              aria-label={`${d.rank}${d.suit}`}
+              className="h-[34px] rounded-[4px] flex flex-col items-center justify-center leading-none font-black disabled:opacity-20 active:scale-95"
+              style={{ background: "var(--wrq-card-paper)", color: su === 1 || su === 2 ? "var(--wrq-card-red)" : "var(--wrq-card-black)" }}>
+              <span className={d.rank === "10" ? "text-[10px] tracking-[-0.06em]" : "text-[11.5px]"}>{d.rank}</span>
+              <span className="text-[10px] mt-[1px]">{d.suit}</span>
+            </button>
+          );
+        }))}
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2 mt-3">
+        <button type="button" onClick={onStart}
+          className="flex-1 min-w-[150px] py-3 rounded-xl font-black text-sm text-black transition-all hover:brightness-110 active:scale-[0.98]"
+          style={{ background: GOLD }}>{ui.customStart}</button>
+        <button type="button" onClick={() => { setDraft(EMPTY_DEAL); setActive(0); }}
+          className="px-3 py-3 rounded-xl text-xs font-bold border text-white/70" style={{ borderColor: "rgba(255,255,255,0.2)" }}>{ui.customClear}</button>
+        <button type="button" onClick={onClose}
+          className="px-3 py-3 rounded-xl text-xs font-bold border text-white/70" style={{ borderColor: "rgba(255,255,255,0.2)" }}>{ui.customClose}</button>
+      </div>
+      {onOff && (
+        <button type="button" onClick={onOff} className="w-full mt-2 text-[11px] font-bold underline text-white/55">{ui.customOff}</button>
+      )}
+    </div>
+  );
+}
+
 // ── 본체 ────────────────────────────────────────────────────────────────────
 export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [preflopCount, setPreflopCount] = useState(3);
@@ -458,6 +600,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * (`lib/win-rate-quiz-records.ts` · 설계 docs/my-records-design.md §3-2).
    */
   const [quiz, setQuiz] = useState(false);
+  /** 직접 입력 — 적용된 값(custom)과 편집 중인 값(draft)을 나눈다. 닫기 = draft 버림 */
+  const [custom, setCustom] = useState<FixedDeal | null>(null);
+  const [draft, setDraft] = useState<FixedDeal>(EMPTY_DEAL);
+  const [editing, setEditing] = useState(false);
   const [guess, setGuess] = useState(50);
   const [answers, setAnswers] = useState<Record<number, QuizAnswer>>({});
   /** 브라우저 기록(합계 + 아직 올리지 않은 판) — 첫 렌더는 빈 값(하이드레이션) · effect에서 읽는다 */
@@ -549,7 +695,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     let cancelled = false;
     let worker: Worker | null = null;
     const t = setTimeout(() => {
-      const s = makeTableSim(preflopCount, tableSize);
+      const s = makeTableSim(preflopCount, tableSize, undefined, custom);
       if (cancelled) return;
       setSim(s);
       const req: HandRequest = {
@@ -575,7 +721,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       }
     }, 30);
     return () => { cancelled = true; clearTimeout(t); worker?.terminate(); };
-  }, [handId, preflopCount, tableSize]);
+  }, [handId, preflopCount, tableSize, custom]);
 
   const newHand = useCallback(() => {
     closeHand();
@@ -593,8 +739,23 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     closeHand();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
+    setCustom((c) => (c ? moveHeroPos(c, tableSize, n) : c));
+    setDraft((d) => moveHeroPos(d, tableSize, n));
     setTableSize(n);
+  }, [closeHand, tableSize]);
+  /** 직접 입력 적용 — 칸을 하나도 안 채웠으면 무작위 판으로 */
+  const applyCustom = useCallback((f: FixedDeal | null) => {
+    closeHand();
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setAnswers({}); setGuess(50);
+    setCustom(isFixed(f) ? f : null);
+    setEditing(false);
+    setHandId((id) => id + 1);
   }, [closeHand]);
+  const openEditor = useCallback(() => {
+    setDraft(custom ?? EMPTY_DEAL);
+    setEditing((e) => !e);
+  }, [custom]);
 
   /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝). 계산 중엔 아직 모른다 */
   const lastStreet = result ? result.streets[result.streets.length - 1].street : 3;
@@ -624,6 +785,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     const choiceOk = choice === null ? null : choice === rec.verdict;
     const firstOfHand = Object.keys(answers).length === 0;
     setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
+    // 직접 입력한 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다
+    if (sim?.custom) return;
     if (!handKey.current) handKey.current = newClientId();
     if (sim) {
       applyStore(recordQuizAnswer(
@@ -782,7 +945,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     ? { background: GOLD, color: "var(--wrq-accent-ink)" }
     : { color: "hsl(var(--muted-foreground))" };
   const controls = (cls: string) => (
-    <div className={`flex justify-center items-center gap-1.5 sm:gap-2 ${cls}`}>
+    <div className={`flex justify-center items-center gap-1 sm:gap-2 ${cls}`}>
       <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
         {([6, 9] as TableSize[]).map((n) => (
           <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n}
@@ -804,15 +967,36 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </button>
         ))}
       </div>
-      <span className="w-px h-5 bg-border mx-0.5" aria-hidden />
+      <span className="w-px h-5 bg-border sm:mx-0.5" aria-hidden />
       <button onClick={toggleQuiz} aria-pressed={quiz}
-        className="px-3 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-2.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={quiz
           ? { borderColor: GOLD, background: GOLD, color: "var(--wrq-accent-ink)" }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
         {ui.quizToggle}
       </button>
+      {/* 폰(390)에서는 이 줄에 글자까지 넣으면 22~42px 넘친다 → 아이콘만 · 이름은 aria-label·title로 */}
+      <button onClick={openEditor} aria-pressed={editing || !!custom} aria-expanded={editing}
+        aria-label={ui.customToggle} title={ui.customToggle}
+        className="px-2 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        style={editing || custom
+          ? { borderColor: GOLD, background: editing ? GOLD : "transparent", color: editing ? "var(--wrq-accent-ink)" : GOLD }
+          : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
+        <span className="sm:hidden" aria-hidden>✍️</span>
+        <span className="hidden sm:inline">{ui.customToggle}</span>
+      </button>
     </div>
+  );
+  const editor = editing && (
+    <CustomEditor ui={ui} size={tableSize} draft={draft} setDraft={setDraft}
+      onStart={() => applyCustom(draft)} onClose={() => setEditing(false)}
+      onOff={custom ? () => applyCustom(null) : null} />
+  );
+  /** 직접 입력한 판을 돌리는 중 — 한 줄(누르면 편집기) */
+  const customLine = custom && !editing && (
+    <button onClick={openEditor} className="block mx-auto mb-1.5 text-[11px] font-bold" style={{ color: GOLD }}>
+      ✍️ {ui.customActive} · <span className="underline">{ui.customEdit}</span>
+    </button>
   );
 
   if (!sim || !rec) {
@@ -820,6 +1004,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <div className="wrq">
         <p className="text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
         {controls("mb-4")}
+        {editor}
         <div className="rounded-3xl p-16 text-center text-sm text-white/70" style={{ background: FELT, border: `2px solid ${mix(GOLD, 27)}` }}>
           🃏 {ui.loading}
         </div>
@@ -898,6 +1083,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     <div className="wrq">
       <p className="hidden lg:block text-center text-[11px] text-muted-foreground mb-1.5">{ui.tableNote}</p>
       {controls("mb-2 lg:mb-4")}
+      {editor}
+      {customLine}
 
       {/* ── 넓은 화면(lg↑)에서는 본문을 반으로: 좌 = 테이블 / 우 = 승률·팟오즈·버튼 전부 ──
           ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
