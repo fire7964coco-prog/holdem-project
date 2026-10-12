@@ -41,17 +41,29 @@ function bestCategory(cs: NCard[]): number {
   return Math.floor(best / 15 ** 5);
 }
 
-/** 플러시 드로우(한 무늬 정확히 4장) 또는 스트레이트 드로우(5칸 창에 4랭크) */
-function hasDraw(cs: NCard[]): boolean {
+/**
+ * 플러시 드로우(한 무늬 정확히 4장) 또는 스트레이트 드로우(5칸 창에 4랭크).
+ * ★2026-10-12 MA-491 — 리버(보드 5장)에는 드로우가 없다(올 카드가 없다). 그리고 **홀카드가 1장 이상
+ *   들어간 패턴만** 드로우다 — 보드만으로 된 4플러시·4랭크는 테이블 전원 공유라 그 사람의 드로우가 아니다.
+ */
+function hasDraw(hole: NCard[], board: NCard[]): boolean {
+  if (board.length >= 5) return false;
+  const cs = [...hole, ...board];
   const suitCount = [0, 0, 0, 0];
+  const boardSuit = [0, 0, 0, 0];
   for (const c of cs) suitCount[c[1]]++;
-  if (suitCount.some((x) => x === 4)) return true;
-  const present = new Set(cs.map((c) => c[0]));
-  if (present.has(14)) present.add(1); // 휠(A-2-3-4-5)
+  for (const c of board) boardSuit[c[1]]++;
+  for (let s = 0; s < 4; s++) if (suitCount[s] === 4 && boardSuit[s] < 4) return true;
+  const withWheel = (rs: Set<number>) => { if (rs.has(14)) rs.add(1); return rs; }; // 휠(A-2-3-4-5)
+  const present = withWheel(new Set(cs.map((c) => c[0])));
+  const onBoard = withWheel(new Set(board.map((c) => c[0])));
   for (let lo = 1; lo <= 10; lo++) {
-    let n = 0;
-    for (let k = 0; k < 5; k++) if (present.has(lo + k)) n++;
-    if (n === 4) return true;
+    let n = 0, nb = 0;
+    for (let k = 0; k < 5; k++) {
+      if (present.has(lo + k)) n++;
+      if (onBoard.has(lo + k)) nb++;
+    }
+    if (n === 4 && nb < 4) return true;
   }
   return false;
 }
@@ -63,7 +75,7 @@ export type Action = "fold" | "call" | "raise";
  * ★성향마다 규칙이 다를 뿐 **여전히 «홀카드 + 보드 → 액션» 확정 규칙**이다 — 그래야 아래
  *   eligibleHoles가 그 규칙으로 레인지를 좁혀 «보이는 액션 = 계산 근거»가 유지된다.
  *   (무작위 블러프를 넣으면 레인지가 확률 가중이 돼야 하고 화면에 규칙을 한 줄로 못 적는다.)
- * ★체크레이즈는 없다 — 이 시뮬레이터에서 나는 베팅하지 않고 끝까지 콜만 하므로 성립하지 않는다.
+ * ★체크레이즈는 없다 — 상대마다 스트리트당 규칙대로 한 번만 액션하고, 체크한 뒤 다시 응수하는 단계가 엔진에 없다.
  */
 export type OppStyle = "standard" | "tight" | "loose" | "aggressive";
 export const OPP_STYLES: readonly OppStyle[] = ["standard", "tight", "loose", "aggressive"];
@@ -103,7 +115,7 @@ export function opponentAction(hole: NCard[], board: NCard[], style: OppStyle = 
   const cs = [...hole, ...board];
   const cat = bestCategory(cs);
   if (cat >= 2) return "raise"; // 투페어 이상
-  const draw = hasDraw(cs); // 플러시·스트레이트 드로우
+  const draw = hasDraw(hole, board); // 플러시·스트레이트 드로우(플랍·턴 · 홀카드가 들어간 것만)
   switch (style) {
     case "tight":
       return (cat === 1 && topPairPlus(hole, board)) || draw ? "call" : "fold";

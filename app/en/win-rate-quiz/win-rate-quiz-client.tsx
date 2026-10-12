@@ -156,7 +156,7 @@ const EN_UI: QuizUI = {
         <li>Two pair or better → <b className="text-foreground">{style === "aggressive" ? "raise of 150% pot (overbet)" : "pot-sized raise"}</b></li>
         {style === "standard" && <li>One pair, or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>}
         {style === "tight" && <>
-          <li>Top pair or better made with a hole card (overpairs included), or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>
+          <li>One pair that is top pair or better made with a hole card (overpairs included), or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>
           <li>Any weaker pair (including a pair that is only on the board) → <b className="text-foreground">fold</b></li>
         </>}
         {style === "loose" && <li>One pair, a flush/straight draw, or a hole card higher than every board card (an overcard) → <b className="text-foreground">half-pot bet</b></li>}
@@ -168,9 +168,10 @@ const EN_UI: QuizUI = {
         <li>Anything else → <b className="text-foreground">fold</b> (mucked, just like live play)</li>
       </ul>
       <p className="mb-2">
+        Rules are checked from the top; the first line that fits decides the action. A draw means a four-card flush or straight pattern on the flop or turn that uses at least one hole card (there are no draws on the river).{" "}
         {style === "aggressive" && "Every Aggro raise, semi-bluffs and bluffs included, is 150% of the pot. "}
         When anyone raises, every player still in calls that raise amount, and a bet bigger than the remaining
-        stack is capped at an all-in. There are no check-raises — you never bet here, you just call to the river.
+        stack is capped at an all-in. There are no check-raises — each opponent acts once per street by the rules, and there is no step where a player checks and then responds again. You never bet here; you just call to the river.
         Preflop ranges (below) are the same whatever the style.
       </p>
       <p className="mb-2">

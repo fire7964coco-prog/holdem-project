@@ -167,7 +167,7 @@ const ES_UI: QuizUI = {
         <li>Doble pareja o mejor → <b className="text-foreground">{style === "aggressive" ? "subida del 150% del bote (overbet)" : "subida del tamaño del bote"}</b></li>
         {style === "standard" && <li>Una pareja, o un proyecto de color/escalera → <b className="text-foreground">apuesta de medio bote</b></li>}
         {style === "tight" && <>
-          <li>Pareja máxima o mejor hecha con una carta propia (sobrepares incluidas), o un proyecto de color/escalera → <b className="text-foreground">apuesta de medio bote</b></li>
+          <li>Una pareja que sea pareja máxima o mejor hecha con una carta propia (sobrepares incluidas), o un proyecto de color/escalera → <b className="text-foreground">apuesta de medio bote</b></li>
           <li>Cualquier pareja más débil (incluida una pareja que solo está en la mesa) → <b className="text-foreground">fold</b></li>
         </>}
         {style === "loose" && <li>Una pareja, un proyecto de color/escalera, o una carta propia más alta que todas las de la mesa (una sobrecarta) → <b className="text-foreground">apuesta de medio bote</b></li>}
@@ -179,9 +179,10 @@ const ES_UI: QuizUI = {
         <li>Cualquier otra cosa → <b className="text-foreground">fold</b> (tira las cartas sin enseñarlas, como en vivo)</li>
       </ul>
       <p className="mb-2">
+        Las reglas se leen de arriba abajo: manda la primera línea que encaje. Un proyecto es un patrón de color o escalera de cuatro cartas en el flop o el turn que usa al menos una carta propia (en el river no hay proyectos).{" "}
         {style === "aggressive" && "Todas las subidas del estilo Agresivo, semifaroles y faroles incluidos, son del 150% del bote. "}
         Cuando alguien sube, todos los que siguen en la mano pagan esa subida, y una apuesta mayor que el stack que
-        queda se limita a un all-in. No hay check-raise — tú nunca apuestas aquí, solo pagas hasta el river.
+        queda se limita a un all-in. No hay check-raise: cada rival actúa una sola vez por calle según las reglas, y no existe el paso de pasar y luego volver a responder. Tú nunca apuestas aquí; solo pagas hasta el river.
         Los rangos preflop (abajo) son los mismos sea cual sea el estilo.
       </p>
       <p className="mb-2">

@@ -175,7 +175,7 @@ const DE_UI: QuizUI = {
         <li>Zwei Paare oder besser → <b className="text-foreground">{style === "aggressive" ? "Raise auf 150% des Pots (Overbet)" : "Raise in Pot-Größe"}</b></li>
         {style === "standard" && <li>Ein Paar oder ein Flush-/Straßendraw → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>}
         {style === "tight" && <>
-          <li>Top Pair oder besser mit einer Hole Card (Overpairs eingeschlossen) oder ein Flush-/Straßendraw → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>
+          <li>Ein Paar, das Top Pair oder besser ist und eine Hole Card nutzt (Overpairs eingeschlossen), oder ein Flush-/Straßendraw → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>
           <li>Jedes schwächere Paar (auch ein Paar, das nur auf dem Board liegt) → <b className="text-foreground">Fold</b></li>
         </>}
         {style === "loose" && <li>Ein Paar, ein Flush-/Straßendraw oder eine Hole Card, die höher ist als jede Board-Karte (Overcard) → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>}
@@ -187,9 +187,10 @@ const DE_UI: QuizUI = {
         <li>Alles andere → <b className="text-foreground">Fold</b> (Karten in den Muck, wie live)</li>
       </ul>
       <p className="mb-2">
+        Die Regeln werden von oben nach unten geprüft; die erste passende Zeile entscheidet. Ein Draw ist ein Flush- oder Straßenmuster aus vier Karten auf Flop oder Turn, das mindestens eine Hole Card nutzt (am River gibt es keine Draws).{" "}
         {style === "aggressive" && "Jeder Raise im aggressiven Stil – Semi-Bluffs und Bluffs eingeschlossen – beträgt 150% des Pots. "}
         Wenn jemand raist, callen alle noch beteiligten Spieler diesen Raise, und ein Einsatz über dem restlichen
-        Stack wird als All-in gedeckelt. Check-Raises gibt es nicht – du setzt hier nie selbst, du callst einfach bis zum River.
+        Stack wird als All-in gedeckelt. Check-Raises gibt es nicht – jeder Gegner handelt pro Street genau einmal nach den Regeln; einen Schritt „checken und danach noch einmal reagieren“ sieht die Simulation nicht vor. Du setzt hier nie selbst, du callst einfach bis zum River.
         Die Preflop-Ranges (unten) sind bei jedem Stil gleich.
       </p>
       <p className="mb-2">
