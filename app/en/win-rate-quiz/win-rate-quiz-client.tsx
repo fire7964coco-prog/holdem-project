@@ -96,14 +96,15 @@ const EN_UI: QuizUI = {
   riverNote: "This is the river, so no cards are left to come and the “outs × 2/4” shortcut does not apply. The equity above compares your final hand with every holding that matches the actions you saw.",
   chartTitle: "📈 Equity street by street — all cards face up",
   resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
-  solverTitle: "See this spot in the GTO solver",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "See this spot in the GTO solver" : info.kind === "notReady" ? "See a similar spot in the GTO solver" : "See a heads-up spot in the GTO solver",
   solverOpen: "Open the solver's Flop study",
   solverNote: (info) => {
     const gto = "It shows the flop strategy when both players play GTO (pre-calculated results · 6-max 100bb · flop only), so the ranges, bet sizes and opponent rules differ from this simulator's.";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener} open · ${info.caller} call · flop ${info.flop.map((c) => c.rank + c.suit).join("")} — opens the same seats and the same flop in the solver's Flop study. ${gto}`
+          ? `${info.opener} open · ${info.caller} call (single-raised pot in the solver) · flop ${info.flop.map((c) => c.rank + c.suit).join("")} — opens the same seats and the same flop in the solver's Flop study. ${gto}`
           : `${info.opener} open · ${info.caller} call — this hand ended before the flop, so only the seat matchup opens. Pick the three flop cards in the solver. ${gto}`;
       case "notReady":
         return `${info.opener} open · ${info.caller} call is not pre-calculated in the solver's Flop study yet. Pick a nearby seat matchup, or calculate it yourself in the solver.`;

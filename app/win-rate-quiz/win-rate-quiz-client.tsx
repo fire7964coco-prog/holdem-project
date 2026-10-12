@@ -100,14 +100,15 @@ const KO_UI: QuizUI = {
   riverNote: "리버라 더 나올 카드가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않습니다. 위 승률은 내 최종 패를 상대가 보여준 액션에 맞는 패 전체와 비교해 낸 값입니다.",
   chartTitle: "📈 스트리트별 승률 — 패를 다 깠을 때",
   resultTabs: ["📋 복기", "📈 승률 흐름", "🃏 승률·팟오즈"],
-  solverTitle: "이 자리를 GTO 솔버로 보기",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "이 자리를 GTO 솔버로 보기" : info.kind === "notReady" ? "비슷한 자리를 GTO 솔버로 보기" : "1대1 자리를 GTO 솔버로 보기",
   solverOpen: "솔버 «플랍 조회» 열기",
   solverNote: (info) => {
     const gto = "양쪽이 GTO로 둘 때의 플랍 전략(미리 계산한 결과 · 6맥스 100bb · 플랍까지)이라, 이 시뮬레이터의 상대 규칙·레인지·벳 크기와는 다릅니다.";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener} 오픈 · ${info.caller} 콜 · 플랍 ${info.flop.map((c) => c.rank + c.suit).join("")} — 솔버 «플랍 조회»에서 같은 자리·같은 플랍을 바로 엽니다. ${gto}`
+          ? `${info.opener} 오픈 · ${info.caller} 콜(솔버 싱글 레이즈 팟 기준) · 플랍 ${info.flop.map((c) => c.rank + c.suit).join("")} — 솔버 «플랍 조회»에서 같은 자리·같은 플랍을 바로 엽니다. ${gto}`
           : `${info.opener} 오픈 · ${info.caller} 콜 — 이 판은 플랍 전에 끝나서 같은 자리 조합만 엽니다. 플랍 3장은 솔버 화면에서 골라 보세요. ${gto}`;
       case "notReady":
         return `${info.opener} 오픈 · ${info.caller} 콜 조합은 솔버 «플랍 조회»에 아직 미리 계산되지 않았습니다. 가까운 자리 조합을 고르거나, 솔버에서 직접 계산할 수 있습니다.`;

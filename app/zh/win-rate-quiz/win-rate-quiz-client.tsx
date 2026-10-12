@@ -109,14 +109,15 @@ const ZH_UI: QuizUI = {
   riverNote: "已经到河牌，后面没有牌要发，“补牌 × 2/4”速算法用不上。上面的胜率，是把你最终的牌型与所有符合你看到的动作的手牌比较得出的。",
   chartTitle: "📈 每条街的胜率——全部亮牌",
   resultTabs: ["📋 复盘", "📈 胜率走势", "🃏 概率"],
-  solverTitle: "在 GTO 求解器里查看这个局面",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "在 GTO 求解器里查看这个局面" : info.kind === "notReady" ? "在 GTO 求解器里查看相近的局面" : "在 GTO 求解器里查看单挑局面",
   solverOpen: "打开求解器的翻牌查询",
   solverNote: (info) => {
     const gto = "那里显示的是双方都按 GTO 打时的翻牌策略（预先计算的结果 · 6人桌 100bb · 只到翻牌），所以范围、下注尺寸和对手规则都和这个模拟器不同。";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener} 开池 · ${info.caller} 跟注 · 翻牌 ${info.flop.map((c) => c.rank + c.suit).join("")}——在求解器的翻牌查询里打开同样的位置和同样的翻牌。${gto}`
+          ? `${info.opener} 开池 · ${info.caller} 跟注（按求解器的单次加注底池） · 翻牌 ${info.flop.map((c) => c.rank + c.suit).join("")}——在求解器的翻牌查询里打开同样的位置和同样的翻牌。${gto}`
           : `${info.opener} 开池 · ${info.caller} 跟注——这一手在翻牌前就结束了，所以只打开这组位置对局。翻牌的三张请在求解器里自己选。${gto}`;
       case "notReady":
         return `${info.opener} 开池 · ${info.caller} 跟注——这组对局在求解器的翻牌查询里还没有预先计算。请选一组相近的位置对局，或在求解器里自己计算。`;

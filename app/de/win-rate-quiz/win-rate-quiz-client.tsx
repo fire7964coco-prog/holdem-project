@@ -106,7 +106,7 @@ const DE_UI: QuizUI = {
   formulaExpr: (outs, toCome) =>
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
   formulaCaveat:
-    "Die beiden Zahlen messen Verschiedenes: oben die Chance, dass du TRIFFST, unten dein Anteil am Pot, wenn du GEWINNST (bei Gleichstand dein geteilter Anteil). Du kannst treffen und trotzdem verlieren, wenn sich ein Gegner noch stärker verbessert – und du kannst danebenliegen und trotzdem gewinnen. Das Urteil richtet sich nach der unteren Zahl.",
+    "Die beiden Zahlen messen Verschiedenes: oben die Chance, dass du TRIFFST, unten der Anteil am Pot, den du durch GEWINNEN holst (bei Gleichstand dein geteilter Anteil). Du kannst treffen und trotzdem verlieren, wenn sich ein Gegner noch stärker verbessert – und du kannst danebenliegen und trotzdem gewinnen. Das Urteil richtet sich nach der unteren Zahl.",
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Wir sind noch preflop, deshalb greift die Faustregel „Outs × 2/4“ noch nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen die Hände, mit denen jeder Gegner von seiner Position aus plausibel in den Pot gehen würde.`
@@ -115,14 +115,15 @@ const DE_UI: QuizUI = {
   riverNote: "Das ist der River – es kommen keine Karten mehr, deshalb greift die Faustregel „Outs × 2/4“ nicht. Die Equity oben vergleicht deine fertige Hand mit jeder Hand, die zu den gesehenen Aktionen passt.",
   chartTitle: "📈 Equity Street für Street – alle Karten offen",
   resultTabs: ["📋 Analyse", "📈 Verlauf", "🃏 Odds"],
-  solverTitle: "Diese Situation im GTO-Solver ansehen",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "Diese Situation im GTO-Solver ansehen" : info.kind === "notReady" ? "Eine ähnliche Situation im GTO-Solver ansehen" : "Eine Heads-up-Situation im GTO-Solver ansehen",
   solverOpen: "„Flops studieren“ im Solver öffnen",
   solverNote: (info) => {
     const gto = "Dort siehst du die Flop-Strategie, wenn beide Spieler GTO spielen (vorberechnete Ergebnisse · 6-max 100bb · nur Flop) – Ranges, Bet-Größen und Gegnerregeln unterscheiden sich also von diesem Simulator.";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener} Open · ${info.caller} Call · Flop ${info.flop.map((c) => c.rank + c.suit).join("")} – öffnet dieselben Positionen und denselben Flop unter „Flops studieren“ im Solver. ${gto}`
+          ? `${info.opener} Open · ${info.caller} Call (Single-Raised-Pot im Solver) · Flop ${info.flop.map((c) => c.rank + c.suit).join("")} – öffnet dieselben Positionen und denselben Flop unter „Flops studieren“ im Solver. ${gto}`
           : `${info.opener} Open · ${info.caller} Call – diese Hand endete vor dem Flop, deshalb öffnet sich nur das Positions-Duell. Wähle die drei Flop-Karten im Solver selbst. ${gto}`;
       case "notReady":
         return `${info.opener} Open · ${info.caller} Call ist unter „Flops studieren“ im Solver noch nicht vorberechnet. Wähle ein benachbartes Positions-Duell oder rechne die Situation im Solver selbst.`;

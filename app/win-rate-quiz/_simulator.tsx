@@ -249,7 +249,8 @@ export interface QuizUI {
    * 결과 화면 솔버 링크 (S-034 2차 ⑥ · 2026-10-12) — 같은 자리·플랍을 솔버 «플랍 조회»로 연다.
    * 솔버 자료는 6맥스 1대1 팟뿐이라 그 밖의 판은 이유를 한 줄로 밝힌다(`_solver-link.ts`).
    */
-  solverTitle: string;
+  /** 제목 3분기 — 바로 엶 / 미계산 조합 / 멀티웨이·9인(MA-491 통지 ③) */
+  solverTitle: (info: SolverLinkInfo) => string;
   solverOpen: string;
   solverNote: (info: SolverLinkInfo) => string;
   /** 솔버 앱 언어(?lang=) */
@@ -1591,7 +1592,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* 솔버로 보기 (S-034 2차 ⑥) — 탭과 상관없이 판이 끝나면 오른쪽 칸 맨 아래 */}
       {endView && solverLink && (
         <div className="rounded-xl px-4 py-3 mt-3 border" style={{ borderColor: mix(GOLD, 40), background: mix(GOLD, 5) }}>
-          <div className="font-black text-sm text-foreground mb-1">🧮 {ui.solverTitle}</div>
+          <div className="font-black text-sm text-foreground mb-1">🧮 {ui.solverTitle(solverLink.info)}</div>
           <p className="text-[11.5px] text-muted-foreground leading-relaxed mb-2.5">{ui.solverNote(solverLink.info)}</p>
           <a href={solverLink.href} target="_blank" rel="noopener"
             className="block w-full py-2.5 rounded-xl text-center text-sm font-black border-2 transition-all hover:brightness-110"

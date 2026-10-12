@@ -109,14 +109,15 @@ const JA_UI: QuizUI = {
   riverNote: "リバーなのでこの先に来るカードがなく、「アウツ×2/4」の早見計算は使えません。上の勝率は、あなたの最終的な役を、見えたアクションに合うすべてのハンドと比べた結果です。",
   chartTitle: "📈 ストリートごとの勝率 — 全員のカードを公開",
   resultTabs: ["📋 振り返り", "📈 勝率の推移", "🃏 確率"],
-  solverTitle: "このスポットをGTOソルバーで見る",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "このスポットをGTOソルバーで見る" : info.kind === "notReady" ? "近いスポットをGTOソルバーで見る" : "1対1のスポットをGTOソルバーで見る",
   solverOpen: "ソルバーのフロップスタディで開く",
   solverNote: (info) => {
     const gto = "表示されるのは両者がGTOでプレイしたときのフロップ戦略です(事前計算した結果 · 6max 100bb · フロップのみ)。そのため、レンジ・ベットサイズ・相手のルールはこのシミュレーターとは異なります。";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener}オープン · ${info.caller}コール · フロップ ${info.flop.map((c) => c.rank + c.suit).join("")} — ソルバーのフロップスタディで同じポジション・同じフロップを開きます。${gto}`
+          ? `${info.opener}オープン · ${info.caller}コール(ソルバーのシングルレイズポット基準) · フロップ ${info.flop.map((c) => c.rank + c.suit).join("")} — ソルバーのフロップスタディで同じポジション・同じフロップを開きます。${gto}`
           : `${info.opener}オープン · ${info.caller}コール — このハンドはフロップ前に終わったので、ポジションの組み合わせだけを開きます。フロップ3枚はソルバーで選んでください。${gto}`;
       case "notReady":
         return `${info.opener}オープン · ${info.caller}コールは、ソルバーのフロップスタディでまだ事前計算していません。近いポジションの組み合わせを選ぶか、ソルバーで自分で計算してください。`;

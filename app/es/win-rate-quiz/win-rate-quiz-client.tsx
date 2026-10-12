@@ -108,14 +108,15 @@ const ES_UI: QuizUI = {
   riverNote: "Es el river, así que no quedan cartas por salir y el atajo «outs × 2/4» no se aplica. La equity de arriba compara tu mano final con todas las manos que encajan con las acciones que viste.",
   chartTitle: "📈 Equity calle a calle — todas las cartas boca arriba",
   resultTabs: ["📋 Repaso", "📈 Evolución", "🃏 Cálculo"],
-  solverTitle: "Mira este spot en el solver GTO",
+  solverTitle: (info) =>
+    info.kind === "spot" ? "Mira este spot en el solver GTO" : info.kind === "notReady" ? "Mira un spot parecido en el solver GTO" : "Mira un spot heads-up en el solver GTO",
   solverOpen: "Abrir «Estudiar flop» en el solver",
   solverNote: (info) => {
     const gto = "Muestra la estrategia en el flop cuando los dos jugadores juegan GTO (resultados precalculados · 6-max 100bb · solo el flop), así que los rangos, los tamaños de apuesta y las reglas de los rivales no son los de este simulador.";
     switch (info.kind) {
       case "spot":
         return info.flop
-          ? `${info.opener} abre · ${info.caller} paga · flop ${info.flop.map((c) => c.rank + c.suit).join("")} — abre las mismas posiciones y el mismo flop en «Estudiar flop» del solver. ${gto}`
+          ? `${info.opener} abre · ${info.caller} paga (bote de una sola subida en el solver) · flop ${info.flop.map((c) => c.rank + c.suit).join("")} — abre las mismas posiciones y el mismo flop en «Estudiar flop» del solver. ${gto}`
           : `${info.opener} abre · ${info.caller} paga — esta mano terminó antes del flop, así que solo se abre el enfrentamiento de posiciones. Elige las tres cartas del flop en el solver. ${gto}`;
       case "notReady":
         return `${info.opener} abre · ${info.caller} paga todavía no está precalculado en «Estudiar flop» del solver. Elige un enfrentamiento de posiciones parecido o calcúlalo tú mismo en el solver.`;
