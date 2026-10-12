@@ -6,6 +6,7 @@
 - 렌즈 2: ja·zh WRONG 0 · RISKY 4(zh «盲打»=내 패도 안 보는 뜻 → 제목·부제 교체 · zh 제목 머리 胜率 → «德州扑克模拟器» · ja «アグレッシブ» select 잘림 → 攻撃型 · «答え合わせ» 버튼 2줄 → 判定) · es·de WRONG 1(es 결과 탭 넘침) · RISKY 9(de «Flop-Studie» → 솔버 축어 «Flops studieren» · «über den halben Pot» → «in Höhe» · «daneben» → «auseinander» · Runde → Street · es 숫자 en-US 고정 등) — 로케일 파일 안 것 전부 반영. 공용 `_simulator` 걸린 2건(히어로 승리 문법 «Gana Tú/Du gewinnt» · de 팟 금액 브라우저 로케일)은 EN·KO 영향이라 미반영 = 핸드오프 🪶.
 - 게이트: check:cjk 41(ja 24·zh 17 JSX 개행) → 이음 0 · build 74+729 exit 0 · hreflang 0 · 4페이지 index,follow. 화면: `next start` 3100에서 판 끝까지 진행 390·1440 × 5로케일 가로 넘침 0 · 콘솔 에러 0 · 데스크톱 탭 2(es·de) 몇 px → 단축. 3100 서버 = 내가 띄운 작업만 TaskStop.
 - 🪶 아스트라 교차는 이번 회차에 안 돌림(렌즈 2만) — 검수장 판정 요청으로 갈음.
+- 배포: `7f9dcb59` Vercel이 커밋 9초 뒤 ERROR(빌드 로그 없음 = 빌드 전 거부 · 직전 docs `a92fe8aa`도 같은 꼴) → 기록 커밋 `f5aca968` 푸시로 재배포 성공 · 라이브 Playwright 5로케일 200·새 hreflang · IndexNow 6 URL 200. 사장님 몫 = GSC 수동 색인 4(`/ja·/zh·/es·/de/win-rate-quiz`).
 
 ## 2026-10-12 (18) — 회차 C ⑥: 승률 시뮬레이터 결과 화면 솔버 연결 · 배포 `94ca4562` · MB-281
 
