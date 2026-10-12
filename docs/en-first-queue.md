@@ -991,6 +991,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(요청 아님): limping L32 «dengan tangan yang sesuai» · L94·L168 SB «by default/almost never» 미전파(UNV) · c-bet «check board rendah yang bersambung» 3자리 → «lebih banyak check» · when-to-fold L41 OK · strategy L132·L140·L207 미전파(OK/UNV).
 - 🔴 이행 순서 = ms 고유(BK-1·2 · BL-1) → EN-먼저 EN+ms(BK-3 · BL-2) → 형제. ms `masterUpdated` 그대로 · EN `updated` 갱신.
+- ✅ 재판정 MA-479(10-12): 이행 OK · 새 고유 RISKY 3 = §2-BM.
+
+### 2-BM. 우편함 수신분 — MA-478 (MB-268 `/solver` FAQ 15칸) · MA-479 (MB-269 재판정 새 RISKY 3) · 등재·이행 2026-10-12 (8) `dba189c3` MB-271
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BM-1 7로케일 | `/solver` FAQ 동기화 문장 «레인지와 설정»(de·es·fr·id·pt·zh·zh-hant) — 앱 설정 일반으로 읽힘 | ✅ «벳(사이즈) 설정» 한정(ko·en «벳 설정 목록» 꼴) |
+| BM-2 ms | limping L120 «tidak mungkin memegang» | ✅ «kemungkinan kecil memegang»(EN «unlikely») |
+| BM-3 zh | reading-the-board FAQ L378 스캔 순서에 동화순 단계 없음 | ✅ 같은 글 L322 괄호 이식 |
+| BM-4 tr | strategy FAQ L258 «Beceri binlerce» | ✅ «yüz binlerce»(같은 글 L254) |
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
