@@ -1015,6 +1015,20 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - A72 글(a-high-board-cbet 14 · continuation-bet 12)의 «조금» = 98.2%↔99.0%로 참 → 손대지 않는다.
 - 이행 = 한 회차(28문단 · 로케일 각 네이티브 꼴 · `updated` 여부는 `settled-decisions` §1-C로 판정) → 재판정 요청.
 
+### 2-BO. 우편함 수신분 — MA-488 (MB-274~277 · 승률 시뮬레이터 코드 경계 WRONG 3) · MA-489 (MB-279 `/solver` RNG 소개 RISKY 45) · 등재·회신 2026-10-12 (19) MB-282
+
+> MA-488: MB-277 OK 42 · MB-274 ① OK(MA-485 종결) · ② OK 15 · WRONG 1 · MB-275 OK 2 · WRONG 2 · 요청 1. MA-489: MB-278 OK(MA-487 종결) · MB-279 RISKY 45(원인 1) · WRONG 0 · 요청 1. 위치 대조 main `a92fe8aa` 전부 실재.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BO-1 코드 | `app/win-rate-quiz/_simulator.tsx` L767-772 `changeSize` → `moveHeroPos`(L486)가 9인 전용 자리(LJ·UTG+1·UTG+2)를 6인 전환 때 `heroPos=null`로 만들어도 `custom`이 남음 → L1042 `customLine` 배지 «직접 입력한 판» 표시 · 딜·기록은 `isFixed` 기준(무작위 판인데 배지 + 기록) | 옮긴 뒤 `!isFixed`면 `custom=null`(L780 `applyCustom`과 같은 판정) |
+| BO-2 코드 | `_engine.ts` `heroOuts` L452-465 스트레이트 분기 — 이미 플러시(A♥5♥ / 2♥3♥9♥)에서 4♠·4♦·4♣를 «스트레이트»로 셈(최선 5장 불변) | 스트레이트 분기도 `bestCategory(...) > curCat` 상승 확인(L468-477 개선 카드와 같은 꼴) |
+| BO-3 코드/문구 | `heroOuts` L421-425 오버카드 = 홀카드 둘 다 보드 미적중일 때만 · L476 `cat === 1 \|\| 2` — 보드 투페어(A♠K♦ / 9♣9♥2♠2♦)에서 A·K 6장이 AA99·KK99로 점수 상승인데 같은 등급(투페어)이라 제외 → `noDrawNote`(ko `win-rate-quiz-client.tsx` L89) «셋·투페어·오버카드로 올라갈 카드도 없어서»가 거짓 | 판정 본체: 코드에서 over로 셈(같은 등급이라도 «보드 페어 위 내 페어»면) 또는 문구 한정 «족보가 한 단계 올라갈 카드» — ko·en 같이 |
+| BO-4 15언어 × 3 | `/solver` RNG 소개 «오늘의 문제 제외»(ko `faq.ts` L104 · `page.tsx` L115 featureList · `solver-client.tsx` L114 기능표 + 14로케일 같은 3자리) — 내 스팟 연습(복기에서 넘긴 것 포함)도 RNG 없음(솔버 `TrainerPage.vue` L2 → `CustomTrainerPage.vue` RNG 0) | 최소안 ko «오늘의 문제·내 스팟 연습에는 쓰지 않고» · 기능표·featureList «오늘의 문제·내 스팟 제외» 꼴 15언어(앱 라벨 축어) |
+
+- 🪶 통지(요청 아님 · OK 유지 · 판단 본체): MA-488 `customActive` «같은 카드» → «고른 카드» 선택 권고 · 내역 배정(겹치는 카드 상위 족보 흡수)·셋 이상에서 풀하우스·포카드 미집계 = 앱 범위 · 판정 밖 소견 3(en «any two cards to the river» · 전원 폴드에서도 «${n}회 돌려 낸 값» · ko FAQ «AA 85.2%·49.3%» 고정 수치 ↔ 자리별 레인지 승률). MA-489 «액션별 숫자 구간»(아주 작은 빈도는 구간 없음) · 기존 채점 설명 «0.35%·1%»·featureList «EV로 등급»에 «RNG 끔(기본)일 때» 한정 한 구절 선택 권고 · 등급명 두 표기(de·es·pt·ja·zh·zh-hant) = 앱 축어로 맞추는 쪽 권고.
+- 이행 = BO-1~3은 승률 시뮬레이터 다음 회차에 같이(코드 · ko·en) · BO-4는 별도 한 회차(15언어 45자리) → 각각 재판정 요청(하루 묶음 · MA-482).
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
