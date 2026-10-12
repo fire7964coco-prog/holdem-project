@@ -1,3 +1,12 @@
+## 2026-10-12 (9) — 회차 B: 핸드 복기 링크 54자리 (14로케일) · 배포 `2af6e35f` · MB-272
+
+- 사장님 «핸드오프 읽고 회차 B 진행해». 우편함 본체 몫 새 MA 없음.
+- 자리: GTO 3편(`a-high-board-cbet`·`donk-bet-strategy` = srp-btn-bb · `3bet-pot-cbet` = 3bp-btn-bb) «직접 확인» 절 끝(FAQ H2 앞 · ko는 첫 **Q.** 앞) × ko+13로케일(tr 3bet-pot-cbet 없음) 41 + `holdem-continuation-bet` 12로케일 A-7-2 문단 뒤 + ko `holdem-3bet-strategy` AK2 투표 문단 뒤 = 54. 핸드오프 후보 «3bet-strategy»는 AK2 원 글이 `3bet-pot-cbet`(GTO ⑧)이라 둘 다.
+- 문면: 라벨 = 솔버 `hand-review-labels.ts` 15언어 축어 · 링크 `?view=hand-review&lang=<로케일>`(i18n.ts 14코드 수용 확인) · «같은 상황의 판을 넣어 보라» 꼴(보드 미리 채움 없음) · 앱 차트 6맥스 100bb 기준이라 예제 수치와 다를 수 있음. 스크립트 = 앵커 검사(빈 줄·A-7-2 한 줄 문단) 뒤 삽입.
+- 렌즈 3종 병렬: 사실(WRONG 0 · RISKY 1 = 앱은 OOP 액션부터 물어 «내 액션만 누르라»는 헤맴 → 14언어 «상대 액션까지 실제 순서대로») · 라틴 네이티브(오류 2: id 필라 팟 문장 누락 · tr «pot'udur» + 어색·선택 다수 채택 · de «Pubspiele»→Homegames 기각 = 사이트 de 4회·앱 축어) · CJK/ko/hi(오류 0 · ko K «보드는 … 스팟» · zh/zh-hant 3bet-pot-cbet 산문 «3bet» · hi 어순 등 채택). 반영은 되돌린 뒤 재삽입.
+- 게이트: audit:hard ko 4슬러그 + 13로케일 전 대상 0err(3bet-pot-cbet desc 100자 🟠은 기존) · build 74 + 729 exit 0 · 렌더 HTML 55곳(선례 1 포함) 링크·굵은 라벨 확인. `updated` 무변경.
+- 🪶 남김: 플랍 조회 딥링크(`?view=flop-study&spot=&flop=`)로 교체 = 솔버 확인(MB-270) 뒤 · K-high·3bp 다른 보드 등 GTO 나머지 10편 = 사장님 판단.
+
 ## 2026-10-12 (8) — 우편함: MA-478·479 회신+등재 §2-BM · 이행 `dba189c3` · MA-482 ACK · MB-271
 
 - 사장님 «우편함확인한번 하자» → «진행해». 본체 몫 = MA-478(MB-268 FAQ RISKY 7) · MA-479(MB-269 재판정 새 RISKY 3) · MA-482(요청 묶어 보내기 운영 통지).
