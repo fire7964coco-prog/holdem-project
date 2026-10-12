@@ -929,7 +929,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|
 | BG-1 ms | `holdem-all-in-rules` L144 «Jadual ini untuk no-limit dan pot-limit. Dalam permainan limit, …»(첫 표 아래 · 그 표는 머리에 이미 NL/PL) → 가이드표 L176 «Panduan Keputusan Pantas»에 한정 없음 | 그 문장을 가이드표 제목 아래로 이동(EN L176 동형) |
 
-- 🪶 통지(로케일 레인 때 · 자동 착수 금지): ① 형제 13로케일(bn·fa·fil·he·hi·it·pl·ro·ru·sw·th·tr·uk) all-in = EN `6164c748` 델타 미전파 확인 ② 같은 13로케일 betting Check 표·FAQ 스트래들 한정 없음 · bn·fil·hi·sw·th 본문 90.d ↔ FAQ 스트링 벳 자기모순 · fa·he 옛 설명 ③ «Rule 90.d» 무접두 잔존(EN 포함 · EN-먼저 후보 · 요청 아님) ④ th 가이드표 표현 축 OK.
+- ✅ 통지 ①② 이행 2026-10-12 (3) `fe93df0d` MB-264(13로케일 × all-in·betting 26파일 · 남김 ⓐ~ⓗ = MB-264 행). 🪶 남은 통지(자동 착수 금지): ③ «Rule 90.d» 무접두 잔존(EN 포함 · EN-먼저 후보 · 요청 아님) ④ th 가이드표 표현 축 OK.
 
 ### 2-BH. 우편함 수신분 — MA-463 (MS rankings 묶음 3 · hand-rankings·kicker·tiebreak · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 

@@ -1,3 +1,12 @@
+## 2026-10-12 (3) — queue §2-BG 통지 ①② 이행 (형제 13로케일 all-in·betting ← EN `6164c748`) · 배포 `fe93df0d` · MB-264
+
+- 사장님 «핸드오프 읽고 queue §2-BG 통지 ①② … 진행해». 우편함 본체 몫 새 MA 없음. posting.mdc 확인 후 착수.
+- 13로케일(bn·fa·fil·he·hi·it·pl·ro·ru·sw·th·tr·uk)은 07-13 번역 뒤 EN 9월 델타를 못 받았다(9로케일은 `25fe6027` 등으로 받음). 체크리스트 A1~A12·B1~B14(브리프 = EN 현행 목표 · `6164c748` hunk = 위치) → 에이전트 4개(it·pl·ro / ru·uk·tr / he·fa·bn / hi·th·fil·sw) 병렬 이식.
+- 에이전트 판단 수용: Mistake 2 H3 «string raise» → «Call… no, raise» 꼴(B14 본문과 모순 · 앵커 링크 0) · 같은 글 안 RIT «두 사람 동의» 괄호 동반 · he·fa·bn A3·A8 EN 같은 문단 절 동반 · th 오타 3.
+- 렌즈 1(딜러·충실도 · 13로케일 판독) must-fix 2종 5자리(bn·fa·he H3 잔존 · ru·uk RIT 괄호) + fa «طرفین» + ru·uk·fil·sw·hi·th 사이드팟 «혼자면 언콜드 반환» 절 반영.
+- updated 10-12 · masterUpdated 불변. 게이트 audit:hard 13×2 🔴 0 · schema 일치 · build 74 + 729 · IndexNow 96 URL 200.
+- 남김 ⓐ~ⓗ(범위 밖) = MB-264 행.
+
 ## 2026-10-12 (2) — queue §2-BE~§2-BI 이행 (MA-456·457·460·463·464) · 배포 `f16360a4` · MB-263
 
 - 사장님 «우편함 밀린거 진행하자». (1) 등재·회신 `d265abf0` MB-262(MA-458·462 ACK). posting.mdc 형식 규칙 확인 후 착수.
