@@ -1,3 +1,10 @@
+## 2026-10-12 (17) — 회차 C ②: 승률 시뮬레이터 상대 성향 · 배포 `50081205` · MB-280
+
+- 사장님 «② 상대 성향 진행해». 성향 4종(기본·타이트·루즈·공격적)을 **확정 규칙**으로 — 무작위 블러프면 레인지 좁히기가 확률 가중이 돼야 하고 규칙을 한 줄로 못 적어서. 체크레이즈는 히어로가 베팅하지 않아 성립 안 함 → 뺌.
+- `_engine.ts` opponentAction(style) · STYLE_SIZE(공격적 레이즈 팟 150%) · runHand 8번째 인자 style · 워커 req.style · `_simulator.tsx` select + localStorage `wrq-opp-style` · ruleText(style).
+- 검증: tsx 케이스 12(1건은 내 기대값 오류 — 리버 A9가 2-3-4 보드에서 휠 «드로우») · 기본 vs HEAD 25판 JSON 동일 · 성향별 불변식 0. 화면: 3111 dev(이전 세션 것)가 build로 깨져 있어 손대지 않고 3112 `next start`로 측정 — 390 ko 13px·en 21px 넘침 → 폰 여백 축소·구분선 숨김·퀴즈 아이콘만·en 이름 Normal/Tight/Loose/Aggro → 넘침 0. 3112는 PID·명령줄 대조 후 종료.
+- 다음 = 회차 C ⑥ 솔버 연결 → ⑤ 언어 확대.
+
 ## 2026-10-12 (16) — `/solver` 15언어 트레이너 RNG 연습 소개 · 배포 `efb6ecbe` · MB-279
 
 - 사장님 «RNG 연습 기능 소개해줘». 3자리 × 15언어 = 45(기능표·featureList는 GTO 트레이너 뒤 · FAQ는 플랍 통계 문항 뒤). 라벨·판정명·오늘의 문제 이름 = 솔버 `TrainerPage.vue` 15언어 축어.
