@@ -97,7 +97,7 @@ const jsonLd = {
         "Tra cứu flop — chiến lược flop đã tính sẵn cho spot, vị trí và board bạn chọn (chỉ đến flop, cỡ cược cố định)",
         "Báo cáo flop — tần suất bet và EV trung bình trên 1.755 flop đã tính sẵn (có trọng số theo tần suất xuất hiện), so sánh theo nhóm board",
         "Trainer GTO chấm quyết định theo EV mất so với pot",
-        "Luyện RNG trong Trainer GTO — mỗi ván có một số từ 1–100 chỉ định hành động cần chọn, để luyện chiến lược trộn (High/Low; không dùng cho Thử thách hôm nay)",
+        "Luyện RNG trong Trainer GTO — mỗi ván có một số từ 1–100 chỉ định hành động cần chọn, để luyện chiến lược trộn (High/Low; không dùng cho Thử thách hôm nay và Spot của tôi)",
         "Xuất phần tóm tắt ra CSV và liên kết chia sẻ spot",
         "Chạy trong trình duyệt bằng WebAssembly — không cài đặt, không tài khoản",
       ],

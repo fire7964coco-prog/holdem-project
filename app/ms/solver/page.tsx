@@ -70,7 +70,7 @@ const jsonLd = {
         "Kajian flop — strategi flop yang dikira awal bagi spot, posisi dan board yang anda pilih (flop sahaja, saiz bet tetap)",
         "Laporan flop — kekerapan bet dan EV purata bagi 1,755 flop yang dikira awal (diberi pemberat mengikut kekerapan), dibandingkan mengikut kumpulan board",
         "Trainer GTO dengan penilaian kerugian EV berbanding saiz pot",
-        "Latihan RNG dalam Trainer GTO — setiap tangan diberi nombor 1–100 yang menunjukkan tindakan untuk dipilih, untuk melatih strategi campuran (High/Low; tidak digunakan untuk Cabaran Harian)",
+        "Latihan RNG dalam Trainer GTO — setiap tangan diberi nombor 1–100 yang menunjukkan tindakan untuk dipilih, untuk melatih strategi campuran (High/Low; tidak digunakan untuk Cabaran Harian atau Spot saya)",
         "Tab Carta preflop dan kalkulator Equity",
         "Eksport ringkasan CSV, import dan eksport JSON, serta pautan Kongsi Spot",
         "Pengiraan WebAssembly dalam pelayar tanpa pemasangan atau akaun",

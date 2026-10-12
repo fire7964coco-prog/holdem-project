@@ -103,7 +103,7 @@ const DE_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Wir sind noch preflop, deshalb greift die Faustregel „Outs × 2/4“ noch nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen die Hände, mit denen jeder Gegner von seiner Position aus plausibel in den Pot gehen würde.`
-      : `Du hast weder Flushdraw noch Straßendraw und keine Karte, die dich zu Set, Zwei Paaren oder einem Overcard-Paar verbessert – deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
+      : `Du hast weder Flushdraw noch Straßendraw und keine Karte, die dich eine Handkategorie höher zu Set, Zwei Paaren oder einem Overcard-Paar bringt – deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
   chartTitle: "📈 Equity Street für Street – alle Karten offen",
   resultTabs: ["📋 Analyse", "📈 Verlauf", "🃏 Odds"],
   solverTitle: "Diese Situation im GTO-Solver ansehen",

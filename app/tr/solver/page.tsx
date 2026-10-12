@@ -92,7 +92,7 @@ const jsonLd = {
         "Flop çalışması — seçtiğin spot, pozisyonlar ve board için önceden hesaplanmış flop stratejileri (yalnızca flop, sabit bet boyutları)",
         "Flop raporları — önceden hesaplanmış 1.755 flop üzerinden görülme sıklığına göre ağırlıklandırılmış ortalama bet sıklığı ve EV, board gruplarına göre karşılaştırma",
         "Kararları pota göre EV kaybıyla puanlayan GTO Trainer",
-        "GTO Trainer'da RNG alıştırması — her elde 1–100 arası bir sayı hangi aksiyonu seçeceğini gösterir; karışık stratejileri çalışmak için (High/Low; Günün sorusunda kullanılmaz)",
+        "GTO Trainer'da RNG alıştırması — her elde 1–100 arası bir sayı hangi aksiyonu seçeceğini gösterir; karışık stratejileri çalışmak için (High/Low; Günün sorusunda ve Spotlarım'da kullanılmaz)",
         "Özetin CSV olarak dışa aktarılması ve paylaşılabilir spot linkleri",
         "WebAssembly ile tarayıcıda çalışır — kurulum yok, hesap yok",
       ],

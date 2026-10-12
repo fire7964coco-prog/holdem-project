@@ -89,7 +89,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Flop çalışması — önceden hesaplanmış flop stratejileri", "yes", "Spotu, pozisyonları ve flop'u seç, grid beklemeden açılır · yalnızca flop · sabit bet boyutları (flop %33 / %75, raise %60)"],
   ["Flop raporları — board grubuna göre ortalama strateji", "yes", "1.755 flop, sıklığa göre ağırlıklı · ilk karar ve check sonrası · en yüksek kart, renkler, çift durumu, bağlantılılığa göre gruplama · sabit bet boyutları"],
   ["EV kaybıyla puanlayan GTO Trainer", "yes", "Zayıf spot filtreleri ve tekrar kuyruğu da var"],
-  ["GTO Trainer'da RNG alıştırması", "yes", "Her elde 1–100 arası bir sayı · o sayının aralığındaki aksiyon En iyi oyun · High/Low · varsayılan olarak kapalı · Günün sorusunda kullanılmaz"],
+  ["GTO Trainer'da RNG alıştırması", "yes", "Her elde 1–100 arası bir sayı · o sayının aralığındaki aksiyon En iyi oyun · High/Low · varsayılan olarak kapalı · Günün sorusunda ve Spotlarım'da kullanılmaz"],
   ["Kendi çözdüğün spotlarla pratik", "yes", "Sonuç ekranında tek tıkla trainer sorusu olarak kaydedilir · yalnızca bu cihazda"],
 ];
 

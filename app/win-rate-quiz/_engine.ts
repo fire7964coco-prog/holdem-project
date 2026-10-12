@@ -465,6 +465,8 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
       } else if (!alreadyStraight && ranksNow.has(r)) {
         makesStraight = false; // 이미 있는 랭크는 스트레이트를 새로 만들지 못한다
       }
+      // 이미 그보다 높은 족보(플러시 등)면 스트레이트 카드가 최선 5장을 바꾸지 못한다 — 개선 카드와 같은 상승 확인
+      if (makesStraight && bestCategory([...seen, [r, s]]) <= curCat) makesStraight = false;
       // 개선 카드 — 족보가 실제로 올라갈 때만
       let makesSet = false, makesTwoPair = false, makesOver = false;
       if (setRanks.has(r) || twoPairRanks.has(r) || overRanks.has(r)) {

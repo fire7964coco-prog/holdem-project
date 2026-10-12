@@ -110,7 +110,7 @@ const jsonLd = {
         "Flop study — precomputed flop strategies for the spot, seats and board you choose (flop only, fixed bet sizes)",
         "Flop reports — bet frequencies and EV averaged over 1,755 precomputed flops (weighted by how often each comes up), compared by board group",
         "GTO Trainer that grades decisions by EV loss relative to the pot",
-        "RNG practice in the GTO Trainer — a 1–100 number on each hand points to the action to pick, for drilling mixed strategies (High/Low; not used in the Daily Puzzle)",
+        "RNG practice in the GTO Trainer — a 1–100 number on each hand points to the action to pick, for drilling mixed strategies (High/Low; not used in the Daily Puzzle or My spots)",
         "CSV export of the summary and shareable spot links",
         "Runs in the browser via WebAssembly — no install, no account",
       ],

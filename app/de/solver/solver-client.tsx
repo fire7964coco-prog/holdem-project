@@ -204,7 +204,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Flops studieren — vorberechnete Flop-Strategien", "yes", "Spot, Positionen und Flop wählen, die Matrix steht ohne Wartezeit da · nur der Flop · feste Bet-Sizes (Flop 33% / 75%, Raise 60%)"],
   ["Flop-Reports — Durchschnittsstrategie nach Board-Gruppe", "yes", "1.755 Flops, nach Häufigkeit gewichtet · erste Entscheidung und nach einem Check · gruppieren nach höchster Karte, Farben, Paarung, Konnektivität · feste Bet-Sizes"],
   ["GTO-Trainer mit Benotung", "yes", "Mit Schwachstellen-Auswertung und Wiederholungs-Queue"],
-  ["RNG-Training im GTO-Trainer", "yes", "Pro Hand eine Zahl von 1 bis 100 · die Aktion im Bereich dieser Zahl ist die Beste Wahl · High/Low · standardmäßig aus · nicht in der Tagesaufgabe"],
+  ["RNG-Training im GTO-Trainer", "yes", "Pro Hand eine Zahl von 1 bis 100 · die Aktion im Bereich dieser Zahl ist die Beste Wahl · High/Low · standardmäßig aus · nicht in der Tagesaufgabe oder bei «Meine Spots»"],
   ["Mit selbst berechneten Spots üben", "yes", "Ein Klick im Ergebnisfenster speichert den Spot als Trainer-Aufgaben · nur auf diesem Gerät"],
 ];
 

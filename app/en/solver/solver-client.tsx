@@ -128,7 +128,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Flop study — precomputed flop strategies", "yes", "Pick a spot, seats and flop and the grid appears with no wait · flop only · fixed bet sizes (flop 33% / 75%, raise 60%)"],
   ["Flop reports — average strategy by board group", "yes", "1,755 flops, frequency-weighted · first decision and after a check · group by high card, suits, pairing, connectedness · fixed bet sizes"],
   ["GTO Trainer with EV-loss grading", "yes", "Plus weak-spot filters and a review queue"],
-  ["RNG practice in the GTO Trainer", "yes", "A 1–100 number on each hand · the action in that number's range is Best play · High/Low · off by default · not used in the Daily Puzzle"],
+  ["RNG practice in the GTO Trainer", "yes", "A 1–100 number on each hand · the action in that number's range is Best play · High/Low · off by default · not used in the Daily Puzzle or My spots"],
   ["Practice your own solved spots", "yes", "One click on the results screen saves it as trainer questions · this device only"],
 ];
 

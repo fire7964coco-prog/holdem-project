@@ -149,7 +149,7 @@ const jsonLd = {
         "Flops studieren — vorberechnete Flop-Strategien für den gewählten Spot, die Positionen und das Board (nur Flop, feste Bet-Sizes)",
         "Flop-Reports — Bet-Häufigkeit und EV, gemittelt über 1.755 vorberechnete Flops (nach Häufigkeit gewichtet), nach Board-Gruppen verglichen",
         "GTO-Trainer, der Entscheidungen nach EV-Verlust im Verhältnis zum Pot benotet",
-        "RNG-Training im GTO-Trainer — pro Hand zeigt eine Zahl von 1 bis 100, welche Aktion du wählen sollst, zum Üben gemischter Strategien (High/Low; nicht in der Tagesaufgabe)",
+        "RNG-Training im GTO-Trainer — pro Hand zeigt eine Zahl von 1 bis 100, welche Aktion du wählen sollst, zum Üben gemischter Strategien (High/Low; nicht in der Tagesaufgabe oder bei «Meine Spots»)",
         "CSV-Export der Zusammenfassung und Teilen-Link für einen Spot",
         "Läuft mit WebAssembly im Browser – ohne Installation und ohne Konto",
       ],

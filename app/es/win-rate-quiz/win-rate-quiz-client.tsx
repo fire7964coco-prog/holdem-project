@@ -96,7 +96,7 @@ const ES_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `Todavía es preflop, así que el atajo «outs × 2/4» aún no se aplica. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra las manos con las que cada rival entraría razonablemente al bote desde su posición.`
-      : `No tienes proyecto de color ni de escalera, ni ninguna carta que te mejore a set, doble pareja o pareja con una sobrecarta, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
+      : `No tienes proyecto de color ni de escalera, ni ninguna carta que suba tu mano una categoría a set, doble pareja o pareja con una sobrecarta, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
   chartTitle: "📈 Equity calle a calle — todas las cartas boca arriba",
   resultTabs: ["📋 Repaso", "📈 Evolución", "🃏 Cálculo"],
   solverTitle: "Mira este spot en el solver GTO",

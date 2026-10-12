@@ -85,7 +85,7 @@ const EN_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${n} hands against the hands each opponent would plausibly enter the pot with from their seat.`
-      : `You have no flush or straight draw and no card that improves you to a set, two pair or an overcard pair, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
+      : `You have no flush or straight draw and no card that moves you up a hand category to a set, two pair or an overcard pair, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
   chartTitle: "📈 Equity street by street — all cards face up",
   resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
   solverTitle: "See this spot in the GTO solver",

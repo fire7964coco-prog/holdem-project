@@ -199,7 +199,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Estudiar flop — estrategias de flop precalculadas", "yes", "Eliges spot, posiciones y flop y la matriz aparece sin esperar · solo el flop · tamaños fijos (flop 33% / 75%, raise 60%)"],
   ["Informes de flop — estrategia media por grupo de board", "yes", "1,755 flops ponderados por frecuencia · primera decisión y tras un check · agrupar por carta alta, palos, parejas, conexión · tamaños fijos"],
   ["Entrenador GTO con puntuación", "yes", "Con desglose de puntos débiles y cola de repaso"],
-  ["Práctica RNG en el Entrenador GTO", "yes", "Un número del 1 al 100 en cada mano · la acción del rango de ese número es la Mejor jugada · High/Low · apagado por defecto · no se usa en el Reto del día"],
+  ["Práctica RNG en el Entrenador GTO", "yes", "Un número del 1 al 100 en cada mano · la acción del rango de ese número es la Mejor jugada · High/Low · apagado por defecto · no se usa en el Reto del día ni en Mis spots"],
   ["Practicar con los spots que calculaste", "yes", "Un clic en los resultados guarda el spot como preguntas del Entrenador · solo en este dispositivo"],
 ];
 

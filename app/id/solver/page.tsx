@@ -128,7 +128,7 @@ const jsonLd = {
         "Studi flop — strategi flop yang sudah dihitung sebelumnya untuk spot, posisi, dan board yang Anda pilih (hanya flop, ukuran bet tetap)",
         "Laporan flop — frekuensi bet dan EV rata-rata dari 1.755 flop yang sudah dihitung sebelumnya (dibobot menurut frekuensi), dibandingkan per kelompok board",
         "Trainer GTO yang menilai keputusan Anda dari kerugian EV relatif terhadap pot",
-        "Latihan RNG di Trainer GTO — tiap hand mendapat angka 1–100 yang menunjuk aksi yang harus dipilih, untuk melatih strategi campuran (High/Low; tidak dipakai di Tantangan Harian)",
+        "Latihan RNG di Trainer GTO — tiap hand mendapat angka 1–100 yang menunjuk aksi yang harus dipilih, untuk melatih strategi campuran (High/Low; tidak dipakai di Tantangan Harian maupun Spot saya)",
         "Tab Chart preflop dan kalkulator Equity terintegrasi",
         "Ekspor CSV ringkasan, Impor JSON dan Ekspor JSON, tautan Bagikan Spot",
         "Berjalan di browser lewat WebAssembly — tanpa instal, tanpa akun",

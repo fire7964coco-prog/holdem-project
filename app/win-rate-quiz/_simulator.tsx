@@ -768,7 +768,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     closeHand();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
-    setCustom((c) => (c ? moveHeroPos(c, tableSize, n) : c));
+    // 9인 전용 자리(LJ·UTG+1·UTG+2)만 고른 판은 6인으로 옮기면 빈 판이 된다 — 배지·기록이 isFixed와 어긋나지 않게 무작위 판으로
+    setCustom((c) => {
+      if (!c) return c;
+      const m = moveHeroPos(c, tableSize, n);
+      return isFixed(m) ? m : null;
+    });
     setDraft((d) => moveHeroPos(d, tableSize, n));
     setTableSize(n);
   }, [closeHand, tableSize]);
