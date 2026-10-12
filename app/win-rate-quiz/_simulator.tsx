@@ -20,6 +20,7 @@ import {
   type HandResult, type StreetRecord, type Action, type EquitySplit, type OppStyle,
 } from "./_engine";
 import type { HandMessage, HandRequest } from "./_engine.worker";
+import { solverLinkFor, type SolverLinkInfo } from "./_solver-link";
 import { KitCardFace, KitCardBack, KitCardSlot, KitDealer, KitChip } from "./_kit";
 
 /**
@@ -230,6 +231,15 @@ export interface QuizUI {
   customEdit: string;
   /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
   resultTabs: readonly [string, string, string];
+  /**
+   * 결과 화면 솔버 링크 (S-034 2차 ⑥ · 2026-10-12) — 같은 자리·플랍을 솔버 «플랍 조회»로 연다.
+   * 솔버 자료는 6맥스 1대1 팟뿐이라 그 밖의 판은 이유를 한 줄로 밝힌다(`_solver-link.ts`).
+   */
+  solverTitle: string;
+  solverOpen: string;
+  solverNote: (info: SolverLinkInfo) => string;
+  /** 솔버 앱 언어(?lang=) */
+  solverLang: string;
   /** 규칙·단서 */
   ruleTitle: string;
   /** 고른 성향의 규칙을 그 자리에 적는다 */
@@ -902,6 +912,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     return winnersAmong.map((slot) => ({ slot, cat: scored.find((x) => x.slot === slot)!.cat }));
   }, [sim, result, showdown, slotToIdx, ui.names]);
 
+  /** 결과 화면 솔버 링크 — 프리플랍에서 끝난 판은 플랍 없이 자리 조합만 연다 */
+  const solverLink = useMemo(
+    () => (sim && result ? solverLinkFor(sim, result.wonByFoldAt !== 0, ui.solverLang) : null),
+    [sim, result, ui.solverLang],
+  );
+
   const resultLabel = useMemo(() => {
     if (!sim || !result) return "";
     if (result.wonByFoldAt !== null) return ui.wonByFold(result.finalPot);
@@ -1531,6 +1547,19 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           </p>
         )}
       </div>
+      )}
+
+      {/* 솔버로 보기 (S-034 2차 ⑥) — 탭과 상관없이 판이 끝나면 오른쪽 칸 맨 아래 */}
+      {endView && solverLink && (
+        <div className="rounded-xl px-4 py-3 mt-3 border" style={{ borderColor: mix(GOLD, 40), background: mix(GOLD, 5) }}>
+          <div className="font-black text-sm text-foreground mb-1">🧮 {ui.solverTitle}</div>
+          <p className="text-[11.5px] text-muted-foreground leading-relaxed mb-2.5">{ui.solverNote(solverLink.info)}</p>
+          <a href={solverLink.href} target="_blank" rel="noopener"
+            className="block w-full py-2.5 rounded-xl text-center text-sm font-black border-2 transition-all hover:brightness-110"
+            style={{ borderColor: GOLD, color: "hsl(var(--foreground))", background: "hsl(var(--background))" }}>
+            {ui.solverOpen} ↗
+          </a>
+        </div>
       )}
 
       </div>{/* /우 */}

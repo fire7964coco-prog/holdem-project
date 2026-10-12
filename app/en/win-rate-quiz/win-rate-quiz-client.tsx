@@ -88,6 +88,24 @@ const EN_UI: QuizUI = {
       : `You have no flush or straight draw and no card that improves you to a set, two pair or an overcard pair, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
   chartTitle: "📈 Equity street by street — all cards face up",
   resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
+  solverTitle: "See this spot in the GTO solver",
+  solverOpen: "Open the solver's Flop study",
+  solverNote: (info) => {
+    const gto = "It shows the flop strategy when both players play GTO (pre-calculated results · 6-max 100bb · flop only), so the ranges, bet sizes and opponent rules differ from this simulator's.";
+    switch (info.kind) {
+      case "spot":
+        return info.flop
+          ? `${info.opener} open · ${info.caller} call · flop ${info.flop.map((c) => c.rank + c.suit).join("")} — opens the same seats and the same flop in the solver's Flop study. ${gto}`
+          : `${info.opener} open · ${info.caller} call — this hand ended before the flop, so only the seat matchup opens. Pick the three flop cards in the solver. ${gto}`;
+      case "notReady":
+        return `${info.opener} open · ${info.caller} call is not pre-calculated in the solver's Flop study yet. Pick a nearby seat matchup, or calculate it yourself in the solver.`;
+      case "multiway":
+        return `${info.players} players saw this flop. The solver's pre-calculated results cover heads-up pots only, so this hand can't open as is — pick a matchup against one opponent in Flop study.`;
+      case "table9":
+        return "The solver's pre-calculated results are for 6-max tables, so a 9-handed hand can't open as is — pick the nearest seat matchup in Flop study.";
+    }
+  },
+  solverLang: "en",
   chartRangeLegend: "What you saw",
   chartNote: "Solid lines are each seat's equity with every hand face up; the dashed line is the equity you saw on screen without knowing their cards. A folded player's line runs up to the street before the fold.",
   quizToggle: "🎯 Quiz",

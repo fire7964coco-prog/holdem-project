@@ -92,6 +92,24 @@ const KO_UI: QuizUI = {
       : `지금은 플러시·스트레이트 드로우도, 셋·투페어·오버카드로 올라갈 카드도 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${n}회 돌려 낸 값입니다.`,
   chartTitle: "📈 스트리트별 승률 — 패를 다 깠을 때",
   resultTabs: ["📋 복기", "📈 승률 흐름", "🃏 승률·팟오즈"],
+  solverTitle: "이 자리를 GTO 솔버로 보기",
+  solverOpen: "솔버 «플랍 조회» 열기",
+  solverNote: (info) => {
+    const gto = "양쪽이 GTO로 둘 때의 플랍 전략(미리 계산한 결과 · 6맥스 100bb · 플랍까지)이라, 이 시뮬레이터의 상대 규칙·레인지·벳 크기와는 다릅니다.";
+    switch (info.kind) {
+      case "spot":
+        return info.flop
+          ? `${info.opener} 오픈 · ${info.caller} 콜 · 플랍 ${info.flop.map((c) => c.rank + c.suit).join("")} — 솔버 «플랍 조회»에서 같은 자리·같은 플랍을 바로 엽니다. ${gto}`
+          : `${info.opener} 오픈 · ${info.caller} 콜 — 이 판은 플랍 전에 끝나서 같은 자리 조합만 엽니다. 플랍 3장은 솔버 화면에서 골라 보세요. ${gto}`;
+      case "notReady":
+        return `${info.opener} 오픈 · ${info.caller} 콜 조합은 솔버 «플랍 조회»에 아직 미리 계산되지 않았습니다. 가까운 자리 조합을 고르거나, 솔버에서 직접 계산할 수 있습니다.`;
+      case "multiway":
+        return `이 판은 프리플랍에 ${info.players}명이 들어간 팟입니다. 솔버의 미리 계산한 결과는 1대1 팟만 있어 그대로 열 수 없습니다 — «플랍 조회»에서 상대 한 명과의 자리 조합을 골라 보세요.`;
+      case "table9":
+        return "솔버의 미리 계산한 결과는 6맥스 테이블 기준이라 9인 테이블 판은 그대로 열 수 없습니다 — «플랍 조회»에서 가까운 자리 조합을 골라 보세요.";
+    }
+  },
+  solverLang: "ko",
   chartRangeLegend: "내가 본 승률",
   chartNote: "실선은 모든 패를 공개했을 때 좌석별 승률이고, 점선은 상대 패를 모른 채 화면에서 본 내 승률입니다. 폴드한 사람은 폴드하기 전 스트리트까지 선이 이어집니다.",
   quizToggle: "🎯 퀴즈",
