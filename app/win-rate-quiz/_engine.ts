@@ -326,7 +326,13 @@ export interface Outs {
   flush: number;
   /** 스트레이트를 완성시키는 카드 수 */
   straight: number;
-  /** 둘 중 하나라도 완성시키는 카드 수 (겹치는 카드는 한 번만 센다) */
+  /** 셋·트립스 — 포켓페어가 셋이 되거나, 보드와 맞은 홀카드가 트립스가 되는 카드 */
+  set: number;
+  /** 투페어 — 보드와 한 장만 맞은 상태에서 나머지 홀카드가 페어가 되는 카드 */
+  twoPair: number;
+  /** 오버카드 — 페어가 없을 때 보드 최고 랭크보다 높은 홀카드가 페어가 되는 카드 */
+  over: number;
+  /** 하나라도 해당하는 카드 수 (겹치는 카드는 한 번만 센다) */
   total: number;
   /** 아직 볼 카드 수 — 플랍이면 2장, 턴이면 1장 */
   toCome: number;
@@ -343,13 +349,41 @@ export interface Outs {
  *   전원이 같은 플러시라 내 아웃츠가 아니다.
  * ★스트레이트도 같은 원칙 — **보드+그 카드만으로 완성되는 스트레이트는 전원 공유**라 내 아웃츠가
  *   아니다(보드 4-5-6-7에서 3·8을 "내 완성 카드"로 세면 안 된다. 2026-08-05 검수 판정 #2).
+ * ★개선 카드(2026-10-12 S-034 2차 ③) — 셋·트립스·투페어·오버카드. 세 종류 모두 **내 홀카드 랭크와 같은
+ *   카드**만 세므로 보드 공유 개선(보드가 페어되는 카드)은 원리상 들어오지 않는다.
+ *   그리고 **§13 평가기로 족보가 실제로 올라가는지** 한 장씩 확인한다 — 이미 스트레이트·플러시인데
+ *   셋 카드를 "개선"이라 부르지 않기 위해서다. 결과 족보도 이름과 맞아야 센다(셋 = 트리플 · 투페어 = 투페어 ·
+ *   오버카드 = 원페어 또는 보드 페어와 합친 투페어). 같은 족보 안의 상승(낮은 투페어 → 높은 투페어)과
+ *   풀하우스·포카드 카드는 세지 않는다(요청 범위 밖 · 보수적으로).
  */
 export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
   const h = heroCards.map(toNum);
   const b = boardCards.map(toNum);
   const seen = [...h, ...b];
   const toCome = 5 - b.length;
-  if (b.length < 3 || toCome === 0) return { flush: 0, straight: 0, total: 0, toCome };
+  if (b.length < 3 || toCome === 0) return { flush: 0, straight: 0, set: 0, twoPair: 0, over: 0, total: 0, toCome };
+
+  // 개선 카드가 될 랭크 — 홀카드와 보드의 관계로 정한다
+  const boardCount = (r: number) => b.filter((c) => c[0] === r).length;
+  const boardMax = Math.max(...b.map((c) => c[0]));
+  const [ha, hb] = [h[0][0], h[1][0]];
+  const setRanks = new Set<number>();
+  const twoPairRanks = new Set<number>();
+  const overRanks = new Set<number>();
+  if (ha === hb) {
+    if (boardCount(ha) === 0) setRanks.add(ha); // 포켓페어 → 셋
+  } else {
+    const pa = boardCount(ha), pb = boardCount(hb);
+    if (pa === 1) setRanks.add(ha); // 맞은 홀카드 → 트립스
+    if (pb === 1) setRanks.add(hb);
+    if (pa === 1 && pb === 0) twoPairRanks.add(hb);
+    if (pb === 1 && pa === 0) twoPairRanks.add(ha);
+    if (pa === 0 && pb === 0) {
+      if (ha > boardMax) overRanks.add(ha);
+      if (hb > boardMax) overRanks.add(hb);
+    }
+  }
+  const curCat = bestCategory(seen);
 
   const suitCount = [0, 0, 0, 0];
   const heroSuit = [0, 0, 0, 0];
@@ -371,7 +405,7 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
   const alreadyStraight = hasStraight(ranksNow);
 
   const dead = new Set(seen.map(keyOf));
-  let flush = 0, straight = 0, total = 0;
+  let flush = 0, straight = 0, set = 0, twoPair = 0, over = 0, total = 0;
   for (let r = 2; r <= 14; r++) {
     for (let s = 0; s < 4; s++) {
       if (dead.has(r * 4 + s)) continue;
@@ -390,12 +424,26 @@ export function heroOuts(heroCards: Card[], boardCards: Card[]): Outs {
       } else if (!alreadyStraight && ranksNow.has(r)) {
         makesStraight = false; // 이미 있는 랭크는 스트레이트를 새로 만들지 못한다
       }
+      // 개선 카드 — 족보가 실제로 올라갈 때만
+      let makesSet = false, makesTwoPair = false, makesOver = false;
+      if (setRanks.has(r) || twoPairRanks.has(r) || overRanks.has(r)) {
+        // 결과 족보까지 맞춘다 — 셋 카드가 풀하우스를 만들면(보드가 이미 페어 등) "셋"이라 부르지 않는다
+        const cat = bestCategory([...seen, [r, s]]);
+        if (cat > curCat) {
+          makesSet = setRanks.has(r) && cat === 3;
+          makesTwoPair = twoPairRanks.has(r) && cat === 2;
+          makesOver = overRanks.has(r) && (cat === 1 || cat === 2);
+        }
+      }
       if (makesFlush) flush++;
       if (makesStraight) straight++;
-      if (makesFlush || makesStraight) total++;
+      if (makesSet) set++;
+      if (makesTwoPair) twoPair++;
+      if (makesOver) over++;
+      if (makesFlush || makesStraight || makesSet || makesTwoPair || makesOver) total++;
     }
   }
-  return { flush, straight, total, toCome };
+  return { flush, straight, set, twoPair, over, total, toCome };
 }
 
 /**

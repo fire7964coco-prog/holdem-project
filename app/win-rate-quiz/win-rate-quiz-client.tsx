@@ -68,14 +68,17 @@ const KO_UI: QuizUI = {
   reviewInvested: (invested, pot) => `내가 넣은 돈 ${invested.toLocaleString()} · 최종 팟 ${pot.toLocaleString()}`,
 
   formulaTitle: "📐 이 승률은 어떻게 나왔나",
-  outsLabel: (n) => `완성 카드 ${n}장`,
-  outsBreak: (f, s, both) =>
+  outsLabel: (n) => `완성·개선 카드 ${n}장`,
+  outsBreak: (o, both) =>
     [
-      f > 0 ? `플러시 ${f}장` : "",
-      s > 0 ? `스트레이트 ${s}장` : "",
-      both > 0 ? `둘 다 되는 ${both}장은 한 번만 셈` : "",
+      o.flush > 0 ? `플러시 ${o.flush}장` : "",
+      o.straight > 0 ? `스트레이트 ${o.straight}장` : "",
+      o.set > 0 ? `셋·트립스 ${o.set}장` : "",
+      o.twoPair > 0 ? `투페어 ${o.twoPair}장` : "",
+      o.over > 0 ? `오버카드 페어 ${o.over}장` : "",
+      both > 0 ? `두 가지에 겹치는 ${both}장은 한 번만 셈` : "",
     ].filter(Boolean).join(" · "),
-  hitLabel: "드로우를 맞출 확률 (실전 암산)",
+  hitLabel: "완성·개선 카드가 나올 확률 (실전 암산)",
   winLabel2: "팟을 이길 확률 (시뮬레이션)",
   formulaExpr: (outs, toCome) =>
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
@@ -84,7 +87,7 @@ const KO_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `프리플랍이라 아직 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대마다 그 자리에서 팟에 들어올 만한 패(자리별 레인지)를 상대로 ${n}회 돌려 낸 값입니다.`
-      : `지금은 플러시·스트레이트 드로우가 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${n}회 돌려 낸 값입니다.`,
+      : `지금은 플러시·스트레이트 드로우도, 셋·투페어·오버카드로 올라갈 카드도 없어서 «아웃츠 × 2/4» 암산이 쓰이지 않는 자리입니다. 위 승률은 상대가 보여준 액션에 맞는 패 전체를 상대로 ${n}회 돌려 낸 값입니다.`,
   chartTitle: "📈 스트리트별 승률 — 패를 다 깠을 때",
   resultTabs: ["📋 복기", "📈 승률 흐름", "🃏 승률·팟오즈"],
   chartRangeLegend: "내가 본 승률",

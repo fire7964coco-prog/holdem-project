@@ -64,14 +64,17 @@ const EN_UI: QuizUI = {
   reviewInvested: (invested, pot) => `You put in ${invested.toLocaleString()} · final pot ${pot.toLocaleString()}`,
 
   formulaTitle: "📐 Where this number comes from",
-  outsLabel: (n) => `${n} card${n > 1 ? "s" : ""} complete your draw`,
-  outsBreak: (f, s, both) =>
+  outsLabel: (n) => `${n} card${n > 1 ? "s" : ""} complete or improve your hand`,
+  outsBreak: (o, both) =>
     [
-      f > 0 ? `${f} for the flush` : "",
-      s > 0 ? `${s} for the straight` : "",
-      both > 0 ? `${both} complete both (counted once)` : "",
+      o.flush > 0 ? `${o.flush} for the flush` : "",
+      o.straight > 0 ? `${o.straight} for the straight` : "",
+      o.set > 0 ? `${o.set} for a set or trips` : "",
+      o.twoPair > 0 ? `${o.twoPair} for two pair` : "",
+      o.over > 0 ? `${o.over} to pair an overcard` : "",
+      both > 0 ? `${both} count for two of these (counted once)` : "",
     ].filter(Boolean).join(" · "),
-  hitLabel: "Chance you hit the draw (table math)",
+  hitLabel: "Chance one of these cards comes (table math)",
   winLabel2: "Chance you win the pot (simulated)",
   formulaExpr: (outs, toCome) =>
     toCome === 1 ? `${outs} × 2` : outs > 9 ? `${outs} × 4 − ${outs - 8}` : `${outs} × 4`,
@@ -80,7 +83,7 @@ const EN_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${n} hands against the hands each opponent would plausibly enter the pot with from their seat.`
-      : `You have no flush or straight draw right now, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
+      : `You have no flush or straight draw and no card that improves you to a set, two pair or an overcard pair, so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
   chartTitle: "📈 Equity street by street — all cards face up",
   resultTabs: ["📋 Review", "📈 Equity flow", "🃏 Odds"],
   chartRangeLegend: "What you saw",

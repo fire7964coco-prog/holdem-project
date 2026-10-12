@@ -155,8 +155,8 @@ export interface QuizUI {
   /** 승률이 어떻게 나왔는지 보여주는 오른쪽 패널 */
   formulaTitle: string;
   outsLabel: (n: number) => string;
-  /** both = 플러시·스트레이트를 동시에 완성하는 카드 수 — 합계(f+s)와 총계가 달라 보이는 걸 설명한다 */
-  outsBreak: (flush: number, straight: number, both: number) => string;
+  /** 종류별 장수 + both(종류 합계 − 총계 = 두 종류에 겹치는 카드) — 합계와 총계가 달라 보이는 걸 설명한다 */
+  outsBreak: (o: { flush: number; straight: number; set: number; twoPair: number; over: number }, both: number) => string;
   hitLabel: string;
   winLabel2: string;
   /** "9 × 4 − 1" 같은 식 */
@@ -1013,7 +1013,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }
 
   const liveOpponents = rec.opponentsBefore - rec.foldedSlots.length;
-  /** 내 드로우 완성 카드 수 — 지금 보이는 보드 기준 */
+  /** 내 완성·개선 카드 수 — 지금 보이는 보드 기준 */
   const outs = heroOuts(sim.hands[0], sim.board.slice(0, boardShown));
   const hitPct = ruleOf24(outs.total, outs.toCome);
   /** 판정줄 자릿수 — 1자리 반올림으로 두 값이 같아지면("25.0% < 25.0%") 2자리로 늘린다. 판정 자체는 전정밀 비교 */
@@ -1473,7 +1473,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <>
             <p className="text-sm font-black text-foreground">{ui.outsLabel(outs.total)}</p>
             <p className="text-[11px] text-muted-foreground mb-2.5">
-              {ui.outsBreak(outs.flush, outs.straight, outs.flush + outs.straight - outs.total)}
+              {ui.outsBreak(outs, outs.flush + outs.straight + outs.set + outs.twoPair + outs.over - outs.total)}
             </p>
 
             <div className="rounded-lg px-3 py-2 mb-1.5" style={{ background: "hsl(var(--background))" }}>
