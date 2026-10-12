@@ -81,6 +81,7 @@ const DE_UI: QuizUI = {
   wonByFold: (pot) => `Alle haben gefoldet – du gewinnst den Pot von ${n(pot)}`,
   splitLabel: (names) => `Split Pot – ${names.join(" · ")} teilen sich den Pot`,
   winLabel: (name, cat) => `${name} gewinnt · ${cat}`,
+  winLabelHero: (cat) => `Du gewinnst · ${cat}`,
 
   reviewTitle: "📋 Analyse – wo hättest du folden sollen?",
   reviewCols: ["Street", "Deine Equity", "Benötigt", "Entscheidung"],
@@ -132,6 +133,7 @@ const DE_UI: QuizUI = {
     }
   },
   solverLang: "de",
+  fmtNum: n,
   chartRangeLegend: "Was du gesehen hast",
   chartNote: "Die durchgezogenen Linien zeigen die Equity jeder Position mit allen Händen offen; die gestrichelte Linie ist die Equity, die du auf dem Bildschirm ohne Kenntnis der Gegnerkarten gesehen hast. Bei einem Spieler, der foldet, endet die Linie in der Setzrunde vor dem Fold.",
   quizToggle: "🎯 Quiz",

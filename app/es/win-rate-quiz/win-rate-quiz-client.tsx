@@ -75,6 +75,7 @@ const ES_UI: QuizUI = {
   wonByFold: (pot) => `Todos foldearon — te llevas el bote de ${pot.toLocaleString("en-US")}`,
   splitLabel: (names) => `Bote dividido — empatan ${names.join(" · ")}`,
   winLabel: (name, cat) => `Gana ${name} · ${cat}`,
+  winLabelHero: (cat) => `Ganas tú · ${cat}`,
 
   reviewTitle: "📋 Repaso — ¿dónde tenías que foldear?",
   reviewCols: ["Calle", "Tu equity", "Necesaria", "Veredicto"],
@@ -125,6 +126,7 @@ const ES_UI: QuizUI = {
     }
   },
   solverLang: "es",
+  fmtNum: (x) => x.toLocaleString("en-US"),
   chartRangeLegend: "Lo que viste",
   chartNote: "Las líneas continuas son la equity de cada asiento con todas las manos boca arriba; la discontinua es la equity que viste en pantalla sin conocer sus cartas. La línea de un jugador que se retiró llega hasta la calle anterior a su fold.",
   quizToggle: "🎯 Quiz",

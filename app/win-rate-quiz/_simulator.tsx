@@ -158,6 +158,11 @@ export interface QuizUI {
   wonByFold: (pot: number) => string;
   splitLabel: (names: string[]) => string;
   winLabel: (name: string, category: string) => string;
+  /**
+   * 내가 이겼을 때 — 동사가 주어 인칭을 따라가는 언어용(de «Du gewinnst» · es «Ganas tú»).
+   * 없으면 winLabel(hero, …)을 쓴다(ko·en·ja·zh는 인칭 변화가 없다).
+   */
+  winLabelHero?: (category: string) => string;
   /** 복기 */
   reviewTitle: string;
   reviewCols: readonly [string, string, string, string];
@@ -249,6 +254,11 @@ export interface QuizUI {
   solverNote: (info: SolverLinkInfo) => string;
   /** 솔버 앱 언어(?lang=) */
   solverLang: string;
+  /**
+   * 칩 금액·표본 수 표기 — 브라우저 언어가 아니라 **페이지 언어**를 따른다(de «1.234» · 그 밖 «1,234»).
+   * 없으면 en-US. 같은 화면의 사전 문장(로케일 파일)과 숫자 꼴이 어긋나지 않게 한다.
+   */
+  fmtNum?: (x: number) => string;
   /** 규칙·단서 */
   ruleTitle: string;
   /** 고른 성향의 규칙을 그 자리에 적는다 */
@@ -803,6 +813,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   /** 이 핸드가 실제로 진행된 마지막 스트리트 (전원 폴드면 거기서 끝). 계산 중엔 아직 모른다 */
   const lastStreet = result ? result.streets[result.streets.length - 1].street : 3;
   const rec = streets[Math.min(street, streets.length - 1)] ?? null;
+  const fmt = ui.fmtNum ?? ((x: number) => x.toLocaleString("en-US"));
   const boardShown = street === 0 ? 0 : street + 2;
   /** 다음 스트리트가 아직 계산 중인가 */
   const waiting = !result && street + 1 >= streets.length;
@@ -941,7 +952,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     if (result.wonByFoldAt !== null) return ui.wonByFold(result.finalPot);
     if (!winnerSlots.length) return "";
     if (winnerSlots.length > 1) return ui.splitLabel(winnerSlots.map((w) => nameOf(w.slot)));
-    return ui.winLabel(nameOf(winnerSlots[0].slot), winnerSlots[0].cat);
+    const w = winnerSlots[0];
+    if (w.slot === 0 && ui.winLabelHero) return ui.winLabelHero(w.cat);
+    return ui.winLabel(nameOf(w.slot), w.cat);
   }, [sim, result, winnerSlots, nameOf, ui]);
 
   /** 9인 테이블은 좌석이 많아 폭을 줄인다(폰 390에서 한 줄 4석 · 보드 양옆 1석씩) */
@@ -1103,7 +1116,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* 팟 = kit-v1 무표기 칩 + 글자(README 원칙: 금액은 칩이 아니라 옆 글자) */}
       <div className="flex items-center gap-1 rounded-full pl-1 pr-2 py-[2px] mt-0.5 text-[10px] font-black tabular-nums"
         style={{ color: GOLD, background: "var(--wrq-shade)" }}>
-        <KitChip size={13} />{ui.potLabel} {rec.potAfter.toLocaleString()}
+        <KitChip size={13} />{ui.potLabel} {fmt(rec.potAfter)}
       </div>
     </div>
   );
@@ -1386,9 +1399,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             {/* 모바일에서 세로를 아끼려고 「팟·콜」과 「필요 승률 식」을 한 줄로 붙인다.
                 식은 그대로 보여준다 — 공부하러 오는 자리라 계산 과정을 지우면 안 된다 */}
             <p className="text-xs text-muted-foreground leading-relaxed tabular-nums">
-              {ui.potBeforeLabel} <b className="text-foreground">{rec.potBefore.toLocaleString()}</b>
-              {" · "}{ui.toCallLabel} <b className="text-foreground">{rec.toCall.toLocaleString()}</b>
-              {" → "}{ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} ={" "}
+              {ui.potBeforeLabel} <b className="text-foreground">{fmt(rec.potBefore)}</b>
+              {" · "}{ui.toCallLabel} <b className="text-foreground">{fmt(rec.toCall)}</b>
+              {" → "}{ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} ={" "}
               <b className="text-foreground">{rec.required!.toFixed(oddsDigits)}%</b>
             </p>
             {/* 퀴즈 답 전에는 판정 줄을 가린다 — 필요 승률(식)은 짐작의 재료라 그대로 보여 준다 */}
@@ -1430,7 +1443,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {/* 폰에서는 팟오즈 박스가 이 버튼들 밑에 깔린다 — 콜/폴드를 고를 재료(필요 승률 식)만 버튼 위에 한 줄 */}
               <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-[13px] font-bold tabular-nums shadow-lg text-foreground"
                 style={{ background: "hsl(var(--background))", border: "2px solid hsl(var(--border))" }}>
-                {ui.requiredLabel} = {rec.toCall.toLocaleString()} ÷ {rec.potAfter.toLocaleString()} = <b>{rec.required!.toFixed(1)}%</b>
+                {ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} = <b>{rec.required!.toFixed(1)}%</b>
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <button onClick={() => submitGuess("call")}
@@ -1569,7 +1582,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           <p className="text-[11.5px] text-muted-foreground leading-relaxed">{ui.riverNote}</p>
         ) : (
           <p className="text-[11.5px] text-muted-foreground leading-relaxed">
-            {ui.noDrawNote(rec.basis, (street === 0 ? SAMPLES.preflop : SAMPLES.postflop).toLocaleString())}
+            {ui.noDrawNote(rec.basis, fmt(street === 0 ? SAMPLES.preflop : SAMPLES.postflop))}
           </p>
         )}
       </div>
