@@ -164,6 +164,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Ekspor CSV ringkasan", "yes", "Langsung ke spreadsheet Anda"],
   ["Tautan Bagikan Spot", "yes", "Spot yang sama terbuka di perangkat teman belajar Anda"],
   ["Spot belajar yang sudah dihitung", "yes", "Hasil langsung tampil saat diklik, tanpa menunggu"],
+  ["Studi flop — strategi flop yang sudah dihitung sebelumnya", "yes", "Pilih spot, posisi, dan flop, grid langsung tampil tanpa menunggu · hanya flop · ukuran bet tetap (flop 33% / 75%, raise 60%)"],
   ["Trainer GTO dengan skor EV", "yes", "Termasuk analisis titik lemah dan tombol Tinjau ulang"],
   ["Latihan dengan spot hasil hitungan Anda sendiri", "yes", "Sekali klik di layar hasil menyimpan spot itu menjadi soal Trainer · hanya di perangkat ini"],
 ];

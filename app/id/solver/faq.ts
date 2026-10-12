@@ -91,6 +91,10 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
     a: "Tidak. Alat ini mencakup situasi heads-up (dua pemain) setelah flop: flop, turn, river. Tidak menghitung preflop adalah pilihan: dari sesi ke sesi, range open Anda nyaris tidak berubah, sedangkan postflop berubah di setiap flop. Untuk preflop, app menyediakan tab Chart preflop — range open dan pertahanan yang bisa dilihat sambil Anda menyusun spot.",
   },
   {
+    q: "Bisakah melihat strategi flop langsung tanpa menghitung?",
+    a: "Bisa, lewat «Studi flop» di sidebar. Ini hasil yang sudah dihitung sebelumnya, jadi langsung tampil tanpa menunggu. Pilih «Open · Call», «Pot 3-bet», atau «Pot 4-bet», tentukan posisi dan tiga kartu flop, lalu Anda melihat frekuensi aksi pemain yang bertindak lebih dulu beserta grid 13×13 untuk strategi dan range; klik sebuah aksi untuk mengikuti alurnya sampai flop selesai. Dasarnya 6-max 100bb dengan target galat 0,3%, dan setiap spot yang tersedia sudah menghitung 1.755 flop yang berbeda (dikelompokkan berdasarkan suit kartu yang setara). Ukuran bet tetap — 33% dan 75% di flop, raise 60% — dan permainan mulai dari turn tidak disimpan. Kombinasi posisi yang belum dihitung ditandai «Segera hadir». Untuk ukuran lain atau turn dan river, gunakan «Buka di solver» dan hitung sendiri.",
+  },
+  {
     // ⚠ 가격·무료 티어 «수치»는 넣지 않는다(CLAUDE.md §12-B). «방식의 차이»만.
     q: "Apa bedanya dengan GTO Wizard atau PioSolver?",
     a: "Semuanya keluarga solver; yang membedakan adalah di mana dan kapan perhitungannya terjadi. Di sini, jawaban dihitung saat Anda mengeklik, dengan range dan pohon keputusan Anda sendiri, di perangkat Anda sendiri. Pustaka solusi seperti GTO Wizard terutama menampilkan jawaban yang sudah dihitung sebelumnya dan disimpan dalam katalog (GTO Wizard juga menawarkan perhitungan kustom). PioSolver adalah program desktop yang diinstal, terutama di Windows, dan menghitung di komputer Anda. Tidak ada yang «lebih baik» secara mutlak — kebutuhannya berbeda.",

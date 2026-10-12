@@ -196,6 +196,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Exportar el resumen a CSV", "yes", "Directo a la hoja de cálculo"],
   ["Enlace para compartir un spot", "yes", "Envía el mismo spot a tu grupo de estudio"],
   ["Abrir spots de estudio ya calculados", "yes", "El resultado aparece sin esperar"],
+  ["Estudiar flop — estrategias de flop precalculadas", "yes", "Eliges spot, posiciones y flop y la matriz aparece sin esperar · solo el flop · tamaños fijos (flop 33% / 75%, raise 60%)"],
   ["Entrenador GTO con puntuación", "yes", "Con desglose de puntos débiles y cola de repaso"],
   ["Practicar con los spots que calculaste", "yes", "Un clic en los resultados guarda el spot como preguntas del Entrenador · solo en este dispositivo"],
 ];

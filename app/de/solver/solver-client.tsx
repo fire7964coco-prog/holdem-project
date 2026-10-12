@@ -201,6 +201,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Zusammenfassung als CSV exportieren", "yes", "Direkt in die Tabellenkalkulation"],
   ["Teilen-Link für einen Spot", "yes", "Schick denselben Spot an deine Study Group"],
   ["Fertig gelöste Lernspots öffnen", "yes", "Das Ergebnis steht ohne Wartezeit da"],
+  ["Flops studieren — vorberechnete Flop-Strategien", "yes", "Spot, Positionen und Flop wählen, die Matrix steht ohne Wartezeit da · nur der Flop · feste Bet-Sizes (Flop 33% / 75%, Raise 60%)"],
   ["GTO-Trainer mit Benotung", "yes", "Mit Schwachstellen-Auswertung und Wiederholungs-Queue"],
   ["Mit selbst berechneten Spots üben", "yes", "Ein Klick im Ergebnisfenster speichert den Spot als Trainer-Aufgaben · nur auf diesem Gerät"],
 ];

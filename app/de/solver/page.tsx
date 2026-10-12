@@ -146,6 +146,7 @@ const jsonLd = {
         "Selbst berechnete Spots als Trainer-Aufgaben gespeichert (nur auf diesem Gerät)",
         "Präzisionsmodi (32-Bit-Float / 16-Bit-Integer) und Ziel-Exploitability",
         "Fertig gelöste Lernspots, die sich sofort öffnen",
+        "Flops studieren — vorberechnete Flop-Strategien für den gewählten Spot, die Positionen und das Board (nur Flop, feste Bet-Sizes)",
         "GTO-Trainer, der Entscheidungen nach EV-Verlust im Verhältnis zum Pot benotet",
         "CSV-Export der Zusammenfassung und Teilen-Link für einen Spot",
         "Läuft mit WebAssembly im Browser – ohne Installation und ohne Konto",

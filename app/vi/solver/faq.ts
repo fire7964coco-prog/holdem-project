@@ -53,6 +53,10 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
     a: "Mọi spot postflop heads-up. Bạn đặt hai range, flop (thêm turn và river nếu muốn một runout cụ thể), pot ban đầu và stack hiệu dụng, cỡ bet và raise theo từng vòng cược — kể cả rake và mức rake tối đa. Preflop không được giải ở đây; range mở bài theo vị trí thì dùng bảng bài khởi đầu.",
   },
   {
+    q: "Có xem ngay chiến lược flop mà không cần tự giải không?",
+    a: "Có, trong mục «Tra cứu flop» ở thanh bên. Đây là kết quả đã tính sẵn nên hiện ra ngay, không phải chờ. Bạn chọn «Open · Call», «Pot 3-bet» hoặc «Pot 4-bet», chọn vị trí và ba lá flop, rồi xem tần suất hành động của người đi trước cùng lưới 13×13 cho chiến lược và range; nhấn vào một hành động để đi tiếp theo nhánh đó cho đến hết flop. Nền tảng là 6-max 100bb với exploitability mục tiêu 0,3%, và mỗi spot đã sẵn sàng đều tính đủ 1.755 flop khác nhau (gộp theo chất tương đương). Cỡ cược cố định — 33% và 75% ở flop, raise 60% — và từ turn trở đi không có kết quả tính sẵn. Những tổ hợp vị trí chưa tính sẽ hiện «Sắp có». Với cỡ khác hoặc turn và river, hãy dùng «Mở trong solver» và tự giải.",
+  },
+  {
     q: "Khác gì GTO Wizard hay PioSOLVER?",
     a: "Khác chủ yếu ở chỗ phép tính diễn ra ở đâu. Thư viện lời giải như GTO Wizard chủ yếu dùng để tra các spot đã được giải trước — nhanh và có cả preflop (GTO Wizard cũng có tính năng giải tùy chỉnh). Solver desktop như PioSOLVER cài trên máy Windows và giải tại máy. Solver này giải ngay trong trình duyệt của bạn, nên bạn sửa range và cây tùy ý mà không phải cài gì.",
   },

@@ -111,6 +111,10 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
     a: "Não. Esta ferramenta é depois do flop e heads-up: flop, turn e river. Os ranges de abertura por posição estão no guia da tabela de mãos iniciais do blog, que é por onde convém começar. Dentro do app também dá para consultá-los rápido enquanto você monta um spot, mas a explicação de por que cada posição abre o que abre está no artigo.",
   },
   {
+    q: "Dá para ver a estratégia do flop na hora, sem calcular?",
+    a: "Dá, em «Estudar flop» na barra lateral. São resultados pré-calculados, então aparecem na hora. Você escolhe «Open · Call», «Pote 3-bet» ou «Pote 4-bet», as posições e as três cartas do flop, e vê as frequências de ação de quem age primeiro junto com a matriz 13×13 de estratégia e de range; ao tocar numa ação, segue a linha até o flop terminar. A base é 6-max com 100bb e erro alvo de 0,3%, e cada spot disponível tem os 1.755 flops distintos calculados (agrupados por naipes equivalentes). Os tamanhos são fixos — 33% e 75% no flop, raises de 60% — e nada a partir do turn fica salvo. Combinações de posições que ainda não foram calculadas aparecem como «Em breve». Para outros tamanhos ou para turn e river, use «Abrir no solver» e calcule você mesmo.",
+  },
+  {
     q: "Qual é a diferença para o GTO Wizard ou o PioSOLVER?",
     a: "Está em onde e quando o cálculo acontece. Aqui a solução é calculada no seu aparelho, na hora, com os ranges e a árvore que você escrever. As plataformas de consulta servem principalmente para ver soluções calculadas de antemão, dentro do catálogo que publicam (o GTO Wizard também oferece cálculo personalizado). O PioSOLVER é um programa que se instala e calcula na sua própria máquina, principalmente no Windows. Não é melhor nem pior: resolvem necessidades diferentes.",
   },

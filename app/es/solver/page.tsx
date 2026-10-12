@@ -150,6 +150,7 @@ const jsonLd = {
         "Spots que calculaste guardados como preguntas del Entrenador (solo en este dispositivo)",
         "Modos de precisión (coma flotante 32 bits / entero 16 bits) y explotabilidad objetivo",
         "Spots de estudio ya calculados que se abren al instante",
+        "Estudiar flop — estrategias de flop precalculadas para el spot, las posiciones y el board que elijas (solo flop, tamaños de apuesta fijos)",
         "Entrenador GTO que puntúa la pérdida de EV en proporción al bote",
         "Exportación del resumen a CSV y enlace para compartir un spot",
         "Corre en el navegador con WebAssembly — sin instalación y sin cuenta",

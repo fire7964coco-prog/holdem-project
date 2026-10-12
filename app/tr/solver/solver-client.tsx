@@ -86,6 +86,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Özeti CSV'ye aktarma", "yes", "Doğrudan bir elektronik tabloya"],
   ["Spotu linkle paylaşma", "yes", "Spotunu birebir çalışma grubuna gönder"],
   ["Önceden çözülmüş çalışma spotlarını açma", "yes", "Bekleme yok — çözümler anında açılır"],
+  ["Flop çalışması — önceden hesaplanmış flop stratejileri", "yes", "Spotu, pozisyonları ve flop'u seç, grid beklemeden açılır · yalnızca flop · sabit bet boyutları (flop %33 / %75, raise %60)"],
   ["EV kaybıyla puanlayan GTO Trainer", "yes", "Zayıf spot filtreleri ve tekrar kuyruğu da var"],
   ["Kendi çözdüğün spotlarla pratik", "yes", "Sonuç ekranında tek tıkla trainer sorusu olarak kaydedilir · yalnızca bu cihazda"],
 ];

@@ -48,6 +48,10 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
     a: "Her heads-up postflop spotunu. İki range'i, flop'u (belirli bir runout istiyorsan turn ve river'ı da), başlangıç potunu ve efektif stack'i, street street bet ve raise boyutlarını — rake ve rake tavanı dahil — sen belirlersin. Preflop burada çözülmez; pozisyona göre açılış range'leri için başlangıç eli tablosunu kullan.",
   },
   {
+    q: "Hesaplamadan flop stratejisini anında görebilir miyim?",
+    a: "Evet, kenar çubuğundaki «Flop çalışması» bölümünden. Bunlar önceden hesaplanmış sonuçlar, bu yüzden beklemeden açılır. «Open · Call», «3-bet pot» ya da «4-bet pot» seçip pozisyonları ve üç flop kartını belirlediğinde, önce hareket eden oyuncunun aksiyon sıklıklarını ve strateji ile range için 13×13 grid'i görürsün; bir aksiyona tıklayarak çizgiyi flop bitene kadar takip edersin. Temel 6-max 100bb ve hedef exploitability %0,3; hazır olan her spotta 1.755 farklı flop'un tamamı hesaplanmış durumda (eşdeğer renkler tek grupta). Bet boyutları sabit (flop'ta %33 ve %75, raise %60); turn ve sonrası ise kayıtlı değil. Henüz hesaplanmamış pozisyon eşleşmeleri «Yakında» olarak görünür. Diğer boyutlar ya da turn ve river için «Solver'da aç» ile kendin hesapla.",
+  },
+  {
     q: "GTO Wizard ya da PioSOLVER'dan farkı ne?",
     a: "Temel fark, hesaplamanın nerede yapıldığıdır. GTO Wizard gibi çözüm kütüphaneleri çoğunlukla önceden çözülmüş spotlara göz atmak içindir; bu hızlıdır ve preflop'u da kapsar (GTO Wizard özel çözüm de sunar). PioSOLVER gibi masaüstü solver'lar bir Windows bilgisayara kurulur ve yerelde çözer. Bu solver ise tarayıcında çözer; hiçbir şey kurmadan range'leri ve ağaçları istediğin gibi yeniden yazabilirsin.",
   },

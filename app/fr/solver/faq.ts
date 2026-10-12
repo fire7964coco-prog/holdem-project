@@ -96,6 +96,10 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
     a: "Non. Cet outil couvre les situations à deux joueurs après le flop : flop, turn, river. Ne pas faire le préflop est un choix : d'une session à l'autre, tes ranges d'open bougent à peine, alors que le postflop change à chaque flop. Pour le préflop, l'app intègre un onglet Charts préflop — ranges d'open et de défense consultables pendant que tu montes ton spot.",
   },
   {
+    q: "Puis-je voir la stratégie du flop tout de suite, sans calculer ?",
+    a: "Oui, dans « Étudier un flop » de la barre latérale. Ce sont des résultats précalculés, ils s'affichent donc sans attendre. Tu choisis « Open · Call », « Pot 3-bet » ou « Pot 4-bet », les positions et les trois cartes du flop, et tu vois les fréquences d'action du joueur qui parle en premier, avec la matrice 13×13 de stratégie et de range ; en cliquant sur une action, tu suis la ligne jusqu'à la fin du flop. La base est 6-max à 100bb avec une erreur cible de 0,3 %, et chaque spot disponible couvre les 1 755 flops distincts (regroupés par couleurs équivalentes). Les sizings sont fixes — 33 % et 75 % au flop, raises à 60 % — et rien n'est enregistré à partir du turn. Les combinaisons de positions pas encore calculées affichent « Bientôt ». Pour d'autres sizings ou pour le turn et la river, passe par « Ouvrir dans le solveur » et lance le calcul toi-même.",
+  },
+  {
     // 🟢 정합 렌즈 반영(2026-08-25) — 비교 절의 «l'endroit et au moment du calcul» 축어를 변주.
     q: "C'est le même genre d'outil que GTO Wizard ou PioSolver ?",
     a: "Tous appartiennent à la famille des solvers ; ce qui les sépare, c'est qui calcule, où, et à quel moment. Ici, la réponse est calculée à l'instant où tu cliques, avec tes ranges et ton arbre de décision, sur ton propre appareil. Les bibliothèques de solutions servent surtout à consulter des réponses précalculées, stockées dans un catalogue (GTO Wizard propose aussi du calcul sur mesure). PioSolver est un programme de bureau à installer, surtout sous Windows, qui calcule sur ta machine. Aucun n'est « meilleur » dans l'absolu — ils ne répondent pas au même besoin.",

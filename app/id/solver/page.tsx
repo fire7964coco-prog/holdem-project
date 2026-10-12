@@ -125,6 +125,7 @@ const jsonLd = {
         "Spot hasil hitungan Anda sendiri tersimpan sebagai soal Trainer (hanya di perangkat ini)",
         "Mode presisi (float 32-bit / integer 16-bit) dan target exploitability",
         "Spot belajar yang sudah dihitung, hasil langsung tampil saat diklik",
+        "Studi flop — strategi flop yang sudah dihitung sebelumnya untuk spot, posisi, dan board yang Anda pilih (hanya flop, ukuran bet tetap)",
         "Trainer GTO yang menilai keputusan Anda dari kerugian EV relatif terhadap pot",
         "Tab Chart preflop dan kalkulator Equity terintegrasi",
         "Ekspor CSV ringkasan, Impor JSON dan Ekspor JSON, tautan Bagikan Spot",

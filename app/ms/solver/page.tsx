@@ -67,6 +67,7 @@ const jsonLd = {
         "Berlatih spot ini — soalan daripada spot sendiri yang sudah dikira dan rekod latihannya kekal pada peranti ini sahaja",
         "Mod ketepatan float 32-bit atau integer 16-bit dan sasaran exploitability",
         "Spot belajar yang sudah dikira untuk melihat hasil dengan segera",
+        "Kajian flop — strategi flop yang dikira awal bagi spot, posisi dan board yang anda pilih (flop sahaja, saiz bet tetap)",
         "Trainer GTO dengan penilaian kerugian EV berbanding saiz pot",
         "Tab Carta preflop dan kalkulator Equity",
         "Eksport ringkasan CSV, import dan eksport JSON, serta pautan Kongsi Spot",

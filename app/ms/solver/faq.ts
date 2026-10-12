@@ -39,6 +39,10 @@ export const SOLVER_FAQ_MS: FaqItem[] = [
     a: "Enjin solver mengira situasi heads-up, iaitu dua pemain, selepas flop: flop, turn dan river. Ia tidak menyelesaikan strategi preflop. Untuk rujukan sebelum flop, tab Carta preflop dalam aplikasi menyediakan range open dan pertahanan mengikut posisi. Carta memberi rujukan sedia ada; solver mengira semula strategi postflop berdasarkan tetapan anda.",
   },
   {
+    q: "Bolehkah saya melihat strategi flop serta-merta tanpa mengira?",
+    a: "Boleh, melalui Kajian flop di bar sisi. Ini keputusan yang dikira awal, jadi ia dipaparkan tanpa menunggu. Pilih Open · Call, Pot 3-bet atau Pot 4-bet, tetapkan posisi dan tiga kad flop, kemudian anda akan melihat kekerapan tindakan pemain yang bertindak dahulu bersama grid 13×13 untuk strategi dan range; klik satu tindakan untuk mengikut aliran itu sehingga flop tamat. Asasnya 6-max 100bb dengan ralat sasaran 0.3%, dan setiap spot yang tersedia sudah mengira kesemua 1,755 flop yang berbeza (dikumpulkan mengikut sut yang setara). Saiz bet ditetapkan — 33% dan 75% pada flop, raise 60% — dan permainan dari turn tidak disimpan. Gabungan posisi yang belum dikira ditandakan Akan datang. Untuk saiz lain atau turn dan river, gunakan Buka dalam solver dan kira sendiri.",
+  },
+  {
     q: "Sejauh manakah ketepatan solver dalam pelayar?",
     a: "Solver melakukan pengiraan berulang ke arah sasaran exploitability yang anda tetapkan. Sasaran lebih rendah memerlukan lebih banyak masa pengiraan; semak nilai exploitability akhir kerana pengiraan juga boleh berhenti apabila had iterasi dicapai. Ketepatan perlu dibaca dalam konteks range dan pokok keputusan yang anda masukkan. Pokok yang sangat besar memerlukan lebih banyak memori dan mungkin lebih sesuai dikira dengan solver desktop.",
   },

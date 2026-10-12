@@ -63,6 +63,10 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
     a: "Any heads-up postflop spot. You set both ranges, the flop (and turn and river if you want a specific runout), the starting pot and effective stack, and bet and raise sizes street by street, including rake and rake cap. Preflop is not solved here — for opening ranges by position, use the starting hand chart instead.",
   },
   {
+    q: "Can I see flop strategies instantly without solving?",
+    a: "Yes — open «Flop study» in the sidebar. These are precomputed results, so they appear with no wait. Choose «Open · Call», «3-bet pot» or «4-bet pot», pick the seats and a three-card flop, and you get the action frequencies of the player who acts first plus a 13×13 strategy and range grid; click an action to follow the line until the flop ends. The basis is 6-max 100bb with a 0.3% target error, and every ready spot covers all 1,755 distinct flops (grouped by suit isomorphism). Bet sizes are fixed at 33% and 75% on the flop with 60% raises, and nothing from the turn onward is stored. Seat combinations not yet computed show «Coming soon». For other sizes or the turn and river, use «Open in solver» and solve it yourself.",
+  },
+  {
     q: "How is this different from GTO Wizard or PioSOLVER?",
     a: "Mostly in where the calculation happens. Solution libraries such as GTO Wizard are mainly for browsing spots that were solved in advance, which is fast and covers preflop (GTO Wizard also offers custom solving). Desktop solvers such as PioSOLVER are installed on a Windows PC and solve locally. This one solves in your browser, so you can rewrite ranges and trees freely with nothing to install.",
   },

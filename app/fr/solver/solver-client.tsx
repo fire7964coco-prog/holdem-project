@@ -177,6 +177,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Export CSV du récapitulatif", "yes", "Directement dans ton tableur"],
   ["Lien de partage de spot", "yes", "Le même spot s'ouvre chez ton partenaire d'étude"],
   ["Spots d'étude précalculés", "yes", "Résultats au clic, sans attendre"],
+  ["Étudier un flop — stratégies de flop précalculées", "yes", "Tu choisis le spot, les positions et le flop, la matrice s'affiche sans attendre · flop uniquement · sizings fixes (flop 33 % / 75 %, raise 60 %)"],
   ["Trainer GTO avec notation", "yes", "Analyse des points faibles et bouton Révision inclus"],
   ["Travailler tes propres spots calculés", "yes", "Un clic sur l'écran de résultats les transforme en exercices du Trainer · sur cet appareil uniquement"],
 ];

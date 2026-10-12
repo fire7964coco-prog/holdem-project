@@ -125,6 +125,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Export the summary to CSV", "yes", "Straight into a spreadsheet"],
   ["Share a spot by link", "yes", "Send your exact spot to a study group"],
   ["Open pre-solved study spots", "yes", "No waiting — solutions appear instantly"],
+  ["Flop study — precomputed flop strategies", "yes", "Pick a spot, seats and flop and the grid appears with no wait · flop only · fixed bet sizes (flop 33% / 75%, raise 60%)"],
   ["GTO Trainer with EV-loss grading", "yes", "Plus weak-spot filters and a review queue"],
   ["Practice your own solved spots", "yes", "One click on the results screen saves it as trainer questions · this device only"],
 ];

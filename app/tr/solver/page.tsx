@@ -89,6 +89,7 @@ const jsonLd = {
         "Kendi çözdüğün spotları trainer sorusu olarak kaydetme (yalnızca bu cihazda)",
         "Hassasiyet modları (32-bit float / 16-bit integer) ve hedef exploitability",
         "Anında açılan, önceden çözülmüş çalışma spotları",
+        "Flop çalışması — seçtiğin spot, pozisyonlar ve board için önceden hesaplanmış flop stratejileri (yalnızca flop, sabit bet boyutları)",
         "Kararları pota göre EV kaybıyla puanlayan GTO Trainer",
         "Özetin CSV olarak dışa aktarılması ve paylaşılabilir spot linkleri",
         "WebAssembly ile tarayıcıda çalışır — kurulum yok, hesap yok",
