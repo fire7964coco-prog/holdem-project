@@ -1,3 +1,11 @@
+## 2026-10-12 (2) — queue §2-BE~§2-BI 이행 (MA-456·457·460·463·464) · 배포 `f16360a4` · MB-263
+
+- 사장님 «우편함 밀린거 진행하자». (1) 등재·회신 `d265abf0` MB-262(MA-458·462 ACK). posting.mdc 형식 규칙 확인 후 착수.
+- 회차 1 ms 고유 = BG-1·BH-1·2·BI-1 + 통지 이식(`6164c748` EN word-diff 기준 · 정확히 1회 일치 스크립트). 회차 2 EN-먼저 EN+ms = BE-1·BF-1~3·BI-2·BI-3. 회차 3 형제 9로케일(de·es·fr·id·ja·pt·vi·zh·zh-hant) = 에이전트 3개(언어 묶음) · 무변경 = fr BF-1 · ja·zh·zh-hant BI-2 직답(대응 문장 없음). 범위 밖 같은 축 1어 = ja L196 · zh-hant L171 요약 인용.
+- 교열 렌즈 1(must-fix 0 · ms 선택 3 반영) + de 3bet «nach einem Call» 다듬기. updated 10-12 · masterUpdated 불변.
+- 게이트 audit:hard en·ms·9로케일 🔴 0 · schema 일치 · build 74 + 729 · IndexNow 70 URL 200.
+- 사장님 «레인창 작업 재개» = 검수장 쪽 레인(사장님 선택) → 본체 몫 아님 · 검수장 세션에서 지시.
+
 ## 2026-10-11 (24) — queue §2-BD 이행 (ms odds 4편 · MA-451) · 배포 `876f0214` · MB-261
 
 - 사장님 «바로 진행하자». posting.mdc 통독 후 착수. 소스 = `git show 6164c748` EN 4편 word-diff → ms 대응 자리 20 치환(정확히 1회 일치 검증 스크립트).

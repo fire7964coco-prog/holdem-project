@@ -901,7 +901,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 ms `masterUpdated` 그대로(앵커 이식만 · settled §1-C) · odds 남은 3편·strategy도 같은 미전파 가능 — 레인 묶음 2 차이표 오면 같이.
 - 이행 MB 오면 검수장이 ms 4편 원장 재판정.
 
-### 2-BE. 우편함 수신분 — MA-456 (equity 카드 «Stack depth & skill» · 사용자 결재 10-11 · EN-먼저) · 등재·회신 2026-10-12 (1) MB-262
+### 2-BE. 우편함 수신분 — MA-456 (equity 카드 «Stack depth & skill» · 사용자 결재 10-11 · EN-먼저) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 
 > 위치 대조 main `30f15d46`. 1차 Upswing «the higher the SPR, the more equity the player in-position will realize. The opposite is true for the OOP player» = 스택 깊이 효과는 포지션 조건부. 문안은 본체(같은 글 «Out of position or hard to play? Discount it» 틀).
 
@@ -909,7 +909,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|
 | BE-1 EN-먼저 (ms RISKY 확정 · EN #59 UNV) | EN `holdem-equity` L130 카드 «Deeper stacks and tougher opponents make marginal equity harder to realize» + 같은 행 10로케일(de·es·fr·id·ja·ms·pt·vi·zh·zh-hant — **pt는 MA 목록 밖이지만 같은 행 실재**) | OOP 한정: 깊은 스택은 OOP의 실현을 깎고 IP는 오히려 더 실현 · 강한 상대는 마진 핸드 실현을 깎는다 |
 
-### 2-BF. 우편함 수신분 — MA-457 (MS glossary 묶음 2 · glossary·cooler·fish · 기준 `d19f9be7`) · 등재·회신 2026-10-12 (1) MB-262
+### 2-BF. 우편함 수신분 — MA-457 (MS glossary 묶음 2 · glossary·cooler·fish · 기준 `d19f9be7`) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 
 > ms 고유 결함 0. 요청 1 = EN-먼저 3자리(사용자 결재 10-11 · 새 문안 아님 = 같은 글 안 정정 축).
 
@@ -921,7 +921,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지 라벨 유지: glossary heads-up 정의(WSOP 핸드 단위 뜻 미열거) · fish calling station «never bluff» · 레인 언어 3종(«sentiasa/selalu kalah» · FAQ1 «pasangan istilah» · «lima jenis pemain» vs 표 10종) = 요청 아님.
 
-### 2-BG. 우편함 수신분 — MA-460 (MB-258·259·261 재판정 · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+### 2-BG. 우편함 수신분 — MA-460 (MB-258·259·261 재판정 · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 
 > 이행 OK · 새 WRONG 0 · ms 고유 RISKY 2(MA-449 ⓑ 부분 이행).
 
@@ -931,7 +931,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(로케일 레인 때 · 자동 착수 금지): ① 형제 13로케일(bn·fa·fil·he·hi·it·pl·ro·ru·sw·th·tr·uk) all-in = EN `6164c748` 델타 미전파 확인 ② 같은 13로케일 betting Check 표·FAQ 스트래들 한정 없음 · bn·fil·hi·sw·th 본문 90.d ↔ FAQ 스트링 벳 자기모순 · fa·he 옛 설명 ③ «Rule 90.d» 무접두 잔존(EN 포함 · EN-먼저 후보 · 요청 아님) ④ th 가이드표 표현 축 OK.
 
-### 2-BH. 우편함 수신분 — MA-463 (MS rankings 묶음 3 · hand-rankings·kicker·tiebreak · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+### 2-BH. 우편함 수신분 — MA-463 (MS rankings 묶음 3 · hand-rankings·kicker·tiebreak · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 
 | # | 자리 | 처방 |
 |---|---|---|
@@ -940,7 +940,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지 라벨 유지: tiebreak L233 «kad tempat duduk pertama» 권고(OK) · hr L52·L401·L304 UNV · kicker L175 OK · TDA 2024 덤프 기준.
 
-### 2-BI. 우편함 수신분 — MA-464 (MS strategy 묶음 3 · SHC·positions·position-play·3bet · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+### 2-BI. 우편함 수신분 — MA-464 (MS strategy 묶음 3 · SHC·positions·position-play·3bet · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262 · ✅ 이행 2026-10-12 (2) `f16360a4` MB-263
 
 | # | 자리 | 처방 |
 |---|---|---|
