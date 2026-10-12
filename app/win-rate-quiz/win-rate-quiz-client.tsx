@@ -65,7 +65,7 @@ const KO_UI: QuizUI = {
   showCards: "👀 상대 패 보기",
   hideCards: "🙈 상대 패 가리기",
 
-  wonByFold: (pot) => `상대가 전부 폴드 — 팟 ${pot.toLocaleString()} 획득`,
+  wonByFold: (pot) => `상대가 전부 폴드 — 팟 ${pot.toLocaleString("en-US")} 획득`,
   splitLabel: (names) => `스플릿 — ${names.join(" · ")} 무승부`,
   winLabel: (name, cat) => `${name} 승리 · ${cat}`,
 
@@ -73,7 +73,7 @@ const KO_UI: QuizUI = {
   reviewCols: ["시점", "내 승률", "필요 승률", "판정"],
   reviewNoMistake: "✅ 끝까지 콜이 맞았던 판입니다.",
   reviewMistake: (street) => `⚠️ ${street}에서 이미 폴드가 맞았습니다. 여기서 끊었어야 합니다.`,
-  reviewInvested: (invested, pot) => `내가 넣은 돈 ${invested.toLocaleString()} · 최종 팟 ${pot.toLocaleString()}`,
+  reviewInvested: (invested, pot) => `내가 넣은 돈 ${invested.toLocaleString("en-US")} · 최종 팟 ${pot.toLocaleString("en-US")}`,
 
   formulaTitle: "📐 이 승률은 어떻게 나왔나",
   outsLabel: (n) => `완성·개선 카드 ${n}장`,
@@ -128,7 +128,7 @@ const KO_UI: QuizUI = {
   quizFoldSubmit: "폴드 → 정답 확인",
   quizResult: (guess, err, points) => `내 짐작 ${guess}% · 오차 ${err}%p · ${points}점`,
   quizChoiceResult: (ok, verdict) => (ok ? `판정 맞음(${verdict})` : `판정 틀림 — 정답은 ${verdict}`),
-  quizStats: (s) => `누적 ${s.hands}판 · 평균 오차 ${s.avgErr}%p · 판정 ${s.hits}/${s.decisions} · ${s.points.toLocaleString()}점`,
+  quizStats: (s) => `누적 ${s.hands}판 · 평균 오차 ${s.avgErr}%p · 판정 ${s.hits}/${s.decisions} · ${s.points.toLocaleString("en-US")}점`,
   quizReset: "초기화",
   quizResetConfirm: "이 브라우저에 남은 퀴즈 기록을 지울까요? 되돌릴 수 없습니다.",
   quizInvite: "로그인하면 이 기록이 계정에 남아 폰·PC 어디서나 볼 수 있어요.",
@@ -207,16 +207,16 @@ const KO_UI: QuizUI = {
         경우가 많습니다.
       </p>
       <p>
-        각자 {ANTE}씩 넣고 시작하며 스택은 {STACK.toLocaleString()}입니다. 나는 폴드하지 않고 끝까지 갑니다 —
+        각자 {ANTE}씩 넣고 시작하며 스택은 {STACK.toLocaleString("en-US")}입니다. 나는 폴드하지 않고 끝까지 갑니다 —
         그래야 리버까지 보고 복기할 수 있기 때문입니다. 승률은 시뮬레이션으로 낸 근사값이고, 표본은
-        프리플랍 <b className="text-foreground">{SAMPLES.preflop.toLocaleString()}회</b> · 플랍부터{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()}회</b>로 고정입니다(표준오차 약 0.25~0.35%p).
+        프리플랍 <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")}회</b> · 플랍부터{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")}회</b>로 고정입니다(표준오차 약 0.25~0.35%p).
         판마다 난수 시드를 고정하므로 같은 판이면 어느 기기에서든 같은 숫자가 나옵니다. 무승부는 같이 이긴 사람 수로
         나눠 셉니다(둘이 비기면 절반).
       </p>
       <p className="mt-2">
         <b className="text-foreground">상대 패를 공개하면</b> 좌석마다 «모든 패를 알 때의 승률»을 붙입니다. 이 값은 플랍부터
-        남은 카드를 전부 열거한 정확한 값이고(프리플랍만 {SAMPLES.known.toLocaleString()}회 시뮬레이션), 화면 승률과
+        남은 카드를 전부 열거한 정확한 값이고(프리플랍만 {SAMPLES.known.toLocaleString("en-US")}회 시뮬레이션), 화면 승률과
         콜·폴드 판정에는 쓰지 않습니다 — 실전에서는 볼 수 없는 정보라서요.
       </p>
       <p className="mt-2">

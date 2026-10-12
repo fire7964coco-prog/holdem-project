@@ -61,7 +61,7 @@ const EN_UI: QuizUI = {
   showCards: "👀 Peek at their cards",
   hideCards: "🙈 Hide their cards",
 
-  wonByFold: (pot) => `Everyone folded — you take the ${pot.toLocaleString()} pot`,
+  wonByFold: (pot) => `Everyone folded — you take the ${pot.toLocaleString("en-US")} pot`,
   splitLabel: (names) => `Split pot — ${names.join(" · ")} tie`,
   winLabel: (name, cat) => `${name} wins · ${cat}`,
 
@@ -69,7 +69,7 @@ const EN_UI: QuizUI = {
   reviewCols: ["Street", "Your equity", "Needed", "Verdict"],
   reviewNoMistake: "✅ Calling was right the whole way down.",
   reviewMistake: (street) => `⚠️ By the ${street.toLowerCase()}, folding was already correct. That was your spot to get out.`,
-  reviewInvested: (invested, pot) => `You put in ${invested.toLocaleString()} · final pot ${pot.toLocaleString()}`,
+  reviewInvested: (invested, pot) => `You put in ${invested.toLocaleString("en-US")} · final pot ${pot.toLocaleString("en-US")}`,
 
   formulaTitle: "📐 Where this number comes from",
   outsLabel: (n) => `${n} card${n > 1 ? "s" : ""} complete or improve your hand`,
@@ -124,7 +124,7 @@ const EN_UI: QuizUI = {
   quizFoldSubmit: "Fold → check",
   quizResult: (guess, err, points) => `Your guess ${guess}% · off by ${err}%p · ${points} pts`,
   quizChoiceResult: (ok, verdict) => (ok ? `Right call (${verdict})` : `Wrong — the answer was ${verdict}`),
-  quizStats: (s) => `${s.hands} hand${s.hands === 1 ? "" : "s"} · avg off ${s.avgErr}%p · ${s.hits}/${s.decisions} right · ${s.points.toLocaleString()} pts`,
+  quizStats: (s) => `${s.hands} hand${s.hands === 1 ? "" : "s"} · avg off ${s.avgErr}%p · ${s.hits}/${s.decisions} right · ${s.points.toLocaleString("en-US")} pts`,
   quizReset: "Reset",
   quizResetConfirm: "Clear the quiz record saved in this browser? This can't be undone.",
   quizInvite: "Log in to keep this record in your account and see it on any phone or PC.",
@@ -206,16 +206,16 @@ const EN_UI: QuizUI = {
         just short.
       </p>
       <p>
-        Everyone posts {ANTE} to start with a {STACK.toLocaleString()} stack. You never fold — that is the point,
+        Everyone posts {ANTE} to start with a {STACK.toLocaleString("en-US")} stack. You never fold — that is the point,
         so you can see the river and review. Equity is a simulated estimate with a fixed sample size:{" "}
-        <b className="text-foreground">{SAMPLES.preflop.toLocaleString()} runs</b> preflop and{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()} runs</b> from the flop on (standard error roughly 0.25–0.35%p).
+        <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} runs</b> preflop and{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} runs</b> from the flop on (standard error roughly 0.25–0.35%p).
         Each hand uses a fixed random seed, so the same hand shows the same numbers on any device. Ties are split
         by the number of players who share the pot (half each in a two-way tie).
       </p>
       <p className="mt-2">
         <b className="text-foreground">When you show their cards</b>, every seat gets its equity with all hands known. From
-        the flop on this counts every remaining card exactly (preflop alone is {SAMPLES.known.toLocaleString()} simulated runs),
+        the flop on this counts every remaining card exactly (preflop alone is {SAMPLES.known.toLocaleString("en-US")} simulated runs),
         and it never feeds the equity or the call/fold verdict on screen — you would not have that information at a
         real table.
       </p>

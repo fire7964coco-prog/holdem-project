@@ -154,8 +154,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Calcular un spot postflop concreto", "El solver de esta página", null],
   ["Saber qué manos abrir en cada posición", "La tabla de rangos de poker", "/es/hand-chart"],
   ["Contar outs y calcular al momento pot odds, SPR o ICM", "La calculadora de probabilidades", "/es/calculator"],
-  ["Ver solo el porcentaje de victoria de una mano", "La guía de equity", "/es/blog/holdem-equity"],
-  // ★2026-10-12 — 로케일 도구 페이지가 생겨(hand-chart·calculator·win-rate-quiz) 표의 링크를 도구로 옮겼다. 위 주석의 «도구 없음»은 그 전 기준 · 단일 핸드 승률 행은 계산기에 그 기능이 없어 그대로
+  ["Ver solo el porcentaje de victoria de una mano", "La calculadora de probabilidades (pestaña Equity)", "/es/calculator"],
+  // ★2026-10-12 — 로케일 도구 페이지가 생겨(hand-chart·calculator·win-rate-quiz) 표의 링크를 도구로 옮겼다. 위 주석의 «도구 없음»은 그 전 기준 · 단일 핸드 승률 행도 계산기 Equity 탭(초기 탭)으로 옮겼다(MB-292 판정 통지 · 그 전 «계산기에 기능 없음»은 오판)
   ["Practicar a estimar tu equity sin ver las cartas del rival y ver dónde tocaba foldear", "El simulador de poker", "/es/win-rate-quiz"],
 ];
 

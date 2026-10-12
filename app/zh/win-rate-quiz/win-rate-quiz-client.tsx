@@ -74,7 +74,7 @@ const ZH_UI: QuizUI = {
   showCards: "👀 偷看对手底牌",
   hideCards: "🙈 盖回对手底牌",
 
-  wonByFold: (pot) => `其他人全部弃牌——你拿下 ${pot.toLocaleString()} 的底池`,
+  wonByFold: (pot) => `其他人全部弃牌——你拿下 ${pot.toLocaleString("en-US")} 的底池`,
   splitLabel: (names) => `平分底池——${names.join(" · ")} 打平`,
   winLabel: (name, cat) => `${name} 获胜 · ${cat}`,
 
@@ -82,7 +82,7 @@ const ZH_UI: QuizUI = {
   reviewCols: ["街", "你的胜率", "所需胜率", "判定"],
   reviewNoMistake: "✅ 这一手一路跟到底都是对的。",
   reviewMistake: (street) => `⚠️ 到${street}时，弃牌就已经是正确选择了。那里就是你该撤的地方。`,
-  reviewInvested: (invested, pot) => `你投入了 ${invested.toLocaleString()} · 最终底池 ${pot.toLocaleString()}`,
+  reviewInvested: (invested, pot) => `你投入了 ${invested.toLocaleString("en-US")} · 最终底池 ${pot.toLocaleString("en-US")}`,
 
   formulaTitle: "📐 这个数字是怎么来的",
   outsLabel: (n) => `有 ${n} 张牌能让你成牌或变强`,
@@ -137,7 +137,7 @@ const ZH_UI: QuizUI = {
   quizFoldSubmit: "弃牌 → 看答案",
   quizResult: (guess, err, points) => `你估 ${guess}% · 差 ${err}%p · ${points} 分`,
   quizChoiceResult: (ok, verdict) => (ok ? `判断正确（${verdict}）` : `判断错误——正确答案是${verdict}`),
-  quizStats: (s) => `${s.hands} 手 · 平均误差 ${s.avgErr}%p · 判断 ${s.hits}/${s.decisions} 正确 · ${s.points.toLocaleString()} 分`,
+  quizStats: (s) => `${s.hands} 手 · 平均误差 ${s.avgErr}%p · 判断 ${s.hits}/${s.decisions} 正确 · ${s.points.toLocaleString("en-US")} 分`,
   quizReset: "重置",
   quizResetConfirm: "要清除保存在这个浏览器里的测验记录吗？清除后无法恢复。",
   quizInvite: "登录后，这份记录会存进你的账号，手机和电脑上都能看到。",
@@ -203,12 +203,12 @@ const ZH_UI: QuizUI = {
         <b className="text-foreground">判定只看底池赔率。</b>不计隐含赔率；对手倾向和诈唬，也只在所选风格的规则范围内反映到范围里。尤其是听牌，即使单看底池赔率略差一点，跟注也常常是对的。
       </p>
       <p>
-        每人先下 {ANTE} 的前注，起始筹码 {STACK.toLocaleString()}。你从不弃牌——这正是重点，这样你才能看到河牌并复盘。胜率是固定样本数的模拟估计值：翻牌前{" "}
-        <b className="text-foreground">{SAMPLES.preflop.toLocaleString()} 次</b>，翻牌起{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()} 次</b>（标准误差约 0.25–0.35%p）。每一手都用固定的随机种子，所以同一手牌在任何设备上显示的数字都一样。平局按分底池的人数平分（两人平局各得一半）。
+        每人先下 {ANTE} 的前注，起始筹码 {STACK.toLocaleString("en-US")}。你从不弃牌——这正是重点，这样你才能看到河牌并复盘。胜率是固定样本数的模拟估计值：翻牌前{" "}
+        <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} 次</b>，翻牌起{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} 次</b>（标准误差约 0.25–0.35%p）。每一手都用固定的随机种子，所以同一手牌在任何设备上显示的数字都一样。平局按分底池的人数平分（两人平局各得一半）。
       </p>
       <p className="mt-2">
-        <b className="text-foreground">亮出对手底牌时</b>，会显示所有手牌已知时各座位的胜率。从翻牌开始，这会把剩下的每一张牌都精确算一遍（只有翻牌前是 {SAMPLES.known.toLocaleString()} 次模拟），而且它不会进入屏幕上的胜率，也不影响跟注/弃牌判定——真实牌桌上你不会有这个信息。
+        <b className="text-foreground">亮出对手底牌时</b>，会显示所有手牌已知时各座位的胜率。从翻牌开始，这会把剩下的每一张牌都精确算一遍（只有翻牌前是 {SAMPLES.known.toLocaleString("en-US")} 次模拟），而且它不会进入屏幕上的胜率，也不影响跟注/弃牌判定——真实牌桌上你不会有这个信息。
       </p>
       <p className="mt-2">
         <b className="text-foreground">🎯 打开测验后</b>，每条街的胜率和判定都会先隐藏，直到你估出自己的胜率。有人下注的街，你还要选跟注或弃牌。答案是上面的“你的胜率”（看不到对手底牌时的数字），每次估计得分为{" "}

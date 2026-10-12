@@ -74,7 +74,7 @@ const JA_UI: QuizUI = {
   showCards: "👀 相手のカードを見る",
   hideCards: "🙈 相手のカードを隠す",
 
-  wonByFold: (pot) => `全員フォールド — ${pot.toLocaleString()}のポットを獲得`,
+  wonByFold: (pot) => `全員フォールド — ${pot.toLocaleString("en-US")}のポットを獲得`,
   splitLabel: (names) => `スプリット — ${names.join("・")}が引き分け`,
   winLabel: (name, cat) => `${name}の勝ち · ${cat}`,
 
@@ -82,7 +82,7 @@ const JA_UI: QuizUI = {
   reviewCols: ["ストリート", "あなたの勝率", "必要勝率", "判定"],
   reviewNoMistake: "✅ 最後までコールで正解でした。",
   reviewMistake: (street) => `⚠️ ${street}の時点で、すでにフォールドが正解でした。ここが降りどきでした。`,
-  reviewInvested: (invested, pot) => `投入額 ${invested.toLocaleString()} · 最終ポット ${pot.toLocaleString()}`,
+  reviewInvested: (invested, pot) => `投入額 ${invested.toLocaleString("en-US")} · 最終ポット ${pot.toLocaleString("en-US")}`,
 
   formulaTitle: "📐 この数字の出どころ",
   outsLabel: (n) => `役が完成・改善するカード ${n}枚`,
@@ -137,7 +137,7 @@ const JA_UI: QuizUI = {
   quizFoldSubmit: "フォールド → 判定",
   quizResult: (guess, err, points) => `予想 ${guess}% · 誤差 ${err}%p · ${points}点`,
   quizChoiceResult: (ok, verdict) => (ok ? `正解(${verdict})` : `不正解 — 正解は${verdict}`),
-  quizStats: (s) => `${s.hands}ハンド · 平均誤差 ${s.avgErr}%p · 判断 ${s.hits}/${s.decisions}正解 · ${s.points.toLocaleString()}点`,
+  quizStats: (s) => `${s.hands}ハンド · 平均誤差 ${s.avgErr}%p · 判断 ${s.hits}/${s.decisions}正解 · ${s.points.toLocaleString("en-US")}点`,
   quizReset: "リセット",
   quizResetConfirm: "このブラウザに保存されたクイズの記録を消去しますか？元に戻せません。",
   quizInvite: "ログインすると記録がアカウントに保存され、スマホでもPCでも見られます。",
@@ -206,12 +206,12 @@ const JA_UI: QuizUI = {
         <b className="text-foreground">判定は純粋にポットオッズだけで決めています。</b>インプライドオッズは含まず、相手の傾向やブラフは、選んだタイプのルールの範囲でしかレンジに反映されません。特にドローは、ポットオッズだけではわずかに足りなくてもコールが正当化されることがよくあります。
       </p>
       <p>
-        全員がアンティ{ANTE}を払い、スタック{STACK.toLocaleString()}から始めます。あなたはフォールドしません — リバーまで見て振り返るための仕様です。勝率はサンプル数を固定したシミュレーションによる推定値で、プリフロップは{" "}
-        <b className="text-foreground">{SAMPLES.preflop.toLocaleString()}回</b>、フロップ以降は{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString()}回</b>です(標準誤差はおよそ0.25〜0.35%p)。ハンドごとに乱数のシードを固定しているので、同じハンドならどの端末でも同じ数字が出ます。引き分けはポットを分け合う人数で割ります(2人の引き分けなら半分ずつ)。
+        全員がアンティ{ANTE}を払い、スタック{STACK.toLocaleString("en-US")}から始めます。あなたはフォールドしません — リバーまで見て振り返るための仕様です。勝率はサンプル数を固定したシミュレーションによる推定値で、プリフロップは{" "}
+        <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")}回</b>、フロップ以降は{" "}
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")}回</b>です(標準誤差はおよそ0.25〜0.35%p)。ハンドごとに乱数のシードを固定しているので、同じハンドならどの端末でも同じ数字が出ます。引き分けはポットを分け合う人数で割ります(2人の引き分けなら半分ずつ)。
       </p>
       <p className="mt-2">
-        <b className="text-foreground">相手のカードを見ると</b>、全員のハンドが分かった状態での各席の勝率が表示されます。フロップ以降は残りのカードをすべて数えて正確に計算し(プリフロップだけは{SAMPLES.known.toLocaleString()}回のシミュレーション)、画面の勝率やコール/フォールドの判定には一切使いません — 実際のテーブルでは知り得ない情報だからです。
+        <b className="text-foreground">相手のカードを見ると</b>、全員のハンドが分かった状態での各席の勝率が表示されます。フロップ以降は残りのカードをすべて数えて正確に計算し(プリフロップだけは{SAMPLES.known.toLocaleString("en-US")}回のシミュレーション)、画面の勝率やコール/フォールドの判定には一切使いません — 実際のテーブルでは知り得ない情報だからです。
       </p>
       <p className="mt-2">
         <b className="text-foreground">🎯 クイズをオンにすると</b>、各ストリートで自分の勝率を予想するまで勝率と判定が隠れます。誰かがベットしたストリートでは、コールかフォールドも選びます。正解は上の「あなたの勝率」(相手のカードが見えない前提の数字)で、予想ごとの得点は<b className="text-foreground">100 − 4 × 誤差(%p)</b>
