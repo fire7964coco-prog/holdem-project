@@ -901,6 +901,57 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🔴 ms `masterUpdated` 그대로(앵커 이식만 · settled §1-C) · odds 남은 3편·strategy도 같은 미전파 가능 — 레인 묶음 2 차이표 오면 같이.
 - 이행 MB 오면 검수장이 ms 4편 원장 재판정.
 
+### 2-BE. 우편함 수신분 — MA-456 (equity 카드 «Stack depth & skill» · 사용자 결재 10-11 · EN-먼저) · 등재·회신 2026-10-12 (1) MB-262
+
+> 위치 대조 main `30f15d46`. 1차 Upswing «the higher the SPR, the more equity the player in-position will realize. The opposite is true for the OOP player» = 스택 깊이 효과는 포지션 조건부. 문안은 본체(같은 글 «Out of position or hard to play? Discount it» 틀).
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BE-1 EN-먼저 (ms RISKY 확정 · EN #59 UNV) | EN `holdem-equity` L130 카드 «Deeper stacks and tougher opponents make marginal equity harder to realize» + 같은 행 10로케일(de·es·fr·id·ja·ms·pt·vi·zh·zh-hant — **pt는 MA 목록 밖이지만 같은 행 실재**) | OOP 한정: 깊은 스택은 OOP의 실현을 깎고 IP는 오히려 더 실현 · 강한 상대는 마진 핸드 실현을 깎는다 |
+
+### 2-BF. 우편함 수신분 — MA-457 (MS glossary 묶음 2 · glossary·cooler·fish · 기준 `d19f9be7`) · 등재·회신 2026-10-12 (1) MB-262
+
+> ms 고유 결함 0. 요청 1 = EN-먼저 3자리(사용자 결재 10-11 · 새 문안 아님 = 같은 글 안 정정 축).
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BF-1 EN-먼저 ⓐ | cooler title EN L5 «… — and Why It's Not a Bad Beat» · ms L5 «Kekalahan Tak Terelak yang Bukan Bad Beat» + 형제 title 동형 | «… and Why, Strictly, It's Not a Bad Beat»(desc Z-31 1어) · ms «secara ketat» · 🔴 seoTitle 불변 |
+| BF-2 EN-먼저 ⓑ | cooler 비교표 EN L63 «You were right to get it in» · ms L66 «Anda betul memasukkan cip» + 형제 | Z-33 축(«whether your play held up») — 결과 종류 ≠ 플레이 정당성 · 이행 때 es #14 · id #21 · vi #90 재판정 |
+| BF-3 EN-먼저 ⓒ | fish EN L156 «The single most expensive fish habit …» · ms L157 «Tabiat fish yang paling mahal …» + 형제 | «One of the most expensive fish habits …»(MB-193 L124 틀) · 재판정 id·de·fr·ja·pt·vi·es |
+
+- 🪶 통지 라벨 유지: glossary heads-up 정의(WSOP 핸드 단위 뜻 미열거) · fish calling station «never bluff» · 레인 언어 3종(«sentiasa/selalu kalah» · FAQ1 «pasangan istilah» · «lima jenis pemain» vs 표 10종) = 요청 아님.
+
+### 2-BG. 우편함 수신분 — MA-460 (MB-258·259·261 재판정 · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+
+> 이행 OK · 새 WRONG 0 · ms 고유 RISKY 2(MA-449 ⓑ 부분 이행).
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BG-1 ms | `holdem-all-in-rules` L144 «Jadual ini untuk no-limit dan pot-limit. Dalam permainan limit, …»(첫 표 아래 · 그 표는 머리에 이미 NL/PL) → 가이드표 L176 «Panduan Keputusan Pantas»에 한정 없음 | 그 문장을 가이드표 제목 아래로 이동(EN L176 동형) |
+
+- 🪶 통지(로케일 레인 때 · 자동 착수 금지): ① 형제 13로케일(bn·fa·fil·he·hi·it·pl·ro·ru·sw·th·tr·uk) all-in = EN `6164c748` 델타 미전파 확인 ② 같은 13로케일 betting Check 표·FAQ 스트래들 한정 없음 · bn·fil·hi·sw·th 본문 90.d ↔ FAQ 스트링 벳 자기모순 · fa·he 옛 설명 ③ «Rule 90.d» 무접두 잔존(EN 포함 · EN-먼저 후보 · 요청 아님) ④ th 가이드표 표현 축 OK.
+
+### 2-BH. 우편함 수신분 — MA-463 (MS rankings 묶음 3 · hand-rankings·kicker·tiebreak · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BH-1 ms (`6164c748` 미전파) | kicker L119 «inilah satu-satunya situasi di mana hole card … bernilai kosong sama sekali» + 같은 줄 «muck kad itu dan anda tidak mendapat apa-apa» | EN L118 «a spot where even a strong-looking hole card is worth exactly nothing» · «normally get nothing» 이식 |
+| BH-2 ms (문면 드리프트) | hand-rankings L30 «dengan tujuh kad, dua kekerapan bertukar tempat» — 7장 high card 17.4%는 pair 43.8%보다도 드묾(L43–45) | EN L29 «a couple of frequencies cross» 꼴 |
+
+- 🪶 통지 라벨 유지: tiebreak L233 «kad tempat duduk pertama» 권고(OK) · hr L52·L401·L304 UNV · kicker L175 OK · TDA 2024 덤프 기준.
+
+### 2-BI. 우편함 수신분 — MA-464 (MS strategy 묶음 3 · SHC·positions·position-play·3bet · 기준 `30f15d46`) · 등재·회신 2026-10-12 (1) MB-262
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BI-1 ms (EN 현행 이식) | SHC tldr «13% di UTG hingga 43% di button» · FAQ «hanya bagus dari posisi lewat» · L180 «Secara teori ia tidak boleh dieksploitasi» / positions tldr·직답 SB 선행(헤즈업 괄호) · L130 «setiap carta range» · L64 버튼 이동 / position-play FAQ L254 «(dan small blind juga OOP …)» · FAQ L270·L274 SB 선행 / 3bet FAQ L273 «Jangan 3-bet kecil OOP» · FAQ L281 «menjadikannya menguntungkan» + 캡션 L157 | EN 문면: «(wider again in 6-max)» · «play best from late position» · «as close to unexploitable as possible» · «heads-up» 괄호 · «most» · «normally moves» · «— except heads-up» · «at a table of three or more» · «At normal stack depths» · «raises the reward» |
+| BI-2 🔴 EN-먼저 | position-play tldr L8 · 직답 L37 · L99 «UTG ~13% … button ~43%» 테이블 크기 한정 없음(같은 글 L238·L281 «full ring») | «full ring» 한정 · EN + ms + 형제 |
+| BI-3 🔴 EN-먼저 | ⓐ SHC L161 «~13% … ~43% … how wide you *open an unopened pot*» ↔ L105 «a solid regular's UTG open … not the width this page asks of a beginner» 자기충돌 ⓑ 3bet FAQ L286 «A5s carries roughly 30% equity against your continuing range» — 30%는 L85 QQ+/AK 전제값 · FAQ 전제(계속 ≈ 오픈의 45%)에선 33~40% | ⓐ 레귤러 기준임을 맞춘다 ⓑ 전제 명시 또는 «roughly a third or more» 꼴 · EN + ms + 형제 |
+
+- 🪶 통지(라벨 OK/UNV · 같은 회차 이식 권장): SHC L139 «as opening hands,» · L218 PDF «9-max penuh» → «by position» · SHC L277·L281 · pp L70·L71 · 3bet L179·L245 `6164c748` 문면 · 3bet L293 «membalas jam tulen» 지시대상 모호(EN 동형 UNV) · pp L225 OK.
+- 🔴 ms `masterUpdated` 그대로(이식만 · settled §1-C) · EN-먼저(BE·BF·BI-2·BI-3)는 EN `updated` 갱신 → 형제는 EN 문면 확정 뒤.
+- 이행 순서 = ms 고유(BG·BH·BI-1) → EN-먼저 EN+ms(BE·BF·BI-2·3) → 형제 로케일. 이행 MB에서 재판정 요청.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
