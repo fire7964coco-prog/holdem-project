@@ -1,3 +1,9 @@
+## 2026-10-12 (20) — MA-491 회신+등재 §2-BP · queue §2-BO 이행 BO-1~4 · 배포 `fc56b593` · MB-284
+
+- 사장님 «MA-491 회신·등재와 §2-BO 이행 진행해». MA-491 위치 대조 main `e581de2f` 전부 실재 → queue **§2-BP**(BP-1 `hasDraw` 리버·보드 전용 WRONG · BP-2~4 ruleText RISKY 4) · 미이행.
+- BO-1 `changeSize` 빈 판이면 `custom=null` · BO-2 스트레이트 분기 `bestCategory` 상승 확인(tsx 실측 A♥5♥/2♥3♥9♥ straight 4 → 1 · 4♥ SF) · BO-3 = 문구 쪽 판단(코드로 AK/9922만 세도 A9/955 같은 등급 안 상승이 남는다) → noDrawNote 6언어 «족보가 한 단계 올라갈» · BO-4 `/solver` 15언어 45자리(exact-1 치환 스크립트 · 라벨 = 솔버 `custom-trainer-labels.ts` tab 축어 · fr «»는 NBSP).
+- 네이티브 렌즈 1(서브에이전트) 51문장 WRONG 0 · 반영 2(es 쉼표 · de Handkategorie). build exit 0.
+
 ## 2026-10-12 (19) — MA-488·489 회신+등재 §2-BO MB-282 · 회차 C ⑤ 승률 시뮬레이터 언어 확대 ja·zh·es·de · 배포 `7f9dcb59` · MB-283
 
 - 사장님 «MA-488·489 회신+등재부터, 그다음 회차 C ⑤». 위치 대조 main `a92fe8aa` 전부 실재 → queue **§2-BO**(BO-1 배지 경계 · BO-2 이미 플러시 위 스트레이트 아웃츠 · BO-3 보드 투페어 오버 6장 · BO-4 `/solver` RNG «내 스팟 연습 제외» 15언어 45자리) · 회신 MB-282 `80f06b78`. 미이행.
