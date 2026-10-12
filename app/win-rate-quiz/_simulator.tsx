@@ -16,8 +16,8 @@ import {
 } from "./_table";
 import type { NCard } from "./_ranges";
 import {
-  runHand, heroOuts, ruleOf24, SAMPLES,
-  type HandResult, type StreetRecord, type Action, type EquitySplit,
+  runHand, heroOuts, ruleOf24, SAMPLES, OPP_STYLES,
+  type HandResult, type StreetRecord, type Action, type EquitySplit, type OppStyle,
 } from "./_engine";
 import type { HandMessage, HandRequest } from "./_engine.worker";
 import { KitCardFace, KitCardBack, KitCardSlot, KitDealer, KitChip } from "./_kit";
@@ -90,6 +90,8 @@ interface QuizAnswer {
 const quizPoints = (err: number) => Math.max(0, Math.round(100 - 4 * err));
 /** 퀴즈 모드 켜짐 기억(보는 사람 브라우저에만 · 실패해도 기본값 꺼짐) */
 const QUIZ_KEY = "wrq-quiz-mode";
+/** 상대 성향 기억(S-034 2차 ②) — 같은 방식 · 실패하면 기본 */
+const STYLE_KEY = "wrq-opp-style";
 
 export interface QuizUI {
   names: HandNames;
@@ -108,6 +110,9 @@ export interface QuizUI {
   playersLabel: string;
   /** 테이블 크기 버튼 — 6 · 9 (S-034 ②) */
   tableBtn: (size: number) => string;
+  /** 상대 성향 고르기 (S-034 2차 ②) — 접근성 이름 + 성향 이름 */
+  styleLabel: string;
+  styleNames: Record<OppStyle, string>;
   loading: string;
   /** 승률 카드 */
   myEquity: string;
@@ -227,7 +232,8 @@ export interface QuizUI {
   resultTabs: readonly [string, string, string];
   /** 규칙·단서 */
   ruleTitle: string;
-  ruleText: ReactNode;
+  /** 고른 성향의 규칙을 그 자리에 적는다 */
+  ruleText: (style: OppStyle) => ReactNode;
   footer: ReactNode;
 }
 
@@ -581,6 +587,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [preflopCount, setPreflopCount] = useState(3);
   /** 6인 · 9인 테이블 (S-034 ② · 2026-10-11) — 프리플랍 인원 2~6명은 두 테이블 모두 같다 */
   const [tableSize, setTableSize] = useState<TableSize>(6);
+  /** 상대 성향 (S-034 2차 ②) — 테이블 전원 같은 성향 · 바꾸면 새 판 */
+  const [style, setStyle] = useState<OppStyle>("standard");
   /** 새 판을 돌리는 트리거 — `sim`을 의존성으로 쓰면 계산이 스스로 취소된다(아래 effect 주석) */
   const [handId, setHandId] = useState(0);
   const [sim, setSim] = useState<TableSim | null>(null);
@@ -671,6 +679,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   // 켜짐 기억은 effect에서 읽는다 — 첫 렌더에서 읽으면 서버 렌더(꺼짐)와 갈려 하이드레이션이 깨진다
   useEffect(() => {
     try { if (localStorage.getItem(QUIZ_KEY) === "1") setQuiz(true); } catch { /* 저장소 막힘 = 꺼짐 */ }
+    try {
+      const s = localStorage.getItem(STYLE_KEY) as OppStyle | null;
+      if (s && OPP_STYLES.includes(s)) setStyle(s);
+    } catch { /* 저장소 막힘 = 기본 */ }
   }, []);
   const toggleQuiz = useCallback(() => {
     setQuiz((q) => {
@@ -700,7 +712,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       setSim(s);
       const req: HandRequest = {
         id: handId, heroHand: s.hands[0], oppHands: s.hands.slice(1), oppSlots: s.activeSlots.slice(1),
-        board: s.board, oppRanges: s.oppRanges, seed: s.seed,
+        board: s.board, oppRanges: s.oppRanges, seed: s.seed, style,
       };
       try {
         worker = new Worker(new URL("./_engine.worker.ts", import.meta.url));
@@ -716,12 +728,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         };
         worker.postMessage(req);
       } else {
-        const r = runHand(req.heroHand, req.oppHands, req.oppSlots, req.board, req.oppRanges, req.seed);
+        const r = runHand(req.heroHand, req.oppHands, req.oppSlots, req.board, req.oppRanges, req.seed, undefined, req.style);
         if (!cancelled) { setStreets(r.streets); setResult(r); }
       }
     }, 30);
     return () => { cancelled = true; clearTimeout(t); worker?.terminate(); };
-  }, [handId, preflopCount, tableSize, custom]);
+  }, [handId, preflopCount, tableSize, custom, style]);
 
   const newHand = useCallback(() => {
     closeHand();
@@ -734,6 +746,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setPreflopCount(n);
+  }, [closeHand]);
+  const changeStyle = useCallback((s: OppStyle) => {
+    closeHand();
+    setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
+    setAnswers({}); setGuess(50);
+    try { localStorage.setItem(STYLE_KEY, s); } catch { /* 기억만 못 할 뿐 */ }
+    setStyle(s);
   }, [closeHand]);
   const changeSize = useCallback((n: TableSize) => {
     closeHand();
@@ -949,7 +968,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
         {([6, 9] as TableSize[]).map((n) => (
           <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n}
-            className="px-2 sm:px-3 py-1 rounded-full text-[13px] sm:text-sm font-bold transition-all whitespace-nowrap"
+            className="px-1.5 sm:px-3 py-1 rounded-full text-[13px] sm:text-sm font-bold transition-all whitespace-nowrap"
             style={segBtn(tableSize === n)}>
             {ui.tableBtn(n)}
           </button>
@@ -961,24 +980,35 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         {[2, 3, 4, 5, 6].map((n) => (
           <button key={n} onClick={() => changeCount(n)} aria-pressed={preflopCount === n}
             aria-label={ui.playersBtn(n)} title={ui.playersBtn(n)}
-            className="min-w-[26px] sm:min-w-[30px] px-1.5 py-1 rounded-full text-[13px] sm:text-sm font-bold tabular-nums transition-all"
+            className="min-w-[22px] sm:min-w-[30px] px-1 sm:px-1.5 py-1 rounded-full text-[13px] sm:text-sm font-bold tabular-nums transition-all"
             style={segBtn(preflopCount === n)}>
             {n}
           </button>
         ))}
       </div>
-      <span className="w-px h-5 bg-border sm:mx-0.5" aria-hidden />
-      <button onClick={toggleQuiz} aria-pressed={quiz}
-        className="px-2.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+      {/* 상대 성향 — 네이티브 select(폰에서 OS 선택창) · 기본이 아니면 금색 테두리 */}
+      <select value={style} onChange={(e) => changeStyle(e.target.value as OppStyle)}
+        aria-label={ui.styleLabel} title={ui.styleLabel}
+        className="max-w-[68px] sm:max-w-none py-1.5 pl-1.5 pr-0 sm:pl-2 sm:pr-1 rounded-full text-[12px] sm:text-sm font-bold border-2 bg-transparent cursor-pointer"
+        style={style === "standard"
+          ? { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }
+          : { borderColor: GOLD, color: GOLD }}>
+        {OPP_STYLES.map((s) => <option key={s} value={s}>{ui.styleNames[s]}</option>)}
+      </select>
+      <span className="hidden sm:block w-px h-5 bg-border sm:mx-0.5" aria-hidden />
+      {/* 폰(390)에서는 성향 select가 들어오며 자리가 모자라 퀴즈도 아이콘만 · 이름은 aria-label·title로 */}
+      <button onClick={toggleQuiz} aria-pressed={quiz} aria-label={ui.quizToggle} title={ui.quizToggle}
+        className="px-1.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={quiz
           ? { borderColor: GOLD, background: GOLD, color: "var(--wrq-accent-ink)" }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
-        {ui.quizToggle}
+        <span className="sm:hidden" aria-hidden>🎯</span>
+        <span className="hidden sm:inline">{ui.quizToggle}</span>
       </button>
       {/* 폰(390)에서는 이 줄에 글자까지 넣으면 22~42px 넘친다 → 아이콘만 · 이름은 aria-label·title로 */}
       <button onClick={openEditor} aria-pressed={editing || !!custom} aria-expanded={editing}
         aria-label={ui.customToggle} title={ui.customToggle}
-        className="px-2 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-1.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={editing || custom
           ? { borderColor: GOLD, background: editing ? GOLD : "transparent", color: editing ? "var(--wrq-accent-ink)" : GOLD }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -1514,7 +1544,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {showRule && (
         <div className="rounded-xl p-3.5 text-[11px] leading-relaxed text-muted-foreground"
           style={{ background: "hsl(var(--muted))" }}>
-          {ui.ruleText}
+          {ui.ruleText(style)}
         </div>
       )}
 

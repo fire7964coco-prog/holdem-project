@@ -23,6 +23,8 @@ const EN_UI: QuizUI = {
   playersBtn: (n) => `${n} players`,
   playersLabel: "Players",
   tableBtn: (n) => `${n}-max`,
+  styleLabel: "Opponent style",
+  styleNames: { standard: "Normal", tight: "Tight", loose: "Loose", aggressive: "Aggro" },
   loading: "Shuffling and running the numbers…",
 
   myEquity: "Your equity",
@@ -122,27 +124,43 @@ const EN_UI: QuizUI = {
   customEdit: "Edit",
 
   ruleTitle: "What this simulator assumes",
-  ruleText: (
+  ruleText: (style) => (
     <>
       <p className="mb-2">
         <b className="text-foreground">Opponents follow the rules below and nothing else.</b> Real players never
         play this way — position, opponent, stack depth and table image change everything. Treat it like
         &ldquo;assume no friction&rdquo; in a physics problem.
       </p>
+      <p className="mb-1">
+        Opponent style now: <b className="text-foreground">{EN_UI.styleNames[style]}</b> (the whole table plays the same style · change it in the picker above)
+      </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Two pair or better → <b className="text-foreground">pot-sized raise</b></li>
-        <li>One pair, or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>
+        <li>Two pair or better → <b className="text-foreground">{style === "aggressive" ? "raise of 150% pot (overbet)" : "pot-sized raise"}</b></li>
+        {style === "standard" && <li>One pair, or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>}
+        {style === "tight" && <>
+          <li>Top pair or better made with a hole card (overpairs included), or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>
+          <li>Any weaker pair (including a pair that is only on the board) → <b className="text-foreground">fold</b></li>
+        </>}
+        {style === "loose" && <li>One pair, a flush/straight draw, or a hole card higher than every board card (an overcard) → <b className="text-foreground">half-pot bet</b></li>}
+        {style === "aggressive" && <>
+          <li>Flush/straight draw → <b className="text-foreground">raise (semi-bluff)</b></li>
+          <li>One pair → <b className="text-foreground">half-pot bet</b></li>
+          <li>No pair and no draw, but an overcard → <b className="text-foreground">raise (bluff)</b></li>
+        </>}
         <li>Anything else → <b className="text-foreground">fold</b> (mucked, just like live play)</li>
       </ul>
       <p className="mb-2">
-        When anyone raises, every player still in — one-pair hands and draws included — calls that pot-sized
-        amount, and a bet bigger than the remaining stack is capped at an all-in.
+        {style === "aggressive" && "Every Aggro raise, semi-bluffs and bluffs included, is 150% of the pot. "}
+        When anyone raises, every player still in calls that raise amount, and a bet bigger than the remaining
+        stack is capped at an all-in. There are no check-raises — you never bet here, you just call to the river.
+        Preflop ranges (below) are the same whatever the style.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Your equity is calculated as if you cannot see their cards.</b> From the
-        flop on, each opponent&rsquo;s range is the hands in their seat-based preflop range (below) that match the actions you saw —
-        after a raise, only two pair or better remains. The players who fold on screen also drop out of the
-        math.
+        flop on, each opponent&rsquo;s range is the hands in their seat-based preflop range (below) that would have made
+        the actions you saw under the chosen style&rsquo;s rules — against Normal opponents, a raise leaves only two pair
+        or better; against Aggro opponents, draws and overcard bluffs stay in too. The players who fold on screen
+        also drop out of the math.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Opponents&rsquo; preflop hands come from seat-based ranges.</b> Of the
@@ -156,8 +174,8 @@ const EN_UI: QuizUI = {
         you play any two cards to the river. A 3-bet does not change the pot size here (simplified).
       </p>
       <p className="mb-2">
-        <b className="text-foreground">The verdict is pure pot odds.</b> Implied odds, opponent tendencies and
-        bluffing are not in it. Draws in particular often justify a call even when the raw pot odds come up
+        <b className="text-foreground">The verdict is pure pot odds.</b> Implied odds are not in it, and
+        opponent tendencies and bluffs only enter the ranges as far as the chosen style&rsquo;s rules go. Draws in particular often justify a call even when the raw pot odds come up
         just short.
       </p>
       <p>

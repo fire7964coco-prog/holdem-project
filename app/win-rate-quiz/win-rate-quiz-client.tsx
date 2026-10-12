@@ -27,6 +27,8 @@ const KO_UI: QuizUI = {
   playersBtn: (n) => `${n}명`,
   playersLabel: "인원",
   tableBtn: (n) => `${n}인`,
+  styleLabel: "상대 성향",
+  styleNames: { standard: "기본", tight: "타이트", loose: "루즈", aggressive: "공격적" },
   loading: "카드 섞고 승률 계산 중…",
 
   myEquity: "내 승률",
@@ -126,27 +128,42 @@ const KO_UI: QuizUI = {
   customEdit: "고치기",
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
-  ruleText: (
+  ruleText: (style) => (
     <>
       <p className="mb-2">
         <b className="text-foreground">상대는 아래 규칙대로만 움직입니다.</b> 실제 플레이어는 절대 이렇게 두지
         않습니다 — 포지션·상대·스택·이미지에 따라 전혀 다르게 칩니다. 물리 문제의 &ldquo;마찰이 없다고
         가정하면&rdquo;과 같은 단순화라고 보시면 됩니다.
       </p>
+      <p className="mb-1">
+        지금 고른 상대 성향: <b className="text-foreground">{KO_UI.styleNames[style]}</b> (테이블 전원 같은 성향 · 위 선택칸에서 바꿉니다)
+      </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>투페어 이상 → <b className="text-foreground">팟 사이즈 레이즈</b></li>
-        <li>원페어 또는 플러시·스트레이트 드로우 → <b className="text-foreground">하프팟 베팅</b></li>
+        <li>투페어 이상 → <b className="text-foreground">{style === "aggressive" ? "팟의 150% 레이즈(오버벳)" : "팟 사이즈 레이즈"}</b></li>
+        {style === "standard" && <li>원페어 또는 플러시·스트레이트 드로우 → <b className="text-foreground">하프팟 베팅</b></li>}
+        {style === "tight" && <>
+          <li>홀카드로 만든 탑페어 이상의 원페어(오버페어 포함) 또는 플러시·스트레이트 드로우 → <b className="text-foreground">하프팟 베팅</b></li>
+          <li>그보다 약한 원페어(보드에만 있는 페어 포함) → <b className="text-foreground">폴드</b></li>
+        </>}
+        {style === "loose" && <li>원페어 · 플러시·스트레이트 드로우 · 보드 최고 카드보다 높은 홀카드(오버카드) → <b className="text-foreground">하프팟 베팅</b></li>}
+        {style === "aggressive" && <>
+          <li>플러시·스트레이트 드로우 → <b className="text-foreground">레이즈(세미블러프)</b></li>
+          <li>원페어 → <b className="text-foreground">하프팟 베팅</b></li>
+          <li>페어도 드로우도 없지만 오버카드가 있으면 → <b className="text-foreground">레이즈(블러프)</b></li>
+        </>}
         <li>그 외 → <b className="text-foreground">폴드</b> (실전처럼 패는 안 보여줍니다)</li>
       </ul>
       <p className="mb-2">
-        누군가 레이즈한 스트리트에서는 남은 상대 전원이(원페어·드로우도) 그 팟 사이즈 금액을 그대로 콜하고,
-        베팅이 남은 스택보다 크면 올인으로 잘립니다.
+        {style === "aggressive" && "공격적 성향의 레이즈는 세미블러프·블러프를 포함해 모두 팟의 150%입니다. "}
+        누군가 레이즈한 스트리트에서는 남은 상대 전원이 그 레이즈 금액을 그대로 콜하고,
+        베팅이 남은 스택보다 크면 올인으로 잘립니다. 체크레이즈는 없습니다 — 나는 베팅하지 않고 끝까지 콜만 하기 때문입니다.
+        프리플랍 레인지(아래)는 성향과 상관없이 같습니다.
       </p>
       <p className="mb-2">
         <b className="text-foreground">내 승률은 상대 패를 모른다는 전제로 계산합니다.</b> 플랍부터는
-        그 상대의 프리플랍 자리별 레인지(아래) 중 보여준 액션(레이즈·콜)과 맞는 패만 남깁니다 — 레이즈를 봤다면
-        투페어 이상만 남는 식입니다. 화면에서 폴드한 사람이 계산에서도
-        빠지므로 보이는 것과 근거가 어긋나지 않습니다.
+        그 상대의 프리플랍 자리별 레인지(아래) 중 고른 성향의 규칙으로 보여준 액션(레이즈·콜)과 맞는 패만 남깁니다 —
+        기본 성향에서 레이즈를 봤다면 투페어 이상만 남고, 공격적 성향이면 드로우와 오버카드 블러프도 함께 남는 식입니다.
+        화면에서 폴드한 사람이 계산에서도 빠지므로 보이는 것과 근거가 어긋나지 않습니다.
       </p>
       <p className="mb-2">
         <b className="text-foreground">상대의 프리플랍 패는 자리별 레인지에서 나옵니다.</b> 팟에 남은 사람 중
@@ -158,8 +175,8 @@ const KO_UI: QuizUI = {
         끝까지 가 보는 도구라서요. 3벳을 해도 팟 크기는 같게 단순화했습니다.
       </p>
       <p className="mb-2">
-        <b className="text-foreground">판정은 팟오즈만 놓고 본 것입니다.</b> 임플라이드 오즈·상대의 성향·
-        블러프 가능성은 계산에 없습니다. 특히 드로우는 팟오즈로 아슬아슬하게 모자라도 실전에서는 콜이 되는
+        <b className="text-foreground">판정은 팟오즈만 놓고 본 것입니다.</b> 임플라이드 오즈는 계산에 없고,
+        상대 성향과 블러프는 고른 성향의 규칙만큼만 레인지에 들어갑니다. 특히 드로우는 팟오즈로 아슬아슬하게 모자라도 실전에서는 콜이 되는
         경우가 많습니다.
       </p>
       <p>

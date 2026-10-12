@@ -59,23 +59,64 @@ function hasDraw(cs: NCard[]): boolean {
 export type Action = "fold" | "call" | "raise";
 
 /**
+ * 상대 성향 (S-034 2차 ② · 2026-10-12). 판마다 테이블 전원에게 같은 성향을 준다.
+ * ★성향마다 규칙이 다를 뿐 **여전히 «홀카드 + 보드 → 액션» 확정 규칙**이다 — 그래야 아래
+ *   eligibleHoles가 그 규칙으로 레인지를 좁혀 «보이는 액션 = 계산 근거»가 유지된다.
+ *   (무작위 블러프를 넣으면 레인지가 확률 가중이 돼야 하고 화면에 규칙을 한 줄로 못 적는다.)
+ * ★체크레이즈는 없다 — 이 시뮬레이터에서 나는 베팅하지 않고 끝까지 콜만 하므로 성립하지 않는다.
+ */
+export type OppStyle = "standard" | "tight" | "loose" | "aggressive";
+export const OPP_STYLES: readonly OppStyle[] = ["standard", "tight", "loose", "aggressive"];
+
+/** 성향별 벳 크기(팟 대비). raise = 가장 센 액션이 레이즈일 때 · call = 하프팟 베팅 */
+export const STYLE_SIZE: Record<OppStyle, { raise: number; call: number }> = {
+  standard: { raise: 1, call: 0.5 },
+  tight: { raise: 1, call: 0.5 },
+  loose: { raise: 1, call: 0.5 },
+  aggressive: { raise: 1.5, call: 0.5 }, // 오버벳
+};
+
+/** 홀카드가 들어간 탑페어 이상(오버페어 포함) — 타이트가 남기는 원페어 */
+function topPairPlus(hole: NCard[], board: NCard[]): boolean {
+  const top = Math.max(...board.map((c) => c[0]));
+  if (hole[0][0] === hole[1][0]) return hole[0][0] >= top;
+  return hole[0][0] === top || hole[1][0] === top;
+}
+
+/** 보드 최고 카드보다 높은 홀카드가 있다 */
+function hasOvercard(hole: NCard[], board: NCard[]): boolean {
+  const top = Math.max(...board.map((c) => c[0]));
+  return hole[0][0] > top || hole[1][0] > top;
+}
+
+/**
  * 상대의 액션 규칙. **이건 시뮬레이터의 가정이지 권장 플레이가 아니다.**
  * 실제 플레이어는 포지션·상대·스택·이미지에 따라 전혀 다르게 움직인다.
+ *
+ * 투페어 이상은 성향과 상관없이 레이즈. 그 아래가 성향마다 다르다(화면 규칙 설명 = ko·en ruleText):
+ *  - 기본: 원페어·드로우 → 하프팟 · 나머지 폴드
+ *  - 타이트: 탑페어 이상 원페어·드로우 → 하프팟 · 약한 원페어(보드에만 있는 페어 포함)·나머지 폴드
+ *  - 루즈: 원페어·드로우·오버카드 → 하프팟 · 나머지 폴드
+ *  - 공격적: 드로우 → 레이즈(세미블러프) · 원페어 → 하프팟 · 페어·드로우 없이 오버카드 → 레이즈(블러프) · 나머지 폴드
  */
-export function opponentAction(hole: NCard[], board: NCard[]): Action {
+export function opponentAction(hole: NCard[], board: NCard[], style: OppStyle = "standard"): Action {
   const cs = [...hole, ...board];
   const cat = bestCategory(cs);
   if (cat >= 2) return "raise"; // 투페어 이상
-  if (cat === 1) return "call"; // 원페어
-  if (hasDraw(cs)) return "call"; // 플러시·스트레이트 드로우
-  return "fold";
+  const draw = hasDraw(cs); // 플러시·스트레이트 드로우
+  switch (style) {
+    case "tight":
+      return (cat === 1 && topPairPlus(hole, board)) || draw ? "call" : "fold";
+    case "loose":
+      return cat === 1 || draw || hasOvercard(hole, board) ? "call" : "fold";
+    case "aggressive":
+      if (draw) return "raise";
+      if (cat === 1) return "call";
+      return hasOvercard(hole, board) ? "raise" : "fold";
+    default:
+      return cat === 1 || draw ? "call" : "fold";
+  }
 }
-
-/** 규칙을 화면에 그대로 적기 위한 기계 판독용 정의 (문자열은 UI가 언어별로 만든다) */
-export const RULE = {
-  raiseFrom: 2, // 투페어 이상 → 팟 사이즈 베팅
-  callFrom: 1, // 원페어 또는 드로우 → 하프팟 베팅
-} as const;
 
 // ── 상대 레인지 ──────────────────────────────────────────────────────────────
 
@@ -111,7 +152,7 @@ function expandPool(range: WeightedHole[], deadKeys: Set<number>): NCard[][] {
  *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
  *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
  */
-function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[]): NCard[][] {
+function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[], style: OppStyle): NCard[][] {
   // ★2026-10-11: 출발점이 «남은 카드 전부(1,081쌍)»에서 **그 상대의 프리플랍 레인지**로 바뀌었다.
   //   레이즈·콜이 공개 정보인 것처럼, 프리플랍에 팟에 들어왔다는 것도 공개 정보다.
   const kept: WeightedHole[] = [];
@@ -119,7 +160,7 @@ function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: We
     if (deadKeys.has(keyOf(c.hole[0])) || deadKeys.has(keyOf(c.hole[1]))) continue;
     let ok = true;
     for (const step of history) {
-      if (opponentAction(c.hole, step.board) !== step.action) { ok = false; break; }
+      if (opponentAction(c.hole, step.board, style) !== step.action) { ok = false; break; }
     }
     if (ok) kept.push(c);
   }
@@ -558,8 +599,11 @@ export function runHand(
   /** 판마다 고정된 시드 (`TableSim.seed`) — 같은 판은 같은 숫자 */
   seed: number,
   /** 스트리트가 하나 끝날 때마다 부른다 — 사용자가 프리플랍을 읽는 동안 나머지가 계산된다 */
-  onStreet?: (streets: StreetRecord[]) => void
+  onStreet?: (streets: StreetRecord[]) => void,
+  /** 상대 성향 — 테이블 전원 같은 성향 (S-034 2차 ②) */
+  style: OppStyle = "standard"
 ): HandResult {
+  const size = STYLE_SIZE[style];
   const rng = mulberry32(seed);
   const hN = heroHand.map(toNum);
   const oppN = oppHands.map((h) => h.map(toNum));
@@ -589,7 +633,7 @@ export function runHand(
       const stay: number[] = [];
       let strongest: Action = "fold";
       for (const i of live) {
-        const a = opponentAction(oppN[i], boardNow);
+        const a = opponentAction(oppN[i], boardNow, style);
         actionBySlot[oppSlots[i]] = a;
         history[i].push({ board: boardNow, action: a });
         if (a === "fold") { foldedSlots.push(oppSlots[i]); continue; }
@@ -599,7 +643,7 @@ export function runHand(
       }
       live = stay;
       // 스택을 넘으면 올인 — 남은 스택 전부. 스택이 0이면 더 이상 베팅 없음
-      if (live.length) bet = Math.min(strongest === "raise" ? pot : Math.round(pot / 2), remaining);
+      if (live.length) bet = Math.min(Math.round(pot * (strongest === "raise" ? size.raise : size.call)), remaining);
     }
 
     // ── 내 승률: 상대 패를 모른다는 전제로 계산한다 (실제 딜된 패는 쓰지 않는다)
@@ -614,7 +658,7 @@ export function runHand(
         // ★상대마다 «자기 프리플랍 레인지 ∩ 자기 액션 이력»으로 레인지를 만든다.
         //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pools = live.map((i) => eligibleHoles(dead, history[i], oppRanges[i]));
+        const pools = live.map((i) => eligibleHoles(dead, history[i], oppRanges[i], style));
         split = heroEquity(heroHand, board.slice(0, shown), pools, SAMPLES.postflop, rng);
       }
     }

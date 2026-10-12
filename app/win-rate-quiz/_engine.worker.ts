@@ -4,7 +4,7 @@
 //   그래서 같은 판도 기기마다 표본 수가 달랐다. 워커에서는 화면이 얼 일이 없으니 표본·시드를 고정한다.
 // ★계산 로직은 여기 한 줄도 없다 — 메시지를 받아 runHand를 부르고 결과를 돌려줄 뿐이다.
 
-import { runHand, type HandResult, type StreetRecord } from "./_engine";
+import { runHand, type HandResult, type OppStyle, type StreetRecord } from "./_engine";
 import type { Card } from "./_equity";
 import type { WeightedHole } from "./_ranges";
 
@@ -16,6 +16,8 @@ export interface HandRequest {
   board: Card[];
   oppRanges: WeightedHole[][];
   seed: number;
+  /** 상대 성향 (S-034 2차 ②) */
+  style: OppStyle;
 }
 
 export type HandMessage =
@@ -26,6 +28,6 @@ self.onmessage = (e: MessageEvent<HandRequest>) => {
   const q = e.data;
   const result = runHand(q.heroHand, q.oppHands, q.oppSlots, q.board, q.oppRanges, q.seed, (streets) => {
     (self as unknown as Worker).postMessage({ id: q.id, type: "streets", streets } satisfies HandMessage);
-  });
+  }, q.style);
   (self as unknown as Worker).postMessage({ id: q.id, type: "done", result } satisfies HandMessage);
 };
