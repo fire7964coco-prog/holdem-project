@@ -1046,6 +1046,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ **이행 2026-10-12 (21)** — BP-1 `hasDraw(hole, board)`: 보드 5장이면 false · 무늬는 «합계 4 & 보드만 4 미만» · 스트레이트 창은 «합계 4 & 보드만 4 미만»(tsx 실측: Q♥J♥/K♥7♥2♣4♦9♠ 공격적 = fold · 턴 = raise · A♠K♦/2♥5♥8♥J♥ 기본 = fold · 8♥7♥/K♥8♣2♥ 타이트 = call). BP-2 6언어 목록 아래 «위 줄부터 처음 맞는 줄» + 드로우 정의(플랍·턴 · 홀카드 1장 이상 · 리버 없음) 한 줄 · BP-3 타이트 줄 «원페어» 한정(ko는 원래 있음 → en·ja·zh·es·de) · BP-4 «상대마다 스트리트당 한 번만 액션 · 체크 뒤 재응수 단계 없음» + 엔진 주석 동기. 통지 ①~④ 손대지 않음.
 - ✅ **통지 ①③④ 이행 2026-10-12 (22) `15e80ef2` MB-286** — ① 올인 뒤 스트리트 상대 액션 생략(`"allIn"` · 이력 안 늘림) + 좌석 «올인»·규칙 한 문장 6언어 · ③ 성향 select title `styleHint` 6언어(카드 제목 변형·«수비(SRP 기준)» 보류) · ④ ko `_content` L50 규칙 가정 한정 · ② 도달 불가라 주석만(`_solver-link.ts`).
 
+### 2-BQ. 우편함 수신분 — MA-495 (MB-283 ja·zh·es·de 사전 · RISKY 1 de · 요청 2) · MA-497 (MB-284·285 재판정 · 요청 2 · 🪶 2) · 등재·회신 2026-10-12 (23) MB-288
+
+> 기준 본체 `fc56b593`(MA-495) · `766f22ef`(MA-497) · 솔버 `79d062a`. 위치 대조 main `3be17ba1` 전부 실재(`_equity.ts` `describeHand` L405-438 · `_simulator.tsx` L1370 `rec.toCall === 0` · L1556 noDrawNote · `_engine.ts` L669 전원 폴드 = 계산 없이 100 · de ruleText L228 «Bei Gleichstand»). MA-497 요청 ②(올인 상대 폴드) = MB-286 `15e80ef2`가 이미 이행 → MB-286 판정에서 이행 대조로 닫는다(새 처방 없음). MA-488·489·491 WRONG/RISKY 해소 = 종결.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BQ-1 de 문구 RISKY | de ruleText «Bei Gleichstand wird der Pot durch die Zahl der beteiligten Spieler geteilt» — «남은 전원으로 나눔»으로 읽힘 | «unter den Spielern mit gleich guter Hand geteilt (bei einem Gleichstand zu zweit je die Hälfte)» |
+| BQ-2 코드 WRONG 꼴 | `_simulator.tsx` 팟오즈 칸 `toCall === 0` → «다음 카드 무료» — 리버 무베팅 · 전원 폴드 스트리트 · 올인 뒤 스트리트에도 뜸 | 상태별 문장 분기 6언어: 전원 폴드 = 팟 획득 · 올인 뒤 = 더 걸 칩 없음·끝까지 · 리버 무베팅 = 그대로 쇼다운 · 나머지 = 지금 문장 |
+| BQ-3 문구 RISKY | winLabel2·formulaCaveat «이길 확률» = 실제 equity(무승부 지분 포함 · `_engine.ts` heroEquity) — 6언어 공통 | «승률(무승부는 나눠 가진 몫으로 셈)» 한정 6언어 |
+| BQ-4 문구 RISKY | noDrawNote(range) — ⓐ 전원 폴드는 시뮬 없이 100인데 «n회 돌려 낸 값» ⓑ 보드 공유 드로우·이미 플러시(BO-2 뒤)에도 «드로우 없음» 단정 ⓒ 리버도 같은 문장 | 전원 폴드·리버 분기 + range 문장을 «이 도구가 세는 아웃츠(플러시·스트레이트 완성 · 셋·투페어·오버카드 페어) 0» 꼴로 6언어 |
+| BQ-5 코드 RISKY | `describeHand` 드로우 = 옛 정의(보드만으로 된 4플러시·4랭크도 «드로우») — 9♠9♦ / 2♥3♥4♥7♥ = «원페어 · 플러시 드로우»인데 공격적 call(BP-1 `hasDraw` 기준 드로우 아님) | 플러시·스트레이트 드로우 모두 «홀카드 1장 이상»(`hasDraw`와 같은 판정) — 라벨 ↔ 액션 근거 일치 |
+
+- 🪶 통지(요청 아님 · 판단 본체): MA-495 ① zh `drawingDead` 「已无补牌」 오독 소지(현재 미노출) · «한 단계» 꼴 6언어 공통 ② ruleText 한정(표준오차 = 50% 근처 최대치 · 같은 seed · 퀴즈 전원 폴드 예외 · 점수 반올림 · 앤티 = 참여자 수) · reviewNoMistake 콜 없이 끝난 판 ③ 라이브 ruleText ≠ `fc56b593` = §2-BP 배포 때문(MB-285 판정 끝). MA-497 ① ruleText «홀카드가 1장 이상» — 보드 랭크 중복 홀카드 경계(선택 «보드만으로는 안 되는») ② «액션에 맞는 패 전체» 레인지 한정은 다른 문장이 보완.
+- 이행 = 승률 시뮬레이터 한 회차(BQ-1~5 · 코드 ko·en + ja·zh·es·de 사전) → 재판정 요청(하루 묶음 · MA-482).
+- ✅ **이행 2026-10-12 (23) `affc69d9` MB-288** — BQ-1 de 동점 문장 · BQ-2 베팅 0 = 프리플랍·전원 폴드·올인 셋뿐 → 전원 폴드 = `wonByFold(potBefore)` · 올인 뒤 = 새 키 `noBetAllIn(river)` 6언어 · BQ-3 winLabel2·formulaCaveat «무승부는 나눠 가진 몫» 6언어 · BQ-4 아웃츠 칸 전원 폴드 = `foldWinNote` · 리버 = `riverNote` · range 문장 «이 도구가 세는 아웃츠» 꼴 6언어 · BQ-5 `describeHand` 드로우 = 홀카드 1장 이상(tsx: 9♠9♦/2♥3♥4♥7♥ → «원페어» · A♠K♦/5-6-7-8 → «하이카드» · A♥K♦/2♥3♥4♥7♣ → 플러시·스트레이트 드로우 유지). `heroOuts`는 원래 보드 전용 제외 → 라벨·아웃츠·액션 근거 같은 정의. 렌즈 1 WRONG 0 · RISKY 2(en «live» 오독 · de «ist da») + 문체 6 반영.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
