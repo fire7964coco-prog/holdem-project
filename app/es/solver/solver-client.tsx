@@ -155,6 +155,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Saber qué manos abrir en cada posición", "La tabla de manos iniciales", "/es/blog/holdem-starting-hands-chart"],
   ["Contar outs y calcular pot odds", "La guía de pot odds", "/es/blog/holdem-pot-odds"],
   ["Ver solo el porcentaje de victoria de una mano", "La guía de equity", "/es/blog/holdem-equity"],
+  // ★2026-10-12 — /es/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  ["Practicar a estimar tu equity sin ver las cartas del rival y ver dónde tocaba foldear", "El simulador de poker", "/es/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-22 축어 실측). */

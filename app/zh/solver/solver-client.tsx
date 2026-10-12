@@ -143,6 +143,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["知道每个位置该开哪些起手牌", "起手牌表", "/zh/blog/holdem-starting-hands-chart"],
   ["数补牌、算底池赔率", "底池赔率指南", "/zh/blog/holdem-pot-odds"],
   ["只想看一手牌的胜率", "胜率（Equity）指南", "/zh/blog/holdem-equity"],
+  // ★2026-10-12 — /zh/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  ["在看不到对手底牌时练习估算胜率、找准弃牌时机", "德州扑克模拟器", "/zh/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-24 축어 실측). */

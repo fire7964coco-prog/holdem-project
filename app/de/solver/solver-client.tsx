@@ -150,6 +150,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Wissen, welche Hände du aus welcher Position öffnest", "Die Starthände-Tabelle", "/de/blog/holdem-starting-hands-chart"],
   ["Outs zählen und Pot Odds berechnen", "Der Pot-Odds-Guide", "/de/blog/holdem-pot-odds"],
   ["Nur die Gewinnchance einer Hand sehen", "Der Equity-Guide", "/de/blog/holdem-equity"],
+  // ★2026-10-12 — /de/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  ["Equity schätzen üben, ohne die Karten der Gegner zu sehen – und erkennen, wann du hättest folden sollen", "Der Poker-Simulator", "/de/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-24 축어 실측). */

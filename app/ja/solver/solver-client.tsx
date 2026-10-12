@@ -140,6 +140,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["ポジション別にどのハンドを開くか知りたい", "スターティングハンド表の記事", "/ja/blog/holdem-starting-hands-chart"],
   ["アウツやポットオッズを計算したい", "ポットオッズの記事", "/ja/blog/holdem-pot-odds"],
   ["その場で勝率だけ知りたい", "アプリ内蔵のエクイティ計算機", null],
+  // ★2026-10-12 — /ja/win-rate-quiz 신설(MB-283 `7f9dcb59`) → 도구 행 추가. 위 주석의 «win-rate-quiz 없음»은 그 전 기준
+  ["相手の手が見えないまま、勝率の見積もりと降りどきを練習したい", "ポーカー練習シミュレーター", "/ja/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-21 축어 실측). */
