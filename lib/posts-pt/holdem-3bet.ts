@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -284,7 +284,7 @@ A. Você tem três opções: dar 4-bet nas suas premium (QQ+, AK) mais o blefe d
 
 **Q. Qual é uma boa porcentagem de fold-to-3-bet?**
 
-A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. Isso é mais aberto que a MDF pura, que contra um 3-bet típico de 3x in position mandaria você defender só cerca de um terço — ou seja, foldar no máximo uns 66,7%. Trate esse número como um teto, não como um alvo. A MDF assume que os blefes têm equity zero, mas um blefe de 3-bet de verdade como A5s carrega uns 30% de equity contra o seu range de continuação, o que empurra a frequência de fold de equilíbrio bem abaixo desse teto calculado no vácuo. Então 55% é uma referência prática, não uma garantia: um 3-bet light com equity de verdade ainda pode dar lucro contra ela. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
+A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. Isso é mais aberto que a MDF pura, que contra um 3-bet típico de 3x in position mandaria você defender só cerca de um terço — ou seja, foldar no máximo uns 66,7%. Trate esse número como um teto, não como um alvo. A MDF assume que os blefes têm equity zero, mas um blefe de 3-bet de verdade como A5s ainda tem equity quando é pago — uns 30% mesmo contra um range de QQ+/AK, e mais contra um range de continuação mais amplo —, o que empurra a frequência de fold de equilíbrio bem abaixo desse teto calculado no vácuo. Então 55% é uma referência prática, não uma garantia: um 3-bet light com equity de verdade ainda pode dar lucro contra ela. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
 
 **Q. Você deve dar 3-bet ou 4-bet all-in com um stack curto num torneio?**
 

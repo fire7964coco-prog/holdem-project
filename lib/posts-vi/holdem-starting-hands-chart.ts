@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong 169 loại bài khởi đầu, chỉ một lát mỏng ở trên cùng — khoảng 15–20% số tay bài bạn được chia — là có lời với người mới. Đôi lớn (AA–TT) và AK raise từ mọi ghế; bạn hành động càng muộn thì mở càng rộng — từ khoảng 13% ở under the gun đến khoảng 43% ở button (bàn 6-max còn rộng hơn). Hãy bắt đầu với một bảng rút gọn, rồi thêm bảng GTO preflop khi raise-hay-fold đã thành phản xạ.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -153,7 +153,7 @@ Sai lầm cần tránh là dùng bảng 9-max ở bàn 6-max: bạn sẽ fold nh
 
 ## Nên chơi bao nhiêu phần trăm tay bài khởi đầu?
 
-Tính trên cả buổi chơi, ==mục tiêu hợp lý cho người mới là chơi khoảng 15–20% số tay bài được chia== — nghĩa là fold 80–85% preflop. Đó không phải một con số phẳng: các số theo ghế ở trên — ~13% từ UTG, ~17% từ MP, ~27% từ cutoff, ~43% từ button — là độ rộng bạn *open một pot chưa ai mở*. Trung bình cả buổi của bạn thấp hơn trung bình thô của những con số đó, vì bạn thường gặp một cú raise (khi đó bạn tiếp tục với ít tay bài hơn hẳn) và bạn ngồi nhiều vòng bàn ở ghế sớm và blind.
+Tính trên cả buổi chơi, ==mục tiêu hợp lý cho người mới là chơi khoảng 15–20% số tay bài được chia== — nghĩa là fold 80–85% preflop. Đó không phải một con số phẳng: các số theo ghế ở trên — ~13% từ UTG, ~17% từ MP, ~27% từ cutoff, ~43% từ button — là độ rộng một reg vững open *một pot chưa ai mở* — mức trần mà lõi người mới của bạn dần nới tới, chứ không phải điểm xuất phát. Trung bình cả buổi của bạn thấp hơn trung bình thô của những con số đó, vì bạn thường gặp một cú raise (khi đó bạn tiếp tục với ít tay bài hơn hẳn) và bạn ngồi nhiều vòng bàn ở ghế sớm và blind.
 
 :::stat[15–20%] số tay bài được chia — một range lành mạnh cho người mới ở 9-max:::
 

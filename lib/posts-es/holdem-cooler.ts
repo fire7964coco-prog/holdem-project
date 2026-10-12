@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "¿Qué es un cooler en póker? La derrota inevitable — y por qué no es un bad beat",
+  title: "¿Qué es un cooler en póker? La derrota inevitable — y por qué, en sentido estricto, no es un bad beat",
   seoTitle: "La mano que no podrías foldear ni queriendo — ¿qué es un cooler?",
   desc: "Un cooler es cuando tu mano monstruo choca con otra mayor y foldear nunca fue una opción — y por qué, en sentido estricto, no es lo mismo que un bad beat.",
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que casi nunca podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. En el sentido estricto que usa esta guía, ibas por detrás cuando entró el dinero y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -61,7 +61,7 @@ La forma más limpia de no confundirlos, con ese criterio estricto:
 |:---|:---|:---|
 | **Quién iba delante al entrar las fichas** | Ibas **por detrás** | Ibas **por delante** (favorito) |
 | **¿Hubo suckout?** | No — el ganador iba delante todo el rato | Sí — cazó un proyecto afortunado |
-| **¿Podrías haber foldeado?** | No — mano demasiado fuerte | Hiciste bien en meter las fichas |
+| **¿Podrías haber foldeado?** | No — mano demasiado fuerte | Depende — el bad beat en sí no te dice si tu jugada se sostuvo |
 | **Ejemplo clásico** | KK choca con AA | AA reventados cuando 7‑7 liga un trío |
 | **La sensación** | "Nunca tuve opción" | "Esa la tenía que haber ganado" |
 

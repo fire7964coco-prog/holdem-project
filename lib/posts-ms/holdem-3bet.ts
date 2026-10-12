@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet ialah re-raise pertama sebelum flop — bet ketiga selepas big blind dan open-raise. Value 3-bet dengan QQ+ dan AK, tambah beberapa bluff blocker suited seperti A5s; saiz kira-kira 3x open in position dan 4x out of position, dengan kekerapan keseluruhan sekitar 6–10%. Bila kena 3-bet: 4-bet tangan premium, call tangan yang main baik, fold selebihnya.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -154,7 +154,7 @@ Pengajaran besar: **flat call sah in position** — solver moden mengekalkan ran
 
 ## Squeeze Play: 3-Bet ke atas Raiser *dan* Caller
 
-![Timbunan cip tiga pemain ditolak ke tengah meja hijau ketika seorang pemain menolak re-raise yang lebih besar, menghimpit pemain yang open-raise dan seorang caller](/images/holdem-3bet-squeeze.webp "Squeeze menghukum pemain yang open-raise dan pemain yang flat call serentak — dead money tambahan menjadikan 3-bet ringan pun menguntungkan")
+![Timbunan cip tiga pemain ditolak ke tengah meja hijau ketika seorang pemain menolak re-raise yang lebih besar, menghimpit pemain yang open-raise dan seorang caller](/images/holdem-3bet-squeeze.webp "Squeeze menghukum pemain yang open-raise dan pemain yang flat call serentak — dead money tambahan menaikkan ganjaran 3-bet ringan sekalipun")
 
 **Squeeze play** ialah 3-bet yang dibuat selepas sudah ada open-raise *dan* sekurang-kurangnya seorang caller. Ia dinamakan squeeze kerana anda menghimpit kedua-dua lawan: raiser asal kini perlu risau tentang caller di belakangnya, dan caller itu — yang baru menunjukkan tangan yang tidak cukup kuat untuk re-raise — jarang mahu meneruskan menentang keagresifan anda.
 
@@ -176,7 +176,7 @@ Inilah separuh 3-bet yang hampir setiap artikel langkau: **anda akan berada di p
 - **Call** — dengan tangan yang kena flop dengan baik dan ada equity atau posisi untuk meneruskan: pocket pair yang mahu set-mine, broadway suited, dan tangan kuat yang tidak mahu membengkakkan pot menjadi perang 4-bet.
 - **Fold** — selebihnya. Kebanyakan range open anda patut menyerah sahaja kepada 3-bet; itu normal, bukan kelemahan.
 
-Berapa banyak yang patut anda teruskan? Garis asas teori ialah **Minimum Defense Frequency (MDF)** — bahagian range yang mesti anda teruskan supaya pemain 3-bet tidak boleh untung dengan bluff mana-mana dua kad. Formulanya ==pot ÷ (pot + bet)== — dengan *pot* ialah jumlah di tengah sebelum 3-bet dan *bet* ialah jumlah yang **ditambah** oleh pemain 3-bet (dari blind, itu raise ditolak cip yang sudah diletakkan) — yang terhadap saiz 3-bet biasa bersamaan kira-kira **satu pertiga range anda** secara teori (3-bet 3x dari button: pot 4.5bb ÷ (4.5bb + 9bb) ≈ 33%). Tetapi inilah eksploit yang menghasilkan wang di meja sebenar. Ia paling jelas dibaca dari kerusi lawan, jadi tukar tempat duduk untuk jadual di bawah: statistik di bawah ialah berapa kerap **mereka** fold apabila **anda** 3-bet mereka.
+Berapa banyak yang patut anda teruskan? Garis asas teori ialah **Minimum Defense Frequency (MDF)** — bahagian range yang mesti anda teruskan supaya pemain 3-bet tidak boleh untung secara automatik dengan bluff mana-mana dua kad (formula ini menganggap bluff tiada equity apabila di-call). Formulanya ==pot ÷ (pot + bet)== — dengan *pot* ialah jumlah di tengah sebelum 3-bet dan *bet* ialah jumlah yang **ditambah** oleh pemain 3-bet (dari blind, itu raise ditolak cip yang sudah diletakkan) — yang terhadap saiz 3-bet biasa bersamaan kira-kira **satu pertiga range anda** secara teori (3-bet 3x dari button: pot 4.5bb ÷ (4.5bb + 9bb) ≈ 33%). Tetapi inilah eksploit yang menghasilkan wang di meja sebenar. Ia paling jelas dibaca dari kerusi lawan, jadi tukar tempat duduk untuk jadual di bawah: statistik di bawah ialah berapa kerap **mereka** fold apabila **anda** 3-bet mereka.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -242,7 +242,7 @@ A. Kerana nama itu mengira bet dalam urutan, bukan raise. Big blind ialah bet pe
 
 **Q. Apakah beza antara 3-bet dan 4-bet?**
 
-A. 3-bet ialah re-raise pertama (ke atas open-raise); 4-bet ialah re-raise seterusnya, dibuat ke atas 3-bet. Jadi tangganya begini: open-raise (bet ke-2) → 3-bet (bet ke-3) → 4-bet (bet ke-4) → 5-bet (biasanya all-in). 4-bet mewakili range yang sangat kuat dan terpolarisasi.
+A. 3-bet ialah re-raise pertama (ke atas open-raise); 4-bet ialah re-raise seterusnya, dibuat ke atas 3-bet. Jadi tangganya begini: open-raise (bet ke-2) → 3-bet (bet ke-3) → 4-bet (bet ke-4) → 5-bet (biasanya all-in). 4-bet mewakili range yang sangat kuat — selalunya terpolarisasi antara premium dan beberapa bluff.
 
 **Q. Tangan apa yang patut anda 4-bet, dan berapa saiznya?**
 
@@ -270,7 +270,7 @@ A. Range linear (merged) ialah satu blok padu tangan terbaik anda — digunakan 
 
 **Q. Berapa saiz 3-bet yang patut?**
 
-A. Kira-kira 3x open in position dan 4–4.5x out of position. Jadi terhadap open 3 big blinds, jadikan kira-kira 9bb in position atau 12bb out of position. Tambah kira-kira satu open-raise tambahan bagi setiap caller ketika squeeze. Jangan 3-bet kecil out of position — ia memberi lawan call yang murah dan mudah in position.
+A. Kira-kira 3x open in position dan 4–4.5x out of position. Jadi terhadap open 3 big blinds, jadikan kira-kira 9bb in position atau 12bb out of position. Tambah kira-kira satu open-raise tambahan bagi setiap caller ketika squeeze. Pada kedalaman stack biasa, jangan 3-bet kecil out of position — ia memberi lawan call yang murah dan mudah in position.
 
 **Q. Berapakah peratusan 3-bet yang baik?**
 
@@ -278,7 +278,7 @@ A. Bagi pemain mantap, kekerapan 3-bet keseluruhan sekitar 6–10% dikira sihat,
 
 **Q. Apakah squeeze play?**
 
-A. Squeeze ialah 3-bet yang dibuat selepas open-raise dan sekurang-kurangnya seorang caller. Dead money tambahan dalam pot menjadikannya menguntungkan, dan ia menekan kedua-dua lawan serentak — raiser dan flat caller yang range-nya sudah capped. Buat saiz squeeze lebih besar daripada 3-bet biasa, dengan menambah kira-kira satu open-raise tambahan bagi setiap caller.
+A. Squeeze ialah 3-bet yang dibuat selepas open-raise dan sekurang-kurangnya seorang caller. Dead money tambahan dalam pot menaikkan ganjaran apabila squeeze berjaya, dan permainan itu menekan kedua-dua lawan serentak — raiser dan flat caller yang range-nya sudah capped. Buat saiz squeeze lebih besar daripada 3-bet biasa, dengan menambah kira-kira satu open-raise tambahan bagi setiap caller.
 
 **Q. Bagaimana hendak bertindak balas terhadap 3-bet?**
 
@@ -286,7 +286,7 @@ A. Anda ada tiga pilihan: 4-bet premium anda (QQ+, AK) ditambah bluff blocker se
 
 **Q. Berapakah peratusan fold-to-3-bet yang baik?**
 
-A. Sekitar 55% ialah garis asas yang munasabah dan lebih kurang seimbang — anda teruskan dengan bahagian atas range dan lepaskan selebihnya. Itu lebih luas daripada MDF matematik tulen, yang terhadap 3-bet 3x biasa in position hanya meminta anda mempertahankan kira-kira satu pertiga — dengan kata lain, fold tidak lebih daripada kira-kira 66.7%. Anggap angka itu sebagai siling, bukan sasaran. MDF menganggap bluff tiada equity langsung, tetapi bluff 3-bet sebenar seperti A5s membawa kira-kira 30% equity terhadap range yang anda teruskan, dan ini menolak kekerapan fold pulang modal jauh di bawah siling teori itu. Jadi 55% ialah garis asas praktikal, bukan jaminan: 3-bet ringan dengan equity sebenar masih boleh untung terhadapnya. Fold jauh melebihi 55% menjadikan anda mudah dieksploit oleh 3-bet ringan; fold jauh kurang bermakna anda call atau 4-bet terlalu luas. Sesuaikan dengan lawan: fold lebih banyak terhadap pemain yang tidak pernah bluff 3-bet.
+A. Sekitar 55% ialah garis asas yang munasabah dan lebih kurang seimbang — anda teruskan dengan bahagian atas range dan lepaskan selebihnya. Itu lebih luas daripada MDF matematik tulen, yang terhadap 3-bet 3x biasa in position hanya meminta anda mempertahankan kira-kira satu pertiga — dengan kata lain, fold tidak lebih daripada kira-kira 66.7%. Anggap angka itu sebagai siling, bukan sasaran. MDF menganggap bluff tiada equity langsung, tetapi bluff 3-bet sebenar seperti A5s masih ada equity apabila di-call — kira-kira 30% walaupun terhadap range QQ+/AK, dan lebih lagi terhadap range yang lebih luas untuk diteruskan — dan ini menolak kekerapan fold pulang modal jauh di bawah siling teori itu. Jadi 55% ialah garis asas praktikal, bukan jaminan: 3-bet ringan dengan equity sebenar masih boleh untung terhadapnya. Fold jauh melebihi 55% menjadikan anda mudah dieksploit oleh 3-bet ringan; fold jauh kurang bermakna anda call atau 4-bet terlalu luas. Sesuaikan dengan lawan: fold lebih banyak terhadap pemain yang tidak pernah bluff 3-bet.
 
 **Q. Patutkah anda 3-bet atau 4-bet all-in dengan stack pendek dalam tournament?**
 

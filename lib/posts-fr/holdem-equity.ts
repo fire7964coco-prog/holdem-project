@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "L'équité (equity), c'est ta part du pot : la fraction que ta main est censée gagner en moyenne une fois toutes les cartes distribuées, pots partagés comptés au prorata. Tu suis quand ton équité dépasse la cote du pot, mais la position et les mises font que tu gardes rarement toute ton équité, et la fold equity te fait gagner des pots même avec la moins bonne main.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -128,7 +128,7 @@ Ce qui fait monter ou baisser ta réalisation :
 :::card
 🪑 | Position | Parler en dernier t'aide souvent à réaliser ton équité grâce à l'information et au contrôle du pot, mais aucune position ne garantit un résultat au-dessus ou en dessous de 100 %. Les ranges et le board (les cartes communes) comptent aussi
 🎯 | Jouabilité | Les connecteurs assortis et les mains qui floppent des tirages réalisent bien ; les mains dépareillées maladroites réalisent mal, même avec une équité brute correcte
-📚 | Profondeur de stack et niveau | Des stacks plus profonds et des adversaires plus coriaces rendent l'équité marginale plus difficile à réaliser
+📚 | Profondeur de stack et niveau | Des stacks plus profonds rendent l'équité marginale plus difficile à réaliser hors de position (en position, ils t'aident souvent à en réaliser davantage) ; des adversaires plus coriaces réduisent aussi la réalisation
 :::
 
 C'est l'idée la plus importante que la plupart des articles pour débutants oublient, et c'est pour ça que [la même main se joue de façon complètement différente selon la position](/fr/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). L'équité brute est le point de départ — ce que tu encaisserais si les jetons partaient au milieu maintenant ; la réalisation, c'est ce que tu ramènes vraiment chez toi. La position influe sur cet écart, avec les ranges, la texture du board, la profondeur des stacks et la façon dont le coup est joué.

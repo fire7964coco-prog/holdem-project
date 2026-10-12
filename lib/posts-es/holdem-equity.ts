@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -128,7 +128,7 @@ Lo que sube o baja tu realización:
 :::card
 🪑 | Posición | Actuar el último suele ayudarte a realizar equity gracias a la información y al control del bote, pero ninguna posición garantiza un resultado por encima o por debajo del 100%. También cuentan los rangos y la mesa
 🎯 | Jugabilidad | Los conectores suited y las manos que ligan proyectos realizan bien; los trastos offsuit realizan mal aunque tengan equity bruta decente
-📚 | Profundidad de stack y nivel | Stacks más profundos y rivales más duros hacen más difícil realizar el equity marginal
+📚 | Profundidad de stack y nivel | Stacks más profundos hacen más difícil realizar el equity marginal fuera de posición (en posición suelen ayudarte a realizar más); los rivales más duros también recortan la realización
 :::
 
 Esta es la idea más importante que la mayoría de guías para principiantes deja fuera, y es la razón por la que la [misma mano se juega completamente distinta según la posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). El equity bruto es el punto de partida — lo que embolsarías si las fichas entraran ahora mismo; la realización es lo que de verdad te llevas a casa. La posición influye en esa diferencia junto con los rangos, la textura de la mesa, la profundidad de stack y la forma en que se juega la mano.

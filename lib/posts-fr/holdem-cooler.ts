@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un cooler, c'est une main où tu perds un gros pot avec un jeu très fort que tu ne pouvais presque jamais coucher correctement, comme une paire de rois qui tombe sur les as, ou un set battu par un set plus gros. Au sens strict utilisé ici, tu étais derrière au moment de la mise et aucune carte chanceuse n'a renversé le coup : tu as bien joué et tu as quand même perdu. C'est le désastre le plus honnête du poker.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -69,7 +69,7 @@ Le moyen le plus net de ne pas les confondre :
 |:---|:---|:---|
 | **Qui menait quand les jetons sont partis** | Tu étais **derrière** | Tu étais **devant** (favori) |
 | **Y a-t-il eu un suckout ?** | Non — le gagnant a mené jusqu'au bout | Oui — un tirage chanceux est rentré |
-| **Pouvais-tu te coucher ?** | Non — main trop forte | Tu avais raison d'envoyer les jetons |
+| **Pouvais-tu te coucher ?** | Non — main trop forte | Ça dépend — le bad beat en lui-même ne dit rien de la solidité de ton jeu |
 | **Exemple classique** | KK tombe sur AA | AA craqués quand 7‑7 touche son brelan |
 | **Le ressenti** | « Je n'ai jamais eu ma chance » | « J'aurais dû gagner ce coup » |
 

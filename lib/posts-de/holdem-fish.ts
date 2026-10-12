@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -177,7 +177,7 @@ Grob nach Wirkung geordnet:
 3. **Hör auf, ohne Preis zu jagen.** Lerne die grundlegenden [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), damit du Draws nur dann weiterspielst, wenn die Mathematik es hergibt – nicht „weil du vielleicht triffst“.
 4. **Raise oder Fold – limp weniger.** Passives Callen blutet Chips. Wenn eine Hand gut genug zum Spielen ist, ist sie meist gut genug zum Raisen; wenn nicht, folde.
 5. **Spiel deine Position.** Als Letzter zu handeln ist ein riesiger Edge, den Fische verschenken. Mehr Hände [in Position](/de/blog/holdem-position-play) und weniger out of position zu spielen, behebt automatisch einen großen Batzen an Leaks.
-6. **Hör auf, wenn du tiltest.** Die teuerste Fish-Gewohnheit überhaupt ist, nach einem Bad Beat weiterzuspielen. Erkenne es und geh.
+6. **Hör auf, wenn du tiltest.** Eine der teuersten Fish-Gewohnheiten ist, nach einem Bad Beat weiterzuspielen. Erkenne es und geh.
 
 Mach diese sechs Dinge und du hörst auf, die Geldquelle am Tisch zu sein. Du musst nicht über Nacht ein Shark werden – du musst nur aufhören, die Mahlzeit zu sein.
 

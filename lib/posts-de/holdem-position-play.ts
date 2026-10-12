@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Positions-Strategie: In Position vs Out of Position",
   seoTitle: "Position im Poker: warum sie Karten schlägt (IP vs OOP)",
   desc: "Zwei Spieler, gleiche Karten, gegensätzliche Ergebnisse – der Sitz hat's gemacht. In vs out of Position, warum Position zählt und Open-Ranges von UTG bis BTN.",
-  tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
+  tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG am Full-Ring-Tisch ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -35,7 +35,7 @@ Eine Stunde später, dieselben K♥Q♥, diesmal am Button. Ich raiste, der Big 
 ---
 
 > **Kurze Antwort**
-> **In Position (IP)** bedeutet, dass du zuletzt handelst; **out of Position (OOP)** bedeutet, dass du zuerst handelst. Position verbessert die Equity-Realisierung meist, weil du zuletzt mehr Informationen hast. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände, der Button ~43%, und deshalb ändert sich jede C-Bet, jeder Bluff und jede Pot-Control-Entscheidung mit deinem Sitz.
+> **In Position (IP)** bedeutet, dass du zuletzt handelst; **out of Position (OOP)** bedeutet, dass du zuerst handelst. Position verbessert die Equity-Realisierung meist, weil du zuletzt mehr Informationen hast. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG am Full-Ring-Tisch ~13% der Hände, der Button ~43%, und deshalb ändert sich jede C-Bet, jeder Bluff und jede Pot-Control-Entscheidung mit deinem Sitz.
 
 ---
 
@@ -100,7 +100,7 @@ Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdra
 > **Kurze Antwort**
 > Am besten der **Button**, am schlechtesten der **Small Blind** – und dazwischen steigt der Wert eines Sitzes stetig, je später er handelt. Der Abstand zwischen diesen beiden Plätzen ist größer als der zwischen zwei benachbarten Starthänden: Dieselben Karten sind an einem Sitz profitabel und am anderen ein Verlustgeschäft.
 
-**Die beste Position im Poker ist der Button.** Es ist der einzige Sitz, der garantiert ==**auf jeder Postflop-Street zuletzt handelt**== – Flop, Turn und River, egal wer preflop geraist hat. Diese Garantie ist der Grund, warum der Button profitabel ~43% der Hände öffnen kann, während UTG nur ~13% schafft: Position, nicht Kartenstärke, finanziert den Unterschied.
+**Die beste Position im Poker ist der Button.** Es ist der einzige Sitz, der garantiert ==**auf jeder Postflop-Street zuletzt handelt**== – Flop, Turn und River, egal wer preflop geraist hat. Diese Garantie ist der Grund, warum der Button profitabel ~43% der Hände öffnen kann, während ein Full-Ring-UTG nur ~13% schafft: Position, nicht Kartenstärke, finanziert den Unterschied.
 
 Hier ist der Button-Vorteil in einer konkreten Hand. Du öffnest A♦9♦ am Button, der Big Blind callt, und der Flop kommt **K♦7♠2♥** – ein trockenes Board, das fast niemanden trifft. Der Big Blind checkt – was hier fast nichts verrät, denn auf diesem Board checkt er praktisch seine ganze Range. Die Information steckt woanders – im Sitz: Du entscheidest erst, nachdem er gehandelt hat. ==g:Eine Bet gewinnt hier weit öfter, als sie verliert==, und wenn er foldet, nimmt Ass-hoch den Pot ohne Showdown. Jetzt dreh die Sitze um: OOP mit denselben A♦9♦ checkst du, er bettet, und du foldest einen bedeutsamen Teil der Zeit die beste Hand. Gleiche Karten; der Sitz hat die ganze Arbeit gemacht.
 

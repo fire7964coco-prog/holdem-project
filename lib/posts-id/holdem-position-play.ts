@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Strategi Posisi: In vs Out of Position",
   seoTitle: "Posisi Mengalahkan Kartu — Strategi In vs Out of Position",
   desc: "Kartu sama, hasil berlawanan — kursinya penyebabnya. In position vs out of position, kenapa posisi penting, dan opening range dari UTG sampai button.",
-  tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
+  tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa, di meja full ring, UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -35,7 +35,7 @@ Satu jam kemudian, K♥Q♥ yang sama, kali ini di button. Saya raise, big blind
 ---
 
 > **Jawaban singkat**
-> **In position (IP)** berarti Anda beraksi terakhir; **out of position (OOP)** berarti Anda beraksi lebih dulu. Posisi biasanya meningkatkan realisasi equity karena beraksi terakhir memberi lebih banyak informasi, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan, button ~43%, dan kenapa setiap keputusan c-bet, bluff, dan pot control berubah bersama kursi Anda.
+> **In position (IP)** berarti Anda beraksi terakhir; **out of position (OOP)** berarti Anda beraksi lebih dulu. Posisi biasanya meningkatkan realisasi equity karena beraksi terakhir memberi lebih banyak informasi, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa, di meja full ring, UTG membuka ~13% tangan, button ~43%, dan kenapa setiap keputusan c-bet, bluff, dan pot control berubah bersama kursi Anda.
 
 ---
 
@@ -97,7 +97,7 @@ Selama ribuan tangan, kebocoran itu berlipat menjadi satu perbedaan terbesar ant
 
 ## Posisi Terbaik di Poker — dan yang Terburuk
 
-**Posisi terbaik di poker adalah button.** Ini satu-satunya kursi yang dijamin beraksi ==**terakhir di setiap street postflop**== — flop, turn, dan river, tak peduli siapa yang raise preflop. Jaminan itulah kenapa button bisa membuka ~43% tangan secara profit sementara UTG hanya mampu ~13%: posisi, bukan kekuatan kartu, yang mendanai selisihnya.
+**Posisi terbaik di poker adalah button.** Ini satu-satunya kursi yang dijamin beraksi ==**terakhir di setiap street postflop**== — flop, turn, dan river, tak peduli siapa yang raise preflop. Jaminan itulah kenapa button bisa membuka ~43% tangan secara profit sementara UTG full ring hanya mampu ~13%: posisi, bukan kekuatan kartu, yang mendanai selisihnya.
 
 Inilah keunggulan button dalam satu hand konkret. Anda membuka A♦9♦ di button, big blind call, dan flop datang **K♦7♠2♥** — board kering yang nyaris tak mengenai siapa pun. Big blind check — yang di sini nyaris tidak memberi tahu apa pun, karena di board ini dia check dengan hampir seluruh range-nya. Informasinya ada di tempat lain: kartu K jauh lebih sering mengenai open range Anda daripada calling range dia. ==g:Sebuah bet di sini menang jauh lebih sering daripada kalah==, dan ketika dia fold, ace-high mengambil pot tanpa showdown. Sekarang balik kursinya: OOP dengan A♦9♦ yang sama, Anda check, dia bet, dan cukup sering Anda justru fold tangan terbaik. Kartu sama; kursi yang melakukan semua pekerjaan.
 

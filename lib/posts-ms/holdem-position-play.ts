@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Strategi Posisi: In Position vs Out of Position",
   seoTitle: "Kad Sama, Hasil Lain? — In Position vs Out of Position Poker",
   desc: "Kad sama, hasil bertentangan — tempat duduk yang menentukan. In position vs out of position, mengapa posisi penting, dan opening range dari UTG ke button.",
-  tldr: "In position bermaksud anda bertindak terakhir dan melihat keputusan setiap lawan sebelum membelanjakan cip. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi range, board dan aksi boleh membalikkan corak itu. Sebab itu UTG open kira-kira 13% tangan dan button kira-kira 43%.",
+  tldr: "In position bermaksud anda bertindak terakhir dan melihat keputusan setiap lawan sebelum membelanjakan cip. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi range, board dan aksi boleh membalikkan corak itu. Sebab itu, di meja full ring, UTG open kira-kira 13% tangan dan button kira-kira 43%.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -35,7 +35,7 @@ Sejam kemudian, K♥Q♥ yang sama, kali ini di button. Saya raise, big blind ca
 ---
 
 > **Jawapan ringkas**
-> **In position (IP)** bermaksud anda bertindak terakhir; **out of position (OOP)** bermaksud anda bertindak dahulu. Posisi biasanya meningkatkan realisasi equity kerana bertindak terakhir memberi lebih banyak maklumat, tetapi tiada tempat duduk yang terkunci secara mekanikal di atas atau di bawah 100%: range (julat tangan), board dan aksi boleh membalikkan corak biasa. Sebab itu UTG open ~13% tangan, button ~43%, dan setiap keputusan continuation bet (c-bet), bluff dan kawalan pot berubah mengikut tempat duduk anda.
+> **In position (IP)** bermaksud anda bertindak terakhir; **out of position (OOP)** bermaksud anda bertindak dahulu. Posisi biasanya meningkatkan realisasi equity kerana bertindak terakhir memberi lebih banyak maklumat, tetapi tiada tempat duduk yang terkunci secara mekanikal di atas atau di bawah 100%: range (julat tangan), board dan aksi boleh membalikkan corak biasa. Sebab itu, di meja full ring, UTG open ~13% tangan, button ~43%, dan setiap keputusan continuation bet (c-bet), bluff dan kawalan pot berubah mengikut tempat duduk anda.
 
 ---
 
@@ -67,8 +67,8 @@ Inilah kos sebenar bertindak dahulu:
 :::compare
 Out of position (bertindak dahulu) | In position (bertindak terakhir)
 Bet tanpa tahu apa-apa — mereka mungkin raise, call atau fold, dan anda hanya tahu selepas wang anda masuk | Lihat check, bet atau fold mereka sebelum membuat sebarang keputusan
-Tak boleh ambil kad percuma — jika anda check, mereka boleh bet untuk memaksa anda melepaskan draw | Check di belakang bila-bila masa anda mahu melihat kad seterusnya secara percuma
-Saiz pot terlepas daripada kawalan — anda tak dapat menghalang mereka bet apabila anda mahukan showdown murah | Anda yang menentukan sama ada tangan diteruskan ke street seterusnya
+Tak boleh ambil kad percuma atas pilihan sendiri — jika anda check, mereka boleh bet untuk memaksa anda melepaskan draw | Check di belakang apabila lawan check kepada anda dan lihat kad seterusnya secara percuma
+Saiz pot terlepas daripada kawalan — anda tak dapat menghalang mereka bet apabila anda mahukan showdown murah | Apabila lawan check kepada anda, anda yang menentukan sama ada lebih banyak wang masuk di street ini
 Range anda dibaca — laluan check-call menjadi telus lama-kelamaan | Check dan bet anda kekal kabur kerana mereka bertindak tanpa maklumat
 :::
 
@@ -97,7 +97,7 @@ Dalam ribuan tangan, leak itu bertimbun menjadi perbezaan tunggal terbesar antar
 
 ## Apakah Posisi Terbaik dalam Poker — dan Posisi Paling Teruk?
 
-**Posisi terbaik dalam poker ialah button.** Ia satu-satunya tempat duduk yang dijamin bertindak ==**terakhir di setiap street postflop**== — flop, turn dan river, tidak kira siapa yang raise sebelum flop. Jaminan itulah sebabnya button boleh open ~43% tangan secara menguntungkan sedangkan UTG hanya ~13%: posisi, bukan kekuatan kad, yang membiayai perbezaan itu.
+**Posisi terbaik dalam poker ialah button.** Ia satu-satunya tempat duduk yang dijamin bertindak ==**terakhir di setiap street postflop**== — flop, turn dan river, tidak kira siapa yang raise sebelum flop. Jaminan itulah sebabnya button boleh open ~43% tangan secara menguntungkan sedangkan UTG full ring hanya ~13%: posisi, bukan kekuatan kad, yang membiayai perbezaan itu.
 
 Inilah kelebihan button dalam satu tangan konkrit. Anda open A♦9♦ di button, big blind call, dan flop keluar **K♦7♠2♥** — board kering yang hampir tidak mengenai sesiapa. Big blind check — yang hampir tidak memberitahu anda apa-apa di sini, kerana dia check hampir seluruh range-nya pada board ini. Maklumatnya ada di tempat lain: kad K mengenai opening range anda jauh lebih kerap daripada range call-nya. ==g:Bet di sini jauh lebih kerap menang daripada kalah==, dan apabila dia fold, ace-high mengambil pot tanpa showdown. Sekarang terbalikkan tempat duduk: OOP dengan A♦9♦ yang sama, anda check, dia bet, dan anda akan fold tangan terbaik agak kerap. Kad sama; tempat duduk yang melakukan semua kerja.
 
@@ -251,7 +251,7 @@ Untuk mekanik blind itu sendiri — mengapa ia wujud dan bagaimana bet paksa mem
 
 **Q. Apakah maksud out of position dalam poker?**
 
-A. Out of position (OOP) bermaksud anda mesti bertindak sebelum lawan di street postflop — flop, turn dan river. Anda meletakkan cip tanpa mengetahui apa yang akan mereka lakukan, tidak boleh mengambil kad percuma, dan sukar mengawal saiz pot. Blind OOP berbanding setiap tempat duduk bukan blind (dan small blind juga OOP berbanding big blind); button tidak pernah OOP berbanding sesiapa.
+A. Out of position (OOP) bermaksud anda mesti bertindak sebelum lawan di street postflop — flop, turn dan river. Anda meletakkan cip tanpa mengetahui apa yang akan mereka lakukan, tidak boleh mengambil kad percuma, dan sukar mengawal saiz pot. Blind OOP berbanding setiap tempat duduk bukan blind (dan small blind juga OOP berbanding big blind — kecuali heads-up, apabila small blind ialah button); button tidak pernah OOP berbanding sesiapa.
 
 **Q. Siapa bertindak dahulu — small blind atau big blind?**
 
@@ -267,11 +267,11 @@ A. Button. Ia satu-satunya tempat duduk yang dijamin bertindak terakhir di setia
 
 **Q. Apakah posisi paling lemah dalam poker?**
 
-A. Dua jawapan, bergantung pada soalannya. Small blind ialah tempat duduk paling teruk secara struktur untuk bermain tangan — bertindak pertama di setiap street postflop. Big blind kehilangan paling banyak cip mentah setiap 100 tangan, semata-mata kerana ia membayar blind paksa penuh setiap orbit; permainan sempurna pun hanya mengurangkan kerugian itu. Antara tempat duduk bukan blind, UTG paling lemah: pertama sebelum flop, range paling ketat, biasanya OOP selepas flop.
+A. Dua jawapan, bergantung pada soalannya. Small blind ialah tempat duduk paling teruk secara struktur untuk bermain tangan — di meja tiga pemain atau lebih, bertindak pertama di setiap street postflop. Big blind kehilangan paling banyak cip mentah setiap 100 tangan, semata-mata kerana ia membayar blind paksa penuh setiap orbit; permainan sempurna pun hanya mengurangkan kerugian itu. Antara tempat duduk bukan blind, UTG paling lemah: pertama sebelum flop, range paling ketat, biasanya OOP selepas flop.
 
 **Q. Adakah small blind posisi awal?**
 
-A. Tidak — small blind ialah blind, bukan tempat duduk "posisi awal". Pemain posisi awal (UTG dan tempat duduk di sebelahnya) open dengan ketat kerana seluruh meja bertindak di belakang mereka — dan selepas flop sekurang-kurangnya mereka bertindak *selepas* blind. Small blind sebenarnya tempat duduk paling teruk untuk bermain: ia membayar separuh blind kemudian bertindak pertama di setiap street postflop. Jangan layan ia seperti posisi awal — berdepan raise, pilihan lalai moden dari small blind ialah 3-bet atau fold, hampir tidak pernah flat call; apabila semua orang fold kepada anda, raise pada kebanyakan masa.
+A. Tidak — small blind ialah blind, bukan tempat duduk "posisi awal". Pemain posisi awal (UTG dan tempat duduk di sebelahnya) open dengan ketat kerana seluruh meja bertindak di belakang mereka — dan selepas flop sekurang-kurangnya mereka bertindak *selepas* blind. Small blind sebenarnya tempat duduk paling teruk untuk bermain: ia membayar separuh blind kemudian, di mana-mana meja tiga pemain atau lebih, bertindak pertama di setiap street postflop. Jangan layan ia seperti posisi awal — berdepan raise, pilihan lalai moden dari small blind ialah 3-bet atau fold, hampir tidak pernah flat call; apabila semua orang fold kepada anda, raise pada kebanyakan masa.
 
 **Q. Lebih baik limp atau raise dari UTG?**
 

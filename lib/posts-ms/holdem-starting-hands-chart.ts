@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Carta Tangan Permulaan Poker & Tangan Terbaik",
   seoTitle: "Fold 80% Tangan? — Poker Hand Chart Preflop & Starting Hands",
   desc: "Kebanyakan hole card rugi wang. Starting hands terbaik dalam poker, poker hand chart preflop ikut posisi dan 6-max, serta carta pemula vs GTO preflop chart.",
-  tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button. Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
+  tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button (lebih luas lagi dalam 6-max). Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-05",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -136,7 +136,7 @@ Button ialah tempat duduk terbaik dalam poker. ==g:Anda bertindak terakhir pada 
 - **Suited connector (T9s, 98s, 87s)** — tangan murah dengan implied odds tinggi
 - **Broadway offsuit yang lebih lemah (KTo, QJo)** — hanya di posisi lewat, tidak sekali-kali di posisi awal
 
-Peraturan utama: ==tangan spekulatif ini memerlukan posisi untuk menguntungkan==. Jika pemain UTG raise di hadapan anda, kebanyakannya terus masuk ke muck — anda akan membayar satu raise untuk memainkan tangan spekulatif menentang range yang kuat, dan flop murah yang diperlukannya sudah hilang.
+Peraturan utama: ==sebagai tangan open, tangan spekulatif ini memerlukan posisi untuk menguntungkan==. Jika pemain UTG raise di hadapan anda, kebanyakannya terus masuk ke muck — anda akan membayar satu raise untuk memainkan tangan spekulatif menentang range yang kuat, dan flop murah yang diperlukannya sudah hilang.
 
 ---
 
@@ -161,7 +161,7 @@ Kesilapan yang perlu dielakkan ialah memainkan carta 9-max dalam permainan 6-max
 
 ## Berapa Peratus Tangan Permulaan Patut Anda Main?
 
-Sepanjang satu sesi penuh, ==sasaran pemula yang mantap ialah bermain kira-kira 15–20% daripada tangan yang anda terima== — bermakna fold 80–85% sebelum flop. Itu bukan satu angka rata: angka setiap tempat duduk di atas — ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button — ialah keluasan anda *open pot yang belum dibuka*.
+Sepanjang satu sesi penuh, ==sasaran pemula yang mantap ialah bermain kira-kira 15–20% daripada tangan yang anda terima== — bermakna fold 80–85% sebelum flop. Itu bukan satu angka rata: angka setiap tempat duduk di atas — ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button — ialah keluasan seorang regular yang mantap open *pot yang belum dibuka* — siling yang dituju oleh teras pemula anda, bukan titik permulaannya.
 
 Purata sesi anda jatuh lebih rendah daripada min mentah angka-angka itu, kerana anda kerap menghadapi raise (di mana anda meneruskan dengan jauh lebih sedikit tangan) dan anda menghabiskan banyak orbit tersekat di tempat duduk awal dan blind.
 
@@ -177,7 +177,7 @@ Satu nota skop: ini tentang peratusan *range* anda yang patut dimainkan, bukan t
 
 Saya sentiasa membuka output solver ketika belajar, namun saya tetap memberikan carta ringkas kepada setiap pemula dahulu. Kedua-duanya alat yang berbeza, dan mengetahui yang mana patut digunakan lebih bernilai daripada mana-mana carta itu sendiri. Ringkasnya: carta ringkas untuk tahun pertama; GTO chart untuk sesi belajar dan permainan online.
 
-**GTO preflop chart** datang daripada solver (PioSOLVER, GTO Wizard dan seumpamanya). Secara teori ia tidak boleh dieksploitasi — dan ia juga penuh dengan kekerapan bercampur: open tangan ini 25% masa, fold 75%, 3-bet kombo ini tetapi hanya dengan suit tertentu. **Carta pemula** — seperti yang ada di halaman ini — memampatkan semua itu menjadi satu aksi jelas bagi setiap tangan.
+**GTO preflop chart** datang daripada solver (PioSOLVER, GTO Wizard dan seumpamanya). Ia dibina untuk menghampiri tahap tidak boleh dieksploitasi — dan ia juga penuh dengan kekerapan bercampur: open tangan ini 25% masa, fold 75%, 3-bet kombo ini tetapi hanya dengan suit tertentu. **Carta pemula** — seperti yang ada di halaman ini — memampatkan semua itu menjadi satu aksi jelas bagi setiap tangan.
 
 :::compare
 GTO Preflop Chart | Carta Pemula Ringkas
@@ -215,7 +215,7 @@ Tangan permulaan paling teruk dalam poker bukanlah sampah rawak seperti 7-2 — 
 
 Carta hanya berguna jika ia berada di hadapan anda ketika ia penting. Untuk permainan di rumah dan sesi belajar, kami jadikan keseluruhan carta ini boleh dicetak — satu halaman cheat sheet yang boleh anda letak di sebelah atau buka di telefon, supaya setiap keputusan preflop dirujuk pada carta, bukan pada gerak hati.
 
-**[Muat turun poker starting hands chart percuma yang boleh dicetak (PDF, bahasa Inggeris)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: carta open 9-max penuh serta pelarasan 6-max satu baris, dalam format cheat sheet. Cetak, atau biarkan terbuka di telefon anda antara tangan.
+**[Muat turun poker starting hands chart percuma yang boleh dicetak (PDF, bahasa Inggeris)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: carta open 9-max mengikut posisi serta pelarasan 6-max satu baris, dalam format cheat sheet. Cetak, atau biarkan terbuka di telefon anda antara tangan.
 
 Kemudian gunakannya secara harfiah, setiap tangan, untuk 20+ sesi pertama anda:
 
@@ -262,7 +262,7 @@ A. Pocket aces (AA) ialah tangan permulaan terbaik dalam poker. Sebelum flop, AA
 
 **Q. Apakah tangan permulaan yang baik dalam poker?**
 
-A. Tangan permulaan yang baik dalam poker ialah pasangan premium (AA–TT), As besar (AK, AQ) dan suited broadway yang kuat (KQs, AJs) — teras kepada ~15–20% tangan yang dimainkan oleh pemula yang mantap (kumpulan premium ini sahaja hanya kira-kira 5% daripada semua tangan permulaan). Tangan spekulatif seperti pasangan kecil dan suited connector hanya bagus dari posisi lewat.
+A. Tangan permulaan yang baik dalam poker ialah pasangan premium (AA–TT), As besar (AK, AQ) dan suited broadway yang kuat (KQs, AJs) — teras kepada ~15–20% tangan yang dimainkan oleh pemula yang mantap (kumpulan premium ini sahaja hanya kira-kira 5% daripada semua tangan permulaan). Tangan spekulatif seperti pasangan kecil dan suited connector paling baik dimainkan dari posisi lewat.
 
 **Q. Berapa banyak tangan permulaan dalam poker?**
 
@@ -274,11 +274,11 @@ A. 7-2 rule ialah permainan sampingan tidak rasmi (house game), bukan peraturan 
 
 **Q. Apakah tangan permulaan paling teruk dalam poker?**
 
-A. 7-2 offsuit secara meluas dianggap tangan permulaan paling teruk dalam poker. Kad-kadnya terlalu jauh untuk membentuk straight bersama, terlalu rendah untuk menang tanpa bantuan, dan walaupun mendapat pasangan, anda masih memegang tangan lemah dengan kicker yang buruk.
+A. 7-2 offsuit secara meluas dianggap tangan permulaan paling teruk dalam poker. Kad-kadnya terlalu jauh untuk membentuk straight bersama, terlalu rendah untuk kerap menang tanpa bertambah baik, dan walaupun mendapat pasangan, anda masih memegang tangan lemah dengan kicker yang buruk.
 
 **Q. Patutkah pemula menggunakan GTO preflop chart?**
 
-A. Bukan pada mulanya. GTO preflop chart menggunakan kekerapan bercampur yang direka supaya tidak boleh dieksploitasi menentang lawan yang kuat — berlebihan dalam permainan pemula, di mana carta raise-or-fold ringkas menghasilkan lebih banyak. Pelajari carta ringkas sehingga ia automatik, kemudian tambah GTO chart apabila anda belajar atau naik ke online.
+A. Bukan pada mulanya. GTO preflop chart menggunakan kekerapan bercampur yang direka supaya sukar dieksploitasi walaupun oleh lawan yang kuat — berlebihan dalam permainan pemula, di mana carta raise-or-fold ringkas menghasilkan lebih banyak. Pelajari carta ringkas sehingga ia automatik, kemudian tambah GTO chart apabila anda belajar atau naik ke online.
 
 **Q. Adakah suited benar-benar penting?**
 

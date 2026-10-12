@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -27,7 +27,7 @@ Entah berapa malam saya memerhati wajah "saya ingat saya menang" itu di seberang
 
 ## Apakah Susunan Kad Poker dari Tertinggi hingga Terendah?
 
-Dari tertinggi hingga terendah, sepuluh tangan Texas Hold'em disusun begini: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Peraturan terasnya mudah — semakin jarang sesuatu tangan dapat dibentuk daripada lima kad, semakin tinggi kedudukannya. (Susunan ini ditetapkan mengikut kebarangkalian lima kad; dengan tujuh kad, dua kekerapan bertukar tempat — menjelang river, high card semata-mata sebenarnya lebih jarang daripada two pair — tetapi kedudukannya tidak berubah.) Di bawah ialah keseluruhan hierarki berserta kebarangkalian jangka panjang memegang setiap tangan menjelang river.
+Dari tertinggi hingga terendah, sepuluh tangan Texas Hold'em disusun begini: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Peraturan terasnya mudah — semakin jarang sesuatu tangan dapat dibentuk daripada lima kad, semakin tinggi kedudukannya. (Susunan ini ditetapkan mengikut kebarangkalian lima kad; dengan tujuh kad, beberapa kekerapan bersilang — menjelang river, high card semata-mata sebenarnya lebih jarang daripada two pair — tetapi kedudukannya tidak berubah.) Di bawah ialah keseluruhan hierarki berserta kebarangkalian jangka panjang memegang setiap tangan menjelang river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Cip lebihan yang dipertaruhkan oleh dua atau lebih stack yang lebih besar melebihi jumlah itu membentuk side pot yang hanya boleh dimenangi oleh mereka; jika hanya seorang yang bertaruh lebih, lebihan itu dipulangkan sahaja. Dalam no-limit dan pot-limit, all-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak — kecuali beberapa all-in pendek yang digabungkan mencapai sekurang-kurangnya satu raise penuh di atas jumlah yang sudah dimasukkan oleh pemain itu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -141,7 +141,6 @@ Apa yang berlaku kepada Pemain A, dan kepada Pemain C yang belum bertindak lagi?
 | Raise penuh atau lebih | Ya | Ya — semua pemain boleh re-raise semula |
 
 </div>
-Jadual ini untuk no-limit dan pot-limit. Dalam permainan limit, ambangnya ialah separuh bet, bukan satu raise penuh.
 
 Kenapa peraturan ini wujud? Ia melindungi pemain daripada dipaksa menghadapi raise yang lebih besar akibat all-in separa. Raise penuh menandakan agresi sebenar — all-in stack pendek dengan baki cip sedikit tidak.
 
@@ -174,6 +173,8 @@ Inkremen gabungan: $4 + $7 = **$11** — mencapai ambang raise minimum $10.
 Ambang raise minimum sentiasa merujuk kepada *bet atau raise penuh sah yang terakhir* — bukan mana-mana jumlah terkumpul.
 
 ### Panduan Keputusan Pantas — Adakah All-In Ini Membuka Semula Pertaruhan?
+
+Jadual ini untuk no-limit dan pot-limit. Dalam permainan limit, ambangnya ialah separuh bet, bukan satu raise penuh.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

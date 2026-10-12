@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -305,7 +305,7 @@ A. Du hast drei Optionen: 4-bette deine Premiums (QQ+, AK) plus den gelegentlich
 
 **Q. Was ist eine gute Fold-to-3-Bet-Prozentzahl?**
 
-A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Das ist weiter als die reine MDF-Mathematik, die dich gegen eine typische 3x-3-Bet in Position nur etwa ein Drittel verteidigen ließe – anders gesagt: höchstens rund 66,7% folden. Behandle diese Zahl als Obergrenze, nicht als Ziel. MDF unterstellt, dass die Bluffs null Equity haben; ein echter 3-Bet-Bluff wie A5s hat aber rund 30% Equity gegen deine Weiterspiel-Range, was die Break-even-Fold-Frequenz deutlich unter diese Vakuum-Obergrenze drückt. 55% sind deshalb eine praktische Basislinie und keine Garantie: Eine Light-3-Bet mit echter Equity kann auch dagegen Profit machen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
+A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Das ist weiter als die reine MDF-Mathematik, die dich gegen eine typische 3x-3-Bet in Position nur etwa ein Drittel verteidigen ließe – anders gesagt: höchstens rund 66,7% folden. Behandle diese Zahl als Obergrenze, nicht als Ziel. MDF unterstellt, dass die Bluffs null Equity haben; ein echter 3-Bet-Bluff wie A5s hat aber auch nach einem Call noch Equity – rund 30% selbst gegen eine QQ+/AK-Range und mehr gegen eine weitere Weiterspiel-Range –, was die Break-even-Fold-Frequenz deutlich unter diese Vakuum-Obergrenze drückt. 55% sind deshalb eine praktische Basislinie und keine Garantie: Eine Light-3-Bet mit echter Equity kann auch dagegen Profit machen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
 
 **Q. Solltest du mit einem Short Stack im Turnier 3-betten oder 4-bet-All-in gehen?**
 

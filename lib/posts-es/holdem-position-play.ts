@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Estrategia de posición: en posición vs fuera de posición",
   seoTitle: "La posición gana a las cartas — en posición vs fuera de posición",
   desc: "Mismas cartas, resultados opuestos: lo hizo el asiento. En posición vs fuera de posición, por qué importa y rangos de apertura de UTG al botón.",
-  tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
+  tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso, en una mesa full ring, UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -35,7 +35,7 @@ Una hora más tarde, la misma K♥Q♥, esta vez en el botón. Subí, la ciega g
 ---
 
 > **Respuesta rápida**
-> **En posición (IP)** significa que hablas último; **fuera de posición (OOP)** significa que hablas primero. La posición suele mejorar la realización de equity porque actuar último aporta más información, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso UTG abre ~13% de las manos, el botón ~43%, y por eso cada c-bet, cada farol y cada decisión de control del bote cambia con tu asiento.
+> **En posición (IP)** significa que hablas último; **fuera de posición (OOP)** significa que hablas primero. La posición suele mejorar la realización de equity porque actuar último aporta más información, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso, en una mesa full ring, UTG abre ~13% de las manos, el botón ~43%, y por eso cada c-bet, cada farol y cada decisión de control del bote cambia con tu asiento.
 
 ---
 
@@ -97,7 +97,7 @@ A lo largo de miles de manos, esa fuga se acumula hasta ser la mayor diferencia 
 
 ## La mejor posición en el póker — y la peor
 
-**La mejor posición en el póker es el botón.** Es el único asiento que tiene garantizado hablar ==**último en cada calle del postflop**== — flop, turn y river, sin importar quién subió en el preflop. Esa garantía es la razón por la que el botón puede abrir de forma rentable ~43% de las manos mientras que UTG solo llega a ~13%: la posición, no la fuerza de las cartas, financia la diferencia.
+**La mejor posición en el póker es el botón.** Es el único asiento que tiene garantizado hablar ==**último en cada calle del postflop**== — flop, turn y river, sin importar quién subió en el preflop. Esa garantía es la razón por la que el botón puede abrir de forma rentable ~43% de las manos mientras que un UTG de full ring solo llega a ~13%: la posición, no la fuerza de las cartas, financia la diferencia.
 
 Aquí tienes la ventaja del botón en una mano concreta. Abres A♦9♦ en el botón, la ciega grande iguala, y el flop viene **K♦7♠2♥** — una mesa seca que no le pega a casi nadie. La ciega grande pasa, lo que aquí no dice casi nada: en esta mesa pasa prácticamente con todo su rango. La información está en otro sitio: un rey conecta mucho más con tu rango de apertura que con su rango de pago. ==g:Una apuesta aquí gana muchas más veces de las que pierde==, y cuando foldea, el as alto se lleva el bote sin showdown. Ahora invierte los asientos: OOP con la misma A♦9♦, pasas, él apuesta, y estás foldeando la mejor mano una parte nada despreciable de las veces. Las mismas cartas; el asiento hizo todo el trabajo.
 

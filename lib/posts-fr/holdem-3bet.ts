@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 3-bet est la première surrelance avant le flop : on l'appelle ainsi parce que la grosse blinde est la première mise, l'open-raise la deuxième et ta surrelance la troisième. 3-bet pour la value avec un noyau serré (QQ+, AK) plus quelques bluffs assortis avec bloqueur comme A5s, size autour de 3 fois l'ouverture en position et 4 fois hors de position, et garde une fréquence globale de 3-bet proche de 6 à 10 %. Face à un 3-bet, 4-bet tes premiums, suis avec les mains qui jouent bien et couche-toi avec le reste, en te couchant plus que « l'équilibre » contre des joueurs de petites limites qui ne bluffent jamais.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -284,7 +284,7 @@ A. Tu as trois options : 4-bet tes premiums (QQ+, AK) plus un bluff à bloqueur 
 
 **Q. Quel est un bon pourcentage de fold face au 3-bet ?**
 
-A. Environ 55 % est une référence raisonnable et à peu près équilibrée — tu continues avec le haut de ta range et tu lâches le reste. C'est plus large que la MDF purement mathématique, qui face à un 3-bet typique à 3x en position ne te ferait défendre qu'environ un tiers — autrement dit, te coucher au maximum environ 66,7 % du temps. Considère ce chiffre comme un plafond, pas comme un objectif. La MDF suppose que les bluffs ont zéro équité, mais un vrai 3-bet de bluff comme A5s garde environ 30 % d'équité contre ta range de continuation, ce qui pousse la fréquence de fold d'équilibre bien en dessous de ce plafond théorique. Donc 55 % est une référence pratique plutôt qu'une garantie : un 3-bet light avec une vraie équité peut encore être rentable contre elle. Te coucher bien plus que 55 % te rend exploitable par les 3-bets light ; te coucher beaucoup moins veut dire que tu suis ou 4-bet trop large. Ajuste-toi à l'adversaire : couche-toi davantage face aux joueurs qui ne font jamais de 3-bet bluff.
+A. Environ 55 % est une référence raisonnable et à peu près équilibrée — tu continues avec le haut de ta range et tu lâches le reste. C'est plus large que la MDF purement mathématique, qui face à un 3-bet typique à 3x en position ne te ferait défendre qu'environ un tiers — autrement dit, te coucher au maximum environ 66,7 % du temps. Considère ce chiffre comme un plafond, pas comme un objectif. La MDF suppose que les bluffs ont zéro équité, mais un vrai 3-bet de bluff comme A5s garde de l'équité quand il est payé — environ 30 % même contre une range QQ+/AK, et davantage contre une range de continuation plus large —, ce qui pousse la fréquence de fold d'équilibre bien en dessous de ce plafond théorique. Donc 55 % est une référence pratique plutôt qu'une garantie : un 3-bet light avec une vraie équité peut encore être rentable contre elle. Te coucher bien plus que 55 % te rend exploitable par les 3-bets light ; te coucher beaucoup moins veut dire que tu suis ou 4-bet trop large. Ajuste-toi à l'adversaire : couche-toi davantage face aux joueurs qui ne font jamais de 3-bet bluff.
 
 **Q. En tournoi avec un short stack, faut-il 3-bet ou 4-bet all-in ?**
 

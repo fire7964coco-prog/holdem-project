@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -283,7 +283,7 @@ A. You have three options: 4-bet your premiums (QQ+, AK) plus the occasional blo
 
 **Q. What is a good fold-to-3-bet percentage?**
 
-A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. That's wider than the pure-math MDF, which against a typical 3x 3-bet in position would have you defend only about a third — in other words, fold no more than about 66.7%. Treat that number as a ceiling, not a target. MDF assumes the bluffs have zero equity, but a real 3-bet bluff like A5s carries roughly 30% equity against your continuing range, which pushes the break-even fold frequency well below that vacuum ceiling. So 55% is a practical baseline rather than a guarantee: a light 3-bet with real equity can still show a profit against it. Folding much more than 55% makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
+A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. That's wider than the pure-math MDF, which against a typical 3x 3-bet in position would have you defend only about a third — in other words, fold no more than about 66.7%. Treat that number as a ceiling, not a target. MDF assumes the bluffs have zero equity, but a real 3-bet bluff like A5s still has equity when called — about 30% even against a QQ+/AK range, and more against a wider continuing range — which pushes the break-even fold frequency well below that vacuum ceiling. So 55% is a practical baseline rather than a guarantee: a light 3-bet with real equity can still show a profit against it. Folding much more than 55% makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
 
 **Q. Should you 3-bet or 4-bet all-in with a short stack in a tournament?**
 

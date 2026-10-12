@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity là phần pot kỳ vọng của bạn, tức phần tay bài của bạn xứng đáng nhận trung bình khi mọi lá đã được chia, tính cả khi chia pot. Bạn call khi equity vượt pot odds, nhưng vị trí và các lượt bet khiến bạn hiếm khi giữ trọn equity. Fold equity còn giúp bạn thắng pot ngay cả khi tay bài đang bị dẫn.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -128,7 +128,7 @@ Một tay có 40% equity thô mà chỉ thực nhận 75% thì thực ra đáng 
 :::card
 🪑 | Vị trí | Hành động sau cùng thường giúp bạn thực nhận equity nhờ thông tin và kiểm soát pot, nhưng không vị trí nào bảo đảm kết quả trên hay dưới 100%. Range và board cũng quan trọng
 🎯 | Tính dễ chơi | Hai lá liên tiếp cùng chất (suited connectors) và những tay hay ra draw ở flop thực nhận tốt; những tay khác chất cục mịch thực nhận kém dù equity thô kha khá
-📚 | Độ sâu stack & kỹ năng | Stack sâu hơn và đối thủ khó hơn làm equity biên khó thực nhận hơn
+📚 | Độ sâu stack & kỹ năng | Stack sâu hơn làm equity biên khó thực nhận hơn khi không có vị trí (khi có vị trí, stack sâu thường giúp bạn thực nhận nhiều hơn); đối thủ khó hơn cũng làm realization giảm
 :::
 
 Đây là ý quan trọng nhất mà phần lớn hướng dẫn cho người mới bỏ qua, và là lý do [cùng một tay bài chơi hoàn toàn khác tùy vị trí](/vi/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity thô là điểm xuất phát — thứ bạn bỏ túi nếu chip vào ngay lúc này; realization là thứ bạn thực sự mang về. Vị trí ảnh hưởng tới khoảng cách đó cùng với range, kết cấu board, độ sâu stack và cách ván bài được chơi.

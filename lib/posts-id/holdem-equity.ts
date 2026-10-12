@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -128,7 +128,7 @@ Yang menggerakkan realisasi Anda naik atau turun:
 :::card
 🪑 | Posisi | Bertindak terakhir sering membantu Anda merealisasi equity lewat informasi dan kontrol pot, tapi posisi mana pun tidak menjamin hasil di atas atau di bawah 100%. Range dan board juga berpengaruh
 🎯 | Playability | Suited connector dan tangan yang mem-flop draw merealisasi dengan baik; tangan offsuit lemah realisasinya buruk bahkan dengan equity mentah lumayan
-📚 | Kedalaman stack & skill | Stack lebih dalam dan lawan lebih tangguh membuat equity marjinal lebih sulit direalisasi
+📚 | Kedalaman stack & skill | Stack lebih dalam membuat equity marjinal lebih sulit direalisasi saat out of position (saat in position, stack dalam justru sering membantu Anda merealisasi lebih banyak); lawan lebih tangguh juga memangkas realisasi
 :::
 
 Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan inilah kenapa [tangan yang sama bermain sangat berbeda menurut posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity mentah adalah titik awalnya — yang akan Anda kantongi kalau chip masuk sekarang juga; realisasi adalah yang benar-benar Anda bawa pulang. Posisi memengaruhi selisih itu bersama range, tekstur board, kedalaman stack, dan cara tangan dimainkan.

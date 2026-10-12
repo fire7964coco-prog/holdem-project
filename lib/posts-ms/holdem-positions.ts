@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Poker Positions: Setiap Nama Tempat Duduk & Carta",
   seoTitle: "Kerusi Sama, Nama Lain Tiap Tangan? — Poker Positions Chart",
   desc: "Nama posisi ikut butang pengedar, bukan kerusi. Nama poker positions — UTG, hijack, cutoff, button — nombor tempat duduk, peta 6-max, siapa bertindak dahulu.",
-  tldr: "Poker positions ialah nama tempat duduk yang diukur dari butang pengedar — UTG, lojack, hijack, cutoff, button dan blinds — dan biasanya beralih satu tempat ikut arah jam setiap tangan. Preflop, UTG bertindak dahulu dan big blind terakhir; postflop, small blind dahulu dan button terakhir. Nombor tempat duduk kekal; posisi bergerak.",
+  tldr: "Poker positions ialah nama tempat duduk yang diukur dari butang pengedar — UTG, lojack, hijack, cutoff, button dan blinds — dan biasanya beralih satu tempat ikut arah jam setiap tangan. Preflop, UTG bertindak dahulu dan big blind terakhir; postflop, small blind dahulu dan button terakhir (dalam heads-up, button ialah small blind: bertindak dahulu preflop, terakhir postflop). Nombor tempat duduk kekal; posisi bergerak.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -35,7 +35,7 @@ Tangan yang sama. Hasil yang langsung berbeza. Satu-satunya perkara yang berubah
 ---
 
 > **Jawapan ringkas**
-> Poker positions ialah ==nama tempat duduk yang diukur dari butang pengedar== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan ia ==biasanya beralih satu tempat ikut arah jam setiap tangan== apabila butang pengedar bergerak. Preflop, UTG bertindak dahulu dan big blind bertindak terakhir. Postflop, small blind bertindak dahulu dan button bertindak terakhir.
+> Poker positions ialah ==nama tempat duduk yang diukur dari butang pengedar== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan ia ==biasanya beralih satu tempat ikut arah jam setiap tangan== apabila butang pengedar bergerak. Preflop, UTG bertindak dahulu dan big blind bertindak terakhir. Postflop, small blind bertindak dahulu dan button bertindak terakhir. (Dalam heads-up, button ialah small blind: bertindak dahulu preflop, terakhir postflop.)
 
 ---
 
@@ -61,7 +61,7 @@ Berikut ialah carta poker positions 9-max yang penuh — setiap nama tempat dudu
 
 Perhatikan pembalikan ini: ==blinds bertindak terakhir preflop tetapi dahulu postflop==, manakala button bertindak terakhir pada setiap street postflop. Urutan itulah — bukan kad — yang menjadikan sesetengah tempat duduk lebih baik secara struktur berbanding yang lain.
 
-> **Nota meja live:** butang pengedar ialah cakera fizikal yang beralih satu tempat ikut arah jam setiap tangan. "UTG" ialah sesiapa yang duduk tiga tempat di kiri butang pengedar pada saat itu — bukan kerusi yang tetap.
+> **Nota meja live:** butang pengedar ialah cakera fizikal yang biasanya beralih satu tempat ikut arah jam setiap tangan. "UTG" ialah sesiapa yang duduk tiga tempat di kiri butang pengedar pada saat itu — bukan kerusi yang tetap.
 
 ---
 
@@ -127,7 +127,7 @@ Nama-nama ini tiada asal usul rasmi yang didokumenkan — slang poker jarang ada
 - **Hijack:** cutoff dan button ialah tempat duduk klasik untuk steal blinds. Apabila pemain satu tempat lebih awal raise dahulu, dia ==**"merampas" (hijack) steal itu**== yang sedang ditunggu oleh tempat duduk lewat — jadi tempat duduk itu sendiri mendapat nama tersebut.
 - **Lojack:** muncul kemudian, sebagai ==permainan kata yang nakal daripada "hijack"== — tempat duduk satu anak tangga "lebih rendah" dalam hierarki. Kebanyakan versi cerita juga mengaitkannya dengan jenama alat anti-curi kenderaan LoJack: hijack, turun satu takuk.
 
-Anggap kedua-duanya sebagai cerita meja, bukan etimologi. Yang bukan cerita: hijack dan lojack ialah nama sebenar dan standard yang anda akan temui dalam setiap carta range dan laman latihan moden, sebab itu ia berbaloi dihafal betul-betul.
+Anggap kedua-duanya sebagai cerita meja, bukan etimologi. Yang bukan cerita: hijack dan lojack ialah nama sebenar dan standard yang anda akan temui dalam kebanyakan carta range dan laman latihan moden, sebab itu ia berbaloi dihafal betul-betul.
 
 ---
 

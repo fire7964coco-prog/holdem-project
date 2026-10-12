@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Estratégia de posição: in position vs out of position",
   seoTitle: "Posição vence cartas — in vs out of position no poker",
   desc: "Dois jogadores, mesmas cartas, resultados opostos — a cadeira fez tudo. In vs out of position, por que posição importa e ranges de abertura do UTG ao button.",
-  tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
+  tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que, numa mesa full ring, o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -35,7 +35,7 @@ Uma hora depois, mesmíssimo K♥Q♥, dessa vez no button. Aumentei, o big blin
 ---
 
 > **Resposta rápida**
-> **In position (IP)** significa agir por último; **out of position (OOP)** significa agir primeiro. A posição costuma melhorar a realização de equity porque agir por último traz mais informação, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que o UTG abre ~13% das mãos, o button ~43%, e por que cada c-bet, bluff e decisão de controle de pote muda com a sua cadeira.
+> **In position (IP)** significa agir por último; **out of position (OOP)** significa agir primeiro. A posição costuma melhorar a realização de equity porque agir por último traz mais informação, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que, numa mesa full ring, o UTG abre ~13% das mãos, o button ~43%, e por que cada c-bet, bluff e decisão de controle de pote muda com a sua cadeira.
 
 ---
 
@@ -97,7 +97,7 @@ Ao longo de milhares de mãos, esse leak vira a maior diferença isolada entre j
 
 ## A melhor posição no poker — e a pior
 
-**A melhor posição no poker é o button.** É a única cadeira garantida a agir ==**por último em toda street pós-flop**== — flop, turn e river, não importa quem aumentou no pré-flop. É essa garantia que faz o button abrir com lucro ~43% das mãos enquanto o UTG se vira com só ~13%: posição, não força de carta, banca a diferença.
+**A melhor posição no poker é o button.** É a única cadeira garantida a agir ==**por último em toda street pós-flop**== — flop, turn e river, não importa quem aumentou no pré-flop. É essa garantia que faz o button abrir com lucro ~43% das mãos enquanto o UTG de full ring se vira com só ~13%: posição, não força de carta, banca a diferença.
 
 Aqui está a vantagem do button numa mão concreta. Você abre A♦9♦ no button, o big blind paga, e o flop vem **K♦7♠2♥** — um board seco que acerta quase ninguém. O big blind dá check — o que aqui não diz quase nada, porque nesse board ele dá check com praticamente todo o range. A informação está em outro lugar: um rei acerta o seu range de abertura muito mais do que o range de pagamento dele. ==g:Uma aposta aqui ganha muito mais vezes do que perde==, e quando ele folda, ace-high leva o pote sem showdown. Agora inverta as cadeiras: OOP com o mesmo A♦9♦, você dá check, ele aposta, e você folda a melhor mão numa fatia relevante das vezes. Mesmas cartas; a cadeira fez todo o trabalho.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -127,7 +127,7 @@ What moves your realization up or down:
 :::card
 🪑 | Position | Acting last often helps you realize equity through information and pot control, but neither position guarantees a result above or below 100%. The ranges and board matter too
 🎯 | Playability | Suited connectors and hands that flop draws realize well; offsuit clunkers realize badly even with decent raw equity
-📚 | Stack depth & skill | Deeper stacks and tougher opponents make marginal equity harder to realize
+📚 | Stack depth & skill | Deeper stacks make marginal equity harder to realize out of position (in position they often help you realize more); tougher opponents cut realization too
 :::
 
 This is the single most important idea most beginner guides leave out, and it's why the [same hand plays completely differently by position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Raw equity is the starting point — what you'd bank if the chips went in right now; realization is what you actually take home. Position influences that gap alongside ranges, board texture, stack depth, and the way the hand is played.

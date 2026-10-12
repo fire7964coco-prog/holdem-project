@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Jouer en position ou hors de position : pourquoi la position bat les cartes",
   seoTitle: "Mêmes cartes, résultat opposé — Jouer en position au poker",
   desc: "Mêmes cartes, résultat opposé ? Ton siège a décidé. Jouer en position ou hors de position, pourquoi ça compte et combien de mains ouvrir d'UTG au bouton.",
-  tldr: "Être en position, c'est parler en dernier : tu vois la décision de chaque adversaire avant de dépenser un jeton. Les exemples de solver montrent que la position améliore généralement la réalisation d'équité, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'UTG ouvre environ 13 % des mains et le bouton environ 43 %, et que la position réécrit chaque décision de c-bet, de bluff et de contrôle du pot postflop.",
+  tldr: "Être en position, c'est parler en dernier : tu vois la décision de chaque adversaire avant de dépenser un jeton. Les exemples de solver montrent que la position améliore généralement la réalisation d'équité, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'à une table full ring, UTG ouvre environ 13 % des mains et le bouton environ 43 %, et que la position réécrit chaque décision de c-bet, de bluff et de contrôle du pot postflop.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -26,7 +26,7 @@ Une heure plus tard, mêmes K♥Q♥, cette fois au bouton. Je relance, la gross
 ---
 
 > **Réponse rapide**
-> **En position (IP)**, tu parles en dernier ; **hors de position (OOP)**, tu parles en premier. La position améliore généralement la réalisation d'équité parce que parler en dernier apporte plus d'informations, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'UTG ouvre ~13 % des mains, le bouton ~43 %, et que chaque c-bet, chaque bluff et chaque décision de contrôle du pot change avec ton siège.
+> **En position (IP)**, tu parles en dernier ; **hors de position (OOP)**, tu parles en premier. La position améliore généralement la réalisation d'équité parce que parler en dernier apporte plus d'informations, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'à une table full ring, UTG ouvre ~13 % des mains, le bouton ~43 %, et que chaque c-bet, chaque bluff et chaque décision de contrôle du pot change avec ton siège.
 
 ---
 
@@ -88,7 +88,7 @@ Sur des milliers de mains, cette fuite s'accumule jusqu'à devenir la plus grand
 
 ## Quelle est la meilleure (et la pire) position au poker ?
 
-**La meilleure position au poker, c'est le bouton.** C'est le seul siège assuré de parler ==**en dernier à chaque tour après le flop**== — flop, turn et river, peu importe qui a relancé préflop. Cette garantie explique que le bouton puisse ouvrir avec profit ~43 % des mains alors qu'UTG n'en joue que ~13 % : c'est la position, pas la force des cartes, qui finance l'écart.
+**La meilleure position au poker, c'est le bouton.** C'est le seul siège assuré de parler ==**en dernier à chaque tour après le flop**== — flop, turn et river, peu importe qui a relancé préflop. Cette garantie explique que le bouton puisse ouvrir avec profit ~43 % des mains alors qu'un UTG de full ring n'en joue que ~13 % : c'est la position, pas la force des cartes, qui finance l'écart.
 
 Voici l'avantage du bouton sur une main concrète. Tu ouvres A♦9♦ au bouton, la grosse blinde paie, et le flop tombe **K♦7♠2♥** — un board sec qui ne touche presque personne. La grosse blinde checke — ce qui ne t'apprend presque rien ici, puisqu'elle checke quasiment toute sa range sur ce board. L'information est ailleurs : un roi touche ta range d'ouverture bien plus souvent que sa range de call. ==g:Une mise ici gagne bien plus souvent qu'elle ne perd==, et quand elle se couche, ta hauteur as a pris le pot sans abattage. Inverse maintenant les sièges : OOP avec les mêmes A♦9♦, tu checkes, elle mise, et tu jettes la meilleure main une part non négligeable du temps. Mêmes cartes ; c'est le siège qui a tout fait.
 

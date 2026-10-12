@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au poker, un « fish » (poisson) désigne un joueur faible et perdant, celui sur qui les bons joueurs (les « sharks », requins) gagnent leur argent. Un fish joue trop de mains, suit trop souvent et n'arrive pas à se coucher, et la phrase célèbre prévient : si tu ne repères pas le fish à ta table, c'est que c'est toi. C'est la lecture la plus importante du jeu : trouve le fish, ou deviens-le.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -154,7 +154,7 @@ La bonne nouvelle : les fuites du fish sont les plus *faciles* à corriger au po
 3. **Arrête de courir sans le bon prix.** Apprends les bases des [cotes du pot](/fr/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") pour ne tirer que quand les maths paient, pas « parce que ça peut tomber ».
 4. **Relance ou couche-toi : limpe moins.** Suivre passivement fait saigner tes jetons. Si une main est assez bonne pour être jouée, elle est en général assez bonne pour relancer ; sinon, couche-la.
 5. **Joue ta position.** Parler en dernier est un avantage énorme que le fish jette par la fenêtre. Jouer plus de mains [en position](/fr/blog/holdem-position-play) et moins hors de position corrige automatiquement une grosse partie des fuites.
-6. **Arrête quand tu tiltes.** L'habitude de fish la plus chère, c'est de continuer à jouer après un bad beat. Reconnais-la et lève-toi.
+6. **Arrête quand tu tiltes.** L'une des habitudes de fish les plus chères, c'est de continuer à jouer après un bad beat. Reconnais-la et lève-toi.
 
 Fais ces six choses et tu cesses d'être l'argent de la table. Pas besoin de devenir un shark du jour au lendemain : il suffit d'arrêter d'être le repas.
 

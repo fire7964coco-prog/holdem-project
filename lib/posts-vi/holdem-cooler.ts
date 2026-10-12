@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "Cooler poker là gì? Ván không thể fold — và vì sao nó không phải bad beat",
+  title: "Cooler poker là gì? Ván không thể fold — và vì sao, theo nghĩa chặt, nó không phải bad beat",
   seoTitle: "Set K gặp set A, không fold được — Cooler poker là gì?",
   desc: "Tôi flop set K, all-in ở turn, định kéo pot thì đối thủ lật set A. Cooler poker là gì, khác bad beat ở đâu, có tránh được không — kèm ví dụ kinh điển.",
   tldr: "Cooler là ván bạn thua một pot lớn với tay bài rất mạnh mà gần như không bao giờ fold đúng được — như đôi K gặp đôi A, hay set thua set lớn hơn. Theo nghĩa chặt dùng trong bài này, bạn đã bị dẫn ngay lúc tiền vào pot và không có lá bài may mắn nào lật ngược thế cờ: bạn chơi đúng mà vẫn thua. Đó là kiểu thảm họa trung thực nhất của poker.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -61,7 +61,7 @@ Cách sạch nhất để không lẫn hai thứ:
 |:---|:---|:---|
 | **Ai dẫn lúc chip vào pot** | Bạn **bị dẫn** | Bạn **đang dẫn** (favorite) |
 | **Có suckout không?** | Không — người thắng dẫn suốt | Có — một draw may mắn đã tới |
-| **Bạn có fold được không?** | Không — tay quá mạnh | Bạn đã đúng khi đẩy tiền vào |
+| **Bạn có fold được không?** | Không — tay quá mạnh | Tùy — bản thân bad beat không cho biết nước đi của bạn có đứng vững không |
 | **Ví dụ kinh điển** | KK gặp AA | AA bị bẻ khi 7‑7 trúng set |
 | **Cảm giác** | "Tôi chưa từng có cơ hội" | "Lẽ ra tôi phải thắng ván đó" |
 

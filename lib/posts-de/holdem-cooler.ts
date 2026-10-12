@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "Was ist ein Cooler beim Poker? Der unvermeidbare Verlust – und warum es kein Bad Beat ist",
+  title: "Was ist ein Cooler beim Poker? Der unvermeidbare Verlust – und warum es streng genommen kein Bad Beat ist",
   seoTitle: "Was ist ein Cooler beim Poker? Die Hand ohne Ausweg",
   desc: "Ein Cooler ist, wenn deine Monsterhand auf eine größere trifft und Folden nie eine Option war – warum es streng genommen kein Bad Beat ist, mit Beispielen.",
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du so gut wie nie korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Im engeren Sinn, den dieser Guide verwendet, lagst du schon beim Reingehen hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -65,7 +65,7 @@ Der sauberste Weg, sie auseinanderzuhalten:
 |:---|:---|:---|
 | **Wer führte, als die Chips reingingen** | Du lagst **hinten** | Du lagst **vorne** (Favorit) |
 | **Gab es einen Suckout?** | Nein – Gewinner führte die ganze Zeit | Ja – ein Glücks-Draw traf |
-| **Hättest du folden können?** | Nein – Hand zu stark | Es war richtig, reinzugehen |
+| **Hättest du folden können?** | Nein – Hand zu stark | Kommt drauf an – der Bad Beat selbst sagt dir nicht, ob dein Play standgehalten hat |
 | **Klassisches Beispiel** | KK trifft auf AA | AA gecrackt, wenn 7‑7 ein Set trifft |
 | **Das Gefühl** | „Ich hatte nie eine Chance“ | „Die hätte ich gewinnen müssen“ |
 

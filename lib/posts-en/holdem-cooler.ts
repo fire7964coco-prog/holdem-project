@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "What Is a Cooler in Poker? The Unavoidable Loss — and Why It's Not a Bad Beat",
+  title: "What Is a Cooler in Poker? The Unavoidable Loss — and Why, Strictly, It's Not a Bad Beat",
   seoTitle: "The Hand You Couldn't Fold If You Tried — What Is a Cooler?",
   desc: "A cooler is when your monster hand runs into a bigger one and folding was never an option — and why, strictly, it's not a bad beat, with classic examples.",
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could almost never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. In the strict sense used in this guide, you were behind when the money went in and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -60,7 +60,7 @@ The cleanest way to keep them straight:
 |:---|:---|:---|
 | **Who led when chips went in** | You were **behind** | You were **ahead** (favorite) |
 | **Did a suckout happen?** | No — winner led all the way | Yes — a lucky draw hit |
-| **Could you have folded?** | No — hand too strong | You were right to get it in |
+| **Could you have folded?** | No — hand too strong | Depends — the bad beat itself doesn't tell you whether your play held up |
 | **Classic example** | KK runs into AA | AA cracked when 7‑7 spikes a set |
 | **The feeling** | "I never had a chance" | "I should have won that" |
 

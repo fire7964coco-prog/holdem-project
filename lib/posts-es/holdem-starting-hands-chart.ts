@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-01",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -161,7 +161,7 @@ El error que hay que evitar es jugar una tabla de 9-max en una partida de 6-max:
 
 ## ¿Qué porcentaje de manos iniciales deberías jugar?
 
-A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un único número plano: las cifras por asiento de arriba — ~13% desde UTG, ~17% desde MP, ~27% desde el cutoff, ~43% desde el botón — son lo ancho que *abres un bote sin abrir*. Tu promedio de sesión queda por debajo de la media bruta de esas cifras, porque muchas veces te enfrentas a una subida (donde continúas con muchas menos manos) y te pasas muchas órbitas atascado en asientos tempranos y en las ciegas.
+A lo largo de una sesión completa, ==un buen objetivo para un principiante es jugar más o menos el 15–20% de las manos que te reparten== — lo que significa foldear el 80–85% en preflop. Eso no es un único número plano: las cifras por asiento de arriba — ~13% desde UTG, ~17% desde MP, ~27% desde el cutoff, ~43% desde el botón — son la amplitud con la que un regular sólido abre un *bote sin abrir*: el techo hacia el que crece tu núcleo de principiante, no su punto de partida. Tu promedio de sesión queda por debajo de la media bruta de esas cifras, porque muchas veces te enfrentas a una subida (donde continúas con muchas menos manos) y te pasas muchas órbitas atascado en asientos tempranos y en las ciegas.
 
 :::stat[15–20%] de las manos repartidas — un rango sano de principiante en 9-max:::
 

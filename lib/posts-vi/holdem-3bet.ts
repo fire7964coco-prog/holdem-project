@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet là lần re-raise đầu tiên trước flop — gọi là 3-bet vì big blind là cược thứ nhất, open-raise là thứ hai và re-raise là thứ ba. 3-bet value với lõi chặt (QQ+, AK) cộng vài bluff có blocker như A5s, size khoảng 3 lần open khi có vị trí và 4 lần khi không, giữ tần suất 3-bet quanh 6–10%. Khi bị 3-bet, hãy 4-bet bài premium, call bài chơi tốt postflop và bỏ phần còn lại — bỏ nhiều hơn mức 'cân bằng' trước đối thủ cược nhỏ không bao giờ bluff.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -286,7 +286,7 @@ A. Bạn có ba lựa chọn: 4-bet với premium (QQ+, AK) cộng thỉnh tho�
 
 **Q. Tỷ lệ fold khi bị 3-bet bao nhiêu là tốt?**
 
-A. Khoảng 55% là đường cơ sở hợp lý, gần cân bằng — bạn tiếp tục với phần trên của range và buông phần còn lại. Con số đó rộng hơn MDF thuần toán học, vốn trước một cú 3-bet 3x khi có vị trí chỉ bắt bạn phòng thủ khoảng một phần ba — nói cách khác, fold không quá khoảng 66,7%. Hãy coi con số đó là trần, không phải mục tiêu. MDF giả định bluff có equity bằng không, nhưng một cú 3-bet bluff thật như A5s mang khoảng 30% equity trước range tiếp tục của bạn, điều đẩy tần suất fold hòa vốn xuống thấp hơn hẳn mức trần lý thuyết đó. Nên 55% là đường cơ sở thực hành chứ không phải bảo đảm: một cú 3-bet light có equity thật vẫn có thể có lời trước nó. Fold nhiều hơn 55% đáng kể khiến bạn bị 3-bet light khai thác; fold ít hơn hẳn nghĩa là bạn call hoặc 4-bet quá rộng. Điều chỉnh theo đối thủ: fold nhiều hơn trước những người không bao giờ 3-bet bluff.
+A. Khoảng 55% là đường cơ sở hợp lý, gần cân bằng — bạn tiếp tục với phần trên của range và buông phần còn lại. Con số đó rộng hơn MDF thuần toán học, vốn trước một cú 3-bet 3x khi có vị trí chỉ bắt bạn phòng thủ khoảng một phần ba — nói cách khác, fold không quá khoảng 66,7%. Hãy coi con số đó là trần, không phải mục tiêu. MDF giả định bluff có equity bằng không, nhưng một cú 3-bet bluff thật như A5s vẫn còn equity khi bị call — khoảng 30% ngay cả trước range QQ+/AK, và nhiều hơn trước một range tiếp tục rộng hơn — điều này đẩy tần suất fold hòa vốn xuống thấp hơn hẳn mức trần lý thuyết đó. Nên 55% là đường cơ sở thực hành chứ không phải bảo đảm: một cú 3-bet light có equity thật vẫn có thể có lời trước nó. Fold nhiều hơn 55% đáng kể khiến bạn bị 3-bet light khai thác; fold ít hơn hẳn nghĩa là bạn call hoặc 4-bet quá rộng. Điều chỉnh theo đối thủ: fold nhiều hơn trước những người không bao giờ 3-bet bluff.
 
 **Q. Stack ngắn trong giải đấu nên 3-bet hay 4-bet all-in?**
 

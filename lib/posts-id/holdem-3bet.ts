@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -284,7 +284,7 @@ A. Anda punya tiga pilihan: 4-bet premium Anda (QQ+, AK) plus bluff blocker sese
 
 **Q. Berapa persentase fold-to-3-bet yang bagus?**
 
-A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet 3x tipikal in position hanya menyuruh Anda bertahan sekitar sepertiga range — dengan kata lain, fold tak lebih dari sekitar 66,7%. Perlakukan angka itu sebagai batas atas, bukan target. MDF mengasumsikan bluff-nya punya equity nol, padahal bluff 3-bet sungguhan seperti A5s membawa kira-kira 30% equity melawan range lanjutan Anda, yang mendorong frekuensi fold titik impas jauh di bawah batas vakum itu. Jadi 55% adalah baseline praktis, bukan jaminan: light 3-bet dengan equity nyata tetap bisa profit melawannya. Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
+A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet 3x tipikal in position hanya menyuruh Anda bertahan sekitar sepertiga range — dengan kata lain, fold tak lebih dari sekitar 66,7%. Perlakukan angka itu sebagai batas atas, bukan target. MDF mengasumsikan bluff-nya punya equity nol, padahal bluff 3-bet sungguhan seperti A5s masih punya equity saat di-call — kira-kira 30% bahkan melawan range QQ+/AK, dan lebih besar lagi melawan range lanjutan yang lebih lebar — yang mendorong frekuensi fold titik impas jauh di bawah batas vakum itu. Jadi 55% adalah baseline praktis, bukan jaminan: light 3-bet dengan equity nyata tetap bisa profit melawannya. Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
 
 **Q. Haruskah Anda 3-bet atau 4-bet all-in dengan stack pendek di turnamen?**
 

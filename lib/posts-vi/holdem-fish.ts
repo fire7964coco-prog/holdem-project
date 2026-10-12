@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "\"Fish\" là tiếng lóng poker chỉ người chơi yếu, thua đều, nguồn tiền của những người chơi mạnh hơn (\"shark\"). Fish chơi quá nhiều tay bài, call quá nhiều và không fold được — câu nói nổi tiếng cảnh báo rằng nếu bạn không nhận ra fish ở bàn, thì fish chính là bạn. Đó là cái read quan trọng nhất trong poker: tìm ra fish, hoặc trở thành fish.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -155,7 +155,7 @@ Tin tốt: những lỗ hổng của fish là thứ *dễ sửa nhất* trong po
 3. **Đừng đuổi theo mà không có giá đúng.** Học [pot odds](/vi/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") cơ bản để bạn chỉ chờ bài khi toán học trả tiền — không phải "vì biết đâu trúng".
 4. **Raise hoặc fold — limp ít đi.** Call thụ động làm chảy máu chip. Nếu một tay đủ tốt để chơi, nó thường đủ tốt để raise; nếu không, fold.
 5. **Chơi theo vị trí.** Act cuối (hành động sau cùng) là lợi thế khổng lồ mà fish vứt đi. Chơi nhiều tay hơn khi [có vị trí (in position)](/vi/blog/holdem-position-play) và ít hơn khi không có vị trí tự động vá một phần lớn lỗ hổng.
-6. **Nghỉ khi bạn tilt.** Thói quen fish đắt nhất là chơi tiếp sau một bad beat. Nhận ra nó và rời bàn.
+6. **Nghỉ khi bạn tilt.** Một trong những thói quen fish đắt nhất là chơi tiếp sau một bad beat. Nhận ra nó và rời bàn.
 
 Làm sáu điều đó và bạn thôi là nguồn tiền. Bạn không cần thành shark sau một đêm — bạn chỉ cần thôi là bữa ăn.
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Chiến thuật vị trí: in position và out of position trong poker",
   seoTitle: "Vị trí hơn cả lá bài — in position và out of position poker",
   desc: "Cùng bài, kết quả ngược nhau — do chỗ ngồi. In position và out of position là gì, vì sao vị trí quan trọng, vị trí đẹp nhất, mở bài từ UTG đến button: 16 phút.",
-  tldr: "In position nghĩa là bạn hành động sau cùng, thấy mọi đối thủ quyết định rồi mới phải bỏ ra một chip. Ví dụ solver cho thấy có vị trí thường giúp hiện thực hóa equity tốt hơn, nhưng không ghế nào bị khóa cứng trên hay dưới 100%: range, bài chung và diễn biến cược có thể đảo ngược quy luật. Đó là lý do UTG chỉ mở khoảng 13% tay bài còn button mở khoảng 43% — và vì sao vị trí viết lại mọi quyết định c-bet, bluff và kiểm soát pot sau flop.",
+  tldr: "In position nghĩa là bạn hành động sau cùng, thấy mọi đối thủ quyết định rồi mới phải bỏ ra một chip. Ví dụ solver cho thấy có vị trí thường giúp hiện thực hóa equity tốt hơn, nhưng không ghế nào bị khóa cứng trên hay dưới 100%: range, bài chung và diễn biến cược có thể đảo ngược quy luật. Đó là lý do, ở bàn full ring, UTG chỉ mở khoảng 13% tay bài còn button mở khoảng 43% — và vì sao vị trí viết lại mọi quyết định c-bet, bluff và kiểm soát pot sau flop.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -26,7 +26,7 @@ Một tiếng sau, cũng K♥Q♥, lần này ở button. Tôi raise, big blind 
 ---
 
 > **Trả lời nhanh**
-> **In position (IP — có vị trí)** nghĩa là bạn hành động sau cùng; **out of position (OOP — không có vị trí)** nghĩa là bạn hành động trước. Vị trí thường cải thiện mức equity thực hiện được (equity realization) vì hành động sau cung cấp nhiều thông tin hơn, nhưng không ghế nào bị khóa cứng trên hay dưới 100%: range, board và diễn biến cược có thể đảo ngược quy luật thông thường. Đó là lý do UTG mở ~13% tay bài, button ~43%, và vì sao mọi quyết định c-bet, bluff và kiểm soát pot đều đổi theo ghế của bạn.
+> **In position (IP — có vị trí)** nghĩa là bạn hành động sau cùng; **out of position (OOP — không có vị trí)** nghĩa là bạn hành động trước. Vị trí thường cải thiện mức equity thực hiện được (equity realization) vì hành động sau cung cấp nhiều thông tin hơn, nhưng không ghế nào bị khóa cứng trên hay dưới 100%: range, board và diễn biến cược có thể đảo ngược quy luật thông thường. Đó là lý do, ở bàn full ring, UTG mở ~13% tay bài, button ~43%, và vì sao mọi quyết định c-bet, bluff và kiểm soát pot đều đổi theo ghế của bạn.
 
 ---
 
@@ -88,7 +88,7 @@ Qua hàng nghìn ván, khoản rò rỉ đó tích lũy thành khác biệt lớ
 
 ## Vị trí đẹp nhất trong poker là ghế nào — và ghế tệ nhất?
 
-**Vị trí đẹp nhất trong poker là button.** Đó là ghế duy nhất được bảo đảm hành động ==**cuối cùng ở mọi vòng cược postflop**== — flop, turn và river, bất kể ai raise preflop. Sự bảo đảm ấy là lý do button có thể open ~43% tay bài một cách có lời trong khi UTG chỉ xoay xở được ~13%: vị trí, không phải sức mạnh lá bài, tài trợ cho khoảng chênh đó.
+**Vị trí đẹp nhất trong poker là button.** Đó là ghế duy nhất được bảo đảm hành động ==**cuối cùng ở mọi vòng cược postflop**== — flop, turn và river, bất kể ai raise preflop. Sự bảo đảm ấy là lý do button có thể open ~43% tay bài một cách có lời trong khi UTG ở bàn full ring chỉ xoay xở được ~13%: vị trí, không phải sức mạnh lá bài, tài trợ cho khoảng chênh đó.
 
 Đây là lợi thế button trong một ván cụ thể. Bạn open A♦9♦ ở button, big blind call, và flop mở **K♦7♠2♥** — một board khô gần như không trúng ai. Big blind check — điều này gần như không nói lên gì ở đây, vì anh ta check gần như toàn bộ range trên board này. Thông tin nằm ở chỗ khác: một lá K trúng range open của bạn thường xuyên hơn hẳn range call của anh ta. ==g:Một cú bet ở đây thắng nhiều hơn thua rất nhiều==, và khi anh ta fold, Át cao lấy pot mà không cần showdown. Giờ đảo ghế: OOP với cùng A♦9♦, bạn check, anh ta bet, và bạn fold tay bài tốt nhất một tỷ lệ đáng kể số lần. Cùng lá bài; cái ghế làm toàn bộ công việc.
 

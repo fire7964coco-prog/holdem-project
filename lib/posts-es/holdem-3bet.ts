@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -288,7 +288,7 @@ A. Tienes tres opciones: meter 4-bet con tus premium (QQ+, AK) más el farol oca
 
 **Q. ¿Cuál es un buen porcentaje de fold-to-3-bet?**
 
-A. En torno al 55% es una base razonable y más o menos balanceada — continúas con la parte alta de tu rango y dejas ir el resto. Eso es más amplio que lo que dicta la MDF pura, que contra un 3-bet típico de 3x en posición te haría defender solo alrededor de un tercio — es decir, no foldear más de un 66.7% aproximadamente. Trata ese número como un techo, no como un objetivo. La MDF asume que los faroles tienen cero equity, pero un farol de 3-bet real como A5s tiene más o menos un 30% de equity contra tu rango de continuación, lo que empuja la frecuencia de fold de equilibrio muy por debajo de ese techo teórico. Así que el 55% es una base práctica, no una garantía: un 3-bet light con equity de verdad todavía puede ser rentable contra esa frecuencia. Foldear mucho más que eso te vuelve explotable por los 3-bets light; foldear mucho menos significa que estás igualando o metiendo 4-bet demasiado amplio. Ajústate al rival: foldea más contra jugadores que nunca farolean con un 3-bet.
+A. En torno al 55% es una base razonable y más o menos balanceada — continúas con la parte alta de tu rango y dejas ir el resto. Eso es más amplio que lo que dicta la MDF pura, que contra un 3-bet típico de 3x en posición te haría defender solo alrededor de un tercio — es decir, no foldear más de un 66.7% aproximadamente. Trata ese número como un techo, no como un objetivo. La MDF asume que los faroles tienen cero equity, pero un farol de 3-bet real como A5s sigue teniendo equity cuando lo pagan — más o menos un 30% incluso contra un rango de QQ+/AK, y más contra un rango de continuación más amplio —, lo que empuja la frecuencia de fold de equilibrio muy por debajo de ese techo teórico. Así que el 55% es una base práctica, no una garantía: un 3-bet light con equity de verdad todavía puede ser rentable contra esa frecuencia. Foldear mucho más que eso te vuelve explotable por los 3-bets light; foldear mucho menos significa que estás igualando o metiendo 4-bet demasiado amplio. Ajústate al rival: foldea más contra jugadores que nunca farolean con un 3-bet.
 
 **Q. ¿Deberías hacer 3-bet o 4-bet all-in con un stack corto en un torneo?**
 

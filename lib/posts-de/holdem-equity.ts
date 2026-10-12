@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -128,7 +128,7 @@ Was deine Realization hoch oder runter bewegt:
 :::card
 🪑 | Position | Als Letzter zu handeln hilft dir oft, Equity zu realisieren – durch Information und Pot-Kontrolle –, aber keine Position garantiert ein Ergebnis über oder unter 100%. Ranges und Board zählen genauso
 🎯 | Spielbarkeit | Suited Connectors und Hände, die Draws floppen, realisieren gut; offsuit Müll realisiert schlecht, selbst mit ordentlicher roher Equity
-📚 | Stacktiefe & Skill | Tiefere Stacks und stärkere Gegner machen marginale Equity schwerer zu realisieren
+📚 | Stacktiefe & Skill | Tiefere Stacks machen marginale Equity out of position schwerer zu realisieren (in Position helfen sie dir oft, mehr zu realisieren); stärkere Gegner drücken die Realization ebenfalls
 :::
 
 Das ist die mit Abstand wichtigste Idee, die die meisten Anfänger-Guides weglassen, und sie ist der Grund, warum [sich dieselbe Hand je nach Position völlig anders spielt](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Die rohe Equity ist der Ausgangspunkt – das, was du bekämst, wenn die Chips sofort reingehen; die Realization ist, was du am Ende wirklich nach Hause trägst. Die Position beeinflusst diese Lücke – zusammen mit Ranges, Board-Textur, Stacktiefe und der Art, wie die Hand gespielt wird.

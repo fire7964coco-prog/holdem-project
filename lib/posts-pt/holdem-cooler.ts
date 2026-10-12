@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "O que é cooler no poker? A derrota inevitável — e por que não é bad beat",
+  title: "O que é cooler no poker? A derrota inevitável — e por que, a rigor, não é bad beat",
   seoTitle: "A mão que você não folda nem se quiser — o que é cooler?",
   desc: "Cooler é quando sua mão monstro esbarra numa maior e foldar nunca foi opção — e por que, a rigor, não é bad beat, com os exemplos clássicos.",
   tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que quase nunca daria para foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. No sentido estrito usado neste guia, você estava atrás quando o dinheiro entrou e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do poker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -61,7 +61,7 @@ A forma mais limpa de não confundir:
 |:---|:---|:---|
 | **Quem liderava quando as fichas entraram** | Você estava **atrás** | Você estava **na frente** (favorito) |
 | **Aconteceu um suckout?** | Não — o vencedor liderou o tempo todo | Sim — um projeto de sorte fechou |
-| **Você poderia ter foldado?** | Não — mão forte demais | Você estava certo em colocar as fichas |
+| **Você poderia ter foldado?** | Não — mão forte demais | Depende — o bad beat em si não diz se a sua jogada se sustentou |
 | **Exemplo clássico** | KK esbarra em AA | AA quebrado quando 7‑7 crava uma trinca |
 | **A sensação** | "Eu nunca tive chance" | "Eu deveria ter ganhado essa" |
 

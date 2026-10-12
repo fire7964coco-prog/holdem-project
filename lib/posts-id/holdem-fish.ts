@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -154,7 +154,7 @@ Kabar baiknya: leak fish adalah yang *paling mudah* diperbaiki di poker, karena 
 3. **Berhenti mengejar tanpa harga.** Pelajari [pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") dasar agar Anda hanya menarik draw ketika matematikanya membayar — bukan "karena mungkin jadi."
 4. **Raise atau fold — kurangi limp.** Call pasif menguras chip. Kalau sebuah tangan cukup bagus untuk dimainkan, biasanya cukup bagus untuk di-raise; kalau tidak, fold.
 5. **Mainkan posisi Anda.** Beraksi terakhir adalah edge besar yang dibuang fish. Memainkan lebih banyak tangan [dalam posisi](/id/blog/holdem-position-play) dan lebih sedikit di luar posisi memperbaiki sebagian besar leak secara otomatis.
-6. **Berhenti saat Anda tilt.** Kebiasaan fish paling mahal adalah terus bermain setelah bad beat. Kenali dan pergi.
+6. **Berhenti saat Anda tilt.** Salah satu kebiasaan fish paling mahal adalah terus bermain setelah bad beat. Kenali dan pergi.
 
 Lakukan enam hal itu dan Anda berhenti menjadi uangnya. Anda tak harus menjadi shark dalam semalam — Anda hanya harus berhenti menjadi santapannya.
 

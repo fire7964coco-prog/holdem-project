@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -154,7 +154,7 @@ A boa notícia: os leaks do fish são os *mais fáceis* de corrigir no poker, po
 3. **Pare de correr atrás sem preço.** Aprenda [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") básicas para só puxar projeto quando a matemática paga — não "porque você pode acertar".
 4. **Aumente ou dê fold — dê menos limp.** Pagar passivamente sangra fichas. Se uma mão é boa o bastante para jogar, geralmente é boa o bastante para aumentar; se não é, dê fold.
 5. **Jogue sua posição.** Agir por último é uma vantagem enorme que o fish joga fora. Jogar mais mãos [em posição](/pt/blog/holdem-position-play) e menos fora dela corrige automaticamente uma parte gigante dos leaks.
-6. **Pare quando der tilt.** O hábito de fish mais caro de todos é continuar jogando depois de um bad beat. Reconheça e vá embora.
+6. **Pare quando der tilt.** Um dos hábitos de fish mais caros é continuar jogando depois de um bad beat. Reconheça e vá embora.
 
 Faça essas seis coisas e você para de ser o dinheiro. Você não precisa virar um shark da noite para o dia — só precisa parar de ser a refeição.
 

@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "Apa Itu Cooler dalam Poker? Kekalahan Tak Terelak yang Bukan Bad Beat",
+  title: "Apa Itu Cooler dalam Poker? Kekalahan Tak Terelak yang Secara Tegasnya Bukan Bad Beat",
   seoTitle: "Tangan yang mustahil anda fold — Apa Itu Cooler dalam Poker",
   desc: "Tangan monster anda bertemu tangan lebih besar dan fold bukan pilihan — itulah cooler. Kenapa, secara ketat, ia bukan bad beat — contoh KK vs AA, set over set.",
   tldr: "Cooler ialah tangan di mana anda kalah pot besar dengan pegangan yang sangat kuat sehingga hampir mustahil untuk fold dengan betul — seperti pocket kings bertemu aces, atau set kalah kepada set yang lebih besar. Dalam erti ketat yang digunakan panduan ini, anda memang di belakang ketika wang masuk dan tiada kad bertuah yang 'suck out' anda: anda bermain betul tetapi tetap kalah. Ia bencana paling jujur dalam poker.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -63,7 +63,7 @@ Cara paling mudah untuk tidak tertukar:
 |:---|:---|:---|
 | **Siapa mendahului ketika cip masuk** | Anda **di belakang** | Anda **di hadapan** (favourite) |
 | **Adakah suckout berlaku?** | Tidak — pemenang mendahului sepanjang jalan | Ya — draw bertuah menjadi |
-| **Bolehkah anda fold?** | Tidak — tangan terlalu kuat | Anda betul memasukkan cip |
+| **Bolehkah anda fold?** | Tidak — tangan terlalu kuat | Bergantung — bad beat itu sendiri tidak memberitahu sama ada permainan anda bertahan |
 | **Contoh klasik** | KK bertemu AA | AA tumbang apabila 7‑7 dapat set |
 | **Perasaannya** | "Saya tak pernah ada peluang" | "Sepatutnya saya menang tangan itu" |
 

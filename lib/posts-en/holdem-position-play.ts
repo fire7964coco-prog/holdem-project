@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Position Strategy: In vs Out of Position",
   seoTitle: "Position Beats Cards — In vs Out of Position Poker Strategy",
   desc: "Two players, same cards, opposite results — the seat did it. In position vs out of position, why position matters, and opening ranges from UTG to the button.",
-  tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
+  tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why, at a full-ring table, UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ An hour later, same K♥Q♥, this time on the button. I raised, the big blind c
 ---
 
 > **Quick answer**
-> **In position (IP)** means you act last; **out of position (OOP)** means you act first. Position usually improves equity realization because acting last supplies more information, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. It's why UTG opens ~13% of hands, the button ~43%, and why every c-bet, bluff, and pot-control decision changes with your seat.
+> **In position (IP)** means you act last; **out of position (OOP)** means you act first. Position usually improves equity realization because acting last supplies more information, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. It's why, at a full-ring table, UTG opens ~13% of hands, the button ~43%, and why every c-bet, bluff, and pot-control decision changes with your seat.
 
 ---
 
@@ -96,7 +96,7 @@ Over thousands of hands, that leak compounds into the single biggest difference 
 
 ## The Best Position in Poker — and the Worst
 
-**The best position in poker is the button.** It's the only seat guaranteed to act ==**last on every postflop street**== — flop, turn, and river, no matter who raised preflop. That guarantee is why the button can profitably open ~43% of hands while UTG manages only ~13%: position, not card strength, funds the difference.
+**The best position in poker is the button.** It's the only seat guaranteed to act ==**last on every postflop street**== — flop, turn, and river, no matter who raised preflop. That guarantee is why the button can profitably open ~43% of hands while a full-ring UTG manages only ~13%: position, not card strength, funds the difference.
 
 Here's the button edge in one concrete hand. You open A♦9♦ on the button, the big blind calls, and the flop comes **K♦7♠2♥** — a dry board that hits almost nobody. The big blind checks — which tells you almost nothing here, because he checks nearly his whole range on this board. The information is elsewhere: a king hits your opening range far more often than his calling range. ==g:A bet here wins far more often than it loses==, and when he folds, ace-high took the pot without a showdown. Now reverse the seats: OOP with the same A♦9♦, you check, he bets, and you're folding the best hand some meaningful share of the time. Same cards; the seat did all the work.
 

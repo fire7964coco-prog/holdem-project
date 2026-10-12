@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -154,7 +154,7 @@ La buena noticia: los leaks del fish son los *más fáciles* de arreglar en el p
 3. **Deja de perseguir sin precio.** Aprende las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") básicas para perseguir solo cuando las matemáticas lo paguen — no "porque a lo mejor pegas".
 4. **Sube o foldea — limpea menos.** El igualar pasivo sangra fichas. Si una mano es lo bastante buena para jugarla, suele ser lo bastante buena para subirla; si no lo es, foldea.
 5. **Juega tu posición.** Actuar el último es una ventaja enorme que los fish tiran a la basura. Jugar más manos [en posición](/es/blog/holdem-position-play) y menos fuera de ella arregla una buena parte de los leaks automáticamente.
-6. **Retírate cuando te tilteas.** El hábito de fish más caro es seguir jugando tras un bad beat. Reconócelo y vete.
+6. **Retírate cuando te tilteas.** Uno de los hábitos de fish más caros es seguir jugando tras un bad beat. Reconócelo y vete.
 
 Haz esas seis cosas y dejas de ser el dinero. No tienes que convertirte en tiburón de la noche a la mañana — solo tienes que dejar de ser la comida.
 

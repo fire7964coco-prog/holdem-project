@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -153,7 +153,7 @@ The good news: the fish leaks are the *easiest* ones in poker to fix, because th
 3. **Stop chasing without a price.** Learn basic [pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") so you only draw when the math pays — not "because you might hit."
 4. **Raise or fold — limp less.** Passive calling bleeds chips. If a hand is good enough to play, it's usually good enough to raise; if it isn't, fold.
 5. **Play your position.** Acting last is a massive edge fish throw away. Playing more hands [in position](/en/blog/holdem-position-play) and fewer out of it fixes a huge chunk of leaks automatically.
-6. **Quit when you tilt.** The single most expensive fish habit is playing on after a bad beat. Recognize it and leave.
+6. **Quit when you tilt.** One of the most expensive fish habits is playing on after a bad beat. Recognize it and leave.
 
 Do those six things and you stop being the money. You don't have to become a shark overnight — you just have to stop being the meal.
 

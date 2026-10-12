@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kicker ialah kad sampingan tertinggi yang bukan sebahagian daripada tangan utama anda — ia memecahkan seri apabila dua pemain memegang tangan yang sama nilainya. High Card guna 4 kicker, Pair 3, Two Pair 1, Three of a Kind 2; Straight, Flush, Full House dan Straight Flush tiada kicker. Itulah sebabnya AK menang ke atas AQ apabila As di board hanya memberi kedua-duanya sepasang As.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -116,7 +116,7 @@ Board ialah ==b:10♠ J♦ Q♣ K♥ A♠== — straight 10 hingga As yang sudah
 - Anda memegang ==b:2♣ 3♦==. Lima kad terbaik anda ialah straight di board; 2 dan 3 tidak menambah apa-apa.
 - Lawan anda memegang ==b:4♥ 5♦==. Cerita yang sama — straight di board juga lima kad terbaik mereka.
 
-Tiada sesiapa antara anda berdua boleh pergi lebih tinggi daripada As, jadi kedua-duanya "playing the board" dan ==g:membahagi pot (chop)== — tetapi hanya jika anda membuka hole card anda; muck kad itu dan anda tidak mendapat apa-apa, walaupun di sini (Peraturan 19 TDA 2024). Straight tiada kicker, jadi hole card itu sekadar beban mati. Apabila anda mendengar "the board plays", inilah maksudnya — dan inilah satu-satunya situasi di mana hole card yang nampak kuat bernilai kosong sama sekali. (Lebih lanjut tentang mengesan runout begini dalam [cara membaca board](/ms/blog/holdem-reading-the-board).)
+Tiada sesiapa antara anda berdua boleh pergi lebih tinggi daripada As, jadi kedua-duanya "playing the board" dan ==g:membahagi pot (chop)== — tetapi hanya jika anda membuka hole card anda; muck kad itu dan biasanya anda tidak mendapat apa-apa, walaupun di sini (Peraturan 19 TDA 2024). Straight tiada kicker, jadi hole card itu sekadar beban mati. Apabila anda mendengar "the board plays", inilah maksudnya — satu situasi di mana hole card yang nampak kuat pun bernilai kosong sama sekali. (Lebih lanjut tentang mengesan runout begini dalam [cara membaca board](/ms/blog/holdem-reading-the-board).)
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sur les 169 types de mains de départ, seule une petite tranche du haut, environ 15 à 20 % des mains que tu reçois, est rentable pour un débutant. Les grosses paires (AA à TT) et AK relancent depuis n'importe quel siège ; plus tu parles tard, plus tu ouvres large, d'environ 13 % under the gun à environ 43 % au bouton (encore plus large en 6-max). Commence par une sélection de mains simplifiée et passe aux ranges préflop de solver une fois que « relancer ou se coucher » est devenu automatique.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -153,7 +153,7 @@ L'erreur à éviter, c'est de jouer une grille 9-max dans une partie 6-max : tu 
 
 ## Quel pourcentage de mains de départ faut-il jouer ?
 
-Sur une session complète, ==un objectif solide pour un débutant est de jouer environ 15 à 20 % des mains que tu reçois== — autrement dit, de te coucher préflop 80 à 85 % du temps. Ce n'est pas un chiffre unique : les chiffres par siège ci-dessus — ~13 % depuis UTG, ~17 % depuis MP, ~27 % depuis le cut-off, ~43 % depuis le bouton — indiquent la largeur avec laquelle tu *ouvres un pot où personne n'est entré*. Ta moyenne de session tombe plus bas que la moyenne brute de ces chiffres, parce que tu fais souvent face à une relance (où tu continues avec bien moins de mains) et que tu passes beaucoup de tours coincé dans les sièges précoces et aux blindes.
+Sur une session complète, ==un objectif solide pour un débutant est de jouer environ 15 à 20 % des mains que tu reçois== — autrement dit, de te coucher préflop 80 à 85 % du temps. Ce n'est pas un chiffre unique : les chiffres par siège ci-dessus — ~13 % depuis UTG, ~17 % depuis MP, ~27 % depuis le cut-off, ~43 % depuis le bouton — indiquent la largeur avec laquelle un régulier solide ouvre un *pot où personne n'est entré* : le plafond vers lequel ton noyau de débutant grandit, pas son point de départ. Ta moyenne de session tombe plus bas que la moyenne brute de ces chiffres, parce que tu fais souvent face à une relance (où tu continues avec bien moins de mains) et que tu passes beaucoup de tours coincé dans les sièges précoces et aux blindes.
 
 :::stat[15–20 %] des mains reçues — une range saine pour un débutant en 9-max:::
 
