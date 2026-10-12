@@ -49,6 +49,9 @@ export function solverLinkFor(sim: TableSim, reachedFlop: boolean, lang: string)
   const spot = `srp-${opener}-${caller}`.toLowerCase();
   if (!READY_SRP.has(spot)) return { info: { kind: "notReady", opener, caller }, href: study };
 
+  // ★지금은 프리플랍 폴드가 없어(`runHand`) reachedFlop이 항상 참 → flop=null 분기는 도달하지 않는다.
+  //   프리플랍 폴드를 넣는 날: 솔버는 flop 없이 열면 기본 플랍(A♥7♦2♣)을 자동으로 띄우므로
+  //   solverNote의 «플랍 3장은 솔버 화면에서 골라 보세요»를 «기본 플랍으로 열립니다» 꼴로 6언어 같이 고친다(MA-491 통지 ②).
   const flop = reachedFlop ? sim.board.slice(0, 3) : null;
   const q = new URLSearchParams({ view: "flop-study", spot });
   if (flop) q.set("flop", flop.map(cardText).join(""));

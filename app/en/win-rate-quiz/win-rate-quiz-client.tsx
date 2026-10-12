@@ -19,11 +19,13 @@ const EN_UI: QuizUI = {
   raise: "Raise",
   call: "Call",
   check: "Check",
+  allIn: "All-in",
   tableNote: "6-max or 9-handed table · pick how many see the flop (2–6)",
   playersBtn: (n) => `${n} players`,
   playersLabel: "Players",
   tableBtn: (n) => `${n}-max`,
   styleLabel: "Opponent style",
+  styleHint: "Opponent style — only changes the action rules from the flop on; preflop ranges stay the same",
   styleNames: { standard: "Normal", tight: "Tight", loose: "Loose", aggressive: "Aggro" },
   loading: "Shuffling and running the numbers…",
 
@@ -171,7 +173,7 @@ const EN_UI: QuizUI = {
         Rules are checked from the top; the first line that fits decides the action. A draw means a four-card flush or straight pattern on the flop or turn that uses at least one hole card (there are no draws on the river).{" "}
         {style === "aggressive" && "Every Aggro raise, semi-bluffs and bluffs included, is 150% of the pot. "}
         When anyone raises, every player still in calls that raise amount, and a bet bigger than the remaining
-        stack is capped at an all-in. There are no check-raises — each opponent acts once per street by the rules, and there is no step where a player checks and then responds again. You never bet here; you just call to the river.
+        stack is capped at an all-in. After an all-in nobody folds — the rest of the board is dealt and it goes to showdown. There are no check-raises — each opponent acts once per street by the rules, and there is no step where a player checks and then responds again. You never bet here; you just call to the river.
         Preflop ranges (below) are the same whatever the style.
       </p>
       <p className="mb-2">

@@ -526,8 +526,8 @@ export interface StreetRecord {
   opponentsBefore: number;
   /** 이번에 폴드한 좌석(TableSim의 slot 번호) */
   foldedSlots: number[];
-  /** 좌석별 액션 — 화면에 "레이즈·콜·폴드"를 붙이는 데 쓴다 */
-  actionBySlot: Record<number, Action>;
+  /** 좌석별 액션 — 화면에 "레이즈·콜·폴드"를 붙이는 데 쓴다 · "allIn" = 앞 스트리트에 스택을 다 넣어 더 액션하지 않음 */
+  actionBySlot: Record<number, Action | "allIn">;
   /** 상대가 건 금액 (0 = 아무도 안 걺) */
   bet: number;
   /** 베팅 전 팟 */
@@ -641,9 +641,13 @@ export function runHand(
 
     // ── 상대 액션 (프리플랍은 좌석 배정 단계에서 이미 정해졌으므로 폴드 없음)
     const foldedSlots: number[] = [];
-    const actionBySlot: Record<number, Action> = {};
+    const actionBySlot: Record<number, Action | "allIn"> = {};
     let bet = 0;
-    if (s > 0 && live.length) {
+    if (s > 0 && live.length && remaining <= 0) {
+      // ★앞 스트리트에서 스택을 다 넣었다(올인) — 남은 사람은 폴드할 수 없고 쇼다운까지 간다(MA-491 통지 ①).
+      //   액션이 없으므로 이력도 늘리지 않는다 → 레인지는 올인한 스트리트의 것 그대로.
+      for (const i of live) actionBySlot[oppSlots[i]] = "allIn";
+    } else if (s > 0 && live.length) {
       const stay: number[] = [];
       let strongest: Action = "fold";
       for (const i of live) {

@@ -104,6 +104,8 @@ export interface QuizUI {
   raise: string;
   call: string;
   check: string;
+  /** 앞 스트리트에 스택을 다 넣은 상대 — 더 액션하지 않는다(MA-491 통지 ①) */
+  allIn: string;
   tableNote: string;
   /** 인원 버튼의 접근성 이름(«3명») — 버튼 글자는 숫자만 */
   playersBtn: (n: number) => string;
@@ -113,6 +115,8 @@ export interface QuizUI {
   tableBtn: (size: number) => string;
   /** 상대 성향 고르기 (S-034 2차 ②) — 접근성 이름 + 성향 이름 */
   styleLabel: string;
+  /** 성향 select의 title(마우스 올림) — 성향은 플랍부터의 규칙만 바꾼다(MA-491 통지 ③) */
+  styleHint: string;
   styleNames: Record<OppStyle, string>;
   loading: string;
   /** 승률 카드 */
@@ -953,12 +957,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     }
 
     // 액션 라벨
-    const act: Action | undefined = rec?.actionBySlot[slot];
+    const act: Action | "allIn" | undefined = rec?.actionBySlot[slot];
     // 프리플랍에는 액션이 없으므로 «어떤 레인지로 들어왔나»(오픈·수비)를 대신 적는다
     const role = !isHero ? sim.oppRoles[k - 1] : undefined;
     const statusText = isHero ? undefined
       : act === "raise" ? ui.raise
       : act === "call" ? ui.call
+      : act === "allIn" ? ui.allIn
       : street === 0 ? (role?.kind === "open" ? ui.roleOpen : ui.roleDefend) : ui.check;
 
     const label = isHero
@@ -1009,7 +1014,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       </div>
       {/* 상대 성향 — 네이티브 select(폰에서 OS 선택창) · 기본이 아니면 금색 테두리 */}
       <select value={style} onChange={(e) => changeStyle(e.target.value as OppStyle)}
-        aria-label={ui.styleLabel} title={ui.styleLabel}
+        aria-label={ui.styleLabel} title={ui.styleHint}
         className="max-w-[68px] sm:max-w-none py-1.5 pl-1.5 pr-0 sm:pl-2 sm:pr-1 rounded-full text-[12px] sm:text-sm font-bold border-2 bg-transparent cursor-pointer"
         style={style === "standard"
           ? { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }
