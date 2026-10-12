@@ -63,6 +63,8 @@ Konsep di bawahnya ialah ==kelebihan range==: range keseluruhan siapa yang lebih
 
 Dan kelebihan range bukan keseluruhan cerita — tambahkan posisi di atasnya dan kesannya menjadi ekstrem. Pada A-7-2 rainbow, solver membuat pemain yang call check 98.2% daripada range-nya, termasuk top pair — equity range-nya hanya ketinggalan 45.1% berbanding 54.9%, namun bertindak dahulu (out of position) mengubah jurang kecil itu menjadi check yang hampir menyeluruh. Pecahan penuhnya ada dalam [top pair, tetapi masih check](/ms/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-ms.webp").
 
+> **Semak hand anda sendiri dari spot ini** — Contoh A-7-2 di atas ialah pot BTN open dan BB call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, BTN dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin sedikit berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 ---
 
 ## Flop Mana Patut Di-C-Bet? Semuanya Tentang Tekstur Board

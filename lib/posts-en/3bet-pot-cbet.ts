@@ -272,6 +272,8 @@ Check the header first: **Pot 22.5bb · Stack 89bb**. Seeing those instead of th
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
+> **Review your own hand from this spot** — This spot is a 3-bet pot: BTN opens, BB 3-bets and BTN calls. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**3-bet pot**, **Opening seat** BTN, **3-betting seat** BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ slightly from the example above, and it may not suit pub games or tournaments.
+
 ## FAQ
 
 **Q. What does SPR mean in poker?**

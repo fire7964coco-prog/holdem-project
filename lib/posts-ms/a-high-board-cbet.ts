@@ -139,6 +139,8 @@ Buka [solver GTO percuma](/ms/solver), kemudian pilih **Spot belajar → Board k
 
 Untuk berlatih membuat keputusan, buka **Trainer GTO** di bar sisi. Aplikasi memberikan tangan berdasarkan range sebenar, anda memilih tindakan, kemudian melihat kerugian EV pilihan itu dalam big blind; skor menilai kerugian tersebut berbanding pot. Penggunaannya percuma, tanpa pemasangan dan tanpa akaun wajib.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot BTN open dan BB call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, BTN dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin sedikit berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 ## Soalan Lazim
 
 **Q. Adakah A7 top pair pada board A-7-2?**

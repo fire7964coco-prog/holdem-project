@@ -195,6 +195,8 @@ Schau zuerst auf die Kopfzeile: **Pot 22,5bb · Stack 89bb**. Dort diese Werte s
 
 Öffne dann den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand nach den echten Range-Gewichten aus und zeigt dir, wie viele Big Blinds deine Aktion kostet. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein 3-Bet-Pot: BTN eröffnet, BB 3-bettet und BTN callt. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**3-Bet-Pot**, **Eröffnende Position** BTN, **3-bettende Position** BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen leicht vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 ## FAQ
 
 **Q. Wofür steht SPR beim Poker?**

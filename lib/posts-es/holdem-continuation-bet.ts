@@ -89,6 +89,8 @@ La parte sutil: puedes tener una sin la otra. En A‑8‑3 tienes muchos más to
 
 Y la ventaja de rango no es toda la historia — súmale la posición encima y el efecto se vuelve extremo. En A-7-2 arcoíris un solver hace que quien pagó pase el ==98.2%== de su rango, top pair incluido — su rango solo va por detrás en equity por 45.1% a 54.9%, pero estar fuera de posición convierte esa diferencia modesta en un check casi total. El desglose completo está en [top pair, y aun así pasa](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
+> **Revisa tu propia mano en este spot** — El ejemplo de A-7-2 de arriba es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir un poco del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 ---
 
 ## ¿Con qué frecuencia deberías cbetear? (Frecuencia)

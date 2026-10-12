@@ -150,6 +150,8 @@ Die Faustregel lässt sich mit einer Bedingung verallgemeinern: **Die Seite mit 
 
 Willst du denselben Spot trainieren, statt ihn nur zu lesen, öffne den **GTO-Trainer** in der Seitenleiste: Er teilt dir eine Hand aus der echten Range aus, du wählst eine Aktion, und er zeigt dir, wie viele Big Blinds dich diese Entscheidung gekostet hat. Er ist kostenlos, ohne Installation und ohne Konto.
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein Pot mit BTN-Open und BB-Call. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**Open · Call**, BTN und BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen leicht vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 ## FAQ
 
 **Q. Ist A7 auf einem A-7-2-Board Top Pair?**

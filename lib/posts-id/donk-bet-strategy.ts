@@ -205,6 +205,8 @@ Cara terbaik mempelajarinya adalah **membandingkan dengan board kering**. Buka �
 
 Lalu buka **Trainer GTO** di sidebar untuk melatih keputusan lead yang baru Anda pelajari. Trainer membagikan hand acak sesuai bobot range sebenarnya dan menunjukkan biaya keputusan yang keliru dalam big blind. Gratis, tanpa instalasi dan tanpa akun.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot BTN open dan BB call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Open · Call**, BTN dan BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa sedikit berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 ## Pertanyaan umum
 
 **Q. Apa itu donk bet dalam poker?**

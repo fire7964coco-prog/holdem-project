@@ -155,6 +155,8 @@ Bu pratik kural tek bir şartla genelleşir: **range avantajı olan — ama beli
 
 Aynı spotu okumak yerine çalışmak istersen kenar çubuğundan **GTO Trainer**'ı aç: gerçek range'den sana bir el dağıtır, aksiyonunu seçersin ve o seçimin sana kaç big blind'a mal olduğunu söyler. Ücretsiz; kurulum yok, hesap yok.
 
+> **Bu spotta oynadığın eli analiz et** — Bu spot, BTN'in open yapıp BB'nin call ettiği bir pottur. Aynı durumu kendin oynadıysan solver'daki [El analizi](https://solver.holdemmaster.com/?view=hand-review&lang=tr) ekranını aç, durumu (**Open · Call**, BTN ve BB) ve **Senin pozisyonun** alanını ayarla, **2 kartın** ve **3 flop kartı** alanlarından kartları seç, sonra rakibininkiler dahil aksiyonlara gerçekte oynandığı sırayla dokun. Bu seçimin **En iyi oyun**, **Kabul edilebilir** ya da **Bu oyunu tekrar incele** gruplarından hangisine girdiğini gösterir. El analizi, uygulamanın preflop chart'larını (online 6-max cash, 100bb) temel aldığı için sayılar yukarıdaki örnekten biraz farklı olabilir; ayrıca ev oyunlarına veya turnuvalara uygun olmayabilir.
+
 ## Sıkça sorulan sorular
 
 **Q. A-7-2 board'unda A7 top pair mi?**

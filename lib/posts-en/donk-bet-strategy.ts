@@ -259,6 +259,8 @@ The best way to study this one is **side by side with a dry board.** Open "Dry K
 
 Then open the **GTO Trainer** in the sidebar and let it deal you the lead you just read about — it hands you a random hand from the real range weights and tells you in big blinds what choosing wrong cost. Free, nothing to install, no account.
 
+> **Review your own hand from this spot** — This spot is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ slightly from the example above, and it may not suit pub games or tournaments.
+
 ## FAQ
 
 **Q. What is a donk bet in poker?**

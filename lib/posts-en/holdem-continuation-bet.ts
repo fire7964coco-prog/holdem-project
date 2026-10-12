@@ -64,6 +64,8 @@ The concept underneath is ==range advantage==: whose overall range is stronger o
 
 And range advantage isn't the whole story — add position on top of it and the effect gets extreme. On A-7-2 rainbow a solver has the caller checking 98.2% of its range, top pair included — its range equity trails only 45.1% to 54.9%, yet being out of position turns that modest gap into an almost total check. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
+> **Review your own hand from this spot** — The A-7-2 example above is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ slightly from the example above, and it may not suit pub games or tournaments.
+
 ---
 
 ## Which Flops to C-Bet: It's All About Board Texture

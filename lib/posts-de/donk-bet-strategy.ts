@@ -221,6 +221,8 @@ Am besten studierst du diesen Spot **direkt neben einem trockenen Board.** Öffn
 
 Öffne danach den **GTO-Trainer** in der Seitenleiste und lass dir genau die Donk Bet austeilen, über die du gerade gelesen hast – er gibt dir eine zufällige Hand aus den echten Range-Gewichten und sagt dir in Big Blinds, was die falsche Wahl gekostet hat. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein Pot mit BTN-Open und BB-Call. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**Open · Call**, BTN und BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen leicht vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 ## FAQ
 
 **Q. Was ist eine Donk Bet im Poker?**

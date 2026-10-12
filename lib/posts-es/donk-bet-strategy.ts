@@ -229,6 +229,8 @@ La mejor forma de estudiar este es **al lado de un board seco.** Abre primero "B
 
 Después abre el **Entrenador GTO** en la barra lateral y deja que te reparta el lead que acabas de leer: te da una mano al azar con los pesos reales del rango y te dice en ciegas grandes lo que costó elegir mal. Gratis, sin nada que instalar y sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir un poco del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 ## Preguntas frecuentes
 
 **Q. ¿Qué es un donk bet en poker?**

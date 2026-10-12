@@ -63,6 +63,8 @@ Bunun altında yatan kavram ==range avantajı (range advantage)==: bu belirli fl
 
 Üstelik hikâye range avantajıyla bitmiyor — üstüne pozisyonu da ekleyince etki uç noktaya varıyor. A-7-2 rainbow'da solver, call eden oyuncuya range'inin %98,2'sini check ettiriyor, top pair dahil — range equity'si %45,1'e karşı %54,9 ile sadece biraz geride, ama pozisyon dışında olmak bu küçük farkı neredeyse topyekûn bir check'e çeviriyor. Ayrıntılı döküm [top pair var, yine de check](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp") yazısında. Rakamları okumakla yetinmeyeceksen [bu spotu kendin çöz](/tr/solver): ücretsiz GTO solver'da Study Spots → Dry Ace-High Board yolu aynı ekranı açar; kurulum yok, hesap yok.
 
+> **Bu spotta oynadığın eli analiz et** — Yukarıdaki A-7-2 örneği, BTN'in open yapıp BB'nin call ettiği bir pottur. Aynı durumu kendin oynadıysan solver'daki [El analizi](https://solver.holdemmaster.com/?view=hand-review&lang=tr) ekranını aç, durumu (**Open · Call**, BTN ve BB) ve **Senin pozisyonun** alanını ayarla, **2 kartın** ve **3 flop kartı** alanlarından kartları seç, sonra rakibininkiler dahil aksiyonlara gerçekte oynandığı sırayla dokun. Bu seçimin **En iyi oyun**, **Kabul edilebilir** ya da **Bu oyunu tekrar incele** gruplarından hangisine girdiğini gösterir. El analizi, uygulamanın preflop chart'larını (online 6-max cash, 100bb) temel aldığı için sayılar yukarıdaki örnekten biraz farklı olabilir; ayrıca ev oyunlarına veya turnuvalara uygun olmayabilir.
+
 ---
 
 ## Hangi flop'lara c-bet yapılır? Her şey board dokusunda

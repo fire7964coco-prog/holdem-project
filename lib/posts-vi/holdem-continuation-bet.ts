@@ -63,6 +63,8 @@ Khái niệm nền là ==lợi thế range (range advantage)==: range tổng th�
 
 Và lợi thế range chưa phải toàn bộ câu chuyện — chồng thêm vị trí lên và hiệu ứng trở nên cực đoan. Trên A-7-2 rainbow, solver cho người call check 98,2% range của mình, kể cả top pair (đôi cao nhất) — range của họ chỉ có 45,1% equity (phần pot kỳ vọng, tính cả khi chia pot) so với 54,9%, vậy mà việc không có vị trí biến khoảng cách khiêm tốn đó thành một cú check gần như toàn bộ. Phân tích đầy đủ nằm trong [top pair mà vẫn check](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp").
 
+> **Phân tích ván bài của chính bạn ở spot này** — Ví dụ A-7-2 ở trên là pot BTN open và BB call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, BTN và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể hơi khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 ---
 
 ## Flop nào nên c-bet? Tất cả nằm ở kết cấu board

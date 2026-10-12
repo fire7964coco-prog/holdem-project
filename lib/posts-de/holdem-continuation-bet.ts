@@ -63,6 +63,8 @@ Das Konzept dahinter ist der ==Range Advantage==: wessen Gesamt-Range auf diesem
 
 Und der Range Advantage ist nicht die ganze Geschichte – kommt die Position dazu, wird der Effekt extrem. Auf A-7-2 Rainbow checkt der Caller laut Poker-Solver 98,2% seiner Range, Top Pair eingeschlossen – seine Range-Equity liegt mit 45,1% zu 54,9% nur moderat hinten, doch out of Position wird aus diesem Rückstand ein fast vollständiger Check. Die ganze Auswertung findest du unter [Top Pair und trotzdem Check](/de/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-de.webp").
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Das A-7-2-Beispiel oben ist ein Pot mit BTN-Open und BB-Call. Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**Open · Call**, BTN und BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen leicht vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 ---
 
 ## Welche Flops solltest du c-betten? Es geht um die Board-Textur

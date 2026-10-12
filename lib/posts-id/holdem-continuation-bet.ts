@@ -65,6 +65,8 @@ Konsep yang mendasarinya adalah ==range advantage==: range keseluruhan siapa yan
 
 Angka untuk opener tidak bisa langsung diterapkan kepada caller. Pada contoh A♥7♦2♣ setelah BTN open dan BB call, BB check dengan 98,2% range-nya, termasuk top pair. Analisis [A-7-2: mengapa top pair juga check](/id/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-id.webp") memperlihatkan bagaimana posisi dan realisasi equity memengaruhi keputusan itu.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Contoh A-7-2 di atas adalah pot BTN open dan BB call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Open · Call**, BTN dan BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa sedikit berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 ---
 
 ## Flop Mana yang Di-C-Bet: Semua Soal Board Texture

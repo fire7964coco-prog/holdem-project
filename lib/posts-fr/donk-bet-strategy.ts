@@ -214,6 +214,8 @@ La meilleure façon d'étudier celui-ci, c'est **côte à côte avec un board se
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale et laisse-le te distribuer le lead que tu viens de lire : il te donne une main au hasard selon les vrais poids de la range et te dit en grosses blindes ce qu'un mauvais choix t'a coûté. Gratuit, rien à installer, sans compte.
 
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer un peu de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 ## FAQ
 
 **Q. Pourquoi dit-on que le donk bet est mauvais ?**

@@ -63,6 +63,8 @@ Le concept qui est dessous, c'est l'==avantage de range== : quelle range est glo
 
 Et l'avantage de range n'est pas toute l'histoire — ajoute la position par-dessus et l'effet devient extrême. Sur A-7-2 arc-en-ciel, un solver fait checker 98,2 % de sa range au joueur qui a payé, top paire comprise — l'équité de sa range n'est derrière qu'à 45,1 % contre 54,9 %, et pourtant le fait d'être hors de position transforme cet écart modeste en check quasi total. L'analyse complète est dans [top paire, et il checke quand même](/fr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-fr.webp").
 
+> **Revois ta propre main dans ce spot** — L'exemple A-7-2 ci-dessus est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer un peu de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 ---
 
 ## Sur quels flops faire un c-bet ? Tout dépend de la texture du board
