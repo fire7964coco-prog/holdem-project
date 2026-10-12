@@ -116,7 +116,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Dá para ver de relance em quais boards se aposta mais?",
-    a: "Dá, em «Relatórios de flop» na barra lateral. Você escolhe o spot e as posições e vê a média da frequência de aposta e do EV em 1.755 flops pré-calculados, ponderados pela frequência com que cada flop realmente sai. São duas decisões: a primeira decisão de quem age primeiro e a do jogador em posição após um check. Agrupando por «Carta alta», «Naipes», «Pares» ou «Conexão», você compara em quais boards a aposta sobe ou cai, e ao tocar numa linha esse flop abre em «Estudar flop». A base é 6-max com 100bb e erro alvo de 0,3%, e os tamanhos de aposta são fixos: 33% e 75% no flop. Spots que ainda não foram pré-calculados não aparecem.",
+    a: "Dá, em «Relatórios de flop» na barra lateral. Você escolhe o spot e as posições e vê a média da frequência de aposta e do EV em 1.755 flops pré-calculados, ponderados pela frequência com que cada flop realmente sai. São duas decisões: a primeira decisão de quem age primeiro e a do jogador em posição após um check. Agrupando por «Carta alta», «Naipes», «Pares» ou «Conexão», você compara em quais boards a aposta sobe ou cai, e ao tocar numa linha esse flop abre em «Estudar flop». A base é 6-max com 100bb e erro alvo de 0,3%, e os tamanhos de aposta são fixos: 33% e 75% no flop. Spots que ainda não foram pré-calculados aparecem como «Em breve» e ainda não podem ser consultados.",
   },
   {
     q: "Qual é a diferença para o GTO Wizard ou o PioSOLVER?",
