@@ -116,7 +116,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
   },
   {
     q: "Werden meine Ranges an einen Server geschickt?",
-    a: "Nein. Gerechnet wird auf dem Prozessor deines eigenen Geräts, nicht auf unseren Servern. Gespeicherte Ranges bleiben in deinem Browser und verlassen ihn nur, wenn du einen Teilen-Link erzeugst oder eine Datei exportierst. Mit Login kannst du den Übungsverlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr Übungsverlauf bleiben auch mit Login nur auf diesem Gerät.",
+    a: "Zum Rechnen nicht. Gerechnet wird auf dem Prozessor deines eigenen Geräts, nicht auf unseren Servern. Gespeicherte Ranges bleiben in deinem Browser und verlassen ihn nur, wenn du einen Teilen-Link erzeugst, eine Datei exportierst oder dich anmeldest – mit Login werden deine gespeicherten Ranges und Einstellungen im Konto aufbewahrt, damit du sie auf anderen Geräten öffnen kannst. Mit Login kannst du den Übungsverlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr Übungsverlauf bleiben auch mit Login nur auf diesem Gerät.",
   },
   {
     q: "Berücksichtigt der Poker Solver den Rake?",

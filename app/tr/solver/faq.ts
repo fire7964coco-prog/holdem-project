@@ -86,7 +86,7 @@ export const SOLVER_FAQ_TR: FaqItem[] = [
   },
   {
     q: "Çalışma ilerlemem nereye kaydediliyor?",
-    a: "Varsayılan olarak cihazına, hesap gerekmeden. HoldemMaster hesabıyla giriş yaparsan Örnek spotlar ve Günün sorusu geçmişin cihazlar arasında eşitlenebilir. Günün sorusu gün serisi ve tamamlandı işareti her cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi giriş yapsan bile bu cihazda kalır; hesabına kaydedilmez. Seriler, senaryoya göre zayıf spot dökümleri ve EV kaybettiğin elleri toplayan Review kuyruğu pratik geçmişini kullanır.",
+    a: "Varsayılan olarak cihazına, hesap gerekmeden. HoldemMaster hesabıyla giriş yaparsan Örnek spotlar ve Günün sorusu geçmişin cihazlar arasında eşitlenebilir. Günün sorusu gün serisi ve tamamlandı işareti her cihazda ayrı tutulur. Kendi çözdüğün spotlar ve onların pratik geçmişi giriş yapsan bile bu cihazda kalır; hesabına kaydedilmez. Kayıtlı range ve bet ayarı listelerin ise giriş yaptığında hesabında saklanır; onları başka bir cihazda açabilirsin. Seriler, senaryoya göre zayıf spot dökümleri ve EV kaybettiğin elleri toplayan Review kuyruğu pratik geçmişini kullanır.",
   },
   {
     q: "Ana ekranıma yükleyebilir miyim?",

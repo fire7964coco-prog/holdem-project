@@ -968,6 +968,30 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 라벨 유지(요청 아님): ① bad-beat L90 «trips di board»(EN L100) OK🪶 정밀화 여지 ② bad-beat L129 «ada yang mengambil rake daripada potongan jackpot» 방향 뒤집힘 읽힘(ms 고유 · 경미) ③ straddle EN «a few rooms let the straddler post any amount» = 검수장 EN 재판정 몫 ④ straddle «Preflop sahaja»·팟오즈 · rake «online lebih rendah» 단서 누락 · «much of»→«kebanyakan».
 - 🔴 ms `masterUpdated` 그대로 · EN-먼저(BJ-1~3)는 EN `updated` 갱신 → 형제는 EN 문면 확정 뒤. 이행 순서 = ms 고유(BJ-4·5) → EN+ms(BJ-1~3) → 형제 9.
 
+### 2-BK. 우편함 수신분 — MA-471 (MS rankings 묶음 4 · split-pot-rules·reading-the-board·flush-vs-straight · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267
+
+> WRONG 0 · RISKY 4. 요청 2(ms 고유 · EN `6164c748` 09-28 미전파) + EN-먼저 1. 위치 대조 main `7c14893d`.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BK-1 ms | split-pot L108 «Hole card yang tinggi hanya penting apabila ia benar-benar dimainkan sebagai kicker» | EN «only matters when it actually plays, as part of the hand itself or as a kicker»(같은 글 L77 A♠ 넛 플러시가 반례) |
+| BK-2 ms | flush-vs-straight L172 «Prinsipnya tidak pernah berubah: ==tangan yang lebih jarang menang==.» | EN «of those two hands, the rarer one ranks higher»(숏덱 하이카드<원페어 · Straight>Trips 반례) |
+| BK-3 🔴 EN-먼저 | reading-the-board 스캔 절차 EN L77–78 «Take the highest — Whatever the strongest thing you found is, that's your hand» · FAQ L240 «flush first … then straight … then paired ranks» = 스트레이트 플러시 단계 없음 · ms L77–80·FAQ L242 동형 + 형제 | 같은 글 L188 정정 논리로 SF 확인 단계 추가(A♠9♠ / 8♠7♠6♠5♠K♦ = 9-high SF) · 요약 상자는 변경 불요 · EN + ms + 형제 |
+
+- 🪶 통지(요청 아님): ① L79 «padankan nilai» 보드 페어 강독(EN 동형 · L165·L242가 정답) ② split-pot L172 «biasanya di board berpasangan dua» → «contohnya» 권고 ③ reading-the-board FAQ L248 «normally»+A 109 괄호 미전파 ④ 숏덱 서열 WSOP 2026 PDF OK.
+
+### 2-BL. 우편함 수신분 — MA-472 (MS strategy 묶음 4 · limping·continuation-bet·when-to-fold·strategy · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267
+
+> WRONG 0 · RISKY 13. 요청 1 = ms 고유 7 · 요청 2 = EN-먼저 6. 위치 대조 main `7c14893d`.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BL-1 ms 7 | ⓐ limping L120 «yakin anda tidak mungkin memegang nuts» ⓑ c-bet L96 «out of position sebagai pemain yang raise, kira-kira 30–45%» ⓒ when-to-fold tldr L8 «melepaskan draw yang tak cukup pot odds» ⓓ when-to-fold L64 «yang tinggal hanyalah …» ⓔ strategy L138 «… 11.8% daripada masa» ⓕ strategy FAQ L187 «c-bet di flop apabila anda memegang inisiatif» ⓖ strategy FAQ L235 «tidak boleh dieksploitasi» | ⓐ EN `6164c748` «unlikely to hold the strongest hands» ⓑ 같은 글 L233 «dalam single-raised pot (lebih tinggi sebagai pemain 3-bet)» ⓒ EN «weak draws» ⓓ 같은 글 L72 끝 문장/L154 블러프 빈도 조건 ⓔ «di flop»(L31·L142) ⓕ EN «and the board and opponents allow it» ⓖ EN «heads-up» |
+| BL-2 🔴 EN-먼저 6 | c-bet EN L170 «no fold equity, no bet» · when-to-fold EN L146 «are value — believe them» · L251 «Clear the pot-odds threshold or fold» · L147 «they're the sunk-cost trap talking» · L250 «fold the missed hands … after the flop» + tldr L8 «releases missed hands» · strategy EN L228 «Across thousands of hands … variance evens out» + ms 동형 + 형제 | «almost no»(본문 «runtuh») · «usually» 헤지 · L96 implied 단서 · 글 자신의 분류 = ego · L68 «facing a bet on a board that suits their range» 조건 · «hundreds of thousands of hands»(1차 DeucesCracked) |
+
+- 🪶 통지(요청 아님): limping L32 «dengan tangan yang sesuai» · L94·L168 SB «by default/almost never» 미전파(UNV) · c-bet «check board rendah yang bersambung» 3자리 → «lebih banyak check» · when-to-fold L41 OK · strategy L132·L140·L207 미전파(OK/UNV).
+- 🔴 이행 순서 = ms 고유(BK-1·2 · BL-1) → EN-먼저 EN+ms(BK-3 · BL-2) → 형제. ms `masterUpdated` 그대로 · EN `updated` 갱신.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

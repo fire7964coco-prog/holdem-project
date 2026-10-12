@@ -111,7 +111,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Mes ranges sont-elles envoyées sur un serveur ?",
-    a: "Non. Le calcul tourne sur le processeur de ton propre appareil, sans passer par nos serveurs. Les ranges sauvegardées restent dans ton navigateur ; elles n'en sortent que si tu génères un lien de partage ou exportes un fichier. Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour est enregistré sur ton compte. Tes propres spots calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes.",
+    a: "Pas pour le calcul. Le calcul tourne sur le processeur de ton propre appareil, sans passer par nos serveurs. Les ranges sauvegardées restent dans ton navigateur ; elles n'en sortent que si tu génères un lien de partage, exportes un fichier ou te connectes : une fois connecté, tes ranges et réglages enregistrés sont conservés dans ton compte pour que tu puisses les ouvrir sur un autre appareil. Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour est enregistré sur ton compte. Tes propres spots calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes.",
   },
   {
     q: "Le rake est-il pris en compte ?",

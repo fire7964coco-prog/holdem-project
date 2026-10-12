@@ -120,7 +120,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Os meus ranges são enviados para algum servidor?",
-    a: "Não. O cálculo roda no processador do seu próprio aparelho, não em um servidor nosso. Os ranges que você salva ficam no seu navegador e só saem de lá se você gerar um link para compartilhar um spot ou exportar um arquivo. Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo na sua conta. Os spots que você calculou e o histórico de treino deles ficam só neste aparelho, mesmo com login.",
+    a: "Para calcular, não. O cálculo roda no processador do seu próprio aparelho, não em um servidor nosso. Os ranges que você salva ficam no seu navegador e só saem de lá se você gerar um link para compartilhar um spot, exportar um arquivo ou fizer login — com login, seus ranges e configurações salvos ficam guardados na sua conta para você abrir em outro aparelho. Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo na sua conta. Os spots que você calculou e o histórico de treino deles ficam só neste aparelho, mesmo com login.",
   },
   {
     q: "O solver leva o rake em conta?",

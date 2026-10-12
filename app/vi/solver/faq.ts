@@ -95,7 +95,7 @@ export const SOLVER_FAQ_VI: FaqItem[] = [
   },
   {
     q: "Tiến độ học của tôi được lưu ở đâu?",
-    a: "Mặc định là trên thiết bị của bạn, không cần tài khoản. Nếu đăng nhập bằng tài khoản HoldemMaster, lịch sử Spot mẫu và Thử thách hôm nay có thể đồng bộ giữa các thiết bị. Chuỗi ngày và dấu hoàn thành của Thử thách hôm nay vẫn giữ riêng trên từng thiết bị. Spot bạn tự giải và lịch sử luyện tập của chúng nằm trên thiết bị này kể cả khi đã đăng nhập; chúng không được lưu vào tài khoản. Chuỗi (số câu đúng liên tiếp), thống kê điểm yếu theo nhóm spot và hàng đợi Xem lại gồm những spot bạn mất EV đều dùng lịch sử luyện tập của bạn.",
+    a: "Mặc định là trên thiết bị của bạn, không cần tài khoản. Nếu đăng nhập bằng tài khoản HoldemMaster, lịch sử Spot mẫu và Thử thách hôm nay có thể đồng bộ giữa các thiết bị. Chuỗi ngày và dấu hoàn thành của Thử thách hôm nay vẫn giữ riêng trên từng thiết bị. Spot bạn tự giải và lịch sử luyện tập của chúng nằm trên thiết bị này kể cả khi đã đăng nhập; chúng không được lưu vào tài khoản. Danh sách range và thiết lập cược bạn đã lưu thì được giữ trong tài khoản khi đăng nhập, nên bạn có thể mở chúng trên thiết bị khác. Chuỗi (số câu đúng liên tiếp), thống kê điểm yếu theo nhóm spot và hàng đợi Xem lại gồm những spot bạn mất EV đều dùng lịch sử luyện tập của bạn.",
   },
   {
     q: "Có cài lên màn hình chính được không?",

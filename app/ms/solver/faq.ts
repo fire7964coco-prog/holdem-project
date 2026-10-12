@@ -68,7 +68,7 @@ export const SOLVER_FAQ_MS: FaqItem[] = [
   },
   {
     q: "Di manakah rekod latihan saya disimpan?",
-    a: "Secara lalai, rekod disimpan pada peranti anda tanpa memerlukan akaun. Jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian boleh disimpan dalam akaun untuk disambung pada peranti lain. Rentetan hari dan tanda selesai Cabaran Harian kekal pada setiap peranti. Spot yang anda kira sendiri serta rekod latihannya kekal pada peranti ini sahaja, walaupun anda log masuk; kedua-duanya tidak disimpan dalam akaun. Rekod latihan digunakan untuk melihat kemajuan, mengenal pasti kelemahan dan menyemak semula keputusan yang kehilangan EV.",
+    a: "Secara lalai, rekod disimpan pada peranti anda tanpa memerlukan akaun. Jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian boleh disimpan dalam akaun untuk disambung pada peranti lain. Rentetan hari dan tanda selesai Cabaran Harian kekal pada setiap peranti. Spot yang anda kira sendiri serta rekod latihannya kekal pada peranti ini sahaja, walaupun anda log masuk; kedua-duanya tidak disimpan dalam akaun. Senarai range dan tetapan bet yang anda simpan pula disimpan dalam akaun apabila anda log masuk, jadi anda boleh membukanya pada peranti lain. Rekod latihan digunakan untuk melihat kemajuan, mengenal pasti kelemahan dan menyemak semula keputusan yang kehilangan EV.",
   },
   {
     q: "Bolehkah saya berlatih dengan spot yang saya kira sendiri?",

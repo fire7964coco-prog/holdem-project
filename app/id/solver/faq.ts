@@ -101,7 +101,7 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   },
   {
     q: "Apakah range saya dikirim ke server?",
-    a: "Tidak. Perhitungan berjalan di prosesor perangkat Anda sendiri, tanpa lewat server kami. Range yang disimpan tetap ada di browser Anda; range itu hanya keluar kalau Anda membuat tautan Bagikan Spot atau mengekspor file. Dengan login, riwayat latihan dari spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini, meskipun Anda login.",
+    a: "Untuk menghitung, tidak. Perhitungan berjalan di prosesor perangkat Anda sendiri, tanpa lewat server kami. Range yang disimpan tetap ada di browser Anda; range itu hanya keluar kalau Anda membuat tautan Bagikan Spot, mengekspor file, atau login — dengan login, range dan pengaturan yang Anda simpan juga tersimpan di akun sehingga bisa dibuka di perangkat lain. Dengan login, riwayat latihan dari spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini, meskipun Anda login.",
   },
   {
     q: "Apakah rake ikut dihitung?",
