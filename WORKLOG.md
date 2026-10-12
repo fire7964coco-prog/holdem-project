@@ -1,3 +1,12 @@
+## 2026-10-12 (19) — MA-488·489 회신+등재 §2-BO MB-282 · 회차 C ⑤ 승률 시뮬레이터 언어 확대 ja·zh·es·de · 배포 `7f9dcb59` · MB-283
+
+- 사장님 «MA-488·489 회신+등재부터, 그다음 회차 C ⑤». 위치 대조 main `a92fe8aa` 전부 실재 → queue **§2-BO**(BO-1 배지 경계 · BO-2 이미 플러시 위 스트레이트 아웃츠 · BO-3 보드 투페어 오버 6장 · BO-4 `/solver` RNG «내 스팟 연습 제외» 15언어 45자리) · 회신 MB-282 `80f06b78`. 미이행.
+- ⑤: `/ja·/zh·/es·/de/win-rate-quiz` = EN 구조 그대로 로케일 UI 사전 + page(메타·JSON-LD·FAQ 없음). 4레인 병렬(Opus) · 헤드텀 DFS 실측은 각 파일 머리 주석(ja «ポーカー 勝率» 590은 계산기 소유 → «練習シミュレーター» · de «poker simulator» 390 · es «simulador de poker» ES 140/MX 90 · zh 전부 바닥값). 카니발 회피 = 제목 머리를 시뮬레이터 축으로.
+- 등록: `lib/win-rate-quiz-alternates.ts`(ko·en도 이 세트로) · hub-routes · side-rail(라벨 = HubPage title) · sitemap 4 · «내 기록» 퀴즈 링크 로케일화.
+- 렌즈 2: ja·zh WRONG 0 · RISKY 4(zh «盲打»=내 패도 안 보는 뜻 → 제목·부제 교체 · zh 제목 머리 胜率 → «德州扑克模拟器» · ja «アグレッシブ» select 잘림 → 攻撃型 · «答え合わせ» 버튼 2줄 → 判定) · es·de WRONG 1(es 결과 탭 넘침) · RISKY 9(de «Flop-Studie» → 솔버 축어 «Flops studieren» · «über den halben Pot» → «in Höhe» · «daneben» → «auseinander» · Runde → Street · es 숫자 en-US 고정 등) — 로케일 파일 안 것 전부 반영. 공용 `_simulator` 걸린 2건(히어로 승리 문법 «Gana Tú/Du gewinnt» · de 팟 금액 브라우저 로케일)은 EN·KO 영향이라 미반영 = 핸드오프 🪶.
+- 게이트: check:cjk 41(ja 24·zh 17 JSX 개행) → 이음 0 · build 74+729 exit 0 · hreflang 0 · 4페이지 index,follow. 화면: `next start` 3100에서 판 끝까지 진행 390·1440 × 5로케일 가로 넘침 0 · 콘솔 에러 0 · 데스크톱 탭 2(es·de) 몇 px → 단축. 3100 서버 = 내가 띄운 작업만 TaskStop.
+- 🪶 아스트라 교차는 이번 회차에 안 돌림(렌즈 2만) — 검수장 판정 요청으로 갈음.
+
 ## 2026-10-12 (18) — 회차 C ⑥: 승률 시뮬레이터 결과 화면 솔버 연결 · 배포 `94ca4562` · MB-281
 
 - 사장님 «회차 C ⑥ 솔버 연결 진행해». 링크 규격 = 솔버 플랍 조회 딥링크(S-083 ③ «본체가 써도 된다» · `parseFlopStudyLink` 소스 확인 — spot=`srp-<오픈>-<콜>` · flop=«Ah7d2c» · lang 같이 받음 · 공유 링크 `?spot=`(base64 JSON)와 충돌 없음 = 라이브로 확인).
