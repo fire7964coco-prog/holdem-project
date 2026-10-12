@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Khi nào nên bỏ bài trong poker: kỹ năng âm thầm thắng nhiều nhất",
   seoTitle: "Bỏ không nổi bài tốt? — khi nào nên bỏ bài trong poker",
   desc: "Chip đã vào pot cứ như của bạn — nhưng không phải. Khi nào nên bỏ bài preflop và từng vòng cược, ngưỡng pot odds, cách bỏ tay bài lớn mà không tilt — 16 phút.",
-  tldr: "Bỏ bài là kỹ năng bị đánh giá thấp nhất trong poker — cú fold tệ nhất cũng chỉ bằng 0, còn cú call thua rỉ chip dần. Người chơi vững bỏ khoảng 75–85% tay bài trước flop, buông bài hụt và draw yếu không đủ pot odds sau flop, và — khó nhất — buông cả bài mạnh đã bị qua mặt khi đường cược của đối thủ thụ động hét lên 'value'. Người ta call quá nhiều không phải vì không đọc được bài, mà vì chip trong pot cứ như là của họ — nhưng không phải.",
+  tldr: "Bỏ bài là kỹ năng bị đánh giá thấp nhất trong poker — cú fold tệ nhất cũng chỉ bằng 0, còn cú call thua rỉ chip dần. Người chơi vững bỏ khoảng 75–85% tay bài trước flop, buông bài hụt khi đối mặt cú cược trên board hợp với đối thủ, cùng draw yếu không đủ pot odds, sau flop, và — khó nhất — buông cả bài mạnh đã bị qua mặt khi đường cược của đối thủ thụ động hét lên 'value'. Người ta call quá nhiều không phải vì không đọc được bài, mà vì chip trong pot cứ như là của họ — nhưng không phải.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -144,8 +144,8 @@ Trước bất kỳ cú call lớn nào, chạy qua danh sách này. Bốn trong
 :::steps
 Tôi có kể tên được những tay bài yếu hơn mà họ sẽ bet kiểu này không? | Nếu những tay bài duy nhất bet như thế này đều thắng tôi, tôi đang trả tiền cho value.
 Tôi có vượt ngưỡng pot odds không? | Nếu equity của tôi thấp hơn con số trong bảng, cái giá nói fold.
-Đường cược này là value bet hay bluff? | Người chơi bị động và cú raise lớn ở river là value — hãy tin họ.
-Tôi có đang call chỉ để "xem cho biết" không? | Tò mò và cái tôi không phải lý do; đó là cái bẫy chi phí chìm đang nói.
+Đường cược này là value bet hay bluff? | Người chơi bị động và cú raise lớn ở river thường là value — hãy tin họ.
+Tôi có đang call chỉ để "xem cho biết" không? | Tò mò và cái tôi không phải lý do; đó là cái tôi của bạn đang lên tiếng, không phải toán.
 Chính tôi có bet tay bài này để lấy value ở đây không? | Nếu không, tôi đang cầm một bluff-catcher — câu hỏi trở thành họ bluff bao nhiêu, không phải tôi có đang dẫn trước không.
 :::
 
@@ -250,8 +250,8 @@ A. Bỏ overpair khi một đối thủ bị động thể hiện sự chủ đ�
 ## Những điều cần nhớ
 
 1. **Kết quả tệ nhất của một cú fold là bằng 0** — khi bạn đã thua, điều đó thắng mọi lựa chọn âm khác.
-2. **Fold phần lớn tay bài preflop** (75–85%), fold bài trượt và bài chờ sai giá sau flop, và coi **turn là vòng của sự buông bỏ.**
-3. **Vượt ngưỡng pot odds hoặc fold** — 25% trước cược nửa pot, ~33% trước cược trọn pot.
+2. **Fold phần lớn tay bài preflop** (75–85%), sau flop thì fold bài trượt khi đối mặt cú cược trên board hợp với range của đối thủ, cùng bài chờ sai giá, và coi **turn là vòng của sự buông bỏ.**
+3. **Vượt ngưỡng pot odds hoặc fold** — 25% trước cược nửa pot, ~33% trước cược trọn pot (implied odds có thể biện minh cho vài cú call mỏng hơn, nhưng không bao giờ trước một stack ngắn).
 4. **Buông bài tốt khi đường cược gào lên value** — top pair không phải đỉnh range của bạn.
 5. **Fold vì toán, không phải vì sợ** — đánh bại cái bẫy chi phí chìm, bỏ qua cái tôi, và nhớ rằng chip trong pot chưa bao giờ là của bạn để bảo vệ.
 

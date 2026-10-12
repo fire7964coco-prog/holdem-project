@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker strategy yang menang bukan senarai tip, tetapi lima soalan yang berulang setiap tangan: di mana anda duduk, adakah tangan ini berbaloi dimainkan, raise atau fold, perlukah terus bet pada flop, dan bila perlu fold. Pemain tight-aggressive yang menjawabnya dengan baik fold kira-kira 80% tangan preflop dan bermain agresif apabila masuk pot.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -135,7 +135,7 @@ Peraturan umumnya: **[apabila cerita yang disampaikan lawan menewaskan tangan ya
 
 ## Apakah Matematik Poker yang Tak Boleh Dilangkau?
 
-Anda tidak perlu jadi ahli matematik, tetapi dua nombor menyokong separuh daripada keputusan anda: pot odds, yang memberitahu sama ada sesuatu call menguntungkan, dan odds set-mining, yang menerangkan kenapa pasangan kecil hanya menjadi set kira-kira 11.8% daripada masa. Faham kedua-duanya dan kebanyakan keputusan "kejar atau lepaskan" menjadi jelas.
+Anda tidak perlu jadi ahli matematik, tetapi dua nombor menyokong separuh daripada keputusan anda: pot odds, yang memberitahu sama ada sesuatu call menguntungkan, dan odds set-mining, yang menerangkan kenapa pasangan kecil hanya menjadi set di flop kira-kira 11.8% daripada masa. Faham kedua-duanya dan kebanyakan keputusan "kejar atau lepaskan" menjadi jelas.
 
 **Pot odds** memberitahu anda sama ada call itu menguntungkan: bandingkan harga call dengan saiz pot, kemudian dengan peluang draw anda menjadi. Jika pot memberi anda 4:1 (4 berbanding 1) dan draw anda menjadi kira-kira 1 dalam 5 kali, call itu lebih kurang pulang modal; lebih baik daripada itu, ia untung. Inilah enjin di sebalik setiap spot "perlukah saya kejar draw ini?" — dan [panduan pot odds](/ms/blog/holdem-pot-odds) mengubahnya menjadi bacaan meja dalam 10 saat.
 
@@ -184,7 +184,7 @@ TAG berkesan kerana ia menyerang dua leak terbesar pemula serentak — bermain t
 
 **Q. Apakah strategi terbaik untuk Texas Hold'em?**
 
-A. Mainkan gaya tight-aggressive yang dibina di sekeliling lima keputusan berulang: pilih tangan berdasarkan posisi anda, fold kebanyakan kad yang diagihkan (sekitar 80% preflop), masuk pot dengan raise dan bukannya limp, c-bet di flop apabila anda memegang inisiatif, dan buat fold yang berdisiplin apabila anda sudah kalah. Gabungan itu menewaskan hampir setiap permainan kasual tanpa sebarang teori lanjutan.
+A. Mainkan gaya tight-aggressive yang dibina di sekeliling lima keputusan berulang: pilih tangan berdasarkan posisi anda, fold kebanyakan kad yang diagihkan (sekitar 80% preflop), masuk pot dengan raise dan bukannya limp, c-bet di flop apabila anda memegang inisiatif serta board dan lawan membenarkannya, dan buat fold yang berdisiplin apabila anda sudah kalah. Gabungan itu menewaskan hampir setiap permainan kasual tanpa sebarang teori lanjutan.
 
 **Q. Apakah poker strategy terbaik untuk pemula?**
 
@@ -228,11 +228,11 @@ A. Tiada satu nombor — ia bergantung pada posisi, board dan bilangan lawan. In
 
 **Q. Adakah poker permainan kemahiran atau nasib (skill or luck)?**
 
-A. Kedua-duanya — tetapi kemahiran menang dalam jangka panjang. Setiap tangan tunggal membawa unsur nasib yang besar, sebab itulah pemula boleh menghabiskan stack seorang pro dalam satu sesi. Namun merentasi ribuan tangan, kelebihan pembuat keputusan yang lebih baik akan menguasai dan varians menjadi seimbang — itulah sebabnya pemain yang sama terus membawa pulang wang. Poker ialah permainan kemahiran, tetapi kadnya diagihkan oleh nasib.
+A. Kedua-duanya — tetapi kemahiran menang dalam jangka panjang. Setiap tangan tunggal membawa unsur nasib yang besar, sebab itulah pemula boleh menghabiskan stack seorang pro dalam satu sesi. Namun merentasi ratusan ribu tangan, kelebihan pembuat keputusan yang lebih baik akan menguasai dan varians menjadi seimbang — itulah sebabnya pemain yang sama terus membawa pulang wang. Poker ialah permainan kemahiran, tetapi kadnya diagihkan oleh nasib.
 
 **Q. Apakah GTO poker?**
 
-A. GTO (Game Theory Optimal) ialah strategi seimbang secara matematik yang tidak boleh dieksploitasi — anda mencampurkan bluff dan value bet dalam nisbah yang tidak meninggalkan sebarang balasan menguntungkan kepada lawan. Ia ideal teori yang dikira oleh solver, tetapi di stakes rendah anda lebih banyak untung dengan poker *eksploitatif*: menyimpang daripada GTO untuk menghukum leak tertentu (pemain yang terlalu kerap fold atau terlalu banyak call). Mulakan dengan tight-aggressive, belajar mengeksploitasi, dan jadikan GTO titik rujukan — bukan matlamat hari pertama.
+A. GTO (Game Theory Optimal) ialah strategi seimbang secara matematik yang, dalam permainan heads-up, tidak boleh dieksploitasi — anda mencampurkan bluff dan value bet dalam nisbah yang tidak meninggalkan sebarang balasan menguntungkan kepada lawan. Ia ideal teori yang dikira oleh solver, tetapi di stakes rendah anda lebih banyak untung dengan poker *eksploitatif*: menyimpang daripada GTO untuk menghukum leak tertentu (pemain yang terlalu kerap fold atau terlalu banyak call). Mulakan dengan tight-aggressive, belajar mengeksploitasi, dan jadikan GTO titik rujukan — bukan matlamat hari pertama.
 
 **Q. Bagaimana cara untuk jadi lebih baik dalam poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em anda sentiasa bermain tangan 5 kad terbaik daripada 7 kad (2 hole card + 5 kad komuniti) — sama ada guna kedua-dua hole card, satu sahaja, atau tiada langsung (playing the board). Imbas kesemua 7 kad mengikut urutan tetap: flush → straight → nilai berpasangan → high card.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -74,7 +74,7 @@ Tiga contoh ringkas, dihuraikan sepenuhnya:
 Inilah imbasan tepat yang saya jalankan di setiap river, mengikut urutan ini — dari tangan yang paling sukar dikesan hingga yang paling mudah:
 
 :::steps
-Semak flush | Kira suit merentas kesemua 7 kad. Mana-mana suit yang muncul 5+ kali = flush. Inilah tangan yang paling kerap terlepas oleh pemula.
+Semak flush | Kira suit merentas kesemua 7 kad. Mana-mana suit yang muncul 5+ kali = flush — dan jika lima kad sesuit itu berturutan, itu straight flush, yang mengatasi setiap tangan di bawahnya. Inilah tangan yang paling kerap terlepas oleh pemula.
 Semak straight | Susun kesemua 7 nilai dalam kepala dan cari 5 yang berturutan. As dikira tinggi atau rendah, tidak pernah kedua-duanya.
 Semak nilai berpasangan | Pair, trips, full house, quads — padankan nilai antara tangan anda dan board.
 Ambil yang tertinggi | Apa sahaja yang paling kuat yang anda temui, itulah tangan anda. Tambah kad tertinggi yang berbaki sehingga anda memegang tepat 5.
@@ -239,7 +239,7 @@ Anda dapat flush di river, board menunjukkan dua Q, dan anda tidak pernah bertan
 
 **Q. Bagaimana anda menentukan tangan 5 kad terbaik daripada 7 kad?**
 
-A. Imbas kesemua 7 kad (2 hole card + 5 board) mengikut urutan tetap: flush dahulu (mana-mana suit 5+ kali), kemudian straight (5 nilai berturutan), kemudian nilai berpasangan (pair, trips, full house, quads). Ambil yang paling kuat yang anda temui dan isi sehingga tepat 5 kad dengan kad tertinggi anda yang berbaki. Anda boleh menggunakan kedua-dua hole card, satu, atau tiada.
+A. Imbas kesemua 7 kad (2 hole card + 5 board) mengikut urutan tetap: flush dahulu (mana-mana suit 5+ kali — dan jika lima daripadanya berturutan, itu straight flush), kemudian straight (5 nilai berturutan), kemudian nilai berpasangan (pair, trips, full house, quads). Ambil yang paling kuat yang anda temui dan isi sehingga tepat 5 kad dengan kad tertinggi anda yang berbaki. Anda boleh menggunakan kedua-dua hole card, satu, atau tiada.
 
 **Q. Adakah anda mesti menggunakan kedua-dua hole card dalam Texas Hold'em?**
 

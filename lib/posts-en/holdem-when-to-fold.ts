@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "When to Fold in Poker: The Skill That Quietly Wins the Most",
   seoTitle: "Why You Can't Lay Down a Good Hand — When to Fold in Poker",
   desc: "Folding is the most underrated winning skill. When to fold preflop and on every street, the pot-odds threshold, and how to lay down a big hand without tilting.",
-  tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips over time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
+  tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips over time. A solid player folds around 75–85% of hands before the flop, releases missed hands facing a bet on a board that suits the opponent, and weak draws that don't meet their pot odds, after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -143,8 +143,8 @@ Before any big call, run this checklist. Four of the five questions can send you
 :::steps
 Can I name the worse hands they'd bet this way? | If the only hands that bet like this beat me, I'm paying off value.
 Do I clear the pot-odds threshold? | If my equity is below the number in the table, the price says fold.
-Is this line a value bet or a bluff? | Passive players and big river raises are value — believe them.
-Am I only calling to "see it"? | Curiosity and ego are not reasons; they're the sunk-cost trap talking.
+Is this line a value bet or a bluff? | Passive players and big river raises are usually value — believe them.
+Am I only calling to "see it"? | Curiosity and ego are not reasons; that's your ego talking, not the math.
 Would I bet this hand for value here myself? | If not, I'm holding a bluff-catcher — the question becomes how often they bluff, not whether I'm ahead.
 :::
 
@@ -247,8 +247,8 @@ A. Fold an overpair when a passive opponent shows real aggression on a coordinat
 ## The Folding Playbook, In Short
 
 1. **A fold's worst outcome is zero** — when you're beaten, that beats every negative alternative.
-2. **Fold most hands preflop** (75–85%), fold the missed hands and priced-out draws after the flop, and treat the **turn as the give-up street.**
-3. **Clear the pot-odds threshold or fold** — 25% vs a half-pot bet, ~33% vs a pot-sized bet.
+2. **Fold most hands preflop** (75–85%), after the flop, fold missed hands facing a bet on a board that suits your opponent's range, plus priced-out draws, and treat the **turn as the give-up street.**
+3. **Clear the pot-odds threshold or fold** — 25% vs a half-pot bet, ~33% vs a pot-sized bet (implied odds can justify a few thinner calls, never against a short stack).
 4. **Lay down good hands when the line screams value** — top pair is not the top of your range.
 5. **Fold out of math, not fear** — beat the sunk-cost trap, ignore your ego, and remember the chips in the pot were never yours to protect.
 

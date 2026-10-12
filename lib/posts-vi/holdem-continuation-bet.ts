@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) là cược ở flop của người đã raise preflop. Quy tắc hiện đại không phải 'c-bet mọi flop' mà là cược nhỏ và thường ở flop có lợi cho range của bạn (bài chung cao, khô như K-7-2), check ở flop có lợi cho đối thủ (thấp, liên kết như 7-6-5). Size khoảng 1/3 pot ở flop khô, 2/3 trở lên ở flop ướt; c-bet ít hơn khi không có vị trí nếu bạn là người raise duy nhất, và ít hơn nhiều trong pot nhiều người.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 phút",
@@ -166,7 +166,7 @@ Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: 
 
 - **Board trúng đậm range của đối thủ.** Một flop 7‑6‑5 hay 9‑8‑7 trúng những tay bài call cú raise mạnh hơn hẳn trúng bài của bạn. Bet ở đây với phần lớn range chỉ là tặng chip — check thường xuyên hơn nhiều, và khi bet, bet lớn và chọn lọc.
 - **Bạn không có vị trí trên board động** với bài tầm tầm. Hành động trước không có thông tin, giữ pot nhỏ và check.
-- **Bạn ở pot nhiều người với bài chưa có gì.** Đã nói ở trên — không có fold equity, không bet.
+- **Bạn ở pot nhiều người với bài chưa có gì.** Đã nói ở trên — gần như không có fold equity, nên không bet.
 - **Tay bài của bạn cần bảo vệ range check.** Đôi khi bạn cố ý check một tay bài mạnh để những cú check của bạn không tự động là yếu.
 
 Sự chuyển đổi tư duy biến bạn thành người thắng: **check không phải đầu hàng.** Người chơi giỏi check *rất nhiều*, có chủ đích, và điều đó khiến những cú bet của họ đáng sợ hơn hẳn khi chúng đến. Nếu bạn cảm thấy bắt buộc phải bet chỉ vì bạn raise preflop, phản xạ đó đang khiến bạn mất tiền.

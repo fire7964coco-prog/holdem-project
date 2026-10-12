@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -226,7 +226,7 @@ A. Tak ada satu angka — ia tergantung pada position, board, dan berapa banyak 
 
 **Q. Poker itu permainan skill atau keberuntungan?**
 
-A. Dua-duanya — tapi skill yang menang seiring waktu. Satu hand mana pun sarat unsur keberuntungan, dan itulah kenapa seorang pemula bisa mengalahkan pemain pro dalam satu sesi. Namun sepanjang ribuan hand, keunggulan si pengambil keputusan yang lebih baik mendominasi dan variansinya saling meniadakan — persis itulah kenapa nama-nama yang sama terus masuk posisi uang. Poker adalah permainan skill yang dimainkan dengan setumpuk kartu keberuntungan.
+A. Dua-duanya — tapi skill yang menang seiring waktu. Satu hand mana pun sarat unsur keberuntungan, dan itulah kenapa seorang pemula bisa mengalahkan pemain pro dalam satu sesi. Namun sepanjang ratusan ribu hand, keunggulan si pengambil keputusan yang lebih baik mendominasi dan variansinya saling meniadakan — persis itulah kenapa nama-nama yang sama terus masuk posisi uang. Poker adalah permainan skill yang dimainkan dengan setumpuk kartu keberuntungan.
 
 **Q. Apa itu GTO poker?**
 

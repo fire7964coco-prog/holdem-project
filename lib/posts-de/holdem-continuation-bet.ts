@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippte es auf den drei Boards, die wir gelöst haben, auf über 97%), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 Min.",
@@ -175,7 +175,7 @@ Machen wir das „Nicht“ explizit, denn hier wird das Geld gespart:
 
 - **Das Board hat die Range deines Gegners zerlegt.** Ein 7‑6‑5- oder 9‑8‑7-Flop trifft die Hände, die einen Raise callen, weit härter als deine. Hier mit dem Großteil deiner Range zu betten verschenkt nur Chips – checke weit öfter, und wenn du bettest, dann groß und selektiv.
 - **Du bist out of Position auf einem dynamischen Board** mit einer marginalen Hand. Als Erster ohne Information handelnd, halt den Pot klein und checke.
-- **Du bist multiway mit Air.** Oben behandelt – keine Fold Equity, kein Einsatz.
+- **Du bist multiway mit Air.** Oben behandelt – kaum Fold Equity, also kein Einsatz.
 - **Deine Hand will eine Checking-Range schützen.** Manchmal checkst du eine starke Hand absichtlich, damit deine Checks nicht automatisch schwach sind.
 
 Der Denkwechsel, der dich zum Gewinner macht: **Checken ist keine Kapitulation.** Gute Spieler checken *viel*, mit Absicht, und es macht ihre Bets weit furchteinflößender, wenn sie doch kommen. Wenn du dich verpflichtet fühlst zu betten, nur weil du preflop geraist hast, kostet dich dieser Reflex Geld.

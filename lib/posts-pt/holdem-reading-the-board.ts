@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -73,7 +73,7 @@ Três exemplos rápidos, todos resolvidos:
 Essa é a varredura exata que eu faço em todo river, nesta ordem — da mão mais difícil de enxergar até a mais fácil:
 
 :::steps
-Procure um flush | Conte os naipes entre as 7 cartas. Qualquer naipe que aparece 5+ vezes = flush. Essa é a mão que os iniciantes mais deixam passar.
+Procure um flush | Conte os naipes entre as 7 cartas. Qualquer naipe que aparece 5+ vezes = flush — e, se cinco dessas cartas do mesmo naipe forem seguidas, é um straight flush, que vence toda mão abaixo dele. Essa é a mão que os iniciantes mais deixam passar.
 Procure uma sequência | Alinhe mentalmente os 7 valores e procure 5 seguidos. O ás conta alto ou baixo, nunca os dois.
 Confira valores pareados | Pares, trincas, full houses, quadras — combine os valores entre sua mão e a mesa.
 Fique com a mais alta | Seja qual for a coisa mais forte que você achou, essa é sua mão. Complete com as cartas mais altas restantes até ter exatamente 5.
@@ -238,7 +238,7 @@ Você faz flush no river, a mesa mostra duas damas, e você nunca faz a pergunta
 
 **Q. Como descobrir suas melhores 5 cartas entre 7?**
 
-A. Varra as 7 cartas (2 na mão + 5 na mesa) numa ordem fixa: flush primeiro (qualquer naipe 5+ vezes), depois sequência (5 valores seguidos), depois valores pareados (pares, trincas, full houses, quadras). Fique com a coisa mais forte que achar e complete até exatamente 5 cartas com suas cartas mais altas restantes. Você pode usar as duas cartas da mão, uma, ou nenhuma.
+A. Varra as 7 cartas (2 na mão + 5 na mesa) numa ordem fixa: flush primeiro (qualquer naipe 5+ vezes — e, se cinco delas forem seguidas, é um straight flush), depois sequência (5 valores seguidos), depois valores pareados (pares, trincas, full houses, quadras). Fique com a coisa mais forte que achar e complete até exatamente 5 cartas com suas cartas mais altas restantes. Você pode usar as duas cartas da mão, uma, ou nenhuma.
 
 **Q. É preciso usar as duas cartas da mão no Texas Hold'em?**
 

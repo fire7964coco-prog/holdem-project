@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Bila Patut Fold dalam Poker: Kemahiran yang Diam-Diam Paling Banyak Menang",
   seoTitle: "Susah Lepaskan Tangan Bagus? — Bila Patut Fold dalam Poker",
   desc: "Fold ialah kemahiran menang paling dipandang rendah. Bila patut fold preflop dan setiap street, ambang pot odds, dan cara lepaskan tangan besar tanpa tilt.",
-  tldr: "Fold ialah kemahiran paling dipandang rendah: hasil terburuk fold ialah sifar, sedangkan call yang kalah membocorkan cip. Pemain mantap fold sekitar 75–85% tangan preflop, melepaskan draw yang tak cukup pot odds, dan melepaskan tangan kuat apabila corak lawan pasif jelas menunjukkan value. Cip yang sudah dalam pot bukan milik anda lagi.",
+  tldr: "Fold ialah kemahiran paling dipandang rendah: hasil terburuk fold ialah sifar, sedangkan call yang kalah membocorkan cip. Pemain mantap fold sekitar 75–85% tangan preflop, melepaskan draw lemah yang tak cukup pot odds, dan melepaskan tangan kuat apabila corak lawan pasif jelas menunjukkan value. Cip yang sudah dalam pot bukan milik anda lagi.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -61,7 +61,7 @@ Satu-satunya tangan yang pada dasarnya *tidak pernah* anda fold preflop dalam ca
 
 ## Bila Patut Fold Selepas Flop — Street demi Street?
 
-Fold postflop ialah tempat wang sebenar diselamatkan, dan setiap street bertanya soalan yang berbeza. Di flop, soalannya sama ada board membantu anda atau lawan. Di turn, lepaskan tangan yang tidak bertambah baik dan draw yang harganya buruk. Di river, anda tidak lagi mengejar apa-apa — yang tinggal hanyalah sama ada tangan anda mengalahkan tangan yang lawan bet untuk value.
+Fold postflop ialah tempat wang sebenar diselamatkan, dan setiap street bertanya soalan yang berbeza. Di flop, soalannya sama ada board membantu anda atau lawan. Di turn, lepaskan tangan yang tidak bertambah baik dan draw yang harganya buruk. Di river, anda tidak lagi mengejar apa-apa — soalannya ialah sama ada tangan anda mengalahkan tangan yang lawan bet untuk value, dan jika ia hanya mengalahkan bluff, sama ada lawan cukup kerap bluff.
 
 ![Board lima kad penuh di atas felt hijau di sebelah timbunan cip yang besar, sementara seorang pemain memegang dua kad tertutup dan menimbang sama ada mahu fold pada street terkemudian](/images/holdem-fold-board.webp "Setiap street mengubah soalannya: di flop anda bertanya sama ada anda kena, menjelang river anda hanya bertanya sama ada anda boleh mengalahkan value bet")
 
@@ -144,8 +144,8 @@ Sebelum sebarang call besar, jalankan senarai semak ini. Empat daripada lima soa
 :::steps
 Bolehkah saya namakan tangan lebih lemah yang mereka akan bet begini? | Jika satu-satunya tangan yang bet begini mengalahkan saya, saya sedang membayar value.
 Adakah saya melepasi ambang pot odds? | Jika equity saya di bawah angka dalam jadual, harganya berkata fold.
-Adakah corak ini value bet atau bluff? | Pemain pasif dan raise besar di river ialah value — percayalah.
-Adakah saya call hanya untuk "tengok"? | Rasa ingin tahu dan ego bukan sebab; itu perangkap sunk cost yang sedang bercakap.
+Adakah corak ini value bet atau bluff? | Pemain pasif dan raise besar di river biasanya value — percayalah.
+Adakah saya call hanya untuk "tengok"? | Rasa ingin tahu dan ego bukan sebab; itu ego anda yang bercakap, bukan matematik.
 Adakah saya sendiri akan bet tangan ini untuk value di sini? | Jika tidak, saya memegang bluff-catcher — soalannya menjadi berapa kerap mereka bluff, bukan sama ada saya di hadapan.
 :::
 
@@ -252,8 +252,8 @@ A. Fold overpair apabila lawan pasif menunjukkan agresi sebenar pada board yang 
 Jika anda hanya ingat satu bahagian artikel ini, ingatlah lima prinsip di bawah. Ia merumuskan bila patut fold preflop dan postflop, ambang pot odds yang memutuskan spot yang tipis, dan disiplin mental untuk melepaskan tangan yang bagus tanpa tilt — semuanya dalam lima baris yang boleh anda bawa ke meja.
 
 1. **Hasil terburuk fold ialah sifar** — apabila anda sudah kalah, itu mengatasi setiap alternatif yang negatif.
-2. **Fold kebanyakan tangan preflop** (75–85%), fold tangan yang miss dan draw yang harganya tidak berbaloi selepas flop, dan anggap **turn sebagai street untuk menyerah.**
-3. **Lepasi ambang pot odds atau fold** — 25% menentang bet separuh pot, ~33% menentang bet saiz pot.
+2. **Fold kebanyakan tangan preflop** (75–85%), selepas flop, fold tangan yang miss apabila berdepan bet di board yang sesuai dengan range lawan, serta draw yang harganya tidak berbaloi, dan anggap **turn sebagai street untuk menyerah.**
+3. **Lepasi ambang pot odds atau fold** — 25% menentang bet separuh pot, ~33% menentang bet saiz pot (implied odds boleh mewajarkan beberapa call yang lebih nipis, tetapi tidak sekali-kali menentang short stack).
 4. **Lepaskan tangan bagus apabila corak lawan jelas menunjukkan value** — top pair bukan puncak range anda.
 5. **Fold kerana matematik, bukan kerana takut** — kalahkan perangkap sunk cost, abaikan ego anda, dan ingat cip dalam pot tidak pernah milik anda untuk dilindungi.
 

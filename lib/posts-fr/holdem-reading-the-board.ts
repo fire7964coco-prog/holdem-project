@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, tu joues toujours la meilleure main de 5 cartes parmi 7 (tes 2 cartes fermées + les 5 cartes communes), avec tes deux cartes fermées, une seule ou aucune (jouer le board). Passe les 7 cartes en revue toujours dans le même ordre : couleur, puis suite, puis cartes appariées, puis carte haute.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -75,7 +75,7 @@ Trois exemples rapides, entièrement détaillés :
 Voici exactement la lecture que je fais à chaque river (la rivière), dans cet ordre — de la main la plus difficile à repérer à la plus facile :
 
 :::steps
-Cherche une couleur | Compte les enseignes sur les 7 cartes. Une enseigne présente 5 fois ou plus = couleur (flush). C'est la main que les débutants ratent le plus.
+Cherche une couleur | Compte les enseignes sur les 7 cartes. Une enseigne présente 5 fois ou plus = couleur (flush) — et si cinq de ces cartes de la même enseigne se suivent, c'est une quinte flush, qui bat toutes les mains en dessous d'elle. C'est la main que les débutants ratent le plus.
 Cherche une quinte | Aligne mentalement les 7 rangs et cherche 5 cartes qui se suivent. L'as compte en haut ou en bas, jamais les deux.
 Cherche les rangs appariés | Paires, brelans, fulls, carrés — compare les rangs de ta main et ceux du board.
 Prends le plus fort | Ce que tu as trouvé de plus fort, c'est ta main. Complète avec les cartes restantes les plus hautes jusqu'à avoir exactement 5 cartes.
@@ -248,7 +248,7 @@ Pour vérifier une lecture après coup, le [calculateur d'équité](/fr/calculat
 
 **Q. Comment choisir ses 5 cartes parmi les 7 ?**
 
-A. Passe les 7 cartes (2 fermées + 5 du board) en revue dans un ordre fixe : d'abord la couleur (une enseigne présente 5 fois ou plus), puis la quinte (5 rangs qui se suivent), puis les rangs appariés (paires, brelans, fulls, carrés). Prends ce que tu trouves de plus fort et complète jusqu'à exactement 5 cartes avec tes cartes restantes les plus hautes. Tu peux utiliser tes deux cartes fermées, une seule ou aucune.
+A. Passe les 7 cartes (2 fermées + 5 du board) en revue dans un ordre fixe : d'abord la couleur (une enseigne présente 5 fois ou plus — et si cinq d'entre elles se suivent, c'est une quinte flush), puis la quinte (5 rangs qui se suivent), puis les rangs appariés (paires, brelans, fulls, carrés). Prends ce que tu trouves de plus fort et complète jusqu'à exactement 5 cartes avec tes cartes restantes les plus hautes. Tu peux utiliser tes deux cartes fermées, une seule ou aucune.
 
 **Q. Peut-on gagner en n'utilisant qu'une seule de ses cartes au Texas Hold'em ?**
 

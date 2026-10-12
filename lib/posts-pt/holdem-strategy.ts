@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo em vez de dar open-limp, continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -233,7 +233,7 @@ A. Bem menos do que parece natural. Um jogador tight-aggressive vencedor folda c
 
 **Q. Poker é um jogo de habilidade ou de sorte?**
 
-A. Os dois — mas a habilidade vence com o tempo. Uma mão isolada carrega um componente enorme de sorte, e é por isso que um iniciante consegue stackar um profissional numa sessão. Ao longo de milhares de mãos, porém, a vantagem de quem decide melhor domina e a variância se dilui — exatamente por isso os mesmos jogadores continuam cravando. Poker é um jogo de habilidade jogado com um baralho de sorte.
+A. Os dois — mas a habilidade vence com o tempo. Uma mão isolada carrega um componente enorme de sorte, e é por isso que um iniciante consegue stackar um profissional numa sessão. Ao longo de centenas de milhares de mãos, porém, a vantagem de quem decide melhor domina e a variância se dilui — exatamente por isso os mesmos jogadores continuam cravando. Poker é um jogo de habilidade jogado com um baralho de sorte.
 
 **Q. O que é estratégia GTO no poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-05",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -72,7 +72,7 @@ Three quick examples, fully worked out:
 This is the exact scan I run on every river, in this order — from the hardest hand to spot down to the easiest:
 
 :::steps
-Check for a flush | Count suits across all 7 cards. Any suit appearing 5+ times = flush. This is the hand beginners miss most.
+Check for a flush | Count suits across all 7 cards. Any suit appearing 5+ times = flush — and if five of those suited cards run in a row, it's a straight flush, which outranks every hand below it. This is the hand beginners miss most.
 Check for a straight | Line up all 7 ranks mentally and look for 5 in a row. Ace counts high or low, never both.
 Check paired ranks | Pairs, trips, full houses, quads — match ranks between your hand and the board.
 Take the highest | Whatever the strongest thing you found is, that's your hand. Add the highest remaining cards until you hold exactly 5.
@@ -237,7 +237,7 @@ You river a flush, the board shows two queens, and you never ask the question. A
 
 **Q. How do you figure out your best 5-card hand from 7 cards?**
 
-A. Scan all 7 cards (2 hole + 5 board) in a fixed order: flush first (any suit 5+ times), then straight (5 ranks in a row), then paired ranks (pairs, trips, full houses, quads). Take the strongest thing you find and fill up to exactly 5 cards with your highest remaining cards. You may use both hole cards, one, or none.
+A. Scan all 7 cards (2 hole + 5 board) in a fixed order: flush first (any suit 5+ times — and if five of them are consecutive, that's a straight flush), then straight (5 ranks in a row), then paired ranks (pairs, trips, full houses, quads). Take the strongest thing you find and fill up to exactly 5 cards with your highest remaining cards. You may use both hole cards, one, or none.
 
 **Q. Do you have to use both of your hole cards in Texas Hold'em?**
 

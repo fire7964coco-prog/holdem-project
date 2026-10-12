@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Kapan Harus Fold di Poker: Skill yang Diam-diam Paling Banyak Menang",
   seoTitle: "Kenapa Anda Tak Bisa Melepas Tangan Bagus — Kapan Harus Fold",
   desc: "Fold adalah skill menang paling diremehkan. Kapan fold preflop dan di tiap street, ambang pot odds, cara melepas tangan besar, dan mengalahkan dorongan call.",
-  tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip dalam jangka panjang. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
+  tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip dalam jangka panjang. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset saat menghadapi taruhan di board yang cocok dengan lawan, serta draw lemah yang tak memenuhi pot odds mereka, setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -144,8 +144,8 @@ Sebelum call besar apa pun, jalankan checklist ini. Empat dari lima pertanyaan i
 :::steps
 Bisakah saya menyebut tangan lebih buruk yang akan mereka taruhkan begini? | Jika hanya tangan yang bertaruh begini mengalahkan saya, saya membayar value.
 Apakah saya melampaui ambang pot odds? | Jika equity saya di bawah angka di tabel, harga berkata fold.
-Apakah line ini taruhan value atau bluff? | Pemain pasif dan raise besar di river adalah value — percayai mereka.
-Apakah saya hanya call untuk "melihatnya"? | Rasa penasaran dan ego bukan alasan; itu jebakan sunk-cost yang berbicara.
+Apakah line ini taruhan value atau bluff? | Pemain pasif dan raise besar di river biasanya value — percayai mereka.
+Apakah saya hanya call untuk "melihatnya"? | Rasa penasaran dan ego bukan alasan; itu ego Anda yang berbicara, bukan matematika.
 Akankah saya sendiri bertaruh tangan ini untuk value di sini? | Jika tidak, saya memegang bluff-catcher — pertanyaannya jadi seberapa sering dia bluff, bukan apakah saya unggul.
 :::
 
@@ -248,8 +248,8 @@ A. Fold overpair saat lawan pasif menunjukkan agresi nyata di board terkoordinas
 ## Playbook Fold, Singkatnya
 
 1. **Hasil terburuk sebuah fold adalah nol** — saat Anda kalah, itu mengalahkan setiap alternatif negatif.
-2. **Fold sebagian besar tangan preflop** (75–85%), fold tangan yang meleset dan draw yang kemahalan setelah flop, dan perlakukan **turn sebagai street menyerah.**
-3. **Lampaui ambang pot odds atau fold** — 25% vs taruhan setengah pot, ~33% vs taruhan sebesar pot.
+2. **Fold sebagian besar tangan preflop** (75–85%), setelah flop fold tangan yang meleset saat menghadapi taruhan di board yang cocok dengan range lawan, plus draw yang kemahalan, dan perlakukan **turn sebagai street menyerah.**
+3. **Lampaui ambang pot odds atau fold** — 25% vs taruhan setengah pot, ~33% vs taruhan sebesar pot (implied odds bisa membenarkan sebagian call yang lebih tipis, tapi tak pernah melawan short stack).
 4. **Lepas tangan bagus saat line jelas menunjukkan value** — top pair bukanlah puncak range Anda.
 5. **Fold karena matematika, bukan rasa takut** — kalahkan jebakan sunk-cost, abaikan ego Anda, dan ingat chip di pot bukan lagi milik Anda — tak ada yang perlu Anda lindungi.
 

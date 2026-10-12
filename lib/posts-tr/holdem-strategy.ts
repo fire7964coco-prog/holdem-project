@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kazanan her Texas Hold'em kararı tekrar eden beş soruya iner: nerede oturuyorum, bu el oynanmaya değer mi, pota ilk giriyorsam limp yerine raise mi fold mu, flop'ta bahse devam ediyor muyum ve eli ne zaman bırakıyorum. Bu beş soruyu iyi cevaplayan tight-aggressive bir oyuncu flop öncesi ellerin yaklaşık %80'ini fold eder, oynadıklarını agresif oynar ve ezber ipucu listesine gerek kalmadan neredeyse her gündelik masayı yener.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -251,7 +251,7 @@ A. Tek bir sayı yok — pozisyona, board'a ve kaç rakiple karşı karşıya ol
 
 **Q. Poker şans oyunu mu, beceri oyunu mu?**
 
-A. İkisi de — ama zamanla beceri kazanır. Tek bir elde büyük bir şans payı vardır; bu yüzden bir yeni başlayan bir seansta bir profesyoneli stack'leyebilir. Ama binlerce el boyunca daha iyi karar verenin avantajı baskın çıkar ve varyans dengelenir — aynı oyuncuların sürekli kazanmasının sebebi de tam olarak budur. Poker, şanstan bir desteyle oynanan bir beceri oyunudur.
+A. İkisi de — ama zamanla beceri kazanır. Tek bir elde büyük bir şans payı vardır; bu yüzden bir yeni başlayan bir seansta bir profesyoneli stack'leyebilir. Ama yüz binlerce el boyunca daha iyi karar verenin avantajı baskın çıkar ve varyans dengelenir — aynı oyuncuların sürekli kazanmasının sebebi de tam olarak budur. Poker, şanstan bir desteyle oynanan bir beceri oyunudur.
 
 **Q. Pokerden para kazanılır mı?**
 

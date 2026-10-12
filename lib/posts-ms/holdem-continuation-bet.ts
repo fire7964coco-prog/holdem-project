@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) ialah bet pada flop oleh pemain yang raise preflop. Jangan c-bet setiap flop: bet board tinggi dan kering (K-7-2) dengan saiz kecil dan kerap, check board rendah yang bersambung (7-6-5). Saiz kira-kira satu pertiga pot di board kering, dua pertiga atau lebih di board basah; jauh kurang dalam pot multiway.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 minit",
@@ -93,7 +93,7 @@ Bahagian halusnya: anda boleh ada satu tanpa yang satu lagi. Pada A‑8‑3 anda
 
 ## Berapa Kerap Patut Anda C-Bet? (Kekerapan)
 
-Jawapannya berubah mengikut spot: in position dan heads-up pada board kering, anda boleh bet hampir semua dengan saiz kecil; out of position sebagai pemain yang raise, kira-kira 30–45%; menentang tiga lawan atau lebih, hanya tangan kuat dan draw yang baik.
+Jawapannya berubah mengikut spot: in position dan heads-up pada board kering, anda boleh bet hampir semua dengan saiz kecil; out of position sebagai pemain yang raise dalam single-raised pot, kira-kira 30–45% (lebih tinggi sebagai pemain 3-bet); menentang tiga lawan atau lebih, hanya tangan kuat dan draw yang baik.
 
 Tiada satu peratusan c-bet yang "betul" — sesiapa yang memberi anda satu angka sebenarnya mengajar anda satu leak. Kekerapan berubah mengikut posisi, board dan bilangan pemain dalam pot. Inilah rujukan pantasnya:
 
@@ -170,7 +170,7 @@ Mari jelaskan "jangan" itu secara terang, kerana di situlah wang diselamatkan:
 
 - **Board menghentam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang call raise jauh lebih kuat berbanding tangan anda. Bet di sini dengan kebanyakan range anda hanya menderma cip — check jauh lebih kerap, dan apabila anda bet, pilih saiz besar dan selektif.
 - **Anda out of position pada board dinamik** dengan tangan marginal. Bertindak dahulu tanpa maklumat, kekalkan pot kecil dan check.
-- **Anda dalam pot multiway dengan tangan kosong.** Sudah diterangkan di atas — tiada fold equity, tiada bet.
+- **Anda dalam pot multiway dengan tangan kosong.** Sudah diterangkan di atas — hampir tiada fold equity, jadi jangan bet.
 - **Tangan anda sesuai untuk melindungi range check.** Kadang-kadang anda sengaja check tangan kuat supaya check anda tidak automatik lemah.
 
 Perubahan cara berfikir yang menjadikan anda pemenang: **check bukan menyerah kalah.** Pemain yang baik check *banyak*, dengan sengaja, dan itu membuat bet mereka jauh lebih menakutkan apabila bet itu datang. Jika anda rasa wajib bet semata-mata kerana anda raise preflop, refleks itulah yang merugikan wang anda.

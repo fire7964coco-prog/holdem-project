@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Wann folden im Poker: die Fähigkeit, die im Stillen am meisten gewinnt",
   seoTitle: "Wann folden im Poker? Die gute Hand, die weg muss",
   desc: "Folden ist die unterschätzteste Gewinner-Fähigkeit. Wann du preflop und auf jeder Street foldest, die Pot-Odds-Grenze und wie du eine starke Hand ablegst.",
-  tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein Verlust-Call dich auf Dauer Chips kostet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
+  tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein Verlust-Call dich auf Dauer Chips kostet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände ab, die auf einem Board, das zum Gegner passt, einer Bet gegenüberstehen, ebenso schwache Draws, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -159,8 +159,8 @@ Vor jedem großen Call geh diese Checkliste durch. Vier der fünf Fragen können
 :::steps
 Kann ich die schwächeren Hände nennen, die sie so betten würden? | Wenn die einzigen Hände, die so betten, mich schlagen, bezahle ich Value.
 Übersteige ich die Pot-Odds-Grenze? | Wenn meine Equity unter der Zahl in der Tabelle liegt, sagt der Preis: folde.
-Ist diese Linie eine Value-Bet oder ein Bluff? | Passive Spieler und große River-Raises sind Value – glaub ihnen.
-Calle ich nur, um „es zu sehen“? | Neugier und Ego sind keine Gründe; das ist die Sunk-Cost-Falle, die spricht.
+Ist diese Linie eine Value-Bet oder ein Bluff? | Passive Spieler und große River-Raises sind meist Value – glaub ihnen.
+Calle ich nur, um „es zu sehen“? | Neugier und Ego sind keine Gründe; da spricht dein Ego, nicht die Mathematik.
 Würde ich diese Hand hier selbst für Value betten? | Wenn nicht, halte ich einen Bluffcatcher – die Frage ist dann, wie oft sie bluffen, nicht ob ich vorne bin.
 :::
 
@@ -263,8 +263,8 @@ A. Folde ein Overpair, wenn ein passiver Gegner echte Aggression auf einem koord
 ## Das Fold-Playbook, kurz gefasst
 
 1. **Das schlechteste Ergebnis eines Folds ist null** – wenn du geschlagen bist, schlägt das jede negative Alternative.
-2. **Folde die meisten Hände preflop** (75–85%), folde die verfehlten Hände und ausgepreisten Draws nach dem Flop, und behandle den **Turn als die Aufgabe-Street.**
-3. **Übersteige die Pot-Odds-Grenze oder folde** – 25% gegen eine Half-Pot-Bet, ~33% gegen eine potgroße Bet.
+2. **Folde die meisten Hände preflop** (75–85%), folde nach dem Flop verfehlte Hände, die auf einem Board, das zur Range deines Gegners passt, einer Bet gegenüberstehen, sowie ausgepreiste Draws, und behandle den **Turn als die Aufgabe-Street.**
+3. **Übersteige die Pot-Odds-Grenze oder folde** – 25% gegen eine Half-Pot-Bet, ~33% gegen eine potgroße Bet (Implied Odds können ein paar dünnere Calls rechtfertigen, nie gegen einen kurzen Stack).
 4. **Lege gute Hände ab, wenn die Linie nach Value schreit** – Top Pair ist nicht die Spitze deiner Range.
 5. **Folde aus Mathematik, nicht aus Angst** – besiege die Sunk-Cost-Falle, ignoriere dein Ego und denk daran, dass die Chips im Pot nie deine waren, die du schützen müsstest.
 

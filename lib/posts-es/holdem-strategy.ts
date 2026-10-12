@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -226,7 +226,7 @@ A. No hay un único número — depende de la posición, del board y de cuántos
 
 **Q. ¿El póker es un juego de habilidad o de suerte?**
 
-A. Los dos — pero la habilidad gana a la larga. Cualquier mano suelta lleva un componente enorme de suerte, y por eso un principiante puede quitarle el stack a un pro en una sola sesión. A lo largo de miles de manos, sin embargo, la ventaja del que toma mejores decisiones se impone y la varianza se compensa — que es justo por lo que los mismos jugadores siguen cobrando. El póker es un juego de habilidad jugado con una baraja de suerte.
+A. Los dos — pero la habilidad gana a la larga. Cualquier mano suelta lleva un componente enorme de suerte, y por eso un principiante puede quitarle el stack a un pro en una sola sesión. A lo largo de cientos de miles de manos, sin embargo, la ventaja del que toma mejores decisiones se impone y la varianza se compensa — que es justo por lo que los mismos jugadores siguen cobrando. El póker es un juego de habilidad jugado con una baraja de suerte.
 
 **Q. ¿Qué es el póker GTO?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold rather than open-limp, do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -225,7 +225,7 @@ A. There's no single number — it depends on position, board, and how many oppo
 
 **Q. Is poker a game of skill or luck?**
 
-A. Both — but skill wins over time. Any single hand carries a big luck element, which is why a beginner can stack a pro in one session. Across thousands of hands, though, the better decision-maker's edge dominates and variance evens out — which is exactly why the same players keep cashing. Poker is a game of skill played with a deck of luck.
+A. Both — but skill wins over time. Any single hand carries a big luck element, which is why a beginner can stack a pro in one session. Across hundreds of thousands of hands, though, the better decision-maker's edge dominates and variance evens out — which is exactly why the same players keep cashing. Poker is a game of skill played with a deck of luck.
 
 **Q. What is GTO poker?**
 

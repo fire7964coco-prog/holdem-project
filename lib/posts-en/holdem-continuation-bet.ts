@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -167,7 +167,7 @@ Let's make the "don't" explicit, because it's where the money is saved:
 
 - **The board smashed your opponent's range.** A 7‑6‑5 or 9‑8‑7 flop hits the hands that call a raise far harder than it hits yours. Betting here with most of your range just donates chips — check far more often, and when you do bet, go big and selective.
 - **You're out of position on a dynamic board** with a marginal hand. Acting first with no information, keep the pot small and check.
-- **You're multiway with air.** Covered above — no fold equity, no bet.
+- **You're multiway with air.** Covered above — almost no fold equity, so no bet.
 - **Your hand wants to protect a checking range.** Sometimes you check a strong hand on purpose so your checks aren't automatically weak.
 
 The mindset shift that makes you a winner: **checking is not surrender.** Good players check *a lot*, on purpose, and it makes their bets far scarier when they do come. If you feel obligated to bet just because you raised preflop, that reflex is costing you money.

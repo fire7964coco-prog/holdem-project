@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Quando foldar no poker: a habilidade que mais vence em silêncio",
   seoTitle: "Por que você não larga uma boa mão — quando foldar no poker",
   desc: "Foldar é a habilidade vencedora mais subestimada. Quando foldar no pré-flop e em cada street, o limite das pot odds e como largar uma mão grande.",
-  tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas no longo prazo. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
+  tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas no longo prazo. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga depois dele as mãos que erraram diante de uma aposta numa mesa que favorece o adversário, além dos projetos fracos que não batem suas pot odds, e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -144,8 +144,8 @@ Antes de qualquer call grande, rode este checklist. Quatro das cinco perguntas j
 :::steps
 Consigo nomear as mãos piores que ele apostaria assim? | Se as únicas mãos que apostam assim me vencem, estou pagando valor.
 Supero o limite das pot odds? | Se minha equity está abaixo do número na tabela, o preço diz fold.
-Essa linha é uma aposta de valor ou um blefe? | Jogadores passivos e raises grandes no river são valor — acredite neles.
-Estou pagando só pra "ver"? | Curiosidade e ego não são motivos; são a armadilha do sunk cost falando.
+Essa linha é uma aposta de valor ou um blefe? | Jogadores passivos e raises grandes no river costumam ser valor — acredite neles.
+Estou pagando só pra "ver"? | Curiosidade e ego não são motivos; é o seu ego falando, não a matemática.
 Eu mesmo apostaria essa mão por valor aqui? | Se não, tenho um bluff-catcher — a pergunta passa a ser com que frequência ele blefa, não se estou na frente.
 :::
 
@@ -248,8 +248,8 @@ A. Folde um overpair quando um adversário passivo mostra agressão real numa me
 ## O playbook do fold, em resumo
 
 1. **O pior resultado de um fold é zero** — quando você está batido, isso vence toda alternativa negativa.
-2. **Folde a maioria das mãos no pré-flop** (75–85%), folde as mãos que erraram e os projetos sem preço depois do flop, e trate o **turn como a street da desistência.**
-3. **Supere o limite das pot odds ou folde** — 25% contra uma aposta de meio pote, ~33% contra uma aposta do tamanho do pote.
+2. **Folde a maioria das mãos no pré-flop** (75–85%), depois do flop, folde as mãos que erraram diante de uma aposta numa mesa que encaixa no range do adversário, além dos projetos sem preço, e trate o **turn como a street da desistência.**
+3. **Supere o limite das pot odds ou folde** — 25% contra uma aposta de meio pote, ~33% contra uma aposta do tamanho do pote (implied odds podem justificar alguns calls mais finos, nunca contra um short stack).
 4. **Largue boas mãos quando a linha grita valor** — top pair não é o topo do seu range.
 5. **Folde por matemática, não por medo** — vença a armadilha do sunk cost, ignore seu ego, e lembre que as fichas no pote nunca foram suas para proteger.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para acima de 97% nos três boards que resolvemos) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
   masterUpdated: "2026-10-06",
@@ -169,7 +169,7 @@ Vamos deixar o "não" explícito, porque é onde o dinheiro é economizado:
 - **O board acertou em cheio o range do seu adversário.** Um flop 7‑6‑5 ou 9‑8‑7 acerta as mãos que pagam um raise muito mais forte do que acerta as suas. Apostar aqui com a maior parte do seu range é só doar fichas — dê check com muito mais frequência e, quando apostar, aposte grande e seletivo.
 - **Seu adversário simplesmente não folda.** Contra quem paga qualquer aposta, o c-bet de blefe vira doação — corte os blefes, e aposte maior por valor quando tiver a mão.
 - **Você está fora de posição num board dinâmico** com uma mão marginal. Agindo primeiro sem informação, mantenha o pote pequeno e dê check.
-- **Você está multiway com nada.** Coberto acima — sem fold equity, sem aposta.
+- **Você está multiway com nada.** Coberto acima — quase sem fold equity, então sem aposta.
 - **Sua mão quer proteger um checking range.** Às vezes você dá check numa mão forte de propósito para que os seus checks não sejam automaticamente fracos.
 
 A mudança de mentalidade que te torna vencedor: **dar check não é render-se.** Bons jogadores dão check *muito*, de propósito, e isso torna as apostas deles bem mais assustadoras quando aparecem. Se você se sente obrigado a apostar só porque deu raise no pré-flop, esse reflexo está te custando dinheiro.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Flush (lima kad satu suit, kira-kira 0.197% daripada tangan lima kad) sentiasa menang ke atas straight (lima kad berturutan, kira-kira 0.392%) dalam Texas Hold'em. Sebabnya flush lebih jarang: merentas tujuh kad hingga river, flush muncul 3.03% berbanding 4.62% untuk straight.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -169,7 +169,7 @@ Jika straight anda menggunakan sebahagian kad dan flush anda menggunakan kad yan
 
 ## Adakah Susunan Tangan Berbeza dalam Short Deck? (Flush vs Full House)
 
-Ya — Short Deck (6+) Hold'em ialah satu-satunya format biasa yang menyusun semula tangan-tangan ini. Dalam **Short Deck (6+) Hold'em**, kad 2 hingga 5 dikeluarkan daripada dek. Dengan kad yang lebih sedikit, flush menjadi *lebih sukar* dibentuk berbanding full house — jadi dalam format itu susunannya beralih dan ==r:**flush menang ke atas full house**==. Prinsipnya tidak pernah berubah: ==tangan yang lebih jarang menang==. Hanya dek yang berubah. Dalam Texas Hold'em standard dengan dek penuh 52 kad, ==g:flush menang ke atas straight dan kalah kepada full house, setiap kali==.
+Ya — Short Deck (6+) Hold'em ialah satu-satunya format biasa yang menyusun semula tangan-tangan ini. Dalam **Short Deck (6+) Hold'em**, kad 2 hingga 5 dikeluarkan daripada dek. Dengan kad yang lebih sedikit, flush menjadi *lebih sukar* dibentuk berbanding full house — jadi dalam format itu susunannya beralih dan ==r:**flush menang ke atas full house**==. Logiknya sama seperti dengan dek penuh: antara dua tangan itu, ==tangan yang lebih jarang berada di kedudukan lebih tinggi==. Hanya dek yang berubah. Dalam Texas Hold'em standard dengan dek penuh 52 kad, ==g:flush menang ke atas straight dan kalah kepada full house, setiap kali==.
 
 ---
 

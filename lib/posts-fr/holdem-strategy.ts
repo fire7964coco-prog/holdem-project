@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Chaque décision gagnante au Texas Hold'em se ramène à cinq questions : où suis-je assis (la position), cette main vaut-elle la peine d'être jouée, est-ce que je relance ou je me couche plutôt que d'open-limper, est-ce que je continue à miser au flop (le c-bet), et quand est-ce que je lâche ? Un joueur serré-agressif qui répond bien à ces cinq questions se couche sur environ 80 % de ses mains préflop, joue les autres agressivement et bat presque toutes les parties entre amateurs, sans liste d'astuces à mémoriser.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -229,7 +229,7 @@ A. Il n'y a pas de chiffre unique — ça dépend de la position, du board et du
 
 **Q. Le poker, hasard ou adresse ?**
 
-A. Les deux — mais l'adresse l'emporte avec le temps. Chaque main prise seule comporte une grosse part de chance, c'est pourquoi un débutant peut faire sauter un pro en une session. Mais sur des milliers de mains, l'avantage de celui qui décide le mieux domine et la variance s'équilibre — c'est exactement pour ça que ce sont toujours les mêmes joueurs qui encaissent. Le poker est un jeu d'adresse qui se joue avec un paquet de chance.
+A. Les deux — mais l'adresse l'emporte avec le temps. Chaque main prise seule comporte une grosse part de chance, c'est pourquoi un débutant peut faire sauter un pro en une session. Mais sur des centaines de milliers de mains, l'avantage de celui qui décide le mieux domine et la variance s'équilibre — c'est exactement pour ça que ce sont toujours les mêmes joueurs qui encaissent. Le poker est un jeu d'adresse qui se joue avec un paquet de chance.
 
 **Q. GTO ou jeu exploitant : par quoi commencer au poker ?**
 

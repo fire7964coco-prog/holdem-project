@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un continuation bet (c-bet) est une mise au flop faite par le joueur qui a relancé préflop. La règle moderne n'est pas « c-bet à chaque flop » : mise petit et souvent sur les flops qui favorisent ta range (boards hauts et secs comme K-7-2) et checke ceux qui favorisent ton adversaire (boards bas et connectés comme 7-6-5). Size petit, environ un tiers du pot, sur les boards secs et gros, deux tiers ou plus, sur les boards humides ; c-bet moins hors de position quand tu étais le seul relanceur (en tant que 3-betteur hors de position, ça passe à plus de 97 % sur les trois boards que nous avons résolus) et beaucoup moins en multiway.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
@@ -166,7 +166,7 @@ Rendons le « ne fais pas » explicite, parce que c'est là que l'argent s'écon
 
 - **Le board a fortement touché la range de ton adversaire.** Un flop 7‑6‑5 ou 9‑8‑7 touche les mains qui paient une relance bien plus fort que les tiennes. Miser ici avec la plupart de ta range, c'est faire un don — checke bien plus souvent, et quand tu mises, mise gros et de façon sélective.
 - **Tu es hors de position sur un board dynamique** avec une main moyenne. Tu parles en premier sans information : garde le pot petit et checke.
-- **Tu es en multiway avec du vent.** Voir plus haut — pas de fold equity, pas de mise.
+- **Tu es en multiway avec du vent.** Voir plus haut — presque pas de fold equity, donc pas de mise.
 - **Ta main doit protéger une range de check.** Parfois tu checkes une main forte exprès pour que tes checks ne soient pas automatiquement faibles.
 
 Le déclic qui fait de toi un gagnant : **checker n'est pas capituler.** Les bons joueurs checkent *beaucoup*, volontairement, et ça rend leurs mises bien plus effrayantes quand elles arrivent. Si tu te sens obligé de miser juste parce que tu as relancé préflop, ce réflexe te coûte de l'argent.

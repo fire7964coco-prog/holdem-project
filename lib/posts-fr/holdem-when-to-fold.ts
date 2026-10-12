@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Quand se coucher au poker : la compétence qui fait gagner le plus, en silence",
   seoTitle: "Incapable de lâcher ta main ? — Quand se coucher au poker",
   desc: "Tu es battu et tu suis quand même ? Quand se coucher au poker, préflop et à chaque street, le seuil des cotes du pot et lâcher une grosse main sans tilter.",
-  tldr: "Se coucher est la compétence la plus sous-estimée au poker : le pire résultat d'un fold est zéro, alors qu'un call perdant saigne des jetons sur la durée. Un joueur solide se couche sur environ 75 à 85 % des mains avant le flop, lâche après le flop les mains ratées et les tirages faibles qui n'atteignent pas leurs cotes du pot et, le plus dur, abandonne des mains fortes mais battues quand la ligne d'un adversaire passif crie la value. La plupart des joueurs ne suivent pas trop parce qu'ils ne savent pas lire les mains ; ils suivent parce que les jetons déjà au milieu leur semblent appartenir, et ce n'est pas le cas.",
+  tldr: "Se coucher est la compétence la plus sous-estimée au poker : le pire résultat d'un fold est zéro, alors qu'un call perdant saigne des jetons sur la durée. Un joueur solide se couche sur environ 75 à 85 % des mains avant le flop, lâche après le flop les mains ratées face à une mise sur un board qui favorise l'adversaire, ainsi que les tirages faibles qui n'atteignent pas leurs cotes du pot, et, le plus dur, abandonne des mains fortes mais battues quand la ligne d'un adversaire passif crie la value. La plupart des joueurs ne suivent pas trop parce qu'ils ne savent pas lire les mains ; ils suivent parce que les jetons déjà au milieu leur semblent appartenir, et ce n'est pas le cas.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -144,8 +144,8 @@ Avant tout gros call, passe cette check-list. Quatre des cinq questions peuvent 
 :::steps
 Est-ce que je peux nommer les mains moins bonnes qu'il miserait de cette façon ? | Si les seules mains qui misent comme ça me battent, je paie de la value.
 Est-ce que je passe le seuil des cotes du pot ? | Si mon équité est sous le chiffre du tableau, le prix dit fold.
-Cette ligne, c'est une value bet ou un bluff ? | Les joueurs passifs et les grosses relances à la river, c'est de la value — crois-les.
-Est-ce que je paie seulement pour « voir » ? | La curiosité et l'ego ne sont pas des raisons ; c'est le piège du coût irrécupérable qui parle.
+Cette ligne, c'est une value bet ou un bluff ? | Les joueurs passifs et les grosses relances à la river, c'est généralement de la value — crois-les.
+Est-ce que je paie seulement pour « voir » ? | La curiosité et l'ego ne sont pas des raisons ; c'est ton ego qui parle, pas les maths.
 Est-ce que je miserais moi-même cette main pour la value ici ? | Sinon, je tiens un bluff-catcher — la question devient à quelle fréquence il bluffe, pas si je suis devant.
 :::
 
@@ -248,8 +248,8 @@ A. Couche-toi avec une overpaire quand un adversaire passif montre une vraie agr
 ## À retenir : le plan de jeu du fold
 
 1. **Le pire résultat d'un fold est zéro** — quand tu es battu, ça bat toutes les alternatives négatives.
-2. **Jette la plupart des mains préflop** (75–85 %), jette les mains ratées et les tirages hors de prix après le flop, et considère **la turn comme la street de l'abandon.**
-3. **Passe le seuil des cotes du pot ou couche-toi** — 25 % face à une mise d'un demi-pot, ~33 % face à une mise de la taille du pot.
+2. **Jette la plupart des mains préflop** (75–85 %), après le flop, jette les mains ratées face à une mise sur un board qui colle à la range de ton adversaire, ainsi que les tirages hors de prix, et considère **la turn comme la street de l'abandon.**
+3. **Passe le seuil des cotes du pot ou couche-toi** — 25 % face à une mise d'un demi-pot, ~33 % face à une mise de la taille du pot (les cotes implicites peuvent justifier quelques calls plus fins, jamais face à un short stack).
 4. **Lâche les bonnes mains quand la ligne crie la value** — la top paire n'est pas le haut de ta range.
 5. **Couche-toi par calcul, pas par peur** — bats le piège du coût irrécupérable, ignore ton ego, et souviens-toi que les jetons au pot n'ont jamais été à toi à protéger.
 

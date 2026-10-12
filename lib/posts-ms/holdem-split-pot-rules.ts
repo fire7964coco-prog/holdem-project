@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ya — tangan poker boleh seri. Pot dibahagi (chop) apabila dua atau lebih pemain menunjukkan lima kad terbaik yang serupa semasa showdown. Suit tidak pernah memecahkan seri, dan odd chip yang berbaki diberikan kepada pemain seri pertama di sebelah kiri butang pengedar.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -105,7 +105,7 @@ Inilah salah faham di sebalik kebanyakan pertikaian "eh, kenapa split?!".
 ==r:Flush spade **tidak** mengalahkan flush heart.== Texas Hold'em tiada susunan suit — ==nilai yang serupa dibahagi, noktah==. (Ini memerangkap pemain yang datang daripada permainan yang *memang* menyusun suit.)
 
 ### ❌ "Hole card saya lebih tinggi, jadi saya menang"
-Board 9♠ 8♦ 7♣ 6♥ 5♠ — straight yang sudah siap. Anda memegang A♠ K♦; lawan anda memegang 2♣ 3♥. ==r:**Dibahagi.**== Anda berdua memainkan 9-8-7-6-5 di board, kerana ==r:hole card besar anda tidak pernah masuk ke dalam lima kad terbaik==. Hole card yang tinggi hanya penting apabila ia benar-benar dimainkan sebagai kicker — [apa itu kicker dan bila ia dimainkan](/ms/blog/holdem-kicker) melukis garisan itu dengan tepat.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ — straight yang sudah siap. Anda memegang A♠ K♦; lawan anda memegang 2♣ 3♥. ==r:**Dibahagi.**== Anda berdua memainkan 9-8-7-6-5 di board, kerana ==r:hole card besar anda tidak pernah masuk ke dalam lima kad terbaik==. Hole card yang tinggi hanya penting apabila ia benar-benar dimainkan, sama ada sebagai sebahagian daripada tangan itu sendiri atau sebagai kicker — [apa itu kicker dan bila ia dimainkan](/ms/blog/holdem-kicker) melukis garisan itu dengan tepat.
 
 ### ❌ "Saya guna kedua-dua kad, dia guna satu sahaja"
 ==r:Berapa banyak hole card yang anda gunakan tidak relevan.== Satu-satunya yang dikira ialah lima kad terkuat daripada tujuh. ==g:Jika kedua-dua pemain sampai kepada lima kad terbaik yang sama, ia chop tidak kira bagaimana anda sampai ke situ.==

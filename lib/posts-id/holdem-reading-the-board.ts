@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -73,7 +73,7 @@ Tiga contoh cepat, dihitung tuntas:
 Inilah pindaian persis yang saya jalankan di setiap river, dengan urutan ini — dari tangan yang paling sulit dikenali hingga yang paling mudah:
 
 :::steps
-Cek flush | Hitung jenis di ketujuh kartu. Jenis apa pun yang muncul 5+ kali = flush. Inilah tangan yang paling sering dilewatkan pemula.
+Cek flush | Hitung jenis di ketujuh kartu. Jenis apa pun yang muncul 5+ kali = flush — dan jika lima kartu sejenis itu berurutan, itu straight flush, yang mengalahkan semua tangan di bawahnya. Inilah tangan yang paling sering dilewatkan pemula.
 Cek straight | Susun ketujuh nilai kartu dalam benak dan cari 5 berurutan. As bisa main tinggi atau rendah, tak pernah keduanya.
 Cek nilai berpasangan | Pair, trips, full house, quads — cocokkan nilai antara tangan Anda dan board.
 Ambil yang tertinggi | Apa pun hal terkuat yang Anda temukan, itulah tangan Anda. Tambahkan kartu tersisa tertinggi sampai Anda memegang tepat 5.
@@ -238,7 +238,7 @@ Anda river sebuah flush, board menampilkan dua Q, dan Anda tak pernah bertanya. 
 
 **Q. Bagaimana cara menentukan tangan 5-kartu terbaik dari 7 kartu?**
 
-A. Pindai ketujuh kartu (2 tertutup + 5 board) dengan urutan tetap: flush dulu (jenis apa pun 5+ kali), lalu straight (5 nilai berurutan), lalu nilai berpasangan (pair, trips, full house, quads). Ambil hal terkuat yang Anda temukan dan isi sampai tepat 5 kartu dengan kartu tersisa tertinggi. Anda boleh memakai kedua kartu tertutup, satu, atau tak satu pun.
+A. Pindai ketujuh kartu (2 tertutup + 5 board) dengan urutan tetap: flush dulu (jenis apa pun 5+ kali — dan jika lima di antaranya berurutan, itu straight flush), lalu straight (5 nilai berurutan), lalu nilai berpasangan (pair, trips, full house, quads). Ambil hal terkuat yang Anda temukan dan isi sampai tepat 5 kartu dengan kartu tersisa tertinggi. Anda boleh memakai kedua kartu tertutup, satu, atau tak satu pun.
 
 **Q. Apakah wajib memakai kedua kartu tertutup di Texas Hold'em?**
 

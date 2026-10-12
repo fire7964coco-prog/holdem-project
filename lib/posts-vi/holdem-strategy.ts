@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mọi quyết định thắng trong Texas Hold'em đều quy về 5 câu hỏi lặp lại: tôi đang ngồi ở vị trí nào, tay bài này có đáng chơi không, raise hay fold thay vì open-limp, có tiếp tục cược ở flop (c-bet) không, và khi nào nên bỏ bài. Người chơi tight-aggressive trả lời tốt 5 câu đó sẽ bỏ khoảng 80% tay bài preflop, chơi mạnh tay khi đã vào pot và thắng gần như mọi bàn chơi vui — không cần học thuộc danh sách mẹo nào cả.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -242,7 +242,7 @@ A. Không có một con số duy nhất — nó phụ thuộc vào vị trí, bo
 
 **Q. Poker là trò chơi may rủi hay kỹ năng?**
 
-A. Cả hai — nhưng kỹ năng thắng theo thời gian. Bất kỳ ván đơn lẻ nào cũng mang yếu tố may rủi lớn, đó là lý do một người mới có thể lấy trọn stack của một tay chuyên nghiệp trong một buổi. Nhưng qua hàng nghìn ván, lợi thế của người quyết định tốt hơn áp đảo và phương sai san bằng — chính vì thế cùng những người chơi ấy cứ liên tục có tiền. Poker là trò chơi kỹ năng chơi bằng một bộ bài may rủi.
+A. Cả hai — nhưng kỹ năng thắng theo thời gian. Bất kỳ ván đơn lẻ nào cũng mang yếu tố may rủi lớn, đó là lý do một người mới có thể lấy trọn stack của một tay chuyên nghiệp trong một buổi. Nhưng qua hàng trăm nghìn ván, lợi thế của người quyết định tốt hơn áp đảo và phương sai san bằng — chính vì thế cùng những người chơi ấy cứ liên tục có tiền. Poker là trò chơi kỹ năng chơi bằng một bộ bài may rủi.
 
 **Q. GTO hay khai thác đối thủ (exploit) — người mới nên bắt đầu từ đâu?**
 

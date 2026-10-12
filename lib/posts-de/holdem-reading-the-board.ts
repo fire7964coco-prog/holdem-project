@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -73,7 +73,7 @@ Drei schnelle Beispiele, komplett durchgerechnet:
 Das ist genau der Scan, den ich an jedem River laufen lasse, in dieser Reihenfolge – von der am schwersten zu erkennenden Hand bis zur einfachsten:
 
 :::steps
-Auf einen Flush prüfen | Zähle die Farben über alle 7 Karten. Jede Farbe, die 5+ mal auftaucht = Flush. Das ist die Hand, die Anfänger am häufigsten übersehen.
+Auf einen Flush prüfen | Zähle die Farben über alle 7 Karten. Jede Farbe, die 5+ mal auftaucht = Flush – und liegen fünf dieser Karten in Folge, ist es ein Straight Flush, der jede Hand darunter schlägt. Das ist die Hand, die Anfänger am häufigsten übersehen.
 Auf eine Straße prüfen | Reihe alle 7 Ränge im Kopf auf und suche nach 5 in Folge. Das Ass zählt hoch oder niedrig, nie beides.
 Gepaarte Ränge prüfen | Paare, Drillinge, Full Houses, Vierlinge – gleiche Ränge zwischen deiner Hand und dem Board.
 Nimm das Höchste | Was auch immer das Stärkste ist, das du gefunden hast, das ist deine Hand. Füll mit den höchsten verbleibenden Karten auf, bis du genau 5 hältst.
@@ -238,7 +238,7 @@ Du triffst am River einen Flush, das Board zeigt zwei Damen, und du stellst die 
 
 **Q. Wie findest du deine beste 5-Karten-Hand aus 7 Karten heraus?**
 
-A. Scanne alle 7 Karten (2 Hole + 5 Board) in fester Reihenfolge: zuerst Flush (jede Farbe 5+ mal), dann Straße (5 Ränge in Folge), dann gepaarte Ränge (Paare, Drillinge, Full Houses, Vierlinge). Nimm das Stärkste, das du findest, und füll mit deinen höchsten verbleibenden Karten auf genau 5 Karten auf. Du darfst beide Hole Cards, eine oder keine nutzen.
+A. Scanne alle 7 Karten (2 Hole + 5 Board) in fester Reihenfolge: zuerst Flush (jede Farbe 5+ mal – und sind fünf davon aufeinanderfolgend, ist es ein Straight Flush), dann Straße (5 Ränge in Folge), dann gepaarte Ränge (Paare, Drillinge, Full Houses, Vierlinge). Nimm das Stärkste, das du findest, und füll mit deinen höchsten verbleibenden Karten auf genau 5 Karten auf. Du darfst beide Hole Cards, eine oder keine nutzen.
 
 **Q. Wann spielt das Board für alle – und was heißt das für den Pot?**
 

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Cuándo foldear en el póker: la habilidad que gana más en silencio",
   seoTitle: "Por qué no sabes soltar una buena mano — cuándo foldear",
   desc: "Foldear es la habilidad ganadora más infravalorada. Cuándo retirarte preflop y en cada calle, el umbral de pot odds y cómo soltar una gran mano.",
-  tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas a la larga. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
+  tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas a la larga. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, después suelta las manos falladas que se enfrentan a una apuesta en una mesa que favorece al rival, y los proyectos débiles que no cumplen sus pot odds, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -144,8 +144,8 @@ Antes de cualquier call grande, pasa esta checklist. Cuatro de las cinco pregunt
 :::steps
 ¿Puedo nombrar las manos peores que apostarían así? | Si las únicas manos que apuestan así me ganan, estoy pagando valor.
 ¿Supero el umbral de pot odds? | Si mi equity está por debajo del número de la tabla, el precio dice fold.
-¿Esta línea es una apuesta de valor o un farol? | Los pasivos y los raises grandes en el river son valor — créetelos.
-¿Solo estoy pagando por "verlo"? | La curiosidad y el ego no son razones; es la trampa del coste hundido hablando.
+¿Esta línea es una apuesta de valor o un farol? | Los pasivos y los raises grandes en el river suelen ser valor — créetelos.
+¿Solo estoy pagando por "verlo"? | La curiosidad y el ego no son razones; es tu ego el que habla, no las matemáticas.
 ¿Apostaría yo mismo esta mano por valor aquí? | Si no, tengo un bluff-catcher — la pregunta pasa a ser cada cuánto farolea, no si voy ganando.
 :::
 
@@ -252,8 +252,8 @@ A. Foldea un sobrepar cuando un rival pasivo muestra agresión real en una mesa 
 ## El manual del fold, en resumen
 
 1. **En el peor de los casos un fold te cuesta cero** — cuando estás batido, eso le gana a cualquier alternativa negativa.
-2. **Foldea la mayoría de las manos preflop** (75–85%), foldea las manos falladas y los proyectos sin precio después del flop, y trata el **turn como la calle de rendirse.**
-3. **Supera el umbral de pot odds o foldea** — 25% frente a una apuesta de medio bote, ~33% frente a una del tamaño del bote.
+2. **Foldea la mayoría de las manos preflop** (75–85%), después del flop foldea las manos falladas que se enfrentan a una apuesta en una mesa que encaja con el rango del rival, además de los proyectos sin precio, y trata el **turn como la calle de rendirse.**
+3. **Supera el umbral de pot odds o foldea** — 25% frente a una apuesta de medio bote, ~33% frente a una del tamaño del bote (las odds implícitas pueden justificar algún call más fino, nunca contra un stack corto).
 4. **Suelta las buenas manos cuando la línea grita valor** — el top pair no es lo más alto de tu rango.
 5. **Foldea por matemática, no por miedo** — vence la trampa del coste hundido, ignora tu ego y recuerda que las fichas del bote nunca fueron tuyas para protegerlas.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -73,7 +73,7 @@ Tres ejemplos rápidos, resueltos por completo:
 Este es el repaso exacto que hago en cada river, en este orden — de la mano más difícil de detectar a la más fácil:
 
 :::steps
-Busca un color | Cuenta los palos en las 7 cartas. Cualquier palo que aparezca 5+ veces = color. Esta es la mano que más se les escapa a los principiantes.
+Busca un color | Cuenta los palos en las 7 cartas. Cualquier palo que aparezca 5+ veces = color — y si cinco de esas cartas del mismo palo van seguidas, es escalera de color, que supera a todas las manos por debajo de ella. Esta es la mano que más se les escapa a los principiantes.
 Busca una escalera | Alinea mentalmente los 13 valores y busca 5 seguidos. El As cuenta alto o bajo, nunca las dos cosas a la vez.
 Revisa las parejas | Parejas, tríos, fulls, pókers — empareja valores entre tu mano y la mesa.
 Quédate con lo más alto | Sea lo más fuerte que hayas encontrado, esa es tu mano. Añade las cartas más altas que queden hasta tener exactamente 5.
@@ -238,7 +238,7 @@ Ligas color en el river, la mesa muestra dos reinas, y nunca te haces la pregunt
 
 **Q. ¿Cómo averiguas tus mejores 5 cartas a partir de 7?**
 
-A. Repasa las 7 cartas (2 propias + 5 de la mesa) en un orden fijo: primero color (cualquier palo 5+ veces), luego escalera (5 valores seguidos), luego parejas (parejas, tríos, fulls, pókers). Quédate con lo más fuerte que encuentres y complétalo hasta exactamente 5 cartas con tus cartas más altas restantes. Puedes usar las dos cartas propias, una, o ninguna.
+A. Repasa las 7 cartas (2 propias + 5 de la mesa) en un orden fijo: primero color (cualquier palo 5+ veces — y si cinco de ellas son consecutivas, es escalera de color), luego escalera (5 valores seguidos), luego parejas (parejas, tríos, fulls, pókers). Quédate con lo más fuerte que encuentres y complétalo hasta exactamente 5 cartas con tus cartas más altas restantes. Puedes usar las dos cartas propias, una, o ninguna.
 
 **Q. ¿Tienes que usar tus dos cartas propias en Texas Hold'em?**
 

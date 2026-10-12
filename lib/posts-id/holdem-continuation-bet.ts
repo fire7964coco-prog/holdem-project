@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — di atas 97% pada ketiga board yang kami solve), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
   masterUpdated: "2026-10-06",
@@ -168,7 +168,7 @@ Mari buat "jangan"-nya eksplisit, karena di sinilah uang diselamatkan:
 
 - **Board menghantam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang meng-call raise jauh lebih keras daripada mengenai tangan Anda. Bertaruh di sini dengan sebagian besar range Anda cuma menyumbang chip — check jauh lebih sering, dan saat Anda bertaruh, pilih ukuran besar dan selektif.
 - **Anda out of position di board dinamis** dengan tangan marginal. Beraksi lebih dulu tanpa informasi, jaga pot tetap kecil dan check.
-- **Anda multiway dengan tangan kosong.** Dibahas di atas — tak ada fold equity, tak ada taruhan.
+- **Anda multiway dengan tangan kosong.** Dibahas di atas — fold equity nyaris tak ada, jadi jangan bertaruh.
 - **Tangan Anda ingin melindungi checking range.** Kadang Anda meng-check tangan kuat dengan sengaja supaya check Anda tak otomatis lemah.
 
 Pergeseran pola pikir yang membuat Anda menang: **check bukan menyerah.** Pemain bagus meng-check *banyak*, dengan sengaja, dan itu membuat taruhan mereka jauh lebih menakutkan saat memang muncul. Kalau Anda merasa wajib bertaruh cuma karena raise preflop, refleks itu menghabiskan uang Anda.

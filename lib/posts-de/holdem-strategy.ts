@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -262,7 +262,7 @@ A. Beide Stile sind aggressiv – sie unterscheiden sich nur darin, wie viele H�
 
 **Q. Ist Poker ein Glücksspiel oder ein Geschicklichkeitsspiel?**
 
-A. Beides – nur auf unterschiedlichen Zeitskalen. In einer einzelnen Hand entscheidet zu einem großen Teil das Deck, weshalb ein Anfänger an einem Abend einen Profi stacken kann. Über tausende Hände hinweg verschwindet dieser Zufall aber im Rauschen, und übrig bleibt, wer die besseren Entscheidungen trifft. Genau deshalb tauchen dieselben Namen Jahr für Jahr an den Final Tables auf.
+A. Beides – nur auf unterschiedlichen Zeitskalen. In einer einzelnen Hand entscheidet zu einem großen Teil das Deck, weshalb ein Anfänger an einem Abend einen Profi stacken kann. Über hunderttausende Hände hinweg verschwindet dieser Zufall aber im Rauschen, und übrig bleibt, wer die besseren Entscheidungen trifft. Genau deshalb tauchen dieselben Namen Jahr für Jahr an den Final Tables auf.
 
 **Q. Was ist GTO-Poker?**
 

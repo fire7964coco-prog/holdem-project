@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em bạn luôn chơi tay bài 5 lá mạnh nhất trong 7 lá (2 lá bài tẩy + 5 lá bài chung) — dùng cả hai lá tẩy, một lá, hoặc không lá nào (chơi theo board). Quét cả 7 lá theo một thứ tự cố định: thùng → sảnh → các lá trùng hạng → bài cao.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -65,7 +65,7 @@ Ba ví dụ nhanh, giải đầy đủ:
 Đây là đúng phép quét tôi chạy ở mọi river, theo đúng thứ tự này — từ tay bài khó nhận ra nhất xuống tay dễ thấy nhất:
 
 :::steps
-Kiểm tra thùng | Đếm chất trên cả 7 lá. Chất nào xuất hiện từ 5 lần trở lên = thùng (flush). Đây là tay bài người mới bỏ sót nhiều nhất.
+Kiểm tra thùng | Đếm chất trên cả 7 lá. Chất nào xuất hiện từ 5 lần trở lên = thùng (flush) — và nếu năm lá cùng chất đó liên tiếp nhau, đó là thùng phá sảnh, mạnh hơn mọi tay bài xếp dưới nó. Đây là tay bài người mới bỏ sót nhiều nhất.
 Kiểm tra sảnh | Xếp cả 7 hạng bài trong đầu và tìm 5 lá liên tiếp. Lá A tính cao hoặc thấp, không bao giờ cả hai.
 Kiểm tra các lá trùng hạng | Đôi, trips, cù lũ, tứ quý — khớp hạng giữa bài tẩy và board.
 Lấy tay mạnh nhất | Thứ mạnh nhất bạn tìm được chính là tay bài của bạn. Thêm các lá cao nhất còn lại cho đủ đúng 5 lá.
@@ -232,7 +232,7 @@ Muốn đối chiếu lại phép quét của mình, [máy tính xác suất pok
 
 **Q. Làm sao tìm ra 5 lá mạnh nhất trong 7 lá?**
 
-A. Quét cả 7 lá (2 lá tẩy + 5 lá board) theo thứ tự cố định: thùng trước (chất nào có từ 5 lá trở lên), rồi sảnh (5 hạng liên tiếp), rồi các lá trùng hạng (đôi, trips, cù lũ, tứ quý). Lấy thứ mạnh nhất bạn tìm được và thêm các lá cao nhất còn lại cho đủ đúng 5 lá. Bạn có thể dùng cả hai lá tẩy, một lá, hoặc không lá nào.
+A. Quét cả 7 lá (2 lá tẩy + 5 lá board) theo thứ tự cố định: thùng trước (chất nào có từ 5 lá trở lên — và nếu năm lá trong số đó liên tiếp, đó là thùng phá sảnh), rồi sảnh (5 hạng liên tiếp), rồi các lá trùng hạng (đôi, trips, cù lũ, tứ quý). Lấy thứ mạnh nhất bạn tìm được và thêm các lá cao nhất còn lại cho đủ đúng 5 lá. Bạn có thể dùng cả hai lá tẩy, một lá, hoặc không lá nào.
 
 **Q. Trong Texas Hold'em, phải dùng cả 2 lá bài tẩy hay chỉ 1?**
 

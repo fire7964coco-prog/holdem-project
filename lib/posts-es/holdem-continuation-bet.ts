@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: más del 97% en los tres boards que resolvimos), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
@@ -166,7 +166,7 @@ Hagamos el "no" explícito, porque es donde se ahorra el dinero:
 
 - **El board machacó el rango de tu rival.** Un flop 7‑6‑5 o 9‑8‑7 liga con las manos que pagan una subida mucho más fuerte de lo que liga con las tuyas. Apostar aquí con la mayor parte de tu rango solo dona fichas — pasa mucho más a menudo, y cuando apuestes, hazlo grande y selectivo.
 - **Estás fuera de posición en un board dinámico** con una mano marginal. Actuando primero sin información, mantén el bote pequeño y pasa.
-- **Estás multiway con aire.** Cubierto arriba — sin fold equity, no hay apuesta.
+- **Estás multiway con aire.** Cubierto arriba — casi sin fold equity, así que no hay apuesta.
 - **Tu mano quiere proteger un rango de check.** A veces pasas una mano fuerte a propósito para que tus checks no sean automáticamente débiles.
 
 El cambio de mentalidad que te hace ganador: **pasar no es rendirse.** Los buenos jugadores pasan *mucho*, a propósito, y eso hace que sus apuestas den mucho más miedo cuando llegan. Si te sientes obligado a apostar solo porque subiste en el preflop, ese reflejo te está costando dinero.

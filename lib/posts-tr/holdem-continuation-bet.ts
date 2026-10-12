@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman), multiway potlarda ise çok daha az.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-12",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -178,7 +178,7 @@ Asıl iş flop'ta başlar: c-bet'i yapmadan önce hangi turn kartlarında ikinci
 
 - **Board rakibinin range'ine çok iyi oturdu.** 7‑6‑5 ya da 9‑8‑7 flop'u, bir raise'i call eden elleri seninkilerden çok daha sert vurur. Burada range'inin çoğuyla bahis yapmak düpedüz çip bağışlamaktır — çok daha sık check et, bahis yaptığında da büyük ve seçici ol.
 - **Dinamik bir board'da sınırda bir elle pozisyon dışındasın.** Hiç bilgi olmadan ilk konuşuyorsan potu küçük tut ve check et.
-- **Boş elle multiway'desin.** Yukarıda anlattık — fold equity yok, bahis yok.
+- **Boş elle multiway'desin.** Yukarıda anlattık — fold equity neredeyse yok, o yüzden bahis yok.
 - **Elin bir check range'ini korumak istiyor.** Bazen güçlü bir elle bilerek check edersin ki check'lerin otomatik olarak zayıf görünmesin.
 
 Seni kazanan oyuncuya çeviren zihniyet değişikliği şu: **check teslim olmak değildir.** İyi oyuncular *çok* ve bilerek check eder; bu da bahisleri geldiğinde onları çok daha korkutucu kılar. Sırf preflop'ta raise yaptın diye bahis yapmak zorunda hissediyorsan, o refleks sana para kaybettiriyor.
