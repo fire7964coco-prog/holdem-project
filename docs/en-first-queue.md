@@ -968,7 +968,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 통지 라벨 유지(요청 아님): ① bad-beat L90 «trips di board»(EN L100) OK🪶 정밀화 여지 ② bad-beat L129 «ada yang mengambil rake daripada potongan jackpot» 방향 뒤집힘 읽힘(ms 고유 · 경미) ③ straddle EN «a few rooms let the straddler post any amount» = 검수장 EN 재판정 몫 ④ straddle «Preflop sahaja»·팟오즈 · rake «online lebih rendah» 단서 누락 · «much of»→«kebanyakan».
 - 🔴 ms `masterUpdated` 그대로 · EN-먼저(BJ-1~3)는 EN `updated` 갱신 → 형제는 EN 문면 확정 뒤. 이행 순서 = ms 고유(BJ-4·5) → EN+ms(BJ-1~3) → 형제 9.
 
-### 2-BK. 우편함 수신분 — MA-471 (MS rankings 묶음 4 · split-pot-rules·reading-the-board·flush-vs-straight · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267
+### 2-BK. 우편함 수신분 — MA-471 (MS rankings 묶음 4 · split-pot-rules·reading-the-board·flush-vs-straight · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267 · ✅ BK-1~3 이행 2026-10-12 (6) `182b9a21` MB-269
 
 > WRONG 0 · RISKY 4. 요청 2(ms 고유 · EN `6164c748` 09-28 미전파) + EN-먼저 1. 위치 대조 main `7c14893d`.
 
@@ -980,7 +980,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 🪶 통지(요청 아님): ① L79 «padankan nilai» 보드 페어 강독(EN 동형 · L165·L242가 정답) ② split-pot L172 «biasanya di board berpasangan dua» → «contohnya» 권고 ③ reading-the-board FAQ L248 «normally»+A 109 괄호 미전파 ④ 숏덱 서열 WSOP 2026 PDF OK.
 
-### 2-BL. 우편함 수신분 — MA-472 (MS strategy 묶음 4 · limping·continuation-bet·when-to-fold·strategy · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267
+### 2-BL. 우편함 수신분 — MA-472 (MS strategy 묶음 4 · limping·continuation-bet·when-to-fold·strategy · 기준 `d265abf0`) · 등재·회신 2026-10-12 (5) MB-267 · ✅ BL-1·2 이행 2026-10-12 (6) `182b9a21` MB-269
 
 > WRONG 0 · RISKY 13. 요청 1 = ms 고유 7 · 요청 2 = EN-먼저 6. 위치 대조 main `7c14893d`.
 
