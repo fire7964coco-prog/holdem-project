@@ -1,3 +1,12 @@
+## 2026-10-12 (7) — 회차 A: `/solver` 15언어 랜딩에 플랍 조회(S-078) 소개 · 배포 `7a82f064` · MB-270
+
+- 사장님 «핸드오프 읽고 회차 A(플랍 조회 소개) 진행해». 시작 14:44 · 우편함 본체 몫 새 MA 없음(MA-478·479 = 기존 대기 · MA-482 운영 통지).
+- 사실 확인: 솔버 소스(`flop-study-labels.ts`·`FlopStudyPage.vue`·`flop-study-model.ts`·`hand-review-data.ts` `FLOP_STUDY_LAUNCHED = true` · readyScenarios 31 = SRP 9·3벳 11·4벳 11) + 라이브 Playwright `?view=flop-study&lang=ko`(배지 «미리 계산한 결과 · 목표 오차 0.3%» · 고정 벳 크기 문구). 발견 2: ① «플랍 첫 결정만»(S-078·핸드오프)은 느슨 — 액션을 눌러 플랍 끝까지 따라감 · 턴부터 저장 안 함 ② 소스에 `?view=flop-study&spot=&flop=&line=` 딥링크 있음(S-행 통지 없음 → 본체 링크엔 아직 안 씀). → `docs/solver-factsheet.md` §4-B 신설.
+- 15로케일 × 3자리(FEATURES 1행 · featureList 1항 · FAQ 1문항) 스크립트 삽입(앵커 1회 일치 검사). 상황 개수 하드코딩 없음(플레이북 §4-15) · 플랍 조회 수치는 교육 예제 수치와 섞지 않음(A72 체크 99.0% vs 98.2%).
+- 렌즈 3종 병렬(사실·정합 / 라틴 문자 10로케일 네이티브 / ko·ja·zh·zh-hant·hi 네이티브) → WRONG 0 · 반영 40자리(ko «벳 크기»→«벳 사이즈» 파일 용어 통일 · hi 라벨 «जल्द ही» 경계·«बराबर सूट» 오독 · zh·zh-hant 把 구문 · zh-hant «按下一個» 중의 · de «%» 띄어쓰기 · ru «1 755» · en «first player» 등) + ko COMPARE «계산이 도는 곳» 우리 칸 한정어. 다른 14로케일 COMPARE는 «내 기기에서»만이라 무변경.
+- 게이트: build 74 + 729 · FAQPage 스키마 새 문항 포함(ko 18 · en 19 · ru·hi 24).
+- 🪶 남김(자동 착수 금지) = MB-270 행(GTO Wizard 문답·휴대폰 문답·계산 위치 행 보충 후보 · 솔버 확인 2건).
+
 ## 2026-10-12 (6) — queue §2-BK·§2-BL 이행 (MA-471·472) · 배포 `182b9a21` · MB-269
 
 - 사장님 «핸드오프 읽고 queue §2-BK·§2-BL 이행 진행해». 우편함 새 본체 몫 없음. posting.mdc 형식 규칙 확인 후 착수.
