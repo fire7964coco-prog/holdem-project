@@ -1002,14 +1002,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | BM-3 zh | reading-the-board FAQ L378 스캔 순서에 동화순 단계 없음 | ✅ 같은 글 L322 괄호 이식 |
 | BM-4 tr | strategy FAQ L258 «Beceri binlerce» | ✅ «yüz binlerce»(같은 글 L254) |
 
-### 2-BN. 우편함 수신분 — MA-486 (MB-272 핸드 복기 링크 54문단 · 기준 `eb81de92` · 솔버 `6f4c29b`) · 등재·회신 2026-10-12 (13) MB-276
+### 2-BN. 우편함 수신분 — MA-486 (MB-272 핸드 복기 링크 54문단 · 기준 `eb81de92` · 솔버 `6f4c29b`) · 등재·회신 2026-10-12 (13) MB-276 · ✅ BN-1·2 이행 2026-10-12 (14) MB-277
 
 > OK 26 · RISKY 28 · WRONG 0. 요청 1. 위치 대조 main `d562e919` 전부 확인(28 = donk 14 + 3bet-pot-cbet 13 + ko 필라 1). 솔버 `src/presets.ts` L349 «betFlop: "33,75"» 확인.
 
 | # | 자리 | 처방 |
 |---|---|---|
-| BN-1 28 | 복기 문단 끝 문장 «위 예제와 수치가 **조금** 다를 수 있고»(EN «can differ **slightly** from the example above») — donk-bet-strategy 14로케일(ko L258 · en L262 · de L224 · es L232 · fr L217 · hi L205 · id L208 · ja L232 · ms L208 · pt L207 · tr L229 · vi L220 · zh L231 · zh-hant L232) · 3bet-pot-cbet 13로케일(ko L335 · en L275 · de L198 · es L217 · fr L191 · hi L184 · id L187 · ja L211 · ms L185 · pt L185 · vi L192 · zh L211 · zh-hant L211) · ko `lib/posts.ts` holdem-3bet-strategy L7621 | «조금/slightly» 삭제(987 리드 23.7% ↔ 앱 ≈11.9% · AK2 7.4bb 57.8% ↔ 33.5%) |
-| BN-2 14 | 위 중 AK2 문단(3bet-pot-cbet 13 + ko 필라 1) — 예제 큰 벳 66%(14.9bb) ↔ 앱 사전 계산 33%·75%(16.9bb) | 한 구절 «앱의 큰 벳은 팟 75%» 추가(권장) |
+| BN-1 28 | 복기 문단 끝 문장 «위 예제와 수치가 **조금** 다를 수 있고»(EN «can differ **slightly** from the example above») — donk-bet-strategy 14로케일(ko L258 · en L262 · de L224 · es L232 · fr L217 · hi L205 · id L208 · ja L232 · ms L208 · pt L207 · tr L229 · vi L220 · zh L231 · zh-hant L232) · 3bet-pot-cbet 13로케일(ko L335 · en L275 · de L198 · es L217 · fr L191 · hi L184 · id L187 · ja L211 · ms L185 · pt L185 · vi L192 · zh L211 · zh-hant L211) · ko `lib/posts.ts` holdem-3bet-strategy L7621 | ✅ «조금/slightly» 삭제(987 리드 23.7% ↔ 앱 ≈11.9% · AK2 7.4bb 57.8% ↔ 33.5%) |
+| BN-2 14 | 위 중 AK2 문단(3bet-pot-cbet 13 + ko 필라 1) — 예제 큰 벳 66%(14.9bb) ↔ 앱 사전 계산 33%·75%(16.9bb) | ✅ ko «플랍 큰 벳도 팟 66%가 아닌 75%라서» 꼴 한 구절(로케일 네이티브 꼴 · 각 파일의 66% 표기 따름) |
 
 - 🪶 통지(요청 아님 · OK 유지): ① «세 판정 중 어디에 드는지 나옵니다» = 레인지 밖·EV 없음·«참고만» 경로 미언급 → MB-214(MA-390) 같은 문면 OK 선례 ② tr «ev oyunlarına»(ko «펍» → 홈게임) = 가능성 서술이라 참 · 현지화 선택은 본체.
 - A72 글(a-high-board-cbet 14 · continuation-bet 12)의 «조금» = 98.2%↔99.0%로 참 → 손대지 않는다.
