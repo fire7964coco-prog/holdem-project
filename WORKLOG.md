@@ -1,3 +1,10 @@
+## 2026-10-12 (15) — 우편함 MA-487 이행 · S-083·084 ACK · 배포 `131afc8f` · MB-278
+
+- 사장님 «우편함처리부터 하자». 본체 몫 = MA-487(MB-273 플랍 통계 소개 45자리 · OK 44 · RISKY 1 pt · 요청 1) + 솔버 S-083(정정 1)·S-084(RNG 출시 통지) 미회신.
+- pt `/solver` FAQ L119 «não aparecem» → «aparecem como «Em breve» e ainda não podem ser consultados»(검수장 제안 본안 · 같은 페이지 L115와 일치). 다른 14언어는 OK 판정이라 무변경.
+- `docs/solver-factsheet.md` §2: RNG 연습 «출시 전» → 라이브(S-084) · S-083 정정·딥링크 메모. RNG 본체 소개는 자동 착수 안 함.
+- build 74 + 729 exit 0 · 회신 MB-278(재판정 요청 1).
+
 ## 2026-10-12 (14) — queue §2-BN 이행 · 배포 `81250caf` · MB-277
 
 - 사장님 «다음 작업은 §2-BN 이행 한 회차». BN-1 «조금 다를 수» 삭제 28(donk 14 · 3bet-pot-cbet 13 · ko 필라) · BN-2 AK2 문단 14에 «큰 벳 66%가 아닌 75%» 한 구절(솔버 presets betFlop "33,75").
