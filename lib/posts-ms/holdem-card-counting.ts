@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bukan seperti dalam blackjack — dek dikocok semula setiap tangan dan terlalu sedikit kad yang terdedah, jadi menjejak kad tinggi dan rendah tidak memberi anda apa-apa kelebihan. Tetapi poker ada kiraan sah tersendiri: kira outs, guna blocker dan jejak kad mati untuk membaca apa yang lawan anda tidak mungkin pegang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -45,11 +45,11 @@ Jika anda membayangkan running count tinggi-rendah seperti dalam filem, lupakan 
 
 ## Mengapa Kira Kad Gaya Blackjack Tak Jalan dalam Poker?
 
-**Kira kad blackjack hanya berkesan kerana satu shoe dimainkan hingga susut merentas banyak tangan sementara anda cuba mengalahkan dealer yang peraturannya tetap — poker mematahkan ketiga-tiga syarat itu.** Inilah sebab tepat kaedah itu tidak boleh dipindahkan:
+**Kira kad blackjack berkesan kerana satu shoe dimainkan hingga susut merentas banyak tangan sementara anda cuba mengalahkan dealer yang peraturannya tetap — poker mematahkan ketiga-tiga syarat itu.** Inilah sebab tepat kaedah itu tidak boleh dipindahkan:
 
 :::card
-🔀 | Dek bermula semula setiap tangan | Kira kad blackjack perlukan shoe yang diagihkan hingga susut merentas berpuluh-puluh tangan supaya maklumat terkumpul. Poker mengocok semula setiap tangan, jadi tiada apa yang dibawa ke tangan seterusnya — setiap tangan bermula daripada dek penuh yang rawak
-🙈 | Terlalu sedikit kad yang terdedah | Hole card setiap pemain tertutup. Anda nampak dua kad anda sendiri, board yang dikongsi dan apa sahaja yang dibuka di showdown — segelintir kad — tidak pernah cukup untuk menjejak komposisi dek
+🔀 | Dek bermula semula setiap tangan | Kira kad blackjack bergantung pada shoe yang diagihkan hingga susut merentas banyak tangan, tempat maklumat terkumpul. Poker mengocok semula setiap tangan, jadi tiada apa yang dibawa ke tangan seterusnya — setiap tangan bermula daripada dek penuh yang rawak
+🙈 | Terlalu sedikit kad yang terdedah | Hole card setiap pemain tertutup. Anda nampak dua kad anda sendiri, board yang dikongsi dan apa sahaja yang dibuka di showdown — segelintir kad — cukup untuk mengira outs bagi tangan di depan anda, tetapi tidak pernah cukup untuk running count gaya blackjack
 👥 | Anda bermain menentang lawan, bukan rumah | Tiada dealer tetap untuk anda cari kelebihan. "Dek yang kaya dengan kad tinggi" tidak bermakna apa-apa apabila pocket aces tetap premium — anda menang dengan tangan lebih baik atau keputusan lebih baik, bukan dengan kiraan yang memihak
 :::
 
@@ -127,7 +127,7 @@ Dalam Hold'em, satu-satunya kad yang diagihkan terbuka ialah lima kad komuniti y
 :::steps
 Kira outs anda pada setiap draw | Sebaik anda ada draw, kira kad yang melengkapkannya dan darab — ×4 hanya apabila kedua-dua kad akan keluar (anda all-in, atau turn dan river kedua-duanya percuma), jika tidak ×2 untuk kad seterusnya sahaja. Call apabila peluang itu — outs bersih sahaja — mengatasi harga, atau implied odds menampung jurangnya
 Tanya apa yang disekat oleh tangan anda | Sebelum bluff, semak sama ada anda memegang kad yang menjadikan calling hand terkuat mereka mustahil atau kurang berkemungkinan
-Sesuaikan untuk kad mati | Tolak mana-mana out yang anda nampak terdedah di luar board — kad yang terbuka sekejap, tangan yang ditunjukkan, fold yang anda terlihat. Kad yang anda nampak ialah kad yang lawan anda tidak boleh pegang — tetapi hanya yang terlihat secara tidak sengaja: sengaja cuba melihat kad pemain lain bukan sebahagian daripada kaedah ini — pendedahan tidak sengaja sahaja
+Sesuaikan untuk kad mati | Tolak mana-mana out yang anda nampak terdedah di luar board — kad yang terbuka sekejap, tangan yang ditunjukkan, fold yang anda terlihat. Kad yang anda sudah nampak telah keluar daripada dek (ia tidak boleh keluar di board, dan tiada pemain lain boleh memegangnya) — tetapi hanya yang terlihat secara tidak sengaja: sengaja cuba melihat kad pemain lain bukan sebahagian daripada kaedah ini — pendedahan tidak sengaja sahaja
 :::
 
 Buat ini untuk beberapa sesi dan ia akan menjadi automatik — anda akan "kira kad" setiap tangan, cuma dengan cara poker. Langkah seterusnya ialah menukar kiraan itu menjadi call dan fold dengan [pot odds](/ms/blog/holdem-pot-odds), matematik yang memberitahu sama ada outs anda berbaloi dengan harganya.

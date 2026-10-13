@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair dalam 11.8% tangan (odds 7.5:1 menentang anda), flop flush dengan dua kad satu jenis hanya 0.84%, dan melengkapkan flush draw dari flop menjelang river dalam 35% kes. Setiap nombor di bawah dikira terus daripada dek, bukan diagak.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -117,7 +117,7 @@ Angka lengkap itu terbahagi ikut street, dan itu penting apabila masih ada perta
 - **Flop → turn (satu kad):** 9 ÷ 47 = 19.1%.
 - **Turn → river (satu kad):** 9 ÷ 46 = 19.6%.
 
-Flush **backdoor** (runner-runner) — anda flop hanya *satu* kad tambahan jenis anda dan perlukan kedua-dua turn dan river jenis anda — lebih kurang 4.2%, bernilai kira-kira satu out tambahan dari segi equity. Bukan alasan untuk call, tetapi pemutus sebenar dalam situasi yang hampir. Untuk menukar mana-mana nombor ini menjadi call atau fold, masukkan ia ke dalam [cara kira pot odds](/ms/blog/holdem-pot-odds).
+Flush **backdoor** (runner-runner) — anda flop hanya *satu* kad tambahan jenis anda dan perlukan kedua-dua turn dan river jenis anda — lebih kurang 4.2% — kira-kira sebanyak yang ditambah oleh satu out tambahan kepada peluang anda untuk kena. Bukan alasan untuk call, tetapi pemutus sebenar dalam situasi yang hampir. Untuk menukar mana-mana nombor ini menjadi call atau fold, masukkan ia ke dalam [cara kira pot odds](/ms/blog/holdem-pot-odds).
 
 ---
 
@@ -131,7 +131,7 @@ Flush **backdoor** (runner-runner) — anda flop hanya *satu* kad tambahan jenis
 Connector seperti 8♠7♠ ada kitaran hidupnya sendiri. Anda akan **flop straight yang sudah jadi hanya 1.3%** daripada masa (76:1) — lebih jarang daripada sangkaan kebanyakan pemain. Angka itu terpakai untuk 54s hingga JTs, iaitu connector yang boleh mengisi straight dari kedua-dua hujung; tangan di pinggir dek ada lebih sedikit susunan, turun hingga 0.33% untuk A-K. Jauh lebih kerap anda flop **draw**:
 
 - **Open-ended straight draw (OESD):** ~10% daripada flop dengan connector. Lapan outs, lengkap **31.5%** menjelang river — 1 − C(39,2)/C(47,2) — atau 17% dari flop ke turn.
-- **Gutshot (inside) straight draw:** empat outs, lengkap **16.5%** menjelang river, 8.5% dari flop ke turn. Separuh equity open-ender, dan sebab itulah connector yang sama dimainkan begitu berbeza bergantung pada flop.
+- **Gutshot (inside) straight draw:** empat outs, lengkap **16.5%** menjelang river, 8.5% dari flop ke turn. Kira-kira separuh kemungkinan lengkap berbanding open-ender, dan sebab itulah connector yang sama dimainkan begitu berbeza bergantung pada flop.
 
 Perhatikan OESD (31.5%) dan flush draw (35%) hampir sama — kedua-duanya "satu draw besar", kedua-duanya lebih kurang satu pertiga untuk kena menjelang river. Itulah jalan pintas yang patut dihadam: draw besar biasa lebih kurang ==**satu dalam tiga**== untuk lengkap menjelang river, dan jatuh kepada lebih kurang satu dalam lima hingga enam pada satu street.
 

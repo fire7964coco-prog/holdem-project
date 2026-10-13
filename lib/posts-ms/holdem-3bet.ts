@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet ialah re-raise pertama sebelum flop — bet ketiga selepas big blind dan open-raise. Value 3-bet dengan QQ+ dan AK, tambah beberapa bluff blocker suited seperti A5s; saiz kira-kira 3x open in position dan 4x out of position, dengan kekerapan keseluruhan sekitar 6–10%. Bila kena 3-bet: 4-bet tangan premium, call tangan yang main baik, fold selebihnya.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -182,7 +182,7 @@ Berapa banyak yang patut anda teruskan? Garis asas teori ialah **Minimum Defense
 
 | Statistik fold-to-3-bet lawan | Apa maksudnya | Pelarasan anda |
 |:---:|:---|:---|
-| **~35% (jarang fold)** | Calling station — mereka call dengan hampir apa sahaja, jadi bluff jarang mendapat fold yang cukup untuk untung | 3-bet mereka **untuk value sahaja**, berhenti bluff, dan value-bet tanpa henti |
+| **~35% (jarang fold)** | Selalunya calling station — mereka teruskan dengan hampir apa sahaja, jadi bluff jarang mendapat fold yang cukup untuk untung | 3-bet mereka **untuk value sahaja**, berhenti bluff, dan value-bet tanpa henti |
 | **~55% (seimbang)** | Regular yang berfikir | Main hampir dengan GTO — campurkan value dan bluff blocker |
 | **~70%+ (terlalu kerap fold)** | Nit yang boleh dieksploit | 3-bet mereka **secara ringan jauh lebih kerap** — mereka menyerahkan pot kepada anda |
 

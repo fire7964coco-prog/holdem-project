@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -76,7 +76,7 @@ Itulah sebab utama equity penting: ia menukar soalan "adakah saya di depan?" men
 
 </div>
 
-Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favourite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Dan istilah "coin flip" sebenarnya sesuai untuk pair rendah menentang dua kad lebih besar, seperti 22 vs AK, di mana ia benar-benar rapat.
+Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favourite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Pemain memanggil apa sahaja perlumbaan pair menentang overcard sebagai "coin flip", tetapi hanya pair rendah menentang dua kad lebih besar (22 vs AK) yang benar-benar hampir 50/50.
 
 ---
 
@@ -141,20 +141,20 @@ Inilah idea paling penting yang ditinggalkan kebanyakan panduan pemula, dan seba
 
 Sebab itulah equity all-in preflop sangat penting: AA all-in menentang KK menyimpan ==82%== penuhnya — tiada cukai realisasi, tiada fold equity, hanya nombor mentah yang dimainkan. Itu juga sebab "coin flip" (22 vs AK pada ~52/48) benar-benar hampir seimbang ketika all-in, walaupun dua tangan yang sama jika dimainkan postflop akan berbeza jauh bergantung pada board dan siapa ada posisi.
 
-All-in tanpa pertaruhan yang tinggal ialah satu-satunya situasi dalam poker di mana, dengan kad masih akan keluar, pai dihiris tepat seperti kata matematik — dan itulah daya tarikan serta bahayanya.
+All-in tanpa pertaruhan yang tinggal ialah situasi paling bersih dalam poker di mana, dengan kad masih akan keluar, pai dihiris tepat seperti kata matematik — dan itulah daya tarikan serta bahayanya.
 
 ---
 
 ## Mengapa Tangan Besar Anda Mengecil dalam Pot Multiway?
 
-**Equity anda jatuh dengan cepat dalam pot multiway, kerana pai 100% yang sama kini dibahagi kepada lebih banyak tangan.** Pocket aces lebih kurang 85% secara heads-up, tetapi menentang tiga lawan ia merosot ke ==r:~64%==, dan menentang empat kepada ~56% — masih tangan terbaik, tetapi bukan lagi kelebihan besar seperti yang dirasakan. Dalam pot tiga pemain, equity secara *purata* 33% mengikut takrifan, kerana tiga pemain membahagi satu pot.
+**Equity anda jatuh dengan cepat dalam pot multiway, kerana pai 100% yang sama kini dibahagi kepada lebih banyak tangan.** Preflop menentang tangan rawak, pocket aces lebih kurang 85% secara heads-up, tetapi menentang tiga lawan ia merosot ke ==r:~64%==, dan menentang empat kepada ~56% — masih tangan terbaik, tetapi bukan lagi kelebihan besar seperti yang dirasakan. Dalam pot tiga pemain, equity secara *purata* 33% mengikut takrifan, kerana tiga pemain membahagi satu pot.
 
-![Infografik board Q♣ 9♥ 5♦ 3♠ J♦ yang menunjukkan bagaimana setiap pemain tambahan dalam pot memotong equity setiap tangan](/images/holdem-equity-multiway.webp "Semakin ramai pemain masih dalam pot, semakin kecil hirisan setiap orang — malah pocket aces")
+![Infografik board Q♣ 9♥ 5♦ 3♠ J♦ yang menunjukkan bagaimana setiap pemain tambahan dalam pot mengecilkan purata bahagian equity](/images/holdem-equity-multiway.webp "Semakin ramai pemain masih dalam pot, semakin kecil purata hirisan — malah pocket aces pun hilang kelebihan")
 
 Dua perkara menjadi lebih teruk dalam pot multiway, bukan hanya bahagian mentah anda:
 
 - **Fold equity runtuh.** Untuk memenangi pot dengan bet, kini *semua orang* perlu fold — jauh kurang berkemungkinan dengan tiga lawan berbanding seorang. Bluff dan semi-bluff nipis cepat hilang nilai.
-- **Realisasi jatuh.** Lebih ramai pemain yang belum bertindak bermakna lebih banyak cara untuk dipintas atau dipaksa melepaskan tangan, jadi anda merealisasikan lebih sedikit daripada hirisan yang sudah pun lebih kecil.
+- **Realisasi jatuh.** Lebih ramai pemain yang belum bertindak bermakna lebih banyak bet dan raise yang boleh memaksa anda melepaskan tangan sebelum showdown, jadi anda merealisasikan lebih sedikit daripada hirisan yang sudah pun lebih kecil.
 
 Pengajaran praktikalnya: tangan yang mahukan pot multiway ialah tangan yang membentuk nuts (set, suited ace untuk nut flush), bukan pair besar yang paling baik dimainkan heads-up. Apabila ramai pemain masuk, ketatkan pilihan ke arah tangan yang equity-nya bertahan apabila pai dipotong lima.
 
@@ -212,11 +212,11 @@ A. Realisasi equity ialah berapa banyak equity mentah yang anda benar-benar kuti
 
 **Q. Apakah all-in equity?**
 
-A. All-in equity hanyalah equity mentah anda — bahagian pot anda, split dikira pro rata — apabila tiada lagi pertaruhan boleh berlaku. Kerana tiada keputusan masa depan, anda merealisasikan 100% daripadanya, jadi equity mentah menjadi bahagian pot tepat yang anda kutip dari masa ke masa. Inilah satu-satunya situasi di mana, dengan kad masih akan keluar, "equity sama dengan bahagian pot" benar secara harfiah.
+A. All-in equity hanyalah equity mentah anda — bahagian pot anda, split dikira pro rata — apabila tiada lagi pertaruhan boleh berlaku. Kerana tiada keputusan masa depan, anda merealisasikan 100% daripadanya, jadi equity mentah menjadi bahagian pot tepat yang anda kutip dari masa ke masa. Inilah contoh paling jelas di mana, dengan kad masih akan keluar, "equity sama dengan bahagian pot" benar secara harfiah.
 
 **Q. Mengapa equity anda jatuh dalam pot multiway?**
 
-A. Kerana pot 100% yang sama kini dibahagi kepada lebih banyak tangan — pocket aces pada ~85% secara heads-up jatuh ke ~64% menentang tiga lawan dan ~56% menentang empat lawan. Pot multiway juga memotong fold equity anda (semua orang perlu fold, bukan seorang sahaja) dan realisasi anda (lebih ramai pemain bermakna lebih banyak cara untuk dipintas), jadi kedua-dua bahagian mentah anda dan apa yang anda simpan daripadanya mengecil.
+A. Kerana pot 100% yang sama kini dibahagi kepada lebih banyak tangan — preflop menentang tangan rawak, pocket aces pada ~85% secara heads-up jatuh ke ~64% menentang tiga lawan dan ~56% menentang empat lawan. Pot multiway juga memotong fold equity anda (semua orang perlu fold, bukan seorang sahaja) dan realisasi anda (lebih ramai pemain bermakna lebih banyak bet yang boleh memaksa anda melepaskan tangan sebelum showdown), jadi kedua-dua bahagian mentah anda dan apa yang anda simpan daripadanya mengecil.
 
 **Q. Apakah EV (expected value) dalam poker?**
 

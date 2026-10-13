@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker strategy yang menang bukan senarai tip, tetapi lima soalan yang berulang setiap tangan: di mana anda duduk, adakah tangan ini berbaloi dimainkan, raise atau fold, perlukah terus bet pada flop, dan bila perlu fold. Pemain tight-aggressive yang menjawabnya dengan baik fold kira-kira 80% tangan preflop dan bermain agresif apabila masuk pot.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -129,7 +129,7 @@ Agresif memenangi pot. **Disiplin menyelamatkan stack.** Keputusan yang memisahk
 
 Ini satu contoh konkrit daripada tangan yang pernah saya mainkan. Saya raise ==A♣K♣== dan dapat seorang caller. Flop keluar ==2♥ 7♦ 9♠== — langsung tidak kena. Saya ada ace-high, tiada pasangan, tiada draw. Saya lepaskan c-bet (Keputusan 4, in position, board kering), dan lawan saya check-**raise**. Pada ketika itu matematiknya mudah: saya memegang high card terbaik yang mungkin dan tiada apa-apa lagi, dan check-raise pada board itu hampir tidak pernah bluff di stakes rendah. Jadi saya fold ace-high dan kalah jumlah minimum. Dua tahun sebelumnya, saya pasti "call sahaja untuk tengok" — dan membayar set sembilan setiap kali.
 
-Peraturan umumnya: **[apabila cerita yang disampaikan lawan menewaskan tangan yang anda benar-benar pegang](/ms/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), dan anda tiada odds untuk mengejar, lepaskan.** Fold tangan yang bagus tetapi sudah kalah terasa seperti kalah. Sebenarnya, ia tabiat paling menguntungkan dalam permainan ini. Apabila anda *memang* ada draw, keputusan fold-atau-call bergantung pada [pot odds](/ms/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — harga yang anda dapat berbanding peluang draw anda menjadi.
+Peraturan umumnya: **[apabila cerita yang disampaikan lawan menewaskan tangan yang anda benar-benar pegang](/ms/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), dan anda tiada odds untuk mengejar, lepaskan.** Fold tangan yang bagus tetapi sudah kalah terasa seperti kalah. Sebenarnya, ia tabiat paling menguntungkan dalam permainan ini. Apabila anda *memang* ada draw, keputusan fold-atau-call bergantung pada [pot odds](/ms/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — harga yang anda dapat berbanding peluang anda mendapat tangan yang menang.
 
 ---
 
@@ -137,7 +137,7 @@ Peraturan umumnya: **[apabila cerita yang disampaikan lawan menewaskan tangan ya
 
 Anda tidak perlu jadi ahli matematik, tetapi dua nombor menyokong separuh daripada keputusan anda: pot odds, yang memberitahu sama ada sesuatu call menguntungkan, dan odds set-mining, yang menerangkan kenapa pasangan kecil hanya menjadi set di flop kira-kira 11.8% daripada masa. Faham kedua-duanya dan kebanyakan keputusan "kejar atau lepaskan" menjadi jelas.
 
-**Pot odds** memberitahu anda sama ada call itu menguntungkan: bandingkan harga call dengan saiz pot, kemudian dengan peluang draw anda menjadi. Jika pot memberi anda 4:1 (4 berbanding 1) dan draw anda menjadi kira-kira 1 dalam 5 kali, call itu lebih kurang pulang modal; lebih baik daripada itu, ia untung. Inilah enjin di sebalik setiap spot "perlukah saya kejar draw ini?" — dan [panduan pot odds](/ms/blog/holdem-pot-odds) mengubahnya menjadi bacaan meja dalam 10 saat.
+**Pot odds** memberitahu anda sama ada call itu menguntungkan: bandingkan harga call dengan saiz pot, kemudian dengan peluang anda mendapat kad yang menang. Jika pot memberi anda 4:1 (4 berbanding 1) dan draw anda menjadi serta menang kira-kira 1 dalam 5 kali, call itu lebih kurang pulang modal; lebih baik daripada itu, ia untung. Inilah enjin di sebalik setiap spot "perlukah saya kejar draw ini?" — dan [panduan pot odds](/ms/blog/holdem-pot-odds) mengubahnya menjadi bacaan meja dalam 10 saat.
 
 **Odds set-mining** menerangkan kenapa pasangan kecil bersifat spekulatif. Call raise dengan pocket lima dengan harapan mendapat set di flop — three of a kind — dan anda hanya akan mendapat set kira-kira **11.8% daripada masa, lebih kurang 1 dalam 8.5.** Apabila menjadi, ia sangat cantik: flop ==5♣ K♠ 2♦== sambil memegang ==5♠5♦== dan anda ada set tersembunyi yang mampu menghabiskan stack pemain yang memegang overpair. Tetapi kerana anda terlepas ~88% flop, set-mining hanya menguntungkan apabila effective stack cukup dalam untuk membayar anda apabila anda mendapat set — panduan kasarnya **sekurang-kurangnya ~15–20× saiz call.** Stack cetek? Call spekulatif itu menjadi leak. [Carta odds dan kebarangkalian](/ms/blog/holdem-probability) mengandungi setiap nombor yang anda perlukan.
 
@@ -204,7 +204,7 @@ A. Bet apabila anda ada tangan yang berbaloi untuk membina pot, atau spot bluff 
 
 **Q. Bila patut bluff dalam poker?**
 
-A. Bluff apabila ceritanya boleh dipercayai dan lawan anda benar-benar boleh fold — bukan sekadar kerana anda terlepas. Bluff terbaik datang dengan sandaran: draw (semi-bluff) yang masih boleh menang jika di-call, in position, berdepan seorang lawan, pada board yang memihak kepada range anda. Bluff ke arah beberapa pemain yang call, atau pemain yang tidak pernah fold, hanyalah membakar wang.
+A. Bluff apabila ceritanya boleh dipercayai dan lawan anda benar-benar boleh fold — bukan sekadar kerana anda terlepas. Bluff terbaik datang dengan sandaran: draw (semi-bluff) yang masih boleh menang jika di-call, in position, berdepan seorang lawan, pada board yang memihak kepada range anda. Bluff tulen ke arah beberapa pemain yang call, atau pemain yang tidak pernah fold, hanyalah membakar wang.
 
 **Q. Bila patut 3-bet?**
 

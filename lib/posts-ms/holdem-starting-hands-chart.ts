@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button (lebih luas lagi dalam 6-max). Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -136,7 +136,7 @@ Button ialah tempat duduk terbaik dalam poker. ==g:Anda bertindak terakhir pada 
 - **Suited connector (T9s, 98s, 87s)** — tangan murah dengan implied odds tinggi
 - **Broadway offsuit yang lebih lemah (KTo, QJo)** — hanya di posisi lewat, tidak sekali-kali di posisi awal
 
-Peraturan utama: ==sebagai tangan open, tangan spekulatif ini memerlukan posisi untuk menguntungkan==. Jika pemain UTG raise di hadapan anda, kebanyakannya terus masuk ke muck — anda akan membayar satu raise untuk memainkan tangan spekulatif menentang range yang kuat, dan flop murah yang diperlukannya sudah hilang.
+Peraturan utama: ==sebagai tangan open, tangan spekulatif ini memerlukan posisi untuk menguntungkan==. Dan jika pemain UTG raise di hadapan anda, kebanyakannya terus masuk ke muck — anda akan membayar satu raise untuk memainkan tangan spekulatif menentang range yang kuat, dan flop murah yang diperlukannya sudah hilang.
 
 ---
 

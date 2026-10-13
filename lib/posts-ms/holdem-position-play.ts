@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In position bermaksud anda bertindak terakhir dan melihat keputusan setiap lawan sebelum membelanjakan cip. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi range, board dan aksi boleh membalikkan corak itu. Sebab itu, di meja full ring, UTG open kira-kira 13% tangan dan button kira-kira 43%.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -144,7 +144,7 @@ Open limp dari UTG gagal atas tiga sebab:
 2. **Ia menghadkan range yang dilihat lawan** — pemain yang peka menyerang limper tanpa henti, dan anda akan berdepan raise yang sukar untuk diteruskan dengan selesa.
 3. **Ia tidak memenangi apa-apa sebelum flop.** Raise boleh mengambil blind terus; limp tidak pernah.
 
-Ada pengecualian sempit dalam permainan live yang sangat pasif — limp di belakang limper lain dengan pasangan kecil dan suited connector untuk melihat flop multiway yang murah — tetapi *open*-limp dari UTG ialah leak dalam hampir setiap barisan pemain. Hujah penuhnya, termasuk bila limp di belakang sebenarnya tidak mengapa, ada dalam [panduan limp](/ms/blog/holdem-limping).
+Ada pengecualian sempit dalam permainan live yang sangat pasif — limp di belakang limper lain dengan pasangan kecil dan suited connector untuk melihat flop multiway yang murah — tetapi *open*-limp dari UTG ialah leak dalam hampir setiap barisan pemain pada kedalaman stack biasa. Hujah penuhnya, termasuk bila limp di belakang sebenarnya tidak mengapa, ada dalam [panduan limp](/ms/blog/holdem-limping).
 
 ---
 
@@ -251,7 +251,7 @@ Untuk mekanik blind itu sendiri — mengapa ia wujud dan bagaimana bet paksa mem
 
 **Q. Apakah maksud out of position dalam poker?**
 
-A. Out of position (OOP) bermaksud anda mesti bertindak sebelum lawan di street postflop — flop, turn dan river. Anda meletakkan cip tanpa mengetahui apa yang akan mereka lakukan, tidak boleh mengambil kad percuma, dan sukar mengawal saiz pot. Blind OOP berbanding setiap tempat duduk bukan blind (dan small blind juga OOP berbanding big blind — kecuali heads-up, apabila small blind ialah button); button tidak pernah OOP berbanding sesiapa.
+A. Out of position (OOP) bermaksud anda mesti bertindak sebelum lawan di street postflop — flop, turn dan river. Anda meletakkan cip tanpa mengetahui apa yang akan mereka lakukan, tidak boleh mengambil kad percuma atas pilihan sendiri, dan sukar mengawal saiz pot. Blind OOP berbanding setiap tempat duduk bukan blind (dan small blind juga OOP berbanding big blind — kecuali heads-up, apabila small blind ialah button); button tidak pernah OOP berbanding sesiapa.
 
 **Q. Siapa bertindak dahulu — small blind atau big blind?**
 
