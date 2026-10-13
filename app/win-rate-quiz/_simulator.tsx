@@ -84,6 +84,8 @@ interface QuizAnswer {
   points: number;
   /** 고른 콜/폴드가 팟오즈 판정과 맞았나 · 고를 게 없던 스트리트는 null */
   choiceOk: boolean | null;
+  /** 이 답이 퀴즈 기록에 들어갔나 — 이미 본 스트리트·상대 패를 본 뒤의 답은 빠진다(MA-507 O3) */
+  counted?: boolean;
 }
 /**
  * 짐작 1번의 점수 = 100 − 4 × 오차(%p), 0 아래는 0. 오차 25%p면 0점.
@@ -221,6 +223,8 @@ export interface QuizUI {
   quizResult: (guess: number, err: string, points: number) => string;
   /** 고른 콜/폴드가 팟오즈 판정과 맞았나 */
   quizChoiceResult: (ok: boolean, verdict: string) => string;
+  /** 짐작 답 옆 — 이 스트리트 승률이나 상대 패를 이미 본 뒤라 누적 기록에 넣지 않았다(MA-507 O3) */
+  quizNotCounted: string;
   /** 누적 한 줄 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(+ 아직 올리지 않은 판) */
   quizStats: (s: { hands: number; avgErr: string; hits: number; decisions: number; points: number }) => string;
   /** 이 브라우저 기록 지우기(로그인 안 했을 때만 보인다 — 계정 기록 지우기는 «내 기록») */
@@ -279,6 +283,8 @@ export interface QuizUI {
   shareManual: string;
   /** 링크로 연 판을 돌리는 중 — 테이블 위 한 줄 */
   sharedActive: string;
+  /** 주소의 ?h=가 깨졌거나(형식·중복 카드·자리·레인지 밖 패) 이 빌드와 안 맞을 때 — 테이블 위 한 줄(MA-507 F-02) */
+  sharedInvalid: string;
   /**
    * 상대 레인지 13×13 (S-034 3차 ② · 2026-10-13) — 프리플랍 자리 레인지에서 액션 규칙과 안 맞는 패를 지운 것.
    * 승률 계산이 쓰는 레인지와 같다.
@@ -287,8 +293,11 @@ export interface QuizUI {
   rangeTitle: string;
   /** 프리플랍 콤보 수 → 지금 콤보 수 · 남은 비율(%) — 콤보는 빈도 가중이라 반올림한 정수 */
   rangeCombos: (pre: string, cur: string, pct: string) => string;
-  /** 범례 — 남음 · 액션으로 빠짐 · 처음부터 없음 · (패를 깠을 때) 실제 패 */
-  rangeLegend: readonly [string, string, string, string];
+  /**
+   * 범례 — 남음 · 액션으로 빠짐 · 처음부터 없음(레인지 밖) · (패를 깠을 때) 실제 패 · 막힘(내 패·보드가 그 칸 카드를 다 씀).
+   * ★막힘을 «처음부터 없음»과 같은 빈 칸으로 칠하면 원래 레인지에 있던 77이 «처음부터 없음»으로 읽힌다(MA-505 · queue §2-BR)
+   */
+  rangeLegend: readonly [string, string, string, string, string];
   rangeNote: string;
   /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
   resultTabs: readonly [string, string, string];
@@ -479,8 +488,9 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
           <span key={s.key} className="inline-flex items-center gap-1.5 min-w-0">
             <svg width="16" height="6" aria-hidden className="shrink-0"><line x1="0" x2="16" y1="3" y2="3" style={{ stroke: s.color }} strokeWidth={2}
               strokeDasharray={s.dashed ? "4 3" : undefined} /></svg>
-            <span className="truncate">{s.name}</span>
-            <b className="ml-auto text-white">{s.values[shown] === undefined ? "—" : `${s.values[shown]!.toFixed(1)}%`}</b>
+            {/* 말줄임 대신 줄바꿈 — de «Was du gesehen hast»가 «…»로 잘렸다(MA-507 F-11) */}
+            <span className="min-w-0 leading-tight break-words">{s.name}</span>
+            <b className="ml-auto shrink-0 text-white">{s.values[shown] === undefined ? "—" : `${s.values[shown]!.toFixed(1)}%`}</b>
           </span>
         ))}
       </div>
@@ -603,10 +613,10 @@ function CustomEditor({ ui, size, draft, setDraft, onStart, onClose, onOff }: {
       <div className="text-[10px] font-bold uppercase tracking-wider text-white/45 mb-1">{ui.customPos}</div>
       <div className="flex flex-wrap gap-1 mb-3" role="group" aria-label={ui.customPos}>
         <button type="button" onClick={() => setDraft({ ...draft, heroPos: null })} aria-pressed={draft.heroPos === null}
-          className="px-2 py-1 rounded-full text-[11.5px] font-bold border" style={segBtn(draft.heroPos === null)}>{ui.customRandom}</button>
+          className="px-2 py-[5px] rounded-full text-[11.5px] font-bold border" style={segBtn(draft.heroPos === null)}>{ui.customRandom}</button>
         {positions.map((name, i) => (
           <button key={name} type="button" onClick={() => setDraft({ ...draft, heroPos: i })} aria-pressed={draft.heroPos === i}
-            className="px-2 py-1 rounded-full text-[11.5px] font-bold border tabular-nums" style={segBtn(draft.heroPos === i)}>{name}</button>
+            className="px-2 py-[5px] rounded-full text-[11.5px] font-bold border tabular-nums" style={segBtn(draft.heroPos === i)}>{name}</button>
         ))}
       </div>
 
@@ -665,6 +675,8 @@ const CARD_RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K",
 const CARD_SUITS = ["♠", "♥", "♦", "♣"];
 /** 화면 카드 → 엔진 카드 (격자 칸 찾기용) */
 const cardToN = (c: QuizCard): NCard => [CARD_RANKS.indexOf(c.rank) + 2, CARD_SUITS.indexOf(c.suit)];
+/** 막힘 칸 — 내 패·보드가 그 칸의 카드를 다 써서 누구도 가질 수 없다(레인지 밖과 구분 · queue §2-BR) */
+const BLOCKED_FILL = "repeating-linear-gradient(135deg, hsl(var(--muted-foreground) / 0.3) 0 1.5px, hsl(var(--background)) 1.5px 4px)";
 
 function RangeGridView({ g, actual, ui }: { g: RangeGrid; actual: number | null; ui: QuizUI }) {
   return (
@@ -673,12 +685,14 @@ function RangeGridView({ g, actual, ui }: { g: RangeGrid; actual: number | null;
         const r = Math.floor(i / 13), c = i % 13;
         const label = r === c ? GRID_RANKS[r] + GRID_RANKS[c] : r < c ? `${GRID_RANKS[r]}${GRID_RANKS[c]}s` : `${GRID_RANKS[c]}${GRID_RANKS[r]}o`;
         const pre = g.pre[i];
-        // 남음 = 금색(진할수록 많이) · 액션으로 빠짐 = 붉은 기 · 처음부터 없음(또는 막힘) = 빈 칸
+        // 남음 = 금색(진할수록 많이) · 액션으로 빠짐 = 붉은 기 · 막힘(foldGrid −1) = 빗금 · 처음부터 없음 = 빈 칸
         const style = cur > 0
           ? { background: mix(GOLD, Math.round(30 + 70 * Math.min(1, cur))), color: "var(--wrq-accent-ink)" }
           : pre > 0
             ? { background: mix(BAD, 16), color: mix(BAD, 70) }
-            : { background: "hsl(var(--background))", color: "hsl(var(--muted-foreground) / 0.45)" };
+            : pre < 0
+              ? { background: BLOCKED_FILL, color: "hsl(var(--muted-foreground) / 0.45)" }
+              : { background: "hsl(var(--background))", color: "hsl(var(--muted-foreground) / 0.45)" };
         return (
           <div key={i} title={label}
             className="aspect-square rounded-[2px] flex items-center justify-center text-[7px] sm:text-[8px] font-bold leading-none tracking-[-0.04em] overflow-hidden"
@@ -727,6 +741,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const sharedSim = useRef<TableSim | null>(null);
   /** 지금 판이 링크로 연 판인가 — 테이블 위 한 줄 */
   const [shared, setShared] = useState(false);
+  /** 주소의 ?h=를 못 읽어 무작위 판으로 시작했다 — 테이블 위 한 줄(다음 판부터 사라진다) */
+  const [sharedBad, setSharedBad] = useState(false);
+  /**
+   * 기록 오염 막기 (MA-507 O3) — 답 전에 승률이 보인 스트리트 · 판 도중에 상대 패를 본 판.
+   * 퀴즈를 끈 채 승률을 보거나 «상대 패 보기»를 누른 뒤 퀴즈를 켜면 아는 답을 내게 된다 → 그 답은 기록에 넣지 않는다
+   * (공유 판을 빼는 것과 같은 이유 · MA-505 ②). 새 판을 만들 때(계산 effect의 setSim) 비운다.
+   */
+  const seenStreets = useRef<Set<number>>(new Set());
+  const peekedCards = useRef(false);
   /** 공유 버튼 상태 — 복사됨 · 복사 실패(주소를 보여 준다) */
   /** 상대 레인지 격자 펼침 · 여러 명이면 누구를 보나(좌석 slot) */
   const [showRange, setShowRange] = useState(false);
@@ -810,7 +833,14 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     let code: string | null = null;
     try { code = new URLSearchParams(window.location.search).get("h"); } catch { /* 주소 못 읽음 = 무작위 판 */ }
     const d = code ? decodeShare(code) : null;
-    if (!d) return;
+    if (!d) {
+      // 깨진 링크 — 말없이 무작위 판을 주면 «받은 판»으로 오해한다(MA-507 F-02) · 주소도 지워 새로고침이 같은 안내를 되풀이하지 않게
+      if (code !== null) {
+        setSharedBad(true);
+        try { window.history.replaceState(null, "", window.location.pathname); } catch { /* 주소만 못 고칠 뿐 */ }
+      }
+      return;
+    }
     sharedSim.current = d.sim;
     setTableSize(d.sim.size);
     setPreflopCount(d.sim.activeSlots.length);
@@ -822,6 +852,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const dropShared = useCallback(() => {
     sharedSim.current = null;
     setShared(false);
+    setSharedBad(false);
     setShareState(null);
     try {
       if (new URLSearchParams(window.location.search).has("h")) window.history.replaceState(null, "", window.location.pathname);
@@ -857,6 +888,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       const s = sharedSim.current ?? makeTableSim(preflopCount, tableSize, undefined, custom);
       if (cancelled) return;
       sharedSim.current = null;
+      seenStreets.current = new Set();
+      peekedCards.current = false;
       setSim(s);
       const req: HandRequest = {
         id: handId, heroHand: s.hands[0], oppHands: s.hands.slice(1), oppSlots: s.activeSlots.slice(1),
@@ -890,13 +923,16 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     setAnswers({}); setGuess(50);
     setHandId((id) => id + 1);
   }, [closeHand, dropShared]);
+  // ★이미 고른 값을 다시 누르면 아무것도 하지 않는다 — 판을 비운 뒤 같은 값을 set하면 계산 effect 의존성이
+  //   그대로라 다시 안 돌고 «계산 중»에서 영영 멈춘다(MA-507 F-01). changeStyle은 select라 같은 값이 안 온다
   const changeCount = useCallback((n: number) => {
+    if (n === preflopCount) return;
     closeHand();
     dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setPreflopCount(n);
-  }, [closeHand, dropShared]);
+  }, [closeHand, dropShared, preflopCount]);
   const changeStyle = useCallback((s: OppStyle) => {
     closeHand();
     dropShared();
@@ -906,6 +942,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     setStyle(s);
   }, [closeHand, dropShared]);
   const changeSize = useCallback((n: TableSize) => {
+    if (n === tableSize) return;
     closeHand();
     dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
@@ -960,6 +997,29 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   // 판이 끝났다(리버까지 또는 상대 전원 폴드) — 짐작한 판이면 계정에 올린다
   useEffect(() => { if (isEnd) closeHand(); }, [isEnd, closeHand]);
   useEffect(() => { if (isEnd) setResultTab("review"); }, [isEnd]);
+  /**
+   * 폰에서 고정 진행 줄(sticky)이 가리는 자리를 그 위로 올린다 (MA-507 F-03·F-04).
+   * 360×800에서 짐작 슬라이더가 고정 줄 밑에 10px 깔려 탭이 안 먹었고, 390·360 «결정만» 제출 직후 판정 줄이 깔렸다.
+   * 여백을 늘리면 첫 화면이 더 길어지므로 «가려질 때만» 그만큼 스크롤한다. 데스크톱(lg↑)은 고정이 아니라 건너뛴다.
+   */
+  const stickyRef = useRef<HTMLDivElement | null>(null);
+  const sliderRef = useRef<HTMLInputElement | null>(null);
+  const answerRef = useRef<HTMLParagraphElement | null>(null);
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 1024) return;
+    const target = quizPending && quizKind === "guess" ? sliderRef.current : answer ? answerRef.current : null;
+    const bar = stickyRef.current;
+    if (!target || !bar) return;
+    const id = requestAnimationFrame(() => {
+      const over = target.getBoundingClientRect().bottom + 8 - bar.getBoundingClientRect().top;
+      if (over > 0) window.scrollBy({ top: over, behavior: "smooth" });
+    });
+    return () => cancelAnimationFrame(id);
+  }, [quizPending, quizKind, answer, street]);
+  // 답 없이 승률이 보인 스트리트 · 판 도중 상대 패 공개 — 이 뒤의 짐작은 기록에서 뺀다(위 seenStreets 주석)
+  const shownUnanswered = !!rec && !quizPending && !answers[street];
+  useEffect(() => { if (shownUnanswered) seenStreets.current.add(street); }, [shownUnanswered, street]);
+  useEffect(() => { if (cardsUp && !showdown) peekedCards.current = true; }, [cardsUp, showdown]);
 
   const submitGuess = (choice: "call" | "fold" | null) => {
     if (!rec || answer) return;
@@ -972,10 +1032,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     const err = Math.abs(guess - rec.equity);
     const points = quizPoints(err);
     const choiceOk = choiceOk0;
-    const firstOfHand = !Object.values(answers).some((x) => x.guess !== null);
-    setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
-    // 직접 입력·공유 링크 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다(링크는 보낸 사람이 결과를 안다)
-    if (sim?.custom) return;
+    const firstOfHand = !Object.values(answers).some((x) => x.guess !== null && x.counted);
+    // 직접 입력·공유 링크 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다(링크는 보낸 사람이 결과를 안다).
+    // 이 스트리트 승률을 이미 봤거나 판 도중 상대 패를 봤으면 이 답도 뺀다(MA-507 O3)
+    const peeked = seenStreets.current.has(street) || peekedCards.current;
+    const counted = !sim?.custom && !peeked;
+    setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk, counted } }));
+    if (!counted) return;
     if (!handKey.current) handKey.current = newClientId();
     if (sim) {
       applyStore(recordQuizAnswer(
@@ -1143,23 +1206,23 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     ? { background: GOLD, color: "var(--wrq-accent-ink)" }
     : { color: "hsl(var(--muted-foreground))" };
   const controls = (cls: string) => (
-    <div className={`flex justify-center items-center gap-1 sm:gap-2 ${cls}`}>
-      <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
+    <div className={`flex justify-center items-center gap-0.5 min-[390px]:gap-1 sm:gap-2 ${cls}`}>
+      <div className="flex rounded-full border-2 p-px sm:p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
         {([6, 9] as TableSize[]).map((n) => (
           <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n}
-            className="px-1.5 sm:px-3 py-1 rounded-full text-[13px] sm:text-sm font-bold transition-all whitespace-nowrap"
+            className="min-w-[24px] px-1 min-[390px]:px-1.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-sm tracking-[-0.04em] sm:tracking-normal font-bold transition-all whitespace-nowrap"
             style={segBtn(tableSize === n)}>
             {ui.tableBtn(n)}
           </button>
         ))}
       </div>
       <span className="hidden sm:inline text-[11px] font-bold text-muted-foreground">{ui.playersLabel}</span>
-      <div className="flex rounded-full border-2 p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group"
+      <div className="flex rounded-full border-2 p-px sm:p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group"
         aria-label={ui.playersLabel}>
         {[2, 3, 4, 5, 6].map((n) => (
           <button key={n} onClick={() => changeCount(n)} aria-pressed={preflopCount === n}
             aria-label={ui.playersBtn(n)} title={ui.playersBtn(n)}
-            className="min-w-[22px] sm:min-w-[30px] px-1 sm:px-1.5 py-1 rounded-full text-[13px] sm:text-sm font-bold tabular-nums transition-all"
+            className="min-w-[24px] sm:min-w-[30px] px-1 sm:px-1.5 py-1 rounded-full text-[13px] sm:text-sm font-bold tabular-nums transition-all"
             style={segBtn(preflopCount === n)}>
             {n}
           </button>
@@ -1168,7 +1231,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* 상대 성향 — 네이티브 select(폰에서 OS 선택창) · 기본이 아니면 금색 테두리 */}
       <select value={style} onChange={(e) => changeStyle(e.target.value as OppStyle)}
         aria-label={ui.styleLabel} title={ui.styleHint}
-        className="max-w-[68px] sm:max-w-none py-1.5 pl-1.5 pr-0 sm:pl-2 sm:pr-1 rounded-full text-[12px] sm:text-sm font-bold border-2 bg-transparent cursor-pointer"
+        className="max-w-[58px] min-[390px]:max-w-[68px] sm:max-w-none py-1.5 pl-1.5 pr-0 sm:pl-2 sm:pr-1 rounded-full text-[12px] sm:text-sm font-bold border-2 bg-transparent cursor-pointer"
         style={style === "standard"
           ? { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }
           : { borderColor: GOLD, color: GOLD }}>
@@ -1177,7 +1240,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <span className="hidden sm:block w-px h-5 bg-border sm:mx-0.5" aria-hidden />
       {/* 폰(390)에서는 성향 select가 들어오며 자리가 모자라 퀴즈도 아이콘만 · 이름은 aria-label·title로 */}
       <button onClick={toggleQuiz} aria-pressed={quiz} aria-label={ui.quizToggle} title={ui.quizToggle}
-        className="px-1.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={quiz
           ? { borderColor: GOLD, background: GOLD, color: "var(--wrq-accent-ink)" }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -1187,7 +1250,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* 폰(390)에서는 이 줄에 글자까지 넣으면 22~42px 넘친다 → 아이콘만 · 이름은 aria-label·title로 */}
       <button onClick={openEditor} aria-pressed={editing || !!custom} aria-expanded={editing}
         aria-label={ui.customToggle} title={ui.customToggle}
-        className="px-1.5 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={editing || custom
           ? { borderColor: GOLD, background: editing ? GOLD : "transparent", color: editing ? "var(--wrq-accent-ink)" : GOLD }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -1204,6 +1267,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   /** 링크로 연 판 — 한 줄. 폰에서 퀴즈 답을 받는 동안은 숨긴다(두 줄로 감겨 짐작 슬라이더를 고정 버튼 밑으로 민다 · 실측 701 vs 676) */
   const sharedLine = shared && sim && (
     <p className={`${quizPending ? "hidden lg:block" : ""} text-center mb-1.5 text-[11px] font-bold`} style={{ color: GOLD }}>🔗 {ui.sharedActive}</p>
+  );
+  const sharedBadLine = sharedBad && !shared && (
+    <p role="status" className={`${quizPending ? "hidden lg:block" : ""} text-center mb-1.5 text-[11px] font-bold text-muted-foreground`}>⚠️ {ui.sharedInvalid}</p>
   );
   /** 이 판 링크 복사 — 클립보드가 막히면 주소를 보여 주고 직접 복사하게 한다 */
   const copyShare = async () => {
@@ -1318,6 +1384,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {editor}
       {customLine}
       {sharedLine}
+      {sharedBadLine}
 
       {/* ── 넓은 화면(lg↑)에서는 본문을 반으로: 좌 = 테이블 / 우 = 승률·팟오즈·버튼 전부 ──
           ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
@@ -1349,7 +1416,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           {sim.size === 9 ? (<>
           {/* ── 9인 (S-034 ② · 2026-10-11): 시계 방향 slot 0(나·아래 가운데)→1·2(왼쪽 아래)→3~6(위)→7·8(오른쪽 아래).
               ★폰은 «위 4석 · 보드 양옆 1석씩 · 아래 3석», 데스크톱은 «2·2·보드 양옆·2·나» — 6인과 같은 이유로 DOM 두 벌 */}
-          <div className="flex w-full justify-between items-start px-9 sm:px-12 pt-2 lg:hidden">
+          {/* 360에서 위 4석(좌석 64px × 4)이 px-9 안에 안 들어가 이웃 카드가 0.5~2px 겹쳤다(MA-507 F-10) → 좁은 폰만 여백을 줄인다 */}
+          <div className="flex w-full justify-between items-start px-7 min-[390px]:px-9 sm:px-12 pt-2 lg:hidden">
             {renderSeat(3)}{renderSeat(4)}{renderSeat(5)}{renderSeat(6)}
           </div>
           <div className="hidden lg:flex w-full justify-between items-start px-24 pt-3">
@@ -1504,7 +1572,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                 <span className="text-[10.5px] text-white/55">{ui.quizGuessHint}</span>
               </span>
             </div>
-            <input type="range" min={0} max={100} step={1} value={guess}
+            <input ref={sliderRef} type="range" min={0} max={100} step={1} value={guess}
               onChange={(e) => setGuess(Number(e.target.value))}
               aria-label={ui.quizGuessTitle}
               className="w-full mt-2 h-2.5 cursor-pointer" style={{ accentColor: GOLD }} />
@@ -1546,12 +1614,15 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           )}
         </div>
         {answer && (
-          <p className="text-[11px] font-bold tabular-nums mt-1.5" style={{ color: GUESS_COLOR }}>
+          <p ref={answerRef} className="text-[11px] font-bold tabular-nums mt-1.5" style={{ color: GUESS_COLOR }}>
             {answer.guess !== null ? <>🎯 {ui.quizResult(answer.guess, answer.err.toFixed(1), answer.points)}</> : "🤔"}
             {answer.choiceOk !== null && (
               <span style={{ color: answer.choiceOk ? GOOD_DARK : BAD_DARK }}>
                 {answer.guess !== null ? " · " : " "}{ui.quizChoiceResult(answer.choiceOk, rec.verdict === "call" ? ui.verdictCall : ui.verdictFold)}
               </span>
+            )}
+            {answer.guess !== null && answer.counted === false && !sim.custom && (
+              <span className="block font-semibold text-white/50">{ui.quizNotCounted}</span>
             )}
           </p>
         )}
@@ -1619,7 +1690,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             스트리트를 넘길 때마다 스크롤해야 한다 — 이 도구는 클릭이 본체라 그게 제일 거슬린다.
             데스크톱(lg↑)은 이미 첫 화면 안에 들어오므로 고정하지 않는다. */}
       {!isEnd ? (
-        <div className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
+        <div ref={stickyRef} className="sticky bottom-[70px] z-20 lg:static lg:bottom-auto lg:z-auto">
           {/* ★S-034 ⑤ (2026-10-11): 플랍부터 팟오즈 박스가 2~3줄로 늘어 판정 줄이 이 버튼 밑에 깔린다
               (실측 390×844에서 박스 끝 742~787px · 버튼 722px). 폰에서만 판정 한 줄을 버튼 위에 붙여
               «승률 → 판정 → 버튼»이 첫 화면에 남게 한다. 식 전체는 위 박스에 그대로 있다 */}
@@ -1682,7 +1753,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                     {(hasAnswers
                       ? [...ui.reviewCols, ...(guessList.length ? [ui.quizGuessCol] : []), ui.quizChoiceCol, ...(decisionCount ? [ui.actualCol] : [])]
                       : ui.reviewCols)
-                      .map((c, i) => <th key={i} className={`font-semibold pb-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>{c}</th>)}
+                      // 답 열이 붙으면(7열) 머리를 줄바꿈 — 데스크톱 칸 284px에 «패 공개 시»가 30px 잘렸다(MA-507 F-08)
+                      .map((c, i) => <th key={i} className={`font-semibold pb-1 align-bottom ${hasAnswers ? "pr-1.5 leading-tight" : "pr-3 whitespace-nowrap"}`}>{c}</th>)}
                   </tr>
                 </thead>
                 <tbody>
@@ -1814,7 +1886,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         return (
           <div className="rounded-xl px-4 py-2.5 mt-3" style={{ background: "hsl(var(--muted))" }}>
             <button onClick={() => setShowRange((v) => !v)} aria-expanded={showRange}
-              className="w-full flex justify-between items-center text-[11px] font-bold text-muted-foreground">
+              className="w-full py-1 -my-1 flex justify-between items-center text-[11px] font-bold text-muted-foreground">
               <span>🔎 {ui.rangeToggle}</span><span aria-hidden>{showRange ? "▲" : "▼"}</span>
             </button>
             {showRange && (
@@ -1824,7 +1896,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                   <div className="flex flex-wrap gap-1 mb-2" role="group" aria-label={ui.rangeTitle}>
                     {rec.ranges.map((x) => (
                       <button key={x.slot} onClick={() => setRangeSlot(x.slot)} aria-pressed={x.slot === g.slot}
-                        className="px-2 py-0.5 rounded-full text-[11px] font-bold border"
+                        className="px-2 py-[3px] rounded-full text-[11px] font-bold border"
                         style={x.slot === g.slot
                           ? { background: GOLD, borderColor: GOLD, color: "var(--wrq-accent-ink)" }
                           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -1842,6 +1914,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                   <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ background: GOLD }} />{ui.rangeLegend[0]}</span>
                   <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ background: mix(BAD, 16) }} />{ui.rangeLegend[1]}</span>
                   <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px] border" style={{ background: "hsl(var(--background))" }} />{ui.rangeLegend[2]}</span>
+                  {g.pre.some((x) => x < 0) && <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px] border" style={{ background: BLOCKED_FILL }} />{ui.rangeLegend[4]}</span>}
                   {actual !== null && <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ outline: "2px solid hsl(var(--foreground))", outlineOffset: -1 }} />{ui.rangeLegend[3]}</span>}
                 </div>
                 <p className="text-[10.5px] text-muted-foreground leading-snug mt-1.5">{ui.rangeNote}</p>

@@ -126,6 +126,17 @@ export function decodeShare(code: string): { sim: TableSim; style: string } | nu
   const board = cards.slice(activeSlots.length * 2);
   const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots, size));
   const oppRanges = oppRoles.map(rangeFor);
+  // 상대 패는 그 자리 레인지 안에 있어야 한다 — 앱이 만든 링크는 늘 그렇다. 손으로 고친 링크면 격자 «처음부터 없음» 칸에
+  // 실제 패 테두리가 뜨고 승률 전제(레인지에서 나온 패)가 깨진다(MA-507 N-4)
+  const key = (c: Card) => (RANK_NAMES.indexOf(c.rank) + 2) * 4 + SUIT_SYMBOLS.indexOf(c.suit);
+  for (let k = 1; k < hands.length; k++) {
+    const a = key(hands[k][0]), b = key(hands[k][1]);
+    const inRange = oppRanges[k - 1].some(({ hole: [x, y] }) => {
+      const p = x[0] * 4 + x[1], q = y[0] * 4 + y[1];
+      return (p === a && q === b) || (p === b && q === a);
+    });
+    if (!inRange) return null;
+  }
   return { sim: { size, heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed, custom: true }, style };
 }
 
