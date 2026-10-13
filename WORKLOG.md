@@ -1,3 +1,11 @@
+## 2026-10-13 (17) — 회차 L1 시뮬레이터 언어 확대 vi `d08fac6b` · MB-313 · MA-521 이행
+
+- 사장님 «핸드오프읽고 vi진행해». 우편함 검수장→본체: MA-521(MB-310 fr 판정 · 요청 1(2자리)) → queue §2-BW 등재 · 같은 커밋에서 이행 · MB-313로 회신.
+- vi: DFS Vietnam(poker simulator 40 = simulator poker 12개월 시계열 동일 · cách chơi poker 2.900 · game poker 720 = 다른 의도 · «mô phỏng/giả lập/luyện poker» 전부 데이터 없음) + SERP(영어 글로벌 판 · 게임 5·훈련형 3 · 베트남어 0) → 제목 머리 영어 «Poker Simulator»(vi 계산기와 같은 판단) + «để luyện tập».
+- 사전 = EN 정본에서 직접 재저작 · bạn체 · 족보 Title Case(계산기 사전) · 액션 영어 · %p = «điểm phần trăm» · vi-VN 쉼표 소수(dec).
+- 렌즈 2(원어민·딜러) WRONG 0 · RISKY 반영. 390에서 성향 선택 «Bình thường» 잘림 → «Chuẩn»·«Hung hãn». 390·1440 넘침 0. next start 3100은 PID 대조 후 종료.
+- MA-521: fr DESCRIPTION «dès le flop»(160자) · fr 점수식 «points de pourcentage» · 형제 대조로 id DESCRIPTION도 «sejak flop». IndexNow 323 URL 200.
+
 ## 2026-10-13 (16) — 회차 L1 시뮬레이터 언어 확대 ms `dcd6d020` · MB-312 · MA-518 ① 이행
 
 - 사장님 «핸드오프 읽고 ms 진행해». 우편함 검수장→본체: MA-518(요청 1 · 통지 3) · MA-508(요청 0) → queue §2-BV 등재 · MB-312로 회신.
