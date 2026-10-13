@@ -22,6 +22,10 @@ const SPEC: [string, string][] = [
 //    계산기를 안 가리켰다(도구 → 도구 링크 0건 · 메모리 `seo-tool-vs-blog-cannibalization`).
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Kira strategi untuk situasi postflop tertentu", "Solver pada halaman ini", null],
+  // ★2026-10-13(시뮬레이터 회차 L1): `/ms/hand-chart`(10-05 신설) 행 + 시뮬레이터 행 신설(pt·fr·id 선례).
+  //   라벨 = 각 페이지 side-rail 라벨/HubPage title 축어.
+  ["Lihat tangan yang patut di-open dari setiap posisi", "Carta Tangan", "/ms/hand-chart"],
+  ["Berlatih meneka equity tanpa melihat kad lawan, kemudian lihat bila anda sepatutnya fold", "Simulator Poker", "/ms/win-rate-quiz"],
   ["Kira outs dan pot odds tanpa menjalankan solver", "Kalkulator Poker", "/ms/calculator"],
   ["Adu dua tangan dan lihat peratus menangnya", "Kalkulator equity", "/ms/calculator"],
   ["Kira nilai hadiah di bubble atau semasa deal", "Kalkulator ICM", "/ms/calculator"],

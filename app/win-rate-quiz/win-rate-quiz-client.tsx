@@ -158,7 +158,7 @@ const KO_UI: QuizUI = {
   shareCopied: "복사했어요. 링크를 연 사람은 같은 카드·같은 승률로 이 판을 프리플랍부터 봅니다.",
   shareManual: "자동 복사가 막혀 있어요. 아래 주소를 직접 복사하세요.",
   sharedActive: "공유받은 판 · 보낸 사람과 같은 카드·같은 승률 (퀴즈 기록에는 넣지 않아요)",
-  sharedInvalid: "공유 링크를 읽지 못해 새 판으로 시작했어요 (주소가 잘렸거나 바뀐 링크)",
+  sharedInvalid: "공유 링크를 읽지 못해 새 판으로 시작했어요 (주소가 잘렸거나 바뀐 링크일 수 있어요)",
   rangeToggle: "상대 레인지 보기",
   rangeTitle: "상대 레인지 — 지금까지의 액션과 맞는 패",
   rangeCombos: (pre, cur, pct) => `프리플랍 ${pre}콤보 → 지금 ${cur}콤보 (${pct}% 남음)`,

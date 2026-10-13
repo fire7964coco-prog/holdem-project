@@ -323,6 +323,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ms/glossary", icon: "📖", label: "Glosari Istilah Poker" },
     // ★2026-09-29 `/ms/tournaments` 신설. 라벨 = MS_CLUSTERS tournament pillarLabel 축어(«Tournament» — ms 코퍼스 표기).
     { href: "/ms/tournaments", icon: "🏆", label: "Tournament" },
+    // ★2026-10-13 `/ms/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/ms/win-rate-quiz", icon: "📈", label: "Simulator Poker" },
   ],
   /**
    * vi — ★2026-09-29 `/vi/tournaments` 신설(vi 첫 허브). 라벨:

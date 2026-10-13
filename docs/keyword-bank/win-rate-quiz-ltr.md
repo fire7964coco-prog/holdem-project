@@ -58,3 +58,19 @@
 - 카니발: `/id/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
 - 🔴 id 고유: 메타·본문에 taruhan·judi 등 도박 홍보로 읽히는 말을 쓰지 않는다(translation-terms-id ★2).
 - 용어(코퍼스 `lib/posts-id` · 10-13 grep): fold 905 · call 1.075 · all-in 327 · showdown 177 · seri 508(imbang 80) · split pot 35 · preflop 340(pre-flop 2) · flush draw 132 · straight draw 45 · top pair 112 · overpair 120 · overcard 32 · pot odds 170 · implied odds 115 · street 167 · combo 343(kombinasi 71) · Anda 3.962(kamu 2).
+
+## ms (Malaysia 2458 · 2026-10-13)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **simulator poker** | **40** | ✅ 제목 머리 · H1 · 브레드크럼 · 사이드 레일 — «poker simulator»와 12개월 시계열 완전 동일(같은 군 · 20~70) |
+| poker simulator(영문) | 40 | 위와 같은 군 |
+| poker trainer · poker training · poker equity · equity poker · pot odds · texas holdem simulator · poker simulator online · belajar poker · poker practice · poker quiz | 각 10 | — |
+| simulasi poker · latihan poker · berlatih poker · kuiz poker · simulator poker percuma · latihan poker percuma | 데이터 없음 | 🔴 말레이어 «훈련» 명사 전멸 — id와 같은 패턴 |
+| cara main poker 170 · permainan poker 140 | — | 참고(규칙·게임 의도 · 이 페이지 몫 아님) |
+
+- SERP «simulator poker»(mobile · ms · Malaysia): 1 cardplayer 계산기 · 2 pokernews 계산기 · 3 pokertrainer.se(훈련형) · 4 aarp(게임) · 5 arkadium(게임) · 6 GTO Wizard · 7 Steam «Poker Simulator» · 8 pokerstrategy 소프트웨어 목록 · 9 pokerlistings 계산기. → 영어 글로벌 판 · 말레이어 페이지 0.
+- 제목 = «Simulator Poker untuk Latihan: Bilakah Anda Patut Fold?» — 머리어 + 훈련 의도(«untuk Latihan» 볼륨 미측정 · 게임 SERP와 구분용). 제목 «Anda» = Title Case(ms-posting-reference §2) · 메타 문중은 소문자 «anda».
+- 카니발: `/ms/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
+- 🔴 id판에서 옮겨 쓰지 않았다(인니어 잔재 kartu·bisa·karena·tinjau → kad·boleh·kerana·semak · ms-posting-reference §3).
+- 용어(코퍼스 `lib/posts-ms` · 10-13 grep): tangan 1.796(hand 92) · fold 797 · call 1.006 · all-in 280 · showdown 149 · seri 146 · split pot 24 · preflop 240(pre-flop 28) · flush draw 101 · straight draw 37 · top pair 81 · overpair 97 · overcard 26 · pot odds 113 · implied odds 88 · pulang modal 29(break-even 3) · street 133 · kombinasi 38(combo 15) · board 893(papan 4) · range 674(julat 42) · anda 2.715(Anda 258 · kamu 0).

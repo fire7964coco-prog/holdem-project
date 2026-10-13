@@ -96,7 +96,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/glossary", "/id/solver", "/id/tournaments", "/id/win-rate-quiz"],
   // ms — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
   // ★2026-09-29 `/ms/tournaments` 신설.
-  ms: ["/ms/calculator", "/ms/hand-chart", "/ms/glossary", "/ms/solver", "/ms/tournaments"],
+  // ★2026-10-13 `/ms/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
+  ms: ["/ms/calculator", "/ms/hand-chart", "/ms/glossary", "/ms/solver", "/ms/tournaments", "/ms/win-rate-quiz"],
   // vi — ★2026-09-29 `/vi/tournaments` 신설. vi의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ★2026-10-07 `/vi/calculator`·`/vi/hand-chart` 신설(vi 도구 회차 · docs/keyword-bank/vi-tools.md).
   //      ★2026-10-09 `/vi/solver` 신설(솔버 vi 라이브 S-049 당일).
