@@ -85,7 +85,15 @@ const BACK_TO_TOP: Record<string, string> = {
  */
 export function SkipLink() {
   const pathname = usePathname() || "/";
-  const locale = localeFromPath(pathname);
+  const [nextLocale, setNextLocale] = useState<ReturnType<typeof localeFromPath>>(null);
+  // `/login`은 언어가 경로가 아니라 `?next=`에 있다(lib/auth-i18n.ts). 루트 레이아웃에서
+  // useSearchParams를 쓰면 전 페이지 정적 렌더가 깨지므로 마운트 뒤 location에서 읽는다.
+  useEffect(() => {
+    setNextLocale(pathname.startsWith("/login")
+      ? localeFromPath((new URLSearchParams(window.location.search).get("next") || "/").split(/[?#]/)[0])
+      : null);
+  }, [pathname]);
+  const locale = localeFromPath(pathname) ?? nextLocale;
   return (
     <a
       href="#main-content"
