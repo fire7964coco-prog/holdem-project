@@ -144,6 +144,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/ru/win-rate-quiz</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/hand-chart</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -615,7 +622,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ru/solver</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -706,7 +713,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ru/calculator</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

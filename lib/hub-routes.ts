@@ -108,7 +108,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ru — ★2026-10-10 `/ru/solver` 신설(15번째 솔버 랜딩). ru의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ★2026-10-13 `/ru/calculator` 신설(ru 계산기 회차 · docs/keyword-bank/ru-calculator.md).
   //      ⚠ ru에는 hand-chart·glossary·tournaments·win-rate-quiz가 **없다** — 넣지 마라.
-  ru: ["/ru/calculator", "/ru/solver"],
+  // ★2026-10-13 `/ru/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1 마지막 언어).
+  ru: ["/ru/calculator", "/ru/solver", "/ru/win-rate-quiz"],
   // hi — 솔버·계산기·대회 보드를 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   // ★2026-09-30 `/hi/tournaments` 신설(로케일 회차 2 후반).
   // ★2026-10-13 `/hi/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).

@@ -356,6 +356,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   ru: [
     { href: "/ru/blog",   icon: "📚", label: CHROME.ru.blogLabel },
     { href: "/ru/calculator", icon: "🧮", label: "Покерный калькулятор" },
+    // ★2026-10-13 `/ru/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/ru/win-rate-quiz", icon: "📈", label: "Покерный тренажёр" },
     { href: "/ru/solver", icon: "🧠", label: "GTO-солвер" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.
