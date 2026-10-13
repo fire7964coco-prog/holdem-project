@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit bis zu vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-01",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -109,7 +109,7 @@ Der Turn ist eine strategisch besonders wichtige Street:
 - Was verraten die Preflop- und Flop-Aktionen deines Gegners über seine Range?
 - Ist diese Hand es wert, bis zum River mitgenommen zu werden?
 
-==r:Wer am Turn passiv checkt und dann am River plötzlich eine große Bet abfeuert, wird von aufmerksamen Gegnern als schwach gelesen.== ==g:**Mit einer starken Hand: Setz am Turn und bau den Pot auf**==, solange dein Gegner noch bereit ist zu callen.
+==r:Wer eine starke Hand am Turn passiv checkt und erst am River groß setzen will, hat eine ganze Street an Value verschenkt.== ==g:**Mit einer starken Hand: Setz am Turn und bau den Pot auf**==, solange dein Gegner noch bereit ist zu callen.
 
 ---
 

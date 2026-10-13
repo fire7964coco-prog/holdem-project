@@ -367,7 +367,7 @@ Thứ hạng tay bài cơ bản từ mạnh nhất đến yếu nhất (kèm t�
 | 6 | Sảnh (straight) | 4,6% — dễ thua thùng và cù lũ |
 | 7 | Sám cô (bộ ba, three of a kind) | 4,8% — tay bài tốt, nhưng còn tùy board |
 | 8 | Hai đôi (two pair) | 23,5% — tay bài "mạnh" phổ biến nhất |
-| 9 | Một đôi (one pair) | 43,8% — tay bài xuất hiện nhiều nhất ở showdown |
+| 9 | Một đôi (one pair) | 43,8% — tay bài cuối cùng phổ biến nhất |
 | 10 | Mậu thầu (bài cao, high card) | 17,4% — tay bài yếu nhất ở showdown; thường chỉ thắng khi những người khác cũng trượt |
 
 Nếu hai người chơi có cùng loại tay bài, hãy so những lá cao nhất liên quan — xem [luật kicker (lá phụ) và so bài cùng hạng](/vi/blog/holdem-tiebreak-rules). Nếu 5 lá mạnh nhất của cả hai giống hệt nhau, thì [chia pot (split pot)](/vi/blog/holdem-split-pot-rules).

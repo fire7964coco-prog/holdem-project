@@ -107,7 +107,7 @@ export const POST: Post = {
   tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, mostly with draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -286,7 +286,7 @@ We read all 487 rows of the per-hand table rather than the first screen of it. S
 Read the second column downward and the pattern is impossible to miss. **Below two pair, every hand at the top of this list holds a straight draw** — the two that also have a pair (64s and 54s) are raising with the draw attached, not with the pair:
 
 - **98s** holds 5-6-8-9 and needs the ==7==.
-- **87s** holds 5-6-7-8 and takes the ==4 or the 9== — the only open-ender **in this range**. ⚠ Not the only one the board allows: **74 makes 4-5-6-7** and waits on the 3 or the 8, a textbook open-ender, and 84 is a double gutshot with the same eight outs. The 0.8% in the draw table means this solver's ranges have no 74 suited, not that the board has one open-ender.
+- **87s** holds 5-6-7-8 and takes the ==4 or the 9== — the only open-ender **in this range**. ⚠ Not the only one the board allows: **74 makes 4-5-6-7** and waits on the 3 or the 8, a textbook open-ender, and 84 is a double gutshot with eight outs of its own (the threes and sevens). The 0.8% in the draw table means this solver's ranges have no 74 suited, not that the board has one open-ender.
 - **J4s, Q4s, 54s and 64s** all hold 2-4-5-6 and need the ==3==.
 
 **Not one hand at the top of that list was chosen for its high card.**

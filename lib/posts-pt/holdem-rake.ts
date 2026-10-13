@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -74,7 +74,7 @@ Algumas regras governam como o rake do pote é de fato tirado:
 
 Aqui está a parte que mudou como eu penso o jogo. A porcentagem parece minúscula — 5%, com cap de alguns dólares — mas você paga em quase todo pote que ganha, por horas.
 
-**Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, a maioria dos potes disputados atinge ou chega perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa. E o rake nem é o único drop: muitas salas ao vivo ainda tiram um ou dois dólares por mão pra promoções ou jackpot, e a gorjeta do dealer também sai do seu lado da mesa. No Brasil, a mesma lógica vale nos clubes — R$1/R$2, R$2/R$5, com rake por mão ou taxa por hora; as porcentagens e o raciocínio do cap são idênticos, só muda a moeda.
+**Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, muitos potes disputados atingem ou chegam perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa. E o rake nem é o único drop: muitas salas ao vivo ainda tiram um ou dois dólares por mão pra promoções ou jackpot, e a gorjeta do dealer também sai do seu lado da mesa. No Brasil, a mesma lógica vale nos clubes — R$1/R$2, R$2/R$5, com rake por mão ou taxa por hora; as porcentagens e o raciocínio do cap são idênticos, só muda a moeda.
 
 **A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não desce junto conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Segue um exemplo trabalhado no NL50 online (ilustrativo — o número exato muda conforme quantos potes você disputa e como a sala aplica o cap, não conforme quantas mãos você registra). Dos dois caps abaixo, um cai dentro da faixa online usual e o outro acima dela: $2 dentro do $1–$3 que a maioria das salas pratica, $4 acima dela.
 
@@ -154,7 +154,7 @@ A. Geralmente não. A maioria das salas segue o "no flop, no drop" — se a mão
 
 **Q. Quanto de rake é tirado num jogo ao vivo de $1/$2?**
 
-A. Comumente 10% do pote com cap em torno de $5. A maioria dos potes disputados atinge o cap, então uma única mesa cheia pode dropar $100 ou mais por hora coletivamente. Essa taxa é por que uma mesa de jogadores parelhos perde fichas devagar para a casa ao longo do tempo.
+A. Comumente 10% do pote com cap em torno de $5. Muitos potes disputados atingem o cap, então uma única mesa cheia pode dropar $100 ou mais por hora coletivamente. Essa taxa é por que uma mesa de jogadores parelhos perde fichas devagar para a casa ao longo do tempo.
 
 **Q. O que é rakeback?**
 

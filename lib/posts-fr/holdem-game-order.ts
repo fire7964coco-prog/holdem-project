@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Préflop, c'est le joueur à gauche de la grosse blinde qui parle en premier. Au flop, à la turn et à la river, c'est le premier joueur encore en jeu à gauche du bouton, en général la petite blinde (en heads-up, c'est l'inverse). Une main suit toujours le même ordre : blindes, cartes fermées, préflop, flop, turn, river, showdown, avec jusqu'à 4 tours d'enchères.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-08",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -116,7 +116,7 @@ En anglais, on appelle aussi la **turn** *fourth street*. Les questions à te po
 - Que disent les actions préflop et au flop de ton adversaire sur sa range ?
 - Cette main vaut-elle la peine d'être emmenée jusqu'à la river ?
 
-==r:Si tu checkes passivement à la turn puis que tu envoies soudain une grosse mise à la river, les adversaires attentifs y lisent de la faiblesse.== ==g:**Avec une main forte, mise à la turn pour faire grossir le pot**== tant que ton adversaire est encore prêt à suivre.
+==r:Si tu checkes passivement une main forte à la turn en attendant d'envoyer une grosse mise à la river, tu as laissé filer tout un tour d'enchères de valeur.== ==g:**Avec une main forte, mise à la turn pour faire grossir le pot**== tant que ton adversaire est encore prêt à suivre.
 
 ---
 

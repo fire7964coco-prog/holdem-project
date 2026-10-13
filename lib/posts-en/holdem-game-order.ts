@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with up to four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-01",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -116,7 +116,7 @@ The turn is a strategically heavy street:
 - What do your opponent's preflop and flop actions say about their range?
 - Is this hand worth taking all the way to the river?
 
-==r:If you check passively on the turn and then suddenly fire a big bet on the river, observant opponents read weakness.== ==g:**With a strong hand, bet the turn to build the pot**== while your opponent is still willing to call.
+==r:If you check a strong hand passively on the turn and wait to fire big on the river, you have given up a whole street of value.== ==g:**With a strong hand, bet the turn to build the pot**== while your opponent is still willing to call.
 
 ---
 

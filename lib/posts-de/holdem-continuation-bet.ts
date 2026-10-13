@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippte es auf den drei Boards, die wir gelöst haben, auf über 97%), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 Min.",
@@ -188,7 +188,7 @@ Der Denkwechsel, der dich zum Gewinner macht: **Checken ist keine Kapitulation.*
 
 Zwei Spots aus derselben Session zeigen beide Seiten der Entscheidung.
 
-**Spot 1 – eine lehrbuchmäßige C-Bet.** Ich raise ==A♣K♦== und der Big Blind callt. Flop: ==K♠ 7♦ 2♣.== Das ist ein hohes, trockenes, unverbundenes Board, das meiner Range gehört – und ich habe **Top Pair, Top Kicker** gefloppt: mein K♦ pairt das K♠, mit dem Ass als bestmöglichem Kicker (beste Fünf = K♦ K♠ A♣ 7♦ 2♣). Ich bette **ein Drittel Pot** als Range-Bet: es kassiert all seine verfehlten Hände ab und hält schlechtere Könige und Paare drin. Einfache, profitable C-Bet.
+**Spot 1 – eine lehrbuchmäßige C-Bet.** Ich raise ==A♣K♦== und der Big Blind callt. Flop: ==K♠ 7♦ 2♣.== Das ist ein hohes, trockenes, unverbundenes Board, das meiner Range gehört – und ich habe **Top Pair, Top Kicker** gefloppt: mein K♦ pairt das K♠, mit dem Ass als bestmöglichem Kicker (beste Fünf = K♦ K♠ A♣ 7♦ 2♣). Ich bette **ein Drittel Pot** als Range-Bet: es setzt seine verfehlten Hände unter Druck und hält schlechtere Könige und Paare drin. Einfache, profitable C-Bet.
 
 **Spot 2 – ein lehrbuchmäßiger Check.** Gleiche Session, ich raise ==A♥Q♥== und der Big Blind callt. Flop: ==7♠ 6♠ 5♦.== Dieses Board zerschmettert genau die Hände, mit denen er gecallt hat – Suited Connectors, kleine Paare und Straßen – während ich nur Ass-hoch habe, ohne Paar und ohne Draw (keine Herz auf dem Board, also nicht mal ein Backdoor-Flush). Zwei Jahre früher hätte ich aus Gewohnheit „fortgesetzt“ und wäre geraist worden. Jetzt **checke ich und gebe auf.** Wenn ein sicherer Turn kommt und ich Equity dazubekomme, ist eine Delayed C-Bet verfügbar; wenn nicht, habe ich das Minimum verloren.
 

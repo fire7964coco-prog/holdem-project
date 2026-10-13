@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) menukar stack cip tournament anda kepada nilai wang hadiah sebenar, berdasarkan payout dan stack semua pemain. Kerana hadiah pertama hanya satu, menggandakan cip tidak pernah menggandakan wang — stack chip leader bernilai kurang daripada bahagian cipnya, short stack pula lebih. Jurang itulah sebabnya anda fold di bubble tangan yang mudah di-call dalam cash game.",
   category: "tournament",
   date: "2026-09-27",
-  updated: "2026-09-27",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 minit",
@@ -173,7 +173,7 @@ Leak yang biasa ialah menggunakan ICM secara berlebihan: fold terus-menerus sehi
 **ICM ialah model ringkas terbaik yang kita ada, tetapi ia hanya anggaran — ia menganggap setiap pemain sama mahir dan mengabaikan hampir semua perkara kecuali saiz stack.** Jujurlah tentang apa yang ditinggalkannya:
 
 - **Kemahiran.** ICM menganggap juara dunia dan pemain kali pertama dengan stack yang sama sebagai setara. Cip pemain yang lebih mahir bernilai lebih daripada yang dikatakan model.
-- **Posisi.** Stack 3-big-blind di button (masih bebas memilih saatnya dan open-shove dengan fold equity penuh dari kerusi terbaik) bernilai lebih daripada stack yang sama di big blind (satu pertiga daripadanya sudah dipasang, terpaksa all-in dalam satu dua tangan). ICM tidak nampak kerusi.
+- **Posisi.** Stack 3-big-blind di button (masih bebas memilih saatnya dan open-shove dengan fold equity penuh dari kerusi terbaik) bernilai lebih daripada stack yang sama di big blind (satu pertiga daripadanya sudah dipasang, dan blind satu orbit seterusnya menghabiskan sebahagian besar bakinya). ICM tidak nampak kerusi.
 - **Blind dan permainan akan datang.** ICM membekukan tournament pada saat ini; ia mengabaikan blind dan ante yang meningkat, serta bagaimana beberapa pusingan meja (orbit) seterusnya akan berlangsung.
 
 Malah ada sokongan empirikal untuk kelemahan ini: satu kajian besar pada 2025 yang menguji semula ICM terhadap keputusan tournament sebenar mendapati ia cenderung ==menilai terlalu rendah big stack dan terlalu tinggi short stack==, sebahagiannya kerana chip leader yang mahir boleh memanfaatkan tekanan ICM untuk menang *lebih* daripada ramalan model mentah. Solver lanjutan menambah pembetulan "future game" atas sebab inilah. Semua itu tidak menjadikan ICM salah — ia menjadikannya anggaran pertama yang kukuh yang anda laraskan mengikut kemahiran dan posisi, bukan hukum fizik.

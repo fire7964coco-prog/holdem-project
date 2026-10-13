@@ -347,7 +347,7 @@ Clasamentul de bază al mâinilor, de la cea mai puternică la cea mai slabă (c
 | 6 | Chintă (straight) | 4,6% — vulnerabilă la culori/full house-uri |
 | 7 | Trei de un fel (set) | 4,8% — mână bună, dar contează boardul |
 | 8 | Dublă Pereche | 23,5% — cea mai comună mână „puternică" |
-| 9 | Pereche | 43,8% — cea mai frecventă mână la showdown |
+| 9 | Pereche | 43,8% — cea mai frecventă mână finală |
 | 10 | Carte Mare (high card) | 17,4% — cea mai slabă mână la showdown; de obicei câștigă doar când și ceilalți au ratat |
 
 Dacă doi jucători au același tip de mână, se compară cele mai înalte cărți relevante (kickerul). Dacă cele mai bune cinci cărți sunt exact la fel, potul se împarte.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards and 5 shared community cards. There are up to four betting rounds, and the best 5-card poker hand wins at showdown — unless everyone else folds first.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -350,7 +350,7 @@ Basic hand ranking from strongest to weakest (with how often you make each hand 
 | 6 | Straight | 4.6% — vulnerable to flushes/full houses |
 | 7 | Three of a kind | 4.8% — good hand, but board matters |
 | 8 | Two pair | 23.5% — most common "strong" hand |
-| 9 | One pair | 43.8% — the most frequent hand at showdown |
+| 9 | One pair | 43.8% — the most common final hand |
 | 10 | High card | 17.4% — weakest hand at showdown; usually wins only when everyone else missed too |
 
 If two players have the same type of hand, compare the highest relevant cards — see the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules). If the best five cards are exactly the same, the pot is [split](/en/blog/holdem-split-pot-rules).

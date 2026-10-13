@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O mână de Texas Hold'em se desfășoară astfel: se pun blind-urile → se împart două cărți din mână → preflop → flop (3 cărți) → turn (1 carte) → river (1 carte) → showdown, cu patru runde de pariere în total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Turn-ul e o stradă cu mare greutate strategică:
 - Ce spun acțiunile adversarului de pe preflop și flop despre range-ul lui?
 - Merită dusă mâna asta până la river?
 
-==r:Dacă dai check pasiv pe turn și apoi tragi brusc un pariu mare pe river, adversarii atenți citesc slăbiciune.== ==g:**Cu o mână puternică, pariază pe turn ca să crești potul**== cât timp adversarul e încă dispus să plătească.
+==r:Dacă dai check pasiv pe turn cu o mână puternică și aștepți river-ul ca să tragi un pariu mare, ai pierdut o rundă întreagă de pariuri pe care adversarul le-ar fi plătit.== ==g:**Cu o mână puternică, pariază pe turn ca să crești potul**== cât timp adversarul e încă dispus să plătească.
 
 ---
 

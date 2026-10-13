@@ -120,7 +120,7 @@ Turn là một vòng cược nặng về chiến lược:
 - Hành động preflop và flop của đối thủ nói gì về range của họ?
 - Ván này có đáng đi tới tận river không?
 
-==r:Nếu bạn check thụ động ở turn rồi bất ngờ tung một cú cược lớn ở river, đối thủ tinh ý sẽ đọc ra sự yếu thế.== ==g:**Với tay bài mạnh, hãy bet ở turn để xây pot**== khi đối thủ vẫn còn sẵn lòng call.
+==r:Nếu bạn check thụ động một tay bài mạnh ở turn rồi chờ tung cú cược lớn ở river, bạn đã bỏ phí value của trọn một street.== ==g:**Với tay bài mạnh, hãy bet ở turn để xây pot**== khi đối thủ vẫn còn sẵn lòng call.
 
 ---
 

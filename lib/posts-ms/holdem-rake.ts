@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake ialah potongan kecil yang bilik kad ambil daripada kebanyakan pot sebagai bayaran menganjurkan permainan — biasanya 2.5–10% sehingga had (cap) beberapa dolar. Kebanyakan bilik tidak mengambil apa-apa jika semua orang fold sebelum flop ('no flop, no drop'). Rake paling memberi kesan kepada pemain stakes rendah dan meja short-handed, dan rakeback memulangkan sebahagian daripadanya kepada pemain tetap.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -74,7 +74,7 @@ Beberapa peraturan menentukan cara pot rake sebenarnya dipotong:
 
 Inilah bahagian yang mengubah cara saya melihat permainan ini. Peratusannya kedengaran kecil — 5%, dengan cap beberapa dolar — tetapi anda membayarnya pada hampir setiap pot yang anda menang, berjam-jam lamanya. Dan jumlahnya bertimbun jauh lebih cepat daripada yang disangka.
 
-**Permainan live $1/$2.** Dengan rake 10% dan cap $5, serta kira-kira 30 tangan diedarkan sejam, kebanyakan pot yang direbut mencecah atau hampir mencecah cap. Satu meja yang sibuk boleh membayar **$100+ sejam** ke dalam slot rake, dikongsi antara semua pemain. Wang itu keluar terus daripada kemenangan kolektif — itulah sebabnya meja yang penuh dengan pemain yang lebih kurang setara perlahan-lahan kehilangan cip kepada pihak rumah.
+**Permainan live $1/$2.** Dengan rake 10% dan cap $5, serta kira-kira 30 tangan diedarkan sejam, banyak pot yang direbut mencecah atau hampir mencecah cap. Satu meja yang sibuk boleh membayar **$100+ sejam** ke dalam slot rake, dikongsi antara semua pemain. Wang itu keluar terus daripada kemenangan kolektif — itulah sebabnya meja yang penuh dengan pemain yang lebih kurang setara perlahan-lahan kehilangan cip kepada pihak rumah.
 
 **"Perangkap rake" stakes rendah.** Inilah inti yang perlu didengar oleh setiap pemula. Oleh sebab cap hampir tidak turun apabila anda turun stakes, semakin *rendah* anda bermain, semakin *besar* gigitan rake secara berkadar. Berikut contoh kiraan pada online NL50 (no-limit bertaraf rendah) — sekadar ilustrasi; angka tepatnya berubah mengikut berapa banyak pot yang anda rebut dan cara bilik kad mengenakan cap, bukan mengikut berapa banyak tangan yang anda main. Dua cap di bawah: satu berada dalam julat online yang biasa dan satu lagi di luarnya — $2 berada dalam julat $1–$3 yang dipaparkan kebanyakan bilik kad, manakala $4 melebihinya.
 
@@ -154,7 +154,7 @@ A. Biasanya tidak. Kebanyakan bilik kad mengikut "no flop, no drop" — jika tan
 
 **Q. Berapa rake yang diambil dalam permainan live $1/$2?**
 
-A. Lazimnya 10% daripada pot dengan cap sekitar $5. Kebanyakan pot yang direbut mencecah cap, jadi satu meja yang sibuk boleh menyumbang $100 atau lebih sejam secara kolektif. Bayaran itulah sebabnya meja yang pemainnya setanding perlahan-lahan kehilangan cip kepada pihak rumah.
+A. Lazimnya 10% daripada pot dengan cap sekitar $5. Banyak pot yang direbut mencecah cap, jadi satu meja yang sibuk boleh menyumbang $100 atau lebih sejam secara kolektif. Bayaran itulah sebabnya meja yang pemainnya setanding perlahan-lahan kehilangan cip kepada pihak rumah.
 
 **Q. Apa itu rakeback?**
 

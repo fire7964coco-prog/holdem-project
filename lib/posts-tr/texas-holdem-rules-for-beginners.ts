@@ -435,7 +435,7 @@ En güçlüden en zayıfa temel el sıralaması (7 karttan en iyi 5'ini kullanar
 | 6 | Kent (Straight) | %4,6 — floş/full'a karşı kırılgan |
 | 7 | Üçlü (Three of a Kind) | %4,8 — iyi el ama board önemli |
 | 8 | İki Çift (Two Pair) | %23,5 — en yaygın "güçlü" el |
-| 9 | Çift (One Pair) | %43,8 — showdown'da en sık görülen el |
+| 9 | Çift (One Pair) | %43,8 — en sık ortaya çıkan nihai el |
 | 10 | Yüksek Kart (High Card) | %17,4 — showdown'daki en zayıf el; genelde yalnızca diğerleri de ıskaladığında kazanır |
 
 İki oyuncunun aynı tür eli varsa, ilgili en yüksek kartları karşılaştır — [kicker ve beraberlik kurallarına](/tr/blog/holdem-tiebreak-rules) bakabilirsin. En iyi beş kart tamamen aynıysa pot bölünür (split).

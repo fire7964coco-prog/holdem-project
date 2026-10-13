@@ -354,7 +354,7 @@ Peringkat kartu dasar dari terkuat ke terlemah (dengan seberapa sering tiap tang
 | 6 | Straight | 4,6% — rentan terhadap Flush/Full House |
 | 7 | Three of a Kind | 4,8% — tangan bagus, tapi board menentukan |
 | 8 | Two Pair | 23,5% — tangan "kuat" yang paling umum |
-| 9 | One Pair | 43,8% — tangan paling sering muncul di showdown |
+| 9 | One Pair | 43,8% — tangan akhir yang paling sering terbentuk |
 | 10 | High Card | 17,4% — tangan terlemah di showdown; biasanya menang hanya kalau yang lain juga tidak dapat apa-apa |
 
 Kalau dua pemain punya tipe tangan yang sama, bandingkan kartu tertinggi yang relevan — lihat [aturan kicker dan tie-breaker](/id/blog/holdem-tiebreak-rules). Kalau lima kartu terbaiknya persis sama, pot [dibagi rata (split)](/id/blog/holdem-split-pot-rules).

@@ -352,7 +352,7 @@ Ranking básico de mãos, da mais forte à mais fraca (com a frequência aproxim
 | 6 | Sequência | 4,6% — vulnerável a flushes e full houses |
 | 7 | Trinca | 4,8% — boa mão, mas a mesa importa |
 | 8 | Dois pares | 23,5% — a mão "forte" mais comum |
-| 9 | Par | 43,8% — a mão mais frequente no showdown |
+| 9 | Par | 43,8% — a mão final mais comum |
 | 10 | Carta alta | 17,4% — a mão mais fraca no showdown; costuma ganhar só quando os outros também não acertaram nada |
 
 Se dois jogadores têm o mesmo tipo de mão, comparam-se as cartas relevantes mais altas — são as [regras de kicker e desempate](/pt/blog/holdem-tiebreak-rules). Se as melhores cinco cartas forem exatamente iguais, o pote é [dividido](/pt/blog/holdem-split-pot-rules).

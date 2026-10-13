@@ -32,7 +32,7 @@ export const POST: Post = {
   tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta su rango entero: el check redondea a 0.0%, y ninguno de los 63 combos hace check ni siquiera el 0.1% de las veces. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -158,7 +158,7 @@ La pista es que **los conteos de combos no son números enteros**: 26.4 al tama�
 
 **Casi la mitad de su rango que paga — el 46.2% — es un par servido sin as ni rey dentro** — así que entra de frente a un board que tiene los dos.
 
-![Composición de rango en un bote de 3-bet con board de as: la ciega grande se queda con todos los combos de set mientras el rango del botón se amontona en parejas medianas](/images/gto-3bp-ace-king-ranges-es.webp "Bote de 3-bet en A-K-2 · la ciega grande conserva la parte alta del board mientras el rango del botón se amontona en el medio")
+![Composición de rango en un bote de 3-bet con board de as: la ciega grande se queda con dos de los tres sets mientras el rango del botón se amontona en parejas medianas](/images/gto-3bp-ace-king-ranges-es.webp "Bote de 3-bet en A-K-2 · la ciega grande conserva la parte alta del board mientras el rango del botón se amontona en el medio")
 
 Los underpairs son el 46.2%, o 60 combos: de QQ hasta 33, diez parejas de seis combos cada una. No pueden pagar dos barriles en esta textura.
 

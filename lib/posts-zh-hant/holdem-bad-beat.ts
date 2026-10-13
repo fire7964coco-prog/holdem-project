@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "爆冷門（Bad Beat）是你把籌碼推進去時原本大幅領先——通常有 80% 以上勝率——卻因為對手抽中一張幸運牌「反殺」你而輸掉。跟嚴格意義上的冤家牌不同的是，錢推進去時你是領先的，只是最後被牌堆背叛。它很痛，但一連串的爆冷門通常代表對手在落後時把錢推進來——那正是你想坐的那種牌局。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 分鐘",
@@ -259,7 +259,7 @@ A. 不是——絕大多數情況下它們正好相反。爆冷門代表你的�
   </a>
   <a href="/zh-hant/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">攤牌時誰贏</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">平手怎麼判</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">贏家到底是怎麼決定的</div>
   </a>
 </div>

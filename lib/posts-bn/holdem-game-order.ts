@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমের একটা হ্যান্ড এভাবে চলে: blind দিন → 2টা hole কার্ড বিলি করুন → preflop → flop (3 কার্ড) → turn (1 কার্ড) → river (1 কার্ড) → showdown, মোট 4টা betting রাউন্ড নিয়ে।",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Flop-এর betting রাউন্ডের পরে আরও একটা co
 - প্রতিপক্ষের preflop আর flop-এর চাল তার range সম্পর্কে কী বলছে?
 - এই হ্যান্ড কি river পর্যন্ত টেনে নেওয়ার মতো?
 
-==r:আপনি turn-এ passive হয়ে check করে তারপর river-এ হঠাৎ বড় bet করলে, তীক্ষ্ণ প্রতিপক্ষ দুর্বলতা টের পেয়ে যায়।== ==g:**শক্ত হ্যান্ড থাকলে turn-এ bet করে pot বাড়ান**== যতক্ষণ প্রতিপক্ষ call করতে রাজি আছে।
+==r:শক্ত হ্যান্ড নিয়ে আপনি turn-এ passive হয়ে check করে river-এ বড় bet-এর অপেক্ষায় থাকলে, পুরো একটা betting round-এর টাকা আদায়ের সুযোগ হাতছাড়া করছেন।== ==g:**শক্ত হ্যান্ড থাকলে turn-এ bet করে pot বাড়ান**== যতক্ষণ প্রতিপক্ষ call করতে রাজি আছে।
 
 ---
 

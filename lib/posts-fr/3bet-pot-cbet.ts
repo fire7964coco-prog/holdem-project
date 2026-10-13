@@ -14,7 +14,7 @@ export const POST: Post = {
   tldr: "Sur A♦K♠2♥ dans un pot 3-bet, la grosse blinde mise toute sa range : le check s'arrondit à 0,0 %, et aucun des 63 combos ne checke ne serait-ce que 0,1 % du temps. Dans les sept spots précédents, son réflexe était de checker, entre 76,2 % et 99,9 % du temps. Ce qui a basculé, c'est surtout l'action préflop : la grosse blinde a 3-bet au lieu de suivre, donc elle possède le haut de ce flop, pendant que le bouton a 4-bet ses paires d'as et de rois hors de sa range. Et avec un SPR de 4,0, il n'y a plus de street ultérieure à laquelle reporter la décision.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -132,7 +132,7 @@ L'indice, c'est que **les nombres de combos ne sont pas entiers** : 26,4 en gros
 
 **Près de la moitié de sa range de call, 46,2 %, est une paire servie sans as ni roi**, donc il fonce droit sur un board qui a les deux.
 
-![Composition des ranges dans un pot 3-bet sur un flop hauteur As : la grosse blinde détient tous les combos de brelan servi tandis que la range du bouton se concentre sur les paires moyennes](/images/gto-3bp-ace-king-ranges-fr.webp "Pot 3-bet A-K-2 · la grosse blinde garde le haut du board tandis que la range du bouton se tasse au milieu")
+![Composition des ranges dans un pot 3-bet sur un flop hauteur As : la grosse blinde détient deux des trois brelans servis tandis que la range du bouton se concentre sur les paires moyennes](/images/gto-3bp-ace-king-ranges-fr.webp "Pot 3-bet A-K-2 · la grosse blinde garde le haut du board tandis que la range du bouton se tasse au milieu")
 
 Les underpairs font 46,2 %, soit 60 combos : de QQ à 33, dix paires à six combos chacune. Elles ne peuvent pas payer deux barrels sur cette texture.
 

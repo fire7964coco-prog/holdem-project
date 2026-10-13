@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "這是一份大白話的德州撲克術語表，收的都是牌桌上真會碰到的詞，按你怎麼遇到它們來分組——下注動作、位置、牌型與牌面、玩家類型、錢，以及牌桌局面。先看下面那組「最容易搞混」的詞（過牌 vs 跟注、暗三條 vs 明三條、Cooler vs Bad Beat），再按分類隨便翻。有深入指南的術語會直接給你連結。",
   category: "glossary",
   date: "2026-07-22",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 分鐘",
@@ -39,7 +39,7 @@ export const POST: Post = {
 > **快速解答**
 > 先整理這 8 個詞的理由很單純：其餘九十幾個術語聽不懂頂多尷尬，這 8 個一搞混就直接讓你付錢——把過牌當跟注、把明三條當暗三條，錯的是動作，不是詞彙。
 
-如果你只想先理清十來個詞，就先理這些——它們是牌桌上引起最多困惑（也造成最貴錯誤）的那幾個：
+如果你只想先理清 8 組容易混淆的詞，就先理這些——它們是牌桌上引起最多困惑（也造成最貴錯誤）的那幾個：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

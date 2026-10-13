@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip dalam jangka panjang. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset saat menghadapi taruhan di board yang cocok dengan lawan, serta draw lemah yang tak memenuhi pot odds mereka, setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -110,7 +110,7 @@ Fold sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, bahkan s
 | **Top pair, kicker lemah** | Menghadapi taruhan besar turn + river | Anda mengalahkan bluff dan pair lebih buruk — tapi range value mereka mengungguli kicker Anda |
 | **Overpair (JJ/QQ)** | Pemain pasif me-raise board terkoordinasi | Pemain pasif me-raise nuts, bukan tangan kosong — out Anda tinggal sedikit |
 | **Top pair top kicker** | Board berkembang jadi four to a flush atau straight | Satu pair Anda tak bisa mengalahkan flush/straight yang mereka wakili |
-| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih jadi full house ~34% dari waktu hingga river melawan flush jadi, dan saat jadi ia memenangkan satu stack — call |
+| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih jadi full house atau quads ~34% dari waktu hingga river melawan flush jadi, dan saat jadi ia memenangkan satu stack — call |
 | **Second pair** | Call tiga street "untuk menjaga mereka jujur" | Anda membayar value tiga kali untuk menangkap satu bluff |
 
 </div>

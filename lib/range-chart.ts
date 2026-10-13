@@ -114,6 +114,33 @@ export const RANGE_CHART_COPY: Record<string, ChartCopy> = {
       BTN: { label: "BTN（按钮位）", note: "翻后每条街都最后行动" },
     },
   },
+  fr: {
+    title: "Range d'ouverture par position — tout le monde s'est couché avant toi",
+    seats: {
+      UTG: { label: "UTG (précoce)", note: "Le siège le plus serré — huit joueurs parlent encore après toi" },
+      MP: { label: "MP (milieu)", note: "Ajoute les paires moyennes et les broadways assorties" },
+      CO: { label: "CO (cut-off)", note: "Après le flop, seul le bouton parle encore après toi" },
+      BTN: { label: "BTN (bouton)", note: "Parle en dernier à chaque street après le flop" },
+    },
+  },
+  ms: {
+    title: "Range open ikut posisi — semua fold sebelum anda",
+    seats: {
+      UTG: { label: "UTG (Awal)", note: "Tempat duduk paling ketat — lapan pemain masih bertindak di belakang anda" },
+      MP: { label: "MP (Tengah)", note: "Tambah pasangan pertengahan dan suited broadway" },
+      CO: { label: "CO (Cutoff)", note: "Postflop hanya button yang bertindak selepas anda" },
+      BTN: { label: "BTN (Button)", note: "Bertindak terakhir pada setiap street postflop" },
+    },
+  },
+  vi: {
+    title: "Range open theo vị trí — mọi người trước bạn đều fold",
+    seats: {
+      UTG: { label: "UTG (Sớm)", note: "Ghế chặt nhất — còn tám người chơi hành động sau bạn" },
+      MP: { label: "MP (Giữa)", note: "Thêm các đôi trung và broadway đồng chất" },
+      CO: { label: "CO (Cutoff)", note: "Postflop chỉ còn button hành động sau bạn" },
+      BTN: { label: "BTN (Button)", note: "Hành động cuối ở mọi vòng cược postflop" },
+    },
+  },
   "zh-hant": {
     title: "各位置的開牌範圍 — 前面全部棄牌時",
     seats: {

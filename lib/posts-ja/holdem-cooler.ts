@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "クーラーとは、正しく降りることがほぼ不可能なほど強い手を持ったまま大きなポットを失うハンドのことです。ポケットキングスがエースにぶつかる、あるいはセットが上位のセットに負ける——そういう場面です。このガイドでいう厳密な意味では、チップが入った時点ですでに負けていて、相手が幸運なカードでサックアウトしたわけでもありません。正しくプレーしても、それでも負けた。ポーカーで最も潔いタイプの災難です。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10分",
@@ -73,7 +73,7 @@ export const POST: Post = {
 
 </div>
 
-同じプレイヤーで両方を並べると腑に落ちます。**バッドビート:** あなたが A♠A♥ を持ち、プリフロップで 7♣7♦ 相手に全チップを入れ、ボードに**7**が落ちる——あなたのエースは約4対1で有利(およそ80%)だったのに引き負けた。**クーラー:** 逆にしてみましょう——今度はあなたが**7♣7♦**を持ち、フロップでセブンのセットを引き、上位のペアから来たセットにスタックを入れる。あなたはフロップからずっと不利な側で、しかもフロップのセットを降りることはまずありません。同じカード、正反対の物語。どちらもミスではなく不運です——確かめる価値があるのは、自分のプレーが本当に成り立っていたかどうか。成り立っていなかったなら、肩をすくめて忘れるのではなく[自分のプレーを見直し](/ja/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")ましょう。
+同じプレイヤーで両方を並べると腑に落ちます。**[バッドビート](/ja/blog/holdem-bad-beat):** あなたが A♠A♥ を持ち、プリフロップで 7♣7♦ 相手に全チップを入れ、ボードに**7**が落ちる——あなたのエースは約4対1で有利(およそ80%)だったのに引き負けた。**クーラー:** 逆にしてみましょう——今度はあなたが**7♣7♦**を持ち、フロップでセブンのセットを引き、上位のペアから来たセットにスタックを入れる。あなたはフロップからずっと不利な側で、しかもフロップのセットを降りることはまずありません。同じカード、正反対の物語。どちらもミスではなく不運です——確かめる価値があるのは、自分のプレーが本当に成り立っていたかどうか。成り立っていなかったなら、肩をすくめて忘れるのではなく[自分のプレーを見直し](/ja/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")ましょう。
 
 ---
 
@@ -229,7 +229,7 @@ A. 少し違います——この言葉には古いギャンブルの意味が�
   </a>
   <a href="/ja/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ショーダウンで勝つのは?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">引き分けの決め方</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">引き分けと2番手の手の決まり方</div>
   </a>
   <a href="/ja/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

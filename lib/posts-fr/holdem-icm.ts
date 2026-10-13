@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "L'ICM (Independent Chip Model) convertit ton stack de tournoi en sa vraie valeur en argent, à partir de la structure des gains et des stacks de chaque joueur. Comme il n'y a qu'une première place à gagner, doubler tes jetons ne double jamais tes gains : le stack du chip leader vaut moins que sa part de jetons, et les short stacks valent plus. C'est cet écart qui te fait coucher sur la bulle des mains que tu paierais sans réfléchir en cash game.",
   category: "tournament",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -173,7 +173,7 @@ Une fuite courante consiste à trop appliquer l'ICM : se coucher jusqu'à deveni
 **L'ICM est le meilleur modèle simple dont on dispose, mais c'est une approximation — il suppose que tous les joueurs ont le même niveau et ignore presque tout sauf la taille des stacks.** Sois honnête sur ce qu'il laisse de côté :
 
 - **Le niveau.** L'ICM traite un champion du monde et un débutant à stacks égaux comme égaux. Les jetons d'un meilleur joueur valent plus que ce que dit le modèle.
-- **La position.** Un stack de 3 grosses blindes au bouton (encore libre de choisir son spot et de faire tapis en open avec toute sa fold equity depuis la meilleure place) vaut plus que le même stack en grosse blinde (un tiers déjà posé, forcé à tapis dans la main ou les deux suivantes). L'ICM ne voit pas les places.
+- **La position.** Un stack de 3 grosses blindes au bouton (encore libre de choisir son spot et de faire tapis en open avec toute sa fold equity depuis la meilleure place) vaut plus que le même stack en grosse blinde (un tiers déjà posé, et la prochaine orbite de blindes emporte l'essentiel du reste). L'ICM ne voit pas les places.
 - **Les blindes et la suite du jeu.** L'ICM fige le tournoi à cet instant ; il ignore la montée des blindes, les antes et la façon dont les prochaines orbites vont réellement se dérouler.
 
 Il y a même une confirmation empirique de cet angle mort : une vaste étude de 2025 qui a confronté l'ICM à de vrais résultats de tournois a montré qu'il a tendance à ==sous-estimer les gros stacks et surestimer les short stacks==, en partie parce qu'un chip leader compétent peut exploiter la pression ICM pour gagner *plus* que ce que prédit le modèle brut. Les solvers avancés ajoutent une correction « future game » précisément pour cette raison. Rien de tout cela ne rend l'ICM faux — cela en fait une solide première approximation que tu ajustes selon le niveau et la position, pas une loi de la physique.

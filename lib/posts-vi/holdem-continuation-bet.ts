@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) là cược ở flop của người đã raise preflop. Quy tắc hiện đại không phải 'c-bet mọi flop' mà là cược nhỏ và thường ở flop có lợi cho range của bạn (bài chung cao, khô như K-7-2), check ở flop có lợi cho đối thủ (thấp, liên kết như 7-6-5). Size khoảng 1/3 pot ở flop khô, 2/3 trở lên ở flop ướt; c-bet ít hơn khi không có vị trí nếu bạn là người raise duy nhất, và ít hơn nhiều trong pot nhiều người.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 phút",
@@ -179,7 +179,7 @@ Sự chuyển đổi tư duy biến bạn thành người thắng: **check khôn
 
 Hai tình huống từ cùng một buổi chơi cho thấy cả hai mặt của quyết định.
 
-**Tình huống 1 — một cú c-bet mẫu mực.** Tôi raise ==A♣K♦== và big blind (mù lớn) call. Flop: ==K♠ 7♦ 2♣.== Đó là board cao, khô, rời rạc thuộc về range của tôi — và tôi flop ra **top pair, top kicker**: K♦ của tôi tạo đôi với K♠, với lá Át là kicker (lá phụ) tốt nhất có thể (năm lá tốt nhất = K♦ K♠ A♣ 7♦ 2♣). Tôi bet **một phần ba pot** như một range bet: nó bắt mọi tay bài trượt của anh ta trả giá và giữ những lá K yếu hơn cùng các đôi ở lại. Cú c-bet dễ dàng, có lời.
+**Tình huống 1 — một cú c-bet mẫu mực.** Tôi raise ==A♣K♦== và big blind (mù lớn) call. Flop: ==K♠ 7♦ 2♣.== Đó là board cao, khô, rời rạc thuộc về range của tôi — và tôi flop ra **top pair, top kicker**: K♦ của tôi tạo đôi với K♠, với lá Át là kicker (lá phụ) tốt nhất có thể (năm lá tốt nhất = K♦ K♠ A♣ 7♦ 2♣). Tôi bet **một phần ba pot** như một range bet: nó gây áp lực lên các tay bài trượt của anh ta và giữ những lá K yếu hơn cùng các đôi ở lại. Cú c-bet dễ dàng, có lời.
 
 **Tình huống 2 — một cú check mẫu mực.** Cùng buổi, tôi raise ==A♥Q♥== và big blind call. Flop: ==7♠ 6♠ 5♦.== Board này trúng đậm chính những tay bài anh ta đã call — suited connector (hai lá bài liên tiếp cùng chất), đôi nhỏ và sảnh — trong khi tôi chỉ có Át cao, không đôi, không bài chờ (không có lá cơ nào trên board, nên không có cả thùng backdoor). Hai năm trước, hẳn tôi đã "tiếp tục" theo thói quen và bị raise. Giờ tôi **check và bỏ cuộc.** Nếu một lá turn an toàn đến và tôi nhặt được equity, delayed c-bet vẫn sẵn sàng; nếu không, tôi đã thua ở mức tối thiểu.
 

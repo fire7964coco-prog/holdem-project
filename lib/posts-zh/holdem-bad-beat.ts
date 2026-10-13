@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "bad beat（爆冷输牌／走背运）就是你作为大热门——通常 80% 或以上——把钱推进去，却因对手摸到一张幸运牌“suck out”逆袭你而输掉。跟严格意义上的 cooler 不同，钱推进去时你是领先的；只是这副牌在最后一刻背叛了你。它很扎心，但源源不断的 bad beat 通常说明对手在落后时把钱推进去——那正是你想坐的牌局。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 分钟",
@@ -257,7 +257,7 @@ bad beat 是你为参与一个能赢的牌局所交的税。最好的玩家遭�
   </a>
   <a href="/zh/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">摊牌时谁赢</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">平局怎么判</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">获胜的牌到底是怎么定的</div>
   </a>
 </div>

@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "No flop baixo rainbow 6♠5♥2♦, o big blind dá check em 96,8% e sai apostando em apenas 3,2%, embora sua equity de 48,3% seja a segunda maior dos sete spots em que ele defende. Só 4-3 forma sequência neste flop, e nenhum dos ranges contém essa mão. Nenhum dos ranges tem vantagem no topo, então o BB quase nunca sai apostando fora de posição. A agressividade aparece depois: numa resolução separada da mesma árvore, que permite consultar as decisões seguintes, o BB dá check-raise contra 1,8bb em 14,9%, num range de aumento formado sobretudo por draws.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   readTime: "11 min",
   emoji: "🌊",
@@ -181,7 +181,7 @@ Lemos as 487 linhas da tabela de mãos, não apenas as que aparecem na primeira 
 Leia a segunda coluna de cima para baixo: **abaixo de dois pares, todas as mãos destacadas têm draw de sequência.** As duas que também têm par, 64s e 54s, aumentam com o apoio do draw, não apenas pela força do par:
 
 - **98s** reúne 5-6-8-9 e precisa do ==7==.
-- **87s** reúne 5-6-7-8 e aceita ==4 ou 9==: é o único draw de duas pontas **presente neste range**. ⚠ Não é o único permitido pelo board: **74 forma 4-5-6-7** e espera 3 ou 8, um draw de duas pontas; 84 tem um double gutshot com os mesmos oito outs. Os 0,8% da tabela de draws indicam que os ranges deste solver não contêm 74 do mesmo naipe, e não que o board só permita um draw de duas pontas.
+- **87s** reúne 5-6-7-8 e aceita ==4 ou 9==: é o único draw de duas pontas **presente neste range**. ⚠ Não é o único permitido pelo board: **74 forma 4-5-6-7** e espera 3 ou 8, um draw de duas pontas; 84 tem um double gutshot com oito outs próprios (os 3 e os 7). Os 0,8% da tabela de draws indicam que os ranges deste solver não contêm 74 do mesmo naipe, e não que o board só permita um draw de duas pontas.
 - **J4s, Q4s, 54s e 64s** reúnem 2-4-5-6 e precisam do ==3==.
 
 **Nenhuma mão no topo dessa lista foi escolhida por sua carta alta.**

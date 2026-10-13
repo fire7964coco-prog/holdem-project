@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "No flop baixo pareado 6♣6♦3♥, o big blind dá check em 97,0%. O curioso é que tem mais trincas que o botão: 26 combos com um seis contra 20. Ainda assim, dá check porque apenas 18,4% do seu range tem algo além do par do board; os outros 81,6% disputam o pote com cartas altas, terreno em que o botão leva vantagem. Os pares de mão acima do seis ganham valor: TT tem 76,0% de equity neste spot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "👯",
@@ -119,7 +119,7 @@ Sair apostando encontra dificuldades dos dois lados: com um seis, você tende a 
 | EV (bb) | 2,17 | 3,33 |
 | **Realização de equity (EQR)** | **83,7%** | **114,5%** |
 
-A parcela do pote correspondente à equity do BB é ==5,5 × 47,2% = 2,60bb==, mas seu valor esperado (EV) é 2,17bb: ==2,17 ÷ 2,60 ≈ 83,7%==. A parcela do botão é 2,90bb, contra EV de 3,33bb; ele realiza **114,5%**, mais do que a equity bruta indicaria.
+A parcela do pote correspondente à equity do BB é ==5,5 × 47,2% = 2,60bb==, mas seu valor esperado (EV) é 2,17bb: ==2,17 ÷ 2,60 ≈ 83,5%==, que o solver, trabalhando com valores sem arredondamento, mostra como **83,7%**. A parcela do botão é 2,90bb, contra EV de 3,33bb; ele realiza **114,5%** na tela (cerca de 114,8% pelos números arredondados), mais do que a equity bruta indicaria.
 
 A diferença de **30,8 pontos percentuais** é quase igual aos 29,1 pontos do [board seco com ás alto](/pt/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-pt.webp"). **Um board pareado se comporta como um board seco:** cerca de quatro quintos dos ranges têm o mesmo par de seis com cartas altas diferentes. A mão tende a seguir com menos ação, e quem age por último observa o que o adversário faz antes de decidir. Essa vantagem explica a distância.
 

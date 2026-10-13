@@ -92,7 +92,7 @@ export const POST: Post = {
   tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets its whole range: checking rounds to 0.0%, and no combo out of 63 checks even 0.1% of the time. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -216,7 +216,7 @@ The giveaway is that **the combo counts are not whole numbers**: 26.4 large and 
 
 **Nearly half of its calling range — 46.2% — is a pocket pair with neither an ace nor a king in it** — so it walks straight into a board that has both.
 
-![Range composition on an ace-high three-bet pot, the big blind holding every set combo while the button's range is bunched in middle pairs](/images/gto-3bp-ace-king-ranges-en.webp "A-K-2 three-bet pot · the big blind keeps the top of the board while the button's range bunches in the middle")
+![Range composition on an ace-high three-bet pot, the big blind holding two of the three sets while the button's range is bunched in middle pairs](/images/gto-3bp-ace-king-ranges-en.webp "A-K-2 three-bet pot · the big blind keeps the top of the board while the button's range bunches in the middle")
 
 Underpairs are 46.2%, or 60 combos: QQ down to 33, ten pairs at six combos each. They cannot call two barrels on this texture.
 

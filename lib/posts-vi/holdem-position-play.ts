@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In position nghĩa là bạn hành động sau cùng, thấy mọi đối thủ quyết định rồi mới phải bỏ ra một chip. Ví dụ solver cho thấy có vị trí thường giúp hiện thực hóa equity tốt hơn, nhưng không ghế nào bị khóa cứng trên hay dưới 100%: range, bài chung và diễn biến cược có thể đảo ngược quy luật. Đó là lý do, ở bàn full ring, UTG chỉ mở khoảng 13% tay bài còn button mở khoảng 43% — và vì sao vị trí viết lại mọi quyết định c-bet, bluff và kiểm soát pot sau flop.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -117,7 +117,7 @@ Sự phân biệt này quan trọng: **big blind thua nhiều chip thô nhất t
 
 Chơi tốt ở UTG chủ yếu là kiềm chế:
 
-- **Open khoảng top ~13% tay bài** — lõi là đôi mạnh (TT+), AK/AQ và các broadway đồng chất tốt nhất (AJs, KQs), bổ sung bằng đôi trung và Át đồng chất cao khi bạn nới lỏng. Về lưới từng tay bài chính xác, dùng [hướng dẫn bài khởi đầu poker](/vi/blog/holdem-starting-hands-chart).
+- **Open khoảng top ~13% tay bài** — lõi là đôi mạnh (TT+), AK, AQs và các broadway đồng chất tốt nhất (AJs, KQs), bổ sung bằng đôi trung, AQo và Át đồng chất cao khi bạn nới lỏng. Về lưới từng tay bài chính xác, dùng [hướng dẫn bài khởi đầu poker](/vi/blog/holdem-starting-hands-chart).
 - **Fold những tay bài đẹp-nhưng-bị-áp-đảo.** KJo và QJo trông chơi được và âm thầm rút chip từ UTG — khi chúng trúng, ai đó phía sau thường trúng to hơn.
 - **Chuẩn bị chơi ván bài OOP.** Ai call cú open UTG của bạn nhiều khả năng có vị trí trên bạn suốt ba vòng cược, nên range của bạn phải đủ mạnh để chịu được khoản thuế đó.
 
@@ -274,7 +274,7 @@ A. Raise hoặc fold — đừng open-limp. Một tay bài đủ mạnh để ch
 
 **Q. Nên mở bao nhiêu % tay bài ở UTG so với button?**
 
-A. Từ UTG ở bàn full ring, open khoảng top ~13% tay bài — xây quanh đôi mạnh, AK/AQ và các broadway đồng chất tốt nhất, bổ sung bằng đôi trung và Át đồng chất cao. Từ button, khoảng ~43% là có lời vì quyền hành động cuối được bảo đảm bù cho lá bài yếu hơn. Ở 6-max, UTG nới ra khoảng ~17%, chơi như lojack ở full ring.
+A. Từ UTG ở bàn full ring, open khoảng top ~13% tay bài — xây quanh đôi mạnh, AK, AQs và các broadway đồng chất tốt nhất, bổ sung bằng đôi trung, AQo và Át đồng chất cao. Từ button, khoảng ~43% là có lời vì quyền hành động cuối được bảo đảm bù cho lá bài yếu hơn. Ở 6-max, UTG nới ra khoảng ~17%, chơi như lojack ở full ring.
 
 **Q. Vị trí ảnh hưởng đến tần suất c-bet như thế nào?**
 

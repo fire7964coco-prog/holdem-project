@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Trên A♦K♠2♥ trong pot 3-bet, big blind bet toàn bộ range: check làm tròn còn 0,0%, và không combo nào trong 63 combo check dù chỉ 0,1%. Ở bảy spot trước, mặc định của nó là check, từ 76,2% đến 99,9%. Thứ đổi chiều chủ yếu là hành động preflop: big blind 3-bet thay vì call, nên nó nắm phần đỉnh của flop này, trong khi button đã 4-bet pocket A và pocket K đi mất. Và với SPR 4,0, không còn street nào sau đó để dồn lại.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -133,7 +133,7 @@ Dấu hiệu lộ ra là **số combo không phải số nguyên**: 26,4 bet l�
 
 **Gần một nửa range call của nó — 46,2% — là đôi tẩy không chứa A cũng không chứa K** — nên nó đi thẳng vào một board có cả hai lá đó.
 
-![Thành phần range trên pot 3-bet flop A-high: big blind giữ mọi combo set, còn range của button dồn cục ở các đôi tầm trung](/images/gto-3bp-ace-king-ranges-vi.webp "Pot 3-bet A-K-2 · big blind giữ phần đỉnh của board, còn range của button dồn vào khúc giữa")
+![Thành phần range trên pot 3-bet flop A-high: big blind giữ hai trong ba loại set, còn range của button dồn cục ở các đôi tầm trung](/images/gto-3bp-ace-king-ranges-vi.webp "Pot 3-bet A-K-2 · big blind giữ phần đỉnh của board, còn range của button dồn vào khúc giữa")
 
 Underpair (đôi tẩy thấp hơn lá cao nhất trên board) chiếm 46,2%, tức 60 combo: từ QQ xuống 33, mười đôi, mỗi đôi sáu combo. Trên kết cấu này chúng không thể call cả flop lẫn turn.
 

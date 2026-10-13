@@ -353,7 +353,7 @@ Kedudukan tangan asas dari paling kuat ke paling lemah (dengan kekerapan anda me
 | 6 | Straight | 4.6% — terdedah kepada Flush/Full House |
 | 7 | Three of a Kind | 4.8% — tangan bagus, tetapi board penting |
 | 8 | Two Pair | 23.5% — tangan "kuat" paling biasa |
-| 9 | Pair | 43.8% — tangan paling kerap di showdown |
+| 9 | Pair | 43.8% — tangan akhir paling kerap terbentuk |
 | 10 | High Card | 17.4% — tangan paling lemah di showdown; biasanya menang hanya apabila pemain lain pun tidak dapat apa-apa |
 
 Jika dua pemain mempunyai jenis tangan yang sama, bandingkan kad tertinggi yang berkaitan — lihat [peraturan kicker dan pemecah seri](/ms/blog/holdem-tiebreak-rules). Jika lima kad terbaik betul-betul sama, pot [dibahagikan](/ms/blog/holdem-split-pot-rules).

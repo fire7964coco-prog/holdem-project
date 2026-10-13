@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso, en una mesa full ring, UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -126,7 +126,7 @@ La distinción importa: la **ciega grande pierde más fichas brutas por cada 100
 
 Jugar bien UTG va sobre todo de contención:
 
-- **Abre más o menos el ~13% superior de las manos** — el núcleo son los pares fuertes (TT+), AK/AQ y los mejores broadways del mismo palo (AJs, KQs), redondeado con pares medios y los mejores ases del mismo palo. Para la rejilla exacta mano a mano, usa la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
+- **Abre más o menos el ~13% superior de las manos** — el núcleo son los pares fuertes (TT+), AK, AQs y los mejores broadways del mismo palo (AJs, KQs), redondeado con pares medios, AQo y los mejores ases del mismo palo. Para la rejilla exacta mano a mano, usa la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
 - **Foldea lo bonito pero dominado.** KJo y QJo parecen jugables y sangran fichas en silencio desde UTG — cuando conectan, alguien de detrás suele conectar más fuerte.
 - **Cuenta con jugar la mano OOP.** Quien iguale tu apertura de UTG probablemente tenga posición sobre ti durante tres calles, así que tu rango tiene que ser lo bastante fuerte como para aguantar ese impuesto.
 
@@ -291,7 +291,7 @@ A. Subir o foldear — no hagas open-limp. Una mano lo bastante fuerte como para
 
 **Q. ¿Con qué amplitud debo abrir desde UTG vs desde el botón?**
 
-A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — con un núcleo de pares fuertes, AK/AQ y los mejores broadways del mismo palo, redondeado con pares medios y los mejores ases del mismo palo. Desde el botón, alrededor del ~43% es rentable porque la última acción garantizada compensa unas cartas más débiles. En 6-max, UTG se abre hasta un ~17%, jugándose como un lojack de full ring.
+A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — con un núcleo de pares fuertes, AK, AQs y los mejores broadways del mismo palo, redondeado con pares medios, AQo y los mejores ases del mismo palo. Desde el botón, alrededor del ~43% es rentable porque la última acción garantizada compensa unas cartas más débiles. En 6-max, UTG se abre hasta un ~17%, jugándose como un lojack de full ring.
 
 **Q. ¿Cómo afecta la posición a la frecuencia de c-bet?**
 

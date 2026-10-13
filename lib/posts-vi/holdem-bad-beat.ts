@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat là khi bạn đẩy tiền vào pot với lợi thế rất lớn, thường từ 80% trở lên, rồi thua vì đối thủ trúng lá bài may mắn — ở flop, turn hay river — sau khi tiền đã vào pot. Khác với cooler theo nghĩa chặt, lúc tiền vào pot bạn đang dẫn trước; chỉ là bộ bài phản bội bạn về sau. Cảm giác rất đau, nhưng nếu bad beat đến đều đặn thì thường là đối thủ đang bỏ tiền vào khi đã thua thế — đúng kiểu bàn bạn muốn ngồi.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -231,7 +231,7 @@ Bad beat là khoản thuế bạn trả cho việc chơi theo một lối chơi 
   </a>
   <a href="/vi/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Thứ hạng tay bài</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ai thắng khi showdown?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Phá thế hòa thế nào?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tay thắng thực sự được quyết định thế nào</div>
   </a>
 </div>

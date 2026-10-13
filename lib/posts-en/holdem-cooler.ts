@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could almost never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. In the strict sense used in this guide, you were behind when the money went in and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -66,7 +66,7 @@ The cleanest way to keep them straight:
 
 </div>
 
-Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A♥, get it all in preflop against 7♣7♦, and a **7** hits the board — your aces were a ~4‑to‑1 favorite (about 80%) and got outdrawn. **Cooler:** flip it around — you hold the **7♣7♦**, flop a set of sevens, and stack off against a set drawn from a bigger pair. You were the underdog from the flop on, and a flopped set is almost never folded. Same cards, opposite stories. Both are bad luck, not mistakes — what's worth checking is whether your play actually held up; if it didn't, [review your play](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") instead of shrugging it off.
+Here's the same players showing both, so it clicks. **[Bad beat](/en/blog/holdem-bad-beat):** you hold A♠A♥, get it all in preflop against 7♣7♦, and a **7** hits the board — your aces were a ~4‑to‑1 favorite (about 80%) and got outdrawn. **Cooler:** flip it around — you hold the **7♣7♦**, flop a set of sevens, and stack off against a set drawn from a bigger pair. You were the underdog from the flop on, and a flopped set is almost never folded. Same cards, opposite stories. Both are bad luck, not mistakes — what's worth checking is whether your play actually held up; if it didn't, [review your play](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") instead of shrugging it off.
 
 ---
 
@@ -120,7 +120,7 @@ Now the uncomfortable truth, and the reason this word matters for your improveme
 There's a clean litmus test, and honest players use it after every big loss:
 
 :::pull
-Would I make the exact same play again, with only the information I had at the time — ranges, price and stack depth, not just gut feel? If **no**, you misplayed — and that's a leak to fix, not bad luck. If **yes** — and it still holds up when you actually run those ranges and that price (plenty of wrong calls feel right every time) — it was bad luck: in the strict sense, a cooler if two strong hands collided and you were behind when the money went in, a bad beat if you were ahead and got outdrawn. A priced-in draw that missed is neither — just variance.
+Would I make the exact same play again, with only the information I had at the time — ranges, price and stack depth, not just gut feel? If **no**, I misplayed — and that's a leak to fix, not bad luck. If **yes** — and it still holds up when you actually run those ranges and that price (plenty of wrong calls feel right every time) — it was bad luck: in the strict sense, a cooler if two strong hands collided and you were behind when the money went in, a bad beat if you were ahead and got outdrawn. A priced-in draw that missed is neither — just variance.
 :::
 
 A true cooler means you played correctly with a strong hand and ran into a bigger one. The moment your "cooler" involves a call that doesn't hold up on ranges and price, a bluff you talked yourself into, or a fold you should have made, it stops being a cooler and becomes a **mistake wearing a disguise.** Being ruthlessly honest about which is which — instead of filing every loss under "unlucky" — is exactly what separates players who improve from players who stay [fish](/en/blog/holdem-fish) forever.
@@ -207,7 +207,7 @@ Even the best players lose about as many coolers as everyone else — give or ta
   </a>
   <a href="/en/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Who Wins at Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">How Ties Are Broken</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">How ties and second-best hands are decided</div>
   </a>
   <a href="/en/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

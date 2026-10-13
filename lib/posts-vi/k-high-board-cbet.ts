@@ -16,7 +16,7 @@ export const POST: Post = {
   tldr: "Trên K♠8♦3♣ sau khi button open và big blind call, big blind check 99,8% range — một range check còn thuần hơn cả mức 98,2% trên flop A-high. Hai nguyên nhân: big blind không có overpair nào ở đây, vì AA đã 3-bet từ preflop, và equity realization chia 80,7% so với 116,7%.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 phút",
@@ -145,7 +145,7 @@ Thứ còn lại là backdoor. **Backdoor flush** mà bảng đếm cần cả t
 
 **Gần như vậy ở cỡ bet nhỏ, nhưng "luôn luôn" là từ sai với một nhóm tay bài.** Big blind có 35,4% chưa thành bài — một phần ba range dễ fold nhất, dù không thể fold hết: trước cú bet một phần ba pot, một cách phòng thủ cân bằng giữ lại khoảng 75% range (tần suất phòng thủ tối thiểu — MDF), nên một số tay trong nhóm đó vẫn đi tiếp. (Phản ứng của big blind không có trong lần giải này.) Và **72,2% của toàn bộ range không có draw** — hãy để ý mẫu số: con số đó tính trên cả range, gồm cả top pair (12,7%), second pair (10,8%) và set, nên nó không phải là một phần của khối chưa thành bài. Nó có nghĩa là bức tranh khó thay đổi ở các vòng sau. Bet khoảng một phần ba pot với phần lớn range là cách chuẩn.
 
-Lời khuyên phổ biến là các tay A-high có giá trị showdown nên check back. Trên board này điều đó **chỉ đúng một nửa**. Ở cỡ nhỏ, AQ và AJ trộn bet đủ thường xuyên — chúng ép fold những tay như QJ, JT và T9, vốn có hai lá còn sống nhưng chưa có đôi, và một lá A ở vòng sau cho chúng đôi lớn nhất trên board. Nhưng check thì chúng cũng mất rất ít, nên đây là nơi phần lớn **check back range** hình thành. Cả "luôn bet" lẫn "luôn check back" đều không đúng; tần suất mới là câu trả lời.
+Lời khuyên phổ biến là các tay A-high có giá trị showdown nên check back. Trên board này điều đó **chỉ đúng một nửa**. Ở cỡ nhỏ, AQ và AJ trộn bet đủ thường xuyên — chúng ép fold những tay như QJ, JT và T9, vốn có lá còn sống nhưng chưa có đôi, và một lá A ở vòng sau cho chúng đôi lớn nhất trên board. Nhưng check thì chúng cũng mất rất ít, nên đây là nơi phần lớn **check back range** hình thành. Cả "luôn bet" lẫn "luôn check back" đều không đúng; tần suất mới là câu trả lời.
 
 :::note[⚠ Phần này là cách đọc thành phần range, không phải con số do solver tính ra. Spot mẫu chỉ giải sẵn hành động đầu tiên ở flop — của big blind — nên tần suất c-bet chính xác của button không có trên màn hình này. Hãy mở "Tự giải spot này" và chạy cây để lấy con số đó.]:::
 

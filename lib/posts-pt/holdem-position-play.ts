@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que, numa mesa full ring, o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -126,7 +126,7 @@ A distinção importa: o **big blind perde mais fichas brutas por 100 mãos** si
 
 Jogar bem o UTG é quase todo sobre contenção:
 
-- **Abra mais ou menos as ~13% melhores mãos** — o núcleo são pares fortes (TT+), AK/AQ e os melhores broadways suited (AJs, KQs), completados por pares médios e os melhores ases suited. Para a grade mão por mão exata, use a [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
+- **Abra mais ou menos as ~13% melhores mãos** — o núcleo são pares fortes (TT+), AK, AQs e os melhores broadways suited (AJs, KQs), completados por pares médios, AQo e os melhores ases suited. Para a grade mão por mão exata, use a [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
 - **Folde o que é bonito mas dominado.** KJo e QJo parecem jogáveis e sangram fichas em silêncio do UTG — quando acertam, alguém atrás costuma acertar mais forte.
 - **Espere jogar a mão OOP.** Quem pagar a sua abertura do UTG provavelmente tem posição sobre você por três streets, então seu range precisa ser forte o bastante para bancar esse imposto.
 
@@ -279,7 +279,7 @@ A. Aumente ou folde — não abra com limp. Uma mão forte o bastante para jogar
 
 **Q. Quão largo eu devo abrir do UTG vs do button?**
 
-A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — com o núcleo em pares fortes, AK/AQ e os melhores broadways suited, completado por pares médios e os melhores ases suited. Do button, em torno de ~43% é lucrativo porque a última ação garantida compensa cartas mais fracas. No 6-max, o UTG alarga para cerca de ~17%, jogando como um lojack de full ring.
+A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — com o núcleo em pares fortes, AK, AQs e os melhores broadways suited, completado por pares médios, AQo e os melhores ases suited. Do button, em torno de ~43% é lucrativo porque a última ação garantida compensa cartas mais fracas. No 6-max, o UTG alarga para cerca de ~17%, jogando como um lojack de full ring.
 
 **Q. Como a posição afeta a frequência de c-bet?**
 

@@ -16,7 +16,7 @@ export const POST: Post = {
   tldr: "Auf K♠8♦3♣ nach einem Open vom Button und einem Call des Big Blinds checkt der Big Blind 99,8% seiner Range – ein noch reinerer Range-Check als die 98,2% auf einem A-High-Flop. Zwei Dinge sind die Ursache: Der Big Blind hat hier kein Overpair, weil er AA preflop 3-bettet, und die Equity-Realisierung teilt sich 80,7% zu 116,7%.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -147,7 +147,7 @@ Der A-High-Flop lag bei 84,0% zu 113,1%. **Dieselbe trockene Textur, eine größ
 
 **Mit kleiner Size fast, aber „immer“ ist für eine Gruppe von Händen das falsche Wort.** Der Big Blind hat 35,4% ohne Made Hand – das Drittel der Range, das am ehesten foldet, auch wenn es nicht komplett folden kann: Gegen eine Bet von einem Drittel des Pots behält eine ausgeglichene Verteidigung etwa 75% der Range (Mindestverteidigungsfrequenz, MDF), also gehen einige dieser Hände trotzdem weiter. (Die Reaktion des Big Blinds liefert diese Berechnung nicht.) Und **72,2% der gesamten Range haben keinen Draw** – achte auf den Nenner: Diese Zahl zählt die ganze Range, Top Pair (12,7%), Second Pair (10,8%) und Sets eingeschlossen, ist also keine Teilmenge des Blocks ohne Made Hand. Sie bedeutet, dass sich das Bild auf späteren Streets wahrscheinlich nicht ändert. Mit dem größten Teil deiner Range etwa ein Drittel des Pots zu betten, ist der Standard.
 
-Der gängige Rat lautet, dass A-High-Hände mit Showdown Value zurückchecken sollten. Auf diesem Board ist das **halb richtig**. Mit kleiner Size mischen AQ und AJ oft genug Bets ein – sie bringen Hände wie QJ, JT und T9 zum Folden, die zwei lebende Karten, aber kein Paar halten, und ein Ass auf einer späteren Street gibt ihnen das beste Paar auf dem Board. Checken kostet sie aber auch wenig, deshalb besteht die **Check-back-Range** hier zu einem großen Teil aus ihnen. Weder „immer betten“ noch „immer zurückchecken“ ist richtig; die Frequenz ist die Antwort.
+Der gängige Rat lautet, dass A-High-Hände mit Showdown Value zurückchecken sollten. Auf diesem Board ist das **halb richtig**. Mit kleiner Size mischen AQ und AJ oft genug Bets ein – sie bringen Hände wie QJ, JT und T9 zum Folden, die lebende Karten, aber kein Paar halten, und ein Ass auf einer späteren Street gibt ihnen das beste Paar auf dem Board. Checken kostet sie aber auch wenig, deshalb besteht die **Check-back-Range** hier zu einem großen Teil aus ihnen. Weder „immer betten“ noch „immer zurückchecken“ ist richtig; die Frequenz ist die Antwort.
 
 :::note[⚠ Dieser Abschnitt interpretiert die Range-Zusammensetzung; er zeigt keine vom Solver berechnete Frequenz. Der Lernspot berechnet nur die erste Aktion am Flop vor – die des Big Blinds –, deshalb steht die exakte C-Bet-Frequenz des Buttons nicht auf diesem Bildschirm. Öffne „Diesen Spot selbst berechnen“ und lass den Spielbaum durchrechnen, um sie zu bekommen.]:::
 

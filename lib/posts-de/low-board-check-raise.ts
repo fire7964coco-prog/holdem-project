@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf dem niedrigen Rainbow-Flop 6♠5♥2♦ checkt der Big Blind 96,8% und spielt nur 3,2% an – obwohl seine Equity von 48,3% die zweithöchste der sieben Spots ist, in denen er verteidigt. Nur eine Hand macht hier eine Straße, 4-3, und keine der beiden Ranges hält sie. Niemand hat die stärksten Hände für sich, also spielt niemand out of position an. Die Action kommt später: Rechnet man denselben Spielbaum separat über den Flop hinaus, check-raist der Big Blind eine Bet von 1,8bb in 14,9% der Fälle, zum größten Teil Draws.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -202,7 +202,7 @@ Wir haben alle 487 Zeilen der Detailtabelle gelesen, nicht nur den ersten Bildsc
 Lies die zweite Spalte von oben nach unten, und das Muster ist nicht zu übersehen. **Unterhalb von Zwei Paaren hält jede dieser Hände an der Spitze der Liste einen Straßendraw** – die beiden, die zusätzlich ein Paar haben (64s und 54s), raisen wegen des Draws, nicht wegen des Paares:
 
 - **98s** hält 5-6-8-9 und braucht die ==7==.
-- **87s** hält 5-6-7-8 und nimmt ==die 4 oder die 9== – der einzige beidseitige Straßendraw (OESD) **in dieser Range**. ⚠ Nicht der einzige, den das Board zulässt: **74 macht 4-5-6-7** und wartet auf die 3 oder die 8, ein OESD wie aus dem Lehrbuch, und 84 ist ein doppelter Gutshot mit denselben acht Outs. Die 0,8% in der Draw-Tabelle bedeuten, dass die Ranges dieses Poker-Solvers kein 74 suited enthalten – nicht, dass das Board nur einen OESD hat.
+- **87s** hält 5-6-7-8 und nimmt ==die 4 oder die 9== – der einzige beidseitige Straßendraw (OESD) **in dieser Range**. ⚠ Nicht der einzige, den das Board zulässt: **74 macht 4-5-6-7** und wartet auf die 3 oder die 8, ein OESD wie aus dem Lehrbuch, und 84 ist ein doppelter Gutshot mit eigenen acht Outs (den Dreien und Siebenen). Die 0,8% in der Draw-Tabelle bedeuten, dass die Ranges dieses Poker-Solvers kein 74 suited enthalten – nicht, dass das Board nur einen OESD hat.
 - **J4s, Q4s, 54s und 64s** halten alle 2-4-5-6 und brauchen die ==3==.
 
 **Keine einzige Hand an der Spitze dieser Liste wurde wegen ihrer hohen Karte ausgewählt.**

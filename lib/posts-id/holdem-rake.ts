@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -74,7 +74,7 @@ Beberapa aturan mengatur bagaimana pot rake sebenarnya disaring:
 
 Inilah bagian yang mengubah cara saya memandang permainan. Persentasenya terdengar mungil — 5%, cap beberapa dolar — tapi Anda membayarnya pada nyaris setiap pot yang Anda menangkan, selama berjam-jam.
 
-**Sebuah live game $1/$2.** Dengan rake 10% cap $5 dan kira-kira 30 tangan dibagikan per jam, sebagian besar pot yang diperebutkan mengenai atau mendekati cap. Satu meja sibuk saja bisa membayar **$100+ per jam** ke dalam drop di antara semua pemain. Uang itu keluar langsung dari kemenangan kolektif — itulah alasan sebuah meja penuh pemain yang kurang lebih setara perlahan menguras chip ke house.
+**Sebuah live game $1/$2.** Dengan rake 10% cap $5 dan kira-kira 30 tangan dibagikan per jam, banyak pot yang diperebutkan mencapai atau mendekati cap. Satu meja sibuk saja bisa membayar **$100+ per jam** ke dalam drop di antara semua pemain. Uang itu keluar langsung dari kemenangan kolektif — itulah alasan sebuah meja penuh pemain yang kurang lebih setara perlahan menguras chip ke house.
 
 **"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Berikut contoh terhitung di NL50 online (ilustratif — angka persisnya bergerak mengikuti berapa banyak pot yang Anda perebutkan dan bagaimana room menerapkan cap-nya, bukan berapa banyak hand yang Anda mainkan). Dari dua cap di bawah, satu ada di dalam rentang online yang biasa dan satu di atasnya: $2 di dalam kisaran $1–$3 yang dipasang kebanyakan room, $4 di atasnya.
 
@@ -154,7 +154,7 @@ A. Biasanya tidak. Sebagian besar room mengikuti "no flop, no drop" — jika tan
 
 **Q. Berapa rake yang diambil di live game $1/$2?**
 
-A. Lazimnya 10% dari pot cap sekitar $5. Sebagian besar pot yang diperebutkan mencapai cap, jadi satu meja sibuk saja bisa men-drop $100 atau lebih per jam secara kolektif. Biaya itulah kenapa sebuah meja berisi pemain yang setara perlahan kehilangan chip ke house dari waktu ke waktu.
+A. Lazimnya 10% dari pot cap sekitar $5. Banyak pot yang diperebutkan mencapai cap, jadi satu meja sibuk saja bisa men-drop $100 atau lebih per jam secara kolektif. Biaya itulah kenapa sebuah meja berisi pemain yang setara perlahan kehilangan chip ke house dari waktu ke waktu.
 
 **Q. Apa itu rakeback?**
 

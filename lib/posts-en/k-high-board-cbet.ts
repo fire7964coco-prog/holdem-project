@@ -49,7 +49,7 @@ export const POST: Post = {
   tldr: "On K♠8♦3♣ after a button open and a big blind call, the big blind checks 99.8% of its range — an even purer range check than the 98.2% on an ace-high flop. Two things cause it: the big blind holds no overpair here, because AA three-bets preflop, and equity realization splits 80.7% against 116.7%.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-en.webp",
@@ -185,7 +185,7 @@ What is left is backdoors. The **backdoor flush** the table counts needs the tur
 
 **Close to it at a small size, but "always" is the wrong word for one group of hands.** The big blind has 35.4% with no made hand — the third of the range most likely to fold, though not all of it can: against a third-pot bet a balanced defense keeps about 75% of the range (MDF), so some of those hands still continue. (The big blind's response is not in this solve.) And **72.2% of the whole range has no draw** — note the denominator: that figure counts the entire range, top pair (12.7%), second pair (10.8%) and sets included, so it is not a subset of the no-made-hand block. It means the picture is unlikely to change on later streets. Betting about a third of the pot with most of your range is the standard.
 
-The common advice is that ace-high hands with showdown value should check back. On this board that is **half right**. At a small size, AQ and AJ mix in bets often enough — they fold out hands like QJ, JT and T9 that hold two live cards but no pair, and an ace on a later street gives them the best pair on the board. But they also cost little by checking, so this is where much of the **check-back range** comes from. Neither "always bet" nor "always check back" is correct; the frequency is the answer.
+The common advice is that ace-high hands with showdown value should check back. On this board that is **half right**. At a small size, AQ and AJ mix in bets often enough — they fold out hands like QJ, JT and T9 that hold live cards but no pair, and an ace on a later street gives them the best pair on the board. But they also cost little by checking, so this is where much of the **check-back range** comes from. Neither "always bet" nor "always check back" is correct; the frequency is the answer.
 
 :::note[⚠ This section is a reading of the range composition, not a solved number. The study spot pre-solves only the flop's first action — the big blind's — so the button's exact c-bet frequency is not on this screen. Open "Solve this spot yourself" and run the tree to get it.]:::
 

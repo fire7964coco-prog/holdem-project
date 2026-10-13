@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Đây là bảng giải nghĩa những từ poker tiếng Anh thật sự xuất hiện trong một ván Texas Hold'em, xếp theo cách bạn gặp chúng: hành động bet, vị trí, bài và board, kiểu người chơi, tiền và tình huống ở bàn. Hãy bắt đầu từ các cặp dễ nhầm nhất (check với call, set với trips, cooler với bad beat), rồi lướt theo từng nhóm. Từ nào có bài hướng dẫn sâu hơn sẽ dẫn thẳng tới bài đó.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -36,7 +36,7 @@ Poker có vốn từ riêng, và biết nó làm được hai việc: nó giúp 
 
 ## Cặp từ nào trong poker dễ nhầm nhất? Check/call, set/trips, cooler/bad beat
 
-Nếu bạn chỉ gỡ rối được một tá từ, hãy chọn những cặp này — chúng gây nhiều nhầm lẫn (và nhiều sai lầm tốn kém) nhất ở bàn:
+Nếu bạn chỉ gỡ rối được tám chỗ nhầm lẫn, hãy chọn những cặp này — chúng gây nhiều nhầm lẫn (và nhiều sai lầm tốn kém) nhất ở bàn:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

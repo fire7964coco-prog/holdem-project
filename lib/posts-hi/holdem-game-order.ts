@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम का एक हैंड ऐसे चलता है: blind लगाएँ → 2 hole कार्ड बाँटें → preflop → flop (3 कार्ड) → turn (1 कार्ड) → river (1 कार्ड) → showdown, कुल 4 betting राउंड के साथ।",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -109,7 +109,7 @@ Flop की betting राउंड के बाद एक community कार�
 - प्रतिद्वंद्वी की preflop और flop की चालें उसकी range के बारे में क्या बताती हैं?
 - क्या यह हैंड river तक ले जाने लायक है?
 
-==r:अगर आप turn पर passive होकर check करें और फिर river पर अचानक बड़ा bet करें, तो तेज़ प्रतिद्वंद्वी कमज़ोरी भाँप लेता है।== ==g:**मज़बूत हैंड के साथ turn पर bet करके pot बढ़ाएँ**== जब तक प्रतिद्वंद्वी call करने को तैयार है।
+==r:अगर आप मज़बूत हैंड के साथ turn पर passive होकर check करें और बड़ा bet river के लिए रोक लें, तो आपने value की पूरी एक street गँवा दी।== ==g:**मज़बूत हैंड के साथ turn पर bet करके pot बढ़ाएँ**== जब तक प्रतिद्वंद्वी call करने को तैयार है।
 
 ---
 

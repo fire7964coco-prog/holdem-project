@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler là ván bạn thua một pot lớn với tay bài rất mạnh mà gần như không bao giờ fold đúng được — như đôi K gặp đôi A, hay set thua set lớn hơn. Theo nghĩa chặt dùng trong bài này, bạn đã bị dẫn ngay lúc tiền vào pot và không có lá bài may mắn nào lật ngược thế cờ: bạn chơi đúng mà vẫn thua. Đó là kiểu thảm họa trung thực nhất của poker.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -67,7 +67,7 @@ Cách sạch nhất để không lẫn hai thứ:
 
 </div>
 
-Cùng hai người chơi đó cho thấy cả hai, để bạn thấy rõ. **Bad beat:** bạn cầm A♠A♥, all-in preflop trước 7♣7♦, và một lá **7** xuất hiện trên board — đôi Át của bạn là favorite khoảng 4:1 (khoảng 80%) và bị thua ngược. **Cooler:** đảo lại — bạn cầm **7♣7♦**, flop set 7, và dồn hết stack trước một set từ đôi lớn hơn. Bạn là underdog (bên yếu thế) từ flop trở đi, và một set đã flop thì gần như không bao giờ fold. Cùng những lá bài, hai câu chuyện ngược nhau. Cả hai đều là xui, không phải sai lầm — thứ đáng kiểm tra là nước đi của bạn có thật sự đứng vững không; nếu không, hãy [xem lại cách bạn chơi](/vi/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") thay vì nhún vai cho qua.
+Cùng hai người chơi đó cho thấy cả hai, để bạn thấy rõ. **[Bad beat](/vi/blog/holdem-bad-beat):** bạn cầm A♠A♥, all-in preflop trước 7♣7♦, và một lá **7** xuất hiện trên board — đôi Át của bạn là favorite khoảng 4:1 (khoảng 80%) và bị thua ngược. **Cooler:** đảo lại — bạn cầm **7♣7♦**, flop set 7, và dồn hết stack trước một set từ đôi lớn hơn. Bạn là underdog (bên yếu thế) từ flop trở đi, và một set đã flop thì gần như không bao giờ fold. Cùng những lá bài, hai câu chuyện ngược nhau. Cả hai đều là xui, không phải sai lầm — thứ đáng kiểm tra là nước đi của bạn có thật sự đứng vững không; nếu không, hãy [xem lại cách bạn chơi](/vi/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") thay vì nhún vai cho qua.
 
 ---
 
@@ -121,7 +121,7 @@ Giờ là sự thật khó chịu, và là lý do từ này quan trọng cho s�
 Có một phép thử sạch sẽ, và người chơi thật lòng dùng nó sau mỗi ván thua lớn:
 
 :::pull
-Tôi có chơi lại đúng nước ấy không, chỉ với thông tin tôi có lúc đó — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu **không**, bạn đã chơi sai — và đó là một lỗ hổng để sửa, không phải xui. Nếu **có** — và nó vẫn đứng vững khi bạn thật sự chạy lại những range và cái giá ấy (rất nhiều cú call sai luôn có cảm giác đúng) — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào pot, là bad beat nếu bạn đang dẫn và bị thua ngược. Một draw đã có giá đúng mà trượt thì không phải cả hai — chỉ là variance.
+Tôi có chơi lại đúng nước ấy không, chỉ với thông tin tôi có lúc đó — range, giá phải trả và độ sâu stack, chứ không chỉ cảm giác? Nếu **không**, tôi đã chơi sai — và đó là một lỗ hổng để sửa, không phải xui. Nếu **có** — và nó vẫn đứng vững khi bạn thật sự chạy lại những range và cái giá ấy (rất nhiều cú call sai luôn có cảm giác đúng) — thì đó là xui: theo nghĩa chặt, là cooler nếu hai tay mạnh đụng nhau và bạn bị dẫn lúc tiền vào pot, là bad beat nếu bạn đang dẫn và bị thua ngược. Một draw đã có giá đúng mà trượt thì không phải cả hai — chỉ là variance.
 :::
 
 Cooler thật nghĩa là bạn chơi đúng với tay mạnh và gặp tay mạnh hơn. Khoảnh khắc "cooler" của bạn dính tới một cú call không đứng vững trên range và giá, một cú bluff bạn tự thuyết phục mình, hay một cú fold lẽ ra phải làm, nó thôi là cooler và trở thành **sai lầm đeo mặt nạ.** Thật lòng đến tàn nhẫn về việc cái nào là cái nào — thay vì xếp mọi ván thua vào ngăn "xui" — chính là thứ tách người chơi tiến bộ khỏi người mãi mãi là [fish](/vi/blog/holdem-fish).
@@ -208,7 +208,7 @@ Ngay cả những người chơi giỏi nhất cũng thua số cooler xấp xỉ
   </a>
   <a href="/vi/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Thứ hạng tay bài</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ai thắng khi showdown?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Phá thế hòa thế nào?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cách phân định hòa bài và tay mạnh nhì</div>
   </a>
   <a href="/vi/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

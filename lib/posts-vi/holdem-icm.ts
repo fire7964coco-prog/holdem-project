@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model — mô hình chip độc lập) đổi stack chip của bạn trong giải đấu thành giá trị tiền thưởng thật, dựa trên cơ cấu trả thưởng và stack của mọi người. Vì chỉ có một giải nhất, gấp đôi chip không bao giờ gấp đôi tiền — nên stack của chip leader đáng ít hơn tỷ lệ chip của nó, còn short stack đáng nhiều hơn. Khoảng cách đó là lý do bạn fold ở bubble những tay bài mà trong cash game bạn call dễ dàng.",
   category: "tournament",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 phút",
@@ -173,7 +173,7 @@ Một lỗ hổng phổ biến là áp dụng ICM quá đà: fold dần xuống 
 **ICM là mô hình đơn giản tốt nhất chúng ta có, nhưng nó là một xấp xỉ — nó giả định mọi người chơi giỏi như nhau và bỏ qua gần như mọi thứ trừ cỡ stack.** Hãy thành thật về những gì nó bỏ sót:
 
 - **Kỹ năng.** ICM coi một nhà vô địch thế giới và một người lần đầu chơi có cùng stack là ngang nhau. Chip của người chơi giỏi hơn đáng giá hơn mô hình nói.
-- **Vị trí.** Một stack 3 big blind ở button (vẫn tự do chọn thời điểm và open-shove với trọn fold equity từ ghế tốt nhất) đáng hơn cùng stack đó ở big blind (một phần ba đã bị đặt vào, bị ép all-in trong một hai ván tới). ICM không nhìn thấy ghế ngồi.
+- **Vị trí.** Một stack 3 big blind ở button (vẫn tự do chọn thời điểm và open-shove với trọn fold equity từ ghế tốt nhất) đáng hơn cùng stack đó ở big blind (một phần ba đã bị đặt vào, và blind của vòng orbit tiếp theo sẽ lấy đi phần lớn chỗ còn lại). ICM không nhìn thấy ghế ngồi.
 - **Blind và diễn biến tương lai.** ICM đóng băng giải đấu ở đúng khoảnh khắc này; nó bỏ qua blind tăng, ante, và vài vòng (orbit — mỗi người đặt blind một lần) tiếp theo thực sự sẽ diễn ra thế nào.
 
 Thậm chí có bằng chứng thực nghiệm cho điểm mù của nó: một nghiên cứu lớn năm 2025 đối chiếu ICM với kết quả giải đấu thật cho thấy nó có xu hướng ==đánh giá quá thấp big stack và đánh giá quá cao short stack==, một phần vì chip leader giỏi có thể tận dụng áp lực ICM để thắng *nhiều hơn* mô hình thô dự đoán. Các solver nâng cao thêm một hiệu chỉnh "future game" chính vì lý do này. Không điều nào trong số đó khiến ICM sai — nó khiến ICM trở thành một xấp xỉ ban đầu vững chắc mà bạn điều chỉnh theo kỹ năng và vị trí, chứ không phải một định luật vật lý.

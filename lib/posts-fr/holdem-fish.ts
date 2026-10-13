@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au poker, un « fish » (poisson) désigne un joueur faible et perdant, celui sur qui les bons joueurs (les « sharks », requins) gagnent leur argent. Un fish joue trop de mains, suit trop souvent et n'arrive pas à se coucher, et la phrase célèbre prévient : si tu ne repères pas le fish à ta table, c'est que c'est toi. C'est la lecture la plus importante du jeu : trouve le fish, ou deviens-le.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -94,7 +94,7 @@ Aucun signe n'est une preuve à lui seul : même les bons joueurs limpent de tem
 
 </div>
 
-Trois distinctions que les concurrents mélangent sans cesse, et qui méritent d'être justes :
+Trois distinctions que les autres guides mélangent sans cesse, et qui méritent d'être justes :
 
 - **Fish ≠ whale.** Une whale est un *sous-ensemble* des fish : un joueur qui perd des sommes **énormes**, en général fortuné et qui joue large à grosses limites. Toutes les whales sont des fish ; tous les fish ne sont pas des whales. Une whale dans la partie, c'est la raison pour laquelle les sharks débarquent.
 - **Fish ≠ donkey.** Presque synonymes, mais « donkey » insiste sur les *mauvaises décisions* et il est plus dur ; « fish » insiste sur *l'inexpérience et les pertes.* Traiter quelqu'un de donk, c'est plus insultant.

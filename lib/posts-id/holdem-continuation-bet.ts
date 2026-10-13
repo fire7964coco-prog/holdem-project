@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — di atas 97% pada ketiga board yang kami solve), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
   masterUpdated: "2026-10-06",
@@ -181,7 +181,7 @@ Pergeseran pola pikir yang membuat Anda menang: **check bukan menyerah.** Pemain
 
 Dua spot dari sesi yang sama menunjukkan kedua sisi keputusan.
 
-**Spot 1 — c-bet buku teks.** Saya raise ==A♣K♦== dan big blind meng-call. Flop: ==K♠ 7♦ 2♣.== Itu board tinggi, kering, tak nyambung yang milik range saya — dan saya mem-flop **top pair, top kicker**: K♦ saya berpasangan dengan K♠, dengan ace sebagai kicker terbaik yang mungkin (best five = K♦ K♠ A♣ 7♦ 2♣). Saya bertaruh **sepertiga pot** sebagai range bet: itu membebani semua tangan mereka yang meleset dan menahan king dan pair yang lebih lemah. C-bet mudah dan menguntungkan.
+**Spot 1 — c-bet buku teks.** Saya raise ==A♣K♦== dan big blind meng-call. Flop: ==K♠ 7♦ 2♣.== Itu board tinggi, kering, tak nyambung yang milik range saya — dan saya mem-flop **top pair, top kicker**: K♦ saya berpasangan dengan K♠, dengan ace sebagai kicker terbaik yang mungkin (best five = K♦ K♠ A♣ 7♦ 2♣). Saya bertaruh **sepertiga pot** sebagai range bet: itu menekan tangan mereka yang meleset dan menahan king dan pair yang lebih lemah. C-bet mudah dan menguntungkan.
 
 **Spot 2 — check buku teks.** Sesi yang sama, saya raise ==A♥Q♥== dan big blind meng-call. Flop: ==7♠ 6♠ 5♦.== Board ini menghancurkan tepat tangan yang dia call — suited connector, small pair, dan straight — sementara saya cuma ace-high tanpa pair dan tanpa draw (tak ada heart di board, jadi bahkan bukan backdoor flush). Dua tahun sebelumnya saya akan "melanjutkan" karena kebiasaan dan kena raise. Kini saya **check dan menyerah.** Kalau turn aman datang dan saya mendapat equity, delayed c-bet tersedia; kalau tidak, saya kehilangan seminimal mungkin.
 

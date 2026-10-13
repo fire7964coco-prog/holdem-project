@@ -378,7 +378,7 @@ Classement de base des mains, de la plus forte à la plus faible (avec la fréqu
 | 6 | Quinte | 4,6 % — vulnérable face aux couleurs et aux fulls |
 | 7 | Brelan | 4,8 % — bonne main, mais le board compte |
 | 8 | Double paire | 23,5 % — la main « forte » la plus fréquente |
-| 9 | Paire | 43,8 % — la main la plus fréquente à l'abattage |
+| 9 | Paire | 43,8 % — la main finale la plus courante |
 | 10 | Carte haute (hauteur) | 17,4 % — la main la plus faible à l'abattage ; ne gagne en général que si tous les autres ont raté aussi |
 
 Si deux joueurs ont le même type de main, compare les cartes les plus hautes qui comptent — vois les [règles du kicker et du départage](/fr/blog/holdem-tiebreak-rules). Si les cinq meilleures cartes sont exactement les mêmes, le pot est [partagé](/fr/blog/holdem-split-pot-rules).

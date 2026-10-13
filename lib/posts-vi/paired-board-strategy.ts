@@ -17,7 +17,7 @@ export const POST: Post = {
   tldr: "Trên flop có đôi thấp 6♣6♦3♥, big blind check 97,0%. Điều lạ là nó cầm nhiều trips hơn button: 26 combo 6-x so với 20. Nó vẫn check, vì chỉ 18,4% range có gì đó hơn đôi trên board, còn 81,6% còn lại là cuộc đấu bài cao mà button thắng. Thứ thật sự lên giá là bất kỳ pocket pair nào trên 6 — TT ở đây có 76,0% equity.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -128,7 +128,7 @@ Lead vào thế đó thì hỏng từ cả hai đầu: có lá 6 thì bạn ch�
 | EV (bb) | 2,17 | 3,33 |
 | **EQR (equity realization)** | **83,7%** | **114,5%** |
 
-Phần pot của big blind là ==5,5 × 47,2% = 2,60bb==, và nó ghi được 2,17bb — ==2,17 ÷ 2,60 ≈ 83,7%==. Đó là equity realization (EQR — phần equity bạn thực sự thu về). Phần của button là 2,90bb so với EV (giá trị kỳ vọng) 3,33bb, nên nó thu về **114,5%**, nhiều hơn phần mà equity của nó đáng được hưởng. Ở đây big blind là out of position (OOP — không có vị trí), button là in position (IP — có vị trí).
+Phần pot của big blind là ==5,5 × 47,2% = 2,60bb==, và nó ghi được 2,17bb — ==2,17 ÷ 2,60 ≈ 83,5%==, mà solver, vốn tính từ các giá trị chưa làm tròn, hiển thị là **83,7%**. Đó là equity realization (EQR — phần equity bạn thực sự thu về). Phần của button là 2,90bb so với EV (giá trị kỳ vọng) 3,33bb, nên nó thu về **114,5%** trên màn hình (khoảng 114,8% nếu tính từ các số đã làm tròn), nhiều hơn phần mà equity của nó đáng được hưởng. Ở đây big blind là out of position (OOP — không có vị trí), button là in position (IP — có vị trí).
 
 Khoảng cách **30,8 điểm** gần như đúng bằng 29,1 điểm của [board A-high khô](/vi/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-vi.webp"). **Board có đôi chơi giống một board khô** — bốn phần năm của mỗi range là cùng một đôi 6 kèm một lá cao khác nhau, nên ván bài trôi lặng lẽ, và người hành động sau được thấy lá cao nào xuất hiện rồi mới chọn. Lợi thế đó là toàn bộ khoảng cách.
 

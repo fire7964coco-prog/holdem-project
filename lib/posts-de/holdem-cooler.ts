@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du so gut wie nie korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Im engeren Sinn, den dieser Guide verwendet, lagst du schon beim Reingehen hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -71,7 +71,7 @@ Der sauberste Weg, sie auseinanderzuhalten:
 
 </div>
 
-Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4:1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Siebenen und stackst gegen ein Set aus einem größeren Paar ab. Ab dem Flop warst du der Underdog, und ein geflopptes Set foldet man so gut wie nie. Dieselben Karten, entgegengesetzte Geschichten. Beides ist Pech, kein Fehler – prüfenswert ist, ob dein Play wirklich standhält; tut es das nicht, solltest du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), statt es einfach abzuschütteln.
+Hier zeigen dieselben Spieler beides, damit es klick macht. **[Bad Beat](/de/blog/holdem-bad-beat):** Du hältst A♠A♥, gehst preflop all-in gegen 7♣7♦, und eine **7** trifft das Board – deine Asse waren ein ~4:1-Favorit (etwa 80%) und wurden ausgedrawt. **Cooler:** dreh es um – du hältst die **7♣7♦**, floppst ein Set Siebenen und stackst gegen ein Set aus einem größeren Paar ab. Ab dem Flop warst du der Underdog, und ein geflopptes Set foldet man so gut wie nie. Dieselben Karten, entgegengesetzte Geschichten. Beides ist Pech, kein Fehler – prüfenswert ist, ob dein Play wirklich standhält; tut es das nicht, solltest du [dein Play überprüfen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), statt es einfach abzuschütteln.
 
 ---
 
@@ -137,7 +137,7 @@ Jetzt die unbequeme Wahrheit und der Grund, warum dieses Wort für deine Verbess
 Es gibt einen sauberen Lackmustest, und ehrliche Spieler nutzen ihn nach jedem großen Verlust:
 
 :::pull
-Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn **nein**, hast du falsch gespielt – und das ist ein Leak zum Fixen, kein Pech. Wenn **ja** – und es hält auch stand, wenn du diese Ranges und diesen Preis tatsächlich durchrechnest (viele falsche Calls fühlen sich jedes Mal richtig an) –, war es Pech: im engeren Sinn ein Cooler, wenn zwei starke Hände kollidiert sind und du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest. Ein zum passenden Preis gecallter Draw, der nicht ankommt, ist keins von beiden – einfach Varianz.
+Würde ich genau dasselbe Play noch einmal machen, mit nur den Informationen, die ich damals hatte – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn **nein**, habe ich falsch gespielt – und das ist ein Leak zum Fixen, kein Pech. Wenn **ja** – und es hält auch stand, wenn du diese Ranges und diesen Preis tatsächlich durchrechnest (viele falsche Calls fühlen sich jedes Mal richtig an) –, war es Pech: im engeren Sinn ein Cooler, wenn zwei starke Hände kollidiert sind und du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest. Ein zum passenden Preis gecallter Draw, der nicht ankommt, ist keins von beiden – einfach Varianz.
 :::
 
 Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast und auf eine größere getroffen bist. In dem Moment, in dem dein „Cooler“ einen Call beinhaltet, der bei Ranges und Preis nicht standhält, einen Bluff, in den du dich hineingeredet hast, oder einen Fold, den du hättest machen sollen, hört er auf, ein Cooler zu sein, und wird zu einem **Fehler in Verkleidung.** Gnadenlos ehrlich darüber zu sein, was was ist – statt jeden Verlust unter „Pech“ abzulegen – ist genau das, was Spieler, die sich verbessern, von Spielern trennt, die für immer [Fish](/de/blog/holdem-fish) bleiben.
@@ -227,7 +227,7 @@ Auch die besten Spieler verlieren etwa so viele Cooler wie alle anderen – abge
   </a>
   <a href="/de/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand-Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wer gewinnt am Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">So werden Ties entschieden</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Wie Gleichstände und zweitbeste Hände entschieden werden</div>
   </a>
   <a href="/de/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

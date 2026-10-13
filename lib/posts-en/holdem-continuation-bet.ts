@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -180,7 +180,7 @@ The mindset shift that makes you a winner: **checking is not surrender.** Good p
 
 Two spots from the same session show both sides of the decision.
 
-**Spot 1 — a textbook c-bet.** I raise ==A♣K♦== and the big blind calls. Flop: ==K♠ 7♦ 2♣.== That's a high, dry, disconnected board that belongs to my range — and I've flopped **top pair, top kicker**: my K♦ pairs the K♠, with the ace as the best possible kicker (best five = K♦ K♠ A♣ 7♦ 2♣). I bet **one-third pot** as a range bet: it charges all his missed hands and keeps worse kings and pairs in. Easy, profitable c-bet.
+**Spot 1 — a textbook c-bet.** I raise ==A♣K♦== and the big blind calls. Flop: ==K♠ 7♦ 2♣.== That's a high, dry, disconnected board that belongs to my range — and I've flopped **top pair, top kicker**: my K♦ pairs the K♠, with the ace as the best possible kicker (best five = K♦ K♠ A♣ 7♦ 2♣). I bet **one-third pot** as a range bet: it pressures his missed hands and keeps worse kings and pairs in. Easy, profitable c-bet.
 
 **Spot 2 — a textbook check.** Same session, I raise ==A♥Q♥== and the big blind calls. Flop: ==7♠ 6♠ 5♦.== This board crushes the exact hands he called with — suited connectors, small pairs, and straights — while I have only ace-high with no pair and no draw (no hearts on the board, so not even a backdoor flush). Two years earlier I'd have "continued" out of habit and gotten raised. Now I **check and give up.** If a safe turn comes and I pick up equity, a delayed c-bet is available; if not, I've lost the minimum.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa, di meja full ring, UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -126,7 +126,7 @@ Perbedaan ini penting: **big blind kehilangan chip mentah terbanyak per 100 tang
 
 Bermain UTG dengan baik sebagian besar soal menahan diri:
 
-- **Buka kira-kira top ~13% tangan** — intinya adalah pair kuat (TT+), AK/AQ, dan suited broadway terbaik (AJs, KQs), dilengkapi pair menengah dan suited ace teratas yang Anda tambahkan seiring melonggar. Untuk grid tangan demi tangan yang pasti, gunakan [starting hands chart](/id/blog/holdem-starting-hands-chart).
+- **Buka kira-kira top ~13% tangan** — intinya adalah pair kuat (TT+), AK, AQs, dan suited broadway terbaik (AJs, KQs), dilengkapi pair menengah, AQo, dan suited ace teratas yang Anda tambahkan seiring melonggar. Untuk grid tangan demi tangan yang pasti, gunakan [starting hands chart](/id/blog/holdem-starting-hands-chart).
 - **Fold tangan yang kelihatan bagus tapi terdominasi.** KJo dan QJo terlihat bisa dimainkan dan diam-diam menguras chip dari UTG — ketika mereka mengena, seseorang di belakang sering mengena lebih besar.
 - **Harapkan bermain OOP.** Siapa pun yang call open UTG Anda kemungkinan punya posisi atas Anda selama tiga street, jadi range Anda harus cukup kuat untuk menanggung pajak itu.
 
@@ -279,7 +279,7 @@ A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan 
 
 **Q. Seberapa lebar saya harus open dari UTG vs button?**
 
-A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — intinya pair kuat, AK/AQ, dan suited broadway terbaik, dilengkapi pair menengah dan suited ace teratas. Dari button, sekitar ~43% profit karena aksi terakhir yang dijamin mengompensasi kartu lebih lemah. Di 6-max, UTG melebar ke sekitar ~17%, bermain seperti lojack full-ring.
+A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — intinya pair kuat, AK, AQs, dan suited broadway terbaik, dilengkapi pair menengah, AQo, dan suited ace teratas. Dari button, sekitar ~43% profit karena aksi terakhir yang dijamin mengompensasi kartu lebih lemah. Di 6-max, UTG melebar ke sekitar ~17%, bermain seperti lojack full-ring.
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 

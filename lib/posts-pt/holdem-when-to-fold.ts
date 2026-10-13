@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas no longo prazo. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga depois dele as mãos que erraram diante de uma aposta numa mesa que favorece o adversário, além dos projetos fracos que não batem suas pot odds, e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -110,7 +110,7 @@ Foldar lixo é fácil. Foldar uma *boa* mão — top pair, um overpair, até um 
 | **Top pair, kicker fraco** | Enfrentando apostas grandes no turn + river | Você vence blefes e pares piores — mas o value range deles te supera no kicker |
 | **Overpair (JJ/QQ)** | Um jogador passivo dá raise numa mesa coordenada | Passivos dão raise nos nuts, não em ar — você está atrás, com pouquíssimos outs |
 | **Top pair top kicker** | A mesa fecha quatro para flush ou sequência | Seu único par não vence o flush/sequência que ele representa |
-| **Um set** | Raise grande em mesa monotone ou de quatro em sequência — **no river** | Set-over-set é um cooler; um flush fechado não é. No *flop* esse mesmo set ainda fecha o full em ~34% das vezes até o river contra um flush feito, e leva um stack quando fecha — pague |
+| **Um set** | Raise grande em mesa monotone ou de quatro em sequência — **no river** | Set-over-set é um cooler; um flush fechado não é. No *flop* esse mesmo set ainda fecha full house ou quadra em ~34% das vezes até o river contra um flush feito, e leva um stack quando fecha — pague |
 | **Second pair** | Pagando três streets "pra mantê-lo honesto" | Você está pagando valor três vezes pra pegar um blefe |
 
 </div>

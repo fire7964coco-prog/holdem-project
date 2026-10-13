@@ -480,7 +480,9 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 🪶 EN equity 카드 «Why realization lives and dies on position»(전 로케일 동형) — 본문 충돌은 id뿐이라 이번엔 id만. EN 손질 때 «Why position shapes how much equity you realize»류로 형제 같이.
 - 🪶 MA-353 통지 ③(선택 · UNV): zh positions «满员的 full ring 桌» → «满桌（full ring）» · reading «many rivers beat it» → «can beat it»(EN-먼저) · ja drawing L63 «およそ».
 
-### 2-AE. fr 레인 집필 중 발견 — EN-먼저 후보 (fr 헤드 판정 H-9·H-24 · 2026-10-07 등재 · 🪶 자동 착수 금지)
+### 2-AE. fr 레인 집필 중 발견 — EN-먼저 후보 (fr 헤드 판정 H-9·H-24 · 2026-10-07 등재) · ✅ 이행 10-13 (7) 회차 B 10 · MB-302
+
+> ✅ **10-13 (7) 판정·이행**: EN 16자리 → 형제 로케일 전파(대응 문장 있는 자리만 · fr·vi 레인이 이미 바르게 쓴 자리 유지) + ko 3(game-order LEGACY · k-high · paired). 유지 2 = **AE-5**(원자료 A-K-2 100% · Q-T-7 99.2% · 8-5-2 98% → «세 보드 모두 97% 넘게» 참) · **AE-15**(EN L191에 «7 ÷ 44 ≈ 15.9%» 이미 반영 · 10로케일 동문 · tr은 구판이라 해당 절 없음). §13 전수 계산(scratchpad 7장 평가기): AKs vs 22 = **50.09%**(무늬 겹침 없음 · 겹치면 49.70) → AE-16 «never the favorite» 거짓 확정 · 9♠9♣ vs A♥K♥ on 9♥5♥2♥ = **34.4%** · vs 3♥4♥ = 32.4% → AE-17 수치 유지·표현만. AE-14 = 2.17 ÷ 2.60 = 83.46 · 3.33 ÷ 2.90 = 114.83 → 본문 «≈ 83.5%» + 화면값 83.7 병기. 브리프 밖 같은 결함 3(de rake FAQ «die meisten» · zh-hant game-order 도입 인용 · zh-hant position-play UTG 인용) 함께 고침. readnext «Which Hand Wins at Showdown?» 행은 EN·로케일 유지(카드만 대상 제목에 맞춤).
 
 > 출처 = `docs/fr-cluster-plan.md` §4-B H-9·H-24(레인 진행 파일 «EN-먼저» 표). fr은 각 자리를 이미 정확한 쪽으로 썼다 — EN 손질 회차에 EN + 핵심 로케일을 같이 고친다.
 
@@ -732,7 +734,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ MA-412 요청 1 · `lib/spot-share-i18n.ts` L93 ru 주석 «open = 랜딩 CTA 축어» → «/s 전용 문구(랜딩 CTA «Открыть солвер →»와 별개)». 화면 영향 0.
 - ✅ MA-413 요청 1 · PDF `public/downloads/poker-starting-hands-chart.pdf`(원본 `scripts/starting-hands-chart-print.html` → `render-starting-hands-pdf.mjs`) 4자리 = MA 처방 꼴 그대로: ⓐ P9 위치표 캡션에 «% = share of all 1,326 combos … UTG core is 58 combos (~4%)» 각주 ⓑ P2 «Almost always raise these first in, from any seat.» ⓒ P14 «~2–3 points of equity (AKs vs AKo ≈ 2)» ⓓ P16 «Most-called worst hand: 7-2 offsuit.» · 1쪽 유지(렌더 확인) · check-pdf-page 🔴 0. 🪶 P17 «interactive chart»(UNV · 선택) = 손대지 않음.
 - ✅ 10-10 (12) `dbb115cc` MB-227 — EN + 10로케일 «about 2–3 points». 원 항목: **EN-먼저 후보(통지 ①)** · EN `holdem-starting-hands-chart` FAQ L280 «Suited adds about 2 percentage points of equity over the same offsuit hand» — AK 예시는 참, 일반화가 P14와 같은 꼴(커넥터·저랭크 2.7~3.6%p) · 8로케일 동문. 처방 꼴 = PDF ⓒ와 맞춘다(«about 2–3 points; AKs vs AKo ≈ 2»). 자동 착수 금지.
-- 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
+- ✅ 통지 ③ = 10-13 (7) MB-302: `lib/range-chart.ts` fr·ms·vi 3키(라벨 = 각 본문 표 축어 · 주석 = 기존 8로케일 뜻 · vi도 같은 디렉티브를 써서 함께). 🪶 통지 ② `:::quiz:::` 위젯 = 현재 미렌더 · 문구 한국어 고정 → 되살릴 때 로케일화. 통지 ③ fr·ms 본문이 `:::rangechart:::`를 쓰나 `RANGE_CHART_COPY`에 fr·ms 키 없음 → EN 주석 렌더(사실 영향 0) · 다음 fr/ms 회차에 사전 2키.
 
 ### 2-AS. vi 🅶 GTO 13편 렌즈·아스트라가 찾은 EN 동문 + 헤드 이월 4 · 등재 2026-10-10 (8) · ✅ AS-1~7 이행 10-10 (13) `006bc898` MB-228(EN → 13로케일 · AS-7 paired H2 링크 = 유지 판정) · ✅ H-1~3 이행 10-10 (14) MB-229
 > 출처 = `docs/vi-lanes/gto-진행.md` «EN-먼저 후보»·«헤드 요청»(🅶 C · `a5dd9cfe`). vi는 정정 뜻으로 이미 썼다(EN과 의도적으로 다름) — EN을 고치면 13로케일 전파.

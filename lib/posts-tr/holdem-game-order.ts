@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, toplam 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 dk",
@@ -100,7 +100,7 @@ Turn, stratejik kararların ağırlaştığı sokaktır (street):
 - Rakibin preflop ve flop hamleleri, el aralığı (range) hakkında ne söylüyor?
 - Bu el river'a kadar götürmeye değer mi?
 
-==r:Turn'de pasif kalıp check der, sonra river'da aniden büyük bahis yaparsan; dikkatli bir rakip zayıflığını sezer.== ==g:**Güçlü elle turn'de bahis yapıp potu büyüt**== — rakip hâlâ görmeye (call) razıyken.
+==r:Güçlü elle turn'de pasif kalıp check der ve büyük bahsi river'a saklarsan, koca bir sokaklık değeri kaçırmış olursun.== ==g:**Güçlü elle turn'de bahis yapıp potu büyüt**== — rakip hâlâ görmeye (call) razıyken.
 
 ---
 

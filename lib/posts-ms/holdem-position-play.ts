@@ -126,7 +126,7 @@ Perbezaan ini penting: **big blind kehilangan paling banyak cip mentah setiap 10
 
 Bermain UTG dengan baik kebanyakannya soal menahan diri:
 
-- **Open ~13% tangan teratas** — terasnya pasangan kuat (TT+), AK/AQ dan suited broadway terbaik (AJs, KQs), ditambah pasangan sederhana dan suited ace teratas yang anda masukkan apabila melonggarkan range. Untuk grid tangan demi tangan yang tepat, gunakan [carta tangan permulaan](/ms/blog/holdem-starting-hands-chart).
+- **Open ~13% tangan teratas** — terasnya pasangan kuat (TT+), AK, AQs dan suited broadway terbaik (AJs, KQs), ditambah pasangan sederhana, AQo dan suited ace teratas yang anda masukkan apabila melonggarkan range. Untuk grid tangan demi tangan yang tepat, gunakan [carta tangan permulaan](/ms/blog/holdem-starting-hands-chart).
 - **Fold tangan yang cantik tetapi didominasi.** KJo dan QJo nampak boleh dimainkan tetapi diam-diam menghakis cip dari UTG — apabila ia kena, pemain di belakang sering kena lebih besar.
 - **Jangka untuk bermain tangan itu OOP.** Sesiapa yang call open UTG anda mungkin mempunyai posisi ke atas anda untuk tiga street, jadi range anda perlu cukup kuat untuk menanggung cukai itu.
 
@@ -279,7 +279,7 @@ A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan 
 
 **Q. Berapa luas range yang patut saya open dari UTG berbanding button?**
 
-A. Dari UTG dalam permainan full ring, open sekitar ~13% tangan teratas — terasnya pasangan kuat, AK/AQ dan suited broadway terbaik, dilengkapkan dengan pasangan sederhana dan suited ace teratas. Dari button, sekitar ~43% menguntungkan kerana aksi terakhir yang dijamin menampung kad yang lebih lemah. Dalam 6-max, UTG melebar kepada kira-kira ~17%, bermain seperti lojack full ring.
+A. Dari UTG dalam permainan full ring, open sekitar ~13% tangan teratas — terasnya pasangan kuat, AK, AQs dan suited broadway terbaik, dilengkapkan dengan pasangan sederhana, AQo dan suited ace teratas. Dari button, sekitar ~43% menguntungkan kerana aksi terakhir yang dijamin menampung kad yang lebih lemah. Dalam 6-max, UTG melebar kepada kira-kira ~17%, bermain seperti lojack full ring.
 
 **Q. Bagaimana posisi mempengaruhi kekerapan c-bet?**
 

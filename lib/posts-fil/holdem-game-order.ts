@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang isang hand ng Texas Hold'em ay ganito: mag-post ng blinds → i-deal ang dalawang hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, na may apat na betting rounds lahat-lahat.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Ang turn ay mabigat na street sa strategy:
 - Ano ang sinasabi ng preflop at flop actions ng kalaban tungkol sa range niya?
 - Sulit bang dalhin ang hand na ito hanggang river?
 
-==r:Kung mag-check ka nang pasibo sa turn tapos bigla kang magpaputok ng malaking bet sa river, mababasa ng matalinong kalaban ang kahinaan.== ==g:**Kung may malakas kang hand, mag-bet sa turn para palakihin ang pot**== habang handa pa ring mag-call ang kalaban.
+==r:Kung malakas ang hand mo pero mag-check ka nang pasibo sa turn at maghintay sa river para magpaputok ng malaking bet, nasayang mo na ang isang buong betting round na puwede sanang binayaran ng kalaban.== ==g:**Kung may malakas kang hand, mag-bet sa turn para palakihin ang pot**== habang handa pa ring mag-call ang kalaban.
 
 ---
 

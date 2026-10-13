@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas a la larga. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, después suelta las manos falladas que se enfrentan a una apuesta en una mesa que favorece al rival, y los proyectos débiles que no cumplen sus pot odds, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -110,7 +110,7 @@ Foldear basura es fácil. Foldear una *buena* mano — top pair, un sobrepar, in
 | **Top pair, kicker débil** | Encarando apuestas grandes en turn + river | Le ganas a faroles y parejas peores — pero su rango de valor te supera por kicker |
 | **Sobrepar (JJ/QQ)** | Un jugador pasivo sube en una mesa coordinada | Los pasivos suben las nuts, no aire — vas a proyecto muy fino |
 | **Top pair top kicker** | La mesa cierra con cuatro al color o a la escalera | Tu pareja no puede ganarle al color/escalera que representa |
-| **Un trío** | Raise grande en mesa monocolor o cuatro a la escalera — **en el river** | Trío contra trío es un cooler; un color completado no. En el *flop* ese mismo trío todavía liga la casa el ~34% de las veces para el river contra un color hecho, y cuando lo hace se lleva un stack — paga |
+| **Un trío** | Raise grande en mesa monocolor o cuatro a la escalera — **en el river** | Trío contra trío es un cooler; un color completado no. En el *flop* ese mismo trío todavía liga full o póker el ~34% de las veces para el river contra un color hecho, y cuando lo hace se lleva un stack — paga |
 | **Segunda pareja** | Pagar tres calles "para tenerlo honesto" | Estás pagando valor tres veces por atrapar un farol |
 
 </div>

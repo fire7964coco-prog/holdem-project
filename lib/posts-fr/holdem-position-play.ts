@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Être en position, c'est parler en dernier : tu vois la décision de chaque adversaire avant de dépenser un jeton. Les exemples de solver montrent que la position améliore généralement la réalisation d'équité, mais aucun siège n'est mécaniquement bloqué au-dessus ou en dessous de 100 % : les ranges, le board et l'action peuvent inverser le schéma habituel. C'est pour ça qu'à une table full ring, UTG ouvre environ 13 % des mains et le bouton environ 43 %, et que la position réécrit chaque décision de c-bet, de bluff et de contrôle du pot postflop.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -117,7 +117,7 @@ La distinction compte : la **grosse blinde perd le plus de jetons bruts par 100 
 
 Bien jouer UTG, c'est avant tout de la retenue :
 
-- **Ouvre à peu près les ~13 % meilleures mains** — le cœur, ce sont les paires fortes (TT+), AK/AQ et les meilleures broadways assorties (AJs, KQs), complétés par les paires moyennes et les meilleurs as assortis que tu ajoutes en t'élargissant. Pour la grille main par main, utilise le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart).
+- **Ouvre à peu près les ~13 % meilleures mains** — le cœur, ce sont les paires fortes (TT+), AK, AQs et les meilleures broadways assorties (AJs, KQs), complétés par les paires moyennes, AQo et les meilleurs as assortis que tu ajoutes en t'élargissant. Pour la grille main par main, utilise le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart).
 - **Couche les mains jolies mais dominées.** KJo et QJo ont l'air jouables et te saignent discrètement depuis UTG — quand elles touchent, quelqu'un derrière touche souvent plus fort.
 - **Attends-toi à jouer le coup OOP.** Celui qui paie ton ouverture UTG a probablement la position sur toi pendant trois tours : ta range doit être assez forte pour supporter cette taxe.
 
@@ -270,7 +270,7 @@ A. Relance ou couche-toi — ne fais pas d'open-limp. Une main assez forte pour 
 
 **Q. Combien de mains ouvrir UTG et au bouton ?**
 
-A. Depuis UTG en full ring, ouvre à peu près les ~13 % meilleures mains — construites autour des paires fortes, d'AK/AQ et des meilleures broadways assorties, complétées par les paires moyennes et les meilleurs as assortis. Depuis le bouton, environ 43 % est rentable, parce que la dernière parole garantie compense des cartes plus faibles. En 6-max, UTG s'élargit à environ 17 %, et se joue comme un lojack de full ring.
+A. Depuis UTG en full ring, ouvre à peu près les ~13 % meilleures mains — construites autour des paires fortes, d'AK, d'AQs et des meilleures broadways assorties, complétées par les paires moyennes, AQo et les meilleurs as assortis. Depuis le bouton, environ 43 % est rentable, parce que la dernière parole garantie compense des cartes plus faibles. En 6-max, UTG s'élargit à environ 17 %, et se joue comme un lojack de full ring.
 
 **Q. Comment la position influence-t-elle la fréquence de c-bet ?**
 

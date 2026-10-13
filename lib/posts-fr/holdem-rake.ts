@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Le rake, c'est la petite part que la salle prélève sur la plupart des pots pour organiser la partie, en général 2,5 à 10 % plafonnés à quelques dollars. La plupart des salles ne prennent rien si tout le monde se couche avant le flop (« no flop, no drop »). Il pèse surtout sur les petites limites et les tables à peu de joueurs, et le rakeback en rend une partie aux habitués.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -74,7 +74,7 @@ Quelques règles encadrent la façon dont le rake au pot est réellement prélev
 
 C'est la partie qui a changé ma façon de voir le jeu. Le pourcentage paraît minuscule — 5 %, plafonné à quelques dollars — mais tu le paies sur presque chaque pot que tu gagnes, pendant des heures.
 
-**Une partie live $1/$2.** Avec un rake de 10 % plafonné à $5 et environ 30 mains distribuées par heure, la plupart des pots disputés atteignent ou frôlent le plafond. Une seule table animée peut verser **$100+ par heure** dans la fente, tous joueurs confondus. Cet argent sort directement des gains collectifs — c'est pour ça qu'une table de joueurs à peu près de même niveau perd lentement ses jetons au profit de la maison.
+**Une partie live $1/$2.** Avec un rake de 10 % plafonné à $5 et environ 30 mains distribuées par heure, beaucoup de pots disputés atteignent ou frôlent le plafond. Une seule table animée peut verser **$100+ par heure** dans la fente, tous joueurs confondus. Cet argent sort directement des gains collectifs — c'est pour ça qu'une table de joueurs à peu près de même niveau perd lentement ses jetons au profit de la maison.
 
 **Le « piège du rake » aux petites limites.** C'est la chute que chaque débutant devrait entendre. Comme le plafond baisse à peine quand tu descends de limite, plus tu joues *petit*, plus la part que prend le rake est *grosse* en proportion. Voici un exemple chiffré en NL50 en ligne (à titre d'illustration — le chiffre exact dépend du nombre de pots que tu disputes et de la façon dont la salle applique son plafond, pas du nombre de mains que tu enregistres). Les deux plafonds ci-dessous sont l'un dans la fourchette habituelle en ligne, l'autre au-dessus : $2 est dans les $1–$3 affichés par la plupart des salles, $4 est au-dessus.
 
@@ -154,7 +154,7 @@ A. En général, non. La plupart des salles appliquent « no flop, no drop » �
 
 **Q. Combien de rake prend une partie live en $1/$2 ?**
 
-A. Couramment 10 % du pot, plafonnés autour de $5. La plupart des pots disputés atteignent le plafond, si bien qu'une seule table animée peut verser $100 ou plus par heure, tous joueurs confondus. C'est cette commission qui fait qu'une table de joueurs de même niveau perd lentement des jetons au profit de la maison.
+A. Couramment 10 % du pot, plafonnés autour de $5. Beaucoup de pots disputés atteignent le plafond, si bien qu'une seule table animée peut verser $100 ou plus par heure, tous joueurs confondus. C'est cette commission qui fait qu'une table de joueurs de même niveau perd lentement des jetons au profit de la maison.
 
 **Q. C'est quoi le rakeback ?**
 

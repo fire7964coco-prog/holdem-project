@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que casi nunca podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. En el sentido estricto que usa esta guía, ibas por detrás cuando entró el dinero y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -67,7 +67,7 @@ La forma más limpia de no confundirlos, con ese criterio estricto:
 
 </div>
 
-Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **Bad beat:** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4 a 1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog desde el flop, y un trío ligado en el flop casi nunca se foldea. Mismas cartas, historias opuestas. Los dos son mala suerte, no errores — lo que vale la pena comprobar es si tu jugada se sostiene de verdad; si no se sostiene, toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") en vez de encogerte de hombros.
+Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **[Bad beat](/es/blog/holdem-bad-beat):** tienes A♠A♥, metes todas las fichas preflop contra 7♣7♦, y sale un **7** en la mesa — tus ases eran un favorito de ~4 a 1 (cerca del 80%) y te superaron. **Cooler:** dale la vuelta — tienes tú el **7♣7♦**, ligas un trío de sietes y te vas de stack contra un trío salido de una pareja mayor. Ibas de underdog desde el flop, y un trío ligado en el flop casi nunca se foldea. Mismas cartas, historias opuestas. Los dos son mala suerte, no errores — lo que vale la pena comprobar es si tu jugada se sostiene de verdad; si no se sostiene, toca [revisar tu jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") en vez de encogerte de hombros.
 
 ---
 
@@ -121,7 +121,7 @@ Ahora la verdad incómoda, y la razón por la que esta palabra importa para tu m
 Hay una prueba de fuego muy limpia, y los jugadores honestos la usan tras cada derrota grande:
 
 :::pull
-¿Volvería a hacer exactamente la misma jugada, solo con la información que tenía en ese momento — rangos, precio y profundidad de stacks, no solo la corazonada? Si es **no**, jugaste mal — y eso es un leak que arreglar, no mala suerte. Si la respuesta es **sí** — y la jugada sigue en pie cuando de verdad haces las cuentas con esos rangos y ese precio (muchos calls equivocados parecen correctos todas las veces) —, fue mala suerte: en sentido estricto, un cooler si dos manos fuertes chocaron e ibas por detrás cuando entró el dinero, un bad beat si ibas por delante y te cazaron. Un proyecto pagado al precio correcto que no entró no es ninguna de las dos cosas — es solo varianza.
+¿Volvería a hacer exactamente la misma jugada, solo con la información que tenía en ese momento — rangos, precio y profundidad de stacks, no solo la corazonada? Si es **no**, jugué mal — y eso es un leak que arreglar, no mala suerte. Si la respuesta es **sí** — y la jugada sigue en pie cuando de verdad haces las cuentas con esos rangos y ese precio (muchos calls equivocados parecen correctos todas las veces) —, fue mala suerte: en sentido estricto, un cooler si dos manos fuertes chocaron e ibas por detrás cuando entró el dinero, un bad beat si ibas por delante y te cazaron. Un proyecto pagado al precio correcto que no entró no es ninguna de las dos cosas — es solo varianza.
 :::
 
 Un cooler de verdad significa que jugaste correctamente con una mano fuerte y te topaste con otra mayor. En el momento en que tu "cooler" incluye un call que no se sostiene con rangos y precio, un farol que te convenciste a ti mismo de tirar, o un fold que deberías haber hecho, deja de ser un cooler y se convierte en un **error disfrazado.** Ser despiadadamente honesto sobre cuál es cuál — en lugar de archivar cada derrota bajo "mala suerte" — es exactamente lo que separa a los jugadores que mejoran de los que se quedan siendo [peces](/es/blog/holdem-fish) para siempre.
@@ -212,7 +212,7 @@ Incluso los mejores jugadores pierden más o menos tantos coolers como todos los
   </a>
   <a href="/es/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jerarquía de manos</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quién gana en el showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Reglas de desempate en el póker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cómo se deciden los empates y las segundas mejores manos</div>
   </a>
   <a href="/es/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

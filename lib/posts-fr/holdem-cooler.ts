@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un cooler, c'est une main où tu perds un gros pot avec un jeu très fort que tu ne pouvais presque jamais coucher correctement, comme une paire de rois qui tombe sur les as, ou un set battu par un set plus gros. Au sens strict utilisé ici, tu étais derrière au moment de la mise et aucune carte chanceuse n'a renversé le coup : tu as bien joué et tu as quand même perdu. C'est le désastre le plus honnête du poker.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -129,7 +129,7 @@ Maintenant, la vérité qui dérange, et la raison pour laquelle ce mot compte p
 Il existe un test simple, et les joueurs honnêtes l'utilisent après chaque grosse perte :
 
 :::pull
-Est-ce que je referais exactement le même coup, avec seulement les informations que j'avais à ce moment-là — ranges, prix et profondeur de stack, pas juste l'instinct ? Si **non**, tu as mal joué — et c'est une fuite à corriger, pas de la malchance. Si **oui** — et que ça tient toujours quand tu fais vraiment tourner ces ranges et ce prix (beaucoup de mauvais calls paraissent justes à chaque fois) — c'était de la malchance : au sens strict, un cooler si deux mains fortes se sont percutées et que tu étais derrière au moment de miser, un bad beat si tu étais devant et que tu t'es fait dépasser. Un tirage payé au bon prix qui ne rentre pas n'est ni l'un ni l'autre — juste la variance.
+Est-ce que je referais exactement le même coup, avec seulement les informations que j'avais à ce moment-là — ranges, prix et profondeur de stack, pas juste l'instinct ? Si **non**, j'ai mal joué — et c'est une fuite à corriger, pas de la malchance. Si **oui** — et que ça tient toujours quand tu fais vraiment tourner ces ranges et ce prix (beaucoup de mauvais calls paraissent justes à chaque fois) — c'était de la malchance : au sens strict, un cooler si deux mains fortes se sont percutées et que tu étais derrière au moment de miser, un bad beat si tu étais devant et que tu t'es fait dépasser. Un tirage payé au bon prix qui ne rentre pas n'est ni l'un ni l'autre — juste la variance.
 :::
 
 Un vrai cooler, c'est avoir joué correctement avec une main forte et être tombé sur plus gros. Dès que ton « cooler » implique un call qui ne tient pas sur les ranges et le prix, un bluff dont tu t'es convaincu, ou une main que tu aurais dû coucher, ce n'est plus un cooler : c'est une **erreur déguisée.** Être impitoyablement honnête sur ce qui relève de quoi — au lieu de ranger chaque perte sous « pas de chance » — c'est exactement ce qui sépare les joueurs qui progressent de ceux qui restent des [fish](/fr/blog/holdem-fish) pour toujours.

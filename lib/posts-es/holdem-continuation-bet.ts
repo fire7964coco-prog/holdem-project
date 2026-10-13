@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: más del 97% en los tres boards que resolvimos), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 min",
@@ -179,7 +179,7 @@ El cambio de mentalidad que te hace ganador: **pasar no es rendirse.** Los bueno
 
 Dos situaciones de la misma sesión muestran ambas caras de la decisión.
 
-**Situación 1 — una c-bet de manual.** Subo ==A♣K♦== y la ciega grande paga. Flop: ==K♠ 7♦ 2♣.== Es un board alto, seco y desconectado que pertenece a mi rango — y he ligado **top pair, top kicker**: mi K♦ empareja el K♠, con el as como el mejor kicker posible (mejores cinco = K♦ K♠ A♣ 7♦ 2♣). Apuesto **un tercio del bote** como apuesta de rango: les cobra a todas sus manos falladas y mantiene dentro reyes y parejas peores. Una c-bet fácil y rentable.
+**Situación 1 — una c-bet de manual.** Subo ==A♣K♦== y la ciega grande paga. Flop: ==K♠ 7♦ 2♣.== Es un board alto, seco y desconectado que pertenece a mi rango — y he ligado **top pair, top kicker**: mi K♦ empareja el K♠, con el as como el mejor kicker posible (mejores cinco = K♦ K♠ A♣ 7♦ 2♣). Apuesto **un tercio del bote** como apuesta de rango: presiona a sus manos falladas y mantiene dentro reyes y parejas peores. Una c-bet fácil y rentable.
 
 **Situación 2 — un check de manual.** Misma sesión, subo ==A♥Q♥== y la ciega grande paga. Flop: ==7♠ 6♠ 5♦.== Este board machaca las manos exactas con las que pagó — conectores del mismo palo, parejas pequeñas y escaleras — mientras yo solo tengo as-alto sin pareja y sin proyecto (no hay corazones en la mesa, así que ni siquiera un proyecto de color por puerta trasera). Dos años antes habría "continuado" por costumbre y me habrían resubido. Ahora **paso y me rindo.** Si viene un turn seguro y recojo equity, tengo disponible una c-bet retrasada; si no, he perdido lo mínimo.
 

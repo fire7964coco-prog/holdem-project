@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -73,7 +73,7 @@ A few rules govern how pot rake is actually skimmed:
 
 Here's the part that changed how I think about the game. The percentage sounds tiny — 5%, capped at a few bucks — but you pay it on nearly every pot you win, for hours.
 
-**A live $1/$2 game.** With 10% rake capped at $5 and roughly 30 hands dealt an hour, most contested pots hit or near the cap. A single busy table can pay **$100+ an hour** into the drop between all the players. That money comes straight out of the collective winnings — it's the reason a table full of roughly even players slowly bleeds chips to the house.
+**A live $1/$2 game.** With 10% rake capped at $5 and roughly 30 hands dealt an hour, many contested pots reach or come close to the cap. A single busy table can pay **$100+ an hour** into the drop between all the players. That money comes straight out of the collective winnings — it's the reason a table full of roughly even players slowly bleeds chips to the house.
 
 **The low-stakes "rake trap."** This is the punchline every beginner should hear. Because the cap barely falls as you move down in stakes, the *lower* you play, the *bigger* a bite the rake takes proportionally. Here is a worked example at online NL50 (illustrative — the exact figure moves with how many pots you contest and how the room applies its cap, not with how many hands you log). The two caps below sit one inside the usual online band and one outside it: $2 is inside the $1–$3 most rooms post, $4 is above it.
 
@@ -153,7 +153,7 @@ A. Usually not. Most rooms follow "no flop, no drop" — if the hand ends preflo
 
 **Q. How much rake is taken in a live $1/$2 game?**
 
-A. Commonly 10% of the pot capped at around $5. Most contested pots reach the cap, so a single busy table can drop $100 or more per hour collectively. That fee is why a table of evenly matched players slowly loses chips to the house over time.
+A. Commonly 10% of the pot capped at around $5. Many contested pots reach the cap, so a single busy table can drop $100 or more per hour collectively. That fee is why a table of evenly matched players slowly loses chips to the house over time.
 
 **Q. What is rakeback?**
 

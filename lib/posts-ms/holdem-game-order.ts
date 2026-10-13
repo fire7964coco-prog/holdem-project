@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pada preflop, pemain di kiri big blind bertaruh dulu. Pada flop, turn dan river, giliran pertama ialah pemain aktif pertama di kiri butang — biasanya small blind. (Heads-up menterbalikkan urutan ini.) Tangan itu sendiri berjalan: blinds → kad pemula → preflop → flop → turn → river → showdown, dengan empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-27",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -107,7 +107,7 @@ Turn ialah pusingan yang berat dari segi strategi:
 - Apa yang aksi preflop dan flop lawan anda ceritakan tentang julat (range) mereka?
 - Berbaloikah tangan ini dibawa sampai ke river?
 
-==r:Kalau anda cek secara pasif pada turn dan tiba-tiba lepaskan pertaruhan besar pada river, lawan yang peka akan membacanya sebagai kelemahan.== ==g:**Dengan tangan yang kuat, bertaruhlah pada turn untuk membesarkan pot**== selagi lawan anda masih sanggup call.
+==r:Kalau anda cek secara pasif dengan tangan yang kuat pada turn dan tunggu untuk lepaskan pertaruhan besar pada river, anda sudah melepaskan value satu street penuh.== ==g:**Dengan tangan yang kuat, bertaruhlah pada turn untuk membesarkan pot**== selagi lawan anda masih sanggup call.
 
 ---
 

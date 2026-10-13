@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -36,7 +36,7 @@ Poker punya kosakatanya sendiri, dan menguasainya melakukan dua hal: membuat And
 
 ## Istilah Dalam Poker yang Paling Sering Tertukar
 
-Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah yang paling banyak menimbulkan kebingungan (dan kesalahan paling mahal) di meja:
+Kalau Anda hanya sempat memperjelas delapan kerancuan, jadikan yang ini — inilah yang paling banyak menimbulkan kebingungan (dan kesalahan paling mahal) di meja:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

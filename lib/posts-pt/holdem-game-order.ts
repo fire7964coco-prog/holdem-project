@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com até quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-01",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -109,7 +109,7 @@ O turn é uma street estrategicamente pesada:
 - O que as ações do adversário no pré-flop e no flop dizem sobre o range dele?
 - Vale a pena levar esta mão até o river?
 
-==r:Se você dá check passivo no turn e de repente solta uma aposta grande no river, adversários atentos leem fraqueza.== ==g:**Com uma mão forte, aposte no turn para inflar o pote**== enquanto o adversário ainda está disposto a pagar.
+==r:Se você dá check passivo no turn com uma mão forte e espera para soltar uma aposta grande no river, você abriu mão de uma street inteira de valor.== ==g:**Com uma mão forte, aposte no turn para inflar o pote**== enquanto o adversário ainda está disposto a pagar.
 
 ---
 

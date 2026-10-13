@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rozdanie Texas Hold'em przebiega tak: wpłata blindów → dwie karty zakryte dla każdego → preflop → flop (3 karty) → turn (1 karta) → river (1 karta) → showdown, w sumie cztery rundy licytacji.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Turn to ulica o dużym ciężarze strategicznym:
 - Co akcje rywala na preflopie i flopie mówią o jego zakresie rąk?
 - Czy warto ciągnąć to rozdanie aż do rivera?
 
-==r:Jeśli na turnie czekasz biernie, a potem nagle wypalasz duży zakład na riverze, uważni rywale odczytają słabość.== ==g:**Z mocną ręką stawiaj na turnie, żeby rozbudować pulę**== dopóki rywal wciąż jest gotów sprawdzać.
+==r:Jeśli z mocną ręką czekasz biernie na turnie i odkładasz duży zakład do rivera, tracisz całą rundę zakładów, za które rywal mógłby zapłacić.== ==g:**Z mocną ręką stawiaj na turnie, żeby rozbudować pulę**== dopóki rywal wciąż jest gotów sprawdzać.
 
 ---
 

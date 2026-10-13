@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Se coucher est la compétence la plus sous-estimée au poker : le pire résultat d'un fold est zéro, alors qu'un call perdant saigne des jetons sur la durée. Un joueur solide se couche sur environ 75 à 85 % des mains avant le flop, lâche après le flop les mains ratées face à une mise sur un board qui favorise l'adversaire, ainsi que les tirages faibles qui n'atteignent pas leurs cotes du pot, et, le plus dur, abandonne des mains fortes mais battues quand la ligne d'un adversaire passif crie la value. La plupart des joueurs ne suivent pas trop parce qu'ils ne savent pas lire les mains ; ils suivent parce que les jetons déjà au milieu leur semblent appartenir, et ce n'est pas le cas.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -110,7 +110,7 @@ Jeter une main pourrie, c'est facile. Jeter une *bonne* main — top paire, over
 | **Top paire, kicker faible** | Grosses mises à la turn puis à la river | Tu bats les bluffs et les paires moins bonnes — mais sa range de value te bat au kicker |
 | **Overpaire (JJ/QQ)** | Un joueur passif relance un board coordonné | Les joueurs passifs relancent les nuts, pas du vent — tu es presque mort (très peu d'outs) |
 | **Top paire, meilleur kicker** | Le board finit avec quatre cartes à la couleur ou à la quinte | Ta paire unique ne bat pas la couleur ou la quinte qu'il représente |
-| **Un brelan servi** | Grosse relance sur un board monocolore ou à quatre cartes de quinte — **à la river** | Set contre set, c'est un cooler ; une couleur déjà faite, non. Au *flop*, ce même brelan s'améliore encore en full ~34 % du temps d'ici la river contre une couleur faite, et gagne un stack quand il y arrive — suis |
+| **Un brelan servi** | Grosse relance sur un board monocolore ou à quatre cartes de quinte — **à la river** | Set contre set, c'est un cooler ; une couleur déjà faite, non. Au *flop*, ce même brelan s'améliore encore en full ou en carré ~34 % du temps d'ici la river contre une couleur faite, et gagne un stack quand il y arrive — suis |
 | **Deuxième paire** | Payer trois streets « pour le garder honnête » | Tu paies trois fois la value pour attraper un seul bluff |
 
 </div>

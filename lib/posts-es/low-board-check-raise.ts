@@ -30,7 +30,7 @@ export const POST: Post = {
   tldr: "En el flop bajo y rainbow 6♠5♥2♦ la ciega grande hace check el 96.8% y apuesta primero apenas el 3.2% — aunque su 48.3% de equity es el segundo más alto de los siete spots en los que defiende. Aquí solo una mano hace escalera, 4-3, y no está en ninguno de los dos rangos. Nadie tiene la parte alta, así que nadie apuesta primero fuera de posición. La acción llega después: al resolver de nuevo el mismo árbol para ver más allá del flop, la ciega grande hace check-raise a una apuesta de 1.8bb el 14.9% de las veces, sobre todo con proyectos.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -211,7 +211,7 @@ Leímos las 487 filas de la tabla por mano, no la primera pantalla. Ordenada por
 Lee la segunda columna hacia abajo y el patrón es imposible de no ver. **Por debajo de la doble pareja, todas las manos de la parte alta de esta lista llevan un proyecto de escalera** — las dos que además tienen pareja (64s y 54s) suben con el proyecto pegado, no con la pareja:
 
 - **98s** tiene 5-6-8-9 y necesita el ==7==.
-- **87s** tiene 5-6-7-8 y le sirve el ==4 o el 9== — el único proyecto a dos puntas **de este rango**. ⚠ No el único que permite el board: **74 hace 4-5-6-7** y espera el 3 o el 8, un proyecto a dos puntas de manual, y 84 es un doble gutshot con los mismos ocho outs. El 0.8% de la tabla de proyectos significa que los rangos de este solver no tienen 74s, no que el board tenga un solo proyecto a dos puntas.
+- **87s** tiene 5-6-7-8 y le sirve el ==4 o el 9== — el único proyecto a dos puntas **de este rango**. ⚠ No el único que permite el board: **74 hace 4-5-6-7** y espera el 3 o el 8, un proyecto a dos puntas de manual, y 84 es un doble gutshot con ocho outs propios (los treses y los sietes). El 0.8% de la tabla de proyectos significa que los rangos de este solver no tienen 74s, no que el board tenga un solo proyecto a dos puntas.
 - **J4s, Q4s, 54s y 64s** tienen todas 2-4-5-6 y necesitan el ==3==.
 
 **Ni una sola mano de la parte alta de esa lista fue elegida por su carta alta.**

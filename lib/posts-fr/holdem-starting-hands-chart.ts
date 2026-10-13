@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sur les 169 types de mains de départ, seule une petite tranche du haut, environ 15 à 20 % des mains que tu reçois, est rentable pour un débutant. Les grosses paires (AA à TT) et AK relancent depuis n'importe quel siège ; plus tu parles tard, plus tu ouvres large, d'environ 13 % under the gun à environ 43 % au bouton (encore plus large en 6-max). Commence par une sélection de mains simplifiée et passe aux ranges préflop de solver une fois que « relancer ou se coucher » est devenu automatique.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -57,7 +57,7 @@ Voici les meilleures mains de départ au poker — celles que tu devrais presque
 
 ![Quatre mains de départ premium du Texas Hold'em — paire d'as, paire de rois, paire de dames et as-roi assortis — qui brillent en doré sur un feutre vert foncé](/images/holdem-starting-hands-premium.webp "Le niveau premium — des mains que tu peux relancer depuis n'importe quelle position")
 
-==g:Avec les mains 1 à 5 (les paires servies), relance presque toujours et surrelance souvent préflop pour construire le pot.== Avec AK et AQ, l'objectif est de te retrouver en tête-à-tête, là où tes grosses cartes ont le maximum d'équité. Les chiffres à retenir : ==AK n'est jamais favori contre une paire servie, mais contre 22–QQ il n'est jamais loin derrière== — le fameux « flip ». AK dépareillé a environ 46–47 % contre 22–44, environ 45 % contre 55–99 et environ 43 % contre TT–QQ ; AK assorti ajoute à peu près 2,5 à 3 points à chacun (AKs contre 22, à environ 50 %, est ce qui ressemble le plus à un vrai pile ou face). Contre KK et AA, l'écart est bien plus grand — mais contre toutes les paires en dessous, relancer et surrelancer avec AK reste correct.
+==g:Avec les mains 1 à 5 (les paires servies), relance presque toujours et surrelance souvent préflop pour construire le pot.== Avec AK et AQ, l'objectif est de te retrouver en tête-à-tête, là où tes grosses cartes ont le maximum d'équité. Les chiffres à retenir : ==AK est au mieux à pile ou face contre une paire servie, mais contre 22–QQ il n'est jamais loin derrière== — le fameux « flip ». AK dépareillé a environ 46–47 % contre 22–44, environ 45 % contre 55–99 et environ 43 % contre TT–QQ ; AK assorti ajoute à peu près 2,5 à 3 points à chacun (AKs contre 22, à environ 50 %, est ce qui ressemble le plus à un vrai pile ou face). Contre KK et AA, l'écart est bien plus grand — mais contre toutes les paires en dessous, relancer et surrelancer avec AK reste correct.
 
 Pocket rockets, cowboys, big slick — si l'argot de table est nouveau pour toi, le [jargon du poker](/fr/blog/holdem-glossary) couvre tous les surnoms de mains. Et si tu n'es pas sûr de ce qui bat quoi une fois le board posé, revois d'abord le [classement des mains au poker](/fr/blog/holdem-hand-rankings).
 

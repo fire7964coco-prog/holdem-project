@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Sur K♠8♦3♣, après une ouverture du bouton suivie par la grosse blinde, la grosse blinde checke 99,8 % de sa range, un check de range encore plus pur que les 98,2 % du flop hauteur As. Deux causes : la grosse blinde n'a aucune surpaire ici, parce que AA 3-bet préflop, et la réalisation d'équité se partage 80,7 % contre 116,7 %.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -146,7 +146,7 @@ Ce qui reste, ce sont des backdoors. Le **tirage couleur backdoor** que compte l
 
 **Presque, avec un petit sizing, mais « toujours » est le mauvais mot pour un groupe de mains.** La grosse blinde a 35,4 % de sa range sans main faite — le tiers de la range le plus susceptible de se coucher, même si tout ne peut pas se coucher : face à une mise d'un tiers du pot, une défense équilibrée garde environ 75 % de la range (fréquence de défense minimale, MDF), donc une partie de ces mains continue quand même. (La réponse de la grosse blinde n'est pas dans cette résolution.) Et **72,2 % de toute la range n'a aucun tirage** — attention au dénominateur : ce chiffre compte la range entière, top paire (12,7 %), deuxième paire (10,8 %) et brelans servis compris, donc ce n'est pas un sous-ensemble du bloc « pas de main faite ». Ça veut dire que la situation a peu de chances de changer aux streets suivantes. Miser environ un tiers du pot avec la majeure partie de ta range, c'est la norme.
 
-Le conseil habituel dit que les mains hauteur As avec valeur d'abattage doivent checker derrière. Sur ce board, c'est **à moitié vrai**. Avec un petit sizing, AQ et AJ misent assez souvent, en fréquence mixte — elles font coucher des mains comme QJ, JT et T9 qui ont deux cartes vivantes mais pas de paire, et un As sur une street suivante leur donne la meilleure paire du board. Mais elles coûtent aussi peu en checkant, et c'est de là que vient une grande partie de la **range de check back**. Ni « toujours miser » ni « toujours checker derrière » n'est correct ; la réponse, c'est la fréquence.
+Le conseil habituel dit que les mains hauteur As avec valeur d'abattage doivent checker derrière. Sur ce board, c'est **à moitié vrai**. Avec un petit sizing, AQ et AJ misent assez souvent, en fréquence mixte — elles font coucher des mains comme QJ, JT et T9 qui ont des cartes vivantes mais pas de paire, et un As sur une street suivante leur donne la meilleure paire du board. Mais elles coûtent aussi peu en checkant, et c'est de là que vient une grande partie de la **range de check back**. Ni « toujours miser » ni « toujours checker derrière » n'est correct ; la réponse, c'est la fréquence.
 
 :::note[⚠ Cette section interprète la composition des ranges ; ce n'est pas un chiffre calculé par le solver. Le spot d'étude ne précalcule que la première action du flop — celle de la grosse blinde — donc la fréquence exacte de c-bet du bouton n'est pas sur cet écran. Ouvre « Calcule ce spot toi-même » et déroule l'arbre pour l'obtenir.]:::
 

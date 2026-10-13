@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake là phần nhỏ phòng poker cắt từ hầu hết các pot để tổ chức ván chơi — thường 2,5–10% và có mức cap vài đô la mỗi pot. Hầu hết phòng không thu gì nếu mọi người fold trước flop (\"no flop, no drop\"). Rake ăn nặng nhất vào người chơi stakes thấp và bàn ít người, còn rakeback trả lại một phần cho người chơi thường xuyên.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -74,7 +74,7 @@ Vài quy tắc chi phối cách pot rake thật sự được cắt:
 
 Đây là phần đã thay đổi cách tôi nghĩ về ván chơi. Tỷ lệ nghe rất nhỏ — 5%, cap vài đô — nhưng bạn trả nó ở gần như mọi pot bạn thắng, trong nhiều giờ.
 
-**Một bàn live $1/$2.** Với rake 10% cap $5 và khoảng 30 ván mỗi giờ, hầu hết pot có tranh chấp đều chạm hoặc gần chạm cap. Một bàn đông riêng nó có thể trả **$100+ mỗi giờ** vào khe thu, tính chung tất cả người chơi. Số tiền ấy đi thẳng ra khỏi tổng số thắng của cả bàn — đó là lý do một bàn toàn người chơi ngang nhau chảy máu chip dần dần về phía nhà.
+**Một bàn live $1/$2.** Với rake 10% cap $5 và khoảng 30 ván mỗi giờ, nhiều pot có tranh chấp chạm hoặc gần chạm cap. Một bàn đông riêng nó có thể trả **$100+ mỗi giờ** vào khe thu, tính chung tất cả người chơi. Số tiền ấy đi thẳng ra khỏi tổng số thắng của cả bàn — đó là lý do một bàn toàn người chơi ngang nhau chảy máu chip dần dần về phía nhà.
 
 **"Bẫy rake" ở stakes thấp.** Đây là câu chốt mà mọi người mới nên nghe. Vì cap gần như không giảm khi bạn chơi mức thấp hơn, bạn chơi càng *thấp*, rake cắn càng *lớn* theo tỷ lệ. Đây là một ví dụ tính thử ở NL50 online (chỉ để minh họa — con số chính xác thay đổi theo số pot bạn tranh và cách phòng áp cap, không phải theo số ván bạn ghi lại). Hai mức cap bên dưới, một nằm trong dải online thông thường và một nằm ngoài: $2 nằm trong khoảng $1–$3 hầu hết phòng niêm yết, $4 cao hơn khoảng đó.
 
@@ -154,7 +154,7 @@ A. Thường là không. Hầu hết phòng theo "no flop, no drop" — nếu v�
 
 **Q. Bàn live $1/$2 thu rake bao nhiêu?**
 
-A. Phổ biến là 10% pot, cap khoảng $5. Hầu hết pot có tranh chấp đều chạm cap, nên một bàn đông riêng nó có thể thả $100 hoặc hơn mỗi giờ tính chung cả bàn. Khoản phí ấy là lý do một bàn gồm những người chơi ngang nhau dần mất chip về phía nhà theo thời gian.
+A. Phổ biến là 10% pot, cap khoảng $5. Nhiều pot có tranh chấp chạm cap, nên một bàn đông riêng nó có thể thả $100 hoặc hơn mỗi giờ tính chung cả bàn. Khoản phí ấy là lý do một bàn gồm những người chơi ngang nhau dần mất chip về phía nhà theo thời gian.
 
 **Q. Rakeback là gì?**
 

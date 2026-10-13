@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 6♣6♦3♥, big blind check 97,0% meski memiliki 26 combo trips, lebih banyak daripada 20 milik button. Trips hanya sebagian kecil range: 18,4% range BB memiliki hand di atas pair bawaan board, sementara 81,6% sisanya mengandalkan high card. Pocket pair yang lebih tinggi dari enam menjadi kuat; TT memiliki equity 76,0% dalam contoh ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "👯",
@@ -119,7 +119,7 @@ Lead menghadapi dua masalah. Dengan trips, BB dapat membuat hand lebih lemah fol
 | EV (bb) | 2,17 | 3,33 |
 | **EQR (realisasi equity)** | **83,7%** | **114,5%** |
 
-Bagian pot BB menurut equity ialah ==5,5 × 47,2% = 2,60bb==, sedangkan EV-nya 2,17bb: ==2,17 ÷ 2,60 ≈ 83,7%==. BTN mempunyai bagian equity sekitar 2,90bb tetapi EV 3,33bb, sehingga merealisasikan **114,5%** dari bagian tersebut. Equity memperhitungkan pot yang dibagi; ini bukan sekadar frekuensi menang mutlak.
+Bagian pot BB menurut equity ialah ==5,5 × 47,2% = 2,60bb==, sedangkan EV-nya 2,17bb: ==2,17 ÷ 2,60 ≈ 83,5%==, yang ditampilkan solver sebagai **83,7%** karena solver menghitung dari nilai sebelum pembulatan. BTN mempunyai bagian equity sekitar 2,90bb tetapi EV 3,33bb, sehingga merealisasikan **114,5%** dari bagian tersebut di layar (sekitar 114,8% bila dihitung dari angka yang sudah dibulatkan). Equity memperhitungkan pot yang dibagi; ini bukan sekadar frekuensi menang mutlak.
 
 Selisih **30,8 poin persentase** hampir sama dengan 29,1 poin pada [board A-high kering](/id/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-id.webp"). **Board berpasangan ini menyerupai board kering dalam cara range bermain.** Sekitar empat perlima kedua range mengandalkan pair enam dengan high card berbeda. Pemain terakhir dapat melihat tindakan lawan sebelum mengambil keputusan, sehingga lebih mudah menentukan kapan mengambil value atau menahan ukuran pot.
 

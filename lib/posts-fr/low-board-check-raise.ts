@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Sur le flop bas rainbow 6♠5♥2♦, la grosse blinde checke 96,8 % et lead seulement 3,2 %, alors que ses 48,3 % d'équité sont la deuxième valeur la plus haute des sept spots où elle défend. Une seule main fait quinte ici, 4-3, et aucune des deux ranges ne l'a. Personne n'a le haut de range, donc personne ne lead hors de position. L'action vient plus tard : résous le même arbre au-delà du flop et la grosse blinde check-raise une mise de 1,8bb 14,9 % du temps, surtout avec des tirages.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -192,7 +192,7 @@ Nous avons lu les 487 lignes du tableau main par main, pas seulement le premier 
 Lis la deuxième colonne de haut en bas et le schéma saute aux yeux. **Sous la double paire, chaque main en haut de cette liste tient un tirage quinte** : les deux qui ont aussi une paire (64s et 54s) relancent avec le tirage attaché, pas avec la paire :
 
 - **98s** tient 5-6-8-9 et a besoin du ==7==.
-- **87s** tient 5-6-7-8 et prend le ==4 ou le 9== : le seul tirage quinte bilatéral **dans cette range**. ⚠ Pas le seul que le board permet : **74 fait 4-5-6-7** et attend le 3 ou le 8, un tirage bilatéral classique, et 84 est un double ventral avec les mêmes huit outs. Le 0,8 % du tableau des tirages veut dire que les ranges de ce solver n'ont pas de 74 assorti, pas que le board n'a qu'un seul tirage bilatéral.
+- **87s** tient 5-6-7-8 et prend le ==4 ou le 9== : le seul tirage quinte bilatéral **dans cette range**. ⚠ Pas le seul que le board permet : **74 fait 4-5-6-7** et attend le 3 ou le 8, un tirage bilatéral classique, et 84 est un double ventral avec huit outs bien à lui (les 3 et les 7). Le 0,8 % du tableau des tirages veut dire que les ranges de ce solver n'ont pas de 74 assorti, pas que le board n'a qu'un seul tirage bilatéral.
 - **J4s, Q4s, 54s et 64s** tiennent tous 2-4-5-6 et ont besoin du ==3==.
 
 **Aucune main en haut de cette liste n'a été choisie pour sa carte haute.**

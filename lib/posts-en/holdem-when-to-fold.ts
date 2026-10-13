@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips over time. A solid player folds around 75–85% of hands before the flop, releases missed hands facing a bet on a board that suits the opponent, and weak draws that don't meet their pot odds, after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -109,7 +109,7 @@ Folding trash is easy. Folding a *good* hand — top pair, an overpair, even a s
 | **Top pair, weak kicker** | Facing big turn + river bets | You beat bluffs and worse pairs — but their value range has you out-kicked |
 | **Overpair (JJ/QQ)** | A passive player raises a coordinated board | Passive players raise the nuts, not air — you're drawing thin |
 | **Top pair top kicker** | Board runs out four to a flush or straight | Your one pair can't beat the flush/straight they're repping |
-| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set still fills up ~34% of the time by the river against a made flush, and wins a stack when it does — call |
+| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set still makes a full house or quads ~34% of the time by the river against a made flush, and wins a stack when it does — call |
 | **Second pair** | Calling three streets "to keep them honest" | You're paying off value three times to catch one bluff |
 
 </div>

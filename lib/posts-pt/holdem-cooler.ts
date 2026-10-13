@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que quase nunca daria para foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. No sentido estrito usado neste guia, você estava atrás quando o dinheiro entrou e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do poker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -67,7 +67,7 @@ A forma mais limpa de não confundir:
 
 </div>
 
-Aqui estão os mesmos jogadores mostrando os dois, para a ficha cair. **Bad beat:** você tem A♠A♥, coloca tudo no all-in no preflop contra 7♣7♦, e um **7** aparece na mesa — seus ases eram favoritos de ~4 para 1 (cerca de 80%) e foram superados. **Cooler:** inverta — você tem os **7♣7♦**, flopa uma trinca de setes e coloca as fichas contra uma trinca vinda de um par maior. Você era o azarão do flop em diante, e uma trinca flopada quase nunca é foldada. Mesmas cartas, histórias opostas. Os dois são azar, não erro — o que vale checar é se a sua jogada realmente se sustentou; se não se sustentou, [revise sua jogada](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") em vez de apenas dar de ombros.
+Aqui estão os mesmos jogadores mostrando os dois, para a ficha cair. **[Bad beat](/pt/blog/holdem-bad-beat):** você tem A♠A♥, coloca tudo no all-in no preflop contra 7♣7♦, e um **7** aparece na mesa — seus ases eram favoritos de ~4 para 1 (cerca de 80%) e foram superados. **Cooler:** inverta — você tem os **7♣7♦**, flopa uma trinca de setes e coloca as fichas contra uma trinca vinda de um par maior. Você era o azarão do flop em diante, e uma trinca flopada quase nunca é foldada. Mesmas cartas, histórias opostas. Os dois são azar, não erro — o que vale checar é se a sua jogada realmente se sustentou; se não se sustentou, [revise sua jogada](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") em vez de apenas dar de ombros.
 
 ---
 
@@ -121,7 +121,7 @@ Agora a verdade incômoda, e a razão pela qual essa palavra importa para a sua 
 Existe um teste limpo, e jogadores honestos o usam depois de toda derrota grande:
 
 :::pull
-Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora — ranges, preço e profundidade de stack, não só o feeling? Se **não**, você jogou mal — e isso é um leak para corrigir, não azar. Se **sim** — e a jogada ainda se sustenta quando você de fato faz a conta com esses ranges e esse preço (muitos calls errados parecem certos toda vez) —, foi azar: em sentido estrito, um cooler se duas mãos fortes colidiram e você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado. Um projeto pago com o preço certo que não entrou não é nenhum dos dois — é só variância.
+Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora — ranges, preço e profundidade de stack, não só o feeling? Se **não**, eu joguei mal — e isso é um leak para corrigir, não azar. Se **sim** — e a jogada ainda se sustenta quando você de fato faz a conta com esses ranges e esse preço (muitos calls errados parecem certos toda vez) —, foi azar: em sentido estrito, um cooler se duas mãos fortes colidiram e você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado. Um projeto pago com o preço certo que não entrou não é nenhum dos dois — é só variância.
 :::
 
 Um cooler de verdade significa que você jogou corretamente com uma mão forte e esbarrou numa maior. No momento em que seu "cooler" envolve um call que não se sustenta nos ranges e no preço, um blefe do qual você se convenceu, ou um fold que deveria ter feito, ele deixa de ser um cooler e vira um **erro disfarçado.** Ser impiedosamente honesto sobre qual é qual — em vez de arquivar toda derrota como "azar" — é exatamente o que separa os jogadores que evoluem dos que continuam [fish](/pt/blog/holdem-fish) para sempre.
@@ -208,7 +208,7 @@ Até os melhores jogadores perdem mais ou menos tantos coolers quanto todo mundo
   </a>
   <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quem vence no showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como se desempata no poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Como empates e segundas melhores mãos são decididos</div>
   </a>
   <a href="/pt/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

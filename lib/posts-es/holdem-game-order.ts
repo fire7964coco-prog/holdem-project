@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con hasta cuatro rondas de apuestas. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-28",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -109,7 +109,7 @@ El turn es una calle con mucho peso estratégico:
 - ¿Qué dicen las acciones de tu rival en el preflop y el flop sobre su rango?
 - ¿Merece la pena llevar esta mano hasta el river?
 
-==r:Si pasas de forma pasiva en el turn y de repente sueltas una apuesta grande en el river, los rivales atentos leen debilidad.== ==g:**Con una mano fuerte, apuesta el turn para inflar el bote**== mientras tu rival todavía está dispuesto a pagar.
+==r:Si pasas de forma pasiva con una mano fuerte en el turn y esperas al river para soltar una apuesta grande, has regalado una calle entera de valor.== ==g:**Con una mano fuerte, apuesta el turn para inflar el bote**== mientras tu rival todavía está dispuesto a pagar.
 
 ---
 

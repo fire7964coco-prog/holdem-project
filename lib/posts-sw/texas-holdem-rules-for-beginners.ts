@@ -347,7 +347,7 @@ Daraja la msingi la mikono kutoka imara zaidi hadi dhaifu zaidi (pamoja na jinsi
 | 6 | Straight | 4.6% — hatarini kwa flushes/full houses |
 | 7 | Three of a kind | 4.8% — mkono mzuri, lakini bodi ni muhimu |
 | 8 | Two pair | 23.5% — mkono "imara" wa kawaida zaidi |
-| 9 | One pair | 43.8% — mkono unaotokea mara nyingi zaidi kwenye showdown |
+| 9 | One pair | 43.8% — mkono wa mwisho unaotokea mara nyingi zaidi |
 | 10 | High card | 17.4% — mkono dhaifu zaidi kwenye showdown; kwa kawaida hushinda tu wakati wengine nao hawakupata chochote |
 
 Ikiwa wachezaji wawili wana aina ileile ya mkono, linganisha karata za juu zinazohusika — ona kanuni za kicker na kuvunja sare. Ikiwa karata bora tano ni sawa kabisa, pot inagawanywa (split).

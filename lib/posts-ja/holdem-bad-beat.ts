@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "バッドビートとは、あなたが圧倒的有利——ふつう勝率80%以上——でチップを入れたのに、相手が最後にラッキーカードを引いて「サックアウト」し、逆転される負けのことです。言葉の意味はこれだけ。ただ厳密な意味でのクーラーと違い、チップが入った時点では前に出ていたのに、デッキが最後の最後で裏切ります。悔しいですが、バッドビートを何度も食らうのは、たいてい相手が後ろの状態でお金を入れてきているから——つまり、いたいと思える「勝てる場」にいる兆候なのです。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11分",
@@ -259,7 +259,7 @@ A. いいえ——ほとんどの場合、正反対です。バッドビート�
   </a>
   <a href="/ja/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">役の強さ</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ショーダウンで勝つのは誰か</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">引き分けの決め方</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">勝ち手が実際にどう決まるか</div>
   </a>
 </div>

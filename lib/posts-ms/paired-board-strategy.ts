@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "👯",
@@ -119,7 +119,7 @@ Lead sukar dari kedua-dua arah: dengan enam, banyak tangan lebih lemah akan fold
 | EV (bb) | 2.17 | 3.33 |
 | **EQR (realisasi equity)** | **83.7%** | **114.5%** |
 
-Bahagian equity BB bernilai ==5.5 × 47.2% = 2.60 bb==, tetapi EV (nilai jangkaan) ialah 2.17 bb — ==2.17 ÷ 2.60 ≈ 83.7%==. Bahagian BTN bernilai 2.90 bb berbanding EV 3.33 bb, maka realisasinya **114.5%**, melebihi nilai bahagian equity asal.
+Bahagian equity BB bernilai ==5.5 × 47.2% = 2.60 bb==, tetapi EV (nilai jangkaan) ialah 2.17 bb — ==2.17 ÷ 2.60 ≈ 83.5%==, yang dipaparkan oleh solver sebagai **83.7%** kerana solver menggunakan nilai sebelum pembundaran. Bahagian BTN bernilai 2.90 bb berbanding EV 3.33 bb, maka realisasinya **114.5%** pada skrin (kira-kira 114.8% jika dikira daripada angka yang sudah dibundarkan), melebihi nilai bahagian equity asal.
 
 Jurang **30.8 mata** hampir sama dengan 29.1 mata pada [board A-high kering](/ms/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-ms.webp"). **Board berpasangan bermain seperti board kering**: sekitar empat perlima range berkongsi pair enam dengan kad tinggi berbeza. Pot sering bergerak perlahan, dan pemain terakhir bertindak boleh melihat tindakan lawan sebelum memilih. Kelebihan maklumat itulah yang memisahkan kutipan kedua-duanya.
 

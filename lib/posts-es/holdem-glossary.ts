@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -36,7 +36,7 @@ El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que par
 
 ## Los términos que más se confunden
 
-Si solo vas a aclarar una docena de términos, que sean estos: son los que causan más lío (y los errores más caros) en la mesa:
+Si solo vas a aclarar ocho confusiones, que sean estas: son las que causan más lío (y los errores más caros) en la mesa:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

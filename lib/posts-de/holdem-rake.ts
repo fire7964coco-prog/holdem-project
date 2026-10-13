@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus den meisten Pots nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -201,7 +201,7 @@ A. Live ist der Prozentsatz meist höher und das Cap in der Regel größer, daf�
 
 **Q. Woran erkennst du, ob ein Raum einen fairen Rake hat?**
 
-A. Vier Angaben genügen, und alle vier stehen in den Tischinformationen deines Raums: der Prozentsatz, das Cap, ob „no flop, no drop“ gilt und ob das Cap an kleineren Tischen sinkt. Ein niedriges Cap ist dabei wichtiger als ein niedriger Prozentsatz, weil die meisten umkämpften Pots das Cap ohnehin erreichen. Rechne die Rückvergütung erst danach dazu – ein guter Rakeback-Deal repariert eine schlechte Grundstruktur nicht.
+A. Vier Angaben genügen, und alle vier stehen in den Tischinformationen deines Raums: der Prozentsatz, das Cap, ob „no flop, no drop“ gilt und ob das Cap an kleineren Tischen sinkt. Ein niedriges Cap ist dabei wichtiger als ein niedriger Prozentsatz, weil viele umkämpfte Pots das Cap ohnehin erreichen. Rechne die Rückvergütung erst danach dazu – ein guter Rakeback-Deal repariert eine schlechte Grundstruktur nicht.
 
 ---
 

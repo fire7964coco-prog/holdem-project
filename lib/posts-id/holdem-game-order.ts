@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan paling banyak empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 menit",
@@ -109,7 +109,7 @@ Turn adalah ronde dengan bobot strategi yang berat:
 - Apa kata aksi lawan Anda di preflop dan flop soal range kartunya?
 - Apakah hand ini layak dibawa sampai river?
 
-==r:Kalau Anda check pasif di turn lalu tiba-tiba melepas taruhan besar di river, lawan yang jeli akan membacanya sebagai kelemahan.== ==g:**Dengan kartu kuat, bertaruhlah di turn untuk membesarkan pot**== selagi lawan Anda masih mau call.
+==r:Kalau Anda check pasif dengan kartu kuat di turn lalu menunggu untuk melepas taruhan besar di river, Anda sudah membuang value satu street penuh.== ==g:**Dengan kartu kuat, bertaruhlah di turn untuk membesarkan pot**== selagi lawan Anda masih mau call.
 
 ---
 

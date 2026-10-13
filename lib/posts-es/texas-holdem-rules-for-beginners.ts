@@ -352,7 +352,7 @@ Jerarquía básica de manos, de la más fuerte a la más débil (con la frecuenc
 | 6 | Escalera | 4.6% — vulnerable a colores y fulls |
 | 7 | Trío | 4.8% — buena mano, pero la mesa importa |
 | 8 | Doble pareja | 23.5% — la mano "fuerte" más común |
-| 9 | Pareja | 43.8% — la mano más frecuente en el showdown |
+| 9 | Pareja | 43.8% — la mano final más común |
 | 10 | Carta alta | 17.4% — la mano más débil en el showdown; suele ganar solo cuando los demás tampoco ligaron |
 
 Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas relevantes — son las [reglas del kicker y los desempates](/es/blog/holdem-tiebreak-rules). Si las mejores cinco cartas son exactamente iguales, el bote se [divide](/es/blog/holdem-split-pot-rules).

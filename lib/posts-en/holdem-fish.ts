@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -93,7 +93,7 @@ No single sign is proof — even good players limp occasionally or chase a big d
 
 </div>
 
-Three distinctions competitors constantly blur, worth getting right:
+Three distinctions other guides constantly blur, worth getting right:
 
 - **Fish ≠ whale.** A whale is a *subset* of fish — one who loses **large** sums, usually wealthy and playing high stakes loosely. All whales are fish; not all fish are whales. A whale in the game is why sharks show up.
 - **Fish ≠ donkey.** Near-synonyms, but "donkey" stresses *bad decisions* and is harsher; "fish" stresses *inexperience and losing.* Calling someone a donk is more of an insult.

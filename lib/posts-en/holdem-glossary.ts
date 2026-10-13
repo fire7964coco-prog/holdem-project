@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -35,7 +35,7 @@ Poker has its own vocabulary, and knowing it does two things: it stops you looki
 
 ## The Terms People Mix Up Most
 
-If you only clear up a dozen terms, make it these — they're the ones that cause the most confusion (and the most costly mistakes) at the table:
+If you only clear up eight mix-ups, make it these — they're the ones that cause the most confusion (and the most costly mistakes) at the table:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang hampir tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Dalam arti ketat yang dipakai panduan ini, Anda sudah tertinggal saat chip masuk dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -67,7 +67,7 @@ Cara paling bersih untuk membedakannya:
 
 </div>
 
-Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar terasa. **Bad beat:** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sejak flop, dan sebuah flopped set nyaris tak pernah di-fold. Kartu yang sama, cerita yang berlawanan. Keduanya nasib buruk, bukan kesalahan — yang layak dicek adalah apakah permainan Anda benar-benar bertahan; jika tidak, [tinjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") alih-alih sekadar mengabaikannya.
+Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar terasa. **[Bad beat](/id/blog/holdem-bad-beat):** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sejak flop, dan sebuah flopped set nyaris tak pernah di-fold. Kartu yang sama, cerita yang berlawanan. Keduanya nasib buruk, bukan kesalahan — yang layak dicek adalah apakah permainan Anda benar-benar bertahan; jika tidak, [tinjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") alih-alih sekadar mengabaikannya.
 
 ---
 
@@ -121,7 +121,7 @@ Sekarang kebenaran yang tak nyaman, dan alasan kenapa istilah ini penting untuk 
 Ada tes lakmus yang bersih, dan pemain jujur memakainya setelah setiap kekalahan besar:
 
 :::pull
-Akankah saya membuat permainan yang persis sama lagi, hanya dengan informasi yang saya miliki saat itu — range, harga, dan kedalaman stack, bukan sekadar firasat? Jika **tidak**, Anda salah main — dan itu leak untuk diperbaiki, bukan nasib buruk. Jika **ya** — dan itu tetap bertahan saat Anda benar-benar menghitung range dan harga itu (banyak call yang salah terasa benar setiap kali) — itu nasib buruk: dalam arti ketat, cooler jika dua tangan kuat bertabrakan dan Anda tertinggal saat chip masuk, bad beat jika Anda unggul lalu tersalip. Draw yang di-call dengan harga yang pas lalu meleset bukan keduanya — itu sekadar variance.
+Akankah saya membuat permainan yang persis sama lagi, hanya dengan informasi yang saya miliki saat itu — range, harga, dan kedalaman stack, bukan sekadar firasat? Jika **tidak**, saya salah main — dan itu leak untuk diperbaiki, bukan nasib buruk. Jika **ya** — dan itu tetap bertahan saat Anda benar-benar menghitung range dan harga itu (banyak call yang salah terasa benar setiap kali) — itu nasib buruk: dalam arti ketat, cooler jika dua tangan kuat bertabrakan dan Anda tertinggal saat chip masuk, bad beat jika Anda unggul lalu tersalip. Draw yang di-call dengan harga yang pas lalu meleset bukan keduanya — itu sekadar variance.
 :::
 
 Cooler sejati berarti Anda bermain dengan benar dengan tangan kuat dan bertemu tangan yang lebih besar. Begitu "cooler" Anda melibatkan sebuah call yang tak bertahan saat dihitung dengan range dan harga, sebuah bluff yang Anda bujuk diri sendiri untuk melakukannya, atau sebuah fold yang seharusnya Anda buat, ia berhenti menjadi cooler dan menjadi **kesalahan yang menyamar.** Bersikap jujur tanpa ampun tentang mana yang mana — alih-alih menyimpan setiap kekalahan di bawah "sial" — persis itulah yang memisahkan pemain yang berkembang dari pemain yang tetap [fish](/id/blog/holdem-fish) selamanya.
@@ -208,7 +208,7 @@ Bahkan pemain terbaik kalah cooler kira-kira sebanyak orang lain — selisihnya 
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peringkat Kartu</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Siapa Menang di Showdown</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagaimana Seri Dipecahkan</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana seri dan tangan kedua-terbaik ditentukan</div>
   </a>
   <a href="/id/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

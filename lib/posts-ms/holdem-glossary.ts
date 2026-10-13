@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosari ringkas istilah poker yang benar-benar muncul dalam permainan Texas Hold'em, disusun ikut cara anda menemuinya: aksi pertaruhan, posisi, tangan dan board, jenis pemain, wang serta situasi di meja. Mulakan dengan istilah yang paling sering keliru (check vs call, set vs trips, cooler vs bad beat), kemudian semak ikut kategori. Istilah yang ada panduan lebih mendalam dipautkan terus ke artikelnya.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -36,7 +36,7 @@ Poker ada perbendaharaan katanya sendiri, dan menguasainya memberi dua kelebihan
 
 ## Istilah Poker Mana yang Paling Sering Keliru?
 
-**Lapan perkara di bawah paling kerap tertukar di meja: check dan call, blind dan ante, set dan trips, cooler dan bad beat, value bet dan bluff, pot odds dan implied odds, VPIP dan PFR, serta cara mengira 3-bet.** Jika anda hanya sempat menguasai sedozen istilah, mulakan dengan yang ini — itulah punca paling banyak kekeliruan (dan kesilapan paling mahal) di meja.
+**Lapan perkara di bawah paling kerap tertukar di meja: check dan call, blind dan ante, set dan trips, cooler dan bad beat, value bet dan bluff, pot odds dan implied odds, VPIP dan PFR, serta cara mengira 3-bet.** Jika anda hanya sempat membetulkan lapan kekeliruan, mulakan dengan yang ini — itulah punca paling banyak kekeliruan (dan kesilapan paling mahal) di meja.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

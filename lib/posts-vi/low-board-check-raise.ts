@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Trên flop rainbow thấp 6♠5♥2♦, big blind check 96,8% và chỉ lead 3,2% — dù 48,3% equity của nó là mức cao thứ hai trong bảy spot mà nó phòng thủ. Chỉ một tay bài làm được sảnh ở đây, 4-3, và không range nào cầm nó. Không ai có đầu mạnh nhất của board, nên không ai lead khi không có vị trí. Hành động đến sau: solve lại cùng cây bài này để xem tiếp sau flop, và big blind check-raise một cú bet 1,8bb với tần suất 14,9%, phần lớn bằng draw.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -197,7 +197,7 @@ Chúng tôi đọc hết 487 hàng của bảng theo từng tay bài, chứ khô
 Đọc cột thứ hai từ trên xuống, quy luật hiện ra không thể bỏ sót. **Dưới mức hai đôi, mọi tay ở phần đầu danh sách này đều cầm draw sảnh** — hai tay có thêm một đôi (64s và 54s) raise nhờ draw đi kèm, không phải nhờ đôi:
 
 - **98s** cầm 5-6-8-9 và cần lá ==7==.
-- **87s** cầm 5-6-7-8 và ăn được ==lá 4 hoặc lá 9== — OESD duy nhất **trong range này**. ⚠ Không phải OESD duy nhất mà board cho phép: **74 làm thành 4-5-6-7** và chờ lá 3 hoặc lá 8, một OESD chuẩn sách giáo khoa, còn 84 là double gutshot với cùng tám outs. Con số 0,8% trong bảng draw nghĩa là range của solver này không có 74 đồng chất, chứ không phải board chỉ có một OESD.
+- **87s** cầm 5-6-7-8 và ăn được ==lá 4 hoặc lá 9== — OESD duy nhất **trong range này**. ⚠ Không phải OESD duy nhất mà board cho phép: **74 làm thành 4-5-6-7** và chờ lá 3 hoặc lá 8, một OESD chuẩn sách giáo khoa, còn 84 là double gutshot với tám outs của riêng nó (các lá 3 và lá 7). Con số 0,8% trong bảng draw nghĩa là range của solver này không có 74 đồng chất, chứ không phải board chỉ có một OESD.
 - **J4s, Q4s, 54s và 64s** đều cầm 2-4-5-6 và cần lá ==3==.
 
 **Không một tay nào ở phần đầu danh sách được chọn vì lá cao.**

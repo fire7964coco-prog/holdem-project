@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "这是一份大白话的德州扑克术语表，收的都是牌桌上真会碰到的词，按你怎么遇到它们来分组——下注动作、位置、牌型和牌面、玩家类型、钱，以及牌桌情境。先看下面那组“最容易搞混”的词（过牌 vs 跟注、set vs trips、cooler vs bad beat），再按分类随便翻。有深入指南的术语会直接给你链接。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 分钟",
@@ -41,7 +41,7 @@ export const POST: Post = {
 > **快速回答**
 > 最容易搞混的一共 8 个：过牌 vs 跟注、盲注 vs 前注、set vs trips、cooler vs bad beat、价值下注 vs 诈唬、底池赔率 vs 隐含赔率、VPIP vs PFR，再加上 3bet 的数法。每个都用一句话分清，再看说错动作的后果。
 
-如果你只想先捋清十来个词，就先捋这些——它们是牌桌上引起最多困惑（也造成最贵错误）的那几个：
+如果你只想先捋清 8 组容易混淆的词，就先捋这些——它们是牌桌上引起最多困惑（也造成最贵错误）的那几个：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

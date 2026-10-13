@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "cooler 就是你握着一手极强的牌、却输掉一个大底池，而且这手牌你几乎不可能正确地弃掉——比如口袋 KK 撞上 AA，或者暗三条输给更大的暗三条。按本文采用的严格定义，筹码进池时你就已经落后，也没有哪张幸运牌把你“翻盘”；你打得完全正确，却还是输了。这是扑克里最诚实的一种灾难。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 分钟",
@@ -73,7 +73,7 @@ export const POST: Post = {
 
 </div>
 
-用同一对牌手把两边都演一遍，你就通透了。**bad beat：**你握着 A♠A♥，翻前对着 7♣7♦ 全下，然后一张 **7** 上了牌面——你的 AA 本是约 4:1 的热门（大约 80%），却被反超。**cooler：**反过来——你握着 **7♣7♦**，翻牌凑成一组暗三条 7，然后对着一手由更大对子凑成的暗三条把筹码全送了进去。从翻牌起你就是弱势的一方，而一组翻牌暗三条几乎没人会弃。同样的牌，相反的故事。两者都是运气差、不是失误——真正值得检查的是你的打法站不站得住；站不住，就该去 [复盘你的打法](/zh/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")，而不是耸耸肩放下它。
+用同一对牌手把两边都演一遍，你就通透了。**[bad beat](/zh/blog/holdem-bad-beat)：**你握着 A♠A♥，翻前对着 7♣7♦ 全下，然后一张 **7** 上了牌面——你的 AA 本是约 4:1 的热门（大约 80%），却被反超。**cooler：**反过来——你握着 **7♣7♦**，翻牌凑成一组暗三条 7，然后对着一手由更大对子凑成的暗三条把筹码全送了进去。从翻牌起你就是弱势的一方，而一组翻牌暗三条几乎没人会弃。同样的牌，相反的故事。两者都是运气差、不是失误——真正值得检查的是你的打法站不站得住；站不住，就该去 [复盘你的打法](/zh/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")，而不是耸耸肩放下它。
 
 ---
 
@@ -139,7 +139,7 @@ cooler 有一整个能认出来的家族。在几乎每一种里，*两*手牌�
 有一个干净的试金石，诚实的牌手每次大输之后都会用：
 
 :::pull
-如果只用当时手上的信息——范围、价格和筹码深度，而不只是直觉——我会不会一模一样地再打一遍？如果**不会**，那你打错了——这是个要修的漏洞，不是坏运气。如果**会**——而且拿那些范围和那个价格真去算一遍也还站得住（很多错的跟注每次都感觉是对的）——那就是坏运气：严格意义上，两手强牌相撞、筹码进池时你落后，是 cooler；你领先却被反超，是 bad beat。一个按价格跟进去、最后没中的听牌，两者都不是——只是方差。
+如果只用当时手上的信息——范围、价格和筹码深度，而不只是直觉——我会不会一模一样地再打一遍？如果**不会**，那我打错了——这是个要修的漏洞，不是坏运气。如果**会**——而且拿那些范围和那个价格真去算一遍也还站得住（很多错的跟注每次都感觉是对的）——那就是坏运气：严格意义上，两手强牌相撞、筹码进池时你落后，是 cooler；你领先却被反超，是 bad beat。一个按价格跟进去、最后没中的听牌，两者都不是——只是方差。
 :::
 
 一次真正的 cooler，意味着你握着一手强牌打得正确、却撞上了一手更大的。可一旦你的“cooler”里牵扯到一个拿范围和价格检验站不住的跟注、一个你把自己说服进去的诈唬、或者一个你本该做的弃牌，它就不再是 cooler，而成了**一个乔装打扮的失误。**对哪个是哪个保持残酷的诚实——而不是把每次失败都归档到“运气差”——正是让进步的玩家和永远停留在 [fish](/zh/blog/holdem-fish) 的玩家区分开的东西。
@@ -229,7 +229,7 @@ A. 不完全是——这个词有一层更老的赌博含义。在赌场的传�
   </a>
   <a href="/zh/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">摊牌时谁赢</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">平局怎么判</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">平分和第二好的牌怎么裁定</div>
   </a>
   <a href="/zh/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

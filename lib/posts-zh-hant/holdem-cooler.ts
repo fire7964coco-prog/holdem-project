@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "冤家牌（Cooler，又稱冷牌組）＝你拿著一手強到幾乎不可能正確蓋掉的牌，卻正好撞上更大的一手，輸掉大底池。像 KK 撞 AA，或暗三條撞更大的暗三條。照本文採用的嚴格定義，籌碼進池時你就已經落後、也沒有任何一張幸運牌反超你——你打得完全正確，還是輸了。這是撲克裡最誠實的一種災難。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 分鐘",
@@ -73,7 +73,7 @@ export const POST: Post = {
 
 </div>
 
-用同一組玩家把兩邊都演一次，你就懂了。**爆冷門：** 你拿 A♠A♥，翻牌前全下對上 7♣7♦，一張 **7** 出現在牌面上——你的口袋 A 本來是約 4 比 1 的優勢方（大約 80%）卻被追過。**冤家牌：** 把它反過來——你拿 **7♣7♦**，翻牌中了一組暗三條 7，然後對上一組由更大對子做成的暗三條、把籌碼全推進去。從翻牌起你就是弱勢方，而一組翻牌成的暗三條幾乎沒有人會蓋。同樣的牌，相反的故事。兩者都是運氣不好、不是失誤——真正值得檢查的，是你的打法站不站得住：站不住，就[回頭檢討這手打法](/zh-hant/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")，別聳聳肩帶過；站得住，就去看看[這種對撞本來多久發生一次](/zh-hant/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")，然後放下。
+用同一組玩家把兩邊都演一次，你就懂了。**[爆冷門](/zh-hant/blog/holdem-bad-beat)：** 你拿 A♠A♥，翻牌前全下對上 7♣7♦，一張 **7** 出現在牌面上——你的口袋 A 本來是約 4 比 1 的優勢方（大約 80%）卻被追過。**冤家牌：** 把它反過來——你拿 **7♣7♦**，翻牌中了一組暗三條 7，然後對上一組由更大對子做成的暗三條、把籌碼全推進去。從翻牌起你就是弱勢方，而一組翻牌成的暗三條幾乎沒有人會蓋。同樣的牌，相反的故事。兩者都是運氣不好、不是失誤——真正值得檢查的，是你的打法站不站得住：站不住，就[回頭檢討這手打法](/zh-hant/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp")，別聳聳肩帶過；站得住，就去看看[這種對撞本來多久發生一次](/zh-hant/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")，然後放下。
 
 ---
 
@@ -141,7 +141,7 @@ export const POST: Post = {
 有一個乾淨的試金石，誠實的牌手在每次大輸之後都會用：
 
 :::pull
-只憑我當下手上有的資訊——範圍、價格和籌碼深度，而不只是直覺——我會不會一模一樣地再打一次？如果**不會**，那你打錯了——那是要修的漏洞，不是壞運氣。如果**會**——而且拿那些範圍和那個價格真的算一遍也還站得住（很多錯的跟注每次都感覺是對的）——那就是壞運氣：嚴格意義上，兩手強牌相撞、籌碼進池時你落後，是冤家牌；你領先卻被追過，是爆冷門。一個照價格跟進去、最後沒中的聽牌，兩者都不是——只是方差。
+只憑我當下手上有的資訊——範圍、價格和籌碼深度，而不只是直覺——我會不會一模一樣地再打一次？如果**不會**，那我打錯了——那是要修的漏洞，不是壞運氣。如果**會**——而且拿那些範圍和那個價格真的算一遍也還站得住（很多錯的跟注每次都感覺是對的）——那就是壞運氣：嚴格意義上，兩手強牌相撞、籌碼進池時你落後，是冤家牌；你領先卻被追過，是爆冷門。一個照價格跟進去、最後沒中的聽牌，兩者都不是——只是方差。
 :::
 
 真正的冤家牌，代表你拿著一手強牌打得正確、卻撞上更大的一手。一旦你的「冤家牌」牽扯到一個拿範圍和價格檢驗站不住的跟注、一個你說服自己去打的詐唬、或一個你本該蓋掉的牌，它就不再是冤家牌，而變成 **一個披著偽裝的失誤**。對於哪個是哪個保持殘酷的誠實——而不是把每一次輸都歸檔進「運氣不好」——正是會進步的牌手和永遠停在原地的[肥羊](/zh-hant/blog/holdem-fish)之間的差別。
@@ -231,7 +231,7 @@ A. 不太一樣——這個詞有更古老的賭博含義。在賭場的傳說�
   </a>
   <a href="/zh-hant/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">哪一手在攤牌時獲勝</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">平手怎麼判</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">平手與第二大牌是怎麼判定的</div>
   </a>
   <a href="/zh-hant/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

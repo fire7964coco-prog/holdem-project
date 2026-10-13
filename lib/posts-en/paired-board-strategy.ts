@@ -95,7 +95,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-02",
+  updated: "2026-10-13",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -212,7 +212,7 @@ Leading into that fails from both ends: with a six you fold out only the hands y
 | EV (bb) | 2.17 | 3.33 |
 | **EQR (equity realization)** | **83.7%** | **114.5%** |
 
-The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17bb — ==2.17 ÷ 2.60 ≈ 83.7%==. The button's share is 2.90bb against 3.33bb of EV, so it collects **114.5%**, more than its equity is worth.
+The big blind's share of the pot is ==5.5 × 47.2% = 2.60bb==, and it books 2.17bb — ==2.17 ÷ 2.60 ≈ 83.5%==, which the solver, working from unrounded values, shows as **83.7%**. The button's share is 2.90bb against 3.33bb of EV, so it collects **114.5%** on screen (about 114.8% from the rounded figures), more than its equity is worth.
 
 The **30.8-point** gap is almost exactly the 29.1 points of the [dry ace-high board](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp"). **A paired board plays like a dry one** — four ranges out of five are the same pair of sixes with a different high card, so the hand runs quietly, and the player who acts last gets to see which high card showed up before choosing. That advantage is the whole gap.
 

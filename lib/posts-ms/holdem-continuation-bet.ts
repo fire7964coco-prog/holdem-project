@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) ialah bet pada flop oleh pemain yang raise preflop. Jangan c-bet setiap flop: bet board tinggi dan kering (K-7-2) dengan saiz kecil dan kerap, check board rendah yang bersambung (7-6-5). Saiz kira-kira satu pertiga pot di board kering, dua pertiga atau lebih di board basah; jauh kurang dalam pot multiway.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 minit",
@@ -183,7 +183,7 @@ Perubahan cara berfikir yang menjadikan anda pemenang: **check bukan menyerah ka
 
 Dua spot daripada sesi yang sama menunjukkan kedua-dua belah keputusan ini.
 
-**Spot 1 — c-bet ikut buku teks.** Saya raise ==A♣K♦== dan big blind call. Flop: ==K♠ 7♦ 2♣.== Itu board tinggi, kering dan tidak bersambung yang milik range saya — dan saya dapat **top pair, top kicker**: K♦ saya berpasangan dengan K♠, dan As menjadi kicker terbaik yang mungkin (lima kad terbaik = K♦ K♠ A♣ 7♦ 2♣). Saya bet **satu pertiga pot** sebagai range bet: ia mengenakan bayaran kepada semua tangan dia yang terlepas dan mengekalkan king serta pair yang lebih lemah dalam permainan. C-bet yang mudah dan menguntungkan.
+**Spot 1 — c-bet ikut buku teks.** Saya raise ==A♣K♦== dan big blind call. Flop: ==K♠ 7♦ 2♣.== Itu board tinggi, kering dan tidak bersambung yang milik range saya — dan saya dapat **top pair, top kicker**: K♦ saya berpasangan dengan K♠, dan As menjadi kicker terbaik yang mungkin (lima kad terbaik = K♦ K♠ A♣ 7♦ 2♣). Saya bet **satu pertiga pot** sebagai range bet: ia memberi tekanan kepada tangan dia yang terlepas dan mengekalkan king serta pair yang lebih lemah dalam permainan. C-bet yang mudah dan menguntungkan.
 
 **Spot 2 — check ikut buku teks.** Sesi yang sama, saya raise ==A♥Q♥== dan big blind call. Flop: ==7♠ 6♠ 5♦.== Board ini menghancurkan tepat tangan yang dia gunakan untuk call — suited connector, pair kecil dan straight — sedangkan saya hanya ada ace-high tanpa pair dan tanpa draw (tiada heart di board, jadi backdoor flush pun tidak ada). Dua tahun sebelumnya, saya akan "meneruskan" kerana tabiat dan kena raise. Kali ini saya **check dan lepaskan.** Jika turn yang selamat datang dan saya dapat equity tambahan, delayed c-bet masih ada; jika tidak, saya hanya rugi sedikit.
 

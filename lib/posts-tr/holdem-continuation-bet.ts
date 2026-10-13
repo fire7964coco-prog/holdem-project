@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman), multiway potlarda ise çok daha az.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -191,7 +191,7 @@ Seni kazanan oyuncuya çeviren zihniyet değişikliği şu: **check teslim olmak
 
 Aynı seanstan iki durum, kararın iki yüzünü de gösteriyor.
 
-**Durum 1 — ders kitabı gibi bir c-bet.** ==A♣K♦== ile raise yapıyorum, big blind call ediyor. Flop: ==K♠ 7♦ 2♣.== Bu, benim range'ime ait yüksek, kuru, bağlantısız bir board — ve flop'ta **top pair, top kicker** yaptım: K♦'m K♠ ile çift oluyor, as da mümkün olan en iyi kicker (en iyi beş kart = K♦ K♠ A♣ 7♦ 2♣). Range bet olarak **potun üçte biri** kadar bahis yapıyorum: onun bütün ıskalamış ellerine bedel ödetiyor, daha kötü papazları ve çiftleri oyunda tutuyor. Kolay, kârlı bir c-bet.
+**Durum 1 — ders kitabı gibi bir c-bet.** ==A♣K♦== ile raise yapıyorum, big blind call ediyor. Flop: ==K♠ 7♦ 2♣.== Bu, benim range'ime ait yüksek, kuru, bağlantısız bir board — ve flop'ta **top pair, top kicker** yaptım: K♦'m K♠ ile çift oluyor, as da mümkün olan en iyi kicker (en iyi beş kart = K♦ K♠ A♣ 7♦ 2♣). Range bet olarak **potun üçte biri** kadar bahis yapıyorum: onun ıskalamış ellerine baskı kuruyor, daha kötü papazları ve çiftleri oyunda tutuyor. Kolay, kârlı bir c-bet.
 
 **Durum 2 — ders kitabı gibi bir check.** Aynı seans, ==A♥Q♥== ile raise yapıyorum, big blind call ediyor. Flop: ==7♠ 6♠ 5♦.== Bu board, tam olarak onun call ettiği ellere — suited connector'lara, küçük çiftlere ve kent yapan ellere — çok iyi oturuyor; bende ise çiftsiz, draw'sız sadece as yüksek var (board'da hiç kupa yok, yani backdoor floş bile yok). İki yıl önce alışkanlıkla "devam eder" ve raise yerdim. Şimdi **check edip bırakıyorum.** Güvenli bir turn gelir ve equity toplarsam delayed c-bet seçeneği hâlâ masada; gelmezse minimumu kaybetmiş olurum.
 

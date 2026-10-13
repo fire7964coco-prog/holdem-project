@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mkono mmoja wa Texas Hold'em huenda hivi: weka blinds → gawa karata mbili za mkononi → preflop → flop (karata 3) → turn (karata 1) → river (karata 1) → showdown, ukiwa na raundi nne za kuweka dau kwa jumla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Turn ni street yenye uzito mkubwa wa kimkakati:
 - Vitendo vya mpinzani wako vya preflop na flop vinasema nini kuhusu range yake?
 - Je, mkono huu unastahili kuupeleka hadi river?
 
-==r:Uki-check kwa upole kwenye turn kisha ghafla ukatupa bet kubwa kwenye river, wapinzani makini husoma udhaifu.== ==g:**Ukiwa na mkono imara, bet turn kujenga pot**== wakati mpinzani wako bado yuko tayari ku-call.
+==r:Ukiwa na mkono imara uki-check kwa upole kwenye turn na kusubiri river ili kutupa bet kubwa, umepoteza raundi nzima ya bets ambazo mpinzani angeweza ku-call.== ==g:**Ukiwa na mkono imara, bet turn kujenga pot**== wakati mpinzani wako bado yuko tayari ku-call.
 
 ---
 

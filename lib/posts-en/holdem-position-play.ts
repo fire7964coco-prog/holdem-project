@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why, at a full-ring table, UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -125,7 +125,7 @@ The distinction matters: the **big blind loses the most raw chips per 100 hands*
 
 Playing UTG well is mostly about restraint:
 
-- **Open roughly the top ~13% of hands** — the core is strong pairs (TT+), AK/AQ, and the best suited broadways (AJs, KQs), rounded out by the medium pairs and top suited aces you add as you loosen. For the exact hand-by-hand grid, use the [starting hands chart](/en/blog/holdem-starting-hands-chart).
+- **Open roughly the top ~13% of hands** — the core is strong pairs (TT+), AK, AQs and the best suited broadways (AJs, KQs), rounded out by the medium pairs, AQo and top suited aces you add as you loosen. For the exact hand-by-hand grid, use the [starting hands chart](/en/blog/holdem-starting-hands-chart).
 - **Fold the pretty-but-dominated stuff.** KJo and QJo look playable and quietly bleed chips from UTG — when they hit, someone behind often hits bigger.
 - **Expect to play the hand OOP.** Whoever calls your UTG open probably has position on you for three streets, so your range needs to be strong enough to stand that tax.
 
@@ -278,7 +278,7 @@ A. Raise or fold — don't open-limp. A hand strong enough to play from the wors
 
 **Q. How wide should I open from UTG vs the button?**
 
-A. From UTG in a full ring game, open roughly the top ~13% of hands — built around strong pairs, AK/AQ, and the best suited broadways, rounded out by medium pairs and top suited aces. From the button, around ~43% is profitable because guaranteed last action compensates for weaker cards. In 6-max, UTG widens to about ~17%, playing like a full-ring lojack.
+A. From UTG in a full ring game, open roughly the top ~13% of hands — built around strong pairs, AK, AQs and the best suited broadways, rounded out by medium pairs, AQo and top suited aces. From the button, around ~43% is profitable because guaranteed last action compensates for weaker cards. In 6-max, UTG widens to about ~17%, playing like a full-ring lojack.
 
 **Q. How does position affect c-bet frequency?**
 

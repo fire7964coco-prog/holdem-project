@@ -347,7 +347,7 @@ Podstawowy ranking układów, od najsilniejszego do najsłabszego (z częstości
 | 6 | Strit | 4,6% — wrażliwy na kolory i fulle |
 | 7 | Trójka | 4,8% — dobry układ, ale liczy się board |
 | 8 | Dwie pary | 23,5% — najczęstszy „mocny" układ |
-| 9 | Para | 43,8% — najczęstszy układ na showdownie |
+| 9 | Para | 43,8% — najczęstszy układ końcowy |
 | 10 | Najwyższa karta | 17,4% — najsłabszy układ na showdownie; zwykle wygrywa tylko wtedy, gdy pozostali też nic nie trafili |
 
 Jeśli dwaj gracze mają ten sam typ układu, porównuje się najwyższe istotne karty — to reguły kickera i rozstrzygania remisów. Jeśli najlepsze pięć kart jest dokładnie takich samych, pula zostaje podzielona.

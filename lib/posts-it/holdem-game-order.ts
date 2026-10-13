@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una mano di Texas Hold'em segue quest'ordine: si mettono i bui → si distribuiscono due carte personali → preflop → flop (3 carte) → turn (1 carta) → river (1 carta) → showdown, con quattro giri di puntate in tutto.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -107,7 +107,7 @@ Il turn è una strada dal grande peso strategico:
 - Cosa dicono le azioni dell'avversario nel preflop e nel flop sul suo range?
 - Vale la pena portare questa mano fino al river?
 
-==r:Se bussi in modo passivo al turn e poi all'improvviso spari una puntata grossa al river, gli avversari attenti leggono debolezza.== ==g:**Con una mano forte, punta al turn per gonfiare il piatto**== mentre l'avversario è ancora disposto a chiamare.
+==r:Se con una mano forte bussi in modo passivo al turn e aspetti il river per sparare una puntata grossa, hai rinunciato a un intero giro di puntate che l'avversario avrebbe pagato.== ==g:**Con una mano forte, punta al turn per gonfiare il piatto**== mentre l'avversario è ancora disposto a chiamare.
 
 ---
 

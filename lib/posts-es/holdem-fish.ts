@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -94,7 +94,7 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 
 </div>
 
-Tres distinciones que la competencia mezcla sin parar, y que conviene tener claras:
+Tres distinciones que otras guías mezclan sin parar, y que conviene tener claras:
 
 - **Fish ≠ ballena.** Una ballena es un *subconjunto* de fish — uno que pierde sumas **grandes**, normalmente adinerado y jugando altos límites de forma suelta. Todas las ballenas son fish; no todos los fish son ballenas. Una ballena en la partida es la razón por la que aparecen los tiburones.
 - **Fish ≠ donk.** Casi sinónimos, pero "donk" recalca las *malas decisiones* y es más despectivo; "fish" recalca la *inexperiencia y las pérdidas*. Llamar a alguien donk es más un insulto.

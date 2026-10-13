@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -94,7 +94,7 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 
 </div>
 
-Tiga pembedaan yang terus dikaburkan kompetitor, layak dibuat benar:
+Tiga pembedaan yang terus dikaburkan panduan lain, layak dibuat benar:
 
 - **Fish ≠ whale.** Whale adalah *subset* dari fish — yang kalah dalam jumlah **besar**, biasanya kaya dan memainkan stakes tinggi secara loose. Semua whale adalah fish; tak semua fish adalah whale. Adanya whale di permainan itulah kenapa shark muncul.
 - **Fish ≠ donkey.** Nyaris sinonim, tapi "donkey" menekankan *keputusan buruk* dan lebih kasar; "fish" menekankan *ketidakberpengalaman dan kekalahan.* Menyebut seseorang donk lebih merupakan hinaan.

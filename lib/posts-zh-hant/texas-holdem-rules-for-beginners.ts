@@ -389,7 +389,7 @@ export const POST: Post = {
 | 6 | 順子 | 4.6%——怕同花和葫蘆 |
 | 7 | 三條 | 4.8%——好牌，但要看牌面 |
 | 8 | 兩對 | 23.5%——最常見的「強牌」 |
-| 9 | 一對 | 43.8%——攤牌時出現最多的牌型 |
+| 9 | 一對 | 43.8%——最終成牌中最常見的牌型 |
 | 10 | 高牌 | 17.4%——攤牌時最弱的牌型；通常只有大家都沒中時才贏 |
 
 如果兩名玩家牌型相同，就比各自牌型裡最關鍵的高牌——這就是[踢腳牌](/zh-hant/blog/holdem-kicker)與[平手判定規則](/zh-hant/blog/holdem-tiebreak-rules)。如果雙方最強的五張牌完全一樣，就[平分底池](/zh-hant/blog/holdem-split-pot-rules)（Chop）。完整的比法，看這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)。
