@@ -11,7 +11,7 @@ export const POST: Post = {
   updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "15 phút",
+  readTime: "18 phút",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "Một người chơi poker đặt chip cược lên flop vừa mở sau khi raise preflop, khoảnh khắc continuation bet kinh điển trên mặt nỉ xanh",
@@ -93,6 +93,99 @@ Phần tinh tế: bạn có thể có cái này mà không có cái kia. Trên A
 
 ---
 
+## Solver c-bet bao nhiêu phần trăm trên từng loại board?
+
+**Trong pot raise đơn mà button open và big blind call, solver cho button c-bet 54,7% toàn bộ range sau khi big blind check.** Con số trung bình đó che đi một khoảng chênh rất rộng: từ 43,5% trên flop A-high đến 67,8% trên flop có đôi, và cỡ cược chính cũng khác nhau. Flop có đôi và flop K-high dựa vào cú bet một phần ba pot; còn flop A-high, flop 10/9-high và flop thấp thực ra dùng cú bet 75% nhiều hơn. Các bảng dưới đây gom toàn bộ 1.755 flop đã tính sẵn theo loại board.
+
+> **Những con số này được tính thế nào** — Kết quả từ [GTO solver HoldemMaster](/vi/solver) cho spot BTN open, BB call trên 1.755 flop (gộp theo chất tương đương) — stack 100bb · bet flop 33%/75% · bet turn và river 60% · raise 60% · không tính rake · exploitability mục tiêu 0,3%. Range đầu vào = bảng range preflop của solver (range đồng thuận dựng từ nguồn công khai). Đây là phép tính heads-up, nên không áp thẳng sang pot nhiều người được.
+
+### Theo lá cao nhất — c-bet của button sau khi BB check
+
+Trong tổng số 22.100 flop có thể ra, loại phổ biến nhất là Q-high hoặc J-high (23,5%), còn loại button c-bet ít nhất là A-high (43,5%).
+
+| Loại board | Tỷ lệ flop | Tổng c-bet | 33% | 75% |
+|:---|:---:|:---:|:---:|:---:|
+| **Có đôi** | 17,2% | **67,8%** | 60,6% | 7,2% |
+| **A-high** | 19,1% | **43,5%** | 16,3% | 27,2% |
+| **K-high** | 15,9% | **57,2%** | 40,8% | 16,4% |
+| **Q/J-high** | 23,5% | **52,1%** | 27,5% | 24,7% |
+| **10/9-high** | 14,2% | **53,2%** | 19,8% | 33,4% |
+| **Thấp (8-high trở xuống)** | 10,1% | **57,7%** | 23,8% | 33,8% |
+| **Mọi flop** | 100% | **54,7%** | 31,7% | 23,0% |
+
+Ngay trong cùng một loại, tổng c-bet vẫn dao động mạnh từ flop này sang flop khác. Đây là các flop trong mỗi loại mà button bet ít nhất và nhiều nhất:
+
+| Loại board | Bet ít nhất | Bet nhiều nhất |
+|:---|:---|:---|
+| **Có đôi** | A♣Q♦Q♣ 37,7% | 7♥7♦7♣ 97,1% |
+| **A-high** | A♣9♣2♣ 28,5% | A♥7♦2♣ 59,0% |
+| **K-high** | K♣Q♣2♣ 32,5% | K♥7♦2♣ 90,2% |
+| **Q/J-high** | Q♥J♦8♣ 35,5% | Q♥7♦2♣ 84,7% |
+| **10/9-high** | 10♣9♦7♣ 38,5% | 10♥6♦2♣ 73,5% |
+| **Thấp (8-high trở xuống)** | 8♦7♦4♣ 46,4% | 7♥6♦2♣ 76,3% |
+| **Mọi flop** | A♣9♣2♣ 28,5% | 7♥7♦7♣ 97,1% |
+
+Khoảng chênh bên trong mỗi loại mới là bài học thật của bảng này. Một board K-high khô như K♥7♦2♣ được bet 90,2% số lần, nhưng board monotone K♣Q♣2♣ tụt xuống 32,5%. "K-high thì cứ bet" là chưa đủ; bạn phải đọc **độ cao, chất và độ liền nhau cùng một lúc**. Trên board có đôi, gần như toàn bộ phần c-bet là cỡ nhỏ (60,6% trong 67,8%), khớp với quy tắc "nhỏ trên board khô" ở phần sizing bên dưới. Chỗ duy nhất dữ liệu đi ngược quy tắc kinh nghiệm là A-high: tính trên cả loại, cú bet 75% phổ biến hơn cú bet 33% (27,2% so với 16,3%). Và cũng không phải các flop monotone kéo trung bình đó lên — chỉ riêng các flop A-high rainbow vẫn dùng cú bet lớn nhiều hơn (25,9% so với 18,8%). Một board cụ thể như A-7-2 vẫn có thể chọn size khác với trung bình của cả loại.
+
+### Theo chất và độ liền nhau — cùng phép tính trên một trục khác
+
+| Loại board | Tỷ lệ flop | Tổng c-bet | 33% · 75% |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (ba chất khác nhau) | 39,8% | **58,8%** | 36,1% · 22,7% |
+| **Hai chất** (hai lá cùng chất) | 55,1% | **52,6%** | 28,7% · 23,9% |
+| **Monotone** (ba lá cùng chất) | 5,2% | **44,2%** | 29,2% · 15,1% |
+| **Liền nhau** (không đôi · cả ba lá nằm trong năm bậc) | 18,5% | **49,1%** | 18,8% · 30,3% |
+| **Rời rạc** (không đôi · phần còn lại) | 64,3% | **52,8%** | 27,7% · 25,1% |
+
+Chất càng dồn về một, button càng c-bet ít (58,8% → 52,6% → 44,2%), còn board liền nhau được bet ít hơn nhưng lấy cỡ 75% làm cú bet chính. "Liền nhau" ở đây nghĩa là ba bậc khác nhau nằm gọn trong năm bậc liên tiếp (bậc cao nhất trừ bậc thấp nhất không quá 4, và lá A cũng có thể tính là lá thấp: A-2-4 là liền nhau, A-7-2 thì không). Board có đôi (17,2%) không được xếp vào nhóm liền nhau/rời rạc; số liệu của chúng giống bảng đầu tiên.
+
+### Lá cao nhất × chất — tổng c-bet
+
+| Độ cao board | Rainbow | Hai chất | Monotone |
+|:---|:---:|:---:|:---:|
+| **Có đôi** | 70,3% | 65,3% | không có |
+| **A-high** | 44,6% | 43,6% | 35,4% |
+| **K-high** | 63,3% | 54,9% | 40,8% |
+| **Q/J-high** | 55,7% | 50,6% | 44,2% |
+| **10/9-high** | 57,9% | 50,4% | 49,7% |
+| **Thấp (8-high trở xuống)** | 60,6% | 55,5% | 59,1% |
+
+Ở cả sáu hàng, **rainbow đều cao hơn hai chất.** Rõ nhất là K-high: rainbow 63,3% so với hai chất 54,9%, chênh 8,4 điểm, nên K♥9♠6♣ và K♥9♥6♣ đã là hai board khác nhau ngay khi xuất hiện hai lá cơ. Flop có đôi mà monotone thì không tồn tại, vì hai lá cùng bậc không bao giờ cùng chất. Monotone thấp (59,1%) là ô monotone duy nhất cao hơn ô hai chất bên cạnh, và gần như toàn bộ phần c-bet đó là cỡ 33% (57,6%).
+
+### Big blind phản ứng thế nào trước c-bet?
+
+**Đối mặt c-bet 33%**
+
+| Loại board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Có đôi** | 34,0% | 48,5% | 17,6% |
+| **A-high** | 36,4% | 54,5% | 9,1% |
+| **K-high** | 32,3% | 55,2% | 12,5% |
+| **Q/J-high** | 29,5% | 57,0% | 13,5% |
+| **10/9-high** | 28,0% | 57,4% | 14,6% |
+| **Thấp (8-high trở xuống)** | 29,4% | 52,6% | 18,0% |
+| **Mọi flop** | 32,1% | 53,3% | 14,6% |
+
+**Đối mặt c-bet 75%**
+
+| Loại board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Có đôi** | 48,9% | 38,1% | 13,0% |
+| **A-high** | 50,4% | 46,0% | 3,6% |
+| **K-high** | 49,7% | 45,1% | 5,1% |
+| **Q/J-high** | 47,7% | 45,6% | 6,7% |
+| **10/9-high** | 46,3% | 44,7% | 9,0% |
+| **Thấp (8-high trở xuống)** | 46,2% | 40,8% | 13,0% |
+| **Mọi flop** | 48,1% | 44,4% | 7,5% |
+
+Một cú bet 33% hòa vốn như bluff thuần nếu khiến đối thủ fold ==0,33 ÷ 1,33 = khoảng 24,8%== số lần, vậy mà big blind fold trung bình 32,1%; trước cú bet 75% (==0,75 ÷ 1,75 = khoảng 42,9%==) thì big blind fold 48,1%. Ở flop, big blind không phòng thủ nhiều như tần suất phòng thủ tối thiểu (MDF) gợi ý. Trước c-bet 33%, check-raise xuất hiện nhiều nhất trên board thấp (18,0%) và board có đôi (17,6%), hiếm nhất trên A-high (9,1%) — muốn xem một cú check-raise trên board thấp được mổ xẻ từng tay, hãy đọc [khi big blind check-raise trên flop thấp](/vi/blog/low-board-check-raise).
+
+Bet trước vào người raise (donk bet) của big blind chỉ chiếm 2,4% tổng thể (1,7% ở cỡ 33% cộng 0,7% ở cỡ 75%). Chia theo chất, cao nhất là monotone với 7,2% (check 92,8%); chia theo cả độ cao lẫn chất, flop monotone thấp lên tới 9,2%. Những board ngoại lệ mà big blind nên lead được phân tích trong [bài donk bet](/vi/blog/donk-bet-strategy).
+
+> **Cách đọc các bảng này** — Mỗi ô là trung bình các flop thuộc ô đó, có trọng số theo tần suất chúng thực sự xuất hiện (mọi biến thể chất của một flop được tính chung). Với spot không phải hành động đầu tiên, như button sau khi big blind check, mỗi flop còn được đánh trọng số theo tần suất spot đó xảy ra trên flop ấy, và trong một flop, mỗi tay bài được đánh trọng số theo xác suất cầm tay đó và đi tới spot đó. Các flop ở cột "bet ít nhất" và "bet nhiều nhất" mỗi flop đại diện cho cả nhóm chất của nó (A♣9♣2♣ = mọi flop A-9-2 monotone). Do làm tròn, tổng một hàng có thể là 99,9–100,1.
+
+---
+
 ## Nên c-bet thường xuyên đến mức nào? (Tần suất)
 
 Không có một tỷ lệ c-bet "đúng" duy nhất — ai đưa bạn một con số là đang bán cho bạn một lỗ hổng. Tần suất dao động theo vị trí, board và số người trong pot. Đây là bảng tra nhanh:
@@ -110,6 +203,8 @@ Không có một tỷ lệ c-bet "đúng" duy nhất — ai đưa bạn một co
 </div>
 
 Để kiểm tra sức khỏe, tỷ lệ c-bet flop tổng thể của một người chơi vững rơi vào khoảng **55–70%** trên mọi board. Nếu bạn c-bet hơn ~85% số flop, bạn đang lái tự động và người chơi giỏi sẽ trừng phạt; dưới ~40% là bạn quá thật thà, chỉ bet khi trúng. Nhưng nhớ — con số đó là *tổng hợp*, không phải mục tiêu. Bạn đến đó bằng cách bet đúng board, không phải bằng cách chạy đủ chỉ tiêu.
+
+Một mốc cụ thể để đối chiếu: trong spot heads-up BTN đấu BB của solver ở phần trên, mức c-bet trung bình của button sau khi big blind check là **54,7%**, còn từng flop riêng lẻ trải từ 28,5% (A-9-2 monotone) đến 97,1% (7-7-7). Hãy học tần suất theo từng loại board, đừng coi nó là một con số phải chạy cho đủ.
 
 ---
 

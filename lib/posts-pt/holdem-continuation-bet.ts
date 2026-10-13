@@ -13,7 +13,7 @@ export const POST: Post = {
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "15 min",
+  readTime: "18 min",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "Um jogador de poker apostando fichas sobre um flop recém-distribuído depois de dar raise no pré-flop, o clássico momento da continuation bet no feltro verde",
@@ -95,6 +95,99 @@ A parte sutil: dá para ter um sem o outro. Num A‑8‑3 você tem muito mais t
 
 ---
 
+## Com que frequência o solver dá c-bet em cada tipo de board?
+
+**Num pote de um aumento só em que o botão abre e o big blind paga, o solver faz o botão dar c-bet com 54,7% do range inteiro depois do check do big blind.** Essa média esconde uma variação grande: de 43,5% nos flops A-high a 67,8% nos flops pareados, e o tamanho principal também muda. Flops pareados e K-high se apoiam na aposta de um terço do pote; já nos flops A-high, T-high ou 9-high e nos flops baixos, a aposta de 75% é, na verdade, a mais usada. As tabelas abaixo agrupam os 1.755 flops pré-calculados por tipo de board.
+
+> **Como estes números foram calculados** — Resultados do [solver de poker gratuito da HoldemMaster](/pt/solver) para open do BTN vs call do BB em 1.755 flops (agrupados por naipes equivalentes) — stacks de 100bb · apostas no flop de 33%/75% · apostas de 60% no turn e no river · raises de 60% · sem rake · erro alvo de 0,3%. Ranges de entrada = as tabelas de pré-flop do solver (ranges de consenso montados a partir de fontes públicas). É um cálculo heads-up, então não dá para levá-lo direto para potes multiway.
+
+### Por carta mais alta — a c-bet do botão depois do check do BB
+
+Dos 22.100 flops possíveis, o tipo mais comum é Q-high ou J-high (23,5%), e o tipo em que o botão menos dá c-bet é o A-high (43,5%).
+
+| Tipo de board | Parcela dos flops | C-bet total | 33% | 75% |
+|:---|:---:|:---:|:---:|:---:|
+| **Pareado** | 17,2% | **67,8%** | 60,6% | 7,2% |
+| **A-high** | 19,1% | **43,5%** | 16,3% | 27,2% |
+| **K-high** | 15,9% | **57,2%** | 40,8% | 16,4% |
+| **Q-high / J-high** | 23,5% | **52,1%** | 27,5% | 24,7% |
+| **T-high / 9-high** | 14,2% | **53,2%** | 19,8% | 33,4% |
+| **Baixo (8-high ou menor)** | 10,1% | **57,7%** | 23,8% | 33,8% |
+| **Todos os flops** | 100% | **54,7%** | 31,7% | 23,0% |
+
+Mesmo dentro de um tipo, a c-bet total oscila muito de flop para flop. Estes são os flops de cada tipo em que o botão aposta menos e mais:
+
+| Tipo de board | Aposta menos | Aposta mais |
+|:---|:---|:---|
+| **Pareado** | A♣Q♦Q♣ 37,7% | 7♥7♦7♣ 97,1% |
+| **A-high** | A♣9♣2♣ 28,5% | A♥7♦2♣ 59,0% |
+| **K-high** | K♣Q♣2♣ 32,5% | K♥7♦2♣ 90,2% |
+| **Q-high / J-high** | Q♥J♦8♣ 35,5% | Q♥7♦2♣ 84,7% |
+| **T-high / 9-high** | T♣9♦7♣ 38,5% | T♥6♦2♣ 73,5% |
+| **Baixo (8-high ou menor)** | 8♦7♦4♣ 46,4% | 7♥6♦2♣ 76,3% |
+| **Todos os flops** | A♣9♣2♣ 28,5% | 7♥7♦7♣ 97,1% |
+
+Essa dispersão dentro de cada tipo é a verdadeira lição da tabela. Um board K-high seco como K♥7♦2♣ recebe aposta 90,2% das vezes, mas o monotone K♣Q♣2♣ cai para 32,5%. "É K-high, então eu aposto" não basta; é preciso ler **altura, naipes e conexão juntos**. Nos boards pareados, quase toda a c-bet sai no tamanho pequeno (60,6% dos 67,8%), o que bate com a regra de "pequeno em dry boards" da seção de sizing mais abaixo. O único ponto em que os dados contrariam a regra prática é o A-high: no tipo inteiro, a aposta de 75% é mais comum que a de 33% (27,2% contra 16,3%). E não são os flops monotone que puxam essa média para cima — os flops A-high rainbow, sozinhos, também usam mais a aposta grande (25,9% contra 18,8%). Um board específico como A-7-2 ainda pode ter um sizing diferente da média do tipo.
+
+### Por naipes e conexão — o mesmo cálculo em outro eixo
+
+| Tipo de board | Parcela dos flops | C-bet total | 33% · 75% |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (três naipes) | 39,8% | **58,8%** | 36,1% · 22,7% |
+| **Two-tone** (duas cartas do mesmo naipe) | 55,1% | **52,6%** | 28,7% · 23,9% |
+| **Monotone** (três cartas do mesmo naipe) | 5,2% | **44,2%** | 29,2% · 15,1% |
+| **Conectado** (sem par · as três dentro de cinco valores) | 18,5% | **49,1%** | 18,8% · 30,3% |
+| **Desconectado** (sem par · o resto) | 64,3% | **52,8%** | 27,7% · 25,1% |
+
+Quanto mais os naipes se concentram, menos o botão dá c-bet (58,8% → 52,6% → 44,2%), e os boards conectados recebem aposta com menos frequência, mas com o tamanho de 75% como aposta principal. "Conectado" aqui significa três valores diferentes que cabem em cinco valores consecutivos (a carta mais alta menos a mais baixa dá 4 ou menos, e o ás também pode contar como carta baixa: A-2-4 é conectado, A-7-2 não). Os boards pareados (17,2%) ficam fora da divisão conectado/desconectado; os números deles são os mesmos da primeira tabela.
+
+### Carta mais alta × naipes — c-bet total
+
+| Altura do board | Rainbow | Two-tone | Monotone |
+|:---|:---:|:---:|:---:|
+| **Pareado** | 70,3% | 65,3% | — |
+| **A-high** | 44,6% | 43,6% | 35,4% |
+| **K-high** | 63,3% | 54,9% | 40,8% |
+| **Q-high / J-high** | 55,7% | 50,6% | 44,2% |
+| **T-high / 9-high** | 57,9% | 50,4% | 49,7% |
+| **Baixo (8-high ou menor)** | 60,6% | 55,5% | 59,1% |
+
+Nas seis linhas, **rainbow fica acima de two-tone.** O caso mais claro é o K-high: rainbow 63,3% contra two-tone 54,9%, uma diferença de 8,4 pontos — K♥9♠6♣ e K♥9♥6♣ viram boards diferentes assim que aparecem duas copas. Flop pareado monotone não existe, porque duas cartas do mesmo valor nunca têm o mesmo naipe. O monotone baixo (59,1%) é a única célula monotone acima da vizinha two-tone, e quase toda essa c-bet é no tamanho de 33% (57,6%).
+
+### Como o big blind responde à c-bet?
+
+**Contra c-bet de 33%**
+
+| Tipo de board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Pareado** | 34,0% | 48,5% | 17,6% |
+| **A-high** | 36,4% | 54,5% | 9,1% |
+| **K-high** | 32,3% | 55,2% | 12,5% |
+| **Q-high / J-high** | 29,5% | 57,0% | 13,5% |
+| **T-high / 9-high** | 28,0% | 57,4% | 14,6% |
+| **Baixo (8-high ou menor)** | 29,4% | 52,6% | 18,0% |
+| **Todos os flops** | 32,1% | 53,3% | 14,6% |
+
+**Contra c-bet de 75%**
+
+| Tipo de board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Pareado** | 48,9% | 38,1% | 13,0% |
+| **A-high** | 50,4% | 46,0% | 3,6% |
+| **K-high** | 49,7% | 45,1% | 5,1% |
+| **Q-high / J-high** | 47,7% | 45,6% | 6,7% |
+| **T-high / 9-high** | 46,3% | 44,7% | 9,0% |
+| **Baixo (8-high ou menor)** | 46,2% | 40,8% | 13,0% |
+| **Todos os flops** | 48,1% | 44,4% | 7,5% |
+
+Uma aposta de 33% se paga como blefe puro se levar fold em ==0,33 ÷ 1,33 = cerca de 24,8%== das vezes, mas o big blind folda 32,1% em média; contra a aposta de 75% (==0,75 ÷ 1,75 = cerca de 42,9%==), ele folda 48,1%. No flop, o big blind não defende tanto quanto a frequência mínima de defesa (MDF) sugeriria. Contra a c-bet de 33%, os check-raises são mais comuns nos boards baixos (18,0%) e pareados (17,6%) e mais raros no A-high (9,1%) — para um check-raise em board baixo analisado mão a mão, veja [quando o big blind dá check-raise num flop baixo](/pt/blog/low-board-check-raise).
+
+Sair apostando contra o raiser (a donk bet) é só 2,4% das ações do big blind no geral (1,7% em 33% mais 0,7% em 75%). Separando por naipes, o maior valor é o do monotone, 7,2% (92,8% de check); separando por altura e naipes juntos, os flops monotone baixos chegam a 9,2%. Os boards de exceção em que o big blind deve sair apostando estão no [guia de donk bet](/pt/blog/donk-bet-strategy).
+
+> **Como ler estas tabelas** — Cada célula é a média dos seus flops, ponderada pela frequência com que eles realmente saem (todas as variantes de naipe de um flop contadas juntas). Num spot que não é a primeira ação, como o botão depois do check do big blind, cada flop também é ponderado pela frequência com que esse spot é alcançado nele, e, dentro de um flop, cada mão é ponderada pela probabilidade de tê-la e chegar a esse spot. Os flops listados em "aposta menos" e "aposta mais" representam todo o seu grupo de naipes (A♣9♣2♣ = todo flop A-9-2 monotone). Por causa do arredondamento, uma linha pode somar de 99,9 a 100,1.
+
+---
+
 ## Com que frequência você deve dar c-bet? (Frequência)
 
 Não existe uma única porcentagem "correta" de c-bet — quem te dá um número só está te ensinando um leak. A frequência varia com a posição, o board e quantos jogadores estão no pote. Aqui está a referência rápida:
@@ -112,6 +205,8 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 </div>
 
 Como um check de saúde, a taxa geral de c-bet no flop de um bom jogador fica em algum lugar em torno de **55–70%** em todos os boards. Se você está dando c-bet em mais de ~85% dos flops, está no piloto automático e os bons jogadores vão te punir; abaixo de ~40%, você é honesto demais, só apostando quando acerta. Mas lembre — esse número é um *agregado*, não um alvo. Você chega lá apostando nos boards certos, não batendo uma cota.
+
+Como referência concreta: no spot heads-up BTN vs BB do solver, logo acima, a c-bet média do botão depois do check do big blind é **54,7%**, e os flops individuais vão de 28,5% (A-9-2 monotone) a 97,1% (7-7-7). Aprenda a frequência por tipo de board, não como um número único a atingir.
 
 ---
 

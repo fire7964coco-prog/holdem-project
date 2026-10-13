@@ -12,7 +12,7 @@ export const POST: Post = {
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
   updated: "2026-10-13",
   keepImagesInBody: true,
-  readTime: "15 min",
+  readTime: "18 min",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "A poker player betting chips onto a freshly dealt flop after raising preflop, the classic continuation bet moment on the green felt",
@@ -94,6 +94,99 @@ The subtle part: you can have one without the other. On A‑8‑3 you have far m
 
 ---
 
+## How Often Does a Solver C-Bet on Each Board Type?
+
+**In a single-raised pot where the button opens and the big blind calls, a solver has the button c-bet 54.7% of its whole range after the big blind checks.** That average hides a wide spread: from 43.5% on ace-high flops to 67.8% on paired flops, with different main sizes. Paired and king-high flops lean on the one-third-pot bet; ace-high, ten- and nine-high and low flops actually use the 75% bet more. The tables below group all 1,755 precomputed flops by board type.
+
+> **How these numbers were calculated** — Results from the [HoldemMaster GTO solver](/en/solver) for a BTN open vs BB call across 1,755 flops (suit-isomorphic) — 100bb stacks · flop bets 33%/75% · turn and river bets 60% · raises 60% · no rake · 0.3% target error. Input ranges = the solver's preflop charts (consensus ranges built from public sources). It is a heads-up calculation, so it does not carry over directly to multiway pots.
+
+### By high card — the button's c-bet after a BB check
+
+Of all 22,100 possible flops, the most common type is queen- or jack-high (23.5%), and the type the button c-bets least is ace-high (43.5%).
+
+| Board type | Share of flops | Total c-bet | 33% | 75% |
+|:---|:---:|:---:|:---:|:---:|
+| **Paired** | 17.2% | **67.8%** | 60.6% | 7.2% |
+| **Ace-high** | 19.1% | **43.5%** | 16.3% | 27.2% |
+| **King-high** | 15.9% | **57.2%** | 40.8% | 16.4% |
+| **Queen/jack-high** | 23.5% | **52.1%** | 27.5% | 24.7% |
+| **Ten/nine-high** | 14.2% | **53.2%** | 19.8% | 33.4% |
+| **Low (eight-high or lower)** | 10.1% | **57.7%** | 23.8% | 33.8% |
+| **All flops** | 100% | **54.7%** | 31.7% | 23.0% |
+
+Even inside one type, the total c-bet swings a lot from flop to flop. These are the flops in each type where the button bets least and most:
+
+| Board type | Bets least | Bets most |
+|:---|:---|:---|
+| **Paired** | A♣Q♦Q♣ 37.7% | 7♥7♦7♣ 97.1% |
+| **Ace-high** | A♣9♣2♣ 28.5% | A♥7♦2♣ 59.0% |
+| **King-high** | K♣Q♣2♣ 32.5% | K♥7♦2♣ 90.2% |
+| **Queen/jack-high** | Q♥J♦8♣ 35.5% | Q♥7♦2♣ 84.7% |
+| **Ten/nine-high** | T♣9♦7♣ 38.5% | T♥6♦2♣ 73.5% |
+| **Low (eight-high or lower)** | 8♦7♦4♣ 46.4% | 7♥6♦2♣ 76.3% |
+| **All flops** | A♣9♣2♣ 28.5% | 7♥7♦7♣ 97.1% |
+
+That spread inside each type is the real lesson of the table. A dry king-high board like K♥7♦2♣ gets bet 90.2% of the time, but the monotone K♣Q♣2♣ drops to 32.5%. "It's king-high, so I bet" is not enough; you have to read **height, suits and connectedness together**. On paired boards almost all of the c-betting is the small size (60.6% of the 67.8%), which matches the "small on dry boards" rule in the sizing section below. The one place the data pushes back on the rule of thumb is ace-high: across the whole type, the 75% bet is more common than the 33% bet (27.2% vs 16.3%). It isn't the monotone flops pulling that average up, either — ace-high rainbow flops on their own still use the big bet more (25.9% vs 18.8%). A single board such as A-7-2 can still size differently from the type average.
+
+### By suits and connectedness — the same calculation on another axis
+
+| Board type | Share of flops | Total c-bet | 33% · 75% |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (three suits) | 39.8% | **58.8%** | 36.1% · 22.7% |
+| **Two-tone** (two cards of one suit) | 55.1% | **52.6%** | 28.7% · 23.9% |
+| **Monotone** (three cards of one suit) | 5.2% | **44.2%** | 29.2% · 15.1% |
+| **Connected** (unpaired · all three within five ranks) | 18.5% | **49.1%** | 18.8% · 30.3% |
+| **Disconnected** (unpaired · the rest) | 64.3% | **52.8%** | 27.7% · 25.1% |
+
+The more the suits gather, the less the button c-bets (58.8% → 52.6% → 44.2%), and connected boards get bet less often but with the 75% size as the main bet. "Connected" here means three different ranks that fit inside five consecutive ranks (highest minus lowest is 4 or less, and the ace can also count low: A-2-4 is connected, A-7-2 is not). Paired boards (17.2%) are left out of the connected/disconnected split; their numbers are the same as in the first table.
+
+### High card × suits — total c-bet
+
+| Board height | Rainbow | Two-tone | Monotone |
+|:---|:---:|:---:|:---:|
+| **Paired** | 70.3% | 65.3% | n/a |
+| **Ace-high** | 44.6% | 43.6% | 35.4% |
+| **King-high** | 63.3% | 54.9% | 40.8% |
+| **Queen/jack-high** | 55.7% | 50.6% | 44.2% |
+| **Ten/nine-high** | 57.9% | 50.4% | 49.7% |
+| **Low (eight-high or lower)** | 60.6% | 55.5% | 59.1% |
+
+In all six rows, **rainbow is higher than two-tone.** The clearest case is king-high: rainbow 63.3% against two-tone 54.9%, an 8.4-point gap, so K♥9♠6♣ and K♥9♥6♣ are different boards once two hearts appear. A paired monotone flop cannot exist, because two cards of the same rank can never share a suit. Low monotone (59.1%) is the only monotone cell above its two-tone neighbor, and nearly all of that c-betting is the 33% size (57.6%).
+
+### How does the big blind respond to a c-bet?
+
+**Facing a 33% c-bet**
+
+| Board type | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Paired** | 34.0% | 48.5% | 17.6% |
+| **Ace-high** | 36.4% | 54.5% | 9.1% |
+| **King-high** | 32.3% | 55.2% | 12.5% |
+| **Queen/jack-high** | 29.5% | 57.0% | 13.5% |
+| **Ten/nine-high** | 28.0% | 57.4% | 14.6% |
+| **Low (eight-high or lower)** | 29.4% | 52.6% | 18.0% |
+| **All flops** | 32.1% | 53.3% | 14.6% |
+
+**Facing a 75% c-bet**
+
+| Board type | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Paired** | 48.9% | 38.1% | 13.0% |
+| **Ace-high** | 50.4% | 46.0% | 3.6% |
+| **King-high** | 49.7% | 45.1% | 5.1% |
+| **Queen/jack-high** | 47.7% | 45.6% | 6.7% |
+| **Ten/nine-high** | 46.3% | 44.7% | 9.0% |
+| **Low (eight-high or lower)** | 46.2% | 40.8% | 13.0% |
+| **All flops** | 48.1% | 44.4% | 7.5% |
+
+A 33% bet breaks even as a pure bluff if it gets folds ==0.33 ÷ 1.33 = about 24.8%== of the time, yet the big blind folds 32.1% on average; against a 75% bet (==0.75 ÷ 1.75 = about 42.9%==) it folds 48.1%. On the flop, the big blind does not defend as much as minimum defense frequency (MDF) would suggest. Against the 33% c-bet, check-raises are most common on low boards (18.0%) and paired boards (17.6%) and rarest on ace-high (9.1%) — for one low-board check-raise worked through hand by hand, see [when the big blind check-raises a low flop](/en/blog/low-board-check-raise).
+
+Leading into the raiser (a donk bet) is only 2.4% for the big blind overall (1.7% at 33% plus 0.7% at 75%). Split by suits, the highest is monotone at 7.2% (92.8% check); split by height and suits together, low monotone flops reach 9.2%. The exception boards where the big blind should lead are covered in the [donk bet guide](/en/blog/donk-bet-strategy).
+
+> **How to read these tables** — Each cell averages its flops weighted by how often they actually come up (all the suit variants of a flop counted together). For a spot that isn't the first action, like the button after a big blind check, each flop is also weighted by how often that spot is reached on it, and within a flop each hand is weighted by the probability of holding it and arriving at that spot. The flops listed under "bets least" and "bets most" each stand for their whole suit group (A♣9♣2♣ = every A-9-2 monotone flop). Because of rounding, a row can add up to 99.9–100.1.
+
+---
+
 ## How Often Should You C-Bet? (Frequency)
 
 There is no single "correct" c-bet percentage — anyone who gives you one number is selling you a leak. Frequency swings with position, board, and how many players are in the pot. Here's the quick-reference:
@@ -111,6 +204,8 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 </div>
 
 As a health check, a solid player's overall flop c-bet rate lands somewhere around **55–70%** across all boards. If you're c-betting over ~85% of flops you're auto-piloting and good players will punish it; under ~40% and you're too honest, only betting when you hit. But remember — that number is an *aggregate*, not a target. You get there by betting the right boards, not by hitting a quota.
+
+For one concrete reference point: in the solver's BTN-vs-BB heads-up spot above, the button's average c-bet after a big blind check is **54.7%**, and single flops range from 28.5% (A-9-2 monotone) to 97.1% (7-7-7). Learn frequency by board type, not as one number to hit.
 
 ---
 

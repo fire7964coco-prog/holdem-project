@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Un continuation bet (c-bet) est une mise au flop faite par le joueur qui a relancé préflop. La règle moderne n'est pas « c-bet à chaque flop » : mise petit et souvent sur les flops qui favorisent ta range (boards hauts et secs comme K-7-2) et checke ceux qui favorisent ton adversaire (boards bas et connectés comme 7-6-5). Size petit, environ un tiers du pot, sur les boards secs et gros, deux tiers ou plus, sur les boards humides ; c-bet moins hors de position quand tu étais le seul relanceur (en tant que 3-betteur hors de position, ça passe à plus de 97 % sur les trois boards que nous avons résolus) et beaucoup moins en multiway.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "15 min",
+  readTime: "18 min",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "Un joueur de poker pose ses jetons sur un flop tout juste distribué après avoir relancé préflop, le moment classique du continuation bet sur le tapis vert",
@@ -93,6 +93,99 @@ La subtilité : tu peux avoir l'un sans l'autre. Sur A‑8‑3 tu as bien plus d
 
 ---
 
+## À quelle fréquence le solver fait-il un c-bet selon le type de board ?
+
+**Dans un pot relancé une fois où le bouton ouvre et où la grosse blinde paie, selon le solver, le bouton fait un c-bet avec 54,7 % de toute sa range quand la grosse blinde checke.** Cette moyenne cache un large écart : de 43,5 % sur les flops hauteur As à 67,8 % sur les flops pairés, avec des tailles principales différentes. Les flops pairés et hauteur Roi s'appuient sur la mise au tiers du pot ; les flops hauteur As, hauteur 10 ou 9 et bas utilisent même davantage la mise à 75 %. Les tableaux ci-dessous regroupent les 1 755 flops précalculés par type de board.
+
+> **Comment ces chiffres ont été calculés** — Résultats du [solver GTO de HoldemMaster](/fr/solver) pour un open du BTN payé par la BB, sur 1 755 flops (regroupés par couleurs équivalentes) — tapis de 100bb · mises au flop de 33 %/75 % · mises au turn et à la river de 60 % · relances de 60 % · sans rake · erreur cible de 0,3 %. Ranges d'entrée = les charts préflop du solver (des ranges de consensus construites à partir de sources publiques). C'est un calcul en heads-up : il ne se transpose pas tel quel aux pots multiway.
+
+### Par carte haute — le c-bet du bouton après le check de la BB
+
+Sur les 22 100 flops possibles, le type le plus fréquent est hauteur Dame ou Valet (23,5 %), et celui où le bouton fait le moins de c-bet est hauteur As (43,5 %).
+
+| Type de board | Part des flops | C-bet total | 33 % | 75 % |
+|:---|:---:|:---:|:---:|:---:|
+| **Pairé** | 17,2 % | **67,8 %** | 60,6 % | 7,2 % |
+| **Hauteur As** | 19,1 % | **43,5 %** | 16,3 % | 27,2 % |
+| **Hauteur Roi** | 15,9 % | **57,2 %** | 40,8 % | 16,4 % |
+| **Hauteur Dame/Valet** | 23,5 % | **52,1 %** | 27,5 % | 24,7 % |
+| **Hauteur 10/9** | 14,2 % | **53,2 %** | 19,8 % | 33,4 % |
+| **Bas (hauteur 8 ou moins)** | 10,1 % | **57,7 %** | 23,8 % | 33,8 % |
+| **Tous les flops** | 100 % | **54,7 %** | 31,7 % | 23,0 % |
+
+Même à l'intérieur d'un type, le c-bet total varie beaucoup d'un flop à l'autre. Voici, pour chaque type, les flops où le bouton mise le moins et le plus :
+
+| Type de board | Mise le moins | Mise le plus |
+|:---|:---|:---|
+| **Pairé** | A♣Q♦Q♣ 37,7 % | 7♥7♦7♣ 97,1 % |
+| **Hauteur As** | A♣9♣2♣ 28,5 % | A♥7♦2♣ 59,0 % |
+| **Hauteur Roi** | K♣Q♣2♣ 32,5 % | K♥7♦2♣ 90,2 % |
+| **Hauteur Dame/Valet** | Q♥J♦8♣ 35,5 % | Q♥7♦2♣ 84,7 % |
+| **Hauteur 10/9** | 10♣9♦7♣ 38,5 % | 10♥6♦2♣ 73,5 % |
+| **Bas (hauteur 8 ou moins)** | 8♦7♦4♣ 46,4 % | 7♥6♦2♣ 76,3 % |
+| **Tous les flops** | A♣9♣2♣ 28,5 % | 7♥7♦7♣ 97,1 % |
+
+C'est cet écart à l'intérieur de chaque type qui fait la vraie leçon du tableau. Un board sec hauteur Roi comme K♥7♦2♣ est misé 90,2 % du temps, mais le monotone K♣Q♣2♣ tombe à 32,5 %. « C'est hauteur Roi, donc je mise » ne suffit pas : il faut lire **la hauteur, les couleurs et la connexion ensemble**. Sur les boards pairés, presque tout le c-bet passe par la petite taille (60,6 % sur 67,8 %), ce qui colle à la règle « petit sur les boards secs » de la partie sizing plus bas. Le seul endroit où les données contredisent la règle empirique, c'est hauteur As : sur l'ensemble du type, la mise à 75 % est plus fréquente que la mise à 33 % (27,2 % contre 16,3 %). Et ce ne sont pas les flops monotones qui tirent cette moyenne vers le haut — les flops hauteur As rainbow, pris seuls, utilisent eux aussi davantage la grosse mise (25,9 % contre 18,8 %). Un board précis comme A-7-2 peut malgré tout se jouer avec une autre taille que la moyenne de son type.
+
+### Par couleurs et connexion — le même calcul sur un autre axe
+
+| Type de board | Part des flops | C-bet total | 33 % · 75 % |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (trois couleurs) | 39,8 % | **58,8 %** | 36,1 % · 22,7 % |
+| **Bicolore** (deux cartes de la même couleur) | 55,1 % | **52,6 %** | 28,7 % · 23,9 % |
+| **Monotone** (trois cartes de la même couleur) | 5,2 % | **44,2 %** | 29,2 % · 15,1 % |
+| **Connecté** (non pairé · les trois cartes tiennent dans cinq rangs) | 18,5 % | **49,1 %** | 18,8 % · 30,3 % |
+| **Déconnecté** (non pairé · le reste) | 64,3 % | **52,8 %** | 27,7 % · 25,1 % |
+
+Plus les couleurs se regroupent, moins le bouton fait de c-bet (58,8 % → 52,6 % → 44,2 %), et les boards connectés sont misés moins souvent, mais avec la taille à 75 % comme mise principale. « Connecté » veut dire ici trois rangs différents qui tiennent dans cinq rangs consécutifs (la plus haute moins la plus basse vaut 4 ou moins, et l'As peut aussi compter comme carte basse : A-2-4 est connecté, A-7-2 non). Les boards pairés (17,2 %) sont exclus de la séparation connecté/déconnecté ; leurs chiffres sont les mêmes que dans le premier tableau.
+
+### Carte haute × couleurs — c-bet total
+
+| Hauteur du board | Rainbow | Bicolore | Monotone |
+|:---|:---:|:---:|:---:|
+| **Pairé** | 70,3 % | 65,3 % | — |
+| **Hauteur As** | 44,6 % | 43,6 % | 35,4 % |
+| **Hauteur Roi** | 63,3 % | 54,9 % | 40,8 % |
+| **Hauteur Dame/Valet** | 55,7 % | 50,6 % | 44,2 % |
+| **Hauteur 10/9** | 57,9 % | 50,4 % | 49,7 % |
+| **Bas (hauteur 8 ou moins)** | 60,6 % | 55,5 % | 59,1 % |
+
+Sur les six lignes, **le rainbow passe devant le bicolore.** Le cas le plus net est hauteur Roi : rainbow 63,3 % contre bicolore 54,9 %, soit 8,4 points d'écart — K♥9♠6♣ et K♥9♥6♣ sont donc deux boards différents dès que deux cœurs apparaissent. Un flop pairé monotone ne peut pas exister, puisque deux cartes de même rang n'ont jamais la même couleur. Le monotone bas (59,1 %) est la seule case monotone au-dessus de sa voisine bicolore, et presque tout ce c-bet se fait à 33 % (57,6 %).
+
+### Comment la grosse blinde répond-elle à un c-bet ?
+
+**Face à un c-bet de 33 %**
+
+| Type de board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Pairé** | 34,0 % | 48,5 % | 17,6 % |
+| **Hauteur As** | 36,4 % | 54,5 % | 9,1 % |
+| **Hauteur Roi** | 32,3 % | 55,2 % | 12,5 % |
+| **Hauteur Dame/Valet** | 29,5 % | 57,0 % | 13,5 % |
+| **Hauteur 10/9** | 28,0 % | 57,4 % | 14,6 % |
+| **Bas (hauteur 8 ou moins)** | 29,4 % | 52,6 % | 18,0 % |
+| **Tous les flops** | 32,1 % | 53,3 % | 14,6 % |
+
+**Face à un c-bet de 75 %**
+
+| Type de board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Pairé** | 48,9 % | 38,1 % | 13,0 % |
+| **Hauteur As** | 50,4 % | 46,0 % | 3,6 % |
+| **Hauteur Roi** | 49,7 % | 45,1 % | 5,1 % |
+| **Hauteur Dame/Valet** | 47,7 % | 45,6 % | 6,7 % |
+| **Hauteur 10/9** | 46,3 % | 44,7 % | 9,0 % |
+| **Bas (hauteur 8 ou moins)** | 46,2 % | 40,8 % | 13,0 % |
+| **Tous les flops** | 48,1 % | 44,4 % | 7,5 % |
+
+En bluff pur, une mise de 33 % est à l'équilibre si elle fait coucher l'adversaire ==0,33 ÷ 1,33 = environ 24,8 %== du temps, or la grosse blinde se couche en moyenne à 32,1 % ; face à une mise de 75 % (==0,75 ÷ 1,75 = environ 42,9 %==), elle se couche à 48,1 %. Au flop, la grosse blinde ne défend pas autant que la fréquence de défense minimale (MDF) le laisserait penser. Face au c-bet de 33 %, les check-raises sont les plus fréquents sur les boards bas (18,0 %) et pairés (17,6 %), et les plus rares sur hauteur As (9,1 %) — pour un check-raise sur flop bas décortiqué main par main, vois [quand la grosse blinde check-raise un flop bas](/fr/blog/low-board-check-raise).
+
+Miser en premier face au relanceur (un donk bet) ne représente que 2,4 % des actions de la grosse blinde au total (1,7 % à 33 % plus 0,7 % à 75 %). Par couleurs, le plus haut est le monotone à 7,2 % (92,8 % de check) ; par hauteur et couleurs ensemble, les flops bas monotones montent à 9,2 %. Les boards d'exception où la grosse blinde devrait miser la première sont traités dans le [guide du donk bet](/fr/blog/donk-bet-strategy).
+
+> **Comment lire ces tableaux** — Chaque case fait la moyenne de ses flops, pondérée par la fréquence à laquelle ils sortent vraiment (toutes les variantes de couleurs d'un flop comptées ensemble). Pour un spot qui n'est pas la première action, comme le bouton après le check de la grosse blinde, chaque flop est aussi pondéré par la fréquence à laquelle ce spot y est atteint, et à l'intérieur d'un flop, chaque main est pondérée par la probabilité de la détenir et d'arriver à ce spot. Les flops listés sous « Mise le moins » et « Mise le plus » représentent chacun tout leur groupe de couleurs (A♣9♣2♣ = tous les flops A-9-2 monotones). À cause des arrondis, une ligne peut totaliser 99,9–100,1.
+
+---
+
 ## À quelle fréquence c-bet ? Fréquence et « cbet range »
 
 Il n'existe pas un pourcentage de c-bet « correct » unique — celui qui te donne un seul chiffre te vend une fuite. La fréquence varie selon la position, le board et le nombre de joueurs dans le pot. Ta « cbet range », c'est donc la part de ta range que tu mises dans un spot donné, pas un quota fixe. Voici l'aide-mémoire :
@@ -110,6 +203,8 @@ Il n'existe pas un pourcentage de c-bet « correct » unique — celui qui te do
 </div>
 
 Comme bilan de santé, le taux global de c-bet au flop d'un joueur solide se situe autour de **55–70 %** sur l'ensemble des boards. Si tu c-bet plus de ~85 % des flops, tu joues en pilote automatique et les bons joueurs vont te punir ; sous ~40 %, tu es trop honnête et tu ne mises que quand tu touches. Mais garde en tête que ce chiffre est un *agrégat*, pas un objectif. Tu y arrives en misant sur les bons boards, pas en remplissant un quota.
+
+Un repère concret : dans le spot heads-up BTN contre BB du solver plus haut, le c-bet moyen du bouton après un check de la grosse blinde est de **54,7 %**, et les flops pris un par un vont de 28,5 % (A-9-2 monotone) à 97,1 % (7-7-7). Apprends la fréquence par type de board, pas comme un chiffre unique à atteindre.
 
 ---
 

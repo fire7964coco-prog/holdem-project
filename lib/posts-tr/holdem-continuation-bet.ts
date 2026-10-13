@@ -11,7 +11,7 @@ export const POST: Post = {
   updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "15 dk",
+  readTime: "18 dk",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "Preflop'ta raise yaptıktan sonra yeni açılan flop'a çip süren bir oyuncu — yeşil çuhada klasik continuation bet anı",
@@ -93,6 +93,99 @@ Buradaki bütün işi birbirine bağlı iki fikir görür:
 
 ---
 
+## Solver hangi board tipinde ne sıklıkla c-bet yapıyor?
+
+**Butonun açıp big blind'ın call ettiği tek raise'li potta solver, big blind check ettikten sonra butona range'inin tamamının %54,7'siyle c-bet yaptırıyor.** Bu ortalama geniş bir yelpazeyi gizliyor: as yüksek flop'larda %43,5'ten çiftli flop'larda %67,8'e kadar uzanıyor ve ana bahis boyutu da tipten tipe değişiyor. Çiftli ve papaz yüksek flop'lar potun üçte biri bahsine yaslanıyor; as yüksek, on/dokuz yüksek ve düşük flop'lar ise aslında %75'lik bahsi daha çok kullanıyor. Aşağıdaki tablolar önceden hesaplanmış 1.755 flop'un tamamını board tipine göre grupluyor.
+
+> **Bu rakamlar nasıl hesaplandı** — [HoldemMaster GTO solver](/tr/solver)'ın BTN open – BB call spotu için 1.755 flop üzerindeki sonuçları (eşdeğer renkler tek grupta) — 100bb stack · flop bahisleri %33/%75 · turn ve river bahisleri %60 · raise'ler %60 · rake yok · hedef exploitability %0,3. Girdi range'leri = solver'ın preflop range tabloları (kamuya açık kaynaklardan derlenmiş uzlaşı range'leri). Heads-up bir hesap olduğu için multiway potlara olduğu gibi taşınmaz.
+
+### Yüksek karta göre — BB check ettikten sonra butonun c-bet'i
+
+Mümkün olan 22.100 flop'un içinde en yaygın tip kız ya da vale yüksek (%23,5), butonun en az c-bet yaptığı tip ise as yüksek (%43,5).
+
+| Board tipi | Flop payı | Toplam c-bet | %33 | %75 |
+|:---|:---:|:---:|:---:|:---:|
+| **Çiftli** | %17,2 | **%67,8** | %60,6 | %7,2 |
+| **As yüksek** | %19,1 | **%43,5** | %16,3 | %27,2 |
+| **Papaz yüksek** | %15,9 | **%57,2** | %40,8 | %16,4 |
+| **Kız/vale yüksek** | %23,5 | **%52,1** | %27,5 | %24,7 |
+| **On/dokuz yüksek** | %14,2 | **%53,2** | %19,8 | %33,4 |
+| **Düşük (sekiz yüksek ya da altı)** | %10,1 | **%57,7** | %23,8 | %33,8 |
+| **Tüm flop'lar** | %100 | **%54,7** | %31,7 | %23,0 |
+
+Aynı tipin içinde bile toplam c-bet flop'tan flop'a çok oynuyor. Her tipte butonun en az ve en çok bahis yaptığı flop'lar şunlar:
+
+| Board tipi | En az bahis | En çok bahis |
+|:---|:---|:---|
+| **Çiftli** | A♣Q♦Q♣ %37,7 | 7♥7♦7♣ %97,1 |
+| **As yüksek** | A♣9♣2♣ %28,5 | A♥7♦2♣ %59,0 |
+| **Papaz yüksek** | K♣Q♣2♣ %32,5 | K♥7♦2♣ %90,2 |
+| **Kız/vale yüksek** | Q♥J♦8♣ %35,5 | Q♥7♦2♣ %84,7 |
+| **On/dokuz yüksek** | T♣9♦7♣ %38,5 | T♥6♦2♣ %73,5 |
+| **Düşük (sekiz yüksek ya da altı)** | 8♦7♦4♣ %46,4 | 7♥6♦2♣ %76,3 |
+| **Tüm flop'lar** | A♣9♣2♣ %28,5 | 7♥7♦7♣ %97,1 |
+
+Tablonun asıl dersi, her tipin kendi içindeki bu yayılım. K♥7♦2♣ gibi kuru bir papaz yüksek board zamanın %90,2'sinde bahis alıyor, ama monoton K♣Q♣2♣ %32,5'e düşüyor. "Papaz yüksek, o zaman bahis" yetmez; **yüksekliği, renkleri ve bağlantıyı birlikte** okuman gerekir. Çiftli board'larda c-bet'in neredeyse tamamı küçük boyut (%67,8'in %60,6'sı); bu da aşağıdaki boyut bölümündeki "kuru board'da küçük" kuralıyla örtüşüyor. Verinin genel kurala itiraz ettiği tek yer as yüksek: tipin tamamında %75'lik bahis %33'lük bahisten daha yaygın (%27,2'ye karşı %16,3). Bu ortalamayı yukarı çeken monoton flop'lar da değil — yalnızca as yüksek rainbow flop'lar bile büyük bahsi daha çok kullanıyor (%25,9'a karşı %18,8). Yine de A-7-2 gibi tek bir board, tip ortalamasından farklı bir boyut seçebilir.
+
+### Renklere ve bağlantıya göre — aynı hesap başka bir eksende
+
+| Board tipi | Flop payı | Toplam c-bet | %33 · %75 |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (üç farklı renk) | %39,8 | **%58,8** | %36,1 · %22,7 |
+| **İki renkli** (iki kart aynı renk) | %55,1 | **%52,6** | %28,7 · %23,9 |
+| **Monoton** (üç kart aynı renk) | %5,2 | **%44,2** | %29,2 · %15,1 |
+| **Bağlantılı** (çiftsiz · üç kart da beş sıra içinde) | %18,5 | **%49,1** | %18,8 · %30,3 |
+| **Bağlantısız** (çiftsiz · geri kalanlar) | %64,3 | **%52,8** | %27,7 · %25,1 |
+
+Renkler toplandıkça buton daha az c-bet yapıyor (%58,8 → %52,6 → %44,2); bağlantılı board'lara ise daha seyrek ama ana bahis olarak %75 boyutuyla bahis yapılıyor. Buradaki "bağlantılı", art arda beş sıranın içine sığan üç farklı değer demek (en yüksekten en düşüğü çıkarınca 4 ya da daha az kalıyor; as aşağıdan da sayılabilir: A-2-4 bağlantılı, A-7-2 değil). Çiftli board'lar (%17,2) bağlantılı/bağlantısız ayrımının dışında tutuldu; rakamları ilk tablodakiyle aynı.
+
+### Yüksek kart × renk — toplam c-bet
+
+| Board yüksekliği | Rainbow | İki renkli | Monoton |
+|:---|:---:|:---:|:---:|
+| **Çiftli** | %70,3 | %65,3 | yok |
+| **As yüksek** | %44,6 | %43,6 | %35,4 |
+| **Papaz yüksek** | %63,3 | %54,9 | %40,8 |
+| **Kız/vale yüksek** | %55,7 | %50,6 | %44,2 |
+| **On/dokuz yüksek** | %57,9 | %50,4 | %49,7 |
+| **Düşük (sekiz yüksek ya da altı)** | %60,6 | %55,5 | %59,1 |
+
+Altı satırın hepsinde **rainbow, iki renkliden yüksek.** En net örnek papaz yüksek: rainbow %63,3'e karşı iki renkli %54,9, yani 8,4 puanlık fark; bu yüzden ikinci kupa göründüğü anda K♥9♠6♣ ile K♥9♥6♣ artık farklı board'lardır. Çiftli monoton flop olamaz, çünkü aynı değerdeki iki kart asla aynı renkten olamaz. Düşük monoton (%59,1), iki renkli komşusunu geçen tek monoton hücre ve oradaki c-bet'in neredeyse tamamı %33 boyutu (%57,6).
+
+### Big blind c-bet'e nasıl karşılık veriyor?
+
+**%33'lük c-bet'e karşı**
+
+| Board tipi | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Çiftli** | %34,0 | %48,5 | %17,6 |
+| **As yüksek** | %36,4 | %54,5 | %9,1 |
+| **Papaz yüksek** | %32,3 | %55,2 | %12,5 |
+| **Kız/vale yüksek** | %29,5 | %57,0 | %13,5 |
+| **On/dokuz yüksek** | %28,0 | %57,4 | %14,6 |
+| **Düşük (sekiz yüksek ya da altı)** | %29,4 | %52,6 | %18,0 |
+| **Tüm flop'lar** | %32,1 | %53,3 | %14,6 |
+
+**%75'lik c-bet'e karşı**
+
+| Board tipi | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Çiftli** | %48,9 | %38,1 | %13,0 |
+| **As yüksek** | %50,4 | %46,0 | %3,6 |
+| **Papaz yüksek** | %49,7 | %45,1 | %5,1 |
+| **Kız/vale yüksek** | %47,7 | %45,6 | %6,7 |
+| **On/dokuz yüksek** | %46,3 | %44,7 | %9,0 |
+| **Düşük (sekiz yüksek ya da altı)** | %46,2 | %40,8 | %13,0 |
+| **Tüm flop'lar** | %48,1 | %44,4 | %7,5 |
+
+%33'lük bir bahis, saf blöf olarak ==0,33 ÷ 1,33 = yaklaşık %24,8== oranında fold alırsa başa baş çıkar; oysa big blind ortalamada %32,1 fold ediyor. %75'lik bahse karşı (==0,75 ÷ 1,75 = yaklaşık %42,9==) fold oranı %48,1. Flop'ta big blind, minimum savunma frekansının (MDF) önerdiği kadar savunmuyor. %33'lük c-bet'e karşı check-raise en çok düşük board'larda (%18,0) ve çiftli board'larda (%17,6), en az da as yüksek board'larda (%9,1) görülüyor.
+
+Big blind'ın raise yapana önden bahis yapması (donk bet) genel olarak yalnızca %2,4 (%33 boyutunda %1,7 artı %75 boyutunda %0,7). Renklere göre ayırınca en yükseği %7,2 ile monoton (%92,8 check); yükseklik ve renk birlikte ayrıldığında düşük monoton flop'lar %9,2'ye çıkıyor. Big blind'ın lead yapması gereken istisna board'lar [donk bet rehberinde](/tr/blog/donk-bet-strategy) anlatılıyor.
+
+> **Bu tablolar nasıl okunur** — Her hücre kendi flop'larının ortalamasıdır; flop'lar gerçekte ne sıklıkla geldiklerine göre ağırlıklandırılır (bir flop'un bütün renk varyantları birlikte sayılır). Big blind check ettikten sonraki buton gibi ilk aksiyon olmayan bir spotta her flop ayrıca o flop'ta bu spota ne sıklıkla ulaşıldığına göre ağırlıklandırılır; bir flop içinde de her el, o eli tutma ve o spota varma olasılığına göre ağırlıklandırılır. "En az bahis" ve "en çok bahis" altında listelenen flop'ların her biri kendi renk grubunun tamamını temsil eder (A♣9♣2♣ = bütün A-9-2 monoton flop'lar). Yuvarlama nedeniyle bir satırın toplamı %99,9–100,1 çıkabilir.
+
+---
+
 ## Ne sıklıkla c-bet yapmalısın? (Sıklık)
 
 Tek bir "doğru" c-bet yüzdesi yok — sana tek bir sayı veren herkes aslında seni bir kaçağa yönlendiriyor. Sıklık; pozisyona, board'a ve pottaki oyuncu sayısına göre oynar. Hızlı başvuru tablosu:
@@ -110,6 +203,8 @@ Tek bir "doğru" c-bet yüzdesi yok — sana tek bir sayı veren herkes aslında
 </div>
 
 Bir sağlık kontrolü olarak, sağlam bir oyuncunun tüm board'lardaki genel flop c-bet oranı **%55–70** civarına düşer. Flop'ların ~%85'inden fazlasında c-bet yapıyorsan otomatik pilottasın ve iyi oyuncular bunu cezalandırır; ~%40'ın altındaysan fazla dürüstsün, yalnızca vurduğunda bahis yapıyorsun. Ama unutma — bu sayı bir *toplam*, hedef değil. Oraya kota doldurarak değil, doğru board'larda bahis yaparak varırsın.
+
+Somut bir referans noktası: yukarıdaki solver'ın BTN–BB heads-up spotunda, big blind check ettikten sonra butonun ortalama c-bet'i **%54,7**; tek tek flop'lar ise %28,5 (A-9-2 monoton) ile %97,1 (7-7-7) arasında değişiyor. Sıklığı tutturulacak tek bir sayı olarak değil, board tipine göre öğren.
 
 ---
 

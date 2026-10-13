@@ -13,7 +13,7 @@ export const POST: Post = {
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
-  readTime: "15 mnt",
+  readTime: "18 mnt",
   emoji: "🔥",
   image: "/images/holdem-continuation-bet-hero.webp",
   imageAlt: "Seorang pemain poker bertaruh chip ke flop yang baru dibagikan setelah raise preflop — momen continuation bet klasik di meja felt hijau",
@@ -95,6 +95,99 @@ Bagian halusnya: Anda bisa punya satu tanpa yang lain. Di A‑8‑3 Anda punya j
 
 ---
 
+## Seberapa Sering Solver C-Bet di Tiap Jenis Board?
+
+**Di pot single-raised saat button open dan big blind call, solver membuat button c-bet dengan 54,7% dari seluruh range-nya setelah big blind check.** Rata-rata itu menyembunyikan sebaran yang lebar: dari 43,5% di flop A-high sampai 67,8% di flop berpasangan, dengan sizing utama yang juga berbeda. Flop berpasangan dan K-high bertumpu pada bet sepertiga pot; flop A-high, T-high dan 9-high, serta flop rendah justru lebih sering memakai bet 75%. Tabel di bawah mengelompokkan seluruh 1.755 flop yang sudah dihitung sebelumnya menurut jenis board.
+
+> **Cara angka ini dihitung** — Hasil dari [solver GTO gratis](/id/solver) HoldemMaster untuk open BTN vs call BB di 1.755 flop (dikelompokkan berdasarkan suit kartu yang setara) — stack 100bb · bet flop 33%/75% · bet turn dan river 60% · raise 60% · tanpa rake · target galat 0,3%. Range input = chart preflop milik solver (range konsensus yang disusun dari sumber publik). Ini perhitungan heads-up, jadi tidak bisa dipindahkan begitu saja ke pot multiway.
+
+### Menurut kartu tertinggi — c-bet button setelah BB check
+
+Dari seluruh 22.100 kemungkinan flop, jenis yang paling sering muncul adalah Q-high atau J-high (23,5%), dan jenis yang paling jarang di-c-bet oleh button adalah A-high (43,5%).
+
+| Jenis board | Porsi flop | Total c-bet | 33% | 75% |
+|:---|:---:|:---:|:---:|:---:|
+| **Berpasangan** | 17,2% | **67,8%** | 60,6% | 7,2% |
+| **A-high** | 19,1% | **43,5%** | 16,3% | 27,2% |
+| **K-high** | 15,9% | **57,2%** | 40,8% | 16,4% |
+| **Q-high / J-high** | 23,5% | **52,1%** | 27,5% | 24,7% |
+| **T-high / 9-high** | 14,2% | **53,2%** | 19,8% | 33,4% |
+| **Rendah (8-high ke bawah)** | 10,1% | **57,7%** | 23,8% | 33,8% |
+| **Semua flop** | 100% | **54,7%** | 31,7% | 23,0% |
+
+Bahkan di dalam satu jenis, total c-bet berayun jauh dari satu flop ke flop lain. Inilah flop di tiap jenis tempat button paling jarang dan paling sering bet:
+
+| Jenis board | Paling jarang bet | Paling sering bet |
+|:---|:---|:---|
+| **Berpasangan** | A♣Q♦Q♣ 37,7% | 7♥7♦7♣ 97,1% |
+| **A-high** | A♣9♣2♣ 28,5% | A♥7♦2♣ 59,0% |
+| **K-high** | K♣Q♣2♣ 32,5% | K♥7♦2♣ 90,2% |
+| **Q-high / J-high** | Q♥J♦8♣ 35,5% | Q♥7♦2♣ 84,7% |
+| **T-high / 9-high** | T♣9♦7♣ 38,5% | T♥6♦2♣ 73,5% |
+| **Rendah (8-high ke bawah)** | 8♦7♦4♣ 46,4% | 7♥6♦2♣ 76,3% |
+| **Semua flop** | A♣9♣2♣ 28,5% | 7♥7♦7♣ 97,1% |
+
+Sebaran di dalam tiap jenis inilah pelajaran sebenarnya dari tabel tersebut. Board K-high kering seperti K♥7♦2♣ di-bet 90,2% dari waktu, tetapi K♣Q♣2♣ yang monotone turun ke 32,5%. "Ini K-high, jadi saya bet" tidak cukup; Anda harus membaca **tinggi kartu, suit, dan keterhubungan sekaligus**. Di board berpasangan, hampir seluruh c-bet memakai sizing kecil (60,6% dari 67,8%), cocok dengan aturan "kecil di board kering" pada bagian sizing di bawah. Satu-satunya tempat data membantah aturan praktis itu adalah A-high: untuk jenis ini secara keseluruhan, bet 75% lebih sering daripada bet 33% (27,2% berbanding 16,3%). Penyebabnya juga bukan flop monotone yang mengerek rata-rata — kalau hanya flop A-high rainbow yang dihitung, bet besar tetap lebih sering dipakai (25,9% berbanding 18,8%). Satu board tertentu seperti A-7-2 tetap bisa punya sizing yang berbeda dari rata-rata jenisnya.
+
+### Menurut suit dan keterhubungan — perhitungan yang sama dari sumbu lain
+
+| Jenis board | Porsi flop | Total c-bet | 33% · 75% |
+|:---|:---:|:---:|:---:|
+| **Rainbow** (tiga suit berbeda) | 39,8% | **58,8%** | 36,1% · 22,7% |
+| **Two-tone** (dua kartu satu suit) | 55,1% | **52,6%** | 28,7% · 23,9% |
+| **Monotone** (tiga kartu satu suit) | 5,2% | **44,2%** | 29,2% · 15,1% |
+| **Terhubung** (tidak berpasangan · ketiganya dalam rentang lima rank) | 18,5% | **49,1%** | 18,8% · 30,3% |
+| **Tidak terhubung** (tidak berpasangan · sisanya) | 64,3% | **52,8%** | 27,7% · 25,1% |
+
+Makin terkumpul suit-nya, makin jarang button c-bet (58,8% → 52,6% → 44,2%), dan board terhubung lebih jarang di-bet tetapi dengan sizing 75% sebagai bet utama. "Terhubung" di sini berarti tiga rank berbeda yang muat dalam lima rank berurutan (rank tertinggi dikurangi terendah 4 atau kurang, dan as juga boleh dihitung sebagai kartu rendah: A-2-4 terhubung, A-7-2 tidak). Board berpasangan (17,2%) tidak dimasukkan ke pembagian terhubung/tidak terhubung; angkanya sama dengan tabel pertama.
+
+### Kartu tertinggi × suit — total c-bet
+
+| Tinggi board | Rainbow | Two-tone | Monotone |
+|:---|:---:|:---:|:---:|
+| **Berpasangan** | 70,3% | 65,3% | — |
+| **A-high** | 44,6% | 43,6% | 35,4% |
+| **K-high** | 63,3% | 54,9% | 40,8% |
+| **Q-high / J-high** | 55,7% | 50,6% | 44,2% |
+| **T-high / 9-high** | 57,9% | 50,4% | 49,7% |
+| **Rendah (8-high ke bawah)** | 60,6% | 55,5% | 59,1% |
+
+Di keenam baris, **rainbow lebih tinggi daripada two-tone.** Contoh paling jelas adalah K-high: rainbow 63,3% berbanding two-tone 54,9%, selisih 8,4 poin — jadi K♥9♠6♣ dan K♥9♥6♣ sudah menjadi board yang berbeda begitu muncul dua kartu hati. Flop berpasangan yang monotone tidak mungkin ada, karena dua kartu dengan rank sama tidak pernah punya suit yang sama. Monotone rendah (59,1%) adalah satu-satunya sel monotone yang lebih tinggi daripada sel two-tone di sebelahnya, dan hampir seluruh c-bet itu memakai sizing 33% (57,6%).
+
+### Bagaimana big blind merespons c-bet?
+
+**Menghadapi c-bet 33%**
+
+| Jenis board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Berpasangan** | 34,0% | 48,5% | 17,6% |
+| **A-high** | 36,4% | 54,5% | 9,1% |
+| **K-high** | 32,3% | 55,2% | 12,5% |
+| **Q-high / J-high** | 29,5% | 57,0% | 13,5% |
+| **T-high / 9-high** | 28,0% | 57,4% | 14,6% |
+| **Rendah (8-high ke bawah)** | 29,4% | 52,6% | 18,0% |
+| **Semua flop** | 32,1% | 53,3% | 14,6% |
+
+**Menghadapi c-bet 75%**
+
+| Jenis board | Fold | Call | Raise |
+|:---|:---:|:---:|:---:|
+| **Berpasangan** | 48,9% | 38,1% | 13,0% |
+| **A-high** | 50,4% | 46,0% | 3,6% |
+| **K-high** | 49,7% | 45,1% | 5,1% |
+| **Q-high / J-high** | 47,7% | 45,6% | 6,7% |
+| **T-high / 9-high** | 46,3% | 44,7% | 9,0% |
+| **Rendah (8-high ke bawah)** | 46,2% | 40,8% | 13,0% |
+| **Semua flop** | 48,1% | 44,4% | 7,5% |
+
+Bet 33% sudah impas sebagai pure bluff kalau lawan fold ==0,33 ÷ 1,33 = sekitar 24,8%== dari waktu, padahal big blind fold rata-rata 32,1%; melawan bet 75% (==0,75 ÷ 1,75 = sekitar 42,9%==) ia fold 48,1%. Di flop, big blind tidak bertahan sebanyak yang disarankan minimum defense frequency (MDF). Melawan c-bet 33%, check-raise paling sering muncul di board rendah (18,0%) dan board berpasangan (17,6%), dan paling jarang di A-high (9,1%) — untuk satu contoh check-raise di board rendah yang diurai hand demi hand, lihat [kapan big blind check-raise di flop rendah](/id/blog/low-board-check-raise).
+
+Bet duluan ke arah raiser (donk bet) hanya 2,4% bagi big blind secara keseluruhan (1,7% dengan 33% ditambah 0,7% dengan 75%). Dibagi menurut suit, yang tertinggi adalah monotone dengan 7,2% (92,8% check); dibagi menurut tinggi kartu dan suit sekaligus, flop monotone rendah mencapai 9,2%. Board pengecualian tempat big blind sebaiknya bet duluan dibahas di [panduan donk bet](/id/blog/donk-bet-strategy).
+
+> **Cara membaca tabel ini** — Setiap sel adalah rata-rata flop-flopnya, dibobot menurut seberapa sering flop itu benar-benar muncul (semua varian suit dari satu flop dihitung bersama). Untuk spot yang bukan aksi pertama, seperti button setelah big blind check, setiap flop juga dibobot menurut seberapa sering spot itu tercapai di flop tersebut, dan di dalam satu flop setiap hand dibobot menurut peluang memegangnya dan sampai di spot itu. Flop yang tercantum di "paling jarang bet" dan "paling sering bet" masing-masing mewakili seluruh kelompok suit-nya (A♣9♣2♣ = semua flop A-9-2 monotone). Karena pembulatan, satu baris bisa berjumlah 99,9–100,1.
+
+---
+
 ## Seberapa Sering Anda Harus C-Bet? (Frekuensi)
 
 Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu angka sedang menjual leak. Frekuensi berayun mengikuti posisi, board, dan berapa pemain dalam pot. Inilah rujukan cepatnya:
@@ -112,6 +205,8 @@ Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu 
 </div>
 
 Sebagai patokan kewajaran, tingkat c-bet flop keseluruhan pemain solid berada di sekitar **55–70%** di semua board. Kalau Anda c-bet lebih dari ~85% flop, Anda main autopilot dan pemain bagus akan menghukumnya; di bawah ~40% Anda terlalu jujur, hanya bertaruh saat mengenai. Tapi ingat — angka itu *agregat*, bukan target. Anda sampai ke sana dengan bertaruh di board yang tepat, bukan dengan memenuhi kuota.
+
+Sebagai satu titik acuan konkret: di spot heads-up BTN vs BB dari solver di atas, rata-rata c-bet button setelah big blind check adalah **54,7%**, dan flop satu per satu berkisar dari 28,5% (A-9-2 monotone) sampai 97,1% (7-7-7). Pelajari frekuensi menurut jenis board, bukan sebagai satu angka yang harus dikejar.
 
 ---
 
