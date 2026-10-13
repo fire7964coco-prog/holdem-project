@@ -227,6 +227,8 @@ const STATIC_ROUTES = [
   { path: "/tr/calculator", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-07 vi 도구 회차.
   { path: "/vi/calculator", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-13 ru 계산기 회차.
+  { path: "/ru/calculator", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/hand-chart` 10개(로케일 도구 확장 회차 1). `/en/hand-chart`(0.7)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/hand-chart-alternates.ts`.

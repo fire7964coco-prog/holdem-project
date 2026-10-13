@@ -24,7 +24,8 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=ru";
  *   🔴 `GTO`·`солвер`를 단독 검색어로 조준하지 않는다(체력검정 ГТО·멘토링 오염 · 뱅크 §1-①②).
  *
  * ▶ 링크 치환 (EN → ru) — 뱅크 §6 «랜딩이 링크할 ru 자산이 거의 없다»:
- *   /en/hand-chart · /en/calculator · /en/win-rate-quiz → ru 없음 → 행·링크 제거(없는 라우트를 걸지 않는다)
+ *   /en/hand-chart · /en/win-rate-quiz → ru 없음 → 행·링크 제거(없는 라우트를 걸지 않는다)
+ *   /en/calculator → ★2026-10-13 `/ru/calculator` 신설 → 계산기 행 2개 복원(vi 선례 문형)
  *   /en/blog/holdem-equity · holdem-continuation-bet · holdem-strategy → ru 없음 → ru 규칙 글 6편으로 대체
  *   GTO 예제 13편 → ru 미발행 → SPOT_GROUPS `slug` 전부 비움
  *
@@ -48,11 +49,14 @@ const SPEC: [string, string][] = [
 ];
 
 /**
- * 「무엇을 원하나 → 어디로」 — ru에는 hand-chart·calculator·quiz 라우트가 없어 그 행을 뺐다.
+ * 「무엇을 원하나 → 어디로」 — ru에는 hand-chart·quiz 라우트가 없어 그 행을 뺐다(계산기 행 = 10-13 복원).
  * 행 = 솔버 1 + ru 규칙 글 2(hi 선례 «입문 글 행»). 앵커는 각 글 title의 핵심명.
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Посчитать постфлоп-спот и увидеть частоты бета", "GTO-солвер на этой странице", null],
+  // ★2026-10-13 ru 계산기 회차 — vi 선례 두 행. 라벨 = /ru/calculator HubPage title 축어 · 둘째 행은 Equity 탭.
+  ["Посчитать ауты, пот-оддсы, SPR или ICM без запуска солвера", "Покерный калькулятор", "/ru/calculator"],
+  ["Сравнить две руки и узнать эквити (ожидаемую долю банка)", "Калькулятор эквити", "/ru/calculator"],
   ["Разобраться в правилах техасского холдема с нуля", "Правила для новичков", "/ru/blog/texas-holdem-rules-for-beginners"],
   ["Понять, кто и когда ходит на каждой улице", "Порядок раздачи", "/ru/blog/holdem-game-order"],
 ];

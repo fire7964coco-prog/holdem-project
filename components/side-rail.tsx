@@ -350,10 +350,12 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * ru — ★2026-10-10 `/ru/solver` 신설(ru 첫 허브). 라벨:
    *   - CHROME.ru.blogLabel «Блог» (lib/intl.ts)
    *   - "GTO-солвер" = 그 페이지 HubPage title 축어
-   *   ⚠ ru에는 calculator·hand-chart·glossary·tournaments가 없다 — 넣지 마라.
+   *   - "Покерный калькулятор" = ★2026-10-13 `/ru/calculator` HubPage title 축어(ru 계산기 회차)
+   *   ⚠ ru에는 hand-chart·glossary·tournaments가 없다 — 넣지 마라.
    */
   ru: [
     { href: "/ru/blog",   icon: "📚", label: CHROME.ru.blogLabel },
+    { href: "/ru/calculator", icon: "🧮", label: "Покерный калькулятор" },
     { href: "/ru/solver", icon: "🧠", label: "GTO-солвер" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.

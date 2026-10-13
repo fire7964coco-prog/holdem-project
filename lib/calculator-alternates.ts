@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
  *   솔버처럼 12파일에 복사하지 않고 **한 곳**에 둔다 — 로케일을 더할 때 여기 한 줄이면 된다.
  * ★언어 코드 표기는 솔버 랜딩과 동일(`ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN`).
  */
-export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi"] as const;
+export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ru"] as const;
 export type CalculatorLocale = (typeof CALCULATOR_LOCALES)[number];
 
 export const CALCULATOR_ALTERNATES: Record<string, string> = {
@@ -36,5 +36,7 @@ export const CALCULATOR_ALTERNATES: Record<string, string> = {
    *      (equity·ICM·pot odds가 원어 그대로), 실제 유입도 비한국어권이 대부분인 자리다.
    *   ⚠ 값이 `en-US`와 **같은 URL인 것은 정상**이다(하나의 페이지가 두 역할을 겸한다).
    */
+  // ★2026-10-13 ru 계산기 회차(docs/keyword-bank/ru-calculator.md) — ru-RU(솔버 랜딩 세트와 같은 코드).
+  "ru-RU": `${SITE}/ru/calculator`,
   "x-default": `${SITE}/en/calculator`,
 };
