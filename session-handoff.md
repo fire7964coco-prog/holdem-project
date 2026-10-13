@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-13 (18) L1 tr `e25c1031` MB-314(+MA-524 이행) · (17) L1 vi `d08fac6b` MB-313(+MA-521 이행) · (16) L1 ms `dcd6d020` MB-312(+MA-518 ① · MA-508 회신) · (15) L1 id `7fc0c95e` MB-311 · (14) L1 fr `ca3911e8` MB-310 · (13) MA-515 §2-BU MB-308 · L1 pt `421e4a7c` MB-309 · (12) MA-509·510 `e30fde28` MB-307 · (11) 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
+> 갱신: 2026-10-13 (19) L1 hi `529d53b9` MB-315 · (18) L1 tr `e25c1031` MB-314(+MA-524 이행) · (17) L1 vi `d08fac6b` MB-313(+MA-521 이행) · (16) L1 ms `dcd6d020` MB-312(+MA-518 ① · MA-508 회신) · (15) L1 id `7fc0c95e` MB-311 · (14) L1 fr `ca3911e8` MB-310 · (13) MA-515 §2-BU MB-308 · L1 pt `421e4a7c` MB-309 · (12) MA-509·510 `e30fde28` MB-307 · (11) 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
 > 시작 순서: AGENTS.md → CLAUDE.md → 이 파일 → `git status` + `git worktree list` → 우편함 도구 + 솔버 `../클로드-프로그램만들기/solver/mailbox/MAILBOX.md` 최상단 «본체» 행(솔버 S-행은 도구에 안 뜬다).
 > 🔴 작업 주체: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4.
 
@@ -11,7 +11,7 @@
 | **우편함** | ✅ MA-509·510 = queue §2-BT 회신+등재+이행 `e30fde28` MB-307 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 스트래들 «의무 베팅» 통지·vi glossary H2 «Cặp» = 판단 대상(§2-BT) | 판정 대기 |
 | **S2** | 승률 시뮬레이터 ✅ MA-518 판정(F-01·02·03·04·07·08 해소 · 새 문구 OK 17 · RISKY 2 = ko·ja sharedInvalid → `dcd6d020` 이행) · 🪶 잔여 = F-10 1판 2px · EN 퀴즈 설명 2자리(§2-BV ②③ · F-06 손질 때) · en·es·de 360 컨트롤 줄 1px · F-06·N-3 보류 | 공용 회차 때 |
 | **MA-515** | ✅ KO holdem-probability 4자리 §2-BU `7c9da352` MB-308 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 통지 ③ 포지션 글 6맥스/9인 · ④ TDA Rule 20/21 = 판단 대상(§2-BU) | 판정 대기 |
-| **회차 L1** | 시뮬레이터 언어 확대 1차 — ✅ pt `421e4a7c` MB-309 · ✅ fr `ca3911e8` MB-310 · ✅ id `7fc0c95e` MB-311 · ✅ ms `dcd6d020` MB-312 · ✅ vi `d08fac6b` MB-313 · ✅ tr `e25c1031` MB-314(▶ 검수장 pt·fr·ms·vi·tr 문구 판정 대기 · id = MA-524 완료) · ▶ 다음 세션 = **hi** | 진행 중 |
+| **회차 L1** | 시뮬레이터 언어 확대 1차 — ✅ pt `421e4a7c` MB-309 · ✅ fr `ca3911e8` MB-310 · ✅ id `7fc0c95e` MB-311 · ✅ ms `dcd6d020` MB-312 · ✅ vi `d08fac6b` MB-313 · ✅ tr `e25c1031` MB-314 · ✅ hi `529d53b9` MB-315(▶ 검수장 pt·fr·ms·vi·tr·hi 문구 판정 대기 · id = MA-524 완료) · ▶ 다음 세션 = **ru**(아래 ⚠ 링크 자리 판단 먼저) | 진행 중 |
 | **텔레그램 로그인** | 10-13 사장님 «L1 마무리 후 텔레그램 작업». 목적 = 가입자 텔레그램 ID 확보 → 봇 1:1 메시지·단톡방/채널 초대 링크. 착수 순서: ① 텔레그램 공식 문서로 현행 사양 확인(Login Widget `request_access=write` · 발송 한도) ② Supabase에 기본 공급자 없음 → 서버에서 봇 토큰으로 hash 검증 후 회원 연결 설계 ③ 수신 동의 체크박스(정보통신망법 §50) ④ 계획표 → 승인 뒤 구현. 봇 생성(@BotFather)·도메인 등록은 사장님 몫 | L1 끝난 뒤 |
 | 다음 후보 | 사장님 지시로: ⓐ (→ 회차 L1) ⓑ 시뮬레이터 보류 후보 ④ 핸드 기록 목록(DB) · ⑤ 레인지 대 레인지(`/calculator` 카니발 확인 먼저) · 🪶 결정만 모드 기록(SQL 필요). 요청서 = `../클로드-프로그램만들기/handoff-to-main-site/처리완료/승률시뮬레이터업그레이드.md` | 사장님 결정 |
 
@@ -26,7 +26,7 @@
 | 5 | 렌즈 2종(원어민·딜러 · 서브에이전트 병렬) → 반영 · 화면 390·1440 넘침 0(`next start -p 3100` · 끝나면 PID 대조 후 종료) | screen-review |
 | 6 | build → 배포 1회 → MB 1행 · IndexNow · GSC 수동 색인 목록(사장님 몫) | MB · WORKLOG |
 
-- 진행: ✅ pt(10-13) · ✅ fr(10-13) · ✅ id(10-13) · ✅ ms(10-13) · ✅ vi(10-13) · ✅ tr(10-13) · ▶ hi · (ru)
+- 진행: ✅ pt(10-13) · ✅ fr(10-13) · ✅ id(10-13) · ✅ ms(10-13) · ✅ vi(10-13) · ✅ tr(10-13) · ✅ hi(10-13 · 아스트라 ultra 교차 = 약 35분) · ▶ ru
 - 🪶 공용 기존 결함: 1440 승률 패널 «승·무·패» 줄 끝 잘림(es·pt·vi·tr) · 360 같은 줄 잘림(tr 실측) · 공용 UI 퍼센트 뒤붙임 «35.4%»(tr «%35,4»·쉼표 소수 미반영) — 시뮬레이터 공용 회차 때.
 
 - 분할(10-13 사장님): **한 세션 = 한 언어**(= 시뮬레이터 페이지 1장) · 배포·MB·판정 요청도 언어마다 1회.
@@ -51,7 +51,7 @@
 
 ## 사장님 몫 — GSC 수동 색인
 
-- `/ru/solver` · `/vi/calculator`·`/vi/hand-chart`·`/vi/solver` · vi 39(`/vi/glossary` + 글 38 · 목록 WORKLOG 10-10 (8)) · fr 38(`docs/fr-cluster-plan.md` §4-C ⑧) · tr 회차 1~5 + 보강 A~D(아카이브 `2026-10-09-5-…` tr 두 절 · Git Bash `--prefix /tr/`는 `MSYS_NO_PATHCONV=1`) · 도구 20(`/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/{hand-chart,glossary}`) · 시뮬레이터 랜딩 4(회차 C) + `/pt/win-rate-quiz`·`/fr/win-rate-quiz`·`/id/win-rate-quiz`·`/ms/win-rate-quiz`·`/vi/win-rate-quiz`·`/tr/win-rate-quiz`(L1).
+- `/ru/solver` · `/vi/calculator`·`/vi/hand-chart`·`/vi/solver` · vi 39(`/vi/glossary` + 글 38 · 목록 WORKLOG 10-10 (8)) · fr 38(`docs/fr-cluster-plan.md` §4-C ⑧) · tr 회차 1~5 + 보강 A~D(아카이브 `2026-10-09-5-…` tr 두 절 · Git Bash `--prefix /tr/`는 `MSYS_NO_PATHCONV=1`) · 도구 20(`/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/{hand-chart,glossary}`) · 시뮬레이터 랜딩 4(회차 C) + `/pt/win-rate-quiz`·`/fr/win-rate-quiz`·`/id/win-rate-quiz`·`/ms/win-rate-quiz`·`/vi/win-rate-quiz`·`/tr/win-rate-quiz`·`/hi/win-rate-quiz`(L1).
 
 ## 자동 착수 금지 (🪶 판단 대상 — 링크만)
 

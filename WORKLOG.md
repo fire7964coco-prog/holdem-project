@@ -1,3 +1,11 @@
+## 2026-10-13 (19) — 회차 L1 시뮬레이터 언어 확대 hi `529d53b9` · MB-315
+
+- 사장님 «핸드오프읽고 hi진행해 · 조금 어려운 언어이니 아스트라 울트라도 활용». 우편함 검수장→본체 미처리 0.
+- hi: DFS India(poker simulator 170 · poker practice 90 · poker practice online 210 = 26-04~08 스파이크·게임 의도 섞임 · poker game 22,200 = 다른 의도 · 데바나가리 도구구·«poker sikhe» 전부 데이터 없음) + SERP(영어 게임 판 · 힌디어 0 · 훈련형 0) → 제목 «Poker Simulator से poker practice: कहाँ fold करना था?».
+- 사전 = EN 정본에서 재저작 · आप체 · 라틴 포커 용어 · 족보 라틴 · 코퍼스 21편+계산기 사전 빈도(कॉम्बो 297 · बोर्ड 337 · विरोधी = 계산기) · 숫자 en-US. 푸터 = hi 글 부재로 계산기·핸드 차트·betting actions.
+- 렌즈 3 동시: 딜러(서브) WRONG 0 · 원어민(서브) WRONG 6 + RISKY 6 반영 · 아스트라 `codex exec -m gpt-6-astra -c model_reasoning_effort="ultra"`(read-only · 스크래치 사본 · 약 35분) 9건 중 5 겹침 · 신규 3 채택 · 2 기각(푸터 대상 · 제목 길이).
+- 390·1440 넘침 0. next start 3100은 PID 22388 대조 후 종료.
+
 ## 2026-10-13 (18) — 회차 L1 시뮬레이터 언어 확대 tr `e25c1031` · MB-314 · MA-524 이행
 
 - 사장님 «핸드오프읽고 tr진행해». 우편함 검수장→본체: MA-524(MB-311 id 판정 · 요청 1(3자리)) → queue §2-BX 등재 · 같은 커밋에서 이행 · MB-314로 회신.
