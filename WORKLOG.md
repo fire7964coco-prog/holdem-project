@@ -1,3 +1,12 @@
+## 2026-10-13 (16) — 회차 L1 시뮬레이터 언어 확대 ms `dcd6d020` · MB-312 · MA-518 ① 이행
+
+- 사장님 «핸드오프 읽고 ms 진행해». 우편함 검수장→본체: MA-518(요청 1 · 통지 3) · MA-508(요청 0) → queue §2-BV 등재 · MB-312로 회신.
+- ms: DFS Malaysia(simulator poker 40 = poker simulator와 12개월 시계열 동일 · cara main poker 170 · permainan poker 140 = 다른 의도 · 말레이어 «simulasi/latihan/berlatih/kuiz poker» 전부 데이터 없음) + SERP(영어 글로벌 판 · 계산기 3·게임 3·훈련형 2 · 말레이어 0) → 제목 «Simulator Poker untuk Latihan: Bilakah Anda Patut Fold?». 계산기 메타·사전 «simulator» 0회. 근거 `docs/keyword-bank/win-rate-quiz-ltr.md` §ms.
+- 사전 = EN 정본에서 직접 재저작(id판 복사 금지 · 인니어 잔재 0 확인) · 문중 소문자 anda · tangan/kad/kombinasi/pulang modal · ms-MY 숫자.
+- /ms/solver «어느 도구» 표에 레인지표 행이 처음부터 없었다 → Carta Tangan 행 + 시뮬레이터 행 신설.
+- 렌즈 2(원어민·딜러) WRONG 0 · RISKY 8 + STYLE 일부 반영. 팟 오즈 제목 1440에서 3줄 → EN 길이로 축약. 390·1440 넘침 0. next start 3100은 PID 대조 후 종료.
+- MA-518 요청 ①: ko·ja sharedInvalid 원인 단정 → 가능성 꼴(같은 커밋).
+
 ## 2026-10-13 (15) — 회차 L1 시뮬레이터 언어 확대 id `7fc0c95e` · MB-311
 
 - 사장님 «핸드오프 읽고 id 진행해». 시작 16:47 · 우편함 검수장→본체 신규 요청 0(MA-508 = 요청 0 ACK).
