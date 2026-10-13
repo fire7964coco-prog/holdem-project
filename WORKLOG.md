@@ -1,3 +1,7 @@
+## 2026-10-13 (1) — 회차 B 6 · EN `6164c748` 델타 ms odds 3·strategy 5 이식 · 배포 `be8266b5` · MB-295
+
+- 사장님 «6번부터 진행하자». 13로케일 all-in은 `fe93df0d`(MB-264)가 이미 전파(표 머리 NL/PL · 47-B · 154 · 210/211 13로케일 grep 확인) → 핸드오프 기재가 낡았던 것. ms: 6164c748 EN diff 대조 → card-counting 4 · drawing-odds 2 · equity 8 · 3bet 1 · limping 2 · position-play 2 · SHC 1 · strategy 3(4자리) · positions 0(기반영). audit:hard ms 🔴 0 · build 74+729 exit 0.
+
 ## 2026-10-12 (29) — 회차 A ①~⑤ 본체 정리 · 배포 `4e367e54` · MB-294
 
 - 사장님 «a를 이번 세션에서 진행하고 다음 세션에서 6~부터 할 수 있는 데까지 순서대로» → 핸드오프 회차표 A·B 등재 후 착수.
