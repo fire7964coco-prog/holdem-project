@@ -158,6 +158,12 @@ const EN_UI: QuizUI = {
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combos → now ${cur} combos (${pct}% left)`,
   rangeLegend: ["Still in (darker = more)", "Removed by the action", "Never in range", "Actual hand"],
   rangeNote: "Starts from the seat's preflop range and removes, street by street, every hand that would have acted differently under the opponent rules. The win rate above uses this same range. Combos that clash with your hand or the board are left out.",
+  quizKinds: ["Guess equity + decide", "Decide only (your call?)"],
+  decideTitle: "Your call?",
+  decideHint: "Pick call or fold without seeing their cards. Even if you fold, the hand plays out to the end. This mode isn't added to your quiz stats.",
+  decideSummary: (hits, decisions) => `This hand: ${hits}/${decisions} decisions right by pot odds`,
+  actualCol: "Cards known",
+  actualSummary: (hits, decisions) => `Right if you'd known their cards: ${hits}/${decisions} — for reference only. At the table, the standard is pot odds without seeing their cards.`,
 
   ruleTitle: "What this simulator assumes",
   ruleText: (style) => (

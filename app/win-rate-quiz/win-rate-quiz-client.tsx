@@ -162,6 +162,12 @@ const KO_UI: QuizUI = {
   rangeCombos: (pre, cur, pct) => `프리플랍 ${pre}콤보 → 지금 ${cur}콤보 (${pct}% 남음)`,
   rangeLegend: ["남음 (진할수록 많이)", "액션으로 빠짐", "처음부터 없음", "실제 패"],
   rangeNote: "자리별 프리플랍 레인지에서 출발해, 스트리트마다 상대 규칙과 다르게 움직였을 패를 지웠습니다. 위 승률도 이 레인지로 계산합니다. 내 패·보드와 겹치는 콤보는 뺐습니다.",
+  quizKinds: ["승률 짐작 + 결정", "결정만 (나라면?)"],
+  decideTitle: "나라면?",
+  decideHint: "상대 패를 모르는 채로 콜할지 폴드할지 고르세요. 폴드를 골라도 판은 끝까지 갑니다. 이 모드는 퀴즈 기록에 넣지 않아요.",
+  decideSummary: (hits, decisions) => `이번 판: 결정 ${decisions}번 중 팟오즈 기준 ${hits}번 맞음`,
+  actualCol: "패 공개 시",
+  actualSummary: (hits, decisions) => `상대 패를 알았다면 맞았을 결정 ${hits}/${decisions} — 참고용이에요. 실전 판단의 기준은 패를 모르는 상태의 팟오즈입니다.`,
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (style) => (

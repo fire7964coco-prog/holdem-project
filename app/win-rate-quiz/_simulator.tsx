@@ -74,7 +74,8 @@ const GUESS_COLOR = "var(--wrq-guess)";
 // ── 퀴즈 모드 (S-034 ③ · 2026-10-11) ────────────────────────────────────────
 /** 한 스트리트의 답 */
 interface QuizAnswer {
-  guess: number;
+  /** 결정만 모드(S-034 3차 ③)는 짐작이 없다 → null */
+  guess: number | null;
   /** 베팅이 없던 스트리트는 null */
   choice: "call" | "fold" | null;
   /** 정답 = 그 스트리트의 화면 승률(레인지 기준) */
@@ -91,6 +92,19 @@ interface QuizAnswer {
 const quizPoints = (err: number) => Math.max(0, Math.round(100 - 4 * err));
 /** 퀴즈 모드 켜짐 기억(보는 사람 브라우저에만 · 실패해도 기본값 꺼짐) */
 const QUIZ_KEY = "wrq-quiz-mode";
+/**
+ * 퀴즈 종류 (S-034 3차 ③ · 2026-10-13) — guess = 승률 짐작 + 콜/폴드(기존) · decide = «나라면?» 콜/폴드만.
+ * ★결정만 모드는 베팅이 있는 스트리트에서만 묻는다(고를 게 없으면 물을 게 없다).
+ *   폴드를 골라도 판은 끝까지 간다 — «나는 폴드하지 않는다» 원칙(파일 머리) 그대로, 고른 답만 채점한다.
+ * ★채점은 둘: 팟오즈 기준(화면 승률 = 레인지 기준 · 판 도중에 바로) · 패를 알았다면(공개 승률 · 판이 끝난 뒤 복기 표에서만).
+ *   패 기준 채점을 판 도중에 보이면 다음 스트리트 전에 상대 패 세기가 새어 나간다.
+ * ★결정만 모드 답은 퀴즈 기록(브라우저·계정)에 넣지 않는다 — 기록 칸이 짐작 오차·점수 기준이라 섞이면 평균이 깨진다.
+ */
+type QuizKind = "guess" | "decide";
+const QUIZ_KIND_KEY = "wrq-quiz-kind";
+/** 공개 승률로 본 판정 — 패를 알았다면 콜이 맞았나. 계산 전이거나 고를 게 없던 스트리트는 null */
+const actualVerdict = (r: StreetRecord): "call" | "fold" | null =>
+  r.required === null || !r.known ? null : r.known.hero.equity >= r.required ? "call" : "fold";
 /** 상대 성향 기억(S-034 2차 ②) — 같은 방식 · 실패하면 기본 */
 const STYLE_KEY = "wrq-opp-style";
 
@@ -215,6 +229,17 @@ export interface QuizUI {
   /** 권유 한 줄(«내 기록» 설계 §2-2) — 누적 1판 이상 + 로그인 안 함일 때만 */
   quizInvite: string;
   quizInviteLink: string;
+  /** 퀴즈 종류 고르기 (S-034 3차 ③) — [승률 짐작 + 결정, 결정만] */
+  quizKinds: readonly [string, string];
+  /** 결정만 모드 — 묻는 자리 머리·설명 */
+  decideTitle: string;
+  decideHint: string;
+  /** 결정만 모드 판 요약 — 팟오즈 기준 맞은 수 / 결정 수 */
+  decideSummary: (hits: number, decisions: number) => string;
+  /** 복기 표 열 — 상대 패를 알았다면(공개 승률 ≥ 필요 승률이면 콜) */
+  actualCol: string;
+  /** 복기 아래 — 패를 알았다면 맞은 결정 수 */
+  actualSummary: (hits: number, decisions: number) => string;
   /** 복기 표에 붙는 두 열 */
   quizGuessCol: string;
   quizChoiceCol: string;
@@ -693,6 +718,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * (`lib/win-rate-quiz-records.ts` · 설계 docs/my-records-design.md §3-2).
    */
   const [quiz, setQuiz] = useState(false);
+  const [quizKind, setQuizKind] = useState<QuizKind>("guess");
   /** 직접 입력 — 적용된 값(custom)과 편집 중인 값(draft)을 나눈다. 닫기 = draft 버림 */
   const [custom, setCustom] = useState<FixedDeal | null>(null);
   const [draft, setDraft] = useState<FixedDeal>(EMPTY_DEAL);
@@ -773,6 +799,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   // 켜짐 기억은 effect에서 읽는다 — 첫 렌더에서 읽으면 서버 렌더(꺼짐)와 갈려 하이드레이션이 깨진다
   useEffect(() => {
     try { if (localStorage.getItem(QUIZ_KEY) === "1") setQuiz(true); } catch { /* 저장소 막힘 = 꺼짐 */ }
+    try { if (localStorage.getItem(QUIZ_KIND_KEY) === "decide") setQuizKind("decide"); } catch { /* 저장소 막힘 = 짐작 */ }
     try {
       const s = localStorage.getItem(STYLE_KEY) as OppStyle | null;
       if (s && OPP_STYLES.includes(s)) setStyle(s);
@@ -799,6 +826,10 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     try {
       if (new URLSearchParams(window.location.search).has("h")) window.history.replaceState(null, "", window.location.pathname);
     } catch { /* 주소만 못 고칠 뿐 */ }
+  }, []);
+  const changeQuizKind = useCallback((k: QuizKind) => {
+    try { localStorage.setItem(QUIZ_KIND_KEY, k); } catch { /* 기억만 못 할 뿐 */ }
+    setQuizKind(k);
   }, []);
   const toggleQuiz = useCallback(() => {
     setQuiz((q) => {
@@ -917,7 +948,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * 상대가 이 스트리트에서 전부 폴드했으면 물을 게 없다(승률 100%로 끝난 판).
    * ★리버에서도 답을 먼저 받는다 — 안 그러면 쇼다운이 상대 패와 결과를 먼저 보여 준다.
    */
-  const quizPending = quiz && !!rec && !answer && rec.opponentsBefore - rec.foldedSlots.length > 0;
+  const quizPending = quiz && !!rec && !answer && rec.opponentsBefore - rec.foldedSlots.length > 0
+    && (quizKind === "guess" || rec.toCall > 0);
   /** 이 스트리트에서 상대가 전부 폴드했다 — 승률 100은 계산이 아니라 결과다 */
   const recAllFold = !!rec && rec.street > 0 && rec.opponentsBefore - rec.foldedSlots.length === 0;
   /** 앞 스트리트에서 올인 — 이 스트리트엔 베팅이 없다 */
@@ -931,10 +963,16 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   const submitGuess = (choice: "call" | "fold" | null) => {
     if (!rec || answer) return;
+    const choiceOk0 = choice === null ? null : choice === rec.verdict;
+    if (quizKind === "decide") {
+      // 결정만 — 짐작·점수 없음 · 기록에 넣지 않는다(위 QuizKind 주석)
+      setAnswers((a) => ({ ...a, [street]: { guess: null, choice, equity: rec.equity, err: 0, points: 0, choiceOk: choiceOk0 } }));
+      return;
+    }
     const err = Math.abs(guess - rec.equity);
     const points = quizPoints(err);
-    const choiceOk = choice === null ? null : choice === rec.verdict;
-    const firstOfHand = Object.keys(answers).length === 0;
+    const choiceOk = choiceOk0;
+    const firstOfHand = !Object.values(answers).some((x) => x.guess !== null);
     setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
     // 직접 입력·공유 링크 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다(링크는 보낸 사람이 결과를 안다)
     if (sim?.custom) return;
@@ -1014,7 +1052,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       values: [0, 1, 2, 3].map((s) => result.streets.find((x) => x.street === s)?.equity),
     };
     // 퀴즈로 짐작한 스트리트가 있으면 «내 짐작» 점선을 더한다 — 점선 둘의 간격 = 내 감각의 오차
-    const guessed = [0, 1, 2, 3].map((s) => answers[s]?.guess);
+    const guessed = [0, 1, 2, 3].map((s) => answers[s]?.guess ?? undefined);
     const mine: ChartSeries[] = guessed.some((v) => v !== undefined)
       ? [{ key: "guess", name: ui.quizGuessLegend, color: GUESS_COLOR, dashed: true, values: guessed }]
       : [];
@@ -1163,9 +1201,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       onStart={() => applyCustom(draft)} onClose={() => setEditing(false)}
       onOff={custom ? () => applyCustom(null) : null} />
   );
-  /** 링크로 연 판 — 한 줄 */
+  /** 링크로 연 판 — 한 줄. 폰에서 퀴즈 답을 받는 동안은 숨긴다(두 줄로 감겨 짐작 슬라이더를 고정 버튼 밑으로 민다 · 실측 701 vs 676) */
   const sharedLine = shared && sim && (
-    <p className="text-center mb-1.5 text-[11px] font-bold" style={{ color: GOLD }}>🔗 {ui.sharedActive}</p>
+    <p className={`${quizPending ? "hidden lg:block" : ""} text-center mb-1.5 text-[11px] font-bold`} style={{ color: GOLD }}>🔗 {ui.sharedActive}</p>
   );
   /** 이 판 링크 복사 — 클립보드가 막히면 주소를 보여 주고 직접 복사하게 한다 */
   const copyShare = async () => {
@@ -1207,12 +1245,20 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   /** 이번 판 퀴즈 답 — 복기 표 열·요약은 답이 하나라도 있을 때만 */
   const answerList = Object.values(answers);
   const hasAnswers = answerList.length > 0;
-  const handQuiz = hasAnswers ? {
-    avgErr: (answerList.reduce((a, x) => a + x.err, 0) / answerList.length).toFixed(1),
+  const guessList = answerList.filter((x) => x.guess !== null);
+  /** 패를 알았다면 — 복기 표·요약용(판이 끝난 뒤에만 보인다) */
+  const actualHits = streets.filter((r) => {
+    const a = answers[r.street];
+    return a?.choice && a.choice === actualVerdict(r);
+  }).length;
+  const handQuiz = guessList.length ? {
+    avgErr: (guessList.reduce((a, x) => a + x.err, 0) / guessList.length).toFixed(1),
     hits: answerList.filter((x) => x.choiceOk).length,
     decisions: answerList.filter((x) => x.choice !== null).length,
     points: answerList.reduce((a, x) => a + x.points, 0),
   } : null;
+  const decisionCount = answerList.filter((x) => x.choice !== null).length;
+  const decisionHits = answerList.filter((x) => x.choiceOk).length;
 
   /** 커뮤니티 카드 — 9인은 보드 양옆에 좌석이 앉으므로 카드를 좌석 크기로 줄인다 */
   const boardEl = (
@@ -1231,7 +1277,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
         {/* 퀴즈 누적 — 로그인 안 함 = 이 브라우저 기록 · 로그인 = 계정 기록(«내 기록» 회차 C).
             폰에서는 짐작하는 동안 숨긴다 — 그 한 줄이 팟오즈 줄을 고정 버튼 밑으로 민다 */}
-  const quizLine = quiz && (() => {
+  const quizLine = quiz && quizKind === "guess" && (() => {
           const t = shownTotals ?? EMPTY_TOTALS;
           return (
             <div className={`${quizPending ? "hidden lg:block" : "block"} mt-2 pt-1.5 border-t border-white/10`}>
@@ -1358,6 +1404,21 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
       {/* ── 우: 승률·팟오즈·산출근거·버튼 전부 ── */}
       <div>
+      {/* 퀴즈 종류 (S-034 3차 ③) — 테이블 위가 아니라 오른쪽 칸 맨 위.
+          ★폰에서 묻는 동안은 숨긴다 — 이 한 줄이 짐작 슬라이더를 고정 버튼 밑으로 민다(실측 666 vs 버튼 722) */}
+      {quiz && (
+        <div className={`${quizPending ? "hidden lg:flex" : "flex"} justify-center gap-1 mb-2`} role="group" aria-label={ui.quizToggle}>
+          {(["guess", "decide"] as const).map((k, i) => (
+            <button key={k} onClick={() => changeQuizKind(k)} aria-pressed={quizKind === k}
+              className="px-2.5 py-0.5 rounded-full text-[11px] font-bold border"
+              style={quizKind === k
+                ? { background: GOLD, borderColor: GOLD, color: "var(--wrq-accent-ink)" }
+                : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
+              {ui.quizKinds[i]}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* ── 판이 끝났다: 결과 + 새 판 버튼을 맨 위에, 나머지는 탭 하나씩 ──
           ★2026-10-11 사장님: 결과를 보면 오른쪽 칸만 아래로 쌓여 스크롤만 계속해야 했다
@@ -1414,7 +1475,17 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* ── 내 승률 ──
           퀴즈에서 답을 내기 전에는 같은 자리에 짐작 슬라이더를 둔다(카드 높이를 비슷하게 맞춰 폰 첫 화면을 지킨다) */}
       <div className="rounded-xl px-4 py-2 lg:py-2.5 mb-2" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>
-        {quizPending ? (
+        {quizPending && quizKind === "decide" ? (
+          <>
+            <div className="flex justify-between items-baseline gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
+                🤔 {ui.decideTitle} · {ui.streets[street]}
+              </span>
+              <span className="text-[11px] text-white/50 whitespace-nowrap">{ui.vsOpponents(liveOpponents)}</span>
+            </div>
+            <p className="text-[12px] text-white/75 leading-snug mt-1.5">{ui.decideHint}</p>
+          </>
+        ) : quizPending ? (
           <>
             <div className="flex justify-between items-baseline gap-2">
               <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">
@@ -1469,17 +1540,17 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               style={{ left: `${Math.min(rec.required, 100)}%`, background: REVEAL }} />
           )}
           {/* 퀴즈 답을 낸 스트리트 — 내 짐작 자리에 흰 눈금 */}
-          {answer && (
+          {answer && answer.guess !== null && (
             <span className="absolute top-0 bottom-0 w-[3px] -ml-[1.5px] rounded-full" aria-hidden
               style={{ left: `${answer.guess}%`, background: GUESS_COLOR, boxShadow: "0 0 0 1px var(--wrq-shade)" }} />
           )}
         </div>
         {answer && (
           <p className="text-[11px] font-bold tabular-nums mt-1.5" style={{ color: GUESS_COLOR }}>
-            🎯 {ui.quizResult(answer.guess, answer.err.toFixed(1), answer.points)}
+            {answer.guess !== null ? <>🎯 {ui.quizResult(answer.guess, answer.err.toFixed(1), answer.points)}</> : "🤔"}
             {answer.choiceOk !== null && (
               <span style={{ color: answer.choiceOk ? GOOD_DARK : BAD_DARK }}>
-                {" · "}{ui.quizChoiceResult(answer.choiceOk, rec.verdict === "call" ? ui.verdictCall : ui.verdictFold)}
+                {answer.guess !== null ? " · " : " "}{ui.quizChoiceResult(answer.choiceOk, rec.verdict === "call" ? ui.verdictCall : ui.verdictFold)}
               </span>
             )}
           </p>
@@ -1608,7 +1679,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               <table className={`w-full ${hasAnswers ? "text-[11px]" : "text-xs"} tabular-nums`}>
                 <thead>
                   <tr className="text-muted-foreground text-left">
-                    {(hasAnswers ? [...ui.reviewCols, ui.quizGuessCol, ui.quizChoiceCol] : ui.reviewCols)
+                    {(hasAnswers
+                      ? [...ui.reviewCols, ...(guessList.length ? [ui.quizGuessCol] : []), ui.quizChoiceCol, ...(decisionCount ? [ui.actualCol] : [])]
+                      : ui.reviewCols)
                       .map((c, i) => <th key={i} className={`font-semibold pb-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>{c}</th>)}
                   </tr>
                 </thead>
@@ -1626,13 +1699,26 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                         const a = answers[r.street];
                         return (
                           <>
+                            {guessList.length > 0 && (
                             <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>
-                              {a ? <>{a.guess}%<span className="block text-[10px] text-muted-foreground leading-tight">±{a.err.toFixed(1)}</span></> : "—"}
+                              {a && a.guess !== null ? <>{a.guess}%<span className="block text-[10px] text-muted-foreground leading-tight">±{a.err.toFixed(1)}</span></> : "—"}
                             </td>
-                            <td className="py-1 font-bold whitespace-nowrap"
+                            )}
+                            <td className="py-1 pr-1.5 font-bold whitespace-nowrap"
                               style={{ color: a?.choiceOk === true ? GOOD : a?.choiceOk === false ? BAD : "hsl(var(--muted-foreground))" }}>
                               {a?.choice ? `${a.choice === "call" ? ui.verdictCall : ui.verdictFold} ${a.choiceOk ? "✓" : "✗"}` : "—"}
                             </td>
+                            {decisionCount > 0 && (() => {
+                              // 패를 알았다면 — 이 스트리트 공개 승률로 본 정답 + 내 선택이 맞았나
+                              const av = actualVerdict(r);
+                              const ok = !!a?.choice && av !== null && a.choice === av;
+                              return (
+                                <td className="py-1 font-bold whitespace-nowrap"
+                                  style={{ color: !a?.choice || av === null ? "hsl(var(--muted-foreground))" : ok ? GOOD : BAD }}>
+                                  {av === null ? "—" : `${av === "call" ? ui.verdictCall : ui.verdictFold}${a?.choice ? (ok ? " ✓" : " ✗") : ""}`}
+                                </td>
+                              );
+                            })()}
                           </>
                         );
                       })()}
@@ -1649,6 +1735,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               <p className="text-xs font-bold mt-1.5 text-foreground">
                 🎯 {ui.quizHandSummary(handQuiz.avgErr, handQuiz.hits, handQuiz.decisions, handQuiz.points)}
               </p>
+            )}
+            {!handQuiz && decisionCount > 0 && (
+              <p className="text-xs font-bold mt-1.5 text-foreground">🤔 {ui.decideSummary(decisionHits, decisionCount)}</p>
+            )}
+            {decisionCount > 0 && streets.every((r) => r.known) && (
+              <p className="text-xs font-bold mt-1 text-foreground">🃏 {ui.actualSummary(actualHits, decisionCount)}</p>
             )}
           </div>
           )}

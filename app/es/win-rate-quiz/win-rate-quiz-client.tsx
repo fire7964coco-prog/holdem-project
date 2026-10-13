@@ -171,6 +171,12 @@ const ES_UI: QuizUI = {
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combos → ahora ${cur} combos (queda el ${pct}%)`,
   rangeLegend: ["Sigue en el rango (más oscuro = más)", "Descartada por la acción", "Nunca estuvo en el rango", "Mano real"],
   rangeNote: "Parte del rango preflop de su posición y, calle a calle, descarta cada mano que habría actuado distinto según las reglas del rival. La equity de arriba usa este mismo rango. Se quitan los combos que chocan con tu mano o el board.",
+  quizKinds: ["Adivinar equity + decidir", "Solo decidir (¿qué harías?)"],
+  decideTitle: "¿Qué harías?",
+  decideHint: "Elige pagar o foldear sin ver las cartas del rival. Aunque foldees, la mano se juega hasta el final. Este modo no cuenta para tu historial del quiz.",
+  decideSummary: (hits, decisions) => `Esta mano: ${hits}/${decisions} decisiones acertadas según las pot odds`,
+  actualCol: "Cartas vistas",
+  actualSummary: (hits, decisions) => `Acertadas si hubieras visto sus cartas: ${hits}/${decisions} — solo como referencia. En la mesa, el criterio son las pot odds sin ver sus cartas.`,
 
   ruleTitle: "Qué supone este simulador",
   ruleText: (style) => (

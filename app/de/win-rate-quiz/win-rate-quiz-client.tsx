@@ -179,6 +179,12 @@ const DE_UI: QuizUI = {
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} Kombos → jetzt ${cur} Kombos (${pct}% übrig)`,
   rangeLegend: ["Noch drin (dunkler = mehr)", "Durch die Action raus", "Nie in der Range", "Tatsächliche Hand"],
   rangeNote: "Startet mit der Preflop-Range der Position und streicht Street für Street jede Hand, die nach den Gegnerregeln anders gehandelt hätte. Die Equity oben nutzt genau diese Range. Kombos, die mit deiner Hand oder dem Board kollidieren, sind entfernt.",
+  quizKinds: ["Equity schätzen + entscheiden", "Nur entscheiden (was machst du?)"],
+  decideTitle: "Was machst du?",
+  decideHint: "Wähle Call oder Fold, ohne die Karten des Gegners zu kennen. Auch nach einem Fold wird die Hand zu Ende gespielt. Dieser Modus zählt nicht zu deiner Quiz-Statistik.",
+  decideSummary: (hits, decisions) => `Diese Hand: ${hits}/${decisions} Entscheidungen nach Pot Odds richtig`,
+  actualCol: "Karten offen",
+  actualSummary: (hits, decisions) => `Richtig, wenn du ihre Karten gekannt hättest: ${hits}/${decisions} — nur zur Einordnung. Am Tisch zählen die Pot Odds ohne Kenntnis ihrer Karten.`,
 
   ruleTitle: "Welche Annahmen dieser Simulator trifft",
   ruleText: (style) => (

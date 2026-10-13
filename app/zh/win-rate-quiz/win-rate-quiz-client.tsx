@@ -171,6 +171,12 @@ const ZH_UI: QuizUI = {
   rangeCombos: (pre, cur, pct) => `翻牌前 ${pre} 个组合 → 现在 ${cur} 个组合（剩 ${pct}%）`,
   rangeLegend: ["仍在范围内（颜色越深越多）", "因行动被排除", "本来就不在范围内", "实际手牌"],
   rangeNote: "从该位置的翻牌前范围出发，每条街都排除按对手规则会做出不同行动的手牌。上面的胜率也用这个范围计算。和你的手牌、公共牌冲突的组合已去掉。",
+  quizKinds: ["估胜率 + 决定", "只做决定（换你会怎么打？）"],
+  decideTitle: "换你会怎么打？",
+  decideHint: "在不知道对手手牌的情况下，选择跟注还是弃牌。就算选了弃牌，这一手也会打到最后。这个模式不计入测验记录。",
+  decideSummary: (hits, decisions) => `这一手：${decisions} 次决定中，按底池赔率判断正确 ${hits} 次`,
+  actualCol: "亮牌后",
+  actualSummary: (hits, decisions) => `如果知道对手手牌，正确的决定 ${hits}/${decisions} —— 仅供参考。实战中判断的标准是不知道手牌时的底池赔率。`,
 
   ruleTitle: "这个模拟器的前提",
   ruleText: (style) => (
