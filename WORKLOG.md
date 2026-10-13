@@ -1,3 +1,11 @@
+## 2026-10-13 (5) — 회차 B 8 · queue §2-BG ③ 룰북 접두 · 배포 `60a1e91f` · MB-299 · MA-504·505 회신+등재 §2-BR MB-300
+
+- 사장님 «회차 B 8번(§2-BG ③)부터». 우편함 검수장→본체 새 행 2(MA-504·505 · 시뮬레이터 문구 판정) → 회신+등재 queue §2-BR(BR-1 rangeLegend «처음부터 없음» 6언어 = 시뮬레이터 다음 회차 · 사장님 지시로 착수).
+- ③ 범위 = 무접두가 실제로 남은 글은 `holdem-betting-actions` 하나(EN grep: 다른 글은 같은 문장에 룰북이 이미 있음 — all-in·showdown «WSOP Live Action rules … (Rule 149)» · bubble «Tournament Rule 80 … Rules 40, 113 and 114» · tiebreak «2026 WSOP tournament rules say … (Rule 73)» · 100.b 동형). 원문 `docs/sources` 대조 → 84·90.a·90.b.1·90.d·97 = A(Tournament) · 43-A = TDA 2024.
+- EN 7자리 → 형제 24로케일 = 각 로케일 «WSOP 토너먼트 룰 103» 표기를 본뜬 치환 스크립트(자리마다 개수 확인 · 0회면 실패). 남은 무접두 grep 0. he는 90.a·90.b.1 문장 없음 · bn은 84·97 문장 없음 · fa는 43-A만.
+- 검증: audit:hard 25로케일 🔴 0 · schema 일치(ja·ar masterUpdated < EN 경고 = 접두만이라 settled §1-C대로 불변) · build 74+729 exit 0.
+- 🔴 실수 1: 셸에 `cat > 파일`을 heredoc 없이 남겨 stdin 대기 2분 → 스크립트는 Write로 쓰고 node로 돌린다.
+
 ## 2026-10-13 (4) — 승률 시뮬레이터 회차 S ③ «나라면?» 결정 퀴즈 · 배포 `13c7173a` · MB-298 · 회차 S 끝
 
 - 사장님 «진행해»(②에서 멈춘 것 = 작업 한도 «한 배치» 조항을 좁게 적용 — 핸드오프에 «①②③ 다 해도 됨»이 있었다). ③ 별도 요청서 없음 → 핸드오프 한 줄(팟오즈·실제 승률로 채점 · 폴드 골라도 끝까지) 기준. 기존 퀴즈가 이미 콜/폴드를 묻되 짐작과 묶여 있고 레인지 승률로만 채점 → 새 것 = ⓐ 결정만 모드 ⓑ «패를 알았다면»(공개 승률) 채점.
