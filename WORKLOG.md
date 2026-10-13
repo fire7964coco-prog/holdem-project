@@ -1,3 +1,11 @@
+## 2026-10-13 (9) — 회차 B 12 · C벳 필라 솔버 표 절 EN·11로케일 전파 · 배포 `bc50ad29` · MB-304
+
+- 사장님 «회차 B 12번(C벳 필라 솔버 표 EN·로케일 전파)». 시작 13:42 · 우편함 검수장→본체 새 행 0. ko 원본 = 10-03 (6) MB-157 · 검수장 MA-287 전부 OK + 통지 2.
+- EN `holdem-continuation-bet`: texture 절 뒤에 새 H2 «How Often Does a Solver C-Bet on Each Board Type?»(ko 절 구조 그대로 · 조건 줄 = factsheet §5) + frequency «quota» 문단 뒤 1문단. EN에 K-9-6 예시가 없어 그 해석 문장은 «king-high rainbow 63.3 vs two-tone 54.9»로 재구성. 체크레이즈 링크 = EN에 holdem-check-raise 없음 → `low-board-check-raise`. readTime 15→18.
+- 통지 2건(A하이 레인보우 18.8/25.9 · 동크 로우×모노톤 9.2)은 원천 `집계_srp-btn-bb.json` axisAxB로 직접 확인 → ko·EN 문면에 반영. ko updated 10-03→10-13.
+- 로케일 11 = 서브 4(ja·zh·zh-hant / de·fr·es / pt·id·ms / vi·tr · 브리프 = 스크래치) → 숫자·카드·표 행 기계 대조(EN 165·57·51 전건 일치) → 렌즈 2(라틴 8 · CJK 3+ko): 오류 1(fr 어순) + 선택 7(fr lead · es · pt · ms · ja «を指します» · zh-hant «兩個» · ko «A-7-x 같은 보드») 반영.
+- 게이트: audit:hard EN+11+ko 0err · build 74+729 · check:stamp 이상 없음. masterUpdated 무변경. 🪶 남김 = MB-304 행(fr·es 옛 표 표기 혼재 · zh solver/求解器 · 새 용어 3).
+
 ## 2026-10-13 (8) — 회차 B 11 · 핸드 복기 링크 132자리 (GTO 나머지 10편 × 14로케일) · 배포 `6e834861` · MB-303
 
 - 사장님 «회차 B 11번(GTO 나머지 10편 복기 링크) · 링크 꼴은 10-12 (9) `2af6e35f`». 시작 13:19 · 우편함 검수장→본체 새 행 0.
