@@ -1,3 +1,13 @@
+## 2026-10-13 (14) — 회차 L1 시뮬레이터 언어 확대 fr `ca3911e8` · MB-310
+
+- 사장님 «핸드오프 읽고 회차 L1 fr 진행해». 시작 16:26 · 우편함 검수장→본체 신규 요청 0(MA-508 = 요청 0 ACK).
+- fr: DFS France(simulateur poker 170 · simulateur de poker 30 · entrainement poker 90 · poker simulator 390) + SERP(계산기·훈련·게임 혼재 · «못 보고 추정→복기» 자리 0) → 제목 «Simulateur poker pour s'entraîner : quand fallait-il te coucher ?». 계산기 메타·사전에 «simulateur» 0회(카니발 없음). 근거 `docs/keyword-bank/win-rate-quiz-ltr.md` §fr.
+- 사전 = pt 구조 · 용어 = translation-terms-fr + 계산기 dict + 코퍼스 빈도(se coucher 191 · tapis 277 · équité 432 · cotes du pot 66) · 숫자 fr-FR.
+- /fr/solver «어느 도구» 표 +2행(hand-chart · 시뮬레이터). 계산기 행·규칙 글 행은 유지.
+- 렌즈 2(원어민·딜러) WRONG 4 · 반영 27: river 관사(`theStreet`) · 제목 «?» NBSP · «1 servent» · 오차 «pts de %» vs 점수 «pts» · toFixed 소수 쉼표(`dec`) · «tapis» 중의(«plafonnée à un tapis» → «ramenée au tapis restant») · Tight 규칙 쉼표 등. «Suit» 좌석 배지는 유지(pt «Paga»와 같은 꼴).
+- 🔴 함정: 「 ?」 NBSP 일괄 치환이 JS 삼항 연산자까지 바꿈 → 되돌리고 문자열 안만 재적용(tsc 통과 확인). 4설정 파일은 CRLF라 node 문자열 치환이 빗나감 → Edit 도구로.
+- 검증: tsc(내 파일) 0 · build 74+729 · check:hreflang 0 · 화면 390·1440 넘침 0(`next start -p 3100` PID 35040 명령줄 대조 후 종료).
+
 ## 2026-10-13 (13) — MA-515 회신+등재+이행 §2-BU `7c9da352`·`b3dbf80c` MB-308 · 회차 L1 시뮬레이터 언어 확대 pt `421e4a7c` · MB-309
 
 - 사장님 «핸드오프 읽고 시뮬레이터 언어 확대 1차 계획표부터» → 계획표(핸드오프 «회차 L1») → 사장님 «한 세션에 한 언어» · 순서 pt → fr → id → ms → vi → tr → hi → (ru) · «진행해».
