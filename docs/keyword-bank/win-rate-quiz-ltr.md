@@ -41,3 +41,20 @@
 - 제목 = «Simulateur poker pour s'entraîner : quand fallait-il te coucher ?» — 머리어 + 훈련 의도로 계산기 SERP와 구분. «Calculateur»·«cote»·«probabilité»는 `/fr/calculator` 소유라 제목에 쓰지 않는다.
 - 카니발: 계산기 뱅크 `fr-calculator.md` §1 «simulateur poker 170 = desc 1회만»은 **계산기** 판정이고, 실제 `/fr/calculator` 메타·사전에는 «simulateur»가 0회다(10-13 grep) → 시뮬레이터 페이지가 이 머리어를 가져간다.
 - 용어(코퍼스 `lib/posts-fr` 52편 · 10-13 grep): se coucher 191(folder 12) · suivre 195 · relance 692 · tapis 277(all-in 173) · pot partagé 36 · préflop 333(pré-flop 0) · tirage couleur 145 · tirage quinte 56 · top paire 109 · overpair 93 · équité 432(equity 101) · cotes du pot 66(pot odds 16) · cotes implicites 112 · abattage 144(showdown 70) · street 84.
+
+## id (Indonesia 2360 · 2026-10-13)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **simulator poker** | **110** | ✅ 제목 머리 · H1 · 브레드크럼 · 사이드 레일 — «poker simulator»와 12개월 시계열 완전 동일(같은 군 · 50~260 · 08월 260 상승) |
+| poker simulator(영문) | 110 | 위와 같은 군 |
+| belajar poker | 30 | — (일반 학습 의도) |
+| poker trainer · poker training · equity poker · poker equity · quiz poker · pot odds · texas holdem simulator · poker simulator online | 각 10 | — |
+| simulasi poker · latihan poker · latihan poker online · game latihan poker · berlatih poker · kuis poker · simulator poker gratis · simulator texas holdem | 데이터 없음 | 🔴 인니어 «훈련» 명사는 전멸 — 계산기 뱅크 §1 «인니어 계산기 명사 전멸»과 같은 패턴 |
+| cara main poker | 4.400 | 참고(규칙 의도 · 이 페이지 몫 아님) |
+
+- SERP «simulator poker»(mobile · id · Indonesia): 1 Play «Poker Online»(게임) · 2 boardgamearena · 5 247games · 6 kosmi · 7 chipsoffury(칩 카운터) · 8 Steam «Poker Simulator» · 9 beavergrow(칩 카운터) · 10 religionandstory «poker simulator … improve your poker skills»(영어 · 개발 중) · 11 softonic «Poker Betting Simulator». → 게임·칩 앱 지배 · 인니어 훈련형 0 · «상대 카드를 못 본 채 에퀴티 추정 → 복기» 자리 0.
+- 제목 = «Simulator Poker untuk Latihan: Kapan Seharusnya Anda Fold?» — 머리어 + 훈련 의도(«untuk Latihan» 볼륨 미측정 · 게임 SERP와 구분용).
+- 카니발: `/id/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
+- 🔴 id 고유: 메타·본문에 taruhan·judi 등 도박 홍보로 읽히는 말을 쓰지 않는다(translation-terms-id ★2).
+- 용어(코퍼스 `lib/posts-id` · 10-13 grep): fold 905 · call 1.075 · all-in 327 · showdown 177 · seri 508(imbang 80) · split pot 35 · preflop 340(pre-flop 2) · flush draw 132 · straight draw 45 · top pair 112 · overpair 120 · overcard 32 · pot odds 170 · implied odds 115 · street 167 · combo 343(kombinasi 71) · Anda 3.962(kamu 2).

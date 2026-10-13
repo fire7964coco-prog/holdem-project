@@ -307,6 +307,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/id/glossary", icon: "📖", label: "Kamus Istilah Poker" },
     // ★2026-09-29 `/id/tournaments` 신설. 라벨 = ID_CLUSTERS tournament pillarLabel 축어(lib/pillar-clusters.ts).
     { href: "/id/tournaments", icon: "🏆", label: "Turnamen" },
+    // ★2026-10-13 `/id/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/id/win-rate-quiz", icon: "📈", label: "Simulator Poker" },
   ],
   // ms — 실제 존재하는 블로그와 신규 솔버 랜딩만 연결한다.
   ms: [

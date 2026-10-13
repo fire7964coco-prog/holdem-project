@@ -104,11 +104,14 @@ const SPEC: [string, string][] = [
  * 🔴 2026-09-19(id 계산기 회차): outs·pot odds 행과 equity 행 **둘을 도구로 재조준**하고 ICM 행 **하나를 신설**했다(4행 → 5행) —
  *    셋 다 «계산기» 의도이고, 09-19부터 계산기에 Equity 탭이 있다. 개념 설명 몫은 그대로 블로그가 갖는다
  *    (계산기 dict의 quickRef·related가 같은 글들을 가리킨다 = 도구 ↔ 글 왕복).
- *    `hand-chart`·`quiz` 자리는 여전히 id 라우트가 없어 블로그로 둔다.
+ *    ~~`hand-chart`·`quiz` 자리는 여전히 id 라우트가 없어 블로그로 둔다.~~
+ * ★2026-10-13(시뮬레이터 회차 L1): `/id/hand-chart`(10-05 신설)로 레인지표 행을 재조준 + 시뮬레이터 행 신설(pt·fr 선례).
+ *    라벨 = 각 페이지 side-rail 라벨/HubPage title 축어.
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Menghitung satu spot postflop dan melihat frekuensi bet", "Solver GTO di halaman ini", null],
-  ["Melihat hand mana yang dibuka dari tiap posisi", "Chart starting hands", "/id/blog/holdem-starting-hands-chart"],
+  ["Melihat hand mana yang dibuka dari tiap posisi", "Chart Starting Hand", "/id/hand-chart"],
+  ["Berlatih menebak equity tanpa melihat kartu lawan, lalu melihat kapan seharusnya fold", "Simulator Poker", "/id/win-rate-quiz"],
   ["Menghitung outs dan pot odds tanpa menjalankan solver", "Kalkulator Poker", "/id/calculator"],
   ["Mengadu dua hand dan melihat % menangnya", "Kalkulator equity", "/id/calculator"],
   ["Menghitung nilai hadiah di bubble atau saat deal", "Kalkulator ICM", "/id/calculator"],

@@ -92,7 +92,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver", "/fr/win-rate-quiz"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
   // ★2026-09-29 `/id/tournaments` 신설(해외 원정 캘린더 · 회차 1 id·ms·vi).
-  id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/glossary", "/id/solver", "/id/tournaments"],
+  // ★2026-10-13 `/id/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
+  id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/glossary", "/id/solver", "/id/tournaments", "/id/win-rate-quiz"],
   // ms — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
   // ★2026-09-29 `/ms/tournaments` 신설.
   ms: ["/ms/calculator", "/ms/hand-chart", "/ms/glossary", "/ms/solver", "/ms/tournaments"],
