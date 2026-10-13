@@ -183,7 +183,7 @@ const FR_UI: QuizUI = {
   rangeToggle: "Voir la range de l'adversaire",
   rangeTitle: "Range de l'adversaire — les mains qui collent à l'action jusqu'ici",
   rangeCombos: (pre, cur, pct) => `Préflop ${pre} combos → maintenant ${cur} combos (il en reste ${pct} %)`,
-  rangeLegend: ["Encore dans la range (plus foncé = plus de combos)", "Éliminée par l'action", "Jamais dans la range", "Main réelle", "Bloquée par ta main ou le board"],
+  rangeLegend: ["Encore dans la range (plus foncé = plus grande part restante)", "Éliminée par l'action", "Jamais dans la range", "Main réelle", "Bloquée par ta main ou le board"],
   rangeNote: "On part de la range préflop de sa position, puis on retire, street après street, chaque main qui aurait agi autrement selon les règles de l'adversaire. L'équité ci-dessus utilise cette même range. Les combos qui utilisent une carte de ta main ou du board sont exclus.",
   quizKinds: ["Estimer l'équité + décider", "Décider seulement (suivre ou se coucher ?)"],
   decideTitle: "Suivre ou se coucher ?",

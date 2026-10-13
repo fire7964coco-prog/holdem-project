@@ -40,11 +40,13 @@ const SPEC: [string, string][] = [
   ["Motor", "Açık kaynak WASM Postflop (AGPL-3.0) · değiştirilmiş kaynak kodu yayımlandı"],
 ];
 
-/** 「무엇을 원하나 → 어느 도구」 — win-rate-quiz 행은 tr 라우트가 없어 뺐다. */
+/** 「무엇을 원하나 → 어느 도구」 — win-rate-quiz 행은 tr 라우트가 없어 뺐다 → ★2026-10-13 `/tr/win-rate-quiz` 신설로 복원. */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Bir postflop spotunu çözüp bahis sıklıklarını görmek", "Bu sayfadaki GTO solver", null],
   ["Her pozisyondan hangi elleri açacağını görmek", "Başlangıç eli tablosu", "/tr/hand-chart"],
   ["Out, pot oranı, SPR ya da ICM hesaplamak", "Poker hesaplayıcı", "/tr/calculator"],
+  // ★2026-10-13(시뮬레이터 회차 L1): 시뮬레이터 행 신설(pt·fr·id·ms·vi 선례 · EN quiz 행 자리 = 계산기 뒤). 라벨 = HubPage title 축어.
+  ["Rakibin kartlarını görmeden equity tahmin etmeyi çalışmak, sonra nerede fold etmen gerektiğini görmek", "Poker Simulator", "/tr/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 단계 라벨(라이브 tr 축어)을 그대로 쓴다. */

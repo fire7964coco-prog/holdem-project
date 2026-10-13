@@ -183,7 +183,7 @@ const VI_UI: QuizUI = {
   rangeToggle: "Xem range đối thủ",
   rangeTitle: "Range đối thủ — những tay bài khớp với hành động đến lúc này",
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combo → hiện còn ${cur} combo (còn lại ${pct}%)`,
-  rangeLegend: ["Vẫn trong range (càng đậm = càng nhiều combo)", "Bị loại do hành động", "Chưa từng trong range", "Tay bài thực tế", "Bị chặn bởi tay bài của bạn hoặc board"],
+  rangeLegend: ["Vẫn trong range (càng đậm = phần còn lại càng lớn)", "Bị loại do hành động", "Chưa từng trong range", "Tay bài thực tế", "Bị chặn bởi tay bài của bạn hoặc board"],
   rangeNote: "Bắt đầu từ range preflop theo vị trí, rồi qua từng vòng cược loại bỏ mọi tay bài mà theo quy tắc đối thủ lẽ ra đã hành động khác. Equity phía trên dùng chính range này. Combo trùng với lá bài trong tay bạn hoặc trên board không được tính.",
   quizKinds: ["Đoán equity + quyết định", "Chỉ quyết định (call hay fold?)"],
   decideTitle: "Call hay fold?",

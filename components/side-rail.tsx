@@ -196,6 +196,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/tr/hand-chart",  icon: "📊", label: "El Tablosu" },
     // ★2026-10-06 `/tr/glossary` 신설(tr 회차 3). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/tr/glossary",    icon: "📖", label: "Poker Terimleri Sözlüğü" },
+    // ★2026-10-13 `/tr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/tr/win-rate-quiz", icon: "📈", label: "Poker Simulator" },
     { href: "/tr/tournaments", icon: "🏆", label: "Turnuvalar" },
   ],
   /**

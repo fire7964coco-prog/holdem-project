@@ -1154,6 +1154,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ BW-1·1′·2 이행 2026-10-13 (17) — vi 배포 커밋에 묶음(MB-313).
 - 통지 ②(EN 반올림·0 하한) = BV-4 그대로.
 
+### 2-BX. 우편함 수신분 — MA-524(MB-311 id 판정 · 요청 1(3자리) · WRONG 0) · 등재·회신 2026-10-13 (18)
+
+보고 `홀덤검수/reports/2026-10/검수-MB311-2026-10-13/REPORT.md`. ID_UI 120키 · page.tsx · solver 표 2행 WRONG 0 · RISKY 2 + fr 소급 1.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BX-1 요청 ① | id `page.tsx` `DESCRIPTION` «pot odds» — «from the flop on» 탈락 | ✅ 이미 이행(`d08fac6b` · BW-1′) — 확인만 |
+| BX-2 요청 ② | id `rangeLegend[0]` «makin banyak combo» — 색 = 칸별 잔존 **비율**인데 콤보 «수»로 읽힘 | «makin besar porsi yang tersisa» |
+| BX-3 요청 ③ | fr 소급 `rangeLegend[0]` «plus de combos» | «plus grande part restante» |
+| BX-3′ 형제 | vi `rangeLegend[0]` «càng nhiều combo» — 같은 꼴(본체 자체 대조) | «phần còn lại càng lớn» |
+
+- ✅ BX-2·3·3′ 이행 2026-10-13 (18) — tr 배포 커밋에 묶음. tr은 처음부터 «kalan payı büyük» 꼴. ms «lebih banyak yang tinggal»·pt·es·de «mais/más/mehr»(단위 없음 = EN 동형)는 그대로.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

@@ -182,7 +182,7 @@ const ID_UI: QuizUI = {
   rangeToggle: "Lihat range lawan",
   rangeTitle: "Range lawan — hand yang cocok dengan aksinya sejauh ini",
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combo → sekarang ${cur} combo (tersisa ${pct}%)`,
-  rangeLegend: ["Masih dalam range (makin gelap = makin banyak combo)", "Tersingkir karena aksinya", "Tidak pernah dalam range", "Hand sebenarnya", "Terblokir oleh hand Anda atau board"],
+  rangeLegend: ["Masih dalam range (makin gelap = makin besar porsi yang tersisa)", "Tersingkir karena aksinya", "Tidak pernah dalam range", "Hand sebenarnya", "Terblokir oleh hand Anda atau board"],
   rangeNote: "Dimulai dari range preflop posisinya, lalu street demi street setiap hand yang menurut aturan lawan akan mengambil aksi berbeda dibuang. Equity di atas memakai range yang sama. Combo yang memakai kartu di hand Anda atau di board tidak dihitung.",
   quizKinds: ["Tebak equity + putuskan", "Putuskan saja (call atau fold?)"],
   decideTitle: "Call atau fold?",

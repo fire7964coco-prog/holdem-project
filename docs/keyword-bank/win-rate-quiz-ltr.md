@@ -89,3 +89,18 @@
 - 제목 = «Poker Simulator để luyện tập: lẽ ra bạn nên fold ở đâu?» — 머리어 + 훈련 의도(«để luyện tập» 볼륨 미측정 · 게임 SERP와 구분용).
 - 카니발: `/vi/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
 - 용어(코퍼스 `lib/posts-vi` · 10-13 grep): tay bài 987 · đối thủ 438 · vòng cược 219(street 6) · board 1.239(bài chung 118) · combo 346(tổ hợp 66) · chia pot 135 · hòa 128 · showdown 189 · top pair 110 · overpair 115 · overcard 27 · implied odds 117 · hòa vốn 37 · aggressive 25(hung hãn 11 · 성향 이름 = «Chuẩn»·«Hung hãn» — 390 선택 상자 잘림 회피) · điểm phần trăm 11. 족보 = 계산기 사전 Title Case(Mậu Thầu … Thùng Phá Sảnh).
+
+## tr (Türkiye 2792 · 2026-10-13)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **poker simulator** | **30** | ✅ 제목 머리 · H1 · 브레드크럼 · 사이드 레일 — «simulator poker»와 12개월 시계열 완전 동일(같은 군 · 20~50) |
+| **poker öğren · poker öğrenme** | **50** | ✅ 제목 «ile poker öğren»(두 형 시계열 동일 · 40~70) |
+| poker trainer · poker training · poker equity · pot odds · poker quiz · texas holdem simulator · poker simulator online | 각 10 | — |
+| poker simülatörü · poker simülasyonu · poker simulatoru · poker antrenman(ı) · poker pratik · poker alıştırma | 데이터 없음 | 🔴 터키어 «시뮬레이터·훈련» 명사 전멸 — vi·id·ms와 같은 패턴 |
+| poker nasıl oynanır 5.400 · poker oyunu 1.600 | — | 참고(규칙·게임 의도 · 이 페이지 몫 아님 · «oyunu»는 메타 제외) |
+
+- SERP «poker simulator»(mobile · tr · Türkiye): 1 pokertrainer.se 퀴즈 · 2 funnygames(게임) · 3 tightpoker 계산기 · 4 religionandstory(훈련형 · 개발 중) · 5 PokerStars Learn · 6 beatthefish 계산기 · 7 shapes.inc(AI 챗). → 영어 글로벌 판 · 터키어 페이지 0.
+- 제목 = «Poker Simulator ile poker öğren: nerede fold etmeliydin?» — 머리어 + 실측 훈련 의도어(«poker öğren» 50).
+- 카니발: `/tr/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
+- 용어(코퍼스 `lib/posts-tr` + 계산기 사전 · 10-13 grep): fold 302(fold et 72) · call 500 · check 330 · all-in 268 · showdown 164 · beraberlik 52 · pot bölün 40(split pot 17) · preflop 163 · kent draw 19(straight draw 0) · flush draw 8 · top pair 49 · overpair 34 · overcard 23 · pot odds 76 · pot oranı 60 · implied odds 45 · kombo 47(kombinasyon 23 · combo 3) · board 443 · range 218(aralık 9) · equity 205 · yüzde puan 4 · agresif 24. 🔴 «pas» 금지(10-06 확정) · 퍼센트 «%35»(접두).
