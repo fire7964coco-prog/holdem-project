@@ -110,7 +110,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   ru: ["/ru/solver"],
   // hi — 솔버·계산기·대회 보드를 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   // ★2026-09-30 `/hi/tournaments` 신설(로케일 회차 2 후반).
-  hi: ["/hi/calculator", "/hi/hand-chart", "/hi/glossary", "/hi/solver", "/hi/tournaments"],
+  // ★2026-10-13 `/hi/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
+  hi: ["/hi/calculator", "/hi/hand-chart", "/hi/glossary", "/hi/solver", "/hi/tournaments", "/hi/win-rate-quiz"],
   // ar — ★2026-09-30 `/ar/tournaments` 신설. ar의 첫 HubPage다(RTL). 블로그 목록은 자체 크롬을 유지한다.
   //      ⚠ ar에는 solver·calculator가 **없다** — 넣지 마라.
   ar: ["/ar/tournaments"],

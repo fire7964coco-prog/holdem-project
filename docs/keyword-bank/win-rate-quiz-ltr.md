@@ -104,3 +104,21 @@
 - 제목 = «Poker Simulator ile poker öğren: nerede fold etmeliydin?» — 머리어 + 실측 훈련 의도어(«poker öğren» 50).
 - 카니발: `/tr/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
 - 용어(코퍼스 `lib/posts-tr` + 계산기 사전 · 10-13 grep): fold 302(fold et 72) · call 500 · check 330 · all-in 268 · showdown 164 · beraberlik 52 · pot bölün 40(split pot 17) · preflop 163 · kent draw 19(straight draw 0) · flush draw 8 · top pair 49 · overpair 34 · overcard 23 · pot odds 76 · pot oranı 60 · implied odds 45 · kombo 47(kombinasyon 23 · combo 3) · board 443 · range 218(aralık 9) · equity 205 · yüzde puan 4 · agresif 24. 🔴 «pas» 금지(10-06 확정) · 퍼센트 «%35»(접두).
+
+## hi (India 2356 · 2026-10-13)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **poker simulator** | **170** | ✅ 제목 머리 · H1 · 브레드크럼 · 사이드 레일 (12개월 110~210 안정) |
+| **poker practice** | **90** | ✅ 제목 «से poker practice»(12개월 50~140) |
+| poker practice online | 210 | 🪶 26-04~08 스파이크(170→480 · 그 전 50~110) · 게임 의도 섞임 → 미채택 |
+| poker equity calculator 110 · pot odds 20 | — | `/hi/calculator` 몫 |
+| poker trainer · poker training 50 · poker quiz 40 · poker equity · poker simulator online 20 · texas holdem simulator 10 | — | — |
+| पोकर सिम्युलेटर · पोकर सिमुलेटर · पोकर अभ्यास · पोकर सीखें · poker sikhe · poker seekhe | 데이터 없음 | 🔴 데바나가리 도구구 전멸 — 계산기 «머리어 영어 유지» 판정(`hi-calculator.md` §5)과 같은 패턴 |
+| poker game 22,200 · poker kaise khelte hain 70 | — | 참고(게임·규칙 의도 · 이 페이지 몫 아님 · «game»은 메타 제외) |
+
+- SERP «poker simulator»(mobile · hi · India): 247games · 247freepoker ×2 · IEEE 논문 · MSN Zone · WaPo Arkadium · reddit «practise against ai» · Google Play · Arkadium → 영어 게임 판 · 힌디어 페이지 0 · 훈련형 0.
+- 제목 = «Poker Simulator से poker practice: कहाँ fold करना था?» — 머리어 + 실측 훈련 의도어 + 데바나가리 질문 꼬리.
+- 카니발: `/hi/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
+- 용어(코퍼스 `lib/posts-hi` 21편 + 계산기 사전 · 10-13 grep): equity 162(इक्विटी 1) · fold 219 · call 438 · all-in 158 · showdown 95 · बराबरी 7(टाई 14 · 계산기 = बराबरी) · pot odds 18(पॉट ऑड्स 0) · कॉम्बो 297(combo 18) · range 467(रेंज 0) · बोर्ड 337(board 145) · विरोधी 49(प्रतिद्वंद्वी 75 · 계산기 = विरोधी) · top pair 36 · overpair 68 · overcard 18 · flush draw 24 · straight draw 17 · street 53 · प्रतिशत अंक 5 · अभ्यास 72. 숫자 = en-US(«1,000» · «35%» · लाख 묶음 0건).
+- 푸터: hi에 pot odds·포지션 글이 없다 → `/hi/calculator` · `/hi/hand-chart` · `/hi/blog/holdem-betting-actions`(실재 확인).

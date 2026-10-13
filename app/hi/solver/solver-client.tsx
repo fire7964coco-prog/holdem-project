@@ -22,6 +22,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["किसी खास postflop स्थिति की रणनीति निकालना", "इस पेज का सॉल्वर", null],
   ["सॉल्वर चलाए बिना outs और pot odds निकालना", "Poker Odds Calculator", "/hi/calculator"],
   ["दो हैंड भिड़ाकर जीत का प्रतिशत देखना", "Equity कैलकुलेटर", "/hi/calculator"],
+  // ★2026-10-13(시뮬레이터 회차 L1): 시뮬레이터 행 신설(pt·fr·id·ms·vi·tr 선례 · 계산기 행 뒤). 라벨 = HubPage title 축어.
+  ["विरोधियों के कार्ड देखे बिना equity का अंदाज़ा लगाने का अभ्यास, फिर देखना कि कहाँ fold करना था", "Poker Simulator", "/hi/win-rate-quiz"],
   ["Bubble या deal पर prize की कीमत निकालना", "ICM कैलकुलेटर", "/hi/calculator"],
   ["पोकर के नियम और खेल का तरीका सीखना", "शुरुआती के लिए Texas Hold'em की गाइड", "/hi/blog/texas-holdem-rules-for-beginners"],
   ["bet, check, call, raise और fold समझना", "Betting actions की गाइड", "/hi/blog/holdem-betting-actions"],

@@ -366,6 +366,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/hi/hand-chart", icon: "📊", label: "हैंड चार्ट" },
     // ★2026-10-05 `/hi/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/hi/glossary", icon: "📖", label: "पोकर शब्दावली (Poker Terms)" },
+    // ★2026-10-13 `/hi/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/hi/win-rate-quiz", icon: "📈", label: "Poker Simulator" },
     // ★2026-09-30 `/hi/tournaments` 신설. 라벨 = BOARD_STRINGS.hi countsLine·본문이 쓰는 코퍼스형 «टूर्नामेंट»(hi 글 32회).
     { href: "/hi/tournaments", icon: "🏆", label: "टूर्नामेंट" },
   ],
