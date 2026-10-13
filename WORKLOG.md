@@ -1,3 +1,12 @@
+## 2026-10-13 (2) — 승률 시뮬레이터 회차 S ① 핸드 공유·재현 링크 · 배포 `57f4104c` · MB-296
+
+- 사장님 «핸드오프 읽고 회차 S ① 공유 링크 진행해». 우편함 검수장→본체 미처리 0.
+- `_table.ts` encodeShare/decodeShare — 시드만이 아니라 **딜 전체**를 싣는다(딜은 Math.random이라 시드로 재현 불가 · 딜을 시드화하면 레인지 표·딜 순서를 고칠 때 옛 링크가 다른 판이 됨). 꼴 `1.{테이블}{내 자리}{성향}.{시드36}.{자리}.{카드}` 예 `1.65l.pku2j.035.Tc9cAdQdKhJd2h7d3hAcKd`(38자). 상대 레인지는 자리에서 다시 만든다(roleOf→rangeFor).
+- `_simulator.tsx` — 끝난 판 «🔗 이 판 링크 복사»(클립보드 막히면 주소 칸) · 링크로 연 판 한 줄 · 공유 판 퀴즈 기록 제외(sim.custom=true) · 새 판·인원·성향·테이블·직접 입력 시 `?h=` replaceState로 지움 · 링크 성향은 localStorage 기억에 안 씀.
+- 6언어 4키(shareBtn·shareCopied·shareManual·sharedActive).
+- 검증: tsx 왕복 2000(6/9인·2~6명·4성향·직접 입력 섞음) 일치 · 잘못된 링크 8 거부 · 원본/복원 runHand JSON 동일 · build 74+729 exit 0 · next start 3157 Playwright 390/1440: 링크 → 공유 줄 → 끝까지 → 복사 = 같은 코드 · 새 판 뒤 주소 정리 · 넘침 0 · 오류 0 · 잘못된 링크 무작위 판 · 5로케일 표시. (3100은 다른 프로세스가 점유 — 건드리지 않음)
+- 🪶 모바일에서 «공유받은 판» 줄이 2줄로 감김(넘침 아님).
+
 ## 2026-10-13 (1) — 회차 B 6 · EN `6164c748` 델타 ms odds 3·strategy 5 이식 · 배포 `be8266b5` · MB-295
 
 - 사장님 «6번부터 진행하자». 13로케일 all-in은 `fe93df0d`(MB-264)가 이미 전파(표 머리 NL/PL · 47-B · 154 · 210/211 13로케일 grep 확인) → 핸드오프 기재가 낡았던 것. ms: 6164c748 EN diff 대조 → card-counting 4 · drawing-odds 2 · equity 8 · 3bet 1 · limping 2 · position-play 2 · SHC 1 · strategy 3(4자리) · positions 0(기반영). audit:hard ms 🔴 0 · build 74+729 exit 0.
