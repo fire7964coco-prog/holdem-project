@@ -1,3 +1,11 @@
+## 2026-10-13 (18) — 회차 L1 시뮬레이터 언어 확대 tr `e25c1031` · MB-314 · MA-524 이행
+
+- 사장님 «핸드오프읽고 tr진행해». 우편함 검수장→본체: MA-524(MB-311 id 판정 · 요청 1(3자리)) → queue §2-BX 등재 · 같은 커밋에서 이행 · MB-314로 회신.
+- tr: DFS Türkiye(poker simulator 30 = simulator poker 12개월 시계열 동일 · poker öğren/öğrenme 50 · poker nasıl oynanır 5.400 · poker oyunu 1.600 = 다른 의도 · «simülatör/simülasyon/antrenman/pratik/alıştırma» 전부 데이터 없음) + SERP(영어 글로벌 판 · 터키어 0) → 제목 «Poker Simulator ile poker öğren: nerede fold etmeliydin?».
+- 사전 = EN 정본에서 직접 재저작 · sen체 · 족보 = 계산기 사전 · 액션 영어 · «pas» 미사용 · %p = «yüzde puan» · 사전 문장 퍼센트 «%N» 접두 · STREET_LOC 처소격 표.
+- 렌즈 2: 딜러 WRONG 0 · 원어민 WRONG 2(6-max'ın·6-max'taki) + RISKY 반영(«kartlarını» 모호 → «rakip» 명시 등). 390 승률 줄 29px 넘침 → «Kazan · Berabere · Kaybet» → 390 넘침 0(8판). 360 줄 안 잘림·1440 «Kaybet» 끝 잘림 = 공용 결함. next start 3100은 PID 대조 후 종료.
+- MA-524: id·fr rangeLegend «남은 비율» 꼴 · vi 같은 꼴 자체 정정. IndexNow 325 URL 200.
+
 ## 2026-10-13 (17) — 회차 L1 시뮬레이터 언어 확대 vi `d08fac6b` · MB-313 · MA-521 이행
 
 - 사장님 «핸드오프읽고 vi진행해». 우편함 검수장→본체: MA-521(MB-310 fr 판정 · 요청 1(2자리)) → queue §2-BW 등재 · 같은 커밋에서 이행 · MB-313로 회신.
