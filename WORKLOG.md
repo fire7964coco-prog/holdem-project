@@ -1,3 +1,11 @@
+## 2026-10-13 (15) — 회차 L1 시뮬레이터 언어 확대 id `7fc0c95e` · MB-311
+
+- 사장님 «핸드오프 읽고 id 진행해». 시작 16:47 · 우편함 검수장→본체 신규 요청 0(MA-508 = 요청 0 ACK).
+- id: DFS Indonesia(simulator poker 110 = poker simulator와 12개월 시계열 동일 · belajar poker 30 · 인니어 «latihan/simulasi/kuis/berlatih poker» 전부 데이터 없음) + SERP(게임·칩 앱 지배 · 인니어 훈련형 0) → 제목 «Simulator Poker untuk Latihan: Kapan Seharusnya Anda Fold?». 계산기 메타·사전에 «simulator» 0회(카니발 없음). 근거 `docs/keyword-bank/win-rate-quiz-ltr.md` §id.
+- 사전 = fr 구조 · 용어 = id-posting-reference §5·§5-A + 계산기 dict(족보 영어) + 코퍼스 빈도 · 숫자 id-ID(% 앞 공백 없음).
+- /id/solver «어느 도구» 표: 레인지표 행 블로그 → `/id/hand-chart`(10-05 신설인데 09-19 주석이 «라우트 없음»으로 남아 있었다) + 시뮬레이터 행. 본문 산문의 holdem-starting-hands-chart 링크 3곳은 그대로(fr 선례).
+- 렌즈 2(원어민·딜러) WRONG 0 · RISKY 7 · 반영 19: «chip untuk dipasang»(pasang taruhan 어감) → «di-bet» · 퀴즈 «100 − 4 × selisih (dalam poin)» 점수 단위와 충돌 → «poin persentase» · reviewMistake «Itulah saat Anda keluar»(실제로 나간 것처럼 읽힘) · formulaCaveat «saat MENANG» → «dari MENANG» · pertarungan → matchup · «memungkinkan Anda» 칼크 등. 미반영 2: folded «Sudah fold»(좌석 배지 폭) · featureList «2–6 pemain melihat flop»(EN 패리티).
+- 검증: tsc(내 파일) 0 · build 74+729 · check:hreflang 0 · 화면 390·1440 넘침 0(`next start -p 3100` PID 10004·46096 명령줄 대조 후 종료) · IndexNow 200.
 ## 2026-10-13 (14) — 회차 L1 시뮬레이터 언어 확대 fr `ca3911e8` · MB-310
 
 - 사장님 «핸드오프 읽고 회차 L1 fr 진행해». 시작 16:26 · 우편함 검수장→본체 신규 요청 0(MA-508 = 요청 0 ACK).
