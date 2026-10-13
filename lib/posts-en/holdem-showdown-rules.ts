@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -76,7 +76,7 @@ Example: Button, small blind, and big blind see the river. SB checks, BB checks,
 
 ## All-In Showdown Rules — Does the All-In Player Show First?
 
-In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA 2024 Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. (One exception: during hand-for-hand play near the money, WSOP Tournament Rule 126.g has the all-in hands stay face down and no more cards dealt until the staff says so.) **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
+In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA 2024 Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. (One exception: during hand-for-hand play near the money, WSOP Tournament Rule 126.g has every hand in the pot after an all-in and call — the caller's included — stay face down, with no more cards dealt until the staff says so.) **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

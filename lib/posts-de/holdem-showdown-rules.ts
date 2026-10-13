@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -77,7 +77,7 @@ Beispiel: Button, Small Blind und Big Blind sehen den River. SB checkt, BB check
 
 ## All-in-Showdown-Regeln – zeigt der All-in-Spieler zuerst?
 
-Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten ausgeteilt, während **alle Hände offen auf dem Tisch liegen** (==TDA-2024-Regel 16==). Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können. (Eine Ausnahme: Beim Hand-for-Hand-Spiel kurz vor den Preisrängen bleiben die All-in-Hände nach WSOP Tournament Rule 126.g verdeckt, und es werden keine weiteren Karten ausgeteilt, bis das Turnierpersonal es anweist.) **Cashgames laufen nach Hausregeln**, und die WSOP Live Action Rules drehen es um: **In einem No-Limit-Spiel** ist der Spieler, der All-in gegangen ist, dafür verantwortlich, zuerst umzudrehen, wenn das Setzen vor dem River endete; und in jedem Cashgame gilt: Gibt es einen Side Pot, zeigen dessen Spieler vor jedem, der nur im Main Pot All-in ist (==Live Action Rule 149==).
+Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten ausgeteilt, während **alle Hände offen auf dem Tisch liegen** (==TDA-2024-Regel 16==). Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können. (Eine Ausnahme: Beim Hand-for-Hand-Spiel kurz vor den Preisrängen bleiben nach einem gecallten All-in laut WSOP Tournament Rule 126.g alle Hände im Pot verdeckt – auch die des Callers –, und es werden keine weiteren Karten ausgeteilt, bis das Turnierpersonal es anweist.) **Cashgames laufen nach Hausregeln**, und die WSOP Live Action Rules drehen es um: **In einem No-Limit-Spiel** ist der Spieler, der All-in gegangen ist, dafür verantwortlich, zuerst umzudrehen, wenn das Setzen vor dem River endete; und in jedem Cashgame gilt: Gibt es einen Side Pot, zeigen dessen Spieler vor jedem, der nur im Main Pot All-in ist (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

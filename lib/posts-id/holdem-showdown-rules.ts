@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -77,7 +77,7 @@ Contoh: Button, small blind, dan big blind sampai ke river. SB check, BB check, 
 
 ## Aturan Showdown All-In — Apakah Pemain yang All-In Buka Duluan?
 
-Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA 2024 Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. (Satu pengecualian: saat hand-for-hand menjelang zona uang, WSOP Tournament Rule 126.g menetapkan hand yang all-in tetap tertutup dan tidak ada kartu lagi yang dibagikan sampai staf memberi aba-aba.) **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: **di permainan no-limit**, kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan; dan di cash game mana pun, kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
+Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA 2024 Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. (Satu pengecualian: saat hand-for-hand menjelang zona uang, WSOP Tournament Rule 126.g menetapkan bahwa setelah all-in di-call, semua hand di pot — termasuk milik caller — tetap tertutup dan tidak ada kartu lagi yang dibagikan sampai staf memberi aba-aba.) **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: **di permainan no-limit**, kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan; dan di cash game mana pun, kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

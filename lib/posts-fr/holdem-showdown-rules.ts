@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -101,7 +101,7 @@ Une mise faite au flop ou à la turn (le tournant) ne compte pas : si la river p
 
 En tournoi, il n'y a pas d'ordre à respecter : dès qu'un joueur est all-in et que plus aucune mise n'est possible, toutes les mains sont retournées face visible (TDA 2024, règle 16). Le cash game suit les règles de la salle ; selon les règles WSOP Live Action, en no-limit, c'est le joueur à tapis qui retourne en premier si les enchères se sont arrêtées avant la river.
 
-Concrètement, en **tournoi**, les cartes restantes sont alors distribuées avec **toutes les mains face visible** (==TDA 2024, règle 16==). Cela protège l'intégrité du coup : aucun joueur ne doit pouvoir jeter sa main par calcul dans une situation d'all-in. (Une exception : pendant le hand-for-hand à l'approche des places payées, les mains à tapis restent face cachée et aucune autre carte n'est distribuée tant que le staff ne l'a pas demandé — WSOP Tournament, règle 126.g.) En cash game, les règles WSOP Live Action prennent le problème dans l'autre sens : outre le joueur à tapis qui retourne en premier **en no-limit** quand les enchères se sont arrêtées avant la river, dans n'importe quel cash game, quand il y a un side pot, les joueurs qui se le disputent montrent avant celui qui n'est all-in que pour le pot principal (==Live Action, règle 149==).
+Concrètement, en **tournoi**, les cartes restantes sont alors distribuées avec **toutes les mains face visible** (==TDA 2024, règle 16==). Cela protège l'intégrité du coup : aucun joueur ne doit pouvoir jeter sa main par calcul dans une situation d'all-in. (Une exception : pendant le hand-for-hand à l'approche des places payées, après un tapis payé, toutes les mains du pot — y compris celle du joueur qui a payé — restent face cachée et aucune autre carte n'est distribuée tant que le staff ne l'a pas demandé — WSOP Tournament, règle 126.g.) En cash game, les règles WSOP Live Action prennent le problème dans l'autre sens : outre le joueur à tapis qui retourne en premier **en no-limit** quand les enchères se sont arrêtées avant la river, dans n'importe quel cash game, quand il y a un side pot, les joueurs qui se le disputent montrent avant celui qui n'est all-in que pour le pot principal (==Live Action, règle 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -1098,6 +1098,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - 이행 = 회차 S2(BS-1~8 + BR-1 + F-11 + zh 한 줄) → 검수장 재실행(F-01·O3 스크립트 + 화면 재측정) 요청.
 - ✅ **이행 2026-10-13 (10) `147fbf52` MB-306** — BS-1~8 · BR-1(빗금 + 범례 5칸째) · F-11 · zh · N-4(레인지 검사). F-06·N-3 보류. ▶ 검수장 재실행·19칸 판정 대기.
 
+### 2-BT. 우편함 수신분 — MA-509(MB-301 판정 · 요청 2 · 통지 1) · MA-510(MB-302 판정 · 요청 1 = 2자리) · WRONG 0 · 등재·회신·이행 2026-10-13 (12)
+
+> 보고 = `../홀덤검수/reports/2026-10/검수-MB299-304-S090-2026-10-13/REPORT.md` §MB-301·§MB-302. 원문 대조 = `docs/sources/wsop-2026-tournament-rules.txt` L1528-1529(126.g «the cards of all Participants in the hand should remain face down»).
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BT-1 (MA-509 ①) | sw `holdem-showdown-rules` «chali»(= 등을 대고 누운 = 앞면 위) 8자리 — 파일이 face-down 뜻으로 써 왔음(L60·62·80·106·144·148·169·185) | 전부 «kifudifudi»(엎어서) · 검수장 지적 5자리 + 같은 뜻 3자리(L60·106·144) |
+| BT-2 (MA-509 ② · EN-먼저) | EN showdown L79 «126.g has the all-in hands stay face down» — 원문은 콜러 포함 전원 | «every hand in the pot after an all-in and call — the caller's included — stay face down» + 형제 24로케일 같은 꼴(call 용어 = 각 파일 기존 용어) |
+| BT-3 (MA-510 ①) | pt `holdem-glossary` L39 «oito pares de termos» — 표는 쌍 7 + «3-bet 세는 법» 1 | «oito confusões, que sejam estas» · vi 같은 줄 «những cặp này» → «những chỗ này»(선택분 반영) |
+| BT-4 (MA-510 ②) | es `holdem-icm` L176 «casi todo lo demás» > EN «most of the rest» | «la mayor parte del resto» |
+
+- 🪶 통지(MA-509): es·it·ms·ru·tr·uk betting-actions 2자리씩 «의무 베팅» 꼴 → 스트래들(자발적 포스트)까지 «의무»로 묶임 · 명제 참(OK🪶) → **이번 회차 미이행**(자동 착수 금지 · 해당 글 손질 때 «포스트한 금액» 꼴).
+- 🪶 vi glossary H2 «Cặp "dễ nhầm nhất"»도 «쌍» 축 — 검수장 미지적 · 손대지 않음(판단 대상).
+- 스탬프: EN showdown `updated` 10-06 → 10-13(`6ef48e4e`에서 EN 본문을 고치고 안 올린 과소도 같이 닫힘) · 회차 전 EN 동기(`masterUpdated` 10-06) 10로케일만 → 10-13 · 뒤처진 14로케일은 그대로(§1-C).
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

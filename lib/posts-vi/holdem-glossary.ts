@@ -36,7 +36,7 @@ Poker có vốn từ riêng, và biết nó làm được hai việc: nó giúp 
 
 ## Cặp từ nào trong poker dễ nhầm nhất? Check/call, set/trips, cooler/bad beat
 
-Nếu bạn chỉ gỡ rối được tám chỗ nhầm lẫn, hãy chọn những cặp này — chúng gây nhiều nhầm lẫn (và nhiều sai lầm tốn kém) nhất ở bàn:
+Nếu bạn chỉ gỡ rối được tám chỗ nhầm lẫn, hãy chọn những chỗ này — chúng gây nhiều nhầm lẫn (và nhiều sai lầm tốn kém) nhất ở bàn:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

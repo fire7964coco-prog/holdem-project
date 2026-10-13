@@ -85,7 +85,7 @@ River'da kimse bahis yapmadıysa (herkes check dedi), showdown **butonun solunda
 
 ## All-in showdown kuralları — all-in olan oyuncu önce mi gösterir?
 
-Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Bu, elin bütünlüğünü korur. (Bir istisna: paraya girişe yakın hand-for-hand oyunda WSOP Tournament 2026 Kural 126.g'ye göre all-in eller kapalı kalır ve görevli söyleyene kadar başka kart dağıtılmaz.) WSOP 2026 cash oyunlarında B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river check geçildiyse butonun solundaki ilk aktif oyuncu başlar.
+Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Bu, elin bütünlüğünü korur. (Bir istisna: paraya girişe yakın hand-for-hand oyunda WSOP Tournament 2026 Kural 126.g'ye göre call edilen bir all-in'den sonra pottaki tüm eller —call edeninki de— kapalı kalır ve görevli söyleyene kadar başka kart dağıtılmaz.) WSOP 2026 cash oyunlarında B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river check geçildiyse butonun solundaki ilk aktif oyuncu başlar.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

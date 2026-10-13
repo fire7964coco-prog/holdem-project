@@ -77,7 +77,7 @@ river-এ কেউ bet না করলে (সবাই check করলে), s
 
 ## All-in showdown নিয়ম — all-in খেলোয়াড় কি আগে দেখায়?
 
-টুর্নামেন্টে কোনো খেলোয়াড় all-in এবং সব betting শেষ হলে, বাকি সব live hand **অবিলম্বে face-up** table করতে হয়; board পরে run হয় (TDA 2024 Rule 16)। (একটা ব্যতিক্রম: money-র কাছে hand-for-hand play চলার সময় WSOP Tournament Rules 2026 Rule 126.g অনুযায়ী all-in hand face-down থাকে আর staff না বলা পর্যন্ত আর কোনো কার্ড দেওয়া হয় না।) Cash game-এ house rule প্রযোজ্য এবং WSOP 2026 B149 আলাদা প্রকাশের ক্রম দেয়।
+টুর্নামেন্টে কোনো খেলোয়াড় all-in এবং সব betting শেষ হলে, বাকি সব live hand **অবিলম্বে face-up** table করতে হয়; board পরে run হয় (TDA 2024 Rule 16)। (একটা ব্যতিক্রম: money-র কাছে hand-for-hand play চলার সময় WSOP Tournament Rules 2026 Rule 126.g অনুযায়ী all-in-এ call হলে pot-এর সব hand — caller-এরটাও — face-down থাকে আর staff না বলা পর্যন্ত আর কোনো কার্ড দেওয়া হয় না।) Cash game-এ house rule প্রযোজ্য এবং WSOP 2026 B149 আলাদা প্রকাশের ক্রম দেয়।
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

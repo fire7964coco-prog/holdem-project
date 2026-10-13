@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -78,7 +78,7 @@ Exemplo: botão, small blind e big blind chegam ao river. O SB dá check, o BB d
 
 ## Regras de showdown no all-in — quem está all-in mostra primeiro?
 
-Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes são abertas com **todas as mãos viradas para cima** (==regra 16 da TDA, edição de 2024==). Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in. (Uma exceção: durante o hand-for-hand perto da zona de premiação, a regra 126.g do regulamento de torneios da WSOP manda as mãos all-in ficarem viradas para baixo, sem mais cartas distribuídas até a organização autorizar.) **No cash valem as regras da casa**, e as WSOP Live Action Rules colocam ao contrário: **num jogo de no-limit**, se as apostas terminaram antes do river, quem foi de all-in é responsável por virar primeiro; e, em qualquer cash game, havendo pote paralelo, quem o disputa mostra antes de qualquer um que esteja all-in só pelo pote principal (==regra 149 das Live Action Rules==).
+Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes são abertas com **todas as mãos viradas para cima** (==regra 16 da TDA, edição de 2024==). Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in. (Uma exceção: durante o hand-for-hand perto da zona de premiação, a regra 126.g do regulamento de torneios da WSOP manda que, depois de um all-in pago, todas as mãos do pote — inclusive a de quem pagou — fiquem viradas para baixo, sem mais cartas distribuídas até a organização autorizar.) **No cash valem as regras da casa**, e as WSOP Live Action Rules colocam ao contrário: **num jogo de no-limit**, se as apostas terminaram antes do river, quem foi de all-in é responsável por virar primeiro; e, em qualquer cash game, havendo pote paralelo, quem o disputa mostra antes de qualquer um que esteja all-in só pelo pote principal (==regra 149 das Live Action Rules==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

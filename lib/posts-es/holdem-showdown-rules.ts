@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -77,7 +77,7 @@ Ejemplo: el botón, la ciega pequeña y la ciega grande llegan al river. La SB p
 
 ## Reglas del showdown con all-in — ¿enseña primero el jugador que va all-in?
 
-En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, las cartas comunitarias restantes se reparten con **todas las manos boca arriba** (==regla 16 de la TDA 2024==). Esto protege la integridad de la mano — nadie debería poder tirar sus cartas estratégicamente en una situación de all-in. (Una excepción: durante el hand-for-hand cerca de los premios, la regla 126.g del reglamento de torneos de la WSOP hace que las manos all-in se queden boca abajo y no se repartan más cartas hasta que lo indique el personal del torneo.) **En cash mandan las reglas de la casa**, y las WSOP Live Action Rules lo plantean al revés: **en una partida sin límite**, si las apuestas terminaron antes del river, el que fue all-in es el responsable de dar la vuelta primero; y en cualquier partida de cash, si hay side pot, quienes lo disputan enseñan antes que quien solo está all-in por el bote principal (==regla 149 de las Live Action Rules==).
+En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, las cartas comunitarias restantes se reparten con **todas las manos boca arriba** (==regla 16 de la TDA 2024==). Esto protege la integridad de la mano — nadie debería poder tirar sus cartas estratégicamente en una situación de all-in. (Una excepción: durante el hand-for-hand cerca de los premios, la regla 126.g del reglamento de torneos de la WSOP hace que, tras un all-in pagado, todas las manos del bote —también la de quien paga— se queden boca abajo y no se repartan más cartas hasta que lo indique el personal del torneo.) **En cash mandan las reglas de la casa**, y las WSOP Live Action Rules lo plantean al revés: **en una partida sin límite**, si las apuestas terminaron antes del river, el que fue all-in es el responsable de dar la vuelta primero; y en cualquier partida de cash, si hay side pot, quienes lo disputan enseñan antes que quien solo está all-in por el bote principal (==regla 149 de las Live Action Rules==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -77,7 +77,7 @@ Dealer इधर-उधर देखता है। टेबल के बा�
 
 ## All-in showdown नियम — क्या all-in खिलाड़ी पहले दिखाता है?
 
-टूर्नामेंट में कोई all-in हो और सारी betting पूरी हो जाए तो board चलाने से पहले सभी live हैंड **तुरंत face-up** table करनी होती हैं (TDA 2024 Rule 16)। (एक अपवाद: money के पास hand-for-hand play के दौरान WSOP Tournament Rules 2026 Rule 126.g के तहत all-in हैंड face-down ही रहती हैं और staff के कहने तक आगे कार्ड नहीं बाँटे जाते।) Cash game में house rule और WSOP 2026 B149 का अलग क्रम।
+टूर्नामेंट में कोई all-in हो और सारी betting पूरी हो जाए तो board चलाने से पहले सभी live हैंड **तुरंत face-up** table करनी होती हैं (TDA 2024 Rule 16)। (एक अपवाद: money के पास hand-for-hand play के दौरान WSOP Tournament Rules 2026 Rule 126.g के तहत all-in पर call होने के बाद pot की सारी हैंड — caller की भी — face-down ही रहती हैं और staff के कहने तक आगे कार्ड नहीं बाँटे जाते।) Cash game में house rule और WSOP 2026 B149 का अलग क्रम।
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
