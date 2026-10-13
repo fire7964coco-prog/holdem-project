@@ -1141,6 +1141,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ BV-1 이행 2026-10-13 (16) — ms 배포 커밋에 묶음(MB-312).
 - MA-508 = 요청 0 · 받음.
 
+### 2-BW. 우편함 수신분 — MA-521(MB-310 fr 판정 · 요청 1(2자리) · WRONG 0) · 등재·회신 2026-10-13 (17)
+
+보고 `홀덤검수/reports/2026-10/검수-MB310-2026-10-13/REPORT.md`. FR_UI 120키 · page.tsx · solver 표 +2행 WRONG 0 · RISKY 3줄(원인 2).
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BW-1 요청 ① | fr `page.tsx` `DESCRIPTION` «les cotes du pot» — EN «from the flop on» 탈락 | «les cotes du pot dès le flop» · 160자 맞추려 «à chaque street» → «par street»(160자) |
+| BW-1′ 형제 | id `page.tsx` `DESCRIPTION` «pot odds,» — 같은 탈락(검수장 미지적 · 본체 자체 대조) | «pot odds sejak flop» |
+| BW-2 요청 ② | fr client 점수식 «écart (en points)» · «25 points» — %p 단위 탈락 · 점수 «pts»와 섞임 | «en points de pourcentage» · «25 points de pourcentage» |
+
+- ✅ BW-1·1′·2 이행 2026-10-13 (17) — vi 배포 커밋에 묶음(MB-313).
+- 통지 ②(EN 반올림·0 하한) = BV-4 그대로.
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

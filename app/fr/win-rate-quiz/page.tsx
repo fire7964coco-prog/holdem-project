@@ -25,7 +25,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Simulateur poker pour s'entraîner : quand fallait-il te coucher ? | HoldemMaster";
 const DESCRIPTION =
-  "Joue une main en 6-max sans voir les cartes adverses, comme à une vraie table : ton équité à chaque street, les cotes du pot et où il fallait te coucher.";
+  "Joue une main en 6-max sans voir les cartes adverses, comme à une vraie table : ton équité par street, les cotes du pot dès le flop et où il fallait te coucher.";
 const OG_DESCRIPTION =
   "Leurs cartes restent cachées, comme au vrai poker. Suis ton équité street par street et les cotes du pot dès le flop, puis revois où tu aurais dû te coucher.";
 

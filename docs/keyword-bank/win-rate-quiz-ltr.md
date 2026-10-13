@@ -74,3 +74,18 @@
 - 카니발: `/ms/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
 - 🔴 id판에서 옮겨 쓰지 않았다(인니어 잔재 kartu·bisa·karena·tinjau → kad·boleh·kerana·semak · ms-posting-reference §3).
 - 용어(코퍼스 `lib/posts-ms` · 10-13 grep): tangan 1.796(hand 92) · fold 797 · call 1.006 · all-in 280 · showdown 149 · seri 146 · split pot 24 · preflop 240(pre-flop 28) · flush draw 101 · straight draw 37 · top pair 81 · overpair 97 · overcard 26 · pot odds 113 · implied odds 88 · pulang modal 29(break-even 3) · street 133 · kombinasi 38(combo 15) · board 893(papan 4) · range 674(julat 42) · anda 2.715(Anda 258 · kamu 0).
+
+## vi (Vietnam 2704 · 2026-10-13)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **poker simulator** | **40** | ✅ 제목 머리 · H1 · 브레드크럼 · 사이드 레일 — «simulator poker»와 12개월 시계열 완전 동일(같은 군 · 30~70) |
+| chơi poker online miễn phí 40 · học poker 30 · poker equity 30 · pot odds 20 | — | 설명·본문(«chơi … miễn phí»는 게임 의도라 메타 제외) |
+| poker trainer · poker training · poker quiz · poker practice · texas holdem simulator · tập chơi poker | 각 10 | — |
+| mô phỏng poker · giả lập poker · luyện poker · luyện tập poker · tính equity poker | 데이터 없음 | 🔴 베트남어 «훈련·모의» 명사 전멸 — id·ms와 같은 패턴 · vi 계산기 «Poker Calculator»와 같은 영어 머리 |
+| cách chơi poker 2.900 · game poker 720(CPC 3,65) | — | 참고(규칙·게임 의도 · 이 페이지 몫 아님) |
+
+- SERP «poker simulator»(mobile · vi · Vietnam): 1 pokertrainer.se 퀴즈 · 2 kosmi(게임) · 3 Pokerist(게임) · 4 optimuspoker(게임) · 5 Upswing(훈련) · 6 Pokerist es · 7 shapes.inc(AI 챗) · 8 Zynga es · 9 Upswing 퀴즈. → 영어 글로벌 판 · 베트남어 페이지 0.
+- 제목 = «Poker Simulator để luyện tập: lẽ ra bạn nên fold ở đâu?» — 머리어 + 훈련 의도(«để luyện tập» 볼륨 미측정 · 게임 SERP와 구분용).
+- 카니발: `/vi/calculator` 메타·사전에 «simulator» 0회(10-13 grep) → 머리어 충돌 없음.
+- 용어(코퍼스 `lib/posts-vi` · 10-13 grep): tay bài 987 · đối thủ 438 · vòng cược 219(street 6) · board 1.239(bài chung 118) · combo 346(tổ hợp 66) · chia pot 135 · hòa 128 · showdown 189 · top pair 110 · overpair 115 · overcard 27 · implied odds 117 · hòa vốn 37 · aggressive 25(hung hãn 11 · 성향 이름 = «Chuẩn»·«Hung hãn» — 390 선택 상자 잘림 회피) · điểm phần trăm 11. 족보 = 계산기 사전 Title Case(Mậu Thầu … Thùng Phá Sảnh).

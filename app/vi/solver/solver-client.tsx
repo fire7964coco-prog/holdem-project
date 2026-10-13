@@ -48,7 +48,7 @@ const SPEC: [string, string][] = [
 ];
 
 /**
- * 「무엇을 원하나 → 어느 도구」 — win-rate-quiz 행은 vi 라우트가 없어 뺐다.
+ * 「무엇을 원하나 → 어느 도구」 — win-rate-quiz 행은 vi 라우트가 없어 뺐다 → ★2026-10-13 `/vi/win-rate-quiz` 신설로 복원(행 수 6).
  * `poker equity calculator` 50은 계산기 의도 → /vi/calculator(10-07 신설)로 보낸다(도구→도구 카니발 방지 · hi 09-19 선례).
  * 행 수 5 = EN 4 − quiz 1 + equity 행·입문 글 행(hi PICK_TOOL 선례). 계산기 이름 = vi 확정명 «Máy tính xác suất poker»(HubPage title·side-rail 축어).
  */
@@ -57,6 +57,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Xem nên mở bài nào từ mỗi vị trí", "Bảng bài khởi đầu", "/vi/hand-chart"],
   ["Tính outs, pot odds, SPR hay ICM mà không cần chạy solver", "Máy tính xác suất poker", "/vi/calculator"],
   ["So hai tay bài để xem equity (phần pot kỳ vọng)", "Máy tính equity", "/vi/calculator"],
+  // ★2026-10-13(시뮬레이터 회차 L1): 시뮬레이터 행 신설(pt·fr·id·ms 선례 · EN quiz 행 자리 = 계산기 뒤). 라벨 = HubPage title 축어.
+  ["Tập đoán equity khi không thấy bài đối thủ, rồi xem lẽ ra bạn nên fold ở đâu", "Poker Simulator", "/vi/win-rate-quiz"],
   ["Học luật và cách chơi Texas Hold'em từ đầu", "Hướng dẫn cho người mới", "/vi/blog/texas-holdem-rules-for-beginners"],
 ];
 

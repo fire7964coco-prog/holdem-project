@@ -340,6 +340,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     // ★2026-10-10 vi 배포 회차(docs/vi-cluster-plan.md §4-C ①) `/vi/glossary` 신설. 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/vi/glossary",    icon: "📖", label: "Thuật ngữ poker" },
     { href: "/vi/solver",      icon: "🧠", label: "GTO Solver" },
+    // ★2026-10-13 `/vi/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/vi/win-rate-quiz", icon: "📈", label: "Poker Simulator" },
     { href: "/vi/tournaments", icon: "🏆", label: "Giải poker" },
   ],
   /**

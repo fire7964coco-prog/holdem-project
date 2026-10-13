@@ -265,8 +265,8 @@ const FR_UI: QuizUI = {
       <p className="mt-2">
         <b className="text-foreground">🎯 Avec le Quiz activé</b>, l&rsquo;équité et le verdict de chaque street restent cachés jusqu&rsquo;à ce que tu estimes
         ton équité. Sur les streets où quelqu&rsquo;un mise, tu choisis aussi de suivre ou de te coucher. La réponse, c&rsquo;est « Ton équité » ci-dessus (le
-        chiffre sans voir leurs cartes), et chaque estimation rapporte <b className="text-foreground">100 − 4 × écart (en points)</b>
-        {" "}(zéro dès que l&rsquo;écart atteint 25 points). Un choix suivre/se coucher compte comme bon quand il correspond au verdict des cotes du pot. Tes
+        chiffre sans voir leurs cartes), et chaque estimation rapporte <b className="text-foreground">100 − 4 × écart (en points de pourcentage)</b>
+        {" "}(zéro dès que l&rsquo;écart atteint 25 points de pourcentage). Un choix suivre/se coucher compte comme bon quand il correspond au verdict des cotes du pot. Tes
         totaux restent dans ce navigateur et, si tu es connecté, ils sont aussi enregistrés sur ton compte pour
         te suivre sur tes autres appareils (les cartes et le board ne sont pas enregistrés).
       </p>
