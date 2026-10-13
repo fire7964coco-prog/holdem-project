@@ -58,8 +58,75 @@ export interface TableSim {
   oppRoles: EntryRole[];
   /** 이 판의 승률 계산 시드 — 같은 판은 어느 기기에서든 같은 숫자(`_engine.ts` mulberry32) */
   seed: number;
-  /** 직접 입력(S-034 2차 ①)으로 고정한 카드·자리가 있는 판 — 퀴즈 기록에 넣지 않는다 */
+  /** 직접 입력(S-034 2차 ①) 또는 공유 링크(3차 ①)로 고정한 판 — 퀴즈 기록에 넣지 않는다 */
   custom: boolean;
+}
+
+// ── 공유·재현 링크 (S-034 3차 ① · 2026-10-13) ──────────────────────────────
+//
+// ★시드만 싣지 않고 **딜 전체**(자리·인원·카드 전부)를 싣는다. 딜은 Math.random이라 시드로 재현되지
+//   않고, 딜을 시드로 바꿔도 레인지 표·딜 순서를 고치는 순간 옛 링크가 다른 판이 된다.
+//   카드를 그대로 적으면 링크가 코드 변경을 견딘다. 시드는 승률 계산용(`_engine.ts` mulberry32) —
+//   같은 시드 + 같은 카드 + 같은 성향이면 받은 사람 화면의 숫자가 보낸 사람과 같다.
+// ★상대 레인지는 싣지 않는다 — 자리에서 다시 만든다(roleOf → rangeFor). 링크가 짧아지고, 레인지 표가
+//   바뀌면 받은 쪽은 새 표로 계산한다(카드는 그대로).
+// 꼴: v1 = «1.{테이블}{내 자리}{성향}.{시드 36진}.{자리 번호들}.{카드 2자씩}»
+//   카드 순서 = 나 2장 → 상대(자리 순) 2장씩 → 보드 5장 · 랭크 23456789TJQKA · 무늬 s h d c(♠♥♦♣)
+const SHARE_RANKS = "23456789TJQKA";
+const SHARE_SUITS = "shdc";
+const SUIT_SYMBOLS = ["♠", "♥", "♦", "♣"];
+const RANK_NAMES = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+
+/** 성향 한 글자 — `_engine.ts` OPP_STYLES와 같은 이름 */
+const STYLE_CODES: Record<string, string> = { standard: "s", tight: "t", loose: "l", aggressive: "a" };
+
+export function encodeShare(sim: TableSim, style: string): string {
+  const card = (c: Card) => SHARE_RANKS[RANK_NAMES.indexOf(c.rank)] + SHARE_SUITS[SUIT_SYMBOLS.indexOf(c.suit)];
+  return [
+    "1",
+    `${sim.size}${sim.heroPos}${STYLE_CODES[style] ?? "s"}`,
+    sim.seed.toString(36),
+    sim.activeSlots.join(""),
+    [...sim.hands.flat(), ...sim.board].map(card).join(""),
+  ].join(".");
+}
+
+/**
+ * 링크 → 판. 틀린 곳이 하나라도 있으면 null(화면은 무작위 판으로 시작한다).
+ * ★손으로 고친 링크도 들어온다 — 카드 중복·자리 범위·장수를 전부 확인한다.
+ */
+export function decodeShare(code: string): { sim: TableSim; style: string } | null {
+  const parts = code.split(".");
+  if (parts.length !== 5 || parts[0] !== "1") return null;
+  const [, head, seed36, slotStr, cardStr] = parts;
+  const m = /^([69])(\d)([stla])$/.exec(head);
+  if (!m) return null;
+  const size = Number(m[1]) as TableSize;
+  const heroPos = Number(m[2]);
+  const style = Object.keys(STYLE_CODES).find((k) => STYLE_CODES[k] === m[3])!;
+  if (heroPos >= size) return null;
+  if (!/^[0-9a-z]{1,7}$/.test(seed36)) return null;
+  const seed = parseInt(seed36, 36);
+  if (!(seed >= 0 && seed < 2 ** 32)) return null;
+  if (!/^\d{2,6}$/.test(slotStr)) return null;
+  const activeSlots = [...slotStr].map(Number);
+  if (activeSlots[0] !== 0 || activeSlots.some((s, i) => s >= size || (i > 0 && s <= activeSlots[i - 1]))) return null;
+  const nCards = activeSlots.length * 2 + 5;
+  if (cardStr.length !== nCards * 2) return null;
+  const cards: Card[] = [];
+  const seen = new Set<string>();
+  for (let i = 0; i < cardStr.length; i += 2) {
+    const r = SHARE_RANKS.indexOf(cardStr[i]);
+    const s = SHARE_SUITS.indexOf(cardStr[i + 1]);
+    if (r < 0 || s < 0 || seen.has(cardStr.slice(i, i + 2))) return null;
+    seen.add(cardStr.slice(i, i + 2));
+    cards.push({ rank: RANK_NAMES[r], suit: SUIT_SYMBOLS[s] } as Card);
+  }
+  const hands: Card[][] = activeSlots.map((_, k) => cards.slice(k * 2, k * 2 + 2));
+  const board = cards.slice(activeSlots.length * 2);
+  const oppRoles = activeSlots.slice(1).map((slot) => roleOf(heroPos, slot, activeSlots, size));
+  const oppRanges = oppRoles.map(rangeFor);
+  return { sim: { size, heroPos, activeSlots, hands, board, oppRanges, oppRoles, seed, custom: true }, style };
 }
 
 /**

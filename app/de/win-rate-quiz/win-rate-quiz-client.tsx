@@ -170,6 +170,10 @@ const DE_UI: QuizUI = {
   customOff: "Zurück zu Zufallshänden",
   customActive: "Deine eingegebene Hand · neue Hände behalten die gewählten Karten",
   customEdit: "Bearbeiten",
+  shareBtn: "Link zu dieser Hand kopieren",
+  shareCopied: "Kopiert. Wer den Link öffnet, sieht diese Hand ab Preflop mit denselben Karten und derselben Equity.",
+  shareManual: "Automatisches Kopieren ist blockiert. Kopiere die Adresse unten.",
+  sharedActive: "Geteilte Hand · dieselben Karten und dieselbe Equity wie beim Absender (zählt nicht zu deiner Quiz-Statistik)",
 
   ruleTitle: "Welche Annahmen dieser Simulator trifft",
   ruleText: (style) => (

@@ -149,6 +149,10 @@ const EN_UI: QuizUI = {
   customOff: "Back to random hands",
   customActive: "Your set-up hand · new hands keep these cards",
   customEdit: "Edit",
+  shareBtn: "Copy a link to this hand",
+  shareCopied: "Copied. Anyone who opens the link plays this hand from preflop with the same cards and the same win rates.",
+  shareManual: "Automatic copy is blocked. Copy the address below.",
+  sharedActive: "Shared hand · same cards and win rates as the sender (not added to your quiz stats)",
 
   ruleTitle: "What this simulator assumes",
   ruleText: (style) => (

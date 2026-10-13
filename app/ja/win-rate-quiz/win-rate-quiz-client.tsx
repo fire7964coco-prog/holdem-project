@@ -162,6 +162,10 @@ const JA_UI: QuizUI = {
   customOff: "ランダムなハンドに戻る",
   customActive: "設定したハンド · 次のハンドも選んだカードのまま配ります",
   customEdit: "編集",
+  shareBtn: "このハンドのリンクをコピー",
+  shareCopied: "コピーしました。リンクを開いた人は、同じカード・同じ勝率でこのハンドをプリフロップから見られます。",
+  shareManual: "自動コピーができませんでした。下のアドレスをコピーしてください。",
+  sharedActive: "共有されたハンド · 送った人と同じカード・同じ勝率(クイズの記録には入りません)",
 
   ruleTitle: "このシミュレーターの前提",
   ruleText: (style) => (

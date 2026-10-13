@@ -162,6 +162,10 @@ const ES_UI: QuizUI = {
   customOff: "Volver a manos al azar",
   customActive: "Tu mano preparada · las manos nuevas mantienen estas cartas",
   customEdit: "Editar",
+  shareBtn: "Copiar enlace de esta mano",
+  shareCopied: "Copiado. Quien abra el enlace verá esta mano desde el preflop con las mismas cartas y la misma equity.",
+  shareManual: "No se pudo copiar automáticamente. Copia la dirección de abajo.",
+  sharedActive: "Mano compartida · mismas cartas y misma equity que quien la envió (no cuenta para tu historial del quiz)",
 
   ruleTitle: "Qué supone este simulador",
   ruleText: (style) => (

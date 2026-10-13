@@ -153,6 +153,10 @@ const KO_UI: QuizUI = {
   customOff: "무작위 판으로 돌아가기",
   customActive: "직접 입력한 판 · 새 핸드도 같은 카드로 돌립니다",
   customEdit: "고치기",
+  shareBtn: "이 판 링크 복사",
+  shareCopied: "복사했어요. 링크를 연 사람은 같은 카드·같은 승률로 이 판을 프리플랍부터 봅니다.",
+  shareManual: "자동 복사가 막혀 있어요. 아래 주소를 직접 복사하세요.",
+  sharedActive: "공유받은 판 · 보낸 사람과 같은 카드·같은 승률 (퀴즈 기록에는 넣지 않아요)",
 
   ruleTitle: "이 시뮬레이터가 두는 가정",
   ruleText: (style) => (

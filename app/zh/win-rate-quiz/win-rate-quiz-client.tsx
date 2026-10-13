@@ -162,6 +162,10 @@ const ZH_UI: QuizUI = {
   customOff: "回到随机发牌",
   customActive: "你设定的手牌 · 发新的一手也保留你选的这些牌",
   customEdit: "修改",
+  shareBtn: "复制这手牌的链接",
+  shareCopied: "已复制。打开链接的人会从翻牌前开始看这手牌，牌和胜率都和你一样。",
+  shareManual: "无法自动复制，请手动复制下面的地址。",
+  sharedActive: "别人分享的一手 · 牌和胜率与分享者相同(不计入你的测验记录)",
 
   ruleTitle: "这个模拟器的前提",
   ruleText: (style) => (

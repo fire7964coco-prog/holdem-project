@@ -11,7 +11,7 @@ import {
 } from "@/lib/win-rate-quiz-records";
 import { describeHand, handCategory, winnersAt, toDisplay, type Card as QuizCard, type HandNames } from "./_equity";
 import {
-  makeTableSim, positionAt, isFixed, POSITIONS_6, POSITIONS_9,
+  makeTableSim, positionAt, isFixed, encodeShare, decodeShare, POSITIONS_6, POSITIONS_9,
   type TableSim, type TableSize, type FixedDeal,
 } from "./_table";
 import type { NCard } from "./_ranges";
@@ -243,6 +243,17 @@ export interface QuizUI {
   /** 직접 입력한 판을 돌리는 중 — 테이블 위 한 줄 */
   customActive: string;
   customEdit: string;
+  /**
+   * 공유·재현 링크 (S-034 3차 ① · 2026-10-13) — 끝난 판의 카드·자리·인원·성향·시드를 주소에 싣는다.
+   * 받은 사람은 같은 판을 프리플랍부터, 같은 숫자로 본다. 공유받은 판은 퀴즈 기록에 넣지 않는다.
+   */
+  shareBtn: string;
+  /** 복사 성공 한 줄 */
+  shareCopied: string;
+  /** 클립보드가 막혔을 때 주소 칸 위 한 줄 — 직접 복사 */
+  shareManual: string;
+  /** 링크로 연 판을 돌리는 중 — 테이블 위 한 줄 */
+  sharedActive: string;
   /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
   resultTabs: readonly [string, string, string];
   /**
@@ -642,6 +653,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [custom, setCustom] = useState<FixedDeal | null>(null);
   const [draft, setDraft] = useState<FixedDeal>(EMPTY_DEAL);
   const [editing, setEditing] = useState(false);
+  /** 공유 링크(?h=)로 연 판 — 다음 계산 한 번이 이 판을 쓴다(소비하면 null) */
+  const sharedSim = useRef<TableSim | null>(null);
+  /** 지금 판이 링크로 연 판인가 — 테이블 위 한 줄 */
+  const [shared, setShared] = useState(false);
+  /** 공유 버튼 상태 — 복사됨 · 복사 실패(주소를 보여 준다) */
+  const [shareState, setShareState] = useState<{ kind: "copied" | "manual"; url: string } | null>(null);
   const [guess, setGuess] = useState(50);
   const [answers, setAnswers] = useState<Record<number, QuizAnswer>>({});
   /** 브라우저 기록(합계 + 아직 올리지 않은 판) — 첫 렌더는 빈 값(하이드레이션) · effect에서 읽는다 */
@@ -714,6 +731,28 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       if (s && OPP_STYLES.includes(s)) setStyle(s);
     } catch { /* 저장소 막힘 = 기본 */ }
   }, []);
+  // 공유 링크 — 성향 기억(위 effect)보다 뒤에 읽어 링크의 성향이 이긴다. 링크 성향은 기억에 쓰지 않는다
+  useEffect(() => {
+    let code: string | null = null;
+    try { code = new URLSearchParams(window.location.search).get("h"); } catch { /* 주소 못 읽음 = 무작위 판 */ }
+    const d = code ? decodeShare(code) : null;
+    if (!d) return;
+    sharedSim.current = d.sim;
+    setTableSize(d.sim.size);
+    setPreflopCount(d.sim.activeSlots.length);
+    if (OPP_STYLES.includes(d.style as OppStyle)) setStyle(d.style as OppStyle);
+    setShared(true);
+    setHandId((id) => id + 1);
+  }, []);
+  /** 링크로 연 판에서 벗어난다 — 주소의 ?h=도 지워 새로고침이 그 판을 다시 열지 않게 */
+  const dropShared = useCallback(() => {
+    sharedSim.current = null;
+    setShared(false);
+    setShareState(null);
+    try {
+      if (new URLSearchParams(window.location.search).has("h")) window.history.replaceState(null, "", window.location.pathname);
+    } catch { /* 주소만 못 고칠 뿐 */ }
+  }, []);
   const toggleQuiz = useCallback(() => {
     setQuiz((q) => {
       try { localStorage.setItem(QUIZ_KEY, q ? "0" : "1"); } catch { /* 기억만 못 할 뿐 */ }
@@ -737,8 +776,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     let cancelled = false;
     let worker: Worker | null = null;
     const t = setTimeout(() => {
-      const s = makeTableSim(preflopCount, tableSize, undefined, custom);
+      const s = sharedSim.current ?? makeTableSim(preflopCount, tableSize, undefined, custom);
       if (cancelled) return;
+      sharedSim.current = null;
       setSim(s);
       const req: HandRequest = {
         id: handId, heroHand: s.hands[0], oppHands: s.hands.slice(1), oppSlots: s.activeSlots.slice(1),
@@ -767,25 +807,29 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
   const newHand = useCallback(() => {
     closeHand();
+    dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setHandId((id) => id + 1);
-  }, [closeHand]);
+  }, [closeHand, dropShared]);
   const changeCount = useCallback((n: number) => {
     closeHand();
+    dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setPreflopCount(n);
-  }, [closeHand]);
+  }, [closeHand, dropShared]);
   const changeStyle = useCallback((s: OppStyle) => {
     closeHand();
+    dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     try { localStorage.setItem(STYLE_KEY, s); } catch { /* 기억만 못 할 뿐 */ }
     setStyle(s);
-  }, [closeHand]);
+  }, [closeHand, dropShared]);
   const changeSize = useCallback((n: TableSize) => {
     closeHand();
+    dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     // 9인 전용 자리(LJ·UTG+1·UTG+2)만 고른 판은 6인으로 옮기면 빈 판이 된다 — 배지·기록이 isFixed와 어긋나지 않게 무작위 판으로
@@ -796,16 +840,17 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     });
     setDraft((d) => moveHeroPos(d, tableSize, n));
     setTableSize(n);
-  }, [closeHand, tableSize]);
+  }, [closeHand, dropShared, tableSize]);
   /** 직접 입력 적용 — 칸을 하나도 안 채웠으면 무작위 판으로 */
   const applyCustom = useCallback((f: FixedDeal | null) => {
     closeHand();
+    dropShared();
     setStreet(0); setReveal(false); setSim(null); setResult(null); setStreets([]);
     setAnswers({}); setGuess(50);
     setCustom(isFixed(f) ? f : null);
     setEditing(false);
     setHandId((id) => id + 1);
-  }, [closeHand]);
+  }, [closeHand, dropShared]);
   const openEditor = useCallback(() => {
     setDraft(custom ?? EMPTY_DEAL);
     setEditing((e) => !e);
@@ -844,7 +889,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     const choiceOk = choice === null ? null : choice === rec.verdict;
     const firstOfHand = Object.keys(answers).length === 0;
     setAnswers((a) => ({ ...a, [street]: { guess, choice, equity: rec.equity, err, points, choiceOk } }));
-    // 직접 입력한 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다
+    // 직접 입력·공유 링크 판은 기록에 넣지 않는다 — 같은 판을 되풀이하면 답을 외울 수 있다(링크는 보낸 사람이 결과를 안다)
     if (sim?.custom) return;
     if (!handKey.current) handKey.current = newClientId();
     if (sim) {
@@ -1071,6 +1116,21 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       onStart={() => applyCustom(draft)} onClose={() => setEditing(false)}
       onOff={custom ? () => applyCustom(null) : null} />
   );
+  /** 링크로 연 판 — 한 줄 */
+  const sharedLine = shared && sim && (
+    <p className="text-center mb-1.5 text-[11px] font-bold" style={{ color: GOLD }}>🔗 {ui.sharedActive}</p>
+  );
+  /** 이 판 링크 복사 — 클립보드가 막히면 주소를 보여 주고 직접 복사하게 한다 */
+  const copyShare = async () => {
+    if (!sim) return;
+    const url = `${window.location.origin}${window.location.pathname}?h=${encodeShare(sim, style)}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareState({ kind: "copied", url });
+    } catch {
+      setShareState({ kind: "manual", url });
+    }
+  };
   /** 직접 입력한 판을 돌리는 중 — 한 줄(누르면 편집기) */
   const customLine = custom && !editing && (
     <button onClick={openEditor} className="block mx-auto mb-1.5 text-[11px] font-bold" style={{ color: GOLD }}>
@@ -1164,6 +1224,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {controls("mb-2 lg:mb-4")}
       {editor}
       {customLine}
+      {sharedLine}
 
       {/* ── 넓은 화면(lg↑)에서는 본문을 반으로: 좌 = 테이블 / 우 = 승률·팟오즈·버튼 전부 ──
           ★2026-08-05: 처음엔 테이블을 전체 폭에 두고 **아래 패널만** 2단으로 나눴는데,
@@ -1268,6 +1329,21 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                 {ui.newHandBtn}
               </button>
             </div>
+            <button onClick={copyShare}
+              className="w-full py-2 rounded-xl text-[13px] font-bold border-2 transition-all hover:brightness-110"
+              style={{ borderColor: mix(GOLD, 60), color: "hsl(var(--foreground))", background: "hsl(var(--background))" }}>
+              🔗 {ui.shareBtn}
+            </button>
+            {shareState?.kind === "copied" && (
+              <p role="status" className="text-[11px] text-center text-muted-foreground leading-snug">✓ {ui.shareCopied}</p>
+            )}
+            {shareState?.kind === "manual" && (
+              <div role="status">
+                <p className="text-[11px] text-muted-foreground mb-1">{ui.shareManual}</p>
+                <input readOnly value={shareState.url} onFocus={(e) => e.currentTarget.select()}
+                  className="w-full rounded-lg border px-2 py-1.5 text-[11px] font-mono bg-background text-foreground" />
+              </div>
+            )}
           </div>
           {!showStreet && quizLine && (
             <div className="rounded-xl px-4 py-1.5 mb-2" style={{ background: PANEL, border: `1px solid ${PANEL_LINE}` }}>{quizLine}</div>
