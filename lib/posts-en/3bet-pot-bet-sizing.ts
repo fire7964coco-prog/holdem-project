@@ -340,6 +340,8 @@ Then open the **GTO Trainer** in the sidebar. It deals a hand from the real rang
 
 A useful contrast is the ace-high board from the previous spot. A♦K♠2♥ is a rainbow, so **no flush draw exists on it for anybody**, and the big blind's whole range there is a pair or better. Here the "no draw" row reads only 43.8%. ⚠ The other 56.2% is not all *live*, mind — 26.0 points of it is a **backdoor**, needing two running cards of one suit (hearts, or spades for the two-spade holdings) and completing about 4.2% of the time. Real draws come to 30.1%. **That one line is not the full explanation, though** — the [8-5-2 flop](/en/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") later in this series has 78.3% "no draw" and still fires the large size 97.8% of the time. Draw density and range shape both have a vote.
 
+> **Review your own hand from this spot** — This spot is a 3-bet pot: BTN opens, BB 3-bets and BTN calls. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**3-bet pot**, **Opening seat** BTN, **3-betting seat** BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), and its larger flop bet is 75% of the pot rather than 66%, so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 ## FAQ
 
 **Q. How much should you bet in poker?**

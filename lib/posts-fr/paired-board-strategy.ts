@@ -224,6 +224,8 @@ Ce qu'il faut regarder, c'est **la ligne unique 6♠6♥** dans le tableau main 
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale : il te distribue une main selon les poids réels des ranges et te montre combien de grosses blindes ton action te coûte. Gratuit, rien à installer, sans compte.
 
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 ## FAQ
 
 **Q. Pourquoi les trips sont-ils plus faibles qu'un set sur un board pairé ?**

@@ -231,6 +231,8 @@ For this spot the per-hand table at the bottom is the whole lesson — **scroll 
 
 Then open the **GTO Trainer** in the sidebar and let it deal you a flush on this board: picking an action and seeing the EV cost is faster than being convinced by a table. Free, nothing to install, no account.
 
+> **Review your own hand from this spot** — This spot is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 ## FAQ
 
 **Q. What is a monotone flop?**

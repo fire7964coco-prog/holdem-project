@@ -231,6 +231,8 @@ Untuk melihat check-raise, Anda perlu perhitungan lanjutan. Tekan **Hitung sendi
 
 Gunakan **Trainer GTO** di sidebar untuk berlatih dengan bobot range sebenarnya dan menilai kerugian EV setiap keputusan. Gratis, tanpa instalasi, dan dapat digunakan tanpa akun.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot BTN open dan BB call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Open · Call**, BTN dan BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 ## Pertanyaan umum
 
 **Q. Kapan check-raise masuk akal dalam poker?**

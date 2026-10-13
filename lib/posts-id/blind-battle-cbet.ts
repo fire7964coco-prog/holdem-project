@@ -197,6 +197,8 @@ Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board K-high denga
 
 Periksa label pemain di bagian atas: **"OOP (SB (opener))"**. Bandingkan dengan "OOP (BB (caller))" pada kelompok sebelumnya. Perubahan label itu menjelaskan perubahan peran yang dibahas dalam artikel ini. Gratis, tanpa instalasi, dan tanpa akun.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot SB open dan BB call (blind vs blind). Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Open · Call**, SB dan BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 **Q. Apakah SB harus selalu c-bet dalam blind vs blind?**
 
 A. Tidak. Pada board ini, solver bet 67,4% dan check 32,6%. Frekuensinya jauh lebih tinggi daripada 0,1%–23,7% pada kelompok BTN versus BB sebelumnya, tetapi K-T-6 juga cocok untuk opener. Perubahan peran memengaruhi titik awal strategi; board yang lebih mendukung caller tetap dapat menurunkan frekuensi bet SB.

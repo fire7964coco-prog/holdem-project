@@ -199,6 +199,8 @@ Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras
 
 **Alterna entre este spot y el board pareado 6-6-3.** Los dos son boards pareados y las matrices tienen colores opuestos. Recorre los Spots de estudio una vez y queda una sola conclusión: mira primero no **qué board es**, sino **a qué rango se engancha este board**. Gratis, sin instalar nada y sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que SB abre y BB paga (guerra de ciegas). Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, SB y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 **Q. ¿Qué son los trips en poker y en qué se diferencian de un set?**
 
 A. Los trips se hacen cuando el board enseña dos cartas del mismo valor y tú llevas una de ellas. En A-A-6 casi cualquier mano con un solo as califica (**A-6 no es trips sino full** — también hace pareja con el seis del board), y en este spot eso son 88 combos (17.5%) para la ciega pequeña y 66 (13.1%) para la ciega grande. Un *set* se hace al revés, con un par servido más una carta de ese mismo valor en el board. Fíjate en que 66 sí hace set con el seis del board aquí, pero la pareja de ases del board se le pone encima, así que la mano final es un **full**.

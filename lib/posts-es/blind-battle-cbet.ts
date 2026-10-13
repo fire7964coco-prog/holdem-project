@@ -223,6 +223,8 @@ Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras
 
 Mira primero las etiquetas de jugador de arriba: **"OOP (SB (open-raiser))"**. En cuanto veas que se diferencia del "OOP (BB (caller))" de los spots anteriores, lo que este artículo llama "cambió el papel" se entiende al instante. Gratis, sin instalar nada y sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que SB abre y BB paga (guerra de ciegas). Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, SB y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 **Q. ¿La ciega pequeña debería cbetear siempre en guerra de ciegas?**
 
 A. No siempre. En este board el solver apuesta el 67.4% y deja el 32.6% en check. Pero eso es otro mundo comparado con un bote de subida simple corriente, donde el jugador fuera de posición apuesta entre 0.1% y 23.7%. **Cuando cambia el papel, cambia lo que haces por defecto.** Ten en cuenta que K-10-6 es un board que le encaja al que abre — igual que un tipo de board separaba 0.1% de 23.7% en los spots anteriores, la frecuencia de apuesta de la ciega pequeña baja en los boards que le encajan al que paga.

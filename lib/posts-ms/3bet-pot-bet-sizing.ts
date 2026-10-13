@@ -219,6 +219,8 @@ Kemudian buka **Trainer GTO** pada sidebar. Ia memilih tangan mengikut wajaran r
 
 Bandingkan dengan A♦K♠2♥ daripada contoh sebelumnya. Board itu rainbow, maka **tiada flush draw bagi mana-mana pemain**, dan seluruh range BB ialah pair atau lebih baik. Di sini baris “Tiada draw” hanya 43.8%. ⚠ Baki 56.2% bukan semuanya draw langsung: 26.0 mata ialah **backdoor**, yang memerlukan dua kad suit yang betul berturut-turut dan lengkap kira-kira 4.2%. Draw langsung berjumlah 30.1%. Namun [flop 8-5-2](/ms/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-ms.webp") mempunyai 78.3% “Tiada draw” dan masih memilih saiz besar 97.8%. Kedua-dua kepadatan draw dan bentuk range perlu dibaca.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot 3-bet: BTN open, BB 3-bet, kemudian BTN call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Pot 3-bet**, **Kedudukan pembuka** BTN, **Kedudukan yang 3-bet** BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb) dan saiz bet besarnya di flop ialah 75% pot, bukan 66%, jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 ## Soalan Lazim
 
 **Q. Berapakah saiz bet yang sesuai dalam poker?**

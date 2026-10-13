@@ -206,6 +206,8 @@ Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver mi�
 
 Hãy nhìn nhãn người chơi ở trên cùng trước: **"OOP (SB (bên open))"**. Khi thấy nó khác với "OOP (BB (bên call))" của các spot trước, bạn sẽ hiểu ngay bài viết này muốn nói gì khi bảo "vai trò đã đổi". Miễn phí, không cần cài đặt, không cần tài khoản.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot SB open và BB call (blind đối đầu blind). Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, SB và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 **Q. Blind đối đầu blind, small blind có nên luôn c-bet không?**
 
 A. Không phải lúc nào cũng vậy. Trên board này solver bet 67,4% và để lại 32,6% thành check. Nhưng đó là một thế giới khác với pot raise đơn thông thường, nơi người không có vị trí bet 0,1%–23,7%. **Khi vai trò đổi, mặc định cũng đổi.** Hãy nhớ rằng K-10-6 là board hợp với người open — giống như một kiểu board đã tách 0,1% khỏi 23,7% ở các spot trước, tần suất bet của small blind sẽ giảm trên những board hợp với người call.

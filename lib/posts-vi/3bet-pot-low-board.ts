@@ -166,6 +166,8 @@ Mọi con số ở đây đều hiện ra nếu bạn mở [GTO poker solver mi�
 
 Hãy tìm **hàng "Set/Trips" bị thiếu** (trên app là «Xám») trong bảng «Tay bài / Draw». Rồi chuyển người chơi sang **IP (BTN (bên call))**, hàng đó xuất hiện với 6,3%. Một dòng ấy kể trọn câu chuyện ai đang nắm phần đỉnh của board này. Miễn phí, không cần cài đặt, không cần tài khoản.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot 3-bet: BTN open, BB 3-bet và BTN call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Pot 3-bet**, **Vị trí open** BTN, **Vị trí 3-bet** BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb) và size cược lớn ở flop là 75% pot thay vì 66%, nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 **Q. Trong pot 3-bet, có nên c-bet A-K trên board thấp không?**
 
 A. Có — nên c-bet (cược tiếp tục). Trên 8-5-2, A-K không có đôi và không có draw ngay (chỉ có backdoor draw — sảnh thấp nhất (wheel) runner-runner, cộng backdoor flush cho ba combo cùng chất), vậy mà solver đặt 97,8% range vào cỡ bet lớn. Lý do là range của big blind **phân cực — overpair hoặc ace-high, chia gần như làm đôi** — và khi phần giữa trống rỗng thì size tăng lên, gần như toàn bộ range dùng nó. Việc 58,3% range đối thủ không ra đôi có giúp ích, nhưng đừng đọc nó là "58,3% fold"; node phản ứng không có trong lần tính này.

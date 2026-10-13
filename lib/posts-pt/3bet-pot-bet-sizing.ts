@@ -219,6 +219,8 @@ Em seguida, abra o **Treinador GTO** na barra lateral. Ele distribui mãos de ac
 
 Uma comparação útil é o board A-high do exemplo anterior. A♦K♠2♥ é rainbow, então **ninguém pode ter flush draw nele**, e todo o range do big blind tem par ou melhor. Aqui, "Sem draw" marca apenas 43,8%. ⚠ Os outros 56,2% não são todos draws imediatos: 26,0 pontos são **backdoors**, que precisam de duas cartas seguidas do naipe necessário e completam em cerca de 4,2% das vezes. Os draws imediatos somam 30,1%. **Essa linha sozinha, porém, não explica tudo:** no [flop 8-5-2](/pt/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-pt.webp"), mais adiante na série, "Sem draw" chega a 78,3%, e o tamanho grande ainda recebe 97,8%. A densidade de draws e a distribuição de força do range precisam ser lidas juntas.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote 3-bet: o BTN abre, o BB dá 3-bet e o BTN paga. Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Pote 3-bet**, **Posição que abre** BTN, **Posição que dá 3-bet** BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb) e a aposta grande no flop é de 75% do pote em vez de 66%, então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 ## Perguntas frequentes
 
 **Q. Quanto devo apostar no poker?**

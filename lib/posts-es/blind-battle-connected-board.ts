@@ -228,6 +228,8 @@ Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras
 
 **Alterna entre este spot y "Board K-T high"**, el anterior. Las etiquetas de jugador dicen "OOP (SB (open-raiser))" en los dos, el bote y el stack son idénticos — y la matriz cambia de color por completo. Es la demostración más corta de esta serie de lo que hace de verdad un board. Gratis, sin instalar nada y sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que SB abre y BB paga (guerra de ciegas). Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, SB y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 **Q. ¿Por qué el mismo rango cambia de valor de un board a otro?**
 
 A. Porque un rango está concentrado en cartas concretas. El rango de apertura de la ciega pequeña está cargado de ases, reyes y reinas, así que gana en boards altos; el rango con el que paga la ciega grande está cargado de conectores y manos bajas del mismo palo, así que gana en boards bajos y conectados. Pon esos dos mismos rangos en K♥10♦6♠ y la ciega pequeña tiene 55.3% de equity; ponlos en 7♦6♦5♣ y baja a 49.6%. Los rangos no se movieron — solo el board.

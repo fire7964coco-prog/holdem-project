@@ -269,6 +269,8 @@ Every figure here comes up if you open the [GTO solver](/en/solver) and hit **St
 
 **Click back and forth with the 6-6-3 paired board.** Both are paired boards and the matrices are opposite colours. Work through the study spots once and one conclusion is left: look first not at **what board it is** but at **whose range this board attaches to**. Free, no install, no account.
 
+> **Review your own hand from this spot** — This spot is an SB open, BB call pot (blind vs blind). If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, SB and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 **Q. What are trips in poker, and how do they differ from a set?**
 
 A. Trips are made when the board shows two cards of the same rank and you hold one of them. On A-A-6 most hands holding a single ace qualify (**A-6 is not trips but a full house** — it pairs with the board's six as well), and in this spot that is 88 combos (17.5%) for the small blind and 66 (13.1%) for the big blind. A *set* is made the other way round, from a pocket pair with one more of that rank on the board. Note that 6-6 does make a set with the board's six here, but the board's pair of aces sits on top of it, so the final hand is a **full house**.

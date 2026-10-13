@@ -227,6 +227,8 @@ Tiếp theo mở **Trainer GTO** ở thanh bên. Nó chia một tay bài theo tr
 
 Một phép đối chiếu hữu ích là board A-high ở spot trước. A♦K♠2♥ là rainbow (3 lá khác chất), nên **không ai có flush draw trên đó**, và toàn bộ range của big blind ở đó đều từ một đôi trở lên. Ở đây hàng "không draw" chỉ ghi 43,8%. ⚠ Nhưng 56,2% còn lại không phải tất cả đều *sống* — 26,0 điểm trong đó là **backdoor**, cần hai lá liên tiếp cùng một chất (chất cơ, hoặc chất bích với những tay cầm hai lá bích) và chỉ thành khoảng 4,2% số lần. Draw thật cộng lại là 30,1%. **Tuy vậy, dòng đó chưa phải toàn bộ lời giải thích** — [flop 8-5-2](/vi/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-vi.webp") ở phần sau của loạt bài này có 78,3% "không draw" mà vẫn bắn size lớn 97,8% số lần. Mật độ draw và hình dạng range đều có tiếng nói.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot 3-bet: BTN open, BB 3-bet và BTN call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Pot 3-bet**, **Vị trí open** BTN, **Vị trí 3-bet** BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb) và size cược lớn ở flop là 75% pot thay vì 66%, nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 ## Câu hỏi thường gặp
 
 **Q. Bet size trong poker là gì và chọn thế nào?**

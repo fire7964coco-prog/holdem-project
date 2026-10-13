@@ -197,6 +197,8 @@ En este spot, lee el **panel de Proyectos de la derecha** — los proyectos a do
 
 Para entrenarlo en vez de leerlo, abre el **Entrenador GTO** en la barra lateral: reparte manos con los pesos reales del rango y te muestra cuántas ciegas grandes te cuesta tu acción. Gratis, sin nada que instalar y sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 ## Preguntas frecuentes
 
 **Q. ¿Qué manos hacen escalera en Q-J-10?**

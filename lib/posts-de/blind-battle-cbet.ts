@@ -213,6 +213,8 @@ Jede Zahl hier findest du wieder: Öffne den [kostenlosen Poker-Solver](/de/solv
 
 Schau zuerst auf die Spielerbeschriftung oben: **„OOP (SB (Open-Raiser))“**. Sobald du siehst, dass sie sich vom „OOP (BB (Caller))“ der früheren Spots unterscheidet, ist sofort klar, was dieser Artikel mit „die Rolle hat sich geändert“ meint. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein Pot mit SB-Open und BB-Call (Blind vs. Blind). Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**Open · Call**, SB und BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 **Q. Sollte der Small Blind Blind vs. Blind immer c-betten?**
 
 A. Nicht immer. Auf diesem Board bettet der Solver 67,4% und lässt 32,6% als Check. Das ist aber eine andere Welt als ein normaler Single Raised Pot, in dem der Spieler out of position 0,1%–23,7% bettet. **Wenn sich die Rolle ändert, ändert sich der Standard.** Denk daran, dass K-T-6 ein Board ist, das zum Open-Raiser passt – so wie in den früheren Spots ein Board-Typ 0,1% von 23,7% getrennt hat, fällt die Bet-Frequenz des Small Blinds auf Boards, die zum Caller passen.

@@ -159,6 +159,8 @@ Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo
 
 Procure a **ausência da linha "Set/Trinca"** no painel Mãos. Depois mude Jogador para "IP (BTN (caller))": a linha aparece com 6,3%. Ela resume quem tem o topo deste board. É gratuito, sem instalação e sem necessidade de conta.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote 3-bet: o BTN abre, o BB dá 3-bet e o BTN paga. Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Pote 3-bet**, **Posição que abre** BTN, **Posição que dá 3-bet** BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb) e a aposta grande no flop é de 75% do pote em vez de 66%, então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 **Q. Devo dar c-bet com A-K num flop baixo em pote de 3-bet?**
 
 A. Neste exemplo, A-K participa de um range que aposta quase inteiro: no 8-5-2, o tamanho grande recebe 97,8% do range, apesar de A-K não ter par nem draw imediato (só backdoor draws: uma wheel runner-runner e, nos três combos do mesmo naipe, um backdoor de flush). O motivo é o formato **polarizado — overpairs ou A-high, em duas parcelas de tamanho parecido**. Com quase nada no meio, o tamanho cresce e é usado amplamente. Os 58,3% do adversário que não fizeram par ajudam a explicar o contexto, mas não significam "58,3% folda": a resposta à aposta não está nesta resolução.

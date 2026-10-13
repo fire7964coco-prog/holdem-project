@@ -290,6 +290,8 @@ Every figure here comes up if you open the [GTO solver](/en/solver) and hit **St
 
 **Click back and forth with "King-High with a Ten"**, the previous spot. The player labels read "OOP (SB (Opener))" on both, the pot and stack are identical — and the matrix flips colour completely. It is the shortest demonstration in this series of what a board actually does. Free, no install, no account.
 
+> **Review your own hand from this spot** — This spot is an SB open, BB call pot (blind vs blind). If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, SB and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 **Q. Why does the same range change value from board to board?**
 
 A. Because a range is concentrated in particular cards. The small blind's opening range is thick with aces, kings and queens, so it gains on high boards; the big blind's calling range is thick with connectors and low suited hands, so it gains on low connected boards. Put the same two ranges on K♥T♦6♠ and the small blind has 55.3% equity; put them on 7♦6♦5♣ and it drops to 49.6%. The ranges did not move — only the board did.

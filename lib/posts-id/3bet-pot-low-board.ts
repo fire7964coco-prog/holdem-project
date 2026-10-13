@@ -158,6 +158,8 @@ Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah kerin
 
 Perhatikan bahwa **baris "Set/Trips" tidak muncul** pada panel Hand BB. Ganti Pemain ke IP (BTN), dan baris itu muncul dengan angka 6,3%. Satu baris tersebut menunjukkan siapa yang memiliki hand terkuat pada board ini. Gratis, tanpa instalasi, dan tanpa akun.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot 3-bet: BTN open, BB 3-bet, lalu BTN call. Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Pot 3-bet**, **Posisi pembuka** BTN, **Posisi yang 3-bet** BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb) dan ukuran bet besarnya di flop 75% pot, bukan 66%, jadi angkanya bisa berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 **Q. Apakah A-K perlu c-bet pada board rendah dalam pot 3-bet?**
 
 A. Dalam contoh ini, A-K ikut berada dalam range yang hampir selalu memakai bet besar. Frekuensi 97,8% adalah angka seluruh range, bukan angka khusus satu combo A-K. Pada 8-5-2, A-K belum pair dan tidak memiliki draw langsung, tetapi range BB **terpolarisasi: sebagian besar overpair atau Ace-High**. Hampir tidak ada hand sedang yang membutuhkan ukuran kecil. Porsi 58,3% range lawan yang belum pair membantu menjelaskan situasinya, tetapi bukan frekuensi fold; node respons lawan tidak dihitung.

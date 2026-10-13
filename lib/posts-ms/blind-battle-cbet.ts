@@ -196,6 +196,8 @@ Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board K-high dengan T
 
 Perhatikan label **OOP (SB (opener))** terlebih dahulu. Ia berbeza daripada **OOP (BB (caller))** dalam contoh awal; inilah maksud “peranan berubah”. Percuma, tanpa pemasangan atau akaun.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot SB open dan BB call (blind lawan blind). Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, SB dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 **Q. Patutkah SB sentiasa c-bet ketika blind lawan blind?**
 
 A. Tidak. Pada KT6, solver bet 67.4% dan check 32.6%. Itu berbeza daripada 0.1%–23.7% bet OOP dalam contoh single-raised BTN lawan BB. Peranan dan board kedua-duanya berubah. KT6 sesuai dengan opener, tetapi board yang sesuai dengan caller boleh menurunkan kekerapan SB dengan ketara.

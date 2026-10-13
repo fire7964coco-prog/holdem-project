@@ -244,6 +244,8 @@ Pour atteindre les chiffres du check-raise, tu dois aller une étape plus loin, 
 
 Ouvre ensuite le **Trainer GTO** dans la barre latérale : il te distribue une main selon les vrais poids des ranges et te montre combien de grosses blindes ton action te coûte. Gratuit, rien à installer, aucun compte.
 
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 ## FAQ
 
 **Q. Quand faut-il faire un check-raise au poker ?**

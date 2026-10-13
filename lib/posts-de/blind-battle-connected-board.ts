@@ -222,6 +222,8 @@ Die 9,6% entstehen, indem ein wenig Value mit ein paar Draws gemischt wird. Das 
 
 **Klick zwischen diesem Spot und „K-High mit einer Zehn“ hin und her**, dem vorherigen Spot. Die Spielerauswahl zeigt bei beiden „OOP (SB (Open-Raiser))“, Pot und Stack sind identisch – und die Matrix wechselt komplett die Farbe. Kürzer zeigt nichts in dieser Serie, was ein Board tatsächlich bewirkt. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 
+> **Deine eigene Hand aus diesem Spot analysieren** – Dieser Spot ist ein Pot mit SB-Open und BB-Call (Blind vs. Blind). Hast du dieselbe Situation selbst gespielt, öffne im Solver die [Handanalyse](https://solver.holdemmaster.com/?view=hand-review&lang=de), stell die Situation (**Open · Call**, SB und BB) und **Deine Position** ein, wähle **Deine 2 Karten** und die **3 Flopkarten** und tippe die Aktionen in der tatsächlichen Reihenfolge an, auch die deines Gegners. Dann siehst du, ob diese Entscheidung als **Beste Wahl**, **Vertretbar** oder **Spielzug prüfen** eingestuft wird. Die Handanalyse nutzt die Preflop-Charts der App (Online-Cash, 6-max, 100bb), daher können die Zahlen vom Beispiel oben abweichen, und für Pubspiele oder Turniere ist sie möglicherweise ungeeignet.
+
 **Q. Warum ändert dieselbe Range von Board zu Board ihren Wert?**
 
 A. Weil sich eine Range auf bestimmte Karten konzentriert. Die Opening-Range des Small Blinds steckt voller Asse, Könige und Damen, sie gewinnt also auf hohen Boards; die Calling-Range des Big Blinds steckt voller Connectors und niedriger suited Hände, sie gewinnt also auf niedrigen, verbundenen Boards. Leg dieselben beiden Ranges auf K♥T♦6♠, und der Small Blind hat 55,3% Equity; leg sie auf 7♦6♦5♣, und sie fällt auf 49,6%. Die Ranges haben sich nicht bewegt – nur das Board.

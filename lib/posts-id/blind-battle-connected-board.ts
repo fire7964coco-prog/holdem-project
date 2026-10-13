@@ -203,6 +203,8 @@ Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah terhu
 
 **Bandingkan bergantian dengan "Board K-high dengan T"**, contoh sebelumnya. Keduanya berlabel "OOP (SB (opener))", dengan pot dan stack sama, tetapi warna matriks berubah drastis. Perbandingan ini memperlihatkan secara langsung dampak tiga kartu board. Gratis, tanpa instalasi, dan tanpa akun.
 
+> **Tinjau hand Anda sendiri dari spot ini** — Spot ini adalah pot SB open dan BB call (blind vs blind). Jika Anda pernah memainkan hand dalam situasi yang sama, buka [Tinjau hand](https://solver.holdemmaster.com/?view=hand-review&lang=id) di solver, atur situasi (**Open · Call**, SB dan BB) serta **Posisi Anda**, pilih **2 kartu Anda** dan **3 kartu flop**, lalu tekan aksi sesuai urutan yang benar-benar terjadi, termasuk aksi lawan. Hasilnya menunjukkan apakah pilihan itu termasuk **Pilihan terbaik**, **Dapat diterima**, atau **Perlu ditinjau**. Peninjauan memakai chart preflop aplikasi (cash online 6-max, 100bb), jadi angkanya bisa berbeda dari contoh di atas, dan peninjauan ini mungkin tidak cocok untuk permainan di bar atau turnamen.
+
 **Q. Mengapa nilai range yang sama berubah pada board berbeda?**
 
 A. Komposisi range terkonsentrasi pada kartu tertentu. Range open SB banyak berisi As, King, Queen, dan broadway, sehingga lebih terbantu oleh board tinggi. Range call BB mempunyai beberapa connector dan hand rendah tambahan, sehingga lebih cocok dengan board rendah yang terhubung. Pada K♥T♦6♠, equity SB adalah 55,3%; pada 7♦6♦5♣, angkanya turun ke 49,6%. Input range tidak berubah, hanya board.

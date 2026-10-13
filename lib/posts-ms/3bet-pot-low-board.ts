@@ -159,6 +159,8 @@ Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah kering �
 
 Cari **baris “Set/Trips” yang tiada** pada panel BB. Tukar pemain kepada IP (BTN), dan baris itu muncul pada 6.3%. Itulah cara paling ringkas melihat siapa memegang tangan teratas pada board ini. Percuma, tanpa pemasangan atau akaun.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot 3-bet: BTN open, BB 3-bet, kemudian BTN call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Pot 3-bet**, **Kedudukan pembuka** BTN, **Kedudukan yang 3-bet** BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb) dan saiz bet besarnya di flop ialah 75% pot, bukan 66%, jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 **Q. Patutkah AK melakukan c-bet pada flop rendah dalam pot 3-bet?**
 
 A. AK boleh menyertai strategi bet. Pada 8-5-2, AK tiada pair atau draw yang boleh dilengkapkan dengan satu kad, tetapi saiz besar digunakan 97.8% bagi seluruh range. BB hampir terbahagi dua antara overpair dengan A-high, iaitu bentuk terpolarisasi. Angka itu bukan kekerapan AK secara individu. Sebanyak 58.3% range lawan tidak mendapat pair, tetapi itu bukan kadar fold; respons lawan belum dikira.

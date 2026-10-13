@@ -179,6 +179,8 @@ Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board dengan dua Ace 
 
 **Bandingkan dengan board berpasangan 663.** Kedua-duanya berpasangan, tetapi matriks mempunyai warna hampir bertentangan. Selepas meneliti contoh-contoh ini, soalan yang paling berguna ialah **range siapa yang paling sesuai dengan board**, bukan label board sahaja. Percuma, tanpa pemasangan atau akaun.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot SB open dan BB call (blind lawan blind). Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, SB dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 **Q. Apakah trips dalam poker, dan apakah bezanya dengan set?**
 
 A. Trips menggunakan satu kad tangan bersama dua kad rank sama di board. Pada AA6, kebanyakan tangan dengan satu ace menjadi trips, **kecuali A6 yang menjadi full house**. SB mempunyai 88 kombo (17.5%), BB 66 (13.1%). Set pula menggunakan pocket pair dengan satu kad rank sama di board. Walaupun 66 membentuk tiga enam di sini, pair ace di board menjadikan tangan terbaik akhirnya **full house**.

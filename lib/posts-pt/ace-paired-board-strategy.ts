@@ -171,6 +171,8 @@ Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo
 
 **Alterne com o board pareado 6-6-3.** Os dois têm par, mas as matrizes mostram cores opostas. A comparação também troca os papéis pré-flop e os ranges; percorrer os exemplos deixa uma conclusão: não basta perguntar **qual é o board**, é preciso perguntar **qual range ele favorece**. É gratuito, sem instalação e sem necessidade de conta.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote de open do SB com call do BB (blind vs blind). Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, SB e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 **Q. O que são trips no poker, e qual a diferença para set?**
 
 A. Trips é a trinca formada com duas cartas do mesmo valor no board e uma na sua mão. No A-A-6, a maioria das mãos com um único ás se encaixa — **A-6 forma full house, não trips**, pois também combina com o seis. Aqui, são 88 combos (17,5%) no small blind e 66 (13,1%) no big blind. O *set* se forma com um par na mão e mais uma carta daquele valor no board. O 6-6 faz essa trinca de seis, mas o par de ases do board completa a melhor mão de cinco cartas: um **full house**.

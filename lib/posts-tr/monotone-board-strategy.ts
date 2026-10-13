@@ -194,6 +194,8 @@ Bu spotta en alttaki el bazlı tablo dersin ta kendisi — **sonuna kadar kaydı
 
 Sonra kenar çubuğundan **GTO Trainer**'ı aç ve bu board'da sana bir floş dağıtmasına izin ver: bir hamle seçip EV kaybını görmek, bir tablonun seni ikna etmesinden daha hızlıdır. Ücretsiz, kurulum yok, hesap yok.
 
+> **Bu spotta oynadığın eli analiz et** — Bu spot, BTN'in open yapıp BB'nin call ettiği bir pottur. Aynı durumu kendin oynadıysan solver'daki [El analizi](https://solver.holdemmaster.com/?view=hand-review&lang=tr) ekranını aç, durumu (**Open · Call**, BTN ve BB) ve **Senin pozisyonun** alanını ayarla, **2 kartın** ve **3 flop kartı** alanlarından kartları seç, sonra rakibininkiler dahil aksiyonlara gerçekte oynandığı sırayla dokun. Bu seçimin **En iyi oyun**, **Kabul edilebilir** ya da **Bu oyunu tekrar incele** gruplarından hangisine girdiğini gösterir. El analizi, uygulamanın preflop chart'larını (online 6-max cash, 100bb) temel aldığı için sayılar yukarıdaki örnekten farklı olabilir; ayrıca ev oyunlarına veya turnuvalara uygun olmayabilir.
+
 ## Sıkça sorulan sorular
 
 **Q. Monoton flop nedir?**

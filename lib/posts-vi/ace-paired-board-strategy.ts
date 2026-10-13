@@ -186,6 +186,8 @@ Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễ
 
 **Hãy bấm qua lại với board có đôi 6-6-3.** Cả hai đều là board có đôi mà ma trận lại mang màu ngược nhau. Đi qua các Spot mẫu một lượt, bạn sẽ còn lại một kết luận: trước hết đừng nhìn **đó là board gì**, mà nhìn **board này gắn với range của ai**. Miễn phí, không cần cài đặt, không cần tài khoản.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot SB open và BB call (blind đối đầu blind). Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, SB và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 **Q. Trips và set trong poker khác nhau thế nào?**
 
 A. Trips (1 lá trên tay + board có đôi) hình thành khi board có hai lá cùng hạng và bạn cầm lá thứ ba của hạng đó. Trên A-A-6, phần lớn tay cầm một lá A đều thuộc nhóm này (**A-6 không phải trips mà là cù lũ** — nó còn ghép đôi với lá 6 của board), và ở spot này là 88 combo (17,5%) cho small blind và 66 (13,1%) cho big blind. Set (cầm đôi trên tay + 1 lá trên board) hình thành theo chiều ngược lại, từ một đôi tẩy cộng thêm một lá cùng hạng trên board. Cả hai đều là sám cô (three of a kind). Lưu ý 6-6 ở đây có tạo set với lá 6 của board, nhưng đôi A của board nằm trên nó, nên bài cuối cùng là **cù lũ**.

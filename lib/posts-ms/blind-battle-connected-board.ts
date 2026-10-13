@@ -204,6 +204,8 @@ Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah bersambu
 
 **Bandingkan terus dengan “Board K-high dengan T”.** Label pemain kedua-duanya **OOP (SB (opener))**, pot dan stack sama, tetapi warna matriks berubah. Itulah demonstrasi ringkas kesan board. Percuma, tanpa pemasangan atau akaun.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot SB open dan BB call (blind lawan blind). Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, SB dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 **Q. Mengapa nilai range yang sama berubah mengikut board?**
 
 A. Range tertumpu pada jenis kad tertentu. SB mempunyai banyak ace, king, queen dan Broadway, sementara BB menyimpan lebih banyak connector serta tangan rendah suited. Pada K♥T♦6♠, equity SB 55.3%; pada 7♦6♦5♣, ia turun kepada 49.6%. Range preflop sama, hanya board berubah.

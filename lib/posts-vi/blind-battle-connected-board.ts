@@ -211,6 +211,8 @@ Mọi con số ở đây sẽ hiện ra nếu bạn mở [GTO poker solver miễ
 
 **Bấm qua lại với "Board K-high có lá 10"**, spot trước. Nhãn người chơi ở cả hai đều là "OOP (SB (bên open))", pot và stack y hệt — vậy mà ma trận đổi màu hoàn toàn. Đây là minh chứng ngắn nhất trong loạt bài này về việc board thực sự làm gì. Miễn phí, không cần cài đặt, không cần tài khoản.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot SB open và BB call (blind đối đầu blind). Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, SB và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 **Q. Vì sao cùng một range lại đổi giá trị theo từng board?**
 
 A. Vì range tập trung vào những lá bài nhất định. Range open của small blind dày A, K và Q, nên được lợi trên board cao; range call của big blind dày các tay liền nhau và các tay thấp đồng chất, nên được lợi trên board thấp liền nhau. Đặt cùng hai range đó lên K♥10♦6♠ thì small blind có 55,3% equity; đặt lên 7♦6♦5♣ thì rơi xuống 49,6%. Range không hề dịch chuyển — chỉ board thay đổi.

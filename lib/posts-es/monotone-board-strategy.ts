@@ -206,6 +206,8 @@ En este spot la tabla por mano que hay abajo es la lección entera — **bájala
 
 Después abre el **Entrenador GTO** en la barra lateral y deja que te reparta un color en este board: elegir una acción y ver el costo en EV convence más rápido que una tabla. Gratis, sin instalar nada, sin cuenta.
 
+> **Revisa tu propia mano en este spot** — Este spot es un bote en el que BTN abre y BB paga. Si jugaste una mano en la misma situación, abre [Revisar mano](https://solver.holdemmaster.com/?view=hand-review&lang=es) en el solver, elige la situación (**Open · Call**, BTN y BB) y **Tu posición**, selecciona **Tus 2 cartas** y las **3 cartas del flop**, y marca las acciones en el orden en que se jugaron, incluidas las de tu rival. Te dice si esa decisión fue **Mejor jugada**, **Aceptable** o **Revisar jugada**. La revisión usa las tablas preflop de la app (cash online de 6 jugadores, 100bb), así que sus números pueden diferir del ejemplo de arriba, y puede no ser adecuada para partidas de bar o torneos.
+
 ## Preguntas frecuentes
 
 **Q. ¿Qué es un board monotone?**

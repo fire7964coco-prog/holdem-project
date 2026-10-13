@@ -338,6 +338,8 @@ To reach the check-raise numbers you have to go one step further, because the st
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and shows how many big blinds your action costs. Free, nothing to install, no account.
 
+> **Review your own hand from this spot** — This spot is a BTN open, BB call pot. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, BTN and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 ## FAQ
 
 **Q. When should you check-raise in poker?**

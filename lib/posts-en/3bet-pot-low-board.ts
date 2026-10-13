@@ -226,6 +226,8 @@ Every figure here comes up if you open the [GTO solver](/en/solver) and hit **St
 
 Look for the **missing "Set/Trips" row** in the hand panel. Then switch the player to IP (BTN) and it appears at 6.3%. That one line is the whole story of who holds the top of this board. Free, no install, no account.
 
+> **Review your own hand from this spot** — This spot is a 3-bet pot: BTN opens, BB 3-bets and BTN calls. If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**3-bet pot**, **Opening seat** BTN, **3-betting seat** BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), and its larger flop bet is 75% of the pot rather than 66%, so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 **Q. Should you c-bet A-K on a low board in a three-bet pot?**
 
 A. Yes. On 8-5-2 A-K has no pair and no immediate draw (only backdoor draws — a runner-runner wheel, plus a backdoor flush for three suited combos), yet the solver puts 97.8% of the range into the large size. The reason is that the big blind's range is **polarized — overpairs or ace-high, split roughly in half** — and when the middle is empty the size goes up, with almost the entire range using it. That 58.3% of the opponent's range failed to pair helps, but do not read it as "58.3% folds"; the response node is not in this solve.

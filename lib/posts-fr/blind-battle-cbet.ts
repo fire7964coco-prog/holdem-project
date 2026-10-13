@@ -205,6 +205,8 @@ Chaque chiffre ici apparaît si tu ouvres le [solver poker gratuit](/fr/solver) 
 
 Regarde d'abord les étiquettes de joueurs en haut : **« OOP (SB (ouvreur)) »**. Une fois que tu vois que c'est différent du « OOP (BB (caller)) » des spots précédents, ce que cet article veut dire par « le rôle a changé » devient immédiatement clair. Gratuit, rien à installer, aucun compte.
 
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par la SB et payé par la BB (blind vs blind). Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, SB et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 **Q. La petite blinde doit-elle toujours c-bet en blind contre blind ?**
 
 A. Pas toujours. Sur ce board, le solver mise 67,4 % et laisse 32,6 % en check. Mais c'est un autre monde qu'un pot simplement relancé ordinaire, où le joueur hors de position mise 0,1 %–23,7 %. **Quand le rôle change, la stratégie par défaut change.** Garde en tête que K-10-6 est un board qui convient à l'ouvreur : de la même façon qu'un type de board séparait 0,1 % de 23,7 % dans les spots précédents, la fréquence de mise de la petite blinde baisse sur les boards qui conviennent au caller.

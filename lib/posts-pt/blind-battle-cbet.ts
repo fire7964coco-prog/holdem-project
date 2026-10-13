@@ -198,6 +198,8 @@ Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo
 
 Confira primeiro o seletor Jogador no alto: **"OOP (SB (open-raiser))"**. A diferença para o "OOP (BB (caller))" dos exemplos anteriores mostra, na própria tela, o que significa a mudança de papel. É gratuito, sem instalação e sem necessidade de conta.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote de open do SB com call do BB (blind vs blind). Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, SB e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 **Q. O small blind deve dar c-bet sempre contra o big blind?**
 
 A. Não. Neste board, o solver aposta 67,4% e deixa 32,6% no check. Ainda assim, é bem diferente dos potes comuns com um único aumento, nos quais o jogador fora de posição aposta 0,1%–23,7%. **Quando o papel muda, o ponto de partida muda.** Lembre que K-T-6 favorece quem abriu: assim como a textura separou 0,1% de 23,7% nos exemplos anteriores, a frequência do small blind cai nos boards que favorecem quem pagou.

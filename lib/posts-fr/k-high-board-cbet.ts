@@ -168,6 +168,8 @@ Ouvre le [solver poker gratuit](/fr/solver), va dans **Spots d'étude → Board 
 
 Pour t'entraîner sur ce spot au lieu de le lire, ouvre le **Trainer GTO** dans la barre latérale : il te distribue une main selon les vrais poids de la range, tu choisis une action, et il te montre combien de grosses blindes ce choix te coûte. Gratuit, rien à installer, aucun compte.
 
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+
 ## FAQ
 
 **Q. Pourquoi la grosse blinde ne mise-t-elle jamais sur K-8-3 ?**

@@ -178,6 +178,8 @@ Untuk spot ini, jadual setiap tangan di bahagian bawah menyimpan pelajaran utama
 
 Kemudian buka **Trainer GTO** pada bar sisi dan cuba keputusan dengan flush pada board ini. Memilih tindakan lalu melihat kos EV membantu menghubungkan angka dengan keputusan. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
+> **Semak hand anda sendiri dari spot ini** — Spot ini ialah pot BTN open dan BB call. Jika anda pernah bermain hand dalam situasi yang sama, buka [Semak hand](https://solver.holdemmaster.com/?view=hand-review&lang=ms) dalam solver, tetapkan situasi (**Open · Call**, BTN dan BB) serta **Kedudukan anda**, pilih **2 kad anda** dan **3 kad flop**, kemudian tekan tindakan mengikut urutan sebenar, termasuk tindakan lawan. Hasilnya menunjukkan sama ada pilihan itu dinilai sebagai **Pilihan terbaik**, **Boleh diterima** atau **Perlu disemak**. Semakan ini menggunakan chart preflop aplikasi (cash dalam talian 6-max, 100bb), jadi angkanya mungkin berbeza daripada contoh di atas, dan semakan ini mungkin tidak sesuai untuk permainan di pub atau kejohanan.
+
 ## Soalan Lazim
 
 **Q. Apakah flop monotone?**

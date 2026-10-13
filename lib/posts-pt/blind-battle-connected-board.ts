@@ -202,6 +202,8 @@ Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo
 
 **Alterne com "Board K-high com um T"**, o exemplo anterior. O seletor Jogador mostra "OOP (SB (open-raiser))" nos dois, e pote e stack são idênticos. Mesmo assim, a matriz muda completamente de cor. É a demonstração mais direta da série do que um board pode mudar. É gratuito, sem instalação e sem necessidade de conta.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote de open do SB com call do BB (blind vs blind). Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, SB e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 **Q. Por que o mesmo range muda de valor de um board para outro?**
 
 A. Porque cada range concentra determinadas cartas. O range de abertura do small blind tem muitos ases, reis e damas, por isso ganha força em boards altos. O range de call do big blind tem muitos conectores e mãos baixas suited, por isso ganha força em boards baixos e conectados. No K♥T♦6♠, o small blind tem 55,3% de equity; com os mesmos dois ranges no 7♦6♦5♣, cai para 49,6%. Os ranges não mudaram: só o board.

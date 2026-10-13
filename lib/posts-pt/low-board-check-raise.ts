@@ -233,6 +233,8 @@ Para chegar aos números de check-raise, é preciso ir além, pois o exemplo pr�
 
 Depois, abra o **Treinador GTO** na barra lateral: ele distribui mãos usando os pesos reais dos ranges e mostra quantos big blinds sua decisão custa. É gratuito, sem instalação e sem conta.
 
+> **Revise sua própria mão neste spot** — Este spot é um pote de open do BTN com call do BB. Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, BTN e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+
 ## Perguntas frequentes
 
 **Q. Quando dar check-raise neste tipo de flop?**

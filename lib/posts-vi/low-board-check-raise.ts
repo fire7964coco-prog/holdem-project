@@ -249,6 +249,8 @@ Muốn tới được các con số check-raise, bạn phải đi thêm một b�
 
 Sau đó mở **Trainer GTO** ở thanh bên: nó chia cho bạn một tay bài theo đúng trọng số range thật và cho biết hành động của bạn mất bao nhiêu big blind (**EV mất**). Miễn phí, không cần cài đặt, không cần tài khoản.
 
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot BTN open và BB call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, BTN và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+
 ## Câu hỏi thường gặp
 
 **Q. Khi nào nên check-raise trong poker?**

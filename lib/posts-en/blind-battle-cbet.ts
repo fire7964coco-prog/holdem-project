@@ -288,6 +288,8 @@ Every figure here comes up if you open the [GTO solver](/en/solver) and hit **St
 
 Look at the player labels across the top first: **"OOP (SB (Opener))"**. Once you see that it differs from the earlier spots' "OOP (BB (Caller))", what this article means by "the role changed" lands immediately. Free, no install, no account.
 
+> **Review your own hand from this spot** — This spot is an SB open, BB call pot (blind vs blind). If you have played the same situation, open the solver's [Hand review](https://solver.holdemmaster.com/?view=hand-review&lang=en), set the situation (**Open · Call**, SB and BB) and **Your seat**, pick **Your 2 cards** and the **3 flop cards**, then enter the actions in the order they were actually played, including your opponent's. Hand review then shows whether that choice is rated **Best play**, **Acceptable** or **Review this play**. Hand review uses the app's preflop charts (online 6-max cash, 100bb), so its numbers can differ from the example above, and it may not suit pub games or tournaments.
+
 **Q. Should the small blind always c-bet blind versus blind?**
 
 A. Not always. On this board the solver bets 67.4% and leaves 32.6% as a check. But that is a different world from an ordinary single-raised pot, where the out-of-position player bets 0.1%–23.7%. **When the role changes, the default changes.** Bear in mind that K-T-6 is a board that suits the opener — just as one board type split 0.1% from 23.7% in the earlier spots, the small blind's betting frequency drops on boards that fit the caller.
