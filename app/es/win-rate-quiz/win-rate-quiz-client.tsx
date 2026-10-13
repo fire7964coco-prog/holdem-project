@@ -166,6 +166,11 @@ const ES_UI: QuizUI = {
   shareCopied: "Copiado. Quien abra el enlace verá esta mano desde el preflop con las mismas cartas y la misma equity.",
   shareManual: "No se pudo copiar automáticamente. Copia la dirección de abajo.",
   sharedActive: "Mano compartida · mismas cartas y misma equity que quien la envió (no cuenta para tu historial del quiz)",
+  rangeToggle: "Ver el rango del rival",
+  rangeTitle: "Rango del rival — manos que encajan con la acción hasta ahora",
+  rangeCombos: (pre, cur, pct) => `Preflop ${pre} combos → ahora ${cur} combos (queda el ${pct}%)`,
+  rangeLegend: ["Sigue en el rango (más oscuro = más)", "Descartada por la acción", "Nunca estuvo en el rango", "Mano real"],
+  rangeNote: "Parte del rango preflop de su posición y, calle a calle, descarta cada mano que habría actuado distinto según las reglas del rival. La equity de arriba usa este mismo rango. Se quitan los combos que chocan con tu mano o el board.",
 
   ruleTitle: "Qué supone este simulador",
   ruleText: (style) => (

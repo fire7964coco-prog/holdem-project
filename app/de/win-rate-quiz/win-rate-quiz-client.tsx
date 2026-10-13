@@ -174,6 +174,11 @@ const DE_UI: QuizUI = {
   shareCopied: "Kopiert. Wer den Link öffnet, sieht diese Hand ab Preflop mit denselben Karten und derselben Equity.",
   shareManual: "Automatisches Kopieren ist blockiert. Kopiere die Adresse unten.",
   sharedActive: "Geteilte Hand · dieselben Karten und dieselbe Equity wie beim Absender (zählt nicht zu deiner Quiz-Statistik)",
+  rangeToggle: "Range des Gegners anzeigen",
+  rangeTitle: "Range des Gegners — Hände, die zur bisherigen Action passen",
+  rangeCombos: (pre, cur, pct) => `Preflop ${pre} Kombos → jetzt ${cur} Kombos (${pct}% übrig)`,
+  rangeLegend: ["Noch drin (dunkler = mehr)", "Durch die Action raus", "Nie in der Range", "Tatsächliche Hand"],
+  rangeNote: "Startet mit der Preflop-Range der Position und streicht Street für Street jede Hand, die nach den Gegnerregeln anders gehandelt hätte. Die Equity oben nutzt genau diese Range. Kombos, die mit deiner Hand oder dem Board kollidieren, sind entfernt.",
 
   ruleTitle: "Welche Annahmen dieser Simulator trifft",
   ruleText: (style) => (

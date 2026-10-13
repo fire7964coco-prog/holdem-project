@@ -153,6 +153,11 @@ const EN_UI: QuizUI = {
   shareCopied: "Copied. Anyone who opens the link plays this hand from preflop with the same cards and the same win rates.",
   shareManual: "Automatic copy is blocked. Copy the address below.",
   sharedActive: "Shared hand · same cards and win rates as the sender (not added to your quiz stats)",
+  rangeToggle: "Show opponent range",
+  rangeTitle: "Opponent range — hands that fit the action so far",
+  rangeCombos: (pre, cur, pct) => `Preflop ${pre} combos → now ${cur} combos (${pct}% left)`,
+  rangeLegend: ["Still in (darker = more)", "Removed by the action", "Never in range", "Actual hand"],
+  rangeNote: "Starts from the seat's preflop range and removes, street by street, every hand that would have acted differently under the opponent rules. The win rate above uses this same range. Combos that clash with your hand or the board are left out.",
 
   ruleTitle: "What this simulator assumes",
   ruleText: (style) => (

@@ -73,7 +73,7 @@ export type Action = "fold" | "call" | "raise";
 /**
  * 상대 성향 (S-034 2차 ② · 2026-10-12). 판마다 테이블 전원에게 같은 성향을 준다.
  * ★성향마다 규칙이 다를 뿐 **여전히 «홀카드 + 보드 → 액션» 확정 규칙**이다 — 그래야 아래
- *   eligibleHoles가 그 규칙으로 레인지를 좁혀 «보이는 액션 = 계산 근거»가 유지된다.
+ *   eligibleWeighted가 그 규칙으로 레인지를 좁혀 «보이는 액션 = 계산 근거»가 유지된다.
  *   (무작위 블러프를 넣으면 레인지가 확률 가중이 돼야 하고 화면에 규칙을 한 줄로 못 적는다.)
  * ★체크레이즈는 없다 — 상대마다 스트리트당 규칙대로 한 번만 액션하고, 체크한 뒤 다시 응수하는 단계가 엔진에 없다.
  */
@@ -164,7 +164,7 @@ function expandPool(range: WeightedHole[], deadKeys: Set<number>): NCard[][] {
  *   실측 결과 내 승률이 최대 +65%p 부풀려졌고 콜/폴드 판정이 정반대로 뒤집혔다.
  *   레이즈·콜은 폴드와 똑같이 **공개된 정보**다. 버리면 안 된다.
  */
-function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[], style: OppStyle): NCard[][] {
+function eligibleWeighted(deadKeys: Set<number>, history: ActionStep[], preflop: WeightedHole[], style: OppStyle): WeightedHole[] {
   // ★2026-10-11: 출발점이 «남은 카드 전부(1,081쌍)»에서 **그 상대의 프리플랍 레인지**로 바뀌었다.
   //   레이즈·콜이 공개 정보인 것처럼, 프리플랍에 팟에 들어왔다는 것도 공개 정보다.
   const kept: WeightedHole[] = [];
@@ -176,7 +176,54 @@ function eligibleHoles(deadKeys: Set<number>, history: ActionStep[], preflop: We
     }
     if (ok) kept.push(c);
   }
-  return expandPool(kept, deadKeys);
+  return kept;
+}
+
+// ── 상대 레인지 13×13 (S-034 3차 ② · 2026-10-13) ─────────────────────────────
+
+/** 격자 칸 번호 — 행·열 = A(0)…2(12). 대각선 페어 · 오른쪽 위 수딧(행 = 높은 카드) · 왼쪽 아래 오프수딧(열 = 높은 카드) */
+export function gridIndex(a: NCard, b: NCard): number {
+  const hi = Math.max(a[0], b[0]), lo = Math.min(a[0], b[0]);
+  const r = 14 - hi, c = 14 - lo;
+  if (hi === lo) return r * 13 + r;
+  return a[1] === b[1] ? r * 13 + c : c * 13 + r;
+}
+
+/**
+ * 한 상대의 레인지를 13×13으로 접는다 — 칸마다 «그 모양의 살아 있는 콤보 중 몇 할이 남았나»(0~1, 빈도 가중).
+ * -1 = 그 모양의 콤보가 내 패·보드에 전부 막혔다(셀 수 없음).
+ * ★pre(프리플랍 레인지)와 cur(액션까지 맞춘 레인지)를 **같은 죽은 카드**로 센다 — 그래야 두 격자의
+ *   차이가 «액션 때문에 빠진 것»만 보여 준다(보드에 깔린 카드 때문에 줄어든 건 양쪽이 같이 줄어든다).
+ */
+function foldGrid(range: WeightedHole[], deadKeys: Set<number>): { cells: number[]; combos: number } {
+  const alive = new Array<number>(169).fill(0);
+  for (let a = 2; a <= 14; a++)
+    for (let sa = 0; sa < 4; sa++)
+      for (let b = 2; b <= a; b++)
+        for (let sb = 0; sb < 4; sb++) {
+          if (a === b && sb <= sa) continue;
+          if (deadKeys.has(a * 4 + sa) || deadKeys.has(b * 4 + sb)) continue;
+          alive[gridIndex([a, sa], [b, sb])]++;
+        }
+  const sum = new Array<number>(169).fill(0);
+  let combos = 0;
+  for (const c of range) {
+    if (deadKeys.has(keyOf(c.hole[0])) || deadKeys.has(keyOf(c.hole[1]))) continue;
+    sum[gridIndex(c.hole[0], c.hole[1])] += c.w / 100;
+    combos += c.w / 100;
+  }
+  return { cells: sum.map((x, i) => (alive[i] ? x / alive[i] : -1)), combos };
+}
+
+/** 한 상대의 스트리트 레인지 — 화면 격자용 */
+export interface RangeGrid {
+  slot: number;
+  /** 프리플랍 레인지(이 스트리트의 죽은 카드 제외) */
+  pre: number[];
+  /** 지금까지의 액션까지 맞춘 레인지 — 승률 계산이 쓰는 것과 같은 레인지 */
+  cur: number[];
+  preCombos: number;
+  curCombos: number;
 }
 
 // ── 난수 ─────────────────────────────────────────────────────────────────────
@@ -548,6 +595,8 @@ export interface StreetRecord {
    * ★null = 아직 계산 전. 첫 숫자를 빨리 보여 주려고 화면 승률 4스트리트를 먼저 다 낸 뒤에 채운다.
    */
   known: { slots: number[]; equity: number[]; hero: EquitySplit } | null;
+  /** 이 스트리트 액션 뒤에도 남은 상대들의 레인지 격자 (S-034 3차 ②) */
+  ranges: RangeGrid[];
   /** 이 승률이 자리별 프리플랍 레인지 기준인지(프리플랍), 그 위에 액션까지 맞춘 레인지 기준인지(플랍~) */
   basis: "seat" | "range";
   /** 팟오즈만 놓고 봤을 때의 판정 */
@@ -666,6 +715,8 @@ export function runHand(
 
     // ── 내 승률: 상대 패를 모른다는 전제로 계산한다 (실제 딜된 패는 쓰지 않는다)
     let split: EquitySplit = { win: 100, tie: 0, lose: 0, equity: 100 }; // 전원 폴드 = 팟은 내 것
+    /** 상대 인덱스 → 액션까지 맞춘 레인지(승률 계산에 쓴 것) — 격자가 다시 거르지 않게 */
+    const keptBy = new Map<number, WeightedHole[]>();
     const basis: "seat" | "range" = s === 0 ? "seat" : "range";
     if (live.length) {
       if (s === 0) {
@@ -676,13 +727,24 @@ export function runHand(
         // ★상대마다 «자기 프리플랍 레인지 ∩ 자기 액션 이력»으로 레인지를 만든다.
         //   한 명이 레이즈하고 한 명이 콜했으면 두 사람의 레인지는 서로 다르다.
         const dead = new Set([...hN, ...boardNow].map(keyOf));
-        const pools = live.map((i) => eligibleHoles(dead, history[i], oppRanges[i], style));
+        const pools = live.map((i) => {
+          const kept = eligibleWeighted(dead, history[i], oppRanges[i], style);
+          keptBy.set(i, kept);
+          return expandPool(kept, dead);
+        });
         split = heroEquity(heroHand, board.slice(0, shown), pools, SAMPLES.postflop, rng);
       }
     }
     const equity = split.equity;
 
     liveAt.push([...live]);
+    // 격자 — 남아 있는 상대만. 승률 계산과 같은 함수(eligibleWeighted)로 접으니 «보이는 레인지 = 계산 레인지»
+    const gridDead = new Set([...hN, ...boardNow].map(keyOf));
+    const ranges: RangeGrid[] = live.map((i) => {
+      const pre = foldGrid(oppRanges[i], gridDead);
+      const cur = s === 0 ? pre : foldGrid(keptBy.get(i) ?? eligibleWeighted(gridDead, history[i], oppRanges[i], style), gridDead);
+      return { slot: oppSlots[i], pre: pre.cells, cur: cur.cells, preCombos: pre.combos, curCombos: cur.combos };
+    });
 
     // ── 팟오즈
     const potBefore = pot;
@@ -709,6 +771,7 @@ export function runHand(
       equity,
       split,
       known: null,
+      ranges,
       basis,
       verdict: required === null ? "free" : equity >= required ? "call" : "fold",
     });

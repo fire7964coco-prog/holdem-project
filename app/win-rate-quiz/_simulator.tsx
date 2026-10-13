@@ -16,8 +16,8 @@ import {
 } from "./_table";
 import type { NCard } from "./_ranges";
 import {
-  runHand, heroOuts, ruleOf24, SAMPLES, OPP_STYLES,
-  type HandResult, type StreetRecord, type Action, type EquitySplit, type OppStyle,
+  runHand, heroOuts, ruleOf24, gridIndex, SAMPLES, OPP_STYLES,
+  type RangeGrid, type HandResult, type StreetRecord, type Action, type EquitySplit, type OppStyle,
 } from "./_engine";
 import type { HandMessage, HandRequest } from "./_engine.worker";
 import { solverLinkFor, type SolverLinkInfo } from "./_solver-link";
@@ -254,6 +254,17 @@ export interface QuizUI {
   shareManual: string;
   /** 링크로 연 판을 돌리는 중 — 테이블 위 한 줄 */
   sharedActive: string;
+  /**
+   * 상대 레인지 13×13 (S-034 3차 ② · 2026-10-13) — 프리플랍 자리 레인지에서 액션 규칙과 안 맞는 패를 지운 것.
+   * 승률 계산이 쓰는 레인지와 같다.
+   */
+  rangeToggle: string;
+  rangeTitle: string;
+  /** 프리플랍 콤보 수 → 지금 콤보 수 · 남은 비율(%) — 콤보는 빈도 가중이라 반올림한 정수 */
+  rangeCombos: (pre: string, cur: string, pct: string) => string;
+  /** 범례 — 남음 · 액션으로 빠짐 · 처음부터 없음 · (패를 깠을 때) 실제 패 */
+  rangeLegend: readonly [string, string, string, string];
+  rangeNote: string;
   /** 판이 끝난 뒤 결과 아래 탭 3개 — 복기 · 승률 흐름(꺾은선) · 마지막 스트리트(승률·팟오즈·산출 근거) */
   resultTabs: readonly [string, string, string];
   /**
@@ -623,6 +634,39 @@ function CustomEditor({ ui, size, draft, setDraft, onStart, onClose, onOff }: {
   );
 }
 
+// ── 상대 레인지 격자 (S-034 3차 ②) ───────────────────────────────────────
+const GRID_RANKS = "AKQJT98765432";
+const CARD_RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+const CARD_SUITS = ["♠", "♥", "♦", "♣"];
+/** 화면 카드 → 엔진 카드 (격자 칸 찾기용) */
+const cardToN = (c: QuizCard): NCard => [CARD_RANKS.indexOf(c.rank) + 2, CARD_SUITS.indexOf(c.suit)];
+
+function RangeGridView({ g, actual, ui }: { g: RangeGrid; actual: number | null; ui: QuizUI }) {
+  return (
+    <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+      {g.cur.map((cur, i) => {
+        const r = Math.floor(i / 13), c = i % 13;
+        const label = r === c ? GRID_RANKS[r] + GRID_RANKS[c] : r < c ? `${GRID_RANKS[r]}${GRID_RANKS[c]}s` : `${GRID_RANKS[c]}${GRID_RANKS[r]}o`;
+        const pre = g.pre[i];
+        // 남음 = 금색(진할수록 많이) · 액션으로 빠짐 = 붉은 기 · 처음부터 없음(또는 막힘) = 빈 칸
+        const style = cur > 0
+          ? { background: mix(GOLD, Math.round(30 + 70 * Math.min(1, cur))), color: "var(--wrq-accent-ink)" }
+          : pre > 0
+            ? { background: mix(BAD, 16), color: mix(BAD, 70) }
+            : { background: "hsl(var(--background))", color: "hsl(var(--muted-foreground) / 0.45)" };
+        return (
+          <div key={i} title={label}
+            className="aspect-square rounded-[2px] flex items-center justify-center text-[7px] sm:text-[8px] font-bold leading-none tracking-[-0.04em] overflow-hidden"
+            style={{ ...style, outline: actual === i ? "2px solid hsl(var(--foreground))" : "none", outlineOffset: -1 }}>
+            {label}
+          </div>
+        );
+      })}
+      <span className="sr-only">{ui.rangeTitle}</span>
+    </div>
+  );
+}
+
 // ── 본체 ────────────────────────────────────────────────────────────────────
 export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   const [preflopCount, setPreflopCount] = useState(3);
@@ -658,6 +702,9 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   /** 지금 판이 링크로 연 판인가 — 테이블 위 한 줄 */
   const [shared, setShared] = useState(false);
   /** 공유 버튼 상태 — 복사됨 · 복사 실패(주소를 보여 준다) */
+  /** 상대 레인지 격자 펼침 · 여러 명이면 누구를 보나(좌석 slot) */
+  const [showRange, setShowRange] = useState(false);
+  const [rangeSlot, setRangeSlot] = useState<number | null>(null);
   const [shareState, setShareState] = useState<{ kind: "copied" | "manual"; url: string } | null>(null);
   const [guess, setGuess] = useState(50);
   const [answers, setAnswers] = useState<Record<number, QuizAnswer>>({});
@@ -1664,6 +1711,53 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         )}
       </div>
       )}
+
+      {/* 상대 레인지 13×13 (S-034 3차 ②) — 접어 두고 누르면 편다(폰 세로를 아낀다). 이 스트리트 액션 뒤에 남은 상대만 */}
+      {showStreet && rec.ranges.length > 0 && (() => {
+        const g = rec.ranges.find((x) => x.slot === rangeSlot) ?? rec.ranges[0];
+        const idx = slotToIdx[g.slot];
+        const hole = cardsUp && idx !== undefined ? sim.hands[idx] : null;
+        const actual = hole ? gridIndex(cardToN(hole[0]), cardToN(hole[1])) : null;
+        const round = (x: number) => fmt(Math.round(x));
+        return (
+          <div className="rounded-xl px-4 py-2.5 mt-3" style={{ background: "hsl(var(--muted))" }}>
+            <button onClick={() => setShowRange((v) => !v)} aria-expanded={showRange}
+              className="w-full flex justify-between items-center text-[11px] font-bold text-muted-foreground">
+              <span>🔎 {ui.rangeToggle}</span><span aria-hidden>{showRange ? "▲" : "▼"}</span>
+            </button>
+            {showRange && (
+              <div className="mt-2">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1.5">{ui.rangeTitle}</div>
+                {rec.ranges.length > 1 && (
+                  <div className="flex flex-wrap gap-1 mb-2" role="group" aria-label={ui.rangeTitle}>
+                    {rec.ranges.map((x) => (
+                      <button key={x.slot} onClick={() => setRangeSlot(x.slot)} aria-pressed={x.slot === g.slot}
+                        className="px-2 py-0.5 rounded-full text-[11px] font-bold border"
+                        style={x.slot === g.slot
+                          ? { background: GOLD, borderColor: GOLD, color: "var(--wrq-accent-ink)" }
+                          : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
+                        {nameOf(x.slot)}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                <p className="text-[11px] text-foreground tabular-nums mb-1.5">
+                  <b>{nameOf(g.slot)}</b> · {ui.rangeCombos(round(g.preCombos), round(g.curCombos),
+                    g.preCombos > 0 ? Math.round((g.curCombos / g.preCombos) * 100).toString() : "0")}
+                </p>
+                <RangeGridView g={g} actual={actual} ui={ui} />
+                <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1.5 text-[10px] text-muted-foreground">
+                  <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ background: GOLD }} />{ui.rangeLegend[0]}</span>
+                  <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ background: mix(BAD, 16) }} />{ui.rangeLegend[1]}</span>
+                  <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px] border" style={{ background: "hsl(var(--background))" }} />{ui.rangeLegend[2]}</span>
+                  {actual !== null && <span className="inline-flex items-center gap-1"><i className="w-2.5 h-2.5 rounded-[2px]" style={{ outline: "2px solid hsl(var(--foreground))", outlineOffset: -1 }} />{ui.rangeLegend[3]}</span>}
+                </div>
+                <p className="text-[10.5px] text-muted-foreground leading-snug mt-1.5">{ui.rangeNote}</p>
+              </div>
+            )}
+          </div>
+        );
+      })()}
 
       {/* 솔버로 보기 (S-034 2차 ⑥) — 탭과 상관없이 판이 끝나면 오른쪽 칸 맨 아래 */}
       {endView && solverLink && (

@@ -166,6 +166,11 @@ const ZH_UI: QuizUI = {
   shareCopied: "已复制。打开链接的人会从翻牌前开始看这手牌，牌和胜率都和你一样。",
   shareManual: "无法自动复制，请手动复制下面的地址。",
   sharedActive: "别人分享的一手 · 牌和胜率与分享者相同(不计入你的测验记录)",
+  rangeToggle: "查看对手范围",
+  rangeTitle: "对手范围 — 符合到目前为止行动的手牌",
+  rangeCombos: (pre, cur, pct) => `翻牌前 ${pre} 个组合 → 现在 ${cur} 个组合（剩 ${pct}%）`,
+  rangeLegend: ["仍在范围内（颜色越深越多）", "因行动被排除", "本来就不在范围内", "实际手牌"],
+  rangeNote: "从该位置的翻牌前范围出发，每条街都排除按对手规则会做出不同行动的手牌。上面的胜率也用这个范围计算。和你的手牌、公共牌冲突的组合已去掉。",
 
   ruleTitle: "这个模拟器的前提",
   ruleText: (style) => (
