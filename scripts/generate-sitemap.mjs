@@ -45,6 +45,8 @@ const STATIC_ROUTES = [
   { path: "/es/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   { path: "/de/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   { path: "/zh/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-13 언어 확대 1차 회차 L1 — 한 세션 = 한 언어
+  { path: "/pt/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-08-08 `/hand-chart` 색인 개시 (사장님 결정) — 상세 근거는 `app/hand-chart/page.tsx` 주석.
    *   요약: 몰아준 쪽(holdem-starting-hand-range)이 28일 노출 16·38위로 못 이겼고

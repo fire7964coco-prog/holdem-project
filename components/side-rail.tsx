@@ -178,6 +178,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/pt/glossary", icon: "📖", label: "Glossário de poker" },
     // ★2026-09-29 `/pt/tournaments` 신설. 라벨 = PT_CLUSTERS tournament pillarLabel 축어(lib/pillar-clusters.ts).
     { href: "/pt/tournaments", icon: "🏆", label: "Torneios" },
+    // ★2026-10-13 `/pt/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/pt/win-rate-quiz", icon: "📈", label: "Simulador" },
   ],
   /**
    * tr — ★2026-09-29 `/tr/tournaments` 신설(tr 첫 허브). 라벨:

@@ -95,6 +95,13 @@
   </url>
 
   <url>
+    <loc>https://www.holdemmaster.com/pt/win-rate-quiz</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.holdemmaster.com/hand-chart</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -2492,7 +2499,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/holdem-probability</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-probability" />

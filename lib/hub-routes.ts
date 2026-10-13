@@ -70,7 +70,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
   //      ⚠ 없는 라우트를 넣지 마라(`/pt/tournaments`는 2026-09-29에 생겼다 — 아래).
   // ★2026-09-29 `/pt/tournaments` 신설(로케일 회차 2) — 위 «없다» 경고는 이 날부로 해제.
-  pt: ["/pt/blog", "/pt/calculator", "/pt/hand-chart", "/pt/glossary", "/pt/solver", "/pt/tournaments"],
+  // ★2026-10-13 `/pt/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
+  pt: ["/pt/blog", "/pt/calculator", "/pt/hand-chart", "/pt/glossary", "/pt/solver", "/pt/tournaments", "/pt/win-rate-quiz"],
   // tr — ★2026-09-29 `/tr/tournaments` 신설. tr의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ★2026-10-06 `/tr/calculator`·`/tr/hand-chart` 신설(tr 회차 2).
   //      ★2026-10-06 `/tr/solver` 신설(tr 회차 5).

@@ -155,15 +155,17 @@ const SPEC: [string, string][] = [
 
 /**
  * 「무엇을 원하나 → 어디로」 — 내부 역할 분리를 표로 못박아 카니발을 막는다.
- * 🔴 EN판은 `/en/hand-chart`·`/en/calculator`·`/en/win-rate-quiz`로 보내지만
- *    **pt에는 그 세 페이지가 없다**(es보다도 적어서 `/pt/tournaments`조차 없다).
- *    pt 블로그 글과 앱 내장 기능으로 보낸다.
+ * ★2026-10-13 — 처음(08-23)엔 pt에 hand-chart·calculator·win-rate-quiz가 없어 블로그 글로 보냈다.
+ *    지금은 세 도구가 다 있어(09-17 · 10-05 · 10-13) EN처럼 도구 페이지로 보낸다(es 선례 10-12).
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Calcular um spot específico depois do flop", "O solver desta página", null],
-  ["Saber que mãos abrir em cada posição", "A tabela de mãos iniciais", "/pt/blog/holdem-starting-hands-chart"],
-  ["Contar outs e calcular pot odds", "O guia de pot odds", "/pt/blog/holdem-pot-odds"],
-  ["Ver só o percentual de vitória de uma mão", "O guia de equity", "/pt/blog/holdem-equity"],
+  // ★2026-10-13 — 로케일 도구 페이지가 생겨(hand-chart·calculator 10-05·09-17 · win-rate-quiz 10-13) es 선례(10-12)대로 표의 링크를 도구로 옮겼다.
+  //   위 주석의 «세 페이지가 없다»는 그 전 기준. 라벨 = 각 페이지 side-rail 라벨/HubPage title 축어 · 단일 핸드 승률 = 계산기 Equity 탭(초기 탭).
+  ["Saber que mãos abrir em cada posição", "A tabela de range", "/pt/hand-chart"],
+  ["Contar outs e calcular na hora pot odds, SPR ou ICM", "A calculadora de poker", "/pt/calculator"],
+  ["Ver só o percentual de vitória de uma mão", "A calculadora de poker (aba Equity)", "/pt/calculator"],
+  ["Treinar a estimativa da sua equity sem ver as cartas do adversário e ver onde era hora de foldar", "O simulador de poker", "/pt/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-23 축어 실측). */
