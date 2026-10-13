@@ -1,3 +1,12 @@
+## 2026-10-13 (8) — 회차 B 11 · 핸드 복기 링크 132자리 (GTO 나머지 10편 × 14로케일) · 배포 `6e834861` · MB-303
+
+- 사장님 «회차 B 11번(GTO 나머지 10편 복기 링크) · 링크 꼴은 10-12 (9) `2af6e35f`». 시작 13:19 · 우편함 검수장→본체 새 행 0.
+- 상황 매핑 = 솔버 `presets.ts` `ARTICLE_URLS` + 프리셋 상수: SRP(BB_DEFEND vs BTN_OPEN) 5 · TBP(BB_3BET vs BTN_CALL_3BET · betFlop 33,66) 2 · SBBB(SB_OPEN vs BB_VS_SB) 3. `srp-sb-bb`·`3bp-btn-bb` = `readyScenarios` 포함 · 회원 전용 아님(접두 `limp-`만).
+- 🔴 함정 1: 선례 A72 글 문단을 원본으로 썼다가 §2-BN BN-1(«조금/slightly» 삭제 · A72만 예외)을 놓친 걸 MB 행 확인 중 발견 → SRP·SB 8편 되돌리고 `donk-bet-strategy` 문단(BN-1 반영본)으로 재삽입. 3벳은 `3bet-pot-cbet`(BN-2 «75% vs 66%») 그대로 — 세 예제 모두 66%라 맞음.
+- 블라인드전 새 꼴 = BTN→SB 2자리 + 팟 정의 괄호에 로케일 글 자체 용어(빈도 grep으로 고름 · ko 블라인드전 · es guerra de ciegas · hi blind battle 등).
+- 스크립트 = «솔버 링크 든 마지막 H2 절 → 다음 H2 또는 첫 **Q.** 중 앞» 직전 · 빈 줄 확인 · CRLF/LF 파일별 보존. 앵커 H2 132건 육안 대조(전부 직접 확인 절).
+- 게이트: build 74+729 exit 0 · audit:hard 132건 🔴 0(커버리지 경고 13편 = 기존 카드 문단) · 렌더 HTML 132곳 `lang=` 로케일 일치 1개씩. 렌즈 미실시(①② 판정 끝난 문면 축어 · ③만 새 문면 → 검수장 요청 1). `updated` 무변경.
+
 ## 2026-10-13 (7) — 회차 B 10 · queue §2-AE·§2-AL·§2-AR · EN 16자리 + 형제 로케일 · ko 3 · 레인지 차트 fr·ms·vi · MB-302
 
 - 사장님 «B 10번». 우편함 검수장→본체 새 행 0. §2-AL = 10-10 MB-225로 이미 종결(옛 문구 EN grep 0) · §2-AR 남은 것 = 통지 ③(fr·ms 사전) — vi도 같은 디렉티브라 3키.
