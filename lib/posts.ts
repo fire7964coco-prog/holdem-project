@@ -6910,7 +6910,7 @@ A. 생각보다 큽니다. 풀팟 베팅(팟오즈 33%)에 승률 20%짜리 핸�
   tldr: "포켓에이스는 220판에 한 번(0.45%), 포켓페어는 17판에 한 번(5.9%) 온다. 드로우 승률은 아웃츠에 두 장 볼 땐 ×4, 한 장 볼 땐 ×2를 곱해 어림한다. 그 값이 하프팟 25%·풀팟 33%보다 크면 콜이다.",
   category: "확률",
   date: "2026-04-09",
-  updated: "2026-10-13"
+  updated: "2026-10-13",
   readTime: "20분",
   emoji: "📊",
   image: '/images/holdem-probability/holdem-probability-hero.webp',
