@@ -122,6 +122,10 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   //   지금은 `/fr/calculator`의 H1이 바로 «Calculateur poker»다 → 솔버가 그 의도를 «자기가 답하고 끝내면» 카니발이다.
   //   처방은 noindex가 아니라 «도구 → 도구 링크 신설»(메모리 `seo-tool-vs-blog-cannibalization`).
   ["Calculer une équité main contre main, des cotes du pot ou un deal ICM", "Calculateur poker", "/fr/calculator"],
+  // ★2026-10-13 — pt·es 선례대로 로케일 도구 페이지 행 추가(hand-chart 10-05 · win-rate-quiz 10-13).
+  //   라벨 = 각 페이지 side-rail 라벨/HubPage title 축어.
+  ["Savoir quelles mains ouvrir à chaque position", "Tableau range poker", "/fr/hand-chart"],
+  ["S'entraîner à estimer son équité sans voir les cartes adverses, puis découvrir où il fallait se coucher", "Simulateur poker", "/fr/win-rate-quiz"],
   ["Apprendre les règles et le déroulement d'une main", "Guide des règles du Texas Hold'em", "/fr/blog/texas-holdem-rules-for-beginners"],
   ["Comprendre les actions : miser, relancer, checker, se coucher", "Guide des actions de mise", "/fr/blog/holdem-betting-actions"],
   ["Savoir ce que paient la petite et la grosse blinde", "Guide des blindes", "/fr/blog/holdem-blind-meaning"],

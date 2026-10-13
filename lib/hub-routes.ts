@@ -88,7 +88,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments"],
   // fr — ★2026-08-24 `/fr/solver` 신설과 함께 추가(9번째 — 솔버 앱 fr 배포 당일).
   //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
-  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver"],
+  // ★2026-10-13 `/fr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
+  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver", "/fr/win-rate-quiz"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
   // ★2026-09-29 `/id/tournaments` 신설(해외 원정 캘린더 · 회차 1 id·ms·vi).
   id: ["/id/blog", "/id/calculator", "/id/hand-chart", "/id/glossary", "/id/solver", "/id/tournaments"],

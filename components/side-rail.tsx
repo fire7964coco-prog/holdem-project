@@ -284,6 +284,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/fr/hand-chart", icon: "📊", label: "Tableau range poker" },
     // ★2026-10-05 `/fr/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/fr/glossary", icon: "📖", label: "Lexique du poker" },
+    // ★2026-10-13 `/fr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/fr/win-rate-quiz", icon: "📈", label: "Simulateur poker" },
   ],
   /**
    * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:
