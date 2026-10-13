@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare completă) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, de regulă, asta se întâmplă doar dacă ești big blind (sau jucătorul care a pus un straddle viu).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Exemplu concret: ești pe flop cu K♠ 8♦. Nimeni nu a pariat, așa că dai ==
 
 A da fold (a renunța) înseamnă să arunci cărțile și să părăsești mâna. Nu plătești nimic nou, dar ==r:toate jetoanele puse deja de tine rămân în pot==.
 
-Da — ori de câte ori e rândul tău poți renunța, chiar și înainte de a paria ceva, iar fold-ul e obligatoriu. Gratis chiar nu e: în turneu, să dai fold când în fața ta nu stă niciun pariu contează drept "fold nestandard" conform ==regulii 84 WSOP== și poate atrage un avertisment. Și atenție la capcană: **să dai fold când ai putea da check gratis înseamnă să arunci o mână fără motiv**. Dacă nimeni nu a pariat, dă pur și simplu check.
+Da — ori de câte ori e rândul tău poți renunța, chiar și înainte de a paria ceva, iar fold-ul e obligatoriu. Gratis chiar nu e: în turneu, să dai fold când în fața ta nu stă niciun pariu contează drept "fold nestandard" conform ==regulii 84 din regulamentul de turnee WSOP== și poate atrage un avertisment. Și atenție la capcană: **să dai fold când ai putea da check gratis înseamnă să arunci o mână fără motiv**. Dacă nimeni nu a pariat, dă pur și simplu check.
 
 O regulă de etichetă live: nu da fold ==în afara rândului==. Așteaptă ca acțiunea să ajungă la tine — renunțarea în avans oferă informații jucătorilor care încă se hotărăsc, iar majoritatea cazinourilor te avertizează sau te penalizează. A ști *când* fold-ul e mutarea corectă e o pricepere aparte — ține de strategie.
 
@@ -130,7 +130,7 @@ Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultim
 
 Două reguli de poker live care vin la pachet cu relansarea:
 
-1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d==) — plusul nu contează. ==String bet==-ul adevărat e altceva: un pariu sau un raise făcut în mai multe mișcări care includ o întoarcere la stack, **fără** să anunți întâi "raise" — sau un gest înșelător menit să provoace o acțiune în afara rândului (==regula 103 din regulamentul de turnee WSOP==).
+1. **Anunță "raise" înainte de a mișca jetoanele.** Spui "call" și apoi împingi mai multe jetoane? Declarația ta era deja obligatorie (==regula 90.d din regulamentul de turnee WSOP==) — plusul nu contează. ==String bet==-ul adevărat e altceva: un pariu sau un raise făcut în mai multe mișcări care includ o întoarcere la stack, **fără** să anunți întâi "raise" — sau un gest înșelător menit să provoace o acțiune în afara rândului (==regula 103 din regulamentul de turnee WSOP==).
 2. **O singură mișcare.** Dacă nu anunți, jetoanele trebuie să intre printr-o unică mișcare înainte.
 
 *Cât* ar trebui să relansezi (deschideri de 2,5x, 3-bet-uri de 3x, sizing în funcție de textura boardului) ține de strategie, nu de reguli — asta e altă discuție.
@@ -174,11 +174,11 @@ Joc săptămânal o partidă live la mize mici, iar aceleași greșeli de acțiu
 
 ### Greșeala 1 — Să plătești când ai putea da check
 
-Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge jetoane **în tăcere**, "ca să dea call". Nu ai ce plăti: conform ==regulii 90.a WSOP== se pariază prin declarație *sau* împingând jetoane — tocmai a pariat fără să vrea. Dacă ar fi *spus* "call", ==regula 90.b.1== ar fi făcut din asta un check. Când strada e încă nedeschisă, dă check — dacă nimeni din spatele tău nu pariază, vezi următoarea carte gratis.
+Primul la vorbă pe flop, nimeni nu a pariat, iar un jucător mai nou împinge jetoane **în tăcere**, "ca să dea call". Nu ai ce plăti: conform ==regulii 90.a din regulamentul de turnee WSOP== se pariază prin declarație *sau* împingând jetoane — tocmai a pariat fără să vrea. Dacă ar fi *spus* "call", ==regula 90.b.1 din regulamentul de turnee== ar fi făcut din asta un check. Când strada e încă nedeschisă, dă check — dacă nimeni din spatele tău nu pariază, vezi următoarea carte gratis.
 
 ### Greșeala 2 — "Plătesc... de fapt, raise!"
 
-"Plătesc... de fapt, raise!" Nici gând. La pokerul live acțiunea ta se fixează în clipa în care o anunți: conform ==regulii 90.d==, o declarație verbală făcută la rândul tău e obligatorie. (Asta nu e string bet, apropo; string bet-ul e împingerea în mai multe mișcări cu întoarcere la stack, explicată în FAQ. Rezultatul e totuși același: contează primul cuvânt.) Am văzut dealeri judecând asta drept un simplu call, la jumătatea propoziției, de mai multe ori decât pot număra. Anunță "raise" *întâi*, apoi mișcă jetoanele.
+"Plătesc... de fapt, raise!" Nici gând. La pokerul live acțiunea ta se fixează în clipa în care o anunți: conform ==regulii 90.d din regulamentul de turnee WSOP==, o declarație verbală făcută la rândul tău e obligatorie. (Asta nu e string bet, apropo; string bet-ul e împingerea în mai multe mișcări cu întoarcere la stack, explicată în FAQ. Rezultatul e totuși același: contează primul cuvânt.) Am văzut dealeri judecând asta drept un simplu call, la jumătatea propoziției, de mai multe ori decât pot număra. Anunță "raise" *întâi*, apoi mișcă jetoanele.
 
 ### Greșeala 3 — Big blind-ul care aruncă un flop gratis
 
@@ -186,7 +186,7 @@ Toți intră la limp, acțiunea ajunge la big blind… și el dă fold. Ăla e u
 
 ### Greșeala 4 — Jetonul singur, tăcut
 
-În fața unui pariu de $10, un jucător aruncă în tăcere un singur jeton de $100 așteptând și rest, *și* un raise. ==Regula jetonului unic (one-chip rule)== apare exact așa în regulile WSOP (==regula 97==): un singur jeton mare, nemarcat verbal, e doar un call. Ca să relansezi, "raise" trebuie rostit **înainte ca jetonul să atingă masa**.
+În fața unui pariu de $10, un jucător aruncă în tăcere un singur jeton de $100 așteptând și rest, *și* un raise. ==Regula jetonului unic (one-chip rule)== apare exact așa în regulile WSOP (==regula 97 din regulamentul de turnee==): un singur jeton mare, nemarcat verbal, e doar un call. Ca să relansezi, "raise" trebuie rostit **înainte ca jetonul să atingă masa**.
 
 ---
 
@@ -223,7 +223,7 @@ A. Depinde de mărimea all-in-ului. Dacă all-in-ul e o relansare legală comple
 
 **Q. Ce este un string bet la poker?**
 
-A. Să încerci să pariezi sau să relansezi în mai multe mișcări — întorcându-te la stack între ele — fără să fi anunțat "raise" înainte (==regula 103 din regulamentul de turnee WSOP==). A doua mișcare nu contează niciodată — rămân doar primele jetoane, judecate mai întâi după regulile de call cu un jeton sau cu mai multe jetoane (TDA 2024, regulile 44–45). Acolo unde se aplică pragul de jumătate din regula 43-A, se măsoară creșterea peste call, nu totalul jetoanelor: sub jumătate din cel mai mare pariu sau cea mai mare relansare completă anterioară e call; de la jumătate în sus trebuie să completezi un min-raise. O declarație de raise făcută înainte sau un all-in se judecă după regulile lor. Regula 103 din regulamentul de turnee WSOP interzice și un gest înșelător menit să provoace o acțiune în afara rândului înainte ca acțiunea ta să fie completă. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d==) — același efect. Anunță-ți acțiunea cu voce tare — "raise" și suma completă — sau mută toate jetoanele într-o singură mișcare (TDA 2024, regula 42).
+A. Să încerci să pariezi sau să relansezi în mai multe mișcări — întorcându-te la stack între ele — fără să fi anunțat "raise" înainte (==regula 103 din regulamentul de turnee WSOP==). A doua mișcare nu contează niciodată — rămân doar primele jetoane, judecate mai întâi după regulile de call cu un jeton sau cu mai multe jetoane (TDA 2024, regulile 44–45). Acolo unde se aplică pragul de jumătate din regula 43-A TDA 2024, se măsoară creșterea peste call, nu totalul jetoanelor: sub jumătate din cel mai mare pariu sau cea mai mare relansare completă anterioară e call; de la jumătate în sus trebuie să completezi un min-raise. O declarație de raise făcută înainte sau un all-in se judecă după regulile lor. Regula 103 din regulamentul de turnee WSOP interzice și un gest înșelător menit să provoace o acțiune în afara rândului înainte ca acțiunea ta să fie completă. Să spui "call" și apoi să adaugi nu e string bet, ci o declarație obligatorie (==regula 90.d din regulamentul de turnee WSOP==) — același efect. Anunță-ți acțiunea cu voce tare — "raise" și suma completă — sau mută toate jetoanele într-o singură mișcare (TDA 2024, regula 42).
 
 **Q. Ce înseamnă să faci limp la poker?**
 

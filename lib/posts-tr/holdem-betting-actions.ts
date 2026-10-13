@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, son tam bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu normalde yalnızca big blind (ya da canlı straddle koyan oyuncu) içindir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",
@@ -111,7 +111,7 @@ Gerçek örnek: flop'ta K♠ 8♦ ile oturuyorsun. Kimse bahis koymamış, o yü
 
 Fold (masada "pas" ya da "çekiliyorum"), kartlarını atıp elden çıkmak demektir. Yeni bir şey ödemezsin ama ==r:pota koyduğun her çip potta kalır== ve o eldeki potu kazanma şansın biter. Pokerde fold nedir diye soranların asıl merak ettiği zamanlama: evet, sıra sende olduğu her an yatabilirsin, hiç bahis koymadan önce bile, ve o fold bağlayıcıdır.
 
-Yine de her zaman bedava değildir: turnuvada, önünde hiç bahis yokken yatmak ==WSOP 84. kurala== göre "standart dışı fold" sayılır ve uyarı alabilirsin. Ve şu tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
+Yine de her zaman bedava değildir: turnuvada, önünde hiç bahis yokken yatmak ==WSOP 84. turnuva kuralına== göre "standart dışı fold" sayılır ve uyarı alabilirsin. Ve şu tuzağa dikkat: **bedavaya check yapabilecekken yatmak, elini boşa çöpe atmaktır**. Kimse bahis koymadıysa, sadece check yap.
 
 Canlı adabından bir kural: ==sırası gelmeden== yatma. Sıra sana ulaşana kadar bekle — erken yatmak hâlâ karar veren oyunculara bilgi sızdırır ve çoğu salon bunu uyarır ya da cezalandırır. Yatmanın *ne zaman* doğru hamle olduğunu bilmek başlı başına bir beceridir.
 
@@ -156,7 +156,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
-1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==Kural 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden, arada stack'ine geri dönen birden fazla hareketle bahis ya da raise yapmak — ya da sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı bir hareket (==WSOP turnuva kuralı 103==).
+1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==WSOP turnuva kuralı 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden, arada stack'ine geri dönen birden fazla hareketle bahis ya da raise yapmak — ya da sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı bir hareket (==WSOP turnuva kuralı 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
 *Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu [Texas Hold'em stratejisine](/tr/blog/holdem-strategy) girer.
@@ -204,11 +204,11 @@ Haftalık düşük bahisli canlı bir oyun oynuyorum ve aynı hareket hataları 
 
 ### Hata 1 — Check yapabilecekken call yapmak
 
-Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 kuralı== bunu check sayardı. Street açılmadıysa check yap — arkandan kimse bahis koymazsa sıradaki kartı bedavaya görürsün.
+Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a turnuva kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 turnuva kuralı== bunu check sayardı. Street açılmadıysa check yap — arkandan kimse bahis koymazsa sıradaki kartı bedavaya görürsün.
 
 ### Hata 2 — "Call... yok, dur, raise!"
 
-"Call... yok, dur, raise!" Olmaz. Canlı pokerde hareketin, ilan ettiğin an kilitlenir — ==Kural 90.d== gereği sıran geldiğinde yaptığın sözlü beyan bağlayıcıdır. (Bu bir string bet değil; string bet, SSS'de anlattığım çipleri birkaç hamlede sürme durumu. Sonuç aynı: ilk söz geçerli.) Krupiyelerin bunu cümlenin ortasında düz call saydığını, sayamayacağım kadar çok kez gördüm. Önce "raise" de, *sonra* çipleri hareket ettir.
+"Call... yok, dur, raise!" Olmaz. Canlı pokerde hareketin, ilan ettiğin an kilitlenir — ==WSOP turnuva kuralı 90.d== gereği sıran geldiğinde yaptığın sözlü beyan bağlayıcıdır. (Bu bir string bet değil; string bet, SSS'de anlattığım çipleri birkaç hamlede sürme durumu. Sonuç aynı: ilk söz geçerli.) Krupiyelerin bunu cümlenin ortasında düz call saydığını, sayamayacağım kadar çok kez gördüm. Önce "raise" de, *sonra* çipleri hareket ettir.
 
 ### Hata 3 — Big blind'in bedava flop'u atması
 
@@ -216,7 +216,7 @@ Herkes limp'ler, sıra big blind'e gelir ve o... fold eder. Bu, bedava bir flop'
 
 ### Hata 4 — Sessiz tek çip
 
-$10'lık bir bahis karşısında oyuncu sessizce tek bir $100'lık çip atar, hem para üstü hem raise bekler. ==Tek çip kuralı (one-chip rule)== WSOP kurallarında aynen böyle yazar (==Kural 97==): ilan edilmemiş tek büyük çip sadece call'dur. Yükseltmek için "raise" sözü **çip masaya değmeden önce** çıkmalıdır.
+$10'lık bir bahis karşısında oyuncu sessizce tek bir $100'lık çip atar, hem para üstü hem raise bekler. ==Tek çip kuralı (one-chip rule)== WSOP kurallarında aynen böyle yazar (==Turnuva kuralı 97==): ilan edilmemiş tek büyük çip sadece call'dur. Yükseltmek için "raise" sözü **çip masaya değmeden önce** çıkmalıdır.
 
 ---
 
@@ -253,7 +253,7 @@ A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareke
 
 **Q. Pokerde string bet nedir?**
 
-A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (WSOP turnuva kuralı 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir ve önce tek çip ve çoklu çip call kurallarına göre değerlendirilir (TDA 2024 Kural 44–45). Kural 43-A'daki yarım minimum eşiğinin uygulandığı yerde toplam çipleri değil, call'un üstündeki artışı ölç: önceki en büyük tam bahsin ya da yükseltmenin yarısından azı call'dur; yarısı ya da fazlası tam bir min-raise'i zorunlu kılar. Daha önce yapılmış bir raise beyanı ya da all-in kendi kurallarına göre değerlendirilir. WSOP turnuva kuralı 103, kendi aksiyonun tamamlanmadan sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı hareketi de yasaklar. "Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı bir sözlü beyandır (==Kural 90.d==) — sonuç aynı: ilk söz geçerli. Hareketini sözle ilan et — "raise" ve tutarın tamamı — ya da tüm çipleri tek hareketle koy (TDA 2024 Kural 42).
+A. Önce "raise" demeden, arada stack'ine geri dönerek bahsi ya da raise'i birden fazla hareketle koymaya çalışmak (WSOP turnuva kuralı 103). İkinci hareket hiç sayılmaz — yalnızca ilk koyulan çipler geçerlidir ve önce tek çip ve çoklu çip call kurallarına göre değerlendirilir (TDA 2024 Kural 44–45). TDA 2024 Kural 43-A'daki yarım minimum eşiğinin uygulandığı yerde toplam çipleri değil, call'un üstündeki artışı ölç: önceki en büyük tam bahsin ya da yükseltmenin yarısından azı call'dur; yarısı ya da fazlası tam bir min-raise'i zorunlu kılar. Daha önce yapılmış bir raise beyanı ya da all-in kendi kurallarına göre değerlendirilir. WSOP turnuva kuralı 103, kendi aksiyonun tamamlanmadan sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı hareketi de yasaklar. "Call" deyip sonra çip eklemek ise string bet değil, bağlayıcı bir sözlü beyandır (==WSOP turnuva kuralı 90.d==) — sonuç aynı: ilk söz geçerli. Hareketini sözle ilan et — "raise" ve tutarın tamamı — ya da tüm çipleri tek hareketle koy (TDA 2024 Kural 42).
 
 **Q. Pokerde limp ne demek?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling full bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, karaniwang ang big blind lang iyon (o ang nag-post ng live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Halimbawa: nasa flop ka na may K♠ 8♦. Walang nag-bet, kaya ==check== ka. Nag
 
 Ang fold ay ibig sabihin isusuko mo ang cards mo at aalis sa hand. Wala kang bagong babayaran, pero ==r:mananatili sa pot ang bawat chip na nailagay mo na==.
 
-Oo — tuwing nasa iyo ang action, pwede kang mag-fold, kahit bago ka pa mag-lagay ng kahit ano, at binding ang fold na iyon. Hindi naman ito walang bayad: sa tournament, ang pag-fold kahit walang bet sa harap mo ay itinuturing na "non-standard fold" sa ilalim ng ==WSOP Rule 84== at pwedeng abutan ng babala. At ingat sa bitag: **ang pag-fold kung pwede ka namang mag-check nang libre ay pagtapon ng hand nang walang dahilan**. Kung walang nag-bet, mag-check ka na lang.
+Oo — tuwing nasa iyo ang action, pwede kang mag-fold, kahit bago ka pa mag-lagay ng kahit ano, at binding ang fold na iyon. Hindi naman ito walang bayad: sa tournament, ang pag-fold kahit walang bet sa harap mo ay itinuturing na "non-standard fold" sa ilalim ng ==WSOP Tournament Rule 84== at pwedeng abutan ng babala. At ingat sa bitag: **ang pag-fold kung pwede ka namang mag-check nang libre ay pagtapon ng hand nang walang dahilan**. Kung walang nag-bet, mag-check ka na lang.
 
 Isang rule ng live etiquette: huwag mag-fold ==out of turn== (hindi pa turn mo). Hintayin mong dumating ang action sa iyo — ang maagang pag-fold ay nagbibigay ng info sa mga manlalarong nagdedesisyon pa, at karamihan ng cardroom ay mag-wa-warning o magpaparusa. Ang malaman *kung kailan* tama ang mag-fold ay sarili nitong skill — iyan ang tinatalakay sa kung kailan dapat mag-fold sa poker.
 
@@ -130,7 +130,7 @@ Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling full bet 
 
 Dalawang live-poker rules na kasama ng pag-raise:
 
-1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: pag-bet o pag-raise sa maraming galaw na may pagbalik ng kamay sa stack **nang hindi** muna nag-aanunsyo ng "raise" — o mapanlinlang na kilos para mapakilos ang iba bago ang turn nila (==WSOP Tournament Rule 103==).
+1. **I-anunsyo ang "raise" bago igalaw ang chips.** Sinabi mong "call" tapos nag-push ka ng mas marami? Binding na ang sinabi mo (==WSOP Tournament Rule 90.d==) — hindi na bibilangin ang sobra. Ibang usapan ang tunay na ==string bet==: pag-bet o pag-raise sa maraming galaw na may pagbalik ng kamay sa stack **nang hindi** muna nag-aanunsyo ng "raise" — o mapanlinlang na kilos para mapakilos ang iba bago ang turn nila (==WSOP Tournament Rule 103==).
 2. **Isang galaw.** Kung hindi ka mag-anunsyo, ang chips mo ay dapat pumasok sa iisang forward na galaw.
 
 Kung *gaano* kalaki ang dapat mong i-raise (2.5x na opens, 3x na 3-bets, sizing base sa board texture) ay strategy, hindi rules.
@@ -174,11 +174,11 @@ May weekly low-stakes na live game ako, at ang parehong action errors ay paulit-
 
 ### Mistake 1 — Nag-call kung pwede namang mag-check
 
-Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka — kung walang mag-bet sa likod mo, makikita mo ang susunod na card nang libre.
+Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Tournament Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Tournament Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka — kung walang mag-bet sa likod mo, makikita mo ang susunod na card nang libre.
 
 ### Mistake 2 — "Call ako... teka, raise!"
 
-"Call ako... teka, raise!" Hindi pwede. Sa live poker, nakakandado ang action mo sa sandaling ma-anunsyo mo — sa ilalim ng ==Rule 90.d==, binding ang verbal na deklarasyon sa turn mo. (Hindi ito string bet; ang string bet ay ang pagtulak ng chips sa maraming galaw na nasa FAQ. Pareho lang ang resulta: ang unang salita ang masusunod.) Nasaksihan ko nang ni-rule ng dealers ito bilang flat call sa gitna ng pangungusap nang mas madalas kaysa mabilang ko. I-anunsyo ang "raise" *muna*, tapos igalaw ang chips.
+"Call ako... teka, raise!" Hindi pwede. Sa live poker, nakakandado ang action mo sa sandaling ma-anunsyo mo — sa ilalim ng ==WSOP Tournament Rule 90.d==, binding ang verbal na deklarasyon sa turn mo. (Hindi ito string bet; ang string bet ay ang pagtulak ng chips sa maraming galaw na nasa FAQ. Pareho lang ang resulta: ang unang salita ang masusunod.) Nasaksihan ko nang ni-rule ng dealers ito bilang flat call sa gitna ng pangungusap nang mas madalas kaysa mabilang ko. I-anunsyo ang "raise" *muna*, tapos igalaw ang chips.
 
 ### Mistake 3 — Big blind na nag-fold ng libreng flop
 
@@ -186,7 +186,7 @@ Nag-limp lahat, umabot ang action sa big blind, tapos nag-fold sila. Iyon ay lib
 
 ### Mistake 4 — Ang tahimik na iisang chip
 
-Nasa harap ng $10 na bet, may manlalarong tahimik na naghagis ng iisang $100 na chip na umaasa ng sukli *at* raise. Ganito mismo nakasulat ang ==one-chip rule== sa WSOP rules (==Rule 97==): ang hindi-anunsyadong iisang malaking chip ay call lang. Para mag-raise, dapat mabitawan ang "raise" **bago tumama ang chip sa mesa**.
+Nasa harap ng $10 na bet, may manlalarong tahimik na naghagis ng iisang $100 na chip na umaasa ng sukli *at* raise. Ganito mismo nakasulat ang ==one-chip rule== sa WSOP rules (==Tournament Rule 97==): ang hindi-anunsyadong iisang malaking chip ay call lang. Para mag-raise, dapat mabitawan ang "raise" **bago tumama ang chip sa mesa**.
 
 ---
 
@@ -222,7 +222,7 @@ A. Depende sa laki ng all-in. Kung ang all-in ay buong legal na raise, magbubuka
 
 **Q. Ano ang string bet sa poker?**
 
-A. Pagsubok na mag-bet o mag-raise sa maraming galaw — bumabalik ang kamay sa stack sa pagitan — nang hindi muna nag-aanunsyo ng "raise" (==WSOP Tournament Rule 103==). Hindi kailanman binibilang ang pangalawang galaw — ang unang chips lang ang tumatayo, at hinuhusgahan muna ang mga iyon sa ilalim ng single- at multiple-chip call rules (TDA 2024 Rules 44–45). Kung saan umiiral ang half-minimum threshold ng Rule 43-A, sukatin ang dagdag lampas sa call, hindi ang kabuuang chips: kulang sa kalahati ng pinakamalaking naunang full bet o raise ay call; kalahati o higit pa ay kailangang maging buong min-raise. Ang naunang deklarasyon ng raise o all-in ay may sariling patakaran. Ipinagbabawal din ng WSOP Tournament Rule 103 ang mapanlinlang na kilos para mapakilos ang iba bago ang turn nila habang hindi pa tapos ang sarili mong action. Ang pagsabi ng "call" tapos magdagdag ay hindi string bet kundi binding na deklarasyon (==Rule 90.d==) — pareho ang epekto. I-anunsyo mo nang malakas ang action mo — "raise" at ang buong halaga — o igalaw ang lahat ng chips sa iisang galaw (TDA 2024 Rule 42).
+A. Pagsubok na mag-bet o mag-raise sa maraming galaw — bumabalik ang kamay sa stack sa pagitan — nang hindi muna nag-aanunsyo ng "raise" (==WSOP Tournament Rule 103==). Hindi kailanman binibilang ang pangalawang galaw — ang unang chips lang ang tumatayo, at hinuhusgahan muna ang mga iyon sa ilalim ng single- at multiple-chip call rules (TDA 2024 Rules 44–45). Kung saan umiiral ang half-minimum threshold ng TDA 2024 Rule 43-A, sukatin ang dagdag lampas sa call, hindi ang kabuuang chips: kulang sa kalahati ng pinakamalaking naunang full bet o raise ay call; kalahati o higit pa ay kailangang maging buong min-raise. Ang naunang deklarasyon ng raise o all-in ay may sariling patakaran. Ipinagbabawal din ng WSOP Tournament Rule 103 ang mapanlinlang na kilos para mapakilos ang iba bago ang turn nila habang hindi pa tapos ang sarili mong action. Ang pagsabi ng "call" tapos magdagdag ay hindi string bet kundi binding na deklarasyon (==WSOP Tournament Rule 90.d==) — pareho ang epekto. I-anunsyo mo nang malakas ang action mo — "raise" at ang buong halaga — o igalaw ang lahat ng chips sa iisang galaw (TDA 2024 Rule 42).
 
 **Q. Ano ang ibig sabihin ng limp sa poker?**
 

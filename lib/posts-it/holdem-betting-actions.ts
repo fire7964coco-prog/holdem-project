@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o all'ultimo rilancio completo) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop, di norma, questo vale solo per il big blind (o per chi ha messo uno straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Esempio concreto: sei al flop con K♠ 8♦. Nessuno ha puntato, quindi fai ==ch
 
 Passare (foldare) significa buttare le tue carte e abbandonare la mano. Non paghi nulla di nuovo, ma ==r:tutte le fiches che hai già messo restano nel piatto==.
 
-Sì — ogni volta che l'azione tocca a te puoi passare, anche prima di aver puntato qualcosa, e il fold è vincolante. Gratis però non è: in torneo, passare quando davanti a te non c'è alcuna puntata conta come "fold non standard" secondo la ==regola 84 WSOP== e può costarti un richiamo. E attento alla trappola: **passare quando potresti fare check gratis è buttare via una mano senza motivo**. Se nessuno ha puntato, fai semplicemente check.
+Sì — ogni volta che l'azione tocca a te puoi passare, anche prima di aver puntato qualcosa, e il fold è vincolante. Gratis però non è: in torneo, passare quando davanti a te non c'è alcuna puntata conta come "fold non standard" secondo la ==regola 84 dei tornei WSOP== e può costarti un richiamo. E attento alla trappola: **passare quando potresti fare check gratis è buttare via una mano senza motivo**. Se nessuno ha puntato, fai semplicemente check.
 
 Una regola di etiquette dal vivo: non passare ==fuori turno==. Aspetta che l'azione arrivi a te — passare in anticipo dà informazioni ai giocatori che stanno ancora decidendo, e nella maggior parte delle sale ti becchi un avviso o una penalità. Sapere *quando* passare è la giocata giusta è un'abilità a parte, un capitolo di strategia tutto suo.
 
@@ -130,7 +130,7 @@ Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o d
 
 Due regole del poker dal vivo che arrivano insieme al rilancio:
 
-1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: puntare o rilanciare in più movimenti che includono un ritorno al tuo stack, **senza** annunciare prima "rilancio" — oppure un gesto ingannevole fatto per indurre un'azione fuori turno (==regola 103 dei tornei WSOP==).
+1. **Annuncia "rilancio" prima di muovere le fiches.** Dici "chiamo" e poi spingi altre fiches? La tua dichiarazione era già vincolante (==regola 90.d dei tornei WSOP==) — l'extra non conta. Lo ==string bet== vero è un'altra cosa: puntare o rilanciare in più movimenti che includono un ritorno al tuo stack, **senza** annunciare prima "rilancio" — oppure un gesto ingannevole fatto per indurre un'azione fuori turno (==regola 103 dei tornei WSOP==).
 2. **Un solo movimento.** Se non annunci, le tue fiches devono entrare con un unico gesto in avanti.
 
 *Quanto* dovresti rilanciare (aperture da 2,5x, 3-bet da 3x, sizing in base alla texture del board) è strategia, non regole — quella è un altro discorso.
@@ -174,11 +174,11 @@ Gioco una partita settimanale dal vivo a basse poste, e gli stessi errori di azi
 
 ### Errore 1 — Chiamare quando potresti fare check
 
-Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spinge dentro le fiches **in silenzio**, "per chiamare". Non c'è niente da chiamare: per la ==regola 90.a WSOP== si punta per dichiarazione *o* spingendo fiches — ha appena puntato senza volerlo. Se avesse *detto* "chiamo", la ==regola 90.b.1== ne avrebbe fatto un check. Quando la street è ancora chiusa, fai check — se dietro di te nessuno punta, vedi la carta successiva gratis.
+Primo a parlare al flop, nessuno ha puntato, e un giocatore alle prime armi spinge dentro le fiches **in silenzio**, "per chiamare". Non c'è niente da chiamare: per la ==regola 90.a dei tornei WSOP== si punta per dichiarazione *o* spingendo fiches — ha appena puntato senza volerlo. Se avesse *detto* "chiamo", la ==regola 90.b.1 dei tornei== ne avrebbe fatto un check. Quando la street è ancora chiusa, fai check — se dietro di te nessuno punta, vedi la carta successiva gratis.
 
 ### Errore 2 — "Chiamo... anzi no, rilancio!"
 
-"Chiamo... anzi no, rilancio!" Niente da fare. Nel poker dal vivo la tua azione si fissa nell'istante in cui la annunci: per la ==regola 90.d== una dichiarazione verbale fatta nel tuo turno è vincolante. (E non è uno string bet: lo string bet è la spinta in più movimenti con ritorno allo stack di cui parlo nelle FAQ. Il risultato però è lo stesso: vale la prima parola.) Ho visto mazzieri giudicarlo una chiamata a metà frase più volte di quante ne possa contare. Annuncia "rilancio" *prima*, poi muovi le fiches.
+"Chiamo... anzi no, rilancio!" Niente da fare. Nel poker dal vivo la tua azione si fissa nell'istante in cui la annunci: per la ==regola 90.d dei tornei WSOP== una dichiarazione verbale fatta nel tuo turno è vincolante. (E non è uno string bet: lo string bet è la spinta in più movimenti con ritorno allo stack di cui parlo nelle FAQ. Il risultato però è lo stesso: vale la prima parola.) Ho visto mazzieri giudicarlo una chiamata a metà frase più volte di quante ne possa contare. Annuncia "rilancio" *prima*, poi muovi le fiches.
 
 ### Errore 3 — Il grande buio che butta un flop gratis
 
@@ -186,7 +186,7 @@ Tutti entrano di limp, l'azione arriva al grande buio… e lui passa. Quello è 
 
 ### Errore 4 — La fiche singola silenziosa
 
-Davanti a una puntata di $10, un giocatore lancia in silenzio una singola fiche da $100 aspettandosi il resto *e* un rilancio. La ==regola della fiche singola (one-chip rule)== è così nelle regole WSOP (==regola 97==): una singola fiche di taglio grande, se non annunciata, è solo una chiamata. Per rilanciare, "rilancio" deve uscire **prima che la fiche tocchi il tavolo**.
+Davanti a una puntata di $10, un giocatore lancia in silenzio una singola fiche da $100 aspettandosi il resto *e* un rilancio. La ==regola della fiche singola (one-chip rule)== è così nelle regole WSOP (==regola 97 dei tornei==): una singola fiche di taglio grande, se non annunciata, è solo una chiamata. Per rilanciare, "rilancio" deve uscire **prima che la fiche tocchi il tavolo**.
 
 ---
 
@@ -223,7 +223,7 @@ A. Dipende dalla dimensione dell'all-in. Se l'all-in è un rilancio legale compl
 
 **Q. Cos'è uno string bet nel poker?**
 
-A. Cercare di puntare o rilanciare in più movimenti — tornando al tuo stack nel mezzo — senza aver annunciato "rilancio" prima (==regola 103 dei tornei WSOP==). Il secondo movimento non conta mai: valgono solo le prime fiches, giudicate prima con le regole sulla chiamata con una o più fiches (TDA 2024, regole 44–45). Dove si applica la soglia della metà della regola 43-A, si misura l'aumento sopra la chiamata, non il totale delle fiches: sotto la metà della più grande puntata o rilancio completo precedente è una chiamata; dalla metà in su devi completare un min-raise. Una dichiarazione di rilancio fatta prima o un all-in seguono le loro regole. La regola 103 dei tornei WSOP vieta anche un gesto ingannevole fatto per indurre un'azione fuori turno prima che la tua azione sia completa. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d==) — stesso effetto. Annuncia la tua azione a voce — "rilancio" e la cifra completa — oppure sposta tutte le fiches in un solo movimento (TDA 2024, regola 42).
+A. Cercare di puntare o rilanciare in più movimenti — tornando al tuo stack nel mezzo — senza aver annunciato "rilancio" prima (==regola 103 dei tornei WSOP==). Il secondo movimento non conta mai: valgono solo le prime fiches, giudicate prima con le regole sulla chiamata con una o più fiches (TDA 2024, regole 44–45). Dove si applica la soglia della metà della regola 43-A TDA 2024, si misura l'aumento sopra la chiamata, non il totale delle fiches: sotto la metà della più grande puntata o rilancio completo precedente è una chiamata; dalla metà in su devi completare un min-raise. Una dichiarazione di rilancio fatta prima o un all-in seguono le loro regole. La regola 103 dei tornei WSOP vieta anche un gesto ingannevole fatto per indurre un'azione fuori turno prima che la tua azione sia completa. Dire "chiamo" e poi aggiungere non è uno string bet ma una dichiarazione vincolante (==regola 90.d dei tornei WSOP==) — stesso effetto. Annuncia la tua azione a voce — "rilancio" e la cifra completa — oppure sposta tutte le fiches in un solo movimento (TDA 2024, regola 42).
 
 **Q. Cosa significa fare limp nel poker?**
 

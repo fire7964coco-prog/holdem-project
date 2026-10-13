@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, il y a 5 actions : checker (dire « parole » : ne pas miser tout en restant dans le coup), miser (ouvrir le tour), suivre (payer la mise), relancer (la relance minimum égale au moins la dernière mise ou relance complète) et se coucher (fold). Tu ne peux checker que s'il n'y a aucune mise devant toi : préflop, c'est en général seulement la grosse blinde, ou le joueur qui a posé un straddle.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -128,7 +128,7 @@ Se coucher, c'est abandonner tes cartes et quitter le coup ; les jetons que tu a
 
 Tu ne paies rien de plus, mais ==r:chaque jeton que tu as déjà mis reste dans le pot== — se coucher ne rembourse rien.
 
-Se coucher alors que personne n'a misé n'est pas sans conséquence pour autant : en tournoi, ce geste compte comme un « fold non standard » selon la ==règle 84 de la WSOP== et peut valoir un avertissement. Si personne n'a misé, checke.
+Se coucher alors que personne n'a misé n'est pas sans conséquence pour autant : en tournoi, ce geste compte comme un « fold non standard » selon la ==règle 84 des tournois de la WSOP== et peut valoir un avertissement. Si personne n'a misé, checke.
 
 Une règle d'étiquette en live : attends que l'action arrive jusqu'à toi avant de te coucher — te coucher ==hors de ton tour== donne de l'information aux joueurs qui hésitent encore, et la plupart des salles te mettront un avertissement ou une pénalité. Savoir *quand* le fold est le bon choix, c'est une compétence à part entière — c'est le sujet de [savoir quand se coucher au poker](/fr/blog/holdem-when-to-fold).
 
@@ -157,7 +157,7 @@ L'idée clé : le min-raise reprend ==l'incrément== de la dernière mise ou rel
 
 Deux règles du poker en live qui accompagnent la relance :
 
-1. **Annonce « relance » — et le montant — avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ta déclaration t'engageait déjà (==règle 90.d==) — le surplus ne compte pas. Un vrai ==string bet== (une mise en plusieurs fois), c'est autre chose : une mise ou une relance faite en plusieurs mouvements, avec un retour à ton stack, **sans** avoir annoncé « relance » d'abord — ou un geste trompeur destiné à provoquer une action hors tour (==règle 103 des tournois de la WSOP==).
+1. **Annonce « relance » — et le montant — avant de bouger tes jetons.** Tu dis « je suis » puis tu pousses plus de jetons ? Ta déclaration t'engageait déjà (==règle 90.d des tournois de la WSOP==) — le surplus ne compte pas. Un vrai ==string bet== (une mise en plusieurs fois), c'est autre chose : une mise ou une relance faite en plusieurs mouvements, avec un retour à ton stack, **sans** avoir annoncé « relance » d'abord — ou un geste trompeur destiné à provoquer une action hors tour (==règle 103 des tournois de la WSOP==).
 2. **Un seul mouvement.** Si tu n'annonces rien, tes jetons doivent partir en un seul mouvement vers l'avant.
 
 *Combien* tu devrais relancer — ouvertures à 2,5x, 3-bets à 3x, tailles selon la texture du board (les cartes communes) —, c'est de la stratégie, pas du règlement — tout ça se trouve dans le [pilier stratégie du Texas Hold'em](/fr/blog/holdem-strategy).
@@ -203,17 +203,17 @@ Quand miser, quand un call est rentable, quand lâcher une bonne main : c'est un
 
 ## Les erreurs de mise que je vois chaque semaine en live
 
-Dans les parties live à petites limites, quatre erreurs de mise reviennent sans cesse : pousser des jetons « pour suivre » alors que personne n'a misé, changer d'annonce après avoir dit « je suis », jeter un flop gratuit en grosse blinde, et poser un gros jeton en silence en croyant relancer. Les règles WSOP 90.a/90.b.1, 90.d, 84 (en tournoi) et 97 tranchent ces quatre cas, dans cet ordre.
+Dans les parties live à petites limites, quatre erreurs de mise reviennent sans cesse : pousser des jetons « pour suivre » alors que personne n'a misé, changer d'annonce après avoir dit « je suis », jeter un flop gratuit en grosse blinde, et poser un gros jeton en silence en croyant relancer. Les règles des tournois WSOP 90.a/90.b.1, 90.d, 84 et 97 tranchent ces quatre cas, dans cet ordre.
 
 Je joue chaque semaine une partie live à petites limites, et les mêmes erreurs d'action reviennent avec une régularité d'horloge :
 
 ### Erreur 1 — Suivre alors qu'on pourrait checker
 
-Premier à parler au flop, personne n'a misé, et un joueur encore novice pousse des jetons **en silence**, « pour suivre ». Il n'y a rien à suivre : selon la ==règle 90.a de la WSOP==, on mise par une annonce *ou* en poussant des jetons — il vient de miser sans le vouloir. S'il avait *dit* « je suis », la ==règle 90.b.1== en aurait fait un check. Quand personne n'a ouvert le tour, checke : si personne ne mise derrière toi, tu vois la carte suivante gratuitement.
+Premier à parler au flop, personne n'a misé, et un joueur encore novice pousse des jetons **en silence**, « pour suivre ». Il n'y a rien à suivre : selon la ==règle 90.a des tournois de la WSOP==, on mise par une annonce *ou* en poussant des jetons — il vient de miser sans le vouloir. S'il avait *dit* « je suis », la ==règle 90.b.1 des tournois== en aurait fait un check. Quand personne n'a ouvert le tour, checke : si personne ne mise derrière toi, tu vois la carte suivante gratuitement.
 
 ### Erreur 2 — « Je suis… non, je relance ! »
 
-« Je suis… non, je relance ! » Raté. En live, ton action est verrouillée à l'instant où tu l'annonces : selon la ==règle 90.d==, une annonce verbale faite à ton tour t'engage. (Ce n'est d'ailleurs pas un string bet ; le string bet, c'est la mise en plusieurs mouvements avec retour au stack décrite dans la FAQ. Même résultat, cela dit : le premier mot fait foi.) J'ai vu des donneurs trancher en simple call en plein milieu de la phrase plus souvent que je ne saurais le compter. Annonce « relance » *d'abord*, puis bouge tes jetons.
+« Je suis… non, je relance ! » Raté. En live, ton action est verrouillée à l'instant où tu l'annonces : selon la ==règle 90.d des tournois de la WSOP==, une annonce verbale faite à ton tour t'engage. (Ce n'est d'ailleurs pas un string bet ; le string bet, c'est la mise en plusieurs mouvements avec retour au stack décrite dans la FAQ. Même résultat, cela dit : le premier mot fait foi.) J'ai vu des donneurs trancher en simple call en plein milieu de la phrase plus souvent que je ne saurais le compter. Annonce « relance » *d'abord*, puis bouge tes jetons.
 
 ### Erreur 3 — La grosse blinde qui jette un flop gratuit
 
@@ -221,7 +221,7 @@ Tout le monde limpe (se contente de payer la grosse blinde), l'action arrive à 
 
 ### Erreur 4 — Le jeton unique posé en silence
 
-Face à une mise de $10, un joueur lâche en silence un seul jeton de $100 en attendant la monnaie *et* une relance. La ==règle du jeton unique (one-chip rule)== figure telle quelle dans le règlement de la WSOP (==règle 97==) : un seul gros jeton posé sans annonce n'est qu'un call. Pour relancer, le mot « relance » doit sortir **avant que le jeton touche la table**.
+Face à une mise de $10, un joueur lâche en silence un seul jeton de $100 en attendant la monnaie *et* une relance. La ==règle du jeton unique (one-chip rule)== figure telle quelle dans le règlement de la WSOP (==règle 97 des tournois==) : un seul gros jeton posé sans annonce n'est qu'un call. Pour relancer, le mot « relance » doit sortir **avant que le jeton touche la table**.
 
 ---
 
@@ -258,7 +258,7 @@ A. Ça dépend de la taille du tapis. S'il vaut une relance légale complète, l
 
 **Q. C'est quoi un string bet au poker ?**
 
-A. C'est essayer de miser ou de relancer en plusieurs mouvements — en retournant à ton stack entre les deux — sans avoir annoncé « relance » d'abord (==règle 103 des tournois de la WSOP==). Le second mouvement ne compte jamais — seuls les premiers jetons restent, jugés d'abord selon les règles du call à un jeton et à plusieurs jetons (règles 44–45 du TDA 2024). Là où s'applique le seuil de la moitié du minimum de la règle 43-A, mesure l'augmentation au-delà du call, pas le total des jetons : en dessous de la moitié de la plus grosse mise ou relance complète précédente, c'est un call ; à la moitié ou plus, il faut une relance minimale complète. Une annonce de relance préalable ou un tapis relèvent de leurs propres règles. La règle 103 des tournois de la WSOP interdit aussi un geste trompeur destiné à provoquer une action hors tour avant que ta propre action soit terminée. Dire « je suis » puis ajouter des jetons, ce n'est pas un string bet mais une annonce qui t'engage (==règle 90.d==) — même effet. Annonce ton action à voix haute — « relance » et le montant complet — ou mets tous tes jetons en un seul mouvement (règle 42 du TDA 2024).
+A. C'est essayer de miser ou de relancer en plusieurs mouvements — en retournant à ton stack entre les deux — sans avoir annoncé « relance » d'abord (==règle 103 des tournois de la WSOP==). Le second mouvement ne compte jamais — seuls les premiers jetons restent, jugés d'abord selon les règles du call à un jeton et à plusieurs jetons (règles 44–45 du TDA 2024). Là où s'applique le seuil de la moitié du minimum de la règle 43-A de la TDA 2024, mesure l'augmentation au-delà du call, pas le total des jetons : en dessous de la moitié de la plus grosse mise ou relance complète précédente, c'est un call ; à la moitié ou plus, il faut une relance minimale complète. Une annonce de relance préalable ou un tapis relèvent de leurs propres règles. La règle 103 des tournois de la WSOP interdit aussi un geste trompeur destiné à provoquer une action hors tour avant que ta propre action soit terminée. Dire « je suis » puis ajouter des jetons, ce n'est pas un string bet mais une annonce qui t'engage (==règle 90.d des tournois de la WSOP==) — même effet. Annonce ton action à voix haute — « relance » et le montant complet — ou mets tous tes jetons en un seul mouvement (règle 42 du TDA 2024).
 
 **Q. Que veut dire limper au poker ?**
 
@@ -274,7 +274,7 @@ A. Les règles te disent ce que tu as le droit de miser, pas ce que tu devrais m
 
 **Q. Peut-on se coucher sans miser au poker ?**
 
-A. Oui : dès que c'est ton tour, tu peux te coucher, même sans avoir misé. Mais si personne n'a misé devant toi, le check est gratuit — se coucher à ce moment-là, c'est jeter une main pour rien, comme la grosse blinde qui jette un flop gratuit. En tournoi, c'est même un « fold non standard » (règle 84 de la WSOP) qui peut valoir un avertissement.
+A. Oui : dès que c'est ton tour, tu peux te coucher, même sans avoir misé. Mais si personne n'a misé devant toi, le check est gratuit — se coucher à ce moment-là, c'est jeter une main pour rien, comme la grosse blinde qui jette un flop gratuit. En tournoi, c'est même un « fold non standard » (règle 84 des tournois de la WSOP) qui peut valoir un avertissement.
 
 ---
 

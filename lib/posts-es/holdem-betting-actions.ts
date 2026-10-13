@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la última apuesta o subida completa) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Ejemplo real: estás en el flop con K♠ 8♦. Nadie ha apostado, así que ==pas
 
 Retirarse (foldear) significa tirar tus cartas y abandonar la mano. No pagas nada nuevo, pero ==r:todas las fichas que ya pusiste se quedan en el bote==.
 
-Sí — siempre que la acción sea tuya puedes retirarte, incluso antes de apostar nada, y el fold es vinculante. Gratis del todo no es: en torneo, retirarte cuando no hay ninguna apuesta por delante cuenta como "fold no estándar" según la ==regla 84 de la WSOP== y puede costarte un aviso. Y ojo con la trampa: **tirarte cuando podrías pasar gratis es regalar una mano sin motivo**. Si nadie ha apostado, simplemente pasa.
+Sí — siempre que la acción sea tuya puedes retirarte, incluso antes de apostar nada, y el fold es vinculante. Gratis del todo no es: en torneo, retirarte cuando no hay ninguna apuesta por delante cuenta como "fold no estándar" según la ==regla 84 de torneos de la WSOP== y puede costarte un aviso. Y ojo con la trampa: **tirarte cuando podrías pasar gratis es regalar una mano sin motivo**. Si nadie ha apostado, simplemente pasa.
 
 Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la acción llegue a ti — tirarte antes de tiempo da información a los jugadores que aún están decidiendo, y en la mayoría de las salas te caerá un aviso o una sanción. Saber *cuándo* retirarse es la jugada correcta es una habilidad en sí misma — eso se trata en [cuándo foldear en el póker](/es/blog/holdem-when-to-fold).
 
@@ -130,7 +130,7 @@ La clave: el min-raise iguala el ==incremento== de la última apuesta o subida c
 
 Dos reglas del póker en vivo que vienen con la subida:
 
-1. **Anuncia "subo" — y la cantidad — antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: apostar o subir en varios movimientos (volviendo a tu stack por el camino) **sin** anunciar antes "subo" — o usar un gesto engañoso para provocar acción fuera de turno (==regla 103 de torneos de la WSOP==).
+1. **Anuncia "subo" — y la cantidad — antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d de torneos de la WSOP==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: apostar o subir en varios movimientos (volviendo a tu stack por el camino) **sin** anunciar antes "subo" — o usar un gesto engañoso para provocar acción fuera de turno (==regla 103 de torneos de la WSOP==).
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
 *Cuánto* deberías subir (aperturas de 2.5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
@@ -178,11 +178,11 @@ Juego una partida semanal en vivo de apuestas bajas, y los mismos errores de acc
 
 ### Error 1 — Pagar cuando podrías pasar
 
-Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1== lo habría convertido en un check. Cuando la calle está sin abrir, pasa — si nadie apuesta detrás de ti, ves la siguiente carta gratis.
+Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de torneos de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1 de torneos== lo habría convertido en un check. Cuando la calle está sin abrir, pasa — si nadie apuesta detrás de ti, ves la siguiente carta gratis.
 
 ### Error 2 — "Pago... ¡no, espera, subo!"
 
-"Pago... ¡no, espera, subo!" No. En el póker en vivo tu acción queda fijada en el momento en que la anuncias: según la ==regla 90.d==, la declaración verbal en tu turno es vinculante. (Y no es un string bet; eso es el empuje en varios movimientos que explico en las FAQ. El resultado es el mismo: manda la primera palabra.) He visto a crupieres dictaminar esto como un call a mitad de frase más veces de las que puedo contar. Anuncia "subo" *primero* y luego mueve las fichas.
+"Pago... ¡no, espera, subo!" No. En el póker en vivo tu acción queda fijada en el momento en que la anuncias: según la ==regla 90.d de torneos de la WSOP==, la declaración verbal en tu turno es vinculante. (Y no es un string bet; eso es el empuje en varios movimientos que explico en las FAQ. El resultado es el mismo: manda la primera palabra.) He visto a crupieres dictaminar esto como un call a mitad de frase más veces de las que puedo contar. Anuncia "subo" *primero* y luego mueve las fichas.
 
 ### Error 3 — La ciega grande que tira un flop gratis
 
@@ -190,7 +190,7 @@ Todos entran de limp, la acción llega a la ciega grande… y foldea. Eso es tir
 
 ### Error 4 — La ficha grande silenciosa
 
-Ante una apuesta de $10, un jugador lanza en silencio una sola ficha de $100 esperando cambio *y* una subida. La ==regla de la ficha única (one-chip rule)== está así en las reglas de la WSOP (==regla 97==): una sola ficha grande sin anunciar es solo un call. Para subir, "subo" tiene que salir **antes de que la ficha toque la mesa**.
+Ante una apuesta de $10, un jugador lanza en silencio una sola ficha de $100 esperando cambio *y* una subida. La ==regla de la ficha única (one-chip rule)== está así en las reglas de la WSOP (==regla 97 de torneos==): una sola ficha grande sin anunciar es solo un call. Para subir, "subo" tiene que salir **antes de que la ficha toque la mesa**.
 
 ---
 
@@ -227,7 +227,7 @@ A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103 de torneos de la WSOP==). El segundo movimiento nunca cuenta — solo valen las primeras fichas, aplicando primero las reglas de call con una o varias fichas (reglas 44–45 de la TDA, edición de 2024). Cuando corresponde el umbral de la mitad de la regla 43-A, se mide el incremento por encima del call, no el total: menos de la mitad de la mayor apuesta o incremento de subida completos anteriores es call; la mitad o más obliga a completar la subida mínima. Una declaración previa de subida o un all-in se rigen por sus reglas propias. La regla 103 de torneos de la WSOP también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta — "subo" y la cantidad total — o mueve todas las fichas en un solo movimiento (regla 42 de la TDA, edición de 2024).
+A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103 de torneos de la WSOP==). El segundo movimiento nunca cuenta — solo valen las primeras fichas, aplicando primero las reglas de call con una o varias fichas (reglas 44–45 de la TDA, edición de 2024). Cuando corresponde el umbral de la mitad de la regla 43-A de la TDA 2024, se mide el incremento por encima del call, no el total: menos de la mitad de la mayor apuesta o incremento de subida completos anteriores es call; la mitad o más obliga a completar la subida mínima. Una declaración previa de subida o un all-in se rigen por sus reglas propias. La regla 103 de torneos de la WSOP también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d de torneos de la WSOP==) — mismo efecto. Anuncia tu acción en voz alta — "subo" y la cantidad total — o mueve todas las fichas en un solo movimiento (regla 42 de la TDA, edición de 2024).
 
 **Q. ¿Qué significa limpear en el póker?**
 

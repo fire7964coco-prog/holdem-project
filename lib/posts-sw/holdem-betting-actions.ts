@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na bet au raise kamili ya mwisho), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — kwenye preflop kwa kawaida ni big blind pekee (au aliyeweka live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Mfano halisi: uko kwenye flop na K♠ 8♦. Hakuna aliyeweka bet, hivyo unafanya
 
 Fold ina maana unaacha karata zako na kuachana na mkono. Hulipi chochote kipya, lakini ==r:kila chipsi ulizoweka tayari zinabaki kwenye pot==.
 
-Ndiyo — wakati wowote action iko kwako unaweza fold, hata kabla ya kuweka chochote, na fold hiyo inashikilia. Lakini si bure kabisa: kwenye mashindano, ku-fold wakati mbele yako hakuna bet yoyote huhesabika kama "non-standard fold" chini ya ==WSOP Rule 84== na kunaweza kukuletea onyo. Na angalia mtego huu: **kufanya fold pale ungeweza check bure ni kutupa mkono bila sababu**. Kama hakuna aliyeweka bet, fanya check tu.
+Ndiyo — wakati wowote action iko kwako unaweza fold, hata kabla ya kuweka chochote, na fold hiyo inashikilia. Lakini si bure kabisa: kwenye mashindano, ku-fold wakati mbele yako hakuna bet yoyote huhesabika kama "non-standard fold" chini ya ==WSOP Tournament Rule 84== na kunaweza kukuletea onyo. Na angalia mtego huu: **kufanya fold pale ungeweza check bure ni kutupa mkono bila sababu**. Kama hakuna aliyeweka bet, fanya check tu.
 
 Sheria moja ya adabu ya live: usifanye fold ==nje ya zamu yako==. Subiri hadi action ifike kwako — kufold kabla ya wakati kunatoa taarifa kwa wachezaji ambao bado wanaamua, na vyumba vingi vya kadi vitakuonya au kukuadhibu. Kujua *lini* fold ndiyo hatua sahihi ni ujuzi wa aina yake.
 
@@ -130,7 +130,7 @@ Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise kamili ya m
 
 Sheria mbili za live poker zinazokuja na raise:
 
-1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: bet au raise kwa mienendo kadhaa inayojumuisha kurudi kwenye stack yako **bila** kutangaza "raise" kwanza — au ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao (==WSOP Tournament Rule 103==).
+1. **Tangaza "raise" kabla ya kusukuma chipsi.** Ukisema "call" kisha ukasukuma zaidi? Tamko lako lilikuwa tayari linafunga (==WSOP Tournament Rule 90.d==) — nyongeza haihesabiki. ==String bet== halisi ni kitu kingine: bet au raise kwa mienendo kadhaa inayojumuisha kurudi kwenye stack yako **bila** kutangaza "raise" kwanza — au ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao (==WSOP Tournament Rule 103==).
 2. **Mwendo mmoja.** Kama hutatangaza, chipsi zako lazima ziingie kwa mwendo mmoja wa mbele.
 
 *Kiasi* gani unatakiwa raise (open za 2.5x, 3-bet za 3x, sizing kulingana na texture ya bodi) ni strategy, si sheria.
@@ -174,11 +174,11 @@ Nacheza mchezo wa live wa stakes ndogo kila wiki, na makosa yale yale ya action 
 
 ### Kosa 1 — Kufanya call pale ungeweza check
 
-Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma chipsi **kimyakimya**, "ili kufanya call". Hakuna kitu cha ku-call: kwa mujibu wa ==WSOP Rule 90.a==, bet hufanywa kwa kutamka *au* kwa kusukuma chipsi — ndio kwanza ameweka bet bila kukusudia. Angesema "call" kwa *sauti*, ==Rule 90.b.1== ingeifanya kuwa check tu. Pale street haijafunguliwa, fanya check — kama hakuna atakayeweka bet nyuma yako, unaona karata inayofuata bure.
+Wa kwanza kucheza kwenye flop, hakuna aliyeweka bet, na mchezaji mgeni anasukuma chipsi **kimyakimya**, "ili kufanya call". Hakuna kitu cha ku-call: kwa mujibu wa ==WSOP Tournament Rule 90.a==, bet hufanywa kwa kutamka *au* kwa kusukuma chipsi — ndio kwanza ameweka bet bila kukusudia. Angesema "call" kwa *sauti*, ==Tournament Rule 90.b.1== ingeifanya kuwa check tu. Pale street haijafunguliwa, fanya check — kama hakuna atakayeweka bet nyuma yako, unaona karata inayofuata bure.
 
 ### Kosa 2 — "Nafanya call... la hasha, raise!"
 
-"Nafanya call... la hasha, raise!" Hapana. Kwenye live poker action yako inakwama pindi unapoitangaza — kwa mujibu wa ==Rule 90.d== tamko la mdomo kwenye zamu yako linafunga. (Hiyo si string bet, kwa njia; string bet ni kusukuma kwa mienendo mingi na kurudi kwenye stack kunakoelezwa kwenye FAQ. Matokeo ni yale yale: neno la kwanza ndilo linalotawala.) Nimeshuhudia madila wakihukumu hili kama flat call katikati ya sentensi mara nyingi kuliko ninavyoweza kuhesabu. Tangaza "raise" *kwanza*, kisha sukuma chipsi.
+"Nafanya call... la hasha, raise!" Hapana. Kwenye live poker action yako inakwama pindi unapoitangaza — kwa mujibu wa ==WSOP Tournament Rule 90.d== tamko la mdomo kwenye zamu yako linafunga. (Hiyo si string bet, kwa njia; string bet ni kusukuma kwa mienendo mingi na kurudi kwenye stack kunakoelezwa kwenye FAQ. Matokeo ni yale yale: neno la kwanza ndilo linalotawala.) Nimeshuhudia madila wakihukumu hili kama flat call katikati ya sentensi mara nyingi kuliko ninavyoweza kuhesabu. Tangaza "raise" *kwanza*, kisha sukuma chipsi.
 
 ### Kosa 3 — Big blind kufold flop ya bure
 
@@ -186,7 +186,7 @@ Kila mtu anafanya limp, action inafika kwa big blind, na wanafold. Hiyo ni flop 
 
 ### Kosa 4 — Chipsi moja ya kimya
 
-Akikabiliwa na bet ya $10, mchezaji anatupa kimya chipsi moja ya $100 akitegemea chenji *na* raise. ==One-chip rule== imeandikwa hivyo hivyo kwenye sheria za WSOP (==Rule 97==): chipsi moja kubwa isiyotangazwa ni call tu. Ili ku-raise, neno "raise" lazima litoke **kabla chipsi haijagusa meza**.
+Akikabiliwa na bet ya $10, mchezaji anatupa kimya chipsi moja ya $100 akitegemea chenji *na* raise. ==One-chip rule== imeandikwa hivyo hivyo kwenye sheria za WSOP (==Tournament Rule 97==): chipsi moja kubwa isiyotangazwa ni call tu. Ili ku-raise, neno "raise" lazima litoke **kabla chipsi haijagusa meza**.
 
 ---
 
@@ -222,7 +222,7 @@ A. Inategemea ukubwa wa all-in. Kama all-in ni raise kamili halali, action inaru
 
 **Q. String bet katika poker ni nini?**
 
-A. Kujaribu kuweka bet au raise kwa mienendo mingi — ukirudi kwenye stack yako katikati — bila kutangaza "raise" kwanza (==WSOP Tournament Rule 103==). Mwendo wa pili hauhesabiki kamwe — chipsi za kwanza tu ndizo zinasimama, na zinapimwa kwanza kwa sheria za call ya chipsi moja na chipsi nyingi (TDA 2024 Rules 44–45). Pale kizingiti cha nusu-ya-kiwango-cha-chini cha Rule 43-A kinapotumika, pima ongezeko juu ya call, si jumla ya chipsi: chini ya nusu ya bet au raise kamili kubwa zaidi iliyotangulia ni call; nusu au zaidi inalazimu min-raise kamili. Tamko la awali la raise au all-in hushughulikiwa kwa sheria zake. WSOP Tournament Rule 103 pia inakataza ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao kabla action yako haijakamilika. Kusema "call" kisha kuongeza si string bet bali ni tamko linalofunga (==Rule 90.d==) — athari ni ileile. Tangaza action yako kwa sauti — "raise" na kiasi kamili — au sukuma chipsi zote kwa mwendo mmoja (TDA 2024 Rule 42).
+A. Kujaribu kuweka bet au raise kwa mienendo mingi — ukirudi kwenye stack yako katikati — bila kutangaza "raise" kwanza (==WSOP Tournament Rule 103==). Mwendo wa pili hauhesabiki kamwe — chipsi za kwanza tu ndizo zinasimama, na zinapimwa kwanza kwa sheria za call ya chipsi moja na chipsi nyingi (TDA 2024 Rules 44–45). Pale kizingiti cha nusu-ya-kiwango-cha-chini cha TDA 2024 Rule 43-A kinapotumika, pima ongezeko juu ya call, si jumla ya chipsi: chini ya nusu ya bet au raise kamili kubwa zaidi iliyotangulia ni call; nusu au zaidi inalazimu min-raise kamili. Tamko la awali la raise au all-in hushughulikiwa kwa sheria zake. WSOP Tournament Rule 103 pia inakataza ishara ya udanganyifu ya kuwashawishi wengine kucheza kabla ya zamu yao kabla action yako haijakamilika. Kusema "call" kisha kuongeza si string bet bali ni tamko linalofunga (==WSOP Tournament Rule 90.d==) — athari ni ileile. Tangaza action yako kwa sauti — "raise" na kiasi kamili — au sukuma chipsi zote kwa mwendo mmoja (TDA 2024 Rule 42).
 
 **Q. Kufanya limp katika poker kuna maana gani?**
 

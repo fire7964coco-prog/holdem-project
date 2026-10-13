@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się ostatniemu pełnemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie zwykle wyłącznie jako duża ciemna (albo jako gracz, który wystawił żywego straddle'a).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -103,7 +103,7 @@ Realny przykład: jesteś na flopie z K♠ 8♦. Nikt nie postawił, więc ==cze
 
 Pas znaczy, że oddajesz karty i wychodzisz z rozdania. Nic nowego nie płacisz, ale ==r:wszystkie żetony, które już wrzuciłeś, zostają w puli==.
 
-Tak — kiedy ruch należy do ciebie, możesz spasować, nawet zanim cokolwiek postawisz, a pas jest wiążący. Zupełnie za darmo to jednak nie jest: w turnieju pas w sytuacji, gdy przed tobą nie stoi żaden zakład, liczy się jako „pas niestandardowy" według ==zasady 84 WSOP== i może skończyć się ostrzeżeniem. I uważaj na pułapkę: **pasowanie, gdy mógłbyś czeknąć za darmo, to wyrzucanie rozdania bez powodu**. Jeśli nikt nie postawił, po prostu czeknij.
+Tak — kiedy ruch należy do ciebie, możesz spasować, nawet zanim cokolwiek postawisz, a pas jest wiążący. Zupełnie za darmo to jednak nie jest: w turnieju pas w sytuacji, gdy przed tobą nie stoi żaden zakład, liczy się jako „pas niestandardowy" według ==zasady 84 regulaminu turniejowego WSOP== i może skończyć się ostrzeżeniem. I uważaj na pułapkę: **pasowanie, gdy mógłbyś czeknąć za darmo, to wyrzucanie rozdania bez powodu**. Jeśli nikt nie postawił, po prostu czeknij.
 
 Jedna zasada etykiety na żywo: nie pasuj ==poza kolejnością==. Poczekaj, aż ruch dojdzie do ciebie — pas przed czasem daje informację graczom, którzy jeszcze się zastanawiają, i w większości salonów dostaniesz za to ostrzeżenie albo karę. To, *kiedy* pas jest właściwym ruchem, to osobna umiejętność — o tym mówi poradnik o tym, kiedy pasować w pokerze.
 
@@ -130,7 +130,7 @@ Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego pełnego zakła
 
 Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
-1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: zakład lub przebicie w kilku ruchach, z powrotem do stacka po drodze, **bez** wcześniejszej zapowiedzi "raise" — albo zwodniczy gest, który ma sprowokować akcję poza kolejnością (==zasada 103 regulaminu turniejowego WSOP==).
+1. **Zapowiedz "raise" (przebijam), zanim ruszysz żetony.** Mówisz "sprawdzam", a potem wypychasz więcej żetonów? Twoja zapowiedź już była wiążąca (==zasada 90.d regulaminu turniejowego WSOP==) — nadwyżka się nie liczy. Prawdziwy ==string bet== to co innego: zakład lub przebicie w kilku ruchach, z powrotem do stacka po drodze, **bez** wcześniejszej zapowiedzi "raise" — albo zwodniczy gest, który ma sprowokować akcję poza kolejnością (==zasada 103 regulaminu turniejowego WSOP==).
 2. **Jeden ruch.** Jeśli nic nie zapowiadasz, żetony muszą wjechać jednym ruchem do przodu.
 
 *Ile* powinieneś przebijać (otwarcia 2,5x, 3-bety po 3x, dobór rozmiaru pod fakturę stołu) to strategia, a nie zasady — o tym jest filar strategii Texas Hold'em.
@@ -178,11 +178,11 @@ Gram cotygodniową grę na żywo o niskie stawki i te same błędy w akcjach pow
 
 ### Błąd 1 — sprawdzenie, gdy mógłbyś czeknąć
 
-Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypycha żetony "na sprawdzenie". Nie ma czego sprawdzać: według ==zasady 90.a WSOP== zakład stawia się deklaracją *albo* wypchnięciem żetonów — właśnie postawił, nie chcąc tego. Gdyby *powiedział* "sprawdzam", ==zasada 90.b.1== zrobiłaby z tego czek. Gdy ulica jest nieotwarta, czeknij — jeśli nikt za tobą nie postawi, zobaczysz następną kartę za darmo.
+Pierwszy do ruchu na flopie, nikt nie postawił, a nowy gracz **w ciszy** wypycha żetony "na sprawdzenie". Nie ma czego sprawdzać: według ==zasady 90.a regulaminu turniejowego WSOP== zakład stawia się deklaracją *albo* wypchnięciem żetonów — właśnie postawił, nie chcąc tego. Gdyby *powiedział* "sprawdzam", ==zasada 90.b.1 regulaminu turniejowego== zrobiłaby z tego czek. Gdy ulica jest nieotwarta, czeknij — jeśli nikt za tobą nie postawi, zobaczysz następną kartę za darmo.
 
 ### Błąd 2 — "Sprawdzam... nie, czekaj, przebijam!"
 
-"Sprawdzam... nie, czekaj, przebijam!" Nie ma tak. W pokerze na żywo akcja jest wiążąca w chwili, gdy ją zapowiadasz — według ==zasady 90.d== słowna deklaracja w twojej kolejce jest wiążąca. (To zresztą nie string bet; string bet to wypychanie w kilku ruchach z powrotem do stacka, opisane w FAQ. Skutek ten sam: liczy się pierwsze słowo.) Widziałem rozdających, którzy uznali to za zwykłe sprawdzenie w połowie zdania więcej razy, niż jestem w stanie policzyć. Zapowiedz "raise" *najpierw*, a potem rusz żetony.
+"Sprawdzam... nie, czekaj, przebijam!" Nie ma tak. W pokerze na żywo akcja jest wiążąca w chwili, gdy ją zapowiadasz — według ==zasady 90.d regulaminu turniejowego WSOP== słowna deklaracja w twojej kolejce jest wiążąca. (To zresztą nie string bet; string bet to wypychanie w kilku ruchach z powrotem do stacka, opisane w FAQ. Skutek ten sam: liczy się pierwsze słowo.) Widziałem rozdających, którzy uznali to za zwykłe sprawdzenie w połowie zdania więcej razy, niż jestem w stanie policzyć. Zapowiedz "raise" *najpierw*, a potem rusz żetony.
 
 ### Błąd 3 — duży blind pasujący darmowy flop
 
@@ -190,7 +190,7 @@ Wszyscy limpują, ruch dochodzi do dużego blinda… i on pasuje. To darmowy flo
 
 ### Błąd 4 — cichy pojedynczy żeton
 
-Przy zakładzie $10 gracz w ciszy wrzuca jeden żeton $100, licząc na resztę *i* przebicie. ==Zasada jednego żetonu (one-chip rule)== stoi tak w regulaminie WSOP (==zasada 97==): niezapowiedziany pojedynczy duży żeton to tylko sprawdzenie. Żeby przebić, "raise" musi paść **zanim żeton dotknie stołu**.
+Przy zakładzie $10 gracz w ciszy wrzuca jeden żeton $100, licząc na resztę *i* przebicie. ==Zasada jednego żetonu (one-chip rule)== stoi tak w regulaminie WSOP (==zasada 97 regulaminu turniejowego==): niezapowiedziany pojedynczy duży żeton to tylko sprawdzenie. Żeby przebić, "raise" musi paść **zanim żeton dotknie stołu**.
 
 ---
 
@@ -226,7 +226,7 @@ A. Zależy od rozmiaru all-inu. Jeśli all-in jest pełnym legalnym przebiciem, 
 
 **Q. Co to jest string bet w pokerze?**
 
-A. Próba postawienia lub przebicia w kilku ruchach — z powrotem do stacka w międzyczasie — bez wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==). Drugi ruch nigdy się nie liczy — ważne są tylko pierwsze żetony, oceniane najpierw według zasad sprawdzenia jednym i wieloma żetonami (TDA 2024, zasady 44–45). Tam, gdzie stosuje się próg połowy z zasady 43-A, mierzy się nadwyżkę ponad sprawdzenie, a nie sumę żetonów: poniżej połowy największego wcześniejszego pełnego zakładu lub przebicia to sprawdzenie; połowa lub więcej wymaga pełnego min-raise. Wcześniejsza deklaracja przebicia albo all-in podlegają własnym zasadom. Zasada 103 regulaminu turniejowego WSOP zakazuje też zwodniczego gestu, który ma sprowokować akcję poza kolejnością, zanim twoja akcja się zakończy. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d==) — efekt ten sam. Zapowiedz akcję słownie — "raise" i pełną kwotę — albo wrzuć wszystkie żetony jednym ruchem (TDA 2024, zasada 42).
+A. Próba postawienia lub przebicia w kilku ruchach — z powrotem do stacka w międzyczasie — bez wcześniejszej zapowiedzi "raise" (==zasada 103 regulaminu turniejowego WSOP==). Drugi ruch nigdy się nie liczy — ważne są tylko pierwsze żetony, oceniane najpierw według zasad sprawdzenia jednym i wieloma żetonami (TDA 2024, zasady 44–45). Tam, gdzie stosuje się próg połowy z zasady 43-A TDA 2024, mierzy się nadwyżkę ponad sprawdzenie, a nie sumę żetonów: poniżej połowy największego wcześniejszego pełnego zakładu lub przebicia to sprawdzenie; połowa lub więcej wymaga pełnego min-raise. Wcześniejsza deklaracja przebicia albo all-in podlegają własnym zasadom. Zasada 103 regulaminu turniejowego WSOP zakazuje też zwodniczego gestu, który ma sprowokować akcję poza kolejnością, zanim twoja akcja się zakończy. Powiedzenie "sprawdzam", a potem dołożenie, to nie string bet, tylko wiążąca zapowiedź (==zasada 90.d regulaminu turniejowego WSOP==) — efekt ten sam. Zapowiedz akcję słownie — "raise" i pełną kwotę — albo wrzuć wszystkie żetony jednym ruchem (TDA 2024, zasada 42).
 
 **Q. Co znaczy limpować w pokerze?**
 

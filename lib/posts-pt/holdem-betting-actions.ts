@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à última aposta ou raise completo) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -104,7 +104,7 @@ Exemplo real: você está no flop com K♠ 8♦. Ninguém apostou, então você 
 
 Foldar significa entregar suas cartas e desistir da mão. Você não paga nada novo, mas ==r:cada ficha que você já colocou fica no pote==.
 
-Sim — sempre que a ação estiver com você, você pode foldar, mesmo antes de apostar qualquer coisa, e o fold é vinculante. De graça não é: em torneio, foldar quando não há aposta à sua frente conta como "fold não padrão" pela ==regra 84 da WSOP== e pode render uma advertência. E repare na armadilha: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
+Sim — sempre que a ação estiver com você, você pode foldar, mesmo antes de apostar qualquer coisa, e o fold é vinculante. De graça não é: em torneio, foldar quando não há aposta à sua frente conta como "fold não padrão" pela ==regra 84 de torneios da WSOP== e pode render uma advertência. E repare na armadilha: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
 
 Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a ação chegar até você — foldar antes entrega informação aos jogadores que ainda estão decidindo, e a maioria dos clubes avisa ou penaliza. Saber *quando* foldar é a jogada certa é uma habilidade à parte — é o tema de [quando foldar no poker](/pt/blog/holdem-when-to-fold).
 
@@ -131,7 +131,7 @@ O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou rai
 
 Duas regras do poker ao vivo que vêm junto com o raise:
 
-1. **Anuncie "raise" e o valor antes de mover as fichas.** Disse "call" e depois empurrou mais? Sua declaração já era vinculante (==regra 90.d==) — o extra não conta. O ==string bet== de verdade é outra coisa: colocar fichas em vários movimentos que incluem um retorno ao seu stack **sem** anunciar "raise" antes — ou usar um gesto enganoso para provocar ação fora de vez (==regra 103 de torneios da WSOP==).
+1. **Anuncie "raise" e o valor antes de mover as fichas.** Disse "call" e depois empurrou mais? Sua declaração já era vinculante (==regra 90.d de torneios da WSOP==) — o extra não conta. O ==string bet== de verdade é outra coisa: colocar fichas em vários movimentos que incluem um retorno ao seu stack **sem** anunciar "raise" antes — ou usar um gesto enganoso para provocar ação fora de vez (==regra 103 de torneios da WSOP==).
 2. **Um movimento só.** Se você não anunciar, suas fichas precisam entrar em um único movimento para a frente.
 
 *Quanto* você deve aumentar (opens de 2,5x, 3-bets de 3x, sizing pela textura do board) é estratégia, não regra — isso mora no [pilar de estratégia do Texas Hold'em](/pt/blog/holdem-strategy).
@@ -179,11 +179,11 @@ Jogo um home game ao vivo de apostas baixas toda semana, e os mesmos erros de a�
 
 ### Erro 1 — Pagar quando dava para dar check
 
-Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1== teria transformado isso num check. Quando a street está sem aposta, dê check — se ninguém apostar depois de você, você vê a próxima carta de graça.
+Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a de torneios da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1 de torneios== teria transformado isso num check. Quando a street está sem aposta, dê check — se ninguém apostar depois de você, você vê a próxima carta de graça.
 
 ### Erro 2 — "Eu pago... aliás, aumento!"
 
-"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia: pela ==regra 90.d==, a declaração verbal na sua vez é vinculante. (E isso não é string bet; string bet é o empurrão em vários movimentos que explico no FAQ. O resultado é o mesmo: vale a primeira palavra.) Já vi dealer decretar call no meio da frase mais vezes do que eu gostaria. Anuncie "raise" *primeiro*, depois mova as fichas.
+"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia: pela ==regra 90.d de torneios da WSOP==, a declaração verbal na sua vez é vinculante. (E isso não é string bet; string bet é o empurrão em vários movimentos que explico no FAQ. O resultado é o mesmo: vale a primeira palavra.) Já vi dealer decretar call no meio da frase mais vezes do que eu gostaria. Anuncie "raise" *primeiro*, depois mova as fichas.
 
 ### Erro 3 — O big blind foldando um flop grátis
 
@@ -191,7 +191,7 @@ Todo mundo entra pagando só o blind, a ação chega ao big blind, e ele folda. 
 
 ### Erro 4 — A ficha única em silêncio
 
-Diante de uma aposta de $10, um jogador joga em silêncio uma única ficha de $100 esperando troco *e* um raise. A ==regra da ficha única== (one-chip rule) está assim nas regras da WSOP (==regra 97==): uma ficha grande jogada sozinha sem anúncio é só um call. Para aumentar, o "raise" precisa sair **antes de a ficha tocar a mesa**.
+Diante de uma aposta de $10, um jogador joga em silêncio uma única ficha de $100 esperando troco *e* um raise. A ==regra da ficha única== (one-chip rule) está assim nas regras da WSOP (==regra 97 de torneios==): uma ficha grande jogada sozinha sem anúncio é só um call. Para aumentar, o "raise" precisa sair **antes de a ficha tocar a mesa**.
 
 ---
 
@@ -228,7 +228,7 @@ A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a a�
 
 **Q. O que é string bet no poker?**
 
-A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103 de torneios da WSOP==). O segundo movimento nunca conta — só valem as primeiras fichas, avaliadas primeiro pelas regras de call com uma ou várias fichas (regras 44–45 da TDA, edição de 2024). Quando se aplica o limite de metade da regra 43-A, mede-se o acréscimo acima do call, não o total: abaixo de metade da maior aposta completa ou do maior incremento de raise completo anterior é call; metade ou mais obriga a completar o min-raise. Uma declaração prévia de raise ou um all-in seguem suas próprias regras. A regra 103 de torneios da WSOP também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta — "raise" e o valor total — ou mova todas as fichas em um único movimento (regra 42 da TDA, edição de 2024).
+A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103 de torneios da WSOP==). O segundo movimento nunca conta — só valem as primeiras fichas, avaliadas primeiro pelas regras de call com uma ou várias fichas (regras 44–45 da TDA, edição de 2024). Quando se aplica o limite de metade da regra 43-A da TDA 2024, mede-se o acréscimo acima do call, não o total: abaixo de metade da maior aposta completa ou do maior incremento de raise completo anterior é call; metade ou mais obriga a completar o min-raise. Uma declaração prévia de raise ou um all-in seguem suas próprias regras. A regra 103 de torneios da WSOP também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d de torneios da WSOP==) — mesmo efeito. Anuncie sua ação em voz alta — "raise" e o valor total — ou mova todas as fichas em um único movimento (regra 42 da TDA, edição de 2024).
 
 **Q. O que significa dar limp no poker?**
 

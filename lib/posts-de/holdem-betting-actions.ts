@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht der letzten vollen Bet oder dem letzten vollen Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -104,7 +104,7 @@ Echtes Beispiel: Du bist am Flop mit K♠ 8♦. Niemand hat gesetzt, also ==chec
 
 Folden heißt, dass du deine Karten aufgibst und aus der Hand aussteigst. Du zahlst nichts Neues, aber ==r:jeder Chip, den du bereits gelegt hast, bleibt im Pot==.
 
-Ja – wenn du an der Reihe bist, kannst du jederzeit folden, sogar bevor du irgendetwas gesetzt hast, und der Fold ist dann bindend. Folgenlos ist er trotzdem nicht: Im Turnier gilt ein Fold, obwohl vor dir gar kein Einsatz steht, nach ==WSOP Rule 84== als „Non-Standard Fold“ – und dafür kannst du verwarnt werden. Und genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
+Ja – wenn du an der Reihe bist, kannst du jederzeit folden, sogar bevor du irgendetwas gesetzt hast, und der Fold ist dann bindend. Folgenlos ist er trotzdem nicht: Im Turnier gilt ein Fold, obwohl vor dir gar kein Einsatz steht, nach ==WSOP Tournament Rule 84== als „Non-Standard Fold“ – und dafür kannst du verwarnt werden. Und genau da lauert die Falle: **Zu folden, wenn du gratis checken könntest, heißt eine Hand ohne Grund wegzuwerfen.** Wenn niemand gesetzt hat, check einfach.
 
 Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die Action bei dir ankommt – wer zu früh foldet, gibt den noch überlegenden Spielern Informationen, und die meisten Cardrooms verwarnen oder bestrafen das. Zu wissen, *wann* der Fold der richtige Spielzug ist, ist eine eigene Fähigkeit für sich – das behandelt [wann du beim Poker folden solltest](/de/blog/holdem-when-to-fold).
 
@@ -133,7 +133,7 @@ Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der l
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
-1. **Sag „Raise“ – samt Betrag –, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: eine Bet oder ein Raise in mehreren Bewegungen, bei denen du zwischendurch auf deinen eigenen Stack zurückgreifst, **ohne** vorher „Raise“ anzusagen – oder eine täuschende Geste, die Action außer der Reihe provozieren soll (==WSOP Tournament Rule 103==).
+1. **Sag „Raise“ – samt Betrag –, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==WSOP Tournament Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: eine Bet oder ein Raise in mehreren Bewegungen, bei denen du zwischendurch auf deinen eigenen Stack zurückgreifst, **ohne** vorher „Raise“ anzusagen – oder eine täuschende Geste, die Action außer der Reihe provozieren soll (==WSOP Tournament Rule 103==).
 2. **Eine Bewegung.** Wenn du nichts ansagst, müssen deine Chips in einer einzigen Vorwärtsbewegung in den Pot.
 
 Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde – das gehört in die [Strategie-Säule zum Texas Hold'em](/de/blog/holdem-strategy).
@@ -181,11 +181,11 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 ### Fehler 1 – Callen, wenn du checken könntest
 
-Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken – setzt niemand hinter dir, siehst du die nächste Karte gratis.
+Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Tournament Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Tournament Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken – setzt niemand hinter dir, siehst du die nächste Karte gratis.
 
 ### Fehler 2 – „Ich calle… nein, Raise!“
 
-„Ich calle... nein, warte, Raise!“ Nö. Im Live-Poker ist deine Aktion in dem Moment bindend, in dem du sie ansagst – nach ==Rule 90.d== ist eine Ansage in der eigenen Reihe verbindlich. (Ein String Raise ist das übrigens nicht; der ist das Nachschieben in mehreren Bewegungen aus der FAQ. Ergebnis ist dasselbe: Das erste Wort zählt.) Ich habe öfter, als ich zählen kann, gesehen, wie Dealer das mitten im Satz als Flat Call gewertet haben. Sag *zuerst* „Raise“, beweg dann die Chips.
+„Ich calle... nein, warte, Raise!“ Nö. Im Live-Poker ist deine Aktion in dem Moment bindend, in dem du sie ansagst – nach ==WSOP Tournament Rule 90.d== ist eine Ansage in der eigenen Reihe verbindlich. (Ein String Raise ist das übrigens nicht; der ist das Nachschieben in mehreren Bewegungen aus der FAQ. Ergebnis ist dasselbe: Das erste Wort zählt.) Ich habe öfter, als ich zählen kann, gesehen, wie Dealer das mitten im Satz als Flat Call gewertet haben. Sag *zuerst* „Raise“, beweg dann die Chips.
 
 ### Fehler 3 – Der Big Blind foldet einen Gratis-Flop
 
@@ -193,7 +193,7 @@ Alle limpen nur, die Action erreicht den Big Blind – und er foldet. Das ist ei
 
 ### Fehler 4 – Der stumme einzelne Chip
 
-Ein Spieler steht vor einem €10-Bet und wirft wortlos einen einzelnen €100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. Die ==One-Chip-Regel== steht so in den WSOP-Regeln (==Rule 97==): Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Willst du raisen, muss „Raise“ fallen, **bevor der Chip die Tischfläche berührt**. Und Wechselgeld über die Setzaktion zu holen, ist ohnehin unerwünscht (==Rule 99==).
+Ein Spieler steht vor einem €10-Bet und wirft wortlos einen einzelnen €100-Chip rein – in der Erwartung von Wechselgeld *und* einem Raise. Die ==One-Chip-Regel== steht so in den WSOP-Regeln (==Tournament Rule 97==): Ein unangesagter, einzelner überdimensionierter Chip ist nur ein Call. Willst du raisen, muss „Raise“ fallen, **bevor der Chip die Tischfläche berührt**. Und Wechselgeld über die Setzaktion zu holen, ist ohnehin unerwünscht (==Rule 99==).
 
 ---
 
@@ -234,7 +234,7 @@ A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler
 
 **Q. Was ist ein String Bet beim Poker?**
 
-A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==WSOP Tournament Rule 103==). Die zweite Bewegung zählt nie – nur die ersten Chips gelten, zunächst beurteilt nach den Call-Regeln für einen oder mehrere Chips (TDA-Regeln 44–45, Ausgabe 2024). Wo die Halb-Minimum-Schwelle aus Regel 43-A greift, zählt der Betrag über dem Call, nicht die gesamte Chipsumme: Unter der Hälfte der größten vorherigen vollen Bet oder Raise-Erhöhung ist es ein Call, ab der Hälfte muss auf den vollen Min-Raise ergänzt werden. Eine vorherige Raise-Ansage oder ein All-in wird nach den jeweils eigenen Regeln behandelt. WSOP Tournament Rule 103 verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an – „Raise“ samt vollem Betrag – oder beweg alle Chips in einer Bewegung (TDA-Regel 42, Ausgabe 2024).
+A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==WSOP Tournament Rule 103==). Die zweite Bewegung zählt nie – nur die ersten Chips gelten, zunächst beurteilt nach den Call-Regeln für einen oder mehrere Chips (TDA-Regeln 44–45, Ausgabe 2024). Wo die Halb-Minimum-Schwelle aus Regel 43-A der TDA 2024 greift, zählt der Betrag über dem Call, nicht die gesamte Chipsumme: Unter der Hälfte der größten vorherigen vollen Bet oder Raise-Erhöhung ist es ein Call, ab der Hälfte muss auf den vollen Min-Raise ergänzt werden. Eine vorherige Raise-Ansage oder ein All-in wird nach den jeweils eigenen Regeln behandelt. WSOP Tournament Rule 103 verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==WSOP Tournament Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an – „Raise“ samt vollem Betrag – oder beweg alle Chips in einer Bewegung (TDA-Regel 42, Ausgabe 2024).
 
 **Q. Was bedeutet Limpen beim Poker?**
 
