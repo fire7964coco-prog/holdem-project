@@ -1,3 +1,7 @@
+## 2026-10-13 (25) — 승률 시뮬레이터 공용 결함 3건 `ba808d72` · MB-321
+
+- 사장님 «시뮬레이터 공용 결함 3건만». 원인 = `app/win-rate-quiz/_simulator.tsx` WinTieLose 한 덩어리 `whitespace-nowrap`(min-w-0 칸에서 넘쳐 잘림) · 퍼센트 전부 `toFixed()%` 고정. 처방: 승·무·패를 항목 단위 nowrap + flex-wrap(구분점은 앞 항목 끝) · QuizUI `decimalComma`·`percentPrefix`·`percentGap` 추가 → `pct()`·`dnum()`로 공용 UI 퍼센트 전부(배지·차트·표·팟오즈 포함) · de·fr·pt·id·vi·tr·ru 사전에 키 · pt 문자열 소수 `dec()`. 전후 실측(라이브 vs 로컬 dev): tr 1440 «Kaybe…»·ru 360 «Проигрыш 79…» 잘림 → 둘째 줄로 · fr «19,5 %» · tr «%16,4». 비교 그림 `tmp/screen/wtl-compare-*.png`(비추적). 빌드 성공(재빌드는 dev 서버 PID 45632·41792 종료 뒤). 
+
 ## 2026-10-13 (24) — Google 가입 언어 태그 `68bc46d2` · MB-320
 
 - 사장님 «구글 가입 설정할 때 수파베이스 SQL 안 필요했나?» → Google 공급자는 이미 켜져 있고(KO 로그인에서 쓰던 것) 공급자 설정은 SQL이 아니라 대시보드라 추가 SQL 불필요. 확인 중 발견: OAuth 가입은 profiles.language가 늘 'ko'(트리거가 metadata language만 봄) → 비-KO 회원 글·채팅이 한국어 태그. 콜백에서 새 계정·비-KO next면 로케일로 갱신(RLS 본인 수정). 빌드 성공. 🪶 종단 확인은 실제 Google 가입 1회 필요.
