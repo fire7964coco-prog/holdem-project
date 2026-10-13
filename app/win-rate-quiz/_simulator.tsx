@@ -316,6 +316,14 @@ export interface QuizUI {
    * 없으면 en-US. 같은 화면의 사전 문장(로케일 파일)과 숫자 꼴이 어긋나지 않게 한다.
    */
   fmtNum?: (x: number) => string;
+  /**
+   * 공용 UI 퍼센트 표기 — 계산기 사전(numberLocale·percentPrefix·percentGap)과 같은 판단.
+   * decimalComma = «35,4%»(de·fr·pt·id·vi·tr·ru) · percentPrefix = tr «%35,4» · percentGap = fr 고정공백 «35,4 %».
+   * 없으면 «35.4%». 숫자 값·자릿수는 전 언어 동일(§13) — 표시 꼴만 바뀐다.
+   */
+  decimalComma?: boolean;
+  percentPrefix?: boolean;
+  percentGap?: string;
   /** 규칙·단서 */
   ruleTitle: string;
   /** 고른 성향의 규칙을 그 자리에 적는다 */
@@ -373,13 +381,32 @@ function PosBadge({ pos, color, glow }: { pos: string; color: string; glow: bool
 /** 딜러 버튼 = kit-v1 ui/dealer.svg */
 const DealerChip = () => <KitDealer size={18} />;
 
-/** 승·무·패 한 줄 — 무승부가 0.05% 미만이면 빼서 줄을 짧게 둔다 */
+/** 공용 UI 소수 — 페이지 언어의 소수 구분자(값은 그대로, 표시만) */
+function dnum(ui: QuizUI, s: string): string {
+  return ui.decimalComma ? s.replace(".", ",") : s;
+}
+/** 공용 UI 퍼센트 — 소수 구분자 + 기호 자리(tr «%35,4» · fr «35,4 %») */
+function pct(ui: QuizUI, v: number, digits = 1): string {
+  const s = dnum(ui, v.toFixed(digits));
+  return ui.percentPrefix ? `%${s}` : `${s}${ui.percentGap ?? ""}%`;
+}
+
+/**
+ * 승·무·패 줄 — 무승부가 0.05% 미만이면 빼서 줄을 짧게 둔다.
+ * ★항목 단위로 줄바꿈한다 — 한 덩어리 nowrap이면 1440 오른쪽 칸(es·pt·vi·tr)·360(tr·ru)에서 «패»가 잘렸다.
+ *   구분점은 앞 항목 끝에 붙여, 둘째 줄이 «·»로 시작하지 않게 둔다.
+ */
 function WinTieLose({ split, ui, className }: { split: EquitySplit; ui: QuizUI; className?: string }) {
+  const items = [
+    `${ui.winShort} ${pct(ui, split.win)}`,
+    ...(split.tie >= 0.05 ? [`${ui.tieShort} ${pct(ui, split.tie)}`] : []),
+    `${ui.loseShort} ${pct(ui, split.lose)}`,
+  ];
   return (
-    <span className={`text-[10.5px] text-white/55 tabular-nums whitespace-nowrap ${className ?? ""}`}>
-      {ui.winShort} {split.win.toFixed(1)}%
-      {split.tie >= 0.05 && <> · {ui.tieShort} {split.tie.toFixed(1)}%</>}
-      {" · "}{ui.loseShort} {split.lose.toFixed(1)}%
+    <span className={`flex flex-wrap gap-x-1 text-[10.5px] text-white/55 tabular-nums ${className ?? ""}`}>
+      {items.map((t, i) => (
+        <span key={i} className="whitespace-nowrap">{t}{i < items.length - 1 ? " ·" : ""}</span>
+      ))}
     </span>
   );
 }
@@ -417,7 +444,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
     })
     .filter((e): e is NonNullable<typeof e> => !!e)
     .filter((e) => {
-      const k = `${e.i}:${badgePct(e.v)}`;
+      const k = `${e.i}:${badgePct(e.v, ui)}`;
       if (seenEnd.has(k)) return false;
       seenEnd.add(k);
       return true;
@@ -452,7 +479,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
           {[0, 25, 50, 75, 100].map((v) => (
             <g key={v}>
               <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="rgba(255,255,255,0.08)" strokeWidth={1} />
-              <text x={L - 5} y={y(v) + 3} textAnchor="end" fontSize={9} fill="rgba(255,255,255,0.4)">{v}%</text>
+              <text x={L - 5} y={y(v) + 3} textAnchor="end" fontSize={9} fill="rgba(255,255,255,0.4)">{pct(ui, v, 0)}</text>
             </g>
           ))}
           {streets.map((s, i) => (
@@ -475,7 +502,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
           })}
           {ends.map((e) => (
             <text key={e.s.key} x={x(e.i) + 7} y={e.ly + 3} fontSize={9.5} fontWeight={700} fill="rgba(255,255,255,0.8)">
-              {badgePct(e.v)}
+              {badgePct(e.v, ui)}
             </text>
           ))}
         </svg>
@@ -490,7 +517,7 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
               strokeDasharray={s.dashed ? "4 3" : undefined} /></svg>
             {/* 말줄임 대신 줄바꿈 — de «Was du gesehen hast»가 «…»로 잘렸다(MA-507 F-11) */}
             <span className="min-w-0 leading-tight break-words">{s.name}</span>
-            <b className="ml-auto shrink-0 text-white">{s.values[shown] === undefined ? "—" : `${s.values[shown]!.toFixed(1)}%`}</b>
+            <b className="ml-auto shrink-0 text-white">{s.values[shown] === undefined ? "—" : pct(ui, s.values[shown]!)}</b>
           </span>
         ))}
       </div>
@@ -500,15 +527,15 @@ function EquityChart({ series, streets, ui }: { series: ChartSeries[]; streets: 
 }
 
 /** 배지용 정수 % — 0.4%를 «0%», 99.6%를 «100%»로 반올림하면 «이미 끝난 판»처럼 읽힌다 */
-function badgePct(x: number): string {
-  if (x > 0 && x < 1) return "<1%";
-  if (x > 99 && x < 100) return ">99%";
-  return `${Math.round(x)}%`;
+function badgePct(x: number, ui: QuizUI): string {
+  if (x > 0 && x < 1) return `<${pct(ui, 1, 0)}`;
+  if (x > 99 && x < 100) return `>${pct(ui, 99, 0)}`;
+  return pct(ui, Math.round(x), 0);
 }
 
 // ── 좌석 ────────────────────────────────────────────────────────────────────
-function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor, eq, eqColor, compact }: {
-  pos: string; isBtn: boolean; isHero: boolean; heroWord: string;
+function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner, color, label, isDead, statusText, statusColor, eq, eqColor, compact, ui }: {
+  pos: string; isBtn: boolean; isHero: boolean; heroWord: string; ui: QuizUI;
   /** 9인 테이블 — 좌석 최소 폭·패 이름 폭을 줄인다(폰 한 줄 4석) */
   compact?: boolean;
   cards?: QuizCard[]; faceDown?: boolean; folded?: boolean; isWinner?: boolean;
@@ -538,7 +565,7 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
         {eq !== undefined && (
           <span className="text-[10px] font-black tabular-nums leading-none rounded px-1 py-[2px] text-white"
             style={{ background: "var(--wrq-shade)", borderLeft: `3px solid ${eqColor ?? color}` }}>
-            {badgePct(eq)}
+            {badgePct(eq, ui)}
           </span>
         )}
       </div>
@@ -1162,13 +1189,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
     // 프리플랍에 들어오지 않은 좌석 = 처음부터 폴드
     if (!inHand) {
-      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} compact={compact}
+      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} ui={ui} compact={compact}
         folded color={MUTED} statusText={ui.folded} />;
     }
     const k = slotToIdx[slot];
     const hasFolded = foldedSlots.has(slot);
     if (hasFolded) {
-      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} compact={compact}
+      return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={false} heroWord={ui.hero} ui={ui} compact={compact}
         folded color={MUTED} statusText={ui.folded} />;
     }
 
@@ -1190,7 +1217,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
 
     const isWinner = showdown && winnerSlots.some((w) => w.slot === slot);
 
-    return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero} compact={compact}
+    return <Seat key={slot} pos={pos} isBtn={isBtn} isHero={isHero} heroWord={ui.hero} ui={ui} compact={compact}
       cards={sim.hands[k]} faceDown={!isHero && !cardsUp}
       color={isHero ? GOLD : LIVE} label={label} isWinner={isWinner}
       statusText={statusText} statusColor={act === "raise" ? BAD_DARK : "rgba(255,255,255,0.55)"}
@@ -1565,7 +1592,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             </div>
             <div className="flex items-end gap-2 mt-1">
               <span className="text-3xl lg:text-4xl font-black tabular-nums leading-none text-white">
-                {guess}<span className="text-2xl">%</span>
+                {ui.percentPrefix && <span className="text-2xl">%</span>}{dnum(ui, String(guess))}{!ui.percentPrefix && <span className="text-2xl">{ui.percentGap ?? ""}%</span>}
               </span>
               <span className="flex flex-col leading-tight pb-0.5 min-w-0">
                 <span className="text-[11px] text-white/50 whitespace-nowrap">{ui.vsOpponents(liveOpponents)}</span>
@@ -1589,7 +1616,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
         </div>
         <div className="flex items-end gap-2 mt-1">
           <span className="text-3xl lg:text-4xl font-black tabular-nums leading-none" style={{ color: GOLD }}>
-            {rec.equity.toFixed(1)}<span className="text-2xl">%</span>
+            {ui.percentPrefix && <span className="text-2xl">%</span>}{dnum(ui, rec.equity.toFixed(1))}{!ui.percentPrefix && <span className="text-2xl">{ui.percentGap ?? ""}%</span>}
           </span>
           {/* 승·무·패 분리 (S-034 ④) — 큰 숫자는 승 + 무승부 몫이다.
               한 줄에 붙이면 데스크톱 오른쪽 칸(316px)에서 «패»가 잘린다 → 상대 수 아래 둘째 줄로 */}
@@ -1604,7 +1631,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
           {/* 필요 승률 눈금(S-034 ⑥) — 금색 막대가 이 선을 넘으면 콜이 본전 이상. 숫자 없이 판정이 보인다 */}
           {rec.required !== null && (
             <span className="absolute top-0 bottom-0 w-[2px] -ml-px" role="img"
-              aria-label={`${ui.requiredLabel} ${rec.required.toFixed(1)}%`} title={`${ui.requiredLabel} ${rec.required.toFixed(1)}%`}
+              aria-label={`${ui.requiredLabel} ${pct(ui, rec.required)}`} title={`${ui.requiredLabel} ${pct(ui, rec.required)}`}
               style={{ left: `${Math.min(rec.required, 100)}%`, background: REVEAL }} />
           )}
           {/* 퀴즈 답을 낸 스트리트 — 내 짐작 자리에 흰 눈금 */}
@@ -1633,7 +1660,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="flex items-baseline justify-between gap-2">
               <span className="text-[11px] text-white/55">{ui.revealedLabel}</span>
               <span className="text-lg font-black tabular-nums" style={{ color: REVEAL }}>
-                {known.hero.equity.toFixed(1)}%
+                {pct(ui, known.hero.equity)}
               </span>
             </div>
             <WinTieLose split={known.hero} ui={ui} className="block text-right" />
@@ -1668,12 +1695,12 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {ui.potBeforeLabel} <b className="text-foreground">{fmt(rec.potBefore)}</b>
               {" · "}{ui.toCallLabel} <b className="text-foreground">{fmt(rec.toCall)}</b>
               {" → "}{ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} ={" "}
-              <b className="text-foreground">{rec.required!.toFixed(oddsDigits)}%</b>
+              <b className="text-foreground">{pct(ui, rec.required!, oddsDigits)}</b>
             </p>
             {/* 퀴즈 답 전에는 판정 줄을 가린다 — 필요 승률(식)은 짐작의 재료라 그대로 보여 준다 */}
             {!quizPending && (
             <p className="text-sm font-black mt-1" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
-              {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required!.toFixed(oddsDigits)}% →{" "}
+              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required!, oddsDigits)} →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </p>
             )}
@@ -1698,7 +1725,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-sm font-black tabular-nums shadow-lg"
               style={{ background: "hsl(var(--background))", border: `2px solid ${mix(rec.verdict === "call" ? GOOD : BAD, 55)}`,
                 color: rec.verdict === "call" ? GOOD : BAD }}>
-              {rec.equity.toFixed(oddsDigits)}% {rec.verdict === "call" ? "≥" : "<"} {rec.required.toFixed(oddsDigits)}% →{" "}
+              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required, oddsDigits)} →{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </div>
           )}
@@ -1709,7 +1736,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
               {/* 폰에서는 팟오즈 박스가 이 버튼들 밑에 깔린다 — 콜/폴드를 고를 재료(필요 승률 식)만 버튼 위에 한 줄 */}
               <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-[13px] font-bold tabular-nums shadow-lg text-foreground"
                 style={{ background: "hsl(var(--background))", border: "2px solid hsl(var(--border))" }}>
-                {ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} = <b>{rec.required!.toFixed(1)}%</b>
+                {ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} = <b>{pct(ui, rec.required!)}</b>
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <button onClick={() => submitGuess("call")}
@@ -1761,8 +1788,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                   {streets.map((r) => (
                     <tr key={r.street} className="border-t" style={{ borderColor: "hsl(var(--border))" }}>
                       <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} font-bold whitespace-nowrap`}>{ui.streets[r.street]}</td>
-                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{r.equity.toFixed(1)}%</td>
-                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{r.required === null ? "—" : `${r.required.toFixed(1)}%`}</td>
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{pct(ui, r.equity)}</td>
+                      <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"}`}>{r.required === null ? "—" : pct(ui, r.required)}</td>
                       <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} font-bold whitespace-nowrap`}
                         style={{ color: r.verdict === "fold" ? BAD : r.verdict === "call" ? GOOD : "hsl(var(--muted-foreground))" }}>
                         {r.verdict === "free" ? "—" : r.verdict === "call" ? ui.verdictCall : ui.verdictFold}
@@ -1773,7 +1800,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                           <>
                             {guessList.length > 0 && (
                             <td className={`py-1 ${hasAnswers ? "pr-1.5" : "pr-3"} whitespace-nowrap`}>
-                              {a && a.guess !== null ? <>{a.guess}%<span className="block text-[10px] text-muted-foreground leading-tight">±{a.err.toFixed(1)}</span></> : "—"}
+                              {a && a.guess !== null ? <>{pct(ui, a.guess, 0)}<span className="block text-[10px] text-muted-foreground leading-tight">±{dnum(ui, a.err.toFixed(1))}</span></> : "—"}
                             </td>
                             )}
                             <td className="py-1 pr-1.5 font-bold whitespace-nowrap"
@@ -1850,17 +1877,17 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="rounded-lg px-3 py-2 mb-1.5" style={{ background: "hsl(var(--background))" }}>
               <div className="flex justify-between items-baseline gap-2">
                 <span className="text-[11px] text-muted-foreground">{ui.hitLabel}</span>
-                <span className="text-lg font-black tabular-nums text-foreground">{hitPct}%</span>
+                <span className="text-lg font-black tabular-nums text-foreground">{pct(ui, hitPct, 0)}</span>
               </div>
               <p className="text-[10px] text-muted-foreground tabular-nums mt-0.5">
-                {ui.formulaExpr(outs.total, outs.toCome)} = {hitPct}%
+                {ui.formulaExpr(outs.total, outs.toCome)} = {pct(ui, hitPct, 0)}
               </p>
             </div>
 
             <div className="rounded-lg px-3 py-2 mb-2" style={{ background: "hsl(var(--background))" }}>
               <div className="flex justify-between items-baseline gap-2">
                 <span className="text-[11px] text-muted-foreground">{ui.winLabel2}</span>
-                <span className="text-lg font-black tabular-nums text-primary">{quizPending ? "?" : `${rec.equity.toFixed(1)}%`}</span>
+                <span className="text-lg font-black tabular-nums text-primary">{quizPending ? "?" : pct(ui, rec.equity)}</span>
               </div>
             </div>
 

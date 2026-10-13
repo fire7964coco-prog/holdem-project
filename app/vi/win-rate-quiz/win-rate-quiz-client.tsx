@@ -140,6 +140,7 @@ const VI_UI: QuizUI = {
   },
   solverLang: "vi",
   fmtNum: n,
+  decimalComma: true,
   chartRangeLegend: "Những gì bạn thấy",
   chartNote: "Đường liền là equity của từng ghế khi mọi tay bài đều lật ngửa; đường nét đứt là equity bạn thấy trên màn hình khi không biết bài của họ. Đường của người chơi đã fold dừng ở vòng cược trước khi họ fold.",
   quizToggle: "🎯 Quiz",

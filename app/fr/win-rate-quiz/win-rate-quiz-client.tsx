@@ -140,6 +140,8 @@ const FR_UI: QuizUI = {
   },
   solverLang: "fr",
   fmtNum: n,
+  decimalComma: true,
+  percentGap: " ",
   chartRangeLegend: "Ce que tu as vu",
   chartNote: "Les lignes pleines montrent l'équité de chaque siège avec toutes les mains découvertes ; la ligne pointillée est l'équité que tu as vue à l'écran sans connaître leurs cartes. La ligne d'un joueur couché s'arrête à la street qui précède celle où il se couche.",
   quizToggle: "🎯 Quiz",

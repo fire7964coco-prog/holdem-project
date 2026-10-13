@@ -144,6 +144,8 @@ const TR_UI: QuizUI = {
   },
   solverLang: "tr",
   fmtNum: n,
+  decimalComma: true,
+  percentPrefix: true,
   chartRangeLegend: "Senin gördüğün",
   chartNote: "Düz çizgiler, tüm eller açıkken her koltuğun equity'sidir; kesikli çizgi, rakip kartlarını bilmeden ekranda gördüğün equity'dir. Fold eden oyuncunun çizgisi, fold ettiği street'ten bir önceki street'te biter.",
   quizToggle: "🎯 Quiz",

@@ -13,12 +13,14 @@ import { ANTE, STACK, SAMPLES } from "../../win-rate-quiz/_engine";
  *   «Trinca»·«Sequência»·«Quadra» · «pot odds» · «foldar» · «overcards») → lib/posts-pt 코퍼스 빈도(10-13 grep):
  *   foldar 291 · pagar 298 · aumentar 167 · pote dividido 30 · pré-flop 313(preflop 17) · flush draw 92 · draw de sequência 12(projeto 8) ·
  *   top pair 114 · overpair 119 · blefe 147(bluff 25) · semi-blefe 4 · check-raise 63 · range de abertura 22 · pontos percentuais 25.
- * 숫자 = 브라질식(`fmtNum` pt-BR «1.000» · 산문 소수 콤마 «0,25») — de판과 같은 판단. ⚠ 공용 UI의 % 소수(toFixed)는 전 언어 점(de와 같음).
+ * 숫자 = 브라질식(`fmtNum` pt-BR «1.000» · 산문 소수 콤마 «0,25») — de판과 같은 판단. 공용 UI 퍼센트 = decimalComma(«35,4%»).
  * 솔버 메뉴명 «Estudar flop» = 솔버 앱 flop-study-labels.ts pt.title 축어.
  * 헤드텀 실측(DFS Brazil · 2026-10-13) → page.tsx 머리 주석 · docs/keyword-bank/win-rate-quiz-ltr.md.
  */
 
 const n = (x: number) => x.toLocaleString("pt-BR");
+/** 문자열로 넘어오는 소수(gap·err·avgErr) — 표시만 콤마 */
+const dec = (x: string) => x.replace(".", ",");
 
 const PT_NAMES: HandNames = {
   categories: ["Carta Alta", "Par", "Dois Pares", "Trinca", "Sequência", "Flush", "Full House", "Quadra", "Straight Flush"],
@@ -56,7 +58,7 @@ const PT_UI: QuizUI = {
   loseShort: "Perde",
   revealedLabel: "👀 Contra as mãos à mostra",
   revealedNote: (gap) =>
-    `O número de cima parte do princípio de que você não vê as cartas deles — por isso a diferença de ${gap} p.p. É o número de cima que você usaria para decidir de verdade.`,
+    `O número de cima parte do princípio de que você não vê as cartas deles — por isso a diferença de ${dec(gap)} p.p. É o número de cima que você usaria para decidir de verdade.`,
 
   potOddsTitle: "Pot odds — a equity que um call precisa para não perder no longo prazo (break-even)",
   potLabel: "Pote",
@@ -133,6 +135,7 @@ const PT_UI: QuizUI = {
   },
   solverLang: "pt",
   fmtNum: n,
+  decimalComma: true,
   chartRangeLegend: "O que você viu",
   chartNote: "As linhas contínuas são a equity de cada lugar com todas as mãos abertas; a tracejada é a equity que você viu na tela sem conhecer as cartas deles. A linha de quem foldou vai até a street anterior ao fold.",
   quizToggle: "🎯 Quiz",
@@ -141,10 +144,10 @@ const PT_UI: QuizUI = {
   quizSubmit: "Conferir",
   quizCallSubmit: "Pagar → conferir",
   quizFoldSubmit: "Foldar → conferir",
-  quizResult: (guess, err, points) => `Seu palpite ${guess}% · erro de ${err} p.p. · ${points} pts`,
+  quizResult: (guess, err, points) => `Seu palpite ${guess}% · erro de ${dec(err)} p.p. · ${points} pts`,
   quizChoiceResult: (ok, verdict) => (ok ? `Decisão certa (${verdict})` : `Errou — o certo era ${verdict}`),
   quizNotCounted: "Não entra no seu histórico do quiz — você já tinha visto a equity ou as cartas dos adversários",
-  quizStats: (s) => `${s.hands} mão${s.hands === 1 ? "" : "s"} · erro médio ${s.avgErr} p.p. · ${s.hits}/${s.decisions} acertos · ${n(s.points)} pts`,
+  quizStats: (s) => `${s.hands} mão${s.hands === 1 ? "" : "s"} · erro médio ${dec(s.avgErr)} p.p. · ${s.hits}/${s.decisions} acertos · ${n(s.points)} pts`,
   quizReset: "Zerar",
   quizResetConfirm: "Apagar o histórico do quiz salvo neste navegador? Não dá para desfazer.",
   quizInvite: "Entre na sua conta para guardar este histórico e vê-lo em qualquer celular ou PC.",
@@ -152,7 +155,7 @@ const PT_UI: QuizUI = {
   quizGuessCol: "Palpite",
   quizChoiceCol: "Escolha",
   quizHandSummary: (avgErr, hits, decisions, points) =>
-    `Nesta mão: erro médio ${avgErr} p.p.${decisions > 0 ? ` · ${hits}/${decisions} decisões certas` : ""} · ${points} pts`,
+    `Nesta mão: erro médio ${dec(avgErr)} p.p.${decisions > 0 ? ` · ${hits}/${decisions} decisões certas` : ""} · ${points} pts`,
   quizGuessLegend: "Seu palpite",
   customToggle: "✍️ Montar mão",
   customTitle: "Monte uma mão — repita uma que você jogou",

@@ -135,6 +135,7 @@ const DE_UI: QuizUI = {
   },
   solverLang: "de",
   fmtNum: n,
+  decimalComma: true,
   chartRangeLegend: "Was du gesehen hast",
   chartNote: "Die durchgezogenen Linien zeigen die Equity jeder Position mit allen Händen offen; die gestrichelte Linie ist die Equity, die du auf dem Bildschirm ohne Kenntnis der Gegnerkarten gesehen hast. Bei einem Spieler, der foldet, endet die Linie in der Setzrunde vor dem Fold.",
   quizToggle: "🎯 Quiz",

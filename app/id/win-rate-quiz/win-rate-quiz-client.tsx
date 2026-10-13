@@ -139,6 +139,7 @@ const ID_UI: QuizUI = {
   },
   solverLang: "id",
   fmtNum: n,
+  decimalComma: true,
   chartRangeLegend: "Yang Anda lihat",
   chartNote: "Garis utuh menunjukkan equity tiap kursi saat semua hand terbuka; garis putus-putus adalah equity yang Anda lihat di layar tanpa mengetahui kartu mereka. Garis pemain yang fold berhenti di street sebelum pemain itu fold.",
   quizToggle: "🎯 Kuis",
