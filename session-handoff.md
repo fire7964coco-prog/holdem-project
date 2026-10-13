@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-13 (11) — 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
+> 갱신: 2026-10-13 (12) MA-509·510 `e30fde28` MB-307 · (11) 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
 > 시작 순서: AGENTS.md → CLAUDE.md → 이 파일 → `git status` + `git worktree list` → 우편함 도구 + 솔버 `../클로드-프로그램만들기/solver/mailbox/MAILBOX.md` 최상단 «본체» 행(솔버 S-행은 도구에 안 뜬다).
 > 🔴 작업 주체: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4.
 
@@ -8,12 +8,13 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **우편함** | 🔴 **MA-509·510 회신+등재 미처리**(10-13 도착 · 다음 세션 안에): MA-509 = MB-301 요청 2(① sw `holdem-showdown-rules` «chali» 5자리 → «kifudifudi» ② EN-먼저 showdown L79 «all-in hands» → «every hand in the pot» + 형제 24) · 통지 1(es·it·ms·ru·tr·uk betting-actions «의무 베팅» → 스트래들 포함 꼴 · 🪶) / MA-510 = MB-302 요청 1(pt glossary L39 «oito pares» → «oito confusões» · es icm L176 «casi todo» → «la mayor parte»). 하루 묶음 한 회차 가능. ✅ ACK로 닫힘: MA-502(MB-293~295) · MA-508(MB-299·300) · MA-511(MB-303·304) · MA-513(MB-305) | 대기 |
+| **우편함** | ✅ MA-509·510 = queue §2-BT 회신+등재+이행 `e30fde28` MB-307 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 스트래들 «의무 베팅» 통지·vi glossary H2 «Cặp» = 판단 대상(§2-BT) | 판정 대기 |
 | **S2** | 승률 시뮬레이터 MA-507 수정 ✅ 배포 `147fbf52` MB-306 → ▶ 검수장 운영 재실행 + 새 문구 19칸 판정 대기 · 🪶 en·es·de 360 컨트롤 줄 1px · F-06·N-3 보류 | 판정 대기 |
 | 다음 후보 | 사장님 지시로: ⓐ 시뮬레이터 **언어 확대 1차 LTR**(pt·id·hi·ms·vi·tr·ru·fr · 언어당 사전 ~350행 + 현지 SERP 먼저 + 문구 판정은 검수장에 묶어 1회 · RTL은 화면 실측 뒤) ⓑ 시뮬레이터 보류 후보 ④ 핸드 기록 목록(DB) · ⑤ 레인지 대 레인지(`/calculator` 카니발 확인 먼저) · 🪶 결정만 모드 기록(SQL 필요). 요청서 = `../클로드-프로그램만들기/handoff-to-main-site/처리완료/승률시뮬레이터업그레이드.md` | 사장님 결정 |
 
 - 🔴 검수장 판정 요청은 하루 1~2회 한 행 묶음(MA-482). 전체 기능 검수(아스트라+Fable)는 검수 폴더 몫 — 결과 MA 오면 다음 세션 안에 회신+등재.
 - 미답 MB·MA의 정본 = 우편함 도구 출력. 여기 «대기» 목록을 다시 쌓지 마라.
+- 🔴 빌드가 «e[o] is not a function»으로 깨지면 남겨진 `next dev/start`가 `.next`를 공유하는 것 — 10-13 4폴더(본체·검수·솔버·유튜브) 사용 서버 확인 뒤 본체 next 전부 종료함. 끝낸 뒤 띄운 서버는 회차 끝에 내가 끈다.
 
 ## 솔버 연동 — 신호 오면 할 일
 
