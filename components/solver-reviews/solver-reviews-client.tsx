@@ -360,7 +360,7 @@ export function SolverFeedbackForm({ locale, empty }: { locale: SolverFeedbackLo
           <div className="mt-2 flex flex-wrap gap-2">
             <button type="button" className={BTN_GHOST} disabled={busy} onClick={() => oauth("google")}>{t.loginGoogle}</button>
             {locale === "ko" && <button type="button" className={BTN_GHOST} disabled={busy} onClick={() => oauth("kakao")}>{t.loginKakao}</button>}
-            <a className={LINK_BTN + " self-center"} href={loginHref(returnPath)}>{t.loginEmail}</a>
+            {locale === "ko" && <a className={LINK_BTN + " self-center"} href={loginHref(returnPath)}>{t.loginEmail}</a>}
           </div>
         </div>
       )}

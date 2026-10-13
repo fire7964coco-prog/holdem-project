@@ -27,6 +27,8 @@ function LoginForm() {
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const busy = loading || !!socialLoading;
+  // 비-KO = Google 하나(사장님 10-13). 카카오는 국내 계정 · 이메일 가입은 KO만. 재설정 메일 흐름(mode=recovery)은 기존 이메일 회원용으로 남긴다.
+  const googleOnly = locale !== null && mode !== "recovery";
 
   useEffect(() => {
     setSocialLoading(null);
@@ -136,13 +138,16 @@ function LoginForm() {
             </svg>
             {socialLoading === "google" ? t.connecting : t.google}
           </button>
-          <button type="button" onClick={() => handleSocialLogin("kakao")} disabled={busy} className="flex w-full items-center justify-center gap-3 rounded-lg py-3 text-sm font-semibold disabled:opacity-60" style={{ background: "#FEE500", color: "#191919" }}>
+          {!locale && <button type="button" onClick={() => handleSocialLogin("kakao")} disabled={busy} className="flex w-full items-center justify-center gap-3 rounded-lg py-3 text-sm font-semibold disabled:opacity-60" style={{ background: "#FEE500", color: "#191919" }}>
             <svg width="18" height="18" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 36C70.562 36 24 72.713 24 118c0 29.28 19.466 54.97 48.748 69.477-1.593 5.494-10.237 35.34-10.581 37.681 0 0-.207 1.762.934 2.434 1.141.672 2.483.15 2.483.15 3.272-.457 37.943-24.811 43.944-29.04 6.031.849 12.226 1.298 18.472 1.298 57.438 0 104-36.712 104-82 0-45.287-46.562-82-104-82z"/></svg>
             {socialLoading === "kakao" ? t.connecting : t.kakao}
-          </button>
+          </button>}
         </div>
-        <div className="mb-5 flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border"/><span>{t.orEmail}</span><span className="h-px flex-1 bg-border"/></div>
+        {!googleOnly && <div className="mb-5 flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border"/><span>{t.orEmail}</span><span className="h-px flex-1 bg-border"/></div>}
       </>}
+      {googleOnly && err && <p id="auth-error" role="alert" className="text-sm leading-relaxed text-destructive">{err}</p>}
+
+      {!googleOnly && <>
 
       <form onSubmit={handleSubmit} className="space-y-4" aria-busy={busy} aria-describedby={err ? "auth-error" : undefined}>
         {mode === "signup" && <div>
@@ -166,6 +171,7 @@ function LoginForm() {
         {mode === "login" && <button type="button" disabled={busy} onClick={() => switchMode("recovery")} className="min-h-11 px-2 text-muted-foreground underline underline-offset-4">{t.forgot}</button>}
         <button type="button" disabled={busy} onClick={() => switchMode(mode === "login" ? "signup" : "login")} className="min-h-11 px-2 font-semibold text-foreground">{mode === "login" ? t.toSignup : t.toLogin}</button>
       </div>
+      </>}
     </AuthPanel>
   );
 }
