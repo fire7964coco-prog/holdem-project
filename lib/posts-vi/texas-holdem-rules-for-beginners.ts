@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người nhận 2 lá bài tẩy và dùng chung 5 lá bài chung. Một ván có tối đa bốn vòng cược; tay bài 5 lá mạnh nhất thắng ở showdown — trừ khi tất cả đối thủ đã fold trước đó.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -108,7 +108,7 @@ Bài viết này cho bạn **phiên bản trình tự dành cho người mới**
 | 5 | Flop, turn, river | Bài chung ra lần lượt 3 lá, rồi 1, rồi 1 |
 | 6 | Showdown | Những người còn lại so tay bài 5 lá mạnh nhất |
 
-Cho buổi chơi đầu tiên, ý chính rất đơn giản: ==**mỗi khi một vòng mới mở ra, lại có thêm một vòng cược**== — trừ khi mọi người đã all-in (tất tay) và không còn ai để cược cùng; khi đó các lá còn lại chỉ đơn giản được chia ra.
+Cho buổi chơi đầu tiên, ý chính rất đơn giản: ==**mỗi khi một vòng mới mở ra, lại có thêm một vòng cược**== — trừ khi chỉ còn tối đa một người chưa all-in (tất tay) nên không còn ai để cược cùng; khi đó các lá còn lại chỉ đơn giản được chia ra.
 
 ![Infographic nhìn từ trên xuống bàn Texas Hold'em trước flop — mỗi người chơi cầm hai lá bài úp và board vẫn còn trống](/images/rules-step2-preflop.webp "Cách chơi Texas Hold'em từng bước — hành động preflop sau khi đặt blind")
 
@@ -254,7 +254,7 @@ Vị trí nghĩa là **thời điểm bạn hành động trong mỗi vòng cư�
 | Ngay bên phải BTN | CO (Cutoff) | Thứ 6 | Chỗ ngồi tốt thứ hai — mở rộng range |
 | Cuối cùng postflop | BTN (nút dealer) | Thứ 7 preflop; **cuối cùng** postflop | **Chỗ ngồi tốt nhất** — hành động cuối ở mọi vòng postflop |
 | Bên trái dealer | SB (small blind) | Thứ 8 preflop, thứ 1 postflop | Chỗ ngồi tệ nhất — hành động đầu ở mọi vòng postflop |
-| Cách dealer hai ghế | BB (big blind) | Cuối preflop (thứ 9), thứ 2 postflop | Được quyền raise ở preflop; không có vị trí postflop |
+| Cách dealer hai ghế | BB (big blind) | Cuối preflop (thứ 9), thứ 2 postflop | Được quyền raise ở preflop; không có vị trí postflop (trừ khi đối đầu small blind) |
 
 ==g:Nút dealer là chỗ ngồi sinh lời nhất trên bàn.== Muốn xem hướng dẫn vị trí đầy đủ, hãy đọc [vị trí trong poker: từ UTG đến nút dealer](/vi/blog/holdem-positions).
 
@@ -363,7 +363,7 @@ Thứ hạng tay bài cơ bản từ mạnh nhất đến yếu nhất (kèm t�
 | 2 | Thùng phá sảnh (straight flush) | 0,03% — cực kỳ hiếm |
 | 3 | Tứ quý (four of a kind) | 0,17% — hiếm; hãy bet mạnh |
 | 4 | Cù lũ (full house) | 2,6% — mạnh và đủ phổ biến để trông đợi |
-| 5 | Thùng (flush) | 3,0% — thắng chắc trên hầu hết board |
+| 5 | Thùng (flush) | 3,0% — thường thắng trên hầu hết board |
 | 6 | Sảnh (straight) | 4,6% — dễ thua thùng và cù lũ |
 | 7 | Sám cô (bộ ba, three of a kind) | 4,8% — tay bài tốt, nhưng còn tùy board |
 | 8 | Hai đôi (two pair) | 23,5% — tay bài "mạnh" phổ biến nhất |

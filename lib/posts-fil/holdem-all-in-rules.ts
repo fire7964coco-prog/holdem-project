@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang chips na itinaya lampas doon ng dalawa o higit pang mas malalaking stack ay bumubuo ng side pot na sila lang ang puwedeng manalo; kung iisa lang ang may sobrang taya, ibinabalik lang ito sa kanya. Sa No-Limit at Pot-Limit, ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa player na nakakilos na — maliban kung ang ilang short all-in, kapag pinagsama, ay umabot nang hindi bababa sa isang full raise lampas sa nailagay na ng player na iyon.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -208,13 +208,13 @@ Kapag kumpleto na ang lahat ng betting at may all-in na player, ganito ang nangy
 ## Ano ang Mangyayari Kung Mali ang Pag-All-In Mo? — 5 Pagkakamaling Iwasan
 
 ### Pagkakamali 1: Iniisip na kaya ng all-in player na panalunan ang side pot
-Hindi nila kaya. Kapag naka-cap na ang all-in player, anumang dagdag na chips na na-bet ng mas malalaking stack ay pag-aari ng pot na walang karapatan ang all-in player.
+Hindi nila kaya. Kapag naka-cap na ang all-in player, anumang dagdag na chips na na-bet ng mas malalaking stack ay pag-aari ng pot na walang karapatan ang all-in player — o, kung iisang player lang ang nag-bet nito, diretsong ibinabalik sa kanya bilang uncalled bet.
 
 ### Pagkakamali 2: Hindi alam ang re-raise eligibility rule
 Sa No-Limit at Pot-Limit, ang partial all-in ay hindi nagbibigay ng pangalawang pagkakataon na mag-re-raise sa mga **nakakilos na** sa round na iyon — ang hindi pa nakakilos ay puwede pa ring mag-raise nang normal. Ang pag-alam nito nang husto ay pumipigil sa mga away bago pa man magsimula.
 
 ### Pagkakamali 3: Pagdagdag ng chips mula sa bulsa habang nasa gitna ng hand
-Table stakes. Ang nasa mesa ang tanging kaya mong itaya. Kung all-in ka ng $80 at ang pot ay $400, $80 lang ang kaya mong panalunan sa bawat nag-call.
+Table stakes. Ang nasa mesa ang tanging kaya mong itaya. Kung all-in ka ng $80, $80 lang ang kaya mong panalunan sa bawat nag-call bukod pa sa nasa pot na — kahit $400 pa ang i-bet nila.
 
 ### Pagkakamali 4: Masyadong mabilis na pag-muck ng hand mo
 All-in ka para sa main pot. Dalawa pang player ang naglalaban para sa side pot. Huwag mag-muck — buhay pa ang hand mo para sa main pot. ==Palaging hintayin ang dealer na i-resolve ang bawat pot bago mo hawakan ang cards mo.==

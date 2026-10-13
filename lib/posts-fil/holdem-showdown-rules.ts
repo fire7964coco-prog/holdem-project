@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa non-all-in tournament showdown, last river aggressor ang unang magpapakita; kapag nag-check through ang river, unang active player sa kaliwa ng button. Kapag may all-in at tapos na ang betting, lahat ng live hand ay dapat i-table. Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand ng last aggressor. House rule ang masusunod sa cash game.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -77,7 +77,7 @@ Halimbawa: Button, small blind, at big blind ang nakaabot sa river. Nag-check an
 
 ## All-In Showdown Rules — Unang Magpapakita ba ang All-In Player?
 
-Sa tournament, kapag may all-in at tapos na ang lahat ng betting, kailangang **i-table agad** ang lahat ng live hand bago ituloy ang board (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod at may hiwalay na order ang WSOP 2026 B149.
+Sa tournament, kapag may all-in at tapos na ang lahat ng betting, kailangang **i-table agad** ang lahat ng live hand bago ituloy ang board (TDA 2024 Rule 16). (Isang exception: habang hand-for-hand play malapit sa money, sa ilalim ng WSOP Tournament Rules 2026 Rule 126.g, nananatiling face-down ang mga all-in hand at walang dagdag na card na idini-deal hangga't hindi sinasabi ng staff.) Sa cash game, house rule ang masusunod at may hiwalay na order ang WSOP 2026 B149.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

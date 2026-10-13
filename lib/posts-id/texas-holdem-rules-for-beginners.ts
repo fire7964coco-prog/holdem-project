@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards dan ada 5 kartu bersama di tengah meja. Ada paling banyak empat ronde taruhan, dan tangan poker 5 kartu terbaik menang di showdown — kecuali semua pemain lain fold lebih dulu.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-05",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -247,7 +247,7 @@ Posisi berarti **kapan Anda bertindak di setiap ronde taruhan**. Bertindak belak
 | Satu di kanan BTN | CO (Cutoff) | Ke-6 | Kursi terbaik kedua — perlebar range |
 | Terakhir postflop | BTN (Button) | Ke-7 pre; **terakhir** post | **Kursi terbaik** — bertindak terakhir di setiap street postflop |
 | Kiri dealer | SB (Small Blind) | Ke-8 pre, ke-1 post | Kursi terburuk — bertindak duluan di setiap street postflop |
-| Dua di kiri dealer | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Punya opsi raise preflop; out of position postflop |
+| Dua di kiri dealer | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Punya opsi raise preflop; out of position postflop (kecuali melawan small blind) |
 
 ==g:Button adalah kursi paling menguntungkan di meja.== Anda bertindak terakhir di flop, turn, dan river — artinya setiap pemain memperlihatkan kekuatan tangannya sebelum Anda memutuskan. Untuk panduan posisi lengkap, lihat [posisi poker: UTG sampai Button](/id/blog/holdem-positions).
 

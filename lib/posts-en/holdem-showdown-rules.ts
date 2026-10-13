@@ -76,7 +76,7 @@ Example: Button, small blind, and big blind see the river. SB checks, BB checks,
 
 ## All-In Showdown Rules — Does the All-In Player Show First?
 
-In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA 2024 Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
+In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA 2024 Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. (One exception: during hand-for-hand play near the money, WSOP Tournament Rule 126.g has the all-in hands stay face down and no more cards dealt until the staff says so.) **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -84,7 +84,7 @@ In a **tournament**, when a player goes all-in and there's no more betting possi
 |----------------|---------------|
 | Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand tabled without delay once all betting is complete. Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
 | All-in bet on the river gets called | Cash: the all-in bettor shows first as last aggressor. Tournament: no show-first order at all — under TDA 2024 Rule 16 every hand goes up at once and ==r:nobody may muck here== |
-| Multiple all-ins creating multiple side pots | Each pot resolved separately. Tournament: every involved hand is tabled. Cash: to win any part of a pot a player must show their cards (WSOP Live Action Rule 143) |
+| Multiple all-ins creating multiple side pots | Each pot resolved separately. Tournament: every involved hand is tabled. Cash: to win any part of a pot a player must show their cards, unless theirs is the only live hand left (WSOP Live Action Rule 143) |
 
 </div>
 

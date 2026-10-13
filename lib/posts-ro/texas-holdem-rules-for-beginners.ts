@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ Poziția înseamnă **când vorbești în fiecare rundă de pariere**. Să vorbe
 | Unul în dreapta BTN | CO (Cutoff) | 6 | Al doilea cel mai bun loc — lărgești rangeul |
 | Ultimul postflop | BTN (Button) | 7 pre; **ultimul** post | **Cel mai bun loc** — vorbește ultimul pe fiecare stradă postflop |
 | Stânga dealerului | SB (Small Blind) | 8 pre, 1 post | Cel mai prost loc — vorbește primul pe fiecare stradă postflop |
-| Doi în stânga dealerului | BB (Big Blind) | Ultimul pre (9), 2 post | Are opțiunea să mărească preflop; e în afara poziției postflop |
+| Doi în stânga dealerului | BB (Big Blind) | Ultimul pre (9), 2 post | Are opțiunea să mărească preflop; e în afara poziției postflop (cu excepția situației față de small blind) |
 
 ==g:Butonul e cel mai profitabil loc de la masă.== Vorbești ultimul pe flop, turn și river — adică fiecare jucător îți arată puterea mâinii lui înainte să te hotărăști tu.
 

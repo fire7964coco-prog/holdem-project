@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ Pozycja to **to, kiedy działasz w danej rundzie licytacji**. Działać późnie
 | Na prawo od BTN | CO (Cutoff) | 6. | Drugie najlepsze miejsce — poszerz zakres |
 | Ostatni postflop | BTN (Button) | 7. pre; **ostatni** post | **Najlepsze miejsce** — mówi ostatni na każdej ulicy postflop |
 | Na lewo od rozdającego | SB (Mały blind) | 8. pre, 1. post | Najgorsze miejsce — mówi pierwszy na każdej ulicy postflop |
-| Dwa na lewo od rozdającego | BB (Duży blind) | Ostatni pre (9.), 2. post | Ma opcję przebicia preflop; poza pozycją postflop |
+| Dwa na lewo od rozdającego | BB (Duży blind) | Ostatni pre (9.), 2. post | Ma opcję przebicia preflop; poza pozycją postflop (z wyjątkiem gry przeciw małemu blindowi) |
 
 ==g:Button to najbardziej dochodowe miejsce przy stole.== Mówisz ostatni na flopie, turnie i riverze — czyli każdy gracz pokazuje ci siłę swojej ręki, zanim ty zdecydujesz. Pełny przewodnik po pozycjach — od UTG po button — znajdziesz w osobnym poradniku o pozycjach w pokerze.
 

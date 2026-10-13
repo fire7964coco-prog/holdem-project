@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở preflop, người ngồi bên trái big blind hành động trước. Ở flop, turn và river, người còn bài đầu tiên bên trái nút dealer đi trước — thường là small blind (heads-up thì đảo ngược). Một ván chạy theo thứ tự blind → bài tẩy → preflop → flop → turn → river → showdown, với tối đa bốn vòng cược.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -415,7 +415,7 @@ A. Tối đa bốn: preflop, flop, turn và river. Ván kết thúc sớm — m�
 
 A. Trước khi chia flop, turn và river, dealer bỏ úp lá trên cùng của bộ bài — gọi là lá bài đốt (burn card). Vậy là ba lá bị đốt trong một ván đi tới tận river, mỗi lá trước một lần lật bài chung. Đốt bài bảo vệ ván chơi: nếu lá trên cùng bị đánh dấu hay vô tình lộ, một người chơi có thể biết trước lá sắp ra, nên nó được loại khỏi ván trước.
 
-**Q. Chia bài poker gọi là gì? Dealer và nút dealer khác nhau thế nào?**
+**Q. Người chia bài poker gọi là gì? Dealer và nút dealer khác nhau thế nào?**
 
 A. Người chia bài gọi là **dealer**; chiếc đĩa tròn đánh dấu ghế đóng vai người chia bài gọi là **nút dealer (BTN)**. Ở ván bài tại nhà, người cầm nút thường tự chia; khi có dealer riêng chia thay, nút vẫn quyết định thứ tự cược và thường dịch một ghế theo chiều kim đồng hồ sau mỗi ván (quy tắc nút dealer chết — dead button — là ngoại lệ). Bài này không nói về nghề dealer.
 

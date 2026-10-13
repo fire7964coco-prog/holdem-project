@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ tự bài poker từ mạnh nhất đến yếu nhất: thùng phá sảnh hoàng gia (royal flush), thùng phá sảnh (straight flush), tứ quý (four of a kind), cù lũ (full house), thùng (flush), sảnh (straight), sám cô (three of a kind), hai đôi, một đôi và mậu thầu (high card). Cùng hạng thì so tổ hợp chính trước rồi đến kicker (lá phụ); chất bài không xếp hạng.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -81,7 +81,7 @@ Trong Texas Hold'em chuẩn, **không có chất nào mạnh hơn chất nào**.
 
 **A♠ K♠ Q♠ J♠ 10♠** — thùng phá sảnh cao nhất, và là tay bài mạnh nhất trong poker (còn gọi là sảnh rồng, sảnh chúa — 10-J-Q-K-A cùng chất).
 
-Không thể bị đánh bại; thế hòa duy nhất có thể xảy ra là khi cả năm lá của thùng phá sảnh hoàng gia nằm hết trên board cho mọi người dùng chung, khi đó chia pot. Bạn sẽ gặp nó khoảng một lần mỗi 31.000 ván, nên nhiều người chơi nhiều năm chưa từng có. Khi có, nhiệm vụ duy nhất của bạn là đẩy càng nhiều chip vào pot càng tốt.
+Không thể bị đánh bại; thế hòa duy nhất có thể xảy ra là khi cả năm lá của thùng phá sảnh hoàng gia nằm hết trên board cho mọi người dùng chung, khi đó chia pot. Bạn sẽ gặp nó khoảng một lần mỗi 31.000 ván, nên nhiều người chơi nhiều năm chưa từng có. Khi chính bạn làm nên nó — chứ không phải cả năm lá nằm sẵn trên board — nhiệm vụ duy nhất của bạn là đẩy càng nhiều chip vào pot càng tốt.
 
 ### #2 — Thùng phá sảnh (straight flush)
 

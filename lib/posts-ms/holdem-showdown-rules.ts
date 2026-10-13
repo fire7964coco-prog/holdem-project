@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam showdown kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu; jika semua pemain cek di river, pemain aktif pertama di kiri butang. Apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor. Cash game mengikut house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -77,7 +77,7 @@ Contoh: Butang, small blind dan big blind sampai ke river. SB cek, BB cek, Butan
 
 ## Peraturan Showdown All-In — Adakah Pemain All-In Buka Dulu?
 
-Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti **segera ditunjukkan** sebelum board diteruskan (TDA 2024 Rule 16). Dalam cash game, house rule terpakai, dan peraturan WSOP Live Action menetapkan susunan yang berbeza: **dalam No-Limit**, jika pertaruhan tamat sebelum river, pemain yang all-in bertanggungjawab membuka kad dahulu; dan dalam mana-mana cash game yang ada side pot, pemain yang bersaing untuk side pot menunjukkan kad sebelum pemain yang all-in untuk pot utama sahaja (WSOP 2026 B149).
+Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti **segera ditunjukkan** sebelum board diteruskan (TDA 2024 Rule 16). (Satu pengecualian: semasa hand-for-hand menjelang zon wang, WSOP Tournament Rule 126.g menetapkan tangan all-in kekal tertutup dan tiada kad lagi diedarkan sehingga kakitangan memberi arahan.) Dalam cash game, house rule terpakai, dan peraturan WSOP Live Action menetapkan susunan yang berbeza: **dalam No-Limit**, jika pertaruhan tamat sebelum river, pemain yang all-in bertanggungjawab membuka kad dahulu; dan dalam mana-mana cash game yang ada side pot, pemain yang bersaing untuk side pot menunjukkan kad sebelum pemain yang all-in untuk pot utama sahaja (WSOP 2026 B149).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

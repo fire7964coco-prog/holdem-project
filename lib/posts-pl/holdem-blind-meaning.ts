@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blindy to przymusowe zakłady wnoszone, zanim rozda się karty. Mały blind siedzi po lewej od buttona, a duży blind na lewo od niego; duży blind — zwykle dwa razy większy od małego — to podstawowa jednostka stawek przy stole.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -173,7 +173,7 @@ A. Przy tylko dwóch graczach zasada się odwraca: button stawia małego blinda 
 
 **Q. Co się dzieje, gdy pominiesz swój blind?**
 
-A. W większości pokoi po powrocie stawiasz pominięte blindy — duży blind gra jako żywy zakład, a mały to martwy żeton dorzucany do puli. Możesz też zaczekać, aż duży blind naturalnie dojdzie do twojego miejsca.
+A. W grze cash na żywo w większości pokoi po powrocie stawiasz pominięte blindy — duży blind gra jako żywy zakład, a mały to martwy żeton dorzucany do puli. Możesz też zaczekać, aż duży blind naturalnie dojdzie do twojego miejsca. W turnieju nie ma czego nadrabiać: blindy i ante schodzą z twojego stacka, czy siedzisz przy stole, czy nie.
 
 **Q. Czy "duży blind" to to samo co "blindy"?**
 

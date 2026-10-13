@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "16 dk",
@@ -328,7 +328,7 @@ Pozisyon, **her bahis turunda ne zaman oynadığın** demektir. Daha sonra oynam
 | Butonun sağında | CO (Cutoff) | 6. | İkinci en iyi koltuk — aralığı genişlet |
 | Postflop en son | BTN (Buton) | 7. pre; **en son** post | **En iyi koltuk** — her postflop sokakta en son oynar |
 | Dağıtıcının solunda | SB (Small Blind) | 8. pre, 1. post | En kötü koltuk — her postflop sokakta ilk oynar |
-| Dağıtıcının iki solunda | BB (Big Blind) | Son pre (9.), 2. post | Preflop yükseltme opsiyonu var; postflop pozisyonsuz |
+| Dağıtıcının iki solunda | BB (Big Blind) | Son pre (9.), 2. post | Preflop yükseltme opsiyonu var; postflop pozisyonsuz (small blind'e karşı hariç) |
 
 ==g:Buton masadaki en kârlı koltuktur.== Flop, turn ve river'da en son oynarsın — yani her oyuncu sen karar vermeden önce el gücünü sana gösterir. Tam bir pozisyon rehberi için [UTG'den butona kadar pozisyonları](/tr/blog/holdem-positions) inceleyebilirsin.
 

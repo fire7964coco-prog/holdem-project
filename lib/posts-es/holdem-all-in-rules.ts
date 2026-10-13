@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas que dos o más stacks más grandes apuestan por encima de eso forman un side pot que solo ellos pueden ganar; una apuesta extra de un solo jugador simplemente se le devuelve. En sin límite y pot-limit, un all-in menor que una subida completa NO reabre la apuesta para quien ya actuó, salvo que varios all-ins cortos sumen al menos una subida completa sobre lo que ese jugador ya puso.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -209,7 +209,7 @@ Cuando la apuesta se cierra y hay un jugador all-in, esto es lo que ocurre en el
 
 ### Error 1: creer que el jugador all-in puede ganar el side pot
 
-No puede. Una vez el jugador all-in queda capado, cualquier ficha extra apostada por los stacks más grandes va a un bote sobre el que no tiene ningún derecho.
+No puede. Una vez el jugador all-in queda capado, cualquier ficha extra apostada por los stacks más grandes va a un bote sobre el que no tiene ningún derecho — o, si solo las apostó un jugador, vuelve directamente a ese jugador como apuesta no igualada.
 
 ### Error 2: no saberse la regla de quién puede resubir
 
@@ -217,7 +217,7 @@ En sin límite y pot-limit, un all-in parcial no le da una segunda oportunidad d
 
 ### Error 3: añadir fichas del bolsillo a mitad de mano
 
-Table stakes. Lo que hay en la mesa es todo lo que puedes apostar. Si estás all-in por $80 y el bote es de $400, solo puedes ganar $80 de cada jugador que pague.
+Table stakes. Lo que hay en la mesa es todo lo que puedes apostar. Si estás all-in por $80, solo puedes ganar $80 de cada jugador que pague, además de lo que ya había en el bote — aunque te apuesten $400.
 
 ### Error 4: tirar tu mano demasiado pronto
 

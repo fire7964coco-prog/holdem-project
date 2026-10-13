@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -81,7 +81,7 @@ Inilah setiap tangan dari terkuat ke terlemah, dengan contoh dan satu peraturan 
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi, dan tangan terbaik dalam poker.
 
-Ia tidak boleh dikalahkan; satu-satunya seri yang mungkin ialah royal flush yang keseluruhannya terletak di board untuk dikongsi semua pemain, lalu pot dibahagi. Anda akan melihatnya lebih kurang sekali dalam 31,000 tangan, jadi kebanyakan pemain boleh bermain bertahun-tahun tanpa pernah mendapatnya. Apabila anda dapat, satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
+Ia tidak boleh dikalahkan; satu-satunya seri yang mungkin ialah royal flush yang keseluruhannya terletak di board untuk dikongsi semua pemain, lalu pot dibahagi. Anda akan melihatnya lebih kurang sekali dalam 31,000 tangan, jadi kebanyakan pemain boleh bermain bertahun-tahun tanpa pernah mendapatnya. Apabila anda sendiri yang membentuknya — bukan royal flush yang keseluruhannya terletak di board — satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
 
 ### #2 — Straight Flush
 

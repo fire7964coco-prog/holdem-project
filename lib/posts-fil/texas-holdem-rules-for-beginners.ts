@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ Ang ibig sabihin ng position ay **kailan ka kikilos sa bawat betting round**. An
 | Isa sa kanan ng BTN | CO (Cutoff) | 6th | Pangalawang pinakamagandang upuan — palawakin ang range |
 | Huli postflop | BTN (Button) | 7th pre; **huli** post | **Pinakamagandang upuan** — huling kikilos kada postflop street |
 | Kaliwa ng dealer | SB (Small Blind) | 8th pre, 1st post | Pinakamasamang upuan — unang kikilos kada postflop street |
-| Dalawa sa kaliwa ng dealer | BB (Big Blind) | Huli pre (9th), 2nd post | May option na mag-raise preflop; out of position postflop |
+| Dalawa sa kaliwa ng dealer | BB (Big Blind) | Huli pre (9th), 2nd post | May option na mag-raise preflop; out of position postflop (maliban kontra sa small blind) |
 
 ==g:Ang button ang pinaka-profitable na upuan sa mesa.== Huli kang kikilos sa flop, turn, at river — ibig sabihin ipinapakita muna sa iyo ng bawat player ang lakas ng hand nila bago ka magdesisyon. Para sa buong position guide, tingnan ang poker positions: UTG hanggang button.
 

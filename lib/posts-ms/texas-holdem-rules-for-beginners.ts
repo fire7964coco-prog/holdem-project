@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas sehingga empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-07",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -244,7 +244,7 @@ Posisi bermaksud **bila anda bertindak dalam setiap pusingan pertaruhan**. Berti
 | Satu tempat di kanan BTN | CO (Cutoff) | Ke-6 | Tempat duduk kedua terbaik — luaskan julat |
 | Terakhir post-flop | BTN (Button) | Ke-7 pre; **terakhir** post | **Tempat duduk terbaik** — bertindak terakhir pada setiap jalan post-flop |
 | Kiri pengedar | SB (Small Blind) | Ke-8 pre, ke-1 post | Tempat duduk paling teruk — bertindak dahulu pada setiap jalan post-flop |
-| Dua kiri pengedar | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Ada pilihan untuk raise pre-flop; luar posisi post-flop |
+| Dua kiri pengedar | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Ada pilihan untuk raise pre-flop; luar posisi post-flop (kecuali berdepan small blind) |
 
 ==g:Button ialah tempat duduk paling menguntungkan di meja.== Anda bertindak terakhir pada flop, turn dan river — bermakna setiap pemain menunjukkan kekuatan tangan mereka sebelum anda membuat keputusan. Untuk panduan posisi penuh, lihat [posisi poker: UTG hingga Button](/ms/blog/holdem-positions).
 

@@ -126,7 +126,7 @@ Dua contoh hitungan:
 | Flop | Pemain bet $6 | $6 lagi → total $12 |
 | Preflop (blind $1/$2) | Pemain raise ke $6 (kenaikan $4 di atas blind $2) | $4 lagi → total $10 |
 
-Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise penuh terakhir, bukan big blind. (Kata "penuh" penting begitu ada yang all-in kurang dari satu raise: setelah bet $10 dan all-in $14, inkremen yang harus disamai tetap $10, jadi raise terkecil adalah ke $24.) Saat preflop, big blind dihitung sebagai taruhan pembuka — itulah kenapa open-raise terkecil adalah ke 2 big blind.
+Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise penuh terakhir, bukan big blind. (Kata "penuh" penting begitu ada yang all-in kurang dari satu raise: setelah bet $10 dan all-in $14, inkremen yang harus disamai tetap $10, jadi raise terkecil adalah ke $24.) Saat preflop, big blind dihitung sebagai taruhan pembuka — itulah kenapa open-raise terkecil adalah ke 2 big blind. Kalau ada live straddle di meja, straddle itulah taruhan yang harus dilampaui, jadi minimum raise adalah dua kali straddle (WSOP Live Action Rule 165).
 
 Dua aturan poker live yang menyertai raise:
 
@@ -144,7 +144,7 @@ Di **No-Limit Hold'em: tidak ada batas**. Anda bisa raise, di-re-raise, lalu rai
 Tetap ada dua batasan:
 
 - Setiap re-raise wajib memenuhi ==aturan inkremen min-raise== di atas — satu-satunya pengecualian adalah all-in, yang boleh kurang dari itu
-- ==r:Anda tidak bisa me-raise taruhan Anda sendiri.== Kalau Anda bet dan semua orang hanya call, ronde berakhir — Anda baru bisa raise lagi kalau ada yang me-raise *Anda* lebih dulu
+- ==r:Anda tidak bisa me-raise taruhan Anda sendiri.== Kalau Anda bet dan semua orang hanya call, ronde berakhir — Anda baru bisa raise lagi kalau ada yang me-raise *Anda* lebih dulu. Satu-satunya pengecualian ada di preflop: kalau semua orang hanya call, big blind (atau pemain live straddle) tetap punya opsi raise, karena taruhan yang ia pasang dihitung sebagai taruhan pembukanya (WSOP Live Action Rules 159 · 165)
 
 Di permainan **Fixed-Limit**, tiap ronde punya batas (pot "capped"). Aturan turnamen WSOP menetapkan batas itu di ==satu bet plus empat raise== (Rule 100.b) — dan pengecualiannya berjalan terbalik dari dugaan kebanyakan orang: ==r:batas itu tetap berlaku sekalipun di hand itu tinggal dua pemain==. Batas baru lepas ketika **seluruh turnamen** tinggal dua orang. Di cash game berlaku aturan rumah, jadi tanyakan ke dealer.
 
@@ -207,7 +207,7 @@ A. Bisa — kalau ada yang bertaruh setelah Anda check, Anda boleh raise saat gi
 
 **Q. Bisakah Anda me-raise taruhan Anda sendiri?**
 
-A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Di No-Limit dan Pot-Limit, Anda hanya bisa raise lagi kalau aksi kembali ke Anda dan Anda menghadapi setidaknya satu raise penuh di atas bet Anda — entah dibuat oleh satu pemain atau terkumpul dari beberapa all-in pendek; satu all-in yang kurang dari satu raise penuh tidak membuka kembali aksi. Di Fixed-Limit ambangnya lebih rendah: all-in senilai minimal 50% dari satu bet atau raise penuh sudah membuka kembali aksi (TDA 2024 Rule 47-B).
+A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Satu-satunya pengecualian ada di preflop: kalau semua orang hanya call, big blind (atau pemain live straddle) tetap punya opsi raise, karena taruhan yang ia pasang dihitung sebagai taruhan pembukanya (WSOP Live Action Rules 159 · 165). Di No-Limit dan Pot-Limit, Anda hanya bisa raise lagi kalau aksi kembali ke Anda dan Anda menghadapi setidaknya satu raise penuh di atas bet Anda — entah dibuat oleh satu pemain atau terkumpul dari beberapa all-in pendek; satu all-in yang kurang dari satu raise penuh tidak membuka kembali aksi. Di Fixed-Limit ambangnya lebih rendah: all-in senilai minimal 50% dari satu bet atau raise penuh sudah membuka kembali aksi (TDA 2024 Rule 47-B).
 
 **Q. Berapa kali boleh raise di Texas Hold'em?**
 

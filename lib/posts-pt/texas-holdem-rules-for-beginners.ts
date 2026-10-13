@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas e divide 5 cartas comunitárias. São até quatro rodadas de apostas, e a melhor mão de 5 cartas ganha no showdown — a não ser que todos os outros foldem antes.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -245,7 +245,7 @@ Posição significa **quando você age em cada rodada de apostas**. Agir mais ta
 | Um à direita do BTN | CO (Cutoff) | 6º | Segundo melhor assento — abra o range |
 | Último pós-flop | BTN (Botão) | 7º pré; **último** pós | **Melhor assento** — age por último em toda street pós-flop |
 | Esquerda do dealer | SB (Small Blind) | 8º pré, 1º pós | Pior assento — age primeiro em toda street pós-flop |
-| Dois à esquerda do dealer | BB (Big Blind) | Último pré (9º), 2º pós | Tem a opção de aumentar no pré-flop; fora de posição no pós-flop |
+| Dois à esquerda do dealer | BB (Big Blind) | Último pré (9º), 2º pós | Tem a opção de aumentar no pré-flop; fora de posição no pós-flop (exceto contra o small blind) |
 
 ==g:O botão é o assento mais lucrativo da mesa.== Você age por último no flop, no turn e no river — ou seja, todo jogador mostra a força da mão antes de você decidir. Para um guia completo de posições, veja [posições no poker: do UTG ao botão](/pt/blog/holdem-positions).
 

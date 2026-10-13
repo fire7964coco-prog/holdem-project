@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम में हर खिलाड़ी को 2 hole कार्ड मिलते हैं, 5 community कार्ड इस्तेमाल होते हैं, और चार betting राउंड के बाद सबसे अच्छा 5-कार्ड हैंड जीतता है।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ burn कार्ड वह ऊपरी कार्ड है जिसे flo
 | BTN के दाईं ओर | CO (Cutoff) | 6th | दूसरी सबसे अच्छी सीट — range चौड़ी करें |
 | postflop आख़िरी | BTN (Button) | 7th pre; **आख़िरी** post | **सबसे अच्छी सीट** — हर postflop स्ट्रीट पर आख़िर में खेलता है |
 | dealer के बाएँ | SB (Small Blind) | 8th pre, 1st post | सबसे ख़राब सीट — हर postflop स्ट्रीट पर पहले खेलता है |
-| dealer के दो बाएँ | BB (Big Blind) | आख़िरी pre (9th), 2nd post | preflop raise का विकल्प; postflop out of position |
+| dealer के दो बाएँ | BB (Big Blind) | आख़िरी pre (9th), 2nd post | preflop raise का विकल्प; postflop out of position (small blind के सामने छोड़कर) |
 
 ==g:button टेबल की सबसे फ़ायदेमंद सीट है।== आप flop, turn और river पर आख़िर में खेलते हैं — यानी हर खिलाड़ी अपने हैंड की मज़बूती आपको आपके फ़ैसले से पहले दिखा देता है।
 

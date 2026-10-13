@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele (no heads-up, o próprio botão paga o small blind); o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -180,7 +180,7 @@ A. Com só dois jogadores, a regra se inverte: o botão do dealer paga o small b
 
 **Q. O que acontece se você perder seu blind?**
 
-A. Na maioria das salas, você paga os blinds perdidos quando volta — o big blind vale como aposta viva e o small blind é uma ficha morta adicionada ao pote. Alternativamente, dá para esperar o big blind chegar naturalmente ao seu assento — ou, se o regulamento da sala admitir, voltar a entrar como live straddle no UTG.
+A. Num cash game ao vivo, na maioria das salas, você paga os blinds perdidos quando volta — o big blind vale como aposta viva e o small blind é uma ficha morta adicionada ao pote. Alternativamente, dá para esperar o big blind chegar naturalmente ao seu assento — ou, se o regulamento da sala admitir, voltar a entrar como live straddle no UTG. Num torneio não há nada a repor: os blinds e antes saem do seu stack, esteja você sentado ou não.
 
 **Q. "Big blind" é a mesma coisa que "os blinds"?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Cip lebihan yang dipertaruhkan oleh dua atau lebih stack yang lebih besar melebihi jumlah itu membentuk side pot yang hanya boleh dimenangi oleh mereka; jika hanya seorang yang bertaruh lebih, lebihan itu dipulangkan sahaja. Dalam no-limit dan pot-limit, all-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak — kecuali beberapa all-in pendek yang digabungkan mencapai sekurang-kurangnya satu raise penuh di atas jumlah yang sudah dimasukkan oleh pemain itu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -209,7 +209,7 @@ Apabila semua pertaruhan selesai dan ada pemain yang all-in, inilah yang berlaku
 
 ### Kesilapan 1: Menyangka pemain all-in boleh menang side pot
 
-Tidak boleh. Sebaik sahaja pemain all-in dihadkan, sebarang cip tambahan yang dipertaruhkan oleh stack lebih besar masuk ke pot yang pemain all-in langsung tiada hak ke atasnya.
+Tidak boleh. Sebaik sahaja pemain all-in dihadkan, sebarang cip tambahan yang dipertaruhkan oleh stack lebih besar masuk ke pot yang pemain all-in langsung tiada hak ke atasnya — atau, jika hanya seorang pemain yang mempertaruhkannya, terus dipulangkan kepada pemain itu sebagai bet yang tidak di-call.
 
 ### Kesilapan 2: Tidak tahu peraturan hak re-raise
 
@@ -217,7 +217,7 @@ Dalam no-limit dan pot-limit, all-in separa tidak memberi peluang kedua untuk re
 
 ### Kesilapan 3: Menambah cip dari poket di tengah hand
 
-Table stakes. Apa yang ada di atas meja itu sahaja yang boleh anda pertaruhkan. Kalau anda all-in sebanyak $80 dan pot bernilai $400, anda hanya boleh menang $80 daripada setiap pemain yang call.
+Table stakes. Apa yang ada di atas meja itu sahaja yang boleh anda pertaruhkan. Kalau anda all-in sebanyak $80, anda hanya boleh menang $80 daripada setiap pemain yang call, di atas apa yang sudah ada dalam pot — walaupun mereka bertaruh $400.
 
 ### Kesilapan 4: Membuang hand terlalu cepat
 

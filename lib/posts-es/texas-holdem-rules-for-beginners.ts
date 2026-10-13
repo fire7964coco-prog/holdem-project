@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en hasta cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -245,7 +245,7 @@ La posición es **cuándo actúas en cada ronda de apuestas**. Actuar más tarde
 | A la derecha del BTN | CO (Cutoff) | 6.º | El segundo mejor asiento — amplía el rango |
 | Último postflop | BTN (Botón) | 7.º pre; **último** post | **El mejor asiento** — habla el último en cada calle postflop |
 | Izquierda del dealer | SB (Ciega pequeña) | 8.º pre, 1.º post | El peor asiento — habla primero en cada calle postflop |
-| Dos a la izquierda del dealer | BB (Ciega grande) | Último pre (9.º), 2.º post | Tiene opción de subir preflop; fuera de posición postflop |
+| Dos a la izquierda del dealer | BB (Ciega grande) | Último pre (9.º), 2.º post | Tiene opción de subir preflop; fuera de posición postflop (salvo contra la ciega pequeña) |
 
 ==g:El botón es el asiento más rentable de la mesa.== Hablas el último en el flop, el turn y el river — es decir, cada jugador te enseña la fuerza de su mano antes de que tú decidas. Para una guía completa de posiciones, consulta la [guía de posiciones de póker, de UTG al botón](/es/blog/holdem-positions).
 

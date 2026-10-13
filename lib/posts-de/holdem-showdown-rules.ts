@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -77,7 +77,7 @@ Beispiel: Button, Small Blind und Big Blind sehen den River. SB checkt, BB check
 
 ## All-in-Showdown-Regeln – zeigt der All-in-Spieler zuerst?
 
-Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten ausgeteilt, während **alle Hände offen auf dem Tisch liegen** (==TDA-2024-Regel 16==). Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können. **Cashgames laufen nach Hausregeln**, und die WSOP Live Action Rules drehen es um: **In einem No-Limit-Spiel** ist der Spieler, der All-in gegangen ist, dafür verantwortlich, zuerst umzudrehen, wenn das Setzen vor dem River endete; und in jedem Cashgame gilt: Gibt es einen Side Pot, zeigen dessen Spieler vor jedem, der nur im Main Pot All-in ist (==Live Action Rule 149==).
+Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten ausgeteilt, während **alle Hände offen auf dem Tisch liegen** (==TDA-2024-Regel 16==). Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können. (Eine Ausnahme: Beim Hand-for-Hand-Spiel kurz vor den Preisrängen bleiben die All-in-Hände nach WSOP Tournament Rule 126.g verdeckt, und es werden keine weiteren Karten ausgeteilt, bis das Turnierpersonal es anweist.) **Cashgames laufen nach Hausregeln**, und die WSOP Live Action Rules drehen es um: **In einem No-Limit-Spiel** ist der Spieler, der All-in gegangen ist, dafür verantwortlich, zuerst umzudrehen, wenn das Setzen vor dem River endete; und in jedem Cashgame gilt: Gibt es einen Side Pot, zeigen dessen Spieler vor jedem, der nur im Main Pot All-in ist (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -85,7 +85,7 @@ Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr m
 |----------------|---------------|
 | Spieler geht auf einer früheren Street All-in, andere callen, keine Bets mehr möglich | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-2024-Regel 16). Cashgame: Gibt es einen Side Pot, zeigen dessen Spieler zuerst; und in einem No-Limit-Spiel dreht der Spieler, der All-in gegangen ist, zuerst um (Live Action Rule 149) |
 | All-in-Bet am River wird gecallt | Cashgame: Der All-in-Spieler zeigt als letzter Aggressor zuerst. Turnier: gar keine Zeigereihenfolge – nach TDA-2024-Regel 16 gehen alle Hände gleichzeitig hoch und ==r:hier darf niemand mucken== |
-| Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben. Turnier: Jede beteiligte Hand wird offen hingelegt. Cashgame: Um einen Teil eines Pots zu gewinnen, muss ein Spieler seine Karten zeigen (WSOP Live Action Rule 143) |
+| Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben. Turnier: Jede beteiligte Hand wird offen hingelegt. Cashgame: Um einen Teil eines Pots zu gewinnen, muss ein Spieler seine Karten zeigen, außer seine ist die einzige noch lebende Hand (WSOP Live Action Rule 143) |
 
 </div>
 

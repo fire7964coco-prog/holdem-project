@@ -128,7 +128,7 @@ Dua contoh pengiraan:
 | Flop | Pemain bertaruh $6 | Tambah $6 → $12 jumlahnya |
 | Pre-flop (blind $1/$2) | Pemain raise kepada $6 (kenaikan $4 di atas blind $2) | Tambah $4 → $10 jumlahnya |
 
-Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise penuh terakhir, bukan big blind. (Perkataan "penuh" penting apabila seseorang all-in kurang daripada satu raise: selepas pertaruhan $10 dan all-in $14, inkremen yang perlu disamai kekal $10, jadi raise terkecil ialah kepada $24.) Pada pre-flop, big blind dikira sebagai pertaruhan pembuka — sebab itulah open-raise terkecil ialah kepada 2 big blind.
+Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise penuh terakhir, bukan big blind. (Perkataan "penuh" penting apabila seseorang all-in kurang daripada satu raise: selepas pertaruhan $10 dan all-in $14, inkremen yang perlu disamai kekal $10, jadi raise terkecil ialah kepada $24.) Pada pre-flop, big blind dikira sebagai pertaruhan pembuka — sebab itulah open-raise terkecil ialah kepada 2 big blind. Jika ada straddle hidup di meja, straddle itulah pertaruhan yang perlu diatasi, jadi raise minimum ialah dua kali straddle (WSOP Live Action Rule 165).
 
 Dua peraturan poker live yang datang bersama raise:
 
@@ -146,7 +146,7 @@ Dalam **No-Limit Hold'em: tiada had**. Anda boleh raise, kena re-raise, dan rais
 Dua sempadan masih terpakai:
 
 - Setiap re-raise mesti memenuhi ==peraturan inkremen min-raise== di atas — satu-satunya pengecualian ialah all-in, yang boleh kurang daripada itu
-- ==r:Anda tidak boleh raise pertaruhan anda sendiri.== Jika anda bertaruh dan semua orang hanya call, pusingan tamat — anda hanya boleh raise semula jika ada orang raise *anda* dahulu
+- ==r:Anda tidak boleh raise pertaruhan anda sendiri.== Jika anda bertaruh dan semua orang hanya call, pusingan tamat — anda hanya boleh raise semula jika ada orang raise *anda* dahulu. Satu-satunya pengecualian ialah pada pre-flop: apabila semua orang hanya call, big blind (atau pemain straddle hidup) masih ada pilihan untuk raise, kerana taruhan wajib itu dikira sebagai pertaruhan pembukanya (WSOP Live Action Rules 159 · 165)
 
 Dalam permainan **Fixed-Limit**, setiap pusingan ada had (pot "capped"). Peraturan kejohanan WSOP meletakkan had itu pada ==satu pertaruhan tambah empat raise== (Rule 100.b) — dan pengecualiannya berjalan terbalik daripada sangkaan kebanyakan orang: ==r:had itu kekal walaupun tinggal dua pemain sahaja dalam tangan itu==. Ia hanya terbuka apabila **seluruh kejohanan** tinggal dua orang. Dalam cash game peraturan rumah yang berkuasa, jadi tanya pengedar.
 
@@ -209,7 +209,7 @@ A. Boleh — jika seseorang bertaruh selepas anda cek, anda boleh raise apabila 
 
 **Q. Boleh raise pertaruhan sendiri?**
 
-A. Tidak boleh. Jika anda bertaruh dan lawan hanya call, anda tidak boleh menambah lagi — pusingan pertaruhan tamat. Dalam No-Limit dan Pot-Limit, anda hanya boleh raise semula jika aksi kembali kepada anda dengan sekurang-kurangnya satu raise penuh di atas pertaruhan anda — sama ada dibuat oleh seorang pemain atau terkumpul daripada beberapa all-in pendek; satu all-in yang kurang daripada raise penuh tidak membuka semula aksi. Dalam Fixed-Limit ambangnya lebih rendah: all-in sekurang-kurangnya 50% daripada satu pertaruhan atau raise penuh sudah membuka semula aksi (TDA 2024 Rule 47-B).
+A. Tidak boleh. Jika anda bertaruh dan lawan hanya call, anda tidak boleh menambah lagi — pusingan pertaruhan tamat. Satu-satunya pengecualian ialah pada pre-flop: apabila semua orang hanya call, big blind (atau pemain straddle hidup) masih ada pilihan untuk raise, kerana taruhan wajib itu dikira sebagai pertaruhan pembukanya (WSOP Live Action Rules 159 · 165). Dalam No-Limit dan Pot-Limit, anda hanya boleh raise semula jika aksi kembali kepada anda dengan sekurang-kurangnya satu raise penuh di atas pertaruhan anda — sama ada dibuat oleh seorang pemain atau terkumpul daripada beberapa all-in pendek; satu all-in yang kurang daripada raise penuh tidak membuka semula aksi. Dalam Fixed-Limit ambangnya lebih rendah: all-in sekurang-kurangnya 50% daripada satu pertaruhan atau raise penuh sudah membuka semula aksi (TDA 2024 Rule 47-B).
 
 **Q. Berapa kali boleh raise dalam Texas Hold'em?**
 

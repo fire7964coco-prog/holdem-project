@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds ni dau la lazima unaloweka kabla karata hazijagawanywa. Small blind hukaa kushoto kabisa mwa dealer button na big blind kushoto kwake; big blind — mara nyingi mara mbili ya small blind — ndiyo kipimo cha kuweka dau mezani.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. Wakiwa wachezaji wawili tu, kanuni hugeuka: dealer button huweka small blind 
 
 **Q. Nini hutokea ukikosa blind yako?**
 
-A. Katika vyumba vingi vya karata unaweka blinds ulizozikosa unaporudi — big blind hucheza kama dau hai na small blind ni chipu iliyokufa inayoongezwa kwenye pot. Vinginevyo, unaweza kusubiri big blind ifike kwenye kiti chako kwa kawaida.
+A. Kwenye cash game ya live, katika vyumba vingi vya karata unaweka blinds ulizozikosa unaporudi — big blind hucheza kama dau hai na small blind ni chipu iliyokufa inayoongezwa kwenye pot. Vinginevyo, unaweza kusubiri big blind ifike kwenye kiti chako kwa kawaida. Kwenye mashindano hakuna cha kufidia: blinds na ante hukatwa kutoka kwenye stack yako, uwe umekaa kitini au la.
 
 **Q. Je, "big blind" ni sawa na "the blinds"?**
 

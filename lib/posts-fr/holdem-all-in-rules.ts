@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire all-in (tapis), c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as couvert, c'est le pot principal ; les jetons misés au-delà par deux stacks plus gros ou plus forment un side pot (pot annexe) qu'eux seuls peuvent gagner, et une mise supplémentaire isolée est simplement rendue. En no-limit et en pot-limit, un all-in inférieur à une relance complète ne rouvre pas les enchères pour un joueur qui a déjà parlé, sauf si plusieurs petits all-in cumulés atteignent au moins une relance complète au-dessus de ce qu'il a déjà mis.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -220,13 +220,13 @@ Le plus souvent, tu perds des jetons que tu aurais pu gagner, ou tu déclenches 
 Avec l'expérience des all-in à table, tu finis par comprendre que le chaos ne vient presque jamais des calculs, mais de la question « qui a droit à quel pot ».
 
 ### Erreur 1 : croire que le joueur à tapis peut gagner le side pot
-Il ne peut pas. Dès que le joueur à tapis est plafonné, tous les jetons supplémentaires misés par les stacks plus gros vont dans un pot sur lequel il n'a aucun droit.
+Il ne peut pas. Dès que le joueur à tapis est plafonné, tous les jetons supplémentaires misés par les stacks plus gros vont dans un pot sur lequel il n'a aucun droit — ou, si un seul joueur les a misés, lui reviennent directement comme mise non suivie.
 
 ### Erreur 2 : ignorer la règle de réouverture des relances
 En no-limit et en pot-limit, un all-in partiel ne donne aux joueurs qui ont **déjà parlé** dans ce tour aucune seconde chance de relancer — sauf si plusieurs all-in courts s'empilent au point que l'un d'eux fait face à au moins une relance complète quand l'action lui revient. Ceux qui n'ont pas encore parlé peuvent relancer, au total minimum vu plus haut. Connaître cette règle par cœur coupe court aux disputes avant qu'elles ne commencent.
 
 ### Erreur 3 : ajouter de l'argent de ta poche en plein coup
-Table stakes. Ce qui est sur la table est tout ce que tu peux miser. Si tu es à tapis pour $80 et que le pot fait $400, tu ne peux gagner que $80 de chaque joueur qui a suivi.
+Table stakes. Ce qui est sur la table est tout ce que tu peux miser. Si tu es à tapis pour $80, tu ne peux gagner que $80 de chaque joueur qui a suivi, en plus de ce qui était déjà dans le pot — même s'ils misent $400.
 
 ### Erreur 4 : jeter tes cartes trop vite
 Tu es à tapis pour le pot principal. Deux autres joueurs se battent pour le side pot. En tournoi, la question se règle d'elle-même — une fois leurs enchères terminées, la ==TDA 2024 Rule 16== impose d'étaler toutes les mains, la tienne comprise. En cash game, non : j'ai vu un jour un short stack jeter ses cartes (muck) à l'instant où l'abattage du side pot tournait contre lui — en oubliant qu'il n'était même pas dans ce pot et que le pot principal pouvait encore lui revenir. Une fois que le donneur les avait ramassées avec les cartes jetées, elles n'étaient plus identifiables — main morte, et le pot principal est parti de l'autre côté. (Une main encore clairement identifiable peut être récupérée à la discrétion du floor (le responsable de salle), mais n'y compte jamais.) Ne jette pas tes cartes — ta main reste en jeu pour le pot principal. ==Attends toujours que le donneur ait réglé tous les pots avant de toucher à tes cartes.==

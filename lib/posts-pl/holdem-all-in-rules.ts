@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula). Żetony, które dwa lub więcej większych stacków postawi ponad tę kwotę, tworzą pulę boczną, którą mogą wygrać tylko oni; nadwyżka jednego gracza po prostu do niego wraca. W No-Limit i Pot-Limit all-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla gracza, który już zagrał — chyba że kilka krótkich all-inów razem da co najmniej pełne przebicie ponad to, co ten gracz już wrzucił.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -209,7 +209,7 @@ Kiedy licytacja jest zamknięta, a gracz jest all-in, oto co dzieje się w showd
 
 ### Błąd 1: myślenie, że gracz all-in może wygrać pulę boczną
 
-Nie może. Gdy gracz all-in ma już nałożony limit, każdy dodatkowy żeton postawiony przez większe stacki idzie do puli, do której nie ma żadnego prawa.
+Nie może. Gdy gracz all-in ma już nałożony limit, każdy dodatkowy żeton postawiony przez większe stacki idzie do puli, do której nie ma żadnego prawa — a jeśli postawił je tylko jeden gracz, wracają prosto do niego jako niesprawdzony zakład.
 
 ### Błąd 2: nieznajomość reguły, kto może przebić
 
@@ -217,7 +217,7 @@ W No-Limit i Pot-Limit częściowy all-in nie daje drugiej szansy na przebicie t
 
 ### Błąd 3: dokładanie żetonów z kieszeni w środku rozdania
 
-Table stakes. To, co jest na stole, to wszystko, co możesz postawić. Jeśli jesteś all-in za $80, a pula wynosi $400, od każdego sprawdzającego możesz wygrać tylko $80.
+Table stakes. To, co jest na stole, to wszystko, co możesz postawić. Jeśli jesteś all-in za $80, od każdego sprawdzającego możesz wygrać tylko $80 ponad to, co już było w puli — nawet jeśli postawi $400.
 
 ### Błąd 4: zbyt szybkie wyrzucenie kart
 

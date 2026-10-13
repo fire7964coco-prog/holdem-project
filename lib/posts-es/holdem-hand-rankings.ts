@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar con cinco cartas, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -81,7 +81,7 @@ Aquí tienes cada mano, de la más fuerte a la más débil, con un ejemplo y la 
 
 **A♠ K♠ Q♠ J♠ 10♠** — la escalera de color más alta y la mejor mano del póker.
 
-No se puede superar; el único empate posible es una escalera real que esté entera en la mesa y la compartan todos, lo que divide el bote. Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando lo hagas, tu único trabajo es meter cuantas fichas puedas.
+No se puede superar; el único empate posible es una escalera real que esté entera en la mesa y la compartan todos, lo que divide el bote. Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando la ligues tú — no una que esté entera en la mesa —, tu único trabajo es meter cuantas fichas puedas.
 
 ### #2 — Escalera de Color
 

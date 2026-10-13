@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blind là khoản cược bắt buộc đặt trước khi bài được chia. Small blind ngồi ngay bên trái nút dealer, big blind ngồi bên trái small blind (khi chơi heads-up, chính người cầm nút dealer đặt small blind). Big blind — thường gấp đôi small blind — là đơn vị cược của cả bàn.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-09",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 phút",
@@ -180,7 +180,7 @@ A. Khi chỉ còn hai người, luật đảo ngược: nút dealer đặt small
 
 **Q. Lỡ lượt blind thì chuyện gì xảy ra?**
 
-A. Ở hầu hết các phòng bài, bạn đặt bù các blind đã lỡ khi quay lại — big blind được tính như cược sống, còn small blind là chip chết được cho thẳng vào pot. Hoặc bạn có thể chờ tới khi big blind tự đến ghế mình — hay, ở phòng nào cho phép, quay lại bàn bằng cách đặt straddle sống từ Under the Gun.
+A. Trong cash game live, ở hầu hết các phòng bài, bạn đặt bù các blind đã lỡ khi quay lại — big blind được tính như cược sống, còn small blind là chip chết được cho thẳng vào pot. Hoặc bạn có thể chờ tới khi big blind tự đến ghế mình — hay, ở phòng nào cho phép, quay lại bàn bằng cách đặt straddle sống từ Under the Gun. Ở giải đấu thì không có gì phải bù: blind và ante bị trừ thẳng khỏi stack của bạn dù bạn có ngồi ở ghế hay không.
 
 **Q. "Big blind" có giống "the blinds" (các blind) không?**
 

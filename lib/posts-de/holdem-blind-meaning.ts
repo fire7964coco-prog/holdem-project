@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben (heads-up setzt der Button selbst den Small Blind); der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -182,7 +182,7 @@ A. Genau zweimal pro Orbit – einmal den Small Blind, einmal den Big Blind. Der
 
 **Q. Was passiert, wenn du deinen Blind verpasst?**
 
-A. In den meisten Kartenräumen setzt du die verpassten Blinds bei der Rückkehr nach – der Big Blind zählt als lebender Einsatz, der Small Blind kommt als toter Chip in den Pot. Alternativ wartest du, bis der Big Blind von selbst deinen Sitz erreicht – oder du steigst, sofern die Hausregeln es erlauben, als Under-the-Gun-Live-Straddle wieder ein.
+A. Im Live-Cashgame setzt du in den meisten Kartenräumen die verpassten Blinds bei der Rückkehr nach – der Big Blind zählt als lebender Einsatz, der Small Blind kommt als toter Chip in den Pot. Alternativ wartest du, bis der Big Blind von selbst deinen Sitz erreicht – oder du steigst, sofern die Hausregeln es erlauben, als Under-the-Gun-Live-Straddle wieder ein. Im Turnier gibt es nichts nachzusetzen: Blinds und Antes werden von deinem Stack abgezogen, ob du am Platz sitzt oder nicht.
 
 **Q. Ist „der Big Blind“ dasselbe wie „die Blinds“?**
 

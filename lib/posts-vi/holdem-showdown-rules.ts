@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở showdown trong giải đấu không có all-in, người bet hoặc raise cuối cùng ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút dealer lật trước. Khi có all-in, mọi tay bài còn lại phải được lật khi mọi hành động cược đã kết thúc. Người đã call ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người bet hoặc raise cuối cùng. Cash game áp dụng luật nhà về lật bài và muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-10",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -90,7 +90,7 @@ Ví dụ: nút dealer (BTN), small blind (mù nhỏ — SB) và big blind (mù l
 
 Tùy nơi chơi. Trong giải đấu, câu hỏi «ai trước» không tồn tại: ngay khi có người all-in và không còn ai bet được nữa, tất cả tay bài trong pot phải ngửa trước khi dealer chia nốt bài chung (board). Trong cash game theo bộ luật WSOP Live Action thì vẫn có thứ tự lật — chi tiết ngay bên dưới.
 
-Trong **giải đấu**, khi một người all-in và không còn cược được nữa, các lá bài chung còn lại được chia với **mọi tay bài ngửa** (==Luật 16 của TDA 2024==). Điều này bảo vệ tính toàn vẹn của ván bài — không ai được muck một cách có tính toán trong tình huống all-in. **Cash game chạy theo luật nhà**, và bộ luật WSOP Live Action xếp ngược lại: **ở bàn no-limit**, nếu vòng cược kết thúc trước river, người đẩy all-in có trách nhiệm lật trước; và ở bất kỳ cash game nào, khi có side pot (pot phụ), những người tranh side pot lật trước người chỉ all-in cho main pot (pot chính) (==WSOP Live Action, Luật 149==).
+Trong **giải đấu**, khi một người all-in và không còn cược được nữa, các lá bài chung còn lại được chia với **mọi tay bài ngửa** (==Luật 16 của TDA 2024==). Điều này bảo vệ tính toàn vẹn của ván bài — không ai được muck một cách có tính toán trong tình huống all-in. (Một ngoại lệ: khi chơi hand-for-hand sát bubble, ngay trước khi vào vùng có thưởng, theo WSOP Tournament, Luật 126.g, các tay bài all-in vẫn úp và không chia thêm lá nào cho đến khi nhân viên giải ra hiệu.) **Cash game chạy theo luật nhà**, và bộ luật WSOP Live Action xếp ngược lại: **ở bàn no-limit**, nếu vòng cược kết thúc trước river, người đẩy all-in có trách nhiệm lật trước; và ở bất kỳ cash game nào, khi có side pot (pot phụ), những người tranh side pot lật trước người chỉ all-in cho main pot (pot chính) (==WSOP Live Action, Luật 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -98,7 +98,7 @@ Trong **giải đấu**, khi một người all-in và không còn cược đư�
 |----------------|---------------|
 | Một người all-in ở vòng trước, những người khác call, không còn cược được nữa | Giải đấu: mọi tay bài được ngửa ngay, không chậm trễ, khi toàn bộ cược đã kết thúc. Cash game: nếu có side pot, những người tranh side pot lật trước; và ở bàn no-limit, chính người đẩy all-in lật trước (WSOP Live Action, Luật 149) |
 | Cú all-in ở river bị call | Cash game: người all-in lật trước với tư cách người bet cuối cùng. Giải đấu: không có thứ tự «ai trước» — theo Luật 16 của TDA 2024, mọi tay bài ngửa cùng lúc và ==r:không ai được muck ở đây== |
-| Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng. Giải đấu: mọi tay bài liên quan đều phải ngửa. Cash game: muốn thắng bất kỳ phần nào của pot, người chơi phải lật bài (WSOP Live Action, Luật 143) |
+| Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng. Giải đấu: mọi tay bài liên quan đều phải ngửa. Cash game: muốn thắng bất kỳ phần nào của pot, người chơi phải lật bài, trừ khi bài của họ là tay bài sống duy nhất còn lại (WSOP Live Action, Luật 143) |
 
 </div>
 

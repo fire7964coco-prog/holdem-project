@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées et partage 5 cartes communes posées au milieu de la table. Il y a jusqu'à 4 tours d'enchères, et la meilleure main de 5 cartes gagne à l'abattage (showdown), sauf si tous les autres se sont couchés avant.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-07",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -265,7 +265,7 @@ La position, c'est **le moment où tu agis dans chaque tour de mises**. Agir plu
 | Juste à droite du BTN | CO (cut-off) | 6e | Deuxième meilleure place — élargis ta range |
 | Dernier après le flop | BTN (Bouton) | 7e préflop ; **dernier** après | **Meilleure place** — parle en dernier à chaque tour de mises après le flop |
 | À gauche du donneur | SB (Petite blinde) | 8e préflop, 1er après | Pire place — parle en premier à chaque tour de mises après le flop |
-| Deux places à gauche du donneur | BB (Grosse blinde) | Dernier préflop (9e), 2e après | Peut relancer préflop ; hors de position après le flop |
+| Deux places à gauche du donneur | BB (Grosse blinde) | Dernier préflop (9e), 2e après | Peut relancer préflop ; hors de position après le flop (sauf face à la petite blinde) |
 
 ==g:Le bouton est la place la plus rentable de la table.== Tu parles en dernier au flop, à la turn et à la river — chaque joueur te montre donc la force de sa main avant que tu décides. Pour un guide complet, lis [les positions au poker : de UTG au bouton](/fr/blog/holdem-positions).
 

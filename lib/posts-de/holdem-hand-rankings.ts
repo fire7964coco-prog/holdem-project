@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -94,7 +94,7 @@ Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt bei
 
 **A♠ K♠ Q♠ J♠ 10♠** – der höchste Straight Flush und die beste Hand im Poker.
 
-Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört – dann wird der Pot geteilt. Du siehst ihn etwa einmal alle 31.000 Hände, daher treffen ihn viele Spieler jahrelang nicht. Wenn du ihn hast, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
+Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört – dann wird der Pot geteilt. Du siehst ihn etwa einmal alle 31.000 Hände, daher treffen ihn viele Spieler jahrelang nicht. Wenn du ihn selbst bildest – nicht einen, der komplett auf dem Board liegt –, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
 
 ### #2 – Straight Flush
 

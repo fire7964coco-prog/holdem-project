@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda (en heads-up, el propio botón pone la ciega pequeña); la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -180,7 +180,7 @@ A. Con solo dos jugadores la regla se invierte: el botón pone la ciega pequeña
 
 **Q. ¿Qué pasa si te saltas tu ciega?**
 
-A. En la mayoría de salas pones las ciegas pendientes al volver — la ciega grande juega como apuesta viva y la pequeña es una ficha muerta que va al bote. También puedes esperar a que la ciega grande llegue de forma natural a tu asiento — o, si el reglamento de la sala lo admite, volver a entrar con un straddle vivo desde UTG.
+A. En una partida de cash en vivo, en la mayoría de salas pones las ciegas pendientes al volver — la ciega grande juega como apuesta viva y la pequeña es una ficha muerta que va al bote. También puedes esperar a que la ciega grande llegue de forma natural a tu asiento — o, si el reglamento de la sala lo admite, volver a entrar con un straddle vivo desde UTG. En un torneo no hay nada que reponer: las ciegas y los antes salen de tu stack estés sentado o no.
 
 **Q. ¿"La ciega grande" es lo mismo que "las ciegas"?**
 

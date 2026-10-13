@@ -209,13 +209,13 @@ When all betting is complete and a player is all-in, here is what happens at sho
 After enough all-in pots, you learn the chaos almost always comes from five specific misunderstandings — not the math, but who is eligible for which pot.
 
 ### Mistake 1: Thinking the all-in player can win the side pot
-They cannot. Once the all-in player is capped, any additional chips bet by larger stacks belong to a pot the all-in player has no claim to.
+They cannot. Once the all-in player is capped, any additional chips bet by larger stacks belong to a pot the all-in player has no claim to — or, if only one player bet them, go straight back to that player as an uncalled bet.
 
 ### Mistake 2: Not knowing the re-raise eligibility rule
 In no-limit and pot-limit, a partial all-in gives players who have **already acted** this round no second chance to re-raise — unless several short all-ins stack up so that one of them is facing at least a full raise when the action gets back around. Anyone still to act may raise, at the minimum total shown above. Knowing this cold stops arguments before they start.
 
 ### Mistake 3: Adding chips from your pocket mid-hand
-Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.
+Table stakes. What's on the table is all you can bet. If you're all-in for $80, you can win only $80 from each caller on top of what was already in the pot — even if they bet $400.
 
 ### Mistake 4: Mucking your hand too quickly
 You're all-in for the main pot. Two other players battle it out for the side pot. In a tournament this resolves itself — once their betting ends, ==TDA 2024 Rule 16== has every hand tabled, yours included. In a cash game it doesn't: I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Once the dealer had swept them into the muck they were unidentifiable — dead, and the main pot went the other way. (A hand that can still be clearly identified may be retrieved at the floor's discretion, but never count on it.) Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==

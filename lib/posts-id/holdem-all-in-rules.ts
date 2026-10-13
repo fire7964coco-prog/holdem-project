@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Chip yang dipertaruhkan di atas jumlah itu oleh dua stack lebih besar atau lebih membentuk side pot yang hanya bisa dimenangkan mereka; taruhan ekstra dari satu pemain saja cukup dikembalikan. Di no-limit dan pot-limit, all-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi — kecuali beberapa all-in pendek yang digabung mencapai setidaknya satu raise penuh di atas jumlah yang sudah dimasukkan pemain itu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 menit",
@@ -211,7 +211,7 @@ Setelah cukup sering terlibat pot all-in, Anda akan sadar kekacauannya hampir se
 
 ### Kesalahan 1: Mengira pemain all-in bisa memenangkan side pot
 
-Tidak bisa. Begitu pemain all-in dibatasi, chip tambahan apa pun yang dipertaruhkan stack yang lebih besar masuk ke pot yang sama sekali bukan haknya.
+Tidak bisa. Begitu pemain all-in dibatasi, chip tambahan apa pun yang dipertaruhkan stack yang lebih besar masuk ke pot yang sama sekali bukan haknya — atau, kalau hanya satu pemain yang mempertaruhkannya, langsung dikembalikan ke pemain itu sebagai taruhan yang tidak di-call.
 
 ### Kesalahan 2: Tidak tahu aturan hak re-raise
 
@@ -219,7 +219,7 @@ Di no-limit dan pot-limit, all-in parsial tidak memberi kesempatan kedua untuk r
 
 ### Kesalahan 3: Menambah chip dari kantong di tengah hand
 
-Table stakes. Yang ada di meja adalah semua yang bisa Anda pertaruhkan. Kalau Anda all-in $80 dan pot-nya $400, Anda hanya bisa memenangkan $80 dari tiap pemain yang call.
+Table stakes. Yang ada di meja adalah semua yang bisa Anda pertaruhkan. Kalau Anda all-in $80, Anda hanya bisa memenangkan $80 dari tiap pemain yang call, di luar chip yang sudah ada di pot — sekalipun mereka bet $400.
 
 ### Kesalahan 4: Membuang kartu (muck) terlalu cepat
 

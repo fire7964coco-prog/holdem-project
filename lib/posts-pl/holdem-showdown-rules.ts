@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W turnieju bez all-ina pierwszy pokazuje ostatni agresor rivera; po samych czekach zaczyna pierwszy aktywny gracz na lewo od buttona. Przy all-inie wszystkie pozostałe ręce trzeba odsłonić natychmiast po zakończeniu licytacji. Kto sprawdził na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora. W cashu pokazywanie i muckowanie zależą od zasad pokoju.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -77,7 +77,7 @@ Przykład: button, mały blind i duży blind dochodzą do rivera. SB sprawdza cz
 
 ## Zasady showdownu przy all-inie — czy gracz all-in odkrywa pierwszy?
 
-W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). Chroni to uczciwość rozdania: nikt nie może muckować, aby ukryć wynik. W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali.
+W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). Chroni to uczciwość rozdania: nikt nie może muckować, aby ukryć wynik. (Jeden wyjątek: podczas gry hand-for-hand tuż przed strefą nagród ręce all-in zgodnie z WSOP Tournament 2026, zasada 126.g, zostają zakryte i nie rozdaje się kolejnych kart, dopóki obsługa turnieju tego nie poleci.) W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

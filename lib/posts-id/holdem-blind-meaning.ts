@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi (di heads-up, tombol itu sendiri yang memasang Small Blind); Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 menit",
@@ -180,7 +180,7 @@ A. Dengan hanya dua pemain, aturannya terbalik: tombol dealer memasang Small Bli
 
 **Q. Apa yang terjadi kalau Anda melewatkan blind?**
 
-A. Di kebanyakan cardroom Anda memasang blind yang terlewat saat kembali — Big Blind berlaku sebagai taruhan hidup dan Small Blind menjadi chip mati yang masuk pot. Atau Anda bisa menunggu sampai Big Blind secara alami tiba di kursi Anda — atau, kalau aturan cardroom-nya membolehkan, masuk lagi sebagai live straddle dari UTG.
+A. Di cash game live, kebanyakan cardroom meminta Anda memasang blind yang terlewat saat kembali — Big Blind berlaku sebagai taruhan hidup dan Small Blind menjadi chip mati yang masuk pot. Atau Anda bisa menunggu sampai Big Blind secara alami tiba di kursi Anda — atau, kalau aturan cardroom-nya membolehkan, masuk lagi sebagai live straddle dari UTG. Di turnamen tidak ada yang perlu disusulkan: blind dan ante ditarik dari stack Anda entah Anda duduk di kursi atau tidak.
 
 **Q. Apakah "big blind" sama dengan "blinds"?**
 

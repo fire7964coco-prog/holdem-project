@@ -126,7 +126,7 @@ Mifano miwili iliyofanyiwa hesabu:
 | Flop | Mchezaji anaweka bet $6 | $6 zaidi → $12 jumla |
 | Preflop (blinds $1/$2) | Mchezaji anafanya raise hadi $6 (raise ya $4 juu ya blind ya $2) | $4 zaidi → $10 jumla |
 
-Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise kamili ya mwisho, si big blind. ("Kamili" ina maana pale mtu anapoenda all-in kwa chini ya raise: baada ya bet ya $10 na all-in ya $14, nyongeza ya kulingana bado ni $10, hivyo raise ndogo zaidi ni hadi $24.) Kabla ya flop, big blind inahesabika kama bet ya kufungua, ndiyo maana open-raise ndogo zaidi ni hadi big blind 2.
+Ufahamu muhimu: min-raise inalingana na ==nyongeza== ya bet au raise kamili ya mwisho, si big blind. ("Kamili" ina maana pale mtu anapoenda all-in kwa chini ya raise: baada ya bet ya $10 na all-in ya $14, nyongeza ya kulingana bado ni $10, hivyo raise ndogo zaidi ni hadi $24.) Kabla ya flop, big blind inahesabika kama bet ya kufungua, ndiyo maana open-raise ndogo zaidi ni hadi big blind 2. Kukiwa na live straddle mezani, straddle ndiyo bet ya kuzidi, hivyo min-raise ni mara mbili ya straddle (WSOP Live Action Rule 165).
 
 Sheria mbili za live poker zinazokuja na raise:
 
@@ -144,7 +144,7 @@ Katika **No-Limit Hold'em: hakuna kikomo**. Unaweza raise, upate re-raise, na ur
 Bado kuna mipaka miwili:
 
 - Kila re-raise lazima itimize ==sheria ya nyongeza ya min-raise== iliyotajwa hapo juu — isipokuwa all-in pekee, ambayo inaweza kuwa pungufu
-- ==r:Huwezi raise bet yako mwenyewe.== Kama ukiweka bet na kila mtu akafanya call tu, raundi inaisha — unapata nafasi ya kuraise tena tu ikiwa mtu atakufanyia raise *wewe* kwanza
+- ==r:Huwezi raise bet yako mwenyewe.== Kama ukiweka bet na kila mtu akafanya call tu, raundi inaisha — unapata nafasi ya kuraise tena tu ikiwa mtu atakufanyia raise *wewe* kwanza. Kipekee pekee ni kabla ya flop: kila mtu akifanya call tu, big blind (au aliyeweka live straddle) bado ana chaguo la kuraise, kwa sababu post hiyo inahesabika kama bet yake ya kufungua (WSOP Live Action Rules 159 · 165)
 
 Katika michezo ya **Fixed-Limit**, kila raundi ina kikomo (pot "iliyofungwa"). Sheria za mashindano za WSOP zinaweka kikomo hicho kwenye ==bet moja pamoja na raise nne== (Rule 100.b) — na kipekee chake kinakwenda kinyume na wanavyodhani wengi: ==r:kikomo kinabaki hata kama kwenye mkono huo wamebaki wachezaji wawili tu==. Kinaondoka pale tu **mashindano yote** yanapobaki na watu wawili. Kwenye cash game sheria za nyumba ndizo hutawala, hivyo mwulize dila.
 
@@ -202,7 +202,7 @@ A. Ndiyo — kama mtu akiweka bet baada ya check yako, unaweza raise pale action
 
 **Q. Unaweza raise bet yako mwenyewe?**
 
-A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaidi — raundi ya betting inaisha. Katika No-Limit na Pot-Limit, unaweza ku-raise tena tu ikiwa action itarudi kwako ukikabiliwa na angalau raise kamili juu ya bet yako — iwe imetoka kwa mchezaji mmoja au all-in fupi kadhaa zikijumlishwa; all-in moja ya chini ya raise kamili hairudishi action. Kwenye Fixed-Limit kiwango ni cha chini zaidi: all-in yenye angalau 50% ya bet au raise kamili huirudisha (TDA 2024 Rule 47-B).
+A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaidi — raundi ya betting inaisha. Kipekee pekee ni kabla ya flop: kila mtu akifanya call tu, big blind (au aliyeweka live straddle) bado ana chaguo la kuraise, kwa sababu post hiyo inahesabika kama bet yake ya kufungua (WSOP Live Action Rules 159 · 165). Katika No-Limit na Pot-Limit, unaweza ku-raise tena tu ikiwa action itarudi kwako ukikabiliwa na angalau raise kamili juu ya bet yako — iwe imetoka kwa mchezaji mmoja au all-in fupi kadhaa zikijumlishwa; all-in moja ya chini ya raise kamili hairudishi action. Kwenye Fixed-Limit kiwango ni cha chini zaidi: all-in yenye angalau 50% ya bet au raise kamili huirudisha (TDA 2024 Rule 47-B).
 
 **Q. Unaweza raise mara ngapi katika Texas Hold'em?**
 

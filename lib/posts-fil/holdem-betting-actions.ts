@@ -126,7 +126,7 @@ Dalawang worked na halimbawa:
 | Flop | Nag-bet ng $6 ang manlalaro | $6 pa → $12 total |
 | Preflop (blinds $1/$2) | Nag-raise hanggang $6 ang manlalaro (raise na $4 sa ibabaw ng $2 blind) | $4 pa → $10 total |
 
-Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling full bet o raise, hindi sa big blind. (Mahalaga ang "full" kapag may nag-all-in nang kulang sa raise: matapos ang $10 bet at $14 all-in, $10 pa rin ang increment na dapat tapatan, kaya ang pinakamaliit na raise ay hanggang $24.) Preflop, ang big blind ang binibilang na opening bet, kaya ang pinakamaliit na open-raise ay hanggang 2 big blinds.
+Ang key insight: ang min-raise ay tumutugma sa ==increment== ng huling full bet o raise, hindi sa big blind. (Mahalaga ang "full" kapag may nag-all-in nang kulang sa raise: matapos ang $10 bet at $14 all-in, $10 pa rin ang increment na dapat tapatan, kaya ang pinakamaliit na raise ay hanggang $24.) Preflop, ang big blind ang binibilang na opening bet, kaya ang pinakamaliit na open-raise ay hanggang 2 big blinds. Kapag may live straddle sa mesa, ang straddle ang bet na dapat lampasan, kaya ang minimum raise ay doble ng straddle (WSOP Live Action Rule 165).
 
 Dalawang live-poker rules na kasama ng pag-raise:
 
@@ -144,7 +144,7 @@ Sa **No-Limit Hold'em: walang cap**. Pwede kang mag-raise, ma-re-raise, at mag-r
 Dalawang hangganan pa rin ang tumatakbo:
 
 - Bawat re-raise ay dapat matugunan ang ==min-raise increment rule== sa itaas — ang tanging exception ay all-in, na puwedeng kulang
-- ==r:Hindi mo pwedeng i-raise ang sarili mong bet.== Kung nag-bet ka at basta na-call ka lang ng lahat, tapos na ang round — pwede ka lang mag-raise ulit kung may mag-raise *sa iyo* muna
+- ==r:Hindi mo pwedeng i-raise ang sarili mong bet.== Kung nag-bet ka at basta na-call ka lang ng lahat, tapos na ang round — pwede ka lang mag-raise ulit kung may mag-raise *sa iyo* muna. Ang tanging exception ay sa preflop: kapag nag-call lang ang lahat, may option pa ring mag-raise ang big blind (o ang live straddler), dahil binibilang ang post na iyon bilang opening bet nila (WSOP Live Action Rules 159 · 165)
 
 Sa **Fixed-Limit** na laro, naka-cap ang bawat round (isang "capped" na pot). Sa tournament rules ng WSOP, ang cap ay ==isang bet plus apat na raises== (Rule 100.b) — at baligtad ang exception sa inaasahan ng karamihan: ==r:nananatili ang cap kahit dalawa na lang ang natitira sa hand==. Naaalis lang ito kapag ang **buong tournament** na ang heads-up. Sa cash game, house rules ang masusunod, kaya tanungin mo ang dealer.
 
@@ -202,7 +202,7 @@ A. Oo — kung may mag-bet pagkatapos ng check mo, pwede kang mag-raise pagbalik
 
 **Q. Pwede mo bang i-raise ang sarili mong bet?**
 
-A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pwedeng magdagdag — tapos na ang betting round. Sa No-Limit at Pot-Limit, puwede ka lang mag-raise ulit kung babalik sa iyo ang action na may hinaharap kang hindi bababa sa isang full raise lampas sa bet mo — galing man sa iisang player o sa ilang short all-in na pinagsama; ang iisang all-in na kulang sa full raise ay hindi nagbubukas ulit ng action. Sa Fixed-Limit mas mababa ang guhit: ang all-in na hindi bababa sa 50% ng full bet o raise ay nagbubukas ulit nito (TDA 2024 Rule 47-B).
+A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pwedeng magdagdag — tapos na ang betting round. Ang tanging exception ay sa preflop: kapag nag-call lang ang lahat, may option pa ring mag-raise ang big blind (o ang live straddler), dahil binibilang ang post na iyon bilang opening bet nila (WSOP Live Action Rules 159 · 165). Sa No-Limit at Pot-Limit, puwede ka lang mag-raise ulit kung babalik sa iyo ang action na may hinaharap kang hindi bababa sa isang full raise lampas sa bet mo — galing man sa iisang player o sa ilang short all-in na pinagsama; ang iisang all-in na kulang sa full raise ay hindi nagbubukas ulit ng action. Sa Fixed-Limit mas mababa ang guhit: ang all-in na hindi bababa sa 50% ng full bet o raise ay nagbubukas ulit nito (TDA 2024 Rule 47-B).
 
 **Q. Ilang beses ka pwedeng mag-raise sa Texas Hold'em?**
 

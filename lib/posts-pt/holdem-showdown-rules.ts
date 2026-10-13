@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Em torneios, sem all-in, o último agressor do river mostra primeiro; se todos deram check, começa o primeiro jogador ativo à esquerda do botão. Com all-in, todas as mãos restantes devem ser abertas assim que as apostas terminam. Quem pagou no river e mantém ou já abriu suas cartas pode pedir para ver a mão do último agressor. No cash, as regras da casa definem a abertura e o muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -78,7 +78,7 @@ Exemplo: botão, small blind e big blind chegam ao river. O SB dá check, o BB d
 
 ## Regras de showdown no all-in — quem está all-in mostra primeiro?
 
-Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes são abertas com **todas as mãos viradas para cima** (==regra 16 da TDA, edição de 2024==). Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in. **No cash valem as regras da casa**, e as WSOP Live Action Rules colocam ao contrário: **num jogo de no-limit**, se as apostas terminaram antes do river, quem foi de all-in é responsável por virar primeiro; e, em qualquer cash game, havendo pote paralelo, quem o disputa mostra antes de qualquer um que esteja all-in só pelo pote principal (==regra 149 das Live Action Rules==).
+Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes são abertas com **todas as mãos viradas para cima** (==regra 16 da TDA, edição de 2024==). Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in. (Uma exceção: durante o hand-for-hand perto da zona de premiação, a regra 126.g do regulamento de torneios da WSOP manda as mãos all-in ficarem viradas para baixo, sem mais cartas distribuídas até a organização autorizar.) **No cash valem as regras da casa**, e as WSOP Live Action Rules colocam ao contrário: **num jogo de no-limit**, se as apostas terminaram antes do river, quem foi de all-in é responsável por virar primeiro; e, em qualquer cash game, havendo pote paralelo, quem o disputa mostra antes de qualquer um que esteja all-in só pelo pote principal (==regra 149 das Live Action Rules==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -86,7 +86,7 @@ Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíve
 |----------------|---------------|
 | Jogador vai all-in numa street anterior, os outros pagam, sem mais apostas possíveis | Torneio: todas as mãos viradas para cima sem demora assim que toda a ação de apostas terminou (regra 16 da TDA, edição de 2024). Cash: havendo pote paralelo, os jogadores dele mostram primeiro; e, num jogo de no-limit, o jogador de all-in vira primeiro (regra 149 das Live Action Rules) |
 | Aposta all-in no river é paga | Cash: quem foi all-in mostra primeiro como último agressor. Torneio: não existe ordem de mostrar — pela regra 16 da TDA (edição de 2024) todas as mãos são viradas ao mesmo tempo e ==r:aqui ninguém pode dar muck== |
-| Vários all-ins criando vários side pots | Cada pote é resolvido separadamente. Torneio: todas as mãos envolvidas são mostradas. Cash: para ganhar qualquer parte de um pote, o jogador precisa mostrar as cartas (regra 143 das WSOP Live Action Rules) |
+| Vários all-ins criando vários side pots | Cada pote é resolvido separadamente. Torneio: todas as mãos envolvidas são mostradas. Cash: para ganhar qualquer parte de um pote, o jogador precisa mostrar as cartas, a não ser que a dele seja a única mão viva restante (regra 143 das WSOP Live Action Rules) |
 
 </div>
 

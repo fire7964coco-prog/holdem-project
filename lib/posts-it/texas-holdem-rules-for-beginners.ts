@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ La posizione indica **quando parli in ogni giro di puntate**. Parlare più tardi
 | Uno a destra del BTN | CO (Cutoff) | 6° | Secondo posto migliore — allarga il range |
 | Ultimo dopo il flop | BTN (Bottone) | 7° pre; **ultimo** post | **Posto migliore** — parla per ultimo ogni strada postflop |
 | A sinistra del mazziere | SB (Piccolo Buio) | 8° pre, 1° post | Posto peggiore — parla per primo ogni strada postflop |
-| Due a sinistra del mazziere | BB (Grande Buio) | Ultimo pre (9°), 2° post | Ha l'opzione di rilanciare preflop; fuori posizione postflop |
+| Due a sinistra del mazziere | BB (Grande Buio) | Ultimo pre (9°), 2° post | Ha l'opzione di rilanciare preflop; fuori posizione postflop (tranne contro il piccolo buio) |
 
 ==g:Il bottone è il posto più redditizio del tavolo.== Parli per ultimo su flop, turn e river — quindi ogni giocatore ti mostra la forza della propria mano prima che tu decida. Per una guida completa alle posizioni, leggi la guida alle posizioni nel poker: da UTG al bottone.
 

@@ -126,7 +126,7 @@ Dwa rozpisane przykłady:
 | Flop | Gracz stawia $6 | $6 więcej → $12 razem |
 | Preflop (blindy $1/$2) | Gracz przebija do $6 (przebicie o $4 ponad blind $2) | $4 więcej → $10 razem |
 
-Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego pełnego zakładu lub przebicia, a nie dużemu blindowi. ("Pełnego" ma znaczenie, gdy ktoś wejdzie all-in za mniej niż przebicie: po zakładzie $10 i all-inie za $14 przyrost do wyrównania to nadal $10, więc najmniejsze przebicie to do $24.) Przed flopem duży blind liczy się jako zakład otwierający — dlatego najmniejsze przebicie otwierające to do 2 dużych blindów.
+Kluczowa rzecz: min-raise równa się ==przyrostowi== ostatniego pełnego zakładu lub przebicia, a nie dużemu blindowi. ("Pełnego" ma znaczenie, gdy ktoś wejdzie all-in za mniej niż przebicie: po zakładzie $10 i all-inie za $14 przyrost do wyrównania to nadal $10, więc najmniejsze przebicie to do $24.) Przed flopem duży blind liczy się jako zakład otwierający — dlatego najmniejsze przebicie otwierające to do 2 dużych blindów. Gdy na stole leży żywy straddle, to właśnie jego trzeba przebić, więc minimalne przebicie to do podwójnego straddle'a (zasada 165 WSOP Live Action Rules).
 
 Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
@@ -144,7 +144,7 @@ W **No-Limit Hold'em: nie ma limitu**. Możesz przebić, dostać re-raise i prze
 Wciąż obowiązują dwie granice:
 
 - Każde re-raise musi spełniać ==zasadę minimalnego przyrostu== z góry — jedynym wyjątkiem jest all-in, który może być mniejszy
-- ==r:Nie możesz przebić własnego zakładu.== Jeśli postawisz, a wszyscy tylko sprawdzą, runda się kończy — ponownie możesz przebić tylko wtedy, gdy ktoś przebije *ciebie* pierwszy
+- ==r:Nie możesz przebić własnego zakładu.== Jeśli postawisz, a wszyscy tylko sprawdzą, runda się kończy — ponownie możesz przebić tylko wtedy, gdy ktoś przebije *ciebie* pierwszy. Jedyny wyjątek jest przed flopem: gdy wszyscy tylko sprawdzą, duży blind (albo gracz z żywym straddle'em) wciąż ma opcję przebicia, bo jego wpłata liczy się jako zakład otwierający (zasady 159 i 165 WSOP Live Action Rules)
 
 W grach **Fixed-Limit** każda runda jest zamknięta limitem (pula "capped"). Turniejowe zasady WSOP ustawiają go na ==jeden zakład plus cztery przebicia== (zasada 100.b) — a wyjątek działa odwrotnie, niż niemal wszyscy zakładają: ==r:limit obowiązuje nawet wtedy, gdy w rozdaniu zostało już tylko dwóch graczy==. Znika dopiero, gdy heads-up jest **cały turniej**. W grach cash decydują zasady lokalu, więc dopytaj rozdającego.
 
@@ -206,7 +206,7 @@ A. Tak — jeśli ktoś postawi po twoim czeku, możesz przebić, gdy ruch wróc
 
 **Q. Czy można przebić własny zakład?**
 
-A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć więcej — runda licytacji się kończy. W No-Limit i Pot-Limit możesz przebić ponownie tylko wtedy, gdy ruch wróci do ciebie i masz przed sobą co najmniej pełne przebicie ponad twój zakład — czy zrobił je jeden gracz, czy złożyło się na nie kilka krótkich all-inów; pojedynczy all-in mniejszy niż pełne przebicie nie otwiera akcji na nowo. W Fixed-Limit poprzeczka wisi niżej: otwiera ją all-in wart co najmniej 50% pełnego zakładu lub przebicia (TDA 2024, zasada 47-B).
+A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć więcej — runda licytacji się kończy. Jedyny wyjątek jest przed flopem: gdy wszyscy tylko sprawdzą, duży blind (albo gracz z żywym straddle'em) wciąż ma opcję przebicia, bo jego wpłata liczy się jako zakład otwierający (zasady 159 i 165 WSOP Live Action Rules).W No-Limit i Pot-Limit możesz przebić ponownie tylko wtedy, gdy ruch wróci do ciebie i masz przed sobą co najmniej pełne przebicie ponad twój zakład — czy zrobił je jeden gracz, czy złożyło się na nie kilka krótkich all-inów; pojedynczy all-in mniejszy niż pełne przebicie nie otwiera akcji na nowo. W Fixed-Limit poprzeczka wisi niżej: otwiera ją all-in wart co najmniej 50% pełnego zakładu lub przebicia (TDA 2024, zasada 47-B).
 
 **Q. Ile razy można przebić w Texas Hold'em?**
 

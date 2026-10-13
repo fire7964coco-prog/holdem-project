@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Les blindes sont des mises obligatoires posées avant la distribution des cartes. La petite blinde est à gauche du bouton du donneur et la grosse blinde juste à sa gauche (en heads-up, c'est le bouton qui paie la petite blinde). La grosse blinde, en général le double de la petite, sert d'unité de mise à toute la table.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-08",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -190,7 +190,7 @@ A. Le bouton. Avec seulement deux joueurs, la règle s'inverse : le bouton du do
 
 **Q. Faut-il rattraper une blinde manquée ?**
 
-A. Dans la plupart des salles, tu reposes les blindes manquées à ton retour — la grosse blinde joue comme une mise vivante et la petite est un jeton mort ajouté au pot. Sinon, tu peux attendre que la grosse blinde arrive naturellement à ton siège — ou, dans les salles qui l'autorisent, revenir en jeu avec le straddle live UTG.
+A. En cash game live, dans la plupart des salles, tu reposes les blindes manquées à ton retour — la grosse blinde joue comme une mise vivante et la petite est un jeton mort ajouté au pot. Sinon, tu peux attendre que la grosse blinde arrive naturellement à ton siège — ou, dans les salles qui l'autorisent, revenir en jeu avec le straddle live UTG. En tournoi, il n'y a rien à rattraper : les blindes et les antes sortent de ton stack, que tu sois assis ou non.
 
 **Q. « La grosse blinde » et « les blindes », c'est la même chose ?**
 

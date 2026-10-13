@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 menit",
@@ -77,7 +77,7 @@ Contoh: Button, small blind, dan big blind sampai ke river. SB check, BB check, 
 
 ## Aturan Showdown All-In — Apakah Pemain yang All-In Buka Duluan?
 
-Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA 2024 Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: **di permainan no-limit**, kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan; dan di cash game mana pun, kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
+Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA 2024 Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. (Satu pengecualian: saat hand-for-hand menjelang zona uang, WSOP Tournament Rule 126.g menetapkan hand yang all-in tetap tertutup dan tidak ada kartu lagi yang dibagikan sampai staf memberi aba-aba.) **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: **di permainan no-limit**, kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan; dan di cash game mana pun, kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -85,7 +85,7 @@ Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mu
 |----------------|---------------|
 | Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA 2024 Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain all-in membuka duluan (Live Action Rule 149) |
 | Bet all-in di river di-call | Cash game: pemain yang all-in buka duluan sebagai agresor terakhir. Turnamen: tidak ada urutan membuka sama sekali — menurut TDA 2024 Rule 16 semua hand dibuka bersamaan dan ==r:tidak ada yang boleh muck== |
-| Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah. Turnamen: setiap hand yang terlibat dibuka. Cash game: untuk memenangkan bagian pot mana pun, pemain wajib membuka kartunya (WSOP Live Action Rule 143) |
+| Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah. Turnamen: setiap hand yang terlibat dibuka. Cash game: untuk memenangkan bagian pot mana pun, pemain wajib membuka kartunya, kecuali hand-nya satu-satunya hand hidup yang tersisa (WSOP Live Action Rule 143) |
 
 </div>
 

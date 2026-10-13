@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele pe care două sau mai multe stack-uri mai mari le pariază peste suma aceea formează un side pot pe care doar ei îl pot câștiga, iar un pariu în plus al unui singur jucător pur și simplu i se returnează. La No-Limit și Pot-Limit, un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja — decât dacă mai multe all-in-uri scurte adunate ajung la cel puțin o mărire completă peste cât a pus deja jucătorul respectiv.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -209,7 +209,7 @@ Când pariurile s-au încheiat și există un jucător all-in, iată ce se înt�
 
 ### Greșeala 1: să crezi că jucătorul all-in poate câștiga side pot-ul
 
-Nu poate. Odată ce jucătorul all-in este plafonat, orice jeton în plus pariat de stack-urile mari intră într-un pot asupra căruia nu are niciun drept.
+Nu poate. Odată ce jucătorul all-in este plafonat, orice jeton în plus pariat de stack-urile mari intră într-un pot asupra căruia nu are niciun drept — sau, dacă un singur jucător le-a pariat, i se returnează direct, ca pariu pe care nu l-a egalat nimeni.
 
 ### Greșeala 2: să nu știi regula despre cine poate re-mări
 
@@ -217,7 +217,7 @@ La No-Limit și Pot-Limit, un all-in parțial nu le dă o a doua șansă de a m�
 
 ### Greșeala 3: să adaugi jetoane din buzunar în timpul mâinii
 
-Table stakes. Ce e pe masă e tot ce poți paria. Dacă ești all-in pentru $80 și potul e de $400, de la fiecare jucător care plătește poți câștiga doar $80.
+Table stakes. Ce e pe masă e tot ce poți paria. Dacă ești all-in pentru $80, de la fiecare jucător care plătește poți câștiga doar $80, pe lângă ce era deja în pot — chiar dacă ei pariază $400.
 
 ### Greșeala 4: să arunci mâna prea repede
 

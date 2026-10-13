@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika showdown ya tournament isiyo all-in, last river aggressor anaonyesha kwanza; river iki-checkiwa na wote, mchezaji active wa kwanza kushoto kwa button. Mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja. River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono wa last aggressor. Cash game hufuata house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -77,7 +77,7 @@ Mfano: Button, small blind na big blind wanafika river. SB ana-check, BB ana-che
 
 ## Sheria za Showdown ya All-In — Je, Mchezaji wa All-In Anaonyesha Kwanza?
 
-Kwenye tournament, mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima **iwekwe wazi mara moja** kabla ya board kuendelea (TDA 2024 Rule 16). Kwenye cash game, house rule inatumika na WSOP 2026 B149 ina mpangilio tofauti.
+Kwenye tournament, mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima **iwekwe wazi mara moja** kabla ya board kuendelea (TDA 2024 Rule 16). (Kipekee kimoja: wakati wa mchezo wa hand-for-hand karibu na kuingia kwenye zawadi, WSOP Tournament Rules 2026 Rule 126.g inataka mikono ya all-in ibaki chali na hakuna karata zaidi zinazogawiwa hadi wafanyakazi waseme.) Kwenye cash game, house rule inatumika na WSOP 2026 B149 ina mpangilio tofauti.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

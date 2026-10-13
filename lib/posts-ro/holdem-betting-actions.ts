@@ -126,7 +126,7 @@ Două exemple lucrate:
 | Flop | Un jucător pariază $6 | $6 în plus → $12 în total |
 | Preflop (blind-uri $1/$2) | Un jucător relansează la $6 (o relansare de $4 peste blindul de $2) | $4 în plus → $10 în total |
 
-Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultimei relansări complete, nu big blind-ul. („Complet" contează când cineva intră all-in pentru mai puțin decât o relansare: după un pariu de $10 și un all-in de $14, incrementul de egalat rămâne $10, deci cea mai mică relansare e la $24.) Preflop, big blind-ul contează ca pariu de deschidere, motiv pentru care cea mai mică relansare de deschidere e la 2 big blind-uri.
+Ideea-cheie: min-raise-ul egalează ==incrementul== ultimului pariu sau al ultimei relansări complete, nu big blind-ul. („Complet" contează când cineva intră all-in pentru mai puțin decât o relansare: după un pariu de $10 și un all-in de $14, incrementul de egalat rămâne $10, deci cea mai mică relansare e la $24.) Preflop, big blind-ul contează ca pariu de deschidere, motiv pentru care cea mai mică relansare de deschidere e la 2 big blind-uri. Când la masă e un straddle viu, straddle-ul e pariul de depășit, așa că relansarea minimă e dublul straddle-ului (regula 165 din WSOP Live Action Rules).
 
 Două reguli de poker live care vin la pachet cu relansarea:
 
@@ -144,7 +144,7 @@ Două reguli de poker live care vin la pachet cu relansarea:
 Rămân totuși două limite:
 
 - Fiecare re-relansare trebuie să respecte ==regula incrementului minim== de mai sus — singura excepție e all-in-ul, care poate fi mai mic
-- ==r:Nu îți poți relansa propriul pariu.== Dacă pariezi și toți doar plătesc, runda se încheie — poți relansa din nou doar dacă cineva te relansează *pe tine* mai întâi
+- ==r:Nu îți poți relansa propriul pariu.== Dacă pariezi și toți doar plătesc, runda se încheie — poți relansa din nou doar dacă cineva te relansează *pe tine* mai întâi. Singura excepție e preflop: când toți doar plătesc, big blind-ul (sau jucătorul cu straddle viu) are în continuare opțiunea de a relansa, pentru că miza lui contează drept pariul de deschidere (regulile 159 și 165 din WSOP Live Action Rules)
 
 În jocurile **Fixed-Limit** fiecare rundă e plafonată (pot "plafonat"). Regulile de turneu WSOP fixează plafonul la ==un pariu plus patru relansări== (regula 100.b) — iar excepția merge invers față de ce se așteaptă aproape toată lumea: ==r:plafonul rămâne chiar dacă în mână au mai rămas doar doi jucători==. Cade abia când **întreg turneul** ajunge heads-up. La cash contează regulile casei, așa că întreabă dealerul.
 
@@ -203,7 +203,7 @@ A. Da — dacă cineva pariază după check-ul tău, poți relansa când acțiun
 
 **Q. Îți poți relansa propriul pariu?**
 
-A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — runda de pariere se încheie. La No-Limit și Pot-Limit poți relansa din nou doar dacă acțiunea revine la tine și ai în față cel puțin o relansare completă peste pariul tău — fie că a făcut-o un singur jucător, fie că se adună din mai multe all-in-uri scurte; un singur all-in mai mic decât o relansare completă nu redeschide acțiunea. La Fixed-Limit ștacheta e mai jos: o redeschide un all-in de cel puțin 50% dintr-un pariu sau o relansare completă (TDA 2024, regula 47-B).
+A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — runda de pariere se încheie. Singura excepție e preflop: când toți doar plătesc, big blind-ul (sau jucătorul cu straddle viu) are în continuare opțiunea de a relansa, pentru că miza lui contează drept pariul de deschidere (regulile 159 și 165 din WSOP Live Action Rules). La No-Limit și Pot-Limit poți relansa din nou doar dacă acțiunea revine la tine și ai în față cel puțin o relansare completă peste pariul tău — fie că a făcut-o un singur jucător, fie că se adună din mai multe all-in-uri scurte; un singur all-in mai mic decât o relansare completă nu redeschide acțiunea. La Fixed-Limit ștacheta e mai jos: o redeschide un all-in de cel puțin 50% dintr-un pariu sau o relansare completă (TDA 2024, regula 47-B).
 
 **Q. De câte ori poți relansa la Texas Hold'em?**
 

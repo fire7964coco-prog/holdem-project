@@ -141,7 +141,7 @@ Hai ví dụ tính sẵn:
 | Flop | Một người bet $6 | Thêm $6 → tổng $12 |
 | Preflop (blind $1/$2) | Một người raise lên $6 (tăng $4 so với big blind $2) | Thêm $4 → tổng $10 |
 
-Điểm mấu chốt: min-raise khớp với ==mức tăng== của khoản bet hoặc raise đủ mức gần nhất, chứ không phải big blind. (Chữ "đủ mức" quan trọng khi có người all-in ít hơn một mức raise: sau một khoản bet $10 và một cú all-in $14, mức tăng cần khớp vẫn là $10, nên raise nhỏ nhất là lên $24.) Ở preflop, big blind được tính là khoản bet mở, vì thế mức raise mở nhỏ nhất là lên 2 big blind.
+Điểm mấu chốt: min-raise khớp với ==mức tăng== của khoản bet hoặc raise đủ mức gần nhất, chứ không phải big blind. (Chữ "đủ mức" quan trọng khi có người all-in ít hơn một mức raise: sau một khoản bet $10 và một cú all-in $14, mức tăng cần khớp vẫn là $10, nên raise nhỏ nhất là lên $24.) Ở preflop, big blind được tính là khoản bet mở, vì thế mức raise mở nhỏ nhất là lên 2 big blind. Khi trên bàn có straddle còn hiệu lực, straddle chính là khoản bet cần vượt qua, nên raise tối thiểu là gấp đôi straddle (WSOP Live Action Rule 165).
 
 Hai luật poker live đi kèm với việc raise:
 
@@ -161,7 +161,7 @@ Trong **No-Limit Hold'em: không có mức trần**. Bạn có thể raise, bị
 Vẫn có hai ranh giới:
 
 - Mỗi lần re-raise phải đạt ==luật mức tăng min-raise== ở trên — ngoại lệ duy nhất là all-in, có thể nhỏ hơn
-- ==r:Bạn không được raise chính khoản bet của mình.== Nếu bạn bet và tất cả chỉ call, vòng cược kết thúc — bạn chỉ được raise tiếp nếu có ai đó raise *bạn* trước
+- ==r:Bạn không được raise chính khoản bet của mình.== Nếu bạn bet và tất cả chỉ call, vòng cược kết thúc — bạn chỉ được raise tiếp nếu có ai đó raise *bạn* trước. Ngoại lệ duy nhất là preflop: khi tất cả chỉ call, big blind (hoặc người đặt straddle còn hiệu lực) vẫn có quyền raise, vì khoản đặt sẵn đó được tính là bet mở của họ (WSOP Live Action Rules 159 · 165)
 
 Ở các bàn **Fixed-Limit**, mỗi vòng đều bị giới hạn (pot bị "cap"). Luật giải đấu WSOP đặt trần ở ==một bet cộng bốn raise== (Rule 100.b) — và ngoại lệ chạy ngược với điều hầu hết mọi người tưởng: ==r:mức trần vẫn giữ nguyên ngay cả khi ván bài chỉ còn hai người==. Nó chỉ được gỡ khi **cả giải đấu** còn lại hai người. Cash game chạy theo luật nhà riêng, nên hãy hỏi dealer.
 
@@ -230,7 +230,7 @@ A. Có — nếu ai đó bet sau khi bạn check, bạn được raise khi lư�
 
 **Q. Có được raise chính khoản bet của mình không?**
 
-A. Không. Nếu bạn bet và các đối thủ chỉ call, bạn không được thêm chip — vòng cược kết thúc. Ở No-Limit và Pot-Limit, bạn chỉ được raise tiếp nếu lượt hành động quay lại bạn với ít nhất một mức raise đủ mức trên khoản bet của bạn — dù do một người thực hiện hay do nhiều cú all-in ngắn cộng dồn lại; một cú all-in đơn lẻ nhỏ hơn một mức raise đủ mức không mở lại hành động. Ở Fixed-Limit ngưỡng thấp hơn: một cú all-in bằng ít nhất 50% của một bet hoặc raise đủ mức là mở lại được (TDA 2024 Rule 47-B).
+A. Không. Nếu bạn bet và các đối thủ chỉ call, bạn không được thêm chip — vòng cược kết thúc. Ngoại lệ duy nhất là preflop: khi tất cả chỉ call, big blind (hoặc người đặt straddle còn hiệu lực) vẫn có quyền raise, vì khoản đặt sẵn đó được tính là bet mở của họ (WSOP Live Action Rules 159 · 165). Ở No-Limit và Pot-Limit, bạn chỉ được raise tiếp nếu lượt hành động quay lại bạn với ít nhất một mức raise đủ mức trên khoản bet của bạn — dù do một người thực hiện hay do nhiều cú all-in ngắn cộng dồn lại; một cú all-in đơn lẻ nhỏ hơn một mức raise đủ mức không mở lại hành động. Ở Fixed-Limit ngưỡng thấp hơn: một cú all-in bằng ít nhất 50% của một bet hoặc raise đủ mức là mở lại được (TDA 2024 Rule 47-B).
 
 **Q. Được raise bao nhiêu lần trong Texas Hold'em?**
 

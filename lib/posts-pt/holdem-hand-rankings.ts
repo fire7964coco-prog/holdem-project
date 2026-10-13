@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
 
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
@@ -76,7 +76,7 @@ No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham d
 
 **A♠ K♠ Q♠ J♠ 10♠** — o straight flush mais alto e a melhor mão do poker.
 
-Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando fechar, seu único trabalho é colocar o máximo de fichas possível.
+Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando você mesmo fechar um — e não um que está inteiro na mesa —, seu único trabalho é colocar o máximo de fichas possível.
 
 ### #2 — Straight Flush
 

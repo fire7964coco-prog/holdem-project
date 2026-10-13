@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot). Chipsi za ziada ambazo stack kubwa mbili au zaidi zinaweka juu ya hapo hutengeneza side pot ambayo wao pekee wanaweza kuishinda; dau la ziada la mchezaji mmoja peke yake hurudishwa kwake tu. Katika No-Limit na Pot-Limit, all-in ya chini ya raise kamili HAIfungui tena dau kwa mchezaji ambaye ameshacheza — isipokuwa all-in fupi kadhaa zikijumlishwa zifikie angalau raise kamili juu ya kile mchezaji huyo ameshaweka.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -208,13 +208,13 @@ Wakati dau lote limekamilika na kuna mchezaji wa all-in, hivi ndivyo kinachotoke
 ## Kinatokea nini ukienda all-in vibaya? — Makosa 5 ya kuepuka
 
 ### Kosa la 1: Kudhani mchezaji wa all-in anaweza kushinda side pot
-Hawezi. Ukishawekewa kikomo mchezaji wa all-in, chipsi zozote za ziada zilizowekwa na wenye stack kubwa zinamilikiwa na pot ambayo mchezaji wa all-in hana haki nayo.
+Hawezi. Ukishawekewa kikomo mchezaji wa all-in, chipsi zozote za ziada zilizowekwa na wenye stack kubwa zinamilikiwa na pot ambayo mchezaji wa all-in hana haki nayo — au, kama mchezaji mmoja tu ndiye aliyeziweka, zinamrudia yeye moja kwa moja kama bet ambayo hakuna aliyeifanyia call.
 
 ### Kosa la 2: Kutojua sheria ya nani anaruhusiwa ku-re-raise
 Katika No-Limit na Pot-Limit, all-in ya sehemu haiwapi nafasi ya pili ya ku-re-raise wale ambao **tayari wamecheza** raundi hiyo — ambaye bado hajacheza anaweza ku-raise kama kawaida. Kuijua hii vizuri kunakomesha migogoro kabla haijaanza.
 
 ### Kosa la 3: Kuongeza chipsi kutoka mfukoni katikati ya mkono
-Table stakes. Kilichopo mezani ndicho chote unachoweza kuweka dau. Kama uko all-in kwa $80 na pot ni $400, unaweza kushinda tu $80 kutoka kwa kila aliye-call.
+Table stakes. Kilichopo mezani ndicho chote unachoweza kuweka dau. Kama uko all-in kwa $80, unaweza kushinda tu $80 kutoka kwa kila aliye-call juu ya kilichokuwa tayari kwenye pot — hata kama wameweka bet ya $400.
 
 ### Kosa la 4: Kutupa mkono wako haraka mno
 Uko all-in kwa main pot. Wachezaji wengine wawili wanapigania side pot. Usitupe karata zako — mkono wako bado uko hai kwa main pot. ==Subiri daima dila atatue kila pot kabla ya kugusa karata zako.==

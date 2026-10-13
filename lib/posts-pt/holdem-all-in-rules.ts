@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). As fichas que dois ou mais stacks maiores apostam além disso viram um pote paralelo (side pot) que só eles podem ganhar; uma aposta extra sozinha simplesmente volta para quem apostou. No no-limit e no pot-limit, um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu — a não ser que vários all-ins curtos somem pelo menos um aumento completo sobre o que esse jogador já colocou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -209,13 +209,13 @@ Quando todas as apostas terminam e há um jogador de all-in, o showdown funciona
 ## O que acontece se você errar no all-in? — 5 erros para evitar
 
 ### Erro 1: achar que o jogador de all-in pode ganhar o pote paralelo
-Não pode. Uma vez que o jogador de all-in está limitado, qualquer ficha extra apostada pelos stacks maiores pertence a um pote sobre o qual ele não tem nenhum direito.
+Não pode. Uma vez que o jogador de all-in está limitado, qualquer ficha extra apostada pelos stacks maiores pertence a um pote sobre o qual ele não tem nenhum direito — ou, se só um jogador as apostou, volta direto para esse jogador como aposta não paga.
 
 ### Erro 2: não conhecer a regra de reabertura do re-raise
 No no-limit e no pot-limit, um all-in parcial não dá segunda chance de aumentar a quem **já agiu** naquela rodada — a não ser que vários all-ins curtos se somem a ponto de deixar algum deles diante de pelo menos um aumento completo quando a ação volta. Quem ainda não agiu pode aumentar, pelo total mínimo indicado acima. Saber isso de cor encerra a discussão antes de ela começar.
 
 ### Erro 3: adicionar fichas do bolso no meio da mão
-Table stakes. O que está na mesa é tudo o que você pode apostar. Se você está de all-in por $80 e o pote é de $400, você só pode ganhar $80 de cada pagador.
+Table stakes. O que está na mesa é tudo o que você pode apostar. Se você está de all-in por $80, você só pode ganhar $80 de cada pagador, além do que já estava no pote — mesmo que eles apostem $400.
 
 ### Erro 4: dar muck a mão rápido demais
 Você está de all-in pelo pote principal. Dois outros jogadores brigam pelo pote paralelo. Em torneio isso se resolve sozinho — quando a aposta deles termina, a ==regra 16 da TDA (edição de 2024)== manda mostrar todas as mãos, a sua inclusive. No cash não é assim — não dê muck — sua mão continua viva pelo pote principal. ==Sempre espere o dealer resolver todos os potes antes de tocar nas suas cartas.==

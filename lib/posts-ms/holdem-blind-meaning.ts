@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds ialah pertaruhan wajib yang dibayar sebelum kad diedar. Small Blind duduk di sebelah kiri butang pengedar dan Big Blind di sebelah kirinya pula (dalam heads-up, butang itu sendiri membayar Small Blind); Big Blind — biasanya dua kali ganda Small Blind — ialah unit pertaruhan meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 minit",
@@ -180,7 +180,7 @@ A. Dengan hanya dua pemain, peraturannya terbalik: butang pengedar membayar Smal
 
 **Q. Apa berlaku jika anda terlepas blind anda?**
 
-A. Di kebanyakan bilik kad, anda membayar blinds yang terlepas apabila kembali — Big Blind dikira sebagai pertaruhan hidup dan Small Blind ialah cip mati yang dimasukkan ke dalam pot. Sebagai pilihan lain, anda boleh menunggu sehingga Big Blind sampai secara semula jadi ke tempat duduk anda — atau, di bilik kad yang membenarkannya, kembali bermain dengan memasang live straddle dari UTG.
+A. Dalam cash game live, kebanyakan bilik kad meminta anda membayar blinds yang terlepas apabila kembali — Big Blind dikira sebagai pertaruhan hidup dan Small Blind ialah cip mati yang dimasukkan ke dalam pot. Sebagai pilihan lain, anda boleh menunggu sehingga Big Blind sampai secara semula jadi ke tempat duduk anda — atau, di bilik kad yang membenarkannya, kembali bermain dengan memasang live straddle dari UTG. Dalam tournament pula tiada apa yang perlu ditebus: blinds dan ante tetap diambil daripada stack anda sama ada anda berada di tempat duduk atau tidak.
 
 **Q. Adakah "Big Blind" sama dengan "blinds"?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blind (kör bahis), kartlar dağıtılmadan önce koyulan zorunlu bahistir. Small blind (küçük kör, SB) dağıtıcı butonunun hemen solunda, big blind (büyük kör, BB) ise onun solunda oturur; big blind — genelde small blind'ın iki katı — masanın bahis birimidir.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -190,7 +190,7 @@ A. Sadece iki oyuncu varken kural tersine döner: dağıtıcı butonu small blin
 
 **Q. Blind'ını kaçırırsan ne olur?**
 
-A. Çoğu salonda döndüğünde kaçırdığın blind'ları koyarsın — big blind canlı bir bahis olarak oynar, small blind ise pota eklenen ölü bir çiptir. Alternatif olarak, big blind doğal şekilde koltuğuna gelene kadar bekleyebilirsin.
+A. Canlı cash game'de çoğu salonda döndüğünde kaçırdığın blind'ları koyarsın — big blind canlı bir bahis olarak oynar, small blind ise pota eklenen ölü bir çiptir. Alternatif olarak, big blind doğal şekilde koltuğuna gelene kadar bekleyebilirsin. Turnuvada telafi edilecek bir şey yoktur: koltuğunda olsan da olmasan da blind'lar ve ante'ler stack'inden düşülür.
 
 **Q. Eski Türk masasında blind yerine ne vardı?**
 

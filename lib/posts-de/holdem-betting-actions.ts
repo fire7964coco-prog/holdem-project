@@ -129,7 +129,7 @@ Zwei durchgerechnete Beispiele:
 
 Verschätzt du dich, entscheidet die 50-Prozent-Marke: Ein Raise von ==50% oder mehr== der vorherigen Bet, der den Min-Raise trotzdem verfehlt, wird im Turnier nach ==Rule 95== auf den vollen Min-Raise **aufgestockt** – du zahlst also mehr, als du wolltest. Unter 50% wird daraus schlicht ein Call.
 
-Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der letzten vollen Bet oder des letzten vollen Raises, nicht nach dem Big Blind. („Voll“ zählt, sobald jemand für weniger als einen Raise All-in ist: Nach einer €10-Bet und einem €14-All-in ist das zu matchende Inkrement weiterhin €10, der kleinste Raise geht also auf €24.) Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
+Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der letzten vollen Bet oder des letzten vollen Raises, nicht nach dem Big Blind. („Voll“ zählt, sobald jemand für weniger als einen Raise All-in ist: Nach einer €10-Bet und einem €14-All-in ist das zu matchende Inkrement weiterhin €10, der kleinste Raise geht also auf €24.) Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds. Liegt ein Live Straddle auf dem Tisch, ist der Straddle die Bet, die es zu überbieten gilt – der Mindest-Raise beträgt dann das Doppelte des Straddles (WSOP Live Action Rule 165).
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
@@ -147,7 +147,7 @@ Im **No-Limit Hold'em: Es gibt keine Obergrenze.** Du kannst raisen, re-raist we
 Zwei Grenzen gelten trotzdem:
 
 - Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen – die eine Ausnahme ist ein All-in, das auch kleiner sein darf
-- ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde – du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist
+- ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde – du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist. Die einzige Ausnahme ist Preflop: Wenn alle nur callen, hat der Big Blind (oder ein Live-Straddler) trotzdem noch die Option zu raisen, weil sein Post als Eröffnungsbet zählt (WSOP Live Action Rules 159 · 165)
 
 In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). Die WSOP-Turnierregeln setzen den Deckel bei ==einer Bet plus vier Raises== (Rule 100.b) – und die Ausnahme läuft anders, als die meisten erwarten: ==r:Der Deckel bleibt stehen, auch wenn in der Hand nur noch zwei Spieler sitzen==. Er fällt erst, wenn im **ganzen Turnier** nur noch zwei Spieler übrig sind. In Cashgames gelten oft andere Hausregeln – manche Räume deckeln früher, andere heben den Deckel auf, sobald die Hand heads-up wird. Frag im Zweifel den Dealer.
 
@@ -210,7 +210,7 @@ A. Ja – setzt jemand nach deinem Check, darfst du raisen, wenn die Action zu d
 
 **Q. Darf man seinen eigenen Einsatz raisen?**
 
-A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Im No-Limit und Pot-Limit darfst du nur dann erneut raisen, wenn die Action zu dir zurückkommt und du mindestens einem vollen Raise über deine Bet gegenüberstehst – egal, ob ein Spieler ihn gemacht hat oder mehrere kurze All-ins zusammen darauf kommen; ein einzelnes All-in unterhalb eines vollen Raises eröffnet die Action nicht wieder. Im Fixed-Limit liegt die Schwelle niedriger: Ein All-in über mindestens 50% einer vollen Bet oder eines vollen Raises eröffnet sie wieder (TDA 2024, Regel 47-B).
+A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Die einzige Ausnahme ist Preflop: Wenn alle nur callen, hat der Big Blind (oder ein Live-Straddler) trotzdem noch die Option zu raisen, weil sein Post als Eröffnungsbet zählt (WSOP Live Action Rules 159 · 165).Im No-Limit und Pot-Limit darfst du nur dann erneut raisen, wenn die Action zu dir zurückkommt und du mindestens einem vollen Raise über deine Bet gegenüberstehst – egal, ob ein Spieler ihn gemacht hat oder mehrere kurze All-ins zusammen darauf kommen; ein einzelnes All-in unterhalb eines vollen Raises eröffnet die Action nicht wieder. Im Fixed-Limit liegt die Schwelle niedriger: Ein All-in über mindestens 50% einer vollen Bet oder eines vollen Raises eröffnet sie wieder (TDA 2024, Regel 47-B).
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 

@@ -126,7 +126,7 @@ No-Limit Hold'em-এ (এই ফরম্যাটই আপনি প্রা�
 | Flop | খেলোয়াড় $6 bet করে | $6 আরও → মোট $12 |
 | Preflop (blinds $1/$2) | খেলোয়াড় $6 পর্যন্ত raise করে ($2 blind-এর ওপরে $4-এর raise) | $4 আরও → মোট $10 |
 
-মূল কথা: min-raise শেষ full bet বা raise-এর ==increment==-এর সমান হয়, big blind-এর নয়। ("full" কথাটা জরুরি হয়ে ওঠে যখন কেউ raise-এর কম অঙ্কে all-in যায়: $10 bet আর $14 all-in-এর পরেও মেলাতে হবে এমন increment $10-ই থাকে, তাই সবচেয়ে ছোট raise হয় $24 পর্যন্ত।) preflop-এ big blind-কে opening bet ধরা হয়, এজন্যই সবচেয়ে ছোট open-raise 2 big blind পর্যন্ত হয়।
+মূল কথা: min-raise শেষ full bet বা raise-এর ==increment==-এর সমান হয়, big blind-এর নয়। ("full" কথাটা জরুরি হয়ে ওঠে যখন কেউ raise-এর কম অঙ্কে all-in যায়: $10 bet আর $14 all-in-এর পরেও মেলাতে হবে এমন increment $10-ই থাকে, তাই সবচেয়ে ছোট raise হয় $24 পর্যন্ত।) preflop-এ big blind-কে opening bet ধরা হয়, এজন্যই সবচেয়ে ছোট open-raise 2 big blind পর্যন্ত হয়। টেবিলে live straddle থাকলে পেরোতে হবে সেই straddle-টাকেই, তাই minimum raise হয় straddle-এর দ্বিগুণ (WSOP Live Action Rule 165)।
 
 raise-এর সঙ্গে আসা দুটো live পোকার নিয়ম:
 
@@ -144,7 +144,7 @@ raise-এর সঙ্গে আসা দুটো live পোকার নি�
 তবুও দুটো সীমা বহাল থাকে:
 
 - প্রতিটা re-raise-কে ওপরের ==min-raise increment নিয়ম==-এ উতরাতে হবে — একমাত্র ব্যতিক্রম all-in, সেটা কম অঙ্কেরও হতে পারে
-- ==r:আপনি নিজের bet-এর ওপর raise করতে পারবেন না।== আপনি bet করলে আর সবাই শুধু call করলে রাউন্ড শেষ হয়ে যায় — আবার raise-এর সুযোগ পান তখনই, যখন কেউ *আপনার* ওপর আগে raise করে।
+- ==r:আপনি নিজের bet-এর ওপর raise করতে পারবেন না।== আপনি bet করলে আর সবাই শুধু call করলে রাউন্ড শেষ হয়ে যায় — আবার raise-এর সুযোগ পান তখনই, যখন কেউ *আপনার* ওপর আগে raise করে। একমাত্র ব্যতিক্রম preflop: সবাই শুধু call করলেও big blind (বা live straddler) raise করার অপশন পান, কারণ ওই post তাঁর opening bet হিসেবে গোনা হয় (WSOP Live Action Rules 159 · 165)।
 
 **Fixed-Limit** গেমে প্রতিটি রাউন্ডেই ক্যাপ থাকে ("capped" pot)। WSOP-এর টুর্নামেন্ট নিয়ম ক্যাপ ধরে ==এক bet আর চার raise==-এ (নিয়ম 100.b) — আর ব্যতিক্রমটা বেশিরভাগ মানুষের ধারণার ঠিক উল্টো: ==r:হ্যান্ডে মাত্র দুজন বাকি থাকলেও ক্যাপ বহাল থাকে==। ক্যাপ ওঠে কেবল যখন **গোটা টুর্নামেন্টেই** দুজন বাকি। cash game-এ house rules চলে, তাই ডিলারকে জিজ্ঞেস করে নিন।
 
@@ -206,7 +206,7 @@ A. হ্যাঁ — আপনার check-এর পর কেউ bet কর�
 
 **Q. নিজের bet-এর ওপর raise করা যায়?**
 
-A. না। আপনি bet করলে আর প্রতিপক্ষ শুধু call করলে আপনি আর যোগ করতে পারবেন না — betting রাউন্ড শেষ হয়ে যায়। No-Limit ও Pot-Limit-এ আপনি আবার raise তখনই করতে পারেন, যখন action আপনার কাছে ফেরে আপনার bet-এর ওপরে অন্তত একটা full raise নিয়ে — সেটা একজন খেলোয়াড়ই করুক বা কয়েকটা ছোট all-in মিলে হোক; একটা মাত্র full raise-এর কম all-in action আবার খোলে না। Fixed-Limit-এ মাপকাঠি আরও নিচে: full bet বা raise-এর অন্তত 50%-এর all-in action আবার খুলে দেয় (TDA 2024 Rule 47-B)।
+A. না। আপনি bet করলে আর প্রতিপক্ষ শুধু call করলে আপনি আর যোগ করতে পারবেন না — betting রাউন্ড শেষ হয়ে যায়। একমাত্র ব্যতিক্রম preflop: সবাই শুধু call করলেও big blind (বা live straddler) raise করার অপশন পান, কারণ ওই post তাঁর opening bet হিসেবে গোনা হয় (WSOP Live Action Rules 159 · 165)। No-Limit ও Pot-Limit-এ আপনি আবার raise তখনই করতে পারেন, যখন action আপনার কাছে ফেরে আপনার bet-এর ওপরে অন্তত একটা full raise নিয়ে — সেটা একজন খেলোয়াড়ই করুক বা কয়েকটা ছোট all-in মিলে হোক; একটা মাত্র full raise-এর কম all-in action আবার খোলে না। Fixed-Limit-এ মাপকাঠি আরও নিচে: full bet বা raise-এর অন্তত 50%-এর all-in action আবার খুলে দেয় (TDA 2024 Rule 47-B)।
 
 **Q. টেক্সাস হোল্ডেমে কতবার raise করা যায়?**
 

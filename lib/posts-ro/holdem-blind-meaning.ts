@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blind-urile sunt pariuri forțate puse înainte de împărțirea cărților. Small blind-ul stă la stânga butonului de dealer, iar big blind-ul la stânga lui; big blind-ul — de obicei dublul small blind-ului — este unitatea de pariere a mesei.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. Cu doar doi jucători, regula se inversează: butonul pune small blind-ul și
 
 **Q. Ce se întâmplă dacă îți ratezi blind-ul?**
 
-A. În majoritatea sălilor pui blind-urile ratate la întoarcere — big blind-ul joacă drept pariu viu, iar small blind-ul este un jeton mort care intră în pot. Ca alternativă, poți aștepta ca big blind-ul să ajungă în mod natural la locul tău.
+A. Într-un cash game live, în majoritatea sălilor pui blind-urile ratate la întoarcere — big blind-ul joacă drept pariu viu, iar small blind-ul este un jeton mort care intră în pot. Ca alternativă, poți aștepta ca big blind-ul să ajungă în mod natural la locul tău. Într-un turneu nu ai nimic de recuperat: blind-urile și ante-urile îți sunt luate din stack fie că stai pe locul tău, fie că nu.
 
 **Q. "Big blind-ul" este același lucru cu "blind-urile"?**
 

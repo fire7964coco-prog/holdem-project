@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "I bui sono puntate obbligatorie che si mettono prima di distribuire le carte. Il piccolo buio siede alla sinistra del bottone e il grande buio alla sua sinistra; il grande buio — di solito il doppio del piccolo — è l'unità di puntata del tavolo.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. Con solo due giocatori la regola si ribalta: il bottone mette il piccolo buio
 
 **Q. Cosa succede se salti il tuo buio?**
 
-A. Nella maggior parte delle sale metti i bui arretrati al rientro — il grande buio gioca come puntata viva e il piccolo è una fiche morta che finisce nel piatto. In alternativa puoi aspettare che il grande buio arrivi naturalmente al tuo posto.
+A. Nel cash dal vivo, nella maggior parte delle sale metti i bui arretrati al rientro — il grande buio gioca come puntata viva e il piccolo è una fiche morta che finisce nel piatto. In alternativa puoi aspettare che il grande buio arrivi naturalmente al tuo posto. In torneo non c'è niente da recuperare: i bui e gli ante escono dal tuo stack, che tu sia seduto al tavolo o no.
 
 **Q. "Il grande buio" è la stessa cosa dei "bui"?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ Position humaanisha **wakati unaocheza katika kila raundi ya kuweka dau**. Kuche
 | Mmoja kulia ya BTN | CO (Cutoff) | 6 | Kiti cha pili bora — panua aina |
 | Wa mwisho postflop | BTN (Button) | 7 pre; **mwisho** post | **Kiti bora** — anacheza mwisho kila raundi ya postflop |
 | Kushoto ya dila | SB (Small Blind) | 8 pre, 1 post | Kiti kibaya zaidi — anacheza kwanza kila raundi ya postflop |
-| Wa pili kushoto ya dila | BB (Big Blind) | Wa mwisho pre (9), 2 post | Ana chaguo la kupandisha preflop; nje ya nafasi postflop |
+| Wa pili kushoto ya dila | BB (Big Blind) | Wa mwisho pre (9), 2 post | Ana chaguo la kupandisha preflop; nje ya nafasi postflop (isipokuwa dhidi ya small blind) |
 
 ==g:Button ndicho kiti chenye faida zaidi mezani.== Unacheza mwisho kwenye flop, turn na river — humaanisha kila mchezaji anakuonyesha nguvu ya mkono wake kabla ya wewe kuamua. Kwa mwongozo kamili wa nafasi, ona mwongozo wa nafasi za poker: UTG hadi button.
 

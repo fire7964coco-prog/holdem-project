@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã bỏ vào ngang họ (main pot). Phần chip dư do hai stack lớn hơn trở lên cược vượt mức đó tạo thành side pot chỉ họ được tranh; nếu chỉ một người cược dư thì phần đó được trả lại. Trong no-limit và pot-limit, một cú all-in nhỏ hơn một raise đủ mức KHÔNG mở lại vòng cược cho người đã hành động — trừ khi nhiều cú all-in ngắn cộng lại đạt ít nhất một raise đủ mức so với số chip người đó đã bỏ vào.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -223,7 +223,7 @@ Sau đủ nhiều pot all-in, bạn sẽ thấy sự hỗn loạn gần như lu�
 
 ### Lỗi 1: Nghĩ rằng người all-in stack ngắn nhất có thể thắng side pot
 
-Không thể. Một khi người all-in với stack ngắn nhất đã bị giới hạn, mọi chip mà các stack lớn hơn cược vượt mức all-in của họ thuộc về một pot mà họ không có quyền tranh. Giới hạn này tính theo từng người: mỗi cú all-in chỉ chặn đúng lớp pot của chính nó — trong ví dụ 4 người ở trên, B all-in 200 vẫn được tranh side pot 1, chỉ không được tranh side pot 2.
+Không thể. Một khi người all-in với stack ngắn nhất đã bị giới hạn, mọi chip mà các stack lớn hơn cược vượt mức all-in của họ thuộc về một pot mà họ không có quyền tranh — hoặc, nếu chỉ có một người cược phần đó, được trả thẳng về cho người ấy như một cược không ai theo. Giới hạn này tính theo từng người: mỗi cú all-in chỉ chặn đúng lớp pot của chính nó — trong ví dụ 4 người ở trên, B all-in 200 vẫn được tranh side pot 1, chỉ không được tranh side pot 2.
 
 ### Lỗi 2: Không biết luật được raise lại
 
@@ -231,7 +231,7 @@ Trong no-limit và pot-limit, một cú all-in chưa đủ mức không cho ngư
 
 ### Lỗi 3: Lấy thêm chip từ túi giữa ván
 
-Table stakes. Những gì trên bàn là tất cả những gì bạn được cược. Nếu bạn all-in $80 mà pot là $400, bạn chỉ thắng được $80 từ mỗi người call.
+Table stakes. Những gì trên bàn là tất cả những gì bạn được cược. Nếu bạn all-in $80, ngoài số chip đã có sẵn trong pot, bạn chỉ thắng được thêm $80 từ mỗi người call — kể cả khi họ bet $400.
 
 ### Lỗi 4: Muck bài quá vội
 

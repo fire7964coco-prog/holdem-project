@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang blinds ay forced bets na nakalagay na bago pa mamigay ng card. Ang small blind ay nasa kaliwa mismo ng dealer button, at ang big blind sa kaliwa niya; ang big blind — kadalasan doble ng small blind — ang siyang betting unit ng mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. Kapag dalawang player na lang, baligtad ang rule: nagpo-post ang dealer butto
 
 **Q. Ano ang mangyayari kapag na-miss mo ang blind mo?**
 
-A. Sa karamihan ng card rooms, pino-post mo ang na-miss na blinds pagbalik mo — naglalaro ang big blind bilang live bet at ang small blind ay dead chip na idinadagdag sa pot. Bilang alternatibo, pwede kang maghintay hanggang natural na umabot ang big blind sa upuan mo.
+A. Sa live cash game, sa karamihan ng card rooms, pino-post mo ang na-miss na blinds pagbalik mo — naglalaro ang big blind bilang live bet at ang small blind ay dead chip na idinadagdag sa pot. Bilang alternatibo, pwede kang maghintay hanggang natural na umabot ang big blind sa upuan mo. Sa tournament, walang kailangang bayaran pabalik: kinakaltas ang blinds at antes sa stack mo nasa upuan ka man o wala.
 
 **Q. Pareho ba ang "big blind" at "the blinds"?**
 

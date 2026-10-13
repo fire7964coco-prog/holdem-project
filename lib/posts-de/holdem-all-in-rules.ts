@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Chips, die zwei oder mehr größere Stacks darüber hinaus setzen, bilden einen Side Pot, den nur sie gewinnen können; ein einzelner Überschuss-Einsatz geht einfach zurück. Im No-Limit und Pot-Limit öffnet ein All-in unterhalb einer vollen Erhöhung die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu – außer mehrere kurze All-ins ergeben zusammen mindestens eine volle Erhöhung über das, was dieser Spieler schon gesetzt hat.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -210,13 +210,13 @@ Wenn alle Setzrunden abgeschlossen sind und ein Spieler All-in ist, läuft der S
 Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer aus fünf ganz bestimmten Missverständnissen – meist nicht aus der Mathematik, sondern aus den Regeln rund um Pot-Berechtigung, Re-Raise-Recht und Table Stakes.
 
 ### Fehler 1: Glauben, der All-in-Spieler könne den Side Pot gewinnen
-Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat.
+Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat – oder, wenn nur ein Spieler sie gesetzt hat, gehen sie als nicht gecallter Einsatz direkt an diesen Spieler zurück.
 
 ### Fehler 2: Die Re-Raise-Regel nicht kennen
 Im No-Limit und Pot-Limit gibt ein Teil-All-in Spielern, die in dieser Runde **bereits gehandelt haben**, keine zweite Chance zum Re-Raise – es sei denn, mehrere kurze All-ins summieren sich so auf, dass einer von ihnen vor mindestens einer vollen Erhöhung steht, wenn die Action zurückkommt. Wer noch nicht gehandelt hat, darf erhöhen, und zwar zum oben gezeigten Mindest-Gesamtbetrag. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
 
 ### Fehler 3: Mitten in der Hand Chips aus der Tasche nachlegen
-Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
+Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in, kannst du von jedem Caller zusätzlich zu dem, was schon im Pot lag, nur €80 gewinnen – selbst wenn er €400 setzt.
 
 ### Fehler 4: Die Hand zu schnell mucken
 Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Im Turnier erledigt sich das von selbst – sobald deren Setzrunde endet, verlangt ==TDA-2024-Regel 16==, dass jede Hand getablet wird, deine eingeschlossen. Im Cashgame nicht: Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Sobald der Dealer sie in den Muck gezogen hatte, waren sie nicht mehr identifizierbar – tot, und der Main Pot ging an den anderen. (Eine Hand, die sich noch eindeutig identifizieren lässt, kann nach Ermessen des Floors zurückgeholt werden – verlass dich aber nie darauf.) Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==

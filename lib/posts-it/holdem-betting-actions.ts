@@ -126,7 +126,7 @@ Due esempi svolti:
 | Flop | Un giocatore punta $6 | $6 in più → $12 in totale |
 | Preflop (bui $1/$2) | Un giocatore rilancia a $6 (un rilancio di $4 sopra il buio da $2) | $4 in più → $10 in totale |
 
-Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o dell'ultimo rilancio completo, non al grande buio. ("Completo" conta quando qualcuno va all-in per meno di un rilancio: dopo una puntata da $10 e un all-in da $14, l'incremento da pareggiare resta $10, quindi il rilancio minimo è a $24.) Preflop, il grande buio conta come puntata di apertura, ed è per questo che il rilancio d'apertura più piccolo è a 2 grandi bui.
+Il punto chiave: il min-raise è pari all'==incremento== dell'ultima puntata o dell'ultimo rilancio completo, non al grande buio. ("Completo" conta quando qualcuno va all-in per meno di un rilancio: dopo una puntata da $10 e un all-in da $14, l'incremento da pareggiare resta $10, quindi il rilancio minimo è a $24.) Preflop, il grande buio conta come puntata di apertura, ed è per questo che il rilancio d'apertura più piccolo è a 2 grandi bui. Con uno straddle vivo sul tavolo, la puntata da superare è lo straddle, quindi il rilancio minimo è al doppio dello straddle (regola 165 delle WSOP Live Action Rules).
 
 Due regole del poker dal vivo che arrivano insieme al rilancio:
 
@@ -144,7 +144,7 @@ Nel **No-Limit Hold'em: non c'è limite**. Puoi rilanciare, farti re-rilanciare 
 Restano comunque due paletti:
 
 - Ogni re-rilancio deve rispettare la ==regola dell'incremento minimo== di sopra — l'unica eccezione è l'all-in, che può essere inferiore
-- ==r:Non puoi rilanciare la tua stessa puntata.== Se punti e tutti si limitano a chiamare, il giro finisce — puoi rilanciare di nuovo solo se qualcuno rilancia *te* per primo
+- ==r:Non puoi rilanciare la tua stessa puntata.== Se punti e tutti si limitano a chiamare, il giro finisce — puoi rilanciare di nuovo solo se qualcuno rilancia *te* per primo. L'unica eccezione è il preflop: quando tutti si limitano a chiamare, il grande buio (o chi ha messo uno straddle vivo) ha ancora l'opzione di rilanciare, perché quella puntata obbligatoria vale come sua puntata di apertura (regole 159 e 165 delle WSOP Live Action Rules)
 
 Nelle partite **Fixed-Limit** ogni giro è cappato (piatto "cappato"). Le regole da torneo WSOP fissano il tetto a ==una puntata più quattro rilanci== (regola 100.b) — e l'eccezione funziona al contrario di come quasi tutti se l'aspettano: ==r:il tetto resta anche se nella mano sono rimasti solo due giocatori==. Cade solo quando è l'**intero torneo** a essere heads-up. Nel cash valgono le regole della casa, quindi chiedi al mazziere.
 
@@ -203,7 +203,7 @@ A. Sì — se qualcuno punta dopo il tuo check, puoi rilanciare quando l'azione 
 
 **Q. Puoi rilanciare la tua stessa puntata?**
 
-A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altro — il giro di puntate finisce. Nel No-Limit e nel Pot-Limit puoi rilanciare di nuovo solo se l'azione torna a te e davanti hai almeno un rilancio completo sopra la tua puntata — che l'abbia fatto un solo giocatore o che ci arrivino sommati più all-in corti; un singolo all-in inferiore a un rilancio completo non riapre l'azione. Nel Fixed-Limit la soglia è più bassa: la riapre un all-in pari ad almeno il 50% di una puntata o di un rilancio completo (TDA 2024, regola 47-B).
+A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altro — il giro di puntate finisce. L'unica eccezione è il preflop: quando tutti si limitano a chiamare, il grande buio (o chi ha messo uno straddle vivo) ha ancora l'opzione di rilanciare, perché quella puntata obbligatoria vale come sua puntata di apertura (regole 159 e 165 delle WSOP Live Action Rules). Nel No-Limit e nel Pot-Limit puoi rilanciare di nuovo solo se l'azione torna a te e davanti hai almeno un rilancio completo sopra la tua puntata — che l'abbia fatto un solo giocatore o che ci arrivino sommati più all-in corti; un singolo all-in inferiore a un rilancio completo non riapre l'azione. Nel Fixed-Limit la soglia è più bassa: la riapre un all-in pari ad almeno il 50% di una puntata o di un rilancio completo (TDA 2024, regola 47-B).
 
 **Q. Quante volte si può rilanciare nel Texas Hold'em?**
 

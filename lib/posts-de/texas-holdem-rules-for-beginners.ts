@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten, die sich alle teilen. Es gibt bis zu vier Setzrunden, und im Showdown gewinnt die beste Fünf-Karten-Hand – es sei denn, alle anderen folden vorher.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
@@ -285,7 +285,7 @@ Position bedeutet: **wann du in jeder Setzrunde an der Reihe bist**. Wer später
 | Rechts neben BTN | CO (Cutoff) | 6. | Zweitbester Platz – Range erweitern |
 | Postflop zuletzt | BTN (Button) | 7. pre; **zuletzt** post | **Bester Platz** – agiert auf jeder Postflop-Street zuletzt |
 | Links vom Dealer | SB (Small Blind) | 8. pre, 1. post | Schlechtester Platz – agiert auf jeder Postflop-Street zuerst |
-| Zwei links vom Dealer | BB (Big Blind) | Zuletzt pre (9.), 2. post | Darf preflop noch raisen; postflop out of position |
+| Zwei links vom Dealer | BB (Big Blind) | Zuletzt pre (9.), 2. post | Darf preflop noch raisen; postflop out of position (außer gegen den Small Blind) |
 
 ==g:Der Button ist der profitabelste Platz am Tisch.== Du agierst auf Flop, Turn und River zuletzt – jeder Spieler zeigt dir also seine Handstärke, bevor du entscheiden musst. Einen kompletten Positions-Guide findest du unter [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
 

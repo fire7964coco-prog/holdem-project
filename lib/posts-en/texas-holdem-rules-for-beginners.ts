@@ -243,7 +243,7 @@ Position means **when you act in each betting round**. Acting later means you ha
 | One right of BTN | CO (Cutoff) | 6th | Second-best seat — widen range |
 | Last post-flop | BTN (Button) | 7th pre; **last** post | **Best seat** — acts last every postflop street |
 | Left of dealer | SB (Small Blind) | 8th pre, 1st post | Worst seat — acts first every postflop street |
-| Two left of dealer | BB (Big Blind) | Last pre (9th), 2nd post | Has option to raise preflop; out of position postflop |
+| Two left of dealer | BB (Big Blind) | Last pre (9th), 2nd post | Has option to raise preflop; out of position postflop (except against the small blind) |
 
 ==g:The button is the most profitable seat at the table.== You act last on the flop, turn, and river — meaning every player shows you their hand strength before you decide. For a full position guide, see [poker positions: UTG to button](/en/blog/holdem-positions).
 

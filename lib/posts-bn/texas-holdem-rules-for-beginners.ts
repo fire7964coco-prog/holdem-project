@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমে প্রতিটি খেলোয়াড় 2টি hole কার্ড পান, 5টি community কার্ড ব্যবহার হয়, আর চারটি betting রাউন্ডের পর সেরা 5-কার্ড হ্যান্ড জেতে।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -242,7 +242,7 @@ position মানে **আপনি প্রতিটি betting রাউন�
 | BTN-এর ডান দিকে | CO (Cutoff) | 6th | দ্বিতীয় সেরা সিট — range চওড়া করুন |
 | postflop শেষে | BTN (Button) | 7th pre; **শেষ** post | **সেরা সিট** — প্রতিটি postflop street-এ শেষে খেলে |
 | dealer-এর বাঁয়ে | SB (Small Blind) | 8th pre, 1st post | সবচেয়ে খারাপ সিট — প্রতিটি postflop street-এ আগে খেলে |
-| dealer-এর দুই বাঁয়ে | BB (Big Blind) | শেষ pre (9th), 2nd post | preflop raise-এর অপশন; postflop out of position |
+| dealer-এর দুই বাঁয়ে | BB (Big Blind) | শেষ pre (9th), 2nd post | preflop raise-এর অপশন; postflop out of position (small blind-এর বিপক্ষে বাদে) |
 
 ==g:button টেবিলের সবচেয়ে লাভজনক সিট।== আপনি flop, turn আর river-এ শেষে খেলেন — মানে প্রতিটি খেলোয়াড় তার হ্যান্ডের জোর আপনার সিদ্ধান্তের আগে দেখিয়ে দেয়।
 

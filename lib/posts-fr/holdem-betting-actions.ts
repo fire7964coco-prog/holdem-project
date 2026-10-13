@@ -153,7 +153,7 @@ Deux exemples chiffrés :
 | Flop | Un joueur mise $6 | $6 de plus → $12 au total |
 | Préflop (blindes $1/$2) | Un joueur relance à $6 (une relance de $4 au-dessus de la blinde de $2) | $4 de plus → $10 au total |
 
-L'idée clé : le min-raise reprend ==l'incrément== de la dernière mise ou relance complète (on dit aussi « relance pleine »), pas la grosse blinde. (Le mot « complète » prend tout son sens quand quelqu'un fait tapis pour moins qu'une relance : après une mise de $10 et un tapis de $14, l'incrément à égaler reste $10, donc la plus petite relance est à $24.) Préflop, la grosse blinde compte comme la mise d'ouverture — c'est pour ça que la plus petite relance d'ouverture est à 2 grosses blindes.
+L'idée clé : le min-raise reprend ==l'incrément== de la dernière mise ou relance complète (on dit aussi « relance pleine »), pas la grosse blinde. (Le mot « complète » prend tout son sens quand quelqu'un fait tapis pour moins qu'une relance : après une mise de $10 et un tapis de $14, l'incrément à égaler reste $10, donc la plus petite relance est à $24.) Préflop, la grosse blinde compte comme la mise d'ouverture — c'est pour ça que la plus petite relance d'ouverture est à 2 grosses blindes. S'il y a un straddle live sur la table, c'est le straddle qu'il faut dépasser, donc la relance minimum est au double du straddle (règle WSOP Live Action 165).
 
 Deux règles du poker en live qui accompagnent la relance :
 
@@ -173,7 +173,7 @@ Concrètement, en **No-Limit Hold'em**, tu peux relancer, te faire surrelancer e
 Deux règles encadrent quand même ces relances :
 
 - Chaque surrelance doit respecter la ==règle de l'incrément minimum== vue plus haut — seule exception : un tapis, qui peut être plus petit
-- ==r:Tu ne peux pas relancer ta propre mise.== Si tu mises et que tout le monde se contente de suivre, le tour se termine — tu ne peux relancer à nouveau que si quelqu'un *te* relance d'abord
+- ==r:Tu ne peux pas relancer ta propre mise.== Si tu mises et que tout le monde se contente de suivre, le tour se termine — tu ne peux relancer à nouveau que si quelqu'un *te* relance d'abord. La seule exception, c'est le préflop : quand tout le monde se contente de suivre, la grosse blinde (ou le joueur qui a posé un straddle live) garde l'option de relancer, parce que cette mise posée compte comme sa mise d'ouverture (règles WSOP Live Action 159 · 165)
 
 En **Fixed-Limit**, chaque tour est plafonné (on parle de pot « capé »). Les règles de tournoi de la WSOP fixent le plafond à ==une mise plus quatre relances== (règle 100.b) — et l'exception marche à l'inverse de ce que la plupart des joueurs imaginent : ==r:le plafond tient même quand il ne reste que deux joueurs dans le coup==. Il ne saute qu'une fois que le **tournoi entier** est en heads-up. En cash game, ce sont les règles de la maison qui s'appliquent : demande au donneur.
 
@@ -238,7 +238,7 @@ A. Oui — si quelqu'un mise après ton check, tu peux relancer quand l'action r
 
 **Q. Peut-on relancer sa propre mise ?**
 
-A. Non. Si tu mises et que tes adversaires se contentent de suivre, tu ne peux rien ajouter — le tour d'enchères se termine. En No-Limit et en Pot-Limit, tu ne peux relancer à nouveau que si l'action te revient face à au moins une relance complète au-dessus de ta mise — qu'un seul joueur l'ait faite ou que plusieurs petits tapis l'atteignent ensemble ; un seul tapis inférieur à une relance complète ne rouvre pas l'action. En Fixed-Limit, la barre est plus basse : un tapis valant au moins 50 % d'une mise ou relance complète rouvre l'action (règle 47-B du TDA 2024).
+A. Non. Si tu mises et que tes adversaires se contentent de suivre, tu ne peux rien ajouter — le tour d'enchères se termine. La seule exception, c'est le préflop : quand tout le monde se contente de suivre, la grosse blinde (ou le joueur qui a posé un straddle live) garde l'option de relancer, parce que cette mise posée compte comme sa mise d'ouverture (règles WSOP Live Action 159 · 165). En No-Limit et en Pot-Limit, tu ne peux relancer à nouveau que si l'action te revient face à au moins une relance complète au-dessus de ta mise — qu'un seul joueur l'ait faite ou que plusieurs petits tapis l'atteignent ensemble ; un seul tapis inférieur à une relance complète ne rouvre pas l'action. En Fixed-Limit, la barre est plus basse : un tapis valant au moins 50 % d'une mise ou relance complète rouvre l'action (règle 47-B du TDA 2024).
 
 **Q. Y a-t-il une limite au nombre de relances au Texas Hold'em ?**
 

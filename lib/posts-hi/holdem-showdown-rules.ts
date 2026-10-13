@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Non-all-in टूर्नामेंट showdown में river का last aggressor पहले दिखाता है; river check through हो तो button के बाएँ पहला active खिलाड़ी। कोई all-in हो और betting पूरी हो जाए तो सभी live हैंड दिखानी होती हैं। अपने कार्ड रखे या table किए river caller को last aggressor की हैंड माँगने का हक़ है। Cash game में house rule लागू होता है।",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -77,7 +77,7 @@ Dealer इधर-उधर देखता है। टेबल के बा�
 
 ## All-in showdown नियम — क्या all-in खिलाड़ी पहले दिखाता है?
 
-टूर्नामेंट में कोई all-in हो और सारी betting पूरी हो जाए तो board चलाने से पहले सभी live हैंड **तुरंत face-up** table करनी होती हैं (TDA 2024 Rule 16)। Cash game में house rule और WSOP 2026 B149 का अलग क्रम।
+टूर्नामेंट में कोई all-in हो और सारी betting पूरी हो जाए तो board चलाने से पहले सभी live हैंड **तुरंत face-up** table करनी होती हैं (TDA 2024 Rule 16)। (एक अपवाद: money के पास hand-for-hand play के दौरान WSOP Tournament Rules 2026 Rule 126.g के तहत all-in हैंड face-down ही रहती हैं और staff के कहने तक आगे कार्ड नहीं बाँटे जाते।) Cash game में house rule और WSOP 2026 B149 का अलग क्रम।
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

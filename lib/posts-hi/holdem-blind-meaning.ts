@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds वे अनिवार्य दांव हैं जो कार्ड बँटने से पहले लगाए जाते हैं। small blind (SB) dealer button के ठीक बाईं ओर बैठता है और big blind (BB) उसके बाईं ओर; big blind — आमतौर पर small blind का दोगुना — टेबल की betting unit होती है।",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. सिर्फ़ दो खिलाड़ियों के साथ न
 
 **Q. अगर आप अपना blind मिस कर दें तो क्या होता है?**
 
-A. ज़्यादातर card rooms में लौटने पर आप मिस हुए blinds लगाते हैं — big blind एक live दांव की तरह खेलता है और small blind एक dead chip होता है जो pot में जाता है। वैकल्पिक रूप से, आप big blind के स्वाभाविक रूप से आपकी सीट तक पहुँचने का इंतज़ार कर सकते हैं।
+A. Live cash game में, ज़्यादातर card rooms में लौटने पर आप मिस हुए blinds लगाते हैं — big blind एक live दांव की तरह खेलता है और small blind एक dead chip होता है जो pot में जाता है। वैकल्पिक रूप से, आप big blind के स्वाभाविक रूप से आपकी सीट तक पहुँचने का इंतज़ार कर सकते हैं। Tournament में भरपाई करने को कुछ नहीं होता: आप सीट पर हों या न हों, blinds और ante आपके stack से कटते रहते हैं।
 
 **Q. क्या "the big blind" और "the blinds" एक ही हैं?**
 

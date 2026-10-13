@@ -125,7 +125,7 @@ Two worked examples:
 | Flop | Player bets $6 | $6 more → $12 total |
 | Preflop (blinds $1/$2) | Player raises to $6 (a raise of $4 over the $2 blind) | $4 more → $10 total |
 
-The key insight: the min-raise matches the ==increment== of the last full bet or raise, not the big blind. ("Full" matters once someone is all-in for less than a raise: after a $10 bet and a $14 all-in, the increment to match is still $10, so the smallest raise is to $24.) Preflop, the big blind counts as the opening bet, which is why the smallest open-raise is to 2 big blinds.
+The key insight: the min-raise matches the ==increment== of the last full bet or raise, not the big blind. ("Full" matters once someone is all-in for less than a raise: after a $10 bet and a $14 all-in, the increment to match is still $10, so the smallest raise is to $24.) Preflop, the big blind counts as the opening bet, which is why the smallest open-raise is to 2 big blinds. With a live straddle on the table, the straddle is the bet to beat, so the minimum raise is double the straddle (WSOP Live Action Rule 165).
 
 Two live-poker rules that come with raising:
 
@@ -143,7 +143,7 @@ In **No-Limit Hold'em: there is no cap**. You can raise, get re-raised, and rais
 Two boundaries still apply:
 
 - Each re-raise must meet the ==min-raise increment rule== above — the one exception is an all-in, which may be for less
-- ==r:You cannot raise your own bet.== If you bet and everyone just calls, the round ends — you only get to raise again if someone raises *you* first
+- ==r:You cannot raise your own bet.== If you bet and everyone just calls, the round ends — you only get to raise again if someone raises *you* first. The one exception is preflop: when everyone just calls, the big blind (or a live straddler) still gets the option to raise, because that post counts as their opening bet (WSOP Live Action Rules 159 · 165)
 
 In **Fixed-Limit** games every round is capped (a "capped" pot). The WSOP tournament rules set the cap at ==one bet plus four raises== (Rule 100.b) — and the exception runs the other way from what most people expect: ==r:the cap stays in place even when only two players are left in the hand==. It lifts only once the **entire tournament** is heads-up. Cash games run on their own house rules, so ask the dealer.
 
@@ -206,7 +206,7 @@ A. Yes — if someone bets after your check, you may raise when the action retur
 
 **Q. Can you raise your own bet?**
 
-A. No. If you bet and opponents only call, you cannot add more — the betting round ends. In No-Limit and Pot-Limit, you can raise again only if the action comes back to you facing at least a full raise over your bet — whether one player made it or several short all-ins add up to it; a single all-in for less than a full raise does not reopen the action. In Fixed-Limit the bar is lower: an all-in worth at least 50% of a full bet or raise reopens it (TDA 2024 Rule 47-B).
+A. No. If you bet and opponents only call, you cannot add more — the betting round ends. The one exception is preflop: when everyone just calls, the big blind (or a live straddler) still gets the option to raise, because that post counts as their opening bet (WSOP Live Action Rules 159 · 165). In No-Limit and Pot-Limit, you can raise again only if the action comes back to you facing at least a full raise over your bet — whether one player made it or several short all-ins add up to it; a single all-in for less than a full raise does not reopen the action. In Fixed-Limit the bar is lower: an all-in worth at least 50% of a full bet or raise reopens it (TDA 2024 Rule 47-B).
 
 **Q. How many times can you raise in Texas Hold'em?**
 

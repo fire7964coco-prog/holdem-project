@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in (Türkçe masa dilinde rest) gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -215,7 +215,7 @@ Bahis kapandığında ve bir oyuncu all-in olduğunda, showdown'da olanlar şöy
 
 ### Hata 1: All-in oyuncunun kendi katkısını aşan yan potu kazanabileceğini sanmak
 
-Kazanamaz. All-in oyuncu, katkıda bulunduğu ana pot ve yan potlarda hak sahibidir; ama kendi katkısını aşan kısımda büyük stack'lerin koyduğu her ekstra çip, üzerinde hiçbir hakkı olmayan bir pota gider.
+Kazanamaz. All-in oyuncu, katkıda bulunduğu ana pot ve yan potlarda hak sahibidir; ama kendi katkısını aşan kısımda büyük stack'lerin koyduğu her ekstra çip, üzerinde hiçbir hakkı olmayan bir pota gider — ya da o çipleri tek bir oyuncu koyduysa, karşılanmamış bahis olarak doğrudan ona geri döner.
 
 ### Hata 2: Kimin yeniden yükseltebileceği kuralını bilmemek
 
@@ -223,7 +223,7 @@ No-limit ve pot-limit'te kısmi bir all-in, o turda **zaten bet, call ya da rais
 
 ### Hata 3: El ortasında cepten çip eklemek
 
-Table stakes. Masada olan, bahis yapabileceğin her şeydir. $80 için all-in'sen ve pot $400 ise, seni gören her oyuncudan sadece $80 kazanabilirsin.
+Table stakes. Masada olan, bahis yapabileceğin her şeydir. $80 için all-in'sen, potta zaten olanın üstüne seni gören her oyuncudan sadece $80 kazanabilirsin — onlar $400 bahis koysa bile.
 
 ### Hata 4: Elini çok erken atmak
 

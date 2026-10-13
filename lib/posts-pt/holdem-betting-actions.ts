@@ -127,7 +127,7 @@ Dois exemplos na prática:
 | Flop | Jogador aposta $6 | $6 a mais → $12 no total |
 | Pré-flop (blinds $1/$2) | Jogador aumenta para $6 (um raise de $4 sobre o blind de $2) | $4 a mais → $10 no total |
 
-O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou raise completo, não o big blind. ("Completo" faz diferença quando alguém vai de all-in por menos que um raise: depois de uma aposta de $10 e um all-in de $14, o incremento a igualar continua sendo $10, então o menor raise é para $24.) No pré-flop, o big blind conta como aposta de abertura — por isso o menor open-raise possível é para 2 big blinds.
+O insight-chave: o min-raise acompanha o ==incremento== da última aposta ou raise completo, não o big blind. ("Completo" faz diferença quando alguém vai de all-in por menos que um raise: depois de uma aposta de $10 e um all-in de $14, o incremento a igualar continua sendo $10, então o menor raise é para $24.) No pré-flop, o big blind conta como aposta de abertura — por isso o menor open-raise possível é para 2 big blinds. Com um straddle vivo na mesa, a aposta a superar é o straddle, então o raise mínimo é para o dobro do straddle (regra 165 do regulamento Live Action da WSOP).
 
 Duas regras do poker ao vivo que vêm junto com o raise:
 
@@ -145,7 +145,7 @@ No **No-Limit Hold'em: não existe teto**. Você pode aumentar, levar um reaumen
 Dois limites continuam valendo:
 
 - Cada reaumento precisa respeitar a ==regra do incremento do min-raise== acima — a única exceção é o all-in, que pode ser por menos
-- ==r:Você não pode aumentar a própria aposta.== Se você aposta e todo mundo só paga, a rodada acaba — você só volta a aumentar se alguém aumentar *você* primeiro
+- ==r:Você não pode aumentar a própria aposta.== Se você aposta e todo mundo só paga, a rodada acaba — você só volta a aumentar se alguém aumentar *você* primeiro. A única exceção é o pré-flop: quando todo mundo só paga, o big blind (ou quem postou um straddle vivo) ainda tem a opção de aumentar, porque essa aposta postada conta como a aposta de abertura dele (regras 159 e 165 do regulamento Live Action da WSOP)
 
 Nos jogos de **Fixed-Limit** cada rodada é capada (pote "capado"). As regras de torneio da WSOP põem o teto em ==uma aposta mais quatro raises== (regra 100.b) — e a exceção funciona ao contrário do que quase todo mundo espera: ==r:o teto continua de pé mesmo que restem só dois jogadores na mão==. Ele só cai quando o **torneio inteiro** fica heads-up. No cash valem as regras da casa, então pergunte ao dealer.
 
@@ -208,7 +208,7 @@ A. Sim — se alguém apostar depois do seu check, você pode aumentar quando a 
 
 **Q. Pode aumentar a própria aposta?**
 
-A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. No No-Limit e no Pot-Limit, você só volta a aumentar se a ação voltar até você diante de pelo menos um aumento completo sobre a sua aposta — seja de um único jogador, seja de vários all-ins curtos que somados chegam a isso; um único all-in por menos que um aumento completo não reabre a ação. No Fixed-Limit a régua é mais baixa: um all-in de pelo menos 50% de uma aposta ou aumento completo já reabre a ação (TDA 2024, regra 47-B).
+A. Não. Se você aposta e os adversários apenas pagam, você não pode adicionar mais nada — a rodada de apostas termina. A única exceção é o pré-flop: quando todo mundo só paga, o big blind (ou quem postou um straddle vivo) ainda tem a opção de aumentar, porque essa aposta postada conta como a aposta de abertura dele (regras 159 e 165 do regulamento Live Action da WSOP). No No-Limit e no Pot-Limit, você só volta a aumentar se a ação voltar até você diante de pelo menos um aumento completo sobre a sua aposta — seja de um único jogador, seja de vários all-ins curtos que somados chegam a isso; um único all-in por menos que um aumento completo não reabre a ação. No Fixed-Limit a régua é mais baixa: um all-in de pelo menos 50% de uma aposta ou aumento completo já reabre a ação (TDA 2024, regra 47-B).
 
 **Q. Quantas vezes pode aumentar no Texas Hold'em?**
 

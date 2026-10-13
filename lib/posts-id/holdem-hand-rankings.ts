@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
 
   masterUpdated: "2026-10-06",
   image: "/images/holdem-hand-rankings-hero.webp",
@@ -74,7 +74,7 @@ Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi dan tangan terbaik di poker.
 
-Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat dapat, satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
+Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat Anda sendiri yang membuatnya — bukan royal flush yang seluruhnya ada di board — satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
 
 ### #2 — Straight Flush
 

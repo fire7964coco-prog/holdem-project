@@ -126,7 +126,7 @@ Dos ejemplos resueltos:
 | Flop | Un jugador apuesta $6 | $6 más → $12 en total |
 | Preflop (ciegas $1/$2) | Un jugador sube a $6 (una subida de $4 sobre la ciega de $2) | $4 más → $10 en total |
 
-La clave: el min-raise iguala el ==incremento== de la última apuesta o subida completa, no la ciega grande. (Lo de «completa» importa cuando alguien va all-in por menos de una subida: tras una apuesta de $10 y un all-in de $14, el incremento a igualar sigue siendo $10, así que la subida mínima es a $24.) En el preflop, la ciega grande cuenta como apuesta de apertura — por eso la subida de apertura más pequeña es a 2 ciegas grandes.
+La clave: el min-raise iguala el ==incremento== de la última apuesta o subida completa, no la ciega grande. (Lo de «completa» importa cuando alguien va all-in por menos de una subida: tras una apuesta de $10 y un all-in de $14, el incremento a igualar sigue siendo $10, así que la subida mínima es a $24.) En el preflop, la ciega grande cuenta como apuesta de apertura — por eso la subida de apertura más pequeña es a 2 ciegas grandes. Si hay un straddle vivo en la mesa, la apuesta a superar es el straddle, así que la subida mínima es al doble del straddle (regla 165 del reglamento Live Action de la WSOP).
 
 Dos reglas del póker en vivo que vienen con la subida:
 
@@ -144,7 +144,7 @@ En **No-Limit Hold'em: no hay tope**. Puedes subir, que te resuban y volver a su
 Aun así, hay dos límites:
 
 - Cada resubida debe cumplir la ==regla del incremento mínimo== de arriba — la única excepción es un all-in, que puede ser por menos
-- ==r:No puedes subir tu propia apuesta.== Si apuestas y todos se limitan a pagar, la ronda termina — solo vuelves a poder subir si alguien te sube *a ti* primero
+- ==r:No puedes subir tu propia apuesta.== Si apuestas y todos se limitan a pagar, la ronda termina — solo vuelves a poder subir si alguien te sube *a ti* primero. La única excepción es el preflop: si todos se limitan a pagar, la ciega grande (o quien puso un straddle vivo) conserva la opción de subir, porque esa apuesta obligatoria cuenta como su apuesta de apertura (reglas 159 y 165 del reglamento Live Action de la WSOP)
 
 En las partidas de **Fixed-Limit** cada ronda está capada (bote "capado"). Las reglas de torneo de la WSOP fijan el tope en ==una apuesta más cuatro subidas== (regla 100.b) — y la excepción funciona al revés de lo que casi todos esperan: ==r:el tope sigue en pie aunque en la mano queden solo dos jugadores==. Solo cae cuando **todo el torneo** se queda heads-up. En cash mandan las normas de la casa, así que pregunta al crupier.
 
@@ -207,7 +207,7 @@ A. Sí — si alguien apuesta después de tu check, puedes subir cuando la acci�
 
 **Q. ¿Puedes subir tu propia apuesta?**
 
-A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. En No-Limit y Pot-Limit, solo puedes volver a subir si la acción vuelve a ti frente a al menos una subida completa sobre tu apuesta — ya la haga un solo jugador o la sumen varios all-ins cortos; un único all-in por menos de una subida completa no reabre la acción. En Fixed-Limit el listón es más bajo: un all-in de al menos el 50 % de una apuesta o subida completa ya la reabre (regla 47-B de la TDA 2024).
+A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. La única excepción es el preflop: si todos se limitan a pagar, la ciega grande (o quien puso un straddle vivo) conserva la opción de subir, porque esa apuesta obligatoria cuenta como su apuesta de apertura (reglas 159 y 165 del reglamento Live Action de la WSOP). En No-Limit y Pot-Limit, solo puedes volver a subir si la acción vuelve a ti frente a al menos una subida completa sobre tu apuesta — ya la haga un solo jugador o la sumen varios all-ins cortos; un único all-in por menos de una subida completa no reabre la acción. En Fixed-Limit el listón es más bajo: un all-in de al menos el 50 % de una apuesta o subida completa ya la reabre (regla 47-B de la TDA 2024).
 
 **Q. ¿Cuántas veces se puede subir en Texas Hold'em?**
 

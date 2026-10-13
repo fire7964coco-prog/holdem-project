@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches che due o più stack più grandi puntano oltre quella cifra formano un side pot che possono vincere solo loro; una puntata in più di un solo giocatore gli viene semplicemente restituita. Nel No-Limit e nel Pot-Limit, un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito — a meno che più all-in corti, sommati, non arrivino ad almeno un rilancio completo sopra quanto quel giocatore ha già messo.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -209,7 +209,7 @@ Quando le puntate sono chiuse e c'è un giocatore all-in, ecco cosa succede allo
 
 ### Errore 1: credere che il giocatore all-in possa vincere il side pot
 
-Non può. Una volta che il giocatore all-in è limitato, ogni fiche in più puntata dagli stack più grandi finisce in un piatto su cui non ha alcun diritto.
+Non può. Una volta che il giocatore all-in è limitato, ogni fiche in più puntata dagli stack più grandi finisce in un piatto su cui non ha alcun diritto — oppure, se a puntarle è un solo giocatore, gli torna indietro direttamente come puntata non chiamata.
 
 ### Errore 2: non sapere la regola su chi può rilanciare
 
@@ -217,7 +217,7 @@ Nel No-Limit e nel Pot-Limit, un all-in parziale non dà una seconda occasione d
 
 ### Errore 3: aggiungere fiches dalla tasca a metà mano
 
-Table stakes. Quello che c'è sul tavolo è tutto ciò che puoi puntare. Se sei all-in per $80 e il piatto è di $400, da ogni giocatore che chiama puoi vincere solo $80.
+Table stakes. Quello che c'è sul tavolo è tutto ciò che puoi puntare. Se sei all-in per $80, da ogni giocatore che chiama puoi vincere solo $80, oltre a quello che c'era già nel piatto — anche se punta $400.
 
 ### Errore 4: gettare la mano troppo presto
 

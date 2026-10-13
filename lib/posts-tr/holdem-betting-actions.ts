@@ -152,7 +152,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 | Flop | Oyuncu $6 koyar | $6 daha → toplam $12 |
 | Preflop (blindler $1/$2) | Oyuncu $6'ya yükseltir ($2 blind üzerine $4'lük yükseltme) | $4 daha → toplam $10 |
 
-İşin özü: min-raise, big blind'e değil, son **tam** bahsin ya da yükseltmenin ==artışına== eşittir. ("Tam" kelimesi biri bir raise'den az all-in olduğunda önem kazanır: $10 bahis ve ardından $14 all-in gelirse eşlenecek artış hâlâ $10'dur, yani en küçük raise toplam $24'e çıkmaktır.) Preflop'ta big blind açılış bahsi sayılır — en küçük açılış yükseltmesi bu yüzden 2 big blind'edir.
+İşin özü: min-raise, big blind'e değil, son **tam** bahsin ya da yükseltmenin ==artışına== eşittir. ("Tam" kelimesi biri bir raise'den az all-in olduğunda önem kazanır: $10 bahis ve ardından $14 all-in gelirse eşlenecek artış hâlâ $10'dur, yani en küçük raise toplam $24'e çıkmaktır.) Preflop'ta big blind açılış bahsi sayılır — en küçük açılış yükseltmesi bu yüzden 2 big blind'edir. Masada canlı bir straddle varsa geçilmesi gereken bahis straddle'dır, yani minimum raise straddle'ın iki katıdır (WSOP Live Action Kural 165).
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
@@ -170,7 +170,7 @@ Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 Yine de iki sınır geçerli:
 
 - Her re-raise, yukarıdaki ==min-raise artış kuralını== karşılamalı — tek istisna all-in'dir, o daha az olabilir
-- ==r:Kendi bahsini yükseltemezsin.== Sen bahis koyarsın ve herkes sadece call yaparsa tur biter — ancak biri *seni* önce yükseltirse tekrar raise yapabilirsin
+- ==r:Kendi bahsini yükseltemezsin.== Sen bahis koyarsın ve herkes sadece call yaparsa tur biter — ancak biri *seni* önce yükseltirse tekrar raise yapabilirsin. Tek istisna preflop'tur: herkes sadece call yaparsa big blind (ya da canlı straddle'ı koyan oyuncu) yine de raise hakkına sahiptir, çünkü o zorunlu bahis onun açılış bahsi sayılır (WSOP Live Action Kural 159 · 165)
 
 **Fixed-Limit** oyunlarda her tur sınırlıdır ("capped" pot). WSOP turnuva kuralları sınırı ==bir bahis artı dört yükseltme== olarak koyar (Kural 100.b) — ve istisna çoğu kişinin beklediğinin tam tersi işler: ==r:elde yalnızca iki oyuncu kalsa bile sınır durur==. Sınır ancak **turnuvanın tamamı** heads-up olduğunda kalkar. Cash oyunlarda salon kuralları geçerlidir, o yüzden krupiyeye sor.
 
@@ -233,7 +233,7 @@ A. Evet. Check yaptıktan sonra arkandan biri bahis koyarsa, sıra sana döndü�
 
 **Q. Kendi bahsini yükseltebilir misin?**
 
-A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyemezsin — bahis turu biter. No-Limit ve Pot-Limit'te ancak sıra sana, bahsinin üstüne en az tam bir yükseltmeyle karşı karşıya olarak dönerse tekrar raise yapabilirsin — bunu tek bir oyuncu yapmış olsun ya da birkaç kısa all-in toplanıp ona ulaşmış olsun; tam bir yükseltmeden az tek bir all-in hareketi yeniden açmaz. Fixed-Limit'te çıta daha düşüktür: tam bir bahsin ya da yükseltmenin en az %50'si kadar bir all-in hareketi yeniden açar (TDA 2024 Kural 47-B).
+A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyemezsin — bahis turu biter. Tek istisna preflop'tur: herkes sadece call yaparsa big blind (ya da canlı straddle'ı koyan oyuncu) yine de raise hakkına sahiptir, çünkü o zorunlu bahis onun açılış bahsi sayılır (WSOP Live Action Kural 159 · 165). No-Limit ve Pot-Limit'te ancak sıra sana, bahsinin üstüne en az tam bir yükseltmeyle karşı karşıya olarak dönerse tekrar raise yapabilirsin — bunu tek bir oyuncu yapmış olsun ya da birkaç kısa all-in toplanıp ona ulaşmış olsun; tam bir yükseltmeden az tek bir all-in hareketi yeniden açmaz. Fixed-Limit'te çıta daha düşüktür: tam bir bahsin ya da yükseltmenin en az %50'si kadar bir all-in hareketi yeniden açar (TDA 2024 Kural 47-B).
 
 **Q. Texas Hold'em'de kaç kez raise yapabilirsin?**
 

@@ -179,7 +179,7 @@ A. With only two players, the rule flips: the dealer button posts the small blin
 
 **Q. What happens if you miss your blind?**
 
-A. In most card rooms you post the missed blinds when you return — the big blind plays as a live bet and the small blind is a dead chip added to the pot. Alternatively, you can wait until the big blind naturally reaches your seat — or, in rooms that allow it, come back in as the under-the-gun live straddle.
+A. In a live cash game, most card rooms have you post the missed blinds when you return — the big blind plays as a live bet and the small blind is a dead chip added to the pot. Alternatively, you can wait until the big blind naturally reaches your seat — or, in rooms that allow it, come back in as the under-the-gun live straddle. In a tournament there is nothing to make up: the blinds and antes come out of your stack whether you are in your seat or not.
 
 **Q. Is "the big blind" the same as "the blinds"?**
 

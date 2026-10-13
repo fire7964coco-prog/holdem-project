@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-11",
+  updated: "2026-10-13",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -113,7 +113,7 @@ Bir de kelime karışıklığı var: "renk" hem kartın türü hem de floş elin
 
 **A♠ K♠ Q♠ J♠ 10♠** — en yüksek straight flush ve pokerin en iyi eli.
 
-Yenilemez; mümkün olan tek beraberlik, tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler. Yaklaşık her 31.000 elde bir gelir, bu yüzden birçok oyuncu yıllarca onu yapamaz. Yaptığında tek işin mümkün olduğunca çok çip koymaktır.
+Yenilemez; mümkün olan tek beraberlik, tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler. Yaklaşık her 31.000 elde bir gelir, bu yüzden birçok oyuncu yıllarca onu yapamaz. Onu kendin yaptığında — tamamen board'da yatan bir royal flush değilse — tek işin mümkün olduğunca çok çip koymaktır.
 
 ### #2 — Straight Flush
 

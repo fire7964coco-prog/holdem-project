@@ -80,7 +80,7 @@ Here is every hand from strongest to weakest, with an example and the one rule t
 
 **A♠ K♠ Q♠ J♠ 10♠** — the highest straight flush, and the best hand in poker.
 
-It cannot be beaten; the only possible tie is a royal flush that sits entirely on the board for everyone to share, which splits the pot. You'll see one roughly once in 31,000 hands, so most players go years without hitting one. When you do, your only job is to get as many chips in as possible.
+It cannot be beaten; the only possible tie is a royal flush that sits entirely on the board for everyone to share, which splits the pot. You'll see one roughly once in 31,000 hands, so most players go years without hitting one. When you make one yourself — not one that sits entirely on the board — your only job is to get as many chips in as possible.
 
 ### #2 — Straight Flush
 

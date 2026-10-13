@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blind হলো এমন বাধ্যতামূলক বাজি যা কার্ড বিলির আগেই দিতে হয়। small blind (SB) dealer button-এর ঠিক বাঁ দিকে বসে, আর big blind (BB) তার বাঁ দিকে; big blind — সাধারণত small blind-এর দ্বিগুণ — টেবিলের betting unit।",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -178,7 +178,7 @@ A. শুধু দুজন খেলোয়াড় থাকলে নি�
 
 **Q. নিজের blind মিস করলে কী হয়?**
 
-A. বেশিরভাগ card room-এ ফিরে এসে আপনি মিস হওয়া blind দেন — big blind একটা live বাজির মতো খেলে আর small blind একটা dead chip যা pot-এ যায়। বিকল্পভাবে, আপনি big blind স্বাভাবিকভাবে আপনার সিটে পৌঁছানোর অপেক্ষা করতে পারেন।
+A. Live cash game-এ, বেশিরভাগ card room-এ ফিরে এসে আপনি মিস হওয়া blind দেন — big blind একটা live বাজির মতো খেলে আর small blind একটা dead chip যা pot-এ যায়। বিকল্পভাবে, আপনি big blind স্বাভাবিকভাবে আপনার সিটে পৌঁছানোর অপেক্ষা করতে পারেন। Tournament-এ পূরণ করার কিছু নেই: আপনি সিটে থাকুন বা না থাকুন, blind আর ante আপনার stack থেকে কাটা যেতেই থাকে।
 
 **Q. "the big blind" আর "the blinds" কি একই জিনিস?**
 

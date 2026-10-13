@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In torneo, senza all-in, mostra per primo l'ultimo aggressore del river; dopo un giro di check, il primo giocatore attivo a sinistra del bottone. Con un all-in, tutte le mani rimaste si mostrano subito al termine delle puntate. Chi ha pagato al river e conservato o mostrato le proprie carte può chiedere la mano dell'ultimo aggressore. Nel cash, mostrare e fare muck dipendono dalle regole della casa.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-04",
+  updated: "2026-10-13",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -77,7 +77,7 @@ Esempio: bottone, piccolo buio (SB) e grande buio (BB) arrivano al river. La SB 
 
 ## Regole dello showdown con all-in — mostra per primo chi va all-in?
 
-Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Questo tutela l'integrità della mano: nessuno può fare muck per nascondere il risultato. Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check.
+Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Questo tutela l'integrità della mano: nessuno può fare muck per nascondere il risultato. (Un'eccezione: durante l'hand-for-hand vicino alla zona premi, le mani all-in restano coperte e non si distribuiscono altre carte finché lo staff non lo indica — WSOP Tournament 2026, regola 126.g.) Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
