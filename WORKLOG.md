@@ -1,3 +1,16 @@
+## 2026-10-13 (13) — MA-515 회신+등재+이행 §2-BU `7c9da352`·`b3dbf80c` MB-308 · 회차 L1 시뮬레이터 언어 확대 pt `421e4a7c` · MB-309
+
+- 사장님 «핸드오프 읽고 시뮬레이터 언어 확대 1차 계획표부터» → 계획표(핸드오프 «회차 L1») → 사장님 «한 세션에 한 언어» · 순서 pt → fr → id → ms → vi → tr → hi → (ru) · «진행해».
+- 0단계 MA-515: KO `holdem-probability` 4자리. 검산 = 본체 평가기 무늬 가중 전수 열거(AA vs KK 81.946 · 22 82.217 · 76s 77.525 · 65s 77.501) → KK 81.9 연쇄로 본문 «0.2%p쯤» → 0.3%p도 고침.
+- 🔴 실수: 스탬프 치환을 `updated: "2026-09-21"`(21자)를 22자로 잘라 뒤 쉼표를 지움 → tsc가 잡음(푸시 전) · `b3dbf80c`로 복구. 교훈 = 고정 길이 slice 말고 문자열 replace.
+- 🔴 stash 함정: tsc가 tsconfig.tsbuildinfo를 고쳐 `git stash pop` 충돌 → tsbuildinfo만 checkout 뒤 pop(손실 0).
+- pt: DFS Brazil(simulador de poker 70 · treinar poker 40 · poker simulator 110 · poker trainer 90) + SERP(게임·스팸 혼재 · 훈련형 약함) → 제목 «Simulador de poker para treinar: onde você devia ter foldado?». 근거 `docs/keyword-bank/win-rate-quiz-ltr.md`.
+- 사전 = es 구조 · 용어 = translation-terms-pt + 계산기 dict + 코퍼스 빈도 · 숫자 pt-BR(de 선례 · % 소수는 공용 UI 점).
+- /pt/solver «어느 도구» 표: 블로그 글 3행 → 도구 페이지(es 10-12 선례) + 시뮬레이터 행 · 낡은 «세 페이지 없다» 주석 갱신.
+- 렌즈 2(원어민·딜러) WRONG 0 · 반영 12(potOddsTitle «empatar»→«não perder (break-even)» · overcard pair · notReady 주어 · rangeNote 등). 화면 390·1440 넘침 0.
+- 🪶 공용 결함(기존 · pt 무관): 1440 승률 패널 «Vence · Empate · Perde» 줄 끝 잘림 — es도 «Pierde 8…» 동일. 시뮬레이터 공용 회차 때.
+- 남겨진 `next start -p 3100` 자식(PID 32536)이 TaskStop 뒤에도 살아 있어 명령줄 대조 후 그 PID만 종료.
+
 ## 2026-10-13 (12) — 우편함 MA-509·510 회신+등재 §2-BT · 이행 배포 `e30fde28` · MB-307
 
 - 사장님 «진행해». 대상 = MA-509(MB-301 판정 · 요청 2 · 통지 1) · MA-510(MB-302 판정 · 요청 1 = 2자리). 126.g 원문은 로컬 `docs/sources/wsop-2026-tournament-rules.txt` L1528-1529로 확인(콜러 포함 전원 face down).
