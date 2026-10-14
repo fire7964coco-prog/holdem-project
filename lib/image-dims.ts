@@ -4,8 +4,8 @@
  * 본문 이미지의 실제 픽셀 치수. `lib/render-markdown.ts` 가 `<img width height>` 에 그대로 박아
  * 브라우저가 **정확한 자리를 미리 예약**하게 한다(CLS). 한 값으로 고정하면 안 되는 이유와
  * 실측 근거는 `scripts/gen-image-dims.mjs` 머리글에 있다.
- * 최다 규격: 1200x675 515장 · 1200x849 91장 · 1200x845 69장
- * 생성 대상 834장 (public/images)
+ * 최다 규격: 1200x675 516장 · 1200x849 91장 · 1200x845 69장
+ * 생성 대상 835장 (public/images)
  */
 export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/7poker-vs-holdem-card-deal-card.webp": [820, 478],
@@ -555,6 +555,7 @@ export const IMAGE_DIMS: Record<string, [number, number]> = {
   "/images/holdem-glossary-player-types.webp": [1200, 675],
   "/images/holdem-hand-rankings-board-puzzle.webp": [1200, 675],
   "/images/holdem-hand-rankings-board-read.webp": [1200, 675],
+  "/images/holdem-hand-rankings-chart-ar.webp": [1200, 675],
   "/images/holdem-hand-rankings-hero.webp": [1200, 675],
   "/images/holdem-hand-rankings-showdown.webp": [1024, 572],
   "/images/holdem-icm-hero.webp": [1200, 675],
