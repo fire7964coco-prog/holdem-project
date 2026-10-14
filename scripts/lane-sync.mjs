@@ -49,7 +49,7 @@ const OWNED = {
   /** 🧰 헤드 잔여 작업 레인(2026-09-11 · 프로토콜 §7-F) — 로케일 레인 셋의 자리를 «뺀» 나머지 글·이미지·게이트 */
   queue: [
     'lib/posts-en/',
-    'lib/posts-ar/',
+    // lib/posts-ar/ 는 2026-10-14부터 ar 클러스터 4레인 소유(아래 localeLanes('ar')) — queue에서 뺐다
     'lib/posts-de/',
     'lib/posts-es/',
     // lib/posts-fr/ 는 2026-10-07부터 fr 클러스터 7레인 소유(아래 frLanes) — queue에서 뺐다
@@ -89,6 +89,14 @@ const OWNED = {
     'vi-tour': ['holdem-tournament', 'holdem-icm', 'holdem-bubble', 'holdem-short-stack', 'holdem-tournament-vs-cash-game'],
     'vi-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
     'vi-gto': ['donk-bet-strategy', 'monotone-board-strategy', 'broadway-board-strategy', 'a-high-board-cbet', 'k-high-board-cbet', 'ace-paired-board-strategy', 'paired-board-strategy', 'low-board-check-raise', 'blind-battle-cbet', 'blind-battle-connected-board', '3bet-pot-cbet', '3bet-pot-bet-sizing', '3bet-pot-low-board'],
+  }),
+  // 🇸🇦 ar 클러스터 4레인(2026-10-14 · docs/ar-cluster-plan.md §1·§5) — 15편(tiebreak는 hand-rankings 흡수 · GTO 4 보류). index.ts 는 공용(null).
+  //   기존 ar 8편(rules 6 · hand-rankings · tournament-vs-cash-game)도 재작업 레인 소유.
+  ...localeLanes('ar', {
+    'ar-rules': ['texas-holdem-rules-for-beginners', 'holdem-game-order', 'holdem-betting-actions', 'holdem-blind-meaning', 'holdem-all-in-rules', 'holdem-showdown-rules'],
+    'ar-rank': ['holdem-hand-rankings'],
+    'ar-prob': ['holdem-probability', 'holdem-pot-odds', 'holdem-tournament', 'holdem-tournament-vs-cash-game'],
+    'ar-strat': ['holdem-strategy', 'holdem-positions', 'holdem-continuation-bet', 'holdem-glossary'],
   }),
 };
 
@@ -210,6 +218,16 @@ function selftest() {
     ['docs/keyword-bank/vi-core-volumes.md', null],
     ['docs/translation-terms-vi.md', null],
     ['docs/vi-cluster-plan.md', null],
+    ['lib/posts-ar/holdem-blind-meaning.ts', 'ar-rules'],
+    ['lib/posts-ar/holdem-hand-rankings.ts', 'ar-rank'],
+    ['lib/posts-ar/holdem-tournament-vs-cash-game.ts', 'ar-prob'],
+    ['lib/posts-ar/holdem-glossary.ts', 'ar-strat'],
+    ['lib/posts-ar/holdem-tiebreak-rules.ts', null],
+    ['lib/posts-ar/index.ts', null],
+    ['docs/ar-lanes/strat-진행.md', 'ar-strat'],
+    ['docs/keyword-bank/ar-serp/L1-rules.md', null],
+    ['docs/translation-terms-ar.md', null],
+    ['docs/ar-cluster-plan.md', null],
   ];
   let bad = 0;
   for (const [p, want] of cases) {

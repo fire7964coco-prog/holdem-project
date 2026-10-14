@@ -31,7 +31,7 @@
 | ② | 소유표 먼저(§3-C) | 차트·계산·대회 의도는 도구가 주인 |
 | ③ | EN 링크 1:1 · 배포 1회 | 4레인 동시 → `ar-integration` 머지 → 배포 1회 |
 | ④ | 용어 정본(§3-A) 확정 뒤 레인 착수 | 판정 ③ |
-| ⑤ | EN 기준 해시 고정 | 0-4에서 기록(현재 EN 최신 = `e30fde28`) |
+| ⑤ | EN 기준 해시 고정 | ✅ **`e30fde28`**(10-14 0-4 · `lib/posts-en` 마지막 변경) |
 | ⑥ | 카피는 레인 A 브리프에서 확정 | B·C는 카피 불변 |
 | 🆕 ⑦ | **영어 일반 검색어를 제목 주력어로 삼지 않는다** | language=ar SERP에서 영어 질의의 아랍어 페이지 0/200+ → seoTitle·H1 주력어는 아랍어 · 영어 검색어는 tags·병기 · 예외 = 전문 약어(UTG·C-Bet·BB 등)는 제목 안에서도 쓴다(§3-D) |
 | 🆕 ⑧ | **음차 단독형을 «독립 검색 헤드»로 쓰지 않는다** | SERP 오염 확인: بوت أودز(성인 스팸) · اوتس(엘리베이터) · كاش جيم(앱) · شودان(Shodan) · كيكر(축구지) · بلايند · البلايندز · تيلت · فيش · نتس · اول ان · البوت الجانبي · فولد · كول·ريز · cbet · utg / 자동완성 잡음: سي بت · بلاف — seoTitle·desc·독립 노출 문구에선 «… في البوكر» 결합. 🔴 본문·문맥 있는 소제목(«ما هو الكيكر؟»)까지 강제하지 않는다 |
@@ -92,7 +92,43 @@
 | 0-1 | 수요 실측 → `ar-core-volumes.md` | — | ✅ 10-14 |
 | 0-2 | SERP 5레인 → `ar-serp/` | 0-1 | ✅ 10-14 (5/5 · 🟡 L1 보조 1칸 DFS 오류 대체) |
 | 0-3 | 이 문서 §3 판정 ①②③ + 아스트라 교차(«걸프·이집트 포커 코치 겸 아랍어 교정자» 반박 전용) → 사장님 확인 | 0-2 | ✅ 10-14 — 판정 (3) «권고대로» + 아스트라 교차 30행 채택 반영(§3-D) |
-| 0-4 | 착수 공지 MB · 레인 워크트리 4 + wt.exe 창 · EN 기준 해시 · 진행 파일 · `translation-terms-ar.md` 갱신 · 🪶 아스트라 스크래치 폴더명에 레인 id | 0-3 승인 | — |
+| 0-4 | 착수 공지 MB · 레인 워크트리 4 + wt.exe 창 · EN 기준 해시 · 진행 파일 · `translation-terms-ar.md` 갱신 · 🪶 아스트라 스크래치 폴더명에 레인 id | 0-3 승인 | ✅ 10-14 (MB-329 · 워크트리 `Holdem-ar-{rules,rank,prob,strat}` + HARDEN.md · 진행 파일 4 · index 칸 3 · lane-sync ar 4레인 72/72 · EN `e30fde28` · §4-A·§5 · terms = 0-3에서 갱신됨) |
 | 1 | 레인 🅰~🅳 병렬(A 준비 → B 집필 → C 마감 · 아스트라 A·C 교차) | 0-4 | — |
 | 2 | 헤드 머지(`ar-integration`) → 빌드 → 배포 1회 → MB · IndexNow · GSC 수동 색인 목록 | 1 | — |
 | (보류) | GTO 4 · `/ar/glossary` 도구 · `/ar/solver` 랜딩 | 솔버 ar UI | 사장님 10-14 |
+
+## 4-A. 헤드 머지 = 통합 브랜치 `ar-integration` (vi §4-A 승계)
+
+- 🔴 **레인은 main이 아니라 `ar-integration`(폴더 `Holdem-ar-head` · 첫 레인 C가 끝날 때 헤드가 만든다)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(반쪽 ar + 끊긴 링크가 라이브). 배포 회차에 `ar-integration` → main 머지 1회.
+- 통합 트리 빌드 = `npx next build`(prebuild의 intl-links는 전 레인 머지 전까지 실패가 정상). 🔴 `Holdem-ar-head`에 `.env.local` 복사(정리 때 같이 삭제).
+- 배포 회차: ① 🔴 date — 신규 7편(probability · pot-odds · tournament · strategy · positions · continuation-bet · glossary) `date` = 배포일 · 기존 8편은 원래 date ② `/ar/calculator`·`/ar/hand-chart` quickRef·related를 새 글로 연결(EN 대응 · 없는 글은 빈 칸 유지) ③ main → ar-integration 머지 → `npm run build`(sitemap ar 15 확인) → ff → push ④ 라이브 Playwright(`/ar/blog` 15 · 글 1편 RTL) ⑤ MB 1행 + 검수장에 배포 해시로 ar 1회 요청 ⑥ IndexNow ⑦ 사장님 GSC 수동 색인 목록 ⑧ 마감(워크트리 4 + head 정리 · `node_modules` 정션은 `rmdir`로 링크만).
+
+## 5. 레인 운영 — vi §5 «차이 표»를 ar로 읽는다 (0-4 · 10-14)
+
+> 레인 = `docs/ms-translation-lanes.md` §3~§9(A 준비 → `/clear` → B 집필 → `/clear` → C 마감)를 따르되 **아래 표가 이긴다.** 표에 없는 자리 = `docs/vi-cluster-plan.md` §5 → ms 규격 순. 레인 id = `ar-rules`·`ar-rank`·`ar-prob`·`ar-strat` · 브랜치 `harden-ar-<id>` · 폴더 `../Holdem-ar-<id>`.
+
+| 자리 | ar에서는 |
+|---|---|
+| 파일 이름 | 진행 `docs/ar-lanes/<id>-진행.md` · 브리프 `docs/ar-lanes/<id>-brief.md` · 키워드 `docs/keyword-bank/ar-<id>.md`(선택) |
+| 링크 대상 | 이 문서 §1 **15편** + `/ar/calculator` · `/ar/hand-chart` · `/ar/win-rate-quiz` · `/ar/tournaments`. 🔴 없는 것 = `/ar/solver` · `/ar/glossary` · GTO 4편 · **holdem-tiebreak-rules**(→ `holdem-hand-rankings#kicker`로 대체) · 그 밖의 EN 글(→ 진행 파일 «링크 편차»에 빼기/대체 기록) |
+| 용어 | **§3-A**(정본) → `docs/translation-terms-ar.md` 10-14 절. 🔴 ar 최대 위험 = ① 음차 단독형을 seoTitle·desc·독립 헤드로(§2 ⑧) ② 영어 검색어를 제목 주력어로(§2 ⑦) ③ «المواقع في البوكر» 제목(§2 ⑨) ④ «القدر»·«الإيس»·«تحت المدفع»·«الرهان الكبير» 단독 잔존 ⑤ 대회 순위 «المركز»까지 «الموقع»로 일괄 치환 |
+| 숫자·카드 | 서양 숫자 0-9 · 천 단위 콤마 `1,326` · 소수 마침표 `2.5` · 카드 라틴 `A♠ 10♦` · 아랍 쉼표 «،»·물음표 «؟» — 🔴 그래도 A에서 ar 8편 코퍼스로 % 위치·공백을 **세라**(추측 금지) |
+| RTL | 본문은 아랍어로만 쓰면 페이지가 `dir=rtl` 처리. 🔴 카드·숫자·범위(«AKs–ATs»)·`==하이라이트==`·표 안 라틴 토큰이 뒤집혀 읽히는 자리는 C 화면 실측(390·1440)으로 확인 — 마크업 꼼수(제어문자 삽입) 금지 · 결함이면 헤드 요청 |
+| 조사 | 🔴 다시 조사하지 않는다(§2 ①). 입력 = `docs/keyword-bank/ar-serp/00-brief.md` + 레인 파일(🅰 `L1-rules` · 🅱 `L2-rankings` · 🅲 `L4-odds-tournament` · 🅳 `L5-strategy-gto` + `L3-terms`) + `ar-core-volumes.md`. DFS 직접은 레인당 1회까지(location **2682 사우디** · language ar · 결과는 브리프에 축어) |
+| 브리프 «소유표» | §3-C에서 그 글이 주인인 검색어 · 금지 헤드 |
+| Fable 카피 | A-⑥ 서브 1회(`model: "fable"`) · 입력에 §2 ⑦⑧⑨ + §3-C 추가 · 확정 뒤 B·C는 카피 불변 |
+| B 틀 | EN 현행 구조 + 기존 ar 글의 필드 모양(라벨 «إجابة سريعة» 등은 A가 ar 8편에서 실측해 브리프에 확정) · `masterUpdated` = 기준 해시 **`e30fde28`** 시점 EN `updated`(헤드가 머지 때 델타 스윕) |
+| 등록 | `lib/posts-ar/index.ts`의 **자기 레인 칸 두 곳**(`[ar-<id> import 시작]~끝` · `[ar-<id> 배열 시작]~끝`). 🅰 rules = 칸 없음(6편 파일만 다시 쓴다) · 🅱 hand-rankings · 🅲 vs-cash는 칸 안에 이미 있다 |
+| 게이트 | `audit:hard --locale=ar` · `check:structure`(ar 행) · 기존 편은 추가로 `check:drift` · `npx next build`. 🪶 `npx tsc`의 ar 기존 오류 «category "rules" not assignable to Category» 8건은 전 로케일 공통 기존 오류 — 무시 |
+| 전사 대조 정규화 | 천 단위 콤마 제거 후 EN과 숫자·카드 토큰 집합 대조 |
+| 네이티브 렌즈 | 걸프(리야드·두바이) 클럽 레귤러(GGPoker ar 용어 · «이 문장을 테이블에서 쓰나») · 이집트 출판 교정자(MSA 문법 · 2인칭 일관 · 직역 냄새 · 부호 «،؟») · 마그레브 초심자(음차가 막는 자리 → 첫 등장 풀이) · **아스트라 교차**(A·C 각 1회 필수 · 페르소나 «걸프·이집트 포커 코치 겸 아랍어 교정자» · 🪶 스크래치 폴더 = `astra-ar-<id>-<A\|C>`(레인 id 필수 · 10-14 MA-542 겹침 교훈)) |
+| 커밋 | `git add lib/posts-ar/<내 슬러그>.ts lib/posts-ar/index.ts docs/ar-lanes/<id>-* docs/keyword-bank/ar-<id>.md` · 메시지 «ar(<id>): …» · `git push` 금지 |
+| 헤드 | 머지 대상 = `ar-integration`(§4-A) · 배포 = 4레인 전부 머지 + 헤드 판정 뒤 1회 |
+| 금지 승계 | 합법성·종교 판단 축(«حرام/حلال/حكم») 열지 않음 · 실머니·앱 추천 금지 · 🅲 tournament의 EN «개최 합법성» FAQ 삭제 · 일정 의도는 `/ar/tournaments`로 · §13 불변 |
+
+### 5-A. 레인별 특이점
+
+- 🅰 **rules**: 6편 전부 기존 → EN 현행으로 다시 쓴다(slug·date 불변). 필라에 실질 헤드 «لعبة البوكر» 투입 · all-in = 용어 교체 + FAQ 3~4 + H2 1 · showdown = 링크·용어 통일.
+- 🅱 **rank**: hand-rankings에 tiebreak 흡수 — `#kicker` 앵커 절을 **새로 만든다**(현 파일에 없음) · 키커·무승부·스플릿 · 7장 기준 확률표 · 헤드 «ترتيب البوكر». 🔴 §13 핸드 예시 베스트 5장 전수 검산.
+- 🅲 **prob**: probability 최우선 · pot-odds 유지 · tournament = 구조·전략(일정 → `/ar/tournaments`) · vs-cash = 기존 재작업.
+- 🅳 **strat**: strategy에 «البلف في البوكر»·«هل البوكر حظ ام مهارة» 흡수 · positions 제목 = 단수 «الموقع» 또는 «مقاعد طاولة البوكر» · c-bet · glossary = 글이 주인(제목 «مصطلحات البوكر» 가능 · L3 참조).

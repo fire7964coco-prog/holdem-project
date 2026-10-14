@@ -1,3 +1,9 @@
+## 2026-10-14 (9) — ar 클러스터 0-4: 레인 4개 띄움 · MB-329
+
+- 착수 공지 MB-329(요청 1 = 배포까지 lib/posts-ar 판정 제외) · EN 기준 해시 `e30fde28` · `lib/posts-ar/index.ts` 레인 칸 3(rank·prob·strat · rules는 칸 없음) · `lane-sync` ar 4레인(queue에서 lib/posts-ar/ 뺌 · 셀프테스트 72/72) · 진행 파일 `docs/ar-lanes/{rules,rank,prob,strat}-진행.md` · 계획 §4-A(`ar-integration`)·§5 차이 표·§5-A 레인 특이점.
+- 워크트리 `../Holdem-ar-{rules,rank,prob,strat}`(브랜치 `harden-ar-*` · 비추적 HARDEN.md · node_modules 정션) + 본체가 wt.exe 창 4개 띄움. 빈 폴더 `Holdem-{wrq-zhhant,tour-frru,ar-tools}` 3개 삭제.
+- MA-544(MB-323~327 판정 · RISKY 20 · 요청 4)는 미처리 — 다음 세션 회신.
+
 ## 2026-10-14 (8) — ar 클러스터 0-1·0-2 현지 조사 + 계획 초안 `docs/ar-cluster-plan.md`
 
 - 사장님 결정: «tr처럼 20편축소판 · 솔버 화면 없으니 GTO는 나중에» → 이번 16편(권고 15 · tiebreak 흡수) · GTO 4 보류.
