@@ -103,7 +103,7 @@ Dealer इधर-उधर देखता है। टेबल के बा�
 
 अगर कोई खिलाड़ी अपनी हैंड ग़लत पढ़ ले और कहे "मेरे पास pair है", जबकि असल में उसके पास straight है — तो straight जीतता है। dealer कार्ड पढ़ता है और सबसे अच्छी दिखाई गई हैंड को pot देता है।
 
-Face-down कार्ड अपने आप dead नहीं होते। TDA 2024 Rule 14 में हैंड 100% identifiable और retrievable हो तो floor उसे table कर सकता है; muck में मिल जाने या निश्चित पहचान/वापसी न रहने पर dead। Dealer को पहले हैंड पढ़ने दें।
+Face-down कार्ड अपने आप dead नहीं होते। TDA 2024 Rule 14 के तहत हैंड 100% identifiable और retrievable हो तो खिलाड़ी अपना फ़ैसला बदलकर उसे table कर सकता है; muck में मिल जाने या निश्चित पहचान/वापसी न रहने पर dead। Dealer को पहले हैंड पढ़ने दें।
 
 असली हालात: आपके पास J♥ 10♥ है, बोर्ड Q♥ 9♥ 8♥ 2♣ 5♦ है। आपके पास queen-high straight flush है (Q-J-10-9-8 पान में)। प्रतिद्वंद्वी K♣ Q♦ दिखाता है (queens का एक pair)। आप बहुत बड़े अंतर से जीतते हैं। सिर्फ़ उसकी queen देख कर muck मत कर दें।
 
@@ -184,7 +184,7 @@ A. टूर्नामेंट में, जब कोई खिलाड़
 
 **Q. पोकर में "cards speak" का क्या मतलब है?**
 
-A. Cards speak में tabled cards हैंड तय करते हैं। Face-down कार्ड अपने आप dead नहीं: 100% identifiable और retrievable हों तो floor table कर सकता है। Muck में मिलें या पहचान/वापसी निश्चित न रहे तो dead—dealer पढ़ने से पहले muck न करें।
+A. Cards speak में tabled cards हैंड तय करते हैं। Face-down कार्ड अपने आप dead नहीं: 100% identifiable और retrievable हों तो खिलाड़ी उन्हें table कर सकता है। Muck में मिलें या पहचान/वापसी निश्चित न रहे तो dead—dealer पढ़ने से पहले muck न करें।
 
 **Q. अगर बिना showdown जीत जाएँ तो क्या कार्ड दिखाने ज़रूरी हैं?**
 

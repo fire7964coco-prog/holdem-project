@@ -216,7 +216,7 @@ A. Slow roll, en iyisi olduğunu zaten bildiğin kazanan bir eli göstermeyi bil
 
 **Q. All-in durumunda kartları önce kim gösterir?**
 
-A. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Yan potta bahis sürüyorsa bu zorunluluk henüz başlamaz; tüm bahis aksiyonu tamamlanınca açılış yan potun dağıtımına kadar ertelenmez. No-limit cash oyununda bahis river'dan önce bittiyse WSOP Live Action kuralları all-in'e giden oyuncunun önce açmasını ister; aksi halde river sırası başlar. Her cash oyununda yan pot oyuncuları, yalnızca ana pot için all-in olan oyuncudan önce gösterir (Kural 149).
+A. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Yan potta bahis sürüyorsa bu zorunluluk henüz başlamaz; tüm bahis aksiyonu tamamlanınca açılış yan potun dağıtımına kadar ertelenmez. No-limit cash oyununda bahis river'dan önce bittiyse WSOP Live Action kuralları all-in'e giden oyuncunun önce açmasını ister; aksi halde river sırası başlar. WSOP canlı oyun kurallarında (B149) ise yan pot varsa, yan pot oyuncuları yalnızca ana pot için all-in olan oyuncudan önce gösterir.
 
 **Q. Pokerde "cards speak" ne demek?**
 

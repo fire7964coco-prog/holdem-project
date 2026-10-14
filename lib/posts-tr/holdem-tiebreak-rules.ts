@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beraberlik sabit bir sırayla bozulur: önce el türü, sonra eli oluşturan kartlar, sonra yüksekten düşüğe kicker'lar. Aynı çiftte ilk kicker'ı yüksek olan kazanır; beş kartın beşi de aynıysa pot bölünür (split pot). Türler asla beraberlik bozmaz.",
   category: "hand-rankings",
   date: "2026-10-06",
-  updated: "2026-10-11",
+  updated: "2026-10-14",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 dk",
@@ -161,7 +161,7 @@ Wheel'in *yapamadığı* iki şey: As ortadan dönemez (Q-K-A-2-3 hiçbir şey d
 
 ## Board'da kent varsa pot hep bölünür mü?
 
-**Hayır. Board'daki kent herkesin elidir, ama hole kartıyla bu kentin bir üst ucunu tamamlayan oyuncu daha yüksek bir kent yapar ve potu tek başına alır. Pot yalnızca kimse board'un kentini geçemediğinde ya da geçenler aynı en yüksek karta ulaştığında bölünür. Kentin alt ucuna eklenen kart ise hiçbir işe yaramaz.**
+**Hayır. Board'daki kent herkesin elidir. Masada flush gibi daha iyi bir el yoksa, hole kartıyla bu kentin bir üst ucunu tamamlayan oyuncu daha yüksek bir kent yapar ve potu tek başına alır. Pot yalnızca kimse board'un kentini geçemediğinde ya da geçenler aynı en yüksek karta ulaştığında bölünür. Kentin alt ucuna eklenen kart ise hiçbir işe yaramaz.**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:16px 20px;margin:20px 0">
 
@@ -260,7 +260,7 @@ A. Evet — ve emin olduğun bir potu kaybetmenin en yaygın yolu budur. Potun t
 
 **Q. Pokerde As 1 olarak kullanılabilir mi?**
 
-A. Evet, ama yalnızca A-2-3-4-5 kentinde ("wheel"); orada en düşük kart olarak oynar — bu da wheel'i oyunun en düşük kenti yapar. As ortadan dönemez: Q-K-A-2-3 kent değildir.
+A. Hold'em'de evet, ama yalnızca A-2-3-4-5 kentinde ("wheel"); orada en düşük kart olarak oynar — bu da wheel'i oyunun en düşük kenti yapar. As ortadan dönemez: Q-K-A-2-3 kent değildir.
 
 **Q. Başka bir oyuncudan daha yüksek kent yapabilir misin?**
 

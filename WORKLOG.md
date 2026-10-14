@@ -1,3 +1,9 @@
+## 2026-10-14 (14) — 우편함 MA-549·550·551·553 회신 MB-334
+
+- tr 3(tiebreak 직답 플러시 한정 · FAQ «Hold'em'de» · showdown FAQ B149 WSOP 접두) · ar 3묶음(beginners·game-order 관할 6자리 → 연습 칩 답 · SB 풀테이블 한정 · c1abfae6 EN 정정 전파 4자리) · hi showdown Rule 14 주체 2자리 · EN-먼저 용어 사전 Pot·Ante·GTO = EN+hi(나머지 11로케일 사전 🪶).
+- 등재 = queue §2-CF. 게이트 audit:hard ar 15 · tr 20 · hi 21 🔴 0 · build exit 0.
+- 로그인 주소 표시(Supabase 커스텀 도메인) 원문 확인: 유료 플랜 전용 $10/월 + Pro $25/월 · 무료 대안 Google 브랜드 인증 → 사장님 «급하지 않음, 여유 있을 때».
+
 ## 2026-10-14 (13) — S-095 ar 용어 대조: D2·D3 글 정렬 · MB-333
 
 - 솔버 S-095(ar 용어 1차본 · 요청 0) D1~D8을 배포된 ar 15편에 실측: D1 readTime·D4 «٪» = 배포 회차에서 이미 해소 · D2 «فور أوف آ كايند» → «فور أوف كايند» 글 3자리(game-order · texas · glossary) · D3 «تربس» → «تريبس» hand-rankings 5자리.

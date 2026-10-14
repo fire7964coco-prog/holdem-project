@@ -1266,6 +1266,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CE-6 전파 잔여 | CE-3·CE-4 EN 문면 = 나머지 로케일(ar bn de es fa fil fr he id it ja ms pl pt ro ru sw th uk vi zh zh-hant) 미전파 · masterUpdated 10-13 그대로 | 🪶 다음 rules 로케일 회차 때(같은 문장 사본을 로케일마다 grep -c로 먼저 센다) |
 | 통지 | EN-먼저 라벨 아님: hi = BB 콜 최저가 스트래들 반례 · FAQ 전원 올인 예외 · WSOP 리밋 캡 헤즈업 · Pot-Limit «현재 팟» · dead button ↔ «두 강제 베팅» 외 · tr = HQ-REPORT §6 6건(버튼 스트래들 룸별 · betting alt «$10» 블라인드 전제 · «Herkes pas geçer» · Limit 캡 헤즈업 · 순서표 헤즈업 · game-order 줄끝 혼합) | 🪶 판단 대상 · 본체 «남김» CC-5·6·7은 검수장이 이번 이행 MB 때 재판정 |
 
+### 2-CF. 우편함 수신분 — MA-549(tr R2) · MA-550(ar-a R1) · MA-551(ar-b R1) · MA-553(hi R2) · 등재 2026-10-14
+
+근거 `홀덤검수/reports/검수-{tr-r2-rules-b,ar-a-r1-rules-a,ar-b-r1-prob-gloss,hi-r2-rules-b}-2026-10-14/hq-reverify/HQ-REPORT.md`.
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CF-1 tr (MA-549 ①②③) | tiebreak 직답 «üst ucunu tamamlayan … potu tek başına alır» 무한정(플러시 반례) · FAQ As=1 «In Hold'em» 미전파 · showdown FAQ «Her cash oyununda … (Kural 149)» | ✅ «Masada flush gibi daha iyi bir el yoksa» · «Hold'em'de evet» · «WSOP canlı oyun kurallarında (B149) ise yan pot varsa» |
+| CF-2 ar (MA-550 ①) | 관할 6자리 = beginners 돈 절(도입·표 3행·«ثم ارتقِ ببطء»·FAQ) + game-order 도입·불릿 «ابدأ بأدنى الحدود» | ✅ hi CE-1 선례대로 연습 칩 답 — «لا تحتاج إلى مال» · 표 $ → 칩 1/2·5/10·10/25(200–500 · 1,000–2,000 · 2,500–5,000 = 100–250 · 100–200 · 100–200BB) · 불릿 «برقائق بلا قيمة نقدية» |
+| CF-3 ar (MA-550 ②③) | beginners SB «أولًا في كل مرحلة بعد الفلوب» 인원 한정 없음 · c1abfae6 EN 전파(betting 표·본문·FAQ 3자리 · game-order Call 괄호) | ✅ «على طاولة كاملة» · «حتى يصبح جميع من بقي في اليد أول إن ما عدا لاعبًا واحدًا» 3자리 · «إذا لم يزد أحد بعد» |
+| CF-4 hi (MA-553 ①) | showdown L87 Rule 14 주체 floor(WRONG) · FAQ 같은 묶음 | ✅ 주체 = खिलाड़ी(«अपना फ़ैसला बदलकर») 2자리 |
+| CF-5 EN-먼저 (MA-553 ②③④) | 용어 사전 Pot «winner takes it all» · Ante «posted by every player»·«only two» · GTO «can't be beaten» | ✅ EN `glossary-data.ts` + hi `dict.ts` (사이드팟 별도 · BBA = BB 혼자 · «usually two» · 헤즈업 한정 + 3인 이상 보장 없음) · 🪶 **전파 잔여 11** = de es fr id ja ms pt tr vi zh zh-hant `glossary/dict.ts`(다음 도구 회차 때 · 사본 grep 먼저) |
+| CF-6 남김 | ar 🪶 SB «نصف» → «جزءًا»(beginners FAQ·betting) · blind BB 대기 선택지 · tr 고유 통지(MA-549 «통지») · EN-먼저 통지 = MA-549 6건 · MA-550 3건(game-order FAQ TDA 16 «and betting is complete» · beginners FAQ 프리플랍 · betting 표 1BB NL) · MA-551 ①~⑧(probability «Rarity is the whole reason» · «by the river» · pot-odds «turn alone»·19.6% 틀·«plus implied» · glossary GTO·PFR≤VPIP·cooler 약정 유지) · MA-553 통지(B149 표기 통일 · universally disliked · split 전제 · hi cooler 상자 2) · EN showdown FAQ «in any cash game … (Rule 149)»(MA-549 ③ 약한 통지) | 🪶 판단 대상 — 라벨 아님 · 고치면 EN+형제 함께 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
