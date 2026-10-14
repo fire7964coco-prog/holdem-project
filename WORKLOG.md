@@ -1,3 +1,10 @@
+## 2026-10-14 (8) — ar 클러스터 0-1·0-2 현지 조사 + 계획 초안 `docs/ar-cluster-plan.md`
+
+- 사장님 결정: «tr처럼 20편축소판 · 솔버 화면 없으니 GTO는 나중에» → 이번 16편(권고 15 · tiebreak 흡수) · GTO 4 보류.
+- 0-1 `docs/keyword-bank/ar-core-volumes.md`: DFS 시드 224 × SA 2682·EG 2818·AE 2784 + Labs suggestions. 아랍어 SA 100 초과 = لعبة البوكر 720 · ترتيب البوكر 480뿐 · «البوكر» 1,900 = 아랍 부커상·Poker Face 섞임 · 영어 머리어(poker hands 1,600~4,400)가 더 큼.
+- 0-2 `docs/keyword-bank/ar-serp/`(00-brief + L1~L5 · Opus 서브 5 · 원자료 `tmp/ar/L1~L5/`): 영어 질의 language=ar 아랍어 페이지 0/200+ · 음차 단독형 대부분 오염(بوت أودز 성인 스팸 · اوتس 엘리베이터 · cbet 자격증 · «المواقع في البوكر» = 포커 사이트) · 정확한 아랍어 원작 경쟁자 = hootpoker.com/ar 하나 · 경쟁 §13 오류 40+ · 우리 코퍼스 표기 충돌(النهر↔الريفر · الرهان الكبير↔بيغ بلايند · الفلاش الملكي↔رويال فلاش · الإيس↔الآس · تحت المدفع 경쟁 0). L1 보조 1칸 DFS 40101 2회 → 대체 판독.
+- 계획 초안 §3 판정 ①tiebreak 흡수 ②glossary 글/도구 ③용어 정본 → 사장님 확인 대기. 빈 레인 폴더 3개 rmdir = 여전히 «사용 중»(창이 열려 있음).
+
 ## 2026-10-14 (7) — MA-542 긴급: hi·tr rules 6편 + hand-rankings EN 재동기화 · MB-328
 
 - 서브 4(hi A·B · tr A·B · 워크트리 격리) — EN base(masterUpdated 시점)~HEAD diff 분류 → 빠진 자리만 이식(이미 반영된 자리 다수 · masterUpdated만 7월이던 글 많음) · §13 · audit:hard · build · 아스트라 교차(4회 · 의미 불일치 0). 머지 4 → audit hi 21/21·tr 20/20 🔴0 · build exit 0 → push `2abd80b2`. 교훈: 서브끼리 스크래치 아스트라 폴더 이름(astra-ma542)이 겹쳐 hi B 첫 실행 무효·tr A가 사본 덮어씀 → 다음엔 폴더명에 레인 id를 넣어 지시.
