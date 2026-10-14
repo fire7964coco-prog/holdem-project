@@ -88,9 +88,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex). 없는 라우트를 넣지 마라.
   "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments", "/zh-hant/win-rate-quiz"],
   // fr — ★2026-08-24 `/fr/solver` 신설과 함께 추가(9번째 — 솔버 앱 fr 배포 당일).
-  //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
+  //      ⚠ 없는 라우트를 넣지 마라(`/fr/tournaments`는 2026-10-14에 생겼다 — 아래).
   // ★2026-10-13 `/fr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
-  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver", "/fr/win-rate-quiz"],
+  // ★2026-10-14 `/fr/tournaments` 신설(tool-lanes 🅱 · docs/tool-lanes-2026-10-14.md).
+  fr: ["/fr/blog", "/fr/calculator", "/fr/hand-chart", "/fr/glossary", "/fr/solver", "/fr/tournaments", "/fr/win-rate-quiz"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
   // ★2026-09-29 `/id/tournaments` 신설(해외 원정 캘린더 · 회차 1 id·ms·vi).
   // ★2026-10-13 `/id/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
@@ -107,9 +108,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   vi: ["/vi/calculator", "/vi/hand-chart", "/vi/glossary", "/vi/solver", "/vi/tournaments", "/vi/win-rate-quiz"],
   // ru — ★2026-10-10 `/ru/solver` 신설(15번째 솔버 랜딩). ru의 첫 HubPage다. 블로그 목록은 자체 크롬을 유지한다.
   //      ★2026-10-13 `/ru/calculator` 신설(ru 계산기 회차 · docs/keyword-bank/ru-calculator.md).
-  //      ⚠ ru에는 hand-chart·glossary·tournaments·win-rate-quiz가 **없다** — 넣지 마라.
+  //      ⚠ ru에는 hand-chart·glossary가 **없다** — 넣지 마라.
   // ★2026-10-13 `/ru/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1 마지막 언어).
-  ru: ["/ru/calculator", "/ru/solver", "/ru/win-rate-quiz"],
+  // ★2026-10-14 `/ru/tournaments` 신설(tool-lanes 🅱 · docs/tool-lanes-2026-10-14.md).
+  ru: ["/ru/calculator", "/ru/solver", "/ru/tournaments", "/ru/win-rate-quiz"],
   // hi — 솔버·계산기·대회 보드를 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
   // ★2026-09-30 `/hi/tournaments` 신설(로케일 회차 2 후반).
   // ★2026-10-13 `/hi/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).
