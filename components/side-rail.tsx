@@ -381,10 +381,13 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * ar — ★2026-09-30 `/ar/tournaments` 신설(ar 첫 허브 · RTL). 라벨:
    *   - "المدوّنة"  = CHROME.ar.blogLabel (lib/intl.ts)
    *   - "البطولات" = BOARD_STRINGS.ar h1 «بطولات البوكر 2026»의 핵심명(ar 코퍼스 70회 · ar엔 필라 클러스터가 없다)
-   *   ⚠ ar에는 solver·calculator가 없다 — 넣지 마라.
+   *   ★2026-10-14 `/ar/calculator` · `/ar/hand-chart` 신설(tool-lanes 🅲 회차 1). 라벨 = 각 페이지 HubPage title 축어.
+   *   ⚠ ar에는 solver가 없다 — 넣지 마라.
    */
   ar: [
     { href: "/ar/blog",        icon: "📚", label: CHROME.ar.blogLabel },
+    { href: "/ar/calculator",  icon: "🧮", label: "حاسبة احتمالات البوكر" },
+    { href: "/ar/hand-chart",  icon: "📊", label: "مخطط الأيدي الافتتاحية" },
     { href: "/ar/tournaments", icon: "🏆", label: "البطولات" },
   ],
 };
