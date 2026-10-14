@@ -160,6 +160,8 @@ const PICK_TOOL: readonly [string, string, string | null][] = [
   ["知道每個位置該開哪些起手牌", "起手牌表", "/zh-hant/blog/holdem-starting-hands-chart"],
   ["數補牌、算底池賠率", "底池賠率指南", "/zh-hant/blog/holdem-pot-odds"],
   ["只想看一手牌的勝率", "勝率（Equity）指南", "/zh-hant/blog/holdem-equity"],
+  // ★2026-10-14 — `/zh-hant/win-rate-quiz` 신설(tool-lanes 🅰) · zh 147행 꼴. 라벨 = HubPage title 축어.
+  ["在看不到對手底牌時練習估算勝率、找出該蓋牌的時機", "德州撲克練習模擬器", "/zh-hant/win-rate-quiz"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(2026-08-24 축어 실측 · ⑤=«執行解算器»). */

@@ -86,7 +86,7 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   zh: ["/zh/blog", "/zh/calculator", "/zh/hand-chart", "/zh/glossary", "/zh/solver", "/zh/tournaments", "/zh/win-rate-quiz"],
   // zh-hant — ★2026-08-24 `/zh-hant/solver` 신설과 함께 추가(8번째 솔버 랜딩).
   //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex). 없는 라우트를 넣지 마라.
-  "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments"],
+  "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/hand-chart", "/zh-hant/glossary", "/zh-hant/solver", "/zh-hant/tournaments", "/zh-hant/win-rate-quiz"],
   // fr — ★2026-08-24 `/fr/solver` 신설과 함께 추가(9번째 — 솔버 앱 fr 배포 당일).
   //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
   // ★2026-10-13 `/fr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1).

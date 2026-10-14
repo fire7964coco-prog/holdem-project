@@ -267,6 +267,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh-hant/hand-chart", icon: "📊", label: "起手牌表" },
     // ★2026-10-05 `/zh-hant/glossary` 신설(도구 확장 회차 2). 라벨 = 그 페이지 HubPage title(dict.hero.h1) 축어.
     { href: "/zh-hant/glossary", icon: "📖", label: "德州撲克術語查詢" },
+    // ★2026-10-14 `/zh-hant/win-rate-quiz` 신설(tool-lanes 🅰). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/zh-hant/win-rate-quiz", icon: "📈", label: "德州撲克練習模擬器" },
   ],
   /**
    * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 라벨은 검증된
