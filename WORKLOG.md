@@ -1,3 +1,9 @@
+## 2026-10-14 (13) — S-095 ar 용어 대조: D2·D3 글 정렬 · MB-333
+
+- 솔버 S-095(ar 용어 1차본 · 요청 0) D1~D8을 배포된 ar 15편에 실측: D1 readTime·D4 «٪» = 배포 회차에서 이미 해소 · D2 «فور أوف آ كايند» → «فور أوف كايند» 글 3자리(game-order · texas · glossary) · D3 «تربس» → «تريبس» hand-rankings 5자리.
+- D5 화살표 = queue §2-CD CD-5 그대로 · D6~D8 + D2 도구 3자리 = 도구 범위 밖(사장님 10-14) → `docs/translation-terms-ar.md` 10-14 절에 갈림만 기록 · §4-A 솔버 3건 = 솔버 판단 존중(글 산문 동일).
+- 게이트: audit:hard --locale=ar 15/15 🔴 0(드리프트 2 = MA-547 EN 수정 · CE-6 별건) · `npm run build` exit 0.
+
 ## 2026-10-14 (12) — ar 워크트리 정리 · 우편함 MA-547 회신 MB-332
 
 - ar 워크트리 5 해제(정션 링크만 제거 · ar-rules 고아 `next dev` 3107 종료 · 브랜치 보존). 빈 폴더 `../Holdem-ar-{prob,rank,rules,strat}` = 14:29 기동 claude.exe 4개가 잡고 있어 남김.
