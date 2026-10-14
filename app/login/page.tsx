@@ -27,8 +27,8 @@ function LoginForm() {
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const busy = loading || !!socialLoading;
-  // 비-KO = Google 하나(사장님 10-13). 카카오는 국내 계정 · 이메일 가입은 KO만. 재설정 메일 흐름(mode=recovery)은 기존 이메일 회원용으로 남긴다.
-  const googleOnly = locale !== null && mode !== "recovery";
+  // 비-KO = Google + 이메일(사장님 10-14 · 10-13 «Google 하나»를 되돌림 — 커스텀 SMTP(Resend)와 16언어 메일 템플릿이 생겨서).
+  // 카카오는 국내 계정이라 KO만.
 
   useEffect(() => {
     setSocialLoading(null);
@@ -143,11 +143,8 @@ function LoginForm() {
             {socialLoading === "kakao" ? t.connecting : t.kakao}
           </button>}
         </div>
-        {!googleOnly && <div className="mb-5 flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border"/><span>{t.orEmail}</span><span className="h-px flex-1 bg-border"/></div>}
+        <div className="mb-5 flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border"/><span>{t.orEmail}</span><span className="h-px flex-1 bg-border"/></div>
       </>}
-      {googleOnly && err && <p id="auth-error" role="alert" className="text-sm leading-relaxed text-destructive">{err}</p>}
-
-      {!googleOnly && <>
 
       <form onSubmit={handleSubmit} className="space-y-4" aria-busy={busy} aria-describedby={err ? "auth-error" : undefined}>
         {mode === "signup" && <div>
@@ -171,7 +168,6 @@ function LoginForm() {
         {mode === "login" && <button type="button" disabled={busy} onClick={() => switchMode("recovery")} className="min-h-11 px-2 text-muted-foreground underline underline-offset-4">{t.forgot}</button>}
         <button type="button" disabled={busy} onClick={() => switchMode(mode === "login" ? "signup" : "login")} className="min-h-11 px-2 font-semibold text-foreground">{mode === "login" ? t.toSignup : t.toLogin}</button>
       </div>
-      </>}
     </AuthPanel>
   );
 }
