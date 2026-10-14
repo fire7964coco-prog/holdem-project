@@ -1,3 +1,10 @@
+## 2026-10-14 (11) — ar 클러스터 15편: 4레인 헤드 머지 → 배포 `f37fc287` · MB-331
+
+- `ar-integration`(`Holdem-ar-head` · main `19a061b4` 분기) ← 🅱 rank `33fad8b1` · 🅳 strat `fcbbd8bb` · 🅰 rules `baeb6ad2` · 🅲 prob `8d7b816b` 전부 충돌 0. 판정·게이트 전문 = `docs/ar-cluster-plan.md` §4-A 머지 기록·배포 회차 기록.
+- 헤드 수정: hand-rankings 그리드 부제 «الطيّ» → «رمي أوراقك دون كشفها»(muck) · pot-odds strategy 카드 «استراتيجية البوكر» · 계산기 quickRef ①④ + related(calc-parity 요구 4자리) · 핸드차트 카드 → positions · image-dims 재생성(prebuild 🔴였음) · tournament 합법성 FAQ 삭제 의도 등재.
+- RTL 표시 결함(본문 카드열 · 표 칸 카드 · 수식 · 화살표) = queue §2-CD CD-5(렌더러 공용 회차 · CD-2와 묶음). 용어 스윕 = 바꾸지 않음(근거 §4-A).
+- 게이트: audit:hard ar 🔴 0 · 드리프트 0 · intl-links ✓ · calc-parity 0 · `npm run build` exit 0 · sitemap ar 15.
+
 ## 2026-10-14 (10) — 우편함: MA-544 회신 MB-330 · MA-541 ACK
 
 - 요청 1 zh-hant 시뮬레이터 링크 «為什麼位置這麼重要» · 요청 3 ar hand-chart FAQ 2자리(가능성 한정 · wheel ace A2s–A5s) · 요청 4 `_simulator` th `[&>th]:text-start` → build exit 0 · push.
