@@ -8,7 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **도구 레인 3** | 10-14 본체가 띄움 — 🅰 `Holdem-wrq-zhhant`(zh-hant 시뮬레이터) · 🅱 `Holdem-tour-frru`(fr·ru 대회 보드) · 🅲 `Holdem-ar-tools`(ar 계산기+차트 → 시뮬레이터). 정본·상태표 = `docs/tool-lanes-2026-10-14.md`. ✅ 🅰 머지·배포 `4a26acb9` MB-323. ▶ 🅱·🅲 «머지해» 오면 §4 헤드 절차. 🪶 `/ar/solver` = 솔버 앱 ar UI 없음 → 솔버 문의는 사장님 판단 | 진행 중 |
+| **도구 레인 3** | 10-14 본체가 띄움 — 🅰 `Holdem-wrq-zhhant`(zh-hant 시뮬레이터) · 🅱 `Holdem-tour-frru`(fr·ru 대회 보드) · 🅲 `Holdem-ar-tools`(ar 계산기+차트 → 시뮬레이터). 정본·상태표 = `docs/tool-lanes-2026-10-14.md`. ✅ 🅰 머지·배포 `4a26acb9` MB-323 · ✅ 🅲 회차 1 `27d5bc7c` MB-324(▶ 회차 2 시뮬레이터 진행). ▶ 🅱·🅲 «머지해» 오면 §4 헤드 절차. 🪶 `/ar/solver` = 솔버 앱 ar UI 없음 → 솔버 문의는 사장님 판단 | 진행 중 |
 | **우편함** | ✅ MA-509·510 = queue §2-BT 회신+등재+이행 `e30fde28` MB-307 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 스트래들 «의무 베팅» 통지·vi glossary H2 «Cặp» = 판단 대상(§2-BT) | 판정 대기 |
 | **S2** | 승률 시뮬레이터 ✅ MA-518 판정(F-01·02·03·04·07·08 해소 · 새 문구 OK 17 · RISKY 2 = ko·ja sharedInvalid → `dcd6d020` 이행) · 🪶 잔여 = F-10 1판 2px · EN 퀴즈 설명 2자리(§2-BV ②③ · F-06 손질 때) · en·es·de 360 컨트롤 줄 1px · F-06·N-3 보류 · ✅ 공용 결함 3건(승·무·패 잘림·퍼센트 로케일) `ba808d72` MB-321 → ▶ 검수장 화면 기준 갱신 | 공용 회차 때 |
 | **MA-515** | ✅ KO holdem-probability 4자리 §2-BU `7c9da352` MB-308 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 통지 ③ 포지션 글 6맥스/9인 · ④ TDA Rule 20/21 = 판단 대상(§2-BU) | 판정 대기 |
@@ -37,7 +37,7 @@
 
 ## 사장님 몫 — GSC 수동 색인
 
-- `/ru/solver` · `/vi/calculator`·`/vi/hand-chart`·`/vi/solver` · vi 39(`/vi/glossary` + 글 38 · 목록 WORKLOG 10-10 (8)) · fr 38(`docs/fr-cluster-plan.md` §4-C ⑧) · tr 회차 1~5 + 보강 A~D(아카이브 `2026-10-09-5-…` tr 두 절 · Git Bash `--prefix /tr/`는 `MSYS_NO_PATHCONV=1`) · 도구 20(`/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/{hand-chart,glossary}`) · 시뮬레이터 랜딩 4(회차 C) + `/pt/win-rate-quiz`·`/fr/win-rate-quiz`·`/id/win-rate-quiz`·`/ms/win-rate-quiz`·`/vi/win-rate-quiz`·`/tr/win-rate-quiz`·`/hi/win-rate-quiz`·`/ru/win-rate-quiz`(L1) · `/ru/calculator` · `/zh-hant/win-rate-quiz`(10-14).
+- `/ru/solver` · `/vi/calculator`·`/vi/hand-chart`·`/vi/solver` · vi 39(`/vi/glossary` + 글 38 · 목록 WORKLOG 10-10 (8)) · fr 38(`docs/fr-cluster-plan.md` §4-C ⑧) · tr 회차 1~5 + 보강 A~D(아카이브 `2026-10-09-5-…` tr 두 절 · Git Bash `--prefix /tr/`는 `MSYS_NO_PATHCONV=1`) · 도구 20(`/{de,es,fr,hi,id,ja,ms,pt,zh,zh-hant}/{hand-chart,glossary}`) · 시뮬레이터 랜딩 4(회차 C) + `/pt/win-rate-quiz`·`/fr/win-rate-quiz`·`/id/win-rate-quiz`·`/ms/win-rate-quiz`·`/vi/win-rate-quiz`·`/tr/win-rate-quiz`·`/hi/win-rate-quiz`·`/ru/win-rate-quiz`(L1) · `/ru/calculator` · `/zh-hant/win-rate-quiz` · `/ar/calculator` · `/ar/hand-chart`(10-14).
 
 ## 자동 착수 금지 (🪶 판단 대상 — 링크만)
 

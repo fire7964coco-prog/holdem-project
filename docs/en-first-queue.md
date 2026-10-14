@@ -1195,6 +1195,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | BZ-4 | `app/zh-hant/solver/solver-client.tsx` PICK_TOOL 1~3행이 블로그 글로 감(zh는 10-12에 `/zh/hand-chart`·`/zh/calculator`로 옮김) | 🪶 zh-hant 솔버 랜딩 손볼 때 |
 | BZ-5 참고 | 390 헤더 페이지 라벨 말줄임(zh-hant 긴 HubPage title · glossary 동일) | 🪶 공용 헤더 회차 때 |
 
+### 2-CA. tool-lanes 🅲(ar 계산기·핸드차트) 헤드 요청 — 2026-10-14
+
+진행 파일 `docs/tool-lanes/ar-tools-진행.md` «헤드 요청».
+
+| # | 자리 | 처방 |
+|---|---|---|
+| CA-1 H-1 | 🔴 RTL에서 13×13 격자·카드 선택기 거울상(배포 차단) | ✅ `27d5bc7c` — 스크롤 상자에 RTL 로케일만 dir=ltr(격자 안쪽이 아니라 스크롤 상자: 390에서 A열이 화면 밖으로 시작하던 것까지) |
+| CA-2 H-2 | ar 입문 글 L450 `/en/hand-chart`·`/en/calculator` | ✅ `27d5bc7c` → `/ar/…` |
+| CA-3 H-4 | RTL bidi 잔여(경미): ① 범례 포지션명 truncate가 라틴 앞을 자름 ② EXAMPLES «+» 위치 ③ «(+21)» ④ 히어로 숫자 뒤 `ml-1` ⑤ H2 강조선 `border-l-4` | 🪶 공용 RTL 회차(ar 시뮬레이터 회차 2 뒤 묶음) — 논리 속성(`ms-`·`border-s`)·`<bdi>` · RTL 로케일만 |
+| CA-4 E-1 EN-먼저 | ① 계산기 FAQ «Pocket aces win about 82%» · quickRef ② «How often AA wins» = 표는 equity(승 81.71 · 무 0.46 · equity 81.95) ② guide 카드 «on the flop or turn» ③ 차트 FAQ 5 «3-bet 콜 레인지»에 A5s 블러프(4-bet 블러프 맥락) | 🪶 EN 계산기·차트 사전 손질 회차 — 전 로케일 동시 |
+| CA-5 H-3 | 제목 언어 순서(영어 머리어 먼저) | 선례(vi·hi·tr) 유지 · 전 로케일 일관 판단이라 🪶 GSC 관찰 뒤 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
