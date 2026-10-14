@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in (Türkçe masa dilinde rest) gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); iki ya da daha fazla büyük stack'in bunun üstüne koyduğu çipler yalnızca onların kazanabileceği bir yan pot oluşturur; tek bir oyuncunun fazlası ise ona iade edilir. No-limit ve pot-limit'te tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncu için bahsi YENİDEN açmaz — birkaç kısa all-in toplanıp o oyuncunun koyduğunun üstüne en az tam bir yükseltme etmedikçe.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-10-13",
-  masterUpdated: "2026-08-12",
+  updated: "2026-10-14",
+  masterUpdated: "2026-10-11",
   keepImagesInBody: true,
   readTime: "10 dk",
   emoji: "♠",
@@ -65,11 +65,11 @@ Masada en sık gördüğüm karışıklık şu: biri "rest" der, karşısındaki
 
 **1. Sözlü ilan** — "All-in" de, krupiye ve rakipler net duysun. En güvenli yöntem budur. Bir kez söyledin mi, artık bağlısın.
 
-**2. Tüm çipleri öne itmek** — Tüm stack'ini tek ve temiz bir hareketle merkeze doğru kaydır. Çipleri parça parça itmek string bet'e (parçalı bahis) benzeyebilir, o yüzden hepsini tek seferde hareket ettir.
+**2. Tüm çipleri öne itmek** — Tüm stack'ini tek ve temiz bir hareketle merkeze doğru kaydır. Çipleri parça parça itmek string bet'e (parçalı bahis) benzeyebilir, o yüzden hepsini tek seferde hareket ettir. ==r:Yalnızca itmek her zaman yetmez: önünde bir bahis varsa ve onu call etmek için bile bütün çiplerin gerekiyorsa, sessizce itmen all-in değil call sayılır (TDA 2024 Kural 45-A, WSOP Turnuva Kuralı 92).== Bunun dışındaki her durumda son çiplerini itmek **bir all-in bahsidir** (TDA 2024 Kural 45-B) — tek istisna, bir bahsin üstüne sessizce itilen tek bir büyük son çiptir; o yalnızca call sayılır (TDA 2024 Kural 44).
 
 ![Texas Hold'em all-in showdown — K♠ 10♣ 7♦ 4♥ 2♣ board'u ve çiplerin etiketli ana pot ile yan pota ayrılmış hali](/images/holdem-all-in-declare.webp)
 
-==r:Hiçbir şey demeden tek bir büyük çipi öne itip bunun all-in sayılmasını bekleme — önünde bir bahis varsa krupiye onu call sayar; bahis yoksa yalnızca o çipin değeri kadar bir bahis sayar.== Her zaman yüksek sesle "all-in" de ya da tüm stack'ini tek seferde ortaya sür.
+==r:Hiçbir şey demeden tek bir büyük çipi öne itip bunun all-in sayılmasını bekleme — önünde bir bahis varsa krupiye onu call sayar; bahis yoksa yalnızca o çipin değeri kadar bir bahis sayar.== Her zaman yüksek sesle "all-in" de — başka bir şey olarak yorumlanmayan tek yöntem budur.
 
 ---
 
@@ -137,7 +137,7 @@ Blind'lar $1/$2. Dört oyuncu flop'u görüyor.
 A Oyuncusuna ve henüz aksiyon almamış C Oyuncusuna ne olur?
 
 - A Oyuncusu zaten aksiyon aldı ($10 bahis yaptı) ve şimdi eksik bir yükseltmeyle karşılaşıyor. B'nin $14'lük all-in'i **tam bir yükseltmeden az** olduğu için aksiyon A Oyuncusu için yeniden açılmaz. ==A sadece görebilir veya pas geçebilir — yeniden yükseltemez.==
-- C Oyuncusu henüz aksiyon almadı — **C Oyuncusu normal şekilde yükseltebilir.**
+- C Oyuncusu henüz aksiyon almadı — **C Oyuncusu yine de yükseltebilir**. Yeniden açma sınırı henüz aksiyon almamış oyuncuya hiç dokunmaz. Ama boyuta dikkat: C yükseltirse minimum, B'nin all-in'i artı son tam bahis kadar bir **toplamdır** — $14 + $10 = **$24**; A'nın üstüne tam yükseltme olacak $20 değil (WSOP Live Action Kural 176). C bundan azına yine de all-in gidebilir: minimum, all-in giden oyuncuyu bağlamaz (Live Action Kural 175).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -219,7 +219,7 @@ Kazanamaz. All-in oyuncu, katkıda bulunduğu ana pot ve yan potlarda hak sahibi
 
 ### Hata 2: Kimin yeniden yükseltebileceği kuralını bilmemek
 
-No-limit ve pot-limit'te kısmi bir all-in, o turda **zaten bet, call ya da raise yapmış** oyunculara yeniden yükseltme şansı vermez — birkaç kısa all-in toplanıp o oyuncunun son aksiyonundan bu yana en az tam bir yükseltmeye ulaşmadıkça. Henüz aksiyon almamış olan normal şekilde yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
+No-limit ve pot-limit'te kısmi bir all-in, o turda **zaten bet, call ya da raise yapmış** oyunculara yeniden yükseltme şansı vermez — birkaç kısa all-in toplanıp o oyuncunun son aksiyonundan bu yana en az tam bir yükseltmeye ulaşmadıkça. Henüz aksiyon almamış olan, yukarıda gösterilen minimum toplamla yükseltebilir. Bunu ezbere bilmek, tartışmaları daha başlamadan bitirir.
 
 ### Hata 3: El ortasında cepten çip eklemek
 
@@ -227,7 +227,7 @@ Table stakes. Masada olan, bahis yapabileceğin her şeydir. $80 için all-in'se
 
 ### Hata 4: Elini çok erken atmak
 
-Ana pot için all-in'sin. Diğer iki oyuncu yan pot için kapışıyor. Kartlarını atma — elin ana pot için hâlâ canlı. ==Kartlarına dokunmadan önce her zaman krupiyenin tüm potları çözmesini bekle.==
+Ana pot için all-in'sin. Diğer iki oyuncu yan pot için kapışıyor. Turnuvada bu kendiliğinden çözülür — onların bahsi bittiğinde ==TDA 2024 Kural 16== seninki dahil bütün elleri açtırır. Cash oyununda öyle değil: bir keresinde kısa stack'li bir oyuncunun, yan pot showdown'u aleyhine döner dönmez kartlarını attığını gördüm — o pota hiç dahil olmadığını, ana potu hâlâ kazanabileceğini unutmuştu. Krupiye kartları muck'a süpürdüğünde artık ayırt edilemiyorlardı — el ölü sayıldı ve ana pot öbür tarafa gitti. (Hâlâ açıkça ayırt edilebilen bir el, floor'un takdiriyle geri alınabilir; ama buna asla güvenme.) Kartlarını atma — elin ana pot için hâlâ canlı. ==Kartlarına dokunmadan önce her zaman krupiyenin tüm potları çözmesini bekle.==
 
 ### Hata 5: Sinirinden all-in gitmek
 
@@ -244,7 +244,7 @@ All-in, masadaki en güçlü hamledir. Rakipleri ya hep ya hiç kararına zorlar
 
 **Q. Pokerde rest çekmek ne demek?**
 
-A. Sıra sana geldiğinde bütün çiplerini tek hamlede ortaya koymak, yani all-in gitmektir. Yüksek sesle "rest" ya da "all-in" demen veya stack'ini tek seferde öne itmen yeterlidir; krupiyenin "rest"i bildiğinden emin değilsen "all-in" de. Söyledikten sonra geri alamazsın. Sözcüğün sözlük anlamı ve deyimle bağı için yukarıdaki «All-in (rest) nedir?» bölümüne bak.
+A. Sıra sana geldiğinde bütün çiplerini tek hamlede ortaya koymak, yani all-in gitmektir. Yüksek sesle "rest" ya da "all-in" demen yeterlidir; krupiyenin "rest"i bildiğinden emin değilsen "all-in" de. Stack'ini sessizce öne itmek her zaman all-in sayılmaz: önündeki bahsi call etmek için bile bütün çiplerin gerekiyorsa ya da bir bahsin üstüne tek bir büyük son çipi sessizce itiyorsan bu yalnızca call'dur (TDA 2024 Kural 45-A ve 44; WSOP Turnuva Kuralı 92). Söyledikten sonra geri alamazsın. Sözcüğün sözlük anlamı ve deyimle bağı için yukarıdaki «All-in (rest) nedir?» bölümüne bak.
 
 **Q. Reste rest ne demek?**
 
@@ -260,7 +260,7 @@ A. Seni gören rakip daha iyi elle kazanırsa ortaya koyduğun çipleri kaybeder
 
 **Q. Big blind'dan az bir miktara all-in gidilebilir mi?**
 
-A. Evet. Ödemen gereken blind tüm stack'inden büyükse kalan çiplerini koyar ve onunla all-in olursun (WSOP Live Action Kural 154). Diğerleri yine tam big blind'ı öder — senin koyduğunu aşan miktar aralarında bir yan pot oluşturur ya da fazlalığı tek bir oyuncu koyduysa karşılanmamış bahis olarak ona geri döner.
+A. Evet. Ödemen gereken blind tüm stack'inden büyükse kalan çiplerini koyar ve onunla all-in olursun (WSOP Live Action Kural 154). Diğerleri yine tam big blind'ı call eder — senin koyduğunu aşan miktar aralarında bir yan pot oluşturur ya da fazlalığı tek bir oyuncu koyduysa karşılanmamış bahis olarak ona geri döner.
 
 **Q. All-in'i kazanıp yan potu kaybedersen ne olur?**
 
@@ -276,7 +276,7 @@ A. Kalan ortak kartları iki kez dağıtıp potu bölmek (run it twice), biri al
 
 **Q. "Table stakes" kuralı tam olarak nedir?**
 
-A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapabileceğin anlamına gelir. El oynanırken para ekleyemezsin. Bu iki tarafı da korur: sen asla stack'inden fazlasını riske atmaya zorlanamazsın, rakip de karşılayabileceğinden fazlasını bir anda bahis yapamaz.
+A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapabileceğin anlamına gelir. El oynanırken para ekleyemezsin. Bu iki tarafı da korur: sen asla stack'inden fazlasını riske atmaya zorlanamazsın, rakibin senin stack'inin üstüne koyduğu her şey de sana hiçbir şeye mal olmaz: ya bir yan pota gider ya da karşılanmamış bahis olarak ona geri döner.
 
 **Q. İki oyuncu farklı miktarlarda all-in giderse önce kim gösterir?**
 
@@ -284,7 +284,7 @@ A. Bet ya da raise olan son all-in, son agresif aksiyondur ve önce o gösterir.
 
 **Q. All-in kuralları turnuvalarda ve cash oyunlarında farklı mı?**
 
-A. Turnuvada bir oyuncu all-in olduğunda ve bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı ve WSOP 2026 B149 gibi salona özgü sıralar geçerlidir; muck imkânı da ev kuralına bağlıdır. Run it twice anlaşmayla birçok cash oyununda yaygındır, ancak turnuvada genellikle izin verilmez.
+A. Turnuvada bir oyuncu all-in olduğunda ve bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı ve WSOP 2026 B149 gibi salona özgü sıralar geçerlidir; muck imkânı da ev kuralına bağlıdır. Run it twice, potta kalan herkes kabul ederse birçok cash oyununda yaygındır, ancak turnuvada genellikle izin verilmez.
 
 ---
 
