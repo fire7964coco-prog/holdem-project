@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-14",
   updated: "2026-10-14",
-  masterUpdated: "2026-10-13",
+  masterUpdated: "2026-10-14",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -39,7 +39,7 @@ check? call? raise? मुझे हैंड रैंकिंग तो आ�
 5 | betting actions: check, bet, call, raise, fold
 1 BB | No-Limit Hold'em में minimum opening bet
 = last full raise | minimum re-raise का आकार (increment नियम)
-No cap | No-Limit में re-raise पर — जब तक कोई all-in न हो, raise कर सकते हैं
+No cap | No-Limit में re-raise पर — raise तब तक चल सकती है जब तक हाथ में बचे खिलाड़ियों में से एक को छोड़कर बाक़ी सब all-in न हो जाएँ
 :::
 
 ## टेक्सस होल्डम की 5 betting actions कौन-सी हैं?
@@ -139,7 +139,7 @@ raise के साथ आने वाले दो live पोकर निय
 
 ## पोकर में कितनी बार raise कर सकते हैं?
 
-**No-Limit Hold'em में: कोई cap नहीं**। आप raise कर सकते हैं, आप पर re-raise हो सकती है, और आप फिर raise कर सकते हैं ("re-raise", "raise a raise" — एक ही बात) जब तक किसी के chips ख़त्म न हो जाएँ। raise → 3-bet → 4-bet → 5-bet → all-in एक legal, भले ही डरावना, क्रम है।
+**No-Limit Hold'em में: कोई cap नहीं**। आप raise कर सकते हैं, आप पर re-raise हो सकती है, और आप फिर raise कर सकते हैं ("re-raise", "raise a raise" — एक ही बात) जब तक हाथ में बचे खिलाड़ियों में से एक को छोड़कर बाक़ी सबके chips ख़त्म न हो जाएँ। raise → 3-bet → 4-bet → 5-bet → all-in एक legal, भले ही डरावना, क्रम है।
 
 फिर भी दो सीमाएँ लागू रहती हैं:
 
@@ -212,7 +212,7 @@ A. नहीं। अगर आप bet करें और विरोधी �
 
 **Q. टेक्सस होल्डम में कितनी बार raise कर सकते हैं?**
 
-A. No-Limit में raise की संख्या पर कोई cap नहीं — जब तक हर raise minimum increment पर खरी उतरे (all-in इससे कम भी हो सकता है), re-raise तब तक चल सकती है जब तक कोई खिलाड़ी all-in न हो। Fixed-Limit में WSOP के टूर्नामेंट नियम राउंड का cap एक bet और चार raise पर रखते हैं (नियम 100.b), और हैंड में दो खिलाड़ी बचने पर भी वह cap लागू रहता है — यह तभी हटता है जब पूरा टूर्नामेंट heads-up हो जाए।
+A. No-Limit में raise की संख्या पर कोई cap नहीं — जब तक हर raise minimum increment पर खरी उतरे (all-in इससे कम भी हो सकता है), re-raise तब तक चल सकती है जब तक हाथ में बचे खिलाड़ियों में से एक को छोड़कर बाक़ी सब all-in न हो जाएँ। Fixed-Limit में WSOP के टूर्नामेंट नियम राउंड का cap एक bet और चार raise पर रखते हैं (नियम 100.b), और हैंड में दो खिलाड़ी बचने पर भी वह cap लागू रहता है — यह तभी हटता है जब पूरा टूर्नामेंट heads-up हो जाए।
 
 **Q. क्या out of turn fold कर सकते हैं?**
 

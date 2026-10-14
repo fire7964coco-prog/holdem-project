@@ -1,3 +1,9 @@
+## 2026-10-14 (12) — ar 워크트리 정리 · 우편함 MA-547 회신 MB-332
+
+- ar 워크트리 5 해제(정션 링크만 제거 · ar-rules 고아 `next dev` 3107 종료 · 브랜치 보존). 빈 폴더 `../Holdem-ar-{prob,rank,rules,strat}` = 14:29 기동 claude.exe 4개가 잡고 있어 남김.
+- MA-547 요청 6 이행: hi beginners 돈 절 → 연습 칩 답(표 $ → chip 단위) · hi game-order «stakes» 불릿 · «rarely» 복원(hi·tr) · EN-먼저 betting «until all but one player still in is all-in» 3자리 + game-order Call 괄호 미레이즈 한정 → hi·tr 전파 · tr straddle «zorunlu bahis» 정정. 등재 = queue §2-CE(나머지 로케일 전파 CE-6 🪶).
+- S-095(솔버 ar 용어 1차본 · 요청 0) = 수신만 · ar D1~D8 대조는 다음 회차.
+
 ## 2026-10-14 (11) — ar 클러스터 15편: 4레인 헤드 머지 → 배포 `f37fc287` · MB-331
 
 - `ar-integration`(`Holdem-ar-head` · main `19a061b4` 분기) ← 🅱 rank `33fad8b1` · 🅳 strat `fcbbd8bb` · 🅰 rules `baeb6ad2` · 🅲 prob `8d7b816b` 전부 충돌 0. 판정·게이트 전문 = `docs/ar-cluster-plan.md` §4-A 머지 기록·배포 회차 기록.

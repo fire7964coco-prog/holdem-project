@@ -1252,6 +1252,20 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CD-5 (ar-rank 레인 C · 10-14) | 블로그 렌더러: 아랍어 문단 안 라틴 카드열 «A♣ A♥ 7♦ 5♣ 2♠»가 무늬 앞붙음으로 보이고, 하이픈 묶음 «A-A-K مقابل A-A-Q»가 줄 끝에서 «A-A-» / «Q»로 쪼개짐(표·:::hand·:::tiebreak 안은 정상 · 캡처 `Holdem-ar-rank/tmp/screen/ar-rank-C2/390/seg-14.png`) · 라이브 ar 8편도 같은 영향 추정 · ➕ ar-strat 레인 C: 수식 «0.33 ÷ 1.33 = 24.8%»(strategy 블러프 표 · c-bet L180 · «1.5 ÷ 5.5 = 27%»)가 «24.8% = 1.33 ÷ 0.33»으로 보임(사실오류 아님 · 캡처 `Holdem-ar-strat/tmp/screen/strat-bluff-390.png`) · ➕ ar-rules 레인 C: 390 표 칸에서 카드 줄이 접히면 무늬가 반대편에 붙음(texas 7장 예시 «A♠ K♠» → «A♠ / ♠K» · «8♠ 8♦» → «♦8 ♠8») — 표 셀 카드 토큰도 격리 대상 | ▶ CD-2와 같은 **공용 RTL 회차** — `lib/render-markdown.ts`가 RTL 로케일에서만 카드 토큰·카드열·`==수식==`·표 셀 수식을 `<bdi dir="ltr">`(isolate)로 감싸기 · 수식도 같은 정책(헤드 10-14 판정 — 4레인 글은 손대지 않는다) · 글 본문 제어문자 삽입 금지(ar 계획 §5) · 비-RTL 산출 바이트 동일 게이트 |
 | 통지 | 🪶 zh-hant L256 «看不到底牌»→«對手底牌» · «前注»→정본 «底注» · EN-먼저 2(hand-chart «GTO» 호칭 · EN featureList «pairs/suited/offsuit 색» 실제는 포지션 색) · 보드 «as of» 강화형 6로케일 | 🪶 판단 대상 — 자동 착수 금지 |
 
+### 2-CE. 우편함 수신분 — MA-547(MB-328 판정 · hi·tr R1 rules-a · WRONG 0 · hi RISKY 9 · tr RISKY 8 · 요청 6 · 통지 묶음) · 등재 2026-10-14
+
+근거 `홀덤검수/reports/검수-hi-r1-rules-a-2026-10-14/hq-reverify/HQ-REPORT.md` §6 · `검수-tr-r1-rules-a-2026-10-14/hq-reverify/HQ-REPORT.md` §6.
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CE-1 hi ① | beginners 돈 절(L181 · 표 3행 · L193 꼬리 · FAQ L412) + game-order «सबसे छोटे stakes» 불릿 = 리얼머니 권유 · 관할 한정 없음(H1) | ✅ vi 선례대로 연습 칩 답 — «पैसे की ज़रूरत नहीं» · 표 $ → chip 단위(100~250BB 비율 보존) · «धीरे-धीरे ऊपर बढ़ें» 삭제 · 불릿 = «बिना नक़द क़ीमत वाले chips» |
+| CE-2 hi ② · tr ⑥ | game-order 리버 블러프 «rarely» 탈락(hi «नहीं कहता» · tr «anlatmaz») | ✅ «शायद ही कभी … कहता है» · «nadiren … anlatır» |
+| CE-3 EN-먼저 ③ | betting «until someone is all-in»(표 L41 · FAQ L213) + 본문 L141 «until someone runs out of chips» — 멀티웨이 full raise all-in 뒤 재레이즈 가능(같은 글 FAQ L225)과 모순 | ✅ EN «until all but one player still in is all-in» 3자리 → hi·tr 3자리씩 전파 |
+| CE-4 EN-먼저 ④ | game-order Call 괄호 «(preflop, that's the big blind)» 미레이즈 한정 없음 | ✅ EN «(preflop, if nobody has raised yet, …)» → hi·tr 전파 |
+| CE-5 tr ⑤ | game-order L263 straddle을 «zorunlu bahis»로 규정(B 165 «optional») | ✅ «kendi koyduğun/koyduğu bahis» · «koyduğu straddle» (EN «post» 중립 대응) |
+| CE-6 전파 잔여 | CE-3·CE-4 EN 문면 = 나머지 로케일(ar bn de es fa fil fr he id it ja ms pl pt ro ru sw th uk vi zh zh-hant) 미전파 · masterUpdated 10-13 그대로 | 🪶 다음 rules 로케일 회차 때(같은 문장 사본을 로케일마다 grep -c로 먼저 센다) |
+| 통지 | EN-먼저 라벨 아님: hi = BB 콜 최저가 스트래들 반례 · FAQ 전원 올인 예외 · WSOP 리밋 캡 헤즈업 · Pot-Limit «현재 팟» · dead button ↔ «두 강제 베팅» 외 · tr = HQ-REPORT §6 6건(버튼 스트래들 룸별 · betting alt «$10» 블라인드 전제 · «Herkes pas geçer» · Limit 캡 헤즈업 · 순서표 헤즈업 · game-order 줄끝 혼합) | 🪶 판단 대상 · 본체 «남김» CC-5·6·7은 검수장이 이번 이행 MB 때 재판정 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

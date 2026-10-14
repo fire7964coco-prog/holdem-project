@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-10",
   updated: "2026-10-14",
-  masterUpdated: "2026-10-13",
+  masterUpdated: "2026-10-14",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "🎬",
@@ -61,7 +61,7 @@ Blind sadece bir giriş ücreti değildir — ==pozisyonun ve stratejinin başla
 Sıra sana gelince şunlardan birini seçersin:
 
 - **Fold (pas)** — eli bırak ve kartları at (muck). Daha fazla kaybetmezsin ama potu da kazanamazsın.
-- **Call (gör)** — mevcut bahse eşitle (preflop'ta bu big blind kadardır).
+- **Call (gör)** — mevcut bahse eşitle (preflop'ta henüz kimse yükseltmediyse bu big blind kadardır).
 - **Raise (yükselt)** — rakibe baskı yapmak için big blind'dan fazla bahis yap.
 - **3-bet (yeniden yükselt)** — başkasının yükseltişinin üzerine bir yükseltme daha. Güçlü el sinyali.
 
@@ -114,7 +114,7 @@ River'da klasik yeni oyuncu hataları:
 
 - **Zayıf elle sonuna kadar görmek (call)** — "buraya kadar geldim ya" tuzağı.
 - **Güçlü elle pasif check demek** — rakibe bedava showdown vermek.
-- **Aniden river'da blöf yapmak** — önceki tüm sokaklarda pasif kaldıysan, buradaki büyük bahis inandırıcı bir hikâye anlatmaz.
+- **Aniden river'da blöf yapmak** — önceki tüm sokaklarda pasif kaldıysan, buradaki büyük bahis nadiren inandırıcı bir hikâye anlatır.
 
 River, tüm eli kapattığın yerdir. Elinin gücünü, rakibin bahis düzenini ve tüm board'u tartıp son kararını ver.
 
@@ -260,7 +260,7 @@ Ders: ==r:river A'nın elini iki çift yaptığında bu kazanan bir el *gibi his
 
 </div>
 
-==r:**Önemli:** preflop'ta check diyemezsin — kendi zorunlu bahsin zaten canlı bahis değilse.== Big blind canlı bir bahistir; bu yüzden kendi zorunlu bahsi o canlı bahis olmayan her pozisyon call, raise ya da fold demek zorundadır. ==Kimse yükseltmediyse ve straddle koymadıysa big blind check diyebilir — canlı straddle'ı yükseltilmemiş ve üstüne yeniden straddle konmamış oyuncu da öyle, çünkü o zorunlu bahis onun açılış bahsidir ve preflop'ta en son o konuşur (WSOP Live Action Kural 159 · 165); diğer herkes için check flop'ta başlar.==
+==r:**Önemli:** preflop'ta check diyemezsin — kendi koyduğun bahis zaten canlı bahis değilse.== Big blind canlı bir bahistir; bu yüzden kendi koyduğu bahis o canlı bahis olmayan her pozisyon call, raise ya da fold demek zorundadır. ==Kimse yükseltmediyse ve straddle koymadıysa big blind check diyebilir — canlı straddle'ı yükseltilmemiş ve üstüne yeniden straddle konmamış oyuncu da öyle, çünkü koyduğu straddle onun açılış bahsidir ve preflop'ta en son o konuşur (WSOP Live Action Kural 159 · 165); diğer herkes için check flop'ta başlar.==
 
 Her hamleyi ne zaman kullanacağına dair daha derin bir karar rehberi — check-call-raise-fold karar tablosuyla — için [bahis hamleleri açıklaması](/tr/blog/holdem-betting-actions) yazısına bak.
 

@@ -8,8 +8,9 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **ar 글 클러스터** | ✅ **15편 배포** `f37fc287`(10-14 (11) · 4레인 헤드 머지 · MB-331 = 검수장 ar 15편 판정 요청 · 기록 = `docs/ar-cluster-plan.md` §4-A) → ▶ 검수장 판정 대기 · ▶ 마감 남은 것: 레인 워크트리 4 + `Holdem-ar-head` 정리(§4-A ⑧ · node_modules 정션은 rmdir로 링크만 · head의 `.env.local` 같이 삭제) · 🪶 RTL 표시 결함 = queue §2-CD CD-5(CD-2와 공용 RTL 회차) · GTO 4 · `/ar/glossary` 도구 · `/ar/solver` = 보류 | 판정 대기 |
+| **ar 글 클러스터** | ✅ **15편 배포** `f37fc287`(10-14 (11) · 4레인 헤드 머지 · MB-331 = 검수장 ar 15편 판정 요청 · 기록 = `docs/ar-cluster-plan.md` §4-A) → ▶ 검수장 판정 대기 · ✅ 워크트리 5 해제(10-14 (12) · 정션 링크만 제거 · head 폴더 삭제 · ar-rules 고아 `next dev` 종료 · 브랜치 `harden-ar-*`·`ar-integration` 보존) · ▶ 빈 폴더 `../Holdem-ar-{prob,rank,rules,strat}` 4 = 14:29 기동 claude.exe 4개가 잡고 있음 → 그 창 종료 뒤 rmdir · 🪶 RTL 표시 결함 = queue §2-CD CD-5(CD-2와 공용 RTL 회차) · GTO 4 · `/ar/glossary` 도구 · `/ar/solver` = 보류 | 판정 대기 |
 | **MA-542** | ✅ hi·tr 7편 EN 재동기화 MB-328 → ▶ 검수장 바뀐 행 재판정 · 잔여 queue §2-CC CC-5~8 | 판정 대기 |
+| **MA-547** | ✅ 요청 6 이행 MB-332(hi H1 연습 칩 · rarely 복원 · EN-먼저 betting all-in·Call 괄호 → hi·tr · tr straddle) → ▶ 검수장 변경 줄 재판정 · 잔여 = queue §2-CE CE-6(22로케일 전파 🪶) · ▶ S-095(솔버 ar 용어 · 요청 0) ar 15편 D1~D8 대조 = 다음 | 판정 대기 |
 | **MA-544** | ✅ 회신 MB-330(요청 1·3·4 이행 · MA-541 ACK) → ▶ 검수장 변경 줄 재판정 대기 · ▶ 요청 2 ar 계산기 bidi 16 = queue §2-CD CD-2 → **공용 RTL 회차**(CA-3·CA-7과 묶음 · 팟오즈 9행 먼저 · EN SSR 바이트 동일 게이트) | 판정 대기 |
 | **도구 레인 3** | 10-14 본체가 띄움 — 🅰 `Holdem-wrq-zhhant`(zh-hant 시뮬레이터) · 🅱 `Holdem-tour-frru`(fr·ru 대회 보드) · 🅲 `Holdem-ar-tools`(ar 계산기+차트 → 시뮬레이터). 정본·상태표 = `docs/tool-lanes-2026-10-14.md`. ✅ 🅰 머지·배포 `4a26acb9` MB-323 · ✅ 🅱 `de6ad93a` MB-325 · ✅ 🅲 회차 1 `27d5bc7c` MB-324 · 회차 2 `f7cbe89b` MB-327 — 레인 전부 종료 · 워크트리 해제·브랜치 삭제 완료 · 빈 폴더 3개 삭제됨(10-14 (9)). ▶ 🅱·🅲 «머지해» 오면 §4 헤드 절차. 🪶 `/ar/solver` = 솔버 앱 ar UI 없음 → 솔버 문의는 사장님 판단 | 진행 중 |
 | **우편함** | ✅ MA-509·510 = queue §2-BT 회신+등재+이행 `e30fde28` MB-307 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 스트래들 «의무 베팅» 통지·vi glossary H2 «Cặp» = 판단 대상(§2-BT) | 판정 대기 |
@@ -66,7 +67,7 @@
 - GA·GSC: 처방 종결 · 관측 = `docs/update-calendar.md`(⑧ 모바일 홈·족보 흡수 10/14 → 10/21). 우선순위 = 언어별 번역 · 신규 포스팅(09-24).
 - 장기 미결: J-2 cooler §2-J · TDA 판본 부채 · §2-K 11건 · 확률 잔여 `docs/harden-brief/probability-closeout.md` §7-D · re-entry zh 용어 · L-2 `l2-en-open-rows-2026-09-26.md` 🪶.
 - 검수장 PT 재판정: MB-112 · MA-229 잔여 · MB-138·152·153 → 오면 상위 모델 판정.
-- 워크트리: 10-14 (9) 기준 main + `Holdem-ar-{rules,rank,prob,strat}` 4(`git worktree list` · `.claude/worktrees/agent-*` 4는 서브 잔여 — 미커밋 확인 후 정리 후보).
+- 워크트리: 10-14 (12) 기준 main만(`git worktree list` · `.claude/worktrees/agent-*` 4는 서브 잔여 — 미커밋 확인 후 정리 후보).
 
 ## 참고 경계
 

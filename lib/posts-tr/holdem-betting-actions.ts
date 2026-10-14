@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-14",
   updated: "2026-10-14",
-  masterUpdated: "2026-10-13",
+  masterUpdated: "2026-10-14",
   keepImagesInBody: true,
   readTime: "9 dk",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Texas Hold'em'de yalnızca ==5 bahis hareketi== var, ama etraflarındaki kuralla
 5 | bahis hareketi: check, bet, call, raise, fold
 1 BB | No-Limit Hold'em'de minimum açılış bahsi
 = son tam raise | minimum re-raise büyüklüğü (artış kuralı)
-Sınır yok | No-Limit'te re-raise'e — biri all-in olana kadar yükseltebilirsin
+Sınır yok | No-Limit'te re-raise'e — eldeki oyunculardan biri hariç hepsi all-in olana kadar yükseltme sürebilir
 :::
 
 ## Texas Hold'em'de 5 bahis hareketi nedir?
@@ -165,7 +165,7 @@ Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
 ## Pokerde kaç kez raise yapabilirsin?
 
-**No-Limit Hold'em'de: sınır yok.** Yükseltir, sana re-raise gelir, tekrar yükseltirsin ("re-raise", "raise'i raise'lemek" — aynı şey) ta ki birinin çipi bitene kadar. Raise → 3-bet → 4-bet → 5-bet → all-in yasal, gerçi ürkütücü bir dizidir.
+**No-Limit Hold'em'de: sınır yok.** Yükseltir, sana re-raise gelir, tekrar yükseltirsin ("re-raise", "raise'i raise'lemek" — aynı şey) ta ki eldeki oyunculardan biri hariç hepsinin çipi bitene kadar. Raise → 3-bet → 4-bet → 5-bet → all-in yasal, gerçi ürkütücü bir dizidir.
 
 Yine de iki sınır geçerli:
 
@@ -237,7 +237,7 @@ A. Hayır. Sen bahis koyarsın ve rakipler sadece call yaparsa fazladan ekleyeme
 
 **Q. Texas Hold'em'de kaç kez raise yapabilirsin?**
 
-A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece (all-in daha az olabilir), bir oyuncu all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda WSOP turnuva kuralları turu bir bahis artı dört yükseltmeyle sınırlar (Kural 100.b) ve elde iki oyuncu kalsa bile bu sınır durur — yalnızca turnuvanın tamamı heads-up'a düştüğünde kalkar.
+A. No-Limit'te yükseltme sayısına sınır yok — her raise minimum artışı karşıladığı sürece (all-in daha az olabilir), eldeki oyunculardan biri hariç hepsi all-in olana kadar re-raise sürebilir. Fixed-Limit oyunlarda WSOP turnuva kuralları turu bir bahis artı dört yükseltmeyle sınırlar (Kural 100.b) ve elde iki oyuncu kalsa bile bu sınır durur — yalnızca turnuvanın tamamı heads-up'a düştüğünde kalkar.
 
 **Q. Sıran gelmeden fold yapabilir misin?**
 

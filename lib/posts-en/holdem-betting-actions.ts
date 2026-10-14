@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the last full bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-14",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Texas Hold'em has only ==5 betting actions==, but the rules around them (when ch
 5 | betting actions: check, bet, call, raise, fold
 1 BB | minimum opening bet in No-Limit Hold'em
 = last full raise | minimum re-raise size (the increment rule)
-No cap | on re-raises in No-Limit — you can raise until someone is all-in
+No cap | on re-raises in No-Limit — raising can go on until all but one player still in is all-in
 :::
 
 ## What Are the 5 Betting Actions in Texas Hold'em?
@@ -138,7 +138,7 @@ How *much* you should raise (2.5x opens, 3x 3-bets, sizing by board texture) is 
 
 ## How Many Times Can You Raise in Poker?
 
-In **No-Limit Hold'em: there is no cap**. You can raise, get re-raised, and raise again ("re-raise", "raise a raise" — same thing) until someone runs out of chips. Raise → 3-bet → 4-bet → 5-bet → all-in is a legal, if terrifying, sequence.
+In **No-Limit Hold'em: there is no cap**. You can raise, get re-raised, and raise again ("re-raise", "raise a raise" — same thing) until all but one player still in has run out of chips. Raise → 3-bet → 4-bet → 5-bet → all-in is a legal, if terrifying, sequence.
 
 Two boundaries still apply:
 
@@ -210,7 +210,7 @@ A. No. If you bet and opponents only call, you cannot add more — the betting r
 
 **Q. How many times can you raise in Texas Hold'em?**
 
-A. In No-Limit there is no cap on the number of raises — re-raising can continue until a player is all-in, as long as each raise meets the minimum increment (an all-in may be for less). The WSOP tournament rules cap a Fixed-Limit round at one bet plus four raises (Rule 100.b), and that cap holds even when the hand is down to two players — it lifts only once the whole tournament is heads-up.
+A. In No-Limit there is no cap on the number of raises — re-raising can continue until all but one player still in is all-in, as long as each raise meets the minimum increment (an all-in may be for less). The WSOP tournament rules cap a Fixed-Limit round at one bet plus four raises (Rule 100.b), and that cap holds even when the hand is down to two players — it lifts only once the whole tournament is heads-up.
 
 **Q. Can you fold out of turn?**
 
