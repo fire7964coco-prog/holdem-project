@@ -26,7 +26,7 @@ export function useDocumentLang({ lang, dir }: { lang: string; dir: "rtl" | "ltr
 
 export function AuthPanel({ title, description, backHref, backLabel, children }: {
   title: string;
-  description: string;
+  description?: string;
   backHref: string;
   backLabel: string;
   children: ReactNode;
@@ -38,7 +38,7 @@ export function AuthPanel({ title, description, backHref, backLabel, children }:
         <div className="mb-6">
           <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-foreground text-sm font-black" style={{ color: "rgb(var(--gold-dark-rgb))" }} aria-hidden="true">HM</span>
           <h1 id="auth-title" className="text-2xl font-bold text-foreground">{title}</h1>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
+          {description && <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>}
         </div>
         {children}
       </section>

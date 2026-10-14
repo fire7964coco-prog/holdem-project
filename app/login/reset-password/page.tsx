@@ -60,7 +60,7 @@ function ResetPasswordForm() {
     }
   }
 
-  return <AuthPanel title={done ? t.resetTitleDone : t.resetTitle} description={done ? t.resetDescDone : t.resetDesc} backHref={next} backLabel={t.back}>
+  return <AuthPanel title={done ? t.resetTitleDone : t.resetTitle} description={done ? t.resetDescDone : sessionState === "expired" ? undefined : t.resetDesc} backHref={next} backLabel={t.back}>
     {sessionState === "checking" ? <p role="status" className="text-sm text-muted-foreground">{t.resetChecking}</p>
       : done ? <div className="space-y-4">
         <p role="status" className="text-sm leading-relaxed">{t.resetDoneMsg}</p>

@@ -1,3 +1,7 @@
+## 2026-10-14 (1) — MA-538 로그인 문구 이행 · MB-322 · queue §2-BY
+
+- 사장님 «우편함 작업 진행». MA-538(MB-318·319·320 판정 · 요청 1 · 통지 4) 회신+등재+이행. 비-KO 15 `errSocial` «이메일로» 절 삭제 · 비-KO 15 `resetDoneMsg` → «변경됨 · 로그인된 상태»(재설정 화면은 복구 세션 위에서만 열림 · `updateUser`는 세션 유지 → 사실) · zh·zh-hant `resetRequestAgain` «申请/申請» · 만료 화면 `resetDesc` 생략(`AuthPanel.description` 선택값 · KO 포함) · `authHtmlAttrs` = `HTML_LANG`(pt → pt-BR). KO 사전 문구 불변. 🪶 비-KO 기존 이메일 회원의 다음 로그인 진입점 = 사장님 판단(§2-BY BY-2′).
+
 ## 2026-10-13 (25) — 승률 시뮬레이터 공용 결함 3건 `ba808d72` · MB-321
 
 - 사장님 «시뮬레이터 공용 결함 3건만». 원인 = `app/win-rate-quiz/_simulator.tsx` WinTieLose 한 덩어리 `whitespace-nowrap`(min-w-0 칸에서 넘쳐 잘림) · 퍼센트 전부 `toFixed()%` 고정. 처방: 승·무·패를 항목 단위 nowrap + flex-wrap(구분점은 앞 항목 끝) · QuizUI `decimalComma`·`percentPrefix`·`percentGap` 추가 → `pct()`·`dnum()`로 공용 UI 퍼센트 전부(배지·차트·표·팟오즈 포함) · de·fr·pt·id·vi·tr·ru 사전에 키 · pt 문자열 소수 `dec()`. 전후 실측(라이브 vs 로컬 dev): tr 1440 «Kaybe…»·ru 360 «Проигрыш 79…» 잘림 → 둘째 줄로 · fr «19,5 %» · tr «%16,4». 비교 그림 `tmp/screen/wtl-compare-*.png`(비추적). 빌드 성공(재빌드는 dev 서버 PID 45632·41792 종료 뒤). 
