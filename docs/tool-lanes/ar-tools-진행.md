@@ -1,6 +1,6 @@
 # 🅲 ar 도구 레인 진행 (`lane-ar-tools`)
 
-> 정본 = `docs/tool-lanes-2026-10-14.md` · 브리프 = `docs/tool-lanes/ar-tools-r1-brief.md`.
+> 정본 = `docs/tool-lanes-2026-10-14.md` · 브리프 = 회차 1 `docs/tool-lanes/ar-tools-r1-brief.md` · 회차 2 `docs/tool-lanes/ar-tools-r2-brief.md`.
 
 ## 실행 기록
 
@@ -9,6 +9,9 @@
 | 회차 1 A | 10:46 | 12:16 (14:45 절대 정지) | Opus 5.5 본체 · DataForSEO 6호출 · 아스트라 codex(gpt-6-astra · read-only · 스크래치) · Fable 서브 1회(카피) | codex PID 26012(node 46160) — 10:55 exit=0 자연 종료 확인 · 스크래치 `astra-ar-tools-A` | ✅ 10:58 끝 |
 | 회차 1 B | 11:01 | 12:31 (14:45 절대 정지) | Opus 5.5 본체만(서브·외부 모델 호출 0) | `npm run build` 1회(백그라운드 · 내가 띄운 것 · exit 0 자연 종료) | ✅ 끝(«11:50»은 오기 — `.next/BUILD_ID` 11:12 · C 시작 11:24) · 🔴 **미커밋**(정본 §1 C-7에서 커밋) |
 | 회차 1 C | 11:24 | 12:54 (14:45 절대 정지) | Opus 5.5 본체(새 맥락) · 렌즈 3 + 2차 교열 1 Agent(opus) · 아스트라 codex(gpt-6-astra · read-only · 스크래치 `astra-ar-tools-C`) | codex PID 14202 — exit 0 자연 종료 · `next start` PID 26864·22664 — 명령줄 대조 후 내가 종료 · `npm run build` 2회 exit 0 | ✅ 끝 · 커밋 |
+| 회차 2 A | 11:57 | 13:27 (14:45 절대 정지) | Opus 5.5 본체 · DataForSEO 6호출(볼륨 4 · SERP 1 · 자동완성 2 — 응답 cost 필드만) · 아스트라 codex(gpt-6-astra · read-only · 스크래치 `astra-ar-tools-r2-A`) · Fable 서브 1회(카피) | codex node PID 21880 / codex 39272(12:03:07 생성 · 내가 띄운 것) | ✅ 12:14 끝 · codex 12:10 exit=0 자연 종료 |
+| 회차 2 B | 12:22 | 13:52 (14:45 절대 정지) | Opus 5.5 본체만(서브·외부 모델 호출 0) | `npm run build` 1회(백그라운드 · 내가 띄운 것 · exit 0 자연 종료) | ✅ 12:29 끝 · 🔴 미커밋(C-7에서 커밋) |
+| 회차 2 C | 13:01 | 14:31 (14:45 절대 정지) | Opus 5.5 본체(새 맥락) · 렌즈 3 + 2차 교열 Agent(opus) · 아스트라 codex(gpt-6-astra · read-only · 스크래치 `astra-ar-tools-r2-C`) | codex(node PID 1346 · 13:01:17 생성 · 내가 띄운 것) 13:07 exit=0 자연 종료 · `next start` PID 10828 — 명령줄 대조 후 내가 종료 · `npm run build` 2회 exit 0 | ✅ 13:11 끝 · 커밋 |
 
 사용량: 계정 할당량 지표는 이 세션에서 관측 불가 → 숫자 추정하지 않음. DFS 호출 비용은 응답 `cost` 필드로만(0.09 등).
 
@@ -97,6 +100,68 @@
 
 딜러 렌즈 «수치 오류 0»(아웃츠 20 · 팟 오즈 9 · ICM 2 예제 · 에퀴티 14 · FAQ 수치 전건 재계산) · 아스트라 독립 검산도 같은 결론(1,712,304 보드 전수 · ICM 재귀).
 
+## 회차 2 A 결과 (`/ar/win-rate-quiz`)
+
+- `git merge main` = 🅰 zh-hant·회차 1 머지·헤드 RTL `27d5bc7c` 수령(22파일).
+- 선례 = zh-hant `4a26acb9` · ru `7efdcdd3`(`pl()` 헬퍼 꼴). ar엔 `/ar/solver`가 없어 솔버 표 행 자리 없음.
+- 헤드텀 〔DFS〕 → `docs/keyword-bank/ar-tools.md` §5: poker simulator·trainer SA 10 · EG 10 · 아랍어 시뮬레이터 구 전부 null · SERP «محاكي البوكر» = 앱 2 + 게임 · 아랍어 웹 연습 도구 0.
+- 솔버 앱 `i18n.ts` 〔실측〕 `lang=ar` 무시 → `solverLang: "en"` 명시(브리프 §6).
+- Fable 카피 2안 → 안 A + Opus 조정 1(브리프 §4) · 아스트라 18행 → WRONG 1·RISKY 1 채택(브리프 §7).
+- 🔴 RTL 예상 결함 R-1~R-5(브리프 §8 · 코드 판독) — 특히 **R-3 퀴즈 슬라이더**(네이티브 range가 RTL에서 반전 · 표식은 `left:%`)는 확정되면 배포 차단급 → C 화면에서 확정 후 헤드 요청.
+- ▶ **B 첫 명령**: `/clear` 뒤 «HARDEN.md 읽고 회차 2 B 시작해» — 입력 = `docs/tool-lanes/ar-tools-r2-brief.md` 하나.
+
+## 회차 2 B 결과
+
+- 시작 전 `git merge main` = 🅱 fr·ru 대회 보드 머지분 수령(`89eafc9e` · 충돌 0).
+- 만든 것 2: `app/ar/win-rate-quiz/{page.tsx,win-rate-quiz-client.tsx}` — 틀 = EN `EN_UI`(키·분기·인자·JSX 동일 · tsc가 키 집합을 강제) + ru `pl()`·`n()` 헬퍼 꼴 · page = zh-hant 골격.
+- 고친 것 4(ar 한 줄씩): `lib/win-rate-quiz-alternates.ts`(LOCALES 끝 «ar» + `"ar"` 줄) · `lib/hub-routes.ts`(ar 배열 끝) · `components/side-rail.tsx`(hand-chart 뒤) · `scripts/generate-sitemap.mjs`(zh-hant 줄 뒤). `WIN_RATE_QUIZ_LOCALES` 소비처 = `app/community/my-records.tsx` L274(내 기록 → `/ar/win-rate-quiz` 링크가 자동으로 ar로 간다 · 코드 수정 없음).
+- 브리프대로: 퍼센트 키 없음 · `solverLang: "en"` + `solverOpen` «(بالإنجليزية)» · 족보 9종 = 계산기 rankNames 축어 · 라벨형 수(«الأيدي: {n}» · «النقاط: {n}» · «التركيبات قبل الفلوب: {pre} ← الآن: {cur}» · «ما دفعته: {n}» · «البوت لك: {n}») · `pl()`은 outsLabel만(1·2 쌍수 동사·3–10·11+) · playersBtn·vsOpponents는 분기 직접.
+- 브리프 밖 판단(C 렌즈 판정 대상):
+  - `verdictCall`/`verdictFold` = 명사 «مجاراة»/«طي»(배지·리뷰 표·퀴즈 결과 «خطأ — الإجابة كانت: طي» 세 자리에 다 쓰여 명령형 «جارِ/اطوِ»보다 명사가 맞는다).
+  - `noDrawNote` 표본 수 «{k} عملية محاكاة»(값 = 40,000 · 20,000 — 천 단위 정수 뒤 단수 소유격) · ruleText 같은 꼴. 🔴 인자는 공용 `fmt()`가 낸 문자열이다(타입 `samples: string` — 처음 `n()`을 씌웠다가 tsc로 잡아 고침).
+  - ante = «أنتي»(코퍼스 23 : «آنتي» 0) · 규칙 목록 화살표 «←»(조건 → 행동도 RTL 진행 방향 · 브리프 §3 화살표 규칙 확장).
+  - 퀴즈 공식 «ونقاط كل تقدير = 100 − 4 × الخطأ (بالنقاط المئوية)» — 수식 뒤 명사 굴절을 피하려 «=» 꼴(ru는 «… очков»).
+  - formulaCaveat의 EN 대문자 강조(HIT/WIN)는 아랍어에 대문자가 없어 낱말 «تكتمل»/«بالفوز به»로만.
+- 자기 게이트: `tsc` 내 파일 오류 0 · `check:meta` 초과 0(title 본체 52 · 접미 포함 67 · desc 153) · `check:seo-sync` 🔴0 · `check:cjk`·`check:hsl`·`check:hygiene`·`check:number-format` 0 · `check:intl-links` 통과(729편 · 푸터 3링크 실재) · `npm run build` **exit 0** — `/ar/win-rate-quiz` 정적 생성(8.42 kB) · 산출물 `<html lang="ar" dir="rtl">` · hreflang «ar» 자기참조 · robots «index, follow» · postbuild `check:hreflang` 0(세트 78종) · `check:directives` 0 · `check:meta-lang` 🔴0 · 사이트맵 1줄 생성(파일·`tsconfig.tsbuildinfo`는 되돌림 · 커밋 금지).
+- 🔴 **미커밋**(정본 §1 C-7에서 커밋). C 검수 대상 = 작업 트리의 미커밋 6파일(신설 2 + 등록 4).
+- ▶ **C 첫 명령**: `/clear` 뒤 «HARDEN.md 읽고 회차 2 C 시작해». C 체크: 브리프 §8 RTL R-1~R-5 화면 확정(🔴 **R-3 퀴즈 슬라이더** = 배포 차단 후보) · bidi 토큰(«35.4%» · «2/4» · «100 − 4 ×» · «{hits}/{decisions}») · 위 «브리프 밖 판단» 5건 렌즈 판정 · 1판 리버까지 실제 조작 + 퀴즈 1회.
+
+## 회차 2 C 결과
+
+- C-1 게이트 재실행(13:01~): `npm run build` **exit 0**(`/ar/win-rate-quiz` 8.42 kB · postbuild `check:hreflang` 0 · `check:directives` 0 · `check:meta-lang` 🔴0) · `check:meta` 초과 0 · `seo-sync` 🔴0 · `cjk`·`hsl`·`hygiene`·`number-format` 0 · `intl-links` 통과(729편) · `tsc` 내 파일 0.
+- C-2 기계 대조(scratch `ar-wrq-diff.mjs`): 키 118 = 118 · 차이 0. 토큰 차이 3건 전부 판정: `playersBtn`·`vsOpponents` = 분기 조건 숫자(구조 · 수 일치 분기) · `ruleText` EN «0.25–0.35%p»·«25%p» → ar «نقطة مئوية»(같은 단위 · ru «п.п.» 선례). 빈 문자열 2 = EN 구조 그대로(`filter(Boolean)` · 삼항). 라틴 3단어 0. 링크 3 실재.
+- C-3·C-4: 렌즈 3(opus · 편집자 6 · 딜러 4 · SEO 13행) + 아스트라 30행(gpt-6-astra · 13:01~13:07 · exit 0 · RISKY 5 · EN-FIRST 1 · OK 24) → 아래 판정표.
+
+### 회차 2 C 판정표 (출처 구분 · 채택 / 기각)
+
+| # | 자리 | 출처 | 판정 | 처리 |
+|---|---|---|---|---|
+| 1 | `splitLabel` «تعادل بين أنت · BTN» — بين 뒤 독립대명사 불가 | 편집자(중 · high) ↔ 아스트라 OK | 채택(편집자) | «تقسيم البوت — تعادل: {names}» (winLabel «الفائز:» 라벨형과 같게) |
+| 2 | ruleText «الرهان … يُقتصر على أول إن» 비인칭 수동에 주어 | 편집자(중 · high) | 채택 | «والرهان الذي يتجاوز الستاك المتبقي يتحوّل إلى أول إن.» |
+| 3 | formulaCaveat «تكتمل يدك» — 위 숫자는 개선 아웃츠(셋·투페어·오버카드)까지 센다 · hitLabel과 어긋남 | 편집자(저중) ↔ 아스트라 OK(결정 e) | 채택 | «تصلك إحدى هذه الأوراق» · «قد تصلك إحداها … وقد لا تصلك» (EN «HIT»에 더 가깝다) |
+| 4 | shareCopied «من ما قبل الفلوب» | 편집자(저) | 채택 | «من مرحلة ما قبل الفلوب» |
+| 5 | noDrawNote «فلاشًا أو ستريت» 격 불일치 | 편집자(저) | 채택 | «ستريتًا» |
+| 6 | quizStats «متوسط الفارق» ↔ quizHandSummary «متوسط الخطأ» | 편집자 EN-먼저 | 기각(ar 변경 없음) | EN도 «avg off»·«avg error» 다름 |
+| 7 | outsBreak.over·noDrawNote «زوج مع ورقة أعلى» = «페어 + 오버카드 보유»로 읽힘 | 딜러(저) | 채택 | «لتكوين زوج بورقتك الخاصة الأعلى من كل أوراق البورد (Overcard)» · «زوج بورقتك الخاصة الأعلى من البورد» |
+| 8 | tight «مُكوَّن بإحدى الورقتين الخاصتين» — 오버페어는 두 장 | 딜러(저) | 채택 | «مُكوَّن بورقة خاصة واحدة على الأقل» |
+| 9 | ante/stack «ويبدأ بستاك قدره 1,000» 앤티 뒤 잔액으로 읽힐 수 있음 | 딜러(저 · low) | 기각 | EN «posts 20 to start with a 1,000 stack»과 같은 구조 · 확신 낮음 |
+| 10 | `<ul … pl-4>` RTL에서 불릿 쪽 여백 없음 | SEO(중 · high) | 채택 | `ps-4`(ar 파일만) |
+| 11 | H1·부제에 아랍어 머리어 없음 | SEO(중) | 기각 | 브리프 §4 결정(H1 영어 머리어) · 화면 브레드크럼·HubPage 제목·사이드 레일이 «محاكي البوكر»를 이미 보인다(390 실측) |
+| 12 | resultTabs «📈 مسار الإكويتي» 390 잘림 우려 | SEO(저 · 추정) | 기각 | 390 실측 한 줄 · 잘림 0(`review-390.png`) |
+| 13 | roleDefend «دافع» 명사 «동기»로도 읽힘 | SEO(저) | 기각 | 브리프 §2 확정 · «فتح» 옆 배지 문맥 · 편집자·아스트라 이의 없음 |
+| 14 | 푸터 «كيف تعمل بوت أودز ←» → 입문 글 | SEO(저) | 기각 | 브리프 §5 — 대상 글 H3 축어 |
+| 15 | tsbuildinfo 커밋 제외 | SEO | 채택 | 커밋 = 내 파일만 |
+| 16 | showdown 첫 등장 풀이 누락(브리프 §2 «المواجهة (الشوداون)») | 아스트라 RISKY | 채택 | noBetAllIn 두 분기 + ruleText 첫 등장 |
+| 17 | riverNote «بكل يد» — 리버도 표본(SAMPLES.postflop · `_engine.ts` L735) | 아스트라 EN-FIRST | ar 기각 → EN-먼저 | 헤드 E-2 |
+| 18 | `6-max`·`9-max`·`3-bet` RTL에서 «max-6»으로 | 아스트라 RISKY · **화면 실측 확정**(테이블 버튼 «max-6 · max-9») | 채택(헤드) | 사전에 제어문자 금지 → H-5 렌더 측 격리 |
+| 19 | solverNote 플롭 토큰 무늬 이탈 | 딜러(중) · 아스트라 RISKY | 채택(헤드) | H-5 `<bdi dir="ltr">` |
+| 20 | formulaExpr «10 × 4 − 2» RTL 시각 순서 · 퀴즈 공식 | 아스트라 RISKY | 부분 — formulaExpr만 헤드 | 숫자만인 식은 격리 권장(H-5 경미) · ruleText 공식은 아랍어 낱말이 끼어 RTL 읽기 순서가 맞다(편집자 d PASS) — 기각 |
+| 22 | 2차 교열(고친 13자리): 11 OK · L110·L122 «بورقتك الخاصة الأعلى من» = 한 장만 가진 듯 + 정관사 비교급+من | 2차 교열(저 · 85%) | 채택 | «بورقة خاصة تعلو كل أوراق البورد» · «زوج بورقة خاصة تعلو البورد» · L227 «يُخفَّض» 제안은 선택 — 기각(뜻 통함) |
+| 21 | 결정 a~e(브리프 밖) | 편집자 a·b·c·d PASS · e 부분(→#3) · 아스트라 a~e OK | 유지 | — |
+
+- C-6 반영 13자리 + 2차 교열 2 → `npm run build` **exit 0**(postbuild hreflang·directives·meta-lang 0) · `seo-sync` 🔴0 · `intl-links` 통과 · `number-format`·`hygiene` 0 · `calc-parity -- ar` 0 · `tsc` 내 파일 0 · 사이트맵·tsbuildinfo 되돌림.
+- C-5 화면(`npx next start -p 3494` · 내 PID 10828 · 명령줄 대조 후 종료 · 스크린샷 `tmp/screen/ar-wrq-c/` 비추적): 390·1440 넘침 0 · 페이지 오류 0(콘솔 = 로컬 `/_vercel/*` 404뿐) · 1판 리버까지(«الفائز: BTN · فول هاوس» · 리뷰 «في مرحلة الفلوب…») · 결과 탭 3 · 퀴즈 1회(«تقديرك 20% · الفارق 4.1 نقطة مئوية · النقاط: 84») · 상대 레인지 · 카드 선택기. 🔴 RTL 결함 확정 → 헤드 요청 H-5.
+
 ## 신규 용어 (코퍼스 0)
 
 | EN | 채택 | 근거 URL·grep |
@@ -116,9 +181,15 @@
 | H-3 | 제목 언어 순서 — 영어 머리어 먼저(«Poker Calculator — حاسبة …») | 구글 문서 «Use the same language and writing system … as the primary content»(10-14 원문 확인) · 본문은 아랍어. 반대 근거 = 아랍어 도구구 볼륨 데이터 없음 + vi·hi·tr 선례(영어 머리어 먼저) | 이번엔 선례대로. 바꾸려면 아랍어 먼저 «حاسبة احتمالات البوكر — Poker Calculator …»(글자 수 동일)로 헤드가 결정 · 전 로케일 일관 판단이라 레인 밖 |
 | H-2 | `lib/posts-ar/texas-holdem-rules-for-beginners.ts` L450 — `/en/hand-chart` · `/en/calculator` 링크 2개 | 도구가 생기면 ar 독자가 영어 도구로 나간다. vi·ru·tr 회차는 같은 줄을 자기 로케일 도구로 바꿨지만, 정본 §2 🅲가 «vi 고유 링크·글 수정은 빼고»라 레인은 손대지 않는다 | 머지 때 헤드가 `/ar/hand-chart` · `/ar/calculator`로(앵커 문구는 그대로 — 이미 도구 H1 부제와 같다) |
 
+| H-5 | 🔴 **회차 2 배포 차단 — 공용 시뮬레이터 RTL**(C 화면 실측 13:03~13:06 · `tmp/screen/ar-wrq-c/`) | **R-7 신규 · 최중대** 카드 앞면 랭크가 **잘려 안 보인다**(`_kit.tsx` L44 `KitCardFace` SVG `<text x=22>`가 `direction: rtl`을 상속 → text-anchor start = 오른끝 → 글자가 x=22에서 왼쪽으로 그려져 viewBox 밖). 보드·내 카드 전부 — 카드를 못 읽으면 도구가 성립 안 한다. **R-6 신규** 에퀴티 막대: 채움(`motion.div` width%)은 **오른쪽에서** 자라고 필요 에퀴티·내 추정 눈금은 `left:%`라 **왼쪽 기준** — 실측 390: 막대 29–361 · 채움 281–361(24%) · 추정 20% 눈금 x=94. «금색이 선을 넘으면 콜» 그림이 틀린다(L1627~1641). **R-3 확정** 퀴즈 슬라이더: 값 20 → 손잡이가 오른쪽에서 20%(네이티브 range RTL 반전) · 답 뒤 눈금은 왼쪽 20% — 같은 값이 반대편. **R-1 확정** 카드 선택기 A♠ x=342 > K♠ 315(오른쪽부터). **R-2 확정** 상대 레인지 13×13 AA 오른쪽 위(거울상 · 차트와 같은 증상). **R-4 확인** 리뷰 표 머리(`text-left`)와 칸 정렬 어긋남(경미). R-5 SVG 차트 = 결함 없음. 기타(경미): 팟 오즈 판정 줄의 공용 «→»가 RTL에서 거꾸로 가리킨다(«طي → 25.0% > 2.8%») · 승·무·패 «%2.6»(퍼센트가 앞에 — 아랍어 bidi 관례라 결함 아님) · **딜러 렌즈+아스트라**: `solverNote` 플롭 토큰 «K♠Q♥J♦»가 아랍어 문장 안에서 마지막 무늬가 떨어져 나가 «♦K♠Q♥J»로 보일 위험(UAX#9 — 사전엔 제어문자 금지 규칙 · 렌더 측 `<bdi>`가 맞다) | 회차 1 H-1 처방 꼴: `QuizUI`에 선택 키 `rtl?: true`(다른 로케일 바이트 불변) → `KitCardFace` svg에 `direction="ltr"`(또는 카드 래퍼 `dir="ltr"`) · 에퀴티 막대·슬라이더 래퍼·13×13 격자 2곳·카드 선택기에 `dir="ltr"` · 표 머리 `text-start` · solverNote 플롭 토큰은 렌더 측 `<bdi dir="ltr">`. 경미: 테이블 버튼 `tableBtn` «6-max»가 «max-6»으로 보인다(화면 확정 · 판정표 #18) → 버튼에 `dir="ltr"` · formulaExpr 숫자식 격리. 🔴 **R-7·R-6·R-3 안 고치면 ar 시뮬레이터 배포 보류** |
+
+| E-2 | EN-먼저 후보 — `riverNote` «compares your final hand with every holding» | 리버 에퀴티도 표본 추정(`_engine.ts` L735 `heroEquity(…, SAMPLES.postflop)`) — 아스트라 · 전 로케일 공통 | `docs/en-first-queue.md` 등재 판단은 헤드 |
+
 ## 보고
 
 - 회차 1 C 끝(커밋 = 이 파일과 함께). 렌즈 3(SEO 0결함 · 딜러 수치 0 · 편집자 13) + 아스트라 27행(WRONG 5 · RISKY 8 · OK 14) + 본체 화면 1 + 2차 교열 4 → 판정표 37행(채택 26 · 기각·EN-먼저 11 — #11은 원문 재확인으로 편집자 처방을 되돌리고 대명사 처방만 채택).
 - 🔴 **머지 조건 = H-1**(격자 RTL · 배포 차단) — 안 고치면 차트 범례·push/fold 노트의 «오른쪽 위 = suited»가 화면과 반대다. H-2(초보자 글 /en 도구 링크 → /ar) · H-4(bidi 잔여 · 경미) · E-1(EN-먼저 3건) · H-3(제목 언어 순서)은 헤드 판단.
 - `public/sitemap.xml`·`tsconfig.tsbuildinfo`는 빌드가 바꾼 것을 되돌렸다(미커밋).
 - 다음: 헤드 머지 → 회차 2 `/ar/win-rate-quiz`(🅰 머지 뒤 `git merge main`).
+- **회차 2 C 끝**(커밋 = 이 파일과 함께). 렌즈 3(편집자 6 · 딜러 4 · SEO 13) + 아스트라 30행(RISKY 5 · EN-FIRST 1 · OK 24) + 본체 화면 + 2차 교열 → 판정표 22행(채택 15 · 기각·EN-먼저·헤드 7).
+- 🔴 **머지 조건 = H-5**(공용 시뮬레이터 RTL) — **R-7 카드 랭크 잘림**(카드를 읽을 수 없음) · **R-6 에퀴티 막대 채움↔눈금 반대편** · **R-3 슬라이더 반전**은 배포 차단. 안 고치면 `/ar/win-rate-quiz`는 머지만 하고 배포·색인 보류가 맞다. R-1·R-2(격자 거울상)·«max-6»·플롭 토큰 bidi·R-4는 같은 처방(`QuizUI.rtl` 선택 키 + `dir="ltr"`)으로 함께. E-2(riverNote · EN-먼저)는 헤드 판단.

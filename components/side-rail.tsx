@@ -392,6 +392,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ar/blog",        icon: "📚", label: CHROME.ar.blogLabel },
     { href: "/ar/calculator",  icon: "🧮", label: "حاسبة احتمالات البوكر" },
     { href: "/ar/hand-chart",  icon: "📊", label: "مخطط الأيدي الافتتاحية" },
+    // ★2026-10-14 `/ar/win-rate-quiz` 신설(tool-lanes 🅲 회차 2). 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/ar/win-rate-quiz", icon: "📈", label: "محاكي البوكر" },
     { href: "/ar/tournaments", icon: "🏆", label: "البطولات" },
   ],
 };
