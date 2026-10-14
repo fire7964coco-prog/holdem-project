@@ -19,8 +19,8 @@
 <p style="font-size:13px;font-weight:bold;color:#8a6d1d;margin:0 0 16px">HoldemMaster</p>
 <h2 style="font-size:20px;margin:0 0 12px">{{ $title }}</h2>
 <p style="margin:0 0 20px">{{ $body }}</p>
-<p style="margin:0 0 24px"><a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#1f2937;color:#ffffff;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:8px">{{ $btn }}</a></p>
+<p style="margin:0 0 24px"><a href="{{ .RedirectTo }}&token_hash={{ .TokenHash }}&type=email" style="display:inline-block;background:#1f2937;color:#ffffff;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:8px">{{ $btn }}</a></p>
 <p style="font-size:13px;color:#6b7280;margin:0 0 8px">{{ $link }}</p>
-<p dir="ltr" style="font-size:12px;color:#6b7280;word-break:break-all;margin:0 0 20px">{{ .ConfirmationURL }}</p>
+<p dir="ltr" style="font-size:12px;color:#6b7280;word-break:break-all;margin:0 0 20px">{{ .RedirectTo }}&token_hash={{ .TokenHash }}&type=email</p>
 <p style="font-size:13px;color:#6b7280;margin:0">{{ $ign }}</p>
 </div>

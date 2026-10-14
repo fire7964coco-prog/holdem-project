@@ -48,7 +48,10 @@ const build = (which) => {
     `<p style="font-size:13px;color:#6b7280;margin:0">{{ $ign }}</p>`,
     `</div>`,
   ].join("\n") + "\n";
-  return s;
+  // ★10-14 링크 = token_hash 방식(다른 기기·브라우저에서 눌러도 로그인 · app/auth/callback/route.ts ② 갈래).
+  // RedirectTo는 늘 «…/auth/callback?next=…»(lib/auth-navigation authCallbackUrl)라 «&»로 잇는다.
+  const link = `{{ .RedirectTo }}&token_hash={{ .TokenHash }}&type=${which === "c" ? "email" : "recovery"}`;
+  return s.split("{{ .ConfirmationURL }}").join(link);
 };
 // 제목 = 언어 분기 없이 두 언어 병기(짧게 · 본문이 그 사람 언어로 나간다)
 const SUBJ = { c: "HoldemMaster — 이메일 인증 / Confirm your email", r: "HoldemMaster — 비밀번호 재설정 / Reset your password" };
