@@ -8,6 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
+| **ar 글 클러스터** | ▶ **다음 세션 1순위**(사장님 10-14 결정 «클러스터별로 레인창 띄워서 작업»). 현재 ar 7편(입문 규칙 6 + 족보) · 도구 = 계산기·핸드차트·시뮬레이터·대회 보드(10-14). 방식 = tr 선례(`docs/tr-cluster-plan.md` «메인과 같은 축, 글 수만 축소») + vi 레인 운영(`docs/vi-cluster-plan.md` §4·§5 · `docs/ms-translation-lanes.md` A→B→C). 🔴 순서: ① **현지 조사 먼저**(메모리 `new-language-serp-before-writing` — DFS 볼륨 + SERP 상위 5편 정독 + 자동완성·PAA → `docs/keyword-bank/ar-serp/`) ② 계획 문서 `docs/ar-cluster-plan.md`(축·편수·카니발 소유표·고정문·용어 · RTL 주의) → 사장님 확인 ③ 클러스터별 레인 워크트리·wt.exe 창 · 아스트라 A·C 교차 필수 · 🪶 아스트라 스크래치 폴더명에 레인 id(10-14 MA-542 겹침 교훈). 합법성 축 열지 않음. 첫 지시문 예: «핸드오프 읽고 ar 클러스터 현지 조사부터 시작해» | 다음 세션 |
 | **MA-542** | ✅ hi·tr 7편 EN 재동기화 MB-328 → ▶ 검수장 바뀐 행 재판정 · 잔여 queue §2-CC CC-5~8 | 판정 대기 |
 | **도구 레인 3** | 10-14 본체가 띄움 — 🅰 `Holdem-wrq-zhhant`(zh-hant 시뮬레이터) · 🅱 `Holdem-tour-frru`(fr·ru 대회 보드) · 🅲 `Holdem-ar-tools`(ar 계산기+차트 → 시뮬레이터). 정본·상태표 = `docs/tool-lanes-2026-10-14.md`. ✅ 🅰 머지·배포 `4a26acb9` MB-323 · ✅ 🅱 `de6ad93a` MB-325 · ✅ 🅲 회차 1 `27d5bc7c` MB-324 · 회차 2 `f7cbe89b` MB-327 — 레인 전부 종료 · 워크트리 해제·브랜치 삭제 완료 · 🪶 빈 폴더 `../Holdem-{wrq-zhhant,tour-frru,ar-tools}` 3개만 남음(10-14 «사용 중» 잠금) → 다음 세션 `Remove-Item`(비어 있음 확인 후). ▶ 🅱·🅲 «머지해» 오면 §4 헤드 절차. 🪶 `/ar/solver` = 솔버 앱 ar UI 없음 → 솔버 문의는 사장님 판단 | 진행 중 |
 | **우편함** | ✅ MA-509·510 = queue §2-BT 회신+등재+이행 `e30fde28` MB-307 → ▶ 검수장 변경 줄 재판정 대기 · 🪶 스트래들 «의무 베팅» 통지·vi glossary H2 «Cặp» = 판단 대상(§2-BT) | 판정 대기 |
