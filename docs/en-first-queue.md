@@ -1206,6 +1206,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CA-3 H-4 | RTL bidi 잔여(경미): ① 범례 포지션명 truncate가 라틴 앞을 자름 ② EXAMPLES «+» 위치 ③ «(+21)» ④ 히어로 숫자 뒤 `ml-1` ⑤ H2 강조선 `border-l-4` | 🪶 공용 RTL 회차(ar 시뮬레이터 회차 2 뒤 묶음) — 논리 속성(`ms-`·`border-s`)·`<bdi>` · RTL 로케일만 |
 | CA-4 E-1 EN-먼저 | ① 계산기 FAQ «Pocket aces win about 82%» · quickRef ② «How often AA wins» = 표는 equity(승 81.71 · 무 0.46 · equity 81.95) ② guide 카드 «on the flop or turn» ③ 차트 FAQ 5 «3-bet 콜 레인지»에 A5s 블러프(4-bet 블러프 맥락) | 🪶 EN 계산기·차트 사전 손질 회차 — 전 로케일 동시 |
 | CA-5 H-3 | 제목 언어 순서(영어 머리어 먼저) | 선례(vi·hi·tr) 유지 · 전 로케일 일관 판단이라 🪶 GSC 관찰 뒤 |
+| CA-6 회차 2 H-5 | 🔴 ar 시뮬레이터 RTL(카드 랭크 잘림·에퀴티 막대·슬라이더·격자·6-max) | ✅ `f7cbe89b` — QuizUI.rtl + 카드 svg direction=ltr |
+| CA-7 회차 2 경미 | solverNote 플롭 토큰 «K♠Q♥J♦» bidi(렌더 측 `<bdi dir="ltr">` 필요 · 문자열 함수라 분할 필요) · formulaExpr 숫자식 격리 · 팟오즈 판정 줄 «→» 방향 · E-2 riverNote(EN-먼저) | 🪶 CA-3 공용 RTL 회차와 묶음 · 진행 파일 `docs/tool-lanes/ar-tools-진행.md` H-5 행 |
 
 ### 2-CB. tool-lanes 🅱(fr·ru 대회 보드) 헤드 요청 — 2026-10-14
 
@@ -1221,6 +1223,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CB-6 | fr 통화 기호 뒷붙임(«1 100 €») vs 사이트 전 로케일 앞붙임 | 현행 유지(공용 정책) |
 | CB-7 | fr `holdem-tournament` 글 → `/fr/tournaments` 내부링크 1줄(tr 선례) · ru는 대회 글 없음 | 🪶 fr 글 손볼 때 |
 | CB-8 | 러시아 본토 볼륨 = DFS 측정 불가(40501) | 🪶 필요 시 사장님 Yandex Wordstat |
+
+### 2-CC. 우편함 수신분 — MA-542(긴급 · hi·tr rules 6편 + hand-rankings EN 현행 재동기화) · 등재 2026-10-14
+
+근거 `홀덤검수-tr/reports/검수-tr-r1-rules-a-2026-10-14.md` §2·§3. hi·tr masterUpdated 07-02~09-07 ↔ EN 10-06~10-13(편당 EN 커밋 11~24 · 약 +327 −279줄). tr R1 RISKY 53 중 약 30이 이 누락.
+
+| # | 묶음 | 처리 |
+|---|---|---|
+| CC-1 | hi beginners·game-order·betting-actions | ▶ 서브 레인(워크트리) — EN diff 이식 · 아스트라 교차 · 전/후 표 `docs/tool-lanes/ma542-hi-a-changes.md` |
+| CC-2 | hi blind·all-in·showdown·hand-rankings | ▶ 〃 `ma542-hi-b-changes.md` |
+| CC-3 | tr beginners·game-order·betting-actions(+tr 단정 표현 EN 한정에 맞춤) | ▶ 〃 `ma542-tr-a-changes.md` |
+| CC-4 | tr blind·all-in·showdown·hand-rankings | ▶ 〃 `ma542-tr-b-changes.md` |
+
+- 처방 = 재작성 아님 · EN 현행 문면 이식 · tr SERP 보강 H2/FAQ(MB-187~190)·hi 구판 구조 유지. 회신 = MB 1행(해시 + 글별 전/후).
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
