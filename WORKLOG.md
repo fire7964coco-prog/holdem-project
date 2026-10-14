@@ -1,3 +1,8 @@
+## 2026-10-14 (5) — 로그인 메일 정상화: Resend SMTP · 16언어 템플릿 · 비-KO 이메일 재개방 `6192d19b` · token_hash `5f92dd21` · MB-326
+
+- 사장님 결정: KO = Google·카카오·이메일 · 비-KO = Google·이메일(가짜 이메일은 인증 못 해 로그인 불가 · 이메일 확인 ON). 발견: Supabase 커스텀 SMTP 꺼짐 = 기본 발송기(팀원 외 거부 · 시간당 2통)라 이메일 가입·재설정이 사실상 막혀 있었다(9월 이후 이메일 가입 0).
+- Resend 무료(월 3,000·일 100) · holdemmaster.com 인증(TXT resend._domainkey · CNAME rsend·send — GoDaddy · 기존 MX·SPF 무충돌 조회 확인) · Supabase SMTP smtp.resend.com:465. 템플릿 첫판(언어마다 HTML 반복 18KB·제목 988자)은 «too big» → 압축판(문구 변수 재대입 6.7KB · 제목 두 언어 병기). 시험 1 KO 가입 정상 · 시험 2 ja 메일 일본어 정상이나 PKCE 코드 교환 실패로 /login 복귀 → callback에 token_hash·verifyOtp 갈래(Supabase 문서 SSR PKCE) + 템플릿 링크 {{ .RedirectTo }}&token_hash=…&type= → 시험 3 PC 가입·폰 클릭 로그인 통과. 시험 계정 +test1~3 = 사장님 정리 판단.
+
 ## 2026-10-14 (4) — 🅱 fr·ru 대회 보드 머지·배포 `de6ad93a` · MB-325
 
 - 판정표 20행(WRONG 6 채택 · 기각 근거 있음) · 기계 대조 147행×2 불일치 0 · 게이트 BOARD_LOCALES +fr·ru. 빌드 exit 0 · 라이브 200·index,follow·hreflang 16 · IndexNow. 헤드 요청 8건 = queue §2-CB · 시한 있는 `ps-open-aix` 시작일(1일 vs 2일)은 update-calendar «10/31까지» — 영문 운영사 페이지는 스크립트 렌더라 WebFetch·Playwright innerText 둘 다 빈 응답(판정 보류).
