@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Yeni başlayanlar için Texas Hold'em nasıl oynanır — kurallar, çipler, eller ve ilk strateji",
   seoTitle: "Poker nasıl oynanır? Kısaca Texas Hold'em kuralları sıfırdan",
-  desc: "Poker nasıl oynanır, kısaca: 52 kartlık deste, 2 kapalı + 5 ortak kart, 4 bahis turu. Texas Hold'em kuralları adım adım, örnek el, yazdırılabilir kopya kâğıdı.",
-  tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
+  desc: "Poker nasıl oynanır, kısaca: 52 kartlık deste, 2 kapalı + 5 ortak kart, en fazla 4 bahis turu. Texas Hold'em kuralları adım adım, örnek el, kopya kâğıdı.",
+  tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır ve 5 ortak kart herkesin ortak kullanımına açılır. En fazla dört bahis turu oynanır ve showdown'da en iyi 5 kartlık poker eli kazanır — diğer herkes daha önce fold etmezse.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
-  masterUpdated: "2026-07-12",
+  updated: "2026-10-14",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "♠️",
@@ -32,9 +32,11 @@ Sana lazım olan şey aslında basit: blindlerin ne olduğu, sıranın ne zaman 
 
 Bu rehber ==Texas Hold'em'in nasıl oynandığını== sade bir dille anlatıyor: tam oyun sırası, yeni başlayanlar için çip düzeni, dağıtımın temelleri ve masanın yanına koyabileceğin yazdırılabilir bir kopya kâğıdı.
 
+Aşağıdaki her şey yalnızca kural kitabından değil, oyunu bizzat yönetmekten geliyor — mutfak masaları, ev oyunları ve kart salonları. O yüzden yeni oyuncuların gerçek hayatta tam olarak nerede takıldığını da göstereceğim.
+
 ## Poker nasıl oynanır? Kısaca 7 adımda
 
-Kısaca: Texas Hold'em'de herkes 2 kapalı kart alır, ortaya üç aşamada toplam 5 ortak kart açılır ve her aşamadan sonra bir bahis turu oynanır. Sonunda elde kalan oyuncular 7 karttan kurdukları en iyi 5 kartlık eli karşılaştırır. Diğer herkes elini atarsa son kalan oyuncu kartını göstermeden potu alır. Adım adım akış şöyle:
+Kısaca: Texas Hold'em'de herkes 2 kapalı kart alır, ortaya üç aşamada toplam 5 ortak kart açılır ve elde bahis yapabilecek oyuncular kaldıkça her aşamadan sonra bir bahis turu oynanır. Sonunda elde kalan oyuncular 7 karttan kurdukları en iyi 5 kartlık eli karşılaştırır. Diğer herkes elini atarsa son kalan oyuncu kartını göstermeden potu alır. Adım adım akış şöyle:
 
 1. İki oyuncu **blind** (zorunlu bahis) koyar
 2. Herkese kapalı **2 hole kart** dağıtılır
@@ -46,7 +48,7 @@ Kısaca: Texas Hold'em'de herkes 2 kapalı kart alır, ortaya üç aşamada topl
 
 Aklında kalsın:
 - İki hole kartını da, birini ya da hiçbirini kullanmayabilirsin — en iyi eli hangisi yapıyorsa o
-- Dağıtıcı butonu her elde döner, yani blindler ve sıra düzeni her turda kayar
+- Dağıtıcı butonu normalde her elden sonra bir koltuk kayar, yani blindler ve sıra düzeni de onunla birlikte kayar
 - Diğer herkes fold ederse el gösterme (showdown) olmadan potu alırsın — kartlar açılınca kimin önce göstereceğini [showdown kuralları](/tr/blog/holdem-showdown-rules) anlatıyor
 
 ---
@@ -123,7 +125,7 @@ Bu yazının geri kalanı yalnızca Texas Hold'em içindir.
 
 Texas Hold'em'in temel kuralları, masayı sırayla gördüğünde şaşırtıcı derecede basittir.
 
-Her el bir dağıtıcı butonuyla başlar. Butonun solundaki iki oyuncu **small blind** ve **big blind** denen zorunlu bahisleri koyar — bu kısım kafanı karıştırdıysa [blindlerin ne olduğuna ve small/big blind'ın nasıl çalıştığına](/tr/blog/holdem-blind-meaning) bir göz at. Ardından her oyuncuya kapalı iki kart verilir. Bunlar senin hole kartların (kapalı kartlar).
+Her el bir dağıtıcı butonuyla başlar. Butonun solundaki iki oyuncu **small blind** ve **big blind** denen zorunlu bahisleri koyar (yalnızca iki oyuncu varsa small blind'ı butonun kendisi koyar) — bu kısım kafanı karıştırdıysa [blindlerin ne olduğuna ve small/big blind'ın nasıl çalıştığına](/tr/blog/holdem-blind-meaning) bir göz at. Ardından her oyuncuya kapalı iki kart verilir. Bunlar senin hole kartların (kapalı kartlar).
 
 Bundan sonra dağıtıcı masanın ortasına beş ortak kart açar:
 
@@ -168,7 +170,7 @@ Bu yazı sana akışın **yeni başlayan sürümünü** veriyor ki masaya oturun
 | 5 | Flop, turn, river | Ortak kartlar 3, sonra 1, sonra 1 gelir |
 | 6 | Showdown | Kalan oyuncular en iyi 5 kartlık eli karşılaştırır |
 
-İlk seansın için akılda tutman gereken tek fikir şu: ==**her yeni sokak açıldığında bir bahis turu daha yapılır.**==
+İlk seansın için akılda tutman gereken tek fikir şu: ==**her yeni sokak açıldığında bir bahis turu daha yapılır**== — oyuncuların all-in olduğu ve karşılarında bahis yapacak kimsenin kalmadığı durumlar hariç; o zaman kalan kartlar sadece açılır.
 
 ![Flop öncesi bir Texas Hold'em masasının yukarıdan görünümlü infografiği — her oyuncu iki kapalı kart tutuyor ve board hâlâ boş](/images/rules-step2-preflop.webp "Texas Hold'em adım adım resimli anlatım — blindlerden sonra preflop aksiyonu")
 
@@ -198,7 +200,7 @@ Texas Hold'em bir masada **2 ile 10 kişi** arasında oynanır. Başlamak için 
 |--------:|------------------|----------------|
 | 2 | Heads-up (bire bir) | Hızlı ve agresif; blindler ters döner (aşağıya bak) |
 | 3–6 | Short-handed (6-max) | Online'da en yaygın; daha çok el oynanabilir |
-| 7–10 | Full ring (9-max) | Klasik ev/kumarhane oyunu; daha sıkı oyna, daha çok pas |
+| 7–10 | Full ring (9-max ya da 10-max) | Klasik ev/kumarhane oyunu; daha sıkı oyna, daha çok pas |
 
 İlk ev oyunun için **4 ila 6 kişi** tam kıvamındadır — öğrenmeye yetecek kadar aksiyon, eller hızlı ilerlesin diye yetecek kadar az kişi.
 
@@ -284,11 +286,11 @@ Online pratik için, aksiyon sırasını düşünmeden anlatabilene kadar ücret
 
 | Format | Ne kadar bahis yapabilirsin? | Nerede görürsün |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Tüm çiplerine kadar herhangi bir miktar ("all-in") | Varsayılan oyun — ev oyunları, çoğu kumarhane, WSOP |
+| **No-Limit (NLHE)** | Big blind'dan tüm çiplerine kadar herhangi bir miktar ("all-in") | Varsayılan oyun — ev oyunları, çoğu kumarhane, WSOP |
 | **Fixed-Limit** | Sadece sabit artışlar (belirli bir küçük bahis, sonra turn/river'da iki katı) | Eski kumarhane masaları; daha az büyük dalgalanma |
 | **Pot-Limit** | Potun o anki büyüklüğüne kadar | Hold'em'de nadir; Omaha'da standart (PLO) |
 
-Yeni başlayanlar için ==g:biri aksini söylemedikçe No-Limit oynadığını varsay.== No-Limit *anlaması* en kolay formattır (istediğin kadar bahis yap) ama kötü *oynanırsa* en acımasızıdır, çünkü yanlış bir call tüm stack'ine mal olabilir. Aşağıdaki pot odds bölümü ve [bahis aksiyonları — check, call, raise, fold](/tr/blog/holdem-betting-actions) tam da bu yüzden bu kadar önemli.
+Yeni başlayanlar için ==g:biri aksini söylemedikçe No-Limit oynadığını varsay.== No-Limit *anlaması* en kolay formattır (big blind'dan tüm stack'ine kadar istediğin miktarda bahis yap) ama kötü *oynanırsa* en acımasızıdır, çünkü yanlış bir call tüm stack'ine mal olabilir. Aşağıdaki pot odds bölümü ve [bahis aksiyonları — check, call, raise, fold](/tr/blog/holdem-betting-actions) tam da bu yüzden bu kadar önemli.
 
 ---
 
@@ -360,7 +362,7 @@ Kurallar oturunca, ilk stratejin sıkıcı ve sağlam olmalı.
 
 | Kademe | Eller | Ne zaman oyna |
 |------|-------|--------------|
-| 🟥 **Premium — her zaman yükselt** | AA, KK, QQ, JJ, AKs, AKo | Her pozisyon, her stack |
+| 🟥 **Premium — her zaman yükselt** | AA, KK, QQ, JJ, AKs, AKo | Her pozisyon, her stack — pota ilk giren sensen raise, tek bir raise'e karşı re-raise |
 | 🟧 **Güçlü — genelde yükselt** | TT, 99, AQs, AQo, AJs, KQs | Çoğu pozisyon; UTG'den daha sıkı |
 | 🟦 **Oynanabilir — pozisyon önemli** | 88, 77, ATs, AJo, KJs, QJs, JTs | Geç pozisyonu tercih et (CO, BTN) |
 | ⬜ **Varsayılan pas** | Yeni başlayan olarak geri kalan her şey | Özellikle erken pozisyondan |
@@ -444,13 +446,15 @@ En güçlüden en zayıfa temel el sıralaması (7 karttan en iyi 5'ini kullanar
 
 ## Yeni başlayanların sık yaptığı hatalar
 
+Yıllardır ev oyunları düzenliyorum ve neredeyse her yeni başlayan masasında aynı beş hatayı görüyorum — ilk ikisi tamamen kural karışıklığı, diğer üçü ise ileri strateji diyebileceğin her şeyden çok önce çip kaybettiriyor.
+
 ### Hata 1: İki hole kartını da kullanmak zorunda olduğunu sanmak
 
 İki hole kartını da, birini ya da hiçbirini kullanabilirsin. En iyi beş kartlık el kazanır.
 
 ### Hata 2: Aksiyon sırasının değiştiğini unutmak
 
-Preflop big blind'ın solundan başlar. Floptan sonra aksiyon butonun solundan başlar.
+Preflop big blind'ın solundan başlar. Floptan sonra aksiyon butonun solundan başlar. Dağıttığım ilk ev oyununda iki oyuncu her flop'ta sırası gelmeden oynayıp duruyordu — masaya gerçek bir dağıtıcı butonu koyduk ve karışıklık bir tur içinde kayboldu.
 
 ### Hata 3: "Gelebilir" diye call yapmak
 
@@ -458,7 +462,7 @@ Draw'ların doğru fiyata ihtiyacı var. Pot küçük ve bahis kocamansa, zayıf
 
 ### Hata 4: Her as ile oynamak
 
-A♣4♦ yeni başlayana heyecan verici görünür ama zayıf aslar sık sık ikinci en iyi tek çift elleri yapar. AK ve AQ gibi büyük aslar çok daha güçlüdür.
+A♣4♦ yeni başlayana heyecan verici görünür — zayıf bir asla çip kaybeden yeni oyuncuları, neredeyse başka herhangi bir elle kaybedenlerden daha sık gördüm — ama zayıf aslar sık sık ikinci en iyi tek çift elleri yapar. AK ve AQ gibi büyük aslar çok daha güçlüdür.
 
 ### Hata 5: Pozisyonu görmezden gelmek
 
@@ -507,7 +511,7 @@ A. En basit hali: her oyuncu 2 kapalı kart alır. Beş paylaşımlı kart üç 
 
 **Q. Texas Hold'em kuralları — blindler ne demek?**
 
-A. Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorunlu bahisleri koymak zorundadır. İlk oyuncu small blind'ı, ikincisi big blind'ı (genelde iki katı) koyar. Bu bahisler potta her zaman uğruna savaşılacak para olmasını garanti eder. Diğer her oyuncu, elde kalmak için en azından big blind'ı görmek zorundadır (ya da tüm chip'i buysa daha az bir miktarla all-in olabilir).
+A. Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorunlu bahisleri koymak zorundadır (yalnızca iki oyuncu varsa small blind'ı butonun kendisi koyar). İlk oyuncu small blind'ı, ikincisi big blind'ı (genelde iki katı) koyar. Bu bahisler potta her zaman uğruna savaşılacak para olmasını garanti eder. Diğer her oyuncu, elde kalmak için en azından big blind'ı görmek zorundadır (ya da tüm chip'i buysa daha az bir miktarla all-in olabilir).
 
 **Q. Texas Hold'em kurallarının hızlı sürümü nedir?**
 
@@ -519,7 +523,7 @@ A. En az 2 oyuncu gerekir ve masaya 10 kişiye kadar oturabilir. Tam iki oyuncuy
 
 **Q. Texas Hold'em'de no-limit ne demek?**
 
-A. No-Limit, herhangi bir bahis turunda tüm çiplerine kadar istediğin miktarda bahis yapabilmen demektir — "all-in" hamlesi budur. WSOP Ana Turnuvası dahil varsayılan ve en popüler formattır. Limit Hold'em her bahsi sabit bir boyutla sınırlar, Pot-Limit ise bahsini o anki pot boyutuyla sınırlar.
+A. No-Limit, herhangi bir bahis turunda big blind'dan tüm çiplerine kadar istediğin miktarda bahis yapabilmen demektir — üst sınır "all-in" hamlesidir. WSOP Ana Turnuvası dahil varsayılan ve en popüler formattır. Limit Hold'em her bahsi sabit bir boyutla sınırlar, Pot-Limit ise bahsini o anki pot boyutuyla sınırlar.
 
 **Q. Bir Texas Hold'em eli ne kadar sürer?**
 
@@ -551,7 +555,7 @@ A. Hold'em, oyuncuların kendi kapalı kartlarını masadaki ortak kartlarla bir
 
 Texas Hold'em, kuralları stratejiden ayırdığında öğrenmesi çok daha kolaydır.
 
-Önce ==akışı öğren==: blindler, iki hole kart, beş ortak kart, dört bahis turu ve en iyi beş kartlık el. ==g:Sonra pozisyonu, başlangıç ellerini ve temel pot kararlarını öğren.==
+Önce ==akışı öğren==: blindler, iki hole kart, beş ortak kart, en fazla dört bahis turu ve en iyi beş kartlık el. ==g:Sonra pozisyonu, başlangıç ellerini ve temel pot kararlarını öğren.==
 
 Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) gözden geçir, [başlangıç eli tablosuyla](/tr/hand-chart) pratik yap ve bir call'ın neden kârlı olup olmadığını anlamak istediğinde [poker olasılık hesaplayıcısını](/tr/calculator) kullan. Masada duyduğun bir kelimeye takılırsan [poker terimleri](/tr/blog/holdem-glossary) sözlüğüne bak; call kararının mantığı için de [pot odds nedir?](/tr/blog/holdem-pot-odds) yazısını oku.
 
