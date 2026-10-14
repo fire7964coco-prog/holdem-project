@@ -20,6 +20,10 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 // [ar-prob import 끝]
 
 // [ar-strat import 시작]
+import { POST as holdemStrategy } from "./holdem-strategy";
+import { POST as holdemPositions } from "./holdem-positions";
+import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
+import { POST as holdemGlossary } from "./holdem-glossary";
 // [ar-strat import 끝]
 
 /**
@@ -47,6 +51,10 @@ export const AR_POSTS: Post[] = [
   // [ar-prob 배열 끝]
 
   // [ar-strat 배열 시작]
+  holdemStrategy,
+  holdemPositions,
+  holdemContinuationBet,
+  holdemGlossary,
   // [ar-strat 배열 끝]
 ];
 
