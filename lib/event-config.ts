@@ -75,6 +75,8 @@ const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused
   en: { open: "Entries open", closed: "Entries closed", paused: "Coming soon", draw: "Scheduled draw", next: "Next entries open", round: "Round", conditions: (p, l) => `Log in · Write ${p} community post · Receive ${l} like on your posts` },
   ja: { open: "受付中", closed: "今週の受付終了", paused: "準備中", draw: "抽選予定", next: "次回受付開始", round: "回", conditions: (p, l) => `ログイン・投稿${p}件・自分の投稿にいいね${l}件` },
   zh: { open: "报名中", closed: "本期报名结束", paused: "准备中", draw: "计划开奖", next: "下期报名", round: "期数", conditions: (p, l) => `登录 · 发帖${p}篇 · 自己的帖子获得${l}个赞` },
+  // zh-hant — 2026-10-14 tool-lanes 🅰 헤드 요청(번체 페이지에 간체 «准备中»이 보였다 · 그전엔 zh로 떨어뜨렸다).
+  "zh-hant": { open: "報名中", closed: "本期報名結束", paused: "準備中", draw: "預計開獎", next: "下期報名", round: "期數", conditions: (p, l) => `登入 · 發文${p}篇 · 自己的貼文獲得${l}個讚` },
   es: { open: "Inscripciones abiertas", closed: "Inscripciones cerradas", paused: "Próximamente", draw: "Sorteo previsto", next: "Próxima inscripción", round: "Ronda", conditions: (p, l) => `Inicia sesión · Publica ${p} entrada · Recibe ${l} me gusta` },
   de: { open: "Teilnahme offen", closed: "Teilnahme geschlossen", paused: "Demnächst", draw: "Geplante Ziehung", next: "Nächste Teilnahme", round: "Runde", conditions: (p, l) => `Anmelden · ${p} Beitrag schreiben · ${l} Like erhalten` },
   pt: { open: "Inscrições abertas", closed: "Inscrições encerradas", paused: "Em breve", draw: "Sorteio previsto", next: "Próxima inscrição", round: "Rodada", conditions: (p, l) => `Entre · Publique ${p} postagem · Receba ${l} curtida` },
@@ -89,7 +91,7 @@ const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused
 };
 
 export function getEventLabels(lang: string) {
-  return EVENT_STATUS_LABELS[lang === "zh-hant" ? "zh" : lang] ?? EVENT_STATUS_LABELS.en;
+  return EVENT_STATUS_LABELS[lang] ?? EVENT_STATUS_LABELS.en;
 }
 
 /**
