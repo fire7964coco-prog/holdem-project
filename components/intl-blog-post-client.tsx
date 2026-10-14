@@ -60,6 +60,8 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   vi: { title: "Máy tính xác suất poker", subtitle: "Equity, outs và pot odds tức thì" },
   // ★2026-10-13 ru 계산기 회차 — title = /ru/calculator HubPage title 축어 · subtitle = 형제 부제의 세 용어를 ru 사전 표기로.
   ru: { title: "Покерный калькулятор", subtitle: "Эквити, ауты и пот-оддсы за секунду" },
+  // ★2026-10-14 tool-lanes 🅲 ar 회차 1 — title = /ar/calculator HubPage title 축어 · subtitle = 형제 부제의 세 용어를 ar 코퍼스 표기로(الإكويتي · الأوتس · بوت أودز).
+  ar: { title: "حاسبة احتمالات البوكر", subtitle: "الإكويتي والأوتس وبوت أودز فورًا" },
 };
 
 /**
