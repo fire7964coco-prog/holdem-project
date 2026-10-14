@@ -1,3 +1,7 @@
+## 2026-10-14 (4) — 🅱 fr·ru 대회 보드 머지·배포 `de6ad93a` · MB-325
+
+- 판정표 20행(WRONG 6 채택 · 기각 근거 있음) · 기계 대조 147행×2 불일치 0 · 게이트 BOARD_LOCALES +fr·ru. 빌드 exit 0 · 라이브 200·index,follow·hreflang 16 · IndexNow. 헤드 요청 8건 = queue §2-CB · 시한 있는 `ps-open-aix` 시작일(1일 vs 2일)은 update-calendar «10/31까지» — 영문 운영사 페이지는 스크립트 렌더라 WebFetch·Playwright innerText 둘 다 빈 응답(판정 보류).
+
 ## 2026-10-14 (3) — 🅲 ar 계산기·핸드차트 머지·배포 `a600e042`+`27d5bc7c` · MB-324
 
 - 레인 판정표 37행(채택 26) · 🔴 H-1(배포 차단) = 공용 13열 격자·카드 선택기 RTL 거울상 → 헤드 수정: RTL 로케일만 스크롤 상자 dir=ltr. 처음엔 격자 안쪽에 걸었다가 390 실측에서 A열이 화면 밖(x=-95 · RTL 가로 스크롤이 오른쪽에서 시작) → 스크롤 상자로 옮김(AA x=45). EN 격자 dir 속성 0. H-2 ar 입문 글 도구 링크 /ar. 라이브 200·lang ar·index,follow · IndexNow. 잔여 = queue §2-CA. 🅲 회차 2(시뮬레이터) 착수 안내.

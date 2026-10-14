@@ -46,6 +46,9 @@
 - **스톱 종료 다음 날 과거형 전환**: VPT 10/19 · 888 Noche 11/9 · Queen Poker Series 11/30 · partypoker 12/7 · 연말 = 2027 «paradas» 공지 확인(공식 /paradas-de-poker-2026/ 후속 페이지).
 - 유지 못 하면: 월별 날짜를 빼고 «정기 포맷(요일·바이인)»만 남긴다(시트 §0).
 
+### 🆕 10/31까지 — `ps-open-aix` 시작일 판정 (2026-10-14 tool-lanes 🅱 헤드 요청 · queue §2-CB CB-1)
+- `lib/tournaments.ts` `ps-open-aix` = 2026-11-02~08. 운영사 ru판(pokerstarslive.com/ru/pokerstarsopen/aixenprovence · 10-14 열람)에 «1-8 ноября 2026 г.»·«2-8 ноября 2026 г.» 공존(축제 시작 vs Main Event 추정). 영문 페이지는 스크립트 렌더라 WebFetch 빈 응답 → Playwright로 일정표를 직접 열어 판정. 바뀌면 13로케일 보드 문장(fr faqs[0]·localBlocks[0] 등) 동기화.
+
 ### 10/25 · 11/8 · 11/9 이후 — 가이드 3편 결과 아카이브 전환
 - APL 서울(10/25 종료) · GOP 인천 II(11/8) · WPT 서울(11/9) — 선례 `apt-incheon-2026-guide`처럼 우승자·엔트리·상금풀을 1차 출처로 확인해 훅을 «결과»로 전환. WPT 온라인 예선 절(10/25 마감)은 종료 후 과거형으로.
 - WPT: 10/25 이후 온라인 퀄리파이어 종료 문구 반영.
