@@ -1,0 +1,5 @@
+[Confirm signup 제목]
+HoldemMaster — 이메일 인증 / Confirm your email
+
+[Reset password 제목]
+HoldemMaster — 비밀번호 재설정 / Reset your password
