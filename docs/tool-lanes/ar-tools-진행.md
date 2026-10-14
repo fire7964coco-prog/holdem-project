@@ -1,6 +1,6 @@
 # 🅲 ar 도구 레인 진행 (`lane-ar-tools`)
 
-> 정본 = `docs/tool-lanes-2026-10-14.md` · 브리프 = `docs/tool-lanes/ar-tools-r1-brief.md`.
+> 정본 = `docs/tool-lanes-2026-10-14.md` · 브리프 = 회차 1 `docs/tool-lanes/ar-tools-r1-brief.md` · 회차 2 `docs/tool-lanes/ar-tools-r2-brief.md`.
 
 ## 실행 기록
 
@@ -9,6 +9,7 @@
 | 회차 1 A | 10:46 | 12:16 (14:45 절대 정지) | Opus 5.5 본체 · DataForSEO 6호출 · 아스트라 codex(gpt-6-astra · read-only · 스크래치) · Fable 서브 1회(카피) | codex PID 26012(node 46160) — 10:55 exit=0 자연 종료 확인 · 스크래치 `astra-ar-tools-A` | ✅ 10:58 끝 |
 | 회차 1 B | 11:01 | 12:31 (14:45 절대 정지) | Opus 5.5 본체만(서브·외부 모델 호출 0) | `npm run build` 1회(백그라운드 · 내가 띄운 것 · exit 0 자연 종료) | ✅ 끝(«11:50»은 오기 — `.next/BUILD_ID` 11:12 · C 시작 11:24) · 🔴 **미커밋**(정본 §1 C-7에서 커밋) |
 | 회차 1 C | 11:24 | 12:54 (14:45 절대 정지) | Opus 5.5 본체(새 맥락) · 렌즈 3 + 2차 교열 1 Agent(opus) · 아스트라 codex(gpt-6-astra · read-only · 스크래치 `astra-ar-tools-C`) | codex PID 14202 — exit 0 자연 종료 · `next start` PID 26864·22664 — 명령줄 대조 후 내가 종료 · `npm run build` 2회 exit 0 | ✅ 끝 · 커밋 |
+| 회차 2 A | 11:57 | 13:27 (14:45 절대 정지) | Opus 5.5 본체 · DataForSEO 6호출(볼륨 4 · SERP 1 · 자동완성 2 — 응답 cost 필드만) · 아스트라 codex(gpt-6-astra · read-only · 스크래치 `astra-ar-tools-r2-A`) · Fable 서브 1회(카피) | codex node PID 21880 / codex 39272(12:03:07 생성 · 내가 띄운 것) | ✅ 12:14 끝 · codex 12:10 exit=0 자연 종료 |
 
 사용량: 계정 할당량 지표는 이 세션에서 관측 불가 → 숫자 추정하지 않음. DFS 호출 비용은 응답 `cost` 필드로만(0.09 등).
 
@@ -96,6 +97,16 @@
 2차 교열(고친 22자리 재판정): 나머지 18 OK. 반영 후 `check:calc-parity -- ar` 0 · `npm run build` exit 0(postbuild hreflang·directives·meta-lang 0) · `seo-sync` 🔴0 · `intl-links` 통과 · 화면 재실측(차트 선택 줄 RTL 순서 정상 · «M في البطولات» 탭 한 줄 50px).
 
 딜러 렌즈 «수치 오류 0»(아웃츠 20 · 팟 오즈 9 · ICM 2 예제 · 에퀴티 14 · FAQ 수치 전건 재계산) · 아스트라 독립 검산도 같은 결론(1,712,304 보드 전수 · ICM 재귀).
+
+## 회차 2 A 결과 (`/ar/win-rate-quiz`)
+
+- `git merge main` = 🅰 zh-hant·회차 1 머지·헤드 RTL `27d5bc7c` 수령(22파일).
+- 선례 = zh-hant `4a26acb9` · ru `7efdcdd3`(`pl()` 헬퍼 꼴). ar엔 `/ar/solver`가 없어 솔버 표 행 자리 없음.
+- 헤드텀 〔DFS〕 → `docs/keyword-bank/ar-tools.md` §5: poker simulator·trainer SA 10 · EG 10 · 아랍어 시뮬레이터 구 전부 null · SERP «محاكي البوكر» = 앱 2 + 게임 · 아랍어 웹 연습 도구 0.
+- 솔버 앱 `i18n.ts` 〔실측〕 `lang=ar` 무시 → `solverLang: "en"` 명시(브리프 §6).
+- Fable 카피 2안 → 안 A + Opus 조정 1(브리프 §4) · 아스트라 18행 → WRONG 1·RISKY 1 채택(브리프 §7).
+- 🔴 RTL 예상 결함 R-1~R-5(브리프 §8 · 코드 판독) — 특히 **R-3 퀴즈 슬라이더**(네이티브 range가 RTL에서 반전 · 표식은 `left:%`)는 확정되면 배포 차단급 → C 화면에서 확정 후 헤드 요청.
+- ▶ **B 첫 명령**: `/clear` 뒤 «HARDEN.md 읽고 회차 2 B 시작해» — 입력 = `docs/tool-lanes/ar-tools-r2-brief.md` 하나.
 
 ## 신규 용어 (코퍼스 0)
 
