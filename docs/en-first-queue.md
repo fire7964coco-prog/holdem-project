@@ -1236,6 +1236,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CC-4 | tr blind·all-in·showdown·hand-rankings | ▶ 〃 `ma542-tr-b-changes.md` |
 
 - 처방 = 재작성 아님 · EN 현행 문면 이식 · tr SERP 보강 H2/FAQ(MB-187~190)·hi 구판 구조 유지. 회신 = MB 1행(해시 + 글별 전/후).
+- ✅ CC-1~4 이행 2026-10-14 — 머지 `07fbde9a`·`1fcacdaf`·`24b45bb1`·`68a4bebf` · MB-328.
+- 🪶 남김: CC-5 EN-먼저 = EN «NL 최소 베팅 = BB» 문장에 BB 미만 올인(WSOP LA 174) 단서(hi 아스트라 NOTE) · CC-6 hi game-order seoTitle·desc·H2 «who bets first» 축 = hi SERP 실측 뒤 · CC-7 hi·tr hand-rankings EN FAQ 4~5문항(플러시를 이기는 패 등) 미이식 = 현지 FAQ 재구성 상태라 추가 여부 판단 · CC-8 tr «en pahalı alışkanlık» 최상급·«En küçük bahisle başla» 실돈 바이인(T1 관할) = EN과 같은 문장.
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)

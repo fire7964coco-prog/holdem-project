@@ -1,3 +1,7 @@
+## 2026-10-14 (7) — MA-542 긴급: hi·tr rules 6편 + hand-rankings EN 재동기화 · MB-328
+
+- 서브 4(hi A·B · tr A·B · 워크트리 격리) — EN base(masterUpdated 시점)~HEAD diff 분류 → 빠진 자리만 이식(이미 반영된 자리 다수 · masterUpdated만 7월이던 글 많음) · §13 · audit:hard · build · 아스트라 교차(4회 · 의미 불일치 0). 머지 4 → audit hi 21/21·tr 20/20 🔴0 · build exit 0 → push `2abd80b2`. 교훈: 서브끼리 스크래치 아스트라 폴더 이름(astra-ma542)이 겹쳐 hi B 첫 실행 무효·tr A가 사본 덮어씀 → 다음엔 폴더명에 레인 id를 넣어 지시.
+
 ## 2026-10-14 (6) — 🅲 ar 시뮬레이터 머지·배포 `92754c9f`+`f7cbe89b` · MB-327
 
 - 레인 H-5(배포 차단 · 공용 시뮬레이터 RTL): 카드 랭크 잘림(svg text가 rtl 상속) · 에퀴티 막대 채움↔눈금 반대 · 슬라이더 반전 · 격자 거울상 · «max-6». 헤드 수정 = 카드 svg direction=ltr(전 로케일) + QuizUI.rtl(ar만 dir=ltr 5자리) + 표 머리 text-start. 실측 통과 · 라이브 200 · IndexNow. 도구 레인 3개 전부 배포 완료.
