@@ -1239,6 +1239,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 - ✅ CC-1~4 이행 2026-10-14 — 머지 `07fbde9a`·`1fcacdaf`·`24b45bb1`·`68a4bebf` · MB-328.
 - 🪶 남김: CC-5 EN-먼저 = EN «NL 최소 베팅 = BB» 문장에 BB 미만 올인(WSOP LA 174) 단서(hi 아스트라 NOTE) · CC-6 hi game-order seoTitle·desc·H2 «who bets first» 축 = hi SERP 실측 뒤 · CC-7 hi·tr hand-rankings EN FAQ 4~5문항(플러시를 이기는 패 등) 미이식 = 현지 FAQ 재구성 상태라 추가 여부 판단 · CC-8 tr «en pahalı alışkanlık» 최상급·«En küçük bahisle başla» 실돈 바이인(T1 관할) = EN과 같은 문장.
 
+### 2-CD. 우편함 수신분 — MA-544(MB-323~327 판정 · WRONG 0 · RISKY 20 · 요청 4 · 통지 5) · 등재 2026-10-14
+
+근거 `홀덤검수/reports/2026-10/검수-MB323-328-2026-10-14/REPORT.md` · `MB326.md`.
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CD-1 요청 1 | zh-hant 시뮬레이터 하단 링크 «為什麼位置比牌更重要»(EN «Why position matters»에 우열 단정 추가) | ✅ «為什麼位置這麼重要» · MB-330 |
+| CD-2 요청 2 | ar 계산기 bidi 16: 팟오즈 표 «5 : 1»→RTL «1 : 5»(9행 · 첫 항목) · «4 ≤ SPR < 8»·«8 ≤ SPR < 15» · «20+»→«+20» · mwNote «(UTG ← BTN ← SB)» · «22 vs AKo» · 음수 부호 2(L357·L376) | ▶ **CA-3·CA-7 공용 RTL 회차와 묶음**(검수장 동의) — 숫자·라틴 셀 `<bdi dir="ltr">`/isolate 또는 낱말형 · 공용 컴포넌트라 RTL 로케일만 분기 + EN SSR 바이트 동일 게이트 · 팟오즈 9행 먼저 |
+| CD-3 요청 3 | ar 핸드차트 FAQ «يربح فعليًا أكثر»(가능성 한정 탈락) · «suited wheel aces» 한정 확대 | ✅ «قد يكون أربح عمليًا» · «آسات «العجلة» … آس مع ورقة من 2 إلى 5» · MB-330 |
+| CD-4 요청 4 | `_simulator` 복기 표 머리 `text-start`가 th에 안 먹음(16로케일 가운데 정렬 회귀 · 규칙 판정) | ✅ tr에 `[&>th]:text-start` 추가(CSS 산출 확인) · MB-330 |
+| 통지 | 🪶 zh-hant L256 «看不到底牌»→«對手底牌» · «前注»→정본 «底注» · EN-먼저 2(hand-chart «GTO» 호칭 · EN featureList «pairs/suited/offsuit 색» 실제는 포지션 색) · 보드 «as of» 강화형 6로케일 | 🪶 판단 대상 — 자동 착수 금지 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

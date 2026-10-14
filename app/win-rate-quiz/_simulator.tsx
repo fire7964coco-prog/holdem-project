@@ -1779,7 +1779,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="overflow-x-auto">
               <table className={`w-full ${hasAnswers ? "text-[11px]" : "text-xs"} tabular-nums`}>
                 <thead>
-                  <tr className="text-muted-foreground text-start">
+                  <tr className="text-muted-foreground text-start [&>th]:text-start">
                     {(hasAnswers
                       ? [...ui.reviewCols, ...(guessList.length ? [ui.quizGuessCol] : []), ui.quizChoiceCol, ...(decisionCount ? [ui.actualCol] : [])]
                       : ui.reviewCols)

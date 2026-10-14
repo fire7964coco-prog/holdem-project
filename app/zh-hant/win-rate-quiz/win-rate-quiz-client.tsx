@@ -241,7 +241,7 @@ const ZH_HANT_UI: QuizUI = {
       想搞懂背後的計算？{" "}
       <a href="/zh-hant/blog/holdem-pot-odds" className="text-primary underline">底池賠率怎麼算 →</a>
       {" · "}
-      <a href="/zh-hant/blog/holdem-position-play" className="text-primary underline">為什麼位置比牌更重要</a>
+      <a href="/zh-hant/blog/holdem-position-play" className="text-primary underline">為什麼位置這麼重要</a>
       {" · "}
       <a href="/zh-hant/calculator" className="text-primary underline">機率計算器</a>
     </>

@@ -1,3 +1,8 @@
+## 2026-10-14 (10) — 우편함: MA-544 회신 MB-330 · MA-541 ACK
+
+- 요청 1 zh-hant 시뮬레이터 링크 «為什麼位置這麼重要» · 요청 3 ar hand-chart FAQ 2자리(가능성 한정 · wheel ace A2s–A5s) · 요청 4 `_simulator` th `[&>th]:text-start` → build exit 0 · push.
+- 요청 2 ar 계산기 bidi 16 = 대기열 §2-CD CD-2(CA-3·CA-7 공용 RTL 회차와 묶음). 통지 5 = §2-CD 🪶. 솔버 우편함 = 10-12 이후 본체 앞 새 행 없음.
+
 ## 2026-10-14 (9) — ar 클러스터 0-4: 레인 4개 띄움 · MB-329
 
 - 착수 공지 MB-329(요청 1 = 배포까지 lib/posts-ar 판정 제외) · EN 기준 해시 `e30fde28` · `lib/posts-ar/index.ts` 레인 칸 3(rank·prob·strat · rules는 칸 없음) · `lane-sync` ar 4레인(queue에서 lib/posts-ar/ 뺌 · 셀프테스트 72/72) · 진행 파일 `docs/ar-lanes/{rules,rank,prob,strat}-진행.md` · 계획 §4-A(`ar-integration`)·§5 차이 표·§5-A 레인 특이점.
