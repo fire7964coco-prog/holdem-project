@@ -101,6 +101,8 @@
 
 - 🔴 **레인은 main이 아니라 `ar-integration`(폴더 `Holdem-ar-head` · 첫 레인 C가 끝날 때 헤드가 만든다)에 머지한다.** main에 넣으면 그때부터 main을 push할 수 없다(반쪽 ar + 끊긴 링크가 라이브). 배포 회차에 `ar-integration` → main 머지 1회.
 - 통합 트리 빌드 = `npx next build`(prebuild의 intl-links는 전 레인 머지 전까지 실패가 정상). 🔴 `Holdem-ar-head`에 `.env.local` 복사(정리 때 같이 삭제).
+- 머지 기록(10-14 · 통합 트리 `Holdem-ar-head` · main `19a061b4`에서 분기): ✅ 🅱 rank `33fad8b1`(충돌 0) · `#kicker` 앵커 = 소스 L191 `<a id="kicker">` + 산출 HTML 1 ✓(🅲 prob 링크 4편 대상) · audit:hard ar 🔴 0 · `npx next build` exit 0 · 헤드 판정: 그리드 부제 «الطيّ» → «رمي أوراقك دون كشفها»(ar showdown 글 muck 표기와 일치) · 🔴 RTL 카드열 결함 → queue §2-CD CD-5(공용 RTL 회차)
+- 🔴 배포 회차 추가 ⓐ readTime 통일(🅲 prob 요청): 아랍어 문법대로 **3~10 = «N دقائق» · 11 이상 = «N دقيقة»** — 기존 ar 글의 «9 دقيقة»·«10 دقيقة»도 이때 함께 고친다(전 레인 머지 뒤 기계 치환 1회) ⓑ `#kicker` 링크 대조(🅲 prob 4편 → hand-rankings)
 - 배포 회차: ① 🔴 date — 신규 7편(probability · pot-odds · tournament · strategy · positions · continuation-bet · glossary) `date` = 배포일 · 기존 8편은 원래 date ② `/ar/calculator`·`/ar/hand-chart` quickRef·related를 새 글로 연결(EN 대응 · 없는 글은 빈 칸 유지) ③ main → ar-integration 머지 → `npm run build`(sitemap ar 15 확인) → ff → push ④ 라이브 Playwright(`/ar/blog` 15 · 글 1편 RTL) ⑤ MB 1행 + 검수장에 배포 해시로 ar 1회 요청 ⑥ IndexNow ⑦ 사장님 GSC 수동 색인 목록 ⑧ 마감(워크트리 4 + head 정리 · `node_modules` 정션은 `rmdir`로 링크만).
 
 ## 5. 레인 운영 — vi §5 «차이 표»를 ar로 읽는다 (0-4 · 10-14)

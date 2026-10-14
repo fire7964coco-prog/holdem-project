@@ -1249,6 +1249,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CD-2 요청 2 | ar 계산기 bidi 16: 팟오즈 표 «5 : 1»→RTL «1 : 5»(9행 · 첫 항목) · «4 ≤ SPR < 8»·«8 ≤ SPR < 15» · «20+»→«+20» · mwNote «(UTG ← BTN ← SB)» · «22 vs AKo» · 음수 부호 2(L357·L376) | ▶ **CA-3·CA-7 공용 RTL 회차와 묶음**(검수장 동의) — 숫자·라틴 셀 `<bdi dir="ltr">`/isolate 또는 낱말형 · 공용 컴포넌트라 RTL 로케일만 분기 + EN SSR 바이트 동일 게이트 · 팟오즈 9행 먼저 |
 | CD-3 요청 3 | ar 핸드차트 FAQ «يربح فعليًا أكثر»(가능성 한정 탈락) · «suited wheel aces» 한정 확대 | ✅ «قد يكون أربح عمليًا» · «آسات «العجلة» … آس مع ورقة من 2 إلى 5» · MB-330 |
 | CD-4 요청 4 | `_simulator` 복기 표 머리 `text-start`가 th에 안 먹음(16로케일 가운데 정렬 회귀 · 규칙 판정) | ✅ tr에 `[&>th]:text-start` 추가(CSS 산출 확인) · MB-330 |
+| CD-5 (ar-rank 레인 C · 10-14) | 블로그 렌더러: 아랍어 문단 안 라틴 카드열 «A♣ A♥ 7♦ 5♣ 2♠»가 무늬 앞붙음으로 보이고, 하이픈 묶음 «A-A-K مقابل A-A-Q»가 줄 끝에서 «A-A-» / «Q»로 쪼개짐(표·:::hand·:::tiebreak 안은 정상 · 캡처 `Holdem-ar-rank/tmp/screen/ar-rank-C2/390/seg-14.png`) · 라이브 ar 8편도 같은 영향 추정 | ▶ CD-2와 같은 **공용 RTL 회차** — `lib/render-markdown.ts`가 RTL 로케일에서만 카드 토큰·카드열을 `<bdi dir="ltr">`(isolate)로 감싸기 · 글 본문 제어문자 삽입 금지(ar 계획 §5) · 비-RTL 산출 바이트 동일 게이트 |
 | 통지 | 🪶 zh-hant L256 «看不到底牌»→«對手底牌» · «前注»→정본 «底注» · EN-먼저 2(hand-chart «GTO» 호칭 · EN featureList «pairs/suited/offsuit 색» 실제는 포지션 색) · 보드 «as of» 강화형 6로케일 | 🪶 판단 대상 — 자동 착수 금지 |
 
 
