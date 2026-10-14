@@ -272,7 +272,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 라벨은 검증된
    *   값에서: "Blog" = CHROME.fr.blogLabel(lib/intl.ts) · "Solver GTO"는 솔버 본체를 `?lang=fr`로
    *   열어 읽은 title 축어(«HoldemMaster GTO Trainer — **Solver et trainer GTO** gratuits…»)에서
-   *   딴 것이다. ⚠ **`/fr/tournaments`는 없다** — 다른 로케일 항목을 복사하지 마라.
+   *   딴 것이다. ⚠ 다른 로케일 항목을 복사하지 마라 — `/fr/tournaments`는 2026-10-14에 생겼고 아래에 따로 넣었다.
    *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 어순 규율(solver poker 320)과 층이 다르다.
    */
   fr: [
@@ -288,6 +288,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/fr/glossary", icon: "📖", label: "Lexique du poker" },
     // ★2026-10-13 `/fr/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/fr/win-rate-quiz", icon: "📈", label: "Simulateur poker" },
+    // ★2026-10-14 `/fr/tournaments` 신설(tool-lanes 🅱). 라벨 = 그 페이지 HubPage title 축어(BOARD_STRINGS.fr h1 핵심명).
+    { href: "/fr/tournaments", icon: "🏆", label: "Tournois" },
   ],
   /**
    * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:
@@ -351,7 +353,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
    *   - CHROME.ru.blogLabel «Блог» (lib/intl.ts)
    *   - "GTO-солвер" = 그 페이지 HubPage title 축어
    *   - "Покерный калькулятор" = ★2026-10-13 `/ru/calculator` HubPage title 축어(ru 계산기 회차)
-   *   ⚠ ru에는 hand-chart·glossary·tournaments가 없다 — 넣지 마라.
+   *   - "Турниры" = ★2026-10-14 `/ru/tournaments` HubPage title 축어(tool-lanes 🅱)
+   *   ⚠ ru에는 hand-chart·glossary가 없다 — 넣지 마라.
    */
   ru: [
     { href: "/ru/blog",   icon: "📚", label: CHROME.ru.blogLabel },
@@ -359,6 +362,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     // ★2026-10-13 `/ru/win-rate-quiz` 신설(시뮬레이터 언어 확대 1차 회차 L1). 라벨 = 그 페이지 HubPage title 축어.
     { href: "/ru/win-rate-quiz", icon: "📈", label: "Покерный тренажёр" },
     { href: "/ru/solver", icon: "🧠", label: "GTO-солвер" },
+    { href: "/ru/tournaments", icon: "🏆", label: "Турниры" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.
   hi: [

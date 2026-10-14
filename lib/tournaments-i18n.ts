@@ -32,7 +32,7 @@ function clamp(text: string, max: number): string {
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
-export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr" | "hi" | "ar";
+export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr" | "hi" | "ar" | "fr" | "ru";
 
 export interface BoardStrings {
   /** <html lang> 및 og:locale용 */
@@ -1398,7 +1398,189 @@ const ar: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr, hi, ar };
+/* ────────────────────────────────────────────────────────────
+   fr — 2026-10-14 tool-lanes 🅱. 프랑스(+벨기에·스위스·모나코) · tu체(fr 코퍼스 규칙).
+   헤드텀 = tournoi poker 1,900 · calendrier tournoi poker 2026 390 (docs/keyword-bank/fr-tournament.md).
+   🔴 수요 대부분은 프랑스 국내 클럽 일정 — 데이터에 없으니 약속하지 않는다.
+   정서법: ? ! : ; 앞과 « » 안쪽 = U+00A0 · 천 단위 = U+202F(fr-FR Intl) · 통화 앞붙임(보드 공통 정책).
+   NOTE 비움 · 합법성 축 없음. 브리프 = docs/tool-lanes/tour-frru-brief.md
+   ──────────────────────────────────────────────────────────── */
+const fr: BoardStrings = {
+  htmlLang: "fr",
+  ogLocale: "fr_FR",
+
+  metaTitle: (next, mmdd) => {
+    const hooked = `Tournois de poker 2026 — ${next} dès le ${mmdd}`;
+    return next && hooked.length <= 55 ? hooked : "Calendrier tournoi poker 2026 — dates et buy-in";
+  },
+  // 고정부가 ~148자라 «En cours : …»를 붙이면 clamp가 «… En»처럼 문장 머리만 남긴다 → 통째로 들어갈 때만 붙인다.
+  metaDescription: (todayDot, ongoing) => {
+    const base = `Quels tournois de poker jouer en 2026 ? Dates, buy-in et source officielle de chaque tournoi live, sur un seul calendrier. Mis à jour le ${todayDot}.`;
+    const full = `${base} ${ongoing}`.trim();
+    return full.length <= 158 ? full : base;
+  },
+
+  h1: "Tournois de poker 2026 — calendrier",
+  heroLead:
+    "Chaque tournoi ci-dessous a été vérifié sur le site de son organisateur, et chaque carte renvoie vers la page que nous avons consultée. Le statut change tout seul selon les dates. Les calendriers bougent : avant de bloquer tes dates, vérifie la page officielle — c'est elle qui a le dernier mot.",
+  // 보드(공용)는 «2026.10.14»를 넘긴다 → 프랑스식 «14/10/2026»
+  asOf: (dot) => `Mis à jour le ${dot.split(".").reverse().join("/")}`,
+
+  filterAll: "Tous",
+  filterUpcoming: "À venir",
+  filterOngoing: "En cours",
+  filterEnded: "Terminés",
+
+  filterAllCountries: "Tous les pays",
+  homeCountryNames: { FR: "France", BE: "Belgique", CH: "Suisse", MC: "Monaco" },
+
+  colDates: "Dates",
+  colBuyin: "Buy-in",
+  colVenue: "Lieu",
+
+  status: { upcoming: "À venir", ongoing: "En cours", ended: "Terminé" },
+  yearRound: "Toute l'année",
+  datesTba: "Dates à confirmer",
+  officialSite: "Site officiel",
+  guideLink: "Guide complet",
+  buyinUnlisted: "Non communiqué",
+
+  countsLine: (total, countries) => `${total} tournois · ${countries} pays`,
+  sourceNote:
+    "Quand la page de l'organisateur affichait encore les informations de l'année précédente, nous avons préféré ne pas mettre de lien plutôt que de t'y envoyer.",
+  emptyState: "Aucun tournoi ne correspond à ce filtre pour le moment.",
+  koLink: "Calendrier en coréen →",
+
+  faqHeading: "Questions fréquentes",
+  faqs: [
+    {
+      q: "Quels sont les grands tournois de poker en 2026 en France et en Belgique ?",
+      a: "Sur ce calendrier, la France compte trois étapes : l'EPT Paris (18 février – 1er mars 2026, Le Palais des Congrès) et le WSOP Circuit Paris (1er–14 septembre, Partouche Casino Club), déjà terminés, puis le PokerStars Open Aix-en-Provence (2–8 novembre, Pasino GRAND Partouche ; Main Event à €1 100, €1 000 000 garantis). En Belgique, le BPC Megastack Edition (17–27 septembre, Namur) est terminé et le WSOP Circuit Middelkerke a lieu du 6 au 15 novembre. Les filtres « France » et « Belgique » n'affichent que ceux-là.",
+    },
+    {
+      q: "Tout le monde peut-il s'inscrire à ces tournois ?",
+      a: "Pour la plupart, oui, mais pas pour tous. La Triton Super High Roller Series fonctionne sur recommandation : il n'y a pas de satellites, et l'argent seul ne garantit pas une place. Le Holdem Masters, en Corée, se joue sur invitation uniquement, sans buy-in en argent. L'APT Championships s'ouvre sur une journée réservée aux professionnels du secteur (Event 0), la veille du programme ouvert au public. Et certains événements n'acceptent que des tickets, comme l'APL Seoul (uniquement avec un ticket d'entrée, ou seat) — ces conditions figurent sur la carte.",
+    },
+    {
+      q: "Combien coûte le buy-in ?",
+      a: "La fourchette est large, et encore plus au sein d'une même série. Le Main Event d'un grand circuit coûte souvent plusieurs milliers, alors que les side events de la même série ont des buy-ins bien plus bas — c'est pour ça que beaucoup de cartes affichent une fourchette plutôt qu'un seul montant. Chaque carte indique le buy-in dans sa devise d'origine. Quand il n'y a pas de montant, l'organisateur ne l'a pas encore communiqué : nous ne l'estimons pas.",
+    },
+    {
+      q: "Comment jouer un gros Main Event sans payer le plein tarif ?",
+      a: "Par les satellites. Beaucoup de grandes séries proposent des qualifications avec un buy-in bien inférieur à celui du Main Event. Le détail figure dans le programme de chaque série, pas dans une vue annuelle comme celle-ci — c'est pour ça que chaque carte renvoie directement à la page officielle.",
+    },
+  ],
+
+  localHeading: "Avant de partir",
+  localBlocks: [
+    {
+      title: "Aix-en-Provence en novembre",
+      body: "Le PokerStars Open Aix-en-Provence se tient du 2 au 8 novembre 2026 au Pasino GRAND Partouche. Le Main Event est à €1 100, avec €1 000 000 garantis.",
+    },
+    {
+      title: "Prague en décembre : deux festivals à la suite",
+      body: "L'EPT Prague se déroule du 2 au 13 décembre 2026 au Hilton Hotel Prague. Le PokerStars Open ouvre le festival (Main Event à €1 100, du 2 au 7 décembre), puis vient l'EPT (Main Event à €5 300, du 7 au 13 décembre). Au programme aussi : une Cup à €825 et un High Roller à €10 300.",
+    },
+    {
+      title: "Le buy-in dans la devise de l'organisateur",
+      body: "Les montants apparaissent dans leur devise d'origine, par exemple en euros (€), en dollars (USD/$), en francs suisses (CHF) ou en wons coréens (₩). Nous ne les convertissons pas en euros, car le taux de change bouge tous les jours — fais le calcul au cours du jour où tu paies.",
+    },
+  ],
+};
+
+/* ────────────────────────────────────────────────────────────
+   ru — 2026-10-14 tool-lanes 🅱. 러시아어권 · ты체(ru 코퍼스 규칙).
+   헤드텀 = покерные турниры 480(대리 측정 · 본토 측정 불가) · Yandex 꼬리 «… 2026 расписание»
+   (docs/keyword-bank/ru-tournament.md). 🔴 국내(Сочи·Минск) 일정 약속 금지 · 합법성 축 없음.
+   천 단위 = U+00A0(ru-RU Intl) · 통화 앞붙임(운영사 ru판 «€1 100»과 같음) · 날짜 = 월 생격.
+   대회명은 라틴 유지(hi·ar 선례) · 도시 칸만 공식 ru판 근거가 있는 Прага·Экс-ан-Прованс.
+   ──────────────────────────────────────────────────────────── */
+const ru: BoardStrings = {
+  htmlLang: "ru",
+  ogLocale: "ru_RU",
+
+  // «с {date}»는 2일에 «со 2 …»로 바뀐다 → 전치사 없는 «, старт {date}».
+  metaTitle: (next, mmdd) => {
+    const hooked = `Покерные турниры 2026 — ${next}, старт ${mmdd}`;
+    return next && hooked.length <= 55 ? hooked : "Покерные турниры 2026 — расписание и бай-ины";
+  },
+  // fr와 같은 이유 — «Сейчас идут: …»는 통째로 들어갈 때만 붙인다(clamp가 «Сейчас идут:»만 남기는 것 방지).
+  metaDescription: (todayDot, ongoing) => {
+    const base = `Крупные покерные турниры 2026 со всего мира в одном расписании. Даты, бай-ины и официальный источник по каждому турниру. Обновлено ${todayDot}.`;
+    const full = `${base} ${ongoing}`.trim();
+    return full.length <= 158 ? full : base;
+  },
+
+  h1: "Покерные турниры 2026 — расписание",
+  heroLead:
+    "Каждый турнир ниже сверен с сайтом его организатора, и каждая карточка ведёт на ту самую страницу, с которой мы брали данные. Статус меняется сам, по датам. Расписания сдвигаются, так что прежде чем бронировать билеты, проверь официальную страницу — последнее слово всегда за ней.",
+  // 보드(공용)는 «2026.10.14»를 넘긴다 → 러시아식 «14.10.2026»
+  asOf: (dot) => `Обновлено ${dot.split(".").reverse().join(".")}`,
+
+  filterAll: "Все",
+  filterUpcoming: "Предстоящие",
+  filterOngoing: "Идут сейчас",
+  filterEnded: "Завершённые",
+
+  filterAllCountries: "Все страны",
+  homeCountryNames: { CY: "Кипр", CZ: "Чехия", EE: "Эстония", ME: "Черногория" },
+
+  colDates: "Даты",
+  colBuyin: "Бай-ин",
+  colVenue: "Место",
+
+  status: { upcoming: "Предстоит", ongoing: "Идёт сейчас", ended: "Завершён" },
+  yearRound: "Круглый год",
+  datesTba: "Даты уточняются",
+  officialSite: "Официальный сайт",
+  guideLink: "Подробный гайд",
+  buyinUnlisted: "Не объявлено",
+
+  // 수사 뒤 명사 격변화(1 турнир · 2 турнира · 5 турниров)를 피하는 꼴
+  countsLine: (total, countries) => `Турниров: ${total} · стран: ${countries}`,
+  sourceNote:
+    "Если на странице организатора ещё висели данные прошлого года, ссылку мы не ставили — чтобы не отправлять тебя к устаревшей информации.",
+  emptyState: "Сейчас под этот фильтр ничего не подходит.",
+  koLink: "Расписание на корейском →",
+
+  faqHeading: "Частые вопросы",
+  faqs: [
+    {
+      q: "Какие турниры проходят на Северном Кипре осенью 2026?",
+      a: "В этой таблице на Северном Кипре после Mediterranean Poker Party (17–27 сентября, уже завершилась) идут ещё три осенние серии: WPT Prime Cyprus Championship (15–19 октября 2026, Chamada Prestige Hotel & Spa, Çatalköy; Main Event — $1 100, гарантия $1 000 000), Triton ONE North Cyprus (5–15 ноября, Merit Royal Diamond Hotel & Casino, Kyrenia; бай-ин пока не объявлен) и Triton SHR North Cyprus (15–30 ноября, там же; бай-ины от $25 000 до $150 000) — она идёт сразу после Triton ONE и закрывает сезон. Фильтр «Кипр» покажет только кипрские турниры.",
+    },
+    {
+      q: "Может ли любой желающий участвовать в этих турнирах?",
+      a: "В большинстве — да, но не во всех. Triton Super High Roller Series — только по рекомендации: сателлитов нет, и одних денег для места недостаточно. Holdem Masters в Корее — только по приглашению, денежного бай-ина нет. APT Championships открывается днём только для представителей индустрии (Event 0) накануне открытой программы. А на некоторые турниры пускают только по билетам — например, APL Seoul (только по входному билету, seat). Такие условия указаны в карточке.",
+    },
+    {
+      q: "Сколько стоит бай-ин?",
+      a: "Разброс большой, и внутри одной серии он ещё больше. Main Event крупного тура часто стоит несколько тысяч, а сайд-ивенты той же серии — гораздо дешевле, поэтому во многих карточках указан диапазон, а не одна сумма. В каждой карточке — бай-ин в исходной валюте. Если суммы нет, организатор её ещё не объявил: мы не прикидываем её сами.",
+    },
+    {
+      q: "Как попасть в крупный Main Event, не платя полный бай-ин?",
+      a: "Через сателлиты. Многие крупные серии проводят отборочные турниры с бай-ином намного ниже, чем у Main Event. Подробности — в расписании самой серии, а не в годовом обзоре вроде этого, поэтому каждая карточка ведёт прямо на официальную страницу.",
+    },
+  ],
+
+  localHeading: "Перед поездкой",
+  localBlocks: [
+    {
+      title: "Северный Кипр: WPT Prime и Triton",
+      body: "WPT Prime Cyprus Championship проходит 15–19 октября 2026 в Chamada Prestige Hotel & Spa (Çatalköy). Затем в Merit Royal Diamond Hotel & Casino (Kyrenia) подряд идут Triton ONE North Cyprus (5–15 ноября) и Triton SHR North Cyprus (15–30 ноября). Бай-ин Main Event WPT Prime — $1 100, а в Triton SHR — от $25 000 до $150 000.",
+    },
+    {
+      title: "Чехия: Розвадов и Прага",
+      body: "German Poker Masters €1MILLION проходит 20–30 ноября 2026 в King's Resort Rozvadov: бай-ины от €35 до €600, Main Event — €285 с гарантией €1 000 000. Там же 2–6 декабря — German Poker Days (€35–€199). А со 2 по 13 декабря в Hilton Hotel Prague идёт EPT Prague.",
+    },
+    {
+      title: "Бай-ин в валюте организатора",
+      body: "Суммы указаны в исходной валюте — например, в долларах (USD/$), евро (€) или корейских вонах (₩). Мы не пересчитываем их в рубли, потому что курс меняется каждый день, — считай по курсу того дня, когда будешь платить.",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr, hi, ar, fr, ru };
 
 /**
  * 대회명 현지 표기.
@@ -1436,6 +1618,9 @@ function nameMaps(
   // hi·ar — 지명·국가명은 라틴 그대로(브랜드 검색형 유지 · 음역을 지어내지 않는다). 괄호 속 계절·월만 바꾼다.
   if (locale === "hi") return [{}, PAREN_HI];
   if (locale === "ar") return [{}, PAREN_AR];
+  if (locale === "fr") return [CITY_FR, PAREN_FR];
+  // ru — 대회명은 라틴 유지(hi·ar 선례). 키릴 도시명(CITY_RU)은 카드 도시 칸(localizeCity)에만 쓴다.
+  if (locale === "ru") return [{}, PAREN_RU];
   return null;
 }
 
@@ -1480,6 +1665,11 @@ const COUNTRY_NAME: Partial<Record<BoardLocale, Record<string, string>>> = {
   tr: {
     "North Cyprus": "Kuzey Kıbrıs", Korea: "Kore", Australia: "Avustralya",
     Canada: "Kanada", Montenegro: "Karadağ", Taiwan: "Tayvan",
+  },
+  // fr — 철자가 실제로 갈리는 것만(CLDR fr: Australie·Monténégro·Taïwan). Vietnam·Canada는 그대로.
+  fr: {
+    "North Cyprus": "Chypre du Nord", Korea: "Corée", Australia: "Australie",
+    Montenegro: "Monténégro", Taiwan: "Taïwan",
   },
 };
 
@@ -1556,6 +1746,23 @@ const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
     "holdem-masters-8": "Holdem Masters — النسخة 8",
     "holdem-masters-9": "Holdem Masters — النسخة 9",
     "wsop-2026": "WSOP 2026 — النسخة 57",
+  },
+  // fr·ru — WSOP는 «édition»·«серия»를 붙여 서수의 성·수 일치를 분명히 한다(«les WSOP» 복수 회피).
+  fr: {
+    "holdem-masters-7": "7e Holdem Masters",
+    "holdem-masters-8": "8e Holdem Masters",
+    "holdem-masters-9": "9e Holdem Masters",
+    "wsop-2026": "WSOP 2026 (57e édition)",
+    "hpt-5": "5e HPT (Hangame Poker Tour)",
+    "pcso-40-luzern": "40e Poker Circle Swiss Open",
+  },
+  ru: {
+    "holdem-masters-7": "7-й Holdem Masters",
+    "holdem-masters-8": "8-й Holdem Masters",
+    "holdem-masters-9": "9-й Holdem Masters",
+    "wsop-2026": "WSOP 2026 (57-я серия)",
+    "hpt-5": "5-й HPT (Hangame Poker Tour)",
+    "pcso-40-luzern": "40-й Poker Circle Swiss Open",
   },
   es: {
     "holdem-masters-7": "7.º Holdem Masters",
@@ -2582,6 +2789,115 @@ const SCHEMA_DESC_AR: Record<string, string> = {
   "apt-jeju-fall": "محطة Jeju الخريفية لعام 2026 من Asian Poker Tour: 135 حدثًا، وضمان ₩2.2 مليار للحدث الرئيسي.",
   "wpt-seoul": "أول بطولة لـ World Poker Tour في INSPIRE Entertainment Resort: 45 حدثًا، وضمان ₩1 مليار للحدث الرئيسي.",
 };
+/* fr · ru 값 사전 (2026-10-14 · tool-lanes 🅱). 수치는 §13 불변 — 표기만 옮긴다.
+   천 단위: fr U+202F · ru U+00A0 (사전 밖 라틴 값은 localizeThousands가 같은 문자로 바꾼다).
+   소수 쉼표 · 통화 기호는 데이터처럼 앞붙임. KRW 단위: fr millions/milliards · ru тыс./млн/млрд. */
+const FIELD_FR: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (exploité par King's Casino Prague)",
+  "공식 미기재": "Non communiqué",
+  "미정 (공식 미기재)": "À confirmer (non communiqué)",
+  "미발표": "Non communiqué",
+  "다양": "Variable selon l'épreuve",
+  "무료": "Gratuit",
+  "새틀라이트 티켓 전용": "Uniquement avec un ticket satellite",
+  "참가권(SEAT) 전용": "Uniquement avec un ticket d'entrée (seat)",
+  "초대권 전용": "Sur invitation uniquement",
+  "초대권 전용 (현금 바이인 없음)": "Sur invitation uniquement (pas de buy-in en argent)",
+  "메인 ₩150만": "Main Event ₩1,5 million",
+  "메인 ₩220만": "Main Event ₩2,2 millions",
+  "메인 ₩230만": "Main Event ₩2,3 millions",
+  "메인 ₩250만": "Main Event ₩2,5 millions",
+  "메인 ₩270만": "Main Event ₩2,7 millions",
+  "₩30만~₩800만": "₩300 000–₩8 millions",
+  "₩5만~₩1,000만": "₩50 000–₩10 millions",
+  "₩90만~": "à partir de ₩900 000",
+  "~₩700만 (하이롤러)": "jusqu'à ₩7 millions (high roller)",
+  "€5,300 (메인)": "€5 300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120 000",
+  "(ME 파이널 8/3~5)": "(table finale du Main Event 3–5 août)",
+  "(온라인 새틀 7/10~9/10)": "(satellites en ligne 10 juil.–10 sept.)",
+  "2026.12 예정 (날짜 미발표)": "Décembre 2026 (dates non communiquées)",
+  "€1,100~": "à partir de €1 100",
+};
+
+const FIELD_RU: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "YAJASU Center Seoul",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (оператор — King's Casino Prague)",
+  "공식 미기재": "Не объявлено",
+  "미정 (공식 미기재)": "Уточняется (не объявлено)",
+  "미발표": "Не объявлено",
+  "다양": "Зависит от турнира",
+  "무료": "Бесплатно",
+  "새틀라이트 티켓 전용": "Только по билету сателлита",
+  "참가권(SEAT) 전용": "Только по входному билету (seat)",
+  "초대권 전용": "Только по приглашению",
+  "초대권 전용 (현금 바이인 없음)": "Только по приглашению (без денежного бай-ина)",
+  "메인 ₩150만": "Main Event ₩1,5 млн",
+  "메인 ₩220만": "Main Event ₩2,2 млн",
+  "메인 ₩230만": "Main Event ₩2,3 млн",
+  "메인 ₩250만": "Main Event ₩2,5 млн",
+  "메인 ₩270만": "Main Event ₩2,7 млн",
+  "₩30만~₩800만": "₩300 тыс.–₩8 млн",
+  "₩5만~₩1,000만": "₩50 тыс.–₩10 млн",
+  "₩90만~": "от ₩900 тыс.",
+  "~₩700만 (하이롤러)": "до ₩7 млн (хайроллер)",
+  "€5,300 (메인)": "€5 300 (Main Event)",
+  "프리롤~NT$120,000": "Фриролл–NT$120 000",
+  "(ME 파이널 8/3~5)": "(финальный стол Main Event 3–5 августа)",
+  "(온라인 새틀 7/10~9/10)": "(онлайн-сателлиты 10 июля – 10 сентября)",
+  "2026.12 예정 (날짜 미발표)": "Декабрь 2026 (даты не объявлены)",
+  "€1,100~": "от €1 100",
+};
+
+/** fr 괄호 — 프랑스어 월·계절은 소문자(아스트라 A-교차 채택 · 브리프 §4) */
+const PAREN_FR: Record<string, string> = {
+  "(Fall)": "(automne)", "(July)": "(juillet)", "(August)": "(août)",
+  "(October)": "(octobre)", "(November)": "(novembre)", "(December)": "(décembre)", "(Ha Long Bay)": "(baie d'Ha Long)",
+};
+/** ru 괄호 — 월 독립형(주격) */
+const PAREN_RU: Record<string, string> = {
+  "(Fall)": "(осень)", "(July)": "(июль)", "(August)": "(август)",
+  "(October)": "(октябрь)", "(November)": "(ноябрь)", "(December)": "(декабрь)", "(Ha Long Bay)": "(бухта Халонг)",
+};
+/** fr 도시 — 영어와 «다른 것만». 브랜드에 든 London·Seoul은 건드리지 않는다(CITY_PT 주석과 같은 이유). */
+const CITY_FR: Record<string, string> = {
+  Seville: "Séville", Vienna: "Vienne", "Mexico City": "Mexico", "Monte Carlo": "Monte-Carlo", Luzern: "Lucerne",
+};
+/**
+ * ru 도시 — **카드 도시 칸 전용**(nameMaps에 넣지 않는다 · 대회명은 라틴 브랜드).
+ * 운영사 공식 ru판에 키릴 꼴이 있는 것만: pokerstarslive.com/ru/ept/prague «в Праге» ·
+ * /ru/pokerstarsopen/aixenprovence «Экс-ан-Прованс»(2026-10-14 열람). 나머지는 음역을 지어내지 않는다.
+ */
+const CITY_RU: Record<string, string> = {
+  Prague: "Прага", "Aix-en-Provence": "Экс-ан-Прованс",
+};
+
+/* 스키마 설명 — 2026-10-14 기준 schemaDescription을 가진 미종료 행은 이 둘뿐(나머지는 종료 → 스키마에 안 나간다). */
+const SCHEMA_DESC_FR: Record<string, string> = {
+  "holdem-masters-9": "9e Holdem Masters : ₩2,4 milliards garantis au total (WPL Main Event ₩2 milliards + Mini Main Event ₩400 millions), 30 flights de Day 1 du 11 octobre au 9 décembre et finale le 13 décembre. Participation sur invitation uniquement.",
+  "wpt-seoul": "Premier événement du World Poker Tour à l'INSPIRE Entertainment Resort : 45 épreuves, avec ₩1 milliard garanti sur le Main Event.",
+};
+const SCHEMA_DESC_RU: Record<string, string> = {
+  "holdem-masters-9": "9-й Holdem Masters: всего ₩2,4 млрд гарантии (WPL Main Event — ₩2 млрд + Mini Main Event — ₩400 млн), 30 флайтов Day 1 с 11 октября по 9 декабря и финал 13 декабря. Участие только по приглашению.",
+  "wpt-seoul": "Первый турнир World Poker Tour в INSPIRE Entertainment Resort: 45 ивентов и гарантия ₩1 млрд в Main Event.",
+};
+
+/** fr 월 축약(CLDR fr) · ru 월 배지 = 독립형(주격) 축약 · ru 날짜 = 생격 전체(«2–8 ноября») */
+const MONTH_FR = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+const MONTH_RU = ["янв.","февр.","март","апр.","май","июнь","июль","авг.","сент.","окт.","нояб.","дек."];
+const MONTH_RU_GEN = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+
+/** 메타 타이틀 훅의 짧은 날짜 — fr «2 déc.»(1일 = «1er») · ru «2 декабря». page.tsx가 쓴다. */
+export function shortDayMonth(iso: string, locale: "fr" | "ru"): string {
+  const m = Number(iso.slice(5, 7));
+  const d = Number(iso.slice(8, 10));
+  if (locale === "fr") return `${d === 1 ? "1er" : d} ${MONTH_FR[m - 1]}`;
+  return `${d} ${MONTH_RU_GEN[m - 1]}`;
+}
+
 const MONTH_HI = ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"];
 const MONTH_AR = ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
 
@@ -3079,7 +3395,7 @@ const NOTE_DE: Record<string, string> = {
  */
 const NOTES: Record<BoardLocale, Record<string, string>> = {
   en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
-  id: {}, ms: {}, vi: {}, pt: {}, tr: {}, hi: {}, ar: {},
+  id: {}, ms: {}, vi: {}, pt: {}, tr: {}, hi: {}, ar: {}, fr: {}, ru: {},
 };
 
 /** 없으면 undefined — 보드가 배지를 아예 안 그린다(한국어 폴백 금지) */
@@ -3096,6 +3412,8 @@ export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "vi") return CITY_VI[city] ?? city;
   if (locale === "pt") return CITY_PT[city] ?? city;
   if (locale === "tr") return CITY_TR[city] ?? city;
+  if (locale === "fr") return CITY_FR[city] ?? city;
+  if (locale === "ru") return CITY_RU[city] ?? city;
   return city;
 }
 
@@ -3121,7 +3439,7 @@ const CITY_DE: Record<string, string> = {
  * 숫자 양옆에 붙은 물결표만 건드린다 — "초대권 전용" 같은 문장은 손대지 않는다.
  */
 const RANGE_DASH: Record<BoardLocale, string> = {
-  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–", hi: "–", ar: "–",
+  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–", hi: "–", ar: "–", fr: "–", ru: "–",
 };
 
 /**
@@ -3131,7 +3449,14 @@ const RANGE_DASH: Record<BoardLocale, string> = {
  * ms는 영어식(1,000)이 현지 표기라 대상이 아니다.
  */
 const DOT_THOUSANDS = new Set<BoardLocale>(["id", "vi", "pt", "tr"]);
+/**
+ * fr·ru는 천 단위가 공백이다 — fr = U+202F(fr-FR Intl · 좁은 고정공백) · ru = U+00A0(ru-RU Intl).
+ * 일반 공백(U+0020)은 «$25 000»을 줄 끝에서 쪼갠다. 3자리 묶음 쉼표만 건드린다(DOT_THOUSANDS와 같은 규칙).
+ */
+const SPACE_THOUSANDS: Partial<Record<BoardLocale, string>> = { fr: " ", ru: " " };
 function localizeThousands(v: string, locale: BoardLocale): string {
+  const space = SPACE_THOUSANDS[locale];
+  if (space) return v.replace(/\d{1,3}(?:,\d{3})+/g, (m) => m.replace(/,/g, space));
   if (!DOT_THOUSANDS.has(locale)) return v;
   return v.replace(/\d{1,3}(?:,\d{3})+/g, (m) => m.replace(/,/g, "."));
 }
@@ -3160,6 +3485,8 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
     : locale === "tr" ? VENUE_DE[value] ?? FIELD_TR[value]
     : locale === "hi" ? VENUE_DE[value] ?? FIELD_HI[value]
     : locale === "ar" ? VENUE_DE[value] ?? FIELD_AR[value]
+    : locale === "fr" ? VENUE_DE[value] ?? FIELD_FR[value]
+    : locale === "ru" ? VENUE_DE[value] ?? FIELD_RU[value]
     : undefined;
   return hit ?? localizeThousands(localizeRangeTilde(value, locale), locale);
 }
@@ -3239,6 +3566,11 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "vi") {
     return sm === em ? `Tháng ${sm}` : `Tháng ${sm}–${em}`;
   }
+  // fr «nov.» · «sept.–oct.» / ru 독립형 «нояб.» · «сент.–окт.»(배지는 주격 — 날짜 문장만 생격)
+  if (locale === "fr" || locale === "ru") {
+    const M = locale === "fr" ? MONTH_FR : MONTH_RU;
+    return sm === em ? M[sm - 1] : `${M[sm - 1]}–${M[em - 1]}`;
+  }
   // hi·ar — 월 이름에 통용 축약형이 없다. 온전한 이름을 쓴다.
   if (locale === "hi" || locale === "ar") {
     const M = locale === "hi" ? MONTH_HI : MONTH_AR;
@@ -3313,6 +3645,18 @@ function formatRange(a: Ymd, b: Ymd, locale: BoardLocale): string {
     if (locale === "ar") return `من ${a.d} إلى ${b.d} ${MN[a.m - 1]} ${a.y}`;
     return `${a.d}–${b.d} ${MN[a.m - 1]} ${a.y}`;
   }
+  /**
+   * fr — 「일 월 연도」 + 축약 월(CLDR «13 janv. – 13 févr. 2012»). 1일은 «1er».
+   * ru — 「일 월(생격) 연도」(운영사 ru판 «2-8 ноября 2026 г.»). 달·해를 넘기면 양쪽에 공백 둔 대시.
+   */
+  if (locale === "fr" || locale === "ru") {
+    const MN = locale === "fr" ? MONTH_FR : MONTH_RU_GEN;
+    const D = (x: Ymd) => (locale === "fr" && x.d === 1 ? "1er" : String(x.d));
+    const M = (x: Ymd) => `${D(x)} ${MN[x.m - 1]}`;
+    if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
+    if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    return `${D(a)}–${b.d} ${MN[a.m - 1]} ${a.y}`;
+  }
   /** vi — 「일/월/연도」가 현지 표준(8–19/10/2026). 월 이름 축약을 쓰지 않는다. */
   if (locale === "vi") {
     if (a.y !== b.y) return `${a.d}/${a.m}/${a.y}–${b.d}/${b.m}/${b.y}`;
@@ -3380,7 +3724,11 @@ export function buildLocaleSchemas(
                               ? SCHEMA_DESC_HI[t.id]
                               : locale === "ar"
                                 ? SCHEMA_DESC_AR[t.id]
-                                : undefined) ??
+                                : locale === "fr"
+                                  ? SCHEMA_DESC_FR[t.id]
+                                  : locale === "ru"
+                                    ? SCHEMA_DESC_RU[t.id]
+                                    : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
@@ -3459,4 +3807,9 @@ export const HOME_COUNTRY: Record<BoardLocale, string[]> = {
   hi: ["VN", "KH", "PH", "KR", "TW", "JP"],
   // ar — 아랍권 개최분은 보드에 없다. 지중해 축: 북키프로스(CY 행 전부 Kyrenia·Çatalköy) 먼저, 몰타·스페인·프랑스.
   ar: ["CY", "MT", "ES", "FR"],
+  // fr — 프랑스(EPT Paris·WSOPC Paris·PS Open Aix) 먼저, 프랑스어권 이웃 벨기에(Middelkerke·Namur)·스위스·모나코.
+  fr: ["FR", "BE", "CH", "MC"],
+  // ru — 러시아·벨라루스 개최분은 보드에 없다. 관련검색 «Мерит покер»·«Розвадов покер»·«Kings of Tallinn» 축:
+  //      북키프로스(CY 행 전부 Kyrenia·Çatalköy) · 체코(Rozvadov·Prague) · 에스토니아 · 몬테네그로(Budva).
+  ru: ["CY", "CZ", "EE", "ME"],
 };
