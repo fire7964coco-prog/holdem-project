@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "पोकर में blinds क्या होते हैं? Small blind बनाम big blind, आसान भाषा में",
   seoTitle: "कार्ड से पहले chips? — small blind vs big blind",
   desc: "कार्ड बँटने से पहले दो खिलाड़ी पैसे लगाते हैं, आख़िर क्यों? small blind और big blind क्या हैं, कौन लगाता है, SB vs BB रक़म, big blind ante और heads-up नियम।",
-  tldr: "Blinds वे अनिवार्य दांव हैं जो कार्ड बँटने से पहले लगाए जाते हैं। small blind (SB) dealer button के ठीक बाईं ओर बैठता है और big blind (BB) उसके बाईं ओर; big blind — आमतौर पर small blind का दोगुना — टेबल की betting unit होती है।",
+  tldr: "Blinds वे अनिवार्य दांव हैं जो कार्ड बँटने से पहले लगाए जाते हैं। small blind (SB) dealer button के ठीक बाईं ओर बैठता है और big blind (BB) उसके बाईं ओर (heads-up में button ख़ुद small blind लगाता है); big blind — आमतौर पर small blind का दोगुना — टेबल की betting unit होती है।",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-10-14",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -24,14 +24,14 @@ Blinds ही ==वह इंजन हैं जो पोकर को चल�
 ---
 
 > **झटपट जवाब**
-> Blind एक **अनिवार्य दांव** है जो कोई भी कार्ड बँटने से पहले लगाया जाता है। **small blind (SB)** dealer button के ठीक बाईं ओर बैठता है; **big blind (BB)** small blind के बाईं ओर होता है। big blind आमतौर पर small blind का **दोगुना** होता है और टेबल की मानक betting unit की तरह काम करता है।
+> Blind एक **अनिवार्य दांव** है जो कोई भी कार्ड बँटने से पहले लगाया जाता है। **small blind (SB)** dealer button के ठीक बाईं ओर बैठता है; **big blind (BB)** small blind के बाईं ओर होता है (heads-up खेल में button small blind लगाता है)। big blind आमतौर पर small blind का **दोगुना** होता है और टेबल की मानक betting unit की तरह काम करता है।
 
 ---
 
 ### मुख्य नंबर
 
 :::stripe
-2 | हर एक हाथ में लगने वाले अनिवार्य दांव
+2 | अनिवार्य दांव — small blind और big blind
 1/2 | small blind आमतौर पर big blind का आधा होता है
 1 BB | big blind = टेबल की betting unit
 :::
@@ -40,9 +40,9 @@ Blinds ही ==वह इंजन हैं जो पोकर को चल�
 
 ## पोकर में blind क्या होता है — और यह है क्यों?
 
-**Blind** वह दांव है जो आपको अपने कार्ड आने से *पहले* ही लगाना पड़ता है — आप "blind" यानी बिना देखे दांव लगाते हैं। हर हाथ में दो खिलाड़ी इसे लगाते हैं: small blind और big blind, यानी dealer button के ठीक बाईं ओर के दो सीट।
+**Blind** वह दांव है जो आपको अपने कार्ड आने से *पहले* ही लगाना पड़ता है — आप "blind" यानी बिना देखे दांव लगाते हैं। हर सामान्य हाथ में दो खिलाड़ी इसे लगाते हैं: small blind और big blind, यानी dealer button के ठीक बाईं ओर की दो सीटें। (दो आम अपवाद: dead button, जिसमें किसी हाथ में small blind लग ही नहीं पाता, और heads-up खेल, जिसमें button ख़ुद small blind लगाता है — नीचे देखें।)
 
-किसी को पैसे देने पर मजबूर क्यों किया जाए? ताकि गेम ज़िंदा रहे। ==r:अगर blinds न हों, तो हर खिलाड़ी fold करके अनंत काल तक premium हाथों का इंतज़ार कर सकता है==; pots ख़ाली रहेंगे, bluff करने का कोई मतलब नहीं बचेगा, और गेम रुक जाएगा। ==g:हर हाथ में दो अनिवार्य दांव इस बात की गारंटी देते हैं कि लड़ने के लिए हमेशा कुछ न कुछ हो।==
+किसी को पैसे देने पर मजबूर क्यों किया जाए? ताकि गेम ज़िंदा रहे। ==r:अगर blinds या कोई और अनिवार्य दांव न हो, तो हर खिलाड़ी fold करके अनंत काल तक premium हाथों का इंतज़ार कर सकता है==; pots ख़ाली रहेंगे, bluff करने का कोई मतलब नहीं बचेगा, और गेम रुक जाएगा। ==g:हर हाथ में दो अनिवार्य दांव इस बात की गारंटी देते हैं कि लड़ने के लिए हमेशा कुछ न कुछ हो।==
 
 ---
 
@@ -50,13 +50,13 @@ Blinds ही ==वह इंजन हैं जो पोकर को चल�
 
 **small blind (SB)** दोनों अनिवार्य दांवों में छोटा वाला है, जिसे **dealer button के ठीक बाईं ओर** बैठा खिलाड़ी लगाता है। यह आमतौर पर **big blind का आधा** होता है — $1/$2 गेम में small blind $1 होता है।
 
-यह टेबल की सबसे मुश्किल सीट के रूप में भी मशहूर है: आपने एक random हाथ के साथ आधा दांव लगा दिया है, और flop के बाद से हर street पर आप **सबसे पहले** action लेते हैं, सबसे कम जानकारी के साथ। यही वजह है कि small blind लंबे समय में लगभग सबका पैसा गँवाता है — यहाँ लक्ष्य जीतना नहीं, *कम* हारना है।
+यह टेबल की सबसे मुश्किल सीट के रूप में भी मशहूर है: आपने एक random हाथ के साथ आधा दांव लगा दिया है, और flop के बाद से हर street पर आप **सबसे पहले** action लेते हैं, सबसे कम जानकारी के साथ (heads-up इसका इकलौता अपवाद है: वहाँ small blind ही button होता है और आख़िर में action लेता है)। यही वजह है कि small blind लंबे समय में लगभग सबका पैसा गँवाता है — यहाँ लक्ष्य जीतना नहीं, *कम* हारना है।
 
 ---
 
 ## Big blind क्या है?
 
-**big blind (BB)** **पूरा base दांव** है, जिसे small blind के **ठीक बाईं ओर** बैठा खिलाड़ी लगाता है। $1/$2 गेम में big blind $2 होता है। अगर flop से पहले कोई raise नहीं करता, तो big blind को एक ख़ास सुविधा मिलती है — flop मुफ़्त में देखने के लिए [check](/hi/blog/holdem-betting-actions) करने का **"option"**।
+**big blind (BB)** **पूरा base दांव** है, जिसे small blind के **ठीक बाईं ओर** बैठा खिलाड़ी लगाता है। $1/$2 गेम में big blind $2 होता है। अगर flop से पहले कोई raise या straddle नहीं करता, तो big blind को एक ख़ास सुविधा मिलती है — flop मुफ़्त में देखने के लिए [check](/hi/blog/holdem-betting-actions) करने का **"option"**।
 
 लोग "big blind" को अकेले सर्च करते हैं, और वजह है: यह सिर्फ़ एक सीट नहीं, यह ==पूरे गेम का **मापदंड** है==।
 
@@ -78,7 +78,7 @@ Blinds ही ==वह इंजन हैं जो पोकर को चल�
 
 ## Small blind और big blind के नियम: कौन लगाता है, और कब
 
-दोनों blinds **कार्ड बँटने से पहले** लगाए जाते हैं, और हर हाथ के बाद dealer button घड़ी की दिशा में एक सीट आगे बढ़ता है — तो blind की सीटें भी उसके साथ घूमती हैं और ==हर कोई प्रति orbit एक बार दोनों blinds लगाता है==। किसी को अपनी बारी छोड़ने की छूट नहीं मिलती।
+दोनों blinds **कार्ड बँटने से पहले** लगाए जाते हैं, और सामान्य rotation में हर हाथ के बाद dealer button घड़ी की दिशा में एक सीट आगे बढ़ता है — तो blind की सीटें भी उसके साथ घूमती हैं और ==हर कोई प्रति orbit एक बार दोनों blinds लगाता है==। अगर आप सीट से उठ जाएँ, तो आगे क्या होगा यह format पर निर्भर है: cash game में लौटने पर आप मिस हुए blinds लगाते हैं, big blind के फिर आप तक आने का इंतज़ार करते हैं, या — जहाँ house इजाज़त दे — under-the-gun live straddle लेकर लौटते हैं; tournament में आप सीट पर हों या न हों, blinds और antes आपके stack से कटते रहते हैं।
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -87,17 +87,17 @@ Blinds ही ==वह इंजन हैं जो पोकर को चल�
 | Preflop क्रम | दूसरे-नंबर-आख़िरी action लेता है | **सबसे आख़िरी** action ("option") |
 | Postflop क्रम | **सबसे पहले** action (एक नुक़सान) | दूसरे नंबर पर action |
 
-> **ध्यान दें:** flop से पहले action big blind के बाईं ओर वाले खिलाड़ी से शुरू होता है और BB सबसे आख़िरी बोलता है — वह बाक़ी सबका फ़ैसला पहले देख लेता है। flop के बाद से क्रम रीसेट हो जाता है और blinds जल्दी action लेते हैं। street-दर-street पूरा क्रम [Texas Hold'em में खेलने के क्रम](/hi/blog/holdem-game-order) में विस्तार से दिया है, और button के इर्द-गिर्द हर सीट का नाम poker positions (सीटों के नाम) पर अलग गाइड में समझाया गया है।
+> **ध्यान दें:** flop से पहले action big blind के बाईं ओर वाले खिलाड़ी से शुरू होता है और BB सबसे आख़िरी बोलता है — वह बाक़ी सबका फ़ैसला पहले देख लेता है। flop के बाद से क्रम रीसेट हो जाता है और blinds जल्दी action लेते हैं। दो चीज़ें इस तालिका को बदल देती हैं: heads-up में button ही small blind होता है और flop के बाद आख़िर में action लेता है; और live straddle — जहाँ room इसकी इजाज़त दे — preflop action को अपने बाईं ओर से शुरू करवाता है और सबसे आख़िर में बोलने की जगह ख़ुद ले लेता है। street-दर-street पूरा क्रम [Texas Hold'em में खेलने के क्रम](/hi/blog/holdem-game-order) में विस्तार से दिया है, और button के इर्द-गिर्द हर सीट का नाम poker positions (सीटों के नाम) पर अलग गाइड में समझाया गया है।
 
 ---
 
 ## Blinds कितने बड़े होते हैं? Cash games और tournaments में stakes
 
-Stakes को **SB/BB** के रूप में लिखा जाता है। "$1/$2" गेम का मतलब है $1 small blind और $2 big blind; small blind छोटा नंबर है और big blind बड़ा।
+No-limit और pot-limit गेम्स में stakes को **SB/BB** के रूप में लिखा जाता है। "$1/$2" गेम का मतलब है $1 small blind और $2 big blind; small blind छोटा नंबर है और big blind बड़ा। (Fixed-limit टेबल का नाम उसकी दो bet साइज़ से पड़ता है — 4-8 limit गेम में minimum bet $4 होती है; WSOP Live Action Rule 104।)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | आम buy-in |
+| Stakes | Small Blind | Big Blind | आम buy-in / level |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
@@ -110,7 +110,7 @@ Stakes को **SB/BB** के रूप में लिखा जाता ह
 
 </div>
 
-- **Cash game:** blinds ==g:**fixed**== रहते हैं। $1/$2 गेम में बैठें और यह तब तक $1/$2 ही रहेगा जब तक आप उठ न जाएँ। (गहरी तुलना के लिए [tournaments vs cash games](/hi/blog/holdem-tournament-vs-cash-game) देखें।)
+- **Cash game:** blinds ==g:**fixed**== रहते हैं — कोई clock उन्हें नहीं बढ़ाता। $1/$2 गेम तब तक $1/$2 ही रहता है जब तक टेबल और room मिलकर stakes बदलने पर राज़ी न हों। (गहरी तुलना के लिए [tournaments vs cash games](/hi/blog/holdem-tournament-vs-cash-game) देखें।)
 - **Tournament:** blinds ==r:एक timer पर **बढ़ते** जाते हैं== (जैसे 25/50 → 50/100 → 100/200), तो जैसे-जैसे रात बढ़ती है, दबाव बढ़ता जाता है। Blind levels, clock और structure sheets how poker tournaments work में समझाए गए हैं।
 
 ---
@@ -119,19 +119,19 @@ Stakes को **SB/BB** के रूप में लिखा जाता ह
 
 ज़्यादातर tournaments के शुरुआती या बीच के चरणों से एक **ante** जोड़ा जाता है — blinds के ऊपर हर हाथ में इकट्ठा किया जाने वाला एक छोटा अतिरिक्त अनिवार्य दांव, जो pot बढ़ाता है और आक्रामकता को इनाम देता है। आम आधुनिक रूप है **big blind ante**: हर खिलाड़ी के chips डालने के बजाय, ==big blind पूरी टेबल के लिए एक ही ante लगाता है — आमतौर पर एक big blind के बराबर==, जो गेम को तेज़ और साफ़ रखता है। antes कब और कैसे लागू होते हैं, यह tournament blind structure का हिस्सा है।
 
-एक और अनिवार्य-दांव वाला रिश्तेदार जो आपको cash games में दिखेगा: **straddle** — एक *स्वैच्छिक* अतिरिक्त blind (आमतौर पर BB का 2x) जो big blind के बाईं ओर की सीट से लगाया जाता है, और जो उस हाथ के लिए stakes को अस्थायी रूप से बढ़ा देता है। इसके अपने नियम, प्रकार और action क्रम हैं — पूरा ब्यौरा straddle क्या है और आपको इसे लगाना चाहिए या नहीं में है।
+एक और अनिवार्य-दांव वाला रिश्तेदार जो आपको cash games में दिखेगा: **straddle** — एक *स्वैच्छिक* अतिरिक्त blind (आमतौर पर BB का 2x) जो UTG (big blind के बाईं ओर) से या, जहाँ इजाज़त हो, button से लगाया जाता है, और जो उस हाथ के लिए stakes को अस्थायी रूप से बढ़ा देता है। WSOP नियमों में button straddle को प्राथमिकता मिलती है, और limit गेम्स में इसकी इजाज़त नहीं है। इसके अपने नियम, प्रकार और action क्रम हैं — पूरा ब्यौरा straddle क्या है और आपको इसे लगाना चाहिए या नहीं में है।
 
 ---
 
 ## Heads-up पोकर में blinds कौन लगाता है?
 
-जब सिर्फ़ दो खिलाड़ी बचते हैं (या heads-up मैच में), तो सामान्य नियम ==r:उलट जाता है==। **dealer button small blind लगाता है** और flop से पहले ==**सबसे पहले**== action लेता है, जबकि दूसरा खिलाड़ी big blind लगाता है और preflop में ==**सबसे आख़िरी**== action लेता है — फिर बाक़ी हर street पर सबसे पहले। यह इकलौता मौक़ा है जब button एक blind लगाता है, और पहली बार यह लगभग सबको चौंका देता है।
+जब सिर्फ़ दो खिलाड़ी बचते हैं (या heads-up मैच में), तो सामान्य नियम ==r:उलट जाता है==। **dealer button small blind लगाता है** और flop से पहले ==**सबसे पहले**== action लेता है, जबकि दूसरा खिलाड़ी big blind लगाता है और preflop में ==**सबसे आख़िरी**== action लेता है — फिर बाक़ी हर street पर सबसे पहले।
 
 ---
 
 ## अगर आप अपना blind मिस कर दें तो? (Dead blinds)
 
-Live cash game में बैठें, तो आप आमतौर पर मुफ़्त में नहीं खेल सकते: या तो आप तुरंत हाथ में आने के लिए **एक big blind लगाते हैं**, या blind के आपकी सीट तक पहुँचने का इंतज़ार करते हैं। अगर आप उठकर चले जाते हैं और ==**अपने blinds मिस कर देते हैं**==, तो ज़्यादातर card rooms में लौटने पर आप उन्हें फिर से जुड़ने के लिए लगाते हैं — मिस हुआ big blind एक live दांव की तरह खेलता है, और मिस हुआ small blind एक ==**dead**== chip होता है जो सीधे pot में खींच लिया जाता है। Online टेबल यह सब अपने आप सँभाल लेती हैं।
+Live cash game में बैठें, तो आप आमतौर पर मुफ़्त में नहीं खेल सकते: ज़्यादातर rooms में या तो आप तुरंत हाथ में आने के लिए **एक big blind लगाते हैं**, या blind के आपकी सीट तक पहुँचने का इंतज़ार करते हैं — हालाँकि कुछ rooms no-limit या pot-limit गेम्स में नए खिलाड़ियों से post करवाते ही नहीं (WSOP Live Action Rules 104.a), इसलिए बैठने से पहले dealer से पूछ लें। अगर आप उठकर चले जाते हैं और ==**अपने blinds मिस कर देते हैं**==, तो ज़्यादातर card rooms में लौटने पर आप उन्हें फिर से जुड़ने के लिए लगाते हैं — मिस हुआ big blind एक live दांव की तरह खेलता है, और मिस हुआ small blind एक ==**dead**== chip होता है जो सीधे pot में खींच लिया जाता है। Online टेबल यह सब अपने आप सँभाल लेती हैं।
 
 ---
 
@@ -139,8 +139,10 @@ Live cash game में बैठें, तो आप आमतौर पर �
 
 ![पोकर टेबल पर pot की ओर गिरता chip स्टैक — button से एक blind steal push](/images/holdem-blind-steal.webp)
 
-- **Small blind: इसे सरल रखें।** preflop में दूसरे-नंबर-आख़िरी पर flop के बाद **सबसे पहले action** — शुरुआती के लिए साफ़ तरीक़ा है **raise या fold**, call नहीं। limp करके out of position में पिटना chips की एक लगातार लीक है।
-- **Big blind: odds के साथ defend करें।** आप पहले ही एक पूरा दांव लगा चुके हैं, इसलिए आप किसी भी दूसरी सीट से ज़्यादा widely raises को फ़ायदे में call कर सकते हैं। 2.5 BB open के सामने (small blind के fold करने पर), आप 4 BB के pot में 1.5 BB call करते हैं — लगभग 2.7-to-1, यानी क़रीब 27% equity पर call बराबर छूट जाता है। वह गणित है pot odds, और इसीलिए "big blind defense" मौजूद है।
+Blinds ही वह जगह है जहाँ मैं शुरुआती खिलाड़ियों को सबसे ज़्यादा chips चुपचाप गँवाते देखता हूँ — एक बड़े pot में नहीं, बल्कि हर orbit थोड़ा-थोड़ा। Blinds की दो आदतें इसका ज़्यादातर हिस्सा ठीक कर देती हैं — और late position की एक चाल उसमें से कुछ वापस जिता देती है:
+
+- **Small blind: इसे सरल रखें।** तीन या ज़्यादा खिलाड़ियों वाली टेबल पर (और कोई straddle न हो तो) आप preflop में दूसरे-नंबर-आख़िरी हैं पर flop के बाद **सबसे पहले action** लेते हैं, इसलिए शुरुआती के लिए साफ़ तरीक़ा है **raise या fold**, call नहीं। limp करके out of position में पिटना chips की एक लगातार लीक है — पूरे सेशन में नए खिलाड़ी सबसे ज़्यादा small blind से ही गँवाते मुझे दिखते हैं।
+- **Big blind: odds के साथ defend करें।** आप पहले ही एक पूरा दांव लगा चुके हैं, इसलिए यहाँ call किसी भी दूसरी सीट से सस्ता पड़ता है और आप ज़्यादा wide defend कर सकते हैं। 2.5 BB open के सामने (small blind के fold करने पर), आप 4 BB के pot में 1.5 BB call करते हैं — लगभग 2.7-to-1, यानी क़रीब 27% equity पर सिर्फ़ इस call का औसत नफ़ा-नुक़सान शून्य होता है (break-even)। असल में आपको इससे कुछ ज़्यादा चाहिए: out of position, और आगे betting बाक़ी रहते, आप अपनी पूरी equity realize नहीं कर पाएँगे। वह गणित है pot odds, और इसीलिए "big blind defense" मौजूद है।
 - **Late position: steal।** जब सब button या cutoff तक fold कर देते हैं, तो सिर्फ़ दोनों blinds जीतने के मक़सद से किया गया raise एक **blind steal** है — और वापस re-raise करना एक **re-steal**। Steal साइज़, सीट के हिसाब से ranges, और कितना wide defend करें — ये रणनीति के विषय हैं, जिन्हें in position vs out of position strategy guide में गहराई से समझाया गया है।
 
 ---
@@ -158,7 +160,7 @@ A. Blinds अनिवार्य दांव हैं जो इस बा�
 
 **Q. पहले कौन action लेता है, big blind या small blind?**
 
-A. flop से पहले small blind दूसरे-नंबर-आख़िरी action लेता है और big blind सबसे आख़िरी। flop के बाद क्रम उलट जाता है: small blind सबसे पहले और big blind दूसरे नंबर पर, बाक़ी टेबल से पहले।
+A. flop से पहले, कोई straddle न हो तो, small blind दूसरे-नंबर-आख़िरी action लेता है और big blind सबसे आख़िरी (live straddle हो तो preflop में आख़िर में वही बोलता है, और button straddle करे तो small blind सबसे पहले action लेता है)। flop के बाद क्रम उलट जाता है: small blind सबसे पहले और big blind दूसरे नंबर पर, बाक़ी टेबल से पहले। (Heads-up इसका अपवाद है: small blind button पर होता है, इसलिए वह preflop में पहले और flop के बाद आख़िर में action लेता है।)
 
 **Q. क्या small blind हमेशा ठीक big blind का आधा होता है?**
 
@@ -166,19 +168,19 @@ A. आमतौर पर, पर हमेशा नहीं — कुछ स
 
 **Q. अगर कोई raise न करे, तो क्या big blind बस check कर सकता है?**
 
-A. हाँ — यही big blind का "option" है। अगर सब सिर्फ़ call करते हैं, तो big blind check करके flop मुफ़्त में देख सकता है, या अगर उसके पास मज़बूत हाथ है तो raise कर सकता है।
+A. हाँ — यही big blind का "option" है। अगर सब सिर्फ़ big blind को call करते हैं — न कोई raise, न straddle — तो big blind check करके flop मुफ़्त में देख सकता है, या अगर उसके पास मज़बूत हाथ है तो raise कर सकता है।
 
 **Q. क्या blind लगाने के बाद आप fold कर सकते हैं?**
 
-A. हाँ। अपनी बारी पर आप किसी और की तरह fold कर सकते हैं; small blind big blind तक पूरा करने के बजाय हार मान सकता है, पर लगाए हुए blinds कभी वापस नहीं मिलते।
+A. हाँ। अपनी बारी पर आप किसी और की तरह fold कर सकते हैं; small blind big blind तक पूरा करने के बजाय हार मान सकता है, पर fold करके आपको लगाया हुआ blind कभी वापस नहीं मिलता।
 
 **Q. Heads-up पोकर में blinds कौन लगाता है?**
 
-A. सिर्फ़ दो खिलाड़ियों के साथ नियम उलट जाता है: dealer button small blind लगाता है और flop से पहले सबसे पहले action लेता है, जबकि दूसरा खिलाड़ी big blind लगाता है और preflop में सबसे आख़िरी। यह इकलौता मौक़ा है जब button एक blind लगाता है।
+A. सिर्फ़ दो खिलाड़ियों के साथ नियम उलट जाता है: dealer button small blind लगाता है और flop से पहले सबसे पहले action लेता है, जबकि दूसरा खिलाड़ी big blind लगाता है और preflop में सबसे आख़िरी।
 
 **Q. अगर आप अपना blind मिस कर दें तो क्या होता है?**
 
-A. Live cash game में, ज़्यादातर card rooms में लौटने पर आप मिस हुए blinds लगाते हैं — big blind एक live दांव की तरह खेलता है और small blind एक dead chip होता है जो pot में जाता है। वैकल्पिक रूप से, आप big blind के स्वाभाविक रूप से आपकी सीट तक पहुँचने का इंतज़ार कर सकते हैं। Tournament में भरपाई करने को कुछ नहीं होता: आप सीट पर हों या न हों, blinds और ante आपके stack से कटते रहते हैं।
+A. Live cash game में, ज़्यादातर card rooms में लौटने पर आप मिस हुए blinds लगाते हैं — big blind एक live दांव की तरह खेलता है और small blind एक dead chip होता है जो pot में जाता है। वैकल्पिक रूप से, आप big blind के स्वाभाविक रूप से आपकी सीट तक पहुँचने का इंतज़ार कर सकते हैं — या, जिन rooms में इजाज़त हो, under-the-gun live straddle लेकर वापस आ सकते हैं। Tournament में भरपाई करने को कुछ नहीं होता: आप सीट पर हों या न हों, blinds और ante आपके stack से कटते रहते हैं।
 
 **Q. क्या "the big blind" और "the blinds" एक ही हैं?**
 
@@ -188,7 +190,7 @@ A. बिल्कुल नहीं — "the blinds" small और big blind �
 
 ## याद रखने लायक़ बातें
 
-1. Blinds **कार्ड बँटने से पहले के अनिवार्य दांव** हैं: small blind button के बाईं ओर, big blind उसके बाईं ओर, BB आमतौर पर SB का दोगुना।
+1. Blinds **कार्ड बँटने से पहले के अनिवार्य दांव** हैं: small blind button के बाईं ओर (heads-up में: button पर), big blind उसके बाईं ओर, BB आमतौर पर SB का दोगुना।
 2. **big blind टेबल की unit है** — raises, stacks और tournament का दबाव सब BBs में नापे जाते हैं।
 3. Blinds को समझदारी से खेलें: **small blind से raise-या-fold**, **big blind को pot odds के साथ defend** करें, और जब सब आप तक fold कर दें तो late position से steals का अभ्यास करें।
 
