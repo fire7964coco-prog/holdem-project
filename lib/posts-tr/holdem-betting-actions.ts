@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de 5 bahis hareketi var: check (çek / bop — bahis koymadan sırayı geçmek), bet (turu açmak), call (gördüm — bahsi görmek), raise (yükseltmek — minimum yükseltme, son tam bahse ya da yükseltmeye eşittir) ve fold (yatmak / pas). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu normalde yalnızca big blind (ya da canlı straddle koyan oyuncu) içindir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-10-14",
+  masterUpdated: "2026-10-13",
   keepImagesInBody: true,
   readTime: "9 dk",
   emoji: "🃏",
@@ -72,10 +72,10 @@ Check yapmak teslim olmak değildir. Kartların sende kalır, tüm seçeneklerin
 
 ## Pokerde ne zaman check yapabilirsin?
 
-Check'i tam olarak iki durumda yapabilirsin:
+Check'i iki tür durumda yapabilirsin:
 
 - **O street'te henüz kimse bahis koymadıysa** (flop, turn ya da river)
-- **Preflop'ta big blind sensen ve kimse yükseltmediyse** — blind'in zaten canlı bir bahis sayılır, yani check yapıp flop'u bedavaya görebilirsin
+- **Preflop'ta big blind sensen ve kimse yükseltmediyse ve straddle koymadıysa** — blind'in zaten canlı bir bahis sayılır, yani check yapıp flop'u bedavaya görebilirsin (canlı straddle koyan oyuncu için de aynısı geçerli: ondan sonra kimse yükseltmediyse ve yeniden straddle koymadıysa)
 
 Sen check yaptıktan sonra biri bahis koyarsa, önüne yepyeni bir karar gelir: fold, call ya da raise. Bunlardan raise'i seçmenin özel bir adı var — hemen aşağıda.
 
@@ -83,11 +83,11 @@ Sen check yaptıktan sonra biri bahis koyarsa, önüne yepyeni bir karar gelir: 
 
 ## Check-raise nedir?
 
-Check-raise, aynı bahis turunda önce check yapıp, arkandan biri bahis koyunca o bahsi yükseltmektir. Texas Hold'em'de tamamen yasaldır ve standart bir silahtır, ayak oyunu değil. String bet ile de ilgisi yoktur: check ve raise, iki ayrı sırada verilen iki ayrı karardır. Tek şart, sen check yaptıktan sonra birinin gerçekten bahis koymasıdır; arkandaki herkes check yaparsa yükseltecek bahis kalmaz ve street öylece biter.
+Check-raise, aynı bahis turunda önce check yapıp, arkandan biri bahis koyunca o bahsi yükseltmektir. Texas Hold'em'de tamamen yasaldır ve standart bir silahtır, ayak oyunu değil. String bet ile de ilgisi yoktur: check ve raise, iki ayrı sırada verilen iki ayrı karardır. Temel şart, sen check yaptıktan sonra birinin gerçekten bahis koymasıdır; arkandaki herkes check yaparsa yükseltecek bahis kalmaz ve street öylece biter.
 
 Örnek: flop'ta check yaparsın, arkandaki bir oyuncu $10 koyar. Sıra sana döndüğünde en az $20'ye yükseltebilirsin — min-raise artışı son bahis kadar, yani $10 daha.
 
-Check-raise yalnızca flop, turn ve river'da mümkündür ve önce senin konuşman gerekir, yani bahis sırası belirleyicidir: flop'tan itibaren butonun solundaki ilk aktif oyuncu açar. Her street'te sıranın gerçek bir el üzerinde nasıl ilerlediğini [Texas Hold'em oyun sırası rehberinde](/tr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") anlattım.
+Check-raise normalde flop, turn ve river'da yapılır ve önce senin konuşman gerekir, yani bahis sırası belirleyicidir: flop'tan itibaren butonun solundaki ilk aktif oyuncu açar. Her street'te sıranın gerçek bir el üzerinde nasıl ilerlediğini [Texas Hold'em oyun sırası rehberinde](/tr/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") anlattım.
 
 ---
 
@@ -137,7 +137,7 @@ Krupiye için en net beyan hâlâ İngilizce olandır: emin değilsen "check" ya
 
 ## Min-raise nedir? Texas Hold'em bet ve raise kuralları
 
-![Poker min-raise kuralını gösteren infografik: $6'lık bir bahis en az $12'ye yükseltmeyi, $6'ya yapılan bir preflop yükseltme ise en az $10'a re-raise gerektirir](/images/holdem-betting-actions-min-raise.webp "Min-raise kuralı — her yükseltme, son bahsin ya da yükseltmenin büyüklüğü kadarını en az üstüne eklemeli")
+![Poker min-raise kuralını gösteren infografik: $6'lık bir bahis en az $12'ye yükseltmeyi, $6'ya yapılan bir preflop yükseltme ise en az $10'a re-raise gerektirir](/images/holdem-betting-actions-min-raise.webp "Min-raise kuralı — bir yükseltme, son tam bahsin ya da yükseltmenin büyüklüğü kadarını en az üstüne eklemeli; yalnızca all-in daha küçük olabilir")
 
 No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
@@ -156,7 +156,7 @@ No-Limit Hold'em'de (neredeyse her zaman oynayacağın format):
 
 Yükseltmeyle birlikte gelen iki canlı poker kuralı:
 
-1. **Çipleri hareket ettirmeden önce "raise" de.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==WSOP turnuva kuralı 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden, arada stack'ine geri dönen birden fazla hareketle bahis ya da raise yapmak — ya da sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı bir hareket (==WSOP turnuva kuralı 103==).
+1. **Çipleri hareket ettirmeden önce "raise" de — tutarıyla birlikte.** "Call" deyip sonra fazladan çip mi ittin? Beyanın o anda zaten bağlayıcı olmuştu (==WSOP turnuva kuralı 90.d==) — fazlalık sayılmaz. Gerçek ==string bet== başka bir şey: önce "raise" demeden, arada stack'ine geri dönen birden fazla hareketle bahis ya da raise yapmak — ya da sıra dışı aksiyonu kışkırtmaya yönelik aldatıcı bir hareket (==WSOP turnuva kuralı 103==).
 2. **Tek hareket.** Söylemezsen çiplerin tek bir ileri hareketle girmeli.
 
 *Ne kadar* yükseltmen gerektiği (2,5x açılışlar, 3x 3-bet'ler, board dokusuna göre sizing) strateji, kural değil — o konu [Texas Hold'em stratejisine](/tr/blog/holdem-strategy) girer.
@@ -180,7 +180,7 @@ Yine de iki sınır geçerli:
 
 All-in demek, ==kalan tüm çiplerini== yatırmak demektir. Sıra sana geldiğinde yapabilirsin — o anda sana açık olan bet, call ya da raise olarak.
 
-All-in'in mevcut bahisten *küçükse* elden çıkmış olmazsın: sadece katkına göre sınırlanmış bir ==ana pot== için yarışırsın; büyük stack'lerin fazla çipleri ise kazanamayacağın bir ==yan pot (side pot)== oluşturur. Ve *tam bir min-raise'den az* olan bir all-in, çoğunlukla önceden oynamış oyuncular için yükseltmeyi yeniden açmaz — düzenli oyuncuları bile şaşırtan ince bir kural.
+All-in'in mevcut bahisten *küçükse* elden çıkmış olmazsın: sadece katkına göre sınırlanmış bir ==ana pot== için yarışırsın; büyük stack'lerin fazla çipleri ise kazanamayacağın bir ==yan pot (side pot)== oluşturur. (Senden de kısa biri varsa, onun ulaşamadığı yan pot için yine oynarsın — her all-in yalnızca kendi katmanını sınırlar.) Ve *tam bir min-raise'den az* olan bir all-in, çoğunlukla önceden oynamış oyuncular için yükseltmeyi yeniden açmaz — düzenli oyuncuları bile şaşırtan ince bir kural.
 
 Tüm mekanik — yan pot matematiği, kim önce açar, table stakes — [all-in kuralları ve yan potlarda](/tr/blog/holdem-all-in-rules), all-in eller berabere kaldığında ne olduğu ise [showdown kurallarında](/tr/blog/holdem-showdown-rules).
 
@@ -194,7 +194,7 @@ Bu rehber her hareketin ne *olduğunu* ve ne zaman *yasal* olduğunu anlatır. H
 - Önce elinin ham gücünü tartmak: [poker el sıralaması](/tr/blog/holdem-hand-rankings)
 - Nakit ve turnuvada hareketlerin nasıl değiştiği: [nakit oyun vs turnuva](/tr/blog/holdem-tournament-vs-cash-game)
 
-O zamana kadar yeni başlayanlara gerçek para kazandıran bir kural: ==bir el yükseltecek kadar güçlü değilse, yatmak genelde call yapmaktan iyidir.==
+O zamana kadar yeni başlayanları boşa para kaybetmekten kurtaran pratik bir kural: ==bir el yükseltecek kadar güçlü değilse, yatmak genelde call yapmaktan iyidir.==
 
 ---
 
@@ -249,7 +249,7 @@ A. Yalnızca kendi zorunlu bahsin, herkesin eşlemesi gereken tam canlı bahisse
 
 **Q. Biri all-in olduktan sonra raise yapılır mı?**
 
-A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareket yeniden açılır ve re-raise yapabilirsin. Tam bir min-raise'den *azsa*, önceden oynamış oyuncular çoğunlukla sadece call ya da fold yapabilir — kısa all-in çoğu salonda onlar için yükseltmeyi açmaz.
+A. All-in'in büyüklüğüne bağlı. All-in tam yasal bir yükseltmeyse hareket yeniden açılır ve re-raise yapabilirsin — yeter ki elde all-in olmayan en az bir rakip daha kalsın; all-in olan oyuncuyla heads-up kaldıysan yükseltecek kimse yoktur, yalnızca call ya da fold yapabilirsin. Tam bir min-raise'den *azsa*, önceden oynamış oyuncular çoğunlukla sadece call ya da fold yapabilir — kısa all-in çoğu salonda onlar için yükseltmeyi açmaz.
 
 **Q. Pokerde string bet nedir?**
 
@@ -277,7 +277,7 @@ A. Rest (rest çekmek), all-in'dir: önündeki tüm çipleri ortaya sürersin �
 
 **Q. Pokerde çek ne demek?**
 
-A. Çek, check'in Türkçe söylenişidir ve bedavadır. Preflop'ta bunu yalnızca big blind, kimse yükseltmediyse söyleyebilir; flop'tan sonra önünde bahis olmayan herkes söyleyebilir.
+A. Çek, check'in Türkçe söylenişidir ve bedavadır. Preflop'ta bunu ancak kendi zorunlu bahsi canlı bahis sayılan oyuncu, kimse yükseltmediyse söyleyebilir — normalde kimse straddle koymadıysa big blind, koyduysa canlı straddle'ı koyan oyuncu; flop'tan sonra önünde bahis olmayan herkes söyleyebilir.
 
 ---
 
