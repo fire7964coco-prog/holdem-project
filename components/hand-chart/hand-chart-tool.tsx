@@ -132,9 +132,12 @@ function Rich({ segs }: { segs: RichSeg[] }) {
 export default function HandChartTool({
   dict: D,
   faq,
+  rtl,
 }: {
   dict: HandChartDict;
   faq: { q: string; a: string }[];
+  /** ★2026-10-14 ar(tool-lanes 🅲 H-1) — RTL 페이지에서 13×13 격자가 거울상이 되지 않게 격자만 dir=ltr. 다른 로케일은 안 넘긴다(SSR 바이트 불변). */
+  rtl?: boolean;
 }) {
   const [selectedPos, setSelectedPos] = useState<number | null>(null);
   const [hoveredCell, setHoveredCell] = useState<{ row: number; col: number } | null>(null);
@@ -257,6 +260,7 @@ export default function HandChartTool({
           <p className="md:hidden text-center text-xs text-muted-foreground">{D.grid.swipe}</p>
           <div
             className="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 [-webkit-overflow-scrolling:touch]"
+            dir={rtl ? "ltr" : undefined}
           >
             <div className="inline-block rounded-2xl border border-border/60 overflow-hidden shadow-xl mx-auto">
               {/* Column headers */}

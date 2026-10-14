@@ -73,7 +73,7 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HubPage title="مخطط الأيدي الافتتاحية" locale="ar">
-        <HandChartTool dict={HAND_CHART_DICT_AR} faq={HAND_CHART_FAQ_AR} />
+        <HandChartTool dict={HAND_CHART_DICT_AR} faq={HAND_CHART_FAQ_AR} rtl />
       </HubPage>
     </>
   );

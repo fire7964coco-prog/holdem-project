@@ -9,6 +9,11 @@ import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushf
 import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
 import { calcEquity, evaluate7, categoryOf } from "@/lib/equity";
 import type { CalcDict } from "./dict";
+import { RTL_LOCALES, type SecondaryLocale } from "@/lib/intl";
+
+// ★2026-10-14 ar(tool-lanes 🅲 H-1) — 페이지 전체가 dir=rtl이면 flex·grid가 오른쪽부터 흘러 13열 격자·카드 선택기가 거울상이 된다.
+// 카드·랭크 격자는 언어와 무관한 «표»라 RTL 로케일에서만 dir=ltr로 고정한다(다른 로케일은 속성 없음 = SSR 바이트 불변).
+const gridDir = (locale: string) => (RTL_LOCALES.includes(locale as SecondaryLocale) ? "ltr" : undefined);
 
 /** ★2026-09-17 (zh 회차) — 사전 조각 사이에 넣던 고정 반각 공백은 영어용이다. 앞 조각이 CJK 문자·전각 문장부호로 끝나면
  *  공백을 넣지 않는다(「A5s 能凑成 轮子顺」·「都在这篇： 德州…」처럼 문장 한가운데 공백이 뜨던 자리 — 2차 교열 렌즈). EN은 라틴으로 끝나 불변. */
@@ -231,7 +236,7 @@ interface PickerProps {
   label?: string;
 }
 function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: PickerProps) {
-  const { dict } = useCalc();
+  const { dict, locale } = useCalc();
   const selIds = new Set(selected.map(cardId));
   const disIds = new Set(disabled.map(cardId));
   const full = selected.length >= max;
@@ -243,7 +248,7 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
           <p className="text-xs text-primary font-bold">{selected.length} / {max}</p>
         </div>
       )}
-      <div className="overflow-x-auto pb-1">
+      <div className="overflow-x-auto pb-1" dir={gridDir(locale)}>
         <div className="inline-block">
           <div className="flex mb-1 ml-7 gap-0.5">
             {[...RANKS].reverse().map(r => (
@@ -1424,7 +1429,7 @@ function PushFoldCalc() {
           {D.note.p1}<strong className="text-foreground/85">{D.note.strong2}</strong>{D.note.p2}{sep(D.note.p2)}
           <strong className="text-foreground/85">{D.note.strong3}</strong>{D.note.p3}
         </p>
-        <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+        <div className="grid gap-[2px]" dir={gridDir(locale)} style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
           {Array.from({ length: 169 }, (_, i) => {
             const r = Math.floor(i / 13), c = i % 13;
             const on = mask[i];
