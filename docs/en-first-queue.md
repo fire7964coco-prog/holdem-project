@@ -1183,6 +1183,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - ✅ BY-1·2·3·4·5 이행 2026-10-14 (1) `9991521a`.
 
+### 2-BZ. tool-lanes 🅰(zh-hant 시뮬레이터) 헤드 요청 — 2026-10-14
+
+진행 파일 `docs/tool-lanes/wrq-zhhant-진행.md` «헤드 요청».
+
+| # | 자리 | 처방 |
+|---|---|---|
+| BZ-1 EN-먼저 | 공용 `app/win-rate-quiz/_simulator.tsx:1206` 좌석 라벨 — 선 베팅(하프팟 리드)도 «Call», 무베팅 팟사이즈도 «Raise» | 🪶 시뮬레이터 공용 회차 때(전 로케일 라벨 동시) |
+| BZ-2 EN-먼저 | 점수식 설명에 반올림(`Math.round`) 생략 — EN L243 | 🪶 F-06 손질 때(§2-BV ②③와 묶음) |
+| BZ-3 | 상단 이벤트 배지 zh-hant에 간체 «准备中» | ✅ `e582f15d` — `lib/event-config.ts` zh-hant 라벨 신설 |
+| BZ-4 | `app/zh-hant/solver/solver-client.tsx` PICK_TOOL 1~3행이 블로그 글로 감(zh는 10-12에 `/zh/hand-chart`·`/zh/calculator`로 옮김) | 🪶 zh-hant 솔버 랜딩 손볼 때 |
+| BZ-5 참고 | 390 헤더 페이지 라벨 말줄임(zh-hant 긴 HubPage title · glossary 동일) | 🪶 공용 헤더 회차 때 |
+
+
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.

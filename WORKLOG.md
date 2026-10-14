@@ -1,3 +1,9 @@
+## 2026-10-14 (2) — 도구 레인 3개 가동 · 🅰 zh-hant 시뮬레이터 머지·배포 `4a26acb9` · MB-323
+
+- 사장님 «남은 사용량으로 큰 작업 · 레인창 · 품질 저하 금지 · 아스트라 적극». 정본 `docs/tool-lanes-2026-10-14.md`(A→/clear→B→/clear→C · 아스트라 A·C 필수 · 렌즈 3 · 기계 대조 · 390·1440 실측). 워크트리 3(`Holdem-wrq-zhhant`·`Holdem-tour-frru`·`Holdem-ar-tools`) 본체가 wt.exe로 띄움. hi·tr = 검수 폴더 전수 검수 중이라 제외(tr 20편은 10-05 «숫자만 줄이자» 결정 = 의도). `/ar/solver` = 솔버 앱 ar UI 없음 → 범위 밖.
+- 🅰 머지(범위 10파일 · sitemap 미포함) → 빌드 exit 0 · hreflang 0 → push → 라이브 200·zh-Hant·index,follow·hreflang 16 → MB-323 · IndexNow 2. 헤드 요청 = 이벤트 배지 zh-hant 번체 `e582f15d` · 나머지 queue §2-BZ.
+- 동시: 회원 가입 수단 집계(허락 후 조회 · 69명 = Google 54·카카오 9·이메일 단독 4(전원 ko)·연결 2) · Supabase 이메일 확인 ON(`/auth/v1/settings`) → CLAUDE.md §5 정정 `ae8a7f38` · 커스텀 SMTP 꺼짐 확인(기본 발송기 = 팀원 외 발송 거부) → Resend 도메인 인증 진행 중(DNS 3줄 GoDaddy 입력 · 조회 확인) · 메일 템플릿 16언어 `docs/auth-email-templates/`(아스트라 교차 9자리 반영 · 미커밋). 사장님 결정: KO = Google·카카오·이메일 · 다국어 = Google·이메일(SMTP·템플릿 뒤 재개방).
+
 ## 2026-10-14 (1) — MA-538 로그인 문구 이행 `9991521a` · MB-322 · queue §2-BY
 
 - 사장님 «우편함 작업 진행». MA-538(MB-318·319·320 판정 · 요청 1 · 통지 4) 회신+등재+이행. 비-KO 15 `errSocial` «이메일로» 절 삭제 · 비-KO 15 `resetDoneMsg` → «변경됨 · 로그인된 상태»(재설정 화면은 복구 세션 위에서만 열림 · `updateUser`는 세션 유지 → 사실) · zh·zh-hant `resetRequestAgain` «申请/申請» · 만료 화면 `resetDesc` 생략(`AuthPanel.description` 선택값 · KO 포함) · `authHtmlAttrs` = `HTML_LANG`(pt → pt-BR). KO 사전 문구 불변. 🪶 비-KO 기존 이메일 회원의 다음 로그인 진입점 = 사장님 판단(§2-BY BY-2′).
