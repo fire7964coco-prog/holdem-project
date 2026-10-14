@@ -33,6 +33,8 @@ const AR_NAMES: HandNames = {
 };
 
 const AR_UI: QuizUI = {
+  // RTL 페이지 — 카드 선택기·레인지 격자·에퀴티 막대·슬라이더·테이블 버튼을 dir=ltr로(공용 _simulator · H-5).
+  rtl: true,
   names: AR_NAMES,
   streets: ["ما قبل الفلوب", "الفلوب", "التيرن", "النهر"],
   hero: "أنت",

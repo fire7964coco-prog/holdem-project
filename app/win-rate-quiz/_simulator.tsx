@@ -324,6 +324,9 @@ export interface QuizUI {
   decimalComma?: boolean;
   percentPrefix?: boolean;
   percentGap?: string;
+  /** ★2026-10-14 ar(tool-lanes 🅲 H-5) — RTL 페이지. 카드 선택기·레인지 격자·에퀴티 막대·슬라이더·테이블 버튼은 «표·축»이라 dir=ltr로 고정.
+   *  안 주면 속성 없음(다른 로케일 SSR 바이트 불변). */
+  rtl?: boolean;
   /** 규칙·단서 */
   ruleTitle: string;
   /** 고른 성향의 규칙을 그 자리에 적는다 */
@@ -663,7 +666,7 @@ function CustomEditor({ ui, size, draft, setDraft, onStart, onClose, onOff }: {
       </div>
 
       {/* 카드 52장 — 이미 쓴 카드는 흐리게. 누르면 금테 칸에 들어간다 */}
-      <div className="grid gap-[3px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+      <div className="grid gap-[3px]" dir={ui.rtl ? "ltr" : undefined} style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
         {PICK_SUITS.map((su) => PICK_RANKS.map((r) => {
           const c: NCard = [r, su];
           const d = toDisplay(c);
@@ -707,7 +710,7 @@ const BLOCKED_FILL = "repeating-linear-gradient(135deg, hsl(var(--muted-foregrou
 
 function RangeGridView({ g, actual, ui }: { g: RangeGrid; actual: number | null; ui: QuizUI }) {
   return (
-    <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
+    <div className="grid gap-[2px]" dir={ui.rtl ? "ltr" : undefined} style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
       {g.cur.map((cur, i) => {
         const r = Math.floor(i / 13), c = i % 13;
         const label = r === c ? GRID_RANKS[r] + GRID_RANKS[c] : r < c ? `${GRID_RANKS[r]}${GRID_RANKS[c]}s` : `${GRID_RANKS[c]}${GRID_RANKS[r]}o`;
@@ -1236,7 +1239,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     <div className={`flex justify-center items-center gap-0.5 min-[390px]:gap-1 sm:gap-2 ${cls}`}>
       <div className="flex rounded-full border-2 p-px sm:p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
         {([6, 9] as TableSize[]).map((n) => (
-          <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n}
+          <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n} dir={ui.rtl ? "ltr" : undefined}
             className="min-w-[24px] px-1 min-[390px]:px-1.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-sm tracking-[-0.04em] sm:tracking-normal font-bold transition-all whitespace-nowrap"
             style={segBtn(tableSize === n)}>
             {ui.tableBtn(n)}
@@ -1599,7 +1602,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                 <span className="text-[10.5px] text-white/55">{ui.quizGuessHint}</span>
               </span>
             </div>
-            <input ref={sliderRef} type="range" min={0} max={100} step={1} value={guess}
+            <input ref={sliderRef} type="range" min={0} max={100} step={1} value={guess} dir={ui.rtl ? "ltr" : undefined}
               onChange={(e) => setGuess(Number(e.target.value))}
               aria-label={ui.quizGuessTitle}
               className="w-full mt-2 h-2.5 cursor-pointer" style={{ accentColor: GOLD }} />
@@ -1625,7 +1628,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <WinTieLose split={rec.split} ui={ui} />
           </span>
         </div>
-        <div className="relative h-2.5 rounded-full overflow-hidden bg-black/40 mt-2">
+        <div className="relative h-2.5 rounded-full overflow-hidden bg-black/40 mt-2" dir={ui.rtl ? "ltr" : undefined}>
           <motion.div className="h-full" style={{ background: GOLD }}
             initial={false} animate={{ width: `${rec.equity}%` }} transition={{ duration: 0.5, ease: "easeOut" }} />
           {/* 필요 승률 눈금(S-034 ⑥) — 금색 막대가 이 선을 넘으면 콜이 본전 이상. 숫자 없이 판정이 보인다 */}
@@ -1776,7 +1779,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="overflow-x-auto">
               <table className={`w-full ${hasAnswers ? "text-[11px]" : "text-xs"} tabular-nums`}>
                 <thead>
-                  <tr className="text-muted-foreground text-left">
+                  <tr className="text-muted-foreground text-start">
                     {(hasAnswers
                       ? [...ui.reviewCols, ...(guessList.length ? [ui.quizGuessCol] : []), ui.quizChoiceCol, ...(decisionCount ? [ui.actualCol] : [])]
                       : ui.reviewCols)

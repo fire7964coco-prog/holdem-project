@@ -33,7 +33,8 @@ export function KitCardFace({ card }: { card: Card }) {
   const ink = card.suit === "♥" || card.suit === "♦" ? "card-red" : "card-black";
   const ten = card.rank === "10";
   return (
-    <svg viewBox="0 0 220 308" className="block w-full h-full" role="img" aria-label={`${card.rank} of ${SUIT_NAME[card.suit]}`}>
+    // direction="ltr" — RTL 페이지(ar)에서 <text>가 rtl을 상속하면 text-anchor start가 오른끝이 되어 랭크가 viewBox 밖으로 잘린다(2026-10-14 tool-lanes 🅲 H-5 R-7). LTR 페이지에선 상속값과 같아 화면 변화 없음.
+    <svg viewBox="0 0 220 308" className="block w-full h-full" direction="ltr" role="img" aria-label={`${card.rank} of ${SUIT_NAME[card.suit]}`}>
       <defs>
         <linearGradient id={`${id}p`} x2=".8" y2="1">
           <stop style={{ stopColor: "var(--wrq-card-paper)" }} />
