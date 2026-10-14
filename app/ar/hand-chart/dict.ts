@@ -115,7 +115,7 @@ export const HAND_CHART_DICT_AR: HandChartDict = {
       { href: "/ar/blog/texas-holdem-rules-for-beginners", tag: "للمبتدئين", title: "كيف تلعب تكساس هولدم للمبتدئين", desc: "البلايندز، توزيع الرقائق، ترتيب الأيدي — خطوة بخطوة" },
       { href: "/ar/blog/holdem-hand-rankings", tag: "ترتيب الأيدي", title: "ترتيب أيدي البوكر", desc: "كل أيدي البوكر العشر من الأقوى إلى الأضعف، مع الاحتمالات" },
       { href: "/ar/blog/holdem-betting-actions", tag: "الرهان", title: "إجراءات الرهان في البوكر", desc: "معنى التمرير والمجاراة والزيادة والطي" },
-      { href: "/ar/blog/holdem-game-order", tag: "ترتيب اللعب", title: "ترتيب اللعب في تكساس هولدم", desc: "ما قبل الفلوب، الفلوب، التيرن، النهر، المواجهة — خطوة بخطوة" },
+      { href: "/ar/blog/holdem-positions", tag: "الموقع", title: "الموقع في البوكر", desc: "كل موقع من UTG إلى الزر، مع خريطة 6-max ومن يتصرف أولًا" },
       { href: "/ar/calculator", tag: "أداة", title: "حاسبة احتمالات البوكر", desc: "الإكويتي وبوت أودز لأي يد" },
     ],
   },
