@@ -11,7 +11,7 @@
 | 레인 | 폴더 · 브랜치 | 범위 | 선례 커밋(파일 목록 = `git show --stat <해시>`) |
 |---|---|---|---|
 | 🅰 zh-hant 시뮬레이터 | `../Holdem-wrq-zhhant` · `lane-wrq-zhhant` | `/zh-hant/win-rate-quiz` 1페이지 | zh `7f9dcb59`(ja·zh·es·de) · ru `7efdcdd3`(L1 마지막 · 9파일) |
-| 🅱 fr·ru 대회 보드 | `../Holdem-tour-frru` · `lane-tour-frru` | `/fr/tournaments` · `/ru/tournaments` | pt·tr `11eb349d` · hi·ar `88dc428e` |
+| 🅱 fr·ru 대회 보드 | ✅ | ✅ | ✅ 12:00 | ✅ `de6ad93a` | ✅ 10-14 라이브 200 · MB-325 · IndexNow |
 | 🅲 ar 도구 | `../Holdem-ar-tools` · `lane-ar-tools` | **회차 1** `/ar/calculator` + `/ar/hand-chart` → **회차 2** `/ar/win-rate-quiz` | vi `5b4b9b50`(계산기+차트) · ru `7efdcdd3`(시뮬레이터) |
 
 🔴 **범위 밖(하지 마라)**: `/ar/solver`(솔버 앱에 ar UI가 없다 — `solver/src/solver-feedback.ts` LOCALES 15에 ar 없음 · 랜딩 CTA가 영어 앱으로 떨어진다 → 헤드가 솔버에 문의할지 사장님 판단) · `/ar/glossary`(정의 정본인 ar `holdem-glossary` 글이 없다 — 도구 확장 계획 §3 회차 2 원칙) · 퀴즈 · 대회 **데이터 추가**(`lib/tournaments.ts` 행 추가·수정 금지 — 보드는 기존 행을 그 언어로 보여 주는 것) · 09-29 잔여(buyin·venue 표기 규칙) · 다른 로케일 문구 손질.

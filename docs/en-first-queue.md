@@ -1207,6 +1207,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CA-4 E-1 EN-먼저 | ① 계산기 FAQ «Pocket aces win about 82%» · quickRef ② «How often AA wins» = 표는 equity(승 81.71 · 무 0.46 · equity 81.95) ② guide 카드 «on the flop or turn» ③ 차트 FAQ 5 «3-bet 콜 레인지»에 A5s 블러프(4-bet 블러프 맥락) | 🪶 EN 계산기·차트 사전 손질 회차 — 전 로케일 동시 |
 | CA-5 H-3 | 제목 언어 순서(영어 머리어 먼저) | 선례(vi·hi·tr) 유지 · 전 로케일 일관 판단이라 🪶 GSC 관찰 뒤 |
 
+### 2-CB. tool-lanes 🅱(fr·ru 대회 보드) 헤드 요청 — 2026-10-14
+
+진행 파일 `docs/tool-lanes/tour-frru-진행.md` «헤드 요청» 1~8.
+
+| # | 자리 | 처방 |
+|---|---|---|
+| CB-1 데이터 | `lib/tournaments.ts` `ps-open-aix` 2026-11-02~08 ↔ 운영사 ru판에 «1-8 ноября»·«2-8 ноября» 공존(축제 시작 vs ME 추정) | 🪶 데이터 담당이 원문 판정 — 11/1 전에(시작 전이라 시한 있음) |
+| CB-2 | 대회명 괄호 `(October)` 2행(`capt-bregenz-oct` 등)이 PAREN_JA·ZH·HANT·ES·DE·ID·MS·VI·PT·TR·HI·AR 전부에 없음 → 영어 잔존 | 🪶 보드 로케일 일괄 회차 |
+| CB-3 | `hpt-5` «5th HPT»·`pcso-40-luzern` «40th …» 서수가 ja·zh·es·de·pt·tr 등 NAME_OVERRIDE에 없음(fr·ru만 고침) | 🪶 CB-2와 같은 회차 |
+| CB-4 | pt FAQ «주최측이 공개한 바이인» 전칭 ↔ `triton-shrs-cyprus` 바이인 범위 = 2차 출처 · 같은 문장 쓴 로케일 확인 · Triton SHR 범위 공식 확인 | 🪶 CB-2 회차 + 데이터 담당 |
+| CB-5 EN-먼저 | 보드 공통: og:image 없음 · hreflang x-default 없음(계산기·용어집은 있음) · Breadcrumb 1단 끝 «/»(301) · «2026» 연도 전환이 update-calendar에 없음 · 훅 title 정책 | 🪶 보드 공용 회차 |
+| CB-6 | fr 통화 기호 뒷붙임(«1 100 €») vs 사이트 전 로케일 앞붙임 | 현행 유지(공용 정책) |
+| CB-7 | fr `holdem-tournament` 글 → `/fr/tournaments` 내부링크 1줄(tr 선례) · ru는 대회 글 없음 | 🪶 fr 글 손볼 때 |
+| CB-8 | 러시아 본토 볼륨 = DFS 측정 불가(40501) | 🪶 필요 시 사장님 Yandex Wordstat |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

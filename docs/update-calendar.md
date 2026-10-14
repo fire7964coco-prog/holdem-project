@@ -46,6 +46,9 @@
 - **스톱 종료 다음 날 과거형 전환**: VPT 10/19 · 888 Noche 11/9 · Queen Poker Series 11/30 · partypoker 12/7 · 연말 = 2027 «paradas» 공지 확인(공식 /paradas-de-poker-2026/ 후속 페이지).
 - 유지 못 하면: 월별 날짜를 빼고 «정기 포맷(요일·바이인)»만 남긴다(시트 §0).
 
+### 🆕 10/31까지 — `ps-open-aix` 시작일 판정 (2026-10-14 tool-lanes 🅱 헤드 요청 · queue §2-CB CB-1)
+- `lib/tournaments.ts` `ps-open-aix` = 2026-11-02~08. 운영사 ru판(pokerstarslive.com/ru/pokerstarsopen/aixenprovence · 10-14 열람)에 «1-8 ноября 2026 г.»·«2-8 ноября 2026 г.» 공존(축제 시작 vs Main Event 추정). 영문 페이지는 스크립트 렌더라 WebFetch 빈 응답 → Playwright로 일정표를 직접 열어 판정. 바뀌면 13로케일 보드 문장(fr faqs[0]·localBlocks[0] 등) 동기화.
+
 ### 10/25 · 11/8 · 11/9 이후 — 가이드 3편 결과 아카이브 전환
 - APL 서울(10/25 종료) · GOP 인천 II(11/8) · WPT 서울(11/9) — 선례 `apt-incheon-2026-guide`처럼 우승자·엔트리·상금풀을 1차 출처로 확인해 훅을 «결과»로 전환. WPT 온라인 예선 절(10/25 마감)은 종료 후 과거형으로.
 - WPT: 10/25 이후 온라인 퀄리파이어 종료 문구 반영.
@@ -575,6 +578,7 @@
 - 10/19 APPT Manila Championship 종료 → «8–19 Oktober 2026» 문장을 과거형 또는 다음 마닐라 시리즈로 · 11/29 APT Championships 종료 → «Musim gugur ini / Musim luruh ini / Mùa thu này» 블록 교체 · 12/21 Manila December Special 종료 → 마닐라 블록 교체
 - **pt·tr(회차 2 · 같은 날)**: 10/11 CAP 부에노스아이레스 종료(pt localBlocks[1]) · 10/19 WPT Prime Cyprus 종료(tr faqs[0]·localBlocks[0]·[1]) · 11/28 BSOP Millions 종료(pt faqs[0]·localBlocks[0] — 바이인 공개되면 «ainda não tinha sido divulgado» 문장도) · 11/30 Triton SHR North Cyprus 종료(tr) · 12/20 CAP 로사리오 종료(pt)
 - **hi·ar(회차 2 후반 · 2026-09-30)**: 10/19 APPT Manila Championship 종료(hi faqs[0]·localBlocks[0]) · 10/19 WPT Prime Cyprus 종료(ar faqs[0]·localBlocks[0]·[1]) · 11/29 APT Championships 종료(hi localBlocks[1] «अक्टूबर–नवंबर में» 블록 교체) · 11/30 Triton SHR North Cyprus 종료(ar 전 블록) · 12/21 Manila December Special 종료(hi localBlocks[0]) · 2027-02-01 WPT Cambodia Championship 종료(hi faqs[0]) · hi·ar `SCHEMA_DESC_*`는 미종료 3행만 등재 — 새 행에 schemaDescription을 달면 같이 등재
+- **fr·ru(tool-lanes 🅱 · 2026-10-14)**: 10/19 WPT Prime Cyprus 종료(ru faqs[0]·localBlocks[0]) · 11/8 PokerStars Open Aix-en-Provence 종료(fr faqs[0]·localBlocks[0]) · 11/15 WSOP Circuit Middelkerke 종료(fr faqs[0]) · 11/30 Triton SHR North Cyprus·German Poker Masters 종료(ru faqs[0]·localBlocks[0]·[1]) · 12/13 EPT Prague 종료(fr localBlocks[1] · ru localBlocks[1]) · fr·ru `SCHEMA_DESC_*`는 미종료 2행(holdem-masters-9·wpt-seoul)만 등재 — 새 행에 schemaDescription을 달면 같이 등재
 - vi faqs[0]의 USOP Vietnam 과거형은 그 행(`usop-vietnam-2`)이 보드에 남아 있는 동안만 맞다
 - 🔴 사실은 `lib/tournaments.ts` 행에서만 가져온다(외부 추측 금지) · 교체 뒤 `check:tournaments-i18n` · build
 
