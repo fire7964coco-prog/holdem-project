@@ -1,4 +1,4 @@
-## 2026-10-14 (1) — MA-538 로그인 문구 이행 · MB-322 · queue §2-BY
+## 2026-10-14 (1) — MA-538 로그인 문구 이행 `9991521a` · MB-322 · queue §2-BY
 
 - 사장님 «우편함 작업 진행». MA-538(MB-318·319·320 판정 · 요청 1 · 통지 4) 회신+등재+이행. 비-KO 15 `errSocial` «이메일로» 절 삭제 · 비-KO 15 `resetDoneMsg` → «변경됨 · 로그인된 상태»(재설정 화면은 복구 세션 위에서만 열림 · `updateUser`는 세션 유지 → 사실) · zh·zh-hant `resetRequestAgain` «申请/申請» · 만료 화면 `resetDesc` 생략(`AuthPanel.description` 선택값 · KO 포함) · `authHtmlAttrs` = `HTML_LANG`(pt → pt-BR). KO 사전 문구 불변. 🪶 비-KO 기존 이메일 회원의 다음 로그인 진입점 = 사장님 판단(§2-BY BY-2′).
 
