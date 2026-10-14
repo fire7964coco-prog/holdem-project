@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
+  updated: "2026-10-14",
 
-  masterUpdated: "2026-09-07",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "🃏",
@@ -33,7 +33,7 @@ Masaya hiç oturmadıysan önce [Texas Hold'em kurallarına](/tr/blog/texas-hold
 > **Kısa cevap**
 > Texas Hold'em'de 10 poker eli vardır. En güçlüden en zayıfa: **Royal Floş (Royal Flush), Sıralı Floş (Straight Flush), Kare, Full (Full House), Floş (Flush), Kent, Üçlü, İki Çift, Çift ve Yüksek Kart**. Yedi kartın (2 elindeki + 5 ortak) içinden en iyi beşini seçersin; sıralama, beş kartlık kombinasyonun ne kadar nadir olduğuna dayanır.
 
-Buradan başla. İşte Texas Hold'em'de her eli river'a kadar yapma olasılığıyla birlikte, en güçlüden en zayıfa kadar tüm sıralama — yani poker büyüklük sıralaması ve Türk masalarında duyacağın adlarıyla 10 poker kombinasyonu.
+Buradan başla. (Sıralama beş kartlık olasılıklarla belirlendi; yedi kartta birkaç sıklık yer değiştirir — river'a kadar tek başına yüksek kart aslında iki çiftten daha nadirdir — ama sıralama değişmez.) İşte Texas Hold'em'de her eli river'a kadar yapma olasılığıyla birlikte, en güçlüden en zayıfa kadar tüm sıralama — yani poker büyüklük sıralaması ve Türk masalarında duyacağın adlarıyla 10 poker kombinasyonu.
 
 | # | El | Türkçe masa adı | Diğer adı | Nedir | Olasılık (river'a kadar) |
 |------|------|------|------|------|------|
@@ -351,7 +351,7 @@ A. Full büyüktür. Full (full house, #4) floşu (#5) — masadaki adıyla reng
 
 **Q. Kicker nedir?**
 
-A. Kicker (yan kart), tamamlanmış elinin parçası olmayan ama aynı el türünde beraberliği bozan karttır. Örneğin A-A-K ile A-A-Q'da ikisinde de As çifti var; papaz kicker'ı olan kazanır. Hangi elde oynadığını ve board'un ne zaman oynadığını [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısında anlattım.
+A. Kicker (yan kart), tamamlanmış elinin parçası olmayan ama aynı el türünde beraberliği bozan karttır. Örneğin A-A-K ile A-A-Q'da ikisinde de As çifti var; papaz kicker'ı olan kazanır — kicker da eşitse bir sonraki yan kart belirler. Hangi elde oynadığını ve board'un ne zaman oynadığını [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısında anlattım.
 
 **Q. İki oyuncuda aynı el olabilir mi?**
 
@@ -401,6 +401,6 @@ A. Evet. Üçlü #7, iki çift #8, yani üçlü kazanır. İki çift yalnızca �
 2. **Tuzak:** flush (#5) kenti (#6) yener — ve her eşlenmiş board ikisini de yenen bir full house gizleyebilir.
 3. **Gerçek:** potların çoğu çift veya yüksek kartla kazanılır, yani kicker'ın sandığından değerlidir.
 
-Sıralamayı bir öğleden sonrada öğren, kafa karıştıran kapışmaları çalış ve her board'da "türler → kentler → çiftler" taramasını yap. Bunu yap, bir daha asla potu yanlış tarafa itmeyeceksin. Bir elin preflop'tan river'a nasıl aktığını görmek istersen [Texas Hold'em oyun sırası](/tr/blog/holdem-game-order) yazısıyla devam et.
+Sıralamayı bir öğleden sonrada öğren, kafa karıştıran kapışmaları çalış ve her board'da "floş → kent → çiftler" taramasını yap. Bunu yap, bir daha asla potu yanlış tarafa itmeyeceksin. Bir elin preflop'tan river'a nasıl aktığını görmek istersen [Texas Hold'em oyun sırası](/tr/blog/holdem-game-order) yazısıyla devam et.
 `.trim(),
 };

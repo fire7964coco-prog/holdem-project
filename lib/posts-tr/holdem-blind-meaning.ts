@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Pokerde blind nedir? Small blind ve big blind, en sade haliyle",
   seoTitle: "Small blind big blind nedir? Kartı görmeden neden çip konur",
   desc: "Small blind (küçük kör) ve big blind (büyük kör) nedir, kim koyar, ne kadar olur? Hangisi daha kötü koltuk, big blind ante ve heads-up kuralları tek yazıda.",
-  tldr: "Blind (kör bahis), kartlar dağıtılmadan önce koyulan zorunlu bahistir. Small blind (küçük kör, SB) dağıtıcı butonunun hemen solunda, big blind (büyük kör, BB) ise onun solunda oturur; big blind — genelde small blind'ın iki katı — masanın bahis birimidir.",
+  tldr: "Blind (kör bahis), kartlar dağıtılmadan önce koyulan zorunlu bahistir. Small blind (küçük kör, SB) dağıtıcı butonunun hemen solunda, big blind (büyük kör, BB) ise onun solunda oturur (heads-up'ta small blind'ı butonun kendisi koyar); big blind — genelde small blind'ın iki katı — masanın bahis birimidir.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-10-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-10-14",
+  masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 dk",
   emoji: "💰",
@@ -24,14 +24,14 @@ Blind'lar ==pokeri hareket halinde tutan motordur== — [Texas Hold'em kurallar�
 ---
 
 > **Kısa cevap**
-> Blind, herhangi bir kart dağıtılmadan önce koyulan bir **zorunlu bahistir**. **Small blind (SB)** dağıtıcı butonunun tam solunda oturur; **big blind (BB)** small blind'ın solundadır. Big blind genelde small blind'ın **iki katıdır** ve masanın standart bahis birimi olarak iş görür.
+> Blind, herhangi bir kart dağıtılmadan önce koyulan bir **zorunlu bahistir**. **Small blind (SB)** dağıtıcı butonunun tam solunda oturur; **big blind (BB)** small blind'ın solundadır (heads-up oyunda small blind'ı buton koyar). Big blind genelde small blind'ın **iki katıdır** ve masanın standart bahis birimi olarak iş görür.
 
 ---
 
 ### Temel sayılar
 
 :::stripe
-2 | her elde koyulan zorunlu bahis
+2 | zorunlu bahis — small blind ve big blind
 1/2 | small blind genelde big blind'ın yarısıdır
 1 BB | big blind = masanın bahis birimi
 :::
@@ -40,9 +40,9 @@ Blind'lar ==pokeri hareket halinde tutan motordur== — [Texas Hold'em kurallar�
 
 ## Pokerde blind nedir — ve neden var?
 
-**Blind**, kartların gelmeden *önce* koymak zorunda olduğun bir bahistir — "kör" (blind) oynarsın, hiçbir şey görmeden. Her elde iki oyuncu koyar: small blind ve big blind, yani dağıtıcı butonunun hemen solundaki iki koltuk. Türkçede blind'a "kör bahis" de denir; small blind "küçük kör", big blind "büyük kör" diye de geçer. Masada duyacağın diğer kelimeler [poker terim sözlüğünde](/tr/glossary).
+**Blind**, kartların gelmeden *önce* koymak zorunda olduğun bir bahistir — "kör" (blind) oynarsın, hiçbir şey görmeden. Her normal elde blind'ları iki oyuncu koyar: small blind ve big blind, yani dağıtıcı butonunun hemen solundaki iki koltuk. (İki yaygın istisna var: bir el boyunca small blind'ın hiç koyulmamasına yol açabilen dead button ve small blind'ı butonun kendisinin koyduğu heads-up oyun — aşağıda.) Türkçede blind'a "kör bahis" de denir; small blind "küçük kör", big blind "büyük kör" diye de geçer. Masada duyacağın diğer kelimeler [poker terim sözlüğünde](/tr/glossary).
 
-Peki neden birini para koymaya zorlamak? Oyunun ölmemesi için. ==r:Blind olmasa, herkes elini yatırıp sonsuza kadar premium el bekleyebilirdi==; potlar boş kalır, blöfün anlamı olmaz ve oyun tıkanırdı. ==g:Her eldeki iki zorunlu bahis, uğrunda savaşılacak bir şeyin her zaman ortada olmasını garantiler.==
+Peki neden birini para koymaya zorlamak? Oyunun ölmemesi için. ==r:Blind ya da başka bir zorunlu bahis olmasa, herkes elini yatırıp sonsuza kadar premium el bekleyebilirdi==; potlar boş kalır, blöfün anlamı olmaz ve oyun tıkanırdı. ==g:Her eldeki iki zorunlu bahis, uğrunda savaşılacak bir şeyin her zaman ortada olmasını garantiler.==
 
 ---
 
@@ -50,13 +50,13 @@ Peki neden birini para koymaya zorlamak? Oyunun ölmemesi için. ==r:Blind olmas
 
 **Small blind (SB)**, iki zorunlu bahsin küçük olanıdır ve **dağıtıcı butonunun tam solunda** oturan oyuncu tarafından koyulur. Genelde **big blind'ın yarısıdır** — $1/$2 bir masada small blind $1'dır.
 
-Aynı zamanda haklı bir üne sahip: masanın en zorlu koltuğu. Rastgele bir elle yarım bahis koymuşsundur ve flop'tan itibaren her sokakta **ilk** sen konuşursun, üstelik en az bilgiyle. Small blind bu yüzden neredeyse herkes için uzun vadede para kaybeder — buradaki amaç kazanmak değil, *daha az* kaybetmektir.
+Aynı zamanda haklı bir üne sahip: masanın en zorlu koltuğu. Rastgele bir elle yarım bahis koymuşsundur ve flop'tan itibaren her sokakta **ilk** sen konuşursun, üstelik en az bilgiyle (tek istisna heads-up: orada small blind butondur ve son konuşur). Small blind bu yüzden neredeyse herkes için uzun vadede para kaybeder — buradaki amaç kazanmak değil, *daha az* kaybetmektir.
 
 ---
 
 ## Big blind nedir?
 
-**Big blind (BB)**, **tam temel bahistir** ve **small blind'ın hemen solunda** oturan oyuncu tarafından koyulur. $1/$2 bir masada big blind $2'dir. Flop'tan önce kimse yükseltmezse, big blind özel bir ayrıcalık kazanır — bedavaya flop'u görmek için [check](/tr/blog/holdem-betting-actions) yapma **"opsiyonu"**.
+**Big blind (BB)**, **tam temel bahistir** ve **small blind'ın hemen solunda** oturan oyuncu tarafından koyulur. $1/$2 bir masada big blind $2'dir. Flop'tan önce kimse yükseltmez ya da straddle koymazsa, big blind özel bir ayrıcalık kazanır — bedavaya flop'u görmek için [check](/tr/blog/holdem-betting-actions) yapma **"opsiyonu"**.
 
 İnsanların "big blind"ı tek başına araması boşuna değil: sadece bir koltuk değil, ==tüm oyunun **ölçü birimidir**==.
 
@@ -78,7 +78,7 @@ Big blind'ı bir kez anladın mı, oyunun tüm sayı dili — yükseltme boylar�
 
 ## Small blind ve big blind kuralları: kim koyar, ne zaman?
 
-Her iki blind da **dağıtımdan önce** koyulur ve dağıtıcı butonu her elden sonra saat yönünde bir koltuk ilerler — böylece blind koltukları onunla döner ve ==herkes bir turda bir kez iki blind'ı da öder==. Kimse sırasını atlayamaz.
+Her iki blind da **dağıtımdan önce** koyulur ve normal rotasyonda dağıtıcı butonu her elden sonra saat yönünde bir koltuk ilerler — böylece blind koltukları onunla döner ve ==herkes bir turda bir kez iki blind'ı da öder==. Masadan kalkarsan sonrası formata bağlıdır: cash game'de döndüğünde kaçırdığın blind'ları koyarsın, big blind'ın tekrar sana gelmesini beklersin ya da — salon izin veriyorsa — onun yerine UTG canlı straddle'ını koyarsın; turnuvada ise koltuğunda olsan da olmasan da blind'lar ve ante'ler stack'inden düşülür.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -87,13 +87,13 @@ Her iki blind da **dağıtımdan önce** koyulur ve dağıtıcı butonu her elde
 | Preflop sırası | Sondan bir önce konuşur | **Son** konuşur ("opsiyon" hakkı) |
 | Postflop sırası | **İlk** konuşur (dezavantaj) | İkinci konuşur |
 
-> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Sokak sokak tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise [poker pozisyonları rehberinde](/tr/blog/holdem-positions) ele alınıyor.
+> **Not:** flop'tan önce aksiyon big blind'ın solundaki oyuncudan başlar ve BB son konuşur — herkesin kararını önce görür. Flop'tan itibaren sıra sıfırlanır ve blind'lar erken konuşur. Bu tabloyu iki durum değiştirir: heads-up'ta buton small blind'dır ve flop'tan sonra son konuşur; salonun izin verdiği yerde koyulan canlı straddle ise preflop aksiyonunu kendi solundan başlatır ve son konuşma yerini devralır. Sokak sokak tüm sıra [Texas Hold'em'de oyun sırası](/tr/blog/holdem-game-order) yazısında adım adım anlatılıyor; buton etrafındaki her koltuğun adı ise [poker pozisyonları rehberinde](/tr/blog/holdem-positions) ele alınıyor.
 
 ---
 
 ## Small blind mı big blind mı daha kötü pozisyon?
 
-**Small blind.** İki koltuk da çoğu oyuncu için zamanla eksiye yazan yerlerdir, ama SB'nin işi daha zordur. Yarım bahsi zaten koymuştur, yine de preflop aksiyonu kapatamaz — arkasında hâlâ big blind oturur — ve flop'tan sonra heads-up dışında her sokakta pozisyon dışında, ilk konuşur. Big blind ise preflop'ta ilk aksiyon turunun son koltuğudur; arkasında yeniden karar verecek oyuncu kalmadığında call'u aksiyonu kapatır ve tam bahsi önceden koyduğu için bu call indirimli bir fiyata gelir.
+**Small blind.** İki koltuk da çoğu oyuncu için zamanla eksiye yazan yerlerdir, ama SB'nin işi daha zordur. Yarım bahsi zaten koymuştur, yine de preflop aksiyonu kapatamaz — arkasında hâlâ big blind oturur — ve flop'tan sonra heads-up dışında her sokakta pozisyon dışında, ilk konuşur. Big blind ise (straddle yoksa) preflop'ta ilk aksiyon turunun son koltuğudur; arkasında yeniden karar verecek oyuncu kalmadığında call'u aksiyonu kapatır ve tam bahsi önceden koyduğu için bu call indirimli bir fiyata gelir.
 
 Mutlak kayıp olarak big blind genelde daha çok eksi yazar, çünkü tam bahsi koyar; ama koyduğu paraya göre en zor oynanan koltuk small blind'dır. Bu yüzden iki blind'da da hedef kâr değil, kaybı küçültmektir: small blind'dan daha seçici, big blind'dan daha geniş oynarsın. Pozisyonun bu farkı neden yarattığını [poker pozisyonları rehberi](/tr/blog/holdem-positions) anlatıyor; small blind'dan hangi ellerle açılacağı ise [başlangıç elleri tablosunda](/tr/hand-chart).
 
@@ -101,11 +101,11 @@ Mutlak kayıp olarak big blind genelde daha çok eksi yazar, çünkü tam bahsi 
 
 ## Blind'lar ne kadar olur? Cash ve turnuvada seviyeler
 
-Seviyeler **SB/BB** olarak yazılır. "$1/$2" bir masa $1 small blind ve $2 big blind demektir; small blind küçük sayı, big blind ise büyük sayıdır.
+No-limit ve pot-limit oyunlarda seviyeler **SB/BB** olarak yazılır. "$1/$2" bir masa $1 small blind ve $2 big blind demektir; small blind küçük sayı, big blind ise büyük sayıdır. (Sabit limitli bir masa ise iki bahis boyuyla adlandırılır — 4-8 limit bir oyunda minimum bahis $4'tür; WSOP Live Action Kural 104.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Seviye | Small Blind | Big Blind | Tipik buy-in |
+| Seviye | Small Blind | Big Blind | Tipik buy-in / seviye |
 |:---|:---:|:---:|:---:|
 | $0,5/$1 | $0,50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
@@ -118,7 +118,7 @@ Seviyeler **SB/BB** olarak yazılır. "$1/$2" bir masa $1 small blind ve $2 big 
 
 </div>
 
-- **Cash game:** blind'lar ==g:**sabit**== kalır. $1/$2 bir masaya oturursun, kalkana kadar $1/$2'dir. (Daha derin bir karşılaştırma için [turnuva mı cash game mi](/tr/blog/holdem-tournament-vs-cash-game) yazısına bak.)
+- **Cash game:** blind'lar ==g:**sabit**== kalır — onları yükselten bir saat yoktur. $1/$2 bir masa, masa ve salon seviyeyi değiştirmeye karar vermedikçe $1/$2 kalır. (Daha derin bir karşılaştırma için [turnuva mı cash game mi](/tr/blog/holdem-tournament-vs-cash-game) yazısına bak.)
 - **Turnuva:** blind'lar ==r:belirli aralıklarla **yükselir**== (örn. 25/50 → 50/100 → 100/200), yani gece ilerledikçe baskı artar. Blind seviyeleri, saat ve yapı çizelgeleri poker turnuvalarının nasıl işlediği rehberinde anlatılıyor.
 
 ---
@@ -127,19 +127,19 @@ Seviyeler **SB/BB** olarak yazılır. "$1/$2" bir masa $1 small blind ve $2 big 
 
 Çoğu turnuvanın erken veya orta aşamalarından itibaren bir **ante** eklenir — blind'lara ek olarak her elde toplanan küçük bir ekstra zorunlu bahis; potu büyütür ve agresifliği ödüllendirir. Yaygın modern versiyon **big blind ante**'dir: herkesin çip atması yerine, ==big blind tüm masa adına tek bir ante koyar — genelde bir big blind kadar==, bu da oyunu hızlı ve temiz tutar. Ante'lerin ne zaman ve nasıl devreye girdiği turnuvanın blind yapısının bir parçasıdır.
 
-Cash oyunlarında göreceğin bir başka zorunlu bahis akrabası daha var: **straddle** — big blind'ın solundaki koltuktan koyulan *gönüllü* ekstra bir blind (genelde BB'nin 2 katı); o el için seviyeleri geçici olarak yükseltir. Kendine ait kuralları, çeşitleri ve aksiyon sırası vardır.
+Cash oyunlarında göreceğin bir başka zorunlu bahis akrabası daha var: **straddle** — UTG'den (big blind'ın solu) ya da izin verilen yerlerde butondan koyulan *gönüllü* ekstra bir blind (genelde BB'nin 2 katı); o el için seviyeleri geçici olarak yükseltir. WSOP kurallarında buton straddle'ı önceliklidir ve limit oyunlarda izin verilmez. Kendine ait kuralları, çeşitleri ve aksiyon sırası vardır.
 
 ---
 
 ## Heads-up pokerde blind'ları kim koyar?
 
-Sadece iki oyuncu kaldığında (ya da bir heads-up maçında) alışılmış kural ==r:tersine döner==. **Dağıtıcı butonu small blind'ı koyar** ve flop'tan önce ==**ilk**== konuşur; diğer oyuncu big blind'ı koyar ve preflop ==**son**== konuşur — sonra da her sonraki sokakta ilk. Butonun blind ödediği tek durum budur ve neredeyse herkesi ilk seferinde şaşırtır.
+Sadece iki oyuncu kaldığında (ya da bir heads-up maçında) alışılmış kural ==r:tersine döner==. **Dağıtıcı butonu small blind'ı koyar** ve flop'tan önce ==**ilk**== konuşur; diğer oyuncu big blind'ı koyar ve preflop ==**son**== konuşur — sonra da her sonraki sokakta ilk.
 
 ---
 
 ## Blind'ını kaçırırsan ne olur? (Dead blind'lar)
 
-Canlı bir cash game masasına oturduğunda genelde bedava oynayamazsın: ya hemen el dağıtılması için **bir big blind koyarsın**, ya da blind koltuğuna gelene kadar beklersin. Masadan kalkıp ==**blind'larını kaçırırsan**==, çoğu salonda döndüğünde tekrar dahil olmak için onları koyarsın — kaçırılan big blind canlı bir bahis olarak oynar, kaçırılan small blind ise doğrudan pota çekilen ==**ölü (dead)**== bir çiptir. Online masalar bunların hepsini otomatik halleder.
+Canlı bir cash game masasına oturduğunda genelde bedava oynayamazsın: çoğu salonda ya hemen el dağıtılması için **bir big blind koyarsın** ya da blind koltuğuna gelene kadar beklersin — ama bazı salonlar no-limit ve pot-limit oyunlarda yeni oyuncudan hiç blind istemez (WSOP Live Action Kural 104.a), o yüzden oturmadan önce krupiyeye sor. Masadan kalkıp ==**blind'larını kaçırırsan**==, çoğu salonda döndüğünde tekrar dahil olmak için onları koyarsın — kaçırılan big blind canlı bir bahis olarak oynar, kaçırılan small blind ise doğrudan pota çekilen ==**ölü (dead)**== bir çiptir. Online masalar bunların hepsini otomatik halleder.
 
 ---
 
@@ -147,8 +147,10 @@ Canlı bir cash game masasına oturduğunda genelde bedava oynayamazsın: ya hem
 
 ![Poker masasında pota doğru düşen çip yığını — butondan bir blind steal push'u](/images/holdem-blind-steal.webp)
 
-- **Small blind: basit tut.** Preflop sondan bir önce ama flop'tan sonra **ilk** konuşuyorsun; temiz başlangıç yaklaşımı call değil, **raise ya da fold**. Limp'le girip pozisyon dışında üstüne gelinmesi yeni başlayanlar için düzenli bir çip sızıntısıdır. (İleri seviyede, özellikle turnuvalarda herkes SB'ye kadar fold ettiğinde limp de geçerli bir stratejidir.)
-- **Big blind: odds ile defans yap.** Zaten tam bir bahis koymuşsun, bu yüzden yükseltmeleri diğer her koltuktan daha geniş elle kârlı şekilde call edebilirsin. 2,5 BB'lik bir open karşısında (small blind fold ederken), 4 BB'lik bir pota 1,5 BB call edersin — yaklaşık 2,7'ye 1, yani rake ve sonraki bahisler yok sayıldığında kabaca %27 equity gerekir. Gerçek kârlılık, bu equity'nin ne kadarını pozisyon dışında kazanca çevirebildiğine de bağlıdır. Bu hesap pot odds'tur ve "big blind defansı"nın var olma sebebi budur.
+Yeni başlayanların en çok çipi sessizce kaybettiğini gördüğüm yer blind'lardır — tek bir büyük potta değil, her turda biraz biraz. Blind'lardaki iki alışkanlık bunun çoğunu düzeltir; geç pozisyondaki bir hamle de bir kısmını geri kazandırır:
+
+- **Small blind: basit tut.** Üç ya da daha fazla kişilik bir masada (ve straddle yokken) preflop sondan bir önce ama flop'tan sonra **ilk** konuşuyorsun; bu yüzden temiz başlangıç yaklaşımı call değil, **raise ya da fold**. Limp'le girip pozisyon dışında üstüne gelinmesi yeni başlayanlar için düzenli bir çip sızıntısıdır — tam bir seans boyunca yeni oyuncuların en çok kaybettiğini gördüğüm koltuk small blind'dır. (İleri seviyede, özellikle turnuvalarda herkes SB'ye kadar fold ettiğinde limp de geçerli bir stratejidir.)
+- **Big blind: odds ile defans yap.** Zaten tam bir bahis koymuşsun, bu yüzden call sana diğer her koltuktan daha ucuza gelir ve daha geniş defans yapabilirsin. 2,5 BB'lik bir open karşısında (small blind fold ederken), 4 BB'lik bir pota 1,5 BB call edersin — yaklaşık 2,7'ye 1, yani rake ve sonraki bahisler yok sayıldığında kabaca %27 equity gerekir. Gerçek kârlılık, bu equity'nin ne kadarını pozisyon dışında kazanca çevirebildiğine de bağlıdır. Bu hesap pot odds'tur ve "big blind defansı"nın var olma sebebi budur.
 - **Geç pozisyon: steal.** Herkes butona ya da cutoff'a kadar fold ettiğinde, yalnızca iki blind'ı almayı hedefleyen bir yükseltme bir **blind steal**'dir — buna karşı yeniden yükseltmek ise bir **re-steal**. Steal boyları, koltuğa göre range'ler ve ne kadar geniş defans yapılacağı strateji konularıdır.
 
 ---
@@ -166,7 +168,7 @@ A. Blind'lar, potta her zaman para olmasını garantileyen zorunlu bahislerdir; 
 
 **Q. Big blind mı önce konuşur, small blind mı?**
 
-A. Flop'tan önce small blind sondan bir önce, big blind ise son konuşur. Flop'tan sonra sıra tersine döner: small blind ilk, big blind ikinci konuşur, masanın geri kalanından önce.
+A. Flop'tan önce, straddle yokken, small blind sondan bir önce, big blind ise son konuşur (canlı straddle varsa preflop son konuşan odur; buton straddle koyduğunda ise ilk small blind konuşur). Flop'tan sonra sıra tersine döner: small blind ilk, big blind ikinci konuşur, masanın geri kalanından önce. (İstisna heads-up'tır: small blind butondadır, bu yüzden preflop ilk, flop'tan sonra son konuşur.)
 
 **Q. Small blind her zaman big blind'ın tam yarısı mıdır?**
 
@@ -174,23 +176,23 @@ A. Genelde, ama her zaman değil — bazı yapılar ($1/$3 ya da $2/$5 gibi) eş
 
 **Q. Kimse yükseltmezse big blind sadece check yapabilir mi?**
 
-A. Evet — bu big blind'ın "opsiyonu"dur. Herkes sadece call ederse, big blind check yapıp bedavaya flop'u görebilir ya da güçlü bir eli varsa yükseltebilir.
+A. Evet — bu big blind'ın "opsiyonu"dur. Herkes sadece big blind'ı call ederse — raise de straddle de yoksa — big blind check yapıp bedavaya flop'u görebilir ya da güçlü bir eli varsa yükseltebilir.
 
 **Q. Blind koyduktan sonra fold edebilir misin?**
 
-A. Evet. Sıran geldiğinde herkes gibi fold edebilirsin; small blind, big blind'a tamamlamak yerine vazgeçebilir, ama koyulan blind'lar asla iade edilmez.
+A. Evet. Sıran geldiğinde herkes gibi fold edebilirsin; small blind, big blind'a tamamlamak yerine vazgeçebilir, ama fold ederek koyduğun blind'ı asla geri alamazsın.
 
 **Q. Small blind big blind'ı tamamlamak zorunda mı?**
 
-A. Hayır. Kimse yükseltmediyse small blind elde kalmak için aradaki farkı ekleyip big blind'a tamamlar; istemezse fold eder, isterse raise yapar. Önünde bir raise varsa call etmek için o tutara kadar koyması gerekir. Sıranın tamamı yukarıdaki kurallar tablosunda.
+A. Hayır. Kimse yükseltmediyse (ve straddle yoksa) small blind elde kalmak için aradaki farkı ekleyip big blind'a tamamlar; istemezse fold eder, isterse raise yapar. Önünde bir raise varsa call etmek için o tutara kadar koyması gerekir. Sıranın tamamı yukarıdaki kurallar tablosunda.
 
 **Q. Heads-up pokerde blind'ları kim koyar?**
 
-A. Sadece iki oyuncu varken kural tersine döner: dağıtıcı butonu small blind'ı koyar ve flop'tan önce ilk konuşur; diğer oyuncu big blind'ı koyar ve preflop son konuşur. Butonun blind ödediği tek durumdur.
+A. Sadece iki oyuncu varken kural tersine döner: dağıtıcı butonu small blind'ı koyar ve flop'tan önce ilk konuşur; diğer oyuncu big blind'ı koyar ve preflop son konuşur.
 
 **Q. Blind'ını kaçırırsan ne olur?**
 
-A. Canlı cash game'de çoğu salonda döndüğünde kaçırdığın blind'ları koyarsın — big blind canlı bir bahis olarak oynar, small blind ise pota eklenen ölü bir çiptir. Alternatif olarak, big blind doğal şekilde koltuğuna gelene kadar bekleyebilirsin. Turnuvada telafi edilecek bir şey yoktur: koltuğunda olsan da olmasan da blind'lar ve ante'ler stack'inden düşülür.
+A. Canlı cash game'de çoğu salonda döndüğünde kaçırdığın blind'ları koyarsın — big blind canlı bir bahis olarak oynar, small blind ise pota eklenen ölü bir çiptir. Alternatif olarak, big blind doğal şekilde koltuğuna gelene kadar bekleyebilirsin — ya da izin veren salonlarda UTG canlı straddle'ını koyarak geri dönebilirsin. Turnuvada telafi edilecek bir şey yoktur: koltuğunda olsan da olmasan da blind'lar ve ante'ler stack'inden düşülür.
 
 **Q. Eski Türk masasında blind yerine ne vardı?**
 
@@ -204,7 +206,7 @@ A. Tam değil — "blind'lar" small ve big blind'ın ikisini birlikte ifade eder
 
 ## Aklında kalması gerekenler
 
-1. Blind'lar **dağıtımdan önceki zorunlu bahislerdir**: small blind butonun solunda, big blind onun solunda, BB genelde SB'nin iki katı.
+1. Blind'lar **dağıtımdan önceki zorunlu bahislerdir**: small blind butonun solunda (heads-up'ta: butonda), big blind onun solunda, BB genelde SB'nin iki katı.
 2. **Big blind masanın birimidir** — yükseltmeler, stack'ler ve turnuva baskısı hep BB cinsinden ölçülür.
 3. Blind'ları dikkatli oyna: **small blind'da raise ya da fold**, **big blind'ı pot odds ile defans et** ve herkes sana kadar fold ettiğinde geç pozisyondan steal'ları çalış.
 
