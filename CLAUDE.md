@@ -102,7 +102,7 @@ npm run compress:images             # public/images 전체 webp 압축
 
 `https://idikicmooauorjurdkzh.supabase.co` / 테이블 7개(profiles·posts·comments·likes·
 event_entries·translations·chat_messages) / 전 테이블 RLS(비로그인 읽기만) / Realtime은
-`chat_messages`만 / 이메일 확인 OFF / 환경변수는 `.env.local`
+`chat_messages`만 / 이메일 확인 **ON**(2026-10-14 `/auth/v1/settings` 조회 `mailer_autoconfirm: false` — 예전 «OFF» 기록은 낡음) / 환경변수는 `.env.local`
 (`GEMINI_API_KEY`는 Vercel 미설정 = 프로덕션 번역 비활성)
 
 ---
