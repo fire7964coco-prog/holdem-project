@@ -8,6 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
+| **10-15 다음 세션 묶음** (사장님 지시) | ③ 텔레그램 준비 안내를 `docs/telegram-login-plan.md` «① 사장님 준비 안내»에서 짧게 뽑아 먼저 드림(사장님 PC에 텔레그램 설치 중) → ① 폴더 정리(아래 «정리 대기» · `../Holdem-ar-{prob,rank,rules,strat}` · fr 레인 7 · `.claude/worktrees/agent-*` 4 — 미커밋·잡은 프로세스 확인 후 · node_modules 9폴더는 링크만 떼고 rmdir) → ② CF-5 용어 사전 Pot·Ante·GTO 3줄 11로케일 전파(queue §2-CF · EN `app/en/glossary/glossary-data.ts`·hi `dict.ts` 문면 기준 · 사본 grep 먼저 → 게이트·빌드·배포·MB) | ▶ 착수 |
 | **MA-549·550·551·553** | ✅ 회신+이행 MB-334(10-14 (14) · tr 3 · ar 3묶음 · hi 1 · EN+hi 사전 3) → ▶ 검수장 변경 줄 재판정 · 잔여 = queue §2-CF CF-5(사전 11로케일 전파 🪶)·CF-6(통지 남김) | 판정 대기 |
 | **MA-554~560** | ✅ MB-335(MA-554) · MB-336(10-15 (2) · MA-555 hi 1 · MA-556 tr 3 · MA-557 ar 1 · MA-558 ar 4 · MA-560·388 ACK) → ▶ 검수장 6파일 9자리 재판정 · ⏸ EN-먼저 2묶음(paired «any» · c-bet A-high 건조) = 검수장 EN 원장 확정 MA 오면 EN+형제 일괄 · 통지 = queue §2-CG·§2-CH | 판정 대기 |
 | **ar 글 클러스터** | ✅ **15편 배포** `f37fc287`(10-14 (11) · 4레인 헤드 머지 · MB-331 = 검수장 ar 15편 판정 요청 · 기록 = `docs/ar-cluster-plan.md` §4-A) → ✅ 검수장 13편 판정 끝(MA-550·551·557·558 · 대회 2편 제외) · 정정 전부 이행(MB-334·336) · ✅ 워크트리 5 해제(10-14 (12) · 정션 링크만 제거 · head 폴더 삭제 · ar-rules 고아 `next dev` 종료 · 브랜치 `harden-ar-*`·`ar-integration` 보존) · ▶ 빈 폴더 `../Holdem-ar-{prob,rank,rules,strat}` 4 = 14:29 기동 claude.exe 4개가 잡고 있음 → 그 창 종료 뒤 rmdir · 🪶 RTL 표시 결함 = queue §2-CD CD-5(CD-2와 공용 RTL 회차) · GTO 4 · `/ar/glossary` 도구 · `/ar/solver` = 보류 | 판정 대기 |
