@@ -28,7 +28,15 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 ### ✅ 진행 기록 (10-15)
 - ① 완료 — 운영용 새 계정 · 봇 `@HoldemMasterBot`(사진 = `public/favicon-512.png`) · BotFather 미니 앱 Login Widget에서 «Switch to OpenID Connect Login» → Client ID `8640330216`(공개 값) · Redirect URI `https://idikicmooauorjurdkzh.supabase.co/auth/v1/callback` · Trusted Origin `https://www.holdemmaster.com/`(텔레그램이 끝 `/` 자동 부착) · 구형 위젯 도메인 칸에도 `www.holdemmaster.com`(무해). Secret·봇 토큰은 텔레그램 안에만(대화·파일에 없음).
 - ② 완료 — Supabase Auth Providers → Custom Providers → `custom:telegram` · Display Name Telegram · Auto-discovery · Issuer `https://oauth.telegram.org` · Discovery 비움 · Scopes `openid, profile, telegram:bot_access` · Allow users without email ON · Callback 일치 확인 · **ENABLED**. 🔴 크롬 자동완성이 Client ID·Secret 칸에 구글 OAuth 키를 채웠던 것을 지우고 넣음 — 공급자 수정 때 같은 함정.
-- ▶ 다음 = ③ 실측(U1·U2): `/login`에 버튼 붙이기 전, 로컬에서 `signInWithOAuth({ provider: 'custom:telegram' })` 1회 → `auth.users`·`identities` 저장 필드 확인(SQL은 사장님 SQL Editor). 무료 플랜 커스텀 공급자 한도 3개(공식 문서).
+- ③ 실측 (10-15 13:01 KST · 사이트 코드 무수정 · 스크래치 Playwright로 authorize → 사장님 폰 승인 · 저장값은 사장님 허락 받아 service role 읽기 전용 조회)
+  - ✅ **종단 성공** — 텔레그램 승인 → Supabase 콜백 → 회원 생성. 토큰 교환이 통과했으니 **U4(Basic 인증) 닫힘**.
+  - Supabase가 텔레그램에 보내는 값(authorize 302 실측): `scope=openid profile telegram:bot_access` · PKCE S256 · `redirect_uri=…supabase.co/auth/v1/callback` — 설정대로.
+  - 생성된 회원: `auth.users.id 1d194faa-…` · email·phone 빈 값 · `app_metadata.provider = custom:telegram` · `profiles` 행 자동 생성(nickname = 텔레그램 이름 «HoldemMaster» · language ko).
+  - 🔴 **U1 결과 — 숫자 텔레그램 ID가 없다.** `identity_data`·`user_metadata`에 들어온 클레임 = `sub`·`name`·`given_name`·`iss`·`aud`·`iat`·`exp`·`email_verified`·`phone_verified` **뿐**. `profile` 스코프의 `id`·`preferred_username`·`picture`는 **없음**. `sub = 11184368554172094806`(20자리 · int64 상한 초과) = 텔레그램 user id가 아니다(공식 문서 예시도 `sub`와 `id`가 다른 값 · 둘의 관계는 문서에 설명 없음). 원인(텔레그램이 안 보냈나 / Supabase가 버렸나)은 **미판정** — ID 토큰 원문은 Supabase를 거치면 볼 수 없다.
+  - 영향: 봇 DM은 `chat_id`(숫자 ID)가 있어야 한다 → **로그인만으로는 발송 대상이 안 생긴다.** 후보 = ⓐ 봇 딥링크 `t.me/HoldemMasterBot?start=<1회용 토큰>` — 회원이 Start를 누르면 봇이 받은 업데이트의 `from.id`로 연결(OIDC와 무관 · 표준 방식) ⓑ ID 토큰 원문 확인(Client Secret 필요 = 사장님 몫)으로 `id` 클레임이 오는지 판정. 
+  - 부수 관찰: `redirect_to=http://localhost:…`는 허용 목록 밖이라 사이트 URL 루트(`/?code=`)로 떨어진다(로컬 시험 시 허용 목록 추가 필요). 라이브 `/auth/callback`은 verifier 없는 code를 받으면 `/login?error=auth` — 정상 동작.
+  - U2(기존 회원에 연결)는 미시험.
+- ▶ 다음 = 사장님 결정: 숫자 ID 확보 경로(ⓐ 권장) → ④ 테이블 설계에 반영(`telegram_links.sub` text + `chat_id` bigint는 Start 뒤 채움).
 
 ### ① 사장님 준비 안내 (공식 문서 문장 기준 · 10-13)
 1. 텔레그램에서 **@BotFather** → `/newbot` → 봇 이름(예: HoldemMaster) · 아이디(…bot으로 끝나야 함) → **봇 토큰**이 나온다(비밀 · 채팅에 붙이지 말고 저에게 «받았다»만).
