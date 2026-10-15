@@ -1,17 +1,19 @@
 import { createServerClient } from "@supabase/ssr";
-import { cookies } from "next/headers";
-import { SUPABASE_AUTH_COOKIE } from "./cookie-name";
+import { cookies, headers } from "next/headers";
+import { aliasLegacyAuthCookies, authCookieOptions } from "./cookie-name";
 
 export async function createClient() {
   const cookieStore = await cookies();
+  const host = (await headers()).get("host");
   return createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
-      cookieOptions: { name: SUPABASE_AUTH_COOKIE },
+      cookieOptions: authCookieOptions(host),
       cookies: {
         getAll() {
-          return cookieStore.getAll();
+          // 옮기기 전 옛 www 전용 쿠키도 새 이름으로 읽는다(옮겨 쓰기·지우기는 미들웨어·브라우저 몫)
+          return aliasLegacyAuthCookies(cookieStore.getAll()).cookies;
         },
         setAll(cookiesToSet) {
           try {
