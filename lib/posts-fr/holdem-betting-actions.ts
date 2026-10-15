@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, il y a 5 actions : checker (dire « parole » : ne pas miser tout en restant dans le coup), miser (ouvrir le tour), suivre (payer la mise), relancer (la relance minimum égale au moins la dernière mise ou relance complète) et se coucher (fold). Tu ne peux checker que s'il n'y a aucune mise devant toi : préflop, c'est en général seulement la grosse blinde, ou le joueur qui a posé un straddle.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ Au Texas Hold'em, il n'existe que ==5 actions de mise==, mais les règles qui le
 5 | actions de mise : checker, miser, suivre, relancer, se coucher
 1 BB | mise d'ouverture minimale en No-Limit Hold'em
 = dernière relance complète | taille minimale d'une surrelance (la règle de l'incrément)
-Aucun plafond | de surrelances en No-Limit — tu peux relancer jusqu'à ce que quelqu'un soit à tapis
+Aucun plafond | de surrelances en No-Limit — les relances peuvent continuer jusqu'à ce que tous les joueurs encore dans le coup sauf un soient à tapis
 :::
 
 ## Quelles sont les 5 actions au poker : check, mise, call, relance, fold ?
@@ -166,7 +166,7 @@ Deux règles du poker en live qui accompagnent la relance :
 
 ## Combien de fois peut-on relancer au poker ?
 
-En No-Limit Hold'em, il n'y a aucune limite au nombre de relances : on peut surrelancer jusqu'à ce qu'un joueur soit à tapis, tant que chaque relance respecte l'incrément minimum. Deux bornes restent : tu ne peux pas relancer ta propre mise, et en Fixed-Limit, le nombre de relances par tour est plafonné.
+En No-Limit Hold'em, il n'y a aucune limite au nombre de relances : on peut surrelancer jusqu'à ce que tous les joueurs encore dans le coup sauf un soient à tapis, tant que chaque relance respecte l'incrément minimum. Deux bornes restent : tu ne peux pas relancer ta propre mise, et en Fixed-Limit, le nombre de relances par tour est plafonné.
 
 Concrètement, en **No-Limit Hold'em**, tu peux relancer, te faire surrelancer et relancer encore (« surrelance », « relancer une relance » — c'est la même chose) : relance → 3-bet → 4-bet → 5-bet → tapis est une séquence légale, aussi terrifiante soit-elle.
 
@@ -242,7 +242,7 @@ A. Non. Si tu mises et que tes adversaires se contentent de suivre, tu ne peux r
 
 **Q. Y a-t-il une limite au nombre de relances au Texas Hold'em ?**
 
-A. En No-Limit, il n'y a aucun plafond sur le nombre de relances — les surrelances peuvent continuer jusqu'à ce qu'un joueur soit à tapis, tant que chaque relance respecte l'incrément minimum (un tapis peut être plus petit). Les règles de tournoi de la WSOP plafonnent un tour de Fixed-Limit à une mise plus quatre relances (règle 100.b), et ce plafond tient même quand il ne reste que deux joueurs dans le coup — il ne saute qu'une fois le tournoi entier en heads-up.
+A. En No-Limit, il n'y a aucun plafond sur le nombre de relances — les surrelances peuvent continuer jusqu'à ce que tous les joueurs encore dans le coup sauf un soient à tapis, tant que chaque relance respecte l'incrément minimum (un tapis peut être plus petit). Les règles de tournoi de la WSOP plafonnent un tour de Fixed-Limit à une mise plus quatre relances (règle 100.b), et ce plafond tient même quand il ne reste que deux joueurs dans le coup — il ne saute qu'une fois le tournoi entier en heads-up.
 
 **Q. Peut-on se coucher quand ce n'est pas son tour ?**
 

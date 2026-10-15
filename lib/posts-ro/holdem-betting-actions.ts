@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em ai 5 acțiuni de pariere: check (pasezi gratis), pariu (deschizi runda), call/a plăti (egalezi pariul), raise/a mări (relansarea minimă egalează ultimul pariu sau ultima relansare completă) și fold/a renunța. Poți da check doar dacă în fața ta nu stă un pariu activ — preflop, de regulă, asta se întâmplă doar dacă ești big blind (sau jucătorul care a pus un straddle viu).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ La Texas Hold'em există doar ==5 acțiuni de pariere==, dar regulile din jurul 
 5 | acțiuni de pariere: check, pariu, call, raise, fold
 1 BB | pariul minim de deschidere în No-Limit Hold'em
 = ultima relansare completă | mărimea minimă a re-relansării (regula incrementului)
-Fără plafon | la re-relansări în No-Limit — poți relansa până când cineva intră all-in
+Fără plafon | la re-relansări în No-Limit — relansările pot continua până când toți jucătorii rămași în mână, mai puțin unul, sunt all-in
 :::
 
 ## Care sunt cele 5 acțiuni de pariere la Texas Hold'em?
@@ -139,7 +139,7 @@ Două reguli de poker live care vin la pachet cu relansarea:
 
 ## De câte ori poți relansa la poker?
 
-În **No-Limit Hold'em: nu există plafon**. Poți relansa, poți fi re-relansat și poți relansa din nou ("re-raise", "a relansa o relansare" — același lucru) până când cineva rămâne fără jetoane. Raise → 3-bet → 4-bet → 5-bet → all-in e o secvență legală, chiar dacă îți dă fiori.
+În **No-Limit Hold'em: nu există plafon**. Poți relansa, poți fi re-relansat și poți relansa din nou ("re-raise", "a relansa o relansare" — același lucru) până când toți cei rămași în mână, mai puțin unul, rămân fără jetoane. Raise → 3-bet → 4-bet → 5-bet → all-in e o secvență legală, chiar dacă îți dă fiori.
 
 Rămân totuși două limite:
 
@@ -207,7 +207,7 @@ A. Nu. Dacă pariezi și adversarii doar plătesc, nu poți adăuga nimic — ru
 
 **Q. De câte ori poți relansa la Texas Hold'em?**
 
-A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când un jucător intră all-in, atâta timp cât fiecare relansare respectă incrementul minim (all-in-ul poate fi mai mic). La Fixed-Limit, regulile de turneu WSOP plafonează runda la un pariu plus patru relansări (regula 100.b), iar plafonul rămâne chiar dacă în mână au mai rămas doi jucători — cade abia când întreg turneul ajunge heads-up.
+A. În No-Limit nu există plafon la numărul de relansări — re-relansarea poate continua până când toți jucătorii rămași în mână, mai puțin unul, sunt all-in, atâta timp cât fiecare relansare respectă incrementul minim (all-in-ul poate fi mai mic). La Fixed-Limit, regulile de turneu WSOP plafonează runda la un pariu plus patru relansări (regula 100.b), iar plafonul rămâne chiar dacă în mână au mai rămas doi jucători — cade abia când întreg turneul ajunge heads-up.
 
 **Q. Poți da fold în afara rândului?**
 

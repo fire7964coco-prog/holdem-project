@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ina betting actions 5: check (kupitisha bure), bet (kufungua raundi), call (kulingana na dau), raise (kupandisha — min-raise inalingana na bet au raise kamili ya mwisho), na fold. Unaweza kufanya check tu pale ambapo hakuna bet inayoendelea mbele yako — kwenye preflop kwa kawaida ni big blind pekee (au aliyeweka live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ Texas Hold'em ina ==betting actions 5 tu==, lakini sheria zinazozizunguka (lini 
 5 | betting actions: check, bet, call, raise, fold
 1 BB | bet ndogo zaidi ya kufungua katika No-Limit Hold'em
 = raise kamili ya mwisho | ukubwa mdogo zaidi wa re-raise (sheria ya nyongeza)
-Hakuna kikomo | cha re-raise katika No-Limit — unaweza raise hadi mtu awe all-in
+Hakuna kikomo | cha re-raise katika No-Limit — raise inaweza kuendelea hadi wachezaji wote waliobaki kwenye mkono, isipokuwa mmoja, wawe all-in
 :::
 
 ## Betting Actions 5 za Texas Hold'em ni Zipi?
@@ -139,7 +139,7 @@ Sheria mbili za live poker zinazokuja na raise:
 
 ## Unaweza Raise Mara Ngapi katika Poker?
 
-Katika **No-Limit Hold'em: hakuna kikomo**. Unaweza raise, upate re-raise, na uraise tena ("re-raise", "raise a raise" — kitu kile kile) hadi mtu aishiwe chipsi. Raise → 3-bet → 4-bet → 5-bet → all-in ni mfululizo halali, ingawa wa kutisha.
+Katika **No-Limit Hold'em: hakuna kikomo**. Unaweza raise, upate re-raise, na uraise tena ("re-raise", "raise a raise" — kitu kile kile) hadi wachezaji wote waliobaki kwenye mkono, isipokuwa mmoja, waishiwe chipsi. Raise → 3-bet → 4-bet → 5-bet → all-in ni mfululizo halali, ingawa wa kutisha.
 
 Bado kuna mipaka miwili:
 
@@ -206,7 +206,7 @@ A. Hapana. Kama ukiweka bet na wapinzani wakafanya call tu, huwezi kuongeza zaid
 
 **Q. Unaweza raise mara ngapi katika Texas Hold'em?**
 
-A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi mchezaji awe all-in, mradi kila raise itimize nyongeza ya chini (all-in inaweza kuwa pungufu). Kwenye Fixed-Limit, sheria za mashindano za WSOP zinaweka kikomo cha raundi kwenye bet moja pamoja na raise nne (Rule 100.b), na kikomo hicho kinabaki hata kama kwenye mkono huo wamebaki wawili — kinaondoka tu pale mashindano yote yanapokuwa heads-up.
+A. Katika No-Limit hakuna kikomo cha idadi ya raise — re-raise inaweza kuendelea hadi wachezaji wote waliobaki kwenye mkono, isipokuwa mmoja, wawe all-in, mradi kila raise itimize nyongeza ya chini (all-in inaweza kuwa pungufu). Kwenye Fixed-Limit, sheria za mashindano za WSOP zinaweka kikomo cha raundi kwenye bet moja pamoja na raise nne (Rule 100.b), na kikomo hicho kinabaki hata kama kwenye mkono huo wamebaki wawili — kinaondoka tu pale mashindano yote yanapokuwa heads-up.
 
 **Q. Unaweza fold nje ya zamu yako?**
 

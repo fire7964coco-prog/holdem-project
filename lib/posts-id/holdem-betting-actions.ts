@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise penuh terakhir), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 menit",
@@ -39,7 +39,7 @@ Texas Hold'em hanya punya ==5 aksi taruhan==, tapi aturan di sekelilingnya (kapa
 5 | aksi taruhan: check, bet, call, raise, fold
 1 BB | taruhan pembuka minimum di No-Limit Hold'em
 = raise penuh terakhir | ukuran minimum re-raise (aturan inkremen)
-Tanpa batas | jumlah re-raise di No-Limit — Anda bisa terus raise sampai ada yang all-in
+Tanpa batas | jumlah re-raise di No-Limit — raise bisa terus berlanjut sampai semua pemain yang masih di hand, kecuali satu, all-in
 :::
 
 ## Apa Saja 5 Aksi Taruhan di Texas Hold'em?
@@ -139,7 +139,7 @@ Dua aturan poker live yang menyertai raise:
 
 ## Berapa Kali Anda Boleh Raise di Poker?
 
-Di **No-Limit Hold'em: tidak ada batas**. Anda bisa raise, di-re-raise, lalu raise lagi ("re-raise", "raise di atas raise" — sama saja) sampai ada yang kehabisan chip. Raise → 3-bet → 4-bet → 5-bet → all-in adalah urutan yang sah, walau bikin jantung berdebar.
+Di **No-Limit Hold'em: tidak ada batas**. Anda bisa raise, di-re-raise, lalu raise lagi ("re-raise", "raise di atas raise" — sama saja) sampai semua pemain yang masih di hand, kecuali satu, kehabisan chip. Raise → 3-bet → 4-bet → 5-bet → all-in adalah urutan yang sah, walau bikin jantung berdebar.
 
 Tetap ada dua batasan:
 
@@ -211,7 +211,7 @@ A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi —
 
 **Q. Berapa kali boleh raise di Texas Hold'em?**
 
-A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai ada pemain yang all-in, selama tiap raise memenuhi inkremen minimum (all-in boleh kurang dari itu). Di Fixed-Limit, aturan turnamen WSOP membatasi satu ronde pada satu bet plus empat raise (Rule 100.b), dan batas itu tetap berlaku sekalipun tinggal dua pemain di hand tersebut — batas baru lepas begitu seluruh turnamen tinggal heads-up.
+A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai semua pemain yang masih di hand, kecuali satu, all-in, selama tiap raise memenuhi inkremen minimum (all-in boleh kurang dari itu). Di Fixed-Limit, aturan turnamen WSOP membatasi satu ronde pada satu bet plus empat raise (Rule 100.b), dan batas itu tetap berlaku sekalipun tinggal dua pemain di hand tersebut — batas baru lepas begitu seluruh turnamen tinggal heads-up.
 
 **Q. Bisakah fold di luar giliran?**
 

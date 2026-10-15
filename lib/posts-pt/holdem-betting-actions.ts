@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à última aposta ou raise completo) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -40,7 +40,7 @@ O Texas Hold'em tem só ==5 ações de aposta==, mas as regras em volta delas (q
 5 | ações de aposta: check, apostar, pagar, aumentar, foldar
 1 BB | aposta mínima de abertura no No-Limit Hold'em
 = último raise completo | tamanho mínimo do reaumento (regra do incremento)
-Sem teto | de reaumentos no No-Limit — dá para aumentar até alguém ir all-in
+Sem teto | de reaumentos no No-Limit — dá para seguir aumentando até que todos os jogadores ainda na mão, menos um, estejam all-in
 :::
 
 ## Quais são as 5 ações de aposta no Texas Hold'em?
@@ -140,7 +140,7 @@ Duas regras do poker ao vivo que vêm junto com o raise:
 
 ## Quantas vezes você pode aumentar no poker?
 
-No **No-Limit Hold'em: não existe teto**. Você pode aumentar, levar um reaumento e aumentar de novo ("re-raise", "aumentar um raise" — a mesma coisa) até alguém ficar sem fichas. Raise → 3-bet → 4-bet → 5-bet → all-in é uma sequência legal, ainda que assustadora.
+No **No-Limit Hold'em: não existe teto**. Você pode aumentar, levar um reaumento e aumentar de novo ("re-raise", "aumentar um raise" — a mesma coisa) até todos os que ainda estão na mão, menos um, ficarem sem fichas. Raise → 3-bet → 4-bet → 5-bet → all-in é uma sequência legal, ainda que assustadora.
 
 Dois limites continuam valendo:
 
@@ -212,7 +212,7 @@ A. Não. Se você aposta e os adversários apenas pagam, você não pode adicion
 
 **Q. Quantas vezes pode aumentar no Texas Hold'em?**
 
-A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até alguém ficar all-in, desde que cada raise respeite o incremento mínimo (um all-in pode ser por menos). No Fixed-Limit, as regras de torneio da WSOP limitam a rodada a uma aposta mais quatro raises (regra 100.b), e esse teto vale mesmo com só dois jogadores restantes na mão — ele só cai quando o torneio inteiro fica heads-up.
+A. No No-Limit não há limite para o número de raises — o reaumento pode continuar até que todos os jogadores ainda na mão, menos um, estejam all-in, desde que cada raise respeite o incremento mínimo (um all-in pode ser por menos). No Fixed-Limit, as regras de torneio da WSOP limitam a rodada a uma aposta mais quatro raises (regra 100.b), e esse teto vale mesmo com só dois jogadores restantes na mão — ele só cai quando o torneio inteiro fica heads-up.
 
 **Q. Pode foldar fora da sua vez?**
 

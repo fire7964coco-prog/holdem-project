@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O mână de Texas Hold'em se desfășoară astfel: se pun blind-urile → se împart două cărți din mână → preflop → flop (3 cărți) → turn (1 carte) → river (1 carte) → showdown, cu patru runde de pariere în total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -66,8 +66,8 @@ După ce s-au pus blind-urile, dealerul împarte fiecărui jucător două **căr
 Acțiunea pornește de la stânga big blind-ului și continuă în sensul acelor de ceasornic. Când e rândul tău, alegi una dintre variante:
 
 - **Fold (a renunța)** — abandonezi mâna și arunci cărțile. Nu mai pierzi nimic, dar nici nu poți câștiga.
-- **Call (a plăti)** — egalezi pariul curent (pe preflop, adică big blind-ul).
-- **Raise (a mări)** — pariezi mai mult decât big blind-ul ca să pui presiune pe adversari.
+- **Call (a plăti)** — egalezi pariul curent (pe preflop, dacă nimeni n-a pus încă mai mult decât big blind-ul, adică big blind-ul).
+- **Raise (a mări)** — pariezi mai mult decât pariul curent ca să pui presiune pe adversari.
 - **3-bet (re-mărire)** — un raise peste raise-ul altcuiva. Semnal de mână puternică.
 
 ==r:Majoritatea începătorilor joacă aproape orice mână „doar ca să vadă un flop". E cel mai scump obicei din poker.== ==g:**Jucătorii buni renunță la majoritatea mâinilor pe preflop și joacă doar în jur de 15–25% dintre ele.**==

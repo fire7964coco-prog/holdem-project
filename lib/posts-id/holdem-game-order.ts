@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan paling banyak empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 menit",
@@ -68,8 +68,8 @@ Begitu blinds terpasang, dealer memberi setiap pemain dua **kartu tertutup** men
 Aksi dimulai dari kiri big blind dan bergerak searah jarum jam. Di giliran Anda, Anda memilih salah satu dari ini:
 
 - **Fold** — menyerah dan membuang kartu Anda. Anda tidak kehilangan apa-apa lagi, tapi juga tidak bisa menang.
-- **Call** — menyamai taruhan yang berjalan (di preflop, itu berarti big blind).
-- **Raise** — bertaruh lebih besar dari big blind untuk menekan lawan.
+- **Call** — menyamai taruhan yang berjalan (di preflop, kalau belum ada yang raise atau straddle, itu berarti big blind).
+- **Raise** — bertaruh lebih besar dari taruhan yang berjalan untuk menekan lawan.
 - **3-bet** — raise di atas raise pemain lain. Sinyal kartu kuat.
 
 ==r:Kebanyakan pemula memainkan hampir semua hand "yang penting lihat flop dulu". Itu kebiasaan paling mahal di poker.== ==g:**Pemain bagus mem-fold sebagian besar kartunya di preflop dan hanya memainkan sekitar 15–25% saja.**==

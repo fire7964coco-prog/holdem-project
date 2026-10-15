@@ -1265,7 +1265,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CE-3 EN-먼저 ③ | betting «until someone is all-in»(표 L41 · FAQ L213) + 본문 L141 «until someone runs out of chips» — 멀티웨이 full raise all-in 뒤 재레이즈 가능(같은 글 FAQ L225)과 모순 | ✅ EN «until all but one player still in is all-in» 3자리 → hi·tr 3자리씩 전파 |
 | CE-4 EN-먼저 ④ | game-order Call 괄호 «(preflop, that's the big blind)» 미레이즈 한정 없음 | ✅ EN «(preflop, if nobody has raised yet, …)» → hi·tr 전파 |
 | CE-5 tr ⑤ | game-order L263 straddle을 «zorunlu bahis»로 규정(B 165 «optional») | ✅ «kendi koyduğun/koyduğu bahis» · «koyduğu straddle» (EN «post» 중립 대응) |
-| CE-6 전파 잔여 | CE-3·CE-4 EN 문면 = 나머지 로케일(ar bn de es fa fil fr he id it ja ms pl pt ro ru sw th uk vi zh zh-hant) 미전파 · masterUpdated 10-13 그대로 | 🪶 다음 rules 로케일 회차 때(같은 문장 사본을 로케일마다 grep -c로 먼저 센다) |
+| CE-6 전파 잔여 | CE-3·CE-4 EN 문면 = 나머지 로케일(ar bn de es fa fil fr he id it ja ms pl pt ro ru sw th uk vi zh zh-hant) 미전파 · masterUpdated 10-13 그대로 | ✅ 10-15 MB-350 — 21로케일 betting 3자리 + 사본 fr·ja 1씩 · game-order Call 괄호 (ar = CF-3에서 이미) |
 | 통지 | EN-먼저 라벨 아님: hi = BB 콜 최저가 스트래들 반례 · FAQ 전원 올인 예외 · WSOP 리밋 캡 헤즈업 · Pot-Limit «현재 팟» · dead button ↔ «두 강제 베팅» 외 · tr = HQ-REPORT §6 6건(버튼 스트래들 룸별 · betting alt «$10» 블라인드 전제 · «Herkes pas geçer» · Limit 캡 헤즈업 · 순서표 헤즈업 · game-order 줄끝 혼합) | 🪶 판단 대상 · 본체 «남김» CC-5·6·7은 검수장이 이번 이행 MB 때 재판정 |
 
 ### 2-CF. 우편함 수신분 — MA-549(tr R2) · MA-550(ar-a R1) · MA-551(ar-b R1) · MA-553(hi R2) · 등재 2026-10-14
@@ -1288,7 +1288,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | # | 자리 | 처리 |
 |---|---|---|
 | CG-1 hi ① | beginners 스택표 5/10 노트 «पर अनुपात वही (100–200 big blinds)» — 1/2 행 = 100–250BB라 «같은 비율» 불성립(hi 고유 · CE-1 대체 문면에서 유입) | ✅ «पर stack अब भी 100–200 big blinds का» · ➕ **ar 사본 1**(CF-2 같은 표 «والنسبة نفسها») → «والرصيد ما زال 100–200 بيغ بلايند» — 사본 grep = hi·ar 2뿐 |
-| CG-2 통지 EN-먼저 | game-order L59 Call 괄호 «if nobody has raised yet»에 라이브 스트래들 한정 없음(B 165·174 · 같은 글 L258 «raised or straddled») · L60 Raise «more than the big blind» 같은 꼴 · hi L58·tr L51 동형 | 🪶 CE-6 전파 때 함께(EN L59·L60 먼저 → 사본 grep 뒤 로케일) |
+| CG-2 통지 EN-먼저 | game-order L59 Call 괄호 «if nobody has raised yet»에 라이브 스트래들 한정 없음(B 165·174 · 같은 글 L258 «raised or straddled») · L60 Raise «more than the big blind» 같은 꼴 · hi L58·tr L51 동형 | ✅ 10-15 MB-350 — EN «raised or straddled» · Raise «more than the current bet» → 24로케일(스트래들 용어 없는 11로케일은 «BB보다 많이 넣지 않았다면») |
 | 참고 | MA-554 «ar MA-550 ③ 남음» = 기준 `bb1382cd` 시점 — `c67e1afe`(MB-334)에서 이행됨 | ✅ MA-560이 해소 확인 |
 
 ### 2-CH. 우편함 수신분 — MA-561(hi R4 gto · 등재 10-15 (4)) · MA-555(hi R3 gto) · MA-556(tr R3 prob-gloss) · MA-557(ar-a R2) · MA-558(ar-b R2 · ar 13편 끝) · MA-560(MB-334·335 재판정 · 요청 0) · 등재 2026-10-15

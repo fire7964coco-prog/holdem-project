@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ci sono 5 azioni di puntata: check (passi gratis), puntare (apri il giro), chiamare (pareggi la puntata), rilanciare (il rilancio minimo è pari all'ultima puntata o all'ultimo rilancio completo) e passare. Puoi fare check solo quando davanti a te non c'è una puntata viva — preflop, di norma, questo vale solo per il big blind (o per chi ha messo uno straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ Nel Texas Hold'em esistono solo ==5 azioni di puntata==, ma le regole che ci gir
 5 | azioni di puntata: check, puntare, chiamare, rilanciare, passare
 1 BB | puntata minima di apertura nel No-Limit Hold'em
 = ultimo rilancio completo | dimensione minima del re-rilancio (la regola dell'incremento)
-Nessun limite | ai re-rilanci nel No-Limit — puoi rilanciare finché qualcuno non va all-in
+Nessun limite | ai re-rilanci nel No-Limit — si può continuare a rilanciare finché tutti i giocatori ancora in mano tranne uno non sono all-in
 :::
 
 ## Quali sono le 5 azioni di puntata nel Texas Hold'em?
@@ -139,7 +139,7 @@ Due regole del poker dal vivo che arrivano insieme al rilancio:
 
 ## Quante volte si può rilanciare nel poker?
 
-Nel **No-Limit Hold'em: non c'è limite**. Puoi rilanciare, farti re-rilanciare e rilanciare di nuovo ("re-rilancio", "rilanciare un rilancio" — è la stessa cosa) finché qualcuno non resta senza fiches. Rilancio → 3-bet → 4-bet → 5-bet → all-in è una sequenza lecita, per quanto da brivido.
+Nel **No-Limit Hold'em: non c'è limite**. Puoi rilanciare, farti re-rilanciare e rilanciare di nuovo ("re-rilancio", "rilanciare un rilancio" — è la stessa cosa) finché tutti quelli ancora in mano tranne uno non restano senza fiches. Rilancio → 3-bet → 4-bet → 5-bet → all-in è una sequenza lecita, per quanto da brivido.
 
 Restano comunque due paletti:
 
@@ -207,7 +207,7 @@ A. No. Se punti e gli avversari si limitano a chiamare, non puoi aggiungere altr
 
 **Q. Quante volte si può rilanciare nel Texas Hold'em?**
 
-A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché un giocatore non va all-in, purché ogni rilancio rispetti l'incremento minimo (l'all-in può essere inferiore). Nel Fixed-Limit le regole da torneo WSOP cappano il giro a una puntata più quattro rilanci (regola 100.b), e il tetto resta anche se nella mano sono rimasti solo due giocatori — cade solo quando l'intero torneo è heads-up.
+A. Nel No-Limit non c'è limite al numero di rilanci — si può re-rilanciare finché tutti i giocatori ancora in mano tranne uno non sono all-in, purché ogni rilancio rispetti l'incremento minimo (l'all-in può essere inferiore). Nel Fixed-Limit le regole da torneo WSOP cappano il giro a una puntata più quattro rilanci (regola 100.b), e il tetto resta anche se nella mano sono rimasti solo due giocatori — cade solo quando l'intero torneo è heads-up.
 
 **Q. Si può passare fuori turno?**
 

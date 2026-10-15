@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling full bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, karaniwang ang big blind lang iyon (o ang nag-post ng live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ Lima lang ang ==betting actions== ng Texas Hold'em, pero ang mga rules sa paligi
 5 | betting actions: check, bet, call, raise, fold
 1 BB | pinakamaliit na opening bet sa No-Limit Hold'em
 = huling full raise | pinakamaliit na re-raise size (ang increment rule)
-Walang cap | sa re-raises sa No-Limit — pwede kang mag-raise hanggang may mag-all-in
+Walang cap | sa re-raises sa No-Limit — pwedeng magtuloy ang raise hanggang mag-all-in ang lahat ng natitira sa hand maliban sa isa
 :::
 
 ## Ano ang 5 Betting Actions sa Texas Hold'em?
@@ -139,7 +139,7 @@ Kung *gaano* kalaki ang dapat mong i-raise (2.5x na opens, 3x na 3-bets, sizing 
 
 ## Ilang Beses Ka Pwedeng Mag-Raise sa Poker?
 
-Sa **No-Limit Hold'em: walang cap**. Pwede kang mag-raise, ma-re-raise, at mag-raise ulit ("re-raise", "raise a raise" — pareho lang) hanggang maubusan ng chips ang isa. Raise → 3-bet → 4-bet → 5-bet → all-in ay legal, kahit nakakatakot, na sequence.
+Sa **No-Limit Hold'em: walang cap**. Pwede kang mag-raise, ma-re-raise, at mag-raise ulit ("re-raise", "raise a raise" — pareho lang) hanggang maubusan ng chips ang lahat ng natitira sa hand maliban sa isa. Raise → 3-bet → 4-bet → 5-bet → all-in ay legal, kahit nakakatakot, na sequence.
 
 Dalawang hangganan pa rin ang tumatakbo:
 
@@ -206,7 +206,7 @@ A. Hindi. Kung nag-bet ka at basta nag-call lang ang mga kalaban, hindi ka na pw
 
 **Q. Ilang beses ka pwedeng mag-raise sa Texas Hold'em?**
 
-A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang isang manlalaro, basta matugunan ng bawat raise ang minimum increment (puwedeng kulang ang all-in). Sa Fixed-Limit, nagki-cap ang tournament rules ng WSOP sa isang bet plus apat na raises (Rule 100.b), at nananatili ang cap kahit dalawa na lang ang natitira sa hand — naaalis lang ito kapag heads-up na ang buong tournament.
+A. Sa No-Limit walang cap sa dami ng raise — pwedeng magpatuloy ang re-raise hanggang mag-all-in ang lahat ng natitira sa hand maliban sa isa, basta matugunan ng bawat raise ang minimum increment (puwedeng kulang ang all-in). Sa Fixed-Limit, nagki-cap ang tournament rules ng WSOP sa isang bet plus apat na raises (Rule 100.b), at nananatili ang cap kahit dalawa na lang ang natitira sa hand — naaalis lang ito kapag heads-up na ang buong tournament.
 
 **Q. Pwede ka bang mag-fold out of turn?**
 

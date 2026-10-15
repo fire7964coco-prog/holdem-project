@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমে 5টি betting action আছে: check (ফ্রি-তে পাস), bet (রাউন্ড শুরু), call (bet সমান করা), raise (বাড়ানো — minimum raise শেষ full bet বা raise-এর সমান), আর fold। check শুধু তখনই করা যায় যখন আপনার সামনে কোনো চালু bet নেই — preflop-এ সেটা সাধারণত কেবল big blind-এর ক্ষেত্রে ঘটে (অথবা যিনি live straddle দিয়েছেন)।",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ check? call? raise? হ্যান্ড র‍্যাঙ্কিং তো 
 5 | betting action: check, bet, call, raise, fold
 1 BB | No-Limit Hold'em-এ minimum opening bet
 = last full raise | minimum re-raise-এর আকার (increment নিয়ম)
-No cap | No-Limit-এ re-raise-এ — কেউ all-in না হওয়া পর্যন্ত raise করা যায়
+No cap | No-Limit-এ re-raise-এ — হ্যান্ডে বাকি খেলোয়াড়দের একজন ছাড়া সবাই all-in না হওয়া পর্যন্ত raise চলতে পারে
 :::
 
 ## টেক্সাস হোল্ডেমের 5টি betting action কোনগুলো?
@@ -139,7 +139,7 @@ raise-এর সঙ্গে আসা দুটো live পোকার নি�
 
 ## পোকারে কতবার raise করা যায়?
 
-**No-Limit Hold'em-এ: কোনো cap নেই**। আপনি raise করতে পারেন, আপনার ওপর re-raise হতে পারে, আর আপনি আবার raise করতে পারেন ("re-raise", "raise a raise" — একই ব্যাপার) যতক্ষণ না কারও chips শেষ হয়ে যায়। raise → 3-bet → 4-bet → 5-bet → all-in একটা legal, যদিও ভয়ংকর, ক্রম।
+**No-Limit Hold'em-এ: কোনো cap নেই**। আপনি raise করতে পারেন, আপনার ওপর re-raise হতে পারে, আর আপনি আবার raise করতে পারেন ("re-raise", "raise a raise" — একই ব্যাপার) যতক্ষণ না হ্যান্ডে বাকি খেলোয়াড়দের একজন ছাড়া সবার chips শেষ হয়ে যায়। raise → 3-bet → 4-bet → 5-bet → all-in একটা legal, যদিও ভয়ংকর, ক্রম।
 
 তবুও দুটো সীমা বহাল থাকে:
 
@@ -210,7 +210,7 @@ A. না। আপনি bet করলে আর প্রতিপক্ষ �
 
 **Q. টেক্সাস হোল্ডেমে কতবার raise করা যায়?**
 
-A. No-Limit-এ raise-এর সংখ্যায় কোনো cap নেই — যতক্ষণ প্রতিটা raise minimum increment-এ উতরায় (all-in কম অঙ্কেরও হতে পারে), ততক্ষণ কেউ all-in না হওয়া পর্যন্ত re-raise চলতে পারে। Fixed-Limit-এ WSOP-এর টুর্নামেন্ট নিয়ম রাউন্ডের ক্যাপ ধরে এক bet আর চার raise-এ (নিয়ম 100.b), আর হ্যান্ডে দুজন বাকি থাকলেও সেই ক্যাপ বহাল থাকে — ক্যাপ ওঠে কেবল যখন গোটা টুর্নামেন্টে দুজন বাকি।
+A. No-Limit-এ raise-এর সংখ্যায় কোনো cap নেই — যতক্ষণ প্রতিটা raise minimum increment-এ উতরায় (all-in কম অঙ্কেরও হতে পারে), ততক্ষণ হ্যান্ডে বাকি খেলোয়াড়দের একজন ছাড়া সবাই all-in না হওয়া পর্যন্ত re-raise চলতে পারে। Fixed-Limit-এ WSOP-এর টুর্নামেন্ট নিয়ম রাউন্ডের ক্যাপ ধরে এক bet আর চার raise-এ (নিয়ম 100.b), আর হ্যান্ডে দুজন বাকি থাকলেও সেই ক্যাপ বহাল থাকে — ক্যাপ ওঠে কেবল যখন গোটা টুর্নামেন্টে দুজন বাকি।
 
 **Q. out of turn fold করা যায়?**
 

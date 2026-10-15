@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rozdanie Texas Hold'em przebiega tak: wpłata blindów → dwie karty zakryte dla każdego → preflop → flop (3 karty) → turn (1 karta) → river (1 karta) → showdown, w sumie cztery rundy licytacji.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -66,8 +66,8 @@ Gdy blindy są już wpłacone, rozdający daje każdemu graczowi dwie **karty za
 Akcja rusza od gracza na lewo od dużego blinda i biegnie zgodnie z ruchem wskazówek zegara. W swojej turze wybierasz jedno z tych zagrań:
 
 - **Pas (fold)** — rezygnujesz z rozdania i oddajesz karty. Nie tracisz nic więcej, ale też nic nie wygrywasz.
-- **Sprawdzenie (call)** — wyrównujesz aktualny zakład (na preflopie to duży blind).
-- **Przebicie (raise)** — stawiasz więcej niż duży blind, żeby przycisnąć rywali.
+- **Sprawdzenie (call)** — wyrównujesz aktualny zakład (na preflopie, jeśli nikt jeszcze nie postawił więcej niż duży blind, to duży blind).
+- **Przebicie (raise)** — stawiasz więcej niż aktualny zakład, żeby przycisnąć rywali.
 - **3-bet** — przebicie ponad cudze przebicie. Sygnał mocnej ręki.
 
 ==r:Większość początkujących gra niemal każde rozdanie "tylko po to, żeby zobaczyć flopa". To najdroższy nawyk w całym pokerze.== ==g:**Dobrzy gracze pasują większość rąk już na preflopie i grają tylko około 15–25% z nich.**==

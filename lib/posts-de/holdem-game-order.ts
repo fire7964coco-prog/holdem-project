@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit bis zu vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -68,8 +68,8 @@ Sobald die Blinds stehen, gibt der Dealer jedem Spieler zwei verdeckte **Hole Ca
 Die Action startet links vom Big Blind und läuft im Uhrzeigersinn. Wenn du dran bist, wählst du eine dieser Optionen:
 
 - **Fold** – du gibst die Hand auf und schiebst deine Karten weg. Du verlierst nichts mehr, gewinnst aber auch nichts.
-- **Call** – du gehst den aktuellen Einsatz mit (preflop ist das der Big Blind).
-- **Raise** – du erhöhst über den Big Blind und setzt die Gegner unter Druck.
+- **Call** – du gehst den aktuellen Einsatz mit (preflop ist das der Big Blind, solange noch niemand geraist oder einen Straddle gesetzt hat).
+- **Raise** – du erhöhst über den aktuellen Einsatz und setzt die Gegner unter Druck.
 - **3-Bet** – ein Raise über den Raise eines anderen. Ein klares Signal für eine starke Hand.
 
 ==r:Die meisten Anfänger spielen fast jede Hand, „nur um mal den Flop zu sehen“. Das ist die teuerste Angewohnheit im ganzen Poker.== ==g:**Gute Spieler folden preflop die meisten ihrer Hände und spielen nur etwa 15–25% davon.**==

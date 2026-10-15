@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mkono mmoja wa Texas Hold'em huenda hivi: weka blinds → gawa karata mbili za mkononi → preflop → flop (karata 3) → turn (karata 1) → river (karata 1) → showdown, ukiwa na raundi nne za kuweka dau kwa jumla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -66,8 +66,8 @@ Baada ya blinds kuwekwa, dila humpa kila mchezaji karata mbili za **mkononi** zi
 Mchezo huanza kushoto ya big blind na kwenda kulia (mwelekeo wa saa). Zamu yako, unachagua mojawapo ya haya:
 
 - **Fold (kukunja)** — unaacha mkono na kutupa karata zako. Hupotezi kitu zaidi, lakini hushindi kitu.
-- **Call (kuita)** — unalinganisha dau la sasa (preflop, hilo ni big blind).
-- **Raise (kupandisha)** — unaweka dau zaidi ya big blind kuwaweka wapinzani shinikizo.
+- **Call (kuita)** — unalinganisha dau la sasa (preflop, kama bado hakuna aliyeweka zaidi ya big blind, hilo ni big blind).
+- **Raise (kupandisha)** — unaweka dau zaidi ya dau la sasa kuwaweka wapinzani shinikizo.
 - **3-bet** — raise juu ya raise ya mtu mwingine. Ishara ya mkono imara.
 
 ==r:Wanaoanza wengi hucheza karibu kila mkono "ili tu kuona flop." Hilo ndilo zoea la gharama kubwa zaidi katika poker.== ==g:**Wachezaji wazuri hu-fold mikono yao mingi kwenye preflop na hucheza karibu 15–25% tu ya yote.**==

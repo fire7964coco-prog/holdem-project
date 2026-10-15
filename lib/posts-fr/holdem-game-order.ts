@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Préflop, c'est le joueur à gauche de la grosse blinde qui parle en premier. Au flop, à la turn et à la river, c'est le premier joueur encore en jeu à gauche du bouton, en général la petite blinde (en heads-up, c'est l'inverse). Une main suit toujours le même ordre : blindes, cartes fermées, préflop, flop, turn, river, showdown, avec jusqu'à 4 tours d'enchères.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -73,8 +73,8 @@ Dès que les blindes sont en place, le donneur distribue à chaque joueur deux *
 Concrètement, à ton tour, tu choisis l'une de ces options :
 
 - **Se coucher (fold)** — abandonner la main et jeter ses cartes (muck). Tu ne perds rien de plus, mais tu ne gagnes rien non plus.
-- **Suivre (call)** — égaler la mise en cours (préflop, c'est la grosse blinde).
-- **Relancer (raise)** — miser plus que la grosse blinde pour mettre la pression sur tes adversaires.
+- **Suivre (call)** — égaler la mise en cours (préflop, si personne n'a encore relancé ni straddlé, c'est la grosse blinde).
+- **Relancer (raise)** — miser plus que la mise en cours pour mettre la pression sur tes adversaires.
 - **3-bet (surrelance)** — une relance par-dessus la relance de quelqu'un d'autre. Un signal de main forte.
 
 ==r:La plupart des débutants jouent presque toutes les mains « juste pour voir un flop ». C'est l'habitude la plus coûteuse du poker.== ==g:**Les bons joueurs se couchent avec la plupart de leurs mains préflop et n'en jouent qu'environ 15 à 25 %.**==

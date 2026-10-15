@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht der letzten vollen Bet oder dem letzten vollen Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -40,7 +40,7 @@ Texas Hold'em hat nur ==5 Setz-Aktionen==, aber die Regeln drumherum (wann Check
 5 | Setz-Aktionen: Check, Bet, Call, Raise, Fold
 1 BB | Mindest-Eröffnungsbet im No-Limit Hold'em
 = letzter voller Raise | Mindestgröße für jeden Re-Raise (Inkrement-Regel)
-Kein Limit | bei Re-Raises im No-Limit – du kannst raisen, bis jemand All-in ist
+Kein Limit | bei Re-Raises im No-Limit – Raises sind möglich, bis alle noch beteiligten Spieler bis auf einen All-in sind
 :::
 
 ## Was sind die 5 Setz-Aktionen im Texas Hold'em?
@@ -142,7 +142,7 @@ Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Text
 
 ## Wie oft darfst du beim Poker erhöhen?
 
-Im **No-Limit Hold'em: Es gibt keine Obergrenze.** Du kannst raisen, re-raist werden und wieder raisen („Re-Raise“, „einen Raise raisen“ – dasselbe), bis jemandem die Chips ausgehen. Raise → 3-Bet → 4-Bet → 5-Bet → All-in ist eine legale, wenn auch furchteinflößende Sequenz.
+Im **No-Limit Hold'em: Es gibt keine Obergrenze.** Du kannst raisen, re-raist werden und wieder raisen („Re-Raise“, „einen Raise raisen“ – dasselbe), bis allen noch beteiligten Spielern bis auf einen die Chips ausgegangen sind. Raise → 3-Bet → 4-Bet → 5-Bet → All-in ist eine legale, wenn auch furchteinflößende Sequenz.
 
 Zwei Grenzen gelten trotzdem:
 
@@ -214,7 +214,7 @@ A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen –
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 
-A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt (ein All-in darf kleiner sein). Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Abschnitt „Wie oft darfst du beim Poker erhöhen?“.
+A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis alle noch beteiligten Spieler bis auf einen All-in sind, solange jeder Raise das Mindest-Inkrement erfüllt (ein All-in darf kleiner sein). Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Abschnitt „Wie oft darfst du beim Poker erhöhen?“.
 
 **Q. Darf man außer der Reihe folden?**
 

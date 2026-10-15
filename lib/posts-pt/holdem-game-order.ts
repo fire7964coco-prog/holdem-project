@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com até quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -68,8 +68,8 @@ Com os blinds postados, o dealer entrega a cada jogador duas **cartas fechadas**
 A ação começa à esquerda do big blind e segue no sentido horário. Na sua vez, você escolhe uma destas opções:
 
 - **Fold** — desistir da mão e descartar as cartas. Você não perde mais nada, mas também não ganha nada.
-- **Call (pagar)** — igualar a aposta atual (no pré-flop, o big blind).
-- **Raise (aumentar)** — apostar mais que o big blind para pressionar os adversários.
+- **Call (pagar)** — igualar a aposta atual (no pré-flop, se ninguém aumentou nem fez straddle ainda, o big blind).
+- **Raise (aumentar)** — apostar mais que a aposta atual para pressionar os adversários.
 - **3-bet** — um aumento por cima do aumento de alguém. Sinal de mão forte.
 
 ==r:A maioria dos iniciantes joga quase todas as mãos "só para ver um flop". Esse é o hábito mais caro do poker.== ==g:**Bons jogadores foldam a maior parte das mãos no pré-flop e jogam só uns 15% a 25% delas.**==

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una mano di Texas Hold'em segue quest'ordine: si mettono i bui → si distribuiscono due carte personali → preflop → flop (3 carte) → turn (1 carta) → river (1 carta) → showdown, con quattro giri di puntate in tutto.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -66,8 +66,8 @@ Messi i bui, il dealer distribuisce a ogni giocatore due **carte personali** cop
 L'azione parte alla sinistra del grande buio e prosegue in senso orario. Quando tocca a te, scegli una di queste opzioni:
 
 - **Fold (passare)** — abbandoni la mano e butti le carte. Non perdi altro, ma non puoi vincere.
-- **Call (chiamare)** — pareggi la puntata attuale (nel preflop, il grande buio).
-- **Raise (rilanciare)** — punti più del grande buio per mettere pressione agli avversari.
+- **Call (chiamare)** — pareggi la puntata attuale (nel preflop, se nessuno ha ancora messo più del grande buio, il grande buio).
+- **Raise (rilanciare)** — punti più della puntata attuale per mettere pressione agli avversari.
 - **3-bet (ri-rilancio)** — un rilancio sopra il rilancio di un altro. Segnale di mano forte.
 
 ==r:La maggior parte dei principianti gioca quasi tutte le mani "tanto per vedere il flop". È l'abitudine più costosa che esista nel poker.== ==g:**I bravi giocatori passano la maggior parte delle mani nel preflop e ne giocano solo tra il 15 e il 25%.**==

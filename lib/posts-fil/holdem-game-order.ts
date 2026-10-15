@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang isang hand ng Texas Hold'em ay ganito: mag-post ng blinds → i-deal ang dalawang hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, na may apat na betting rounds lahat-lahat.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -66,8 +66,8 @@ Kapag naka-post na ang blinds, bibigyan ng dealer ang bawat player ng dalawang *
 Nagsisimula ang action sa kaliwa ng big blind at umiikot clockwise. Sa turn mo, pipili ka ng isa dito:
 
 - **Fold** — sukuan ang hand at itapon ang cards mo. Wala ka nang matatalo pa, pero wala ka ring mapapanalunan.
-- **Call** — itapat sa kasalukuyang bet (preflop, iyon ang big blind).
-- **Raise** — mag-bet ng higit sa big blind para bigyan ng pressure ang kalaban.
+- **Call** — itapat sa kasalukuyang bet (preflop, kung wala pang naglagay ng higit sa big blind, iyon ang big blind).
+- **Raise** — mag-bet ng higit sa kasalukuyang bet para bigyan ng pressure ang kalaban.
 - **3-bet** — isang raise sa ibabaw ng raise ng iba. Senyales ng malakas na hand.
 
 ==r:Karamihan ng baguhan ay nagla-laro ng halos lahat ng hand "para lang makita ang flop." Iyon ang pinakamamahaling ugali sa poker.== ==g:**Ang magagaling na players ay nagfo-fold ng karamihan ng hands nila preflop at naglalaro lang ng mga 15–25% nito.**==

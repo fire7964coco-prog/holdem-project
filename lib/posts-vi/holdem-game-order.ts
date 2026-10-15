@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở preflop, người ngồi bên trái big blind hành động trước. Ở flop, turn và river, người còn bài đầu tiên bên trái nút dealer đi trước — thường là small blind (heads-up thì đảo ngược). Một ván chạy theo thứ tự blind → bài tẩy → preflop → flop → turn → river → showdown, với tối đa bốn vòng cược.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -75,8 +75,8 @@ Khi blind đã đặt xong, dealer phát cho mỗi người hai **lá bài tẩy
 Đến lượt mình, bạn chọn một trong các hành động sau:
 
 - **Fold (bỏ bài)** — bỏ ván và úp bài. Bạn không mất thêm gì, nhưng cũng không thắng gì.
-- **Call (theo)** — cân bằng mức cược hiện tại (ở preflop là big blind).
-- **Raise (tố)** — cược nhiều hơn big blind để gây áp lực lên đối thủ.
+- **Call (theo)** — cân bằng mức cược hiện tại (ở preflop, nếu chưa ai raise hay straddle, là big blind).
+- **Raise (tố)** — cược nhiều hơn mức cược hiện tại để gây áp lực lên đối thủ.
 - **3-bet (re-raise, tố lại)** — một cú raise đè lên cú raise của người khác. Tín hiệu bài mạnh.
 
 ==r:Đa số người mới chơi gần như mọi ván "chỉ để xem flop". Đó là thói quen đắt đỏ nhất trong poker.== ==g:**Người chơi giỏi fold phần lớn tay bài ở preflop và chỉ chơi khoảng 15–25% trong số đó.**==

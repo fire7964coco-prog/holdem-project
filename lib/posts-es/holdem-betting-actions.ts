@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la última apuesta o subida completa) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ En Texas Hold'em solo existen ==5 acciones de apuesta==, pero las reglas que las
 5 | acciones de apuesta: pasar, apostar, igualar, subir y retirarse
 1 BB | apuesta mínima de apertura en No-Limit Hold'em
 = última subida completa | tamaño mínimo de la resubida (la regla del incremento)
-Sin tope | de resubidas en No-Limit — se puede subir hasta que alguien esté all-in
+Sin tope | de resubidas en No-Limit — se puede seguir subiendo hasta que todos los jugadores que siguen en la mano menos uno estén all-in
 :::
 
 ## ¿Cuáles son las 5 acciones de apuesta del Texas Hold'em?
@@ -139,7 +139,7 @@ Dos reglas del póker en vivo que vienen con la subida:
 
 ## ¿Cuántas veces se puede subir en el póker?
 
-En **No-Limit Hold'em: no hay tope**. Puedes subir, que te resuban y volver a subir ("resubir", "subir una subida" — es lo mismo) hasta que alguien se quede sin fichas. Subida → 3-bet → 4-bet → 5-bet → all-in es una secuencia legal, aunque aterradora.
+En **No-Limit Hold'em: no hay tope**. Puedes subir, que te resuban y volver a subir ("resubir", "subir una subida" — es lo mismo) hasta que todos los que siguen en la mano menos uno se queden sin fichas. Subida → 3-bet → 4-bet → 5-bet → all-in es una secuencia legal, aunque aterradora.
 
 Aun así, hay dos límites:
 
@@ -211,7 +211,7 @@ A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda
 
 **Q. ¿Cuántas veces se puede subir en Texas Hold'em?**
 
-A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que un jugador esté all-in, siempre que cada subida cumpla el incremento mínimo (un all-in puede ser por menos). En Fixed-Limit, las reglas de torneo de la WSOP capan la ronda en una apuesta más cuatro subidas (regla 100.b), y ese tope sigue en pie aunque en la mano queden solo dos jugadores — solo cae cuando todo el torneo queda heads-up.
+A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que todos los jugadores que siguen en la mano menos uno estén all-in, siempre que cada subida cumpla el incremento mínimo (un all-in puede ser por menos). En Fixed-Limit, las reglas de torneo de la WSOP capan la ronda en una apuesta más cuatro subidas (regla 100.b), y ese tope sigue en pie aunque en la mano queden solo dos jugadores — solo cae cuando todo el torneo queda heads-up.
 
 **Q. ¿Puedes retirarte fuera de turno?**
 

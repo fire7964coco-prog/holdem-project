@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with up to four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-14",
+  updated: "2026-10-15",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -75,8 +75,8 @@ Once the blinds are posted, the dealer gives each player two **hole cards** face
 Action starts to the left of the big blind and moves clockwise. On your turn you choose one of these:
 
 - **Fold** — give up the hand and muck your cards. You lose nothing more, but you win nothing.
-- **Call** — match the current bet (preflop, if nobody has raised yet, that's the big blind).
-- **Raise** — bet more than the big blind to put pressure on opponents.
+- **Call** — match the current bet (preflop, if nobody has raised or straddled yet, that's the big blind).
+- **Raise** — bet more than the current bet to put pressure on opponents.
 - **3-bet** — a raise over someone else's raise. A strong-hand signal.
 
 ==r:Most beginners play almost every hand "just to see a flop." That's the single most expensive habit in poker.== ==g:**Good players fold most of their hands preflop and play only around 15–25% of them.**==

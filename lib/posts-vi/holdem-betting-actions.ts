@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt không mất chip), bet (mở vòng cược), call (trả bằng mức cược), raise (tăng cược — mức raise tối thiểu bằng khoản bet hoặc raise đủ mức gần nhất) và fold (bỏ bài). Bạn chỉ được check khi trước mặt không có khoản cược nào đang mở — ở preflop, thường chỉ big blind (hoặc người đã đặt straddle còn hiệu lực) được check.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "9 phút",
@@ -40,7 +40,7 @@ Texas Hold'em chỉ có ==5 hành động cược==, nhưng những luật xoay 
 5 | hành động cược: check, bet, call, raise, fold
 1 BB | mức bet mở tối thiểu trong No-Limit Hold'em
 = raise đủ mức gần nhất | mức re-raise tối thiểu (luật mức tăng)
-Không giới hạn | số lần re-raise trong No-Limit — bạn có thể raise đến khi ai đó all-in
+Không giới hạn | số lần re-raise trong No-Limit — có thể raise tiếp cho đến khi tất cả người chơi còn trong ván, trừ một người, đều all-in
 :::
 
 ## 5 hành động cược trong Texas Hold'em là gì?
@@ -156,7 +156,7 @@ Nên raise *bao nhiêu* (mở 2,5x, 3-bet (re-raise, tố lại) 3x, chọn cỡ
 
 Trong No-Limit Hold'em, số lần raise trong một vòng cược không bị giới hạn: raise, re-raise, rồi raise tiếp cho tới khi có người all-in, miễn mỗi lần đều đạt mức tăng tối thiểu. Chỉ Fixed-Limit mới đặt trần — luật giải đấu WSOP là một bet cộng bốn raise mỗi vòng. Và dù ở thể thức nào, bạn không bao giờ được raise chính khoản bet của mình.
 
-Trong **No-Limit Hold'em: không có mức trần**. Bạn có thể raise, bị re-raise, rồi raise tiếp ("re-raise", "raise một cú raise" — cùng một thứ) cho đến khi ai đó hết chip. Raise → 3-bet → 4-bet → 5-bet → all-in là một chuỗi hoàn toàn hợp lệ, dù có phần đáng sợ.
+Trong **No-Limit Hold'em: không có mức trần**. Bạn có thể raise, bị re-raise, rồi raise tiếp ("re-raise", "raise một cú raise" — cùng một thứ) cho đến khi tất cả những người còn trong ván, trừ một người, đều hết chip. Raise → 3-bet → 4-bet → 5-bet → all-in là một chuỗi hoàn toàn hợp lệ, dù có phần đáng sợ.
 
 Vẫn có hai ranh giới:
 
@@ -234,7 +234,7 @@ A. Không. Nếu bạn bet và các đối thủ chỉ call, bạn không đư�
 
 **Q. Được raise bao nhiêu lần trong Texas Hold'em?**
 
-A. Trong No-Limit không có mức trần cho số lần raise — có thể re-raise cho đến khi một người chơi all-in, miễn là mỗi lần raise đạt mức tăng tối thiểu (all-in thì được phép nhỏ hơn). Luật giải đấu WSOP giới hạn một vòng Fixed-Limit ở một bet cộng bốn raise (Rule 100.b), và mức trần này vẫn giữ ngay cả khi ván bài chỉ còn hai người — nó chỉ được gỡ khi cả giải đấu đã đến heads-up.
+A. Trong No-Limit không có mức trần cho số lần raise — có thể re-raise cho đến khi tất cả người chơi còn trong ván, trừ một người, đều all-in, miễn là mỗi lần raise đạt mức tăng tối thiểu (all-in thì được phép nhỏ hơn). Luật giải đấu WSOP giới hạn một vòng Fixed-Limit ở một bet cộng bốn raise (Rule 100.b), và mức trần này vẫn giữ ngay cả khi ván bài chỉ còn hai người — nó chỉ được gỡ khi cả giải đấu đã đến heads-up.
 
 **Q. Fold khi chưa đến lượt có được không?**
 

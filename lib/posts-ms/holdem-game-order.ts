@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pada preflop, pemain di kiri big blind bertaruh dulu. Pada flop, turn dan river, giliran pertama ialah pemain aktif pertama di kiri butang — biasanya small blind. (Heads-up menterbalikkan urutan ini.) Tangan itu sendiri berjalan: blinds → kad pemula → preflop → flop → turn → river → showdown, dengan empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -66,8 +66,8 @@ Sebaik sahaja blinds diletakkan, pengedar memberi setiap pemain dua **kad pemula
 Aksi bermula dari pemain di kiri big blind dan bergerak mengikut arah jam. Bila tiba giliran anda, pilih salah satu:
 
 - **Fold** — lepaskan tangan itu dan buang kad anda. Anda tak rugi apa-apa lagi, tetapi anda juga tak boleh menang.
-- **Call** — samai pertaruhan semasa (pada preflop, itu bermakna big blind).
-- **Raise (naik)** — bertaruh lebih daripada big blind untuk menekan lawan.
+- **Call** — samai pertaruhan semasa (pada preflop, jika belum ada yang raise atau straddle, itu bermakna big blind).
+- **Raise (naik)** — bertaruh lebih daripada pertaruhan semasa untuk menekan lawan.
 - **3-bet** — naikkan semula di atas kenaikan orang lain. Isyarat tangan kuat.
 
 ==r:Kebanyakan pemula main hampir setiap tangan "saja nak tengok flop". Itulah tabiat paling mahal dalam poker.== ==g:**Pemain yang bagus fold kebanyakan tangan mereka pada preflop dan hanya main sekitar 15–25% daripadanya.**==

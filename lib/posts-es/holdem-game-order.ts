@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con hasta cuatro rondas de apuestas. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -68,8 +68,8 @@ Con las ciegas puestas, el dealer reparte a cada jugador dos **cartas propias** 
 La acción arranca a la izquierda de la ciega grande y avanza en el sentido de las agujas del reloj. Cuando te toca, eliges una de estas opciones:
 
 - **Fold (retirarte)** — abandonas la mano y tiras tus cartas. No pierdes nada más, pero tampoco puedes ganar.
-- **Call (pagar)** — igualas la apuesta actual (en el preflop, la ciega grande).
-- **Raise (subir)** — apuestas más que la ciega grande para meter presión a los rivales.
+- **Call (pagar)** — igualas la apuesta actual (en el preflop, si nadie ha subido ni hecho straddle todavía, la ciega grande).
+- **Raise (subir)** — apuestas más que la apuesta actual para meter presión a los rivales.
 - **3-bet (resubir)** — una subida por encima de la subida de otro. Señal de mano fuerte.
 
 ==r:La mayoría de los principiantes juegan casi todas las manos "solo por ver el flop". Es el hábito más caro que existe en el póker.== ==g:**Los buenos jugadores tiran la mayoría de sus manos en el preflop y solo juegan entre el 15 y el 25% de ellas.**==

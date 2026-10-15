@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em jest 5 akcji: czek (spasowanie za darmo — zostajesz w rozdaniu), postawienie (otwierasz rundę), sprawdzenie (dokładasz do stawki), przebicie (podnosisz — minimalne przebicie równa się ostatniemu pełnemu zakładowi lub przebiciu) i pas. Czekać możesz tylko wtedy, gdy przed tobą nie stoi aktywny zakład — na preflopie zwykle wyłącznie jako duża ciemna (albo jako gracz, który wystawił żywego straddle'a).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -39,7 +39,7 @@ W Texas Hold'em istnieje tylko ==5 akcji==, ale zasady wokół nich (kiedy wolno
 5 | akcje: czek, postawienie, sprawdzenie, przebicie, pas
 1 BB | minimalny zakład otwierający w No-Limit Hold'em
 = ostatnie pełne przebicie | minimalny rozmiar re-raise (zasada przyrostu)
-Bez limitu | przebić w No-Limit — możesz podbijać, aż ktoś wejdzie all-in
+Bez limitu | przebić w No-Limit — podbijanie może trwać, aż wszyscy gracze, którzy zostali w rozdaniu, poza jednym wejdą all-in
 :::
 
 ## Jakie jest 5 akcji w Texas Hold'em?
@@ -139,7 +139,7 @@ Dwie zasady pokera na żywo, które idą w parze z przebiciem:
 
 ## Ile razy można przebić w pokerze?
 
-W **No-Limit Hold'em: nie ma limitu**. Możesz przebić, dostać re-raise i przebić znowu ("re-raise", "przebicie przebicia" — to samo), aż komuś skończą się żetony. Przebicie → 3-bet → 4-bet → 5-bet → all-in to legalna, choć przerażająca, sekwencja.
+W **No-Limit Hold'em: nie ma limitu**. Możesz przebić, dostać re-raise i przebić znowu ("re-raise", "przebicie przebicia" — to samo), aż wszystkim graczom, którzy zostali w rozdaniu, poza jednym skończą się żetony. Przebicie → 3-bet → 4-bet → 5-bet → all-in to legalna, choć przerażająca, sekwencja.
 
 Wciąż obowiązują dwie granice:
 
@@ -210,7 +210,7 @@ A. Nie. Jeśli postawisz, a przeciwnicy tylko sprawdzą, nie możesz dołożyć 
 
 **Q. Ile razy można przebić w Texas Hold'em?**
 
-A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż gracz wejdzie all-in, o ile każde przebicie spełnia minimalny przyrost (all-in może być mniejszy). W Fixed-Limit turniejowe zasady WSOP ograniczają rundę do jednego zakładu plus czterech przebić (zasada 100.b), a limit obowiązuje nawet wtedy, gdy w rozdaniu zostało dwóch graczy — znika dopiero, gdy heads-up jest cały turniej.
+A. W No-Limit nie ma limitu liczby przebić — re-raise może trwać, aż wszyscy gracze, którzy zostali w rozdaniu, poza jednym wejdą all-in, o ile każde przebicie spełnia minimalny przyrost (all-in może być mniejszy). W Fixed-Limit turniejowe zasady WSOP ograniczają rundę do jednego zakładu plus czterech przebić (zasada 100.b), a limit obowiązuje nawet wtedy, gdy w rozdaniu zostało dwóch graczy — znika dopiero, gdy heads-up jest cały turniej.
 
 **Q. Czy można spasować poza kolejnością?**
 
