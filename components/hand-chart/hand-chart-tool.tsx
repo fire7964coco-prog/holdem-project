@@ -182,9 +182,9 @@ export default function HandChartTool({
               {D.hero.lead}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-sm">
-              <span className="text-foreground font-bold">169<span className="text-muted-foreground font-normal ml-1">{D.hero.handsUnit}</span></span>
+              <span className="text-foreground font-bold">169<span className={`text-muted-foreground font-normal ${rtl ? "ms-1" : "ml-1"}`}>{D.hero.handsUnit}</span></span>
               <span className="text-border">·</span>
-              <span className="text-foreground font-bold">5<span className="text-muted-foreground font-normal ml-1">{D.hero.positionsUnit}</span></span>
+              <span className="text-foreground font-bold">5<span className={`text-muted-foreground font-normal ${rtl ? "ms-1" : "ml-1"}`}>{D.hero.positionsUnit}</span></span>
               <span className="text-border">·</span>
               <span className="text-primary font-semibold">{D.hero.tapHint}</span>
             </div>
@@ -385,7 +385,7 @@ export default function HandChartTool({
                   {pos.label}
                 </div>
                 <div className="text-xs leading-tight min-w-0">
-                  <div className="font-semibold text-foreground truncate">{D.positions[pos.id - 1]}</div>
+                  <div className="font-semibold text-foreground truncate" dir={rtl ? "ltr" : undefined}>{D.positions[pos.id - 1]}</div>
                   <div className="text-muted-foreground">{D.legend.seatLine.replace("{pct}", typePct(pos.id))}</div>
                 </div>
               </div>
@@ -402,7 +402,7 @@ export default function HandChartTool({
 
         {/* Position Table */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.table.heading}</h2>
+          <h2 className={`text-xl font-bold text-foreground ${rtl ? "border-s-4" : "border-l-4"} border-primary ${rtl ? "ps-3" : "pl-3"}`}>{D.table.heading}</h2>
           {/* 🔴 390px에서 «범위» 열은 첫 화면 밖이다(표 최소폭 560 ↔ 래퍼 358 · ko 판 실측) */}
           {D.table.swipe && <p className="text-xs text-muted-foreground md:hidden">{D.table.swipe}</p>}
           <div className="overflow-x-auto rounded-2xl border border-border/50">
@@ -438,18 +438,18 @@ export default function HandChartTool({
                       </td>
                       <td className="px-4 py-3 font-mono text-foreground whitespace-nowrap">
                         {playable}
-                        <span className="text-muted-foreground text-xs ml-1">
-                          (+{newHands})
+                        <span className={`text-muted-foreground text-xs ${rtl ? "ms-1" : "ml-1"}`}>
+                          {rtl ? <bdi dir="ltr">(+{newHands})</bdi> : <>(+{newHands})</>}
                         </span>
                       </td>
                       <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">
                         {typePct(pos.id)}
                         {D.table.comboCell && (
-                          <span className="ml-1.5 text-xs opacity-70">{D.table.comboCell.replace("{pct}", comboPct(pos.id))}</span>
+                          <span className={`${rtl ? "ms-1.5" : "ml-1.5"} text-xs opacity-70`}>{D.table.comboCell.replace("{pct}", comboPct(pos.id))}</span>
                         )}
                       </td>
                       <td className="px-4 py-3 text-muted-foreground text-xs">
-                        {EXAMPLES[pos.id - 1]}
+                        {rtl ? <bdi dir="ltr">{EXAMPLES[pos.id - 1]}</bdi> : EXAMPLES[pos.id - 1]}
                       </td>
                     </tr>
                   );
@@ -466,7 +466,7 @@ export default function HandChartTool({
 
         {/* Why section */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.why.heading}</h2>
+          <h2 className={`text-xl font-bold text-foreground ${rtl ? "border-s-4" : "border-l-4"} border-primary ${rtl ? "ps-3" : "pl-3"}`}>{D.why.heading}</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {D.why.items.map((item, i) => ({ ...item, icon: WHY_ICONS[i] })).map((item) => (
               <div key={item.title} className="rounded-2xl border border-border/40 bg-card/30 p-5 space-y-2 transition-colors hover:border-primary/40">
@@ -480,7 +480,7 @@ export default function HandChartTool({
 
         {/* FAQ */}
         <section className="space-y-3">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.faqHeading}</h2>
+          <h2 className={`text-xl font-bold text-foreground ${rtl ? "border-s-4" : "border-l-4"} border-primary ${rtl ? "ps-3" : "pl-3"}`}>{D.faqHeading}</h2>
           {faq.map((item) => (
             <details
               key={item.q}
@@ -499,7 +499,7 @@ export default function HandChartTool({
 
         {/* Related guides (internal links) */}
         <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">{D.related.heading}</h2>
+          <h2 className={`text-xl font-bold text-foreground ${rtl ? "border-s-4" : "border-l-4"} border-primary ${rtl ? "ps-3" : "pl-3"}`}>{D.related.heading}</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {D.related.items.map((r) => (
               <Link

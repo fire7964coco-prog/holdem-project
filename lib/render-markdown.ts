@@ -13,6 +13,7 @@
 import { createHeadingSlugger } from "./blog-headings";
 import { RANGE_CHART_SEATS, rangeChartCopy } from "./range-chart";
 import { IMAGE_DIMS, IMAGE_DIMS_FALLBACK } from "./image-dims";
+import { RTL_LOCALES, type SecondaryLocale } from "./intl";
 
 /**
  * 풀쿼트 마크업 — 한 줄형과 블록형이 **같은 HTML** 을 내도록 한 곳에 둔다.
@@ -109,7 +110,7 @@ export function renderMarkdown(content: string, locale?: string): string {
     );
   };
 
-  return content
+  const html = content
     // :::poll[<id>]::: — 전략 글 투표 자리(lib/polls.ts). 여기서는 빈 표식 div만 남긴다.
     // app/blog/[slug]/page.tsx 가 렌더 결과를 이 표식에서 잘라 그 사이에 <PollWidget/>을 넣는다
     // (문서를 한 번에 렌더해 헤딩 id 발급기·LCP 판정이 둘로 쪼개지지 않게). 쪼개지 않는 레이아웃에선 빈 div라 보이지 않는다.
@@ -621,7 +622,8 @@ export function renderMarkdown(content: string, locale?: string): string {
         /\bsrc="\/images\/[^"]+"/,
         `src="${optSrc(src, 750)}" srcset="${optSet(src, RAW_IMG_WIDTHS)}"${sizes}`
       );
-    })
+    });
+  return locale && RTL_LOCALES.includes(locale as SecondaryLocale) ? isolateLtrRuns(html) : html;
 }
 
 /**
@@ -636,4 +638,49 @@ export function renderMarkdown(content: string, locale?: string): string {
  *   뺀 것: 128(111px DPR1 — 요즘 폰은 DPR2 이상이라 거의 안 쓰인다) · 640(750이 대신한다).
  *   ⚠ 여기를 늘리기 전에 «그 폭을 실제로 고르는 표시 자리가 있는가»를 먼저 확인할 것.
  */
+
 const RAW_IMG_WIDTHS = [256, 384, 480, 750, 1080];
+
+/**
+ * ★2026-10-15 공용 RTL 회차(queue §2-CD CD-5) — RTL 문단 안의 라틴·숫자 덩어리는 문단 방향에 끌려 재배치된다(ar 레인 C 화면 실측):
+ *   카드열 «A♣ A♥ 7♦ 5♣ 2♠»·표 칸 «A♠ K♠»의 무늬가 반대편에 붙고 · 랭크 묶음 «A-A-K»가 줄 끝에서 «A-A-» / «K»로 쪼개지고 ·
+ *   수식 «0.33 ÷ 1.33 = 24.8%»가 «24.8% = 1.33 ÷ 0.33»으로 보인다.
+ * RTL 로케일 산출물에서만 그 덩어리를 <bdi dir="ltr">(isolate · 줄바꿈 금지)로 감싼다. 글 본문에 제어문자는 넣지 않는다(ar 계획 §5).
+ * 태그 안(속성)·이미 <bdi> 안인 글자는 건드리지 않는다. 비-RTL 로케일은 이 함수를 타지 않는다 = 산출 바이트 불변.
+ */
+const ISO_CARD = String.raw`(?:10|[2-9TJQKA])[♠♥♦♣]`;
+const ISO_RANK = String.raw`(?:10|[2-9TJQKA])`;
+const ISO_RE = new RegExp(
+  [
+    String.raw`${ISO_CARD}(?:[ \-]?${ISO_CARD})*`, // 카드 1장~카드열
+    String.raw`(?<![\w♠♥♦♣-])${ISO_RANK}(?:-${ISO_RANK})+(?![\w♠♥♦♣-])`, // 랭크 묶음 A-A-K
+    String.raw`\d[\d.,]*%?(?:\s*[÷×+−=]\s*\d[\d.,]*%?)+`, // 수식 0.33 ÷ 1.33 = 24.8%
+  ].join('|'),
+  'g'
+);
+const ISO_OPEN = '<bdi dir="ltr" style="white-space:nowrap">';
+const ISO_RANK_TOK = String.raw`(?:${ISO_RANK}|<mark\b[^>]*>${ISO_RANK}</mark>)`;
+const ISO_MARK_RUN_RE = new RegExp(
+  String.raw`(?<![\w♠♥♦♣>-])${ISO_RANK_TOK}(?:-${ISO_RANK_TOK})+(?![\w♠♥♦♣-])`,
+  'g'
+);
+function isolateLtrRuns(html: string): string {
+  // 하이라이트가 끼어 끊긴 랭크 묶음(«A-A-A-==g:J==-7» · ar hand-rankings) — <mark>째로 한 덩어리
+  const runs = html.replace(ISO_MARK_RUN_RE, (m) => (m.includes('<mark') ? `${ISO_OPEN}${m}</bdi>` : m));
+  // ==수식== 하이라이트 — 아랍 문자가 없고 숫자가 든 것은 통째로
+  const marked = runs.replace(/(<mark\b[^>]*>)([^<]*)(<\/mark>)/g, (m, o, t, c) =>
+    /[\u0590-\u08FF]/.test(t) || !/\d/.test(t) ? m : `${o}<bdi dir="ltr">${t}</bdi>${c}`
+  );
+  let inBdi = 0;
+  return marked
+    .split(/(<[^>]+>)/)
+    .map((part) => {
+      if (part.startsWith('<')) {
+        if (/^<bdi\b/.test(part)) inBdi++;
+        else if (part === '</bdi>') inBdi--;
+        return part;
+      }
+      return inBdi || !part ? part : part.replace(ISO_RE, (m) => `${ISO_OPEN}${m}</bdi>`);
+    })
+    .join('');
+}

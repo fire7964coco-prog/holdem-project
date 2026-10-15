@@ -23,6 +23,15 @@ import type { HandMessage, HandRequest } from "./_engine.worker";
 import { solverLinkFor, type SolverLinkInfo } from "./_solver-link";
 import { KitCardFace, KitCardBack, KitCardSlot, KitDealer, KitChip } from "./_kit";
 
+/** ★2026-10-15 공용 RTL 회차(queue §2-CA CA-7) — 아랍어 문장 안의 라틴 덩어리는 문단 방향에 끌려 재배치된다:
+ *  플랍 토큰 «K♠Q♥J♦»의 마지막 무늬가 앞으로 떨어지고(«♦K♠Q♥J») · «6-max»가 «max-6»으로 보인다.
+ *  RTL일 때만 그 덩어리를 <bdi dir="ltr">로 감싼다(사전에 제어문자는 넣지 않는다 · 다른 로케일은 문자열 그대로). */
+const LTR_TOKEN = /((?:(?:10|[2-9TJQKA])[♠♥♦♣]){2,}|d+-max)/;
+function isoLtr(text: string, rtl?: boolean): ReactNode {
+  if (!rtl) return text;
+  return text.split(LTR_TOKEN).map((part, i) => (i % 2 ? <bdi key={i} dir="ltr">{part}</bdi> : part));
+}
+
 /**
  * 승률 시뮬레이터 — **실전 모드**. 한국어판·영어판이 공유한다.
  *
@@ -1697,13 +1706,13 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <p className="text-xs text-muted-foreground leading-relaxed tabular-nums">
               {ui.potBeforeLabel} <b className="text-foreground">{fmt(rec.potBefore)}</b>
               {" · "}{ui.toCallLabel} <b className="text-foreground">{fmt(rec.toCall)}</b>
-              {" → "}{ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} ={" "}
+              {ui.rtl ? " ← " : " → "}{ui.requiredLabel} = {fmt(rec.toCall)} ÷ {fmt(rec.potAfter)} ={" "}
               <b className="text-foreground">{pct(ui, rec.required!, oddsDigits)}</b>
             </p>
             {/* 퀴즈 답 전에는 판정 줄을 가린다 — 필요 승률(식)은 짐작의 재료라 그대로 보여 준다 */}
             {!quizPending && (
             <p className="text-sm font-black mt-1" style={{ color: rec.verdict === "call" ? GOOD : BAD }}>
-              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required!, oddsDigits)} →{" "}
+              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required!, oddsDigits)} {ui.rtl ? "←" : "→"}{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </p>
             )}
@@ -1728,7 +1737,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
             <div className="lg:hidden mb-1.5 rounded-lg px-3 py-1.5 text-center text-sm font-black tabular-nums shadow-lg"
               style={{ background: "hsl(var(--background))", border: `2px solid ${mix(rec.verdict === "call" ? GOOD : BAD, 55)}`,
                 color: rec.verdict === "call" ? GOOD : BAD }}>
-              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required, oddsDigits)} →{" "}
+              {pct(ui, rec.equity, oddsDigits)} {rec.verdict === "call" ? "≥" : "<"} {pct(ui, rec.required, oddsDigits)} {ui.rtl ? "←" : "→"}{" "}
               {rec.verdict === "call" ? ui.verdictCall : ui.verdictFold}
             </div>
           )}
@@ -1883,7 +1892,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
                 <span className="text-lg font-black tabular-nums text-foreground">{pct(ui, hitPct, 0)}</span>
               </div>
               <p className="text-[10px] text-muted-foreground tabular-nums mt-0.5">
-                {ui.formulaExpr(outs.total, outs.toCome)} = {pct(ui, hitPct, 0)}
+                {ui.rtl ? <bdi dir="ltr">{ui.formulaExpr(outs.total, outs.toCome)} = {pct(ui, hitPct, 0)}</bdi> : <>{ui.formulaExpr(outs.total, outs.toCome)} = {pct(ui, hitPct, 0)}</>}
               </p>
             </div>
 
@@ -1958,7 +1967,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {endView && solverLink && (
         <div className="rounded-xl px-4 py-3 mt-3 border" style={{ borderColor: mix(GOLD, 40), background: mix(GOLD, 5) }}>
           <div className="font-black text-sm text-foreground mb-1">🧮 {ui.solverTitle(solverLink.info)}</div>
-          <p className="text-[11.5px] text-muted-foreground leading-relaxed mb-2.5">{ui.solverNote(solverLink.info)}</p>
+          <p className="text-[11.5px] text-muted-foreground leading-relaxed mb-2.5">{isoLtr(ui.solverNote(solverLink.info), ui.rtl)}</p>
           <a href={solverLink.href} target="_blank" rel="noopener"
             className="block w-full py-2.5 rounded-xl text-center text-sm font-black border-2 transition-all hover:brightness-110"
             style={{ borderColor: GOLD, color: "hsl(var(--foreground))", background: "hsl(var(--background))" }}>

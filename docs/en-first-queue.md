@@ -1208,6 +1208,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CA-5 H-3 | 제목 언어 순서(영어 머리어 먼저) | 선례(vi·hi·tr) 유지 · 전 로케일 일관 판단이라 🪶 GSC 관찰 뒤 |
 | CA-6 회차 2 H-5 | 🔴 ar 시뮬레이터 RTL(카드 랭크 잘림·에퀴티 막대·슬라이더·격자·6-max) | ✅ `f7cbe89b` — QuizUI.rtl + 카드 svg direction=ltr |
 | CA-7 회차 2 경미 | solverNote 플롭 토큰 «K♠Q♥J♦» bidi(렌더 측 `<bdi dir="ltr">` 필요 · 문자열 함수라 분할 필요) · formulaExpr 숫자식 격리 · 팟오즈 판정 줄 «→» 방향 · E-2 riverNote(EN-먼저) | 🪶 CA-3 공용 RTL 회차와 묶음 · 진행 파일 `docs/tool-lanes/ar-tools-진행.md` H-5 행 |
+- ✅ **공용 RTL 회차 이행 2026-10-15** (아래 §2-CD 같은 줄) (CA-3 ①~⑤ · CA-7 · MB-349).
 
 ### 2-CB. tool-lanes 🅱(fr·ru 대회 보드) 헤드 요청 — 2026-10-14
 
@@ -1251,6 +1252,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CD-4 요청 4 | `_simulator` 복기 표 머리 `text-start`가 th에 안 먹음(16로케일 가운데 정렬 회귀 · 규칙 판정) | ✅ tr에 `[&>th]:text-start` 추가(CSS 산출 확인) · MB-330 |
 | CD-5 (ar-rank 레인 C · 10-14) | 블로그 렌더러: 아랍어 문단 안 라틴 카드열 «A♣ A♥ 7♦ 5♣ 2♠»가 무늬 앞붙음으로 보이고, 하이픈 묶음 «A-A-K مقابل A-A-Q»가 줄 끝에서 «A-A-» / «Q»로 쪼개짐(표·:::hand·:::tiebreak 안은 정상 · 캡처 `Holdem-ar-rank/tmp/screen/ar-rank-C2/390/seg-14.png`) · 라이브 ar 8편도 같은 영향 추정 · ➕ ar-strat 레인 C: 수식 «0.33 ÷ 1.33 = 24.8%»(strategy 블러프 표 · c-bet L180 · «1.5 ÷ 5.5 = 27%»)가 «24.8% = 1.33 ÷ 0.33»으로 보임(사실오류 아님 · 캡처 `Holdem-ar-strat/tmp/screen/strat-bluff-390.png`) · ➕ ar-rules 레인 C: 390 표 칸에서 카드 줄이 접히면 무늬가 반대편에 붙음(texas 7장 예시 «A♠ K♠» → «A♠ / ♠K» · «8♠ 8♦» → «♦8 ♠8») — 표 셀 카드 토큰도 격리 대상 | ▶ CD-2와 같은 **공용 RTL 회차** — `lib/render-markdown.ts`가 RTL 로케일에서만 카드 토큰·카드열·`==수식==`·표 셀 수식을 `<bdi dir="ltr">`(isolate)로 감싸기 · 수식도 같은 정책(헤드 10-14 판정 — 4레인 글은 손대지 않는다) · 글 본문 제어문자 삽입 금지(ar 계획 §5) · 비-RTL 산출 바이트 동일 게이트 |
 | 통지 | 🪶 zh-hant L256 «看不到底牌»→«對手底牌» · «前注»→정본 «底注» · EN-먼저 2(hand-chart «GTO» 호칭 · EN featureList «pairs/suited/offsuit 색» 실제는 포지션 색) · 보드 «as of» 강화형 6로케일 | 🪶 판단 대상 — 자동 착수 금지 |
+- ✅ **공용 RTL 회차 이행 2026-10-15** (CA-3 ①~⑤ · CA-7 · CD-2 · CD-5 · MB-349) — 계산기 `ltrCell`(표 칸·ICM 차이 칸 · 아랍 문자 없는 칸 통째로/부호 숫자만 `<bdi dir=ltr>`) + ar mwNote 화살표 «→» · 핸드차트 범례 dir=ltr·EXAMPLES·«(+N)» `<bdi>`·`ms-`/`border-s-4 ps-3`(RTL만) · 시뮬레이터 `isoLtr`(solverNote 카드열·«N-max») · formulaExpr 격리 · 판정·팟오즈 줄 «←»(RTL만) · 렌더러 `isolateLtrRuns`(RTL 로케일 산출물만 · 카드 1장~카드열 · 랭크 묶음(<mark> 낀 것 포함) · 수식 · ==숫자== 하이라이트 · nowrap). 게이트 = 비-RTL SSR 해시 30/30 동일(calc 13·chart 13·en 2·md 3) · ar 15편 감싼 자리 363 · 360px 넘침 0(ar 18쪽) · 화면 전후 11자리 실측. E-2 riverNote(EN-먼저)·팟오즈 식 «÷» 줄 격리는 남김.
 
 ### 2-CE. 우편함 수신분 — MA-547(MB-328 판정 · hi·tr R1 rules-a · WRONG 0 · hi RISKY 9 · tr RISKY 8 · 요청 6 · 통지 묶음) · 등재 2026-10-14
 

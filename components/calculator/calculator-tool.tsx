@@ -15,6 +15,19 @@ import { RTL_LOCALES, type SecondaryLocale } from "@/lib/intl";
 // 카드·랭크 격자는 언어와 무관한 «표»라 RTL 로케일에서만 dir=ltr로 고정한다(다른 로케일은 속성 없음 = SSR 바이트 불변).
 const gridDir = (locale: string) => (RTL_LOCALES.includes(locale as SecondaryLocale) ? "ltr" : undefined);
 
+/** ★2026-10-15 공용 RTL 회차(queue §2-CD CD-2 · MA-544 요청 2) — RTL 문단 안의 표 칸은 숫자·라틴 덩어리가 문단 방향을 따라
+ *  재배치된다(«5 : 1»→«1 : 5» · «4 ≤ SPR < 8»→«SPR < 8 ≥ 4» · «20+»→«+20» · «22 vs AKo»→«vs AKo 22» · «-$309»의 부호가 오른쪽).
+ *  아랍 문자가 없는 칸은 통째로, 부호 붙은 숫자로 시작하는 칸은 그 숫자만 <bdi dir="ltr">로 격리한다. 사전에 제어문자는 넣지 않는다.
+ *  RTL 아닌 로케일은 문자열을 그대로 돌려준다 = SSR 바이트 불변. */
+const RTL_LETTER = /[֐-ࣿ]/;
+const BIDI_WEAK = /[A-Za-z:<>≤≥+\-−–]/;
+const ltrCell = (locale: string, s: string): ReactNode => {
+  if (!RTL_LOCALES.includes(locale as SecondaryLocale)) return s;
+  if (!RTL_LETTER.test(s)) return BIDI_WEAK.test(s) ? <bdi dir="ltr">{s}</bdi> : s;
+  const m = /^([+\-−][$€]?[\d.,]+%?)(\s[\s\S]*)$/.exec(s);
+  return m ? <><bdi dir="ltr">{m[1]}</bdi>{m[2]}</> : s;
+};
+
 /** ★2026-09-17 (zh 회차) — 사전 조각 사이에 넣던 고정 반각 공백은 영어용이다. 앞 조각이 CJK 문자·전각 문장부호로 끝나면
  *  공백을 넣지 않는다(「A5s 能凑成 轮子顺」·「都在这篇： 德州…」처럼 문장 한가운데 공백이 뜨던 자리 — 2차 교열 렌즈). EN은 라틴으로 끝나 불변. */
 const cjkEnd = (s?: string) => !!s && /[぀-ヿ㐀-䶿一-鿿＀-ﾟ　-〿]$/.test(s);
@@ -1575,7 +1588,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
                     <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
                     <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chip}</td>
                     <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}</td>
-                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{ltrCell(locale, diff)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1609,7 +1622,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
                     <td className="px-3 py-2.5 font-bold text-foreground">{p}</td>
                     <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{chop}</td>
                     <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{icm}</td>
-                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{diff}</td>
+                    <td className={`px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`}>{ltrCell(locale, diff)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1662,7 +1675,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
                   {sec.rows.map((row, ri) => (
                     <tr key={ri} className="border-b border-border/60 last:border-0">
                       {row.map((cell, ci) => (
-                        <td key={ci} className={`px-3 py-2.5 ${sec.align?.[ci] === "right" ? "text-right font-mono" : ""} ${ci === 0 || sec.nowrap?.includes(ci) ? "whitespace-nowrap" : ""} ${ci === 0 ? "font-bold text-foreground" : ci === sec.emphasis ? "font-bold text-foreground" : "text-muted-foreground"}`}>{cell}</td>
+                        <td key={ci} className={`px-3 py-2.5 ${sec.align?.[ci] === "right" ? "text-right font-mono" : ""} ${ci === 0 || sec.nowrap?.includes(ci) ? "whitespace-nowrap" : ""} ${ci === 0 ? "font-bold text-foreground" : ci === sec.emphasis ? "font-bold text-foreground" : "text-muted-foreground"}`}>{ltrCell(locale, cell)}</td>
                       ))}
                     </tr>
                   ))}
