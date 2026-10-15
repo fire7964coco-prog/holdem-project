@@ -1,3 +1,8 @@
+## 2026-10-15 (17) — 유튜브 솔버 사용법 1~4편 설명란 «(구글·카카오)» → «(구글·카카오·텔레그램)»
+
+- 사장님 «지금 수정하자». 별도 프로필 크롬(`--remote-debugging-port=9333` · `%LOCALAPPDATA%\Temp\claude\yt-studio-profile`)을 띄워 사장님이 로그인 → 레포 playwright `connectOverCDP`로 Studio 설명란 텍스트 노드에 커서를 두고 «·텔레그램»만 삽입 → 저장 → 새로고침 확인. 4편 전부 «원본 + 삽입 외 차이 없음» 대조. 크롬은 PID·프로필 대조 후 종료.
+- 🪶 Playwright MCP는 서버만 있고 브라우저(chrome-for-testing) 미설치 — 구글 로그인 작업은 실제 크롬 + CDP가 낫다.
+
 ## 2026-10-15 (16) — KO /solver VideoObject 4개 · MB-348
 
 - 사장님 승인 «1은 넣어줘». 데이터를 `app/solver/videos.ts`로 옮겨 캡션·스키마 단일 출처(클라이언트 파일 밖 — 서버 page.tsx가 읽어야 함). 빌드 산출물 @graph에 VideoObject×4 확인.
