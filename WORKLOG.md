@@ -1,7 +1,7 @@
 ## 2026-10-15 (3) — 10-15 묶음 ③→①→② · CF-5 fr MB-337
 
 - ③ 텔레그램 봇 준비 안내(계획 문서 «① 사장님 준비 안내» 요약)를 사장님께 드림.
-- ① `.claude/worktrees/agent-*` 4(MA-542 서브 잔여) = 미커밋 0·main 미포함 커밋 0 확인 → `git worktree remove` + `branch -d`. fr 레인 폴더 7 = 이미 없음. 남은 13폴더(정션 9 + 빈 ar 4) 삭제는 자동 모드 분류기 차단 → 사장님 실행 대기.
+- ① `.claude/worktrees/agent-*` 4(MA-542 서브 잔여) = 미커밋 0·main 미포함 커밋 0 확인 → `git worktree remove` + `branch -d`. fr 레인 폴더 7 = 이미 없음. 남은 13폴더(정션 9 + 빈 ar 4)는 자동 모드 분류기가 차단 → 사장님이 `!`로 비재귀 삭제 실행 완료(본체 node_modules 155항목 유지 확인). 🪶 `!`는 bash라 PowerShell 명령은 작은따옴표로 감싸야 `$` 변수가 안 날아간다.
 - ② CF-5: 11로케일 사본 대조 → EN 옛 문면 보유 = fr 하나 · `app/fr/glossary/dict.ts` Ante·GTO·Pot 3줄 EN 신 문면 이식. build exit 0.
 
 ## 2026-10-15 (2) — 우편함 MA-555·556·557·558 회신 + MA-560·MA-388 ACK · MB-336
