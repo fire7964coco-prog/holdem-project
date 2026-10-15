@@ -1,3 +1,9 @@
+## 2026-10-15 (3) — 10-15 묶음 ③→①→② · CF-5 fr MB-337
+
+- ③ 텔레그램 봇 준비 안내(계획 문서 «① 사장님 준비 안내» 요약)를 사장님께 드림.
+- ① `.claude/worktrees/agent-*` 4(MA-542 서브 잔여) = 미커밋 0·main 미포함 커밋 0 확인 → `git worktree remove` + `branch -d`. fr 레인 폴더 7 = 이미 없음. 남은 13폴더(정션 9 + 빈 ar 4) 삭제는 자동 모드 분류기 차단 → 사장님 실행 대기.
+- ② CF-5: 11로케일 사본 대조 → EN 옛 문면 보유 = fr 하나 · `app/fr/glossary/dict.ts` Ante·GTO·Pot 3줄 EN 신 문면 이식. build exit 0.
+
 ## 2026-10-15 (2) — 우편함 MA-555·556·557·558 회신 + MA-560·MA-388 ACK · MB-336
 
 - hi broadway 솔버 콤보 귀속(32.2·48.1 → 정확히 32·48) · tr pot-odds 계산기 «masada» 한정 + %19,6 best-case EN 이식 · tr probability 직답 EN 이식 · ar hand-rankings 7장 빈도 괄호 · ar strategy 직답·요약·«تفضّل» · ar positions FAQ HU 한정 — 6파일 9자리 · 스탬프 10-15.

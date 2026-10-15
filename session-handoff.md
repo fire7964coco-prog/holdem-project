@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-10-15 (2) MA-555~558 회신 + MA-560·388 ACK MB-336 · (1) MA-554 회신 MB-335 · 2026-10-14 (14) MA-549·550·551·553 회신 MB-334 · (13) S-095 ar 용어 대조 MB-333 · (11) ar 15편 배포 `f37fc287` MB-331 · (10) MA-544 회신 MB-330 · (9) ar 0-4 레인 4 MB-329 · (1) MA-538 로그인 문구 `9991521a` MB-322 · 2026-10-13 (25) 시뮬레이터 공용 결함 3건(승·무·패 잘림 + 퍼센트 로케일) `ba808d72` MB-321 · (24) Google 가입 언어 태그 `68bc46d2` MB-320 · (23) 비-KO 로그인 Google 하나 `8f96dfab` MB-319 · (22) 로그인 16개 언어 `20e6a9bd` MB-318 + 텔레그램 계획표 · (21) L1 ru `7efdcdd3` MB-317(L1 종료) · (20) ru 계산기 `fcccc119` MB-316 · (19) L1 hi `529d53b9` MB-315 · (18) L1 tr `e25c1031` MB-314(+MA-524 이행) · (17) L1 vi `d08fac6b` MB-313(+MA-521 이행) · (16) L1 ms `dcd6d020` MB-312(+MA-518 ① · MA-508 회신) · (15) L1 id `7fc0c95e` MB-311 · (14) L1 fr `ca3911e8` MB-310 · (13) MA-515 §2-BU MB-308 · L1 pt `421e4a7c` MB-309 · (12) MA-509·510 `e30fde28` MB-307 · (11) 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
+> 갱신: 2026-10-15 (3) 묶음 ③①② · CF-5 fr MB-337 · (2) MA-555~558 회신 + MA-560·388 ACK MB-336 · (1) MA-554 회신 MB-335 · 2026-10-14 (14) MA-549·550·551·553 회신 MB-334 · (13) S-095 ar 용어 대조 MB-333 · (11) ar 15편 배포 `f37fc287` MB-331 · (10) MA-544 회신 MB-330 · (9) ar 0-4 레인 4 MB-329 · (1) MA-538 로그인 문구 `9991521a` MB-322 · 2026-10-13 (25) 시뮬레이터 공용 결함 3건(승·무·패 잘림 + 퍼센트 로케일) `ba808d72` MB-321 · (24) Google 가입 언어 태그 `68bc46d2` MB-320 · (23) 비-KO 로그인 Google 하나 `8f96dfab` MB-319 · (22) 로그인 16개 언어 `20e6a9bd` MB-318 + 텔레그램 계획표 · (21) L1 ru `7efdcdd3` MB-317(L1 종료) · (20) ru 계산기 `fcccc119` MB-316 · (19) L1 hi `529d53b9` MB-315 · (18) L1 tr `e25c1031` MB-314(+MA-524 이행) · (17) L1 vi `d08fac6b` MB-313(+MA-521 이행) · (16) L1 ms `dcd6d020` MB-312(+MA-518 ① · MA-508 회신) · (15) L1 id `7fc0c95e` MB-311 · (14) L1 fr `ca3911e8` MB-310 · (13) MA-515 §2-BU MB-308 · L1 pt `421e4a7c` MB-309 · (12) MA-509·510 `e30fde28` MB-307 · (11) 대청소(29.4KB → 소형). 이전본 전문 = `docs/handoff-archive/2026-10-13-10-session-handoff-full.md` (그 전 = `2026-10-09-5-…` 등 · 통독 금지 · grep만). 경위는 전부 `WORKLOG.md`(최상단부터).
 > 시작 순서: AGENTS.md → CLAUDE.md → 이 파일 → `git status` + `git worktree list` → 우편함 도구 + 솔버 `../클로드-프로그램만들기/solver/mailbox/MAILBOX.md` 최상단 «본체» 행(솔버 S-행은 도구에 안 뜬다).
 > 🔴 작업 주체: 09-23부터 Claude 본체. GPT(커서/Codex)분 = 트레일러 없는 영어 커밋. GPT 미결 정본 = `docs/backlog-closeout-2026-09-22.md` §3·§4.
 
@@ -8,7 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **10-15 다음 세션 묶음** (사장님 지시) | ③ 텔레그램 준비 안내를 `docs/telegram-login-plan.md` «① 사장님 준비 안내»에서 짧게 뽑아 먼저 드림(사장님 PC에 텔레그램 설치 중) → ① 폴더 정리(아래 «정리 대기» · `../Holdem-ar-{prob,rank,rules,strat}` · fr 레인 7 · `.claude/worktrees/agent-*` 4 — 미커밋·잡은 프로세스 확인 후 · node_modules 9폴더는 링크만 떼고 rmdir) → ② CF-5 용어 사전 Pot·Ante·GTO 3줄 11로케일 전파(queue §2-CF · EN `app/en/glossary/glossary-data.ts`·hi `dict.ts` 문면 기준 · 사본 grep 먼저 → 게이트·빌드·배포·MB) | ▶ 착수 |
+| **10-15 묶음** | ✅ ③ 텔레그램 안내 드림 · ✅ ② CF-5 = fr 3줄만 해당 MB-337 · ✅ ① agent 워크트리 4 해제(미커밋 0·미병합 0) · fr 레인 7 이미 없음 · ▶ 남은 폴더 13(아래 «정리 대기») = 권한 분류기가 삭제 차단 → 사장님 `!` 실행 대기 | 사장님 대기 |
 | **MA-549·550·551·553** | ✅ 회신+이행 MB-334(10-14 (14) · tr 3 · ar 3묶음 · hi 1 · EN+hi 사전 3) → ▶ 검수장 변경 줄 재판정 · 잔여 = queue §2-CF CF-5(사전 11로케일 전파 🪶)·CF-6(통지 남김) | 판정 대기 |
 | **MA-554~560** | ✅ MB-335(MA-554) · MB-336(10-15 (2) · MA-555 hi 1 · MA-556 tr 3 · MA-557 ar 1 · MA-558 ar 4 · MA-560·388 ACK) → ▶ 검수장 6파일 9자리 재판정 · ⏸ EN-먼저 2묶음(paired «any» · c-bet A-high 건조) = 검수장 EN 원장 확정 MA 오면 EN+형제 일괄 · 통지 = queue §2-CG·§2-CH | 판정 대기 |
 | **ar 글 클러스터** | ✅ **15편 배포** `f37fc287`(10-14 (11) · 4레인 헤드 머지 · MB-331 = 검수장 ar 15편 판정 요청 · 기록 = `docs/ar-cluster-plan.md` §4-A) → ✅ 검수장 13편 판정 끝(MA-550·551·557·558 · 대회 2편 제외) · 정정 전부 이행(MB-334·336) · ✅ 워크트리 5 해제(10-14 (12) · 정션 링크만 제거 · head 폴더 삭제 · ar-rules 고아 `next dev` 종료 · 브랜치 `harden-ar-*`·`ar-integration` 보존) · ▶ 빈 폴더 `../Holdem-ar-{prob,rank,rules,strat}` 4 = 14:29 기동 claude.exe 4개가 잡고 있음 → 그 창 종료 뒤 rmdir · 🪶 RTL 표시 결함 = queue §2-CD CD-5(CD-2와 공용 RTL 회차) · GTO 4 · `/ar/glossary` 도구 · `/ar/solver` = 보류 | 판정 대기 |
@@ -38,8 +38,7 @@
 
 ## 정리 대기 (사장님 확인 필요)
 
-- `../Holdem-{calc-ko,ja,ms-gloss,ms-prob,ms-rank,ms-strat,ms-tour,zh,zh-hant}` 9폴더에 `node_modules`(링크 추정)만 남음 — 🔴 재귀 삭제 금지(본체 node_modules 지울 수 있음) · 링크만 떼고 rmdir.
-- 빈 레인 폴더 `../Holdem-fr-{rules,rank,prob,strat,tour,gloss,gto}` 7개 — 레인 창 닫은 뒤 삭제. 브랜치 `harden-fr-*`·`fr-integration` 보존.
+- `../Holdem-{calc-ko,ja,ms-gloss,ms-prob,ms-rank,ms-strat,ms-tour,zh,zh-hant}` 9폴더 = 본체 `node_modules` **정션**만(10-15 실측) + 빈 `../Holdem-ar-{prob,rank,rules,strat}` 4 — 🔴 재귀 삭제 금지 · `[IO.Directory]::Delete(path,$false)`로 링크 → 폴더 순. 10-15 자동 모드 분류기가 차단 → 사장님 `!` 실행.
 - 🪶 `check:gto` 남은 🔴 12 = broadway 23.7(ko에 문장 없음 · 11로케일) · es monotone 1 = 기존 · 판단 대상.
 
 ## 사장님 몫 — GSC 수동 색인
