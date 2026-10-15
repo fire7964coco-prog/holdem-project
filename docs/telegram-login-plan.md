@@ -36,7 +36,8 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
   - 영향: 봇 DM은 `chat_id`(숫자 ID)가 있어야 한다 → **로그인만으로는 발송 대상이 안 생긴다.** 후보 = ⓐ 봇 딥링크 `t.me/HoldemMasterBot?start=<1회용 토큰>` — 회원이 Start를 누르면 봇이 받은 업데이트의 `from.id`로 연결(OIDC와 무관 · 표준 방식) ⓑ ID 토큰 원문 확인(Client Secret 필요 = 사장님 몫)으로 `id` 클레임이 오는지 판정. 
   - 부수 관찰: `redirect_to=http://localhost:…`는 허용 목록 밖이라 사이트 URL 루트(`/?code=`)로 떨어진다(로컬 시험 시 허용 목록 추가 필요). 라이브 `/auth/callback`은 verifier 없는 code를 받으면 `/login?error=auth` — 정상 동작.
   - U2(기존 회원에 연결)는 미시험.
-- ▶ 다음 = 사장님 결정: 숫자 ID 확보 경로(ⓐ 권장) → ④ 테이블 설계에 반영(`telegram_links.sub` text + `chat_id` bigint는 Start 뒤 채움).
+- ✅ 사장님 결정(10-15): **ⓐ 봇 Start 딥링크로 숫자 ID 확보** · 시험 회원 `1d194faa`(운영 계정) **그대로 둔다**.
+- ▶ 다음 = ④ 설계 수정안: `telegram_links`에 `sub`(text · OIDC) + `chat_id`(bigint · Start 뒤 채움) + `link_token`(1회용·만료) · 봇 업데이트 수신 = 서버 라우트(웹훅 · `secret_token` 헤더 검증) → 봇 토큰이 Vercel env에 있어야 함(⑧을 앞당김 · 사장님 몫). SQL 초안 → 사장님 SQL Editor.
 
 ### ① 사장님 준비 안내 (공식 문서 문장 기준 · 10-13)
 1. 텔레그램에서 **@BotFather** → `/newbot` → 봇 이름(예: HoldemMaster) · 아이디(…bot으로 끝나야 함) → **봇 토큰**이 나온다(비밀 · 채팅에 붙이지 말고 저에게 «받았다»만).
