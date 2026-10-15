@@ -4,6 +4,7 @@
 - 이관: `aliasLegacyAuthCookies`(`lib/supabase/cookie-name.ts`) — 서버(server.ts)는 옛 쿠키를 새 이름으로 읽기만 · 미들웨어는 새 이름으로 옮겨 쓰고 옛것 삭제 · 브라우저 클라이언트도 생성 전 1회 이관(미들웨어 매처 밖 페이지 대비). 청크(.0·.1)·`-code-verifier` 포함.
 - 시험: 단위 11/11(청크·검증값·현행 우선·도메인 판정·유사 도메인 거부) · 로컬 next start + Playwright — `/`(미들웨어) Set-Cookie가 새 이름 기록·옛것 삭제 · `/calculator`(매처 밖) 브라우저가 새 이름 기록·옛것 삭제 확인(가짜 토큰이라 이후 Supabase가 정리) · build EXIT 0.
 - 솔버 명세 = `docs/reply-to-solver-sso-2026-10-15.md`(MB-343): ssr 0.12 createBrowserClient · 같은 cookieOptions · localStorage 옛 세션 setSession 이관 · hasStoredSession을 쿠키로 · 라이브 시험 7.
+- 🔴 라이브 실측에서 결함 1 발견·수정: ssr 0.12는 domain 삭제와 host-only 삭제를 같은 이름으로 둘 다 내보내는데 Next 응답 쿠키는 이름당 하나 → host-only가 domain 삭제를 덮어써 서버 로그아웃이 공용 쿠키를 못 지움. `dropHostOnlyTwins`로 middleware·server setAll에서 host-only 짝을 버림(브라우저 document.cookie 경로는 영향 없음).
 - 발신함 1행에 붙어 있던 MB-342를 큐 끝(MB-341 뒤)으로 옮김(09-24형 삽입 사고). MB-125~127도 파일 머리에 있음(09-30부터 · 손대지 않음).
 
 ## 2026-10-15 (10) — Supabase 커스텀 도메인 `auth.holdemmaster.com` 활성 · MB-342

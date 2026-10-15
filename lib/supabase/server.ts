@@ -1,6 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies, headers } from "next/headers";
-import { aliasLegacyAuthCookies, authCookieOptions } from "./cookie-name";
+import { aliasLegacyAuthCookies, authCookieOptions, dropHostOnlyTwins } from "./cookie-name";
 
 export async function createClient() {
   const cookieStore = await cookies();
@@ -17,7 +17,7 @@ export async function createClient() {
         },
         setAll(cookiesToSet) {
           try {
-            cookiesToSet.forEach(({ name, value, options }) =>
+            dropHostOnlyTwins(cookiesToSet).forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
             );
           } catch {

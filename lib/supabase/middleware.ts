@@ -1,6 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { aliasLegacyAuthCookies, authCookieOptions } from "./cookie-name";
+import { aliasLegacyAuthCookies, authCookieOptions, dropHostOnlyTwins } from "./cookie-name";
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
@@ -18,7 +18,8 @@ export async function updateSession(request: NextRequest) {
         getAll() {
           return aliased;
         },
-        setAll(cookiesToSet) {
+        setAll(all) {
+          const cookiesToSet = dropHostOnlyTwins(all);
           wrote = true;
           cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value)

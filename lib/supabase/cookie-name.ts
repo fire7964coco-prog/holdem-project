@@ -54,3 +54,14 @@ export function aliasLegacyAuthCookies<T extends NamedCookie>(all: T[]) {
     legacy,
   };
 }
+
+/**
+ * @supabase/ssr 0.12는 domain을 주면 지울 때 «domain 삭제»와 «host-only 삭제»를 같은 이름으로 둘 다 내보낸다.
+ * Next의 응답 쿠키(ResponseCookies·cookies())는 이름당 하나만 남겨 뒤의 host-only 삭제가 domain 삭제를 덮어쓰고,
+ * 그러면 공용 쿠키가 안 지워져 서버 로그아웃·무효 세션 정리가 먹지 않는다(10-15 라이브 실측).
+ * 새 이름 쿠키는 운영에서 처음부터 domain으로만 만들어지니 host-only 짝은 버린다(옛 이름 정리는 따로 한다).
+ */
+export function dropHostOnlyTwins<T extends { name: string; options?: { domain?: string } }>(cookiesToSet: T[]): T[] {
+  const withDomain = new Set(cookiesToSet.filter((c) => c.options?.domain).map((c) => c.name));
+  return cookiesToSet.filter((c) => c.options?.domain || !withDomain.has(c.name));
+}
