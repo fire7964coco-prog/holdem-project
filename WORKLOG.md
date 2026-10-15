@@ -1,3 +1,10 @@
+## 2026-10-15 (10) — Supabase 커스텀 도메인 `auth.holdemmaster.com` 활성 · MB-342
+
+- 사장님 승인(유료) → Free→**Pro $25 + 커스텀 도메인 $10/월**(조직 프로젝트 1개 확인). GoDaddy(domaincontrol)에 CNAME `auth`→`idikicmooauorjurdkzh.supabase.co` + TXT `_acme-challenge.auth` · CAA 없음 · 원본 NS로 직접 확인 → Verify → 구글 OAuth 클라이언트 «HoldemMaster Web»·카카오(앱 → 플랫폼 키 → REST API 키 «카카오 로그인 리다이렉트 URI» — 카카오 로그인 → 고급은 **로그아웃** URI라 아님)·BotFather Login Widget에 `https://auth.holdemmaster.com/auth/v1/callback` 추가(옛 콜백 유지) → Activate.
+- 실측: health 200 · 옛 호스트로 authorize해도 google·kakao·custom:telegram 셋 다 `redirect_uri=auth.holdemmaster.com` · 구글·텔레그램 승인 페이지에 supabase.co 0회 · 카카오 KOE006 없음. 사장님 구글·카카오 종단 로그인 OK.
+- 코드 `2934a44a`: 로그인 쿠키 이름 고정(`lib/supabase/cookie-name.ts` → client·server·middleware cookieOptions.name) — env URL을 바꾸면 기본 이름이 `sb-auth-auth-token`으로 바뀌어 전원 로그아웃되는 것 방지. `NEXT_PUBLIC_SUPABASE_URL`은 아직 옛 주소(급하지 않음).
+- 사장님 질문: 솔버 로그인 후 «커뮤로 가기» → 홈페이지 비로그인. 원인 = 본체 www 전용 쿠키 vs 솔버 localStorage. 공용 쿠키(`.holdemmaster.com`) 연동 권장 → 사장님 «다음 새 세션에서 솔버랑 같이». MB-342 = 솔버에 도메인 활성 통지·S-101 ACK·연동 예고.
+
 ## 2026-10-15 (9) — 텔레그램 채널 9개 실측 · 마감
 
 - t.me 공개 페이지로 실측: Official·KR·JP·ZH·RU·ES·PT·VN·ID 생성 · TR·AR 미생성(공개 주소 한도 추정). 사장님 목록에 주소 없는 중복(«HoldemMaster Official» 2:47 · «HoldemMaster Poker» 1개) → 삭제 안내. 다음 세션 = Supabase 커스텀 도메인(사장님 지시).
