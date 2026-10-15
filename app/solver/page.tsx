@@ -4,6 +4,7 @@ import SolverClient from "./solver-client";
 import HubPage from "@/components/hub-page";
 import SolverReviews from "@/components/solver-reviews/solver-reviews";
 import { SOLVER_FAQ } from "./faq";
+import { videoObjects } from "./videos";
 
 // "GTO 솔버" 키워드는 기존 필라/포스트가 소유하지 않음(작성 시점 확인) → 이 페이지가 인덱스 대상.
 // ★2026-08-14 확인: 솔버 본체(solver.holdemmaster.com)는 **noindex**다(라이브 meta robots).
@@ -133,6 +134,8 @@ const jsonLd = {
         { "@type": "ListItem", position: 2, name: "GTO 솔버", item: `${SITE}/solver` },
       ],
     },
+    // ★2026-10-15 — 자체 채널 «솔버 사용법» 1~4편(본문 4섹션에 임베드). 값 출처 = ./videos.ts
+    ...videoObjects({ "@type": "Organization", name: "홀덤마스터", url: SITE }),
   ],
 };
 
