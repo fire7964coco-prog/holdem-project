@@ -53,6 +53,22 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 - 그룹(단톡방)은 보류(관리자 사칭 DM 사기·모더레이션 부담) · 언어별 채널은 GA 국가 분포 뒤(이름 규칙 `HoldemMasterKR` 등 · 선점 권장).
 - 🪶 «가입 신청 승인제» 채널에서 봇이 신청자 ID를 받는 기능 = 원문 미확인 → 채널 운영 회차에서 확인.
 - 봇을 채널 관리자로 넣기(자동 게시용)는 ⑤ 뒤.
+- 언어별 채널 선점(10-15 · 빈 공개 채널 · 설명은 «준비 중 → Official 안내») — 주소·이름·설명 정본 = 이 문서 «부록 A». 실제로 잡힌 주소는 사장님 보고 뒤 여기 기록.
+
+### 부록 A. 채널 주소·이름·설명 (10-15 · 설명 ≤255자)
+| 주소 | 채널명 | 설명 |
+|---|---|---|
+| HoldemMasterOfficial | HoldemMaster Official | Official HoldemMaster channel — new strategy guides, poker tournament schedules, quizzes and events. Bot: @HoldemMasterBot · holdemmaster.com |
+| HoldemMasterKR | 홀덤마스터 HoldemMaster | 홀덤마스터 공식 한국어 채널(준비 중) — 새 글·대회 일정·이벤트 소식을 전해 드립니다. 지금은 공식 채널 @HoldemMasterOfficial · holdemmaster.com |
+| HoldemMasterJP | HoldemMaster テキサスホールデム | HoldemMaster 公式日本語チャンネル（準備中）— 新着記事・大会スケジュール・イベント情報をお届けします。公式チャンネル：@HoldemMasterOfficial · holdemmaster.com/ja |
+| HoldemMasterZH | HoldemMaster 德州撲克 | HoldemMaster 官方中文頻道（籌備中）— 最新攻略文章、賽事日程與活動消息。官方頻道：@HoldemMasterOfficial · holdemmaster.com/zh-hant |
+| HoldemMasterRU | HoldemMaster Холдем | Официальный русскоязычный канал HoldemMaster (скоро запуск) — новые статьи, расписание турниров и события. Основной канал: @HoldemMasterOfficial · holdemmaster.com/ru |
+| HoldemMasterES | HoldemMaster Póker | Canal oficial de HoldemMaster en español (próximamente): nuevas guías, calendario de torneos y eventos. Canal principal: @HoldemMasterOfficial · holdemmaster.com/es |
+| HoldemMasterPT | HoldemMaster Pôquer | Canal oficial do HoldemMaster em português (em breve): novos guias, agenda de torneios e eventos. Canal principal: @HoldemMasterOfficial · holdemmaster.com/pt |
+| HoldemMasterVN | HoldemMaster Poker | Kênh chính thức tiếng Việt của HoldemMaster (sắp ra mắt) — bài viết mới, lịch giải đấu và sự kiện. Kênh chính: @HoldemMasterOfficial · holdemmaster.com/vi |
+| HoldemMasterID | HoldemMaster Poker | Kanal resmi HoldemMaster berbahasa Indonesia (segera hadir) — artikel baru, jadwal turnamen, dan event. Kanal utama: @HoldemMasterOfficial · holdemmaster.com/id |
+| HoldemMasterTR | HoldemMaster Poker | HoldemMaster resmi Türkçe kanalı (yakında) — yeni yazılar, turnuva takvimi ve etkinlikler. Ana kanal: @HoldemMasterOfficial · holdemmaster.com/tr |
+| HoldemMasterAR | HoldemMaster بوكر | القناة الرسمية لـ HoldemMaster باللغة العربية (قريبًا) — مقالات جديدة وجدول البطولات والفعاليات. القناة الرئيسية: @HoldemMasterOfficial · holdemmaster.com/ar |
 
 ### ① 사장님 준비 안내 (공식 문서 문장 기준 · 10-13)
 1. 텔레그램에서 **@BotFather** → `/newbot` → 봇 이름(예: HoldemMaster) · 아이디(…bot으로 끝나야 함) → **봇 토큰**이 나온다(비밀 · 채팅에 붙이지 말고 저에게 «받았다»만).
