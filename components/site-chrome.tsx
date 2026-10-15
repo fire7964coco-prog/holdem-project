@@ -153,7 +153,7 @@ export function SiteJsonLd() {
       "@type": "Organization",
       name: brand,
       url: SITE,
-      logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+      logo: { "@type": "ImageObject", url: `${SITE}/favicon-512.png` },
     },
     ...(locale
       ? {}

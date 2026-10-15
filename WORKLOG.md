@@ -1,3 +1,8 @@
+## 2026-10-15 (7) — 텔레그램 채널 · 사이트 로고 교체 MB-339
+
+- 채널 `@HoldemMasterOfficial` 생성(사장님) · 언어별 채널 이름·설명 = `docs/telegram-login-plan.md` 부록 A. 언어별 채널은 선점만, 운영은 봇 연결 수 보고.
+- 새 로고(첫 파일은 전 픽셀 투명 → 재저장본 사용): 192·512 교체 · 탭 아이콘(svg·16·32·48)은 스페이드만 유지 · 스키마 logo 8자리 → favicon-512.png. 빌드 exit 0.
+
 ## 2026-10-15 (6) — 텔레그램 로그인 ④ 설계·SQL 초안
 
 - `supabase/telegram-links.sql` 신설 — `telegram_links`(chat_id·토큰 해시·차단·동의 열) + `telegram_link_consume()` · RLS on 정책 0. 핸드오프 초안의 `sub` 열은 `auth.identities`와 중복이라 뺌 · Start 연결은 로그인 수단 무관 → U2 불필요. PGlite 0.2.17로 두 번 실행·소비·재전송·만료·이동·제약 시험 통과(옛 행 이름 잔존 발견 → 비우게 수정). 딥링크·웹훅 헤더·my_chat_member 사양 원문 확인. ▶ 사장님 SQL RUN + Vercel env 2종 → ⑤. 상세 = `docs/telegram-login-plan.md` «④ 설계 수정안».

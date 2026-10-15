@@ -107,13 +107,13 @@ export default function Page({ params }: { params: { slug: string } }) {
       "@type": "Organization",
       name: "홀덤마스터 편집팀",
       url: `${SITE}/about`,
-      logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+      logo: { "@type": "ImageObject", url: `${SITE}/favicon-512.png` },
     },
     publisher: {
       "@type": "Organization",
       name: "홀덤마스터",
       url: SITE,
-      logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+      logo: { "@type": "ImageObject", url: `${SITE}/favicon-512.png` },
     },
     image: { "@type": "ImageObject", url: ogImage, width: 1200, height: 630 },
     keywords: post.tags.join(", "),
@@ -250,7 +250,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         publisher: {
           "@type": "Organization",
           name: "홀덤마스터",
-          logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+          logo: { "@type": "ImageObject", url: `${SITE}/favicon-512.png` },
         },
       }
     : null;

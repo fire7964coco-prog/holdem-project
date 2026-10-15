@@ -70,7 +70,7 @@ export default function AboutPage() {
     "@type": "Organization",
     name: "홀덤마스터 편집팀",
     url: `${SITE}/about`,
-    logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+    logo: { "@type": "ImageObject", url: `${SITE}/favicon-512.png` },
     description:
       "12년 경력의 포커 전략 전문가 팀. GTO 솔버(GTO+, PioSolver) 분석 기반 데이터 중심 콘텐츠 제공.",
     knowsAbout: [

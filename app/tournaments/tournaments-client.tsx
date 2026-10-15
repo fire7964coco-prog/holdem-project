@@ -670,7 +670,7 @@ export default function Tournaments({
     "headline": "홀덤 대회 완벽 가이드 — 국내·해외 포커 토너먼트 총정리 2026",
     "description": "HPT·피망 쇼다운·한게임 등 국내 홀덤 대회와 WSOP·WPT·EPT·APT 해외 포커 토너먼트를 한눈에 정리. 대회 구조, 전략, 참가 방법과 초보 로드맵 포함.",
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
-    "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
+    "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon-512.png" } },
     "datePublished": "2026-03-26",
     "dateModified": "2026-09-16",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
