@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { SOLVER_FAQ } from "./faq";
+import { YouTubeLite } from "@/components/youtube-lite";
 
 /**
  * ★CTA는 `?lang=ko`로 보낸다 (2026-09-11 정정). 앱은 «?lang= → 저장값(solver.locale.pegged) →
@@ -179,6 +180,19 @@ const SPOT_GROUPS = [
  */
 const SPOT_TOTAL = SPOT_GROUPS.reduce((n, g) => n + g.items.length, 0);
 
+/**
+ * ★2026-10-15 — 홀덤마스터 유튜브 채널 「무료 GTO 솔버 사용법」 1~4편 (사장님 10-15 업로드).
+ *   제목·길이·챕터는 yt-dlp로 받은 실물 그대로다. 각 편의 챕터가 이 랜딩의 H2와 1:1로 겹쳐서
+ *   그 섹션 끝에 하나씩 둔다: 1편 → «GTO 솔버가 뭔가요?» · 3편 → 사용법 · 2편 → 결과 화면 · 4편 → 트레이너.
+ *   🔴 한국어 영상이라 KO 랜딩에만 둔다(다른 로케일 랜딩에 넣지 않는다).
+ */
+const VIDEOS = {
+  start: { id: "FqHHkW556kE", title: "홀덤 솔버, 처음이라면 여기부터 | 무료 GTO 솔버 사용법 1편", caption: "▶ 사용법 1편 (8분 24초) — 솔버가 하는 일과 하지 않는 일, 계산 없이 교육 예제 A♥7♦2♣를 열어 화면 읽는 순서 잡기" },
+  read: { id: "TlUC5f1ejiE", title: "솔버 화면의 색깔과 숫자, 무슨 뜻일까? (빈도·EQ·EV) | 무료 GTO 솔버 사용법 2편", caption: "▶ 사용법 2편 (10분 30초) — 표 한 칸과 콤보 구분, 레인지 전체 비율과 내 패의 비율, 빈도·EQ·EV가 각각 묻는 것" },
+  solve: { id: "V3GRg25SRWU", title: "내가 겪은 핸드, 솔버로 직접 계산하기 | 무료 GTO 솔버 사용법 3편", caption: "▶ 사용법 3편 (12분 3초) — 상황 메모 → 양쪽 레인지 → 팟·스택 → 벳 사이즈 → 트리 생성 → 계산 완료 확인까지 한 번에" },
+  trainer: { id: "NmUy3uAW3QU", title: "솔버의 답을 내 공부로 바꾸는 법 (GTO 트레이너) | 무료 GTO 솔버 사용법 4편", caption: "▶ 사용법 4편 (9분 54초) — 트레이너가 EV 손실로 채점하는 방식, 답 보기 전 예상 → 비교 → 틀린 문제 복습" },
+} as const;
+
 /* ── 공통 조각 ───────────────────────────────────────────────────────── */
 
 function Cta({ label, variant = "solid" }: { label: string; variant?: "solid" | "outline" }) {
@@ -308,6 +322,7 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
             ),
           ])}
         />
+        <YouTubeLite {...VIDEOS.start} />
       </section>
 
       {/* ── 사용법 5단계 ─────────────────────────────────────────────── */}
@@ -342,6 +357,7 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
           <strong className="text-foreground">10칩 = 1bb</strong>로 넣으면 됩니다(팟 55 = 5.5bb).
           교육 예제와 트레이너는 이 기준으로 자동 환산해 표시합니다.
         </p>
+        <YouTubeLite {...VIDEOS.solve} />
       </section>
 
       {/* ── 결과 화면 읽는 법 ────────────────────────────────────────── */}
@@ -365,6 +381,7 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
           </Link>
           에서 한 줄씩 풀어 놨습니다.
         </p>
+        <YouTubeLite {...VIDEOS.read} />
       </section>
 
       {/* ── 무료 범위 (기능표) ───────────────────────────────────────── */}
@@ -466,6 +483,7 @@ export default function SolverClient({ reviews }: { reviews?: React.ReactNode } 
             이어서 풀 수 있습니다. 오늘의 문제 연속 일수와 완료 표시는 기기마다 따로 남습니다. 직접 계산한 스팟과 그 연습 기록은 로그인해도 이 기기에만 남습니다
           </li>
         </ul>
+        <YouTubeLite {...VIDEOS.trainer} />
         <div className="mt-5">
           <Cta label="GTO 트레이너 열기 → (사이드바에서 「GTO 트레이너」 선택)" variant="outline" />
         </div>

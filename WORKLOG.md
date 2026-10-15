@@ -1,3 +1,9 @@
+## 2026-10-15 (15) — KO 솔버 랜딩에 자체 유튜브 영상 4편 임베드 · MB-347
+
+- 사장님 오늘 개설한 홀덤마스터 채널(UCmijsBpGl77bOMuhe6EIUtQ) «무료 GTO 솔버 사용법» 1~4편. yt-dlp로 제목·길이·챕터·자막 확보 → 챕터가 랜딩 H2와 1:1로 겹침: 1편 → «GTO 솔버가 뭔가요?» · 3편 → 사용법 5단계 · 2편 → 결과 화면 · 4편 → 트레이너(CTA 위).
+- `components/youtube-lite.tsx` 신설(lite-facade · 썸네일 vi_webp/sddefault 640×480 레터박스 → 16:9 object-cover로 띠만 잘림 · 클릭 시 youtube-nocookie iframe). KO 전용 — 한국어 영상이라 다른 로케일 랜딩 손대지 않음. VideoObject 스키마는 넣지 않음(사장님 판단 대기).
+- 빌드 exit 0 · 로컬 next start + Playwright 390/1280: figure 4 · scrollWidth = 뷰포트 · 클릭 재생 OK · 서버 종료.
+
 ## 2026-10-15 (14) — MA-564·566 회신+등재+이행 · MB-346
 
 - MA-564(tr R4 strat): 요청 4 이행(continuation-bet 97% 한정 2자리 · positions FAQ «straddle yoksa» 2 · strategy 뱅크롤 관할·연령 한정 · «mutlaka» 삭제). 통지 3 = queue §2-CI CI-6~8.
