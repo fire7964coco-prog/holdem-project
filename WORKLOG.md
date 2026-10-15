@@ -1,3 +1,7 @@
+## 2026-10-15 (4) — 텔레그램 로그인 ①② 완료(사장님 화면 안내)
+
+- 컴퓨터 유즈 도구 없음 · 아스트라(codex read-only)도 브라우저 조작 불가 → 캡처 보며 단계 안내. 봇 `@HoldemMasterBot` · BotFather 미니 앱에서 OIDC 전환 · Redirect·Trusted Origin 등록 · Supabase `custom:telegram` ENABLED. 크롬 자동완성이 구글 OAuth 키를 채운 것 발견해 교체. 상세 = `docs/telegram-login-plan.md` «✅ 진행 기록».
+
 ## 2026-10-15 (3) — 10-15 묶음 ③→①→② · CF-5 fr MB-337
 
 - ③ 텔레그램 봇 준비 안내(계획 문서 «① 사장님 준비 안내» 요약)를 사장님께 드림.

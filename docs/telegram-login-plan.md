@@ -25,6 +25,11 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 
 - U4. 텔레그램 토큰 엔드포인트는 «Basic 인증(Client ID·Secret)»만 명시(`client_secret_basic`). Supabase 커스텀 공급자가 Basic으로 보내는지 → ③ 실측에서 실패하면 여기부터 본다.
 
+### ✅ 진행 기록 (10-15)
+- ① 완료 — 운영용 새 계정 · 봇 `@HoldemMasterBot`(사진 = `public/favicon-512.png`) · BotFather 미니 앱 Login Widget에서 «Switch to OpenID Connect Login» → Client ID `8640330216`(공개 값) · Redirect URI `https://idikicmooauorjurdkzh.supabase.co/auth/v1/callback` · Trusted Origin `https://www.holdemmaster.com/`(텔레그램이 끝 `/` 자동 부착) · 구형 위젯 도메인 칸에도 `www.holdemmaster.com`(무해). Secret·봇 토큰은 텔레그램 안에만(대화·파일에 없음).
+- ② 완료 — Supabase Auth Providers → Custom Providers → `custom:telegram` · Display Name Telegram · Auto-discovery · Issuer `https://oauth.telegram.org` · Discovery 비움 · Scopes `openid, profile, telegram:bot_access` · Allow users without email ON · Callback 일치 확인 · **ENABLED**. 🔴 크롬 자동완성이 Client ID·Secret 칸에 구글 OAuth 키를 채웠던 것을 지우고 넣음 — 공급자 수정 때 같은 함정.
+- ▶ 다음 = ③ 실측(U1·U2): `/login`에 버튼 붙이기 전, 로컬에서 `signInWithOAuth({ provider: 'custom:telegram' })` 1회 → `auth.users`·`identities` 저장 필드 확인(SQL은 사장님 SQL Editor). 무료 플랜 커스텀 공급자 한도 3개(공식 문서).
+
 ### ① 사장님 준비 안내 (공식 문서 문장 기준 · 10-13)
 1. 텔레그램에서 **@BotFather** → `/newbot` → 봇 이름(예: HoldemMaster) · 아이디(…bot으로 끝나야 함) → **봇 토큰**이 나온다(비밀 · 채팅에 붙이지 말고 저에게 «받았다»만).
 2. 봇 프로필 사진 = 사이트 로고 권장(공식 «strongly recommend»).
