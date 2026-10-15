@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kazanan her Texas Hold'em kararı tekrar eden beş soruya iner: nerede oturuyorum, bu el oynanmaya değer mi, pota ilk giriyorsam limp yerine raise mi fold mu, flop'ta bahse devam ediyor muyum ve eli ne zaman bırakıyorum. Bu beş soruyu iyi cevaplayan tight-aggressive bir oyuncu flop öncesi ellerin yaklaşık %80'ini fold eder, oynadıklarını agresif oynar ve ezber ipucu listesine gerek kalmadan neredeyse her gündelik masayı yener.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-12",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -132,7 +132,7 @@ C-bet işe yarar çünkü flop öncesi güç gösteren *sendin*; board bu yüzde
 
 - **Pozisyon** — kuru, yüksek kartlı bir board'da (mesela K‑7‑2) pozisyondaysan sık c-bet atabilirsin; pozisyon dışında frekans sert düşer, çünkü hem daha az bilgin hem daha az fold equity'n vardır. Kesin aralıklar [c-bet rehberinde](/tr/blog/holdem-continuation-bet).
 - **Board dokusu** — rakibini ıskalayan kuru board'lar bet etmeyi destekler; call range'lerine oturan ıslak, bağlantılı board'lar (iki aynı renkli 9‑8‑7) dikkat ister.
-- **Rakip sayısı** — heads-up rahatça bet edebilirsin; iki ya da daha fazla call'cıya karşı **ellerin yarısından azında** c-bet at, çünkü biri mutlaka *bir şeyle* bağlanmıştır.
+- **Rakip sayısı** — heads-up rahatça bet edebilirsin; iki ya da daha fazla call'cıya karşı **ellerin yarısından azında** c-bet at, çünkü biri *bir şeyle* bağlanmıştır.
 
 Kuru, as yüksek bir board'da range ve pozisyon avantajının ne kadar uç bir sonuca varabildiğini HoldemMaster solver'ı gösteriyor: "Buton açıp big blind call ettikten sonra A♥7♦2♣ flop'unda big blind range'inin %98,2'sini check eder — top pair, iki çift ve set'ler dahil." (Buton 2,5bb açış, efektif stack 97,5bb, rake hariç; 19 Ağustos 2026 çıktısı.) Bu, call edenin tarafı; yani bu flop'ta pozisyondaki raise yapan sensen, bahsi açıp açmama kararı neredeyse her zaman sana kalır. Sayıların dökümü [A-7-2'de c-bet yazısında](/tr/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
@@ -255,7 +255,7 @@ A. İkisi de — ama zamanla beceri kazanır. Tek bir elde büyük bir şans pay
 
 **Q. Pokerden para kazanılır mı?**
 
-A. Uzun vadede küçük bir azınlık kazanır; oyuncuların çoğu kaybeder. Beceri yüz binlerce elde öne çıkar, ama varyans (kısa vadeli dalgalanma) çok büyüktür ve rake potlardan pay alır — iyi bir oyuncu bile binlerce, hatta on binlerce el süren kayıp serileri yaşar. Bu yüzden ilk kural bankroll (poker kasası) yönetimidir: pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır, masaya oturduğun tek bir stack bu kasanın küçük bir parçası olsun ve kayıp serisinde limit düşür. Pokeri bir gelir planı olarak değil, kararlarını geliştirdiğin bir oyun olarak gör.
+A. Uzun vadede küçük bir azınlık kazanır; oyuncuların çoğu kaybeder. Beceri yüz binlerce elde öne çıkar, ama varyans (kısa vadeli dalgalanma) çok büyüktür ve rake potlardan pay alır — iyi bir oyuncu bile binlerce, hatta on binlerce el süren kayıp serileri yaşar. Gerçek parayla oynayacaksan bunu yalnızca yasal olduğu bir yerde ve yasal yaştaysan yap; o durumda ilk kural bankroll (poker kasası) yönetimidir: pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır, masaya oturduğun tek bir stack bu kasanın küçük bir parçası olsun ve kayıp serisinde limit düşür. Pokeri bir gelir planı olarak değil, kararlarını geliştirdiğin bir oyun olarak gör.
 
 **Q. GTO poker nedir?**
 

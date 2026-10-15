@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Continuation bet (c-bet): Flop'ta ne zaman, ne kadar bahis yapılır, ne zaman check edilir?",
   seoTitle: "C-bet nedir? Her flop'a c-bet neden çip kaybettirir?",
   desc: "C-bet (continuation bet) nedir, hangi flop'ta bahis yapılır, hangisinde check edilir? Kuru board'da küçük, ıslakta büyük boyut ve pozisyona göre sıklık.",
-  tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman), multiway potlarda ise çok daha az.",
+  tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak ise tersine döner: çözdüğümüz üç board'da %97'nin üstüne çıktı), multiway potlarda ise çok daha az.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 dk",
@@ -384,7 +384,7 @@ A. Flop c-bet için %55–70 civarı sağlıklı ve dengeli bir banttır. Yakla�
 1. **C-bet, preflop raise yapanın flop bahsidir** — ve eller flop'u yaklaşık üçte iki ihtimalle ıskaladığı için işe yarar.
 2. **Karar veren board'dur.** Range'ini destekleyen yüksek, kuru board'larda bahis yap; rakibininkini destekleyen düşük, bağlantılı board'larda check et.
 3. **Range avantajı sıklığı, nut avantajı boyutu belirler.** Hâkim olduğun board'larda sık bahis yap; nut'ların daha çoğu sendeyse ya da ıslak board'da draw'lara bedel ödetmen gerekiyorsa büyük bahis yap.
-4. **Kuruda küçük (⅓), ıslakta büyük (⅔+).** Tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman), multiway'de çok daha az.
+4. **Kuruda küçük (⅓), ıslakta büyük (⅔+).** Tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak ise tersine döner: çözdüğümüz üç board'da %97'nin üstüne çıktı), multiway'de çok daha az.
 5. **Check bir silahtır.** En iyi oyuncular sık ve bilerek check eder — c-bet bir neşterdir, balyoz değil.
 
 Bunu doğru yaptığında, zaten hiç senin olmayan board'larda pot yakmayı bırakırsın. Keskin c-bet oyununu sağlam bir 3-bet oyunu, gerçek bir [pozisyon](/tr/blog/holdem-positions) farkındalığı ve eksiksiz [strateji çerçevesiyle](/tr/blog/holdem-strategy) birleştir; flop oyunun "her flop'a bahis" kalabalığını sessizce geride bırakır.

@@ -1301,8 +1301,23 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CH-4 ar (MA-558 A①~④) | strategy 직답 닫힌 목록 «كلها» · 요약 «ولا تفتتح بالمجاراة» 범위 · «تحتاج إلى» · positions FAQ 블라인드 «قبل الطاولة كلها» HU 한정 | ✅ «وفي الكاش جيم بعمق ستاك عادي، أبرز الاستثناءات … ويُضاف إليها إكمال السمول بلايند» · «بعمق الكاش جيم العادي» · «تفضّل» · «(عدا الهيدز أب)» |
 | CH-5 EN-먼저 대기 | MA-555 ② paired «more than any two-pair or high-card hand»(+9로케일 · EN 원장 #63 재처분 뒤) · MA-558 (B) c-bet A-high 건조 처방 ↔ 솔버 절(13로케일 · EN 원장 재판정 뒤) | ⏸ 검수장 EN 원장 확정 신호 오면 EN+형제 일괄 |
 | CH-7 hi (MA-561 ①) | blind-battle-connected-board L191 «एक छोटे bet का सामना करने के बारे में» — EN «not an argument against a single small bet»(SB 자신의 bet 예외)이 «상대 bet을 마주함»으로 주체 교체(RISKY 낮음) · 형제 11로케일(ko·de·es·fr·id·ja·ms·pt·vi·zh·zh-hant) grep = 주체 유지, hi만 | ✅ «यह SB के एक बार छोटा bet लगाने के ख़िलाफ़ तर्क नहीं है» · updated 10-15 |
-| CH-8 EN-먼저 대기 (MA-561 ②) | EN low-board-check-raise L363 FAQ «delete 14.9% of its range with nothing to replace it» — 14.9%는 BB 노드 raise 빈도(레인지 몫 아님) · raise 막으면 콤보는 call/fold로 재배정(«nothing to replace it» 메커니즘) · EN 원장 행 없음 | ⏸ 검수장 EN 원장 처분 오면 EN+형제 일괄 |
+| CH-8 EN-먼저 대기 (MA-561 ②) | EN low-board-check-raise L363 FAQ «delete 14.9% of its range with nothing to replace it» — 14.9%는 BB 노드 raise 빈도(레인지 몫 아님) · raise 막으면 콤보는 call/fold로 재배정(«nothing to replace it» 메커니즘) · EN 원장 행 없음 | ✅ MA-566 처분(EN #86 · ES #82 RISKY) → §2-CI CI-5에서 EN+형제 8 이행 |
 | CH-6 남김 | MA-556 통지 1(probability «Rarity is the whole reason» = CF-6과 같은 건)·3(레이크 무전제·implied 독해·C-bet last·PFR 분모·HJ 분류) · MA-557 ①~⑥(tiebreak FAQ chop 팟별 · showdown 머크 비올인 · H4H 예외 · 무경합 선택 공개 · 사이드팟 정의 · 47-A) + ar 🪶 5 · MA-558 (C) 5 · MA-560 ①(betting FAQ 47-A 한 구 = MA-557 ⑥ 동형) ②(tr «ya da daha yüksek bir kent» 선택) | 🪶 판단 대상 — 라벨 아님 · 고치면 EN+형제 함께 |
+
+### 2-CI. 우편함 수신분 — MA-564(tr R4 strat 3편 · 421행 OK269/R23/W0/U129 · 요청 4 · 통지 3) · MA-566(EN 원장 처분 · MA-561 ② · MA-565 ⓐ~ⓒ · 요청 1 · 통지 1) · 등재·회신·이행 2026-10-15
+
+근거 `홀덤검수/reports/검수-tr-r4-strat-2026-10-15/hq-reverify/HQ-REPORT.md` · `ledger/tr/holdem-{strategy,positions,continuation-bet}.md` · `ledger/en/low-board-check-raise.md` #86 · `ledger/es/low-board-check-raise.md` #82 · `ledger/en/blind-battle-connected-board.md` #65·#67·#68.
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CI-1 tr (MA-564 ①) | continuation-bet tldr·요약 4 «(pozisyon dışındaki 3-bet'çi olarak tersine neredeyse her zaman)» — EN `c91cbe98` «flipped to over 97% on the three boards we solved» 한정 미전파(본문 표는 보유) | ✅ 2자리 «(… olarak ise tersine döner: çözdüğümüz üç board'da %97'nin üstüne çıktı)» |
+| CI-2 tr (MA-564 ②) | positions FAQ BTN «preflop'ta ondan sonra yalnızca iki blind konuşur» · FAQ CO «arkasında yalnızca buton ve iki blind kalır» — 스트래들 시 스트래들러가 마지막(WSOP 2026 Live B 165) | ✅ 두 자리 «straddle yoksa» 한정 |
+| CI-3 tr (MA-564 ③) | strategy 뱅크롤 FAQ «pokere yalnızca kaybetmeyi göze alabileceğin bir kasa ayır…» — 금전 플레이 안내에 관할·합법 장소 한정 없음(T1 · JA·MS·vi 선례) | ✅ 머리 한정 «Gerçek parayla oynayacaksan bunu yalnızca yasal olduğu bir yerde ve yasal yaştaysan yap; o durumda ilk kural …» — 법 판정 문장은 넣지 않음(정보제공 원칙) |
+| CI-4 tr (MA-564 ④) | strategy «çünkü biri **mutlaka** *bir şeyle* bağlanmıştır» — EN «someone connected with *something*»보다 강화된 전칭 | ✅ «mutlaka» 삭제 = EN 문면 |
+| CI-5 EN+형제 (MA-566 요청 1 · CH-8) | low-board-check-raise 에티켓 FAQ «delete 14.9% of its range with nothing to replace it» — 노드 raise 빈도 ≠ 레인지 몫 · raise 막으면 call/fold 재배정 | ✅ EN «facing a 1.8bb bet on this flop the big blind raises 14.9% of the time, and if you take that option away, those hands have to call or fold instead. The strategy has to rebalance without it, and the big blind gives up the value and pressure those raises carried.» · 형제 동형 8 = es·de·fr·ja·zh·zh-hant·vi·pt(pt «14,9% do range, sem substituto equivalente» 포함) 같은 꼴 · 제외 = hi(정답 꼴 선례) · id(«frekuensinya 14,9% pada node ini» = 노드 빈도) · ms(«pilihan yang digunakan 14.9% daripada masa» = 빈도) · ko(이 FAQ 없음) · 전부 updated 10-15 |
+| CI-6 EN-먼저 통지 (MA-564 통지 1) | c-bet 솔버 절 뒤 같은 글 옛 단정 모순(A-8-3 «⅓ 자주» · IP·HU·건조 «70–100%» · 로우 커넥티드 «check» 단정 · «tek yer as yüksek» 등) — 13로케일 공통 · ar MA-558 (B) = CH-5와 같은 묶음 | ⏸ CH-5와 합쳐 EN c-bet 손질 회차 1번(EN 먼저 → 13로케일) · 검수장 EN 재판정 신호 대기 |
+| CI-7 EN-먼저 통지 (MA-564 통지 2) | strategy «Always raise: A-A down to T-T, and A-K» 선행 액션 한정 · «realize less than your raw equity OOP» 단정 · positions «Only the first one acts truly blind» · FAQ «The one exception is heads-up»(스트래들 두 번째 예외) — tr RISKY ↔ EN OK 형제 갈림 | ⏸ 검수장 EN 재판정 결과 오면 EN+형제 |
+| CI-8 남김 (MA-564 통지 3 · MA-566 통지) | MA-564 EN 동형 8건(HUD 40% · 큰 베팅 폴드아웃 · delayed c-bet 정의 · 토너먼트 half pot · 결론 «ends at the big blind» · UTG «must commit» · «one in five» · 세트 11.8% «적어도 한 장») · MA-566 blind-battle L278 ⓐ~ⓒ 라벨 UNV 유지 + Astra 완화 권고(가능성 표현 · 과폴드 조건화 · «오버페어라는 사실만으로 정하지 말라») | 🪶 판단 대상 — 정정 강제 아님 · EN 손질 때 형제 함께 |
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)

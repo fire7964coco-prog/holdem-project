@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf dem niedrigen Rainbow-Flop 6♠5♥2♦ checkt der Big Blind 96,8% und spielt nur 3,2% an – obwohl seine Equity von 48,3% die zweithöchste der sieben Spots ist, in denen er verteidigt. Nur eine Hand macht hier eine Straße, 4-3, und keine der beiden Ranges hält sie. Niemand hat die stärksten Hände für sich, also spielt niemand out of position an. Die Action kommt später: Rechnet man denselben Spielbaum separat über den Flop hinaus, check-raist der Big Blind eine Bet von 1,8bb in 14,9% der Fälle, zum größten Teil Draws.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -276,7 +276,7 @@ A. Mit allen neun Set-Combos (66, 55, 22), beiden Combos von 65 suited und danac
 
 **Q. Ist ein Check-Raise erlaubt – und ist er unhöflich?**
 
-A. Erlaubt ist er in fast jedem Casino und in normalen Onlinespielen – nur eine private Heimrunde hat vielleicht noch eine eigene Hausregel –, und die Regel selbst erklärt der Guide zu den [Poker-Aktionen](/de/blog/holdem-betting-actions). Die Sorge um die Etikette ist ein Überbleibsel: Manche alten Heimrunden haben den Check-Raise per Hausregel verboten, und das Stigma hat die Regel überlebt. Nur noch wenige Runden spielen heute so, und die Zahlen oben sind der Grund – nimm dem Big Blind auf diesem Flop den Check-Raise weg, und du streichst 14,9% seiner Range, ohne etwas an ihre Stelle zu setzen.
+A. Erlaubt ist er in fast jedem Casino und in normalen Onlinespielen – nur eine private Heimrunde hat vielleicht noch eine eigene Hausregel –, und die Regel selbst erklärt der Guide zu den [Poker-Aktionen](/de/blog/holdem-betting-actions). Die Sorge um die Etikette ist ein Überbleibsel: Manche alten Heimrunden haben den Check-Raise per Hausregel verboten, und das Stigma hat die Regel überlebt. Nur noch wenige Runden spielen heute so, und die Zahlen oben sind der Grund – gegen eine Bet von 1,8bb raist der Big Blind auf diesem Flop in 14,9% der Fälle, und nimmst du ihm diese Option weg, müssen diese Hände stattdessen callen oder folden. Die Strategie muss sich ohne sie neu ausbalancieren, und der Big Blind verschenkt den Value und den Druck, den diese Raises gebracht haben.
 
 **Q. Gelten diese Zahlen auch bei meinem Limit?**
 

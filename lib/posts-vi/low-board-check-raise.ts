@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Trên flop rainbow thấp 6♠5♥2♦, big blind check 96,8% và chỉ lead 3,2% — dù 48,3% equity của nó là mức cao thứ hai trong bảy spot mà nó phòng thủ. Chỉ một tay bài làm được sảnh ở đây, 4-3, và không range nào cầm nó. Không ai có đầu mạnh nhất của board, nên không ai lead khi không có vị trí. Hành động đến sau: solve lại cùng cây bài này để xem tiếp sau flop, và big blind check-raise một cú bet 1,8bb với tần suất 14,9%, phần lớn bằng draw.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -271,7 +271,7 @@ A. Cả chín combo set (66, 55, 22), cả hai combo 65 đồng chất, rồi đ
 
 **Q. Check rồi raise lại có được phép không, và có bị coi là bất lịch sự?**
 
-A. Được phép ở gần như mọi casino và trong các game online tiêu chuẩn — chỉ một ván chơi riêng tại nhà mới có thể còn giữ luật riêng của nhà — và bản thân luật này được giải thích trong bài [các hành động cược](/vi/blog/holdem-betting-actions). Nỗi lo về phép lịch sự là thứ sót lại: một số ván chơi tại nhà ngày xưa cấm check-raise bằng luật riêng, và tiếng xấu sống lâu hơn cả luật. Ngày nay ít ván chơi theo cách đó, và các con số ở trên là lý do — bỏ check-raise khỏi lối chơi của big blind trên flop này là bạn xóa đi 14,9% range của nó mà không có gì thay thế.
+A. Được phép ở gần như mọi casino và trong các game online tiêu chuẩn — chỉ một ván chơi riêng tại nhà mới có thể còn giữ luật riêng của nhà — và bản thân luật này được giải thích trong bài [các hành động cược](/vi/blog/holdem-betting-actions). Nỗi lo về phép lịch sự là thứ sót lại: một số ván chơi tại nhà ngày xưa cấm check-raise bằng luật riêng, và tiếng xấu sống lâu hơn cả luật. Ngày nay ít ván chơi theo cách đó, và các con số ở trên là lý do — trước cú bet 1,8bb trên flop này, big blind raise với tần suất 14,9%, và nếu bỏ lựa chọn đó đi thì những tay bài ấy phải chuyển sang call hoặc fold. Chiến lược phải cân bằng lại mà không có nó, và big blind mất đi phần giá trị cùng sức ép mà những cú raise đó mang lại.
 
 **Q. Tỷ lệ check-raise bao nhiêu là hợp lý?**
 

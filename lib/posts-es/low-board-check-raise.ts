@@ -30,7 +30,7 @@ export const POST: Post = {
   tldr: "En el flop bajo y rainbow 6♠5♥2♦ la ciega grande hace check el 96.8% y apuesta primero apenas el 3.2% — aunque su 48.3% de equity es el segundo más alto de los siete spots en los que defiende. Aquí solo una mano hace escalera, 4-3, y no está en ninguno de los dos rangos. Nadie tiene la parte alta, así que nadie apuesta primero fuera de posición. La acción llega después: al resolver de nuevo el mismo árbol para ver más allá del flop, la ciega grande hace check-raise a una apuesta de 1.8bb el 14.9% de las veces, sobre todo con proyectos.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -285,7 +285,7 @@ A. Con los nueve combos de set (66, 55, 22), con los dos combos de 65 suited, y 
 
 **Q. ¿El check-raise está permitido, y es de mala educación?**
 
-A. Está permitido en casi todos los casinos y en las partidas online estándar (solo una partida privada podría conservar su propia regla de la casa), y la regla como tal está cubierta en la guía de [acciones de apuesta](/es/blog/holdem-betting-actions). La preocupación por la etiqueta es un resto del pasado: algunos home games antiguos prohibían el check-raise por regla de la casa, y el estigma sobrevivió a la regla. Hoy pocas partidas se juegan así, y los números de arriba son la razón — quítale el check-raise a la ciega grande en este flop y borras el 14.9% de su rango sin nada con qué reemplazarlo.
+A. Está permitido en casi todos los casinos y en las partidas online estándar (solo una partida privada podría conservar su propia regla de la casa), y la regla como tal está cubierta en la guía de [acciones de apuesta](/es/blog/holdem-betting-actions). La preocupación por la etiqueta es un resto del pasado: algunos home games antiguos prohibían el check-raise por regla de la casa, y el estigma sobrevivió a la regla. Hoy pocas partidas se juegan así, y los números de arriba son la razón — ante una apuesta de 1.8bb en este flop la ciega grande sube el 14.9% de las veces, y si le quitas esa opción, esas manos tienen que pagar o foldear. La estrategia tiene que reequilibrarse sin ella, y la ciega grande renuncia al valor y a la presión que llevaban esas subidas.
 
 **Q. ¿Estos números aplican a mi nivel?**
 

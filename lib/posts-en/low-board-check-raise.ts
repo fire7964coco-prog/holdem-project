@@ -107,7 +107,7 @@ export const POST: Post = {
   tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, mostly with draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -360,7 +360,7 @@ A. All nine set combos (66, 55, 22), both combos of 65 suited, and then straight
 
 **Q. Is a check-raise allowed, and is it rude?**
 
-A. Allowed in almost every casino and in standard online games — only a private home game might still have its own house rule — and the rule itself is covered in the [betting actions](/en/blog/holdem-betting-actions) guide. The etiquette worry is a leftover: some old home games banned check-raising by house rule, and the stigma outlived the rule. Few games play that way now, and the numbers above are the reason — take the check-raise out of the big blind's game on this flop and you delete 14.9% of its range with nothing to replace it.
+A. Allowed in almost every casino and in standard online games — only a private home game might still have its own house rule — and the rule itself is covered in the [betting actions](/en/blog/holdem-betting-actions) guide. The etiquette worry is a leftover: some old home games banned check-raising by house rule, and the stigma outlived the rule. Few games play that way now, and the numbers above are the reason — facing a 1.8bb bet on this flop the big blind raises 14.9% of the time, and if you take that option away, those hands have to call or fold instead. The strategy has to rebalance without it, and the big blind gives up the value and pressure those raises carried.
 
 **Q. Do these numbers hold at my stake?**
 

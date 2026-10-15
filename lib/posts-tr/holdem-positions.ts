@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker pozisyonları, dağıtıcı butonuna göre belirlenen koltuk adlarıdır: UTG, lojack, hijack, cutoff, buton ve blind'lar; normalde her elde saat yönünde bir koltuk kayarlar. Preflop'ta ilk UTG, en son big blind konuşur; flop'tan sonra ilk small blind, en son buton konuşur (heads-up'ta buton aynı zamanda small blind'dır: preflop ilk, postflop son). Fiziksel koltuk numaraları hiç değişmez, pozisyonlar değişir.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-15",
   masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 dk",
@@ -224,11 +224,11 @@ A. Lojack (LJ), butonun üç sağındaki koltuktur — 9-max'te iki orta pozisyo
 
 **Q. Pokerde button ne demek?**
 
-A. Button (buton, BTN), önünde "D" yazan diskin durduğu koltuktur: kartları krupiye dağıtsa bile disk, o elde dağıtıcı sayılan oyuncuyu gösterir ve normalde her elden sonra saat yönünde bir koltuk ilerler. Postflop'ta en son o konuşur; üç ve daha fazla oyunculu masada preflop'ta ondan sonra yalnızca iki blind konuşur. Bu koltuktan hangi ellerin açıldığını [buton açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
+A. Button (buton, BTN), önünde "D" yazan diskin durduğu koltuktur: kartları krupiye dağıtsa bile disk, o elde dağıtıcı sayılan oyuncuyu gösterir ve normalde her elden sonra saat yönünde bir koltuk ilerler. Postflop'ta en son o konuşur; üç ve daha fazla oyunculu masada, straddle yoksa, preflop'ta ondan sonra yalnızca iki blind konuşur. Bu koltuktan hangi ellerin açıldığını [buton açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
 
 **Q. Cutoff pozisyonu nedir?**
 
-A. Cutoff (CO), saat yönünde butondan hemen önce gelen koltuktur ve geç pozisyonun ilk koltuğu sayılır. Preflop'ta arkasında yalnızca buton ve iki blind kalır; buton fold ettiyse flop'tan sonra en son cutoff konuşur. Cutoff'tan hangi ellerin açıldığını [cutoff açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
+A. Cutoff (CO), saat yönünde butondan hemen önce gelen koltuktur ve geç pozisyonun ilk koltuğu sayılır. Straddle yoksa preflop'ta arkasında yalnızca buton ve iki blind kalır; buton fold ettiyse flop'tan sonra en son cutoff konuşur. Cutoff'tan hangi ellerin açıldığını [cutoff açılış range'i tablosunda](/tr/hand-chart) görebilirsin.
 
 **Q. Small blind mı önce konuşur, big blind mı?**
 

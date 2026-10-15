@@ -1,3 +1,8 @@
+## 2026-10-15 (14) — MA-564·566 회신+등재+이행 · MB-346
+
+- MA-564(tr R4 strat): 요청 4 이행(continuation-bet 97% 한정 2자리 · positions FAQ «straddle yoksa» 2 · strategy 뱅크롤 관할·연령 한정 · «mutlaka» 삭제). 통지 3 = queue §2-CI CI-6~8.
+- MA-566(EN 원장 #86): low-board-check-raise 에티켓 FAQ «delete 14.9% of its range with nothing to replace it» → 노드 빈도 + call/fold 재배정 꼴 · 형제 8(es·de·fr·ja·zh·zh-hant·vi·pt) · hi·id·ms 이미 빈도 꼴이라 제외 · CH-8 닫음. 게이트 🔴 0 · 빌드 exit 0.
+
 ## 2026-10-15 (13) — SSO 양쪽 라이브 · S-102 접수 · MB-345
 
 - 솔버 S-102: `030cfcf` 라이브 · 검사 sso-cookie-verify 10/10 등 · 사장님 실계정 시험 1(솔버→www 자동 로그인)·3(로그아웃 양쪽)·4(솔버 이관) ✅ · 2·6·7 미확인. MB-345로 S-100·101·102 ACK.

@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "No flop baixo rainbow 6♠5♥2♦, o big blind dá check em 96,8% e sai apostando em apenas 3,2%, embora sua equity de 48,3% seja a segunda maior dos sete spots em que ele defende. Só 4-3 forma sequência neste flop, e nenhum dos ranges contém essa mão. Nenhum dos ranges tem vantagem no topo, então o BB quase nunca sai apostando fora de posição. A agressividade aparece depois: numa resolução separada da mesma árvore, que permite consultar as decisões seguintes, o BB dá check-raise contra 1,8bb em 14,9%, num range de aumento formado sobretudo por draws.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-02",
   readTime: "11 min",
   emoji: "🌊",
@@ -255,7 +255,7 @@ A. Com os nove combos de set (66, 55 e 22), os dois combos de 65 do mesmo naipe 
 
 **Q. Check-raise é permitido? É falta de etiqueta?**
 
-A. É permitido em quase todos os cassinos e nos jogos online padrão — só um jogo caseiro ainda pode ter sua própria regra da casa. As regras estão explicadas no guia de [ações de aposta](/pt/blog/holdem-betting-actions). A preocupação com etiqueta vem de jogos caseiros antigos que proibiam check-raise por regra da casa; a má fama durou mais que a regra. No poker atual, é uma ferramenta normal, e os números acima mostram sua importância: retirar o check-raise do jogo do BB neste flop elimina a ação usada por 14,9% do range, sem substituto equivalente.
+A. É permitido em quase todos os cassinos e nos jogos online padrão — só um jogo caseiro ainda pode ter sua própria regra da casa. As regras estão explicadas no guia de [ações de aposta](/pt/blog/holdem-betting-actions). A preocupação com etiqueta vem de jogos caseiros antigos que proibiam check-raise por regra da casa; a má fama durou mais que a regra. No poker atual, é uma ferramenta normal, e os números acima mostram sua importância: diante de 1,8bb neste flop, o BB aumenta em 14,9% das vezes; sem essa opção, essas mãos teriam de pagar ou foldar, a estratégia precisaria se reequilibrar e o BB perderia o valor e a pressão que esses aumentos traziam.
 
 **Q. Esses números valem para o limite em que jogo?**
 
