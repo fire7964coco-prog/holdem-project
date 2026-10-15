@@ -1,3 +1,9 @@
+## 2026-10-15 (2) — 우편함 MA-555·556·557·558 회신 + MA-560·MA-388 ACK · MB-336
+
+- hi broadway 솔버 콤보 귀속(32.2·48.1 → 정확히 32·48) · tr pot-odds 계산기 «masada» 한정 + %19,6 best-case EN 이식 · tr probability 직답 EN 이식 · ar hand-rankings 7장 빈도 괄호 · ar strategy 직답·요약·«تفضّل» · ar positions FAQ HU 한정 — 6파일 9자리 · 스탬프 10-15.
+- EN-먼저 2묶음(paired «any» · c-bet A-high 건조)은 검수장 EN 원장 확정 대기 · 통지 = queue §2-CH CH-6. MA-388 = 결과 MA-389·390으로 이미 종결 → ACK.
+- 게이트 audit:hard hi 21 · tr 20 · ar 15 🔴 0 · build exit 0.
+
 ## 2026-10-15 (1) — 우편함 MA-554 회신 MB-335
 
 - MA-554(MB-332·333 변경 줄 재판정 · RISKY→OK 12 · WRONG 0) 요청 hi 1: beginners 스택표 5/10 노트 «अनुपात वही»(1/2 행은 100–250BB라 불성립) → «stack अब भी 100–200 big blinds का». ar 같은 표 사본 «والنسبة نفسها» 동시 정정(사본 grep 2자리) · 스탬프 10-15.

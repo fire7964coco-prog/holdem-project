@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "River'a kadar elin %43,8 ihtimalle Çift, %23,5 ihtimalle İki Çift, %3,0 ihtimalle Floş ve %2,6 ihtimalle Full olur. Royal floş ise yaklaşık 31.000 elde yalnızca bir kez gelir.",
   category: "odds",
   date: "2026-10-06",
-  updated: "2026-10-11",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -203,7 +203,7 @@ Ters yön de aynı mantıkla çalışır: oran = (100 − yüzde) ÷ yüzde. %20
 ## Olasılığı call ya da fold kararına nasıl çevirirsin?
 
 > **Kısa cevap**
-> Olasılığı karara çevirmek için onu pot oranıyla karşılaştırırsın: call miktarını, call eklendikten sonraki pota bölersen başa baş için gereken equity'yi bulursun. Kazanma ihtimalin bunu geçiyorsa call kârlıdır, geçmiyorsa fold. Yalnız ihtimali, call'un gerçekten satın aldığı kartlarla ölç: arkadan yeni bir bahis gelebilecekken iki kartlık floş rakamı tek bir turn kartı için ödemeyi haklı çıkarmaz.
+> Olasılığı karara çevirmek için onu pot oranıyla karşılaştırırsın: call miktarını, call eklendikten sonraki pota bölersen başa baş için gereken equity'yi bulursun. Bu fiyatı, call'un gerçekten satın aldığı kartlar üzerinden kazanma ihtimalinle karşılaştır. Arkadan yeni bir bahis gelebilecekken iki kartlık floş rakamı yalnızca turn için ödemeyi haklı çıkarmaz; ileride kazanılacak ek bahisler ise ayrı bir tahmin ister.
 
 Pot oranının tanımı, oran-yüzde kısayolu ve bahis büyüklüğüne göre hızlı tablo [pot odds (pot oranı) nedir](/tr/blog/holdem-pot-odds) yazısında; burada yalnızca olasılığı karara bağlıyoruz.
 

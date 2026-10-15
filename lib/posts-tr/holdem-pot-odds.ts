@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Pot odds, yani pot oranı, call edeceğin miktarın call'undan sonraki toplam pota bölünmesiyle bulunur. $150'lık bir pota $50 call edersen 50 ÷ 200 = %25 eder; yani call'un kârlı olması için en az %25 equity'ye ihtiyacın var.",
   category: "odds",
   date: "2026-10-06",
-  updated: "2026-10-11",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "15 dk",
@@ -62,7 +62,7 @@ Bu kadar. **Gereken equity = call'un ÷ son pot.** Gerçek kazanma şansın bu s
 > **Tüm karışıklığı bitiren tek kural**
 > Kendi call'unu her zaman son pota kat. "3:1 almak" ile "%25'e ihtiyaç duymak" *aynı* durumu anlatır — oran fiyattır, yüzde hedeftir. Yeni başlayanların hatalarının çoğu bu iki gösterimi karıştırmaktan doğar; yüzdeyi seç ve bir daha arkana bakma.
 
-Rakamları masada kafadan yapamadığın anlarda ya da bir eli sonradan kontrol etmek istediğinde [pot odds ve equity hesaplayıcımızı](/tr/calculator) kullanabilirsin — ama bu rehberin amacı, o hesabı kafanda 10 saniyede yapabilmen.
+Hesabı çalışırken ya da bir eli sonradan kontrol etmek istediğinde [pot odds ve equity hesaplayıcımızı](/tr/calculator) kullanabilirsin (oyun sırasında masada strateji araçları kullanılmaz) — ama bu rehberin amacı, o hesabı kafanda 10 saniyede yapabilmen.
 
 ---
 
@@ -212,7 +212,7 @@ Bunların hepsini, beni batırmadan önce tek tek yaptım. Dikkat et:
 
 Elimde ==b:A♥ K♥==, flop ==Q♥ 7♥ 2♣== — nut floş draw'ı, 9 out. Pot $100, rakip $50 bahis yapıyor. Pot oranım: 3:1 alıyorum, yani **%25**'e ihtiyacım var. İki kartı da görebilseydim ~%35'te olurdum — ama bu call sadece turn'ü alıyor ve tek başına turn %19,1, fiyatın altında. Aradaki farkı kapatan implied odds: bir kupa düşerse top pair'li bir eli stack'lerim. ==g:Rahat call.==
 
-Turn 3♠ — boş kart. Pot $200 ve rakip $200 ile all-in gidiyor — pot büyüklüğünde bir bahis, yani artık sadece 2:1 alıyorum ve **%33**'e ihtiyacım var. Ama **tek kart kala floşum sadece %19,6** (yalnızca 9 kupayı sayıyorum — pot büyüklüğünde bir all-in'e karşı asımı ya da papazımı eşlemek çoğu zaman yine kaybettirir, o yüzden overcard'lar temiz out değil). Doğrudan fiyat fold diyor; implied odds'um da artık sıfır, çünkü rakip all-in ve bana daha fazla ödeyemez. Böyle boş bir turn'de all-in giden set'lere ve iki çiftlere karşı elimdeki tek şey %19,6 — range'ine birkaç top pair eli sızsa bile overcard'lar call'u ancak başa baş civarına çeker. ==r:Fold== — ve "umut"un bana eskiden bir stack'e mal olduğu tam o spot.
+Turn 3♠ — boş kart. Pot $200 ve rakip $200 ile all-in gidiyor — pot büyüklüğünde bir bahis, yani artık sadece 2:1 alıyorum ve **%33**'e ihtiyacım var. Ama **tek kart kala floşum sadece %19,6** (yalnızca 9 kupayı sayıyorum — pot büyüklüğünde bir all-in'e karşı asımı ya da papazımı eşlemek çoğu zaman yine kaybettirir, o yüzden overcard'lar temiz out değil). Doğrudan fiyat fold diyor; implied odds'um da artık sıfır, çünkü rakip all-in ve bana daha fazla ödeyemez. Böyle boş bir turn'de all-in giden set'lere ve iki çiftlere karşı %19,6 en iyi ihtimal — set'e karşı 2♥ ve 3♥ board'u eşleyip elini full house'a (ya da kareye) çevirir, geriye 7 temiz out kalır (göremediğim 46 karttan 7'si, yaklaşık %15,2 — onun iki kartını da düşersek 7 ÷ 44, yaklaşık %15,9) — range'ine birkaç top pair eli sızsa bile overcard'lar call'u ancak başa baş civarına çeker. ==r:Fold== — ve "umut"un bana eskiden bir stack'e mal olduğu tam o spot.
 
 ---
 
