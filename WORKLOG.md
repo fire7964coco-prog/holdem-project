@@ -1,3 +1,8 @@
+## 2026-10-15 (5) — 텔레그램 로그인 ③ 실측 · MA-561 회신 MB-338
+
+- ③ 스크래치 Playwright로 `custom:telegram` authorize → 사장님 폰 승인 → 회원 생성(`1d194faa`). 저장값은 사장님 허락 받아 service role 읽기 전용 조회. U4 닫힘 · 🔴 U1 = 숫자 텔레그램 ID·username·picture 미수신(`sub`는 별개 20자리 값) → 봇 DM용 chat_id는 Start 딥링크 등 별도 경로 필요. 가로채기 실수로 승인 2회(Playwright route는 리디렉트 요청을 못 잡는다 · localhost는 허용 목록 밖이라 사이트 루트로 떨어짐). 상세 = `docs/telegram-login-plan.md` «③ 실측» · 커밋 `d11d0331`.
+- MA-561: hi blind-battle-connected-board L191 주체 교체 정정(형제 11로케일 grep = hi만) · ② EN-먼저 = CH-8 ⏸ · ③ ACK → queue §2-CH CH-7·8 · MB-338.
+
 ## 2026-10-15 (4) — 텔레그램 로그인 ①② 완료(사장님 화면 안내)
 
 - 컴퓨터 유즈 도구 없음 · 아스트라(codex read-only)도 브라우저 조작 불가 → 캡처 보며 단계 안내. 봇 `@HoldemMasterBot` · BotFather 미니 앱에서 OIDC 전환 · Redirect·Trusted Origin 등록 · Supabase `custom:telegram` ENABLED. 크롬 자동완성이 구글 OAuth 키를 채운 것 발견해 교체. 상세 = `docs/telegram-login-plan.md` «✅ 진행 기록».

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "SB open और BB call के बाद 7♦6♦5♣ पर पहला action 9.6% bet और 90.4% check है। पिछले K♥T♦6♠ स्पॉट जैसा ही pot, stack, SPR, उपलब्ध size और दोनों preflop ranges हैं। केवल बोर्ड बदला, और high cards की बढ़त मिट गई। Equity 49.6% बनाम 50.4% पर उलटती है तथा SB का EQR 85.3% रह जाता है।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-10-15",
   masterUpdated: "2026-10-02",
   readTime: "10 मिनट",
   emoji: "🪜",
@@ -188,7 +188,7 @@ Sets इसका अपवाद हैं। दोनों के पास 
 ## टेबल पर क्या ध्यान रखें?
 
 - **“Blind battle है, तो bet” को नियम न बनाएँ।** पिछले 67.4% और यहाँ 9.6% को बोर्ड ने अलग किया, सीट ने नहीं। SB से open किया हो, फिर भी 5, 6, 7, 8 जैसे low connected बोर्ड caller की range को पहल दे सकते हैं।
-- **Overpair को बड़ा pot बनाने की पर्याप्त वजह न मानें।** SB के 42 overpair कॉम्बो BB से साढ़े तीन गुने हैं, पर प्रतिद्वंद्वी के 42 कॉम्बो उसे पहले ही हराते हैं। यह अपने-आप दो-तीन barrels या stack-off वाला हैंड नहीं बनता। यह एक छोटे bet का सामना करने के बारे में दावा नहीं है; मुद्दा **पूरे stack का फ़ैसला अपने-आप न करना** है। ⚠ Raise आते ही fold भी मत करें। प्रतिद्वंद्वी में 24.9% open-enders, 23.8% gutshots और 3.7% combo draws हैं; raising range में bluffs भी हो सकते हैं। Draw-heavy range के raise पर हर overpair fold करना खुद exploitable है। **Stack-off न करना और fold करना अलग हैं।** Bet के बाद raise वाला node यहाँ नहीं है; उसकी आवृत्ति नहीं मिली। सीरीज़ में यह बात बार-बार आती है कि [connected बोर्ड preflop aggressor की बढ़त कम कर सकता है](/hi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-hi.webp")।
+- **Overpair को बड़ा pot बनाने की पर्याप्त वजह न मानें।** SB के 42 overpair कॉम्बो BB से साढ़े तीन गुने हैं, पर प्रतिद्वंद्वी के 42 कॉम्बो उसे पहले ही हराते हैं। यह अपने-आप दो-तीन barrels या stack-off वाला हैंड नहीं बनता। यह SB के एक बार छोटा bet लगाने के ख़िलाफ़ तर्क नहीं है; मुद्दा **पूरे stack का फ़ैसला अपने-आप न करना** है। ⚠ Raise आते ही fold भी मत करें। प्रतिद्वंद्वी में 24.9% open-enders, 23.8% gutshots और 3.7% combo draws हैं; raising range में bluffs भी हो सकते हैं। Draw-heavy range के raise पर हर overpair fold करना खुद exploitable है। **Stack-off न करना और fold करना अलग हैं।** Bet के बाद raise वाला node यहाँ नहीं है; उसकी आवृत्ति नहीं मिली। सीरीज़ में यह बात बार-बार आती है कि [connected बोर्ड preflop aggressor की बढ़त कम कर सकता है](/hi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-hi.webp")।
 - **Ace-high को अपने-आप ताक़त न समझें।** SB की एक-चौथाई range ace-high है। उसके **तत्काल draw-विहीन** हैंड pair बनाकर सुधर सकते हैं, जबकि प्रतिद्वंद्वी के straight draws सीधे straight बना सकते हैं। सुधार की संभावना ही नहीं, **सुधार का मूल्य** भी अलग है। यह सीमा सभी ace-high पर न लगाएँ: A4 और A8 यहाँ open-ended हैं, और A♦x♦ हैंडों के पास flush draw है। कुल equity 49.6% इस पूरी बनावट का नतीजा है।
 - **Check के बाद की योजना पहले बनाएँ।** 90.4% check करने के बाद BB के bet पर कौन call और कौन [check-raise](/hi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-hi.webp") करेगा, अगला प्रश्न है। ⚠ **उसका उत्तर इस गणना में नहीं है।** अभ्यास स्पॉट केवल **flop का पहला action** दिखाता है; BB की bet और SB की check-raise आवृत्ति नहीं। सीरीज़ में low-rainbow उदाहरण के लिए अलग से check-raise solve हुआ था, **पर भूमिकाएँ अलग हैं**: वहाँ BB caller, BTN के विरुद्ध खेलता है।
 

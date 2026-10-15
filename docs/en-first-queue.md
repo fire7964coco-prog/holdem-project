@@ -1289,7 +1289,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CG-2 통지 EN-먼저 | game-order L59 Call 괄호 «if nobody has raised yet»에 라이브 스트래들 한정 없음(B 165·174 · 같은 글 L258 «raised or straddled») · L60 Raise «more than the big blind» 같은 꼴 · hi L58·tr L51 동형 | 🪶 CE-6 전파 때 함께(EN L59·L60 먼저 → 사본 grep 뒤 로케일) |
 | 참고 | MA-554 «ar MA-550 ③ 남음» = 기준 `bb1382cd` 시점 — `c67e1afe`(MB-334)에서 이행됨 | ✅ MA-560이 해소 확인 |
 
-### 2-CH. 우편함 수신분 — MA-555(hi R3 gto) · MA-556(tr R3 prob-gloss) · MA-557(ar-a R2) · MA-558(ar-b R2 · ar 13편 끝) · MA-560(MB-334·335 재판정 · 요청 0) · 등재 2026-10-15
+### 2-CH. 우편함 수신분 — MA-561(hi R4 gto · 등재 10-15 (4)) · MA-555(hi R3 gto) · MA-556(tr R3 prob-gloss) · MA-557(ar-a R2) · MA-558(ar-b R2 · ar 13편 끝) · MA-560(MB-334·335 재판정 · 요청 0) · 등재 2026-10-15
 
 근거 `홀덤검수/reports/검수-{hi-gto-r3-경량,tr-r3-prob-gloss,ar-a-r2-rules-b,ar-b-r2-strat}-2026-10-14/hq-reverify/HQ-REPORT.md` · `reports/2026-10/검수-MB334-2026-10-15/REPORT.md`.
 
@@ -1300,6 +1300,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CH-3 ar (MA-557) | hand-rankings 도입 괄호 «ينقلب ترتيب يدين فقط» — 7장에서 HC가 1P·2P 둘 다보다 드묾 | ✅ «فتتقاطع بعض التكرارات — … أندر من الزوج الواحد ومن الزوجين» |
 | CH-4 ar (MA-558 A①~④) | strategy 직답 닫힌 목록 «كلها» · 요약 «ولا تفتتح بالمجاراة» 범위 · «تحتاج إلى» · positions FAQ 블라인드 «قبل الطاولة كلها» HU 한정 | ✅ «وفي الكاش جيم بعمق ستاك عادي، أبرز الاستثناءات … ويُضاف إليها إكمال السمول بلايند» · «بعمق الكاش جيم العادي» · «تفضّل» · «(عدا الهيدز أب)» |
 | CH-5 EN-먼저 대기 | MA-555 ② paired «more than any two-pair or high-card hand»(+9로케일 · EN 원장 #63 재처분 뒤) · MA-558 (B) c-bet A-high 건조 처방 ↔ 솔버 절(13로케일 · EN 원장 재판정 뒤) | ⏸ 검수장 EN 원장 확정 신호 오면 EN+형제 일괄 |
+| CH-7 hi (MA-561 ①) | blind-battle-connected-board L191 «एक छोटे bet का सामना करने के बारे में» — EN «not an argument against a single small bet»(SB 자신의 bet 예외)이 «상대 bet을 마주함»으로 주체 교체(RISKY 낮음) · 형제 11로케일(ko·de·es·fr·id·ja·ms·pt·vi·zh·zh-hant) grep = 주체 유지, hi만 | ✅ «यह SB के एक बार छोटा bet लगाने के ख़िलाफ़ तर्क नहीं है» · updated 10-15 |
+| CH-8 EN-먼저 대기 (MA-561 ②) | EN low-board-check-raise L363 FAQ «delete 14.9% of its range with nothing to replace it» — 14.9%는 BB 노드 raise 빈도(레인지 몫 아님) · raise 막으면 콤보는 call/fold로 재배정(«nothing to replace it» 메커니즘) · EN 원장 행 없음 | ⏸ 검수장 EN 원장 처분 오면 EN+형제 일괄 |
 | CH-6 남김 | MA-556 통지 1(probability «Rarity is the whole reason» = CF-6과 같은 건)·3(레이크 무전제·implied 독해·C-bet last·PFR 분모·HJ 분류) · MA-557 ①~⑥(tiebreak FAQ chop 팟별 · showdown 머크 비올인 · H4H 예외 · 무경합 선택 공개 · 사이드팟 정의 · 47-A) + ar 🪶 5 · MA-558 (C) 5 · MA-560 ①(betting FAQ 47-A 한 구 = MA-557 ⑥ 동형) ②(tr «ya da daha yüksek bir kent» 선택) | 🪶 판단 대상 — 라벨 아님 · 고치면 EN+형제 함께 |
 
 
