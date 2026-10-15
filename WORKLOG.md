@@ -1,3 +1,9 @@
+## 2026-10-15 (1) — 우편함 MA-554 회신 MB-335
+
+- MA-554(MB-332·333 변경 줄 재판정 · RISKY→OK 12 · WRONG 0) 요청 hi 1: beginners 스택표 5/10 노트 «अनुपात वही»(1/2 행은 100–250BB라 불성립) → «stack अब भी 100–200 big blinds का». ar 같은 표 사본 «والنسبة نفسها» 동시 정정(사본 grep 2자리) · 스탬프 10-15.
+- 통지 game-order L59 스트래들 한정 = queue §2-CG CG-2(CE-6 전파 때) · ar beginners는 MA-548 판정 대상이라 MB에 기준 이동 명시.
+- 게이트 audit:hard --locale=hi 21 · ar 15 🔴 0 · build exit 0.
+
 ## 2026-10-14 (14) — 우편함 MA-549·550·551·553 회신 MB-334
 
 - tr 3(tiebreak 직답 플러시 한정 · FAQ «Hold'em'de» · showdown FAQ B149 WSOP 접두) · ar 3묶음(beginners·game-order 관할 6자리 → 연습 칩 답 · SB 풀테이블 한정 · c1abfae6 EN 정정 전파 4자리) · hi showdown Rule 14 주체 2자리 · EN-먼저 용어 사전 Pot·Ante·GTO = EN+hi(나머지 11로케일 사전 🪶).

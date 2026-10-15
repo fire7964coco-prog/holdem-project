@@ -1279,6 +1279,16 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CF-5 EN-먼저 (MA-553 ②③④) | 용어 사전 Pot «winner takes it all» · Ante «posted by every player»·«only two» · GTO «can't be beaten» | ✅ EN `glossary-data.ts` + hi `dict.ts` (사이드팟 별도 · BBA = BB 혼자 · «usually two» · 헤즈업 한정 + 3인 이상 보장 없음) · 🪶 **전파 잔여 11** = de es fr id ja ms pt tr vi zh zh-hant `glossary/dict.ts`(다음 도구 회차 때 · 사본 grep 먼저) |
 | CF-6 남김 | ar 🪶 SB «نصف» → «جزءًا»(beginners FAQ·betting) · blind BB 대기 선택지 · tr 고유 통지(MA-549 «통지») · EN-먼저 통지 = MA-549 6건 · MA-550 3건(game-order FAQ TDA 16 «and betting is complete» · beginners FAQ 프리플랍 · betting 표 1BB NL) · MA-551 ①~⑧(probability «Rarity is the whole reason» · «by the river» · pot-odds «turn alone»·19.6% 틀·«plus implied» · glossary GTO·PFR≤VPIP·cooler 약정 유지) · MA-553 통지(B149 표기 통일 · universally disliked · split 전제 · hi cooler 상자 2) · EN showdown FAQ «in any cash game … (Rule 149)»(MA-549 ③ 약한 통지) | 🪶 판단 대상 — 라벨 아님 · 고치면 EN+형제 함께 |
 
+### 2-CG. 우편함 수신분 — MA-554(MB-332·333 변경 줄 재판정 · RISKY→OK 12 · WRONG 0 · 새 RISKY 1 · 요청 hi 1 · 통지 EN-먼저 1) · 등재 2026-10-15
+
+근거 `홀덤검수/reports/2026-10/검수-MB332-333-2026-10-14/REPORT.md`.
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CG-1 hi ① | beginners 스택표 5/10 노트 «पर अनुपात वही (100–200 big blinds)» — 1/2 행 = 100–250BB라 «같은 비율» 불성립(hi 고유 · CE-1 대체 문면에서 유입) | ✅ «पर stack अब भी 100–200 big blinds का» · ➕ **ar 사본 1**(CF-2 같은 표 «والنسبة نفسها») → «والرصيد ما زال 100–200 بيغ بلايند» — 사본 grep = hi·ar 2뿐 |
+| CG-2 통지 EN-먼저 | game-order L59 Call 괄호 «if nobody has raised yet»에 라이브 스트래들 한정 없음(B 165·174 · 같은 글 L258 «raised or straddled») · L60 Raise «more than the big blind» 같은 꼴 · hi L58·tr L51 동형 | 🪶 CE-6 전파 때 함께(EN L59·L60 먼저 → 사본 grep 뒤 로케일) |
+| 참고 | MA-554 «ar MA-550 ③ 남음» = 기준 `bb1382cd` 시점 — `c67e1afe`(MB-334)에서 이행됨 | 검수장 다음 판정에서 확인 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
