@@ -191,8 +191,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      // ★2026-10-15 새 로고(스페이드+«holdemmaster» 붓글씨) — 탭 아이콘도 새 로고(사장님 «글씨 작아도 디자인용»).
+      //   favicon.svg(스페이드만)는 PDF 생성 스크립트가 쓰므로 파일은 남기고 여기서만 뺀다.
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [{ url: "/favicon-192.png", sizes: "192x192" }],
   },
