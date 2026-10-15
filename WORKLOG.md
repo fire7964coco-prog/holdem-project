@@ -1,3 +1,7 @@
+## 2026-10-15 (6) — 텔레그램 로그인 ④ 설계·SQL 초안
+
+- `supabase/telegram-links.sql` 신설 — `telegram_links`(chat_id·토큰 해시·차단·동의 열) + `telegram_link_consume()` · RLS on 정책 0. 핸드오프 초안의 `sub` 열은 `auth.identities`와 중복이라 뺌 · Start 연결은 로그인 수단 무관 → U2 불필요. PGlite 0.2.17로 두 번 실행·소비·재전송·만료·이동·제약 시험 통과(옛 행 이름 잔존 발견 → 비우게 수정). 딥링크·웹훅 헤더·my_chat_member 사양 원문 확인. ▶ 사장님 SQL RUN + Vercel env 2종 → ⑤. 상세 = `docs/telegram-login-plan.md` «④ 설계 수정안».
+
 ## 2026-10-15 (5) — 텔레그램 로그인 ③ 실측 · MA-561 회신 MB-338
 
 - ③ 스크래치 Playwright로 `custom:telegram` authorize → 사장님 폰 승인 → 회원 생성(`1d194faa`). 저장값은 사장님 허락 받아 service role 읽기 전용 조회. U4 닫힘 · 🔴 U1 = 숫자 텔레그램 ID·username·picture 미수신(`sub`는 별개 20자리 값) → 봇 DM용 chat_id는 Start 딥링크 등 별도 경로 필요. 가로채기 실수로 승인 2회(Playwright route는 리디렉트 요청을 못 잡는다 · localhost는 허용 목록 밖이라 사이트 루트로 떨어짐). 상세 = `docs/telegram-login-plan.md` «③ 실측» · 커밋 `d11d0331`.

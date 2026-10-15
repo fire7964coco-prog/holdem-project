@@ -37,7 +37,16 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
   - 부수 관찰: `redirect_to=http://localhost:…`는 허용 목록 밖이라 사이트 URL 루트(`/?code=`)로 떨어진다(로컬 시험 시 허용 목록 추가 필요). 라이브 `/auth/callback`은 verifier 없는 code를 받으면 `/login?error=auth` — 정상 동작.
   - U2(기존 회원에 연결)는 미시험.
 - ✅ 사장님 결정(10-15): **ⓐ 봇 Start 딥링크로 숫자 ID 확보** · 시험 회원 `1d194faa`(운영 계정) **그대로 둔다**.
-- ▶ 다음 = ④ 설계 수정안: `telegram_links`에 `sub`(text · OIDC) + `chat_id`(bigint · Start 뒤 채움) + `link_token`(1회용·만료) · 봇 업데이트 수신 = 서버 라우트(웹훅 · `secret_token` 헤더 검증) → 봇 토큰이 Vercel env에 있어야 함(⑧을 앞당김 · 사장님 몫). SQL 초안 → 사장님 SQL Editor.
+### ④ 설계 수정안 (10-15 · SQL 초안 = `supabase/telegram-links.sql`)
+- **연결은 로그인 수단과 무관하다.** 로그인한 회원이면 Google·카카오·이메일·텔레그램 누구나 «텔레그램 연결» → 1회용 토큰 → `t.me/HoldemMasterBot?start=<토큰>` → Start → 웹훅이 `from.id`를 그 회원에 붙인다. → **U2(기존 회원 linkIdentity)는 알림 목적엔 불필요**해졌다(텔레그램 로그인은 «가입 편의»로만 남음).
+- 핸드오프의 «`sub` 열»은 **뺐다** — `sub`는 이미 `auth.identities`(provider `custom:telegram`)에 있다. 두 곳에 두면 갈라진다. 필요하면 조인.
+- 테이블 `telegram_links`(회원 1행): `chat_id`(bigint unique · Start 뒤) · `tg_username`·`tg_name`(문의 중계 표시) · `link_token_hash`(sha256 hex · 원문 저장 안 함)+`link_token_expires_at`(15분) · `linked_at` · `bot_blocked_at` · ⑥용 `marketing_consent_at`·`night_consent_at`·`consent_withdrawn_at`(null = 미동의 · 문구는 U3 뒤). RLS on + 정책 0(participation.sql 원칙).
+- 함수 `telegram_link_consume(hash, chat_id, username, name)` — security definer · service_role만 실행. 토큰 행 `for update` 잠금 → 웹훅 재전송으로 같은 토큰 두 번 소비 불가 · 같은 텔레그램 계정이 다른 회원에 붙어 있으면 그쪽을 비우고 옮김(마지막 Start가 이김).
+- 시험(10-15 · PGlite 0.2.17 스크래치 · 두 번 실행 안전): 소비 ✅ · 재전송 null ✅ · 만료 null ✅ · 다른 회원으로 이동 + 옛 행 이름 비움 ✅ · 해시 형식·야간⊂광고 동의·음수 chat_id 거부 ✅ · RLS true · 실행 권한 = postgres·service_role.
+- 서버 라우트(⑤에서 작성): ⓐ `POST /api/telegram/link`(로그인 필수 · 토큰 32바이트 base64url = 43자 · 원문 사양 «A-Z, a-z, 0-9, _ and -» · «up to 64 characters») ⓑ `POST /api/telegram/webhook` — 헤더 `X-Telegram-Bot-Api-Secret-Token` 상수 시간 비교 · `chat.type = private`만 · `/start <토큰>` → rpc · `my_chat_member`(원문 «received only when the bot is blocked or unblocked») → `bot_blocked_at`. 미들웨어 matcher(`/`·`/login`·`/post`·`/auth`)에 `/api` 없음 = 웹훅이 미들웨어를 안 탄다.
+- 🔴 «kicked» 상태 이름은 원문 미열람(API 문서 10만 자 뒤) → ⑤ 실측(봇 차단·해제 1회)으로 확인.
+- 🪶 스코프 `telegram:bot_access`는 Start 방식에선 불필요 — 지워도 되는지는 ⑤ 뒤 판단(동의 화면 문구가 줄어듦).
+- **사장님 몫(⑤ 전 선행)**: ① 이 SQL을 SQL Editor에서 RUN + 파일 끝 확인 3줄 ② Vercel env `TELEGRAM_BOT_TOKEN`·`TELEGRAM_WEBHOOK_SECRET`(A-Z a-z 0-9 _ - 1~256자 · 제가 만들어 드릴 수 있음) ③ 배포 뒤 브라우저 주소창으로 `setWebhook` 1회(토큰이 대화에 안 나오게 — 주소 틀은 ⑤에서 드림).
 
 ### ① 사장님 준비 안내 (공식 문서 문장 기준 · 10-13)
 1. 텔레그램에서 **@BotFather** → `/newbot` → 봇 이름(예: HoldemMaster) · 아이디(…bot으로 끝나야 함) → **봇 토큰**이 나온다(비밀 · 채팅에 붙이지 말고 저에게 «받았다»만).
