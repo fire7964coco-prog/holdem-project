@@ -1,3 +1,7 @@
+## 2026-10-15 (12) — 솔버 회원 전용 범위 재확인 · MB-344
+
+- 사장님 «회원 전용 켜면 불편 → 무료로 쓰다 림프 팟에서 텔레그램 가입?» → 기존 확정(새 고급 기능만·림프 팟 첫 대상)과 같은 판임을 설명 · 텔레그램 전용 가입은 기각하고 «공급자 제한 없음 + 가입 직후 텔레그램 연결 권유»로 사장님 동의. factsheet 83행·MB-344.
+
 ## 2026-10-15 (11) — 로그인 공유(SSO) 본체 몫 · 공용 쿠키 · MB-343
 
 - 쿠키를 `.holdemmaster.com` 공용으로(운영 호스트만 · localhost·미리보기 host-only). **이름을 `sb-holdemmaster-auth-token`으로 바꿈** — 옛 `sb-idikicmooauorjurdkzh-auth-token`은 www 전용(host-only)이라 같은 이름으로 domain 쿠키를 더 만들면 브라우저가 둘 다 보내고 낡은 쪽이 이겨 회전된 refresh token을 다시 쓸 위험.
