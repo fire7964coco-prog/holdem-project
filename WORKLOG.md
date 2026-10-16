@@ -1,3 +1,10 @@
+## 2026-10-16 (18) — MA-591·592·593 회신+이행 · MB-365
+
+- MA-591: es 4편 «pérdida de EV (bb)» · hi 4편 «EV नुकसान (bb)»(앱 GuidePage 축어).
+- MA-592: /privacy 보관 범위 한정 · 수집 시점 «봇 차단·해제» · 봇 alreadyLinked 16 버튼 이름 인용 제거(«프로필의 텔레그램 카드에서») · 보조: DELETE 선조회 error → 503 · consume ⓐ 옛 행 bot_blocked_at null(`supabase/telegram-consent.sql` · 사장님 RUN 필요).
+- MA-593(EN-먼저 · 사장님 결재): paired-board-strategy L297 «as a class / on average» + 동문 11로케일 · 스탬프 10-16.
+- 게이트: audit:hard 5편 🔴 0 · 빌드 exit 0.
+
 ## 2026-10-16 (17) — it 도구 5 배포 · MB-364
 
 - 사장님 «1번 하자»(도구 먼저 배포). push `300364cf` → 라이브 Playwright 5페이지 200 · lang it · robots «index, follow» · canonical 자기 · hreflang 16~18 · 시뮬레이터 «Sconfitta» 반영 확인.

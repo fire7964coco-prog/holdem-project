@@ -154,11 +154,13 @@ export async function DELETE(req: Request) {
   if (!userId) return json({ ok: false, error: "login" }, 401);
   const db = createAdminClient();
   if (!db) return json({ ok: false, error: "unavailable" }, 503);
-  const { data: row } = await db
+  const { data: row, error: readError } = await db
     .from("telegram_links")
     .select("chat_id, marketing_consent_at, consent_tz")
     .eq("user_id", userId)
     .maybeSingle();
+  // 선조회 실패를 «동의 없음»으로 읽으면 철회 시각이 빠진다(MA-592 ① 보조) → 지우지 않고 실패로 돌려준다
+  if (readError) return json({ ok: false, error: "unavailable" }, 503);
   const now = new Date();
   const hadConsent = !!(row?.chat_id && row.marketing_consent_at);
   const { error } = await db

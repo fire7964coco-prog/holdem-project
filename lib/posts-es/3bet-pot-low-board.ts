@@ -181,7 +181,7 @@ La razón es dónde viven los sets. **El botón es el único jugador que puede t
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board bajo y seco" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board bajo y seco" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y la **pérdida de EV (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
 
 Busca la **fila de "Trío" que falta** en el panel de Manos. Después cambia el jugador a IP (BTN (caller)) y aparece con 6.3%. Esa sola línea es toda la historia de quién tiene la parte alta de este board. Gratis, sin instalar nada y sin cuenta.
 

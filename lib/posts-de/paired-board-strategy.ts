@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf dem niedrigen gepaarten Flop 6♣6♦3♥ checkt der Big Blind 97,0%. Das Seltsame daran: Er hält mehr Trips als der Button – 26 Combos mit einer Sechs gegen 20. Er checkt trotzdem, weil nur 18,4% seiner Range mehr als das Paar des Boards haben, und die übrigen 81,6% sind ein Duell der hohen Karten, das der Button gewinnt. Was wirklich an Wert gewinnt, ist jedes Pocket Pair über einer Sechs – TT hat hier 76,0% Equity.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -214,7 +214,7 @@ Wofür diese Rechnung also taugt, ist nicht „triff die 75%“, sondern **„fo
 ## Was ändert sich am Tisch?
 
 - **Unterschätze mittlere Pocket Pairs auf niedrigen gepaarten Boards nicht.** 77 bis TT haben hier 68%–76% Equity, die Spitze der Calling-Range. Aber der Boden ist real: 44 und 55 schlagen immer noch den Range-Durchschnitt, während 22 nur zwei Drittel dessen behält, was seine Equity wert ist, weil es unter beiden Rängen des Boards liegt.
-- **Gefloppte Trips sind kein Grund anzuspielen.** Die Sechsen spielen in 6,8% der Fälle an – öfter als jede Hand mit Zwei Paaren oder nur einer hohen Karte, nur seltener als die 33-Full-Houses (8,8%) und die einzige Vierling-Combo (9,6%) – und sie checken trotzdem in neun von zehn Fällen. Ein Lead bringt nur die Hände zum Folden, die du ohnehin schlägst; ein Check lässt diese Hände das Geld selbst in den Pot bringen und lässt dir einen Check-Raise oder einen Call-down offen. ⚠ Was diese Berechnung dir nicht sagen kann, ist, *wie viel* mehr die Check-Raise-Linie einbringt: Der Lernspot rechnet **nur die erste Aktion am Flop** vor, die C-Bet-Frequenz des Buttons und ein EV für den Check-Raise existieren darin schlicht nicht.
+- **Gefloppte Trips sind kein Grund anzuspielen.** Die Sechsen spielen als Gruppe im Schnitt in 6,8% der Fälle an – öfter als die Gruppen mit Zwei Paaren oder nur einer hohen Karte, nur seltener als die 33-Full-Houses (8,8%) und die einzige Vierling-Combo (9,6%) – und sie checken trotzdem in neun von zehn Fällen. Ein Lead bringt nur die Hände zum Folden, die du ohnehin schlägst; ein Check lässt diese Hände das Geld selbst in den Pot bringen und lässt dir einen Check-Raise oder einen Call-down offen. ⚠ Was diese Berechnung dir nicht sagen kann, ist, *wie viel* mehr die Check-Raise-Linie einbringt: Der Lernspot rechnet **nur die erste Aktion am Flop** vor, die C-Bet-Frequenz des Buttons und ein EV für den Check-Raise existieren darin schlicht nicht.
 - **Folde A-High nicht gegen eine einzige kleine Bet.** 79,7% der Range des Buttons haben ebenfalls nichts über das Paar des Boards hinaus – A-High 31,9%, K-High 15,1% und keine Made Hand 32,7%.
 - **Dein Kicker entscheidet die Hand.** Nur drei Combos schlagen Trips direkt – die drei Full Houses mit 33. (Ein Vierling fällt weg: Sobald du selbst eine Sechs hältst, kann es 6♠6♥ nicht geben, aus den vier Combos des Full-House-Abschnitts werden von deinem Platz aus also drei.) Und selbst das gilt nur, wenn dein Kicker ein Ass ist. Der zweite Kicker ist durch die 3 des Boards festgelegt, die eine Karte neben deiner Sechs ist also die ganze Hand: Mit 76s dominieren dich A6, K6, Q6 und 86 des Buttons allesamt. Trips mit schwachem Kicker sind ein Bluffcatcher, keine Hand, mit der du einen Pot aufbaust.
 

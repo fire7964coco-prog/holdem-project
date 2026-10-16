@@ -95,7 +95,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -294,7 +294,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 ## What changes at the table?
 
 - **Do not undervalue middle pocket pairs on low paired boards.** 77 through TT are 68–76% equity here, the top of the calling range. But the floor is real: 44 and 55 still beat the range average, while 22 keeps only two-thirds of what its equity is worth, because it pairs below both board ranks.
-- **Flopping trips is not a reason to lead.** The sixes lead 6.8% — more than any two-pair or high-card hand, less only than the 33 full houses (8.8%) and the single quads combo (9.6%) — and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
+- **Flopping trips is not a reason to lead.** As a class, the sixes lead 6.8% on average — more than the two-pair or high-card classes, less only than the 33 full houses (8.8%) and the single quads combo (9.6%) — and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
 - **Do not fold ace-high to one small bet.** 79.7% of the button’s range has nothing beyond the board’s pair either — ace-high 31.9%, king-high 15.1% and no made hand 32.7%.
 - **Your kicker decides the hand.** Only three combos beat trips outright — the three 33 full houses. (Quads is off the table: once you hold a six yourself, 6♠6♥ cannot exist, so the four combos counted in the full-house section become three from your seat.) And even that holds only when your kicker is an ace. The second kicker is fixed by the board's 3, so the single card beside your six is the whole hand: with 76s the button's A6, K6, Q6 and 86 all have you dominated. Trips with a weak kicker is a bluff-catcher, not a hand to build a pot with.
 

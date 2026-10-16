@@ -17,7 +17,7 @@ export const POST: Post = {
   tldr: "Trên flop có đôi thấp 6♣6♦3♥, big blind check 97,0%. Điều lạ là nó cầm nhiều trips hơn button: 26 combo 6-x so với 20. Nó vẫn check, vì chỉ 18,4% range có gì đó hơn đôi trên board, còn 81,6% còn lại là cuộc đấu bài cao mà button thắng. Thứ thật sự lên giá là bất kỳ pocket pair nào trên 6 — TT ở đây có 76,0% equity.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -210,7 +210,7 @@ Vậy phép tính này có ích không phải ở chỗ "phải đạt 75%" mà 
 ## Ra bàn thật thì chơi khác gì?
 
 - **Đừng đánh giá thấp pocket pair tầm trung trên board có đôi thấp.** 77 đến TT có equity 68%–76% ở đây, là đỉnh của range call. Nhưng phần đáy là có thật: 44 và 55 vẫn vượt mức trung bình của range, còn 22 chỉ giữ được hai phần ba giá trị equity của nó, vì nó là đôi nằm dưới cả hai hạng trên board.
-- **Flop ra trips không phải lý do để lead.** Các tay có lá 6 lead 6,8% — nhiều hơn mọi tay hai đôi hay bài cao, chỉ ít hơn cù lũ 33 (8,8%) và combo tứ quý duy nhất (9,6%) — và chín trên mười lần chúng vẫn check. Lead chỉ đuổi đi những tay bạn vốn đã thắng; check để chính những tay đó tự bỏ tiền vào, và để lại cho bạn check-raise hoặc call đến cuối. ⚠ Điều lần tính này không cho biết là đường check-raise kiếm thêm *bao nhiêu*: Spot mẫu chỉ giải **hành động đầu tiên ở flop**, nên tần suất c-bet của button và EV của bất kỳ check-raise nào đơn giản là không có trong đó.
+- **Flop ra trips không phải lý do để lead.** Tính trung bình cả nhóm, các tay có lá 6 lead 6,8% — nhiều hơn nhóm tay hai đôi hay nhóm bài cao, chỉ ít hơn cù lũ 33 (8,8%) và combo tứ quý duy nhất (9,6%) — và chín trên mười lần chúng vẫn check. Lead chỉ đuổi đi những tay bạn vốn đã thắng; check để chính những tay đó tự bỏ tiền vào, và để lại cho bạn check-raise hoặc call đến cuối. ⚠ Điều lần tính này không cho biết là đường check-raise kiếm thêm *bao nhiêu*: Spot mẫu chỉ giải **hành động đầu tiên ở flop**, nên tần suất c-bet của button và EV của bất kỳ check-raise nào đơn giản là không có trong đó.
 - **Đừng fold A-high trước một cú bet nhỏ.** 79,7% range của button cũng chẳng có gì hơn đôi trên board — A-high 31,9%, K-high 15,1% và chưa thành bài 32,7%.
 - **Kicker quyết định ván bài.** Chỉ ba combo thắng thẳng trips — ba combo cù lũ 33. (Tứ quý thì loại khỏi bàn: một khi chính bạn cầm một lá 6, 6♠6♥ không thể tồn tại, nên bốn combo đếm ở phần cù lũ trở thành ba từ ghế của bạn.) Và ngay cả điều đó cũng chỉ đúng khi kicker của bạn là lá A. Kicker thứ hai bị cố định bởi lá 3 trên board, nên lá bài duy nhất bên cạnh lá 6 của bạn là toàn bộ ván bài: với 76s, A6, K6, Q6 và 86 của button đều đè bẹp bạn. Trips với kicker yếu là tay bắt bluff, không phải tay để xây pot.
 

@@ -195,7 +195,7 @@ La razón está en **quién te paga.** KK hace doble pareja con los ases del boa
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board con A pareado" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board con A pareado" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y la **pérdida de EV (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
 
 **Alterna entre este spot y el board pareado 6-6-3.** Los dos son boards pareados y las matrices tienen colores opuestos. Recorre los Spots de estudio una vez y queda una sola conclusión: mira primero no **qué board es**, sino **a qué rango se engancha este board**. Gratis, sin instalar nada y sin cuenta.
 

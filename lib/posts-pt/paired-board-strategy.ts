@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "No flop baixo pareado 6♣6♦3♥, o big blind dá check em 97,0%. O curioso é que tem mais trincas que o botão: 26 combos com um seis contra 20. Ainda assim, dá check porque apenas 18,4% do seu range tem algo além do par do board; os outros 81,6% disputam o pote com cartas altas, terreno em que o botão leva vantagem. Os pares de mão acima do seis ganham valor: TT tem 76,0% de equity neste spot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 min",
   emoji: "👯",
@@ -201,7 +201,7 @@ Essa conta serve para lembrar que **uma carta alta não é motivo suficiente par
 ## O que muda na prática?
 
 - **Não subestime pares de mão médios em flops baixos pareados.** De 77 a TT, a equity fica em 68–76% aqui, no topo do range de call. Mas há um limite: 44 e 55 ainda superam a média do range, enquanto 22 realiza apenas dois terços da sua parcela de equity, porque está abaixo dos dois valores do board.
-- **Acertar trips no flop não é motivo para sair apostando.** As mãos com um seis saem apostando em 6,8%, mais que qualquer mão de dois pares ou carta alta e menos apenas que os full houses de 33 (8,8%) e o único combo de quadra, 6♠6♥ (9,6%), e ainda dão check nove vezes a cada dez. Apostar tende a afastar mãos que você já vence; dar check permite que elas coloquem dinheiro no pote e deixa espaço para check-raise ou para pagar apostas. ⚠ O exemplo não informa *quanto* a mais a linha de check-raise rende: ele vai **apenas até a primeira decisão no flop**, sem frequência de c-bet do botão nem EV do check-raise.
+- **Acertar trips no flop não é motivo para sair apostando.** Em média, como grupo, as mãos com um seis saem apostando em 6,8%, mais que os grupos de dois pares ou carta alta e menos apenas que os full houses de 33 (8,8%) e o único combo de quadra, 6♠6♥ (9,6%), e ainda dão check nove vezes a cada dez. Apostar tende a afastar mãos que você já vence; dar check permite que elas coloquem dinheiro no pote e deixa espaço para check-raise ou para pagar apostas. ⚠ O exemplo não informa *quanto* a mais a linha de check-raise rende: ele vai **apenas até a primeira decisão no flop**, sem frequência de c-bet do botão nem EV do check-raise.
 - **Não folde A-high automaticamente contra uma aposta pequena.** 79,7% do range do botão também não tem nada além do par do board: A-high em 31,9%, K-high em 15,1% e sem mão feita em 32,7%.
 - **O kicker decide a força do seu trips.** Só três combos de uma categoria superior podem vencer sua trinca: os três full houses de 33. A quadra deixa de ser possível quando você segura um seis; portanto, os quatro combos contados antes viram três do seu ponto de vista. E só dizer “três combos me vencem” é correto se seu kicker for um ás. O segundo kicker vem do 3 do board, então a carta ao lado do seu seis decide a comparação: com 76s, você está dominado pelos A6, K6, Q6 e 86 do botão. Trips com kicker fraco funciona como mão para pegar blefes, não como motivo automático para aumentar o pote.
 

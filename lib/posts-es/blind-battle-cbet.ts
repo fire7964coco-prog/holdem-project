@@ -219,7 +219,7 @@ El 96.1% de la ciega grande es la otra cara de la misma historia. **Tiene posici
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board K-T high" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board K-T high" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y la **pérdida de EV (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
 
 Mira primero las etiquetas de jugador de arriba: **"OOP (SB (open-raiser))"**. En cuanto veas que se diferencia del "OOP (BB (caller))" de los spots anteriores, lo que este artículo llama "cambió el papel" se entiende al instante. Gratis, sin instalar nada y sin cuenta.
 

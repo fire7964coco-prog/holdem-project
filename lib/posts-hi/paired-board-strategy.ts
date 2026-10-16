@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "6♣6♦3♥ पर BB 97.0% check करता है, हालांकि उसके पास Trips के 26 और BTN के पास 20 कॉम्बो हैं। BB की सिर्फ 18.4% range बोर्ड के pair से आगे कुछ बनाती है। बाकी 81.6% में ऊँचे कार्ड की अहमियत बढ़ती है और BTN आगे है। छह से ऊँचे pocket pairs की कीमत बढ़ती है: TT की equity 76.0% है।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 मिनट",
   emoji: "👯",
@@ -200,7 +200,7 @@ Paired board पर कोई सचमुच सिर्फ A-high नही�
 ## टेबल पर क्या बदलें?
 
 - **Low paired board पर बीच के pocket pairs को कम न आँकें।** 77 से TT की equity यहाँ 68–76% है, calling range का ऊपरी हिस्सा। नीचे फर्क वास्तविक है: 44 और 55 range के औसत से ऊपर EV देते हैं, जबकि 22 अपनी equity के मूल्य का सिर्फ लगभग दो-तिहाई रख पाता है, क्योंकि वह दोनों board ranks से नीचे pair है।
-- **Flop पर Trips मिलना lead करने का अपने-आप कारण नहीं।** 6x 6.8% lead करते हैं: किसी भी two pair या high-card हैंड से ज़्यादा, और उनसे ऊपर सिर्फ 33 के Full House (8.8%) और अकेला Quads कॉम्बो 6♠6♥ (9.6%) हैं। फिर भी वे करीब दस में नौ बार check करते हैं। Lead से कमजोर हैंड निकल सकते हैं; check उन्हें bet करने और आपको check-raise या call-down चुनने का मौका देता है। इस solve से check-raise line का अतिरिक्त EV नहीं निकाल सकते: अभ्यास स्पॉट सिर्फ **flop का पहला action** देता है; BTN की c-bet frequency और check-raise EV इसमें नहीं हैं।
+- **Flop पर Trips मिलना lead करने का अपने-आप कारण नहीं।** 6x समूह के रूप में औसतन 6.8% lead करते हैं: two pair और high-card हैंड के समूहों के औसत से ज़्यादा, और उनसे ऊपर सिर्फ 33 के Full House (8.8%) और अकेला Quads कॉम्बो 6♠6♥ (9.6%) हैं। फिर भी वे करीब दस में नौ बार check करते हैं। Lead से कमजोर हैंड निकल सकते हैं; check उन्हें bet करने और आपको check-raise या call-down चुनने का मौका देता है। इस solve से check-raise line का अतिरिक्त EV नहीं निकाल सकते: अभ्यास स्पॉट सिर्फ **flop का पहला action** देता है; BTN की c-bet frequency और check-raise EV इसमें नहीं हैं।
 - **एक छोटी bet पर A-high को अपने-आप fold न करें।** BTN की भी 79.7% range बोर्ड के pair से आगे कुछ नहीं रखती: A-high 31.9%, K-high 15.1% और बना हुआ हैंड नहीं 32.7%।
 - **Trips का kicker अहम है।** जब आपके पास खुद छह है, तो 6♠6♥ असंभव है; पहले गिने चार Quads/Full House कॉम्बो अब सिर्फ तीन 33 Full House हैं। लेकिन केवल वही तीन आपसे आगे हैं, यह बात Ace kicker वाले Trips पर लागू है। बोर्ड का 3 दूसरा kicker है; आपके छह के साथ का कार्ड निर्णायक है। 76s हो तो BTN के A6, K6, Q6 और 86 भी आगे हैं। कमजोर kicker वाले Trips को बड़े pot की निश्चित value न मानें; वे bluff-catcher की भूमिका में आ सकते हैं।
 

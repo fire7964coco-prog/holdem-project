@@ -224,7 +224,7 @@ El 9.6% se construye mezclando un poco de valor con unos cuantos proyectos. 88 e
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Bajo conectado, two-tone" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Bajo conectado, two-tone" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y la **pérdida de EV (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y del Reto del día se sincroniza entre tus dispositivos.
 
 **Alterna entre este spot y "Board K-T high"**, el anterior. Las etiquetas de jugador dicen "OOP (SB (open-raiser))" en los dos, el bote y el stack son idénticos — y la matriz cambia de color por completo. Es la demostración más corta de esta serie de lo que hace de verdad un board. Gratis, sin instalar nada y sin cuenta.
 

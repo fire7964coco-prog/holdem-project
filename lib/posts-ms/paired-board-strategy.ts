@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 minit",
   emoji: "👯",
@@ -201,7 +201,7 @@ Maka kegunaan pengiraan ini bukan "capai 75%", tetapi **"jangan fold semata-mata
 ## Apakah yang berubah semasa bermain?
 
 - **Jangan merendahkan nilai pocket pair sederhana pada board berpasangan rendah.** 77 hingga TT mempunyai equity 68–76%, di bahagian teratas range call. Tetapi batas bawah itu nyata: 44 dan 55 masih melebihi purata range, manakala 22 hanya merealisasikan dua pertiga nilai equity kerana pairnya lebih rendah daripada kedua-dua rank board.
-- **Mendapat trips pada flop bukan alasan untuk lead.** Kumpulan enam lead 6.8% — lebih kerap daripada mana-mana tangan two pair atau kad tinggi, dan hanya kurang daripada full house 33 (8.8%) serta satu-satunya kombo quads 6♠6♥ (9.6%) — dan masih check kira-kira sembilan daripada sepuluh kali. Lead membuat banyak tangan lebih lemah fold; check membolehkan tangan itu memasukkan cip sendiri, serta membuka pilihan check-raise atau call-down. ⚠ Solve ini tidak menunjukkan *berapa banyak* tambahan EV bagi laluan check-raise: ia hanya mengira **tindakan pertama flop**, jadi kekerapan c-bet BTN dan EV check-raise tidak tersedia.
+- **Mendapat trips pada flop bukan alasan untuk lead.** Secara purata, kumpulan enam lead 6.8% — lebih kerap daripada kumpulan tangan two pair atau kad tinggi, dan hanya kurang daripada full house 33 (8.8%) serta satu-satunya kombo quads 6♠6♥ (9.6%) — dan masih check kira-kira sembilan daripada sepuluh kali. Lead membuat banyak tangan lebih lemah fold; check membolehkan tangan itu memasukkan cip sendiri, serta membuka pilihan check-raise atau call-down. ⚠ Solve ini tidak menunjukkan *berapa banyak* tambahan EV bagi laluan check-raise: ia hanya mengira **tindakan pertama flop**, jadi kekerapan c-bet BTN dan EV check-raise tidak tersedia.
 - **Jangan automatik fold Ace-high kepada satu bet kecil.** 79.7% range BTN juga tidak mempunyai sesuatu melebihi pair board: Ace-high 31.9%, King-high 15.1% dan Tiada made hand 32.7%.
 - **Kicker menentukan kekuatan trips anda.** Tiga kombo sahaja menewaskan trips tanpa bergantung pada kicker: tiga full house 33. (Quads tidak lagi mungkin bagi lawan selepas anda sendiri memegang satu enam. Empat kombo dalam bahagian terdahulu menjadi tiga dari sudut tangan anda.) Namun, hanya trips dengan kicker Ace selamat daripada trips lebih tinggi. Kicker kedua ditetapkan oleh tiga pada board, jadi kad di sebelah enam anda sangat menentukan. Dengan 76s, A6, K6, Q6 dan 86 BTN semuanya mendominasi anda. Trips dengan kicker lemah ialah bluff-catcher, bukan alasan untuk membesarkan pot tanpa syarat.
 

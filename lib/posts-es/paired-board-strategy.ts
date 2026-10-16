@@ -27,7 +27,7 @@ export const POST: Post = {
   tldr: "En el board pareado bajo 6♣6♦3♥ la ciega grande hace check el 97.0%. Lo raro es que tiene más trips que el botón: 26 combos con un seis contra 20. Hace check igual, porque solo el 18.4% de su rango tiene algo más allá de la pareja del board, y el otro 81.6% es una pelea de cartas altas que gana el botón. Lo que sí gana valor es cualquier par servido por encima del seis — TT tiene un 76.0% de equity aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -228,7 +228,7 @@ Para lo que sirve esta aritmética, entonces, no es para "llegar al 75%" sino pa
 ## ¿Qué cambia en la mesa?
 
 - **No subestimes los pares servidos medianos en boards pareados bajos.** De 77 a TT tienes entre 68 y 76% de equity aquí, la parte más alta del rango que paga. Pero el piso es real: 44 y 55 siguen por encima del promedio del rango, mientras que 22 conserva solo dos tercios de lo que vale su equity, porque liga por debajo de las dos cartas del board.
-- **Ligar trips no es motivo para apostar primero.** Los seises apuestan primero el 6.8% — más que cualquier doble pareja o carta alta, y menos solo que los full houses de 33 (8.8%) y el único combo de quads, 6♠6♥ (9.6%) — y aun así hacen check nueve de cada diez veces. Apostar primero solo hace foldear a las manos que ya le ganas; hacer check deja que esas manos metan el dinero solas, y te deja un check-raise o un call-down. ⚠ Lo que este solve no te puede decir es *cuánto* más gana la línea de check-raise: el spot de estudio resuelve **solo la primera acción del flop**, así que la frecuencia de c-bet del botón y cualquier EV de check-raise sencillamente no existen ahí dentro.
+- **Ligar trips no es motivo para apostar primero.** Los seises, como grupo, apuestan primero de media el 6.8% — más que los grupos de doble pareja o carta alta, y menos solo que los full houses de 33 (8.8%) y el único combo de quads, 6♠6♥ (9.6%) — y aun así hacen check nueve de cada diez veces. Apostar primero solo hace foldear a las manos que ya le ganas; hacer check deja que esas manos metan el dinero solas, y te deja un check-raise o un call-down. ⚠ Lo que este solve no te puede decir es *cuánto* más gana la línea de check-raise: el spot de estudio resuelve **solo la primera acción del flop**, así que la frecuencia de c-bet del botón y cualquier EV de check-raise sencillamente no existen ahí dentro.
 - **No foldees A-high ante una sola apuesta pequeña.** El 79.7% del rango del botón tampoco tiene nada más allá de la pareja del board — A-high 31.9%, K-high 15.1% y sin jugada 32.7%.
 - **Tu kicker decide la mano.** Solo tres combos le ganan de frente a los trips — los tres full houses de 33. (Los quads quedan fuera de la cuenta: en cuanto tú tienes un seis, 6♠6♥ no puede existir, así que los cuatro combos contados en la sección de full houses son tres desde tu asiento.) Y ni eso se sostiene si tu kicker no es un as. El segundo kicker lo fija el 3 del board, así que la única carta al lado de tu seis es toda la mano: con 76s, el A6, K6, Q6 y 86 del botón te tienen dominado. Trips con kicker débil es un bluff catcher, no una mano para construir bote.
 

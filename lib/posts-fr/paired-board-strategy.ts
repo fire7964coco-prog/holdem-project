@@ -14,7 +14,7 @@ export const POST: Post = {
   tldr: "Sur le board pairé bas 6♣6♦3♥, la grosse blinde checke 97,0 %. Le plus étrange : elle a plus de brelans (trips) que le bouton, 26 combos de 6x contre 20. Elle checke quand même, parce que seulement 18,4 % de sa range ont mieux que la paire du board, et les 81,6 % restants sont un duel de cartes hautes que le bouton gagne. Ce qui gagne de la valeur, c'est toute paire servie au-dessus du 6 : TT a 76,0 % d'équité ici.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -207,7 +207,7 @@ Ce calcul ne sert donc pas à « atteindre 75 % » mais à **« ne pas te couche
 ## Qu'est-ce que ça change à la table ?
 
 - **Ne sous-estime pas les paires servies moyennes sur les boards pairés bas.** De 77 à TT, elles ont 68 %–76 % d'équité ici, le haut de la range de call. Mais le plancher existe : 44 et 55 battent encore la moyenne de la range, tandis que 22 ne garde que les deux tiers de ce que vaut son équité, parce qu'il fait paire sous les deux rangs du board.
-- **Flopper un brelan (trips) n'est pas une raison de miser en premier.** Les 6 font un lead à 6,8 % (plus que n'importe quelle double paire ou main à carte haute, moins seulement que les fulls 33 à 8,8 % et l'unique combo de carré à 9,6 %), et ils checkent quand même neuf fois sur dix. Le lead ne fait coucher que les mains que tu bats déjà ; le check laisse ces mains mettre l'argent elles-mêmes, et te laisse un check-raise ou un call jusqu'au bout. ⚠ Ce que ce calcul ne peut pas te dire, c'est *combien* la ligne de check-raise rapporte de plus : le spot d'étude ne résout **que la première action du flop**, donc la fréquence de c-bet du bouton et l'EV d'un éventuel check-raise n'y existent tout simplement pas.
+- **Flopper un brelan (trips) n'est pas une raison de miser en premier.** Les 6, pris en groupe, font un lead à 6,8 % en moyenne (plus que les groupes de doubles paires ou de mains à carte haute, moins seulement que les fulls 33 à 8,8 % et l'unique combo de carré à 9,6 %), et ils checkent quand même neuf fois sur dix. Le lead ne fait coucher que les mains que tu bats déjà ; le check laisse ces mains mettre l'argent elles-mêmes, et te laisse un check-raise ou un call jusqu'au bout. ⚠ Ce que ce calcul ne peut pas te dire, c'est *combien* la ligne de check-raise rapporte de plus : le spot d'étude ne résout **que la première action du flop**, donc la fréquence de c-bet du bouton et l'EV d'un éventuel check-raise n'y existent tout simplement pas.
 - **Ne te couche pas avec hauteur As face à une seule petite mise.** 79,7 % de la range du bouton n'ont rien de plus que la paire du board non plus : hauteur As 31,9 %, hauteur Roi 15,1 % et pas de main faite 32,7 %.
 - **C'est ton kicker qui décide du coup.** Seuls trois combos battent directement le brelan : les trois fulls 33. (Le carré est hors jeu : dès que tu tiens toi-même un 6, 6♠6♥ ne peut pas exister, donc les quatre combos comptés dans la section full deviennent trois depuis ton siège.) Et ça ne vaut que si ton kicker est un As. Le deuxième kicker est fixé par le 3 du board, donc la seule carte à côté de ton 6 est toute ta main : avec 76s, les A6, K6, Q6 et 86 du bouton te dominent tous. Un brelan avec un kicker faible est un bluff-catcher, pas une main pour construire un pot.
 

@@ -47,7 +47,7 @@ begin
 
   -- ⓐ 다른 회원에 붙어 있던 같은 텔레그램 — 연결과 함께 그 회원의 수신 동의도 지운다
   update public.telegram_links
-     set chat_id = null, tg_username = null, tg_name = null, linked_at = null,
+     set chat_id = null, tg_username = null, tg_name = null, linked_at = null, bot_blocked_at = null,  -- MA-592 보조: DELETE 해제와 같은 열을 지운다
          consent_withdrawn_at = case when marketing_consent_at is not null then v_now else consent_withdrawn_at end,
          marketing_consent_at = null, night_consent_at = null, consent_tz = null,
          updated_at = v_now
