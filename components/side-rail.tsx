@@ -91,6 +91,12 @@ export const HUB_PAGES = [
  * ★라벨은 각 페이지의 metadata title에서 딴 것이다(지어낸 표현이 아니다).
  */
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
+  // ★2026-10-16 it 도구 회차
+  it: [
+    { href: "/it/calculator", icon: "🧮", label: "Calcolatore poker" },
+    { href: "/it/hand-chart", icon: "📊", label: "Tabella delle mani iniziali" },
+    { href: "/it/glossary", icon: "📖", label: "Termini del poker" },
+  ],
   en: [
     // ★라벨은 CHROME.en.blogLabel("Blog")과 같은 값이다. 「Guides」 목록 안에서
     //   "All Articles"는 다른 항목(도구 페이지)과 층위가 섞여 읽혔다 — 목적지가
@@ -411,7 +417,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 // id — BOARD_STRINGS에 id가 없다(id에 tournaments 페이지 자체가 없음). fr처럼 en으로 떨어뜨리면
 //      인도네시아어 화면에 영어가 섞인다 → 우리 id 코퍼스 42편이 쓰는 표준어 "Panduan"을 쓴다
 //      (title 2편 포함 다수 실측 · 2026-09-05). 새로 번역한 것이 아니라 코퍼스에서 딴 값이다.
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", ru: "Гайды", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading, ar: CHROME.ar.contentHeading };
+// ★2026-10-16 it 도구 회차
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", ru: "Гайды", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading, ar: CHROME.ar.contentHeading, it: CHROME.it.contentHeading };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**

@@ -235,6 +235,8 @@ const STATIC_ROUTES = [
   { path: "/ru/calculator", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-14 tool-lanes 🅲 ar 회차 1.
   { path: "/ar/calculator", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-16 it 도구 회차
+  { path: "/it/calculator", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/hand-chart` 10개(로케일 도구 확장 회차 1). `/en/hand-chart`(0.7)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/hand-chart-alternates.ts`.
@@ -253,6 +255,8 @@ const STATIC_ROUTES = [
   { path: "/vi/hand-chart", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-14 tool-lanes 🅲 ar 회차 1.
   { path: "/ar/hand-chart", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-16 it 도구 회차
+  { path: "/it/hand-chart", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/glossary` 10개(로케일 도구 확장 회차 2). `/en/glossary`(0.6)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/glossary-alternates.ts`.
@@ -271,6 +275,8 @@ const STATIC_ROUTES = [
   { path: "/tr/glossary", priority: "0.6", changefreq: "monthly" },
   // ★2026-10-10 vi 배포 회차(docs/vi-cluster-plan.md §4-C ①).
   { path: "/vi/glossary", priority: "0.6", changefreq: "monthly" },
+  // ★2026-10-16 it 도구 회차
+  { path: "/it/glossary", priority: "0.6", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도
