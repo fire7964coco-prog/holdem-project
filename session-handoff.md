@@ -8,7 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **MA-591·592·593** | ✅ 회신+이행 MB-365(10-16 (18) · es·hi EV 라벨 8 · /privacy 2 · 봇 alreadyLinked 16 · paired L297 EN+11) → ▶ 검수장 변경 줄 재판정 · 🔴 사장님 SQL RUN = `supabase/telegram-consent.sql`(consume ⓐ 옛 행 bot_blocked_at null · 코드 무관) | 판정 대기 |
+| **MA-591·592·593** | ✅ 회신+이행 MB-365(10-16 (18) · es·hi EV 라벨 8 · /privacy 2 · 봇 alreadyLinked 16 · paired L297 EN+11) → ▶ 검수장 변경 줄 재판정 · ✅ 사장님 SQL RUN 10-16(consume ⓐ 옛 행 bot_blocked_at null) | 판정 대기 |
 | **MA-577~582** | ✅ 회신+이행 MB-355(10-16 (7) · 요청 13 · RTL 카드열·6-max · 시뮬레이터 좌석 라벨+16로케일 한 문장 · 글 9자리) → ▶ 검수장 재판정 · 남김 = queue §2-CK CK-4·7·16 | 판정 대기 |
 | **텔레그램 ⑥** | ✅ ⑤ 라이브 · MA-584 이행 MB-354 → ▶ 검수장 재판정 · ✅ ⑥ 수신 동의 MB-356(10-16 (8) · 원문·결정·⑦ 의무 = `docs/telegram-login-plan.md` «⑥ 수신 동의» · SQL `supabase/telegram-consent.sql` RUN 뒤 배포) → ▶ 사장님 라이브 시험(체크 켜기·끄기 DM · 해제 DM) · 검수장 16로케일 문구 판정 · 다음 = ⑦ 발송(현지 08~21시 · (광고) 머리 · 무료 수신 거부 버튼 · 2년 재확인 · 🪶 별표 6 «주소» 해석 = 사장님) | ⑦ 사장님 지시 때 |
 | **앱 축어 정렬** | ✅ CJ-7·8 MB-359(10-16 (11)) · ✅ CK-16 MB-360(10-16 (12) · Daily 기능명 로케일별 · id «dari pot» · de L115 · fr NBSP) → ▶ 검수장 변경 줄 판정 · ✅ 시뮬레이터 ruleText «bet or raise»꼴 MB-361(10-16 (13) · 엔진 확인 · 16×4) → ▶ 검수장 판정 | 판정 대기 |
