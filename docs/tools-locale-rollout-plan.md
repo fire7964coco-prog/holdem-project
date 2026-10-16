@@ -70,7 +70,7 @@
 
 | 언어 | ① 서치 | ② 도구 | ③ 솔버 UI | ④ 랜딩 | ⑤ 배포 |
 |---|---|---|---|---|---|
-| it | ✅ 10-16 — `translation-terms-it.md` UI 낱말 219(미확인 53 · 쟁점 9 · GPT sol) + `keyword-bank/it-tools.md`(DFS 57어 · SERP 6 · 자동완성 2) | ✅ 10-16 (16) — 5페이지 main 머지(`ae2a45d9`·`5f7cc57d` · 미배포) · GPT sol 2레인 워크트리(A 계산기·차트·용어 / B 시뮬레이터·대회) · 레인 안에서 astra ultra 독립 검수 + 변경 줄 재교열 · 보고 = `docs/tool-lanes/it-tools-{A,B}-report.md` · 헤드 빌드 exit 0 · 남김 = 보고 ⑦(공용 OutsCalc 390 결과 카드 «19,6%» 넘침 = 전 로케일 공용 · EN-먼저 문구 4) | 솔버 몫(사장님 전달) | 솔버 라이브 뒤 | ▶ 배포 = 사장님 결정 |
+| it | ✅ 10-16 — `translation-terms-it.md` UI 낱말 219(미확인 53 · 쟁점 9 · GPT sol) + `keyword-bank/it-tools.md`(DFS 57어 · SERP 6 · 자동완성 2) | ✅ 10-16 (16) — 5페이지 main 머지(`ae2a45d9`·`5f7cc57d` · 미배포) · GPT sol 2레인 워크트리(A 계산기·차트·용어 / B 시뮬레이터·대회) · 레인 안에서 astra ultra 독립 검수 + 변경 줄 재교열 · 보고 = `docs/tool-lanes/it-tools-{A,B}-report.md` · 헤드 빌드 exit 0 · 남김 = 보고 ⑦(공용 OutsCalc 390 결과 카드 «19,6%» 넘침 = 전 로케일 공용 · EN-먼저 문구 4) | 솔버 몫(사장님 전달) | 솔버 라이브 뒤 | ✅ 도구 5 먼저 배포 10-16 `300364cf` MB-364(사장님 «1번») · 랜딩은 ④ 뒤 |
 
 - ②·③은 ① 파일로 동시에 돈다. 도구 하나당 세부 절차 = §2. fa·he = RTL(공용 RTL 회차 R1 재사용).
 

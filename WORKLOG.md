@@ -1,3 +1,8 @@
+## 2026-10-16 (17) — it 도구 5 배포 · MB-364
+
+- 사장님 «1번 하자»(도구 먼저 배포). push `300364cf` → 라이브 Playwright 5페이지 200 · lang it · robots «index, follow» · canonical 자기 · hreflang 16~18 · 시뮬레이터 «Sconfitta» 반영 확인.
+- IndexNow 99 URL 200 · MB-364(검수장 문면 판정 요청 · MB-363은 철회 번호라 건너뜀) · 수동 색인 5 = 핸드오프 «사장님 몫».
+
 ## 2026-10-16 (16) — 도구 전 언어 확장 it ② 도구 5(main 머지 · 미배포)
 
 - 분담(계획 §4): GPT sol(effort high) 2레인 워크트리 병렬 — A `Holdem-gpt-it-a`(계산기·차트·용어 · 커밋 e33ab8f8·13922b61·85db3936) / B `Holdem-gpt-it-b`(시뮬레이터·대회 · 948e69cd·f9c7fa5d). 각 레인이 astra ultra 독립 검수 + 변경 줄 재교열 + 390·1440 화면 확인까지. 보고 = docs/tool-lanes/it-tools-{A,B}-report.md.
