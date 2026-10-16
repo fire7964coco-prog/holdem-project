@@ -47,6 +47,8 @@
 
 **근거 읽는 법:** 아래 링크는 이 파일 끝의 URL 정의로 연결된다. « » 안은 검색 요약이 아니라 실제 열린 이탈리아어 원문에서 확인한 짧은 축어다. 인용은 해당 낱말의 용례만 뒷받침한다. 대문자·하이픈·단복수·버튼 명령형으로 다듬은 것은 편집 결정이며 인용 자체를 바꾸지 않았다. 한 페이지의 용례만으로 사용 빈도나 시장 전체의 우세를 단정하지 않는다. 영어 전문어는 현지 원문에도 영어로 쓰이는 경우 유지한다.
 
+**본체 대조(Claude · 10-16):** 표본 3건 — 888 equity «calcolatore di equity» ✅ 원문 2회 · pokerstars.it 대회 규칙·유형 2페이지는 이 환경에서 curl 403·Playwright «Access Denied»라 **본체 미대조**(GPT 서치 측에서 열람) · «montepremi»는 별도로 Google IT SERP 스니펫(evbets «montepremi garantiti»)에서 확인. 도구 헤드텀 검색어·SERP = `docs/keyword-bank/it-tools.md`.
+
 **미확인 행은 확정 번역이 아니다.** 현지 원문 근거를 확보하지 못했으므로 추측 이탈리아어를 만들지 않고 EN 임시 라벨을 둔다. 후속 세션은 이 행을 이탈리아 현지 표준으로 인용하지 말고, 사람이 판단하거나 원문을 추가 확보한 뒤 확정한다. 검색 결과에만 있거나 접근 차단된 페이지는 근거로 세지 않았다. 일반 UI도 같은 기준이다.
 
 추출 범위: `components/calculator/dict.ts`의 `CALC_DICT_EN`, `components/hand-chart/dict.ts`의 `HAND_CHART_DICT_EN`, `components/glossary/dict.ts`의 `GLOSSARY_DICT_EN` 및 실제 항목 원천 `app/en/glossary/glossary-data.ts`; `app/ru/win-rate-quiz/win-rate-quiz-client.tsx`; `components/tournament-board.tsx` 및 라벨 원천 `lib/tournaments-i18n.ts`의 EN. 솔버는 외부 레포 `C:/Users/하봄/Downloads/클로드-프로그램만들기/solver/src/i18n.ts`와 `src/components/*.vue`의 EN 사전·짧은 `pick()` 라벨을 읽기만 했다. 소스의 수식·카드 예시·확률 수치는 이 절에 옮기지 않는다. 앱 기능명·문장 전체 번역은 별도 작업이다.

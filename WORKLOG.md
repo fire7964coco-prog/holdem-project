@@ -1,3 +1,10 @@
+## 2026-10-16 (15) — 도구 전 언어 확장 it ① 서치(용어 + 도구 검색어)
+
+- 분담(계획 §4): GPT sol(effort medium · 워크트리 `Holdem-gpt-it` · 브랜치 `gpt-it`)이 `translation-terms-it.md`에 «도구·앱 UI 낱말» 절 직접 작성·커밋 `b06df0d6`(219항목 · 미확인 53 = EN 임시 · 쟁점 9 · 기존 절 무수정) → main ff 머지. Claude = DataForSEO(2380·it) 볼륨 57어 · SERP 6 · 자동완성 2 → `docs/keyword-bank/it-tools.md`.
+- 판독: ar·vi와 달리 이탈리아어 도구구가 실측된다(calcolatore poker 110 · calcolo probabilità 140 · termini poker 140 · tornei poker live 390 · gto poker 480). «tabella poker» 1.300 = 족보 의도(SERP 7/10) → 차트 머리 아님. «simulatore poker» SERP = 게임·계산기 혼재.
+- 본체 대조: 888 «calcolatore di equity» ✅ · pokerstars.it 2페이지 = curl 403·Playwright Access Denied → 미대조로 파일에 명시.
+- 다음 = it ② 도구 5(새 세션).
+
 ## 2026-10-16 (14) — MA-588·589 회신+이행(요청 9) · 텔레그램 봇·/privacy·탭 바 · 시뮬레이터 좌석 라벨 문장 · MB-362
 
 - 재부팅 뒤 재개: 작업 트리 깨끗 · (13)까지 커밋 끝 확인 → 미처리 MA-588·589부터.
