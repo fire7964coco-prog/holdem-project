@@ -1,3 +1,12 @@
+## 2026-10-16 (3) — R4 Supabase 주소 교체 + 텔레그램 ⑤ 선행(SQL·env)
+
+- 사전 점검: 옛 주소·`auth.holdemmaster.com` 둘 다 auth 200 · rest 200 · storage 동일 응답 · realtime 101. 쿠키 이름 고정(`2934a44a`)이라 로그아웃 없음.
+- Vercel env 수정은 본체 MCP가 자동 모드 권한에서 거부 → 사장님이 대시보드에서 직접: `NEXT_PUBLIC_SUPABASE_URL`(production) 교체 + `TELEGRAM_BOT_TOKEN`·`TELEGRAM_WEBHOOK_SECRET`(Secret · production) 신규. 웹훅 암호는 본체가 crypto 32바이트 base64url로 생성.
+- 사장님 SQL `supabase/telegram-links.sql` RUN · 확인 3줄 0/true/0.
+- 배포 `a4302d20` READY · 라이브 Playwright: /community의 Supabase 요청 호스트 = auth.holdemmaster.com만 · 번들 속 옛 호스트 문자열 = LEGACY 쿠키 이름(정상). `.env.local`도 새 주소.
+- 1~4 묶음: ④ 워크트리 이미 없음 · ①③ 미착수(셸 권한 거부 구간).
+- 🪶 사장님 Redeploy가 옛 커밋 `12d22d60` 기준으로 하나 더 돌았으나 뒤 커밋 배포가 마지막 → 라이브는 최신(zh 정정 문면 확인).
+
 ## 2026-10-16 (2) — MA-574(zh GTO) · MA-575(ja GTO) 회신+이행 · MA-576 ACK · MB-352
 
 - 요청 6자리 = 전부 EN 뜻으로 되돌림(zh 5 · ja 1). 치환은 자리마다 정확히 1회 일치 단언 스크립트. 5파일 updated 10-16.
