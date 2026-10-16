@@ -294,7 +294,20 @@ const RU: HubLabels = {
   languages: "🌐 Языки сообщества",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU };
+// ★2026-10-16 it 도구 회차 — Italian has no community LABELS entry yet.
+const IT: HubLabels = {
+  login: "Accedi",
+  write: "✏️ Scrivi un post",
+  trending: "🔥 Popolari questa settimana",
+  eventBadge: "🎰 Evento · Prossimamente",
+  eventTitle: "Scegli 6 numeri\nVinci buoni regalo!",
+  eventDesc: "3 corrispondenze → $30 · 4 → $200\n5 → $1.000",
+  eventSchedule: "🔗 Ogni domenica alle 19:00 KST\nEstrazione automatica tramite hash di un blocco Bitcoin",
+  eventButton: "Vedi evento →",
+  languages: "🌐 Lingue della community",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU, it: IT };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
