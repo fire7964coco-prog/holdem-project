@@ -31,7 +31,7 @@ export function generateMetadata(): Metadata {
 
   return {
     // absolute — 루트 레이아웃 template의 "| 홀덤마스터"가 붙는 것을 막는다.
-    title: { absolute: `${title} | 德扑大师` },
+    title: { absolute: `${title} | 德州扑克大师` },
     description: s.metaDescription(today.replace(/-/g, "."), ongoingText),
     alternates: {
       canonical: `${SITE}/${LOCALE}/tournaments`,
@@ -40,14 +40,14 @@ export function generateMetadata(): Metadata {
     // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다 (X 공유 시 노출)
     twitter: {
       card: "summary_large_image",
-      title: `${title} | 德扑大师`,
+      title: `${title} | 德州扑克大师`,
       description: "全球德州扑克赛事日程——日期、买入、场馆，每一场都附主办方官网链接。",
     },
     openGraph: {
-      title: `${title} | 德扑大师`,
+      title: `${title} | 德州扑克大师`,
       description: "全球德州扑克赛事日程——日期、买入、场馆，每一场都附主办方官网链接。",
       url: `${SITE}/${LOCALE}/tournaments`,
-      siteName: "德扑大师",
+      siteName: "德州扑克大师",
       locale: s.ogLocale,
       type: "article",
     },
