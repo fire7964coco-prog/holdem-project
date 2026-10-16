@@ -12,6 +12,7 @@ import { EVENT_OPERATION } from "@/lib/event-config";
 import { REVIEW_EVENT_BANNER_KO } from "@/lib/participation-config";
 import type { SecondaryLocale } from "@/lib/intl";
 import SolverPromo, { SOLVER_PROMO_LOCALES, type SolverPromoLocale } from "@/components/solver-promo";
+import { TelegramPromo } from "@/app/community/telegram-connect";
 
 /**
  * 허브 페이지 우측 사이드바 — 홈(community-client.tsx)의 오른쪽 <aside>와 같은 구성·같은 규격.
@@ -49,6 +50,8 @@ export default function HubSidebar({
            지원 로케일 판정은 컴포넌트가 내보내는 집합에 맡긴다(랜딩이 늘면 거기만 고친다).
       */}
       {SOLVER_PROMO_LOCALES.has(current) && <SolverPromo locale={current as SolverPromoLocale} />}
+      {/* 텔레그램 알림(10-16) — 클라이언트 컴포넌트 · 연결된 회원에겐 안 보임 */}
+      <TelegramPromo locale={current} base={base} />
 
       {/* 트렌딩 */}
       {trending.length > 0 && (

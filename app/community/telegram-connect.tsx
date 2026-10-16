@@ -7,15 +7,19 @@
  * - 연결은 로그인 수단과 무관하다(Google·카카오·이메일·텔레그램 누구나).
  * - «연결» → 서버가 1회용 링크(15분)를 만든다 → «텔레그램 열기»를 눌러 봇에서 START.
  *   팝업 차단을 피하려고 링크는 자동으로 열지 않고 버튼으로 보여 준다. 돌아오면(창 포커스) 상태를 다시 읽는다.
+ * - 같은 상태를 사이드바 카드(TelegramPromo)·모바일 띠(TelegramBanner)도 쓴다 — 요청은 한 번(모듈 캐시).
  * - «텔레그램 연결»·«연결 해제» 낱말은 봇 문구(lib/telegram-bot.ts)와 축어 일치 — 바꾸면 양쪽을 같이.
  */
 
-import { useCallback, useEffect, useState } from "react";
-import { BG, BORDER, CARD, INK, MUTED, RED } from "./post-card";
+import { useEffect, useState } from "react";
+import { loginHref } from "@/lib/auth-navigation";
+import { BORDER, CARD, INK, MUTED, RED } from "./post-card";
 
 type Labels = {
   title: string; sub: string; connect: string; opening: string; open: string; hint: string;
   linked: string; blocked: string; disconnect: string; confirm: string; error: string;
+  /** 사이드바·띠 배너(10-16 사장님 «눈에 띄는 곳에도») */
+  loginToLink: string; banner: string; close: string;
 };
 
 const LABELS: Record<string, Labels> = {
@@ -25,6 +29,7 @@ const LABELS: Record<string, Labels> = {
     hint: "텔레그램에서 START를 누르면 연결돼요(링크 15분 유효). 끝나면 이 화면으로 돌아오세요.",
     linked: "연결됨", blocked: "봇이 차단돼 있어 알림이 가지 않아요. 텔레그램에서 차단을 풀면 다시 받아요.",
     disconnect: "연결 해제", confirm: "텔레그램 연결을 해제할까요?", error: "지금은 처리하지 못했어요. 잠시 뒤 다시 해 주세요.",
+    loginToLink: "로그인하고 연결하기 →", banner: "✈️ 텔레그램 연결하고 알림 받기 →", close: "닫기",
   },
   en: {
     title: "✈️ Telegram alerts", sub: "Link Telegram to get account alerts, such as event wins, in Telegram.",
@@ -32,6 +37,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Tap START in Telegram to finish (the link is valid for 15 minutes), then come back to this page.",
     linked: "Linked", blocked: "The bot is blocked, so alerts can't reach you. Unblock it in Telegram to get them again.",
     disconnect: "Unlink", confirm: "Unlink Telegram?", error: "Couldn't do that right now. Please try again shortly.",
+    loginToLink: "Log in to link →", banner: "✈️ Link Telegram to get alerts →", close: "Close",
   },
   ja: {
     title: "✈️ Telegram通知", sub: "連携しておくと、イベント当選などのアカウント通知をTelegramで受け取れます。",
@@ -39,6 +45,7 @@ const LABELS: Record<string, Labels> = {
     hint: "TelegramでSTARTを押すと連携されます（リンクの有効期限は15分）。終わったらこの画面に戻ってください。",
     linked: "連携済み", blocked: "ボットがブロックされているため通知が届きません。Telegramでブロックを解除すると再び届きます。",
     disconnect: "連携を解除", confirm: "Telegramとの連携を解除しますか？", error: "今は処理できませんでした。しばらくしてからもう一度お試しください。",
+    loginToLink: "ログインして連携 →", banner: "✈️ Telegramと連携して通知を受け取る →", close: "閉じる",
   },
   es: {
     title: "✈️ Avisos por Telegram", sub: "Vincula Telegram para recibir ahí avisos de tu cuenta, como premios de eventos.",
@@ -46,6 +53,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Toca START en Telegram para terminar (el enlace vale 15 minutos) y luego vuelve a esta página.",
     linked: "Vinculado", blocked: "El bot está bloqueado y los avisos no te llegan. Desbloquéalo en Telegram para volver a recibirlos.",
     disconnect: "Desvincular", confirm: "¿Desvincular Telegram?", error: "No se pudo hacer ahora. Inténtalo de nuevo en un momento.",
+    loginToLink: "Inicia sesión para vincular →", banner: "✈️ Vincula Telegram y recibe avisos →", close: "Cerrar",
   },
   pt: {
     title: "✈️ Avisos no Telegram", sub: "Vincule o Telegram para receber lá avisos da sua conta, como prêmios de eventos.",
@@ -53,6 +61,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Toque em START no Telegram para concluir (o link vale 15 minutos) e depois volte a esta página.",
     linked: "Vinculado", blocked: "O bot está bloqueado, então os avisos não chegam. Desbloqueie no Telegram para voltar a receber.",
     disconnect: "Desvincular", confirm: "Desvincular o Telegram?", error: "Não deu para fazer isso agora. Tente de novo daqui a pouco.",
+    loginToLink: "Entre para vincular →", banner: "✈️ Vincule o Telegram e receba avisos →", close: "Fechar",
   },
   de: {
     title: "✈️ Telegram-Benachrichtigungen", sub: "Verknüpf Telegram, um Kontohinweise wie Event-Gewinne dort zu bekommen.",
@@ -60,6 +69,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Tipp in Telegram auf START, um abzuschließen (der Link gilt 15 Minuten), und komm dann auf diese Seite zurück.",
     linked: "Verknüpft", blocked: "Der Bot ist blockiert, deshalb kommen keine Hinweise an. Heb die Blockierung in Telegram auf, um sie wieder zu bekommen.",
     disconnect: "Verknüpfung lösen", confirm: "Telegram-Verknüpfung lösen?", error: "Das hat gerade nicht geklappt. Versuch es gleich noch einmal.",
+    loginToLink: "Zum Verknüpfen anmelden →", banner: "✈️ Telegram verknüpfen und Hinweise bekommen →", close: "Schließen",
   },
   zh: {
     title: "✈️ Telegram 通知", sub: "绑定后，活动中奖等账号通知会发到 Telegram。",
@@ -67,6 +77,7 @@ const LABELS: Record<string, Labels> = {
     hint: "在 Telegram 里点 START 即完成绑定（链接 15 分钟内有效），完成后回到此页面。",
     linked: "已绑定", blocked: "机器人已被屏蔽，通知无法送达。在 Telegram 里解除屏蔽后即可再次接收。",
     disconnect: "解除绑定", confirm: "要解除 Telegram 绑定吗？", error: "暂时无法处理，请稍后再试。",
+    loginToLink: "登录后绑定 →", banner: "✈️ 绑定 Telegram 接收通知 →", close: "关闭",
   },
   "zh-hant": {
     title: "✈️ Telegram 通知", sub: "連結後，活動中獎等帳號通知會傳到 Telegram。",
@@ -74,6 +85,7 @@ const LABELS: Record<string, Labels> = {
     hint: "在 Telegram 裡點 START 即完成連結（連結 15 分鐘內有效），完成後回到此頁面。",
     linked: "已連結", blocked: "機器人已被封鎖，通知無法送達。在 Telegram 裡解除封鎖後即可再次接收。",
     disconnect: "解除連結", confirm: "要解除 Telegram 連結嗎？", error: "暫時無法處理，請稍後再試。",
+    loginToLink: "登入後連結 →", banner: "✈️ 連結 Telegram 接收通知 →", close: "關閉",
   },
   fr: {
     title: "✈️ Alertes Telegram", sub: "Lie Telegram pour y recevoir les alertes de ton compte, comme les gains d'événements.",
@@ -81,6 +93,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Appuie sur START dans Telegram pour terminer (le lien est valable 15 minutes), puis reviens sur cette page.",
     linked: "Lié", blocked: "Le bot est bloqué, les alertes ne peuvent pas t'arriver. Débloque-le dans Telegram pour les recevoir à nouveau.",
     disconnect: "Délier", confirm: "Délier Telegram ?", error: "Impossible pour le moment. Réessaie dans un instant.",
+    loginToLink: "Connecte-toi pour lier →", banner: "✈️ Lie Telegram pour recevoir les alertes →", close: "Fermer",
   },
   id: {
     title: "✈️ Notifikasi Telegram", sub: "Tautkan Telegram untuk menerima notifikasi akun, seperti kemenangan event, di Telegram.",
@@ -88,6 +101,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Ketuk START di Telegram untuk menyelesaikan (tautan berlaku 15 menit), lalu kembali ke halaman ini.",
     linked: "Tertaut", blocked: "Bot sedang diblokir, jadi notifikasi tidak sampai. Buka blokirnya di Telegram agar notifikasi masuk lagi.",
     disconnect: "Lepas tautan", confirm: "Lepas tautan Telegram?", error: "Belum bisa diproses sekarang. Coba lagi sebentar lagi.",
+    loginToLink: "Masuk untuk menautkan →", banner: "✈️ Tautkan Telegram untuk dapat notifikasi →", close: "Tutup",
   },
   ms: {
     title: "✈️ Pemberitahuan Telegram", sub: "Pautkan Telegram untuk menerima pemberitahuan akaun, seperti kemenangan acara, di Telegram.",
@@ -95,6 +109,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Tekan START dalam Telegram untuk selesai (pautan sah 15 minit), kemudian kembali ke halaman ini.",
     linked: "Dipautkan", blocked: "Bot disekat, jadi pemberitahuan tidak sampai. Nyahsekat dalam Telegram untuk menerimanya semula.",
     disconnect: "Nyahpaut", confirm: "Nyahpaut Telegram?", error: "Tidak dapat diproses sekarang. Cuba lagi sebentar nanti.",
+    loginToLink: "Log masuk untuk memautkan →", banner: "✈️ Pautkan Telegram untuk terima pemberitahuan →", close: "Tutup",
   },
   hi: {
     title: "✈️ Telegram सूचनाएँ", sub: "Telegram जोड़ने पर इवेंट जीत जैसी अकाउंट सूचनाएँ Telegram में मिलेंगी।",
@@ -102,6 +117,7 @@ const LABELS: Record<string, Labels> = {
     hint: "पूरा करने के लिए Telegram में START दबाएँ (लिंक 15 मिनट तक मान्य), फिर इस पेज पर लौट आएँ।",
     linked: "जुड़ा हुआ", blocked: "बॉट ब्लॉक है, इसलिए सूचनाएँ नहीं पहुँचतीं। Telegram में अनब्लॉक करें तो फिर से मिलेंगी।",
     disconnect: "कनेक्शन हटाएँ", confirm: "Telegram कनेक्शन हटाएँ?", error: "अभी यह नहीं हो पाया। थोड़ी देर बाद फिर कोशिश करें।",
+    loginToLink: "जोड़ने के लिए लॉग इन करें →", banner: "✈️ Telegram जोड़ें और सूचनाएँ पाएँ →", close: "बंद करें",
   },
   vi: {
     title: "✈️ Thông báo Telegram", sub: "Liên kết Telegram để nhận thông báo tài khoản, như trúng thưởng sự kiện, trên Telegram.",
@@ -109,6 +125,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Bấm START trong Telegram để hoàn tất (liên kết có hiệu lực 15 phút), rồi quay lại trang này.",
     linked: "Đã liên kết", blocked: "Bot đang bị chặn nên thông báo không đến được. Bỏ chặn trong Telegram để nhận lại.",
     disconnect: "Hủy liên kết", confirm: "Hủy liên kết Telegram?", error: "Chưa xử lý được lúc này. Hãy thử lại sau ít phút.",
+    loginToLink: "Đăng nhập để liên kết →", banner: "✈️ Liên kết Telegram để nhận thông báo →", close: "Đóng",
   },
   tr: {
     title: "✈️ Telegram bildirimleri", sub: "Telegram'ı bağlarsan etkinlik kazancı gibi hesap bildirimlerini Telegram'dan alırsın.",
@@ -116,6 +133,7 @@ const LABELS: Record<string, Labels> = {
     hint: "Bitirmek için Telegram'da START'a dokun (bağlantı 15 dakika geçerli), sonra bu sayfaya dön.",
     linked: "Bağlı", blocked: "Bot engellendiği için bildirimler ulaşmıyor. Telegram'da engeli kaldırırsan yeniden alırsın.",
     disconnect: "Bağlantıyı kaldır", confirm: "Telegram bağlantısı kaldırılsın mı?", error: "Şu an yapılamadı. Biraz sonra tekrar dene.",
+    loginToLink: "Bağlamak için giriş yap →", banner: "✈️ Telegram'ı bağla, bildirim al →", close: "Kapat",
   },
   ar: {
     title: "✈️ إشعارات Telegram", sub: "اربط Telegram لتصلك إشعارات الحساب، مثل الفوز في الفعاليات، على Telegram.",
@@ -123,6 +141,7 @@ const LABELS: Record<string, Labels> = {
     hint: "اضغط START في Telegram لإتمام الربط (الرابط صالح 15 دقيقة)، ثم عُد إلى هذه الصفحة.",
     linked: "مرتبط", blocked: "البوت محظور، لذا لا تصلك الإشعارات. ألغِ الحظر في Telegram لتصلك مجددًا.",
     disconnect: "إلغاء الربط", confirm: "هل تريد إلغاء ربط Telegram؟", error: "تعذّر ذلك الآن. حاول مرة أخرى بعد قليل.",
+    loginToLink: "سجّل الدخول للربط ←", banner: "✈️ اربط Telegram لتصلك الإشعارات ←", close: "إغلاق",
   },
   ru: {
     title: "✈️ Уведомления в Telegram", sub: "Привяжи Telegram, чтобы получать там уведомления по аккаунту, например о выигрышах в событиях.",
@@ -130,43 +149,63 @@ const LABELS: Record<string, Labels> = {
     hint: "Нажми START в Telegram, чтобы завершить (ссылка действует 15 минут), и вернись на эту страницу.",
     linked: "Привязан", blocked: "Бот заблокирован, поэтому уведомления не доходят. Разблокируй его в Telegram, чтобы снова их получать.",
     disconnect: "Отвязать", confirm: "Отвязать Telegram?", error: "Сейчас не получилось. Попробуй ещё раз чуть позже.",
+    loginToLink: "Войди, чтобы привязать →", banner: "✈️ Привяжи Telegram и получай уведомления →", close: "Закрыть",
   },
 };
 
 type Status = { linked: boolean; username: string | null; blocked: boolean };
+/** out = 로그인 안 함 · off = 서버 표·env 문제(전부 숨김) · in = 로그인 회원 */
+type Fetched = { kind: "out" } | { kind: "off" } | { kind: "in"; s: Status };
 
-export default function TelegramConnect({ locale }: { locale: string }) {
-  const L = LABELS[locale] ?? LABELS.en;
-  const [status, setStatus] = useState<Status | null>(null);
-  const [unavailable, setUnavailable] = useState(false);
+// ── 상태 공유 — 한 화면에 카드·사이드바·띠가 같이 있어도 요청은 한 번, 바뀌면 모두 갱신 ──
+let cached: Promise<Fetched> | null = null;
+const subscribers = new Set<(f: Fetched) => void>();
+
+async function readStatus(): Promise<Fetched> {
+  try {
+    const res = await fetch("/api/telegram/link", { cache: "no-store" });
+    if (res.status === 401) return { kind: "out" };
+    const j = await res.json();
+    if (!j.ok) return { kind: "off" };
+    return { kind: "in", s: { linked: !!j.linked, username: j.username ?? null, blocked: !!j.blocked } };
+  } catch {
+    return { kind: "off" };
+  }
+}
+
+function refreshStatus(): Promise<Fetched> {
+  cached = readStatus();
+  cached.then((f) => subscribers.forEach((fn) => fn(f)));
+  return cached;
+}
+
+function useTelegramStatus(): Fetched | null {
+  const [f, setF] = useState<Fetched | null>(null);
+  useEffect(() => {
+    subscribers.add(setF);
+    (cached ?? refreshStatus()).then(setF);
+    // 텔레그램에서 START 누르고 돌아오면 다시 읽는다
+    const onFocus = () => { if (document.visibilityState === "visible") refreshStatus(); };
+    window.addEventListener("focus", onFocus);
+    document.addEventListener("visibilitychange", onFocus);
+    return () => {
+      subscribers.delete(setF);
+      window.removeEventListener("focus", onFocus);
+      document.removeEventListener("visibilitychange", onFocus);
+    };
+  }, []);
+  return f;
+}
+
+const FONT = "var(--font-inter),sans-serif";
+
+/** 연결 흐름(버튼 → 링크 → 연결됨/해제) — 프로필 카드와 사이드바 카드가 같이 쓴다 */
+function ConnectBody({ L, status }: { L: Labels; status: Status }) {
   const [busy, setBusy] = useState(false);
   const [url, setUrl] = useState<string | null>(null);
   const [err, setErr] = useState(false);
 
-  const load = useCallback(async () => {
-    try {
-      const res = await fetch("/api/telegram/link", { cache: "no-store" });
-      const j = await res.json();
-      if (!j.ok) { setUnavailable(true); return; }
-      setUnavailable(false);
-      setStatus({ linked: !!j.linked, username: j.username ?? null, blocked: !!j.blocked });
-      if (j.linked) setUrl(null);
-    } catch {
-      setUnavailable(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    load();
-    // 텔레그램에서 START 누르고 돌아오면 다시 읽는다
-    const onFocus = () => { if (document.visibilityState === "visible") load(); };
-    window.addEventListener("focus", onFocus);
-    document.addEventListener("visibilitychange", onFocus);
-    return () => {
-      window.removeEventListener("focus", onFocus);
-      document.removeEventListener("visibilitychange", onFocus);
-    };
-  }, [load]);
+  useEffect(() => { if (status.linked) setUrl(null); }, [status.linked]);
 
   async function connect() {
     if (busy) return;
@@ -191,7 +230,7 @@ export default function TelegramConnect({ locale }: { locale: string }) {
     try {
       const res = await fetch("/api/telegram/link", { method: "DELETE" });
       const j = await res.json();
-      if (j.ok) await load();
+      if (j.ok) await refreshStatus();
       else setErr(true);
     } catch {
       setErr(true);
@@ -200,14 +239,8 @@ export default function TelegramConnect({ locale }: { locale: string }) {
     }
   }
 
-  // 표가 없거나(서버 env 미설정 등) 읽기 실패면 카드를 숨긴다 — 프로필 화면의 다른 부분을 막지 않는다
-  if (unavailable || !status) return null;
-
-  const FONT = "var(--font-inter),sans-serif";
   return (
-    <section className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }} aria-labelledby="tg-connect-title">
-      <h3 id="tg-connect-title" className="text-sm font-semibold mb-1" style={{ color: INK, fontFamily: FONT }}>{L.title}</h3>
-      <p className="text-xs mb-3 break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.sub}</p>
+    <>
       {status.linked ? (
         <div className="space-y-2">
           <div className="flex items-center justify-between gap-3">
@@ -228,11 +261,77 @@ export default function TelegramConnect({ locale }: { locale: string }) {
           <p className="text-xs break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.hint}</p>
         </div>
       ) : (
-        <button type="button" onClick={connect} disabled={busy} className="w-full rounded py-2.5 text-sm font-semibold disabled:opacity-60" style={{ background: INK, color: BG, fontFamily: FONT }}>
+        <button type="button" onClick={connect} disabled={busy} className="w-full rounded py-2.5 text-sm font-semibold disabled:opacity-60" style={{ background: "#1673B1", color: "#fff", fontFamily: FONT }}>
           {busy ? L.opening : L.connect}
         </button>
       )}
       {err && <p role="alert" className="mt-2 text-xs" style={{ color: RED, fontFamily: FONT }}>{L.error}</p>}
+    </>
+  );
+}
+
+/** 프로필 탭 카드(로그인 상태에서만 렌더된다) — 연결 뒤에도 남아 «연결됨·연결 해제»를 보여 준다 */
+export default function TelegramConnect({ locale }: { locale: string }) {
+  const L = LABELS[locale] ?? LABELS.en;
+  const f = useTelegramStatus();
+  if (!f || f.kind !== "in") return null;
+  return (
+    <section className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }} aria-labelledby="tg-connect-title">
+      <h3 id="tg-connect-title" className="text-sm font-semibold mb-1" style={{ color: INK, fontFamily: FONT }}>{L.title}</h3>
+      <p className="text-xs mb-3 break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.sub}</p>
+      <ConnectBody L={L} status={f.s} />
     </section>
+  );
+}
+
+/**
+ * PC 오른쪽 사이드바 카드(홈·허브) — 10-16 사장님 «눈에 띄는 곳에도».
+ * 로그인 안 함 = 로그인 → 프로필 탭으로 돌아오게 · 로그인·미연결 = 그 자리에서 연결 · 연결됨 = 숨김.
+ */
+export function TelegramPromo({ locale, base }: { locale: string; base: string }) {
+  const L = LABELS[locale] ?? LABELS.en;
+  const f = useTelegramStatus();
+  if (!f || f.kind === "off" || (f.kind === "in" && f.s.linked)) return null;
+  return (
+    <section className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }} aria-labelledby="tg-promo-title">
+      <h3 id="tg-promo-title" className="text-sm font-semibold mb-1" style={{ color: INK, fontFamily: FONT }}>{L.title}</h3>
+      <p className="text-xs mb-3 break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.sub}</p>
+      {f.kind === "out" ? (
+        <a href={loginHref(`${base}/?tab=profile`)} className="flex w-full items-center justify-center rounded py-2.5 text-sm font-semibold" style={{ background: "#1673B1", color: "#fff", fontFamily: FONT }}>
+          {L.loginToLink}
+        </a>
+      ) : (
+        <ConnectBody L={L} status={f.s} />
+      )}
+    </section>
+  );
+}
+
+const BANNER_KEY = "tgBannerClosed";
+
+/**
+ * 모바일 피드 맨 위 띠 — 10-16 사장님. 누르면 로그인 회원은 프로필 탭(카드가 맨 위), 아니면 로그인 화면.
+ * × = 이 기기에서 다시 안 보임(localStorage — 막혀 있으면 이번 화면에서만 닫힘). 연결됨이면 숨김.
+ */
+export function TelegramBanner({ locale, base, onOpenProfile }: { locale: string; base: string; onOpenProfile: () => void }) {
+  const L = LABELS[locale] ?? LABELS.en;
+  const f = useTelegramStatus();
+  const [closed, setClosed] = useState(true);
+  useEffect(() => {
+    try { setClosed(localStorage.getItem(BANNER_KEY) === "1"); } catch { setClosed(false); }
+  }, []);
+  if (closed || !f || f.kind === "off" || (f.kind === "in" && f.s.linked)) return null;
+  const close = () => {
+    setClosed(true);
+    try { localStorage.setItem(BANNER_KEY, "1"); } catch { /* 이번 화면만 */ }
+  };
+  const cls = "flex-1 min-h-11 flex items-center px-3 text-[13px] font-semibold break-keep";
+  return (
+    <div className="mx-4 mt-3 flex items-center rounded" style={{ background: "#1673B1", color: "#fff", fontFamily: FONT }}>
+      {f.kind === "out"
+        ? <a href={loginHref(`${base}/?tab=profile`)} className={cls}>{L.banner}</a>
+        : <button type="button" onClick={onOpenProfile} className={`${cls} text-start`}>{L.banner}</button>}
+      <button type="button" onClick={close} aria-label={L.close} className="min-h-11 min-w-11 flex items-center justify-center text-lg leading-none opacity-80 hover:opacity-100">×</button>
+    </div>
   );
 }

@@ -33,7 +33,7 @@ import { loginHref } from "@/lib/auth-navigation";
 import MobileHomeNavigation from "./mobile-home-navigation";
 import EventStatus, { EventStatusBadge } from "./event-status";
 import MyRecords, { myRecordsLabels } from "./my-records";
-import TelegramConnect from "./telegram-connect";
+import TelegramConnect, { TelegramBanner, TelegramPromo } from "./telegram-connect";
 
 export type { FeedPost } from "./post-card";
 
@@ -1195,10 +1195,10 @@ export default function CommunityClient({
                     ))}
                   </div>
                 </div>
+                {/* 텔레그램 알림 연결 — 2026-10-16 ⑤ · 사장님 «중요한 버튼» → 프로필 카드 바로 밑(docs/telegram-login-plan.md) */}
+                <TelegramConnect locale={pageLocale ?? myLanguage} />
                 {/* «내 기록» 카드 3장 — 프로필 카드 아래 · «내 글» 위(설계 §2-1 · 회차 D) */}
                 <MyRecords userId={currentUser.id} locale={pageLocale ?? myLanguage} />
-                {/* 텔레그램 알림 연결 — 2026-10-16 ⑤ (docs/telegram-login-plan.md) */}
-                <TelegramConnect locale={pageLocale ?? myLanguage} />
                 <p className="text-[11px] font-bold tracking-widest uppercase px-1 pt-1" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.myPostsSection}</p>
                 {myPosts.length === 0
                   ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />
@@ -1371,6 +1371,10 @@ export default function CommunityClient({
             <div className="px-4 pt-3">
               <SolverPromo locale={(pageLocale ?? "ko") as SolverPromoLocale} />
             </div>
+          )}
+          {/* 텔레그램 알림 띠(모바일 · 홈 탭 · 연결됨/닫음이면 안 보임 · 10-16) */}
+          {tab === "home" && !isDesktop && (
+            <TelegramBanner locale={pageLocale ?? myLanguage} base={pageLocale ? `/${pageLocale}` : ""} onOpenProfile={() => setTab("profile")} />
           )}
           {(tab === "home" || !isDesktop) && renderTabContent()}
           {/* 무한스크롤 sentinel — 400px 미리 감지해 선제 로드 */}
@@ -1634,6 +1638,8 @@ export default function CommunityClient({
               {SOLVER_PROMO_LOCALES.has(pageLocale ?? "ko") && (
                 <SolverPromo locale={(pageLocale ?? "ko") as SolverPromoLocale} />
               )}
+              {/* 텔레그램 알림 — 연결된 회원에겐 안 보임(10-16) */}
+              <TelegramPromo locale={pageLocale ?? myLanguage} base={pageLocale ? `/${pageLocale}` : ""} />
 
               {/* 트렌딩 */}
               {trending.length > 0 && (
