@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf dem niedrigen Rainbow-Flop 6♠5♥2♦ checkt der Big Blind 96,8% und spielt nur 3,2% an – obwohl seine Equity von 48,3% die zweithöchste der sieben Spots ist, in denen er verteidigt. Nur eine Hand macht hier eine Straße, 4-3, und keine der beiden Ranges hält sie. Niemand hat die stärksten Hände für sich, also spielt niemand out of position an. Die Action kommt später: Rechnet man denselben Spielbaum separat über den Flop hinaus, check-raist der Big Blind eine Bet von 1,8bb in 14,9% der Fälle, zum größten Teil Draws.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-15",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -112,7 +112,7 @@ Und 4-3 ist in keiner der beiden Ranges. **Im Kategorien-Panel des Poker-Solvers
 
 ## Wie unterscheiden sich die beiden Ranges auf 6-5-2?
 
-**Der Big Blind gewinnt bei den Paaren und verliert alles darüber.** Er hält mehr Top Pair, mehr Second Pair und mehr schwache Paare als der Button; Sets und Zwei Paare liegen exakt gleichauf; und seine Overpairs erreichen kaum die Hälfte der Overpairs des Buttons. Fast drei Viertel beider Ranges haben gar kein Paar – deshalb ist das hier ein Kampf um Overcards statt um Value, und deshalb wird die Hand, die ihn gewinnt, meist noch von einem Draw gejagt.
+**Der Big Blind gewinnt bei den Paaren und verliert alles darüber.** Er hält mehr Top Pair, mehr Second Pair und mehr schwache Paare als der Button; Sets und Zwei Paare liegen exakt gleichauf; und seine Overpairs erreichen kaum die Hälfte der Overpairs des Buttons. Fast drei Viertel beider Ranges haben gar kein Paar – deshalb ist das hier ein Kampf um Overcards statt um Value, und deshalb ist die Hand, die ihn gewinnt, meist noch gar nicht fertig – sie muss erst noch getroffen werden.
 
 ![Range-Zusammensetzung auf einem niedrigen Rainbow-Board: Der Big Blind liegt bei den Paaren vorn, der Button bei den Overpairs](/images/gto-srp-low-rainbow-ranges-de.webp "6♠5♥2♦ · Range-Zusammensetzung – der Big Blind vorn bei den Paaren, der Button bei den Overpairs")
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-10-16",
-  masterUpdated: "2026-10-02",
+  masterUpdated: "2026-10-16",
   readTime: "10 mnt",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-id.webp",
@@ -54,7 +54,7 @@ Pot 6bb berasal dari ==3 milik SB ditambah 3 milik BB==. Stack efektifnya ==100 
 
 Jumlah combo 572 versus 538 berbeda karena **kartu pada board menghapus combo yang memakai kartu tersebut**. Board K, T, dan 6 menghapus lebih banyak combo dari range yang banyak memuat kartu broadway. Jadi input range preflop tetap sama, sedangkan combo yang masih mungkin setelah flop berbeda.
 
-Tampilan memakai **big blind**: bet berlabel "Bet 2bb (33% pot)", dan EV memakai "EV (bb)".
+Tampilan memakai **big blind**: bet berlabel "Bet 2bb (33% dari pot)", dan EV memakai "EV (bb)".
 
 ## Seberapa sering SB melakukan bet di sini?
 
@@ -62,7 +62,7 @@ Tampilan memakai **big blind**: bet berlabel "Bet 2bb (33% pot)", dan EV memakai
 
 | Aksi pertama SB | Frekuensi | Combo |
 |---|---|---|
-| Bet 2bb (33% pot) | **9,6%** | 55,0 |
+| Bet 2bb (33% dari pot) | **9,6%** | 55,0 |
 | Check | **90,4%** | 517,0 |
 
 Posisinya di antara contoh lain terlihat pada tabel berikut.

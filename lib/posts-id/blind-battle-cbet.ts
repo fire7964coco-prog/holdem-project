@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop K♥T♦6♠ menghasilkan bet 67,4% dan check 32,6% untuk SB. Pada tujuh single-raised pot sebelumnya, pemain tanpa posisi hanya bet 0,1%–23,7%. Ada dua perubahan: pemain OOP kini adalah raiser, dan board mendukung range-nya. Keduanya membuat realisasi equity SB mencapai 103,1%, meskipun ia bertindak lebih dulu.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   readTime: "10 mnt",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-id.webp",
@@ -51,7 +51,7 @@ Hasil | SB bet **67,4%** — single-raised pot pertama dalam seri dengan mayorit
 
 Pot 6bb berasal dari ==3 milik SB ditambah 3 milik BB==. Kedua blind ikut bermain, sehingga tidak ada blind dari pemain yang fold di luar hitungan tersebut. Stack efektifnya ==100 − 3 = 97bb==.
 
-Tampilan memakai **big blind**: "Bet 2bb (33% pot)" menunjukkan jumlah bet beserta persentase pot, dan EV memakai label "EV (bb)".
+Tampilan memakai **big blind**: "Bet 2bb (33% dari pot)" menunjukkan jumlah bet beserta persentase pot, dan EV memakai label "EV (bb)".
 
 ## Seberapa sering small blind melakukan bet?
 
@@ -59,7 +59,7 @@ Tampilan memakai **big blind**: "Bet 2bb (33% pot)" menunjukkan jumlah bet beser
 
 | Aksi pertama SB | Frekuensi | Combo |
 |---|---|---|
-| Bet 2bb (33% pot) | **67,4%** | 362,1 |
+| Bet 2bb (33% dari pot) | **67,4%** | 362,1 |
 | Check | 32,6% | 175,9 |
 
 Perbedaannya terlihat jelas jika disejajarkan dengan contoh lain dalam seri.

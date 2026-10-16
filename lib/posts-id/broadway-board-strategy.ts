@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   tags: ["nut advantage", "range advantage", "flop Broadway", "two-tone board", "draw", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "🎴",
@@ -55,8 +55,8 @@ Strukturnya sama dengan spot sebelumnya: button (BTN) open ke 2,5bb, big blind (
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **99,9%** | 452,5 |
-| Bet 1,8bb (33% pot) | 0,1% | 0,3 |
-| Bet 4,1bb (75% pot) | 0,0% | 0,2 |
+| Bet 1,8bb (33% dari pot) | 0,1% | 0,3 |
+| Bet 4,1bb (75% dari pot) | 0,0% | 0,2 |
 
 Di flop kering K-high, frekuensi check adalah 99,8%. **Saat dua pertiga range memiliki draw, check justru makin menyeluruh.** Perubahan yang berlawanan dengan dugaan inilah alasan spot ini menarik untuk dipelajari.
 

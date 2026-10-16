@@ -547,14 +547,14 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en/solver</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/ja/solver</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -5524,7 +5524,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -5567,7 +5567,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -5605,7 +5605,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -5626,7 +5626,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -6753,7 +6753,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -6796,7 +6796,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -6834,7 +6834,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -6855,7 +6855,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -7947,7 +7947,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -8028,7 +8028,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -8049,7 +8049,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -10703,7 +10703,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -10724,7 +10724,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -10745,7 +10745,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -10766,7 +10766,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/a-high-board-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -10826,7 +10826,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -10868,7 +10868,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/broadway-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -10890,7 +10890,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/donk-bet-strategy</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -11732,7 +11732,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/k-high-board-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -11769,7 +11769,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/low-board-check-raise</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -11790,7 +11790,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/monotone-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/monotone-board-strategy" />
@@ -11812,7 +11812,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/paired-board-strategy</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/paired-board-strategy" />
@@ -14155,7 +14155,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -14198,7 +14198,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -14219,7 +14219,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -14240,7 +14240,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -14679,7 +14679,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -14722,7 +14722,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -14760,7 +14760,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/blind-battle-cbet</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -14781,7 +14781,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -15717,7 +15717,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/low-board-check-raise</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />

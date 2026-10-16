@@ -21,8 +21,8 @@ export const POST: Post = {
   tldr: "Nach einer 3-Bet des Big Blinds und einem Call des Buttons bekommt der Flop 8♦5♣2♠ in 97,8% der Fälle eine Bet über zwei Drittel des Pots. Das Seltsame: Von den 83 Combos des Big Blinds haben genau drei mit diesem Board ein Paar gemacht – die A5s –, und keines von 88, 55 oder 22 ist überhaupt in der Range. Die Bet geht trotzdem raus, weil die Range in 36 Combos Overpairs und 40 Combos A-High zerfällt, mit fast nichts dazwischen – nur die drei A5s. Eine polarisierte Form bettet groß.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🎲",
@@ -170,7 +170,7 @@ Der Grund ist, wo die Sets liegen. **Der Button ist der einzige Spieler, der ein
 
 ## Prüf es selbst nach
 
-Jede Zahl hier findest du so: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Niedriges, trockenes Board** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
+Jede Zahl hier findest du so: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Niedriges, trockenes Board** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und der Tagesaufgabe im Konto speichern und auf anderen Geräten weiterführen.
 
 Such im Panel **Hände** nach der **fehlenden Zeile „Set/Drilling“**. Stell dann **Spieler** auf **IP (BTN (Caller))**, und sie erscheint mit 6,3%. Diese eine Zeile erzählt die ganze Geschichte, wem die Spitze dieses Boards gehört. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 

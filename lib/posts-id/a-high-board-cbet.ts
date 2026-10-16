@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop A-high", "dry board", "range advantage", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "9 mnt",
   emoji: "🅰️",
@@ -46,7 +46,7 @@ Button (BTN) open ke 2,5bb, big blind (BB) call, dan pemain lain fold. Dua pemai
 | Rake | Tidak dimodelkan |
 | Tanggal pengamatan | 2026-08-19, hasil Spot belajar |
 
-Pot menjadi 5,5bb dari open button 2,5bb, call big blind sebesar total 2,5bb, serta small blind 0,5bb yang sudah fold. Semua angka di layar memakai satuan big blind: taruhan ditampilkan sebagai “Bet 1,8bb (33% pot)”, sedangkan expected value (EV), atau rata-rata hasil, sebagai “EV (bb)”.
+Pot menjadi 5,5bb dari open button 2,5bb, call big blind sebesar total 2,5bb, serta small blind 0,5bb yang sudah fold. Semua angka di layar memakai satuan big blind: taruhan ditampilkan sebagai “Bet 1,8bb (33% dari pot)”, sedangkan expected value (EV), atau rata-rata hasil, sebagai “EV (bb)”.
 
 ## Berapa frekuensi c-bet yang baik di flop kering A-high?
 
@@ -57,8 +57,8 @@ Secara istilah, caller memang tidak melakukan c-bet. C-bet adalah taruhan flop d
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **98,2%** | 455,5 |
-| Bet 1,8bb (33% pot) | 1,0% | 4,5 |
-| Bet 4,1bb (75% pot) | 0,9% | 3,9 |
+| Bet 1,8bb (33% dari pot) | 1,0% | 4,5 |
+| Bet 4,1bb (75% dari pot) | 0,9% | 3,9 |
 
 Dari 464 combo, hanya sekitar delapan combo yang bet: total 1,9% dari kedua ukuran, setelah pembulatan. Untuk penerapan sederhana, **big blind dapat memperlakukan board ini sebagai spot tanpa lead.**
 

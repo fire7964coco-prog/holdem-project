@@ -18,8 +18,8 @@ export const POST: Post = {
   tldr: "Nach einem Open-Raise des Small Blinds und einem Call des Big Blinds setzt der Small Blind auf dem Flop 7♦6♦5♣ nur in 9,6% der Fälle und checkt in 90,4%. Pot, Stack, SPR, Bet Size und beide Ranges sind identisch mit dem vorherigen Spot – nur die drei Boardkarten haben sich geändert, und die Bet ist von 67,4% auf 9,6% eingebrochen. Der Range-Vorteil aus dem Preflop war ein Vorteil bei hohen Karten, und ein niedriges, verbundenes Board löscht ihn komplett aus. Die Equity des Small Blinds kippt auf 49,6% gegen 50,4%, und seine Realisierung out of position fällt auf 85,3%.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🪜",
@@ -218,7 +218,7 @@ Die 9,6% entstehen, indem ein wenig Value mit ein paar Draws gemischt wird. Das 
 
 ## Prüf es selbst nach
 
-Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Verbundenes Low-Board, Two-Tone** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
+Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Verbundenes Low-Board, Two-Tone** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und der Tagesaufgabe im Konto speichern und auf anderen Geräten weiterführen.
 
 **Klick zwischen diesem Spot und „K-High mit einer Zehn“ hin und her**, dem vorherigen Spot. Die Spielerauswahl zeigt bei beiden „OOP (SB (Open-Raiser))“, Pot und Stack sind identisch – und die Matrix wechselt komplett die Farbe. Kürzer zeigt nichts in dieser Serie, was ein Board tatsächlich bewirkt. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 

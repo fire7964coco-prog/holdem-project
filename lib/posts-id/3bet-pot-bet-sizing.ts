@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♥T♥7♠ dalam pot 3-bet, big blind memilih bet dua pertiga pot (14,9bb) sebanyak 98,4%. Bet kecil mendapat 0,7% dan check 0,8% — bersama-sama hanya sekitar satu combo dari 73. Pada A♦K♠2♥, range preflop yang sama membagi sizing 57,8/42,2. Di sini pembagian itu hampir hilang: draw lawan harus membayar harga lebih tinggi untuk melanjutkan. Angka 98,4% adalah frekuensi bet besar, bukan seluruh bet.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-10-16",
   masterUpdated: "2026-09-26",
   readTime: "12 mnt",
   emoji: "💧",
@@ -56,9 +56,9 @@ Pot 22,5bb berasal dari ==11 untuk 3-bet + 11 untuk call + 0,5 small blind yang 
 
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
-| Bet 14,9bb (66% pot) | **98,4%** | 71,9 |
+| Bet 14,9bb (66% dari pot) | **98,4%** | 71,9 |
 | Check | 0,8% | 0,6 |
-| Bet 7,4bb (33% pot) | 0,7% | 0,5 |
+| Bet 7,4bb (33% dari pot) | 0,7% | 0,5 |
 
 Jumlah combo tidak bulat karena **dibobot menurut frekuensi**, bukan dibagi menjadi kelompok mutlak. Beberapa hand mencampur sedikit check dan bet kecil ke dalam strategi yang hampir selalu bet besar. Pada frekuensi di bawah satu persen, sulit memisahkan campuran yang berarti dari sisa ketidakpresisian perhitungan; jangan menjadikannya instruksi praktis yang terpisah. Total kedua ukuran bet adalah 99,1%, sedangkan 98,4% khusus ukuran besar. Frekuensi check tetap mengikuti tampilan 0,8%; selisih 0,1 poin persentase pada jumlah seluruh aksi berasal dari pembulatan.
 
@@ -215,7 +215,7 @@ Bagian ini mengasumsikan **heads-up, pot 3-bet, SPR 4**. Tambahkan cold-caller, 
 
 Buka [solver GTO gratis](/id/solver), lalu pilih **Spot belajar → Board dinamis two-tone → ⚡ Lihat hasil**.
 
-Perhatikan ringkasan aksi: **Bet 14,9bb (66% pot) · 98,4% · 71,9 combo**. Dua opsi lainnya sama-sama di bawah satu persen. Lalu ganti **Pemain** ke **IP (BTN)** dan lihat kategori yang tidak muncul: **tidak ada baris Overpair maupun Flush draw**. Kategori bernilai nol tidak digambar; dua ketiadaan itu menjelaskan banyak hal dalam artikel ini.
+Perhatikan ringkasan aksi: **Bet 14,9bb (66% dari pot) · 98,4% · 71,9 combo**. Dua opsi lainnya sama-sama di bawah satu persen. Lalu ganti **Pemain** ke **IP (BTN)** dan lihat kategori yang tidak muncul: **tidak ada baris Overpair maupun Flush draw**. Kategori bernilai nol tidak digambar; dua ketiadaan itu menjelaskan banyak hal dalam artikel ini.
 
 Selanjutnya buka **Trainer GTO** di sidebar. Hand dipilih sesuai bobot range, lalu hasil menampilkan frekuensi campuran dan **kerugian EV dalam bb**. Gratis, tanpa instal dan tanpa akun.
 

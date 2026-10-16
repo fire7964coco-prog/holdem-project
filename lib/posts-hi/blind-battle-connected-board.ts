@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "SB open और BB call के बाद 7♦6♦5♣ पर पहला action 9.6% bet और 90.4% check है। पिछले K♥T♦6♠ स्पॉट जैसा ही pot, stack, SPR, उपलब्ध size और दोनों preflop ranges हैं। केवल बोर्ड बदला, और high cards की बढ़त मिट गई। Equity 49.6% बनाम 50.4% पर उलटती है तथा SB का EQR 85.3% रह जाता है।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-15",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   readTime: "10 मिनट",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-hi.webp",
@@ -199,7 +199,7 @@ Sets इसका अपवाद हैं। दोनों के पास 
 
 ## सॉल्वर में खुद कैसे देखें?
 
-[GTO सॉल्वर](/hi/solver) में **अभ्यास स्पॉट → “जुड़ा हुआ low board, two-tone” → [⚡ परिणाम देखें]** चुनें। प्रश्न की तरह खेलने के लिए sidebar से [GTO Trainer](/hi/solver) खोलें। यादृच्छिक हैंड पर action चुनने के बाद mixed frequency और **EV loss (bb)** दिखता है। बिना login का रिकॉर्ड ब्राउज़र में रहता है। Study/Daily का इतिहास वैकल्पिक login से sync हो सकता है; सीधे गणना किए स्पॉट के प्रश्न और अभ्यास रिकॉर्ड login के बाद भी डिवाइस तक सीमित हैं।
+[GTO सॉल्वर](/hi/solver) में **अभ्यास स्पॉट → “जुड़ा हुआ low board, two-tone” → [⚡ परिणाम देखें]** चुनें। प्रश्न की तरह खेलने के लिए sidebar से [GTO Trainer](/hi/solver) खोलें। यादृच्छिक हैंड पर action चुनने के बाद mixed frequency और **EV loss (bb)** दिखता है। बिना login का रिकॉर्ड ब्राउज़र में रहता है। अभ्यास स्पॉट/आज की चुनौती का इतिहास वैकल्पिक login से sync हो सकता है; सीधे गणना किए स्पॉट के प्रश्न और अभ्यास रिकॉर्ड login के बाद भी डिवाइस तक सीमित हैं।
 
 **पिछले “K-high board पर T” से बारी-बारी तुलना करें।** दोनों में OOP (SB (opener)), एक ही pot और stack हैं, फिर भी matrix का रंग उलटता है। बोर्ड का असर समझने की इस सीरीज़ की सबसे सीधी तुलना यही है। मुफ़्त है; install या account ज़रूरी नहीं।
 

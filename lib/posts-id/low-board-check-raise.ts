@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 6♠5♥2♦, BB check 96,8% dan lead 3,2%, meski equity 48,3% adalah yang tertinggi kedua dari tujuh contoh BTN vs BB. Hanya 4-3 yang membentuk straight, dan hand itu tidak ada dalam kedua range. Kedua pemain sama-sama memiliki set, sehingga BB tidak unggul di puncak range. Dalam perhitungan lanjutan yang terpisah, BB check-raise 14,9% saat menghadapi bet 1,8bb, menggunakan set, two pair, dan banyak straight draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "11 mnt",
   emoji: "🌊",
@@ -61,7 +61,7 @@ Pilihan tunggal ini penting saat membaca layar. Contoh sebelumnya menawarkan 33%
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **96,8%** | 471,7 |
-| Bet 1,8bb (33% pot) | **3,2%** | 15,3 |
+| Bet 1,8bb (33% dari pot) | **3,2%** | 15,3 |
 
 Frekuensi lead 3,2% bukan satu hand tertentu yang selalu mencoba mencuri pot. Ia tersebar tipis di berbagai hand. Dalam analisis sumber, lead ini merupakan pilihan yang hampir tidak berbeda EV-nya dari alternatifnya; karena itu frekuensinya dapat sedikit bergeser antarperhitungan.
 
@@ -141,7 +141,7 @@ Pertama, tindakan BTN setelah BB check:
 
 | BTN setelah BB check | Frekuensi | Combo |
 |---|---|---|
-| Bet 1,8bb (33% pot) | **63,0%** | 316,5 |
+| Bet 1,8bb (33% dari pot) | **63,0%** | 316,5 |
 | Check back | 37,0% | 186,5 |
 
 Lalu respons BB:

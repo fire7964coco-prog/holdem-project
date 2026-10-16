@@ -21,8 +21,8 @@ export const POST: Post = {
   tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds bettet der Small Blind auf dem Flop K♥T♦6♠ in 67,4% der Fälle und checkt in 32,6%. In den sieben Single Raised Pots weiter vorne in dieser Serie bettete der Spieler out of position nur 0,1% bis 23,7% – und geändert haben sich zwei Dinge, nicht eines. Hier ist der Spieler out of position der Raiser statt der Caller, und das Board begünstigt seine Range. Zusammen heben sie die Equity-Realisierung out of position auf 103,1%.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "⚔️",
@@ -209,7 +209,7 @@ Die 96,1% des Big Blinds sind die andere Seite derselben Geschichte. **Position 
 
 ## Prüf es selbst nach
 
-Jede Zahl hier findest du wieder: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **K-High mit einer Zehn** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
+Jede Zahl hier findest du wieder: Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **K-High mit einer Zehn** → **⚡ Ergebnisse ansehen**. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste – er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und der Tagesaufgabe im Konto speichern und auf anderen Geräten weiterführen.
 
 Schau zuerst auf die Spielerbeschriftung oben: **„OOP (SB (Open-Raiser))“**. Sobald du siehst, dass sie sich vom „OOP (BB (Caller))“ der früheren Spots unterscheidet, ist sofort klar, was dieser Artikel mit „die Rolle hat sich geändert“ meint. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 

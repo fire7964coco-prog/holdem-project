@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 6♣6♦3♥, big blind check 97,0% meski memiliki 26 combo trips, lebih banyak daripada 20 milik button. Trips hanya sebagian kecil range: 18,4% range BB memiliki hand di atas pair bawaan board, sementara 81,6% sisanya mengandalkan high card. Pocket pair yang lebih tinggi dari enam menjadi kuat; TT memiliki equity 76,0% dalam contoh ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "👯",
@@ -70,8 +70,8 @@ Trips lebih mudah dimiliki bersama oleh kedua pemain daripada set. **Lawan juga 
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **97,0%** | 471,7 |
-| Bet 4,1bb (75% pot) | **2,0%** | 9,6 |
-| Bet 1,8bb (33% pot) | 1,0% | 4,7 |
+| Bet 4,1bb (75% dari pot) | **2,0%** | 9,6 |
+| Bet 1,8bb (33% dari pot) | 1,0% | 4,7 |
 
 Pada dua board dengan lead yang cukup sering, bet kecil mengungguli bet besar lebih dari dua banding satu: 16,8% lawan 6,9% pada [spot donk bet 9-8-7](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp"), serta 8,0% lawan 3,2% pada [flop monotone](/id/blog/monotone-board-strategy). Di sini perbandingannya berbalik. Tabel per-hand nanti memperlihatkan kelompok yang menyumbang kecenderungan tersebut.
 
@@ -164,7 +164,7 @@ Empat combo tersebut menjelaskan mengapa bagian teratas board berpasangan tetap 
 
 **Trips dan quads lebih sering memilih ukuran besar ketika mereka bet.** Perhatikan beberapa combo berikut:
 
-| Hand | Bet 4,1bb (75% pot) | Bet 1,8bb (33% pot) | Check |
+| Hand | Bet 4,1bb (75% dari pot) | Bet 1,8bb (33% dari pot) | Check |
 |---|---|---|---|
 | K♠6♠ | **7,8%** | 0,3% | 92,0% |
 | Q♥6♥ | **7,9%** | 0,7% | 91,5% |

@@ -122,7 +122,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=zh";
 const SPEC: [string, string][] = [
   ["价格", "免费——全部功能，不限次数"],
   ["安装", "不需要——在浏览器里运行（WebAssembly）"],
-  ["账号", "不需要（登录可同步教学案例和每日题目的记录 · 自己算的牌局和练习记录即使登录也只留在这台设备上）"],
+  ["账号", "不需要（登录可同步教学案例和今日题目的记录 · 自己算的牌局和练习记录即使登录也只留在这台设备上）"],
   ["覆盖范围", "翻牌后、单挑（翻牌·转牌·河牌）"],
   ["在哪里计算", "在你自己的设备上，不经过我们的服务器"],
   ["兼容性", "现代浏览器——Windows、macOS、Linux、手机"],
@@ -620,7 +620,7 @@ export default function SolverClientZh({ reviews }: { reviews?: React.ReactNode 
             发牌按 <strong className="text-foreground">GTO 范围里的真实权重</strong>来——一手牌出现的频率，就是你在那个局面里真会拿到它的频率
           </li>
           <li className="text-muted-foreground">
-            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏了 EV 的题排回来）都建立在做题记录上。记录默认存在这台设备上；登录后，教学案例和每日题目的记录可以同步到别的设备，但每日题目的连续天数和完成标记只留在各自的设备上。自己算的牌局和对应的练习记录，即使登录也只留在这台设备上
+            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏了 EV 的题排回来）都建立在做题记录上。记录默认存在这台设备上；登录后，教学案例和今日题目的记录可以同步到别的设备，但今日题目的连续天数和完成标记只留在各自的设备上。自己算的牌局和对应的练习记录，即使登录也只留在这台设备上
           </li>
         </ul>
         <div className="mt-5">

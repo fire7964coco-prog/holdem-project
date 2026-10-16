@@ -139,7 +139,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=zh-hant";
 const SPEC: [string, string][] = [
   ["價格", "免費——全部功能，不限次數"],
   ["安裝", "不需要——在瀏覽器裡執行（WebAssembly）"],
-  ["帳號", "不需要（登入可同步教學案例和每日題目的紀錄 · 自己算的牌局和練習紀錄即使登入也只留在這台裝置上）"],
+  ["帳號", "不需要（登入可同步教學案例和今日題目的紀錄 · 自己算的牌局和練習紀錄即使登入也只留在這台裝置上）"],
   ["涵蓋範圍", "翻牌後、單挑（翻牌·轉牌·河牌）"],
   ["在哪裡計算", "在你自己的裝置上，不經過我們的伺服器"],
   ["相容性", "現代瀏覽器——Windows、macOS、Linux、手機"],
@@ -622,7 +622,7 @@ export default function SolverClientZhHant({ reviews }: { reviews?: React.ReactN
             發牌按 <strong className="text-foreground">GTO 範圍裡的真實權重</strong>來——一手牌出現的頻率，就是你在那個局面裡真會拿到它的頻率
           </li>
           <li className="text-muted-foreground">
-            連勝紀錄、弱點分析和<strong className="text-foreground">「複習」機制</strong>（把你虧了 EV 的題排回來）都建立在做題紀錄上。紀錄預設存在這台裝置上；登入後，教學案例和每日題目的紀錄可以同步到別的裝置，但每日題目的連續天數和完成標記只留在各自的裝置上。自己算的牌局和對應的練習紀錄，即使登入也只留在這台裝置上
+            連勝紀錄、弱點分析和<strong className="text-foreground">「複習」機制</strong>（把你虧了 EV 的題排回來）都建立在做題紀錄上。紀錄預設存在這台裝置上；登入後，教學案例和今日題目的紀錄可以同步到別的裝置，但今日題目的連續天數和完成標記只留在各自的裝置上。自己算的牌局和對應的練習紀錄，即使登入也只留在這台裝置上
           </li>
         </ul>
         <div className="mt-5">

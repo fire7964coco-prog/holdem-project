@@ -1,3 +1,10 @@
+## 2026-10-16 (12) — 앱 축어 정렬 2차 CK-16 + 로케일별 Daily 기능명 · MB-360
+
+- Daily 기능명 = 각 앱 TrainerPage daily 축어: zh·zh-hant «今日题目/題目» · es «Reto del día» · de «Tagesaufgabe» · hi «अभ्यास स्पॉट/आज की चुनौती» — 글 4편 + /solver 랜딩(zh·zh-hant·es·de).
+- id «(N% pot)»→«(N% dari pot)» 13편 28 · de low-board L115 EN 관계 복원 · fr 시뮬레이터 «?» NBSP 1.
+- 안 바꿈 5종(설명어·일반명사·EN 동형) 근거 = MB-360. 남김 = 시뮬레이터 ruleText «pot-sized raise» 16로케일(엔진 확인 후 별도).
+- 스탬프: 4편 × 10로케일 masterUpdated 10-16(EN 10-16 변경 반영 끝) → MB-359의 «다른 로케일 낡음 표시» 해소. 게이트: audit:hard 9 slug 🔴 0 · staleness 4편 미검출 · check:gto·de-style·cjk 이상 없음.
+
 ## 2026-10-16 (11) — 앱 축어 정렬 CJ-7·8(zh·ja + EN-먼저 Daily Puzzle) · MB-359
 
 - 근거 = 솔버 소스 라벨(HandBreakdown·hand-categories·TrainerPage·GuidePage·ActionSummary·ResultChance). 치환은 .mjs로 자리 수를 미리 정해 두고 어긋나면 중단.

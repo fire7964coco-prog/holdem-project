@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setelah big blind 3-bet dan button call, flop 8♦5♣2♠ mendapat bet dua pertiga pot sebanyak 97,8%. Dari 83 combo big blind, hanya tiga A5s yang membentuk pair dengan board; 88, 55, dan 22 sama sekali tidak ada dalam range contoh ini. Bet besar tetap dominan karena range terbagi menjadi 36 combo overpair dan 40 combo Ace-High, dengan hampir tidak ada hand berkekuatan sedang di antaranya. Bentuk range yang terpolarisasi menjelaskan ukuran tersebut.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   readTime: "10 mnt",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-id.webp",
@@ -55,9 +55,9 @@ Pot 22,5bb berasal dari ==11 untuk 3-bet + 11 untuk call + 0,5 small blind yang 
 
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
-| Bet 14,9bb (66% pot) | **97,8%** | 81,1 |
+| Bet 14,9bb (66% dari pot) | **97,8%** | 81,1 |
 | Check | 2,0% | 1,7 |
-| Bet 7,4bb (33% pot) | 0,3% | 0,2 |
+| Bet 7,4bb (33% dari pot) | 0,3% | 0,2 |
 
 Yang menarik, **[Q-T-7](/id/blog/3bet-pot-bet-sizing) yang penuh draw dan board ini yang nyaris tanpa draw menggunakan ukuran serta frekuensi hampir sama**. Pada contoh sebelumnya, ukuran besar menaikkan harga untuk draw lawan. Di sini BTN tidak memiliki draw langsung yang perlu dikenai harga tersebut. Kesimpulannya serupa, tetapi alasannya berbeda.
 

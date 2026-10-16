@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "SB के open और BB के call के बाद K♥T♦6♠ पर पहला action 67.4% bet और 32.6% check है। पहले सात single-raised pots में OOP खिलाड़ी केवल 0.1% से 23.7% bet करता था। यहाँ दो बातें बदलीं: OOP अब caller की जगह raiser है, और बोर्ड उसकी range को सूट करता है। दोनों मिलकर OOP का EQR 103.1% तक पहुँचाते हैं।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   readTime: "10 मिनट",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-hi.webp",
@@ -193,7 +193,7 @@ BB का 96.1% उसी कहानी का दूसरा पक्ष �
 
 ## सॉल्वर में यह उदाहरण कैसे देखें?
 
-[GTO सॉल्वर](/hi/solver) खोलकर **अभ्यास स्पॉट → “K-high board पर T” → [⚡ परिणाम देखें]** चुनें। अभ्यास प्रश्न चाहिए तो sidebar से [GTO Trainer](/hi/solver) खोलें। वह यादृच्छिक हैंड देता है; action चुनने के बाद mixed frequency और आपके चुनाव का **EV loss (bb)** दिखाता है। बिना login का इतिहास ब्राउज़र में रहता है। Study/Daily रिकॉर्ड वैकल्पिक login से sync हो सकते हैं; सीधे गणना किए स्पॉट के प्रश्न और रिकॉर्ड login के बाद भी डिवाइस तक सीमित हैं।
+[GTO सॉल्वर](/hi/solver) खोलकर **अभ्यास स्पॉट → “K-high board पर T” → [⚡ परिणाम देखें]** चुनें। अभ्यास प्रश्न चाहिए तो sidebar से [GTO Trainer](/hi/solver) खोलें। वह यादृच्छिक हैंड देता है; action चुनने के बाद mixed frequency और आपके चुनाव का **EV loss (bb)** दिखाता है। बिना login का इतिहास ब्राउज़र में रहता है। अभ्यास स्पॉट/आज की चुनौती रिकॉर्ड वैकल्पिक login से sync हो सकते हैं; सीधे गणना किए स्पॉट के प्रश्न और रिकॉर्ड login के बाद भी डिवाइस तक सीमित हैं।
 
 पहले खिलाड़ी का label देखें: **“OOP (SB (opener))”**। पहले स्पॉटों के “OOP (BB (caller))” से उसका अंतर भूमिका के बदलाव को तुरंत स्पष्ट करता है। मुफ़्त है; install या account आवश्यक नहीं।
 

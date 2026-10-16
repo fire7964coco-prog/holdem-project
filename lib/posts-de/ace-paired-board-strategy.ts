@@ -19,8 +19,8 @@ export const POST: Post = {
   tldr: "Nach einem Open des Small Blinds und einem Call des Big Blinds bettet der Small Blind den Flop A♠A♥6♦ in 80,1% der Fälle (79,6% mit einem Drittel des Pots, 0,5% mit drei Vierteln, Check 19,8%). Das ist die Umkehrung der 3,0%, die der Big Blind als Caller gegen den Button auf dem gepaarten Board 6♣6♦3♥ bettete – und den Unterschied macht weniger, dass das Board gepaart ist, als welche Karte sich gepaart hat und zu wessen Range sie passt (neben dem Board haben sich auch Sitz und Ranges geändert). Hände, die mit einem Ass Trips machen, stehen bei 88 Combos gegen 66, und 16 dieser Combos, A-K und A-Q, fehlen in der Calling-Range komplett.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-16",
+  masterUpdated: "2026-10-16",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🅰️",
@@ -182,7 +182,7 @@ Der Grund liegt darin, **wer dich callt.** K-K macht mit den Assen des Boards Zw
 
 ## Prüf es selbst nach
 
-Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Board mit gepaartem Ass** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste: Er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen.
+Öffne den [kostenlosen Poker-Solver](/de/solver), geh zu **Lernspots** und wähle **Board mit gepaartem Ass** → **⚡ Ergebnisse ansehen** – dort erscheint jede Zahl aus diesem Artikel. Willst du denselben Spot stattdessen als Aufgabe spielen, öffne den [GTO-Trainer](/de/solver) in der Seitenleiste: Er teilt dir eine zufällige Hand aus, und sobald du eine Aktion wählst, zeigt er die gemischte Frequenz und den **EV-Verlust (bb)** deiner Wahl. Ohne Login bleibt dein Verlauf auf diesem Gerät; mit Login kannst du den Verlauf aus Lernspots und der Tagesaufgabe im Konto speichern und auf anderen Geräten weiterführen.
 
 **Klick dich im Wechsel mit dem gepaarten Board 6-6-3 durch.** Beides sind gepaarte Boards, und die Matrizen haben entgegengesetzte Farben. Arbeite die Lernspots einmal durch, und es bleibt eine Erkenntnis: Schau zuerst nicht darauf, **was für ein Board** es ist, sondern darauf, **an wessen Range dieses Board andockt**. Kostenlos, nichts zu installieren, ohne Konto nutzbar.
 

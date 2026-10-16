@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop K-high", "range check", "check-back range", "delayed c-bet", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "9 mnt",
   emoji: "👑",
@@ -57,8 +57,8 @@ Pot berasal dari ==2,5 open + 2,5 call + 0,5 small blind yang fold = 5,5bb==. St
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **99,8%** | 473,0 |
-| Bet 1,8bb (33% pot) | 0,1% | 0,6 |
-| Bet 4,1bb (75% pot) | 0,1% | 0,4 |
+| Bet 1,8bb (33% dari pot) | 0,1% | 0,6 |
+| Bet 4,1bb (75% dari pot) | 0,1% | 0,4 |
 
 Satu combo dari 474 sangat kecil untuk dijadikan cabang strategi tersendiri. **Di flop kering K-high ini, big blind praktis tidak memiliki lead.** Untuk penerapan di meja, menyederhanakannya menjadi selalu check sangat masuk akal.
 

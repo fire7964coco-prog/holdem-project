@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, big blind check 88,8%, bet kecil 8,0%, dan bet besar hanya 3,2%. Flush sudah terbentuk dengan dua sekop, sehingga bet besar cenderung menyaring lawan ke hand yang lebih kuat. Delapan combo nut flush rata-rata check 69,9%; flush selain nuts bahkan check 81,4%. Angka ini menggambarkan keputusan pertama BB, bukan frekuensi bet BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "♠️",
@@ -55,8 +55,8 @@ Hasil | Bet besar 3,2% — ukuran besar jarang dipakai
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **88,8%** | 415,7 |
-| Bet 1,8bb (33% pot) | 8,0% | 37,4 |
-| Bet 4,1bb (75% pot) | **3,2%** | 14,9 |
+| Bet 1,8bb (33% dari pot) | 8,0% | 37,4 |
+| Bet 4,1bb (75% dari pot) | **3,2%** | 14,9 |
 
 Perubahan utamanya adalah **keseluruhan frekuensi lead turun**, bukan sekadar perbandingan ukuran di dalamnya. Bet besar mengambil sekitar 29% dari seluruh lead, hampir sama dengan 9-8-7: 6,9 dari 23,7. Yang berubah ialah totalnya. Lead turun dari 23,7% menjadi 11,2%, sementara bet besar turun dari 6,9% menjadi 3,2%. Keduanya kurang lebih menjadi separuh.
 

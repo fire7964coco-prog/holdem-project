@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   tags: ["donk bet", "flop 9-8-7", "range advantage", "straight", "ukuran taruhan", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-10-12",
+  updated: "2026-10-16",
   masterUpdated: "2026-09-26",
   readTime: "9 mnt",
   emoji: "🎯",
@@ -59,8 +59,8 @@ Button (BTN) open ke 2,5bb, big blind (BB) call, dan pemain lain fold. Dua pemai
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
 | Check | **76,2%** | 352,0 |
-| Bet 1,8bb (33% pot) | **16,8%** | 77,8 |
-| Bet 4,1bb (75% pot) | 6,9% | 32,2 |
+| Bet 1,8bb (33% dari pot) | **16,8%** | 77,8 |
+| Bet 4,1bb (75% dari pot) | 6,9% | 32,2 |
 
 Bandingkan keempat flop untuk melihat perubahan besarnya.
 

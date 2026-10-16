@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet seluruh range: check dibulatkan menjadi 0,0%, dan tidak ada satu pun dari 63 combo yang check sampai 0,1%. Pada tujuh contoh sebelumnya BB check 76,2%–99,9%. Peran preflop kini berbalik: BB melakukan 3-bet, sementara BTN call tanpa AA dan KK karena keduanya masuk range 4-bet. BB memiliki set tertinggi, dan SPR 4,0 memperkecil ruang untuk menunda pembangunan pot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-12",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "12 mnt",
   emoji: "🔥",
@@ -58,8 +58,8 @@ Pot 22,5bb berasal dari ==11 untuk 3-bet + 11 call + 0,5 small blind yang fold==
 
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
-| Bet 7,4bb (33% pot) | **57,8%** | 36,6 |
-| Bet 14,9bb (66% pot) | 42,2% | 26,4 |
+| Bet 7,4bb (33% dari pot) | **57,8%** | 36,6 |
+| Bet 14,9bb (66% dari pot) | 42,2% | 26,4 |
 | Check | **0,0%** | **0,0** |
 
 Persentase dan bobot combo memakai penggabungan yang berbeda sehingga pembagian sederhana tidak selalu sama: ==36,6 ÷ 63 = 58,1%==, sedangkan panel menunjukkan 57,8%. **Tabel mengutip nilai tampilan.** Perbedaan tersebut tidak mengubah hasil check dengan bobot nol.
