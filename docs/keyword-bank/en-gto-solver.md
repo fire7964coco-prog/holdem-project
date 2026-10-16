@@ -158,3 +158,14 @@ curl -s "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&
 - 🔴 **라쿠 `other-keywords`(LSI/PAA)는 영어 쿼리에도 «일본어 PAA»를 돌려준다**(이번에 실측).
   `gto solver`로 물었더니 `GTO Wizard 値段`·`ポーカーのGTOの勉強方法は？`가 나왔다.
   **영어 PAA 용도로 쓰지 마라.**
+
+## 🎬 영상 카피 확정 — 유튜브 제작 · 솔버 사용법 영상 다국어 엔딩·최종 화면 · 2026-10-16
+
+> 근거: 유튜브 폴더 `productions/holdemmaster-solver-tutorials/locales/review-package/full-review/` (Opus·Codex 아스트라 울트라 독립 전수 검수 → Fable 판정: fable-ja-zh.md · fable-en-pt-es.md · fable-r2.md). 원어민 미검수.
+
+- 영상 엔딩(4.9초 키네틱 타이포)과 유튜브 최종 화면 문구로 확정한 것. 영상은 올리면 고칠 수 없어 **영구히 참인 주장만** 쓴다:
+  「무료·결제 없음」은 영구 참(`클로드-프로그램만들기/확정_결정.md` §회원 전용 「돈은 받지 않는다」). 「가입 없이」는 핵심 기능 기준으로 유지(사장님 결정 A, 10-16) — 회원 전용 자료(림프 팟 등)를 보여 주는 영상에는 이 문구를 그대로 쓰지 않는다. 「제한 없이(No limits·不限次數·sem limites)」는 회원 한도 스위치가 켜지면 거짓이 되므로 영상에 쓰지 않는다.
+- 영상 엔딩·최종 화면 EN 확정: 「Free GTO Solver」 + 「No install · No signup · No payment」 · 「Rules · Strategy · Odds · Tournaments / All in one place.」 · 「Poker players worldwide / Community」 · 「Up next」「All solver lessons」「Subscribe」.
+  셋째 항목을 사이트 프로모처럼 「No limits」로 바꾸지 않는다(회원 한도 스위치 뒤 거짓). 영어 SaaS 관용 「No credit card」도 후보였으나 「결제 없이」 대응이 정확한 No payment 유지.
+- 영상 제목 후보(업로드 때 사장님 확정): 「How to Use a GTO Poker Solver for the First Time — Read Your First Result (Part 1)」 — `poker solver`(1,600)·`gto solver`(390) 포함, 랜딩 FAQ 「How do I use a poker solver for the first time?」(`app/en/solver/faq.ts:58`)와 같은 주제.
+- 앱 UI 낱말(영상 대본 정본): Study Spots · ⚡ View results · Solve it yourself · ← Back · Open the solver → · HoldemMaster GTO Trainer · Player: OOP (BB (Caller)) / IP (BTN (Opener)) · detail table · Hands / Draws 탭. EN 카드에는 해설 링크가 없다(`PresetPreview.vue:427-431` — 켤 때는 KO처럼 밑줄 글자 링크로).

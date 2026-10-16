@@ -271,7 +271,7 @@ es(스페인 브랜드가 굳어 있음)와 달리 **브라질은 매체형이 �
 FAQ **20문항**(빌드 산출물 `Question` 20개 실측). PAA 축어 2건 흡수 — `O que é um Solver?` ·
 `O que é reg poker?`(→ `O que é reg no poker?`).
 
-### 내부링크 (⚠ **`app/pt/`는 `blog`·`page.tsx`·`solver`뿐. `tournaments`도 없다**)
+### 내부링크 (🔴 10-16 정정: 아래 «tournaments 없음»은 낡은 기록 — 지금 `app/pt/`에 도구 페이지들이 있다 · `ls app/pt`로 확인)
 `holdem-starting-hands-chart`(첫 링크 · 프리플랍 넘김) · `holdem-pot-odds` · `holdem-equity` ·
 `holdem-position-play` · `holdem-3bet` · `holdem-strategy` · `holdem-reading-the-board` ·
 `holdem-glossary` · `holdem-continuation-bet` — **9종 전건 실존 확인**(빌드 후 재확인).

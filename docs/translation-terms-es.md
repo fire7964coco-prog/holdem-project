@@ -151,3 +151,14 @@
 
 ## QA = editor nativo escéptico (NO calculista)
 - Revisar: naturalidad (cero olor a traducción automática), términos locales de póker correctos (Color/Escalera/Póker no confundidos), coherencia de estilo (tú), residuos de otros idiomas (inglés/coreano/portugués), meta (desc ≤ 160), seoTitle con ángulo SERP local, enlaces (locale/whitelist), formato de números (grep: igual que EN). **NO recalcular manos, probabilidades ni verificar fechas/hechos** (ya validado en EN + ja).
+
+## 🎬 영상 카피 확정 — 유튜브 제작 · 솔버 사용법 영상 다국어 엔딩·최종 화면 · 2026-10-16
+
+> 근거: 유튜브 폴더 `productions/holdemmaster-solver-tutorials/locales/review-package/full-review/` (Opus·Codex 아스트라 울트라 독립 전수 검수 → Fable 판정: fable-ja-zh.md · fable-en-pt-es.md · fable-r2.md). 원어민 미검수.
+
+- 영상 엔딩(4.9초 키네틱 타이포)과 유튜브 최종 화면 문구로 확정한 것. 영상은 올리면 고칠 수 없어 **영구히 참인 주장만** 쓴다:
+  「무료·결제 없음」은 영구 참(`클로드-프로그램만들기/확정_결정.md` §회원 전용 「돈은 받지 않는다」). 「가입 없이」는 핵심 기능 기준으로 유지(사장님 결정 A, 10-16) — 회원 전용 자료(림프 팟 등)를 보여 주는 영상에는 이 문구를 그대로 쓰지 않는다. 「제한 없이(No limits·不限次數·sem limites)」는 회원 한도 스위치가 켜지면 거짓이 되므로 영상에 쓰지 않는다.
+- ① 「Solver GTO **gratis**」 + 상자 「Sin instalar · Sin registro · **Sin pagar nada**」(앱 «Nada que instalar, nada que pagar.»). 「Sin costo」를 쓴다면 LATAM 표기 costo.
+- ② 「Reglas · Estrategia · Probabilidades · Torneos」 + 「Todo en **un solo lugar**.」 · ③ 「Jugadores de **poker** de todo el mundo / Comunidad」 · 최종 화면 「A continuación」「Todas las clases del solver」「Suscríbete」(tú).
+- 🟡 poker / póker 문서 충돌: `local-voice/es-latam.md:59`(póker는 본문 polish) ↔ `es-gto-series-translation-brief.md:86`(본문도 poker). 영상 화면은 **poker**로 판정 — 엔딩이 붙는 GTO 해설 시리즈 본문이 무악센트(`a-high-board-cbet.ts` 7:0 · `donk-bet-strategy.ts` 10:0), 랜딩 제목 «Solver poker GTO gratis». 단 사이트 일부 표시 문구(`app/es/glossary/dict.ts:16`·`solver-client.tsx:427` 등)는 póker — 본체가 한쪽으로 정리할지 검토 필요.
+- 영상 제목·설명: `GTO` 단독 금지(과나후아토), 어순 `solver poker`(SD 0) > `solver de poker`(SD 46) (`app/es/solver/page.tsx:22-25`).

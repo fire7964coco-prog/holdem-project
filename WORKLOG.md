@@ -1,3 +1,10 @@
+## 2026-10-16 (21) — 다른 폴더 직접 기입분 확인·커밋(이번만 · 다음부터 MA «언어북 추가 제안»)
+
+- 검수장 `02cc1109`(it Seed=seme 용례 1행 · MA-598) = 원문 근거 2 · 기존 행 불변 → 유지(이미 본체 push에 함께 나감).
+- 유튜브 폴더 미커밋 6파일(en-gto-solver · terms es·ja·pt·zh·zh-hant 끝 «🎬 영상 카피 확정» 절) = 확인 후 커밋. 참조 실물 대조: `app/pt/tournaments/page.tsx` 있음 · es GTO 글 póker 0 · es glossary dict L16 «póker» · en poker solver 1.600/gto solver 390 = 같은 파일 표와 일치. 근거 = 영상 검수 패키지(원어민 미검수 명시).
+- 본체 정정: pt terms L205·pt-gto-solver L274 «/pt/tournaments 없음» 낡은 기록 표시(같은 파일 안 모순).
+- 판단 2(핸드오프 «자동 착수 금지»): es poker/póker · ja·zh·zh-hant 브랜드 표기.
+
 ## 2026-10-16 (20) — 언어북 신설(사장님 지시) · 언어 작업 전 필독 규칙
 
 - 언어별 자료 5종(① `translation-terms-<loc>` ② `keyword-bank/<loc>-*` ③ `local-voice/` ④ `docs/<loc>-*`·`tool-lanes/<loc>-*` ⑤ `multilingual-localization.mdc`)을 루트 `언어북/<loc>.md` 25장 + README 목차로 묶음. 파일은 옮기지 않음(링크 보존) · 생성기 `scripts/build-language-books.mjs` = `npm run langbook`.

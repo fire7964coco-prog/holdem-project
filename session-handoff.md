@@ -61,6 +61,7 @@
 - tr: 정본 `docs/tr-cluster-plan.md` + `docs/keyword-bank/tr-serp/00-brief` · 판단 3건(10-06): «pas»=fold · «poker terimleri» 주인 `/tr/glossary`(GSC에서 글과 같이 잡히면 글 301) · 솔버 RTA FAQ = 합법성 축 아님 · 회차 6(북키프로스) 데이터 공급 확정 전 금지.
 - 도구 확장 회차 3(퀴즈) = 사장님 판단(`docs/tools-locale-rollout-plan.md` §3).
 - /s 머리·꼬리 KO 크롬 = 사장님 «일단 그대로».
+- 유튜브 폴더 영상 카피 기입(10-16)에서 나온 판단 2: ⓐ es «poker/póker» 표기 충돌(GTO 글·랜딩 = poker ↔ glossary·solver-client 일부 = póker · `translation-terms-es.md` 끝 🎬 절) ⓑ 브랜드 표기 갈림 ja(ホールデムマスター/HoldemMaster) · zh·zh-hant(德州扑克大师/HoldemMaster/德扑大师) — 각 terms 끝 🎬 절.
 
 ## 사장님 지시 대기
 

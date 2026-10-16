@@ -202,6 +202,18 @@ Sources: pokernobrasil.com · checkraise.com.br · pokerlab.com.br · ggpoker.co
 
 ## 6. 구조 메모
 
-- `app/pt/`에 있는 것은 **`blog`·`page.tsx`·`solver`뿐**이다. **`/pt/tournaments`는 없다**(es에는 있다).
+- ~~`app/pt/`에 있는 것은 `blog`·`page.tsx`·`solver`뿐 · `/pt/tournaments`는 없다~~ → 🔴 **10-16 정정: 낡은 기록.** 지금 `app/pt/`에는 도구 페이지들(`tournaments` 포함)이 있다 — 링크 전에 `ls app/pt`로 확인.
   링크를 걸기 전에 `lib/posts-pt/<slug>.ts` 실존을 확인하라.
 - GTO 솔버 해설 시리즈 13편은 **pt에 0편**이다(ko·en에만 있다).
+
+## 🎬 영상 카피 확정 — 유튜브 제작 · 솔버 사용법 영상 다국어 엔딩·최종 화면 · 2026-10-16
+
+> 근거: 유튜브 폴더 `productions/holdemmaster-solver-tutorials/locales/review-package/full-review/` (Opus·Codex 아스트라 울트라 독립 전수 검수 → Fable 판정: fable-ja-zh.md · fable-en-pt-es.md · fable-r2.md). 원어민 미검수.
+
+- 영상 엔딩(4.9초 키네틱 타이포)과 유튜브 최종 화면 문구로 확정한 것. 영상은 올리면 고칠 수 없어 **영구히 참인 주장만** 쓴다:
+  「무료·결제 없음」은 영구 참(`클로드-프로그램만들기/확정_결정.md` §회원 전용 「돈은 받지 않는다」). 「가입 없이」는 핵심 기능 기준으로 유지(사장님 결정 A, 10-16) — 회원 전용 자료(림프 팟 등)를 보여 주는 영상에는 이 문구를 그대로 쓰지 않는다. 「제한 없이(No limits·不限次數·sem limites)」는 회원 한도 스위치가 켜지면 거짓이 되므로 영상에 쓰지 않는다.
+- ① 「Solver GTO **grátis**」(어순 = 앱 title) + 상자 「Sem instalar · Sem cadastro · **Sem pagar nada**」 — 「Sem pagar」만으로 끊으면 덜 다듬어 보임(앱 히어로 «Nada para instalar, nada para pagar.»).
+- ② 「Regras · Estratégia · Probabilidades · Torneios」 + 「Tudo em **um só lugar**.」 · ③ 「Jogadores de poker do mundo todo / Comunidade」 · ④ 「Solver GTO grátis · Estratégia de Hold’em · Comunidade」(큰 글씨에선 둥근 아포스트로피 ’).
+- 최종 화면: 「A seguir」 · 「Todas as aulas do solver」 · 「Inscreva-se」.
+- 「Torneios」 유지 근거: `/pt/tournaments` 허브가 이제 있다(`app/pt/tournaments/page.tsx:75`) — `pt-gto-solver.md` §6·§7의 「허브 없음」은 낡은 기록.
+- 영상 제목·설명: `solver` 단독 금지(엑셀) → `poker`와 붙인다. 검색량이 잡히는 무료 수식어는 `gratuito`(`app/pt/solver/solver-client.tsx:51-57`·`:66`).
