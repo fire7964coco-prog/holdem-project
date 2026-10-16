@@ -62,7 +62,10 @@ async function onStart(msg: NonNullable<TgUpdate["message"]>, payload: string, l
     p_username: from?.username ?? null,
     p_name: name,
   });
-  return send(chatId, !error && data ? t.linked : t.linkFailed, locale);
+  if (!error && data) return send(chatId, t.linked, locale);
+  // 이미 쓴 링크를 다시 눌렀는데 이 텔레그램이 이미 어느 계정에 붙어 있으면 «실패» 대신 «이미 연결됨»(10-16 사장님 시험)
+  const { data: linkedRow } = await db.from("telegram_links").select("user_id").eq("chat_id", chatId).maybeSingle();
+  return send(chatId, linkedRow ? t.alreadyLinked : t.linkFailed, locale);
 }
 
 export async function POST(req: Request) {
