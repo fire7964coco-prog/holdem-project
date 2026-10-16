@@ -1422,7 +1422,9 @@ export default function CommunityClient({
         {/* 모바일 하단 네비 — components/bottom-tab-bar.tsx로 추출됨(2026-08-04).
             여기 인라인으로 박혀 있던 탓에 블로그·계산기 등 다른 라우트엔 전역 네비가 아예 없었다.
             홈에서는 예전처럼 라우팅 없이 로컬 탭 전환(onSelect)을 유지한다. */}
-        <BottomTabBar active={tab} locale={pageLocale ?? "ko"} onSelect={setTab} />
+        {/* 라벨 언어 = 화면 나머지(L)·텔레그램 카드·봇 DM과 같은 값 — 루트 `/`에서 회원 언어가 비-ko면
+            탭만 «프로필»으로 남아 DM의 «Profile» 탭 안내와 어긋났다(MA-588 ④). SSR 초기값은 그대로 ko. */}
+        <BottomTabBar active={tab} locale={pageLocale ?? myLanguage} onSelect={setTab} />
       </div>
 
       {/* ════════════════════════════════════════════════════════

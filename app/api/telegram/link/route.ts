@@ -139,7 +139,7 @@ export async function PATCH(req: Request) {
     .update(
       want
         ? { marketing_consent_at: now.toISOString(), consent_tz: tz, updated_at: now.toISOString() }
-        : { marketing_consent_at: null, night_consent_at: null, consent_withdrawn_at: now.toISOString(), updated_at: now.toISOString() },
+        : { marketing_consent_at: null, night_consent_at: null, consent_tz: null, consent_withdrawn_at: now.toISOString(), updated_at: now.toISOString() },
     )
     .eq("user_id", userId);
   if (error) return json({ ok: false, error: "unavailable" }, 503);
