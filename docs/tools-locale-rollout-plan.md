@@ -76,4 +76,5 @@
 | 고난이도 — §13 수치·카드 판정 · 원어민 적대 렌즈 · 갈린 쟁점 최종 | **gpt-6-astra ultra** (Fable급) |
 | 지휘·계획 · GPT 산출물 원문 대조 후 채택/기각 · 레포 쓰기·빌드·배포 · DataForSEO·라쿠 볼륨(MCP는 본체에만) | Claude 본체(토큰 절약 — 짧게) |
 
-- GPT 토큰은 많지만 낭비 금지. Codex는 본체 레포 쓰기 불가 → scratchpad 사본 폴더에서 `codex exec -m <모델> -s read-only -C <사본> --skip-git-repo-check -c 'web_search="live"'` → 본체가 검증 후 반영.
+- GPT 토큰은 많지만 낭비 금지.
+- 🔴 **서브 Codex 쓰기 = 워크트리에서**(사장님 10-16 승인): 회차마다 `git worktree add ../Holdem-gpt-<loc> -b gpt-<loc>`(node_modules = 정션 링크 · 레인 선례 `docs/tool-lanes-2026-10-14.md`) → `codex exec -m <모델> -c model_reasoning_effort=<lvl> -s workspace-write -C ../Holdem-gpt-<loc> --skip-git-repo-check -c 'web_search="live"' - < PROMPT.md` → Codex가 파일을 직접 만들고 커밋 → Claude는 검증·머지만(옮겨 쓰기 없음 = Claude 토큰 절약). 본체 폴더(`Holdem_Project`)에는 서브 Codex가 쓰지 않는다(09-04 동시 편집 사고 · 본체 레포 신뢰 등록은 제거된 그대로). 사장님이 Codex로 본체 폴더를 직접 여는 교대 작업은 별개 — 그대로 된다.
