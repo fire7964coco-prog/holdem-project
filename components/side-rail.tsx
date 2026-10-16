@@ -95,6 +95,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   it: [
     { href: "/it/calculator", icon: "🧮", label: "Calcolatore poker" },
     { href: "/it/hand-chart", icon: "📊", label: "Tabella delle mani iniziali" },
+    { href: "/it/glossary", icon: "📖", label: "Termini del poker" },
   ],
   en: [
     // ★라벨은 CHROME.en.blogLabel("Blog")과 같은 값이다. 「Guides」 목록 안에서
