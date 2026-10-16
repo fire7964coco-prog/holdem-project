@@ -96,6 +96,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/it/calculator", icon: "🧮", label: "Calcolatore poker" },
     { href: "/it/hand-chart", icon: "📊", label: "Tabella delle mani iniziali" },
     { href: "/it/glossary", icon: "📖", label: "Termini del poker" },
+    { href: "/it/win-rate-quiz", icon: "📈", label: "Quiz poker" },
+    { href: "/it/tournaments", icon: "🏆", label: "Tornei poker live" },
   ],
   en: [
     // ★라벨은 CHROME.en.blogLabel("Blog")과 같은 값이다. 「Guides」 목록 안에서
@@ -418,7 +420,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 //      인도네시아어 화면에 영어가 섞인다 → 우리 id 코퍼스 42편이 쓰는 표준어 "Panduan"을 쓴다
 //      (title 2편 포함 다수 실측 · 2026-09-05). 새로 번역한 것이 아니라 코퍼스에서 딴 값이다.
 // ★2026-10-16 it 도구 회차
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", ru: "Гайды", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading, ar: CHROME.ar.contentHeading, it: CHROME.it.contentHeading };
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan", ms: "Panduan", vi: "Hướng dẫn", ru: "Гайды", pt: "Guias", tr: "Rehberler", hi: CHROME.hi.contentHeading, ar: CHROME.ar.contentHeading, it: "Guide" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**

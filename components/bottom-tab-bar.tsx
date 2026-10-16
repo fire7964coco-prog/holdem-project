@@ -93,6 +93,8 @@ export function useHideBottomChrome(): boolean {
  * 여기 두는 이유: community-client(86KB 클라이언트 컴포넌트)를 블로그 번들로 끌어오지 않기 위해.
  */
 const TAB_LABELS: Record<string, Record<BottomTabKey, string>> = {
+  // ★2026-10-16 it 도구 회차
+  it: { home: "Feed", blog: "Blog", chat: "Chat", event: "Evento", profile: "Profilo" },
   ko: { home: "피드", blog: "블로그", chat: "채팅", event: "이벤트", profile: "프로필" },
   en: { home: "Feed", blog: "Blog", chat: "Chat", event: "Event", profile: "Profile" },
   ja: { home: "フィード", blog: "ブログ", chat: "チャット", event: "イベント", profile: "プロフィール" },
