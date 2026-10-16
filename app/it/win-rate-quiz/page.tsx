@@ -7,7 +7,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
 // Current fr/ru structure; keyword research: docs/keyword-bank/it-tools.md section 4.
 const TITLE = "Quiz poker: allena equity e decisioni | HoldemMaster";
 const DESCRIPTION =
-  "Allenamento poker con carte avversarie nascoste: stima la tua equity, scegli tra call e fold e rivedi ogni street con le pot odds.";
+  "Allenamento poker con carte avversarie nascoste: stima la tua equity, scegli tra call e fold e rivedi ogni street con le pot odds dal flop in poi.";
 const OG_DESCRIPTION =
   "Stima la tua equity senza vedere le carte degli avversari. Poi rivedi la mano e scopri quando avresti dovuto foldare.";
 

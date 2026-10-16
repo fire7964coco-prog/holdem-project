@@ -1,3 +1,8 @@
+## 2026-10-16 (23) — MA-598 회신+이행(it 도구 5 판정 RISKY 3) · MB-368
+
+- 판정 WRONG 0 · RISKY 3 → 전부 이행: it 계산기 dict L160·L1177 overcard «puoi perdere» → «spesso perdi lo stesso»(EN often) · it 퀴즈 DESCRIPTION «pot odds» → «pot odds dal flop in poi»(146자). 언어북 it ① 통독 후 작업.
+- 통지 5 = queue §2-CM 등재(EN-먼저 2 · 판단 대상 3) · 언어북 추가 `02cc1109` ACK. 빌드 exit 0.
+
 ## 2026-10-16 (22) — es poker/póker 자리별 확정 · zh·zh-hant 대회 사이트 이름 정렬 MB-367
 
 - es: 통일 안 함 — 검색 자리 poker · 본문 póker · 족보 Póker · póquer 금지(사장님 «굳이 통일할 필요 없네») → `translation-terms-es.md` 끝 확정 절.

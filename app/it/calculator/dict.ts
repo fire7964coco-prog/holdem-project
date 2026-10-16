@@ -157,7 +157,7 @@ export const CALC_DICT_IT: CalcDict = {
       },
       {
         "label": "Due overcard",
-        "desc": "2 valori più alti di ogni carta del board × 3 ciascuno — riduci molto gli outs contro una mano fatta: anche centrando una coppia puoi perdere"
+        "desc": "2 valori più alti di ogni carta del board × 3 ciascuno — riduci molto gli outs contro una mano fatta: anche centrando una coppia spesso perdi lo stesso"
       },
       {
         "label": "Doppia Coppia → Full",
@@ -1174,7 +1174,7 @@ export const CALC_DICT_IT: CalcDict = {
           "80% · 40%"
         ]
       ],
-      "note": "Il dato su due carte vale solo se le vedrai entrambe senza pagare ancora (all-in). Contro una puntata al flop usa la colonna flop → turn: 9 outs = 19,1%. Le overcard sono gli outs meno affidabili: contro una mano fatta puoi perdere anche centrando una coppia, quindi riducine il peso."
+      "note": "Il dato su due carte vale solo se le vedrai entrambe senza pagare ancora (all-in). Contro una puntata al flop usa la colonna flop → turn: 9 outs = 19,1%. Le overcard sono gli outs meno affidabili: contro una mano fatta, anche centrando una coppia spesso perdi lo stesso, quindi riducine il peso."
     },
     {
       "badge": "Riferimento rapido",

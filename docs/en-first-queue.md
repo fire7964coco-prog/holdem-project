@@ -1381,6 +1381,22 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 - 회차 = **EN 8자리 먼저 → 동문 로케일 전파**(합계 약 79자리). 한 회차 = 한 배치 — 도구 확장(pl ②)과 섞지 않는다. 사장님이 순서를 정한다.
 
+### 2-CM. 우편함 수신분 — MA-598(MB-364 it 도구 5 판정 · WRONG 0 · RISKY 3 · 통지 5) · 등재 2026-10-16 (23)
+
+근거 `홀덤검수/reports/2026-10/검수-MB364-365-2026-10-16/REPORT.md` §MB-364 · 기준 `300364cf`. 검수장 문안 창작 없음 — 정정 방향만.
+
+| # | 자리 | 정정 방향 | 처리 |
+|---|---|---|---|
+| CM-1 (요청 ①) | `app/it/calculator/dict.ts` L160 Due overcard desc «puoi perdere» | EN «often still loses» 빈도 한정 | ✅ «spesso perdi lo stesso» · MB-368 |
+| CM-2 (요청 ②) | 같은 파일 L1177 quickRef note | ①과 같은 꼴 | ✅ 같은 꼴 · MB-368 |
+| CM-3 (요청 ③) | `app/it/win-rate-quiz/page.tsx` L10 DESCRIPTION «con le pot odds» | EN «from the flop on» 한정(featureList L55와 맞춤 · JSON-LD·메타·OG가 상수 재사용) | ✅ «… con le pot odds dal flop in poi.»(146자) · MB-368 |
+| CM-ⓐ 통지 | 차트 FAQ4 «종류 42% ↔ 콤보 기준 GTO 40–50%» | it OK · EN 동형 RISKY = MB-364 남김과 같은 자리 | 🪶 EN-먼저(EN 차트 FAQ 손질 때 형제 일괄) |
+| CM-ⓑ 통지 | EN 동형 소견 — hand-chart FAQ5 3-bet 콜 범위에 A5s/A4s 블러프 · glossary Fold «also called mucking» · Equity 무승부 지분 | EN 원장 판단 | 🪶 EN-먼저 |
+| CM-ⓒ 통지 | 선택 명료화 — Check 정의 · 퀴즈 «seme (seed)» 병기 | 선택 사항(최종 OK) | 🪶 판단 대상 |
+| CM-ⓓ 통지 | ICU it-IT 4자리 그룹 없음(«1000») ↔ 정적 «$1.035» | 값 같음 · 표기만 갈림 | 🪶 판단 대상(공용 포맷터 회차) |
+| CM-ⓔ 통지 | glossary Showdown aka «apertura delle carte» 검색 키가 오픈 베팅과 겹침 | 검색 키 판단 | 🪶 판단 대상 |
+| CM-ⓕ 통지 | 언어북 «검수장 추가» 절(Seed = seme / seme iniziale) `02cc1109` | 이미 main에 있음 | ACK 종결 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
