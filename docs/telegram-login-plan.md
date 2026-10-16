@@ -45,7 +45,7 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 - 함수 `telegram_link_consume(hash, chat_id, username, name)` — security definer · service_role만 실행. 토큰 행 `for update` 잠금 → 웹훅 재전송으로 같은 토큰 두 번 소비 불가 · 같은 텔레그램 계정이 다른 회원에 붙어 있으면 그쪽을 비우고 옮김(마지막 Start가 이김).
 - 시험(10-15 · PGlite 0.2.17 스크래치 · 두 번 실행 안전): 소비 ✅ · 재전송 null ✅ · 만료 null ✅ · 다른 회원으로 이동 + 옛 행 이름 비움 ✅ · 해시 형식·야간⊂광고 동의·음수 chat_id 거부 ✅ · RLS true · 실행 권한 = postgres·service_role.
 - 서버 라우트(⑤에서 작성): ⓐ `POST /api/telegram/link`(로그인 필수 · 토큰 32바이트 base64url = 43자 · 원문 사양 «A-Z, a-z, 0-9, _ and -» · «up to 64 characters») ⓑ `POST /api/telegram/webhook` — 헤더 `X-Telegram-Bot-Api-Secret-Token` 상수 시간 비교 · `chat.type = private`만 · `/start <토큰>` → rpc · `my_chat_member`(원문 «received only when the bot is blocked or unblocked») → `bot_blocked_at`. 미들웨어 matcher(`/`·`/login`·`/post`·`/auth`)에 `/api` 없음 = 웹훅이 미들웨어를 안 탄다.
-- 🔴 «kicked» 상태 이름은 원문 미열람(API 문서 10만 자 뒤) → ⑤ 실측(봇 차단·해제 1회)으로 확인.
+- ✅ «kicked» 실측 확인(10-16 사장님 PC 텔레그램): 봇 차단 → 프로필 카드 빨간 안내 · 다시 시작(member) → 사라짐.
 - 🪶 스코프 `telegram:bot_access`는 Start 방식에선 불필요 — 지워도 되는지는 ⑤ 뒤 판단(동의 화면 문구가 줄어듦).
 - **사장님 몫(⑤ 전 선행)**: ① 이 SQL을 SQL Editor에서 RUN + 파일 끝 확인 3줄 ② Vercel env `TELEGRAM_BOT_TOKEN`·`TELEGRAM_WEBHOOK_SECRET`(A-Z a-z 0-9 _ - 1~256자 · 제가 만들어 드릴 수 있음) ③ 배포 뒤 브라우저 주소창으로 `setWebhook` 1회(토큰이 대화에 안 나오게 — 주소 틀은 ⑤에서 드림).
 
@@ -54,7 +54,8 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 - UI: `/login` «텔레그램으로 계속하기» 전 로케일(`custom:telegram` · 색 #1673B1 = 흰 글씨 대비 5.1) · 커뮤니티 프로필 탭 «✈️ 텔레그램 알림» 카드(`app/community/telegram-connect.tsx` · «내 기록» 아래 · 링크는 자동으로 안 열고 버튼 · 창 포커스 때 상태 다시 읽기 · 서버 오류면 카드 숨김).
 - 봇 버튼 FAQ 4 + 사이트 열기: 이 봇은 뭐예요 · 계정 연결 방법 · 알림 끄기 · 문의하기(커뮤니티 + `holdemmaster.kr@gmail.com`) · 버튼 밖 메시지 = «커뮤니티에 남겨 주세요». 문구 언어 = `from.language_code`. «텔레그램 연결»·«연결 해제»·탭 이름(«프로필» · fr·hi·ar·ru는 탭이 EN 폴백이라 «Profile»)은 카드·탭과 축어 일치. 봇 «START» 버튼은 텔레그램 앱 언어마다 번역이 달라 원문 미확인 → 전 언어 «START»로 표기.
 - 로컬 시험: 단위(로케일 사상 9 · 토큰 43자 · 시크릿 · callback_data ≤64바이트 · 문구 ≤4096) ✅ · 라우트 401/403/200 경로 11 ✅ · 로그인 화면 KO·AR·EN 데스크톱 캡처 ✅. DB 쓰기 시험은 안 함(service role 조회는 사장님 허락 사안) → 라이브에서 사장님 1회 시험으로.
-- ▶ 남은 것: 사장님 setWebhook 1회 → 라이브 시험(연결 → 봇 «연결됐어요» → 프로필 «연결됨 @아이디» → 봇 차단·해제로 `kicked` 실측 → 연결 해제) → ⑥ 수신 동의(U3) · ⑦ 발송.
+- ✅ 라이브 시험(10-16 사장님): setWebhook ok · ① 봇 인사말·FAQ 버튼 ✅ · ② 연결(PC 텔레그램은 START 대신 «수락» 팝업 → 같은 효과) ✅ · ③ 차단·해제 ✅ · ⑤ 텔레그램 로그인 ✅. 같은 링크 재사용 → «이미 연결됨» 답으로 고침(`f26adbdc`). 🪶 @아이디 미표시 = 사장님 계정에 텔레그램 사용자명이 없어서로 보임(봇이 받은 값 그대로).
+- (옛 계획) 남은 것: 사장님 setWebhook 1회 → 라이브 시험(연결 → 봇 «연결됐어요» → 프로필 «연결됨 @아이디» → 봇 차단·해제로 `kicked` 실측 → 연결 해제) → ⑥ 수신 동의(U3) · ⑦ 발송.
 
 ### 채널 (10-15 사장님 결정)
 - 메인 공개 채널 = **`@HoldemMasterOfficial`**(t.me/HoldemMasterOfficial). 역할 = 퍼뜨리기(새 글·대회·이벤트·퀴즈 투표) → 글마다 «봇 연결» 버튼으로 명단(봇)에 넘긴다. 구독자 명단은 우리 자산이 아니다.

@@ -8,7 +8,7 @@
 
 | 회차 | 내용 | 상태 |
 |---|---|---|
-| **▶▶ 텔레그램 ⑤ 라이브 시험** | ✅ 코드 배포(10-16 (4) MB-353 · 라우트 link·webhook · 로그인 버튼 · 프로필 카드 · 버튼 FAQ · 기록 = `docs/telegram-login-plan.md` «⑤ 구현») → ▶ 사장님 setWebhook 1회(주소 틀 = 아래) → 사장님 폰으로: 프로필 «텔레그램 연결» → 봇 START → «연결됐어요» → 프로필 «연결됨 @아이디» → 봇 차단·해제(`kicked` 실측) → 연결 해제 · 로그인 «텔레그램으로 계속하기» 1회. 🔴 setWebhook 틀: `https://api.telegram.org/bot<봇토큰>/setWebhook?url=https://www.holdemmaster.com/api/telegram/webhook&secret_token=<웹훅암호>&allowed_updates=%5B%22message%22%2C%22callback_query%22%2C%22my_chat_member%22%5D&drop_pending_updates=true` → 확인 = `…/getWebhookInfo`(last_error 없음) · 그다음 ⑥ 수신 동의(U3 법령 원문) | ▶ 사장님 시험 |
+| **텔레그램 ⑤** | ✅ 라이브 시험 끝(10-16 사장님: 봇 응답·연결·차단/해제·텔레그램 로그인 · 기록 = `docs/telegram-login-plan.md` «⑤ 구현») · MB-353 판정 대기 → ▶ 다음 = ⑥ 수신 동의(U3 정보통신망법 §50 원문 인용 뒤 문구) → ⑦ 발송 | ⑥ 사장님 지시 때 |
 | **10-16 (3) 남김** | ① 앱 축어 정렬(queue §2-CJ CJ-7·8) · ③ 게이트 오탐 2건(ko blind-battle L165 H1 · `check-gto-numbers` «A~B%») = 미착수 · ④ 워크트리 = 이미 없음 종결 | 다음 기회 |
 | **▶ 밀린 묶음 회차(10-15 사장님 «3번 하자»)** | 한 회차 = 한 배치. **R1 공용 RTL**(CD-2 계산기 bidi 16 · CD-5 렌더러 카드토큰·`==수식==`·표 셀 · CA-3 차트 ①~⑤ · CA-7 시뮬레이터 solverNote·formulaExpr·«→»·6-max · 게이트 = 비-RTL SSR 바이트 동일) ✅ 10-15 (18) MB-349 → ▶ 검수장 ar 화면 재판정 · R2 rules EN 문면 전파 CE-6+CG-2 ✅ 10-15 (19) MB-350 → ▶ 검수장 변경 줄 재판정 · R3 시뮬레이터 공용(BZ-1 라벨 · BV-3·4·BZ-2 EN 설명 · F-10 · 360 1px) ✅ 10-16 (1) MB-351 → ▶ 검수장 변경 줄·화면 재판정 · R4 `NEXT_PUBLIC_SUPABASE_URL` → `https://auth.holdemmaster.com` ✅ 10-16 (3)(Vercel production + `.env.local` · 라이브 커뮤니티 요청 = 새 호스트만). 제외 = CH-5·CI-6·CI-7(검수장 EN 원장 신호 대기) · CC-5~8·CF-6·CI-8(판단 대상) · CF-5 = 이미 완료 MB-337 | ✅ 회차 종료(R1~R4) |
 | **MA-574·575·576** | ✅ MB-352(10-16 (2) · zh GTO 5자리 + ja 1자리 · MA-576 pt ACK) → ▶ 검수장 변경 줄 재판정 · 🪶 앱 축어 통지 = queue §2-CJ CJ-7·8 | 판정 대기 |
