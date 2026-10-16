@@ -94,6 +94,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   pl: [
     { href: "/pl/calculator", icon: "🧮", label: "Kalkulator pokerowy" },
     { href: "/pl/hand-chart", icon: "📊", label: "Ręce startowe poker" },
+    { href: "/pl/glossary", icon: "📖", label: "Słownik pokerowy" },
   ],
   // ★2026-10-16 it 도구 회차
   it: [
