@@ -36,6 +36,7 @@ const PT_UI: QuizUI = {
   folded: "Foldou",
   raise: "Aumenta",
   call: "Paga",
+  bet: "Aposta",
   check: "Check",
   allIn: "All-in",
   tableNote: "Mesa 6-max ou de 9 · escolha quantos veem o flop (2–6)",
@@ -259,10 +260,12 @@ const PT_UI: QuizUI = {
         essa informação.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Com o Quiz ligado</b>, a equity e o veredito de cada street ficam escondidos até você chutar
-        a sua equity. Nas streets em que alguém aposta, você também escolhe pagar ou foldar. A resposta é «Sua equity» acima (o
-        número sem ver as cartas deles), e cada palpite vale <b className="text-foreground">100 − 4 × erro (p.p.)</b>
-        (zero se você errar por 25 p.p. ou mais). Escolher pagar/foldar conta como acerto quando bate com o veredito das pot odds. Seus
+        <b className="text-foreground">🎯 Com o Quiz ligado</b>, a equity e o veredito ficam escondidos até você responder. Em
+        «Chutar a equity + decidir», você chuta a sua equity em cada street e, nas streets em que alguém aposta, também escolhe
+        pagar ou foldar. Em «Só decidir (pagar ou foldar?)» não há chute: você só escolhe pagar ou foldar nas streets em que
+        alguém aposta, e este modo não entra no seu histórico do quiz. A resposta é «Sua equity» acima (o
+        número sem ver as cartas deles), e cada palpite vale <b className="text-foreground">100 − 4 × erro (p.p.)</b>,
+        arredondado para um número inteiro e nunca abaixo de zero (zero se você errar por 25 p.p. ou mais). Escolher pagar/foldar conta como acerto quando bate com o veredito das pot odds. Seus
         totais ficam neste navegador e, se você estiver logado, também são salvos na sua conta para
         acompanhar você em outros aparelhos (as cartas e o board não são salvos).
       </p>

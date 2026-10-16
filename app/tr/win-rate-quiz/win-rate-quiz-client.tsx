@@ -44,6 +44,7 @@ const TR_UI: QuizUI = {
   folded: "Fold etti",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "6-max ya da 9 kişilik masa · flop'u kaç kişinin göreceğini seç (2–6)",
@@ -271,10 +272,12 @@ const TR_UI: QuizUI = {
         sahip olmazdın.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Quiz açıkken</b>, her street&apos;in equity&apos;si ve kararı sen equity&apos;ni tahmin edene kadar
-        gizli kalır. Birinin bet yaptığı street&apos;lerde ayrıca call ya da fold seçersin. Doğru cevap yukarıdaki «Equity&apos;n»dir (rakip kartlarını
+        <b className="text-foreground">🎯 Quiz açıkken</b>, equity ve karar sen cevap verene kadar gizli kalır. «Equity tahmini + karar»
+        modunda her street&apos;te equity&apos;ni tahmin edersin; birinin bet yaptığı street&apos;lerde ayrıca call ya da fold seçersin.
+        «Sadece karar (call/fold?)» modunda tahmin yoktur: yalnızca birinin bet yaptığı street&apos;lerde call ya da fold seçersin ve bu
+        mod quiz istatistiklerine eklenmez. Doğru cevap yukarıdaki «Equity&apos;n»dir (rakip kartlarını
         görmeden çıkan sayı) ve her tahmin <b className="text-foreground">100 − 4 × sapma (yüzde puan)</b>
-        {" "}puan alır (sapma 25 yüzde puan ya da daha fazlaysa sıfır). Call/fold seçimin pot oranı kararıyla aynıysa doğru sayılır.
+        {" "}puan alır; sonuç tam sayıya yuvarlanır ve sıfırın altına inmez (sapma 25 yüzde puan ya da daha fazlaysa sıfır). Call/fold seçimin pot oranı kararıyla aynıysa doğru sayılır.
         Toplamların bu tarayıcıda saklanır; giriş yaptıysan hesabına da kaydedilir ve diğer cihazlarda da
         görünür (kartlar ve board kaydedilmez).
       </p>

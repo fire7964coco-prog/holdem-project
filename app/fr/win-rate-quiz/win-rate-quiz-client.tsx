@@ -41,6 +41,7 @@ const FR_UI: QuizUI = {
   folded: "Couché",
   raise: "Relance",
   call: "Suit",
+  bet: "Mise",
   check: "Check",
   allIn: "Tapis",
   tableNote: "Table 6-max ou à 9 · choisis combien voient le flop (2–6)",
@@ -265,10 +266,12 @@ const FR_UI: QuizUI = {
         cette information.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Avec le Quiz activé</b>, l&rsquo;équité et le verdict de chaque street restent cachés jusqu&rsquo;à ce que tu estimes
-        ton équité. Sur les streets où quelqu&rsquo;un mise, tu choisis aussi de suivre ou de te coucher. La réponse, c&rsquo;est « Ton équité » ci-dessus (le
+        <b className="text-foreground">🎯 Avec le Quiz activé</b>, l&rsquo;équité et le verdict restent cachés jusqu&rsquo;à ce que tu répondes. En
+        « Estimer l&apos;équité + décider », tu estimes ton équité à chaque street et, sur les streets où quelqu&rsquo;un mise, tu choisis
+        aussi de suivre ou de te coucher. En « Décider seulement (suivre ou se coucher ?) », pas d&rsquo;estimation : tu choisis seulement
+        de suivre ou de te coucher sur les streets où quelqu&rsquo;un mise, et ce mode n&rsquo;est pas compté dans ton historique de quiz. La réponse, c&rsquo;est « Ton équité » ci-dessus (le
         chiffre sans voir leurs cartes), et chaque estimation rapporte <b className="text-foreground">100 − 4 × écart (en points de pourcentage)</b>
-        {" "}(zéro dès que l&rsquo;écart atteint 25 points de pourcentage). Un choix suivre/se coucher compte comme bon quand il correspond au verdict des cotes du pot. Tes
+        {" "}points, arrondi à l&rsquo;entier et jamais en dessous de zéro (zéro dès que l&rsquo;écart atteint 25 points de pourcentage). Un choix suivre/se coucher compte comme bon quand il correspond au verdict des cotes du pot. Tes
         totaux restent dans ce navigateur et, si tu es connecté, ils sont aussi enregistrés sur ton compte pour
         te suivre sur tes autres appareils (les cartes et le board ne sont pas enregistrés).
       </p>

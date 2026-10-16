@@ -18,6 +18,7 @@ const EN_UI: QuizUI = {
   folded: "Folded",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "6-max or 9-handed table · pick how many see the flop (2–6)",
@@ -238,12 +239,14 @@ const EN_UI: QuizUI = {
         real table.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 With Quiz on</b>, the equity and verdict stay hidden on each street until you guess
-        your equity. On streets where someone bets, you also pick call or fold. The answer is “Your equity” above (the
-        figure without seeing their cards), and each guess scores <b className="text-foreground">100 − 4 × error (%p)</b>
-        (zero once you are 25%p or more off). A call/fold pick counts as right when it matches the pot-odds verdict. Your
-        running totals stay in this browser, and when you are logged in they are also saved to your account so they
-        follow you to other devices (the cards and board are not saved).
+        <b className="text-foreground">🎯 With Quiz on</b>, the equity and verdict stay hidden until you answer. In
+        “{EN_UI.quizKinds[0]}” you guess your equity on every street, and on streets where someone bets you also pick
+        call or fold. In “{EN_UI.quizKinds[1]}” there is no guess — you only pick call or fold, on streets where someone
+        bets, and these picks are not added to your quiz stats. The answer is “Your equity” above (the figure without
+        seeing their cards), and each guess scores <b className="text-foreground">100 − 4 × error (%p)</b>, rounded to
+        a whole number and never below zero (25%p or more off scores 0). A call/fold pick counts as right when it
+        matches the pot-odds verdict. Your running totals stay in this browser, and when you are logged in they are
+        also saved to your account so they follow you to other devices (the cards and board are not saved).
       </p>
       <p className="mt-2">
         <b className="text-foreground">✍️ Set hand</b> lets you pick your seat, your hole cards and the board to replay a

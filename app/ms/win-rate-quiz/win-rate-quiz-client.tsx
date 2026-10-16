@@ -38,6 +38,7 @@ const MS_UI: QuizUI = {
   folded: "Fold",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "Meja 6-max atau 9 pemain · pilih berapa pemain yang melihat flop (2–6)",
@@ -260,10 +261,12 @@ const MS_UI: QuizUI = {
         mempunyai maklumat itu.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Apabila Kuiz dihidupkan</b>, equity dan keputusan setiap street disembunyikan sehingga anda meneka
-        equity anda. Pada street yang ada bet, anda juga memilih call atau fold. Jawapannya ialah «Equity anda» di atas (angka
+        <b className="text-foreground">🎯 Apabila Kuiz dihidupkan</b>, equity dan keputusan disembunyikan sehingga anda menjawab. Dalam
+        «Teka equity + buat keputusan», anda meneka equity pada setiap street, dan pada street yang ada bet anda juga memilih call
+        atau fold. Dalam «Buat keputusan sahaja (call atau fold?)» tiada tekaan: anda hanya memilih call atau fold pada street yang
+        ada bet, dan mod ini tidak dikira dalam rekod kuiz anda. Jawapannya ialah «Equity anda» di atas (angka
         tanpa melihat kad mereka), dan setiap tekaan mendapat <b className="text-foreground">100 − 4 × beza (dalam mata peratusan)</b>
-        {" "}markah (sifar apabila bezanya mencapai 25 mata peratusan atau lebih). Pilihan call/fold dikira tepat jika sama dengan keputusan pot odds. Jumlah
+        {" "}markah, dibundarkan kepada nombor bulat dan tidak pernah kurang daripada sifar (sifar apabila bezanya mencapai 25 mata peratusan atau lebih). Pilihan call/fold dikira tepat jika sama dengan keputusan pot odds. Jumlah
         anda disimpan dalam pelayar ini dan, jika anda log masuk, juga disimpan dalam akaun anda supaya
         boleh dibuka dari peranti lain (kad dan board tidak disimpan).
       </p>

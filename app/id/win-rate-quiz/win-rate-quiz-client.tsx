@@ -40,6 +40,7 @@ const ID_UI: QuizUI = {
   folded: "Fold",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "Meja 6-max atau 9 pemain · pilih berapa pemain yang melihat flop (2–6)",
@@ -263,10 +264,12 @@ const ID_UI: QuizUI = {
         punya informasi itu.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Saat Kuis aktif</b>, equity dan keputusan tiap street disembunyikan sampai Anda menebak
-        equity Anda. Di street yang ada bet-nya, Anda juga memilih call atau fold. Jawabannya adalah «Equity Anda» di atas (angka
+        <b className="text-foreground">🎯 Saat Kuis aktif</b>, equity dan keputusan disembunyikan sampai Anda menjawab. Di
+        «Tebak equity + putuskan», Anda menebak equity di setiap street, dan di street yang ada bet-nya Anda juga memilih call
+        atau fold. Di «Putuskan saja (call atau fold?)» tidak ada tebakan: Anda hanya memilih call atau fold di street yang ada
+        bet-nya, dan mode ini tidak dihitung dalam catatan kuis Anda. Jawabannya adalah «Equity Anda» di atas (angka
         tanpa melihat kartu mereka), dan setiap tebakan mendapat <b className="text-foreground">100 − 4 × selisih (dalam poin persentase)</b>
-        {" "}(nol begitu selisihnya mencapai 25 poin persentase atau lebih). Pilihan call/fold dihitung tepat jika sama dengan keputusan pot odds. Total
+        {" "}poin, dibulatkan ke bilangan bulat dan tidak pernah di bawah nol (nol begitu selisihnya mencapai 25 poin persentase atau lebih). Pilihan call/fold dihitung tepat jika sama dengan keputusan pot odds. Total
         Anda tersimpan di browser ini dan, jika Anda masuk, juga disimpan di akun Anda agar
         bisa dibuka dari perangkat lain (kartu dan board tidak disimpan).
       </p>

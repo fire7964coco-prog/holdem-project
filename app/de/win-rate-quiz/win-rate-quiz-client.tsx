@@ -35,6 +35,7 @@ const DE_UI: QuizUI = {
   folded: "Gefoldet",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "6-max- oder 9er-Tisch · wähle, wie viele Spieler den Flop sehen (2–6)",
@@ -262,10 +263,13 @@ const DE_UI: QuizUI = {
         Call/Fold-Urteil ein – an einem echten Tisch hättest du diese Information nicht.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Mit eingeschaltetem Quiz</b> bleiben Equity und Urteil in jeder Setzrunde verborgen,
-        bis du deine Equity schätzt. In Setzrunden, in denen jemand setzt, wählst du außerdem Call oder Fold. Die Lösung ist
+        <b className="text-foreground">🎯 Mit eingeschaltetem Quiz</b> bleiben Equity und Urteil verborgen, bis du antwortest. Bei
+        „Equity schätzen + entscheiden“ schätzt du in jeder Setzrunde deine Equity und wählst in Setzrunden, in denen jemand
+        setzt, außerdem Call oder Fold. Bei „Nur entscheiden (was machst du?)“ gibt es keine Schätzung: Du wählst nur in
+        Setzrunden, in denen jemand setzt, Call oder Fold, und dieser Modus zählt nicht zu deiner Quiz-Statistik. Die Lösung ist
         „Deine Equity“ oben (die Zahl ohne Kenntnis der Gegnerkarten), und jeder Tipp bringt{" "}
-        <b className="text-foreground">100 − 4 × Abweichung (Prozentpunkte)</b> Punkte (null ab 25 Prozentpunkten Abweichung).
+        <b className="text-foreground">100 − 4 × Abweichung (Prozentpunkte)</b> Punkte, auf eine ganze Zahl gerundet und nie unter null
+        (null ab 25 Prozentpunkten Abweichung).
         Eine Call/Fold-Wahl gilt als richtig, wenn sie dem Pot-Odds-Urteil entspricht. Deine Gesamtstatistik bleibt in
         diesem Browser gespeichert; wenn du angemeldet bist, wird sie zusätzlich in deinem Konto gesichert und begleitet
         dich auf andere Geräte (Karten und Board werden nicht gespeichert).

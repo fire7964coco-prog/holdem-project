@@ -29,6 +29,7 @@ const ES_UI: QuizUI = {
   folded: "Retirado",
   raise: "Sube",
   call: "Paga",
+  bet: "Apuesta",
   check: "Pasa",
   allIn: "All-in",
   tableNote: "Mesa de 6 o de 9 jugadores · elige cuántos ven el flop (2–6)",
@@ -251,10 +252,12 @@ const ES_UI: QuizUI = {
         esa información.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Con el Quiz activado</b>, la equity y el veredicto de cada calle quedan ocultos hasta que estimas
-        tu equity. En las calles en las que alguien apuesta, también eliges pagar o foldear. La respuesta es «Tu equity» de arriba (la
-        cifra sin ver sus cartas), y cada estimación suma <b className="text-foreground">100 − 4 × error (pp)</b>
-        (cero si te desvías 25 pp o más). Elegir pagar/foldear cuenta como acierto cuando coincide con el veredicto por pot odds. Tus
+        <b className="text-foreground">🎯 Con el Quiz activado</b>, la equity y el veredicto quedan ocultos hasta que respondes. En
+        «Adivinar equity + decidir» estimas tu equity en cada calle y, en las calles en las que alguien apuesta, también eliges
+        pagar o foldear. En «Solo decidir (¿qué harías?)» no hay estimación: solo eliges pagar o foldear en las calles en las que
+        alguien apuesta, y este modo no cuenta para tu historial del quiz. La respuesta es «Tu equity» de arriba (la
+        cifra sin ver sus cartas), y cada estimación suma <b className="text-foreground">100 − 4 × error (pp)</b>,
+        redondeado a un número entero y nunca por debajo de cero (cero si te desvías 25 pp o más). Elegir pagar/foldear cuenta como acierto cuando coincide con el veredicto por pot odds. Tus
         totales acumulados se quedan en este navegador y, si has iniciado sesión, también se guardan en tu cuenta para que
         te acompañen a otros dispositivos (las cartas y la mesa no se guardan).
       </p>

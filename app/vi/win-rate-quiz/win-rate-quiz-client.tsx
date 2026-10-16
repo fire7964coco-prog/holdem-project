@@ -41,6 +41,7 @@ const VI_UI: QuizUI = {
   folded: "Đã fold",
   raise: "Raise",
   call: "Call",
+  bet: "Bet",
   check: "Check",
   allIn: "All-in",
   tableNote: "Bàn 6-max hoặc 9 người · chọn số người chơi thấy flop (2–6)",
@@ -264,10 +265,12 @@ const VI_UI: QuizUI = {
         có thông tin đó.
       </p>
       <p className="mt-2">
-        <b className="text-foreground">🎯 Khi bật Quiz</b>, equity và quyết định của mỗi vòng cược được ẩn cho đến khi bạn đoán
-        equity của mình. Ở những vòng cược có người bet, bạn còn chọn call hoặc fold. Đáp án là «Equity của bạn» phía trên (con số
+        <b className="text-foreground">🎯 Khi bật Quiz</b>, equity và quyết định được ẩn cho đến khi bạn trả lời. Ở chế độ
+        «Đoán equity + quyết định», bạn đoán equity của mình ở mỗi vòng cược, và ở những vòng cược có người bet thì còn chọn call
+        hoặc fold. Ở chế độ «Chỉ quyết định (call hay fold?)» không có phần đoán: bạn chỉ chọn call hoặc fold ở những vòng cược có
+        người bet, và chế độ này không tính vào thành tích quiz của bạn. Đáp án là «Equity của bạn» phía trên (con số
         khi không thấy bài của họ), và mỗi lần đoán được <b className="text-foreground">100 − 4 × độ lệch (tính bằng điểm phần trăm)</b>
-        {" "}điểm (bằng 0 khi độ lệch từ 25 điểm phần trăm trở lên). Lựa chọn call/fold được tính là đúng khi trùng với quyết định theo pot odds. Tổng điểm
+        {" "}điểm, làm tròn đến số nguyên và không bao giờ dưới 0 (bằng 0 khi độ lệch từ 25 điểm phần trăm trở lên). Lựa chọn call/fold được tính là đúng khi trùng với quyết định theo pot odds. Tổng điểm
         của bạn được lưu trên trình duyệt này và, nếu bạn đã đăng nhập, cũng được lưu vào tài khoản để
         xem lại trên thiết bị khác (lá bài và board không được lưu).
       </p>

@@ -128,6 +128,8 @@ export interface QuizUI {
   /** 액션 라벨 */
   raise: string;
   call: string;
+  /** 그 스트리트에 처음 칩을 넣은 좌석(앞에 베팅이 없었다) — «콜»·«레이즈»로 적으면 틀린다(BZ-1) */
+  bet: string;
   check: string;
   /** 앞 스트리트에 스택을 다 넣은 상대 — 더 액션하지 않는다(MA-491 통지 ①) */
   allIn: string;
@@ -556,9 +558,12 @@ function Seat({ pos, isBtn, isHero, heroWord, cards, faceDown, folded, isWinner,
   eq?: number; eqColor?: string;
 }) {
   const size: CardSize = folded ? "fold" : isHero ? "hero" : "seat";
+  // ★9인 최소 폭 = 카드 두 장 폭(seat 30+4+30 = 64 · fold 24+4+24 = 52) 이상 (BV-2 · F-10 잔여 · 2026-10-16).
+  //   62·50이던 때는 공개 승률 배지(«Defended 45.3%»)로 좌석이 넓어진 판에서 flex가 좌석을 62까지 줄여
+  //   카드가 좌석 밖으로 1px씩 나가 360 위 줄 이웃 카드가 2px 겹쳤다. 위 줄 4석 × 64 = 256 ≤ 264(360 · px-7).
   return (
     <div className="flex flex-col items-center gap-1"
-      style={{ minWidth: compact ? (folded ? 50 : isHero ? 80 : 62) : folded ? 62 : isHero ? 100 : 80, opacity: folded ? 0.55 : 1 }}>
+      style={{ minWidth: compact ? (folded ? 52 : isHero ? 80 : 64) : folded ? 62 : isHero ? 100 : 80, opacity: folded ? 0.55 : 1 }}>
       <div className="flex items-center gap-1">
         <PosBadge pos={pos} color={color} glow={!!isWinner} />
         {isBtn && <DealerChip />}
@@ -1115,6 +1120,25 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
   }, [streets, street]);
 
   /**
+   * 이번 스트리트에 베팅을 연 좌석 (BZ-1 · 2026-10-16).
+   * ★엔진은 상대마다 «레이즈형(팟)·콜형(하프팟)·폴드»만 정하고 금액은 가장 센 액션 하나로 정한다.
+   *   그대로 라벨을 붙이면 혼자 하프팟을 먼저 건 사람이 «콜», 아무도 안 건 팟에 팟만큼 건 사람이 «레이즈»가 된다.
+   *   → 가장 센 액션을 한 사람 중 플랍 이후 액션 순서(SB → BB → … → BTN)로 첫 사람 = «벳».
+   *   나머지는 그대로(레이즈형 = 레이즈 · 콜형 = 그 금액에 콜) — 규칙 설명의 «레이즈가 나오면 전원이 그 금액에 콜»과 같다.
+   */
+  const bettorSlot = useMemo(() => {
+    if (!sim || !rec || street === 0) return null;
+    const acted = Object.entries(rec.actionBySlot)
+      .filter(([, a]) => a === "raise" || a === "call")
+      .map(([slot, a]) => ({ slot: Number(slot), a }));
+    if (!acted.length) return null;
+    const top = acted.some((x) => x.a === "raise") ? "raise" : "call";
+    const sb = sim.size - 2; // POSITIONS_6·9에서 SB 자리
+    const order = (slot: number) => ((sim.heroPos + slot) % sim.size - sb + sim.size) % sim.size;
+    return acted.filter((x) => x.a === top).reduce((p, x) => (order(x.slot) < order(p.slot) ? x : p)).slot;
+  }, [sim, rec, street]);
+
+  /**
    * 상대 패를 공개했을 때 **그 패들 상대로의** 승률 — 좌석별 값과 나의 승·무·패.
    *
    * ★왜 따로 두나 (2026-08-05, 사장님 지적) — 카드를 까도 화면의 승률은 그대로 레인지 기준이라
@@ -1216,6 +1240,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     // 프리플랍에는 액션이 없으므로 «어떤 레인지로 들어왔나»(오픈·수비)를 대신 적는다
     const role = !isHero ? sim.oppRoles[k - 1] : undefined;
     const statusText = isHero ? undefined
+      : slot === bettorSlot ? ui.bet
       : act === "raise" ? ui.raise
       : act === "call" ? ui.call
       : act === "allIn" ? ui.allIn
@@ -1240,12 +1265,14 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * 테이블 크기 + 인원 + 퀴즈 토글 한 줄. ★폰 첫 화면 높이(S-034 ⑤)를 지키려고 줄을 늘리지 않는다 —
    * 390px에서 «[6인|9인] [2 3 4 5 6] | 🎯»가 한 줄에 들어가도록 묶음 버튼은 글자만 두고(인원 = 숫자),
    * 묶음 앞 «인원» 라벨은 sm↑에서만 보인다. 인원 버튼의 뜻은 aria-label(«3명»)로 준다.
+   * ★390 미만은 묶음 간격 1px · 🎯✍️ 좌우 2px (2026-10-16 · S2 잔여) — 라틴 13로케일 «6-max» 묶음(83~88px) 때문에
+   *   360에서 합계가 줄 폭 336px를 1.4~6.2px 넘었다. 아이콘 버튼 폭 27px라 터치 24px는 그대로 넘는다.
    */
   const segBtn = (on: boolean) => on
     ? { background: GOLD, color: "var(--wrq-accent-ink)" }
     : { color: "hsl(var(--muted-foreground))" };
   const controls = (cls: string) => (
-    <div className={`flex justify-center items-center gap-0.5 min-[390px]:gap-1 sm:gap-2 ${cls}`}>
+    <div className={`flex justify-center items-center gap-px min-[390px]:gap-1 sm:gap-2 ${cls}`}>
       <div className="flex rounded-full border-2 p-px sm:p-0.5" style={{ borderColor: "hsl(var(--border))" }} role="group">
         {([6, 9] as TableSize[]).map((n) => (
           <button key={n} onClick={() => changeSize(n)} aria-pressed={tableSize === n} dir={ui.rtl ? "ltr" : undefined}
@@ -1279,7 +1306,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       <span className="hidden sm:block w-px h-5 bg-border sm:mx-0.5" aria-hidden />
       {/* 폰(390)에서는 성향 select가 들어오며 자리가 모자라 퀴즈도 아이콘만 · 이름은 aria-label·title로 */}
       <button onClick={toggleQuiz} aria-pressed={quiz} aria-label={ui.quizToggle} title={ui.quizToggle}
-        className="px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-0.5 min-[390px]:px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={quiz
           ? { borderColor: GOLD, background: GOLD, color: "var(--wrq-accent-ink)" }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
@@ -1289,7 +1316,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
       {/* 폰(390)에서는 이 줄에 글자까지 넣으면 22~42px 넘친다 → 아이콘만 · 이름은 aria-label·title로 */}
       <button onClick={openEditor} aria-pressed={editing || !!custom} aria-expanded={editing}
         aria-label={ui.customToggle} title={ui.customToggle}
-        className="px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
+        className="px-0.5 min-[390px]:px-1 sm:px-4 py-1.5 rounded-full text-sm font-bold border-2 transition-all whitespace-nowrap"
         style={editing || custom
           ? { borderColor: GOLD, background: editing ? GOLD : "transparent", color: editing ? "var(--wrq-accent-ink)" : GOLD }
           : { borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}>
