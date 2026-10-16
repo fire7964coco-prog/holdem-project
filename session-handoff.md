@@ -10,7 +10,8 @@
 |---|---|---|
 | **MA-577~582** | ✅ 회신+이행 MB-355(10-16 (7) · 요청 13 · RTL 카드열·6-max · 시뮬레이터 좌석 라벨+16로케일 한 문장 · 글 9자리) → ▶ 검수장 재판정 · 남김 = queue §2-CK CK-4·7·16 | 판정 대기 |
 | **텔레그램 ⑥** | ✅ ⑤ 라이브 · MA-584 이행 MB-354 → ▶ 검수장 재판정 · ✅ ⑥ 수신 동의 MB-356(10-16 (8) · 원문·결정·⑦ 의무 = `docs/telegram-login-plan.md` «⑥ 수신 동의» · SQL `supabase/telegram-consent.sql` RUN 뒤 배포) → ▶ 사장님 라이브 시험(체크 켜기·끄기 DM · 해제 DM) · 검수장 16로케일 문구 판정 · 다음 = ⑦ 발송(현지 08~21시 · (광고) 머리 · 무료 수신 거부 버튼 · 2년 재확인 · 🪶 별표 6 «주소» 해석 = 사장님) | ⑦ 사장님 지시 때 |
-| **10-16 (3) 남김** | ① 앱 축어 정렬(queue §2-CJ CJ-7·8) · ③ 게이트 오탐 2건(ko blind-battle L165 H1 · `check-gto-numbers` «A~B%») = 미착수 · ④ 워크트리 = 이미 없음 종결 | 다음 기회 |
+| **10-16 (3) 남김** | ① 앱 축어 정렬(queue §2-CJ CJ-7·8) | 다음 기회 |
+| **MA-586·587** | 🔴 요청 5 + 요청 2 — 미회신(MA-584·585·S-100~102는 MB-357로 닫힘) | ▶ 다음 |
 | **▶ 밀린 묶음 회차(10-15 사장님 «3번 하자»)** | 한 회차 = 한 배치. **R1 공용 RTL**(CD-2 계산기 bidi 16 · CD-5 렌더러 카드토큰·`==수식==`·표 셀 · CA-3 차트 ①~⑤ · CA-7 시뮬레이터 solverNote·formulaExpr·«→»·6-max · 게이트 = 비-RTL SSR 바이트 동일) ✅ 10-15 (18) MB-349 → ▶ 검수장 ar 화면 재판정 · R2 rules EN 문면 전파 CE-6+CG-2 ✅ 10-15 (19) MB-350 → ▶ 검수장 변경 줄 재판정 · R3 시뮬레이터 공용(BZ-1 라벨 · BV-3·4·BZ-2 EN 설명 · F-10 · 360 1px) ✅ 10-16 (1) MB-351 → ▶ 검수장 변경 줄·화면 재판정 · R4 `NEXT_PUBLIC_SUPABASE_URL` → `https://auth.holdemmaster.com` ✅ 10-16 (3)(Vercel production + `.env.local` · 라이브 커뮤니티 요청 = 새 호스트만). 제외 = CH-5·CI-6·CI-7(검수장 EN 원장 신호 대기) · CC-5~8·CF-6·CI-8(판단 대상) · CF-5 = 이미 완료 MB-337 | ✅ 회차 종료(R1~R4) |
 | **MA-574·575·576** | ✅ MB-352(10-16 (2) · zh GTO 5자리 + ja 1자리 · MA-576 pt ACK) → ▶ 검수장 변경 줄 재판정 · 🪶 앱 축어 통지 = queue §2-CJ CJ-7·8 | 판정 대기 |
 | **MA-549·550·551·553** | ✅ 회신+이행 MB-334(10-14 (14) · tr 3 · ar 3묶음 · hi 1 · EN+hi 사전 3) → ▶ 검수장 변경 줄 재판정 · 잔여 = queue §2-CF CF-5(사전 11로케일 전파 🪶)·CF-6(통지 남김) | 판정 대기 |
@@ -55,7 +56,6 @@
 ## 자동 착수 금지 (🪶 판단 대상 — 링크만)
 
 - `docs/en-first-queue.md`: §2-AB(ms 14편 EN 동기화 · ⏸ 사장님 «나중에») · §2-AE 남김 · §2-AP AP-4 · §2-AR(EN FAQ «about 2 points») · §2-BG ③ 무접두 · §2-BI 3bet jam · §2-Z·AA · MB-259 형제 13로케일 all-in `6164c748` 델타 · MB-264 남김 ⓐ~ⓗ · MB-266 ja bad-beat «最後に».
-- 게이트 오탐: ko blind-battle-connected L165 H1(콤보 두 개를 보드로 읽음) · `check-gto-numbers` ko «A~B%» 앞 숫자 미검사(fr·de·vi 🔴 2 · ko 표기 «A%~B%»로 바꾸면 닫힘).
 - fr: H-8 PDF 별도 회차 · `/fr/solver` 본문 산문 링크 · 러닝맵 머리 영어(비-KO 전 로케일).
 - tr: 정본 `docs/tr-cluster-plan.md` + `docs/keyword-bank/tr-serp/00-brief` · 판단 3건(10-06): «pas»=fold · «poker terimleri» 주인 `/tr/glossary`(GSC에서 글과 같이 잡히면 글 301) · 솔버 RTA FAQ = 합법성 축 아님 · 회차 6(북키프로스) 데이터 공급 확정 전 금지.
 - 도구 확장 회차 3(퀴즈) = 사장님 판단(`docs/tools-locale-rollout-plan.md` §3).
