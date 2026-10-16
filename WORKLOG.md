@@ -1,3 +1,9 @@
+## 2026-10-16 (7) — MA-577~582 회신+이행(요청 13) · RTL 카드열·6-max · 시뮬레이터 좌석 라벨 · 글 9자리 · MB-355
+
+- 렌더러 RTL(ar만): `==…==` 낀 카드열을 `<mark>`째 묶음 + `ISO_RE` `d+-max` → ar 렌더 변경 3편(hand-rankings·positions·texas) · EN·DE 렌더 바이트 동일(tsx 덤프 대조). 시뮬레이터 `LTR_TOKEN` `d+-max`.
+- 시뮬레이터 좌석 라벨: 벳 좌석 외 남은 좌석 전부 Call(두 번째 «Raise» 제거) + 규칙 설명 16로케일 «좌석 라벨 = 스트리트 요약» 한 문장(라벨 축어).
+- 글: tr game-order «ve» · vi betting-actions 종료점 · zh-hant 5(ace-paired·paired 2·3bet-sizing·donk) · id blind-battle «tidak lebih dari 0,03bb» · de monotone 배타 + EN 주석. 등재 queue §2-CK. 빌드 exit 0.
+
 ## 2026-10-16 (6) — MA-584 회신+이행(텔레그램 문구 7) · 노출 3곳 · 새 로고 · MB-354
 
 - 사장님 지시: 연결 버튼 노출 3곳(프로필 맨 위 · PC 오른쪽 사이드바 홈·허브 · 모바일 피드 띠 · 연결됨이면 전부 숨김 · 상태 요청 모듈 캐시 1회) `0fdbc218` · 머리글 로고 = 새 로고 PNG(옛 favicon.svg 도형이었음) `41828f63`.

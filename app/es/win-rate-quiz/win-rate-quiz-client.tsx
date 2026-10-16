@@ -211,7 +211,7 @@ const ES_UI: QuizUI = {
         Las reglas se leen de arriba abajo: manda la primera línea que encaje. Un proyecto es un patrón de color o escalera de cuatro cartas en el flop o el turn que usa al menos una carta propia (en el river no hay proyectos).{" "}
         {style === "aggressive" && "Todas las subidas del estilo Agresivo, semifaroles y faroles incluidos, son del 150% del bote. "}
         Cuando alguien sube, todos los que siguen en la mano pagan esa subida, y una apuesta mayor que el stack que
-        queda se limita a un all-in. Tras un all-in nadie foldea: se reparte el resto del board y se va al showdown. No hay check-raise: cada rival actúa una sola vez por calle según las reglas, y no existe el paso de pasar y luego volver a responder. Tú nunca apuestas aquí; solo pagas hasta el river.
+        queda se limita a un all-in. Tras un all-in nadie foldea: se reparte el resto del board y se va al showdown. No hay check-raise: cada rival actúa una sola vez por calle según las reglas, y no existe el paso de pasar y luego volver a responder. Las etiquetas de los asientos resumen cada calle: el asiento que fija la cantidad muestra «Apuesta» y todos los demás que siguen en la mano muestran «Paga», sin importar su lugar en el orden. Tú nunca apuestas aquí; solo pagas hasta el river.
         Los rangos preflop (abajo) son los mismos sea cual sea el estilo.
       </p>
       <p className="mb-2">

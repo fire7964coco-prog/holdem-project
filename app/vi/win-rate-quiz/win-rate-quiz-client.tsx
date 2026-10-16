@@ -224,7 +224,7 @@ const VI_UI: QuizUI = {
         Quy tắc được xét từ trên xuống: dòng đầu tiên khớp sẽ quyết định hành động. Draw là bốn lá hướng tới thùng hoặc sảnh ở flop hoặc turn, dùng ít nhất một lá bài tẩy (ở river không còn draw).{" "}
         {style === "aggressive" && "Mọi lần raise của lối Hung hãn, kể cả semi-bluff và bluff, đều bằng 150% pot. "}
         Khi có người raise, mọi người chơi còn trong ván đều call mức raise đó, và mức bet lớn hơn stack còn lại
-        được hạ xuống bằng stack đó: người chơi all-in. Sau khi có người all-in, không ai fold nữa — phần board còn lại được chia và ván bài đi tới showdown. Không có check-raise — mỗi đối thủ hành động một lần mỗi vòng cược theo quy tắc, không có bước check rồi phản ứng lại. Ở đây bạn không bao giờ bet; bạn chỉ call đến river.
+        được hạ xuống bằng stack đó: người chơi all-in. Sau khi có người all-in, không ai fold nữa — phần board còn lại được chia và ván bài đi tới showdown. Không có check-raise — mỗi đối thủ hành động một lần mỗi vòng cược theo quy tắc, không có bước check rồi phản ứng lại. Nhãn ở mỗi ghế là phần tóm tắt của vòng cược: ghế đặt ra mức cược hiện “Bet”, còn mọi người khác còn trong ván đều hiện “Call”, bất kể thứ tự của họ. Ở đây bạn không bao giờ bet; bạn chỉ call đến river.
         Range preflop (bên dưới) giống nhau với mọi lối chơi.
       </p>
       <p className="mb-2">

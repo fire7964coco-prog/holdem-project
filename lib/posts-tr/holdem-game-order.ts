@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Preflop'ta ilk bahsi big blind'ın solundaki oyuncu yapar; flop, turn ve river'da ise butonun solunda elde kalan ilk oyuncu — genellikle small blind (heads-up'ta bu tersine döner). Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, en fazla 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-10-15",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-15",
   keepImagesInBody: true,
   readTime: "16 dk",
@@ -61,7 +61,7 @@ Blind sadece bir giriş ücreti değildir — ==pozisyonun ve stratejinin başla
 Sıra sana gelince şunlardan birini seçersin:
 
 - **Fold (pas)** — eli bırak ve kartları at (muck). Daha fazla kaybetmezsin ama potu da kazanamazsın.
-- **Call (gör)** — mevcut bahse eşitle (preflop'ta henüz kimse yükseltmediyse ya da straddle koymadıysa bu big blind kadardır).
+- **Call (gör)** — mevcut bahse eşitle (preflop'ta henüz kimse yükseltmediyse ve straddle koymadıysa bu big blind kadardır).
 - **Raise (yükselt)** — rakibe baskı yapmak için mevcut bahisten fazla bahis yap.
 - **3-bet (yeniden yükselt)** — başkasının yükseltişinin üzerine bir yükseltme daha. Güçlü el sinyali.
 

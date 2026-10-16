@@ -655,6 +655,7 @@ const ISO_RE = new RegExp(
     String.raw`${ISO_CARD}(?:[ \-]?${ISO_CARD})*`, // 카드 1장~카드열
     String.raw`(?<![\w♠♥♦♣-])${ISO_RANK}(?:-${ISO_RANK})+(?![\w♠♥♦♣-])`, // 랭크 묶음 A-A-K
     String.raw`\d[\d.,]*%?(?:\s*[÷×+−=]\s*\d[\d.,]*%?)+`, // 수식 0.33 ÷ 1.33 = 24.8%
+    String.raw`(?<![\w-])\d+-max\b`, // 6-max·9-max(안 감싸면 «max-6» · MA-577 ⓑ)
   ].join('|'),
   'g'
 );
@@ -664,9 +665,15 @@ const ISO_MARK_RUN_RE = new RegExp(
   String.raw`(?<![\w♠♥♦♣>-])${ISO_RANK_TOK}(?:-${ISO_RANK_TOK})+(?![\w♠♥♦♣-])`,
   'g'
 );
+const ISO_CARD_TOK = String.raw`(?:${ISO_CARD}|<mark\b[^>]*>${ISO_CARD}(?:[ \-]?${ISO_CARD})*</mark>)`;
+const ISO_MARK_CARDS_RE = new RegExp(`${ISO_CARD_TOK}(?:[ \\-]?${ISO_CARD_TOK})*`, 'g');
 function isolateLtrRuns(html: string): string {
+  // 하이라이트가 끼어 끊긴 카드열(«A♠ A♦ ==g:K♦== Q♠ 7♥» · ar hand-rankings 키커 표 · MA-577 ②) — <mark>째로 한 덩어리
+  const cards = html.replace(ISO_MARK_CARDS_RE, (m) =>
+    m.includes('<mark') && !/^<mark\b[^>]*>[^<]*<\/mark>$/.test(m) ? `${ISO_OPEN}${m}</bdi>` : m
+  );
   // 하이라이트가 끼어 끊긴 랭크 묶음(«A-A-A-==g:J==-7» · ar hand-rankings) — <mark>째로 한 덩어리
-  const runs = html.replace(ISO_MARK_RUN_RE, (m) => (m.includes('<mark') ? `${ISO_OPEN}${m}</bdi>` : m));
+  const runs = cards.replace(ISO_MARK_RUN_RE, (m) => (m.includes('<mark') ? `${ISO_OPEN}${m}</bdi>` : m));
   // ==수식== 하이라이트 — 아랍 문자가 없고 숫자가 든 것은 통째로
   const marked = runs.replace(/(<mark\b[^>]*>)([^<]*)(<\/mark>)/g, (m, o, t, c) =>
     /[\u0590-\u08FF]/.test(t) || !/\d/.test(t) ? m : `${o}<bdi dir="ltr">${t}</bdi>${c}`

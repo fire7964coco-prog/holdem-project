@@ -19,7 +19,7 @@ export const POST: Post = {
   tldr: "Auf Q♠9♠2♠, wo alle drei Flopkarten dieselbe Farbe haben, checkt der Big Blind 88,8%, bettet klein in 8,0% der Fälle und groß nur in 3,2%. Die große Size verschwindet fast, weil die Nuts feststehen: Ein fertiger Flush wird ohnehin schon von kleinen Bets gecallt, und je größer du ohne Flush bettest, desto mehr verengen sich deine Caller auf Flushes. Selbst der Nut Flush checkt im Schnitt 69,9% – und Flushes unterhalb der Nuts checken noch öfter, nämlich 81,4%.",
   category: "strategy",
   date: "2026-10-02",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -152,7 +152,7 @@ Out of position (OOP) ist der Big Blind, der zuerst handelt; in Position (IP) is
 | Overpair (KK, AA) | 0,0% | **2,5%** |
 | A-High | 25,6% | **28,5%** |
 
-⚠ Die Flushdraw-Zeile ist **abgeleitet**: Der Poker-Solver führt „Flushdraw“ und „Combo Draw“ getrennt, und eine Hand mit einem Pik kann in beiden auftauchen. Für den Big Blind sind es also ==20,5 + 5,1 = 25,6%== und für den Button ==24,1 + 5,1 = 29,2%==. Gut zu wissen, wenn du diese Werte mit dem Bildschirm abgleichst.
+⚠ Die Flushdraw-Zeile ist **abgeleitet**: Der Poker-Solver führt „Flushdraw“ und „Combo Draw“ getrennt, und eine Hand mit einem Pik steht entweder in der einen oder in der anderen Zeile. Für den Big Blind sind es also ==20,5 + 5,1 = 25,6%== und für den Button ==24,1 + 5,1 = 29,2%==. Gut zu wissen, wenn du diese Werte mit dem Bildschirm abgleichst.
 
 Die Aufteilung kommt aus dem Preflop. **Der Big Blind verteidigt billigen suited Müll** – Hände wie J4s, J5s und 85s werden aus dem Big Blind gecallt, und die in Pik werden zu Flushes. Der Button eröffnet sie nie.
 

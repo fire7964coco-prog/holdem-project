@@ -220,7 +220,7 @@ const DE_UI: QuizUI = {
         Die Regeln werden von oben nach unten geprüft; die erste passende Zeile entscheidet. Ein Draw ist ein Flush- oder Straßenmuster aus vier Karten auf Flop oder Turn, das mindestens eine Hole Card nutzt (am River gibt es keine Draws).{" "}
         {style === "aggressive" && "Jeder Raise im aggressiven Stil – Semi-Bluffs und Bluffs eingeschlossen – beträgt 150% des Pots. "}
         Wenn jemand raist, callen alle noch beteiligten Spieler diesen Raise, und ein Einsatz über dem restlichen
-        Stack wird als All-in gedeckelt. Nach einem All-in foldet niemand mehr – das restliche Board wird ausgeteilt, dann kommt der Showdown. Check-Raises gibt es nicht – jeder Gegner handelt pro Street genau einmal nach den Regeln; einen Schritt „checken und danach noch einmal reagieren“ sieht die Simulation nicht vor. Du setzt hier nie selbst, du callst einfach bis zum River.
+        Stack wird als All-in gedeckelt. Nach einem All-in foldet niemand mehr – das restliche Board wird ausgeteilt, dann kommt der Showdown. Check-Raises gibt es nicht – jeder Gegner handelt pro Street genau einmal nach den Regeln; einen Schritt „checken und danach noch einmal reagieren“ sieht die Simulation nicht vor. Die Platz-Labels fassen jede Street zusammen: Der Platz, der den Betrag festlegt, zeigt „Bet“, alle anderen noch Beteiligten zeigen „Call“ – egal, an welcher Stelle der Reihenfolge sie sitzen. Du setzt hier nie selbst, du callst einfach bis zum River.
         Die Preflop-Ranges (unten) sind bei jedem Stil gleich.
       </p>
       <p className="mb-2">

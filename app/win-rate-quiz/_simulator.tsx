@@ -26,7 +26,7 @@ import { KitCardFace, KitCardBack, KitCardSlot, KitDealer, KitChip } from "./_ki
 /** ★2026-10-15 공용 RTL 회차(queue §2-CA CA-7) — 아랍어 문장 안의 라틴 덩어리는 문단 방향에 끌려 재배치된다:
  *  플랍 토큰 «K♠Q♥J♦»의 마지막 무늬가 앞으로 떨어지고(«♦K♠Q♥J») · «6-max»가 «max-6»으로 보인다.
  *  RTL일 때만 그 덩어리를 <bdi dir="ltr">로 감싼다(사전에 제어문자는 넣지 않는다 · 다른 로케일은 문자열 그대로). */
-const LTR_TOKEN = /((?:(?:10|[2-9TJQKA])[♠♥♦♣]){2,}|d+-max)/;
+const LTR_TOKEN = /((?:(?:10|[2-9TJQKA])[♠♥♦♣]){2,}|\d+-max)/;
 function isoLtr(text: string, rtl?: boolean): ReactNode {
   if (!rtl) return text;
   return text.split(LTR_TOKEN).map((part, i) => (i % 2 ? <bdi key={i} dir="ltr">{part}</bdi> : part));
@@ -128,7 +128,7 @@ export interface QuizUI {
   /** 액션 라벨 */
   raise: string;
   call: string;
-  /** 그 스트리트에 처음 칩을 넣은 좌석(앞에 베팅이 없었다) — «콜»·«레이즈»로 적으면 틀린다(BZ-1) */
+  /** 그 스트리트 금액을 정한 좌석(BZ-1) — 남은 좌석은 순서와 무관하게 전부 «콜»(엔진 금액은 하나뿐 · MA-582) */
   bet: string;
   check: string;
   /** 앞 스트리트에 스택을 다 넣은 상대 — 더 액션하지 않는다(MA-491 통지 ①) */
@@ -1124,7 +1124,8 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
    * ★엔진은 상대마다 «레이즈형(팟)·콜형(하프팟)·폴드»만 정하고 금액은 가장 센 액션 하나로 정한다.
    *   그대로 라벨을 붙이면 혼자 하프팟을 먼저 건 사람이 «콜», 아무도 안 건 팟에 팟만큼 건 사람이 «레이즈»가 된다.
    *   → 가장 센 액션을 한 사람 중 플랍 이후 액션 순서(SB → BB → … → BTN)로 첫 사람 = «벳».
-   *   나머지는 그대로(레이즈형 = 레이즈 · 콜형 = 그 금액에 콜) — 규칙 설명의 «레이즈가 나오면 전원이 그 금액에 콜»과 같다.
+   *   ★MA-582(10-16): 나머지 남은 좌석은 레이즈형이든 콜형이든, 순서가 벳보다 앞이든 뒤든 전부 «콜» — 금액이 하나뿐이라
+   *   두 번째 «레이즈»는 실제로 같은 금액(= 콜)이다. 벳보다 앞 순서의 «콜»은 «스트리트 요약» 표시이고, 규칙 설명 16로케일에 그 단순화를 적었다.
    */
   const bettorSlot = useMemo(() => {
     if (!sim || !rec || street === 0) return null;
@@ -1241,8 +1242,7 @@ export default function WinRateSimulator({ ui }: { ui: QuizUI }) {
     const role = !isHero ? sim.oppRoles[k - 1] : undefined;
     const statusText = isHero ? undefined
       : slot === bettorSlot ? ui.bet
-      : act === "raise" ? ui.raise
-      : act === "call" ? ui.call
+      : act === "raise" || act === "call" ? ui.call
       : act === "allIn" ? ui.allIn
       : street === 0 ? (role?.kind === "open" ? ui.roleOpen : ui.roleDefend) : ui.check;
 

@@ -1339,6 +1339,29 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CJ-7 남김 zh (MA-574 통지) | paired L270 «每一场都会碰上几次» · low-board L116·L258 «等级面板»(앱 «手牌») · paired L129 «明三条（一张 6）» | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때 |
 | CJ-8 남김 ja (MA-575 통지) | ⓐ «EV損失(bb)» 4자리 ↔ 앱 «EVロス» ⓑ «今日の問題» ↔ 앱 «今日のGTO問題»(EN «Daily Challenge»↔앱 «Daily Puzzle» = EN-먼저) ⓒ ace-paired L91 EN 앱 문자열 ↔ ja 앱 · 참고 a-high L92 최상급 | 🪶 앱 축어 정렬 회차 때(ⓑ는 EN부터) |
 
+### 2-CK. 우편함 수신분 — MA-577(MB-349 ar RTL · RISKY 2) · MA-578(MB-350 rules R2 · RISKY 1 · 미전파 1) · MA-579(zh-hant GTO · W2 R2 미전파 1) · MA-580(id GTO · W1) · MA-581(de GTO · W1) · MA-582(MB-351 시뮬레이터 R3 · RISKY 2) · 등재·회신·이행 2026-10-16 (7)
+
+근거 `홀덤검수/reports/2026-10/검수-MB349-2026-10-16/` · `검수-MB350-2026-10-16/` · `검수-MB351-352-2026-10-16/` · `검수-{zh-hant,id,de}-gto13-경량-2026-10-15/` · `검수-gto6-본부재검증-배치2-2026-10-16/HQ-REPORT.md`
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CK-1 (MA-577 ①) | 시뮬레이터 `LTR_TOKEN` «d+-max» 역슬래시 누락 → «max 100bb-6» | ✅ `\d+-max` · MB-355 |
+| CK-2 (MA-577 ②) | ar hand-rankings 키커 표 L251·252·276 — `==…==` 낀 카드열이 3조각 격리 | ✅ 렌더러 카드열 `<mark>`째 묶음 패스(마크 하나뿐인 카드열은 그대로) · MB-355 |
+| CK-3 (MA-577 ⓑ) | 글 산문 «6-max»·«9-max» → «max-6»(positions · texas) | ✅ 렌더러 `ISO_RE`에 `\d+-max` · ar 산출 변경 = 3편(hand-rankings·positions·texas)뿐 · EN·DE 렌더 바이트 동일 · MB-355 |
+| CK-4 남김 (MA-577 ⓐⓒⓓ) | ⓐ `**굵게**`·«~» 붙은 수식 반만 격리(all-in·texas·pot-odds·probability · 사실 문제 없음) ⓒ «70–100%» = RTL 관례(결함 아님) ⓓ renderMarkdown 밖 필드 | 🪶 ⓐ = 다음 RTL 회차 후보 · ⓒⓓ 종결 |
+| CK-5 tr (MA-578 ①) | holdem-game-order L64 «ya da straddle koymadıysa» | ✅ «ve» · MB-355 |
+| CK-6 vi (MA-578 ②) | holdem-betting-actions L157 «cho tới khi có người all-in» 옛 종료점 | ✅ «mọi người còn trong ván, trừ một người, đều all-in» = L159 · MB-355 |
+| CK-7 남김 ms (MA-578 ⓐ) | holdem-betting-actions FAQ L216 Fixed-Limit EN 꼬리 «lifts only once … heads-up» 탈락 | 🪶 EN-먼저 묶음 때(같은 글 L151에 해제 조건 있음) |
+| CK-8 zh-hant (MA-579 ①) | ace-paired L181 «一個以上的對手» = 1명 이상 | ✅ «兩個以上» = EN «more than one» · MB-355 |
+| CK-9 zh-hant (MA-579 ②) | paired L60 «那些 6 全都留在過牌範圍裡» 전량어 | ✅ «全都» 삭제 · MB-355 |
+| CK-10 zh-hant (MA-579 ③) | 3bet-pot-bet-sizing L273 FAQ «at SPR 4» 탈락 | ✅ «SPR 4 的 3bet 底池裡» · MB-355 |
+| CK-11 zh-hant (MA-579 ④) | donk-bet L197 «全部混進» | ✅ «全部» 삭제 · MB-355 |
+| CK-12 zh-hant (MA-579 ⑤) | paired L173 EN-먼저 `814133ae` F3 미전파 | ✅ zh와 같은 꼴(6-6-3-3-K = 보드 투페어 · 다른 스트리트 2만 살림 · §13 검산) · MB-355 |
+| CK-13 id (MA-580 ①) | blind-battle-connected L184 «berselisih 0,03bb» 상한 탈락 | ✅ «tidak lebih dari 0,03bb» · MB-355 |
+| CK-14 de (MA-581 ①) | monotone L155 «in beiden auftauchen» | ✅ «entweder in der einen oder in der anderen Zeile» + EN 머리 주석 L29(배타) · MB-355 |
+| CK-15 (MA-582 ①②) | 시뮬레이터 L1244 두 번째 레이즈형 «Raise»(같은 금액) · L1245 벳 앞 순서 «Call» ↔ 규칙 «체크 뒤 응수 없음» | ✅ 벳 좌석 외 남은 좌석 전부 «Call» + 규칙 설명 16로케일에 «좌석 라벨 = 스트리트 요약(금액 정한 좌석 Bet · 나머지 순서 무관 Call)» 한 문장(각 파일 라벨 축어) · MB-355 |
+| CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때(CJ-7·8과 함께) |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

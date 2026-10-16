@@ -26,7 +26,7 @@ import type { Post } from "../posts";
  *       Second 14.1 · Weak 3.2 · Underpair 9.0 · Ace High 25.6 · King High 10.3 · No Made Hand 16.0
  *       BTN: Flush 5.7 · Trips 1.9 · Two Pair 1.9 · **Overpair 2.5** · Top Pair 12.0 · Second 13.3 ·
  *       Weak 2.5 · Underpair 10.1 · Ace High 28.5 · King High 8.9 · No Made Hand 12.7
- *   ⚠ 「플러시 드로우」는 **파생값**이다 — 화면의 Flush Draw + Combo Draw(스페이드 1장이 양쪽에 잡힌다).
+ *   ⚠ 「플러시 드로우」는 **파생값**이다 — 화면의 Flush Draw + Combo Draw(스페이드 1장 핸드는 둘 중 한 행에만 잡힌다 — 배타라 더한다 · MA-581).
  *     BB 20.5+5.1 = **25.6** · BTN 24.1+5.1 = **29.2**. 화면과 대조할 사람을 위해 본문에도 각주를 달았다.
  *
  * §13 손 검산 (전부 통과):

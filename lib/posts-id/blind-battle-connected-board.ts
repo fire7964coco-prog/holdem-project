@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop 7♦6♦5♣ menghasilkan bet hanya 9,6% dan check 90,4%. Pot, stack, SPR, pilihan ukuran, dan kedua range preflop sama dengan contoh sebelumnya. Hanya tiga kartu board yang berubah, tetapi frekuensi bet turun dari 67,4% menjadi 9,6%. Keunggulan kartu tinggi opener hilang pada board rendah yang terhubung: equity berbalik menjadi 49,6% versus 50,4%, sementara EQR SB turun ke 85,3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-10-16",
   masterUpdated: "2026-10-02",
   readTime: "10 mnt",
   emoji: "🪜",
@@ -181,7 +181,7 @@ Tiga kelompok mempunyai garis bet yang lebih tebal. Angka berikut berasal dari p
 
 Bet 9,6% tersusun dari sedikit value dan beberapa draw. Kelas 8-8 berada di puncak rata-rata karena **satu hand menjalankan kedua fungsi tersebut**. ⚠ Itu bukan satu-satunya kriteria. Tiga contoh combo dengan frekuensi lebih tinggi memperlihatkan alasan berbeda: **Q♠4♠ 54,7% adalah draw tanpa pair, A♣7♣ 54,4% adalah thin value dengan blocker, dan T♣9♣ 52,2% adalah gutshot**. Ketiganya merupakan contoh, bukan daftar tiga peringkat teratas yang lengkap; Q♥4♥ juga menyamai 54,7%. Combo 8-8 dengan frekuensi tertinggi, 8♦8♣, berada lebih rendah pada 47,1%.
 
-**Check 90,4% tidak berarti SB menyerah.** Untuk thin value seperti A♣7♣ dan K♣7♣, EV bet dan check hanya berselisih 0,03bb, sehingga check nyaris tidak mengorbankan apa pun. Namun, alasan perubahan frekuensi tidak dapat dicari pada pot 6bb, stack 97bb, atau SPR 16,2: ketiganya **tetap sama** pada [⑪ K-T-6](/id/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-id.webp") dan [board A-A-6](/id/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-id.webp"), yang menghasilkan bet 67,4% dan 80,1% untuk SB. Perubahan tiga kartu board yang menjelaskan turunnya bet ke 9,6%.
+**Check 90,4% tidak berarti SB menyerah.** Untuk thin value seperti A♣7♣ dan K♣7♣, selisih EV bet dan check tidak lebih dari 0,03bb, sehingga check nyaris tidak mengorbankan apa pun. Namun, alasan perubahan frekuensi tidak dapat dicari pada pot 6bb, stack 97bb, atau SPR 16,2: ketiganya **tetap sama** pada [⑪ K-T-6](/id/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-id.webp") dan [board A-A-6](/id/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-id.webp"), yang menghasilkan bet 67,4% dan 80,1% untuk SB. Perubahan tiga kartu board yang menjelaskan turunnya bet ke 9,6%.
 
 :::note[⚠ Contoh ini hanya menyediakan satu ukuran bet, yaitu sepertiga pot. Menambahkan ukuran yang lebih besar ke tree dapat mengubah angka 9,6%. Dalam kondisi yang dihitung, hanya sedikit porsi range yang memilih bet, bahkan dengan ukuran kecil.]:::
 

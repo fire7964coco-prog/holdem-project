@@ -220,7 +220,7 @@ const MS_UI: QuizUI = {
         Peraturan dibaca dari atas ke bawah: baris pertama yang sepadan menentukan aksinya. Draw bermaksud empat kad ke arah flush atau straight pada flop atau turn, dengan sekurang-kurangnya satu kad dari tangan (di river tiada draw).{" "}
         {style === "aggressive" && "Semua raise gaya Agresif, termasuk semi-bluff dan bluff, bersaiz 150% pot. "}
         Apabila ada yang raise, semua pemain yang masih dalam tangan ini call raise tersebut, dan bet yang lebih besar daripada baki stack
-        dikurangkan kepada baki stack itu: pemainnya all-in. Sebaik sahaja ada pemain all-in, tiada lagi yang fold — baki board diagihkan dan tangan ke showdown. Tiada check-raise — setiap lawan beraksi sekali bagi setiap street mengikut peraturan, tanpa check dahulu lalu bertindak balas semula. Di sini anda tidak pernah bet; anda hanya call hingga ke river.
+        dikurangkan kepada baki stack itu: pemainnya all-in. Sebaik sahaja ada pemain all-in, tiada lagi yang fold — baki board diagihkan dan tangan ke showdown. Tiada check-raise — setiap lawan beraksi sekali bagi setiap street mengikut peraturan, tanpa check dahulu lalu bertindak balas semula. Label tempat duduk meringkaskan setiap street: tempat duduk yang menetapkan jumlah dipaparkan “Bet”, dan semua pemain lain yang masih dalam tangan dipaparkan “Call”, tidak kira kedudukan mereka dalam giliran. Di sini anda tidak pernah bet; anda hanya call hingga ke river.
         Range preflop (di bawah) sama untuk semua gaya.
       </p>
       <p className="mb-2">

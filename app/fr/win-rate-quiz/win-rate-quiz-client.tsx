@@ -225,7 +225,7 @@ const FR_UI: QuizUI = {
         Les règles se lisent de haut en bas : c&rsquo;est la première ligne qui correspond qui décide de l&rsquo;action. Un tirage, c&rsquo;est quatre cartes à la couleur ou à la quinte au flop ou au turn, dont au moins une carte de la main (il n&rsquo;y a pas de tirage à la river).{" "}
         {style === "aggressive" && "Toutes les relances du style Agressif, semi-bluffs et bluffs compris, font 150 % du pot. "}
         Quand quelqu&rsquo;un relance, tous les joueurs encore dans le coup suivent cette relance, et une mise plus grosse que le tapis
-        restant est ramenée au tapis restant : le joueur est à tapis. Dès qu&rsquo;un joueur est à tapis, plus personne ne se couche — le reste du board est distribué et on passe à l&rsquo;abattage. Il n&rsquo;y a pas de check-raise — chaque adversaire agit une fois par street selon les règles, sans étape où un joueur checke puis répond à nouveau. Ici, tu ne mises jamais ; tu suis simplement jusqu&rsquo;à la river.
+        restant est ramenée au tapis restant : le joueur est à tapis. Dès qu&rsquo;un joueur est à tapis, plus personne ne se couche — le reste du board est distribué et on passe à l&rsquo;abattage. Il n&rsquo;y a pas de check-raise — chaque adversaire agit une fois par street selon les règles, sans étape où un joueur checke puis répond à nouveau. Les étiquettes des sièges résument chaque street : le siège qui fixe le montant affiche « Mise », et tous les autres joueurs encore dans le coup affichent « Suit », quelle que soit leur place dans l&rsquo;ordre. Ici, tu ne mises jamais ; tu suis simplement jusqu&rsquo;à la river.
         Les ranges préflop (ci-dessous) sont les mêmes quel que soit le style.
       </p>
       <p className="mb-2">

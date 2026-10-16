@@ -219,7 +219,7 @@ const PT_UI: QuizUI = {
         As regras são lidas de cima para baixo: vale a primeira linha que se encaixa. Draw é um padrão de flush ou sequência de quatro cartas no flop ou no turn que usa pelo menos uma carta da mão (no river não existe draw).{" "}
         {style === "aggressive" && "Todo aumento do estilo Agressivo, semi-blefes e blefes incluídos, é de 150% do pote. "}
         Quando alguém aumenta, todo mundo que segue na mão paga esse aumento, e uma aposta maior que o stack que
-        sobrou fica limitada a um all-in. Depois de um all-in ninguém folda — o resto do board é distribuído e vai para o showdown. Não existe check-raise — cada adversário age uma vez por street pelas regras, e não há a etapa de dar check e depois responder de novo. Aqui você nunca aposta; você só paga até o river.
+        sobrou fica limitada a um all-in. Depois de um all-in ninguém folda — o resto do board é distribuído e vai para o showdown. Não existe check-raise — cada adversário age uma vez por street pelas regras, e não há a etapa de dar check e depois responder de novo. Os rótulos dos assentos resumem cada street: o assento que define o valor mostra “Aposta”, e todos os outros que seguem na mão mostram “Paga”, seja qual for o lugar na ordem. Aqui você nunca aposta; você só paga até o river.
         Os ranges de pré-flop (abaixo) são os mesmos em qualquer estilo.
       </p>
       <p className="mb-2">
