@@ -1,3 +1,10 @@
+## 2026-10-16 (24) — 도구 전 언어 확장 pl ② 도구 5(main 머지 · 미배포)
+
+- 분담(계획 §4 · pl부터 새 규칙): GPT sol high 2레인 워크트리 — A `Holdem-gpt-pl-a`(계산기·차트·용어 · 7ba94fc4·8e98c424·ee5f5a33) / B `Holdem-gpt-pl-b`(시뮬레이터·대회 · 586c13ee·1e0a0229). 지시문 = it 레인 구조 복제 + 레인 안 원어민 렌즈·전면 검수 없음 · astra medium read-only 1회 = §13 문장만(A 80문장 PASS · B 새 오류 0). 각 레인 ~20분.
+- 헤드: 머지 d1d24bf7·4a92ee40 · 충돌 hub-routes 1 + side-rail `pl:` 키 중복(자동 머지가 두 키를 남겨 뒤 키가 도구 3을 덮음) → 한 배열 5개로. 빌드 exit 0(정적 137) · calc-parity 18 · hreflang · intl-links · seo-sync 통과. 화면 = 로컬 next start + Playwright load 대기(shoot.mjs의 networkidle은 로컬에서 전부 60초 초과) 390·1440 × 5 넘침 0 · 오류 0 · lang pl.
+- 머리어: Kalkulator pokerowy · Ręce startowe poker · Słownik pokerowy · Quiz poker · Turnieje pokerowe 2026(«Polska» 없음). 없는 pl 글 링크는 비움.
+- 남김(검수장에 넘길 것): 원어민 판정 5페이지 · «street» 굴절(«kolejne street»·«na każdej street») · A의 astra 입력은 PowerShell 파이프로 비ASCII가 «?»로 깨짐(카드·수식 기호는 로컬 대조 0 불일치) · pl-PL 4자리 정수 무구분(1326 — CLDR 표준, 본문 «1 326»과 다름) · EN-먼저 문구(it와 같은 4) · 공용 OutsCalc 390 카드 넘침(it 보고 ⑦).
+
 ## 2026-10-16 (23) — MA-598 회신+이행(it 도구 5 판정 RISKY 3) · MB-368
 
 - 판정 WRONG 0 · RISKY 3 → 전부 이행: it 계산기 dict L160·L1177 overcard «puoi perdere» → «spesso perdi lo stesso»(EN often) · it 퀴즈 DESCRIPTION «pot odds» → «pot odds dal flop in poi»(146자). 언어북 it ① 통독 후 작업.
