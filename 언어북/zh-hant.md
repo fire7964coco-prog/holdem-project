@@ -6,7 +6,7 @@
 
 ## ① 용어 정본 — 족보·액션·숫자 표기·문체·도구/앱 UI 낱말 (글·도구·솔버 공용 · 🔴 가장 먼저)
 
-- `docs/translation-terms-zh-hant.md` (32KB)
+- `docs/translation-terms-zh-hant.md` (34KB)
 
 ## ② 키워드 뱅크 — 검색량·SERP·자동완성·조준 (도구 서치 «글 몫 발견» 절 포함)
 

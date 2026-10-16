@@ -16,7 +16,7 @@
 - `docs/keyword-bank/en-country-strategy.md` (9KB)
 - `docs/keyword-bank/en-glossary-what-is-a.md` (6KB)
 - `docs/keyword-bank/en-gto-series.md` (24KB)
-- `docs/keyword-bank/en-gto-solver.md` (11KB)
+- `docs/keyword-bank/en-gto-solver.md` (13KB)
 - `docs/keyword-bank/en-icm.md` (2KB)
 - `docs/keyword-bank/en-odds-of.md` (4KB)
 - `docs/keyword-bank/en-position.md` (4KB)
