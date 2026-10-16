@@ -1,3 +1,10 @@
+## 2026-10-16 (16) — 도구 전 언어 확장 it ② 도구 5(main 머지 · 미배포)
+
+- 분담(계획 §4): GPT sol(effort high) 2레인 워크트리 병렬 — A `Holdem-gpt-it-a`(계산기·차트·용어 · 커밋 e33ab8f8·13922b61·85db3936) / B `Holdem-gpt-it-b`(시뮬레이터·대회 · 948e69cd·f9c7fa5d). 각 레인이 astra ultra 독립 검수 + 변경 줄 재교열 + 390·1440 화면 확인까지. 보고 = docs/tool-lanes/it-tools-{A,B}-report.md.
+- 헤드: 머지 ae2a45d9·5f7cc57d · 충돌 3(side-rail·hub-routes = 두 레인 합쳐 도구 5 · hub-i18n IT = A판) · HUB_HEADING it «Guide». 빌드 exit 0(정적 133) · calc-parity 17 · hreflang · tournaments-i18n · seo-sync · intl-links · number-format 통과.
+- 머리어: Calcolatore poker · Tabella delle mani iniziali · Termini del poker · Quiz poker · Tornei poker live 2026(«Italia» 없음). 없는 it 글 링크는 비움(EN 우회 없음).
+- 남김: 공용 OutsCalc 390 결과 카드 3칸 «19,6%» 넘침(grid-cols-3·text-3xl · 전 로케일 공용) · EN-먼저 문구 4(차트 FAQ4·5 · 계산기 AA win/equity · 용어 equity 무승부·Check BB 옵션) · /it/solver = ④.
+
 ## 2026-10-16 (15) — 도구 전 언어 확장 it ① 서치(용어 + 도구 검색어)
 
 - 분담(계획 §4): GPT sol(effort medium · 워크트리 `Holdem-gpt-it` · 브랜치 `gpt-it`)이 `translation-terms-it.md`에 «도구·앱 UI 낱말» 절 직접 작성·커밋 `b06df0d6`(219항목 · 미확인 53 = EN 임시 · 쟁점 9 · 기존 절 무수정) → main ff 머지. Claude = DataForSEO(2380·it) 볼륨 57어 · SERP 6 · 자동완성 2 → `docs/keyword-bank/it-tools.md`.
