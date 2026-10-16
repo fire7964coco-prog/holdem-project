@@ -162,3 +162,14 @@
 - ② 「Reglas · Estrategia · Probabilidades · Torneos」 + 「Todo en **un solo lugar**.」 · ③ 「Jugadores de **poker** de todo el mundo / Comunidad」 · 최종 화면 「A continuación」「Todas las clases del solver」「Suscríbete」(tú).
 - 🟡 poker / póker 문서 충돌: `local-voice/es-latam.md:59`(póker는 본문 polish) ↔ `es-gto-series-translation-brief.md:86`(본문도 poker). 영상 화면은 **poker**로 판정 — 엔딩이 붙는 GTO 해설 시리즈 본문이 무악센트(`a-high-board-cbet.ts` 7:0 · `donk-bet-strategy.ts` 10:0), 랜딩 제목 «Solver poker GTO gratis». 단 사이트 일부 표시 문구(`app/es/glossary/dict.ts:16`·`solver-client.tsx:427` 등)는 póker — 본체가 한쪽으로 정리할지 검토 필요.
 - 영상 제목·설명: `GTO` 단독 금지(과나후아토), 어순 `solver poker`(SD 0) > `solver de poker`(SD 46) (`app/es/solver/page.tsx:22-25`).
+
+## 🔴 확정 — «poker / póker» 자리별 표기 (사장님 2026-10-16 · 통일하지 않는다 · 재론 금지)
+
+| 자리 | 표기 | 이유 |
+|---|---|---|
+| 검색 자리 — 제목·seoTitle·H2·슬러그·영상 제목·영상/앱 화면 | **poker** | 무악센트가 쿼리 지배(`docs/local-voice/es-latam.md` §4) |
+| 본문 산문 | **póker** | 정서법 · 원어민 polish |
+| 족보 포카드 | **Póker**(대문자) | 위 족보 표 |
+| 쓰지 않음 | póquer | 스페인 격식 tell — LATAM 안 씀 |
+
+- 실측(10-16): es 글 «póker» 1,324 · «poker» 683 = 이미 이 구분대로. 영상 화면 «poker»(위 🎬 절)도 «검색 자리»라 맞다 — 둘은 충돌이 아니다.
