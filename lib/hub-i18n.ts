@@ -307,7 +307,19 @@ const IT: HubLabels = {
   languages: "🌐 Lingue della community",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU, it: IT };
+const PL: HubLabels = {
+  login: "Zaloguj się",
+  write: "✏️ Napisz post",
+  trending: "🔥 Popularne w tym tygodniu",
+  eventBadge: "🎰 Wydarzenie · Wkrótce",
+  eventTitle: "Wybierz 6 liczb\nWygraj bony podarunkowe!",
+  eventDesc: "3 trafienia → $30 · 4 → $200\n5 → $1 000",
+  eventSchedule: "🔗 W każdą niedzielę o 19:00 KST\nAutomatyczne losowanie na podstawie hasha bloku Bitcoin",
+  eventButton: "Zobacz wydarzenie →",
+  languages: "🌐 Języki społeczności",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { pl: PL, en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU, it: IT };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
