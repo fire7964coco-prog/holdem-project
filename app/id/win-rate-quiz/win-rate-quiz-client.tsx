@@ -223,14 +223,14 @@ const ID_UI: QuizUI = {
         Aturan dibaca dari atas ke bawah: baris pertama yang cocok menentukan aksinya. Draw berarti empat kartu menuju flush atau straight di flop atau turn, dengan minimal satu kartu dari tangan (di river tidak ada draw).{" "}
         {style === "aggressive" && "Semua raise gaya Agresif, termasuk semi-bluff dan bluff, berukuran 150% pot. "}
         Saat ada yang raise, semua pemain yang masih di hand ini call raise tersebut, dan bet yang lebih besar dari sisa stack
-        diturunkan menjadi sisa stack itu: pemainnya all-in. Begitu ada pemain all-in, tidak ada lagi yang fold — sisa board dibagikan dan hand masuk ke showdown. Tidak ada check-raise — tiap lawan beraksi sekali per street sesuai aturan, tanpa tahap check lalu merespons lagi. Label kursi merangkum tiap street: kursi yang menentukan jumlahnya tampil “Bet”, dan semua pemain lain yang masih di hand tampil “Call”, apa pun urutannya. Di sini Anda tidak pernah bet; Anda cukup call sampai river.
+        diturunkan menjadi sisa stack itu: pemainnya all-in. Begitu ada pemain all-in, tidak ada lagi yang fold — sisa board dibagikan dan hand masuk ke showdown. Tidak ada check-raise — tiap lawan beraksi sekali per street sesuai aturan, tanpa tahap check lalu merespons lagi. Di street postflop yang ada bet-nya, label kursi merangkum street itu: kursi yang menentukan jumlahnya tampil “Bet”, dan semua pemain lain yang masih di hand tampil “Call”, apa pun urutannya (di preflop, label menunjukkan cara tiap pemain masuk, dan kursi yang all-in menunjukkan all-in-nya). Di sini Anda tidak pernah bet; Anda cukup call sampai river.
         Range preflop (di bawah) sama untuk semua gaya.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Equity Anda dihitung seolah Anda tidak bisa melihat kartu mereka.</b> Mulai
         flop, range tiap lawan adalah hand dari range preflop posisinya (di bawah) yang akan melakukan aksi yang
         Anda lihat menurut aturan gaya yang dipilih — melawan lawan gaya Normal, raise hanya menyisakan two pair
-        atau lebih baik; melawan lawan gaya Agresif, draw dan bluff dengan overcard juga tetap tersisa. Pemain yang fold di layar
+        atau lebih baik; melawan lawan gaya Agresif, draw dan bluff dengan overcard juga tetap tersisa. Jika aksi kursi itu sendiri adalah raise, hitungan tetap menganggapnya raise meski labelnya “Call” — label seperti itu tampil merah. Pemain yang fold di layar
         juga keluar dari hitungan.
       </p>
       <p className="mb-2">

@@ -224,14 +224,14 @@ const VI_UI: QuizUI = {
         Quy tắc được xét từ trên xuống: dòng đầu tiên khớp sẽ quyết định hành động. Draw là bốn lá hướng tới thùng hoặc sảnh ở flop hoặc turn, dùng ít nhất một lá bài tẩy (ở river không còn draw).{" "}
         {style === "aggressive" && "Mọi lần raise của lối Hung hãn, kể cả semi-bluff và bluff, đều bằng 150% pot. "}
         Khi có người raise, mọi người chơi còn trong ván đều call mức raise đó, và mức bet lớn hơn stack còn lại
-        được hạ xuống bằng stack đó: người chơi all-in. Sau khi có người all-in, không ai fold nữa — phần board còn lại được chia và ván bài đi tới showdown. Không có check-raise — mỗi đối thủ hành động một lần mỗi vòng cược theo quy tắc, không có bước check rồi phản ứng lại. Nhãn ở mỗi ghế là phần tóm tắt của vòng cược: ghế đặt ra mức cược hiện “Bet”, còn mọi người khác còn trong ván đều hiện “Call”, bất kể thứ tự của họ. Ở đây bạn không bao giờ bet; bạn chỉ call đến river.
+        được hạ xuống bằng stack đó: người chơi all-in. Sau khi có người all-in, không ai fold nữa — phần board còn lại được chia và ván bài đi tới showdown. Không có check-raise — mỗi đối thủ hành động một lần mỗi vòng cược theo quy tắc, không có bước check rồi phản ứng lại. Ở vòng cược sau flop có người cược, nhãn ở mỗi ghế là phần tóm tắt của vòng đó: ghế đặt ra mức cược hiện “Bet”, còn mọi người khác còn trong ván đều hiện “Call”, bất kể thứ tự của họ (ở preflop, nhãn cho biết mỗi người vào ván thế nào; ghế đã all-in thì hiện all-in). Ở đây bạn không bao giờ bet; bạn chỉ call đến river.
         Range preflop (bên dưới) giống nhau với mọi lối chơi.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Equity của bạn được tính như thể bạn không thấy bài của họ.</b> Từ
         flop trở đi, range của mỗi đối thủ là những tay bài trong range preflop theo vị trí (bên dưới) mà theo quy tắc của lối chơi đã chọn
         sẽ thực hiện đúng các hành động bạn đã thấy — với đối thủ Chuẩn, nếu họ raise thì range chỉ còn hai đôi
-        trở lên; với đối thủ Hung hãn, draw và bluff bằng overcard cũng vẫn còn trong range. Người chơi fold trên màn hình
+        trở lên; với đối thủ Hung hãn, draw và bluff bằng overcard cũng vẫn còn trong range. Nếu hành động của chính ghế đó là raise, phép tính vẫn coi đó là raise dù nhãn hiện “Call” — nhãn như vậy có chữ màu đỏ. Người chơi fold trên màn hình
         cũng bị loại khỏi phép tính.
       </p>
       <p className="mb-2">

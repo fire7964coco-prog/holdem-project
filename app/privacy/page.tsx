@@ -19,7 +19,7 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
 
 // 🔴 수집 항목을 바꾸면 배포일로 바꾼다 — 10-11 = 학습·퀴즈 기록 3줄(docs/my-records-design.md §4 ·
 //   트레이너 기록은 08-15부터 수집 중이었는데 표에 없었다) · 10-16 = 텔레그램 연결·수신 동의(⑤에서 수집을 시작했는데 표에 없었다 ·
-//   docs/telegram-login-plan.md «⑥»)
+//   docs/telegram-login-plan.md «⑥») · 같은 날 위탁 표에 Resend(10-14부터 Supabase 인증 메일 SMTP · 표에 없었다)
 const UPDATED = "2026-10-16";
 
 export const metadata: Metadata = {
@@ -213,6 +213,11 @@ export default function PrivacyPage() {
               <td>Vercel</td>
               <td>웹사이트 호스팅, 접속 로그, 성능·방문 통계 측정</td>
               <td>해외 서버</td>
+            </tr>
+            <tr>
+              <td>Resend</td>
+              <td>회원가입 확인·로그인 링크 등 인증 메일 발송</td>
+              <td>해외 서버 · 받는 이메일 주소와 메일 본문이 전송됨</td>
             </tr>
             <tr>
               <td>Google (Analytics)</td>

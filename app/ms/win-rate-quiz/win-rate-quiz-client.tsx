@@ -220,14 +220,14 @@ const MS_UI: QuizUI = {
         Peraturan dibaca dari atas ke bawah: baris pertama yang sepadan menentukan aksinya. Draw bermaksud empat kad ke arah flush atau straight pada flop atau turn, dengan sekurang-kurangnya satu kad dari tangan (di river tiada draw).{" "}
         {style === "aggressive" && "Semua raise gaya Agresif, termasuk semi-bluff dan bluff, bersaiz 150% pot. "}
         Apabila ada yang raise, semua pemain yang masih dalam tangan ini call raise tersebut, dan bet yang lebih besar daripada baki stack
-        dikurangkan kepada baki stack itu: pemainnya all-in. Sebaik sahaja ada pemain all-in, tiada lagi yang fold — baki board diagihkan dan tangan ke showdown. Tiada check-raise — setiap lawan beraksi sekali bagi setiap street mengikut peraturan, tanpa check dahulu lalu bertindak balas semula. Label tempat duduk meringkaskan setiap street: tempat duduk yang menetapkan jumlah dipaparkan “Bet”, dan semua pemain lain yang masih dalam tangan dipaparkan “Call”, tidak kira kedudukan mereka dalam giliran. Di sini anda tidak pernah bet; anda hanya call hingga ke river.
+        dikurangkan kepada baki stack itu: pemainnya all-in. Sebaik sahaja ada pemain all-in, tiada lagi yang fold — baki board diagihkan dan tangan ke showdown. Tiada check-raise — setiap lawan beraksi sekali bagi setiap street mengikut peraturan, tanpa check dahulu lalu bertindak balas semula. Pada street postflop yang ada bet, label tempat duduk meringkaskan street itu: tempat duduk yang menetapkan jumlah dipaparkan “Bet”, dan semua pemain lain yang masih dalam tangan dipaparkan “Call”, tidak kira kedudukan mereka dalam giliran (pada preflop, label menunjukkan cara setiap pemain masuk, dan tempat duduk yang all-in menunjukkan all-in). Di sini anda tidak pernah bet; anda hanya call hingga ke river.
         Range preflop (di bawah) sama untuk semua gaya.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Equity anda dikira seolah-olah anda tidak dapat melihat kad mereka.</b> Mulai
         flop, range setiap lawan ialah tangan daripada range preflop posisinya (di bawah) yang akan mengambil aksi yang
         anda lihat menurut peraturan gaya yang dipilih — menentang lawan gaya Biasa, raise hanya meninggalkan two pair
-        atau lebih baik; menentang lawan gaya Agresif, draw dan bluff dengan overcard juga kekal. Pemain yang fold di skrin
+        atau lebih baik; menentang lawan gaya Agresif, draw dan bluff dengan overcard juga kekal. Jika aksi tempat duduk itu sendiri ialah raise, kiraan tetap menganggapnya raise walaupun labelnya “Call” — label sebegitu dipaparkan dalam warna merah. Pemain yang fold di skrin
         juga dikeluarkan daripada kiraan.
       </p>
       <p className="mb-2">

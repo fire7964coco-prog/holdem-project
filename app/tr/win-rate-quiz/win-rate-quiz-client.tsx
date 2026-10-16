@@ -230,14 +230,14 @@ const TR_UI: QuizUI = {
         Kurallar yukarıdan aşağı kontrol edilir; uyan ilk satır aksiyonu belirler. Draw, flop&apos;ta ya da turn&apos;de en az bir kapalı kartı kullanan dört kartlık flush ya da kent dizilimidir (river&apos;da draw olmaz).{" "}
         {style === "aggressive" && "Agresif tarzın semi-blöf ve blöf dahil her raise'i potun %150'sidir. "}
         Biri raise yaptığında elde kalan her oyuncu o raise miktarını call eder; kalan stack&apos;ten büyük bir bet
-        o stack&apos;e indirilir: oyuncu all-in olur. All-in&apos;den sonra kimse fold etmez — board&apos;un geri kalanı açılır ve el showdown&apos;a gider. Check-raise yoktur — her rakip kurallara göre her street&apos;te bir kez hareket eder; check yapıp sonra yeniden karşılık verme adımı yoktur. Koltuk etiketleri her street&apos;i özetler: miktarı belirleyen koltukta “Bet”, elde kalan diğer herkeste sıradaki yeri ne olursa olsun “Call” yazar. Burada sen hiç bet yapmazsın; river&apos;a kadar yalnızca call edersin.
+        o stack&apos;e indirilir: oyuncu all-in olur. All-in&apos;den sonra kimse fold etmez — board&apos;un geri kalanı açılır ve el showdown&apos;a gider. Check-raise yoktur — her rakip kurallara göre her street&apos;te bir kez hareket eder; check yapıp sonra yeniden karşılık verme adımı yoktur. Bet gelen bir postflop street&apos;te koltuk etiketleri o street&apos;i özetler: miktarı belirleyen koltukta “Bet”, elde kalan diğer herkeste sıradaki yeri ne olursa olsun “Call” yazar (preflop&apos;ta etiketler oyuncunun ele nasıl girdiğini, all-in olan koltuk ise all-in&apos;i gösterir). Burada sen hiç bet yapmazsın; river&apos;a kadar yalnızca call edersin.
         Preflop range&apos;leri (aşağıda) tarz ne olursa olsun aynıdır.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Equity&apos;n, rakiplerin kartlarını göremiyormuşsun gibi hesaplanır.</b> Flop&apos;tan
         itibaren her rakibin range&apos;i, pozisyona göre preflop range&apos;indeki (aşağıda) eller arasından, seçili tarzın kurallarına göre
         gördüğün aksiyonları yapacak olanlardır — Normal rakiplerde bir raise geriye yalnızca iki çift ve daha iyisini
-        bırakır; Agresif rakiplerde draw&apos;lar ve overcard blöfleri de range&apos;de kalır. Ekranda fold eden oyuncular
+        bırakır; Agresif rakiplerde draw&apos;lar ve overcard blöfleri de range&apos;de kalır. Bir koltuğun kendi aksiyonu raise ise etiketi “Call” olsa da hesapta raise sayılır — böyle bir etiket kırmızı görünür. Ekranda fold eden oyuncular
         da hesaptan çıkar.
       </p>
       <p className="mb-2">

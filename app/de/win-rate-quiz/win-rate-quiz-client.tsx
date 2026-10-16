@@ -220,14 +220,14 @@ const DE_UI: QuizUI = {
         Die Regeln werden von oben nach unten geprüft; die erste passende Zeile entscheidet. Ein Draw ist ein Flush- oder Straßenmuster aus vier Karten auf Flop oder Turn, das mindestens eine Hole Card nutzt (am River gibt es keine Draws).{" "}
         {style === "aggressive" && "Jeder Raise im aggressiven Stil – Semi-Bluffs und Bluffs eingeschlossen – beträgt 150% des Pots. "}
         Wenn jemand raist, callen alle noch beteiligten Spieler diesen Raise, und ein Einsatz über dem restlichen
-        Stack wird als All-in gedeckelt. Nach einem All-in foldet niemand mehr – das restliche Board wird ausgeteilt, dann kommt der Showdown. Check-Raises gibt es nicht – jeder Gegner handelt pro Street genau einmal nach den Regeln; einen Schritt „checken und danach noch einmal reagieren“ sieht die Simulation nicht vor. Die Platz-Labels fassen jede Street zusammen: Der Platz, der den Betrag festlegt, zeigt „Bet“, alle anderen noch Beteiligten zeigen „Call“ – egal, an welcher Stelle der Reihenfolge sie sitzen. Du setzt hier nie selbst, du callst einfach bis zum River.
+        Stack wird als All-in gedeckelt. Nach einem All-in foldet niemand mehr – das restliche Board wird ausgeteilt, dann kommt der Showdown. Check-Raises gibt es nicht – jeder Gegner handelt pro Street genau einmal nach den Regeln; einen Schritt „checken und danach noch einmal reagieren“ sieht die Simulation nicht vor. Auf einer Postflop-Street mit Einsatz fassen die Platz-Labels diese Street zusammen: Der Platz, der den Betrag festlegt, zeigt „Bet“, alle anderen noch Beteiligten zeigen „Call“ – egal, an welcher Stelle der Reihenfolge sie sitzen (preflop zeigen die Labels, wie jemand ins Spiel kam, und ein Platz im All-in zeigt sein All-in). Du setzt hier nie selbst, du callst einfach bis zum River.
         Die Preflop-Ranges (unten) sind bei jedem Stil gleich.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Deine Equity wird so berechnet, als würdest du die Gegnerkarten nicht sehen.</b> Ab
         dem Flop besteht die Range jedes Gegners aus den Händen seiner positionsbasierten Preflop-Range (unten), die
         nach den Regeln des gewählten Stils genau die gesehenen Aktionen gemacht hätten – gegen normale Gegner bleiben nach
-        einem Raise nur Zwei Paare oder besser übrig, gegen aggressive Gegner auch Draws und Overcard-Bluffs. Spieler, die
+        einem Raise nur Zwei Paare oder besser übrig, gegen aggressive Gegner auch Draws und Overcard-Bluffs. War die eigene Aktion eines Platzes ein Raise, rechnet die Simulation weiter mit diesem Raise, auch wenn sein Label „Call“ zeigt – dieses Label erscheint dann in Rot. Spieler, die
         auf dem Bildschirm folden, fallen auch aus der Rechnung.
       </p>
       <p className="mb-2">

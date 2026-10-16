@@ -219,14 +219,14 @@ const PT_UI: QuizUI = {
         As regras são lidas de cima para baixo: vale a primeira linha que se encaixa. Draw é um padrão de flush ou sequência de quatro cartas no flop ou no turn que usa pelo menos uma carta da mão (no river não existe draw).{" "}
         {style === "aggressive" && "Todo aumento do estilo Agressivo, semi-blefes e blefes incluídos, é de 150% do pote. "}
         Quando alguém aumenta, todo mundo que segue na mão paga esse aumento, e uma aposta maior que o stack que
-        sobrou fica limitada a um all-in. Depois de um all-in ninguém folda — o resto do board é distribuído e vai para o showdown. Não existe check-raise — cada adversário age uma vez por street pelas regras, e não há a etapa de dar check e depois responder de novo. Os rótulos dos assentos resumem cada street: o assento que define o valor mostra “Aposta”, e todos os outros que seguem na mão mostram “Paga”, seja qual for o lugar na ordem. Aqui você nunca aposta; você só paga até o river.
+        sobrou fica limitada a um all-in. Depois de um all-in ninguém folda — o resto do board é distribuído e vai para o showdown. Não existe check-raise — cada adversário age uma vez por street pelas regras, e não há a etapa de dar check e depois responder de novo. Numa street pós-flop com aposta, os rótulos dos assentos resumem essa street: o assento que define o valor mostra “Aposta”, e todos os outros que seguem na mão mostram “Paga”, seja qual for o lugar na ordem (no pré-flop os rótulos mostram como cada jogador entrou, e um assento all-in mostra o all-in). Aqui você nunca aposta; você só paga até o river.
         Os ranges de pré-flop (abaixo) são os mesmos em qualquer estilo.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Sua equity é calculada como se você não visse as cartas deles.</b> A partir do
         flop, o range de cada adversário são as mãos do range de pré-flop da posição dele (abaixo) que teriam feito as ações que
         você viu pelas regras do estilo escolhido — contra adversários no estilo Normal, um aumento deixa só dois pares
-        ou melhor; contra adversários no estilo Agressivo, draws e blefes com overcard também continuam. Os jogadores que foldam na tela
+        ou melhor; contra adversários no estilo Agressivo, draws e blefes com overcard também continuam. Se a ação do próprio assento foi um aumento, a conta continua tratando como aumento mesmo que o rótulo diga “Paga” — esse rótulo aparece em vermelho. Os jogadores que foldam na tela
         também saem da conta.
       </p>
       <p className="mb-2">

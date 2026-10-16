@@ -225,14 +225,14 @@ const FR_UI: QuizUI = {
         Les règles se lisent de haut en bas : c&rsquo;est la première ligne qui correspond qui décide de l&rsquo;action. Un tirage, c&rsquo;est quatre cartes à la couleur ou à la quinte au flop ou au turn, dont au moins une carte de la main (il n&rsquo;y a pas de tirage à la river).{" "}
         {style === "aggressive" && "Toutes les relances du style Agressif, semi-bluffs et bluffs compris, font 150 % du pot. "}
         Quand quelqu&rsquo;un relance, tous les joueurs encore dans le coup suivent cette relance, et une mise plus grosse que le tapis
-        restant est ramenée au tapis restant : le joueur est à tapis. Dès qu&rsquo;un joueur est à tapis, plus personne ne se couche — le reste du board est distribué et on passe à l&rsquo;abattage. Il n&rsquo;y a pas de check-raise — chaque adversaire agit une fois par street selon les règles, sans étape où un joueur checke puis répond à nouveau. Les étiquettes des sièges résument chaque street : le siège qui fixe le montant affiche « Mise », et tous les autres joueurs encore dans le coup affichent « Suit », quelle que soit leur place dans l&rsquo;ordre. Ici, tu ne mises jamais ; tu suis simplement jusqu&rsquo;à la river.
+        restant est ramenée au tapis restant : le joueur est à tapis. Dès qu&rsquo;un joueur est à tapis, plus personne ne se couche — le reste du board est distribué et on passe à l&rsquo;abattage. Il n&rsquo;y a pas de check-raise — chaque adversaire agit une fois par street selon les règles, sans étape où un joueur checke puis répond à nouveau. Sur une street postflop avec une mise, les étiquettes des sièges résument cette street : le siège qui fixe le montant affiche « Mise », et tous les autres joueurs encore dans le coup affichent « Suit », quelle que soit leur place dans l&rsquo;ordre (au préflop, les étiquettes montrent comment chacun est entré, et un siège à tapis affiche son tapis). Ici, tu ne mises jamais ; tu suis simplement jusqu&rsquo;à la river.
         Les ranges préflop (ci-dessous) sont les mêmes quel que soit le style.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Ton équité est calculée comme si tu ne voyais pas leurs cartes.</b> À partir du
         flop, la range de chaque adversaire, ce sont les mains de la range préflop de sa position (ci-dessous) qui auraient fait les actions que
         tu as vues selon les règles du style choisi — contre des adversaires de style Normal, une relance ne laisse que la double paire
-        ou mieux ; contre des adversaires de style Agressif, les tirages et les bluffs avec overcard restent aussi. Les joueurs qui se couchent à l&rsquo;écran
+        ou mieux ; contre des adversaires de style Agressif, les tirages et les bluffs avec overcard restent aussi. Si l&rsquo;action propre d&rsquo;un siège était une relance, le calcul la compte toujours comme une relance même si son étiquette affiche « Suit » — cette étiquette apparaît alors en rouge. Les joueurs qui se couchent à l&rsquo;écran
         sortent aussi du calcul.
       </p>
       <p className="mb-2">

@@ -211,14 +211,14 @@ const ES_UI: QuizUI = {
         Las reglas se leen de arriba abajo: manda la primera línea que encaje. Un proyecto es un patrón de color o escalera de cuatro cartas en el flop o el turn que usa al menos una carta propia (en el river no hay proyectos).{" "}
         {style === "aggressive" && "Todas las subidas del estilo Agresivo, semifaroles y faroles incluidos, son del 150% del bote. "}
         Cuando alguien sube, todos los que siguen en la mano pagan esa subida, y una apuesta mayor que el stack que
-        queda se limita a un all-in. Tras un all-in nadie foldea: se reparte el resto del board y se va al showdown. No hay check-raise: cada rival actúa una sola vez por calle según las reglas, y no existe el paso de pasar y luego volver a responder. Las etiquetas de los asientos resumen cada calle: el asiento que fija la cantidad muestra «Apuesta» y todos los demás que siguen en la mano muestran «Paga», sin importar su lugar en el orden. Tú nunca apuestas aquí; solo pagas hasta el river.
+        queda se limita a un all-in. Tras un all-in nadie foldea: se reparte el resto del board y se va al showdown. No hay check-raise: cada rival actúa una sola vez por calle según las reglas, y no existe el paso de pasar y luego volver a responder. En una calle postflop con apuesta, las etiquetas de los asientos resumen esa calle: el asiento que fija la cantidad muestra «Apuesta» y todos los demás que siguen en la mano muestran «Paga», sin importar su lugar en el orden (en el preflop las etiquetas muestran cómo entró cada jugador, y un asiento all-in muestra su all-in). Tú nunca apuestas aquí; solo pagas hasta el river.
         Los rangos preflop (abajo) son los mismos sea cual sea el estilo.
       </p>
       <p className="mb-2">
         <b className="text-foreground">Tu equity se calcula como si no vieras sus cartas.</b> Desde el flop, el
         rango de cada rival son las manos de su rango preflop por posición (abajo) que habrían hecho las acciones que
         viste según las reglas del estilo elegido — contra rivales de estilo Normal, una subida deja solo doble pareja o mejor;
-        contra rivales de estilo Agresivo, también siguen dentro los proyectos y los faroles con sobrecarta. Los jugadores que
+        contra rivales de estilo Agresivo, también siguen dentro los proyectos y los faroles con sobrecarta. Si la acción propia de un asiento fue una subida, el cálculo la sigue tratando como subida aunque su etiqueta diga «Paga»; esa etiqueta aparece en rojo. Los jugadores que
         foldean en pantalla también salen del cálculo.
       </p>
       <p className="mb-2">
