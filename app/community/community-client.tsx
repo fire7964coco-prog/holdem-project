@@ -2,6 +2,7 @@
 
 import { useState, useTransition, useEffect, useRef, useCallback, useMemo } from "react";
 import Link from "next/link";
+import BrandMark from "@/components/brand-mark";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { createPost, toggleLike, updateNickname } from "./actions";
@@ -1325,7 +1326,7 @@ export default function CommunityClient({
             className="text-[28px] leading-tight pb-3"
             style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.4px" }}
           >
-            {L.siteTitle}
+            <span className="flex items-center gap-2.5"><BrandMark size={30} />{L.siteTitle}</span>
           </h1>
 
           {/* 필터 탭 (언더라인 스타일) */}
@@ -1432,18 +1433,26 @@ export default function CommunityClient({
           style={{ background: BG, borderBottom: `1px solid ${BORDER}` }}
         >
           <div className="flex items-center gap-6 px-8 max-w-screen-xl mx-auto">
-            {/* 마스트헤드 타이틀 */}
-            <div className="flex flex-col justify-center py-3 mr-4 flex-shrink-0" style={{ borderRight: `1px solid ${BORDER}`, paddingRight: 24 }}>
-              <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                {L.siteSubtitle}
+            {/* 마스트헤드 타이틀 — 홈 링크 + 로고(10-16 사장님: 눌러도 안 먹힘 → 피드 탭 + 맨 위로) */}
+            <Link
+              href={pageLocale ? `/${pageLocale}` : "/"}
+              onClick={() => { setTab("home"); window.scrollTo({ top: 0 }); }}
+              className="flex items-center gap-3 py-3 mr-4 flex-shrink-0"
+              style={{ borderRight: `1px solid ${BORDER}`, paddingRight: 24 }}
+            >
+              <BrandMark size={38} />
+              <span className="flex flex-col justify-center">
+                <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: MUTED, fontFamily: FONT_SANS }}>
+                  {L.siteSubtitle}
+                </span>
+                <span
+                  className="text-[22px] leading-tight"
+                  style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.3px" }}
+                >
+                  {L.siteTitle}
+                </span>
               </span>
-              <span
-                className="text-[22px] leading-tight"
-                style={{ color: INK, fontFamily: FONT_SERIF, fontWeight: 500, letterSpacing: "-0.3px" }}
-              >
-                {L.siteTitle}
-              </span>
-            </div>
+            </Link>
 
             {/* 상단 네비 (언더라인) */}
             <nav className="flex items-center gap-6">
@@ -1513,7 +1522,7 @@ export default function CommunityClient({
               하단 탭바와 같은 결함이었다 — 이 파일이 홈 전용이라 블로그·계산기·대회에서는
               레일이 존재조차 하지 않았다. 홈은 기존대로 로컬 탭 전환(onSelect)이라 회귀 없음. */}
           <aside style={{ width: 200, flexShrink: 0 }}>
-            <div className="sticky top-20">
+            <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain pe-1">
               <SideRail
                 active={tab}
                 base={pageLocale ? `/${pageLocale}` : ""}
@@ -1611,7 +1620,8 @@ export default function CommunityClient({
 
           {/* ── 오른쪽 사이드바 ── */}
           <aside style={{ width: 240, flexShrink: 0 }}>
-            <div className="sticky top-20 flex flex-col gap-5">
+            {/* 화면보다 길면 아래가 영영 안 보였다(10-16 사장님) → 블로그 사이드바와 같은 «높이 제한 + 자체 스크롤» */}
+            <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain pe-1 flex flex-col gap-5">
 
               {/*
                 GTO 솔버 버튼 — ★2026-08-14 사장님 지시. 홈 사이드바 맨 위.

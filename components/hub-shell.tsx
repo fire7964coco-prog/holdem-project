@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
+import BrandMark from "@/components/brand-mark";
 import { usePathname, useRouter } from "next/navigation";
 import { Home, ChevronRight } from "lucide-react";
 import { BG, BORDER, INK, MUTED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
@@ -214,9 +215,13 @@ export default function HubShell({
         <div className="flex items-center gap-4 lg:gap-6 px-4 lg:px-8 max-w-screen-xl mx-auto">
           <Link
             href={base || "/"}
-            className="flex flex-col justify-center py-2.5 lg:py-3 flex-shrink-0 lg:mr-4 lg:border-e lg:pe-6"
+            className="flex items-center gap-2.5 lg:gap-3 py-2.5 lg:py-3 flex-shrink-0 lg:mr-4 lg:border-e lg:pe-6"
             style={{ borderColor: BORDER }}
           >
+            {/* 로고 — 홈 마스트헤드와 같은 BrandMark(10-16) */}
+            <span className="lg:hidden flex"><BrandMark size={28} /></span>
+            <span className="hidden lg:flex"><BrandMark size={38} /></span>
+            <span className="flex flex-col justify-center">
             <span
               className="text-[10px] font-bold tracking-widest uppercase"
               style={{ color: MUTED, fontFamily: FONT_SANS }}
@@ -229,6 +234,7 @@ export default function HubShell({
             >
               {/* 다국어는 CHROME[locale].brand("HoldemMaster") — 이미 25개 언어에 있는 검증된 값 */}
               {locale ? CHROME[locale].brand : "홀덤마스터"}
+            </span>
             </span>
           </Link>
 
@@ -304,7 +310,7 @@ export default function HubShell({
           모바일에서는 양옆 aside가 사라지고 본문만 남는다 — 홈 모바일과 같다. */}
       <div className="flex max-w-screen-xl mx-auto px-0 lg:px-4 py-0 lg:py-6 lg:gap-6">
         <aside className="hidden lg:block" style={{ width: SIDE_RAIL_WIDTH, flexShrink: 0 }}>
-          <div className="sticky top-20">
+          <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain pe-1">
             {/* writeHref — 홈 레일과 같은 자리에 「글 쓰기」를 두되, 여기엔 작성 모달이 없으므로
                 홈으로 보내면서 ?write=1로 모달까지 열어 준다(community-client.tsx) */}
             <SideRail

@@ -1,3 +1,10 @@
+## 2026-10-16 (5) — 데스크톱 사이드바 잘림 · 홈 브랜드 링크 · 로고 · 봇 버튼 정리
+
+- 사장님 지적(캡처): 홈 데스크톱 오른쪽 사이드바가 화면보다 길어 아래가 영영 안 보임 → 홈 좌·우 + 허브(`hub-shell` 레일·`hub-sidebar`) sticky에 블로그와 같은 `max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain`. 실측 1600×900: 두 사이드바 804/883px → 자체 스크롤로 끝(언어 칩·푸터 링크)까지 보임.
+- 홈 데스크톱 «홀덤마스터»가 링크가 아니었음(div) → Link + 피드 탭·맨 위로(클릭 후 scrollY 0 실측). 허브는 원래 링크.
+- 로고: `components/brand-mark.tsx`(favicon.svg와 같은 도형 · 인라인 SVG) → 홈 데스크톱·모바일 마스트헤드 + 허브 머리글.
+- 텔레그램 봇: 버튼 묶음은 인사말·버튼 밖 메시지 답에만(FAQ 답마다 붙어 대화창이 덮이던 것). 시험 ①(봇 응답)·⑤(텔레그램 로그인) 사장님 확인 ✅ · ② 연결 대기.
+
 ## 2026-10-16 (4) — 텔레그램 ⑤ 코드: 연결 라우트·웹훅·로그인 버튼·프로필 카드·버튼 FAQ · MB-353
 
 - 서버: `lib/telegram-bot.ts` · `/api/telegram/link`(GET 상태·POST 1회용 링크 15분·DELETE 해제 · 쓰기는 같은 출처만) · `/api/telegram/webhook`(시크릿 헤더 상수 시간 · private만 · `/start <토큰>` → `telegram_link_consume` · kicked/member → `bot_blocked_at` · 실패도 200).

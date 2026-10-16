@@ -40,8 +40,9 @@ async function markBlocked(chatId: number, blocked: boolean) {
     .eq("chat_id", chatId);
 }
 
-async function send(chatId: number, text: string, locale: BotLocale) {
-  const r = await botApi("sendMessage", { chat_id: chatId, text, reply_markup: faqKeyboard(locale), link_preview_options: { is_disabled: true } });
+// 버튼 묶음은 인사말·«버튼 밖 메시지» 답에만 붙인다(10-16 사장님 시험 — 답마다 붙이면 대화창이 버튼으로 덮인다)
+async function send(chatId: number, text: string, locale: BotLocale, keyboard = false) {
+  const r = await botApi("sendMessage", { chat_id: chatId, text, ...(keyboard ? { reply_markup: faqKeyboard(locale) } : {}), link_preview_options: { is_disabled: true } });
   // 403 = 봇이 차단됨(발송 실패 규칙 · 계획 단계표 ⑦)
   if (r.status === 403) await markBlocked(chatId, true);
 }
@@ -49,7 +50,7 @@ async function send(chatId: number, text: string, locale: BotLocale) {
 async function onStart(msg: NonNullable<TgUpdate["message"]>, payload: string, locale: BotLocale) {
   const t = botText(locale);
   const chatId = msg.chat.id;
-  if (!payload) return send(chatId, t.welcome, locale);
+  if (!payload) return send(chatId, t.welcome, locale, true);
   if (!isLinkToken(payload)) return send(chatId, t.linkFailed, locale);
   const db = createAdminClient();
   if (!db) return send(chatId, t.linkFailed, locale);
@@ -103,8 +104,8 @@ export async function POST(req: Request) {
       const text = (msg.text ?? "").trim();
       const start = /^\/start(?:@\w+)?(?:\s+(\S+))?$/.exec(text);
       if (start) await onStart(msg, start[1] ?? "", locale);
-      else if (/^\/help(?:@\w+)?$/.test(text)) await send(msg.chat.id, botText(locale).welcome, locale);
-      else await send(msg.chat.id, botText(locale).unknown, locale);
+      else if (/^\/help(?:@\w+)?$/.test(text)) await send(msg.chat.id, botText(locale).welcome, locale, true);
+      else await send(msg.chat.id, botText(locale).unknown, locale, true);
     }
   } catch {
     // 위 주석: 실패해도 200

@@ -40,7 +40,7 @@ export default function HubSidebar({
   const current = locale ?? "ko";
 
   return (
-    <div className="sticky top-20 flex flex-col gap-5">
+    <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain pe-1 flex flex-col gap-5">
       {/*
         GTO 솔버 버튼 — ★2026-08-14 사장님 지시. 사이드바 맨 위(트렌딩보다 먼저)에 둔다.
         🔴 랜딩이 있는 로케일에서만 — 마크업·문구는 `components/solver-promo.tsx` 한 곳에 있고
