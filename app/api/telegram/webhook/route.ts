@@ -43,8 +43,8 @@ async function markBlocked(chatId: number, blocked: boolean) {
 // 버튼 묶음은 인사말·«버튼 밖 메시지» 답에만 붙인다(10-16 사장님 시험 — 답마다 붙이면 대화창이 버튼으로 덮인다)
 async function send(chatId: number, text: string, locale: BotLocale, keyboard = false) {
   const r = await botApi("sendMessage", { chat_id: chatId, text, ...(keyboard ? { reply_markup: faqKeyboard(locale) } : {}), link_preview_options: { is_disabled: true } });
-  // 403 = 봇이 차단됨(발송 실패 규칙 · 계획 단계표 ⑦)
-  if (r.status === 403) await markBlocked(chatId, true);
+  // 403 + «blocked by the user» = 봇 차단(MA-584 ⓐ — 403 사유는 description에만 있다 · 다른 403은 차단으로 저장하지 않는다)
+  if (r.status === 403 && /blocked by the user/i.test(r.description ?? "")) await markBlocked(chatId, true);
 }
 
 async function onStart(msg: NonNullable<TgUpdate["message"]>, payload: string, locale: BotLocale) {
@@ -63,9 +63,15 @@ async function onStart(msg: NonNullable<TgUpdate["message"]>, payload: string, l
     p_name: name,
   });
   if (!error && data) return send(chatId, t.linked, locale);
-  // 이미 쓴 링크를 다시 눌렀는데 이 텔레그램이 이미 어느 계정에 붙어 있으면 «실패» 대신 «이미 연결됨»(10-16 사장님 시험)
-  const { data: linkedRow } = await db.from("telegram_links").select("user_id").eq("chat_id", chatId).maybeSingle();
-  return send(chatId, linkedRow ? t.alreadyLinked : t.linkFailed, locale);
+  // 이미 쓴 링크를 다시 눌렀는데 이 텔레그램이 이미 계정에 붙어 있으면 «실패» 대신 «이미 연결됨»(10-16 사장님 시험).
+  // MA-584 ② — 만료돼 아직 남아 있는 토큰이 «다른» 회원 것이면 «이미 연결됨»이 아니라 실패 안내(그 회원은 아직 미연결).
+  const hash = hashLinkToken(payload);
+  const [{ data: linkedRow }, { data: tokenRow }] = await Promise.all([
+    db.from("telegram_links").select("user_id").eq("chat_id", chatId).maybeSingle(),
+    db.from("telegram_links").select("user_id").eq("link_token_hash", hash).maybeSingle(),
+  ]);
+  const already = !!linkedRow && (!tokenRow || tokenRow.user_id === linkedRow.user_id);
+  return send(chatId, already ? t.alreadyLinked : t.linkFailed, locale);
 }
 
 export async function POST(req: Request) {
