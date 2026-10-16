@@ -207,7 +207,7 @@ const FR_UI: QuizUI = {
         Style des adversaires en ce moment : <b className="text-foreground">{FR_UI.styleNames[style]}</b> (toute la table joue le même style · change-le dans le sélecteur ci-dessus)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Double paire ou mieux → <b className="text-foreground">{style === "aggressive" ? "relance de 150 % du pot (overbet)" : "relance de la taille du pot"}</b></li>
+        <li>Double paire ou mieux → <b className="text-foreground">{style === "aggressive" ? "mise ou relance de 150 % du pot (overbet)" : "mise ou relance de la taille du pot"}</b></li>
         {style === "standard" && <li>Une paire, ou un tirage couleur/quinte → <b className="text-foreground">mise d&rsquo;un demi-pot</b></li>}
         {style === "tight" && <>
           <li>Une top paire ou mieux, faite avec au moins une carte de la main (overpairs comprises), ou un tirage couleur/quinte → <b className="text-foreground">mise d&rsquo;un demi-pot</b></li>
@@ -215,9 +215,9 @@ const FR_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Une paire, un tirage couleur/quinte, ou une carte de la main plus haute que toutes celles du board (une overcard) → <b className="text-foreground">mise d&rsquo;un demi-pot</b></li>}
         {style === "aggressive" && <>
-          <li>Tirage couleur/quinte → <b className="text-foreground">relance (semi-bluff)</b></li>
+          <li>Tirage couleur/quinte → <b className="text-foreground">mise ou relance (semi-bluff)</b></li>
           <li>Une paire → <b className="text-foreground">mise d&rsquo;un demi-pot</b></li>
-          <li>Ni paire ni tirage, mais une overcard → <b className="text-foreground">relance (bluff)</b></li>
+          <li>Ni paire ni tirage, mais une overcard → <b className="text-foreground">mise ou relance (bluff)</b></li>
         </>}
         <li>Tout le reste → <b className="text-foreground">se couche</b> (cartes jetées sans être montrées, comme en live)</li>
       </ul>

@@ -1360,7 +1360,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CK-13 id (MA-580 ①) | blind-battle-connected L184 «berselisih 0,03bb» 상한 탈락 | ✅ «tidak lebih dari 0,03bb» · MB-355 |
 | CK-14 de (MA-581 ①) | monotone L155 «in beiden auftauchen» | ✅ «entweder in der einen oder in der anderen Zeile» + EN 머리 주석 L29(배타) · MB-355 |
 | CK-15 (MA-582 ①②) | 시뮬레이터 L1244 두 번째 레이즈형 «Raise»(같은 금액) · L1245 벳 앞 순서 «Call» ↔ 규칙 «체크 뒤 응수 없음» | ✅ 벳 좌석 외 남은 좌석 전부 «Call» + 규칙 설명 16로케일에 «좌석 라벨 = 스트리트 요약(금액 정한 좌석 Bet · 나머지 순서 무관 Call)» 한 문장(각 파일 라벨 축어) · MB-355 |
-| CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | ✅ 10-16 (12) MB-360 — 바꿈: Daily 기능명(zh·zh-hant·es·de·hi 글 4+랜딩) · id «dari pot» 28 · de L115 · fr NBSP / 안 바꿈 근거: «手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器»·«Backdoor-Flushdraw» / ⏸ 남김 = 시뮬레이터 ruleText «pot-sized raise» 16로케일(엔진 확인 뒤) |
+| CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | ✅ 10-16 (12) MB-360 — 바꿈: Daily 기능명(zh·zh-hant·es·de·hi 글 4+랜딩) · id «dari pot» 28 · de L115 · fr NBSP / 안 바꿈 근거: «手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器»·«Backdoor-Flushdraw» / ✅ 남김분 시뮬레이터 ruleText = 10-16 (13) MB-361(엔진 확인 · «bet or raise»꼴 16×4) |
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)

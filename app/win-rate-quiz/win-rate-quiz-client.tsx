@@ -184,7 +184,7 @@ const KO_UI: QuizUI = {
         지금 고른 상대 성향: <b className="text-foreground">{KO_UI.styleNames[style]}</b> (테이블 전원 같은 성향 · 위 선택칸에서 바꿉니다)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>투페어 이상 → <b className="text-foreground">{style === "aggressive" ? "팟의 150% 레이즈(오버벳)" : "팟 사이즈 레이즈"}</b></li>
+        <li>투페어 이상 → <b className="text-foreground">{style === "aggressive" ? "팟의 150% 베팅 또는 레이즈(오버벳)" : "팟 사이즈 베팅 또는 레이즈"}</b></li>
         {style === "standard" && <li>원페어 또는 플러시·스트레이트 드로우 → <b className="text-foreground">하프팟 베팅</b></li>}
         {style === "tight" && <>
           <li>홀카드로 만든 탑페어 이상의 원페어(오버페어 포함) 또는 플러시·스트레이트 드로우 → <b className="text-foreground">하프팟 베팅</b></li>
@@ -192,9 +192,9 @@ const KO_UI: QuizUI = {
         </>}
         {style === "loose" && <li>원페어 · 플러시·스트레이트 드로우 · 보드 최고 카드보다 높은 홀카드(오버카드) → <b className="text-foreground">하프팟 베팅</b></li>}
         {style === "aggressive" && <>
-          <li>플러시·스트레이트 드로우 → <b className="text-foreground">레이즈(세미블러프)</b></li>
+          <li>플러시·스트레이트 드로우 → <b className="text-foreground">베팅 또는 레이즈(세미블러프)</b></li>
           <li>원페어 → <b className="text-foreground">하프팟 베팅</b></li>
-          <li>페어도 드로우도 없지만 오버카드가 있으면 → <b className="text-foreground">레이즈(블러프)</b></li>
+          <li>페어도 드로우도 없지만 오버카드가 있으면 → <b className="text-foreground">베팅 또는 레이즈(블러프)</b></li>
         </>}
         <li>그 외 → <b className="text-foreground">폴드</b> (실전처럼 패는 안 보여줍니다)</li>
       </ul>

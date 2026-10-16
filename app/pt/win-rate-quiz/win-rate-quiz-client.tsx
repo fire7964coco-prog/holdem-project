@@ -201,7 +201,7 @@ const PT_UI: QuizUI = {
         Estilo dos adversários agora: <b className="text-foreground">{PT_UI.styleNames[style]}</b> (a mesa inteira joga no mesmo estilo · troque no seletor acima)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Dois pares ou melhor → <b className="text-foreground">{style === "aggressive" ? "aumento de 150% do pote (overbet)" : "aumento do tamanho do pote"}</b></li>
+        <li>Dois pares ou melhor → <b className="text-foreground">{style === "aggressive" ? "aposta ou aumento de 150% do pote (overbet)" : "aposta ou aumento do tamanho do pote"}</b></li>
         {style === "standard" && <li>Um par, ou um flush draw/draw de sequência → <b className="text-foreground">aposta de meio pote</b></li>}
         {style === "tight" && <>
           <li>Um par que seja top pair ou melhor feito com uma carta da mão (overpairs incluídos), ou um flush draw/draw de sequência → <b className="text-foreground">aposta de meio pote</b></li>
@@ -209,9 +209,9 @@ const PT_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Um par, um flush draw/draw de sequência, ou uma carta da mão mais alta que todas as do board (uma overcard) → <b className="text-foreground">aposta de meio pote</b></li>}
         {style === "aggressive" && <>
-          <li>Flush draw/draw de sequência → <b className="text-foreground">aumento (semi-blefe)</b></li>
+          <li>Flush draw/draw de sequência → <b className="text-foreground">aposta ou aumento (semi-blefe)</b></li>
           <li>Um par → <b className="text-foreground">aposta de meio pote</b></li>
-          <li>Sem par e sem draw, mas com uma overcard → <b className="text-foreground">aumento (blefe)</b></li>
+          <li>Sem par e sem draw, mas com uma overcard → <b className="text-foreground">aposta ou aumento (blefe)</b></li>
         </>}
         <li>Qualquer outra coisa → <b className="text-foreground">fold</b> (descarta sem mostrar, como no poker ao vivo)</li>
       </ul>

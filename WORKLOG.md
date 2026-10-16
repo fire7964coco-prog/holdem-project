@@ -1,3 +1,9 @@
+## 2026-10-16 (13) — 시뮬레이터 ruleText «pot-sized raise» 엔진 확인 회차 · MB-361
+
+- 엔진(_engine.ts L694~713): 스트리트 금액은 가장 센 분류 하나가 pot×배수로 한 번 정하고 나머지는 콜 — 레이즈 금액 없음, 금액 좌석 라벨 «Bet». → «pot-sized raise» 단독은 화면과 어긋남.
+- 16로케일 × 4자리(투페어 2꼴 + Aggro 세미블러프·블러프)를 «bet or raise»꼴로. 분류 이름 raise(«When anyone raises» 등)는 유지. .mjs 치환(자리 수 1 고정·어긋나면 중단).
+- 게이트: npm run build 성공.
+
 ## 2026-10-16 (12) — 앱 축어 정렬 2차 CK-16 + 로케일별 Daily 기능명 · MB-360
 
 - Daily 기능명 = 각 앱 TrainerPage daily 축어: zh·zh-hant «今日题目/題目» · es «Reto del día» · de «Tagesaufgabe» · hi «अभ्यास स्पॉट/आज की चुनौती» — 글 4편 + /solver 랜딩(zh·zh-hant·es·de).

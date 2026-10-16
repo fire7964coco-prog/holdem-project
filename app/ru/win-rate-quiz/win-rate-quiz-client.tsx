@@ -220,7 +220,7 @@ const RU_UI: QuizUI = {
         Стиль соперников сейчас: <b className="text-foreground">{RU_UI.styleNames[style]}</b> (весь стол играет в одном стиле · сменить можно в списке выше)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Две пары или сильнее → <b className="text-foreground">{style === "aggressive" ? "рейз на 150% банка (овербет)" : "рейз в размер банка"}</b></li>
+        <li>Две пары или сильнее → <b className="text-foreground">{style === "aggressive" ? "бет или рейз на 150% банка (овербет)" : "бет или рейз в размер банка"}</b></li>
         {style === "standard" && <li>Пара или флеш-дро/стрит-дро → <b className="text-foreground">ставка в полбанка</b></li>}
         {style === "tight" && <>
           <li>Пара — топ-пара или выше, собранная хотя бы с одной своей картой (включая оверпары), или флеш-дро/стрит-дро → <b className="text-foreground">ставка в полбанка</b></li>
@@ -228,9 +228,9 @@ const RU_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Пара, флеш-дро/стрит-дро или своя карта старше всех карт борда (оверкарта) → <b className="text-foreground">ставка в полбанка</b></li>}
         {style === "aggressive" && <>
-          <li>Флеш-дро/стрит-дро → <b className="text-foreground">рейз (полублеф)</b></li>
+          <li>Флеш-дро/стрит-дро → <b className="text-foreground">бет или рейз (полублеф)</b></li>
           <li>Пара → <b className="text-foreground">ставка в полбанка</b></li>
-          <li>Ни пары, ни дро, но есть оверкарта → <b className="text-foreground">рейз (блеф)</b></li>
+          <li>Ни пары, ни дро, но есть оверкарта → <b className="text-foreground">бет или рейз (блеф)</b></li>
         </>}
         <li>Всё остальное → <b className="text-foreground">фолд</b> (карты сбрасываются в закрытую, как в живой игре)</li>
       </ul>

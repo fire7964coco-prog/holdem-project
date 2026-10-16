@@ -202,7 +202,7 @@ const MS_UI: QuizUI = {
         Gaya lawan sekarang: <b className="text-foreground">{MS_UI.styleNames[style]}</b> (seluruh meja menggunakan gaya yang sama · tukar melalui pilihan di atas)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Two pair atau lebih baik → <b className="text-foreground">{style === "aggressive" ? "raise 150% pot (overbet)" : "raise sebesar pot"}</b></li>
+        <li>Two pair atau lebih baik → <b className="text-foreground">{style === "aggressive" ? "bet atau raise 150% pot (overbet)" : "bet atau raise sebesar pot"}</b></li>
         {style === "standard" && <li>One pair, atau flush/straight draw → <b className="text-foreground">bet separuh pot</b></li>}
         {style === "tight" && <>
           <li>One pair yang merupakan top pair atau lebih baik yang dibuat dengan kad di tangan (termasuk overpair), atau flush/straight draw → <b className="text-foreground">bet separuh pot</b></li>
@@ -210,9 +210,9 @@ const MS_UI: QuizUI = {
         </>}
         {style === "loose" && <li>One pair, flush/straight draw, atau kad di tangan yang lebih tinggi daripada semua kad board (overcard) → <b className="text-foreground">bet separuh pot</b></li>}
         {style === "aggressive" && <>
-          <li>Flush/straight draw → <b className="text-foreground">raise (semi-bluff)</b></li>
+          <li>Flush/straight draw → <b className="text-foreground">bet atau raise (semi-bluff)</b></li>
           <li>One pair → <b className="text-foreground">bet separuh pot</b></li>
-          <li>Tiada pair dan tiada draw, tetapi ada overcard → <b className="text-foreground">raise (bluff)</b></li>
+          <li>Tiada pair dan tiada draw, tetapi ada overcard → <b className="text-foreground">bet atau raise (bluff)</b></li>
         </>}
         <li>Selain itu → <b className="text-foreground">fold</b> (kad dibuang tanpa didedahkan, seperti dalam permainan live)</li>
       </ul>

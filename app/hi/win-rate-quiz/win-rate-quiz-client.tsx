@@ -204,7 +204,7 @@ const HI_UI: QuizUI = {
         अभी विरोधियों का स्टाइल: <b className="text-foreground">{HI_UI.styleNames[style]}</b> (पूरी टेबल एक ही स्टाइल में खेलती है · ऊपर के चुनाव से बदलें)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Two pair या उससे बेहतर → <b className="text-foreground">{style === "aggressive" ? "pot के 150% का raise (overbet)" : "pot के बराबर raise"}</b></li>
+        <li>Two pair या उससे बेहतर → <b className="text-foreground">{style === "aggressive" ? "pot के 150% का bet या raise (overbet)" : "pot के बराबर bet या raise"}</b></li>
         {style === "standard" && <li>Pair, या flush/straight draw → <b className="text-foreground">आधे pot का bet</b></li>}
         {style === "tight" && <>
           <li>Hole कार्ड से बना top pair या उससे बेहतर pair (overpair समेत), या flush/straight draw → <b className="text-foreground">आधे pot का bet</b></li>
@@ -212,9 +212,9 @@ const HI_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Pair, flush/straight draw, या बोर्ड के हर कार्ड से ऊँचा hole कार्ड (overcard) → <b className="text-foreground">आधे pot का bet</b></li>}
         {style === "aggressive" && <>
-          <li>Flush/straight draw → <b className="text-foreground">raise (semi-bluff)</b></li>
+          <li>Flush/straight draw → <b className="text-foreground">bet या raise (semi-bluff)</b></li>
           <li>Pair → <b className="text-foreground">आधे pot का bet</b></li>
-          <li>न pair, न draw, पर overcard है → <b className="text-foreground">raise (bluff)</b></li>
+          <li>न pair, न draw, पर overcard है → <b className="text-foreground">bet या raise (bluff)</b></li>
         </>}
         <li>बाक़ी सब → <b className="text-foreground">fold</b> (लाइव गेम की तरह कार्ड बिना दिखाए फेंके जाते हैं)</li>
       </ul>

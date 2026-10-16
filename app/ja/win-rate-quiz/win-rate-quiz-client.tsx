@@ -192,7 +192,7 @@ const JA_UI: QuizUI = {
         いまの相手のタイプ:<b className="text-foreground">{JA_UI.styleNames[style]}</b>(テーブル全員が同じタイプ · 上の選択欄で変更できます)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>ツーペア以上 → <b className="text-foreground">{style === "aggressive" ? "ポットの150%のレイズ(オーバーベット)" : "ポットサイズのレイズ"}</b></li>
+        <li>ツーペア以上 → <b className="text-foreground">{style === "aggressive" ? "ポットの150%のベットかレイズ(オーバーベット)" : "ポットサイズのベットかレイズ"}</b></li>
         {style === "standard" && <li>ワンペア、またはフラッシュ/ストレートドロー → <b className="text-foreground">ハーフポットのベット</b></li>}
         {style === "tight" && <>
           <li>ホールカードで作ったトップペア以上のワンペア(オーバーペアを含む)、またはフラッシュ/ストレートドロー → <b className="text-foreground">ハーフポットのベット</b></li>
@@ -200,9 +200,9 @@ const JA_UI: QuizUI = {
         </>}
         {style === "loose" && <li>ワンペア、フラッシュ/ストレートドロー、またはボードのどのカードよりも高いホールカード(オーバーカード) → <b className="text-foreground">ハーフポットのベット</b></li>}
         {style === "aggressive" && <>
-          <li>フラッシュ/ストレートドロー → <b className="text-foreground">レイズ(セミブラフ)</b></li>
+          <li>フラッシュ/ストレートドロー → <b className="text-foreground">ベットかレイズ(セミブラフ)</b></li>
           <li>ワンペア → <b className="text-foreground">ハーフポットのベット</b></li>
-          <li>ペアもドローもないがオーバーカードがある → <b className="text-foreground">レイズ(ブラフ)</b></li>
+          <li>ペアもドローもないがオーバーカードがある → <b className="text-foreground">ベットかレイズ(ブラフ)</b></li>
         </>}
         <li>それ以外 → <b className="text-foreground">フォールド</b>(ライブと同じくカードは伏せたまま捨てます)</li>
       </ul>

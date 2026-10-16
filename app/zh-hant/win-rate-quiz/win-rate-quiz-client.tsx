@@ -191,7 +191,7 @@ const ZH_HANT_UI: QuizUI = {
         目前的對手風格：<b className="text-foreground">{ZH_HANT_UI.styleNames[style]}</b>（全桌同一種風格 · 可在上方切換）
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>兩對或更好 → <b className="text-foreground">{style === "aggressive" ? "加注到底池的 150%（超池）" : "滿池加注"}</b></li>
+        <li>兩對或更好 → <b className="text-foreground">{style === "aggressive" ? "下注或加注到底池的 150%（超池）" : "滿池下注或加注"}</b></li>
         {style === "standard" && <li>一對，或同花／順子聽牌 → <b className="text-foreground">下注半池</b></li>}
         {style === "tight" && <>
           <li>用底牌組成、頂對或更好的一對（含超對），或同花／順子聽牌 → <b className="text-foreground">下注半池</b></li>
@@ -199,9 +199,9 @@ const ZH_HANT_UI: QuizUI = {
         </>}
         {style === "loose" && <li>一對、同花／順子聽牌，或有一張底牌比所有公牌都大（高張） → <b className="text-foreground">下注半池</b></li>}
         {style === "aggressive" && <>
-          <li>同花／順子聽牌 → <b className="text-foreground">加注（半詐唬）</b></li>
+          <li>同花／順子聽牌 → <b className="text-foreground">下注或加注（半詐唬）</b></li>
           <li>一對 → <b className="text-foreground">下注半池</b></li>
-          <li>沒對子也沒聽牌，但有高張 → <b className="text-foreground">加注（詐唬）</b></li>
+          <li>沒對子也沒聽牌，但有高張 → <b className="text-foreground">下注或加注（詐唬）</b></li>
         </>}
         <li>其他情況 → <b className="text-foreground">蓋牌</b>（和現場一樣，牌不亮出來直接蓋掉）</li>
       </ul>

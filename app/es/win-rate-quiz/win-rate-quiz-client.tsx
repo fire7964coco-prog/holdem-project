@@ -193,7 +193,7 @@ const ES_UI: QuizUI = {
         Estilo de los rivales ahora: <b className="text-foreground">{ES_UI.styleNames[style]}</b> (toda la mesa juega con el mismo estilo · cámbialo en el selector de arriba)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Doble pareja o mejor → <b className="text-foreground">{style === "aggressive" ? "subida del 150% del bote (overbet)" : "subida del tamaño del bote"}</b></li>
+        <li>Doble pareja o mejor → <b className="text-foreground">{style === "aggressive" ? "apuesta o subida del 150% del bote (overbet)" : "apuesta o subida del tamaño del bote"}</b></li>
         {style === "standard" && <li>Una pareja, o un proyecto de color/escalera → <b className="text-foreground">apuesta de medio bote</b></li>}
         {style === "tight" && <>
           <li>Una pareja que sea pareja máxima o mejor hecha con una carta propia (sobrepares incluidas), o un proyecto de color/escalera → <b className="text-foreground">apuesta de medio bote</b></li>
@@ -201,9 +201,9 @@ const ES_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Una pareja, un proyecto de color/escalera, o una carta propia más alta que todas las de la mesa (una sobrecarta) → <b className="text-foreground">apuesta de medio bote</b></li>}
         {style === "aggressive" && <>
-          <li>Proyecto de color/escalera → <b className="text-foreground">subida (semifarol)</b></li>
+          <li>Proyecto de color/escalera → <b className="text-foreground">apuesta o subida (semifarol)</b></li>
           <li>Una pareja → <b className="text-foreground">apuesta de medio bote</b></li>
-          <li>Sin pareja ni proyecto, pero con una sobrecarta → <b className="text-foreground">subida (farol)</b></li>
+          <li>Sin pareja ni proyecto, pero con una sobrecarta → <b className="text-foreground">apuesta o subida (farol)</b></li>
         </>}
         <li>Cualquier otra cosa → <b className="text-foreground">fold</b> (tira las cartas sin enseñarlas, como en vivo)</li>
       </ul>

@@ -210,7 +210,7 @@ const AR_UI: QuizUI = {
         أسلوب الخصوم الآن: <b className="text-foreground">{AR_UI.styleNames[style]}</b> (الطاولة كلها تلعب بالأسلوب نفسه · غيّره من الاختيار في الأعلى)
       </p>
       <ul className="list-disc ps-4 space-y-0.5 mb-2">
-        <li>زوجان أو أفضل ← <b className="text-foreground">{style === "aggressive" ? "زيادة بنسبة 150% من البوت (Overbet)" : "زيادة بحجم البوت"}</b></li>
+        <li>زوجان أو أفضل ← <b className="text-foreground">{style === "aggressive" ? "رهان أو زيادة بنسبة 150% من البوت (Overbet)" : "رهان أو زيادة بحجم البوت"}</b></li>
         {style === "standard" && <li>زوج واحد، أو درو فلاش/ستريت ← <b className="text-foreground">رهان بنصف البوت</b></li>}
         {style === "tight" && <>
           <li>زوج واحد بمستوى أعلى زوج أو أفضل، مُكوَّن بورقة خاصة واحدة على الأقل (ويشمل ذلك الزوج في اليد الأعلى من كل أوراق البورد — Overpair)، أو درو فلاش/ستريت ← <b className="text-foreground">رهان بنصف البوت</b></li>
@@ -218,9 +218,9 @@ const AR_UI: QuizUI = {
         </>}
         {style === "loose" && <li>زوج واحد، أو درو فلاش/ستريت، أو ورقة خاصة أعلى من كل أوراق البورد (Overcard) ← <b className="text-foreground">رهان بنصف البوت</b></li>}
         {style === "aggressive" && <>
-          <li>درو فلاش/ستريت ← <b className="text-foreground">زيادة (نصف خداع، Semi-bluff)</b></li>
+          <li>درو فلاش/ستريت ← <b className="text-foreground">رهان أو زيادة (نصف خداع، Semi-bluff)</b></li>
           <li>زوج واحد ← <b className="text-foreground">رهان بنصف البوت</b></li>
-          <li>لا زوج ولا درو، لكن ورقة أعلى من البورد (Overcard) ← <b className="text-foreground">زيادة (خداع)</b></li>
+          <li>لا زوج ولا درو، لكن ورقة أعلى من البورد (Overcard) ← <b className="text-foreground">رهان أو زيادة (خداع)</b></li>
         </>}
         <li>أي شيء آخر ← <b className="text-foreground">طي</b> (تُرمى أوراقه دون كشفها، كما في اللعب الحي)</li>
       </ul>

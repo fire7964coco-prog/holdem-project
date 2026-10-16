@@ -212,7 +212,7 @@ const TR_UI: QuizUI = {
         Şu anki rakip tarzı: <b className="text-foreground">{TR_UI.styleNames[style]}</b> (tüm masa aynı tarzda oynar · yukarıdaki seçiciden değiştir)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>İki çift ya da daha iyisi → <b className="text-foreground">{style === "aggressive" ? "potun %150'si kadar raise (overbet)" : "pot büyüklüğünde raise"}</b></li>
+        <li>İki çift ya da daha iyisi → <b className="text-foreground">{style === "aggressive" ? "potun %150'si kadar bet ya da raise (overbet)" : "pot büyüklüğünde bet ya da raise"}</b></li>
         {style === "standard" && <li>Çift, ya da flush/kent draw → <b className="text-foreground">yarım pot bet</b></li>}
         {style === "tight" && <>
           <li>Kapalı kartla yapılmış top pair ya da daha iyi bir çift (overpair dahil), ya da flush/kent draw → <b className="text-foreground">yarım pot bet</b></li>
@@ -220,9 +220,9 @@ const TR_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Çift, flush/kent draw, ya da board&apos;daki her karttan yüksek bir kapalı kart (overcard) → <b className="text-foreground">yarım pot bet</b></li>}
         {style === "aggressive" && <>
-          <li>Flush/kent draw → <b className="text-foreground">raise (semi-blöf)</b></li>
+          <li>Flush/kent draw → <b className="text-foreground">bet ya da raise (semi-blöf)</b></li>
           <li>Çift → <b className="text-foreground">yarım pot bet</b></li>
-          <li>Çift yok, draw yok ama overcard var → <b className="text-foreground">raise (blöf)</b></li>
+          <li>Çift yok, draw yok ama overcard var → <b className="text-foreground">bet ya da raise (blöf)</b></li>
         </>}
         <li>Geri kalan her şey → <b className="text-foreground">fold</b> (canlı oyundaki gibi kartlar kapalı atılır)</li>
       </ul>

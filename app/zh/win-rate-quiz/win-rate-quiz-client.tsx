@@ -191,7 +191,7 @@ const ZH_UI: QuizUI = {
         当前对手风格：<b className="text-foreground">{ZH_UI.styleNames[style]}</b>（全桌同一种风格 · 可在上方切换）
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>两对或更好 → <b className="text-foreground">{style === "aggressive" ? "加注到底池的 150%（超池）" : "满池加注"}</b></li>
+        <li>两对或更好 → <b className="text-foreground">{style === "aggressive" ? "下注或加注到底池的 150%（超池）" : "满池下注或加注"}</b></li>
         {style === "standard" && <li>一对，或同花/顺子听牌 → <b className="text-foreground">下注半池</b></li>}
         {style === "tight" && <>
           <li>用底牌组成、顶对或更好的一对（含超对），或同花/顺子听牌 → <b className="text-foreground">下注半池</b></li>
@@ -199,9 +199,9 @@ const ZH_UI: QuizUI = {
         </>}
         {style === "loose" && <li>一对、同花/顺子听牌，或有一张底牌比所有公共牌都大（高张） → <b className="text-foreground">下注半池</b></li>}
         {style === "aggressive" && <>
-          <li>同花/顺子听牌 → <b className="text-foreground">加注（半诈唬）</b></li>
+          <li>同花/顺子听牌 → <b className="text-foreground">下注或加注（半诈唬）</b></li>
           <li>一对 → <b className="text-foreground">下注半池</b></li>
-          <li>没对子也没听牌，但有高张 → <b className="text-foreground">加注（诈唬）</b></li>
+          <li>没对子也没听牌，但有高张 → <b className="text-foreground">下注或加注（诈唬）</b></li>
         </>}
         <li>其他情况 → <b className="text-foreground">弃牌</b>（和现场一样直接盖牌）</li>
       </ul>

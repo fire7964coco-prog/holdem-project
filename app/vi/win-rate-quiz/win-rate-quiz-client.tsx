@@ -206,7 +206,7 @@ const VI_UI: QuizUI = {
         Lối chơi đối thủ hiện tại: <b className="text-foreground">{VI_UI.styleNames[style]}</b> (cả bàn chơi cùng một lối · đổi ở mục chọn phía trên)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Hai đôi trở lên → <b className="text-foreground">{style === "aggressive" ? "raise 150% pot (overbet)" : "raise bằng pot"}</b></li>
+        <li>Hai đôi trở lên → <b className="text-foreground">{style === "aggressive" ? "bet hoặc raise 150% pot (overbet)" : "bet hoặc raise bằng pot"}</b></li>
         {style === "standard" && <li>Một đôi, hoặc flush/straight draw → <b className="text-foreground">bet nửa pot</b></li>}
         {style === "tight" && <>
           <li>Một đôi từ top pair trở lên có dùng lá bài tẩy (kể cả overpair), hoặc flush/straight draw → <b className="text-foreground">bet nửa pot</b></li>
@@ -214,9 +214,9 @@ const VI_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Một đôi, flush/straight draw, hoặc lá bài tẩy cao hơn mọi lá trên board (overcard) → <b className="text-foreground">bet nửa pot</b></li>}
         {style === "aggressive" && <>
-          <li>Flush/straight draw → <b className="text-foreground">raise (semi-bluff)</b></li>
+          <li>Flush/straight draw → <b className="text-foreground">bet hoặc raise (semi-bluff)</b></li>
           <li>Một đôi → <b className="text-foreground">bet nửa pot</b></li>
-          <li>Không có đôi, không có draw, nhưng có overcard → <b className="text-foreground">raise (bluff)</b></li>
+          <li>Không có đôi, không có draw, nhưng có overcard → <b className="text-foreground">bet hoặc raise (bluff)</b></li>
         </>}
         <li>Còn lại → <b className="text-foreground">fold</b> (úp bài bỏ đi, giống như khi chơi live)</li>
       </ul>

@@ -180,7 +180,7 @@ const EN_UI: QuizUI = {
         Opponent style now: <b className="text-foreground">{EN_UI.styleNames[style]}</b> (the whole table plays the same style · change it in the picker above)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Two pair or better → <b className="text-foreground">{style === "aggressive" ? "raise of 150% pot (overbet)" : "pot-sized raise"}</b></li>
+        <li>Two pair or better → <b className="text-foreground">{style === "aggressive" ? "bet or raise of 150% pot (overbet)" : "pot-sized bet or raise"}</b></li>
         {style === "standard" && <li>One pair, or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>}
         {style === "tight" && <>
           <li>One pair that is top pair or better made with a hole card (overpairs included), or a flush/straight draw → <b className="text-foreground">half-pot bet</b></li>
@@ -188,9 +188,9 @@ const EN_UI: QuizUI = {
         </>}
         {style === "loose" && <li>One pair, a flush/straight draw, or a hole card higher than every board card (an overcard) → <b className="text-foreground">half-pot bet</b></li>}
         {style === "aggressive" && <>
-          <li>Flush/straight draw → <b className="text-foreground">raise (semi-bluff)</b></li>
+          <li>Flush/straight draw → <b className="text-foreground">bet or raise (semi-bluff)</b></li>
           <li>One pair → <b className="text-foreground">half-pot bet</b></li>
-          <li>No pair and no draw, but an overcard → <b className="text-foreground">raise (bluff)</b></li>
+          <li>No pair and no draw, but an overcard → <b className="text-foreground">bet or raise (bluff)</b></li>
         </>}
         <li>Anything else → <b className="text-foreground">fold</b> (mucked, just like live play)</li>
       </ul>

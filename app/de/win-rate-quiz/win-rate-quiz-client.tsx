@@ -202,7 +202,7 @@ const DE_UI: QuizUI = {
         Aktueller Gegnertyp: <b className="text-foreground">{DE_UI.styleNames[style]}</b> (der ganze Tisch spielt denselben Stil · änderbar in der Auswahl oben)
       </p>
       <ul className="list-disc pl-4 space-y-0.5 mb-2">
-        <li>Zwei Paare oder besser → <b className="text-foreground">{style === "aggressive" ? "Raise auf 150% des Pots (Overbet)" : "Raise in Pot-Größe"}</b></li>
+        <li>Zwei Paare oder besser → <b className="text-foreground">{style === "aggressive" ? "Bet oder Raise in Höhe von 150% des Pots (Overbet)" : "Bet oder Raise in Pot-Größe"}</b></li>
         {style === "standard" && <li>Ein Paar oder ein Flush-/Straßendraw → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>}
         {style === "tight" && <>
           <li>Ein Paar, das Top Pair oder besser ist und eine Hole Card nutzt (Overpairs eingeschlossen), oder ein Flush-/Straßendraw → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>
@@ -210,9 +210,9 @@ const DE_UI: QuizUI = {
         </>}
         {style === "loose" && <li>Ein Paar, ein Flush-/Straßendraw oder eine Hole Card, die höher ist als jede Board-Karte (Overcard) → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>}
         {style === "aggressive" && <>
-          <li>Flush-/Straßendraw → <b className="text-foreground">Raise (Semi-Bluff)</b></li>
+          <li>Flush-/Straßendraw → <b className="text-foreground">Bet oder Raise (Semi-Bluff)</b></li>
           <li>Ein Paar → <b className="text-foreground">Bet in Höhe des halben Pots</b></li>
-          <li>Kein Paar und kein Draw, aber eine Overcard → <b className="text-foreground">Raise (Bluff)</b></li>
+          <li>Kein Paar und kein Draw, aber eine Overcard → <b className="text-foreground">Bet oder Raise (Bluff)</b></li>
         </>}
         <li>Alles andere → <b className="text-foreground">Fold</b> (Karten in den Muck, wie live)</li>
       </ul>
