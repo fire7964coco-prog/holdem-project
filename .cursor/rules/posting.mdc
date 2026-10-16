@@ -8,6 +8,7 @@ alwaysApply: false
 
 > 📌 이 파일이 **포스팅·콘텐츠 작업의 단일 기준**이다. `.cursorrules`·`CLAUDE.md`·`content.mdc`·`tech.mdc`·`multilingual-localization.mdc`의 콘텐츠 규칙을 여기에 통합했다. 인프라(Supabase·보안·성능) 상세는 `CLAUDE.md`/`tech.mdc` 참조.
 > **포스트 작업 전 이 파일 전체를 먼저 읽고 시작할 것.**
+> 🔴 **한국어 외 언어 작업이면 `언어북/<loc>.md`도 먼저 연다**(① 용어 정본 통독 · 작업 중 얻은 정보는 언어북이 가리키는 원래 파일에 기록 · 2026-10-16).
 
 ## 🎨 레이아웃 기준 레퍼런스 (절대 이 페이지를 기준으로)
 

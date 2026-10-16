@@ -87,6 +87,7 @@
     "check:hygiene": "node scripts/check-locale-hygiene.mjs",
     "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest",
     "check:handoff": "node scripts/check-handoff-size.mjs",
+    "langbook": "node scripts/build-language-books.mjs",
     "check:handoff:selftest": "node scripts/check-handoff-size.mjs --selftest",
     "check:stamp": "node scripts/check-stamp.mjs",
     "check:stamp:selftest": "node scripts/check-stamp.mjs --selftest",

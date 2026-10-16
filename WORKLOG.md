@@ -1,3 +1,9 @@
+## 2026-10-16 (20) — 언어북 신설(사장님 지시) · 언어 작업 전 필독 규칙
+
+- 언어별 자료 5종(① `translation-terms-<loc>` ② `keyword-bank/<loc>-*` ③ `local-voice/` ④ `docs/<loc>-*`·`tool-lanes/<loc>-*` ⑤ `multilingual-localization.mdc`)을 루트 `언어북/<loc>.md` 25장 + README 목차로 묶음. 파일은 옮기지 않음(링크 보존) · 생성기 `scripts/build-language-books.mjs` = `npm run langbook`.
+- 규칙: 한국어 외 언어 작업은 시작 전 언어북 → ① 통독 · 얻은 정보는 원래 파일에 — CLAUDE.md §7·§19 · AGENTS.md · posting.mdc 머리 · translate-pillar §0 · 메모리.
+- 실측: mdc «search-native» 목록은 11개 언어(pt·fr·ru·zh-hant 없음) — 언어북 ⑤에 그대로 표시.
+
 ## 2026-10-16 (19) — 도구 전 언어 확장 pl ① 서치(용어 + 도구 검색어) · MA-595 회신+등재 MB-366 · 레인 astra 축소
 
 - pl ①: GPT sol(effort medium · 워크트리 `Holdem-gpt-pl`)이 `translation-terms-pl.md` «도구·앱 UI 낱말» 절 작성 `c9ed8d40`(236항목 · it 표 순서 승계 · 미확인 78 · 쟁점 7: raise podbicie/przebicie 구분 · 기존 «vskrycie» 오타 후보 등 · 기존 절 무수정) → main ff 머지 · 워크트리·브랜치 삭제. Claude = DataForSEO(2616·pl) 60어 · SERP 6 · 자동완성 2 → `docs/keyword-bank/pl-tools.md`.

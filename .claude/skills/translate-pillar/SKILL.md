@@ -9,6 +9,10 @@ description: EN 마스터 포스트를 특정 언어×필라로 번역·경화�
 
 지원 언어(12): en / ja / zh / es / de / pt / ar / id / ms / vi / hi / tr. slug는 전 언어 동일(hreflang 보존).
 
+## 0. 착수 전 — 언어북 (필수 · 2026-10-16)
+
+`언어북/<loc>.md`를 연다 → ① 용어 정본 통독 · ② 키워드 뱅크·③ 현지 말투·④ 계획/브리프 중 이 필라에 맞는 것을 읽는다. 작업 중 얻은 용어·검색어·말투는 언어북이 가리키는 원래 파일에 쓴다(새 파일이면 `npm run langbook`).
+
 ## 1. 착수 전 — stale 진단 (필수)
 
 각 대상 파일의 `masterUpdated` vs EN `updated` 비교:

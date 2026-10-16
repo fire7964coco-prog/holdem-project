@@ -117,6 +117,11 @@ event_entries·translations·chat_messages) / 전 테이블 RLS(비로그인 읽
 → 본체는 posting.mdc 「다국어」절 + `.cursor/rules/multilingual-localization.mdc`(12개 언어 용어).
 불변 규칙 둘만 여기 남긴다: **slug는 전 언어 동일**(hreflang 보존) · **직역 금지**(현지 검색 관습 우선).
 
+🔴 **언어북 규칙** (2026-10-16 사장님 지시): 어떤 언어로든 **포스팅·번역·도구·검수·키워드 등 어떤 작업이든 시작 전에
+`언어북/<loc>.md`를 연다** — ① 용어 정본은 통독, ②~⑤는 일감에 맞게. 언어북 = 흩어진 자료 5종(용어 정본·키워드 뱅크·
+현지 말투·계획/브리프·공통 용어 규칙)의 목차(`언어북/README.md`). 작업 중 얻은 정보는 언어북이 가리키는 **원래 파일**에
+쓰고(용어→①, 검색어·SERP·글 후보→②, 말투→③), 새 자료 파일을 만들면 `npm run langbook`. 다른 폴더에서는 `../Holdem_Project/언어북/<loc>.md`.
+
 ## 8. SEO 필수 규칙
 
 - **URL**: `/blog/[slug]` — **끝에 `/` 없음** (`trailingSlash: false`, 붙이면 301)
@@ -343,6 +348,7 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | **검수 요청을 받았다** | `REVIEW-PROTOCOL.md` ← **본체.** 3층 게이트 |
 | 이미지 규격·압축·전송량 | `docs/IMAGE_OPTIMIZATION.md` |
 | 내부링크 걸 slug 확인 | `docs/pillar-slugs.md` ← **문서상 이름 6개가 실제로는 404** |
+| **어떤 언어든 작업 시작 (포스팅·번역·도구·검수·키워드)** | `언어북/<loc>.md` ← 🔴 **먼저 연다.** 그 언어 자료 5종 목차 · `npm run langbook`으로 갱신 |
 | 다국어 용어(12개 언어) | `.cursor/rules/multilingual-localization.mdc` |
 | **로케일마다 «일부러 다른» 자리인지 판정** | `docs/locale-intentional-diffs.md` ← 없으면 «아직 판정 안 함»이다 |
 | **키워드를 조사한다 (전 언어)** | `docs/rakko-playbook.md` ← **본체.** 도구 3종 분업(**발굴·SD=DataForSEO / 볼륨·시계열=라쿠 / lowfruits=SERP 약점**) · 🔴 **`language`는 볼륨을 안 나눈다** · 🔴 **CPC는 벤더 간 30배라 근거 금지** |
