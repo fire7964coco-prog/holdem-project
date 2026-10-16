@@ -44,7 +44,8 @@ const IT_UI: QuizUI = {
   roleDefend: "Difesa",
   winShort: "Vittoria",
   tieShort: "Pareggio",
-  loseShort: "Lose",
+  // ★2026-10-16 헤드 — EN 임시 «Lose»가 Vittoria·Pareggio 사이에 섞여 읽혔다 → 같은 짝의 일반어 Sconfitta.
+  loseShort: "Sconfitta",
   revealedLabel: "👀 Contro le mani scoperte",
   revealedNote: (gap) =>
     `Il valore in alto presuppone che tu non veda le loro carte: da qui la differenza di ${dec(gap)} percentage points. Al tavolo decideresti in base al valore in alto.`,

@@ -62,7 +62,7 @@
 | Win rate (long-term results) | Win rate | win rate | [888poker][g888] · «winrate» | 띄어쓰기 통일. 장기 성적 지표이며 승리 확률과 다른 개념. 단위는 원본대로 보존한다. |
 | Tie | Pareggio | pareggio | [PokerStars][ps-g] · «pareggio» | 무승부 발생 확률. 손익분기점의 parità와 혼용하지 않는다. |
 | Split / chop (pot) | Split pot | split pot | [Wikipedia IT][wg] · «Split Pot» | 팟을 나누는 결과. 대회 상금 deal과 구분한다. |
-| Lose / loss probability | Lose | lose | 미확인 | 결과 열의 EN 임시 라벨. |
+| Lose / loss probability | Sconfitta | sconfitta | 헤드 결정 10-16 | Vittoria·Pareggio와 짝인 일반어(EN 임시 «Lose»가 화면에서 섞여 읽혀 교체 · `/it/win-rate-quiz`). |
 | Pot odds | Pot odds | pot odds | [888poker][po] · «pot odds» | 비율과 최소 필요 equity의 표시는 원본 도구 뜻을 따른다. |
 | Odds | Odds | odds | [PokerStars][mc] · «Odds» | 확률 그 자체와 비율 형식을 구분. 표현만 정하고 수식은 새로 만들지 않는다. |
 | Outs | Outs | outs | [888poker][eq] · «outs» | 영어 유지. 개선 카드가 언제나 승리를 보장한다는 뜻은 아니다. |
