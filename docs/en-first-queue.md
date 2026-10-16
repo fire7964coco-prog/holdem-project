@@ -1324,6 +1324,21 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CI-7 EN-먼저 통지 (MA-564 통지 2) | strategy «Always raise: A-A down to T-T, and A-K» 선행 액션 한정 · «realize less than your raw equity OOP» 단정 · positions «Only the first one acts truly blind» · FAQ «The one exception is heads-up»(스트래들 두 번째 예외) — tr RISKY ↔ EN OK 형제 갈림 | ⏸ 검수장 EN 재판정 결과 오면 EN+형제 |
 | CI-8 남김 (MA-564 통지 3 · MA-566 통지) | MA-564 EN 동형 8건(HUD 40% · 큰 베팅 폴드아웃 · delayed c-bet 정의 · 토너먼트 half pot · 결론 «ends at the big blind» · UTG «must commit» · «one in five» · 세트 11.8% «적어도 한 장») · MA-566 blind-battle L278 ⓐ~ⓒ 라벨 UNV 유지 + Astra 완화 권고(가능성 표현 · 과폴드 조건화 · «오버페어라는 사실만으로 정하지 말라») | 🪶 판단 대상 — 정정 강제 아님 · EN 손질 때 형제 함께 |
 
+### 2-CJ. 우편함 수신분 — MA-574(zh GTO 13 경량 · 요청 5 · 통지 3) · MA-575(ja GTO 13 경량 · 요청 1 · 통지 3) · MA-576(pt · ACK) · 등재 2026-10-16 (2)
+
+근거 `홀덤검수/reports/검수-{zh,ja}-gto13-경량-2026-10-15/REPORT.md` · `reports/검수-gto6-본부재검증-배치1-2026-10-16/HQ-REPORT.md`
+
+| # | 자리 | 처리 |
+|---|---|---|
+| CJ-1 zh (MA-574 ①) | 3bet-pot-bet-sizing tldr «两个加起来…还不到一个»(실제 1.129콤보) | ✅ «也就勉强一个» = EN «barely one» · MB-352 |
+| CJ-2 zh (MA-574 ②) | donk-bet-strategy L212 «领打只在…才成立» 배타 명제 | ✅ «领打主要出现在…» = EN «Leads live on» · MB-352 |
+| CJ-3 zh (MA-574 ③) | 3bet-pot-cbet L196 «改变它的是牌面，而不是范围» 비교 한정 탈락 | ✅ «与其说是范围，不如说是牌面» · MB-352 |
+| CJ-4 zh (MA-574 ④) | monotone seoTitle «同花已经成了还是 69.9%» — 69.9%는 넛 플러시 값 | ✅ «坚果同花也有 69.9% 在过牌» · MB-352 |
+| CJ-5 zh (MA-574 ⑤) | monotone L189 «打三条街» big 탈락 | ✅ «连下三条街的大注» · MB-352 |
+| CJ-6 ja (MA-575 ①) | low-board-check-raise 직답 «使い切るグループ» 전량 소진 명제 | ✅ «実際にレイズへ回しているのもこのグループ» · MB-352 |
+| CJ-7 남김 zh (MA-574 통지) | paired L270 «每一场都会碰上几次» · low-board L116·L258 «等级面板»(앱 «手牌») · paired L129 «明三条（一张 6）» | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때 |
+| CJ-8 남김 ja (MA-575 통지) | ⓐ «EV損失(bb)» 4자리 ↔ 앱 «EVロス» ⓑ «今日の問題» ↔ 앱 «今日のGTO問題»(EN «Daily Challenge»↔앱 «Daily Puzzle» = EN-먼저) ⓒ ace-paired L91 EN 앱 문자열 ↔ ja 앱 · 참고 a-high L92 최상급 | 🪶 앱 축어 정렬 회차 때(ⓑ는 EN부터) |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 
