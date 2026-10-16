@@ -239,6 +239,7 @@ const STATIC_ROUTES = [
   { path: "/ar/calculator", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-16 it 도구 회차
   { path: "/it/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/pl/calculator", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/hand-chart` 10개(로케일 도구 확장 회차 1). `/en/hand-chart`(0.7)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/hand-chart-alternates.ts`.
@@ -259,6 +260,7 @@ const STATIC_ROUTES = [
   { path: "/ar/hand-chart", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-16 it 도구 회차
   { path: "/it/hand-chart", priority: "0.7", changefreq: "monthly" },
+  { path: "/pl/hand-chart", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/glossary` 10개(로케일 도구 확장 회차 2). `/en/glossary`(0.6)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/glossary-alternates.ts`.
@@ -279,6 +281,7 @@ const STATIC_ROUTES = [
   { path: "/vi/glossary", priority: "0.6", changefreq: "monthly" },
   // ★2026-10-16 it 도구 회차
   { path: "/it/glossary", priority: "0.6", changefreq: "monthly" },
+  { path: "/pl/glossary", priority: "0.6", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
  *   그 전까지 차트는 ko·en 둘뿐이었고 서로 hreflang도 없었다.
  * 🔴 x-default = 영어판(계산기와 같은 판단).
  */
-export const HAND_CHART_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ar", "it"] as const;
+export const HAND_CHART_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ar", "it", "pl"] as const;
 export type HandChartLocale = (typeof HAND_CHART_LOCALES)[number];
 
 export const HAND_CHART_ALTERNATES: Record<string, string> = {
@@ -33,5 +33,6 @@ export const HAND_CHART_ALTERNATES: Record<string, string> = {
   "ar": `${SITE}/ar/hand-chart`,
   // ★2026-10-16 it 도구 회차
   "it-IT": `${SITE}/it/hand-chart`,
+  "pl-PL": `${SITE}/pl/hand-chart`,
   "x-default": `${SITE}/en/hand-chart`,
 };

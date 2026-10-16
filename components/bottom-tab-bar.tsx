@@ -94,6 +94,7 @@ export function useHideBottomChrome(): boolean {
  */
 const TAB_LABELS: Record<string, Record<BottomTabKey, string>> = {
   // ★2026-10-16 it 도구 회차
+  pl: { home: "Feed", blog: "Blog", chat: "Czat", event: "Wydarzenie", profile: "Profil" },
   it: { home: "Feed", blog: "Blog", chat: "Chat", event: "Evento", profile: "Profilo" },
   ko: { home: "피드", blog: "블로그", chat: "채팅", event: "이벤트", profile: "프로필" },
   en: { home: "Feed", blog: "Blog", chat: "Chat", event: "Event", profile: "Profile" },
