@@ -255,6 +255,8 @@ const STATIC_ROUTES = [
   { path: "/vi/hand-chart", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-14 tool-lanes 🅲 ar 회차 1.
   { path: "/ar/hand-chart", priority: "0.7", changefreq: "monthly" },
+  // ★2026-10-16 it 도구 회차
+  { path: "/it/hand-chart", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-10-05 신설 — `/<locale>/glossary` 10개(로케일 도구 확장 회차 2). `/en/glossary`(0.6)와 같은 가중치.
    *   robots = index, follow (각 page.tsx) · hreflang 12세트 = `lib/glossary-alternates.ts`.

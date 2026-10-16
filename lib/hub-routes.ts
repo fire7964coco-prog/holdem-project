@@ -44,7 +44,7 @@ const HUB_SECTIONS = ["/pub", "/rules"] as const;
 // ★2026-10-05 `/<locale>/glossary` 같은 10개 로케일 신설(회차 2 · hreflang = lib/glossary-alternates.ts) — «glossary는 없다» 경고도 낡았다.
 const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-10-16 it 도구 회차
-  it: ["/it/calculator"],
+  it: ["/it/calculator", "/it/hand-chart"],
   /**
    * ⚠ `/en/ranking`·`/en/quiz`는 좌측 레일 메뉴에서만 뺐다(사장님 요청).
    *   **여기서는 빼면 안 된다** — page.tsx가 <HubPage>로 감싸져 있어서 이 목록에서 지우면
