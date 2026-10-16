@@ -286,6 +286,122 @@ export function botText(locale: BotLocale): BotText {
   return T[locale];
 }
 
+// ── ⑥ 수신 동의 처리결과 통지 ───────────────────────────────
+/**
+ * 대회·이벤트 소식(광고성) 수신 동의·철회 때 봇이 바로 보내는 DM (2026-10-16 · ⑥).
+ * 담는 것 = 전송자 명칭(HoldemMaster) · 동의/철회 사실과 날짜 · 처리 결과 — 근거·원문 = docs/telegram-login-plan.md «⑥ 수신 동의».
+ * 🔴 나라·법 이름은 쓰지 않는다(사장님 10-16). 시간 = 회원 «현지 시간» 08~21시(⑦ 발송 규칙과 같은 말).
+ * 탭 이름·카드 제목은 위 aStop·웹 카드(app/community/telegram-connect.tsx LABELS.title)와 축어 일치. {d} = YYYY-MM-DD.
+ */
+export type ConsentNoticeKind = "on" | "off" | "unlink";
+
+const CONSENT: Record<BotLocale, Record<ConsentNoticeKind, string>> = {
+  ko: {
+    on: "HoldemMaster · {d}\n✅ 대회·이벤트 소식(광고성) 수신에 동의하셨어요 — 처리 완료.\n현지 시간 낮(08~21시)에만 보내요. 끄려면 사이트 «프로필» → «텔레그램 알림»에서 체크를 해제하세요.",
+    off: "HoldemMaster · {d}\n대회·이벤트 소식(광고성) 수신 동의를 철회하셨어요 — 처리 완료. 앞으로 이런 메시지는 보내지 않아요.",
+    unlink: "HoldemMaster · {d}\n텔레그램 연결을 해제하셔서 대회·이벤트 소식(광고성) 수신 동의도 함께 철회됐어요 — 처리 완료.",
+  },
+  en: {
+    on: "HoldemMaster · {d}\n✅ You opted in to tournament & event news (promotional) — done.\nWe only send it during daytime in your local time (08:00–21:00). To turn it off, untick it under «Profile» → «Telegram alerts» on the site.",
+    off: "HoldemMaster · {d}\nYou opted out of tournament & event news (promotional) — done. We won't send these messages anymore.",
+    unlink: "HoldemMaster · {d}\nYou unlinked Telegram, so your opt-in to tournament & event news (promotional) was withdrawn too — done.",
+  },
+  ja: {
+    on: "HoldemMaster · {d}\n✅ 大会・イベント情報（広告）の受信に同意しました — 処理完了。\n現地時間の日中（8時〜21時）だけ送ります。オフにするには、サイトの「プロフィール」→「Telegram通知」でチェックを外してください。",
+    off: "HoldemMaster · {d}\n大会・イベント情報（広告）の受信同意を撤回しました — 処理完了。今後このようなメッセージは送りません。",
+    unlink: "HoldemMaster · {d}\nTelegramとの連携を解除したため、大会・イベント情報（広告）の受信同意も撤回されました — 処理完了。",
+  },
+  es: {
+    on: "HoldemMaster · {d}\n✅ Aceptaste recibir novedades de torneos y eventos (publicidad) — listo.\nSolo las enviamos de día en tu hora local (08:00–21:00). Para desactivarlo, desmarca la casilla en «Perfil» → «Avisos por Telegram» del sitio.",
+    off: "HoldemMaster · {d}\nRetiraste tu consentimiento para novedades de torneos y eventos (publicidad) — listo. Ya no te enviaremos estos mensajes.",
+    unlink: "HoldemMaster · {d}\nDesvinculaste Telegram, así que también se retiró tu consentimiento para novedades de torneos y eventos (publicidad) — listo.",
+  },
+  pt: {
+    on: "HoldemMaster · {d}\n✅ Você aceitou receber novidades de torneios e eventos (publicidade) — pronto.\nSó enviamos durante o dia no seu horário local (08:00–21:00). Para desligar, desmarque em «Perfil» → «Avisos no Telegram» no site.",
+    off: "HoldemMaster · {d}\nVocê retirou o consentimento para novidades de torneios e eventos (publicidade) — pronto. Não enviaremos mais essas mensagens.",
+    unlink: "HoldemMaster · {d}\nVocê desvinculou o Telegram, então o consentimento para novidades de torneios e eventos (publicidade) também foi retirado — pronto.",
+  },
+  de: {
+    on: "HoldemMaster · {d}\n✅ Du hast Turnier- und Event-News (Werbung) zugestimmt – erledigt.\nWir senden nur tagsüber nach deiner Ortszeit (08:00–21:00). Zum Abschalten entferne auf der Website unter «Profil» → «Telegram-Benachrichtigungen» das Häkchen.",
+    off: "HoldemMaster · {d}\nDu hast deine Zustimmung zu Turnier- und Event-News (Werbung) widerrufen – erledigt. Wir senden dir diese Nachrichten nicht mehr.",
+    unlink: "HoldemMaster · {d}\nDu hast die Telegram-Verknüpfung gelöst, daher ist auch deine Zustimmung zu Turnier- und Event-News (Werbung) widerrufen – erledigt.",
+  },
+  zh: {
+    on: "HoldemMaster · {d}\n✅ 你已同意接收赛事与活动资讯（广告）——处理完成。\n只在你当地时间白天（08:00–21:00）发送。要关闭，请在网站「我的」→「Telegram 通知」里取消勾选。",
+    off: "HoldemMaster · {d}\n你已撤回接收赛事与活动资讯（广告）的同意——处理完成。今后不会再发送此类消息。",
+    unlink: "HoldemMaster · {d}\n你已解除 Telegram 绑定，接收赛事与活动资讯（广告）的同意也一并撤回——处理完成。",
+  },
+  "zh-hant": {
+    on: "HoldemMaster · {d}\n✅ 你已同意接收賽事與活動資訊（廣告）——處理完成。\n只在你當地時間白天（08:00–21:00）傳送。要關閉，請在網站「Profile」→「Telegram 通知」裡取消勾選。",
+    off: "HoldemMaster · {d}\n你已撤回接收賽事與活動資訊（廣告）的同意——處理完成。今後不會再傳送此類訊息。",
+    unlink: "HoldemMaster · {d}\n你已解除 Telegram 連結，接收賽事與活動資訊（廣告）的同意也一併撤回——處理完成。",
+  },
+  fr: {
+    on: "HoldemMaster · {d}\n✅ Tu as accepté de recevoir les actus tournois et événements (publicité) — c'est fait.\nOn n'envoie qu'en journée à ton heure locale (08:00–21:00). Pour désactiver, décoche la case dans « Profile » → « Alertes Telegram » sur le site.",
+    off: "HoldemMaster · {d}\nTu as retiré ton accord pour les actus tournois et événements (publicité) — c'est fait. On ne t'enverra plus ces messages.",
+    unlink: "HoldemMaster · {d}\nTu as délié Telegram, ton accord pour les actus tournois et événements (publicité) est donc retiré aussi — c'est fait.",
+  },
+  id: {
+    on: "HoldemMaster · {d}\n✅ Kamu setuju menerima kabar turnamen & event (iklan) — selesai.\nKami hanya mengirim pada siang hari waktu setempatmu (08.00–21.00). Untuk mematikannya, hapus centang di «Profil» → «Notifikasi Telegram» di situs.",
+    off: "HoldemMaster · {d}\nKamu menarik persetujuan menerima kabar turnamen & event (iklan) — selesai. Kami tidak akan mengirim pesan seperti ini lagi.",
+    unlink: "HoldemMaster · {d}\nKamu melepas tautan Telegram, jadi persetujuan menerima kabar turnamen & event (iklan) juga ditarik — selesai.",
+  },
+  ms: {
+    on: "HoldemMaster · {d}\n✅ Anda bersetuju menerima berita kejohanan & acara (iklan) — selesai.\nKami hanya menghantar pada waktu siang mengikut waktu tempatan anda (08:00–21:00). Untuk mematikannya, nyahtanda di «Profil» → «Pemberitahuan Telegram» di laman.",
+    off: "HoldemMaster · {d}\nAnda telah menarik balik persetujuan menerima berita kejohanan & acara (iklan) — selesai. Kami tidak akan menghantar mesej seperti ini lagi.",
+    unlink: "HoldemMaster · {d}\nAnda telah menyahpaut Telegram, jadi persetujuan menerima berita kejohanan & acara (iklan) turut ditarik balik — selesai.",
+  },
+  hi: {
+    on: "HoldemMaster · {d}\n✅ आपने टूर्नामेंट और इवेंट की खबरें (विज्ञापन) पाने की सहमति दी — हो गया।\nहम सिर्फ़ आपके स्थानीय समय में दिन के दौरान (08:00–21:00) भेजते हैं। बंद करने के लिए साइट पर «प्रोफ़ाइल» → «Telegram सूचनाएँ» में टिक हटाएँ।",
+    off: "HoldemMaster · {d}\nआपने टूर्नामेंट और इवेंट की खबरें (विज्ञापन) पाने की सहमति वापस ले ली — हो गया। अब हम ऐसे संदेश नहीं भेजेंगे।",
+    unlink: "HoldemMaster · {d}\nआपने Telegram कनेक्शन हटा दिया, इसलिए टूर्नामेंट और इवेंट की खबरें (विज्ञापन) पाने की सहमति भी वापस ले ली गई — हो गया।",
+  },
+  vi: {
+    on: "HoldemMaster · {d}\n✅ Bạn đã đồng ý nhận tin giải đấu & sự kiện (quảng cáo) — đã xử lý.\nChúng tôi chỉ gửi vào ban ngày theo giờ địa phương của bạn (08:00–21:00). Muốn tắt, hãy bỏ chọn trong «Hồ sơ» → «Thông báo Telegram» trên trang.",
+    off: "HoldemMaster · {d}\nBạn đã rút lại đồng ý nhận tin giải đấu & sự kiện (quảng cáo) — đã xử lý. Chúng tôi sẽ không gửi những tin này nữa.",
+    unlink: "HoldemMaster · {d}\nBạn đã hủy liên kết Telegram nên đồng ý nhận tin giải đấu & sự kiện (quảng cáo) cũng được rút lại — đã xử lý.",
+  },
+  tr: {
+    on: "HoldemMaster · {d}\n✅ Turnuva ve etkinlik haberlerini (reklam) almayı onayladın — tamamlandı.\nYalnızca yerel saatinle gündüz (08.00–21.00) gönderiyoruz. Kapatmak için sitede «Profil» → «Telegram bildirimleri» bölümünden işareti kaldır.",
+    off: "HoldemMaster · {d}\nTurnuva ve etkinlik haberleri (reklam) için onayını geri aldın — tamamlandı. Artık bu mesajları göndermeyeceğiz.",
+    unlink: "HoldemMaster · {d}\nTelegram bağlantısını kaldırdığın için turnuva ve etkinlik haberleri (reklam) onayın da geri alındı — tamamlandı.",
+  },
+  ar: {
+    on: "HoldemMaster · {d}\n✅ وافقت على تلقي أخبار البطولات والفعاليات (إعلانات) — تم.\nنرسلها نهارًا فقط بحسب توقيتك المحلي (08:00–21:00). لإيقافها، أزل العلامة من «حسابي» ← «إشعارات Telegram» على الموقع.",
+    off: "HoldemMaster · {d}\nسحبت موافقتك على تلقي أخبار البطولات والفعاليات (إعلانات) — تم. لن نرسل إليك هذه الرسائل بعد الآن.",
+    unlink: "HoldemMaster · {d}\nألغيت ربط Telegram، لذا سُحبت أيضًا موافقتك على تلقي أخبار البطولات والفعاليات (إعلانات) — تم.",
+  },
+  ru: {
+    on: "HoldemMaster · {d}\n✅ Согласие на новости турниров и событий (реклама) принято — готово.\nОтправляем только днём по твоему местному времени (08:00–21:00). Чтобы отключить, сними галочку в «Профиль» → «Уведомления в Telegram» на сайте.",
+    off: "HoldemMaster · {d}\nСогласие на новости турниров и событий (реклама) отозвано — готово. Больше не будем присылать такие сообщения.",
+    unlink: "HoldemMaster · {d}\nTelegram отвязан, поэтому согласие на новости турниров и событий (реклама) тоже отозвано — готово.",
+  },
+};
+
+export function consentNotice(locale: BotLocale, kind: ConsentNoticeKind, date: string): string {
+  return CONSENT[locale][kind].replace("{d}", date);
+}
+
+/** 날짜 = 회원 시간대(없거나 이상하면 UTC)의 YYYY-MM-DD. 언어마다 날짜 형식을 따로 두지 않으려고 ISO 하나로 쓴다. */
+export function consentDate(at: Date, tz: string | null | undefined): string {
+  try {
+    return new Intl.DateTimeFormat("en-CA", { timeZone: tz || "UTC", year: "numeric", month: "2-digit", day: "2-digit" }).format(at);
+  } catch {
+    return at.toISOString().slice(0, 10);
+  }
+}
+
+/** IANA 시간대 이름인지 — 브라우저가 보낸 값을 그대로 믿지 않는다. */
+export function isTimeZone(tz: unknown): tz is string {
+  if (typeof tz !== "string" || tz.length === 0 || tz.length > 64) return false;
+  try {
+    new Intl.DateTimeFormat("en", { timeZone: tz });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 /** 커뮤니티 홈(프로필 탭) — KO는 루트, 나머지는 /{locale}. */
 function siteHome(locale: BotLocale): string {
   return locale === "ko" ? SITE : `${SITE}/${locale}`;

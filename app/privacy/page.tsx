@@ -9,7 +9,8 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
  *
  * ★여기 적힌 수집 항목·수탁사는 **추측이 아니라 코드에서 확인한 것**이다.
  *   - 수집 항목  : supabase/schema.sql (profiles·posts·comments·likes·event_entries·chat_messages ·
- *                  trainer_attempts §10 · my-records.sql §12 solver_saved_items·win_rate_quiz_hands)
+ *                  trainer_attempts §10 · my-records.sql §12 solver_saved_items·win_rate_quiz_hands ·
+ *                  telegram-links.sql + telegram-consent.sql telegram_links)
  *   - 분석 도구  : app/layout.tsx (GA4 G-CHSBJJDC14 · Vercel Speed Insights · Vercel Analytics)
  *   - 번역 위탁  : CLAUDE.md §5 + app/api 번역 라우트 (Gemini Flash API)
  *   - 저장 위치  : Supabase 서울 리전 (CLAUDE.md §5)
@@ -17,8 +18,9 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
  */
 
 // 🔴 수집 항목을 바꾸면 배포일로 바꾼다 — 10-11 = 학습·퀴즈 기록 3줄(docs/my-records-design.md §4 ·
-//   트레이너 기록은 08-15부터 수집 중이었는데 표에 없었다)
-const UPDATED = "2026-10-11";
+//   트레이너 기록은 08-15부터 수집 중이었는데 표에 없었다) · 10-16 = 텔레그램 연결·수신 동의(⑤에서 수집을 시작했는데 표에 없었다 ·
+//   docs/telegram-login-plan.md «⑥»)
+const UPDATED = "2026-10-16";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
@@ -69,8 +71,8 @@ export default function PrivacyPage() {
             </tr>
             <tr>
               <td>소셜 로그인</td>
-              <td>Google 계정의 이메일 주소·이름·프로필 이미지 주소 / 카카오 계정의 닉네임·이메일 주소</td>
-              <td>Google·카카오 로그인 이용 시</td>
+              <td>Google 계정의 이메일 주소·이름·프로필 이미지 주소 / 카카오 계정의 닉네임·이메일 주소 / 텔레그램 계정의 이름</td>
+              <td>Google·카카오·텔레그램 로그인 이용 시</td>
             </tr>
             <tr>
               <td>이용자 게시물</td>
@@ -113,6 +115,11 @@ export default function PrivacyPage() {
               <td>투표·코멘트 시</td>
             </tr>
             <tr>
+              <td>텔레그램 알림 연결</td>
+              <td>텔레그램 숫자 ID(봇이 메시지를 보낼 채팅 ID), 사용자명(@아이디 — 설정한 경우), 이름, 연결 시각, 봇 차단 여부 / 대회·이벤트 소식 수신에 동의한 경우: 동의·철회 시각, 브라우저 시간대(현지 시간 낮에만 보내기 위해)</td>
+              <td>프로필에서 텔레그램을 연결할 때 · 수신 동의를 켜거나 끌 때</td>
+            </tr>
+            <tr>
               <td>자동 수집</td>
               <td>접속 로그, 브라우저·기기 종류, 방문 페이지, 성능 측정값(로딩 속도 등)</td>
               <td>사이트 이용 시</td>
@@ -120,7 +127,7 @@ export default function PrivacyPage() {
           </tbody>
         </table>
         <p>
-          <strong>수집하지 않는 항목</strong>: 실명, 주민등록번호, 연락처, 주소, 결제·금융 정보는 어떤
+          <strong>수집하지 않는 항목</strong>: 실명, 주민등록번호, 전화번호, 주소, 결제·금융 정보는 어떤
           경우에도 수집하지 않습니다. 홀덤마스터는 금전 거래가 발생하지 않는 정보·커뮤니티 서비스입니다.
         </p>
       </LegalSection>
@@ -130,6 +137,10 @@ export default function PrivacyPage() {
           <li>회원 식별 및 로그인 상태 유지</li>
           <li>커뮤니티 글·댓글·채팅의 작성자 표시와 본인 게시물 관리</li>
           <li>이벤트 참여 자격 확인, 중복 응모 방지, 추첨·당첨 안내</li>
+          <li>
+            텔레그램을 연결한 회원에게 계정 알림 발송 · 별도로 수신에 동의한 회원에게만 대회·이벤트 소식(광고성
+            정보) 발송 — 동의는 선택이며 동의하지 않아도 모든 기능을 이용할 수 있습니다
+          </li>
           <li>대회 후기·투표 결과 표시와 중복 투표·도배 방지</li>
           <li>학습·퀴즈 기록과 솔버 저장 목록을 계정에 보관해 여러 기기에서 이어 쓰게 하고, 본인에게 «내 기록»으로 보여 주기</li>
           <li>다국어 이용자를 위한 게시물 자동 번역 제공</li>
@@ -158,6 +169,12 @@ export default function PrivacyPage() {
             <strong>학습·퀴즈 기록과 솔버 저장 목록</strong> — 본인만 볼 수 있고 다른 이용자에게 공개되지
             않습니다. 로그인하지 않으면 이용하는 기기(브라우저)에만 남고 서버로 전송되지 않습니다. 본인이
             삭제하거나 회원 탈퇴하면 지체 없이 파기합니다.
+          </li>
+          <li>
+            <strong>텔레그램 연결 정보</strong> — 프로필에서 «연결 해제»를 누르면 텔레그램 숫자 ID·사용자명·이름을
+            지체 없이 지우고, 대회·이벤트 소식 수신 동의도 함께 철회합니다. 수신 동의·철회 처리를 확인할 수 있도록
+            동의·철회 시각 기록만 회원 탈퇴 시까지 보관합니다. 수신 동의는 프로필의 «텔레그램 알림»에서 언제든
+            끌 수 있고, 켜거나 끄면 그 결과와 날짜를 텔레그램으로 바로 알려 드립니다.
           </li>
           <li>
             <strong>투표 기록</strong> — 무작위 식별자와 IP 주소 변환값만 남아 회원 계정과 연결되지 않으며,
@@ -201,6 +218,11 @@ export default function PrivacyPage() {
               <td>Google (Analytics)</td>
               <td>방문 통계 분석 (측정 ID: G-CHSBJJDC14)</td>
               <td>해외 서버</td>
+            </tr>
+            <tr>
+              <td>Telegram (Bot API)</td>
+              <td>텔레그램을 연결한 회원에게 알림 메시지 전송</td>
+              <td>해외 서버 · 메시지 본문과 채팅 ID가 전송됨</td>
             </tr>
             <tr>
               <td>Google (Gemini API)</td>

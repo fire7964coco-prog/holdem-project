@@ -20,6 +20,8 @@ type Labels = {
   linked: string; blocked: string; disconnect: string; confirm: string; error: string;
   /** 사이드바·띠 배너(10-16 사장님 «눈에 띄는 곳에도») */
   loginToLink: string; banner: string; close: string;
+  /** ⑥ 대회·이벤트 소식(광고성) 수신 동의 — 연결된 회원만. 문구 근거 = docs/telegram-login-plan.md «⑥» · 나라·법 이름 안 씀(사장님 10-16) · {d} = YYYY-MM-DD */
+  mkt: string; mktNote: string; mktOn: string; mktOff: string;
 };
 
 const LABELS: Record<string, Labels> = {
@@ -30,6 +32,9 @@ const LABELS: Record<string, Labels> = {
     linked: "연결됨", blocked: "봇이 차단돼 있어 알림이 가지 않아요. 텔레그램에서 차단을 풀면 다시 받아요.",
     disconnect: "연결 해제", confirm: "텔레그램 연결을 해제할까요?", error: "지금은 처리하지 못했어요. 잠시 뒤 다시 해 주세요.",
     loginToLink: "로그인하고 연결하기 →", banner: "✈️ 텔레그램 연결하고 알림 받기 →", close: "닫기",
+    mkt: "대회·이벤트 소식(광고성)도 받기 (선택)",
+    mktNote: "동의한 경우에만, 현지 시간 낮(08~21시)에만 보내요. 언제든 여기서 끌 수 있어요.",
+    mktOn: "✓ {d} 수신 동의 처리됨", mktOff: "✓ {d} 수신 동의 철회 처리됨",
   },
   en: {
     title: "✈️ Telegram alerts", sub: "Link Telegram to get account alerts, such as event wins, in Telegram (alerts coming soon).",
@@ -38,6 +43,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Linked", blocked: "The bot is blocked, so alerts can't reach you. Unblock it in Telegram to get them again.",
     disconnect: "Unlink", confirm: "Unlink Telegram?", error: "Couldn't do that right now. Please try again shortly.",
     loginToLink: "Log in to link →", banner: "✈️ Link Telegram to get alerts →", close: "Close",
+    mkt: "Also get tournament & event news (promotional) — optional",
+    mktNote: "Sent only if you opt in, and only during daytime in your local time (08:00–21:00). Turn it off here anytime.",
+    mktOn: "✓ Opted in on {d}", mktOff: "✓ Opted out on {d}",
   },
   ja: {
     title: "✈️ Telegram通知", sub: "連携しておくと、イベント当選などのアカウント通知をTelegramで受け取れるようになります（通知機能は準備中）。",
@@ -46,6 +54,9 @@ const LABELS: Record<string, Labels> = {
     linked: "連携済み", blocked: "ボットがブロックされているため通知が届きません。Telegramでブロックを解除すると再び届きます。",
     disconnect: "連携を解除", confirm: "Telegramとの連携を解除しますか？", error: "今は処理できませんでした。しばらくしてからもう一度お試しください。",
     loginToLink: "ログインして連携 →", banner: "✈️ Telegramと連携して通知を受け取る →", close: "閉じる",
+    mkt: "大会・イベント情報（広告）も受け取る（任意）",
+    mktNote: "同意した場合のみ、現地時間の日中（8時〜21時）だけ送ります。いつでもここでオフにできます。",
+    mktOn: "✓ {d} 受信に同意しました", mktOff: "✓ {d} 受信同意を撤回しました",
   },
   es: {
     title: "✈️ Avisos por Telegram", sub: "Vincula Telegram para recibir ahí avisos de tu cuenta, como premios de eventos (muy pronto).",
@@ -54,6 +65,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Vinculado", blocked: "El bot está bloqueado y los avisos no te llegan. Desbloquéalo en Telegram para volver a recibirlos.",
     disconnect: "Desvincular", confirm: "¿Desvincular Telegram?", error: "No se pudo hacer ahora. Inténtalo de nuevo en un momento.",
     loginToLink: "Inicia sesión para vincular →", banner: "✈️ Vincula Telegram y recibe avisos →", close: "Cerrar",
+    mkt: "Recibir también novedades de torneos y eventos (publicidad) — opcional",
+    mktNote: "Solo si aceptas, y solo de día en tu hora local (08:00–21:00). Puedes desactivarlo aquí cuando quieras.",
+    mktOn: "✓ Aceptado el {d}", mktOff: "✓ Retirado el {d}",
   },
   pt: {
     title: "✈️ Avisos no Telegram", sub: "Vincule o Telegram para receber lá avisos da sua conta, como prêmios de eventos (em breve).",
@@ -62,6 +76,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Vinculado", blocked: "O bot está bloqueado, então os avisos não chegam. Desbloqueie no Telegram para voltar a receber.",
     disconnect: "Desvincular", confirm: "Desvincular o Telegram?", error: "Não deu para fazer isso agora. Tente de novo daqui a pouco.",
     loginToLink: "Entre para vincular →", banner: "✈️ Vincule o Telegram e receba avisos →", close: "Fechar",
+    mkt: "Receber também novidades de torneios e eventos (publicidade) — opcional",
+    mktNote: "Só se você aceitar, e só durante o dia no seu horário local (08:00–21:00). Dá para desligar aqui quando quiser.",
+    mktOn: "✓ Aceito em {d}", mktOff: "✓ Retirado em {d}",
   },
   de: {
     title: "✈️ Telegram-Benachrichtigungen", sub: "Verknüpf Telegram, um dort Kontohinweise wie Event-Gewinne zu bekommen (bald verfügbar).",
@@ -70,6 +87,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Verknüpft", blocked: "Der Bot ist blockiert, deshalb kommen keine Hinweise an. Heb die Blockierung in Telegram auf, um sie wieder zu bekommen.",
     disconnect: "Verknüpfung lösen", confirm: "Telegram-Verknüpfung lösen?", error: "Das hat gerade nicht geklappt. Versuch es gleich noch einmal.",
     loginToLink: "Zum Verknüpfen anmelden →", banner: "✈️ Telegram verknüpfen und Hinweise bekommen →", close: "Schließen",
+    mkt: "Auch Turnier- und Event-News (Werbung) erhalten – optional",
+    mktNote: "Nur mit deiner Zustimmung und nur tagsüber nach deiner Ortszeit (08:00–21:00). Du kannst es hier jederzeit abschalten.",
+    mktOn: "✓ Zugestimmt am {d}", mktOff: "✓ Widerrufen am {d}",
   },
   zh: {
     title: "✈️ Telegram 通知", sub: "绑定后，就能在 Telegram 收到活动中奖等账号通知（通知功能准备中）。",
@@ -78,6 +98,9 @@ const LABELS: Record<string, Labels> = {
     linked: "已绑定", blocked: "机器人已被屏蔽，通知无法送达。在 Telegram 里解除屏蔽后即可再次接收。",
     disconnect: "解除绑定", confirm: "要解除 Telegram 绑定吗？", error: "暂时无法处理，请稍后再试。",
     loginToLink: "登录后绑定 →", banner: "✈️ 绑定 Telegram 接收通知 →", close: "关闭",
+    mkt: "同时接收赛事与活动资讯（广告）（可选）",
+    mktNote: "仅在你同意后发送，且只在你当地时间白天（08:00–21:00）发送。随时可在这里关闭。",
+    mktOn: "✓ {d} 已同意接收", mktOff: "✓ {d} 已撤回同意",
   },
   "zh-hant": {
     title: "✈️ Telegram 通知", sub: "連結後，就能在 Telegram 收到活動中獎等帳號通知（通知功能準備中）。",
@@ -86,6 +109,9 @@ const LABELS: Record<string, Labels> = {
     linked: "已連結", blocked: "機器人已被封鎖，通知無法送達。在 Telegram 裡解除封鎖後即可再次接收。",
     disconnect: "解除連結", confirm: "要解除 Telegram 連結嗎？", error: "暫時無法處理，請稍後再試。",
     loginToLink: "登入後連結 →", banner: "✈️ 連結 Telegram 接收通知 →", close: "關閉",
+    mkt: "同時接收賽事與活動資訊（廣告）（選填）",
+    mktNote: "僅在你同意後傳送，且只在你當地時間白天（08:00–21:00）傳送。隨時可在這裡關閉。",
+    mktOn: "✓ {d} 已同意接收", mktOff: "✓ {d} 已撤回同意",
   },
   fr: {
     title: "✈️ Alertes Telegram", sub: "Lie Telegram pour y recevoir les alertes de ton compte, comme les gains d'événements (bientôt).",
@@ -94,6 +120,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Lié", blocked: "Le bot est bloqué, les alertes ne peuvent pas t'arriver. Débloque-le dans Telegram pour les recevoir à nouveau.",
     disconnect: "Délier", confirm: "Délier Telegram ?", error: "Impossible pour le moment. Réessaie dans un instant.",
     loginToLink: "Connecte-toi pour lier →", banner: "✈️ Lie Telegram pour recevoir les alertes →", close: "Fermer",
+    mkt: "Recevoir aussi les actus tournois et événements (publicité) — facultatif",
+    mktNote: "Seulement si tu acceptes, et seulement en journée à ton heure locale (08:00–21:00). Tu peux le désactiver ici à tout moment.",
+    mktOn: "✓ Accepté le {d}", mktOff: "✓ Retiré le {d}",
   },
   id: {
     title: "✈️ Notifikasi Telegram", sub: "Tautkan Telegram untuk menerima notifikasi akun, seperti kemenangan event, di Telegram (segera hadir).",
@@ -102,6 +131,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Tertaut", blocked: "Bot sedang diblokir, jadi notifikasi tidak sampai. Buka blokirnya di Telegram agar notifikasi masuk lagi.",
     disconnect: "Lepas tautan", confirm: "Lepas tautan Telegram?", error: "Belum bisa diproses sekarang. Coba lagi sebentar lagi.",
     loginToLink: "Masuk untuk menautkan →", banner: "✈️ Tautkan Telegram untuk dapat notifikasi →", close: "Tutup",
+    mkt: "Terima juga kabar turnamen & event (iklan) — opsional",
+    mktNote: "Hanya jika kamu setuju, dan hanya siang hari waktu setempatmu (08.00–21.00). Bisa dimatikan di sini kapan saja.",
+    mktOn: "✓ Disetujui pada {d}", mktOff: "✓ Ditarik pada {d}",
   },
   ms: {
     title: "✈️ Pemberitahuan Telegram", sub: "Pautkan Telegram untuk menerima pemberitahuan akaun, seperti kemenangan acara, di Telegram (akan datang).",
@@ -110,6 +142,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Dipautkan", blocked: "Bot disekat, jadi pemberitahuan tidak sampai. Nyahsekat dalam Telegram untuk menerimanya semula.",
     disconnect: "Nyahpaut", confirm: "Nyahpaut Telegram?", error: "Tidak dapat diproses sekarang. Cuba lagi sebentar nanti.",
     loginToLink: "Log masuk untuk memautkan →", banner: "✈️ Pautkan Telegram untuk terima pemberitahuan →", close: "Tutup",
+    mkt: "Terima juga berita kejohanan & acara (iklan) — pilihan",
+    mktNote: "Hanya jika anda bersetuju, dan hanya pada waktu siang mengikut waktu tempatan anda (08:00–21:00). Boleh dimatikan di sini bila-bila masa.",
+    mktOn: "✓ Dipersetujui pada {d}", mktOff: "✓ Ditarik balik pada {d}",
   },
   hi: {
     title: "✈️ Telegram सूचनाएँ", sub: "Telegram जोड़ने पर इवेंट जीत जैसी अकाउंट सूचनाएँ Telegram में मिल सकेंगी (जल्द)।",
@@ -118,6 +153,9 @@ const LABELS: Record<string, Labels> = {
     linked: "जुड़ा हुआ", blocked: "बॉट ब्लॉक है, इसलिए सूचनाएँ नहीं पहुँचतीं। Telegram में अनब्लॉक करें तो फिर से मिलेंगी।",
     disconnect: "कनेक्शन हटाएँ", confirm: "Telegram कनेक्शन हटाएँ?", error: "अभी यह नहीं हो पाया। थोड़ी देर बाद फिर कोशिश करें।",
     loginToLink: "जोड़ने के लिए लॉग इन करें →", banner: "✈️ Telegram जोड़ें और सूचनाएँ पाएँ →", close: "बंद करें",
+    mkt: "टूर्नामेंट और इवेंट की खबरें (विज्ञापन) भी पाएँ — वैकल्पिक",
+    mktNote: "सिर्फ़ आपकी सहमति होने पर, और सिर्फ़ आपके स्थानीय समय में दिन के दौरान (08:00–21:00) भेजी जाएँगी। इसे कभी भी यहाँ बंद कर सकते हैं।",
+    mktOn: "✓ {d} को सहमति दी गई", mktOff: "✓ {d} को सहमति वापस ली गई",
   },
   vi: {
     title: "✈️ Thông báo Telegram", sub: "Liên kết Telegram để nhận thông báo tài khoản, như trúng thưởng sự kiện, trên Telegram (sắp ra mắt).",
@@ -126,6 +164,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Đã liên kết", blocked: "Bot đang bị chặn nên thông báo không đến được. Bỏ chặn trong Telegram để nhận lại.",
     disconnect: "Hủy liên kết", confirm: "Hủy liên kết Telegram?", error: "Chưa xử lý được lúc này. Hãy thử lại sau ít phút.",
     loginToLink: "Đăng nhập để liên kết →", banner: "✈️ Liên kết Telegram để nhận thông báo →", close: "Đóng",
+    mkt: "Nhận thêm tin giải đấu & sự kiện (quảng cáo) — không bắt buộc",
+    mktNote: "Chỉ gửi khi bạn đồng ý, và chỉ vào ban ngày theo giờ địa phương của bạn (08:00–21:00). Có thể tắt tại đây bất cứ lúc nào.",
+    mktOn: "✓ Đã đồng ý ngày {d}", mktOff: "✓ Đã rút đồng ý ngày {d}",
   },
   tr: {
     title: "✈️ Telegram bildirimleri", sub: "Telegram'ı bağlarsan etkinlik kazancı gibi hesap bildirimlerini Telegram'dan alabileceksin (yakında).",
@@ -134,6 +175,9 @@ const LABELS: Record<string, Labels> = {
     linked: "Bağlı", blocked: "Bot engellendiği için bildirimler ulaşmıyor. Telegram'da engeli kaldırırsan yeniden alırsın.",
     disconnect: "Bağlantıyı kaldır", confirm: "Telegram bağlantısı kaldırılsın mı?", error: "Şu an yapılamadı. Biraz sonra tekrar dene.",
     loginToLink: "Bağlamak için giriş yap →", banner: "✈️ Telegram'ı bağla, bildirim al →", close: "Kapat",
+    mkt: "Turnuva ve etkinlik haberlerini (reklam) de al — isteğe bağlı",
+    mktNote: "Yalnızca onay verirsen ve yalnızca yerel saatinle gündüz (08.00–21.00) gönderilir. İstediğin zaman buradan kapatabilirsin.",
+    mktOn: "✓ {d} tarihinde onaylandı", mktOff: "✓ {d} tarihinde onay geri alındı",
   },
   ar: {
     title: "✈️ إشعارات Telegram", sub: "اربط Telegram لتتمكن من تلقي إشعارات الحساب، مثل الفوز في الفعاليات، على Telegram (قريبًا).",
@@ -142,6 +186,9 @@ const LABELS: Record<string, Labels> = {
     linked: "مرتبط", blocked: "البوت محظور، لذا لا تصلك الإشعارات. ألغِ الحظر في Telegram لتصلك مجددًا.",
     disconnect: "إلغاء الربط", confirm: "هل تريد إلغاء ربط Telegram؟", error: "تعذّر ذلك الآن. حاول مرة أخرى بعد قليل.",
     loginToLink: "سجّل الدخول للربط ←", banner: "✈️ اربط Telegram لتصلك الإشعارات ←", close: "إغلاق",
+    mkt: "تلقَّ أيضًا أخبار البطولات والفعاليات (إعلانات) — اختياري",
+    mktNote: "نرسلها فقط إذا وافقت، وفقط نهارًا بحسب توقيتك المحلي (08:00–21:00). يمكنك إيقافها من هنا في أي وقت.",
+    mktOn: "✓ تمت الموافقة في {d}", mktOff: "✓ سُحبت الموافقة في {d}",
   },
   ru: {
     title: "✈️ Уведомления в Telegram", sub: "Привяжи Telegram, чтобы получать там уведомления по аккаунту, например о выигрышах в событиях (скоро).",
@@ -150,10 +197,13 @@ const LABELS: Record<string, Labels> = {
     linked: "Привязан", blocked: "Бот заблокирован, поэтому уведомления не доходят. Разблокируй его в Telegram, чтобы снова их получать.",
     disconnect: "Отвязать", confirm: "Отвязать Telegram?", error: "Сейчас не получилось. Попробуй ещё раз чуть позже.",
     loginToLink: "Войди, чтобы привязать →", banner: "✈️ Привяжи Telegram и получай уведомления →", close: "Закрыть",
+    mkt: "Получать также новости турниров и событий (реклама) — по желанию",
+    mktNote: "Только с твоего согласия и только днём по твоему местному времени (08:00–21:00). Отключить можно здесь в любой момент.",
+    mktOn: "✓ Согласие дано {d}", mktOff: "✓ Согласие отозвано {d}",
   },
 };
 
-type Status = { linked: boolean; username: string | null; blocked: boolean };
+type Status = { linked: boolean; username: string | null; blocked: boolean; marketing: boolean; marketingAt: string | null };
 /** out = 로그인 안 함 · off = 서버 표·env 문제(전부 숨김) · in = 로그인 회원 */
 type Fetched = { kind: "out" } | { kind: "off" } | { kind: "in"; s: Status };
 
@@ -167,7 +217,7 @@ async function readStatus(): Promise<Fetched> {
     if (res.status === 401) return { kind: "out" };
     const j = await res.json();
     if (!j.ok) return { kind: "off" };
-    return { kind: "in", s: { linked: !!j.linked, username: j.username ?? null, blocked: !!j.blocked } };
+    return { kind: "in", s: { linked: !!j.linked, username: j.username ?? null, blocked: !!j.blocked, marketing: !!j.marketing, marketingAt: j.marketingAt ?? null } };
   } catch {
     return { kind: "off" };
   }
@@ -200,8 +250,10 @@ function useTelegramStatus(): Fetched | null {
 const FONT = "var(--font-inter),sans-serif";
 
 /** 연결 흐름(버튼 → 링크 → 연결됨/해제) — 프로필 카드와 사이드바 카드가 같이 쓴다 */
-function ConnectBody({ L, status }: { L: Labels; status: Status }) {
+function ConnectBody({ L, status, locale }: { L: Labels; status: Status; locale: string }) {
   const [busy, setBusy] = useState(false);
+  // 처리결과(동의·철회 사실과 날짜) — 봇 DM과 같은 내용을 화면에도 남긴다
+  const [mktResult, setMktResult] = useState<string | null>(null);
   const [url, setUrl] = useState<string | null>(null);
   const [err, setErr] = useState(false);
 
@@ -234,10 +286,35 @@ function ConnectBody({ L, status }: { L: Labels; status: Status }) {
     setBusy(true);
     setErr(false);
     try {
-      const res = await fetch("/api/telegram/link", { method: "DELETE" });
+      const res = await fetch(`/api/telegram/link?locale=${encodeURIComponent(locale)}`, { method: "DELETE" });
       const j = await res.json();
       if (j.ok) await refreshStatus();
       else setErr(true);
+    } catch {
+      setErr(true);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function setMarketing(want: boolean) {
+    if (busy) return;
+    setBusy(true);
+    setErr(false);
+    setMktResult(null);
+    let tz: string | undefined;
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch { tz = undefined; }
+    try {
+      const res = await fetch("/api/telegram/link", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ marketing: want, tz, locale }),
+      });
+      const j = await res.json();
+      if (j.ok) {
+        if (j.date) setMktResult((want ? L.mktOn : L.mktOff).replace("{d}", j.date));
+        await refreshStatus();
+      } else setErr(true);
     } catch {
       setErr(true);
     } finally {
@@ -258,6 +335,19 @@ function ConnectBody({ L, status }: { L: Labels; status: Status }) {
             </button>
           </div>
           {status.blocked && <p className="text-xs break-keep" style={{ color: RED, fontFamily: FONT }}>{L.blocked}</p>}
+          {/* ⑥ 기본값 꺼짐 · 연결 상태와 따로 켜고 끈다 · 바뀌면 봇이 처리결과 DM */}
+          <div className="pt-2" style={{ borderTop: `1px solid ${BORDER}` }}>
+            <label className="flex items-start gap-2 min-h-11 cursor-pointer">
+              <input type="checkbox" checked={status.marketing} disabled={busy} onChange={(e) => setMarketing(e.target.checked)} className="mt-1 h-4 w-4 shrink-0" style={{ accentColor: "#1673B1" }} />
+              <span className="text-sm break-keep" style={{ color: INK, fontFamily: FONT }}>{L.mkt}</span>
+            </label>
+            <p className="text-xs break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.mktNote}</p>
+            {(mktResult || (status.marketing && status.marketingAt)) && (
+              <p role="status" className="mt-1 text-xs" style={{ color: MUTED, fontFamily: FONT }}>
+                {mktResult ?? L.mktOn.replace("{d}", status.marketingAt!)}
+              </p>
+            )}
+          </div>
         </div>
       ) : url ? (
         <div className="space-y-2">
@@ -289,7 +379,7 @@ export default function TelegramConnect({ locale }: { locale: string }) {
     <section className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }} aria-labelledby="tg-connect-title">
       <h3 id="tg-connect-title" className="text-sm font-semibold mb-1" style={{ color: INK, fontFamily: FONT }}>{L.title}</h3>
       <p className="text-xs mb-3 break-keep" style={{ color: MUTED, fontFamily: FONT }}>{L.sub}</p>
-      <ConnectBody L={L} status={f.s} />
+      <ConnectBody L={L} status={f.s} locale={locale} />
     </section>
   );
 }
@@ -311,7 +401,7 @@ export function TelegramPromo({ locale, base }: { locale: string; base: string }
           {L.loginToLink}
         </a>
       ) : (
-        <ConnectBody L={L} status={f.s} />
+        <ConnectBody L={L} status={f.s} locale={locale} />
       )}
     </section>
   );
