@@ -32,6 +32,7 @@ import { loginHref } from "@/lib/auth-navigation";
 import MobileHomeNavigation from "./mobile-home-navigation";
 import EventStatus, { EventStatusBadge } from "./event-status";
 import MyRecords, { myRecordsLabels } from "./my-records";
+import TelegramConnect from "./telegram-connect";
 
 export type { FeedPost } from "./post-card";
 
@@ -1195,6 +1196,8 @@ export default function CommunityClient({
                 </div>
                 {/* «내 기록» 카드 3장 — 프로필 카드 아래 · «내 글» 위(설계 §2-1 · 회차 D) */}
                 <MyRecords userId={currentUser.id} locale={pageLocale ?? myLanguage} />
+                {/* 텔레그램 알림 연결 — 2026-10-16 ⑤ (docs/telegram-login-plan.md) */}
+                <TelegramConnect locale={pageLocale ?? myLanguage} />
                 <p className="text-[11px] font-bold tracking-widest uppercase px-1 pt-1" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.myPostsSection}</p>
                 {myPosts.length === 0
                   ? <EmptyState icon="✍️" title={L.noPostsTitle} sub={L.noPostsSub} />

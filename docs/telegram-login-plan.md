@@ -1,7 +1,7 @@
 # 텔레그램 로그인 — 계획표 (2026-10-13 작성 · 승인 대기)
 
 > 목적: 가입자의 텔레그램 ID 확보 → 봇 1:1 메시지 · 단톡방/채널 초대 링크 발송.
-> 상태: **계획만. 사장님 승인 전 구현 착수 금지.**
+> 상태: ①~④ 완료 · ⑤ 코드 배포(10-16) → 사장님 setWebhook + 라이브 시험 대기 · ⑥⑦ 미착수.
 
 ## 0. 사양 확인 결과 (공식 문서 원문 · 10-13 열람)
 
@@ -48,6 +48,13 @@ Supabase 커스텀 OIDC 공급자로 붙이면 **Google·카카오와 같은 `si
 - 🔴 «kicked» 상태 이름은 원문 미열람(API 문서 10만 자 뒤) → ⑤ 실측(봇 차단·해제 1회)으로 확인.
 - 🪶 스코프 `telegram:bot_access`는 Start 방식에선 불필요 — 지워도 되는지는 ⑤ 뒤 판단(동의 화면 문구가 줄어듦).
 - **사장님 몫(⑤ 전 선행)**: ① 이 SQL을 SQL Editor에서 RUN + 파일 끝 확인 3줄 ② Vercel env `TELEGRAM_BOT_TOKEN`·`TELEGRAM_WEBHOOK_SECRET`(A-Z a-z 0-9 _ - 1~256자 · 제가 만들어 드릴 수 있음) ③ 배포 뒤 브라우저 주소창으로 `setWebhook` 1회(토큰이 대화에 안 나오게 — 주소 틀은 ⑤에서 드림).
+
+### ⑤ 구현 (10-16 · 코드 배포 · 라이브 연결 시험은 setWebhook 뒤)
+- 서버: `lib/telegram-bot.ts`(토큰·해시·시크릿 상수 시간 비교·Bot API 호출·봇 문구 16언어·FAQ 키보드) · `app/api/telegram/link/route.ts`(GET 상태 · POST 1회용 링크 · DELETE 연결 해제 — 쿠키 로그인 · 쓰기는 같은 출처만) · `app/api/telegram/webhook/route.ts`(시크릿 헤더 · private만 · `/start <토큰>` → rpc · `my_chat_member` kicked/member → `bot_blocked_at` · 발송 403 → 차단 표시 · 처리 실패도 200).
+- UI: `/login` «텔레그램으로 계속하기» 전 로케일(`custom:telegram` · 색 #1673B1 = 흰 글씨 대비 5.1) · 커뮤니티 프로필 탭 «✈️ 텔레그램 알림» 카드(`app/community/telegram-connect.tsx` · «내 기록» 아래 · 링크는 자동으로 안 열고 버튼 · 창 포커스 때 상태 다시 읽기 · 서버 오류면 카드 숨김).
+- 봇 버튼 FAQ 4 + 사이트 열기: 이 봇은 뭐예요 · 계정 연결 방법 · 알림 끄기 · 문의하기(커뮤니티 + `holdemmaster.kr@gmail.com`) · 버튼 밖 메시지 = «커뮤니티에 남겨 주세요». 문구 언어 = `from.language_code`. «텔레그램 연결»·«연결 해제»·탭 이름(«프로필» · fr·hi·ar·ru는 탭이 EN 폴백이라 «Profile»)은 카드·탭과 축어 일치. 봇 «START» 버튼은 텔레그램 앱 언어마다 번역이 달라 원문 미확인 → 전 언어 «START»로 표기.
+- 로컬 시험: 단위(로케일 사상 9 · 토큰 43자 · 시크릿 · callback_data ≤64바이트 · 문구 ≤4096) ✅ · 라우트 401/403/200 경로 11 ✅ · 로그인 화면 KO·AR·EN 데스크톱 캡처 ✅. DB 쓰기 시험은 안 함(service role 조회는 사장님 허락 사안) → 라이브에서 사장님 1회 시험으로.
+- ▶ 남은 것: 사장님 setWebhook 1회 → 라이브 시험(연결 → 봇 «연결됐어요» → 프로필 «연결됨 @아이디» → 봇 차단·해제로 `kicked` 실측 → 연결 해제) → ⑥ 수신 동의(U3) · ⑦ 발송.
 
 ### 채널 (10-15 사장님 결정)
 - 메인 공개 채널 = **`@HoldemMasterOfficial`**(t.me/HoldemMasterOfficial). 역할 = 퍼뜨리기(새 글·대회·이벤트·퀴즈 투표) → 글마다 «봇 연결» 버튼으로 명단(봇)에 넘긴다. 구독자 명단은 우리 자산이 아니다.

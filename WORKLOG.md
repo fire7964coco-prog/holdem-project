@@ -1,3 +1,10 @@
+## 2026-10-16 (4) — 텔레그램 ⑤ 코드: 연결 라우트·웹훅·로그인 버튼·프로필 카드·버튼 FAQ · MB-353
+
+- 서버: `lib/telegram-bot.ts` · `/api/telegram/link`(GET 상태·POST 1회용 링크 15분·DELETE 해제 · 쓰기는 같은 출처만) · `/api/telegram/webhook`(시크릿 헤더 상수 시간 · private만 · `/start <토큰>` → `telegram_link_consume` · kicked/member → `bot_blocked_at` · 실패도 200).
+- UI: `/login` 텔레그램 버튼 전 로케일(`custom:telegram` · #1673B1 대비 5.1 — 브랜드색 #2AABEE는 2.57이라 버림) · 프로필 탭 «✈️ 텔레그램 알림» 카드(«내 기록» 아래). 문구 16언어(봇·카드·로그인 라벨) · 카드↔봇 낱말 축어 일치.
+- 시험: 단위 ✅ · 로컬 라우트 11경로(401·403·200) ✅ · 로그인 KO·AR·EN 캡처 ✅ · build 74 posts ✅. 제가 띄운 dev(3917) 종료.
+- DB 쓰기·실제 봇 발송은 미시험 → 사장님 setWebhook 뒤 라이브 1회. 기록 = `docs/telegram-login-plan.md` «⑤ 구현».
+
 ## 2026-10-16 (3) — R4 Supabase 주소 교체 + 텔레그램 ⑤ 선행(SQL·env)
 
 - 사전 점검: 옛 주소·`auth.holdemmaster.com` 둘 다 auth 200 · rest 200 · storage 동일 응답 · realtime 101. 쿠키 이름 고정(`2934a44a`)이라 로그아웃 없음.

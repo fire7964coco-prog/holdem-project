@@ -23,12 +23,13 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [nickname, setNickname] = useState("");
   const [loading, setLoading] = useState(false);
-  const [socialLoading, setSocialLoading] = useState<"google" | "kakao" | null>(null);
+  const [socialLoading, setSocialLoading] = useState<"google" | "kakao" | "custom:telegram" | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const busy = loading || !!socialLoading;
   // 비-KO = Google + 이메일(사장님 10-14 · 10-13 «Google 하나»를 되돌림 — 커스텀 SMTP(Resend)와 16언어 메일 템플릿이 생겨서).
   // 카카오는 국내 계정이라 KO만.
+  // 텔레그램(10-16 ⑤) = 전 로케일. Supabase 커스텀 OIDC 공급자 custom:telegram(이메일 없이 가입 · 스코프는 대시보드 설정).
 
   useEffect(() => {
     setSocialLoading(null);
@@ -49,7 +50,7 @@ function LoginForm() {
     router.refresh();
   }
 
-  async function handleSocialLogin(provider: "google" | "kakao") {
+  async function handleSocialLogin(provider: "google" | "kakao" | "custom:telegram") {
     if (busy) return;
     setSocialLoading(provider);
     setErr(null);
@@ -142,6 +143,10 @@ function LoginForm() {
             <svg width="18" height="18" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 36C70.562 36 24 72.713 24 118c0 29.28 19.466 54.97 48.748 69.477-1.593 5.494-10.237 35.34-10.581 37.681 0 0-.207 1.762.934 2.434 1.141.672 2.483.15 2.483.15 3.272-.457 37.943-24.811 43.944-29.04 6.031.849 12.226 1.298 18.472 1.298 57.438 0 104-36.712 104-82 0-45.287-46.562-82-104-82z"/></svg>
             {socialLoading === "kakao" ? t.connecting : t.kakao}
           </button>}
+          <button type="button" onClick={() => handleSocialLogin("custom:telegram")} disabled={busy} className="flex w-full items-center justify-center gap-3 rounded-lg py-3 text-sm font-semibold disabled:opacity-60" style={{ background: "#1673B1", color: "#FFFFFF" }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.94 4.3 18.7 19.6c-.24 1.08-.88 1.35-1.79.84l-4.94-3.64-2.38 2.29c-.26.26-.49.49-1 .49l.36-5.03 9.15-8.27c.4-.36-.09-.55-.62-.2L6.17 13.2l-4.87-1.52c-1.06-.33-1.08-1.06.22-1.57L20.55 2.8c.88-.33 1.65.2 1.39 1.5z"/></svg>
+            {socialLoading === "custom:telegram" ? t.connecting : t.telegram}
+          </button>
         </div>
         <div className="mb-5 flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border"/><span>{t.orEmail}</span><span className="h-px flex-1 bg-border"/></div>
       </>}
