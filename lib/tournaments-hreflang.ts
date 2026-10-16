@@ -14,7 +14,7 @@ import { SITE } from "./site";
  *    거기 `TOURNAMENT_LOCALES`도 함께 갱신할 것.
  */
 // ★2026-10-16 it 도구 회차
-export const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it"] as const;
+export const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it", "pl"] as const;
 
 export const TOURNAMENT_HREFLANG: Record<string, string> = {
   ko: `${SITE}/tournaments`,

@@ -438,7 +438,7 @@ const siteToday = todayIso();
  * ★ app/<locale>/tournaments/page.tsx 를 만들기 전에 여기 먼저 넣으면 사이트맵이 404를 가리킨다.
  */
 // ★2026-10-16 it 도구 회차
-const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it"];
+const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it", "pl"];
 
 const tournamentAlts = [
   { hreflang: "ko", href: `${SITE}/tournaments` },

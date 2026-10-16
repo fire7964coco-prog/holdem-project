@@ -93,6 +93,7 @@ export const HUB_PAGES = [
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
   // ★2026-10-16 it 도구 회차
   pl: [
+    { href: "/pl/tournaments", icon: "🏆", label: "Turnieje pokerowe" },
     { href: "/pl/win-rate-quiz", icon: "📈", label: "Quiz poker" },
   ],
   it: [
