@@ -91,7 +91,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in high cards, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-en.webp",
@@ -286,7 +286,7 @@ The 9.6% is built by mixing a little value with a few draws. Eight-eight tops th
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Connected Low Board, Two-Tone" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Connected Low Board, Two-Tone" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Puzzle history across devices.
 
 **Click back and forth with "King-High with a Ten"**, the previous spot. The player labels read "OOP (SB (Opener))" on both, the pot and stack are identical — and the matrix flips colour completely. It is the shortest demonstration in this series of what a board actually does. Free, no install, no account.
 

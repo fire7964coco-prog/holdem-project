@@ -70,7 +70,7 @@ export const POST: Post = {
   tldr: "After a big blind three-bet and a button call, the flop 8♦5♣2♠ gets a two-thirds-pot bet 97.8% of the time. The odd part: of the big blind's 83 combos, exactly three paired this board — the A5s — and none of 88, 55 or 22 is in the range at all. The bet goes anyway because the range splits into 36 combos of overpairs and 40 combos of ace-high with almost nothing in between — only the three A5s. A polarized shape bets big.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   readTime: "10 min",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-en.webp",
@@ -222,7 +222,7 @@ The reason is where the sets live. **The button is the only player who can hold 
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Low Dry Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Low Dry Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Puzzle history across devices.
 
 Look for the **missing "Set/Trips" row** in the hand panel. Then switch the player to IP (BTN) and it appears at 6.3%. That one line is the whole story of who holds the top of this board. Free, no install, no account.
 

@@ -101,7 +101,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the A♠A♥6♦ flop gets a bet 80.1% of the time (79.6% at a third of the pot, 0.5% at three quarters, check 19.8%). That is the reverse of the 3.0% seen on the 6♣6♦3♥ paired board — and what split them is less that the board paired than which card paired and whose range it fits (the seats and ranges changed along with the board). Hands making trips with an ace run 88 combos to 66, and 16 of those combos, A-K and A-Q, are absent from the calling range entirely.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   readTime: "10 min",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-en.webp",
@@ -265,7 +265,7 @@ The reason lies in **who calls you.** K-K makes two pair with the board's aces, 
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Ace-Paired Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Ace-Paired Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Puzzle history across devices.
 
 **Click back and forth with the 6-6-3 paired board.** Both are paired boards and the matrices are opposite colours. Work through the study spots once and one conclusion is left: look first not at **what board it is** but at **whose range this board attaches to**. Free, no install, no account.
 

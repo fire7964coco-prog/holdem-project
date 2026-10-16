@@ -1336,8 +1336,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CJ-4 zh (MA-574 ④) | monotone seoTitle «同花已经成了还是 69.9%» — 69.9%는 넛 플러시 값 | ✅ «坚果同花也有 69.9% 在过牌» · MB-352 |
 | CJ-5 zh (MA-574 ⑤) | monotone L189 «打三条街» big 탈락 | ✅ «连下三条街的大注» · MB-352 |
 | CJ-6 ja (MA-575 ①) | low-board-check-raise 직답 «使い切るグループ» 전량 소진 명제 | ✅ «実際にレイズへ回しているのもこのグループ» · MB-352 |
-| CJ-7 남김 zh (MA-574 통지) | paired L270 «每一场都会碰上几次» · low-board L116·L258 «等级面板»(앱 «手牌») · paired L129 «明三条（一张 6）» | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때 |
-| CJ-8 남김 ja (MA-575 통지) | ⓐ «EV損失(bb)» 4자리 ↔ 앱 «EVロス» ⓑ «今日の問題» ↔ 앱 «今日のGTO問題»(EN «Daily Challenge»↔앱 «Daily Puzzle» = EN-먼저) ⓒ ace-paired L91 EN 앱 문자열 ↔ ja 앱 · 참고 a-high L92 최상급 | 🪶 앱 축어 정렬 회차 때(ⓑ는 EN부터) |
+| CJ-7 남김 zh (MA-574 통지) | paired L270 «每一场都会碰上几次» · low-board L116·L258 «等级面板»(앱 «手牌») · paired L129 «明三条（一张 6）» | ✅ 10-16 (11) MB-359 — «手牌面板» 2 · 표 «暗三条/明三条（一张 6）» · «每一场都会碰上» |
+| CJ-8 남김 ja (MA-575 통지) | ⓐ «EV損失(bb)» 4자리 ↔ 앱 «EVロス» ⓑ «今日の問題» ↔ 앱 «今日のGTO問題»(EN «Daily Challenge»↔앱 «Daily Puzzle» = EN-먼저) ⓒ ace-paired L91 EN 앱 문자열 ↔ ja 앱 · 참고 a-high L92 최상급 | ✅ 10-16 (11) MB-359 — ⓐ «EVロス(bb)» 4 · ⓑ EN «Daily Puzzle» 먼저 → ja «今日のGTO問題»(글 4+/solver 6씩) · ⓒ «ベット 4.5bb (75% ポット)» · a-high 최상급 삭제 |
 
 ### 2-CK. 우편함 수신분 — MA-577(MB-349 ar RTL · RISKY 2) · MA-578(MB-350 rules R2 · RISKY 1 · 미전파 1) · MA-579(zh-hant GTO · W2 R2 미전파 1) · MA-580(id GTO · W1) · MA-581(de GTO · W1) · MA-582(MB-351 시뮬레이터 R3 · RISKY 2) · 등재·회신·이행 2026-10-16 (7)
 
@@ -1360,7 +1360,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CK-13 id (MA-580 ①) | blind-battle-connected L184 «berselisih 0,03bb» 상한 탈락 | ✅ «tidak lebih dari 0,03bb» · MB-355 |
 | CK-14 de (MA-581 ①) | monotone L155 «in beiden auftauchen» | ✅ «entweder in der einen oder in der anderen Zeile» + EN 머리 주석 L29(배타) · MB-355 |
 | CK-15 (MA-582 ①②) | 시뮬레이터 L1244 두 번째 레이즈형 «Raise»(같은 금액) · L1245 벳 앞 순서 «Call» ↔ 규칙 «체크 뒤 응수 없음» | ✅ 벳 좌석 외 남은 좌석 전부 «Call» + 규칙 설명 16로케일에 «좌석 라벨 = 스트리트 요약(금액 정한 좌석 Bet · 나머지 순서 무관 Call)» 한 문장(각 파일 라벨 축어) · MB-355 |
-| CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때(CJ-7·8과 함께) |
+| CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | 🪶 사실 라벨 OK · 앱 축어 정렬 회차 때(CJ-7·8은 MB-359로 끝 · 다른 로케일 «Daily» 기능명도 여기) |
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)

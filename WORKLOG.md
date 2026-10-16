@@ -1,3 +1,11 @@
+## 2026-10-16 (11) — 앱 축어 정렬 CJ-7·8(zh·ja + EN-먼저 Daily Puzzle) · MB-359
+
+- 근거 = 솔버 소스 라벨(HandBreakdown·hand-categories·TrainerPage·GuidePage·ActionSummary·ResultChance). 치환은 .mjs로 자리 수를 미리 정해 두고 어긋나면 중단.
+- zh: low-board «等级面板»→«手牌面板» 2 · paired 표 «暗三条/明三条（一张 6）» · «每一场都会碰上几次»→«每一场都会碰上».
+- ja: «EV損失(bb)»→«EVロス(bb)» 4 · «今日の問題»→«今日のGTO問題» 4편+/ja/solver 6 · ace-paired L91 벳 라벨 ja 앱 꼴 · a-high L92 최상급 삭제.
+- EN-먼저: «Daily Challenge»→«Daily Puzzle»(앱 축어) 4편+/en/solver 6.
+- updated 10-16 글 11 · ja 4편 masterUpdated 10-16. audit:hard 7 slug 🔴 0 · 카드·수치 무변경(§13 대상 아님). 남김 = queue §2-CK CK-16(zh-hant·id·de 앱 축어 · 다른 로케일 Daily 기능명).
+
 ## 2026-10-16 (10) — MA-586·587 회신+이행(요청 7) · 텔레그램 문구 16로케일 · 시뮬레이터 규칙 설명 · /privacy Resend · MB-358
 
 - 텔레그램(`app/community/telegram-connect.tsx` · `lib/telegram-bot.ts`): banner 16 «미리 연결해 두기» · alreadyLinked 16 «할 일 없음» 단정 삭제 + 다른 계정이면 새 링크(SQL consume가 chat_id를 옮기는 것 확인) · linkFailed 16 이유 셋 · «soon» 11로케일 × sub·welcome·aWhat → «준비 중» · START pt «INICIAR/COMEÇAR» · ru «СТАРТ/Начать» · 띠 주석 위치 정정.

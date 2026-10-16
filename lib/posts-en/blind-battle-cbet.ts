@@ -93,7 +93,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the K♥T♦6♠ flop gets a bet 67.4% of the time and a check 32.6%. In the seven single-raised pots earlier in this series the out-of-position player bet only 0.1% to 23.7% — and two things changed, not one. Here the out-of-position player is the raiser rather than the caller, and the board favors that range. Together they push the out-of-position equity realization to 103.1%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-10-02",
+  updated: "2026-10-16",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-en.webp",
@@ -284,7 +284,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "King-High with a Ten" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "King-High with a Ten" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Puzzle history across devices.
 
 Look at the player labels across the top first: **"OOP (SB (Opener))"**. Once you see that it differs from the earlier spots' "OOP (BB (Caller))", what this article means by "the role changed" lands immediately. Free, no install, no account.
 

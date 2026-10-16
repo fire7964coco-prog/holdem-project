@@ -44,7 +44,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Is this GTO solver really free?",
-    a: "Yes. Every feature is free with no usage limits, no payment method, no locked tier and no account required. Signing in is optional and syncs your history for Study Spots and Daily Challenge across devices. Your own solved spots and their practice history stay on this device, even when signed in. The solver is built on the open-source engine WASM Postflop (AGPL-3.0), and HoldemMaster's modified source code is published under the same license.",
+    a: "Yes. Every feature is free with no usage limits, no payment method, no locked tier and no account required. Signing in is optional and syncs your history for Study Spots and Daily Puzzle across devices. Your own solved spots and their practice history stay on this device, even when signed in. The solver is built on the open-source engine WASM Postflop (AGPL-3.0), and HoldemMaster's modified source code is published under the same license.",
   },
   {
     q: "Do I need to download or install anything?",
@@ -108,7 +108,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Where is my study progress saved?",
-    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account, your history for Study Spots and Daily Challenge can sync across devices. The Daily Challenge day streak and completed mark stay on each device. Your own solved spots and their practice history stay on this device even when signed in; they are not saved to your account. Your saved ranges and bet settings lists are kept in your account when you sign in, so you can open them on another device. Streaks, weak-spot breakdowns by scenario, and the Review queue of spots where you lost EV use your practice history.",
+    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account, your history for Study Spots and Daily Puzzle can sync across devices. The Daily Puzzle day streak and completed mark stay on each device. Your own solved spots and their practice history stay on this device even when signed in; they are not saved to your account. Your saved ranges and bet settings lists are kept in your account when you sign in, so you can open them on another device. Streaks, weak-spot breakdowns by scenario, and the Review queue of spots where you lost EV use your practice history.",
   },
   {
     q: "Can I install it to my home screen?",
