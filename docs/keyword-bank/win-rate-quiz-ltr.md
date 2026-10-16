@@ -4,6 +4,18 @@
 > 도구 = DFS `keywords_data/google_ads/search_volume/live`(location만 · language 생략) + `serp/google/organic/live/regular`(mobile).
 > 원칙: 제목 머리 = «시뮬레이터» 축. «계산기·odds·probabilidade»류는 `/{locale}/calculator` 소유라 제목 머리에 쓰지 않는다.
 
+## it (Italy 2380 · 2026-10-16)
+
+| 키워드 | 볼륨 | 판정 |
+|---|--:|---|
+| **quiz poker** | **70** | 제목·H1·HubPage «Quiz poker» |
+| poker trainer | 70 | 훈련 의도 보조어 |
+| allenamento poker · esercizi poker | 각 10 | 설명·본문 |
+| simulatore poker | 110 | 계산기·게임 SERP 혼재 → 제목 머리 제외 |
+
+- 재측정 없음. 근거 = [it-tools.md](it-tools.md) §1·§2-C·§4 (DFS 2380 · it · 2026-10-16).
+- 제목 «Quiz poker: allena equity e decisioni» · equity 추정과 call/fold 연습 의도. «simulatore» 머리보다 이 회차 언어별 결정(§4)을 우선한다.
+
 ## pt (Brazil 2076 · 2026-10-13)
 
 | 키워드 | 볼륨 | 판정 |
