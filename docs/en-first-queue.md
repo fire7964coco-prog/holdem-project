@@ -1362,6 +1362,25 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CK-15 (MA-582 ①②) | 시뮬레이터 L1244 두 번째 레이즈형 «Raise»(같은 금액) · L1245 벳 앞 순서 «Call» ↔ 규칙 «체크 뒤 응수 없음» | ✅ 벳 좌석 외 남은 좌석 전부 «Call» + 규칙 설명 16로케일에 «좌석 라벨 = 스트리트 요약(금액 정한 좌석 Bet · 나머지 순서 무관 Call)» 한 문장(각 파일 라벨 축어) · MB-355 |
 | CK-16 남김 (MA-579·580·581·582 통지) | 앱 축어 차이 — zh-hant «每日題目»·«手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器» · id «(33% pot)» 12편 29줄 ↔ «dari pot» · de «Backdoor-Flushdraw»·«täglichen Aufgaben» · de low-board L115 «gejagt»(UNV) · 시뮬레이터 ruleText «pot-sized raise»(벳 없는 스트리트 = «bet or raise») · fr «?» 앞 NBSP | ✅ 10-16 (12) MB-360 — 바꿈: Daily 기능명(zh·zh-hant·es·de·hi 글 4+랜딩) · id «dari pot» 28 · de L115 · fr NBSP / 안 바꿈 근거: «手牌詳情表»·«局面»·«手牌面板»·«免費 GTO 解算器»·«Backdoor-Flushdraw» / ✅ 남김분 시뮬레이터 ruleText = 10-16 (13) MB-361(엔진 확인 · «bet or raise»꼴 16×4) |
 
+### 2-CL. 우편함 수신분 — MA-595(EN 원장 손질 배치 3 본부 재검증 · 요청 EN-먼저 8 · 통지 2) · 등재 2026-10-16 (19)
+
+근거 `홀덤검수/reports/검수-enfix-본부재검증-배치3-2026-10-16/HQ-REPORT.md`(«본체 몫» 표 = 동문 로케일 줄 번호) · 레인 `reports/검수-enfix-b·c-배치3-2026-10-16/REPORT.md`. 기준 본체 `8e59e961`. 검수장 문안 창작 없음 — 정정 방향만.
+
+| # | 자리 (EN) | 정정 방향 | 동문 | 처리 |
+|---|---|---|---|---|
+| CL-1 | 3bet L278 FAQ «the capped flat-caller» | 플랫 범위 상한 = 경향(트랩 플랫 예외) | 10 | ▶ EN 손질 회차 |
+| CL-2 | when-to-fold L71 «the only question is …» | 배타 기준 → 가격·블러프 빈도 포함(같은 글 L153과 맞춤) | 10 | ▶ |
+| CL-3 | when-to-fold L148 «If not, I'm holding a bluff-catcher» | «상대 블러프에는 이기는» 조건 추가(L153) | 10 | ▶ |
+| CL-4 | glossary L168 Fish «weak, losing recreational player» | recreational 요건 제거(fish 글 L38 umbrella) | 12(ar·tr 포함) | ▶ |
+| CL-5 | fish L206 «naming … exact type tells you precisely how to beat them» | L69 «working read» 한정 | 10 | ▶ |
+| CL-6 | fish L128 표 머리 «VPIP (hands played) · PFR (hands raised)» | 프리플랍 한정(VPIP = 자발 투입 · glossary L289) | 8(de·es·fr·id·ja·ms·pt·vi · zh-hant 이미 한정) | ▶ |
+| CL-7 | rake L190 «a straddle that bloats the pot also quietly feeds the rake» | 캡 미도달·no flop no drop·타임차지 한정(같은 글 L164 · straddle L127) | 10 | ▶ |
+| CL-8 | rake L205 관련 글 카드 «— and the rake» | CL-7과 같음 | 9 | ▶ |
+| CL-ⓐ 통지 | c-bet 솔버 표 재현 11행 OK · 재현 안 되는 칸 3 + A♣9♣2♣ 28.5 | 핸드 단위 집계 산출물 커밋 시 재판정(MA-590 ⓑ 종결) | — | 🪶 요청 아님 |
+| CL-ⓑ 통지 | 레인 RISKY 철회 4(position-play L277 · when-to-fold L179 · fish L195 · straddle L189) | 본체 몫 없음 | — | 종결 |
+
+- 회차 = **EN 8자리 먼저 → 동문 로케일 전파**(합계 약 79자리). 한 회차 = 한 배치 — 도구 확장(pl ②)과 섞지 않는다. 사장님이 순서를 정한다.
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

@@ -1,3 +1,10 @@
+## 2026-10-16 (19) — 도구 전 언어 확장 pl ① 서치(용어 + 도구 검색어) · MA-595 회신+등재 MB-366 · 레인 astra 축소
+
+- pl ①: GPT sol(effort medium · 워크트리 `Holdem-gpt-pl`)이 `translation-terms-pl.md` «도구·앱 UI 낱말» 절 작성 `c9ed8d40`(236항목 · it 표 순서 승계 · 미확인 78 · 쟁점 7: raise podbicie/przebicie 구분 · 기존 «vskrycie» 오타 후보 등 · 기존 절 무수정) → main ff 머지 · 워크트리·브랜치 삭제. Claude = DataForSEO(2616·pl) 60어 · SERP 6 · 자동완성 2 → `docs/keyword-bank/pl-tools.md`.
+- 판독: 폴란드어 웹 계산기 SERP에 폴란드어 페이지 0(it과 반대 · 빈자리) · 차트 폴란드어구 볼륨 미측정(자동완성 «ręce startowe poker») · «turnieje pokerowe» = 국내 일정 의도(polishpokerseries) → «Polska» 머리 금지 · «poker simulator» = 게임 의도.
+- 사장님 지시 2: ① 레인 안 astra ultra 전면 검수 폐지(pl ②부터) — 검수 폴더가 Opus+astra ultra 교차하므로 레인은 기계 게이트 + 새 §13 문장만 astra(계획 §4 표 · 메모리) ② 도구 서치 중 글에 쓸 정보도 키워드 뱅크에 남긴다 → pl-tools §5 «글 몫 발견»(족보 układy pokerowe 12.100 · pl 족보 글 없음 = 1순위 후보).
+- MA-595(EN 원장 배치 3 · 요청 EN-먼저 8 · 통지 2) = 전부 수용 · queue §2-CL 등재 · MB-366(이행은 별도 EN 손질 회차 — 이번 배치 = pl ①).
+
 ## 2026-10-16 (18) — MA-591·592·593 회신+이행 · MB-365
 
 - MA-591: es 4편 «pérdida de EV (bb)» · hi 4편 «EV नुकसान (bb)»(앱 GuidePage 축어).
