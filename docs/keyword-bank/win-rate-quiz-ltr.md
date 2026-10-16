@@ -4,6 +4,19 @@
 > 도구 = DFS `keywords_data/google_ads/search_volume/live`(location만 · language 생략) + `serp/google/organic/live/regular`(mobile).
 > 원칙: 제목 머리 = «시뮬레이터» 축. «계산기·odds·probabilidade»류는 `/{locale}/calculator` 소유라 제목 머리에 쓰지 않는다.
 
+## pl (Poland 2616 · 2026-10-16)
+
+| Keyword | Volume | Decision |
+|---|--:|---|
+| **quiz poker** | **10** | Title, H1 and HubPage: Quiz poker |
+| poker trainer | 50 | Supporting training intent |
+| symulator pokera | 20 | Not the head term |
+| poker simulator | 260 | Game intent dominates; excluded from the head |
+
+- Reuses [pl-tools.md](pl-tools.md) §1, §2-E and §4; no new measurement.
+- Title: «Quiz poker: trenuj equity i decyzje». Description starts with «Trening pokerowy» and explicitly limits the pot-odds explanation to the flop onward.
+- No Polish pot-odds or position guide exists. Footer links only to the calculator supplied by Lane A; no EN post fallback and no /pl/solver link.
+
 ## it (Italy 2380 · 2026-10-16)
 
 | 키워드 | 볼륨 | 판정 |

@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
  *   그 전까지는 ko·en 두 페이지가 각자 2줄짜리 세트를 직접 적고 있었다.
  * ★x-default = 영어판(계산기 세트와 같은 판단).
  */
-export const WIN_RATE_QUIZ_LOCALES = ["en", "ja", "es", "de", "zh", "pt", "fr", "id", "ms", "vi", "tr", "hi", "ru", "zh-hant", "ar", "it"] as const;
+export const WIN_RATE_QUIZ_LOCALES = ["en", "ja", "es", "de", "zh", "pt", "fr", "id", "ms", "vi", "tr", "hi", "ru", "zh-hant", "ar", "it", "pl"] as const;
 export type WinRateQuizLocale = (typeof WIN_RATE_QUIZ_LOCALES)[number];
 
 export const WIN_RATE_QUIZ_ALTERNATES: Record<string, string> = {
@@ -41,5 +41,6 @@ export const WIN_RATE_QUIZ_ALTERNATES: Record<string, string> = {
   "ar": `${SITE}/ar/win-rate-quiz`,
   // ★2026-10-16 it 도구 회차
   "it-IT": `${SITE}/it/win-rate-quiz`,
+  "pl-PL": `${SITE}/pl/win-rate-quiz`,
   "x-default": `${SITE}/en/win-rate-quiz`,
 };
