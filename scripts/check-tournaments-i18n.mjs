@@ -28,7 +28,7 @@ const root = join(__dirname, "..");
 
 const HANGUL = /[\uAC00-\uD7A3]/;
 // ★2026-10-16 it 도구 회차
-export const BOARD_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it"];
+export const BOARD_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it", "pl"];
 /** 보드에 실제로 렌더되는 값 필드. components/tournament-board.tsx 기준 — 늘리기 전에 그 파일을 봐라. */
 export const RENDERED_FIELDS = ["buyin", "venue", "dateNote"];
 

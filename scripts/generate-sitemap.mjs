@@ -59,6 +59,7 @@ const STATIC_ROUTES = [
   { path: "/ar/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   // ★2026-10-16 it 도구 회차
   { path: "/it/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  { path: "/pl/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-08-08 `/hand-chart` 색인 개시 (사장님 결정) — 상세 근거는 `app/hand-chart/page.tsx` 주석.
    *   요약: 몰아준 쪽(holdem-starting-hand-range)이 28일 노출 16·38위로 못 이겼고
@@ -440,7 +441,7 @@ const siteToday = todayIso();
  * ★ app/<locale>/tournaments/page.tsx 를 만들기 전에 여기 먼저 넣으면 사이트맵이 404를 가리킨다.
  */
 // ★2026-10-16 it 도구 회차
-const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it"];
+const TOURNAMENT_LOCALES = ["en", "ja", "zh", "zh-hant", "es", "de", "id", "ms", "vi", "pt", "tr", "hi", "ar", "fr", "ru", "it", "pl"];
 
 const tournamentAlts = [
   { hreflang: "ko", href: `${SITE}/tournaments` },
