@@ -337,3 +337,11 @@
 - **통화·서식:** 현지 사이트의 € 용례가 프로젝트의 $ 유지 결정과 다르지만 기존 결정을 바꾸지 않았다. 날짜 서식만 현지 일/월/연도 관습으로 정했다. 통화 환산·일정 생성은 범위 밖이다.
 
 Sources: pokerstars.it/poker/texas-holdem · sisal.it/regole-poker/punteggi · poker.888casino.it/come-giocare/valore-delle-mani · cardplayer.com/it/regole-poker · assopoker.com · it.wikipedia.org/wiki/Punti_del_poker · 확장 원문(2026-10-16 직접 확인): [PokerStars 글로서리][ps-g] · [PokerStars 대회 규칙][ps-r] · [PokerStars 대회 유형][ps-t] · [888 equity][eq] · [888 pot odds][po] · [888 sizing][size] · [888 RFI][rfi] · [888 3-bet 방어][def] · [888 균형·혼합 전략][balance] · [Assopoker blocker·range][block] · [PokerStars Monte-Carlo 일정 표기][mc] · [Wikipedia IT 글로서리][wg] · [Wikipedia IT 포지션][wp] · [ItaliaPokerClub 퀴즈][quiz] · [People's Poker UI][people] · [PokerStrategy IT 포럼][forum] · [RakebackPoker IT 솔버 용례][wizard] · [888 확장 글로서리][g888] · [PokerStars 계정 UI][account]
+
+### 검수장 추가 (2026-10-16 · 검수장 MB-364 판정 · MA-598)
+
+> 검수장이 판정 중 현지 원문으로 확인한 용례만 덧붙인다(DECISIONS §0-W · 기존 행 불변).
+
+| 개념(EN) | 이탈리아어 | 근거(원문 축어) | 메모 |
+|---|---|---|---|
+| Seed (난수 초기값) | seme / seme iniziale | [MathWorks IT](https://it.mathworks.com/help/simulink/slref/randomnumber.html) · «Seme iniziale» · [Regione Emilia-Romagna 난수 생성기](https://wwwservizi.regione.emilia-romagna.it/generatore/note.aspx) · «a partire dal seme» | 정당한 기술 용어지만 포커 화면에서는 seme = 무늬(suit · 위 Suit 행)와 겹친다. 재현성 설명(«gli stessi valori su qualsiasi dispositivo»)과 함께 써야 하며, 단독 라벨이면 «seed» 병기가 안전하다(검수 판정자 1명이 suit로 읽음 · 최종 OK). |
