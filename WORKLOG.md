@@ -3,7 +3,8 @@
 - MA-603(pl 도구 판정): 요청 ①②③ 전부 이행 — Breadcrumb `/it`→`/pl`(WRONG) · readMore·blind note·showdown related·«Kalkulator dealu ICM» · 대회 «z biletem zaproszeniowym»(FAQ·holdem-masters-9·카드 라벨 2) · 수 일치 템플릿 4(라벨 꼴·few() 분기) · 격(przed flopem/na flopie… 맵 · flightów · set miningu · Pierwszy re-raise · tripsa) · street 남성 굴절 16줄. 치환 스크립트 = 각 패턴 1회 일치 단언. 언어북 = `docs/translation-terms-pl.md` «굴절·수 일치 규칙» 절(제안 ①~⑤). 통지 = queue §2-CO 🪶. MB-370.
 - MA-604: MA-590 ①~⑭ + 통지 ⓐ 회신 누락 확인 → queue §2-CN 등재(§2-CL과 한 EN 손질 회차). MB-371.
 - 빌드 exit 0(74 + intl 738). push = th 도구 5(`763698ce`·`b9d74c28`) + 족보 pl·th(`3b4bda0b`) + 이번 커밋 → MB-372(검수장 원어민 판정 요청 2).
-- 남김: IndexNow · 수동 색인(th 도구 5 · 족보 pl·th 2) · S-103·S-104 회신.
+- 라이브: th 도구 5 · 족보 pl·th 2 전부 200 · pl 퀴즈 변경 반영 확인 · IndexNow 25 URL 200.
+- 남김: 수동 색인(th 도구 5 · 족보 pl·th 2 = 사장님) · S-103·S-104 회신.
 
 ## 2026-10-17 (4) — 족보 글 번역 회차 pl+th(`holdem-hand-rankings` · 로컬 커밋 · 미배포)
 
