@@ -174,3 +174,9 @@ curl -s "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&
 
 - 3편 주제어(제목·설명란 후보 · 🔴 **검색량 미측정** — 영상 대본 용어만 근거, 쓰기 전 이 뱅크 방식으로 볼륨 확인): «how to run a poker solver» · «solver exploitability» · «effective stack» · «bet sizing in a solver» · «betting tree».
 - 앱 UI 낱말 추가(검색어 아님 · 화면 글자): Solve it yourself · Build Tree · Run Solver · Target exploitability · Max iterations · Solver finished! · Results →. 정본 = `docs/translation-terms-en.md` §1.
+
+### 🎬 EN 4편 추가 (2026-10-17 · 유튜브 폴더 `locales/en/t04/qa/fable-ruling.md` §4)
+
+- 4편 주제어(제목·설명란 후보 · 🔴 **검색량 미측정** — 대본 용어만 근거, 쓰기 전 이 뱅크 방식으로 볼륨 확인): «gto trainer» · «ev loss» · «poker hand review» · «leak finder» · «review the spots you got wrong».
+- 업로드 제목 후보(사장님 확정): «Turn the solver's answers into a study routine — GTO Trainer, Hand review, Leak Finder (Part 4)».
+- 앱 UI 낱말 정본 = `docs/translation-terms-en.md` §1 (T04) 행.
