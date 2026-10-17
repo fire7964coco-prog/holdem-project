@@ -62,7 +62,7 @@ create unique index if not exists solver_feedback_one_review on public.solver_fe
 create index if not exists solver_feedback_list_idx on public.solver_feedback(locale, status, created_at desc);
 create index if not exists solver_feedback_user_idx on public.solver_feedback(user_id, created_at desc);
 
--- 2-a) 로케일 15개(tr·vi 2026-10-09 · ru 2026-10-10 추가) — 이미 만든 DB에도 적용한다(여러 번 실행해도 안전).
+-- 2-a) 로케일 16개(tr·vi 2026-10-09 · ru 2026-10-10 · it 2026-10-17 추가) — 이미 만든 DB에도 적용한다(여러 번 실행해도 안전).
 --      위 create table 은 테이블이 있으면 건너뛰므로 제약은 여기서 다시 건다. 목록은 위 check 와 같아야 한다.
 alter table public.solver_feedback drop constraint if exists solver_feedback_locale;
 alter table public.solver_feedback add constraint solver_feedback_locale
