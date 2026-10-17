@@ -73,7 +73,7 @@ Lấy tay bài trong ảnh phía trên:
 
 Cùng đôi A, nên các kicker so trực tiếp theo thứ tự: ==g:K thắng Q — xong trận.== Lá 9 của B vẫn *nằm trong* tay bài với vai trò kicker thứ hai, nhưng phép so sánh không bao giờ đi xa đến đó.
 
-Hãy để ý kicker cao nhất của B là lá Q **trên board**, không phải lá 9 họ đang cầm. ==r:Kicker chỉ được tính khi nó thực sự lọt vào 5 lá mạnh nhất của bạn== — một lá board cao hơn sẽ đẩy lá bài tẩy của bạn xuống dưới. Đó cũng là lý do lá thứ hai trong bài khởi đầu của bạn quan trọng không kém lá A: A-K và A-9 ở đây đều là "một đôi A", và chỉ một trong hai thắng ([bài khởi đầu nên chơi theo vị trí](/vi/blog/holdem-starting-hands-chart)).
+Hãy để ý kicker cao nhất của B là lá Q **trên board**, không phải lá 9 họ đang cầm. ==r:Kicker chỉ được tính khi nó thực sự lọt vào 5 lá mạnh nhất của bạn== — một lá board cao hơn sẽ đẩy lá bài tẩy của bạn xuống dưới. Đó cũng là lý do lá thứ hai trong bài khởi đầu của bạn quan trọng đến vậy: A-K và A-9 ở đây đều là "một đôi A", và chỉ một trong hai thắng ([bài khởi đầu nên chơi theo vị trí](/vi/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -123,7 +123,7 @@ Rồi đến cái bẫy quyết định tiền thật — ==r:**bị counterfeit
 
 </div>
 
-Board ra đôi 9 đã trao cho *cả hai* người chơi một đôi thứ hai tốt hơn — đôi 4 của bạn ==r:bị counterfeit==, và phép so duy nhất còn lại là đôi cao: K thắng 9. Tay bài dẫn trước ở flop thua pot mà cả hai người chơi đều không cải thiện lá bài của chính mình.
+Board ra đôi 9 đã trao cho *cả hai* người chơi một đôi thứ hai tốt hơn — đôi 4 của bạn ==r:bị counterfeit==, và phép so duy nhất còn lại là đôi cao: K thắng 9. Tay bài dẫn trước ở flop thua pot dù cả turn lẫn river đều không ghép đôi với lá bài tẩy của ai — chỉ riêng board đã lật ngược nó.
 
 ---
 
@@ -186,7 +186,7 @@ Nhìn ra những board như vậy trước khi bet ở river là một kỹ năn
 
 **Q. So bài poker khi hòa như thế nào?**
 
-A. Ba phép kiểm tra theo thứ tự — hạng tay bài, rồi các lá tạo nên tay bài, rồi kicker từ trên xuống — và khác biệt đầu tiên kết thúc mọi chuyện. Quan trọng không kém là những thứ không bao giờ vào phép so: chất bài, ai bet cuối, ai ngồi gần nút dealer hơn, và mỗi người đã bỏ bao nhiêu chip vào pot. Nếu năm lá trùng nhau từng giá trị, dealer chia pot bất kể chuyện gì đã xảy ra trong các vòng cược.
+A. Ba phép kiểm tra theo thứ tự — hạng tay bài, rồi các lá tạo nên tay bài, rồi kicker từ trên xuống — và khác biệt đầu tiên kết thúc mọi chuyện. Quan trọng không kém là những thứ không bao giờ vào phép so: chất bài, ai bet cuối, ai ngồi gần nút dealer hơn, và mỗi người đã bỏ bao nhiêu chip vào pot. Nếu năm lá trùng nhau từng giá trị trong cùng một hạng tay bài, pot — hoặc từng side pot mà cả hai đều có quyền tranh — được chia, bất kể chuyện gì đã xảy ra trong các vòng cược.
 
 **Q. Hai người cùng đôi thì ai thắng?**
 
@@ -194,11 +194,11 @@ A. Kicker cao hơn — nhưng hãy kiểm tra trước xem lá nào của bạn 
 
 **Q. Cả hai cùng có hai đôi thì ai thắng?**
 
-A. Đôi cao trước, rồi đôi thấp, rồi lá kicker duy nhất — nên đôi A và đôi 3 thắng đôi K và đôi Q dù đôi thứ hai nhỏ hơn nhiều. Trường hợp bẫy người ta là board có hai đôi như K-K-9-9-5 mà không có ba lá cùng chất, nên không ai tạo được thùng: trừ khi ai đó cầm một lá K, một lá 9, đôi 5 trên tay, hoặc một đôi trên tay lớn hơn 9, mọi người đều có cùng hai đôi, nên mọi thứ dồn về một kicker duy nhất và lá bài tẩy cao nhất ở bàn lấy pot — và nếu không có lá bài tẩy nào vượt được lá 5 trên board, tất cả chơi theo board và pot được chop. Hai đôi mang đúng một kicker, không bao giờ là hai.
+A. Đôi cao trước, rồi đôi thấp, rồi lá kicker duy nhất — nên đôi A và đôi 3 thắng đôi K và đôi Q dù đôi thứ hai nhỏ hơn nhiều. Trường hợp bẫy người ta là board có hai đôi như K-K-9-9-5 mà không có ba lá cùng chất, nên không ai tạo được thùng: trừ khi ai đó cầm một lá K, một lá 9, đôi 5 trên tay, hoặc một đôi trên tay lớn hơn 9, mọi người đều có cùng hai đôi, nên mọi thứ dồn về một kicker duy nhất và lá bài tẩy cao nhất ở bàn lấy pot (những người cầm cùng lá cao nhất đó thì chia nhau) — và nếu không có lá bài tẩy nào vượt được lá 5 trên board, tất cả chơi theo board và pot được chop. Hai đôi mang đúng một kicker, không bao giờ là hai.
 
 **Q. Hai người cùng sám cô thì ai thắng?**
 
-A. Sám cô mang hai kicker, so lá cao nhất trước — nên nếu cả hai tạo cùng bộ ba, lá phụ cao hơn thắng. Với bộ ba 9, 9-9-9-A-K thắng 9-9-9-A-Q vì kicker thứ hai (K) cao hơn Q. Trùng bộ ba và trùng cả hai kicker nghĩa là chia pot. (Set từ đôi trên tay gần như không bao giờ hòa, vì chỉ một người có thể cầm đúng đôi đó.)
+A. Sám cô mang hai kicker, so lá cao nhất trước — nên nếu cả hai tạo cùng bộ ba, lá phụ cao hơn thắng. Với bộ ba 9, 9-9-9-A-K thắng 9-9-9-A-Q vì kicker thứ hai (K) cao hơn Q. Trùng bộ ba và trùng cả hai kicker nghĩa là chia pot. (Set từ đôi trên tay không thể hòa theo kiểu đó — mỗi giá trị chỉ có bốn lá, nên không ai khác cầm được bộ ba cùng giá trị.)
 
 **Q. Lá thứ 5 có quan trọng không?**
 
@@ -212,7 +212,7 @@ A. Trong Hold'em, có, nhưng chỉ trong sảnh A-2-3-4-5 (wheel), nơi nó ch�
 
 A. Sảnh có lá cao nhất cao hơn thì lớn hơn, và trong thực tế chuyện này xảy ra khi phần lớn sảnh đã nằm trên board. Lấy board 5♦ 6♣ 7♠ 8♥ 2♦: người cầm 9♣ 4♠ tạo 9-8-7-6-5, trong khi người cầm 4♥ 3♦ tạo 8-7-6-5-4 từ cùng bốn lá đó. Cả hai đều "có sảnh"; chỉ lá cao nhất được tính, nên lá 9 lấy pot. Lá cao nhất bằng nhau nghĩa là cùng một sảnh và chop.
 
-**Q. Hai người cùng sảnh poker thì ai thắng?**
+**Q. Hai người đều có sảnh thì ai thắng?**
 
 A. Sảnh có lá cao nhất cao hơn thắng — Q-J-10-9-8 thắng J-10-9-8-7, vì sảnh chỉ được xếp hạng theo lá cao nhất và không có kicker. Nếu cả hai sảnh có cùng lá cao nhất, chúng giống hệt nhau, nên pot được chia. Điều này xảy ra nhiều nhất khi sảnh nằm phần lớn trên board và cả hai người lấp cùng một đầu.
 
@@ -220,7 +220,7 @@ A. Sảnh có lá cao nhất cao hơn thắng — Q-J-10-9-8 thắng J-10-9-8-7,
 
 A. So hai thùng từng lá từ trên xuống: thùng có A cao nhất thắng thùng có K cao nhất, và nếu lá cao nhất trùng nhau thì chuyển sang lá tiếp theo, cứ thế qua cả năm lá. Chất bài không bao giờ phân định, nên nếu cả năm giá trị trùng nhau thì pot được chia. (Trong Hold'em hai thùng luôn cùng một chất, vì mọi người chơi dùng chung board.)
 
-**Q. Hai người cùng cù lũ thì so thế nào?**
+**Q. Hai người đều có cù lũ thì so thế nào?**
 
 A. So bộ ba trước — bộ ba cao hơn thắng, nên K-K-K-2-2 thắng Q-Q-Q-A-A dù đôi A trông lớn hơn. Chỉ khi bộ ba giống hệt nhau mới so đến đôi. Cù lũ không có kicker, nên trùng cả bộ ba lẫn đôi nghĩa là chia pot.
 
@@ -245,7 +245,7 @@ A. Có, nhưng không thường xuyên. Hòa thật sự chỉ xảy ra khi 5 l�
 ## Những điều cần nhớ
 
 1. Mọi thế hòa chạy cùng một quy trình: ==**hạng tay bài → các lá tạo tay → kicker → chia pot**== — không ngoại lệ, không chất bài.
-2. Kicker chỉ được tính khi nó ==g:lọt vào 5 lá mạnh nhất của bạn== — lá board có thể thay thế nó, và một board hai đôi có thể counterfeit toàn bộ hai đôi của bạn.
+2. Kicker chỉ được tính khi nó ==g:lọt vào 5 lá mạnh nhất của bạn== — lá board có thể thay thế nó, và một board hai đôi có thể counterfeit đôi thứ hai của bạn.
 3. Sảnh xếp hạng theo lá cao nhất (wheel là thấp nhất), thùng so cả năm lá — và khi không gì tách được hai tay bài, pot được chop.
 
 Khóa chặt thứ tự đầy đủ với [thứ tự bài poker hoàn chỉnh](/vi/blog/holdem-hand-rankings), tìm hiểu cách dùng lá phụ trong [kicker là gì](/vi/blog/holdem-kicker), và xem chính xác pot hòa được chia ra sao trong [hướng dẫn chia pot](/vi/blog/holdem-split-pot-rules).

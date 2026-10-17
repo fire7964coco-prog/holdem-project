@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Mãos do poker em ordem — ranking da melhor à pior, com probabilidades",
   seoTitle: "Achou que tinha ganhado e perdeu o pote? — Mãos do poker",
   desc: "Fez flush e mesmo assim perdeu o pote? A tabela com as 10 mãos do poker da melhor à pior, as probabilidades de cada uma e como o kicker decide o vencedor.",
-  tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
+  tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes de mão alta.",
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-10-17",
@@ -46,7 +46,7 @@ Comece por aqui. Esta é a tabela com o ranking inteiro, da mão mais forte à m
 Se você chegou aqui buscando a =="sequência do poker"== — o jeito mais comum de buscar essa ordem no Brasil — é exatamente a tabela acima. Só não confunda com a **Sequência (Straight)**, que é a mão #6 dessa escada: cinco cartas seguidas de naipes variados, explicada mais abaixo.
 
 > **A regra que encerra discussões**
-> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par ou uma carta alta e o [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas seis em cada dez mãos aleatórias de sete cartas terminam em um par ou menos, e é por isso que o [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") importa muito mais vezes do que o iniciante imagina.
 
 :::quiz:::
 
@@ -76,7 +76,7 @@ No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham d
 
 **A♠ K♠ Q♠ J♠ 10♠** — o straight flush mais alto e a melhor mão do poker.
 
-Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando você mesmo fechar um — e não um que está inteiro na mesa —, seu único trabalho é colocar o máximo de fichas possível.
+Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então, a menos que você jogue um número enorme de mãos, pode passar muito tempo sem fechar um. Quando você mesmo fechar um — e não um que está inteiro na mesa —, seu único trabalho é colocar o máximo de fichas possível.
 
 ### #2 — Straight Flush
 
@@ -137,7 +137,7 @@ Há três formas de fechá-la, e a diferença importa:
 - **Trips:** um par na mesa mais uma carta sua. Mais fácil de o adversário ler e de compartilhar.
 - **Trinca na mesa:** as três estão no board (ex.: J♣ J♠ J♥ no meio). Todo mundo divide essa trinca, então, a menos que alguém forme uma sequência ou algo melhor, só os kickers separam vocês.
 
-O set tira mais fichas porque ninguém vê chegar.
+O set muitas vezes ganha potes maiores porque é muito difícil de ver chegando.
 
 ### #8 — Dois Pares
 
@@ -153,7 +153,7 @@ Compara-se nesta ordem: **par alto → par baixo → kicker**. KK99-A ganha de Q
 
 **K♠ K♦ 9♥ 6♣ 2♠** — duas cartas do mesmo valor.
 
-A mão feita mais comum do Hold'em. Quando dois jogadores têm o mesmo par, os kickers decidem: **valor do par → kicker 1 → kicker 2 → kicker 3**, do maior ao menor. É aqui que acontece a maioria das derrotas com "a mesma mão": cuide do seu kicker.
+A mão feita mais comum do Hold'em. Duas mãos de par se comparam assim: **valor do par → kicker 1 → kicker 2 → kicker 3**, do maior ao menor — então, quando os dois jogadores têm o mesmo par, os kickers decidem. É aqui que acontece a maioria das derrotas com "a mesma mão": cuide do seu kicker.
 
 ### #10 — Carta Alta
 
@@ -161,7 +161,7 @@ A mão feita mais comum do Hold'em. Quando dois jogadores têm o mesmo par, os k
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — nada conecta.
 
-No showdown ganha a carta mais alta, depois a seguinte, e assim com as cinco. Se as cinco coincidirem, divide-se. É o que sobra quando um blefe é pago e não fecha.
+No showdown ganha a carta mais alta, depois a seguinte, e assim com as cinco. Se as cinco coincidirem, divide-se. Muitas vezes é o que sobra quando um blefe é pago e seu draw não fecha.
 
 ---
 
@@ -191,7 +191,7 @@ Par|Valor do par → 3 kickers|+Com kicker
 Carta Alta|As 5, da maior à menor|+Com kicker
 :::
 
-Um **kicker** é simplesmente uma carta que não faz parte da sua mão feita, mas que desempata. Com A-A-K contra A-A-Q, ambos têm par de ases — ganha o kicker K. Por isso os bons jogadores se importam tanto com a *qualidade* das cartas altas, não só em parear. A regra de desempate de cada mão num só lugar está no [guia de kicker e desempate](/pt/blog/holdem-tiebreak-rules); quando as melhores cinco cartas coincidem exatamente, o pote é [dividido](/pt/blog/holdem-split-pot-rules).
+Um **kicker** é uma carta das suas melhores cinco que não faz parte do próprio par (ou da trinca, dos dois pares, da quadra), mas que desempata. Com A-A-K contra A-A-Q, ambos têm par de ases — ganha o kicker K. Por isso os bons jogadores se importam tanto com a *qualidade* das cartas altas, não só em parear. A regra de desempate de cada mão num só lugar está no [guia de kicker e desempate](/pt/blog/holdem-tiebreak-rules); quando as melhores cinco cartas coincidem exatamente, o pote é [dividido](/pt/blog/holdem-split-pot-rules).
 
 ---
 
@@ -245,7 +245,7 @@ Você tem **A♥ 3♣**. O board já traz trinca de reis.
 
 O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão com cinco cartas, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — medido nas combinações de cinco cartas, de onde a ordem oficial vem (jogando sete cartas até o river, um par até sai mais vezes que uma carta alta, mas a escada não muda). Veja os números exatos no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Ele também explica a grande exceção que você vai encontrar: no **Short Deck (6+) Hold'em**, onde as cartas do 2 ao 5 são retiradas do baralho, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
+Ele também explica a grande exceção que você vai encontrar nos jogos de mão alta: no **Short Deck (6+) Hold'em**, onde as cartas do 2 ao 5 são retiradas do baralho, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
 
 ---
 
@@ -257,7 +257,7 @@ Com o relógio correndo, repasse isto em ordem toda vez que a mesa estiver compl
 
 **1. Primeiro os naipes** — há três ou mais cartas do mesmo naipe na mesa? Se sim, o flush é possível. Olhe seu naipe.
 
-**2. Depois a conexão** — há cartas próximas em valor (como 8-9-10)? Se sim, a sequência está viva.
+**2. Depois a conexão** — há três valores diferentes dentro de qualquer janela de cinco valores (como 8-9-10)? Se sim, a sequência está viva.
 
 **3. Por último os pares** — a mesa está pareada? Se sim, full houses e quadras estão em jogo, e seu flush ou sequência pode estar em perigo.
 
@@ -273,13 +273,13 @@ Jogadores treinados leem a mesa nesta ordem — primeiro o perigo (flush/sequên
 | **2** | Treine só os duelos confusos: flush vs sequência, full house vs flush | 3 dias |
 | **3** | Assista a streams de poker e cante o vencedor antes do dealer | 1-2 semanas |
 
-Agrupar primeiro evita que a ordem pareça dez coisas aleatórias. Os duelos confusos do passo 2 causam 90% dos erros de iniciante, então insista neles.
+Agrupar primeiro evita que a ordem pareça dez coisas aleatórias. Os duelos confusos do passo 2 são onde os iniciantes mais escorregam, então insista neles.
 
 ---
 
 ## Ranking de mãos por modalidade
 
-A ordem é comum a quase todas as variantes de poker, com alguns detalhes importantes.
+A ordem é comum a quase todas as variantes de poker de mão alta, com alguns detalhes importantes.
 
 | Jogo | Ranking | Diferença principal |
 |------|------|------|
@@ -288,7 +288,7 @@ A ordem é comum a quase todas as variantes de poker, com alguns detalhes import
 | **Seven-Card Stud** | Padrão | Sem cartas comunitárias (exceto uma rara última carta compartilhada se o baralho acabar) |
 | **Short Deck (6+)** | Modificada | O flush ganha do full house; A-6-7-8-9 é a sequência mais baixa (o Ás joga baixo e, sem as cartas de 2 a 5, emenda no 6) |
 
-A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogos. Só lembre da regra de "exatamente duas" do Omaha e da promoção do flush no Short Deck.
+A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogos de mão alta (jogos de lowball como o Razz ordenam as mãos ao contrário). Só lembre da regra de "exatamente duas" do Omaha e da promoção do flush no Short Deck.
 
 ---
 
@@ -341,7 +341,7 @@ A. Só um straight flush mais alto ou o royal flush (que é simplesmente o strai
 
 **Q. O que é um kicker?**
 
-A. É uma carta que não faz parte da sua mão feita, mas desempata. Com dois pares iguais, ganha a carta lateral (kicker) mais alta — e, se ela também empatar, decide a seguinte. O melhor kicker possível é o Ás.
+A. É uma carta das suas melhores cinco que não faz parte do próprio par (ou da trinca, dos dois pares, da quadra), mas desempata. Quando dois jogadores têm o mesmo par, ganha a carta lateral (kicker) mais alta — e, se ela também empatar, decide a seguinte. O melhor kicker possível é o Ás.
 
 **Q. Dois jogadores podem ter a mesma mão?**
 
@@ -353,7 +353,7 @@ A. No Hold'em, não — você forma suas melhores cinco com qualquer combinaçã
 
 **Q. Qual a diferença entre set e trips?**
 
-A. Os dois são trinca. Um *set* é um par na mão mais uma carta da mesa (bem disfarçado); *trips* é um par na mesa mais uma carta sua (mais fácil de ler). O set tira mais fichas.
+A. Os dois são trinca. Um *set* é um par na mão mais uma carta da mesa (bem disfarçado); *trips* é um par na mesa mais uma carta sua (mais fácil de ler). O set muitas vezes ganha potes maiores.
 
 **Q. Qual é a melhor mão do poker?**
 
@@ -397,7 +397,7 @@ A. No Brasil se usa uma mistura: royal flush, straight flush, flush e full house
 
 1. **A ordem:** Royal Flush > Straight Flush > Quadra > Full House > Flush > Sequência > Trinca > Dois Pares > Par > Carta Alta.
 2. **A armadilha:** o flush (#5) ganha da sequência (#6) — e qualquer mesa pareada pode esconder um full house que ganha dos dois.
-3. **A realidade:** a maioria dos potes é ganha com par ou carta alta, então seu kicker vale mais do que você imagina.
+3. **A realidade:** sete cartas aleatórias terminam em par ou carta alta cerca de 61% das vezes, então seu kicker vale mais do que você imagina.
 
 Aprenda a ordem em uma tarde, treine os duelos confusos e repasse "flush → sequência → pares" em cada mesa. Faça isso e nunca mais empurre o pote para o lado errado.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que u
 
 Uma sequência só precisa de cinco valores em ordem, e ==**os naipes não importam**==. Essa liberdade cria um número enorme de combinações. O flush é o oposto: cada uma das cinco cartas tem que compartilhar ==**o mesmo naipe**==, e só um dos quatro naipes consegue por vez. ==g:Muito menos formas de chegar lá significa que o flush é mais raro — e, entre as categorias de mão, a mais rara sempre fica acima.==
 
-:::tip[Se você tem um draw de flush e seu adversário está buscando a sequência, você ganha a colisão — quando **os dois** draws fecham, seu flush ganha da sequência dele no showdown. Isso não é o mesmo que ser o favorito: se o draw de sequência dele vem com um par ou com cartas mais altas, ele ainda pode estar na frente antes do river.]:::
+:::tip[Se você tem um draw de flush e seu adversário está buscando a sequência, você ganha a colisão — quando **os dois** draws fecham, seu flush ganha da sequência dele no showdown (a rara exceção: a carta que completa a sequência dele também dá a ele um straight flush no seu naipe). Isso não é o mesmo que ser o favorito: se o draw de sequência dele vem com um par ou com cartas mais altas, ele ainda pode estar na frente antes do river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Você tem **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, um flush de Ás alto. 
 
 ## O que ganha do flush no poker?
 
-Seu flush é favorito contra a maior parte do baralho — mas exatamente **quatro tipos de mão** (mais um flush maior) ganham dele:
+Seu flush ganha de todas as mãos abaixo dele no ranking — mas exatamente **quatro tipos de mão** (mais um flush maior) ganham dele:
 
 :::compare
 Ganha do seu flush | Perde para o seu flush
@@ -129,7 +129,7 @@ Quando dois jogadores têm o *mesmo* tipo de mão, o vencedor sai da comparaçã
 
 ## Flush vs flush, sequência vs sequência — quem ganha o empate?
 
-Sim, um flush pode perfeitamente ser mais alto que outro. **Os naipes são irrelevantes** — compare as cinco cartas de cima para baixo, a mais alta primeiro. Num board J♠ 9♠ 6♠ 2♠ 7♦, o Jogador A tem o A♠ e o B tem o K♠:
+Ganha a mão mais alta — e sim, um flush pode perfeitamente ser mais alto que outro. **Os naipes são irrelevantes** — compare as cinco cartas de cima para baixo, a mais alta primeiro. Num board J♠ 9♠ 6♠ 2♠ 7♦, o Jogador A tem o A♠ e o B tem o K♠:
 
 | Jogador | Flush | Resultado |
 |--------|------|------|

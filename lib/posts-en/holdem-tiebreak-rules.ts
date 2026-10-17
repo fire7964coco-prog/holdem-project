@@ -72,7 +72,7 @@ Take the hand in the photo above:
 
 Same pair of aces, so the kickers go head-to-head in order: ==g:K beats Q — fight over.== B's nine is still *in* the hand as the second kicker, but the comparison never gets that far.
 
-Notice B's top kicker is the **board's** queen, not the 9 they're holding. ==r:A kicker only counts if it actually lands in your best five== — a higher board card pushes your hole card down the list. It's also why the second card you start with matters as much as the ace itself: A-K and A-9 are both "a pair of aces" here, and only one of them wins ([starting hands chart](/en/blog/holdem-starting-hands-chart)).
+Notice B's top kicker is the **board's** queen, not the 9 they're holding. ==r:A kicker only counts if it actually lands in your best five== — a higher board card pushes your hole card down the list. It's also why the second card you start with matters so much: A-K and A-9 are both "a pair of aces" here, and only one of them wins ([starting hands chart](/en/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -122,7 +122,7 @@ Then there's the trap that decides real money — ==r:**counterfeiting**==:
 
 </div>
 
-The board pairing nines handed *both* players a better second pair — your fours got ==r:counterfeited==, and the only comparison left was top pair: kings over nines. The hand that led the flop loses the pot without either player improving their own cards.
+The board pairing nines handed *both* players a better second pair — your fours got ==r:counterfeited==, and the only comparison left was top pair: kings over nines. The hand that led on the flop loses the pot even though neither turn nor river paired anyone's hole cards — the board alone flipped it.
 
 ---
 
@@ -185,7 +185,7 @@ Spotting these runouts before the river bet is a skill of its own — that's [re
 
 **Q. How are ties broken in poker?**
 
-A. Three checks in order — hand rank, then the cards that make the hand, then kickers from the top down — and the first difference ends it. Just as important is what never enters the comparison: suits, who bet last, who sits closer to the button, and how many chips each player put in. If the five cards match rank for rank, the dealer chops the pot no matter what happened in the betting.
+A. Three checks in order — hand rank, then the cards that make the hand, then kickers from the top down — and the first difference ends it. Just as important is what never enters the comparison: suits, who bet last, who sits closer to the button, and how many chips each player put in. If the five cards match rank for rank in the same hand type, the pot — or each side pot both players are eligible for — is chopped, no matter what happened in the betting.
 
 **Q. Who wins if two players have the same pair?**
 
@@ -193,11 +193,11 @@ A. The higher kicker — but check which of your cards actually reach the best f
 
 **Q. Who wins if both players have two pair?**
 
-A. Higher pair first, then the lower pair, then the one kicker — so aces-and-threes beats kings-and-queens even though the second pair is far smaller. The case that catches people is a double-paired board like K-K-9-9-5 with no three cards of one suit, so nobody can make a flush: unless someone holds a king, a nine, pocket fives, or a pocket pair above nines, every player has the same two pair, so the hand collapses to a single kicker and the best hole card at the table takes it — and if nobody's hole card beats the board's five, everyone plays the board and the pot is chopped. Two pair carries exactly one kicker, never two.
+A. Higher pair first, then the lower pair, then the one kicker — so aces-and-threes beats kings-and-queens even though the second pair is far smaller. The case that catches people is a double-paired board like K-K-9-9-5 with no three cards of one suit, so nobody can make a flush: unless someone holds a king, a nine, pocket fives, or a pocket pair above nines, every player has the same two pair, so the hand collapses to a single kicker and the best hole card at the table takes it (players holding the same top card share it) — and if nobody's hole card beats the board's five, everyone plays the board and the pot is chopped. Two pair carries exactly one kicker, never two.
 
 **Q. Who wins if two players have the same three of a kind?**
 
-A. Three of a kind carries two kickers, compared highest first — so if both players make the same trips, the higher side card wins. With trip nines, 9-9-9-A-K beats 9-9-9-A-Q because the second kicker (king) tops the queen. Matching trips and both kickers means a split. (A set from a pocket pair almost never ties, since only one player can hold that exact pair.)
+A. Three of a kind carries two kickers, compared highest first — so if both players make the same trips, the higher side card wins. With trip nines, 9-9-9-A-K beats 9-9-9-A-Q because the second kicker (king) tops the queen. Matching trips and both kickers means a split. (A set from a pocket pair can't tie that way — with only four cards of each rank, nobody else can hold three of the same rank.)
 
 **Q. Does the 5th card matter in poker?**
 
@@ -211,7 +211,7 @@ A. In Hold'em, yes, but only in the A-2-3-4-5 straight (the "wheel"), where it p
 
 A. Yes, and in practice it happens when most of the straight is already on the board. Take a board of 5♦ 6♣ 7♠ 8♥ 2♦: a player with 9♣ 4♠ makes 9-8-7-6-5, while a player with 4♥ 3♦ makes 8-7-6-5-4 off the same four cards. Both of them "made a straight"; only the top card was ever counted, so the nine takes it. Equal top cards mean the same straight and a chop.
 
-**Q. Who wins if two players have the same straight?**
+**Q. Who wins if two players both have a straight?**
 
 A. The straight with the higher top card wins — Q-J-10-9-8 beats J-10-9-8-7, because a straight is ranked only by its highest card and has no kicker. If both straights have the same top card they are identical, so the pot is split. This happens most often when the straight sits mostly on the board and both players fill the same end.
 
@@ -219,7 +219,7 @@ A. The straight with the higher top card wins — Q-J-10-9-8 beats J-10-9-8-7, b
 
 A. Compare the flushes card by card from the top down: an ace-high flush beats a king-high flush, and if the top cards match you move to the next card, and so on through all five. Suits never break the tie, so if all five ranks are identical the pot is split. (In Hold'em two flushes are always the same suit, since players share the board.)
 
-**Q. Who wins if two players have the same full house?**
+**Q. Who wins if two players both have a full house?**
 
 A. Compare the three-of-a-kind first — the higher trips win, so K-K-K-2-2 beats Q-Q-Q-A-A even though the aces look bigger. Only if the trips are identical do you compare the pair. A full house has no kicker, so matching trips and pair means a split pot.
 
@@ -244,7 +244,7 @@ A. Yes, but it's uncommon. A true tie happens only when two or more players' bes
 ## The Takeaways
 
 1. Every tie runs the same procedure: ==**hand rank → made cards → kickers → split**== — no exceptions, no suits.
-2. A kicker only counts if it ==g:makes your best five== — board cards can replace it, and a double-paired board can counterfeit your two pair entirely.
+2. A kicker only counts if it ==g:makes your best five== — board cards can replace it, and a double-paired board can counterfeit your second pair.
 3. Straights rank by their top card (the wheel is the lowest), flushes compare all five — and when nothing separates the hands, the pot is chopped.
 
 Lock in the full order with the [complete hand rankings](/en/blog/holdem-hand-rankings), get the side card itself down in [what is a kicker](/en/blog/holdem-kicker), and see exactly how tied pots get divided in the [split pot guide](/en/blog/holdem-split-pot-rules).

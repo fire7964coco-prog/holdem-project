@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Kapan Pot Dibagi? Aturan Split Pot Hold'em",
   seoTitle: "Menang tapi cuma dapat separuh? — Aturan Split Pot Poker",
   desc: "Bisakah seri di poker? Bisa — inilah kapan tepatnya pot dibagi: lima kartu identik, board yang main untuk semua orang, aturan odd chip, dan pembagian side pot.",
-  tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
+  tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih seri untuk tangan terbaik saat showdown — lima kartu terbaik yang identik. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Mendapat separuh pot yang Anda yakin sudah menang itu terasa mengejutkan. Tapi =
 ---
 
 > **Jawaban cepat**
-> Sebuah pot **dibagi** (juga disebut **chop**) ketika dua pemain atau lebih punya **lima kartu terbaik yang identik** saat showdown. Chip dibagi rata. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.
+> Sebuah pot **dibagi** (juga disebut **chop**) ketika dua pemain atau lebih seri untuk tangan terbaik saat showdown dengan **lima kartu terbaik yang identik**. Chip dibagi rata. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.
 
 ---
 
@@ -40,9 +40,9 @@ Mendapat separuh pot yang Anda yakin sudah menang itu terasa mengejutkan. Tapi =
 
 ## Apa Itu Split Pot di Poker? (Dan Apakah "Chop" Hal yang Sama?)
 
-Sebuah **split pot** terjadi ketika dua pemain atau lebih punya lima kartu terbaik yang identik saat showdown, sehingga dealer membagi chip rata di antara mereka. Sebuah **chop** — atau "chopped pot" — persis sama dalam bahasa meja ("we're chopping"). Buku aturan menyebutnya split; pemain menyebutnya chop. Orang mencari keduanya, jadi Anda akan melihat kedua istilah dipakai bergantian.
+Sebuah **split pot** terjadi ketika dua pemain atau lebih seri untuk tangan terbaik saat showdown dengan lima kartu terbaik yang identik, sehingga dealer membagi chip rata di antara mereka. Sebuah **chop** — atau "chopped pot" — persis sama dalam bahasa meja ("we're chopping"). Buku aturan menyebutnya split; pemain menyebutnya chop. Orang mencari keduanya, jadi Anda akan melihat kedua istilah dipakai bergantian.
 
-Dasarnya: tangan Anda selalu ==**lima kartu terbaik**== dari tujuh — dua kartu tertutup Anda plus lima kartu di board. Di mana setiap tangan lima-kartu berperingkat dibahas di [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Ketika lima kartu terbaik dua pemain identik peringkatnya, tak ada yang "lebih" menang== — pot dibagi, titik.
+Dasarnya: tangan Anda selalu ==**lima kartu terbaik**== dari tujuh — dua kartu tertutup Anda plus lima kartu di board. Di mana setiap tangan lima-kartu berperingkat dibahas di [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Ketika tangan-tangan terbaik saat showdown sama jenisnya dengan lima nilai yang sama, tak ada yang "lebih" menang== — pot dibagi, titik.
 
 ---
 
@@ -72,12 +72,12 @@ Lima kartu komunitas sudah menjadi tangan terkuat bagi semua yang tersisa — it
 Dua straight dengan kartu tertinggi sama akan seri, tak peduli jenisnya. Di board 7♣ 6♦ 5♥ K♠ 2♣, baik A dengan 9♠ 8♠ maupun B dengan 9♥ 8♦ membentuk 9-8-7-6-5 — sama tingginya, jadi **dibagi**.
 
 ### 4. Flush yang sama
-Tidak ada peringkat jenis, jadi dua flush dengan lima nilai yang sama akan seri. Dalam praktik ini hampir selalu berarti **board itu sendiri** adalah flush lima-kartu. Di K♠ J♠ 8♠ 4♠ 2♠, jika A pegang A♥ Q♦ dan B pegang 10♥ 9♦, tak satu pun punya sekop — keduanya main flush board K-J-8-4-2 dan **chop**.
+Tidak ada peringkat jenis, jadi dua flush dengan lima nilai yang sama akan seri. Di Hold'em itu hanya bisa terjadi saat **board itu sendiri** adalah flush lima-kartu yang tak bisa diperbaiki siapa pun. Di K♠ J♠ 8♠ 4♠ 2♠, jika A pegang A♥ Q♦ dan B pegang 10♥ 9♦, tak satu pun punya sekop — keduanya main flush board K-J-8-4-2 dan **chop**.
 
 ==r:Tapi cek dulu sebelum berasumsi:== sekop apa pun di tangan Anda yang lebih tinggi dari sekop terendah di board akan memperbaiki flush. Di sini bahkan 3♠ yang biasa saja membentuk K-J-8-4-3 dan ==g:memenangkan seluruh pot== — dan A♠ membentuk nut flush.
 
 ### 5. Identik hingga kicker terakhir
-Pair dan two pair biasanya ditentukan oleh kicker — tapi jika kicker juga sama, itu split. Board A♦ Q♠ 9♣ 6♥ 2♠ dengan A♠ K♦ vs A♥ K♣ memberi kedua pemain ==g:A-A-K-Q-9== → **dibagi**. Ketika kicker *berbeda*, yang lebih tinggi menang mutlak — persisnya bagaimana perbandingan itu bekerja, tangan demi tangan, ada di [aturan pemecah seri dan kicker](/id/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Saat pair (atau two pair) bernilai sama, kicker yang menentukan — dan jika kicker juga sama, itu split. Board A♦ Q♠ 9♣ 6♥ 2♠ dengan A♠ K♦ vs A♥ K♣ memberi kedua pemain ==g:A-A-K-Q-9== → **dibagi**. Ketika kicker *berbeda*, yang lebih tinggi menang mutlak — persisnya bagaimana perbandingan itu bekerja, tangan demi tangan, ada di [aturan pemecah seri dan kicker](/id/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,11 +87,11 @@ Ya — dan bahkan tak butuh dua tangan monster. Ketika lima kartu komunitas suda
 
 Itulah tangan 8-8-8-A-K saya: J♠ 10♥ saya dan 5♣ 2♦ lawan sama-sama main trips 8 milik board dengan kicker A-K — lima kartu identik, chop begitu kedua tangan dibuka di meja. Kasus ekstremnya adalah board seperti A♠ K♠ Q♠ J♠ 10♠ (royal flush): tak ada kartu tertutup yang bisa memperbaikinya, jadi ==g:semua yang tersisa chop==.
 
-> **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
+> **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main — paling banyak Anda dapat bagian, dan Anda chop hanya jika tak ada orang lain yang mengalahkan board juga. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
 **Dan bagian yang paling penting di meja: di showdown yang masih menyisakan lawan, tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck biasanya mati bahkan ketika ia seharusnya chop (hanya tangan yang masih jelas bisa dikenali yang bisa diambil kembali, dan itu pun atas kebijakan floor; WSOP Tournament Rule 109) — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
 
-:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan bagian Anda dari semua chip yang sudah ada di pot (setengahnya saat heads-up) — fold berarti menyerahkan bagian itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi untuk call — dan rendah untuk fold: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali**, dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan bagian Anda dari semua chip yang sudah ada di pot (setengahnya saat heads-up) — fold berarti menyerahkan bagian itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi untuk call — dan rendah untuk fold: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali**, dan di river yang board-nya masih bisa dikalahkan, itulah yang sering terjadi.]:::
 
 ---
 
@@ -118,13 +118,13 @@ Kadang sebuah pot tak bisa dibagi rata — pot 101 chip antara dua pemain adalah
 
 > ==Sisa odd chip diberikan kepada pemain seri pertama **di kiri tombol dealer**== (kursi menang paling awal searah jarum jam dari tombol).
 
-Dalam split tiga arah dengan dua odd chip, dua kursi paling awal searah jarum jam masing-masing dapat satu. ==r:Aturan rumah bisa berbeda== — beberapa card room memberikan odd chip berdasarkan kartu tinggi atau jenis — jadi jika uang sungguhan dipertaruhkan, tanyakan ke floor. ==g:Online, software menugaskannya otomatis berdasarkan posisi.==
+Dalam split tiga arah dengan dua odd chip, dua kursi paling awal searah jarum jam masing-masing dapat satu. ==r:Aturan rumah bisa berbeda== — jadi jika uang sungguhan dipertaruhkan, tanyakan ke floor. ==g:Online, software menugaskannya otomatis berdasarkan posisi.==
 
 ---
 
 ## Apakah Side Pot Juga Dibagi? Seri Saat Seseorang All-In
 
-Saat para pemain all-in dengan jumlah berbeda dan yang lain terus bertaruh, chip membentuk ==**main pot**== (semua orang berhak) plus satu atau lebih ==**side pot**== (hanya pemain yang memasukkan lebih banyak daripada yang bisa diimbangi stack all-in yang lebih pendek). Setiap pot diberikan — atau di-chop — ==**secara terpisah**==, berdasarkan tangan terbaik di antara pemain yang berhak atas pot itu.
+Saat para pemain all-in dengan jumlah berbeda dan yang lain terus bertaruh, chip membentuk ==**main pot**== (setiap pemain yang masih ada di hand berhak) plus satu atau lebih ==**side pot**== (hanya pemain yang memasukkan lebih banyak daripada yang bisa diimbangi stack all-in yang lebih pendek). Setiap pot diberikan — atau di-chop — ==**secara terpisah**==, berdasarkan tangan terbaik di antara pemain yang berhak atas pot itu.
 
 Sebuah contoh nyata: A all-in dengan 100; B dan C masing-masing memasukkan 300. Itu **main pot 300** (100 × 3) dan **side pot 400** (200 + 200, hanya B dan C). Board berjalan A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -157,7 +157,7 @@ Tidak di Texas Hold'em. Anda mungkin pernah dengar "split-pot games" seperti Oma
 
 **Q. Kapan pot dibagi di poker?**
 
-A. Sebuah pot dibagi ketika dua pemain atau lebih punya lima kartu terbaik yang identik saat showdown; chip dibagi rata di antara mereka.
+A. Sebuah pot dibagi ketika dua pemain atau lebih seri untuk tangan terbaik saat showdown dengan lima kartu terbaik yang identik; chip dibagi rata di antara mereka.
 
 **Q. Bagaimana cara pot dibagi di poker?**
 
@@ -181,7 +181,7 @@ A. Tidak. Texas Hold'em tidak punya peringkat jenis, jadi tangan lima-kartu yang
 
 **Q. Siapa yang dapat odd chip ketika pot tak bisa dibagi rata?**
 
-A. Aturan standar: pemain seri pertama di kiri tombol dealer. Beberapa room menugaskannya berdasarkan kartu tinggi atau jenis, jadi aturan rumah bisa berbeda — software online menanganinya otomatis.
+A. Aturan standar: pemain seri pertama di kiri tombol dealer. Aturan rumah bisa berbeda, jadi tanyakan ke floor — software online menanganinya otomatis.
 
 **Q. Bisakah lebih dari dua pemain membagi satu pot?**
 
@@ -211,7 +211,7 @@ A. Tidak — kata sama, dua hal berbeda. Split pot saat showdown tidak dinegosia
 
 ## Poin-poin Penting
 
-1. Ya, ==**Anda bisa seri di poker**== — pot dibagi (chop) kapan pun dua pemain atau lebih berbagi ==**lima kartu terbaik yang identik dari tujuh**==.
+1. Ya, ==**Anda bisa seri di poker**== — pot dibagi (chop) kapan pun dua pemain atau lebih seri untuk tangan terbaik dengan ==**lima kartu terbaik yang identik dari tujuh**==.
 2. ==r:**Jenis kartu, kartu tertutup lebih tinggi, dan berapa banyak kartu yang Anda pakai**== tak pernah memecah seri.
 3. ==**Odd chip**== masuk ke pemain seri pertama di kiri tombol, dan ==**side pot**== diselesaikan terpisah dari main pot.
 

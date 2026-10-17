@@ -44,7 +44,7 @@ Mulai dari sini. Inilah urutan kartu poker lengkap — susunan (kombinasi) dan t
 | **10** | High Card | "Tanpa apa-apa" | Tidak ada kombinasi | 17,4% |
 
 > **Aturan yang mengakhiri perdebatan**
-> Pair dan High Card bersama-sama mencakup sekitar 61% dari semua tangan tujuh-kartu hingga river. Tangan besar terasa umum karena mudah diingat — tapi sebagian besar pot ditentukan oleh sepasang kartu atau high card berikut [kicker](/id/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> Pair dan High Card bersama-sama mencakup sekitar 61% dari semua tangan tujuh-kartu hingga river. Tangan besar terasa umum karena mudah diingat — tapi enam dari sepuluh tangan tujuh-kartu acak berakhir sebagai pair atau lebih rendah, karena itulah [kicker](/id/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") jauh lebih sering menentukan daripada yang dikira pemula.
 
 :::quiz:::
 
@@ -74,7 +74,7 @@ Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi dan tangan terbaik di poker.
 
-Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat Anda sendiri yang membuatnya — bukan royal flush yang seluruhnya ada di board — satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
+Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi kecuali Anda memainkan sangat banyak tangan, Anda bisa sangat lama tak pernah membuatnya. Saat Anda sendiri yang membuatnya — bukan royal flush yang seluruhnya ada di board — satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
 
 ### #2 — Straight Flush
 
@@ -135,7 +135,7 @@ Ada tiga cara membentuknya, dan bedanya penting:
 - **Trips:** sepasang di board plus satu kartu Anda. Lebih mudah dibaca lawan dan lebih sering dibagi.
 - **Trips di board:** ketiganya ada di board (mis. J♣ J♠ J♥ di tengah). Semua orang berbagi kartu itu, jadi kecuali ada yang membentuk straight atau yang lebih kuat, hanya kicker yang membedakan Anda.
 
-Set meraup lebih banyak chip karena tak ada yang menyangka.
+Set sering memenangkan pot yang lebih besar karena sangat sulit diduga.
 
 ### #8 — Two Pair
 
@@ -151,7 +151,7 @@ Dibandingkan dengan urutan ini: **pasangan tinggi → pasangan rendah → kicker
 
 **K♠ K♦ 9♥ 6♣ 2♠** — dua kartu bernilai sama.
 
-Inilah tangan jadi yang paling umum di Hold'em. Dua pasangan yang sama ditentukan kicker: **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, dari tinggi ke rendah. Di sinilah sebagian besar kekalahan "tangan yang sama" terjadi: jaga kicker Anda.
+Inilah tangan jadi yang paling umum di Hold'em. Dua tangan pair dibandingkan **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, dari tinggi ke rendah — jadi saat kedua pemain memegang pasangan yang sama, kicker yang menentukan. Di sinilah sebagian besar kekalahan "tangan yang sama" terjadi: jaga kicker Anda.
 
 ### #10 — High Card
 
@@ -159,7 +159,7 @@ Inilah tangan jadi yang paling umum di Hold'em. Dua pasangan yang sama ditentuka
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — tak ada yang terhubung.
 
-Saat showdown, kartu tertinggi menang, lalu berikutnya, dan seterusnya untuk kelimanya. Jika kelimanya sama, dibagi. Inilah yang tersisa saat gertakan dibayar dan tak jadi apa-apa.
+Saat showdown, kartu tertinggi menang, lalu berikutnya, dan seterusnya untuk kelimanya. Jika kelimanya sama, dibagi. Sering kali inilah yang tersisa saat gertakan dibayar dan draw Anda meleset.
 
 ---
 
@@ -189,7 +189,7 @@ Pair|Nilai pasangan → 3 kicker|+Pakai kicker
 High Card|Kelimanya, tinggi ke rendah|+Pakai kicker
 :::
 
-Sebuah **kicker** hanyalah kartu yang bukan bagian dari tangan jadi tapi memecah seri. Dengan A-A-K lawan A-A-Q, keduanya punya sepasang As — kicker K yang menang. Karena itu pemain bagus peduli pada *kualitas* kartu tingginya, bukan sekadar berpasangan. Untuk aturan seri tiap tangan dalam satu tempat, lihat [panduan kicker dan pemecah seri](/id/blog/holdem-tiebreak-rules); saat lima kartu terbaik sama persis, pot [dibagi](/id/blog/holdem-split-pot-rules).
+Sebuah **kicker** adalah kartu di lima kartu terbaik Anda yang bukan bagian dari pair itu sendiri (atau trips, two pair, quads), tapi tetap memecah seri. Dengan A-A-K lawan A-A-Q, keduanya punya sepasang As — kicker K yang menang. Karena itu pemain bagus peduli pada *kualitas* kartu tingginya, bukan sekadar berpasangan. Untuk aturan seri tiap tangan dalam satu tempat, lihat [panduan kicker dan pemecah seri](/id/blog/holdem-tiebreak-rules); saat lima kartu terbaik sama persis, pot [dibagi](/id/blog/holdem-split-pot-rules).
 
 ---
 
@@ -243,7 +243,7 @@ Anda pegang **A♥ 3♣**. Board sudah membawa three of a kind K.
 
 Peringkat ini bukan sembarangan — ini murni peluang. **Makin sulit suatu tangan dibentuk dari lima kartu, makin tinggi posisinya.** Dalam satu deck 52 kartu, ada lebih sedikit cara membuat lima kartu satu jenis dibanding lima berurutan jenis apa pun — karena itu flush di atas straight. Satu prinsip ini menjelaskan seluruh peringkat — lihat angka pastinya di [tabel peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Ia juga menjelaskan pengecualian besar yang akan Anda temui: di **Short Deck (6+) Hold'em**, di mana kartu 2 sampai 5 dibuang, flush jadi lebih sulit daripada full house — jadi di format itu **flush menang atas full house**. Matematikanya berubah, urutannya berubah. Lebih lanjut soal perbedaan tiap varian di bawah.
+Ia juga menjelaskan pengecualian besar yang akan Anda temui di permainan high hand: di **Short Deck (6+) Hold'em**, di mana kartu 2 sampai 5 dibuang, flush jadi lebih sulit daripada full house — jadi di format itu **flush menang atas full house**. Matematikanya berubah, urutannya berubah. Lebih lanjut soal perbedaan tiap varian di bawah.
 
 ---
 
@@ -255,7 +255,7 @@ Saat waktu mepet, periksa ini berurutan setiap board lengkap:
 
 **1. Jenis dulu** — apakah ada tiga kartu atau lebih satu jenis di board? Jika ya, flush mungkin. Lihat jenis Anda.
 
-**2. Lalu koneksi** — apakah ada kartu berdekatan nilainya (seperti 8-9-10)? Jika ya, straight hidup.
+**2. Lalu koneksi** — apakah ada tiga nilai berbeda dalam rentang lima nilai mana pun (seperti 8-9-10)? Jika ya, straight hidup.
 
 **3. Terakhir pasangan** — apakah board berpasangan? Jika ya, full house dan four of a kind mungkin, dan flush atau straight Anda bisa dalam bahaya.
 
@@ -271,13 +271,13 @@ Pemain terlatih membaca board dengan urutan ini — bahaya dulu (flush/straight 
 | **2** | Latih hanya duel membingungkan: flush vs straight, full house vs flush | 3 hari |
 | **3** | Tonton stream poker dan sebutkan pemenang sebelum dealer | 1-2 minggu |
 
-Mengelompokkan dulu membuat urutannya tidak terasa seperti sepuluh hal acak. Duel membingungkan di langkah 2 menyebabkan 90% kesalahan pemula, jadi perbanyak latihannya.
+Mengelompokkan dulu membuat urutannya tidak terasa seperti sepuluh hal acak. Duel membingungkan di langkah 2 adalah tempat pemula paling sering tergelincir, jadi perbanyak latihannya.
 
 ---
 
 ## Peringkat tangan per varian
 
-Urutan ini berlaku di hampir semua varian poker, dengan beberapa perbedaan penting.
+Urutan ini berlaku di hampir semua varian poker high hand, dengan beberapa perbedaan penting.
 
 | Permainan | Peringkat | Perbedaan utama |
 |------|------|------|
@@ -286,7 +286,7 @@ Urutan ini berlaku di hampir semua varian poker, dengan beberapa perbedaan penti
 | **Seven-Card Stud** | Standar | Tanpa kartu komunitas (kecuali satu kartu terakhir bersama yang jarang terjadi bila dek kehabisan kartu) |
 | **Short Deck (6+)** | Dimodifikasi | Flush menang atas full house; A-6-7-8-9 adalah straight terendah (As main rendah dan, tanpa kartu 2–5, tersambung ke 6) |
 
-Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan. Hanya ingat aturan "tepat dua" Omaha dan naiknya flush di Short Deck.
+Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan high hand (permainan lowball seperti Razz membalik urutannya). Hanya ingat aturan "tepat dua" Omaha dan naiknya flush di Short Deck.
 
 ---
 
@@ -335,7 +335,7 @@ A. Hanya straight flush yang lebih tinggi atau royal flush (yang sebenarnya cuma
 
 **Q. Apa itu kicker?**
 
-A. Kicker adalah kartu yang bukan bagian dari tangan jadi tapi memecah seri. Dengan dua pasangan sama, kartu samping (kicker) tertinggi menang — dan kalau itu juga sama, kartu berikutnya yang menentukan. Kicker terbaik adalah As.
+A. Kicker adalah kartu di lima kartu terbaik Anda yang bukan bagian dari pair itu sendiri (atau trips, two pair, quads), tapi memecah seri. Saat dua pemain memegang pasangan yang sama, kartu samping (kicker) tertinggi menang — dan kalau itu juga sama, kartu berikutnya yang menentukan. Kicker terbaik adalah As.
 
 **Q. Bisakah dua pemain punya tangan sama?**
 
@@ -347,7 +347,7 @@ A. Di Hold'em, tidak — Anda membentuk lima terbaik dari kombinasi mana pun dar
 
 **Q. Apa beda set dan trips?**
 
-A. Keduanya three of a kind. *Set* adalah sepasang di tangan plus satu kartu board (tersembunyi rapi); *trips* adalah sepasang di board plus satu kartu Anda (lebih mudah dibaca). Set meraup lebih banyak chip.
+A. Keduanya three of a kind. *Set* adalah sepasang di tangan plus satu kartu board (tersembunyi rapi); *trips* adalah sepasang di board plus satu kartu Anda (lebih mudah dibaca). Set sering memenangkan pot yang lebih besar.
 
 **Q. Apa tangan terbaik di poker?**
 
@@ -363,7 +363,7 @@ A. Ya. Straight flush (#2) mengalahkan four of a kind (#3) — lima kartu beruru
 
 **Q. Apa tangan terendah (terburuk) di poker?**
 
-A. Sebagai tangan lima kartu, yang terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu adalah high card terendah yang bukan pair, bukan straight, dan bukan flush — tangan klasik "Anda tidak punya apa-apa". Di Hold'em, karena Anda memainkan lima kartu terbaik dari tujuh kartu, tangan terlemah yang benar-benar bisa Anda pegang di akhir adalah 9-8-7-5-4 (dari 9-8-7-5-4-3-2 dengan jenis campur).
+A. Sebagai tangan lima kartu, yang terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu adalah high card terendah yang bukan pair, bukan straight, dan bukan flush — tangan klasik "Anda tidak punya apa-apa". Di Hold'em, karena Anda memainkan lima kartu terbaik dari tujuh kartu, tangan terlemah yang benar-benar bisa Anda pegang di akhir adalah 9-8-7-5-4 (dari 9-8-7-5-4-3-2 tanpa lima kartu satu jenis).
 
 **Q. Bisakah punya tiga pasangan di poker?**
 
@@ -391,7 +391,7 @@ A. Untuk menentukan siapa yang memenangkan pot, tidak ada. Simbol — di artikel
 
 1. **Urutannya:** Royal Flush > Straight Flush > Four of a Kind > Full House > Flush > Straight > Three of a Kind > Two Pair > Pair > High Card.
 2. **Jebakannya:** flush (#5) menang atas straight (#6) — dan board berpasangan mana pun bisa menyembunyikan full house yang menang atas keduanya.
-3. **Kenyataannya:** sebagian besar pot dimenangkan dengan pair atau high card, jadi kicker Anda lebih berharga dari yang Anda kira.
+3. **Kenyataannya:** sekitar 61% tujuh kartu acak berakhir sebagai pair atau high card, jadi kicker Anda lebih berharga dari yang Anda kira.
 
 Pelajari urutannya dalam satu sore, latih duel-duel membingungkan, dan jalankan pindaian "flush → straight → pasangan" di tiap board. Lakukan itu dan Anda tak akan pernah lagi mendorong pot ke sisi yang salah.
 

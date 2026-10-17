@@ -46,10 +46,10 @@ Từ mạnh nhất đến yếu nhất, mười tay bài Texas Hold'em xếp the
 
 </div>
 
-*Đây là tần suất chuẩn của tay bài bảy lá với bộ 52 lá đầy đủ — cùng xác suất mà mọi solver poker và trang luyện tập đều dùng.*
+*Đây là tần suất chuẩn của tay bài bảy lá với bộ 52 lá đầy đủ — tức là bảy lá ngẫu nhiên kết thúc thành từng tay bài thường xuyên đến đâu, không phải xác suất của bạn với một tay bài cụ thể hay trước một range cụ thể.*
 
 > **Quy tắc kết thúc mọi tranh cãi**
-> Một đôi và mậu thầu cộng lại chiếm khoảng 61% tất cả các tay bài bảy lá tính đến river. Các tay bài lớn có vẻ phổ biến vì chúng đáng nhớ — nhưng phần lớn pot được định đoạt bởi một đôi hoặc mậu thầu cùng [kicker (lá phụ)](/vi/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") đi kèm.
+> Một đôi và mậu thầu cộng lại chiếm khoảng 61% tất cả các tay bài bảy lá tính đến river. Các tay bài lớn có vẻ phổ biến vì chúng đáng nhớ — nhưng cứ mười tay bài bảy lá ngẫu nhiên thì sáu tay kết thúc ở một đôi trở xuống, nên [kicker (lá phụ)](/vi/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") quan trọng thường xuyên hơn nhiều so với người mới nghĩ.
 
 :::quiz:::
 
@@ -81,7 +81,7 @@ Trong Texas Hold'em chuẩn, **không có chất nào mạnh hơn chất nào**.
 
 **A♠ K♠ Q♠ J♠ 10♠** — thùng phá sảnh cao nhất, và là tay bài mạnh nhất trong poker (còn gọi là sảnh rồng, sảnh chúa — 10-J-Q-K-A cùng chất).
 
-Không thể bị đánh bại; thế hòa duy nhất có thể xảy ra là khi cả năm lá của thùng phá sảnh hoàng gia nằm hết trên board cho mọi người dùng chung, khi đó chia pot. Bạn sẽ gặp nó khoảng một lần mỗi 31.000 ván, nên nhiều người chơi nhiều năm chưa từng có. Khi chính bạn làm nên nó — chứ không phải cả năm lá nằm sẵn trên board — nhiệm vụ duy nhất của bạn là đẩy càng nhiều chip vào pot càng tốt.
+Không thể bị đánh bại; thế hòa duy nhất có thể xảy ra là khi cả năm lá của thùng phá sảnh hoàng gia nằm hết trên board cho mọi người dùng chung, khi đó chia pot. Bạn sẽ gặp nó khoảng một lần mỗi 31.000 ván, nên trừ khi chơi rất nhiều ván, bạn có thể rất lâu không làm được nó. Khi chính bạn làm nên nó — chứ không phải cả năm lá nằm sẵn trên board — nhiệm vụ duy nhất của bạn là đẩy càng nhiều chip vào pot càng tốt.
 
 ### #2 — Thùng phá sảnh (straight flush)
 
@@ -142,7 +142,7 @@ Có ba cách tạo thành, và sự khác biệt rất quan trọng:
 - **Trips:** 1 lá trên tay + board có đôi. Đối thủ dễ đọc ra hơn và cũng dễ có cùng bộ ba với bạn hơn.
 - **Sám cô nằm trên board:** cả ba lá đều ở board (ví dụ J♣ J♠ J♥ đều nằm trên board). Ai cũng dùng chung, nên trừ khi có người tạo được sảnh hoặc mạnh hơn, chỉ kicker mới phân định.
 
-Set ăn được nhiều chip hơn vì không ai thấy nó đến. Và dù mạnh đến đâu, sám cô vẫn xếp dưới sảnh (#6).
+Set thường thắng được pot lớn hơn vì rất khó thấy nó đến. Và dù mạnh đến đâu, sám cô vẫn xếp dưới sảnh (#6).
 
 ### #8 — Hai đôi (two pair)
 
@@ -158,7 +158,7 @@ So theo thứ tự: **đôi cao → đôi thấp → kicker**. KK99-A thắng QQ
 
 **K♠ K♦ 9♥ 6♣ 2♠** — hai lá cùng giá trị.
 
-Tay bài hoàn chỉnh phổ biến nhất trong Hold'em. Hai người có đôi bằng nhau thì phân định bằng kicker: **giá trị đôi → kicker thứ nhất → kicker thứ hai → kicker thứ ba**, cao trước. Đây là nơi xảy ra phần lớn những thất bại "cùng một tay bài" — hãy giữ kicker của bạn.
+Tay bài hoàn chỉnh phổ biến nhất trong Hold'em. Hai tay một đôi được so theo **giá trị đôi → kicker thứ nhất → kicker thứ hai → kicker thứ ba**, cao trước — nên khi hai người có cùng một đôi, kicker sẽ quyết định. Đây là nơi xảy ra phần lớn những thất bại "cùng một tay bài" — hãy giữ kicker của bạn.
 
 ### #10 — Mậu thầu (high card)
 
@@ -166,7 +166,7 @@ Tay bài hoàn chỉnh phổ biến nhất trong Hold'em. Hai người có đôi
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — không gì liên kết với nhau.
 
-Khi showdown (lật bài), lá cao nhất thắng, rồi đến lá tiếp theo, và cứ thế cho cả năm lá. Nếu cả năm lá trùng, chia pot. Đây là thứ còn lại khi một cú bluff bị call và không trúng gì.
+Khi showdown (lật bài), lá cao nhất thắng, rồi đến lá tiếp theo, và cứ thế cho cả năm lá. Nếu cả năm lá trùng, chia pot. Đây thường là thứ còn lại khi một cú bluff bị call và bài chờ của bạn không trúng.
 
 ---
 
@@ -206,7 +206,7 @@ Hai tên gọi khác bạn sẽ nghe ở bàn: sám cô còn gọi là bộ ba, 
 
 ![Showdown poker — so sánh tay bài 5 lá mạnh nhất của hai người chơi](/images/holdem-kicker-showdown-neutral.webp "Khi showdown, tay bài 5 lá mạnh nhất lấy pot")
 
-Khi hai người chơi cùng hạng tay bài, người thắng được quyết định bằng cách so các lá tạo nên tay bài trước, rồi đến **kicker** — lá phụ không thuộc tổ hợp chính — sẽ phân định khi mọi thứ khác bằng nhau. Đây là phần định đoạt những pot thật — và cũng là phần mà phần lớn bảng xếp hạng bỏ qua. Hãy đi đúng thứ tự này:
+Khi hai người chơi cùng hạng tay bài, người thắng được quyết định bằng cách so các lá tạo nên tay bài trước, rồi đến **kicker** — lá trong 5 lá mạnh nhất nhưng không thuộc chính đôi, hai đôi, sám cô hay tứ quý — sẽ phân định khi mọi thứ khác bằng nhau. Đây là phần định đoạt những pot thật — và cũng là phần mà phần lớn bảng xếp hạng bỏ qua. Hãy đi đúng thứ tự này:
 
 1. **So hạng tay bài.** Thùng luôn thắng sảnh, cù lũ luôn thắng thùng, và cứ thế.
 2. **So các lá tạo nên tay bài.** Đôi A thắng đôi K; thùng có Q cao nhất thắng thùng có J cao nhất.
@@ -288,7 +288,7 @@ Câu trả lời ngắn cho những cuộc tranh cãi nổ ra ở mọi bàn: th
 
 Thứ hạng không hề tùy tiện — nó ==thuần túy là xác suất==. ==g:**Tay bài càng khó tạo thành từ năm lá thì xếp càng cao.**== Thùng thắng sảnh đơn giản vì nó khó tạo thành hơn: trong bộ 52 lá, có ít cách rút được năm lá cùng chất (3,03% tay bài bảy lá tính đến river) hơn là năm lá liên tiếp ở bất kỳ chất nào (4,62%) — bài [thùng và sảnh cái nào lớn hơn](/vi/blog/holdem-flush-vs-straight) đi sâu vào đúng cặp này. Chỉ một nguyên tắc này giải thích toàn bộ hệ thống thứ bậc — xem con số chính xác trong [bảng xác suất poker](/vi/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Nó cũng giải thích ngoại lệ lớn bạn sẽ gặp: trong **Short Deck (6+) Hold'em**, nơi các lá 2 đến 5 bị bỏ, thùng trở nên khó hơn cù lũ — nên ở thể thức đó ==r:**thùng thắng cù lũ**==. Toán đổi thì thứ tự đổi. Khác biệt giữa các thể thức ở bên dưới.
+Nó cũng giải thích ngoại lệ lớn bạn sẽ gặp ở các thể thức so bài cao: trong **Short Deck (6+) Hold'em**, nơi các lá 2 đến 5 bị bỏ, thùng trở nên khó hơn cù lũ — nên ở thể thức đó ==r:**thùng thắng cù lũ**==. Toán đổi thì thứ tự đổi. Khác biệt giữa các thể thức ở bên dưới.
 
 ---
 
@@ -300,7 +300,7 @@ Khi đồng hồ đếm ngược, hãy quét theo thứ tự này mỗi khi boar
 
 **1. Chất trước** — board có ba lá trở lên cùng chất không? Nếu có, ==thùng là khả thi==. Nhìn chất của bạn.
 
-**2. Rồi đến liên kết** — có các lá gần nhau về giá trị (như 8-9-10) không? Nếu có, ==đối thủ có thể đang cầm sảnh==.
+**2. Rồi đến liên kết** — có ba lá khác giá trị nằm trong một khoảng năm giá trị liên tiếp (như 8-9-10) không? Nếu có, ==đối thủ có thể đang cầm sảnh==.
 
 **3. Đôi sau cùng** — board có đôi không? ==r:Nếu có, cù lũ và tứ quý đang trong cuộc, và thùng hay sảnh của bạn có thể gặp nguy.==
 
@@ -318,7 +318,7 @@ Cách nhanh nhất để nhớ thứ tự bài poker là thôi coi chúng như m
 | **2** | Chỉ luyện các cặp dễ nhầm: thùng vs sảnh, cù lũ vs thùng | 3 ngày |
 | **3** | Xem stream poker và gọi tên người thắng trước khi dealer công bố | 1–2 tuần |
 
-Nhóm lại trước giúp thứ tự không còn là mười thứ rời rạc. Các cặp dễ nhầm ở bước 2 gây ra 90% lỗi của người mới, nên hãy luyện thật kỹ.
+Nhóm lại trước giúp thứ tự không còn là mười thứ rời rạc. Các cặp dễ nhầm ở bước 2 là chỗ người mới hay trượt nhất, nên hãy luyện thật kỹ.
 
 ---
 
@@ -333,7 +333,7 @@ Phần lớn là có — cùng thứ tự mười tay bài này dùng chung cho 
 | **Seven-Card Stud** | Chuẩn | Không có bài chung (trừ trường hợp hiếm: một lá cuối dùng chung khi bộ bài không đủ lá) |
 | **Short Deck (6+)** | Có điều chỉnh | Thùng thắng cù lũ; A-6-7-8-9 là sảnh thấp nhất (lá A vẫn chơi thấp, và vì các lá 2–5 đã bị bỏ nên nó nối với lá 6) |
 
-Kết luận: học thứ tự chuẩn một lần là dùng được ở gần như mọi thể thức. Chỉ cần nhớ luật "đúng hai lá" của Omaha và việc thùng được nâng hạng trong Short Deck.
+Kết luận: học thứ tự chuẩn một lần là dùng được ở gần như mọi thể thức so bài cao (các thể thức lowball như Razz xếp tay bài theo chiều ngược lại). Chỉ cần nhớ luật "đúng hai lá" của Omaha và việc thùng được nâng hạng trong Short Deck.
 
 ---
 
@@ -386,7 +386,7 @@ A. Thùng phá sảnh hoàng gia — chính là thùng phá sảnh có A cao nh�
 
 **Q. Kicker (lá phụ) dùng để làm gì?**
 
-A. Kicker là lá nằm trong 5 lá mạnh nhất nhưng không thuộc tổ hợp chính của bạn, dùng để phân định khi hòa. Khi hai người có cùng một đôi, kicker cao nhất thắng — nếu lá đó cũng hòa, lá tiếp theo quyết định. Kicker tốt nhất có thể là lá A.
+A. Kicker là lá nằm trong 5 lá mạnh nhất nhưng không thuộc tổ hợp chính (đôi, hai đôi, sám cô, tứ quý) của bạn, dùng để phân định khi hòa. Khi hai người có cùng một đôi, kicker cao nhất thắng — nếu lá đó cũng hòa, lá tiếp theo quyết định. Kicker tốt nhất có thể là lá A.
 
 **Q. Hai người có thể có tay bài giống hệt nhau không?**
 
@@ -398,7 +398,7 @@ A. Trong Hold'em thì không — bạn tạo 5 lá mạnh nhất từ bất kỳ
 
 **Q. Set và trips khác nhau ở đâu?**
 
-A. Cả hai đều là sám cô. *Set* là cầm đôi trên tay + 1 lá trên board (giấu rất kín); *trips* là 1 lá trên tay + board có đôi (dễ đọc hơn). Set ăn được nhiều chip hơn.
+A. Cả hai đều là sám cô. *Set* là cầm đôi trên tay + 1 lá trên board (giấu rất kín); *trips* là 1 lá trên tay + board có đôi (dễ đọc hơn). Set thường thắng được pot lớn hơn.
 
 **Q. Bài mạnh nhất trong poker là gì?**
 
@@ -414,7 +414,7 @@ A. Có. Thùng phá sảnh (#2) thắng tứ quý (#3) — năm lá liên tiếp
 
 **Q. Bài yếu nhất trong poker là gì?**
 
-A. Xét tay bài năm lá, tệ nhất có thể là 7-5-4-3-2 khác chất ("7 cao nhất"). Đó là mậu thầu thấp nhất không tạo thành đôi, sảnh hay thùng — tay bài "không có gì" kinh điển. Trong Hold'em, vì bạn dùng 5 lá mạnh nhất trong 7 lá, tay bài yếu nhất bạn thực sự có thể có khi kết thúc là 9-8-7-5-4 (từ 9-8-7-5-4-3-2 khác chất).
+A. Xét tay bài năm lá, tệ nhất có thể là 7-5-4-3-2 khác chất ("7 cao nhất"). Đó là mậu thầu thấp nhất không tạo thành đôi, sảnh hay thùng — tay bài "không có gì" kinh điển. Trong Hold'em, vì bạn dùng 5 lá mạnh nhất trong 7 lá, tay bài yếu nhất bạn thực sự có thể có khi kết thúc là 9-8-7-5-4 (từ 9-8-7-5-4-3-2 không có năm lá nào cùng chất).
 
 **Q. Trong poker có 3 đôi không?**
 
@@ -442,7 +442,7 @@ A. Nếu được chia ngẫu nhiên 5 lá, xác suất là 1 trên 649.740 (0,0
 
 1. **Thứ tự:** thùng phá sảnh hoàng gia > thùng phá sảnh > tứ quý > cù lũ > thùng > sảnh > sám cô > hai đôi > một đôi > mậu thầu.
 2. **Cái bẫy:** thùng (#5) thắng sảnh (#6) — và bất kỳ board có đôi nào cũng có thể giấu một cù lũ thắng cả hai.
-3. **Thực tế:** phần lớn pot được thắng bằng một đôi hoặc mậu thầu, nên kicker của bạn đáng giá hơn bạn tưởng.
+3. **Thực tế:** bảy lá ngẫu nhiên kết thúc thành một đôi hoặc mậu thầu khoảng 61% số lần, nên kicker của bạn đáng giá hơn bạn tưởng.
 
 Học thứ tự trong một buổi chiều, luyện các cặp dễ nhầm, và chạy phép quét thùng → sảnh → đôi trên mỗi board. Làm vậy thì bạn sẽ không bao giờ đẩy pot nhầm phía nữa.
 

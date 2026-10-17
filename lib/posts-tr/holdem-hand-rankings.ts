@@ -51,7 +51,7 @@ Buradan başla. (Sıralama beş kartlık olasılıklarla belirlendi; yedi kartta
 Masa adlarında Sıralı Renk = Sıralı Floş, Renk = Floş demektir; rehberin geri kalanında Floş adlarını kullanıyoruz.
 
 > **Tartışmaları bitiren kural**
-> Çift ve Yüksek Kart birlikte, river'a kadarki tüm yedi kartlık ellerin yaklaşık %61'ini oluşturur. Büyük eller akılda kaldığı için sık görünür — ama potların çoğu bir çift ya da yüksek kart ve ona eşlik eden kicker ile belirlenir.
+> Çift ve Yüksek Kart birlikte, river'a kadarki tüm yedi kartlık ellerin yaklaşık %61'ini oluşturur. Büyük eller akılda kaldığı için sık görünür — ama rastgele yedi kartlık her on elden altısı bir çift ya da daha zayıf bir elle biter; bu yüzden kicker, yeni başlayanların sandığından çok daha sık önem taşır.
 
 :::quiz:::
 
@@ -113,7 +113,7 @@ Bir de kelime karışıklığı var: "renk" hem kartın türü hem de floş elin
 
 **A♠ K♠ Q♠ J♠ 10♠** — en yüksek straight flush ve pokerin en iyi eli.
 
-Yenilemez; mümkün olan tek beraberlik, tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler. Yaklaşık her 31.000 elde bir gelir, bu yüzden birçok oyuncu yıllarca onu yapamaz. Onu kendin yaptığında — tamamen board'da yatan bir royal flush değilse — tek işin mümkün olduğunca çok çip koymaktır.
+Yenilemez; mümkün olan tek beraberlik, tamamen board'da yatan ve herkesin paylaştığı bir royal flush'tır, bu da potu böler. Yaklaşık her 31.000 elde bir gelir, bu yüzden çok fazla el oynamıyorsan onu yapmadan çok uzun süre geçirebilirsin. Onu kendin yaptığında — tamamen board'da yatan bir royal flush değilse — tek işin mümkün olduğunca çok çip koymaktır.
 
 ### #2 — Straight Flush
 
@@ -174,7 +174,7 @@ Onu oluşturmanın üç yolu vardır ve fark önemlidir:
 - **Trips:** board'daki bir çift artı senin bir kartın. Rakip için okuması daha kolay ve daha çok paylaşılır.
 - **Board'da üçlü:** üç kartın üçü de board'dadır (örneğin ortada J♣ J♠ J♥). Herkes paylaşır; biri straight ya da daha güçlü bir el yapmadıkça sizi yalnızca kicker'lar ayırır.
 
-Set daha çok çip kazandırır çünkü kimse onu görmez.
+Set çoğu zaman daha büyük potlar kazandırır çünkü gelişini görmek çok zordur.
 
 ### #8 — Two Pair (İki Çift)
 
@@ -190,7 +190,7 @@ Set daha çok çip kazandırır çünkü kimse onu görmez.
 
 **K♠ K♦ 9♥ 6♣ 2♠** — aynı değerden iki kart.
 
-Hold'em'in en yaygın tamamlanmış eli. Aynı değerde iki çift karşılaşırsa kicker belirler: **çiftin değeri → kicker 1 → kicker 2 → kicker 3**, yüksekten düşüğe. "Aynı el" yenilgilerinin çoğu burada olur: kicker'ına dikkat et.
+Hold'em'in en yaygın tamamlanmış eli. Çift elleri şu sırayla karşılaştırılır: **çiftin değeri → kicker 1 → kicker 2 → kicker 3**, yüksekten düşüğe — yani iki oyuncu aynı çifti tutuyorsa kicker'lar belirler. "Aynı el" yenilgilerinin çoğu burada olur: kicker'ına dikkat et.
 
 ### #10 — High Card (Yüksek Kart)
 
@@ -198,7 +198,7 @@ Hold'em'in en yaygın tamamlanmış eli. Aynı değerde iki çift karşılaşır
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — hiçbir şey bağlanmıyor.
 
-Showdown'da en yüksek kart kazanır, sonra bir sonraki, ve beşi boyunca böyle gider. Beşi de eşleşirse pot bölünür. Bir blöf görüldüğünde ve tutmadığında elinde kalan budur.
+Showdown'da en yüksek kart kazanır, sonra bir sonraki, ve beşi boyunca böyle gider. Beşi de eşleşirse pot bölünür. Bir blöfün görülüp draw'ının tutmadığında elinde çoğu zaman kalan budur.
 
 ---
 
@@ -281,7 +281,7 @@ Board'un "oynadığı" diğer durumları ve iki çift beraberliklerini [kicker v
 
 Sıralama keyfî değil — saf olasılık. **Bir eli beş karttan yapmak ne kadar zorsa, o kadar yukarıdadır.** 52 kartlık destede, aynı türden beş kart yapmanın yolları, herhangi bir türden beş ardışık yapmaktan daha azdır — bu yüzden flush, kentin üstündedir. Bu tek ilke tüm sıralamayı açıklar.
 
-Karşılaşacağın büyük istisnayı da açıklar: 2'den 5'e kadar kartların çıkarıldığı **Short Deck (6+) Hold'em**'de flush'lar full house'lardan daha zor olur — bu yüzden o formatta **flush, full house'u yener**. Matematik değişti, sıralama değişti. Varyantlara göre farklar aşağıda.
+Yüksek el oyunlarında karşılaşacağın büyük istisnayı da açıklar: 2'den 5'e kadar kartların çıkarıldığı **Short Deck (6+) Hold'em**'de flush'lar full house'lardan daha zor olur — bu yüzden o formatta **flush, full house'u yener**. Matematik değişti, sıralama değişti. Varyantlara göre farklar aşağıda.
 
 ---
 
@@ -291,7 +291,7 @@ Süre azaldığında, board her tamamlandığında şunu sırayla tara:
 
 **1. Önce türler** — board'da aynı türden üç veya daha fazla kart var mı? Varsa flush mümkün. Kendi türüne bak.
 
-**2. Sonra bağlantı** — değer olarak yakın kartlar var mı (8-9-10 gibi)? Varsa kent canlı.
+**2. Sonra bağlantı** — herhangi bir beş değerlik aralıkta üç farklı değer var mı (8-9-10 gibi)? Varsa kent canlı.
 
 **3. En son çiftler** — board eşlenmiş mi? Eşlenmişse full house ve kareler devrede, flush'ın veya kentin tehlikede olabilir.
 
@@ -307,13 +307,13 @@ Eğitimli oyuncular board'u bu sırayla okur — önce tehlike (board'da flush/k
 | **2** | Sadece kafa karıştıran kapışmaları çalış: flush vs kent, full house vs flush | 3 gün |
 | **3** | Poker yayınları izle ve kazananı krupiyeden önce söyle | 1-2 hafta |
 
-Önce gruplamak, sıralamanın on rastgele şey gibi görünmesini engeller. 2. adımdaki kafa karıştıran kapışmalar yeni başlayan hatalarının %90'ına neden olur, o yüzden bolca çalış.
+Önce gruplamak, sıralamanın on rastgele şey gibi görünmesini engeller. 2. adımdaki kafa karıştıran kapışmalar yeni başlayanların en sık takıldığı yerdir, o yüzden bolca çalış.
 
 ---
 
 ## Varyanta göre el sıralaması
 
-Sıralama neredeyse tüm poker varyantlarında aynıdır, birkaç önemli farkla.
+Sıralama neredeyse tüm yüksek el poker varyantlarında aynıdır, birkaç önemli farkla.
 
 | Oyun | Sıralama | Temel fark |
 |------|------|------|
@@ -322,7 +322,7 @@ Sıralama neredeyse tüm poker varyantlarında aynıdır, birkaç önemli farkla
 | **Seven-Card Stud** | Standart | Ortak kart yok (deste yetmezse nadiren paylaşılan tek bir son kart hariç) |
 | **Short Deck (6+)** | Değiştirilmiş | Flush full house'u yener; A-6-7-8-9 en düşük kenttir (As düşük oynar; 2–5 çıkarıldığı için doğrudan 6'ya bağlanır) |
 
-Özet: standart sıralamayı bir kez öğren, neredeyse her oyunda işine yarar. Sadece Omaha'nın "tam olarak iki" kuralını ve Short Deck'te flush'ın yükselişini hatırla. Türk pokeri ayrı bir oyundur; bu rehber 52 kartlık Texas Hold'em içindir.
+Özet: standart sıralamayı bir kez öğren, neredeyse her yüksek el oyununda işine yarar (Razz gibi lowball oyunları elleri tersine sıralar). Sadece Omaha'nın "tam olarak iki" kuralını ve Short Deck'te flush'ın yükselişini hatırla. Türk pokeri ayrı bir oyundur; bu rehber 52 kartlık Texas Hold'em içindir.
 
 ---
 
@@ -351,7 +351,7 @@ A. Full büyüktür. Full (full house, #4) floşu (#5) — masadaki adıyla reng
 
 **Q. Kicker nedir?**
 
-A. Kicker (yan kart), tamamlanmış elinin parçası olmayan ama aynı el türünde beraberliği bozan karttır. Örneğin A-A-K ile A-A-Q'da ikisinde de As çifti var; papaz kicker'ı olan kazanır — kicker da eşitse bir sonraki yan kart belirler. Hangi elde oynadığını ve board'un ne zaman oynadığını [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısında anlattım.
+A. Kicker (yan kart), en iyi beş kartının içinde olup çiftin (ya da üçlünün, iki çiftin, karenin) kendisine ait olmayan ama aynı el türünde beraberliği bozan karttır. Örneğin A-A-K ile A-A-Q'da ikisinde de As çifti var; papaz kicker'ı olan kazanır — kicker da eşitse bir sonraki yan kart belirler. Hangi elde oynadığını ve board'un ne zaman oynadığını [kicker ve split pot kuralları](/tr/blog/holdem-tiebreak-rules) yazısında anlattım.
 
 **Q. İki oyuncuda aynı el olabilir mi?**
 
@@ -363,7 +363,7 @@ A. Hold'em'de hayır — en iyi beşini iki kartın ve beş ortak kartın herhan
 
 **Q. Set ile trips arasındaki fark ne?**
 
-A. İkisi de üçlü. *Set*, elindeki bir çift artı bir board kartıdır (iyi gizlenmiş); *trips*, board'daki bir çift artı senin bir kartın (okuması daha kolay). Set daha çok çip kazandırır.
+A. İkisi de üçlü. *Set*, elindeki bir çift artı bir board kartıdır (iyi gizlenmiş); *trips*, board'daki bir çift artı senin bir kartın (okuması daha kolay). Set çoğu zaman daha büyük potlar kazandırır.
 
 **Q. Pokerde en güçlü el nedir?**
 
@@ -399,7 +399,7 @@ A. Evet. Üçlü #7, iki çift #8, yani üçlü kazanır. İki çift yalnızca �
 
 1. **Sıralama:** Royal Flush > Straight Flush > Kare > Full House > Flush > Kent > Üçlü > İki Çift > Çift > Yüksek Kart.
 2. **Tuzak:** flush (#5) kenti (#6) yener — ve her eşlenmiş board ikisini de yenen bir full house gizleyebilir.
-3. **Gerçek:** potların çoğu çift veya yüksek kartla kazanılır, yani kicker'ın sandığından değerlidir.
+3. **Gerçek:** rastgele yedi kart yaklaşık %61 oranında çift veya yüksek kartla biter, yani kicker'ın sandığından değerlidir.
 
 Sıralamayı bir öğleden sonrada öğren, kafa karıştıran kapışmaları çalış ve her board'da "floş → kent → çiftler" taramasını yap. Bunu yap, bir daha asla potu yanlış tarafa itmeyeceksin. Bir elin preflop'tan river'a nasıl aktığını görmek istersen [Texas Hold'em oyun sırası](/tr/blog/holdem-game-order) yazısıyla devam et.
 `.trim(),

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-17",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -26,7 +26,7 @@ export const POST: Post = {
     "czy kareta ma kicker",
   ],
   content: `
-Ręka, która w końcu nauczyła mnie, czym jest kicker, kosztowała mnie cały buy-in. Miałem ==b:A♠ 9♣==, board sparował mojego asa, a ja zagrałem all-in, przekonany, że top para wystarczy. Rywal odwrócił ==b:A♥ K♦== — ta sama para asów, ale jego król okazał się wyższym kickerem i pula pojechała na jego stronę stołu. Nie przegrałem z lepszym *układem*; przegrałem z lepszą ==kartą boczną.== Ta karta boczna to właśnie kicker i rozstrzyga więcej pul, niż podejrzewa jakikolwiek początkujący.
+Ręka, która w końcu nauczyła mnie, czym jest kicker, kosztowała mnie cały buy-in. Miałem ==b:A♠ 9♣==, board sparował mojego asa, a ja zagrałem all-in, przekonany, że top para wystarczy. Rywal odwrócił ==b:A♥ K♦== — ta sama para asów, ale jego król okazał się wyższym kickerem i pula pojechała na jego stronę stołu. Nie przegrałem z wyższym *rodzajem* układu; przegrałem z lepszą ==kartą boczną.== Ta karta boczna to właśnie kicker i rozstrzyga więcej pul, niż podejrzewa jakikolwiek początkujący.
 
 ==Kicker to rozstrzygnięcie remisu wbudowane w same zasady pokera — gdy dwóch graczy ma układ tej samej wartości, wygrywa najwyższa pozostała karta.== Większość poradników daje ci jednozdaniową definicję i przykład AK kontra AQ. Tu dostajesz pełny obraz: dokładnie które układy mają kicker (i ile), jedyny wyjątek, który wszyscy mylą, i dlaczego „board gra” oznacza, że twój kicker nagle przestaje mieć jakiekolwiek znaczenie.
 
@@ -51,7 +51,7 @@ Gdzie kicker mieści się w całej hierarchii [układów pokerowych](/pl/blog/ho
 
 Najważniejsze: kicker ==nigdy nie bije układu wyższej kategorii.== Para króli z dwójką jako kickerem nadal miażdży parę dziesiątek z asem jako kickerem — najpierw wartość układu, kicker tylko do rozstrzygania remisów. Kickery liczą się wyłącznie wtedy, gdy ==r:wartości układów są identyczne==: para kontra ta sama para, trójka kontra ta sama trójka.
 
-Powiedzmy, że masz A-K, rywal ma A-Q, a na boardzie spada as. Obaj macie „parę asów” — identyczną wartość. Teraz decydują karty boczne i twój król bije jego damę. Nikt nie ułożył lepszego układu; kicker po prostu po cichu zrobił swoje.
+Powiedzmy, że masz A-K, rywal ma A-Q, a na boardzie spada as. Obaj macie „parę asów” — identyczną wartość. Teraz decydują karty boczne i twój król bije jego damę. Nikt nie ułożył układu wyższej kategorii; kicker po prostu po cichu zrobił swoje.
 
 ---
 
@@ -131,16 +131,16 @@ Board to ==b:10♠ J♦ Q♣ K♥ A♠== — gotowy strit od dziesiątki do asa 
 
 ## Dlaczego A9 przegrywa z AK? (Zdominowany as)
 
-**Ręka jest „zdominowana”, gdy dzieli kartę z mocniejszą ręką i niemal za każdym razem, gdy trafi, przegra walkę na kickery — klasyczna pułapka to słaby as, jak A9 przeciwko AK.** Tu kickery przestają być ciekawostką i zaczynają kosztować pieniądze.
+**Ręka jest „zdominowana”, gdy dzieli kartę z mocniejszą ręką i przegrywa walkę na kickery za każdym razem, gdy obie ręce sparują tę wspólną kartę i nic innego się nie poprawi — klasyczna pułapka to słaby as, jak A9 przeciwko AK.** Tu kickery przestają być ciekawostką i zaczynają kosztować pieniądze.
 
 ![Dwie ręce startowe obok siebie na zielonym suknie — A-K obok A-9 — ten sam as ze słabszym kickerem staje się zdominowaną pułapką](/images/holdem-kicker-dominated.webp "Ten sam as, inny los: to kicker oddziela rękę premium od zdominowanej")
 
-Wracam do mojego buy-inu. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, bez strita i bez koloru.
+Wracam do mojego buy-inu. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, kolor niemożliwy, a strita nie ma żaden z nas.
 
 - **A9:** A♠ 9♣ → para asów, najlepsze pięć ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → para asów, najlepsze pięć ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Znowu ta sama para — a moja dziewiątka nawet nie dostała głosu. Dama z boardu zepchnęła ją na miejsce drugiego kickera, a porównanie skończyło się na pierwszym: jego K nad damą z boardu — więc mój „kicker” był w praktyce ==r:martwy==, zanim rozdanie się zaczęło. Na tym polega dominacja: gdy trafiasz swojego asa, często po prostu płacisz większemu asowi. Właśnie dlatego [tabela rąk startowych](/pl/hand-chart) traktuje A9 offsuit o wiele ostrożniej niż AK — kicker to różnica między ręką premium a pułapką.
+Znowu ta sama para — a moja dziewiątka nawet nie dostała głosu. Dama z boardu zepchnęła ją na miejsce drugiego kickera, a porównanie skończyło się na pierwszym: jego K nad damą z boardu — więc mój „kicker” był w praktyce ==r:martwy==, dopóki obaj graliśmy tylko parą asów. Na tym polega dominacja: gdy trafiasz swojego asa, często po prostu płacisz większemu asowi. Właśnie dlatego [tabela rąk startowych](/pl/hand-chart) traktuje A9 offsuit o wiele ostrożniej niż AK — kicker to różnica między ręką premium a pułapką.
 
 ---
 
@@ -181,7 +181,7 @@ A. Tak, kareta ma jednokartowy kicker, ale w Hold'em rzadko ma on znaczenie. Roz
 
 **Q. Czy kicker liczy się przy trójce?**
 
-A. Tak. Trójka ma dwa kickery, więc gdy dwóch graczy ułoży tę samą trójkę, remis rozstrzygają dwie kolejne najwyższe karty — na boardzie K♣ K♥ 7♦ 5♣ 2♠ ręka K♠ A♠ gra K-K-K-A-7 i bije K-K-K-Q-7 ręki K♦ Q♦, bo as jest wyższym kickerem niż dama. (Prawdziwy *set* z pary w ręce rzadko kończy się remisem, bo tylko jeden gracz może mieć tę dokładną parę.)
+A. Tak. Trójka ma dwa kickery, więc gdy dwóch graczy ułoży tę samą trójkę, remis rozstrzygają dwie kolejne najwyższe karty — na boardzie K♣ K♥ 7♦ 5♣ 2♠ ręka K♠ A♠ gra K-K-K-A-7 i bije K-K-K-Q-7 ręki K♦ Q♦, bo as jest wyższym kickerem niż dama. (Prawdziwy *set* z pary w ręce nie może tak zremisować — każdej wartości są tylko cztery karty, więc nikt inny nie może mieć trzech kart tej samej wartości.)
 
 **Q. Czy dwie pary mają kicker?**
 
@@ -197,11 +197,11 @@ A. To zależy od układu: najwyższa karta ma cztery kickery (wszystkie pięć k
 
 **Q. Jaki kicker jest dobry w pokerze?**
 
-A. Wysoki — kicker as albo król jest mocny, a niski kicker, jak dziewiątka, zostawia cię „zdominowanym”. Dlatego AK i AQ są dużo lepsze niż A9 czy A5: gdy dwóch graczy sparuje asa i nie ułoży nic lepszego, pulę bierze najwyższy kicker.
+A. Wysoki — kicker as albo król jest mocny, a niski kicker, jak dziewiątka, zostawia cię „zdominowanym”, gdy tylko wpadniesz na większego asa. Dlatego AK i AQ są dużo lepsze niż A9 czy A5: gdy dwóch graczy sparuje asa i nie ułoży nic lepszego, wygrywa wyższy kicker — chyba że karty z boardu przewyższają oba kickery i pula zostaje podzielona.
 
 **Q. Co to jest kicker as (albo kicker król)?**
 
-A. Kicker as oznacza, że twoja najwyższa karta boczna to as — najmocniejszy możliwy kicker, więc „top para z kickerem asem” wygrywa prawie każdy showdown na tej samej parze. Kicker król jest następny w kolejności. Właśnie dlatego A-K i A-Q biją słabego asa, jak A-9: gdy dwóch graczy sparuje asa i nie ułoży nic lepszego, pulę bierze najwyższy kicker.
+A. Kicker as oznacza, że twoja najwyższa karta boczna to as — najmocniejszy możliwy kicker, więc „top para z kickerem asem” nigdy nie przegra na pierwszym kickerze z kimś, kto ma tę samą parę. Kicker król jest następny w kolejności. Właśnie dlatego A-K i A-Q biją słabego asa, jak A-9: gdy dwóch graczy sparuje asa i nie ułoży nic lepszego, pulę bierze wyższy kicker — chyba że karty z boardu przewyższają oba kickery i pula zostaje podzielona.
 
 **Q. Co znaczy „board gra”?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un 
 
 Una escalera solo necesita cinco valores seguidos, y ==**los palos no importan**==. Esa libertad crea una cantidad enorme de combinaciones. El color es lo contrario: cada una de las cinco cartas tiene que compartir ==**el mismo palo**==, y solo uno de los cuatro palos puede lograrlo a la vez. ==g:Muchas menos formas de llegar significa que el color es más raro — y entre las categorías de mano, la más rara siempre ocupa un puesto más alto.==
 
-:::tip[Si tienes un proyecto de color y tu rival va a la escalera, ganas el choque — cuando **ambos** proyectos se completan, tu color gana a su escalera en el showdown. Eso no es lo mismo que ser favorito: si su proyecto de escalera viene con una pareja o con cartas más altas, puede seguir por delante antes del river.]:::
+:::tip[Si tienes un proyecto de color y tu rival va a la escalera, ganas el choque — cuando **ambos** proyectos se completan, tu color gana a su escalera en el showdown (la rara excepción: la carta que completa su escalera también le da a él una escalera de color de tu palo). Eso no es lo mismo que ser favorito: si su proyecto de escalera viene con una pareja o con cartas más altas, puede seguir por delante antes del river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Tienes **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, un color con As. Tu rival
 
 ## ¿Qué le gana al color en el póker?
 
-Tu color es favorito contra casi toda la baraja — pero exactamente **cuatro tipos de mano** (más un color más alto) le ganan:
+Tu color gana a todas las manos que están por debajo en la jerarquía — pero exactamente **cuatro tipos de mano** (más un color más alto) le ganan:
 
 :::compare
 Le gana a tu color | Pierde contra tu color
@@ -129,7 +129,7 @@ Cuando dos jugadores tienen el *mismo* tipo de mano, el ganador se decide carta 
 
 ## Color vs Color, Escalera vs Escalera — ¿quién gana el empate?
 
-Sí, un color puede ser perfectamente más alto que otro. **Los palos son irrelevantes** — compara las cinco cartas de arriba abajo, la más alta primero:
+Gana la mano más alta — y sí, un color puede ser perfectamente más alto que otro. **Los palos son irrelevantes** — compara las cinco cartas de arriba abajo, la más alta primero:
 
 | Jugador | Color | Resultado |
 |--------|------|------|

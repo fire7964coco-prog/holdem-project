@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat ace di meja membuat keduanya sama-sama hanya punya sepasang ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dua pemain membalik A-K dan A-Q saat showdown dengan sebuah ace di board — kicker king yang menentukan siapa pemenang pot",
   tags: ["kicker poker", "apa itu kicker di poker", "aturan kicker", "apakah flush punya kicker", "playing the board", "dominated ace", "kartu kicker", "apakah four of a kind punya kicker"],
   content: `
-Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, board memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi king-nya mengalahkan kicker saya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *tangan* yang lebih baik; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
+Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, board memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi king-nya mengalahkan kicker saya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *jenis* tangan yang lebih tinggi; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
 
 ==Kicker adalah pemecah seri yang sudah tertanam di poker itu sendiri — saat dua pemain punya nilai tangan yang sama, kartu sisa tertinggi yang menang.== Kebanyakan panduan hanya memberi definisi satu baris dan contoh AK-vs-AQ. Yang ini memberi Anda gambaran utuh: persisnya tangan mana yang punya kicker (dan berapa banyak), satu pengecualian yang salah dipahami semua orang, dan kenapa "playing the board" berarti kicker Anda tiba-tiba tidak berarti sama sekali.
 
@@ -42,7 +42,7 @@ Di mana kicker cocok dalam gambaran besar [urutan kartu poker](/id/blog/holdem-h
 
 Inti idenya: kicker ==tak pernah mengalahkan tangan bernilai lebih tinggi.== Sepasang king dengan kicker deuce tetap menghancurkan sepasang ten dengan kicker ace — nilai tangan dulu, kicker hanya sebagai pemecah seri. Kicker baru penting saat ==r:nilai tangannya identik==: pair vs. pair yang sama, trips vs. trips yang sama.
 
-Misalnya Anda pegang A-K dan lawan pegang A-Q, lalu meja memasangkan sebuah ace. Kalian berdua punya "sepasang ace" — nilai tangan identik. Kini kartu samping yang menentukan, dan king Anda mengungguli queen mereka. Tak ada yang membuat tangan lebih baik; kicker hanya diam-diam menjalankan tugasnya.
+Misalnya Anda pegang A-K dan lawan pegang A-Q, lalu meja memasangkan sebuah ace. Kalian berdua punya "sepasang ace" — nilai tangan identik. Kini kartu samping yang menentukan, dan king Anda mengungguli queen mereka. Tak ada yang membuat tangan bernilai lebih tinggi; kicker hanya diam-diam menjalankan tugasnya.
 
 ---
 
@@ -122,16 +122,16 @@ Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing
 
 ## The Dominated Ace: Kenapa A9 Kalah dari AK
 
-**Sebuah tangan "terdominasi" saat ia berbagi kartu dengan tangan lebih kuat dan hampir selalu kalah pertarungan kicker setiap kali ia nyambung — jebakan klasiknya adalah ace lemah seperti A9 melawan AK.** Di sinilah kicker berhenti jadi trivia dan mulai memakan uang.
+**Sebuah tangan "terdominasi" saat ia berbagi kartu dengan tangan lebih kuat dan kalah pertarungan kicker setiap kali kedua tangan memasangkan kartu yang sama itu dan tak ada yang membaik lagi — jebakan klasiknya adalah ace lemah seperti A9 melawan AK.** Di sinilah kicker berhenti jadi trivia dan mulai memakan uang.
 
 ![Dua starting hand berdampingan di atas felt hijau — A-K di sebelah A-9 — memperlihatkan bagaimana ace yang sama dengan kicker lebih lemah menjadi jebakan terdominasi](/images/holdem-kicker-dominated.webp "Ace yang sama, nasib berbeda: kicker-lah yang memisahkan tangan premium dari yang terdominasi")
 
-Kembali ke buy-in saya. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, tak ada straight atau flush di sana.
+Kembali ke buy-in saya. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, flush tak mungkin, dan tak ada straight untuk kami berdua.
 
 - **A9:** A♠ 9♣ → sepasang ace, lima terbaik ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → sepasang ace, lima terbaik ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di board, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di board — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== sebelum hand dimulai. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
+Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di board, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di board — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== selama kami berdua hanya bermain dengan sepasang ace. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
 
 ---
 
@@ -172,7 +172,7 @@ A. Ya, four of a kind punya kicker satu-kartu, tapi jarang berpengaruh di Hold'e
 
 **Q. Apakah kicker penting untuk three of a kind?**
 
-A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips yang sama, dua kartu tertinggi berikutnya yang memecah seri — di board K♣ K♥ 7♦ 5♣ 2♠, pemain dengan K♠ A♠ memainkan K-K-K-A-7 dan menang atas K-K-K-Q-7 milik K♦ Q♦, karena ace mengungguli queen. (*Set* asli dari pocket pair hampir tak pernah seri, karena hanya satu pemain yang bisa pegang pasangan itu.)
+A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips yang sama, dua kartu tertinggi berikutnya yang memecah seri — di board K♣ K♥ 7♦ 5♣ 2♠, pemain dengan K♠ A♠ memainkan K-K-K-A-7 dan menang atas K-K-K-Q-7 milik K♦ Q♦, karena ace mengungguli queen. (*Set* asli dari pocket pair tidak bisa seri dengan cara itu — karena tiap nilai hanya ada empat kartu, tak ada pemain lain yang bisa pegang tiga kartu bernilai sama.)
 
 **Q. Apakah two pair punya kicker?**
 
@@ -188,11 +188,11 @@ A. Tergantung tangannya: high card pakai empat kicker (kelimanya dibandingkan be
 
 **Q. Apa itu kicker yang bagus di poker?**
 
-A. Yang tinggi — kicker ace atau king itu kuat, sedangkan kicker rendah seperti nine membuat Anda "terdominasi". Inilah kenapa AK dan AQ jauh lebih baik daripada A9 atau A5: saat dua pemain memasangkan ace-nya dan tak membentuk apa pun yang lebih baik, kicker terbesar yang memenangkan pot.
+A. Yang tinggi — kicker ace atau king itu kuat, sedangkan kicker rendah seperti nine membuat Anda "terdominasi" setiap kali bertemu ace yang lebih besar. Inilah kenapa AK dan AQ jauh lebih baik daripada A9 atau A5: saat dua pemain memasangkan ace-nya dan tak membentuk apa pun yang lebih baik, kicker yang lebih besar yang menang — kecuali kartu board sendiri lebih tinggi dari kedua kicker dan pot dibagi.
 
 **Q. Apa itu ace kicker (atau king kicker)?**
 
-A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat yang ada, sehingga "top pair, ace kicker" memenangkan hampir semua showdown pair-sama. King kicker adalah yang terbaik berikutnya. Persis inilah kenapa A-K dan A-Q menang atas ace lemah seperti A-9: saat dua pemain memasangkan ace-nya dan tak membentuk apa pun yang lebih baik, kicker terbesar yang mengambil pot.
+A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat yang ada, sehingga "top pair, ace kicker" tak pernah bisa kalah di kicker pertama dari pemain yang memegang pair yang sama. King kicker adalah yang terbaik berikutnya. Persis inilah kenapa A-K dan A-Q menang atas ace lemah seperti A-9: saat dua pemain memasangkan ace-nya dan tak membentuk apa pun yang lebih baik, kicker yang lebih besar yang mengambil pot — kecuali kartu board sendiri lebih tinggi dari kedua kicker dan pot dibagi.
 
 **Q. Apa arti "playing the board"?**
 

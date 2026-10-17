@@ -60,7 +60,7 @@ Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in 
 </div>
 
 > **Die eine Regel, die Diskussionen beendet**
-> Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber die meisten Pots werden mit einem Paar oder einer High Card und dem passenden [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") entschieden.
+> Paar und High Card machen zusammen rund 61% aller Sieben-Karten-Hände bis zum River aus. Große Hände wirken häufig, weil man sie sich merkt – aber sechs von zehn zufälligen Sieben-Karten-Händen enden als Paar oder schwächer, und genau deshalb zählt der [Kicker](/de/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") viel öfter, als Anfänger erwarten.
 
 **[Pokerblätter-Reihenfolge als PDF herunterladen (A4, zum Ausdrucken)](/downloads/poker-hand-rankings-de.pdf)** – alle 10 Hände mit Beispielkarten und den Wahrscheinlichkeiten aus 7 Karten, auf einer Seite. Für den Pokerabend ausdrucken und neben den Tisch legen. Wenn du zusätzlich Setzrunden und Chip-Setup brauchst, steht beides im [Regel-PDF für Anfänger](/downloads/texas-holdem-rules-for-beginners-de.pdf).
 
@@ -94,7 +94,7 @@ Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt bei
 
 **A♠ K♠ Q♠ J♠ 10♠** – der höchste Straight Flush und die beste Hand im Poker.
 
-Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört – dann wird der Pot geteilt. Du siehst ihn etwa einmal alle 31.000 Hände, daher treffen ihn viele Spieler jahrelang nicht. Wenn du ihn selbst bildest – nicht einen, der komplett auf dem Board liegt –, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
+Sie kann nicht geschlagen werden; der einzige mögliche Gleichstand ist ein Royal Flush, der komplett auf dem Board liegt und allen gemeinsam gehört – dann wird der Pot geteilt. Du siehst ihn etwa einmal alle 31.000 Hände, wenn du also nicht sehr viele Hände spielst, kannst du sehr lange ohne einen bleiben. Wenn du ihn selbst bildest – nicht einen, der komplett auf dem Board liegt –, ist deine einzige Aufgabe, so viele Chips wie möglich hineinzubekommen.
 
 ### #2 – Straight Flush
 
@@ -157,7 +157,7 @@ Es gibt drei Wege, ihn zu bilden, und der Unterschied zählt:
 - **Trips:** ein Paar auf dem Board plus eine deiner Karten. Für den Gegner leichter zu lesen und häufiger geteilt.
 - **Board-Trips:** alle drei liegen auf dem Board (z. B. J♣ J♠ J♥ in der Mitte). Alle teilen sie sich – solange niemand eine Straße oder Besseres bildet, trennen euch nur die Kicker.
 
-Ein Set holt mehr Chips, weil niemand es kommen sieht.
+Ein Set holt oft größere Pots, weil es so schwer kommen zu sehen ist.
 
 ### #8 – Zwei Paare
 
@@ -173,7 +173,7 @@ Vergleich in dieser Reihenfolge: **höheres Paar → niedrigeres Paar → Kicker
 
 **K♠ K♦ 9♥ 6♣ 2♠** – zwei Karten gleichen Werts.
 
-Die häufigste fertige Hand im Hold'em. Zwei gleiche Paare entscheiden sich über die Kicker: **Wert des Paars → Kicker 1 → Kicker 2 → Kicker 3**, von hoch nach niedrig. Hier passieren die meisten „dieselbe Hand“-Niederlagen – achte auf deinen Kicker.
+Die häufigste fertige Hand im Hold'em. Zwei Paar-Hände werden so verglichen: **Wert des Paars → Kicker 1 → Kicker 2 → Kicker 3**, von hoch nach niedrig – haben beide Spieler dasselbe Paar, entscheiden also die Kicker. Hier passieren die meisten „dieselbe Hand“-Niederlagen – achte auf deinen Kicker.
 
 ### #10 – High Card
 
@@ -181,7 +181,7 @@ Die häufigste fertige Hand im Hold'em. Zwei gleiche Paare entscheiden sich übe
 
 **A♣ Q♠ 9♥ 5♦ 3♣** – nichts verbindet sich.
 
-Beim Showdown gewinnt die höchste Karte, dann die nächste, und so weiter über alle fünf. Stimmen alle fünf überein, wird geteilt. Das bleibt dir, wenn ein Bluff gecallt wird und nichts trifft.
+Beim Showdown gewinnt die höchste Karte, dann die nächste, und so weiter über alle fünf. Stimmen alle fünf überein, wird geteilt. Das bleibt dir oft, wenn ein Bluff gecallt wird und dein Draw nicht ankommt.
 
 ---
 
@@ -211,7 +211,7 @@ Paar|Wert des Paars → 3 Kicker|+Kicker zählt
 High Card|Alle 5, von hoch nach niedrig|+Kicker zählt
 :::
 
-Ein **Kicker** ist einfach eine Karte, die nicht Teil deiner fertigen Hand ist, aber trotzdem zum Brechen von Gleichständen genutzt wird. Bei A-A-K gegen A-A-Q haben beide ein Ass-Paar – der König-Kicker gewinnt. Deshalb achten Profis so sehr auf die *Qualität* ihrer hohen Karten, nicht nur darauf, ob sie ein Paar getroffen haben. Alle Gleichstand-Regeln je Hand an einem Ort findest du im [Kicker- und Tiebreaker-Leitfaden](/de/blog/holdem-tiebreak-rules); stimmen die besten fünf Karten exakt überein, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
+Ein **Kicker** ist eine Karte deiner besten fünf, die nicht selbst zum Paar (oder zu Drilling, Zwei Paaren, Vierling) gehört, aber trotzdem Gleichstände bricht. Bei A-A-K gegen A-A-Q haben beide ein Ass-Paar – der König-Kicker gewinnt. Deshalb achten Profis so sehr auf die *Qualität* ihrer hohen Karten, nicht nur darauf, ob sie ein Paar getroffen haben. Alle Gleichstand-Regeln je Hand an einem Ort findest du im [Kicker- und Tiebreaker-Leitfaden](/de/blog/holdem-tiebreak-rules); stimmen die besten fünf Karten exakt überein, wird der Pot [geteilt](/de/blog/holdem-split-pot-rules).
 
 ---
 
@@ -278,7 +278,7 @@ Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet a
 
 Die Rangfolge ist nicht willkürlich – sie ist ==reine Wahrscheinlichkeit==. ==g:**Je schwerer eine Hand aus fünf Karten zu bilden ist, desto höher steht sie.**== ⚠ Die Rangfolge beruht auf den Fünf-Karten-Häufigkeiten; wer in Hold'em sieben Karten sieht, trifft manches deutlich öfter, aber die Reihenfolge der Hände ändert das nicht. Ein Flush steht über einer Straße, weil es in einem Deck mit 52 Karten schlicht weniger Wege gibt, fünf Karten einer Farbe zu bilden, als fünf in Folge in beliebigen Farben. Dieses eine Prinzip erklärt die gesamte Rangfolge – sieh dir die genauen Zahlen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp") an.
 
-Es erklärt auch die große Ausnahme, der du begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die Zweien bis Fünfen entfernt werden, werden Flushes schwerer als Full Houses – also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
+Es erklärt auch die große Ausnahme, der du in High-Hand-Spielen begegnen wirst: Im **Short Deck (6+) Hold'em**, wo die Zweien bis Fünfen entfernt werden, werden Flushes schwerer als Full Houses – also schlägt dort ein ==r:**Flush ein Full House**==. Die Mathematik hat sich geändert, also hat sich die Reihenfolge geändert. Mehr zu den Unterschieden je Variante unten.
 
 ---
 
@@ -290,7 +290,7 @@ Wenn die Time Bank läuft, gehe diesen Scan jedes Mal in dieser Reihenfolge durc
 
 **1. Zuerst die Farben** – liegen drei oder mehr Karten einer Farbe auf dem Board? Wenn ja, ist ==ein Flush möglich==. Sieh dir deine Farbe an.
 
-**2. Dann die Verbindung** – gibt es Karten nahe beieinander im Wert (wie 8-9-10)? Wenn ja, ==lebt eine Straße==.
+**2. Dann die Verbindung** – gibt es drei verschiedene Werte innerhalb eines Fünf-Werte-Fensters (wie 8-9-10)? Wenn ja, ==lebt eine Straße==.
 
 **3. Zuletzt die Paare** – ist das Board gepaart? ==r:Wenn ja, sind Full Houses und Vierlinge im Spiel, und dein Flush oder deine Straße kann in Gefahr sein.==
 
@@ -306,7 +306,7 @@ Trainierte Spieler lesen das Board in genau dieser Reihenfolge – Flush, dann S
 | **2** | Übe nur die verwirrenden Duelle: Flush vs Straße, Full House vs Flush | 3 Tage |
 | **3** | Sieh Poker-Streams und nenne den Sieger, bevor der Dealer ihn ansagt | 1-2 Wochen |
 
-Erst zu gruppieren verhindert, dass die Reihenfolge wie zehn zufällige Dinge wirkt. Die verwirrenden Duelle aus Schritt 2 verursachen 90% der Anfängerfehler, also übe sie ausgiebig.
+Erst zu gruppieren verhindert, dass die Reihenfolge wie zehn zufällige Dinge wirkt. Bei den verwirrenden Duellen aus Schritt 2 rutschen Anfänger am häufigsten aus, also übe sie ausgiebig.
 
 ---
 
@@ -321,7 +321,7 @@ Die Reihenfolge ist in fast allen Poker-Varianten gleich, mit einigen wichtigen 
 | **Seven-Card Stud** | Standard | Keine Gemeinschaftskarten (außer einer seltenen gemeinsamen letzten Karte, wenn das Deck nicht reicht) |
 | **Short Deck (6+)** | Angepasst | Flush schlägt Full House; A-6-7-8-9 ist die niedrigste Straße (das Ass spielt niedrig und schließt ohne die Zweien bis Fünfen direkt an die 6 an) |
 
-Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jedes Spiel. Merke dir nur Omahas „genau zwei“-Regel und die Aufwertung des Flushs im Short Deck.
+Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jedes High-Hand-Spiel (Lowball-Spiele wie Razz werten die Hände umgekehrt). Merke dir nur Omahas „genau zwei“-Regel und die Aufwertung des Flushs im Short Deck.
 
 ---
 
@@ -374,7 +374,7 @@ A. Nur ein höherer Straight Flush oder ein Royal Flush (der einfach der Ass-hoc
 
 **Q. Was ist ein Kicker?**
 
-A. Ein Kicker ist eine Karte, die nicht Teil deiner fertigen Hand ist, aber Gleichstände bricht. Bei zwei gleichen Paaren gewinnt die höchste Seitenkarte (der Kicker) – und ist auch die gleich, entscheidet die nächste. Der beste mögliche Kicker ist das Ass.
+A. Ein Kicker ist eine Karte deiner besten fünf, die nicht selbst zum Paar (oder zu Drilling, Zwei Paaren, Vierling) gehört, aber Gleichstände bricht. Haben zwei Spieler dasselbe Paar, gewinnt die höchste Seitenkarte (der Kicker) – und ist auch die gleich, entscheidet die nächste. Der beste mögliche Kicker ist das Ass.
 
 **Q. Können zwei Spieler dieselbe Hand haben?**
 
@@ -386,7 +386,7 @@ A. Im Hold'em nein – du bildest deine besten fünf aus jeder Kombination deine
 
 **Q. Was ist der Unterschied zwischen Set und Trips?**
 
-A. Beides sind Drillinge. Ein *Set* ist ein Pocket-Paar plus eine Board-Karte (gut versteckt); *Trips* sind ein Paar auf dem Board plus eine deiner Karten (leichter zu lesen). Sets holen mehr Chips.
+A. Beides sind Drillinge. Ein *Set* ist ein Pocket-Paar plus eine Board-Karte (gut versteckt); *Trips* sind ein Paar auf dem Board plus eine deiner Karten (leichter zu lesen). Sets holen oft größere Pots.
 
 **Q. Was ist die höchste Hand im Poker?**
 
@@ -410,7 +410,7 @@ A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen ei
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 
-A. Als Fünf-Karten-Hand ist die schlechtestmögliche 7-5-4-3-2 in gemischten Farben („Sieben hoch“). Es ist das niedrigste High-Card-Blatt, das weder Paar, Straße noch Flush ist – die klassische „du hast nichts“-Hand. Im Hold'em, wo du die besten fünf aus sieben Karten spielst, ist die schwächste Hand, mit der du tatsächlich ankommen kannst, 9-8-7-5-4 (aus 9-8-7-5-4-3-2 in gemischten Farben).
+A. Als Fünf-Karten-Hand ist die schlechtestmögliche 7-5-4-3-2 in gemischten Farben („Sieben hoch“). Es ist das niedrigste High-Card-Blatt, das weder Paar, Straße noch Flush ist – die klassische „du hast nichts“-Hand. Im Hold'em, wo du die besten fünf aus sieben Karten spielst, ist die schwächste Hand, mit der du tatsächlich ankommen kannst, 9-8-7-5-4 (aus 9-8-7-5-4-3-2 ohne fünf Karten einer Farbe).
 
 **Q. Kann man drei Paare im Poker haben?**
 
@@ -426,7 +426,7 @@ A. Ja. Das Ass spielt hoch und niedrig, also ist A-2-3-4-5 (das „Wheel“) ein
 
 1. **Die Reihenfolge:** Royal Flush > Straight Flush > Vierling > Full House > Flush > Straße > Drilling > Zwei Paare > Paar > High Card.
 2. **Die Falle:** Ein Flush (#5) schlägt eine Straße (#6) – und jedes gepaarte Board kann ein Full House verstecken, das beide schlägt.
-3. **Die Realität:** Die meisten Pots werden mit Paar oder High Card gewonnen, also ist dein Kicker mehr wert, als du denkst.
+3. **Die Realität:** Zufällige sieben Karten enden in etwa 61% der Fälle als Paar oder High Card, also ist dein Kicker mehr wert, als du denkst.
 
 Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Flush → Straße → Paare“ durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
 

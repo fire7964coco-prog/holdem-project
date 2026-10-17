@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Straight punya kira-kira ==r:**dua kali** lebih banyak cara terbentuk dibanding 
 
 Straight hanya butuh lima rank berurutan, dan ==**jenisnya tidak penting**==. Kebebasan itu menciptakan sejumlah besar kombinasi. Flush justru kebalikannya: setiap dari kelima kartu harus punya ==**jenis yang sama**==, dan hanya satu dari empat jenis yang bisa melakukannya dalam satu waktu. ==g:Jauh lebih sedikit cara untuk sampai ke sana berarti flush lebih langka — dan di antara kategori tangan, yang lebih langka selalu berperingkat lebih tinggi.==
 
-:::tip[Kalau Anda pegang flush draw dan lawan Anda sedang menarik ke straight, Anda menang saat keduanya bertabrakan — ketika **kedua** draw jadi, flush Anda mengalahkan straight mereka di showdown. Itu tidak sama dengan menjadi unggulan: kalau straight draw mereka datang bersama pair atau kartu yang lebih tinggi, mereka masih bisa unggul sebelum river.]:::
+:::tip[Kalau Anda pegang flush draw dan lawan Anda sedang menarik ke straight, Anda menang saat keduanya bertabrakan — ketika **kedua** draw jadi, flush Anda mengalahkan straight mereka di showdown (pengecualian langka: kartu yang melengkapi straight mereka sekaligus membentuk straight flush berjenis Anda). Itu tidak sama dengan menjadi unggulan: kalau straight draw mereka datang bersama pair atau kartu yang lebih tinggi, mereka masih bisa unggul sebelum river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Anda pegang **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, sebuah flush ber-As.
 
 ## Apa yang Mengalahkan Flush di Poker?
 
-Flush Anda unggul melawan hampir semua tangan lain — tapi tepat **empat jenis tangan** mengalahkannya: **full house, four of a kind, straight flush, dan royal flush** — plus flush mana pun yang lebih tinggi. Semua yang di bawah flush (straight, three of a kind, two pair, pair, high card) kalah darinya:
+Flush Anda mengalahkan semua tangan yang berperingkat di bawahnya — tapi tepat **empat jenis tangan** mengalahkannya: **full house, four of a kind, straight flush, dan royal flush** — plus flush mana pun yang lebih tinggi. Semua yang di bawah flush (straight, three of a kind, two pair, pair, high card) kalah darinya:
 
 :::compare
 Mengalahkan flush Anda | Kalah dari flush Anda
@@ -129,7 +129,7 @@ Ketika dua pemain punya *jenis tangan yang sama*, pemenangnya ditentukan lewat p
 
 ## Flush vs Flush, Straight vs Straight — Siapa yang Menang Serinya?
 
-Ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu. Di board **J♠ 9♠ 6♠ 2♠ 7♦**, Pemain A pegang A♠ dan Pemain B pegang K♠:
+Tangan yang lebih tinggi menang — dan ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu. Di board **J♠ 9♠ 6♠ 2♠ 7♦**, Pemain A pegang A♠ dan Pemain B pegang K♠:
 
 | Pemain | Flush | Hasil |
 |--------|------|------|

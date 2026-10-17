@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Thùng (flush — 5 lá cùng chất, khoảng 0,197% số bộ 5 lá) luôn lớn hơn sảnh (straight — 5 lá liên tiếp, khoảng 0,392%) trong Texas Hold'em, vì thùng hiếm hơn: tính trên cả 7 lá đến river, thùng ra 3,03% còn sảnh 4,62%. Trên thùng còn có cù lũ, tứ quý và thùng phá sảnh.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 phút",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Sảnh có ==r:**gấp đôi** số cách tạo thành so với thùng== — 10.
 
 Sảnh chỉ cần năm giá trị liên tiếp, và ==**chất không quan trọng**==. Sự tự do ấy tạo ra một số lượng tổ hợp khổng lồ. Thùng thì ngược lại: cả năm lá phải ==**cùng một chất**==, và mỗi lần chỉ một trong bốn chất làm được điều đó. ==g:Ít cách đi đến đích hơn nghĩa là thùng hiếm hơn — và giữa các loại tay bài, loại hiếm hơn luôn xếp cao hơn.==
 
-:::tip[Nếu bạn cầm flush draw (chờ thùng) còn đối thủ đang chờ sảnh, bạn thắng khi hai bên va nhau — khi **cả hai** draw cùng hoàn thành, thùng của bạn lớn hơn sảnh của họ lúc showdown (lật bài). Điều đó không đồng nghĩa với việc bạn đang là cửa trên: nếu draw sảnh của họ đi kèm một đôi hoặc lá cao hơn, họ vẫn có thể dẫn trước khi đến river.]:::
+:::tip[Nếu bạn cầm flush draw (chờ thùng) còn đối thủ đang chờ sảnh, bạn thắng khi hai bên va nhau — khi **cả hai** draw cùng hoàn thành, thùng của bạn lớn hơn sảnh của họ lúc showdown (lật bài) (ngoại lệ hiếm: lá hoàn thành sảnh cho họ cũng tạo thùng phá sảnh cùng chất của bạn). Điều đó không đồng nghĩa với việc bạn đang là cửa trên: nếu draw sảnh của họ đi kèm một đôi hoặc lá cao hơn, họ vẫn có thể dẫn trước khi đến river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Bạn cầm **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, thùng A cao nhất.
 
 ## Bài nào lớn hơn thùng trong poker?
 
-Thùng của bạn là cửa trên trước phần lớn bộ bài — nhưng đúng **bốn loại tay bài** (cộng với thùng lớn hơn) ăn được nó:
+Thùng của bạn thắng mọi tay bài xếp dưới nó — nhưng đúng **bốn loại tay bài** (cộng với thùng lớn hơn) ăn được nó:
 
 :::compare
 Lớn hơn thùng của bạn | Thua thùng của bạn
@@ -135,7 +135,7 @@ Khi hai người cùng cầm *một* loại tay bài, người thắng được 
 
 ## Thùng gặp thùng, sảnh gặp sảnh — ai thắng?
 
-Đúng, một thùng hoàn toàn có thể cao hơn thùng khác. **Chất không liên quan** — so năm lá từ trên xuống, lá cao nhất trước:
+Tay bài cao hơn thắng — và đúng vậy, một thùng hoàn toàn có thể cao hơn thùng khác. **Chất không liên quan** — so năm lá từ trên xuống, lá cao nhất trước:
 
 | Người chơi | Thùng | Kết quả |
 |--------|------|------|
@@ -175,7 +175,7 @@ Nếu sảnh của bạn dùng một số lá còn thùng dùng những lá khá
 
 ## Short Deck xếp thùng và sảnh khác không?
 
-Có — Short Deck (6+) Hold'em là thể thức phổ biến duy nhất xếp lại các tay bài này. Trong **Short Deck (6+) Hold'em**, các lá từ 2 đến 5 bị bỏ khỏi bộ bài. Với ít lá hơn, thùng trở nên *khó* tạo thành hơn cù lũ — nên ở thể thức đó thứ hạng đổi chỗ và ==r:**thùng lớn hơn cù lũ**==. Logic vẫn như với bộ bài đầy đủ: trong hai tay bài đó, ==tay hiếm hơn xếp cao hơn==. Chỉ bộ bài thay đổi. Trong Texas Hold'em chuẩn với bộ 52 lá đầy đủ, ==g:thùng lớn hơn sảnh và thua cù lũ, lần nào cũng vậy==.
+Có — Short Deck (6+) Hold'em là thể thức so bài cao phổ biến duy nhất xếp lại các tay bài này. Trong **Short Deck (6+) Hold'em**, các lá từ 2 đến 5 bị bỏ khỏi bộ bài. Với ít lá hơn, thùng trở nên *khó* tạo thành hơn cù lũ — nên ở thể thức đó thứ hạng đổi chỗ và ==r:**thùng lớn hơn cù lũ**==. Logic vẫn như với bộ bài đầy đủ: trong hai tay bài đó, ==tay hiếm hơn xếp cao hơn==. Chỉ bộ bài thay đổi. Trong Texas Hold'em chuẩn với bộ 52 lá đầy đủ, ==g:thùng lớn hơn sảnh và thua cù lũ, lần nào cũng vậy==.
 
 ---
 

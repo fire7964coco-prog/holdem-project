@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Le kicker est la carte d'accompagnement la plus haute hors de ta combinaison : il départage deux joueurs qui ont la même main. Carte haute : 4 kickers, paire : 3, double paire : 1, brelan : 2 ; suite, couleur, full et quinte flush n'en ont aucun. Voilà pourquoi AK bat AQ quand l'as du board ne donne qu'une paire d'as à chacun.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Deux joueurs retournent A-K et A-Q à l'abattage avec un as sur le board — le kicker roi décide qui remporte le pot",
   tags: ["kicker poker", "kicker au poker", "règle kicker poker", "c'est quoi le kicker au poker", "kicker poker texas hold'em", "kicker poker définition", "as dominé", "carte d'accompagnement poker"],
   content: `
-La main qui m'a enfin appris ce qu'est un kicker m'a coûté une cave entière. J'avais ==b:A♠ 9♣==, le board (les cartes communes) a apparié mon as, et j'ai fait tapis en croyant que ma paire max valait de l'or. Il a retourné ==b:A♥ K♦== — la même paire d'as, mais son roi m'a battu au kicker, et le pot a glissé de son côté. Je n'avais pas perdu contre une meilleure *main* ; j'avais perdu contre une meilleure ==carte d'à côté.== Cette carte, c'est le kicker, et elle décide plus de pots que n'importe quel débutant ne l'imagine.
+La main qui m'a enfin appris ce qu'est un kicker m'a coûté une cave entière. J'avais ==b:A♠ 9♣==, le board (les cartes communes) a apparié mon as, et j'ai fait tapis en croyant que ma paire max valait de l'or. Il a retourné ==b:A♥ K♦== — la même paire d'as, mais son roi m'a battu au kicker, et le pot a glissé de son côté. Je n'avais pas perdu contre un meilleur *type* de main ; j'avais perdu contre une meilleure ==carte d'à côté.== Cette carte, c'est le kicker, et elle décide plus de pots que n'importe quel débutant ne l'imagine.
 
 ==Le kicker est la règle de départage intégrée au poker lui-même : quand deux joueurs ont le même rang, la plus haute carte restante gagne.== La plupart des explications te donnent une définition d'une ligne et un exemple AK contre AQ. Ici, tu as le tableau complet : quelles mains ont un kicker (et combien), la seule exception que tout le monde rate, et pourquoi « jouer le board » rend soudain ton kicker totalement inutile.
 
@@ -42,7 +42,7 @@ La place du kicker dans l'ensemble des [combinaisons au poker](/fr/blog/holdem-h
 
 L'idée clé : un kicker ==ne bat jamais une combinaison plus forte.== Une paire de rois avec un 2 en kicker écrase quand même une paire de 10 avec un kicker as — le rang d'abord, le kicker seulement pour départager. Le kicker ne compte que quand les ==r:rangs sont identiques== : paire contre la même paire, brelan contre le même brelan.
 
-Imagine que tu tiens A-K et ton adversaire A-Q, et que le board apparie un as. Vous avez tous les deux « une paire d'as » — rang identique. Ce sont alors les cartes d'accompagnement qui tranchent, et ton roi bat sa dame au kicker. Personne n'a fait une meilleure main ; le kicker a simplement fait son travail, en silence.
+Imagine que tu tiens A-K et ton adversaire A-Q, et que le board apparie un as. Vous avez tous les deux « une paire d'as » — rang identique. Ce sont alors les cartes d'accompagnement qui tranchent, et ton roi bat sa dame au kicker. Personne n'a fait une combinaison plus forte ; le kicker a simplement fait son travail, en silence.
 
 ---
 
@@ -122,7 +122,7 @@ Aucun de vous deux ne peut aller plus haut que l'as : vous « jouez le board » 
 
 ## Pourquoi A9 perd contre AK ? L'as dominé
 
-**Une main est « dominée » quand elle partage une carte avec une main plus forte et perd la bataille du kicker presque chaque fois qu'elle touche — le piège classique, c'est un as faible comme A9 face à AK.** C'est là que le kicker cesse d'être une curiosité et commence à coûter de l'argent.
+**Une main est « dominée » quand elle partage une carte avec une main plus forte et perd la bataille du kicker chaque fois que les deux mains touchent cette carte commune sans rien améliorer d'autre — le piège classique, c'est un as faible comme A9 face à AK.** C'est là que le kicker cesse d'être une curiosité et commence à coûter de l'argent.
 
 ![Deux mains de départ côte à côte sur le feutre vert — A-K à côté de A-9 — montrant comment le même as avec un kicker plus faible devient un piège dominé](/images/holdem-kicker-dominated.webp "Même as, destin différent : c'est le kicker qui sépare une main premium d'une main dominée")
 
@@ -131,7 +131,7 @@ Retour à la main qui m'a coûté ma cave. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==,
 - **A9 :** A♠ 9♣ → paire d'as, meilleures cinq cartes ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK :** A♥ K♦ → paire d'as, meilleures cinq cartes ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Encore la même paire — et mon 9 n'a même pas eu voix au chapitre. La dame du board l'a repoussé au rang de deuxième kicker, et la comparaison s'est réglée dès le premier kicker : son K contre la Q du board. Autant dire que mon « kicker » était ==r:mort== avant même le début de la main. C'est ça, la domination : quand tu touches ton as, tu ne fais souvent que payer un as plus gros. C'est toute la raison pour laquelle le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") traite A9 dépareillé avec bien plus de prudence que AK — le kicker fait la différence entre une main premium et un piège.
+Encore la même paire — et mon 9 n'a même pas eu voix au chapitre. La dame du board l'a repoussé au rang de deuxième kicker, et la comparaison s'est réglée dès le premier kicker : son K contre la Q du board. Autant dire que mon « kicker » était ==r:mort== tant que nous ne jouions tous les deux qu'une paire d'as. C'est ça, la domination : quand tu touches ton as, tu ne fais souvent que payer un as plus gros. C'est toute la raison pour laquelle le [guide des mains de départ](/fr/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") traite A9 dépareillé avec bien plus de prudence que AK — le kicker fait la différence entre une main premium et un piège.
 
 ---
 
@@ -172,7 +172,7 @@ A. Oui, le carré a un kicker d'une carte, mais il compte rarement au Hold'em. I
 
 **Q. Le kicker compte-t-il avec un brelan ?**
 
-A. Oui. Le brelan utilise deux kickers : quand deux joueurs font le même brelan, les deux cartes suivantes les plus hautes départagent — sur un board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ joue K-K-K-A-7 et bat le K-K-K-Q-7 de K♦ Q♦, parce que l'as bat la dame au kicker. (Un vrai *brelan servi* (set), fait avec une paire servie, est rarement à égalité, puisqu'un seul joueur peut tenir cette paire exacte.)
+A. Oui. Le brelan utilise deux kickers : quand deux joueurs font le même brelan, les deux cartes suivantes les plus hautes départagent — sur un board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ joue K-K-K-A-7 et bat le K-K-K-Q-7 de K♦ Q♦, parce que l'as bat la dame au kicker. (Un vrai *brelan servi* (set), fait avec une paire servie, ne peut pas être à égalité de cette façon — avec seulement quatre cartes de chaque rang, personne d'autre ne peut tenir trois cartes du même rang.)
 
 **Q. Une double paire a-t-elle un kicker ?**
 
@@ -188,11 +188,11 @@ A. Ça dépend de la combinaison : une main carte haute utilise quatre kickers (
 
 **Q. C'est quoi un bon kicker au poker ?**
 
-A. Un kicker haut — un kicker as ou roi est fort, alors qu'un kicker bas comme un 9 te laisse « dominé ». C'est pour ça que AK et AQ valent bien mieux que A9 ou A5 : quand deux joueurs touchent leur as sans rien faire de mieux, le plus gros kicker remporte le pot.
+A. Un kicker haut — un kicker as ou roi est fort, alors qu'un kicker bas comme un 9 te laisse « dominé » dès que tu tombes sur un as plus gros. C'est pour ça que AK et AQ valent bien mieux que A9 ou A5 : quand deux joueurs touchent leur as sans rien faire de mieux, le plus gros kicker gagne — sauf si les cartes du board dépassent les deux kickers, et le pot est alors partagé.
 
 **Q. C'est quoi un kicker as (ou un kicker roi) ?**
 
-A. Un kicker as signifie que ta carte d'accompagnement la plus haute est un as — le kicker le plus fort qui existe, donc « paire max, kicker as » gagne presque toutes les confrontations à paire égale. Le kicker roi vient juste après. C'est exactement pour ça que A-K et A-Q battent un as faible comme A-9 : quand deux joueurs touchent leur as sans rien faire de mieux, le plus gros kicker remporte le pot.
+A. Un kicker as signifie que ta carte d'accompagnement la plus haute est un as — le kicker le plus fort qui existe, donc « paire max, kicker as » ne peut jamais être battu au premier kicker par quelqu'un qui a la même paire. Le kicker roi vient juste après. C'est exactement pour ça que A-K et A-Q battent un as faible comme A-9 : quand deux joueurs touchent leur as sans rien faire de mieux, le plus gros kicker remporte le pot — sauf si les cartes du board dépassent les deux kickers, et le pot est alors partagé.
 
 **Q. Que veut dire « jouer le board » ?**
 

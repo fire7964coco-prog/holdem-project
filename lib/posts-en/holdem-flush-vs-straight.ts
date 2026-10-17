@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is rarer: across all seven cards to the river, 3.03% versus 4.62% for the straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -71,7 +71,7 @@ A straight has roughly ==r:**twice** as many ways to come together as a flush== 
 
 A straight only needs five ranks in a row, and ==**the suits don't matter**==. That freedom creates a huge number of combinations. A flush is the opposite: every one of the five cards has to share ==**the same suit**==, and only one of four suits can do it at a time. ==g:Far fewer ways to get there means the flush is rarer — and among hand types, the rarer one always ranks higher.==
 
-:::tip[If you hold a flush draw and your opponent is drawing to a straight, you win the collision — when **both** draws complete, your flush beats their straight at showdown. That is not the same as being the favorite: if their straight draw comes with a pair or higher cards, they can still be ahead before the river.]:::
+:::tip[If you hold a flush draw and your opponent is drawing to a straight, you win the collision — when **both** draws complete, your flush beats their straight at showdown (the rare exception: the card that fills their straight also gives them a straight flush in your suit). That is not the same as being the favorite: if their straight draw comes with a pair or higher cards, they can still be ahead before the river.]:::
 
 ---
 
@@ -105,7 +105,7 @@ You hold **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, an ace-high flush. Your
 
 ## What Beats a Flush in Poker?
 
-Your flush is a favorite against most of the deck — but exactly **four hand types** (plus a bigger flush) beat it:
+Your flush beats every hand ranked below it — but exactly **four hand types** (plus a bigger flush) beat it:
 
 :::compare
 Beats your flush | Loses to your flush
@@ -128,7 +128,7 @@ When two players hold the *same* hand type, the winner comes down to card-by-car
 
 ## Flush vs Flush, Straight vs Straight — Who Wins the Tie?
 
-Yes, one flush can absolutely be higher than another. **Suits are irrelevant** — compare the five cards from the top down, highest first:
+The higher hand wins — and yes, one flush can absolutely be higher than another. **Suits are irrelevant** — compare the five cards from the top down, highest first:
 
 | Player | Flush | Result |
 |--------|------|------|
@@ -168,7 +168,7 @@ If your straight uses some cards and your flush uses others, you don't add them 
 
 ## Are Poker Hands Ranked Differently in Short Deck?
 
-Yes — Short Deck (6+) Hold'em is the one common format that reorders these hands. In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The logic is the same as with the full deck: of those two hands, ==the rarer one ranks higher==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
+Yes — Short Deck (6+) Hold'em is the one common high-hand format that reorders these hands. In **Short Deck (6+) Hold'em**, the 2s through 5s are removed from the deck. With fewer cards, a flush becomes *harder* to make than a full house — so in that format the ranking shifts and a ==r:**flush beats a full house**==. The logic is the same as with the full deck: of those two hands, ==the rarer one ranks higher==. Only the deck changed. In standard Texas Hold'em with a full 52-card deck, ==g:a flush beats a straight and loses to a full house, every time==.
 
 ---
 

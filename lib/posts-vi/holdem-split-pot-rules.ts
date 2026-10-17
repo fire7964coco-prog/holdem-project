@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Khi nào chia pot trong poker? Luật split pot và chop pot Hold'em",
   seoTitle: "Thắng ván mà chỉ nhận nửa pot? — Chia pot, split pot poker",
   desc: "Poker có thể hòa không? Có — chia pot khi 5 lá giống hệt nhau, khi bài chung chơi cho cả bàn, luật chip lẻ và chop khi có pot phụ. Kèm ví dụ split pot.",
-  tldr: "Có — poker có thể hòa. Pot được chia (chia pot, split pot hay chop) khi hai người trở lên lật bài (showdown) ra cùng một tay bài 5 lá mạnh nhất giống hệt nhau. Chất bài không bao giờ phá thế hòa, và chip lẻ (odd chip) còn dư thuộc về người hòa đầu tiên bên trái nút dealer (BTN).",
+  tldr: "Có — poker có thể hòa. Pot được chia (chia pot, split pot hay chop) khi hai người trở lên hòa nhau ở tay bài mạnh nhất lúc lật bài (showdown) — cùng 5 lá mạnh nhất giống hệt nhau. Chất bài không bao giờ phá thế hòa, và chip lẻ (odd chip) còn dư thuộc về người hòa đầu tiên bên trái nút dealer (BTN).",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 phút",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Nhận nửa pot mà mình đinh ninh đã thắng là cảm giác rất hẫng.
 ---
 
 > **Trả lời nhanh**
-> Pot được **chia** (còn gọi là **chop**) khi hai người trở lên có **tay bài 5 lá mạnh nhất giống hệt nhau** lúc showdown (lật bài). Chip được chia đều. Chất bài không bao giờ phá thế hòa, và chip lẻ còn dư thuộc về người hòa đầu tiên bên trái nút dealer.
+> Pot được **chia** (còn gọi là **chop**) khi hai người trở lên hòa nhau ở tay bài mạnh nhất lúc showdown (lật bài) với **tay bài 5 lá mạnh nhất giống hệt nhau**. Chip được chia đều. Chất bài không bao giờ phá thế hòa, và chip lẻ còn dư thuộc về người hòa đầu tiên bên trái nút dealer.
 
 ---
 
@@ -40,15 +40,15 @@ Nhận nửa pot mà mình đinh ninh đã thắng là cảm giác rất hẫng.
 
 ## Split pot trong poker là gì — chia pot và chop có giống nhau không?
 
-**Chia pot (split pot)** xảy ra khi hai người trở lên có tay bài 5 lá mạnh nhất giống hệt nhau lúc showdown, nên dealer chia đều chip cho họ. **Chop** — hay "chopped pot" — là đúng chuyện đó trong tiếng lóng ở bàn ("chop nhé"). Sách luật viết split, người chơi nói chop. Người ta tìm cả hai từ, nên bạn sẽ thấy chúng được dùng thay nhau.
+**Chia pot (split pot)** xảy ra khi hai người trở lên hòa nhau ở tay bài mạnh nhất lúc showdown với 5 lá mạnh nhất giống hệt nhau, nên dealer chia đều chip cho họ. **Chop** — hay "chopped pot" — là đúng chuyện đó trong tiếng lóng ở bàn ("chop nhé"). Sách luật viết split, người chơi nói chop. Người ta tìm cả hai từ, nên bạn sẽ thấy chúng được dùng thay nhau.
 
-Nền tảng: tay bài của bạn luôn là ==**5 lá mạnh nhất trong 7 lá**== — hai lá bài tẩy cộng năm lá trên board. Mỗi tay bài 5 lá xếp hạng ra sao đã có trong [thứ tự bài poker đầy đủ](/vi/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Khi 5 lá mạnh nhất của hai người bằng nhau về giá trị, không ai "thắng hơn" ai== — pot được chia, chấm hết.
+Nền tảng: tay bài của bạn luôn là ==**5 lá mạnh nhất trong 7 lá**== — hai lá bài tẩy cộng năm lá trên board. Mỗi tay bài 5 lá xếp hạng ra sao đã có trong [thứ tự bài poker đầy đủ](/vi/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Khi các tay bài mạnh nhất lúc showdown cùng hạng tay bài và cùng năm giá trị, không ai "thắng hơn" ai== — pot được chia, chấm hết.
 
 ---
 
 ## Khi nào chia pot trong poker? 5 ví dụ split pot
 
-Pot bị chia khi hai người trở lên có tay bài 5 lá mạnh nhất giống hệt nhau lúc showdown — hòa là một kết quả bình thường, hợp lệ trong Texas Hold'em, và nó xảy ra thường xuyên hơn người mới tưởng. Vì mọi người dùng chung năm lá bài chung, hai người rất hay cùng ra một bộ 5 lá như nhau. Đây là năm cách nó xảy ra.
+Pot bị chia khi hai người trở lên hòa nhau ở tay bài mạnh nhất lúc showdown với 5 lá mạnh nhất giống hệt nhau — hòa là một kết quả bình thường, hợp lệ trong Texas Hold'em, và nó xảy ra thường xuyên hơn người mới tưởng. Vì mọi người dùng chung năm lá bài chung, hai người rất hay cùng ra một bộ 5 lá như nhau. Đây là năm cách nó xảy ra.
 
 ### 1. 5 lá mạnh nhất giống hệt nhau
 Hai người tạo ra đúng cùng một tay bài 5 lá — cùng giá trị, dù bài tẩy của họ khác chất.
@@ -72,12 +72,12 @@ Năm lá bài chung đã là tay bài mạnh nhất cho mọi người còn lạ
 Hai sảnh có cùng lá cao nhất thì hòa, bất kể chất. Trên board 7♣ 6♦ 5♥ K♠ 2♣, 9♠ 8♠ của A và 9♥ 8♦ của B đều tạo thành 9-8-7-6-5 — cùng độ cao, nên **chia pot**.
 
 ### 4. Cùng một thùng
-Không có xếp hạng chất, nên hai thùng có cùng năm giá trị thì hòa. Trên thực tế, chuyện này gần như luôn có nghĩa là **chính board** đã là một thùng năm lá. Trên K♠ J♠ 8♠ 4♠ 2♠, nếu A cầm A♥ Q♦ và B cầm 10♥ 9♦, không ai có lá bích — cả hai chơi thùng K-J-8-4-2 của board và **chop**.
+Không có xếp hạng chất, nên hai thùng có cùng năm giá trị thì hòa. Trong Hold'em, chuyện này chỉ có thể xảy ra khi **chính board** đã là một thùng năm lá mà không ai cải thiện được. Trên K♠ J♠ 8♠ 4♠ 2♠, nếu A cầm A♥ Q♦ và B cầm 10♥ 9♦, không ai có lá bích — cả hai chơi thùng K-J-8-4-2 của board và **chop**.
 
 ==r:Nhưng hãy kiểm tra trước khi mặc định:== bất kỳ lá bích nào trên tay cao hơn lá bích thấp nhất của board đều cải thiện thùng. Ở đây ngay cả lá 3♠ khiêm tốn cũng tạo thành K-J-8-4-3 và ==g:thắng trọn pot== — còn A♠ thì thành thùng nuts (nut flush — thùng mạnh nhất có thể có trên board đó).
 
 ### 5. Giống nhau đến kicker cuối cùng
-Một đôi và hai đôi thường được phân định bằng kicker (lá phụ) — nhưng nếu kicker cũng trùng nhau thì chia pot. Board A♦ Q♠ 9♣ 6♥ 2♠ với A♠ K♦ gặp A♥ K♣ cho cả hai ==g:A-A-K-Q-9== → **chia pot**. Khi kicker *khác nhau*, kicker cao hơn thắng trọn — cách so sánh đó diễn ra chính xác ra sao, từng tay bài một, nằm trong [luật so bài cùng hạng và kicker](/vi/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Khi đôi (hoặc hai đôi) cùng giá trị, kicker (lá phụ) sẽ phân định — và nếu kicker cũng trùng nhau thì chia pot. Board A♦ Q♠ 9♣ 6♥ 2♠ với A♠ K♦ gặp A♥ K♣ cho cả hai ==g:A-A-K-Q-9== → **chia pot**. Khi kicker *khác nhau*, kicker cao hơn thắng trọn — cách so sánh đó diễn ra chính xác ra sao, từng tay bài một, nằm trong [luật so bài cùng hạng và kicker](/vi/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,7 +87,7 @@ Một đôi và hai đôi thường được phân định bằng kicker (lá ph
 
 Đó chính là ván 8-8-8-A-K của tôi: J♠ 10♥ của tôi và 5♣ 2♦ của đối thủ đều chơi theo bài chung (playing the board) — bộ ba 8 kèm kicker A-K của board — hai tay 5 lá giống hệt, chop ngay khi cả hai bài được lật ra. Trường hợp cực đoan là board kiểu A♠ K♠ Q♠ J♠ 10♠ (thùng phá sảnh hoàng gia): không lá bài tẩy nào cải thiện được nó, nên ==g:mọi người còn lại đều chop==.
 
-> **Phép thử:** 5 lá mạnh nhất *của bạn* — dùng ít nhất một lá bài tẩy — có thắng được năm lá của chính board không? Nếu có, bạn chơi tay bài của mình. Nếu không, bạn đang chơi theo board — và nhiều khả năng sẽ chia pot, trừ khi một đối thủ cải thiện được board. Cách quét board đầy đủ theo hướng này nằm trong [cách đọc bài chung và tìm 5 lá mạnh nhất](/vi/blog/holdem-reading-the-board).
+> **Phép thử:** 5 lá mạnh nhất *của bạn* — dùng ít nhất một lá bài tẩy — có thắng được năm lá của chính board không? Nếu có, bạn chơi tay bài của mình. Nếu không, bạn đang chơi theo board — phần tối đa bạn có thể nhận là một phần chia, và bạn chỉ chop khi không ai khác thắng được board. Cách quét board đầy đủ theo hướng này nằm trong [cách đọc bài chung và tìm 5 lá mạnh nhất](/vi/blog/holdem-reading-the-board).
 
 **Và phần quan trọng nhất ở bàn: trong một showdown mà đối thủ vẫn còn trong ván, tay bài của bạn chỉ thắng nếu bạn lật ngửa nó lên.** Một tay bài đã muck (úp bài bỏ) thông thường là bài chết, kể cả khi nó lẽ ra được chop (chỉ tay bài vẫn còn nhận diện rõ ràng mới có thể được lấy lại, và chỉ theo quyết định của floor — người quản lý sàn; Luật giải WSOP, điều 109) — khi chơi theo board, bạn vẫn phải lật ngửa bài tẩy của mình, nếu không bạn mất phần pot của mình (Luật WSOP cho cash game live, điều 172; luật giải đấu WSOP nhắc lại ở điều 75). Ai lật trước và trình tự diễn ra thế nào nằm trong [luật showdown](/vi/blog/holdem-showdown-rules).
 
@@ -118,13 +118,13 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — một sảnh đã thành hình. Bạn cầm A
 
 > ==Chip lẻ còn dư thuộc về người hòa đầu tiên **bên trái nút dealer**== (người cùng thắng pot ngồi gần nút dealer nhất theo chiều kim đồng hồ).
 
-Trong một pot chia ba có hai chip lẻ, hai người ngồi gần nút dealer nhất theo chiều kim đồng hồ mỗi người nhận một. ==r:Luật nhà có thể khác== — một vài phòng poker trao chip lẻ theo lá cao hay theo chất — nên khi pot đáng kể, hãy hỏi floor xem phòng poker áp dụng quy tắc nào. ==g:Chơi online, phần mềm tự gán theo vị trí.==
+Trong một pot chia ba có hai chip lẻ, hai người ngồi gần nút dealer nhất theo chiều kim đồng hồ mỗi người nhận một. ==r:Luật nhà có thể khác== — nên khi pot đáng kể, hãy hỏi floor xem phòng poker áp dụng quy tắc nào. ==g:Chơi online, phần mềm tự gán theo vị trí.==
 
 ---
 
 ## Pot phụ (side pot) có chia không? Hòa khi có người all-in
 
-Khi một hoặc nhiều người chơi all-in (tất tay) với số chip khác nhau và những người khác tiếp tục bet, chip hình thành một ==**main pot (pot chính)**== (ai cũng đủ điều kiện) cộng một hoặc nhiều ==**side pot (pot phụ)**== (chỉ những người đã bỏ vào nhiều hơn mức mà một stack all-in ngắn hơn có thể theo kịp). Mỗi pot được trao — hoặc chop — ==**riêng rẽ**==, dựa trên tay bài mạnh nhất trong số những người đủ điều kiện với pot đó.
+Khi một hoặc nhiều người chơi all-in (tất tay) với số chip khác nhau và những người khác tiếp tục bet, chip hình thành một ==**main pot (pot chính)**== (mọi người chơi còn trong ván đều đủ điều kiện) cộng một hoặc nhiều ==**side pot (pot phụ)**== (chỉ những người đã bỏ vào nhiều hơn mức mà một stack all-in ngắn hơn có thể theo kịp). Mỗi pot được trao — hoặc chop — ==**riêng rẽ**==, dựa trên tay bài mạnh nhất trong số những người đủ điều kiện với pot đó.
 
 Một ví dụ cụ thể: A all-in 100; B và C mỗi người bỏ vào 300. Vậy là **pot chính 300** (100 × 3) và **pot phụ 400** (200 + 200, chỉ B và C). Board ra A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -157,7 +157,7 @@ Trong Texas Hold'em thì không. Có thể bạn đã nghe về các "trò split
 
 **Q. Khi nào pot bị chia trong poker?**
 
-A. Pot bị chia khi hai người trở lên có tay bài 5 lá mạnh nhất giống hệt nhau lúc showdown; chip được chia đều cho họ.
+A. Pot bị chia khi hai người trở lên hòa nhau ở tay bài mạnh nhất lúc showdown với 5 lá mạnh nhất giống hệt nhau; chip được chia đều cho họ.
 
 **Q. Chia pot trong poker như thế nào?**
 
@@ -181,7 +181,7 @@ A. Không. Texas Hold'em không xếp hạng chất, nên các tay bài 5 lá gi
 
 **Q. Chip lẻ không chia đều được thì thuộc về ai?**
 
-A. Luật chuẩn: người hòa đầu tiên bên trái nút dealer. Một vài phòng poker gán theo lá cao hay theo chất, nên luật nhà có thể khác — phần mềm online xử lý tự động.
+A. Luật chuẩn: người hòa đầu tiên bên trái nút dealer. Luật nhà có thể khác, nên hãy hỏi floor — phần mềm online xử lý tự động.
 
 **Q. Hơn hai người có thể cùng chia pot không?**
 
@@ -215,7 +215,7 @@ A. Chia bài là việc dealer phát bài tẩy và lật bài chung theo [trìn
 
 ## Những điều cần nhớ
 
-1. Có, ==**poker có thể hòa**== — pot được chia (chop) bất cứ khi nào hai người trở lên cùng có ==**5 lá mạnh nhất trong 7 lá giống hệt nhau**==.
+1. Có, ==**poker có thể hòa**== — pot được chia (chop) bất cứ khi nào hai người trở lên hòa nhau ở tay bài mạnh nhất với ==**5 lá mạnh nhất trong 7 lá giống hệt nhau**==.
 2. ==r:**Chất bài, bài tẩy cao hơn và số lá bạn đã dùng**== không bao giờ phá thế hòa.
 3. ==**Chip lẻ**== thuộc về người hòa đầu tiên bên trái nút dealer, và ==**pot phụ**== được xử lý riêng với pot chính.
 

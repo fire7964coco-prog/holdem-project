@@ -93,7 +93,7 @@ Kapak fotoğrafındaki ele bak:
 
 İkisinde de As çifti var, o yüzden kicker'lar sırayla kapışır: ==g:K, Q'yu yener — iş biter.== B'nin dokuzlusu ikinci kicker olarak hâlâ elin *içinde*, ama karşılaştırma oraya kadar hiç gelmez.
 
-Dikkat et: B'nin en yüksek kicker'ı elindeki 9 değil, **board'daki** kız. ==r:Kicker ancak gerçekten en iyi beş kartına giriyorsa sayılır== — board'daki daha yüksek bir kart, elindeki kartı listede aşağı iter. Başlangıçtaki ikinci kartının As'ın kendisi kadar önemli olmasının nedeni de bu: burada A-K de A-9 da "As çifti", ama yalnızca biri kazanıyor ([başlangıç eli tablosu](/tr/hand-chart)).
+Dikkat et: B'nin en yüksek kicker'ı elindeki 9 değil, **board'daki** kız. ==r:Kicker ancak gerçekten en iyi beş kartına giriyorsa sayılır== — board'daki daha yüksek bir kart, elindeki kartı listede aşağı iter. Başlangıçtaki ikinci kartının bu kadar önemli olmasının nedeni de bu: burada A-K de A-9 da "As çifti", ama yalnızca biri kazanıyor ([başlangıç eli tablosu](/tr/hand-chart)).
 
 ---
 
@@ -143,7 +143,7 @@ Asıl para kaybettiren tuzak ise ==r:**counterfeit**== (elin değersizleşmesi):
 
 </div>
 
-Board'un dokuzlu eşlenmesi *iki oyuncuya da* daha iyi bir ikinci çift verdi — senin dörtlülerin ==r:counterfeit== oldu ve geriye tek karşılaştırma kaldı: yüksek çift, papaz dokuzluyu geçer. Flop'ta önde olan el, iki oyuncu da kendi kartını geliştirmeden potu kaybeder.
+Board'un dokuzlu eşlenmesi *iki oyuncuya da* daha iyi bir ikinci çift verdi — senin dörtlülerin ==r:counterfeit== oldu ve geriye tek karşılaştırma kaldı: yüksek çift, papaz dokuzluyu geçer. Flop'ta önde olan el potu kaybeder; üstelik turn da river da kimsenin hole kartıyla eşlenmedi — eli tek başına board çevirdi.
 
 ---
 
@@ -236,7 +236,7 @@ Bilmeye değer bir şey daha: Hold'em'de iki floş zaten her zaman *aynı* türd
 
 **Q. Pokerde beraberlik nasıl bozulur?**
 
-A. Sırayla üç kontrol: el türü, sonra eli oluşturan kartlar, sonra yukarıdan aşağıya kicker'lar — ilk fark işi bitirir. Karşılaştırmaya neyin hiç girmediği de aynı derecede önemli: türler, son bahsi kimin yaptığı, butona kimin daha yakın oturduğu ve kimin ne kadar çip koyduğu. Beş kart değer değer eşleşiyorsa, bahiste ne olmuş olursa olsun krupiye potu böler.
+A. Sırayla üç kontrol: el türü, sonra eli oluşturan kartlar, sonra yukarıdan aşağıya kicker'lar — ilk fark işi bitirir. Karşılaştırmaya neyin hiç girmediği de aynı derecede önemli: türler, son bahsi kimin yaptığı, butona kimin daha yakın oturduğu ve kimin ne kadar çip koyduğu. Aynı el türünde beş kart değer değer eşleşiyorsa, bahiste ne olmuş olursa olsun pot — ya da iki oyuncunun da hak sahibi olduğu her yan pot — bölünür.
 
 **Q. Kicker nedir, aynı çiftte kim kazanır?**
 
@@ -248,11 +248,11 @@ A. Hayır. Kent, floş, full ve sıralı floşta kicker yoktur; bu ellerde beş 
 
 **Q. İki oyuncuda da iki çift varsa kim kazanır?**
 
-A. Önce yüksek çift, sonra düşük çift, sonra tek kicker — yani ikinci çift çok daha küçük olsa da A-A-3-3 (Aslar ve üçlüler), K-K-Q-Q'yu (papazlar ve kızlar) yener. İnsanları yakalayan durum, K-K-9-9-5 gibi iki kez eşlenmiş ve aynı türden üç kart taşımayan, yani kimsenin floş yapamadığı bir board: biri papaz, dokuzlu, cep beşli ya da dokuzludan büyük bir cep çift tutmuyorsa herkesin iki çifti aynıdır, el tek bir kicker'a iner ve masadaki en iyi hole kart potu alır — kimsenin hole kartı board'un beşini geçemiyorsa herkes board'u oynar ve pot bölünür. İki çiftin tam olarak bir kicker'ı vardır, asla iki değil.
+A. Önce yüksek çift, sonra düşük çift, sonra tek kicker — yani ikinci çift çok daha küçük olsa da A-A-3-3 (Aslar ve üçlüler), K-K-Q-Q'yu (papazlar ve kızlar) yener. İnsanları yakalayan durum, K-K-9-9-5 gibi iki kez eşlenmiş ve aynı türden üç kart taşımayan, yani kimsenin floş yapamadığı bir board: biri papaz, dokuzlu, cep beşli ya da dokuzludan büyük bir cep çift tutmuyorsa herkesin iki çifti aynıdır, el tek bir kicker'a iner ve masadaki en iyi hole kart potu alır (aynı en yüksek kartı tutanlar paylaşır) — kimsenin hole kartı board'un beşini geçemiyorsa herkes board'u oynar ve pot bölünür. İki çiftin tam olarak bir kicker'ı vardır, asla iki değil.
 
 **Q. İki oyuncuda aynı üçlü varsa kim kazanır?**
 
-A. Üçlünün iki kicker'ı vardır ve önce yüksek olanı karşılaştırılır — iki oyuncu aynı üçlüyü yaparsa yan kartı yüksek olan kazanır. Dokuzlu üçlüsünde 9-9-9-A-K, 9-9-9-A-Q'yu yener çünkü ikinci kicker (papaz) kızı geçer. Üçlü de iki kicker da eşleşirse pot bölünür. (Cep çiftten gelen set neredeyse hiç berabere kalmaz, çünkü o çifti yalnızca bir oyuncu tutabilir.)
+A. Üçlünün iki kicker'ı vardır ve önce yüksek olanı karşılaştırılır — iki oyuncu aynı üçlüyü yaparsa yan kartı yüksek olan kazanır. Dokuzlu üçlüsünde 9-9-9-A-K, 9-9-9-A-Q'yu yener çünkü ikinci kicker (papaz) kızı geçer. Üçlü de iki kicker da eşleşirse pot bölünür. (Cep çiftten gelen set bu şekilde berabere kalamaz — her değerden yalnızca dört kart olduğu için başka kimse aynı değerden üç kart tutamaz.)
 
 **Q. Pokerde 5. kart önemli mi?**
 
@@ -266,7 +266,7 @@ A. Hold'em'de evet, ama yalnızca A-2-3-4-5 kentinde ("wheel"); orada en düşü
 
 A. Evet; pratikte kentin büyük kısmı zaten board'dayken olur. 5♦ 6♣ 7♠ 8♥ 2♦ board'unu düşün: 9♣ 4♠ tutan oyuncu 9-8-7-6-5 yapar, 4♥ 3♦ tutan oyuncu aynı dört karttan 8-7-6-5-4 yapar. İkisi de "kent yaptı"; sayılan tek şey en yüksek karttı, potu dokuzlu alır. En yüksek kartlar eşitse kent aynıdır ve pot bölünür.
 
-**Q. İki oyuncuda aynı kent varsa kim kazanır?**
+**Q. İki oyuncuda da kent varsa kim kazanır?**
 
 A. En yüksek kartı büyük olan kent kazanır — Q-J-10-9-8, J-10-9-8-7'yi yener, çünkü kent yalnızca en yüksek kartıyla sıralanır ve kicker'ı yoktur. İki kentin en yüksek kartı aynıysa eller birebir aynıdır ve pot bölünür. Bu en çok kentin büyük kısmı board'dayken ve iki oyuncu da aynı ucu tamamladığında olur.
 
@@ -274,7 +274,7 @@ A. En yüksek kartı büyük olan kent kazanır — Q-J-10-9-8, J-10-9-8-7'yi ye
 
 A. Floşları yukarıdan aşağıya kart kart karşılaştır: As yüksek floş papaz yüksek floşu yener; en yüksek kartlar eşitse bir sonraki karta geçersin ve beşine kadar böyle devam eder. Türler asla beraberlik bozmaz, yani beş değerin beşi de aynıysa pot bölünür. (Hold'em'de iki floş her zaman aynı türdendir, çünkü oyuncular board'u paylaşır.)
 
-**Q. İki oyuncuda aynı full varsa kim kazanır?**
+**Q. İki oyuncuda da full varsa kim kazanır?**
 
 A. Önce üçlüyü karşılaştır — yüksek üçlü kazanır, yani Aslar daha büyük görünse de K-K-K-2-2, Q-Q-Q-A-A'yı yener. Çift ancak üçlüler aynıysa karşılaştırılır. Full'ün kicker'ı yoktur; üçlü de çift de eşleşirse pot bölünür.
 
@@ -303,7 +303,7 @@ A. Evet, ama sık değil. Gerçek beraberlik ancak iki veya daha fazla oyuncunun
 ## Akılda kalacak 3 şey
 
 1. Her beraberlik aynı prosedürden geçer: ==**el türü → eli oluşturan kartlar → kicker'lar → bölünme**== — istisna yok, tür yok.
-2. Kicker ancak ==g:en iyi beşine giriyorsa== sayılır — board kartları onun yerini alabilir, iki kez eşlenmiş bir board da iki çiftini tamamen counterfeit edebilir.
+2. Kicker ancak ==g:en iyi beşine giriyorsa== sayılır — board kartları onun yerini alabilir, iki kez eşlenmiş bir board da ikinci çiftini counterfeit edebilir.
 3. Kentler en yüksek kartlarına göre sıralanır (wheel en düşüğü), floşlar beş kartın beşiyle karşılaştırılır — elleri hiçbir şey ayırmıyorsa pot bölünür.
 
 Tam sıralamayı [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberiyle pekiştir, showdown'da kartların hangi sırayla açıldığını [showdown kuralları](/tr/blog/holdem-showdown-rules) yazısında gör, all-in'de potun nasıl katmanlara ayrıldığını da [all-in kuralları](/tr/blog/holdem-all-in-rules) yazısında oku.

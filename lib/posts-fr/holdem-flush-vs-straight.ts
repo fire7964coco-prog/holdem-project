@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, la couleur (cinq cartes de la même enseigne, environ 0,197 % des mains de cinq cartes) bat toujours la suite (cinq cartes qui se suivent, environ 0,392 %). La raison : elle est plus rare. Sur les sept cartes jusqu'à la river, tu touches une couleur dans 3,03 % des cas, contre 4,62 % pour la suite.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Une quinte a à peu près ==r:**deux fois** plus de façons de se former qu'une 
 
 Une quinte a seulement besoin de cinq rangs consécutifs, et ==**les enseignes ne comptent pas**==. Cette liberté crée un nombre énorme de combinaisons. La couleur, c'est l'inverse : les cinq cartes doivent toutes partager ==**la même enseigne**==, et une seule des quatre enseignes peut le faire à la fois. ==g:Beaucoup moins de chemins pour y arriver, donc la couleur est plus rare — et, entre les catégories de mains, la plus rare est toujours classée plus haut.==
 
-:::tip[Si tu as un tirage couleur et que ton adversaire tire à la quinte, tu gagnes le duel — quand les **deux** tirages rentrent, ta couleur bat sa quinte à l'abattage. Ce n'est pas pour autant que tu es favori : si son tirage quinte s'accompagne d'une paire ou de cartes plus hautes, il peut encore être devant avant la river.]:::
+:::tip[Si tu as un tirage couleur et que ton adversaire tire à la quinte, tu gagnes le duel — quand les **deux** tirages rentrent, ta couleur bat sa quinte à l'abattage (rare exception : la carte qui le complète lui fait aussi une quinte flush dans ton enseigne). Ce n'est pas pour autant que tu es favori : si son tirage quinte s'accompagne d'une paire ou de cartes plus hautes, il peut encore être devant avant la river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Tu as **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, une couleur hauteur as. To
 
 ## Qu'est-ce qui bat une couleur au poker ?
 
-Ta couleur bat la grande majorité des mains — mais exactement **quatre types de mains** (plus une couleur plus haute) la battent :
+Ta couleur bat toutes les mains classées en dessous d'elle — mais exactement **quatre types de mains** (plus une couleur plus haute) la battent :
 
 :::compare
 Bat ta couleur | Perd contre ta couleur
@@ -182,7 +182,7 @@ Si ta quinte utilise certaines cartes et ta couleur d'autres, tu ne les addition
 
 ## L'ordre des mains change-t-il en Short Deck ?
 
-Oui — le Short Deck (6+) Hold'em est le seul format courant qui réordonne ces mains. En **Short Deck (6+) Hold'em**, on retire du paquet les 2 à 5. Avec moins de cartes, la couleur devient *plus difficile* à faire que le full — donc dans ce format, le classement change et ==r:**la couleur bat le full**==. La logique est la même qu'avec le paquet complet : entre ces deux mains, ==la plus rare est la plus haute==. Seul le paquet a changé. Au Texas Hold'em standard avec un jeu complet de 52 cartes, ==g:la couleur bat la quinte et perd contre le full, à chaque fois==.
+Oui — le Short Deck (6+) Hold'em est le seul format courant à la main haute qui réordonne ces mains. En **Short Deck (6+) Hold'em**, on retire du paquet les 2 à 5. Avec moins de cartes, la couleur devient *plus difficile* à faire que le full — donc dans ce format, le classement change et ==r:**la couleur bat le full**==. La logique est la même qu'avec le paquet complet : entre ces deux mains, ==la plus rare est la plus haute==. Seul le paquet a changé. Au Texas Hold'em standard avec un jeu complet de 52 cartes, ==g:la couleur bat la quinte et perd contre le full, à chaque fois==.
 
 ---
 
@@ -227,7 +227,7 @@ A. Non. Une main est toujours classée au-dessus de l'autre, donc la couleur gag
 
 **Q. Qui est le plus fort entre le full et la couleur ?**
 
-A. Le full. Il est la main n°4, la couleur la n°5, donc le full gagne toujours au Texas Hold'em standard. Le danger apparaît dès que le board est pairé : sur K♠ 9♠ 9♥ 4♠ 2♦, la couleur max perd contre K♦ 9♦ (full aux neuf par les rois). Seule exception de format : en Short Deck (6+), la couleur bat le full.
+A. Le full. Il est la main n°4, la couleur la n°5, donc le full gagne toujours au Texas Hold'em standard. Le danger apparaît dès que le board est pairé : sur K♠ 9♠ 9♥ 4♠ 2♦, la couleur max perd contre K♦ 9♦ (full aux neuf par les rois). Seule exception de format parmi les jeux à la main haute : en Short Deck (6+), la couleur bat le full.
 
 **Q. Un brelan ou une double paire peuvent-ils battre une couleur ?**
 

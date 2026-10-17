@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Wann wird der Pot geteilt? Chop-Regeln beim Hold'em",
   seoTitle: "Hand gewonnen, nur die Hälfte bekommen? Split Pot & Chop",
   desc: "Kann man beim Poker unentschieden spielen? Wann der Pot geteilt wird: identische Fünf-Karten-Hände, das Board spielt, Odd-Chip-Regel und Chops im Nebenpot.",
-  tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
+  tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown mit der besten Hand gleichauf liegen – mit identischen besten fünf Karten. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Die Hälfte eines Pots zu bekommen, von dem du sicher warst, ihn gewonnen zu hab
 ---
 
 > **Kurze Antwort**
-> Ein Pot wird **geteilt** (auch **Chop** genannt), wenn zwei oder mehr Spieler im Showdown die **identische beste Fünf-Karten-Hand** haben. Die Chips werden gleichmäßig aufgeteilt. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.
+> Ein Pot wird **geteilt** (auch **Chop** genannt), wenn zwei oder mehr Spieler im Showdown mit der **identischen besten Fünf-Karten-Hand** um die beste Hand gleichauf liegen. Die Chips werden gleichmäßig aufgeteilt. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.
 
 ---
 
@@ -40,9 +40,9 @@ Die Hälfte eines Pots zu bekommen, von dem du sicher warst, ihn gewonnen zu hab
 
 ## Was ist ein Split Pot beim Poker? (Und ist ein „Chop“ dasselbe?)
 
-Ein **Split Pot** entsteht, wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand haben, sodass der Dealer die Chips gleichmäßig zwischen ihnen aufteilt. Ein **Chop** – oder ein „geteilter Pot“ – ist im Tischjargon genau dasselbe („wir choppen“). Regelbücher sagen Split; Spieler sagen Chop. Beides wird gesucht, also wirst du beide Begriffe synonym verwendet sehen.
+Ein **Split Pot** entsteht, wenn zwei oder mehr Spieler im Showdown mit identischen besten fünf Karten um die beste Hand gleichauf liegen, sodass der Dealer die Chips gleichmäßig zwischen ihnen aufteilt. Ein **Chop** – oder ein „geteilter Pot“ – ist im Tischjargon genau dasselbe („wir choppen“). Regelbücher sagen Split; Spieler sagen Chop. Beides wird gesucht, also wirst du beide Begriffe synonym verwendet sehen.
 
-Die Grundlage: Deine Hand sind immer die ==**besten fünf Karten**== aus sieben – deine zwei Hole Cards plus die fünf auf dem Board. Wo jede Fünf-Karten-Hand rangiert, steht in der [kompletten Poker-Reihenfolge der Hände](/de/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Wenn die besten Fünf zweier Spieler im Rang identisch sind, ist keiner „mehr“ Gewinner== – der Pot wird geteilt, Punkt.
+Die Grundlage: Deine Hand sind immer die ==**besten fünf Karten**== aus sieben – deine zwei Hole Cards plus die fünf auf dem Board. Wo jede Fünf-Karten-Hand rangiert, steht in der [kompletten Poker-Reihenfolge der Hände](/de/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Wenn die besten Hände im Showdown derselbe Handtyp mit denselben fünf Rängen sind, ist keiner „mehr“ Gewinner== – der Pot wird geteilt, Punkt.
 
 ---
 
@@ -72,12 +72,12 @@ Die fünf Gemeinschaftskarten sind bereits die stärkste Hand für alle Verblieb
 Zwei Straßen mit derselben höchsten Karte sind unentschieden, unabhängig von der Farbe. Auf einem Board aus 7♣ 6♦ 5♥ K♠ 2♣ machen sowohl A mit 9♠ 8♠ als auch B mit 9♥ 8♦ die 9-8-7-6-5 – dieselbe Höhe, also **Split**.
 
 ### 4. Derselbe Flush
-Es gibt keine Rangfolge der Farben, also sind zwei Flushes mit denselben fünf Rängen unentschieden. In der Praxis heißt das fast immer, dass das **Board selbst** ein Fünf-Karten-Flush ist. Auf K♠ J♠ 8♠ 4♠ 2♠, wenn A A♥ Q♦ hält und B 10♥ 9♦, hat keiner ein Pik – beide spielen den K-J-8-4-2-Flush des Boards und **choppen**.
+Es gibt keine Rangfolge der Farben, also sind zwei Flushes mit denselben fünf Rängen unentschieden. Im Hold'em geht das nur, wenn das **Board selbst** ein Fünf-Karten-Flush ist, den niemand verbessert. Auf K♠ J♠ 8♠ 4♠ 2♠, wenn A A♥ Q♦ hält und B 10♥ 9♦, hat keiner ein Pik – beide spielen den K-J-8-4-2-Flush des Boards und **choppen**.
 
 ==r:Aber prüfe, bevor du es annimmst:== jedes Pik in deiner Hand, das höher ist als das niedrigste Pik auf dem Board, verbessert den Flush. Hier macht sogar die bescheidene 3♠ die K-J-8-4-3 und ==g:gewinnt den ganzen Pot== – und A♠ macht den Nut-Flush.
 
 ### 5. Identisch bis zum letzten Kicker
-Paare und Zwei Paare werden meist über Kicker entschieden – aber wenn auch die Kicker übereinstimmen, ist es ein Split. Board A♦ Q♠ 9♣ 6♥ 2♠ mit A♠ K♦ gegen A♥ K♣ ergibt für beide Spieler ==g:A-A-K-Q-9== → **Split**. Wenn die Kicker sich *unterscheiden*, gewinnt der höhere alles – wie genau dieser Vergleich Hand für Hand funktioniert, steht in den [Tie-Breaker- und Kicker-Regeln](/de/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Haben die Paare (oder Zwei Paare) denselben Rang, entscheiden die Kicker – und wenn auch die Kicker übereinstimmen, ist es ein Split. Board A♦ Q♠ 9♣ 6♥ 2♠ mit A♠ K♦ gegen A♥ K♣ ergibt für beide Spieler ==g:A-A-K-Q-9== → **Split**. Wenn die Kicker sich *unterscheiden*, gewinnt der höhere alles – wie genau dieser Vergleich Hand für Hand funktioniert, steht in den [Tie-Breaker- und Kicker-Regeln](/de/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,11 +87,11 @@ Ja – und dafür braucht es nicht einmal zwei Monsterhände. Wenn die fünf Gem
 
 Das ist meine 8-8-8-A-K-Hand: meine J♠ 10♥ und seine 5♣ 2♦ spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, ein Chop, sobald beide Hände aufgedeckt waren. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
 
-> **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
+> **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board – mehr als ein Anteil ist dann nicht drin, und du choppst nur, wenn auch sonst niemand das Board schlägt. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
 **Und das Wichtigste am Tisch: Im Showdown gegen einen Gegner, der noch in der Hand ist, gewinnt deine Hand nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist normalerweise tot, auch wenn sie den Pot geteilt hätte (zurückgeholt werden kann nur eine Hand, die noch eindeutig identifizierbar ist, und nur nach Ermessen des Floors; WSOP-Turnierregel 109) – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
-:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem deinen Anteil am bisherigen Pot zurück (heads-up die Hälfte). Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde für einen Call – und eine niedrige fürs Folden: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig, und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
+:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem deinen Anteil am bisherigen Pot zurück (heads-up die Hälfte). Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde für einen Call – und eine niedrige fürs Folden: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig, und auf einem River, auf dem das Board noch geschlagen werden kann, ist das oft der Fall.]:::
 
 ---
 
@@ -118,13 +118,13 @@ Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chip
 
 > ==Der übrig gebliebene Odd Chip geht an den ersten am Chop beteiligten Spieler **links vom Dealer-Button**== (der früheste gewinnende Sitz im Uhrzeigersinn vom Button aus).
 
-Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze im Uhrzeigersinn je einen. ==r:Hausregeln können abweichen== – einige Card Rooms vergeben den Odd Chip stattdessen über die höchste Karte oder die Farbe – wenn also echtes Geld auf dem Spiel steht, frag den Floor. ==g:Online weist die Software ihn automatisch nach Position zu.==
+Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze im Uhrzeigersinn je einen. ==r:Hausregeln können abweichen== – wenn also echtes Geld auf dem Spiel steht, frag den Floor. ==g:Online weist die Software ihn automatisch nach Position zu.==
 
 ---
 
 ## Werden auch Nebenpots geteilt? Unentschieden, wenn jemand All-in ist
 
-Sind Spieler für unterschiedliche Beträge All-in und setzen andere weiter, bilden die Chips einen ==**Hauptpot**== (alle sind berechtigt) plus einen oder mehrere ==**Nebenpots**== (nur die Spieler, die mehr eingezahlt haben, als ein kürzerer All-in-Stack mitgehen konnte). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
+Sind Spieler für unterschiedliche Beträge All-in und setzen andere weiter, bilden die Chips einen ==**Hauptpot**== (berechtigt ist jeder Spieler, der noch in der Hand ist) plus einen oder mehrere ==**Nebenpots**== (nur die Spieler, die mehr eingezahlt haben, als ein kürzerer All-in-Stack mitgehen konnte). Jeder Pot wird ==**separat**== vergeben – oder gechoppt –, basierend auf der besten Hand unter den für diesen Pot berechtigten Spielern.
 
 Ein durchgerechnetes Beispiel: A ist All-in mit 100; B und C legen je 300 nach. Das ergibt einen **Hauptpot von 300** (100 × 3) und einen **Nebenpot von 400** (200 + 200, nur B und C). Das Board kommt A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -157,7 +157,7 @@ Nicht beim Texas Hold'em. Du hast vielleicht von „Split-Pot-Spielen“ wie Oma
 
 **Q. Wann wird ein Pot beim Poker geteilt?**
 
-A. Ein Pot wird geteilt, wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand haben; die Chips werden gleichmäßig unter ihnen aufgeteilt.
+A. Ein Pot wird geteilt, wenn zwei oder mehr Spieler im Showdown mit identischen besten fünf Karten um die beste Hand gleichauf liegen; die Chips werden gleichmäßig unter ihnen aufgeteilt.
 
 **Q. Teilt man den Pot, wenn beide Spieler dieselbe Hand haben?**
 
@@ -181,7 +181,7 @@ A. Nein. Texas Hold'em hat keine Rangfolge der Farben, also werden identische F�
 
 **Q. Wer bekommt den Odd Chip, wenn sich ein Pot nicht gleichmäßig teilen lässt?**
 
-A. Standardregel: der erste am Chop beteiligte Spieler links vom Dealer-Button. Einige Card Rooms vergeben ihn stattdessen über die höchste Karte oder die Farbe, Hausregeln können also abweichen – online übernimmt das die Software automatisch.
+A. Standardregel: der erste am Chop beteiligte Spieler links vom Dealer-Button. Hausregeln können abweichen, also frag den Floor – online übernimmt das die Software automatisch.
 
 **Q. Können mehr als zwei Spieler einen Pot teilen?**
 
@@ -211,7 +211,7 @@ A. Nein – dasselbe Wort, zwei verschiedene Dinge. Ein Split Pot im Showdown wi
 
 ## Die wichtigsten Punkte
 
-1. Ja, ==**du kannst beim Poker unentschieden spielen**== – ein Pot wird geteilt (gechoppt), sobald zwei oder mehr Spieler die ==**identischen besten Fünf von sieben**== teilen.
+1. Ja, ==**du kannst beim Poker unentschieden spielen**== – ein Pot wird geteilt (gechoppt), sobald zwei oder mehr Spieler mit den ==**identischen besten Fünf von sieben**== um die beste Hand gleichauf liegen.
 2. ==r:**Farben, höhere Hole Cards und wie viele Karten du benutzt hast**== brechen ein Unentschieden nie.
 3. Der ==**Odd Chip**== geht an den ersten am Chop beteiligten Spieler links vom Button, und ==**Nebenpots**== werden getrennt vom Hauptpot abgerechnet.
 

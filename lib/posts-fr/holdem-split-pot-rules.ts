@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Pot partagé (split pot) au poker : quand et comment on partage le pot",
   seoTitle: "Gagné, mais la moitié ? — Pot partagé (split pot) au poker",
   desc: "Gagné, mais la moitié ? L'égalité existe au poker : quand le pot est partagé (split pot), le board qui joue pour tous, le jeton restant et le pot annexe.",
-  tldr: "Oui, l'égalité existe au poker. Le pot est partagé (split pot, ou « chop ») quand deux joueurs ou plus abattent exactement la même meilleure main de cinq cartes. L'enseigne ne départage jamais, et le jeton restant va au premier joueur à égalité à gauche du bouton.",
+  tldr: "Oui, l'égalité existe au poker. Le pot est partagé (split pot, ou « chop ») quand deux joueurs ou plus sont à égalité pour la meilleure main à l'abattage — exactement les mêmes cinq meilleures cartes. L'enseigne ne départage jamais, et le jeton restant va au premier joueur à égalité à gauche du bouton.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Recevoir la moitié d'un pot qu'on croyait gagné, ça surprend. Mais ==g:le pot
 ---
 
 > **Réponse rapide**
-> Le pot est **partagé** (split pot, qu'on appelle aussi **chop**) quand deux joueurs ou plus ont **exactement la même meilleure main de cinq cartes** à l'abattage (showdown). Les jetons sont divisés à parts égales. L'enseigne ne départage jamais, et le jeton restant éventuel va au premier joueur à égalité à gauche du bouton du donneur.
+> Le pot est **partagé** (split pot, qu'on appelle aussi **chop**) quand deux joueurs ou plus sont à égalité pour la meilleure main à l'abattage (showdown), avec **exactement la même meilleure main de cinq cartes**. Les jetons sont divisés à parts égales. L'enseigne ne départage jamais, et le jeton restant éventuel va au premier joueur à égalité à gauche du bouton du donneur.
 
 ---
 
@@ -40,9 +40,9 @@ Recevoir la moitié d'un pot qu'on croyait gagné, ça surprend. Mais ==g:le pot
 
 ## Pot partagé (split pot) : c'est quoi ? Et un « chop », c'est pareil ?
 
-Un **pot partagé (split pot)** se produit quand deux joueurs ou plus ont exactement la même meilleure main de cinq cartes à l'abattage : le donneur divise alors les jetons à parts égales entre eux. Un **chop** — ou « chopped pot » — c'est exactement la même chose en argot de table (« on chop »). Les règlements disent « pot partagé » ; les joueurs disent « chop ». Les deux termes sont courants, tu les verras donc employés indifféremment.
+Un **pot partagé (split pot)** se produit quand deux joueurs ou plus sont à égalité pour la meilleure main à l'abattage, avec exactement les cinq mêmes meilleures cartes : le donneur divise alors les jetons à parts égales entre eux. Un **chop** — ou « chopped pot » — c'est exactement la même chose en argot de table (« on chop »). Les règlements disent « pot partagé » ; les joueurs disent « chop ». Les deux termes sont courants, tu les verras donc employés indifféremment.
 
-La base : ta main, ce sont toujours ==**les cinq meilleures cartes**== parmi sept — tes deux cartes fermées plus les cinq du board. Le classement de chaque main de cinq cartes est détaillé dans [l'ordre complet des combinaisons au poker](/fr/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Quand les cinq meilleures cartes de deux joueurs sont identiques en rang, aucun n'est « plus » gagnant que l'autre== — le pot est partagé, point final.
+La base : ta main, ce sont toujours ==**les cinq meilleures cartes**== parmi sept — tes deux cartes fermées plus les cinq du board. Le classement de chaque main de cinq cartes est détaillé dans [l'ordre complet des combinaisons au poker](/fr/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Quand les meilleures mains à l'abattage sont la même combinaison avec les cinq mêmes rangs, aucun n'est « plus » gagnant que l'autre== — le pot est partagé, point final.
 
 ---
 
@@ -72,12 +72,12 @@ Les cinq cartes communes sont déjà la meilleure main pour tous les joueurs enc
 Deux quintes (suites) avec la même carte haute sont à égalité, quelle que soit l'enseigne. Sur un board 7♣ 6♦ 5♥ K♠ 2♣, le 9♠ 8♠ de A comme le 9♥ 8♦ de B font 9-8-7-6-5 — même hauteur, donc **partage**.
 
 ### 4. La même couleur
-Les enseignes n'ont pas de classement, donc deux couleurs (flush) avec les cinq mêmes rangs sont à égalité. En pratique, ça veut presque toujours dire que **le board lui-même** est une couleur de cinq cartes. Sur K♠ J♠ 8♠ 4♠ 2♠, si A a A♥ Q♦ et B a 10♥ 9♦, aucun n'a de pique — les deux jouent la couleur K-J-8-4-2 du board et **partagent**.
+Les enseignes n'ont pas de classement, donc deux couleurs (flush) avec les cinq mêmes rangs sont à égalité. Au Hold'em, ça n'arrive que si **le board lui-même** est une couleur de cinq cartes que personne n'améliore. Sur K♠ J♠ 8♠ 4♠ 2♠, si A a A♥ Q♦ et B a 10♥ 9♦, aucun n'a de pique — les deux jouent la couleur K-J-8-4-2 du board et **partagent**.
 
 ==r:Mais vérifie avant de supposer :== n'importe quel pique en main plus haut que le plus petit pique du board améliore la couleur. Ici, même le modeste 3♠ fait K-J-8-4-3 et ==g:remporte tout le pot== — et l'A♠ fait la couleur max (nut flush).
 
 ### 5. Identiques jusqu'au dernier kicker
-Les paires et les doubles paires se décident en général au kicker — mais si les kickers sont identiques aussi, c'est un partage. Board A♦ Q♠ 9♣ 6♥ 2♠ avec A♠ K♦ contre A♥ K♣ : les deux joueurs ont ==g:A-A-K-Q-9== → **partage**. Quand les kickers *diffèrent*, le plus haut gagne seul — la façon exacte dont se fait cette comparaison, combinaison par combinaison, est dans les [règles d'égalité et du kicker](/fr/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Quand les paires (ou les doubles paires) sont du même rang, ce sont les kickers qui décident — et si les kickers sont identiques aussi, c'est un partage. Board A♦ Q♠ 9♣ 6♥ 2♠ avec A♠ K♦ contre A♥ K♣ : les deux joueurs ont ==g:A-A-K-Q-9== → **partage**. Quand les kickers *diffèrent*, le plus haut gagne seul — la façon exacte dont se fait cette comparaison, combinaison par combinaison, est dans les [règles d'égalité et du kicker](/fr/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,11 +87,11 @@ Oui — et il n'y a même pas besoin de deux mains monstrueuses. Quand les cinq 
 
 C'est ma main 8-8-8-A-K : mon J♠ 10♥ et son 5♣ 2♦ jouaient tous les deux le brelan de huit du board avec as-roi en kickers — cinq cartes identiques, donc partage une fois les deux mains abattues. Le cas extrême, c'est un board comme A♠ K♠ Q♠ J♠ 10♠ (une quinte flush royale) : aucune carte fermée ne peut l'améliorer, donc ==g:tous les joueurs restants partagent==.
 
-> **Le test :** est-ce que *tes* cinq meilleures cartes — en utilisant au moins une carte fermée — battent les cinq cartes du board ? Si oui, tu joues ta main. Sinon, le board joue et tu vas probablement partager. La méthode complète pour lire un board de cette façon est dans [comment lire le board et trouver tes 5 meilleures cartes](/fr/blog/holdem-reading-the-board).
+> **Le test :** est-ce que *tes* cinq meilleures cartes — en utilisant au moins une carte fermée — battent les cinq cartes du board ? Si oui, tu joues ta main. Sinon, le board joue — le mieux que tu puisses obtenir est une part, et tu ne partages que si personne d'autre ne bat le board non plus. La méthode complète pour lire un board de cette façon est dans [comment lire le board et trouver tes 5 meilleures cartes](/fr/blog/holdem-reading-the-board).
 
 **Et le point qui compte le plus à la table : à l'abattage, face à un adversaire encore en jeu, ta main ne gagne que si tu la retournes face visible.** Une main jetée (muck) est normalement morte, même si elle aurait partagé (seule une main encore clairement identifiable peut être récupérée, et seulement à la discrétion du superviseur ; règle 109 des règles de tournoi WSOP) — quand tu joues le board, tu dois quand même montrer tes cartes fermées face visible, sinon tu perds ta part du pot (règle 172 des règles WSOP de cash game live ; les règles de tournoi WSOP la reprennent en règle 75). Qui montre en premier et comment se déroule la séquence, c'est expliqué dans les [règles de l'abattage](/fr/blog/holdem-showdown-rules).
 
-:::tip[Si le board joue et que quelqu'un mise à la river, **se coucher par réflexe est l'erreur**. Quand rien ne peut battre le board, le partage est certain, et payer te rend quand même ta part de tout ce qui était déjà dans le pot (la moitié en heads-up) — te coucher, c'est donner cette part gratuitement. Quand le board *peut* être battu, fais le calcul de fréquence : en heads-up, face à une mise de la taille du pot, il faut que ton adversaire joue lui aussi le board environ 2 fois sur 3 ; face à une mise d'un demi-pot, environ une fois sur deux (avec plus de joueurs encore en lice, ta part d'un partage diminue et la barre monte). C'est une barre haute pour payer — et basse pour se coucher : face à une mise de la taille du pot, se coucher est correct dès qu'il a une vraie main plus d'**une fois sur trois**, et sur une river où le board peut encore être battu, c'est le cas normal.]:::
+:::tip[Si le board joue et que quelqu'un mise à la river, **se coucher par réflexe est l'erreur**. Quand rien ne peut battre le board, le partage est certain, et payer te rend quand même ta part de tout ce qui était déjà dans le pot (la moitié en heads-up) — te coucher, c'est donner cette part gratuitement. Quand le board *peut* être battu, fais le calcul de fréquence : en heads-up, face à une mise de la taille du pot, il faut que ton adversaire joue lui aussi le board environ 2 fois sur 3 ; face à une mise d'un demi-pot, environ une fois sur deux (avec plus de joueurs encore en lice, ta part d'un partage diminue et la barre monte). C'est une barre haute pour payer — et basse pour se coucher : face à une mise de la taille du pot, se coucher est correct dès qu'il a une vraie main plus d'**une fois sur trois**, et sur une river où le board peut encore être battu, c'est souvent le cas.]:::
 
 ---
 
@@ -118,13 +118,13 @@ Parfois, un pot ne se divise pas exactement — un pot de 101 jetons entre deux 
 
 > ==Le jeton restant va au premier joueur à égalité **à gauche du bouton du donneur**== (le premier siège gagnant dans le sens des aiguilles d'une montre à partir du bouton).
 
-Dans un partage à trois avec deux jetons restants, les deux premiers sièges dans le sens des aiguilles d'une montre en reçoivent un chacun. ==r:Les règles maison peuvent varier== — quelques salles attribuent le jeton restant à la carte la plus haute ou à l'enseigne — donc s'il y a un vrai enjeu, demande au superviseur. ==g:En ligne, le logiciel l'attribue automatiquement selon la position.==
+Dans un partage à trois avec deux jetons restants, les deux premiers sièges dans le sens des aiguilles d'une montre en reçoivent un chacun. ==r:Les règles maison peuvent varier== — donc s'il y a un vrai enjeu, demande au superviseur. ==g:En ligne, le logiciel l'attribue automatiquement selon la position.==
 
 ---
 
 ## Le pot annexe (side pot) se partage-t-il aussi ? Égalité avec un joueur all-in
 
-Quand des joueurs sont all-in (à tapis) pour des montants différents et que d'autres continuent de miser, les jetons forment un ==**pot principal**== (tout le monde y a droit) plus un ou plusieurs ==**pots annexes (side pots)**== (seulement les joueurs qui ont misé plus que ce qu'un tapis all-in plus court pouvait égaler). Chaque pot est attribué — ou partagé — ==**séparément**==, selon la meilleure main parmi les joueurs qui ont droit à ce pot.
+Quand des joueurs sont all-in (à tapis) pour des montants différents et que d'autres continuent de miser, les jetons forment un ==**pot principal**== (tous les joueurs encore dans la main y ont droit) plus un ou plusieurs ==**pots annexes (side pots)**== (seulement les joueurs qui ont misé plus que ce qu'un tapis all-in plus court pouvait égaler). Chaque pot est attribué — ou partagé — ==**séparément**==, selon la meilleure main parmi les joueurs qui ont droit à ce pot.
 
 Un exemple concret : A est all-in pour 100 ; B et C mettent chacun 300. Ça fait un **pot principal de 300** (100 × 3) et un **pot annexe de 400** (200 + 200, B et C seulement). Le board donne A♦ J♥ 7♠ 4♣ 2♥ :
 
@@ -157,7 +157,7 @@ Pas au Texas Hold'em. Tu as peut-être entendu parler des « jeux à pot partag�
 
 **Q. Quand le pot est-il partagé au poker ?**
 
-A. Le pot est partagé quand deux joueurs ou plus ont exactement la même meilleure main de cinq cartes à l'abattage ; les jetons sont alors divisés à parts égales entre eux.
+A. Le pot est partagé quand deux joueurs ou plus sont à égalité pour la meilleure main à l'abattage, avec exactement les cinq mêmes meilleures cartes ; les jetons sont alors divisés à parts égales entre eux.
 
 **Q. Comment fonctionnent les pots partagés ?**
 
@@ -181,7 +181,7 @@ A. Non. Le Texas Hold'em n'a aucune hiérarchie des enseignes, donc des mains de
 
 **Q. Qui reçoit le jeton restant quand le pot ne se divise pas ?**
 
-A. Règle standard : le premier joueur à égalité à gauche du bouton du donneur. Quelques salles l'attribuent à la carte la plus haute ou à l'enseigne, donc les règles maison peuvent varier — en ligne, le logiciel s'en charge automatiquement.
+A. Règle standard : le premier joueur à égalité à gauche du bouton du donneur. Les règles maison peuvent varier, donc demande au superviseur — en ligne, le logiciel s'en charge automatiquement.
 
 **Q. Plus de deux joueurs peuvent-ils partager un pot ?**
 
@@ -215,7 +215,7 @@ A. Les mains se départagent d'abord par le rang de la combinaison, puis par les
 
 ## À retenir
 
-1. Oui, ==**l'égalité existe au poker**== — le pot est partagé (chop) dès que deux joueurs ou plus ont ==**exactement les cinq mêmes meilleures cartes parmi sept**==.
+1. Oui, ==**l'égalité existe au poker**== — le pot est partagé (chop) dès que deux joueurs ou plus sont à égalité pour la meilleure main avec ==**exactement les cinq mêmes meilleures cartes parmi sept**==.
 2. ==r:**L'enseigne, des cartes fermées plus hautes et le nombre de cartes utilisées**== ne départagent jamais une égalité.
 3. Le ==**jeton restant**== va au premier joueur à égalité à gauche du bouton, et les ==**pots annexes**== se règlent séparément du pot principal.
 

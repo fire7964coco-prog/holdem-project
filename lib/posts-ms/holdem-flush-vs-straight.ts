@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Flush (lima kad satu suit, kira-kira 0.197% daripada tangan lima kad) sentiasa menang ke atas straight (lima kad berturutan, kira-kira 0.392%) dalam Texas Hold'em. Sebabnya flush lebih jarang: merentas tujuh kad hingga river, flush muncul 3.03% berbanding 4.62% untuk straight.",
   category: "hand-rankings",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -72,7 +72,7 @@ Straight mempunyai lebih kurang ==r:**dua kali ganda**== cara untuk terbentuk be
 
 Straight hanya memerlukan lima nilai berturutan, dan ==**suit tidak penting**==. Kebebasan itu mewujudkan jumlah kombinasi yang sangat besar. Flush pula sebaliknya: setiap satu daripada lima kad mesti berkongsi ==**suit yang sama**==, dan hanya satu daripada empat suit boleh melakukannya pada satu masa. ==g:Lebih sedikit jalan untuk sampai ke sana bermakna flush lebih jarang — dan antara kategori tangan, yang lebih jarang sentiasa berkedudukan lebih tinggi.==
 
-:::tip[Jika anda memegang flush draw dan lawan anda mengejar straight, anda menang apabila kedua-duanya bertembung — apabila **kedua-dua** draw menjadi, flush anda mengalahkan straight mereka di showdown. Itu tidak sama dengan lebih berpeluang menang: jika straight draw mereka datang bersama pair atau kad yang lebih tinggi, mereka masih boleh mendahului sebelum river.]:::
+:::tip[Jika anda memegang flush draw dan lawan anda mengejar straight, anda menang apabila kedua-duanya bertembung — apabila **kedua-dua** draw menjadi, flush anda mengalahkan straight mereka di showdown (pengecualian yang jarang: kad yang melengkapkan straight mereka juga membentuk straight flush dalam suit anda). Itu tidak sama dengan lebih berpeluang menang: jika straight draw mereka datang bersama pair atau kad yang lebih tinggi, mereka masih boleh mendahului sebelum river.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Anda memegang **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, flush ber-As tingg
 
 ## Apa yang Mengalahkan Flush dalam Poker?
 
-Flush anda lebih berpeluang menang menentang kebanyakan tangan — tetapi tepat **empat jenis tangan** (ditambah flush yang lebih besar) mengalahkannya:
+Flush anda mengalahkan setiap tangan yang berkedudukan di bawahnya — tetapi tepat **empat jenis tangan** (ditambah flush yang lebih besar) mengalahkannya:
 
 :::compare
 Mengalahkan flush anda | Kalah kepada flush anda
@@ -129,7 +129,7 @@ Apabila dua pemain memegang jenis tangan yang *sama*, pemenangnya ditentukan den
 
 ## Flush lawan Flush, Straight lawan Straight — Siapa Menang Jika Seri?
 
-Ya, satu flush memang boleh lebih tinggi daripada flush yang lain. **Suit tidak relevan** — bandingkan lima kad dari atas ke bawah, bermula dengan yang tertinggi:
+Tangan yang lebih tinggi menang — dan ya, satu flush memang boleh lebih tinggi daripada flush yang lain. **Suit tidak relevan** — bandingkan lima kad dari atas ke bawah, bermula dengan yang tertinggi:
 
 | Pemain | Flush | Keputusan |
 |--------|------|------|
@@ -169,7 +169,7 @@ Jika straight anda menggunakan sebahagian kad dan flush anda menggunakan kad yan
 
 ## Adakah Susunan Tangan Berbeza dalam Short Deck? (Flush vs Full House)
 
-Ya — Short Deck (6+) Hold'em ialah satu-satunya format biasa yang menyusun semula tangan-tangan ini. Dalam **Short Deck (6+) Hold'em**, kad 2 hingga 5 dikeluarkan daripada dek. Dengan kad yang lebih sedikit, flush menjadi *lebih sukar* dibentuk berbanding full house — jadi dalam format itu susunannya beralih dan ==r:**flush menang ke atas full house**==. Logiknya sama seperti dengan dek penuh: antara dua tangan itu, ==tangan yang lebih jarang berada di kedudukan lebih tinggi==. Hanya dek yang berubah. Dalam Texas Hold'em standard dengan dek penuh 52 kad, ==g:flush menang ke atas straight dan kalah kepada full house, setiap kali==.
+Ya — Short Deck (6+) Hold'em ialah satu-satunya format high hand biasa yang menyusun semula tangan-tangan ini. Dalam **Short Deck (6+) Hold'em**, kad 2 hingga 5 dikeluarkan daripada dek. Dengan kad yang lebih sedikit, flush menjadi *lebih sukar* dibentuk berbanding full house — jadi dalam format itu susunannya beralih dan ==r:**flush menang ke atas full house**==. Logiknya sama seperti dengan dek penuh: antara dua tangan itu, ==tangan yang lebih jarang berada di kedudukan lebih tinggi==. Hanya dek yang berubah. Dalam Texas Hold'em standard dengan dek penuh 52 kad, ==g:flush menang ke atas straight dan kalah kepada full house, setiap kali==.
 
 ---
 

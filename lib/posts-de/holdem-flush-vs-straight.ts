@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe – ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) – weil ein Flush seltener ist: über alle sieben Karten bis zum River 3,03% gegenüber 4,62% für die Straße.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-28",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -72,7 +72,7 @@ Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein F
 
 Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine Rolle**==. Diese Freiheit erzeugt eine riesige Zahl an Kombinationen. Ein Flush ist das Gegenteil: Jede der fünf Karten muss ==**dieselbe Farbe**== teilen, und nur eine von vier Farben schafft das zur selben Zeit. ==g:Weit weniger Wege dorthin bedeuten, dass der Flush seltener ist – und unter den Handkategorien rangiert die seltenere immer höher.==
 
-:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, gewinnst du den Zusammenstoß – wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown. Das heißt nicht, dass du Favorit bist: Kommt sein Straßendraw mit einem Paar oder höheren Karten, kann er vor dem River trotzdem vorn liegen.]:::
+:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, gewinnst du den Zusammenstoß – wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown (die seltene Ausnahme: Die Karte, die seine Straße vervollständigt, macht ihm zugleich einen Straight Flush in deiner Farbe). Das heißt nicht, dass du Favorit bist: Kommt sein Straßendraw mit einem Paar oder höheren Karten, kann er vor dem River trotzdem vorn liegen.]:::
 
 ---
 
@@ -106,7 +106,7 @@ Du hältst **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, einen Ace-High-Flush.
 
 ## Was schlägt einen Flush im Poker?
 
-Die **Flush-Regeln** sind schnell erzählt: fünf Karten einer Farbe, Reihenfolge egal, verglichen wird von der höchsten Karte abwärts. Dein Flush ist Favorit gegen den Großteil des Decks – aber genau **vier Handtypen** (plus ein höherer Flush) schlagen ihn:
+Die **Flush-Regeln** sind schnell erzählt: fünf Karten einer Farbe, Reihenfolge egal, verglichen wird von der höchsten Karte abwärts. Dein Flush schlägt jede Hand, die unter ihm rangiert – aber genau **vier Handtypen** (plus ein höherer Flush) schlagen ihn:
 
 :::compare
 Schlägt deinen Flush | Verliert gegen deinen Flush
@@ -129,7 +129,7 @@ Wenn zwei Spieler denselben Handtyp halten, entscheidet der Vergleich Karte für
 
 ## Flush vs Flush, Straße vs Straße – Wer gewinnt bei Gleichstand?
 
-Ja, ein Flush kann absolut höher sein als ein anderer. **Die Farben sind irrelevant** – vergleiche die fünf Karten von oben nach unten, die höchste zuerst:
+Die höhere Hand gewinnt – und ja, ein Flush kann absolut höher sein als ein anderer. **Die Farben sind irrelevant** – vergleiche die fünf Karten von oben nach unten, die höchste zuerst:
 
 Board: **J♠ 9♠ 6♠ 2♠ 4♥** – vier Pik liegen offen, beide Spieler halten je ein Pik.
 
@@ -171,7 +171,7 @@ Wenn deine Straße einige Karten nutzt und dein Flush andere, addierst du sie ni
 
 ---
 
-## Die eine echte Ausnahme: Short Deck
+## Die eine echte Ausnahme im High-Hand-Poker: Short Deck
 
 Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfernt. Mit weniger Karten wird ein Flush *schwerer* zu treffen als ein Full House – deshalb verschiebt sich in dieser Variante die Rangfolge, und ein ==r:**Flush schlägt ein Full House**==. Die Logik ist dieselbe wie mit dem vollen Deck: Von diesen beiden Händen ==rangiert die seltenere höher==. Nur das Deck hat sich geändert. Im Standard-Texas-Hold'em mit einem vollen 52-Karten-Deck ==g:schlägt ein Flush eine Straße und verliert gegen ein Full House, jedes Mal==.
 

@@ -46,10 +46,10 @@ De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Esca
 
 </div>
 
-*Estas son las frecuencias estándar de manos de siete cartas para una baraja completa de 52 — las mismas probabilidades que usan todos los solvers y sitios de entrenamiento de póker.*
+*Estas son las frecuencias estándar de manos de siete cartas para una baraja completa de 52 — con qué frecuencia siete cartas al azar terminan en cada mano, no tus probabilidades con una mano concreta ni contra un rango concreto.*
 
 > **La regla que gana discusiones**
-> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero la mayoría de los botes se deciden con una pareja o una carta alta y el [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> La Pareja y la Carta Alta juntas suman alrededor del 61% de todas las manos de siete cartas al river. Las manos grandes parecen comunes porque se recuerdan, pero seis de cada diez manos de siete cartas al azar terminan en pareja o menos, y por eso el [kicker](/es/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") importa mucho más a menudo de lo que esperan los principiantes.
 
 :::quiz:::
 
@@ -81,7 +81,7 @@ Aquí tienes cada mano, de la más fuerte a la más débil, con un ejemplo y la 
 
 **A♠ K♠ Q♠ J♠ 10♠** — la escalera de color más alta y la mejor mano del póker.
 
-No se puede superar; el único empate posible es una escalera real que esté entera en la mesa y la compartan todos, lo que divide el bote. Aparece más o menos una vez cada 31,000 manos, así que muchos jugadores pasan años sin ligarla. Cuando la ligues tú — no una que esté entera en la mesa —, tu único trabajo es meter cuantas fichas puedas.
+No se puede superar; el único empate posible es una escalera real que esté entera en la mesa y la compartan todos, lo que divide el bote. Aparece más o menos una vez cada 31,000 manos, así que, salvo que juegues muchísimas manos, puedes pasar muchísimo tiempo sin ligarla. Cuando la ligues tú — no una que esté entera en la mesa —, tu único trabajo es meter cuantas fichas puedas.
 
 ### #2 — Escalera de Color
 
@@ -142,7 +142,7 @@ Hay tres formas de ligarlo, y la diferencia importa:
 - **Trips:** una pareja en la mesa más una carta tuya. Más fácil de leer para el rival y de compartir.
 - **Trío en la mesa:** las tres cartas están en la mesa (p. ej. J♣ J♠ J♥ en el centro). Lo comparten todos, así que, salvo que alguien haga escalera o algo mejor, solo os separan los kickers.
 
-El set saca más fichas porque nadie lo ve venir.
+El set suele ganar botes más grandes porque cuesta mucho verlo venir.
 
 ### #8 — Doble Pareja
 
@@ -158,7 +158,7 @@ Se compara en este orden: **pareja alta → pareja baja → kicker**. KK99-A gan
 
 **K♠ K♦ 9♥ 6♣ 2♠** — dos cartas del mismo valor.
 
-La mano hecha más común del Hold'em. Dos parejas iguales se deciden por kickers: **valor de la pareja → kicker 1 → kicker 2 → kicker 3**, de mayor a menor. Aquí ocurren la mayoría de las derrotas con "la misma mano": cuida tu kicker.
+La mano hecha más común del Hold'em. Dos manos de pareja se comparan así: **valor de la pareja → kicker 1 → kicker 2 → kicker 3**, de mayor a menor — así que, cuando ambos tienen la misma pareja, deciden los kickers. Aquí ocurren la mayoría de las derrotas con "la misma mano": cuida tu kicker.
 
 ### #10 — Carta Alta
 
@@ -166,7 +166,7 @@ La mano hecha más común del Hold'em. Dos parejas iguales se deciden por kicker
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — nada conecta.
 
-En el showdown gana la carta más alta, luego la siguiente, y así con las cinco. Si las cinco coinciden, se divide. Es lo que te queda cuando un farol es pagado y no liga.
+En el showdown gana la carta más alta, luego la siguiente, y así con las cinco. Si las cinco coinciden, se divide. Suele ser lo que te queda cuando te pagan un farol y tu proyecto no liga.
 
 ---
 
@@ -174,7 +174,7 @@ En el showdown gana la carta más alta, luego la siguiente, y así con las cinco
 
 ![Showdown de póker — comparando las mejores cinco cartas de dos jugadores](/images/holdem-kicker-showdown-neutral.webp "En el showdown gana la mejor mano de cinco cartas")
 
-Cuando dos jugadores tienen el mismo tipo de mano, el ganador se decide comparando primero las cartas que forman la mano, y luego un **kicker** — una carta lateral que no forma parte de la mano hecha — rompe el empate cuando todo lo demás coincide. Esta es la parte que decide botes reales, y la que muchas tablas se saltan. Sigue este orden exacto:
+Cuando dos jugadores tienen el mismo tipo de mano, el ganador se decide comparando primero las cartas que forman la mano, y luego un **kicker** — una de tus mejores cinco cartas que no forma parte de la pareja, la doble pareja, el trío o el póker en sí — rompe el empate cuando todo lo demás coincide. Esta es la parte que decide botes reales, y la que muchas tablas se saltan. Sigue este orden exacto:
 
 1. **Compara el tipo de mano.** Un color siempre gana a una escalera, un full siempre gana a un color, y así sucesivamente.
 2. **Compara las cartas que forman la mano.** Una pareja de ases gana a una de reyes; un color con reina alta gana a uno con jota alta.
@@ -196,7 +196,7 @@ Pareja|Valor de la pareja → 3 kickers|+Con kicker
 Carta Alta|Las 5, de mayor a menor|+Con kicker
 :::
 
-Un **kicker** es simplemente una carta que no forma parte de tu mano hecha pero que aún así rompe empates. Con A-A-K contra A-A-Q, ambos tienen pareja de ases — gana el kicker K. Por eso los buenos jugadores cuidan tanto la *calidad* de sus cartas altas, no solo si emparejaron. Para tener la regla de desempate de cada mano en un mismo sitio, mira la [guía del kicker y los desempates](/es/blog/holdem-tiebreak-rules); cuando las mejores cinco cartas coinciden exactamente, el bote se [divide](/es/blog/holdem-split-pot-rules).
+Un **kicker** es una carta de tus mejores cinco que no forma parte de la pareja (ni del trío, la doble pareja o el póker) en sí, pero que aún así rompe empates. Con A-A-K contra A-A-Q, ambos tienen pareja de ases — gana el kicker K. Por eso los buenos jugadores cuidan tanto la *calidad* de sus cartas altas, no solo si emparejaron. Para tener la regla de desempate de cada mano en un mismo sitio, mira la [guía del kicker y los desempates](/es/blog/holdem-tiebreak-rules); cuando las mejores cinco cartas coinciden exactamente, el bote se [divide](/es/blog/holdem-split-pot-rules).
 
 ---
 
@@ -254,7 +254,7 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
 El color gana a la escalera simplemente porque es más difícil de ligar: en una baraja de 52 cartas hay menos formas de sacar cinco cartas del mismo palo (3.03% de las manos de siete cartas al river) que cinco en secuencia de cualquier palo (4.62%). La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano con cinco cartas, más alto está.**== Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
+También explica la gran excepción que verás en los juegos de mano alta: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
 
 ---
 
@@ -266,7 +266,7 @@ Con el reloj en contra, repasa este escaneo en orden cada vez que la mesa esté 
 
 **1. Primero los palos** — ¿hay tres o más cartas del mismo palo en la mesa? Si sí, ==el color es posible==. Mira tu palo.
 
-**2. Luego la conexión** — ¿hay cartas cercanas en valor (como 8-9-10)? Si sí, ==la escalera está viva==.
+**2. Luego la conexión** — ¿hay tres valores distintos dentro de un tramo de cinco valores seguidos (como 8-9-10)? Si sí, ==la escalera está viva==.
 
 **3. Por último las parejas** — ¿está emparejada la mesa? ==r:Si sí, hay fulls y pókers en juego, y tu color o escalera puede estar en peligro.==
 
@@ -284,7 +284,7 @@ La forma más rápida de memorizar las manos de póker es dejar de tratarlas com
 | **2** | Practica solo los duelos confusos: color vs escalera, full vs color | 3 días |
 | **3** | Mira streams de póker y canta el ganador antes de que el dealer lo anuncie | 1-2 semanas |
 
-Agrupar primero evita que el orden parezca diez cosas al azar. Los duelos confusos del paso 2 causan el 90% de los errores de principiante, así que insiste en ellos.
+Agrupar primero evita que el orden parezca diez cosas al azar. Los duelos confusos del paso 2 son donde más a menudo tropiezan los principiantes, así que insiste en ellos.
 
 ---
 
@@ -299,7 +299,7 @@ En su mayoría sí — el mismo orden de diez manos vale en Texas Hold'em, Omaha
 | **Seven-Card Stud** | Estándar | Sin cartas comunitarias (salvo una rara última carta compartida si la baraja no alcanza) |
 | **Short Deck (6+)** | Modificada | El color gana al full; A-6-7-8-9 es la escalera más baja (el As juega bajo y, sin las cartas del 2 al 5, conecta con el 6) |
 
-La conclusión: aprende el orden estándar una vez y te servirá en casi todos los juegos. Solo recuerda la regla de "exactamente dos" del Omaha y el ascenso del color en Short Deck.
+La conclusión: aprende el orden estándar una vez y te servirá en casi todos los juegos de mano alta (los juegos lowball como el Razz ordenan las manos al revés). Solo recuerda la regla de "exactamente dos" del Omaha y el ascenso del color en Short Deck.
 
 ---
 
@@ -352,7 +352,7 @@ A. Solo una escalera de color más alta o una escalera real (que no es más que 
 
 **Q. ¿Qué es un kicker?**
 
-A. Un kicker es una carta que no forma parte de tu mano hecha pero rompe empates. Con dos parejas iguales, gana la carta lateral (kicker) más alta — y si también empata, decide la siguiente. El mejor kicker posible es el As.
+A. Un kicker es una carta de tus mejores cinco que no forma parte de la pareja (ni del trío, la doble pareja o el póker) en sí, pero rompe empates. Cuando dos jugadores tienen la misma pareja, gana la carta lateral (kicker) más alta — y si también empata, decide la siguiente. El mejor kicker posible es el As.
 
 **Q. ¿Pueden dos jugadores tener la misma mano?**
 
@@ -364,7 +364,7 @@ A. En Hold'em, no — formas tus mejores cinco con cualquier combinación de tus
 
 **Q. ¿Cuál es la diferencia entre set y trips?**
 
-A. Ambos son trío. Un *set* es una pareja servida más una carta de la mesa (bien disimulado); los *trips* son una pareja en la mesa más una carta tuya (más fácil de leer). El set gana más fichas.
+A. Ambos son trío. Un *set* es una pareja servida más una carta de la mesa (bien disimulado); los *trips* son una pareja en la mesa más una carta tuya (más fácil de leer). El set suele ganar botes más grandes.
 
 **Q. ¿Cuál es la mano más alta del póker?**
 
@@ -380,7 +380,7 @@ A. Sí. La escalera de color (#2) gana al póker (#3) — cinco cartas en secuen
 
 **Q. ¿Cuál es la mano más baja (peor) del póker?**
 
-A. Como mano de cinco cartas, la peor posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la carta alta más baja que no forma pareja, escalera ni color — la clásica mano de "no tienes nada". En Hold'em, donde juegas las mejores cinco de tus siete cartas, la mano más floja con la que puedes terminar de verdad es 9-8-7-5-4 (con 9-8-7-5-4-3-2 en palos mezclados).
+A. Como mano de cinco cartas, la peor posible es 7-5-4-3-2 en palos mezclados ("siete alto"). Es la carta alta más baja que no forma pareja, escalera ni color — la clásica mano de "no tienes nada". En Hold'em, donde juegas las mejores cinco de tus siete cartas, la mano más floja con la que puedes terminar de verdad es 9-8-7-5-4 (con 9-8-7-5-4-3-2 sin cinco cartas del mismo palo).
 
 **Q. ¿Se pueden tener tres parejas en el póker?**
 
@@ -412,7 +412,7 @@ A. La jugada que más vale es la escalera real (A-K-Q-J-10 del mismo palo): es l
 
 1. **El orden:** Escalera Real > Escalera de Color > Póker > Full > Color > Escalera > Trío > Doble Pareja > Pareja > Carta Alta.
 2. **La trampa:** el color (#5) gana a la escalera (#6) — y cualquier mesa emparejada puede esconder un full que gana a ambos.
-3. **La realidad:** la mayoría de los botes se ganan con pareja o carta alta, así que tu kicker vale más de lo que crees.
+3. **La realidad:** siete cartas al azar terminan en pareja o carta alta alrededor del 61% de las veces, así que tu kicker vale más de lo que crees.
 
 Aprende el orden en una tarde, practica los duelos confusos y repasa el escaneo "color → escalera → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
 

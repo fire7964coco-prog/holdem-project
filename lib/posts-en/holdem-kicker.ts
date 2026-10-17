@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board's ace gives each of them just a pair of aces.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Two players turning over A-K and A-Q at showdown with an ace on the board — the king kicker deciding who wins the pot",
   tags: ["poker kicker", "what is a kicker in poker", "kicker rules", "does a flush have a kicker", "playing the board", "dominated ace", "kicker card", "does four of a kind have a kicker"],
   content: `
-The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outkicked me, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
+The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outkicked me, and the pot slid his way. I hadn't lost to a better *type* of hand; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
 
 ==A kicker is the tiebreaker built into poker itself — when two players hold the same rank, the highest leftover card wins.== Most guides give you a one-line definition and an AK-vs-AQ example. This one gives you the full picture: exactly which hands have a kicker (and how many), the one exception everyone gets wrong, and why "playing the board" means your kicker suddenly doesn't matter at all.
 
@@ -41,7 +41,7 @@ Where a kicker fits in the bigger picture of [poker hand rankings](/en/blog/hold
 
 The key idea: a kicker ==never beats a higher-ranked hand.== A pair of kings with a deuce kicker still crushes a pair of tens with an ace kicker — rank first, kicker only as a tiebreaker. Kickers only matter when the ==r:ranks are identical==: pair vs. the same pair, trips vs. the same trips.
 
-Say you hold A-K and your opponent holds A-Q, and the board pairs an ace. You both have "a pair of aces" — identical rank. Now the side cards decide, and your king outkicks their queen. Nobody made a better hand; the kicker just did its quiet job.
+Say you hold A-K and your opponent holds A-Q, and the board pairs an ace. You both have "a pair of aces" — identical rank. Now the side cards decide, and your king outkicks their queen. Nobody made a higher-ranking hand; the kicker just did its quiet job.
 
 ---
 
@@ -121,16 +121,16 @@ Neither of you can go higher than an ace, so you both "play the board" and ==g:c
 
 ## Why Does A9 Lose to AK? (The Dominated Ace)
 
-**A hand is "dominated" when it shares a card with a stronger hand and will lose the kicker battle nearly every time it connects — the classic trap is a weak ace like A9 against AK.** This is where kickers stop being trivia and start costing money.
+**A hand is "dominated" when it shares a card with a stronger hand and loses the kicker battle whenever both hands pair that shared card and nothing else improves — the classic trap is a weak ace like A9 against AK.** This is where kickers stop being trivia and start costing money.
 
 ![Two starting hands side by side on green felt — A-K next to A-9 — showing how the same ace with a weaker kicker becomes a dominated trap](/images/holdem-kicker-dominated.webp "Same ace, different fate: the kicker is what separates a premium hand from a dominated one")
 
-Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no straight or flush out there.
+Back to my buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, no flush possible, and no straight for either of us.
 
 - **A9:** A♠ 9♣ → pair of aces, best five ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pair of aces, best five ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Same pair again — and my 9 never even got a vote. It was pushed down to second kicker by the board's queen, and the comparison was settled at the first kicker: his K over the board's Q — so for all it mattered, my "kicker" was ==r:dead== before the hand began. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
+Same pair again — and my 9 never even got a vote. It was pushed down to second kicker by the board's queen, and the comparison was settled at the first kicker: his K over the board's Q — so for all it mattered, my "kicker" was ==r:dead== as long as we were both just playing a pair of aces. That's domination: when you hit your ace, you're often just paying off a bigger ace. It's the whole reason the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") treats A9 offsuit so much more cautiously than AK — the kicker is the difference between a premium hand and a trap.
 
 ---
 
@@ -171,7 +171,7 @@ A. Yes, four of a kind has a one-card kicker, but it rarely matters in Hold'em. 
 
 **Q. Does the kicker matter with three of a kind?**
 
-A. Yes. Three of a kind uses two kickers, so when two players make the same trips the next two highest cards break the tie — on a K♣ K♥ 7♦ 5♣ 2♠ board, K♠ A♠ plays K-K-K-A-7 and beats the K-K-K-Q-7 of K♦ Q♦ because the ace outkicks the queen. (A true *set* made from a pocket pair rarely ties, since only one player can hold that exact pair.)
+A. Yes. Three of a kind uses two kickers, so when two players make the same trips the next two highest cards break the tie — on a K♣ K♥ 7♦ 5♣ 2♠ board, K♠ A♠ plays K-K-K-A-7 and beats the K-K-K-Q-7 of K♦ Q♦ because the ace outkicks the queen. (A true *set* made from a pocket pair can't tie that way — with only four cards of each rank, nobody else can hold three of the same rank.)
 
 **Q. Do two pairs have a kicker?**
 
@@ -187,11 +187,11 @@ A. It depends on the hand: a high-card hand uses four kickers (all five cards co
 
 **Q. What is a good kicker in poker?**
 
-A. A high one — an ace or king kicker is strong, while a low kicker like a nine leaves you "dominated." This is why AK and AQ are far better than A9 or A5: when two players pair their ace and make nothing better, the biggest kicker wins the pot.
+A. A high one — an ace or king kicker is strong, while a low kicker like a nine leaves you "dominated" whenever you run into a bigger ace. This is why AK and AQ are far better than A9 or A5: when two players pair their ace and make nothing better, the bigger kicker wins — unless the board's own cards outrank both kickers and the pot is split.
 
 **Q. What is an ace kicker (or a king kicker)?**
 
-A. An ace kicker means your highest side card is an ace — the strongest kicker there is, so "top pair, ace kicker" wins almost every same-pair showdown. A king kicker is the next best. It's exactly why A-K and A-Q beat a weak ace like A-9: when two players pair their ace and make nothing better, the biggest kicker takes the pot.
+A. An ace kicker means your highest side card is an ace — the strongest kicker there is, so "top pair, ace kicker" can never be outkicked on the first kicker by someone holding the same pair. A king kicker is the next best. It's exactly why A-K and A-Q beat a weak ace like A-9: when two players pair their ace and make nothing better, the bigger kicker takes the pot — unless the board's own cards outrank both kickers and the pot is split.
 
 **Q. What does "playing the board" mean?**
 

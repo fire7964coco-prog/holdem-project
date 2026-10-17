@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Quando o pote é dividido? Regras do chop no Hold'em",
   seoTitle: "Ganhou a mão e levou só metade? — Dividir o pote no poker",
   desc: "Dá empate no poker? Dá — veja quando o pote é dividido: mesmas cinco cartas, a mesa jogando para todos, a regra da ficha ímpar e o chop de potes paralelos.",
-  tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
+  tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores empatam com a melhor mão no showdown — as mesmas melhores cinco cartas. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Levar metade de um pote que você tinha certeza de ter ganhado é chocante. Mas 
 ---
 
 > **Resposta rápida**
-> Um pote é **dividido** (também chamado de **chop**) quando dois ou mais jogadores têm a **mesma melhor mão de cinco cartas** no showdown. As fichas são repartidas por igual. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.
+> Um pote é **dividido** (também chamado de **chop**) quando dois ou mais jogadores empatam com a melhor mão no showdown, com a **mesma melhor mão de cinco cartas**. As fichas são repartidas por igual. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.
 
 ---
 
@@ -40,9 +40,9 @@ Levar metade de um pote que você tinha certeza de ter ganhado é chocante. Mas 
 
 ## O que é um pote dividido no poker? (E "chop" é a mesma coisa?)
 
-Um **pote dividido** acontece quando dois ou mais jogadores têm a mesma melhor mão de cinco cartas no showdown, então o dealer reparte as fichas por igual entre eles. Um **chop** — ou "pote chopado" — é exatamente a mesma coisa na gíria da mesa ("a gente vai chopar"). Os livros de regra dizem dividir; os jogadores dizem chop. As pessoas pesquisam os dois, então você vai ver os termos usados como sinônimos.
+Um **pote dividido** acontece quando dois ou mais jogadores empatam com a melhor mão no showdown, com as mesmas melhores cinco cartas, então o dealer reparte as fichas por igual entre eles. Um **chop** — ou "pote chopado" — é exatamente a mesma coisa na gíria da mesa ("a gente vai chopar"). Os livros de regra dizem dividir; os jogadores dizem chop. As pessoas pesquisam os dois, então você vai ver os termos usados como sinônimos.
 
-A base: sua mão é sempre as ==**melhores cinco cartas**== entre sete — suas duas cartas fechadas mais as cinco da mesa. Onde cada mão de cinco cartas se posiciona está no [ranking completo das mãos de poker](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Quando as melhores cinco de dois jogadores são idênticas em valor, nenhum é "mais" vencedor== — o pote é dividido, ponto final.
+A base: sua mão é sempre as ==**melhores cinco cartas**== entre sete — suas duas cartas fechadas mais as cinco da mesa. Onde cada mão de cinco cartas se posiciona está no [ranking completo das mãos de poker](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Quando as melhores mãos do showdown são do mesmo tipo de mão com os mesmos cinco valores, nenhum é "mais" vencedor== — o pote é dividido, ponto final.
 
 ---
 
@@ -72,12 +72,12 @@ As cinco cartas comunitárias já são a mão mais forte para todos que restam �
 Duas sequências com a mesma carta mais alta empatam, independentemente do naipe. Num board 7♣ 6♦ 5♥ K♠ 2♣, tanto o 9♠ 8♠ do A quanto o 9♥ 8♦ do B fazem 9-8-7-6-5 — mesma altura, então **divide**.
 
 ### 4. O mesmo flush
-Não existe hierarquia de naipe, então dois flushes com os mesmos cinco valores empatam. Na prática isso quase sempre significa que a ==**própria mesa**== é um flush de cinco cartas. Em K♠ J♠ 8♠ 4♠ 2♠, se o A tem A♥ Q♦ e o B tem 10♥ 9♦, nenhum tem espadas — os dois jogam o flush K-J-8-4-2 da mesa e **chopam**.
+Não existe hierarquia de naipe, então dois flushes com os mesmos cinco valores empatam. No Hold'em isso só pode acontecer quando a ==**própria mesa**== é um flush de cinco cartas que ninguém melhora. Em K♠ J♠ 8♠ 4♠ 2♠, se o A tem A♥ Q♦ e o B tem 10♥ 9♦, nenhum tem espadas — os dois jogam o flush K-J-8-4-2 da mesa e **chopam**.
 
 ==r:Mas confira antes de supor:== qualquer espada na sua mão mais alta que a menor espada da mesa melhora o flush. Aqui até o modesto 3♠ faz K-J-8-4-3 e ==g:leva o pote inteiro== — e o A♠ faz o nut flush.
 
 ### 5. Idênticos até o último kicker
-Pares e dois pares geralmente são decididos por kickers — mas se os kickers também coincidem, é divisão. Board A♦ Q♠ 9♣ 6♥ 2♠ com A♠ K♦ vs A♥ K♣ dá aos dois jogadores ==g:A-A-K-Q-9== → **divide**. Quando os kickers *diferem*, o mais alto ganha tudo — exatamente como essa comparação funciona, mão a mão, está nas [regras de desempate e kicker](/pt/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Quando os pares (ou os dois pares) são do mesmo valor, os kickers decidem — e se os kickers também coincidem, é divisão. Board A♦ Q♠ 9♣ 6♥ 2♠ com A♠ K♦ vs A♥ K♣ dá aos dois jogadores ==g:A-A-K-Q-9== → **divide**. Quando os kickers *diferem*, o mais alto ganha tudo — exatamente como essa comparação funciona, mão a mão, está nas [regras de desempate e kicker](/pt/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,11 +87,11 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 É a minha mão 8-8-8-A-K: meu J♠ 10♥ e o 5♣ 2♦ dele jogaram a trinca de oitos da mesa com kickers ás-rei — cinco cartas idênticas, um chop assim que as duas mãos foram mostradas. O caso extremo é um board como A♠ K♠ Q♠ J♠ 10♠ (um royal flush): nenhuma carta fechada pode melhorá-lo, então ==g:todos que restam chopam==.
 
-> **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
+> **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga — o máximo que você pode levar é uma parte, e você só chopa se ninguém mais bater a mesa também. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
 **E a parte que mais importa na mesa: num showdown com algum adversário ainda na mão, sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck normalmente está morta mesmo que fosse dividir o pote (só dá para recuperar uma mão que ainda seja claramente identificável, e a critério do floor; regra 109 das regras de torneio da WSOP) — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta a sua parte de tudo que já estava no pote (metade em heads-up) — dar fold entrega essa parte de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta para o call — e baixa para o fold: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo, e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta a sua parte de tudo que já estava no pote (metade em heads-up) — dar fold entrega essa parte de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta para o call — e baixa para o fold: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo, e num river em que a mesa ainda pode ser batida, isso acontece muitas vezes.]:::
 
 ---
 
@@ -118,13 +118,13 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — uma sequência formada. Você tem A♠ K♦; 
 
 > ==A ficha ímpar que sobra vai para o primeiro empatado **à esquerda do botão do dealer**== (o assento vencedor mais próximo no sentido horário a partir do botão).
 
-Numa divisão de três vias com duas fichas ímpares, os dois assentos mais próximos no sentido horário ficam com uma cada. ==r:As regras da casa podem variar== — algumas salas distribuem a ficha ímpar por carta alta ou naipe — então, se tem dinheiro de verdade em jogo, chame o floor. ==g:Online, o software atribui automaticamente pela posição.==
+Numa divisão de três vias com duas fichas ímpares, os dois assentos mais próximos no sentido horário ficam com uma cada. ==r:As regras da casa podem variar== — então, se tem dinheiro de verdade em jogo, chame o floor. ==g:Online, o software atribui automaticamente pela posição.==
 
 ---
 
 ## Os potes paralelos também dividem? Empates quando alguém está all-in
 
-Quando há jogadores all-in por valores diferentes e os outros continuam apostando, as fichas formam um ==**pote principal**== (todos são elegíveis) mais um ou mais ==**potes paralelos**== (só os jogadores que colocaram mais do que um stack all-in menor conseguia cobrir). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
+Quando há jogadores all-in por valores diferentes e os outros continuam apostando, as fichas formam um ==**pote principal**== (todo jogador que ainda está na mão é elegível) mais um ou mais ==**potes paralelos**== (só os jogadores que colocaram mais do que um stack all-in menor conseguia cobrir). Cada pote é entregue — ou chopado — ==**separadamente**==, com base na melhor mão entre os jogadores elegíveis daquele pote.
 
 Um exemplo prático: o A está all-in por 100; o B e o C colocam 300 cada. Isso dá um **pote principal de 300** (100 × 3) e um **pote paralelo de 400** (200 + 200, só B e C). O board vem A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -157,7 +157,7 @@ No Texas Hold'em, não. Você talvez tenha ouvido falar de "jogos de pote dividi
 
 **Q. Quando o pote é dividido no poker?**
 
-A. O pote é dividido quando dois ou mais jogadores têm a mesma melhor mão de cinco cartas no showdown; as fichas são repartidas por igual entre eles.
+A. O pote é dividido quando dois ou mais jogadores empatam com a melhor mão no showdown, com as mesmas melhores cinco cartas; as fichas são repartidas por igual entre eles.
 
 **Q. Como o pote é dividido na prática?**
 
@@ -181,7 +181,7 @@ A. Não. O Texas Hold'em não tem hierarquia de naipe, então mãos de cinco car
 
 **Q. Quem fica com a ficha ímpar quando o pote não divide por igual?**
 
-A. Regra padrão: o primeiro empatado à esquerda do botão do dealer. Algumas salas atribuem por carta alta ou naipe, então as regras da casa podem variar — o software online resolve automaticamente.
+A. Regra padrão: o primeiro empatado à esquerda do botão do dealer. As regras da casa podem variar, então pergunte ao floor — o software online resolve automaticamente.
 
 **Q. Mais de dois jogadores podem dividir um pote?**
 
@@ -211,7 +211,7 @@ A. Não — mesma palavra, duas coisas diferentes. Um pote dividido no showdown 
 
 ## As conclusões
 
-1. Sim, ==**dá empate no poker**== — um pote divide (chopa) sempre que dois ou mais jogadores compartilham as ==**mesmas melhores cinco entre sete**==.
+1. Sim, ==**dá empate no poker**== — um pote divide (chopa) sempre que dois ou mais jogadores empatam com a melhor mão, com as ==**mesmas melhores cinco entre sete**==.
 2. ==r:**Naipes, cartas fechadas mais altas e quantas cartas você usou**== nunca desempatam.
 3. A ==**ficha ímpar**== vai para o primeiro empatado à esquerda do botão, e os ==**potes paralelos**== são resolvidos separadamente do pote principal.
 

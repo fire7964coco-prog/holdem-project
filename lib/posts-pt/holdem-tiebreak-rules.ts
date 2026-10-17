@@ -73,7 +73,7 @@ Pegue a mão da foto acima:
 
 Mesmo par de ases, então os kickers vão de cabeça a cabeça em ordem: ==g:K ganha de Q — briga encerrada.== O nove do B ainda está *na* mão como segundo kicker, mas a comparação nunca chega tão longe.
 
-Repare que o kicker de topo do B é a dama do **board**, não o 9 que ele tem. ==r:Um kicker só conta se realmente entrar nas suas melhores cinco== — uma carta mais alta na mesa empurra sua carta da mão para baixo na lista. É também por isso que a segunda carta com que você começa importa tanto quanto o próprio ás: A-K e A-9 são ambos "um par de ases" aqui, e só um deles ganha ([tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart)).
+Repare que o kicker de topo do B é a dama do **board**, não o 9 que ele tem. ==r:Um kicker só conta se realmente entrar nas suas melhores cinco== — uma carta mais alta na mesa empurra sua carta da mão para baixo na lista. É também por isso que a segunda carta com que você começa importa tanto: A-K e A-9 são ambos "um par de ases" aqui, e só um deles ganha ([tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -123,7 +123,7 @@ E aí tem a armadilha que decide dinheiro de verdade — ==r:**falsificação (c
 
 </div>
 
-A mesa parear os noves deu a *ambos* os jogadores um segundo par melhor — seus quatros foram ==r:falsificados==, e a única comparação que restou foi o par de topo: reis sobre noves. A mão que liderava no flop perde o pote sem nenhum dos jogadores melhorar as próprias cartas.
+A mesa parear os noves deu a *ambos* os jogadores um segundo par melhor — seus quatros foram ==r:falsificados==, e a única comparação que restou foi o par de topo: reis sobre noves. A mão que liderava no flop perde o pote mesmo sem o turn e o river parearem as cartas da mão de ninguém — só a mesa virou o resultado.
 
 ---
 
@@ -184,7 +184,7 @@ Enxergar esses desenvolvimentos antes da aposta do river é uma habilidade próp
 
 **Q. Como se desempata no poker?**
 
-A. Numa ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão (o par mais alto, a trinca ou a carta de topo), depois os kickers do mais alto ao mais baixo. Se as cinco cartas coincidem em valor, o pote é dividido — os naipes nunca são usados.
+A. Numa ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão (o par mais alto, a trinca ou a carta de topo), depois os kickers do mais alto ao mais baixo. Se as cinco cartas coincidem em valor no mesmo tipo de mão, o pote — ou cada pote paralelo a que os dois têm direito — é dividido; os naipes nunca são usados.
 
 **Q. Quem ganha se dois jogadores têm o mesmo par?**
 
@@ -196,7 +196,7 @@ A. Compare primeiro o par mais alto, depois o par mais baixo, depois o único ki
 
 **Q. Quem ganha se dois jogadores têm a mesma trinca?**
 
-A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — então, com a mesma trinca, ganha quem tiver a carta lateral mais alta. Com trinca de noves, 9-9-9-A-K ganha de 9-9-9-A-Q porque o segundo kicker (o rei) supera a dama. Se a trinca e os dois kickers forem iguais, o pote é dividido. (Um set feito de par na mão quase nunca empata, já que só um jogador pode ter aquele par exato.)
+A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — então, com a mesma trinca, ganha quem tiver a carta lateral mais alta. Com trinca de noves, 9-9-9-A-K ganha de 9-9-9-A-Q porque o segundo kicker (o rei) supera a dama. Se a trinca e os dois kickers forem iguais, o pote é dividido. (Um set feito de par na mão não pode empatar desse jeito: como só existem quatro cartas de cada valor, ninguém mais pode ter três do mesmo valor.)
 
 **Q. A 5ª carta importa no poker?**
 
@@ -210,7 +210,7 @@ A. No Hold'em, sim, mas só na sequência A-2-3-4-5 (a "wheel"), onde ele joga c
 
 A. Sim — as sequências são ranqueadas puramente pela carta mais alta, então 6-5-4-3-2 ganha da wheel A-5, e a Broadway (A-K-Q-J-10) ganha de todas. Cartas de topo iguais significam sequências idênticas e pote dividido.
 
-**Q. Quem ganha se dois jogadores têm a mesma sequência?**
+**Q. Quem ganha se os dois jogadores têm sequência?**
 
 A. Ganha a sequência de carta de topo mais alta — Q-J-10-9-8 ganha de J-10-9-8-7, porque a sequência é ranqueada só pela carta mais alta e não tem kicker. Isso acontece com mais frequência quando a sequência está quase toda no board e os dois jogadores completam a mesma ponta.
 
@@ -218,7 +218,7 @@ A. Ganha a sequência de carta de topo mais alta — Q-J-10-9-8 ganha de J-10-9-
 
 A. Compare os flushes carta a carta, de cima para baixo: um flush de ás ganha de um flush de rei e, se as cartas de topo forem iguais, você passa para a seguinte, e assim pelas cinco. Os naipes nunca desempatam, então, se os cinco valores forem idênticos, o pote é dividido.
 
-**Q. Quem ganha se dois jogadores têm o mesmo full house?**
+**Q. Quem ganha se os dois jogadores têm full house?**
 
 A. Compare primeiro a trinca — a trinca mais alta ganha, então K-K-K-2-2 ganha de Q-Q-Q-A-A, mesmo com os ases parecendo maiores. Só se as trincas forem idênticas é que se compara o par. O full house não tem kicker, então trinca e par iguais significam pote dividido.
 
@@ -243,7 +243,7 @@ A. É, mas não é comum. O empate de verdade só acontece quando as melhores ci
 ## O que fica
 
 1. Todo empate roda o mesmo procedimento: ==**tipo de mão → cartas feitas → kickers → divisão**== — sem exceções, sem naipes.
-2. Um kicker só conta se ==g:entra nas suas melhores cinco== — cartas da mesa podem substituí-lo, e uma mesa com dois pares pode falsificar seus dois pares por completo.
+2. Um kicker só conta se ==g:entra nas suas melhores cinco== — cartas da mesa podem substituí-lo, e uma mesa com dois pares pode falsificar seu segundo par.
 3. As sequências se ranqueiam pela carta mais alta (a wheel é a mais baixa), os flushes comparam as cinco — e quando nada separa as mãos, o pote é repartido.
 
 Fixe a ordem completa com o [ranking de mãos completo](/pt/blog/holdem-hand-rankings), pegue a carta lateral em si em [o que é kicker](/pt/blog/holdem-kicker) e veja exatamente como os potes empatados são repartidos no [guia de pote dividido](/pt/blog/holdem-split-pot-rules).

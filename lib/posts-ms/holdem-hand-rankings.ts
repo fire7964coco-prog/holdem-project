@@ -46,10 +46,10 @@ Dari tertinggi hingga terendah, sepuluh tangan Texas Hold'em disusun begini: Roy
 
 </div>
 
-*Ini ialah kekerapan tangan tujuh kad standard untuk dek penuh 52 kad — kebarangkalian yang sama digunakan oleh setiap solver poker dan laman latihan.*
+*Ini ialah kekerapan tangan tujuh kad standard untuk dek penuh 52 kad — seberapa kerap tujuh kad rawak berakhir sebagai setiap tangan, bukan peluang anda dengan tangan tertentu atau menentang range tertentu.*
 
 > **Peraturan yang menamatkan pertikaian**
-> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh kad menjelang river. Tangan besar terasa lazim kerana ia mudah diingati — tetapi kebanyakan pot ditentukan oleh sepasang kad atau high card berserta [kicker](/ms/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") yang mengiringinya.
+> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh kad menjelang river. Tangan besar terasa lazim kerana ia mudah diingati — tetapi enam daripada sepuluh tangan tujuh kad rawak berakhir sebagai pair atau lebih rendah, sebab itulah [kicker](/ms/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") jauh lebih kerap penting daripada sangkaan pemula.
 
 :::quiz:::
 
@@ -81,7 +81,7 @@ Inilah setiap tangan dari terkuat ke terlemah, dengan contoh dan satu peraturan 
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi, dan tangan terbaik dalam poker.
 
-Ia tidak boleh dikalahkan; satu-satunya seri yang mungkin ialah royal flush yang keseluruhannya terletak di board untuk dikongsi semua pemain, lalu pot dibahagi. Anda akan melihatnya lebih kurang sekali dalam 31,000 tangan, jadi kebanyakan pemain boleh bermain bertahun-tahun tanpa pernah mendapatnya. Apabila anda sendiri yang membentuknya — bukan royal flush yang keseluruhannya terletak di board — satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
+Ia tidak boleh dikalahkan; satu-satunya seri yang mungkin ialah royal flush yang keseluruhannya terletak di board untuk dikongsi semua pemain, lalu pot dibahagi. Anda akan melihatnya lebih kurang sekali dalam 31,000 tangan, jadi melainkan anda bermain sangat banyak tangan, anda boleh melalui tempoh yang sangat lama tanpa membentuknya. Apabila anda sendiri yang membentuknya — bukan royal flush yang keseluruhannya terletak di board — satu-satunya tugas anda ialah memasukkan sebanyak mungkin cip.
 
 ### #2 — Straight Flush
 
@@ -142,7 +142,7 @@ Ada tiga cara membentuknya, dan perbezaannya penting:
 - **Trips:** sepasang di board ditambah satu kad di tangan anda. Lebih mudah dibaca lawan dan lebih mudah dikongsi.
 - **Trips di board:** ketiga-tiga kad berada di board (cth. J♣ J♠ J♥ di tengah meja). Semua pemain berkongsinya, jadi melainkan seseorang membentuk straight atau yang lebih kuat, hanya kicker yang membezakan anda.
 
-Set memenangi lebih banyak cip kerana tiada siapa menyangkanya.
+Set sering memenangi pot yang lebih besar kerana ia begitu sukar dijangka.
 
 ### #8 — Two Pair
 
@@ -158,7 +158,7 @@ Bandingkan mengikut urutan: **pasangan tinggi → pasangan rendah → kicker**. 
 
 **K♠ K♦ 9♥ 6♣ 2♠** — dua kad satu nilai.
 
-Tangan siap paling lazim dalam Hold'em. Jika dua pemain memegang pair yang sama, kicker yang menentukan: **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, tertinggi dahulu. Di sinilah kebanyakan kekalahan "tangan sama" berlaku — jaga kicker anda.
+Tangan siap paling lazim dalam Hold'em. Dua tangan pair dibandingkan mengikut **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, tertinggi dahulu — jadi jika dua pemain memegang pair yang sama, kicker yang menentukan. Di sinilah kebanyakan kekalahan "tangan sama" berlaku — jaga kicker anda.
 
 ### #10 — High Card
 
@@ -166,7 +166,7 @@ Tangan siap paling lazim dalam Hold'em. Jika dua pemain memegang pair yang sama,
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — tiada yang bersambung.
 
-Ketika showdown, kad tertinggi menang, kemudian yang seterusnya, dan begitulah hingga kelima-limanya. Jika kelima-limanya sepadan, pot dibahagi. Inilah yang tinggal apabila bluff anda di-call dan tidak menjadi.
+Ketika showdown, kad tertinggi menang, kemudian yang seterusnya, dan begitulah hingga kelima-limanya. Jika kelima-limanya sepadan, pot dibahagi. Selalunya inilah yang tinggal apabila bluff anda di-call dan draw anda tidak menjadi.
 
 ---
 
@@ -196,7 +196,7 @@ Pair|Nilai pasangan → 3 kicker|+Guna kicker
 High Card|Kelima-limanya, tinggi ke rendah|+Guna kicker
 :::
 
-**Kicker** ialah sekadar kad yang bukan sebahagian daripada tangan siap anda tetapi masih digunakan untuk memecahkan seri. Dengan A-A-K lawan A-A-Q, kedua-duanya ada sepasang As — kicker K yang menang. Itulah sebabnya pemain pro begitu mengambil berat tentang *kualiti* kad tinggi mereka, bukan sekadar sama ada ia berpasangan. Untuk semua peraturan seri setiap tangan dalam satu halaman, lihat [panduan kicker dan pemecah seri](/ms/blog/holdem-tiebreak-rules); apabila lima kad terbaik sepadan sepenuhnya, pot [dibahagi](/ms/blog/holdem-split-pot-rules) — urutan membuka kad dan prinsip "cards speak" yang menyelesaikannya ada dalam [peraturan showdown Texas Hold'em](/ms/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp").
+**Kicker** ialah kad dalam lima kad terbaik anda yang bukan sebahagian daripada pair itu sendiri (atau trips, two pair, quads), tetapi masih memecahkan seri. Dengan A-A-K lawan A-A-Q, kedua-duanya ada sepasang As — kicker K yang menang. Itulah sebabnya pemain pro begitu mengambil berat tentang *kualiti* kad tinggi mereka, bukan sekadar sama ada ia berpasangan. Untuk semua peraturan seri setiap tangan dalam satu halaman, lihat [panduan kicker dan pemecah seri](/ms/blog/holdem-tiebreak-rules); apabila lima kad terbaik sepadan sepenuhnya, pot [dibahagi](/ms/blog/holdem-split-pot-rules) — urutan membuka kad dan prinsip "cards speak" yang menyelesaikannya ada dalam [peraturan showdown Texas Hold'em](/ms/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp").
 
 ---
 
@@ -256,7 +256,7 @@ Jawapan pendek untuk pertikaian yang meletus di setiap meja: flush menang ke ata
 
 Flush menang ke atas straight kerana ia lebih sukar dibentuk: dalam dek 52 kad, terdapat lebih sedikit cara mendapat lima kad satu jenis (3.03% daripada tangan tujuh kad menjelang river) berbanding lima berturutan dalam mana-mana jenis (4.62%). Susunan ini bukan sewenang-wenangnya — ia ==kebarangkalian semata-mata==. ==g:**Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.**== Satu prinsip itu menjelaskan keseluruhan hierarki — lihat angka tepatnya dalam [carta odds dan kebarangkalian poker](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Ia juga menjelaskan satu pengecualian besar yang akan anda temui: dalam **Short Deck (6+) Hold'em**, di mana kad 2 hingga 5 dikeluarkan, flush menjadi lebih sukar daripada full house — jadi dalam format itu ==r:**flush menang ke atas full house**==. Matematiknya berubah, maka susunannya berubah. Lebih lanjut tentang perbezaan setiap permainan di bawah.
+Ia juga menjelaskan satu pengecualian besar yang akan anda temui dalam permainan high hand: dalam **Short Deck (6+) Hold'em**, di mana kad 2 hingga 5 dikeluarkan, flush menjadi lebih sukar daripada full house — jadi dalam format itu ==r:**flush menang ke atas full house**==. Matematiknya berubah, maka susunannya berubah. Lebih lanjut tentang perbezaan setiap permainan di bawah.
 
 ---
 
@@ -268,7 +268,7 @@ Apabila masa mendesak, jalankan imbasan ini mengikut urutan setiap kali board le
 
 **1. Jenis kad dahulu** — adakah tiga atau lebih kad satu jenis di board? Jika ya, ==flush mungkin wujud==. Semak jenis kad anda.
 
-**2. Sambungan seterusnya** — adakah kad yang berdekatan nilai (seperti 8-9-10)? Jika ya, ==straight masih hidup==.
+**2. Sambungan seterusnya** — adakah terdapat tiga nilai berbeza dalam mana-mana lingkungan lima nilai berturut-turut (seperti 8-9-10)? Jika ya, ==straight masih hidup==.
 
 **3. Pasangan akhir sekali** — adakah board berpasangan? ==r:Jika ya, full house dan quads menjadi mungkin, dan flush atau straight anda mungkin dalam bahaya.==
 
@@ -286,7 +286,7 @@ Cara terpantas menghafal tangan poker ialah berhenti melihatnya sebagai sepuluh 
 | **2** | Latih hanya pasangan yang mengelirukan: flush vs straight, full house vs flush | 3 hari |
 | **3** | Tonton siaran poker dan sebut pemenang sebelum pengedar mengumumkannya | 1–2 minggu |
 
-Mengumpulkan dahulu menghalang susunan daripada terasa seperti sepuluh item rawak. Pasangan mengelirukan di langkah 2 menyebabkan 90% kesilapan pemula, jadi perbanyakkan latihannya.
+Mengumpulkan dahulu menghalang susunan daripada terasa seperti sepuluh item rawak. Pasangan mengelirukan di langkah 2 ialah tempat pemula paling kerap tersilap, jadi perbanyakkan latihannya.
 
 ---
 
@@ -301,7 +301,7 @@ Sebahagian besarnya ya — susunan sepuluh tangan yang sama terpakai merentasi T
 | **Seven-Card Stud** | Standard | Tiada kad komuniti (kecuali satu kad terakhir dikongsi yang jarang berlaku jika dek kehabisan kad) |
 | **Short Deck (6+)** | Diubah suai | Flush menang ke atas full house; A-6-7-8-9 ialah straight terendah (As masih main rendah, dan tanpa kad 2–5 ia terus bersambung ke 6) |
 
-Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir setiap permainan. Cuma ingat peraturan "tepat dua" Omaha dan kenaikan flush dalam Short Deck.
+Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir setiap permainan high hand (permainan lowball seperti Razz menyusun tangan secara terbalik). Cuma ingat peraturan "tepat dua" Omaha dan kenaikan flush dalam Short Deck.
 
 ---
 
@@ -354,7 +354,7 @@ A. Hanya straight flush yang lebih tinggi atau royal flush (yang sebenarnya stra
 
 **Q. Apakah itu kicker?**
 
-A. Kicker ialah kad yang bukan sebahagian daripada tangan siap anda tetapi memecahkan seri. Jika dua pemain memegang pair yang sama, kad sampingan (kicker) tertinggi yang menang — dan jika itu juga seri, kad seterusnya yang menentukan. As ialah kicker terbaik yang mungkin.
+A. Kicker ialah kad dalam lima kad terbaik anda yang bukan sebahagian daripada pair itu sendiri (atau trips, two pair, quads), tetapi memecahkan seri. Jika dua pemain memegang pair yang sama, kad sampingan (kicker) tertinggi yang menang — dan jika itu juga seri, kad seterusnya yang menentukan. As ialah kicker terbaik yang mungkin.
 
 **Q. Bolehkah dua pemain memegang tangan yang sama?**
 
@@ -366,7 +366,7 @@ A. Dalam Hold'em, tidak — anda membentuk lima terbaik daripada mana-mana gabun
 
 **Q. Apakah beza set dan trips?**
 
-A. Kedua-duanya three of a kind. *Set* ialah pocket pair ditambah satu kad board (tersembunyi rapi); *trips* ialah sepasang di board ditambah satu kad di tangan anda (lebih mudah dibaca). Set memenangi lebih banyak cip.
+A. Kedua-duanya three of a kind. *Set* ialah pocket pair ditambah satu kad board (tersembunyi rapi); *trips* ialah sepasang di board ditambah satu kad di tangan anda (lebih mudah dibaca). Set sering memenangi pot yang lebih besar.
 
 **Q. Apakah tangan tertinggi dalam poker?**
 
@@ -382,7 +382,7 @@ A. Ya. Straight flush (#2) menang ke atas four of a kind (#3) — lima kad bertu
 
 **Q. Apakah tangan terendah (paling teruk) dalam poker?**
 
-A. Sebagai tangan lima kad, yang paling teruk ialah 7-5-4-3-2 dalam jenis bercampur ("seven-high"). Ia high card terendah yang bukan pair, straight, mahupun flush — tangan klasik "anda tiada apa-apa". Dalam Hold'em, kerana anda bermain dengan lima kad terbaik daripada tujuh, tangan paling lemah yang benar-benar boleh anda pegang pada akhirnya ialah 9-8-7-5-4 (daripada 9-8-7-5-4-3-2 dalam jenis bercampur).
+A. Sebagai tangan lima kad, yang paling teruk ialah 7-5-4-3-2 dalam jenis bercampur ("seven-high"). Ia high card terendah yang bukan pair, straight, mahupun flush — tangan klasik "anda tiada apa-apa". Dalam Hold'em, kerana anda bermain dengan lima kad terbaik daripada tujuh, tangan paling lemah yang benar-benar boleh anda pegang pada akhirnya ialah 9-8-7-5-4 (daripada 9-8-7-5-4-3-2 tanpa lima kad daripada satu jenis).
 
 **Q. Bolehkah anda ada tiga pasangan dalam poker?**
 
@@ -398,7 +398,7 @@ A. Boleh. As main tinggi dan rendah, jadi A-2-3-4-5 ("the wheel") ialah straight
 
 1. **Susunannya:** Royal Flush > Straight Flush > Four of a Kind > Full House > Flush > Straight > Three of a Kind > Two Pair > Pair > High Card.
 2. **Perangkapnya:** flush (#5) menang ke atas straight (#6) — dan mana-mana board berpasangan boleh menyembunyikan full house yang menang ke atas kedua-duanya.
-3. **Realitinya:** kebanyakan pot dimenangi dengan pair atau high card, jadi kicker anda lebih bernilai daripada yang anda sangka.
+3. **Realitinya:** tujuh kad rawak berakhir sebagai pair atau high card kira-kira 61% daripada masa, jadi kicker anda lebih bernilai daripada yang anda sangka.
 
 Pelajari susunannya dalam satu petang, latih pasangan yang mengelirukan, dan jalankan imbasan flush → straight → pasangan pada setiap board. Buat begitu dan anda tidak akan lagi menolak pot ke arah yang salah.
 

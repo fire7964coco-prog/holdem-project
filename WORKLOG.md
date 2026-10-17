@@ -1,3 +1,14 @@
+## 2026-10-17 (13) — EN 손질 회차 3 · CQ-ⓑ + CP-ⓑ 족보 글 몫 · EN 43자리 + 15로케일 64파일 · MB-381
+
+- 범위 = 핸드오프 «EN 손질 3». 자리 실측 결과 CP-ⓑ 도구 몫(calc·glossary·quiz·hand-chart·tournaments)이 별개 덩어리라 90분 한도로 **회차 4로 분리** — 이번 = 족보 형제 5편(hand-rankings·kicker·tiebreak-rules·split-pot-rules·flush-vs-straight). 우편함: 새 MA 0.
+- 근거 = 검수장 보고 `검수-MB372-th도구·족보글` §EN 동형 + astra/postpl F01~F11 · `검수-MB373-plth족보형제` CLASSIFY §4 E3~E19. 문안은 본체.
+- §13: split L74 동률 플러시 = 보드 5장 플러시일 때만(1덱 · 다른 무늬 두 플러시는 보드 6장 필요) · kicker L128 A♠9♣ vs A♥K♦ 보드 A♦7♣2♥Q♠4♦(플러시·스트레이트 없음) · set 동률 불가(숫자당 4장) · flush tip SF 예외(8♥7♥2♣3♦+J♥ · T♥9♥ SF vs A♥4♥ 플러시). split 홀수 칩 «일부 카드룸 하이카드·무늬» = 1차 미확보 → 삭제(KO 글 WSOP Rule 73 = 무늬는 스터드·라즈) · KO L212 같이.
+- 전파 = 서브 4갈래(de·fr·es·pt 20 · id·ms·vi·tr·pl 22 · ja·zh·zh-hant 15 · ar·hi·th 7) · 로케일 고유 사본 포함(ar 합본 tiebreak 6 등). 덤: EN flush L131 «Who Wins the Tie?» 첫말 «Yes» → «The higher hand wins — and yes» + 7로케일 · zh-hant «高牌玩法»(= 하이카드 이름) → «比大玩法» · pt·fr·es tip 주어 명시.
+- 🔴 사고 직전: zh-hant 서브가 레포 전체 git stash/pop — pop 무충돌 · 70파일 변경 줄 수 = 갈래 보고와 일치 확인. KO 날짜 치환에서 쉼표 삭제 → 빌드 ParseError → 즉시 복구.
+- 스탬프: updated 10-17 · masterUpdated 옛 EN 값과 같던 파일만(ms split·flush 09-26 · tr tiebreak 10-05 그대로).
+- 게이트: audit:hard 16로케일 🔴 0(🟠 = 기존 C2 표 · 손댄 글 무관) · KO split 0 · 백틱 증감 0 · U+FFFD 0 · 빌드 exit 0(74 + 746).
+- 🪶 남김 = MB-381 끝(id tiebreak 스트레이트 FAQ · es·pt·ja «유일한 예외» H2 · split 3인 FAQ · ms probability L273 · zh HR «九成»).
+
 ## 2026-10-17 (12) — EN 손질 회차 2 · CL-1~8 · CN-3~14·ⓐ · CO-ⓒ · EN 24 + 24로케일 약 270자리 · MA-614 회신 · MB-380
 
 - 범위 = 핸드오프 «EN 손질 2» 중 CL·CN·CO-ⓒ. 🔴 CP-ⓑ·CQ-ⓑ는 묶음이 넓고(도구 사전·퀴즈 포함) 90분 한도 밖 → EN 손질 회차 3으로 분리.

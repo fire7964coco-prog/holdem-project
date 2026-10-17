@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker (lá phụ) là lá cao nhất không thuộc phần chính của tay bài — nó phá thế hòa khi hai người cùng hạng. Mậu thầu dùng 4 kicker, một đôi 3, hai đôi 1, sám cô 2; sảnh, thùng, cù lũ và thùng phá sảnh không có kicker. Đó là lý do AK thắng AQ khi cả hai cùng đôi A nhờ một lá A trên bài chung (board).",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Hai người chơi lật A-K và A-Q khi showdown với một lá A trên board — kicker K quyết định ai thắng pot",
   tags: ["kicker trong poker là gì", "kicker poker là gì", "kicker poker", "kicker là gì", "poker kicker rule", "poker ace kicker", "top kicker poker", "high kicker poker"],
   content: `
-Ván bài khiến tôi cuối cùng cũng hiểu kicker (lá phụ) là gì đã lấy của tôi trọn một buy-in. Tôi cầm ==b:A♠ 9♣==, bài chung (board) ra thêm một lá A ghép đôi cho tôi, và tôi shove vì nghĩ đôi cao nhất là vàng. Đối thủ lật ==b:A♥ K♦== — cũng đôi A, nhưng lá K của đối thủ cao hơn lá 9 của tôi, và pot trôi về phía bên kia. Tôi không thua một *tay bài* mạnh hơn; tôi thua một ==lá phụ== mạnh hơn. Lá phụ đó chính là kicker, và nó quyết định nhiều pot hơn bất kỳ người mới nào tưởng.
+Ván bài khiến tôi cuối cùng cũng hiểu kicker (lá phụ) là gì đã lấy của tôi trọn một buy-in. Tôi cầm ==b:A♠ 9♣==, bài chung (board) ra thêm một lá A ghép đôi cho tôi, và tôi shove vì nghĩ đôi cao nhất là vàng. Đối thủ lật ==b:A♥ K♦== — cũng đôi A, nhưng lá K của đối thủ cao hơn lá 9 của tôi, và pot trôi về phía bên kia. Tôi không thua một *hạng tay bài* cao hơn; tôi thua một ==lá phụ== mạnh hơn. Lá phụ đó chính là kicker, và nó quyết định nhiều pot hơn bất kỳ người mới nào tưởng.
 
 ==Kicker là cơ chế phá thế hòa nằm sẵn trong luật poker — khi hai người cùng hạng tay bài, lá còn lại cao nhất sẽ thắng.== Phần lớn hướng dẫn chỉ cho bạn một dòng định nghĩa và một ví dụ AK gặp AQ. Bài này cho bạn bức tranh đầy đủ: chính xác tay bài nào có kicker (và bao nhiêu lá), ngoại lệ mà ai cũng nói sai, và vì sao "chơi theo bài chung (playing the board)" nghĩa là kicker của bạn bỗng dưng chẳng còn ý nghĩa gì.
 
@@ -42,7 +42,7 @@ Vị trí của kicker trong bức tranh lớn về [thứ tự bài poker](/vi/
 
 Ý cốt lõi: kicker ==không bao giờ thắng một tay bài xếp cao hơn.== Đôi K với kicker 2 vẫn đè bẹp đôi 10 với kicker A — so hạng trước, kicker chỉ để phá thế hòa. Kicker chỉ có ý nghĩa khi ==r:hai hạng giống hệt nhau==: đôi gặp đúng đôi đó, bộ ba gặp đúng bộ ba đó. Nói cách khác, kicker chỉ được so khi hai tay bài cùng hạng — hai đôi gặp một đôi không phải chuyện kicker.
 
-Giả sử bạn cầm A-K và đối thủ cầm A-Q, rồi board ra một lá A. Cả hai đều có "đôi A" — cùng hạng. Lúc này lá phụ quyết định, và lá K của bạn cao hơn lá Q của họ. Không ai tạo được tay bài mạnh hơn; kicker chỉ lặng lẽ làm việc của nó.
+Giả sử bạn cầm A-K và đối thủ cầm A-Q, rồi board ra một lá A. Cả hai đều có "đôi A" — cùng hạng. Lúc này lá phụ quyết định, và lá K của bạn cao hơn lá Q của họ. Không ai tạo được tay bài xếp hạng cao hơn; kicker chỉ lặng lẽ làm việc của nó.
 
 ---
 
@@ -122,7 +122,7 @@ Không ai lên cao hơn A được, nên cả hai cùng chơi theo board và ==g
 
 ## Vì sao A9 thua AK? Lá A bị dominate (dominated ace)
 
-**Một tay bài bị dominate khi nó có chung một lá với tay bài mạnh hơn và gần như lần nào trúng bài cũng sẽ thua ở cuộc so kicker — cái bẫy kinh điển là lá A yếu như A9 gặp AK.** Đây là lúc kicker không còn là chuyện bên lề mà bắt đầu tốn tiền.
+**Một tay bài bị dominate khi nó có chung một lá với tay bài mạnh hơn và thua ở cuộc so kicker mỗi khi cả hai cùng ghép đôi lá chung đó mà không cải thiện thêm gì khác — cái bẫy kinh điển là lá A yếu như A9 gặp AK.** Đây là lúc kicker không còn là chuyện bên lề mà bắt đầu tốn tiền.
 
 ![Hai tay bài khởi đầu đặt cạnh nhau trên mặt nỉ xanh — A-K bên cạnh A-9 — cho thấy cùng một lá A nhưng kicker yếu hơn trở thành cái bẫy bị dominate](/images/holdem-kicker-dominated.webp "Cùng lá A, số phận khác nhau: kicker là thứ tách một tay bài premium khỏi một tay bài bị dominate")
 
@@ -131,7 +131,7 @@ Quay lại cái buy-in của tôi. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, không 
 - **A9:** A♠ 9♣ → đôi A, 5 lá mạnh nhất ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → đôi A, 5 lá mạnh nhất ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Lại cùng đôi — và lá 9 của tôi thậm chí không có tiếng nói. Nó bị lá Q trên board đẩy xuống làm kicker thứ hai, và cuộc so bài đã kết thúc ngay ở kicker thứ nhất: K của đối thủ trên Q của board — nên xét cho cùng, "kicker" của tôi đã ==r:chết== từ trước khi ván bài bắt đầu. Đó là dominate: khi bạn trúng lá A, bạn thường chỉ đang trả tiền cho một lá A lớn hơn. Đó là toàn bộ lý do mà bài viết [bài khởi đầu nên chơi theo vị trí](/vi/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") xếp A9 khác chất thận trọng hơn AK rất nhiều — kicker là khác biệt giữa một tay bài premium và một cái bẫy.
+Lại cùng đôi — và lá 9 của tôi thậm chí không có tiếng nói. Nó bị lá Q trên board đẩy xuống làm kicker thứ hai, và cuộc so bài đã kết thúc ngay ở kicker thứ nhất: K của đối thủ trên Q của board — nên xét cho cùng, "kicker" của tôi đã ==r:chết== chừng nào cả hai chúng tôi chỉ đang chơi một đôi A. Đó là dominate: khi bạn trúng lá A, bạn thường chỉ đang trả tiền cho một lá A lớn hơn. Đó là toàn bộ lý do mà bài viết [bài khởi đầu nên chơi theo vị trí](/vi/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") xếp A9 khác chất thận trọng hơn AK rất nhiều — kicker là khác biệt giữa một tay bài premium và một cái bẫy.
 
 ---
 
@@ -172,7 +172,7 @@ A. Lá thứ năm cao nhất thắng. Tứ quý có một lá kicker, nhưng nó
 
 **Q. Sám cô có so kicker không?**
 
-A. Có. Sám cô dùng hai kicker, nên khi hai người cùng tạo một bộ ba giống nhau, hai lá cao nhất tiếp theo sẽ phân định — trên board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ chơi K-K-K-A-7 và thắng K-K-K-Q-7 của K♦ Q♦ vì kicker A cao hơn kicker Q. (Một *set* thật sự từ đôi trên tay hiếm khi hòa, vì chỉ một người cầm được đúng đôi đó.)
+A. Có. Sám cô dùng hai kicker, nên khi hai người cùng tạo một bộ ba giống nhau, hai lá cao nhất tiếp theo sẽ phân định — trên board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ chơi K-K-K-A-7 và thắng K-K-K-Q-7 của K♦ Q♦ vì kicker A cao hơn kicker Q. (Một *set* thật sự từ đôi trên tay không thể hòa theo kiểu đó — mỗi giá trị chỉ có bốn lá, nên không ai khác cầm được bộ ba cùng giá trị.)
 
 **Q. Hai đôi có kicker không?**
 
@@ -188,11 +188,11 @@ A. Tùy tay bài: mậu thầu dùng bốn kicker (so cả năm lá theo thứ t
 
 **Q. Kicker thế nào là tốt?**
 
-A. Kicker cao (high kicker, top kicker) — kicker A hoặc K là mạnh, còn kicker thấp như lá 9 khiến bạn "bị dominate". Đây là lý do AK và AQ tốt hơn A9 hay A5 rất nhiều: khi hai người cùng ghép đôi lá A và không tạo được gì hơn, kicker lớn nhất thắng pot.
+A. Kicker cao (high kicker, top kicker) — kicker A hoặc K là mạnh, còn kicker thấp như lá 9 khiến bạn "bị dominate" mỗi khi gặp một lá A lớn hơn. Đây là lý do AK và AQ tốt hơn A9 hay A5 rất nhiều: khi hai người cùng ghép đôi lá A và không tạo được gì hơn, kicker lớn hơn thắng — trừ khi chính các lá trên board cao hơn cả hai kicker và pot được chia.
 
 **Q. Ace kicker (hay king kicker) nghĩa là gì?**
 
-A. Ace kicker nghĩa là lá phụ cao nhất của bạn là lá A — kicker mạnh nhất có thể, nên "đôi cao nhất, kicker A" thắng gần như mọi showdown cùng đôi. King kicker là mức tốt kế tiếp. Đó chính là lý do A-K và A-Q thắng một lá A yếu như A-9: khi hai người cùng ghép đôi lá A và không tạo được gì hơn, kicker lớn nhất lấy pot.
+A. Ace kicker nghĩa là lá phụ cao nhất của bạn là lá A — kicker mạnh nhất có thể, nên "đôi cao nhất, kicker A" không bao giờ bị người cầm cùng đôi vượt ở kicker thứ nhất. King kicker là mức tốt kế tiếp. Đó chính là lý do A-K và A-Q thắng một lá A yếu như A-9: khi hai người cùng ghép đôi lá A và không tạo được gì hơn, kicker lớn hơn lấy pot — trừ khi chính các lá trên board cao hơn cả hai kicker và pot được chia.
 
 **Q. Chơi theo bài chung (playing the board) nghĩa là gì?**
 

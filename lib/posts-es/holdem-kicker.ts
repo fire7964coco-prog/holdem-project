@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando el as de la mesa solo les da a ambos una pareja de ases.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dos jugadores mostrando A-K y A-Q en el showdown con un as en la mesa — el kicker del rey decide quién se lleva el bote",
   tags: ["kicker poker", "kicker en poker que es", "reglas del kicker", "el color tiene kicker", "jugar la mesa", "as dominado", "carta de desempate", "perder por kicker"],
   content: `
-La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey me superó en el kicker, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
+La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey me superó en el kicker, y el bote se deslizó hacia su lado. No había perdido contra un *tipo* de mano mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
 
 ==El kicker es el desempate integrado en el propio póker — cuando dos jugadores tienen el mismo valor, gana la carta sobrante más alta.== Casi todas las guías te dan una definición de una línea y el ejemplo de AK contra AQ. Esta te da el cuadro completo: exactamente qué manos tienen kicker (y cuántos), la única excepción que todos confunden y por qué "jugar la mesa" significa que de repente tu kicker no importa nada.
 
@@ -42,7 +42,7 @@ Dónde encaja el kicker en el panorama general de la [jerarquía de manos de pó
 
 La idea clave: un kicker ==nunca gana a una mano de valor superior.== Una pareja de reyes con un dos de kicker sigue aplastando a una pareja de dieces con un as de kicker — primero el valor, el kicker solo como desempate. Los kickers únicamente cuentan cuando los ==r:valores son idénticos==: pareja contra la misma pareja, trío contra el mismo trío.
 
-Digamos que tienes A-K y tu rival A-Q, y la mesa empareja un as. Ambos tienen "pareja de ases" — mismo valor. Ahora deciden las cartas laterales, y tu rey supera a su reina. Nadie hizo una mano mejor; el kicker simplemente hizo su trabajo callado.
+Digamos que tienes A-K y tu rival A-Q, y la mesa empareja un as. Ambos tienen "pareja de ases" — mismo valor. Ahora deciden las cartas laterales, y tu rey supera a su reina. Nadie hizo una mano de valor superior; el kicker simplemente hizo su trabajo callado.
 
 ---
 
@@ -122,16 +122,16 @@ Ninguno de los dos puede subir por encima de un as, así que ambos "jugáis la m
 
 ## El as dominado: por qué A9 pierde contra AK
 
-**Una mano está "dominada" cuando comparte una carta con una mano más fuerte y perderá la batalla del kicker casi siempre que conecte — la trampa clásica es un as flojo como A9 contra AK.** Aquí es donde los kickers dejan de ser curiosidad y empiezan a costar dinero.
+**Una mano está "dominada" cuando comparte una carta con una mano más fuerte y pierde la batalla del kicker siempre que ambas manos emparejen esa carta compartida y nada más mejore — la trampa clásica es un as flojo como A9 contra AK.** Aquí es donde los kickers dejan de ser curiosidad y empiezan a costar dinero.
 
 ![Dos manos iniciales una junto a otra sobre el tapete verde — A-K al lado de A-9 — mostrando cómo el mismo as con un kicker más débil se convierte en una trampa dominada](/images/holdem-kicker-dominated.webp "El mismo as, distinto destino: el kicker es lo que separa una mano premium de una dominada")
 
-Volvamos a mi buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin escalera ni color a la vista.
+Volvamos a mi buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sin color posible y sin escalera para ninguno de los dos.
 
 - **A9:** A♠ 9♣ → pareja de ases, mejores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → pareja de ases, mejores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Misma pareja otra vez — y mi 9 ni siquiera llegó a votar. Quedó relegado a segundo kicker por la reina de la mesa, y la comparación se zanjó en el primer kicker: su K sobre la Q de la mesa — así que, para lo que importaba, mi "kicker" estaba ==r:muerto== antes de empezar la mano. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
+Misma pareja otra vez — y mi 9 ni siquiera llegó a votar. Quedó relegado a segundo kicker por la reina de la mesa, y la comparación se zanjó en el primer kicker: su K sobre la Q de la mesa — así que, para lo que importaba, mi "kicker" estaba ==r:muerto== mientras los dos solo jugáramos una pareja de ases. Eso es la dominación: cuando ligas tu as, muchas veces solo estás pagando un as mayor. Es la razón entera por la que la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") trata a A9 offsuit con mucha más cautela que AK — el kicker es la diferencia entre una mano premium y una trampa.
 
 ---
 
@@ -172,7 +172,7 @@ A. Sí, el póker tiene un kicker de una carta, pero rara vez importa en Hold'em
 
 **Q. ¿Importa el kicker con trío?**
 
-A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo trío las dos cartas más altas siguientes rompen el empate — en un board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ juega K-K-K-A-7 y gana al K-K-K-Q-7 de K♦ Q♦ porque el as supera a la reina. (Un *set* de verdad hecho con una pareja servida rara vez empata, ya que solo un jugador puede tener esa pareja exacta.)
+A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo trío las dos cartas más altas siguientes rompen el empate — en un board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ juega K-K-K-A-7 y gana al K-K-K-Q-7 de K♦ Q♦ porque el as supera a la reina. (Un *set* de verdad hecho con una pareja servida no puede empatar así — con solo cuatro cartas de cada valor, nadie más puede tener tres del mismo valor.)
 
 **Q. ¿La doble pareja tiene kicker?**
 
@@ -188,11 +188,11 @@ A. Depende de la mano: cuatro para la carta alta (se comparan las cinco en orden
 
 **Q. ¿Qué es un buen kicker en el póker?**
 
-A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo como un nueve te deja "dominado". Por eso AK y AQ son mucho mejores que A9 o A5: cuando dos jugadores emparejan su as y no hacen nada mejor, gana el bote el kicker más grande.
+A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo como un nueve te deja "dominado" cada vez que te cruzas con un as mayor. Por eso AK y AQ son mucho mejores que A9 o A5: cuando dos jugadores emparejan su as y no hacen nada mejor, gana el kicker más grande — salvo que las propias cartas de la mesa superen a ambos kickers y el bote se divida.
 
 **Q. ¿Qué es un kicker de as (o un kicker de rey)?**
 
-A. Un kicker de as significa que tu carta lateral más alta es un as — el kicker más fuerte que hay, así que "pareja máxima, kicker de as" gana casi todos los showdowns con la misma pareja. Un kicker de rey es el siguiente mejor. Es exactamente por lo que A-K y A-Q ganan a un as flojo como A-9: cuando dos jugadores emparejan su as y no hacen nada mejor, el kicker más grande se lleva el bote.
+A. Un kicker de as significa que tu carta lateral más alta es un as — el kicker más fuerte que hay, así que "pareja máxima, kicker de as" nunca puede ser superado en el primer kicker por alguien con la misma pareja. Un kicker de rey es el siguiente mejor. Es exactamente por lo que A-K y A-Q ganan a un as flojo como A-9: cuando dos jugadores emparejan su as y no hacen nada mejor, el kicker más grande se lleva el bote — salvo que las propias cartas de la mesa superen a ambos kickers y el bote se divida.
 
 **Q. ¿Qué significa "jugar la mesa"?**
 

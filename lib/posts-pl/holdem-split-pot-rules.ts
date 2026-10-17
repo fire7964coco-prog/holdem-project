@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Kiedy dzieli się pulę? Remis i podział puli w Texas Hold'em",
   seoTitle: "Dostałeś tylko pół puli? — Remis i podział puli w pokerze",
   desc: "Czy w pokerze może być remis? Tak. Kiedy dokładnie dzieli się pulę: identyczne pięć kart, board gra za wszystkich, nieparzysty żeton i pule boczne.",
-  tldr: "Tak, w pokerze może być remis. Pulę dzieli się (chop), gdy dwóch lub więcej graczy pokazuje identyczny najlepszy układ z pięciu kart. Kolory kart nigdy nie rozstrzygają remisu, a nieparzysty żeton dostaje pierwszy remisujący gracz na lewo od buttona.",
+  tldr: "Tak, w pokerze może być remis. Pulę dzieli się (chop), gdy dwóch lub więcej graczy remisuje przy showdownie na najlepszym układzie — z identycznymi najlepszymi pięcioma kartami. Kolory kart nigdy nie rozstrzygają remisu, a nieparzysty żeton dostaje pierwszy remisujący gracz na lewo od buttona.",
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-10-17",
-  masterUpdated: "2026-10-05",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -33,7 +33,7 @@ Dostać połowę puli, którą miałeś za wygraną, to szok. Ale ==g:podział p
 ---
 
 > **Szybka odpowiedź**
-> Pulę **dzieli się** (gracze mówią też **chop**), gdy dwóch lub więcej graczy ma przy showdownie **identyczny najlepszy układ z pięciu kart**. Żetony dzieli się po równo. Kolory kart nigdy nie rozstrzygają remisu, a nieparzysty żeton, który zostaje, dostaje pierwszy remisujący gracz na lewo od buttona.
+> Pulę **dzieli się** (gracze mówią też **chop**), gdy dwóch lub więcej graczy remisuje przy showdownie na najlepszym układzie, mając **identyczny najlepszy układ z pięciu kart**. Żetony dzieli się po równo. Kolory kart nigdy nie rozstrzygają remisu, a nieparzysty żeton, który zostaje, dostaje pierwszy remisujący gracz na lewo od buttona.
 
 ---
 
@@ -49,9 +49,9 @@ Dostać połowę puli, którą miałeś za wygraną, to szok. Ale ==g:podział p
 
 ## Co to jest split pot? (I czy „chop” to to samo?)
 
-**Split pot**, czyli podział puli, to sytuacja, w której dwóch lub więcej graczy ma przy showdownie identyczny najlepszy układ z pięciu kart, więc rozdający dzieli żetony między nich po równo. **Chop** to dokładnie to samo, tylko w żargonie przy stole („chopujemy”, „dzielimy”). Regulaminy mówią o podziale puli, gracze mówią chop. Szukasz jednego albo drugiego — chodzi o to samo.
+**Split pot**, czyli podział puli, to sytuacja, w której dwóch lub więcej graczy remisuje przy showdownie na najlepszym układzie z identycznymi najlepszymi pięcioma kartami, więc rozdający dzieli żetony między nich po równo. **Chop** to dokładnie to samo, tylko w żargonie przy stole („chopujemy”, „dzielimy”). Regulaminy mówią o podziale puli, gracze mówią chop. Szukasz jednego albo drugiego — chodzi o to samo.
 
-Podstawa: twój układ to zawsze ==**najlepsze pięć kart**== z siedmiu — twoje dwie karty zakryte plus pięć kart wspólnych. Gdzie w hierarchii stoi każdy układ z pięciu kart, znajdziesz w [pełnym rankingu układów pokerowych](/pl/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Gdy najlepsze piątki dwóch graczy mają identyczną wartość, żaden z nich nie wygrywa „bardziej”== — pula się dzieli i koniec.
+Podstawa: twój układ to zawsze ==**najlepsze pięć kart**== z siedmiu — twoje dwie karty zakryte plus pięć kart wspólnych. Gdzie w hierarchii stoi każdy układ z pięciu kart, znajdziesz w [pełnym rankingu układów pokerowych](/pl/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Gdy najlepsze układy przy showdownie należą do tej samej kategorii i mają te same pięć wartości, żaden z graczy nie wygrywa „bardziej”== — pula się dzieli i koniec.
 
 ---
 
@@ -81,12 +81,12 @@ Pięć kart wspólnych to już najsilniejszy układ dla każdego, kto został w 
 Dwa strity z tą samą najwyższą kartą remisują, bez względu na kolory. Na boardzie 7♣ 6♦ 5♥ K♠ 2♣ zarówno A z 9♠ 8♠, jak i B z 9♥ 8♦ mają 9-8-7-6-5 — ta sama wysokość, więc **podział**.
 
 ### 4. Ten sam kolor
-Kolory kart nie mają starszeństwa, więc dwa kolory (flushe) z tymi samymi pięcioma wartościami remisują. W praktyce prawie zawsze oznacza to, że **sam board** jest pięciokartowym kolorem. Na K♠ J♠ 8♠ 4♠ 2♠, jeśli A ma A♥ Q♦, a B ma 10♥ 9♦, żaden nie ma pika — obaj grają kolor z boardu K-J-8-4-2 i **dzielą pulę**.
+Kolory kart nie mają starszeństwa, więc dwa kolory (flushe) z tymi samymi pięcioma wartościami remisują. W Hold'em może do tego dojść tylko wtedy, gdy **sam board** jest pięciokartowym kolorem, którego nikt nie poprawia. Na K♠ J♠ 8♠ 4♠ 2♠, jeśli A ma A♥ Q♦, a B ma 10♥ 9♦, żaden nie ma pika — obaj grają kolor z boardu K-J-8-4-2 i **dzielą pulę**.
 
 ==r:Ale sprawdź, zanim założysz remis:== każdy pik w twojej ręce wyższy od najniższego pika na boardzie poprawia kolor. Tutaj nawet skromna 3♠ daje K-J-8-4-3 i ==g:wygrywa całą pulę== — a A♠ daje kolor nutsowy.
 
 ### 5. Identycznie aż do ostatniego kickera
-Pary i dwie pary zwykle rozstrzygają kickery — ale jeśli kickery też są równe, jest podział. Board A♦ Q♠ 9♣ 6♥ 2♠ przy A♠ K♦ kontra A♥ K♣ daje obu graczom ==g:A-A-K-Q-9== → **podział**. Gdy kickery się *różnią*, wyższy wygrywa całą pulę — jak dokładnie wygląda to porównanie, układ po układzie, wyjaśniają [zasady rozstrzygania remisów i kickera](/pl/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Gdy pary (albo dwie pary) mają tę samą wartość, rozstrzygają kickery — a jeśli kickery też są równe, jest podział. Board A♦ Q♠ 9♣ 6♥ 2♠ przy A♠ K♦ kontra A♥ K♣ daje obu graczom ==g:A-A-K-Q-9== → **podział**. Gdy kickery się *różnią*, wyższy wygrywa całą pulę — jak dokładnie wygląda to porównanie, układ po układzie, wyjaśniają [zasady rozstrzygania remisów i kickera](/pl/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -96,11 +96,11 @@ Pula może mieć kilku zwycięzców — i wcale nie trzeba do tego dwóch potwor
 
 To moje rozdanie 8-8-8-A-K: moje J♠ 10♥ i jego 5♣ 2♦ grały trójkę ósemek z boardu z kickerami as-król — identyczne piątki, czyli podział, gdy tylko obie ręce zostały odkryte. Skrajny przypadek to board w rodzaju A♠ K♠ Q♠ J♠ 10♠ (poker królewski): żadne karty zakryte go nie poprawią, więc ==g:wszyscy, którzy zostali, dzielą pulę==.
 
-> **Kontrola:** czy *twoja* najlepsza piątka — z użyciem co najmniej jednej karty z ręki — bije własną piątkę boardu? Jeśli tak, grasz swoją rękę. Jeśli nie, gra board i najpewniej dzielisz pulę. Jak w ten sposób czytać board krok po kroku, przećwiczysz na zagadkach w [poradniku o układach pokerowych](/pl/blog/holdem-hand-rankings).
+> **Kontrola:** czy *twoja* najlepsza piątka — z użyciem co najmniej jednej karty z ręki — bije własną piątkę boardu? Jeśli tak, grasz swoją rękę. Jeśli nie, gra board — możesz dostać najwyżej część puli, a do podziału dochodzi tylko wtedy, gdy nikt inny też nie bije boardu. Jak w ten sposób czytać board krok po kroku, przećwiczysz na zagadkach w [poradniku o układach pokerowych](/pl/blog/holdem-hand-rankings).
 
 **I rzecz najważniejsza przy stole: przy showdownie z rywalem, który wciąż jest w rozdaniu, twoja ręka wygrywa tylko wtedy, gdy odkryjesz ją na stole.** Ręka wrzucona do mucka jest zwykle martwa, nawet jeśli dałaby podział (odzyskać można tylko rękę, którą da się jednoznacznie zidentyfikować, i tylko decyzją floora; Reguła turniejowa WSOP 109) — gdy grasz board, i tak musisz odkryć obie karty zakryte, inaczej tracisz swoją część puli (Reguła 172 WSOP dla gier cashowych; regulamin turniejowy WSOP powtarza to w regule 75). Kto odkrywa pierwszy i jak wygląda kolejność, wyjaśnia [poradnik o zasadach showdownu](/pl/blog/holdem-showdown-rules).
 
-:::tip[Jeśli gra board, a ktoś stawia zakład na riverze, **pas z automatu jest błędem**. Gdy nic nie może pobić boardu, podział jest pewny, a sprawdzenie i tak oddaje ci twoją część wszystkiego, co już było w puli (heads-up połowę) — pasując, oddajesz ją za darmo. Gdy board *da się* pobić, policz częstotliwość: heads-up, przeciw zakładowi wielkości puli potrzebujesz, żeby rywal też grał board mniej więcej 2 razy na 3; przeciw zakładowi pół puli — mniej więcej w połowie przypadków (przy większej liczbie graczy w rozdaniu twoja część podziału maleje, a poprzeczka rośnie). To wysoka poprzeczka dla sprawdzenia — i niska dla pasa: przeciw zakładowi wielkości puli pas jest poprawny, gdy rywal ma prawdziwą rękę częściej niż **raz na trzy**, a na riverze, na którym board wciąż da się pobić, to normalna sytuacja.]:::
+:::tip[Jeśli gra board, a ktoś stawia zakład na riverze, **pas z automatu jest błędem**. Gdy nic nie może pobić boardu, podział jest pewny, a sprawdzenie i tak oddaje ci twoją część wszystkiego, co już było w puli (heads-up połowę) — pasując, oddajesz ją za darmo. Gdy board *da się* pobić, policz częstotliwość: heads-up, przeciw zakładowi wielkości puli potrzebujesz, żeby rywal też grał board mniej więcej 2 razy na 3; przeciw zakładowi pół puli — mniej więcej w połowie przypadków (przy większej liczbie graczy w rozdaniu twoja część podziału maleje, a poprzeczka rośnie). To wysoka poprzeczka dla sprawdzenia — i niska dla pasa: przeciw zakładowi wielkości puli pas jest poprawny, gdy rywal ma prawdziwą rękę częściej niż **raz na trzy**, a na riverze, na którym board wciąż da się pobić, tak często bywa.]:::
 
 ---
 
@@ -127,13 +127,13 @@ Czasem pula nie dzieli się równo — pula 101 żetonów między dwóch graczy 
 
 > ==Nieparzysty żeton dostaje pierwszy remisujący gracz **na lewo od buttona**== (najwcześniejsze wygrywające miejsce zgodnie z ruchem wskazówek zegara od buttona).
 
-Przy podziale na trzech z dwoma nieparzystymi żetonami po jednym dostają dwa najwcześniejsze miejsca zgodnie z ruchem wskazówek zegara. ==r:Zasady domu mogą się różnić== — niektóre kasyna przyznają nieparzysty żeton według najwyższej karty albo koloru — więc jeśli chodzi o prawdziwe pieniądze, zapytaj floora. ==g:Online oprogramowanie przydziela go automatycznie według pozycji.==
+Przy podziale na trzech z dwoma nieparzystymi żetonami po jednym dostają dwa najwcześniejsze miejsca zgodnie z ruchem wskazówek zegara. ==r:Zasady domu mogą się różnić== — więc jeśli chodzi o prawdziwe pieniądze, zapytaj floora. ==g:Online oprogramowanie przydziela go automatycznie według pozycji.==
 
 ---
 
 ## Czy pule boczne też się dzielą? Remis, gdy ktoś jest all-in
 
-Gdy gracze są all-in za różne kwoty, a pozostali dalej stawiają, żetony tworzą ==**główną pulę**== (prawo do niej mają wszyscy) plus jedną lub więcej ==**pul bocznych**== (tylko dla graczy, którzy wpłacili więcej, niż mógł wyrównać krótszy stack all-in). Każdą pulę przyznaje się — albo dzieli — ==**osobno**==, na podstawie najlepszej ręki wśród graczy uprawnionych do tej puli.
+Gdy gracze są all-in za różne kwoty, a pozostali dalej stawiają, żetony tworzą ==**główną pulę**== (prawo do niej ma każdy gracz, który wciąż jest w rozdaniu) plus jedną lub więcej ==**pul bocznych**== (tylko dla graczy, którzy wpłacili więcej, niż mógł wyrównać krótszy stack all-in). Każdą pulę przyznaje się — albo dzieli — ==**osobno**==, na podstawie najlepszej ręki wśród graczy uprawnionych do tej puli.
 
 Przykład z obliczeniami: A jest all-in za 100; B i C wpłacają po 300. To daje **główną pulę 300** (100 × 3) i **pulę boczną 400** (200 + 200, tylko B i C). Board wychodzi A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -166,7 +166,7 @@ Nie w Texas Hold'em. Być może słyszałeś o grach „split-pot”, takich jak
 
 **Q. Kiedy dzieli się pulę w pokerze?**
 
-A. Pulę dzieli się, gdy dwóch lub więcej graczy ma przy showdownie identyczny najlepszy układ z pięciu kart; żetony rozdziela się między nich po równo.
+A. Pulę dzieli się, gdy dwóch lub więcej graczy remisuje przy showdownie na najlepszym układzie z identycznymi najlepszymi pięcioma kartami; żetony rozdziela się między nich po równo.
 
 **Q. Jak dzieli się pulę w pokerze?**
 
@@ -190,7 +190,7 @@ A. Nie. W Texas Hold'em kolory kart nie mają starszeństwa, więc identyczne uk
 
 **Q. Kto dostaje nieparzysty żeton, gdy puli nie da się podzielić równo?**
 
-A. Standardowa zasada: pierwszy remisujący gracz na lewo od buttona. Niektóre kasyna przyznają go według najwyższej karty albo koloru, więc zasady domu mogą się różnić — online zajmuje się tym oprogramowanie.
+A. Standardowa zasada: pierwszy remisujący gracz na lewo od buttona. Zasady domu mogą się różnić, więc zapytaj floora — online zajmuje się tym oprogramowanie.
 
 **Q. Czy pulę może podzielić więcej niż dwóch graczy?**
 
@@ -220,7 +220,7 @@ A. Nie — to samo słowo, dwie różne rzeczy. Podziału puli przy showdownie s
 
 ## Najważniejsze wnioski
 
-1. Tak, ==**w pokerze może być remis**== — pula się dzieli (chop), gdy dwóch lub więcej graczy ma ==**identyczne najlepsze pięć kart z siedmiu**==.
+1. Tak, ==**w pokerze może być remis**== — pula się dzieli (chop), gdy dwóch lub więcej graczy remisuje na najlepszym układzie z ==**identycznymi najlepszymi pięcioma kartami z siedmiu**==.
 2. ==r:**Kolory kart, wyższe karty w ręce i liczba użytych kart**== nigdy nie rozstrzygają remisu.
 3. ==**Nieparzysty żeton**== dostaje pierwszy remisujący gracz na lewo od buttona, a ==**pule boczne**== rozlicza się osobno od głównej puli.
 

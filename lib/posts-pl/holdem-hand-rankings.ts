@@ -55,10 +55,10 @@ Od najsilniejszego do najsłabszego dziesięć układów w Texas Hold'em to: pok
 
 </div>
 
-*To standardowe częstotliwości układów z siedmiu kart dla pełnej talii 52 kart — te same prawdopodobieństwa, z których korzysta każdy solver i każda strona szkoleniowa.*
+*To standardowe częstotliwości układów z siedmiu kart dla pełnej talii 52 kart — czyli jak często losowe siedem kart kończy się każdym z tych układów, a nie twoje szanse z konkretną ręką czy przeciwko konkretnemu zakresowi.*
 
 > **Jedna zasada, która kończy kłótnie**
-> Para i najwyższa karta to razem mniej więcej 61% wszystkich układów z siedmiu kart na riverze. Duże układy wydają się częste, bo się je pamięta — ale większość pul rozstrzyga para albo najwyższa karta i [kicker](/pl/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> Para i najwyższa karta to razem mniej więcej 61% wszystkich układów z siedmiu kart na riverze. Duże układy wydają się częste, bo się je pamięta — ale sześć na dziesięć losowych układów z siedmiu kart kończy się parą albo czymś słabszym — dlatego [kicker](/pl/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") liczy się znacznie częściej, niż spodziewają się początkujący.
 
 :::quiz:::
 
@@ -90,7 +90,7 @@ Oto wszystkie układy od najsilniejszego do najsłabszego, z przykładem i jedn�
 
 **A♠ K♠ Q♠ J♠ 10♠** — najwyższy poker (straight flush) i najlepszy układ w pokerze.
 
-Nie da się go pobić; jedyny możliwy remis to poker królewski leżący w całości na stole, wspólny dla wszystkich — wtedy pula się dzieli. Trafia się mniej więcej raz na 31 000 rozdań, więc większość graczy latami go nie widzi. Gdy ułożysz go sam — a nie gdy cały leży na stole — masz jedno zadanie: wpakować do puli jak najwięcej żetonów.
+Nie da się go pobić; jedyny możliwy remis to poker królewski leżący w całości na stole, wspólny dla wszystkich — wtedy pula się dzieli. Trafia się mniej więcej raz na 31 000 rozdań, więc jeśli nie grasz ogromnej liczby rozdań, możesz bardzo długo go nie ułożyć. Gdy ułożysz go sam — a nie gdy cały leży na stole — masz jedno zadanie: wpakować do puli jak najwięcej żetonów.
 
 ### #2 — Poker (straight flush)
 
@@ -151,7 +151,7 @@ Można ją ułożyć na trzy sposoby i ta różnica ma znaczenie:
 - **Trips:** para na stole plus jedna karta w twojej ręce. Rywalom łatwiej go odczytać — i łatwiej się nim podzielić.
 - **Trójka na stole:** wszystkie trzy karty leżą na boardzie (np. J♣ J♠ J♥ pośrodku). Ma ją każdy, więc jeśli nikt nie ułoży strita albo czegoś mocniejszego, rozdzielają was tylko kickery.
 
-Set wygrywa więcej żetonów, bo nikt się go nie spodziewa.
+Set często wygrywa większe pule, bo tak trudno go przewidzieć.
 
 ### #8 — Dwie pary
 
@@ -167,7 +167,7 @@ Porównujesz po kolei: **wyższa para → niższa para → kicker**. KK99-A bije
 
 **K♠ K♦ 9♥ 6♣ 2♠** — dwie karty tej samej wartości.
 
-Najczęstszy gotowy układ w Hold'em. Przy dwóch równych parach decydują kickery: **wartość pary → kicker 1 → kicker 2 → kicker 3**, od najwyższego. To tu dzieje się większość przegranych „z tym samym układem” — pilnuj kickera.
+Najczęstszy gotowy układ w Hold'em. Dwa układy z parą porównujesz tak: **wartość pary → kicker 1 → kicker 2 → kicker 3**, od najwyższego — więc gdy obaj gracze mają tę samą parę, decydują kickery. To tu dzieje się większość przegranych „z tym samym układem” — pilnuj kickera.
 
 ### #10 — Najwyższa karta (wysoka karta)
 
@@ -175,7 +175,7 @@ Najczęstszy gotowy układ w Hold'em. Przy dwóch równych parach decydują kick
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — nic się nie łączy.
 
-Przy showdownie wygrywa najwyższa karta, potem kolejna i tak dalej przez całą piątkę. Jeśli wszystkie pięć się zgadza — dzielicie pulę. To właśnie zostaje ci w ręce, gdy twój blef zostaje sprawdzony, a ty nic nie trafiłeś.
+Przy showdownie wygrywa najwyższa karta, potem kolejna i tak dalej przez całą piątkę. Jeśli wszystkie pięć się zgadza — dzielicie pulę. Często to właśnie zostaje ci w ręce, gdy twój blef zostaje sprawdzony, a twój draw nie wszedł.
 
 ---
 
@@ -183,7 +183,7 @@ Przy showdownie wygrywa najwyższa karta, potem kolejna i tak dalej przez całą
 
 ![Showdown w pokerze — porównanie najlepszych pięciokartowych układów dwóch graczy](/images/holdem-kicker-showdown-neutral.webp "Przy showdownie pulę bierze najlepszy układ z pięciu kart")
 
-Gdy dwóch graczy ma ten sam typ układu, zwycięzcę wyłania się najpierw, porównując karty tworzące układ, a gdy wszystko inne jest równe, remis rozstrzyga **kicker** — karta boczna, która nie należy do gotowego układu. To ta część decyduje o prawdziwych pulach i właśnie ją pomija większość tabelek. Idź dokładnie w tej kolejności:
+Gdy dwóch graczy ma ten sam typ układu, zwycięzcę wyłania się najpierw, porównując karty tworzące układ, a gdy wszystko inne jest równe, remis rozstrzyga **kicker** — jedna z twoich najlepszych pięciu kart, która nie należy do samej pary, dwóch par, trójki ani karety. To ta część decyduje o prawdziwych pulach i właśnie ją pomija większość tabelek. Idź dokładnie w tej kolejności:
 
 1. **Porównaj kategorię układu.** Kolor zawsze bije strita, full zawsze bije kolor i tak dalej.
 2. **Porównaj karty tworzące układ.** Para asów bije parę króli; kolor do damy bije kolor do waleta.
@@ -205,7 +205,7 @@ Para|Wartość pary → 3 kickery|+Kicker liczy się
 Najwyższa karta|Porównaj wszystkie 5 kart od najwyższej|+Kicker liczy się
 :::
 
-**Kicker** to po prostu karta, która nie należy do twojego gotowego układu, ale i tak służy do rozstrzygania remisów. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Zasady remisu dla każdego układu w jednym miejscu znajdziesz w [poradniku o remisach w pokerze](/pl/blog/holdem-tiebreak-rules); gdy najlepsze pięć kart tworzy ten sam układ i jest identyczne co do wartości, pula jest [dzielona](/pl/blog/holdem-split-pot-rules).
+**Kicker** to karta z twojej najlepszej piątki, która nie należy do samej pary (ani trójki, dwóch par, karety), ale i tak rozstrzyga remisy. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Zasady remisu dla każdego układu w jednym miejscu znajdziesz w [poradniku o remisach w pokerze](/pl/blog/holdem-tiebreak-rules); gdy najlepsze pięć kart tworzy ten sam układ i jest identyczne co do wartości, pula jest [dzielona](/pl/blog/holdem-split-pot-rules).
 
 ---
 
@@ -265,7 +265,7 @@ Krótkie odpowiedzi na spory, które wybuchają przy każdym stole: kolor bije s
 
 Kolor bije strita, bo po prostu trudniej go ułożyć: w talii 52 kart jest mniej sposobów na pięć kart w jednym kolorze (3,03% układów z siedmiu kart na riverze) niż na pięć kolejnych w dowolnych kolorach (4,62%). Ranking nie jest przypadkowy — to ==czysta matematyka prawdopodobieństwa==. ==g:**Im trudniej ułożyć układ z pięciu kart, tym wyżej stoi.**== Ta jedna zasada tłumaczy całą hierarchię — a swoje szanse w konkretnym rozdaniu policzysz w [kalkulatorze pokerowym](/pl/calculator).
 
-To wyjaśnia też jedyny duży wyjątek, na jaki trafisz: w **Short Deck (6+) Hold'em**, gdzie z talii usunięto dwójki, trójki, czwórki i piątki, kolor staje się trudniejszy do ułożenia niż full — więc w tej odmianie ==r:**kolor bije fulla**==. Zmieniła się matematyka, więc zmieniła się kolejność. Więcej o różnicach między odmianami niżej.
+To wyjaśnia też jedyny duży wyjątek, na jaki trafisz w grach na najwyższy układ: w **Short Deck (6+) Hold'em**, gdzie z talii usunięto dwójki, trójki, czwórki i piątki, kolor staje się trudniejszy do ułożenia niż full — więc w tej odmianie ==r:**kolor bije fulla**==. Zmieniła się matematyka, więc zmieniła się kolejność. Więcej o różnicach między odmianami niżej.
 
 ---
 
@@ -277,7 +277,7 @@ Gdy tyka time bank, przy każdym kompletnym boardzie przeprowadź ten skan w tej
 
 **1. Najpierw kolory** — czy na boardzie leżą co najmniej trzy karty w jednym kolorze? Jeśli tak, ==kolor jest możliwy==. Sprawdź swoje karty w tym kolorze.
 
-**2. Potem połączenia** — czy są karty bliskie wartością (np. 8-9-10)? Jeśli tak, ==strit jest w grze==.
+**2. Potem połączenia** — czy w którymkolwiek przedziale pięciu kolejnych wartości są trzy różne wartości (np. 8-9-10)? Jeśli tak, ==strit jest w grze==.
 
 **3. Na końcu pary** — czy board jest sparowany? ==r:Jeśli tak, w grze są fulle i karety, a twój kolor albo strit może być w niebezpieczeństwie.==
 
@@ -295,7 +295,7 @@ Najszybciej zapamiętasz układy pokerowe, gdy przestaniesz traktować je jak dz
 | **2** | Ćwicz tylko mylące pary: kolor vs strit, full vs kolor | 3 dni |
 | **3** | Oglądaj transmisje pokerowe i wskazuj zwycięzcę, zanim ogłosi go rozdający | 1–2 tygodnie |
 
-Najpierw grupy — dzięki nim kolejność przestaje wyglądać jak dziesięć przypadkowych elementów. Mylące pary z kroku 2 odpowiadają za 90% błędów początkujących, więc ćwicz je ponad normę.
+Najpierw grupy — dzięki nim kolejność przestaje wyglądać jak dziesięć przypadkowych elementów. Mylące pary z kroku 2 to miejsce, w którym początkujący potykają się najczęściej, więc ćwicz je ponad normę.
 
 ---
 
@@ -310,7 +310,7 @@ W większości tak — ta sama kolejność dziesięciu układów obowiązuje w T
 | **Seven-Card Stud** | Standardowy | Brak kart wspólnych (poza rzadką wspólną ostatnią kartą, gdy w talii zabraknie kart) |
 | **Short Deck (6+)** | Zmieniony | Kolor bije fulla; A-6-7-8-9 to najniższy strit (as nadal gra nisko, a bez dwójek–piątek łączy się z szóstką) |
 
-Wniosek: naucz się standardowej kolejności raz, a przeprowadzi cię przez prawie każdą grę. Pamiętaj tylko o zasadzie „dokładnie dwóch” w Omasze i o awansie koloru w Short Decku.
+Wniosek: naucz się standardowej kolejności raz, a przeprowadzi cię przez prawie każdą grę na najwyższy układ (w grach lowball, takich jak Razz, układy liczą się odwrotnie). Pamiętaj tylko o zasadzie „dokładnie dwóch” w Omasze i o awansie koloru w Short Decku.
 
 ---
 
@@ -363,7 +363,7 @@ A. Tylko wyższy poker albo poker królewski (czyli po prostu poker do asa). Pok
 
 **Q. Co to jest kicker?**
 
-A. Kicker to karta, która nie należy do twojego gotowego układu, ale rozstrzyga remisy. Przy dwóch równych parach wygrywa najwyższa karta boczna (kicker) — a jeśli i ona jest równa, decyduje następna. As to najlepszy możliwy kicker.
+A. Kicker to karta z twojej najlepszej piątki, która nie należy do samej pary (ani trójki, dwóch par, karety), ale rozstrzyga remisy. Gdy dwóch graczy ma tę samą parę, wygrywa najwyższa karta boczna (kicker) — a jeśli i ona jest równa, decyduje następna. As to najlepszy możliwy kicker.
 
 **Q. Czy dwóch graczy może mieć ten sam układ?**
 
@@ -375,7 +375,7 @@ A. W Hold'em nie — układasz najlepsze pięć kart z dowolnej kombinacji swoic
 
 **Q. Czym różni się set od tripsa?**
 
-A. Oba to trójka. *Set* to para z ręki plus jedna karta ze stołu (dobrze zamaskowany); *trips* to para na stole plus jedna karta w twojej ręce (łatwiejszy do odczytania). Sety wygrywają więcej żetonów.
+A. Oba to trójka. *Set* to para z ręki plus jedna karta ze stołu (dobrze zamaskowany); *trips* to para na stole plus jedna karta w twojej ręce (łatwiejszy do odczytania). Sety często wygrywają większe pule.
 
 **Q. Jaki jest najwyższy układ w pokerze?**
 
@@ -391,7 +391,7 @@ A. Tak. Poker (#2) bije karetę (#3) — pięć kolejnych kart w jednym kolorze 
 
 **Q. Jaki jest najsłabszy układ w pokerze?**
 
-A. Jako układ pięciokartowy najsłabszy możliwy to 7-5-4-3-2 w różnych kolorach („siódemka jako najwyższa karta”). To najsłabszy układ typu najwyższa karta, który nie jest parą, stritem ani kolorem — klasyczne „nie masz nic”. W Hold'em, gdzie grasz najlepsze pięć z siedmiu kart, najsłabszy układ, z jakim faktycznie możesz skończyć, to 9-8-7-5-4 (z 9-8-7-5-4-3-2 w różnych kolorach).
+A. Jako układ pięciokartowy najsłabszy możliwy to 7-5-4-3-2 w różnych kolorach („siódemka jako najwyższa karta”). To najsłabszy układ typu najwyższa karta, który nie jest parą, stritem ani kolorem — klasyczne „nie masz nic”. W Hold'em, gdzie grasz najlepsze pięć z siedmiu kart, najsłabszy układ, z jakim faktycznie możesz skończyć, to 9-8-7-5-4 (z 9-8-7-5-4-3-2 bez pięciu kart w jednym kolorze).
 
 **Q. Czy można mieć trzy pary w pokerze?**
 
@@ -407,7 +407,7 @@ A. Tak. As gra zarówno wysoko, jak i nisko, więc A-2-3-4-5 („wheel”) to do
 
 1. **Kolejność:** Poker królewski > Poker > Kareta > Full > Kolor > Strit > Trójka > Dwie pary > Para > Najwyższa karta.
 2. **Pułapka:** kolor (#5) bije strita (#6) — a każdy sparowany board może ukrywać fulla, który bije oba.
-3. **Rzeczywistość:** większość pul wygrywa się parą albo najwyższą kartą, więc twój kicker jest wart więcej, niż myślisz.
+3. **Rzeczywistość:** losowe siedem kart kończy się parą albo najwyższą kartą w około 61% przypadków, więc twój kicker jest wart więcej, niż myślisz.
 
 Naucz się kolejności w jedno popołudnie, przećwicz mylące pary i rób skan kolor → strit → pary na każdym boardzie. Rób tak, a już nigdy nie oddasz puli przez źle przeczytany board.
 

@@ -73,7 +73,7 @@ Prends la main de la photo ci-dessus :
 
 Même paire d'as, donc les kickers s'affrontent dans l'ordre : ==g:le K bat la Q — c'est terminé.== Le neuf de B fait toujours *partie* de la main comme deuxième kicker, mais la comparaison n'arrive jamais jusque-là.
 
-Remarque que le premier kicker de B est la dame du **board** (les cartes communes), pas le 9 qu'il a en main. ==r:Un kicker ne compte que s'il entre vraiment dans tes cinq meilleures cartes== — une carte du board plus haute repousse ta carte fermée plus bas dans la liste. C'est aussi pour ça que la deuxième carte de ta main de départ compte autant que l'as lui-même : A-K et A-9 font tous les deux « une paire d'as » ici, et un seul des deux gagne ([mains de départ](/fr/blog/holdem-starting-hands-chart)).
+Remarque que le premier kicker de B est la dame du **board** (les cartes communes), pas le 9 qu'il a en main. ==r:Un kicker ne compte que s'il entre vraiment dans tes cinq meilleures cartes== — une carte du board plus haute repousse ta carte fermée plus bas dans la liste. C'est aussi pour ça que la deuxième carte de ta main de départ compte tellement : A-K et A-9 font tous les deux « une paire d'as » ici, et un seul des deux gagne ([mains de départ](/fr/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -131,7 +131,7 @@ Et puis il y a le piège qui coûte vraiment cher — la ==r:**contrefaçon (cou
 
 </div>
 
-Le board qui se paire en neuf a donné aux *deux* joueurs une meilleure deuxième paire — tes quatre ont été ==r:contrefaits==, et la seule comparaison restante était la paire haute : les rois battent les neuf. La main qui menait au flop perd le pot sans qu'aucun des deux joueurs n'ait amélioré ses propres cartes.
+Le board qui se paire en neuf a donné aux *deux* joueurs une meilleure deuxième paire — tes quatre ont été ==r:contrefaits==, et la seule comparaison restante était la paire haute : les rois battent les neuf. La main qui menait au flop perd le pot alors que ni le tournant ni la rivière n'ont apparié les cartes fermées de personne — le board seul a tout renversé.
 
 ---
 
@@ -202,7 +202,7 @@ Si personne n'a de carte de l'enseigne assez haute pour améliorer le board, c'e
 
 **Q. Comment départager une égalité au poker ?**
 
-A. Trois contrôles dans l'ordre — le rang de la combinaison, puis les cartes qui la forment, puis les kickers du haut vers le bas — et la première différence met fin au débat. Tout aussi important, ce qui n'entre jamais dans la comparaison : l'enseigne, qui a misé en dernier, qui est le plus près du bouton et combien de jetons chacun a mis. Si les cinq cartes sont identiques rang pour rang, le donneur partage le pot, quoi qu'il se soit passé pendant les enchères.
+A. Trois contrôles dans l'ordre — le rang de la combinaison, puis les cartes qui la forment, puis les kickers du haut vers le bas — et la première différence met fin au débat. Tout aussi important, ce qui n'entre jamais dans la comparaison : l'enseigne, qui a misé en dernier, qui est le plus près du bouton et combien de jetons chacun a mis. Si les cinq cartes sont identiques rang pour rang dans la même combinaison, le pot — ou chaque pot annexe auquel les deux joueurs ont droit — est partagé, quoi qu'il se soit passé pendant les enchères.
 
 **Q. Deux joueurs ont la même paire : qui gagne ?**
 
@@ -210,11 +210,11 @@ A. Le kicker le plus haut — mais vérifie d'abord lesquelles de tes cartes ent
 
 **Q. Deux joueurs ont une double paire : qui gagne ?**
 
-A. La paire haute d'abord, puis la paire basse, puis le kicker unique — donc as et trois bat rois et dames, même si la deuxième paire est bien plus petite. Le cas qui piège les joueurs, c'est un board doublement pairé comme K-K-9-9-5 sans trois cartes de la même enseigne, donc où personne ne peut faire de couleur : à moins que quelqu'un tienne un roi, un neuf, une paire de cinq servie ou une paire servie au-dessus des neuf, chaque joueur a la même double paire, donc la main se réduit à un seul kicker et la meilleure carte fermée de la table l'emporte — et si aucune carte fermée ne bat le 5 du board, tout le monde joue le board et le pot est partagé. La double paire porte exactement un kicker, jamais deux.
+A. La paire haute d'abord, puis la paire basse, puis le kicker unique — donc as et trois bat rois et dames, même si la deuxième paire est bien plus petite. Le cas qui piège les joueurs, c'est un board doublement pairé comme K-K-9-9-5 sans trois cartes de la même enseigne, donc où personne ne peut faire de couleur : à moins que quelqu'un tienne un roi, un neuf, une paire de cinq servie ou une paire servie au-dessus des neuf, chaque joueur a la même double paire, donc la main se réduit à un seul kicker et la meilleure carte fermée de la table l'emporte (ceux qui tiennent la même carte la plus haute se la partagent) — et si aucune carte fermée ne bat le 5 du board, tout le monde joue le board et le pot est partagé. La double paire porte exactement un kicker, jamais deux.
 
 **Q. Deux joueurs ont le même brelan : qui gagne ?**
 
-A. Le brelan porte deux kickers, comparés le plus haut d'abord — donc si les deux joueurs font le même brelan, la carte d'accompagnement la plus haute gagne. Avec un brelan de neuf, 9-9-9-A-K bat 9-9-9-A-Q parce que le deuxième kicker (le roi) domine la dame. Même brelan et mêmes deux kickers, c'est un partage. (Un brelan servi (set), fait avec une paire en main, n'est presque jamais à égalité, puisqu'un seul joueur peut tenir cette paire exacte.)
+A. Le brelan porte deux kickers, comparés le plus haut d'abord — donc si les deux joueurs font le même brelan, la carte d'accompagnement la plus haute gagne. Avec un brelan de neuf, 9-9-9-A-K bat 9-9-9-A-Q parce que le deuxième kicker (le roi) domine la dame. Même brelan et mêmes deux kickers, c'est un partage. (Un brelan servi (set), fait avec une paire en main, ne peut pas être à égalité de cette façon — avec seulement quatre cartes de chaque rang, personne d'autre ne peut tenir trois cartes du même rang.)
 
 **Q. La 5e carte peut-elle faire la différence ?**
 
@@ -228,7 +228,7 @@ A. Au Hold'em, oui, mais seulement dans la quinte A-2-3-4-5 (la « roue », ou w
 
 A. Oui, et en pratique ça arrive quand l'essentiel de la quinte est déjà sur le board. Prends un board 5♦ 6♣ 7♠ 8♥ 2♦ : un joueur avec 9♣ 4♠ fait 9-8-7-6-5, tandis qu'un joueur avec 4♥ 3♦ fait 8-7-6-5-4 avec les mêmes quatre cartes. Tous les deux « ont fait une quinte » ; seule la carte du haut compte, donc le neuf l'emporte. Des cartes hautes égales signifient la même quinte et un partage.
 
-**Q. Deux joueurs ont la même suite : qui gagne ?**
+**Q. Deux joueurs ont tous les deux une suite : qui gagne ?**
 
 A. La quinte avec la carte la plus haute gagne — Q-J-10-9-8 bat J-10-9-8-7, parce qu'une quinte se classe uniquement par sa carte la plus haute et n'a pas de kicker. Si les deux quintes ont la même carte haute, elles sont identiques, donc le pot est partagé. Ça arrive surtout quand la quinte est en grande partie sur le board et que les deux joueurs la complètent par le même bout.
 
@@ -269,7 +269,7 @@ A. Non, pas en soi. Un as en main ne compte que s'il entre dans tes cinq meilleu
 ## À retenir
 
 1. Chaque égalité suit la même procédure : ==**rang de la combinaison → cartes qui la forment → kickers → partage**== — sans exception, et jamais par l'enseigne.
-2. Un kicker ne compte que s'il ==g:entre dans tes cinq meilleures cartes== — les cartes du board peuvent le remplacer, et un board doublement pairé peut contrefaire entièrement ta double paire.
+2. Un kicker ne compte que s'il ==g:entre dans tes cinq meilleures cartes== — les cartes du board peuvent le remplacer, et un board doublement pairé peut contrefaire ta deuxième paire.
 3. Les quintes se classent par leur carte haute (la roue est la plus petite), les couleurs se comparent sur les cinq cartes — et quand rien ne sépare les mains, le pot est partagé.
 
 Fixe l'ordre complet avec [l'ordre des combinaisons au poker](/fr/blog/holdem-hand-rankings), maîtrise la carte d'accompagnement elle-même avec [c'est quoi le kicker](/fr/blog/holdem-kicker), et vois exactement comment les pots à égalité sont divisés dans le [guide du pot partagé](/fr/blog/holdem-split-pot-rules).

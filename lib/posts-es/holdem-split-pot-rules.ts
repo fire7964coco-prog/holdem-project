@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "¿Ganaste la mano pero solo te dieron la mitad? Reglas del bote dividido en Hold'em",
   seoTitle: "¿Se puede empatar en el póker? — Bote dividido y split",
   desc: "¿Se puede empatar en el póker? Sí. Cuándo se divide el bote: mismas cinco cartas, la mesa juega para todos, la ficha impar y los botes laterales.",
-  tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
+  tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores empatan con la mejor mano en el showdown — las mismas mejores cinco cartas. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-05",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -24,7 +24,7 @@ Recibir la mitad de un bote que dabas por ganado desconcierta. Pero ==g:los bote
 ---
 
 > **Respuesta rápida**
-> El bote se **divide** (lo que también se llama **split** o **chop**) cuando dos o más jugadores tienen las **mismas mejores cinco cartas** en el showdown. Las fichas se reparten a partes iguales. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.
+> El bote se **divide** (lo que también se llama **split** o **chop**) cuando dos o más jugadores empatan con la mejor mano en el showdown con las **mismas mejores cinco cartas**. Las fichas se reparten a partes iguales. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.
 
 ---
 
@@ -40,9 +40,9 @@ Recibir la mitad de un bote que dabas por ganado desconcierta. Pero ==g:los bote
 
 ## ¿Qué es un bote dividido en el póker? (¿Y "chop" es lo mismo?)
 
-Un **bote dividido** (split pot) ocurre cuando dos o más jugadores tienen las mismas mejores cinco cartas en el showdown, así que el dealer reparte las fichas por igual entre ellos. Un **chop** —o "bote partido"— es exactamente lo mismo en la jerga de mesa ("vamos a partir"). Los reglamentos dicen split; los jugadores dicen chop. La gente busca las dos, así que las verás usadas indistintamente.
+Un **bote dividido** (split pot) ocurre cuando dos o más jugadores empatan con la mejor mano en el showdown con las mismas mejores cinco cartas, así que el dealer reparte las fichas por igual entre ellos. Un **chop** —o "bote partido"— es exactamente lo mismo en la jerga de mesa ("vamos a partir"). Los reglamentos dicen split; los jugadores dicen chop. La gente busca las dos, así que las verás usadas indistintamente.
 
-La base: tu mano son siempre las ==**mejores cinco cartas**== de siete —tus dos cartas más las cinco de la mesa—. Dónde encaja cada mano de cinco cartas lo tienes en la [jerarquía completa de manos de póker](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Cuando las mejores cinco de dos jugadores son idénticas en valor, ninguno gana "más"== — el bote se divide, punto.
+La base: tu mano son siempre las ==**mejores cinco cartas**== de siete —tus dos cartas más las cinco de la mesa—. Dónde encaja cada mano de cinco cartas lo tienes en la [jerarquía completa de manos de póker](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:Cuando las mejores manos del showdown son del mismo tipo de mano con los mismos cinco valores, ninguno gana "más"== — el bote se divide, punto.
 
 ---
 
@@ -72,12 +72,12 @@ Las cinco cartas comunitarias ya son la mano más fuerte para todos los que qued
 Dos escaleras con la misma carta alta empatan, sin importar el palo. En una mesa de 7♣ 6♦ 5♥ K♠ 2♣, tanto el 9♠ 8♠ de A como el 9♥ 8♦ de B hacen 9-8-7-6-5 —la misma altura—, así que **split**.
 
 ### 4. El mismo color
-No hay jerarquía de palos, así que dos colores con los mismos cinco valores empatan. En la práctica esto casi siempre significa que la **propia mesa** es un color de cinco cartas. En K♠ J♠ 8♠ 4♠ 2♠, si A tiene A♥ Q♦ y B tiene 10♥ 9♦, ninguno tiene una pica —ambos juegan el color K-J-8-4-2 de la mesa y **parten**.
+No hay jerarquía de palos, así que dos colores con los mismos cinco valores empatan. En Hold'em eso solo puede pasar cuando la **propia mesa** es un color de cinco cartas que nadie mejora. En K♠ J♠ 8♠ 4♠ 2♠, si A tiene A♥ Q♦ y B tiene 10♥ 9♦, ninguno tiene una pica —ambos juegan el color K-J-8-4-2 de la mesa y **parten**.
 
 ==r:Pero comprueba antes de dar nada por hecho:== cualquier pica en tu mano más alta que la pica más baja de la mesa mejora el color. Aquí hasta el modesto 3♠ hace K-J-8-4-3 y ==g:se lleva todo el bote== — y el A♠ hace el color máximo (nut flush).
 
 ### 5. Idénticos hasta el último kicker
-Las parejas y las dobles parejas suelen decidirse por el kicker, pero si los kickers también coinciden, es un split. Con mesa A♦ Q♠ 9♣ 6♥ 2♠ y A♠ K♦ contra A♥ K♣, ambos jugadores tienen ==g:A-A-K-Q-9== → **split**. Cuando los kickers *difieren*, gana el más alto y se lleva todo el bote — cómo funciona esa comparación exactamente, mano a mano, está en las [reglas de kicker y desempate](/es/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+Cuando las parejas (o las dobles parejas) son del mismo valor, decide el kicker — y si los kickers también coinciden, es un split. Con mesa A♦ Q♠ 9♣ 6♥ 2♠ y A♠ K♦ contra A♥ K♣, ambos jugadores tienen ==g:A-A-K-Q-9== → **split**. Cuando los kickers *difieren*, gana el más alto y se lleva todo el bote — cómo funciona esa comparación exactamente, mano a mano, está en las [reglas de kicker y desempate](/es/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -87,11 +87,11 @@ Sí — y ni siquiera hacen falta dos manos monstruo. Cuando las cinco cartas co
 
 Es mi mano 8-8-8-A-K: mi J♠ 10♥ y su 5♣ 2♦ jugaban los dos el trío de ochos de la mesa con kicker de As-Rey —cinco idénticas, un split en cuanto las dos manos se pusieron boca arriba—. El caso extremo es una mesa como A♠ K♠ Q♠ J♠ 10♠ (una escalera real): ninguna carta puede mejorarla, así que ==g:todos los que quedan parten==.
 
-> **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
+> **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega — lo máximo que puedes llevarte es una parte, y solo partes si nadie más supera la mesa tampoco. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
 **Y lo que más importa en la mesa: en un showdown con algún rival todavía en la mano, tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck normalmente está muerta aunque hubiera partido (solo se puede recuperar una mano que siga siendo claramente identificable, y solo a criterio del floor; regla 109 del reglamento de torneos de la WSOP) — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve tu parte de todo lo que ya había en el bote (la mitad en heads-up) — foldear regala esa parte gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto para pagar — y bajo para foldear: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces**, y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve tu parte de todo lo que ya había en el bote (la mitad en heads-up) — foldear regala esa parte gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto para pagar — y bajo para foldear: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces**, y en un river en el que la mesa todavía se puede superar, eso pasa a menudo.]:::
 
 ---
 
@@ -118,13 +118,13 @@ A veces un bote no se divide de forma exacta —un bote de 101 fichas entre dos 
 
 > ==La ficha impar sobrante va al primer jugador empatado **a la izquierda del botón**== (el asiento ganador que está antes en el sentido de las agujas del reloj desde el botón).
 
-En un split a tres bandas con dos fichas impares, los dos asientos que van antes en el sentido de las agujas del reloj reciben una cada uno. ==r:Las reglas de la casa pueden variar== — algunas salas asignan la ficha impar por carta alta o por palo — así que si hay dinero real en juego, pregunta al floor. ==g:Online, el software la asigna de forma automática por posición.==
+En un split a tres bandas con dos fichas impares, los dos asientos que van antes en el sentido de las agujas del reloj reciben una cada uno. ==r:Las reglas de la casa pueden variar== — así que si hay dinero real en juego, pregunta al floor. ==g:Online, el software la asigna de forma automática por posición.==
 
 ---
 
 ## ¿Los botes laterales también se dividen? Empates cuando alguien está all-in
 
-Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, las fichas forman un ==**bote principal**== (todos son elegibles) más uno o varios ==**botes laterales**== (solo los jugadores que pusieron más de lo que un stack all-in más corto podía igualar). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
+Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, las fichas forman un ==**bote principal**== (todos los jugadores que siguen en la mano son elegibles) más uno o varios ==**botes laterales**== (solo los jugadores que pusieron más de lo que un stack all-in más corto podía igualar). Cada bote se adjudica —o se parte— ==**por separado**==, según la mejor mano entre los jugadores elegibles para ese bote.
 
 Un ejemplo desarrollado: A hace all-in por 100; B y C ponen 300 cada uno. Eso es un **bote principal de 300** (100 × 3) y un **bote lateral de 400** (200 + 200, solo B y C). La mesa sale A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -157,11 +157,11 @@ En el Texas Hold'em no. Puede que hayas oído hablar de "juegos de bote dividido
 
 **Q. ¿Qué es un bote dividido (split pot)?**
 
-A. Un bote dividido es cuando dos o más jugadores empatan en el showdown con las mismas mejores cinco cartas, así que el dealer reparte las fichas por igual entre ellos en lugar de dárselas a un solo ganador. Es el mismo concepto que un "split" o un "chop".
+A. Un bote dividido es cuando dos o más jugadores empatan con la mejor mano en el showdown con las mismas mejores cinco cartas, así que el dealer reparte las fichas por igual entre ellos en lugar de dárselas a un solo ganador. Es el mismo concepto que un "split" o un "chop".
 
 **Q. ¿Cuándo se divide el bote en el póker?**
 
-A. El bote se divide cuando dos o más jugadores tienen las mismas mejores cinco cartas en el showdown; las fichas se reparten a partes iguales entre ellos.
+A. El bote se divide cuando dos o más jugadores empatan con la mejor mano en el showdown con las mismas mejores cinco cartas; las fichas se reparten a partes iguales entre ellos.
 
 **Q. ¿Cómo se divide el bote en el póker?**
 
@@ -177,7 +177,7 @@ A. Solo cuando ambas manos son completamente idénticas. Dos fulls se dividen ú
 
 **Q. ¿Dos parejas iguales dividen el bote?**
 
-A. Sí, si las mejores cinco cartas terminan siendo idénticas. Con dos parejas, el kicker (la quinta carta) suele romper el empate: si un jugador tiene un kicker más alto, gana todo el bote. Solo cuando las dos parejas *y* el kicker coinciden exactamente se divide el bote.
+A. Sí, si las mejores cinco cartas terminan siendo idénticas. Con dos parejas iguales, el kicker (la quinta carta) rompe el empate: si un jugador tiene un kicker más alto, gana todo el bote. Solo cuando las dos parejas *y* el kicker coinciden exactamente se divide el bote.
 
 **Q. ¿Qué significa "bote partido" (chopped pot) en el póker?**
 
@@ -189,7 +189,7 @@ A. No. El Texas Hold'em no tiene jerarquía de palos, así que las manos de cinc
 
 **Q. ¿Quién se lleva la ficha impar cuando un bote no se divide de forma exacta?**
 
-A. Regla estándar: el primer jugador empatado a la izquierda del botón. Algunas salas la asignan por carta alta o por palo, así que las reglas de la casa pueden variar — online el software lo gestiona automáticamente.
+A. Regla estándar: el primer jugador empatado a la izquierda del botón. Las reglas de la casa pueden variar, así que pregunta al floor — online el software lo gestiona automáticamente.
 
 **Q. ¿Pueden dividir un bote más de dos jugadores?**
 
@@ -223,7 +223,7 @@ A. No — misma palabra, dos cosas distintas. Un bote dividido en el showdown no
 
 ## Para llevarte
 
-1. Sí, ==**en el póker se puede empatar**== — el bote se divide (chop) siempre que dos o más jugadores comparten las ==**mismas mejores cinco de siete**==.
+1. Sí, ==**en el póker se puede empatar**== — el bote se divide (chop) siempre que dos o más jugadores empatan con la mejor mano con las ==**mismas mejores cinco de siete**==.
 2. ==r:**El palo, las cartas más altas y cuántas cartas usaste**== nunca rompen un empate.
 3. La ==**ficha impar**== va al primer jugador empatado a la izquierda del botón, y los ==**botes laterales**== se liquidan por separado del bote principal.
 

@@ -73,7 +73,7 @@ Ambil tangan di foto atas:
 
 Sepasang As yang sama, jadi kicker bertarung berurutan: ==g:K mengalahkan Q — selesai.== Angka 9 milik B masih *ada* di tangan sebagai kicker kedua, tapi perbandingan tak pernah sejauh itu.
 
-Perhatikan kicker teratas B adalah Q **milik board**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu board yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sama pentingnya dengan As itu sendiri: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang ([chart starting hands](/id/blog/holdem-starting-hands-chart)).
+Perhatikan kicker teratas B adalah Q **milik board**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu board yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sangat penting: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang ([chart starting hands](/id/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -123,7 +123,7 @@ Lalu ada jebakan yang menentukan uang sungguhan — ==r:**counterfeiting**==:
 
 </div>
 
-Meja yang memasangkan angka 9 memberi *kedua* pemain pasangan kedua yang lebih baik — fours Anda ter-==r:counterfeit==, dan satu-satunya perbandingan tersisa adalah pasangan teratas: pasangan K di atas pasangan 9. Tangan yang unggul di flop kalah pot tanpa satu pun pemain memperbaiki kartunya sendiri.
+Meja yang memasangkan angka 9 memberi *kedua* pemain pasangan kedua yang lebih baik — fours Anda ter-==r:counterfeit==, dan satu-satunya perbandingan tersisa adalah pasangan teratas: pasangan K di atas pasangan 9. Tangan yang unggul di flop kalah pot meski baik turn maupun river tidak memasangkan kartu tertutup siapa pun — board sendiri yang membaliknya.
 
 ---
 
@@ -184,7 +184,7 @@ Mengenali runout ini sebelum taruhan river adalah keahlian tersendiri — itulah
 
 **Q. Bagaimana seri dipecahkan di poker?**
 
-A. Dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan (pasangan, trips, atau kartu teratas yang lebih tinggi), lalu kicker dari tertinggi ke terendah. Jika kelima kartu sama nilainya, pot dibagi — jenis kartu tak pernah dipakai.
+A. Dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan (pasangan, trips, atau kartu teratas yang lebih tinggi), lalu kicker dari tertinggi ke terendah. Jika kelima kartu sama nilainya dalam jenis tangan yang sama, pot — atau setiap side pot yang sama-sama diikuti kedua pemain — dibagi; jenis kartu tak pernah dipakai.
 
 **Q. Siapa yang menang jika dua pemain punya pair sama?**
 
@@ -218,7 +218,7 @@ A. Tidak ada yang menang — straight dengan kartu teratas sama adalah tangan id
 
 A. Bandingkan kelima kartu dari tertinggi ke terendah — perbedaan pertama menentukan. Flush ber-As mengalahkan flush ber-K; kartu teratas sama berarti lanjut ke kartu kedua, dan seterusnya. Kelima kartu identik nilainya berarti pot dibagi — jenis kartu tak pernah dipakai.
 
-**Q. Siapa yang menang jika dua pemain punya full house yang sama?**
+**Q. Siapa yang menang jika dua pemain sama-sama punya full house?**
 
 A. Full house dibandingkan trio-nya dulu, baru pasangannya: K-K-K-2-2 mengalahkan Q-Q-Q-A-A, meski pasangan As tampak lebih besar. Pasangan baru menentukan jika trio-nya seri, dan jika trio dan pasangan kedua pemain sama persis — biasanya karena sebagian besar terbentang di board — pot dibagi. Full house tak punya kicker.
 
@@ -243,7 +243,7 @@ A. Mungkin, tetapi tidak sering. Seri sejati hanya terjadi ketika lima kartu ter
 ## Poin-poin penting
 
 1. Setiap seri menjalankan prosedur yang sama: ==**jenis tangan → kartu pembentuk → kicker → dibagi**== — tanpa pengecualian, tanpa jenis kartu.
-2. Sebuah kicker hanya dihitung jika ia ==g:masuk lima terbaik Anda== — kartu board bisa menggantikannya, dan board dengan dua pasang bisa meng-counterfeit two pair Anda sepenuhnya.
+2. Sebuah kicker hanya dihitung jika ia ==g:masuk lima terbaik Anda== — kartu board bisa menggantikannya, dan board dengan dua pasang bisa meng-counterfeit pasangan kedua Anda.
 3. Straight diperingkat oleh kartu teratasnya (wheel yang terendah), flush membandingkan kelimanya — dan saat tak ada yang memisahkan kedua tangan, pot di-chop.
 
 Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pahami kartu samping itu sendiri di [apa itu kicker](/id/blog/holdem-kicker), dan lihat persis bagaimana pot seri dibagi di [panduan split pot](/id/blog/holdem-split-pot-rules).

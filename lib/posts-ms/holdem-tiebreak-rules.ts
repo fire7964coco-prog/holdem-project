@@ -73,7 +73,7 @@ Ambil tangan dalam gambar di atas:
 
 Sepasang As yang sama, jadi kicker bersemuka mengikut urutan: ==g:K mengalahkan Q — selesai.== Kad 9 milik B masih *berada* dalam tangan sebagai kicker kedua, tetapi perbandingan tidak pernah sampai sejauh itu.
 
-Perhatikan kicker teratas B ialah Q **di board**, bukan 9 yang dipegangnya. ==r:Kicker hanya dikira jika ia benar-benar masuk ke dalam lima kad terbaik anda== — kad board yang lebih tinggi menolak hole card (dua kad peribadi) anda ke bawah senarai. Itulah juga sebabnya kad kedua yang anda mulakan sama penting dengan As itu sendiri: A-K dan A-9 kedua-duanya "sepasang As" di sini, dan hanya satu yang menang ([carta tangan permulaan](/ms/blog/holdem-starting-hands-chart)).
+Perhatikan kicker teratas B ialah Q **di board**, bukan 9 yang dipegangnya. ==r:Kicker hanya dikira jika ia benar-benar masuk ke dalam lima kad terbaik anda== — kad board yang lebih tinggi menolak hole card (dua kad peribadi) anda ke bawah senarai. Itulah juga sebabnya kad kedua yang anda mulakan begitu penting: A-K dan A-9 kedua-duanya "sepasang As" di sini, dan hanya satu yang menang ([carta tangan permulaan](/ms/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -123,7 +123,7 @@ Kemudian ada perangkap yang menentukan wang sebenar — ==r:**counterfeit**== (n
 
 </div>
 
-Board yang berpasangan 9 memberikan pasangan kedua yang lebih baik kepada *kedua-dua* pemain — pasangan 4 anda telah ==r:di-counterfeit==, dan satu-satunya perbandingan yang tinggal ialah pasangan teratas: K mengatasi 9. Tangan yang mendahului di flop kalah pot tanpa mana-mana pemain memperbaiki kad mereka sendiri.
+Board yang berpasangan 9 memberikan pasangan kedua yang lebih baik kepada *kedua-dua* pemain — pasangan 4 anda telah ==r:di-counterfeit==, dan satu-satunya perbandingan yang tinggal ialah pasangan teratas: K mengatasi 9. Tangan yang mendahului di flop kalah pot walaupun turn dan river tidak berpasangan dengan hole card sesiapa — board sahaja yang membalikkannya.
 
 ---
 
@@ -186,7 +186,7 @@ Mengesan runout begini sebelum bet di river ialah kemahiran tersendiri — itula
 
 **Q. Bagaimana seri dipecahkan dalam poker?**
 
-A. Tiga semakan mengikut urutan — kedudukan tangan, kemudian kad yang membentuk tangan, kemudian kicker dari atas ke bawah — dan perbezaan pertama menamatkannya. Sama penting ialah apa yang tidak pernah masuk ke dalam perbandingan: suit, siapa yang bet terakhir, siapa yang duduk lebih dekat dengan butang, dan berapa banyak cip yang dimasukkan oleh setiap pemain. Jika lima kad sepadan nilai demi nilai, pengedar membahagi pot tidak kira apa yang berlaku semasa pertaruhan.
+A. Tiga semakan mengikut urutan — kedudukan tangan, kemudian kad yang membentuk tangan, kemudian kicker dari atas ke bawah — dan perbezaan pertama menamatkannya. Sama penting ialah apa yang tidak pernah masuk ke dalam perbandingan: suit, siapa yang bet terakhir, siapa yang duduk lebih dekat dengan butang, dan berapa banyak cip yang dimasukkan oleh setiap pemain. Jika lima kad sepadan nilai demi nilai dalam jenis tangan yang sama, pot — atau setiap side pot yang kedua-dua pemain layak — dibahagi, tidak kira apa yang berlaku semasa pertaruhan.
 
 **Q. Siapa menang jika dua pemain ada pair yang sama?**
 
@@ -194,11 +194,11 @@ A. Kicker yang lebih tinggi — tetapi semak dahulu kad mana yang benar-benar ma
 
 **Q. Siapa menang jika kedua-dua pemain ada two pair?**
 
-A. Pasangan lebih tinggi dahulu, kemudian pasangan lebih rendah, kemudian satu kicker — jadi As-dan-3 mengalahkan K-dan-Q walaupun pasangan keduanya jauh lebih kecil. Kes yang memerangkap orang ialah board berpasangan dua seperti K-K-9-9-5 tanpa tiga kad satu suit, jadi tiada sesiapa boleh membentuk flush: melainkan seseorang memegang K, 9, pocket 5, atau pocket pair di atas 9, setiap pemain ada two pair yang sama, jadi tangan itu menyusut kepada satu kicker dan hole card terbaik di meja yang mengambilnya — dan jika tiada hole card sesiapa pun yang mengatasi kad 5 di board, semua orang playing the board dan pot dibahagi. Two pair membawa tepat satu kicker, tidak pernah dua.
+A. Pasangan lebih tinggi dahulu, kemudian pasangan lebih rendah, kemudian satu kicker — jadi As-dan-3 mengalahkan K-dan-Q walaupun pasangan keduanya jauh lebih kecil. Kes yang memerangkap orang ialah board berpasangan dua seperti K-K-9-9-5 tanpa tiga kad satu suit, jadi tiada sesiapa boleh membentuk flush: melainkan seseorang memegang K, 9, pocket 5, atau pocket pair di atas 9, setiap pemain ada two pair yang sama, jadi tangan itu menyusut kepada satu kicker dan hole card terbaik di meja yang mengambilnya (pemain yang memegang kad teratas yang sama berkongsinya) — dan jika tiada hole card sesiapa pun yang mengatasi kad 5 di board, semua orang playing the board dan pot dibahagi. Two pair membawa tepat satu kicker, tidak pernah dua.
 
 **Q. Siapa menang jika dua pemain ada three of a kind yang sama?**
 
-A. Three of a kind membawa dua kicker, dibandingkan dari yang tertinggi — jadi jika kedua-dua pemain membentuk trips yang sama, kad sampingan yang lebih tinggi menang. Dengan trip 9, 9-9-9-A-K mengalahkan 9-9-9-A-Q kerana kicker kedua (K) mengatasi Q. Trips dan kedua-dua kicker yang sepadan bermakna pot dibahagi. (Set daripada pocket pair hampir tidak pernah seri, kerana hanya seorang pemain boleh memegang pasangan tepat itu.)
+A. Three of a kind membawa dua kicker, dibandingkan dari yang tertinggi — jadi jika kedua-dua pemain membentuk trips yang sama, kad sampingan yang lebih tinggi menang. Dengan trip 9, 9-9-9-A-K mengalahkan 9-9-9-A-Q kerana kicker kedua (K) mengatasi Q. Trips dan kedua-dua kicker yang sepadan bermakna pot dibahagi. (Set daripada pocket pair tidak boleh seri dengan cara itu — dengan hanya empat kad bagi setiap nilai, tiada orang lain boleh memegang tiga kad nilai yang sama.)
 
 **Q. Adakah kad ke-5 penting dalam poker?**
 
@@ -212,7 +212,7 @@ A. Dalam Hold'em, boleh, tetapi hanya dalam straight A-2-3-4-5 ("wheel"), di man
 
 A. Boleh, dan secara praktikal ia berlaku apabila sebahagian besar straight sudah berada di board. Ambil board 5♦ 6♣ 7♠ 8♥ 2♦: pemain dengan 9♣ 4♠ membentuk 9-8-7-6-5, manakala pemain dengan 4♥ 3♦ membentuk 8-7-6-5-4 daripada empat kad yang sama. Kedua-duanya "dapat straight"; hanya kad teratas yang pernah dikira, jadi 9 yang mengambilnya. Kad teratas yang sama bermakna straight yang sama dan chop.
 
-**Q. Siapa menang jika dua pemain ada straight yang sama?**
+**Q. Siapa menang jika kedua-dua pemain ada straight?**
 
 A. Straight dengan kad teratas lebih tinggi menang — Q-J-10-9-8 mengalahkan J-10-9-8-7, kerana straight disusun hanya mengikut kad tertingginya dan tiada kicker. Jika kedua-dua straight ada kad teratas yang sama, ia serupa, jadi pot dibahagi. Ini paling kerap berlaku apabila straight kebanyakannya berada di board dan kedua-dua pemain mengisi hujung yang sama.
 
@@ -220,7 +220,7 @@ A. Straight dengan kad teratas lebih tinggi menang — Q-J-10-9-8 mengalahkan J-
 
 A. Bandingkan flush kad demi kad dari atas ke bawah: flush ber-As tinggi mengalahkan flush ber-K tinggi, dan jika kad teratas sama anda beralih ke kad seterusnya, dan begitulah hingga kelima-lima kad. Suit tidak pernah memecahkan seri, jadi jika kelima-lima nilai serupa, pot dibahagi. (Dalam Hold'em dua flush sentiasa daripada suit yang sama, kerana pemain berkongsi board.)
 
-**Q. Siapa menang jika dua pemain ada full house yang sama?**
+**Q. Siapa menang jika kedua-dua pemain ada full house?**
 
 A. Bandingkan three of a kind dahulu — trips yang lebih tinggi menang, jadi K-K-K-2-2 mengalahkan Q-Q-Q-A-A walaupun As nampak lebih besar. Pasangannya hanya dibandingkan jika trips itu serupa. Full house tiada kicker, jadi trips dan pasangan yang sepadan bermakna split pot.
 
@@ -245,7 +245,7 @@ A. Ya, tetapi ia tidak biasa. Seri sebenar hanya berlaku apabila lima kad terbai
 ## 3 Perkara untuk Diingati
 
 1. Setiap seri menjalankan prosedur yang sama: ==**kedudukan tangan → kad yang membentuk tangan → kicker → dibahagi**== — tiada pengecualian, tiada suit.
-2. Kicker hanya dikira jika ia ==g:masuk ke dalam lima kad terbaik anda== — kad board boleh menggantikannya, dan board berpasangan dua boleh meng-counterfeit two pair anda sepenuhnya.
+2. Kicker hanya dikira jika ia ==g:masuk ke dalam lima kad terbaik anda== — kad board boleh menggantikannya, dan board berpasangan dua boleh meng-counterfeit pasangan kedua anda.
 3. Straight disusun mengikut kad teratasnya (wheel yang paling rendah), flush membandingkan kelima-lima kad — dan apabila tiada apa yang memisahkan tangan, pot di-chop.
 
 Kukuhkan urutannya dengan [susunan penuh kad poker](/ms/blog/holdem-hand-rankings), fahami kad sampingan itu sendiri dalam [apa itu kicker](/ms/blog/holdem-kicker), dan lihat bagaimana tepatnya pot yang seri dibahagikan dalam [panduan split pot](/ms/blog/holdem-split-pot-rules).

@@ -75,7 +75,7 @@ Nimm die Hand aus dem Foto oben:
 
 Gleiches Ass-Paar, also treten die Kicker der Reihe nach gegeneinander an: ==g:K schlägt Q – damit ist die Sache entschieden.== Bs Neun ist als zweiter Kicker immer noch *in* der Hand, aber der Vergleich kommt nie so weit.
 
-Beachte, dass Bs oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== – eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, genauso viel wie das Ass selbst: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
+Beachte, dass Bs oberster Kicker die Dame vom **Board** ist, nicht die 9, die er hält. ==r:Ein Kicker zählt nur, wenn er tatsächlich in deinen besten fünf landet== – eine höhere Board-Karte drückt deine Hole Card die Liste hinunter. Deshalb zählt die zweite Karte, mit der du startest, so viel: A-K und A-9 sind hier beide „ein Ass-Paar“, und nur eine davon gewinnt ([Starthand-Tabelle](/de/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -125,7 +125,7 @@ Dann gibt es die Falle, die echtes Geld kostet – das ==r:**Counterfeiting**==:
 
 </div>
 
-Das gepaarte Neuner-Board hat *beiden* Spielern ein besseres zweites Paar in die Hand gedrückt – deine Vieren wurden ==r:counterfeited==, und der einzig verbleibende Vergleich war das Top-Paar: Könige über Neunen. Die Hand, die am Flop führte, verliert den Pot, ohne dass einer der Spieler seine eigenen Karten verbessert.
+Das gepaarte Neuner-Board hat *beiden* Spielern ein besseres zweites Paar in die Hand gedrückt – deine Vieren wurden ==r:counterfeited==, und der einzig verbleibende Vergleich war das Top-Paar: Könige über Neunen. Die Hand, die am Flop führte, verliert den Pot, obwohl weder Turn noch River die Hole Cards von irgendwem gepaart haben – das Board allein hat es gedreht.
 
 ---
 
@@ -186,7 +186,7 @@ Solche Runouts vor der River-Bet zu erkennen, ist eine eigene Fähigkeit – das
 
 **Q. Welche Regeln gelten beim Poker bei gleichen Karten?**
 
-A. Bei Gleichstand zählt nur der Rang der Karten, nie die Farbe. Der Dealer arbeitet drei Ebenen ab und stoppt bei der ersten, die einen Unterschied findet: Handkategorie, dann die Karten der Hand selbst, dann die Beikarten. Findet er auf keiner Ebene einen Unterschied, sind die Hände gleichwertig und der Pot wird gechoppt.
+A. Bei Gleichstand zählt nur der Rang der Karten, nie die Farbe. Der Dealer arbeitet drei Ebenen ab und stoppt bei der ersten, die einen Unterschied findet: Handkategorie, dann die Karten der Hand selbst, dann die Beikarten. Findet er auf keiner Ebene einen Unterschied, sind die Hände gleichwertig und der Pot – oder jeder Side Pot, für den beide berechtigt sind – wird gechoppt.
 
 **Q. Beide haben ein Ass-Paar – wer bekommt den Pot?**
 
@@ -198,9 +198,9 @@ A. Das höhere Paar. Erst wenn das identisch ist, kommt das tiefere Paar an die 
 
 **Q. Wer gewinnt bei zwei gleichen Drillingen?**
 
-A. Der Spieler mit dem höheren Kicker. Ein Drilling trägt zwei Beikarten, die von oben verglichen werden: Bei Drillings-Neunen schlägt 9-9-9-A-K das 9-9-9-A-Q, weil der zweite Kicker – der König – die Dame schlägt. Stimmen Drilling und beide Kicker überein, wird geteilt. Ein Set aus einem Pocket-Paar landet fast nie im Gleichstand, weil nur ein Spieler genau dieses Paar halten kann.
+A. Der Spieler mit dem höheren Kicker. Ein Drilling trägt zwei Beikarten, die von oben verglichen werden: Bei Drillings-Neunen schlägt 9-9-9-A-K das 9-9-9-A-Q, weil der zweite Kicker – der König – die Dame schlägt. Stimmen Drilling und beide Kicker überein, wird geteilt. Ein Set aus einem Pocket-Paar kann so nicht im Gleichstand landen – es gibt von jedem Wert nur vier Karten, also kann niemand sonst drei Karten desselben Werts halten.
 
-**Q. Wer gewinnt bei zwei gleichen Straßen?**
+**Q. Wer gewinnt, wenn beide eine Straße haben?**
 
 A. Die Straße mit der höheren obersten Karte – Q-J-10-9-8 schlägt J-10-9-8-7. Eine Straße wird ausschließlich nach ihrer höchsten Karte gewertet und hat keinen Kicker. Ist die oberste Karte gleich, sind die Hände identisch und der Pot wird geteilt. Das passiert am häufigsten, wenn die Straße überwiegend auf dem Board liegt und beide Spieler dasselbe Ende füllen.
 
@@ -245,7 +245,7 @@ A. Der Pot wird gleichmäßig geteilt – ein „Chop“. Wie die Chips physisch
 ## Das Wichtigste
 
 1. Jeder Tie läuft dasselbe Verfahren: ==**Handrang → gebildete Karten → Kicker → Split**== – keine Ausnahmen, keine Farben.
-2. Ein Kicker zählt nur, wenn er ==g:deine beste Fünf bildet== – Board-Karten können ihn ersetzen, und ein doppelt gepaartes Board kann deine Zwei Paare komplett counterfeiten.
+2. Ein Kicker zählt nur, wenn er ==g:deine beste Fünf bildet== – Board-Karten können ihn ersetzen, und ein doppelt gepaartes Board kann dein zweites Paar counterfeiten.
 3. Straßen werten nach ihrer höchsten Karte (das Wheel ist die niedrigste), Flushes vergleichen alle fünf – und wenn nichts die Hände trennt, wird der Pot gechoppt.
 
 Verinnerliche die komplette Reihenfolge mit den [vollständigen Handrängen](/de/blog/holdem-hand-rankings), lerne die Beikarte selbst kennen unter [was ist ein Kicker](/de/blog/holdem-kicker), und sieh genau, wie unentschiedene Pots aufgeteilt werden, im [Split-Pot-Guide](/de/blog/holdem-split-pot-rules).

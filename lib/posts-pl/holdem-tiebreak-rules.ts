@@ -83,7 +83,7 @@ Weźmy rozdanie ze zdjęcia powyżej:
 
 Ta sama para asów, więc kickery idą łeb w łeb po kolei: ==g:K bije Q — koniec walki.== Dziewiątka gracza B nadal *jest* w układzie jako drugi kicker, ale porównanie nigdy do niej nie dochodzi.
 
-Zauważ, że najwyższy kicker gracza B to dama z **boardu**, a nie dziewiątka, którą trzyma w ręce. ==r:Kicker liczy się tylko wtedy, gdy faktycznie trafia do twojej najlepszej piątki== — wyższa karta ze stołu spycha twoją kartę z ręki niżej. Dlatego druga karta, z którą zaczynasz, waży tyle samo co sam as: A-K i A-9 to tu obie „para asów”, a wygrywa tylko jedna z nich ([tabela rąk startowych](/pl/hand-chart)).
+Zauważ, że najwyższy kicker gracza B to dama z **boardu**, a nie dziewiątka, którą trzyma w ręce. ==r:Kicker liczy się tylko wtedy, gdy faktycznie trafia do twojej najlepszej piątki== — wyższa karta ze stołu spycha twoją kartę z ręki niżej. Dlatego druga karta, z którą zaczynasz, waży tak dużo: A-K i A-9 to tu obie „para asów”, a wygrywa tylko jedna z nich ([tabela rąk startowych](/pl/hand-chart)).
 
 ---
 
@@ -133,7 +133,7 @@ A potem jest pułapka, która decyduje o prawdziwych pieniądzach — ==r:**coun
 
 </div>
 
-Board sparował dziewiątki i dał *obu* graczom lepszą drugą parę — twoje czwórki ==r:przestały się liczyć (counterfeit)==, a jedynym porównaniem, jakie zostało, była wyższa para: króle nad dziewiątkami. Ręka, która prowadziła na flopie, przegrywa pulę, choć żaden z graczy nie poprawił własnych kart.
+Board sparował dziewiątki i dał *obu* graczom lepszą drugą parę — twoje czwórki ==r:przestały się liczyć (counterfeit)==, a jedynym porównaniem, jakie zostało, była wyższa para: króle nad dziewiątkami. Ręka, która prowadziła na flopie, przegrywa pulę, choć ani turn, ani river nie sparowały niczyich kart z ręki — odwrócił to sam board.
 
 ---
 
@@ -196,7 +196,7 @@ Wyłapywanie takich boardów przed zakładem na riverze to osobna umiejętność
 
 **Q. Jak rozstrzyga się remis w pokerze?**
 
-A. Trzy sprawdzenia po kolei — kategoria układu, potem karty tworzące układ, potem kickery od góry — i pierwsza różnica kończy sprawę. Równie ważne jest to, co nigdy nie wchodzi do porównania: kolory kart, kto ostatni postawił, kto siedzi bliżej buttona i ile żetonów wpłacił każdy z graczy. Jeśli pięć kart zgadza się wartość po wartości, rozdający dzieli pulę bez względu na to, co działo się w licytacji.
+A. Trzy sprawdzenia po kolei — kategoria układu, potem karty tworzące układ, potem kickery od góry — i pierwsza różnica kończy sprawę. Równie ważne jest to, co nigdy nie wchodzi do porównania: kolory kart, kto ostatni postawił, kto siedzi bliżej buttona i ile żetonów wpłacił każdy z graczy. Jeśli pięć kart w tej samej kategorii układu zgadza się wartość po wartości, pula — albo każda pula boczna, do której obaj mają prawo — jest dzielona bez względu na to, co działo się w licytacji.
 
 **Q. Kto wygrywa, gdy dwóch graczy ma taką samą parę?**
 
@@ -204,11 +204,11 @@ A. Wyższy kicker — ale najpierw sprawdź, które twoje karty faktycznie trafi
 
 **Q. Kto wygrywa, gdy obaj gracze mają dwie pary?**
 
-A. Najpierw wyższa para, potem niższa, potem jedyny kicker — więc asy i trójki biją króle i damy, choć druga para jest dużo mniejsza. Pułapką jest podwójnie sparowany board, jak K-K-9-9-5 bez trzech kart w jednym kolorze, więc nikt nie ułoży koloru: jeśli nikt nie ma króla, dziewiątki, pary piątek w ręce ani pary w ręce wyższej niż dziewiątki, każdy gracz ma te same dwie pary, więc rozdanie sprowadza się do jednego kickera i pulę bierze najlepsza karta z ręki przy stole — a jeśli niczyja karta z ręki nie bije piątki z boardu, wszyscy grają boardem i pula jest dzielona. Dwie pary mają dokładnie jeden kicker, nigdy dwa.
+A. Najpierw wyższa para, potem niższa, potem jedyny kicker — więc asy i trójki biją króle i damy, choć druga para jest dużo mniejsza. Pułapką jest podwójnie sparowany board, jak K-K-9-9-5 bez trzech kart w jednym kolorze, więc nikt nie ułoży koloru: jeśli nikt nie ma króla, dziewiątki, pary piątek w ręce ani pary w ręce wyższej niż dziewiątki, każdy gracz ma te same dwie pary, więc rozdanie sprowadza się do jednego kickera i pulę bierze najlepsza karta z ręki przy stole (gracze z tą samą najwyższą kartą dzielą się nią) — a jeśli niczyja karta z ręki nie bije piątki z boardu, wszyscy grają boardem i pula jest dzielona. Dwie pary mają dokładnie jeden kicker, nigdy dwa.
 
 **Q. Kto wygrywa, gdy dwóch graczy ma taką samą trójkę?**
 
-A. Trójka ma dwa kickery, porównywane od najwyższego — więc jeśli obaj gracze ułożą tę samą trójkę, wygrywa wyższa karta boczna. Przy trójce dziewiątek 9-9-9-A-K bije 9-9-9-A-Q, bo drugi kicker (król) stoi wyżej niż dama. Ta sama trójka i oba kickery równe oznaczają podział puli. (Set z pary w ręce prawie nigdy nie kończy się remisem, bo tylko jeden gracz może mieć tę dokładną parę.)
+A. Trójka ma dwa kickery, porównywane od najwyższego — więc jeśli obaj gracze ułożą tę samą trójkę, wygrywa wyższa karta boczna. Przy trójce dziewiątek 9-9-9-A-K bije 9-9-9-A-Q, bo drugi kicker (król) stoi wyżej niż dama. Ta sama trójka i oba kickery równe oznaczają podział puli. (Set z pary w ręce nie może tak zremisować — każdej wartości są tylko cztery karty, więc nikt inny nie może mieć trzech kart tej samej wartości.)
 
 **Q. Czy 5. karta ma znaczenie w pokerze?**
 
@@ -222,7 +222,7 @@ A. W Hold'em tak, ale tylko w stricie A-2-3-4-5 („wheel”), gdzie gra jako na
 
 A. Tak, a w praktyce zdarza się to wtedy, gdy większość strita leży już na boardzie. Weźmy board 5♦ 6♣ 7♠ 8♥ 2♦: gracz z 9♣ 4♠ układa 9-8-7-6-5, a gracz z 4♥ 3♦ układa 8-7-6-5-4 z tych samych czterech kart. Obaj „mają strita”; liczyła się tylko najwyższa karta, więc pulę bierze dziewiątka. Równe najwyższe karty oznaczają tego samego strita i podział puli.
 
-**Q. Kto wygrywa, gdy dwóch graczy ma tego samego strita?**
+**Q. Kto wygrywa, gdy obaj gracze mają strita?**
 
 A. Wygrywa strit z wyższą najwyższą kartą — Q-J-10-9-8 bije J-10-9-8-7, bo strita ocenia się tylko po najwyższej karcie i nie ma on kickera. Jeśli oba strity mają tę samą najwyższą kartę, są identyczne, więc pula jest dzielona. Najczęściej dzieje się tak, gdy strit leży głównie na boardzie, a obaj gracze domykają ten sam koniec.
 
@@ -230,7 +230,7 @@ A. Wygrywa strit z wyższą najwyższą kartą — Q-J-10-9-8 bije J-10-9-8-7, b
 
 A. Porównujesz kolory karta po karcie od góry: kolor do asa bije kolor do króla, a jeśli najwyższe karty są równe, przechodzisz do następnej i tak dalej przez wszystkie pięć. Kolory kart nigdy nie rozstrzygają remisu, więc jeśli wszystkie pięć wartości jest identycznych, pula jest dzielona. (W Hold'em dwa kolory są zawsze w tym samym kolorze kart, bo gracze dzielą board.)
 
-**Q. Kto wygrywa, gdy dwóch graczy ma takiego samego fulla?**
+**Q. Kto wygrywa, gdy obaj gracze mają fulla?**
 
 A. Najpierw porównujesz trójkę — wyższa trójka wygrywa, więc K-K-K-2-2 bije Q-Q-Q-A-A, choć asy wyglądają na większe. Parę porównujesz dopiero wtedy, gdy trójki są identyczne. Full nie ma kickera, więc ta sama trójka i ta sama para oznaczają podział puli.
 
@@ -255,7 +255,7 @@ A. Tak, ale nie zdarza się często. Prawdziwy remis jest tylko wtedy, gdy najle
 ## Najważniejsze wnioski
 
 1. Każdy remis przechodzi tę samą procedurę: ==**kategoria układu → karty układu → kickery → podział**== — bez wyjątków, bez kolorów kart.
-2. Kicker liczy się tylko wtedy, gdy ==g:trafia do twojej najlepszej piątki== — karty z boardu mogą go zastąpić, a podwójnie sparowany board może całkiem zdewaluować twoje dwie pary.
+2. Kicker liczy się tylko wtedy, gdy ==g:trafia do twojej najlepszej piątki== — karty z boardu mogą go zastąpić, a podwójnie sparowany board może zdewaluować twoją drugą parę.
 3. Strity porównuje się po najwyższej karcie (wheel jest najniższy), kolory po wszystkich pięciu kartach — a gdy nic nie rozdziela układów, pula jest dzielona.
 
 Utrwal pełną kolejność dzięki [kompletnemu rankingowi układów](/pl/blog/holdem-hand-rankings), opanuj samą kartę boczną w poradniku [co to jest kicker](/pl/blog/holdem-kicker) i zobacz dokładnie, jak dzieli się pule po remisie, w [poradniku o podziale puli](/pl/blog/holdem-split-pot-rules).

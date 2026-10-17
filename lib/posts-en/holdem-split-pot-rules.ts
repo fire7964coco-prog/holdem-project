@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "When Is a Pot Split? Hold'em Chop Rules",
   seoTitle: "Won the Hand but Got Half? — Poker Split Pot & Chop Rules",
   desc: "Can you tie in poker? Yes — here's exactly when pots split: identical five-card hands, the board playing for everyone, the odd chip rule, and side-pot chops.",
-  tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
+  tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players tie for the best hand at showdown — the identical best five cards. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-05",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -23,7 +23,7 @@ Getting half a pot you were sure you'd won is jarring. But ==g:split pots follow
 ---
 
 > **Quick answer**
-> A pot is **split** (also called a **chop**) when two or more players have the **identical best five-card hand** at showdown. The chips are divided equally. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.
+> A pot is **split** (also called a **chop**) when two or more players tie for the best hand at showdown with the **identical best five-card hand**. The chips are divided equally. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.
 
 ---
 
@@ -39,9 +39,9 @@ Getting half a pot you were sure you'd won is jarring. But ==g:split pots follow
 
 ## What Is a Split Pot in Poker? (And Is a "Chop" the Same Thing?)
 
-A **split pot** happens when two or more players have the identical best five-card hand at showdown, so the dealer divides the chips equally between them. A **chop** — or a "chopped pot" — is the exact same thing in table slang ("we're chopping"). Rulebooks say split; players say chop. People search both, so you'll see them used interchangeably.
+A **split pot** happens when two or more players tie for the best hand at showdown with the identical best five cards, so the dealer divides the chips equally between them. A **chop** — or a "chopped pot" — is the exact same thing in table slang ("we're chopping"). Rulebooks say split; players say chop. People search both, so you'll see them used interchangeably.
 
-The foundation: your hand is always the ==**best five cards**== out of seven — your two hole cards plus the five on the board. Where every five-card hand ranks is covered in the [complete poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:When two players' best fives are identical in rank, neither is "more" of a winner== — the pot splits, full stop.
+The foundation: your hand is always the ==**best five cards**== out of seven — your two hole cards plus the five on the board. Where every five-card hand ranks is covered in the [complete poker hand rankings](/en/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). ==r:When the best hands at showdown are the same hand type with the same five ranks, neither is "more" of a winner== — the pot splits, full stop.
 
 ---
 
@@ -71,12 +71,12 @@ The five community cards are already the strongest hand for everyone left — th
 Two straights with the same top card tie, regardless of suit. On a board of 7♣ 6♦ 5♥ K♠ 2♣, both A's 9♠ 8♠ and B's 9♥ 8♦ make 9-8-7-6-5 — same height, so **split**.
 
 ### 4. The same flush
-There's no suit ranking, so two flushes with the same five ranks tie. In practice this almost always means the **board itself** is a five-card flush. On K♠ J♠ 8♠ 4♠ 2♠, if A holds A♥ Q♦ and B holds 10♥ 9♦, neither has a spade — both play the board's K-J-8-4-2 flush and **chop**.
+There's no suit ranking, so two flushes with the same five ranks tie. In Hold'em that can only happen when the **board itself** is a five-card flush that nobody improves. On K♠ J♠ 8♠ 4♠ 2♠, if A holds A♥ Q♦ and B holds 10♥ 9♦, neither has a spade — both play the board's K-J-8-4-2 flush and **chop**.
 
 ==r:But check before you assume:== any spade in your hand higher than the board's lowest spade improves the flush. Here even the humble 3♠ makes K-J-8-4-3 and ==g:wins the whole pot== — and A♠ makes the nut flush.
 
 ### 5. Identical down to the last kicker
-Pairs and two pairs are usually decided by kickers — but if the kickers match too, it's a split. Board A♦ Q♠ 9♣ 6♥ 2♠ with A♠ K♦ vs A♥ K♣ gives both players ==g:A-A-K-Q-9== → **split**. When the kickers *differ*, the higher one wins outright — exactly how that comparison works, hand by hand, is in the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+When the pairs (or two pairs) are the same rank, the kickers decide — and if the kickers match too, it's a split. Board A♦ Q♠ 9♣ 6♥ 2♠ with A♠ K♦ vs A♥ K♣ gives both players ==g:A-A-K-Q-9== → **split**. When the kickers *differ*, the higher one wins outright — exactly how that comparison works, hand by hand, is in the [tie-breaker and kicker rules](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -86,11 +86,11 @@ Yes — and it doesn't even take two monster hands. When the five community card
 
 That's my 8-8-8-A-K hand: my J♠ 10♥ and his 5♣ 2♦ both played the board's trip eights with ace-king kickers — identical fives, a chop once both hands were tabled. The extreme case is a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush): no hole cards can improve it, so ==g:everyone left chops==.
 
-> **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
+> **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays — the most you can get is a share, and you chop only if nobody else beats the board either. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
 **And the part that matters most at the table: at a showdown with an opponent still in, your hand only wins if you turn it face up.** A mucked hand is normally dead even when it would have chopped (only a hand that is still clearly identifiable can be retrieved, and only at the floor's discretion; WSOP Tournament Rule 109) — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
 
-:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar for a call — and a low one for a fold: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three**, and on a river where the board can still be beaten, that is the normal case.]:::
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar for a call — and a low one for a fold: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three**, and on a river where the board can still be beaten, that is often the case.]:::
 
 ---
 
@@ -117,13 +117,13 @@ Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50
 
 > ==The leftover odd chip goes to the first tied player **left of the dealer button**== (the earliest winning seat clockwise from the button).
 
-In a three-way split with two odd chips, the two earliest seats clockwise each get one. ==r:House rules can vary== — a few card rooms award the odd chip by high card or suit instead — so if real money rides on it, ask the floor. ==g:Online, the software assigns it automatically by position.==
+In a three-way split with two odd chips, the two earliest seats clockwise each get one. ==r:House rules can vary== — so if real money rides on it, ask the floor. ==g:Online, the software assigns it automatically by position.==
 
 ---
 
 ## Do Side Pots Split Too? Ties When Someone Is All-In
 
-When players are all-in for different amounts and others keep betting, the chips form a ==**main pot**== (everyone is eligible) plus one or more ==**side pots**== (only the players who put in more than a shorter all-in stack could match). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
+When players are all-in for different amounts and others keep betting, the chips form a ==**main pot**== (every player still in the hand is eligible) plus one or more ==**side pots**== (only the players who put in more than a shorter all-in stack could match). Each pot is awarded — or chopped — ==**separately**==, based on the best hand among that pot's eligible players.
 
 A worked example: A is all-in for 100; B and C each put in 300. That's a **main pot of 300** (100 × 3) and a **side pot of 400** (200 + 200, B and C only). The board runs A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -156,7 +156,7 @@ Not in Texas Hold'em. You may have heard of "split-pot games" like Omaha Hi-Lo o
 
 **Q. When is a pot split in poker?**
 
-A. A pot is split when two or more players have the identical best five-card hand at showdown; the chips are divided equally among them.
+A. A pot is split when two or more players tie for the best hand at showdown with the identical best five cards; the chips are divided equally among them.
 
 **Q. How is the pot split in poker?**
 
@@ -180,7 +180,7 @@ A. No. Texas Hold'em has no suit ranking, so identical five-card hands always sp
 
 **Q. Who gets the odd chip when a pot can't divide evenly?**
 
-A. Standard rule: the first tied player left of the dealer button. A few rooms assign it by high card or suit instead, so house rules can vary — online software handles it automatically.
+A. Standard rule: the first tied player left of the dealer button. House rules can vary, so ask the floor — online software handles it automatically.
 
 **Q. Can more than two players split a pot?**
 
@@ -210,7 +210,7 @@ A. No — same word, two different things. A split pot at showdown isn't negotia
 
 ## The Takeaways
 
-1. Yes, ==**you can tie in poker**== — a pot splits (chops) whenever two or more players share the ==**identical best five of seven**==.
+1. Yes, ==**you can tie in poker**== — a pot splits (chops) whenever two or more players tie for the best hand with the ==**identical best five of seven**==.
 2. ==r:**Suits, higher hole cards, and how many cards you used**== never break a tie.
 3. The ==**odd chip**== goes to the first tied player left of the button, and ==**side pots**== are settled separately from the main pot.
 

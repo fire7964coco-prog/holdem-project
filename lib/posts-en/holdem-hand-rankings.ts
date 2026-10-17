@@ -45,10 +45,10 @@ From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flus
 
 </div>
 
-*These are the standard seven-card hand frequencies for a full 52-card deck — the same probabilities every poker solver and training site uses.*
+*These are the standard seven-card hand frequencies for a full 52-card deck — how often a random seven cards finish as each hand, not your odds with a specific hand or against a specific range.*
 
 > **The one rule that wins arguments**
-> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but most pots are decided by a pair or a high card and the [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> One Pair and High Card together make up roughly 61% of all seven-card hands by the river. Big hands feel common because they're memorable — but six in ten random seven-card hands finish as one pair or less, which is why the [kicker](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") matters far more often than beginners expect.
 
 :::quiz:::
 
@@ -80,7 +80,7 @@ Here is every hand from strongest to weakest, with an example and the one rule t
 
 **A♠ K♠ Q♠ J♠ 10♠** — the highest straight flush, and the best hand in poker.
 
-It cannot be beaten; the only possible tie is a royal flush that sits entirely on the board for everyone to share, which splits the pot. You'll see one roughly once in 31,000 hands, so most players go years without hitting one. When you make one yourself — not one that sits entirely on the board — your only job is to get as many chips in as possible.
+It cannot be beaten; the only possible tie is a royal flush that sits entirely on the board for everyone to share, which splits the pot. You'll see one roughly once in 31,000 hands, so unless you play a huge number of hands, you can go a very long time without making one. When you make one yourself — not one that sits entirely on the board — your only job is to get as many chips in as possible.
 
 ### #2 — Straight Flush
 
@@ -141,7 +141,7 @@ There are three ways to make it, and the difference matters:
 - **Trips:** a pair on the board plus one in your hand. Easier for opponents to read and to share.
 - **Board trips:** all three sit on the board (e.g. J♣ J♠ J♥ in the middle). Everyone shares them, so unless someone makes a straight or better, only kickers separate you.
 
-A set wins more chips because nobody sees it coming.
+A set often wins bigger pots because it is so hard to see coming.
 
 ### #8 — Two Pair
 
@@ -157,7 +157,7 @@ Compare in order: **high pair → low pair → kicker**. KK99-A beats QQJJ-A bec
 
 **K♠ K♦ 9♥ 6♣ 2♠** — two cards of one rank.
 
-The most common made hand in Hold'em. Two equal pairs go to kickers: **pair rank → kicker 1 → kicker 2 → kicker 3**, highest first. This is where most "same hand" losses happen — guard your kicker.
+The most common made hand in Hold'em. Two one-pair hands are compared **pair rank → kicker 1 → kicker 2 → kicker 3**, highest first — so when both players hold the same pair, the kickers decide. This is where most "same hand" losses happen — guard your kicker.
 
 ### #10 — High Card
 
@@ -165,7 +165,7 @@ The most common made hand in Hold'em. Two equal pairs go to kickers: **pair rank
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — nothing connects.
 
-At showdown, the highest card wins, then the next, and so on down all five. If all five match, it's a split. This is what you're left with when a bluff gets called and misses.
+At showdown, the highest card wins, then the next, and so on down all five. If all five match, it's a split. It's often what you're left with when a bluff gets called and your draw misses.
 
 ---
 
@@ -173,7 +173,7 @@ At showdown, the highest card wins, then the next, and so on down all five. If a
 
 ![Poker showdown — comparing two players' best five-card hands](/images/holdem-kicker-showdown-neutral.webp "At showdown, the best five-card hand takes the pot")
 
-When two players hold the same hand type, the winner is decided by comparing the cards inside the hand first, and then a **kicker** — a side card that isn't part of the made hand — breaks the tie when everything else matches. This is the part that decides real pots, and the part most charts skip. Work through this exact order:
+When two players hold the same hand type, the winner is decided by comparing the cards inside the hand first, and then a **kicker** — one of your best five cards that isn't part of the pair, two pair, trips or quads itself — breaks the tie when everything else matches. This is the part that decides real pots, and the part most charts skip. Work through this exact order:
 
 1. **Compare the hand rank.** A flush always beats a straight, full house always beats a flush, and so on.
 2. **Compare the cards that make the hand.** A pair of aces beats a pair of kings; a queen-high flush beats a jack-high flush.
@@ -195,7 +195,7 @@ One Pair|Pair rank → 3 kickers|+Kicker
 High Card|Compare all 5, high to low|+Kicker
 :::
 
-A **kicker** is simply a card that isn't part of your made hand but is still used to break ties. With A-A-K vs A-A-Q, both have aces — the king kicker wins. This is why pros care so much about the *quality* of their high cards, not just whether they paired. For every hand's tie rule in one place, see the [kicker and tie-breaker guide](/en/blog/holdem-tiebreak-rules); when the best five cards match exactly, the pot is [split](/en/blog/holdem-split-pot-rules).
+A **kicker** is a card in your best five that isn't part of the pair (or trips, two pair, quads) itself, but still breaks ties. With A-A-K vs A-A-Q, both have aces — the king kicker wins. This is why pros care so much about the *quality* of their high cards, not just whether they paired. For every hand's tie rule in one place, see the [kicker and tie-breaker guide](/en/blog/holdem-tiebreak-rules); when the best five cards match exactly, the pot is [split](/en/blog/holdem-split-pot-rules).
 
 ---
 
@@ -255,7 +255,7 @@ The short answers to the arguments that break out at every table: a flush beats 
 
 A flush beats a straight because it is simply harder to make: in a 52-card deck there are fewer ways to draw five cards of one suit (3.03% of seven-card hands by the river) than five in sequence across any suits (4.62%). The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make from five cards, the higher it ranks.**== That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
+It also explains the one big exception you'll meet in high-hand games: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
 
 ---
 
@@ -267,7 +267,7 @@ Under a time bank, run this scan in order every time the board is complete:
 
 **1. Suits first** — are there three or more of one suit on the board? If yes, ==a flush is possible==. Check your suit.
 
-**2. Connectedness next** — are there cards close in rank (like 8-9-10)? If yes, ==a straight is live==.
+**2. Connectedness next** — are there three different ranks inside any five-rank window (like 8-9-10)? If yes, ==a straight is live==.
 
 **3. Pairs last** — is the board paired? ==r:If yes, full houses and quads are on the table, and your flush or straight may be in danger.==
 
@@ -285,7 +285,7 @@ The fastest way to memorize poker hands is to stop treating them as ten random i
 | **2** | Drill only the confusing pairs: flush vs straight, full house vs flush | 3 days |
 | **3** | Watch poker streams and call the winner before the dealer announces | 1–2 weeks |
 
-Grouping first stops the order from feeling like ten random items. The confusing pairs in step 2 cause 90% of beginner mistakes, so over-practice those.
+Grouping first stops the order from feeling like ten random items. The confusing pairs in step 2 are where beginners slip most often, so over-practice those.
 
 ---
 
@@ -300,7 +300,7 @@ Mostly yes — the same ten-hand order carries across Texas Hold'em, Omaha, and 
 | **Seven-Card Stud** | Standard | No community cards (except a rare shared final card if the deck runs short) |
 | **Short Deck (6+)** | Modified | Flush beats full house; A-6-7-8-9 is the lowest straight (the ace still plays low, and with the 2s–5s gone it connects to the 6) |
 
-The takeaway: learn the standard order once and it carries you through nearly every game. Just remember Omaha's "exactly two" rule and Short Deck's flush bump.
+The takeaway: learn the standard order once and it carries you through nearly every high-hand game (lowball games like Razz rank hands the other way). Just remember Omaha's "exactly two" rule and Short Deck's flush bump.
 
 ---
 
@@ -353,7 +353,7 @@ A. Only a higher straight flush or a royal flush (which is simply the ace-high s
 
 **Q. What is a kicker?**
 
-A. A kicker is a card that isn't part of your made hand but breaks ties. With two equal pairs, the highest side card (kicker) wins — and if that ties too, the next one decides. The Ace is the best possible kicker.
+A. A kicker is a card in your best five that isn't part of the pair (or trips, two pair, quads) itself, but breaks ties. When two players hold the same pair, the highest side card (kicker) wins — and if that ties too, the next one decides. The Ace is the best possible kicker.
 
 **Q. Can two players have the same hand?**
 
@@ -365,7 +365,7 @@ A. In Hold'em, no — you make the best five from any combination of your two ho
 
 **Q. What's the difference between a set and trips?**
 
-A. Both are three of a kind. A *set* is a pocket pair plus one board card (well disguised); *trips* is a board pair plus one card in your hand (easier to read). Sets win more chips.
+A. Both are three of a kind. A *set* is a pocket pair plus one board card (well disguised); *trips* is a board pair plus one card in your hand (easier to read). Sets often win bigger pots.
 
 **Q. What is the highest hand in poker?**
 
@@ -381,7 +381,7 @@ A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequen
 
 **Q. What is the lowest (worst) hand in poker?**
 
-A. As a five-card hand, the worst possible is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand. In Hold'em, where you play the best five of seven cards, the weakest hand you can actually finish with is 9-8-7-5-4 (from 9-8-7-5-4-3-2 in mixed suits).
+A. As a five-card hand, the worst possible is 7-5-4-3-2 in mixed suits ("seven-high"). It's the lowest high-card holding that isn't a pair, straight, or flush — the classic "you have nothing" hand. In Hold'em, where you play the best five of seven cards, the weakest hand you can actually finish with is 9-8-7-5-4 (from 9-8-7-5-4-3-2 with no five cards of one suit).
 
 **Q. Can you have three pairs in poker?**
 
@@ -397,7 +397,7 @@ A. Yes. The Ace plays both high and low, so A-2-3-4-5 (the "wheel") is a legal s
 
 1. **The order:** Royal Flush > Straight Flush > Four of a Kind > Full House > Flush > Straight > Three of a Kind > Two Pair > One Pair > High Card.
 2. **The trap:** a flush (#5) beats a straight (#6) — and any paired board can hide a full house that beats both.
-3. **The reality:** most pots are won with one pair or high card, so your kicker is worth more than you think.
+3. **The reality:** a random seven cards finish as one pair or high card about 61% of the time, so your kicker is worth more than you think.
 
 Learn the order in an afternoon, drill the confusing pairs, and run the flush → straight → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
 

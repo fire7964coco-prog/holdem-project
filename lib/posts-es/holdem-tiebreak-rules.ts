@@ -73,7 +73,7 @@ Toma la mano de la foto de arriba:
 
 Misma pareja de ases, así que los kickers se enfrentan en orden: ==g:la K gana a la Q — se acabó.== El nueve de B sigue *en* la mano como segundo kicker, pero la comparación nunca llega tan lejos.
 
-Fíjate en que el kicker más alto de B es la reina de la **mesa**, no el 9 que tiene en la mano. ==r:Un kicker solo cuenta si de verdad entra en tus mejores cinco== — una carta más alta de la mesa empuja tu carta de mano hacia abajo en la lista. Por eso la segunda carta con la que empiezas importa tanto como el propio as: A-K y A-9 son ambas "una pareja de ases" aquí, y solo una de ellas gana ([tabla de manos iniciales](/es/blog/holdem-starting-hands-chart)).
+Fíjate en que el kicker más alto de B es la reina de la **mesa**, no el 9 que tiene en la mano. ==r:Un kicker solo cuenta si de verdad entra en tus mejores cinco== — una carta más alta de la mesa empuja tu carta de mano hacia abajo en la lista. Por eso la segunda carta con la que empiezas importa tanto: A-K y A-9 son ambas "una pareja de ases" aquí, y solo una de ellas gana ([tabla de manos iniciales](/es/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -123,7 +123,7 @@ Y luego está la trampa que decide dinero de verdad — la ==r:**anulación (cou
 
 </div>
 
-La mesa al emparejar los nueves le dio a *ambos* jugadores una segunda pareja mejor — tus cuatros quedaron ==r:anulados==, y la única comparación que quedaba era la pareja alta: reyes sobre nueves. La mano que iba por delante en el flop pierde el bote sin que ninguno de los dos jugadores haya mejorado sus propias cartas.
+La mesa al emparejar los nueves le dio a *ambos* jugadores una segunda pareja mejor — tus cuatros quedaron ==r:anulados==, y la única comparación que quedaba era la pareja alta: reyes sobre nueves. La mano que iba por delante en el flop pierde el bote aunque ni el turn ni el river emparejaron las cartas de mano de nadie — la mesa sola le dio la vuelta.
 
 ---
 
@@ -186,7 +186,7 @@ Detectar estos desarrollos antes de la apuesta del river es una habilidad en sí
 
 **Q. ¿Cómo se rompen los empates en el póker?**
 
-A. Tres comprobaciones en orden — tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor — y la primera diferencia lo decide. Igual de importante es lo que nunca entra en la comparación: los palos, quién apostó último, quién está más cerca del botón y cuántas fichas puso cada uno. Si las cinco cartas coinciden valor por valor, el dealer divide el bote sin importar lo que pasó en las apuestas.
+A. Tres comprobaciones en orden — tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor — y la primera diferencia lo decide. Igual de importante es lo que nunca entra en la comparación: los palos, quién apostó último, quién está más cerca del botón y cuántas fichas puso cada uno. Si las cinco cartas coinciden valor por valor en el mismo tipo de mano, el bote — o cada bote secundario al que ambos jugadores tienen derecho — se divide, sin importar lo que pasó en las apuestas.
 
 **Q. ¿Quién gana si dos jugadores tienen la misma pareja?**
 
@@ -194,11 +194,11 @@ A. El kicker más alto — pero comprueba primero cuáles de tus cartas llegan d
 
 **Q. ¿Quién gana si ambos jugadores tienen doble pareja?**
 
-A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5 sin tres cartas de un mismo palo, de modo que nadie puede hacer color: salvo que alguien lleve una K, un 9, una pareja de cincos de mano o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
+A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5 sin tres cartas de un mismo palo, de modo que nadie puede hacer color: salvo que alguien lleve una K, un 9, una pareja de cincos de mano o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores (quienes tengan esa misma carta más alta se la reparten) — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
 
 **Q. ¿Quién gana si dos jugadores tienen el mismo trío?**
 
-A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos jugadores hacen el mismo trío, gana la carta lateral más alta. Con trío de nueves, 9-9-9-A-K gana a 9-9-9-A-Q porque el segundo kicker (rey) supera a la reina. Trío y ambos kickers iguales significa bote dividido. (Un trío formado con una pareja servida casi nunca empata, ya que solo un jugador puede tener esa pareja exacta.)
+A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos jugadores hacen el mismo trío, gana la carta lateral más alta. Con trío de nueves, 9-9-9-A-K gana a 9-9-9-A-Q porque el segundo kicker (rey) supera a la reina. Trío y ambos kickers iguales significa bote dividido. (Un trío formado con una pareja servida no puede empatar así — con solo cuatro cartas de cada valor, nadie más puede tener tres del mismo valor.)
 
 **Q. ¿Importa la 5.ª carta en el póker?**
 
@@ -212,7 +212,7 @@ A. En Hold'em, sí, pero solo en la escalera A-2-3-4-5 (la "rueda"), donde juega
 
 A. Sí, y en la práctica ocurre cuando la mayor parte de la escalera ya está en la mesa. Toma una mesa de 5♦ 6♣ 7♠ 8♥ 2♦: un jugador con 9♣ 4♠ hace 9-8-7-6-5, mientras que un jugador con 4♥ 3♦ hace 8-7-6-5-4 con las mismas cuatro cartas. Los dos "hicieron escalera"; solo se contó la carta más alta, así que se la lleva el nueve. Cartas más altas iguales significan la misma escalera y bote dividido.
 
-**Q. ¿Quién gana si dos jugadores tienen la misma escalera?**
+**Q. ¿Quién gana si ambos jugadores tienen escalera?**
 
 A. Gana la escalera con la carta más alta — Q-J-10-9-8 gana a J-10-9-8-7, porque una escalera se ordena solo por su carta más alta y no tiene kicker. Si ambas escaleras tienen la misma carta más alta son idénticas, así que el bote se divide. Esto pasa sobre todo cuando la escalera está casi toda en la mesa y ambos jugadores completan el mismo extremo.
 
@@ -220,7 +220,7 @@ A. Gana la escalera con la carta más alta — Q-J-10-9-8 gana a J-10-9-8-7, por
 
 A. Se comparan los colores carta por carta de mayor a menor: un color con As gana a un color con K, y si las cartas más altas coinciden pasas a la siguiente, y así con las cinco. Los palos nunca rompen el empate, así que si las cinco cartas coinciden en valor el bote se divide. (En Hold'em dos colores son siempre del mismo palo, ya que los jugadores comparten la mesa.)
 
-**Q. ¿Quién gana si dos jugadores tienen el mismo full?**
+**Q. ¿Quién gana si ambos jugadores tienen full?**
 
 A. Se compara primero el trío — el trío más alto gana, así que K-K-K-2-2 gana a Q-Q-Q-A-A aunque los ases parezcan mayores. Solo si los tríos son idénticos comparas la pareja. Un full no tiene kicker, así que trío y pareja iguales significa bote dividido.
 
@@ -245,7 +245,7 @@ A. Sí, pero es poco frecuente. Un empate real ocurre solo cuando las mejores ci
 ## Lo que hay que recordar
 
 1. Cada empate sigue el mismo procedimiento: ==**tipo de mano → cartas que forman la mano → kickers → división**== — sin excepciones, sin palos.
-2. Un kicker solo cuenta si ==g:entra en tus mejores cinco== — las cartas de la mesa pueden reemplazarlo, y una mesa con doble pareja puede anular tu doble pareja por completo.
+2. Un kicker solo cuenta si ==g:entra en tus mejores cinco== — las cartas de la mesa pueden reemplazarlo, y una mesa con doble pareja puede anular tu segunda pareja.
 3. Las escaleras se ordenan por su carta más alta (la rueda es la más baja), los colores comparan las cinco — y cuando nada separa las manos, el bote se reparte.
 
 Fija el orden completo con la [jerarquía de manos completa](/es/blog/holdem-hand-rankings), domina la carta lateral en [qué es el kicker](/es/blog/holdem-kicker) y descubre exactamente cómo se reparten los botes empatados en la [guía del bote dividido](/es/blog/holdem-split-pot-rules).

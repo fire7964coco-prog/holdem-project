@@ -46,10 +46,10 @@ De la plus forte à la plus faible, les dix combinaisons du Texas Hold'em se cla
 
 </div>
 
-*Ce sont les fréquences standard des mains de sept cartes pour un jeu complet de 52 cartes — les mêmes probabilités qu'utilisent tous les solvers et tous les sites d'entraînement.*
+*Ce sont les fréquences standard des mains de sept cartes pour un jeu complet de 52 cartes — la fréquence à laquelle sept cartes prises au hasard finissent en chaque main, pas tes chances avec une main précise ni contre une range précise.*
 
 > **La règle qui clôt les débats**
-> La paire et la carte haute représentent à elles deux environ 61 % de toutes les mains de sept cartes à la river. Les grosses mains paraissent fréquentes parce qu'on s'en souvient — mais la plupart des pots se jouent sur une paire ou une carte haute, et sur le [kicker](/fr/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
+> La paire et la carte haute représentent à elles deux environ 61 % de toutes les mains de sept cartes à la river. Les grosses mains paraissent fréquentes parce qu'on s'en souvient — mais six mains de sept cartes sur dix, prises au hasard, finissent en paire ou moins, et c'est pour ça que le [kicker](/fr/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") compte bien plus souvent que les débutants ne l'imaginent.
 
 :::quiz:::
 
@@ -85,7 +85,7 @@ Voici chaque main, de la plus forte à la plus faible, avec un exemple et la rè
 
 **A♠ K♠ Q♠ J♠ 10♠** — la plus haute quinte flush, et la meilleure main du poker.
 
-Elle est imbattable ; la seule égalité possible, c'est une quinte flush royale posée entièrement sur le board, que tout le monde partage, et le pot est divisé. Tu en verras une environ une fois toutes les 31 000 mains, si bien que la plupart des joueurs passent des années sans en toucher une. Le jour où tu la touches toi-même — pas une qui est posée entièrement sur le board —, ton seul travail est de mettre un maximum de jetons au milieu. Et attention à une idée reçue : une quinte flush qui contient un as n'est pas forcément royale — A-2-3-4-5 de la même enseigne est au contraire la plus petite quinte flush.
+Elle est imbattable ; la seule égalité possible, c'est une quinte flush royale posée entièrement sur le board, que tout le monde partage, et le pot est divisé. Tu en verras une environ une fois toutes les 31 000 mains, si bien qu'à moins de jouer énormément de mains, tu peux passer très longtemps sans en former une. Le jour où tu la touches toi-même — pas une qui est posée entièrement sur le board —, ton seul travail est de mettre un maximum de jetons au milieu. Et attention à une idée reçue : une quinte flush qui contient un as n'est pas forcément royale — A-2-3-4-5 de la même enseigne est au contraire la plus petite quinte flush.
 
 ### #2 — Quinte flush (straight flush)
 
@@ -146,7 +146,7 @@ Il y a trois façons de le former, et la différence compte :
 - **Brelan (trips) :** une paire sur le board plus une carte assortie dans ta main. Plus facile à lire pour tes adversaires, et plus facile à partager.
 - **Brelan sur le board :** les trois cartes sont sur le board (par exemple J♣ J♠ J♥ au milieu). Tout le monde le partage, donc à moins que quelqu'un forme une quinte ou mieux, seuls les kickers départagent les joueurs.
 
-Le brelan servi rapporte plus de jetons parce que personne ne le voit venir.
+Le brelan servi remporte souvent de plus gros pots parce qu'il est très difficile à voir venir.
 
 ### #8 — Double paire (two pair)
 
@@ -162,7 +162,7 @@ Compare dans l'ordre : **paire haute → paire basse → kicker**. KK99-A bat QQ
 
 **K♠ K♦ 9♥ 6♣ 2♠** — deux cartes de même rang.
 
-C'est la main faite la plus courante au Hold'em. Deux paires égales se départagent aux kickers : **rang de la paire → kicker 1 → kicker 2 → kicker 3**, du plus haut au plus bas. C'est là que se produisent la plupart des défaites « avec la même main » — surveille ton kicker.
+C'est la main faite la plus courante au Hold'em. Deux mains à une paire se comparent **rang de la paire → kicker 1 → kicker 2 → kicker 3**, du plus haut au plus bas — donc quand les deux joueurs ont la même paire, ce sont les kickers qui décident. C'est là que se produisent la plupart des défaites « avec la même main » — surveille ton kicker.
 
 ### #10 — Carte haute ou hauteur (high card)
 
@@ -170,7 +170,7 @@ C'est la main faite la plus courante au Hold'em. Deux paires égales se départa
 
 **A♣ Q♠ 9♥ 5♦ 3♣** — rien ne se connecte.
 
-À l'abattage, la carte la plus haute gagne, puis la suivante, et ainsi de suite sur les cinq. Si les cinq sont identiques, le pot est partagé. C'est ce qui te reste quand un bluff est payé et que ton tirage a raté.
+À l'abattage, la carte la plus haute gagne, puis la suivante, et ainsi de suite sur les cinq. Si les cinq sont identiques, le pot est partagé. C'est souvent ce qui te reste quand un bluff est payé et que ton tirage a raté.
 
 ---
 
@@ -197,7 +197,7 @@ Les tables en ligne, les vidéos et les solvers mélangent souvent les deux lang
 
 ![Abattage au poker — comparaison des cinq meilleures cartes de deux joueurs](/images/holdem-kicker-showdown-neutral.webp "À l'abattage, la meilleure main de cinq cartes remporte le pot")
 
-Quand deux joueurs ont le même type de combinaison, on compare d'abord les cartes qui forment la main, puis un **kicker** — une carte d'accompagnement qui ne fait pas partie de la combinaison — départage quand tout le reste est identique. C'est la partie qui fait basculer les vrais pots, et celle que la plupart des tableaux oublient. Suis exactement cet ordre :
+Quand deux joueurs ont le même type de combinaison, on compare d'abord les cartes qui forment la main, puis un **kicker** — une de tes cinq meilleures cartes qui ne fait pas partie de la paire, de la double paire, du brelan ou du carré lui-même — départage quand tout le reste est identique. C'est la partie qui fait basculer les vrais pots, et celle que la plupart des tableaux oublient. Suis exactement cet ordre :
 
 1. **Compare le rang de la combinaison.** Une couleur bat toujours une quinte, un full bat toujours une couleur, et ainsi de suite.
 2. **Compare les cartes qui forment la combinaison.** Une paire d'as bat une paire de rois ; une couleur hauteur dame bat une couleur hauteur valet.
@@ -219,7 +219,7 @@ Paire|Rang de la paire → 3 kickers|+Kicker
 Carte haute|On compare les 5 cartes, de la plus haute à la plus basse|+Kicker
 :::
 
-Un **kicker**, c'est simplement une carte qui ne fait pas partie de ta combinaison mais qui sert quand même à départager. Avec A-A-K contre A-A-Q, les deux joueurs ont des as — le kicker roi gagne. C'est pour ça que les pros attachent autant d'importance à la *qualité* de leurs cartes hautes, et pas seulement au fait d'avoir touché une paire. Pour toutes les règles de départage réunies au même endroit, vois le [guide des égalités et du kicker](/fr/blog/holdem-tiebreak-rules) ; quand les cinq meilleures cartes sont exactement les mêmes, le pot est [partagé](/fr/blog/holdem-split-pot-rules).
+Un **kicker**, c'est une carte de tes cinq meilleures qui ne fait pas partie de la paire elle-même (ni du brelan, de la double paire ou du carré), mais qui sert quand même à départager. Avec A-A-K contre A-A-Q, les deux joueurs ont des as — le kicker roi gagne. C'est pour ça que les pros attachent autant d'importance à la *qualité* de leurs cartes hautes, et pas seulement au fait d'avoir touché une paire. Pour toutes les règles de départage réunies au même endroit, vois le [guide des égalités et du kicker](/fr/blog/holdem-tiebreak-rules) ; quand les cinq meilleures cartes sont exactement les mêmes, le pot est [partagé](/fr/blog/holdem-split-pot-rules).
 
 ---
 
@@ -279,7 +279,7 @@ Les réponses courtes aux disputes qui éclatent à chaque table : la couleur ba
 
 La couleur bat la quinte parce qu'elle est tout simplement plus difficile à former : dans un jeu de 52 cartes, il y a moins de façons d'obtenir cinq cartes d'une même enseigne (3,03 % des mains de sept cartes à la river) que cinq cartes qui se suivent toutes enseignes confondues (4,62 %). Le classement n'a rien d'arbitraire — ==ce sont de pures probabilités==. ==g:**Plus une main est difficile à former avec cinq cartes, plus elle est haute.**== Ce seul principe explique toute la hiérarchie — retrouve les chiffres exacts dans le [tableau des probabilités au poker](/fr/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Il explique aussi la seule grande exception que tu croiseras : au **Short Deck (6+) Hold'em**, où l'on retire les 2 à 5, la couleur devient plus difficile que le full — dans ce format, la ==r:**couleur bat le full**==. Les maths ont changé, donc l'ordre a changé. Plus de détails sur les différences entre variantes plus bas.
+Il explique aussi la seule grande exception que tu croiseras dans les jeux à la main haute : au **Short Deck (6+) Hold'em**, où l'on retire les 2 à 5, la couleur devient plus difficile que le full — dans ce format, la ==r:**couleur bat le full**==. Les maths ont changé, donc l'ordre a changé. Plus de détails sur les différences entre variantes plus bas.
 
 ---
 
@@ -291,7 +291,7 @@ Quand ta time bank défile, fais ce balayage dans cet ordre, à chaque fois que 
 
 **1. Les enseignes d'abord** — y a-t-il trois cartes ou plus d'une même enseigne sur le board ? Si oui, ==une couleur est possible==. Vérifie ton enseigne.
 
-**2. Les cartes connectées ensuite** — y a-t-il des cartes proches en rang (comme 8-9-10) ? Si oui, ==une quinte est possible==.
+**2. Les cartes connectées ensuite** — y a-t-il trois rangs différents dans une même fenêtre de cinq rangs (comme 8-9-10) ? Si oui, ==une quinte est possible==.
 
 **3. Les paires en dernier** — le board est-il pairé ? ==r:Si oui, des fulls et des carrés sont possibles, et ta couleur ou ta quinte est peut-être en danger.==
 
@@ -309,7 +309,7 @@ Le moyen le plus rapide de retenir les combinaisons, c'est d'arrêter de les voi
 | **2** | S'entraîner uniquement sur les paires piégeuses : couleur contre quinte, full contre couleur | 3 jours |
 | **3** | Regarder des streams de poker et annoncer le gagnant avant le donneur | 1–2 semaines |
 
-Commencer par les groupes évite que l'ordre ressemble à dix éléments au hasard. Les paires piégeuses de l'étape 2 causent 90 % des erreurs de débutant, alors entraîne-toi deux fois plus dessus.
+Commencer par les groupes évite que l'ordre ressemble à dix éléments au hasard. Les paires piégeuses de l'étape 2 sont celles où les débutants trébuchent le plus souvent, alors entraîne-toi deux fois plus dessus.
 
 ---
 
@@ -324,7 +324,7 @@ Presque toujours — le même ordre des dix combinaisons vaut au Texas Hold'em, 
 | **Seven-Card Stud** | Standard | Pas de cartes communes (sauf une rare dernière carte commune si le paquet ne suffit pas) |
 | **Short Deck (6+)** | Modifié | La couleur bat le full ; A-6-7-8-9 est la plus petite quinte (l'as joue toujours en bas, et sans les 2 à 5 il se relie au 6) |
 
-À retenir : apprends l'ordre standard une fois et il te servira dans presque tous les jeux. Souviens-toi juste du « exactement deux » de l'Omaha et de la couleur qui monte d'un cran au Short Deck.
+À retenir : apprends l'ordre standard une fois et il te servira dans presque tous les jeux à la main haute (les jeux low comme le Razz classent les mains à l'envers). Souviens-toi juste du « exactement deux » de l'Omaha et de la couleur qui monte d'un cran au Short Deck.
 
 ---
 
@@ -377,7 +377,7 @@ A. Seulement une quinte flush plus haute ou une quinte flush royale (qui n'est r
 
 **Q. À quoi sert le kicker dans l'ordre des mains ?**
 
-A. Le kicker est une carte qui ne fait pas partie de ta combinaison mais qui départage les égalités. Quand deux joueurs ont la même paire, la carte d'accompagnement la plus haute (le kicker) gagne — et si elle est identique aussi, c'est la suivante qui décide. L'as est le meilleur kicker possible.
+A. Le kicker est une carte de tes cinq meilleures qui ne fait pas partie de la paire elle-même (ni du brelan, de la double paire ou du carré), mais qui départage les égalités. Quand deux joueurs ont la même paire, la carte d'accompagnement la plus haute (le kicker) gagne — et si elle est identique aussi, c'est la suivante qui décide. L'as est le meilleur kicker possible.
 
 **Q. Deux joueurs peuvent-ils avoir la même main ?**
 
@@ -389,7 +389,7 @@ A. Au Hold'em, non — tu formes ta meilleure main de cinq cartes avec n'importe
 
 **Q. Quelle différence entre un brelan servi (set) et un brelan (trips) ?**
 
-A. Les deux sont des brelans. Le *brelan servi* (set), c'est une paire en main plus une carte du board (bien caché) ; le *brelan* (trips), c'est une paire sur le board plus une carte dans ta main (plus facile à lire). Le brelan servi rapporte plus de jetons.
+A. Les deux sont des brelans. Le *brelan servi* (set), c'est une paire en main plus une carte du board (bien caché) ; le *brelan* (trips), c'est une paire sur le board plus une carte dans ta main (plus facile à lire). Le brelan servi remporte souvent de plus gros pots.
 
 **Q. Quelle est la combinaison la plus forte au poker ?**
 
@@ -405,7 +405,7 @@ A. Oui. La quinte flush (#2) bat le carré (#3) — cinq cartes qui se suivent d
 
 **Q. Quelle est la combinaison la plus faible au poker ?**
 
-A. En main de cinq cartes, la pire possible est 7-5-4-3-2 en enseignes mélangées (« hauteur sept »). C'est la plus petite carte haute qui ne forme ni paire, ni quinte, ni couleur — la main classique du « tu n'as rien ». Au Hold'em, où tu joues tes cinq meilleures cartes parmi les sept, la main la plus faible avec laquelle tu peux réellement finir est 9-8-7-5-4 (avec 9-8-7-5-4-3-2 en enseignes mélangées).
+A. En main de cinq cartes, la pire possible est 7-5-4-3-2 en enseignes mélangées (« hauteur sept »). C'est la plus petite carte haute qui ne forme ni paire, ni quinte, ni couleur — la main classique du « tu n'as rien ». Au Hold'em, où tu joues tes cinq meilleures cartes parmi les sept, la main la plus faible avec laquelle tu peux réellement finir est 9-8-7-5-4 (avec 9-8-7-5-4-3-2 sans cinq cartes d'une même enseigne).
 
 **Q. Peut-on avoir trois paires au poker ?**
 
@@ -433,7 +433,7 @@ A. Sur cinq cartes, 1 sur 649 740 (0,000154 %). En comptant les sept cartes jusq
 
 1. **L'ordre :** quinte flush royale > quinte flush > carré > full > couleur > quinte > brelan > double paire > paire > carte haute.
 2. **Le piège :** la couleur (#5) bat la quinte (#6) — et n'importe quel board pairé peut cacher un full qui bat les deux.
-3. **La réalité :** la plupart des pots se gagnent avec une paire ou une carte haute, donc ton kicker vaut plus que tu ne le penses.
+3. **La réalité :** sept cartes prises au hasard finissent en paire ou en carte haute environ 61 % du temps, donc ton kicker vaut plus que tu ne le penses.
 
 Apprends l'ordre en un après-midi, entraîne-toi sur les paires piégeuses et fais le balayage couleur → quinte → paires sur chaque board. Fais ça, et tu ne pousseras plus jamais le pot du mauvais côté.
 

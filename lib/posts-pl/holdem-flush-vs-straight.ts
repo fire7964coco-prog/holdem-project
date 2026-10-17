@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-10-17",
-  masterUpdated: "2026-09-28",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -81,7 +81,7 @@ Strit ma mniej więcej ==r:**dwa razy** więcej sposobów, żeby się ułożyć,
 
 Strit potrzebuje tylko pięciu wartości po kolei, a ==**kolory kart nie mają znaczenia**==. Ta swoboda daje ogromną liczbę kombinacji. Kolor to przeciwieństwo: każda z pięciu kart musi mieć ==**ten sam kolor**==, a naraz może to być tylko jeden z czterech kolorów. ==g:Dużo mniej dróg do celu oznacza, że kolor jest rzadszy — a wśród typów układów rzadszy zawsze stoi wyżej.==
 
-:::tip[Jeśli masz flush draw, a rywal goni strita, to ty wygrywasz zderzenie — gdy **oba** drawy się domkną, twój kolor bije jego strita przy showdownie. To nie to samo co bycie faworytem: jeśli jego strit draw idzie w parze z parą albo wyższymi kartami, przed riverem nadal może być z przodu.]:::
+:::tip[Jeśli masz flush draw, a rywal goni strita, to ty wygrywasz zderzenie — gdy **oba** drawy się domkną, twój kolor bije jego strita przy showdownie (rzadki wyjątek: karta, która domyka jego strita, daje też pokera — straight flush — w twoim kolorze). To nie to samo co bycie faworytem: jeśli jego strit draw idzie w parze z parą albo wyższymi kartami, przed riverem nadal może być z przodu.]:::
 
 ---
 
@@ -115,7 +115,7 @@ Masz **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, kolor do asa. Rywal pokazuj
 
 ## Co bije kolor w pokerze?
 
-Twój kolor jest faworytem przeciw większości talii — ale biją go dokładnie **cztery typy układów** (plus wyższy kolor):
+Twój kolor bije każdy układ, który stoi niżej w rankingu — ale biją go dokładnie **cztery typy układów** (plus wyższy kolor):
 
 :::compare
 Bije twój kolor | Przegrywa z twoim kolorem
@@ -138,7 +138,7 @@ Gdy dwóch graczy ma *ten sam* typ układu, o zwycięzcy decyduje porównanie ka
 
 ## Czy ma znaczenie, kto ma wyższy kolor? Kolor kontra kolor, strit kontra strit
 
-Tak, jeden kolor może być wyraźnie wyższy od drugiego. **Kolory kart nie mają znaczenia** — porównujesz pięć kart od góry, od najwyższej:
+Wygrywa wyższy układ — i tak, jeden kolor może być wyraźnie wyższy od drugiego. **Kolory kart nie mają znaczenia** — porównujesz pięć kart od góry, od najwyższej:
 
 | Gracz | Kolor | Wynik |
 |--------|------|------|
@@ -178,7 +178,7 @@ Jeśli twój strit korzysta z jednych kart, a kolor z innych, nie dodajesz ich d
 
 ## Czy w Short Decku układy mają inną kolejność?
 
-Tak — Short Deck (6+) Hold'em to jedyny popularny format, który zmienia kolejność tych układów. W **Short Deck (6+) Hold'em** z talii usuwa się dwójki, trójki, czwórki i piątki. Przy mniejszej liczbie kart kolor staje się *trudniejszy* do ułożenia niż full — więc w tym formacie ranking się przesuwa i ==r:**kolor bije fulla**==. Logika jest ta sama co przy pełnej talii: z tych dwóch układów ==wyżej stoi rzadszy==. Zmieniła się tylko talia. W standardowym Texas Hold'em z pełną talią 52 kart ==g:kolor bije strita i przegrywa z fullem, zawsze==.
+Tak — Short Deck (6+) Hold'em to jedyny popularny format na najwyższy układ, który zmienia kolejność tych układów. W **Short Deck (6+) Hold'em** z talii usuwa się dwójki, trójki, czwórki i piątki. Przy mniejszej liczbie kart kolor staje się *trudniejszy* do ułożenia niż full — więc w tym formacie ranking się przesuwa i ==r:**kolor bije fulla**==. Logika jest ta sama co przy pełnej talii: z tych dwóch układów ==wyżej stoi rzadszy==. Zmieniła się tylko talia. W standardowym Texas Hold'em z pełną talią 52 kart ==g:kolor bije strita i przegrywa z fullem, zawsze==.
 
 ---
 
