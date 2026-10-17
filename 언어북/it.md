@@ -10,7 +10,7 @@
 
 ## ② 키워드 뱅크 — 검색량·SERP·자동완성·조준 (도구 서치 «글 몫 발견» 절 포함)
 
-- `docs/keyword-bank/it-tools.md` (9KB)
+- `docs/keyword-bank/it-tools.md` (11KB)
 
 ## ③ 현지 말투 — 현지 voice·표현 축적
 

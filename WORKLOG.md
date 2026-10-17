@@ -1,3 +1,9 @@
+## 2026-10-17 (9) — 유튜브 폴더 언어북 제안(EN-T03) 반영 · en ①·③ 신설
+
+- 원문 = 유튜브 `productions/holdemmaster-solver-tutorials/locales/review-package/언어북_업데이트_제안_2026-10-17_EN-T03.md`(AI 교차 검수 · 원어민 아님).
+- ① `docs/translation-terms-en.md` 신설(en ① 칸이 비어 있었다 · 솔버 앱 EN 화면 글자 16행 + 설명 용어 7) — 솔버 소스 EN 사전 대조 14건 실재 · «Results →»만 소스 미발견(라이브 기록만이라 그렇게 적음).
+- ③ `docs/local-voice/en-video.md` 신설(발화·자막 규칙 5 + 강의 상투구) · ② `keyword-bank/en-gto-solver.md` 영상 절 끝에 3편 주제어(🔴 볼륨 미측정 명시) · `npm run langbook`.
+
 ## 2026-10-17 (8) — `/it/solver` 신설(16번째 솔버 랜딩 · 도구 확장 ④) · 배포 · MB-376·377
 
 - 서치: DFS 2380 it 볼륨 24어(응답 10 · gto poker 480 · solver poker 90 · poker solver 70 · gto solver 40 · solver poker gratis 30 · gto wizard 5.400) + SERP 2(«gto poker» 정의 의도 6/10 · «solver poker» 이탈리아어 원문 0) → `keyword-bank/it-tools.md` §6.

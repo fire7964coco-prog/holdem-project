@@ -6,7 +6,7 @@
 
 ## ① 용어 정본 — 족보·액션·숫자 표기·문체·도구/앱 UI 낱말 (글·도구·솔버 공용 · 🔴 가장 먼저)
 
-- (없음)
+- `docs/translation-terms-en.md` (4KB)
 
 ## ② 키워드 뱅크 — 검색량·SERP·자동완성·조준 (도구 서치 «글 몫 발견» 절 포함)
 
@@ -16,7 +16,7 @@
 - `docs/keyword-bank/en-country-strategy.md` (9KB)
 - `docs/keyword-bank/en-glossary-what-is-a.md` (6KB)
 - `docs/keyword-bank/en-gto-series.md` (24KB)
-- `docs/keyword-bank/en-gto-solver.md` (13KB)
+- `docs/keyword-bank/en-gto-solver.md` (14KB)
 - `docs/keyword-bank/en-icm.md` (2KB)
 - `docs/keyword-bank/en-odds-of.md` (4KB)
 - `docs/keyword-bank/en-position.md` (4KB)
@@ -28,7 +28,7 @@
 
 ## ③ 현지 말투 — 현지 voice·표현 축적
 
-- (없음)
+- `docs/local-voice/en-video.md` (1KB)
 
 ## ④ 계획·브리프·회차 기록 — 결정과 경위
 

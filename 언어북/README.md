@@ -15,7 +15,7 @@
 
 | 언어북 | 언어 | 자료 파일 수 |
 |---|---|---|
-| [en](en.md) | English | 19 |
+| [en](en.md) | English | 21 |
 | [ar](ar.md) | العربية | 21 |
 | [bn](bn.md) | বাংলা | 1 |
 | [de](de.md) | Deutsch | 14 |

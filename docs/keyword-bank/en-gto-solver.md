@@ -169,3 +169,8 @@ curl -s "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&
   셋째 항목을 사이트 프로모처럼 「No limits」로 바꾸지 않는다(회원 한도 스위치 뒤 거짓). 영어 SaaS 관용 「No credit card」도 후보였으나 「결제 없이」 대응이 정확한 No payment 유지.
 - 영상 제목 후보(업로드 때 사장님 확정): 「How to Use a GTO Poker Solver for the First Time — Read Your First Result (Part 1)」 — `poker solver`(1,600)·`gto solver`(390) 포함, 랜딩 FAQ 「How do I use a poker solver for the first time?」(`app/en/solver/faq.ts:58`)와 같은 주제.
 - 앱 UI 낱말(영상 대본 정본): Study Spots · ⚡ View results · Solve it yourself · ← Back · Open the solver → · HoldemMaster GTO Trainer · Player: OOP (BB (Caller)) / IP (BTN (Opener)) · detail table · Hands / Draws 탭. EN 카드에는 해설 링크가 없다(`PresetPreview.vue:427-431` — 켤 때는 KO처럼 밑줄 글자 링크로).
+
+### 🎬 EN 3편 추가 (2026-10-17 · 유튜브 폴더 `언어북_업데이트_제안_2026-10-17_EN-T03.md`)
+
+- 3편 주제어(제목·설명란 후보 · 🔴 **검색량 미측정** — 영상 대본 용어만 근거, 쓰기 전 이 뱅크 방식으로 볼륨 확인): «how to run a poker solver» · «solver exploitability» · «effective stack» · «bet sizing in a solver» · «betting tree».
+- 앱 UI 낱말 추가(검색어 아님 · 화면 글자): Solve it yourself · Build Tree · Run Solver · Target exploitability · Max iterations · Solver finished! · Results →. 정본 = `docs/translation-terms-en.md` §1.
