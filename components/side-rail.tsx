@@ -91,6 +91,9 @@ export const HUB_PAGES = [
  * ★라벨은 각 페이지의 metadata title에서 딴 것이다(지어낸 표현이 아니다).
  */
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
+  th: [
+    { href: "/th/win-rate-quiz", icon: "📈", label: "ควิซโป๊กเกอร์" },
+  ],
   pl: [
     { href: "/pl/calculator", icon: "🧮", label: "Kalkulator pokerowy" },
     { href: "/pl/hand-chart", icon: "📊", label: "Ręce startowe poker" },

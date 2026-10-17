@@ -60,6 +60,7 @@ const STATIC_ROUTES = [
   // ★2026-10-16 it 도구 회차
   { path: "/it/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   { path: "/pl/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
+  { path: "/th/win-rate-quiz", priority: "0.7", changefreq: "monthly" },
   /**
    * ★2026-08-08 `/hand-chart` 색인 개시 (사장님 결정) — 상세 근거는 `app/hand-chart/page.tsx` 주석.
    *   요약: 몰아준 쪽(holdem-starting-hand-range)이 28일 노출 16·38위로 못 이겼고
