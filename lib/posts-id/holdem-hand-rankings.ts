@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
 
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -62,7 +62,7 @@ As adalah kartu tertinggi di poker sekaligus satu-satunya yang melanggar aturan:
 
 ### Jenis kartu tidak punya nilai
 
-Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop tidak mengalahkan hati. Jenis hanya penting untuk *membentuk* flush, tak pernah untuk memecah seri. Jika dua pemain punya lima kartu sama dengan jenis berbeda, pot dibagi — selalu.
+Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop tidak mengalahkan hati. Jenis hanya penting untuk *membentuk* flush, tak pernah untuk memecah seri. Jika dua pemain membentuk tangan yang sama dengan lima nilai yang sama, hanya berbeda jenis, pot dibagi — selalu. (Jenis kartu tetap bisa menentukan *apakah* flush terbentuk: di board A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ membentuk flush ber-As tinggi, sedangkan Q♥ J♥ memainkan lima nilai yang sama hanya sebagai high card As biasa.)
 
 ---
 
@@ -339,7 +339,7 @@ A. Kicker adalah kartu yang bukan bagian dari tangan jadi tapi memecah seri. Den
 
 **Q. Bisakah dua pemain punya tangan sama?**
 
-A. Bisa. Jika lima kartu terbaik keduanya identik nilainya, pot dibagi. Jenis kartu tak pernah memecah seri di Texas Hold'em.
+A. Bisa. Jika lima kartu terbaik keduanya membentuk tangan yang sama dan nilainya identik satu per satu, pot dibagi. Jenis kartu tak pernah memecah seri di Texas Hold'em.
 
 **Q. Apakah wajib pakai kedua kartu sendiri?**
 

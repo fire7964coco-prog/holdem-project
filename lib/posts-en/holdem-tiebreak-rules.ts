@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -144,13 +144,13 @@ Two things the wheel does *not* do: the ace can't wrap around the middle (Q-K-A-
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, and it's A♠ 8♠ against A♦ 7♦. Both have a pair of aces. First kicker: the board's K — tie. Second kicker: the board's Q — tie. Third kicker: ==g:8 beats 7.== The literal fifth card of the hand just decided everything above it.
 
-The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. Once the cards above it are tied, the fifth card stops mattering only when the board outranks it — which is the last piece of the puzzle.
+The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. Once the cards above it are tied, the fifth card is compared like any other: a higher fifth card wins, an equal one splits. What can change is *which* card fills that fifth slot — a board card that outranks your hole-card kicker pushes it out of the best five, which is the last piece of the puzzle.
 
 ---
 
 ## Do Suits Matter in Poker?
 
-**No — not for deciding who wins. When it comes to winning the pot, suits do exactly one job in Texas Hold'em: five of the same suit make a flush. Beyond that they carry no rank, so two hands that match rank for rank always split the pot, and no card ever outranks another because of its suit.**
+**No — not for deciding who wins. When it comes to winning the pot, suits do exactly one job in Texas Hold'em: five of the same suit make a flush. Beyond that they carry no rank, so two hands that are the same hand, matching rank for rank, always split the pot, and no card ever outranks another because of its suit.**
 
 The question keeps coming up because suit order genuinely exists in poker — just never for ranking hands in this game. Stud and razz use it to decide who brings it in and who takes an indivisible chip. Hold'em uses it for neither.
 
@@ -201,7 +201,7 @@ A. Three of a kind carries two kickers, compared highest first — so if both pl
 
 **Q. Does the 5th card matter in poker?**
 
-A. Yes — and it is the most common way a player loses a pot they were sure they had won. The classic spots that put the whole pot on the last card: a pair's third kicker, two pair's lone kicker, the lowest card of a flush, and the side card next to quads sitting on the board. When the cards above it are tied, it stops mattering only when the board's own cards outrank the side card you hold — sometimes because the whole board plays and your hole cards drop out entirely, sometimes because one hole card plays and the other never counts: A♠ 3♠ against A♦ 2♦ on A♥ K♣ Q♦ J♠ 9♥ is a chop, both playing A-A-K-Q-J.
+A. Yes — and it is the most common way a player loses a pot they were sure they had won. The classic spots that put the whole pot on the last card: a pair's third kicker, two pair's lone kicker, the lowest card of a flush, and the side card next to quads sitting on the board. When the cards above it are tied, the fifth card decides it: higher wins, equal splits. The catch is that your side card only counts if it makes the best five — when the board's own cards outrank it, it drops out, sometimes along with your other hole card (the whole board plays), sometimes on its own while the other hole card still plays: A♠ 3♠ against A♦ 2♦ on A♥ K♣ Q♦ J♠ 9♥ is a chop, both playing A-A-K-Q-J.
 
 **Q. Can you use an ace as a 1 in poker?**
 
@@ -229,7 +229,7 @@ A. The higher straight flush wins, decided by its top card — a queen-high stra
 
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
-A. No — suits never decide a pot. Where they do show up at a Hold'em table is in card draws that settle a seat. The best-known is the button draw: in cash games, and under most card-room house rules, each player draws a card to decide where the dealer button starts, and if two draws tie on rank the suit order settles it. (WSOP tournaments skip the opening draw: ==Tournament Rule 85== starts the button at the first stack to the dealer's right and holds a draw for the button only with three, two and one tables left.) Tournament directors also seat players from a broken table by dealing each one a card, the TDA example giving the first seat to the ==highest playing card by suit==. Either way that picks a *seat*, never a hand. Among the WSOP tournament rulebook's hand rules, the only suit order belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
+A. No — suits never decide a pot. Where they can show up at a Hold'em table is in administrative card draws, such as the ones that settle a seat. The best-known is the button draw: in cash games, and under most card-room house rules, each player draws a card to decide where the dealer button starts, and if two draws tie on rank the suit order settles it. (WSOP tournaments skip the opening draw: ==Tournament Rule 85== starts the button at the first stack to the dealer's right and holds a draw for the button only with three, two and one tables left.) Tournament directors also seat players from a broken table by dealing each one a card, the TDA example giving the first seat to the ==highest playing card by suit==. Some organisers run chip races the same way: at a colour-up, the Australian NPL's rules hand the larger chips to the highest cards showing, and "ties (cards of the same rank) are broken by suit." Each of these settles a *seat* or a chip, never a hand. Among the WSOP tournament rulebook's hand rules, the only suit order belongs to stud and razz. If two best fives are the same hand, matching rank for rank, the pot is split regardless of suits.
 
 **Q. What happens if both players have the exact same hand?**
 

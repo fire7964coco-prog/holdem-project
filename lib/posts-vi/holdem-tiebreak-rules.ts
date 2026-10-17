@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Poker phá thế hòa theo thứ tự cố định: so hạng bài trước, rồi so các lá tạo nên tay bài, cuối cùng so kicker (lá phụ) từ cao xuống thấp. Cùng đôi thì kicker đầu cao hơn thắng; giống hệt 5 lá thì chia pot (split pot). Chất bài không bao giờ quyết định thắng thua.",
   category: "hand-rankings",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 phút",
   emoji: "⚖️",
@@ -145,13 +145,13 @@ Hai điều wheel *không* làm được: lá A không thể nằm giữa chuỗ
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, và đó là A♠ 8♠ đấu A♦ 7♦. Cả hai có đôi A. Kicker thứ nhất: lá K trên board — hòa. Kicker thứ hai: lá Q trên board — hòa. Kicker thứ ba: ==g:8 thắng 7.== Chính lá thứ năm quyết định người thắng pot.
 
-Cách so này cũng áp dụng khi tứ quý nằm trên board: mọi người dùng chung bốn lá, nên lá thứ năm là toàn bộ showdown. Và cách này cũng dùng cho thế hòa của mậu thầu và thùng, nơi từng lá cho đến lá cuối cùng đều được so. Một khi các lá phía trên đã hòa nhau, lá thứ năm chỉ thôi quan trọng khi board cao hơn nó — mảnh ghép cuối cùng của bài toán.
+Cách so này cũng áp dụng khi tứ quý nằm trên board: mọi người dùng chung bốn lá, nên lá thứ năm là toàn bộ showdown. Và cách này cũng dùng cho thế hòa của mậu thầu và thùng, nơi từng lá cho đến lá cuối cùng đều được so. Một khi các lá phía trên đã hòa nhau, lá thứ năm được so như mọi lá khác: lá thứ năm cao hơn thì thắng, bằng nhau thì chia pot. Điều có thể thay đổi là lá *nào* lấp vào vị trí thứ năm — một lá trên board cao hơn kicker trên tay bạn sẽ đẩy kicker đó ra khỏi 5 lá mạnh nhất, và đó là mảnh ghép cuối cùng của bài toán.
 
 ---
 
 ## Trong poker chất nào to nhất — có thứ tự chất bài không?
 
-**Không — không có chất nào to nhất khi quyết định ai thắng. Trong việc thắng pot, chất bài làm đúng một việc trong Texas Hold'em: năm lá cùng chất tạo thành thùng. Ngoài ra chúng không mang thứ hạng nào, nên hai tay bài trùng nhau từng lá luôn chia pot, và không lá nào vượt lá khác chỉ vì chất của nó.**
+**Không — không có chất nào to nhất khi quyết định ai thắng. Trong việc thắng pot, chất bài làm đúng một việc trong Texas Hold'em: năm lá cùng chất tạo thành thùng. Ngoài ra chúng không mang thứ hạng nào, nên hai tay bài cùng một loại và trùng nhau từng lá luôn chia pot, và không lá nào vượt lá khác chỉ vì chất của nó.**
 
 Câu hỏi này cứ được hỏi mãi vì thứ tự chất bài thật sự tồn tại trong poker — chỉ là không bao giờ dùng để xếp hạng tay bài trong trò chơi này. Stud và razz dùng nó để quyết định ai phải đặt cược mở đầu (bring-in) và ai nhận chip không thể chia. Hold'em không dùng nó cho việc nào trong hai việc đó.
 
@@ -202,7 +202,7 @@ A. Sám cô mang hai kicker, so lá cao nhất trước — nên nếu cả hai 
 
 **Q. Lá thứ 5 có quan trọng không?**
 
-A. Có — và đó là cách phổ biến nhất khiến một người mất pot mà họ chắc chắn đã thắng. Những tình huống kinh điển đặt cả pot lên lá cuối: kicker thứ ba của một đôi, kicker duy nhất của hai đôi, lá thấp nhất của thùng, và lá phụ bên cạnh tứ quý nằm trên board. Khi các lá phía trên nó đã hòa nhau, nó chỉ thôi quan trọng khi các lá của chính board cao hơn lá phụ bạn cầm — đôi khi vì cả board được tính và bài tẩy của bạn rơi ra hoàn toàn, đôi khi vì một lá bài tẩy được tính còn lá kia không bao giờ: A♠ 3♠ đấu A♦ 2♦ trên A♥ K♣ Q♦ J♠ 9♥ là chop, cả hai đều chơi A-A-K-Q-J.
+A. Có — và đó là cách phổ biến nhất khiến một người mất pot mà họ chắc chắn đã thắng. Những tình huống kinh điển đặt cả pot lên lá cuối: kicker thứ ba của một đôi, kicker duy nhất của hai đôi, lá thấp nhất của thùng, và lá phụ bên cạnh tứ quý nằm trên board. Khi các lá phía trên nó đã hòa nhau, lá thứ năm quyết định: cao hơn thì thắng, bằng nhau thì chia pot. Cái bẫy là lá phụ bạn cầm chỉ được tính nếu nó lọt vào 5 lá mạnh nhất — khi các lá của chính board cao hơn nó, nó bị loại, đôi khi cùng với lá bài tẩy còn lại của bạn (cả board được tính), đôi khi chỉ một mình nó trong khi lá bài tẩy kia vẫn được tính: A♠ 3♠ đấu A♦ 2♦ trên A♥ K♣ Q♦ J♠ 9♥ là chop, cả hai đều chơi A-A-K-Q-J.
 
 **Q. Lá A có tính là 1 trong sảnh không, và sảnh đó lớn cỡ nào?**
 
@@ -230,7 +230,7 @@ A. Thùng phá sảnh (straight flush) cao hơn thắng, quyết định bằng 
 
 **Q. Chất bài có bao giờ phân thắng thua trong Texas Hold'em không?**
 
-A. Không — chất bài không bao giờ quyết định pot. Nơi chúng xuất hiện ở bàn Hold'em là các lần rút bài để định ghế ngồi. Nổi tiếng nhất là rút bài chọn nút dealer: trong cash game, và theo phần lớn luật riêng của các phòng poker, mỗi người rút một lá để quyết định nút dealer bắt đầu ở đâu, và nếu hai lá rút trùng giá trị thì thứ tự chất bài phân định. (Giải WSOP bỏ qua lần rút mở đầu: ==điều 85 Luật giải== đặt nút dealer ở stack đầu tiên bên phải dealer và chỉ rút bài chọn nút dealer khi còn ba, hai và một bàn.) Giám đốc giải cũng xếp chỗ cho người chơi từ bàn bị giải tán bằng cách chia mỗi người một lá, ví dụ của TDA trao ghế đầu tiên cho ==lá bài cao nhất tính theo chất==. Dù cách nào, đó là chọn *ghế*, không bao giờ là chọn tay bài. Trong các luật về tay bài của bộ luật giải WSOP, thứ tự chất duy nhất thuộc về stud và razz. Nếu hai bộ 5 lá mạnh nhất trùng nhau từng giá trị, pot được chia bất kể chất bài.
+A. Không — chất bài không bao giờ quyết định pot. Chúng có thể xuất hiện ở bàn Hold'em trong các lần rút bài mang tính thủ tục, chẳng hạn những lần rút để định ghế ngồi. Nổi tiếng nhất là rút bài chọn nút dealer: trong cash game, và theo phần lớn luật riêng của các phòng poker, mỗi người rút một lá để quyết định nút dealer bắt đầu ở đâu, và nếu hai lá rút trùng giá trị thì thứ tự chất bài phân định. (Giải WSOP bỏ qua lần rút mở đầu: ==điều 85 Luật giải== đặt nút dealer ở stack đầu tiên bên phải dealer và chỉ rút bài chọn nút dealer khi còn ba, hai và một bàn.) Giám đốc giải cũng xếp chỗ cho người chơi từ bàn bị giải tán bằng cách chia mỗi người một lá, ví dụ của TDA trao ghế đầu tiên cho ==lá bài cao nhất tính theo chất==. Một số nhà tổ chức cũng chạy chip race theo cách tương tự: khi color-up (đổi chip mệnh giá nhỏ lên mệnh giá lớn hơn), luật của NPL Úc trao các chip lớn hơn cho những lá ngửa cao nhất, và trường hợp hòa (các lá cùng giá trị) được phân định theo chất. Tất cả những việc này chỉ định *ghế* hoặc một con chip, không bao giờ là tay bài. Trong các luật về tay bài của bộ luật giải WSOP, thứ tự chất duy nhất thuộc về stud và razz. Nếu hai bộ 5 lá mạnh nhất là cùng một loại tay bài và trùng nhau từng giá trị, pot được chia bất kể chất bài.
 
 **Q. Hai tay bài giống hệt nhau đến lá cuối thì sao?**
 

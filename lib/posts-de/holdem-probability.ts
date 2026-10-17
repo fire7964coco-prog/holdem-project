@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -188,7 +188,7 @@ Als ausgeteilte Fünf-Karten-Hand steht der Royal Flush ==1 zu 649.740==. Spiels
 
 ![Infografik eines Royal Flush in Herz – A♥ K♥ auf der Hand komplettieren A-K-Q-J-10 in Herz auf einem 10♥ J♥ Q♥ Board](/images/holdem-probability-royal-flush.webp "Ein Royal Flush in Herz: die seltenste Hand im Poker, etwa 1 zu 30.940 bis zum River")
 
-Warum so selten? Ein Royal Flush ist genau **ein bestimmter Kartenlauf in einer bestimmten Farbe** – vier Wege, ihn im gesamten Deck zu bilden, gegen 1.302.540 Wege, eine schlichte High Card zu bilden. Seltenheit ist der ganze Grund, warum er ganz oben in der Rangfolge steht.
+Warum so selten? Ein Royal Flush ist genau **ein bestimmter Kartenlauf in einer bestimmten Farbe** – vier Wege, ihn im gesamten Deck zu bilden, gegen 1.302.540 Wege, eine schlichte High Card zu bilden. Ganz nach oben bringt ihn allerdings nicht die Seltenheit: Ein Royal Flush ist schlicht der Straight Flush mit dem Ass an der Spitze, und ein Straight Flush mit dem König an der Spitze ist genauso selten (je vier Wege). Der Royal Flush schlägt jeden anderen Straight Flush, weil seine Karten höher sind.
 
 :::note
 Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschieden* enden.“ Geteilt werden kann der Pot – aber nicht so, wie es meistens erklärt wird. Zwei Royal Flushes in *verschiedenen* Farben bräuchten zehn bestimmte Karten, und zwei Spielern stehen nur neun zur Verfügung – je zwei Hole Cards plus die fünf auf dem Board –, also geht es nicht. Der einzige Fall, in dem beide einen Royal Flush halten, ist ein Board, das selbst der Royal Flush ist: Alle spielen das Board, und der Pot wird geteilt. In der Praxis wirst du das praktisch nie sehen.

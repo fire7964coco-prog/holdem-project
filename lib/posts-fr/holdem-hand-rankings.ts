@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "L'ordre des combinaisons au poker, de la plus forte à la plus faible : quinte flush royale, quinte flush, carré, full, couleur, quinte (suite), brelan, double paire, paire et carte haute. Les enseignes ne départagent jamais ; à combinaison égale, ce sont les cartes de la combinaison, puis les éventuels kickers, qui départagent.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -71,7 +71,7 @@ L'as est la carte la plus forte, et la seule qui contourne les règles : il joue
 
 ### Les enseignes ne se classent pas
 
-Au Texas Hold'em standard, **aucune enseigne n'est plus forte qu'une autre**. Le pique ne bat pas le cœur. Les enseignes ne servent qu'à *former* une couleur, jamais à départager une égalité. Si deux joueurs ont les mêmes cinq cartes dans des enseignes différentes, le pot est partagé — à chaque fois.
+Au Texas Hold'em standard, **aucune enseigne n'est plus forte qu'une autre**. Le pique ne bat pas le cœur. Les enseignes ne servent qu'à *former* une couleur, jamais à départager une égalité. Si deux joueurs forment la même combinaison avec les mêmes cinq rangs et ne diffèrent que par les enseignes, le pot est partagé — à chaque fois. (Les enseignes peuvent quand même décider *s'il y a* couleur ou non : sur A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ fait une couleur à l'as, alors que Q♥ J♥ joue les mêmes cinq rangs en simple hauteur as.)
 
 ---
 
@@ -381,7 +381,7 @@ A. Le kicker est une carte qui ne fait pas partie de ta combinaison mais qui dé
 
 **Q. Deux joueurs peuvent-ils avoir la même main ?**
 
-A. Oui. Si les cinq meilleures cartes des deux joueurs sont identiques en rang, le pot est partagé (« chop »). Au Texas Hold'em, les enseignes ne départagent jamais.
+A. Oui. Si les cinq meilleures cartes des deux joueurs forment la même combinaison et correspondent rang pour rang, le pot est partagé (« chop »). Au Texas Hold'em, les enseignes ne départagent jamais.
 
 **Q. Est-on obligé d'utiliser ses deux cartes fermées ?**
 

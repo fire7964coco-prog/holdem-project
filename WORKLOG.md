@@ -1,3 +1,12 @@
+## 2026-10-17 (11) — EN 손질 회차 1 · CN-1·CN-2·CP-ⓐ·CQ-ⓐ · EN 8 + 15로케일 113자리 · MB-379
+
+- 범위 = 핸드오프 «EN 손질 1»(🔴 4묶음). 우편함: 들어온 MA 0 · 솔버 S-104 상태 🔴 → ✅(솔버 `ca9b527` · 이미 MB-376으로 이행됨).
+- EN 4편: probability L193 로열 = A-high SF(K-high SF도 4가지 · 희귀도 아님) · low-board-check-raise L363 «permitted unless otherwise posted» → 게시 예외 한정 · hand-rankings L69 «같은 족보 + 같은 숫자 5개» + 반례 괄호(A♠K♠9♠3♦2♣ · Q♠J♠ A하이 플러시 vs Q♥J♥ 하이카드 · 7장 검산) · L360 FAQ · tiebreak L147·204(다섯째 = 비교, 홀 키커 탈락은 별개) · L153 · L232(행정적 뽑기 예시화 + NPL 칩 레이스 축어 «ties (cards of the same rank) are broken by suit» — `npl.com.au/League/Rules` §17 직접 fetch 확인 · TDA 2024 Rule 24엔 무늬 규정 없음).
+- 전파 = 서브 4갈래(de·fr·es·pt 34 · id·ms·vi·tr·pl 36 · ja·zh·zh-hant 28 · ar·hi·th 15) · 언어북 ① 통독 · 로케일 고유 사본도 고침(ar HR 299·303·543 · de HR 271·409 · zh tiebreak 152·165 · zh-hant tiebreak 171 · HR 342) · 이미 맞음 = ms low-board · tr HR L100·209(괄호 예시 미추가).
+- 스탬프: updated 50파일 10-17 · masterUpdated 39(옛 EN 값과 같던 파일만 · low-board는 전 로케일 10-02라 그대로 · tr tiebreak 10-05 그대로).
+- 게이트: audit:hard EN 56편 + 15로케일 🔴 0 · 🟠 = 기존 C2 형제 표 6(손댄 글 무관) · 백틱 0 · U+FFFD 0.
+- 🪶 남김: chip race·color-up 로케일 용어 선례 없음(대부분 영어 그대로+풀이) = 검수장 원어민 판정 · EN도 안 바꾼 비슷한 문면(이미지 캡션 «rank for rank» 등) 그대로.
+
 ## 2026-10-17 (10) — MA-609·MA-612 회신+이행 · th·pl 37자리 · 배포 · MB-378
 
 - 범위 = 우편함 새 MA 2(MB-372·373 판정 결과). 언어북 th·pl ① 통독 · 보고 2편 원문 대조.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -66,7 +66,7 @@ The Ace is the strongest card and also the only one that bends the rules: it pla
 
 ### Suits don't rank
 
-In standard Texas Hold'em, **no suit is stronger than another**. Spades do not beat hearts. Suits only matter for *making* a flush, never for breaking a tie. If two players have the same five cards in different suits, the pot is split — every time.
+In standard Texas Hold'em, **no suit is stronger than another**. Spades do not beat hearts. Suits only matter for *making* a flush, never for breaking a tie. If two players make the same hand with the same five ranks, differing only in suits, the pot is split — every time. (Suits can still decide *whether* a flush exists: on A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ makes an ace-high flush, while Q♥ J♥ plays the same five ranks as plain ace-high.)
 
 ---
 
@@ -357,7 +357,7 @@ A. A kicker is a card that isn't part of your made hand but breaks ties. With tw
 
 **Q. Can two players have the same hand?**
 
-A. Yes. If both players' best five cards are identical in rank, the pot is split ("chopped"). Suits never break the tie in Texas Hold'em.
+A. Yes. If both players' best five cards make the same hand and match rank for rank, the pot is split ("chopped"). Suits never break the tie in Texas Hold'em.
 
 **Q. Do you have to use both of your hole cards?**
 

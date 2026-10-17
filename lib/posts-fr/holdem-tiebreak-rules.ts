@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Au poker, une égalité se départage toujours dans le même ordre : d'abord le rang de la combinaison, puis les cartes qui la forment, puis les kickers du plus haut au plus bas. Même paire : le kicker le plus haut gagne ; cinq cartes identiques : le pot est partagé. L'enseigne des cartes ne départage jamais.",
   category: "hand-rankings",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -153,13 +153,13 @@ Deux choses que la roue ne fait *pas* : l'as ne peut pas faire le tour par le mi
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, et c'est A♠ 8♠ contre A♦ 7♦. Les deux ont une paire d'as. Premier kicker : le K du board — égalité. Deuxième kicker : la Q du board — égalité. Troisième kicker : ==g:le 8 bat le 7.== La cinquième carte de la main, au sens littéral, a décidé à elle seule du pot.
 
-La même logique s'applique aux pots avec un carré sur le board : tout le monde partage quatre cartes, donc c'est la cinquième carte qui tranche à l'abattage. Et elle s'applique aux égalités à la carte haute et à la couleur, où chaque carte jusqu'à la dernière est comparée. Une fois les cartes au-dessus d'elle à égalité, la cinquième carte ne cesse de compter que lorsque le board la domine — et c'est la dernière pièce du puzzle.
+La même logique s'applique aux pots avec un carré sur le board : tout le monde partage quatre cartes, donc c'est la cinquième carte qui tranche à l'abattage. Et elle s'applique aux égalités à la carte haute et à la couleur, où chaque carte jusqu'à la dernière est comparée. Une fois les cartes au-dessus d'elle à égalité, la cinquième carte se compare comme n'importe quelle autre : la plus haute gagne, une carte égale fait partager. Ce qui peut changer, c'est *quelle* carte occupe cette cinquième place — une carte du board plus haute que ton kicker en main le pousse hors de tes cinq meilleures cartes, et c'est la dernière pièce du puzzle.
 
 ---
 
 ## La couleur des cartes (pique, cœur) départage-t-elle ?
 
-**Non — pas pour désigner le gagnant. Pour gagner le pot, l'enseigne (pique, cœur, carreau, trèfle) n'a qu'un seul rôle au Texas Hold'em : cinq cartes de la même enseigne font une couleur. Au-delà, elle n'a aucun rang : deux mains identiques rang pour rang partagent toujours le pot, et aucune carte n'en bat une autre à cause de son enseigne.**
+**Non — pas pour désigner le gagnant. Pour gagner le pot, l'enseigne (pique, cœur, carreau, trèfle) n'a qu'un seul rôle au Texas Hold'em : cinq cartes de la même enseigne font une couleur. Au-delà, elle n'a aucun rang : deux mains qui forment la même combinaison, identiques rang pour rang, partagent toujours le pot, et aucune carte n'en bat une autre à cause de son enseigne.**
 
 La question revient sans cesse parce qu'un ordre des enseignes existe bel et bien au poker — simplement jamais pour classer les mains dans ce jeu. Le stud et le razz s'en servent pour désigner qui ouvre l'action (bring-in) et qui reçoit un jeton indivisible. Le Hold'em ne s'en sert ni pour l'un ni pour l'autre.
 
@@ -218,7 +218,7 @@ A. Le brelan porte deux kickers, comparés le plus haut d'abord — donc si les 
 
 **Q. La 5e carte peut-elle faire la différence ?**
 
-A. Oui — et c'est la façon la plus courante de perdre un pot qu'on croyait gagné. Les cas classiques où tout le pot se joue sur la dernière carte : le troisième kicker d'une paire, le kicker unique d'une double paire, la carte la plus basse d'une couleur, et la carte d'accompagnement à côté d'un carré posé sur le board. Quand les cartes au-dessus d'elle sont à égalité, elle cesse de compter seulement quand les cartes du board dominent la carte que tu tiens — parfois parce que tout le board joue et que tes cartes fermées sortent entièrement de la main, parfois parce qu'une carte fermée joue et que l'autre ne compte jamais : A♠ 3♠ contre A♦ 2♦ sur A♥ K♣ Q♦ J♠ 9♥ est un partage, les deux jouant A-A-K-Q-J.
+A. Oui — et c'est la façon la plus courante de perdre un pot qu'on croyait gagné. Les cas classiques où tout le pot se joue sur la dernière carte : le troisième kicker d'une paire, le kicker unique d'une double paire, la carte la plus basse d'une couleur, et la carte d'accompagnement à côté d'un carré posé sur le board. Quand les cartes au-dessus d'elle sont à égalité, c'est la cinquième carte qui tranche : plus haute, elle gagne ; égale, on partage. Le piège, c'est que ta carte d'accompagnement ne compte que si elle entre dans tes cinq meilleures — quand les cartes du board la dominent, elle sort de la main, parfois avec ton autre carte fermée (tout le board joue), parfois seule pendant que l'autre carte fermée joue encore : A♠ 3♠ contre A♦ 2♦ sur A♥ K♣ Q♦ J♠ 9♥ est un partage, les deux jouant A-A-K-Q-J.
 
 **Q. L'as peut-il valoir 1 dans une suite (As-2-3-4-5) ?**
 
@@ -246,7 +246,7 @@ A. La quinte flush la plus haute gagne, départagée par sa carte la plus haute 
 
 **Q. Le pique bat-il le cœur au poker ?**
 
-A. Non — l'enseigne ne décide jamais d'un pot. Là où elle apparaît à une table de Hold'em, c'est dans les tirages de cartes qui attribuent une place. Le plus connu est le tirage du bouton : en cash game, et selon la plupart des règlements maison des salles, chaque joueur tire une carte pour décider où commence le bouton du donneur, et si deux tirages sont à égalité de rang, l'ordre des enseignes tranche. (Les tournois WSOP sautent ce tirage d'ouverture : la ==règle de tournoi 85== place le bouton au premier joueur à droite du donneur et n'organise un tirage pour le bouton qu'à trois, deux et une table restantes.) Les directeurs de tournoi placent aussi les joueurs d'une table cassée en distribuant une carte à chacun, l'exemple de la TDA donnant la première place à la ==carte la plus haute, enseigne comprise==. Dans les deux cas, on choisit un *siège*, jamais une main. Parmi les règles de mains du règlement des tournois WSOP, le seul ordre des enseignes concerne le stud et le razz. Si deux mains de cinq cartes sont identiques rang pour rang, le pot est partagé, quelles que soient les enseignes.
+A. Non — l'enseigne ne décide jamais d'un pot. Là où elle peut apparaître à une table de Hold'em, c'est dans les tirages de cartes administratifs, comme ceux qui attribuent une place. Le plus connu est le tirage du bouton : en cash game, et selon la plupart des règlements maison des salles, chaque joueur tire une carte pour décider où commence le bouton du donneur, et si deux tirages sont à égalité de rang, l'ordre des enseignes tranche. (Les tournois WSOP sautent ce tirage d'ouverture : la ==règle de tournoi 85== place le bouton au premier joueur à droite du donneur et n'organise un tirage pour le bouton qu'à trois, deux et une table restantes.) Les directeurs de tournoi placent aussi les joueurs d'une table cassée en distribuant une carte à chacun, l'exemple de la TDA donnant la première place à la ==carte la plus haute, enseigne comprise==. Certains organisateurs font la course aux jetons (chip race) de la même façon : au moment du color-up, le règlement de la NPL australienne donne les jetons de plus grande valeur aux cartes visibles les plus hautes, et « ties (cards of the same rank) are broken by suit » — à rang égal, c'est l'enseigne qui départage. Chaque fois, on attribue un *siège* ou un jeton, jamais une main. Parmi les règles de mains du règlement des tournois WSOP, le seul ordre des enseignes concerne le stud et le razz. Si deux mains de cinq cartes forment la même combinaison et sont identiques rang pour rang, le pot est partagé, quelles que soient les enseignes.
 
 **Q. Que se passe-t-il si les deux joueurs ont exactement la même main ?**
 

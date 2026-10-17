@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beraberlik sabit bir sırayla bozulur: önce el türü, sonra eli oluşturan kartlar, sonra yüksekten düşüğe kicker'lar. Aynı çiftte ilk kicker'ı yüksek olan kazanır; beş kartın beşi de aynıysa pot bölünür (split pot). Türler asla beraberlik bozmaz.",
   category: "hand-rankings",
   date: "2026-10-06",
-  updated: "2026-10-14",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "12 dk",
@@ -209,13 +209,13 @@ Masada bu runout'ta en sık gördüğüm sahne, cep çifti olan oyuncunun kartla
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, A♠ 8♠ karşısında A♦ 7♦. İkisinde de As çifti var. Birinci kicker: board'daki K — berabere. İkinci kicker: board'daki Q — berabere. Üçüncü kicker: ==g:8, 7'yi yener.== Elin kelimenin tam anlamıyla beşinci kartı, üstündeki her şeyi belirledi.
 
-Aynı mantık board'da kare olan potlarda da işler: herkes dört kartı paylaşır, yani beşinci kart showdown'ın ta kendisidir. Yüksek kart ve floş beraberliklerinde de işler; orada son karta kadar her kart karşılaştırılır. Üstündeki kartlar eşitken beşinci kart ancak board onu geçtiğinde önemini yitirir — yukarıdaki split pot örneğinde ve board'da karenin yanındaki papazı geçemeyen ellerde olduğu gibi.
+Aynı mantık board'da kare olan potlarda da işler: herkes dört kartı paylaşır, yani beşinci kart showdown'ın ta kendisidir. Yüksek kart ve floş beraberliklerinde de işler; orada son karta kadar her kart karşılaştırılır. Üstündeki kartlar eşitken beşinci kart diğer kartlar gibi karşılaştırılır: yüksek olan kazanır, eşitse pot bölünür. Değişebilecek olan, beşinci yeri *hangi* kartın doldurduğudur — elindeki kicker'dan yüksek bir board kartı onu en iyi beşin dışına iter; yukarıdaki split pot örneğinde ve board'da karenin yanındaki papazı geçemeyen ellerde olduğu gibi.
 
 ---
 
 ## Pokerde türler (renk) önemli mi?
 
-**Hayır — kimin kazandığına karar verirken önemli değil. Texas Hold'em'de türün tek bir işi vardır: aynı türden beş kart floş yapar. Bunun dışında türün değeri yoktur; değer değer eşleşen iki el her zaman potu böler ve hiçbir kart türü yüzünden bir diğerini geçmez.**
+**Hayır — kimin kazandığına karar verirken önemli değil. Texas Hold'em'de türün tek bir işi vardır: aynı türden beş kart floş yapar. Bunun dışında türün değeri yoktur; aynı eli oluşturan ve değer değer eşleşen iki el her zaman potu böler ve hiçbir kart türü yüzünden bir diğerini geçmez.**
 
 «Pokerde renk sıralaması var mı?» sorusunun tam cevabını, türlerin el sıralamasındaki yeriyle birlikte [poker el sıralaması](/tr/blog/holdem-hand-rankings) rehberinde verdim; burada yalnızca beraberliğe etkisine bakıyoruz.
 
@@ -256,7 +256,7 @@ A. Üçlünün iki kicker'ı vardır ve önce yüksek olanı karşılaştırıl�
 
 **Q. Pokerde 5. kart önemli mi?**
 
-A. Evet — ve emin olduğun bir potu kaybetmenin en yaygın yolu budur. Potun tamamını son karta bağlayan klasik durumlar: çiftin üçüncü kicker'ı, iki çiftin tek kicker'ı, floşun en düşük kartı ve board'daki karenin yanındaki yan kart. Üstündeki kartlar eşitken, ancak board'un kendi kartları elindeki yan kartı geçtiğinde önemini yitirir — bazen bütün board oynadığı ve hole kartların tamamen dışarıda kaldığı için, bazen de bir hole kart oynayıp diğeri hiç sayılmadığı için: A♥ K♣ Q♦ J♠ 9♥ board'unda A♠ 3♠ ile A♦ 2♦ berabere biter, ikisi de A-A-K-Q-J oynar.
+A. Evet — ve emin olduğun bir potu kaybetmenin en yaygın yolu budur. Potun tamamını son karta bağlayan klasik durumlar: çiftin üçüncü kicker'ı, iki çiftin tek kicker'ı, floşun en düşük kartı ve board'daki karenin yanındaki yan kart. Üstündeki kartlar eşitken beşinci kart karar verir: yüksek olan kazanır, eşitse pot bölünür. İşin püf noktası şu: elindeki yan kart ancak en iyi beşe girerse sayılır — board'un kendi kartları onu geçtiğinde dışarıda kalır; bazen diğer hole kartınla birlikte (bütün board oynar), bazen de tek başına, diğer hole kart oynamaya devam ederken: A♥ K♣ Q♦ J♠ 9♥ board'unda A♠ 3♠ ile A♦ 2♦ berabere biter, ikisi de A-A-K-Q-J oynar.
 
 **Q. Pokerde As 1 olarak kullanılabilir mi?**
 
@@ -284,7 +284,7 @@ A. En yüksek kartına göre yüksek olan sıralı floş kazanır — kız yüks
 
 **Q. Texas Hold'em'de türler hiç beraberlik bozar mı?**
 
-A. Hayır — türler asla potu belirlemez. Hold'em masasında türün ortaya çıktığı yer, bir koltuğu belirleyen kart çekilişleridir. En bilineni buton çekilişi: cash oyunlarında ve çoğu kart salonunun ev kurallarında dealer butonunun nereden başlayacağını belirlemek için herkes bir kart çeker; iki kart değer olarak eşitse tür sıralaması karar verir. (WSOP turnuvaları açılış çekilişini atlar: ==Turnuva Kuralı 85== butonu krupiyenin sağındaki ilk stack'ten başlatır ve buton çekilişini yalnızca üç, iki ve bir masa kaldığında yapar.) Turnuva direktörleri dağılan bir masanın oyuncularını da her birine bir kart vererek yerleştirir; TDA örneğinde ilk koltuk ==türe göre en yüksek kartı== alana verilir. Her iki durumda da seçilen bir *koltuktur*, asla bir el değil. WSOP turnuva kural kitabının el kuralları arasında tek tür sıralaması stud ve razz'a aittir. İki en iyi beş değer değer eşleşiyorsa türler ne olursa olsun pot bölünür.
+A. Hayır — türler asla potu belirlemez. Hold'em masasında tür, idari kart çekilişlerinde ortaya çıkabilir; örneğin bir koltuğu belirleyen çekilişlerde. En bilineni buton çekilişi: cash oyunlarında ve çoğu kart salonunun ev kurallarında dealer butonunun nereden başlayacağını belirlemek için herkes bir kart çeker; iki kart değer olarak eşitse tür sıralaması karar verir. (WSOP turnuvaları açılış çekilişini atlar: ==Turnuva Kuralı 85== butonu krupiyenin sağındaki ilk stack'ten başlatır ve buton çekilişini yalnızca üç, iki ve bir masa kaldığında yapar.) Turnuva direktörleri dağılan bir masanın oyuncularını da her birine bir kart vererek yerleştirir; TDA örneğinde ilk koltuk ==türe göre en yüksek kartı== alana verilir. Bazı organizatörler chip race'i de aynı şekilde yapar: color-up sırasında (küçük çiplerin daha büyük değerlere çevrilmesi) Avustralya NPL kuralları büyük çipleri açık duran en yüksek kartlara verir ve beraberlikler (aynı değerdeki kartlar) türe göre bozulur. Bunların hepsi bir *koltuğu* ya da bir çipi belirler, asla bir eli değil. WSOP turnuva kural kitabının el kuralları arasında tek tür sıralaması stud ve razz'a aittir. İki en iyi beş aynı eli oluşturuyor ve değer değer eşleşiyorsa türler ne olursa olsun pot bölünür.
 
 **Q. Pokerde beraberlik olursa ne olur?**
 

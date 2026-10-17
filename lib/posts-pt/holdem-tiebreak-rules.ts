@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -143,13 +143,13 @@ Duas coisas que a wheel *não* faz: o ás não dá a volta pelo meio (Q-K-A-2-3 
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, e é A♠ 8♠ contra A♦ 7♦. Ambos têm par de ases. Primeiro kicker: o K da mesa — empate. Segundo kicker: a Q da mesa — empate. Terceiro kicker: ==g:8 ganha de 7.== A literal quinta carta da mão acabou de decidir tudo acima dela.
 
-A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro cartas, então a quinta é o showdown inteiro. E vale em empates de carta alta e flush, onde toda carta até a última é comparada. Com as cartas acima dela empatadas, a quinta carta só deixa de importar quando a mesa a supera — que é a última peça do quebra-cabeça.
+A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro cartas, então a quinta é o showdown inteiro. E vale em empates de carta alta e flush, onde toda carta até a última é comparada. Com as cartas acima dela empatadas, a quinta carta é comparada como qualquer outra: a quinta mais alta ganha e uma igual divide. O que pode mudar é *qual* carta ocupa esse quinto lugar — uma carta da mesa mais alta que o seu kicker da mão o empurra para fora das suas melhores cinco, e essa é a última peça do quebra-cabeça.
 
 ---
 
 ## Os naipes decidem quem ganha no poker?
 
-**Não — não para decidir quem ganha. Na hora de ganhar o pote, no Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
+**Não — não para decidir quem ganha. Na hora de ganhar o pote, no Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que formam o mesmo jogo e coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
 
 A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só que, neste jogo, nunca para ranquear mãos. O stud e o razz a usam para decidir quem paga o bring-in e quem fica com a ficha indivisível. O Hold'em não a usa para nenhuma das duas coisas.
 
@@ -200,7 +200,7 @@ A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — 
 
 **Q. A 5ª carta importa no poker?**
 
-A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Com as cartas acima dela empatadas, ela só deixa de importar quando as cartas da mesa superam a carta lateral que você tem — às vezes porque a mesa inteira joga e suas cartas fechadas saem de cena, às vezes porque só uma carta fechada joga e a outra nunca conta: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
+A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Com as cartas acima dela empatadas, a quinta carta decide: mais alta ganha, igual divide. O detalhe é que a sua carta lateral só conta se entrar nas suas melhores cinco — quando as cartas da mesa a superam, ela sai, às vezes junto com a sua outra carta fechada (a mesa inteira joga), às vezes sozinha, enquanto a outra carta fechada continua jogando: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
 
 **Q. Dá para usar o ás como 1 no poker?**
 
@@ -228,7 +228,7 @@ A. Ganha o straight flush mais alto, decidido pela carta de topo — um straight
 
 **Q. Os naipes desempatam alguma vez no Texas Hold'em?**
 
-A. Não — os naipes nunca decidem um pote. Onde eles aparecem numa mesa de Hold'em é nos sorteios de carta que definem um assento. O mais conhecido é o sorteio do botão: nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio inicial: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só faz um sorteio do botão quando restam três, duas e uma mesa.) Os diretores de torneio também redistribuem os jogadores de uma mesa desfeita dando uma carta a cada um, e o exemplo da TDA dá o primeiro assento à ==carta mais alta, contando o naipe==. De um jeito ou de outro, isso escolhe um assento, nunca uma mão. Entre as regras de mão do regulamento de torneios da WSOP, a única ordem de naipes pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
+A. Não — os naipes nunca decidem um pote. Onde eles podem aparecer numa mesa de Hold'em é nos sorteios de carta administrativos, como os que definem um assento. O mais conhecido é o sorteio do botão: nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio inicial: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só faz um sorteio do botão quando restam três, duas e uma mesa.) Os diretores de torneio também redistribuem os jogadores de uma mesa desfeita dando uma carta a cada um, e o exemplo da TDA dá o primeiro assento à ==carta mais alta, contando o naipe==. Alguns organizadores fazem o chip race do mesmo jeito: no color up, as regras da NPL australiana dão as fichas maiores às cartas mais altas à vista, e "ties (cards of the same rank) are broken by suit" — com o mesmo valor, decide o naipe. Em todos esses casos, o que se define é um assento ou uma ficha, nunca uma mão. Entre as regras de mão do regulamento de torneios da WSOP, a única ordem de naipes pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas formam o mesmo jogo e coincidem valor a valor, o pote é dividido, não importam os naipes.
 
 **Q. O que acontece se os dois jogadores têm exatamente a mesma mão?**
 

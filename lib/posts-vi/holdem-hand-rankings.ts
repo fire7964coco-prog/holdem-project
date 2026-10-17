@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Thứ tự bài poker từ mạnh nhất đến yếu nhất: thùng phá sảnh hoàng gia (royal flush), thùng phá sảnh (straight flush), tứ quý (four of a kind), cù lũ (full house), thùng (flush), sảnh (straight), sám cô (three of a kind), hai đôi, một đôi và mậu thầu (high card). Cùng hạng thì so tổ hợp chính trước rồi đến kicker (lá phụ); chất bài không xếp hạng.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
@@ -67,7 +67,7 @@ Lá A là lá mạnh nhất và cũng là lá duy nhất phá lệ: nó chơi ca
 
 ### Chất bài không xếp hạng
 
-Trong Texas Hold'em chuẩn, **không có chất nào mạnh hơn chất nào**. Bích không thắng cơ. Chất chỉ quan trọng để *tạo thành* thùng, không bao giờ dùng để phân định khi hòa. Nếu hai người có cùng năm lá nhưng khác chất, pot được chia — lần nào cũng vậy.
+Trong Texas Hold'em chuẩn, **không có chất nào mạnh hơn chất nào**. Bích không thắng cơ. Chất chỉ quan trọng để *tạo thành* thùng, không bao giờ dùng để phân định khi hòa. Nếu hai người có cùng một loại tay bài với cùng năm giá trị, chỉ khác chất, pot được chia — lần nào cũng vậy. (Dù vậy, chất vẫn quyết định *có* thùng hay không: trên board A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ tạo thùng A cao nhất, còn Q♥ J♥ chơi đúng năm giá trị đó nhưng chỉ là mậu thầu A.)
 
 ---
 
@@ -390,7 +390,7 @@ A. Kicker là lá nằm trong 5 lá mạnh nhất nhưng không thuộc tổ h�
 
 **Q. Hai người có thể có tay bài giống hệt nhau không?**
 
-A. Có. Nếu 5 lá mạnh nhất của cả hai trùng giá trị, pot được chia (chop). Chất bài không bao giờ phân định khi hòa trong Texas Hold'em.
+A. Có. Nếu 5 lá mạnh nhất của cả hai tạo cùng một loại tay bài và trùng giá trị từng lá, pot được chia (chop). Chất bài không bao giờ phân định khi hòa trong Texas Hold'em.
 
 **Q. Có bắt buộc dùng cả hai lá bài tẩy không?**
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-10-17",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -155,13 +155,13 @@ Dwóch rzeczy wheel *nie* robi: as nie może „zawinąć” przez środek (Q-K-
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, a gra A♠ 8♠ przeciwko A♦ 7♦. Obaj mają parę asów. Pierwszy kicker: K z boardu — remis. Drugi kicker: Q z boardu — remis. Trzeci kicker: ==g:8 bije 7.== To dosłownie piąta karta układu przesądziła o całej puli.
 
-Ta sama logika działa przy karecie na boardzie: wszyscy dzielą cztery karty, więc piąta to cały showdown. Działa też przy remisach na najwyższej karcie i na kolorze, gdzie porównuje się każdą kartę aż do ostatniej. Gdy karty powyżej są równe, piąta karta przestaje mieć znaczenie tylko wtedy, gdy board ją przewyższa — i to jest ostatni element układanki.
+Ta sama logika działa przy karecie na boardzie: wszyscy dzielą cztery karty, więc piąta to cały showdown. Działa też przy remisach na najwyższej karcie i na kolorze, gdzie porównuje się każdą kartę aż do ostatniej. Gdy karty powyżej są równe, piątą kartę porównuje się jak każdą inną: wyższa piąta karta wygrywa, równa oznacza podział puli. Zmienić może się tylko to, *która* karta zajmuje piąte miejsce — karta z boardu wyższa od twojego kickera z ręki wypycha go z najlepszej piątki i to jest ostatni element układanki.
 
 ---
 
 ## Czy kolory kart mają znaczenie w pokerze?
 
-**Nie — nie przy wyłanianiu zwycięzcy. Jeśli chodzi o wygranie puli, kolory kart mają w Texas Hold'em dokładnie jedno zadanie: pięć kart w jednym kolorze tworzy kolor (flush). Poza tym nie mają starszeństwa, więc dwa układy zgodne wartość po wartości zawsze dzielą pulę, a żadna karta nie jest wyższa od innej z powodu swojego koloru.**
+**Nie — nie przy wyłanianiu zwycięzcy. Jeśli chodzi o wygranie puli, kolory kart mają w Texas Hold'em dokładnie jedno zadanie: pięć kart w jednym kolorze tworzy kolor (flush). Poza tym nie mają starszeństwa, więc dwa takie same układy, zgodne wartość po wartości, zawsze dzielą pulę, a żadna karta nie jest wyższa od innej z powodu swojego koloru.**
 
 To pytanie wraca, bo kolejność kolorów w pokerze naprawdę istnieje — tyle że w tej grze nigdy nie służy do porównywania układów. Stud i razz używają jej, żeby ustalić, kto wnosi bring-in i kto dostaje niepodzielny żeton. Hold'em nie używa jej do żadnej z tych rzeczy.
 
@@ -212,7 +212,7 @@ A. Trójka ma dwa kickery, porównywane od najwyższego — więc jeśli obaj gr
 
 **Q. Czy 5. karta ma znaczenie w pokerze?**
 
-A. Tak — i to najczęstszy sposób, w jaki gracz przegrywa pulę, którą uważał za wygraną. Klasyczne sytuacje, w których cała pula zależy od ostatniej karty: trzeci kicker przy parze, jedyny kicker przy dwóch parach, najniższa karta koloru i karta boczna obok karety leżącej na boardzie. Gdy karty powyżej są równe, piąta karta przestaje się liczyć tylko wtedy, gdy karty z boardu przewyższają kartę boczną, którą trzymasz — czasem dlatego, że gra cały board i twoje karty z ręki całkiem wypadają, a czasem dlatego, że gra jedna karta z ręki, a druga nigdy się nie liczy: A♠ 3♠ przeciwko A♦ 2♦ na A♥ K♣ Q♦ J♠ 9♥ to podział puli, obaj grają A-A-K-Q-J.
+A. Tak — i to najczęstszy sposób, w jaki gracz przegrywa pulę, którą uważał za wygraną. Klasyczne sytuacje, w których cała pula zależy od ostatniej karty: trzeci kicker przy parze, jedyny kicker przy dwóch parach, najniższa karta koloru i karta boczna obok karety leżącej na boardzie. Gdy karty powyżej są równe, rozstrzyga piąta karta: wyższa wygrywa, równa oznacza podział puli. Haczyk polega na tym, że twoja karta boczna liczy się tylko wtedy, gdy wchodzi do najlepszej piątki — gdy karty z boardu ją przewyższają, wypada, czasem razem z drugą twoją kartą z ręki (gra cały board), a czasem sama, podczas gdy druga karta z ręki nadal gra: A♠ 3♠ przeciwko A♦ 2♦ na A♥ K♣ Q♦ J♠ 9♥ to podział puli, obaj grają A-A-K-Q-J.
 
 **Q. Czy as może być jedynką w pokerze?**
 
@@ -240,7 +240,7 @@ A. Wygrywa wyższy poker, rozstrzygany najwyższą kartą — poker do damy bije
 
 **Q. Czy kolory kart kiedykolwiek rozstrzygają remis w Texas Hold'em?**
 
-A. Nie — kolory kart nigdy nie decydują o puli. Przy stole Hold'em pojawiają się za to przy losowaniu kart, które rozstrzyga o miejscu. Najbardziej znane jest losowanie buttona: w grach cash, i według zasad domowych większości kasyn, każdy gracz ciągnie kartę, żeby ustalić, gdzie startuje button, a jeśli dwie wylosowane karty mają tę samą wartość, rozstrzyga kolejność kolorów. (Turnieje WSOP pomijają losowanie na starcie: ==Reguła turniejowa 85== ustawia button przy pierwszym stacku na prawo od rozdającego, a losowanie buttona przeprowadza się tylko przy trzech, dwóch i jednym pozostałym stole.) Dyrektorzy turniejów przesadzają też graczy z rozbitego stołu, rozdając każdemu kartę — w przykładzie TDA pierwsze miejsce dostaje ==„highest playing card by suit”== (najwyższa karta według koloru). Tak czy inaczej, wybiera to *miejsce*, a nigdy układ. Wśród zasad rozdań w turniejowym regulaminie WSOP jedyna kolejność kolorów należy do studa i razza. Jeśli dwie najlepsze piątki zgadzają się wartość po wartości, pula jest dzielona bez względu na kolory.
+A. Nie — kolory kart nigdy nie decydują o puli. Przy stole Hold'em mogą się za to pojawić przy administracyjnym losowaniu kart, na przykład takim, które rozstrzyga o miejscu. Najbardziej znane jest losowanie buttona: w grach cash, i według zasad domowych większości kasyn, każdy gracz ciągnie kartę, żeby ustalić, gdzie startuje button, a jeśli dwie wylosowane karty mają tę samą wartość, rozstrzyga kolejność kolorów. (Turnieje WSOP pomijają losowanie na starcie: ==Reguła turniejowa 85== ustawia button przy pierwszym stacku na prawo od rozdającego, a losowanie buttona przeprowadza się tylko przy trzech, dwóch i jednym pozostałym stole.) Dyrektorzy turniejów przesadzają też graczy z rozbitego stołu, rozdając każdemu kartę — w przykładzie TDA pierwsze miejsce dostaje ==„highest playing card by suit”== (najwyższa karta według koloru). Niektórzy organizatorzy tak samo prowadzą chip race: przy color-upie (wymianie małych żetonów na wyższe nominały) zasady australijskiej NPL przyznają większe żetony najwyższym odkrytym kartom, a ==„ties (cards of the same rank) are broken by suit”== (remisy, czyli karty tej samej wartości, rozstrzyga kolor). Każde z tych losowań przydziela *miejsce* albo żeton, a nigdy układ. Wśród zasad rozdań w turniejowym regulaminie WSOP jedyna kolejność kolorów należy do studa i razza. Jeśli dwie najlepsze piątki to ten sam układ, zgodny wartość po wartości, pula jest dzielona bez względu na kolory.
 
 **Q. Co się dzieje, gdy obaj gracze mają dokładnie ten sam układ?**
 

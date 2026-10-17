@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "6♠5♥2♦ पर BB 96.8% check और 3.2% lead करता है, जबकि equity 48.3% है। Straight सिर्फ 43 से बनेगा और वह किसी range में नहीं है; दोनों के पास बराबर Sets हैं। इसलिए BB को सबसे ऊँचे हैंडों में अलग बढ़त नहीं मिलती। 2026-08-20 के अलग solve में, BTN की 1.8 bb bet के बाद BB 14.9% check-raise करता है। इस प्रतिक्रिया को पहले से गणना किए root परिणाम से अलग पढ़ें।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-02",
   readTime: "11 मिनट",
   emoji: "🌊",
@@ -254,7 +254,7 @@ A. उद्धृत अलग solve में नौ Set कॉम्बो (6
 
 **Q. क्या check-raise खेल के नियमों में ठीक है? क्या यह बुरा व्यवहार है?**
 
-A. लगभग हर casino और सामान्य online games में check के बाद सामने bet आए तो उसी round में raise करना मान्य action है; केवल किसी निजी home game का अपना house rule अलग हो सकता है। नियम का क्रम [betting actions](/hi/blog/holdem-betting-actions) में समझाया गया है। पुराने कुछ home games में इसे house rule से रोका जाता था, इसलिए शिष्टाचार को लेकर शंका बची है। आधुनिक रणनीति में यह सामान्य action है। इस स्पॉट के ऐतिहासिक solve से check-raise हटाएँ तो 14.9% वाली रणनीति को दोबारा समायोजित करना पड़ेगा।
+A. मानक casino और online games में check के बाद सामने bet आए तो उसी round में raise करना मान्य action है — card-room के नियम आम तौर पर check-raise की अनुमति देते हैं, जब तक उस game के लिए अलग नियम घोषित न हो। इसलिए अपवाद सिर्फ़ तब है जब room या host ने check-raise पर रोक का नियम साफ़ घोषित किया हो। नियम का क्रम [betting actions](/hi/blog/holdem-betting-actions) में समझाया गया है। पुराने कुछ home games में इसे house rule से रोका जाता था, इसलिए शिष्टाचार को लेकर शंका बची है। आधुनिक रणनीति में यह सामान्य action है। इस स्पॉट के ऐतिहासिक solve से check-raise हटाएँ तो 14.9% वाली रणनीति को दोबारा समायोजित करना पड़ेगा।
 
 **Q. क्या यही frequencies मेरे stakes पर भी लागू होंगी?**
 

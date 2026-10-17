@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -80,7 +80,7 @@ Das Ass ist die stärkste Karte und die einzige, die die Regeln beugt: Es spielt
 
 ### Farben-Reihenfolge beim Poker: Es gibt keine
 
-Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Anders als beim Skat oder beim Bridge gibt es keine Farb-Rangfolge: Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Haben zwei Spieler dieselben fünf Karten in verschiedenen Farben, wird der Pot geteilt – jedes Mal.
+Im Standard-Texas-Hold'em **schlägt keine Farbe eine andere**. Anders als beim Skat oder beim Bridge gibt es keine Farb-Rangfolge: Pik, Herz, Karo und Kreuz sind exakt gleichwertig – Pik schlägt nicht Herz, und zwei identische Straßen in verschiedenen Farben teilen den Pot. Die Farbe zählt nur, um einen Flush zu *bilden*, nie um einen Gleichstand zu entscheiden. Bilden zwei Spieler dieselbe Hand mit denselben fünf Rängen und unterscheiden sich nur in den Farben, wird der Pot geteilt – jedes Mal. (Ob überhaupt ein Flush entsteht, kann die Farbe trotzdem entscheiden: Auf A♠ K♠ 9♠ 3♦ 2♣ macht Q♠ J♠ einen Ass-hohen Flush, während Q♥ J♥ mit denselben fünf Rängen nur Ass hoch spielt.)
 
 Die Farbe entscheidet im Hold'em nicht einmal über den letzten Chip: Bleibt beim Chop einer übrig, geht er an den ersten **am Chop beteiligten** Spieler links vom Button – nicht einfach an den nächsten Sitz. In Stud-Spielen entscheidet darüber traditionell die höhere Farbe; ==r:einzelne Cardrooms handhaben das auch im Hold'em so – im Zweifel den Floor fragen.==
 
@@ -268,7 +268,7 @@ Der Flush. Bei jedem Duell zwischen zwei *verschiedenen* Handtypen entscheidet a
 | Zwei Paare: K-K-9-9 oder Q-Q-J-J? | **K-K-9-9** | Zuerst zählt das höhere Paar, erst danach das zweite |
 | A-2-3-4-5 oder 10-J-Q-K-A? | **10-J-Q-K-A (Broadway)** | Das Wheel ist die niedrigste Straße |
 | Gleiches Paar, Kicker K oder J? | **Kicker K** | Der höhere Kicker gewinnt |
-| **Pik oder Kreuz?** | **Keins von beiden** | Im Hold'em gibt es ==r:**keine Rangfolge der Farben**== – bei identischen Rängen wird geteilt |
+| **Pik oder Kreuz?** | **Keins von beiden** | Im Hold'em gibt es ==r:**keine Rangfolge der Farben**== – bei gleicher Hand mit identischen Rängen wird geteilt |
 
 </div>
 
@@ -378,7 +378,7 @@ A. Ein Kicker ist eine Karte, die nicht Teil deiner fertigen Hand ist, aber Glei
 
 **Q. Können zwei Spieler dieselbe Hand haben?**
 
-A. Ja. Sind die besten fünf Karten beider Spieler im Wert identisch, wird der Pot geteilt („chopped“). Farben brechen im Texas Hold'em nie den Gleichstand.
+A. Ja. Bilden die besten fünf Karten beider Spieler dieselbe Hand und stimmen sie Rang für Rang überein, wird der Pot geteilt („chopped“). Farben brechen im Texas Hold'em nie den Gleichstand.
 
 **Q. Muss man beide eigenen Hole Cards nutzen?**
 
@@ -406,7 +406,7 @@ A. Nur ein Straight Flush – und der kann sehr wohl ein Royal Flush sein. In Ho
 
 **Q. Was ist höher – Pik oder Kreuz beim Poker?**
 
-A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselben fünf Ränge in unterschiedlichen Farben, wird der Pot geteilt. Für den Vergleich von Händen kennt Hold'em keine Farb-Rangfolge. Eine Reihenfolge der Farben taucht nur bei Formalien abseits des Pots auf: Wird ein **neuer Cash-Tisch** eröffnet, zieht jeder eine Karte, und die höchste nach Rang **und Farbe** bekommt den Button – im Turnier startet er dagegen beim ersten Chipstack rechts vom Dealer. Und den überzähligen Chip nach Farbe zu vergeben, ist Stud-Praxis.
+A. Weder noch. Alle vier Farben sind im Texas Hold'em gleichwertig und machen eine Hand nie stärker. Zeigen zwei Spieler dieselbe Hand mit denselben fünf Rängen, nur in unterschiedlichen Farben, wird der Pot geteilt. Für den Vergleich von Händen kennt Hold'em keine Farb-Rangfolge. Eine Reihenfolge der Farben taucht nur bei Formalien abseits des Pots auf: Wird ein **neuer Cash-Tisch** eröffnet, zieht jeder eine Karte, und die höchste nach Rang **und Farbe** bekommt den Button – im Turnier startet er dagegen beim ersten Chipstack rechts vom Dealer. Und den überzähligen Chip nach Farbe zu vergeben, ist Stud-Praxis.
 
 **Q. Was ist die niedrigste (schlechteste) Hand im Poker?**
 

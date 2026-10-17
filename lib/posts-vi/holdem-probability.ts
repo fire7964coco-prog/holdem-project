@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Đến river, bạn có một đôi 43,8% số ván, hai đôi 23,5%, thùng 3,0% và cù lũ 2,6%. Còn thùng phá sảnh hoàng gia chỉ xuất hiện khoảng 1 lần trong 30.940 ván. Các con số này tính theo 7 lá đến river, không phải bảng 5 lá bạn hay gặp.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 phút",
   emoji: "🎲",
@@ -191,7 +191,7 @@ Quyết định | Khi còn cả hai lá: 35% > 25% → một lần ==g:call== r�
 - **Thùng phá sảnh hoàng gia:** nếu tính như một bộ 5 lá chia sẵn, ==1 trong 649.740==. Chơi Hold'em đến river, con số cải thiện lên khoảng 1 trong 30.940 vì bạn được chọn 5 lá mạnh nhất trong 7 lá. Dù tính cách nào, hầu hết người chơi phải đợi *nhiều năm* giữa hai lần.
 - **Thùng phá sảnh:** khoảng 1 trong 72.193 với bộ 5 lá (khoảng 1 trong 3.590 đến river trong Hold'em). Với phần lớn người chơi vẫn là chuyện một năm gặp một lần.
 
-Vì sao hiếm đến vậy? Thùng phá sảnh hoàng gia là **đúng một dãy lá cụ thể trong đúng một chất cụ thể** — chỉ có bốn cách tạo ra nó trong cả bộ bài so với 1.302.540 cách tạo ra một mậu thầu bình thường. Độ hiếm chính là toàn bộ lý do nó ngồi trên đỉnh bảng xếp hạng.
+Vì sao hiếm đến vậy? Thùng phá sảnh hoàng gia là **đúng một dãy lá cụ thể trong đúng một chất cụ thể** — chỉ có bốn cách tạo ra nó trong cả bộ bài so với 1.302.540 cách tạo ra một mậu thầu bình thường. Nhưng không phải độ hiếm đưa nó lên vị trí cao nhất: thùng phá sảnh hoàng gia chỉ đơn giản là thùng phá sảnh có A cao nhất, và thùng phá sảnh K cao nhất cũng hiếm y như vậy (mỗi loại bốn cách). Thùng phá sảnh hoàng gia đứng trên mọi thùng phá sảnh khác vì các lá của nó cao hơn.
 
 :::note
 Một lầm tưởng phổ biến: "thùng phá sảnh hoàng gia thắng tất cả, nên nó có thể *hòa*." Pot có thể bị chia, nhưng không theo cách người ta hay giải thích. Hai royal ở hai chất *khác nhau* cần đúng mười lá cụ thể, mà hai người chơi chỉ có tối đa chín lá để dùng — mỗi người hai lá bài tẩy cộng năm lá trên board — nên điều đó không thể xảy ra. Cách duy nhất để cả hai cùng cầm royal là khi chính board là royal: mọi người đều chơi board, và pot được chia. Thực tế gần như bạn sẽ không bao giờ thấy.

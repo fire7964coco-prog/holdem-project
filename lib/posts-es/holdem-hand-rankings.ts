@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar con cinco cartas, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -67,7 +67,7 @@ El As es la carta más fuerte y también la única que rompe las reglas: juega a
 
 ### Los palos no tienen valor
 
-En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan a los corazones. El palo solo importa para *formar* un color, nunca para romper un empate. Si dos jugadores tienen las mismas cinco cartas en palos distintos, el bote se divide — siempre.
+En el Texas Hold'em estándar, **ningún palo gana a otro**. Las picas no ganan a los corazones. El palo solo importa para *formar* un color, nunca para romper un empate. Si dos jugadores forman la misma mano con los mismos cinco valores y solo se diferencian en los palos, el bote se divide — siempre. (Eso sí, el palo puede decidir *si hay* color o no: en A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ hace color al as, mientras que Q♥ J♥ juega los mismos cinco valores como simple carta alta al as.)
 
 ---
 
@@ -356,7 +356,7 @@ A. Un kicker es una carta que no forma parte de tu mano hecha pero rompe empates
 
 **Q. ¿Pueden dos jugadores tener la misma mano?**
 
-A. Sí. Si las mejores cinco cartas de ambos son idénticas en valor, el bote se divide ("chopeado"). Los palos nunca rompen el empate en Texas Hold'em.
+A. Sí. Si las mejores cinco cartas de ambos forman la misma mano y coinciden valor por valor, el bote se divide ("chopeado"). Los palos nunca rompen el empate en Texas Hold'em.
 
 **Q. ¿Hay que usar las dos cartas propias?**
 

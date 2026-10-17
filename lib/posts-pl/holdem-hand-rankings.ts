@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-10-17",
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -76,7 +76,7 @@ As to najmocniejsza karta i jedyna, która nagina zasady: gra wysoko (A-K-Q-J-10
 
 ### Kolory kart nie mają starszeństwa
 
-W standardowym Texas Hold'em **żaden kolor nie jest mocniejszy od innego**. Piki nie biją kierów. Kolor karty ma znaczenie tylko przy *układaniu* koloru (flusha), nigdy przy rozstrzyganiu remisu. Jeśli dwóch graczy ma pięć kart o tych samych wartościach w różnych kolorach, pula zostaje podzielona — zawsze.
+W standardowym Texas Hold'em **żaden kolor nie jest mocniejszy od innego**. Piki nie biją kierów. Kolor karty ma znaczenie tylko przy *układaniu* koloru (flusha), nigdy przy rozstrzyganiu remisu. Jeśli dwóch graczy ma ten sam układ z pięcioma kartami o tych samych wartościach, różniącymi się tylko kolorami, pula zostaje podzielona — zawsze. (Kolory mogą jednak zdecydować, *czy* w ogóle powstaje kolor: na boardzie A♠ K♠ 9♠ 3♦ 2♣ ręka Q♠ J♠ daje kolor do asa, a Q♥ J♥ gra te same pięć wartości jako zwykłą najwyższą kartę — asa.)
 
 ---
 
@@ -205,7 +205,7 @@ Para|Wartość pary → 3 kickery|+Kicker liczy się
 Najwyższa karta|Porównaj wszystkie 5 kart od najwyższej|+Kicker liczy się
 :::
 
-**Kicker** to po prostu karta, która nie należy do twojego gotowego układu, ale i tak służy do rozstrzygania remisów. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Zasady remisu dla każdego układu w jednym miejscu znajdziesz w [poradniku o remisach w pokerze](/pl/blog/holdem-tiebreak-rules); gdy najlepsze pięć kart jest identyczne co do wartości, pula jest [dzielona](/pl/blog/holdem-split-pot-rules).
+**Kicker** to po prostu karta, która nie należy do twojego gotowego układu, ale i tak służy do rozstrzygania remisów. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Zasady remisu dla każdego układu w jednym miejscu znajdziesz w [poradniku o remisach w pokerze](/pl/blog/holdem-tiebreak-rules); gdy najlepsze pięć kart tworzy ten sam układ i jest identyczne co do wartości, pula jest [dzielona](/pl/blog/holdem-split-pot-rules).
 
 ---
 
@@ -367,7 +367,7 @@ A. Kicker to karta, która nie należy do twojego gotowego układu, ale rozstrzy
 
 **Q. Czy dwóch graczy może mieć ten sam układ?**
 
-A. Tak. Jeśli najlepsze pięć kart obu graczy ma identyczne wartości, pula zostaje podzielona („chop”). W Texas Hold'em kolory kart nigdy nie rozstrzygają remisu — żaden kolor, ani pik, ani kier, nie jest mocniejszy od innego.
+A. Tak. Jeśli najlepsze pięć kart obu graczy tworzy ten sam układ o identycznych wartościach, pula zostaje podzielona („chop”). W Texas Hold'em kolory kart nigdy nie rozstrzygają remisu — żaden kolor, ani pik, ani kier, nie jest mocniejszy od innego.
 
 **Q. Czy muszę użyć obu kart z ręki?**
 

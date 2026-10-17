@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -143,13 +143,13 @@ Dua hal yang *tidak* bisa dilakukan wheel: As tak bisa berputar lewat tengah (Q-
 
 Meja **A♥ K♣ Q♦ 4♣ 2♥**, dan pertarungannya A♠ 8♠ melawan A♦ 7♦. Keduanya punya sepasang As. Kicker pertama: K milik meja — seri. Kicker kedua: Q milik meja — seri. Kicker ketiga: ==g:8 mengalahkan 7.== Kartu kelima tangan itu secara harfiah baru saja menentukan segala hal di atasnya.
 
-Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Begitu kartu-kartu di atasnya seri, kartu kelima baru berhenti penting saat board mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
+Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Begitu kartu-kartu di atasnya seri, kartu kelima dibandingkan seperti kartu lainnya: kartu kelima yang lebih tinggi menang, yang sama berarti pot dibagi. Yang bisa berubah adalah kartu *mana* yang mengisi slot kelima itu — kartu board yang lebih tinggi daripada kicker di tangan Anda mendorong kicker itu keluar dari lima kartu terbaik, dan itulah kepingan puzzle terakhir.
 
 ---
 
 ## Apakah jenis kartu menentukan pemenang di poker?
 
-**Tidak — bukan untuk menentukan siapa yang menang. Dalam urusan memenangkan pot, jenis kartu di Texas Hold'em punya tepat satu tugas: lima kartu sejenis membentuk flush. Di luar itu jenis kartu tak punya peringkat, jadi dua tangan yang sama persis nilainya selalu membagi pot, dan tak ada kartu yang mengalahkan kartu lain karena jenisnya.**
+**Tidak — bukan untuk menentukan siapa yang menang. Dalam urusan memenangkan pot, jenis kartu di Texas Hold'em punya tepat satu tugas: lima kartu sejenis membentuk flush. Di luar itu jenis kartu tak punya peringkat, jadi dua tangan yang sama jenis tangannya dan sama persis nilainya satu per satu selalu membagi pot, dan tak ada kartu yang mengalahkan kartu lain karena jenisnya.**
 
 Pertanyaan ini terus muncul karena urutan jenis kartu memang ada di poker — hanya saja tak pernah dipakai untuk meranking tangan di permainan ini. Stud dan razz memakainya untuk menentukan siapa yang membayar bring-in dan siapa yang menerima chip yang tak bisa dibagi. Hold'em tak memakainya untuk satu pun dari keduanya.
 
@@ -200,7 +200,7 @@ A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, diba
 
 **Q. Apakah kartu kelima penting di poker?**
 
-A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di board. Selama kartu-kartu di atasnya seri, ia baru berhenti penting saat kartu board sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
+A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di board. Selama kartu-kartu di atasnya seri, kartu kelima yang menentukan: yang lebih tinggi menang, yang sama berarti pot dibagi. Jebakannya, kartu samping Anda hanya terhitung jika ia masuk lima kartu terbaik — saat kartu board sendiri mengunggulinya, ia gugur, kadang bersama kartu tertutup Anda yang lain (seluruh board yang bermain), kadang sendirian sementara kartu tertutup yang lain tetap bermain: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
 
 **Q. Bisakah As dipakai sebagai angka 1 di poker?**
 
@@ -228,7 +228,7 @@ A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua st
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
-A. Tidak — jenis kartu tak pernah menentukan pot. Di meja Hold'em, jenis kartu baru muncul saat menarik kartu untuk menentukan kursi. Yang paling dikenal adalah tarikan button: di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan pembuka itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan baru mengadakan tarikan untuk button saat tersisa tiga, dua, dan satu meja.) Tournament director juga mendudukkan ulang pemain dari meja yang dibubarkan dengan membagikan satu kartu ke masing-masing, dan contoh TDA memberikan kursi pertama kepada ==kartu tertinggi berdasarkan jenis==. Bagaimanapun juga itu memilih kursi, bukan tangan. Di antara aturan tangan dalam buku aturan turnamen WSOP, satu-satunya urutan jenis kartu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
+A. Tidak — jenis kartu tak pernah menentukan pot. Di meja Hold'em, jenis kartu bisa muncul dalam tarikan kartu administratif, misalnya yang menentukan kursi. Yang paling dikenal adalah tarikan button: di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan pembuka itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan baru mengadakan tarikan untuk button saat tersisa tiga, dua, dan satu meja.) Tournament director juga mendudukkan ulang pemain dari meja yang dibubarkan dengan membagikan satu kartu ke masing-masing, dan contoh TDA memberikan kursi pertama kepada ==kartu tertinggi berdasarkan jenis==. Sebagian penyelenggara juga menjalankan chip race dengan cara yang sama: saat color-up (penukaran chip kecil ke pecahan lebih besar), aturan NPL Australia memberikan chip yang lebih besar kepada kartu tertinggi yang terbuka, dan seri (kartu dengan nilai yang sama) diputus berdasarkan jenis. Semua ini menentukan kursi atau sebuah chip, bukan tangan. Di antara aturan tangan dalam buku aturan turnamen WSOP, satu-satunya urutan jenis kartu milik stud dan razz. Jika dua tangan lima-kartu terbaik membentuk tangan yang sama dan cocok nilai per nilai, pot dibagi tanpa memandang jenis.
 
 **Q. Apa yang terjadi jika kedua pemain punya tangan persis sama?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "À la river, tu termines avec une paire 43,8 % du temps, une double paire 23,5 %, une couleur 3,0 % et un full 2,6 %. La quinte flush royale, elle, n'apparaît qu'environ 1 fois sur 31 000 mains.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -191,7 +191,7 @@ C'est le moment où tous ces chiffres paient — mais **associe le chiffre à la
 - **Quinte flush royale :** en main de cinq cartes distribuée, ==1 sur 649 740==. En jouant au Hold'em jusqu'à la river, elle passe à environ 1 sur 30 940 parce que tu choisis tes cinq meilleures cartes parmi sept. Dans les deux cas, la plupart des joueurs passent des *années* entre deux.
 - **Quinte flush :** environ 1 sur 72 193 en main de cinq cartes (environ 1 sur 3 590 à la river au Hold'em). Pour la plupart, une apparition par an.
 
-Pourquoi si rare ? Une quinte flush royale, c'est exactement **une séquence de cartes précise dans une couleur précise** — quatre façons de la faire dans tout le paquet, contre 1 302 540 façons de faire une simple carte haute. Cette rareté est toute la raison de sa place au sommet du classement.
+Pourquoi si rare ? Une quinte flush royale, c'est exactement **une séquence de cartes précise dans une couleur précise** — quatre façons de la faire dans tout le paquet, contre 1 302 540 façons de faire une simple carte haute. Ce n'est pourtant pas la rareté qui la place tout en haut : la quinte flush royale n'est rien d'autre que la quinte flush hauteur as, et une quinte flush hauteur roi est exactement aussi rare (quatre façons chacune). La royale bat toutes les autres quintes flush parce que ses cartes sont plus hautes.
 
 :::note
 Un mythe courant : « la quinte flush royale bat tout, donc elle peut être *à égalité* ». Le pot peut bien être partagé, mais pas comme on l'explique d'habitude. Deux quintes flush royales de couleurs *différentes* demanderaient dix cartes précises, et deux joueurs n'en ont jamais que neuf à leur disposition — deux cartes fermées chacun plus les cinq du board —, donc c'est impossible. Les deux joueurs ne peuvent tenir une quinte flush royale que si le board lui-même est la quinte flush royale : tout le monde joue le board et le pot est partagé. En pratique, tu ne le verras pour ainsi dire jamais.

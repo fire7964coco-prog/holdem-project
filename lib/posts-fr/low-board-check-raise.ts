@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Sur le flop bas rainbow 6♠5♥2♦, la grosse blinde checke 96,8 % et lead seulement 3,2 %, alors que ses 48,3 % d'équité sont la deuxième valeur la plus haute des sept spots où elle défend. Une seule main fait quinte ici, 4-3, et aucune des deux ranges ne l'a. Personne n'a le haut de range, donc personne ne lead hors de position. L'action vient plus tard : résous le même arbre au-delà du flop et la grosse blinde check-raise une mise de 1,8bb 14,9 % du temps, surtout avec des tirages.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-15",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-02",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -266,7 +266,7 @@ A. Les neuf combos de brelan servi (66, 55, 22), les deux combos de 65 assorti, 
 
 **Q. Le check-raise est-il autorisé, et est-ce impoli ?**
 
-A. Autorisé dans presque tous les casinos et dans les parties en ligne standard (seule une partie privée entre amis peut encore avoir sa propre règle maison), et la règle elle-même est traitée dans le guide des [actions de mise](/fr/blog/holdem-betting-actions). L'inquiétude sur l'étiquette est un vestige : certaines vieilles parties privées interdisaient le check-raise par règle maison, et la réputation a survécu à la règle. Peu de parties se jouent encore comme ça, et les chiffres ci-dessus en sont la raison : face à une mise de 1,8bb sur ce flop, la grosse blinde relance 14,9 % du temps, et si tu lui retires cette option, ces mains doivent payer ou se coucher à la place. La stratégie doit se rééquilibrer sans elle, et la grosse blinde abandonne la valeur et la pression que ces relances apportaient.
+A. Autorisé dans les parties de casino et en ligne standard (les règlements des salles permettent en général le check-raise sauf mention contraire affichée pour la partie : l'exception, c'est donc une interdiction du check-raise que la salle ou l'hôte a annoncée), et la règle elle-même est traitée dans le guide des [actions de mise](/fr/blog/holdem-betting-actions). L'inquiétude sur l'étiquette est un vestige : certaines vieilles parties privées interdisaient le check-raise par règle maison, et la réputation a survécu à la règle. Peu de parties se jouent encore comme ça, et les chiffres ci-dessus en sont la raison : face à une mise de 1,8bb sur ce flop, la grosse blinde relance 14,9 % du temps, et si tu lui retires cette option, ces mains doivent payer ou se coucher à la place. La stratégie doit se rééquilibrer sans elle, et la grosse blinde abandonne la valeur et la pression que ces relances apportaient.
 
 **Q. Ces chiffres tiennent-ils à ma limite ?**
 

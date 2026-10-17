@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "River'a kadar elin %43,8 ihtimalle Çift, %23,5 ihtimalle İki Çift, %3,0 ihtimalle Floş ve %2,6 ihtimalle Full olur. Royal floş ise yaklaşık 31.000 elde yalnızca bir kez gelir.",
   category: "odds",
   date: "2026-10-06",
-  updated: "2026-10-15",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "15 dk",
   emoji: "🎲",
@@ -233,7 +233,7 @@ Bütün sayıların karşılığını aldığın an bu — ama **sayıyı, paras
 - **Royal Floş:** dağıtılan beş kartlık el olarak ==649.740'ta 1==. Hold'em'i river'a kadar oynayınca yedi kartın en iyi beşini seçtiğin için yaklaşık 30.940'ta 1'e iner. Hangisi olursa olsun çoğu oyuncu ikisi arasında *yıllar* geçirir.
 - **Sıralı Floş:** beş kartlık el olarak yaklaşık 72.193'te 1 (Hold'em'de river'a kadar yaklaşık 3.590'da 1). Çoğu oyuncu için hâlâ yılda bir görülen bir şey.
 
-Neden bu kadar nadir? Royal floş, **tek bir türde tek bir belirli kart dizisidir** — bütün destede onu yapmanın dört yolu vardır, sıradan bir yüksek kart yapmanın ise 1.302.540 yolu. Sıralamanın en tepesinde durmasının tek sebebi bu nadirlik.
+Neden bu kadar nadir? Royal floş, **tek bir türde tek bir belirli kart dizisidir** — bütün destede onu yapmanın dört yolu vardır, sıradan bir yüksek kart yapmanın ise 1.302.540 yolu. Ama onu en tepeye koyan şey nadirlik değil: royal floş aslında As yüksek bir sıralı floştur ve papaz yüksek sıralı floş da tam o kadar nadirdir (ikisinin de dört yolu var). Royal floşun diğer bütün sıralı floşların üstünde olmasının sebebi kartlarının daha yüksek olması.
 
 :::note
 Yaygın bir efsane: "Royal floş her şeyi yener, yani *berabere* kalamaz." Pot bölünebilir, ama genelde anlatıldığı şekilde değil. *Farklı* türlerde iki royal için on belirli kart gerekir, iki oyuncunun ise kullanabileceği yalnızca dokuz kart vardır — her birinin iki kapalı kartı artı board'daki beş — yani bu olamaz. İki oyuncunun da royal'ı olmasının tek yolu board'un kendisinin royal olmasıdır: herkes board'u oynar ve pot bölünür. Pratikte bunu neredeyse hiç görmezsin.

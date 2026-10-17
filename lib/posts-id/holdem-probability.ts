@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -193,7 +193,7 @@ Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street ya
 - **Royal flush:** sebagai tangan lima-kartu yang dibagikan, ==1 dari 649.740==. Bermain Hold'em hingga river, peluangnya naik menjadi sekitar 1 dari 30.940 karena Anda memilih lima terbaik dari tujuh kartu. Bagaimanapun, kebanyakan pemain menunggu *bertahun-tahun* di antaranya.
 - **Straight flush:** sekitar 1 dari 72.193 sebagai tangan lima-kartu, atau sekitar 1 dari 3.590 hingga river di Hold'em. Bagi kebanyakan pemain, ini tetap penampakan sekali setahun.
 
-Kenapa begitu langka? Royal flush persis **satu rangkaian kartu spesifik dalam satu jenis spesifik** — empat cara membuatnya di seluruh deck versus 1.302.540 cara membuat high card biasa. Kelangkaan adalah seluruh alasan ia duduk di puncak peringkat.
+Kenapa begitu langka? Royal flush persis **satu rangkaian kartu spesifik dalam satu jenis spesifik** — empat cara membuatnya di seluruh deck versus 1.302.540 cara membuat high card biasa. Tapi bukan kelangkaan yang menaruhnya di posisi paling atas: royal flush hanyalah straight flush ber-As tinggi, dan straight flush ber-K tinggi sama langkanya (masing-masing empat cara). Royal mengalahkan setiap straight flush lain karena kartunya lebih tinggi.
 
 :::note
 Mitos umum: "royal flush mengalahkan segalanya, jadi ia bisa *seri*." Pot memang bisa dibagi, tapi bukan lewat cara yang biasa dijelaskan. Dua royal flush dalam jenis *berbeda* butuh sepuluh kartu tertentu, sedangkan dua pemain hanya punya sembilan — dua hole card masing-masing plus lima kartu board — jadi itu mustahil. Satu-satunya cara dua pemain sama-sama pegang royal flush adalah kalau board itu sendiri yang menjadi royal flush: semua orang memainkan board, dan pot dibagi. Dalam praktik Anda praktis tak akan pernah melihatnya.

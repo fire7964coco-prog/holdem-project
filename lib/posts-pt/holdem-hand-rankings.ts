@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
 
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -64,7 +64,7 @@ O Ás é a carta mais forte e também a única que quebra a regra: joga alto (A-
 
 ### Os naipes não têm valor
 
-No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham de copas. O naipe só importa para *formar* um flush, nunca para desempatar. Se dois jogadores têm as mesmas cinco cartas em naipes diferentes, o pote é dividido — sempre.
+No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham de copas. O naipe só importa para *formar* um flush, nunca para desempatar. Se dois jogadores formam a mesma mão com os mesmos cinco valores e só mudam os naipes, o pote é dividido — sempre. (O naipe ainda pode decidir *se existe* flush: em A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ faz um flush de ás, enquanto Q♥ J♥ joga os mesmos cinco valores como simples carta alta de ás.)
 
 ---
 
@@ -345,7 +345,7 @@ A. É uma carta que não faz parte da sua mão feita, mas desempata. Com dois pa
 
 **Q. Dois jogadores podem ter a mesma mão?**
 
-A. Sim. Se as melhores cinco cartas de ambos forem idênticas em valor, o pote é dividido. Os naipes nunca desempatam no Texas Hold'em.
+A. Sim. Se as melhores cinco cartas de ambos formarem a mesma mão e coincidirem valor por valor, o pote é dividido. Os naipes nunca desempatam no Texas Hold'em.
 
 **Q. É preciso usar as duas cartas da mão?**
 

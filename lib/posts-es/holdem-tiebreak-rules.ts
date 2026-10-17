@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -145,13 +145,13 @@ En el otro extremo de la escalera, ==**la escalera más alta del póker es Broad
 
 Mesa **A♥ K♣ Q♦ 4♣ 2♥**, y es A♠ 8♠ contra A♦ 7♦. Ambos tienen pareja de ases. Primer kicker: la K de la mesa — empate. Segundo kicker: la Q de la mesa — empate. Tercer kicker: ==g:el 8 gana al 7.== La quinta carta literal de la mano acaba de decidir todo lo de arriba.
 
-La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatro cartas, así que la quinta es todo el showdown. Y gobierna los empates de carta alta y de color, donde se compara cada carta hasta la última. Una vez empatadas las cartas por encima de ella, la quinta carta solo deja de importar cuando la mesa la supera — que es la última pieza del rompecabezas.
+La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatro cartas, así que la quinta es todo el showdown. Y gobierna los empates de carta alta y de color, donde se compara cada carta hasta la última. Una vez empatadas las cartas por encima de ella, la quinta carta se compara como cualquier otra: la quinta más alta gana y una igual divide. Lo que puede cambiar es *qué* carta ocupa ese quinto lugar — una carta de la mesa más alta que tu kicker de mano lo saca de tus mejores cinco, y esa es la última pieza del rompecabezas.
 
 ---
 
 ## ¿Importan los palos en el póker?
 
-**No — no para decidir quién gana. A la hora de ganar el bote, los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
+**No — no para decidir quién gana. A la hora de ganar el bote, los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que son la misma jugada y coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
 
 La pregunta vuelve una y otra vez porque el orden de palos sí existe en el póker — solo que en este juego nunca sirve para ordenar manos. El stud y el razz lo usan para decidir quién pone el bring-in y quién se lleva una ficha indivisible. El Hold'em no lo usa para ninguna de las dos cosas.
 
@@ -202,7 +202,7 @@ A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos
 
 **Q. ¿Importa la 5.ª carta en el póker?**
 
-A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las situaciones clásicas que ponen todo el bote en la última carta: el tercer kicker de una pareja, el kicker único de una doble pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Cuando las cartas por encima de ella están empatadas, solo deja de importar cuando las propias cartas de la mesa superan la carta lateral que llevas — a veces porque juega la mesa entera y tus cartas de mano salen del todo, a veces porque una carta de mano juega y la otra no cuenta nunca: A♠ 3♠ contra A♦ 2♦ en A♥ K♣ Q♦ J♠ 9♥ es un split, jugando ambos A-A-K-Q-J.
+A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las situaciones clásicas que ponen todo el bote en la última carta: el tercer kicker de una pareja, el kicker único de una doble pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Cuando las cartas por encima de ella están empatadas, la quinta carta decide: más alta gana, igual divide. El truco es que tu carta lateral solo cuenta si entra en tus mejores cinco — cuando las propias cartas de la mesa la superan, se queda fuera, a veces junto con tu otra carta de mano (juega la mesa entera), a veces sola mientras la otra carta de mano sigue jugando: A♠ 3♠ contra A♦ 2♦ en A♥ K♣ Q♦ J♠ 9♥ es un split, jugando ambos A-A-K-Q-J.
 
 **Q. ¿Se puede usar el as como un 1 en el póker?**
 
@@ -230,7 +230,7 @@ A. Gana la escalera de color más alta, decidida por su carta más alta — una 
 
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
-A. No — los palos nunca deciden un bote. Donde sí aparecen en una mesa de Hold'em es en los sorteos de cartas que fijan un asiento. El más conocido es el sorteo del botón: en las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo inicial: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo hace un sorteo para el botón cuando quedan tres, dos y una mesa.) Los directores de torneo también recolocan a los jugadores de una mesa que se rompe repartiendo una carta a cada uno, y el ejemplo de la TDA da el primer asiento a la ==carta más alta contando el palo==. En cualquier caso eso elige un *asiento*, nunca una mano. Entre las reglas de manos del reglamento de torneos de la WSOP, el único orden de palos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
+A. No — los palos nunca deciden un bote. Donde sí pueden aparecer en una mesa de Hold'em es en los sorteos de cartas administrativos, como los que fijan un asiento. El más conocido es el sorteo del botón: en las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo inicial: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo hace un sorteo para el botón cuando quedan tres, dos y una mesa.) Los directores de torneo también recolocan a los jugadores de una mesa que se rompe repartiendo una carta a cada uno, y el ejemplo de la TDA da el primer asiento a la ==carta más alta contando el palo==. Algunos organizadores hacen igual el chip race: en el color up, las reglas de la NPL australiana dan las fichas grandes a las cartas más altas que quedan a la vista, y "ties (cards of the same rank) are broken by suit" — a igual valor, decide el palo. En todos estos casos se decide un *asiento* o una ficha, nunca una mano. Entre las reglas de manos del reglamento de torneos de la WSOP, el único orden de palos pertenece al stud y al razz. Si dos mejores manos de cinco son la misma jugada y coinciden valor por valor, el bote se divide sin importar los palos.
 
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 

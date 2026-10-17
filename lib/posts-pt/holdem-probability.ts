@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -191,7 +191,7 @@ Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucra
 - **Royal flush:** como uma mão distribuída de cinco cartas, ==1 em 649.740==. Jogando Hold'em até o river, melhora para cerca de 1 em 30.940 porque você escolhe suas melhores cinco entre sete cartas. De qualquer forma, a maioria dos jogadores passa *anos* entre um e outro.
 - **Straight flush:** cerca de 1 em 72.193 como mão de cinco cartas, ou perto de 1 em 3.590 até o river no Hold'em. Ainda uma aparição de uma vez por ano para a maioria.
 
-Por que tão raro? Um royal flush é exatamente **uma sequência específica de cartas em um naipe específico** — quatro formas de fazê-lo no baralho inteiro contra 1.302.540 formas de fazer uma carta alta simples. A raridade é toda a razão de ele ficar no topo do ranking.
+Por que tão raro? Um royal flush é exatamente **uma sequência específica de cartas em um naipe específico** — quatro formas de fazê-lo no baralho inteiro contra 1.302.540 formas de fazer uma carta alta simples. Mas não é a raridade que o coloca lá no topo: o royal flush é simplesmente o straight flush com ás na ponta, e um straight flush com rei na ponta é exatamente tão raro quanto ele (quatro formas cada). O royal ganha de qualquer outro straight flush porque as cartas dele são mais altas.
 
 :::note
 Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". O pote pode ser dividido, sim, mas não do jeito que costumam explicar. Dois royal flushes em naipes *diferentes* exigiriam dez cartas específicas, e dois jogadores só dispõem de nove — duas cartas na mão de cada um mais as cinco da mesa —, então não acontece. A única forma de os dois terem royal flush é a própria mesa ser o royal flush: todo mundo joga a mesa, e o pote é dividido. Na prática, você praticamente nunca vai ver isso.

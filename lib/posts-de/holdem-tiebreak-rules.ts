@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -145,13 +145,13 @@ Zwei Dinge, die das Wheel *nicht* kann: Das Ass kann nicht um die Ecke spielen (
 
 Board **A♥ K♣ Q♦ 4♣ 2♥**, und es steht A♠ 8♠ gegen A♦ 7♦. Beide haben ein Ass-Paar. Erster Kicker: der K vom Board – Tie. Zweiter Kicker: die Q vom Board – Tie. Dritter Kicker: ==g:8 schlägt 7.== Die buchstäbliche fünfte Karte der Hand hat gerade alles darüber entschieden.
 
-Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier Karten, also ist die fünfte der gesamte Showdown. Und sie läuft bei High-Card- und Flush-Ties, wo jede Karte bis zur letzten verglichen wird. Sind die Karten darüber gleich, hört die fünfte Karte erst dann auf zu zählen, wenn das Board sie überragt – was das letzte Puzzleteil ist.
+Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier Karten, also ist die fünfte der gesamte Showdown. Und sie läuft bei High-Card- und Flush-Ties, wo jede Karte bis zur letzten verglichen wird. Sind die Karten darüber gleich, wird die fünfte Karte verglichen wie jede andere: Die höhere fünfte Karte gewinnt, eine gleiche teilt. Was sich ändern kann, ist, *welche* Karte diesen fünften Platz besetzt – eine Board-Karte, die deinen Kicker aus den Hole Cards überragt, schiebt ihn aus den besten Fünf, und das ist das letzte Puzzleteil.
 
 ---
 
 ## Entscheidet die Farbe beim Poker?
 
-**Nein – nicht darüber, wer gewinnt. Wenn es um den Gewinn des Pots geht, haben Farben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
+**Nein – nicht darüber, wer gewinnt. Wenn es um den Gewinn des Pots geht, haben Farben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände mit derselben Kombination, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
 
 Die Frage kommt immer wieder, weil es eine Farbreihenfolge im Poker tatsächlich gibt – nur in diesem Spiel nie zur Bewertung von Händen. Stud und Razz nutzen sie, um zu bestimmen, wer den Bring-in zahlt und wer einen unteilbaren Chip bekommt. Hold'em nutzt sie für keines von beidem.
 
@@ -222,7 +222,7 @@ A. Selten – genau dafür gibt es Kicker. Ein echter Gleichstand entsteht nur, 
 
 **Q. Wann entscheidet die fünfte Karte den ganzen Pot?**
 
-A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, der einzige Kicker bei Zwei Paaren, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sind die Karten darüber gleich, hört sie erst auf zu zählen, wenn die Karten des Boards deine Beikarte überragen – mal weil das ganze Board spielt und deine Hole Cards komplett rausfallen, mal weil nur eine Hole Card spielt und die zweite nie zählt: A♠ 3♠ gegen A♦ 2♦ auf A♥ K♣ Q♦ J♠ 9♥ ist ein Chop, beide spielen A-A-K-Q-J.
+A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, der einzige Kicker bei Zwei Paaren, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sind die Karten darüber gleich, entscheidet die fünfte Karte: Höher gewinnt, gleich teilt. Der Haken: Deine Beikarte zählt nur, wenn sie zu den besten Fünf gehört – überragen die Karten des Boards sie, fällt sie heraus, mal zusammen mit deiner zweiten Hole Card (das ganze Board spielt), mal allein, während die andere Hole Card weiter spielt: A♠ 3♠ gegen A♦ 2♦ auf A♥ K♣ Q♦ J♠ 9♥ ist ein Chop, beide spielen A-A-K-Q-J.
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 
@@ -234,7 +234,7 @@ A. Das Wheel, A-2-3-4-5, weil das Ass darin als Eins spielt. Straßen werden rei
 
 **Q. Entscheiden Farben beim Texas Hold'em jemals einen Tie?**
 
-A. Nein – Farben entscheiden nie über einen Pot. Wo sie am Hold'em-Tisch doch auftauchen, ist beim Kartenziehen, das einen Platz festlegt. Das bekannteste Beispiel ist das Ziehen um den Button: In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen das Eröffnungsziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lässt erst bei noch drei, zwei und einem verbleibenden Tisch um den Button ziehen.) Turnierleiter setzen außerdem die Spieler eines aufgelösten Tisches neu, indem sie jedem eine Karte austeilen; im TDA-Beispiel bekommt den ersten Platz die ==höchste Karte nach Farbe==. So oder so bestimmt das einen *Platz*, nie eine Hand. Unter den Handregeln des WSOP-Turnierregelwerks gehört die einzige Farbreihenfolge zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
+A. Nein – Farben entscheiden nie über einen Pot. Auftauchen können sie am Hold'em-Tisch bei organisatorischem Kartenziehen, etwa wenn ein Platz festgelegt wird. Das bekannteste Beispiel ist das Ziehen um den Button: In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen das Eröffnungsziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lässt erst bei noch drei, zwei und einem verbleibenden Tisch um den Button ziehen.) Turnierleiter setzen außerdem die Spieler eines aufgelösten Tisches neu, indem sie jedem eine Karte austeilen; im TDA-Beispiel bekommt den ersten Platz die ==höchste Karte nach Farbe==. Manche Veranstalter tragen auch Chip Races so aus: Beim Color-up geben die Regeln der australischen NPL die größeren Chips an die höchsten aufgedeckten Karten, und „ties (cards of the same rank) are broken by suit“ – bei gleichem Rang entscheidet die Farbe. Jedes Mal geht es um einen *Platz* oder einen Chip, nie um eine Hand. Unter den Handregeln des WSOP-Turnierregelwerks gehört die einzige Farbreihenfolge zu Stud und Razz. Bilden zwei beste Fünf-Karten-Hände dieselbe Kombination und stimmen sie Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 

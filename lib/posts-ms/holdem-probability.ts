@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Menjelang river, anda membentuk one pair dalam 43.8% tangan, two pair 23.5%, flush 3.0% dan full house 2.6%. Royal flush pula muncul hanya sekali dalam kira-kira 31,000 tangan — itu asas 7 kad Texas Hold'em, bukan 5 kad.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 minit",
   emoji: "🎲",
@@ -193,7 +193,7 @@ Di sinilah semua nombor itu membuahkan hasil — tetapi **padankan nombor dengan
 - **Royal flush:** sebagai tangan lima kad yang diagihkan, ==1 dalam 649,740==. Bermain Hold'em hingga river, ia bertambah baik kepada lebih kurang 1 dalam 30,940 kerana anda memilih lima kad terbaik daripada tujuh. Walau apa pun, kebanyakan pemain menunggu *bertahun-tahun* antara satu royal dengan yang lain.
 - **Straight flush:** lebih kurang 1 dalam 72,193 sebagai tangan lima kad (lebih kurang 1 dalam 3,590 menjelang river dalam Hold'em). Bagi kebanyakan pemain, masih pemandangan setahun sekali.
 
-Kenapa begitu jarang? Royal flush ialah tepat **satu susunan kad tertentu dalam satu jenis tertentu** — empat cara untuk membentuknya dalam seluruh dek berbanding 1,302,540 cara untuk membentuk high card biasa. Kejarangan itulah sebab ia berada di puncak susunan tangan.
+Kenapa begitu jarang? Royal flush ialah tepat **satu susunan kad tertentu dalam satu jenis tertentu** — empat cara untuk membentuknya dalam seluruh dek berbanding 1,302,540 cara untuk membentuk high card biasa. Namun bukan kejarangan yang meletakkannya di kedudukan paling atas: royal flush hanyalah straight flush ber-As tinggi, dan straight flush ber-K tinggi sama jarangnya (empat cara setiap satu). Royal mengalahkan setiap straight flush lain kerana kadnya lebih tinggi.
 
 :::note
 Mitos biasa: "royal flush mengalahkan semua, jadi ia boleh *seri*." Pot memang boleh dibahagi, tetapi bukan seperti yang biasa diterangkan. Dua royal dalam jenis *berbeza* memerlukan sepuluh kad tertentu, sedangkan dua pemain hanya ada sembilan untuk digunakan — dua hole card setiap seorang ditambah lima di board — jadi ia mustahil. Satu-satunya cara kedua-dua pemain memegang royal ialah apabila board itu sendiri royal: semua orang bermain board, dan pot dibahagi. Dalam praktik, anda hampir pasti tidak akan melihatnya.

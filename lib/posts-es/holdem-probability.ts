@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-01",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -191,7 +191,7 @@ Ese es el momento en que todos los números dan sus frutos — pero **usa el nú
 - **Escalera real:** como mano servida de cinco cartas, ==1 entre 649,740==. Jugando Hold'em hasta el river, mejora a alrededor de 1 entre 30,940 porque eliges tus mejores cinco de siete cartas. En cualquier caso, la mayoría de los jugadores pasan *años* entre una y otra.
 - **Escalera de color:** alrededor de 1 entre 72,193 como mano de cinco cartas (cerca de 1 entre 3,590 para el river en Hold'em). Aun así, para casi todos, un avistamiento de una vez al año.
 
-¿Por qué tan raras? Una escalera real es exactamente **una secuencia concreta de cartas en un palo concreto** — cuatro formas de hacerla en toda la baraja frente a 1,302,540 formas de hacer una simple carta alta. La rareza es toda la razón por la que se sienta en lo más alto de la jerarquía.
+¿Por qué tan raras? Una escalera real es exactamente **una secuencia concreta de cartas en un palo concreto** — cuatro formas de hacerla en toda la baraja frente a 1,302,540 formas de hacer una simple carta alta. Pero no es la rareza lo que la pone en lo más alto: una escalera real es simplemente la escalera de color al as, y una escalera de color al rey es exactamente igual de rara (cuatro formas cada una). La escalera real supera a cualquier otra escalera de color porque sus cartas son más altas.
 
 :::note
 Un mito común: "una escalera real gana a todo, así que puede *empatar*". El bote sí puede dividirse, pero no como se suele explicar. Dos escaleras reales en palos *distintos* exigirían diez cartas concretas, y dos jugadores solo disponen de nueve — dos cartas propias cada uno más las cinco de la mesa —, así que no puede pasar. La única forma de que ambos tengan escalera real es que la propia mesa sea la escalera real: todos juegan la mesa y el bote se divide. En la práctica no lo verás casi nunca.

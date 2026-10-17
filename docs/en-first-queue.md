@@ -1403,8 +1403,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 | # | 자리 (EN) | 정정 방향 | 동문 | 처리 |
 |---|---|---|---|---|
-| CN-1 🔴 | probability L193 «Rarity is the whole reason it sits at the top» | 로열 최상위 이유 = SF 안 카드 높이(A-high SF) | 12 | ▶ EN 손질 회차 |
-| CN-2 🔴 | low-board-check-raise L363 «only a private home game might still have its own house rule» | 룰북 «permitted unless otherwise posted» → 업장 게시 예외 한정 | 10 | ▶ |
+| CN-1 🔴 | probability L193 «Rarity is the whole reason it sits at the top» | 로열 최상위 이유 = SF 안 카드 높이(A-high SF) | 12 | ✅ 10-17 (11) MB-379 |
+| CN-2 🔴 | low-board-check-raise L363 «only a private home game might still have its own house rule» | 룰북 «permitted unless otherwise posted» → 업장 게시 예외 한정 | 10 | ✅ 10-17 (11) MB-379(ms = 이미 맞음) |
 | CN-3 | continuation-bet L196 표·FAQ «IP, heads-up, dry board 70–100%» | 보드 높이 한정(A하이 드라이 34.5–57.2% · K·Q하이만 70%+) | 12(+es 반복) | ▶ |
 | CN-4 | continuation-bet «Betting here with most of your range just donates chips» | 보드·무늬 한정(765r 벳 53.3%) | 12 | ▶ |
 | CN-5 | outs «If there's a bet in front of you, use the ×2» | 그 벳이 올인이면 ×4 예외 | 10 | ▶ |
@@ -1440,7 +1440,7 @@ MA-607 통지 ⓐ~ⓓ(pl 옛 문면 4자리 — quiz «bez podwójnego liczenia�
 
 | # | 자리 | 방향 | 처리 |
 |---|---|---|---|
-| CP-ⓐ EN 동형 🔴 | hand-rankings EN L69 «same five cards in different suits, the pot is split — every time» · L360 FAQ «identical in rank» — 반례 보드 A♠K♠9♠3♦2♣ · Q♠J♠(플러시) vs Q♥J♥(하이카드) → «같은 족보» 조건 · 동문 전 로케일(pl L208 «co do wartości» 포함) · 검수장 EN 원장 #19·#101 재검토 후보 · MA-612 통지 ②(tiebreak EN153·232)와 같은 뿌리 | EN 원장 판단 → EN+형제 일괄 | 🪶 EN-먼저(EN 손질 회차) |
+| CP-ⓐ EN 동형 🔴 | hand-rankings EN L69 «same five cards in different suits, the pot is split — every time» · L360 FAQ «identical in rank» — 반례 보드 A♠K♠9♠3♦2♣ · Q♠J♠(플러시) vs Q♥J♥(하이카드) → «같은 족보» 조건 · 동문 전 로케일(pl L208 «co do wartości» 포함) · 검수장 EN 원장 #19·#101 재검토 후보 · MA-612 통지 ②(tiebreak EN153·232)와 같은 뿌리 | EN 원장 판단 → EN+형제 일괄 | ✅ 10-17 (11) MB-379(EN L69 + 반례 괄호 · L360 · 15로케일 · 로케일 사본 ar·de·zh-hant 포함 · tr L100 = 이미 맞음·괄호 미추가) |
 | CP-ⓑ EN 동형 | kicker 정의 «a side card that isn't part of the made hand» · «most pots are decided/won by a pair or high card»(EN 51·400 · = MA-612 ⑧) · win/equity 혼동(calc FAQ «win about 82%» · quickRef «How often AA wins» · glossary Equity·Pot Odds · quiz rangeNote «The win rate above») · glossary 한정(side pot·SB 헤즈업·Check·Outs·Pot) · hand-chart FAQ 42% 분모 · featureList «Colour-coded pocket pairs…» · tournaments heroLead «each card links» · FAQ «Triton… no satellites»(반례 기사 · 본부 미확인) · hpt-5 «Seoul, Seoul» · 족보 글 전칭·한정 묶음(보고 §EN 동형 8) | EN 원장 판단 | 🪶 EN-먼저 |
 | CP-ⓒ 판정 근거 | hand-chart dict L34 SB 3bb 46.6%(92·618) = th 고유 아님 — 16로케일 동문 · 원천 = KO `app/hand-chart/page.tsx` L49 주석 «솔버 실측 92종 618콤보 = 46.6%» · `lib/range-chart.ts` L21 | 근거 = 우리 솔버 블라인드전 예제 실측 | ✅ 변경 없음(회신에 근거) |
 | CP-ⓓ 구조 | 슬러그만 바꾸고 문장 미재서술 패턴(th pushfold·M note → 이번 재서술) · tournaments NOTES 빈 로케일 → 조건 배지 미렌더(it·pl 등 같은 구조 · FAQ «카드에 적혀 있다» 류 가로 점검) · RichSeg/{b} 접합 공백 렌더 대조 | 다음 도구 손질 회차 | 🪶 판단 대상 |
@@ -1452,7 +1452,7 @@ MA-607 통지 ⓐ~ⓓ(pl 옛 문면 4자리 — quiz «bez podwójnego liczenia�
 
 | # | 자리 | 방향 | 처리 |
 |---|---|---|---|
-| CQ-ⓐ EN 동형 🔴 | tiebreak EN147·204 «the fifth card stops mattering only when the board outranks it» = 최종 RISKY 확정(pl L158·215 · th L148·205 · de·fr 동형) · EN153·232 rank-for-rank(= CP-ⓐ) · EN232 사용처 축소(칩 레이스 누락 · th만 «แค่» 강화 → 이번 이행) | EN 원장 판단 → EN+형제 일괄 | 🪶 EN-먼저(EN 손질 회차) |
+| CQ-ⓐ EN 동형 🔴 | tiebreak EN147·204 «the fifth card stops mattering only when the board outranks it» = 최종 RISKY 확정(pl L158·215 · th L148·205 · de·fr 동형) · EN153·232 rank-for-rank(= CP-ⓐ) · EN232 사용처 축소(칩 레이스 누락 · th만 «แค่» 강화 → 이번 이행) | EN 원장 판단 → EN+형제 일괄 | ✅ 10-17 (11) MB-379(EN147·153·204·232 + NPL 칩 레이스 축어 · 13로케일 · ar hand-rankings 합본 사본 · zh·zh-hant 사본 포함) |
 | CQ-ⓑ EN 동형 | set 동률 «almost never/rarely»(kicker EN174 · tiebreak EN200) · kicker EN128 «out there» 모호 · EN19·44 · EN124·133·190 과강 · split EN74 «almost always»·EN89·EN79·EN120·183 · flush EN74 «when both draws get there, you win»(SF 반례)·EN108·EN171·FAQ «Yes» · HR EN51(= CP-ⓑ) | EN 원장 판단 | 🪶 EN-먼저 |
 | CQ-ⓒ 형제 | de split L20 «am River gecallt»(pl WRONG과 같은 주어 변형) · de kicker L132 «in Sicht» | de 손질 때(EN 원장 판정과 별개 — de 고유 오역이면 바로) | 🪶 형제 통지 |
 | CQ-ⓓ 구조 | th 우회 링크 설명 과약속 3자리 = 이번 이행 · 다른 th 우회 자리 일괄 점검 · «EN 링크 · 로케일 텍스트만 · 대상 글 이제 존재» 전수(pl betting-actions L167 = 이번 이행) | 다음 pl·th 글 회차 | 🪶 판단 대상 |

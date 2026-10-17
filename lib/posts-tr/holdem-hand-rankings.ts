@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-14",
+  updated: "2026-10-17",
 
-  masterUpdated: "2026-10-06",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "🃏",
@@ -355,7 +355,7 @@ A. Kicker (yan kart), tamamlanmış elinin parçası olmayan ama aynı el türü
 
 **Q. İki oyuncuda aynı el olabilir mi?**
 
-A. Evet. İkisinin de en iyi beş kartı değer olarak aynıysa pot bölünür. Texas Hold'em'de türler asla beraberlik bozmaz.
+A. Evet. İkisinin de en iyi beş kartı aynı eli oluşturuyor ve değerleri birebir aynıysa pot bölünür. Texas Hold'em'de türler asla beraberlik bozmaz.
 
 **Q. Kendi iki kartını da kullanmak zorunda mısın?**
 

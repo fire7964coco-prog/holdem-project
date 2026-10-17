@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 minit",
   emoji: "🃏",
@@ -67,7 +67,7 @@ As ialah kad terkuat dan satu-satunya yang menjadi pengecualian kepada peraturan
 
 ### Jenis kad tidak ada kedudukan
 
-Dalam Texas Hold'em standard, **tiada jenis kad yang lebih kuat daripada jenis lain**. Spade tidak menewaskan heart. Jenis kad hanya penting untuk *membentuk* flush, tidak pernah untuk memecahkan seri. Jika dua pemain memegang lima kad yang sama dalam jenis berbeza, pot dibahagi — setiap kali.
+Dalam Texas Hold'em standard, **tiada jenis kad yang lebih kuat daripada jenis lain**. Spade tidak menewaskan heart. Jenis kad hanya penting untuk *membentuk* flush, tidak pernah untuk memecahkan seri. Jika dua pemain membentuk tangan yang sama dengan lima nilai yang sama, cuma berbeza jenis, pot dibahagi — setiap kali. (Jenis kad masih boleh menentukan *sama ada* flush terbentuk: pada board A♠ K♠ 9♠ 3♦ 2♣, Q♠ J♠ membentuk flush ber-As tinggi, manakala Q♥ J♥ memainkan lima nilai yang sama sebagai high card As biasa sahaja.)
 
 ---
 
@@ -358,7 +358,7 @@ A. Kicker ialah kad yang bukan sebahagian daripada tangan siap anda tetapi memec
 
 **Q. Bolehkah dua pemain memegang tangan yang sama?**
 
-A. Boleh. Jika lima kad terbaik kedua-dua pemain sama nilainya, pot dibahagi ("chop"). Jenis kad tidak pernah memecahkan seri dalam Texas Hold'em.
+A. Boleh. Jika lima kad terbaik kedua-dua pemain membentuk tangan yang sama dan nilainya sepadan satu demi satu, pot dibahagi ("chop"). Jenis kad tidak pernah memecahkan seri dalam Texas Hold'em.
 
 **Q. Adakah wajib menggunakan kedua-dua hole card anda?**
 

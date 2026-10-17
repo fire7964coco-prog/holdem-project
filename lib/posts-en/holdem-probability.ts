@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-01",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -190,7 +190,7 @@ That's the moment all the numbers pay off — but **match the number to the stre
 - **Royal flush:** as a dealt five-card hand, ==1 in 649,740==. Playing Hold'em to the river, it improves to about 1 in 30,940 because you're choosing your best five from seven cards. Either way, most players go *years* between them.
 - **Straight flush:** about 1 in 72,193 as a five-card hand (about 1 in 3,590 by the river in Hold'em). Still a once-a-year sighting for most.
 
-Why so rare? A royal flush is exactly **one specific run of cards in one specific suit** — four ways to make it in the entire deck versus 1,302,540 ways to make a plain high card. Rarity is the whole reason it sits at the top of the rankings.
+Why so rare? A royal flush is exactly **one specific run of cards in one specific suit** — four ways to make it in the entire deck versus 1,302,540 ways to make a plain high card. Rarity isn't what puts it at the very top, though: a royal flush is simply the ace-high straight flush, and a king-high straight flush is exactly as rare (four ways each). The royal outranks every other straight flush because its cards are higher.
 
 :::note
 A common myth: "a royal flush beats everything, so it can be *tied*." The pot can be split, but not the way it's usually explained. Two royals in *different* suits would take ten specific cards, and two players only ever have nine to work with — two hole cards each plus the five on the board — so it can't happen. The only way both players hold a royal is when the board itself is the royal: everyone plays the board, and the pot is split. In practice you'll essentially never see it.
