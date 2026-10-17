@@ -94,6 +94,7 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   th: [
     { href: "/th/calculator", icon: "🧮", label: "เครื่องคำนวณ Equity" },
     { href: "/th/hand-chart", icon: "📊", label: "ตาราง Preflop" },
+    { href: "/th/glossary", icon: "📖", label: "คำศัพท์โป๊กเกอร์" },
   ],
   pl: [
     { href: "/pl/calculator", icon: "🧮", label: "Kalkulator pokerowy" },
