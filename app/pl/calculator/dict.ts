@@ -1399,6 +1399,11 @@ export const CALC_DICT_PL: CalcDict = {
         "desc": "Od blindów do showdownu"
       },
       {
+        "slug": "holdem-hand-rankings",
+        "title": "Układy pokerowe",
+        "desc": "10 układów od najsilniejszego, z prawdopodobieństwem"
+      },
+      {
         "slug": "holdem-betting-actions",
         "title": "Akcje przy stole",
         "desc": "Czek, zakład, sprawdzenie, przebicie i pas"

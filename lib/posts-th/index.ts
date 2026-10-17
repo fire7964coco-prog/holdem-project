@@ -8,6 +8,9 @@ import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 
+// Hand rankings 필라 (1)
+import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+
 /**
  * 태국어(th) 블로그 포스트.
  * 태국 포커 용어(รอยัลฟลัช·ตอง·ฟลัช·สเตรท·ฟูลเฮาส์ 등, 음차+고유)로 현지화.
@@ -21,6 +24,8 @@ export const TH_POSTS: Post[] = [
   holdemBlindMeaning,
   holdemAllInRules,
   holdemShowdownRules,
+  // Hand rankings 필라 (1)
+  holdemHandRankings,
 ];
 
 export function getThPost(slug: string): Post | undefined {

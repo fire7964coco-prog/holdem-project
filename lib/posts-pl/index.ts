@@ -8,6 +8,9 @@ import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 
+// Hand rankings 필라 (1)
+import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+
 /**
  * 폴란드어(pl) 블로그 포스트.
  * 폴란드 포커 용어(Poker królewski·Poker=straight flush·Kareta=포카드·Kolor=flush·Strit 등)로 현지화.
@@ -21,6 +24,8 @@ export const PL_POSTS: Post[] = [
   holdemBlindMeaning,
   holdemAllInRules,
   holdemShowdownRules,
+  // Hand rankings 필라 (1)
+  holdemHandRankings,
 ];
 
 export function getPlPost(slug: string): Post | undefined {

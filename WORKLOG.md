@@ -1,3 +1,13 @@
+## 2026-10-17 (4) — 족보 글 번역 회차 pl+th(`holdem-hand-rankings` · 로컬 커밋 · 미배포)
+
+- 분담: Claude 포크 2레인(pl·th) 병렬 작성 → 본체 기계 대조 → 원어민 적대 검수 2(general-purpose · 읽기 전용) → 본체 반영. EN 마스터 `updated` 10-06 = `masterUpdated`.
+- 서치(레인): pl = pokerlistings.pl 족보 페이지·gaming.net/pl 머리 축어(머리어 «układy pokerowe» 12.100) · th = gaming.net/th(1위가 기계번역·일본어 잔존 = 약함)·dummy.thaiportalgames(«วิธีดูลำดับไพ่โป๊กเกอร์») · 수확 1행씩 `keyword-bank/{pl,th}-tools.md` §5.
+- 링크(pl·th 코퍼스 7편): kicker(thumb)·tiebreak·split → `holdem-showdown-rules` · probability → `/{loc}/calculator` · starting-hands → `/{loc}/hand-chart` · flush-vs-straight FAQ 링크 제거 · readnext = showdown·beginners · 관련 6 = 글 4 + 도구 2. check:structure 결손 0(걸 수 없는 링크 6 제외 · ar 선례).
+- §13: 카드 토큰·%·수열 EN과 다중집합 동일(pl 소수 쉼표 정규화) · 레인·검수 2가 퍼즐 3 손검산.
+- 원어민 검수: pl WRONG 0·RISKY 0·STYLE 6 → 5 반영(mucka · stołu · zamienia się miejscami · «Od dwunastu lat» · 최약 하이카드 문장 · imageAlt «w pikach») · 6번 «w Omaha» 나열 무변화 = 그대로 · th WRONG 1(«จำเป็น» 끊어 읽기)·RISKY 1(«แต้มเหมือนกันทุกใบ»)·STYLE 8 전부 반영. MA-603 pl 굴절 규칙(street 남성·tripsa 등) 적용.
+- 함께: 코퍼스 7편 → calc-parity related 목표 7 → `app/{pl,th}/calculator/dict.ts` related에 hand-rankings 1행. 빌드 exit 0(intl 738) · hreflang·directives·intl-links·hygiene·number-format·hangul·faq-schema 통과.
+- 남김: 배포 = th 도구와 함께 사장님 «배포해» 때 → MB(검수장 원어민 판정 · 의심 자리 = pl «Najwyższa karta»↔«Wysoka karta» · «fulla»↔«fula» · th «เซ็ต/ทริปส์»(ทริปส์ 정본 미확인)·พ็อกเก็ต·วีล 음차) → IndexNow → 수동 색인 2. 화면(screen-review)은 안 찍음.
+
 ## 2026-10-17 (3) — 도구 전 언어 확장 th ② 도구 5(main 머지 · 미배포)
 
 - 분담(계획 §4 · pl 방식 그대로): GPT sol high 2레인 워크트리 — A `Holdem-gpt-th-a`(계산기·차트·용어 · fbffabcf·3bdc07b4·0fd8fea8 + astra 정정 76f18741·41f0e294) / B `Holdem-gpt-th-b`(시뮬레이터·대회 · 66ecbdcf·9d298f93). 지시문 = pl 복제 + 태국 특이점(아라비아 숫자·영어식 구분자 · th-TH Intl 불기 연도 함정 · 띄어쓰기 없음 · 쟁점 = 표 기본값) + astra 입력은 UTF-8 파일/Buffer(pl 때 «?» 깨짐 교훈 → 이번엔 태국 문자 에코 무손상 확인).

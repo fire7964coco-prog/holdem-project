@@ -1399,6 +1399,11 @@ export const CALC_DICT_TH: CalcDict = {
         "desc": "พื้นฐาน บลายด์ และโชว์ดาวน์"
       },
       {
+        "slug": "holdem-hand-rankings",
+        "title": "ลำดับไพ่โป๊กเกอร์",
+        "desc": "ไพ่ 10 มือจากใหญ่ไปเล็ก พร้อมโอกาสออก"
+      },
+      {
         "slug": "holdem-betting-actions",
         "title": "แอ็กชันการเดิมพัน",
         "desc": "เช็ค คอล เพิ่มเดิมพัน และหมอบ"

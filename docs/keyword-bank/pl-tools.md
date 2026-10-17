@@ -86,3 +86,4 @@
 | GTO 폴란드어 원문 희소 | «gto poker» 140 · 폴란드어 글 = pokertexas.net 2018 1편 | GTO 개념 글을 pl로 낼 때 경쟁 약함(단 `settled-decisions` §1-E 새 GTO 글 금지 확인 먼저) |
 | 국내 대회 의도 | «turnieje pokerowe» 1·10위 = polishpokerseries.com(도시별 오늘 일정) | 나라별 대회 트랙 후보 — 데이터 공급 확정 전 착수 금지(`country-tournament-playbook`) |
 | 리얼머니 | poker online 8.100 | 합법성 축 열지 않음 — 머리어로 쓰지 않는다 |
+| 족보 SERP 형태(10-17 족보 글 회차) | pokerlistings.pl 원문 H1 «Układy w pokerze» · H2 «Tabela układów pokerowych od najlepszego do najgorszego» · FAQ H3 «Czy strit jest lepszy od koloru?»·«Co jest lepsze – dwie pary czy trójka?»·«Który kolor kart jest najmocniejszy?» · 표 10번 = «Wysoka karta»(gaming.net/pl = «Najwyższa karta»·«Strit kolor»·«Royal flush» 혼재) | `holdem-hand-rankings`(pl) H2·FAQ에 반영 · 이름 = «Najwyższa karta»(형제 글 축어) + «wysoka karta» 병기 |
