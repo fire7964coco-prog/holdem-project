@@ -1,3 +1,11 @@
+## 2026-10-17 (3) — 도구 전 언어 확장 th ② 도구 5(main 머지 · 미배포)
+
+- 분담(계획 §4 · pl 방식 그대로): GPT sol high 2레인 워크트리 — A `Holdem-gpt-th-a`(계산기·차트·용어 · fbffabcf·3bdc07b4·0fd8fea8 + astra 정정 76f18741·41f0e294) / B `Holdem-gpt-th-b`(시뮬레이터·대회 · 66ecbdcf·9d298f93). 지시문 = pl 복제 + 태국 특이점(아라비아 숫자·영어식 구분자 · th-TH Intl 불기 연도 함정 · 띄어쓰기 없음 · 쟁점 = 표 기본값) + astra 입력은 UTF-8 파일/Buffer(pl 때 «?» 깨짐 교훈 → 이번엔 태국 문자 에코 무손상 확인).
+- astra §13: A 125문장 → 2 정정(«on the flop or turn» 시점 · 임플라이드 상대 잔여 칩 조건) · B WRONG 1·RISKY 2 → 3 정정(hitLabel · rangeNote win rate · ₩350K~₩5M 전개).
+- 헤드: 머지 763698ce·b9d74c28 · 충돌 side-rail 1 + hub-routes `th:` 키 중복(pl과 같은 함정) → 한 배열 5개. 빌드 exit 0(정적 136→141) · calc-parity th · intl-links · seo-sync 통과 · A의 빌드 뒤 커밋(표 머리 «มือที่เทียบ») 산출물 반영 확인. 화면 = next start + Playwright load 390·1440 × 5 넘침 0 · 오류 0 · lang th · 태국 숫자 0 · 불기 연도 0 · 글꼴 정상.
+- 머리어: เครื่องคำนวณ Equity · poker calculator / ตาราง Preflop · poker chart / ศัพท์โป๊กเกอร์ · ศัพท์ poker / ควิซโป๊กเกอร์: poker quiz / ทัวร์นาเมนต์โป๊กเกอร์ 2026: poker tournament(«ไทย» 없음). 날짜 = MONTH_TH + 서기(17 ตุลาคม 2026).
+- 남김(검수장 몫): 원어민 판정 5페이지 · EN-먼저 문구(pl과 같은 4 + 시뮬레이터 rangeNote·shareCopied «win rate» vs equity) · 공용 OutsCalc 390 카드 넘침(it 보고 ⑦). 배포 = 사장님 지시 때.
+
 ## 2026-10-17 (2) — 도구 전 언어 확장 th ① 서치(용어 + 도구 검색어) · 족보 글 회차 등재
 
 - th ①: GPT sol(effort medium · 워크트리 `Holdem-gpt-th`)이 `translation-terms-th.md` «도구·앱 UI 낱말» 절 작성 `a8795a68`(236항목 · pl 행 순서 · 미확인 81 · 쟁점 10: fold หมอบ/พับ/โฟลด์ · raise เรซ↔เรส 철자 · bet 3꼴 · equity 음차 2종 · 기존 절 철자 สแตก↔สแต็ก 등 · 기존 절 무수정) → Claude 원문 대조 9/9(invistools th · natural8 사전 · Smart HUD) → main ff · 워크트리·브랜치 삭제 · langbook. Claude = DataForSEO(2764·th) 70어 · SERP 8 · 자동완성(태국어 시드 40102 → 라틴 2) → `docs/keyword-bank/th-tools.md`.
