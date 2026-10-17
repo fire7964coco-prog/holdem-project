@@ -91,7 +91,7 @@ W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozos
 
 Jeden niuans: **pulę boczną** przyznaje się przed pulą główną. Ta **kolejność wypłaty** nie opóźnia odkrywania kart w turnieju: po zakończeniu całej licytacji odkrywa się wszystkie pozostałe ręce (TDA 2024, zasada 16 i jej ilustracja). Dopóki trwa licytacja puli bocznej, obowiązek jeszcze nie powstaje. W cashu WSOP B149 wymaga natomiast, by gracze puli bocznej pokazali przed graczami walczącymi tylko o pulę główną.
 
-Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zasadach all-in i pul bocznych](/pl/blog/holdem-all-in-rules); w sprawie dzielonych pul obowiązują zasady split pot.
+Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zasadach all-in i pul bocznych](/pl/blog/holdem-all-in-rules); w sprawie dzielonych pul obowiązują [zasady podziału puli](/pl/blog/holdem-split-pot-rules).
 
 ---
 
@@ -197,6 +197,16 @@ A. Nie. Jeśli wszyscy inni spasują przed showdownem na riverze, zgarniasz pul�
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Filar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Zasady Texas Hold'em dla początkujących</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pełne zasady — od blindów do showdownu</div>
+  </a>
+  <a href="/pl/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Podział puli</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kiedy dzieli się pulę?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Remis i podział puli w Texas Hold'em</div>
+  </a>
+  <a href="/pl/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Remis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Remis w pokerze — kto wygrywa przy takim samym układzie?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ta sama para, a i tak przegrałeś?</div>
   </a>
 </div>
 `.trim(),

@@ -1427,6 +1427,11 @@ export const CALC_DICT_TH: CalcDict = {
         "slug": "holdem-showdown-rules",
         "title": "โชว์ดาวน์",
         "desc": "เปิดไพ่และตัดสินผู้ชนะ"
+      },
+      {
+        "slug": "holdem-flush-vs-straight",
+        "title": "ฟลัชกับสเตรท อะไรใหญ่กว่า",
+        "desc": "มือไหนชนะ และทำไม พร้อมจำนวนคอมโบ"
       }
     ]
   }

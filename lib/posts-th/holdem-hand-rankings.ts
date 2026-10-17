@@ -58,7 +58,7 @@ export const POST: Post = {
 *ตัวเลขเหล่านี้คือความถี่มาตรฐานของมือจากไพ่เจ็ดใบในสำรับ 52 ใบ — ชุดความน่าจะเป็นเดียวกับที่โซลเวอร์และเว็บฝึกโป๊กเกอร์ทุกที่ใช้*
 
 > **กฎข้อเดียวที่ชนะทุกการเถียง**
-> คู่กับไพ่สูงรวมกันคิดเป็นราว 61% ของมือเจ็ดใบทั้งหมดเมื่อถึงริเวอร์ มือใหญ่ดูเหมือนเจอบ่อยเพราะมันน่าจดจำ — แต่พอตส่วนใหญ่ถูกตัดสินที่[โชว์ดาวน์](/th/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp")ด้วยคู่หรือไพ่สูง บวกกับคิกเกอร์
+> คู่กับไพ่สูงรวมกันคิดเป็นราว 61% ของมือเจ็ดใบทั้งหมดเมื่อถึงริเวอร์ มือใหญ่ดูเหมือนเจอบ่อยเพราะมันน่าจดจำ — แต่พอตส่วนใหญ่ถูกตัดสินที่โชว์ดาวน์ด้วยคู่หรือไพ่สูง บวกกับ[คิกเกอร์](/th/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")
 
 :::quiz:::
 
@@ -205,7 +205,7 @@ A คือไพ่ที่แข็งที่สุด และเป็�
 ไพ่สูง|เทียบครบ 5 ใบ จากสูงไปต่ำ|+ใช้คิกเกอร์
 :::
 
-**คิกเกอร์**ก็คือไพ่ที่ไม่ได้อยู่ในมือที่ทำได้ แต่ยังถูกใช้ตัดสินไพ่เสมอ เช่น A-A-K เจอ A-A-Q ทั้งคู่มีคู่ A — คิกเกอร์ K ชนะ นี่คือเหตุผลที่โปรใส่ใจ*คุณภาพ*ของไพ่สูงในมือมาก ไม่ใช่แค่ว่าเข้าคู่หรือเปล่า ส่วนที่โต๊ะจริงใครเปิดไพ่ก่อน และพอตถูก[แบ่ง](/th/blog/holdem-showdown-rules)เมื่อไพ่ห้าใบที่ดีที่สุดเหมือนกันทุกใบอย่างไร ดูต่อได้ในกติกาโชว์ดาวน์
+**คิกเกอร์**ก็คือไพ่ที่ไม่ได้อยู่ในมือที่ทำได้ แต่ยังถูกใช้ตัดสินไพ่เสมอ เช่น A-A-K เจอ A-A-Q ทั้งคู่มีคู่ A — คิกเกอร์ K ชนะ นี่คือเหตุผลที่โปรใส่ใจ*คุณภาพ*ของไพ่สูงในมือมาก ไม่ใช่แค่ว่าเข้าคู่หรือเปล่า กติกาตัดสินไพ่เสมอของทุกมือรวมไว้ใน[คู่มือไพ่เสมอกันในโป๊กเกอร์](/th/blog/holdem-tiebreak-rules) และเมื่อไพ่ห้าใบที่ดีที่สุดเหมือนกันทุกใบ พอตจะถูก[แบ่ง](/th/blog/holdem-split-pot-rules)
 
 ---
 
@@ -315,8 +315,8 @@ A คือไพ่ที่แข็งที่สุด และเป็�
 ---
 
 :::readnext[อ่านต่อ]
-/th/blog/holdem-showdown-rules | ที่โชว์ดาวน์ใครเปิดไพ่ก่อน? กติกาโชว์ดาวน์ | /images/holdem-showdown-rules-hero.webp
-/th/blog/texas-holdem-rules-for-beginners | วิธีเล่นโป๊กเกอร์เท็กซัสโฮลเด็มสำหรับมือใหม่ | /images/rules-texas-holdem.webp
+/th/blog/holdem-flush-vs-straight | ฟลัชกับสเตรท อะไรใหญ่กว่า? | /images/holdem-flush-vs-straight-hero.webp
+/th/blog/holdem-tiebreak-rules | ไพ่เสมอกันในโป๊กเกอร์ ตัดสินยังไง | /images/holdem-tiebreak-hero.webp
 :::
 
 ## คำถามที่พบบ่อย
@@ -335,7 +335,7 @@ A. สเตรทคือไพ่ห้าใบแต้มเรียง�
 
 **Q. ฟลัชกับสเตรท อะไรใหญ่กว่า?**
 
-A. ฟลัชใหญ่กว่า ฟลัชอยู่ #5 สเตรทอยู่ #6 ฟลัชจึงชนะเสมอ ที่มันอยู่สูงกว่าเพราะไพ่ห้าใบดอกเดียวกันทำได้ยากกว่าไพ่ห้าใบเรียงกันในทางสถิติ
+A. ฟลัชใหญ่กว่า ฟลัชอยู่ #5 สเตรทอยู่ #6 ฟลัชจึงชนะเสมอ — ดู[ทำไมฟลัชชนะสเตรท](/th/blog/holdem-flush-vs-straight) ที่มันอยู่สูงกว่าเพราะไพ่ห้าใบดอกเดียวกันทำได้ยากกว่าไพ่ห้าใบเรียงกันในทางสถิติ
 
 **Q. ฟูลเฮาส์ชนะฟลัชไหม?**
 
@@ -418,25 +418,25 @@ A. ได้ A เล่นได้ทั้งเป็นไพ่สูง�
 ## บทความที่เกี่ยวข้อง
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/th/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาโชว์ดาวน์เท็กซัสโฮลเด็ม</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ใครเปิดไพ่ก่อน การพับไพ่ และการแบ่งพอต</div>
+  <a href="/th/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Matchup</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ฟลัชกับสเตรท อะไรใหญ่กว่า?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">คณิตศาสตร์และจุดที่คนอ่านไพ่ผิด</div>
+  </a>
+  <a href="/th/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ไพ่เสมอกันในโป๊กเกอร์ ตัดสินยังไง</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">มือเหมือนกัน ใครชนะ?</div>
+  </a>
+  <a href="/th/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">โป๊กเกอร์เสมอกันได้ไหม?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">กติกาแบ่งพอต (Split Pot) ในเท็กซัสโฮลเด็ม</div>
   </a>
   <a href="/th/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Beginner Guide</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">วิธีเล่นโป๊กเกอร์เท็กซัสโฮลเด็มสำหรับมือใหม่</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">กติกาครบ ตั้งแต่แจกไพ่จนถึงโชว์ดาวน์</div>
-  </a>
-  <a href="/th/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-in</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาออลอินและไซด์พอต</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ออลอินแล้วชนะได้เท่าไหร่ — พอตหลักกับไซด์พอต</div>
-  </a>
-  <a href="/th/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Game Flow</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ลำดับการเล่นในหนึ่งมือ</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ตั้งแต่บลายด์ พรีฟลอป จนถึงริเวอร์และโชว์ดาวน์</div>
   </a>
   <a href="/th/hand-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starting Hands</div>

@@ -156,7 +156,7 @@ All-in znaczy postawienie ==wszystkich żetonów, jakie ci zostały==. Możesz t
 
 Jeśli twój all-in jest *mniejszy* niż aktualna stawka, nie wypadasz z gry: po prostu walczysz o ==główną pulę== ograniczoną do twojego wkładu, a nadwyżka żetonów od większych stacków tworzy ==pulę boczną (side pot)==, której nie możesz wygrać. A all-in *mniejszy niż pełne min-raise* zwykle nie otwiera na nowo przebijania graczom, którzy już zagrali — subtelna zasada, która zaskakuje nawet ogranych.
 
-Pełna mechanika — matematyka puli bocznej, kto pokazuje karty pierwszy, table stakes — jest w [zasadach all-in i puli bocznej](/pl/blog/holdem-all-in-rules), a co się dzieje, gdy układy w all-inie remisują, wyjaśniają zasady dzielonej puli.
+Pełna mechanika — matematyka puli bocznej, kto pokazuje karty pierwszy, table stakes — jest w [zasadach all-in i puli bocznej](/pl/blog/holdem-all-in-rules), a co się dzieje, gdy układy w all-inie remisują, wyjaśniają [zasady dzielonej puli](/pl/blog/holdem-split-pot-rules).
 
 ---
 

@@ -91,7 +91,7 @@ export const POST: Post = {
 
 จุดละเอียดอ่อนอย่างหนึ่ง: **ไซด์พอต** จะจ่ายก่อนพอตหลัก แต่นั่นคือ**ลำดับการจ่ายเงิน** ในทัวร์นาเมนต์ เมื่อการเดิมพันทั้งหมดจบ ไพ่ทุกมือที่ยังอยู่ต้องเปิดทันที (TDA 2024 ข้อ 16 และภาพประกอบ) หากไซด์พอตยังเดิมพันกันอยู่ หน้าที่นี้ยังไม่เริ่ม ส่วนเกมเงินสด WSOP ข้อ B149 ให้ผู้เล่นในไซด์พอตเปิดก่อนผู้เล่นที่มีสิทธิ์เฉพาะพอตหลัก
 
-สำหรับวิธีการก่อและจ่ายไซด์พอตเมื่อมีผู้เล่นออลอิน ดู[กติกาออลอินและไซด์พอต](/th/blog/holdem-all-in-rules) ส่วนการแบ่งพอต (chop) นั้นก็มีกติกาสปลิตพอตแยกไว้อีกเรื่องหนึ่ง
+สำหรับวิธีการก่อและจ่ายไซด์พอตเมื่อมีผู้เล่นออลอิน ดู[กติกาออลอินและไซด์พอต](/th/blog/holdem-all-in-rules) ส่วนการแบ่งพอต (chop) ดู[กติกาแบ่งพอต](/th/blog/holdem-split-pot-rules)
 
 ---
 
@@ -197,6 +197,16 @@ A. ไม่ ถ้าทุกคนพับก่อนถึงโชว์�
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาเท็กซัสโฮลเด็มสำหรับมือใหม่</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">กติกาครบ — ตั้งแต่บลายด์จนถึงโชว์ดาวน์</div>
+  </a>
+  <a href="/th/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">โป๊กเกอร์เสมอกันได้ไหม?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">กติกาแบ่งพอต (Split Pot) ในเท็กซัสโฮลเด็ม</div>
+  </a>
+  <a href="/th/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ไพ่เสมอกันในโป๊กเกอร์ ตัดสินยังไง</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">มือเหมือนกัน ใครชนะ?</div>
   </a>
 </div>
 `.trim(),

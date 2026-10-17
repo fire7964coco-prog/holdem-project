@@ -1427,6 +1427,11 @@ export const CALC_DICT_PL: CalcDict = {
         "slug": "holdem-showdown-rules",
         "title": "Zasady showdownu",
         "desc": "Jak rozstrzygnąć zwycięski układ"
+      },
+      {
+        "slug": "holdem-flush-vs-straight",
+        "title": "Kolor czy strit?",
+        "desc": "Co jest wyższe i dlaczego, z rachunkiem kombinacji"
       }
     ]
   }

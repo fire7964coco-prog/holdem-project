@@ -8,8 +8,12 @@ import { POST as holdemBlindMeaning } from "./holdem-blind-meaning";
 import { POST as holdemAllInRules } from "./holdem-all-in-rules";
 import { POST as holdemShowdownRules } from "./holdem-showdown-rules";
 
-// Hand rankings 필라 (1)
+// Hand rankings 필라 (5)
 import { POST as holdemHandRankings } from "./holdem-hand-rankings";
+import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
 
 /**
  * 폴란드어(pl) 블로그 포스트.
@@ -24,8 +28,12 @@ export const PL_POSTS: Post[] = [
   holdemBlindMeaning,
   holdemAllInRules,
   holdemShowdownRules,
-  // Hand rankings 필라 (1)
+  // Hand rankings 필라 (5)
   holdemHandRankings,
+  holdemKicker,
+  holdemTiebreakRules,
+  holdemSplitPotRules,
+  holdemFlushVsStraight,
 ];
 
 export function getPlPost(slug: string): Post | undefined {

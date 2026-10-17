@@ -1,3 +1,13 @@
+## 2026-10-17 (6) — 족보 형제 4편 pl+th(kicker·tiebreak-rules·split-pot-rules·flush-vs-straight · 로컬 커밋 · 미배포)
+
+- 분담: Claude 포크 4레인(pl-A·pl-B·th-A·th-B 각 2편) → 본체 인덱스 등록 → 링크 복원 포크(기존 7편 × 2) ∥ 원어민 적대 검수 2(general-purpose · 읽기 전용) → pl 본체 반영 · th 반영 포크 → 빌드.
+- 서치(레인): pokerlistings.pl(remis-w-pokerze · poker-uklady FAQ «Czy strit jest lepszy od koloru?») · gaming.net/pl·th · natural8 th 용어(«การสปลิตพอต») · DFS th «คิกเกอร์» 480(포커 외 혼입 의심) · 수확 = keyword-bank pl·th-tools §5.
+- §13: 레인 15·17·22·19판 + 검수 pl 27·th 31판 기계 평가 불일치 0 · 카드 토큰 다중집합 EN 동일 · 팟 산수(101 → 50/50+1 · 300/400/150) 확인.
+- 원어민 검수: pl WRONG 0·RISKY 3(kicker·tiebreak seoTitle 훅 중복 → kicker «Para asów…» · «sparuje się as» → «spada as» · split H2 «strit na stole» 약속 → 보드 스트레이트 문장 추가)·STYLE 16 대부분 반영 · th WRONG 0·RISKY 1(Razz «เรซ» = raise와 충돌 → «Razz (แรซ)»)·STYLE ~24 반영(เล่นบอร์ด·เม็ด·แคชเกม·คว่ำไพ่ทิ้ง 통일 · โดนดอมิเนต · เคาน์เตอร์ฟิต).
+- 링크 복원: hand-rankings·showdown·all-in·betting-actions·beginners(pl·th)의 임시 우회 → kicker·tiebreak·split·flush 제자리(4대상 개수 EN 동일) · beginners 다음 단계 hand-rankings 링크 · /en/hand-chart·/en/calculator → 로케일 도구.
+- 함께: 코퍼스 11편 → calc-parity related 목표 8 → app/{pl,th}/calculator/dict.ts related에 flush-vs-straight. check:structure pl·th 결손 0. 빌드 exit 0(intl 746).
+- 남김: 배포 = 사장님 «배포해» 때 → MB(검수장 원어민 판정 · 의심 = pl «przestały się liczyć (counterfeit)»·«nieparzysty żeton» · th โดนดอม·เคาน์เตอร์ฟิต·ชิปเศษ·บริงอิน) → IndexNow → 수동 색인 8. 🪶 th blind-meaning showdown 카드 1장(EN 0) = 다른 슬러그 우회 흔적 · 미판정.
+
 ## 2026-10-17 (5) — MA-603·604 회신+이행 · th 도구 5 + pl·th 족보 글 배포
 
 - MA-603(pl 도구 판정): 요청 ①②③ 전부 이행 — Breadcrumb `/it`→`/pl`(WRONG) · readMore·blind note·showdown related·«Kalkulator dealu ICM» · 대회 «z biletem zaproszeniowym»(FAQ·holdem-masters-9·카드 라벨 2) · 수 일치 템플릿 4(라벨 꼴·few() 분기) · 격(przed flopem/na flopie… 맵 · flightów · set miningu · Pierwszy re-raise · tripsa) · street 남성 굴절 16줄. 치환 스크립트 = 각 패턴 1회 일치 단언. 언어북 = `docs/translation-terms-pl.md` «굴절·수 일치 규칙» 절(제안 ①~⑤). 통지 = queue §2-CO 🪶. MB-370.

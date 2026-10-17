@@ -58,7 +58,7 @@ Od najsilniejszego do najsłabszego dziesięć układów w Texas Hold'em to: pok
 *To standardowe częstotliwości układów z siedmiu kart dla pełnej talii 52 kart — te same prawdopodobieństwa, z których korzysta każdy solver i każda strona szkoleniowa.*
 
 > **Jedna zasada, która kończy kłótnie**
-> Para i najwyższa karta to razem mniej więcej 61% wszystkich układów z siedmiu kart na riverze. Duże układy wydają się częste, bo się je pamięta — ale większość pul rozstrzyga para albo najwyższa karta i kicker, a ostatnie słowo ma [showdown](/pl/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp").
+> Para i najwyższa karta to razem mniej więcej 61% wszystkich układów z siedmiu kart na riverze. Duże układy wydają się częste, bo się je pamięta — ale większość pul rozstrzyga para albo najwyższa karta i [kicker](/pl/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
 
 :::quiz:::
 
@@ -205,7 +205,7 @@ Para|Wartość pary → 3 kickery|+Kicker liczy się
 Najwyższa karta|Porównaj wszystkie 5 kart od najwyższej|+Kicker liczy się
 :::
 
-**Kicker** to po prostu karta, która nie należy do twojego gotowego układu, ale i tak służy do rozstrzygania remisów. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Gdy najlepsze pięć kart jest identyczne co do wartości, pula jest dzielona; kto i kiedy odkrywa karty przy showdownie, wyjaśnia [poradnik o showdownie](/pl/blog/holdem-showdown-rules).
+**Kicker** to po prostu karta, która nie należy do twojego gotowego układu, ale i tak służy do rozstrzygania remisów. Przy A-A-K kontra A-A-Q obaj gracze mają asy — wygrywa kicker król. Dlatego zawodowcy tak bardzo dbają o *jakość* swoich wysokich kart, a nie tylko o to, czy trafili parę. Zasady remisu dla każdego układu w jednym miejscu znajdziesz w [poradniku o remisach w pokerze](/pl/blog/holdem-tiebreak-rules); gdy najlepsze pięć kart jest identyczne co do wartości, pula jest [dzielona](/pl/blog/holdem-split-pot-rules).
 
 ---
 
@@ -315,8 +315,8 @@ Wniosek: naucz się standardowej kolejności raz, a przeprowadzi cię przez praw
 ---
 
 :::readnext[Czytaj dalej]
-/pl/blog/holdem-showdown-rules | Showdown: kto odkrywa karty pierwszy | /images/holdem-showdown-rules-hero.webp
-/pl/blog/texas-holdem-rules-for-beginners | Zasady Texas Hold'em dla początkujących | /images/rules-texas-holdem.webp
+/pl/blog/holdem-flush-vs-straight | Czy kolor bije strita? | /images/holdem-flush-vs-straight-hero.webp
+/pl/blog/holdem-tiebreak-rules | Remis w pokerze — kto wygrywa przy takim samym układzie? | /images/holdem-tiebreak-hero.webp
 :::
 
 ## FAQ
@@ -335,7 +335,7 @@ A. Strit to pięć kart o kolejnych wartościach w różnych kolorach, np. 7-6-5
 
 **Q. Czy kolor bije strita?**
 
-A. Tak. Kolor to #5, a strit #6, więc kolor zawsze wygrywa. Stoi wyżej, bo pięć kart w jednym kolorze jest statystycznie trudniej ułożyć niż pięć kart po kolei.
+A. Tak. Kolor to #5, a strit #6, więc kolor zawsze wygrywa — zobacz, [dlaczego kolor bije strita](/pl/blog/holdem-flush-vs-straight). Stoi wyżej, bo pięć kart w jednym kolorze jest statystycznie trudniej ułożyć niż pięć kart po kolei.
 
 **Q. Czy full bije kolor?**
 
@@ -418,25 +418,25 @@ Gdy znasz już układy, naturalny następny krok to wiedza, od jakich rąk w og�
 ## Powiązane artykuły
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/pl/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Showdown w Texas Hold'em: kto odkrywa pierwszy</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mucking, slow roll i zasada „cards speak”</div>
+  <a href="/pl/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kolor vs strit</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Czy kolor bije strita?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Matematyka i najczęstsze pomyłki przy stole</div>
+  </a>
+  <a href="/pl/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Remis</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Remis w pokerze — kto wygrywa przy takim samym układzie?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ta sama para, a i tak przegrałeś?</div>
+  </a>
+  <a href="/pl/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Podział puli</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kiedy dzieli się pulę?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Remis i podział puli w Texas Hold'em</div>
   </a>
   <a href="/pl/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Filar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Zasady Texas Hold'em dla początkujących</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pełne zasady — od blindów do showdownu</div>
-  </a>
-  <a href="/pl/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-in</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Zasady all-in i pula boczna</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Główna pula, pula boczna i przebicia</div>
-  </a>
-  <a href="/pl/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Przebieg rozdania</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kolejność rozgrywki w Texas Hold'em</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Od blindów do showdownu, street po streecie</div>
   </a>
   <a href="/pl/hand-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ręce startowe</div>

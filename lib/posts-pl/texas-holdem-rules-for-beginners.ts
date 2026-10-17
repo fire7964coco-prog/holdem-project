@@ -79,7 +79,7 @@ Na przykład:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full, ósemki z czwórkami |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Poker królewski na stole |
 
-Jeśli ranking układów wciąż jest dla ciebie nowy, przejrzyj hierarchię układów Texas Hold'em, zanim usiądziesz do gry. Wiedza o tym, czy kolor bije strita, jest ważniejsza niż wkuwanie zaawansowanej strategii.
+Jeśli ranking układów wciąż jest dla ciebie nowy, przejrzyj [hierarchię układów Texas Hold'em](/pl/blog/holdem-hand-rankings), zanim usiądziesz do gry. Wiedza o tym, [czy kolor bije strita](/pl/blog/holdem-flush-vs-straight), jest ważniejsza niż wkuwanie zaawansowanej strategii.
 
 ---
 
@@ -350,7 +350,7 @@ Podstawowy ranking układów, od najsilniejszego do najsłabszego (z częstości
 | 9 | Para | 43,8% — najczęstszy układ końcowy |
 | 10 | Najwyższa karta | 17,4% — najsłabszy układ na showdownie; zwykle wygrywa tylko wtedy, gdy pozostali też nic nie trafili |
 
-Jeśli dwaj gracze mają ten sam typ układu, porównuje się najwyższe istotne karty — to reguły kickera i rozstrzygania remisów. Jeśli najlepsze pięć kart jest dokładnie takich samych, pula zostaje podzielona.
+Jeśli dwaj gracze mają ten sam typ układu, porównuje się najwyższe istotne karty — to [reguły kickera i rozstrzygania remisów](/pl/blog/holdem-tiebreak-rules). Jeśli najlepsze pięć kart jest dokładnie takich samych, pula zostaje [podzielona](/pl/blog/holdem-split-pot-rules).
 
 ---
 
@@ -440,7 +440,7 @@ Texas Hold'em łatwiej się uczyć, gdy oddzielisz zasady od strategii.
 
 Najpierw ==naucz się przebiegu==: blindy, dwie karty własne, pięć kart wspólnych, cztery rundy licytacji i najlepszy pięciokartowy układ. ==g:Potem poznaj pozycję, ręce startowe i podstawowe decyzje przy puli.==
 
-Jako następny krok przejrzyj hierarchię układów Texas Hold'em, poćwicz z [tabelą rąk startowych](/en/hand-chart) i korzystaj z [kalkulatora szans w pokerze](/en/calculator), gdy chcesz zrozumieć, dlaczego dany call jest opłacalny albo nie.
+Jako następny krok przejrzyj [hierarchię układów Texas Hold'em](/pl/blog/holdem-hand-rankings), poćwicz z [tabelą rąk startowych](/pl/hand-chart) i korzystaj z [kalkulatora szans w pokerze](/pl/calculator), gdy chcesz zrozumieć, dlaczego dany call jest opłacalny albo nie.
 
 ---
 
