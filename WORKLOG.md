@@ -1,3 +1,11 @@
+## 2026-10-17 (15) — `/pl/solver` 신설(17번째 솔버 랜딩) · 로컬 커밋 `790b13e0` · 🔴 push 전 사장님 SQL 대기
+
+- 범위 = 도구 확장 ④ pl(사장님 지시 «/pl/solver·/th/solver 랜딩 신설»). 🔴 th = 솔버 앱에 th 없음(`solver/src/i18n.ts` Locale) → 착수 1단계에서 보류.
+- 키워드 = `docs/keyword-bank/pl-tools.md` §6(DFS 2616: gto poker 140 · poker solver 50 · SERP 폴란드어 웹 원문 0). 앱 축어 = `docs/solver-app-verbatim-pl-2026-10-17.md`(서브 추출 · HEAD fb86fce = pl 라이브와 동일 · §10 후기 폼 · pl 후기 폼은 솔버에서 아직 꺼짐).
+- 3파일(EN 마스터 · it 구성 · FAQ 26 · 링크 11) · hreflang pl-PL 17파일 · 등록 6곳 · event-config pl · 후기창 로케일 17(SQL·게이트) · spot-share pl.
+- 렌즈 2(원어민 · §13·충실도) 반영. 게이트: 빌드 exit 0 · hreflang·meta-lang·faq-schema·hangul·number-format·solver-feedback 0 · 390 넘침 0.
+- ▶ 남은 순서: 사장님 SQL(후기 로케일 제약 pl) → push → 라이브 확인 → IndexNow → MB 솔버(LOCALE_PATHS.pl + 후기 폼 pl 켜기) · MB 검수장(판정 + 횡단). 🪶 «Ręce startowe poker»·«Quiz poker» 문법 · it «quasi tutto» 과장 = 판단 대상.
+
 ## 2026-10-17 (14) — EN 손질 회차 4 · CP-ⓑ 도구 몫 · EN 11파일 + 17로케일·KO 약 250자리 · MB-382·383
 
 - 범위 = 핸드오프 «EN 손질 4». 근거 = 검수장 `검수-MB372-th도구·족보글` CLASSIFY §4 + astra thA·thB «EN 동형» 절 + j3 thA·thB §3·§5. 문안은 본체. 우편함: 새 MA 0 · 솔버 S-105(참고용) · S-106(pl 출시 · `/pl/solver` 열면 알림 요청) → MB-383 ACK.
