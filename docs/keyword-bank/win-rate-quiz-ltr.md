@@ -168,6 +168,20 @@
 - 용어(코퍼스 `lib/posts-ru` 6편 + 계산기 사전 + `/ru/solver` · 10-13 grep): колл 149 · фолд 77(сброс- 77) · чек 102 · рейз 284 · олл-ин 171 · вскрытие 92(шоудаун 0) · диапазон 72(рейндж 0) · эквити 57 · пот-оддсы 27 · имплайд 13 · соперник 48(оппонент 0) · оверкарта 15 · флеш-дро 9 · стрит-дро 5 · топ-пара 7 · комбо 7 · п.п. 34. 족보 = 계산기 사전(«Тройка»). 숫자 = ru-RU(«1 000» · «0,25» · «35%»).
 - 푸터: ru에 pot odds·포지션 글이 없다 → `/ru/calculator` · `/ru/blog/texas-holdem-rules-for-beginners`(«Как работают пот-оддсы» 절 실재) · `/ru/blog/holdem-betting-actions`.
 
+## th (Thailand 2764 · 2026-10-17 · tools lane B)
+
+Source: docs/keyword-bank/th-tools.md sections 1, 2-E and 4; no new measurement.
+
+| Keyword | Monthly volume | Decision |
+|---|--:|---|
+| poker quiz | 10 | Quiz/training head, paired with ควิซโป๊กเกอร์ |
+| poker trainer | 10 | Supporting training intent |
+| poker simulator | 40 | Excluded from the head: game/app intent |
+| เกมโป๊กเกอร์ | 880 | Excluded: game/app intent |
+| จำลองโป๊กเกอร์ · ฝึกเล่นโป๊กเกอร์ | no data | No demand claim |
+
+Head: ควิซโป๊กเกอร์: poker quiz ฝึก equity. Latin digits, comma thousands, decimal point, 35% without a gap. Pot odds starts at the flop. Missing pot-odds/position posts omitted; calculator is the explicit Lane A integration dependency. External solver keeps lang=en and (ภาษาอังกฤษ).
+
 ## zh-hant (Taiwan 2158 · 2026-10-14 · tool-lanes 🅰)
 
 > DFS `keywords_data/google_ads/search_volume/live`(2158 · `language_code` 생략 — `zh-hant-calculator.md` 머리 절과 같은 방식) · SERP `serp/google/organic/live/advanced`(2158 · `zh-TW` · mobile/android · 2건) · 구글 자동완성(`client=firefox` · `hl=zh-TW` × `gl=TW`/`HK` · 10시드 · TW = HK 완전 동일).
