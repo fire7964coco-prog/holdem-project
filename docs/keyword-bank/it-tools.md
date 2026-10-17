@@ -88,3 +88,11 @@
 
 - 🔴 «tabella poker»를 «Range preflop» 동의어로 쓰지 않는다(족보표 의도와 섞임 · 솔버 IT2 · 위 §4 «쓰지 않는다»와 같은 방향).
 - `/it/solver`(④) 카피 단계에서 볼륨을 재고 «검색어» 칸을 채운다.
+
+## 6. `/it/solver` 랜딩 실측 (2026-10-17 · DFS 2380 · it)
+
+- 볼륨(월 · 12개월): **gto poker 480**(260~720) · solver poker 90(50~140) · poker solver 70 · gto solver 40 · solver poker gratis 30 · solver gto 10 · gto poker solver 10 · poker solver free 10 · gto solver gratis = null · 🪶 브랜드 gto wizard **5.400**(직접 조준 금지 · 비교 문맥만). 요청 24어 중 응답 10어(나머지 = 데이터 없음 · 0으로 읽지 않는다).
+- SERP «gto poker»: 1·2 gtowizard(EN·/it/) · 3 pokerstars.it «GTO basics: che cosa è la Game Theory Optimal» · 4 reddit(번역) · 5 Play GTO Poker Trainer · 6 grinderlabpoker «GTO: Le basi» · 7 statisticseasily · 8 888casino.it «guida da principianti per la GTO» · 9 YouTube · 10 upswing(EN). → **정의 의도 6/10** — «Cosa significa GTO nel poker?» H2가 머리 질문. 이탈리아어 브라우저 솔버 페이지 0.
+- SERP «solver poker»: upswing(EN) · reddit «I migliori Poker Solver (Gratuiti)?»(번역) · pocketsolver(EN) · reddit «Quale solver GTO…» · reddit «solver gratuiti open source» · hudstore(EN) · reddit «cos'è un solver» · gtogecko(EN) · Play(pt). → **이탈리아어 원문 페이지 0** · 검색자 질문 = «gratuito»·«open source»·«cos'è un solver». 훅 = «gratis · nel browser · senza installare · open source».
+- 🔴 오역 관찰: pokerstars.it·888 일부가 GTO를 «teoria dei giochi ottimale»로 옮긴다(«최적인 것은 전략»이지 이론이 아니다) → 랜딩은 «strategia ottimale secondo la teoria dei giochi»로 풀고 경쟁사 이름 없이 바로잡는다.
+- 조준 확정: title «Solver poker GTO gratis — calcola gli spot nel browser» · H1 «Solver GTO gratis per il poker…» · «nomi diversi» 문단에 solver poker · poker solver · gto poker · solver postflop.

@@ -95,6 +95,7 @@ export const metadata: Metadata = {
       "tr-TR": `${SITE}/tr/solver`,
       "vi-VN": `${SITE}/vi/solver`,
       "ru-RU": `${SITE}/ru/solver`,
+      "it-IT": `${SITE}/it/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(2026-08-23 게이트 `check:meta-lang`)

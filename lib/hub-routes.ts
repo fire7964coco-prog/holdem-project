@@ -48,7 +48,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-10-16 pl 도구 회차
   pl: ["/pl/calculator", "/pl/hand-chart", "/pl/glossary", "/pl/tournaments", "/pl/win-rate-quiz"],
   // ★2026-10-16 it 도구 회차
-  it: ["/it/calculator", "/it/hand-chart", "/it/glossary", "/it/tournaments", "/it/win-rate-quiz"],
+  // ★2026-10-17 `/it/solver` 신설(16번째 솔버 랜딩 · 솔버 it 라이브 S-104).
+  it: ["/it/calculator", "/it/hand-chart", "/it/glossary", "/it/solver", "/it/tournaments", "/it/win-rate-quiz"],
   /**
    * ⚠ `/en/ranking`·`/en/quiz`는 좌측 레일 메뉴에서만 뺐다(사장님 요청).
    *   **여기서는 빼면 안 된다** — page.tsx가 <HubPage>로 감싸져 있어서 이 목록에서 지우면

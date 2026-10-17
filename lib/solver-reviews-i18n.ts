@@ -1327,13 +1327,103 @@ const ru: SolverReviewsDict = {
   },
 };
 
+/**
+ * it — ★2026-10-17 `/it/solver` 신설과 함께. 폼 문구(formTitle~saved · errors)는 솔버 초안
+ *   (`solver/src/solver-feedback-labels.ts` feedbackLabels.it) 축어 — tabQuestion·placeholderQuestion·loginEmail 등
+ *   솔버 초안에 없는 키는 본체가 같은 결(tu체 · 보상·응모 뉘앙스 없음)로 썼다.
+ *   🔴 «Recensione»(제품 후기) ≠ «Ripasso»(오답 복습) ≠ «Analisi mani»(핸드 분석) — 용어 정본 «솔버 추가».
+ *   🔴 사용자 성별이 드러나는 형용사·과분사 일치 피함(«Iscrizione: …» · «Pubblicato» = 글이 주어).
+ */
+const it: SolverReviewsDict = {
+  title: "Cosa dice chi l’ha già usato",
+  summary: (n, avg, r) => `${n} ${n === 1 ? "recensione" : "recensioni"}${avg !== null ? ` · ★ ${avg.toFixed(1).replace(".", ",")} (${r} ${r === 1 ? "valutazione" : "valutazioni"})` : ""}`,
+  noticeNeg: "Non cancelliamo le recensioni negative.",
+  noticeHide: "Nascondiamo solo link, insulti o pubblicità.",
+  criteriaToggle: "Vedi i criteri",
+  criteria: {
+    link: "Link — messaggi con un indirizzo esterno",
+    abuse: "Insulti — parole offensive o volgari verso una persona (una critica dura al prodotto non rientra qui)",
+    ad: "Pubblicità — promozione di un altro servizio o prodotto",
+  },
+  formTitle: "Com’è stata la tua esperienza con il solver?",
+  tabReview: "Recensione",
+  tabQuestion: "Domanda",
+  ratingLabel: "Valutazione (facoltativa)",
+  placeholderReview: "Scrivi qualche parola: cosa ti è piaciuto e cosa no, senza filtri",
+  placeholderQuestion: "Qual è la tua domanda?",
+  downsideToggle: "+ Aggiungi cosa migliorare",
+  downsidePlaceholder: "Cosa si potrebbe migliorare (facoltativo)",
+  postingAs: (name) => `Pubblichi come ${name}`,
+  change: "Modifica",
+  nicknameSave: "Salva nome",
+  nicknameCancel: "Annulla",
+  nicknameEmailWarn: "Il tuo nome corrisponde alla prima parte dell’indirizzo email. Scegli un nome prima di renderlo pubblico.",
+  submit: "Pubblica",
+  submitEdit: "Aggiorna",
+  loginTitle: "Accedi per pubblicare il testo così come l’hai scritto",
+  loginGoogle: "Continua con Google",
+  loginKakao: "Continua con Kakao",
+  loginEmail: "Accedi con l’email",
+  linkWarn: "Non puoi inserire link",
+  saved: "Pubblicato. Grazie!",
+  firstReview: "Lascia la prima recensione",
+  featured: "Recensioni in evidenza",
+  allReviews: (n) => `Vedi tutte le recensioni (${n} · prima le più recenti)`,
+  reviewsList: "Recensioni",
+  questions: "Domande",
+  answered: "Con risposta",
+  awaiting: "In attesa di risposta",
+  operator: "Team HoldemMaster",
+  helpful: "Utile",
+  edit: "Modifica",
+  del: "Elimina",
+  confirmDelete: "Vuoi eliminare questo messaggio?",
+  mine: "Tuo",
+  joined: (my) => `Iscrizione: ${my}`,
+  usage: "Ha usato il solver",
+  devices: { phone: "Smartphone", tablet: "Tablet", desktop: "Computer" },
+  reasons: { link: "link", abuse: "insulto", ad: "pubblicità" },
+  hiddenMine: (r) => `Nascosto · motivo: ${r} — lo vedi solo tu`,
+  requestReview: "Chiedi una nuova verifica",
+  requested: "Verifica richiesta",
+  avatarTitle: "Immagine del profilo (facoltativa)",
+  avatarInitial: "Iniziale",
+  avatarCharacter: "Scegli un personaggio",
+  avatarUpload: "Carica un’immagine",
+  avatarProvider: "Usa la mia foto di Google/Kakao",
+  avatarHidden: (r) => `La tua immagine del profilo è stata nascosta (motivo: ${r})`,
+  unavailable: "Al momento non riusciamo a caricare le recensioni.",
+  errors: {
+    login: "Accedi.",
+    unavailable: "Riprova tra un momento.",
+    body_short: "Scrivi almeno un paio di caratteri.",
+    body_long: "Massimo 600 caratteri.",
+    downside_long: "Massimo 200 caratteri per indicare cosa migliorare.",
+    link: "Non puoi inserire link.",
+    rating: "Valutazione non valida.",
+    rating_needs_body: "Aggiungi qualche parola: non accettiamo valutazioni senza testo.",
+    rate: "Riprova tra qualche minuto.",
+    nickname_confirm: "Scegli un nome prima di pubblicare.",
+    nickname_short: "Il nome deve avere almeno 2 caratteri.",
+    nickname_long: "Il nome può avere al massimo 20 caratteri.",
+    nickname_link: "Il nome non può contenere indirizzi o email.",
+    nickname_impersonation: "Non sono ammessi nomi che sembrino ufficiali o di membri dello staff.",
+    image_type: "Sono ammessi solo file immagine (jpg, png, webp, gif).",
+    image_size: "Carica un’immagine di dimensioni inferiori a 5 MB.",
+    already_requested: "Hai già chiesto una nuova verifica.",
+    not_found: "Contenuto non trovato. Aggiorna la pagina.",
+    bad_input: "Riprova tra un momento.",
+    locale: "Riprova tra un momento.",
+  },
+};
+
 export const SOLVER_REVIEWS_I18N: Record<SolverFeedbackLocale, SolverReviewsDict> = {
-  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi, ru,
+  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi, ru, it,
 };
 
 /** Intl 로케일 태그 — 가입 시기·날짜 표기 */
 export const SOLVER_REVIEWS_INTL_TAG: Record<SolverFeedbackLocale, string> = {
   ko: "ko-KR", en: "en-US", ja: "ja-JP", es: "es-ES", pt: "pt-BR", de: "de-DE",
   zh: "zh-CN", "zh-hant": "zh-TW", fr: "fr-FR", id: "id-ID", ms: "ms-MY", hi: "hi-IN",
-  tr: "tr-TR", vi: "vi-VN", ru: "ru-RU",
+  tr: "tr-TR", vi: "vi-VN", ru: "ru-RU", it: "it-IT",
 };

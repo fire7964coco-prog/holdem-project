@@ -206,6 +206,15 @@ const COPY = {
     desc: "Считай GTO-стратегию для постфлоп-спота прямо в браузере — бесплатно, без установки и аккаунта",
     cta: "Открыть солвер →",
   },
+  // 이탈리아어(tu체) — ★2026-10-17 `/it/solver` 신설 · 용어 = translation-terms-it «Solver»·«GTO» 영어 유지(risolutore 금지).
+  //   title은 랜딩 HubPage title과 같은 라벨 · cta = 랜딩 본문 CTA 축어.
+  it: {
+    href: "/it/solver",
+    badge: "♠ Strumento gratuito",
+    title: "Solver GTO",
+    desc: "Calcola la strategia GTO di uno spot postflop direttamente nel browser — gratis, senza installare nulla e senza account",
+    cta: "Apri il solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

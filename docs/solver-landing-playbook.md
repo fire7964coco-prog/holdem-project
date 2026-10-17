@@ -11,7 +11,9 @@
 > **정본은 `solver/src/i18n.ts:18`의 `Locale` 타입 축어**이고, 라이브 `?lang=` 12/12가 고유 문안임을 확인했다(2026-09-06).
 > 랜딩이 없는 언어 = **ms · hi** — 앱만 있고 랜딩은 아직 없다(M-100은 «새 hi 랜딩 신설은 이번 요청에 포함하지 않는다»고 명시했다).~~ (이력 · 아래 10-09 행이 현재)
 >
-> **2026-10-10 최신 운영 상태**: 랜딩 **15개**(… + `ru` 10-10 · 앱 15언어 전부 랜딩 있음) · hreflang 소스 세트(15파일) = 14코드 + `ru-RU`. ru = 러시아 본토 측정 불가 → 대리 측정(뱅크 `docs/keyword-bank/ru-gto-solver.md`) · 도구 0개라 hi·vi 선례 ⓐ · 셸 등록 = `hub-i18n` RU + `bottom-tab-bar` TAB_LABELS + `event-config` 상태 라벨(셋 다 없으면 영어로 떨어진다 — ru에서 탭·이벤트 라벨이 실제로 영어로 나왔다).
+> **2026-10-17 최신 운영 상태**: 랜딩 **16개**(… + `it` 10-17 · 솔버 it 라이브 S-104) · hreflang 소스 세트(16파일) = 15코드 + `it-IT`. it = 도구 5가 먼저 있어 링크는 EN과 같은 수(it 도구 4 + 글 2) · 앱 축어 = 솔버 소스 추출(`docs/solver-app-verbatim-it-2026-10-17.md`) · event-config it 신설.
+>
+> ~~**2026-10-10 운영 상태**~~(이력): 랜딩 **15개**(… + `ru` 10-10 · 앱 15언어 전부 랜딩 있음) · hreflang 소스 세트(15파일) = 14코드 + `ru-RU`. ru = 러시아 본토 측정 불가 → 대리 측정(뱅크 `docs/keyword-bank/ru-gto-solver.md`) · 도구 0개라 hi·vi 선례 ⓐ · 셸 등록 = `hub-i18n` RU + `bottom-tab-bar` TAB_LABELS + `event-config` 상태 라벨(셋 다 없으면 영어로 떨어진다 — ru에서 탭·이벤트 라벨이 실제로 영어로 나왔다).
 >
 > ~~**2026-10-09 운영 상태**~~(이력): 랜딩 **14개**(`ko en ja es pt de zh zh-hant fr id ms hi` + `tr` 10-06 + `vi` 10-09) · 앱은 15개 언어(+tr·vi·ru · S-049 10-09 라이브). hreflang 소스 세트(14파일) = 12코드 + `tr-TR` + `vi-VN`. `ru`는 랜딩 없음(ru 글 7편·뱅크 없음 → SERP 조사 회차 뒤). vi는 GTO 예제 글·strategy·equity·c-bet 글이 없어 **hi 선례 ⓐ(링크 빈자리를 안고 랜딩 먼저)** 로 열었다 — 뱅크 `docs/keyword-bank/vi-gto-solver.md` §6·§8.
 >

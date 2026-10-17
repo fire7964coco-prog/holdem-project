@@ -43,7 +43,7 @@ create table if not exists public.solver_feedback (
   review_requested_at timestamptz,      -- 숨김 뒤 «다시 검토 요청» 1회
   created_at          timestamptz not null default now(),
   updated_at          timestamptz not null default now(),
-  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru')),
+  constraint solver_feedback_locale   check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru','it')),
   constraint solver_feedback_kind     check (kind in ('review','question')),
   constraint solver_feedback_body_len check (char_length(body) between 2 and 600),
   constraint solver_feedback_body_link check (body !~* '(https?://|www\.|\.(com|net|org|kr|io|me|xyz|gg|ly|link|site|shop|top)([/?#]|$|[^a-z0-9]))'),
@@ -66,7 +66,7 @@ create index if not exists solver_feedback_user_idx on public.solver_feedback(us
 --      위 create table 은 테이블이 있으면 건너뛰므로 제약은 여기서 다시 건다. 목록은 위 check 와 같아야 한다.
 alter table public.solver_feedback drop constraint if exists solver_feedback_locale;
 alter table public.solver_feedback add constraint solver_feedback_locale
-  check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru'));
+  check (locale in ('ko','en','ja','es','pt','de','zh','zh-hant','fr','id','ms','hi','tr','vi','ru','it'));
 
 -- 3) 운영자 답글 — 관리자 화면에서만 쓴다(후기 1개에 답글 1개)
 create table if not exists public.solver_feedback_replies (
