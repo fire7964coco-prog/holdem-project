@@ -199,7 +199,7 @@ A. Nie. Strit (#6) nigdy nie bije koloru (#5) w standardowym Texas Hold'em. To c
 
 **Q. Dlaczego kolor jest wyżej niż strit?**
 
-A. Czysta matematyka. Strit ignoruje kolory kart, więc da się go ułożyć na około 10 200 sposobów, a kolor tylko na 5 108. Wśród układów z pięciu kart kolor jest więc mniej więcej dwa razy rzadszy; przy wszystkich siedmiu kartach do rivera zostaje różnica około 1,5 raza (3,03% wobec 4,62%). Licząc układy z pięciu kart, a według nich ustalono kolejność, rzadszy układ zawsze stoi wyżej.
+A. Czysta matematyka. Strit ignoruje kolory kart, więc da się go ułożyć na około 10 200 sposobów, a kolor tylko na 5 108. Wśród układów z pięciu kart kolor jest więc mniej więcej dwa razy rzadszy; przy wszystkich siedmiu kartach do rivera zostaje różnica około 1,5 raza (3,03% wobec 4,62%). Wśród układów z pięciu kart — a według nich ustalono kolejność — rzadszy układ zawsze stoi wyżej.
 
 **Q. Co bije kolor w pokerze?**
 

@@ -66,7 +66,7 @@ const TH_UI: QuizUI = {
 
   wonByFold: (pot) => `ทุกคนหมอบ คุณรับพอต ${n(pot)}`,
   splitLabel: (names) => `แบ่งเงินกองกลาง — เสมอ: ${names.join(" · ")}`,
-  winLabel: (name, cat) => `${name}ชนะ · ${cat}`,
+  winLabel: (name, cat) => `${name} ชนะ · ${cat}`,
   winLabelHero: (cat) => `คุณชนะ · ${cat}`,
 
   reviewTitle: "📋 Review — คุณควรหมอบตอนไหน?",
@@ -145,7 +145,7 @@ const TH_UI: QuizUI = {
   customClear: "ล้างทั้งหมด",
   customClose: "ปิด",
   customOff: "กลับไปสุ่มมือ",
-  customActive: "มือที่คุณกำหนด — มือใหม่จะยังใช้ไพ่เหล่านี้",
+  customActive: "มือที่คุณกำหนด — เมื่อเริ่มมือถัดไปจะยังใช้ไพ่เหล่านี้",
   customEdit: "แก้ไข",
   shareBtn: "คัดลอกลิงก์มือนี้",
   shareCopied: "Copied ผู้ที่เปิดลิงก์จะเล่นมือนี้ตั้งแต่ preflop ด้วยไพ่และ equity เดียวกัน",

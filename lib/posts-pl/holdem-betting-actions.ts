@@ -164,7 +164,7 @@ Pełna mechanika — matematyka puli bocznej, kto pokazuje karty pierwszy, table
 
 Ten poradnik pokazuje, czym *jest* każda akcja i kiedy jest *legalna*. Którą wybrać — kiedy stawiać, kiedy sprawdzenie jest opłacalne, kiedy dobry układ trzeba spasować — to inne drzewko umiejętności:
 
-- Najpierw ocena surowej siły twojego układu: hierarchia układów pokerowych
+- Najpierw ocena surowej siły twojego układu: [hierarchia układów pokerowych](/pl/blog/holdem-hand-rankings)
 - Rama dla każdej decyzji: strategia Texas Hold'em i 5 decyzji
 - Dlaczego miejsce przy stole zmienia wszystko: pozycje w pokerze
 

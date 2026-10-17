@@ -126,7 +126,7 @@ export const POST: Post = {
 
 ![ไพ่เริ่มต้นสองมือวางเทียบกันบนผ้าเขียว — A-K ข้าง A-9 แสดงว่า A ใบเดียวกันแต่คิกเกอร์อ่อนกว่ากลายเป็นกับดักที่โดนดอม](/images/holdem-kicker-dominated.webp "A ใบเดียวกัน ชะตาต่างกัน: คิกเกอร์คือสิ่งที่แยกมือพรีเมียมออกจากมือที่โดนดอม")
 
-กลับมาที่บายอินของผม บอร์ด ==b:A♦ 7♣ 2♥ Q♠ 4♦== ไม่มีสเตรทหรือฟลัชเป็นไปได้
+กลับมาที่บายอินของผม บอร์ด ==b:A♦ 7♣ 2♥ Q♠ 4♦== ทั้งสองมือไม่มีใครได้สเตรทหรือฟลัช
 
 - **A9:** A♠ 9♣ → คู่ A ไพ่ห้าใบที่ดีที่สุด ==A♠ A♦ Q♠ 9♣ 7♣==
 - **AK:** A♥ K♦ → คู่ A ไพ่ห้าใบที่ดีที่สุด ==g:A♥ A♦ K♦ Q♠ 7♣==
@@ -235,7 +235,7 @@ A. สำคัญมาก เพราะทุกคนใช้ไพ่ก�
   <a href="/th/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">กติกาโชว์ดาวน์เท็กซัสโฮลเด็ม</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">เปิดไพ่ยังไงเมื่อทุกคนเล่นบอร์ด และใครได้ส่วนแบ่ง</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ใครเปิดไพ่ก่อน และการคว่ำไพ่ทิ้งมีผลอย่างไร</div>
   </a>
 </div>
 `.trim(),

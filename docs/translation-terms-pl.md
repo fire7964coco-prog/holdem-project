@@ -334,6 +334,14 @@
 4. **숫자를 받는 템플릿**은 1 / 2–4(12–14 제외) / 5+ 세 갈래로 분기하거나, 분기가 안 되는 자리는 «라벨: {n}» 꼴로 쓴다(예: «Rąk: {n}» · «(outy: {n})» · 동사 pasuje/pasują).
 5. **Zasada 2 i 4** 순서를 고정한다(«4 i 2» 금지). **Amount to call = Kwota sprawdzenia**(pl glossary 용례).
 
+### 글·검수 반영 규칙 (2026-10-17 · 검수장 MA-609·612 제안 반영)
+
+6. **karo 복수 생격 = «kar»**(WSJP 굴절표 · «pięć kar»). 로열 플러시 약칭은 «royal» 단독 대신 **«poker królewski»**. 시작 패 표제 = «Ręce startowe w pokerze».
+7. **규칙 번호 산문 꼴** = «(TDA 2024, zasada N)» · 문장 안에서는 소문자(«w regule 75»).
+8. **kicker 목적격**은 한 글 안에서 한 꼴로만(«ma kicker» / «ma kickera» 섞지 않음).
+9. **«dorównać» = 여격 지배**(«dorównać dużemu blindowi»). 금액·베팅을 맞추는 뜻은 **«wyrównać»**(부정이면 생격 «których nie mógł wyrównać»).
+10. **«nieparzysty żeton (odd chip)»** = 현지 규정 실제 용례로 검수장 최종 OK(MA-612) — 확정 후보.
+
 ### 쟁점(사람 판단 필요)
 
 - **미확인·부분 확인 라벨:** 일반 UI, solver 고급 설정·가중치·EV loss·실행 조작, 차트 강도 등급은 후속 원문 또는 폴란드어 사용자의 판단이 필요하다. 부분 확인인 대회 상태 묶음과 Clear all도 포함한다. 이 문서만으로 pl UI 현지화가 전부 끝났다고 보고하지 않는다.

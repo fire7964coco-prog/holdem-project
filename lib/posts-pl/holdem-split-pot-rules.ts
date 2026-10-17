@@ -26,7 +26,7 @@ export const POST: Post = {
     "chop poker",
   ],
   content: `
-Na początku mojej przygody z pokerem prowadziłem akcję na każdym streecie — przebicie preflop, zakład na flopie i turnie, sprawdzenie na riverze. Odkryłem J♠ 10♥. Rywal odwrócił **5♣ 2♦**. „Wygrałem, prawda?” Rozdający nic nie powiedział, tylko wskazał board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Żadna z naszych kart zakrytych nie biła trójki ósemek z kickerami as-król==, więc rozdający spokojnie przeciął pulę na pół.
+Na początku mojej przygody z pokerem prowadziłem akcję na każdym streecie — przebicie preflop, zakład na flopie i turnie, a na riverze rywal sprawdził mój zakład. Odkryłem J♠ 10♥. Rywal odwrócił **5♣ 2♦**. „Wygrałem, prawda?” Rozdający nic nie powiedział, tylko wskazał board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Żadna z naszych kart zakrytych nie biła trójki ósemek z kickerami as-król==, więc rozdający spokojnie przeciął pulę na pół.
 
 Dostać połowę puli, którą miałeś za wygraną, to szok. Ale ==g:podział puli rządzi się jasnymi zasadami== — i odpowiada na pytanie, które początkujący zadają najczęściej: **czy w pokerze może być remis?** Może. Oto wszystkie sytuacje, w których do niego dochodzi.
 
@@ -92,13 +92,13 @@ Pary i dwie pary zwykle rozstrzygają kickery — ale jeśli kickery też są r�
 
 ## Co się dzieje, jeśli na stole jest strit? Gdy board gra za wszystkich
 
-Pula może mieć kilku zwycięzców — i wcale nie trzeba do tego dwóch potworów. Gdy pięć kart wspólnych to już najlepsza możliwa piątka dla każdego, kto został w rozdaniu, ==**board gra**== i wszyscy pozostali dzielą pulę, czy to dwóch graczy, czy pięciu. Najczęstszy przypadek to strit na stole: na 9♠ 8♦ 7♣ 6♥ 5♠ każdy, kto nie ma dziesiątki, gra strita z boardu i dzieli pulę.
+Pula może mieć kilku zwycięzców — i wcale nie trzeba do tego dwóch potworów. Gdy pięć kart wspólnych to już najlepsza możliwa piątka dla każdego, kto został w rozdaniu, ==**board gra**== i wszyscy pozostali dzielą pulę, czy to dwóch graczy, czy pięciu. Typowy przypadek to strit na stole: na 9♠ 8♦ 7♣ 6♥ 5♠, jeśli nikt nie ma dziesiątki, wszyscy grają strita z boardu i dzielą pulę.
 
 To moje rozdanie 8-8-8-A-K: moje J♠ 10♥ i jego 5♣ 2♦ grały trójkę ósemek z boardu z kickerami as-król — identyczne piątki, czyli podział, gdy tylko obie ręce zostały odkryte. Skrajny przypadek to board w rodzaju A♠ K♠ Q♠ J♠ 10♠ (poker królewski): żadne karty zakryte go nie poprawią, więc ==g:wszyscy, którzy zostali, dzielą pulę==.
 
 > **Kontrola:** czy *twoja* najlepsza piątka — z użyciem co najmniej jednej karty z ręki — bije własną piątkę boardu? Jeśli tak, grasz swoją rękę. Jeśli nie, gra board i najpewniej dzielisz pulę. Jak w ten sposób czytać board krok po kroku, przećwiczysz na zagadkach w [poradniku o układach pokerowych](/pl/blog/holdem-hand-rankings).
 
-**I rzecz najważniejsza przy stole: przy showdownie z rywalem, który wciąż jest w rozdaniu, twoja ręka wygrywa tylko wtedy, gdy odkryjesz ją na stole.** Ręka wrzucona do mucka jest zwykle martwa, nawet jeśli dałaby podział (odzyskać można tylko rękę, którą da się jednoznacznie zidentyfikować, i tylko decyzją floora; Reguła turniejowa WSOP 109) — gdy grasz board, i tak musisz odkryć obie karty zakryte, inaczej tracisz swoją część puli (Reguła 172 WSOP dla gier cashowych; regulamin turniejowy WSOP powtarza to w Regule 75). Kto odkrywa pierwszy i jak wygląda kolejność, wyjaśnia [poradnik o zasadach showdownu](/pl/blog/holdem-showdown-rules).
+**I rzecz najważniejsza przy stole: przy showdownie z rywalem, który wciąż jest w rozdaniu, twoja ręka wygrywa tylko wtedy, gdy odkryjesz ją na stole.** Ręka wrzucona do mucka jest zwykle martwa, nawet jeśli dałaby podział (odzyskać można tylko rękę, którą da się jednoznacznie zidentyfikować, i tylko decyzją floora; Reguła turniejowa WSOP 109) — gdy grasz board, i tak musisz odkryć obie karty zakryte, inaczej tracisz swoją część puli (Reguła 172 WSOP dla gier cashowych; regulamin turniejowy WSOP powtarza to w regule 75). Kto odkrywa pierwszy i jak wygląda kolejność, wyjaśnia [poradnik o zasadach showdownu](/pl/blog/holdem-showdown-rules).
 
 :::tip[Jeśli gra board, a ktoś stawia zakład na riverze, **pas z automatu jest błędem**. Gdy nic nie może pobić boardu, podział jest pewny, a sprawdzenie i tak oddaje ci twoją część wszystkiego, co już było w puli (heads-up połowę) — pasując, oddajesz ją za darmo. Gdy board *da się* pobić, policz częstotliwość: heads-up, przeciw zakładowi wielkości puli potrzebujesz, żeby rywal też grał board mniej więcej 2 razy na 3; przeciw zakładowi pół puli — mniej więcej w połowie przypadków (przy większej liczbie graczy w rozdaniu twoja część podziału maleje, a poprzeczka rośnie). To wysoka poprzeczka dla sprawdzenia — i niska dla pasa: przeciw zakładowi wielkości puli pas jest poprawny, gdy rywal ma prawdziwą rękę częściej niż **raz na trzy**, a na riverze, na którym board wciąż da się pobić, to normalna sytuacja.]:::
 
@@ -133,7 +133,7 @@ Przy podziale na trzech z dwoma nieparzystymi żetonami po jednym dostają dwa n
 
 ## Czy pule boczne też się dzielą? Remis, gdy ktoś jest all-in
 
-Gdy gracze są all-in za różne kwoty, a pozostali dalej stawiają, żetony tworzą ==**główną pulę**== (prawo do niej mają wszyscy) plus jedną lub więcej ==**pul bocznych**== (tylko dla graczy, którzy wpłacili więcej, niż mógł dorównać krótszy stack all-in). Każdą pulę przyznaje się — albo dzieli — ==**osobno**==, na podstawie najlepszej ręki wśród graczy uprawnionych do tej puli.
+Gdy gracze są all-in za różne kwoty, a pozostali dalej stawiają, żetony tworzą ==**główną pulę**== (prawo do niej mają wszyscy) plus jedną lub więcej ==**pul bocznych**== (tylko dla graczy, którzy wpłacili więcej, niż mógł wyrównać krótszy stack all-in). Każdą pulę przyznaje się — albo dzieli — ==**osobno**==, na podstawie najlepszej ręki wśród graczy uprawnionych do tej puli.
 
 Przykład z obliczeniami: A jest all-in za 100; B i C wpłacają po 300. To daje **główną pulę 300** (100 × 3) i **pulę boczną 400** (200 + 200, tylko B i C). Board wychodzi A♦ J♥ 7♠ 4♣ 2♥:
 
@@ -206,11 +206,11 @@ A. Od każdego rywala możesz wygrać tylko tyle, ile sam wpłaciłeś. Jeśli A
 
 **Q. Kto ma prawo do puli bocznej?**
 
-A. Tylko gracze, którzy wpłacili żetony do tej konkretnej puli bocznej — czyli ci, którzy wpłacili więcej, niż mógł dorównać krótszy stack all-in. Gracz all-in ma prawo tylko do głównej puli (plus ewentualnych wcześniejszych pul bocznych, do których wpłacił), nigdy do puli bocznej zbudowanej z żetonów, których nie mógł dorównać. Każdą pulę dostaje najlepsza ręka wśród jej własnych uprawnionych graczy.
+A. Tylko gracze, którzy wpłacili żetony do tej konkretnej puli bocznej — czyli ci, którzy wpłacili więcej, niż mógł wyrównać krótszy stack all-in. Gracz all-in ma prawo tylko do głównej puli (plus ewentualnych wcześniejszych pul bocznych, do których wpłacił), nigdy do puli bocznej, do której nie wniósł żetonów. Każdą pulę dostaje najlepsza ręka wśród jej własnych uprawnionych graczy.
 
 **Q. Czy można wygrać jednocześnie główną pulę i pulę boczną?**
 
-A. Tak. Gracz z głębszym stackiem i najlepszą ręką może wygrać główną pulę i każdą pulę boczną, do której ma prawo — zgarniając wszystko. Krótki stack all-in może natomiast wygrać tylko główną pulę (i ewentualne wcześniejsze pule boczne, do których wpłacił); nigdy nie zgarnie żetonów, których nie dorównał, bez względu na siłę ręki.
+A. Tak. Gracz z głębszym stackiem i najlepszą ręką może wygrać główną pulę i każdą pulę boczną, do której ma prawo — zgarniając wszystko. Krótki stack all-in może natomiast wygrać tylko główną pulę (i ewentualne wcześniejsze pule boczne, do których wpłacił); nigdy nie zgarnie żetonów, których nie mógł wyrównać, bez względu na siłę ręki.
 
 **Q. Czy chop w turnieju to to samo co podział puli?**
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Kicker w pokerze — co to jest, ile kickerów ma każdy układ i zdominowany as",
   seoTitle: "Para asów, a pula nie twoja? — Kicker w pokerze",
   desc: "Kicker to karta boczna, która rozstrzyga remis w pokerze. Które układy go mają i ile, dlaczego A9 przegrywa z AK i wyjątek karety, o którym zapomina większość.",
-  tldr: "Kicker to najwyższa karta boczna, która nie należy do twojego układu — rozstrzyga remis, gdy dwóch graczy ma układ tej samej wartości. Najwyższa karta ma 4 kickery, para 3, trójka 2, dwie pary 1; strit, kolor, full i poker nie mają żadnego. Dlatego AK bije AQ, gdy as z boardu daje obu tylko parę asów.",
+  tldr: "Kicker to najwyższa karta boczna, która nie należy do gotowej kombinacji — rozstrzyga remis, gdy dwóch graczy ma układ tej samej wartości. Najwyższa karta ma 4 kickery, para 3, trójka 2, dwie pary 1; strit, kolor, full i poker nie mają żadnego. Dlatego AK bije AQ, gdy as z boardu daje obu tylko parę asów.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-10-17",
