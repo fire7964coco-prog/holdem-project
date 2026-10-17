@@ -1,3 +1,10 @@
+## 2026-10-17 (17) — 솔버 홍보 매체 조사(유료 게재 효율) · `docs/media-outreach-research-2026-10-17.md`
+
+- 사장님 주제 전환: «유료 광고·백링크» → «무료 솔버를 기사·리뷰로 · 어느 매체에 맡기는 게 가장 효율적인가».
+- 서브 GPT sol(high · read-only · scratchpad) 3회 실행 중 앞 2회 중단(내가 띄운 PID 3개씩 대조 종료): ① 도박·사행성 틀로 짠 지시 → 사장님 «계산기 같은 도구인데 도박으로 서치하면 되냐» ② 지형 파악형 → 초점 «효율 비교»로. 3회째 완료(28.8KB).
+- 본체 원문 재확인 5건(문서 머리). 메모리 `solver-framing-not-gambling` 신설.
+- 결론: 유료로는 안전한 백링크 불가 · 유입 목적이면 포커 전문 매체 견적 · 저가 시험 = 뉴스와이어 77,000원 / PR TIMES 3만 엔. 갈림길 3 = 사장님(첫 목표 · 첫 시장 · 견적 문의 발송 승인).
+
 ## 2026-10-17 (16) — 언어북 en T04 반영 `a24c86dc` · `/pl/solver` 배포 · MB-384·385
 
 - 유튜브 폴더 `locales/en/t04/qa/fable-ruling.md` §4 → `translation-terms-en.md` §1 T04 행 8 + §2 T04 묶음 · `local-voice/en-video.md` 발화 4 + 상투구 2 · `keyword-bank/en-gto-solver.md` «EN 4편 추가»(검색량 미측정). 앱 낱말 = 솔버 소스 EN 사전 전건 대조(공지 «Limped pots» = 원격 notice.json · 소스 문자열 아님).
