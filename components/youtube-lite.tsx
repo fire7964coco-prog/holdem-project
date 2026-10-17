@@ -8,7 +8,18 @@ import { useState } from "react";
  * 🔴 자체 채널(홀덤마스터) 영상만 쓴다.
  * 썸네일 = sddefault(640×480 · 4:3 레터박스) → 16:9 상자에서 object-cover로 위아래 검은 띠만 잘린다.
  */
-export function YouTubeLite({ id, title, caption }: { id: string; title: string; caption?: string }) {
+export function YouTubeLite({
+  id,
+  title,
+  caption,
+  playLabel = "영상 재생",
+}: {
+  id: string;
+  title: string;
+  caption?: string;
+  /** 재생 버튼 aria-label 꼬리 — 로케일 랜딩은 자기 언어로 넘긴다 (EN = "Play video") */
+  playLabel?: string;
+}) {
   const [playing, setPlaying] = useState(false);
   return (
     <figure className="mt-6">
@@ -26,7 +37,7 @@ export function YouTubeLite({ id, title, caption }: { id: string; title: string;
             type="button"
             onClick={() => setPlaying(true)}
             className="group absolute inset-0 h-full w-full cursor-pointer"
-            aria-label={`${title} — 영상 재생`}
+            aria-label={`${title} — ${playLabel}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

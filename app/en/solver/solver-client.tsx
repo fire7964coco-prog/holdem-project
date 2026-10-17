@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { SOLVER_FAQ_EN } from "./faq";
+import { YouTubeLite } from "@/components/youtube-lite";
+import { SOLVER_VIDEOS_EN, videoCaptionEn, type SolverVideoEn } from "./videos";
 
 /**
  * ★CTA는 `?lang=en`으로 보낸다. 솔버가 이 파라미터를 읽어 `localStorage['solver.locale']='en'`으로
@@ -235,6 +237,11 @@ const SPOT_TOTAL = SPOT_GROUPS.reduce((n, g) => n + g.items.length, 0);
 
 /* ── 공통 조각 ───────────────────────────────────────────────────────── */
 
+/** 영상 4편 — 데이터·배치 근거는 `./videos.ts`(VideoObject 스키마와 같은 출처). */
+const V = (v: SolverVideoEn) => (
+  <YouTubeLite id={v.id} title={v.title} caption={videoCaptionEn(v)} playLabel="Play video" />
+);
+
 function Cta({ label, variant = "solid" }: { label: string; variant?: "solid" | "outline" }) {
   const base = "inline-block rounded-xl px-8 py-3 font-bold transition-opacity";
   return (
@@ -348,6 +355,7 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
             ),
           ])}
         />
+        {V(SOLVER_VIDEOS_EN.start)}
       </section>
 
       {/* ── GTO 뜻 ───────────────────────────────────────────────────── */}
@@ -415,6 +423,7 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
           (BTN vs BB), ready to paste into ① and ②.
         </p>
         <Table head={["Paste into", "Range"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
+        {V(SOLVER_VIDEOS_EN.solve)}
       </section>
 
       {/* ── 결과 화면 읽는 법 ────────────────────────────────────────── */}
@@ -451,6 +460,7 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
           </Link>{" "}
           cover what the solver is measuring before you try to read its numbers.
         </p>
+        {V(SOLVER_VIDEOS_EN.read)}
       </section>
 
       {/* ── 무료 범위 (기능표) ───────────────────────────────────────── */}
@@ -574,6 +584,7 @@ export default function SolverClientEn({ reviews }: { reviews?: React.ReactNode 
             practice history stay on this device even when signed in
           </li>
         </ul>
+        {V(SOLVER_VIDEOS_EN.trainer)}
         <div className="mt-5">
           <Cta label="Open the GTO Trainer →" variant="outline" />
         </div>

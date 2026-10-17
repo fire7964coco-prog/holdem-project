@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { videoObjectsEn } from "./videos";
 import { OG_IMAGE } from "@/lib/page-metadata";
 import SolverClientEn from "./solver-client";
 import HubPage from "@/components/hub-page";
@@ -133,6 +134,8 @@ const jsonLd = {
         { "@type": "ListItem", position: 2, name: "GTO Solver", item: `${SITE}/en/solver` },
       ],
     },
+    // ★2026-10-18 — 영어 채널 «Free GTO Solver Guide» Part 1~4(본문 4섹션에 임베드). 값 출처 = ./videos.ts
+    ...videoObjectsEn({ "@type": "Organization", name: "HoldemMaster", url: SITE }),
   ],
 };
 
