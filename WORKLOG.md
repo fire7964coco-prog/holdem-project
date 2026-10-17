@@ -1,3 +1,12 @@
+## 2026-10-17 (10) — MA-609·MA-612 회신+이행 · th·pl 37자리 · 배포 · MB-378
+
+- 범위 = 우편함 새 MA 2(MB-372·373 판정 결과). 언어북 th·pl ① 통독 · 보고 2편 원문 대조.
+- th 도구 12(calc dict 6 · faq 1 · tournaments-i18n 2 · quiz 2 · side-rail HUB_HEADING 1) · th 글 13(hand-rankings 5 · kicker 2 · tiebreak 3 · split 2 · blind-meaning 1) · pl 글 12(split 7 — 같은 dorównać 결함 L136 포함 · kicker · flush · hand-rankings 2 · betting-actions 링크 복원).
+- §13: th kicker L129 A9 vs AK 7장 검산(둘 다 AA 원페어 · 스트레이트·플러시 없음) · pl split L29 J♠10♥ vs 5♣2♦ / 888AK 스플릿 · L95 9-8-7-6-5 보드 10 없으면 전원 분할.
+- 변경 없음 = hand-chart 46.6%(16로케일 동문 · KO page.tsx L49 솔버 실측 근거).
+- 언어북 th ① 규칙 1~5 · pl ① 규칙 6~10 · queue §2-CP·§2-CQ 등재(EN 동형 = EN 손질 회차).
+- 빌드 exit 0(74 + intl 746) · 커밋 `6d99f85e` · MB-378.
+
 ## 2026-10-17 (9) — 유튜브 폴더 언어북 제안(EN-T03) 반영 · en ①·③ 신설
 
 - 원문 = 유튜브 `productions/holdemmaster-solver-tutorials/locales/review-package/언어북_업데이트_제안_2026-10-17_EN-T03.md`(AI 교차 검수 · 원어민 아님).
