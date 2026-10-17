@@ -93,6 +93,7 @@ export const HUB_PAGES = [
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
   th: [
     { href: "/th/calculator", icon: "🧮", label: "เครื่องคำนวณ Equity" },
+    { href: "/th/hand-chart", icon: "📊", label: "ตาราง Preflop" },
   ],
   pl: [
     { href: "/pl/calculator", icon: "🧮", label: "Kalkulator pokerowy" },
