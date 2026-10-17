@@ -1,4 +1,10 @@
-## 2026-10-17 (15) — `/pl/solver` 신설(17번째 솔버 랜딩) · 로컬 커밋 `790b13e0` · 🔴 push 전 사장님 SQL 대기
+## 2026-10-17 (16) — 언어북 en T04 반영 `a24c86dc` · `/pl/solver` 배포 · MB-384·385
+
+- 유튜브 폴더 `locales/en/t04/qa/fable-ruling.md` §4 → `translation-terms-en.md` §1 T04 행 8 + §2 T04 묶음 · `local-voice/en-video.md` 발화 4 + 상투구 2 · `keyword-bank/en-gto-solver.md` «EN 4편 추가»(검색량 미측정). 앱 낱말 = 솔버 소스 EN 사전 전건 대조(공지 «Limped pots» = 원격 notice.json · 소스 문자열 아님).
+- 사장님 SQL(후기 로케일 제약 pl) 실행 확인 → push 22:13(`790b13e0`·`ad38a048`·`a24c86dc`) → 라이브 200 · 390/1280 넘침 0 · FAQ 26 · `/it/solver`에 pl-PL hreflang 확인 · IndexNow `/pl/solver` 200.
+- MB-384(솔버: LOCALE_PATHS.pl + 후기 폼 pl 켜기) · MB-385(검수장: 신설 판정 + 16 랜딩 횡단 · 🪶 통지 3).
+
+## 2026-10-17 (15) — `/pl/solver` 신설(17번째 솔버 랜딩) · 커밋 `790b13e0`
 
 - 범위 = 도구 확장 ④ pl(사장님 지시 «/pl/solver·/th/solver 랜딩 신설»). 🔴 th = 솔버 앱에 th 없음(`solver/src/i18n.ts` Locale) → 착수 1단계에서 보류.
 - 키워드 = `docs/keyword-bank/pl-tools.md` §6(DFS 2616: gto poker 140 · poker solver 50 · SERP 폴란드어 웹 원문 0). 앱 축어 = `docs/solver-app-verbatim-pl-2026-10-17.md`(서브 추출 · HEAD fb86fce = pl 라이브와 동일 · §10 후기 폼 · pl 후기 폼은 솔버에서 아직 꺼짐).
