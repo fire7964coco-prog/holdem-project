@@ -29,12 +29,12 @@
 | [it](it.md) | Italiano | 4 |
 | [ja](ja.md) | 日本語 | 15 |
 | [ms](ms.md) | Bahasa Melayu | 27 |
-| [pl](pl.md) | Polski | 2 |
+| [pl](pl.md) | Polski | 4 |
 | [pt](pt.md) | Português | 10 |
 | [ro](ro.md) | Română | 1 |
 | [ru](ru.md) | Русский | 5 |
 | [sw](sw.md) | Kiswahili | 1 |
-| [th](th.md) | ไทย | 1 |
+| [th](th.md) | ไทย | 2 |
 | [tr](tr.md) | Türkçe | 8 |
 | [uk](uk.md) | Українська | 1 |
 | [vi](vi.md) | Tiếng Việt | 28 |

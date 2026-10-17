@@ -6,11 +6,11 @@
 
 ## ① 용어 정본 — 족보·액션·숫자 표기·문체·도구/앱 UI 낱말 (글·도구·솔버 공용 · 🔴 가장 먼저)
 
-- `docs/translation-terms-th.md` (5KB)
+- `docs/translation-terms-th.md` (55KB)
 
 ## ② 키워드 뱅크 — 검색량·SERP·자동완성·조준 (도구 서치 «글 몫 발견» 절 포함)
 
-- (없음)
+- `docs/keyword-bank/th-tools.md` (14KB)
 
 ## ③ 현지 말투 — 현지 voice·표현 축적
 

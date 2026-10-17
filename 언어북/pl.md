@@ -18,7 +18,8 @@
 
 ## ④ 계획·브리프·회차 기록 — 결정과 경위
 
-- (없음)
+- `docs/tool-lanes/pl-tools-A-report.md` (13KB)
+- `docs/tool-lanes/pl-tools-B-report.md` (14KB)
 
 ## ⑤ 공통 용어 규칙 — 11개 언어 검색 관습 용어
 

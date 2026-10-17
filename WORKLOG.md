@@ -1,3 +1,9 @@
+## 2026-10-17 (2) — 도구 전 언어 확장 th ① 서치(용어 + 도구 검색어) · 족보 글 회차 등재
+
+- th ①: GPT sol(effort medium · 워크트리 `Holdem-gpt-th`)이 `translation-terms-th.md` «도구·앱 UI 낱말» 절 작성 `a8795a68`(236항목 · pl 행 순서 · 미확인 81 · 쟁점 10: fold หมอบ/พับ/โฟลด์ · raise เรซ↔เรส 철자 · bet 3꼴 · equity 음차 2종 · 기존 절 철자 สแตก↔สแต็ก 등 · 기존 절 무수정) → Claude 원문 대조 9/9(invistools th · natural8 사전 · Smart HUD) → main ff · 워크트리·브랜치 삭제 · langbook. Claude = DataForSEO(2764·th) 70어 · SERP 8 · 자동완성(태국어 시드 40102 → 라틴 2) → `docs/keyword-bank/th-tools.md`.
+- 판독: 도구 검색은 거의 영어구(poker chart 390 · poker tournament 210 · poker calculator 140 · gto poker 590) · 태국어 도구구 측정 0 · 계산기·차트·대회 SERP 태국어 0. 함정: «equity คือ» 1.600 = 금융 · «เกมโป๊กเกอร์» 880 = 게임 · «ไพ่โป๊กเกอร์» 2.400 = 혼합(Lazada 쇼핑 포함).
+- 사장님: th 족보 글 «좋아 진행하자» → 핸드오프 «족보 글 번역 회차 pl+th» 등재(th ② 뒤). «서치 정보는 차곡차곡 쌓자 = 자산» → th-tools §2-G(GPT가 연 태국어 경쟁 페이지) · 메모리 보강.
+
 ## 2026-10-17 (1) — pl 도구 5 배포 · MB-369
 
 - 사장님 «배포해». 10-16 (24) 머지분 push → 라이브 확인 → MB-369(검수장 원어민 판정 요청 · 의심 자리 street 굴절·astra 비ASCII 깨짐·4자리 정수) → IndexNow. 수동 색인 목록에 pl 5.

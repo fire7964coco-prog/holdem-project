@@ -72,6 +72,7 @@
 |---|---|---|---|---|---|
 | it | ✅ 10-16 — `translation-terms-it.md` UI 낱말 219(미확인 53 · 쟁점 9 · GPT sol) + `keyword-bank/it-tools.md`(DFS 57어 · SERP 6 · 자동완성 2) | ✅ 10-16 (16) — 5페이지 main 머지(`ae2a45d9`·`5f7cc57d` · 미배포) · GPT sol 2레인 워크트리(A 계산기·차트·용어 / B 시뮬레이터·대회) · 레인 안에서 astra ultra 독립 검수 + 변경 줄 재교열 · 보고 = `docs/tool-lanes/it-tools-{A,B}-report.md` · 헤드 빌드 exit 0 · 남김 = 보고 ⑦(공용 OutsCalc 390 결과 카드 «19,6%» 넘침 = 전 로케일 공용 · EN-먼저 문구 4) | 솔버 몫(사장님 전달) | 솔버 라이브 뒤 | ✅ 도구 5 먼저 배포 10-16 `300364cf` MB-364(사장님 «1번») · 랜딩은 ④ 뒤 |
 | pl | ✅ 10-16 (19) — `translation-terms-pl.md` UI 낱말 236(it 219행 순서 + 소스 추가 17 · 미확인 78 · 쟁점 7 · GPT sol `c9ed8d40`) + `keyword-bank/pl-tools.md`(DFS 60어 · SERP 6 · 자동완성 2 · §5 글 몫 발견) | ✅ 10-16 (24) — 5페이지 main 머지(`d1d24bf7`·`4a92ee40`) · GPT sol high 2레인 워크트리(A 계산기·차트·용어 / B 시뮬레이터·대회 · 각 ~20분) · 레인 astra medium = §13 문장만(A 80문장 PASS · B 새 오류 0) · 원어민 렌즈 없음(검수장 몫) · 헤드 빌드 exit 0 · 화면 390·1440 넘침 0 · 보고 = `docs/tool-lanes/pl-tools-{A,B}-report.md` ⑦ · 워크트리·브랜치 정리 | 솔버 몫(사장님 전달) | 솔버 라이브 뒤 | ✅ 도구 5 배포 10-17 MB-369 · 랜딩은 ④ 뒤 |
+| th | ✅ 10-17 (2) — `translation-terms-th.md` UI 낱말 236(pl 행 순서 · 미확인 81 = 전부 75+부분 6 · 쟁점 10 · GPT sol medium `a8795a68` · Claude 원문 대조 9/9) + `keyword-bank/th-tools.md`(DFS 70어 · SERP 8 · 자동완성 라틴 2 · 태국어 시드 자동완성 40102 · §5 글 몫 = 족보 글 없음) | ▶ 다음(새 세션) | 솔버 몫(사장님 전달) | 솔버 라이브 뒤 | — |
 
 - ②·③은 ① 파일로 동시에 돈다. 도구 하나당 세부 절차 = §2. fa·he = RTL(공용 RTL 회차 R1 재사용).
 
