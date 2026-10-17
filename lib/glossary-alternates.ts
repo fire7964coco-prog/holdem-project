@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
  *   그 전까지 용어 사전은 ko·en 둘뿐이었고 서로 hreflang도 없었다.
  * 🔴 x-default = 영어판(계산기와 같은 판단).
  */
-export const GLOSSARY_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "it", "pl"] as const;
+export const GLOSSARY_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "it", "pl", "th"] as const;
 export type GlossaryLocale = (typeof GLOSSARY_LOCALES)[number];
 
 export const GLOSSARY_ALTERNATES: Record<string, string> = {
@@ -31,5 +31,6 @@ export const GLOSSARY_ALTERNATES: Record<string, string> = {
   // ★2026-10-16 it 도구 회차
   "it-IT": `${SITE}/it/glossary`,
   "pl-PL": `${SITE}/pl/glossary`,
+  "th-TH": `${SITE}/th/glossary`,
   "x-default": `${SITE}/en/glossary`,
 };

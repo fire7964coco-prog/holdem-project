@@ -23,6 +23,7 @@ import CalcCtaButton from "@/components/calc-cta-button";
  * 각 언어 포커 커뮤니티에서 실제로 쓰는 표현(equity/outs/pot odds는 대부분 영어 차용) 기준.
  */
 const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle: string }>> = {
+  th: { title: "เครื่องคำนวณ Equity", subtitle: "Equity, outs และ pot odds ในพริบตา" },
   pl: { title: "Kalkulator pokerowy", subtitle: "Equity, outy i pot odds w jednej chwili" },
   // ★2026-10-16 it 도구 회차 — title = H1
   it: { title: "Calcolatore poker", subtitle: "Equity, outs e pot odds in un istante" },
