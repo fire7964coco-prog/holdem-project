@@ -6,7 +6,8 @@
 - 원어민 검수: pl WRONG 0·RISKY 3(kicker·tiebreak seoTitle 훅 중복 → kicker «Para asów…» · «sparuje się as» → «spada as» · split H2 «strit na stole» 약속 → 보드 스트레이트 문장 추가)·STYLE 16 대부분 반영 · th WRONG 0·RISKY 1(Razz «เรซ» = raise와 충돌 → «Razz (แรซ)»)·STYLE ~24 반영(เล่นบอร์ด·เม็ด·แคชเกม·คว่ำไพ่ทิ้ง 통일 · โดนดอมิเนต · เคาน์เตอร์ฟิต).
 - 링크 복원: hand-rankings·showdown·all-in·betting-actions·beginners(pl·th)의 임시 우회 → kicker·tiebreak·split·flush 제자리(4대상 개수 EN 동일) · beginners 다음 단계 hand-rankings 링크 · /en/hand-chart·/en/calculator → 로케일 도구.
 - 함께: 코퍼스 11편 → calc-parity related 목표 8 → app/{pl,th}/calculator/dict.ts related에 flush-vs-straight. check:structure pl·th 결손 0. 빌드 exit 0(intl 746).
-- 남김: 배포 = 사장님 «배포해» 때 → MB(검수장 원어민 판정 · 의심 = pl «przestały się liczyć (counterfeit)»·«nieparzysty żeton» · th โดนดอม·เคาน์เตอร์ฟิต·ชิปเศษ·บริงอิน) → IndexNow → 수동 색인 8. 🪶 th blind-meaning showdown 카드 1장(EN 0) = 다른 슬러그 우회 흔적 · 미판정.
+- 배포: push `6ccf9fe6` · 라이브 8편 200 · IndexNow · MB-373.
+- 남김: 수동 색인 8 · 검수장 판정(MB-373 · 검수장 원어민 판정 · 의심 = pl «przestały się liczyć (counterfeit)»·«nieparzysty żeton» · th โดนดอม·เคาน์เตอร์ฟิต·ชิปเศษ·บริงอิน) → IndexNow → 수동 색인 8. 🪶 th blind-meaning showdown 카드 1장(EN 0) = 다른 슬러그 우회 흔적 · 미판정.
 
 ## 2026-10-17 (5) — MA-603·604 회신+이행 · th 도구 5 + pl·th 족보 글 배포
 
