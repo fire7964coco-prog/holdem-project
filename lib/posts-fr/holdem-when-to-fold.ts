@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Se coucher est la compétence la plus sous-estimée au poker : le pire résultat d'un fold est zéro, alors qu'un call perdant saigne des jetons sur la durée. Un joueur solide se couche sur environ 75 à 85 % des mains avant le flop, lâche après le flop les mains ratées face à une mise sur un board qui favorise l'adversaire, ainsi que les tirages faibles qui n'atteignent pas leurs cotes du pot, et, le plus dur, abandonne des mains fortes mais battues quand la ligne d'un adversaire passif crie la value. La plupart des joueurs ne suivent pas trop parce qu'ils ne savent pas lire les mains ; ils suivent parce que les jetons déjà au milieu leur semblent appartenir, et ce n'est pas le cas.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -67,9 +67,9 @@ C'est après le flop que se fait la vraie économie, et chaque street pose une q
 
 **Flop — « Ce board m'a-t-il aidé, ou lui ? »** Quand tu rates et que tu fais face à une mise sur un board qui colle à la range de ton adversaire, lâche. Une hauteur as sans tirage sur un board coordonné ne vaut pas un call « pour voir la turn ». Jette aussi les tirages faibles — un gutshot (tirage ventral) sans autre équité et avec un mauvais prix, c'est un fold, pas une poursuite.
 
-**Turn — la street de l'abandon.** C'est le fold le plus important du poker, et celui que les joueurs sautent. À la turn (le tournant), les ranges se polarisent entre « très fort ou rien » et les tailles de mise gonflent. Ton float au flop qui ne s'est pas amélioré, ta deuxième paire qui fait face à un second barrel, ton tirage qui vient de rater avec une seule carte à venir et un mauvais prix — ce sont des turns où l'on lâche, pas où l'on se convainc d'un call de plus. Si tu « floatais le flop pour bluffer la turn » et que la turn ne t'a donné aucune raison, abandonne.
+**Turn — la street de l'abandon.** C'est le fold le plus important du poker, et celui que les joueurs sautent. À la turn (le tournant), les ranges se polarisent entre « très fort ou rien » et les tailles de mise gonflent. Ton float au flop qui ne s'est pas amélioré, ta deuxième paire qui fait face à un gros second barrel d'un joueur qui bluffe rarement, ton tirage qui vient de rater avec une seule carte à venir et un mauvais prix — ce sont généralement des turns où l'on lâche, pas où l'on se convainc d'un call de plus. Si tu « floatais le flop pour bluffer la turn » et que la turn ne t'a donné aucune raison, abandonne.
 
-**River — du pur bluff-catching.** Tu ne tires plus vers rien ; la seule question est *« ma main bat-elle les mains qu'il miserait ici pour la value ? »* Si un joueur passif mise gros sur un board effrayant, la réponse honnête est généralement non. Jette les mains qui ne battent qu'un bluff quand ton adversaire bluffe rarement. Ce qui nous amène au calcul.
+**River — du pur bluff-catching.** Tu ne tires plus vers rien ; la question est *« ma main bat-elle assez de ce qu'il miserait ici — mains de value et bluffs — pour justifier le prix ? »* Si un joueur passif mise gros sur un board effrayant, la réponse honnête est généralement non. Jette les mains qui ne battent qu'un bluff quand ton adversaire bluffe rarement. Ce qui nous amène au calcul.
 
 ---
 
@@ -110,12 +110,12 @@ Jeter une main pourrie, c'est facile. Jeter une *bonne* main — top paire, over
 | **Top paire, kicker faible** | Grosses mises à la turn puis à la river | Tu bats les bluffs et les paires moins bonnes — mais sa range de value te bat au kicker |
 | **Overpaire (JJ/QQ)** | Un joueur passif relance un board coordonné | Les joueurs passifs relancent les nuts, pas du vent — tu es presque mort (très peu d'outs) |
 | **Top paire, meilleur kicker** | Le board finit avec quatre cartes à la couleur ou à la quinte | Ta paire unique ne bat pas la couleur ou la quinte qu'il représente |
-| **Un brelan servi** | Grosse relance sur un board monocolore ou à quatre cartes de quinte — **à la river** | Set contre set, c'est un cooler ; une couleur déjà faite, non. Au *flop*, ce même brelan s'améliore encore en full ou en carré ~34 % du temps d'ici la river contre une couleur faite, et gagne un stack quand il y arrive — suis |
+| **Un brelan servi** | Grosse relance sur un board monocolore ou à quatre cartes de quinte — **à la river** | Set contre set, c'est un cooler ; une couleur déjà faite, non. Au *flop*, ce même brelan s'améliore encore en full ou en carré ~34 % du temps d'ici la river contre une couleur faite, et gagne un stack quand il y arrive — suis, avec une taille de mise normale et des stacks derrière |
 | **Deuxième paire** | Payer trois streets « pour le garder honnête » | Tu paies trois fois la value pour attraper un seul bluff |
 
 </div>
 
-La ligne du brelan est celle dont il faut nommer la street, parce que le jeter trop tôt coûte plus cher que le jeter trop tard. Avec 9♠9♣ sur un flop 9♥5♥2♥ face à une couleur faite A♥K♥, le brelan gagne encore ==34 %== du temps — et aucune couleur faite ne le fait descendre bien en dessous (le plancher est d'environ 32 %, face à 3♥4♥ et ses outs de quinte flush) : il s'améliore sur les sept outs évidents (le dernier neuf, trois cinq, trois deux) *et* chaque fois que la turn et la river s'apparient entre elles. Au flop, c'est un call — non pas parce que la carte suivante seule y arrive assez souvent (sept outs, c'est environ 16 %, en dessous de la plupart des prix de mise), mais parce que quand le board s'apparie tu gagnes tout ce qu'une couleur te paiera, et jeter des brelans servis au flop coûte bien plus sur la durée que les mises que tu économises. Ce n'est qu'une fois le tirage rentré que la ligne au-dessus s'applique.
+La ligne du brelan est celle dont il faut nommer la street, parce que le jeter trop tôt coûte plus cher que le jeter trop tard. Avec 9♠9♣ sur un flop 9♥5♥2♥ face à une couleur faite A♥K♥, le brelan gagne encore ==34 %== du temps — et aucune couleur faite ne le fait descendre bien en dessous (le plancher est d'environ 32 %, face à 3♥4♥ et ses outs de quinte flush) : il s'améliore sur les sept outs évidents (le dernier neuf, trois cinq, trois deux) *et* chaque fois que la turn et la river s'apparient entre elles. Au flop, avec une taille de mise normale et des stacks encore derrière, c'est un call — non pas parce que la carte suivante seule y arrive assez souvent (sept outs, c'est environ 16 %, en dessous de la plupart des prix de mise), mais parce que quand le board s'apparie tu gagnes tout ce qu'une couleur te paiera, et jeter des brelans servis au flop coûte bien plus sur la durée que les mises que tu économises. Ce n'est qu'une fois le tirage rentré que la ligne au-dessus s'applique.
 
 L'image inverse compte aussi, parce que **se coucher peut devenir une fuite en soi.** Un *bon* laydown lâche une main battue face à une ligne qui a du sens. Un *mauvais* laydown jette la meilleure main sur une carte qui fait peur — et si tu le fais souvent, les adversaires attentifs te bluffent sans relâche. Le but n'est ni de te coucher plus ni de te coucher moins ; c'est de te coucher *quand les preuves sont là.*
 
@@ -146,7 +146,7 @@ Est-ce que je peux nommer les mains moins bonnes qu'il miserait de cette façon 
 Est-ce que je passe le seuil des cotes du pot ? | Si mon équité est sous le chiffre du tableau, le prix dit fold.
 Cette ligne, c'est une value bet ou un bluff ? | Les joueurs passifs et les grosses relances à la river, c'est généralement de la value — crois-les.
 Est-ce que je paie seulement pour « voir » ? | La curiosité et l'ego ne sont pas des raisons ; c'est ton ego qui parle, pas les maths.
-Est-ce que je miserais moi-même cette main pour la value ici ? | Sinon, je tiens un bluff-catcher — la question devient à quelle fréquence il bluffe, pas si je suis devant.
+Est-ce que je miserais moi-même cette main pour la value ici ? | Si ce n'est pas le cas mais qu'elle bat quand même ses bluffs, je tiens un bluff-catcher — la question devient à quelle fréquence il bluffe, pas si je suis devant.
 :::
 
 Une fois que c'est devenu une habitude, rien de tout ça ne prend vraiment trente secondes — mais ralentir pour les grosses décisions, c'est exactement ce que la calling station ne fait jamais.

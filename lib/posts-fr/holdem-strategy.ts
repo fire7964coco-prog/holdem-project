@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Chaque décision gagnante au Texas Hold'em se ramène à cinq questions : où suis-je assis (la position), cette main vaut-elle la peine d'être jouée, est-ce que je relance ou je me couche plutôt que d'open-limper, est-ce que je continue à miser au flop (le c-bet), et quand est-ce que je lâche ? Un joueur serré-agressif qui répond bien à ces cinq questions se couche sur environ 80 % de ses mains préflop, joue les autres agressivement et bat presque toutes les parties entre amateurs, sans liste d'astuces à mémoriser.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -83,7 +83,7 @@ Combien, « la plupart » ? Un débutant [serré-agressif](/fr/blog/holdem-start
 
 Les mains qui passent le filtre dépendent de ta position (la décision 1 nourrit la décision 2), mais voici une règle de départ :
 
-- **Toujours relancer :** les grosses paires (de A‑A jusqu'à T‑T) et A‑K.
+- **Toujours relancer quand tu entres le premier dans le pot avec des stacks normaux (~100bb) :** les grosses paires (de A‑A jusqu'à T‑T) et A‑K.
 - **Relancer en général :** les paires moyennes, A‑Q et les fortes broadways assorties (K‑Q, A‑J assortis) — d'autant plus librement que ton siège est tardif.
 - **Spéculatives, selon la position :** les petites paires servies et les connecteurs assortis, qui veulent des pots multiway bon marché (les maths plus bas).
 - **Se coucher :** presque tout le reste, surtout les déchets dépareillés comme J‑4, Q‑7, K‑3.

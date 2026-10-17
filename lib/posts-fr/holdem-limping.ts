@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limper, c'est entrer dans un pot préflop en suivant simplement la grosse blinde au lieu de relancer ou de se coucher. L'open-limp (être le premier à entrer) est presque toujours une erreur : un limp ne peut pas gagner les blindes sans combat, tu abandonnes l'initiative et les bons joueurs te punissent. Mais limper n'est pas toujours faux : compléter en petite blinde, over-limper des mains spéculatives derrière d'autres limpeurs et certains spots en live ou en short stack en tournoi sont des exceptions légitimes.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Parce qu'un open-limp te fait perdre quatre choses d'un coup : la possibilité d
 
 1. **Un limp ne peut pas gagner les blindes sans combat.** C'est la plus importante. Quand tu *relances* en premier, tout le monde peut se coucher et tu ramasses les blindes sans combat — de l'argent gratuit, une bonne partie du temps. Quand tu limpes, cette chance vaut **zéro**. Tu t'obliges à toucher une main ou à gagner plus tard ; tu as jeté la façon la plus propre de gagner.
 2. **Tu abandonnes l'initiative.** Le relanceur préflop est « l'agresseur » — c'est lui qui peut tirer un [c-bet (continuation bet, ou « mise de continuation »)](/fr/blog/holdem-continuation-bet) au flop et représenter une main forte, en prenant souvent le pot avec rien. Limpe, et tu as donné cette histoire à quelqu'un d'autre. Tu réagis au lieu de mener.
-3. **Tu gonfles un pot multiway — souvent hors de position.** Limper invite d'autres suiveurs et laisse entrer la grosse blinde à bas prix. Plus il y a de joueurs au flop, moins ta main vaut, et si tu as limpé en début de parole tu seras *hors de position* face à presque toute la table à chaque tour, sans initiative. C'est la pire place de la salle.
+3. **Tu gonfles un pot multiway — souvent hors de position.** Limper invite d'autres suiveurs et laisse entrer la grosse blinde à bas prix. Plus il y a de joueurs au flop, moins ta main vaut, et si tu as limpé en début de parole tu seras *hors de position* face à tous ceux qui entrent après toi à chaque tour (après le flop, seules les blindes parlent avant toi), sans initiative. C'est la pire place de la salle.
 4. **Tu deviens lisible — et exploitable.** Les limpeurs réguliers arrivent avec une range plafonnée et transparente. Les bons joueurs l'attaquent sans relâche (on y revient plus bas), et tu te retrouves sans cesse dans des spots délicats hors de position. Comme dit le vieil adage, les limpeurs chroniques « gagnent de petits pots et perdent les gros ».
 
 ---

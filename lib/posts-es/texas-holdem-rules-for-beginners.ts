@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en hasta cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -277,7 +277,7 @@ Buenas manos iniciales para un principiante:
 
 | Nivel | Manos | Cuándo jugarlas |
 |------|-------|--------------|
-| 🟥 **Premium — sube siempre** | AA, KK, QQ, JJ, AKs, AKo | Desde cualquier posición, con cualquier stack — sube si eres el primero en entrar, resube ante una sola subida |
+| 🟥 **Premium — sube siempre** | AA, KK, QQ, JJ, AKs, AKo | Desde cualquier posición, con cualquier stack — sube si eres el primero en entrar, resube ante una sola subida (o ve all-in si tu stack no alcanza para una subida completa) |
 | 🟧 **Fuertes — sube casi siempre** | TT, 99, AQs, AQo, AJs, KQs | Desde la mayoría de posiciones; más tight desde UTG |
 | 🟦 **Jugables — la posición importa** | 88, 77, ATs, AJo, KJs, QJs, JTs | Mejor en posición tardía (CO, BTN) |
 | ⬜ **Retírate por defecto** | Todo lo demás, siendo principiante | Sobre todo desde posición temprana |

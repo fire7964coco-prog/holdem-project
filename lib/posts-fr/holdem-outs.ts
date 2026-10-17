@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out, c'est une carte encore dans le paquet qui transforme ta main en main probablement gagnante. Tu les comptes, puis tu convertis : outs × 4 au flop, outs × 2 à la turn, pour obtenir ton pourcentage approximatif de toucher. Un tirage couleur, c'est 9 outs, soit environ 36 % d'ici la river.",
   category: "odds",
   date: "2026-10-07",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -136,7 +136,7 @@ Regarde le monstre à 15 outs : avec deux cartes à venir, il rentre 54,1 % du t
 
 Un tirage couleur, c'est 9 outs. Au flop : 9 × 4 = **36 %** (valeur exacte 35,0 % — pile dessus). À la turn : 9 × 2 = **18 %** (exact 19,6 % — assez proche pour agir).
 
-:::tip[Le raccourci ×4 suppose en silence que tu verras *les deux* cartes sans autre mise — ce n'est garanti que quand plus aucune mise ne peut venir (tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser). S'il y a une mise devant toi, utilise le chiffre ×2 (une carte) pour la street où tu te trouves vraiment.]:::
+:::tip[Le raccourci ×4 suppose en silence que tu verras *les deux* cartes sans autre mise — ce n'est garanti que quand plus aucune mise ne peut venir (tu es à tapis, ou tu as payé un tapis et plus personne encore dans le coup ne peut miser). S'il y a une mise devant toi et que d'autres mises peuvent encore suivre, utilise le chiffre ×2 (une carte) pour la street où tu te trouves vraiment ; si cette mise est un tapis et que la payer clôt les enchères, c'est le chiffre ×4 qui s'applique.]:::
 
 La faiblesse principale, ce sont **les gros comptes d'outs au flop**. Le calcul exact à deux cartes tient compte du fait de toucher sur l'une ou l'autre street sans compter deux fois le cas où les deux cartes touchent. L'estimation ×4 commence à viser un peu haut dès 7 outs, mais l'écart grandit avec les gros tirages ; la correction habituelle ci-dessous s'applique au-delà de 8 outs.
 

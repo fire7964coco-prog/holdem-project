@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -275,7 +275,7 @@ A. For a solid player, an overall 3-bet frequency around 6–10% is healthy, wit
 
 **Q. What is a squeeze play?**
 
-A. A squeeze is a 3-bet made after an open-raise and at least one caller. The extra dead money in the pot raises the reward when a squeeze works, and the play pressures both opponents at once — the raiser and the capped flat-caller. Size squeezes bigger than a normal 3-bet, adding about one extra open-raise for each caller.
+A. A squeeze is a 3-bet made after an open-raise and at least one caller. The extra dead money in the pot raises the reward when a squeeze works, and the play pressures both opponents at once — the raiser and the flat-caller, whose range is usually capped because most players would have 3-bet their strongest hands. Size squeezes bigger than a normal 3-bet, adding about one extra open-raise for each caller.
 
 **Q. How do you respond to a 3-bet?**
 

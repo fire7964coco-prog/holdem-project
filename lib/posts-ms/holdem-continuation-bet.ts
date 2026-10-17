@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) ialah bet pada flop oleh pemain yang raise preflop. Jangan c-bet setiap flop: bet board tinggi dan kering (K-7-2) dengan saiz kecil dan kerap, check board rendah yang bersambung (7-6-5). Saiz kira-kira satu pertiga pot di board kering, dua pertiga atau lebih di board basah; jauh kurang dalam pot multiway.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 minit",
@@ -196,7 +196,7 @@ Tiada satu peratusan c-bet yang "betul" — sesiapa yang memberi anda satu angka
 
 | Situasi | Anggaran kekerapan c-bet | Nota |
 |:---|:---:|:---|
-| **In position, heads-up, board kering** | **70–100%** (kecil) | "Range bet" klasik — bet hampir semua, saiz kecil |
+| **In position, heads-up, board kering K-high atau Q-high** | **70%+** (kecil) | "Range bet" klasik — bet kebanyakan range anda, saiz kecil. Board kering **A-high** jauh kurang di-bet (A♥7♦2♣ 59.0% dalam jadual solver di atas) |
 | **In position, heads-up, board basah** | **~50–60%** | Lebih terpolarisasi — value dan draw bet, tangan kosong check |
 | **Out of position, heads-up (single-raised pot, anda yang raise)** | **~30–45%** | Check jauh lebih banyak untuk melindungi range check anda. Sebagai *pemain 3-bet* OOP ia terbalik: melebihi 97% pada ketiga-tiga board yang kami solve, hampir semuanya pada dua pertiga pot di Q♥T♥7♠ dan 8♦5♣2♠ tetapi kebanyakannya pada satu pertiga pot di A♦K♠2♥ (57.8%); lihat [panduan posisi](/ms/blog/holdem-position-play) |
 | **Multiway (2 lawan)** | **~50% atau kurang** | Seseorang berkemungkinan besar sudah mengena — ketatkan |
@@ -265,7 +265,7 @@ Menangguhkan bet mengubah situasi di mana c-bet automatik akan membocorkan cip m
 
 Mari jelaskan "jangan" itu secara terang, kerana di situlah wang diselamatkan:
 
-- **Board menghentam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang call raise jauh lebih kuat berbanding tangan anda. Bet di sini dengan kebanyakan range anda hanya menderma cip — check jauh lebih kerap, dan apabila anda bet, pilih saiz besar dan selektif.
+- **Board menghentam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang call raise jauh lebih kuat berbanding tangan anda. C-bet di sini secara autopilot hanya menderma cip — check bahagian range anda yang jauh lebih besar berbanding pada K‑7‑2, dan apabila anda bet, pilih saiz besar dan selektif.
 - **Anda out of position pada board dinamik** dengan tangan marginal. Bertindak dahulu tanpa maklumat, kekalkan pot kecil dan check.
 - **Anda dalam pot multiway dengan tangan kosong.** Sudah diterangkan di atas — hampir tiada fold equity, jadi jangan bet.
 - **Tangan anda sesuai untuk melindungi range check.** Kadang-kadang anda sengaja check tangan kuat supaya check anda tidak automatik lemah.
@@ -327,7 +327,7 @@ A. Tidak — inilah kesilapan c-bet yang paling biasa. Bet flop yang memihak kep
 
 **Q. Berapa kerap patut anda c-bet?**
 
-A. Ia bergantung pada posisi, board dan bilangan lawan, jadi anggap angka ini sebagai julat, bukan peraturan: kira-kira 70–100% (dengan saiz kecil) in position heads-up di board kering, sekitar 30–45% out of position sebagai pemain yang raise dalam single-raised pot (lebih tinggi sebagai pemain 3-bet), dan 50% atau kurang dalam pot multiway. Kadar c-bet flop keseluruhan yang sihat ialah kira-kira 55–70% — lebih daripada 85% bermakna anda bermain secara autopilot.
+A. Ia bergantung pada posisi, board dan bilangan lawan, jadi anggap angka ini sebagai julat, bukan peraturan: kira-kira 70% atau lebih (dengan saiz kecil) in position heads-up di board kering K-high atau Q-high (board kering A-high di-bet dengan ketara kurang kerap), sekitar 30–45% out of position sebagai pemain yang raise dalam single-raised pot (lebih tinggi sebagai pemain 3-bet), dan 50% atau kurang dalam pot multiway. Kadar c-bet flop keseluruhan yang sihat ialah kira-kira 55–70% — lebih daripada 85% bermakna anda bermain secara autopilot.
 
 **Q. Berapa saiz c-bet yang patut?**
 

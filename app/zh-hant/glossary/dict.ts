@@ -47,7 +47,7 @@ export const GLOSSARY_DICT_ZH_HANT: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", aka: ["3-Bet", "3bet", "three-bet", "再加注"], desc: "開池之後的再加注（把盲注算成第一次下注，這是第三次）。盲注是第 1 次下注、開池加注是第 2 次，所以再加注才是 3-bet（不是第一次加注）。" },
+    { term: "3-bet", cat: "Action", aka: ["3-Bet", "3bet", "three-bet", "再加注"], desc: "翻牌前開池之後的再加注（把盲注算成第一次下注，這是第三次）。盲注是第 1 次下注、開池加注是第 2 次，所以再加注才是 3-bet（不是第一次加注）。" },
     { term: "全下（All-in）", cat: "Action", aka: ["All-in", "allin", "Jam", "Shove"], desc: "押上你全部的籌碼；你只能贏你有蓋到的那部分底池。" },
     { term: "底注（Ante）", cat: "Action", aka: ["Ante", "前注", "大盲底注"], desc: "傳統上是每個人都交、用來墊底池的小額強制注，和盲注分開——現今多數錦標賽改用大盲底注，由一個座位替全桌交。" },
     { term: "後門（Backdoor）", cat: "Board", aka: ["Backdoor", "後門聽牌"], desc: "需要兩張接連的牌（轉牌和河牌）才能成。" },

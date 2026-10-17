@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop 7♦6♦5♣ menghasilkan bet 9.6% dan check 90.4%. Pot, stack, SPR, saiz bet serta kedua-dua range sama seperti KT6; hanya board berubah. Kelebihan kad tinggi opener hilang pada flop rendah bersambung. Equity SB beralih kepada 49.6% berbanding 50.4%, dan EQR OOP turun kepada 85.3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-10-16",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   readTime: "10 minit",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-ms.webp",
@@ -145,7 +145,7 @@ Masalahnya, **overpair tidak menguasai bahagian atas board ini**. Tangan BB yang
 
 ## Bagaimanakah opener boleh ketinggalan dari segi equity?
 
-**Banyak A-high dan K-high kehilangan nilai relatif apabila lawan mempunyai lebih banyak pair serta draw kuat.** Kedua-duanya membentuk 41.3% range SB, daripada 25.2 + 16.1. Namun kelas high-card tidak bermakna semua kombo tiada draw; contohnya A4 dan A8 mempunyai OESD pada 765.
+**Banyak A-high dan K-high kehilangan nilai relatif apabila lawan mempunyai lebih banyak pair serta draw kuat.** Kedua-duanya membentuk 41.3% range SB, daripada 25.2 + 16.1. Namun kelas high-card tidak bermakna semua kombo tiada draw; contohnya A4 dan A8 mempunyai OESD pada 765, dan A3 serta A9 mempunyai gutshot.
 
 | Metrik | SB (OOP) | BB (IP) |
 |---|---|---|
@@ -190,7 +190,7 @@ Bet 9.6% mencampurkan sedikit value dengan draw terpilih. 88 mendahului purata k
 
 - **Jangan jadikan “blind lawan blind, maka bet” sebagai peraturan.** Perbezaan 67.4% dan 9.6% datang daripada board. Walaupun anda opener SB, flop rendah bersambung yang melibatkan 5, 6, 7 atau 8 boleh memindahkan kelebihan kepada caller.
 - **Overpair bukan alasan automatik membina pot besar.** SB mempunyai 42 kombo overpair, tiga setengah kali BB, tetapi BB juga mempunyai 42 kombo yang sudah mengalahkan overpair. Itu menuntut berhati-hati sebelum dua atau tiga barrel. Ia tidak melarang satu bet kecil; maksudnya jangan terus menganggap overpair sesuai untuk seluruh stack. ⚠ Jangan pula automatik fold kepada raise. Range BB mempunyai OESD 24.9%, gutshot 23.8% dan combo draw 3.7%; range raise seimbang boleh mengandungi bluff. Kebiasaan fold setiap overpair terhadap raise daripada range yang kaya dengan draw boleh dieksploitasi lawan. **Mengelakkan commitment penuh dan fold ialah keputusan berbeza.** Node bet-lalu-raise tiada dalam solve ini, jadi tiada kekerapan respons. Prinsip yang sama muncul apabila [board bersambung mengurangkan kelebihan aggressor preflop](/ms/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-ms.webp").
-- **Jangan menyamakan A-high dengan kekuatan.** Kira-kira satu perempat range SB ialah A-high. Bagi **A-high tanpa draw langsung**, mendapat pair sering menjadi jalan peningkatan terdekat, sementara draw lawan boleh menjadi straight. Bezanya bukan sekadar peluang meningkat, tetapi nilai hasil peningkatan. Namun A4 dan A8 mempunyai OESD di sini; jangan meletakkan semua A-high dalam kumpulan tanpa draw. Equity 49.6% merangkumi keseluruhan campuran itu.
+- **Jangan menyamakan A-high dengan kekuatan.** Kira-kira satu perempat range SB ialah A-high. Bagi **A-high tanpa draw langsung**, mendapat pair sering menjadi jalan peningkatan terdekat, sementara draw lawan boleh menjadi straight. Bezanya bukan sekadar peluang meningkat, tetapi nilai hasil peningkatan. Namun A4 dan A8 mempunyai OESD di sini, dan A3 serta A9 mempunyai gutshot; jangan meletakkan semua A-high dalam kumpulan tanpa draw. Equity 49.6% merangkumi keseluruhan campuran itu.
 - **Rancang apa yang dilakukan selepas check.** Apabila 90.4% range check, memilih tangan untuk call atau [check-raise](/ms/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-ms.webp") menjadi soalan seterusnya. ⚠ **Jawapannya tiada dalam pengiraan ini.** Spot belajar hanya menyediakan tindakan pertama flop; kekerapan bet BB selepas check dan check-raise SB belum dikira. Contoh low-rainbow dalam pautan mempunyai check-raise daripada solve berasingan, tetapi **peranannya berbeza**: BB caller menghadapi BTN, bukan SB opener menghadapi BB.
 
 :::readnext[Baca seterusnya]

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Daripada 169 jenis tangan permulaan, hanya kira-kira 15–20% tangan yang anda terima menguntungkan pemula. Pasangan besar (AA–TT) dan AK raise dari mana-mana posisi; semakin lewat posisi, semakin luas range open — kira-kira 13% di UTG hingga 43% di button (lebih luas lagi dalam 6-max). Mula dengan carta ringkas, tambah GTO preflop chart kemudian.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -203,7 +203,7 @@ Tangan permulaan paling teruk dalam poker bukanlah sampah rawak seperti 7-2 — 
 | King-rag offsuit (K3o, K4o) | Didominasi oleh setiap K yang lebih baik | "K itu kad besar" |
 | Mana-mana dua kad suited | Membentuk flush menjelang river hanya ~6.4% masa (terus di flop ~0.8%) | "Tapi suit-nya sama" |
 
-![Perangkap As lemah dalam Texas Hold'em — A♣ 4♦ bergaris merah sebagai tangan yang kalah, didominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "As lemah nampak kuat tetapi kekal didominasi — fold sebelum flop")
+![Perangkap As lemah dalam Texas Hold'em — A♣ 4♦ bergaris merah sebagai tangan yang kalah, didominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "As offsuit lemah nampak kuat tetapi kekal didominasi — fold sebelum flop")
 
 ==r:Kesilapan paling mahal yang dibuat pemula ialah call raise dengan As lemah== seperti A♣ 4♦ dalam pengenalan tadi. Apabila anda akhirnya mendapat pasangan As, anda selalunya kedua terbaik di belakang A♠ K♦ atau A♥ Q♦ — dan anda kalah pot besar dengan yakin anda memegang top pair. Memang pun. Mereka juga — dengan kicker yang lebih baik.
 

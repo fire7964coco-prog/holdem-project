@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -188,7 +188,7 @@ A. Rake live cenderung berpersentase lebih tinggi, biasanya dengan cap lebih tin
 2. **Ia paling memukul stake rendah.** Cap nyaris tak bergerak saat Anda turun, jadi secara proporsional Anda membayar rake paling banyak di dasar — "jebakan rake" yang membuat mikro-stake begitu sulit dikalahkan.
 3. **Rakeback dan struktur penting.** Mendapat 20–40% rake Anda kembali, dan memilih room dengan cap yang ramah pemain, bisa membalik hasil jangka panjang Anda — ukur segalanya *setelah* rake.
 
-Kini setelah Anda bisa melihat potongan house, angka yang Anda baca di tempat lain jadi lebih masuk akal: [pot odds](/id/blog/holdem-pot-odds) Anda, win rate Anda, dan kenapa sebuah [straddle](/id/blog/holdem-straddle) yang menggelembungkan pot juga diam-diam memberi makan rake. Poker bisa dikalahkan — tapi hanya begitu Anda mengalahkan pemain lain *lebih* dari yang diambil house.
+Kini setelah Anda bisa melihat potongan house, angka yang Anda baca di tempat lain jadi lebih masuk akal: [pot odds](/id/blog/holdem-pot-odds) Anda, win rate Anda, dan kenapa sebuah [straddle](/id/blog/holdem-straddle) yang menggelembungkan pot juga bisa diam-diam memberi makan rake — di pot ber-rake yang belum menyentuh cap (bukan di pot preflop no-flop-no-drop atau di game time charge). Poker bisa dikalahkan — tapi hanya begitu Anda mengalahkan pemain lain *lebih* dari yang diambil house.
 
 ---
 
@@ -203,7 +203,7 @@ Kini setelah Anda bisa melihat potongan house, angka yang Anda baca di tempat la
   <a href="/id/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosarium</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind ekstra yang menggelembungkan pot — dan rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind ekstra yang menggelembungkan pot — dan bisa menaikkan rake</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang &amp; Matematika</div>

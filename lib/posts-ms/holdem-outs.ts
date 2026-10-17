@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Out ialah mana-mana kad yang masih tinggal dalam dek dan boleh menaikkan tangan anda menjadi tangan yang berkemungkinan menang. Kira dulu, kemudian tukar: darab outs dengan 4 di flop atau dengan 2 di turn untuk anggaran peratus anda hit. Flush draw ada 9 outs, lebih kurang 36% menjelang river.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-10-11",
+  updated: "2026-10-17",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -128,7 +128,7 @@ Perhatikan draw raksasa 15 outs: dengan dua kad lagi ia lengkap 54.1% daripada m
 
 Flush draw ialah 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenar 35.0% — tepat). Di turn: 9 × 2 = **18%** (sebenar 19.6% — cukup dekat untuk bertindak).
 
-:::tip[Jalan pintas ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad tanpa bet lagi — hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet). Jika ada bet di depan anda, guna nombor ×2 (satu kad) untuk street yang anda sedang berada.]:::
+:::tip[Jalan pintas ×4 secara senyap menganggap anda akan melihat *kedua-dua* kad tanpa bet lagi — hanya terjamin apabila tiada lagi pertaruhan boleh berlaku (anda all-in, atau anda sudah call all-in dan tiada sesiapa yang tinggal dalam tangan itu masih boleh bet). Jika ada bet di depan anda dan pertaruhan masih boleh berlanjut, guna nombor ×2 (satu kad) untuk street yang anda sedang berada; jika bet itu all-in dan call anda menamatkan pertaruhan, nombor ×4 yang terpakai.]:::
 
 Kelemahan utamanya ialah **kiraan outs yang tinggi di flop**. Kiraan dua kad yang tepat mengambil kira kena di mana-mana street tanpa mengira kena dua kali sebagai dua. Anggaran ×4 mula sedikit tinggi pada 7 outs, tetapi jurangnya membesar dengan draw yang lebih besar; pembetulan biasa di bawah digunakan untuk lebih daripada 8 outs.
 

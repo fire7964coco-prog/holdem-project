@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards and 5 shared community cards. There are up to four betting rounds, and the best 5-card poker hand wins at showdown — unless everyone else folds first.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -275,7 +275,7 @@ Good beginner starting hands include:
 
 | Tier | Hands | When to play |
 |------|-------|--------------|
-| 🟥 **Premium — always raise** | AA, KK, QQ, JJ, AKs, AKo | Every position, every stack — raise first in, re-raise over a single raise |
+| 🟥 **Premium — always raise** | AA, KK, QQ, JJ, AKs, AKo | Every position, every stack — raise first in, re-raise over a single raise (or go all-in if your stack is too short for a full raise) |
 | 🟧 **Strong — usually raise** | TT, 99, AQs, AQo, AJs, KQs | Most positions; tighter from UTG |
 | 🟦 **Playable — position matters** | 88, 77, ATs, AJo, KJs, QJs, JTs | Prefer late position (CO, BTN) |
 | ⬜ **Fold by default** | Everything else as a beginner | Especially from early position |

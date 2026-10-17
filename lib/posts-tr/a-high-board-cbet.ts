@@ -16,8 +16,8 @@ export const POST: Post = {
   tldr: "Buton açıp big blind call ettikten sonra A♥7♦2♣ flop'unda big blind range'inin %98,2'sini check eder — top pair, iki çift ve set'ler dahil. Equity neredeyse başa baş, %45,1'e karşı %54,9; iki koltuğu ayıran şey equity gerçekleştirme (EQR): pozisyon dışında %84,0, pozisyonda %113,1.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-06",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   readTime: "9 dk",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-en.webp",
@@ -155,7 +155,7 @@ Bu pratik kural tek bir şartla genelleşir: **range avantajı olan — ama beli
 
 Aynı spotu okumak yerine çalışmak istersen kenar çubuğundan **GTO Trainer**'ı aç: gerçek range'den sana bir el dağıtır, aksiyonunu seçersin ve o seçimin sana kaç big blind'a mal olduğunu söyler. Ücretsiz; kurulum yok, hesap yok.
 
-> **Bu spotta oynadığın eli analiz et** — Bu spot, BTN'in open yapıp BB'nin call ettiği bir pottur. Aynı durumu kendin oynadıysan solver'daki [El analizi](https://solver.holdemmaster.com/?view=hand-review&lang=tr) ekranını aç, durumu (**Open · Call**, BTN ve BB) ve **Senin pozisyonun** alanını ayarla, **2 kartın** ve **3 flop kartı** alanlarından kartları seç, sonra rakibininkiler dahil aksiyonlara gerçekte oynandığı sırayla dokun. Bu seçimin **En iyi oyun**, **Kabul edilebilir** ya da **Bu oyunu tekrar incele** gruplarından hangisine girdiğini gösterir. El analizi, uygulamanın preflop chart'larını (online 6-max cash, 100bb) temel aldığı için sayılar yukarıdaki örnekten biraz farklı olabilir; ayrıca ev oyunlarına veya turnuvalara uygun olmayabilir.
+> **Bu spotta oynadığın eli analiz et** — Bu spot, BTN'in open yapıp BB'nin call ettiği bir pottur. Aynı durumu kendin oynadıysan solver'daki [El analizi](https://solver.holdemmaster.com/?view=hand-review&lang=tr) ekranını aç, durumu (**Open · Call**, BTN ve BB) ve **Senin pozisyonun** alanını ayarla, **2 kartın** ve **3 flop kartı** alanlarından kartları seç, sonra rakibininkiler dahil aksiyonlara gerçekte oynandığı sırayla dokun. Bu seçimin **En iyi oyun**, **Kabul edilebilir** ya da **Bu oyunu tekrar incele** gruplarından hangisine girdiğini gösterir. El analizi, uygulamanın preflop chart'larını (online 6-max cash, 100bb) temel aldığı için sayılar yukarıdaki örnekten farklı olabilir; ayrıca ev oyunlarına veya turnuvalara uygun olmayabilir.
 
 ## Sıkça sorulan sorular
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ Mâini de start bune pentru începători:
 
 | Nivel | Mâini | Când le joci |
 |------|-------|--------------|
-| 🟥 **Premium — mărești mereu** | AA, KK, QQ, JJ, AKs, AKo | Orice poziție, orice stack |
+| 🟥 **Premium — mărești mereu** | AA, KK, QQ, JJ, AKs, AKo | Orice poziție, orice stack (sau intri all-in dacă stackul tău e prea scurt pentru un raise complet) |
 | 🟧 **Puternice — de obicei mărești** | TT, 99, AQs, AQo, AJs, KQs | Majoritatea pozițiilor; mai strâns din UTG |
 | 🟦 **Jucabile — contează poziția** | 88, 77, ATs, AJo, KJs, QJs, JTs | De preferat poziție târzie (CO, BTN) |
 | ⬜ **Renunță din start** | Orice altceva, ca începător | Mai ales din poziție timpurie |

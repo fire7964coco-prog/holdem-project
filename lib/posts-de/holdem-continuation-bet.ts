@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippte es auf den drei Boards, die wir gelöst haben, auf über 97%), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 Min.",
@@ -200,7 +200,7 @@ Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl
 
 | Situation | Grobe C-Bet-Frequenz | Anmerkung |
 |:---|:---:|:---|
-| **In Position, heads-up, trockenes Board** | **70–100%** (klein) | Klassische „Range-Bet“ – bette fast alles, winzig |
+| **In Position, heads-up, trockenes K- oder Q-High-Board** | **70%+** (klein) | Klassische „Range-Bet“ – bette den Großteil deiner Range, winzig. Trockene **A-High**-Boards werden weit seltener gebettet (A♥7♦2♣ 59,0% in der Solver-Tabelle oben) |
 | **In Position, heads-up, wet Board** | **~50–60%** | Polarisierter – Value und Draws betten, Air checkt |
 | **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um: über 97% auf allen drei Boards, die wir gelöst haben – auf Q♥T♥7♠ und 8♦5♣2♠ fast alles mit zwei Drittel Pot, auf A♦K♠2♥ aber überwiegend mit einem Drittel Pot (57,8%); siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
 | **Multiway (2 Gegner)** | **~50% oder weniger** | Wahrscheinlich hat jemand getroffen – zieh zusammen |
@@ -270,7 +270,7 @@ Verzögern verwandelt einen Spot, in dem eine automatische C-Bet Chips verblutet
 
 Machen wir das „Nicht“ explizit, denn hier wird das Geld gespart:
 
-- **Das Board hat die Range deines Gegners zerlegt.** Ein 7‑6‑5- oder 9‑8‑7-Flop trifft die Hände, die einen Raise callen, weit härter als deine. Hier mit dem Großteil deiner Range zu betten verschenkt nur Chips – checke weit öfter, und wenn du bettest, dann groß und selektiv.
+- **Das Board hat die Range deines Gegners zerlegt.** Ein 7‑6‑5- oder 9‑8‑7-Flop trifft die Hände, die einen Raise callen, weit härter als deine. Hier auf Autopilot zu c-betten verschenkt nur Chips – checke einen weit größeren Teil deiner Range als auf K‑7‑2, und wenn du bettest, dann groß und selektiv.
 - **Du bist out of Position auf einem dynamischen Board** mit einer marginalen Hand. Als Erster ohne Information handelnd, halt den Pot klein und checke.
 - **Du bist multiway mit Air.** Oben behandelt – kaum Fold Equity, also kein Einsatz.
 - **Deine Hand will eine Checking-Range schützen.** Manchmal checkst du eine starke Hand absichtlich, damit deine Checks nicht automatisch schwach sind.
@@ -332,7 +332,7 @@ A. Nein – das ist der häufigste C-Bet-Fehler. Bette die Flops, die deine Rang
 
 **Q. Wie oft solltest du c-betten?**
 
-A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70–100% (in kleiner Größe) in Position heads-up auf einem trockenen Board, etwa 30–45% out of Position als Raiser in einem Single-Raised Pot (höher als 3-Better) und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
+A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70% oder mehr (in kleiner Größe) in Position heads-up auf einem trockenen K- oder Q-High-Board (trockene A-High-Boards werden spürbar seltener gebettet), etwa 30–45% out of Position als Raiser in einem Single-Raised Pot (höher als 3-Better) und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
 
 **Q. Wie viel solltest du c-betten?**
 

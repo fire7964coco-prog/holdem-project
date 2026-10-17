@@ -43,7 +43,7 @@ export const GLOSSARY_DICT_PT: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", desc: "O re-raise depois de um open (a terceira aposta, contando os blinds como a primeira).", aka: ["3-Bet", "three-bet", "re-raise"] },
+    { term: "3-bet", cat: "Action", desc: "O primeiro re-raise pré-flop, depois de um open (a terceira aposta, contando os blinds como a primeira).", aka: ["3-Bet", "three-bet", "re-raise"] },
     { term: "All-in", cat: "Action", desc: "Colocar todas as suas fichas; você só pode ganhar a parte do pote que cobriu.", aka: ["all in", "allin", "shovar"] },
     { term: "Ante", cat: "Action", desc: "Tradicionalmente, uma pequena aposta forçada de todo mundo pra alimentar o pote, separada dos blinds — hoje a maioria dos torneios usa o big blind ante, em que um só assento paga pela mesa." },
     { term: "Backdoor", cat: "Board", desc: "Um draw que precisa de duas cartas seguidas (turn e river)." },

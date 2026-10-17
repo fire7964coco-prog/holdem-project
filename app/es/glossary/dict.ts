@@ -43,7 +43,7 @@ export const GLOSSARY_DICT_ES: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", desc: "La resubida tras un open (la tercera apuesta, contando las ciegas como la primera).", aka: ["3-Bet", "three-bet", "resubida"] },
+    { term: "3-bet", cat: "Action", desc: "La primera resubida preflop, tras un open (la tercera apuesta, contando las ciegas como la primera).", aka: ["3-Bet", "three-bet", "resubida"] },
     { term: "All-in", cat: "Action", desc: "Apostar todas tus fichas; solo puedes ganar la parte del bote que cubriste.", aka: ["all in", "allin"] },
     { term: "Ante", cat: "Action", desc: "Tradicionalmente, una pequeña apuesta forzada de todos para engordar el bote, aparte de las ciegas — la mayoría de los torneos usa hoy un big blind ante que paga un solo asiento por la mesa." },
     { term: "Backdoor (puerta trasera)", cat: "Board", desc: "Un proyecto que necesita dos cartas seguidas (turn y river).", aka: ["Backdoor", "puerta trasera"] },

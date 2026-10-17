@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -297,7 +297,7 @@ A. Für einen soliden Spieler ist eine gesamte 3-Bet-Frequenz um 6–10% gesund,
 
 **Q. Was ist ein Squeeze Play?**
 
-A. Ein Squeeze ist eine 3-Bet, die nach einem Open-Raise und mindestens einem Caller gemacht wird. Das extra Dead Money im Pot erhöht den Ertrag, wenn ein Squeeze durchgeht, und der Move setzt beide Gegner auf einmal unter Druck – den Raiser und den gecappten Flat-Caller. Size Squeezes größer als eine normale 3-Bet und füge etwa einen zusätzlichen Open-Raise pro Caller hinzu.
+A. Ein Squeeze ist eine 3-Bet, die nach einem Open-Raise und mindestens einem Caller gemacht wird. Das extra Dead Money im Pot erhöht den Ertrag, wenn ein Squeeze durchgeht, und der Move setzt beide Gegner auf einmal unter Druck – den Raiser und den Flat-Caller, dessen Range meist gecappt ist, weil die meisten Spieler ihre stärksten Hände ge-3-bettet hätten. Size Squeezes größer als eine normale 3-Bet und füge etwa einen zusätzlichen Open-Raise pro Caller hinzu.
 
 **Q. Wie reagierst du auf eine 3-Bet?**
 

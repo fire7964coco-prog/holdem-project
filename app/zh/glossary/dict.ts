@@ -47,7 +47,7 @@ export const GLOSSARY_DICT_ZH: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3bet", cat: "Action", aka: ["3-Bet", "3-bet", "three-bet", "再加注"], desc: "一次开池之后的再加注（第 3 次下注，把盲注算作第 1 次）。盲注是第 1 次下注、开池加注是第 2 次，所以再加注才是 3bet（不是第一次加注）。" },
+    { term: "3bet", cat: "Action", aka: ["3-Bet", "3-bet", "three-bet", "再加注"], desc: "翻前一次开池之后的再加注（第 3 次下注，把盲注算作第 1 次）。盲注是第 1 次下注、开池加注是第 2 次，所以再加注才是 3bet（不是第一次加注）。" },
     { term: "all in（全下）", cat: "Action", aka: ["All-in", "allin", "全下", "Jam", "Shove"], desc: "把你全部筹码押进去；你只能赢下你所覆盖的那部分底池。" },
     { term: "前注（Ante）", cat: "Action", aka: ["Ante", "大盲前注"], desc: "传统上是每个人都交的一小笔强制下注，用来起底池，跟盲注分开算——如今大多数锦标赛改用大盲前注，由一个座位替全桌交。" },
     { term: "后门听牌（Backdoor）", cat: "Board", aka: ["Backdoor", "后门"], desc: "需要连着两张牌才能凑成的听牌（转牌和河牌都得来）。" },

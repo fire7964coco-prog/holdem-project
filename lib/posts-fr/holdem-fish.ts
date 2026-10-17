@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "C'est quoi un fish au poker ? Le repérer, et vérifier que ce n'est pas toi",
   seoTitle: "Tu ne vois pas le fish ? C'est toi — fish et shark au poker",
   desc: "Le fish est le joueur faible dont toute la table profite. Apprends à le repérer, décode shark, whale, nit et donkey, et vérifie que le fish, ce n'est pas toi.",
-  tldr: "Au poker, un « fish » (poisson) désigne un joueur faible et perdant, celui sur qui les bons joueurs (les « sharks », requins) gagnent leur argent. Un fish joue trop de mains, suit trop souvent et n'arrive pas à se coucher, et la phrase célèbre prévient : si tu ne repères pas le fish à ta table, c'est que c'est toi. C'est la lecture la plus importante du jeu : trouve le fish, ou deviens-le.",
+  tldr: "Au poker, un « fish » (poisson) désigne un joueur faible et perdant, celui sur qui les bons joueurs (les « sharks », requins) gagnent leur argent. Le fish classique joue trop de mains, suit trop souvent et n'arrive pas à se coucher, et la phrase célèbre prévient : si tu ne repères pas le fish à ta table, c'est que c'est toi. C'est la lecture la plus importante du jeu : trouve le fish, ou deviens-le.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -81,7 +81,7 @@ Aucun signe n'est une preuve à lui seul : même les bons joueurs limpent de tem
 
 | Terme | Ce que ça veut dire | Comment il joue | Comment le battre |
 |:---|:---|:---|:---|
-| **Fish** | Joueur faible et perdant (terme générique) | Large, passif, incapable de se coucher | Value bet fin, ne bluffe pas |
+| **Fish** | Joueur faible et perdant (terme générique) | Classique : large, passif, incapable de se coucher | Value bet fin, ne bluffe pas |
 | **Shark** | Joueur fort et gagnant | Serré-agressif, s'adapte | À éviter : choisis des tables plus faciles |
 | **Whale** | Un fish *riche* qui perd **gros** | Très large, grosses limites, s'en moque | Comme contre un fish, avec un plus gros gain |
 | **Nit** | Ultra-serré, fuit le risque | Seulement des mains premium, bluffe rarement | Couche-toi sur la plupart de ses relances ; vole les blindes |
@@ -126,7 +126,7 @@ Voici la partie qui fait mal : si tu as lu jusqu'ici en espérant secrètement �
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (mains jouées) | PFR (mains relancées) | La lecture |
+| | VPIP (mains jouées préflop) | PFR (mains relancées préflop) | La lecture |
 |:---|:---:|:---:|:---|
 | **Joueur solide** | 15–22 % | 12–18 % (jamais plus que son VPIP) | Serré, agressif, écart réduit |
 | **Fish** | 40–70 % | moins de 10 % | Large et passif : joue tout, ne mène rien |
@@ -204,7 +204,7 @@ A. La version célèbre à l'écran vient du film *Rounders* (1998), prononcée 
 ## À retenir
 
 1. **Un fish est le joueur faible dont tous les autres profitent** : large, passif, et en général sans le savoir. Repérer le fish, c'est le premier travail à n'importe quelle table.
-2. **Connais tout le bestiaire.** Fish, whale, nit, donkey et calling station ne sont pas interchangeables : nommer le type exact de ton adversaire te dit précisément comment le battre.
+2. **Connais tout le bestiaire.** Fish, whale, nit, donkey et calling station ne sont pas interchangeables : nommer le type de ton adversaire — comme une lecture de travail que tu mets à jour en continu — te dit comment commencer à le battre.
 3. **Vérifie que ce n'est pas toi.** Un VPIP large avec un faible pourcentage de relance, c'est la signature du fish. Si c'est ton cas, les corrections sont les victoires les plus faciles du poker : joue moins de mains, couche-toi plus, et arrête de courir après les tirages sans les bonnes cotes du pot.
 
 La vieille phrase a raison, et pour une bonne raison. Regarde autour de toi à ta prochaine table et trouve le fish dans la première demi-heure ; et si tu n'y arrives vraiment pas, la leçon la plus précieuse que le poker t'apprendra jamais, c'est qu'il est temps de travailler ton propre jeu. Commence par une [sélection de mains de départ](/fr/blog/holdem-starting-hands-chart) plus serrée et une vraie intuition des [cotes du pot](/fr/blog/holdem-pot-odds), et laisse quelqu'un d'autre servir de repas.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम में हर खिलाड़ी को 2 hole कार्ड और 5 साझा community कार्ड मिलते हैं। ज़्यादा से ज़्यादा चार betting राउंड होते हैं, और showdown पर सबसे अच्छा 5-कार्ड हैंड जीतता है — जब तक बाक़ी सब पहले ही fold न कर दें।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-15",
-  masterUpdated: "2026-10-13",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -276,7 +276,7 @@ burn कार्ड वह ऊपरी कार्ड है जिसे flo
 
 | टियर | हैंड | कब खेलें |
 |------|-------|--------------|
-| 🟥 **Premium — हमेशा raise** | AA, KK, QQ, JJ, AKs, AKo | हर position, हर stack — आपसे पहले किसी ने call या raise न किया हो तो raise, एक raise के सामने re-raise |
+| 🟥 **Premium — हमेशा raise** | AA, KK, QQ, JJ, AKs, AKo | हर position, हर stack — आपसे पहले किसी ने call या raise न किया हो तो raise, एक raise के सामने re-raise (stack पूरे raise के लिए कम हो तो all-in) |
 | 🟧 **Strong — आम तौर पर raise** | TT, 99, AQs, AQo, AJs, KQs | ज़्यादातर position; UTG से ज़्यादा tight |
 | 🟦 **Playable — position मायने रखती है** | 88, 77, ATs, AJo, KJs, QJs, JTs | late position (CO, BTN) में बेहतर |
 | ⬜ **डिफ़ॉल्ट रूप से fold** | शुरुआती के तौर पर बाक़ी सब कुछ | ख़ासकर early position से |

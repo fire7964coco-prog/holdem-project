@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -276,7 +276,7 @@ A. Para um jogador sólido, uma frequência geral de 3-bet em torno de 6–10% �
 
 **Q. O que é um squeeze play?**
 
-A. Um squeeze é um 3-bet feito depois de um open-raise e pelo menos um caller. O dinheiro morto extra no pote aumenta o retorno quando o squeeze dá certo, e a jogada pressiona os dois adversários ao mesmo tempo — o raiser e o flat-caller capado. Dimensione squeezes maiores que um 3-bet normal, somando cerca de um open-raise extra para cada caller.
+A. Um squeeze é um 3-bet feito depois de um open-raise e pelo menos um caller. O dinheiro morto extra no pote aumenta o retorno quando o squeeze dá certo, e a jogada pressiona os dois adversários ao mesmo tempo — o raiser e o flat-caller, cujo range costuma ser capado porque a maioria dos jogadores daria 3-bet com as mãos mais fortes. Dimensione squeezes maiores que um 3-bet normal, somando cerca de um open-raise extra para cada caller.
 
 **Q. Como você responde a um 3-bet?**
 

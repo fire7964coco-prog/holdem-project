@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -276,7 +276,7 @@ A. Untuk pemain solid, frekuensi 3-bet keseluruhan sekitar 6–10% itu sehat, de
 
 **Q. Apa itu squeeze play?**
 
-A. Squeeze adalah 3-bet yang dibuat setelah sebuah open-raise dan setidaknya satu caller. Dead money ekstra di pot menaikkan imbalan saat squeeze berhasil, dan langkah ini menekan kedua lawan sekaligus — si raiser dan si flat-caller yang sudah ter-cap. Ukur squeeze lebih besar daripada 3-bet biasa, menambahkan sekitar satu open-raise ekstra untuk tiap caller.
+A. Squeeze adalah 3-bet yang dibuat setelah sebuah open-raise dan setidaknya satu caller. Dead money ekstra di pot menaikkan imbalan saat squeeze berhasil, dan langkah ini menekan kedua lawan sekaligus — si raiser dan si flat-caller, yang range-nya biasanya ter-cap karena kebanyakan pemain akan 3-bet tangan terkuat mereka. Ukur squeeze lebih besar daripada 3-bet biasa, menambahkan sekitar satu open-raise ekstra untuk tiap caller.
 
 **Q. Bagaimana cara merespons sebuah 3-bet?**
 

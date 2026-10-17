@@ -12,7 +12,7 @@ import type { GlossaryTerm } from "@/components/glossary/dict";
 export type Term = GlossaryTerm;
 
 export const TERMS: GlossaryTerm[] = [
-  { term: "3-Bet", cat: "Action", desc: "The first re-raise of a hand. The big blind counts as the first bet and the open-raise as the second, so the re-raise is the 3-bet. It signals a very strong hand — or a bluff." },
+  { term: "3-Bet", cat: "Action", desc: "The first re-raise before the flop. The big blind counts as the first bet and the open-raise as the second, so the re-raise is the 3-bet. It signals a very strong hand — or a bluff." },
   { term: "All-in", cat: "Action", desc: "Betting your entire stack in one move. Once you're all-in you can't bet again, and a side pot forms if opponents have more chips behind." },
   { term: "Ante", cat: "Action", desc: "A small forced bet posted before the deal to build the pot — by every player, or in the big blind ante format by the big blind alone. Common in later tournament levels, unlike blinds, which usually only two players post." },
   { term: "Backdoor", cat: "Board", desc: "A draw that needs both the turn and the river to complete — for example, a backdoor flush when you flop just one extra card of your suit." },

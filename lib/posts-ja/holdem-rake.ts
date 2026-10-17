@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "レーキとは、ゲームを開催する対価としてカードルームが多くのポットから抜く小さな取り分です。相場は2.5〜10%で、数ドルのキャップ(上限)が付きます。多くの店ではフロップ前に全員フォールドすれば何も取りません(「ノーフロップ・ノードロップ」)。低レートやショートハンドで最も重くのしかかり、レーキバックはその一部を常連に還元します。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11分",
@@ -218,7 +218,7 @@ A. ライブのレーキは割合が高めで、キャップも高いことが�
 2. **低レートに最も重くのしかかる。** 下げてもキャップがほとんど動かないので、割合的に最も多くレーキを払うのは最下層——マイクロレートを勝ちにくくする「レーキの罠」です。
 3. **レーキバックと構造が重要。** 払ったレーキの20〜40%を取り戻し、プレイヤーに優しいキャップの店を選ぶことは、長期の結果をひっくり返しうる——すべてをレーキ*後*で測りましょう。
 
-ハウスの取り分が見えるようになると、他のあらゆる場所で読む数字の意味がよりよく分かります。あなたの[ポットオッズ](/ja/blog/holdem-pot-odds)、あなたの勝率、そしてポットを膨らませる[ストラドル](/ja/blog/holdem-straddle)が同時に静かにレーキを太らせる理由まで。ポーカーは勝てるゲームです——ただし、他のプレイヤーにハウスが取る分*より多く*勝っているときに限って。
+ハウスの取り分が見えるようになると、他のあらゆる場所で読む数字の意味がよりよく分かります。あなたの[ポットオッズ](/ja/blog/holdem-pot-odds)、あなたの勝率、そしてポットを膨らませる[ストラドル](/ja/blog/holdem-straddle)が、キャップに届いていないレーキ対象のポットでは同時に静かにレーキを太らせることもある理由まで(ノーフロップ・ノードロップで終わるプリフロップのポットやタイムチャージのゲームは除く)。ポーカーは勝てるゲームです——ただし、他のプレイヤーにハウスが取る分*より多く*勝っているときに限って。
 
 ---
 
@@ -233,7 +233,7 @@ A. ライブのレーキは割合が高めで、キャップも高いことが�
   <a href="/ja/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">用語集</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ストラドルとは?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ポットを膨らませる追加ブラインド——そしてレーキも</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">ポットを膨らませる追加ブラインド——レーキを増やすことも</div>
   </a>
   <a href="/ja/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">オッズと計算</div>

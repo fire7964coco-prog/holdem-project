@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -166,7 +166,7 @@ Kebun binatang julukan untuk orang-orang di seberang felt. Rinciannya ada di [pa
 
 | Istilah | Arti |
 |:---|:---|
-| **Fish** | Pemain rekreasi yang lemah dan merugi — sumber profit meja. |
+| **Fish** | Pemain yang lemah dan merugi — sumber profit meja. |
 | **Shark** | Pemain kuat dan menang yang memangsa pemain lebih lemah. |
 | **Whale** | Pemain rekreasi kaya tapi lemah di stake besar — "fish berkantong tebal." |
 | **Nit** | Pemain sangat ketat yang hanya bermain tangan premium. |

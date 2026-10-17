@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -80,7 +80,7 @@ La mayor fuga del póker es jugar demasiadas manos. Los novatos igualan con cual
 
 Qué manos merecen jugarse depende de tu posición (la Decisión 1 alimentando a la Decisión 2), pero una regla de oro para empezar:
 
-- **Sube siempre:** los pares grandes (de A‑A a 10‑10), y A‑K.
+- **Sube siempre cuando seas el primero en entrar con stacks normales (~100bb):** los pares grandes (de A‑A a 10‑10), y A‑K.
 - **Sube casi siempre:** pares medios, A‑Q, y broadways fuertes del mismo palo (K‑Q, A‑J del mismo palo) — con más libertad cuanto más tardío sea tu asiento.
 - **Especulativo, según la posición:** pares servidos pequeños y conectores del mismo palo, que quieren botes multiway baratos (más sobre la matemática abajo).
 - **Foldea:** casi todo lo demás, sobre todo la basura de distinto palo como J‑4, Q‑7, K‑3.

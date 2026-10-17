@@ -48,7 +48,7 @@ export const GLOSSARY_DICT_DE: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-Bet", cat: "Action", desc: "Der Re-Raise nach einem Open (die dritte Bet, wenn man die Blinds als erste zählt). Die Blinds sind Bet 1, der Open-Raise ist Bet 2, also ist der Re-Raise die 3-Bet (nicht der erste Raise)." },
+    { term: "3-Bet", cat: "Action", desc: "Der erste Re-Raise preflop, also nach einem Open (die dritte Bet, wenn man die Blinds als erste zählt). Die Blinds sind Bet 1, der Open-Raise ist Bet 2, also ist der Re-Raise die 3-Bet (nicht der erste Raise)." },
     { term: "All-in", cat: "Action", desc: "Alle deine Chips einsetzen; du kannst nur den Teil des Pots gewinnen, den du gedeckt hast.", aka: ["Jam", "Shove"] },
     { term: "Ante", cat: "Action", desc: "Ein kleiner Pflichteinsatz, um den Pot zu füttern, getrennt von den Blinds – im modernen Turnier meist als Big Blind Ante von einem einzigen Spieler gezahlt." },
     { term: "Backdoor", cat: "Board", desc: "Ein Draw, der zwei aufeinanderfolgende Karten braucht (Turn und River)." },

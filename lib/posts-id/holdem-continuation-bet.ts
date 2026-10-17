@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — di atas 97% pada ketiga board yang kami solve), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
   masterUpdated: "2026-10-06",
@@ -196,7 +196,7 @@ Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu 
 
 | Situasi | Frekuensi c-bet kasar | Catatan |
 |:---|:---:|:---|
-| **In position, heads-up, board kering** | **70–100%** (kecil) | "Range bet" klasik — taruh nyaris semuanya, mungil |
+| **In position, heads-up, board kering K-high atau Q-high** | **70%+** (kecil) | "Range bet" klasik — taruh sebagian besar range Anda, mungil. Board kering **A-high** jauh lebih jarang ditaruhi (A♥7♦2♣ 59,0% di tabel solver di atas) |
 | **In position, heads-up, board basah** | **~50–60%** | Lebih terpolarisasi — value dan draw bertaruh, tangan kosong check |
 | **Out of position, heads-up (pot single-raised, Anda yang raise)** | **~30–45%** | Check jauh lebih banyak untuk melindungi checking range. Sebagai *3-bettor* out of position keadaannya berbalik: di atas 97% pada ketiga board yang kami solve, hampir semuanya dengan dua pertiga pot di Q♥T♥7♠ dan 8♦5♣2♠, tapi sebagian besar dengan sepertiga pot di A♦K♠2♥ (57,8%); lihat [panduan posisi](/id/blog/holdem-position-play) |
 | **Multiway (2 lawan)** | **~50% atau kurang** | Ada yang mungkin nyambung — perketat |
@@ -263,7 +263,7 @@ Menunda mengubah spot di mana c-bet otomatis akan menguras chip menjadi taruhan 
 
 Mari buat "jangan"-nya eksplisit, karena di sinilah uang diselamatkan:
 
-- **Board menghantam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang meng-call raise jauh lebih keras daripada mengenai tangan Anda. Bertaruh di sini dengan sebagian besar range Anda cuma menyumbang chip — check jauh lebih sering, dan saat Anda bertaruh, pilih ukuran besar dan selektif.
+- **Board menghantam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang meng-call raise jauh lebih keras daripada mengenai tangan Anda. C-bet di sini secara autopilot cuma menyumbang chip — check-lah bagian range Anda yang jauh lebih banyak daripada di K‑7‑2, dan saat Anda bertaruh, pilih ukuran besar dan selektif.
 - **Anda out of position di board dinamis** dengan tangan marginal. Beraksi lebih dulu tanpa informasi, jaga pot tetap kecil dan check.
 - **Anda multiway dengan tangan kosong.** Dibahas di atas — fold equity nyaris tak ada, jadi jangan bertaruh.
 - **Tangan Anda ingin melindungi checking range.** Kadang Anda meng-check tangan kuat dengan sengaja supaya check Anda tak otomatis lemah.
@@ -325,7 +325,7 @@ A. Tidak — ini kesalahan c-bet paling umum. Taruh flop yang menguntungkan rang
 
 **Q. Seberapa sering Anda harus c-bet?**
 
-A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70–100% (dengan sizing kecil) in position heads-up di board kering, sekitar 30–45% out of position sebagai raiser di pot single-raised (lebih tinggi saat Anda yang 3-bet), dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
+A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70% atau lebih (dengan sizing kecil) in position heads-up di board kering K-high atau Q-high (board kering A-high ditaruhi nyata lebih jarang), sekitar 30–45% out of position sebagai raiser di pot single-raised (lebih tinggi saat Anda yang 3-bet), dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
 
 **Q. Berapa besar Anda harus c-bet?**
 

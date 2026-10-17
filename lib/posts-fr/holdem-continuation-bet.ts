@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un continuation bet (c-bet) est une mise au flop faite par le joueur qui a relancé préflop. La règle moderne n'est pas « c-bet à chaque flop » : mise petit et souvent sur les flops qui favorisent ta range (boards hauts et secs comme K-7-2) et checke ceux qui favorisent ton adversaire (boards bas et connectés comme 7-6-5). Size petit, environ un tiers du pot, sur les boards secs et gros, deux tiers ou plus, sur les boards humides ; c-bet moins hors de position quand tu étais le seul relanceur (en tant que 3-betteur hors de position, ça passe à plus de 97 % sur les trois boards que nous avons résolus) et beaucoup moins en multiway.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 min",
@@ -194,7 +194,7 @@ Il n'existe pas un pourcentage de c-bet « correct » unique — celui qui te do
 
 | Situation | Fréquence de c-bet approximative | Remarque |
 |:---|:---:|:---|
-| **En position, heads-up, board sec** | **70–100 %** (petit) | Le « range bet » classique — mise presque tout, tout petit |
+| **En position, heads-up, board sec hauteur roi ou dame** | **70 %+** (petit) | Le « range bet » classique — mise la majeure partie de ta range, tout petit. Les boards secs **hauteur As** sont bien moins misés (A♥7♦2♣ 59,0 % dans le tableau du solver ci-dessus) |
 | **En position, heads-up, board humide** | **~50–60 %** | Plus polarisé — la value et les tirages misent, le vent checke |
 | **Hors de position, heads-up (pot relancé une fois, c'est toi le relanceur)** | **~30–45 %** | Checke beaucoup plus pour protéger ta range de check. En tant que *3-betteur* hors de position, ça s'inverse : plus de 97 % sur les trois boards que nous avons résolus, presque tout aux deux tiers du pot sur Q♥10♥7♠ et 8♦5♣2♠, mais surtout au tiers du pot sur A♦K♠2♥ (57,8 %) ; voir le [guide de la position](/fr/blog/holdem-position-play) |
 | **Multiway (2 adversaires)** | **~50 % ou moins** | Quelqu'un a probablement touché — resserre |
@@ -261,7 +261,7 @@ Le delayed c-bet transforme un spot où un c-bet automatique t'aurait fait saign
 
 Rendons le « ne fais pas » explicite, parce que c'est là que l'argent s'économise :
 
-- **Le board a fortement touché la range de ton adversaire.** Un flop 7‑6‑5 ou 9‑8‑7 touche les mains qui paient une relance bien plus fort que les tiennes. Miser ici avec la plupart de ta range, c'est faire un don — checke bien plus souvent, et quand tu mises, mise gros et de façon sélective.
+- **Le board a fortement touché la range de ton adversaire.** Un flop 7‑6‑5 ou 9‑8‑7 touche les mains qui paient une relance bien plus fort que les tiennes. Faire un c-bet ici en pilote automatique, c'est faire un don — checke une bien plus grande partie de ta range que sur K‑7‑2, et quand tu mises, mise gros et de façon sélective.
 - **Tu es hors de position sur un board dynamique** avec une main moyenne. Tu parles en premier sans information : garde le pot petit et checke.
 - **Tu es en multiway avec du vent.** Voir plus haut — presque pas de fold equity, donc pas de mise.
 - **Ta main doit protéger une range de check.** Parfois tu checkes une main forte exprès pour que tes checks ne soient pas automatiquement faibles.
@@ -323,7 +323,7 @@ A. Non — c'est l'erreur de c-bet la plus courante. Mise sur les flops qui favo
 
 **Q. À quelle fréquence faut-il c-bet ?**
 
-A. Ça dépend de la position, du board et du nombre d'adversaires, alors prends ces chiffres comme des fourchettes, pas comme des règles : environ 70–100 % (avec une petite taille) en position en heads-up sur board sec, autour de 30–45 % hors de position en tant que relanceur dans un pot relancé une fois (plus en tant que 3-betteur), et 50 % ou moins en multiway. Un taux global de c-bet au flop sain tourne autour de 55–70 % — au-delà de 85 %, tu joues en pilote automatique.
+A. Ça dépend de la position, du board et du nombre d'adversaires, alors prends ces chiffres comme des fourchettes, pas comme des règles : environ 70 % ou plus (avec une petite taille) en position en heads-up sur board sec hauteur roi ou dame (les boards secs hauteur As sont nettement moins misés), autour de 30–45 % hors de position en tant que relanceur dans un pot relancé une fois (plus en tant que 3-betteur), et 50 % ou moins en multiway. Un taux global de c-bet au flop sain tourne autour de 55–70 % — au-delà de 85 %, tu joues en pilote automatique.
 
 **Q. De combien faut-il c-bet ?**
 

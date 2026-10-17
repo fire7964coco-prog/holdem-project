@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips over time. A solid player folds around 75–85% of hands before the flop, releases missed hands facing a bet on a board that suits the opponent, and weak draws that don't meet their pot odds, after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -66,9 +66,9 @@ Postflop folding is where real money is saved, and each street asks a different 
 
 **Flop — "Did this board help me, or them?"** When you miss and face a bet on a board that fits your opponent's range, let it go. Ace-high with no draw on a coordinated board isn't worth a call "to see the turn." Fold weak draws too — a gutshot with no other equity and a bad price is a fold, not a chase.
 
-**Turn — the give-up street.** This is the most important fold in poker and the one players skip. On the turn, ranges polarize toward "very strong or busted," and bet sizes balloon. Your flop float that didn't improve, your second pair that's now facing a second barrel, your draw that just missed with one card left and a bad price — these are turns to release, not to talk yourself into one more call. If you were "floating the flop to bluff the turn," and the turn didn't give you a reason, give up.
+**Turn — the give-up street.** This is the most important fold in poker and the one players skip. On the turn, ranges polarize toward "very strong or busted," and bet sizes balloon. Your flop float that didn't improve, your second pair facing a big second barrel from a player who rarely bluffs, your draw that just missed with one card left and a bad price — these are usually turns to release, not to talk yourself into one more call. If you were "floating the flop to bluff the turn," and the turn didn't give you a reason, give up.
 
-**River — pure bluff-catching.** You're no longer drawing to anything; the only question is *"can my hand beat the hands they'd bet for value here?"* If a passive player fires big into a scary board, the honest answer is usually no. Fold the hands that only beat a bluff when your opponent rarely bluffs. Which brings us to the math.
+**River — pure bluff-catching.** You're no longer drawing to anything; the question is *"does my hand beat enough of what they'd bet here — value hands and bluffs — to justify the price?"* If a passive player fires big into a scary board, the honest answer is usually no. Fold the hands that only beat a bluff when your opponent rarely bluffs. Which brings us to the math.
 
 ---
 
@@ -109,12 +109,12 @@ Folding trash is easy. Folding a *good* hand — top pair, an overpair, even a s
 | **Top pair, weak kicker** | Facing big turn + river bets | You beat bluffs and worse pairs — but their value range has you out-kicked |
 | **Overpair (JJ/QQ)** | A passive player raises a coordinated board | Passive players raise the nuts, not air — you're drawing thin |
 | **Top pair top kicker** | Board runs out four to a flush or straight | Your one pair can't beat the flush/straight they're repping |
-| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set still makes a full house or quads ~34% of the time by the river against a made flush, and wins a stack when it does — call |
+| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set still makes a full house or quads ~34% of the time by the river against a made flush, and wins a stack when it does — call at a normal bet size with stacks behind |
 | **Second pair** | Calling three streets "to keep them honest" | You're paying off value three times to catch one bluff |
 
 </div>
 
-The set row is the one that needs its street named, because folding it too early costs more than folding it too late. Hold 9♠9♣ on a 9♥5♥2♥ flop against a made A♥K♥ flush and the set still wins ==34%== of the time — and no made flush holds it far below that (the floor is about 32%, against 3♥4♥ with its straight-flush outs): it fills up on the seven obvious outs (the case nine, three fives, three deuces) *and* whenever the turn and river pair each other. On the flop that's a call — not because the next card alone gets there often enough (seven outs is about 16%, short of most bet prices), but because when the board pairs you win everything a flush will pay, and folding sets on the flop costs far more over time than the bets you save. Only once the draw is home does the row above apply.
+The set row is the one that needs its street named, because folding it too early costs more than folding it too late. Hold 9♠9♣ on a 9♥5♥2♥ flop against a made A♥K♥ flush and the set still wins ==34%== of the time — and no made flush holds it far below that (the floor is about 32%, against 3♥4♥ with its straight-flush outs): it fills up on the seven obvious outs (the case nine, three fives, three deuces) *and* whenever the turn and river pair each other. On the flop, at a normal bet size with stacks still behind, that's a call — not because the next card alone gets there often enough (seven outs is about 16%, short of most bet prices), but because when the board pairs you win everything a flush will pay, and folding sets on the flop costs far more over time than the bets you save. Only once the draw is home does the row above apply.
 
 The mirror image matters too, because **folding can be a leak of its own.** A *good* laydown releases a beaten hand to a line that makes sense. A *bad* laydown folds the best hand to a scare card out of fear — and if you do it often, thinking opponents will bluff you relentlessly. The goal isn't to fold more or fold less; it's to fold *when the evidence is there.*
 
@@ -145,7 +145,7 @@ Can I name the worse hands they'd bet this way? | If the only hands that bet lik
 Do I clear the pot-odds threshold? | If my equity is below the number in the table, the price says fold.
 Is this line a value bet or a bluff? | Passive players and big river raises are usually value — believe them.
 Am I only calling to "see it"? | Curiosity and ego are not reasons; that's your ego talking, not the math.
-Would I bet this hand for value here myself? | If not, I'm holding a bluff-catcher — the question becomes how often they bluff, not whether I'm ahead.
+Would I bet this hand for value here myself? | If not, but it still beats their bluffs, I'm holding a bluff-catcher — the question becomes how often they bluff, not whether I'm ahead.
 :::
 
 None of this takes thirty real seconds once it's a habit — but slowing down for the big decisions is exactly what the calling station never does.

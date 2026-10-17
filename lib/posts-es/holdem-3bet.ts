@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -280,7 +280,7 @@ A. Para un jugador sólido, una frecuencia global de 3-bet en torno al 6–10% e
 
 **Q. ¿Qué es un squeeze?**
 
-A. Un squeeze es un 3-bet hecho después de una subida de apertura y al menos un pagador. El dinero muerto extra del bote aumenta la recompensa cuando el squeeze funciona, y la jugada presiona a los dos rivales a la vez — al subidor y al pagador con rango con techo. Dale a los squeezes un tamaño mayor que a un 3-bet normal, sumando más o menos una subida de apertura extra por cada pagador.
+A. Un squeeze es un 3-bet hecho después de una subida de apertura y al menos un pagador. El dinero muerto extra del bote aumenta la recompensa cuando el squeeze funciona, y la jugada presiona a los dos rivales a la vez — al subidor y al pagador, cuyo rango suele tener techo porque la mayoría de jugadores habría hecho 3-bet con sus manos más fuertes. Dale a los squeezes un tamaño mayor que a un 3-bet normal, sumando más o menos una subida de apertura extra por cada pagador.
 
 **Q. ¿Cómo respondes a un 3-bet?**
 

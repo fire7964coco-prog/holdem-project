@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold rather than open-limp, do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -79,7 +79,7 @@ How much is "most"? A solid [tight-aggressive](/en/blog/holdem-starting-hands-ch
 
 Which hands make the cut depends on your position (Decision 1 feeding Decision 2), but a starter rule of thumb:
 
-- **Always raise:** big pairs (A‑A down to T‑T), and A‑K.
+- **Always raise when you're first in at normal (~100bb) stacks:** big pairs (A‑A down to T‑T), and A‑K.
 - **Usually raise:** medium pairs, A‑Q, and strong suited broadways (K‑Q, A‑J suited) — more freely the later your seat.
 - **Speculative, position-dependent:** small pocket pairs and suited connectors, which want cheap multiway pots (more on the math below).
 - **Fold:** almost everything else, especially offsuit junk like J‑4, Q‑7, K‑3.

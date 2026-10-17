@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten, die sich alle teilen. Es gibt bis zu vier Setzrunden, und im Showdown gewinnt die beste Fünf-Karten-Hand – es sei denn, alle anderen folden vorher.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
@@ -317,7 +317,7 @@ Gute Starthände für Anfänger:
 
 | Stufe | Hände | Wann spielen |
 |------|-------|--------------|
-| 🟥 **Premium – immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack – als Erster rein raisen, gegen einen einzelnen Raise re-raisen |
+| 🟥 **Premium – immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack – als Erster rein raisen, gegen einen einzelnen Raise re-raisen (oder all-in gehen, wenn dein Stack für einen vollen Raise zu kurz ist) |
 | 🟧 **Stark – meistens raisen** | TT, 99, AQs, AQo, AJs, KQs | Die meisten Positionen; aus UTG tighter |
 | 🟦 **Spielbar – Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
 | ⬜ **Standardmäßig folden** | Als Anfänger alles andere | Vor allem aus früher Position |

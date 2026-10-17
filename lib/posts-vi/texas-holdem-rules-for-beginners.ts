@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người nhận 2 lá bài tẩy và dùng chung 5 lá bài chung. Một ván có tối đa bốn vòng cược; tay bài 5 lá mạnh nhất thắng ở showdown — trừ khi tất cả đối thủ đã fold trước đó.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -288,7 +288,7 @@ Những bài khởi đầu tốt cho người mới:
 
 | Cấp | Tay bài | Khi nào chơi |
 |------|-------|--------------|
-| 🟥 **Premium — luôn raise** | AA, KK, QQ, JJ, AKs, AKo | Mọi vị trí, mọi stack — raise khi vào pot đầu tiên, 3-bet (re-raise, tố lại) khi trước đó mới có một người raise |
+| 🟥 **Premium — luôn raise** | AA, KK, QQ, JJ, AKs, AKo | Mọi vị trí, mọi stack — raise khi vào pot đầu tiên, 3-bet (re-raise, tố lại) khi trước đó mới có một người raise (hoặc all-in nếu stack của bạn quá ngắn để raise đủ) |
 | 🟧 **Mạnh — thường raise** | TT, 99, AQs, AQo, AJs, KQs | Hầu hết vị trí; chặt hơn khi ở UTG |
 | 🟦 **Chơi được — tùy vị trí** | 88, 77, ATs, AJo, KJs, QJs, JTs | Ưu tiên vị trí muộn (CO, BTN) |
 | ⬜ **Mặc định fold** | Mọi tay bài còn lại khi bạn là người mới | Đặc biệt ở vị trí sớm |

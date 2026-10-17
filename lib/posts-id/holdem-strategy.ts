@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -80,7 +80,7 @@ Seberapa banyak "sebagian besar" itu? Seorang pemula [tight-aggressive](/id/blog
 
 Tangan mana yang lolos tergantung pada position Anda (Keputusan 1 memberi umpan ke Keputusan 2), tapi aturan awal umum:
 
-- **Selalu raise:** pair besar (A‑A sampai T‑T), dan A‑K.
+- **Selalu raise saat Anda masuk pertama dengan stack normal (~100bb):** pair besar (A‑A sampai T‑T), dan A‑K.
 - **Biasanya raise:** pair menengah, A‑Q, dan broadway suited kuat (K‑Q, A‑J suited) — makin belakang kursi Anda, makin longgar.
 - **Spekulatif, tergantung position:** small pocket pair dan suited connector, yang menginginkan pot multiway murah (lebih banyak soal matematikanya di bawah).
 - **Fold:** hampir semua lainnya, terutama sampah offsuit seperti J‑4, Q‑7, K‑3.

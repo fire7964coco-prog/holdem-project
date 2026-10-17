@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -201,7 +201,7 @@ Las peores manos iniciales del póker no son morralla al azar como 7-2 — nadie
 | Rey-basura de distinto palo (K3o, K4o) | Dominados por cualquier rey mejor | "Un rey es una carta grande" |
 | Dos cartas cualesquiera del mismo palo | Hacen color en el river solo ~6.4% de las veces (lo ligan en el flop ~0.8%) | "Pero son del mismo palo" |
 
-![Trampa del as débil en Texas Hold'em — A♣ 4♦ resaltado en rojo como mano perdedora, dominada por A♠ K♦ en dorado](/images/holdem-starting-hands-weak-ace-trap.webp "Los ases débiles parecen fuertes pero siguen dominados — foldéalos en preflop")
+![Trampa del as débil en Texas Hold'em — A♣ 4♦ resaltado en rojo como mano perdedora, dominada por A♠ K♦ en dorado](/images/holdem-starting-hands-weak-ace-trap.webp "Los ases débiles de distinto palo parecen fuertes pero siguen dominados — foldéalos en preflop")
 
 El ==r:error más caro que cometen los principiantes es igualar subidas con ases débiles== como el A♣ 4♦ de la intro. Cuando por fin ligas tu pareja de ases, muchas veces vas de segundas frente a A♠ K♦ o A♥ Q♦ — y pierdes un bote grande convencido de que tienes pareja máxima. La tienes. Ellos también, con mejor kicker.
 

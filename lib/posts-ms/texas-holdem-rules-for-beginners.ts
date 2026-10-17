@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas sehingga empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -276,7 +276,7 @@ Tangan permulaan yang baik untuk pemula termasuk:
 
 | Tahap | Tangan | Bila nak main |
 |------|-------|--------------|
-| 🟥 **Premium — sentiasa raise** | AA, KK, QQ, JJ, AKs, AKo | Setiap posisi, setiap stack — raise jika anda pemain pertama masuk, re-raise jika sudah ada satu raise |
+| 🟥 **Premium — sentiasa raise** | AA, KK, QQ, JJ, AKs, AKo | Setiap posisi, setiap stack — raise jika anda pemain pertama masuk, re-raise jika sudah ada satu raise (atau all-in jika stack anda terlalu pendek untuk raise penuh) |
 | 🟧 **Kuat — biasanya raise** | TT, 99, AQs, AQo, AJs, KQs | Kebanyakan posisi; lebih ketat dari UTG |
 | 🟦 **Boleh dimainkan — posisi penting** | 88, 77, ATs, AJo, KJs, QJs, JTs | Utamakan posisi lewat (CO, BTN) |
 | ⬜ **Fold secara lalai** | Semua yang lain sebagai pemula | Terutamanya dari posisi awal |

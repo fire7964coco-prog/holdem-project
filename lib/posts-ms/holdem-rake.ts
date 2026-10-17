@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake ialah potongan kecil yang bilik kad ambil daripada kebanyakan pot sebagai bayaran menganjurkan permainan — biasanya 2.5–10% sehingga had (cap) beberapa dolar. Kebanyakan bilik tidak mengambil apa-apa jika semua orang fold sebelum flop ('no flop, no drop'). Rake paling memberi kesan kepada pemain stakes rendah dan meja short-handed, dan rakeback memulangkan sebahagian daripadanya kepada pemain tetap.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 minit",
@@ -188,7 +188,7 @@ A. Rake live lazimnya berperatusan lebih tinggi, biasanya dengan cap lebih tingg
 2. **Ia paling membebankan stakes rendah.** Cap hampir tidak bergerak apabila anda turun stakes, jadi secara berkadar anda membayar rake paling banyak di tangga paling bawah — "perangkap rake" yang menjadikan micro-stakes begitu sukar dikalahkan.
 3. **Rakeback dan struktur penting.** Kadar rakeback 20–40% dan struktur cap boleh membalikkan keputusan jangka panjang anda — ukur segala-galanya *selepas* rake.
 
-Sekarang anda nampak potongan pihak rumah, angka yang anda baca di tempat lain jadi lebih masuk akal: [pot odds](/ms/blog/holdem-pot-odds) anda, win rate anda, dan kenapa [straddle](/ms/blog/holdem-straddle) yang membesarkan pot juga diam-diam menyuap rake. Poker boleh dikalahkan — tetapi hanya apabila anda mengalahkan pemain lain dengan margin *lebih besar* daripada apa yang diambil pihak rumah.
+Sekarang anda nampak potongan pihak rumah, angka yang anda baca di tempat lain jadi lebih masuk akal: [pot odds](/ms/blog/holdem-pot-odds) anda, win rate anda, dan kenapa [straddle](/ms/blog/holdem-straddle) yang membesarkan pot juga boleh diam-diam menyuap rake — dalam pot yang dikenakan rake dan belum mencecah cap (bukan dalam pot preflop no-flop-no-drop atau permainan time charge). Poker boleh dikalahkan — tetapi hanya apabila anda mengalahkan pemain lain dengan margin *lebih besar* daripada apa yang diambil pihak rumah.
 
 ---
 
@@ -203,7 +203,7 @@ Sekarang anda nampak potongan pihak rumah, angka yang anda baca di tempat lain j
   <a href="/ms/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Istilah</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind tambahan yang membesarkan pot — dan rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind tambahan yang membesarkan pot — dan boleh menaikkan rake</div>
   </a>
   <a href="/ms/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematik</div>

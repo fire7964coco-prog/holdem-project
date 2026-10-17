@@ -49,7 +49,7 @@ export const GLOSSARY_DICT_FR: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", desc: "La première sur-relance d'une main. La grosse blinde compte comme la première mise et la relance d'ouverture comme la deuxième : la sur-relance est donc le 3-bet. Il signale une main très forte — ou un bluff.", aka: ["3-Bet", "sur-relance", "three-bet"] },
+    { term: "3-bet", cat: "Action", desc: "La première sur-relance préflop. La grosse blinde compte comme la première mise et la relance d'ouverture comme la deuxième : la sur-relance est donc le 3-bet. Il signale une main très forte — ou un bluff.", aka: ["3-Bet", "sur-relance", "three-bet"] },
     { term: "Tapis (all-in)", cat: "Action", desc: "Miser tout ton stack d'un coup. Une fois à tapis, tu ne peux plus miser, et si au moins deux adversaires continuent de miser au-delà de ton tapis, un pot annexe se forme.", aka: ["All-in", "faire tapis", "tapis"] },
     { term: "Ante", cat: "Action", desc: "Une petite mise obligatoire posée avant la distribution pour alimenter le pot — par chaque joueur, ou par la seule big blind dans le format big blind ante. Fréquente aux niveaux avancés des tournois, contrairement aux blindes, que deux joueurs seulement posent en général." },
     { term: "Backdoor", cat: "Board", desc: "Un tirage qui a besoin du tournant et de la rivière pour se compléter — par exemple un tirage couleur backdoor quand le flop ne t'apporte qu'une seule carte de plus de ton enseigne.", aka: ["runner-runner"] },

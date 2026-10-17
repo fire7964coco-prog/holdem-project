@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — um limp não consegue ganhar os blinds sem disputa, você abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de torneio com stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-10-06",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Quando você open-limpa, abre mão de uma quantidade surpreendente de coisas. Ei
 
 1. **Um limp não consegue ganhar os blinds sem disputa.** Esse é o principal. Quando você *aumenta* primeiro a entrar, todo mundo pode foldar e você embolsa os blinds sem disputa — dinheiro de graça, numa fatia considerável das vezes. Quando você limpa, esse número é **zero**. Você garantiu que precisa formar uma mão ou ganhar depois; jogou fora o jeito mais limpo de vencer.
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop vira o agressor — ele pode disparar uma [continuation bet](/pt/blog/holdem-continuation-bet) no flop e representar uma mão forte, muitas vezes levando o pote com nada. Limpe, e você entregou essa narrativa para outra pessoa. Agora você reage em vez de liderar.
-3. **Você monta um pote multiway inflado — muitas vezes fora de posição.** Limpar convida mais pagadores e deixa o big blind entrar barato. Quanto mais jogadores veem o flop, menos a sua mão vale, e se você limpou de posição inicial vai estar *fora de posição* contra quase toda a mesa em toda street, e sem iniciativa. Essa é a pior cadeira da casa.
+3. **Você monta um pote multiway inflado — muitas vezes fora de posição.** Limpar convida mais pagadores e deixa o big blind entrar barato. Quanto mais jogadores veem o flop, menos a sua mão vale, e se você limpou de posição inicial vai estar *fora de posição* contra todo mundo que entrar depois de você em toda street (depois do flop, só os blinds agem antes de você), e sem iniciativa. Essa é a pior cadeira da casa.
 4. **Você se torna legível — e explorável.** Limpers habituais aparecem com um range limitado e transparente. Bons jogadores atacam isso sem trégua (mais sobre isso abaixo), então você acaba em spots difíceis fora de posição repetidas vezes. Como diz o ditado antigo, limpers crônicos "ganham potes pequenos e perdem os grandes".
 
 ---

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ Dobre ręce startowe dla początkującego to m.in.:
 
 | Poziom | Ręce | Kiedy grać |
 |------|-------|--------------|
-| 🟥 **Premium — zawsze przebijaj** | AA, KK, QQ, JJ, AKs, AKo | Z każdej pozycji, przy każdym stacku |
+| 🟥 **Premium — zawsze przebijaj** | AA, KK, QQ, JJ, AKs, AKo | Z każdej pozycji, przy każdym stacku (albo all-in, jeśli stack jest za krótki na pełne przebicie) |
 | 🟧 **Mocne — zwykle przebijaj** | TT, 99, AQs, AQo, AJs, KQs | Z większości pozycji; ciaśniej z UTG |
 | 🟦 **Grywalne — pozycja się liczy** | 88, 77, ATs, AJo, KJs, QJs, JTs | Najlepiej z późnej pozycji (CO, BTN) |
 | ⬜ **Domyślnie pasuj** | Cała reszta, gdy jesteś początkujący | Zwłaszcza z wczesnej pozycji |

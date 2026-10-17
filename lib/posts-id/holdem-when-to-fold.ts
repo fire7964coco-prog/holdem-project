@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip dalam jangka panjang. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset saat menghadapi taruhan di board yang cocok dengan lawan, serta draw lemah yang tak memenuhi pot odds mereka, setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -67,9 +67,9 @@ Fold postflop adalah tempat uang sebenarnya diselamatkan, dan setiap street meng
 
 **Flop — "Apakah board ini membantu saya, atau mereka?"** Saat Anda meleset dan menghadapi taruhan di board yang cocok dengan range lawan, lepaskan. Ace-high tanpa draw di board yang terkoordinasi tak layak call "untuk melihat turn." Fold draw lemah juga — sebuah gutshot tanpa equity lain dan dengan harga buruk adalah fold, bukan chase.
 
-**Turn — street menyerah.** Ini adalah fold terpenting di poker dan yang paling sering dilewatkan pemain. Di turn, range terpolarisasi ke arah "sangat kuat atau busted," dan ukuran taruhan membengkak. Float flop Anda yang tak membaik, second pair Anda yang kini menghadapi barrel kedua, draw Anda yang baru saja meleset dengan satu kartu tersisa dan harga buruk — inilah turn untuk dilepaskan, bukan untuk membujuk diri ke satu call lagi. Jika Anda "float flop untuk bluff turn," dan turn tak memberi Anda alasan, menyerahlah.
+**Turn — street menyerah.** Ini adalah fold terpenting di poker dan yang paling sering dilewatkan pemain. Di turn, range terpolarisasi ke arah "sangat kuat atau busted," dan ukuran taruhan membengkak. Float flop Anda yang tak membaik, second pair Anda yang menghadapi barrel kedua yang besar dari pemain yang jarang bluff, draw Anda yang baru saja meleset dengan satu kartu tersisa dan harga buruk — biasanya inilah turn untuk dilepaskan, bukan untuk membujuk diri ke satu call lagi. Jika Anda "float flop untuk bluff turn," dan turn tak memberi Anda alasan, menyerahlah.
 
-**River — murni bluff-catching.** Anda tak lagi mengejar apa pun; satu-satunya pertanyaan adalah *"bisakah tangan saya mengalahkan tangan yang mereka taruhkan untuk value di sini?"* Jika pemain pasif melepas taruhan besar ke board yang menakutkan, jawaban jujurnya biasanya tidak. Fold tangan yang hanya mengalahkan bluff saat lawan Anda jarang bluff. Yang membawa kita ke matematika.
+**River — murni bluff-catching.** Anda tak lagi mengejar apa pun; pertanyaannya adalah *"apakah tangan saya mengalahkan cukup banyak dari yang akan mereka taruhkan di sini — tangan value dan bluff — untuk membenarkan harganya?"* Jika pemain pasif melepas taruhan besar ke board yang menakutkan, jawaban jujurnya biasanya tidak. Fold tangan yang hanya mengalahkan bluff saat lawan Anda jarang bluff. Yang membawa kita ke matematika.
 
 ---
 
@@ -110,12 +110,12 @@ Fold sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, bahkan s
 | **Top pair, kicker lemah** | Menghadapi taruhan besar turn + river | Anda mengalahkan bluff dan pair lebih buruk — tapi range value mereka mengungguli kicker Anda |
 | **Overpair (JJ/QQ)** | Pemain pasif me-raise board terkoordinasi | Pemain pasif me-raise nuts, bukan tangan kosong — out Anda tinggal sedikit |
 | **Top pair top kicker** | Board berkembang jadi four to a flush atau straight | Satu pair Anda tak bisa mengalahkan flush/straight yang mereka wakili |
-| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih jadi full house atau quads ~34% dari waktu hingga river melawan flush jadi, dan saat jadi ia memenangkan satu stack — call |
+| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih jadi full house atau quads ~34% dari waktu hingga river melawan flush jadi, dan saat jadi ia memenangkan satu stack — call pada ukuran taruhan normal dengan stack masih tersisa |
 | **Second pair** | Call tiga street "untuk menjaga mereka jujur" | Anda membayar value tiga kali untuk menangkap satu bluff |
 
 </div>
 
-Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ dan set itu masih menang ==34%== dari waktu — dan tak ada flush jadi yang menekannya jauh di bawah itu (batas bawahnya sekitar 32%, melawan 3♥4♥ dengan out straight flush-nya): ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call — bukan karena kartu berikutnya saja sudah cukup sering mendarat (tujuh out sekitar 16%, di bawah harga kebanyakan taruhan), melainkan karena saat board berpasangan Anda memenangkan seluruh yang akan dibayar sebuah flush, dan mem-fold set di flop jauh lebih mahal dalam jangka panjang ketimbang taruhan yang Anda hemat. Baru setelah drawnya sampai, baris di atas berlaku.
+Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ dan set itu masih menang ==34%== dari waktu — dan tak ada flush jadi yang menekannya jauh di bawah itu (batas bawahnya sekitar 32%, melawan 3♥4♥ dengan out straight flush-nya): ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop, pada ukuran taruhan normal dengan stack masih tersisa, itu call — bukan karena kartu berikutnya saja sudah cukup sering mendarat (tujuh out sekitar 16%, di bawah harga kebanyakan taruhan), melainkan karena saat board berpasangan Anda memenangkan seluruh yang akan dibayar sebuah flush, dan mem-fold set di flop jauh lebih mahal dalam jangka panjang ketimbang taruhan yang Anda hemat. Baru setelah drawnya sampai, baris di atas berlaku.
 
 Cermin baliknya juga penting, karena **fold bisa jadi kebocoran tersendiri.** Laydown *bagus* melepas tangan kalah ke line yang masuk akal. Laydown *buruk* fold tangan terbaik ke scare card karena takut — dan jika Anda sering melakukannya, lawan yang berpikir akan bluff Anda tanpa henti. Tujuannya bukan fold lebih banyak atau lebih sedikit; melainkan fold *saat buktinya ada.*
 
@@ -146,7 +146,7 @@ Bisakah saya menyebut tangan lebih buruk yang akan mereka taruhkan begini? | Jik
 Apakah saya melampaui ambang pot odds? | Jika equity saya di bawah angka di tabel, harga berkata fold.
 Apakah line ini taruhan value atau bluff? | Pemain pasif dan raise besar di river biasanya value — percayai mereka.
 Apakah saya hanya call untuk "melihatnya"? | Rasa penasaran dan ego bukan alasan; itu ego Anda yang berbicara, bukan matematika.
-Akankah saya sendiri bertaruh tangan ini untuk value di sini? | Jika tidak, saya memegang bluff-catcher — pertanyaannya jadi seberapa sering dia bluff, bukan apakah saya unggul.
+Akankah saya sendiri bertaruh tangan ini untuk value di sini? | Jika tidak, tetapi tangan ini masih mengalahkan bluff mereka, saya memegang bluff-catcher — pertanyaannya jadi seberapa sering dia bluff, bukan apakah saya unggul.
 :::
 
 Tak satu pun dari ini butuh tiga puluh detik sungguhan begitu jadi kebiasaan — tapi memperlambat untuk keputusan besar justru yang tak pernah dilakukan calling station.

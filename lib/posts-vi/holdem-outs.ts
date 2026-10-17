@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Out là bất kỳ lá nào còn trong bộ bài giúp tay bạn mạnh lên thành tay nhiều khả năng thắng. Đếm số outs rồi quy đổi: nhân 4 ở flop hoặc nhân 2 ở turn để ra phần trăm trúng xấp xỉ. Flush draw có 9 outs, tức khoảng 36% đến river.",
   category: "odds",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 phút",
   emoji: "🎯",
@@ -128,7 +128,7 @@ Hãy để ý monster draw 15 outs: còn hai lá, nó hoàn thành 54,1% số l�
 
 Flush draw là 9 outs. Ở flop: 9 × 4 = **36%** (giá trị thật 35,0% — trúng phóc). Ở turn: 9 × 2 = **18%** (thật 19,6% — đủ sát để hành động).
 
-:::tip[Mẹo ×4 ngầm giả định bạn sẽ thấy *cả hai* lá mà không có thêm vòng cược — chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp). Nếu có cú bet trước mặt, hãy dùng con số ×2 (một lá) cho vòng bạn đang thực sự đứng.]:::
+:::tip[Mẹo ×4 ngầm giả định bạn sẽ thấy *cả hai* lá mà không có thêm vòng cược — chỉ được bảo đảm khi không thể có cú bet nào nữa (bạn đã all-in, hoặc đã call một cú all-in và không còn ai trong ván có thể cược tiếp). Nếu có cú bet trước mặt và sau đó vẫn có thể cược tiếp, hãy dùng con số ×2 (một lá) cho vòng bạn đang thực sự đứng; nếu cú bet đó là all-in và call nó là kết thúc việc cược, con số ×4 sẽ áp dụng.]:::
 
 Điểm yếu chính là **số outs lớn ở flop**. Phép tính hai lá chính xác tính việc trúng ở một trong hai vòng mà không đếm trùng lần trúng cả hai. Ước lượng ×4 bắt đầu hơi cao từ 7 outs, nhưng khoảng cách tăng theo draw càng lớn; phép hiệu chỉnh thường dùng bên dưới dành cho hơn 8 outs.
 

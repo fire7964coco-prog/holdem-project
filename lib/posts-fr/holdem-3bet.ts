@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 3-bet est la première surrelance avant le flop : on l'appelle ainsi parce que la grosse blinde est la première mise, l'open-raise la deuxième et ta surrelance la troisième. 3-bet pour la value avec un noyau serré (QQ+, AK) plus quelques bluffs assortis avec bloqueur comme A5s, size autour de 3 fois l'ouverture en position et 4 fois hors de position, et garde une fréquence globale de 3-bet proche de 6 à 10 %. Face à un 3-bet, 4-bet tes premiums, suis avec les mains qui jouent bien et couche-toi avec le reste, en te couchant plus que « l'équilibre » contre des joueurs de petites limites qui ne bluffent jamais.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -276,7 +276,7 @@ A. Pour un joueur solide, une fréquence globale de 3-bet autour de 6–10 % est
 
 **Q. Qu'est-ce qu'un squeeze au poker ?**
 
-A. Un squeeze est un 3-bet fait après un open-raise et au moins un suiveur. L'argent mort supplémentaire dans le pot augmente la récompense quand le squeeze fonctionne, et le coup met la pression sur les deux adversaires à la fois — le relanceur et le suiveur à range plafonnée. Squeeze plus gros qu'un 3-bet normal, en ajoutant environ une ouverture de plus par suiveur.
+A. Un squeeze est un 3-bet fait après un open-raise et au moins un suiveur. L'argent mort supplémentaire dans le pot augmente la récompense quand le squeeze fonctionne, et le coup met la pression sur les deux adversaires à la fois — le relanceur et le suiveur, dont la range est généralement plafonnée parce que la plupart des joueurs auraient fait un 3-bet avec leurs mains les plus fortes. Squeeze plus gros qu'un 3-bet normal, en ajoutant environ une ouverture de plus par suiveur.
 
 **Q. Comment réagir face à un 3-bet ?**
 

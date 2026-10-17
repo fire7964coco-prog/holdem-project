@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limp ialah masuk pot preflop dengan sekadar call big blind, bukan raise atau fold. Open-limp hampir selalu kesilapan: ia tak boleh menang blinds tanpa lawan, anda hilang inisiatif, dan pemain bagus menghukumnya. Pengecualiannya: complete small blind, over-limp di belakang limper lain, dan beberapa spot live atau short stack tournament.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-13",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 minit",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Apabila anda open-limp, anda melepaskan lebih banyak daripada yang disangka: pel
 
 1. **Limp tidak boleh memenangi blinds tanpa lawan.** Inilah yang paling besar. Apabila anda *raise* sebagai yang pertama masuk, semua orang boleh fold dan anda mengaut blinds tanpa lawan — wang percuma, dan ini berlaku agak kerap. Apabila anda limp, angka itu **sifar**. Anda sudah mengikat diri untuk perlu membentuk tangan atau menang kemudian; anda telah membuang cara paling bersih untuk menang.
 2. **Anda menyerahkan inisiatif.** Pemain yang raise preflop ialah "aggressor" — dia boleh membuat [continuation bet](/ms/blog/holdem-continuation-bet) di flop dan mewakili tangan kuat, selalunya memenangi pot tanpa apa-apa. Jika anda limp, anda telah menyerahkan cerita itu kepada orang lain. Kini anda bertindak balas, bukan memimpin.
-3. **Anda membina pot multiway yang kembung — selalunya out of position.** Limp menjemput lebih ramai pemain untuk call dan membenarkan big blind masuk dengan murah. Semakin ramai pemain melihat flop, semakin rendah nilai tangan anda, dan jika anda limp dari posisi awal, anda akan *out of position* (OOP — bertindak dahulu) terhadap hampir seluruh meja di setiap street, tanpa inisiatif. Itulah tempat duduk paling teruk di meja.
+3. **Anda membina pot multiway yang kembung — selalunya out of position.** Limp menjemput lebih ramai pemain untuk call dan membenarkan big blind masuk dengan murah. Semakin ramai pemain melihat flop, semakin rendah nilai tangan anda, dan jika anda limp dari posisi awal, anda akan *out of position* (OOP — bertindak dahulu) terhadap semua pemain yang masuk selepas anda di setiap street (selepas flop, hanya blind yang bertindak sebelum anda), tanpa inisiatif. Itulah tempat duduk paling teruk di meja.
 4. **Anda menjadikan diri mudah dibaca — dan mudah dieksploitasi.** Limper tegar datang dengan range (julat tangan) yang capped dan telus. Pemain bagus menyerangnya tanpa henti (lebih lanjut di bawah), jadi anda berulang kali terperangkap dalam spot sukar out of position. Seperti kata pepatah lama, limper kronik "menang pot kecil dan kalah pot besar."
 
 ---

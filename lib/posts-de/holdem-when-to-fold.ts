@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein Verlust-Call dich auf Dauer Chips kostet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände ab, die auf einem Board, das zum Gegner passt, einer Bet gegenüberstehen, ebenso schwache Draws, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -73,9 +73,9 @@ Postflop-Folden ist der Ort, an dem echtes Geld gespart wird, und jede Street st
 
 **Flop – „Hat dieses Board mir geholfen oder ihnen?“** Wenn du verfehlst und auf einem Board, das zur Range deines Gegners passt, einer Bet gegenüberstehst, lass es gehen. Ace-High ohne Draw auf einem koordinierten Board ist keinen Call wert, „um den Turn zu sehen“. Folde auch schwache Draws – ein Gutshot ohne weitere Equity und zu schlechtem Preis ist ein Fold, kein Chase.
 
-**Turn – die Aufgabe-Street.** Das ist der wichtigste Fold im Poker und der, den Spieler überspringen. Auf dem Turn polarisieren Ranges Richtung „sehr stark oder busted“, und die Bet-Sizes explodieren. Dein Flop-Float, der sich nicht verbessert hat, dein Second Pair, das jetzt einem zweiten Barrel gegenübersteht, dein Draw, der gerade mit einer Karte übrig und zu schlechtem Preis verfehlt hat – das sind Turns zum Ablegen, nicht um sich einen weiteren Call einzureden. Wenn du „den Flop gefloatet hast, um den Turn zu bluffen“, und der Turn dir keinen Grund gegeben hat, gib auf.
+**Turn – die Aufgabe-Street.** Das ist der wichtigste Fold im Poker und der, den Spieler überspringen. Auf dem Turn polarisieren Ranges Richtung „sehr stark oder busted“, und die Bet-Sizes explodieren. Dein Flop-Float, der sich nicht verbessert hat, dein Second Pair, das jetzt einem großen zweiten Barrel eines Spielers gegenübersteht, der selten blufft, dein Draw, der gerade mit einer Karte übrig und zu schlechtem Preis verfehlt hat – das sind meist Turns zum Ablegen, nicht um sich einen weiteren Call einzureden. Wenn du „den Flop gefloatet hast, um den Turn zu bluffen“, und der Turn dir keinen Grund gegeben hat, gib auf.
 
-**River – reines Bluff-Catching.** Du drawst auf nichts mehr; die einzige Frage ist *„kann meine Hand die Hände schlagen, die sie hier für Value betten würden?“* Wenn ein passiver Spieler groß in ein gruseliges Board feuert, ist die ehrliche Antwort meist nein. Folde die Hände, die nur einen Bluff schlagen, wenn dein Gegner selten blufft. Was uns zur Mathematik bringt.
+**River – reines Bluff-Catching.** Du drawst auf nichts mehr; die Frage ist *„schlägt meine Hand genug von dem, was sie hier betten würden – Value-Hände und Bluffs –, um den Preis zu rechtfertigen?“* Wenn ein passiver Spieler groß in ein gruseliges Board feuert, ist die ehrliche Antwort meist nein. Folde die Hände, die nur einen Bluff schlagen, wenn dein Gegner selten blufft. Was uns zur Mathematik bringt.
 
 ---
 
@@ -122,12 +122,12 @@ Trash zu folden ist einfach. Eine *gute* Hand zu folden – Top Pair, ein Overpa
 | **Top Pair, schwacher Kicker** | Großen Turn- + River-Bets ausgesetzt | Du schlägst Bluffs und schwächere Paare – aber ihre Value-Range hat dich am Kicker geschlagen |
 | **Overpair (JJ/QQ)** | Ein passiver Spieler raist ein koordiniertes Board | Passive Spieler raisen die Nuts, keine Luft – du drawst dünn |
 | **Top Pair Top Kicker** | Board läuft aus auf vier zu einem Flush oder einer Straße | Dein eines Paar kann den Flush/die Straße, die sie repräsentieren, nicht schlagen |
-| **Ein Set** | Große Raise auf monotonem oder Vier-zur-Straße-Board – **am River** | Set-over-Set ist ein Cooler, ein komplettierter Flush nicht. Am *Flop* macht dasselbe Set gegen einen fertigen Flush bis zum River immer noch in ~34% der Fälle ein Full House oder einen Vierling – und gewinnt dann einen Stack: callen |
+| **Ein Set** | Großer Raise auf monotonem oder Vier-zur-Straße-Board – **am River** | Set-over-Set ist ein Cooler, ein komplettierter Flush nicht. Am *Flop* macht dasselbe Set gegen einen fertigen Flush bis zum River immer noch in ~34% der Fälle ein Full House oder einen Vierling – und gewinnt dann einen Stack: bei normaler Bet-Size und Stacks dahinter callen |
 | **Second Pair** | Drei Streets callen, „um sie ehrlich zu halten“ | Du bezahlst dreimal Value, um einen Bluff zu fangen |
 
 </div>
 
-Die Set-Zeile ist die, deren Straße benannt werden muss, denn sie zu früh wegzulegen kostet mehr, als sie zu spät wegzulegen. Halte 9♠9♣ auf einem Flop 9♥5♥2♥ gegen einen fertigen Flush A♥K♥, und das Set gewinnt immer noch ==34%== der Fälle – und gegen keinen fertigen Flush fällt es weit darunter (die Untergrenze liegt bei rund 32%, gegen 3♥4♥ mit seinen Straight-Flush-Outs): Es füllt auf den sieben offensichtlichen Outs auf (die verbliebene Neun, drei Fünfen, drei Zweien) und zusätzlich immer dann, wenn Turn und River einander paaren. Am Flop ist das ein Call – nicht weil die nächste Karte allein oft genug ankommt (sieben Outs sind rund 16%, weniger als die meisten Bet-Preise verlangen), sondern weil du alles kassierst, was ein Flush zahlt, sobald das Board paart, und weil Sets am Flop wegzulegen dich langfristig weit mehr kostet als die Bets, die du sparst. Erst wenn der Draw angekommen ist, greift die Zeile oben.
+Die Set-Zeile ist die, deren Straße benannt werden muss, denn sie zu früh wegzulegen kostet mehr, als sie zu spät wegzulegen. Halte 9♠9♣ auf einem Flop 9♥5♥2♥ gegen einen fertigen Flush A♥K♥, und das Set gewinnt immer noch ==34%== der Fälle – und gegen keinen fertigen Flush fällt es weit darunter (die Untergrenze liegt bei rund 32%, gegen 3♥4♥ mit seinen Straight-Flush-Outs): Es füllt auf den sieben offensichtlichen Outs auf (die verbliebene Neun, drei Fünfen, drei Zweien) und zusätzlich immer dann, wenn Turn und River einander paaren. Am Flop ist das bei normaler Bet-Size und noch Stacks dahinter ein Call – nicht weil die nächste Karte allein oft genug ankommt (sieben Outs sind rund 16%, weniger als die meisten Bet-Preise verlangen), sondern weil du alles kassierst, was ein Flush zahlt, sobald das Board paart, und weil Sets am Flop wegzulegen dich langfristig weit mehr kostet als die Bets, die du sparst. Erst wenn der Draw angekommen ist, greift die Zeile oben.
 
 Das Spiegelbild zählt auch, denn **Folden kann selbst ein Leak sein.** Ein *guter* Laydown legt eine geschlagene Hand gegen eine Linie ab, die Sinn ergibt. Ein *schlechter* Laydown foldet die beste Hand aus Angst auf eine Scare Card – und wenn du das oft machst, werden denkende Gegner dich unerbittlich bluffen. Das Ziel ist nicht, mehr oder weniger zu folden; es ist, zu folden, *wenn die Beweise da sind.*
 
@@ -161,7 +161,7 @@ Kann ich die schwächeren Hände nennen, die sie so betten würden? | Wenn die e
 Übersteige ich die Pot-Odds-Grenze? | Wenn meine Equity unter der Zahl in der Tabelle liegt, sagt der Preis: folde.
 Ist diese Linie eine Value-Bet oder ein Bluff? | Passive Spieler und große River-Raises sind meist Value – glaub ihnen.
 Calle ich nur, um „es zu sehen“? | Neugier und Ego sind keine Gründe; da spricht dein Ego, nicht die Mathematik.
-Würde ich diese Hand hier selbst für Value betten? | Wenn nicht, halte ich einen Bluffcatcher – die Frage ist dann, wie oft sie bluffen, nicht ob ich vorne bin.
+Würde ich diese Hand hier selbst für Value betten? | Wenn nicht, sie aber trotzdem ihre Bluffs schlägt, halte ich einen Bluffcatcher – die Frage ist dann, wie oft sie bluffen, nicht ob ich vorne bin.
 :::
 
 Nichts davon dauert dreißig echte Sekunden, sobald es zur Gewohnheit wird – aber für die großen Entscheidungen langsamer zu werden, ist genau das, was die Calling Station nie tut.

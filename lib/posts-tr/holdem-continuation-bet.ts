@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet), preflop'ta raise yapan oyuncunun flop'ta yaptığı bahistir. Modern kural her flop'a c-bet atmak değil; range'ini destekleyen yüksek ve kuru board'larda (K-7-2 gibi) küçük ve sık bahis yapmak, rakibini destekleyen düşük ve bağlantılı board'larda (7-6-5 gibi) check etmektir. Kuru board'da potun üçte biri, ıslak board'da üçte ikisi ya da daha fazlası kadar bahis yap; tek raise eden olarak pozisyon dışında daha az c-bet yap (pozisyon dışındaki 3-bet'çi olarak ise tersine döner: çözdüğümüz üç board'da %97'nin üstüne çıktı), multiway potlarda ise çok daha az.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-15",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 dk",
@@ -194,7 +194,7 @@ Tek bir "doğru" c-bet yüzdesi yok — sana tek bir sayı veren herkes aslında
 
 | Durum | Yaklaşık c-bet sıklığı | Not |
 |:---|:---:|:---|
-| **Pozisyonda, heads-up, kuru board** | **%70–100** (küçük) | Klasik "range bet" — neredeyse her şeyle, minik bahis |
+| **Pozisyonda, heads-up, K ya da Q yüksek kuru board** | **%70+** (küçük) | Klasik "range bet" — range'inin çoğuyla, minik bahis. Kuru **as yüksek** board'larda çok daha az bahis yapılır (yukarıdaki solver tablosunda A♥7♦2♣ %59,0) |
 | **Pozisyonda, heads-up, ıslak board** | **~%50–60** | Daha polarize — value ve draw'lar bahis, boş eller check |
 | **Pozisyon dışında, heads-up (tek raise'li pot, raise yapan sensin)** | **~%30–45** | Check range'ini korumak için çok daha fazla check et. Pozisyon dışındaki *3-bet'çi* olarak tersine döner: çözdüğümüz üç board'un üçünde de %97'nin üstünde; Q♥T♥7♠ ve 8♦5♣2♠'de neredeyse tamamı potun üçte ikisiyle, A♦K♠2♥'de ise çoğunlukla üçte biriyle (%57,8) |
 | **Multiway (2 rakip)** | **~%50 ya da daha az** | Birinin bağlamış olması muhtemel — sıkılaş |
@@ -273,7 +273,7 @@ Asıl iş flop'ta başlar: c-bet'i yapmadan önce hangi turn kartlarında ikinci
 
 "Yapma"yı açıkça yazalım, çünkü para tam burada kurtarılır:
 
-- **Board rakibinin range'ine çok iyi oturdu.** 7‑6‑5 ya da 9‑8‑7 flop'u, bir raise'i call eden elleri seninkilerden çok daha sert vurur. Burada range'inin çoğuyla bahis yapmak düpedüz çip bağışlamaktır — çok daha sık check et, bahis yaptığında da büyük ve seçici ol.
+- **Board rakibinin range'ine çok iyi oturdu.** 7‑6‑5 ya da 9‑8‑7 flop'u, bir raise'i call eden elleri seninkilerden çok daha sert vurur. Burada otomatik pilotta c-bet yapmak düpedüz çip bağışlamaktır — range'inin K‑7‑2'de olduğundan çok daha büyük kısmıyla check et, bahis yaptığında da büyük ve seçici ol.
 - **Dinamik bir board'da sınırda bir elle pozisyon dışındasın.** Hiç bilgi olmadan ilk konuşuyorsan potu küçük tut ve check et.
 - **Boş elle multiway'desin.** Yukarıda anlattık — fold equity neredeyse yok, o yüzden bahis yok.
 - **Elin bir check range'ini korumak istiyor.** Bazen güçlü bir elle bilerek check edersin ki check'lerin otomatik olarak zayıf görünmesin.
@@ -343,7 +343,7 @@ A. Evet — ıskalamış elle bahis c-bet'in olağan bir parçasıdır, çünkü
 
 **Q. Ne sıklıkla c-bet yapmalısın?**
 
-A. Pozisyona, board'a ve rakip sayısına bağlıdır; bu yüzden bunları kural değil aralık olarak gör: pozisyonda, heads-up, kuru board'da (küçük boyutla) kabaca %70–100; tek raise'li potta raise yapan olarak pozisyon dışında %30–45 civarı (3-bet'çi olarak daha yüksek); multiway'de %50 ya da daha az. Sağlıklı bir genel flop c-bet oranı yaklaşık %55–70'tir — %85'in üstü otomatik pilotta olduğun anlamına gelir.
+A. Pozisyona, board'a ve rakip sayısına bağlıdır; bu yüzden bunları kural değil aralık olarak gör: pozisyonda, heads-up, K ya da Q yüksek kuru board'da (küçük boyutla) kabaca %70 ya da daha fazla (kuru as yüksek board'larda belirgin şekilde daha az); tek raise'li potta raise yapan olarak pozisyon dışında %30–45 civarı (3-bet'çi olarak daha yüksek); multiway'de %50 ya da daha az. Sağlıklı bir genel flop c-bet oranı yaklaşık %55–70'tir — %85'in üstü otomatik pilotta olduğun anlamına gelir.
 
 **Q. Ne kadar c-bet yapmalısın?**
 

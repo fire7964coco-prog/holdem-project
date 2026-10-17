@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bu rehber, Texas Hold'em masasında gerçekten duyacağın kelimeleri karşına çıktıkları duruma göre gruplar: bahis hareketleri, pozisyonlar, eller ve board, oyuncu tipleri, para ve formatlar, masa durumları. Rest, bop, rölans, gördüm, pas ve kav gibi eski Türk masa sözleri de Hold'em karşılıklarıyla burada. Önce en çok karıştırılan ikililerle başla; derin rehberi olan kelimeler doğrudan o yazıya bağlanıyor.",
   category: "glossary",
   date: "2026-10-06",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "13 dk",
@@ -196,13 +196,13 @@ Hangi elin hangisini yendiğini hâlâ öğreniyorsan tam sıralama [poker el s�
 
 ![Beş poker oyuncu tipi kutucuğu — fish, whale, donk, nit ve shark — her biri kendini tanımlayan sembolle işaretli](/images/holdem-glossary-player-types.webp "Her masa farklı tiplerin karışımıdır — argoyu öğrenmek kimi hedef alacağını, kimden uzak duracağını söyler")
 
-Fish, masanın kâr kaynağı olan zayıf ve kaybeden eğlence oyuncusudur; shark ise zayıf oyunculardan beslenen güçlü, kazanan oyuncudur. Nit yalnızca premium ellerle oynayan aşırı sıkı oyuncu, calling station her şeyi call edip nadiren fold eden pasif oyuncudur. Bu argo, çuhanın karşı tarafındaki insanların takma adlarından oluşan küçük bir hayvanat bahçesidir.
+Fish, masanın kâr kaynağı olan zayıf ve kaybeden oyuncudur; shark ise zayıf oyunculardan beslenen güçlü, kazanan oyuncudur. Nit yalnızca premium ellerle oynayan aşırı sıkı oyuncu, calling station her şeyi call edip nadiren fold eden pasif oyuncudur. Bu argo, çuhanın karşı tarafındaki insanların takma adlarından oluşan küçük bir hayvanat bahçesidir.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Terim | Anlamı |
 |:---|:---|
-| **Fish** | Zayıf, kaybeden eğlence oyuncusu — masanın kâr kaynağı. |
+| **Fish** | Zayıf, kaybeden oyuncu — masanın kâr kaynağı. |
 | **Shark** | Zayıf oyunculardan beslenen güçlü, kazanan oyuncu. |
 | **Whale** | Yüksek limitlerde oynayan varlıklı, zayıf eğlence oyuncusu — "cebi derin bir fish". |
 | **Nit** | Yalnızca premium ellerle oynayan aşırı sıkı oyuncu. |

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -202,7 +202,7 @@ As piores mãos iniciais do poker não são tralha aleatória como 7-2 — ningu
 | Rei-carta baixa offsuit (K3o, K4o) | Dominada por todo rei melhor | "Um rei é uma carta grande" |
 | Duas cartas quaisquer do mesmo naipe | Faz flush até o river só ~6,4% das vezes (flopa um em ~0,8%) | "Mas são do mesmo naipe" |
 
-![Armadilha do ás fraco no Texas Hold'em — A♣ 4♦ contornado em vermelho como mão perdedora, dominada por A♠ K♦ em dourado](/images/holdem-starting-hands-weak-ace-trap.webp "Ases fracos parecem fortes mas continuam dominados — folde no pré-flop")
+![Armadilha do ás fraco no Texas Hold'em — A♣ 4♦ contornado em vermelho como mão perdedora, dominada por A♠ K♦ em dourado](/images/holdem-starting-hands-weak-ace-trap.webp "Ases fracos offsuit parecem fortes mas continuam dominados — folde no pré-flop")
 
 O ==r:erro mais caro que iniciantes cometem é pagar aumentos com ases fracos== como o A♣ 4♦ da introdução. Quando você finalmente acerta seu par de ases, muitas vezes você é o segundo melhor contra A♠ K♦ ou A♥ Q♦ — e perde um pote grande convencido de que tem top pair. E você tem. Eles também, com um kicker melhor.
 

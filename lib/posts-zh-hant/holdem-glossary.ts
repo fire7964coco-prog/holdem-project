@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "這是一份大白話的德州撲克術語表，收的都是牌桌上真會碰到的詞，按你怎麼遇到它們來分組——下注動作、位置、牌型與牌面、玩家類型、錢，以及牌桌局面。先看下面那組「最容易搞混」的詞（過牌 vs 跟注、暗三條 vs 明三條、Cooler vs Bad Beat），再按分類隨便翻。有深入指南的術語會直接給你連結。",
   category: "glossary",
   date: "2026-07-22",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 分鐘",
@@ -181,7 +181,7 @@ export const POST: Post = {
 
 | 術語 | 意思 |
 |:---|:---|
-| **[魚（Fish）](/zh-hant/blog/holdem-fish)** | 技術差、長期輸錢的娛樂玩家——牌桌的利潤來源。 |
+| **[魚（Fish）](/zh-hant/blog/holdem-fish)** | 技術差、長期輸錢的玩家——牌桌的利潤來源。 |
 | **鯊魚（Shark）** | 牌技高超、專吃弱者的贏家。 |
 | **鯨魚（Whale）** | 有錢卻打得差、玩大注的娛樂玩家——「口袋很深的魚」。 |
 | **石頭（Nit）** | 極緊的玩家，只玩頂級牌，台灣也常直接講「Nit」。 |

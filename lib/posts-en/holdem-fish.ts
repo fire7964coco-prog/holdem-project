@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "What Is a Fish in Poker? How to Spot One — and Make Sure It Isn't You",
   seoTitle: "If You Can't Spot the Fish, It's You — What Is a Poker Fish?",
   desc: "A fish is the weak player the whole table profits from. How to spot one, the shark/whale/nit/donkey slang decoded, and how to make sure the fish isn't you.",
-  tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
+  tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. The classic fish plays too many hands, calls too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -80,7 +80,7 @@ No single sign is proof — even good players limp occasionally or chase a big d
 
 | Term | What it means | How they play | How you beat them |
 |:---|:---|:---|:---|
-| **Fish** | Weak, losing player (umbrella term) | Loose, passive, can't fold | Value-bet thin, don't bluff |
+| **Fish** | Weak, losing player (umbrella term) | Classic: loose, passive, can't fold | Value-bet thin, don't bluff |
 | **Shark** | Strong, winning player | Tight-aggressive, adaptive | Avoid — pick softer tables |
 | **Whale** | A *rich* fish who loses **big** | Very loose, high stakes, doesn't care | Same as a fish, higher reward |
 | **Nit** | Extremely tight, risk-averse | Only premium hands, rarely bluffs | Fold to most of their raises; steal blinds |
@@ -125,7 +125,7 @@ Here's the uncomfortable part. If you've read this far quietly hoping you're a s
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (hands played) | PFR (hands raised) | The read |
+| | VPIP (hands played preflop) | PFR (hands raised preflop) | The read |
 |:---|:---:|:---:|:---|
 | **Solid player** | 15–22% | 12–18% (never higher than their VPIP) | Tight, aggressive, close gap |
 | **Fish** | 40–70% | under 10% | Loose and passive — playing everything, leading nothing |
@@ -203,7 +203,7 @@ A. The famous on-screen version is from the 1998 film *Rounders*, spoken by Matt
 ## The 3 Things to Remember
 
 1. **A fish is the weak player everyone else profits from** — loose, passive, and usually unaware of it. Spotting the fish is the first job at any table.
-2. **Know the whole zoo.** Fish, whale, nit, donkey, and calling station are not interchangeable — naming your opponent's exact type tells you precisely how to beat them.
+2. **Know the whole zoo.** Fish, whale, nit, donkey, and calling station are not interchangeable — naming your opponent's type — as a working read you keep updating — tells you how to start beating them.
 3. **Make sure it isn't you.** A wide VPIP with a low raise percentage is the fish signature. If that's you, the fixes are the easiest wins in poker: play fewer hands, fold more, and stop chasing draws without the right pot odds.
 
 The old line is right for a reason. Look around your next table and find the fish in the first half hour — and if you genuinely can't, the most valuable thing poker will ever teach you is that it's time to work on your own game. Start with a tighter [starting hand range](/en/blog/holdem-starting-hands-chart) and a real feel for [pot odds](/en/blog/holdem-pot-odds), and let someone else be the meal.

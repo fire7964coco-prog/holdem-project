@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mọi quyết định thắng trong Texas Hold'em đều quy về 5 câu hỏi lặp lại: tôi đang ngồi ở vị trí nào, tay bài này có đáng chơi không, raise hay fold thay vì open-limp, có tiếp tục cược ở flop (c-bet) không, và khi nào nên bỏ bài. Người chơi tight-aggressive trả lời tốt 5 câu đó sẽ bỏ khoảng 80% tay bài preflop, chơi mạnh tay khi đã vào pot và thắng gần như mọi bàn chơi vui — không cần học thuộc danh sách mẹo nào cả.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -80,7 +80,7 @@ Lỗ hổng lớn nhất trong poker là chơi quá nhiều tay bài. Người m
 
 Tay bài nào đủ chuẩn tùy thuộc vào vị trí của bạn (quyết định 1 nuôi quyết định 2), nhưng đây là quy tắc khởi điểm:
 
-- **Luôn raise:** đôi lớn (từ A‑A xuống T‑T) và A‑K.
+- **Luôn raise khi bạn vào pot đầu tiên với stack bình thường (~100bb):** đôi lớn (từ A‑A xuống T‑T) và A‑K.
 - **Thường raise:** đôi trung, A‑Q và các bài broadway đồng chất mạnh (K‑Q, A‑J đồng chất) — càng ngồi muộn càng thoải mái hơn.
 - **Đầu cơ, tùy vị trí:** đôi tẩy nhỏ và suited connector (hai lá bài liên tiếp cùng chất), những tay bài muốn vào pot nhiều người với giá rẻ (phần toán ở dưới).
 - **Fold:** gần như mọi thứ còn lại, nhất là bài rác lệch chất như J‑4, Q‑7, K‑3.

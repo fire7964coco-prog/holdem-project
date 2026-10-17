@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -165,7 +165,7 @@ The zoo of nicknames for the people across the felt. The full breakdown lives in
 
 | Term | Meaning |
 |:---|:---|
-| **Fish** | A weak, losing recreational player — the table's profit source. |
+| **Fish** | A weak, losing player — the table's profit source. |
 | **Shark** | A strong, winning player who preys on weaker ones. |
 | **Whale** | A wealthy, weak recreational player at big stakes — a "fish with deep pockets." |
 | **Nit** | An extremely tight player who only plays premium hands. |

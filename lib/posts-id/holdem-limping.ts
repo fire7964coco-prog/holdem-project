@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — sebuah limp tak bisa memenangkan blind tanpa perlawanan, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan turnamen short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-10-06",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Saat Anda open-limp, Anda melepas jauh lebih banyak daripada yang Anda kira. Ini
 
 1. **Sebuah limp tak bisa memenangkan blind tanpa perlawanan.** Ini yang paling besar. Saat Anda *raise* first-in, semua orang bisa fold dan Anda menyapu blind tanpa perlawanan — uang gratis, dan itu terjadi cukup sering. Saat Anda limp, angka itu **nol**. Anda menjamin bahwa Anda harus membentuk tangan atau memenangkannya nanti; Anda membuang cara termurah untuk menang.
 2. **Anda menyerahkan inisiatif.** Sang preflop raiser adalah "agresor" — mereka bisa melepas [continuation bet](/id/blog/holdem-continuation-bet) di flop dan mewakili tangan kuat, sering merebut pot tanpa apa-apa. Limp, dan Anda telah menyerahkan cerita itu ke orang lain. Kini Anda bereaksi alih-alih memimpin.
-3. **Anda membangun pot multiway yang membengkak — sering di luar posisi.** Limping mengundang lebih banyak caller dan membiarkan big blind masuk dengan murah. Makin banyak pemain melihat flop, makin kecil nilai tangan Anda, dan jika Anda limp dari posisi awal Anda akan *di luar posisi* terhadap hampir seluruh meja di setiap street, tanpa inisiatif. Itu kursi terburuk yang ada.
+3. **Anda membangun pot multiway yang membengkak — sering di luar posisi.** Limping mengundang lebih banyak caller dan membiarkan big blind masuk dengan murah. Makin banyak pemain melihat flop, makin kecil nilai tangan Anda, dan jika Anda limp dari posisi awal Anda akan *di luar posisi* terhadap semua orang yang masuk setelah Anda di setiap street (setelah flop, hanya blind yang bertindak sebelum Anda), tanpa inisiatif. Itu kursi terburuk yang ada.
 4. **Anda membuat diri Anda mudah dibaca — dan dieksploitasi.** Limper kebiasaan muncul dengan range yang terbatas dan transparan. Pemain bagus menyerangnya tanpa henti (lebih lanjut di bawah), jadi Anda berakhir dalam spot sulit di luar posisi berulang kali. Seperti kata pepatah lama, limper kronis "menang pot kecil dan kalah pot besar."
 
 ---

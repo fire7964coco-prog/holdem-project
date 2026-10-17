@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -199,7 +199,7 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 | King-rag offsuit (K3o, K4o) | Terdominasi oleh setiap king yang lebih baik | "King itu kartu besar" |
 | Dua kartu suited apa pun | Membuat flush di river hanya ~6,4% dari waktu (flop satu ~0,8%) | "Tapi kartunya satu suit, kan" |
 
-![Jebakan ace lemah di Texas Hold'em — A♣ 4♦ dilingkari merah sebagai tangan yang merugi, terdominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "Ace lemah terlihat kuat tapi tetap terdominasi — fold preflop")
+![Jebakan ace lemah di Texas Hold'em — A♣ 4♦ dilingkari merah sebagai tangan yang merugi, terdominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "Ace offsuit lemah terlihat kuat tapi tetap terdominasi — fold preflop")
 
 ==r:Kesalahan paling mahal yang dibuat pemula adalah call raise dengan ace lemah== seperti A♣ 4♦ dari intro. Saat akhirnya Anda hit pair ace, Anda sering cuma jadi yang terbaik kedua melawan A♠ K♦ atau A♥ Q♦ — dan Anda kehilangan pot besar sambil yakin Anda punya top pair. Anda memang punya. Begitu pula mereka, dengan kicker lebih baik.
 

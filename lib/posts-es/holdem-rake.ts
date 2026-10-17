@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de la mayoría de botes por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -200,7 +200,7 @@ A. El rake en vivo tiende a ser un porcentaje más alto, normalmente con un tope
 2. **Golpea más fuerte a los límites bajos.** El tope apenas se mueve conforme bajas, así que en proporción pagas el máximo rake en la base — la "trampa del rake" que hace tan difíciles de batir los micro-límites.
 3. **El rakeback y la estructura importan.** Recuperar el 20–40% de tu rake, y elegir salas con topes amables para el jugador, puede darle la vuelta a tu resultado a largo plazo — mide todo *después* del rake.
 
-Ahora que puedes ver la tajada de la casa, los números que lees en todas partes cobran más sentido: tus [pot odds](/es/blog/holdem-pot-odds), tu win rate, y por qué un [straddle](/es/blog/holdem-straddle) que infla el bote también alimenta silenciosamente el rake. El póker se puede batir — pero solo una vez que les ganas a los otros jugadores por *más* de lo que la casa se lleva.
+Ahora que puedes ver la tajada de la casa, los números que lees en todas partes cobran más sentido: tus [pot odds](/es/blog/holdem-pot-odds), tu win rate, y por qué un [straddle](/es/blog/holdem-straddle) que infla el bote también puede alimentar silenciosamente el rake — en botes con rake que aún no han llegado al tope (no en los botes preflop bajo el "no flop, no drop" ni en las partidas con rake por tiempo). El póker se puede batir — pero solo una vez que les ganas a los otros jugadores por *más* de lo que la casa se lleva.
 
 ---
 
@@ -215,7 +215,7 @@ Ahora que puedes ver la tajada de la casa, los números que lees en todas partes
   <a href="/es/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosario</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">¿Qué es un straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La ciega extra que infla el bote — y el rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La ciega extra que infla el bote — y puede subir el rake</div>
   </a>
   <a href="/es/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Math</div>

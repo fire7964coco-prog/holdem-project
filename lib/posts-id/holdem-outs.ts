@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -128,7 +128,7 @@ Perhatikan monster 15-out: dengan dua kartu yang akan datang ia jadi 54,1% dari 
 
 Flush draw punya 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — pas). Di turn: 9 × 2 = **18%** (sebenarnya 19,6% — cukup dekat untuk beraksi).
 
-:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat tak ada taruhan lagi yang bisa terjadi (Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh). Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
+:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat tak ada taruhan lagi yang bisa terjadi (Anda all-in, atau Anda sudah call sebuah all-in dan tak ada lagi pemain tersisa di hand yang masih bisa bertaruh). Jika ada taruhan di depan Anda dan masih bisa ada taruhan lagi sesudahnya, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani; jika taruhan itu all-in dan call Anda mengakhiri taruhan, angka ×4 yang berlaku.]:::
 
 Kelemahan utamanya ada di **jumlah out tinggi di flop.** Hitungan dua kartu yang persis memperhitungkan kena di street mana pun tanpa menghitung dua kali saat kedua kartu sama-sama kena. Perkiraan ×4 mulai sedikit terlalu tinggi sejak 7 outs, tapi selisihnya membesar pada draw yang lebih besar; koreksi umum di bawah dipakai untuk lebih dari 8 outs.
 

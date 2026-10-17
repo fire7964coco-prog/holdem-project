@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -205,7 +205,7 @@ Die schlechtesten Starthände im Poker sind nicht zufälliger Müll wie 7-2 – 
 | King-Rag Offsuit (K3o, K4o) | Von jedem besseren König dominiert | „Ein König ist eine große Karte“ |
 | Zwei beliebige suited Karten | Macht bis zum River nur ~6,4% der Zeit einen Flush (floppt einen ~0,8%) | „Aber sie sind dieselbe Farbe“ |
 
-![Schwache-Ass-Falle im Texas Hold'em – A♣ 4♦ rot umrandet als verlierende Hand, dominiert von A♠ K♦ in Gold](/images/holdem-starting-hands-weak-ace-trap.webp "Schwache Asse sehen stark aus, bleiben aber dominiert – folde sie preflop")
+![Schwache-Ass-Falle im Texas Hold'em – A♣ 4♦ rot umrandet als verlierende Hand, dominiert von A♠ K♦ in Gold](/images/holdem-starting-hands-weak-ace-trap.webp "Schwache Offsuit-Asse sehen stark aus, bleiben aber dominiert – folde sie preflop")
 
 Der ==r:teuerste Fehler, den Anfänger machen, ist Raises mit schwachen Assen zu callen== wie dem A♣ 4♦ aus dem Intro. Wenn du endlich dein Ass-Paar triffst, bist du oft zweitbester gegen A♠ K♦ oder A♥ Q♦ – und du verlierst einen großen Pot, überzeugt, dass du Top Pair hast. Hast du auch. Sie auch, mit einem besseren Kicker.
 

@@ -14,8 +14,8 @@ export const POST: Post = {
   tldr: "Trên A♥7♦2♣ sau khi button open và big blind call, big blind check 98,2% range của mình — kể cả top pair, hai đôi và set. Equity gần như ngang nhau, 45,1% so với 54,9%; thứ tách hai ghế ra là equity realization: 84,0% khi không có vị trí so với 113,1% khi có vị trí.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "9 phút",
   emoji: "🅰️",
@@ -145,7 +145,7 @@ Mở [GTO poker solver miễn phí](/vi/solver), vào **Spot mẫu → Board A-h
 
 Muốn luyện chính spot này thay vì chỉ đọc, hãy mở **Trainer GTO** ở thanh bên: nó chia cho bạn một tay bài từ range thật, bạn chọn hành động, và nó cho biết lựa chọn đó tốn bao nhiêu big blind. Miễn phí, không cần cài đặt và không cần tài khoản.
 
-> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot BTN open và BB call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, BTN và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể hơi khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
+> **Phân tích ván bài của chính bạn ở spot này** — Spot này là pot BTN open và BB call. Nếu bạn đã chơi một ván trong đúng tình huống này, hãy mở [Phân tích ván bài](https://solver.holdemmaster.com/?view=hand-review&lang=vi) trong solver, đặt tình huống (**Open · Call**, BTN và BB) và **Vị trí của bạn**, chọn **2 lá của bạn** cùng **3 lá flop**, rồi bấm các hành động theo đúng thứ tự đã diễn ra, kể cả hành động của đối thủ. Kết quả cho biết lựa chọn đó thuộc **Nước đi tốt nhất**, **Chấp nhận được** hay **Xem lại nước đi này**. Phần phân tích dùng bảng preflop của ứng dụng (cash online 6-max, 100bb), nên số liệu có thể khác ví dụ ở trên, và công cụ này có thể không phù hợp với các ván chơi ở pub hay giải đấu.
 
 ## Câu hỏi thường gặp
 

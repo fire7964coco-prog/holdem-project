@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-28",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -127,7 +127,7 @@ Notice the 15-out monster: with two cards to come it completes 54.1% of the time
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.6% — close enough to act).
 
-:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when no more betting can happen (you're all-in, or you've called an all-in and no one left in the hand can still bet). If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
+:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when no more betting can happen (you're all-in, or you've called an all-in and no one left in the hand can still bet). If there's a bet in front of you and more betting can still follow, use the ×2 (one-card) number for the street you're actually on; if that bet is an all-in and calling it ends the betting, the ×4 number applies.]:::
 
 The main weakness is **high out counts on the flop**. The exact two-card calculation accounts for hitting on either street without counting a double hit twice. The ×4 estimate starts running slightly high at 7 outs, but the gap grows with bigger draws; the usual correction below is used for more than 8 outs.
 

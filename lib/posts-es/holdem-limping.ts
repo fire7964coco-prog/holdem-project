@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — un limp no puede llevarse las ciegas sin oposición, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y de torneo con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-10-06",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Cuando haces open-limp, renuncias a una cantidad sorprendente de cosas. Esto es 
 
 1. **Un limp no puede llevarse las ciegas sin oposición.** Esta es la grande. Cuando *subes* siendo el primero en entrar, todos pueden foldear y te llevas las ciegas sin oposición — dinero gratis, una buena parte de las veces. Cuando limpeas, ese número es **cero**. Te has garantizado que tienes que ligar una mano o ganarla más tarde; has tirado la forma más limpia de ganar.
 2. **Cedes la iniciativa.** El que sube preflop es el "agresor" — es quien lanza una [apuesta de continuación](/es/blog/holdem-continuation-bet) en el flop y representa una mano fuerte, a menudo llevándose el bote sin nada. Limpea, y le has entregado esa historia a otro. Ahora reaccionas en lugar de liderar.
-3. **Construyes un bote hinchado y multiway — a menudo fuera de posición.** Limpear invita a más pagadores y deja entrar barata a la ciega grande. Cuantos más jugadores vean el flop, menos vale tu mano, y si limpeaste desde posición temprana estarás *fuera de posición* frente a casi toda la mesa en cada calle, y sin iniciativa. Ese es el peor asiento de la mesa.
+3. **Construyes un bote hinchado y multiway — a menudo fuera de posición.** Limpear invita a más pagadores y deja entrar barata a la ciega grande. Cuantos más jugadores vean el flop, menos vale tu mano, y si limpeaste desde posición temprana estarás *fuera de posición* frente a todos los que entren detrás de ti en cada calle (después del flop solo las ciegas actúan antes que tú), y sin iniciativa. Ese es el peor asiento de la mesa.
 4. **Te vuelves legible — y explotable.** Los limpers habituales aparecen con un rango limitado y transparente. Los buenos jugadores lo atacan sin descanso (más sobre esto abajo), así que acabas en spots complicados fuera de posición una y otra vez. Como dice el viejo refrán, los limpers crónicos "ganan botes pequeños y pierden los grandes".
 
 ---

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apa Itu Fish di Poker? Cara Mengenalinya — dan Memastikan Itu Bukan Anda",
   seoTitle: "Kalau Tak Bisa Kenali Fish-nya, Itu Anda — Apa Itu Fish Poker?",
   desc: "Fish adalah pemain lemah yang menghidupi seluruh meja. Cara mengenalinya, slang shark/whale/nit/donkey dibedah, dan cara memastikan fish itu bukan Anda.",
-  tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
+  tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish klasik memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -81,7 +81,7 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 
 | Istilah | Apa artinya | Cara main mereka | Cara mengalahkan mereka |
 |:---|:---|:---|:---|
-| **Fish** | Pemain lemah yang kalah (istilah payung) | Loose, pasif, tak bisa fold | Value-bet tipis, jangan bluff |
+| **Fish** | Pemain lemah yang kalah (istilah payung) | Klasik: loose, pasif, tak bisa fold | Value-bet tipis, jangan bluff |
 | **Shark** | Pemain kuat yang menang | Tight-aggressive, adaptif | Hindari — pilih meja yang lebih empuk |
 | **Whale** | Fish *kaya* yang kalah **besar** | Sangat loose, stakes tinggi, tak peduli | Sama seperti fish, imbalan lebih tinggi |
 | **Nit** | Sangat tight, menghindari risiko | Hanya tangan premium, jarang bluff | Fold ke sebagian besar raise mereka; curi blind |
@@ -126,7 +126,7 @@ Inilah bagian yang tak nyaman. Kalau Anda membaca sejauh ini sambil diam-diam be
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (tangan dimainkan) | PFR (tangan di-raise) | Read-nya |
+| | VPIP (tangan dimainkan preflop) | PFR (tangan di-raise preflop) | Read-nya |
 |:---|:---:|:---:|:---|
 | **Pemain solid** | 15–22% | 12–18% (tak pernah lebih tinggi dari VPIP mereka) | Tight, agresif, celah sempit |
 | **Fish** | 40–70% | di bawah 10% | Loose dan pasif — memainkan segalanya, memimpin apa pun tidak |
@@ -204,7 +204,7 @@ A. Versi layar yang terkenal berasal dari film *Rounders* tahun 1998, diucapkan 
 ## 3 Hal yang Harus Diingat
 
 1. **Fish adalah pemain lemah yang dikeruk semua orang lain** — loose, pasif, dan biasanya tak menyadarinya. Mengenali fish adalah tugas pertama di meja mana pun.
-2. **Kenali seluruh kebun binatangnya.** Fish, whale, nit, donkey, dan calling station bukanlah hal yang bisa dipertukarkan — menyebut tipe persis lawan Anda memberi tahu Anda persis cara mengalahkan mereka.
+2. **Kenali seluruh kebun binatangnya.** Fish, whale, nit, donkey, dan calling station bukanlah hal yang bisa dipertukarkan — menyebut tipe lawan Anda — sebagai read sementara yang terus Anda perbarui — memberi tahu Anda cara mulai mengalahkan mereka.
 3. **Pastikan itu bukan Anda.** VPIP lebar dengan persentase raise rendah adalah tanda tangan fish. Kalau itu Anda, perbaikannya adalah kemenangan termudah di poker: mainkan lebih sedikit tangan, lebih banyak fold, dan berhenti mengejar draw tanpa pot odds yang tepat.
 
 Kalimat lama itu benar karena suatu alasan. Lihatlah sekeliling meja Anda berikutnya dan temukan fish-nya dalam setengah jam pertama — dan kalau Anda benar-benar tak bisa, pelajaran paling berharga yang bisa poker berikan kepada Anda adalah bahwa saatnya menggarap permainan Anda sendiri. Mulai dengan [range starting hand](/id/blog/holdem-starting-hands-chart) yang lebih tight dan rasa nyata untuk [pot odds](/id/blog/holdem-pot-odds), dan biarkan orang lain yang menjadi santapannya.

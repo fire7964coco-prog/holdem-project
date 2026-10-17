@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır ve 5 ortak kart herkesin ortak kullanımına açılır. En fazla dört bahis turu oynanır ve showdown'da en iyi 5 kartlık poker eli kazanır — diğer herkes daha önce fold etmezse.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-14",
-  masterUpdated: "2026-10-13",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "16 dk",
   emoji: "♠️",
@@ -362,7 +362,7 @@ Kurallar oturunca, ilk stratejin sıkıcı ve sağlam olmalı.
 
 | Kademe | Eller | Ne zaman oyna |
 |------|-------|--------------|
-| 🟥 **Premium — her zaman yükselt** | AA, KK, QQ, JJ, AKs, AKo | Her pozisyon, her stack — pota ilk giren sensen raise, tek bir raise'e karşı re-raise |
+| 🟥 **Premium — her zaman yükselt** | AA, KK, QQ, JJ, AKs, AKo | Her pozisyon, her stack — pota ilk giren sensen raise, tek bir raise'e karşı re-raise (stack'in tam bir raise'e yetmiyorsa all-in) |
 | 🟧 **Güçlü — genelde yükselt** | TT, 99, AQs, AQo, AJs, KQs | Çoğu pozisyon; UTG'den daha sıkı |
 | 🟦 **Oynanabilir — pozisyon önemli** | 88, 77, ATs, AJo, KJs, QJs, JTs | Geç pozisyonu tercih et (CO, BTN) |
 | ⬜ **Varsayılan pas** | Yeni başlayan olarak geri kalan her şey | Özellikle erken pozisyondan |

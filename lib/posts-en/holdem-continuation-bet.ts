@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "18 min",
   emoji: "🔥",
@@ -195,7 +195,7 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 
 | Situation | Rough c-bet frequency | Note |
 |:---|:---:|:---|
-| **In position, heads-up, dry board** | **70–100%** (small) | Classic "range bet" — bet nearly everything, tiny |
+| **In position, heads-up, dry king- or queen-high board** | **70%+** (small) | Classic "range bet" — bet most of your range, tiny. Dry **ace-high** boards get bet far less (A♥7♦2♣ 59.0% in the solver table above) |
 | **In position, heads-up, wet board** | **~50–60%** | More polarized — value and draws bet, air checks |
 | **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips: over 97% on all three boards we solved, almost all of it at two-thirds pot on Q♥T♥7♠ and 8♦5♣2♠ but mostly at one-third pot on A♦K♠2♥ (57.8%); see the [position guide](/en/blog/holdem-position-play) |
 | **Multiway (2 opponents)** | **~50% or less** | Someone likely connected — tighten up |
@@ -262,7 +262,7 @@ Delaying turns a spot where an automatic c-bet would have bled chips into a cont
 
 Let's make the "don't" explicit, because it's where the money is saved:
 
-- **The board smashed your opponent's range.** A 7‑6‑5 or 9‑8‑7 flop hits the hands that call a raise far harder than it hits yours. Betting here with most of your range just donates chips — check far more often, and when you do bet, go big and selective.
+- **The board smashed your opponent's range.** A 7‑6‑5 or 9‑8‑7 flop hits the hands that call a raise far harder than it hits yours. C-betting here on autopilot just donates chips — check far more of your range than you would on K‑7‑2, and when you do bet, go big and selective.
 - **You're out of position on a dynamic board** with a marginal hand. Acting first with no information, keep the pot small and check.
 - **You're multiway with air.** Covered above — almost no fold equity, so no bet.
 - **Your hand wants to protect a checking range.** Sometimes you check a strong hand on purpose so your checks aren't automatically weak.
@@ -324,7 +324,7 @@ A. No — this is the most common c-bet mistake. Bet the flops that favor your r
 
 **Q. How often should you c-bet?**
 
-A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70–100% (at a small size) in position heads-up on a dry board, around 30–45% out of position as the raiser in a single-raised pot (higher as the 3-bettor), and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
+A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70% or more (at a small size) in position heads-up on a dry king- or queen-high board (dry ace-high boards get bet noticeably less), around 30–45% out of position as the raiser in a single-raised pot (higher as the 3-bettor), and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
 
 **Q. How much should you c-bet?**
 

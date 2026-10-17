@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ Buone mani iniziali per principianti sono:
 
 | Fascia | Mani | Quando giocarle |
 |------|-------|--------------|
-| 🟥 **Premium — rilancia sempre** | AA, KK, QQ, JJ, AKs, AKo | Ogni posizione, ogni stack |
+| 🟥 **Premium — rilancia sempre** | AA, KK, QQ, JJ, AKs, AKo | Ogni posizione, ogni stack (oppure vai all-in se il tuo stack è troppo corto per un rilancio completo) |
 | 🟧 **Forti — di solito rilancia** | TT, 99, AQs, AQo, AJs, KQs | Quasi tutte le posizioni; più stretto da UTG |
 | 🟦 **Giocabili — la posizione conta** | 88, 77, ATs, AJo, KJs, QJs, JTs | Meglio in posizione tardiva (CO, BTN) |
 | ⬜ **Passa di default** | Tutto il resto, da principiante | Soprattutto dalle prime posizioni |

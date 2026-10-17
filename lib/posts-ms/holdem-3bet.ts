@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet ialah re-raise pertama sebelum flop — bet ketiga selepas big blind dan open-raise. Value 3-bet dengan QQ+ dan AK, tambah beberapa bluff blocker suited seperti A5s; saiz kira-kira 3x open in position dan 4x out of position, dengan kekerapan keseluruhan sekitar 6–10%. Bila kena 3-bet: 4-bet tangan premium, call tangan yang main baik, fold selebihnya.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -278,7 +278,7 @@ A. Bagi pemain mantap, kekerapan 3-bet keseluruhan sekitar 6–10% dikira sihat,
 
 **Q. Apakah squeeze play?**
 
-A. Squeeze ialah 3-bet yang dibuat selepas open-raise dan sekurang-kurangnya seorang caller. Dead money tambahan dalam pot menaikkan ganjaran apabila squeeze berjaya, dan permainan itu menekan kedua-dua lawan serentak — raiser dan flat caller yang range-nya sudah capped. Buat saiz squeeze lebih besar daripada 3-bet biasa, dengan menambah kira-kira satu open-raise tambahan bagi setiap caller.
+A. Squeeze ialah 3-bet yang dibuat selepas open-raise dan sekurang-kurangnya seorang caller. Dead money tambahan dalam pot menaikkan ganjaran apabila squeeze berjaya, dan permainan itu menekan kedua-dua lawan serentak — raiser dan flat caller, yang range-nya biasanya capped kerana kebanyakan pemain akan 3-bet tangan terkuat mereka. Buat saiz squeeze lebih besar daripada 3-bet biasa, dengan menambah kira-kira satu open-raise tambahan bagi setiap caller.
 
 **Q. Bagaimana hendak bertindak balas terhadap 3-bet?**
 

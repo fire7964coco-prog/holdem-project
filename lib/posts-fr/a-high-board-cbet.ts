@@ -15,8 +15,8 @@ export const POST: Post = {
   tldr: "Sur A♥7♦2♣, après une ouverture du bouton suivie par la grosse blinde, la grosse blinde checke 98,2 % de sa range, top paire, double paire et brelans servis compris. L'équité est presque à égalité, 45,1 % contre 54,9 % ; ce qui sépare les deux sièges, c'est la réalisation d'équité (EQR) : 84,0 % hors de position contre 113,1 % en position.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-07",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🅰️",
@@ -146,7 +146,7 @@ Ouvre le [solver poker gratuit](/fr/solver), va dans **Spots d'étude → Board 
 
 Pour t'entraîner sur ce même spot au lieu de le lire, ouvre le **Trainer GTO** dans la barre latérale : il te distribue une main tirée de la vraie range, tu choisis une action, et il te montre combien de grosses blindes ce choix te coûte. C'est gratuit, sans rien à installer et sans compte.
 
-> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer un peu de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
+> **Revois ta propre main dans ce spot** — Ce spot est un pot ouvert par le BTN et payé par la BB. Si tu as joué une main dans la même situation, ouvre [Revoir une main](https://solver.holdemmaster.com/?view=hand-review&lang=fr) dans le solver, règle la situation (**Open · Call**, BTN et BB) et **Ta position**, choisis **Tes 2 cartes** et les **3 cartes du flop**, puis indique les actions dans l'ordre où elles ont été jouées, y compris celles de ton adversaire. L'outil te dit si ce choix est classé **Meilleur choix**, **Acceptable** ou **Action à revoir**. L'analyse s'appuie sur les tableaux préflop de l'app (cash en ligne à 6 joueurs, 100bb), donc ses chiffres peuvent différer de l'exemple ci-dessus, et elle peut ne pas convenir aux parties de bar ou aux tournois.
 
 ## FAQ
 

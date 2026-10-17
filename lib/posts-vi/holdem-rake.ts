@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake là phần nhỏ phòng poker cắt từ hầu hết các pot để tổ chức ván chơi — thường 2,5–10% và có mức cap vài đô la mỗi pot. Hầu hết phòng không thu gì nếu mọi người fold trước flop (\"no flop, no drop\"). Rake ăn nặng nhất vào người chơi stakes thấp và bàn ít người, còn rakeback trả lại một phần cho người chơi thường xuyên.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 phút",
@@ -188,7 +188,7 @@ A. Rake live có xu hướng tỷ lệ cao hơn, thường với cap cao hơn, n
 2. **Nó cắn stakes thấp nặng nhất.** Cap gần như không nhúc nhích khi bạn xuống mức thấp, nên theo tỷ lệ bạn trả nhiều rake nhất ở đáy — "bẫy rake" khiến micro-stakes (mức cược siêu nhỏ) khó thắng đến vậy.
 3. **Rakeback và cấu trúc rake quan trọng.** Mức rakeback 20–40% và cấu trúc cap có thể lật ngược kết quả dài hạn của bạn — hãy đo mọi thứ *sau* rake.
 
-Giờ bạn đã thấy phần nhà cắt, những con số bạn đọc ở mọi nơi khác trở nên dễ hiểu hơn: [pot odds](/vi/blog/holdem-pot-odds) của bạn, win rate của bạn, và vì sao một [straddle](/vi/blog/holdem-straddle) làm pot phình to cũng lặng lẽ nuôi rake. Poker có thể thắng được — nhưng chỉ khi bạn thắng những người chơi khác *nhiều hơn* phần nhà lấy đi.
+Giờ bạn đã thấy phần nhà cắt, những con số bạn đọc ở mọi nơi khác trở nên dễ hiểu hơn: [pot odds](/vi/blog/holdem-pot-odds) của bạn, win rate của bạn, và vì sao một [straddle](/vi/blog/holdem-straddle) làm pot phình to cũng có thể lặng lẽ nuôi rake — ở những pot có thu rake mà chưa chạm mức cap (không áp dụng cho pot preflop no flop, no drop hay game thu time charge). Poker có thể thắng được — nhưng chỉ khi bạn thắng những người chơi khác *nhiều hơn* phần nhà lấy đi.
 
 ---
 
@@ -203,7 +203,7 @@ Giờ bạn đã thấy phần nhà cắt, những con số bạn đọc ở m�
   <a href="/vi/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Thuật ngữ</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Straddle trong poker là gì?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind phụ làm pot phình to — và cả rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blind phụ làm pot phình to — và có thể đẩy rake lên</div>
   </a>
   <a href="/vi/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Xác suất &amp; toán</div>

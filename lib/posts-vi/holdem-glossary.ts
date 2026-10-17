@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Đây là bảng giải nghĩa những từ poker tiếng Anh thật sự xuất hiện trong một ván Texas Hold'em, xếp theo cách bạn gặp chúng: hành động bet, vị trí, bài và board, kiểu người chơi, tiền và tình huống ở bàn. Hãy bắt đầu từ các cặp dễ nhầm nhất (check với call, set với trips, cooler với bad beat), rồi lướt theo từng nhóm. Từ nào có bài hướng dẫn sâu hơn sẽ dẫn thẳng tới bài đó.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 phút",
@@ -190,7 +190,7 @@ Còn đang học bài nào thắng bài nào? [Hướng dẫn thứ hạng tay b
 
 | Từ | Nghĩa |
 |:---|:---|
-| **Fish** | Người chơi giải trí yếu, thua đều (nghĩa đen là "cá") — nguồn lợi nhuận của cả bàn. |
+| **Fish** | Người chơi yếu, thua đều (nghĩa đen là "cá") — nguồn lợi nhuận của cả bàn. |
 | **Shark** | Người chơi mạnh, thắng (cá mập), săn những người yếu hơn. |
 | **Whale** | Người chơi giải trí giàu, yếu, ở stakes (mức cược) lớn — một "fish nhiều tiền" (cá voi). |
 | **Nit** | Người chơi cực kỳ chặt, chỉ chơi tay premium. |

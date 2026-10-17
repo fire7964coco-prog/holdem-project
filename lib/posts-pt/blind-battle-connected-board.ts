@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Depois da abertura do small blind e do call do big blind, o flop 7♦6♦5♣ recebe aposta em apenas 9,6% e check em 90,4%. Pote, stack, SPR, tamanho da aposta e os dois ranges são idênticos aos do exemplo anterior. Só as três cartas do board mudaram, e a aposta caiu de 67,4% para 9,6%. A vantagem pré-flop estava nas cartas altas; o board baixo e conectado a elimina. A equity se inverte para 49,6% contra 50,4%, e a realização fora de posição cai a 85,3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-10-16",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-pt.webp",
@@ -188,7 +188,7 @@ Os 9,6% misturam um pouco de valor com alguns draws. Oito-oito lidera entre as c
 
 - **Não transforme "é blind vs blind, então aposto" em regra.** Os 67,4% do exemplo anterior e os 9,6% daqui foram separados pelo board, não pela posição. Mesmo tendo aberto do small blind, quando o flop vem baixo e conectado — com cartas como 5, 6, 7 e 8 —, você precisa reconsiderar a vantagem de iniciativa.
 - **Não use um overpair como motivo automático para aumentar o pote.** O small blind tem 42 combos de overpairs, três vezes e meia a quantidade do big blind. Mas o adversário já tem 42 combos que os vencem: não é uma mão para planejar duas ou três apostas sem reavaliar. Isso não condena uma aposta pequena isolada; o ponto é **não tratá-la como uma mão para comprometer todo o stack**. ⚠ Também não significa "foldar assim que vier um aumento". O adversário tem 24,9% de draws de duas pontas, 23,8% de gutshots e 3,7% de combo draws, portanto seu range de aumento pode conter blefes. Foldar automaticamente um overpair contra um range cheio de draws também é explorável. **Evitar o all-in e foldar são decisões diferentes.** O nó de aposta seguida de aumento não está nesta resolução, então ela não fornece uma frequência para essa resposta. A série volta ao mesmo ponto: [um board conectado reduz a vantagem do agressor pré-flop](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp").
-- **Não confunda A-high com força.** Cerca de um quarto do range do small blind é A-high. Neste board, a maior parte deles só pode melhorar formando um par (A4 e A8 ganham draws de duas pontas, e as mãos A♦x♦, um flush draw). Os draws do adversário, quando completam, formam na maioria sequências: a diferença não está só na chance de melhorar, mas **no valor dessa melhora**. A equity de 49,6% mostra o resultado do conjunto.
+- **Não confunda A-high com força.** Cerca de um quarto do range do small blind é A-high. Neste board, a maior parte deles só pode melhorar formando um par (A4 e A8 ganham draws de duas pontas, A3 e A9 gutshots, e as mãos A♦x♦, um flush draw). Os draws do adversário, quando completam, formam na maioria sequências: a diferença não está só na chance de melhorar, mas **no valor dessa melhora**. A equity de 49,6% mostra o resultado do conjunto.
 - **Decida antes como responder depois do check.** Com 90,4% no check, a próxima questão é quais mãos pagam e quais dão [check-raise](/pt/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-pt.webp") contra a aposta adversária. ⚠ **Essa resposta não está neste cálculo**: o exemplo pré-calculado vai apenas até a **primeira ação no flop**. Os nós após o check — frequência de aposta do big blind e check-raise do small blind — não estão disponíveis. Para estudar um check-raise realmente calculado, o exemplo baixo e rainbow é o único da série com frequências de uma resolução separada. **Mas os papéis são diferentes**: lá, o big blind é quem pagou e enfrenta o botão.
 
 :::readnext[Continue lendo]

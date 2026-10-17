@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sur les 169 types de mains de départ, seule une petite tranche du haut, environ 15 à 20 % des mains que tu reçois, est rentable pour un débutant. Les grosses paires (AA à TT) et AK relancent depuis n'importe quel siège ; plus tu parles tard, plus tu ouvres large, d'environ 13 % under the gun à environ 43 % au bouton (encore plus large en 6-max). Commence par une sélection de mains simplifiée et passe aux ranges préflop de solver une fois que « relancer ou se coucher » est devenu automatique.",
   category: "strategy",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-01",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -193,7 +193,7 @@ Les pires mains de départ au poker ne sont pas les déchets évidents comme 7-2
 | Roi-déchet dépareillé (K3o, K4o) | Dominé par tous les meilleurs rois | « Un roi, c'est une grosse carte » |
 | N'importe quelles deux cartes assorties | Ne fait couleur à la river que ~6,4 % du temps (en touche une au flop ~0,8 %) | « Mais elles sont assorties » |
 
-![Le piège de l'as faible au Texas Hold'em — A♣ 4♦ entouré de rouge comme main perdante, dominée par A♠ K♦ en doré](/images/holdem-starting-hands-weak-ace-trap.webp "Les as faibles ont l'air forts mais restent dominés — couche-les préflop")
+![Le piège de l'as faible au Texas Hold'em — A♣ 4♦ entouré de rouge comme main perdante, dominée par A♠ K♦ en doré](/images/holdem-starting-hands-weak-ace-trap.webp "Les as faibles dépareillés ont l'air forts mais restent dominés — couche-les préflop")
 
 ==r:L'erreur la plus chère des débutants, c'est de payer des relances avec des as faibles== comme le A♣ 4♦ de l'introduction. Quand tu touches enfin ta paire d'as, tu es souvent deuxième derrière A♠ K♦ ou A♥ Q♦ — et tu perds un gros pot convaincu d'avoir la top paire. Tu l'as. Eux aussi, avec un meilleur kicker.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kazanan her Texas Hold'em kararı tekrar eden beş soruya iner: nerede oturuyorum, bu el oynanmaya değer mi, pota ilk giriyorsam limp yerine raise mi fold mu, flop'ta bahse devam ediyor muyum ve eli ne zaman bırakıyorum. Bu beş soruyu iyi cevaplayan tight-aggressive bir oyuncu flop öncesi ellerin yaklaşık %80'ini fold eder, oynadıklarını agresif oynar ve ezber ipucu listesine gerek kalmadan neredeyse her gündelik masayı yener.",
   category: "strategy",
   date: "2026-10-06",
-  updated: "2026-10-15",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -97,7 +97,7 @@ Pokerdeki en büyük tek kaçak, çok fazla el oynamak. Yeni oyuncular içinde a
 
 Hangi ellerin listeye girdiği pozisyonuna bağlıdır (Karar 1, Karar 2'yi besler), ama başlangıç için pratik bir kural:
 
-- **Her zaman raise:** büyük çiftler (A‑A'dan T‑T'ye) ve A‑K.
+- **Pota ilk giren sensen ve stack'ler normalse (~100bb) her zaman raise:** büyük çiftler (A‑A'dan T‑T'ye) ve A‑K.
 - **Genelde raise:** orta çiftler, A‑Q ve güçlü suited broadway'ler (K‑Q, A‑J suited) — koltuğun ne kadar geçse o kadar rahat.
 - **Spekülatif, pozisyona bağlı:** küçük cep çiftleri ve suited connector'lar; bunlar ucuz, çok oyunculu potlar ister (matematiği aşağıda).
 - **Fold:** geri kalan neredeyse her şey, özellikle J‑4, Q‑7, K‑3 gibi offsuit çöp eller.

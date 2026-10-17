@@ -1368,14 +1368,14 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 | # | 자리 (EN) | 정정 방향 | 동문 | 처리 |
 |---|---|---|---|---|
-| CL-1 | 3bet L278 FAQ «the capped flat-caller» | 플랫 범위 상한 = 경향(트랩 플랫 예외) | 10 | ▶ EN 손질 회차 |
-| CL-2 | when-to-fold L71 «the only question is …» | 배타 기준 → 가격·블러프 빈도 포함(같은 글 L153과 맞춤) | 10 | ▶ |
-| CL-3 | when-to-fold L148 «If not, I'm holding a bluff-catcher» | «상대 블러프에는 이기는» 조건 추가(L153) | 10 | ▶ |
-| CL-4 | glossary L168 Fish «weak, losing recreational player» | recreational 요건 제거(fish 글 L38 umbrella) | 12(ar·tr 포함) | ▶ |
-| CL-5 | fish L206 «naming … exact type tells you precisely how to beat them» | L69 «working read» 한정 | 10 | ▶ |
-| CL-6 | fish L128 표 머리 «VPIP (hands played) · PFR (hands raised)» | 프리플랍 한정(VPIP = 자발 투입 · glossary L289) | 8(de·es·fr·id·ja·ms·pt·vi · zh-hant 이미 한정) | ▶ |
-| CL-7 | rake L190 «a straddle that bloats the pot also quietly feeds the rake» | 캡 미도달·no flop no drop·타임차지 한정(같은 글 L164 · straddle L127) | 10 | ▶ |
-| CL-8 | rake L205 관련 글 카드 «— and the rake» | CL-7과 같음 | 9 | ▶ |
+| CL-1 | 3bet L278 FAQ «the capped flat-caller» | 플랫 범위 상한 = 경향(트랩 플랫 예외) | 10 | ✅ 10-17 (12) MB-380 |
+| CL-2 | when-to-fold L71 «the only question is …» | 배타 기준 → 가격·블러프 빈도 포함(같은 글 L153과 맞춤) | 10 | ✅ 10-17 (12) MB-380 |
+| CL-3 | when-to-fold L148 «If not, I'm holding a bluff-catcher» | «상대 블러프에는 이기는» 조건 추가(L153) | 10 | ✅ 10-17 (12) MB-380 |
+| CL-4 | glossary L168 Fish «weak, losing recreational player» | recreational 요건 제거(fish 글 L38 umbrella) | 12(ar·tr 포함) | ✅ 10-17 (12) MB-380 |
+| CL-5 | fish L206 «naming … exact type tells you precisely how to beat them» | L69 «working read» 한정 | 10 | ✅ 10-17 (12) MB-380 |
+| CL-6 | fish L128 표 머리 «VPIP (hands played) · PFR (hands raised)» | 프리플랍 한정(VPIP = 자발 투입 · glossary L289) | 8(de·es·fr·id·ja·ms·pt·vi · zh-hant 이미 한정) | ✅ 10-17 (12) MB-380 |
+| CL-7 | rake L190 «a straddle that bloats the pot also quietly feeds the rake» | 캡 미도달·no flop no drop·타임차지 한정(같은 글 L164 · straddle L127) | 10 | ✅ 10-17 (12) MB-380 |
+| CL-8 | rake L205 관련 글 카드 «— and the rake» | CL-7과 같음 | 9 | ✅ 10-17 (12) MB-380 |
 | CL-ⓐ 통지 | c-bet 솔버 표 재현 11행 OK · 재현 안 되는 칸 3 + A♣9♣2♣ 28.5 | 핸드 단위 집계 산출물 커밋 시 재판정(MA-590 ⓑ 종결) | — | 🪶 요청 아님 |
 | CL-ⓑ 통지 | 레인 RISKY 철회 4(position-play L277 · when-to-fold L179 · fish L195 · straddle L189) | 본체 몫 없음 | — | 종결 |
 
@@ -1405,19 +1405,19 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|---|---|
 | CN-1 🔴 | probability L193 «Rarity is the whole reason it sits at the top» | 로열 최상위 이유 = SF 안 카드 높이(A-high SF) | 12 | ✅ 10-17 (11) MB-379 |
 | CN-2 🔴 | low-board-check-raise L363 «only a private home game might still have its own house rule» | 룰북 «permitted unless otherwise posted» → 업장 게시 예외 한정 | 10 | ✅ 10-17 (11) MB-379(ms = 이미 맞음) |
-| CN-3 | continuation-bet L196 표·FAQ «IP, heads-up, dry board 70–100%» | 보드 높이 한정(A하이 드라이 34.5–57.2% · K·Q하이만 70%+) | 12(+es 반복) | ▶ |
-| CN-4 | continuation-bet «Betting here with most of your range just donates chips» | 보드·무늬 한정(765r 벳 53.3%) | 12 | ▶ |
-| CN-5 | outs «If there's a bet in front of you, use the ×2» | 그 벳이 올인이면 ×4 예외 | 10 | ▶ |
-| CN-6 | limping «out of position to almost the whole field» | 뒤 좌석 잔류 한정(블라인드만 남으면 IP) | 10 | ▶ |
-| CN-7 | starting-hands-chart 캡션 «Weak aces … fold them preflop» | offsuit 한정 | 10 | ▶ |
-| CN-8 | when-to-fold «your second pair … your draw … turns to release» | 가격·상대 조건 한정 | 10 | ▶ |
-| CN-9 | when-to-fold L112·L117 «wins a stack when it does — call» | 가격·잔여 스택 한정 | 9 + zh-hant 변형 | ▶ |
-| CN-10 | texas-holdem-rules-for-beginners L278 «Every position, every stack — … re-raise over a single raise» | 레이즈 불가 스택 예외(같은 글 L423 «all-in for less») · 결함 작음 | 24 | ▶ (우선순위 낮음) |
-| CN-11 | blind-battle-connected-board L279 «(A4 and A8 pick up open-enders …)» | A3·A9 거트샷 누락 보충 | 11 + ko | ▶ |
-| CN-12 | strategy L82 «Always raise: big pairs … and A‑K» | first-in·정상 깊이 한정(같은 글 L103) | 대조 미실시 → 회차 때 grep | ▶ |
-| CN-13 | fish L8 tldr «Fish play too many hands, call too much, and can't fold» | loose-passive(classic) 한정(L38 umbrella · L100 TAG fish) | 대조 미실시 | ▶ |
-| CN-14 | fish L83 표 Fish 행 «Loose, passive, can't fold · don't bluff» | CN-13과 같음 | 대조 미실시 | ▶ |
-| CN-ⓐ 통지 | a-high «can differ slightly» — 형제 11편은 «can differ» | `81250caf` 삭제 누락 후보 → EN 맞춤 | — | ▶ (같은 회차) |
+| CN-3 | continuation-bet L196 표·FAQ «IP, heads-up, dry board 70–100%» | 보드 높이 한정(A하이 드라이 34.5–57.2% · K·Q하이만 70%+) | 12(+es 반복) | ✅ 10-17 (12) MB-380 |
+| CN-4 | continuation-bet «Betting here with most of your range just donates chips» | 보드·무늬 한정(765r 벳 53.3%) | 12 | ✅ 10-17 (12) MB-380 |
+| CN-5 | outs «If there's a bet in front of you, use the ×2» | 그 벳이 올인이면 ×4 예외 | 10 | ✅ 10-17 (12) MB-380 |
+| CN-6 | limping «out of position to almost the whole field» | 뒤 좌석 잔류 한정(블라인드만 남으면 IP) | 10 | ✅ 10-17 (12) MB-380 |
+| CN-7 | starting-hands-chart 캡션 «Weak aces … fold them preflop» | offsuit 한정 | 10 | ✅ 10-17 (12) MB-380 |
+| CN-8 | when-to-fold «your second pair … your draw … turns to release» | 가격·상대 조건 한정 | 10 | ✅ 10-17 (12) MB-380 |
+| CN-9 | when-to-fold L112·L117 «wins a stack when it does — call» | 가격·잔여 스택 한정 | 9 + zh-hant 변형 | ✅ 10-17 (12) MB-380 |
+| CN-10 | texas-holdem-rules-for-beginners L278 «Every position, every stack — … re-raise over a single raise» | 레이즈 불가 스택 예외(같은 글 L423 «all-in for less») · 결함 작음 | 24 | ✅ 10-17 (12) MB-380 |
+| CN-11 | blind-battle-connected-board L279 «(A4 and A8 pick up open-enders …)» | A3·A9 거트샷 누락 보충 | 11 + ko | ✅ 10-17 (12) MB-380 |
+| CN-12 | strategy L82 «Always raise: big pairs … and A‑K» | first-in·정상 깊이 한정(같은 글 L103) | 대조 미실시 → 회차 때 grep | ✅ 10-17 (12) MB-380 |
+| CN-13 | fish L8 tldr «Fish play too many hands, call too much, and can't fold» | loose-passive(classic) 한정(L38 umbrella · L100 TAG fish) | 대조 미실시 | ✅ 10-17 (12) MB-380 |
+| CN-14 | fish L83 표 Fish 행 «Loose, passive, can't fold · don't bluff» | CN-13과 같음 | 대조 미실시 | ✅ 10-17 (12) MB-380 |
+| CN-ⓐ 통지 | a-high «can differ slightly» — 형제 11편은 «can differ» | `81250caf` 삭제 누락 후보 → EN 맞춤 | — | ✅ 10-17 (12) MB-380 |
 
 - 합치면 EN 손질 회차 = CL-1~8 + CN-1~14 + CN-ⓐ(EN 23자리 → 동문 로케일 약 230자리). 회차를 둘로 쪼갤 경우 🔴 2자리(CN-1·2) 먼저.
 
@@ -1429,7 +1429,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|---|
 | CO-ⓐ EN 동형 | hand-chart «GTO open ranges» · quiz DESCRIPTION 6-max만 · hand-chart «Exact … any hand» · 대회 카드 «Invitation only»(초대권 = 티켓) · calc L975 43,6% ↔ 재현 43,5%(미확인) | EN 원장 판단 | 🪶 EN-먼저 |
 | CO-ⓑ pl 어색 | connectors L273·414 · hand-chart L41 re-raise · glossary downswings·mucking · «Zakres otwarcia {pos}» 콜론 · aria L130 · «percentage points» ↔ «pp» 혼용 · 정본 미확인 영어 UI 약 12(Amount to call 등) · «zasada 2 i 4» ↔ «4 i 2»(dict L991·998·1348) · quiz «Sprawdź odpowiedź» call 오독 · 제목 «Quiz poker» · 4자리 «1326» ↔ «1 326» | 언어북 규칙 ③~⑤로 다음 pl 도구 손질 때 | 🪶 판단 대상 |
-| CO-ⓒ EN 동형(MA-607) | glossary 3-Bet «The first re-raise of a hand» — 3-bet은 라운드마다 센다 · 뒤 BB 예시는 프리플롭인데 앞 절에 한정 없음 → «The first re-raise preflop…»꼴 앞 절 한정 · 동문 it·fr·pl 등 | EN 원장 판단 | 🪶 EN-먼저(EN 손질 회차 §2-CL+§2-CN과 묶음) |
+| CO-ⓒ EN 동형(MA-607) | glossary 3-Bet «The first re-raise of a hand» — 3-bet은 라운드마다 센다 · 뒤 BB 예시는 프리플롭인데 앞 절에 한정 없음 → «The first re-raise preflop…»꼴 앞 절 한정 · 동문 it·fr·pl 등 | EN 원장 판단 | ✅ 10-17 (12) MB-380(도구 glossary 3-Bet «before the flop») |
 | CO-ⓓ 범위 밖(MA-607) | pl 블로그 «ulica» ↔ 도구 «street» 표면 갈림 | 기존 글 처리 = 본체 판단 | 🪶 판단 대상 |
 
 MA-607 통지 ⓐ~ⓓ(pl 옛 문면 4자리 — quiz «bez podwójnego liczenia» · calc «kolejność działania» · calc 결정 문장 · APT «zanim rozpocznie się program…») = 10-17 (7) 이행 MB-374.

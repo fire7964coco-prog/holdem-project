@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -128,7 +128,7 @@ Fíjate en el monstruo de 15 outs: con dos cartas por venir se completa el 54.1%
 
 Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (real 19.6% — bastante cerca para actuar).
 
-:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo garantizado cuando ya no puede haber más apuestas (estás all-in o has pagado un all-in y nadie que siga en la mano puede apostar más). Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
+:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo garantizado cuando ya no puede haber más apuestas (estás all-in o has pagado un all-in y nadie que siga en la mano puede apostar más). Si hay una apuesta delante de ti y todavía pueden venir más apuestas, usa el número ×2 (una carta) para la calle en la que realmente estás; si esa apuesta es un all-in y pagarla cierra las apuestas, vale el número ×4.]:::
 
 El punto débil principal son los **conteos altos de outs en el flop**. El cálculo exacto a dos cartas recoge el acierto en cualquiera de las dos calles sin contar dos veces el caso en que ligas en ambas. La estimación ×4 empieza a salir un poco alta ya con 7 outs, pero la diferencia crece con los proyectos grandes; el ajuste habitual de abajo se usa para más de 8 outs.
 

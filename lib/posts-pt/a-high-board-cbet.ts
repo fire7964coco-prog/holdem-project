@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No A♥7♦2♣, depois de uma abertura do botão e um call do big blind, o big blind dá check com 98,2% do range, incluindo top pair, dois pares e sets. A equity fica próxima: 45,1% contra 54,9%. A grande diferença está na realização de equity: 84,0% fora de posição contra 113,1% em posição.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-02",
-  masterUpdated: "2026-10-02",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   readTime: "9 min",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-pt.webp",
@@ -140,7 +140,7 @@ Abra o [solver de poker gratuito](/pt/solver), entre em **Spots de estudo → Bo
 
 Para praticar o spot, abra o **Treinador GTO** na barra lateral. Ele distribui uma mão do range real, você escolhe a ação e recebe o custo dessa escolha em big blinds. É gratuito, sem instalação e sem conta.
 
-> **Revise sua própria mão neste spot** — Este spot é um pote de open do BTN com call do BB. Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, BTN e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir um pouco do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
+> **Revise sua própria mão neste spot** — Este spot é um pote de open do BTN com call do BB. Se você jogou uma mão na mesma situação, abra [Revisar mão](https://solver.holdemmaster.com/?view=hand-review&lang=pt) no solver, escolha a situação (**Open · Call**, BTN e BB) e **Sua posição**, selecione **Suas 2 cartas** e as **3 cartas do flop** e marque as ações na ordem em que foram jogadas, incluindo as do adversário. A ferramenta mostra se essa escolha foi **Melhor jogada**, **Aceitável** ou **Revisar jogada**. A revisão usa as tabelas de pré-flop do app (cash online 6-max, 100bb), então os números podem diferir do exemplo acima, e ela pode não servir para jogos de bar ou torneios.
 
 ## Perguntas frequentes
 

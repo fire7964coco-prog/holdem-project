@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas e divide 5 cartas comunitárias. São até quatro rodadas de apostas, e a melhor mão de 5 cartas ganha no showdown — a não ser que todos os outros foldem antes.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -277,7 +277,7 @@ Boas mãos iniciais para começar:
 
 | Nível | Mãos | Quando jogar |
 |------|-------|--------------|
-| 🟥 **Premium — sempre aumente** | AA, KK, QQ, JJ, AKs, AKo | Qualquer posição, qualquer stack — aumente ao entrar primeiro e reaumente sobre um único raise |
+| 🟥 **Premium — sempre aumente** | AA, KK, QQ, JJ, AKs, AKo | Qualquer posição, qualquer stack — aumente ao entrar primeiro e reaumente sobre um único raise (ou vá all-in se o seu stack for curto demais para um raise completo) |
 | 🟧 **Fortes — geralmente aumente** | TT, 99, AQs, AQo, AJs, KQs | Maioria das posições; mais fechado no UTG |
 | 🟦 **Jogáveis — a posição decide** | 88, 77, ATs, AJo, KJs, QJs, JTs | Prefira posição final (CO, BTN) |
 | ⬜ **Fold por padrão** | Todo o resto, enquanto iniciante | Principalmente em posição inicial |

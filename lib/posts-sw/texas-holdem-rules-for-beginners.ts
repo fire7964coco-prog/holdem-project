@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ Mikono mizuri ya kuanzia kwa wanaoanza ni pamoja na:
 
 | Daraja | Mikono | Wakati wa kucheza |
 |------|-------|--------------|
-| 🟥 **Premium — pandisha kila mara** | AA, KK, QQ, JJ, AKs, AKo | Kila nafasi, kila stack |
+| 🟥 **Premium — pandisha kila mara** | AA, KK, QQ, JJ, AKs, AKo | Kila nafasi, kila stack (au weka all-in kama stack yako ni fupi mno kwa raise kamili) |
 | 🟧 **Imara — kwa kawaida pandisha** | TT, 99, AQs, AQo, AJs, KQs | Nafasi nyingi; kwa umakini zaidi kutoka UTG |
 | 🟦 **Inachezeka — nafasi ni muhimu** | 88, 77, ATs, AJo, KJs, QJs, JTs | Pendelea nafasi ya baadaye (CO, BTN) |
 | ⬜ **Fold kwa kawaida** | Mengine yote ukiwa mwanzilishi | Hasa kutoka nafasi ya mapema |

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosari ringkas istilah poker yang benar-benar muncul dalam permainan Texas Hold'em, disusun ikut cara anda menemuinya: aksi pertaruhan, posisi, tangan dan board, jenis pemain, wang serta situasi di meja. Mulakan dengan istilah yang paling sering keliru (check vs call, set vs trips, cooler vs bad beat), kemudian semak ikut kategori. Istilah yang ada panduan lebih mendalam dipautkan terus ke artikelnya.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",
@@ -160,13 +160,13 @@ Masih belajar tangan mana mengalahkan yang mana? [Panduan susunan kad](/ms/blog/
 
 ![Lima jubin jenis pemain poker — fish, whale, donk, nit dan shark — setiap satu ditandai dengan simbol yang mentakrifkannya](/images/holdem-glossary-player-types.webp "Setiap meja ialah campuran pelbagai jenis — mempelajari slang ini memberitahu anda siapa yang patut disasarkan dan siapa yang patut dielakkan")
 
-**Fish ialah pemain rekreasi yang lemah dan selalu kalah, shark ialah pemain kuat yang menang dengan memburu pemain lemah, dan nit ialah pemain yang sangat ketat dan hanya memainkan tangan premium.** Di meja, setiap orang di seberang felt ada gelarannya sendiri. Pecahan penuhnya ada dalam [panduan fish](/ms/blog/holdem-fish).
+**Fish ialah pemain yang lemah dan selalu kalah, shark ialah pemain kuat yang menang dengan memburu pemain lemah, dan nit ialah pemain yang sangat ketat dan hanya memainkan tangan premium.** Di meja, setiap orang di seberang felt ada gelarannya sendiri. Pecahan penuhnya ada dalam [panduan fish](/ms/blog/holdem-fish).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Istilah | Maksud |
 |:---|:---|
-| **Fish** | Pemain rekreasi yang lemah dan selalu kalah — sumber keuntungan meja. |
+| **Fish** | Pemain yang lemah dan selalu kalah — sumber keuntungan meja. |
 | **Shark** | Pemain kuat yang menang dengan memburu pemain yang lebih lemah. |
 | **Whale** | Pemain rekreasi yang kaya tetapi lemah di stakes besar — "fish berpoket tebal." |
 | **Nit** | Pemain yang sangat ketat dan hanya memainkan tangan premium. |

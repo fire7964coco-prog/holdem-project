@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet là lần re-raise đầu tiên trước flop — gọi là 3-bet vì big blind là cược thứ nhất, open-raise là thứ hai và re-raise là thứ ba. 3-bet value với lõi chặt (QQ+, AK) cộng vài bluff có blocker như A5s, size khoảng 3 lần open khi có vị trí và 4 lần khi không, giữ tần suất 3-bet quanh 6–10%. Khi bị 3-bet, hãy 4-bet bài premium, call bài chơi tốt postflop và bỏ phần còn lại — bỏ nhiều hơn mức 'cân bằng' trước đối thủ cược nhỏ không bao giờ bluff.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -278,7 +278,7 @@ A. Với một người chơi vững, tần suất 3-bet tổng thể khoảng 6
 
 **Q. Squeeze trong poker là gì?**
 
-A. Squeeze là một cú 3-bet thực hiện sau một cú open-raise và ít nhất một người call. Tiền chết thêm trong pot nâng phần thưởng khi squeeze thành công, và nước đi này gây sức ép lên cả hai đối thủ cùng lúc — người raise và người flat call bị giới hạn range. Size squeeze lớn hơn 3-bet bình thường, thêm khoảng một cú open-raise cho mỗi người call.
+A. Squeeze là một cú 3-bet thực hiện sau một cú open-raise và ít nhất một người call. Tiền chết thêm trong pot nâng phần thưởng khi squeeze thành công, và nước đi này gây sức ép lên cả hai đối thủ cùng lúc — người raise và người flat call, mà range thường đã bị giới hạn vì phần lớn người chơi sẽ 3-bet những tay bài mạnh nhất. Size squeeze lớn hơn 3-bet bình thường, thêm khoảng một cú open-raise cho mỗi người call.
 
 **Q. Phản ứng thế nào khi bị 3-bet?**
 

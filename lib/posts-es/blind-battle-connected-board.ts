@@ -27,8 +27,8 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop 7♦6♦5♣ recibe una apuesta apenas el 9.6% de las veces y un check el 90.4%. Bote, stack, SPR, tamaño de apuesta y los dos rangos son idénticos al spot anterior — solo cambiaron las tres cartas del board, y la apuesta pasó del 67.4% al 9.6%. La ventaja de rango que se ganó preflop era una ventaja en cartas altas, y un board bajo y conectado la borra de golpe. La equity se invierte, 49.6% contra 50.4%, y la realización fuera de posición baja al 85.3%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-10-16",
-  masterUpdated: "2026-10-16",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🪜",
@@ -214,7 +214,7 @@ El 9.6% se construye mezclando un poco de valor con unos cuantos proyectos. 88 e
 
 - **No conviertas en regla lo de "es guerra de ciegas, así que apuesto".** El 67.4% del spot anterior y el 9.6% de aquí los separó el board, no el asiento. Aunque hayas abierto desde la ciega pequeña, en cuanto el flop sale bajo y conectado — 5, 6, 7, 8 — la iniciativa de esa mano ya cruzó la mesa.
 - **No trates un sobrepar como razón para construir un bote grande.** Los 42 combos de sobrepar de la ciega pequeña son tres veces y media los de la ciega grande, pero en un board donde el rival tiene 42 combos que ya les ganan, esta no es una mano para dos o tres barriles. Eso no es un argumento contra una sola apuesta pequeña — la idea es **no tratarla como una mano con la que meter el stack**. ⚠ Tampoco significa "foldea en cuanto llegue una subida". El rango del rival lleva 24.9% de proyectos a dos puntas, 23.8% de gutshots y 3.7% de proyectos combinados, así que una subida en el flop no puede ser todo valor, y foldear el sobrepar en automático contra la subida de un rival cargado de proyectos es en sí mismo un hábito explotable. **Renunciar a meter el stack y foldear son cosas distintas.** Y el nodo de apuesta seguida de subida no está en este solve, así que de ahí no sale ninguna frecuencia. Esta serie llega una y otra vez a la misma conclusión: [un board conectado le recorta la ventaja al agresor preflop](/es/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-es.webp").
-- **No confundas el A-high con fuerza.** Un cuarto del rango de la ciega pequeña es A-high, y en este board la mayor parte solo puede ligar pareja (A4 y A8 se llevan proyectos a dos puntas, y las manos A♦x♦ un proyecto de color). Los proyectos del rival, cuando entran, son sobre todo escaleras — lo que cambia no es la probabilidad de mejorar sino **cuánto vale esa mejora**. El 49.6% de equity es el resultado.
+- **No confundas el A-high con fuerza.** Un cuarto del rango de la ciega pequeña es A-high, y en este board la mayor parte solo puede ligar pareja (A4 y A8 se llevan proyectos a dos puntas, A3 y A9 gutshots, y las manos A♦x♦ un proyecto de color). Los proyectos del rival, cuando entran, son sobre todo escaleras — lo que cambia no es la probabilidad de mejorar sino **cuánto vale esa mejora**. El 49.6% de equity es el resultado.
 - **Decide de antemano qué haces después del check.** Habiendo pasado el 90.4% a check, qué pagas y con qué haces [check-raise](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") frente a la apuesta del rival es el siguiente problema real. ⚠ **Esa respuesta no está en este cálculo** — el spot de estudio resuelve solo la **primera acción del flop**, así que los nodos posteriores al check (la frecuencia de apuesta de la ciega grande, el check-raise de la ciega pequeña) sencillamente no existen. Si quieres un spot donde el check-raise sí se haya resuelto, el board bajo y rainbow es el único de la serie con frecuencias resueltas aparte — **aunque el asiento es distinto** (allí la ciega grande es la que paga y se enfrenta a un botón).
 
 :::readnext[Sigue leyendo]

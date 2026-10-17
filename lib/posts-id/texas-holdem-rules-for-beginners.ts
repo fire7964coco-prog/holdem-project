@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards dan ada 5 kartu bersama di tengah meja. Ada paling banyak empat ronde taruhan, dan tangan poker 5 kartu terbaik menang di showdown — kecuali semua pemain lain fold lebih dulu.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -279,7 +279,7 @@ Kartu awal yang bagus untuk pemula:
 
 | Tingkat | Tangan | Kapan dimainkan |
 |------|-------|--------------|
-| 🟥 **Premium — selalu raise** | AA, KK, QQ, JJ, AKs, AKo | Semua posisi, semua ukuran stack — raise saat membuka pot, re-raise di atas satu raise |
+| 🟥 **Premium — selalu raise** | AA, KK, QQ, JJ, AKs, AKo | Semua posisi, semua ukuran stack — raise saat membuka pot, re-raise di atas satu raise (atau all-in jika stack Anda terlalu pendek untuk raise penuh) |
 | 🟧 **Kuat — biasanya raise** | TT, 99, AQs, AQo, AJs, KQs | Mayoritas posisi; lebih ketat dari UTG |
 | 🟦 **Bisa dimainkan — posisi menentukan** | 88, 77, ATs, AJo, KJs, QJs, JTs | Utamakan posisi akhir (CO, BTN) |
 | ⬜ **Fold secara default** | Semua tangan lain selama masih pemula | Terutama dari posisi awal |

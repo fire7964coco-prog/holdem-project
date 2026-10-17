@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Le rake, c'est la petite part que la salle prélève sur la plupart des pots pour organiser la partie, en général 2,5 à 10 % plafonnés à quelques dollars. La plupart des salles ne prennent rien si tout le monde se couche avant le flop (« no flop, no drop »). Il pèse surtout sur les petites limites et les tables à peu de joueurs, et le rakeback en rend une partie aux habitués.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -188,7 +188,7 @@ A. Le rake live a tendance à être un pourcentage plus élevé, en général av
 2. **Il frappe surtout les petites limites.** Le plafond bouge à peine quand tu descends, donc c'est tout en bas que tu paies proportionnellement le plus de rake — le « piège du rake » qui rend les micro-limites si dures à battre.
 3. **Le rakeback et la structure comptent.** Récupérer 20–40 % de ton rake et choisir des salles aux plafonds favorables peut renverser ton résultat sur la durée — mesure tout *après* le rake.
 
-Maintenant que tu vois la part de la maison, les chiffres que tu lis partout ailleurs prennent plus de sens : tes [cotes du pot](/fr/blog/holdem-pot-odds), ton win rate, et pourquoi un [straddle](/fr/blog/holdem-straddle) qui gonfle le pot nourrit aussi discrètement le rake. On peut battre le poker — mais seulement une fois que tu bats les autres joueurs de *plus* que ce que prend la maison.
+Maintenant que tu vois la part de la maison, les chiffres que tu lis partout ailleurs prennent plus de sens : tes [cotes du pot](/fr/blog/holdem-pot-odds), ton win rate, et pourquoi un [straddle](/fr/blog/holdem-straddle) qui gonfle le pot peut aussi nourrir discrètement le rake — dans les pots soumis au rake qui n'ont pas atteint le plafond (pas dans les pots qui s'arrêtent préflop sous la règle « no flop, no drop », ni dans les parties au time charge). On peut battre le poker — mais seulement une fois que tu bats les autres joueurs de *plus* que ce que prend la maison.
 
 ---
 
@@ -203,7 +203,7 @@ Maintenant que tu vois la part de la maison, les chiffres que tu lis partout ail
   <a href="/fr/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Jargon</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">C'est quoi un straddle ?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La blinde en plus qui gonfle le pot — et le rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La blinde en plus qui gonfle le pot — et peut faire monter le rake</div>
   </a>
   <a href="/fr/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Cotes &amp; maths</div>

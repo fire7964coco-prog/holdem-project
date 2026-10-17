@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — a limp can't win the blinds uncontested, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stacked tournament spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -65,7 +65,7 @@ When you open-limp, you give up a surprising amount. Here's exactly what:
 
 1. **A limp can't win the blinds uncontested.** This is the big one. When you *raise* first-in, everyone can fold and you scoop the blinds uncontested — free money, a meaningful chunk of the time. When you limp, that number is **zero**. You've guaranteed you have to make a hand or win it later; you've thrown away the cleanest way to win.
 2. **You surrender initiative.** The preflop raiser is the "aggressor" — they get to fire a [continuation bet](/en/blog/holdem-continuation-bet) on the flop and represent a strong hand, often taking the pot with nothing. Limp, and you've handed that story to someone else. You're now reacting instead of leading.
-3. **You build a bloated, multiway pot — often out of position.** Limping invites more callers and lets the big blind in cheaply. The more players see the flop, the less your hand is worth, and if you limped from early position you'll be *out of position* to almost the whole field on every street, with no initiative. That's the worst seat in the house.
+3. **You build a bloated, multiway pot — often out of position.** Limping invites more callers and lets the big blind in cheaply. The more players see the flop, the less your hand is worth, and if you limped from early position you'll be *out of position* to everyone who comes in behind you on every street (only the blinds act before you after the flop), with no initiative. That's the worst seat in the house.
 4. **You make yourself readable — and exploitable.** Habitual limpers show up with a capped, transparent range. Good players attack it relentlessly (more on that below), so you end up in tricky spots out of position over and over. As the old saying goes, chronic limpers "win small pots and lose big ones."
 
 ---

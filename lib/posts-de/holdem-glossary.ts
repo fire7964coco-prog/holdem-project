@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-06",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -168,7 +168,7 @@ Lernst du noch, was was schlägt? Der [Guide zu den Hand-Rankings](/de/blog/hold
 ![Fünf Kacheln mit Spielertypen – Fish, Whale, Donk, Nit und Shark – jede mit dem Symbol, das sie kennzeichnet](/images/holdem-glossary-player-types.webp "Jeder Tisch ist eine Mischung von Typen – den Slang zu lernen sagt dir, wen du angreifst und wen du meidest")
 
 > **Kurze Antwort**
-> Der Tisch-Zoo beschreibt Spielstile, keine Menschen. Ein **Fish** ist ein schwacher Freizeitspieler, ein **Shark** ein starker Gewinner, ein **Whale** ein zahlungskräftiger Fish an hohen Stakes und eine **Calling Station** jemand, der viel zu oft callt und fast nie raist. ==g:Ein Nit ist dagegen kein Fish== – er spielt extrem tight, verliert wenig und gewinnt wenig.
+> Der Tisch-Zoo beschreibt Spielstile, keine Menschen. Ein **Fish** ist ein schwacher, verlierender Spieler, ein **Shark** ein starker Gewinner, ein **Whale** ein zahlungskräftiger Fish an hohen Stakes und eine **Calling Station** jemand, der viel zu oft callt und fast nie raist. ==g:Ein Nit ist dagegen kein Fish== – er spielt extrem tight, verliert wenig und gewinnt wenig.
 
 Die vollständige Aufschlüsselung findest du im [Fish-Guide](/de/blog/holdem-fish).
 
@@ -176,7 +176,7 @@ Die vollständige Aufschlüsselung findest du im [Fish-Guide](/de/blog/holdem-fi
 
 | Begriff | Bedeutung |
 |:---|:---|
-| **Fish** | Ein schwacher, verlierender Freizeitspieler – die Profitquelle des Tisches. |
+| **Fish** | Ein schwacher, verlierender Spieler – die Profitquelle des Tisches. |
 | **Shark** | Ein starker, gewinnender Spieler, der schwächere ausnimmt. |
 | **Whale** | Ein wohlhabender, schwacher Freizeitspieler an großen Stakes – ein „Fish mit tiefen Taschen“. |
 | **Nit** | Ein extrem tighter Spieler, der nur Premium-Hände spielt. |

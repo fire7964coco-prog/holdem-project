@@ -52,7 +52,7 @@ export const GLOSSARY_DICT_HI: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-Bet", cat: "Action", desc: "हैंड का पहला re-raise। big blind को पहला bet और open-raise को दूसरा गिना जाता है, इसलिए उसके बाद का re-raise 3-bet कहलाता है। यह बहुत मज़बूत हैंड का संकेत देता है — या bluff का।" },
+    { term: "3-Bet", cat: "Action", desc: "preflop का पहला re-raise। big blind को पहला bet और open-raise को दूसरा गिना जाता है, इसलिए उसके बाद का re-raise 3-bet कहलाता है। यह बहुत मज़बूत हैंड का संकेत देता है — या bluff का।" },
     { term: "All-in", cat: "Action", desc: "एक ही बार में अपना पूरा stack दांव पर लगा देना। all-in होने के बाद आप आगे bet नहीं कर सकते, और अगर कम-से-कम दो विरोधी आपके all-in से आगे bet करते रहें, तो side pot बनता है।" },
     { term: "Ante", cat: "Action", desc: "deal से पहले डाला जाने वाला छोटा अनिवार्य दांव, जिससे pot बनता है — हर खिलाड़ी डालता है, या big blind ante फ़ॉर्मैट में सिर्फ़ big blind। टूर्नामेंट के बाद के levels में आम है — blinds से अलग, जिन्हें आमतौर पर सिर्फ़ दो खिलाड़ी डालते हैं।" },
     { term: "Backdoor", cat: "Board", desc: "ऐसा draw जिसे पूरा होने के लिए turn और river दोनों चाहिए — जैसे backdoor flush, जब flop पर आपके suit का सिर्फ़ एक अतिरिक्त कार्ड आया हो।" },

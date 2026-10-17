@@ -35,7 +35,7 @@ export const GLOSSARY_DICT_IT: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", desc: "Il primo controrilancio di una mano. Il grande buio conta come prima puntata e il rilancio di apertura come seconda: il controrilancio è quindi la 3-bet. Segnala una mano molto forte oppure un bluff.", aka: ["3-Bet", "three-bet", "controrilancio"] },
+    { term: "3-bet", cat: "Action", desc: "Il primo controrilancio preflop. Il grande buio conta come prima puntata e il rilancio di apertura come seconda: il controrilancio è quindi la 3-bet. Segnala una mano molto forte oppure un bluff.", aka: ["3-Bet", "three-bet", "controrilancio"] },
     { term: "All-in", cat: "Action", desc: "Puntare l'intero stack in una sola azione. Una volta all-in non puoi puntare ancora; se gli avversari hanno altre fiches da giocare, può formarsi un side pot." },
     { term: "Ante", cat: "Action", desc: "Una piccola puntata obbligatoria versata prima della distribuzione per alimentare il piatto: da ogni giocatore oppure, nel formato big blind ante, dal solo grande buio. È comune nei livelli avanzati dei tornei, a differenza dei bui, che di solito sono pagati soltanto da due giocatori." },
     { term: "Backdoor", cat: "Board", desc: "Un progetto che richiede sia il turn sia il river per completarsi: per esempio, un progetto di colore backdoor quando al flop arriva solo una carta in più del tuo seme.", aka: ["runner-runner"] },

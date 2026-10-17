@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo em vez de dar open-limp, continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -80,7 +80,7 @@ Quanto é "a maior parte"? Um bom iniciante [tight-aggressive](/pt/blog/holdem-s
 
 Quais mãos entram na conta depende da sua posição (a Decisão 1 alimentando a Decisão 2), mas uma regra de bolso pra começar:
 
-- **Sempre aumente:** pares grandes (de A‑A a T‑T) e A‑K.
+- **Sempre aumente quando for o primeiro a entrar, com stacks normais (~100bb):** pares grandes (de A‑A a T‑T) e A‑K.
 - **Geralmente aumente:** pares médios, A‑Q e broadways fortes do mesmo naipe (K‑Q, A‑J suited) — mais livremente quanto mais tarde a sua cadeira.
 - **Especulativas, dependentes de posição:** pares pequenos e suited connectors, que querem potes multiway baratos (mais da matemática abaixo).
 - **Folde:** quase todo o resto, especialmente lixo de naipes diferentes como J‑4, Q‑7, K‑3.

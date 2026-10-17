@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "¿Qué es un fish en el póker? Cómo detectarlo — y asegurarte de no serlo tú",
   seoTitle: "Si no ves al fish de la mesa, eres tú — qué es un fish en póker",
   desc: "El fish es el jugador débil del que vive toda la mesa. Cómo detectarlo, la jerga shark/ballena/nit/donk, y cómo evitar que el pez seas tú.",
-  tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
+  tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez clásico juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -81,7 +81,7 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 
 | Término | Qué significa | Cómo juega | Cómo lo bates |
 |:---|:---|:---|:---|
-| **Fish (pez)** | Jugador débil y perdedor (término paraguas) | Suelto, pasivo, no sabe foldear | Apuesta a valor fino, no farolees |
+| **Fish (pez)** | Jugador débil y perdedor (término paraguas) | Clásico: suelto, pasivo, no sabe foldear | Apuesta a valor fino, no farolees |
 | **Shark (tiburón)** | Jugador fuerte y ganador | Tight-agresivo, adaptable | Evítalo — busca mesas más blandas |
 | **Ballena (whale)** | Un fish *rico* que pierde **a lo grande** | Muy suelto, altos límites, le da igual | Igual que un fish, mayor recompensa |
 | **Nit (roca)** | Extremadamente tight, aversión al riesgo | Solo manos premium, rara vez farolea | Foldea a la mayoría de sus subidas; róbale las ciegas |
@@ -126,7 +126,7 @@ Aquí viene la parte incómoda. Si has llegado hasta aquí esperando en silencio
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (manos jugadas) | PFR (manos subidas) | La lectura |
+| | VPIP (manos jugadas preflop) | PFR (manos subidas preflop) | La lectura |
 |:---|:---:|:---:|:---|
 | **Jugador sólido** | 15–22% | 12–18% (nunca por encima de su VPIP) | Tight, agresivo, diferencia estrecha |
 | **Fish** | 40–70% | menos del 10% | Suelto y pasivo — jugándolo todo, sin liderar nada |
@@ -212,7 +212,7 @@ A. La famosa versión en pantalla es de la película de 1998 *Rounders*, dicha p
 ## Las 3 ideas que debes recordar
 
 1. **Un fish es el jugador débil del que todos los demás sacan beneficio** — suelto, pasivo y normalmente sin ser consciente de ello. Detectar al pez es la primera tarea en cualquier mesa.
-2. **Conoce todo el zoo.** Fish, ballena, nit, donk y calling station no son intercambiables — nombrar el tipo exacto de tu rival te dice con precisión cómo batirlo.
+2. **Conoce todo el zoo.** Fish, ballena, nit, donk y calling station no son intercambiables — nombrar el tipo de tu rival — como una lectura de trabajo que vas actualizando — te dice cómo empezar a batirlo.
 3. **Asegúrate de que no eres tú.** Un VPIP amplio con un porcentaje de subida bajo es la firma del fish. Si ese eres tú, los arreglos son las victorias más fáciles del póker: juega menos manos, foldea más y deja de perseguir proyectos sin las pot odds correctas.
 
 La vieja frase tiene razón por algo. Mira alrededor de tu próxima mesa y encuentra al pez en la primera media hora — y si de verdad no puedes, lo más valioso que el póker te enseñará nunca es que ha llegado el momento de trabajar tu propio juego. Empieza con un [rango de manos iniciales](/es/blog/holdem-starting-hands-chart) más ajustado y un manejo real de las [pot odds](/es/blog/holdem-pot-odds), y deja que sea otro la comida.

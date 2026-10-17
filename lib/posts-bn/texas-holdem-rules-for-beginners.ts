@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমে প্রতিটি খেলোয়াড় 2টি hole কার্ড পান, 5টি community কার্ড ব্যবহার হয়, আর চারটি betting রাউন্ডের পর সেরা 5-কার্ড হ্যান্ড জেতে।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ position মানে **আপনি প্রতিটি betting রাউন�
 
 | টিয়ার | হ্যান্ড | কখন খেলবেন |
 |------|-------|--------------|
-| 🟥 **Premium — সবসময় raise** | AA, KK, QQ, JJ, AKs, AKo | প্রতিটি position, প্রতিটি stack |
+| 🟥 **Premium — সবসময় raise** | AA, KK, QQ, JJ, AKs, AKo | প্রতিটি position, প্রতিটি stack (পুরো raise দেওয়ার মতো stack না থাকলে all-in) |
 | 🟧 **Strong — সাধারণত raise** | TT, 99, AQs, AQo, AJs, KQs | বেশিরভাগ position; UTG থেকে বেশি tight |
 | 🟦 **Playable — position মায়ার করে** | 88, 77, ATs, AJo, KJs, QJs, JTs | late position (CO, BTN)-এ ভালো |
 | ⬜ **ডিফল্টভাবে fold** | শুরুর খেলোয়াড় হিসেবে বাকি সব | বিশেষ করে early position থেকে |

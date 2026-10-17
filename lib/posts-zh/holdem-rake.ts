@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "抽水就是牌房从多数底池里抽走的一小块钱，用来撑起这场牌局——通常是 2.5–10%，封顶几美元。大多数牌房在翻牌前所有人都弃牌时不抽（“no flop, no drop”）。它对低级别和短台牌手伤害最大，而 rakeback 会把其中一部分还给常客。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 分钟",
@@ -219,7 +219,7 @@ A. 现场抽水往往百分比更高，封顶通常也更高，但你每小时�
 2. **它对低级别伤害最大。**你往下走时封顶几乎不动，所以按比例说你在最底层交的抽水最多——这就是让微级别那么难打的“抽水陷阱”。
 3. **rakeback 和结构很关键。**拿回 20–40% 的抽水、并选那些对牌手友好封顶的房，能翻转你的长期结果——一切都要在抽完水*之后*再来衡量。
 
-现在你能看见牌房抽的那一刀了，你在别处到处读到的那些数字也就更说得通了：你的[底池赔率](/zh/blog/holdem-pot-odds)、你的赢率，以及为什么一个把底池吹大的 [straddle](/zh/blog/holdem-straddle) 也在悄悄地喂着抽水。扑克是打得赢的——但前提是，你赢别的牌手，得赢得*比*牌房抽走的*更多*。
+现在你能看见牌房抽的那一刀了，你在别处到处读到的那些数字也就更说得通了：你的[底池赔率](/zh/blog/holdem-pot-odds)、你的赢率，以及为什么一个把底池吹大的 [straddle](/zh/blog/holdem-straddle) 也可能在悄悄地喂大抽水——前提是这个底池要抽水、又还没抽到封顶（翻牌前就结束、按“不翻牌，不抽水”免抽的底池，以及收计时费的局，不在此列）。扑克是打得赢的——但前提是，你赢别的牌手，得赢得*比*牌房抽走的*更多*。
 
 ---
 
@@ -234,7 +234,7 @@ A. 现场抽水往往百分比更高，封顶通常也更高，但你每小时�
   <a href="/zh/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">术语</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么是 straddle？</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把底池吹大的那个额外盲注——也顺带喂大了抽水</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">把底池吹大的那个额外盲注——也可能顺带让抽水变多</div>
   </a>
   <a href="/zh/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">赔率与数学</div>

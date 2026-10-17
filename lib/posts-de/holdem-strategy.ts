@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-05",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -89,7 +89,7 @@ Wie viel ist „das meiste“? Ein solider [tight-aggressiver](/de/blog/holdem-s
 
 Welche Hände es schaffen, hängt von deiner Position ab (Entscheidung 1 speist Entscheidung 2), aber eine Anfänger-Faustregel:
 
-- **Immer raisen:** große Pairs (A‑A, K‑K, Q‑Q, J‑J) und A‑K.
+- **Immer raisen, wenn du als Erster einsteigst und normale Stacks (~100bb) hast:** große Pairs (A‑A, K‑K, Q‑Q, J‑J) und A‑K.
 - **Meist raisen:** mittlere Pairs, A‑Q und starke suited Broadways (K‑Q, A‑J suited) – umso freier, je später dein Platz.
 - **Spekulativ, positionsabhängig:** kleine Pocket Pairs und Suited Connectors, die billige Multiway-Pots wollen (mehr zur Mathematik unten).
 - **Folden:** fast alles andere, besonders offsuit-Müll wie J‑4, Q‑7, K‑3.

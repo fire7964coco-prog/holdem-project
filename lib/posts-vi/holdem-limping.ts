@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limp là vào pot trước flop bằng cách chỉ call big blind thay vì raise hoặc bỏ bài. Open-limp (là người đầu tiên vào pot) gần như luôn là sai lầm — limp không thể thắng blind ngay lập tức, bạn nhường thế chủ động và người chơi giỏi sẽ trừng phạt bạn. Nhưng limp không phải lúc nào cũng sai: hoàn thành small blind, over-limp bài đầu cơ sau những người đã limp, và vài tình huống live hay giải đấu stack ngắn là ngoại lệ hợp lý.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-10",
-  masterUpdated: "2026-10-06",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 phút",
   emoji: "🚶",
@@ -66,7 +66,7 @@ Khi bạn open-limp, bạn từ bỏ nhiều hơn mình tưởng: cơ hội th�
 
 1. **Một cú limp không thể thắng hai blind mà không bị tranh.** Đây là điều lớn nhất. Khi bạn *raise* đầu tiên, mọi người có thể fold và bạn thu hai blind không ai tranh — tiền miễn phí, một tỷ lệ đáng kể số lần. Khi bạn limp, con số đó là **không**. Bạn đã tự bảo đảm mình phải trúng bài hoặc thắng sau này; bạn vứt đi cách thắng sạch sẽ nhất.
 2. **Bạn nhường quyền chủ động.** Người raise preflop là "kẻ tấn công" — họ được bắn một cú [c-bet](/vi/blog/holdem-continuation-bet) ở flop và thể hiện một tay bài mạnh, thường lấy pot mà chẳng có gì. Limp, và bạn đã trao câu chuyện đó cho người khác. Giờ bạn phản ứng thay vì dẫn dắt.
-3. **Bạn tạo một pot phình to, nhiều người — thường khi không có vị trí.** Limp mời thêm người call và để big blind vào với giá rẻ. Càng nhiều người xem flop, tay bài của bạn càng kém giá trị, và nếu bạn limp từ vị trí sớm, bạn sẽ *out of position* (không có vị trí) trước gần như cả bàn ở mọi vòng cược, không có quyền chủ động. Đó là chỗ ngồi tệ nhất bàn.
+3. **Bạn tạo một pot phình to, nhiều người — thường khi không có vị trí.** Limp mời thêm người call và để big blind vào với giá rẻ. Càng nhiều người xem flop, tay bài của bạn càng kém giá trị, và nếu bạn limp từ vị trí sớm, bạn sẽ *out of position* (không có vị trí) trước tất cả những người vào pot sau bạn ở mọi vòng cược (sau flop, chỉ các blind hành động trước bạn), không có quyền chủ động. Đó là chỗ ngồi tệ nhất bàn.
 4. **Bạn khiến mình dễ bị đọc — và dễ bị khai thác.** Những limper thường xuyên xuất hiện với một range bị giới hạn, lộ rõ. Người chơi giỏi tấn công nó không ngừng (nói thêm bên dưới), nên bạn liên tục rơi vào những thế khó khi không có vị trí. Như câu nói cũ, limper kinh niên "thắng pot nhỏ và thua pot lớn." Đó cũng là lý do lời khuyên "cầm AA hay KK ở ghế đầu thì limp rất hiệu quả" sai: bạn kéo cả bàn vào pot với tay bài mạnh nhất của mình, và càng nhiều người xem flop, đôi Át càng ít khi còn là tay bài tốt nhất ở river.
 
 ---

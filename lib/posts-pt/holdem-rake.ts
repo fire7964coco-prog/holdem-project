@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -184,7 +184,7 @@ A. O rake ao vivo tende a ser uma porcentagem mais alta, normalmente com um cap 
 2. **Ele pesa mais em stakes baixos.** O cap quase não se move conforme você desce, então proporcionalmente você paga mais rake lá embaixo — a "armadilha do rake" que torna os micro-stakes tão difíceis de bater.
 3. **Rakeback e estrutura importam.** Receber 20–40% do seu rake de volta, e escolher salas com caps amigáveis ao jogador, pode virar o seu resultado no longo prazo — meça tudo *depois* do rake.
 
-Agora que você consegue enxergar a fatia da casa, os números que você lê em todo lugar fazem mais sentido: as suas [pot odds](/pt/blog/holdem-pot-odds), o seu win rate, e por que um [straddle](/pt/blog/holdem-straddle) que infla o pote também alimenta o rake em silêncio. O poker é batível — mas só quando você está batendo os outros jogadores por *mais* do que a casa tira.
+Agora que você consegue enxergar a fatia da casa, os números que você lê em todo lugar fazem mais sentido: as suas [pot odds](/pt/blog/holdem-pot-odds), o seu win rate, e por que um [straddle](/pt/blog/holdem-straddle) que infla o pote também pode alimentar o rake em silêncio — em potes com rake que ainda não bateram no cap (não nos potes pré-flop sob o 'no flop, no drop', nem em jogos com time charge). O poker é batível — mas só quando você está batendo os outros jogadores por *mais* do que a casa tira.
 
 ---
 
@@ -199,7 +199,7 @@ Agora que você consegue enxergar a fatia da casa, os números que você lê em 
   <a href="/pt/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossário</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que é um straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A blind extra que infla o pote — e o rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A blind extra que infla o pote — e pode aumentar o rake</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>

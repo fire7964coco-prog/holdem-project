@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -187,7 +187,7 @@ A. Live rake tends to be a higher percentage, usually with a higher cap, but you
 2. **It hits low stakes hardest.** The cap barely moves as you drop down, so proportionally you pay the most rake at the bottom — the "rake trap" that makes micro-stakes so hard to beat.
 3. **Rakeback and structure matter.** Getting 20–40% of your rake back, and choosing rooms with player-friendly caps, can flip your long-term result — measure everything *after* the rake.
 
-Now that you can see the house's cut, the numbers you read everywhere else make more sense: your [pot odds](/en/blog/holdem-pot-odds), your win rate, and why a [straddle](/en/blog/holdem-straddle) that bloats the pot also quietly feeds the rake. Poker is beatable — but only once you're beating the other players by *more* than the house takes.
+Now that you can see the house's cut, the numbers you read everywhere else make more sense: your [pot odds](/en/blog/holdem-pot-odds), your win rate, and why a [straddle](/en/blog/holdem-straddle) that bloats the pot can also quietly feed the rake — in raked pots that haven't hit the cap (not in no-flop-no-drop preflop pots or time-charge games). Poker is beatable — but only once you're beating the other players by *more* than the house takes.
 
 ---
 
@@ -202,7 +202,7 @@ Now that you can see the house's cut, the numbers you read everywhere else make 
   <a href="/en/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">What Is a Straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The extra blind that bloats the pot — and the rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">The extra blind that bloats the pot — and can raise the rake</div>
   </a>
   <a href="/en/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Math</div>

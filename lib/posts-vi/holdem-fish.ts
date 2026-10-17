@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Fish poker là gì? Cách nhận ra fish ở bàn — và chắc rằng đó không phải bạn",
   seoTitle: "Không thấy fish ở bàn? Chính là bạn — Fish poker là gì",
   desc: "6 tháng sau tôi mới hiểu: fish ở bàn đó chính là tôi. Fish poker là gì, dấu hiệu nhận ra, shark/whale/nit/donkey là ai và cách để bạn không thành fish.",
-  tldr: "\"Fish\" là tiếng lóng poker chỉ người chơi yếu, thua đều, nguồn tiền của những người chơi mạnh hơn (\"shark\"). Fish chơi quá nhiều tay bài, call quá nhiều và không fold được — câu nói nổi tiếng cảnh báo rằng nếu bạn không nhận ra fish ở bàn, thì fish chính là bạn. Đó là cái read quan trọng nhất trong poker: tìm ra fish, hoặc trở thành fish.",
+  tldr: "\"Fish\" là tiếng lóng poker chỉ người chơi yếu, thua đều, nguồn tiền của những người chơi mạnh hơn (\"shark\"). Một fish điển hình chơi quá nhiều tay bài, call quá nhiều và không fold được — câu nói nổi tiếng cảnh báo rằng nếu bạn không nhận ra fish ở bàn, thì fish chính là bạn. Đó là cái read quan trọng nhất trong poker: tìm ra fish, hoặc trở thành fish.",
   category: "glossary",
   date: "2026-10-10",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -81,7 +81,7 @@ Không dấu hiệu đơn lẻ nào là bằng chứng — ngay cả người ch
 
 | Từ | Nghĩa là gì | Họ chơi thế nào | Bạn thắng họ ra sao |
 |:---|:---|:---|:---|
-| **Fish** | Người chơi yếu, thua (từ bao trùm) | Lỏng, thụ động, không fold nổi | Value bet mỏng, đừng bluff |
+| **Fish** | Người chơi yếu, thua (từ bao trùm) | Điển hình: lỏng, thụ động, không fold nổi | Value bet mỏng, đừng bluff |
 | **Shark** | Người chơi mạnh, thắng | Tight-aggressive, thích nghi | Tránh — chọn bàn mềm hơn |
 | **Whale** (cá voi — fish nhiều tiền) | Một fish *giàu* thua **lớn** | Rất lỏng, stakes (mức cược) cao, không bận tâm | Như với fish, phần thưởng cao hơn |
 | **Nit** (người chơi quá chặt) | Cực kỳ chặt, sợ rủi ro | Chỉ tay premium, hiếm khi bluff | Fold trước hầu hết raise của họ; cướp blind |
@@ -127,7 +127,7 @@ Vậy nên cách ghi nguồn trung thực — thứ tách một nguồn cẩn th
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (tỷ lệ ván chơi) | PFR (tỷ lệ ván raise) | Cách đọc |
+| | VPIP (tỷ lệ ván chơi preflop) | PFR (tỷ lệ ván raise preflop) | Cách đọc |
 |:---|:---:|:---:|:---|
 | **Người chơi chắc tay** | 15–22% | 12–18% (không bao giờ cao hơn VPIP) | Chặt, hung hăng, khoảng cách hẹp |
 | **Fish** | 40–70% | dưới 10% | Lỏng và thụ động — chơi mọi thứ, chẳng bao giờ chủ động bet |
@@ -205,7 +205,7 @@ A. Phiên bản nổi tiếng trên màn ảnh đến từ bộ phim *Rounders* 
 ## Những điều cần nhớ
 
 1. **Fish là người chơi yếu mà mọi người khác kiếm lời từ đó** — lỏng, thụ động, và thường không tự biết. Nhận ra fish là việc đầu tiên ở bất kỳ bàn nào.
-2. **Biết cả sở thú.** Fish, whale, nit, donkey và calling station không thay thế được cho nhau — gọi đúng kiểu của đối thủ cho bạn biết chính xác cách thắng họ.
+2. **Biết cả sở thú.** Fish, whale, nit, donkey và calling station không thay thế được cho nhau — gọi tên kiểu của đối thủ — như một cái read tạm thời mà bạn liên tục cập nhật — cho bạn biết nên bắt đầu thắng họ từ đâu.
 3. **Chắc rằng đó không phải bạn.** VPIP rộng với tỷ lệ raise thấp là chữ ký của fish. Nếu đó là bạn, các cách sửa là những chiến thắng dễ nhất trong poker: chơi ít tay hơn, fold nhiều hơn, và thôi đuổi theo draw mà không có pot odds đúng.
 
 Câu nói xưa đúng là có lý do. Nhìn quanh bàn tiếp theo của bạn và tìm ra fish trong nửa giờ đầu — và nếu thật sự không tìm thấy, điều giá trị nhất poker từng dạy bạn là đã đến lúc chăm chút cho chính ván chơi của mình. Bắt đầu với một [range bài khởi đầu](/vi/blog/holdem-starting-hands-chart) chặt hơn và cảm nhận thật về [pot odds](/vi/blog/holdem-pot-odds), rồi để người khác làm bữa ăn.

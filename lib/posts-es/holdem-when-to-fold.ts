@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas a la larga. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, después suelta las manos falladas que se enfrentan a una apuesta en una mesa que favorece al rival, y los proyectos débiles que no cumplen sus pot odds, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -67,9 +67,9 @@ Foldear postflop es donde de verdad se ahorra dinero, y cada calle hace una preg
 
 **Flop — "¿Esta mesa me ayudó a mí, o a ellos?"** Cuando fallas y te enfrentas a una apuesta en una mesa que encaja con el rango del rival, suéltala. As-alto sin proyecto en una mesa coordinada no merece un call "por ver el turn". Foldea también los proyectos débiles — un gutshot sin más equity y a mal precio es un fold, no una persecución.
 
-**Turn — la calle de rendirse.** Este es el fold más importante del póker y el que los jugadores se saltan. En el turn, los rangos se polarizan hacia "muy fuerte o fallado", y los tamaños de apuesta se disparan. Tu float del flop que no mejoró, tu segunda pareja que ahora encara un segundo barril, tu proyecto que acaba de fallar con una sola carta por venir y a mal precio — estos son turns para soltar, no para convencerte de un call más. Si estabas "floteando el flop para farolear el turn" y el turn no te dio una razón, ríndete.
+**Turn — la calle de rendirse.** Este es el fold más importante del póker y el que los jugadores se saltan. En el turn, los rangos se polarizan hacia "muy fuerte o fallado", y los tamaños de apuesta se disparan. Tu float del flop que no mejoró, tu segunda pareja que ahora encara un segundo barril grande de un jugador que rara vez farolea, tu proyecto que acaba de fallar con una sola carta por venir y a mal precio — estos suelen ser turns para soltar, no para convencerte de un call más. Si estabas "floteando el flop para farolear el turn" y el turn no te dio una razón, ríndete.
 
-**River — puro bluff-catching.** Ya no vas a proyecto de nada; la única pregunta es *"¿puede mi mano ganarle a las manos que apostarían por valor aquí?"* Si un jugador pasivo dispara grande en una mesa peligrosa, la respuesta honesta suele ser no. Foldea las manos que solo le ganan a un farol cuando tu rival rara vez farolea. Lo que nos lleva a la matemática.
+**River — puro bluff-catching.** Ya no vas a proyecto de nada; la pregunta es *"¿mi mano le gana a suficiente de lo que apostarían aquí — manos de valor y faroles — como para justificar el precio?"* Si un jugador pasivo dispara grande en una mesa peligrosa, la respuesta honesta suele ser no. Foldea las manos que solo le ganan a un farol cuando tu rival rara vez farolea. Lo que nos lleva a la matemática.
 
 ---
 
@@ -110,12 +110,12 @@ Foldear basura es fácil. Foldear una *buena* mano — top pair, un sobrepar, in
 | **Top pair, kicker débil** | Encarando apuestas grandes en turn + river | Le ganas a faroles y parejas peores — pero su rango de valor te supera por kicker |
 | **Sobrepar (JJ/QQ)** | Un jugador pasivo sube en una mesa coordinada | Los pasivos suben las nuts, no aire — vas a proyecto muy fino |
 | **Top pair top kicker** | La mesa cierra con cuatro al color o a la escalera | Tu pareja no puede ganarle al color/escalera que representa |
-| **Un trío** | Raise grande en mesa monocolor o cuatro a la escalera — **en el river** | Trío contra trío es un cooler; un color completado no. En el *flop* ese mismo trío todavía liga full o póker el ~34% de las veces para el river contra un color hecho, y cuando lo hace se lleva un stack — paga |
+| **Un trío** | Raise grande en mesa monocolor o cuatro a la escalera — **en el river** | Trío contra trío es un cooler; un color completado no. En el *flop* ese mismo trío todavía liga full o póker el ~34% de las veces para el river contra un color hecho, y cuando lo hace se lleva un stack — paga, con un tamaño de apuesta normal y stacks detrás |
 | **Segunda pareja** | Pagar tres calles "para tenerlo honesto" | Estás pagando valor tres veces por atrapar un farol |
 
 </div>
 
-La fila del trío es la que necesita que le pongas calle, porque soltarlo demasiado pronto cuesta más que soltarlo demasiado tarde. Ten 9♠9♣ en un flop 9♥5♥2♥ contra un color hecho A♥K♥ y el trío todavía gana el ==34%== de las veces — y ningún color hecho lo deja muy por debajo de eso (el suelo ronda el 32%, contra 3♥4♥ con sus outs de escalera de color): liga la casa con los siete outs evidentes (el nueve restante, tres cincos, tres doses) *y* además siempre que el turn y el river se emparejen entre sí. En el flop eso se paga — no porque la siguiente carta por sí sola llegue lo bastante a menudo (siete outs son alrededor del 16%, por debajo del precio de la mayoría de apuestas), sino porque cuando la mesa se empareja te llevas todo lo que un color va a pagar, y foldear tríos en el flop cuesta mucho más a la larga que las apuestas que te ahorras. Solo cuando el proyecto ya ha entrado se aplica la fila de arriba.
+La fila del trío es la que necesita que le pongas calle, porque soltarlo demasiado pronto cuesta más que soltarlo demasiado tarde. Ten 9♠9♣ en un flop 9♥5♥2♥ contra un color hecho A♥K♥ y el trío todavía gana el ==34%== de las veces — y ningún color hecho lo deja muy por debajo de eso (el suelo ronda el 32%, contra 3♥4♥ con sus outs de escalera de color): liga la casa con los siete outs evidentes (el nueve restante, tres cincos, tres doses) *y* además siempre que el turn y el river se emparejen entre sí. En el flop, con un tamaño de apuesta normal y stacks todavía detrás, eso se paga — no porque la siguiente carta por sí sola llegue lo bastante a menudo (siete outs son alrededor del 16%, por debajo del precio de la mayoría de apuestas), sino porque cuando la mesa se empareja te llevas todo lo que un color va a pagar, y foldear tríos en el flop cuesta mucho más a la larga que las apuestas que te ahorras. Solo cuando el proyecto ya ha entrado se aplica la fila de arriba.
 
 El reflejo contrario también importa, porque **foldear puede ser una fuga en sí misma.** Un *buen* laydown suelta una mano batida ante una línea que tiene sentido. Un *mal* laydown foldea la mejor mano ante una carta de miedo por temor — y si lo haces a menudo, contra rivales que piensan te farolearán sin descanso. El objetivo no es foldear más ni foldear menos; es foldear *cuando la evidencia está ahí.*
 
@@ -146,7 +146,7 @@ Antes de cualquier call grande, pasa esta checklist. Cuatro de las cinco pregunt
 ¿Supero el umbral de pot odds? | Si mi equity está por debajo del número de la tabla, el precio dice fold.
 ¿Esta línea es una apuesta de valor o un farol? | Los pasivos y los raises grandes en el river suelen ser valor — créetelos.
 ¿Solo estoy pagando por "verlo"? | La curiosidad y el ego no son razones; es tu ego el que habla, no las matemáticas.
-¿Apostaría yo mismo esta mano por valor aquí? | Si no, tengo un bluff-catcher — la pregunta pasa a ser cada cuánto farolea, no si voy ganando.
+¿Apostaría yo mismo esta mano por valor aquí? | Si no, pero aun así le gana a sus faroles, tengo un bluff-catcher — la pregunta pasa a ser cada cuánto farolea, no si voy ganando.
 :::
 
 Nada de esto lleva treinta segundos reales una vez es un hábito — pero frenar en las decisiones grandes es exactamente lo que la calling station nunca hace.

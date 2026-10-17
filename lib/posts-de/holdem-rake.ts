@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus den meisten Pots nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -211,7 +211,7 @@ A. Vier Angaben genügen, und alle vier stehen in den Tischinformationen deines 
 2. **Er trifft Low Stakes am härtesten.** Das Cap bewegt sich kaum, wenn du runtergehst, also zahlst du proportional den meisten Rake ganz unten – die „Rake-Falle“, die Micro-Stakes so schwer schlagbar macht.
 3. **Rakeback und Struktur zählen.** 20–40% deines Rakes zurückzubekommen und Räume mit spielerfreundlichen Caps zu wählen kann dein langfristiges Ergebnis kippen – miss alles *nach* dem Rake.
 
-Jetzt, wo du den Anteil des Hauses siehst, ergeben die Zahlen, die du überall sonst liest, mehr Sinn: deine [Pot Odds](/de/blog/holdem-pot-odds), deine Winrate und warum ein [Straddle](/de/blog/holdem-straddle), der den Pot aufbläht, auch still den Rake füttert. Poker ist schlagbar – aber erst, wenn du die anderen Spieler um *mehr* schlägst als das Haus nimmt.
+Jetzt, wo du den Anteil des Hauses siehst, ergeben die Zahlen, die du überall sonst liest, mehr Sinn: deine [Pot Odds](/de/blog/holdem-pot-odds), deine Winrate und warum ein [Straddle](/de/blog/holdem-straddle), der den Pot aufbläht, auch still den Rake füttern kann – in rakepflichtigen Pots, die das Cap noch nicht erreicht haben (nicht in Pots, die nach „no flop, no drop“ preflop enden, und nicht in Spielen mit Time Charge). Poker ist schlagbar – aber erst, wenn du die anderen Spieler um *mehr* schlägst als das Haus nimmt.
 
 ---
 
@@ -226,7 +226,7 @@ Jetzt, wo du den Anteil des Hauses siehst, ergeben die Zahlen, die du überall s
   <a href="/de/blog/holdem-straddle" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Was ist ein Straddle?</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der zusätzliche Blind, der den Pot aufbläht – und den Rake</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Der zusätzliche Blind, der den Pot aufbläht – und den Rake erhöhen kann</div>
   </a>
   <a href="/de/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Mathe</div>

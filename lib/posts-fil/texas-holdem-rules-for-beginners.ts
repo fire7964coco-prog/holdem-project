@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -274,7 +274,7 @@ Kabilang sa magagandang beginner starting hands ang:
 
 | Tier | Hands | Kailan laruin |
 |------|-------|--------------|
-| 🟥 **Premium — laging i-raise** | AA, KK, QQ, JJ, AKs, AKo | Bawat position, bawat stack |
+| 🟥 **Premium — laging i-raise** | AA, KK, QQ, JJ, AKs, AKo | Bawat position, bawat stack (o mag-all-in kung kulang na ang stack mo para sa buong raise) |
 | 🟧 **Strong — kadalasan i-raise** | TT, 99, AQs, AQo, AJs, KQs | Karamihan ng positions; mas tight mula UTG |
 | 🟦 **Playable — mahalaga ang position** | 88, 77, ATs, AJo, KJs, QJs, JTs | Piliin ang late position (CO, BTN) |
 | ⬜ **Fold by default** | Lahat ng iba bilang beginner | Lalo na mula sa early position |

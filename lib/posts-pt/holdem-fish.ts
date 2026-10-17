@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "O que é um fish no poker? Como identificar um — e garantir que não é você",
   seoTitle: "Se você não acha o fish, é você — o que é um fish no poker?",
   desc: "Fish é o jogador fraco de quem a mesa inteira lucra. Como identificar um, a gíria shark/whale/nit/donkey decifrada, e como garantir que o fish não é você.",
-  tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
+  tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. O fish clássico joga mãos demais, paga demais e não consegue dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -81,7 +81,7 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 
 | Termo | O que significa | Como joga | Como você bate |
 |:---|:---|:---|:---|
-| **Fish** | Jogador fraco e perdedor (termo guarda-chuva) | Frouxo, passivo, não dá fold | Value bet fino, não blefe |
+| **Fish** | Jogador fraco e perdedor (termo guarda-chuva) | Clássico: frouxo, passivo, não dá fold | Value bet fino, não blefe |
 | **Shark** | Jogador forte e vencedor | Tight-agressivo, adaptável | Evite — escolha mesas mais moles |
 | **Whale** | Um fish *rico* que perde **alto** | Muito frouxo, stakes altos, não liga | Igual a um fish, recompensa maior |
 | **Nit** | Extremamente tight, avesso a risco | Só mãos premium, raramente blefa | Dê fold à maioria dos raises dele; roube os blinds |
@@ -126,7 +126,7 @@ Aqui vem a parte desconfortável. Se você leu até aqui torcendo baixinho para 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (mãos jogadas) | PFR (mãos aumentadas) | A leitura |
+| | VPIP (mãos jogadas no pré-flop) | PFR (mãos aumentadas no pré-flop) | A leitura |
 |:---|:---:|:---:|:---|
 | **Jogador sólido** | 15–22% | 12–18% (nunca maior que o VPIP) | Tight, agressivo, diferença pequena |
 | **Fish** | 40–70% | abaixo de 10% | Frouxo e passivo — joga tudo, lidera nada |
@@ -204,7 +204,7 @@ A. A famosa versão da tela é do filme de 1998 *Rounders*, dita pelo personagem
 ## As 3 coisas para lembrar
 
 1. **Um fish é o jogador fraco de quem todo mundo lucra** — frouxo, passivo e geralmente sem saber disso. Identificar o fish é o primeiro trabalho em qualquer mesa.
-2. **Conheça o zoológico inteiro.** Fish, whale, nit, donkey e calling station não são intercambiáveis — nomear o tipo exato do seu adversário te diz precisamente como bater ele.
+2. **Conheça o zoológico inteiro.** Fish, whale, nit, donkey e calling station não são intercambiáveis — nomear o tipo do seu adversário — como uma leitura de trabalho que você vai atualizando — te diz como começar a bater ele.
 3. **Garanta que não é você.** Um VPIP alto com uma porcentagem de raise baixa é a assinatura do fish. Se isso é você, as correções são as vitórias mais fáceis do poker: jogue menos mãos, dê mais fold e pare de correr atrás de projetos sem as pot odds certas.
 
 A velha frase está certa por um motivo. Olhe ao redor da sua próxima mesa e ache o fish na primeira meia hora — e se você genuinamente não conseguir, a coisa mais valiosa que o poker vai te ensinar é que está na hora de trabalhar no seu próprio jogo. Comece com um [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) mais apertado e uma noção real de [pot odds](/pt/blog/holdem-pot-odds), e deixe outra pessoa ser a refeição.

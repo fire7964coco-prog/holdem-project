@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -198,7 +198,7 @@ The worst starting hands in poker aren't random junk like 7-2 — nobody needs a
 | King-rag offsuit (K3o, K4o) | Dominated by every better king | "A king is a big card" |
 | Any two suited cards | Makes a flush by the river only ~6.4% of the time (flops one ~0.8%) | "But they're the same suit" |
 
-![Weak ace trap in Texas Hold'em — A♣ 4♦ outlined in red as a losing hand, dominated by A♠ K♦ in gold](/images/holdem-starting-hands-weak-ace-trap.webp "Weak aces look strong but stay dominated — fold them preflop")
+![Weak ace trap in Texas Hold'em — A♣ 4♦ outlined in red as a losing hand, dominated by A♠ K♦ in gold](/images/holdem-starting-hands-weak-ace-trap.webp "Weak offsuit aces look strong but stay dominated — fold them preflop")
 
 The ==r:most expensive mistake beginners make is calling raises with weak aces== like the A♣ 4♦ from the intro. When you finally hit your pair of aces, you're often second-best to A♠ K♦ or A♥ Q♦ — and you lose a big pot convinced you have top pair. You do. So do they, with a better kicker.
 

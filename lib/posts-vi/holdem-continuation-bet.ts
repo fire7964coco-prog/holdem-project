@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) là cược ở flop của người đã raise preflop. Quy tắc hiện đại không phải 'c-bet mọi flop' mà là cược nhỏ và thường ở flop có lợi cho range của bạn (bài chung cao, khô như K-7-2), check ở flop có lợi cho đối thủ (thấp, liên kết như 7-6-5). Size khoảng 1/3 pot ở flop khô, 2/3 trở lên ở flop ướt; c-bet ít hơn khi không có vị trí nếu bạn là người raise duy nhất, và ít hơn nhiều trong pot nhiều người.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "18 phút",
@@ -194,7 +194,7 @@ Không có một tỷ lệ c-bet "đúng" duy nhất — ai đưa bạn một co
 
 | Tình huống | Tần suất c-bet ước lượng | Ghi chú |
 |:---|:---:|:---|
-| **Có vị trí, heads-up, board khô** | **70–100%** (nhỏ) | "Range bet" kinh điển — bet gần như mọi thứ, rất nhỏ |
+| **Có vị trí, heads-up, board khô K-high hoặc Q-high** | **70%+** (nhỏ) | "Range bet" kinh điển — bet phần lớn range, rất nhỏ. Board khô **A-high** được bet ít hơn nhiều (A♥7♦2♣ 59,0% trong bảng solver ở trên) |
 | **Có vị trí, heads-up, board ướt** | **~50–60%** | Phân cực hơn — value và bài chờ bet, bài chưa có gì check |
 | **Không có vị trí, heads-up (pot raise đơn, bạn là người raise)** | **~30–45%** | Check nhiều hơn hẳn để bảo vệ range check. Là *người 3-bet* ở OOP thì lật ngược: hơn 97% trên cả ba board đã được solve, gần như toàn bộ ở cỡ hai phần ba pot trên Q♥10♥7♠ và 8♦5♣2♠ nhưng chủ yếu ở cỡ một phần ba pot trên A♦K♠2♥ (57,8%); xem [bài chiến thuật vị trí](/vi/blog/holdem-position-play) |
 | **Nhiều người (2 đối thủ)** | **~50% hoặc ít hơn** | Ai đó nhiều khả năng đã dính board — siết lại |
@@ -261,7 +261,7 @@ Trì hoãn biến một chỗ mà cú c-bet tự động lẽ ra rỉ chip thàn
 
 Hãy nói rõ phần "không", vì đó là nơi tiền được tiết kiệm: đừng c-bet theo mặc định khi board trúng đậm range đối thủ, khi bạn không có vị trí với bài tầm tầm trên board động, khi bạn ở pot nhiều người với bài chưa có gì, hay khi tay bài của bạn cần ở lại để bảo vệ range check. Cụ thể:
 
-- **Board trúng đậm range của đối thủ.** Một flop 7‑6‑5 hay 9‑8‑7 trúng những tay bài call cú raise mạnh hơn hẳn trúng bài của bạn. Bet ở đây với phần lớn range chỉ là tặng chip — check thường xuyên hơn nhiều, và khi bet, bet lớn và chọn lọc.
+- **Board trúng đậm range của đối thủ.** Một flop 7‑6‑5 hay 9‑8‑7 trúng những tay bài call cú raise mạnh hơn hẳn trúng bài của bạn. C-bet ở đây theo kiểu lái tự động chỉ là tặng chip — hãy check phần range lớn hơn hẳn so với trên K‑7‑2, và khi bet, bet lớn và chọn lọc.
 - **Bạn không có vị trí trên board động** với bài tầm tầm. Hành động trước không có thông tin, giữ pot nhỏ và check.
 - **Bạn ở pot nhiều người với bài chưa có gì.** Đã nói ở trên — gần như không có fold equity, nên không bet.
 - **Tay bài của bạn cần bảo vệ range check.** Đôi khi bạn cố ý check một tay bài mạnh để những cú check của bạn không tự động là yếu.
@@ -325,7 +325,7 @@ A. Không — đây là sai lầm c-bet phổ biến nhất. Bet những flop c�
 
 **Q. Nên c-bet thường xuyên đến mức nào?**
 
-A. Tùy vị trí, board và số đối thủ, nên hãy coi đây là các dải, không phải quy tắc: khoảng 70–100% (với cỡ nhỏ) khi có vị trí heads-up trên board khô, khoảng 30–45% khi không có vị trí với tư cách người raise trong pot raise đơn (cao hơn khi là người 3-bet), và 50% hoặc ít hơn trong pot nhiều người. Tỷ lệ c-bet flop tổng thể lành mạnh là khoảng 55–70% — trên 85% nghĩa là bạn đang lái tự động.
+A. Tùy vị trí, board và số đối thủ, nên hãy coi đây là các dải, không phải quy tắc: khoảng 70% trở lên (với cỡ nhỏ) khi có vị trí heads-up trên board khô K-high hoặc Q-high (board khô A-high được bet ít hơn thấy rõ), khoảng 30–45% khi không có vị trí với tư cách người raise trong pot raise đơn (cao hơn khi là người 3-bet), và 50% hoặc ít hơn trong pot nhiều người. Tỷ lệ c-bet flop tổng thể lành mạnh là khoảng 55–70% — trên 85% nghĩa là bạn đang lái tự động.
 
 **Q. Nên c-bet bao nhiêu?**
 

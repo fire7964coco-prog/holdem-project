@@ -47,7 +47,7 @@ export const GLOSSARY_DICT_MS: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-Bet", cat: "Action", desc: "Re-raise selepas open (bet ketiga, dengan blind dikira sebagai yang pertama). Blind dikira bet 1, open-raise ialah bet 2, jadi re-raise ialah 3-bet (bukan raise pertama).", aka: ["3bet", "three-bet"] },
+    { term: "3-Bet", cat: "Action", desc: "Re-raise preflop selepas open (bet ketiga, dengan blind dikira sebagai yang pertama). Blind dikira bet 1, open-raise ialah bet 2, jadi re-raise ialah 3-bet (bukan raise pertama).", aka: ["3bet", "three-bet"] },
     { term: "All-in", cat: "Action", desc: "Mempertaruhkan semua cip anda; anda hanya boleh memenangi bahagian pot yang anda tampung.", aka: ["allin", "jam", "shove"] },
     { term: "Ante", cat: "Action", desc: "Secara tradisi, bet paksa kecil daripada semua pemain untuk mengisi pot, berasingan daripada blind — kebanyakan tournament kini menggunakan big blind ante yang dibayar oleh satu tempat duduk untuk seluruh meja." },
     { term: "Backdoor", cat: "Board", desc: "Draw yang memerlukan dua kad berturut-turut (turn dan river)." },

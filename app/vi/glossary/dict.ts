@@ -60,7 +60,7 @@ export const GLOSSARY_DICT_VI: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", cat: "Action", desc: "Cú re-raise sau một cú open. Blind là bet 1, cú open-raise là bet 2, nên cú re-raise mới là 3-bet (không phải cú raise đầu).", aka: ["3bet", "3 bet", "three-bet", "re-raise", "tố lại"] },
+    { term: "3-bet", cat: "Action", desc: "Cú re-raise preflop sau một cú open. Blind là bet 1, cú open-raise là bet 2, nên cú re-raise mới là 3-bet (không phải cú raise đầu).", aka: ["3bet", "3 bet", "three-bet", "re-raise", "tố lại"] },
     { term: "All-in (tất tay)", cat: "Action", desc: "Đẩy hết chip của bạn vào; bạn chỉ thắng được phần pot bạn đã góp đủ.", aka: ["all in", "allin", "tất tay", "jam", "shove"] },
     { term: "Ante", cat: "Action", desc: "Theo truyền thống là khoản cược bắt buộc nhỏ từ mọi người để tạo pot ban đầu, tách biệt với blind — hầu hết giải đấu nay dùng big blind ante do một ghế trả cho cả bàn.", aka: ["big blind ante", "bb ante"] },
     { term: "Backdoor", cat: "Board", desc: "Draw cần trúng cả hai lá turn và river.", aka: ["runner-runner", "backdoor draw"] },

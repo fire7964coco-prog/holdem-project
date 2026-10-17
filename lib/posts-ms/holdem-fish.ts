@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apa Itu Fish dalam Poker? Cara Kenal Pasti — dan Pastikan Bukan Anda",
   seoTitle: "Tak nampak fish? Andalah fish — Apa Itu Fish dalam Poker",
   desc: "Fish ialah pemain lemah yang jadi sumber untung seluruh meja. Cara kenal pasti fish, maksud shark, whale, nit dan donkey, serta pastikan fish itu bukan anda.",
-  tldr: "'Fish' ialah slang poker untuk pemain lemah yang sentiasa kalah — pemain yang lebih kuat ('shark') mengaut untung daripadanya. Fish bermain terlalu banyak tangan, terlalu kerap call dan tak reti fold; pepatah terkenal mengingatkan, kalau anda tak nampak fish di meja, andalah fish itu. Inilah bacaan paling penting dalam permainan: cari fish, atau jadi fish.",
+  tldr: "'Fish' ialah slang poker untuk pemain lemah yang sentiasa kalah — pemain yang lebih kuat ('shark') mengaut untung daripadanya. Fish klasik bermain terlalu banyak tangan, terlalu kerap call dan tak reti fold; pepatah terkenal mengingatkan, kalau anda tak nampak fish di meja, andalah fish itu. Inilah bacaan paling penting dalam permainan: cari fish, atau jadi fish.",
   category: "glossary",
   date: "2026-09-27",
-  updated: "2026-10-12",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -81,7 +81,7 @@ Tiada satu tanda pun yang menjadi bukti — pemain yang bagus pun sekali-sekala 
 
 | Istilah | Maksudnya | Cara mereka bermain | Cara anda mengalahkan mereka |
 |:---|:---|:---|:---|
-| **Fish** | Pemain lemah yang kalah (istilah umum) | Longgar, pasif, tak boleh fold | Value-bet nipis, jangan bluff |
+| **Fish** | Pemain lemah yang kalah (istilah umum) | Klasik: longgar, pasif, tak boleh fold | Value-bet nipis, jangan bluff |
 | **Shark** | Pemain kuat yang menang | Tight-aggressive, pandai menyesuaikan diri | Elakkan — pilih meja yang lebih mudah |
 | **Whale** | Fish yang *kaya* dan kalah **besar** | Sangat longgar, stakes tinggi, tak kisah | Sama seperti fish, ganjaran lebih tinggi |
 | **Nit** | Sangat ketat, takut risiko | Hanya tangan premium, jarang bluff | Fold kepada kebanyakan raise mereka; curi blind |
@@ -122,11 +122,11 @@ Jadi atribusi yang jujur — yang membezakan sumber yang teliti daripada sumber 
 
 ## Adakah Saya Fish? Semakan Diri yang Jujur
 
-**Cara paling pantas untuk tahu ialah membandingkan dua statistik: VPIP (tangan yang anda mainkan) dan PFR (tangan yang anda raise).** Inilah bahagian yang kurang selesa. Jika anda membaca sejauh ini sambil diam-diam berharap anda seorang shark, buat semakan ini dahulu. Kedua-dua statistik ini boleh dijejaki dalam mana-mana tracker (atau dianggarkan dengan jujur):
+**Cara paling pantas untuk tahu ialah membandingkan dua statistik: VPIP (tangan yang anda mainkan preflop) dan PFR (tangan yang anda raise preflop).** Inilah bahagian yang kurang selesa. Jika anda membaca sejauh ini sambil diam-diam berharap anda seorang shark, buat semakan ini dahulu. Kedua-dua statistik ini boleh dijejaki dalam mana-mana tracker (atau dianggarkan dengan jujur):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (tangan dimainkan) | PFR (tangan di-raise) | Bacaannya |
+| | VPIP (tangan dimainkan preflop) | PFR (tangan di-raise preflop) | Bacaannya |
 |:---|:---:|:---:|:---|
 | **Pemain mantap** | 15–22% | 12–18% (tidak pernah lebih tinggi daripada VPIP-nya) | Ketat, agresif, jurang kecil |
 | **Fish** | 40–70% | bawah 10% | Longgar dan pasif — main semua, tak memimpin apa-apa |
@@ -204,7 +204,7 @@ A. Versi terkenal di skrin datang daripada filem *Rounders* (1998), diucapkan ol
 ## 3 Perkara untuk Diingati
 
 1. **Fish ialah pemain lemah yang menjadi sumber untung semua orang lain** — longgar, pasif dan biasanya tidak sedar. Mengenal pasti fish ialah tugas pertama di mana-mana meja.
-2. **Kenali seluruh zoo.** Fish, whale, nit, donkey dan calling station tidak boleh ditukar ganti — menamakan jenis tepat lawan anda memberitahu dengan tepat cara mengalahkannya.
+2. **Kenali seluruh zoo.** Fish, whale, nit, donkey dan calling station tidak boleh ditukar ganti — menamakan jenis lawan anda — sebagai bacaan semasa yang terus anda kemas kini — memberitahu cara untuk mula mengalahkannya.
 3. **Pastikan ia bukan anda.** VPIP yang luas dengan peratus raise yang rendah ialah ciri khas fish. Jika itu anda, pembaikannya ialah kemenangan paling mudah dalam poker: main lebih sedikit tangan, lebih banyak fold, dan berhenti mengejar draw tanpa pot odds yang betul.
 
 Pepatah lama itu betul bersebab. Lihat sekeliling meja anda yang seterusnya dan cari fish dalam setengah jam pertama — dan jika anda benar-benar tidak jumpa, pelajaran paling berharga yang poker akan ajar ialah sudah tiba masanya untuk membaiki permainan anda sendiri. Mulakan dengan [range tangan permulaan](/ms/blog/holdem-starting-hands-chart) yang lebih ketat dan kefahaman sebenar tentang [pot odds](/ms/blog/holdem-pot-odds), dan biarkan orang lain menjadi hidangan.

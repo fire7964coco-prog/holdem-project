@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées et partage 5 cartes communes posées au milieu de la table. Il y a jusqu'à 4 tours d'enchères, et la meilleure main de 5 cartes gagne à l'abattage (showdown), sauf si tous les autres se sont couchés avant.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-04",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -299,7 +299,7 @@ Bonnes mains de départ pour débutant :
 
 | Niveau | Mains | Quand les jouer |
 |------|-------|--------------|
-| 🟥 **Premium — relance toujours** | AA, KK, QQ, JJ, AKs, AKo | Toutes les positions, tous les stacks — relance en premier, surrelance face à une seule relance |
+| 🟥 **Premium — relance toujours** | AA, KK, QQ, JJ, AKs, AKo | Toutes les positions, tous les stacks — relance en premier, surrelance face à une seule relance (ou fais tapis si ton stack est trop court pour une relance complète) |
 | 🟧 **Fortes — relance en général** | TT, 99, AQs, AQo, AJs, KQs | La plupart des positions ; plus serré depuis UTG |
 | 🟦 **Jouables — la position compte** | 88, 77, ATs, AJo, KJs, QJs, JTs | De préférence en position tardive (CO, BTN) |
 | ⬜ **Couche-toi par défaut** | Tout le reste quand tu débutes | Surtout en position précoce |

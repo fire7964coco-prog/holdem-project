@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Voici, en français simple, les mots du poker que tu entends vraiment dans une partie de Texas Hold'em, classés selon la façon dont tu les rencontres : actions de mise, positions, mains et board, types de joueurs, argent, situations de table. Commence par les mots que tout le monde confond (check et call, set et trips, cooler et bad beat), puis parcours les catégories. Chaque mot est donné avec son équivalent français quand il en existe un, et ceux qui méritent un article à part renvoient directement vers lui.",
   category: "glossary",
   date: "2026-10-07",
-  updated: "2026-10-07",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -185,7 +185,7 @@ Ce sont les surnoms anglais qu'on donne aux joueurs d'en face : le fish est le j
 
 | Mot | Ce que ça veut dire |
 |:---|:---|
-| **Fish** | Un joueur récréatif faible et perdant — la source de profit de la table. |
+| **Fish** | Un joueur faible et perdant — la source de profit de la table. |
 | **Shark** | Littéralement « requin » : un joueur fort et gagnant qui s'attaque aux plus faibles. |
 | **Whale** | Littéralement « baleine » : un joueur récréatif riche et faible, à grosses limites — un « fish fortuné ». |
 | **Nit** | Un joueur extrêmement serré qui ne joue que des mains premium. |

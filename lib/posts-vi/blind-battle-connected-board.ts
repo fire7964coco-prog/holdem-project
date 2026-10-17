@@ -17,8 +17,8 @@ export const POST: Post = {
   tldr: "Sau khi small blind open và big blind call, flop 7♦6♦5♣ chỉ nhận một cú bet 9,6% số lần và check 90,4%. Pot, stack, SPR, size bet và cả hai range đều y hệt spot trước — chỉ ba lá board thay đổi, và cú bet sụp từ 67,4% xuống 9,6%. Lợi thế range giành được ở preflop là lợi thế về bài cao, và một board thấp liền nhau xóa sạch nó. Equity đảo chiều thành 49,6% so với 50,4%, và realization của người không có vị trí rơi xuống 85,3%.",
   category: "strategy",
   date: "2026-10-10",
-  updated: "2026-10-11",
-  masterUpdated: "2026-10-16",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "10 phút",
   emoji: "🪜",
@@ -197,7 +197,7 @@ Ba loại ô có vệt dày hơn thấy rõ. (Tần suất dưới đây là tru
 
 - **Đừng biến "blind đối đầu blind thì bet" thành quy tắc.** 67,4% của spot trước và 9,6% ở đây bị tách ra bởi board, không phải bởi ghế. Dù bạn open từ small blind, một khi flop ra thấp và liền nhau — 5, 6, 7, 8 — thì thế chủ động trong ván đó đã sang phía bên kia bàn.
 - **Đừng coi overpair là lý do để xây pot lớn.** 42 combo overpair của small blind gấp ba lần rưỡi của big blind, nhưng trên một board mà đối thủ có 42 combo đang thắng sẵn, đây không phải tay để bet liên tiếp qua hai hay ba vòng cược. Điều đó không phản đối một cú bet nhỏ đơn lẻ — vấn đề là **đừng coi nó là tay để đẩy hết stack**. ⚠ Cũng không có nghĩa là "raise (tố) đến là fold (bỏ bài) ngay". Range đối thủ có 24,9% sảnh hở hai đầu, 23,8% gutshot và 3,7% draw kép, nên một cú raise ở flop không thể toàn là value, và tự động fold overpair trước cú raise của một đối thủ nhiều draw tự nó đã là một thói quen dễ bị khai thác. **Không muốn đẩy hết stack và fold là hai chuyện khác nhau.** Và node bet-rồi-bị-raise không có trong lần giải này, nên không có tần suất nào được đưa ra từ đó. Loạt bài này cứ đi đến cùng một kết luận: [board liền nhau bào mòn lợi thế của người raise preflop](/vi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-vi.webp").
-- **Đừng nhầm A-high là sức mạnh.** Một phần tư range của small blind là A-high, và trên board này phần lớn chỉ có thể lên đôi (A4 và A8 có thêm sảnh hở hai đầu, còn các tay A♦x♦ có flush draw). Draw của đối thủ, khi trúng, phần lớn là sảnh — cái khác nhau không phải là cơ hội cải thiện mà là **sự cải thiện đó đáng giá bao nhiêu**. Con số equity 49,6% là kết quả.
+- **Đừng nhầm A-high là sức mạnh.** Một phần tư range của small blind là A-high, và trên board này phần lớn chỉ có thể lên đôi (A4 và A8 có thêm sảnh hở hai đầu, A3 và A9 có gutshot, còn các tay A♦x♦ có flush draw). Draw của đối thủ, khi trúng, phần lớn là sảnh — cái khác nhau không phải là cơ hội cải thiện mà là **sự cải thiện đó đáng giá bao nhiêu**. Con số equity 49,6% là kết quả.
 - **Quyết định trước sẽ làm gì sau khi check.** Đã đưa 90,4% vào check, bạn call (theo) gì và [check-raise](/vi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-vi.webp") gì trước cú bet của đối thủ mới là bài toán thật tiếp theo. ⚠ **Câu trả lời đó không có trong lần tính này** — Spot mẫu chỉ giải **hành động đầu tiên ở flop**, nên các node sau một lần check (tần suất bet của big blind, check-raise của small blind) đơn giản là không tồn tại. Nếu bạn muốn một spot mà check-raise thực sự được giải, board thấp rainbow là spot duy nhất trong loạt bài có tần suất được giải lại — **dù ghế khác** (ở đó big blind là bên call đối đầu button).
 
 :::readnext[Đọc tiếp]

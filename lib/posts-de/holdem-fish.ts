@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Was ist ein Fish beim Poker? So erkennst du einen – und stellst sicher, dass du es nicht bist",
   seoTitle: "Was ist ein Fish beim Poker – und bist du es selbst?",
   desc: "Ein Fish ist der schwache Spieler, an dem der ganze Tisch verdient. So erkennst du einen, der Shark/Whale/Nit-Slang erklärt, und wie du nicht selbst einer bist.",
-  tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
+  tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Der klassische Fish spielt zu viele Hände, callt zu viel und kann nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-10-06",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -89,7 +89,7 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 
 | Begriff | Was er bedeutet | Wie sie spielen | Wie du sie schlägst |
 |:---|:---|:---|:---|
-| **Fish** | Schwacher, verlierender Spieler (Oberbegriff) | Loose, passiv, kann nicht folden | Dünn auf Value betten, nicht bluffen |
+| **Fish** | Schwacher, verlierender Spieler (Oberbegriff) | Klassisch: loose, passiv, kann nicht folden | Dünn auf Value betten, nicht bluffen |
 | **Shark** | Starker, gewinnender Spieler | Tight-aggressiv, anpassungsfähig | Meiden – such dir weichere Tische |
 | **Whale** | Ein *reicher* Fish, der **groß** verliert | Sehr loose, hohe Stakes, ist ihm egal | Wie ein Fish, höhere Belohnung |
 | **Nit** | Extrem tight, risikoscheu | Nur Premiumhände, bluffen fast nie | Ohne sehr starke Hand auf ihre Aggression folden; ihre Blinds stehlen |
@@ -146,7 +146,7 @@ Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | VPIP (gespielte Hände) | PFR (geraiste Hände) | Der Read |
+| | VPIP (preflop gespielte Hände) | PFR (preflop geraiste Hände) | Der Read |
 |:---|:---:|:---:|:---|
 | **Solider Spieler** | 15–22% | 12–18% (nie höher als sein VPIP) | Tight, aggressiv, enge Lücke |
 | **Fish** | 40–70% | unter 10% | Loose und passiv – spielt alles, führt nichts an |
@@ -227,7 +227,7 @@ A. Alle drei meinen dieselbe Person, sie kommen nur aus verschiedenen Ecken. Am 
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Ein Fish ist der schwache Spieler, an dem jeder andere verdient** – loose, passiv und sich dessen meist nicht bewusst. Den Fish zu erkennen, ist die erste Aufgabe an jedem Tisch.
-2. **Kenne den ganzen Zoo.** Fish, Whale, Nit, Donkey und Calling Station sind nicht austauschbar – den genauen Typ deines Gegners zu benennen, sagt dir präzise, wie du ihn schlägst.
+2. **Kenne den ganzen Zoo.** Fish, Whale, Nit, Donkey und Calling Station sind nicht austauschbar – den Typ deines Gegners zu benennen – als Arbeits-Read, den du laufend aktualisierst –, sagt dir, wie du anfängst, ihn zu schlagen.
 3. **Stell sicher, dass du es nicht bist.** Ein hoher VPIP bei niedrigem PFR ist die Fish-Signatur. Wenn das du bist, sind die Fixes die einfachsten Gewinne beim Poker: weniger Hände spielen, mehr folden und aufhören, Draws ohne die passenden Pot Odds zu jagen.
 
 Der alte Spruch stimmt aus gutem Grund. Sieh dich an deinem nächsten Tisch um und finde den Fish in der ersten halben Stunde – und wenn du es ehrlich nicht kannst, ist die wertvollste Lektion, die Poker dir je erteilen wird, dass es Zeit ist, an deinem eigenen Spiel zu arbeiten. Fang mit einer engeren [Starthand-Range](/de/blog/holdem-starting-hands-chart) und einem echten Gespür für [Pot Odds](/de/blog/holdem-pot-odds) an, und lass jemand anderen die Mahlzeit sein.

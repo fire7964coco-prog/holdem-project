@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-10-11",
-  masterUpdated: "2026-09-28",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -129,7 +129,7 @@ Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung
 
 Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – einen Punkt daneben, also brauchbar). Am Turn: 9 × 2 = **18%** (wahr 19,6% – nah genug, um zu handeln).
 
-:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur garantiert, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen). Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
+:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur garantiert, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt und niemand mehr in der Hand kann noch setzen). Liegt eine Bet vor dir und kann danach noch weiter gesetzt werden, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist; ist diese Bet ein All-in und beendet dein Call das Setzen, gilt die ×4-Zahl.]:::
 
 Die größte Schwäche der Regel: **hohe Out-Zahlen am Flop.** Die exakte Zwei-Karten-Rechnung erfasst einen Treffer auf Turn *oder* River, ohne einen doppelten Treffer zweimal zu zählen. Die ×4-Schätzung liegt schon ab 7 Outs leicht zu hoch, die Lücke wächst aber mit größeren Draws; die übliche Korrektur unten gilt für mehr als 8 Outs.
 

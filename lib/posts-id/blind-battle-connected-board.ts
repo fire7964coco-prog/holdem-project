@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop 7♦6♦5♣ menghasilkan bet hanya 9,6% dan check 90,4%. Pot, stack, SPR, pilihan ukuran, dan kedua range preflop sama dengan contoh sebelumnya. Hanya tiga kartu board yang berubah, tetapi frekuensi bet turun dari 67,4% menjadi 9,6%. Keunggulan kartu tinggi opener hilang pada board rendah yang terhubung: equity berbalik menjadi 49,6% versus 50,4%, sementara EQR SB turun ke 85,3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-10-16",
-  masterUpdated: "2026-10-16",
+  updated: "2026-10-17",
+  masterUpdated: "2026-10-17",
   readTime: "10 mnt",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-id.webp",
@@ -189,7 +189,7 @@ Bet 9,6% tersusun dari sedikit value dan beberapa draw. Kelas 8-8 berada di punc
 
 - **Hindari aturan otomatis "blind vs blind berarti bet".** Perbedaan 67,4% pada contoh sebelumnya dan 9,6% di sini datang dari board, sementara peran tetap sama. Sesudah open SB, flop rendah yang terhubung di sekitar 5, 6, 7, dan 8 dapat lebih mendukung range caller.
 - **Overpair bukan alasan tunggal untuk membesarkan pot.** SB mempunyai 42 combo overpair, tiga setengah kali jumlah BB, tetapi BB juga mempunyai 42 combo yang sudah mengalahkan overpair. Jangan merencanakan dua atau tiga barrel menuju seluruh stack hanya berdasarkan nama kategori hand. Bet kecil sekali masih dapat menjadi pilihan. ⚠ Berhati-hati soal stack juga tidak berarti harus langsung fold terhadap raise. Range BB memiliki 24,9% OESD, 23,8% gutshot, dan 3,7% combo draw; range raise yang seimbang dapat memuat bluff. Auto-fold overpair terhadap lawan yang banyak draw bisa dimanfaatkan. **Menolak bermain untuk seluruh stack dan memilih fold adalah keputusan berbeda.** Node bet lalu raise tidak tersedia dalam perhitungan ini, sehingga frekuensi responsnya tidak diketahui. Pola bahwa [board terhubung mengurangi keunggulan agresor preflop](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp") juga muncul pada contoh lain dalam seri.
-- **Jangan menganggap Ace-High selalu kuat.** Sekitar seperempat range SB masuk kategori ini. Ace-High **tanpa draw langsung** terutama berharap membuat pair, sedangkan draw lawan, jika lengkap, sebagian besar menjadi straight. Nilai peningkatannya berbeda. Namun, sebagian Ace-High seperti A4 atau A8 mempunyai OESD pada 7-6-5, dan hand A♦x♦ mempunyai flush draw, sehingga tidak boleh disamakan dengan hand yang hanya mempunyai kartu tinggi. Equity keseluruhan SB pada contoh ini adalah 49,6%.
+- **Jangan menganggap Ace-High selalu kuat.** Sekitar seperempat range SB masuk kategori ini. Ace-High **tanpa draw langsung** terutama berharap membuat pair, sedangkan draw lawan, jika lengkap, sebagian besar menjadi straight. Nilai peningkatannya berbeda. Namun, sebagian Ace-High seperti A4 atau A8 mempunyai OESD pada 7-6-5, A3 dan A9 mempunyai gutshot, dan hand A♦x♦ mempunyai flush draw, sehingga tidak boleh disamakan dengan hand yang hanya mempunyai kartu tinggi. Equity keseluruhan SB pada contoh ini adalah 49,6%.
 - **Siapkan rencana setelah check.** Ketika 90,4% range memilih check, keputusan call atau [check-raise](/id/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-id.webp") terhadap bet lawan menjadi langkah berikutnya. ⚠ **Jawabannya tidak tersedia dalam hasil contoh ini.** Hasil prahitung hanya menampilkan **aksi pertama flop**, tanpa frekuensi bet BB setelah check maupun check-raise SB. Contoh board rendah rainbow dalam seri memiliki frekuensi check-raise dari perhitungan lanjutan yang terpisah, tetapi **perannya berbeda**: di sana BB adalah caller yang menghadapi BTN.
 
 :::readnext[Lanjut membaca]

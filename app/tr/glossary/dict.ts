@@ -54,7 +54,7 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-Bet", cat: "Action", desc: "Açılıştan sonraki re-raise. Blind'lar 1. bahis, açılış raise'i 2. bahistir; yani re-raise 3-bet'tir (ilk raise değil).", aka: ["3bet", "three-bet", "3-bet nedir"] },
+    { term: "3-Bet", cat: "Action", desc: "Preflop'ta açılıştan sonraki re-raise. Blind'lar 1. bahis, açılış raise'i 2. bahistir; yani re-raise 3-bet'tir (ilk raise değil).", aka: ["3bet", "three-bet", "3-bet nedir"] },
     { term: "All-in", cat: "Action", desc: "Tüm çiplerini ortaya sürmek; potun yalnızca karşılayabildiğin kısmını kazanabilirsin.", aka: ["allin", "jam", "shove", "hepsi ortaya", "rest", "rest çekmek"] },
     { term: "Ante", cat: "Action", desc: "Geleneksel olarak potu başlatmak için herkesten alınan, blind'lardan ayrı zorunlu bahis — bugün çoğu turnuva, tek bir koltuğun ödediği big blind ante kullanır.", aka: ["big blind ante", "bb ante"] },
     { term: "Backdoor", cat: "Board", desc: "İki kartın art arda gelmesine (turn ve river) ihtiyaç duyan draw.", aka: ["runner-runner", "backdoor draw"] },

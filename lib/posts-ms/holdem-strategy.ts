@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker strategy yang menang bukan senarai tip, tetapi lima soalan yang berulang setiap tangan: di mana anda duduk, adakah tangan ini berbaloi dimainkan, raise atau fold, perlukah terus bet pada flop, dan bila perlu fold. Pemain tight-aggressive yang menjawabnya dengan baik fold kira-kira 80% tangan preflop dan bermain agresif apabila masuk pot.",
   category: "strategy",
   date: "2026-09-27",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -82,7 +82,7 @@ Berapa banyak "kebanyakan"? Pemula [tight-aggressive](/ms/blog/holdem-starting-h
 
 Tangan mana yang layak dimainkan bergantung pada posisi anda (Keputusan 1 menentukan Keputusan 2), tetapi ini peraturan mudah untuk bermula:
 
-- **Sentiasa raise:** pasangan besar (A‑A hingga T‑T), dan A‑K.
+- **Sentiasa raise apabila anda masuk pertama dengan stack biasa (~100bb):** pasangan besar (A‑A hingga T‑T), dan A‑K.
 - **Biasanya raise:** pasangan sederhana, A‑Q, dan broadway suited yang kuat (K‑Q, A‑J suited) — lebih bebas semakin lewat tempat duduk anda.
 - **Spekulatif, bergantung pada posisi:** pocket pair kecil dan suited connector, yang mahukan pot multiway yang murah (lebih lanjut tentang matematiknya di bawah).
 - **Fold:** hampir semua yang lain, terutamanya tangan sampah offsuit seperti J‑4, Q‑7, K‑3.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para acima de 97% nos três boards que resolvemos) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-10-13",
+  updated: "2026-10-17",
   // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
   masterUpdated: "2026-10-06",
@@ -196,7 +196,7 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 
 | Situação | Frequência aproximada de c-bet | Nota |
 |:---|:---:|:---|
-| **Em posição, heads-up, dry board** | **70–100%** (pequeno) | Clássica "range bet" — aposte quase tudo, minúsculo |
+| **Em posição, heads-up, dry board K-high ou Q-high** | **70%+** (pequeno) | Clássica "range bet" — aposte a maior parte do seu range, minúsculo. Dry boards **A-high** recebem bem menos apostas (A♥7♦2♣ 59,0% na tabela do solver acima) |
 | **Em posição, heads-up, wet board** | **~50–60%** | Mais polarizado — valor e draws apostam, nada dá check |
 | **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte: acima de 97% nos três boards que resolvemos, quase tudo em dois terços do pote no Q♥T♥7♠ e no 8♦5♣2♠, mas sobretudo em um terço do pote no A♦K♠2♥ (57,8%); veja o [guia de posições](/pt/blog/holdem-position-play) |
 | **Multiway (2 adversários)** | **~50% ou menos** | Alguém provavelmente conectou — aperte |
@@ -263,7 +263,7 @@ Atrasar transforma uma situação em que uma c-bet automática teria sangrado fi
 
 Vamos deixar o "não" explícito, porque é onde o dinheiro é economizado:
 
-- **O board acertou em cheio o range do seu adversário.** Um flop 7‑6‑5 ou 9‑8‑7 acerta as mãos que pagam um raise muito mais forte do que acerta as suas. Apostar aqui com a maior parte do seu range é só doar fichas — dê check com muito mais frequência e, quando apostar, aposte grande e seletivo.
+- **O board acertou em cheio o range do seu adversário.** Um flop 7‑6‑5 ou 9‑8‑7 acerta as mãos que pagam um raise muito mais forte do que acerta as suas. Dar c-bet aqui no piloto automático é só doar fichas — dê check com uma parte muito maior do seu range do que em K‑7‑2 e, quando apostar, aposte grande e seletivo.
 - **Seu adversário simplesmente não folda.** Contra quem paga qualquer aposta, o c-bet de blefe vira doação — corte os blefes, e aposte maior por valor quando tiver a mão.
 - **Você está fora de posição num board dinâmico** com uma mão marginal. Agindo primeiro sem informação, mantenha o pote pequeno e dê check.
 - **Você está multiway com nada.** Coberto acima — quase sem fold equity, então sem aposta.
@@ -326,7 +326,7 @@ A. Não — este é o erro de c-bet mais comum. Aposte nos flops que favorecem o
 
 **Q. Com que frequência você deve dar c-bet?**
 
-A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70–100% (num tamanho pequeno) em posição heads-up num dry board, em torno de 30–45% fora de posição como raiser num pote de um aumento só (mais alto quando você é o 3-bettor), e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
+A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70% ou mais (num tamanho pequeno) em posição heads-up num dry board K-high ou Q-high (dry boards A-high recebem bem menos apostas), em torno de 30–45% fora de posição como raiser num pote de um aumento só (mais alto quando você é o 3-bettor), e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
 
 **Q. Quanto você deve apostar na c-bet?**
 
