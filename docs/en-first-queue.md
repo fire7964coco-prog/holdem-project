@@ -1397,6 +1397,39 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | CM-ⓔ 통지 | glossary Showdown aka «apertura delle carte» 검색 키가 오픈 베팅과 겹침 | 검색 키 판단 | 🪶 판단 대상 |
 | CM-ⓕ 통지 | 언어북 «검수장 추가» 절(Seed = seme / seme iniziale) `02cc1109` | 이미 main에 있음 | ACK 종결 |
 
+### 2-CN. 우편함 수신분 — MA-590 ①~⑭ + 통지 ⓐ(EN 원장 손질 배치 1·2 본부 재검증) · MA-604 지적으로 등재 2026-10-17 (회신 누락분)
+
+근거 `홀덤검수/reports/검수-enfix-본부재검증-배치2-2026-10-16/HQ-REPORT.md` · `…배치1-2026-10-16/HQ-REPORT.md`(동문 목록). 기준 본체 `0768787a`. ⑮ = MB-365 이행·MA-597 OK 종결 · 통지 ⓑ = CL-ⓐ로 종결. 검수장 문안 창작 없음 — 정정 방향만. **§2-CL과 같은 «EN 손질 회차»에서 함께 이행**한다.
+
+| # | 자리 (EN) | 정정 방향 | 동문 | 처리 |
+|---|---|---|---|---|
+| CN-1 🔴 | probability L193 «Rarity is the whole reason it sits at the top» | 로열 최상위 이유 = SF 안 카드 높이(A-high SF) | 12 | ▶ EN 손질 회차 |
+| CN-2 🔴 | low-board-check-raise L363 «only a private home game might still have its own house rule» | 룰북 «permitted unless otherwise posted» → 업장 게시 예외 한정 | 10 | ▶ |
+| CN-3 | continuation-bet L196 표·FAQ «IP, heads-up, dry board 70–100%» | 보드 높이 한정(A하이 드라이 34.5–57.2% · K·Q하이만 70%+) | 12(+es 반복) | ▶ |
+| CN-4 | continuation-bet «Betting here with most of your range just donates chips» | 보드·무늬 한정(765r 벳 53.3%) | 12 | ▶ |
+| CN-5 | outs «If there's a bet in front of you, use the ×2» | 그 벳이 올인이면 ×4 예외 | 10 | ▶ |
+| CN-6 | limping «out of position to almost the whole field» | 뒤 좌석 잔류 한정(블라인드만 남으면 IP) | 10 | ▶ |
+| CN-7 | starting-hands-chart 캡션 «Weak aces … fold them preflop» | offsuit 한정 | 10 | ▶ |
+| CN-8 | when-to-fold «your second pair … your draw … turns to release» | 가격·상대 조건 한정 | 10 | ▶ |
+| CN-9 | when-to-fold L112·L117 «wins a stack when it does — call» | 가격·잔여 스택 한정 | 9 + zh-hant 변형 | ▶ |
+| CN-10 | texas-holdem-rules-for-beginners L278 «Every position, every stack — … re-raise over a single raise» | 레이즈 불가 스택 예외(같은 글 L423 «all-in for less») · 결함 작음 | 24 | ▶ (우선순위 낮음) |
+| CN-11 | blind-battle-connected-board L279 «(A4 and A8 pick up open-enders …)» | A3·A9 거트샷 누락 보충 | 11 + ko | ▶ |
+| CN-12 | strategy L82 «Always raise: big pairs … and A‑K» | first-in·정상 깊이 한정(같은 글 L103) | 대조 미실시 → 회차 때 grep | ▶ |
+| CN-13 | fish L8 tldr «Fish play too many hands, call too much, and can't fold» | loose-passive(classic) 한정(L38 umbrella · L100 TAG fish) | 대조 미실시 | ▶ |
+| CN-14 | fish L83 표 Fish 행 «Loose, passive, can't fold · don't bluff» | CN-13과 같음 | 대조 미실시 | ▶ |
+| CN-ⓐ 통지 | a-high «can differ slightly» — 형제 11편은 «can differ» | `81250caf` 삭제 누락 후보 → EN 맞춤 | — | ▶ (같은 회차) |
+
+- 합치면 EN 손질 회차 = CL-1~8 + CN-1~14 + CN-ⓐ(EN 23자리 → 동문 로케일 약 230자리). 회차를 둘로 쪼갤 경우 🔴 2자리(CN-1·2) 먼저.
+
+### 2-CO. 우편함 수신분 — MA-603(MB-369 pl 도구 5 판정 · WRONG 1 · RISKY 5 · 문면 오류 10종) · 등재·이행 2026-10-17 (MB-370)
+
+요청 ①②③ 전부 이행(MB-370). 아래는 «통지(선택)» 중 EN 동형·판단 대상만 남긴 것.
+
+| # | 자리 | 방향 | 처리 |
+|---|---|---|---|
+| CO-ⓐ EN 동형 | hand-chart «GTO open ranges» · quiz DESCRIPTION 6-max만 · hand-chart «Exact … any hand» · 대회 카드 «Invitation only»(초대권 = 티켓) · calc L975 43,6% ↔ 재현 43,5%(미확인) | EN 원장 판단 | 🪶 EN-먼저 |
+| CO-ⓑ pl 어색 | connectors L273·414 · hand-chart L41 re-raise · glossary downswings·mucking · «Zakres otwarcia {pos}» 콜론 · aria L130 · «percentage points» ↔ «pp» 혼용 · 정본 미확인 영어 UI 약 12(Amount to call 등) · «zasada 2 i 4» ↔ «4 i 2»(dict L991·998·1348) · quiz «Sprawdź odpowiedź» call 오독 · 제목 «Quiz poker» · 4자리 «1326» ↔ «1 326» | 언어북 규칙 ③~⑤로 다음 pl 도구 손질 때 | 🪶 판단 대상 |
+
 
  (로케일 전파 전에 EN을 먼저 재야 한다)
 

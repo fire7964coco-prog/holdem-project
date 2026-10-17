@@ -158,7 +158,7 @@
 | Flop | Flop | flop | [PokerListings PL][pl-calc] · «Flop» | 기존 결정 승계. |
 | Turn | Turn | turn | [PokerListings PL][pl-calc] · «Turn» | 기존 결정 승계. |
 | River | River | river | [PokerListings PL][pl-calc] · «River» | 기존 결정 승계. |
-| Street | Street | street | [PokerStrategy PL][pl-street] · «Street» | 원문 전문어 확인. 기계식 ulica 직역을 새 기본값으로 만들지 않음. |
+| Street | Street | street | [PokerStrategy PL][pl-street] · «Street» | 원문 전문어 확인. 기계식 ulica 직역을 새 기본값으로 만들지 않음. **남성 굴절**(아래 «굴절·수 일치 규칙» ①). |
 | Board | Board | board | [GGPoker PL][pl-gg] · «Board» | 짧은 전문 UI. 설명에서는 기존 karty wspólne 사용 가능하되 개별 카드와 보드 구별. |
 | Hole cards | Karty zakryte | karty zakryte | [GGPoker PL][pl-gg] · «Karty zakryte» | 기존 결정 승계. 개인 카드와 보드 구별. |
 | Your hand | Twoja ręka | twoja ręka | [PokerwPolsce][pl-calc-pl] · «Twoja ręka» | ty체. 족보 결과를 뜻하는 układ와 구별. |
@@ -325,6 +325,14 @@
 | Great / good / fair / poor / very poor | Great / Good / Fair / Poor / Very poor | great / good / fair / poor / very poor | 미확인 | 계산기 outs.verdict의 확률대 평가. Trainer EV 등급과 별개. |
 | Best play / acceptable / review this spot | Best play / Acceptable / Review this spot | best play / acceptable / review this spot | 미확인 | TrainerPage의 EV 기반 등급. Correct/Incorrect로 치환하지 않음. |
 | Leak finder | Leak Finder | Leak Finder | 미확인 | TrainerPage의 약점 분석 기능명. 단순 시스템 오류 의미 아님. |
+
+### 굴절·수 일치 규칙 (2026-10-17 · 검수장 MA-603 제안 반영)
+
+1. **street = 남성 명사로 굴절한다.** ten street · na każdym streecie · na streecie z zakładem · kolejne streety · jeden lub dwa streety · na późniejszych streetach · z wcześniejszego streeta(단수 생격). 여성·무굴절(«na każdej street») 금지. 거리 행 위치 표현은 na flopie · na turnie · na riverze · przed flopem.
+2. **«영어 유지» ≠ 굴절 금지.** 영어 낱말을 그대로 써도 폴란드어 격어미는 붙인다 — solvera(선례) · set miningu · tripsa · pierwszy re-raise(남성) · connectorów.
+3. **percentage points** — 같은 화면에서 «pp»로 통일하거나 punkt procentowy(punkty procentowe)로 풀어 쓴다. 한 페이지 안에서 두 꼴을 섞지 않는다.
+4. **숫자를 받는 템플릿**은 1 / 2–4(12–14 제외) / 5+ 세 갈래로 분기하거나, 분기가 안 되는 자리는 «라벨: {n}» 꼴로 쓴다(예: «Rąk: {n}» · «(outy: {n})» · 동사 pasuje/pasują).
+5. **Zasada 2 i 4** 순서를 고정한다(«4 i 2» 금지). **Amount to call = Kwota sprawdzenia**(pl glossary 용례).
 
 ### 쟁점(사람 판단 필요)
 

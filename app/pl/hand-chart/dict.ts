@@ -18,7 +18,7 @@ export const HAND_CHART_DICT_PL: HandChartDict = {
   filter: {
     caption: "Wybierz pozycję → podświetlą się grywalne ręce",
     basisNote: ["Procent przy każdej pozycji oznacza ", { b: "udział w 169 typach rąk" }, " (procent combo jest również w tabeli poniżej)"],
-    showAll: "Pokaż wszystko", selected: "Zakres otwarcia {pos} · {count} / 169 ({pct}%)", handsCount: "{n} rąk",
+    showAll: "Pokaż wszystko", selected: "Zakres otwarcia {pos} · {count} / 169 ({pct}%)", handsCount: "Rąk: {n}",
   },
   positions: ["Under the gun (UTG)", "Hijack (HJ)", "Cutoff (CO)", "Button (BTN)", "Mały blind (SB)"],
   typePct: "~{n}",

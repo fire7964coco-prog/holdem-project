@@ -7,7 +7,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
 // Italian structure; Polish head terms: docs/keyword-bank/pl-tools.md section 4.
 const TITLE = "Quiz poker: trenuj equity i decyzje | HoldemMaster";
 const DESCRIPTION =
-  "Trening pokerowy bez znajomości kart rywali: oszacuj equity, wybierz sprawdzenie lub pas i analizuj kolejne street z pot odds od flopa.";
+  "Trening pokerowy bez znajomości kart rywali: oszacuj equity, wybierz sprawdzenie lub pas i analizuj kolejne streety z pot odds od flopa.";
 const OG_DESCRIPTION =
   "Oszacuj equity bez znajomości kart przeciwników. Przeanalizuj rozdanie i sprawdź, kiedy należało spasować.";
 
@@ -51,7 +51,7 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "Rozdania przy stołach 6-max lub 9-osobowych (2–6 graczy na flopie), z ukrytymi kartami przeciwników",
-        "Twoje equity na każdej street",
+        "Twoje equity na każdym streecie",
         "Pot odds i potrzebne equity od flopa",
         "Analiza po rozdaniu: kiedy należało spasować",
       ],
@@ -60,7 +60,7 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Strona główna", item: `${SITE}/it` },
+        { "@type": "ListItem", position: 1, name: "Strona główna", item: `${SITE}/pl` },
         { "@type": "ListItem", position: 2, name: "Quiz poker", item: `${SITE}/pl/win-rate-quiz` },
       ],
     },

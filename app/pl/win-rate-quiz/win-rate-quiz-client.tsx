@@ -7,6 +7,9 @@ import { ANTE, STACK, SAMPLES } from "../../win-rate-quiz/_engine";
 // Italian page structure; copy translated from EN. Terms: docs/translation-terms-pl.md.
 const n = (x: number) => x.toLocaleString("pl-PL", { useGrouping: true }).replace(/[\u00a0\u202f]/g, " ");
 const dec = (x: string) => x.replace(".", ",");
+// 2–4, 22–24 … (bez 12–14) biorą liczbę mnogą czasownika
+const few = (k: number) => k % 10 >= 2 && k % 10 <= 4 && (k % 100 < 12 || k % 100 > 14);
+const PL_STREET_AT: Record<string, string> = { Preflop: "przed flopem", Flop: "na flopie", Turn: "na turnie", River: "na riverze" };
 
 const PL_NAMES: HandNames = {
   categories: ["Najwyższa karta", "Para", "Dwie pary", "Trójka", "Strit", "Kolor", "Full", "Kareta", "Poker (straight flush)"],
@@ -73,7 +76,7 @@ const PL_UI: QuizUI = {
   reviewTitle: "📋 Analiza — kiedy należało spasować?",
   reviewCols: ["Street", "Twoje equity", "Potrzebne", "Ocena"],
   reviewNoMistake: "✅ Sprawdzenie było poprawne do samego końca.",
-  reviewMistake: (street) => `⚠️ Już na etapie ${street.toLowerCase()} pas był poprawną decyzją. To był moment, by wycofać się z rozdania.`,
+  reviewMistake: (street) => `⚠️ Już ${PL_STREET_AT[street] ?? street} pas był poprawną decyzją. To był moment, by wycofać się z rozdania.`,
   reviewInvested: (invested, pot) => `Wpłacone żetony: ${n(invested)} · końcowa pula: ${n(pot)}`,
 
   formulaTitle: "📐 Skąd bierze się ta wartość",
@@ -81,10 +84,10 @@ const PL_UI: QuizUI = {
   outsBreak: (o, both) => [
     o.flush > 0 ? `${o.flush} do koloru` : "",
     o.straight > 0 ? `${o.straight} do strita` : "",
-    o.set > 0 ? `${o.set} do seta lub trips` : "",
+    o.set > 0 ? `${o.set} do seta lub tripsa` : "",
     o.twoPair > 0 ? `${o.twoPair} do dwóch par` : "",
     o.over > 0 ? `${o.over} do sparowania overcard` : "",
-    both > 0 ? `${both} pasuje do dwóch kategorii (liczone tylko raz)` : "",
+    both > 0 ? `${both} ${few(both) ? "pasują" : "pasuje"} do dwóch kategorii (liczone tylko raz)` : "",
   ].filter(Boolean).join(" · "),
   hitLabel: "Szansa trafienia jednej z tych kart (zasada 2 i 4)",
   winLabel2: "Twoje equity w puli (szacowane — remis liczy się jako twój udział w podziale puli)",
@@ -96,7 +99,7 @@ const PL_UI: QuizUI = {
     : `Nie masz żadnego z outów liczonych przez to narzędzie: żadna karta nie uzupełnia koloru lub strita ani nie podnosi kategorii twojej ręki do seta, dwóch par lub pary z overcard. Skrót „outy × 2/4” nie ma tu zastosowania. Equity powyżej pochodzi z ${k} prób przeciwko wszystkim rękom zgodnym z zaobserwowanymi akcjami.`,
   foldWinNote: "Wszyscy przeciwnicy spasowali, więc pula jest twoja. Powyższe 100% to wynik tego rozdania, a nie szacunek.",
   riverNote: "To river — nie ma już kart do rozdania i skrót „outy × 2/4” nie ma zastosowania. Equity powyżej porównuje twoją końcową rękę ze wszystkimi rękami zgodnymi z zaobserwowanymi akcjami.",
-  chartTitle: "📈 Equity na kolejnych street — wszystkie karty odkryte",
+  chartTitle: "📈 Equity na kolejnych streetach — wszystkie karty odkryte",
   resultTabs: ["📋 Analiza", "📈 Wykres", "🃏 Obliczenia"],
   solverTitle: (info) => info.kind === "spot" ? "Zobacz ten spot w solverze GTO" : info.kind === "notReady" ? "Zobacz podobny spot w solverze GTO" : "Zobacz spot heads-up w solverze GTO",
   solverOpen: "Otwórz Flop study w solverze (po angielsku)",
@@ -115,7 +118,7 @@ const PL_UI: QuizUI = {
   fmtNum: n,
   decimalComma: true,
   chartRangeLegend: "To, co widzisz",
-  chartNote: "Linie ciągłe pokazują equity każdej pozycji przy wszystkich odkrytych rękach; linia przerywana pokazuje equity widoczne bez znajomości kart przeciwników. Linia gracza, który spasował, kończy się na street poprzedzającej pas.",
+  chartNote: "Linie ciągłe pokazują equity każdej pozycji przy wszystkich odkrytych rękach; linia przerywana pokazuje equity widoczne bez znajomości kart przeciwników. Linia gracza, który spasował, kończy się na streecie poprzedzającym pas.",
   quizToggle: "🎯 Quiz",
   quizGuessTitle: "Jakie jest twoje equity?",
   quizGuessHint: "Ustaw swoje oszacowanie suwakiem",
@@ -157,7 +160,7 @@ const PL_UI: QuizUI = {
   rangeTitle: "Zakres przeciwnika — ręce zgodne z dotychczasowymi akcjami",
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combo → teraz ${cur} combo (pozostało ${pct}%)`,
   rangeLegend: ["Nadal w zakresie (ciemniej = większy pozostały udział)", "Wykluczone przez akcje", "Nigdy w zakresie", "Rzeczywista ręka", "Zablokowane przez twoją rękę lub board"],
-  rangeNote: "Punktem wyjścia jest zakres preflop dla danej pozycji. Na każdej street usuwa się ręce, które według reguł przeciwnika wykonałyby inną akcję. Equity powyżej korzysta z tego samego zakresu. Combo zawierające kartę z twojej ręki lub boardu są wykluczone.",
+  rangeNote: "Punktem wyjścia jest zakres preflop dla danej pozycji. Na każdym streecie usuwa się ręce, które według reguł przeciwnika wykonałyby inną akcję. Equity powyżej korzysta z tego samego zakresu. Combo zawierające kartę z twojej ręki lub boardu są wykluczone.",
   quizKinds: ["Oszacuj equity i zdecyduj", "Tylko decyzje (sprawdzić czy spasować?)"],
   decideTitle: "Sprawdzić czy spasować?",
   decideHint: "Wybierz sprawdzenie lub pas bez oglądania ich kart. Nawet jeśli spasujesz, rozdanie trwa do końca. Ten tryb nie jest wliczany do statystyk quizu.",
@@ -196,9 +199,9 @@ const PL_UI: QuizUI = {
         {style === "aggressive" && "Każde przebicie w stylu Agresywny, w tym semibluffy i blefy, wynosi 150% puli. "}
         Gdy ktoś przebija, wszyscy pozostali gracze sprawdzają to przebicie. Zakład większy niż pozostały stack jest ograniczany do all-in.
         Po all-in nikt już nie pasuje — rozdawany jest pozostały board i następuje showdown. Nie ma check-raise: każdy przeciwnik wykonuje jedną akcję
-        na street, bez etapu, w którym czeka, a potem ponownie odpowiada. Na street po flopie z zakładem etykiety pozycji podsumowują tę street:
+        na każdym streecie, bez etapu, w którym czeka, a potem ponownie odpowiada. Na streetach po flopie z zakładem etykiety pozycji podsumowują dany street:
         pozycja ustalająca kwotę pokazuje „Zakład”, a pozostali przeciwnicy w grze „Sprawdzenie”, niezależnie od kolejności
-        (preflop etykiety pokazują sposób wejścia do puli, a pozycja all-in z wcześniejszej street pokazuje All-in).
+        (preflop etykiety pokazują sposób wejścia do puli, a pozycja all-in z wcześniejszego streeta pokazuje All-in).
         Ty nigdy tu nie stawiasz — tylko sprawdzasz aż do rivera. Zakresy preflop poniżej są takie same dla wszystkich stylów.
       </p>
       <p className="mb-2">
@@ -235,8 +238,8 @@ const PL_UI: QuizUI = {
       </p>
       <p className="mt-2">
         <b className="text-foreground">🎯 Po włączeniu quizu</b> equity i ocena są ukryte, dopóki nie odpowiesz. W trybie „Oszacuj equity i zdecyduj”
-        szacujesz equity na każdej street, a gdy ktoś stawia zakład, wybierasz też sprawdzenie lub pas. W trybie „Tylko decyzje (sprawdzić czy spasować?)”
-        wybierasz tylko sprawdzenie lub pas na street z zakładem, bez szacowania equity; ten tryb nie trafia do statystyk quizu.
+        szacujesz equity na każdym streecie, a gdy ktoś stawia zakład, wybierasz też sprawdzenie lub pas. W trybie „Tylko decyzje (sprawdzić czy spasować?)”
+        wybierasz tylko sprawdzenie lub pas na streecie z zakładem, bez szacowania equity; ten tryb nie trafia do statystyk quizu.
         Odpowiedzią jest „Twoje equity” powyżej, liczone bez znajomości kart przeciwników. Każde oszacowanie daje{" "}
         <b className="text-foreground">100 − 4 × błąd (w percentage points)</b> punktów, zaokrąglonych do liczby całkowitej i nigdy poniżej zera
         (zero od błędu 25 percentage points). Decyzja sprawdzenie/pas jest poprawna, jeśli zgadza się z oceną pot odds. Sumy są zapisywane w tej przeglądarce;
@@ -246,7 +249,7 @@ const PL_UI: QuizUI = {
         <b className="text-foreground">✍️ Ustaw rozdanie</b> pozwala wybrać pozycję, karty zakryte i board, aby odtworzyć rozegraną rękę.
         Puste pola są uzupełniane losowo. Nie możesz wybrać kart przeciwników — przy prawdziwym stole też ich nie znasz.
         Nadal pochodzą one z zakresów dla pozycji, a equity zachowuje założenie nieznanych kart. Nawet jeśli ustawisz cały board z góry,
-        equity na każdej street używa tylko kart rozdanych do tego momentu. Ustawione rozdania nie trafiają do historii quizu, bo powtarzanie tej samej ręki pozwala zapamiętać odpowiedzi.
+        equity na każdym streecie używa tylko kart rozdanych do tego momentu. Ustawione rozdania nie trafiają do historii quizu, bo powtarzanie tej samej ręki pozwala zapamiętać odpowiedzi.
       </p>
     </>
   ),

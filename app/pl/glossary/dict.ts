@@ -24,7 +24,7 @@ export const GLOSSARY_DICT_PL: GlossaryDict = {
     ],
   },
   terms: [
-    { term: "3-bet", aka: ["3-Bet"], cat: "Action", desc: "Pierwsze re-raise w rozdaniu. Duży blind liczy się jako pierwszy zakład, a open raise jako drugi, więc re-raise to 3-bet. Sygnalizuje bardzo silną rękę — albo blef." },
+    { term: "3-bet", aka: ["3-Bet"], cat: "Action", desc: "Pierwszy re-raise w rozdaniu. Duży blind liczy się jako pierwszy zakład, a open raise jako drugi, więc re-raise to 3-bet. Sygnalizuje bardzo silną rękę — albo blef." },
     { term: "All-in", cat: "Action", desc: "Postawienie całego stacka jednym ruchem. Po all-inie nie możesz już stawiać, a jeśli przeciwnicy mają jeszcze żetony, powstaje pula boczna." },
     { term: "Ante", cat: "Action", desc: "Mały obowiązkowy zakład przed rozdaniem, który buduje pulę — wpłacany przez każdego gracza albo tylko przez dużego blinda w formacie big blind ante. Częsty na późniejszych poziomach turnieju, w odróżnieniu od blindów, które zwykle wpłacają tylko dwaj gracze." },
     { term: "Backdoor", cat: "Board", desc: "Draw wymagający zarówno turna, jak i rivera do skompletowania — na przykład backdoor flush, gdy na flopie dochodzi tylko jedna karta twojego koloru." },

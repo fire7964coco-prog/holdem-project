@@ -1704,7 +1704,7 @@ const pl: BoardStrings = {
     },
     {
       q: "Czy do każdego turnieju wystarczy opłacić wpisowe?",
-      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: nie ma satelitów, a same pieniądze nie zapewniają miejsca. Holdem Masters w Korei Południowej wymaga zaproszenia i nie oferuje wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), przed harmonogramem otwartym dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
+      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: nie ma satelitów, a same pieniądze nie zapewniają miejsca. Do Holdem Masters w Korei Południowej wchodzi się wyłącznie z biletem zaproszeniowym — nie ma wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), przed harmonogramem otwartym dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
     },
     {
       q: "Ile wynosi wpisowe?",
@@ -3196,8 +3196,8 @@ const FIELD_PL: Record<string, string> = {
   "무료": "Bezpłatnie",
   "새틀라이트 티켓 전용": "Tylko bilety z satelitów",
   "참가권(SEAT) 전용": "Tylko bilety wstępu (seat)",
-  "초대권 전용": "Tylko na zaproszenie",
-  "초대권 전용 (현금 바이인 없음)": "Tylko na zaproszenie (bez wpisowego za gotówkę)",
+  "초대권 전용": "Tylko z biletem zaproszeniowym",
+  "초대권 전용 (현금 바이인 없음)": "Tylko z biletem zaproszeniowym (bez wpisowego za gotówkę)",
   "메인 ₩150만": "Main Event ₩1,5 mln",
   "메인 ₩220만": "Main Event ₩2,2 mln",
   "메인 ₩230만": "Main Event ₩2,3 mln",
@@ -3228,7 +3228,7 @@ const CITY_PL: Record<string, string> = {
   Rome: "Rzym", Florence: "Florencja", Milan: "Mediolan", Venice: "Wenecja", Vilnius: "Wilno", Bratislava: "Bratysława",
 };
 const SCHEMA_DESC_PL: Record<string, string> = {
-  "holdem-masters-9": "9. edycja Holdem Masters: łącznie ₩2,4 mld gwarantowane (WPL Main Event ₩2 mld + Mini Main Event ₩400 mln), 30 flight Dnia 1 od 11 października do 9 grudnia i finał 13 grudnia. Udział tylko na zaproszenie.",
+  "holdem-masters-9": "9. edycja Holdem Masters: łącznie ₩2,4 mld gwarantowane (WPL Main Event ₩2 mld + Mini Main Event ₩400 mln), 30 flightów Dnia 1 od 11 października do 9 grudnia i finał 13 grudnia. Udział tylko z biletem zaproszeniowym.",
   "wpt-seoul": "Pierwsze wydarzenie World Poker Tour w INSPIRE Entertainment Resort: 45 turniejów, z ₩1 mld gwarantowanym w Main Evencie.",
 };
 const MONTH_PL = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];

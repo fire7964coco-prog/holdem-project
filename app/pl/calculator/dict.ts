@@ -15,7 +15,7 @@ export const CALC_DICT_PL: CalcDict = {
     ],
     "h1": "Kalkulator pokerowy",
     "h1Sub": "Equity, ICM i pot odds w jednym miejscu",
-    "lead": "Wprowadź dwie ręce i sprawdź, kto wygrywa — potem oblicz pot odds, outy, deale ICM, SPR, turniejowe M i zakresy push/fold. Dziewięć bezpłatnych kalkulatorów Hold’em z exact enumeration na każdej street, na której obliczenia są dostatecznie szybkie.",
+    "lead": "Wprowadź dwie ręce i sprawdź, kto wygrywa — potem oblicz pot odds, outy, deale ICM, SPR, turniejowe M i zakresy push/fold. Dziewięć bezpłatnych kalkulatorów Hold’em z exact enumeration na każdym streecie, na którym obliczenia są dostatecznie szybkie.",
     "chips": [
       "🎲 Equity",
       "🎯 Outy",
@@ -50,7 +50,7 @@ export const CALC_DICT_PL: CalcDict = {
     "exactNote": "Exact — sprawdzono wszystkie możliwe runouty: {n}.",
     "mcNote": "Monte Carlo — {n} losowych runoutów; wyniki różnią się o około ±0,3 pp między obliczeniami.",
     "winner": "{p} wygrywa z układem {hand}",
-    "chop": "Podział puli — {n} rąk dzieli pulę z układem {hand}",
+    "chop": "Podział puli — liczba rąk: {n} · układ: {hand}",
     "showdownNote": "Showdown — board jest kompletny, więc to wynik końcowy.",
     "presets": [
       {
@@ -172,7 +172,7 @@ export const CALC_DICT_PL: CalcDict = {
         "desc": "9 na kolor + 8 na strita (2 wspólne)"
       }
     ],
-    "outsSuffix": " ({n} outów)",
+    "outsSuffix": " (outy: {n})",
     "street": "Street",
     "afterFlopBtn": "🃏 Flop → river",
     "afterTurnBtn": "🔄 Turn → river",
@@ -315,7 +315,7 @@ export const CALC_DICT_PL: CalcDict = {
         "action": "Przebijaj first in na LP; poza tym tylko pule multiway przy głębokich stackach"
       },
       "33": {
-        "desc": "Wymaga set mining; ręka spekulacyjna",
+        "desc": "Wymaga set miningu; ręka spekulacyjna",
         "action": "Przebijaj first in na LP; poza tym tylko pule multiway przy głębokich stackach"
       },
       "44": {
@@ -331,7 +331,7 @@ export const CALC_DICT_PL: CalcDict = {
         "action": "Przebijaj first in na LP; sprawdzaj przebicie, gdy ty i przebijający macie po co najmniej ~15× kwoty sprawdzenia w pozostałym stacku"
       },
       "77": {
-        "desc": "Ręka do set mining, uważaj na overcards",
+        "desc": "Ręka do set miningu, uważaj na overcards",
         "action": "Przebijaj na LP; na EP sprawdzaj przebicie, a first in przebijaj lub pasuj — nigdy open-limp"
       },
       "88": {
@@ -546,7 +546,7 @@ export const CALC_DICT_PL: CalcDict = {
           ],
           [
             "Jedna para",
-            "Jedna lub dwie street, potem pot control"
+            "Jeden lub dwa streety, potem pot control"
           ],
           [
             "Drawy",
@@ -719,7 +719,7 @@ export const CALC_DICT_PL: CalcDict = {
       "strong2": "czystym chip EV",
       "p2": " — zakresy sprawdzenia graczy za tobą są rozwiązywane jednocześnie — ze standardowym przybliżeniem, że sprawdzona pula rozstrzyga się heads-up przeciw pierwszemu sprawdzającemu (pule z wieloma sprawdzającymi są pomijane). Zakresy rozszerzają się, gdy zostaje mniej graczy za tobą (UTG → BTN → SB), stacki się skracają i ante jest WŁ. (0,125bb na gracza). Ze względu na czyste chip EV zakresy 10bb z wczesnej pozycji (UTG/MP) są węższe niż popularne reguły orientacyjne (bez ante małe pary pasują) — w praktyce uwzględnij ICM i przeciwników."
     },
-    "readMore": "Podstawy gry z małym stackiem znajdziesz w poradniku",
+    "readMore": "Zasady all-in i pul bocznych wyjaśnia poradnik",
     "shortStackLink": {
       "slug": "holdem-all-in-rules",
       "text": "All-in w Texas Hold’em"
@@ -775,8 +775,8 @@ export const CALC_DICT_PL: CalcDict = {
       }
     },
     "deal": {
-      "badge": "Kalkulator chip chop ICM",
-      "h2": "Kalkulator chip chop ICM — ile jest wart deal przy stole finałowym",
+      "badge": "Kalkulator dealu ICM",
+      "h2": "Kalkulator dealu ICM — ile jest wart deal przy stole finałowym",
       "intro": "Zostało czterech graczy i rozmawiają o dealu. Stacki to 450 000 / 250 000 / 180 000 / 120 000 (45% / 25% / 18% / 12%), a pozostałe $2 300 nagród dzieli się na $1 000 / $600 / $400 / $300. Wprowadź je do kalkulatora ICM powyżej — kolumna Chip chop zestawia obie wartości:",
       "th": {
         "player": "Gracz",
@@ -1268,7 +1268,7 @@ export const CALC_DICT_PL: CalcDict = {
         [
           "4 ≤ SPR < 8",
           "Elastycznie",
-          "Dwie pary lub lepiej dla value; jedna para przez jedną lub dwie street, potem pot control"
+          "Dwie pary lub lepiej dla value; jedna para przez jeden lub dwa streety, potem pot control"
         ],
         [
           "8 ≤ SPR < 15",
@@ -1325,7 +1325,7 @@ export const CALC_DICT_PL: CalcDict = {
           "Komfortowy stack — pełna strategia, gra na pozycji i blefy"
         ]
       ],
-      "note": "Dlaczego turniejowe stacki mierzy się okrążeniami i blindami zamiast żetonami, wyjaśnia poradnik",
+      "note": "Rolę blindów i kolejność zakładów wyjaśnia poradnik",
       "link": {
         "slug": "holdem-blind-meaning",
         "text": "Mały i duży blind"
@@ -1350,7 +1350,7 @@ export const CALC_DICT_PL: CalcDict = {
       {
         "icon": "💰",
         "title": "Pot odds i implied odds",
-        "body": "Podejmuj decyzję sprawdzenie/pas na podstawie matematyki; przełącznik implied odds dodaje pieniądze, które spodziewasz się wygrać na późniejszych street."
+        "body": "Podejmuj decyzję sprawdzenie/pas na podstawie matematyki; przełącznik implied odds dodaje pieniądze, które spodziewasz się wygrać na późniejszych streetach."
       },
       {
         "icon": "🃏",
@@ -1411,7 +1411,7 @@ export const CALC_DICT_PL: CalcDict = {
       {
         "slug": "holdem-game-order",
         "title": "Kolejność gry",
-        "desc": "Kto działa pierwszy na każdej street"
+        "desc": "Kto działa pierwszy na każdym streecie"
       },
       {
         "slug": "holdem-blind-meaning",
@@ -1425,7 +1425,7 @@ export const CALC_DICT_PL: CalcDict = {
       },
       {
         "slug": "holdem-showdown-rules",
-        "title": "Showdown i podział puli",
+        "title": "Zasady showdownu",
         "desc": "Jak rozstrzygnąć zwycięski układ"
       }
     ]
