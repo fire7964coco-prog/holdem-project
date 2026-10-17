@@ -92,6 +92,7 @@ export const HUB_PAGES = [
  */
 const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; label: string }[]> = {
   th: [
+    { href: "/th/tournaments", icon: "🏆", label: "ทัวร์นาเมนต์โป๊กเกอร์" },
     { href: "/th/win-rate-quiz", icon: "📈", label: "ควิซโป๊กเกอร์" },
   ],
   pl: [

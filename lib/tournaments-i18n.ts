@@ -32,7 +32,7 @@ function clamp(text: string, max: number): string {
   return (sp > max - 25 ? cut.slice(0, sp) : cut).trimEnd().replace(/[,、·、]+$/, "");
 }
 
-export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr" | "hi" | "ar" | "fr" | "ru" | "it" | "pl";
+export type BoardLocale = "en" | "ja" | "zh" | "zh-hant" | "es" | "de" | "id" | "ms" | "vi" | "pt" | "tr" | "hi" | "ar" | "fr" | "ru" | "it" | "pl" | "th";
 
 export interface BoardStrings {
   /** <html lang> 및 og:locale용 */
@@ -1732,7 +1732,77 @@ const pl: BoardStrings = {
   ],
 };
 
-export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr, hi, ar, fr, ru, it, pl };
+const th: BoardStrings = {
+  htmlLang: "th",
+  ogLocale: "th_TH",
+  metaTitle: (next, mmdd) => {
+    const hooked = `ทัวร์นาเมนต์โป๊กเกอร์: poker tournament ${next} ${mmdd}`;
+    return next && hooked.length <= 45 ? hooked : "ทัวร์นาเมนต์โป๊กเกอร์ 2026: poker tournament";
+  },
+  metaDescription: (todayDot, ongoing) => {
+    const base = `ทัวร์นาเมนต์โป๊กเกอร์สดทั่วโลก ดูวันที่ บายอิน และแหล่งข้อมูลผู้จัด กรองตามประเทศและสถานะ อัปเดต ${todayDot}`;
+    const full = `${base} ${ongoing}`.trim();
+    return full.length <= 155 ? full : base;
+  },
+  h1: "ทัวร์นาเมนต์โป๊กเกอร์ 2026: poker tournament",
+  heroLead: "รายการด้านล่างตรวจจากเว็บไซต์ผู้จัด ลิงก์ในแต่ละการ์ดพาไปยังหน้าที่ใช้อ้างอิง สถานะคำนวณจากวันที่ ตารางอาจเปลี่ยนได้ ก่อนจองการเดินทางให้ตรวจเว็บไซต์ผู้จัดอีกครั้ง",
+  asOf: (dot) => `อัปเดต ${thaiDate(dot.replaceAll(".", "-"))}`,
+  filterAll: "ทั้งหมด",
+  filterUpcoming: "Upcoming",
+  filterOngoing: "Running",
+  filterEnded: "Finished",
+  filterAllCountries: "ทุกประเทศ",
+  homeCountryNames: { TH: "ไทย", VN: "เวียดนาม", KH: "กัมพูชา", PH: "ฟิลิปปินส์", KR: "เกาหลีใต้", TW: "ไต้หวัน", JP: "ญี่ปุ่น" },
+  colDates: "วันที่",
+  colBuyin: "บายอิน",
+  colVenue: "Venue",
+  status: { upcoming: "Upcoming", ongoing: "Running", ended: "Finished" },
+  yearRound: "Year-round",
+  datesTba: "Dates TBA",
+  officialSite: "Official site",
+  guideLink: "Guide",
+  buyinUnlisted: "ยังไม่เผยแพร่",
+  countsLine: (total, countries) => `${total} ทัวร์นาเมนต์ · ${countries} ประเทศ`,
+  sourceNote: "หากหน้าของผู้จัดยังแสดงข้อมูลปีที่แล้ว เราจะไม่ใส่ลิงก์นั้น เพื่อไม่ให้คุณเปิดตารางที่ล้าสมัย",
+  emptyState: "ขณะนี้ไม่มีทัวร์นาเมนต์ที่ตรงกับตัวกรองนี้",
+  koLink: "ตารางภาษาเกาหลี →",
+  faqHeading: "คำถามที่พบบ่อย",
+  faqs: [
+    {
+      q: "ทัวร์นาเมนต์โป๊กเกอร์สดในตารางนี้จัดที่ไหน?",
+      a: "การ์ดรวบรวมทัวร์นาเมนต์นานาชาติ พร้อมเมือง Venue วันที่ และบายอิน ไม่ใช่รายชื่อทัวร์นาเมนต์ทั้งหมดของแต่ละประเทศ ใช้ตัวกรองเลือกประเทศและสถานะ แล้วเปิดเว็บไซต์ผู้จัดเพื่อดูตารางโดยละเอียด",
+    },
+    {
+      q: "จ่ายบายอินแล้วเข้าได้ทุกทัวร์นาเมนต์หรือไม่?",
+      a: "ส่วนใหญ่ได้ แต่ไม่ใช่ทั้งหมด Triton Super High Roller Series ต้องมีผู้แนะนำ ไม่มีแซทเทลไลท์ และมีเงินอย่างเดียวไม่รับประกันที่นั่ง Holdem Masters ในเกาหลีใต้ใช้บัตรเชิญเท่านั้น ไม่มีบายอินด้วยเงินสด ส่วน APT Championships เริ่มด้วยวันสำหรับผู้ประกอบการในอุตสาหกรรม (Event 0) ก่อนตารางที่เปิดให้ผู้เล่นทั่วไป บางงานรับเฉพาะบัตร เช่น APL Seoul โดยเงื่อนไขเหล่านี้ระบุไว้ในการ์ด",
+    },
+    {
+      q: "บายอินเท่าไหร่?",
+      a: "จำนวนเงินต่างกันมากแม้ภายใน Festival เดียวกัน Main Event ของทัวร์ใหญ่บางรายการอาจมีบายอินหลายพัน ขณะที่รายการย่อยมักต่ำกว่า การ์ดหลายใบจึงแสดงเป็นช่วง จำนวนเงินใช้สกุลเดิมเสมอ หากผู้จัดยังไม่เผยแพร่บายอิน เราจะไม่ประมาณขึ้นมา",
+    },
+    {
+      q: "จะเล่น Main Event โดยไม่จ่ายบายอินเต็มได้อย่างไร?",
+      a: "ผ่านแซทเทลไลท์ หลายซีรีส์ใหญ่มีทัวร์นาเมนต์คัดเลือกที่บายอินต่ำกว่า Main Event ดูรายละเอียดในตารางของแต่ละซีรีส์บนเว็บไซต์ผู้จัดที่ลิงก์จากการ์ด",
+    },
+  ],
+  localHeading: "ก่อนเดินทาง",
+  localBlocks: [
+    {
+      title: "จุดหมายในเอเชีย",
+      body: "ตัวกรองช่วยเปิดรายการในเวียดนาม กัมพูชา ฟิลิปปินส์ เกาหลีใต้ ไต้หวัน และญี่ปุ่นที่มีในตารางได้รวดเร็ว ตัวเลขข้างประเทศคือจำนวนการ์ดที่ตรงกับตัวกรองปัจจุบัน ไม่ใช่จำนวนทัวร์นาเมนต์ทั้งหมดในประเทศนั้น",
+    },
+    {
+      title: "วันที่ของ Festival กับรายการที่คุณเล่นอาจต่างกัน",
+      body: "วันที่ในการ์ดอาจครอบคลุมทั้ง Festival ก่อนจองให้หาวัน Day 1 ที่คุณจะเล่น เวลา Late registration และเงื่อนไข Re-entry ในตารางผู้จัด Main Event ไม่จำเป็นต้องเริ่มวันแรกของซีรีส์",
+    },
+    {
+      title: "บายอินใช้สกุลเงินเดิม",
+      body: "จำนวนเงินคงสกุลเดิม เช่น USD/$ ยูโร (€) ฟรังก์สวิส (CHF) หรือวอนเกาหลีใต้ (₩) คำนวณค่าใช้จ่ายด้วยอัตราแลกเปลี่ยนวันที่จ่าย และเผื่อค่าธรรมเนียมของวิธีชำระเงินที่เลือก",
+    },
+  ],
+};
+
+export const BOARD_STRINGS: Partial<Record<BoardLocale, BoardStrings>> = { en, ja, zh, "zh-hant": zhHant, es, de, id, ms, vi, pt, tr, hi, ar, fr, ru, it, pl, th };
 
 /**
  * 대회명 현지 표기.
@@ -1775,6 +1845,7 @@ function nameMaps(
   if (locale === "ru") return [{}, PAREN_RU];
   if (locale === "it") return [{}, PAREN_IT];
   if (locale === "pl") return [{}, PAREN_PL];
+  if (locale === "th") return [{}, PAREN_TH];
   return null;
 }
 
@@ -1785,6 +1856,7 @@ function nameMaps(
  * (`APT Jeju` → `APT 済州`).
  */
 const COUNTRY_NAME: Partial<Record<BoardLocale, Record<string, string>>> = {
+  th: {},
   pl: {},
   // ★2026-10-16 it 도구 회차 — country words inside event brands retain their original spelling.
   it: {},
@@ -1843,6 +1915,7 @@ const BRAND_LOCKED = new Set(["tmt-19", "tmt-20", "tmt-championship"]);
  * ★ 브랜드(WSOP·Holdem Masters)는 라틴 유지 — 카타카나·한자 표기를 지어내지 않는다.
  */
 const NAME_OVERRIDE: Partial<Record<BoardLocale, Record<string, string>>> = {
+  th: {},
   pl: {},
   // ★2026-10-16 it 도구 회차 — no verified Italian event-name overrides; retain the original proper names.
   it: {},
@@ -3051,12 +3124,13 @@ const MONTH_RU = ["янв.","февр.","март","апр.","май","июнь"
 const MONTH_RU_GEN = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 
 /** 메타 타이틀 훅의 짧은 날짜 — fr «2 déc.»(1일 = «1er») · ru «2 декабря». page.tsx가 쓴다. */
-export function shortDayMonth(iso: string, locale: "fr" | "ru" | "it" | "pl"): string {
+export function shortDayMonth(iso: string, locale: "fr" | "ru" | "it" | "pl" | "th"): string {
   const m = Number(iso.slice(5, 7));
   const d = Number(iso.slice(8, 10));
   if (locale === "fr") return `${d === 1 ? "1er" : d} ${MONTH_FR[m - 1]}`;
   if (locale === "it") return `${d} ${MONTH_IT[m - 1]}`;
   if (locale === "pl") return `${d} ${MONTH_PL_GEN[m - 1]}`;
+  if (locale === "th") return `${d} ${MONTH_TH[m - 1]}`;
   return `${d} ${MONTH_RU_GEN[m - 1]}`;
 }
 
@@ -3161,6 +3235,60 @@ const MONTH_PL = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipie
 const MONTH_PL_GEN = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
 export function polishDate(iso: string): string {
   return `${shortDayMonth(iso, "pl")} ${iso.slice(0, 4)}`;
+}
+
+// Thai values use Latin digits and English separators. Event/venue brands stay original.
+const FIELD_TH: Record<string, string> = {
+  "₩350K~₩5M": "₩350,000–₩5,000,000",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "야자수 서울센터": "Yajasu Seoul Center",
+  "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (ดำเนินการโดย King's Casino Prague)",
+  "공식 미기재": "ยังไม่เผยแพร่",
+  "미정 (공식 미기재)": "ยังไม่กำหนด (ยังไม่เผยแพร่)",
+  "미발표": "ยังไม่ประกาศ",
+  "장소 추후 공개": "จะประกาศ Venue ภายหลัง",
+  "다양": "แตกต่างกันตามรายการ",
+  "무료": "ฟรี",
+  "새틀라이트 티켓 전용": "เฉพาะบัตรจากแซทเทลไลท์",
+  "참가권(SEAT) 전용": "เฉพาะบัตรเข้าร่วม (SEAT)",
+  "초대권 전용": "เฉพาะบัตรเชิญ",
+  "초대권 전용 (현금 바이인 없음)": "เฉพาะบัตรเชิญ (ไม่มีบายอินด้วยเงินสด)",
+  "메인 ₩150만": "Main Event ₩1,500,000",
+  "메인 ₩220만": "Main Event ₩2,200,000",
+  "메인 ₩230만": "Main Event ₩2,300,000",
+  "메인 ₩250만": "Main Event ₩2,500,000",
+  "메인 ₩270만": "Main Event ₩2,700,000",
+  "₩30만~₩800만": "₩300,000–₩8,000,000",
+  "₩5만~₩1,000만": "₩50,000–₩10,000,000",
+  "₩90만~": "ตั้งแต่ ₩900,000",
+  "~₩700만 (하이롤러)": "สูงสุด ₩7,000,000 (high roller)",
+  "€5,300 (메인)": "€5,300 (Main Event)",
+  "프리롤~NT$120,000": "Freeroll–NT$120,000",
+  "(ME 파이널 8/3~5)": "(โต๊ะสุดท้าย Main Event 3–5 สิงหาคม)",
+  "(온라인 새틀 7/10~9/10)": "(แซทเทลไลท์ออนไลน์ 10 กรกฎาคม – 10 กันยายน)",
+  "2026.12 예정 (날짜 미발표)": "ธันวาคม 2026 (Dates TBA)",
+  "€400~": "ตั้งแต่ €400",
+  "€1,100~": "ตั้งแต่ €1,100",
+};
+const PAREN_TH: Record<string, string> = {
+  "(Fall)": "(ฤดูใบไม้ร่วง)", "(July)": "(กรกฎาคม)", "(August)": "(สิงหาคม)",
+  "(October)": "(ตุลาคม)", "(November)": "(พฤศจิกายน)", "(December)": "(ธันวาคม)", "(Ha Long Bay)": "(Ha Long Bay)",
+};
+// Standard Thai exonyms verified against Thai Wikipedia; uncommon names retain the source.
+const CITY_TH: Record<string, string> = {
+  Prague: "ปราก", Paris: "ปารีส", London: "ลอนดอน", Seoul: "โซล",
+  Manila: "มะนิลา", "Phnom Penh": "พนมเปญ", Taipei: "ไทเป", Tokyo: "โตเกียว",
+  Barcelona: "บาร์เซโลนา", "Las Vegas": "ลาสเวกัส", Sydney: "ซิดนีย์", Incheon: "อินช็อน",
+  Jeju: "เชจู", Fukuoka: "ฟูกูโอกะ", Sapporo: "ซัปโปโระ", Vienna: "เวียนนา",
+  Madrid: "มาดริด", Seville: "เซบิยา", "Mexico City": "เม็กซิโกซิตี", Osaka: "โอซากะ", Nagasaki: "นางาซากิ",
+};
+const SCHEMA_DESC_TH: Record<string, string> = {
+  "holdem-masters-9": "Holdem Masters ครั้งที่ 9 การันตีรวม ₩2,400,000,000 (WPL Main Event ₩2,000,000,000 + Mini Main Event ₩400,000,000) มี 30 flight ของ Day 1 ตั้งแต่ 11 ตุลาคมถึง 9 ธันวาคม และรอบสุดท้ายวันที่ 13 ธันวาคม เข้าร่วมด้วยบัตรเชิญเท่านั้น",
+  "wpt-seoul": "งานแรกของ World Poker Tour ที่ INSPIRE Entertainment Resort มี 45 รายการ โดย Main Event การันตี ₩1,000,000,000",
+};
+const MONTH_TH = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+export function thaiDate(iso: string): string {
+  return `${shortDayMonth(iso, "th")} ${iso.slice(0, 4)}`;
 }
 
 const MONTH_HI = ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"];
@@ -3660,7 +3788,7 @@ const NOTE_DE: Record<string, string> = {
  */
 const NOTES: Record<BoardLocale, Record<string, string>> = {
   en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
-  id: {}, ms: {}, vi: {}, pt: {}, tr: {}, hi: {}, ar: {}, fr: {}, ru: {}, it: {}, pl: {},
+  id: {}, ms: {}, vi: {}, pt: {}, tr: {}, hi: {}, ar: {}, fr: {}, ru: {}, it: {}, pl: {}, th: {},
 };
 
 /** 없으면 undefined — 보드가 배지를 아예 안 그린다(한국어 폴백 금지) */
@@ -3681,6 +3809,7 @@ export function localizeCity(city: string, locale: BoardLocale): string {
   if (locale === "ru") return CITY_RU[city] ?? city;
   if (locale === "it") return CITY_IT[city] ?? city;
   if (locale === "pl") return CITY_PL[city] ?? city;
+  if (locale === "th") return CITY_TH[city] ?? city;
   return city;
 }
 
@@ -3706,7 +3835,7 @@ const CITY_DE: Record<string, string> = {
  * 숫자 양옆에 붙은 물결표만 건드린다 — "초대권 전용" 같은 문장은 손대지 않는다.
  */
 const RANGE_DASH: Record<BoardLocale, string> = {
-  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–", hi: "–", ar: "–", fr: "–", ru: "–", it: "–", pl: "–",
+  en: "–", es: "–", de: "–", ja: "〜", zh: "〜", "zh-hant": "〜", id: "–", ms: "–", vi: "–", pt: "–", tr: "–", hi: "–", ar: "–", fr: "–", ru: "–", it: "–", pl: "–", th: "–",
 };
 
 /**
@@ -3756,6 +3885,7 @@ export function localizeField(value: string | undefined, locale: BoardLocale): s
     : locale === "ru" ? VENUE_DE[value] ?? FIELD_RU[value]
     : locale === "it" ? VENUE_DE[value] ?? FIELD_IT[value]
     : locale === "pl" ? VENUE_DE[value] ?? FIELD_PL[value]
+    : locale === "th" ? VENUE_DE[value] ?? FIELD_TH[value]
     : undefined;
   return hit ?? localizeThousands(localizeRangeTilde(value, locale), locale);
 }
@@ -3841,6 +3971,9 @@ export function localizedMonthBadge(t: Tournament, locale: BoardLocale): string 
   if (locale === "pl") {
     return sm === em ? MONTH_PL[sm - 1] : `${MONTH_PL[sm - 1]}–${MONTH_PL[em - 1]}`;
   }
+  if (locale === "th") {
+    return sm === em ? MONTH_TH[sm - 1] : `${MONTH_TH[sm - 1]}–${MONTH_TH[em - 1]}`;
+  }
   // fr «nov.» · «sept.–oct.» / ru 독립형 «нояб.» · «сент.–окт.»(배지는 주격 — 날짜 문장만 생격)
   if (locale === "fr" || locale === "ru") {
     const M = locale === "fr" ? MONTH_FR : MONTH_RU;
@@ -3879,6 +4012,12 @@ export function localizedDateRange(t: Tournament, locale: BoardLocale): string {
 type Ymd = { y: string; m: number; d: number };
 
 function formatRange(a: Ymd, b: Ymd, locale: BoardLocale): string {
+  if (locale === "th") {
+    const M = (x: Ymd) => `${x.d} ${MONTH_TH[x.m - 1]}`;
+    if (a.y !== b.y) return `${M(a)} ${a.y} – ${M(b)} ${b.y}`;
+    if (a.m !== b.m) return `${M(a)} – ${M(b)} ${a.y}`;
+    return `${a.d}–${b.d} ${MONTH_TH[a.m - 1]} ${a.y}`;
+  }
   if (locale === "en") {
     const M = (x: Ymd) => `${MONTH_EN[x.m - 1]} ${x.d}`;
     if (a.y !== b.y) return `${M(a)}, ${a.y} – ${M(b)}, ${b.y}`;
@@ -4017,7 +4156,8 @@ export function buildLocaleSchemas(
                                     ? SCHEMA_DESC_RU[t.id]
                                     : locale === "it"
                                       ? SCHEMA_DESC_IT[t.id]
-                                      : locale === "pl" ? SCHEMA_DESC_PL[t.id] : undefined) ??
+                                      : locale === "pl" ? SCHEMA_DESC_PL[t.id]
+                                      : locale === "th" ? SCHEMA_DESC_TH[t.id] : undefined) ??
       t.schemaDescription,
     startDate: t.startDate,
     endDate: t.endDate,
@@ -4104,4 +4244,5 @@ export const HOME_COUNTRY: Record<BoardLocale, string[]> = {
   // ★2026-10-16 it 도구 회차 — Italian stops and nearby European destinations already present in the data.
   it: ["IT", "CH", "AT", "FR", "MC", "CZ", "MT"],
   pl: ["PL", "CZ", "DE", "AT", "SK", "EE", "FR", "MT"],
+  th: ["TH", "VN", "KH", "PH", "KR", "TW", "JP"],
 };
