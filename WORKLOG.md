@@ -1,3 +1,9 @@
+## 2026-10-18 (1) — `/en/solver`에 영어 채널 «Free GTO Solver Guide» Part 1~4 임베드 `a9ff36b1`
+
+- 사장님: 홀덤마스터 영어 채널 신설(UCEgFZSb5xhBiPScbSIYPOEg) → EN 솔버 랜딩에 임베드. 공개 영상 4편 = yt-dlp로 ID·제목·길이·업로드 시각·챕터 확인(10-17 16:53~16:54Z 업로드 · 썸네일 sddefault.webp·maxres 200).
+- `app/en/solver/videos.ts` 신설(KO `app/solver/videos.ts` 구조 그대로) · 배치 KO와 동일(Part 1 → What is a GTO solver? · 3 → 5단계 · 2 → 결과 화면 · 4 → 트레이너) · VideoObject 4(inLanguage en). `YouTubeLite`에 `playLabel`(EN «Play video»).
+- 빌드 통과 · 산출 HTML에 썸네일 4 · VideoObject 4 확인. MB-386.
+
 ## 2026-10-17 (17) — 솔버 홍보 매체 조사(유료 게재 효율) · `docs/media-outreach-research-2026-10-17.md`
 
 - 사장님 주제 전환: «유료 광고·백링크» → «무료 솔버를 기사·리뷰로 · 어느 매체에 맡기는 게 가장 효율적인가».
