@@ -223,7 +223,7 @@ const ZH_HANT_UI: QuizUI = {
       <p>
         每人先下 {ANTE} 的前注，起始籌碼 {STACK.toLocaleString("en-US")}。你從不蓋牌——這正是重點，這樣你才看得到河牌、做檢討。勝率是固定樣本數的模擬估計值：翻牌前{" "}
         <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} 次</b>，翻牌起{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} 次</b>（標準誤差約 0.25–0.35%p）。每一手都用固定的隨機種子，所以同一手牌在任何裝置上顯示的數字都一樣。平手時按分底池的人數平分（兩人平手各得一半）。
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} 次</b>（標準誤差最多約 0.25–0.35%p，數字離 50% 越遠就越小）。每一手都用固定的隨機種子，所以同一手牌在任何裝置上顯示的數字都一樣。平手時按分底池的人數平分（兩人平手各得一半）。
       </p>
       <p className="mt-2">
         <b className="text-foreground">亮出對手底牌時</b>，會顯示所有底牌都已知時各座位的勝率。從翻牌開始，這會把剩下的每一張牌都精確算過一遍（只有翻牌前是 {SAMPLES.known.toLocaleString("en-US")} 次模擬），而且這些數字不會算進螢幕上的勝率，也不影響跟注／蓋牌判定——真實牌桌上你不會有這個資訊。

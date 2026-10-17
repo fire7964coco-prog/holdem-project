@@ -25,7 +25,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Simulator Poker untuk Latihan: Bilakah Anda Patut Fold? | HoldemMaster";
 const DESCRIPTION =
-  "Main satu tangan 6-max tanpa melihat kad lawan, seperti di meja sebenar: equity anda pada setiap street, pot odds mulai flop, dan bila anda sepatutnya fold.";
+  "Main tangan 6-max atau 9-max tanpa melihat kad lawan, seperti di meja sebenar: equity anda setiap street, pot odds mulai flop, dan bila anda patut fold.";
 const OG_DESCRIPTION =
   "Kad lawan kekal tertutup, seperti dalam poker sebenar. Ikuti equity anda street demi street dan pot odds mulai flop, lalu semak bila anda patut fold.";
 

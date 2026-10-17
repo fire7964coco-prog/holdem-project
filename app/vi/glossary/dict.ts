@@ -87,7 +87,7 @@ export const GLOSSARY_DICT_VI: GlossaryDict = {
     { term: "Limp", cat: "Action", desc: "Vào pot ở preflop bằng cách chỉ call big blind thay vì raise — thường là nước yếu, thụ động.", aka: ["limper", "limping", "limp poker"] },
     { term: "Nuts", cat: "Hand", desc: "Tay bài mạnh nhất có thể trên board hiện tại (có thể đổi ở các vòng sau).", aka: ["the nuts", "nut"], link: { href: "/vi/blog/holdem-reading-the-board", text: "Cách tìm nuts khi đọc bài chung" } },
     { term: "Offsuit", cat: "Hand", desc: "Hai lá bài khác chất (ví dụ A♠K♦). Yếu hơn một chút so với cùng tay bài ở dạng cùng chất (suited), vì khả năng ra thùng thấp hơn nhiều.", aka: ["off suit", "unsuited", "khác chất"] },
-    { term: "Outs", cat: "Math", desc: "Những lá còn lại trong bộ bài giúp bạn cải thiện thành tay thắng. Flush draw có 9 outs; draw sảnh hở hai đầu (OESD) có 8 outs.", aka: ["out", "số outs"] },
+    { term: "Outs", cat: "Math", desc: "Những lá còn lại trong bộ bài giúp bạn cải thiện thành tay lẽ ra sẽ thắng. Flush draw có 9 outs, draw sảnh hở hai đầu (OESD) có 8 outs — ít hơn nếu một số lá trong đó cũng cho đối thủ tay mạnh hơn.", aka: ["out", "số outs"] },
     { term: "Overpair", cat: "Hand", desc: "Đôi trên tay cao hơn mọi lá trên board — ví dụ QQ trên flop J-7-3.", aka: ["over pair"] },
     { term: "Vị trí (position)", cat: "Position", desc: "Bạn ngồi ở đâu quyết định bạn act (hành động) khi nào — và act cuối là một lợi thế vĩnh viễn. Bạn có vị trí (in position) nếu act sau đối thủ, không có vị trí (out of position) nếu act trước.", aka: ["position", "in position", "out of position", "IP", "OOP", "có vị trí", "không có vị trí"] },
     { term: "Pot", cat: "Board", desc: "Tổng số chip đang được tranh.", aka: ["pot poker"] },

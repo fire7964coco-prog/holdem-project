@@ -219,7 +219,7 @@ export const CALC_DICT_HI: CalcDict = {
       AQs: { desc: "मज़बूत हैंड; position में ज़्यादा कीमती", action: "ज़्यादातर positions से raise" },
       AJs: { desc: "BTN/CO पर बढ़िया, UTG से कमज़ोर", action: "Mid/late से raise; UTG से या तो raise या fold — limp कभी नहीं" },
       A10s: { desc: "सबसे अच्छे suited aces में से एक", action: "Mid/late से raise; UTG से या तो raise या fold — limp कभी नहीं" },
-      KQs: { desc: "ऊँचे flush + straight draw की संभावना", action: "ज़्यादातर positions से raise" },
+      KQs: { desc: "King-high flush और Broadway straight बनाता है", action: "ज़्यादातर positions से raise" },
       KJs: { desc: "मज़बूत drawing हैंड", action: "LP में raise; EP से raise या fold — limp कभी नहीं" },
       "99": { desc: "मध्यम pair, overcard वाले flop से सावधान", action: "ज़्यादातर positions से raise; deep में सावधान" },
       "88": { desc: "अच्छी set संभावना वाला pocket pair", action: "ज़्यादातर positions से raise; सामने raise हो तो call — open limp नहीं" },
@@ -476,7 +476,7 @@ export const CALC_DICT_HI: CalcDict = {
     {
       badge: "झटपट संदर्भ",
       h2: "Pocket aces बनाम बेतरतीब हैंड — विरोधियों की संख्या के हिसाब से",
-      intro: "जब सब preflop all-in हों तो AA कितनी बार जीतता है, N बेतरतीब हैंड के सामने (Monte Carlo, हर पंक्ति पर 8,000,000 runout)। पहले दो callers aces की लगभग 10-10 अंक कीमत ले जाते हैं; उसके बाद हर एक की कीमत घटती जाती है।",
+      intro: "जब सब preflop all-in हों तो N बेतरतीब हैंड के सामने AA की equity — यानी pot में उसका हिस्सा, जिसमें बराबरी (tie) को बँटा हुआ pot गिना जाता है (Monte Carlo, हर पंक्ति पर 8,000,000 runout)। पहले दो callers aces की लगभग 10-10 अंक कीमत ले जाते हैं; उसके बाद हर एक की कीमत घटती जाती है।",
       th: ["विरोधी", "AA की equity"],
       align: ["left", "right"],
       emphasis: 1,
@@ -485,9 +485,9 @@ export const CALC_DICT_HI: CalcDict = {
         ["1", "85.2%"], ["2", "73.4%"], ["3", "63.8%"], ["4", "55.9%"],
         ["5", "49.2%"], ["6", "43.6%"], ["7", "38.7%"], ["8", "34.6%"],
       ],
-      // 🔴 EN «no longer a favorite» = «जीतने की संभावना 50% से नीचे» (दांव की शब्दावली) —
+      // 🔴 EN «no longer owns even half the pot» (10-17 EN 손질 4) = «pot का आधा हिस्सा भी नहीं» (equity) —
       //    «अब सबसे अच्छा हैंड नहीं रहा» लिख देने पर वाक्य झूठ हो जाता है (49.2% बाक़ी पाँच के ~10% के सामने भारी बढ़त है).
-      note: "इसीलिए aces के साथ heads-up pot ही चाहिए: पाँच बेतरतीब हैंड के सामने Hold'em के सबसे अच्छे starting हैंड के जीतने की संभावना भी 50% से नीचे चली जाती है (49.2%, और बाक़ी हिस्सा पाँचों में बँटता है) — हैंड फिर भी सबसे मज़बूत रहता है, क्योंकि बाक़ी हर खिलाड़ी के पास लगभग 10% ही है। ऊपर equity कैलकुलेटर में किसी विरोधी को «कोई भी हैंड» पर रखकर किसी भी हैंड की इसी तरह जाँच कर सकते हैं (तीन विरोधियों तक)।",
+      note: "इसीलिए aces के साथ heads-up pot ही चाहिए: पाँच बेतरतीब हैंड के सामने Hold'em के सबसे अच्छे starting हैंड के पास pot का आधा हिस्सा भी नहीं रहता (49.2% equity, और बाक़ी हिस्सा पाँचों में बँटता है) — हैंड फिर भी सबसे मज़बूत रहता है, क्योंकि बाक़ी हर खिलाड़ी के पास लगभग 10% ही है। ऊपर equity कैलकुलेटर में किसी विरोधी को «कोई भी हैंड» पर रखकर किसी भी हैंड की इसी तरह जाँच कर सकते हैं (तीन विरोधियों तक)।",
     },
     {
       badge: "झटपट संदर्भ",

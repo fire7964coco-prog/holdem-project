@@ -115,7 +115,7 @@ const ID_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Ini masih preflop, jadi jalan pintas «outs × 2/4» belum berlaku. Equity di atas berasal dari ${k} simulasi hand melawan hand yang masuk akal dimainkan tiap lawan dari posisinya.`
-      : `Anda tidak punya outs yang dihitung alat ini — tidak ada kartu yang melengkapi flush atau straight, atau menaikkan hand Anda satu kategori (set, two pair, atau pair dengan memasangkan overcard) — jadi jalan pintas «outs × 2/4» tidak berlaku di sini. Equity di atas berasal dari ${k} simulasi hand melawan semua hand yang cocok dengan aksi yang Anda lihat.`,
+      : `Anda tidak punya outs yang dihitung alat ini — tidak ada kartu yang melengkapi flush atau straight, atau menaikkan hand Anda satu kategori (set atau trips, two pair, atau pair dengan memasangkan overcard) — jadi jalan pintas «outs × 2/4» tidak berlaku di sini. Equity di atas berasal dari ${k} simulasi hand melawan semua hand yang cocok dengan aksi yang Anda lihat.`,
   foldWinNote: "Semua lawan fold, jadi pot ini milik Anda. Angka 100% di atas bukan hasil simulasi — itu hasil hand ini.",
   riverNote: "Ini river, tidak ada kartu lagi yang akan keluar, jadi jalan pintas «outs × 2/4» tidak berlaku. Equity di atas membandingkan hand akhir Anda dengan semua hand yang cocok dengan aksi yang Anda lihat.",
   chartTitle: "📈 Equity street demi street — semua kartu terbuka",
@@ -253,7 +253,7 @@ const ID_UI: QuizUI = {
         Semua pemain membayar ante {ANTE} dan mulai dengan stack {n(STACK)}. Anda tidak pernah fold — memang itu intinya:
         Anda melihat river lalu meninjau ulang hand-nya. Equity adalah perkiraan hasil simulasi dengan jumlah sampel tetap:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} simulasi</b> di preflop dan{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulasi</b> mulai flop (galat baku sekitar 0,25–0,35 poin persentase).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulasi</b> mulai flop (galat baku paling besar sekitar 0,25–0,35 poin persentase — makin kecil makin jauh angkanya dari 50%).
         Setiap hand memakai seed acak yang tetap, jadi hand yang sama menampilkan angka yang sama di perangkat mana pun. Jika seri, pot
         dibagi rata di antara pemain yang seri (setengah-setengah bila berdua).
       </p>

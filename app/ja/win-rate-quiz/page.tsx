@@ -16,7 +16,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "ポーカー練習シミュレーター — 勝率と降りどきが分かる | HoldemMaster";
 const DESCRIPTION =
-  "相手のカードが見えない実戦形式で6maxのハンドを1ストリートずつプレイ。ストリートごとの勝率とフロップ以降の必要勝率(ポットオッズ)を確認し、どこで降りるべきだったかを振り返れる無料の練習ツールです。";
+  "相手のカードが見えない実戦形式で6max・9maxのハンドを1ストリートずつプレイ。ストリートごとの勝率とフロップ以降の必要勝率(ポットオッズ)を確認し、どこで降りるべきだったかを振り返れる無料の練習ツールです。";
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙는다

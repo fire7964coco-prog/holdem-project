@@ -92,7 +92,7 @@ const EN_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `It is still preflop, so the “outs × 2/4” shortcut does not apply yet. The equity above comes from running ${n} hands against the hands each opponent would plausibly enter the pot with from their seat.`
-      : `You have none of the outs this tool counts — no card completes a flush or straight or moves you up a hand category to a set, two pair or an overcard pair — so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
+      : `You have none of the outs this tool counts — no card completes a flush or straight or moves you up a hand category to a set or trips, two pair or an overcard pair — so the “outs × 2/4” shortcut does not apply here. The equity above comes from running ${n} hands against every holding that matches the actions you saw.`,
   foldWinNote: "Every opponent folded, so the pot is yours. The 100% above is not a simulated number — it is the result of this hand.",
   riverNote: "This is the river, so no cards are left to come and the “outs × 2/4” shortcut does not apply. The equity above compares your final hand with every holding that matches the actions you saw.",
   chartTitle: "📈 Equity street by street — all cards face up",
@@ -160,7 +160,7 @@ const EN_UI: QuizUI = {
   rangeTitle: "Opponent range — hands that fit the action so far",
   rangeCombos: (pre, cur, pct) => `Preflop ${pre} combos → now ${cur} combos (${pct}% left)`,
   rangeLegend: ["Still in (darker = more)", "Removed by the action", "Never in range", "Actual hand", "Blocked by your hand/board"],
-  rangeNote: "Starts from the seat's preflop range and removes, street by street, every hand that would have acted differently under the opponent rules. The win rate above uses this same range. Combos that clash with your hand or the board are left out.",
+  rangeNote: "Starts from the seat's preflop range and removes, street by street, every hand that would have acted differently under the opponent rules. The equity above uses this same range. Combos that clash with your hand or the board are left out.",
   quizKinds: ["Guess equity + decide", "Decide only (your call?)"],
   decideTitle: "Your call?",
   decideHint: "Pick call or fold without seeing their cards. Even if you fold, the hand plays out to the end. This mode isn't added to your quiz stats.",
@@ -228,7 +228,7 @@ const EN_UI: QuizUI = {
         Everyone posts {ANTE} to start with a {STACK.toLocaleString("en-US")} stack. You never fold — that is the point,
         so you can see the river and review. Equity is a simulated estimate with a fixed sample size:{" "}
         <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} runs</b> preflop and{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} runs</b> from the flop on (standard error roughly 0.25–0.35%p).
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} runs</b> from the flop on (standard error at most about 0.25–0.35%p — less the further the number is from 50%).
         Each hand uses a fixed random seed, so the same hand shows the same numbers on any device. Ties are split
         by the number of players who share the pot (half each in a two-way tie).
       </p>

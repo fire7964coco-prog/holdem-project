@@ -14,7 +14,7 @@ export const HAND_CHART_FAQ_IT: { q: string; a: string }[] = [
   },
   {
     q: "Va bene aprire un range del 42% dal bottone?",
-    a: "In termini GTO, un range di apertura dal bottone arriva effettivamente al 40–50%. Se però gli avversari sono tight o inesperti, concentrarsi maggiormente sulle mani premium può essere più profittevole al tavolo. Questa poker hand chart offre una base bilanciata.",
+    a: "Prima bisogna confrontare la stessa cosa. Il 42% di questa tabella conta i tipi di mano — 71 su 169 — mentre il 40–50% dal bottone citato nei materiali GTO conta le combo su 1.326. Convertito in combo, il range dal bottone di questa tabella è il 35,4%, più stretto di quella fascia: il 42% quindi non è troppo largo. Se però gli avversari sono tight o inesperti, concentrarsi maggiormente sulle mani premium può essere più profittevole al tavolo. Questa poker hand chart offre una base bilanciata.",
   },
   {
     q: "Come reagisco a una 3-bet?",

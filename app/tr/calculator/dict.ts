@@ -184,7 +184,7 @@ export const CALC_DICT_TR: CalcDict = {
       AQs: { desc: "Güçlü el; pozisyonda daha değerli", action: "Çoğu pozisyondan raise" },
       AJs: { desc: "BTN/CO'da harika, UTG'den zayıf", action: "Orta/geç pozisyonda raise; UTG'den raise ya da fold — limp yapma" },
       A10s: { desc: "En iyi suited aslardan", action: "Orta/geç pozisyonda raise; UTG'den raise ya da fold — limp yapma" },
-      KQs: { desc: "Yüksek flush potansiyeli + kent draw'ı", action: "Çoğu pozisyondan raise" },
+      KQs: { desc: "Papaz yüksek flush ve Broadway kent yapar", action: "Çoğu pozisyondan raise" },
       KJs: { desc: "Güçlü draw eli", action: "Geç pozisyonda raise; erken pozisyondan raise ya da fold — limp yapma" },
       "99": { desc: "Orta çift, overcard'lı flop'lara dikkat", action: "Çoğu pozisyondan raise; derin stack'te dikkatli ol" },
       "88": { desc: "Set potansiyeli iyi bir pocket pair", action: "Çoğu pozisyondan raise; raise'e call — open-limp yapma" },
@@ -425,7 +425,7 @@ export const CALC_DICT_TR: CalcDict = {
     {
       badge: "Hızlı referans",
       h2: "Pocket as rastgele ellere karşı — rakip sayısına göre",
-      intro: "Herkes preflop all-in olduğunda AA'nın N rastgele ele karşı kazanma sıklığı (Monte Carlo, satır başına 8.000.000 runout). İlk iki caller asları ayrı ayrı yaklaşık 10 yüzde puan düşürür; sonrasında her biri daha az düşürür.",
+      intro: "Herkes preflop all-in olduğunda AA'nın N rastgele ele karşı equity'si — yani pottaki payı; beraberlikler bölünen pot olarak sayılır (Monte Carlo, satır başına 8.000.000 runout). İlk iki caller asları ayrı ayrı yaklaşık 10 yüzde puan düşürür; sonrasında her biri daha az düşürür.",
       th: ["Rakip", "AA equity'si"],
       align: ["left", "right"],
       emphasis: 1,

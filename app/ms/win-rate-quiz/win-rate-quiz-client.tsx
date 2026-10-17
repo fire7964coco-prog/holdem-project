@@ -113,7 +113,7 @@ const MS_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Ini masih preflop, jadi jalan pintas «outs × 2/4» belum terpakai. Equity di atas datang daripada ${k} simulasi tangan menentang tangan yang munasabah untuk dimainkan oleh setiap lawan dari posisinya.`
-      : `Anda tidak mempunyai outs yang dikira oleh alat ini — tiada kad yang melengkapkan flush atau straight, atau menaikkan tangan anda satu kategori (set, two pair, atau pair pada overcard anda) — jadi jalan pintas «outs × 2/4» tidak terpakai di sini. Equity di atas datang daripada ${k} simulasi tangan menentang semua tangan yang sepadan dengan aksi yang anda lihat.`,
+      : `Anda tidak mempunyai outs yang dikira oleh alat ini — tiada kad yang melengkapkan flush atau straight, atau menaikkan tangan anda satu kategori (set atau trips, two pair, atau pair pada overcard anda) — jadi jalan pintas «outs × 2/4» tidak terpakai di sini. Equity di atas datang daripada ${k} simulasi tangan menentang semua tangan yang sepadan dengan aksi yang anda lihat.`,
   foldWinNote: "Semua lawan fold, jadi pot ini milik anda. Angka 100% di atas bukan hasil simulasi — itu hasil tangan ini.",
   riverNote: "Ini river, tiada lagi kad yang akan keluar, jadi jalan pintas «outs × 2/4» tidak terpakai. Equity di atas membandingkan tangan akhir anda dengan semua tangan yang sepadan dengan aksi yang anda lihat.",
   chartTitle: "📈 Equity street demi street — semua kad terbuka",
@@ -250,7 +250,7 @@ const MS_UI: QuizUI = {
         Semua pemain membayar ante {ANTE} dan bermula dengan stack {n(STACK)}. Anda tidak pernah fold — memang itulah tujuannya:
         anda melihat river kemudian menyemak semula tangan itu. Equity ialah anggaran hasil simulasi dengan bilangan sampel tetap:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} simulasi</b> pada preflop dan{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulasi</b> mulai flop (ralat piawai kira-kira 0.25–0.35 mata peratusan).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulasi</b> mulai flop (ralat piawai paling tinggi kira-kira 0.25–0.35 mata peratusan — makin kecil apabila angka makin jauh daripada 50%).
         Setiap tangan menggunakan seed rawak yang tetap, jadi tangan yang sama menunjukkan angka yang sama pada mana-mana peranti. Jika seri, pot
         dibahagi sama rata antara pemain yang seri (separuh seorang jika berdua).
       </p>

@@ -17,7 +17,7 @@ export const CALCULATOR_FAQ_HI: { q: string; a: string }[] = [
   },
   {
     q: "AA बनाम KK में जीत की संभावना कितनी होती है?",
-    a: "Preflop पर pocket aces, pocket kings के सामने लगभग 82% बार जीतते हैं (हर suit संयोजन का औसत लेकर 81.9%, और 0.5% बराबरी की संभावना)। AA बनाम AK suited लगभग 88% – 12% है, और KK बनाम AK suited लगभग 66% – 34%।",
+    a: "Preflop पर pocket aces, pocket kings के सामने लगभग 82% के favorite होते हैं: हर suit संयोजन का औसत लें तो वे 81.7% बार सीधे जीतते हैं और लगभग 0.5% बार बराबरी (tie) होती है — यानी 81.9% equity। AA बनाम AK suited लगभग 88% – 12% है, और KK बनाम AK suited लगभग 66% – 34%।",
   },
   {
     q: "AK बनाम pocket pair क्या सच में coin flip है?",
@@ -33,7 +33,7 @@ export const CALCULATOR_FAQ_HI: { q: string; a: string }[] = [
   },
   {
     q: "Pot odds कैसे निकालते हैं?",
-    a: "Call की रकम ÷ (bet के बाद का pot + call की रकम) = आपको कम से कम जितनी equity चाहिए। उदाहरण के लिए, pot में bet मिलाकर पहले से 10,000 हों और call 3,000 का हो, तो 3,000 ÷ 13,000 ≈ 23.1% — यानी आपकी equity 23.1% से ऊपर हो तब call फ़ायदेमंद है। Pot जितने बड़े bet पर हमेशा 33.3% चाहिए; आधे pot के bet पर 25%।",
+    a: "Call की रकम ÷ (bet के बाद का pot + call की रकम) = आपको कम से कम जितनी equity चाहिए। उदाहरण के लिए, pot में bet मिलाकर पहले से 10,000 हों और call 3,000 का हो, तो 3,000 ÷ 13,000 ≈ 23.1%। अगर इसके बाद और betting नहीं हो सकती (जैसे all-in), तो आपकी equity 23.1% से ऊपर होने पर call फ़ायदेमंद है। Pot जितने बड़े bet पर हमेशा 33.3% चाहिए; आधे pot के bet पर 25%।",
   },
   {
     q: "Flush draw से call करने के लिए कितने pot odds चाहिए?",

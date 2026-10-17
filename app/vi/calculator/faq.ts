@@ -11,7 +11,7 @@ export const CALCULATOR_FAQ_VI: { q: string; a: string }[] = [
   },
   {
     q: "AA gặp KK thắng bao nhiêu phần trăm?",
-    a: "Đôi A thắng đôi K khoảng 82% số lần ở preflop (81,9% khi lấy trung bình trên mọi tổ hợp chất, xác suất hòa 0,5%). AA gặp AK suited khoảng 88% so với 12%, còn KK gặp AK suited khoảng 66% so với 34%.",
+    a: "Đôi A là cửa trên khoảng 82% trước đôi K ở preflop: lấy trung bình trên mọi tổ hợp chất, AA thắng hẳn 81,7% số lần và hòa khoảng 0,5%, nên equity là 81,9%. AA gặp AK suited khoảng 88% so với 12%, còn KK gặp AK suited khoảng 66% so với 34%.",
   },
   {
     q: "AK gặp một đôi có thật là coin flip không?",
@@ -27,7 +27,7 @@ export const CALCULATOR_FAQ_VI: { q: string; a: string }[] = [
   },
   {
     q: "Tính pot odds như thế nào?",
-    a: "Số tiền call ÷ (pot sau bet + số tiền call) = equity tối thiểu bạn cần. Ví dụ, call 3.000 vào pot đã có 10.000 tính cả mức bet là 3.000 ÷ 13.000 ≈ 23,1%, nên call có lãi khi equity của bạn trên 23,1%. Bet bằng pot luôn đòi 33,3%; bet nửa pot đòi 25%.",
+    a: "Số tiền call ÷ (pot sau bet + số tiền call) = equity tối thiểu bạn cần. Ví dụ, call 3.000 vào pot đã có 10.000 tính cả mức bet là 3.000 ÷ 13.000 ≈ 23,1%. Nếu sau đó không thể có thêm cược nào (ví dụ all-in), call có lãi khi equity của bạn trên 23,1%. Bet bằng pot luôn đòi 33,3%; bet nửa pot đòi 25%.",
   },
   {
     q: "Cần pot odds bao nhiêu để call với flush draw?",

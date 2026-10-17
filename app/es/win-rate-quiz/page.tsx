@@ -24,7 +24,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Simulador de poker con equity: ¿dónde tocaba foldear? | HoldemMaster";
 const DESCRIPTION =
-  "Juega una mano 6-max sin ver las cartas rivales, como en una mesa real: tu equity en cada calle, las pot odds desde el flop y, al final, dónde tocaba foldear.";
+  "Juega una mano 6-max o de 9 sin ver las cartas rivales, como en una mesa real: tu equity en cada calle, las pot odds desde el flop y dónde tocaba foldear.";
 const OG_DESCRIPTION =
   "Sus cartas quedan ocultas, como en el poker real. Sigue tu equity calle a calle y tus pot odds desde el flop, y repasa dónde tenías que foldear.";
 

@@ -62,7 +62,7 @@ const jsonLd = {
         "All 169 preflop hands",
         "Open ranges for UTG, HJ, CO, Button and SB",
         "Tap a position to highlight only that range",
-        "Colour-coded pocket pairs, suited and offsuit"
+        "Hands colour-coded by the earliest position that opens them (UTG to SB)"
       ],
       publisher: { "@type": "Organization", name: "HoldemMaster", url: SITE },
     },

@@ -25,7 +25,7 @@ export const CALCULATOR_FAQ_ES: { q: string; a: string }[] = [
   },
   {
     q: "¿Qué probabilidad tiene AA contra KK?",
-    a: "Los ases les ganan a los reyes preflop alrededor del 82% de las veces (81.9% promediando todas las combinaciones de palos, con un 0.5% de empate). AA contra AK del mismo palo queda más o menos 88% a 12%, y KK contra AK del mismo palo, 66% a 34%.",
+    a: "Los ases son favoritos de alrededor del 82% frente a los reyes preflop: promediando todas las combinaciones de palos, ganan solos el 81.7% de las veces y empatan cerca del 0.5%, para una equity del 81.9%. AA contra AK del mismo palo queda más o menos 88% a 12%, y KK contra AK del mismo palo, 66% a 34%.",
   },
   {
     q: "¿AK contra un par servido es un coin flip?",
@@ -41,7 +41,7 @@ export const CALCULATOR_FAQ_ES: { q: string; a: string }[] = [
   },
   {
     q: "¿Qué fórmula usa la calculadora de pot odds?",
-    a: "Call ÷ (bote después de la apuesta + call) = la equity mínima que necesitas. Por ejemplo, pagar 3,000 cuando el bote ya tiene 10,000 contando la apuesta es 3,000 ÷ 13,000 ≈ 23.1%, así que el call es rentable cuando tu equity pasa del 23.1%. Una apuesta del tamaño del bote siempre exige 33.3%; una de medio bote, 25%.",
+    a: "Call ÷ (bote después de la apuesta + call) = la equity mínima que necesitas. Por ejemplo, pagar 3,000 cuando el bote ya tiene 10,000 contando la apuesta es 3,000 ÷ 13,000 ≈ 23.1%. Si ya no puede haber más apuestas (un all-in, por ejemplo), el call es rentable cuando tu equity pasa del 23.1%. Una apuesta del tamaño del bote siempre exige 33.3%; una de medio bote, 25%.",
   },
   {
     q: "¿Qué pot odds necesito para pagar con proyecto de color?",

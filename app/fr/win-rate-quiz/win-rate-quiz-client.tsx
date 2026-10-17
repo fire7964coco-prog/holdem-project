@@ -116,7 +116,7 @@ const FR_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `On est encore au préflop, donc le raccourci « outs × 2/4 » ne s'applique pas encore. L'équité ci-dessus vient de ${k} mains simulées contre les mains avec lesquelles chaque adversaire entrerait plausiblement dans le pot depuis sa position.`
-      : `Tu n'as aucun des outs que cet outil compte — aucune carte ne complète une couleur ou une quinte, ni ne fait monter ta main d'une catégorie (set, double paire ou paire en appariant une overcard) — donc le raccourci « outs × 2/4 » ne s'applique pas ici. L'équité ci-dessus vient de ${k} mains simulées contre toutes les mains qui collent aux actions que tu as vues.`,
+      : `Tu n'as aucun des outs que cet outil compte — aucune carte ne complète une couleur ou une quinte, ni ne fait monter ta main d'une catégorie (set ou brelan, double paire ou paire en appariant une overcard) — donc le raccourci « outs × 2/4 » ne s'applique pas ici. L'équité ci-dessus vient de ${k} mains simulées contre toutes les mains qui collent aux actions que tu as vues.`,
   foldWinNote: "Tous les adversaires se sont couchés, le pot est donc à toi. Les 100 % ci-dessus ne sont pas un chiffre simulé — c'est le résultat de cette main.",
   riverNote: "C'est la river, il ne reste plus de carte à venir et le raccourci « outs × 2/4 » ne s'applique pas. L'équité ci-dessus compare ta main finale à toutes les mains qui collent aux actions que tu as vues.",
   chartTitle: "📈 Équité street par street — toutes les cartes à découvert",
@@ -255,7 +255,7 @@ const FR_UI: QuizUI = {
         Tout le monde paie une ante de {ANTE} et commence avec un tapis de {n(STACK)}. Tu ne te couches jamais — c&rsquo;est le principe :
         tu vois la river et tu fais la revue. L&rsquo;équité est une estimation simulée avec une taille d&rsquo;échantillon fixe :{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} simulations</b> au préflop et{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulations</b> à partir du flop (erreur-type d&rsquo;environ 0,25–0,35 point de pourcentage).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulations</b> à partir du flop (erreur-type d&rsquo;au plus 0,25–0,35 point de pourcentage environ — d&rsquo;autant plus petite que le chiffre s&rsquo;éloigne de 50&nbsp;%).
         Chaque main utilise une graine aléatoire fixe : la même main affiche donc les mêmes chiffres sur n&rsquo;importe quel appareil. En cas d&rsquo;égalité, le pot est
         divisé à parts égales entre les joueurs concernés (moitié chacun à deux).
       </p>

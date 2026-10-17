@@ -17,7 +17,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Poker Simulator — محاكي البوكر: تدرّب واعرف متى تطوي | HoldemMaster";
 const DESCRIPTION =
-  "هل كنت ستطوي في الوقت الصحيح؟ العب يدًا 6-max دون رؤية أوراق الخصوم، شاهد الإكويتي في كل جولة وبوت أودز من الفلوب، ثم راجع أين كان الطي هو القرار الصحيح.";
+  "هل كنت ستطوي في الوقت الصحيح؟ العب يدًا 6-max أو 9-max دون رؤية أوراق الخصوم، شاهد الإكويتي في كل جولة وبوت أودز من الفلوب، ثم راجع أين كان الطي صحيحًا.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

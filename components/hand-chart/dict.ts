@@ -11,7 +11,7 @@
 //   (UTG HJ CO BTN SB) and the "Example hands" column are language-invariant and live in code.
 // - 🔴 The chart is a consensus open range from public sources — NOT solver output
 //   (docs/solver-factsheet.md). No locale may say the solver computed it or call it «GTO».
-//   (The EN strings still say «GTO» — inherited copy, queued in docs/en-first-queue.md.)
+//   (EN fixed 2026-10-17 EN 손질 회차 4 — seo.description · notes. keywords «GTO starting hands» = search term, not a claim.)
 // - Optional fields: EN omits them (its markup must stay byte-identical to the pre-refactor page);
 //   locales ship them — they carry the ko page's «type vs combo» basis labels (2026-09-12 Q7-a ⑦).
 
@@ -120,7 +120,7 @@ export const HAND_CHART_DICT_EN: HandChartDict = {
   seo: {
     title: "Poker Starting Hand Chart — Open Ranges by Position",
     description:
-      "Interactive Texas Hold'em starting-hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded GTO open ranges.",
+      "Interactive Texas Hold'em starting-hand chart. Compare all 169 hands across UTG, HJ, CO, Button, and SB with color-coded open ranges.",
     path: "/en/hand-chart",
     keywords: ["poker starting hand chart", "preflop range chart", "holdem open ranges", "UTG range", "button range", "GTO starting hands"],
   },
@@ -160,7 +160,7 @@ export const HAND_CHART_DICT_EN: HandChartDict = {
     hands: "Hands",
     range: "Range",
     examples: "Example hands",
-    notes: [["* GTO-based approximations — in practice, adjust for table tendencies, stack depth, and opponent ranges."]],
+    notes: [["* Indicative values for a standard opening range, based on consensus across public sources. Solver results depend on open size, stacks and the opponent's range: in the HoldemMaster GTO solver's blind-vs-blind example, the SB opens to 3bb with 46.6% (92 hand types, 618 combos). At the table, also adjust to your opponents' tendencies."]],
   },
   why: {
     heading: "Why position drives hand selection",

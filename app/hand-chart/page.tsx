@@ -89,7 +89,7 @@ const jsonLd = {
         "169개 프리플랍 핸드 전수 표시",
         "UTG·HJ·CO·BTN·SB 5개 포지션별 오픈 레인지",
         "포지션 선택 시 해당 레인지만 하이라이트",
-        "포켓페어·수티드·오프수트 구분 색상"
+        "가장 이른 오픈 포지션별(UTG~SB) 핸드 색상 구분"
       ],
       publisher: { "@type": "Organization", name: "홀덤마스터", url: SITE },
     },

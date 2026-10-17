@@ -100,7 +100,7 @@ const IT_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Siamo ancora al preflop, quindi la scorciatoia «outs × 2/4» non si applica. L'equity in alto deriva da ${k} mani simulate contro le mani con cui ogni avversario potrebbe entrare nel piatto dalla sua posizione.`
-      : `Non hai nessuno degli outs conteggiati da questo strumento: nessuna carta completa un colore o una scala, né migliora la categoria della tua mano (set, doppia coppia o coppia con un'overcard). La scorciatoia «outs × 2/4» quindi non si applica. L'equity in alto deriva da ${k} mani simulate contro tutte le mani compatibili con le azioni che hai visto.`,
+      : `Non hai nessuno degli outs conteggiati da questo strumento: nessuna carta completa un colore o una scala, né migliora la categoria della tua mano (set o trips, doppia coppia o coppia con un'overcard). La scorciatoia «outs × 2/4» quindi non si applica. L'equity in alto deriva da ${k} mani simulate contro tutte le mani compatibili con le azioni che hai visto.`,
   foldWinNote: "Tutti gli avversari hanno foldato: il piatto è tuo. Il 100% in alto è il risultato della mano, non una stima simulata.",
   riverNote: "Siamo al river: non ci sono altre carte da distribuire e la scorciatoia «outs × 2/4» non si applica. L'equity in alto confronta la tua mano finale con tutte le mani compatibili con le azioni che hai visto.",
   chartTitle: "📈 Equity per street: tutte le carte scoperte",
@@ -243,7 +243,7 @@ const IT_UI: QuizUI = {
         Tutti pagano un ante di {ANTE} e partono con uno stack di {n(STACK)}. Non foldi mai: è il principio dell&rsquo;esercizio,
         arrivi al river e poi analizzi la mano. L&rsquo;equity è una stima simulata con un campione fisso:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} simulazioni</b> al preflop e{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulazioni</b> dal flop in poi (errore standard di circa 0,25–0,35 percentage points).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulazioni</b> dal flop in poi (errore standard al massimo di circa 0,25–0,35 percentage points — tanto più piccolo quanto più il valore è lontano dal 50%).
         Ogni mano usa un seme casuale fisso: mostra quindi gli stessi valori su qualsiasi dispositivo. In caso di pareggio,
         il piatto si divide in parti uguali tra i giocatori coinvolti (metà a testa in due).
       </p>

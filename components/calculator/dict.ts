@@ -558,7 +558,7 @@ export const CALC_DICT_EN: CalcDict = {
       AQs: { desc: "Strong hand; more valuable in position", action: "Raise from most positions" },
       AJs: { desc: "Great on BTN/CO, weak from UTG", action: "Raise mid/late; from UTG raise or fold — never limp" },
       A10s: { desc: "One of the top suited aces", action: "Raise mid/late; from UTG raise or fold — never limp" },
-      KQs: { desc: "High flush + straight draw potential", action: "Raise from most positions" },
+      KQs: { desc: "Makes king-high flushes and Broadway straights", action: "Raise from most positions" },
       KJs: { desc: "Strong drawing hand", action: "Raise in LP; fold or raise from EP — never limp" },
       "99": { desc: "Medium pair, watch overcard flops", action: "Raise most positions; careful deep" },
       // 🔴 2026-09-25 — 88은 요약행(T2 «Raise most positions»)·99와 같은 급이다. 09-21의 «88 = 77 동문»은
@@ -807,7 +807,7 @@ export const CALC_DICT_EN: CalcDict = {
     {
       badge: "Quick reference",
       h2: "Pocket aces vs random hands — by number of opponents",
-      intro: "How often AA wins when everyone is all-in preflop against N random hands (Monte Carlo, 8,000,000 runouts per row). The first two callers cost the aces about 10 points each; after that each one costs less.",
+      intro: "AA's equity — its share of the pot, with ties counted as splits — when everyone is all-in preflop against N random hands (Monte Carlo, 8,000,000 runouts per row). The first two callers cost the aces about 10 points each; after that each one costs less.",
       th: ["Opponents", "AA equity"],
       align: ["left", "right"],
       emphasis: 1,
@@ -816,7 +816,7 @@ export const CALC_DICT_EN: CalcDict = {
         ["1", "85.2%"], ["2", "73.4%"], ["3", "63.8%"], ["4", "55.9%"],
         ["5", "49.2%"], ["6", "43.6%"], ["7", "38.7%"], ["8", "34.6%"],
       ],
-      note: "That is why aces want a heads-up pot: against five random hands the best starting hand in Hold'em is no longer a favorite to win the pot (49.2%, with the other five sharing the rest). Set an opponent to “Random hand” in the equity calculator to test any hand the same way (it takes up to three opponents). Why big hands shrink in multiway pots is in",
+      note: "That is why aces want a heads-up pot: against five random hands the best starting hand in Hold'em no longer owns even half the pot (49.2% equity, with the other five sharing the rest). Set an opponent to “Random hand” in the equity calculator to test any hand the same way (it takes up to three opponents). Why big hands shrink in multiway pots is in",
       link: { slug: "holdem-equity", text: "Poker Equity Explained" },
       linkTail: ".",
     },

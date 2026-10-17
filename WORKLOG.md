@@ -1,3 +1,11 @@
+## 2026-10-17 (14) — EN 손질 회차 4 · CP-ⓑ 도구 몫 · EN 11파일 + 17로케일·KO 약 250자리 · MB-382·383
+
+- 범위 = 핸드오프 «EN 손질 4». 근거 = 검수장 `검수-MB372-th도구·족보글` CLASSIFY §4 + astra thA·thB «EN 동형» 절 + j3 thA·thB §3·§5. 문안은 본체. 우편함: 새 MA 0 · 솔버 S-105(참고용) · S-106(pl 출시 · `/pl/solver` 열면 알림 요청) → MB-383 ACK.
+- EN: calc FAQ AA vs KK(단독 승 81.7 · 무 0.46 · equity 81.9 — 본체 전수 1,712,304보드×3 무늬 조합 1:4:1 재검산) · pot odds «no more betting can follow» · Quick reference AA vs N intro·note equity로 · KQs «Makes king-high flushes and Broadway straights» · glossary 7(All-in 사이드팟 · Blinds 헤즈업 · Check BB 옵션 · Equity 무승부 분할 예 60+10/2=65 · Outs · Pot 전원 폴드 · Pot Odds) · hand-chart FAQ 42% = KO faq L27 꼴(71/169 타입 · 콤보 35.4%) · featureList 포지션 색 · seo.description·notes GTO 표방 삭제(it·pl 노트 선례) · tournaments heroLead «each card with a source link» · Triton FAQ·note «no satellites» 삭제(공식 Jeju II 결과 기사 2026-09-08 «won through a series of online satellites to book his package to Jeju» 직접 확인 · 추천제 = 공식 축어 유지 · KO note·`docs/tournament-spine.md` 같이) · hpt-5 «Seoul, Seoul»(FIELD 값에서 도시 제거 · 보드·schema는 city 따로) · quiz noDrawNote «set or trips» · rangeNote «equity» · 표준오차 «at most … less the further from 50%» · page description «6-max or 9-max»(옛 176자 → 155자).
+- 전파 = 서브 5갈래(de·fr·es·pt·it 58 · id·ms·vi·tr·pl 52 · ja·zh·zh-hant·KO 35 · ar·hi·th·ru 45 · tournaments-i18n 16로케일 39) · 로케일별 «같은 결함 있을 때만» · 이미 맞음 다수(hand-chart ⑥⑦⑧ 대부분 선행 정정).
+- 게이트: U+FFFD 0 · 백틱 증감 0 · 빌드(아래).
+- 🪶 남김: quiz EN215 «consensus ranges cross-checked» 출처 = UNV(주석만) · it·pl 표준오차 «percentage points» 영어 잔존(pl 용어 규칙 3 = pp) · zh·zh-hant 회장명 «首尔» 접두 삭제 = 공식 중국어 상호 미확인 · zh·zh-hant·ja rangeNote «勝率» = 화면 전체 equity 표기라 유지.
+
 ## 2026-10-17 (13) — EN 손질 회차 3 · CQ-ⓑ + CP-ⓑ 족보 글 몫 · EN 43자리 + 15로케일 64파일 · MB-381
 
 - 범위 = 핸드오프 «EN 손질 3». 자리 실측 결과 CP-ⓑ 도구 몫(calc·glossary·quiz·hand-chart·tournaments)이 별개 덩어리라 90분 한도로 **회차 4로 분리** — 이번 = 족보 형제 5편(hand-rankings·kicker·tiebreak-rules·split-pot-rules·flush-vs-straight). 우편함: 새 MA 0.

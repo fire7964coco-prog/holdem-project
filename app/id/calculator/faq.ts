@@ -16,7 +16,7 @@
 //      🔴 2022판은 «live hand 중»만 금지했지만 2024판 5-D는 «at the table» 전체다 — 되돌리지 마라(zh-hant 회차 교훈).
 //      🔴 합법성 축은 열지 않는다(정보 제공만 · 메모리 `legality-ban-scope-topic-vs-tangent`).
 //
-// 🔴 §13: 수치는 EN과 동일(id 고유 Q18의 «2024 · Rule 5»와 4·2 재서술의 «1,6 · 2,6»만 EN에 없다) — 82% · 81,9% · 0,5% · 88/12 · 66/34 · 46~47% · 45% · 43% · 2,5~3 ·
+// 🔴 §13: 수치는 EN과 동일(id 고유 Q18의 «2024 · Rule 5»와 4·2 재서술의 «1,6 · 2,6»만 EN에 없다) — 82% · 81,9% · 81,7% · 0,5% · 88/12 · 66/34 · 46~47% · 45% · 43% · 2,5~3 ·
 //   30% · 7% · 50/50 · 36% · 18% · 54,1% · 60% · 1,6 · 2,6 · 35,0% · 19,1% · 19,6% · 990 · 44 · 1,7 juta ·
 //   60.000 · 0,3 · 3.000 ÷ (10.000) 13.000 ≈ 23,1% · 33,3% · 25% · 4,2 : 1 · 40% · $276 · $458 · (TDA) 2024 · Rule 5.
 //   구분자만 인니식(`.` 천단위 · `,` 소수 · **% 앞 공백 없음** — §5-A C).
@@ -32,7 +32,7 @@ export const CALCULATOR_FAQ_ID: { q: string; a: string }[] = [
   },
   {
     q: "Berapa peluang AA lawan KK?",
-    a: "Pocket ace menang sekitar 82% melawan pocket king di preflop (81,9% kalau dirata-ratakan dari semua kombinasi jenis kartu, dengan peluang seri 0,5%). AA melawan AK suited sekitar 88% berbanding 12%, dan KK melawan AK suited sekitar 66% berbanding 34%.",
+    a: "Pocket ace unggul sekitar 82% atas pocket king di preflop: dirata-ratakan dari semua kombinasi jenis kartu, AA menang langsung 81,7% dan seri sekitar 0,5%, sehingga equity-nya 81,9%. AA melawan AK suited sekitar 88% berbanding 12%, dan KK melawan AK suited sekitar 66% berbanding 34%.",
   },
   {
     q: "Apakah AK lawan pocket pair benar-benar coin flip?",
@@ -48,7 +48,7 @@ export const CALCULATOR_FAQ_ID: { q: string; a: string }[] = [
   },
   {
     q: "Bagaimana cara menghitung pot odds?",
-    a: "Jumlah call ÷ (pot setelah bet + jumlah call) = equity minimum yang Anda butuhkan. Misalnya, call 3.000 saat pot sudah berisi 10.000 termasuk bet-nya adalah 3.000 ÷ 13.000 ≈ 23,1%, jadi call menguntungkan begitu equity Anda di atas 23,1%. Bet sebesar pot selalu menuntut 33,3%; bet setengah pot menuntut 25%.",
+    a: "Jumlah call ÷ (pot setelah bet + jumlah call) = equity minimum yang Anda butuhkan. Misalnya, call 3.000 saat pot sudah berisi 10.000 termasuk bet-nya adalah 3.000 ÷ 13.000 ≈ 23,1%. Jika tidak ada lagi taruhan yang bisa menyusul (misalnya all-in), call menguntungkan begitu equity Anda di atas 23,1%. Bet sebesar pot selalu menuntut 33,3%; bet setengah pot menuntut 25%.",
   },
   {
     q: "Berapa pot odds yang dibutuhkan untuk call dengan flush draw?",

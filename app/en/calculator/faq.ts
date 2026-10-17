@@ -13,7 +13,7 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "What are the odds of AA vs KK?",
-    a: "Pocket aces win about 82% of the time against pocket kings preflop (81.9% averaged over every suit combination, with a 0.5% chance of a tie). AA against AK suited is about 88% to 12%, and KK against AK suited about 66% to 34%.",
+    a: "Pocket aces are about an 82% favorite against pocket kings preflop: averaged over every suit combination they win outright 81.7% of the time and tie about 0.5%, for 81.9% equity. AA against AK suited is about 88% to 12%, and KK against AK suited about 66% to 34%.",
   },
   {
     q: "Is AK vs a pocket pair a coin flip?",
@@ -29,7 +29,7 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How do you calculate pot odds?",
-    a: "Call amount ÷ (pot after the bet + call amount) = the minimum equity you need. For example, a 3,000 call when the pot already holds 10,000 including the bet is 3,000 ÷ 13,000 ≈ 23.1%, so calling is profitable when your equity is above 23.1%. A full-pot bet always requires 33.3%; a half-pot bet 25%.",
+    a: "Call amount ÷ (pot after the bet + call amount) = the minimum equity you need. For example, a 3,000 call when the pot already holds 10,000 including the bet is 3,000 ÷ 13,000 ≈ 23.1%. If no more betting can follow (an all-in, for example), calling is profitable whenever your equity is above 23.1%. A full-pot bet always requires 33.3%; a half-pot bet 25%.",
   },
   {
     q: "What pot odds do I need to call with a flush draw?",

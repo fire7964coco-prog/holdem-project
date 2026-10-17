@@ -14,7 +14,7 @@ export const CALCULATOR_FAQ_MS: { q: string; a: string }[] = [
   },
   {
     q: "Berapakah peluang AA lawan KK?",
-    a: "Pocket ace menang kira-kira 82% masa menghadapi pocket king pada preflop (81.9% dipuratakan merentasi setiap gabungan suit, dengan peluang seri 0.5%). AA lawan AK suited kira-kira 88% berbanding 12%, dan KK lawan AK suited kira-kira 66% berbanding 34%.",
+    a: "Pocket ace menjadi pilihan kira-kira 82% menghadapi pocket king pada preflop: dipuratakan merentasi setiap gabungan suit, AA menang terus 81.7% dan seri kira-kira 0.5%, menjadikan equity-nya 81.9%. AA lawan AK suited kira-kira 88% berbanding 12%, dan KK lawan AK suited kira-kira 66% berbanding 34%.",
   },
   {
     q: "Adakah AK lawan pocket pair itu benar-benar coin flip?",
@@ -30,7 +30,7 @@ export const CALCULATOR_FAQ_MS: { q: string; a: string }[] = [
   },
   {
     q: "Bagaimanakah cara mengira pot odds?",
-    a: "Jumlah call ÷ (pot selepas bet + jumlah call) = equity minimum yang anda perlukan. Contohnya, call 3,000 apabila pot sudah mengandungi 10,000 termasuk bet itu ialah 3,000 ÷ 13,000 ≈ 23.1%, jadi call itu menguntungkan apabila equity anda melebihi 23.1%. Bet sebesar pot sentiasa memerlukan 33.3%; bet separuh pot 25%.",
+    a: "Jumlah call ÷ (pot selepas bet + jumlah call) = equity minimum yang anda perlukan. Contohnya, call 3,000 apabila pot sudah mengandungi 10,000 termasuk bet itu ialah 3,000 ÷ 13,000 ≈ 23.1%. Jika tiada lagi pertaruhan boleh menyusul (contohnya all-in), call itu menguntungkan apabila equity anda melebihi 23.1%. Bet sebesar pot sentiasa memerlukan 33.3%; bet separuh pot 25%.",
   },
   {
     q: "Pot odds apakah yang saya perlukan untuk call dengan flush draw?",

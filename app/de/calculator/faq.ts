@@ -22,7 +22,7 @@ export const CALCULATOR_FAQ_DE: { q: string; a: string }[] = [
   },
   {
     q: "Wie stehen die Odds bei AA gegen KK?",
-    a: "Pocket Asse gewinnen preflop etwa 82% gegen Pocket Könige (81,9% im Mittel über alle Farbkombinationen, dazu 0,5% Split). AA gegen AK suited steht etwa 88 zu 12, und KK gegen AK suited etwa 66 zu 34.",
+    a: "Pocket Asse sind preflop gegen Pocket Könige etwa 82% Favorit: im Mittel über alle Farbkombinationen gewinnen sie 81,7% der Fälle allein und teilen in etwa 0,5% den Pot – zusammen 81,9% Equity. AA gegen AK suited steht etwa 88 zu 12, und KK gegen AK suited etwa 66 zu 34.",
   },
   {
     q: "Ist AK gegen ein Pocket Pair ein Coinflip?",
@@ -43,7 +43,7 @@ export const CALCULATOR_FAQ_DE: { q: string; a: string }[] = [
   },
   {
     q: "Welche Formel benutzt der Pot-Odds-Rechner?",
-    a: "Call-Betrag ÷ (Pot nach der Bet + Call-Betrag) = die Mindest-Equity, die du brauchst. Ein Call von 3.000 in einen Pot, in dem inklusive der Bet schon 10.000 liegen, ergibt 3.000 ÷ 13.000 ≈ 23,1%; der Call ist also profitabel, wenn deine Equity über 23,1% liegt. Eine potgroße Bet verlangt immer 33,3%, eine halbe 25%.",
+    a: "Call-Betrag ÷ (Pot nach der Bet + Call-Betrag) = die Mindest-Equity, die du brauchst. Ein Call von 3.000 in einen Pot, in dem inklusive der Bet schon 10.000 liegen, ergibt 3.000 ÷ 13.000 ≈ 23,1%. Kann danach nicht mehr gesetzt werden (etwa bei einem All-in), ist der Call profitabel, sobald deine Equity über 23,1% liegt. Eine potgroße Bet verlangt immer 33,3%, eine halbe 25%.",
   },
   {
     q: "Welche Pot Odds brauche ich, um mit einem Flushdraw zu callen?",

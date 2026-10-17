@@ -7,7 +7,7 @@ export const CALCULATOR_FAQ_IT: { q: string; a: string }[] = [
   },
   {
     q: "Quali sono le probabilità di AA contro KK?",
-    a: "Una coppia di assi vince circa l'82% delle volte contro una coppia di re preflop (81,9% come media su tutte le combinazioni di semi, con lo 0,5% di probabilità di pareggio). AA contro AK suited è circa 88% contro 12%, mentre KK contro AK suited è circa 66% contro 34%.",
+    a: "Una coppia di assi è favorita circa all'82% contro una coppia di re preflop: in media su tutte le combinazioni di semi vince da sola l'81,7% delle volte e pareggia circa lo 0,5%, per un'equity dell'81,9%. AA contro AK suited è circa 88% contro 12%, mentre KK contro AK suited è circa 66% contro 34%.",
   },
   {
     q: "AK contro una coppia servita è un coin flip?",
@@ -23,7 +23,7 @@ export const CALCULATOR_FAQ_IT: { q: string; a: string }[] = [
   },
   {
     q: "Come si calcolano le pot odds?",
-    a: "Importo del call ÷ (piatto dopo la puntata + importo del call) = equity minima richiesta. Per esempio, chiamare 3.000 quando nel piatto ci sono già 10.000, inclusa la puntata, richiede 3.000 ÷ 13.000 ≈ 23,1%: il call è profittevole se la tua equity supera il 23,1%. Una puntata pari al piatto richiede sempre il 33,3%; una di metà piatto il 25%.",
+    a: "Importo del call ÷ (piatto dopo la puntata + importo del call) = equity minima richiesta. Per esempio, chiamare 3.000 quando nel piatto ci sono già 10.000, inclusa la puntata, richiede 3.000 ÷ 13.000 ≈ 23,1%. Se non possono seguire altre puntate (per esempio con un all-in), il call è profittevole se la tua equity supera il 23,1%. Una puntata pari al piatto richiede sempre il 33,3%; una di metà piatto il 25%.",
   },
   {
     q: "Quali pot odds servono per chiamare con un progetto di colore?",

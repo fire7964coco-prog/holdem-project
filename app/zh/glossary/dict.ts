@@ -74,7 +74,7 @@ export const GLOSSARY_DICT_ZH: GlossaryDict = {
     { term: "平跟入池（Limp）", cat: "Action", aka: ["Limp", "平跟", "溜入"], desc: "翻前只跟大盲、不加注就入池——通常是一种偏弱、被动的打法。" },
     { term: "nuts（坚果牌）", cat: "Hand", aka: ["Nuts", "the nuts", "坚果", "坚果牌"], desc: "在当前牌面下能拿到的最强牌（后面的街可能会改变它）。" },
     { term: "非同花（Offsuit）", cat: "Hand", aka: ["Offsuit", "不同花", "o"], desc: "两张不同花色的牌（例如 A♠K♦）。比同一手牌的同花版本略弱，因为它凑成同花的可能性小得多。" },
-    { term: "outs（补牌）", cat: "Math", aka: ["Outs", "补牌"], desc: "牌堆里剩下的、能让你的牌变成赢牌的那些牌。同花听牌有 9 张 outs；两头顺听牌有 8 张。" },
+    { term: "outs（补牌）", cat: "Math", aka: ["Outs", "补牌"], desc: "牌堆里剩下的、能让你的牌变成应该能赢的牌的那些牌。同花听牌有 9 张 outs；两头顺听牌有 8 张——但如果其中有牌同时让对手成更大的牌，就要扣掉。" },
     { term: "超对（Overpair）", cat: "Hand", aka: ["Overpair"], desc: "一对比牌面上每一张牌都大的口袋对子。" },
     { term: "位置（Position）", cat: "Position", aka: ["Position", "有位置", "无位置", "In position", "Out of position"], desc: "你在下注顺序里行动的先后。越晚行动（“有位置”）优势越大，因为你能先看到对手怎么做再做决定。" },
     { term: "底池（Pot）", cat: "Board", aka: ["Pot", "锅"], desc: "正在争夺的全部筹码。" },

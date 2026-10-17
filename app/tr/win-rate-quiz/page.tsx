@@ -27,7 +27,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Poker Simulator ile poker öğren: nerede fold etmeliydin? | HoldemMaster";
 const DESCRIPTION =
-  "Rakibin kartlarını görmeden, gerçek masadaki gibi 6-max bir el oyna: her street'te equity'n, flop'tan itibaren pot oranı ve nerede fold etmen gerektiği.";
+  "Rakip kartlarını görmeden, gerçek masadaki gibi 6-max veya 9-max bir el oyna: street street equity'n, flop'tan itibaren pot oranı, nerede fold etmen gerektiği.";
 const OG_DESCRIPTION =
   "Rakip kartları hep kapalı, gerçek pokerdeki gibi. Equity'ni street street, pot oranını flop'tan itibaren izle; sonra nerede fold etmen gerektiğini incele.";
 

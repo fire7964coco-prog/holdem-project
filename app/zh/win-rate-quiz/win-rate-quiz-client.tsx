@@ -224,7 +224,7 @@ const ZH_UI: QuizUI = {
       <p>
         每人先下 {ANTE} 的前注，起始筹码 {STACK.toLocaleString("en-US")}。你从不弃牌——这正是重点，这样你才能看到河牌并复盘。胜率是固定样本数的模拟估计值：翻牌前{" "}
         <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} 次</b>，翻牌起{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} 次</b>（标准误差约 0.25–0.35%p）。每一手都用固定的随机种子，所以同一手牌在任何设备上显示的数字都一样。平局按分底池的人数平分（两人平局各得一半）。
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} 次</b>（标准误差最多约 0.25–0.35%p，数字离 50% 越远就越小）。每一手都用固定的随机种子，所以同一手牌在任何设备上显示的数字都一样。平局按分底池的人数平分（两人平局各得一半）。
       </p>
       <p className="mt-2">
         <b className="text-foreground">亮出对手底牌时</b>，会显示所有手牌已知时各座位的胜率。从翻牌开始，这会把剩下的每一张牌都精确算一遍（只有翻牌前是 {SAMPLES.known.toLocaleString("en-US")} 次模拟），而且它不会进入屏幕上的胜率，也不影响跟注/弃牌判定——真实牌桌上你不会有这个信息。

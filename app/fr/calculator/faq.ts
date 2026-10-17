@@ -34,7 +34,7 @@ export const CALCULATOR_FAQ_FR: { q: string; a: string }[] = [
   },
   {
     q: "Quelles sont les cotes de AA contre KK ?",
-    a: "Une paire d'as gagne environ 82 % du temps contre une paire de rois en préflop (81,9 % en moyenne sur toutes les combinaisons d'enseignes, avec 0,5 % de chances d'égalité). AA contre AK assortis, c'est environ 88 % contre 12 %, et KK contre AK assortis environ 66 % contre 34 %.",
+    a: "Une paire d'as est favorite à environ 82 % contre une paire de rois en préflop : en moyenne sur toutes les combinaisons d'enseignes, elle gagne seule 81,7 % du temps et fait égalité environ 0,5 % du temps, soit 81,9 % d'équité. AA contre AK assortis, c'est environ 88 % contre 12 %, et KK contre AK assortis environ 66 % contre 34 %.",
   },
   {
     q: "AK contre une paire servie, est-ce vraiment un coin flip ?",
@@ -50,7 +50,7 @@ export const CALCULATOR_FAQ_FR: { q: string; a: string }[] = [
   },
   {
     q: "Comment calculer les cotes du pot ?",
-    a: "Montant à suivre ÷ (pot après la mise + montant à suivre) = l'équité minimale dont tu as besoin. Par exemple, suivre 3 000 quand le pot contient déjà 10 000 mise adverse comprise, c'est 3 000 ÷ 13 000 ≈ 23,1 % : le call est rentable dès que ton équité dépasse 23,1 %. Une mise de la taille du pot demande toujours 33,3 % ; une demi-mise du pot, 25 %.",
+    a: "Montant à suivre ÷ (pot après la mise + montant à suivre) = l'équité minimale dont tu as besoin. Par exemple, suivre 3 000 quand le pot contient déjà 10 000 mise adverse comprise, c'est 3 000 ÷ 13 000 ≈ 23,1 %. Si plus aucune mise ne peut suivre (un tapis, par exemple), le call est rentable dès que ton équité dépasse 23,1 %. Une mise de la taille du pot demande toujours 33,3 % ; une demi-mise du pot, 25 %.",
   },
   {
     q: "Quelles cotes du pot faut-il pour suivre avec un tirage couleur ?",

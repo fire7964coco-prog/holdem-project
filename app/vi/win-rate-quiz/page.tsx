@@ -27,7 +27,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Poker Simulator để luyện tập: lẽ ra bạn nên fold ở đâu? | HoldemMaster";
 const DESCRIPTION =
-  "Chơi một ván 6-max mà không thấy bài đối thủ, như ở bàn thật: equity của bạn ở mỗi vòng cược, pot odds từ flop trở đi và lẽ ra bạn nên fold ở đâu.";
+  "Chơi một ván 6-max hoặc 9-max mà không thấy bài đối thủ, như ở bàn thật: equity của bạn ở mỗi vòng cược, pot odds từ flop trở đi và lẽ ra bạn nên fold ở đâu.";
 const OG_DESCRIPTION =
   "Bài đối thủ luôn úp, như khi chơi poker thật. Theo dõi equity qua từng vòng cược và pot odds từ flop trở đi, rồi xem lại lẽ ra bạn nên fold ở đâu.";
 

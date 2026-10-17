@@ -13,7 +13,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Poker-Simulator: Wann hättest du folden sollen? | HoldemMaster";
 const DESCRIPTION =
-  "Kostenloser Poker-Simulator: Spiel eine 6-max-Hand blind, sieh deine Equity in jeder Setzrunde und ab dem Flop die Pot Odds – und wo Folden richtig war.";
+  "Kostenloser Poker-Simulator: Spiel eine 6-max- oder 9-max-Hand blind, sieh deine Equity jede Setzrunde, ab dem Flop die Pot Odds – und wo Folden richtig war.";
 const OG_DESCRIPTION =
   "Die Gegnerkarten bleiben verdeckt wie beim echten Poker. Verfolge deine Equity und ab dem Flop die Pot Odds – und sieh danach, wo du hättest folden sollen.";
 

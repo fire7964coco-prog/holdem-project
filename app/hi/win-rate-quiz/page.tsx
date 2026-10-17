@@ -29,7 +29,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Poker Simulator से poker practice: कहाँ fold करना था? | HoldemMaster";
 const DESCRIPTION =
-  "विरोधियों के कार्ड देखे बिना, असली टेबल की तरह 6-max हैंड खेलें: हर street पर आपकी equity, flop से pot odds, और आपको कहाँ fold करना चाहिए था।";
+  "विरोधियों के कार्ड देखे बिना, असली टेबल की तरह 6-max या 9-max हैंड खेलें: हर street पर आपकी equity, flop से pot odds, और आपको कहाँ fold करना चाहिए था।";
 const OG_DESCRIPTION =
   "विरोधियों के कार्ड हमेशा छिपे, असली पोकर की तरह। हर street पर अपनी equity और flop से pot odds देखें, फिर समीक्षा करें कि कहाँ fold करना चाहिए था।";
 

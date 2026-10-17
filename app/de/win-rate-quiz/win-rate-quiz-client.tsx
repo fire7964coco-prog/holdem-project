@@ -111,7 +111,7 @@ const DE_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Wir sind noch preflop, deshalb greift die Faustregel „Outs × 2/4“ noch nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen die Hände, mit denen jeder Gegner von seiner Position aus plausibel in den Pot gehen würde.`
-      : `Du hast keinen der Outs, die dieses Tool zählt – keine Karte vervollständigt Flush oder Straße oder bringt dich eine Handkategorie höher zu Set, Zwei Paaren oder einem Overcard-Paar –, deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
+      : `Du hast keinen der Outs, die dieses Tool zählt – keine Karte vervollständigt Flush oder Straße oder bringt dich eine Handkategorie höher zu Set oder Drilling, Zwei Paaren oder einem Overcard-Paar –, deshalb greift die Faustregel „Outs × 2/4“ hier nicht. Die Equity oben stammt aus ${k.replace(/,/g, ".")} durchgespielten Händen gegen jede Hand, die zu den gesehenen Aktionen passt.`,
   foldWinNote: "Alle Gegner haben gefoldet, der Pot gehört dir. Die 100% oben sind keine simulierte Zahl, sondern das Ergebnis dieser Hand.",
   riverNote: "Das ist der River – es kommen keine Karten mehr, deshalb greift die Faustregel „Outs × 2/4“ nicht. Die Equity oben vergleicht deine fertige Hand mit jeder Hand, die zu den gesehenen Aktionen passt.",
   chartTitle: "📈 Equity Street für Street – alle Karten offen",
@@ -252,7 +252,7 @@ const DE_UI: QuizUI = {
         damit du den River siehst und die Hand analysieren kannst. Die Equity ist ein simulierter Schätzwert mit fester
         Stichprobengröße:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} Durchläufe</b> preflop und{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} Durchläufe</b> ab dem Flop (Standardfehler etwa 0,25–0,35 Prozentpunkte).
+        <b className="text-foreground">{n(SAMPLES.postflop)} Durchläufe</b> ab dem Flop (Standardfehler höchstens etwa 0,25–0,35 Prozentpunkte – umso kleiner, je weiter der Wert von 50% entfernt ist).
         Jede Hand nutzt einen festen Zufalls-Seed, deshalb zeigt dieselbe Hand auf jedem Gerät dieselben Zahlen. Bei Gleichstand
         wird der Pot unter den Spielern mit gleich guter Hand geteilt (bei einem Gleichstand zu zweit je die Hälfte).
       </p>

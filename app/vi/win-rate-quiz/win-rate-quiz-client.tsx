@@ -116,7 +116,7 @@ const VI_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Đây vẫn là preflop, nên cách tính nhanh «outs × 2/4» chưa áp dụng được. Equity phía trên đến từ ${k} ván mô phỏng đấu với những tay bài mà mỗi đối thủ có thể dùng để vào pot từ vị trí của họ.`
-      : `Bạn không có lá outs nào mà công cụ này đếm — không lá nào hoàn thành thùng hay sảnh, hoặc nâng tay bài của bạn lên một bậc (set, hai đôi, hay overcard thành đôi) — nên cách tính nhanh «outs × 2/4» không áp dụng ở đây. Equity phía trên đến từ ${k} ván mô phỏng đấu với mọi tay bài khớp với các hành động bạn đã thấy.`,
+      : `Bạn không có lá outs nào mà công cụ này đếm — không lá nào hoàn thành thùng hay sảnh, hoặc nâng tay bài của bạn lên một bậc (set hoặc trips, hai đôi, hay overcard thành đôi) — nên cách tính nhanh «outs × 2/4» không áp dụng ở đây. Equity phía trên đến từ ${k} ván mô phỏng đấu với mọi tay bài khớp với các hành động bạn đã thấy.`,
   foldWinNote: "Tất cả đối thủ đã fold, nên pot thuộc về bạn. Con số 100% phía trên không phải kết quả mô phỏng — đó là kết quả của ván bài này.",
   riverNote: "Đây là river, không còn lá nào được chia thêm, nên cách tính nhanh «outs × 2/4» không áp dụng. Equity phía trên so tay bài cuối cùng của bạn với mọi tay bài khớp với các hành động bạn đã thấy.",
   chartTitle: "📈 Equity qua từng vòng cược — khi mọi tay bài đều lật ngửa",
@@ -254,7 +254,7 @@ const VI_UI: QuizUI = {
         Mọi người chơi đều trả ante {ANTE} và bắt đầu với stack {n(STACK)}. Bạn không bao giờ fold — đó chính là mục đích:
         bạn xem đến river rồi xem lại ván bài. Equity là ước lượng từ mô phỏng với số mẫu cố định:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} lần mô phỏng</b> ở preflop và{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} lần mô phỏng</b> từ flop trở đi (sai số chuẩn khoảng 0,25–0,35 điểm phần trăm).
+        <b className="text-foreground">{n(SAMPLES.postflop)} lần mô phỏng</b> từ flop trở đi (sai số chuẩn tối đa khoảng 0,25–0,35 điểm phần trăm — càng xa 50% càng nhỏ).
         Mỗi ván dùng một seed ngẫu nhiên cố định, nên cùng một ván sẽ cho cùng các con số trên mọi thiết bị. Khi hòa, pot
         được chia đều cho những người chơi hòa nhau (mỗi người một nửa nếu hai người hòa).
       </p>

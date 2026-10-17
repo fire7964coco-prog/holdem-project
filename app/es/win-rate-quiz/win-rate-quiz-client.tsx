@@ -104,7 +104,7 @@ const ES_UI: QuizUI = {
   noDrawNote: (basis, n) =>
     basis === "seat"
       ? `Todavía es preflop, así que el atajo «outs × 2/4» aún no se aplica. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra las manos con las que cada rival entraría razonablemente al bote desde su posición.`
-      : `No tienes ninguno de los outs que cuenta esta herramienta —ninguna carta completa color o escalera ni sube tu mano una categoría a set, doble pareja o pareja con una sobrecarta—, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
+      : `No tienes ninguno de los outs que cuenta esta herramienta —ninguna carta completa color o escalera ni sube tu mano una categoría a set o trío, doble pareja o pareja con una sobrecarta—, así que el atajo «outs × 2/4» no se aplica aquí. La equity de arriba sale de jugar ${n.replace(/\./g, ",")} manos contra todas las manos que encajan con las acciones que viste.`,
   foldWinNote: "Todos los rivales foldearon, así que el bote es tuyo. El 100% de arriba no es una cifra simulada: es el resultado de esta mano.",
   riverNote: "Es el river, así que no quedan cartas por salir y el atajo «outs × 2/4» no se aplica. La equity de arriba compara tu mano final con todas las manos que encajan con las acciones que viste.",
   chartTitle: "📈 Equity calle a calle — todas las cartas boca arriba",
@@ -241,7 +241,7 @@ const ES_UI: QuizUI = {
         Todos ponen un ante de {ANTE} y empiezan con un stack de {STACK.toLocaleString("en-US")}. Tú nunca foldeas — esa es la idea,
         para que veas el river y hagas el repaso. La equity es una estimación simulada con un tamaño de muestra fijo:{" "}
         <b className="text-foreground">{SAMPLES.preflop.toLocaleString("en-US")} simulaciones</b> preflop y{" "}
-        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} simulaciones</b> desde el flop (error estándar de unos 0.25–0.35 pp).
+        <b className="text-foreground">{SAMPLES.postflop.toLocaleString("en-US")} simulaciones</b> desde el flop (error estándar de, como mucho, unos 0.25–0.35 pp; menor cuanto más lejos esté la cifra del 50%).
         Cada mano usa una semilla aleatoria fija, así que la misma mano muestra los mismos números en cualquier dispositivo. Los empates se reparten
         según el número de jugadores que comparten el bote (la mitad para cada uno en un empate a dos).
       </p>

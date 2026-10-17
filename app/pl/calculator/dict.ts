@@ -383,7 +383,7 @@ export const CALC_DICT_PL: CalcDict = {
         "action": "Przebijaj ze środkowej/późnej pozycji; z UTG przebijaj lub pasuj — nigdy limp"
       },
       "KQs": {
-        "desc": "Potencjał wysokiego koloru i strita",
+        "desc": "Daje kolor do króla i strita Broadway",
         "action": "Przebijaj z większości pozycji"
       },
       "KJs": {
@@ -936,7 +936,7 @@ export const CALC_DICT_PL: CalcDict = {
     {
       "badge": "Szybki podgląd",
       "h2": "Para asów przeciw losowym rękom — liczba przeciwników",
-      "intro": "Jak często AA wygrywa, gdy wszyscy grają all-in preflop przeciw N losowym rękom (Monte Carlo, 8 000 000 runoutów na wiersz). Pierwsi dwaj sprawdzający kosztują asy po około 10 percentage points; każdy kolejny kosztuje mniej.",
+      "intro": "Equity AA — jego udział w puli, z remisami liczonymi jako podział puli — gdy wszyscy grają all-in preflop przeciw N losowym rękom (Monte Carlo, 8 000 000 runoutów na wiersz). Pierwsi dwaj sprawdzający kosztują asy po około 10 percentage points; każdy kolejny kosztuje mniej.",
       "th": [
         "Przeciwnicy",
         "Equity AA"
@@ -983,7 +983,7 @@ export const CALC_DICT_PL: CalcDict = {
           "34,6%"
         ]
       ],
-      "note": "Dlatego asy wolą pulę heads-up: przeciw pięciu losowym rękom najlepsza ręka startowa w Hold’em nie jest już faworytem do wygrania puli (49,2%, a pozostałą część dzieli pięć rąk). Ustaw przeciwnikowi „Losowa ręka” w kalkulatorze equity, aby tak samo sprawdzić dowolną rękę (obsługuje do trzech przeciwników)."
+      "note": "Dlatego asy wolą pulę heads-up: przeciw pięciu losowym rękom najlepsza ręka startowa w Hold’em nie ma już nawet połowy puli (49,2% equity, a pozostałą część dzieli pięć rąk). Ustaw przeciwnikowi „Losowa ręka” w kalkulatorze equity, aby tak samo sprawdzić dowolną rękę (obsługuje do trzech przeciwników)."
     },
     {
       "badge": "Szybki podgląd",

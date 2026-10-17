@@ -96,7 +96,7 @@ const PL_UI: QuizUI = {
   formulaCaveat: "Te wartości mierzą różne rzeczy. Górna to szansa TRAFIENIA; dolna to twój udział w puli z WYGRANEJ (remis liczy się jako twój udział w podziale). Możesz trafić i przegrać, jeśli przeciwnik poprawi rękę bardziej, albo nie trafić i wygrać. Ocena opiera się na dolnej wartości.",
   noDrawNote: (basis, k) => basis === "seat"
     ? `To jeszcze preflop, więc skrót „outy × 2/4” nie ma zastosowania. Equity powyżej pochodzi z ${k} prób przeciwko rękom, z którymi każdy przeciwnik mógłby wejść do puli ze swojej pozycji.`
-    : `Nie masz żadnego z outów liczonych przez to narzędzie: żadna karta nie uzupełnia koloru lub strita ani nie podnosi kategorii twojej ręki do seta, dwóch par lub pary z overcard. Skrót „outy × 2/4” nie ma tu zastosowania. Equity powyżej pochodzi z ${k} prób przeciwko wszystkim rękom zgodnym z zaobserwowanymi akcjami.`,
+    : `Nie masz żadnego z outów liczonych przez to narzędzie: żadna karta nie uzupełnia koloru lub strita ani nie podnosi kategorii twojej ręki do seta lub tripsa, dwóch par lub pary z overcard. Skrót „outy × 2/4” nie ma tu zastosowania. Equity powyżej pochodzi z ${k} prób przeciwko wszystkim rękom zgodnym z zaobserwowanymi akcjami.`,
   foldWinNote: "Wszyscy przeciwnicy spasowali, więc pula jest twoja. Powyższe 100% to wynik tego rozdania, a nie szacunek.",
   riverNote: "To river — nie ma już kart do rozdania i skrót „outy × 2/4” nie ma zastosowania. Equity powyżej porównuje twoją końcową rękę ze wszystkimi rękami zgodnymi z zaobserwowanymi akcjami.",
   chartTitle: "📈 Equity na kolejnych streetach — wszystkie karty odkryte",
@@ -228,7 +228,7 @@ const PL_UI: QuizUI = {
       <p>
         Każdy wpłaca ante {ANTE} i zaczyna ze stackiem {n(STACK)}. Nigdy nie pasujesz — o to chodzi w ćwiczeniu: oglądasz river i analizujesz rozdanie.
         Equity jest szacunkiem o stałej liczbie prób: <b className="text-foreground">{n(SAMPLES.preflop)} prób</b> preflop i{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} prób</b> od flopa (błąd standardowy około 0,25–0,35 percentage points).
+        <b className="text-foreground">{n(SAMPLES.postflop)} prób</b> od flopa (błąd standardowy najwyżej około 0,25–0,35 percentage points — tym mniejszy, im dalej wynik od 50%).
         Każde rozdanie ma stałe ziarno losowania, więc pokazuje te same wartości na każdym urządzeniu. Remis dzieli pulę między graczy, którzy ją współdzielą (po połowie przy remisie dwóch graczy).
       </p>
       <p className="mt-2">

@@ -114,7 +114,7 @@ const HI_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `अभी preflop है, इसलिए «outs × 2/4» वाला शॉर्टकट अभी लागू नहीं होता। ऊपर की equity ${k} हैंड के simulation से आती है, जिसमें हर विरोधी अपनी seat से pot में आने लायक हैंड के साथ खेलता है।`
-      : `इस टूल के गिने हुए outs में से आपके पास कोई नहीं है — कोई कार्ड flush या straight पूरा नहीं करता, न आपके हैंड को एक श्रेणी ऊपर (set, two pair या overcard से pair) ले जाता है — इसलिए «outs × 2/4» वाला शॉर्टकट यहाँ लागू नहीं होता। ऊपर की equity ${k} हैंड के simulation से आती है, उन सभी हैंड के ख़िलाफ़ जो आपके देखे गए action से मेल खाते हैं।`,
+      : `इस टूल के गिने हुए outs में से आपके पास कोई नहीं है — कोई कार्ड flush या straight पूरा नहीं करता, न आपके हैंड को एक श्रेणी ऊपर (set या trips, two pair या overcard से pair) ले जाता है — इसलिए «outs × 2/4» वाला शॉर्टकट यहाँ लागू नहीं होता। ऊपर की equity ${k} हैंड के simulation से आती है, उन सभी हैंड के ख़िलाफ़ जो आपके देखे गए action से मेल खाते हैं।`,
   foldWinNote: "सभी विरोधियों ने fold किया, pot आपका है। ऊपर का 100% किसी simulation का नतीजा नहीं — यह इस हैंड का नतीजा है।",
   riverNote: "यह river है; अब कोई कार्ड खुलना बाक़ी नहीं, इसलिए «outs × 2/4» वाला शॉर्टकट लागू नहीं होता। ऊपर की equity आपके आख़िरी हैंड की तुलना उन सभी हैंड से करती है जो आपके देखे गए action से मेल खाते हैं।",
   chartTitle: "📈 हर street पर equity — सभी कार्ड खुले होने पर",
@@ -253,7 +253,7 @@ const HI_UI: QuizUI = {
         हर खिलाड़ी {ANTE} ante डालता है और {n(STACK)} के stack से शुरू करता है। आप कभी fold नहीं करते — मक़सद यही है:
         river देखकर हैंड की समीक्षा करना। Equity एक तय sample संख्या वाला simulation अनुमान है:{" "}
         preflop पर <b className="text-foreground">{n(SAMPLES.preflop)} simulation</b>, flop से आगे{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulation</b> (standard error लगभग 0.25–0.35 प्रतिशत अंक)।
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulation</b> (standard error अधिकतम लगभग 0.25–0.35 प्रतिशत अंक — आँकड़ा 50% से जितना दूर, उतना कम)।
         हर हैंड एक तय random seed इस्तेमाल करता है, इसलिए वही हैंड हर डिवाइस पर वही नंबर दिखाता है। बराबरी पर pot
         बराबरी वाले खिलाड़ियों में बराबर बँटता है (दो खिलाड़ी बराबर हों तो आधा-आधा)।
       </p>

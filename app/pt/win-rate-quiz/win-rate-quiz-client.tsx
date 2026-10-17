@@ -111,7 +111,7 @@ const PT_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Ainda é pré-flop, então o atalho «outs × 2/4» ainda não vale. A equity acima vem de jogar ${k} mãos contra as mãos com que cada adversário plausivelmente entraria no pote a partir da posição dele.`
-      : `Você não tem nenhum dos outs que esta ferramenta conta — nenhuma carta completa flush ou sequência, nem sobe sua mão de categoria para set, dois pares ou um par ao parear uma overcard —, então o atalho «outs × 2/4» não vale aqui. A equity acima vem de jogar ${k} mãos contra todas as mãos que batem com as ações que você viu.`,
+      : `Você não tem nenhum dos outs que esta ferramenta conta — nenhuma carta completa flush ou sequência, nem sobe sua mão de categoria para set ou trinca, dois pares ou um par ao parear uma overcard —, então o atalho «outs × 2/4» não vale aqui. A equity acima vem de jogar ${k} mãos contra todas as mãos que batem com as ações que você viu.`,
   foldWinNote: "Todos os adversários foldaram, então o pote é seu. Os 100% acima não são um número simulado — são o resultado desta mão.",
   riverNote: "É o river, então não há mais cartas para sair e o atalho «outs × 2/4» não vale. A equity acima compara sua mão final com todas as mãos que batem com as ações que você viu.",
   chartTitle: "📈 Equity street a street — todas as cartas abertas",
@@ -249,7 +249,7 @@ const PT_UI: QuizUI = {
         Todo mundo paga um ante de {ANTE} e começa com um stack de {n(STACK)}. Você nunca folda — essa é a ideia,
         para você ver o river e fazer a revisão. A equity é uma estimativa simulada com tamanho de amostra fixo:{" "}
         <b className="text-foreground">{n(SAMPLES.preflop)} simulações</b> no pré-flop e{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simulações</b> a partir do flop (erro padrão de uns 0,25–0,35 pontos percentuais).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simulações</b> a partir do flop (erro padrão de no máximo uns 0,25–0,35 pontos percentuais — menor quanto mais longe o número estiver de 50%).
         Cada mão usa uma semente aleatória fixa, então a mesma mão mostra os mesmos números em qualquer aparelho. Os empates são divididos
         pelo número de jogadores que dividem o pote (metade para cada um num empate a dois).
       </p>

@@ -220,7 +220,7 @@ Triton 제주 II 이벤트 수를 WebFetch가 한 번은 "16개", 다른 번은 
 | 메인이벤트 | **#12 $100K NLH MAIN EVENT** / 09.14~16 / 스타팅 250,000 / 레벨 50분 | A |
 | 주요 이벤트 | **#10 $200K TRITON INVITATIONAL** (09.12~14) · **#15 $150K 10TH ANNIVERSARY SPECIAL** (09.16~17) | A |
 | 바이인 범위 | **USD $15,000 ~ $200,000** | A |
-| ★ 참가 자격 | **새틀라이트 없음. 추천제.** `"You will need to be referred by a current Triton Poker Super High Roller Series player, or a member of the Triton team."` | A |
+| ★ 참가 자격 | **추천제.** (🔴 «새틀라이트 없음»은 근거 없는 추론이었다 — 공식 Jeju II 결과 기사 2026-09-08 «won through a series of online satellites to book his package to Jeju» · 10-17 EN 손질 4에서 삭제) `"You will need to be referred by a current Triton Poker Super High Roller Series player, or a member of the Triton team."` | A |
 
 > ⚠️ **"Jeju II by WPT Global"은 2025년 대회 등록명이다.** 2026년 페이지 전체에 `WPT Global` **0건**(작성자 확인).
 > ⚠️ 검색에 떠도는 **"$250,000 Invitational"은 공식에 없다.** 공식은 **$200,000**.

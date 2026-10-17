@@ -717,7 +717,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "$15,000~$200,000",
     emoji: "💎",
     color: "bg-purple-500/15 text-purple-400 border-purple-500/30",
-    note: "14개 하이롤러 · 새틀라이트 없음(추천제) · $200K Invitational 9/12~14",
+    note: "14개 하이롤러 · 추천제 · $200K Invitational 9/12~14",
     sourceUrl: "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
     sourceTier: "A",
     verifiedAt: "2026-08-31",

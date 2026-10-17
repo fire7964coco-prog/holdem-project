@@ -74,7 +74,7 @@ export const GLOSSARY_DICT_ZH_HANT: GlossaryDict = {
     { term: "跛入（Limp）", cat: "Action", aka: ["Limp", "平跟"], desc: "翻牌前只跟大盲、不加注就入池——通常是弱、被動的打法。" },
     { term: "堅果（The Nuts）", cat: "Hand", aka: ["Nuts", "the nuts", "堅果牌"], desc: "目前牌面下最強的可能牌型（後面的牌可能會改變它）。" },
     { term: "不同花（Offsuit）", cat: "Hand", aka: ["Offsuit", "非同花", "o"], desc: "兩張不同花色的牌（例如 A♠K♦）。比同一手牌的同花版本稍弱，因為它成同花的機會小得多。" },
-    { term: "補牌（Outs）", cat: "Math", aka: ["Outs", "補牌數"], desc: "牌堆裡剩下、能讓你的牌變成贏牌的那些牌。同花聽牌有 9 張補牌；兩頭順有 8 張。" },
+    { term: "補牌（Outs）", cat: "Math", aka: ["Outs", "補牌數"], desc: "牌堆裡剩下、能讓你的牌變成應該能贏的牌的那些牌。同花聽牌有 9 張補牌；兩頭順有 8 張——但如果其中有牌同時讓對手成更大的牌，就要扣掉。" },
     { term: "超對（Overpair）", cat: "Hand", aka: ["Overpair"], desc: "比牌面上每一張都大的口袋對。" },
     { term: "位置（Position）", cat: "Position", aka: ["Position", "有利位置", "不利位置", "In position", "Out of position"], desc: "你在下注順序裡行動的先後。越晚行動（「有利位置」）優勢越大，因為你能先看到對手怎麼做再做決定。" },
     { term: "底池（Pot）", cat: "Board", aka: ["Pot"], desc: "大家在爭的全部籌碼。" },

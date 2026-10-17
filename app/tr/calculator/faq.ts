@@ -12,7 +12,7 @@ export const CALCULATOR_FAQ_TR: { q: string; a: string }[] = [
   },
   {
     q: "AA, KK'ya karşı yüzde kaç kazanır?",
-    a: "Pocket as preflop'ta pocket papaza karşı yaklaşık %82 kazanır (her tür kombinasyonunun ortalamasıyla %81,9, beraberlik ihtimali %0,5). AA vs AK suited yaklaşık %88'e %12, KK vs AK suited ise yaklaşık %66'ya %34'tür.",
+    a: "Pocket as preflop'ta pocket papaza karşı yaklaşık %82 favoridir: her tür kombinasyonunun ortalamasıyla %81,7 doğrudan kazanır, yaklaşık %0,5 berabere kalır; bu da %81,9 equity eder. AA vs AK suited yaklaşık %88'e %12, KK vs AK suited ise yaklaşık %66'ya %34'tür.",
   },
   {
     q: "AK, pocket pair'e karşı gerçekten yazı tura mı?",
@@ -28,7 +28,7 @@ export const CALCULATOR_FAQ_TR: { q: string; a: string }[] = [
   },
   {
     q: "Pot oranı nasıl hesaplanır?",
-    a: "Call tutarı ÷ (bet sonrası pot + call tutarı) = gereken minimum equity. Örneğin bet dahil 10.000 olan bir pota 3.000 call etmek 3.000 ÷ 13.000 ≈ %23,1'dir; yani elinin equity'si %23,1'i geçiyorsa call kârlıdır. Pot büyüklüğünde bet her zaman %33,3, yarım pot bet %25 ister.",
+    a: "Call tutarı ÷ (bet sonrası pot + call tutarı) = gereken minimum equity. Örneğin bet dahil 10.000 olan bir pota 3.000 call etmek 3.000 ÷ 13.000 ≈ %23,1'dir. Arkasından başka bahis gelemiyorsa (örneğin all-in), elinin equity'si %23,1'i geçtiğinde call kârlıdır. Pot büyüklüğünde bet her zaman %33,3, yarım pot bet %25 ister.",
   },
   {
     q: "Flush draw'la call etmek için hangi pot oranı gerekir?",

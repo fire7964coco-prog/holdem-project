@@ -24,7 +24,7 @@ export const HAND_CHART_FAQ: FaqItem[] = [
             },
             {
               q: "Is it okay to open a 42% range on the button?",
-              a: "In GTO terms, a button opening range really does reach 40–50%. But if opponents are tight or inexperienced, focusing more on premiums can be more profitable in practice. The chart is a balanced baseline.",
+              a: "First make sure you compare the same thing. The chart's 42% counts hand types — 71 of the 169 — while the 40–50% button range quoted in GTO material counts combos out of 1,326. Converted to combos, this chart's button range is 35.4%, narrower than that band, so 42% is not too wide. If opponents are tight or inexperienced, focusing more on premiums can be more profitable in practice. The chart is a balanced baseline.",
             },
             {
               q: "What do I do if I get 3-bet?",

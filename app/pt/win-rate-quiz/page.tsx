@@ -27,7 +27,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "Simulador de poker para treinar: onde você devia ter foldado? | HoldemMaster";
 const DESCRIPTION =
-  "Jogue uma mão 6-max sem ver as cartas dos adversários, como na mesa real: sua equity em cada street, as pot odds desde o flop e onde era hora de foldar.";
+  "Jogue uma mão 6-max ou 9-max sem ver as cartas dos adversários, como na mesa real: sua equity em cada street, as pot odds desde o flop e onde foldar.";
 const OG_DESCRIPTION =
   "As cartas deles ficam escondidas, como no poker de verdade. Acompanhe sua equity street a street e as pot odds desde o flop, e revise onde devia ter foldado.";
 

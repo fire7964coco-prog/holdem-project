@@ -383,7 +383,7 @@ export const CALC_DICT_IT: CalcDict = {
         "action": "Rilancia da posizione intermedia/finale; da UTG rilancia o folda — mai limp"
       },
       "KQs": {
-        "desc": "Potenziale per colore alto e scala",
+        "desc": "Fa colore con il re alto e scala Broadway",
         "action": "Rilancia dalla maggior parte delle posizioni"
       },
       "KJs": {
@@ -936,7 +936,7 @@ export const CALC_DICT_IT: CalcDict = {
     {
       "badge": "Riferimento rapido",
       "h2": "Coppia di assi contro mani casuali: per numero di avversari",
-      "intro": "Quanto spesso AA vince quando tutti vanno all-in preflop contro N mani casuali (Monte Carlo, 8.000.000 di runout per riga). I primi due caller costano agli assi circa 10 pp ciascuno; quelli successivi hanno un impatto minore.",
+      "intro": "L'equity di AA — la sua quota del piatto, con i pareggi contati come divisione — quando tutti vanno all-in preflop contro N mani casuali (Monte Carlo, 8.000.000 di runout per riga). I primi due caller costano agli assi circa 10 pp ciascuno; quelli successivi hanno un impatto minore.",
       "th": [
         "Avversari",
         "Equity di AA"
@@ -983,7 +983,7 @@ export const CALC_DICT_IT: CalcDict = {
           "34,6%"
         ]
       ],
-      "note": "Ecco perché gli assi preferiscono un piatto heads-up: contro cinque mani casuali la migliore mano iniziale dell'Hold'em non è più favorita a vincere il piatto (49,2%, mentre gli altri cinque si dividono il resto). Imposta un avversario su «Mano casuale» nel calcolatore di equity per provare qualsiasi mano nello stesso modo (fino a tre avversari)."
+      "note": "Ecco perché gli assi preferiscono un piatto heads-up: contro cinque mani casuali la migliore mano iniziale dell'Hold'em non possiede più nemmeno metà del piatto (49,2% di equity, mentre gli altri cinque si dividono il resto). Imposta un avversario su «Mano casuale» nel calcolatore di equity per provare qualsiasi mano nello stesso modo (fino a tre avversari)."
     },
     {
       "badge": "Riferimento rapido",

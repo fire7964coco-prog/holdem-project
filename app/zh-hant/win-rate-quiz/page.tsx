@@ -15,7 +15,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "看不到對手底牌，你敢撐到河牌嗎？ — 德州撲克線上練習模擬器 | HoldemMaster";
 const DESCRIPTION =
-  "每次都撐到河牌才後悔？像真牌局一樣看不到對手底牌，免費的德州撲克線上練習，打一手6人桌：每條街看勝率，翻牌起看跟注要的底池賠率，打完檢討你該在哪條街蓋牌。4種對手風格，還能重現你真的打過的那手牌。";
+  "每次都撐到河牌才後悔？像真牌局一樣看不到對手底牌，免費的德州撲克線上練習，打一手6人桌或9人桌：每條街看勝率，翻牌起看跟注要的底池賠率，打完檢討你該在哪條街蓋牌。4種對手風格，還能重現你真的打過的那手牌。";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

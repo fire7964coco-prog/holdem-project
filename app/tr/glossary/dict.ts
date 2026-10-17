@@ -81,7 +81,7 @@ export const GLOSSARY_DICT_TR: GlossaryDict = {
     { term: "Limp", cat: "Action", desc: "Preflop'ta raise yerine sadece big blind'ı call ederek elde kalmak — genelde zayıf, pasif bir oyun.", aka: ["limper", "limping"] },
     { term: "Nuts", cat: "Hand", desc: "Mevcut board'da mümkün olan en iyi el (sonraki street'lerde değişebilir).", aka: ["the nuts", "nuts nedir"] },
     { term: "Offsuit", cat: "Hand", desc: "Farklı türden iki kart (örneğin A♠K♦). Floş yapma ihtimali çok daha düşük olduğu için aynı elin suited halinden biraz daha zayıftır.", aka: ["off suit", "unsuited", "farklı tür"] },
-    { term: "Out", cat: "Math", desc: "Destede kalan ve seni kazanan ele taşıyan kartlar. Floş draw'ının 9 out'u, açık uçlu kent draw'ının (open-ender) 8 out'u vardır.", aka: ["outs", "out sayısı"] },
+    { term: "Out", cat: "Math", desc: "Destede kalan ve seni kazanması beklenen ele taşıyan kartlar. Floş draw'ının 9 out'u, açık uçlu kent draw'ının (open-ender) 8 out'u vardır — bu kartlardan bazıları rakibe daha iyi bir el de veriyorsa daha az.", aka: ["outs", "out sayısı"] },
     { term: "Overpair", cat: "Hand", desc: "Board'daki her karttan yüksek bir pocket pair.", aka: ["over pair"] },
     { term: "Pozisyon", cat: "Position", desc: "Masada nerede oturduğun, yani ne zaman hareket edeceğin. Rakibinden sonra oynuyorsan pozisyondasın, önce oynuyorsan pozisyon dışındasın.", aka: ["position", "in position", "out of position", "IP", "OOP", "pozisyonda", "pozisyon dışında"] },
     { term: "Pot", cat: "Board", desc: "Uğruna oynanan çiplerin toplamı.", aka: ["kasa"] },

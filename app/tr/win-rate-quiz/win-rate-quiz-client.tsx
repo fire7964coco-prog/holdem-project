@@ -120,7 +120,7 @@ const TR_UI: QuizUI = {
   noDrawNote: (basis, k) =>
     basis === "seat"
       ? `Hâlâ preflop'tayız, bu yüzden «out × 2/4» kestirmesi henüz geçerli değil. Üstteki equity, her rakibin kendi pozisyonundan pota girebileceği ellere karşı oynanan ${k} el simülasyonundan geliyor.`
-      : `Bu aracın saydığı out'lardan hiçbiri sende yok — hiçbir kart flush ya da kent tamamlamıyor veya elini bir kategori yukarı (set, iki çift ya da overcard'ın çift olması) taşımıyor — bu yüzden «out × 2/4» kestirmesi burada geçerli değil. Üstteki equity, gördüğün aksiyonlara uyan tüm ellere karşı oynanan ${k} el simülasyonundan geliyor.`,
+      : `Bu aracın saydığı out'lardan hiçbiri sende yok — hiçbir kart flush ya da kent tamamlamıyor veya elini bir kategori yukarı (set veya trips, iki çift ya da overcard'ın çift olması) taşımıyor — bu yüzden «out × 2/4» kestirmesi burada geçerli değil. Üstteki equity, gördüğün aksiyonlara uyan tüm ellere karşı oynanan ${k} el simülasyonundan geliyor.`,
   foldWinNote: "Tüm rakipler fold etti, pot senin. Üstteki %100 bir simülasyon sonucu değil — bu elin sonucu.",
   riverNote: "Burası river; açılacak kart kalmadı, bu yüzden «out × 2/4» kestirmesi geçerli değil. Üstteki equity, son elini gördüğün aksiyonlara uyan tüm ellerle karşılaştırır.",
   chartTitle: "📈 Street street equity — tüm kartlar açıkken",
@@ -261,7 +261,7 @@ const TR_UI: QuizUI = {
         Her oyuncu {ANTE} ante koyar ve {n(STACK)} stack&apos;le başlar. Sen hiç fold etmezsin — amaç zaten bu:
         river&apos;ı görüp eli incelemen. Equity, sabit örnek sayısıyla yapılan bir simülasyon tahminidir:{" "}
         preflop&apos;ta <b className="text-foreground">{n(SAMPLES.preflop)} simülasyon</b>, flop&apos;tan itibaren{" "}
-        <b className="text-foreground">{n(SAMPLES.postflop)} simülasyon</b> (standart hata yaklaşık 0,25–0,35 yüzde puan).
+        <b className="text-foreground">{n(SAMPLES.postflop)} simülasyon</b> (standart hata en fazla yaklaşık 0,25–0,35 yüzde puan — sonuç %50'den uzaklaştıkça küçülür).
         Her el sabit bir rastgele seed kullanır, bu yüzden aynı el her cihazda aynı sayıları gösterir. Beraberlikte pot,
         berabere kalan oyuncular arasında eşit bölünür (iki kişi berabereyse yarı yarıya).
       </p>

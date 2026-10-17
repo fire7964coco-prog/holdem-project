@@ -15,7 +15,7 @@ import { WIN_RATE_QUIZ_ALTERNATES } from "@/lib/win-rate-quiz-alternates";
  */
 const TITLE = "德州扑克模拟器 — 看不到对手底牌，算胜率、复盘弃牌时机 | HoldemMaster";
 const DESCRIPTION =
-  "像真牌局一样看不到对手底牌，打一手6人桌德州扑克：每条街显示你的胜率，翻牌起显示跟注所需的底池赔率，打完复盘你到底该在哪里弃牌。可选2–6人和4种对手风格，免费在线练习。";
+  "像真牌局一样看不到对手底牌，打一手6人桌或9人桌德州扑克：每条街显示你的胜率，翻牌起显示跟注所需的底池赔率，打完复盘你到底该在哪里弃牌。可选2–6人和4种对手风格，免费在线练习。";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

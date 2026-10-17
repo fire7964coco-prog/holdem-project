@@ -32,7 +32,7 @@ export const CALCULATOR_FAQ_PT: { q: string; a: string }[] = [
   },
   {
     q: "Quais são as odds de AA contra KK?",
-    a: "Os ases ganham dos reis no pré-flop cerca de 82% das vezes (81,9% na média de todas as combinações de naipes, com 0,5% de empate). AA contra AK suited fica em mais ou menos 88% a 12%, e KK contra AK suited, 66% a 34%.",
+    a: "Os ases são favoritos de cerca de 82% contra os reis no pré-flop: na média de todas as combinações de naipes, ganham sozinhos 81,7% das vezes e empatam cerca de 0,5%, somando 81,9% de equity. AA contra AK suited fica em mais ou menos 88% a 12%, e KK contra AK suited, 66% a 34%.",
   },
   {
     q: "AK contra um par na mão é um coin flip?",
@@ -48,7 +48,7 @@ export const CALCULATOR_FAQ_PT: { q: string; a: string }[] = [
   },
   {
     q: "Que fórmula a calculadora de pot odds usa?",
-    a: "Call ÷ (pote depois da aposta + call) = a equity mínima de que você precisa. Por exemplo, pagar 3.000 quando o pote já tem 10.000 contando a aposta é 3.000 ÷ 13.000 ≈ 23,1%, então o call é lucrativo quando a sua equity passa de 23,1%. Uma aposta do tamanho do pote sempre exige 33,3%; uma de meio pote, 25%.",
+    a: "Call ÷ (pote depois da aposta + call) = a equity mínima de que você precisa. Por exemplo, pagar 3.000 quando o pote já tem 10.000 contando a aposta é 3.000 ÷ 13.000 ≈ 23,1%. Se não puder haver mais apostas depois (um all-in, por exemplo), o call é lucrativo quando a sua equity passa de 23,1%. Uma aposta do tamanho do pote sempre exige 33,3%; uma de meio pote, 25%.",
   },
   {
     q: "De que pot odds preciso para pagar com flush draw?",

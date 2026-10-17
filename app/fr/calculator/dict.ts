@@ -219,7 +219,7 @@ export const CALC_DICT_FR: CalcDict = {
       AQs: { desc: "Main forte ; vaut plus en position", action: "Relancer depuis la plupart des positions" },
       AJs: { desc: "Excellente au BTN/CO, faible depuis UTG", action: "Relancer en mid/late ; depuis UTG, relancer ou se coucher — jamais de limp" },
       A10s: { desc: "L'un des meilleurs as assortis", action: "Relancer en mid/late ; depuis UTG, relancer ou se coucher — jamais de limp" },
-      KQs: { desc: "Potentiel couleur haute + quinte", action: "Relancer depuis la plupart des positions" },
+      KQs: { desc: "Fait des couleurs hauteur roi et des quintes Broadway", action: "Relancer depuis la plupart des positions" },
       KJs: { desc: "Main à tirages solide", action: "Relancer en LP ; en EP, relancer ou se coucher — jamais de limp" },
       "99": { desc: "Paire moyenne, attention aux flops avec overcards", action: "Relancer depuis la plupart des positions ; prudence en tapis profond" },
       "88": { desc: "Paire servie avec un bon potentiel de brelan", action: "Relancer depuis la plupart des positions ; payer une relance — jamais d'open-limp" },
@@ -493,7 +493,7 @@ export const CALC_DICT_FR: CalcDict = {
       //   H2 11개 중 **0개**가 받고 있었다. 이 표가 곧 «이길 확률»이라 억지가 아니다 — 축어 근거는 poktools H2
       //   «Comment calculer sa probabilité de gagner durant la partie ?»(뱅크 §4-A 추출).
       h2: "Probabilité de gagner avec une paire d'as — selon le nombre d'adversaires",
-      intro: "À quelle fréquence AA gagne — plus précisément son équité, égalités comprises — quand tout le monde est à tapis préflop face à N mains aléatoires (Monte-Carlo, 8 000 000 de déroulements par ligne). Les deux premiers callers coûtent aux as environ 10 points chacun ; ensuite chaque adversaire supplémentaire coûte moins.",
+      intro: "L'équité de AA — sa part du pot, les égalités comptées comme des partages — quand tout le monde est à tapis préflop face à N mains aléatoires (Monte-Carlo, 8 000 000 de déroulements par ligne). Les deux premiers callers coûtent aux as environ 10 points chacun ; ensuite chaque adversaire supplémentaire coûte moins.",
       th: ["Adversaires", "Équité de AA"],
       align: ["left", "right"],
       emphasis: 1,
@@ -502,7 +502,7 @@ export const CALC_DICT_FR: CalcDict = {
         ["1", "85,2 %"], ["2", "73,4 %"], ["3", "63,8 %"], ["4", "55,9 %"],
         ["5", "49,2 %"], ["6", "43,6 %"], ["7", "38,7 %"], ["8", "34,6 %"],
       ],
-      note: "C'est pour ça que les as veulent un pot en heads-up : face à cinq mains aléatoires, la meilleure main de départ du Hold'em n'est plus favorite pour remporter le pot (49,2 %, les cinq autres se partageant le reste). Mets un adversaire sur « Main aléatoire » dans l'onglet « Équité » pour tester n'importe quelle main de la même façon (jusqu'à trois adversaires). Pourquoi les grosses mains perdent de leur valeur dans un pot à plusieurs, c'est expliqué dans",
+      note: "C'est pour ça que les as veulent un pot en heads-up : face à cinq mains aléatoires, la meilleure main de départ du Hold'em ne possède même plus la moitié du pot (49,2 % d'équité, les cinq autres se partageant le reste). Mets un adversaire sur « Main aléatoire » dans l'onglet « Équité » pour tester n'importe quelle main de la même façon (jusqu'à trois adversaires). Pourquoi les grosses mains perdent de leur valeur dans un pot à plusieurs, c'est expliqué dans",
       link: { slug: "holdem-equity", text: "L'équité au poker expliquée" },
       linkTail: ".",
     },

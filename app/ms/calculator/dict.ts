@@ -196,7 +196,7 @@ export const CALC_DICT_MS: CalcDict = {
       AQs: { desc: "Tangan kuat; lebih bernilai dalam posisi", action: "Raise dari kebanyakan posisi" },
       AJs: { desc: "Hebat di BTN/CO, lemah dari UTG", action: "Raise di posisi tengah/lewat; dari UTG raise atau fold — jangan limp" },
       A10s: { desc: "Antara suited ace teratas", action: "Raise di posisi tengah/lewat; dari UTG raise atau fold — jangan limp" },
-      KQs: { desc: "Potensi flush tinggi + straight draw", action: "Raise dari kebanyakan posisi" },
+      KQs: { desc: "Membentuk flush K-high dan straight Broadway", action: "Raise dari kebanyakan posisi" },
       KJs: { desc: "Tangan drawing yang kuat", action: "Raise di posisi lewat; dari posisi awal raise atau fold — jangan limp" },
       "99": { desc: "Pair sederhana, berjaga-jaga dengan flop overcard", action: "Raise dari kebanyakan posisi; berhati-hati apabila deep" },
       "88": { desc: "Pocket pair dengan potensi set yang baik", action: "Raise dari kebanyakan posisi; call raise — jangan open-limp" },
@@ -441,7 +441,7 @@ export const CALC_DICT_MS: CalcDict = {
     {
       badge: "Rujukan pantas",
       h2: "Pocket ace menghadapi tangan rawak — mengikut bilangan lawan",
-      intro: "Kekerapan AA menang apabila semua orang all-in preflop lawan N tangan rawak (Monte Carlo, 8,000,000 runout setiap baris). Dua caller pertama masing-masing mengurangkan ace kira-kira 10 mata peratusan; selepas itu setiap seorang mengurangkan lebih sedikit.",
+      intro: "Equity AA — bahagiannya dalam pot, dengan keputusan seri dikira sebagai pot dibahagi — apabila semua orang all-in preflop lawan N tangan rawak (Monte Carlo, 8,000,000 runout setiap baris). Dua caller pertama masing-masing mengurangkan ace kira-kira 10 mata peratusan; selepas itu setiap seorang mengurangkan lebih sedikit.",
       th: ["Lawan", "Equity AA"],
       align: ["left", "right"],
       emphasis: 1,

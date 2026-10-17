@@ -114,7 +114,7 @@ const en: BoardStrings = {
 
   h1: "Poker Tournament Schedule 2026",
   heroLead:
-    "Every event below was read off the organiser's own site, and each card links to the page we read it from. Status is calculated from the dates, so nothing here goes stale while a series is running. Schedules do change — the official link is always the tiebreaker.",
+    "Every event below was read off the organiser's own site, and each card with a source link points to the page we read it from. Status is calculated from the dates, so nothing here goes stale while a series is running. Schedules do change — the official link is always the tiebreaker.",
   asOf: (dot) => `as of ${dot}`,
 
   filterAll: "All",
@@ -149,7 +149,7 @@ const en: BoardStrings = {
   faqs: [
     {
       q: "Can anyone buy into these, or do some need an invitation?",
-      a: "Most are open — you pay the buy-in and you play. Three on this list are not. Triton Super High Roller Series is referral-only: there are no satellites and money alone will not get you a seat. Korea's Holdem Masters runs on invitation tickets with no cash buy-in route at all. And the APT Championships open with an industry-only Event 0 the day before the public schedule starts.",
+      a: "Most are open — you pay the buy-in and you play. Three on this list are not. Triton Super High Roller Series is referral-only: you need a referral from a current player or the Triton team, and money alone will not get you a seat. Korea's Holdem Masters runs on invitation tickets with no cash buy-in route at all. And the APT Championships open with an industry-only Event 0 the day before the public schedule starts.",
     },
     {
       q: "Where do I play satellites for these?",
@@ -218,7 +218,7 @@ const ja: BoardStrings = {
 
   h1: "ポーカー大会スケジュール 2026",
   heroLead:
-    "掲載しているのはすべて主催者の公式ページで確認した内容で、カードごとに参照元をリンクしています。開催状況は日程から自動で計算しているので、シリーズの途中で表示が古くなることはありません。日程は変更されることがあります——最終的な判断は公式サイトでお願いします。",
+    "掲載しているのはすべて主催者の公式ページで確認した内容で、出典リンクのあるカードは参照元のページにつながっています。開催状況は日程から自動で計算しているので、シリーズの途中で表示が古くなることはありません。日程は変更されることがあります——最終的な判断は公式サイトでお願いします。",
   asOf: (dot) => `${dot}時点`,
 
   filterAll: "すべて",
@@ -332,7 +332,7 @@ const zh: BoardStrings = {
 
   h1: "2026 德州扑克赛事日程",
   heroLead:
-    "以下每一场都是从主办方官网上直接确认的，每张卡片都链接到我们读到它的那一页。赛事状态由日期自动计算，所以系列赛进行途中也不会显示过期信息。日程有可能变动——最终以官网为准。",
+    "以下每一场都是从主办方官网上直接确认的，带来源链接的卡片都链接到我们读到它的那一页。赛事状态由日期自动计算，所以系列赛进行途中也不会显示过期信息。日程有可能变动——最终以官网为准。",
   asOf: (dot) => `截至 ${dot}`,
 
   filterAll: "全部",
@@ -390,7 +390,7 @@ const zh: BoardStrings = {
     },
     {
       q: "有哪些赛事是花钱也进不去的？",
-      a: "有三种。Triton超高额系列赛是推荐制的，没有卫星赛，光有钱买不到席位。韩国的Holdem Masters用的是邀请券，完全没有现金买入的通道。还有APT锦标赛的开幕日是业内专场，公开赛程要从第二天算起。其余绝大多数赛事都是公开报名的。",
+      a: "有三种。Triton超高额系列赛是推荐制的，需要现役参赛选手或Triton团队的推荐，光有钱买不到席位。韩国的Holdem Masters用的是邀请券，完全没有现金买入的通道。还有APT锦标赛的开幕日是业内专场，公开赛程要从第二天算起。其余绝大多数赛事都是公开报名的。",
     },
   ],
 
@@ -446,7 +446,7 @@ const zhHant: BoardStrings = {
 
   h1: "2026 德州撲克賽事賽程",
   heroLead:
-    "以下每一場都是從主辦方官網上直接確認的，每張卡片都連到我們讀到它的那一頁。賽事狀態由日期自動計算，所以系列賽進行中也不會顯示過期資訊。賽程有可能變動——最後還是以官網為準。",
+    "以下每一場都是從主辦方官網上直接確認的，附來源連結的卡片都連到我們讀到它的那一頁。賽事狀態由日期自動計算，所以系列賽進行中也不會顯示過期資訊。賽程有可能變動——最後還是以官網為準。",
   asOf: (dot) => `截至 ${dot}`,
 
   filterAll: "全部",
@@ -499,7 +499,7 @@ const zhHant: BoardStrings = {
     },
     {
       q: "有哪些賽事是有錢也進不去的？",
-      a: "有三種。Triton超高額系列賽是推薦制的，沒有衛星賽，光有錢買不到席位。韓國的Holdem Masters用邀請券，完全沒有現金買入的管道。APT Championships的開幕日是業界專場，公開賽程要從第二天算起。其餘絕大多數都是公開報名的。",
+      a: "有三種。Triton超高額系列賽是推薦制的，需要現役參賽選手或Triton團隊的推薦，光有錢買不到席位。韓國的Holdem Masters用邀請券，完全沒有現金買入的管道。APT Championships的開幕日是業界專場，公開賽程要從第二天算起。其餘絕大多數都是公開報名的。",
     },
     {
       q: "Natural8跟GGPoker是同一個地方嗎？",
@@ -560,7 +560,7 @@ const es: BoardStrings = {
 
   h1: "Calendario de torneos de poker 2026",
   heroLead:
-    "Cada torneo de esta lista lo verificamos en la web del propio organizador, y cada tarjeta enlaza a la página donde lo leímos. El estado se calcula a partir de las fechas, así que nada queda desactualizado mientras una serie está en marcha. Los calendarios cambian: la web oficial siempre manda.",
+    "Cada torneo de esta lista lo verificamos en la web del propio organizador, y cada tarjeta con enlace de fuente lleva a la página donde lo leímos. El estado se calcula a partir de las fechas, así que nada queda desactualizado mientras una serie está en marcha. Los calendarios cambian: la web oficial siempre manda.",
   asOf: (dot) => `al ${dot}`,
 
   filterAll: "Todos",
@@ -618,7 +618,7 @@ const es: BoardStrings = {
     },
     {
       q: "¿Hay torneos a los que no se puede entrar pagando?",
-      a: "Tres. La Triton Super High Roller Series funciona por recomendación: no hay satélites y el dinero por sí solo no consigue asiento. El Holdem Masters coreano va por entradas de invitación, sin vía de buy-in en efectivo. Y el APT Championships abre con una jornada solo para la industria antes de que empiece el calendario público. El resto son de inscripción abierta.",
+      a: "Tres. La Triton Super High Roller Series funciona por recomendación: hace falta que te recomiende un jugador actual de la serie o alguien del equipo de Triton, y el dinero por sí solo no consigue asiento. El Holdem Masters coreano va por entradas de invitación, sin vía de buy-in en efectivo. Y el APT Championships abre con una jornada solo para la industria antes de que empiece el calendario público. El resto son de inscripción abierta.",
     },
   ],
 
@@ -667,7 +667,7 @@ const de: BoardStrings = {
 
   h1: "Poker Turniere 2026 — der Kalender",
   heroLead:
-    "Jedes Turnier in dieser Liste haben wir auf der Seite des Veranstalters selbst nachgelesen, und jede Karte verlinkt genau die Seite, auf der es steht. Der Status rechnet sich aus den Terminen — es bleibt also nichts stehen, während eine Serie längst läuft. Termine ändern sich: im Zweifel gilt immer die offizielle Seite.",
+    "Jedes Turnier in dieser Liste haben wir auf der Seite des Veranstalters selbst nachgelesen, und jede Karte mit Quellenlink verlinkt genau die Seite, auf der es steht. Der Status rechnet sich aus den Terminen — es bleibt also nichts stehen, während eine Serie längst läuft. Termine ändern sich: im Zweifel gilt immer die offizielle Seite.",
   asOf: (dot) => `Stand ${dot}`,
 
   filterAll: "Alle",
@@ -722,7 +722,7 @@ const de: BoardStrings = {
     },
     {
       q: "Kann ich mich für jedes Turnier hier einfach anmelden?",
-      a: "Für die meisten ja, für drei nicht. Die Triton Super High Roller Series läuft über Empfehlung — es gibt keine Satellites, und Geld allein kauft keinen Platz. Die koreanischen Holdem Masters laufen über Einladungstickets, ohne Buy-in-Weg in bar. Und die APT Championships starten mit einem Tag nur für die Branche, bevor der öffentliche Kalender beginnt. Alles andere ist offen.",
+      a: "Für die meisten ja, für drei nicht. Die Triton Super High Roller Series läuft über Empfehlung — du brauchst die Empfehlung eines aktuellen Spielers der Serie oder des Triton-Teams, und Geld allein kauft keinen Platz. Die koreanischen Holdem Masters laufen über Einladungstickets, ohne Buy-in-Weg in bar. Und die APT Championships starten mit einem Tag nur für die Branche, bevor der öffentliche Kalender beginnt. Alles andere ist offen.",
     },
     {
       q: "Muss ich Turniergewinne versteuern?",
@@ -779,7 +779,7 @@ const id: BoardStrings = {
 
   h1: "Jadwal Turnamen Poker 2026",
   heroLead:
-    "Informasi setiap turnamen di daftar ini kami periksa langsung di situs penyelenggara, dan setiap kartu menautkan sumbernya. Status diperbarui otomatis berdasarkan tanggal turnamen. Jadwal bisa berubah — kalau ragu, halaman resmi yang berlaku.",
+    "Informasi setiap turnamen di daftar ini kami periksa langsung di situs penyelenggara, dan kartu yang memiliki tautan sumber mengarah ke halaman tersebut. Status diperbarui otomatis berdasarkan tanggal turnamen. Jadwal bisa berubah — kalau ragu, halaman resmi yang berlaku.",
   asOf: (dot) => `Data per ${dot}`,
 
   filterAll: "Semua",
@@ -822,7 +822,7 @@ const id: BoardStrings = {
     },
     {
       q: "Apakah semua turnamen di sini bisa diikuti siapa saja?",
-      a: "Sebagian besar ya, tetapi tidak semua. Triton Super High Roller Series berbasis rekomendasi — tidak ada satelit, dan uang saja tidak cukup untuk mendapat kursi. Holdem Masters di Korea hanya lewat tiket undangan, tanpa jalur buy-in tunai. APT Championships dibuka dengan satu hari khusus kalangan industri sebelum jadwal publik dimulai. Ada juga event yang hanya menerima tiket, misalnya APL Seoul (hanya tiket kursi/seat) — syarat seperti ini tertulis di kartunya.",
+      a: "Sebagian besar ya, tetapi tidak semua. Triton Super High Roller Series berbasis rekomendasi — harus direkomendasikan oleh pemain aktif seri ini atau tim Triton, dan uang saja tidak cukup untuk mendapat kursi. Holdem Masters di Korea hanya lewat tiket undangan, tanpa jalur buy-in tunai. APT Championships dibuka dengan satu hari khusus kalangan industri sebelum jadwal publik dimulai. Ada juga event yang hanya menerima tiket, misalnya APL Seoul (hanya tiket kursi/seat) — syarat seperti ini tertulis di kartunya.",
     },
     {
       q: "Berapa biaya buy-in?",
@@ -871,7 +871,7 @@ const ms: BoardStrings = {
 
   h1: "Jadual Poker Tournament 2026",
   heroLead:
-    "Maklumat setiap tournament dalam senarai ini kami semak terus di laman penganjur, dan setiap kad memautkan sumber tersebut. Status dikemas kini secara automatik mengikut tarikh tournament. Jadual boleh berubah — jika ragu, halaman rasmi yang menjadi rujukan.",
+    "Maklumat setiap tournament dalam senarai ini kami semak terus di laman penganjur, dan kad yang mempunyai pautan sumber membawa ke halaman tersebut. Status dikemas kini secara automatik mengikut tarikh tournament. Jadual boleh berubah — jika ragu, halaman rasmi yang menjadi rujukan.",
   asOf: (dot) => `Setakat ${dot}`,
 
   filterAll: "Semua",
@@ -913,7 +913,7 @@ const ms: BoardStrings = {
     },
     {
       q: "Bolehkah sesiapa sahaja mendaftar untuk semua tournament di sini?",
-      a: "Kebanyakannya ya, tetapi bukan semua. Triton Super High Roller Series berasaskan cadangan — tiada satelit, dan wang sahaja tidak cukup untuk mendapat tempat. Holdem Masters di Korea hanya melalui tiket jemputan, tanpa laluan buy-in tunai. APT Championships dibuka dengan satu hari khas untuk kalangan industri sebelum jadual awam bermula. Ada juga event yang hanya menerima tiket, contohnya APL Seoul (hanya tiket tempat duduk/seat) — syarat sebegini tertulis pada kadnya.",
+      a: "Kebanyakannya ya, tetapi bukan semua. Triton Super High Roller Series berasaskan cadangan — perlu dicadangkan oleh pemain semasa siri ini atau pasukan Triton, dan wang sahaja tidak cukup untuk mendapat tempat. Holdem Masters di Korea hanya melalui tiket jemputan, tanpa laluan buy-in tunai. APT Championships dibuka dengan satu hari khas untuk kalangan industri sebelum jadual awam bermula. Ada juga event yang hanya menerima tiket, contohnya APL Seoul (hanya tiket tempat duduk/seat) — syarat sebegini tertulis pada kadnya.",
     },
     {
       q: "Berapakah kos buy-in?",
@@ -963,7 +963,7 @@ const vi: BoardStrings = {
 
   h1: "Lịch giải poker 2026",
   heroLead:
-    "Chúng tôi kiểm tra thông tin từng giải trực tiếp trên trang của nhà tổ chức; mỗi thẻ đều có liên kết đến nguồn đó. Trạng thái tự động cập nhật theo ngày thi đấu. Lịch có thể thay đổi — khi nghi ngờ, trang chính thức luôn là căn cứ.",
+    "Chúng tôi kiểm tra thông tin từng giải trực tiếp trên trang của nhà tổ chức; thẻ nào có liên kết nguồn sẽ dẫn đến đúng trang đó. Trạng thái tự động cập nhật theo ngày thi đấu. Lịch có thể thay đổi — khi nghi ngờ, trang chính thức luôn là căn cứ.",
   asOf: (dot) => `Cập nhật ${dot}`,
 
   filterAll: "Tất cả",
@@ -1005,7 +1005,7 @@ const vi: BoardStrings = {
     },
     {
       q: "Có phải ai cũng đăng ký được mọi giải ở đây?",
-      a: "Phần lớn là có, nhưng không phải tất cả. Triton Super High Roller Series hoạt động theo giới thiệu — không có vệ tinh, và chỉ có tiền thì không mua được suất. Holdem Masters của Hàn Quốc chỉ nhận vé mời, không có đường buy-in bằng tiền mặt. APT Championships mở màn bằng một ngày chỉ dành cho người trong ngành trước khi lịch công khai bắt đầu. Cũng có giải chỉ nhận người có vé, ví dụ APL Seoul (chỉ nhận vé tham dự/seat) — điều kiện này được ghi ngay trên thẻ giải.",
+      a: "Phần lớn là có, nhưng không phải tất cả. Triton Super High Roller Series hoạt động theo giới thiệu — cần được một người chơi hiện tại của giải hoặc đội ngũ Triton giới thiệu, và chỉ có tiền thì không mua được suất. Holdem Masters của Hàn Quốc chỉ nhận vé mời, không có đường buy-in bằng tiền mặt. APT Championships mở màn bằng một ngày chỉ dành cho người trong ngành trước khi lịch công khai bắt đầu. Cũng có giải chỉ nhận người có vé, ví dụ APL Seoul (chỉ nhận vé tham dự/seat) — điều kiện này được ghi ngay trên thẻ giải.",
     },
     {
       q: "Buy-in tốn bao nhiêu?",
@@ -1058,7 +1058,7 @@ const pt: BoardStrings = {
 
   h1: "Torneios de poker 2026 — calendário",
   heroLead:
-    "Conferimos as informações de cada torneio desta lista direto no site do organizador, e cada card leva à fonte. O status muda sozinho conforme as datas. Programações mudam — na dúvida, vale sempre a página oficial.",
+    "Conferimos as informações de cada torneio desta lista direto no site do organizador, e os cards com link de fonte levam à página consultada. O status muda sozinho conforme as datas. Programações mudam — na dúvida, vale sempre a página oficial.",
   asOf: (dot) => `Atualizado em ${dot}`,
 
   filterAll: "Todos",
@@ -1094,7 +1094,7 @@ const pt: BoardStrings = {
     },
     {
       q: "Qualquer pessoa pode se inscrever em todos os torneios daqui?",
-      a: "Na maioria, sim, mas não em todos. A Triton Super High Roller Series funciona por indicação — não há satélites, e só dinheiro não garante vaga. O Holdem Masters, na Coreia, é só com convite, sem buy-in em dinheiro. O APT Championships começa com um dia reservado ao setor antes da programação aberta ao público. E alguns eventos aceitam só tickets, como o APL Seoul (apenas com ticket de vaga/seat) — essas condições aparecem no card.",
+      a: "Na maioria, sim, mas não em todos. A Triton Super High Roller Series funciona por indicação — é preciso ser indicado por um jogador atual da série ou pela equipe do Triton, e só dinheiro não garante vaga. O Holdem Masters, na Coreia, é só com convite, sem buy-in em dinheiro. O APT Championships começa com um dia reservado ao setor antes da programação aberta ao público. E alguns eventos aceitam só tickets, como o APL Seoul (apenas com ticket de vaga/seat) — essas condições aparecem no card.",
     },
     {
       q: "Quanto custa o buy-in?",
@@ -1140,7 +1140,7 @@ const tr: BoardStrings = {
 
   h1: "Poker turnuvaları 2026 — takvim",
   heroLead:
-    "Bu listedeki her turnuvanın bilgisini doğrudan organizatörün sitesinden kontrol ettik; her kart kaynağına bağlanır. Durum, tarihlere göre kendiliğinden güncellenir. Programlar değişebilir — emin değilsen resmî sayfa esastır.",
+    "Bu listedeki her turnuvanın bilgisini doğrudan organizatörün sitesinden kontrol ettik; kaynak bağlantısı olan kartlar o sayfaya gider. Durum, tarihlere göre kendiliğinden güncellenir. Programlar değişebilir — emin değilsen resmî sayfa esastır.",
   asOf: (dot) => `Güncelleme ${dot}`,
 
   filterAll: "Tümü",
@@ -1177,7 +1177,7 @@ const tr: BoardStrings = {
     },
     {
       q: "Buradaki her turnuvaya herkes katılabilir mi?",
-      a: "Çoğuna evet, ama hepsine değil. Triton Super High Roller Series tavsiye usulüyle işler — satellite yoktur ve yalnızca parayla yer alınmaz. Kore'deki Holdem Masters yalnızca davetiyeyle, nakit buy-in yolu olmadan oynanır. APT Championships, halka açık program başlamadan önce sektöre ayrılmış bir günle açılır. Bazı etkinlikler de yalnızca bilet kabul eder, örneğin APL Seoul (yalnızca koltuk/seat biletiyle) — bu koşullar kartta yazar.",
+      a: "Çoğuna evet, ama hepsine değil. Triton Super High Roller Series tavsiye usulüyle işler — serinin mevcut bir oyuncusundan ya da Triton ekibinden tavsiye gerekir ve yalnızca parayla yer alınmaz. Kore'deki Holdem Masters yalnızca davetiyeyle, nakit buy-in yolu olmadan oynanır. APT Championships, halka açık program başlamadan önce sektöre ayrılmış bir günle açılır. Bazı etkinlikler de yalnızca bilet kabul eder, örneğin APL Seoul (yalnızca koltuk/seat biletiyle) — bu koşullar kartta yazar.",
     },
     {
       q: "Buy-in ne kadar?",
@@ -1237,7 +1237,7 @@ const hi: BoardStrings = {
 
   h1: "Poker tournaments 2026 — पूरा कैलेंडर",
   heroLead:
-    "इस सूची के हर टूर्नामेंट की जानकारी हमने सीधे आयोजक की साइट से जाँची है, और हर कार्ड अपने स्रोत से जुड़ा है। स्थिति तारीख़ों के हिसाब से अपने-आप बदलती है। कार्यक्रम बदल सकते हैं — शक हो तो आधिकारिक पेज ही मान्य है।",
+    "इस सूची के हर टूर्नामेंट की जानकारी हमने सीधे आयोजक की साइट से जाँची है, और जिन कार्डों पर स्रोत लिंक है, वे उसी पेज पर ले जाते हैं। स्थिति तारीख़ों के हिसाब से अपने-आप बदलती है। कार्यक्रम बदल सकते हैं — शक हो तो आधिकारिक पेज ही मान्य है।",
   asOf: (dot) => `${dot} तक अपडेट`,
 
   filterAll: "सभी",
@@ -1280,7 +1280,7 @@ const hi: BoardStrings = {
     },
     {
       q: "क्या यहाँ के हर टूर्नामेंट में कोई भी खेल सकता है?",
-      a: "ज़्यादातर में हाँ, पर सब में नहीं। Triton Super High Roller Series सिफ़ारिश के आधार पर चलती है — satellite नहीं होते, और सिर्फ़ पैसे से सीट नहीं मिलती। कोरिया का Holdem Masters सिर्फ़ निमंत्रण टिकट से है, नकद buy-in का कोई रास्ता नहीं है। APT Championships का पहला दिन इंडस्ट्री के लोगों के लिए है; आम कार्यक्रम उसके बाद शुरू होता है। कुछ इवेंट सिर्फ़ टिकट लेते हैं, जैसे APL Seoul (सिर्फ़ सीट/seat टिकट) — ऐसी शर्तें कार्ड पर लिखी होती हैं।",
+      a: "ज़्यादातर में हाँ, पर सब में नहीं। Triton Super High Roller Series सिफ़ारिश के आधार पर चलती है — सीरीज़ के किसी मौजूदा खिलाड़ी या Triton टीम की सिफ़ारिश चाहिए, और सिर्फ़ पैसे से सीट नहीं मिलती। कोरिया का Holdem Masters सिर्फ़ निमंत्रण टिकट से है, नकद buy-in का कोई रास्ता नहीं है। APT Championships का पहला दिन इंडस्ट्री के लोगों के लिए है; आम कार्यक्रम उसके बाद शुरू होता है। कुछ इवेंट सिर्फ़ टिकट लेते हैं, जैसे APL Seoul (सिर्फ़ सीट/seat टिकट) — ऐसी शर्तें कार्ड पर लिखी होती हैं।",
     },
     {
       q: "Buy-in कितना होता है?",
@@ -1331,7 +1331,7 @@ const ar: BoardStrings = {
 
   h1: "بطولات البوكر 2026 — الجدول الكامل",
   heroLead:
-    "راجعنا معلومات كل بطولة في هذه القائمة مباشرةً من موقع الجهة المنظِّمة، وكل بطاقة ترتبط بمصدرها. تتغيّر الحالة تلقائيًا بحسب التواريخ. البرامج قد تتغيّر — وعند الشك فالمرجع هو الصفحة الرسمية.",
+    "راجعنا معلومات كل بطولة في هذه القائمة مباشرةً من موقع الجهة المنظِّمة، وكل بطاقة تحمل رابط مصدر تقودك إلى الصفحة التي راجعناها. تتغيّر الحالة تلقائيًا بحسب التواريخ. البرامج قد تتغيّر — وعند الشك فالمرجع هو الصفحة الرسمية.",
   asOf: (dot) => `آخر تحديث ${dot}`,
 
   filterAll: "الكل",
@@ -1369,7 +1369,7 @@ const ar: BoardStrings = {
     },
     {
       q: "هل يستطيع أي لاعب المشاركة في كل البطولات المدرجة هنا؟",
-      a: "في معظمها نعم، لكن ليس في كلها. سلسلة Triton Super High Roller Series تعمل بنظام التزكية — لا توجد بطولات تأهيلية (ساتلايت)، والمال وحده لا يضمن مقعدًا. بطولة Holdem Masters في كوريا بالدعوة فقط، ولا يوجد فيها باي-إن نقدي. بطولة APT Championships تبدأ بيوم مخصّص لأهل القطاع قبل انطلاق البرنامج المفتوح للجمهور. وبعض الفعاليات لا تقبل إلا التذاكر، مثل APL Seoul (بتذكرة مقعد/seat فقط) — وهذه الشروط مكتوبة على البطاقة.",
+      a: "في معظمها نعم، لكن ليس في كلها. سلسلة Triton Super High Roller Series تعمل بنظام التزكية — تحتاج إلى تزكية من لاعب حالي في السلسلة أو من فريق Triton، والمال وحده لا يضمن مقعدًا. بطولة Holdem Masters في كوريا بالدعوة فقط، ولا يوجد فيها باي-إن نقدي. بطولة APT Championships تبدأ بيوم مخصّص لأهل القطاع قبل انطلاق البرنامج المفتوح للجمهور. وبعض الفعاليات لا تقبل إلا التذاكر، مثل APL Seoul (بتذكرة مقعد/seat فقط) — وهذه الشروط مكتوبة على البطاقة.",
     },
     {
       q: "كم يبلغ الباي-إن؟",
@@ -1422,7 +1422,7 @@ const fr: BoardStrings = {
 
   h1: "Tournois de poker 2026 — calendrier",
   heroLead:
-    "Chaque tournoi ci-dessous a été vérifié sur le site de son organisateur, et chaque carte renvoie vers la page que nous avons consultée. Le statut change tout seul selon les dates. Les calendriers bougent : avant de bloquer tes dates, vérifie la page officielle — c'est elle qui a le dernier mot.",
+    "Chaque tournoi ci-dessous a été vérifié sur le site de son organisateur, et chaque carte qui affiche un lien source renvoie vers la page que nous avons consultée. Le statut change tout seul selon les dates. Les calendriers bougent : avant de bloquer tes dates, vérifie la page officielle — c'est elle qui a le dernier mot.",
   // 보드(공용)는 «2026.10.14»를 넘긴다 → 프랑스식 «14/10/2026»
   asOf: (dot) => `Mis à jour le ${dot.split(".").reverse().join("/")}`,
 
@@ -1459,7 +1459,7 @@ const fr: BoardStrings = {
     },
     {
       q: "Tout le monde peut-il s'inscrire à ces tournois ?",
-      a: "Pour la plupart, oui, mais pas pour tous. La Triton Super High Roller Series fonctionne sur recommandation : il n'y a pas de satellites, et l'argent seul ne garantit pas une place. Le Holdem Masters, en Corée, se joue sur invitation uniquement, sans buy-in en argent. L'APT Championships s'ouvre sur une journée réservée aux professionnels du secteur (Event 0), la veille du programme ouvert au public. Et certains événements n'acceptent que des tickets, comme l'APL Seoul (uniquement avec un ticket d'entrée, ou seat) — ces conditions figurent sur la carte.",
+      a: "Pour la plupart, oui, mais pas pour tous. La Triton Super High Roller Series fonctionne sur recommandation : il faut être recommandé par un joueur actuel de la série ou par l'équipe Triton, et l'argent seul ne garantit pas une place. Le Holdem Masters, en Corée, se joue sur invitation uniquement, sans buy-in en argent. L'APT Championships s'ouvre sur une journée réservée aux professionnels du secteur (Event 0), la veille du programme ouvert au public. Et certains événements n'acceptent que des tickets, comme l'APL Seoul (uniquement avec un ticket d'entrée, ou seat) — ces conditions figurent sur la carte.",
     },
     {
       q: "Combien coûte le buy-in ?",
@@ -1513,7 +1513,7 @@ const ru: BoardStrings = {
 
   h1: "Покерные турниры 2026 — расписание",
   heroLead:
-    "Каждый турнир ниже сверен с сайтом его организатора, и каждая карточка ведёт на ту самую страницу, с которой мы брали данные. Статус меняется сам, по датам. Расписания сдвигаются, так что прежде чем бронировать билеты, проверь официальную страницу — последнее слово всегда за ней.",
+    "Каждый турнир ниже сверен с сайтом его организатора, и каждая карточка со ссылкой на источник ведёт на ту самую страницу, с которой мы брали данные. Статус меняется сам, по датам. Расписания сдвигаются, так что прежде чем бронировать билеты, проверь официальную страницу — последнее слово всегда за ней.",
   // 보드(공용)는 «2026.10.14»를 넘긴다 → 러시아식 «14.10.2026»
   asOf: (dot) => `Обновлено ${dot.split(".").reverse().join(".")}`,
 
@@ -1551,7 +1551,7 @@ const ru: BoardStrings = {
     },
     {
       q: "Может ли любой желающий участвовать в этих турнирах?",
-      a: "В большинстве — да, но не во всех. Triton Super High Roller Series — только по рекомендации: сателлитов нет, и одних денег для места недостаточно. Holdem Masters в Корее — только по приглашению, денежного бай-ина нет. APT Championships открывается днём только для представителей индустрии (Event 0) накануне открытой программы. А на некоторые турниры пускают только по билетам — например, APL Seoul (только по входному билету, seat). Такие условия указаны в карточке.",
+      a: "В большинстве — да, но не во всех. Triton Super High Roller Series — только по рекомендации: нужна рекомендация действующего игрока серии или команды Triton, и одних денег для места недостаточно. Holdem Masters в Корее — только по приглашению, денежного бай-ина нет. APT Championships открывается днём только для представителей индустрии (Event 0) накануне открытой программы. А на некоторые турниры пускают только по билетам — например, APL Seoul (только по входному билету, seat). Такие условия указаны в карточке.",
     },
     {
       q: "Сколько стоит бай-ин?",
@@ -1633,7 +1633,7 @@ const it: BoardStrings = {
     },
     {
       q: "Puoi iscriverti a tutti questi tornei pagando il buy-in?",
-      a: "Alla maggior parte sì, ma non a tutti. La Triton Super High Roller Series richiede una segnalazione: non ci sono satelliti e pagare non basta per avere un posto. Holdem Masters, in Corea del Sud, richiede un invito e non prevede un buy-in in denaro. APT Championships si apre con una giornata riservata agli operatori del settore (Event 0), prima del programma aperto al pubblico. Alcuni eventi accettano solo ticket, come APL Seoul: queste condizioni sono indicate nella scheda.",
+      a: "Alla maggior parte sì, ma non a tutti. La Triton Super High Roller Series richiede una segnalazione: serve quella di un giocatore attuale della serie o del team Triton, e pagare non basta per avere un posto. Holdem Masters, in Corea del Sud, richiede un invito e non prevede un buy-in in denaro. APT Championships si apre con una giornata riservata agli operatori del settore (Event 0), prima del programma aperto al pubblico. Alcuni eventi accettano solo ticket, come APL Seoul: queste condizioni sono indicate nella scheda.",
     },
     {
       q: "Quanto costa il buy-in?",
@@ -1704,7 +1704,7 @@ const pl: BoardStrings = {
     },
     {
       q: "Czy do każdego turnieju wystarczy opłacić wpisowe?",
-      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: nie ma satelitów, a same pieniądze nie zapewniają miejsca. Do Holdem Masters w Korei Południowej wchodzi się wyłącznie z biletem zaproszeniowym — nie ma wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), zanim rozpocznie się program otwarty dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
+      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: musi cię polecić obecny gracz serii lub zespół Tritona, a same pieniądze nie zapewniają miejsca. Do Holdem Masters w Korei Południowej wchodzi się wyłącznie z biletem zaproszeniowym — nie ma wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), zanim rozpocznie się program otwarty dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
     },
     {
       q: "Ile wynosi wpisowe?",
@@ -1745,7 +1745,7 @@ const th: BoardStrings = {
     return full.length <= 155 ? full : base;
   },
   h1: "ทัวร์นาเมนต์โป๊กเกอร์ 2026: poker tournament",
-  heroLead: "รายการด้านล่างตรวจจากเว็บไซต์ผู้จัด ลิงก์ในแต่ละการ์ดพาไปยังหน้าที่ใช้อ้างอิง สถานะคำนวณจากวันที่ ตารางอาจเปลี่ยนได้ ก่อนจองการเดินทางให้ตรวจเว็บไซต์ผู้จัดอีกครั้ง",
+  heroLead: "รายการด้านล่างตรวจจากเว็บไซต์ผู้จัด การ์ดที่มีลิงก์แหล่งที่มาจะพาไปยังหน้าที่ใช้อ้างอิง สถานะคำนวณจากวันที่ ตารางอาจเปลี่ยนได้ ก่อนจองการเดินทางให้ตรวจเว็บไซต์ผู้จัดอีกครั้ง",
   asOf: (dot) => `อัปเดต ${thaiDate(dot.replaceAll(".", "-"))}`,
   filterAll: "ทั้งหมด",
   filterUpcoming: "Upcoming",
@@ -1774,7 +1774,7 @@ const th: BoardStrings = {
     },
     {
       q: "จ่ายบายอินแล้วเข้าได้ทุกทัวร์นาเมนต์หรือไม่?",
-      a: "ส่วนใหญ่ได้ แต่ไม่ใช่ทั้งหมด Triton Super High Roller Series ต้องมีผู้แนะนำ ไม่มีแซทเทลไลท์ และมีเงินอย่างเดียวไม่รับประกันที่นั่ง Holdem Masters ในเกาหลีใต้ใช้บัตรเชิญเท่านั้น ไม่มีบายอินด้วยเงินสด ส่วน APT Championships เริ่มด้วย Event 0 ที่จำกัดเฉพาะพนักงานคาสิโนและผู้ที่ทำงานในวงการโป๊กเกอร์ หนึ่งวันก่อนตารางที่เปิดให้ผู้เล่นทั่วไป และบางงานรับเฉพาะบัตร เช่น APL Seoul ซึ่งเงื่อนไขนี้แสดงไว้ในช่องบายอินของการ์ด",
+      a: "ส่วนใหญ่ได้ แต่ไม่ใช่ทั้งหมด Triton Super High Roller Series ต้องมีผู้เล่นปัจจุบันของซีรีส์หรือทีม Triton เป็นผู้แนะนำ และมีเงินอย่างเดียวไม่รับประกันที่นั่ง Holdem Masters ในเกาหลีใต้ใช้บัตรเชิญเท่านั้น ไม่มีบายอินด้วยเงินสด ส่วน APT Championships เริ่มด้วย Event 0 ที่จำกัดเฉพาะพนักงานคาสิโนและผู้ที่ทำงานในวงการโป๊กเกอร์ หนึ่งวันก่อนตารางที่เปิดให้ผู้เล่นทั่วไป และบางงานรับเฉพาะบัตร เช่น APL Seoul ซึ่งเงื่อนไขนี้แสดงไว้ในช่องบายอินของการ์ด",
     },
     {
       q: "บายอินเท่าไหร่?",
@@ -2082,7 +2082,7 @@ export function localizedName(t: Tournament, locale: BoardLocale): string {
    ★ 사전에 없는 값은 원문 그대로 통과시킨다. 지어내지 않는다.
    ──────────────────────────────────────────────────────────── */
 const FIELD_EN: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "(온라인 새틀 7/10~9/10)": "(online satellites Jul 10 – Sep 10)",
   "새틀라이트 티켓 전용": "Satellite ticket only",
   "참가권(SEAT) 전용": "Seat (ticket) entry only",
@@ -2130,7 +2130,7 @@ const FIELD_EN: Record<string, string> = {
 /* ja 필드 사전. 통화는 원문 통화를 유지하되 표기만 일본식으로 옮긴다
    ("₩150만"은 일본 독자가 읽는 형태가 아니다 → "150万ウォン") */
 const FIELD_JA: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "スイスグランドホテル コンベンションセンター（ソウル）",
+  "스위스 그랜드 호텔 컨벤션센터": "スイスグランドホテル コンベンションセンター",
   "(온라인 새틀 7/10~9/10)": "（オンラインサテライト 7/10〜9/10）",
   "새틀라이트 티켓 전용": "サテライトチケット限定",
   "참가권(SEAT) 전용": "シート（参加権）限定",
@@ -2204,7 +2204,7 @@ const VENUE_JA: Record<string, string> = {
 
 /* zh 필드 사전 (간체). 통화는 원문 통화 유지, 표기만 현지식 */
 const FIELD_ZH: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "首尔瑞士大酒店会议中心",
+  "스위스 그랜드 호텔 컨벤션센터": "瑞士大酒店会议中心",
   "(온라인 새틀 7/10~9/10)": "（线上卫星赛 7/10〜9/10）",
   "새틀라이트 티켓 전용": "仅限卫星赛门票",
   "참가권(SEAT) 전용": "仅限席位（参赛权）",
@@ -2303,7 +2303,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
 
 /* zh-hant 필드 사전 (번체) */
 const FIELD_HANT: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "首爾瑞士大飯店會議中心",
+  "스위스 그랜드 호텔 컨벤션센터": "瑞士大飯店會議中心",
   "(온라인 새틀 7/10~9/10)": "（線上衛星賽 7/10〜9/10）",
   "새틀라이트 티켓 전용": "僅限衛星賽門票",
   "참가권(SEAT) 전용": "僅限席次（參賽權）",
@@ -2409,7 +2409,7 @@ const PAREN_HANT: Record<string, string> = {
    ★ 스페인어는 천단위 구분이 점(.)이고 소수점이 쉼표(,)다 — 영어와 반대.
      "€5,300"을 그대로 두면 스페인어 독자에겐 "5.3유로"로 읽힌다. */
 const FIELD_ES: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seúl",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "(온라인 새틀 7/10~9/10)": "(satélites online 10 jul – 10 sep)",
   "새틀라이트 티켓 전용": "Solo con ticket de satélite",
   "참가권(SEAT) 전용": "Solo con asiento (entrada) ganado",
@@ -2559,7 +2559,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
    근거: docs/translation-terms-de.md §3(표기) · §7-5(숫자 실측)
    ──────────────────────────────────────────────────────────── */
 const FIELD_DE: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "(온라인 새틀 7/10~9/10)": "(Online-Satellites 10.7.–10.9.)",
   "새틀라이트 티켓 전용": "Nur mit Satellite-Ticket",
   "참가권(SEAT) 전용": "Nur mit gewonnenem Seat (Ticket)",
@@ -2684,7 +2684,7 @@ const SCHEMA_DESC_DE: Record<string, string> = {
    ★ 키 = lib/tournaments.ts의 한국어 값 그대로. 새 한국어 값이 생기면 check:tournaments-i18n이 🔴로 잡는다.
    ──────────────────────────────────────────────────────────── */
 const FIELD_ID: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (dikelola King's Casino Prague)",
   "공식 미기재": "Belum diumumkan",
@@ -2714,7 +2714,7 @@ const FIELD_ID: Record<string, string> = {
 };
 
 const FIELD_MS: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (dikendalikan oleh King's Casino Prague)",
   "공식 미기재": "Belum diumumkan",
@@ -2744,7 +2744,7 @@ const FIELD_MS: Record<string, string> = {
 };
 
 const FIELD_VI: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (do King's Casino Prague vận hành)",
   "공식 미기재": "Chưa công bố",
@@ -2834,7 +2834,7 @@ const SCHEMA_DESC_VI: Record<string, string> = {
 /* pt · tr 값 사전 (2026-09-29 · 회차 2). 둘 다 천 단위 마침표·소수점 쉼표(DOT_THOUSANDS).
    KRW 단위: pt mil·milhão·bilhão / tr bin·milyon·milyar. 수치는 §13 불변. */
 const FIELD_PT: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (operado pelo King's Casino Prague)",
   "공식 미기재": "Não divulgado",
@@ -2864,7 +2864,7 @@ const FIELD_PT: Record<string, string> = {
 };
 
 const FIELD_TR: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (işletmeci: King's Casino Prague)",
   "공식 미기재": "Açıklanmadı",
@@ -2939,7 +2939,7 @@ const SCHEMA_DESC_TR: Record<string, string> = {
    KRW 단위: hi 는 인도식 लाख(10만)·करोड़(1,000만) — 만 단위 값이 그대로 맞물린다
      (150만 = 15 लाख · 1,000만 = 1 करोड़ · 10억 = 100 करोड़) / ar ألف·مليون·مليار. 수치는 §13 불변. */
 const FIELD_HI: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (संचालन: King's Casino Prague)",
   "공식 미기재": "घोषित नहीं",
@@ -2969,7 +2969,7 @@ const FIELD_HI: Record<string, string> = {
 };
 
 const FIELD_AR: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (بإدارة King's Casino Prague)",
   "공식 미기재": "غير معلن",
@@ -3026,7 +3026,7 @@ const SCHEMA_DESC_AR: Record<string, string> = {
    천 단위: fr U+202F · ru U+00A0 (사전 밖 라틴 값은 localizeThousands가 같은 문자로 바꾼다).
    소수 쉼표 · 통화 기호는 데이터처럼 앞붙임. KRW 단위: fr millions/milliards · ru тыс./млн/млрд. */
 const FIELD_FR: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (exploité par King's Casino Prague)",
   "공식 미기재": "Non communiqué",
@@ -3056,7 +3056,7 @@ const FIELD_FR: Record<string, string> = {
 };
 
 const FIELD_RU: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (оператор — King's Casino Prague)",
   "공식 미기재": "Не объявлено",
@@ -3136,7 +3136,7 @@ export function shortDayMonth(iso: string, locale: "fr" | "ru" | "it" | "pl" | "
 
 // ★2026-10-16 it 도구 회차 — field values only; data rows remain untouched.
 const FIELD_IT: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "YAJASU Center Seoul",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (gestito da King's Casino Prague)",
   "공식 미기재": "Non pubblicato",
@@ -3185,7 +3185,7 @@ const SCHEMA_DESC_IT: Record<string, string> = {
 const MONTH_IT = ["gen.","feb.","mar.","apr.","mag.","giu.","lug.","ago.","set.","ott.","nov.","dic."];
 
 const FIELD_PL: Record<string, string> = {
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "Yajasu Seoul Center",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (prowadzone przez King's Casino Prague)",
   "공식 미기재": "Nie podano",
@@ -3240,7 +3240,7 @@ export function polishDate(iso: string): string {
 // Thai values use Latin digits and English separators. Event/venue brands stay original.
 const FIELD_TH: Record<string, string> = {
   "₩350K~₩5M": "₩350,000–₩5,000,000",
-  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center",
   "야자수 서울센터": "Yajasu Seoul Center",
   "Hilton Prague (King's Casino Prague 운영)": "Hilton Prague (ดำเนินการโดย King's Casino Prague)",
   "공식 미기재": "ยังไม่เผยแพร่",
@@ -3375,7 +3375,7 @@ const NOTE_EN: Record<string, string> = {
   "holdem-masters-8": "₩2bn GTD, the largest yet · Main Event ₩1.8bn plus five NLH deepstacks",
   "holdem-masters-9": "₩2.4bn GTD (WPL Main Event ₩2bn + Mini Main Event ₩400M) · 30 Day 1 flights Oct 11–Dec 9 · Final Dec 13",
   "appt-korea": "Main Event Sep 10–14 — ₩1.8M buy-in · ₩1bn GTD",
-  "triton-jeju-2": "14 high rollers · no satellites, referral only · $200K Invitational Sep 12–14",
+  "triton-jeju-2": "14 high rollers · referral only · $200K Invitational Sep 12–14",
   "apt-jeju-fall": "135 events · Main Event ₩2.2bn GTD · 12 APTC seats",
   "gop-incheon-2": "WPT Seoul runs on Yeongjong Island at the same time, at a different venue",
   "wpt-seoul": "45 events · Main Nov 5–9 (₩1.75M, ₩1bn GTD) · a new 70-table poker room",
@@ -3446,7 +3446,7 @@ const NOTE_JA: Record<string, string> = {
   "holdem-masters-8": "総額20億ウォンGTDでシリーズ史上最大 · メインイベント18億ウォン＋NLHディープスタック5種",
   "holdem-masters-9": "総額24億ウォンGTD（WPLメインイベント20億＋ミニメインイベント4億）· DAY1は30回（10/11〜12/9）· FINAL 12/13",
   "appt-korea": "メインイベント9/10〜14 — バイイン180万ウォン · 10億ウォンGTD",
-  "triton-jeju-2": "ハイローラー14種 · サテライトなし（推薦制）· $200K Invitationalは9/12〜14",
+  "triton-jeju-2": "ハイローラー14種 · 推薦制 · $200K Invitationalは9/12〜14",
   "apt-jeju-fall": "135イベント · メインイベント22億ウォンGTD · APTCシート12席",
   "gop-incheon-2": "同時期に永宗島でWPT Seoulも開催（会場は別）",
   "wpt-seoul": "45イベント · メイン11/5〜9（175万ウォン、10億ウォンGTD）· 70卓の新設ポーカールーム",
@@ -3532,7 +3532,7 @@ const NOTE_ZH: Record<string, string> = {
   "holdem-masters-8": "总奖金20亿韩元GTD，创系列赛新高 · 主赛事18亿韩元＋5场NLH深筹",
   "holdem-masters-9": "总奖金24亿韩元GTD（WPL主赛事20亿＋迷你主赛事4亿）· DAY1共30场（10/11–12/9）· 决赛12/13",
   "appt-korea": "主赛事9月10〜14日——买入180万韩元 · 10亿韩元GTD",
-  "triton-jeju-2": "14场豪客赛 · 无卫星赛（推荐制）· $200K Invitational为9月12〜14日",
+  "triton-jeju-2": "14场豪客赛 · 推荐制 · $200K Invitational为9月12〜14日",
   "apt-jeju-fall": "135场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
   "gop-incheon-2": "同期在永宗岛还有WPT Seoul（场馆不同）",
   "wpt-seoul": "45场赛事 · 主赛11月5〜9日（175万韩元，10亿韩元GTD）· 新建70桌扑克室",
@@ -3624,7 +3624,7 @@ const NOTE_HANT: Record<string, string> = {
   "holdem-masters-8": "總獎金20億韓元GTD，創系列賽新高 · 主賽事18億韓元＋5場NLH深籌",
   "holdem-masters-9": "總獎金24億韓元GTD（WPL主賽事20億＋迷你主賽事4億）· DAY1共30場（10/11–12/9）· 決賽12/13",
   "appt-korea": "主賽事9月10〜14日——買入180萬韓元 · 10億韓元GTD",
-  "triton-jeju-2": "14場豪客賽 · 無衛星賽（推薦制）· $200K Invitational為9月12〜14日",
+  "triton-jeju-2": "14場豪客賽 · 推薦制 · $200K Invitational為9月12〜14日",
   "apt-jeju-fall": "135場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
   "gop-incheon-2": "同期在永宗島還有WPT Seoul（場館不同）",
   "wpt-seoul": "45場賽事 · 主賽11月5〜9日（175萬韓元，10億韓元GTD）· 新建70桌撲克室",
@@ -3710,7 +3710,7 @@ const NOTE_ES: Record<string, string> = {
   "holdem-masters-8": "2.000 millones de KRW GTD, el más grande hasta ahora · Main Event 1.800 millones más cinco deepstacks de NLH",
   "holdem-masters-9": "2.400 millones de KRW GTD (Main Event WPL 2.000 millones + Mini Main Event 400 millones) · 30 flights de Day 1 del 11 de oct al 9 de dic · final el 13 de dic",
   "appt-korea": "Main Event del 10 al 14 de sep: buy-in de 1,8 M KRW · 1.000 millones GTD",
-  "triton-jeju-2": "14 high rollers · sin satélites, solo por recomendación · $200K Invitational del 12 al 14 de sep",
+  "triton-jeju-2": "14 high rollers · solo por recomendación · $200K Invitational del 12 al 14 de sep",
   "apt-jeju-fall": "135 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
   "gop-incheon-2": "El WPT Seoul se juega a la vez en la isla de Yeongjong, en otra sede",
   "wpt-seoul": "45 eventos · Main del 5 al 9 de nov (1,75 M KRW, 1.000 millones GTD) · sala de poker nueva de 70 mesas",
