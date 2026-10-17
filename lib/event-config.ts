@@ -89,6 +89,8 @@ const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused
   // ru — 2026-10-10 `/ru/solver`(ru 첫 허브)와 함께. 수사 뒤 명사 격변화를 피하려고 «라벨: 수» 꼴(용어 참고자료 §2-1).
   ru: { open: "Приём заявок открыт", closed: "Приём заявок закрыт", paused: "Скоро", draw: "Розыгрыш по расписанию", next: "Следующий приём заявок", round: "Тур", conditions: (p, l) => `Войди · Постов в сообществе: ${p} · Лайков на твоих постах: ${l}` },
   // it — 2026-10-17 `/it/solver`와 함께(영어로 떨어지던 it 허브 상태 라벨 · paused = hub-i18n IT eventBadge «Prossimamente»). 수 뒤 단복수를 피하려고 «라벨: 수» 꼴.
+  // pl — 2026-10-17 `/pl/solver`와 함께(영어로 떨어지던 pl 허브 상태 라벨 · paused = hub-i18n PL eventBadge «Wkrótce»). 수 뒤 복수형 분기를 피하려고 «라벨: 수» 꼴(용어 정본 굴절 규칙 ④).
+  pl: { open: "Zapisy otwarte", closed: "Zapisy zamknięte", paused: "Wkrótce", draw: "Planowane losowanie", next: "Kolejne zapisy", round: "Runda", conditions: (p, l) => `Zaloguj się · Posty w społeczności: ${p} · Otrzymane polubienia: ${l}` },
   it: { open: "Iscrizioni aperte", closed: "Iscrizioni chiuse", paused: "Prossimamente", draw: "Estrazione prevista", next: "Prossime iscrizioni", round: "Turno", conditions: (p, l) => `Accedi · Post nella community: ${p} · Mi piace ricevuti: ${l}` },
 };
 

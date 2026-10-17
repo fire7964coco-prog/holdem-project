@@ -102,6 +102,12 @@ export const SPOT_SHARE_I18N: Record<SolverFeedbackLocale, SpotShareDict> = {
     board: "Board", pot: "Piatto", stack: "Stack", open: "Apri nel solver →", landing: "Scopri il solver GTO gratis",
     notFound: "Spot non trovato", notFoundBody: "Il link è sbagliato o non si apre. Puoi ricostruire lo spot direttamente nel solver.",
   },
+  // pl — ★2026-10-17(`/pl/solver` 신설 회차). board·pot·stack = 용어 정본 UI 라벨(Board · Pula · Stack) · ty체 · 비인칭 실패문(«Nie udało się…» 솔버 결).
+  pl: {
+    title: "Udostępniony spot z solvera", lead: "Ktoś udostępnił ten spot z solvera GTO HoldemMaster. Otworzy się z tymi samymi zakresami i tymi samymi sizingami.",
+    board: "Board", pot: "Pula", stack: "Stack", open: "Otwórz w solverze →", landing: "Poznaj darmowy solver GTO",
+    notFound: "Nie znaleziono spotu", notFoundBody: "Link jest nieprawidłowy albo nie udało się go otworzyć. Możesz odtworzyć spot bezpośrednio w solverze.",
+  },
 };
 
 /** Accept-Language → 화면 언어 (zh-TW·zh-HK·zh-Hant = zh-hant · 못 받는 언어는 en) */

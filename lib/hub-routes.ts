@@ -46,7 +46,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-10-17 th 도구 회차
   th: ["/th/calculator", "/th/hand-chart", "/th/glossary", "/th/tournaments", "/th/win-rate-quiz"],
   // ★2026-10-16 pl 도구 회차
-  pl: ["/pl/calculator", "/pl/hand-chart", "/pl/glossary", "/pl/tournaments", "/pl/win-rate-quiz"],
+  // ★2026-10-17 `/pl/solver` 신설(17번째 솔버 랜딩 · 솔버 pl 라이브 S-106).
+  pl: ["/pl/calculator", "/pl/hand-chart", "/pl/glossary", "/pl/solver", "/pl/tournaments", "/pl/win-rate-quiz"],
   // ★2026-10-16 it 도구 회차
   // ★2026-10-17 `/it/solver` 신설(16번째 솔버 랜딩 · 솔버 it 라이브 S-104).
   it: ["/it/calculator", "/it/hand-chart", "/it/glossary", "/it/solver", "/it/tournaments", "/it/win-rate-quiz"],

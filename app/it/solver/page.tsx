@@ -48,6 +48,7 @@ export const metadata: Metadata = {
       "vi-VN": `${SITE}/vi/solver`,
       "ru-RU": `${SITE}/ru/solver`,
       "it-IT": `${SITE}/it/solver`,
+      "pl-PL": `${SITE}/pl/solver`,
     },
   },
   twitter: {

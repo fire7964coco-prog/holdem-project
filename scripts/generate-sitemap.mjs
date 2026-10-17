@@ -216,6 +216,8 @@ const STATIC_ROUTES = [
   { path: "/ru/solver", priority: "0.7", changefreq: "monthly" },
   // `/it/solver` — 16번째 솔버 랜딩(2026-10-17 · 솔버 it 라이브 S-104).
   { path: "/it/solver", priority: "0.7", changefreq: "monthly" },
+  // `/pl/solver` — 17번째 솔버 랜딩(2026-10-17 · 솔버 pl 라이브 S-106).
+  { path: "/pl/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★2026-09-17 신설 — `/<locale>/calculator` 10개(ja es pt de zh zh-hant fr id ms hi).

@@ -1417,13 +1417,106 @@ const it: SolverReviewsDict = {
   },
 };
 
+/**
+ * pl — ★2026-10-17 `/pl/solver` 신설과 함께. 폼 문구(formTitle~saved · errors)는 솔버 초안
+ *   (`solver/src/solver-feedback-labels.ts` feedbackLabels.pl · 추출 = docs/solver-app-verbatim-pl-2026-10-17.md §10) 축어 —
+ *   tabQuestion·placeholderQuestion·loginEmail 등 솔버 초안에 없는 키는 본체가 같은 결(ty체 · 보상·응모 뉘앙스 없음)로 썼다.
+ *   🔴 «Opinia»(제품 후기) ≠ «Powtórz błędy»(오답 복습) ≠ «Analiza rozdania»(핸드 분석).
+ *   🔴 사용자 성별이 드러나는 과거형(-ł/-ła) 피함(«Data dołączenia: …» · «Opublikowano» = 비인칭).
+ *   🔴 복수형 = 1 / 2–4(12–14 제외) / 5+ 세 갈래(용어 정본 굴절 규칙 ④).
+ */
+const plForm = (n: number, one: string, few: string, many: string) =>
+  n === 1 ? one : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? few : many;
+const pl: SolverReviewsDict = {
+  title: "Co mówią ci, którzy już z niego korzystają",
+  summary: (n, avg, r) => `${n} ${plForm(n, "opinia", "opinie", "opinii")}${avg !== null ? ` · ★ ${avg.toFixed(1).replace(".", ",")} (${r} ${plForm(r, "ocena", "oceny", "ocen")})` : ""}`,
+  noticeNeg: "Nie usuwamy negatywnych opinii.",
+  noticeHide: "Ukrywamy tylko linki, obelgi i reklamy.",
+  criteriaToggle: "Zobacz kryteria",
+  criteria: {
+    link: "Link — wpis z adresem zewnętrznym",
+    abuse: "Obelgi — obraźliwe lub wulgarne słowa wobec osoby (ostra krytyka produktu się tu nie zalicza)",
+    ad: "Reklama — promowanie innej usługi lub produktu",
+  },
+  formTitle: "Jak ci się korzystało z solvera?",
+  tabReview: "Opinia",
+  tabQuestion: "Pytanie",
+  ratingLabel: "Ocena (opcjonalnie)",
+  placeholderReview: "Napisz kilka słów — szczerze, co się sprawdza, a co nie",
+  placeholderQuestion: "O co chcesz zapytać?",
+  downsideToggle: "+ Dodaj, co można poprawić",
+  downsidePlaceholder: "Co można poprawić (opcjonalnie)",
+  postingAs: (name) => `Autor: ${name}`,
+  change: "Zmień",
+  nicknameSave: "Zapisz nazwę",
+  nicknameCancel: "Anuluj",
+  nicknameEmailWarn: "Twoja nazwa to obecnie początek adresu e-mail. Wybierz nazwę przed jej publicznym wyświetleniem.",
+  submit: "Opublikuj",
+  submitEdit: "Zaktualizuj",
+  loginTitle: "Zaloguj się, a twój tekst zostanie opublikowany bez zmian",
+  loginGoogle: "Kontynuuj przez Google",
+  loginKakao: "Kontynuuj przez Kakao",
+  loginEmail: "Zaloguj się e-mailem",
+  linkWarn: "Nie można dodawać linków",
+  saved: "Opublikowano. Dziękujemy!",
+  firstReview: "Napisz pierwszą opinię",
+  featured: "Wyróżnione opinie",
+  allReviews: (n) => `Zobacz wszystkie opinie (${n} · od najnowszych)`,
+  reviewsList: "Opinie",
+  questions: "Pytania",
+  answered: "Z odpowiedzią",
+  awaiting: "Czeka na odpowiedź",
+  operator: "Zespół HoldemMaster",
+  helpful: "Przydatne",
+  edit: "Edytuj",
+  del: "Usuń",
+  confirmDelete: "Usunąć ten wpis?",
+  mine: "Twój wpis",
+  joined: (my) => `Data dołączenia: ${my}`,
+  usage: "Korzysta z solvera",
+  devices: { phone: "Smartfon", tablet: "Tablet", desktop: "Komputer" },
+  reasons: { link: "link", abuse: "obelga", ad: "reklama" },
+  hiddenMine: (r) => `Ukryte · powód: ${r} — widzisz to tylko ty`,
+  requestReview: "Poproś o ponowne sprawdzenie",
+  requested: "Prośba wysłana",
+  avatarTitle: "Zdjęcie profilowe (opcjonalnie)",
+  avatarInitial: "Inicjał",
+  avatarCharacter: "Wybierz postać",
+  avatarUpload: "Prześlij obraz",
+  avatarProvider: "Użyj mojego zdjęcia z Google/Kakao",
+  avatarHidden: (r) => `Twoje zdjęcie profilowe zostało ukryte (powód: ${r})`,
+  unavailable: "Nie udało się teraz wczytać opinii.",
+  errors: {
+    login: "Zaloguj się.",
+    unavailable: "Spróbuj ponownie za chwilę.",
+    body_short: "Napisz co najmniej 2 znaki.",
+    body_long: "Maksymalnie 600 znaków.",
+    downside_long: "Maksymalnie 200 znaków w opisie tego, co można poprawić.",
+    link: "Nie można dodawać linków.",
+    rating: "Nieprawidłowa ocena.",
+    rating_needs_body: "Dodaj kilka słów — nie przyjmujemy ocen bez tekstu.",
+    rate: "Spróbuj ponownie za kilka minut.",
+    nickname_confirm: "Wybierz nazwę przed publikacją.",
+    nickname_short: "Nazwa musi mieć co najmniej 2 znaki.",
+    nickname_long: "Nazwa może mieć maksymalnie 20 znaków.",
+    nickname_link: "Nazwa nie może zawierać adresów stron ani adresów e-mail.",
+    nickname_impersonation: "Nazwa nie może sugerować oficjalnego konta ani członka zespołu.",
+    image_type: "Tylko pliki graficzne (jpg, png, webp, gif).",
+    image_size: "Prześlij obraz mniejszy niż 5 MB.",
+    already_requested: "Prośba o ponowne sprawdzenie została już wysłana.",
+    not_found: "Nie znaleziono. Odśwież stronę.",
+    bad_input: "Spróbuj ponownie za chwilę.",
+    locale: "Spróbuj ponownie za chwilę.",
+  },
+};
+
 export const SOLVER_REVIEWS_I18N: Record<SolverFeedbackLocale, SolverReviewsDict> = {
-  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi, ru, it,
+  ko, en, ja, es, pt, de, zh, "zh-hant": zhHant, fr, id, ms, hi, tr, vi, ru, it, pl,
 };
 
 /** Intl 로케일 태그 — 가입 시기·날짜 표기 */
 export const SOLVER_REVIEWS_INTL_TAG: Record<SolverFeedbackLocale, string> = {
   ko: "ko-KR", en: "en-US", ja: "ja-JP", es: "es-ES", pt: "pt-BR", de: "de-DE",
   zh: "zh-CN", "zh-hant": "zh-TW", fr: "fr-FR", id: "id-ID", ms: "ms-MY", hi: "hi-IN",
-  tr: "tr-TR", vi: "vi-VN", ru: "ru-RU", it: "it-IT",
+  tr: "tr-TR", vi: "vi-VN", ru: "ru-RU", it: "it-IT", pl: "pl-PL",
 };

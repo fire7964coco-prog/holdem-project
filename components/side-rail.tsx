@@ -102,6 +102,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/pl/calculator", icon: "🧮", label: "Kalkulator pokerowy" },
     { href: "/pl/hand-chart", icon: "📊", label: "Ręce startowe poker" },
     { href: "/pl/glossary", icon: "📖", label: "Słownik pokerowy" },
+    // ★2026-10-17 `/pl/solver` 신설. 라벨 = 그 페이지 HubPage title 축어.
+    { href: "/pl/solver", icon: "🧠", label: "Solver GTO" },
     { href: "/pl/tournaments", icon: "🏆", label: "Turnieje pokerowe" },
     { href: "/pl/win-rate-quiz", icon: "📈", label: "Quiz poker" },
   ],
