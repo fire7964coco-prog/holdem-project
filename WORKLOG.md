@@ -1,4 +1,4 @@
-## 2026-10-17 (8) — `/it/solver` 신설(16번째 솔버 랜딩 · 도구 확장 ④) · 로컬 커밋 · 🔴 배포 전 Supabase SQL 필요
+## 2026-10-17 (8) — `/it/solver` 신설(16번째 솔버 랜딩 · 도구 확장 ④) · 배포 · MB-376·377
 
 - 서치: DFS 2380 it 볼륨 24어(응답 10 · gto poker 480 · solver poker 90 · poker solver 70 · gto solver 40 · solver poker gratis 30 · gto wizard 5.400) + SERP 2(«gto poker» 정의 의도 6/10 · «solver poker» 이탈리아어 원문 0) → `keyword-bank/it-tools.md` §6.
 - 앱 축어: 솔버 레포 소스 읽기 전용 추출(서브 · HEAD a6bb57a = 라이브 b10e60c와 it 문자열 바이트 동일) → `docs/solver-app-verbatim-it-2026-10-17.md`. 예제 13 이름·그룹 3·조건 줄 · Esempi · Sfida del giorno · Trainer GTO · Avvia solver · Statistiche flop(Carta più alta…) · RNG: No · I miei spot · Ripasso.
@@ -6,6 +6,7 @@
 - 등록: hub-routes · side-rail · solver-promo · sitemap · hreflang `it-IT` 15파일+새 파일 · event-config it(상태 라벨 · 기존 it 도구 셸도 이탈리아어가 됨) · 후기창 it(`solver-reviews-i18n` 폼 키 = 솔버 feedbackLabels.it 축어 · spot-share it · config 16 · SQL 제약 2곳 · 게이트 16·selftest `it`).
 - 렌즈: 원어민(WRONG 6 · RISKY 19 → 반영 · 사용자 남성형 «sei arrivato»·«sei pronto»·«da solo» 제거) + §13·충실도(숫자·카드·산수 전건 일치 · 앱 라벨 9건 = 축어 반영으로 해소 · /it/glossary에 EV 항목 없음 → 괄호에서 뺌). Samsung 문항은 확인 안 된 대화상자 라벨을 빼고 앱 가이드 뜻으로.
 - 게이트: build exit 0(sitemap 74+746+142+25 · /it/solver) · postbuild hreflang·directives·meta-lang 통과 · check:solver-feedback 🔴 0 · selftest 11/11 · Vercel 선검사 4종 0 · 로컬 390·1440 넘침 0 · FAQ 화면 26 = 스키마 26 · hreflang 16 · 페이지 오류 0.
+- 배포: 사장님 SQL 실행 확인(제약 끝 `'it'::text`) → push `1882b83a` → 라이브 200(Playwright 390·1440 넘침 0 · FAQ 26=26 · hreflang 16 · index,follow · 후기 블록 · EN 쪽 it-IT) · IndexNow 6 URL 200(it 도구 5 포함) · MB-376(솔버 요청 2) · MB-377(검수장 판정 1). ▶ 사장님 GSC 수동 색인 `/it/solver`.
 - 남김: 🪶 셸 텔레그램 블록 «Log in to link →» = `app/community/telegram-connect.tsx` LABELS에 it 없음(it 도구 페이지 전부 이미 영어) — ⑥ 수신 동의 문구가 같은 사전이라 별도 회차(pl·th도 확인 필요).
 
 ## 2026-10-17 (7) — 우편함 회신 3건(MA-607 · S-103 · S-104) · pl 옛 문면 4자리
