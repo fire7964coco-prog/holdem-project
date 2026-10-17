@@ -44,6 +44,7 @@ const HUB_SECTIONS = ["/pub", "/rules"] as const;
 // ★2026-10-05 `/<locale>/glossary` 같은 10개 로케일 신설(회차 2 · hreflang = lib/glossary-alternates.ts) — «glossary는 없다» 경고도 낡았다.
 const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   // ★2026-10-16 pl 도구 회차
+  th: ["/th/calculator"],
   pl: ["/pl/calculator", "/pl/hand-chart", "/pl/glossary", "/pl/tournaments", "/pl/win-rate-quiz"],
   // ★2026-10-16 it 도구 회차
   it: ["/it/calculator", "/it/hand-chart", "/it/glossary", "/it/tournaments", "/it/win-rate-quiz"],

@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
  *   솔버처럼 12파일에 복사하지 않고 **한 곳**에 둔다 — 로케일을 더할 때 여기 한 줄이면 된다.
  * ★언어 코드 표기는 솔버 랜딩과 동일(`ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN`).
  */
-export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ru", "ar", "it", "pl"] as const;
+export const CALCULATOR_LOCALES = ["en", "ja", "es", "pt", "de", "zh", "zh-hant", "fr", "id", "ms", "hi", "tr", "vi", "ru", "ar", "it", "pl", "th"] as const;
 export type CalculatorLocale = (typeof CALCULATOR_LOCALES)[number];
 
 export const CALCULATOR_ALTERNATES: Record<string, string> = {
@@ -44,5 +44,6 @@ export const CALCULATOR_ALTERNATES: Record<string, string> = {
   // ★2026-10-16 it 도구 회차
   "it-IT": `${SITE}/it/calculator`,
   "pl-PL": `${SITE}/pl/calculator`,
+  "th-TH": `${SITE}/th/calculator`,
   "x-default": `${SITE}/en/calculator`,
 };

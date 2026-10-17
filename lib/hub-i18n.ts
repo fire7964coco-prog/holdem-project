@@ -319,7 +319,19 @@ const PL: HubLabels = {
   languages: "🌐 Języki społeczności",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { pl: PL, en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU, it: IT };
+const TH: HubLabels = {
+  login: "เข้าสู่ระบบ",
+  write: "✏️ เขียนโพสต์",
+  trending: "🔥 ยอดนิยมสัปดาห์นี้",
+  eventBadge: "🎰 กิจกรรม · เร็วๆ นี้",
+  eventTitle: "เลือกเลข 6 ตัว\nลุ้นบัตรของขวัญ!",
+  eventDesc: "ตรง 3 ตัว → $30 · 4 ตัว → $200\n5 ตัว → $1,000",
+  eventSchedule: "🔗 ทุกวันอาทิตย์ 19:00 KST\nจับรางวัลอัตโนมัติด้วยแฮชบล็อก Bitcoin",
+  eventButton: "ดูกิจกรรม →",
+  languages: "🌐 ภาษาของชุมชน",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { th: TH, pl: PL, en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI, vi: VI, tr: TR, ar: AR, ru: RU, it: IT };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
