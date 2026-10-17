@@ -1,3 +1,10 @@
+## 2026-10-17 (7) — 우편함 회신 3건(MA-607 · S-103 · S-104) · pl 옛 문면 4자리
+
+- MA-607(MB-370 판정 · 새 결함 0 · MA-603 종결): 통지 ⓐ~ⓓ pl 4자리 반영(quiz «bez podwójnego liczenia» · calc «kolejność działania» · calc 결정 문장 · APT «zanim rozpocznie się program…») · EN glossary 3-Bet 앞 절 한정 = queue §2-CO CO-ⓒ(EN 손질 회차와 묶음) · pl 블로그 ulica↔street = CO-ⓓ 판단 대상.
+- S-103(솔버 it 언어북 자료): `translation-terms-it.md` «솔버 추가» 절(game tree 갈림 · 화면 고유명 · 문체·숫자) + `keyword-bank/it-tools.md` §5(검색어↔앱 글자 칸 분리 · 미측정) · langbook 갱신.
+- S-104(솔버 it 라이브): 요청 1 수용 — `/it/solver` 랜딩 = 계획 §4 it 행 «▶ 착수 가능» · 배포 때 솔버 통지.
+- 빌드 exit 0 · MB-374(검수장) · MB-375(솔버).
+
 ## 2026-10-17 (6) — 족보 형제 4편 pl+th(kicker·tiebreak-rules·split-pot-rules·flush-vs-straight · 로컬 커밋 · 미배포)
 
 - 분담: Claude 포크 4레인(pl-A·pl-B·th-A·th-B 각 2편) → 본체 인덱스 등록 → 링크 복원 포크(기존 7편 × 2) ∥ 원어민 적대 검수 2(general-purpose · 읽기 전용) → pl 본체 반영 · th 반영 포크 → 빌드.

@@ -1325,7 +1325,7 @@ export const CALC_DICT_PL: CalcDict = {
           "Komfortowy stack — pełna strategia, gra na pozycji i blefy"
         ]
       ],
-      "note": "Rolę blindów i kolejność zakładów wyjaśnia poradnik",
+      "note": "Rolę blindów i kolejność działania wyjaśnia poradnik",
       "link": {
         "slug": "holdem-blind-meaning",
         "text": "Mały i duży blind"
@@ -1350,7 +1350,7 @@ export const CALC_DICT_PL: CalcDict = {
       {
         "icon": "💰",
         "title": "Pot odds i implied odds",
-        "body": "Podejmuj decyzję sprawdzenie/pas na podstawie matematyki; przełącznik implied odds dodaje pieniądze, które spodziewasz się wygrać na późniejszych streetach."
+        "body": "Na podstawie obliczeń zdecyduj, czy sprawdzić, czy spasować; przełącznik implied odds dodaje pieniądze, które spodziewasz się wygrać na późniejszych streetach."
       },
       {
         "icon": "🃏",

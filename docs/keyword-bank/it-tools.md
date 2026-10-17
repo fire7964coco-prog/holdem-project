@@ -74,3 +74,17 @@
 
 - 🔴 쓰지 않는다: «tabella poker»·«punti»·«classifica»(족보 의도 · 글 몫) · «regole»(`texas-holdem-rules-for-beginners`(it) 몫) · «poker online»(리얼머니 SERP) · «gratis» 머리.
 - 카니발: it 글 6편(all-in · azioni · bui · ordine di gioco · showdown · regole per principianti) — 도구와 겹치는 머리 없음. 단 «regole» 글 본문의 차트·계산기 링크는 ⑤ 단계에서 `/it/…`로 재조준(§2 E).
+
+## 5. 솔버 메뉴 연결 후보 (2026-10-17 · 솔버 S-103 · 🔴 검색량·SERP 조사 아님 — 수요 순위 아님)
+
+| 검색어 후보(미측정) | 솔버 화면 실제 글자 |
+|---|---|
+| solver GTO | (앱 이름) |
+| albero di gioco | Crea albero · Impostazioni dell’albero |
+| calcolatore di equity | — |
+| range preflop | Range preflop |
+| analisi mani | Analisi mani |
+| node locking · dimensioni di puntata · studio dei flop · statistiche flop | — |
+
+- 🔴 «tabella poker»를 «Range preflop» 동의어로 쓰지 않는다(족보표 의도와 섞임 · 솔버 IT2 · 위 §4 «쓰지 않는다»와 같은 방향).
+- `/it/solver`(④) 카피 단계에서 볼륨을 재고 «검색어» 칸을 채운다.

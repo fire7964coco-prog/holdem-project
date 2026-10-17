@@ -1429,6 +1429,10 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 |---|---|---|---|
 | CO-ⓐ EN 동형 | hand-chart «GTO open ranges» · quiz DESCRIPTION 6-max만 · hand-chart «Exact … any hand» · 대회 카드 «Invitation only»(초대권 = 티켓) · calc L975 43,6% ↔ 재현 43,5%(미확인) | EN 원장 판단 | 🪶 EN-먼저 |
 | CO-ⓑ pl 어색 | connectors L273·414 · hand-chart L41 re-raise · glossary downswings·mucking · «Zakres otwarcia {pos}» 콜론 · aria L130 · «percentage points» ↔ «pp» 혼용 · 정본 미확인 영어 UI 약 12(Amount to call 등) · «zasada 2 i 4» ↔ «4 i 2»(dict L991·998·1348) · quiz «Sprawdź odpowiedź» call 오독 · 제목 «Quiz poker» · 4자리 «1326» ↔ «1 326» | 언어북 규칙 ③~⑤로 다음 pl 도구 손질 때 | 🪶 판단 대상 |
+| CO-ⓒ EN 동형(MA-607) | glossary 3-Bet «The first re-raise of a hand» — 3-bet은 라운드마다 센다 · 뒤 BB 예시는 프리플롭인데 앞 절에 한정 없음 → «The first re-raise preflop…»꼴 앞 절 한정 · 동문 it·fr·pl 등 | EN 원장 판단 | 🪶 EN-먼저(EN 손질 회차 §2-CL+§2-CN과 묶음) |
+| CO-ⓓ 범위 밖(MA-607) | pl 블로그 «ulica» ↔ 도구 «street» 표면 갈림 | 기존 글 처리 = 본체 판단 | 🪶 판단 대상 |
+
+MA-607 통지 ⓐ~ⓓ(pl 옛 문면 4자리 — quiz «bez podwójnego liczenia» · calc «kolejność działania» · calc 결정 문장 · APT «zanim rozpocznie się program…») = 10-17 (7) 이행 MB-374.
 
 
  (로케일 전파 전에 EN을 먼저 재야 한다)

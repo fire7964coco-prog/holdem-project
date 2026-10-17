@@ -1704,7 +1704,7 @@ const pl: BoardStrings = {
     },
     {
       q: "Czy do każdego turnieju wystarczy opłacić wpisowe?",
-      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: nie ma satelitów, a same pieniądze nie zapewniają miejsca. Do Holdem Masters w Korei Południowej wchodzi się wyłącznie z biletem zaproszeniowym — nie ma wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), przed harmonogramem otwartym dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
+      a: "Do większości tak, ale nie do wszystkich. Triton Super High Roller Series wymaga polecenia: nie ma satelitów, a same pieniądze nie zapewniają miejsca. Do Holdem Masters w Korei Południowej wchodzi się wyłącznie z biletem zaproszeniowym — nie ma wpisowego za gotówkę. APT Championships zaczyna się od dnia dla przedstawicieli branży (Event 0), zanim rozpocznie się program otwarty dla wszystkich. Niektóre wydarzenia, jak APL Seoul, przyjmują tylko bilety — takie warunki są zaznaczone w karcie.",
     },
     {
       q: "Ile wynosi wpisowe?",

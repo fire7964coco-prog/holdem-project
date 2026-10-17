@@ -33,7 +33,7 @@
 ## ④ 계획·브리프·회차 기록 — 결정과 경위
 
 - `docs/en-blog-pillar-cluster-map.md` (19KB)
-- `docs/en-first-queue.md` (237KB)
+- `docs/en-first-queue.md` (242KB)
 - `docs/en-retrofit-sprint-plan.md` (5KB)
 - `docs/en-solver-13-retrofit-plan.md` (12KB)
 

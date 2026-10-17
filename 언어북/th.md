@@ -10,7 +10,7 @@
 
 ## ② 키워드 뱅크 — 검색량·SERP·자동완성·조준 (도구 서치 «글 몫 발견» 절 포함)
 
-- `docs/keyword-bank/th-tools.md` (14KB)
+- `docs/keyword-bank/th-tools.md` (17KB)
 
 ## ③ 현지 말투 — 현지 voice·표현 축적
 
@@ -18,7 +18,8 @@
 
 ## ④ 계획·브리프·회차 기록 — 결정과 경위
 
-- (없음)
+- `docs/tool-lanes/th-tools-A-report.md` (17KB)
+- `docs/tool-lanes/th-tools-B-report.md` (20KB)
 
 ## ⑤ 공통 용어 규칙 — 11개 언어 검색 관습 용어
 

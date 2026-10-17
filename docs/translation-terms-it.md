@@ -345,3 +345,15 @@ Sources: pokerstars.it/poker/texas-holdem · sisal.it/regole-poker/punteggi · p
 | 개념(EN) | 이탈리아어 | 근거(원문 축어) | 메모 |
 |---|---|---|---|
 | Seed (난수 초기값) | seme / seme iniziale | [MathWorks IT](https://it.mathworks.com/help/simulink/slref/randomnumber.html) · «Seme iniziale» · [Regione Emilia-Romagna 난수 생성기](https://wwwservizi.regione.emilia-romagna.it/generatore/note.aspx) · «a partire dal seme» | 정당한 기술 용어지만 포커 화면에서는 seme = 무늬(suit · 위 Suit 행)와 겹친다. 재현성 설명(«gli stessi valori su qualsiasi dispositivo»)과 함께 써야 하며, 단독 라벨이면 «seed» 병기가 안전하다(검수 판정자 1명이 suit로 읽음 · 최종 OK). |
+
+### 솔버 추가 (2026-10-17 · 솔버 S-103 · 솔버 it 라이브 S-104)
+
+> 솔버 이탈리아어판 최종 통일(솔버 `7291e36` · 정본 = 솔버 `참고자료/이탈리아어화_용어확정표_2026-10-16.md`)에서 넘어온 자료. **AI 모델 검수뿐 — 원어민 확인 아님.** 기존 행 불변 · 원문 = `../클로드-프로그램만들기/handoff-to-main-site/전달_it_언어북_추가자료_2026-10-17.md`.
+
+- 🔴 **game tree 갈림**: 위 210행(본체 글·도구) = «Game tree» 영어 유지 ↔ 솔버 화면 = **albero di gioco**(Crea albero · Impostazioni dell’albero · Anteprima e modifica dell’albero). 본체 글은 영어 유지 그대로 · **솔버 화면 라벨을 인용할 때만 솔버 글자**.
+- 솔버 화면 고유명: **Esempi**(예제 메뉴 · 개수는 소문자 «13 esempi») · **Immagine del risultato**(공유 이미지) · **scheda**(탭) · **lista salvata**(저장 목록) · **Analisi mani**(핸드 분석) ≠ **Ripasso**(오답 복습) ≠ **Recensione**(제품 후기).
+- 트레이너 평가 3단계 **Scelta migliore / Accettabile / Da rivedere** · 수치 **Quota di arrivo**(도달 확률) · **Peso** · **Frequenza** · **EV loss** 구별.
+- 성(性): **le nuts**(복수 여성) · **la 3-bet**(여성). 족보 **Poker** = 포카드 · **Colore** = 플러시 · 홀덤은 Full > Colore(위와 같음).
+- 문체: tu 명령형(Scegli · Inserisci · Apri · Premi) · 성별 추측 형용사 피함(«Hai completato…» · «Calcolo completato») · UI 라벨 인용은 관사·대문자·콜론까지 화면 그대로.
+- 숫자·기호: 1.755 · 2,5 · 35,4% · 2,5bb · ±0,2 pp · 수식 ×·− · 범위 en dash(11–12bb) · 아포스트로피 ’. 사용자 입력 문법(2.5x · K8s:0.75 · AA-KK)은 그대로.
+- 좁은 칸에서 낱말이 끊기면 문구를 줄이지 않고 it 전용 CSS(`html:lang(it)` · 낱말 분리 금지)로 푼다(사장님 10-16 원칙).

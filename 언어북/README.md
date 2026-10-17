@@ -34,7 +34,7 @@
 | [ro](ro.md) | Română | 1 |
 | [ru](ru.md) | Русский | 5 |
 | [sw](sw.md) | Kiswahili | 1 |
-| [th](th.md) | ไทย | 2 |
+| [th](th.md) | ไทย | 4 |
 | [tr](tr.md) | Türkçe | 8 |
 | [uk](uk.md) | Українська | 1 |
 | [vi](vi.md) | Tiếng Việt | 28 |

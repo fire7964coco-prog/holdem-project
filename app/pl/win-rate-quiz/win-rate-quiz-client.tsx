@@ -87,7 +87,7 @@ const PL_UI: QuizUI = {
     o.set > 0 ? `${o.set} do seta lub tripsa` : "",
     o.twoPair > 0 ? `${o.twoPair} do dwóch par` : "",
     o.over > 0 ? `${o.over} do sparowania overcard` : "",
-    both > 0 ? `${both} ${few(both) ? "pasują" : "pasuje"} do dwóch kategorii (liczone tylko raz)` : "",
+    both > 0 ? `${both} ${few(both) ? "pasują" : "pasuje"} do dwóch kategorii (bez podwójnego liczenia)` : "",
   ].filter(Boolean).join(" · "),
   hitLabel: "Szansa trafienia jednej z tych kart (zasada 2 i 4)",
   winLabel2: "Twoje equity w puli (szacowane — remis liczy się jako twój udział w podziale puli)",
